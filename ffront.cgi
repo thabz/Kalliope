@@ -72,8 +72,9 @@ my %menuStruct = (
         desc => "Top-10 over mest læste $poetName digte i Kalliope",
         icon => 'gfx/icons/pop-h48.gif'
                     },
-	prosa     => { url => 'fprosa.pl?', 
+	prosa     => { url => 'fvaerker.pl?mode=prosa&', 
 	title => 'Prosa', 
+	desc => 'Prosatekster',
 	status => $poet->{'prosa'},
         icon => 'gfx/icons/works-h48.gif'
                     },
