@@ -40,35 +40,32 @@ sub doubleColumn {
     my $minDiff = $total;
     for ($i = 0; $i <= $#blocks; $i++) {
 	$right = $total - $left;
-	print STDERR "$left - $right";
 	if (abs ($right-$left) <= $minDiff ) {
             $minDiff = abs ($right-$left);
 	    $minI = $i;
-	    print STDERR " *";
 	}
         $left += $blocks[$i]->{'count'};
-        print STDERR "\n";
     }
     
-
-    $HTML .= '<TABLE WIDTH="100%" CELLPADDING=0><TR><TD VALIGN=top>';
+    $HTML .= '<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=0><TR><TD WIDTH="50%" VALIGN=top><DIV STYLE="padding: 10px">';
     $i = 0;
     foreach $b (@blocks) {
         next unless ($b->{'count'});
 	if ($i == $minI) {
 	    $columnchanged = 1;
-	    $HTML .= '</TD><TD WIDHT=1 VALIGN=top BGCOLOR=black>';
+	    $HTML .= '</DIV></TD><TD WIDTH=1 VALIGN=top BGCOLOR="#808080">';
 	    $HTML .= '<IMG ALT="" SRC="gfx/trans1x1.gif" BORDER=0 ALT=""></TD>';
-	    $HTML .= '<TD WIDHT=10 VALIGN=top>';
+	    $HTML .= '<TD WIDTH=10 VALIGN=top>';
 	    $HTML .= '<IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH=10 BORDER=0></TD>';
-	    $HTML .= '<TD VALIGN=top>';
+	    $HTML .= '<TD WIDTH="50%" VALIGN=top>';
+	    $HTML .= '<DIV STYLE="padding: 10px">';
 	}
         $subtotal += $b->{'count'};
 	$HTML .= $b->{'head'};
 	$HTML .= $b->{'body'}."<BR>";
 	$i++;
     }
-    $HTML .= '</TD></TR></TABLE>';
+    $HTML .= '</DIV></TD></TR></TABLE>';
     return $HTML;
 }
 
