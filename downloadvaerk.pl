@@ -22,6 +22,7 @@
 
 use Kalliope::DB;
 use CGI qw(:standard);
+use Kalliope::Poem ();
 
 my $dbh = Kalliope::DB->connect;
 
@@ -91,16 +92,11 @@ EOS
 	if ($d->{afsnit}) {
 	    print "\n<H2>".$d->{titel}."</H2>\n";
 	} else {
-	    $d->{indhold} =~ s/\n+$/\n/;
-	    if ($d->{type} ne 'p') {
-		$d->{indhold} =~ s/ /&nbsp;/g;
-	    }
-
-	    print "\n<H3>".$d->{titel}."</H3>\n";
+	    my $poem = new Kalliope::Poem (longdid => $d->{'longdid'});
+	    print "\n<H3>".$poem->title."</H3>\n";
 	    $d->{'underoverskrift'} =~ s/\n/<BR>/g;
-	    print "\n<FONT SIZE=-1>".$d->{underoverskrift}."</FONT><BR><BR><BR>\n" if $d->{underoverskrift};
-	    $d->{'indhold'} =~ s/(\n)/<BR>$1/g;
-	    print $d->{indhold};
+	    print "\n<FONT SIZE=-1>".$poem->subtitle."</FONT><BR><BR><BR>\n" if $poem->subtitle;
+	    print $poem->content;
 	    print "<BR><BR><BR>\n";
 	}
     }
