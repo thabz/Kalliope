@@ -78,7 +78,7 @@ sub _constructBreadcrumbs {
     my $self = shift;
     return '' unless $self->{'crumbs'};
     my @crumbs = (
-                ['Kalliope','index.cgi'],
+                ['&nbsp;&nbsp;Kalliope','index.cgi'],
                 @{$self->{'crumbs'}});
     my @blocks;
     foreach my $item (@crumbs) {
@@ -89,7 +89,7 @@ sub _constructBreadcrumbs {
        }
     }
     my $HTML = join ' >> ',@blocks;
-    $HTML = qq|<SMALL STYLE="font-family:Arial,Helvetica">$HTML</SMALL>|;
+    $HTML = qq|<SPAN STYLE="font-family:Arial,Helvetica; font-size: 10px">$HTML</SPAN>|;
     return $HTML;
 }
 
@@ -114,13 +114,15 @@ sub print {
 <META name="keywords" content="digte, lyrik, litteratur, litteraturhistorie, digtere, digtarkiv, etext, e-text, elektronisk tekst, kalliope, kalliope.org, www.kalliope.org">
 </HEAD>
 <BODY LINK="#000000" VLINK="#000000" ALINK="#000000">
-<DIV CLASS="nav"><CENTER>
+
 EOF
+    print '<DIV STYLE="background-color: #e0e0e0; padding: 1px">';
+    print $self->_constructBreadcrumbs;
+    print '</DIV>';
+    print '<DIV CLASS="nav"><CENTER>';
     print $self->_navigation;
     print '</CENTER></DIV>';
-    print '<DIV STYLE="background-color: #e0e0e0"><SMALL>';
-    print $self->_constructBreadcrumbs;
-    print '</SMALL></DIV><DIV CLASS="body">';
+    print '<DIV CLASS="body">';
     print '<TABLE WIDTH="100%"><TR>';
     my @widths = $self->getColoumnWidths;
     foreach my $colHTML (@{$self->{'coloumns'}}) {

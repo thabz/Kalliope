@@ -21,6 +21,7 @@ package Kalliope::Sort;
 #  $Id$
 
 sub sort { 
+    my ($a,$b) = @_;
     my $aa = mylc($a->{'sort'});
     $aa =~ s/aa/å/g;
     $aa =~ tr/àáâãäåçèéêëìíîïðñòóôõöùúûüý/aaaaæüceeeeiiiidnooooøuuuyy/;
@@ -37,10 +38,19 @@ sub mylc {
     return $str;
 }
 
+sub myuc {
+    my $str = shift;
+    $str =~ tr/a-zàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþ/A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞ/;
+    return $str;
+}
+
 sub sortObject {
+    my ($a,$b) = @_;
     if ($a && $b) {
-    return lc($a->sortString) cmp lc($b->sortString);
-    } else { return 0 };
+	return mylc($a->sortString) cmp mylc($b->sortString);
+    } else {
+        return 0
+    };
 }
 
 1;

@@ -62,18 +62,13 @@ map {$works{$_->vid} = $_} $poet->poeticalWorks;
 my @f;
 my $sth = $dbh->prepare("SELECT longdid, digte.titel, digte.foerstelinie, digte.vid FROM digte, vaerker WHERE digte.fid=? AND digte.vid = vaerker.vid AND digte.layouttype = 'digt' AND afsnit=0");
 $sth->execute($poet->fid);
-my $i=0;
-while ($f[$i] = $sth->fetchrow_hashref) { 
-    if ($mode == 1) {
-	$f[$i]->{'sort'} = $f[$i]->{'titel'};
-    } else {
-	$f[$i]->{'sort'} = $f[$i]->{'foerstelinie'};
-    }
-    $i++; 
+while (my $f = $sth->fetchrow_hashref) { 
+    $f->{'sort'} = $mode == 1 ? $f->{'titel'} : $f->{'foerstelinie'};
+    push @f,$f;
 }
 
 my @blocks = ();
-foreach my $f (sort Kalliope::Sort::sort @f) {
+foreach my $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
     next unless $f->{'sort'};
     my $line =  $mode == 1 ? $f->{'titel'} : $f->{'foerstelinie'};
     my $linefix = $line;

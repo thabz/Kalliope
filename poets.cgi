@@ -73,7 +73,7 @@ sub listaz {
     my $bi = -1;
     my $new;
     my $f;
-    foreach $f (sort Kalliope::Sort::sort @f) {
+    foreach $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
 	next unless $f->{'sort'};
 	$f->{'sort'} =~ s/Aa/Å/g;
 	$new = uc substr($f->{'sort'},0,1);

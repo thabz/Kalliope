@@ -39,52 +39,41 @@ my $page = new Kalliope::Page (
 
 my $dbh = Kalliope::DB->connect;
 
-#$0 =~ /\/([^\/]*)$/;
-#&kheaderHTML("Værker",$LA,$1.'?mode='.$mode.'&sprog=');
-
 if ($mode eq 'titel') {
     my $HTML;
     my $sth = $dbh->prepare("SELECT fornavn,efternavn,fnavne.fhandle,vhandle,titel,aar,findes FROM fnavne,vaerker WHERE sprog=? AND vaerker.fid = fnavne.fid");
     $sth->execute($LA);
 
     my ($i,$et,$to,@f);
+    $i = 0;
     while ($f[$i] = $sth->fetchrow_hashref) {
 	if ($LA eq 'dk' && $f[$i]->{'titel'} =~ /^Den |^Det |^Af /) {
 	    $f[$i]->{'titel'} =~ /^([^ ]+) (.*)/;
 	    $et = $1;
 	    $to = $2;
-	    $to =~ s/^å/Å/;
-	    $to =~ s/^ø/Ø/;
-	    $to =~ s/^æ/Æ/;
-	    substr($to,0,1) = uc(substr($to,0,1));
 	    $f[$i]->{'titel'} = $to.", ".$et;
 	} elsif ($LA eq 'uk' && $f[$i]->{'titel'} =~ /^The /) {
 	    $f[$i]->{'titel'} =~ /^([^ ]+) (.*)/;
 	    $et = $1;
 	    $to = $2;
-	    substr($to,0,1) = uc(substr($to,0,1));
 	    $f[$i]->{'titel'} = $to.", ".$et;
 	} elsif ($LA eq 'fr' && $f[$i]->{'titel'} =~ /^La |^Les /) {
 	    $f[$i]->{'titel'} =~ /^([^ ]+) (.*)/;
 	    $et = $1;
 	    $to = $2;
-	    substr($to,0,1) = uc(substr($to,0,1));
 	    $f[$i]->{'titel'} = $to.", ".$et;
 	}
-
 	$f[$i]->{'sort'} = $f[$i]->{'titel'};
-#	$f[$i]->{'sort'} =~ s/Aa/Å/;
-#	$f[$i]->{'sort'} =~ s/aa/å/;
 	$i++;
     };
 
     # Udskriv titler på vaerker
     my ($f,$new,$last);
-    foreach $f (sort Kalliope::Sort::sort @f) {
+    foreach my $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
 	next if ( $f->{'aar'} eq "?");
 	next if ($f->{'titel'} eq '');
 	$f->{'sort'} =~ s/Aa/Å/g;
-	$new = substr($f->{'sort'},0,1);
+	$new = Kalliope::Sort::myuc(substr($f->{'sort'},0,1));
 	if ($new ne $last) {
 	    $last = $new;
 	    $HTML .= "<BR><DIV CLASS=listeoverskrifter>$new</DIV><BR>\n";
@@ -160,16 +149,15 @@ if ($mode eq 'titel') {
     my $sth = $dbh->prepare("SELECT CONCAT(efternavn,', ',fornavn) as navn, fornavn, efternavn, fhandle,fid FROM fnavne WHERE sprog=?");
     my $sthvaerker = $dbh->prepare("SELECT vhandle,titel,aar,findes FROM vaerker WHERE fid = ? ORDER BY aar");
     $sth->execute($LA);
-    my $i=0;
     my @f;
-    while ($f[$i] = $sth->fetchrow_hashref) {
-	$f[$i]->{'sort'} = $f[$i]->{'efternavn'}.$f[$i]->{fornavn};
-	$i++;
+    while (my $f = $sth->fetchrow_hashref) {
+	$f->{'sort'} = $f->{'efternavn'}.$f->{fornavn};
+	push @f,$f;
     };
 
     my $last = "";
     my ($new,$html,$f,$v,$aar);
-    foreach $f (sort Kalliope::Sort::sort @f) {
+    foreach $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
 	$f->{'sort'} =~ s/Aa/Å/g;
 	$new = substr($f->{'sort'},0,1);
 	if ($new ne $last) {

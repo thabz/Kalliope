@@ -66,12 +66,11 @@ $sth->execute($forbogstav,$mode?'t':'f',$LA);
 unless ($sth->rows) {
     $HTML .= "Vælg begyndelsesbogstav nedenfor";
 } else {
-    my $i = 0;
-    while ($f[$i] = $sth->fetchrow_hashref) { 
-	$f[$i]->{sort} = $mode ? $f[$i]->{titel} : $f[$i]->{foerstelinie};
-	$i++; 
+    while (my $f = $sth->fetchrow_hashref) { 
+	$f->{'sort'} = $mode ? $f->{'titel'} : $f->{'foerstelinie'};
+        push @f,$f;
     }
-    foreach my $f (sort Kalliope::Sort::sort @f) {
+    foreach my $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
 	next unless $f->{'sort'};
 	my $tekst = $mode ? $f->{'titel'} : $f->{'foerstelinie'};
 	$HTML .= '<A HREF="digt.pl?longdid='.$f->{'longdid'}.'">';
@@ -94,7 +93,7 @@ while ($f[$i] = $sth->fetchrow_hashref) {
     $i++;
 }
 my $minimenu;
-foreach my  $f (sort Kalliope::Sort::sort @f) { 
+foreach my  $f (sort { Kalliope::Sort::sort($a,$b) } @f) { 
     my $color = ($f->{'forbogstav'} eq $forbogstav)?'red':'black';
     $minimenu .= '<A HREF="klines.pl?mode='.$mode.'&forbogstav='.$f->{'forbogstav'}.'&sprog='.$LA.'">';
     $minimenu .= '<FONT COLOR='.$color.'>'; 

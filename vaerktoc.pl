@@ -127,6 +127,7 @@ sub tableOfContent {
     my $HTML;
     my $sth = $dbh->prepare("SELECT longdid,titel,afsnit,did FROM digte WHERE vid=? ORDER BY vaerkpos");
     $sth->execute($work->vid);
+    return 'Kalliope indeholder endnu ingen tekster fra dette værk.' unless $sth->rows;
     while(my $d = $sth->fetchrow_hashref) {
 	if ($d->{'afsnit'} && !($d->{'titel'} =~ /^\s*$/)) {
 	    $HTML .= "<BR><FONT SIZE=+1><I>".$d->{'titel'}."</I></FONT><BR>\n";

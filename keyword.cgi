@@ -81,7 +81,7 @@ if (!$keywordid) {
     #TODO: Måske jeg vælge 5 tilfældige udfra f.eks. top 10.
     push @list,$keyword->linksToPoems(5,$LA);
     if ($#list >= 0) {
-        foreach my $k (sort Kalliope::Sort::sortObject @list) {
+        foreach my $k (sort { Kalliope::Sort::sortObject($a,$b) } @list) {
 	    $html .= $k->smallIcon.' '.$k->clickableTitle($LA).'<BR><BR>';
 	}
 	$html =~ s/<BR><BR>$//;
@@ -105,7 +105,7 @@ if (!$keywordid) {
 		        content => $html,
                         coloumn => 1 )
     }
-    $page->setColoumnWidths('100%','20%');
+    $page->setColoumnWidths('80%','200');
     $page->print;
 }
 
