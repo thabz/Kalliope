@@ -204,7 +204,8 @@ sub poem {
 
     foreach (1..4) { # TODO: Løs dette mere elegant.
 	$HTML =~ s/ - / &mdash; /g;
-	$HTML =~ s/^- /&mdash; /gm;
+	$HTML =~ s/>- />&mdash; /gm;
+	$HTML =~ s/&nbsp;- /&nbsp;&mdash; /gm;
 	$HTML =~ s/ -<br>/ &mdash;<br>/gi;
     }
 
