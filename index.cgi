@@ -43,7 +43,7 @@ if (my $dayToday = &dayToday()) {
     $page->addBox ( title => "Dagen idag",
 	    width => '100%',
 	    coloumn => 1,
-	    content => ,
+	    content => $dayToday,
 	    end => '<A HREF="kdagenidag.pl"><IMG  HEIGHT=16 WIDTH=16 VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Vælg dato"></A>');
 }
 
