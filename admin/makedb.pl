@@ -320,6 +320,8 @@ $rc = $dbh->do("CREATE TABLE digte (
 $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywords.id = keywords_relation.keywordid AND keywords_relation.otherid = ? AND keywords_relation.othertype = 'vaerk'");
 $sth = $dbh->prepare("SELECT * FROM vaerker WHERE findes=1 ORDER BY cvstimestamp DESC");
 $sthafs = $dbh->prepare("INSERT INTO digte (fid,vid,titel,toctitel,vaerkpos,afsnit) VALUES (?,?,?,?,?,?)");
+my $sthLastIns = $dbh->prepare("SELECT LAST_INSERT_ID() FROM digte");
+
 $sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,tititel,foerstelinie,underoverskrift,indhold,noter,pics,afsnit,layouttype,haystack,createtime,quality,lang) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,0,?,?,?,?,?)");
 $sth->execute;
 print "  Ikke tomme: ".$sth->rows."\n";
@@ -517,10 +519,13 @@ sub insertdigt {
     $toctitel = '';
     @pics = ();
     @qualities = ();
-    $mymylastid = Kalliope::DB::getLastInsertId($dbh,"digte");
+    
+    $sthLastIns->execute();
+    ($mymylastid) = $sthLastIns->fetchrow_array();
+
     foreach (@mykeys) {
 	&insertkeywordrelation($_,$mymylastid,'digt');
-   }
+    }
     @mykeys = @arvedekeys;
     $id = $tempid;
 }
