@@ -144,13 +144,15 @@ sub getHTML {
 sub count {
     my $self = shift;
     open(FILE,"swish-search -f index/".$self->lang.".index -w ".$self->needleToUse."|");
-    my $hits;
+    my $hits = 0;
     while (my $line = <FILE>) {
+	next unless $line;
+	last if $line =~ /^\./;
 	next if $line =~ /^#/;
 	$hits++;
     }
     close(FILE);
-    return --$hits;
+    return $hits;
 }
 
 sub result {
@@ -161,6 +163,7 @@ sub result {
     my $c = 0;
     while (my $line = <FILE>) {
 	next if $line =~ /^#/;
+	last if $line =~ /^\./;
 	$i++;
 	next if $i < $self->firstNumShowing;
 	my ($quality,$id) = split / /,$line;
