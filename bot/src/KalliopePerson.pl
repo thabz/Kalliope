@@ -11,7 +11,7 @@ sub get {
 	return 'Øh?';
    }
 
-   my ($fhandle) = $line =~ /person *([^ ]+) *$/;
+   my ($fhandle) = $line =~ /person *([^ \?]+)/;
    return 'Hvilket navn ville du have info for?' unless $fhandle;
 
    return "Jeg kender ingen $fhandle ..." unless Kalliope::Person::exist($fhandle);
