@@ -87,14 +87,9 @@ $page->print;
 
 sub listaz {
     my $LA = shift;
-    my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT * FROM fnavne WHERE type='poet' AND sprog=? AND foedt != '' ORDER BY efternavn, fornavn");
-    $sth->execute($LA);
-    my @f;
-    while (my $f = $sth->fetchrow_hashref) { 
-        $f->{'sort'} = $f->{'efternavn'};
-	push @f,$f;
-    }
+    my @persons = Kalliope::PersonHome::findByLang($LA);
+    my @f = grep { $_->getType eq 'poet'} @persons;
+    map {$_->{'sort'} = $_->efternavn } @f;
 
     my $last = "";
     my @blocks;
@@ -110,18 +105,17 @@ sub listaz {
 	    $bi++;
 	    $blocks[$bi]->{'head'} = qq|<DIV CLASS="listeoverskrifter">$new</DIV><BR>|;
 	}
-	$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.($f->{'efternavn'} || '').",&nbsp;".($f->{'fornavn'} || '').'</A>&nbsp;<FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT><BR>';
+	$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->fhandle.'">'.$f->reversedName.'</A>&nbsp;<FONT COLOR="#808080">'.$f->lifespan.'</FONT><BR>';
 	$blocks[$bi]->{'count'}++;
     }
 
     # Udenfor kategori (dvs. folkeviser, o.l.)
     $bi++;
-    $sth = $dbh->prepare("SELECT * FROM fnavne WHERE sprog=? AND foedt='' ORDER BY fornavn");
-    $sth->execute($LA);
-    if ($sth->rows) {
+    my @colls = grep {$_->getType eq 'collection'} @persons;
+    if ($#colls >= 0) {
 	$blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">Ukendt digter</DIV><BR>|;
-	while ($f = $sth->fetchrow_hashref) {
-	    $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'fornavn'}.'</A><BR>';
+	foreach my $f (@colls) {
+	    $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->fhandle.'">'.$f->fornavn.'</A><BR>';
 	    $blocks[$bi]->{'count'}++;
 	}
     }
@@ -130,14 +124,11 @@ sub listaz {
 
 sub list19 {
     my $LA = shift;
-    my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT * FROM fnavne WHERE type='poet' AND sprog=? AND foedt != '' AND foedt != '?' ORDER BY efternavn, fornavn");
-    $sth->execute($LA);
-    my @f;
-    while (my $f = $sth->fetchrow_hashref) { 
-        ($f->{'sort'}) = $f->{'foedt'} =~ /(\d\d\d\d)/;
-	push @f,$f;
-    }
+    my @persons = grep {$_->getType eq 'poet'} Kalliope::PersonHome::findByLang($LA);
+    my @knownYear = grep {$_->yearBorn ne '' && $_->yearBorn ne '?'} @persons;
+    my @unknownYear = grep {$_->yearBorn eq '' || $_->yearBorn eq '?'} @persons;
+
+    map {($_->{'sort'}) = $_->yearBorn =~ /(\d\d\d\d)/} @knownYear;
 
     my $last = 0;
     my $last2;
@@ -145,7 +136,7 @@ sub list19 {
     my $bi = -1;
     my $new;
     my $f;
-    foreach $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
+    foreach $f (sort { Kalliope::Sort::sort($a,$b) } @knownYear) {
 	next unless $f->{'sort'};
 	if ($f->{'sort'} - $last >= 25) {
 	    $last = $f->{'sort'} - $f->{'sort'}%25;
@@ -153,18 +144,16 @@ sub list19 {
 	    $bi++;
 	    $blocks[$bi]->{'head'} = qq|<DIV CLASS="listeoverskrifter">$last-$last2</DIV><BR>|;
 	}
-	$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.",&nbsp;".$f->{'fornavn'}.'</A>&nbsp;<FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT><BR>';
+	$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->fhandle.'">'.$f->reversedName.'</A>&nbsp;<FONT COLOR="#808080">'.$f->lifespan.'</FONT><BR>';
 	$blocks[$bi]->{'count'}++;
     }
 
     # Udenfor kategori (dvs. folkeviser, o.l.)
     $bi++;
-    $sth = $dbh->prepare("SELECT * FROM fnavne WHERE sprog=? AND foedt='?' ORDER BY fornavn");
-    $sth->execute($LA);
-    if ($sth->rows) {
+    if ($#unknownYear >= 0) {
 	$blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">Ukendt fødeår</DIV><BR>|;
-	while ($f = $sth->fetchrow_hashref) {
-	$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.",&nbsp;".$f->{'fornavn'}.'</A>&nbsp;<FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT><BR>';
+	foreach my $f (@unknownYear) {
+	   $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->fhandle.'">'.$f->reversedName.'</A>&nbsp;<FONT COLOR="#808080">'.$f->lifespan.'</FONT><BR>';
 	    $blocks[$bi]->{'count'}++;
 	}
     }
