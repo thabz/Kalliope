@@ -6,11 +6,21 @@ use Kalliope::DB;
 use Kalliope::Strings;
 use Kalliope::Array;
 use Kalliope::Build::Persons;
+use Kalliope::Build::Dict;
 use Kalliope::Build::Timeline;
 use Kalliope::Build::Xrefs;
 use POSIX;
 
 my $dbh = Kalliope::DB->connect;
+
+#
+# Build dictionary 
+#
+
+Kalliope::Build::Dict::create();
+@dict = Kalliope::Build::Dict::parse('../data/dict.xml');
+Kalliope::Build::Dict::insert(\@dict);
+exit;
 
 #
 # Keywords
