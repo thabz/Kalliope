@@ -88,7 +88,7 @@ sub parse {
 	       $d .= '<b>Fulde navn: </b>'.Unicode::String::utf8($person->getElementsByTagName('name')->item(0)->getElementsByTagName('fullname')->item(0)->getFirstChild->getNodeValue)->latin1.'<br>';
 	   };
 	   if ($person->getElementsByTagName('name')->item(0)->getElementsByTagName('pseudonym')->item(0)) {
-	       $d .= '<b>Psedudonym: </b>'.Unicode::String::utf8($person->getElementsByTagName('name')->item(0)->getElementsByTagName('pseudonym')->item(0)->getFirstChild->getNodeValue)->latin1.'<br>';
+	       $d .= '<b>Pseudonym: </b>'.Unicode::String::utf8($person->getElementsByTagName('name')->item(0)->getElementsByTagName('pseudonym')->item(0)->getFirstChild->getNodeValue)->latin1.'<br>';
 	   };
 	   if ($person->getElementsByTagName('name')->item(0)->getElementsByTagName('realname')->item(0)) {
 	       $d .= '<b>Dåbsnavn: </b>'.Unicode::String::utf8($person->getElementsByTagName('name')->item(0)->getElementsByTagName('realname')->item(0)->getFirstChild->getNodeValue)->latin1.'<br>';
