@@ -25,6 +25,7 @@ package Kalliope::Build::Timeline;
 
 use Kalliope::DB;
 use Kalliope::Date;
+use XML::Twig;
 use strict;
 
 my $dbh = Kalliope::DB::connect();
@@ -35,25 +36,26 @@ sub build {
     &create();
     
     # Parse data/events.txt ---------------------------------------
-    open (FILE,"../data/events.txt");
-    my $line = 1;
-    while (<FILE>) {
-	if (/^(\d+): P:(.*)%(.*)$/) {
-	    $sth->execute($1,0,0,$3,'picture','history',$2,'');
-	} elsif (/^(\d+)-(\d+)-(\d+): P:(.*)%(.*)$/) {
-	    $sth->execute($1,$2,$3,$5,'picture','history',$4,'');
-	} elsif (/^(\d+): (.*)$/) {
-	    $sth->execute($1,0,0,$2,'event','history','','');
-	} elsif (/^(\d+)-(\d+)-(\d+): (.*)$/) {
-	    $sth->execute($1,$2,$3,$4,'event','history','','');
-	} elsif (/^#/) {
 
-        } else {
-	    print STDERR "Error in data/timeline.txt line $line: »$_«";
+    my $twig = new XML::Twig(keep_encoding => 1);
+    $twig->parsefile('../data/events.xml');
+    foreach my $event ($twig->root->children('entry')) {
+	my $html = $event->first_child('html')->text;
+	my $date = $event->{'att'}->{'date'};
+	my $type = $event->{'att'}->{'type'};
+	my ($y,$m,$d) = (0,0,0);
+	if ($date =~ /(\d+)-(\d+)-(\d+)/) {
+	    ($y,$m,$d) = ($1,$2,$3);
+	} else {
+	    $y = $date;
 	}
-	$line++;
+	if ($type eq 'image') {
+	    my $src = $event->first_child('src')->text;
+	    $sth->execute($y,$m,$d,$html,'picture','history',$src,'');
+	} else {
+	    $sth->execute($y,$m,$d,$html,'event','history','','');
+	}
     }
-    close(FILE);
 
     # Get published books data ---------------------------------
 
@@ -84,26 +86,28 @@ sub build {
 
     # Get persons local events.txt data ----------------------------
     foreach my $k (keys %persons) {
-	my $file = "../fdirs/$k/events.txt";
+	my $file = "../fdirs/$k/events.xml";
 	next unless -e $file;
-	open (FILE,$file);
-	my $line = 1;
-	while (<FILE>) {
-	    if (/^(\d+): P:(.*)%(.*)$/) {
-		$sth->execute($1,0,0,$3,'picture','personal',$2,$k);
-	    } elsif (/^(\d+): (.*)$/) {
-		$sth->execute($1,0,0,$2,'event','personal','',$k);
-	    } elsif (/^(\d+)-(\d+)-(\d+): (.*)$/) {
-		$sth->execute($1,$2,$3,$4,'event','personal','',$k);
-	    } elsif (/^#/) {
 
+	my $twig = new XML::Twig(keep_encoding => 1);
+	$twig->parsefile($file);
+	foreach my $event ($twig->root->children('entry')) {
+	    my $html = $event->first_child('html')->text;
+	    my $date = $event->{'att'}->{'date'};
+	    my $type = $event->{'att'}->{'type'};
+	    my ($y,$m,$d) = (0,0,0);
+	    if ($date =~ /(\d+)-(\d+)-(\d+)/) {
+		($y,$m,$d) = ($1,$2,$3);
 	    } else {
-		print STDERR "Error in $k/timeline.txt line $line: »$_«";
+		$y = $date;
 	    }
-	    $line++;
+	    if ($type eq 'image') {
+		my $src = $event->first_child('src')->text;
+		$sth->execute($y,$m,$d,$html,'picture','personal',$src,$k);
+	    } else {
+		$sth->execute($y,$m,$d,$html,'event','personal','',$k);
+	    }
 	}
-	close(FILE);
-
     }
 
 
