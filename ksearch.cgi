@@ -60,8 +60,8 @@ $page->addBox( width => '80%',
 	content => $search->getHTML,
 	end => "Tid i sekunder: ".(time-$starttid) );
 
-if (CGI::param('needle') =~ /^prut/) {
-    my ($antal) = CGI::param('needle') =~ /^prut(\d+)/;
+if (CGI::param('needle') =~ /^Cæcirie/) {
+    my ($antal) = CGI::param('needle') =~ /^Cæcirie(\d+)/;
     $antal = $antal > 0 ? $antal : 10;
     $page->addHTML(&getEasterJS(int $antal));
 }
