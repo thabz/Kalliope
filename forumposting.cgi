@@ -42,7 +42,10 @@ my $post = Kalliope::Forum::Post::newFromId ($id);
 #
 
 my $HTML = '<TABLE WIDTH="100%">';
-$HTML .= '<TR><TH CLASS="forumheads" ALIGN="right">Fra:</TH><TD CLASS="forumheads" WIDTH="100%">'.$post->from.'</TD></TR>';
+my $email = $post->fromEmail;
+my $from = $post->from;
+$from = $email ? qq|<A HREF="mailto:$email">$from</A>| : $from;
+$HTML .= '<TR><TH CLASS="forumheads" ALIGN="right">Fra:</TH><TD CLASS="forumheads" WIDTH="100%">'.$from.'</TD></TR>';
 $HTML .= '<TR><TH  CLASS="forumheads" ALIGN="right">Emne:</TH><TD  CLASS="forumheads"WIDTH="100%">'.$post->subject.'</TD></TR>';
 $HTML .= '<TR><TH  CLASS="forumheads" ALIGN="right">Dato:</TH><TD  CLASS="forumheads"WIDHT="100%">'.$post->dateForDisplay.'</TD></TR>';
 $HTML .= '</TABLE>';
