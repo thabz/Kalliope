@@ -23,30 +23,43 @@
 use Kalliope;
 use Kalliope::Page;
 use Kalliope::Forum;
+use Kalliope::Tree;
 use CGI qw(:standard);
 use strict;
 
 my $page = new Kalliope::Page (
 		title => 'Forum',
 		thumb => 'gfx/evolution-192.png',
+		page => 'forumheaders',
                 pagegroup => 'forum');
-
 
 #
 # Draw forum
 #
 
-my $HTML = '<TABLE WIDTH="100%" HEIGHT="100%">';
-$HTML .= '<TR><TD WIDTH="60%">';
-$HTML .= '<IFRAME STYLE="width: 100%; height: 500px; border: 0px" NAME="headers" SRC="forumheaders.cgi" FRAMEBORDER=0 SCROLLING="no"></IFRAME>';
-$HTML .= '</TD><TD WIDTH="40%">';
-$HTML .= '<IFRAME STYLE="width: 100%; height: 500px; border: 0px" ID="postingframe" NAME="posting" SRC="forumposting.cgi" FRAMEBORDER=0 SCROLLING="no"></IFRAME>';
-$HTML .= '</TD></TR></TABLE>';
+my @thread_ids = Kalliope::Forum::getLatestThreadIds(begin => 0, count => 20);
+my $tree = new Kalliope::Tree('tree','gfx/tree',3,('Emne',("&nbsp;"x6).'Fra','&nbsp;Dato'));
+my %translate;
+$translate{0} = 0;
+
+foreach my $thread_id (@thread_ids) {
+    my @posts = Kalliope::Forum::getPostsInThread($thread_id);
+    foreach my $post (@posts) {
+	my $from = ("&nbsp;"x5).qq|<SPAN CLASS="unsel">&nbsp;|.$post->from.'&nbsp;</SPAN>';
+	my $date = qq|<SPAN CLASS="unsel">&nbsp;|.$post->dateForDisplay.'&nbsp;</SPAN>';
+        my $subj = qq|<A CLASS="unsel" HREF="javascript:{}" onClick="return gotoPosting(|.$post->id.');">&nbsp;'.$post->subject.qq|&nbsp;</A>|;
+        $translate{$post->id} = $tree->addNode($translate{$post->parent},1,($subj,$from,$date));
+    }
+}
+my $HTML = $tree->getSimpleHTML().$tree->getJavaScript();
+$HTML .= '<HR>';
+$HTML .= qq|<INPUT onClick="parent.composer('new',0);" TITLE="" CLASS="button" TYPE="submit" VALUE=" Nyt indlæg ">|;
+
 
 $HTML .= <<"EOF";
 <SCRIPT LANGUAGE="JavaScript1.3">
 function gotoPosting(postingid) {
-    document.getElementById('postingframe').src = 'forumposting.cgi?id='+postingid;
+    document.location = 'forumposting.cgi?id='+postingid;
     return false;
 }
 
@@ -54,34 +67,14 @@ function composer(mode,id) {
     window.open('forumcompose.cgi?mode='+mode+'&parentid='+id,'compose','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizeable=no,width=400,height=500'); 
     return false;
 }
-
-function resetHeaders() {
-    headers.location = 'forumheaders.cgi';
-    return false;
-}
-
-var oldSelection = 0;
-
-function markSelection(id) {
-    if (oldSelection) {
-        headers.document.getElementById('row'+oldSelection+'a').className = 'unsel';
-        headers.document.getElementById('row'+oldSelection+'b').className = 'unsel';
-        headers.document.getElementById('row'+oldSelection+'c').className = 'unsel';
-    }
-    headers.document.getElementById('row'+id+'a').className = 'sel';
-    headers.document.getElementById('row'+id+'b').className = 'sel';
-    headers.document.getElementById('row'+id+'c').className = 'sel';
-    oldSelection = id;
-}
 </SCRIPT>
-
-
 EOF
 
 #
 # Output HTML
 #
 
-$page->addHTML($HTML);
+$page->addBox(width => '90%',
+              content => $HTML);
 $page->print;
 

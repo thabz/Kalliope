@@ -279,6 +279,10 @@ sub menuStructs {
                        pages => ['keywordtoc','timeline','keyword']
                        },
          'forum' =>    {menuTitle => 'Forum',
+                       url => 'forum.cgi',
+                       pages => ['forumheaders']
+                       },
+         'forumheaders' => {menuTitle => 'Oversigt',
                        url => 'forum.cgi'
                        },
          'poemtitles' =>{menuTitle => 'Digttitler',

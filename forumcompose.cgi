@@ -42,7 +42,7 @@ if (defined param('posted')) {
     my $post = new Kalliope::Forum::Post($h);
     $post->insertIntoDB;
     print "Content-type: text/html\n\n";
-    print qq|<html><body onLoad="opener.resetHeaders(); this.close()"></body></html>|;
+    print qq|<html><body onLoad="opener.document.location = opener.document.location; this.close()"></body></html>|;
     exit;
 }
 
