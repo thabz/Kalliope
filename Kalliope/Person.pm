@@ -207,10 +207,13 @@ sub menu {
        links     => { url => 'flinks.pl?', 
                     title => 'Links', 
                     status => $self->{'links'} },
-       sekundaer => { url => 'fsekundaer.pl?', 
+       primaer   => { url => 'fsekundaer.pl?mode=p&', 
+                    title => 'Primær', 
+		    status => $self->{'sekundaer'} },
+       sekundaer => { url => 'fsekundaer.pl?mode=s&', 
                     title => 'Sekundær', 
 		    status => $self->{'sekundaer'} } );
-    my @keys = qw/vaerker titlelines firstlines popular prosa pics bio samtidige links sekundaer/;
+    my @keys = qw/vaerker titlelines firstlines popular prosa pics bio samtidige links primaer sekundaer/;
     my $HTML;
     my @itemsHTML;
     foreach my $key (@keys) {

@@ -26,7 +26,13 @@ use Kalliope::Page;
 use strict;
 
 my $fhandle = url_param('fhandle');
+my $mode = url_param('mode');
+my $filename =  $mode eq 's' ? 'sekundaer' : 'primaer';
+
 my $poet = new Kalliope::Person(fhandle => $fhandle);
+
+my $title = $mode eq 's' ? 'Sekundær litteratur' : 'Primær litteratur';
+my $page = $mode eq 's' ? 'sekundaer' : 'primaer';
 
 #
 # Breadcrumbs -------------------------------------------------------------
@@ -38,10 +44,10 @@ push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,['Sekundær litteratur',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
-                                      page => 'sekundaer',
+                                      page => $page,
                                       crumbs => \@crumbs );
 
-open (FILE,"fdirs/".$fhandle."/sekundaer.txt");
+open (FILE,"fdirs/".$fhandle."/".$filename.'.txt');
 my $HTML = join '<BR><BR>',<FILE>;
 close (FILE);
 

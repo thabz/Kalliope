@@ -96,6 +96,7 @@ sub create {
               biotext text,
               links int(1),
               sekundaer int(1),
+              primaer int(1),
               vaerker int(1),
               vers int(1),
               prosa int(1),
@@ -108,13 +109,13 @@ sub insert {
 
     my %fhandle2fid;
     my $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM fnavne");
-    my $rc = $dbh->prepare("INSERT INTO fnavne (fhandle,fornavn,efternavn,foedt,doed,sprog,cols,thumb,pics,biotext,bio,links,sekundaer,vaerker,vers,prosa) VALUES (?,?,?,?, ?,?,?,?,?,?,?,?,?,?,?,?)");
+    my $rc = $dbh->prepare("INSERT INTO fnavne (fhandle,fornavn,efternavn,foedt,doed,sprog,cols,thumb,pics,biotext,bio,links,sekundaer,primaer,vaerker,vers,prosa) VALUES (?,?,?,?, ?,?,?,?,?,?,?,?,?,?,?,?,?)");
     
     foreach my $fhandle (keys %persons) { 
 	my $person = $persons{$fhandle};
 	my $fdir = "../fdirs/$fhandle";
 
-	my ($fcols,$fthumb,$pics,$fbio,$flinks,$fsekundaer,$fvaerker,$fprosa,$fvaerkerindhold);	
+	my ($fcols,$fthumb,$pics,$fbio,$flinks,$fsekundaer,$fprimaer,$fvaerker,$fprosa,$fvaerkerindhold);	
 	my  $biotext = '';
 	my  @keys = ();
 
@@ -151,6 +152,11 @@ sub insert {
 	    $fsekundaer=1;
 	    $fcols++;
 	}
+
+	if (-e $fdir."/primaer.txt") {
+	    $fprimaer=1;
+	    $fcols++;
+	}
 	
 	if (-e $fdir."/vaerker.txt") {
 	    $fvaerker=1;
@@ -167,7 +173,7 @@ sub insert {
 	    $fcols+=2;
 	}   
 
-        $rc->execute($fhandle,$person->{'firstname'},$person->{'lastname'},$person->{'born'} || '',$person->{'dead'} || '',$person->{'lang'},$fcols,$fthumb,$fpics,$biotext,$fbio,$flinks,$fsekundaer,$fvaerkerindhold,$fvaerker,$fprosa);
+        $rc->execute($fhandle,$person->{'firstname'},$person->{'lastname'},$person->{'born'} || '',$person->{'dead'} || '',$person->{'lang'},$fcols,$fthumb,$fpics,$biotext,$fbio,$flinks,$fsekundaer,$fprimaer,$fvaerkerindhold,$fvaerker,$fprosa);
 	$lastinsertsth->execute();
 	my ($lastid) = $lastinsertsth->fetchrow_array;
         $fhandle2fid{$fhandle} = $lastid;
