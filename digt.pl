@@ -76,8 +76,7 @@ $page->addBox( width => $poem->isProse ? '' : '10',
 	       align => $poem->isProse ? 'justify' : 'left',
 	       printer => 1,
 	       theme => 'book',
-	       end => qq|<a title="Udskriftsvenlig udgave" href="digt.pl?longdid=$longdid&printer=1"><img alt="Udskriftsvenlig udgave" src="gfx/print.gif" border=0></a>|,
-	       content => &poem($poem,$needle,$biblemark) );
+	       content => &poem($poem,$needle,$biblemark).'<br><br>' );
 
 my @keywords = $poem->keywords;
 
@@ -148,7 +147,7 @@ my $workTitle = $work->titleWithYear;
 $page->addBox( width => '250',
 	       coloumn => 2,
 	       theme => 'dark',
-	       content => qq|<a class="more" onClick="window.open('korrektur.cgi?longdid=$longdid','Korrekturpopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=330'); return false" href="javascript:{}">Send en rettelse...</a>| );
+	       content =>  &moreLinks($poem));
 
 $page->addBox( width => '250',
 	       coloumn => 2,
@@ -160,6 +159,15 @@ $page->print;
 #
 # Boxes
 #
+
+sub moreLinks {
+    my $poem = shift;
+    my $longdid = $poem->longdid;
+    my $HTML = '';
+    $HTML .= qq|<a class="more" href="digt.pl?longdid=$longdid&printer=1">Vis printudgave...</a><br>|;
+    $HTML .= qq|<a class="more" onClick="window.open('korrektur.cgi?longdid=$longdid','Korrekturpopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=330'); return false" href="javascript:{}">Send en rettelse...</a>|;
+    return $HTML;
+}
 
 sub poem {
     my ($poem,$needle,$biblemark) = @_;
