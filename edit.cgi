@@ -159,7 +159,7 @@ sub showRootDir {
     my $dbh = Kalliope::DB::connect();
     my $sth = $dbh->prepare("SELECT COUNT(DISTINCT filename) FROM edithistory WHERE action = ? AND dir = ?");
     my $HTML = '<table class="oversigt">';
-    $HTML .= '<tr><th>Værk</th><th>Sider</th><th><img src="gfx/edit.png"></th><th><img src="gfx/accept.png"></th><th><img src="gfx/duplet.png"></th><th>Funktioner</th></tr>';
+    $HTML .= '<tr><th>Værk</th><th>Sider</th><th><img alt="redigeret" src="gfx/edit.png"></th><th><img alt="godkendte" src="gfx/accept.png"></th><th><img alt="markerede som dupletter" src="gfx/duplet.png"></th><th>Funktioner</th></tr>';
     foreach my $f (grep {!/^\./} readdir(DIR)) {
 	my $size = _sizeOfDir($f);
 	$sth->execute('edit',$f);
