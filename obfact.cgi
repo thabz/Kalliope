@@ -46,7 +46,8 @@ $val = getVal("SELECT count(*) FROM digte WHERE layouttype = 'digt' AND afsnit !
 $val2 = getVal("select count(*) from digte where noter != ''");
 $HTML .= "<li>Af Kalliopes $val digte har $val2 en note.";
 
-$val3 = getVal("select count(*) from keywords_relation where keywordid = 38 and othertype = 'digt'");
+$val2 = getVal("select id from keywords where ord = 'sonnet'");
+$val3 = getVal("select count(*) from keywords_relation where keywordid = $val2 and othertype = 'digt'");
 $prc = sprintf("%.0d",($val3/$val)*100);
 $HTML .= "<li>Der findes $val3 sonetter i Kalliope, hvilket er $prc% af alle digte.";
 
