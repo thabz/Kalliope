@@ -115,7 +115,7 @@ sub _makeMetricLetters {
 		 '-' => 'minus',
 		 '/' => 'slash' );
     foreach $part (split / +/,$metrik) {
-        $output .= '<IMG SRC="gfx/metrik/'.$conv{$part}.'.gif" BORDER=0>';
+        $output .= '<IMG STYLE="vertical-align: middle" SRC="gfx/metrik/'.$conv{$part}.'.gif" BORDER=0>';
     }
     return $output;
 }
