@@ -48,7 +48,7 @@ unless ($fhandle) {
 
 
 my $poet = new Kalliope::Person(fhandle => $fhandle);
-my $mode = url_param('mode');
+my $mode = url_param('mode') || 1;
 
 #
 # Breadcrumbs -------------------------------------------------------------

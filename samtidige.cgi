@@ -101,7 +101,7 @@ if ($#events > 0) {
     my $HTML = '<TABLE WIDTH="100%"><TR><TD WIDTH="50%" VALIGN="top">';
 
     $HTML .= '<TABLE>';
-    my $last;
+    my $last = 0;
     foreach my $e (sort { $a->{'year'} <=> $b->{'year'} } @events) {
         my $yearForDisplay = $last != $$e{year} ? $$e{year} : '';
         
