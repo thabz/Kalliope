@@ -190,31 +190,28 @@ function openTimeContext(year) {
 <BODY LINK="#000000" VLINK="#000000" ALINK="#000000" LEFTMARGIN=0 TOPMARGIN=0 MARGINHEIGHT=0 MARGINWIDTH=0>
 
 EOF
+ 
     if (my $crumbs = $self->_constructBreadcrumbs) {
 	print '<DIV STYLE="background-color: #e0e0e0; padding: 1px">';
 	print $crumbs;
 	print '</DIV>';
     }
-    print '<DIV HEIGHT=70 CLASS="nav"><TABLE WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
-#    print '<TD CLASS="navigation">';
-##    print $self->_navigationMain;
-#    print '</TD>';
-#    print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1 ALT=""></TD>';
 
-    
+    # Head
+    print '<TABLE HEIGHT=70 BGCOLOR="black" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
     print '<TD WIDTH="100%" CLASS="maintitle">'.$self->titleAsHTML.'</TD>';
-#    print '<TD CLASS="maintitle"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=36 WIDTH=1 ALT=""></TD>';
     print '<TD ROWSPAN=2 VALIGN="top">'.$self->thumbIMG.'</TD></TR>';
     print '</TR>';
     print '<TR><TD ALIGN="right" CLASS="navigation">'.$self->_navigationSub.'</TD>';
-    print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1 ALT=""></TD>';
     print '</TR></TABLE>';
-    print '</DIV>';
 
-#    print '<DIV CLASS="body">';
+    # Body
     print '<TABLE WIDTH="100%" HEIGHT="100%" CELLPADDING=0 CELLSPACING=0 BORDER=0><TR>';
     print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" STYLE="padding-top: 30px" >'.$self->_navigationMain.'<BR><BR>';
     print $self->langSelector;
+    print '<BR><BR>';
+    print '<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT STYLE="width: 80px" NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><BR><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"></FORM>';
+
     print '</TD><TD VALIGN="top">';
     print '<TABLE WIDTH="100%" HEIGHT="100%"><TR>';
     my @widths = $self->getColoumnWidths;
@@ -225,16 +222,8 @@ EOF
 	    print qq|<TD VALIGN="top">$colHTML</TD>\n|;
         }
     }
-    print '</TR>';
-    print '<TR><TD COLSPAN=4>';
-    print '<TABLE WIDTH="100%"><TR><TD>';
-    print '<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"></FORM>';
-    print '</TD><TD ALIGN="right">';
+    print '</TR></TABLE>';
     print '</TD></TR></TABLE>';
-    print '</TD></TR></TABLE>';
-    
-    print '</TD></TR></TABLE>';
-#    print '</DIV>';
     print '</BODY></HTML>';
 }
 
