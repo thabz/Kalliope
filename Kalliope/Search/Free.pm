@@ -57,7 +57,7 @@ sub splitNeedle {
     my $needle2 = shift->needle;
     $needle2 =~ s/^\s+//;
     $needle2 =~ s/\s+$//;
-    $needle2 =~ s/[^a-zA-ZæøåÆØÅ= ]//g;
+    $needle2 =~ s/[^a-zA-ZæøåÆØÅ=\* ]//g;
     return split /\s+/,$needle2;
 }
 

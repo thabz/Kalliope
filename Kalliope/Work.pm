@@ -142,7 +142,7 @@ sub hasPics {
 sub getTitlepagePic {
     my $self = shift;
     foreach my $pic ($self->pics) {
-        if ($pic->{'type'} eq 'titlepage') {
+        if ($pic->{'type'} && $pic->{'type'} eq 'titlepage') {
             return $pic;
 	}
     }

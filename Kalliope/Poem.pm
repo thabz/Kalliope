@@ -142,7 +142,7 @@ sub resolveBiblioTags {
 
 sub extractFootnotes {
     my ($self,$content) = @_;
-    return '' unless $content;
+    return '' unless defined $content;
     my @footnotes = $self->{'footnotes'} ? @{$self->{'footnotes'}} : ();
     my $num = $#footnotes >= 0 ? $#footnotes + 2 : 1;
 #$content =~ s/<note>/<footnote>/g;
@@ -466,7 +466,8 @@ sub getSearchResultEntry {
     my $match = '';
     my $slash = '<SPAN STYLE="color: #a0a0a0">//</SPAN>';
     foreach my $ne (@needle) {
-	$ne .= '\W' if $ne !~ /\*$/;
+	$ne .= '\W' unless $ne =~ /\*$/;
+	$ne =~ s/\*//;
 	my ($a,$b,$c) = $content =~ /(.{0,30})(\W?$ne)(.{0,30})/si;
 	$a =~ s/\n+/ $slash /g if $a;
 	$c =~ s/\n+/ $slash /g if $b;
