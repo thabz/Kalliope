@@ -409,7 +409,7 @@ sub notFound {
     my $HTML;
     my $picNo = int rand(10) + 1;
     my $page = new Kalliope::Page ('title' => 'Hovsa!');
-    $page->addBox(content => qq|<IMG SRC="gfx/notfound/$picNo.jpg" ALIGN="center"><BR><BR>$message|);
+    $page->addBox(content => qq|<IMG BORDER=2 SRC="gfx/notfound/$picNo.jpg" ALIGN="center"><BR><BR>$message|);
     $page->print;
     exit;
 }
