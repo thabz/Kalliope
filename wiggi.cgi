@@ -1,10 +1,5 @@
 #!/usr/bin/perl -w
 
-# Hej Henrik...
-# Test
-# Test min bare, jeg er for rå! :)
-
-Test
 #  Copyright (C) 1999-2001 Jesper Christensen 
 #
 #  This script is free software; you can redistribute it and/or
