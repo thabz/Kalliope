@@ -45,6 +45,53 @@ my $page = newAuthor Kalliope::Page ( poet => $poet,
                                       page => 'samtidige',
                                       crumbs => \@crumbs );
 
+
+#
+# Historiske begivenheder --------------------------------------------------
+#
+
+my @events;
+
+my @works = ($poet->poeticalWorks,$poet->proseWorks);
+foreach my $w (grep { $_->hasYear } @works) {
+    push @events, { year => $w->year,
+                    descr => $poet->efternavn.': <i>'.$w->clickableTitle.'</i>' };
+}
+
+push @events , { year => $poet->yearBorn,
+                 descr => $poet->name.' født.'} if $poet->yearBorn;
+
+push @events , { year => $poet->yearDead,
+                 descr => $poet->name.' død.'} if $poet->yearDead;
+
+push @events, Kalliope::Timeline::getEventsForPerson($poet->fhandle);
+
+my @other = Kalliope::Timeline::getHistoryInTimeSpan($poet->yearBorn,$poet->yearDead);
+map {$_->{'descr'} = '<span class="gray">'.$_->{'descr'}."</span>"} @other;
+push @events, @other;
+
+if ($#events > 0) {
+    my $antal = $#events + 1;
+    my $i = 0;
+    my $HTML = '<TABLE WIDTH="100%"><TR><TD WIDTH="50%" VALIGN="top">';
+
+    $HTML .= '<TABLE>';
+    my $last = 0;
+    foreach my $e (sort { $a->{'year'} <=> $b->{'year'} } @events) {
+        my $yearForDisplay = $last != $$e{year} ? $$e{year} : '';
+        
+	$HTML .= qq|<TR><TD CLASS="blue" VALIGN="top">$yearForDisplay&nbsp;</TD>|;
+	$HTML .= '<TD VALIGN="top">'.$$e{descr}."</TD></TR>";
+	$HTML .= '</TABLE></TD><TD WIDTH="50%" VALIGN="top"><TABLE>' if ++$i == int ($antal / 2);
+	$last = $$e{year};
+    }
+    $HTML .= '</TABLE></TD></TR></TABLE>';
+    Kalliope::buildhrefs(\$HTML);
+    $page->addBox( title => 'Historiske begivenheder',
+	    width => '80%',
+	    coloumn => 1,
+	    content => $HTML);
+}
 #
 # Samtidige digtere -------------------------------------
 #
@@ -73,49 +120,6 @@ if ($antal) {
             coloumn => 1,
 	    content => $HTML );
 
-}
-
-#
-# Historiske begivenheder --------------------------------------------------
-#
-
-my @events;
-
-my @works = ($poet->poeticalWorks,$poet->proseWorks);
-foreach my $w (grep { $_->hasYear } @works) {
-    push @events, { year => $w->year,
-                    descr => $poet->efternavn.': <i>'.$w->clickableTitle.'</i>' };
-}
-
-push @events , { year => $poet->yearBorn,
-                 descr => $poet->name.' født.'} if $poet->yearBorn;
-
-push @events , { year => $poet->yearDead,
-                 descr => $poet->name.' død.'} if $poet->yearDead;
-
-push @events, Kalliope::Timeline::getHistoryInTimeSpan($poet->yearBorn,$poet->yearDead);
-
-if ($#events > 0) {
-    my $antal = $#events + 1;
-    my $i = 0;
-    my $HTML = '<TABLE WIDTH="100%"><TR><TD WIDTH="50%" VALIGN="top">';
-
-    $HTML .= '<TABLE>';
-    my $last = 0;
-    foreach my $e (sort { $a->{'year'} <=> $b->{'year'} } @events) {
-        my $yearForDisplay = $last != $$e{year} ? $$e{year} : '';
-        
-	$HTML .= qq|<TR><TD CLASS="blue" VALIGN="top">$yearForDisplay&nbsp;</TD>|;
-	$HTML .= '<TD VALIGN="top">'.$$e{descr}."</TD></TR>";
-	$HTML .= '</TABLE></TD><TD WIDTH="50%" VALIGN="top"><TABLE>' if ++$i == int ($antal / 2);
-	$last = $$e{year};
-    }
-    $HTML .= '</TABLE></TD></TR></TABLE>';
-    Kalliope::buildhrefs(\$HTML);
-    $page->addBox( title => 'Historiske begivenheder',
-	    width => '80%',
-	    coloumn => 1,
-	    content => $HTML);
 }
 
 $page->print;
