@@ -38,4 +38,10 @@ sub abbr {
     return substr($string,0,$size).'...';
 }
 
+sub uc {
+    my $str = shift;
+    $str =~ tr/זרו/ֶ״ֵ/;
+    return uc $str;
+}
+
 1;

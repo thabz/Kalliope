@@ -364,7 +364,7 @@ sub menuStructs {
          'history' => {menuTitle => 'Nøgleord',
 		       icon => 'gfx/icons/keywords-w64.gif',
                        url => 'keywordtoc.cgi?sprog='.$lang,
-                       pages => ['keywordtoc']
+                       pages => ['keywordtoc','dict']
                        },
          'forum' =>    {menuTitle => 'Forum',
                        url => 'forumindex.cgi',
@@ -428,8 +428,11 @@ sub menuStructs {
          'kvaerkerpop' => {menuTitle => 'Mest populære værker',
                            url => 'kvaerker.pl?mode=pop&sprog='.$lang
                        },
-         'keywordtoc' => {menuTitle => 'Indhold',
+         'keywordtoc' => {menuTitle => 'Nøgleord',
                            url => 'keywordtoc.cgi?sprog='.$lang
+                       },
+         'dict' => {menuTitle => 'Ordbog',
+                           url => 'dict.cgi'
                        },
          'timeline' => {menuTitle => 'Tidslinie',
                            url => 'timeline.cgi&sprog='.$lang
