@@ -141,7 +141,7 @@ sub showRootDir {
     opendir(DIR,"edit/files");
     my $HTML = '';
     foreach my $f (grep {!/^\./} readdir(DIR)) {
-	$HTML .= qq|<a class="green" href="edit.cgi?dir=$f">$f</a><br>|
+	$HTML .= qq|<a class="green" href="edit.cgi?dir=$f">$f</a> <a href="dumpedit.cgi?dir=$f">[Formateret]</a><br>|
     }
     return $HTML;
 }
