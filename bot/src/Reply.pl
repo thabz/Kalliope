@@ -230,40 +230,40 @@ sub getReply {
 		my($x) = int(rand(16));
 		# oh this could be done much better
 		if ($x <= 5) {
-		    $theMsg= "$orig_Y is $theMsg";
+		    $theMsg= "$orig_Y er $theMsg";
 		}
 		if ($x == 6) { 
-		    $theMsg= "i think $orig_Y is $theMsg";
+		    $theMsg= "jeg tror $orig_Y er $theMsg";
 		}
 		if ($x == 7) { 
-		    $theMsg= "hmmm... $orig_Y is $theMsg";
+		    $theMsg= "lad mig nu se... $orig_Y er $theMsg";
 		}
 		if ($x == 8) { 
-		    $theMsg= "it has been said that $orig_Y is $theMsg";
+		    $theMsg= "det skulle ikke undre mig, at $orig_Y er $theMsg";
 		}
 		if ($x == 9) { 	
-		    $theMsg= "$orig_Y is probably $theMsg";
+		    $theMsg= "$orig_Y is garantrisse $theMsg";
 		}
 		if ($x == 10) { 
 		    $theMsg =~ s/[.!?]+$//;
-		    $theMsg= "rumour has it $orig_Y is $theMsg";
+		    $theMsg= "rygtet siger at $orig_Y er $theMsg";
 		    # $theMsg .= " dumbass";
 		}
 		if ($x == 11) { 
-		    $theMsg= "i heard $orig_Y was $theMsg";
+		    $theMsg= "jeg hørte at $orig_Y var $theMsg";
 		}
 		if ($x == 12) { 
-		    $theMsg= "somebody said $orig_Y was $theMsg";
+		    $theMsg= "nogen sagde at $orig_Y var $theMsg";
 		}
 		if ($x == 13) { 
-		    $theMsg= "i guess $orig_Y is $theMsg";
+		    $theMsg= "jeg tror måske at $orig_Y måske er $theMsg";
 		}
 		if ($x == 14) { 
-		    $theMsg= "well, $orig_Y is $theMsg";
+		    $theMsg= "$orig_Y er helt sikkert $theMsg";
 		}
 		if ($x == 15) { 
 		    $theMsg =~ s/[.!?]+$//;
-		    $theMsg= "$orig_Y is, like, $theMsg";
+		    $theMsg= "$orig_Y er, lissom, $theMsg";
 		}
 	    } else {
 		$theMsg = "$orig_Y $theVerb $theMsg" if ($theMsg !~ /^\s*$/);

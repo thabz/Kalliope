@@ -36,18 +36,18 @@ sub setup {
 		 'no worries', 'de nada', 'de rien', 'bitte', 'pas de quoi');
 
     # when i'm cofused and I have to reply
-    @confused = ("huh?", 
-		 "what?", 
-		 "sorry...", 
-		 "i\'m not following you...",
-		 "excuse me?");
+    @confused = ("øh?", 
+		 "hvad?", 
+		 "undskyld...", 
+		 "jeg fatter dig ikke...",
+		 "hmm?");
 
     # when i recognize a query but can't answer it
-    @dunno = ('i don\'t know', 
-	      'wish i knew',
-	      'i haven\'t a clue',
-	      'no idea',
-	      'bugger all, i dunno');
+    @dunno = ('aner det ikke', 
+	      'jeg er altså ikke oraklet fra delfi',
+	      'spørg mig igen en anden dag',
+	      'hva... er jeg til eksamen?',
+	      'jeg tror jeg ved det, men jeg er ikke sikker');
 
 
 
@@ -106,16 +106,16 @@ sub setup {
 	&parseChannelfile();
 
     # ways to say hello
-    @hello = ('hello', 
-	      'hi',
-	      'hey',
+    @hello = ('kodaw!', 
+	      'wazzup?',
+	      'hej med dig',
 	      'niihau',
 	      'bonjour',
 	      'hola',
 	      'salut',
 	      'que tal',
 	      'privet',
-	      "what's up");
+	      "hvasså du gamle?");
 
     $param{'maxKeySize'}  ||= 30; # maximum LHS length
     $param{'maxDataSize'} ||= 200; # maximum total length
