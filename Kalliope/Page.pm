@@ -236,13 +236,13 @@ EOF
     print '<TABLE HEIGHT="100%" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0>';
     
     if (my $crumbs = $self->_constructBreadcrumbs) {
-        print '<TR><TD HEIGHT=10 COLSPAN=2 STYLE="background-color: #e0e0e0; padding: 1px">';
+        print '<TR><TD HEIGHT=10 COLSPAN=3 STYLE="background-color: #e0e0e0; padding: 1px">';
 	print $crumbs;
 	print '</TD></TR>';
     }
 
     # Head
-    print '<TR><TD HEIGHT=70 COLSPAN=2 VALIGN="top">';
+    print '<TR><TD HEIGHT=70 COLSPAN=3 VALIGN="top">';
 
     print '<TABLE BGCOLOR="black" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
     print '<TD ROWSPAN=2><IMG SRC="gfx/trans1x1.gif" HEIGHT=70 WIDTH=1></TD>';
@@ -252,6 +252,13 @@ EOF
     print '<TR><TD ALIGN="right" CLASS="navigation">'.$self->_navigationSub.'&nbsp;&nbsp;</TD>';
     print '</TR></TABLE>';
     print '</TD></TR>';
+
+    # top pap
+    print '<TR>';
+    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=10></TD>';
+    print '<TD BACKGROUND="gfx/paptop.gif" WIDTH="100%"><IMG SRC="gfx/trans1x1.gif" WIDTH="10" HEIGHT="10"></TD>';
+    print '<TD BACKGROUND="gfx/paptopcorner.gif" WIDTH="34"><IMG SRC="gfx/trans1x1.gif" WIDTH="34" HEIGHT=10></TD>';
+    print '</TR>';
 
     # Body
     print '<TR>';
@@ -271,11 +278,18 @@ EOF
     }
     print '</TR></TABLE>';
     print '</TD>';
+    print '<TD BACKGROUND="gfx/papright.gif"><IMG SRC="gfx/trans1x1.gif" WIDTH="34" HEIGHT="1"></TD>';
+    print '</TR>';
 
+    # bottom pap
+    print '<TR>';
+    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=10></TD>';
+    print '<TD BACKGROUND="gfx/papbottom.gif" WIDTH="100%"><IMG SRC="gfx/trans1x1.gif" WIDTH="10" HEIGHT="10"></TD>';
+    print '<TD BACKGROUND="gfx/paprightcorner.gif" WIDTH="34"><IMG SRC="gfx/trans1x1.gif" WIDTH="34" HEIGHT=10></TD>';
     print '</TR>';
 
     # Foot
-    print '<TR><TD COLSPAN=2 HEIGHT="40" BGCOLOR="black" ALIGN="right" VALIGN="middle">';
+    print '<TR><TD COLSPAN=3 HEIGHT="40" BGCOLOR="black" ALIGN="right" VALIGN="middle">';
 
     print '<FORM METHOD="get" ACTION="ksearch.cgi">';
     print '<TABLE WIDTH="100%"><TR>';
