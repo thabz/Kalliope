@@ -89,8 +89,9 @@ sub sortString {
 }
 
 sub subtitle {
-    $_[0]->{'underoverskrift'} =~ s/\n/<BR>/g;
-    return $_[0]->{'underoverskrift'};
+    my $self = shift;
+    $self->{'underoverskrift'} =~ s/\n/<BR>/g if $self->{'underoverskrift'}; 
+    return $self->{'underoverskrift'};
 }
 
 sub subtitleAsHTML {
@@ -347,7 +348,7 @@ sub contentForSearch {
     my $self = shift;
     my $sth = $dbh->prepare("SELECT indhold FROM digte WHERE did = ?");
     $sth->execute($self->did);
-    my $data = $self->subtitle."\n";
+    my $data = ($self->subtitle || '')."\n";
     $data .= $sth->fetchrow_array;
     return Kalliope::Strings::stripHTML($data);
 }
