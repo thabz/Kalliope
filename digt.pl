@@ -41,6 +41,8 @@ if (url_param('longdid')) {
     Kalliope::Page::notFound();
 }
 
+Kalliope::Page::notFound() unless $poem;
+
 my $needle = url_param('needle') || '';
 my $biblemark = url_param('biblemark') || '';
 
