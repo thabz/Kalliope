@@ -9,7 +9,7 @@ my $dbh = Kalliope::DB->connect;
 
 my ($mon,$year) = (2,1999);
 
-my $sth = $dbh->prepare("SELECT count(*) FROM digte WHERE createtime < ?");
+my $sth = $dbh->prepare("SELECT count(*) FROM digte WHERE afsnit = 0 AND createtime < ?");
 
 $unixdate = POSIX::mktime(0,0,0,1,2,1999-1900);
 
