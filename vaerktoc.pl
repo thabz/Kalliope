@@ -45,6 +45,7 @@ push @crumbs,['Værker','fvaerker.pl?fhandle='.$poet->fhandle];
 push @crumbs,[$work->titleWithYear,'vaerktoc.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->vhandle];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
+                                      page => 'vaerker',
                                       extrawindowtitle => $work->titleWithYear,
                                       crumbs => \@crumbs );
 
