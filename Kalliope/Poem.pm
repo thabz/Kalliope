@@ -417,7 +417,7 @@ sub fhandle {
 
 sub clickableTitle {
     my ($self) = @_;
-    return $self->author->name.': <A CLASS=green HREF="digt.pl?longdid='.$self->longdid.'">»'.$self->title.'«</A> - '.$self->work->title.' '.$self->work->parenthesizedYear;
+    return $self->author->name.': <A CLASS=green HREF="digt.pl?longdid='.$self->longdid.'">»'.$self->linkTitle.'«</A> - '.$self->work->title.' '.$self->work->parenthesizedYear;
 }
 
 sub clickableTitleSimple {
