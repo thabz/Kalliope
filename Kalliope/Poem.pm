@@ -224,4 +224,30 @@ sub getSearchResultEntry {
     return $HTML;
 }
 
+sub addToKeyPool {
+    my ($self,$newKeys) = @_;
+    my @keypool = $self->getKeyPool;
+    my @newKeys = split /[ ,.;]+/,$newKeys;
+    my $keyString = join '; ', sort (@keypool,@newKeys);
+
+    my $dbh = Kalliope::DB->connect;
+    if ($#keypool >= 0) {
+	my $sth = $dbh->prepare("UPDATE digte_keywords SET keywords = ? WHERE longdid = ?");
+	$sth->execute($keyString,$self->longdid);
+    } else {
+	my $sth = $dbh->prepare("INSERT INTO digte_keywords (longdid,keywords,lang) VALUES (?,?,?)");
+	$sth->execute($self->longdid,$keyString,$self->author->lang);
+    }
+}
+
+sub getKeyPool {
+    my $self = shift;
+    my $dbh = Kalliope::DB->connect;
+    my $sth = $dbh->prepare("SELECT keywords FROM digte_keywords WHERE longdid = ?");
+    $sth->execute($self->longdid);
+    my $string = $sth->fetchrow_array;
+    my @result = split '; ',$string;
+    return @result;
+}
+
 1;

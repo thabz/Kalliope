@@ -83,6 +83,10 @@ if (defined param('korrektur')) {
     print STDERR $mailBody;
 }
 
+if (defined param('newkeywords')) {
+    $poem->addToKeyPool(param('newkeywords'));
+}
+
 $page->addBox( width => '100%',
 	       coloumn => 1,
                align => $poem->isProse ? 'justify' : 'left',
@@ -96,6 +100,13 @@ if ($poem->notes || $#keywords >= 0) {
                    title => 'Noter',
 	           content => &notes($poem,@keywords) );
 }
+
+$page->addBox( width => '200',
+               coloumn => 2,
+               title => 'Nøgleord',
+               content => &keywords($poem) );
+
+
 
 if ($poem->footnotes) { 
     $page->addBox( width => '200',
@@ -132,7 +143,7 @@ sub poem {
     $HTML .= '<BR>';
     $HTML .= $poem->content;
     $HTML =~ s/<footmark id="footnote([^"]+)"\/>/<A CLASS="blue" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup>$1<\/sup><\/A>/gsi;
-    $HTML =~ s/<footmark&nbsp;id="footnote([^"]+)"\/>/<A CLASS="blue" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup>$1<\/sup><\/A>/gsi;
+    $HTML =~ s/<footmark&nbsp;id="footnote([^"]+)"\/>/<A CLASS="blue" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup><span style="font-size: 9px">$1<\/span><\/sup><\/A>/gsi;
     if ($needle) {
 	$needle =~ s/^\s+//;
 	$needle =~ s/\s+$//;
@@ -159,10 +170,28 @@ sub footnotes {
     my $i = 1;
     my $HTML = '<span style="font-size: 12px">';
     foreach my $note (@notes) {
+       Kalliope::buildhrefs(\$note);
        $HTML .= qq|<A CLASS="blue" NAME="footnotedesc$i" HREF="#footnotemark$i">$i.</A> $note<BR>|;
        $i++;
     }
     $HTML .= '</span>';
+    return $HTML;
+}
+
+sub keywords {
+    my ($poem) = @_;
+    my @keywords = $poem->getKeyPool;
+    my $HTML;
+    if ($#keywords >= 0) {
+	foreach my $word (@keywords) {
+	    $HTML .= "$word, "
+	}
+	$HTML =~ s/, $//;
+    } else {
+        $HTML = 'Dette digt har endnu ingen nøgleord tilknyttet.';
+    }
+    my $longdid = $poem->longdid;
+    $HTML .= qq|<br><BR>Tilføj nøgleord<BR><FORM METHOD="get" NAME="addkeyword"><INPUT TYPE="text" CLASS="inputtext" NAME="newkeywords"><INPUT TYPE="hidden" NAME="longdid" VALUE="$longdid"><INPUT TYPE="submit" CLASS="button" VALUE="Tilføj"></FORM>|;
     return $HTML;
 }
 
@@ -205,9 +234,9 @@ sub korrekturFelt {
     } else {
         my $longdid = $poem->longdid;
 	$HTML .= "<SMALL>Fandt du en trykfejl i denne tekst, skriv da rettelsen i feltet herunder, og tryk Send</SMALL><BR><BR>";
-	$HTML .= '<FORM><TEXTAREA NAME="korrektur" WRAP="virtual" COLS=14 ROWS=4></TEXTAREA><BR>';
+	$HTML .= '<FORM><TEXTAREA CLASS="inputtext" NAME="korrektur" WRAP="virtual" COLS=14 ROWS=4></TEXTAREA><BR>';
 	$HTML .= qq|<INPUT TYPE="hidden" NAME="longdid" VALUE="$longdid">|;
-	$HTML .= '<INPUT TYPE="submit" VALUE="Send"> ';
+	$HTML .= '<INPUT CLASS="button" TYPE="submit" VALUE="Send"> ';
 	$HTML .= Kalliope::Help->new('korrektur')->linkAsHTML;
 	$HTML .= "</FORM>";
     }
