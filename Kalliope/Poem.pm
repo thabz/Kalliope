@@ -111,23 +111,28 @@ sub quality {
 }
 
 sub pics {
-   my $self = shift;
-   my $pics = $self->{'pics'};
-   my @result;
-   my $fhandle = $self->author->fhandle;
-   foreach my $line (split /\$\$\$/,$pics) {
-      my ($url,$desc) = split /%/,$line;
-      my $thumb = $url;
-      $thumb =~ s/^(.*?)([^\/]+)$/$1_$2/;
-      push @result,{ thumbfile => 'fdirs/'.$fhandle.'/'.$thumb,
-                     destfile =>  'fdirs/'.$fhandle.'/'.$url,
-                     description => $desc };
-   }	     
-   return @result;
+    my $self = shift;
+    return @{$self->{'picscache'}} if $self->{'picscache'};
+    my @result;
+    my $fhandle = $self->fhandle;
+    my $sth = $dbh->prepare("SELECT caption,url FROM textpictures WHERE longdid = ?");
+    $sth->execute($self->longdid);
+    while (my ($desc,$url) = $sth->fetchrow_array) {
+	my $thumb = $url;
+	$thumb =~ s/^(.*?)([^\/]+)$/$1_$2/;
+	push @result,{ thumbfile => 'fdirs/'.$fhandle.'/'.$thumb,
+	    destfile =>  'fdirs/'.$fhandle.'/'.$url,
+	    description => $desc };
+
+    }
+    $self->{'picscache'} = \@result;
+    return @result;
+
 }
 
 sub hasPics {
-   return shift->{'pics'} ? 1 : 0;
+    my @pics = shift->pics();
+    return $#pics >= 0;
 }
 
 sub resolveBiblioTags {
