@@ -27,6 +27,7 @@ use Kalliope::Person ();
 use Kalliope::DB ();
 use Kalliope::Work ();
 use Kalliope::Page ();
+use Kalliope::Date ();
 use Kalliope;
 
 my $dbh = Kalliope::DB->connect;
@@ -70,13 +71,11 @@ $page->addBox( width => '80%',
                end => qq|<A TITLE="Tilbage til oversigten over værker" HREF="fvaerker.pl?fhandle=$fhandle&mode=$mode"><IMG ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 ALT="Tilbage til oversigten over værker"></A>|
               );
 
-if ($work->notes) {
-    $page->addBox( width => '150',
-	           coloumn => 2,
-                   title => 'Noter',
-	           theme => 'note',
-                   content => &notes($work) );
-}
+$page->addBox( width => '150',
+               coloumn => 2,
+               title => 'Noter',
+               theme => 'note',
+               content => &notes($work) );
 
 if ($work->hasPics) {
     $page->addBox( width => '100%',
@@ -146,9 +145,11 @@ sub notes {
 
     my $HTML;
     $HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>',@notes;
-    $HTML = qq|<span style="font-size: 12px">$HTML</span>|;
+    $HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>' if $#notes >= 0;
+    $HTML .= 'Sidst ændret: '.Kalliope::Date::shortDate($work->lastModified);
     $HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>';
     $HTML .= $work->quality->asHTML;
+    $HTML = qq|<span style="font-size: 12px">$HTML</span>|;
     return $HTML;
 }
 

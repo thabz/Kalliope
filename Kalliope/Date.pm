@@ -21,6 +21,7 @@
 
 package Kalliope::Date;
 
+use POSIX;
 use strict;
 
 my @months = qw (Jan Feb Mar Apr Maj Jun Jul Aug Sep Okt Nov Dec);
@@ -73,6 +74,13 @@ sub splitDate {
     my $date = shift;
     my ($y,$m,$d) = split '-',$date;
     return ($y,$m,$d);
+}
+
+sub cvsTimestampToUNIX {
+    # format 2001/08/26 17:01:18 -> UNIX date
+    my $string = shift;
+    my ($y,$m,$d,$h,$min,$s) = $string =~ /(....)\/(..)\/(..) (..):(..):(..)/;
+    return POSIX::mktime($s,$m,$h,$d,$m-1,$y-1900);
 }
 
 1;

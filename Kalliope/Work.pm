@@ -47,6 +47,10 @@ sub new {
     return $obj;
 }
 
+sub lastModified {
+    return shift->{'cvstimestamp'};
+}
+
 sub isProse {
     return shift->{'type'} ne 'v';
 }
