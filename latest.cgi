@@ -33,7 +33,7 @@ my $DAYS_TO_SHOW = 14;
 
 my $page = new Kalliope::Page (
 		title => 'Senest tilføjede digte',
-                pagegroup => 'welcome',
+                pagegroup => 'poemlist',
 		changelangurl => 'poets.cgi?list=az&sprog=XX',
                 page => 'latest'
            );
