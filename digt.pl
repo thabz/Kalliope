@@ -24,7 +24,7 @@ use Kalliope;
 use Kalliope::Poem;
 use Kalliope::Page;
 use Kalliope::Help;
-use Net::SMTP;
+use Mail::Sender qw();
 use CGI qw(:standard);
 use strict;
 
@@ -76,14 +76,19 @@ if (defined param('korrektur')) {
     $mailBody .= 'Digt:       '.$poem->title."\n";
     $mailBody .= 'Digt-id:    '.$poem->longdid."\n";
     $mailBody .= 'Korrektur:  '.param('korrektur')."\n";
-    my $smtp = Net::SMTP->new('localhost') || last;
-    $smtp->mail($MAILTAINER_EMAIL);
-    $smtp->to($MAILTAINER_EMAIL);
-    $smtp->data("From: Kalliope <$MAILTAINER_EMAIL>\r\n".
-	    "To: $MAILTAINER_EMAIL\r\n".
-	    "Subject: Korrektur $longdid\r\n".
-	    "\r\n".$mailBody."\r\n");
-    $smtp->quit;
+
+    my $sender = new Mail::Sender ({ smtp => 'localhost',
+	                             charset => "ISO-8859-1",
+				     encoding  => "Base64",
+				     from      => $MAILTAINER_EMAIL, 
+				     fake_from => "Kalliope <$MAILTAINER_EMAIL>", 
+				     to        => $MAILTAINER_EMAIL,
+				     fake_to   => "Kalliope <$MAILTAINER_EMAIL>", 
+				     subject   => "Korrektur $longdid"});
+    $sender->Open();
+    $sender->Body("ISO-8859-1","Quoted-printable","text/plain");
+    $sender->Send($mailBody);
+    $sender->Close();
 }
 
 if (defined param('newkeywords')) {
