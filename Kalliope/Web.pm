@@ -153,8 +153,8 @@ sub enddarkbluebox {
 
 sub endbox {
     my $sub = shift;
-    my $HTML
-    if (defined($sub)) {
+    my $HTML;
+    if ($sub) {
 	$HTML = "</TD></TR></TABLE>";
 	$HTML .= "</TD></TR><TR><TD>";
 	$HTML .= '<DIV STYLE="position: relative; top: -10px; left: 10px;">';
