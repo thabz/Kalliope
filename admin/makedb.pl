@@ -67,7 +67,6 @@ if (Kalliope::Build::Timestamps::hasChanged($newsFile)) {
     Kalliope::Build::Timestamps::register($newsFile);
     &log ("Done");
 }
-exit;
 
 #
 # Build dictionary 
