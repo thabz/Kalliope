@@ -250,6 +250,10 @@ sub menu {
                     title => 'Førstelinier', 
                     desc => "Vis førstelinier for samtlige digte",
                     status => $self->hasPoems },
+       search     => { url => 'fsearch.cgi?', 
+                    title => 'Søgning', 
+                    desc => "Søg i ".$poetName."s værker",
+                    status => $self->hasPoems },
        popular => { url => 'fpop.pl?', 
                     title => 'Populære', 
                     desc => "Top-10 over mest læste $poetName digte i Kalliope",
@@ -282,7 +286,7 @@ sub menu {
                     title => 'Bibliografi', 
                     desc => $poetName.'s bibliografi',
 		    status => $self->{'primaer'} || $self->{'sekundaer'} } );
-    my @keys = qw/forside vaerker titlelines firstlines popular prosa pics bio samtidige henvisninger links bibliografi/;
+    my @keys = qw/forside vaerker titlelines firstlines search popular prosa pics bio samtidige henvisninger links bibliografi/;
     my $HTML;
     my @itemsHTML;
     foreach my $key (@keys) {

@@ -71,6 +71,12 @@ my @menuStruct = (
         desc => "Vis førstelinier for samtlige digte",
         icon => 'gfx/icons/poem-h48.gif'
                     },{
+	url => 'fsearch.cgi?', 
+	title => 'Søgning', 
+	status => $poet->{'vaerker'},
+        desc => "Søg i ".$poetName."s tekster.",
+        icon => 'gfx/icons/search-h48.gif'
+                    },{
 	url => 'fpop.pl?', 
 	title => 'Populære digte', 
 	status => $poet->{'vaerker'},
