@@ -46,7 +46,7 @@ my $page = new Kalliope::Page (
                 pagegroup => 'search',
                 lang => $search->lang,
                 page => '',
-                thumb => 'gfx/search_100.GIF',
+                thumb => 'gfx/icons/search-h70.gif',
                 crumbs => \@crumbs );
 
 if ($search->hasSearchBox) {
