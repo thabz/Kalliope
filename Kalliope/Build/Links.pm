@@ -19,17 +19,38 @@
 #
 #  $Id$
 
-package Kalliope::Build::Database;
-
+package Kalliope::Build::Links;
+    
 use Kalliope::DB;
 use strict;
 
 my $dbh = Kalliope::DB::connect();
 
-sub grant {
-   $dbh->do(q/GRANT SELECT ON TABLE fnavne,vaerker,digte,worknotes TO "www-data"/);
-   $dbh->do(q/GRANT SELECT ON TABLE keywords_relation,textnotes TO "www-data"/);
-   $dbh->do(q/GRANT SELECT ON TABLE workpictures TO "www-data"/);
+sub insert {
+    my $sth = $dbh->prepare("SELECT fhandle FROM fnavne WHERE links = 1");
+    $sth->execute;
+    my $sthins = $dbh->prepare("INSERT INTO links (fhandle,url,beskrivelse) VALUES (?,?,?)");
+    while (my $fn = $sth->fetchrow_hashref) {
+	open (FILE,"../fdirs/".$fn->{'fhandle'}."/links.txt");
+	while (<FILE>) {
+	    my $url = $_;
+	    my $desc = <FILE>;
+	    $sthins->execute($fn->{'fhandle'},$url,$desc);
+	}
+	close (FILE)
+    }
+    $sth->finish;
+    $sthins->finish;
+}
+
+sub create {
+    $dbh->do("DROP TABLE links");
+    $dbh->do("CREATE TABLE links ( 
+              fhandle varchar(40) NOT NULL REFERENCES fnavne(fhandle),
+              url text NOT NULL,
+              beskrivelse text NOT NULL)");
+   $dbh->do(q/CREATE INDEX links_fhandle ON links(fhandle)/);
+   $dbh->do(q/GRANT SELECT ON TABLE links TO "www-data"/);
 }
 
 1;

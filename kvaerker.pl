@@ -147,8 +147,8 @@ if ($mode eq 'titel') {
 
 } elsif ($mode eq 'digter') {
     my $HTML;
-    my $sth = $dbh->prepare("SELECT CONCAT(efternavn,', ',fornavn) as navn, fornavn, efternavn, fhandle FROM fnavne WHERE sprog = ? AND vers = 1");
-    my $sthvaerker = $dbh->prepare("SELECT vhandle,titel,aar,hascontent FROM vaerker WHERE fhandle = ? ORDER BY aar");
+    my $sth = $dbh->prepare("SELECT fornavn, efternavn, fhandle FROM fnavne WHERE sprog = ? AND vers = 1");
+    my $sthvaerker = $dbh->prepare("SELECT vid,titel,aar,hascontent FROM vaerker WHERE fhandle = ? ORDER BY aar");
     $sth->execute($LA);
     my @f;
     while (my $f = $sth->fetchrow_hashref) {
@@ -169,7 +169,7 @@ if ($mode eq 'titel') {
 	if ($sthvaerker->rows) {
             $HTML .= '<SPAN CLASS="listeblue">&#149;</SPAN> ';
 	    $f->{'navn'} =~ s/^, // if $f->{'navn'};
-	    $HTML .= ($f->{navn} || '')."<BR>";
+	    $HTML .= ($f->{efternavn} || '')."<BR>";
 	    $html = '<DIV STYLE="padding:0 0 0 20">';
 	    while ($v = $sthvaerker->fetchrow_hashref) {
 		next if ($v->{'titel'} eq '');
@@ -194,7 +194,7 @@ if ($mode eq 'titel') {
 } elsif ($mode eq 'pop') {
     my $HTML;
     print STDERR "\nLimit = $limit\n";
-    my $sth = $dbh->prepare("SELECT fornavn, efternavn, v.titel as vtitel, vhandle, aar, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f, vaerker as v WHERE dh.longdid = d.longdid AND d.fid = f.fid AND d.vid = v.vid AND f.sprog=? GROUP BY v.vid ORDER BY hits DESC ".($limit == 0 ? '' : 'LIMIT 10' ));
+    my $sth = $dbh->prepare("SELECT fornavn, efternavn, v.titel as vtitel, vhandle, aar, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f, vaerker as v WHERE dh.longdid = d.longdid AND d.fhandle = f.fhandle AND d.vid = v.vid AND f.sprog=? GROUP BY v.vid ORDER BY hits DESC ".($limit == 0 ? '' : 'LIMIT 10' ));
     $sth->execute($LA);
     my $i = 1;
     my $total;

@@ -32,8 +32,8 @@ my $dbh = Kalliope::DB->connect;
 sub new {
     my ($class,%arg) = @_;
     my $sql;
-    $sql = 'id = "'.$arg{'id'}.'"' if defined $arg{'id'};
-    $sql = 'ord = "'.$arg{'ord'}.'"' if defined $arg{'ord'};
+    $sql = "id = '".$arg{'id'}."'" if defined $arg{'id'};
+    $sql = "ord = '".$arg{'ord'}."'" if defined $arg{'ord'};
      my $sth = $dbh->prepare("SELECT * FROM keywords WHERE $sql");
     $sth->execute();
     my $obj = $sth->fetchrow_hashref;
@@ -88,11 +88,11 @@ sub linksToPersons {
 
 sub linksToPoems {
     my ($self,$limit,$LA) = @_;
-    my $sth = $dbh->prepare("SELECT DISTINCT d.did FROM digte as d,keywords_relation as k, vaerker as v, fnavne as f, digthits as h WHERE keywordid = ? AND othertype = 'digt' AND otherid = d.did AND v.vid = d.vid AND f.fid = d.fid AND f.sprog = ? AND h.longdid = d.longdid ORDER BY hits DESC ".($limit eq 'all' ? '' : 'LIMIT 5'));
-    $sth->execute($self->id,$LA);
+    my $sth = $dbh->prepare("SELECT t.longdid FROM textxkeyword k, digte t, digthits h WHERE k.keyword = ? AND h.longdid = k.longdid AND t.longdid = k.longdid AND t.lang = ? ORDER BY h.hits DESC ".($limit eq 'all' ? '' : 'LIMIT 5'));
+    $sth->execute($self->ord,$LA);
     my @list;
     while (my $id = $sth->fetchrow_array) {
-         push @list, new Kalliope::Poem(did => $id);
+         push @list, new Kalliope::Poem(longdid => $id);
     }
     return @list; 
 }

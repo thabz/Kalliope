@@ -98,8 +98,9 @@ my $minimenu = '<small>Vælg begyndelsesbogstav:</small><br><br>';
 foreach my  $f (sort { Kalliope::Sort::sort($a,$b) } @f) { 
     my $letter = $f->{'forbogstav'};
     my $class = ($letter eq $forbogstav) ? 'framed' : '';
+    my $letterForDisplay = $letter eq '.' ? 'Tegn' : $letter;
     $minimenu .= qq|<A CLASS="$class" TITLE="Digte som begynder med $letter" HREF="klines.pl?mode=$mode&forbogstav=$letter&sprog=$LA">|;
-    $minimenu .= qq|$letter</A> |; 
+    $minimenu .= qq|$letterForDisplay</A> |; 
 }
 
 $page->addBox ( width=> '80%',

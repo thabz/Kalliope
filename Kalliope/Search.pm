@@ -73,6 +73,10 @@ sub needle {
     return '';
 }
 
+sub needleToUse {
+    return shift->needle;
+}
+
 sub splitNeedle {
     return ();
 }
@@ -136,3 +140,37 @@ sub getHTML {
 
     return $HTML;
 }
+
+sub count {
+    my $self = shift;
+    open(FILE,"swish-search -f index/".$self->lang.".index -w ".$self->needleToUse."|");
+    my $hits;
+    while (my $line = <FILE>) {
+	next if $line =~ /^#/;
+	$hits++;
+    }
+    close(FILE);
+    return --$hits;
+}
+
+sub result {
+    my $self = shift;
+    my @matches;
+    open(FILE,"swish-search -f index/".$self->lang.".index -w ".$self->needleToUse."|");
+    my $i = -1;
+    my $c = 0;
+    while (my $line = <FILE>) {
+	next if $line =~ /^#/;
+	$i++;
+	next if $i < $self->firstNumShowing;
+	my ($quality,$id) = split / /,$line;
+	next unless $id;
+	push @matches,[$id,'Kalliope::Poem',$quality];
+	$c++;
+	last if $c > 9;
+    }
+    close(FILE);
+    return @matches;
+}
+
+1;

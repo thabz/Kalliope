@@ -34,7 +34,7 @@ my $poet = new Kalliope::Person(fhandle => $fhandle);
 
 my $dbh = Kalliope::DB->connect;
 
-my $search = new Kalliope::Search(lang => CGI::param('sprog') || '',
+my $search = new Kalliope::Search(lang => $poet->lang,
                                   type => 'author',
                                   offset => CGI::param('offset') || 0,
 				  needle => CGI::param('needle') || '',

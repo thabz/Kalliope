@@ -45,8 +45,8 @@ my $page = newAuthor Kalliope::Page ( poet => $poet,
 #Vis de tilgængelige links
 
 my $out = "<TABLE>";
-my $sth = $dbh->prepare("SELECT url,beskrivelse FROM links WHERE fid=?");
-$sth->execute($poet->fid);
+my $sth = $dbh->prepare("SELECT url,beskrivelse FROM links WHERE fhandle = ?");
+$sth->execute($poet->fhandle);
 while (my $h = $sth->fetchrow_hashref) {
     $out .= '<TR><TD VALIGN="top"><A TARGET="_top" HREF="'.$h->{'url'}.'"><IMG ALIGN="left" SRC="gfx/icons/links-h48.gif" BORDER=0 ALT="Click her for at følge nævnte link"></A></TD>';
     $out .= '<TD VALIGN="top">'.$h->{'beskrivelse'}.'</TD></TR>';

@@ -120,11 +120,10 @@ sub content {
 
     unless (defined $self->{'content'}) {
 	my $dbh = Kalliope::DB->connect;
-	my $sth = $dbh->prepare("SELECT indhold,noter FROM digte WHERE did = ?");
+	my $sth = $dbh->prepare("SELECT indhold FROM digte WHERE did = ?");
 	$sth->execute($self->did);
 	my $data = $sth->fetchrow_hashref;
 	$self->{'indhold'} = $data->{'indhold'};
-	$self->{'noter'} = $data->{'noter'};
 	$self->{'type'} = $data->{'type'};
 	$self->{'indhold'} = $self->extractFootnotes($self->{'indhold'});
     }

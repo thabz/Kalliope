@@ -29,13 +29,13 @@ use XML::Twig;
 use strict;
 
 my $dbh = Kalliope::DB::connect();
-my $sth = $dbh->prepare("INSERT INTO timeline (year,month,day,description,type,eventtype,url,otherid) VALUES (?,?,?,?,?,?,?,?)");
+my $sth = $dbh->prepare("INSERT INTO timeline (id,year,month,day,description,type,eventtype,url,otherid) VALUES (nextval('seq_timeline_id'),?,?,?,?,?,?,?,?)");
 
 sub build {
     my %persons = @_;
     &create();
     
-    # Parse data/events.txt ---------------------------------------
+    # Parse data/events.xml ---------------------------------------
 
     my $twig = new XML::Twig(keep_encoding => 1);
     $twig->parsefile('../data/events.xml');
@@ -59,12 +59,12 @@ sub build {
 
     # Get published books data ---------------------------------
 
-    my $sthget = $dbh->prepare("SELECT vhandle,f.fhandle,f.fornavn,f.efternavn,v.titel,v.aar FROM fnavne as f,vaerker as v WHERE f.fid = v.fid AND aar != '?'");
+    my $sthget = $dbh->prepare("SELECT v.vid,f.fhandle,f.fornavn,f.efternavn,v.titel,v.aar FROM fnavne f,vaerker v WHERE f.fhandle = v.fhandle AND aar != '?'");
     $sthget->execute();
 
     while (my $h = $sthget->fetchrow_hashref) {
-	my $descr = "$$h{fornavn} $$h{efternavn}: <A V=$$h{fhandle}/$$h{vhandle}><I>$$h{titel}</I> ($$h{aar})</A>";
-	$sth->execute($$h{aar},0,0,$descr,'event','publish','','');
+	my $descr = qq|$$h{fornavn} $$h{efternavn}: <A V="$$h{vid}"><I>$$h{titel}</I> ($$h{aar})</A>|;
+	$sth->execute(int($$h{aar}),0,0,$descr,'event','publish','','');
     }
 
     # Get author born/dead data --------------------------------
@@ -75,13 +75,13 @@ sub build {
 	my $descr = "<A F=$$p{fhandle}>$$p{firstname} $$p{lastname}</A> født";
 	$descr .= ', '.$$p{'bornplace'} if $$p{'bornplace'};
 	$descr .= '.';
-	$sth->execute($y,$m,$d,$descr,'event','born','','');
+	$sth->execute(int($y),$m,$d,$descr,'event','born','','');
 
 	my ($y,$m,$d) = Kalliope::Date::splitDate($$p{'deadfull'});
 	my $descr = "<A F=$$p{fhandle}>$$p{firstname} $$p{lastname}</A> død";
 	$descr .= ', '.$$p{'deadplace'} if $$p{'deadplace'};
 	$descr .= '.';
-	$sth->execute($y,$m,$d,$descr,'event','dead','','');
+	$sth->execute(int($y),$m,$d,$descr,'event','dead','','');
     }
 
     # Get persons local events.txt data ----------------------------
@@ -120,17 +120,20 @@ sub build {
 }
 
 sub create {
-    $dbh->do("DROP TABLE IF EXISTS timeline");
+    $dbh->do(q/DROP SEQUENCE seq_timeline_id/);
+    $dbh->do(q/CREATE SEQUENCE seq_timeline_id INCREMENT 1 START 1/);
+    $dbh->do("DROP TABLE timeline");
     $dbh->do("CREATE TABLE timeline ( 
-	id int UNSIGNED PRIMARY KEY NOT NULL auto_increment,
+	id int PRIMARY KEY NOT NULL,
     year int,
     month int,
     day int,
     description text,
-    type enum ('event','picture'),
-    eventtype enum ('history','born','dead','publish','personal'),
+    type varchar(10), -- enum ('event','picture'),
+    eventtype varchar(10), -- enum ('history','born','dead','publish','personal'),
     url text,
-    otherid varchar(50),
-    UNIQUE(id),
-    KEY(year) )");
+    otherid varchar(50)
+    )");
+   $dbh->do(q/CREATE INDEX timeline_year ON timeline(year)/);
+   $dbh->do(q/GRANT SELECT ON TABLE timeline TO "www-data"/);
 }

@@ -27,36 +27,50 @@ use strict;
 
 my $dbh = Kalliope::DB::connect();
 
-sub build {
-    create();    
-    my $sth = $dbh->prepare("SELECT longdid,indhold,noter FROM digte WHERE afsnit = 0");
-    $sth->execute();
-    my $sthins = $dbh->prepare("INSERT INTO xrefs VALUES (?,?)");
-    while (my $h = $sth->fetchrow_hashref) {
-        my $hay = $h->{'indhold'}.' '.$h->{'noter'};
-	while ($hay =~ s/<A D=([^>]+)>//si) {
-	    $sthins->execute($h->{'longdid'},$1);
-	}
+sub clean {
+    my @changed = @_;
+    my $sth = $dbh->prepare("DELETE FROM xrefs WHERE fromvid = ?");
+    foreach my $item (@changed) {
+	my $vid = $item->{'fhandle'}."/".$item->{'vhandle'};
+	$sth->execute($vid);
+    }
+}
 
-	while ($hay =~ s/<XREF DIGT="([^"]+)">//si) {
-	    $sthins->execute($h->{'longdid'},$1);
-	}
+sub insert {
+    my @changed = @_;
+    my $sth = $dbh->prepare("SELECT longdid,indhold as content FROM digte WHERE vid = ? UNION SELECT longdid,note as content FROM textnotes WHERE vid = ?");
+    my $sthins = $dbh->prepare("INSERT INTO xrefs (fromid,toid,fromvid) VALUES (?,?,?)");
 
-	while ($hay =~ s/<XREF BIBEL="([^"]+)">//si) {
-	    my $gah = $1;
-	    $gah =~ s/,.*$//;
-	    $sthins->execute($h->{'longdid'},$gah);
+    foreach my $item (@changed) {
+	my $vid = $item->{'fhandle'}."/".$item->{'vhandle'};
+	$sth->execute($vid,$vid);
+	while (my $h = $sth->fetchrow_hashref) {
+	    my $hay = $h->{'content'};
+	    while ($hay =~ s/<A D=([^>]+)>//si) {
+		$sthins->execute($h->{'longdid'},$1,$vid);
+	    }
+  	    while ($hay =~ s/<xref digt="([^"]+)">//si) {
+	        $sthins->execute($h->{'longdid'},$1,$vid);
+	    }
+	    while ($hay =~ s/<xref bibel="([^"]+)">//si) {
+	        my $gah = $1;
+ 	        $gah =~ s/,.*$//;
+    	        $sthins->execute($h->{'longdid'},$gah,$vid);
+	    }
 	}
-
     }
 }
 
 sub create {
-    $dbh->do("DROP TABLE IF EXISTS xrefs");
+    $dbh->do("DROP TABLE xrefs");
     $dbh->do("CREATE TABLE xrefs ( 
-              fromid char(40) NOT NULL,
-	      toid char(40) NOT NULL,
-	      INDEX (fromid),
-	      INDEX (toid))");
+	fromid varchar(40) NOT NULL,
+    fromvid varchar(40) NOT NULL,
+	      toid varchar(40) NOT NULL)");
+   $dbh->do(q/CREATE INDEX xrefs_fromid ON xrefs(fromid)/);
+   $dbh->do(q/CREATE INDEX xrefs_fromvid ON xrefs(fromvid)/);
+   $dbh->do(q/CREATE INDEX xrefs_toid ON xrefs(toid)/);
+   $dbh->do(q/GRANT SELECT ON TABLE xrefs TO "www-data"/);
 }
 
+1;

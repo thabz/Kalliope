@@ -27,9 +27,9 @@ use Kalliope::Date;
 use strict;
 
 my $dbh = Kalliope::DB::connect();
-my $sthGroup = $dbh->prepare("INSERT INTO digte (did,longdid,fhandle,parentdid,linktitel,toptitel,toctitel,tititel,foerstelinie,indhold,vaerkpos,vid,type,underoverskrift,lang,createtime) VALUES (nextval('seq_digte_vid'),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+my $sthGroup = $dbh->prepare("INSERT INTO digte (did,longdid,fhandle,parentdid,linktitel,toptitel,toctitel,tititel,foerstelinie,indhold,vaerkpos,vid,type,underoverskrift,lang,createtime,quality) VALUES (nextval('seq_digte_vid'),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 my $sthseqval = $dbh->prepare("SELECT currval('seq_digte_vid')");
-my $sthnote = $dbh->prepare("INSERT INTO textnotes (longdid,note,orderby) VALUES (?,?,?)");
+my $sthnote = $dbh->prepare("INSERT INTO textnotes (longdid,note,orderby,vid) VALUES (?,?,?,?)");
 my $sthpicture = $dbh->prepare("INSERT INTO textpictures (longdid,caption,url,orderby) VALUES (?,?,?,?)");
 my $sthkeyword = $dbh->prepare("INSERT INTO textxkeyword (longdid,keyword) VALUES (?,?)");
 my $sthclean = $dbh->prepare("DELETE FROM digte WHERE vid = ?");
@@ -49,7 +49,8 @@ sub insert {
 	clean($fhandle,$vhandle);
 	my $filename  = "../fdirs/$fhandle/$vhandle.xml";
 	print "           Inserting body $filename\n";
-	my $twig = new XML::Twig(keep_encoding => 1);
+	my $twig = new XML::Twig(keep_encoding => 1,
+		                 keep_spaces_in => ['body']);
 	$twig->parsefile($filename);
 	my $kalliopework = $twig->root;
 	if ($kalliopework->first_child('workbody')) {
@@ -61,7 +62,6 @@ sub insert {
 
 sub _insertGroup {
     my ($fhandle,$vid,$lang,$parent,@nodes) = @_;
-    print STDERR "     using parent $parent\n";
     foreach my $node (@nodes) {
  	my $head = $node->first_child('head');
 	my $linktitle = $head->first_child('linktitle') ? $head->first_child('linktitle')->text : undef;
@@ -69,6 +69,7 @@ sub _insertGroup {
 	my $toptitle = $head->first_child('title') ? $head->first_child('title')->text : undef;
 	$linktitle = $toptitle;
 	my $indextitle = $head->first_child('indextitle') ? $head->first_child('indextitle')->text : undef;
+	my $quality = $head->first_child('quality') ? $head->first_child('quality')->text : undef;
 	my $longdid = $node->id;
 	my $subtitle;
 	if ($head->first_child('subtitle')) {
@@ -85,36 +86,35 @@ sub _insertGroup {
 
 	my $type = $node->tag;
 	if ($type eq 'section' || $type eq 'group') {
-	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,'','',$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid));
-	    doDepends($head,$longdid);
+	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,'','',$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid),$quality);
+	    doDepends($head,$longdid,$vid);
 	    $sthseqval->execute();
 	    my ($newparent) = $sthseqval->fetchrow_array;
-	    print STDERR "New parent: $newparent\n";
 	    _insertGroup($fhandle,$vid,$lang,$newparent,$node->first_child('content')->children);
 	} else {
 	    my $longdid = $node->id;
  	    my $body = $node->first_child('body');
  	    my $firstline = $head->first_child('firstline') ? $head->first_child('firstline')->text : '';
-	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,$firstline,$body->sprint(1),$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid));
-	    doDepends($head,$longdid);
+	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,$firstline,$body->xml_string,$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid),$quality);
+	    doDepends($head,$longdid,$vid);
 	}
 
     }
 }
 
 	sub doDepends {
-	    my ($head,$longdid) = @_;
+	    my ($head,$longdid,$vid) = @_;
 	if ($head->first_child('notes')) {
 	   my $i = 1;
            foreach my $note ($head->first_child('notes')->children('note')) {
-   	       $sthnote->execute($longdid,$note->text,$i++);
+   	       $sthnote->execute($longdid,$note->xml_string,$i++,$vid);
   	   }
 	}
 	if ($head->first_child('pictures')) {
 	   my $i = 1;
            foreach my $pic ($head->first_child('pictures')->children('picture')) {
 	       my $src = $pic->{'att'}->{'src'};
-   	       $sthpicture->execute($longdid,$pic->text,$src,$i++);
+   	       $sthpicture->execute($longdid,$pic->xml_string,$src,$i++);
   	   }
 	}
 	if ($head->first_child('keywords')) {
@@ -147,13 +147,14 @@ sub create {
 	      quality varchar(50), --set('korrektur1','korrektur2','korrektur3', 'kilde','side'),
               layouttype char(5) default 'digt', -- enum('prosa','digt') default 'digt',
 	      createtime INT NOT NULL,
-	      lang char(10))
+	      lang char(2))
 	      ));
  $dbh->do(q/CREATE INDEX digte_longdid ON digte(longdid)/);
  $dbh->do(q/CREATE INDEX digte_lang ON digte(lang)/);
  $dbh->do(q/CREATE INDEX digte_type ON digte(type)/);
  $dbh->do(q/CREATE INDEX digte_createtime ON digte(createtime)/);
  $dbh->do(q/CREATE INDEX digte_vid ON digte(vid)/);
+   $dbh->do(q/GRANT SELECT ON TABLE digte TO "www-data"/);
 
 
     $dbh->do("DROP TABLE textnotes");
@@ -161,9 +162,11 @@ sub create {
 	CREATE TABLE textnotes ( 
               longdid varchar(40) NOT NULL,-- REFERENCES digte(longdid),
 	      note text NOT NULL,
+              vid VARCHAR(80) NOT NULL REFERENCES vaerker(vid),
 	      orderby int NOT NULL)
 	    ));
    $dbh->do(q/CREATE INDEX textnotes_longdid ON textnotes(longdid)/);
+   $dbh->do(q/GRANT SELECT ON TABLE textnotes TO "www-data"/);
 
     $dbh->do("DROP TABLE textpictures");
     $dbh->do(q(
@@ -174,6 +177,7 @@ sub create {
 	      orderby int NOT NULL)
 	    ));
    $dbh->do(q/CREATE INDEX textpictures_longdid ON textpictures(longdid)/);
+   $dbh->do(q/GRANT SELECT ON TABLE textpictures TO "www-data"/);
 
     $dbh->do("DROP TABLE textxkeyword");
     $dbh->do(q(
@@ -184,6 +188,7 @@ sub create {
 	    ));
    $dbh->do(q/CREATE INDEX textxkeyword_longdid ON textxkeyword(longdid)/);
    $dbh->do(q/CREATE INDEX textxkeyword_keyword ON textxkeyword(keyword)/);
+   $dbh->do(q/GRANT SELECT ON TABLE textxkeyword TO "www-data"/);
 
 }
 

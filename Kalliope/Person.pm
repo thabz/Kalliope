@@ -63,7 +63,7 @@ sub hasPoems {
 }
 
 sub hasWorks {
-    return shift->{'workslist'} ne '';
+    return shift->{'workslist'} || '' ne '';
 }
 
 sub lang {
@@ -88,8 +88,8 @@ sub hasBio {
 
 sub bio {
    my $self = shift;
-   my $sth = $dbh->prepare("SELECT biotext FROM fnavne WHERE fid = ?");
-   $sth->execute($self->fid);
+   my $sth = $dbh->prepare("SELECT biotext FROM fnavne WHERE fhandle = ?");
+   $sth->execute($self->fhandle);
    my $bio = $sth->fetchrow_array || '';
    $bio =~ s/<BR>/<BR>&nbsp;&nbsp;&nbsp;&nbsp;/gi;
    Kalliope::buildhrefs(\$bio);
@@ -282,10 +282,11 @@ sub menu {
                     title => 'Bibliografi', 
                     desc => $poetName.'s bibliografi',
 		    status => $self->{'primaer'} || $self->{'sekundaer'} } );
-    my @keys = qw/forside vaerker titlelines firstlines search popular prosa pics bio samtidige henvisninger links bibliografi/;
+    my @keys = qw/vaerker titlelines firstlines search popular prosa pics bio samtidige henvisninger links bibliografi/;
     my $HTML;
     my @itemsHTML;
     foreach my $key (@keys) {
+	print STDERR "$key fucked" unless $menuStruct{$key};
         my %item = %{$menuStruct{$key}};
         my $url = $item{url}.'fhandle='.$self->fhandle;
         my $title = $key eq $page->{'page'} ?

@@ -26,9 +26,7 @@ use strict;
 sub addBox {
     my ($self,%args) = @_;
 
-    if ($args{'printer'} != 1) {
-	return;
-    }
+    return unless $args{'printer'};
 
     my $title = $args{'printtitle'} || $args{'title'} || '';
 
@@ -72,7 +70,7 @@ function openTimeContext(year) {
 EOF
 
     foreach my $colHTML (@{$self->{'coloumns'}}) {
-	print $colHTML;
+	print $colHTML || '';
     }
 
 print <<"EOF2";

@@ -109,7 +109,7 @@ sub dayToday {
 sub sonnet {
     my ($HTML,$END);
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT d.longdid FROM textxkeyword t, digte d WHERE t.keyword = 'sonnet' AND t.longdid = d.longdid AND d.lang = 'dk' ORDER BY RAND() LIMIT 1");
+    my $sth = $dbh->prepare("SELECT d.longdid FROM textxkeyword t, digte d WHERE t.keyword = 'sonnet' AND t.longdid = d.longdid AND d.lang = 'dk' ORDER BY RANDOM() LIMIT 1");
     $sth->execute();
     my ($longdid) = $sth->fetchrow_array;
     return ('','') unless $longdid;

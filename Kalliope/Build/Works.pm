@@ -49,12 +49,14 @@ sub clean {
     my $sthforbogstaver = $dbh->prepare("DELETE FROM forbogstaver WHERE vid = ?");
     my $sthdigte = $dbh->prepare("DELETE FROM digte WHERE vid = ?");
     my $sthnotes = $dbh->prepare("DELETE FROM worknotes WHERE vid = ?");
+    my $sthtextnotes = $dbh->prepare("DELETE FROM textnotes WHERE vid = ?");
     my $sthpictures = $dbh->prepare("DELETE FROM workpictures WHERE vid = ?");
     my $sthkeywords = $dbh->prepare("DELETE FROM workxkeyword WHERE vid = ?");
     my $sthworks = $dbh->prepare("DELETE FROM vaerker WHERE vid = ?");
     foreach my $item (@changed) {
 	my $vid = $item->{'fhandle'}."/".$item->{'vhandle'};
 	$sthforbogstaver->execute($vid);
+	$sthtextnotes->execute($vid);
 	$sthdigte->execute($vid);
 	$sthnotes->execute($vid);
 	$sthpictures->execute($vid);
@@ -95,14 +97,14 @@ sub insert {
 	if ($workhead->first_child('notes')) {
 	   my $i = 1;
            foreach my $note ($workhead->first_child('notes')->children('note')) {
-   	       $sthnote->execute($vid,$note->text,$i++);
+   	       $sthnote->execute($vid,$note->sprint(1),$i++);
   	   }
 	}
 	if ($workhead->first_child('pictures')) {
 	   my $i = 1;
            foreach my $pic ($workhead->first_child('pictures')->children('picture')) {
 	       my $src = $pic->{'att'}->{'src'};
-   	       $sthpicture->execute($vid,$pic->text,$src,$i++);
+   	       $sthpicture->execute($vid,$pic->sprint(1),$src,$i++);
   	   }
 	}
 	if ($workhead->first_child('keywords')) {
@@ -123,19 +125,20 @@ sub create {
               vhandle varchar(20) NOT NULL,
               titel text NOT NULL, 
 	      underoverskrift text,
-              aar char(40),
+              aar varchar(40),
               type varchar(10), -- enum('poetry','prose'),
 	      status varchar(20), -- enum('complete','incomplete'),
               hascontent char(3), --enum('yes','no'),
 	      cvstimestamp int,
 	      quality varchar(100), /* set('korrektur1','korrektur2','korrektur3', 'kilde','side'), */
-	      lang char(10),
+	      lang char(2),
 	      dirty int)
 	   ));
  $dbh->do(q/CREATE INDEX vaerker_fhandle ON vaerker(fhandle)/);
  $dbh->do(q/CREATE INDEX vaerker_vhandle ON vaerker(vhandle)/);
  $dbh->do(q/CREATE INDEX vaerker_lang ON vaerker(lang)/);
  $dbh->do(q/CREATE INDEX vaerker_type ON vaerker(type)/);
+ $dbh->do(q/GRANT SELECT ON TABLE vaerker TO "www-data"/);
 
     $dbh->do("DROP TABLE worknotes");
  $dbh->do(q/
@@ -145,6 +148,7 @@ sub create {
 	      orderby int NOT NULL)
 	    /);
  $dbh->do(q/CREATE INDEX worknotes_vid ON worknotes(vid)/);
+ $dbh->do(q/GRANT SELECT ON TABLE worknotes TO "www-data"/);
 
     $dbh->do("DROP TABLE workpictures");
  $dbh->do(q(
@@ -155,6 +159,7 @@ sub create {
 	      orderby int NOT NULL)
 	    ));
  $dbh->do(q/CREATE INDEX workpictures_vid ON workpictures(vid)/);
+ $dbh->do(q/GRANT SELECT ON TABLE workpictures TO "www-data"/);
 
     $dbh->do("DROP TABLE workxkeyword");
  $dbh->do(q(
@@ -164,4 +169,5 @@ sub create {
 	    ));
  $dbh->do(q/CREATE INDEX workxkeyword_vid ON workxkeyword(vid)/);
  $dbh->do(q/CREATE INDEX workxkeyword_keyword ON workxkeyword(keyword)/);
+ $dbh->do(q/GRANT SELECT ON TABLE workxkeyword TO "www-data"/);
 }

@@ -105,19 +105,21 @@ sub create {
     $dbh->do("DROP TABLE keywords CASCADE");
     $dbh->do("CREATE TABLE keywords ( 
 	id int PRIMARY KEY NOT NULL,
-    ord char(128) NOT NULL,
-    titel text,
-    beskrivelse text
+        ord varchar(128) NOT NULL,
+        titel text,
+        beskrivelse text
 	)");
     $dbh->do(q/CREATE INDEX keywords_ord ON keywords(ord)/);
 
     $dbh->do("DROP TABLE keywords_images CASCADE");
     $dbh->do("CREATE TABLE keywords_images ( 
 	keyword_id INT REFERENCES keywords(id),
-    imgfile char(128),
-    beskrivelse text
+        imgfile varchar(128),
+        beskrivelse text
 	)");
     $dbh->do(q/CREATE INDEX keywords_images_keyid ON keywords_images(keyword_id)/);
+   $dbh->do(q/GRANT SELECT ON TABLE keywords TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE keywords_images TO "www-data"/);
 }
 
 1;

@@ -176,10 +176,10 @@ sub listpics {
     my @poets;
 
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT fid FROM fnavne WHERE type='poet' AND sprog=? AND foedt != '' AND foedt != '?' AND thumb = 1");
+    my $sth = $dbh->prepare("SELECT fhandle FROM fnavne WHERE type='poet' AND sprog=? AND foedt != '' AND foedt != '?' AND thumb = 1 ORDER BY efternavn,fornavn");
     $sth->execute($LA);
     while (my $fid = $sth->fetchrow_array) {
-	my $poet = new Kalliope::Person(fid => $fid);
+	my $poet = new Kalliope::Person(fhandle => $fid);
 	push @poets, $poet;
     }
 
@@ -204,7 +204,7 @@ sub listpics {
 sub listflittige {
     my ($LA,$limit) = @_;
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("select fhandle, count(did) as val from fnavne, digte where foedt != '' AND digte.fid=fnavne.fid and fnavne.sprog=? and layouttype = 'digt' and afsnit=0 group by fnavne.fid order by val desc, efternavn ".($limit != -1 ? "LIMIT $limit" : ''));
+    my $sth = $dbh->prepare("select fnavne.fhandle, count(longdid) as val from fnavne, digte where foedt != '' AND digte.fhandle = fnavne.fhandle and fnavne.sprog=? and digte.type = 'poem' group by fnavne.fhandle order by val desc ".($limit != -1 ? "LIMIT $limit" : ''));
     $sth->execute($LA);
 
     my $HTML;
@@ -234,7 +234,7 @@ sub listflittige {
 sub listpop {
     my ($LA,$limit) = @_;
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT fornavn, efternavn, foedt, doed, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f WHERE dh.longdid = d.longdid AND d.fid = f.fid AND f.sprog=? AND f.type != 'collection' GROUP BY f.fid ORDER BY hits DESC ".($limit != -1 ? "LIMIT $limit" : ''));
+    my $sth = $dbh->prepare("SELECT f.fornavn, f.efternavn, f.foedt, f.doed, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f WHERE dh.longdid = d.longdid AND d.fhandle = f.fhandle AND f.sprog=? AND f.type != 'collection' GROUP BY f.fhandle ORDER BY hits DESC ".($limit != -1 ? "LIMIT $limit" : ''));
     $sth->execute($LA);
 
     my $i = 1;

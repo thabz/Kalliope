@@ -37,6 +37,7 @@ my $dbh = Kalliope::DB->connect;
 
 sub new {
     my ($class,%arg) = @_;
+    $arg{'longdid'} = $arg{'id'} if $arg{'id'};
     confess "Need some kind of id to initialize a new poem\n" unless $arg{'longdid'};
     my $sth = $dbh->prepare("SELECT did,fhandle,vid,longdid,toptitel,linktitel,toctitel,underoverskrift,foerstelinie,type,quality FROM digte WHERE longdid = ?");
     $sth->execute($arg{'longdid'});
@@ -95,7 +96,7 @@ sub subtitle {
 sub subtitleAsHTML {
     my $self = shift;
     $self->{'underoverskrift'} = $self->extractFootnotes($self->{'underoverskrift'});
-    my $subtitle = $self->{'underoverskrift'};
+    my $subtitle = $self->{'underoverskrift'} || '';
     $subtitle =~ s/\n/<br>/g;
     return $subtitle;
 }
@@ -140,6 +141,7 @@ sub resolveBiblioTags {
 
 sub extractFootnotes {
     my ($self,$content) = @_;
+    return '' unless $content;
     my @footnotes = $self->{'footnotes'} ? @{$self->{'footnotes'}} : ();
     my $num = $#footnotes >= 0 ? $#footnotes + 2 : 1;
 #$content =~ s/<note>/<footnote>/g;
@@ -170,12 +172,11 @@ sub content {
     my %options = @_ if $#_;
     
     unless (defined $self->{'content'}) {
-	my $sth = $dbh->prepare("SELECT indhold,noter FROM digte WHERE did = ?");
+	my $sth = $dbh->prepare("SELECT indhold FROM digte WHERE did = ?");
 	$sth->execute($self->did);
 	my $data = $sth->fetchrow_hashref;
 	$self->{'indhold'} = $data->{'indhold'};
 	$self->{'raw'} = $data->{'indhold'};
-	$self->{'noter'} = $data->{'noter'};
 	$self->{'indhold'} = $self->extractFootnotes($self->{'indhold'});
         $self->{'indhold'} = $self->resolveBiblioTags($self->{'indhold'});
 	$self->{'indhold'} = $self->_resolveTags($self->{'indhold'});
@@ -364,20 +365,27 @@ sub notes {
     my $sth = $dbh->prepare("SELECT note FROM textnotes WHERE longdid = ? ORDER BY orderby");
     $sth->execute($self->longdid);
     my @notes;
-    while (my ($note) = $dbh->fetchrow_array) {
+    while (my ($note) = $sth->fetchrow_array) {
 	$self->resolveBiblioTags($note);
 	push @notes,$note;
     }
     return @notes;
 }
 
+sub notesAsHTML {
+    my $self = shift;
+    my @notes = $self->notes();
+    @notes = map { Kalliope::buildhrefs(\$_) } @notes;
+    return @notes;
+}
+
 sub keywords {
     my $self = shift;
     my @keywords;
-    my $sth = $dbh->prepare("SELECT keywordid FROM keywords_relation WHERE keywords_relation.otherid = ? AND keywords_relation.othertype = 'digt'");
-    $sth->execute($self->did);
+    my $sth = $dbh->prepare("SELECT keyword FROM textxkeyword WHERE longdid = ?");
+    $sth->execute($self->longdid);
     while (my $id = $sth->fetchrow_array) {
-	push @keywords,new Kalliope::Keyword(id => $id);
+	push @keywords,new Kalliope::Keyword('ord' => $id);
     }
     return @keywords;
 }

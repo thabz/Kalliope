@@ -114,8 +114,8 @@ sub create {
     fornavn text DEFAULT '', 
     efternavn text DEFAULT '',
     detaljer text DEFAULT '',
-    foedt char(8), 
-    doed char(8), 
+    foedt varchar(8), 
+    doed varchar(8), 
     sprog char(2), 
     land text,
     /* Beholdning */
@@ -134,6 +134,7 @@ sub create {
     type varchar(32),
     workslist text)
 	");
+   $dbh->do(q/GRANT SELECT ON TABLE fnavne TO "www-data"/);
 }
 
 sub insert {

@@ -144,14 +144,13 @@ sub listpics {
     my $HTML;
 
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT fid FROM fnavne WHERE type='person' AND foedt != '' AND foedt != '?' AND thumb = 1 ORDER BY efternavn, fornavn");
+    my $sth = $dbh->prepare("SELECT fhandle FROM fnavne WHERE type='person' AND foedt != '' AND foedt != '?' AND thumb = 1 ORDER BY efternavn, fornavn");
     $sth->execute();
 
     $HTML = qq|<TABLE ALIGN="center" border=0 cellspacing=10><TR>|;
     my $i=0;
-    while (my $fid = $sth->fetchrow_array) {
-	my $poet = new Kalliope::Person(fid => $fid);
-	my $fhandle = $poet->fhandle;
+    while (my $fhandle = $sth->fetchrow_array) {
+	my $poet = new Kalliope::Person(fhandle => $fhandle);
 	my $fullname = $poet->name;
 	$HTML .= "<TD align=center valign=bottom>";
 	$HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/thumb.jpg",url=>"fpics.pl?fhandle=$fhandle",alt=>"Vis portrætter af $fullname"});

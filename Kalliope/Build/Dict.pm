@@ -102,14 +102,15 @@ sub parse {
 sub create {
     $dbh->do("DROP TABLE dict");
     $dbh->do("CREATE TABLE dict ( 
-	wid char(50) primary key,
-    firstletter char(3),
-    word varchar(127),
-    forkl text,
-    var text)
+	wid varchar(50) primary key,
+        firstletter varchar(3),
+        word varchar(127),
+        forkl text,
+        var text)
     ");
    $dbh->do(q/CREATE INDEX dict_firstletter ON dict(firstletter)/);
    $dbh->do(q/CREATE INDEX dict_word ON dict(word)/);
+   $dbh->do(q/GRANT SELECT ON TABLE dict TO "www-data"/);
 }
 
 sub insert {

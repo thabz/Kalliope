@@ -137,8 +137,7 @@ sub pics {
 
 sub notes {
     my $work = shift;
-    my @notes = $work->notes;
-    @notes = map { Kalliope::buildhrefs(\$_) } @notes;
+    my @notes = $work->notesAsHTML;
 
     my $HTML;
     $HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>',@notes;

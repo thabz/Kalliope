@@ -44,15 +44,6 @@ sub searchBoxHTML {
     return qq|<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle" VALUE="$needle"><INPUT TYPE="hidden" NAME="sprog" VALUE="$LA"><INPUT TYPE="hidden" NAME="type" VALUE="free"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "></FORM>|;
 }
 
-sub count {
-    my $self = shift;
-    my $sth = $dbh->prepare("SELECT count(*) FROM haystack WHERE (MATCH titel,hay AGAINST (?) > 0) AND lang = ?");
-    $sth->execute($self->needle,$self->lang);
-    my ($hits) = $sth->fetchrow_array;
-    $self->{'hits'} = $hits;
-    return $hits;
-}
-
 sub needle {
     return shift->{'needle'};
 }
@@ -61,7 +52,7 @@ sub splitNeedle {
     my $needle2 = shift->needle;
     $needle2 =~ s/^\s+//;
     $needle2 =~ s/\s+$//;
-    $needle2 =~ s/[^a-zA-ZæøåÆØÅ ]//g;
+    $needle2 =~ s/[^a-zA-ZæøåÆØÅ= ]//g;
     return split /\s+/,$needle2;
 }
 
@@ -70,20 +61,6 @@ sub escapedNeedle {
 }
 
 
-sub result {
-    my $self = shift;
-    my $sth = $dbh->prepare("SELECT id,id_class, MATCH titel,hay AGAINST (?) AS quality FROM haystack WHERE (MATCH titel,hay AGAINST (?) > 0) AND lang = ? ORDER BY quality DESC LIMIT ?,10");
-    $sth->execute($self->needle,$self->needle,$self->lang,$self->firstNumShowing);
-
-    my @matches;
-    while (my $d = $sth->fetchrow_hashref)  {
-	push @matches,[$$d{'id'},$$d{'id_class'},$$d{'quality'}];
-    }
-    $sth->finish();
-
-    return @matches;
-}
-
 sub getExtraURLParam {
     my $self = shift;
     return 'needle='.uri_escape($self->needle);
@@ -91,6 +68,7 @@ sub getExtraURLParam {
 
 sub log {
     my $self = shift;
+    return;
     my $remotehost = CGI::remote_host();
     open (FIL,">>../stat/searches.log");
     print FIL localtime()."\$\$".$remotehost."\$\$".$self->needle."\$\$\n";

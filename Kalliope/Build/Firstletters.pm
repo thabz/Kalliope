@@ -59,17 +59,19 @@ sub _insert {
 	next unless $f->{'sort'};
 	$f->{'sort'} =~ s/Aa/Å/g;
 	$f->{'sort'} =~ tr/ÁÀÉÈÖ0-9/AAEEØ........../;
-	$sthinsert->execute(substr($f->{'sort'},0,1), $$f{longdid}, $$f{fhandle}, $$f{vid},$f->{'lang'},$type);
+	my $letter = substr($f->{'sort'},0,1);
+	$letter = '.' unless $letter =~ /[A-ZÆØÅ]/;
+	$sthinsert->execute($letter, $$f{longdid}, $$f{fhandle}, $$f{vid},$f->{'lang'},$type);
     }
 }
 
 sub create {
     $dbh->do(q/DROP SEQUENCE seq_forbogstaver_bid/);
     $dbh->do(q/CREATE SEQUENCE seq_forbogstaver_bid INCREMENT 1 START 1/);
-$rc = $dbh->do("DROP TABLE forbogstaver");
-$rc = $dbh->do("CREATE TABLE forbogstaver ( 
+    $dbh->do("DROP TABLE forbogstaver");
+    $dbh->do("CREATE TABLE forbogstaver ( 
               bid int DEFAULT '0' NOT NULL PRIMARY KEY,
-	      forbogstav char(2) NOT NULL,
+	      forbogstav char(1) NOT NULL,
 	      longdid varchar(40) NOT NULL, -- REFERENCES digte(longdid),
 	      fhandle varchar(50) NOT NULL REFERENCES fnavne(fhandle),
 	      vid varchar(50) NOT NULL REFERENCES vaerker(vid),
@@ -77,4 +79,5 @@ $rc = $dbh->do("CREATE TABLE forbogstaver (
 	      type char(1)) -- ENUM('t','f') NOT NULL
 	      ");
    $dbh->do(q/CREATE INDEX forbogstaver_forbogstav ON forbogstaver(forbogstav)/);
+   $dbh->do(q/GRANT SELECT ON TABLE forbogstaver TO "www-data"/);
 }

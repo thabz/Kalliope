@@ -99,6 +99,13 @@ sub notes {
     return @notes;
 }
 
+sub notesAsHTML {
+    my $self = shift;
+    my @notes = $self->notes();
+    @notes = map { Kalliope::buildhrefs(\$_) } @notes;
+    return @notes;
+}
+
 sub quality {
     return shift->{'quality_obj'};
 }
@@ -109,22 +116,26 @@ sub status {
 
 sub pics {
    my $self = shift;
-   my $pics = $self->{'pics'};
+   return @{$self->{'cachepics'}} if $self->{'cachepics'};
    my @result;
-   my $fhandle = $self->author->fhandle;
-   foreach my $line (split /\$\$\$/,$pics) {
-      my ($url,$desc) = split /%/,$line;
+   my $sth = $dbh->prepare("SELECT caption,url FROM workpictures WHERE vid = ? ORDER BY orderby");
+   $sth->execute($self->vid);
+   my $fhandle = $self->fhandle;
+   while (my ($desc,$url) = $sth->fetchrow_array) {
       my $thumb = $url;
       $thumb =~ s/^(.*?)([^\/]+)$/$1_$2/;
       push @result,{ thumbfile => 'fdirs/'.$fhandle.'/'.$thumb,
                      destfile =>  'fdirs/'.$fhandle.'/'.$url,
                      description => $desc };
-   }	     
+   }
+   $self->{'cachepics'} = \@result;
    return @result;
 }
 
 sub hasPics {
-   return shift->{'pics'} ? 1 : 0;
+    my $self = shift;
+    my @pics = $self->pics;
+    return $#pics >= 0;
 }
 
 sub keywords {
