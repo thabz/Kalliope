@@ -99,7 +99,9 @@ sub editPage {
     $HTML .= qq|<table width="100%"><tr>\n|;
     $HTML .= qq|<td valign=top>|;
     $HTML .= $navHTML;
-    $HTML .= qq|<br><img src="edit/files/$gfxFile"></td>|;
+    $HTML .= qq|<br><img src="edit/files/$gfxFile"><br>|;
+    $HTML .= $navHTML;
+    $HTML .= qq|</td>|;
     $HTML .= qq|<td valign=top>|;
     $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Duplet">';
     $HTML .= qq|<textarea rows=30 name="data" style="width:300px; height:90%">$data</textarea><br>|;
