@@ -28,7 +28,7 @@ use Kalliope::Date;
 use strict;
 
 my $dbh = Kalliope::DB::connect();
-my $sth = $dbh->prepare("INSERT INTO timeline (year,month,day,description,type,eventtype,url) VALUES (?,?,?,?,?,?,?)");
+my $sth = $dbh->prepare("INSERT INTO timeline (year,month,day,description,type,eventtype,url,otherid) VALUES (?,?,?,?,?,?,?,?)");
 
 sub build {
     my %persons = @_;
@@ -39,11 +39,11 @@ sub build {
     my $line = 1;
     while (<FILE>) {
 	if (/^(\d+): P:(.*)%(.*)$/) {
-	    $sth->execute($1,0,0,$3,'picture','history',$2);
+	    $sth->execute($1,0,0,$3,'picture','history',$2,'');
 	} elsif (/^(\d+): (.*)$/) {
-	    $sth->execute($1,0,0,$2,'event','history','');
+	    $sth->execute($1,0,0,$2,'event','history','','');
 	} elsif (/^(\d+)-(\d+)-(\d+): (.*)$/) {
-	    $sth->execute($1,$2,$3,$4,'event','history','');
+	    $sth->execute($1,$2,$3,$4,'event','history','','');
 	} elsif (/^#/) {
 
         } else {
@@ -60,7 +60,7 @@ sub build {
 
     while (my $h = $sthget->fetchrow_hashref) {
 	my $descr = "$$h{fornavn} $$h{efternavn}: <A V=$$h{fhandle}/$$h{vhandle}><I>$$h{titel}</I> ($$h{aar})</A>";
-	$sth->execute($$h{aar},0,0,$descr,'event','publish','');
+	$sth->execute($$h{aar},0,0,$descr,'event','publish','','');
     }
 
     # Get author born/dead data --------------------------------
@@ -71,14 +71,40 @@ sub build {
 	my $descr = "<A F=$$p{fhandle}>$$p{firstname} $$p{lastname}</A> født";
 	$descr .= ', '.$$p{'bornplace'} if $$p{'bornplace'};
 	$descr .= '.';
-	$sth->execute($y,$m,$d,$descr,'event','born','');
+	$sth->execute($y,$m,$d,$descr,'event','born','','');
 
 	my ($y,$m,$d) = Kalliope::Date::splitDate($$p{'deadfull'});
 	my $descr = "<A F=$$p{fhandle}>$$p{firstname} $$p{lastname}</A> død";
 	$descr .= ', '.$$p{'deadplace'} if $$p{'deadplace'};
 	$descr .= '.';
-	$sth->execute($y,$m,$d,$descr,'event','dead','');
+	$sth->execute($y,$m,$d,$descr,'event','dead','','');
     }
+
+    # Get persons local events.txt data ----------------------------
+    foreach my $k (keys %persons) {
+	my $file = "../fdirs/$k/events.txt";
+	next unless -e $file;
+	print "$file\n";
+	open (FILE,$file);
+	my $line = 1;
+	while (<FILE>) {
+	    if (/^(\d+): P:(.*)%(.*)$/) {
+		$sth->execute($1,0,0,$3,'picture','personal',$2,$k);
+	    } elsif (/^(\d+): (.*)$/) {
+		$sth->execute($1,0,0,$2,'event','personal','',$k);
+	    } elsif (/^(\d+)-(\d+)-(\d+): (.*)$/) {
+		$sth->execute($1,$2,$3,$4,'event','personal','',$k);
+	    } elsif (/^#/) {
+
+	    } else {
+		print STDERR "Error in $k/timeline.txt line $line: »$_«";
+	    }
+	    $line++;
+	}
+	close(FILE);
+
+    }
+
 
     $sthget = $dbh->prepare("SELECT fhandle,fornavn,efternavn,foedt,doed FROM fnavne WHERE foedt != '?'");
     $sthget->execute();
@@ -91,14 +117,15 @@ sub build {
 sub create {
     $dbh->do("DROP TABLE IF EXISTS timeline");
     $dbh->do("CREATE TABLE timeline ( 
-    id int UNSIGNED PRIMARY KEY NOT NULL auto_increment,
+	id int UNSIGNED PRIMARY KEY NOT NULL auto_increment,
     year int,
     month int,
     day int,
     description text,
     type enum ('event','picture'),
-	      eventtype enum ('history','born','dead','publish'),
-	      url text,
-	      UNIQUE(id),
-	      KEY(year) )");
+    eventtype enum ('history','born','dead','publish','personal'),
+    url text,
+    otherid varchar(50),
+    UNIQUE(id),
+    KEY(year) )");
 }
