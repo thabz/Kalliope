@@ -42,7 +42,7 @@ sub new {
     $sql = 'did = '.$arg{'did'} if defined $arg{'did'};
     $sql = 'did = '.$arg{'id'} if defined $arg{'id'};
     confess "Need some kind of id to initialize a new poem\n" unless $sql;
-    my $sth = $dbh->prepare("SELECT did,fhandle,vid,longdid,toptitel,linktitel,toctitel,underoverskrift,foerstelinie,layouttype,pics,quality FROM digte WHERE $sql");
+    my $sth = $dbh->prepare("SELECT did,fhandle,vid,longdid,toptitel,linktitel,toctitel,underoverskrift,foerstelinie,type,pics,quality FROM digte WHERE $sql");
     $sth->execute();
     return undef unless $sth->rows;
 
@@ -72,7 +72,7 @@ sub longdid {
 }
 
 sub isProse {
-    return shift->{'layouttype'} eq 'prosa' ? 1 : 0;
+    return shift->{'type'} eq 'prose';
 }
 
 sub topTitle {
@@ -172,7 +172,6 @@ sub hasLineNotes {
 sub content {
     my $self = shift;
     my %options = @_ if $#_;
-#my ($self,%options) = @_;
     
     unless (defined $self->{'content'}) {
 	my $sth = $dbh->prepare("SELECT indhold,noter FROM digte WHERE did = ?");
@@ -190,7 +189,7 @@ sub content {
 
     if (%options && $options{'layout'} eq 'raw') {
 	return $self->{'raw'};
-    } elsif ($self->{'layouttype'} eq 'prosa') {
+    } elsif ($self->isProse) {
          $result = $self->_contentAsProseHTML();
     } elsif (%options && $options{'layout'} eq 'plainpoem') {
          $result = $self->_contentAsPlainPoemHTML();

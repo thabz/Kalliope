@@ -206,11 +206,12 @@ sub getSearchResultEntry {
 
 sub _allPoemIds {
     my $self = shift;
-    my $sth = $dbh->prepare("SELECT afsnit,longdid FROM digte WHERE vid = ? ORDER BY vaerkpos ASC");
+    my $sth = $dbh->prepare("SELECT type,longdid FROM digte WHERE vid = ? ORDER BY vaerkpos ASC");
     $sth->execute($self->vid);
     my @list;
     while (my $h = $sth->fetchrow_hashref) {
-	next if $h->{'afsnit'} > 0;
+	my $type = $h->{'type'};
+	next unless $type eq 'poem' || $type eq 'prose' || $type eq 'group'  ;
 	push @list,$h->{'longdid'};
     }
     return @list;

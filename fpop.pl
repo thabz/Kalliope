@@ -44,7 +44,7 @@ my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs,
 	                              subtitle => 'Mest populære digte',
                                       page => 'popular');
 
-my $sth =  $dbh->prepare("SELECT d.longdid,d.titel as titel,lasttime,hits,v.titel as vtitel,v.aar FROM fnavne as f, digte as d, digthits as dh, vaerker as v WHERE f.fhandle = ? AND f.fid = d.fid AND d.afsnit = 0 AND d.longdid = dh.longdid AND v.vid = d.vid ORDER BY dh.hits DESC LIMIT 10");
+my $sth =  $dbh->prepare("SELECT d.longdid,d.linktitel as titel,lasttime,hits,v.titel as vtitel,v.aar FROM fnavne as f, digte as d, digthits as dh, vaerker as v WHERE f.fhandle = ? AND f.fhandle = d.fhandle AND d.type = 'poem' AND d.longdid = dh.longdid AND v.vid = d.vid ORDER BY dh.hits DESC LIMIT 10");
 $sth->execute($fhandle);
 
 my $i = 1;

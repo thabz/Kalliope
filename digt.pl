@@ -172,12 +172,12 @@ sub moreLinks {
     my $prevPoem = $work->getPrevPoem($longdid);
     if ($nextPoem) {
 	my $poem = Kalliope::PoemHome::findByLongdid($nextPoem);
-	my $title = $poem->title;
+	my $title = $poem->linkTitle;
         $HTML .= qq|<a class="more" title="Gå til »$title«" href="digt.pl?longdid=$nextPoem">Næste tekst...</a><br>|;
     }
     if ($prevPoem) {
 	my $poem = Kalliope::PoemHome::findByLongdid($prevPoem);
-	my $title = $poem->title;
+	my $title = $poem->linkTitle;
         $HTML .= qq|<a class="more" title="Gå til »$title«" href="digt.pl?longdid=$prevPoem">Forrige tekst...</a><br>|;
     }
 
