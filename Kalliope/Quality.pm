@@ -25,19 +25,19 @@ use strict;
 my %items = (
      korrektur1 => { name     => 'første korrekturlæsning',
                      icon_on  => 'gfx/tb_yes.gif',
-		     icon_off => 'gfx/tb_no.gif' },
+		     icon_off => 'gfx/tb_yes_gray.gif' },
      korrektur2 => { name     => 'anden korrekturlæsning',
                      icon_on  => 'gfx/tb_yes.gif',
-		     icon_off => 'gfx/tb_no.gif' },
+		     icon_off => 'gfx/tb_yes_gray.gif' },
      korrektur3 => { name     => 'tredie korrekturlæsning',
                      icon_on  => 'gfx/tb_yes.gif',
-		     icon_off => 'gfx/tb_no.gif' },
+		     icon_off => 'gfx/tb_yes_gray.gif' },
      kilde      => { name     => 'kildeangivelse',
                      icon_on  => 'gfx/tb_yes.gif',
-		     icon_off => 'gfx/tb_no.gif' },
+		     icon_off => 'gfx/tb_yes_gray.gif' },
      side       => { name     => 'sidehenvisninger',
                      icon_on  => 'gfx/tb_yes.gif',
-		     icon_off => 'gfx/tb_no.gif' } 
+		     icon_off => 'gfx/tb_yes_gray.gif' } 
 );
 
 my @order = qw/ korrektur1 korrektur2 korrektur3 kilde side /;
