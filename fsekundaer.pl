@@ -32,7 +32,7 @@ my $filename =  $mode eq 's' ? 'sekundaer' : 'primaer';
 my $poet = new Kalliope::Person(fhandle => $fhandle);
 
 my $title = $mode eq 's' ? 'Sekundær litteratur' : 'Primær litteratur';
-my $page = $mode eq 's' ? 'sekundaer' : 'primaer';
+my $pageMode = $mode eq 's' ? 'sekundaer' : 'primaer';
 
 #
 # Breadcrumbs -------------------------------------------------------------
@@ -44,7 +44,7 @@ push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,[$title,''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
-                                      page => $page,
+                                      page => $pageMode,
                                       crumbs => \@crumbs );
 
 open (FILE,"fdirs/".$fhandle."/".$filename.'.txt');

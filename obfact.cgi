@@ -27,7 +27,6 @@ use Kalliope::DB();
 use Kalliope;
 
 $dbh = Kalliope::DB::connect();
-my $sth;
 
 my @crumbs = (['Velkommen',''],
 	      ['Sært','']);
