@@ -315,6 +315,24 @@
   </period>
 </person>
 
+<person id="freiligrath" lang="de" type="poet">
+  <name>
+    <firstname>Ferdinand</firstname>
+    <lastname>Freiligrath</lastname>
+    <fullname>Hermann Ferdinand Freiligrath</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1810-06-17</date>
+      <place>Detmold</place>
+    </born>
+    <dead>
+      <date>1876-03-18</date>
+      <place>Cannstatt</place>
+    </dead>
+  </period>
+</person>
+
 <person id="rilke" lang="de" type="poet">
   <name>
     <firstname>Rainer Maria</firstname>
@@ -331,6 +349,9 @@
     </dead>
   </period>
 </person>
+
+
+<!-- Danskere -->
 
 <person id="folkeviser" lang="dk" type="collection">
   <name>
@@ -4083,6 +4104,22 @@
     </dead>
   </period>
 </person>
+
+<person id="hood" lang="uk" type="poet">
+  <name>
+    <firstname>Thomas</firstname>
+    <lastname>Hood</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1799</date>
+    </born>
+    <dead>
+      <date>1845</date>
+    </dead>
+  </period>
+</person>
+
 
 <person id="browningeb" lang="uk" type="poet">
   <name>
