@@ -122,7 +122,7 @@ foreach my $key (@keys) {
     my %item = %{$menuStruct{$key}};
     my $url = $item{url}.'fhandle='.$poet->fhandle;
     if ($item{status}) {
-	$HTML .= qq|<TR><TD VALIGN="top" ROWSPAN=2><IMG HEIGHT=48 BORDER=0 SRC="$item{icon}" ALT="*"></TD>|;
+	$HTML .= qq|<TR><TD VALIGN="top" ROWSPAN=2><A HREF="$url"><IMG HEIGHT=48 BORDER=0 SRC="$item{icon}" ALT="*"></A></TD>|;
 	$HTML .= qq|<TD CLASS="ffronttitle"><A HREF="$url">$item{title}</A><TD></TR>|;
         $HTML .= qq|<TR><TD VALIGN="top" CLASS="ffrontdesc">$item{desc}</TD></TR>|;
 	$HTML .= '</TABLE></TD><TD CLASS="ffront" VALIGN="top" WIDTH="50%"><TABLE CELLPADDING=2 CELLSPACING=0>' if (++$i == int $itemsNum/2);
