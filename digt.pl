@@ -301,7 +301,7 @@ sub xrefs {
     my $poem = shift;
     my @xrefs = $poem->xrefsTo;
     my $HTML;
-    foreach my $otherPoem (@xrefs) {
+    foreach my $otherPoem (grep {defined} @xrefs) {
         $HTML .= $otherPoem->clickableTitle.'<br><br>';
     }
     $HTML = qq|<span style="font-size: 12px">$HTML</span>| if $HTML;
