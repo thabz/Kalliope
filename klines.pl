@@ -95,15 +95,14 @@ while ($f[$i] = $sth->fetchrow_hashref) {
 }
 my $minimenu;
 foreach my  $f (sort { Kalliope::Sort::sort($a,$b) } @f) { 
-    my $color = ($f->{'forbogstav'} eq $forbogstav)?'red':'black';
-    $minimenu .= '<A HREF="klines.pl?mode='.$mode.'&forbogstav='.$f->{'forbogstav'}.'&sprog='.$LA.'">';
-    $minimenu .= '<FONT COLOR='.$color.'>'; 
-    $minimenu .= $f->{'forbogstav'};
-    $minimenu .= '</FONT></A> ';
+    my $letter = $f->{'forbogstav'};
+    my $class = ($letter eq $forbogstav) ? 'green' : '';
+    $minimenu .= qq|<A CLASS="$class" TITLE="Digte som begynder med $letter" HREF="klines.pl?mode=$mode&forbogstav=$letter&sprog=$LA">|;
+    $minimenu .= qq| $letter</A>|; 
 }
 
 $page->addBox ( width=> '80%',
-                end => $minimenu,
+                title => $minimenu,
                 content => $HTML );
 $page->print;
 exit 1;
