@@ -93,13 +93,18 @@ foreach my $w (grep { $_->hasYear } @works) {
 }
 
 push @events , new Kalliope::Timeline::Event({ year => $poet->yearBorn,
-                 description => $poet->name.' født.'}) if $poet->yearBorn;
+                 description => $poet->name.' født.'}) if $poet->yearBorn ne '?';
 push @events , new Kalliope::Timeline::Event({ year => $poet->yearDead,
                  description => $poet->name.' død.'}) if $poet->yearDead;
 
-push @events, Kalliope::Timeline::getEventsForPerson($poet->fhandle);
+my @personalEvents = Kalliope::Timeline::getEventsForPerson($poet->fhandle);
 
-my @other = Kalliope::Timeline::getHistoryInTimeSpan($poet->yearBorn,$poet->yearDead);
+my $beginSpan = $poet->yearBorn;
+if ($beginSpan eq '?' && $#personalEvents > 1) {
+    $beginSpan = $personalEvents[0]->getYear;
+}
+push @events, @personalEvents;
+my @other = Kalliope::Timeline::getHistoryInTimeSpan($beginSpan,$poet->yearDead);
 map {$_->useGrayText(1)} @other;
 push @events, @other;
 
