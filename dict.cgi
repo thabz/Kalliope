@@ -60,7 +60,9 @@ if ($wid) {
     $letter = $h->{'firstletter'};
 
     my $HTML = "<b>$$h{word}</b>: ";
-    $HTML .= $h->{'forkl'};
+    my $forkl = $h->{'forkl'};
+    Kalliope::buildhrefs(\$forkl);
+    $HTML .= $forkl;
 
     $HTML .= qq|<br><br><a class="green" href="ksearch.cgi?sprog=dk&type=free&needle=|.uri_escape($$h{word}).q|">Søg</a> efter tekster, som indeholder dette ord.|;
 
