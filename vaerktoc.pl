@@ -51,12 +51,6 @@ my $page = newAuthor Kalliope::Page ( poet => $poet,
 
 my ($vtitel,$vaar,$vid,$noter) = $dbh->selectrow_array("SELECT titel, aar, vid,noter FROM vaerker WHERE vhandle = '$vhandle' AND fhandle = '$fhandle'");
 
-$page->addBox( width => '100%',
-               coloumn => 0,
-               title => 'Værker',
-	       theme => 'dark',
-               content => &completeWorks($poet,$work)
-              );
 
 #$page->addBox( width => '80%',
 #               coloumn => 1,
@@ -72,7 +66,7 @@ $page->addBox( width => '80%',
                end => qq|<A TITLE="Tilbage til oversigten over værker" HREF="fvaerker.pl?fhandle=$fhandle&mode=$mode"><IMG ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 ALT="Tilbage til oversigten over værker"></A>|
               );
 
-$page->addBox( width => '150',
+$page->addBox( width => '250',
                coloumn => 2,
                title => 'Noter',
                theme => 'note',
@@ -85,6 +79,13 @@ if ($work->hasPics) {
 	           theme => 'dark',
                    content => &pics($work) );
 }
+
+$page->addBox( width => '250',
+               coloumn => 2,
+               title => 'Værker',
+	       theme => 'dark',
+               content => &completeWorks($poet,$work)
+              );
 
 $page->addBox( width => '100%',
 	       coloumn => 2,

@@ -106,7 +106,7 @@ $page->addBox( width => '',
 my @keywords = $poem->keywords;
 
 if ($poem->notes || $#keywords >= 0) {
-    $page->addBox( width => '200',
+    $page->addBox( width => '250',
 	           coloumn => 2,
 		   theme => 'note',
 #                   title => 'Noter',
@@ -115,7 +115,7 @@ if ($poem->notes || $#keywords >= 0) {
 
 
 if ($poem->footnotes) { 
-    $page->addBox( width => '200',
+    $page->addBox( width => '250',
 	           coloumn => 2,
 		   theme => 'dark',
                    title => 'Fodnoter',
@@ -124,7 +124,7 @@ if ($poem->footnotes) {
 }
 
 if (&xrefs($poem)) { 
-    $page->addBox( width => '200',
+    $page->addBox( width => '250',
 	           coloumn => 2,
 		   theme => 'dark',
                    title => 'Henvisninger hertil',
@@ -132,7 +132,7 @@ if (&xrefs($poem)) {
 }
 
 if ($poem->hasPics) { 
-    $page->addBox( width => '200',
+    $page->addBox( width => '250',
 	           coloumn => 2,
 		   theme => 'dark',
                    title => 'Billeder',
@@ -150,15 +150,15 @@ if ($poem->hasPics) {
 
 my $workTitle = $work->titleWithYear;
 
-$page->addBox( width =>'150',
-	       coloumn => 0,
+$page->addBox( width =>'250',
+	       coloumn => 2,
                title => 'Indhold',
 	       theme => 'dark',
 	       content => &tableOfContents($work),
 	       end => qq|<A HREF="vaerktoc.pl?fhandle=$fhandle&vhandle=$vhandle"><IMG VALIGN=center ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 TITLE="$workTitle" ALT="$workTitle"></A>|
 	     );
 
-$page->addBox( width => '100%',
+$page->addBox( width => '250',
 	       coloumn => 2,
 		   theme => 'dark',
 	       content => &korrekturFelt($poem) );
