@@ -180,6 +180,12 @@ sub _contentAsPoemHTML {
     my $dispNum = 0;
     my $lastNum = 0;
     foreach my $line (split /\n/,$self->{'indhold'}) {
+	if ($line =~ /<resetnum>/) {
+	    $line =~ s/<resetnum>//;
+	    $lastNum=0;
+	    $dispNum=0;
+	    $num=0;
+	}
 	my $lineForTjek = $line;
 	$lineForTjek =~ s/<[^>]+>//g;
 	if (   $lineForTjek =~ /[^ _\t\-]/
