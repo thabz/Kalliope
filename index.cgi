@@ -32,7 +32,7 @@ use strict;
 my @randomPagesTitles = ('Digtarkiv',
                          'Dlim - dumdlum - dumdumdrum!',
 			 'Det var Fanden gare mig Cæcirie!',
-			 'Den totalt fede webstil'
+			 'Den totalt fede webstil',
 			 'Sexy, men på en subtil måde.');
                           
 my $rnd = int rand($#randomPagesTitles+1);
