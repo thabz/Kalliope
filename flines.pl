@@ -52,8 +52,10 @@ my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
 # Prepare hash of poetical works ------------------------------------------
 #
 
-my %works;
-map {$works{$_->vid} = $_} $poet->poeticalWorks;
+#my %works;
+#map {$works{$_->vid} = $_} $poet->poeticalWorks;
+
+my %works = map {$_->vid => $_} $poet->poeticalWorks;
 
 #
 # Make blocks -------------------------------------------------------------
@@ -92,7 +94,7 @@ for (my $i = 0; $i <= $#lines; $i++) {
     $blocks[$idx]->{'head'} = '<DIV CLASS=listeoverskrifter>'.uc (chr $idx + ord('a')).'</DIV><BR>';
     $blocks[$idx]->{'count'}++;
     my $w = $works{$f->{'vid'}};
-    $blocks[$idx]->{'body'} .= '<SPAN CLASS="listeblue">&#149;</SPAN> <A TITLE="Fra '.$w->title.' '.$w->parenthesizedYear.'" HREF="digt.pl?longdid='.$f->{'longdid'}.'">'.$line.'</A><BR>';
+    $blocks[$idx]->{'body'} .= '<SPAN CLASS="listeblue">&#149;</SPAN> <A TITLE="Fra '.$w->titleWithYear.'" HREF="digt.pl?longdid='.$f->{'longdid'}.'">'.$line.'</A><BR>';
     $previousLine = $line3;
 }
 #
