@@ -30,7 +30,11 @@ my $dbh = Kalliope::DB->connect;
 
 sub pageTitle {
     my $needle = shift->{'needle'};
-    return "Søgning efter »$needle«"
+    if ($needle ne '') {
+        return "Søgning efter »$needle«";
+    } else {
+        return "Søgning";
+    }
 }
 
 sub hasSearchBox {
