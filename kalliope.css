@@ -271,7 +271,9 @@ span.digtunderoverskrift {
 
 td.maintitle {
     vertical-align: middle;
+/*    background-color: rgb(139,56,65); */
     background-color: rgb(139,56,65);
+    background-color: black;
     font-size: 24px;
     font-weight: bold;
     color: white;
