@@ -109,7 +109,7 @@ sub create {
  $dbh->do(q(
 	CREATE TABLE vaerker ( 
               vid varchar(80) NOT NULL PRIMARY KEY,
-              fhandle varchar(20) NOT NULL REFERENCES fnavne(fhandle),
+              fhandle varchar(20) NOT NULL, -- REFERENCES fnavne(fhandle) ON DELETE RESTRICT,
               vhandle varchar(20) NOT NULL,
               titel text NOT NULL, 
 	      underoverskrift text,

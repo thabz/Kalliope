@@ -66,12 +66,13 @@ sub create {
               bid int DEFAULT '0' NOT NULL PRIMARY KEY,
 	      forbogstav char(1) NOT NULL,
 	      longdid varchar(40) NOT NULL REFERENCES digte(longdid) ON DELETE CASCADE,
-	      fhandle varchar(50) NOT NULL REFERENCES fnavne(fhandle),
+	      fhandle varchar(50), -- NOT NULL REFERENCES fnavne(fhandle) ON DELETE RESTRICT,
 	      lang char(2) NOT NULL,
 	      type char(1)) -- ENUM('t','f') NOT NULL
 	      ");
    $dbh->do(q/CREATE INDEX forbogstaver_forbogstav ON forbogstaver(forbogstav)/);
    $dbh->do(q/CREATE INDEX forbogstaver_lang ON forbogstaver(lang)/);
+   $dbh->do(q/CREATE INDEX forbogstaver_type ON forbogstaver(type)/);
    $dbh->do(q/GRANT SELECT ON TABLE forbogstaver TO "www-data"/);
 }
 

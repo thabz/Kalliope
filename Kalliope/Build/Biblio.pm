@@ -43,7 +43,7 @@ sub build {
 
 sub create {
     $dbh->do("CREATE TABLE biblio ( 
-              fhandle varchar(40) NOT NULL REFERENCES fnavne(fhandle) ON DELETE CASCADE,
+              fhandle varchar(40) NOT NULL, -- REFERENCES fnavne(fhandle) ON DELETE CASCADE,
 	      bibid varchar(40) NOT NULL,
 	      entry text)
 	      ");

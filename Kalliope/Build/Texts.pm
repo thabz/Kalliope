@@ -138,7 +138,7 @@ sub create {
               did int NOT NULL PRIMARY KEY, 
 	      parentdid int REFERENCES digte(did),
               longdid varchar(40) NOT NULL UNIQUE,
-              fhandle VARCHAR(20) NOT NULL REFERENCES fnavne(fhandle),
+              fhandle VARCHAR(20) NOT NULL, -- REFERENCES fnavne(fhandle) ON DELETE RESTRICT,
               vid VARCHAR(80) NOT NULL REFERENCES vaerker(vid) ON DELETE CASCADE,
               vaerkpos INT,
               toctitel text,
