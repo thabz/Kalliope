@@ -115,7 +115,7 @@ sub pics {
     return @{$self->{'picscache'}} if $self->{'picscache'};
     my @result;
     my $fhandle = $self->fhandle;
-    my $sth = $dbh->prepare("SELECT caption,url FROM textpictures WHERE longdid = ?");
+    my $sth = $dbh->prepare("SELECT caption,url FROM textpictures WHERE longdid = ? ORDER BY orderby");
     $sth->execute($self->longdid);
     while (my ($desc,$url) = $sth->fetchrow_array) {
 	my $thumb = $url;
