@@ -86,7 +86,9 @@ sub latestNews {
 	    $HTML .= qq|<p align="justify">$line</p>|;
 	} elsif ($line =~ /^[^#]/) {
 	    $HTML .= qq|<p align="justify">$line</p>|;
-	}
+	} else {
+            last;
+        }
     }
     close (NEWS);
     return $HTML;
@@ -107,16 +109,11 @@ sub dayToday {
 sub sonnet {
     my ($HTML,$END);
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT otherid FROM keywords_relation,keywords WHERE keywords.ord = 'sonnet' AND keywords_relation.keywordid = keywords.id AND keywords_relation.othertype = 'digt'");
+    my $sth = $dbh->prepare("SELECT otherid FROM keywords_relation,keywords,digte WHERE keywords.ord = 'sonnet' AND keywords_relation.keywordid = keywords.id AND keywords_relation.othertype = 'digt' AND otherid = digte.did AND digte.lang = 'dk' ORDER BY RAND() LIMIT 1");
     $sth->execute();
-    my $rnd = int rand ($sth->rows - 1);
-    my $i = 0;
-    my $h;
-    while ($h = $sth->fetchrow_hashref) {
-	last if ($i++ == $rnd);
-    }
-    return ('','') unless $h;
-    my $poem = new Kalliope::Poem(did => $h->{'otherid'});
+    my ($did) = $sth->fetchrow_array;
+    return ('','') unless $did;
+    my $poem = new Kalliope::Poem(did => $did);
     $HTML .= '<SMALL>'.$poem->content(layout => 'plainpoem').'</SMALL>';
     $HTML =~ s/ /&nbsp;/g;
     my $poet = $poem->author;
