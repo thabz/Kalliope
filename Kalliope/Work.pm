@@ -34,7 +34,7 @@ my $dbh = Kalliope::DB->connect;
 
 sub new {
     my ($class,%arg) = @_;
-    my $vid = $arg{'vid'};
+    my $vid = $arg{'vid'} || $arg{'id'};
     confess "Need some kind of id to initialize a new work\n" unless $vid;
     my $sth = $dbh->prepare("SELECT * FROM vaerker WHERE vid = ?");
     $sth->execute($vid);
