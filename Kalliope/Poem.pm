@@ -42,7 +42,8 @@ sub new {
     confess "Need some kind of id to initialize a new poem\n" unless $sql;
     my $sth = $dbh->prepare("SELECT did,fid,vid,longdid,titel,underoverskrift,foerstelinie,layouttype,pics,quality FROM digte WHERE $sql");
     $sth->execute();
-    Kalliope::Page::notFound() unless $sth->rows;
+    return undef unless $sth->rows;
+
     my $obj = $sth->fetchrow_hashref;
     
     $class = 'Kalliope::Poem::Bible' if $obj->{'longdid'} =~ /^(bibel|bible)/;
