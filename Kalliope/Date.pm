@@ -70,6 +70,16 @@ sub longDate {
     return "$mday. $months[$mon] $year"
 }
 
+sub veryLongDate {
+    my $time = shift;
+    return '[Ingen dato]' unless $time;
+    my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime($time);
+    $year+=1900;
+    $hour = "0$hour" if $hour < 10;
+    $min = "0$min" if $min < 10;
+    return " $mday. $months[$mon] $year $hour:$min"
+}
+
 sub splitDate {
     my $date = shift;
     my ($y,$m,$d) = split '-',$date;
