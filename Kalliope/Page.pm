@@ -244,7 +244,6 @@ EOF
 
     # Body
     print '<TR>';
-#    print '<TABLE WIDTH="100%" HEIGHT="100%" CELLPADDING=0 CELLSPACING=0 BORDER=0><TR>';
     print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center">'.$self->_navigationMain.'<BR><BR>';
 
     print '</TD><TD VALIGN="top">';
@@ -261,7 +260,7 @@ EOF
     print '</TD></TR>';
 
     # Foot
-    print '<TR><TD COLSPAN=2 HEIGHT="70" BGCOLOR="black">';
+    print '<TR><TD COLSPAN=2 HEIGHT="40" BGCOLOR="black">';
 
     print '<TABLE><TR><TD>';
     print $self->langSelector;
@@ -295,7 +294,7 @@ sub langSelector {
        my $img = $lang eq $selfLang ? "${lang}select.gif" : "$lang.gif";
        my $alt = $lang eq $selfLang ? 'Du befinder dig i den '.$titles{$lang}.' samling.' : 'Skift til den '.$titles{$lang}.' samling.';
        $HTML .= qq|<A TITLE="$alt" HREF="$refURL"><IMG ALT="$alt" BORDER=0 SRC="gfx/flags/$img"></A>|;
-       $HTML .= '<BR>' if $lang eq 'de';
+#       $HTML .= '<BR>' if $lang eq 'de';
     }
     return $HTML;
 }
