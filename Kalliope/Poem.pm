@@ -73,14 +73,29 @@ sub subtitle {
 
 sub subtitleAsHTML {
     my $self = shift;
+    $self->{'underoverskrift'} = $self->extractFootnotes($self->{'underoverskrift'});
     my $subtitle = $self->{'underoverskrift'};
     $subtitle =~ s/\n/<br>/g;
     return $subtitle;
 }
 
-
 sub firstline {
     return $_[0]->{'title'};
+}
+
+sub extractFootnotes {
+    my ($self,$content) = @_;
+    my @footnotes = @{$self->{'footnotes'}};
+    my $num = $#footnotes >= 0 ? $#footnotes + 2 : 1;
+    while ($content =~ s/<footnote content="([^"]+)"\/>/<footmark id="footnote$num"\/>/si) {
+       push @{$self->{'footnotes'}},$1;
+       $num++;
+    }
+    return $content;
+}
+
+sub footnotes {
+    return @{shift->{'footnotes'}};
 }
 
 sub content {
@@ -92,6 +107,7 @@ sub content {
 	$self->{'indhold'} = $data->{'indhold'};
 	$self->{'noter'} = $data->{'noter'};
         $self->{'type'} = $data->{'type'};
+	$self->{'indhold'} = $self->extractFootnotes($self->{'indhold'});
     }
     if ($self->{'layouttype'} eq 'prosa') {
         my @indhold;

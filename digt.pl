@@ -97,6 +97,14 @@ if ($poem->notes || $#keywords >= 0) {
 	           content => &notes($poem,@keywords) );
 }
 
+if ($poem->footnotes) { 
+    $page->addBox( width => '200',
+	           coloumn => 2,
+                   title => 'Fodnoter',
+	           content => &footnotes($poem) );
+
+}
+
 my $workTitle = $work->titleWithYear;
 
 $page->addBox( width =>'100%',
@@ -120,9 +128,11 @@ sub poem {
     my ($poem,$needle) = @_;
     my $HTML;
     $HTML .= '<SPAN CLASS="digtoverskrift"><I>'.$poem->title."</I></SPAN><BR>";
-    $HTML .= '<SPAN CLASS="digtunderoverskrift">'.$poem->subtitle.'</SPAN><BR>' if $poem->subtitle;
+    $HTML .= '<SPAN CLASS="digtunderoverskrift">'.$poem->subtitle.'</SPAN><BR>' if $poem->subtitleAsHTML;
     $HTML .= '<BR>';
     $HTML .= $poem->content;
+    $HTML =~ s/<footmark id="footnote([^"]+)"\/>/<A CLASS="blue" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup>$1<\/sup><\/A>/gsi;
+    $HTML =~ s/<footmark&nbsp;id="footnote([^"]+)"\/>/<A CLASS="blue" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup>$1<\/sup><\/A>/gsi;
     if ($needle) {
 	$needle =~ s/^\s+//;
 	$needle =~ s/\s+$//;
@@ -140,6 +150,19 @@ sub poem {
 	$HTML =~ s/$split1/$block1/g;
 	$HTML =~ s/$split2/$block2/g;
     }
+    return $HTML;
+}
+
+sub footnotes {
+    my $poem = shift;
+    my @notes = $poem->footnotes;
+    my $i = 1;
+    my $HTML = '<span style="font-size: 12px">';
+    foreach my $note (@notes) {
+       $HTML .= qq|<A CLASS="blue" NAME="footnotedesc$i" HREF="#footnotemark$i">$i.</A> $note<BR>|;
+       $i++;
+    }
+    $HTML .= '</span>';
     return $HTML;
 }
 
@@ -193,8 +216,7 @@ sub korrekturFelt {
 
 sub notes {
     my ($poem,@keywords) = @_;
-    my $HTML;
-
+    my $HTML = '<span style="font-size: 12px">';
     if ($poem->notes) {
 	foreach my $line (split /\n/,$poem->notes) {
 	    $HTML .= '<IMG ALIGN="left" SRC="gfx/clip.gif" BORDER=0 ALT="Note til »'.$poem->title.'«">';
@@ -207,6 +229,6 @@ sub notes {
 	$HTML .= '<B>Nøgleord:</B> ';
         $HTML .= join ', ', map { $_->clickableTitle($LA) } @keywords;
     }
-    $HTML .= "<BR>";
+    $HTML .= "<BR></span>";
     return $HTML;
 }
