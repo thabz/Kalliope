@@ -168,6 +168,8 @@ sub list19 {
 }
 
 sub listpics {
+     # TODO: Skriv bedre kode og brug Kalliope::Person::isUnknownPoet
+     # så biblens billede ikke optræder her.
      my $HTML;
      my @liste = ();
      open (IN, "data.$LA/fnavne.txt");
