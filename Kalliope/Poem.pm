@@ -209,7 +209,9 @@ sub smallIcon {
 
 sub author {
     my $self = shift;
-    return new Kalliope::Person('fid' => $self->fid); 
+    return $self->{'cache_author'} if $self->{'cache_author'};
+    $self->{'cache_author'} = new Kalliope::Person('fid' => $self->fid);
+    return  $self->{'cache_author'};
 }
 
 sub vid {
