@@ -353,7 +353,7 @@ sub menuStructs {
                        'pages' => ['news','about','tak','musen']
                        },
          'poets'    => {menuTitle => 'Digtere',
-                       url => 'poets.cgi?list=az&sprog='.$lang,
+                       url => 'poets.cgi?list=front&sprog='.$lang,
 		       icon => 'gfx/icons/poet-w64.gif',
                        'pages' => ['poetsbyname','poetsbyyear','poetsbypic',
 		                   'poetsbyflittige','poetsbypop']
@@ -535,6 +535,29 @@ sub notFound {
     $page->addBox(content => qq|<CENTER><IMG BORDER=2 SRC="gfx/notfound/$picNo.jpg" ALIGN="center"></CENTER><BR><BR>$message|);
     $page->print;
     exit;
+}
+
+sub frontMenu {
+    my @menuStruct = @_;
+    my @activeItems = grep { $_->{'status'} } @menuStruct;
+    my $itemsNum = $#activeItems+1;
+
+    my $HTML = '<TABLE WIDTH="100%"><TR><TD CLASS="ffront" VALIGN="top" WIDTH="50%">';
+    $HTML .= '<TABLE CELLPADDING=2 CELLSPACING=0>';
+
+    my $i = 0;
+    foreach my $str (@activeItems) {
+	my %item = %{$str};
+	my $url = $item{url};
+	if ($item{status}) {
+	    $HTML .= qq|<TR><TD VALIGN="top" ROWSPAN=2><A HREF="$url"><IMG HEIGHT=48 BORDER=0 SRC="$item{icon}" ALT="*"></A></TD>|;
+	    $HTML .= qq|<TD CLASS="ffronttitle"><A HREF="$url">$item{title}</A><TD></TR>|;
+	    $HTML .= qq|<TR><TD VALIGN="top" CLASS="ffrontdesc">$item{desc}</TD></TR>|;
+	    $HTML .= '</TABLE></TD><TD CLASS="ffront" VALIGN="top" WIDTH="50%"><TABLE CELLPADDING=2 CELLSPACING=0>' if (++$i == int $itemsNum/2);
+	}
+    }
+    $HTML .= '</TABLE></TD></TR></TABLE>';
+    return $HTML;
 }
 
 1;
