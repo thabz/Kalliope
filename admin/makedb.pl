@@ -452,7 +452,7 @@ sub insertdigt {
     print "$id mangler titel\n" if $titel eq '';
     $indhold =~ s/\s+$//;
     $noter =~ s/[\n\s]+$//;
-    $indhold =~ s/^\s+//;
+    $indhold =~ s/^\n+//m;
 # Insæt hvad vi har.
     $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$firstline,$under,$indhold,$noter);
     $i++;
