@@ -37,7 +37,7 @@ sub new {
 
     $self->{'pagegroupchoosen'} = '';
 
-    foreach my $key (%args) {
+    foreach my $key (keys %args) {
         $self->{$key} = $args{$key};
     }
     $self->{'lang'} = $args{'lang'} || 'dk';

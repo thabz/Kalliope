@@ -37,13 +37,9 @@ my $dbh = Kalliope::DB->connect;
 
 sub new {
     my ($class,%arg) = @_;
-    my $sql;
-    $sql = 'longdid = "'.$arg{'longdid'}.'"' if defined $arg{'longdid'};
-    $sql = 'did = '.$arg{'did'} if defined $arg{'did'};
-    $sql = 'did = '.$arg{'id'} if defined $arg{'id'};
-    confess "Need some kind of id to initialize a new poem\n" unless $sql;
-    my $sth = $dbh->prepare("SELECT did,fhandle,vid,longdid,toptitel,linktitel,toctitel,underoverskrift,foerstelinie,type,pics,quality FROM digte WHERE $sql");
-    $sth->execute();
+    confess "Need some kind of id to initialize a new poem\n" unless $arg{'longdid'};
+    my $sth = $dbh->prepare("SELECT did,fhandle,vid,longdid,toptitel,linktitel,toctitel,underoverskrift,foerstelinie,type,quality FROM digte WHERE longdid = ?");
+    $sth->execute($arg{'longdid'});
     return undef unless $sth->rows;
 
     my $obj = $sth->fetchrow_hashref;
@@ -365,10 +361,14 @@ sub getNumberOfVerses {
 
 sub notes {
     my $self = shift;
-    unless (defined $self->{'indhold'}) {
-	$self->content;
+    my $sth = $dbh->prepare("SELECT note FROM textnotes WHERE longdid = ? ORDER BY orderby");
+    $sth->execute($self->longdid);
+    my @notes;
+    while (my ($note) = $dbh->fetchrow_array) {
+	$self->resolveBiblioTags($note);
+	push @notes,$note;
     }
-    return $self->resolveBiblioTags($self->{'noter'}); 
+    return @notes;
 }
 
 sub keywords {

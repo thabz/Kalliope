@@ -108,10 +108,9 @@ sub parse {
 }
 
 sub create {
-    $dbh->do("DROP TABLE IF EXISTS fnavne");
+    $dbh->do("DROP TABLE fnavne CASCADE");
     $dbh->do("CREATE TABLE fnavne ( 
-	fid int UNSIGNED DEFAULT '0' NOT NULL PRIMARY KEY auto_increment,
-    fhandle char(40) NOT NULL, 
+    fhandle varchar(20) NOT NULL PRIMARY KEY, 
     fornavn text DEFAULT '', 
     efternavn text DEFAULT '',
     detaljer text DEFAULT '',
@@ -120,22 +119,21 @@ sub create {
     sprog char(2), 
     land text,
     /* Beholdning */
-    cols int(2),
-    thumb int(1),
-    pics int(1),
-    bio int(1),
+    cols int,
+    thumb int,
+    pics int,
+    bio int,
     biotext text,
-    hashenvisninger int(1),
-    links int(1),
-    sekundaer int(1),
-    primaer int(1),
-    vaerker int(1),
-    vers int(1),
-    prosa int(1),
+    hashenvisninger int,
+    links int,
+    sekundaer int,
+    primaer int,
+    vaerker varchar(1000),
+    vers int,
+    prosa int,
     type varchar(32),
-    workslist text,
-    KEY fhandle_index (fhandle(10)), 
-    UNIQUE (fid))");
+    workslist text)
+	");
 }
 
 sub insert {
@@ -207,13 +205,33 @@ sub insert {
 	}   
 
         $rc->execute($fhandle,$person->{'firstname'},$person->{'lastname'},$person->{'born'} || '',$person->{'dead'} || '',$person->{'lang'},$fcols,$fthumb,$fpics,$biotext,$fbio,$flinks,$fsekundaer,$fprimaer,$fvaerkerindhold,$fvaerker,$fprosa,$person->{'detaljer'},$person->{'type'} || '',$person->{'workslist'});
-	my $lastid = Kalliope::DB::getLastInsertId($dbh,"fnavne");
-        $fhandle2fid{$fhandle} = $lastid;
 	foreach (@keys) {
 #	    &insertkeywordrelation($_,$lastid,'biografi');
 	}
     }
-    return %fhandle2fid;
+}
+
+sub postinsert {
+   my $SQL = q(
+UPDATE fnavne SET vers = 1
+WHERE 0 < 
+(SELECT count(*) 
+   FROM vaerker v
+   WHERE v.fhandle = fnavne.fhandle
+   AND v.hascontent = 'yes'
+   AND v.type = 'poetry')
+	   );
+   $dbh->do($SQL);
+   my $SQL = q(
+UPDATE fnavne SET prosa = 1
+WHERE 0 < 
+(SELECT count(*) 
+   FROM vaerker v
+   WHERE v.fhandle = fnavne.fhandle
+   AND v.hascontent = 'yes'
+   AND v.type = 'prose')
+	   );
+   $dbh->do($SQL);
 }
 
 sub buildHasHenvisninger {

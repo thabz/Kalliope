@@ -9,6 +9,7 @@ use Kalliope::Build::Persons;
 use Kalliope::Build::Dict;
 use Kalliope::Build::Timeline;
 use Kalliope::Build::Xrefs;
+use Kalliope::Build::Keywords;
 use Kalliope::Build::Biblio;
 use Kalliope::Build::Works;
 use Kalliope::Build::Texts;
@@ -26,10 +27,13 @@ GetOptions ("all" => \$__all);
 
 if ($__all) {
     &log ("Creating tables...");
+    Kalliope::Build::Persons::create();
     Kalliope::Build::Works::create();
     Kalliope::Build::Texts::create();
     Kalliope::Build::Timestamps::create();
     Kalliope::Build::Firstletters::create();
+    Kalliope::Build::Keywords::create();
+    Kalliope::Build::Database::grant();
 }
 
 #
@@ -52,65 +56,15 @@ if (Kalliope::Build::Timestamps::hasChanged($dictFile)) {
 #
 
 &log ("Making keywords... ");
-
-$rc = $dbh->do("drop table if exists keywords");
-$rc = $dbh->do("CREATE TABLE keywords ( 
-              id int UNSIGNED PRIMARY KEY NOT NULL,
-	      ord char(128),
-	      titel text,
-	      beskrivelse text,
-	      UNIQUE(id))");
-
-$rc = $dbh->do("drop table if exists keywords_images");
-$rc = $dbh->do("CREATE TABLE keywords_images ( 
-              id int UNSIGNED PRIMARY KEY NOT NULL auto_increment,
-	      keyword_id int unsigned,
-	      imgfile char(128),
-	      beskrivelse text,
-	      UNIQUE(id))");
-
-$sth = $dbh->prepare('INSERT INTO keywords (id,ord,beskrivelse,titel) VALUES (?,?,?,?)');	      
-$sthimg = $dbh->prepare('INSERT INTO keywords_images (keyword_id,imgfile,beskrivelse) VALUES (?,?,?)');	      
-opendir (DIR,'../keywords');
-$i = 1;
-while ($file = readdir(DIR)) {
-    unless ($file =~ /^\./ || $file eq 'CVS') {
-	$keywords{$file} = $i;
-	$beskr = '';
-	open(FILE,'../keywords/'.$file);
-	$titel = '';
-	while (<FILE>) { 
-	    if (/^T:/) {
-		s/^T://;
-		chop;
-		$titel = $_;
-	    } elsif (/^K:/ || /^F:/) {
-		next;
-	    } elsif (/^P:/) {
-		s/^P://;
-		chop;
-		$imgfile = $_;
-		open(IMGFILE,"../gfx/hist/$imgfile.txt");
-		$beskrivelse = join (' ',<IMGFILE>);
-		close(IMGFILE);
-		$sthimg->execute($i,$imgfile,$beskrivelse);
-	    } else {
-		$beskr .= $_ 
-	    }
-	};
-	close (FILE);
-	$sth->execute($i,$file,$beskr,$titel);
-	$i++;
-    }
-}
-
+Kalliope::Build::Keywords::clean();
+Kalliope::Build::Keywords::insert();
 &log("Done");
 
-$rc = $dbh->do("drop table if exists keywords_relation");
+$rc = $dbh->do("drop table keywords_relation");
 $rc = $dbh->do("CREATE TABLE keywords_relation ( 
-              keywordid int UNSIGNED NOT NULL,
+              keywordid int NOT NULL,
 	      otherid int NOT NULL,
-	      othertype ENUM('digt','person','biografi','hist','keyword','vaerk') NOT NULL,
+	      othertype VARCHAR(20), -- ENUM('digt','person','biografi','hist','keyword','vaerk') NOT NULL,
 	      UNIQUE(keywordid,otherid,othertype))");
 
 $sthkeyword = $dbh->prepare("INSERT INTO keywords_relation (keywordid,otherid,othertype) VALUES (?,?,?)");
@@ -124,7 +78,7 @@ if (Kalliope::Build::Timestamps::hasChanged($poetsFile)) {
     &log("Making persons... ");
     Kalliope::Build::Persons::create();
     my %persons = Kalliope::Build::Persons::parse($poetsFile);
-    my %fhandle2fid = Kalliope::Build::Persons::insert(%persons);
+    Kalliope::Build::Persons::insert(%persons);
     Kalliope::Build::Timestamps::register($poetsFile);
     &log("Done");
 } else {
@@ -154,7 +108,11 @@ if (!$__all) {
 Kalliope::Build::Firstletters::insert(@changedWorks);
 &log("Done");
 
-exit;
+
+&log('Persons postinsert...');
+Kalliope::Build::Persons::postinsert();
+&log("Done");
+
 #
 # Build biblio
 #
@@ -163,6 +121,7 @@ exit;
 Kalliope::Build::Biblio::build();
 &log("Done");
 
+exit;
 
 
 
@@ -225,110 +184,6 @@ $sth->finish;
 # Build værker
 #
 
-&log("Build works... ");
-$rc = $dbh->do("drop table if exists vaerker");
-$rc = $dbh->do("CREATE TABLE vaerker ( 
-              vid int UNSIGNED DEFAULT '0' NOT NULL PRIMARY KEY auto_increment,
-              fhandle char(40) NOT NULL,
-              fid INT NOT NULL,
-              vhandle char(40) NOT NULL,
-              titel text NOT NULL, 
-	      underoverskrift text,
-              aar char(40),
-              noter text,
-	      pics text,
-              type enum('poetry','prose'),
-	      status enum('complete','incomplete'),
-              findes char(1),
-	      cvstimestamp int,
-	      quality set('korrektur1','korrektur2','korrektur3',
-	                  'kilde','side'),
-	      lang char(10),
-	      INDEX (lang),
-	      INDEX (vhandle),
-	      INDEX (fhandle),
-	      INDEX (type),
-              UNIQUE (vid))");
-
-
-$sth = $dbh->prepare("SELECT * FROM fnavne");
-$sth->execute;
-$stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywords.id = keywords_relation.keywordid AND keywords_relation.otherid = ? AND keywords_relation.othertype = 'biografi'");
-$sth2= $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle,titel,underoverskrift,aar,type,findes,noter,pics,quality,lang,status,cvstimestamp) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-&log("Antal forfattere: ".$sth->rows);
-
-while ($fn = $sth->fetchrow_hashref) {
-    $fdir = "../fdirs/".$fn->{'fhandle'}."/";
-    my $fhandle = $fn->{'fhandle'};
-    open(IN,$fdir."vaerker.txt");
-    foreach (<IN>) {
-	($vhandle,$titel,$aar,$type)=split(/=/,$_);
-	next unless ($vhandle =~ /\S+/);
-	if ($vhandle =~ /\S/) {
-	    $type = 'v' unless ($type =~ /\S/);
-	    $findes = (-e $fdir.$vhandle.".txt") ? 1 : 0;
-	    $status = 'incomplete';
-	    $cvsdate = 0;
-	    $noter = '';
-	    @pics = ();
-	    @subtitles = ();
-	    @keys = ();
-	    my @qualities;
-	    if ($findes) { 
-                # Nedarv keys fra digteren
-		$stharv->execute($fn->{'fid'});
-		while ($kewl = $stharv->fetchrow_array) {
-		    push @keys,$kewl;
-		}
-                # Læs filen for noter og ekstra keywords
-		open (IN2,$fdir.$vhandle.".txt");
-		foreach (<IN2>) {
-		    if (/^VN:/) {
-			s/^VN://;
-			$noter .= $_."\n";
-		    } elsif (/^VU:/) {
-			s/^VU://;
-		        push @subtitles,$_;
-		    } elsif (/^VP:/) {
-			s/^VP://;
-		        push @pics,$_;
-		    } elsif (/^CVS-TIMESTAMP:/) {
-		        $cvsdate = Kalliope::Date::cvsTimestampToUNIX($_);
-		    } elsif (/^VQ:/) {
-			s/^VQ://;
-			my @q = split /\s*,\s*/,$_;
-			push @qualities,@q;
-			push @{$qualityCache{"$fhandle/$vhandle"}},@q;
-		    } elsif (/^STATUS:/) {
-			s/^STATUS://;
-			$status = $_;
-		    } elsif (/^VK/) {
-			s/^VK://;
-			chop;
-			push @keys,$_;
-		    }
-		}
-		close(IN2);
-	    }
-	    chop($noter);
-	    $pics = join '$$$',@pics;
-	    my $quality = join ',',@qualities;
-	    my $subtitle = join "\n",@subtitles;
-	    $sth2->execute($fn->{'fhandle'},$fn->{'fid'},$vhandle,$titel,
-	            $subtitle,$aar,
-		    $type,$findes,$noter,$pics,$quality,$fn->{'sprog'},
-		    $status,$cvsdate);
-	    $lastid = Kalliope::DB::getLastInsertId($dbh,"vaerker");
-	    foreach (@keys) {
-		&insertkeywordrelation($_,$lastid,'vaerk');
-	    }
-	}
-    }
-    close(IN);
-}
-&log("Done");
-
-$sth->finish;
 $sth = $dbh->prepare("SELECT count(*) FROM vaerker");
 $sth->execute;
 ($c) = $sth->fetchrow_array;
@@ -365,20 +220,6 @@ Kalliope::Build::Persons::buildHasHenvisninger($dbh);
 &log ("Done");
 
 #$dbh->disconnect;
-
-
-sub insertkeywordrelation {
-    my ($keyword,$otherid,$othertype,$ord) = @_;
-    if ($othertype eq 'person') {
-	$sthkeyword->execute($insertedfnavne{$keyword},$otherid,$othertype);
-    } else {
-	if ($keywords{$keyword}) {
-	    $sthkeyword->execute($keywords{$keyword},$otherid,$othertype);
-	} else {
-	    &log("Nøgleordet '$keyword' i $othertype:$ord er ukendt.");
-	}
-    }
-}
 
 
 #

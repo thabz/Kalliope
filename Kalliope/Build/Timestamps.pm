@@ -60,7 +60,7 @@ sub dbstamp {
 }
 
 sub create {
-    $dbh->do("DROP TABLE IF EXISTS timestamps");
+    $dbh->do("DROP TABLE timestamps CASCADE");
     $dbh->do("CREATE TABLE timestamps ( 
               filename varchar(255) NOT NULL PRIMARY KEY,
 	      timestamp int NOT NULL)");

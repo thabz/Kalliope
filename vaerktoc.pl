@@ -36,7 +36,7 @@ my $fhandle = url_param('fhandle');
 my $vhandle = url_param('vhandle');
 
 my $poet = new Kalliope::Person ( fhandle => $fhandle);
-my $work = new Kalliope::Work ( longvid => $vhandle, fhandle => $fhandle );
+my $work = new Kalliope::Work ( vid => "$fhandle/$vhandle");
 
 my @crumbs;
 push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
@@ -48,14 +48,6 @@ my $page = newAuthor Kalliope::Page ( poet => $poet,
                                       page => 'vaerker',
                                       extrawindowtitle => $work->titleWithYear,
                                       crumbs => \@crumbs );
-
-my ($vtitel,$vaar,$vid) = $dbh->selectrow_array("SELECT titel, aar, vid FROM vaerker WHERE vhandle = '$vhandle' AND fhandle = '$fhandle'");
-
-
-#$page->addBox( width => '80%',
-#               coloumn => 1,
-#               content => '<SPAN CLASS=digtoverskrift><I>'.$vtitel."</I> ".(($vaar ne '?')?"($vaar)":'').'</SPAN>'
-#              );
 
 my $mode = $work->isProse ? 'prosa' : 'poetical'; 
 
@@ -170,18 +162,23 @@ sub tableOfContent {
     my $sth = $dbh->prepare("SELECT longdid,toctitel as titel,type,did FROM digte WHERE vid=? ORDER BY vaerkpos");
     $sth->execute($work->vid);
     return 'Kalliope indeholder endnu ingen tekster fra dette værk.' unless $sth->rows;
-    $HTML .= _renderSection($work->vid,0,1);
+    $HTML .= _renderSection($work->vid,undef,1);
     $sth->finish;
     return $HTML;
 }
 
 sub _renderSection {
     my ($vid,$parent,$depth) = @_;
-    print STDERR "Render parent $parent\n";
     my $HTML;
     my $indentstr = '&nbsp;'x8;
-    my $sthgroup = $dbh->prepare("SELECT longdid,toctitel as title, type,did FROM digte WHERE vid = ? AND parentdid = ? AND toctitel IS NOT NULL ORDER BY vaerkpos");
-    $sthgroup->execute($vid,$parent);
+    my $sthgroup;
+    if ($parent) {
+       $sthgroup = $dbh->prepare("SELECT longdid,toctitel as title, type,did FROM digte WHERE vid = ? AND parentdid = ? AND toctitel IS NOT NULL ORDER BY vaerkpos");
+       $sthgroup->execute($vid,$parent);
+    } else {
+       $sthgroup = $dbh->prepare("SELECT longdid,toctitel as title, type,did FROM digte WHERE vid = ? AND parentdid IS NULL AND toctitel IS NOT NULL ORDER BY vaerkpos");
+       $sthgroup->execute($vid);
+    }
     $HTML .= qq|\n<table cellpadding="0" cellspacing="0">\n|;
     while (my $d = $sthgroup->fetchrow_hashref) {
 	$HTML .= "<tr><td>$indentstr</td>";

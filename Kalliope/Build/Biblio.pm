@@ -43,13 +43,14 @@ sub build {
 }
 
 sub create {
-    $dbh->do("DROP TABLE IF EXISTS biblio");
+    $dbh->do("DROP TABLE biblio");
     $dbh->do("CREATE TABLE biblio ( 
               fhandle char(40) NOT NULL,
 	      bibid char(40) NOT NULL,
-	      entry text,
-	      INDEX (fhandle),
-	      INDEX (bibid))");
+	      entry text)
+	      ");
+   $dbh->do(q/CREATE INDEX biblio_fhandle ON biblio(fhandle)/);
+   $dbh->do(q/CREATE INDEX biblio_bibid ON biblio(bibid)/);
 }
 
 

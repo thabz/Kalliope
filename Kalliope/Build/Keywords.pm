@@ -19,8 +19,8 @@
 #
 #  $Id$
 
-package Kalliope::Build::Works;
-    
+package Kalliope::Build::Keywords;
+
 use XML::Twig;
 use Kalliope::DB;
 use Kalliope::Date;
@@ -28,11 +28,62 @@ use strict;
 
 my $dbh = Kalliope::DB::connect();
 
+my %keywords;
+
+sub clean {
+     $dbh->do("DELETE FROM keywords_images");
+     $dbh->do("DELETE FROM keywords");
+}
+
+sub insert {
+    my $sth = $dbh->prepare('INSERT INTO keywords (id,ord,beskrivelse,titel) VALUES (?,?,?,?)');	      
+    my $sthimg = $dbh->prepare('INSERT INTO keywords_images (keyword_id,imgfile,beskrivelse) VALUES (?,?,?)');	      
+    opendir (DIR,'../keywords');
+    my $i = 0;
+    my $pi = 0;
+    while (my $file = readdir(DIR)) {
+	unless ($file =~ /^\./ || $file eq 'CVS') {
+	    $keywords{$file} = $i;
+	    my $beskr = '';
+	    open(FILE,'../keywords/'.$file);
+	    my $titel = '';
+	    my @images;
+	    while (<FILE>) { 
+		if (/^T:/) {
+		    s/^T://;
+		    chop;
+		    $titel = $_;
+		} elsif (/^K:/ || /^F:/) {
+		    next;
+		} elsif (/^P:/) {
+		    s/^P://;
+		    chop;
+		    my $imgfile = $_;
+		    open(IMGFILE,"../gfx/hist/$imgfile.txt");
+		    my $beskrivelse = join (' ',<IMGFILE>);
+		    close(IMGFILE);
+		    push @images,{file => $imgfile, descr => $beskrivelse};
+		} else {
+		    $beskr .= $_ 
+		}
+	    };
+	    close (FILE);
+	    $sth->execute($i,$file,$beskr,$titel);
+	    foreach my $img (@images) {
+		$sthimg->execute($i,$$img{file},$$img{descr});
+	    }
+	}
+	$i++;
+    }
+
+}
+
 sub insertkeywordrelation {
     my ($keyword,$otherid,$othertype,$ord) = @_;
-    $sthkeyword = $dbh->prepare("INSERT INTO keywords_relation (keywordid,otherid,othertype) VALUES (?,?,?)");
+    my $sthkeyword = $dbh->prepare("INSERT INTO keywords_relation (keywordid,otherid,othertype) VALUES (?,?,?)");
     if ($othertype eq 'person') {
-	$sthkeyword->execute($insertedfnavne{$keyword},$otherid,$othertype);
+#$sthkeyword->execute($insertedfnavne{$keyword},$otherid,$othertype);
+	$sthkeyword->execute('',$otherid,$othertype);
     } else {
 	if ($keywords{$keyword}) {
 	    $sthkeyword->execute($keywords{$keyword},$otherid,$othertype);
@@ -43,10 +94,30 @@ sub insertkeywordrelation {
 }
 
 sub create {
-   $rc = $dbh->do("drop table if exists keywords_relation");
-   $rc = $dbh->do("CREATE TABLE keywords_relation ( 
-              keywordid int UNSIGNED reaNOT NULL,
-	      otherid varchar(100) NOT NULL,
-	      othertype ENUM('digt','person','biografi','hist','keyword','vaerk') NOT NULL,
-	      UNIQUE(keywordid,otherid,othertype))");
+#  $rc = $dbh->do("drop table if exists keywords_relation");
+#   $rc = $dbh->do("CREATE TABLE keywords_relation ( 
+#              keywordid int UNSIGNED reaNOT NULL,
+#	      otherid varchar(100) NOT NULL,
+#	      othertype ENUM('digt','person','biografi','hist','keyword','vaerk') NOT NULL,
+#	      UNIQUE(keywordid,otherid,othertype))");
+#
+#
+    $dbh->do("DROP TABLE keywords CASCADE");
+    $dbh->do("CREATE TABLE keywords ( 
+	id int PRIMARY KEY NOT NULL,
+    ord char(128) NOT NULL,
+    titel text,
+    beskrivelse text
+	)");
+    $dbh->do(q/CREATE INDEX keywords_ord ON keywords(ord)/);
+
+    $dbh->do("DROP TABLE keywords_images CASCADE");
+    $dbh->do("CREATE TABLE keywords_images ( 
+	keyword_id INT REFERENCES keywords(id),
+    imgfile char(128),
+    beskrivelse text
+	)");
+    $dbh->do(q/CREATE INDEX keywords_images_keyid ON keywords_images(keyword_id)/);
 }
+
+1;

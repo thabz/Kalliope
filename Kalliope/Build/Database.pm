@@ -1,5 +1,4 @@
-#!/usr/bin/perl -w
-
+#
 #  Copyright (C) 1999-2001 Jesper Christensen 
 #
 #  This script is free software; you can redistribute it and/or
@@ -20,21 +19,15 @@
 #
 #  $Id$
 
-package Kalliope::PersonHome;
+package Kalliope::Build::Database;
 
-use Kalliope::Person;
+use Kalliope::DB;
+use strict;
 
-my %cache;
+my $dbh = Kalliope::DB::connect();
 
-sub findByFhandle {
-    my ($fhandle) = @_;
-    if (defined $cache{$fhandle}) {
-       return $cache{$fhandle};
-    } else {
-       $cache{$fhandle} = new Kalliope::Person('fhandle' => $fhandle);
-       return $cache{$fhandle};
-    }
+sub grant {
+   $dbh->do(q/GRANT SELECT ON TABLE fnavne,vaerker,digte,worknotes TO "www-data"/);
 }
 
 1;
-

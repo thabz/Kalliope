@@ -55,31 +55,31 @@ my $HTML;
 my @menuStruct = (
       { url => 'fvaerker.pl?', 
 	title => 'Værker', 
-	status => $poet->{'vers'},
+	status => $poet->hasWorks,
         desc => "${poetName}s samlede poetiske værker",
         icon => 'gfx/icons/works-h48.gif'
                     },{
         url => 'flines.pl?mode=1&', 
 	title => 'Digttitler', 
-	status => $poet->{'vaerker'}, 
+	status => $poet->hasPoems, 
         desc => "Vis titler på alle digte",
         icon => 'gfx/icons/poem-h48.gif'
                     },{
 	url => 'flines.pl?mode=0&', 
 	title => 'Førstelinier', 
-	status => $poet->{'vaerker'},
+	status => $poet->hasPoems,
         desc => "Vis førstelinier for samtlige digte",
         icon => 'gfx/icons/poem-h48.gif'
                     },{
 	url => 'fsearch.cgi?', 
 	title => 'Søgning', 
-	status => $poet->{'vaerker'},
+	status => $poet->hasPoems,
         desc => "Søg i ".$poetName."s tekster",
         icon => 'gfx/icons/search-h48.gif'
                     },{
 	url => 'fpop.pl?', 
 	title => 'Populære digte', 
-	status => $poet->{'vaerker'},
+	status => $poet->hasPoems,
         desc => "Top-10 over mest læste $poetName digte i Kalliope",
         icon => 'gfx/icons/pop-h48.gif'
                     },{

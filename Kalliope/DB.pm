@@ -27,14 +27,23 @@ use Carp;
 use vars qw($COMC_DBH);
 use Kalliope::Page;
 
+#my $DB_CONNECT_STRING = 'DBI:mysql:kalliope:localhost';
+#my $DB_USER = 'jec';
+#my $DB_PASSWORD = '';
+
+my $DB_CONNECT_STRING = 'dbi:Pg:dbname=kalliope';
+my $DB_USER = '';
+my $DB_PASSWORD = '';
+my %DB_ATTR = ( AutoCommit => 1, PrintError => 1, Warn => 1 );
+
 sub connect {
     # connect
     if (!defined $COMC_DBH) { 
-	$COMC_DBH = DBI->connect('DBI:mysql:kalliope:localhost', 'kalliope', '') || connect_error();
+	$COMC_DBH = DBI->connect($DB_CONNECT_STRING, $DB_USER, $DB_PASSWORD,\%DB_ATTR) || connect_error();
     }
     # Do status check on existing handle
     if (!$COMC_DBH->ping) {
-	$COMC_DBH = DBI->connect('DBI:mysql:kalliope:localhost', 'kalliope', '') || connect_error();
+	$COMC_DBH = DBI->connect($DB_CONNECT_STRING, $DB_USER, $DB_PASSWORD,\%DB_ATTR) || connect_error();
     }
     return $COMC_DBH;
 }

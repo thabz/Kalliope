@@ -34,13 +34,10 @@ my $dbh = Kalliope::DB->connect;
 
 sub new {
     my ($class,%arg) = @_;
-    my $sql;
-    $sql = 'vhandle = "'.$arg{'longvid'}.'" and fhandle = "'.$arg{'fhandle'}.'"' if defined $arg{'longvid'};
-    $sql = 'vid = "'.$arg{'vid'}.'"' if defined $arg{'vid'};
-    $sql = 'vid = "'.$arg{'id'}.'"' if defined $arg{'id'};
-    confess "Need some kind of id to initialize a new work\n" unless $sql;
-    my $sth = $dbh->prepare("SELECT * FROM vaerker WHERE $sql");
-    $sth->execute();
+    my $vid = $arg{'vid'};
+    confess "Need some kind of id to initialize a new work\n" unless $vid;
+    my $sth = $dbh->prepare("SELECT * FROM vaerker WHERE vid = ?");
+    $sth->execute($vid);
     Kalliope::Page::notFound() unless $sth->rows;
     my $obj = $sth->fetchrow_hashref;
     bless $obj,$class;
@@ -94,8 +91,8 @@ sub clickableTitle {
 sub notes {
     my $self = shift;
     my @notes;
-    my $sth = $dbh->prepare("SELECT note FROM worknotes WHERE fhandle = ? AND vhandle = ? ORDER BY orderby");
-    $sth->execute($self->fhandle,$self->vhandle);
+    my $sth = $dbh->prepare("SELECT note FROM worknotes WHERE vid = ? ORDER BY orderby");
+    $sth->execute($self->vid);
     while (my ($note) = $sth->fetchrow_array) {
 	push @notes,$note;
     }

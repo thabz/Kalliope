@@ -330,11 +330,9 @@ sub xrefs {
 sub notes {
     my ($poem,@keywords) = @_;
     my $HTML = '<span style="font-size: 12px">';
-    if ($poem->notes) {
-        my @notes = split /\n/,$poem->notes;
-	@notes = map { Kalliope::buildhrefs(\$_) } @notes;
-	$HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center"><span class="noprint">&#149;&nbsp;&#149;&nbsp;&#149;</span></div>',@notes;
-    }
+    my @notes = $poem->notes;
+    @notes = map { Kalliope::buildhrefs(\$_) } @notes;
+    $HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center"><span class="noprint">&#149;&nbsp;&#149;&nbsp;&#149;</span></div>',@notes;
     if ($#keywords >= 0) {
 	$HTML .= '<span class="noprint"><br><br><B>Nøgleord:</B> ';
         $HTML .= join ', ', map { $_->clickableTitle($LA) } @keywords;
