@@ -52,8 +52,6 @@ if ($knap) {
     $HTML = &showRootDir();
 }
 
-#push @crumbs,[Kalliope::Strings::uc($letter),''] if $letter;
-
 my $page;
 $page = new Kalliope::Page (
 	title => "Redigér $dir/$filename",
