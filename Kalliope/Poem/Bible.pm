@@ -108,10 +108,13 @@ sub clickableTitleSimple {
 sub content {
     my $self = shift;
     my $biblemark = shift;
-    my ($begin,$end) = (0,0);
+    my ($begin,$end,$ff) = (0,0,0);
     if ($biblemark) {
        ($begin,$end) = split /-/,$biblemark;
        $end = $begin unless $end;
+       if ($biblemark =~ /ff/) {
+	   $ff = 1;
+       }
     }
 #    print STDERR "** $begin - $end **\n";
 
@@ -133,7 +136,8 @@ sub content {
 	if ($line =~ s/^\s*([\d,]+)\.\s+//) {
 	    my $num = $1;
 	    my $bg = '';
-	    if ($num >= $begin && $num <= $end) {
+	    if (($num >= $begin && $num <= $end) ||
+		($num >= $begin && $ff == 1)) {
                 $bg = 'background-image: url(gfx/notepap.jpg)';
                 #$bg = 'background-color: #fafac0';
 	    }
