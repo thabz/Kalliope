@@ -73,6 +73,14 @@ if ($work->notes) {
                    content => &notes($work) );
 }
 
+if ($work->hasPics) {
+    $page->addBox( width => '100%',
+	           coloumn => 2,
+                   title => 'Billeder',
+	           theme => 'dark',
+                   content => &pics($work) );
+}
+
 $page->addBox( width => '100%',
 	       coloumn => 2,
                align => 'center',
@@ -108,6 +116,21 @@ sub completeWorks {
 	    $HTML .= '</FONT>';
 	}
     }
+    return $HTML;
+}
+
+sub pics {
+    my $work = shift;
+    my $HTML = '<center><small>';
+    my @pics = $work->pics;
+    foreach my $pic (@pics) {
+        $HTML .= Kalliope::Web::insertThumb($pic);
+	$HTML .= '<br>';
+	$HTML .= $pic->{'description'};
+	$HTML .= '<br>';
+	$HTML .= '<br>';
+    }
+    $HTML .= '</small></center>';
     return $HTML;
 }
 

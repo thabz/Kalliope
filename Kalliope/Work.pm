@@ -77,6 +77,25 @@ sub notes {
     return shift->{'noter'}; 
 }
 
+sub pics {
+   my $self = shift;
+   my $pics = $self->{'pics'};
+   my @pics = split ;
+   my @result;
+   my $fhandle = $self->author->fhandle;
+   foreach my $line (split /\$\$\$/,$pics) {
+      my ($url,$desc) = split /%/,$line;
+      push @result,{ thumbfile => 'fdirs/'.$fhandle.'/_'.$url,
+                     destfile =>  'fdirs/'.$fhandle.'/'.$url,
+                     description => $desc };
+   }	     
+   return @result;
+}
+
+sub hasPics {
+   return shift->{'pics'} ? 1 : 0;
+}
+
 sub keywords {
     # FIXME: Simpel copy/paste fra Poem.pm
     my $self = shift;

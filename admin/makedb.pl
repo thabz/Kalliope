@@ -230,6 +230,7 @@ $rc = $dbh->do("CREATE TABLE vaerker (
               titel text NOT NULL, 
               aar char(40),
               noter text,
+	      pics text,
               type char(5),
               findes char(1),
 	      INDEX (vhandle),
@@ -241,7 +242,7 @@ $sth = $dbh->prepare("SELECT * FROM fnavne");
 $sth->execute;
 $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM vaerker");
 $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywords.id = keywords_relation.keywordid AND keywords_relation.otherid = ? AND keywords_relation.othertype = 'biografi'");
-$sth2= $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle, titel,aar,type,findes,noter) VALUES (?,?,?,?,?,?,?,?)");
+$sth2= $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle, titel,aar,type,findes,noter,pics) VALUES (?,?,?,?,?,?,?,?,?)");
 print "Antal forfattere: ".$sth->rows."\n";
 
 while ($fn = $sth->fetchrow_hashref) {
@@ -254,6 +255,7 @@ while ($fn = $sth->fetchrow_hashref) {
 	    $type = 'v' unless ($type =~ /\S/);
 	    $findes = (-e $fdir.$vhandle.".txt") ? 1 : 0;
 	    $noter = '';
+	    @pics = ();
 	    @keys = ();
 	    if ($findes) { 
                 # Nedarv keys fra digteren
@@ -267,6 +269,9 @@ while ($fn = $sth->fetchrow_hashref) {
 		    if (/^VN:/) {
 			s/^VN://;
 			$noter .= $_."\n";
+		    } elsif (/^VP:/) {
+			s/^VP://;
+		        push @pics,$_;
 		    } elsif (/^VK/) {
 			s/^VK://;
 			chop;
@@ -276,8 +281,9 @@ while ($fn = $sth->fetchrow_hashref) {
 		close(IN2);
 	    }
 	    chop($noter);
+	    $pics = join /\$\$\$/,@pics;
 	    $sth2->execute($fn->{'fhandle'},$fn->{'fid'},$vhandle,$titel,$aar,
-		    $type,$findes,$noter);
+		    $type,$findes,$noter,$pics);
             $lastinsertsth->execute;
 	    ($lastid) = $lastinsertsth->fetchrow_array;
 	    foreach (@keys) {
