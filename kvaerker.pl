@@ -111,24 +111,30 @@ if ($mode eq 'titel') {
     my $sth = $dbh->prepare("SELECT v.*,f.fornavn,f.efternavn FROM vaerker AS v, fnavne AS f WHERE f.fid = v.fid AND v.lang = ? AND v.aar != '?' ORDER BY v.aar ASC");
     $sth->execute($LA);
 
+    my $HTML = '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>';
     #Udskriv titler på vaerker
-    my ($last,$last2); 
+    my ($last,$last2,$last3); 
     while (my $v = $sth->fetchrow_hashref) {
         my $vaerkaar = $v->{'aar'};
 	if ($vaerkaar-$last >= 10) {
 	    $last = $vaerkaar - $vaerkaar%10;
 	    $last2 = $last+9;
-	    $HTML .= "<BR><DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR>\n";
+	    $HTML .= "<TR><TD COLSPAN=2><BR><DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR></TD></TR>";
 	}
 
-	$HTML .= $vaerkaar.' - <A HREF="fvaerker.pl?fhandle='.$$v{fhandle}.'">'.$$v{fornavn}.' '.$$v{efternavn}.'</A>: ';
+        my $liVal = $vaerkaar != $last3 ? "$vaerkaar" : '';
+	$last3 = $vaerkaar;
+        $HTML .= qq|<TR><TD NOWRAP>$liVal</TD>|;
+	$HTML .= '<TD>&nbsp;<A HREF="fvaerker.pl?fhandle='.$$v{fhandle}.'">'.$$v{fornavn}.' '.$$v{efternavn}.'</A>: ';
 	if ($$v{findes} == 0) {
 	    $HTML .= "<I>$$v{titel}</I><BR>";
 	} else {
 	    $HTML .= qq|<A CLASS=green HREF="vaerktoc.pl?fhandle=$$v{fhandle}&vhandle=$$v{vhandle}">|;
 	    $HTML .= "<I>$$v{titel}</I></A><BR>";
 	}
+	$HTML .= '</TD></TR>';
     }
+    $HTML .= '</TABLE>';
 
     $HTML .= "<BR><BR><I>Denne oversigt indeholder kun værker som har et faktisk udgivelsesår</I><BR>\n";
     $page->addBox( title => "Værker efter år",
