@@ -315,7 +315,7 @@ sub menuStructs {
     my $lang = $self->lang;
 
     my %menuStructs = (
-         'welcome' => {'menuTitle' => 'Velkommen',
+         'welcome' => {'menuTitle' => '',
                        'url' => 'index.cgi',
                        'pages' => ['news','about','tak','musen','stats']
                        },
