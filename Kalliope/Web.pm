@@ -22,6 +22,8 @@
 
 package Kalliope::Web;
 
+use URI::Escape;
+
 sub doubleColumn {
     my $ptr = $_[0];
     my $HTML;
