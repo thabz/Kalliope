@@ -79,7 +79,7 @@ if ($#events > 0) {
         my $yearForDisplay = $last != $$e{year} ? $$e{year} : '';
         
 	$HTML .= qq|<TR><TD CLASS="blue" VALIGN="top">$yearForDisplay&nbsp;</TD>|;
-	$HTML .= '<TD VALIGN="top">'.$$e{descr}."</TD></TR>";
+	$HTML .= '<TD VALIGN="top">'.$$e{descr}."</TD></TR>\n";
 	$HTML .= '</TABLE></TD><TD WIDTH="50%" VALIGN="top"><TABLE>' if ++$i == int ($antal / 2);
 	$last = $$e{year};
     }
