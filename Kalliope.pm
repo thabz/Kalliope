@@ -78,16 +78,32 @@ sub buildhrefs {
     while ($$txt =~ /XREF DIGT/i) {
 	if ($$txt =~ /<XREF DIGT="([^"]+)"\/?>/i) {
 	    my $did = $1;
-	my $poem = new Kalliope::Poem(longdid => $did);
-	my $link;
-	if ($poem) {
-	    $link = $poem->clickableTitleSimple;
-	} else {
-	    $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
-	}
-	$$txt =~ s/<XREF DIGT="$did"\/?>/$link/i;
+	    my $poem = new Kalliope::Poem(longdid => $did);
+    	    my $link;
+ 	    if ($poem) {
+	        $link = $poem->clickableTitleSimple;
+ 	    } else {
+	        $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
+	    }
+	    $$txt =~ s/<XREF DIGT="$did"\/?>/$link/i;
+        }
     }
+
+    while ($$txt =~ /xref poem/i) {
+	if ($$txt =~ /<xref poem="([^"]+)"\/?>/i) {
+	    my $did = $1;
+	    my $poem = new Kalliope::Poem(longdid => $did);
+    	    my $link;
+ 	    if ($poem) {
+	        $link = $poem->clickableTitleSimple;
+ 	    } else {
+	        $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
+	    }
+	    $$txt =~ s/<xref poem="$did"\/?>/$link/i;
+        }
     }
+
+
     if ($$txt =~ /<XREF KEYWORD="(.+)"\/?>/i) {
 	my $did = $1;
 	my $keyword = new Kalliope::Keyword(ord => $did);
