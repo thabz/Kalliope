@@ -64,7 +64,7 @@ sub getHistoryInTimeSpan {
     my ($beginYear,$endYear) = @_;
 
     my $dbh = Kalliope::DB::connect();
-    my $sth = $dbh->prepare("SELECT * FROM timeline WHERE type = 'event' AND eventtype = 'history' AND year > ? AND year < ?");
+    my $sth = $dbh->prepare("SELECT * FROM timeline WHERE eventtype = 'history' AND year > ? AND year < ?");
     $sth->execute($beginYear,$endYear);
     my @result;
     while (my $h = $sth->fetchrow_hashref) {

@@ -49,18 +49,27 @@ sub useGrayText {
 }
 
 sub isImage {
-    return shift->{'imageurl'} ? 1 : 0;
+    return shift->{'url'} ? 1 : 0;
 }
 
 sub getImageUrl {
-    return shift->{'imageurl'};
+    return shift->{'url'};
 }
 
 sub getThumbUrl {
     my $self = shift;
     my $imageUrl = $self->getImageUrl;
-    $imageUrl = s/\/([^\/]+)$/\/_$1/;
+    $imageUrl =~ s/\/([^\/]+)$/\/_$1/;
     return $imageUrl;
+}
+
+# Get the image in a format usable by Kalliope::Web::insertThumb
+sub getKalliopeImage {
+    my $self = shift;
+    my $k;
+    $k->{'thumbfile'} = $self->getThumbUrl; 
+    $k->{'destfile'} = $self->getImageUrl;
+    return $k;
 }
 
 1;

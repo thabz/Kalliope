@@ -125,7 +125,7 @@ sub insertThumb {
     } elsif ($h->{url}) {
 	$html .= qq|<A HREF="$h->{url}">|;
     }
-    $html .= qq|<IMG WIDTH=$tx HEIGHT=$ty ALT="$h->{alt}" SRC="$h->{thumbfile}" BORDER=$border></A>|;
+    $html .= qq|<IMG WIDTH=$tx HEIGHT=$ty ALT="$$h{alt}" SRC="$$h{thumbfile}" BORDER="$border"></A>|;
     return $html;
 }
 

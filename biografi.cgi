@@ -114,7 +114,14 @@ if ($#events > 0) {
         my $yearForDisplay = $last != $e->getYear ? $e->getYear : '';
         
 	$HTML .= qq|<TR><TD CLASS="blue" VALIGN="top">$yearForDisplay&nbsp;</TD>|;
-	$HTML .= '<TD VALIGN="top">'.$e->getText."</TD></TR>\n";
+	$HTML .= '<TD VALIGN="top" class="gray">';
+	if ($e->isImage) {
+	    $HTML .= Kalliope::Web::insertThumb($e->getKalliopeImage);
+	    $HTML .= '<br><small>'.$e->getText.'</small>';
+	} else {
+	    $HTML .= $e->getText;
+	}
+	$HTML .= "</TD></TR>\n";
 	$HTML .= '</TABLE></TD><TD WIDTH="50%" VALIGN="top"><TABLE>' if ++$i == int ($antal / 2);
 	$last = $e->getYear;
     }
