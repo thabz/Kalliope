@@ -48,15 +48,15 @@ my $sth =  $dbh->prepare("SELECT d.longdid,d.titel as titel,lasttime,hits,v.tite
 $sth->execute($fhandle);
 
 my $i = 1;
-my $HTML .= '<TABLE CLASS="oversigt" CELLSPACING=0 WIDTH="100%">';
+my $HTML .= '<TABLE CLASS="oversigt" CELLSPACING="0" WIDTH="100%">';
 $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Titel</TH><TH ALIGN="right">Hits</TH><TH ALIGN="right">Senest</TH></TR>';
 while (my $h = $sth->fetchrow_hashref) {
     my $aar = $h->{aar} ne '?' ? ' ('.$h->{aar}.')' : '';
     my $class = $i % 2 ? '' : ' CLASS="darker" ';
     $HTML .= qq|<TR $class><TD>|.$i++.'.</TD>';
-    $HTML .= '<TD><A HREF="digt.pl?longdid='.$h->{longdid}.'">'.$h->{titel}.'</A><FONT COLOR=#808080> - <I>'.$h->{vtitel}.'</I>'.$aar.'</FONT></TD>';
-    $HTML .= '<TD ALIGN=right>'.$h->{'hits'}.'</TD>';
-    $HTML .= '<TD ALIGN=right>'.Kalliope::Date::shortDate($h->{'lasttime'}).'</TD>';
+    $HTML .= '<TD><A HREF="digt.pl?longdid='.$h->{longdid}.'">'.$h->{titel}.'</A><FONT COLOR="#808080"> - <I>'.$h->{vtitel}.'</I>'.$aar.'</FONT></TD>';
+    $HTML .= '<TD ALIGN="right">'.$h->{'hits'}.'</TD>';
+    $HTML .= '<TD NOWRAP ALIGN=right>'.Kalliope::Date::shortDate($h->{'lasttime'}).'</TD>';
 }
 $HTML .= '</TABLE>';
 
