@@ -45,7 +45,7 @@ my @works = $mode eq 'poetical' ? $poet->poeticalWorks : $poet->proseWorks;
 if ($#works >= 0) {
     my $nr;
     my $splitpos = ($#works+1 > 6) ? int(($#works+1) / 2 + 0.5 ) : 0;
-    $HTML .= '<TABLE HEIGHT="100%" CELLPADDING=0 CELLSPACING=10><TR><TD VALIGN=top>';
+    $HTML .= '<TABLE HEIGHT="100%" CELLPADDING=0 CELLSPACING=10><TR><TD WDITH="50%" VALIGN=top>';
     $HTML .= '<TABLE>';
     foreach my $work (@works) {
 	$HTML .= '<TR><TD>';
@@ -67,7 +67,7 @@ if ($#works >= 0) {
 	$HTML .= '</TD></TR>';
 	if (++$nr == $splitpos) {
 	    $HTML .= '</TABLE></TD><TD BGCOLOR=black><IMG WIDTH=1 HEIGHT=1 SRC="gfx/trans1x1.gif" ALT="">';
-	    $HTML .= '</TD><TD VALIGN=top><TABLE>' ;
+	    $HTML .= '</TD><TD WIDTH="50%" VALIGN=top><TABLE>' ;
 	}
     }
     $HTML .= "</TABLE>";   
