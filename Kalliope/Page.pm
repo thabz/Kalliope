@@ -184,10 +184,14 @@ sub print {
 <BODY LINK="#000000" VLINK="#000000" ALINK="#000000" LEFTMARGIN=0 TOPMARGIN=0 MARGINHEIGHT=0 MARGINWIDTH=0>
 
 EOF
+    if (my $crumbs = $self->_constructBreadcrumbs) {
+	print '<DIV STYLE="background-color: #e0e0e0; padding: 1px">';
+	print $crumbs;
+	print '</DIV>';
+    }
     print '<DIV HEIGHT=100 CLASS="nav"><TABLE WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
     print '<TD CLASS="navigation">';
     print $self->_navigationMain;
-    print '   '.$self->langSelector;
     print '</TD>';
     print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1 ALT=""></TD>';
 
@@ -196,17 +200,13 @@ EOF
     print '<TR><TD WIDTH="100%" CLASS="maintitle">'.$self->titleAsHTML.'</TD>';
     print '<TD CLASS="maintitle"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=36 WIDTH=1 ALT=""></TD>';
     print '</TR>';
-    print '<TR><TD CLASS="navigation">'.$self->_navigationSub.'</TD>';
+    print '<TR><TD ALIGN="right" CLASS="navigation">'.$self->_navigationSub.'</TD>';
     print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1 ALT=""></TD>';
     print '</TR></TABLE>';
     print '</DIV>';
-    if (my $crumbs = $self->_constructBreadcrumbs) {
-	print '<DIV STYLE="background-color: #e0e0e0; padding: 1px">';
-	print $crumbs;
-	print '</DIV>';
-    }
+
     print '<DIV CLASS="body">';
-    print '<TABLE WIDTH="100%"><TR>';
+    print '<TABLE WIDTH="100%" HEIGHT="100%"><TR>';
     my @widths = $self->getColoumnWidths;
     foreach my $colHTML (@{$self->{'coloumns'}}) {
 	if (my $width = shift @widths) {
@@ -215,8 +215,15 @@ EOF
 	    print qq|<TD VALIGN="top">$colHTML</TD>\n|;
         }
     }
-    print '</TR></TABLE>';
+    print '</TR>';
+    print '<TR><TD COLSPAN=3>';
+    print '<TABLE WIDTH="100%"><TR><TD>';
     print '<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle"><INPUT TYPE="hidden" NAME="lang" VALUE="'.$self->lang.'"></FORM>';
+    print '</TD><TD ALIGN="right">';
+    print $self->langSelector;
+    print '</TD></TR></TABLE>';
+    print '</TD></TR></TABLE>';
+    
     print '</DIV></BODY></HTML>';
 }
 
