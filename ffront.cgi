@@ -52,19 +52,19 @@ my %menuStruct = (
 	title => 'Værker', 
 	status => $poet->{'vers'},
         desc => "${poetName}s samlede poetiske værker",
-        icon => 'gfx/books_40.GIF'
+        icon => 'gfx/icons/works-h48.gif'
                     },
 	titlelines => { url => 'flines.pl?mode=1&', 
 	title => 'Digttitler', 
 	status => $poet->{'vaerker'}, 
         desc => "Vis titler på alle digte",
-        icon => 'gfx/open_book_40.GIF'
+        icon => 'gfx/icons/poem-h48.gif'
                     },
 	firstlines => { url => 'flines.pl?mode=0&', 
 	title => 'Førstelinier', 
 	status => $poet->{'vaerker'},
         desc => "Vis førstelinier for samtlige digte",
-        icon => 'gfx/open_book_40.GIF'
+        icon => 'gfx/icons/poem-h48.gif'
                     },
 	popular => { url => 'fpop.pl?', 
 	title => 'Populære digte', 
@@ -105,7 +105,7 @@ my %menuStruct = (
         title => 'Sekundærlitteratur', 
         status => $poet->{'sekundaer'},
         desc => 'Henvisninger til sekundærlitteratur om '.$poetName,
-        icon => 'gfx/poet_40.GIF'
+        icon => 'gfx/icons/secondary-h48.gif'
                     } );
 
 my @keys = qw/vaerker titlelines firstlines popular prosa pics bio samtidige links sekundaer/;
@@ -120,7 +120,7 @@ foreach my $key (@keys) {
     my %item = %{$menuStruct{$key}};
     my $url = $item{url}.'fhandle='.$poet->fhandle;
     if ($item{status}) {
-	$HTML .= qq|<TABLE CELLPADDING=2 CELLSPACING=0><TR><TD VALIGN="top" ROWSPAN=2><IMG HEIGHT=40 BORDER=0 SRC="$item{icon}" ALT="*"></TD>|;
+	$HTML .= qq|<TABLE CELLPADDING=2 CELLSPACING=0><TR><TD VALIGN="top" ROWSPAN=2><IMG HEIGHT=48 BORDER=0 SRC="$item{icon}" ALT="*"></TD>|;
 	$HTML .= qq|<TD CLASS="ffronttitle"><A HREF="$url">$item{title}</A><TD></TR>|;
         $HTML .= qq|<TR><TD CLASS="ffrontdesc">$item{desc}</TD></TR></TABLE>|;
 	$HTML .= '</TD><TD CLASS="ffront" VALIGN="top" WIDTH="50%">' if (++$i == int $itemsNum/2);
