@@ -266,19 +266,15 @@ sub notes {
     my ($poem,@keywords) = @_;
     my $HTML = '<span style="font-size: 12px">';
     if ($poem->notes) {
-	foreach my $line (split /\n/,$poem->notes) {
-#	    $HTML .= '<IMG ALIGN="left" SRC="gfx/clip.gif" BORDER=0 ALT="Note til »'.$poem->title.'«">';
-	    Kalliope::buildhrefs(\$line);
-	    $HTML .= $line;
-	    $HTML .= "<BR><BR>";
-	};
+        my @notes = split /\n/,$poem->notes;
+	@notes = map { Kalliope::buildhrefs(\$_) } @notes;
+	$HTML = join '<div style="padding: 5px 0 5px 0; text-align: center">-</div>',@notes;
     }
     if ($#keywords >= 0) {
-	$HTML .= '<B>Nøgleord:</B> ';
+	$HTML .= '<br><br><B>Nøgleord:</B> ';
         $HTML .= join ', ', map { $_->clickableTitle($LA) } @keywords;
     }
-    $HTML =~ s/<BR><BR>$//;
-    $HTML .= "<BR></span>";
+    $HTML .= "</span>";
     return $HTML;
 }
 
