@@ -219,7 +219,6 @@ TD.topframetitel {
 }
 
 .listeblue {
-/*    color: rgb(99,132,173);*/
     color: #AA7744;
 }
 
@@ -253,7 +252,6 @@ span.digtunderoverskrift {
 
 td.maintitle {
     vertical-align: middle;
-    //background-color: rgb(79,112,153);
     background-color: #CC9966;
     font-size: 24px;
     font-weight: bold;
@@ -266,13 +264,10 @@ td.navigation {
     font-size: 12px;
     color: black;
     font-family: Arial, Helvetica;
-    //background-color: rgb(129,162,203);
-//    background-color: #EEBB88;
     background-color: rgb(238,216,174);
 
 }
 
 span.lifespan {
-    //color: rgb(129,162,203);
     color: #EEBB88;
 }
