@@ -1,7 +1,7 @@
 CVS-TIMESTAMP: $Date$
 STATUS:complete
 VQ:korrektur1,korrektur2,korrektur3,kilde
-VN:Kalliope bringer Shakespeares sonetter i to forskellige udgaver: under hver digttitel er først en version der nøje følger originalens stavemåde (moderniseret er kun typografiske særheder som langt s ( &#383; ) og ligaturer) og dernæst en moderniseret tekst hvor retskrivningen er nutidig engelsk; ude i højre side af skærmen kan nysgerrige også se en faksimilie af den pågældende sonet som den tager sig ud i originalen, <i>Shake-speares Sonnets</i> fra 1609. (forkortet <biblio>Q</biblio>)<br>Den ofte ret vilkårlige tegnsætning er nænsomt og i stilhed blevet rettet lidt til, dog uden at nogen konsekvent modernisering er tilstræbt. Alle ændringer i tekstforlæggets ordlyd (emendationer) er omhyggeligt anført i de enkelte sonetters noter; f.eks. betyder "1 monuments] <i>Malone</i>; monument <biblio>Q</biblio>" ud for sonnet 55, at i den øverste teksts linie 1 hvor vi har "Monuments", der har <biblio>Q</biblio> "Monument", og at rettelsen skyldes Edmond Malone. - Alt dette kan med fordel ignoreres, det ødelægger læseoplevelsen og er kun medtaget for fuldstændighedens skyld.
+VN:Kalliope bringer Shakespeares sonetter i to forskellige udgaver: under hver digttitel er først en version der nøje følger originalens stavemåde (moderniseret er kun typografiske særheder som langt s ( &#383; ) og ligaturer) og dernæst en moderniseret tekst med moderne engelsk retskrivning; ude i højre side af skærmen kan nysgerrige også se en faksimilie af den pågældende sonet som den tager sig ud i originalen, <i>Shake-speares Sonnets</i> fra 1609. (forkortet <biblio>Q</biblio>)<br>Den ofte ret vilkårlige tegnsætning er nænsomt og i stilhed blevet rettet lidt til, dog uden at nogen konsekvent modernisering er tilstræbt. Alle ændringer i tekstforlæggets ordlyd (emendationer) er omhyggeligt anført i de enkelte sonetters noter; f.eks. betyder "1 monuments] <i>Malone</i>; monument <biblio>Q</biblio>" ud for sonnet 55, at i den øverste teksts linie 1 hvor vi har "Monuments", der har <biblio>Q</biblio> "Monument", og at rettelsen skyldes Edmond Malone. - Alt dette kan med fordel ignoreres, det ødelægger læseoplevelsen og er kun medtaget for fuldstændighedens skyld.
 VP:sonnets/sonnets-tit.jpg%Facsimile
 
 I:shakespeare2001060201
@@ -966,8 +966,6 @@ As tender nurse her babe from faring ill:
     Presume not on thy heart when mine is slain,
     Thou gav'st me thine not to give back again.
 
-#her
-
 I:shakespeare0023
 T:23
 TI:As an vnperfect actor on the stage
@@ -981,7 +979,7 @@ Who with his feare is put besides his part,
 Or some fierce thing repleat with too much rage, 
 Whose strengths abondance weakens his owne heart; 
 So I for feare of trust, forget to say
-The perfect ceremony of loues right,<note><i>Skriftsproget var på Shakespeares tid elastisk nok til at man her kunne læse både</i> love's rite <i>og</i> love's right, <i>en flertydighed der går tabt ved modernisering.</i></note>
+The perfect ceremony of loues right,<note><i>Skriftsproget var på Shakespeares tid elastisk nok til at</i> right <i>her også kunne læses som</i> rite.</note>
 And in mine owne loues strength seeme to decay, 
 Ore-charg'd with burthen of mine owne loues might: 
 O let my books be then the eloquence<note>books] <biblio>Q</biblio>; looks <i>Sewell</i></note>
@@ -997,7 +995,7 @@ More then that tonge that more hath more exprest.
 Who with his fear is put besides his part,
 Or some fierce thing replete with too much rage,
 Whose strength's abundance weakens his own heart;
-So I for fear of trust forget to say
+So I for fear of trust, forget to say
 The perfect ceremony of love's rite,
 And in mine own love's strength seem to decay,
 O'ercharged with burden of mine own love's might:
@@ -1016,7 +1014,7 @@ F:Mine eye hath play'd the painter and hath stelld
 K:sonnet
 P:sonnets/sonnet-024.jpg%Facsimile
 
-Mine eye hath play'd the painter and hath stelld<note>stelld] <i>Capell</i>; steeld <biblio>Q</biblio></note>
+Mine eye hath play'd the painter and hath steeld<note>steeld] <biblio>Q</biblio>; stell'd <i>Capell</i></note>
 Thy beauties forme in table of my heart;
 My body is the frame wherein ti's held,
 And perspectiue it is best Painters art;
@@ -1033,10 +1031,10 @@ Delights to peepe, to gaze therein on thee;
 
 ---
 
-<resetnum>Mine eye hath played the painter and hath stelled
+<resetnum>Mine eye hath played the painter and hath steeled
 Thy beauty's form in table of my heart;
 My body is the frame wherein 'tis held,
-And perspective it is the painter's art;
+And perspective it is best painter's art;
 For through the painter must you see his skill
 To find where your true image pictured lies,
 Which in my bosom's shop is hanging still,
@@ -1047,6 +1045,8 @@ Are windows to my breast, wherethrough the sun
 Delights to peep, to gaze therein on thee;
     Yet eyes this cunning want to grace their art,
     They draw but what they see, know not the heart.
+
+#her
 
 I:shakespeare0025
 T:25
@@ -1064,7 +1064,7 @@ Great Princes fauorites their fair leaues spread
 But as the Marygold at the suns eye,
 And in them-selues their pride lies buried,
 For at a frowne they in their glory die.
-The painefull warrier famosed for fight,<note>fight] <i>Theobald conj.</i>; worth <biblio>Q</biblio>. <i>Linie 9's</i> worth <i>rimer ikke med</i> quite <i>i linie 11, som det ellers sømmer sig for rimpar, så udgivere har foreslået enten at ændre</i> worth <i>til</i> fight (<i>Theobald conj.</i>) <i>eller</i> might (<i>Capell</i>), <i>eller at ændre</i> quite <i>til</i> forth (<i>Theobald conj.</i>), <i>men det kan jo også tænkes at Shakespeare her havde glemt at rime, og så er enhver ændring kun en anmassende forskønnelse.</i>
+The painefull warrier famosed for fight,<note>fight] <i>Theobald conj.</i>; worth <biblio>Q</biblio> - worth <i>i l. 9 rimer ikke med</i> quite <i>i l. 11, som det ellers sømmer sig for rim, så udgivere har foreslået enten at ændre</i> worth <i>til</i> fight (<i>Theobald conj.</i>) <i>eller</i> might (<i>Capell</i>), <i>eller at ændre</i> quite <i>til</i> forth (<i>Theobald conj.</i>), <i>men det kan jo også tænkes at Shakespeare her havde glemt at rime, og så er enhver "rettelse" blot en anmassende forskønnelse.</i>
 After a thousand victories once foild,
 Is from the booke of honour rased quite,
 And all the rest forgot for which he toild:
