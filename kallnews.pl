@@ -21,6 +21,7 @@
 #  $Id$
 
 use CGI;
+use Kalliope;
 do 'kstdhead.pl';
 $LA = $ARGV[0];
 $LA = 'dk' unless ($LA);
@@ -30,9 +31,10 @@ $LA = 'dk' unless ($LA);
 
 beginwhitebox("","75%","left");
 open (NEWS,"data.$LA/news.html");
-foreach (<NEWS>) {
-    s/^\#//;
-    print;
+foreach $line (<NEWS>) {
+    $line =~ s/^\#//;
+    Kalliope::buildhrefs(\$line);
+    print $line;
 }
 close (NEWS);
 endbox();
