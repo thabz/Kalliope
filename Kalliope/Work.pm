@@ -74,6 +74,14 @@ sub subtitle {
     return shift->{'underoverskrift'};
 }
 
+sub clickableTitle {
+    my $self = shift;
+    my $HTML = '<A HREF="vaerktoc.pl?fhandle='.$self->fhandle.'&vhandle='.$self->vhandle.'">';
+    $HTML .= $self->title;
+    $HTML .= '</A>';
+    return $HTML;
+}
+
 sub notes {
     my $self = shift;
     my $notes = $self->{'noter'};
@@ -130,6 +138,10 @@ sub fid {
     return shift->{'fid'};
 }
 
+sub fhandle {
+    return shift->{'fhandle'};
+}
+
 sub author {
     my $self = shift;
     return new Kalliope::Person('fid' => $self->fid); 
@@ -139,10 +151,15 @@ sub year {
     return shift->{'aar'};
 }
 
+sub hasYear {
+    my $self = shift;
+    return $self->year ne '?' && $self->year ne '';
+}
+
 sub parenthesizedYear {
     my $self = shift;
     my $year = $self->year;
-    return $year eq '?' ? '' : "($year)";
+    return $self->hasYear eq '?' ? '' : "($year)";
 }
 
 sub hasContent {

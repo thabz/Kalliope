@@ -75,7 +75,19 @@ if ($antal) {
 
 }
 
-my @events = Kalliope::Timeline::getHistoryInTimeSpan($poet->yearBorn,$poet->yearDead);
+#
+# Historiske begivenheder --------------------------------------------------
+#
+
+my @events;
+
+my @works = ($poet->poeticalWorks,$poet->proseWorks);
+foreach my $w (grep { $_->hasYear } @works) {
+    push @events, { year => $w->year,
+                    descr => $poet->efternavn.': <i>'.$w->clickableTitle.'</i>' };
+}
+
+push @events, Kalliope::Timeline::getHistoryInTimeSpan($poet->yearBorn,$poet->yearDead);
 
 if ($#events > 0) {
     my $antal = $#events + 1;
