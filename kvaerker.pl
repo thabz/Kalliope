@@ -32,16 +32,21 @@ my $LA = url_param('sprog') || 'dk';
 my $limit = url_param('limit') || '10';
 
 my %crumbTitle = ('aar'    => 'efter år',
-                  'titel'  => 'efter titler',
+                  'titel'  => 'efter titel',
 		  'digter' => 'efter figter',
 		  'pop'    => 'mest populære' );
+
+my %pageTitle =  ('aar'    => 'Værker efter år',
+                  'titel'  => 'Værker efter titel',
+		  'digter' => 'Værker efter digter',
+		  'pop'    => 'Mest populære værker' );
 
 my @crumbs;
 push @crumbs,['Værker',''];
 push @crumbs,[$crumbTitle{$mode},''];
 
 my $page = new Kalliope::Page (
-		title => 'Værker',
+		title => $pageTitle{$mode},
                 lang => $LA,
 		crumbs => \@crumbs,
                 thumb => 'gfx/icons/works-h70.gif',
