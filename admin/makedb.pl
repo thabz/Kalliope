@@ -3,6 +3,8 @@
 use lib '..';
 use Kalliope::Sort;
 use Kalliope::DB;
+use Kalliope::Strings;
+
 my $dbh = Kalliope::DB->connect;
 
 #
@@ -311,11 +313,14 @@ $rc = $dbh->do("CREATE TABLE digte (
               foerstelinie text,
               underoverskrift text,
               indhold mediumtext,
+	      haystack mediumtext,
               noter text,
               layouttype enum('prosa','digt') default 'digt',
               afsnit int,      /* 0 hvis ikke afsnitstitel, ellers H-level. */
               KEY longdid_indeks (longdid(10)),
-              UNIQUE (did,longdid))");
+              UNIQUE (did,longdid))
+	      TYPE = MYISAM
+	      ");
 #
 # vaerkpos er digtets position i samlingen.
 # afsnit i digtsamliner betegnes med afsnit=1. Afsnittets titel ligger i titel.
@@ -324,7 +329,7 @@ $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywor
 $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM digte");
 $sth = $dbh->prepare("SELECT * FROM vaerker WHERE findes=1");
 $sthafs = $dbh->prepare("INSERT INTO digte (fid,vid,titel,vaerkpos,afsnit) VALUES (?,?,?,?,?)");
-$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,foerstelinie,underoverskrift,indhold,noter,afsnit,layouttype) VALUES (?,?,?,?,?,?,?,?,?,0,?)");
+$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,foerstelinie,underoverskrift,indhold,noter,afsnit,layouttype,haystack) VALUES (?,?,?,?,?,?,?,?,?,0,?,?)");
 $sth->execute;
 print "  Ikke tomme: ".$sth->rows."\n";
 
@@ -409,6 +414,10 @@ $sth->execute;
 print "Antal digte: $count\n";
 $sth->finish;
 
+print "Creating FULLTEXT index...\n";
+$dbh->do('CREATE FULLTEXT INDEX haystackidx ON digte (titel,haystack)');
+print "Done.\n";
+
 #
 # Build forbogstaver
 #
@@ -462,7 +471,9 @@ sub insertdigt {
     $noter =~ s/[\n\s]+$//;
     $indhold =~ s/^\n+//m;
 # Insæt hvad vi har.
-    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$firstline,$under,$indhold,$noter,$layouttype || 'digt');
+    $haystack = Kalliope::Strings::stripHTML("$titel $under $indhold");
+
+    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$firstline,$under,$indhold,$noter,$layouttype || 'digt',$haystack);
     $i++;
     $layouttype = $noter = $under = $indhold = '';
     $firstline = '';

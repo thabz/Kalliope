@@ -174,6 +174,7 @@ EOF
         }
     }
     print '</TR></TABLE>';
+    print '<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle"><INPUT TYPE="hidden" NAME="lang" VALUE="'.$self->lang.'"></FORM>';
     print '</DIV></BODY></HTML>';
 }
 

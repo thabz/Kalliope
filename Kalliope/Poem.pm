@@ -27,6 +27,7 @@ use Kalliope::DB;
 use Kalliope::Keyword;
 use Kalliope::Person;
 use Kalliope::Work;
+use Kalliope::Strings;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -103,6 +104,15 @@ sub content {
     }
     $self->{'indhold'} =~ s/\n/<BR>\n/g;
     return $self->{'indhold'}; 
+}
+
+sub contentForSearch {
+    my $self = shift;
+    my $sth = $dbh->prepare("SELECT indhold FROM digte WHERE did = ?");
+    $sth->execute($self->did);
+    my $data = $self->subtitle."\n";
+    $data .= $sth->fetchrow_array;
+    return Kalliope::Strings::stripHTML($data);
 }
 
 sub _nbsp {

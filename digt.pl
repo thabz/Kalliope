@@ -34,6 +34,8 @@ my $MAILTAINER_EMAIL = 'jesper@kalliope.org';
 
 my $poem = new Kalliope::Poem ('longdid' => url_param('longdid'));
 
+my $needle = url_param('needle') || '';
+
 $poem->updateHitCounter;
 my $poet = $poem->author;
 my $work = $poem->work;
@@ -77,7 +79,7 @@ if (defined param('korrektur')) {
 $page->addBox( width => '100%',
 	       coloumn => 1,
                align => $poem->isProse ? 'justify' : 'left',
-	       content => &poem($poem) );
+	       content => &poem($poem,$needle) );
 
 my @keywords = $poem->keywords;
 
@@ -108,12 +110,29 @@ $page->print;
 #
 
 sub poem {
-    my $poem = shift;
+    my ($poem,$needle) = @_;
     my $HTML;
     $HTML .= '<SPAN CLASS="digtoverskrift"><I>'.$poem->title."</I></SPAN><BR>";
     $HTML .= '<SPAN CLASS="digtunderoverskrift">'.$poem->subtitle.'</SPAN><BR>' if $poem->subtitle;
     $HTML .= '<BR>';
     $HTML .= $poem->content;
+    if ($needle) {
+	$needle =~ s/^\s+//;
+	$needle =~ s/\s+$//;
+	$needle =~ s/[^a-zA-ZäëöáéíúæøåÆØÅ ]//g;
+	my @needle = split /\s+/,$needle;
+	my $split1 = time+10043;
+	my $split2 = time+10045;
+	my $block1 = '<SPAN STYLE="background-color: #f0f080">';
+	my $block2 = '</SPAN>';
+	my $anchor = '<A NAME="offset">';
+	foreach my $ne (@needle) {
+	    $HTML =~ s/($ne)/$split1$1$split2/gi
+        }
+	$HTML =~ s/$split1/$anchor$split1/;
+	$HTML =~ s/$split1/$block1/g;
+	$HTML =~ s/$split2/$block2/g;
+    }
     return $HTML;
 }
 
