@@ -237,6 +237,8 @@ $rc = $dbh->do("CREATE TABLE vaerker (
               findes char(1),
 	      quality set('korrektur1','korrektur2','korrektur3',
 	                  'kilde','side'),
+	      lang char(10),
+	      INDEX (lang),
 	      INDEX (vhandle),
 	      INDEX (fhandle),
 	      INDEX (type),
@@ -247,7 +249,7 @@ $sth = $dbh->prepare("SELECT * FROM fnavne");
 $sth->execute;
 $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM vaerker");
 $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywords.id = keywords_relation.keywordid AND keywords_relation.otherid = ? AND keywords_relation.othertype = 'biografi'");
-$sth2= $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle, titel,aar,type,findes,noter,pics,quality) VALUES (?,?,?,?,?,?,?,?,?,?)");
+$sth2= $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle, titel,aar,type,findes,noter,pics,quality,lang) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
 print "Antal forfattere: ".$sth->rows."\n";
 
 while ($fn = $sth->fetchrow_hashref) {
@@ -297,7 +299,7 @@ while ($fn = $sth->fetchrow_hashref) {
 	    $pics = join '$$$',@pics;
 	    my $quality = join ',',@qualities;
 	    $sth2->execute($fn->{'fhandle'},$fn->{'fid'},$vhandle,$titel,$aar,
-		    $type,$findes,$noter,$pics,$quality);
+		    $type,$findes,$noter,$pics,$quality,$fn->{'sprog'});
             $lastinsertsth->execute;
 	    ($lastid) = $lastinsertsth->fetchrow_array;
 	    foreach (@keys) {
@@ -399,8 +401,10 @@ $rc = $dbh->do("CREATE TABLE digte (
               layouttype enum('prosa','digt') default 'digt',
 	      createtime INT NOT NULL,
               afsnit int,      /* 0 hvis ikke afsnitstitel, ellers H-level. */
+	      lang char(10),
 	      INDEX (longdid),
 	      INDEX (did),
+	      INDEX (lang),
 	      INDEX (createtime),
 	      INDEX (fid),
 	      INDEX (vid),
@@ -415,7 +419,7 @@ $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywor
 $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM digte");
 $sth = $dbh->prepare("SELECT * FROM vaerker WHERE findes=1");
 $sthafs = $dbh->prepare("INSERT INTO digte (fid,vid,titel,toctitel,vaerkpos,afsnit) VALUES (?,?,?,?,?,?)");
-$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,foerstelinie,underoverskrift,indhold,noter,pics,afsnit,layouttype,haystack,createtime,quality) VALUES (?,?,?,?,?,?,?,?,?,?,?,0,?,?,?,?)");
+$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,foerstelinie,underoverskrift,indhold,noter,pics,afsnit,layouttype,haystack,createtime,quality,lang) VALUES (?,?,?,?,?,?,?,?,?,?,?,0,?,?,?,?,?)");
 $sth->execute;
 print "  Ikke tomme: ".$sth->rows."\n";
 
@@ -580,7 +584,7 @@ sub insertdigt {
     my $quality = join ',',Kalliope::Array::uniq(@qualities,@{$qualityCache{"$$v{fhandle}/$$v{vhandle}"}});
     
     # Insæt hvad vi har.
-    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$toctitel || $titel,$firstline,$under,$indhold,$noter,$pics,$layouttype || 'digt',$haystack,$time,$quality);
+    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$toctitel || $titel,$firstline,$under,$indhold,$noter,$pics,$layouttype || 'digt',$haystack,$time,$quality,$v->{'lang'});
     $i++;
     $layouttype = $noter = $under = $indhold = '';
     $firstline = '';
