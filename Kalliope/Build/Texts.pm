@@ -91,6 +91,15 @@ sub _insertGroup {
 	    $longdid = "dummy$longdid";
 	}
 	if ($type eq 'section' || $type eq 'group') {
+	    if (!$indextitle) {
+		$indextitle = $toptitle;
+	    }
+	    if (!$toctitle) {
+		$toctitle = $toptitle;
+	    }
+	    if (!$linktitle) {
+		$linktitle = $toptitle;
+	    }
 	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,'','',$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid),$quality);
 	    doDepends($head,$longdid);
 	    $sthseqval->execute();
