@@ -48,6 +48,19 @@ foreach my $filename (keys %filer) {
     }
 }
 
+# Korrektur -----------------------------------
+my %korrektur;
+my $sth = $dbh->prepare("SELECT filename, count(action) FROM edithistory WHERE dir = ? AND action = 'accept' GROUP BY filename");
+$sth->execute($dir);
+while (my ($filename,$count) = $sth->fetchrow_array) {
+    $count++;
+    $string = join ',', map { "korrektur$_" } (1..$count);
+    print STDERR "$string\n";
+    $korrektur{"$dir/$filename"} = $string;
+}
+
+# Saml hele lortet sammen ---------------------
+
 my @finalresult;
 foreach $line (@result) {
     push @finalresult,$line;
@@ -55,6 +68,7 @@ foreach $line (@result) {
 	my $did = $1;
 	my $files = join ",",uniq(@{$sider{$did}});
 	push @finalresult,"FILES:$files";
+	push @finalresult,"Q:".$korrektur{$sider{$did}[0]};
     }
 }
 
