@@ -389,6 +389,10 @@ td.toctitle1 {
     padding-top: 20px;
 }
 
+td.tocgroup1 {
+    padding-bottom: 10px;
+}
+
 td.toctitle2 {
     font-size: 13px;
     font-style: italic;
@@ -396,11 +400,19 @@ td.toctitle2 {
     padding-top: 10px;
 }
 
+td.tocgroup2 {
+    padding-bottom: 10px;
+}
+
 td.toctitle3 {
     font-size: 12px;
     font-style: italic;
     font-weight: bold;
     padding-top: 5px;
+}
+
+td.tocgroup2 {
+    padding-bottom: 10px;
 }
 
 td.tocnum {

@@ -193,7 +193,7 @@ sub _renderSection {
 	if ($d->{'type'} eq 'section') {
 	    $HTML .= qq|<td colspan="2" class="toctitle$depth">|;
 	    $HTML .= qq|$anchor$tit</td></tr>\n|;
-	    $HTML .= qq|<tr><td>$indentstr</td><td colspan="2">|;
+	    $HTML .= qq|<tr><td>$indentstr</td><td colspan="2" class="tocgroup$depth">|;
    	    $HTML .= _renderSection($vid,$d->{'did'},$depth+1);
 	    $HTML .= "</td></tr>\n";
 	} else {
