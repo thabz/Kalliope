@@ -336,7 +336,7 @@ $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywor
 $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM digte");
 $sth = $dbh->prepare("SELECT * FROM vaerker WHERE findes=1");
 $sthafs = $dbh->prepare("INSERT INTO digte (fid,vid,titel,toctitel,vaerkpos,afsnit) VALUES (?,?,?,?,?,?)");
-$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,foerstelinie,underoverskrift,indhold,noter,afsnit,layouttype,haystack) VALUES (?,?,?,?,?,?,?,?,?,0,?,?,?)");
+$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,foerstelinie,underoverskrift,indhold,noter,afsnit,layouttype,haystack) VALUES (?,?,?,?,?,?,?,?,?,?,0,?,?)");
 $sth->execute;
 print "  Ikke tomme: ".$sth->rows."\n";
 
