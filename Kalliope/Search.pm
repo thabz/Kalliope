@@ -97,7 +97,6 @@ sub getHTML {
     my $self = shift;
 
     my $hits = $self->count;
-    print STDERR "Hits: $hits\n";
     return 'Søgningen gav intet resultat.' unless $hits;
     my $firstNumShowing = $self->firstNumShowing;
     my $lastNumShowing = $self->lastNumShowing;
