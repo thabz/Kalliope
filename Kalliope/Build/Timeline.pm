@@ -84,7 +84,6 @@ sub build {
     foreach my $k (keys %persons) {
 	my $file = "../fdirs/$k/events.txt";
 	next unless -e $file;
-	print "$file\n";
 	open (FILE,$file);
 	my $line = 1;
 	while (<FILE>) {
