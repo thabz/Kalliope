@@ -51,7 +51,7 @@ my $page = new Kalliope::Page (
 
 if ($search->hasSearchBox) {
     $page->addBox( width => '80%',
-	           content => $search->getSearchBoxHTML);
+	           content => $search->searchBoxHTML);
 }
 
 
