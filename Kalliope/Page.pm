@@ -268,11 +268,15 @@ EOF
     # Foot
     print '<TR><TD COLSPAN=3 HEIGHT="40" BGCOLOR="black" ALIGN="right" VALIGN="middle">';
 
-    print '<TABLE><TR><TD VALIGN="middle" ALIGN="right">';
-    print '<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT STYLE="width: 80px" NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free"></FORM>';
-    print '</TD><TD VALIGN="middle" ALIGN="right">';
+    print '<FORM METHOD="get" ACTION="ksearch.cgi">';
+    print '<TABLE WIDTH="100%"><TR>';
+    print '<TD WIDTH="100%" STYLE="color: #806060; font-size: 10px; font-family: Helvetica, Arial"><!-- Copyright &copy; 1999-2001 Jesper Christensen --></TD>';
+    print '<TD VALIGN="middle" ALIGN="right" NOWRAP>';
+    print '<INPUT STYLE="width: 200px" NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free">';
+    print '</TD><TD VALIGN="middle" ALIGN="right" NOWRAP>';
     print $self->langSelector;
     print '</TD></TR></TABLE>';
+    print '</FORM>';
 
     print '</TD></TR>';
     
