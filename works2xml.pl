@@ -34,6 +34,8 @@ $sth->execute;
 while (my $h = $sth->fetchrow_hashref) {
 #    convert($h->{'fhandle'},$h->{'vhandle'});
     convert('oehlenschlaeger','1803');
+    convert('aarestrup','1838');
+
     last;
 }
 
@@ -51,6 +53,10 @@ sub convert {
     print FILE <<'EOS';
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <?xml-stylesheet type="text/xsl" href="../../xslt/work.xsl"?>
+<!DOCTYPE book [
+  <!ENTITY bdquo "&#8222;">
+  <!ENTITY ldquo "&#8220;">
+]>
 EOS
     print FILE "<book>\n";
     print FILE "<head>\n";
@@ -65,6 +71,7 @@ EOS
 	if ($d->{afsnit}) {
 	    print FILE "<section><title>".$d->{titel}."</title></section>\n";
 	} else {
+	    fixLinks(\$d->{indhold});
 	    $d->{indhold} =~ s/\n+$/\n/;
 	    print FILE '<poem id="'.$d->{longdid}."\">\n";
 	    print FILE "   <title>".$d->{titel}."</title>\n";
@@ -73,8 +80,10 @@ EOS
 		print FILE "   <subtitle>$sub</subtitle>\n";
 	    }
 	    print FILE "   <firstline>".$d->{foerstelinie}."</firstline>\n" if $d->{foerstelinie};
+	    fixLinks(\$d->{noter});
 	    $d->{noter} =~ s/<BR>/\n/gi;
-	    $d->{noter} = join "\n", map {"<p>$_</p>"} split /\n/,$d->{noter};
+	    $d->{noter} = join "\n", map {"<note><p>$_</p></note>"} split /\n/,$d->{noter};
+	    print FILE $d->{'noter'};
             print FILE "<content>\n";
             print FILE $d->{indhold};    
 	    print FILE "\n</content>\n</poem>\n\n";
@@ -84,3 +93,11 @@ EOS
     close (FILE);
 }
 
+
+sub fixLinks {
+   my $txt = shift;
+   $$txt =~ s/<A D=([^>]*)>/<A D="\1">/g;
+   $$txt =~ s/<A F=([^>]*)>/<A F="\1">/g;
+   $$txt =~ s/<A V=([^>]*)>/<A V="\1">/g;
+   $$txt =~ s/<A K=([^>]*)>/<A K="\1">/g;
+}

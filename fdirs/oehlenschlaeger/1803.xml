@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <?xml-stylesheet type="text/xsl" href="../../xslt/work.xsl"?>
+<!DOCTYPE book [
+  <!ENTITY bdquo "&#8222;">
+  <!ENTITY ldquo "&#8220;">
+]>
 <book>
 <head>
 <title>Digte</title>
@@ -326,7 +330,7 @@ Hytte ile.
    <title>Hakon Jarls Död</title>
    <subtitle>Eller Christendommens Indförsel i Norge</subtitle>
    <firstline>De Nætter ruge saa lange og sorte</firstline>
-<content>
+<note><p>Korrektur af Rune Engelbreth Larsen 4-3-2001.</p></note><content>
 De Nætter ruge saa lange og sorte.
 Syvstiernen skimter saa mat.
 Ud stormer Vinden fra Himmelens Porte,
@@ -695,7 +699,7 @@ han smilte og var död!
 <poem id="oehlenschlaeger1999062804">
    <title>Löveridderen</title>
    <firstline>Mildt boltre sig de lune Sommervinde</firstline>
-<content>
+<note><p>Bygger på folkevisen »Løwen og Kong Tiderichs Kamp imod Lind-Ormen«.</p></note><content>
 Mildt boltre sig de lune Sommervinde,
 fra klare Safirhvælving Maanen straaler
 igiennem duftopfyldte svale Linde
@@ -1195,7 +1199,8 @@ Harald gyser ved sin Dröm -
 <poem id="oehlenschlaeger1999062805">
    <title>Ellehöien</title>
    <firstline>Paa hede Dag den svale Aften fulgte</firstline>
-<content>
+<note><p>Korrektur af Rune Engelbreth Larsen 4-3-2001.</p></note>
+<note><p>Bygger på folkevisen <XREF DIGT="folke2000012901">. Skrevet på terziner.</p></note><content>
 Paa hede Dag den svale Aften fulgte,
 der glimted Purpur bag de sorte Grene,
 den dunkle Landevei var heel beskygget.
@@ -1610,7 +1615,7 @@ Herr Erik faldt ned i en Askehob.
 <poem id="oehlenschlaeger1803a0">
    <title>Guldhornene</title>
    <firstline>De higer og söger</firstline>
-<content>
+<note><p>Rettelser af <A HREF="mailto:soeren@mogensen.as">Sören Mogensen</A>, 15-8-2000, Sven Sörensen, 10-4-2001 og Brian Bentzen, 26-5-2001.</p></note><content>
 De higer og söger
 i gamle Böger,
 i oplukte Höie
@@ -1908,7 +1913,7 @@ vinke mig til evig Glæde.
 <poem id="oehlenschlaeger1999062806">
    <title>Valravnen</title>
    <firstline>De gule Silkeseil, som Vinden fylder</firstline>
-<content>
+<note><p>Bygger frit på <A D="folke2000012904">folkevisen om Germand Gladensvend</A></p></note><content>
 De gule Silkeseil, som Vinden fylder,
 hiemlede bugnende den lette Snekke.
 Mens Aftensolen ranke Mast forgylder
@@ -2909,7 +2914,7 @@ hyllende Naturens Liv.
    <title>Sangvinitet</title>
    <subtitle>Natur-Temperamenter</subtitle>
    <firstline>Milde Saphirer paa Himmelens Bue</firstline>
-<content>
+<note><p>Korrektur af Rune Engelbreth Larsen 4-3-2001.</p></note><content>
 Milde Saphirer paa Himmelens Bue
 hæve den prægtige Hvælving med Ynde.
 Östkanten brænder med Rosernes Lue.
@@ -3056,7 +3061,7 @@ blidelig os samle!
 <poem id="oehlenschlaeger1999062808">
    <title>Den frembrydende Vaar</title>
    <firstline>Engene grönnes og Skovenes Kroner</firstline>
-<content>
+<note><p>Digteren som nævnes i de sidste to strofer er <A F="ewald">Johannes Ewald</A>.</p></note><content>
 Engene grönnes og Skovenes Kroner
 nylig fremsprungne Smaragder bedække,
 Ætheren lunes og Sangeren toner
@@ -3537,7 +3542,7 @@ fordi jeg eengang har drömt om Dagen!
 <poem id="oehlenschlaeger2001052917">
    <title>Til Rimer</title>
    <firstline>Rimer! du maa takke mig</firstline>
-<content>
+<note><p>En <A D="oehlen2000010509">senere udgave</A> af dette digt findes under andre digte.</p></note><content>
 Rimer! du maa takke mig,
 hvad de Vise nægte dig
 jeg beviser at du har.
@@ -3573,7 +3578,7 @@ Du fikst <I>Genialitet!</I>
 <poem id="oehlenschlaeger1999062809">
    <title>Oldingen ved Werthers Grav</title>
    <firstline>Aftenröden farver din Grav!</firstline>
-<content>
+<note><p>Henviser til <A  F=goethe>Goethes</A> roman <I>Die Leiden des jungen Werthers</I> (1775, da.: <I>Den unge Werthers lidelser</I>)</p></note><content>
 Aftenröden
 farver din Grav!
 De gamle Linde
@@ -3705,7 +3710,7 @@ som her mig holde.
    <title>Til Apol</title>
    <toc-title>Til Apol*</toc-title>
    <firstline>Du lange, laurbærkrandste Dreng!</firstline>
-<content>
+<note><p>En <A D="oehlen2000010508">senere udgave</A> af dette digt findes under andre digte.</p></note><content>
 Du lange, laurbærkrandste Dreng!
 som altid Lyren har i Hænde,
 og klimprer paa den gyldne Streng,
@@ -4135,7 +4140,7 @@ vil jeg synge og blusse og blegne og döe!
 <poem id="oehlenschlaeger2001053001">
    <title>Cantate</title>
    <firstline>Det er Danmarks Höitidsdag!</firstline>
-<content>
+<note><p>Den simple, dierve Sang som Almindeligt Chor giver sig til at synge er af <A F="abrahamson">W.H.F. Abrahamson</A>.</p></note><content>
 CHOR
 
 Det er Danmarks Höitidsdag!
@@ -4571,7 +4576,7 @@ den glade Jordens Drot!
    <toc-title>Hædersqvad*</toc-title>
    <subtitle>Til en gammel Skiald</subtitle>
    <firstline>Vildt skingre vor Röst over breden Bord</firstline>
-<content>
+<note><p> Hyldesten gælder <A F="tode">Johan Clemens Tode (1736-1806)</A>, læge og forfatter.</p></note><content>
 Vildt skingre vor Röst over breden Bord.
 Raaber höit I Frender tilsammen!
 Hele det gamle og trofaste Nord
