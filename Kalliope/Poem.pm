@@ -208,7 +208,7 @@ sub _contentAsProseHTML {
 
 sub _contentAsPoemHTML {
     my $self = shift;
-    my $result = '<table cellpadding=0 cellspacing=0>';
+    my $result = '<table cellpadding=0 cellspacing=0 width="10">';
     $result .= '<tr><td><img src="gfx/trans1x1.gif" width="50" height="1"></td><td></td></tr>';
     my $num = 0;
     my $dispNum = 0;
