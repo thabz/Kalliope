@@ -27,7 +27,7 @@ use Kalliope::Forum::Post();
 
 my $dbh = Kalliope::DB->connect;
 
-my @foraInfo = ( {title => 'Løs og fast',
+my @foraInfo = ( {title => 'Løst og fast',
                desc  => 'Her kan du diskutere alt muligt',
 	       smallicon  => 'gfx/evolution-48.png',
 	       bigicon  => 'gfx/evolution-192.png'},
