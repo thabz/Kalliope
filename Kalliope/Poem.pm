@@ -199,9 +199,14 @@ sub _contentAsPoemHTML {
 	} else {
 	    $line .= '&nbsp;';
 	}
+	my $align = 'left';
+	if ($line =~ /<center>/) {
+	    $align = 'center';
+	    $line =~ s/<\/?center>//g;
+	}
+		
 	if ($line =~ /nonum/) {
-	    $line =~ s/<nonum>//gi;
-	    $line =~ s/<\/nonum>//gi;
+	    $line =~ s/<\/?nonum>//gi;
 	}
 	if (($num % 5 == 0) && $lastNum ne $num) {
 	    $dispNum = $num;
@@ -210,13 +215,14 @@ sub _contentAsPoemHTML {
 	    $dispNum = '';
 	};
 	$line =~ s/^(\s+)/_nbsp($1)/e;
-	$result .= '<tr><td style="font-size: 9pt; color: #808080; text-align: left">'.$dispNum.'</td>';
+	
+	$result .= qq|<tr><td style="font-size: 9pt; color: #808080; text-align: left">|.$dispNum.'</td>';
 	if ($line =~ /<wrap>/i) {
 	    $line =~ s/<wrap>//g;
 	    $line =~ s/<\/wrap>//g;
-	    $result .= qq|<td>$line </td>\n|;
+	    $result .= qq|<td style="text-align: $align">$line </td>\n|;
 	} else {
-	    $result .= qq|<td style="white-space: nowrap" nowrap>$line </td>\n|;
+	    $result .= qq|<td style="white-space: nowrap; text-align: $align" nowrap>$line </td>\n|;
 	}
 	$result .= '</tr>';
     }
