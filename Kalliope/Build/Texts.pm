@@ -150,6 +150,7 @@ sub create {
 	      lang char(2))
 	      ));
  $dbh->do(q/CREATE INDEX digte_longdid ON digte(longdid)/);
+ $dbh->do(q/CREATE INDEX digte_fhandle ON digte(fhandle)/);
  $dbh->do(q/CREATE INDEX digte_lang ON digte(lang)/);
  $dbh->do(q/CREATE INDEX digte_type ON digte(type)/);
  $dbh->do(q/CREATE INDEX digte_createtime ON digte(createtime)/);
