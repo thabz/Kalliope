@@ -193,8 +193,7 @@ if ($mode eq 'titel') {
 
 } elsif ($mode eq 'pop') {
     my $HTML;
-    print STDERR "\nLimit = $limit\n";
-    my $sth = $dbh->prepare("SELECT fornavn, efternavn, v.titel as vtitel, vhandle, aar, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f, vaerker as v WHERE dh.longdid = d.longdid AND d.fhandle = f.fhandle AND d.vid = v.vid AND f.sprog=? GROUP BY v.vid ORDER BY hits DESC ".($limit == 0 ? '' : 'LIMIT 10' ));
+    my $sth = $dbh->prepare("SELECT fornavn, efternavn, v.titel as vtitel, v.vid, aar, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f, vaerker as v WHERE dh.longdid = d.longdid AND d.fhandle = f.fhandle AND d.vid = v.vid AND f.sprog=? GROUP BY v.vid,fornavn,efternavn,vtitel,aar,f.fhandle ORDER BY hits DESC ".($limit == 0 ? '' : 'LIMIT 10' ));
     $sth->execute($LA);
     my $i = 1;
     my $total;
@@ -205,7 +204,7 @@ if ($mode eq 'titel') {
 	$aar = $h->{'aar'} ne '?' ? ' ('.$h->{'aar'}.')' : '';
         my $class = $i % 2 ? '' : ' CLASS="darker" ';
 	$HTML .= qq|<TR $class><TD>|.$i++.'.</TD>';
-	$HTML .= '<TD>'.$h->{fornavn}.' '.$h->{efternavn}.': <A CLASS=green HREF="vaerktoc.pl?fhandle='.$h->{fhandle}.'&vhandle='.$h->{vhandle}.'"><I>'.$h->{vtitel}.'</I>'.$aar.'</A></TD>';
+	$HTML .= '<TD>'.$h->{fornavn}.' '.($h->{efternavn}||'').': <A CLASS=green HREF="vaerktoc.pl?vid='.$h->{vid}.'"><I>'.$h->{vtitel}.'</I>'.$aar.'</A></TD>';
 	$HTML .= '<TD ALIGN=right>'.$h->{'hits'}.'</TD>';
 	$HTML .= '<TD ALIGN=right>'.Kalliope::Date::shortDate($h->{'lasttime'}).'</TD>';
 	$total += $h->{'hits'};
