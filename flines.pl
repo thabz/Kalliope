@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 
 #  Udskriver alle titel-linier for en forfatter.
 #
@@ -24,28 +24,45 @@
 
 use Kalliope;
 
-do 'fstdhead.pl';
-do 'dk_sort.pl';
+use Kalliope;
+use CGI (':standard');
+use Kalliope::Person ();
+use Kalliope::Page ();
+use Kalliope::Sort ();
+use strict;
 
-@ARGV = split(/\?/,$ARGV[0]);
+my $dbh = Kalliope::DB->connect;
+my $fhandle = url_param('fhandle');
+my $poet = new Kalliope::Person(fhandle => $fhandle);
+my $mode = url_param('mode');
 
-$fhandle = $ARGV[0];
-$mode = $ARGV[1];
-$LA = $ARGV[2];
+#
+# Breadcrumbs -------------------------------------------------------------
+#
 
-chop($fhandle);
-chop($mode);
-chomp($LA);
-fheaderHTML($fhandle);
+my @crumbs;
+push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
+push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
+push @crumbs,[$mode ? 'Digttitler' : 'Førstelinier',''];
 
-do 'fstdhead.ovs';
-
-print "<BR>\n";
+my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
 
 
-$sth = $dbh->prepare("SELECT longdid, digte.titel, digte.foerstelinie FROM digte, vaerker WHERE digte.fid=? AND digte.vid = vaerker.vid AND digte.layouttype = 'digt' AND afsnit=0");
-$sth->execute($fid);
-$i=0;
+#
+# Prepare hash of poetical works ------------------------------------------
+#
+
+my %works;
+map {$works{$_->vid} = $_} $poet->poeticalWorks;
+
+#
+# Make blocks -------------------------------------------------------------
+#
+
+my @f;
+my $sth = $dbh->prepare("SELECT longdid, digte.titel, digte.foerstelinie, digte.vid FROM digte, vaerker WHERE digte.fid=? AND digte.vid = vaerker.vid AND digte.layouttype = 'digt' AND afsnit=0");
+$sth->execute($poet->fid);
+my $i=0;
 while ($f[$i] = $sth->fetchrow_hashref) { 
     if ($mode == 1) {
 	$f[$i]->{'sort'} = $f[$i]->{'titel'};
@@ -55,30 +72,28 @@ while ($f[$i] = $sth->fetchrow_hashref) {
     $i++; 
 }
 
-my $last="";
-my $body;
-my $antal = 0;
 my @blocks = ();
-foreach $f (sort dk_sort2 @f) {
+foreach my $f (sort Kalliope::Sort::sort @f) {
     next unless $f->{'sort'};
-    $line =  $mode == 1 ? $f->{'titel'} : $f->{'foerstelinie'};
-    $linefix = $line;
+    my $line =  $mode == 1 ? $f->{'titel'} : $f->{'foerstelinie'};
+    my $linefix = $line;
     $linefix =~ s/^Aa/Å/ig;
-    $idx = (ord lc substr($linefix,0,1)) - ord('a');
+    my $idx = (ord lc substr($linefix,0,1)) - ord('a');
     $blocks[$idx]->{'head'} = '<DIV CLASS=listeoverskrifter>'.uc (chr $idx + ord('a')).'</DIV><BR>';
     $blocks[$idx]->{'count'}++;
-    $blocks[$idx]->{'body'} .= '<A HREF="digt.pl?longdid='.$f->{'longdid'}.'">'.$line.'</A><BR>';
+    my $w = $works{$f->{'vid'}};
+    $blocks[$idx]->{'body'} .= '<SPAN CLASS="listeblue">&#149;</SPAN> <A TITLE="Fra '.$w->title.' '.$w->parenthesizedYear.'" HREF="digt.pl?longdid='.$f->{'longdid'}.'">'.$line.'</A><BR>';
 }
 #
 # Udskriv boks
 #
 
-if ($mode == 1) {
-    beginwhitebox("Digttitler","","left");
-} else {
-    beginwhitebox("Førstelinier","","left");
-}
-Kalliope::doublecolumn(\@blocks);
-endbox();
+my $HTML = Kalliope::doublecolumnHTML(\@blocks);
+my $title = $mode ? "Digttitler" : "Førstelinier";
 
-ffooterHTML();
+$page->addBox( title => $title,
+               coloumn => 1,
+               width => '90%',
+	       content => $HTML );
+$page->print;
+

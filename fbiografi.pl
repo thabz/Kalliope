@@ -20,7 +20,6 @@
 #
 #  $Id$
 
-do 'fstdhead.pl';
 use Kalliope;
 use CGI (':standard');
 use Kalliope::Person;

@@ -61,18 +61,29 @@ sub buildhrefs {
    if ($$txt =~ /<XREF BIBEL="(.+)">/) {
       my $did = $1;
       my $poem = new Kalliope::Poem(longdid => $did);
-      my $link = $poem->clickableTitleSimple;
+      my $link;
+      if ($poem) {
+	  $link = $poem->clickableTitleSimple;
+      } else {
+          $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
+      }
       $$txt =~ s/<XREF BIBEL="$did">/$link/;
    }
    if ($$txt =~ /<XREF DIGT="(.+)">/) {
       my $did = $1;
       my $poem = new Kalliope::Poem(longdid => $did);
-      my $link = $poem->clickableTitleSimple;
-      $$txt =~ s/<XREF DIGT="$did">/$link/;
+      my $link;
+      if ($poem) {
+	  $link = $poem->clickableTitleSimple;
+      } else {
+          $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
+      }
+      $$txt =~ s/<XREF DIGT="$did">/»$link«/;
    }
-   $$txt =~ s/<A\s+F=([^\s>]+)\s*>/<A HREF="biografi.cgi?fhandle=$1">/g;
+   $$txt =~ s/<A\s+F=([^\s>]+)\s*>/<A HREF="ffront.cgi?fhandle=$1">/g;
    $$txt =~ s/<A\s+D=([^\s>]+)\s*>/<A HREF="digt.pl?longdid=$1">/g;
    $$txt =~ s/<A\s+K=([^\s>]+)\s*>/<A HREF="keyword.cgi?keyword=$1">/g;
+   $$txt =~ s/<A\s+V=([^\s>\/]+)\/([^\s>\/]+)\s*>/<A HREF="vaerktoc.pl?fhandle=$1&vhandle=$2">/g;
    $$txt =~ s/<A\s+/<A CLASS=green /g;
    return $$txt;
 }
@@ -147,11 +158,5 @@ sub doublecolumnHTML {
     }
     $HTML .= '</TD></TR></TABLE>';
     return $HTML;
-}
-
-sub sortObject {
-    if ($a && $b) {
-    return lc($a->sortString) cmp lc($b->sortString);
-    } else { return 0 };
 }
 

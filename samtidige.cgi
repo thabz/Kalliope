@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 
 #  Copyright (C) 1999-2001 Jesper Christensen 
 #
@@ -22,8 +22,6 @@
 
 use Kalliope;
 use CGI (':standard');
-use Kalliope::DB;
-use Kalliope::Date;
 use Kalliope::Person;
 use Kalliope::Page;
 use strict;
@@ -40,28 +38,39 @@ my $poet = new Kalliope::Person(fhandle => $fhandle);
 my @crumbs;
 push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
-push @crumbs,['Mest populære digte',''];
+push @crumbs,['Samtidige',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
 
-my $sth =  $dbh->prepare("SELECT d.longdid,d.titel as titel,lasttime,hits,v.titel as vtitel,v.aar FROM fnavne as f, digte as d, digthits as dh, vaerker as v WHERE f.fhandle = ? AND f.fid = d.fid AND d.afsnit = 0 AND d.longdid = dh.longdid AND v.vid = d.vid ORDER BY dh.hits DESC LIMIT 10");
-$sth->execute($fhandle);
+#
+# Samtidige digtere -------------------------------------
+#
 
-my $i = 1;
-my $HTML .= '<TABLE>';
-$HTML .= '<TR><TH></TH><TH>Titel</TH><TH>Hits</TH><TH>Senest</TH></TR>';
-while (my $h = $sth->fetchrow_hashref) {
-    my $aar = $h->{aar} ne '?' ? ' ('.$h->{aar}.')' : '';
-    $HTML .= '<TR><TD>'.$i++.'.</TD>';
-    $HTML .= '<TD><A HREF="digt.pl?longdid='.$h->{longdid}.'">'.$h->{titel}.'</A><FONT COLOR=#808080> - <I>'.$h->{vtitel}.'</I>'.$aar.'</FONT></TD>';
-    $HTML .= '<TD ALIGN=right>'.$h->{'hits'}.'</TD>';
-    $HTML .= '<TD ALIGN=right>'.Kalliope::Date::shortDate($h->{'lasttime'}).'</TD>';
+my $sth = $dbh->prepare("SELECT DISTINCT f.* FROM fnavne as f,vaerker as v WHERE v.fid = f.fid AND v.aar > ? AND v.aar < ? AND f.fid != ? ORDER BY f.foedt");
+$sth->execute($poet->yearBorn,$poet->yearDead,$poet->fid);
+my $antal = $sth->rows;
+if ($antal) {
+    my $HTML;
+    my $i = 0;
+    $HTML .= '<TABLE WIDTH="100%"><TR><TD VALIGN=top>';
+    $HTML .= '<TABLE BORDER=0 CELLPADDING=0 CELLSPADING=0>';
+    while (my $h = $sth->fetchrow_hashref) {
+	$HTML .= '<TR><TD><IMG SRC="gfx/flags/'.$h->{'sprog'}.'_light.gif"></TD><TD><A HREF="ffront.cgi?fhandle='.$h->{'fhandle'}.'">'.$h->{'fornavn'}.' '.$h->{'efternavn'}.' <FONT COLOR="#808080">('.$h->{'foedt'}.'-'.$h->{'doed'}.')</FONT></A></TD></TR>';
+	if ($i == int($antal/2)) {
+	    $HTML .= '</TABLE></TD><TD VALIGN=top>';
+	    $HTML .= '<TABLE BORDER=0 CELLPADDING=0 CELLSPADING=0>';
+	}
+        $i++;
+    }
+    $HTML .= '</TABLE>';
+    $HTML .= '</TD></TR></TABLE>';
+    $HTML .= '<BR><SMALL><I>Oversigt over digtere som udgav værker i '.$poet->name.'s levetid.</I></SMALL>';
+    $page->addBox( title => 'Samtidige',
+	    width => '80%',
+            coloumn => 1,
+	    content => $HTML );
+
 }
-$HTML .= '</TABLE>';
-
-$page->addBox( title => 'Mest populære digte',
-    width => '80%',
-    coloumn => 1,
-    content => $HTML );
 
 $page->print;
+

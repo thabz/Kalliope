@@ -22,93 +22,128 @@
 #
 #  $Id$
 
+use CGI qw(:standard);
+use Kalliope::Person ();
+use Kalliope::DB ();
+use Kalliope::Work ();
+use Kalliope::Page ();
 
-use CGI qw(:standard :html);
-do 'fstdhead.pl';
+my $dbh = Kalliope::DB->connect;
 
-my @ARGV = split(/\?/,$ARGV[0]);
-chop($ARGV[0]);
-chop($ARGV[1]);
-chomp($ARGV[2]);
-my $vhandle=$ARGV[1];
-my $LA=$ARGV[2];
+my $fhandle = url_param('fhandle');
+my $vhandle = url_param('vhandle');
 
-fheaderHTML($ARGV[0]);
+my $poet = new Kalliope::Person ( fhandle => $fhandle);
+my $work = new Kalliope::Work ( longvid => $vhandle, fhandle => $fhandle );
+
+my @crumbs;
+push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
+push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
+push @crumbs,['Værker','fvaerker.pl?fhandle='.$poet->fhandle];
+push @crumbs,[$work->titleWithYear,'vaerktoc.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->vhandle];
+
+my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
 
 my ($vtitel,$vaar,$vid,$noter) = $dbh->selectrow_array("SELECT titel, aar, vid,noter FROM vaerker WHERE vhandle = '$vhandle' AND fhandle = '$fhandle'");
 
-print "<BR>\n";
-print '<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH="100%"><TR><TD WIDTH="100%" VALIGN=top>';
+$page->addBox( width => '100%',
+               coloumn => 0,
+               title => 'Værker',
+               content => &completeWorks($poet,$work)
+              );
 
-beginwhitebox("","","center");
-print '<SPAN CLASS=digtoverskrift><I>'.$vtitel."</I> ".(($vaar ne '?')?"($vaar)":'').'</SPAN>';
-endbox();
+$page->addBox( width => '80%',
+               coloumn => 1,
+               content => '<SPAN CLASS=digtoverskrift><I>'.$vtitel."</I> ".(($vaar ne '?')?"($vaar)":'').'</SPAN>'
+              );
 
+$page->addBox( width => '80%',
+               coloumn => 1,
+               title => 'Indhold',
+               content => &tableOfContent($work),
+               end => qq|<A TITLE="Tilbage til oversigten over værker" HREF="fvaerker.pl?fhandle=$fhandle"><IMG VALIGN=center ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 ALT="Tilbage til oversigten over værker"></A>|
+              );
 
-beginwhitebox('&nbsp;&nbsp;Indhold&nbsp;&nbsp;',"","left");
-my $sth = $dbh->prepare("SELECT longdid,titel,afsnit,did FROM digte WHERE vid=? ORDER BY vaerkpos");
-$sth->execute($vid);
-while(my $d = $sth->fetchrow_hashref) {
-    if ($d->{'afsnit'} && !($d->{'titel'} =~ /^\s*$/)) {
-	print "<BR><FONT SIZE=+1><I>".$d->{'titel'}."</I></FONT><BR>\n";
-    } else {
-	print "&nbsp;" x 4;
-	print "<A HREF=\"digt.pl?longdid=".$d->{'longdid'}.'">';
-	print $d->{'titel'}."</A><BR>\n";
-    }
+if ($work->notes) {
+    $page->addBox( width => '100%',
+	           coloumn => 2,
+                   title => 'Noter',
+                   content => &notes($work) );
 }
-$sth->finish;
 
-#Afslut kassen
-endbox('<A HREF="fvaerker.pl?'.$fhandle.'?'.$LA.'"><IMG VALIGN=center ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 ALT="Tilbage til oversigten over værker"></A>');
+$page->addBox( width => '100%',
+	       coloumn => 2,
+               align => 'center',
+       	       title => 'Formater',
+	       content => &otherFormats($poet,$work) );
+$page->setColoumnWidths(0,'100%',0);
+$page->print;
 
-print "</TD><TD ALIGN=right VALIGN=top>";
-#Udskriv noter...
+#
+# Generate boxes
+#
 
-begindarkbluebox();
+sub completeWorks {
+    my ($poet,$work) = @_;
+    $sth = $dbh->prepare("SELECT vhandle,titel,aar,findes FROM vaerker WHERE fhandle=? AND type='v' ORDER BY aar");
+    $sth->execute($fhandle);
+    while(my $d = $sth->fetchrow_hashref) {
+	$HTML .= '<P STYLE="font-size: 12px">';
+	if ($d->{'findes'}) {
+	    $HTML .= '<A HREF="vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$d->{'vhandle'}.'">';
+	} else {
+	    $HTML .= '<FONT COLOR="#808080">';
+	}
+	$aar = ($d->{'aar'} eq "\?") ? '' : '('.$d->{'aar'}.')';
+	$myTitel = '<I>'.$d->{'titel'}.'</I> '.$aar;
+	$myTitel = b($myTitel) if $d->{'vhandle'} eq $vhandle;
+	$HTML .= $myTitel;
 
-if ($noter) {
-    beginnotebox("Noter","100%","left");
+	if ($d->{'findes'}) {
+	    $HTML .= '</A>';
+	} else {
+	    $HTML .= '</FONT>';
+	}
+    }
+    return $HTML;
+}
+
+sub notes {
+    my $work = shift;
+    my $HTML;
+    my $noter = $work->notes;
     $noter =~ s/<A /<A CLASS=green /g;
-    @noter = split /\n/,$noter;
+    my @noter = split /\n/,$noter;
     foreach (@noter) {
-        next unless $_;
-	print '<IMG WIDTH=48 HEIGHT=48 SRC="gfx/clip.gif" BORDER=0 ALT="Note til »'.$vtitel.'«">';
-	print $_."<BR><BR>";
+	next unless $_;
+	$HTML .= '<IMG WIDTH=48 HEIGHT=48 SRC="gfx/clip.gif" BORDER=0 ALT="Note til »'.$work->title.'«">';
+	$HTML .= $_."<BR><BR>";
     }
-    endbox();
+    return $HTML;
 }
 
-beginwhitebox("Værker",'100%','left');
-$sth = $dbh->prepare("SELECT vhandle,titel,aar,findes FROM vaerker WHERE fhandle=? AND type='v' ORDER BY aar");
-$sth->execute($fhandle);
-while(my $d = $sth->fetchrow_hashref) {
-    print '<P STYLE="font-size: 12px">';
-    if ($d->{'findes'}) {
-	print '<A HREF="vaerktoc.pl?'.$fhandle."?".$d->{'vhandle'}."?$LA\">";
-    } else {
-        print '<FONT COLOR="#808080">';
+sub tableOfContent {
+    my $work = shift;
+    my $HTML;
+    my $sth = $dbh->prepare("SELECT longdid,titel,afsnit,did FROM digte WHERE vid=? ORDER BY vaerkpos");
+    $sth->execute($work->vid);
+    while(my $d = $sth->fetchrow_hashref) {
+	if ($d->{'afsnit'} && !($d->{'titel'} =~ /^\s*$/)) {
+	    $HTML .= "<BR><FONT SIZE=+1><I>".$d->{'titel'}."</I></FONT><BR>\n";
+	} else {
+	    $HTML .= "&nbsp;" x 4;
+	    $HTML .= "<A HREF=\"digt.pl?longdid=".$d->{'longdid'}.'">';
+	    $HTML .= $d->{'titel'}."</A><BR>\n";
+	}
     }
-    $aar = ($d->{'aar'} eq "\?") ? '' : '('.$d->{'aar'}.')';
-    $myTitel = '<I>'.$d->{'titel'}.'</I> '.$aar;
-    $myTitel = b($myTitel) if $d->{'vhandle'} eq $vhandle;
-    print $myTitel;
-
-    if ($d->{'findes'}) {
-         print '</A>';
-    } else {
-         print '</FONT>';
-    }
+    $sth->finish;
+    return $HTML;
 }
-endbox();
 
-beginwhitebox("Formater","100%",'center');
-print '<A TARGET="_top" HREF="downloadvaerk.pl?'.$fhandle.'?'.$vhandle.'?XML?'.$LA.'"><IMG HEIGHT=48 WIDTH=48 SRC="gfx/floppy.gif" BORDER=0 ALT="»'.$vtitel.'« i XML format"></A><BR>XML<BR>';
-print '<A TARGET="_top" HREF="downloadvaerk.pl?'.$fhandle.'?'.$vhandle.'?Printer?'.$LA.'"><IMG HEIGHT=48 WIDTH=48 SRC="gfx/floppy.gif" BORDER=0 ALT="»'.$vtitel.'« i printervenligt format"></A><BR>Printer venligt<BR>';
-endbox();
-
-enddarkbluebox();
-
-
-print "</TD></TR></TABLE>";
-ffooterHTML($ARGV[0]);
+sub otherFormats {
+    my ($poet,$work) = @_;
+    my $HTML;
+    $HTML .=  '<A TARGET="_top" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=XML"><IMG HEIGHT=48 WIDTH=48 SRC="gfx/floppy.gif" BORDER=0 ALT="»'.$work->title.'« i XML format"></A><BR>XML<BR>';
+    $HTML .= '<A TARGET="_top" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=Printer"><IMG HEIGHT=48 WIDTH=48 SRC="gfx/floppy.gif" BORDER=0 ALT="»'.$work->title.'« i printervenligt format"></A><BR>Printer venligt<BR>';
+    return $HTML;
+}

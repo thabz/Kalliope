@@ -1,74 +1,96 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 
-use CGI qw(:standard);
-use Kalliope;
+#  En digters samlede værker.
+#
+#  Copyright (C) 1999-2001 Jesper Christensen 
+#
+#  This script is free software; you can redistribute it and/or
+#  modify it under the terms of the GNU General Public License as
+#  published by the Free Software Foundation; either version 2 of the
+#  License, or (at your option) any later version.
+#
+#  This script is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#  General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this script; if not, write to the Free Software
+#  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#
+#  Author: Jesper Christensen <jesper@kalliope.org>
+#
+#  $Id$
 
-do 'fstdhead.pl';
+use CGI (':standard');
+use Kalliope::Person;
+use Kalliope::Page;
+use strict;
 
-@ARGV = split(/\?/,$ARGV[0]);
+my $dbh = Kalliope::DB->connect;
+my $fhandle = url_param('fhandle');
+my $poet = new Kalliope::Person(fhandle => $fhandle);
+my $mode = url_param('mode') || 'poetical';
 
-if (!($ARGV[1] eq "")) {
-    chop($ARGV[0]);
-    chomp($ARGV[1]);
-}
-$LA=$ARGV[1];
+my @crumbs;
+push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
+push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
+push @crumbs,['Værker','fvaerker.pl?fhandle='.$poet->fhandle];
 
-fheaderHTML($ARGV[0]);
+my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
+my $HTML;
 
-do 'fvaerker.ovs';
+my @works = $mode eq 'poetical' ? $poet->poeticalWorks : $poet->proseWorks;
 
-print '<TABLE WIDTH="100%"><TR><TD VALIGN=top>';
-beginwhitebox("Værker","","left","gfx/ikon06.gif");
-
-$sth = $dbh->prepare("SELECT vhandle,titel,aar,findes FROM vaerker WHERE fhandle=? AND type='v' ORDER BY aar");
+my $sth = $dbh->prepare("SELECT vhandle,titel,aar,findes FROM vaerker WHERE fhandle=? AND type='v' ORDER BY aar");
 $sth->execute($fhandle);
 
-if ($sth->rows) {
-    $splitpos = ($sth->rows > 6) ? int($sth->rows / 2 + 0.5 ) : 0;
-    print '<TABLE HEIGHT="100%" CELLPADDING=0 CELLSPACING=10><TR><TD VALIGN=top>';
-    print '<TABLE>';
-    while($d = $sth->fetchrow_hashref) {
-	print '<TR><TD>';
-	if ($d->{'findes'}) {
-	    $iconfile = ($d->{'aar'} eq '?') ? 'book_40.GIF' : 'book_40.GIF';
-	    print '<A HREF="vaerktoc.pl?'.$fhandle."?".$d->{'vhandle'}."?$LA\">";
-	    print qq|<IMG HEIGHT=40 WIDTH=27 ALT="" BORDER=0 
-		SRC="gfx/$iconfile" VALIGN="middle"></A>
-		</TD><TD><FONT COLOR="black">|;
-	    print '<A HREF="vaerktoc.pl?'.$fhandle."?".$d->{'vhandle'}."?$LA\">";
-
+if ($#works >= 0) {
+    my $nr;
+    my $splitpos = ($#works+1 > 6) ? int(($#works+1) / 2 + 0.5 ) : 0;
+    $HTML .= '<TABLE HEIGHT="100%" CELLPADDING=0 CELLSPACING=10><TR><TD VALIGN=top>';
+    $HTML .= '<TABLE>';
+    foreach my $work (@works) {
+	$HTML .= '<TR><TD>';
+	if ($work->hasContent) {
+	    my $iconfile = 'book_40.GIF';
+	    $HTML .= '<A HREF="vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle.'">';
+	    $HTML .= qq|<IMG HEIGHT=40 WIDTH=27 ALT="" BORDER=0 
+		        SRC="gfx/$iconfile" VALIGN="middle"></A>
+		        </TD><TD><FONT COLOR="black">|;
+	    $HTML .= '<A HREF="vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle.'">';
 	} else {
-	    $iconfilena = ($d->{'aar'} eq '?') ? 'book_40_high.GIF' : 'book_40_high.GIF';
-	    print qq|<IMG HEIGHT=40 WIDTH=27 ALT="" BORDER=0  
+	    my $iconfilena =  'book_40_high.GIF';
+	    $HTML .= qq|<IMG HEIGHT=40 WIDTH=27 ALT="" BORDER=0  
 		SRC="gfx/$iconfilena" VALIGN="center">
 		</TD><TD><FONT COLOR="#808080">|;
 	}
-	$aar = ($d->{'aar'} eq "\?") ? '' : '('.$d->{'aar'}.')';
-	print '<I>'.$d->{'titel'}.'</I> '.$aar.'</FONT>';
-	print '</A>' if ($d->{'findes'});
-	
-	print '</TD></TR>';
+	$HTML .= '<I>'.$work->title.'</I> '.$work->parenthesizedYear.'</FONT>';
+	$HTML .= '</A>' if $work->hasContent;
+	$HTML .= '</TD></TR>';
 	if (++$nr == $splitpos) {
-	    print '</TABLE></TD><TD BGCOLOR=black><IMG WIDTH=1 HEIGHT=1 SRC="gfx/trans1x1.gif" ALT="">';
-	    print '</TD><TD VALIGN=top><TABLE>' ;
+	    $HTML .= '</TABLE></TD><TD BGCOLOR=black><IMG WIDTH=1 HEIGHT=1 SRC="gfx/trans1x1.gif" ALT="">';
+	    $HTML .= '</TD><TD VALIGN=top><TABLE>' ;
 	}
     }
-    print "</TABLE>";   
-    print '</TD></TR></TABLE>';
+    $HTML .= "</TABLE>";   
+    $HTML .= '</TD></TR></TABLE>';
 } else {
-    print qq|<IMG SRC="gfx/excl.gif">
-	Der findes endnu ingen af ${fefternavn}s værker i Kalliope|;
+    my $name = $poet->name;
+    $HTML .= qq|<IMG SRC="gfx/excl.gif">Der findes endnu ingen af ${name}s værker i Kalliope|;
 }
-endbox();
 
-print '</TD>';
-if ($fdoed>1930) {
-    print '<TD VALIGN="top" WIDTH="150">';
-    beginwhitebox('Bemærk');
-    print qq|<IMG ALIGN="left" SRC="gfx/excl.gif">Ifølge reglerne om ophavsret, må ${fefternavn}s værker ikke kunne blive tilføjet Kalliope før 70 år efter digterens død.|;
-    endbox();
-    print '</TD>';
+$page->addBox(width => '75%',
+              coloumn => 1,
+              content => $HTML);
+
+if ($poet->yearDead>1931) {
+    my $name = $poet->name;
+    $page->addBox( title => 'Bemærk',
+                   width => '200',
+                   coloumn => 2,
+	           content => qq|<IMG ALIGN="left" SRC="gfx/excl.gif">Ifølge reglerne om ophavsret, må ${name}s værker ikke kunne blive tilføjet Kalliope før 70 år efter digterens død.|);
 }
-print '</TR></TABLE>';
 
-ffooterHTML();
+$page->print;
+

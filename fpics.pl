@@ -21,38 +21,50 @@
 #  $Id$
 
 use Kalliope;
-do 'fstdhead.pl';
+use CGI (':standard');
+use Kalliope::Person;
+use Kalliope::Page;
+use strict;
 
-@ARGV = split(/\?/,$ARGV[0]);
+my $dbh = Kalliope::DB->connect;
+my $fhandle = url_param('fhandle');
+my $poet = new Kalliope::Person(fhandle => $fhandle);
 
-$fhandle = $ARGV[0];
-$LA = $ARGV[1];
-chop($fhandle);
-chomp($LA);
-fheaderHTML($fhandle);
+#
+# Breadcrumbs -------------------------------------------------------------
+#
 
-beginwhitebox("Portrætter","","center");
+my @crumbs;
+push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
+push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
+push @crumbs,['Portrætter',''];
 
-$i=1;
-print "<TABLE><TR>";
+my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
+
+my $i = 1;
+my $HTML .= "<TABLE><TR>";
 while (-e "fdirs/".$fhandle."/p".$i.".jpg") {
-    print '<TD WIDTH="33%" VALIGN="top" ALIGN="center">';
-    print Kalliope::insertthumb({thumbfile=>"fdirs/$fhandle/_p$i.jpg",destfile=>"fdirs/$fhandle/p$i.jpg",alt=>'Klik for fuld størrelse'});
-    print '<BR>';
+    $HTML .= '<TD WIDTH="33%" VALIGN="top" ALIGN="center">';
+    $HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/_p$i.jpg",destfile=>"fdirs/$fhandle/p$i.jpg",alt=>'Klik for fuld størrelse'});
+    $HTML .= '<BR>';
     if (-e "fdirs/".$fhandle."/p".$i.".txt") {
 	open(IN,"fdirs/".$fhandle."/p".$i.".txt");
 	while (<IN>) {
-	    print $_."<BR>";
+	    $HTML .= $_."<BR>";
 	}
     }
-    print '('.Kalliope::filesize("fdirs/$fhandle/p$i.jpg").')';
-    print "</TD>";
+    $HTML .= '('.Kalliope::filesize("fdirs/$fhandle/p$i.jpg").')';
+    $HTML .= "</TD>";
     $i++;
     if ((($i-1)%3)==0) {
-	print "</TR><TR>";
+	$HTML .= "</TR><TR>";
     }
 }
-print "</TR></TABLE>";
+$HTML .= "</TR></TABLE>";
 
-endbox();
-ffooterHTML();
+$page->addBox( title => 'Portrætter',
+               width => '80%',
+               coloumn => 1,
+               align => 'center',
+	       content => $HTML );
+$page->print;

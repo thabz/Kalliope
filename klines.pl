@@ -22,51 +22,63 @@
 #
 #  $Id$
 
-use CGI qw (:html :standard);
+use CGI qw(:standard);
+use Kalliope::Page;
+use Kalliope::Date;
+use Kalliope::DB;
+use Kalliope::Sort;
 use Kalliope;
+use strict;
 
-do 'kstdhead.pl';
-do 'dk_sort.pl';
+my $dbh = Kalliope::DB->connect;
 
-$mode = url_param('mode');
-$forbogstav = url_param('forbogstav');
-$LA = url_param('sprog');
+my $mode = url_param('mode') || 0;
+my $forbogstav = url_param('forbogstav') || 'a';
+my $LA = url_param('sprog') || 'dk';
 
-#@ARGV = split(/\?/,$ARGV[0]);
-#chop $ARGV[0];
-#chop $ARGV[1];
-#($mode,$forbogstav,$LA) = @ARGV;
+my $title = ('Førstelinier','Digttitler','Populære')[$mode];
+my $page = ('poem1stlines','poemtitles','poempopular')[$mode];
+my $HTML;
 
-$0 =~ /\/([^\/]*)$/;
-$wheretolinklanguage = $1.'?mode='.$mode.'&forbogstav='.$forbogstav.'&sprog=';
-&kheaderHTML('Digte',$LA);
+my @crumbs;
+push @crumbs,['Digte',''];
+push @crumbs,[$title,''];
+push @crumbs,[$forbogstav,''] unless $mode == 2;
 
-if ($mode==1) {
+my $page = new Kalliope::Page (
+	title => $title,
+	pagegroup => 'poemlist',
+	page => $page,
+        lang => $LA,
+	crumbs => \@crumbs );
+
+my $sth;
+if ($mode == 1) {
     $sth = $dbh->prepare("SELECT titel,fhandle,longdid,fornavn,efternavn FROM digte D, fnavne F, forbogstaver B WHERE B.forbogstav = ? AND B.type = ? AND B.sprog = ? AND B.did = D.did AND D.fid = F.fid");
-} elsif ($mode==0) {
+} elsif ($mode == 0) {
     $sth = $dbh->prepare("SELECT foerstelinie,fhandle,longdid,fornavn,efternavn FROM digte D, fnavne F, forbogstaver B WHERE B.forbogstav = ? AND B.type = ? AND B.sprog = ? AND B.did = D.did AND D.fid = F.fid");
-} elsif ($mode ==2) {
+} elsif ($mode == 2) {
     goto POPU;
 }
 
-beginwhitebox("","","");
+my @f;
 $sth->execute($forbogstav,$mode?'t':'f',$LA);
 unless ($sth->rows) {
-    print "Vælg begyndelsesbogstav nedenfor";
+    $HTML .= "Vælg begyndelsesbogstav nedenfor";
 } else {
-    $i=0;
+    my $i = 0;
     while ($f[$i] = $sth->fetchrow_hashref) { 
 	$f[$i]->{sort} = $mode ? $f[$i]->{titel} : $f[$i]->{foerstelinie};
 	$i++; 
     }
-    foreach $f (sort dk_sort2 @f) {
+    foreach my $f (sort Kalliope::Sort::sort @f) {
 	next unless $f->{'sort'};
-	$tekst = $mode ? $f->{'titel'} : $f->{'foerstelinie'};
-	print '<A HREF="digt.pl?'.$f->{'fhandle'}.'?'.$f->{'longdid'}."?$LA\">";
-	print $tekst;
-	print '</A><FONT COLOR="#808080"> (';
-	print $f->{'fornavn'}.' '.$f->{'efternavn'};
-	print ")</FONT><BR>\n";
+	my $tekst = $mode ? $f->{'titel'} : $f->{'foerstelinie'};
+	$HTML .= '<A HREF="digt.pl?longdid='.$f->{'longdid'}.'">';
+	$HTML .= $tekst;
+	$HTML .= '</A><FONT COLOR="#808080"> (';
+	$HTML .= $f->{'fornavn'}.' '.$f->{'efternavn'};
+	$HTML .= ")</FONT><BR>\n";
     }
 }
 
@@ -74,45 +86,50 @@ unless ($sth->rows) {
 $sth = $dbh->prepare("SELECT DISTINCT forbogstav FROM forbogstaver WHERE type = ? AND sprog = ?" );
 $sth->execute($mode?'t':'f',$LA);
 
-$i=0;
+my $i = 0;
 @f = ();
 while ($f[$i] = $sth->fetchrow_hashref) { 
     $f[$i]->{'sort'} = $f[$i]->{'forbogstav'};
     $f[$i]->{'sort'} =~ s/Å/Aa/;
     $i++;
 }
-foreach $f (sort dk_sort2 @f) { 
-    $color = ($f->{'forbogstav'} eq $forbogstav)?'red':'black';
+my $minimenu;
+foreach my  $f (sort Kalliope::Sort::sort @f) { 
+    my $color = ($f->{'forbogstav'} eq $forbogstav)?'red':'black';
     $minimenu .= '<A HREF="klines.pl?mode='.$mode.'&forbogstav='.$f->{'forbogstav'}.'&sprog='.$LA.'">';
     $minimenu .= '<FONT COLOR='.$color.'>'; 
     $minimenu .= $f->{'forbogstav'};
     $minimenu .= '</FONT></A> ';
 }
-endbox($minimenu);
-&kfooterHTML;
+
+$page->addBox ( width=> '80%',
+                end => $minimenu,
+                content => $HTML );
+$page->print;
 exit 1;
 
-
 POPU:
-beginwhitebox("Mest populære digte","","");
-    # Mest populære digt
-    $sth = $dbh->prepare("SELECT fornavn, efternavn, fnavne.fhandle, digte.longdid, titel, hits, lasttime FROM digthits,fnavne,digte WHERE digthits.longdid = digte.longdid AND digte.fid = fnavne.fid AND fnavne.sprog=? ORDER BY hits DESC LIMIT 20");
-    $sth->execute($LA);
-    #Print tabellen
-    print "<TABLE>";
-    print "<TR><TH></TH><TH>Titel</TH><TH>Hits</TH><TH>Senest</TH><TR>\n";
-    while ($f = $sth->fetchrow_hashref) {
-	$printed++;
-	print "<TR><TD ALIGN=right>$printed.</TD>";
-	print '<TD><A HREF="digt.pl?'.$f->{'fhandle'}.'?'.$f->{'longdid'}.'?'.$LA.'">'.$f->{titel}.'</A>';
-        print  '<FONT COLOR="#808080"> ('.$f->{'fornavn'}.' '.$f->{'efternavn'}.')</FONT>';
-	print '</TD><TD ALIGN="right">';
-	print $f->{'hits'};
-	print '</TD><TD ALIGN="right">';
-	print Kalliope::shortdate($f->{'lasttime'});
-	print "</TD></TR>";
-    }
-    print "</TABLE>";
- 
-endbox();
-&kfooterHTML;
+
+$sth = $dbh->prepare("SELECT fornavn, efternavn, fnavne.fhandle, digte.longdid, titel, hits, lasttime FROM digthits,fnavne,digte WHERE digthits.longdid = digte.longdid AND digte.fid = fnavne.fid AND fnavne.sprog=? ORDER BY hits DESC LIMIT 20");
+$sth->execute($LA);
+
+my $printed;
+$HTML = "<TABLE>";
+$HTML .= "<TR><TH></TH><TH>Titel</TH><TH>Hits</TH><TH>Senest</TH><TR>\n";
+while (my $f = $sth->fetchrow_hashref) {
+    $printed++;
+    $HTML .= "<TR><TD ALIGN=right>$printed.</TD>";
+    $HTML .= '<TD><A HREF="digt.pl?longdid='.$f->{'longdid'}.'">'.$f->{titel}.'</A>';
+    $HTML .=  '<FONT COLOR="#808080"> ('.$f->{'fornavn'}.' '.$f->{'efternavn'}.')</FONT>';
+    $HTML .= '</TD><TD ALIGN="right">';
+    $HTML .= $f->{'hits'};
+    $HTML .= '</TD><TD ALIGN="right">';
+    $HTML .= Kalliope::Date::shortDate($f->{'lasttime'});
+    $HTML .= "</TD></TR>";
+}
+$HTML .= "</TABLE>";
+
+$page->addBox ( title => 'Mest populære digte',
+                width => '80%',
+                content => $HTML ); 
+$page->print;

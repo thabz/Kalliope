@@ -21,10 +21,17 @@
 #  $Id$
 
 use CGI qw /:standard/;
-use Kalliope;
+use Kalliope::Web;
+use Kalliope::Page;
 use Kalliope::Keyword;
-use Web;
+use Kalliope::DB;
+use Kalliope::Sort;
+use Kalliope;
 use strict;
+
+my $dbh = Kalliope::DB->connect;
+
+my $page;
 
 my $keywordid;
 if (defined(url_param('keywordid'))) {
@@ -33,64 +40,72 @@ if (defined(url_param('keywordid'))) {
     $keywordid = $dbh->selectrow_array("SELECT id FROM keywords WHERE ord = '".url_param('keyword')."'");
 }
 
-my $LA = url_param('sprog');
+my $LA = url_param('sprog') || 'dk';
 my $limit = url_param('limit') || '';
-
-&kheaderHTML("Kalliope - Nøgleord",$LA);
 
 my $keyword = new Kalliope::Keyword(id => $keywordid);
 
 if (!$keywordid) {
-    beginwhitebox('Fejl...',"75%","left");
-    print 'Du er blevet henvist til et ugyldigt nøgleord. Fejlen vil blive rettet hurtigst muligt!';
-    endbox();
+    my $page = new Kalliope::Page (
+		title => 'Nøgleord',
+                lang => $LA,
+                pagegroup => 'history',
+                page => 'keyword' );
+    $page->addBox ( title => 'Fejl...',
+                    width => "75%",
+                    content => 'Du er blevet henvist til et ugyldigt nøgleord. Fejlen vil blive rettet hurtigst muligt!');
+    $page->print;
 } else {
-    print '<TABLE VALIGN=top WIDHT="100%"><TR><TD VALIGN=top>';
-    my $sth = $dbh->prepare("SELECT * FROM keywords WHERE id = ?");
-    $sth->execute ($keywordid);
-    my $h = $sth->fetchrow_hashref;
-    beginwhitebox($keyword->title,"80%","left");
-    print '<DIV STYLE="text-align: justify">';
-    print Kalliope::buildhrefs(\$keyword->content);
-    print '</DIV>';
-    endbox();
+    my @crumbs;
+    push @crumbs,['Litteraturhistorie','keywordtoc.cgi'];
+    push @crumbs,[$keyword->title,''];
+
+    $page = new Kalliope::Page (
+		title => $keyword->title,
+                pagegroup => 'history',
+                page => 'keyword',
+                lang => $LA,
+                crumbs => \@crumbs );
+
+    $page->addBox ( title => $keyword->title,
+                    width => "80%",
+                    coloumn => 0,
+                    content => '<DIV STYLE="text-align: justify">'.Kalliope::buildhrefs(\$keyword->content).'</DIV>' );
     
-    print '</TD><TD VALIGN=top WIDTH="20%">';
     #
     # Related keywords -----------------------------------------------
     #
-    begindarkbluebox();
     my $html;
     my @list = $keyword->linksToKeywords;
-    push @list,$keyword->linksToPersons;
+    push @list,$keyword->linksToPersons($LA);
     #TODO: Måske jeg vælge 5 tilfældige udfra f.eks. top 10.
     push @list,$keyword->linksToPoems(5,$LA);
     if ($#list >= 0) {
-	beginwhitebox('Se også',"100%","left");
-        foreach my $k (sort Kalliope::sortObject @list) {
+        foreach my $k (sort Kalliope::Sort::sortObject @list) {
 	    $html .= $k->smallIcon.' '.$k->clickableTitle($LA).'<BR><BR>';
 	}
 	$html =~ s/<BR><BR>$//;
-	print $html;
-	endbox();
+	$page->addBox ( title => 'Se også',
+		        width => "100%",
+		        content => $html,
+                        coloumn => 1 )
     }
 
-    $sth = $dbh->prepare("SELECT imgfile,beskrivelse FROM keywords_images WHERE keyword_id = $keywordid");
+    my $sth = $dbh->prepare("SELECT imgfile,beskrivelse FROM keywords_images WHERE keyword_id = $keywordid");
     $sth->execute ();
     $html = '';
     if ($sth->rows) {
-	beginwhitebox('Billeder',"100%","left");
 	while (my $k = $sth->fetchrow_hashref) {
-	    $html .= Kalliope::insertthumb({thumbfile=>'gfx/hist/_'.$k->{imgfile}.'.jpg',destfile=>'gfx/hist/'.$k->{imgfile}.'.jpg',alt=>'Klik for fuld størrelse'});
+	    $html .= Kalliope::Web::insertThumb({thumbfile=>'gfx/hist/_'.$k->{imgfile}.'.jpg',destfile=>'gfx/hist/'.$k->{imgfile}.'.jpg',alt=>'Klik for fuld størrelse'});
 	    $html .= '<BR><SMALL>'.$k->{beskrivelse}.' ('.Kalliope::filesize('gfx/hist/'.$k->{imgfile}.'.jpg').')</SMALL><BR><BR>';
 	}
 	$html =~ s/\<BR\>\<BR\>$//;
-	print $html;
-	endbox();
+	$page->addBox ( title => 'Billeder',
+		        width => "100%",
+		        content => $html,
+                        coloumn => 1 )
     }
-    print '<BR><BR>';
-    endbox();
-    print '</TD></TR></TABLE>';
+    $page->setColoumnWidths('100%','20%');
+    $page->print;
 }
 
-&kfooterHTML;

@@ -20,32 +20,42 @@
 #
 #  $Id$
 
-do 'fstdhead.pl';
 
-@ARGV = split(/\?/,$ARGV[0]);
+use CGI (':standard');
+use Kalliope::Person;
+use Kalliope::Page;
+use Kalliope::DB;
+use strict;
 
-$fhandle = $ARGV[0];
-$LA = $ARGV[1];
-chop($fhandle);
-chomp($LA);
-fheaderHTML($fhandle);
+my $fhandle = url_param('fhandle');
+my $dbh = Kalliope::DB->connect;
+my $poet = new Kalliope::Person(fhandle => $fhandle);
 
-beginwhitebox("Mere om $fnavn på nettet","75%","left");
+#
+# Breadcrumbs -------------------------------------------------------------
+#
+
+my @crumbs;
+push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
+push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
+push @crumbs,['Links',''];
+
+my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
 
 #Vis de tilgængelige links
 
-print "<TABLE>";
-$sth = $dbh->prepare("SELECT url,beskrivelse FROM links WHERE fid=?");
-$sth->execute($fid);
-while ($h = $sth->fetchrow_hashref) {
-    $out .= '<TR><TD><A TARGET="_top" HREF="'.$h->{'url'}.'"><IMG ALIGN="left" SRC="gfx/globesmall.gif" BORDER=0 ALT="Click her for at følge nævnte link"></A></TD>';
-    $out .= '<TD>'.$h->{'beskrivelse'}.'</TD></TR>';
+my $out = "<TABLE>";
+my $sth = $dbh->prepare("SELECT url,beskrivelse FROM links WHERE fid=?");
+$sth->execute($poet->fid);
+while (my $h = $sth->fetchrow_hashref) {
+    $out .= '<TR><TD VALIGN="top"><A TARGET="_top" HREF="'.$h->{'url'}.'"><IMG ALIGN="left" SRC="gfx/globesmall.gif" BORDER=0 ALT="Click her for at følge nævnte link"></A></TD>';
+    $out .= '<TD VALIGN="top">'.$h->{'beskrivelse'}.'</TD></TR>';
 }
 $sth->finish;
+$out .= "</TABLE>";
 
-print $out;
-print "</TABLE>";
-
-endbox();
-
-ffooterHTML();
+$page->addBox( width => '75%',
+               coloumn => 1,
+               title => "Mere om ".$poet->name." på nettet",
+	       content => $out);
+$page->print;

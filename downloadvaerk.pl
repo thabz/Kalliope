@@ -20,17 +20,14 @@
 #
 #  $Id$
 
-do 'fstdhead.pl';
+use Kalliope::DB;
+use CGI qw(:standard);
 
-@ARGV = split(/\?/,$ARGV[0]);
-chop($ARGV[0]);
-chop($ARGV[1]);
-chop($ARGV[2]);
-chomp($ARGV[3]);
-$fhandle = $ARGV[0];
-$vhandle=$ARGV[1];
-$outputtype = $ARGV[2];
-$LA=$ARGV[3];
+my $dbh = Kalliope::DB->connect;
+
+$fhandle = url_param('fhandle');
+$vhandle = url_param('vhandle');
+$outputtype = url_param('mode');
 
 ($vtitel,$vaar,$vhandle,$fid,$vid,$vnoter) = $dbh->selectrow_array("SELECT titel,aar,vhandle,fid,vid,noter,type FROM vaerker WHERE vhandle = '$vhandle' AND fhandle = '$fhandle'");
 

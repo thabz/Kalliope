@@ -33,23 +33,24 @@ my $page = new Kalliope::Page (
                 page => 'news',
            );
 
-$page->addHTML ('<TABLE WIDTH="100%"><TR><TD WIDTH="60%" VALIGN=top>');
 $page->addBox ( title => "Sidste Nyheder",
                 width => '100%',
+                coloumn => 0,
                 content => &latestNews,
                 end => '<A onclick="document.location = \'kallnews.pl\'" HREF="kallnews.pl"><IMG VALIGN=center BORDER=0 HEIGHT=16 WIDTH=16  SRC="gfx/rightarrow.gif" ALT="Vis gamle nyheder"></A>' );
 
-$page->addHTML ('</TD><TD VALIGN=top>');
 $page->addBox ( title => "Dagen idag",
                 width => '100%',
+                coloumn => 1,
                 content => &dayToday,
                 end => '<A HREF="kdagenidag.pl"><IMG  HEIGHT=16 WIDTH=16 VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Vælg dato"></A>');
+
 my ($sonnetText,$sonnetEnd) = &sonnet;
 $page->addBox ( title => "Sonnetten på pletten",
+                coloumn => 1,
                 width => '100%',
                 content => $sonnetText,
                 end => $sonnetEnd);
-$page->addHTML ('</TD></TR></TABLE>');
 $page->print;
 
 #
@@ -108,6 +109,7 @@ sub sonnet {
     while ($h = $sth->fetchrow_hashref) {
 	last if ($i++ == $rnd);
     }
+    return ('','') unless $h;
     my $poem = new Kalliope::Poem(did => $h->{'otherid'});
     $HTML .= '<SMALL>'.$poem->content.'</SMALL>';
     $END = '<A TITLE="'.$poem->author->name.': »'.$poem->title.'«" HREF="digt.pl?longdid='.$poem->longdid.'"><IMG VALIGN=center BORDER=0 HEIGHT=16 WIDTH=16 SRC="gfx/rightarrow.gif" ALT="Vis digtet"></A>';

@@ -21,14 +21,21 @@
 #  $Id$
 
 use CGI qw /:standard/;
-use Kalliope;
+use Kalliope::Page ();
+use Kalliope::Web ();
 use Web;
 use strict;
-do 'kstdhead.pl';
 
-my $LA = url_param('sprog');
+my $LA = url_param('sprog') || 'dk';
 
-&kheaderHTML("Kalliope - Nøgleord",$LA);
+my @crumbs;
+push @crumbs,['Litteraturhistorie',''];
+my $page = new Kalliope::Page (
+		title => 'Velkommen',
+                pagegroup => 'history',
+                lang => $LA,
+                page => 'keywordtoc',
+                crumbs => \@crumbs );
 
 my @blocks= ();
 my $idx;
@@ -40,8 +47,8 @@ while (my $h = $sth->fetchrow_hashref) {
     $blocks[$idx]->{'count'}++;
     $blocks[$idx]->{'body'} .= '<A HREF="keyword.cgi?keywordid='.$h->{'id'}.'&sprog='.$LA.'">'.$h->{'titel'}.'</A><BR>';
 }
-beginwhitebox('Nøgleord',"75%","left");
-Kalliope::doublecolumn(\@blocks);
-endbox();
 
-&kfooterHTML;
+$page->addBox ( title => "Indholdsfortegnelse",
+                width => '75%',
+                content => Kalliope::Web::doubleColumn(\@blocks) );
+$page->print;
