@@ -9,7 +9,7 @@ use Kalliope::Poem;
 
 sub get { 
     my $line = shift;
-    unless ($line =~ /^digt/i) { 
+    unless ($line =~ /^vis digt/i) { 
 	return 'Øh?';
    }
 

@@ -222,7 +222,7 @@ sub Extras {
 	    return $resp;
 	}
     }
-    if ($message =~ /^digt/i) {
+    if ($message =~ /^vis digt/i) {
 	if (my $resp = KalliopePoem::get($message)) {
 	    return $resp;
 	}
