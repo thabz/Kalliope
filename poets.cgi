@@ -119,7 +119,7 @@ sub listaz {
     if ($sth->rows) {
 	$blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">Ukendt digter</DIV><BR>|;
 	while ($f = $sth->fetchrow_hashref) {
-	$blocks[$bi]->{'body'} .= '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%"><TR><TD NOWRAP><A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.",&nbsp;".$f->{'fornavn'}.'</A></TD><TD WIDTH="100%" BACKGROUND="gfx/gray_ellipsis.gif">&nbsp;</TD><TD NOWRAP ALIGN="right"><FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></TD></TR></TABLE>';
+	$blocks[$bi]->{'body'} .= '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%"><TR><TD NOWRAP><A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'fornavn'}.'</A></TD></TR></TABLE>';
 	#    $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'fornavn'}.'</A><BR>';
 	    $blocks[$bi]->{'count'}++;
 	}
