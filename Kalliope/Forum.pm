@@ -100,8 +100,10 @@ sub getLatestPost {
 
 sub getLatestThreadIds {
     my ($self,%arg) = @_;
-    my $sth = $dbh->prepare("SELECT thread_id FROM forum WHERE parent = 0 AND forum_id = ? ORDER BY latest_thread_activity DESC LIMIT ?,?"); 
-    $sth->execute($self->getId,$arg{'begin'},$arg{'count'});
+    my $begin = $arg{'begin'};
+    my $count = $arg{'count'};
+    my $sth = $dbh->prepare("SELECT thread_id FROM forum WHERE parent = 0 AND forum_id = ? ORDER BY latest_thread_activity DESC LIMIT $begin,$count"); 
+    $sth->execute($self->getId);
 
     my @result = ();
     while (my ($h) = $sth->fetchrow_array) {

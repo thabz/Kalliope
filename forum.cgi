@@ -27,6 +27,8 @@ use Kalliope::Tree;
 use CGI qw(:standard);
 use strict;
 
+my $offset = CGI::url_param('offset') || 0; 
+
 my $forumId = CGI::url_param('forumid');
 my $forum = new Kalliope::Forum($forumId);
 
@@ -45,7 +47,7 @@ my $page = new Kalliope::Page (
 # Draw forum
 #
 
-my @thread_ids = $forum->getLatestThreadIds(begin => 0, count => 20);
+my @thread_ids = $forum->getLatestThreadIds(begin => $offset, count => 10);
 my $tree = new Kalliope::Tree('tree','gfx/tree',3,('Emne',("&nbsp;"x6).'Fra','&nbsp;Dato'));
 my %translate;
 $translate{0} = 0;
@@ -79,10 +81,19 @@ function composer(mode,id) {
 EOF
 
 #
+# Bladring
+#
+
+my $N = $forum->getNumberOfThreads;
+my $nextArrow = $offset+10 < $N ? '<A TITLE="Bladr tilbage til ældre aktive tråde" HREF="forum.cgi?offset='.($offset+10).'&forumid='.$forumId.'"><IMG ALT="Bladr tilbage til ældre aktive tråde" BORDER=0 SRC="gfx/rightarrow.gif"></A>' : '';
+my $prevArrow = $offset > 0 ? '<A TITLE="Bladr frem til nyere aktive tråde" HREF="forum.cgi?offset='.($offset-10).'&forumid='.$forumId.'"><IMG ALT="Bladr frem til nyere aktive tråde" BORDER=0 SRC="gfx/leftarrow.gif"></A>' : '';
+
+#
 # Output HTML
 #
 
 $page->addBox(width => '90%',
-              content => $HTML);
+              content => $HTML,
+	      end => $prevArrow.$nextArrow);
 $page->print;
 
