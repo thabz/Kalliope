@@ -266,7 +266,7 @@ sub menu {
         my $title = $key eq $page->{'page'} ?
                     '<b>'.$item{'title'}.'</b>' :
                     $item{'title'};
-        push @itemsHTML, qq|<A CLASS="white" TITLE="$item{desc}" HREF="$url"><b>$title</b></A>| if $item{status};
+        push @itemsHTML, qq|<A CLASS="white" TITLE="$item{desc}" HREF="$url">$title</A>| if $item{status};
     }
     $HTML = join ' <span class="lifespan">&#149;</span> ',@itemsHTML;
     return $HTML;
