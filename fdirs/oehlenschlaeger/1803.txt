@@ -4,10 +4,8 @@ VN:Bidrag fra Sven Sørensen og Brian Bentsen med udgangspunkt i førstetrykket, s
 VN:For digte anmærket med asterisk, se <XREF DIGT="oehlen2001052901"> 
 VN:Titelbladets ordlyd: Digte // af // Adam Øhlenslæger // Was ich irrte, was ich strebte / was ich litt und was ich lebte - / sind hier Blumen nur im Strau&#383;s! / Göthe // Kiöbenhavn / Trykt paa Universitetsboghandler Fr: Brummers / Forlag hos Andreas Seidelin. / 1803
 VN:Goethe-citatet er fra <xref digt="goethe2001032801">.
-VQ:korrektur1,korrektur2,korrektur3,kilde
+VQ:korrektur1,korrektur2,korrektur3,kilde,side
 VP:1803-p1.jpg%Titelbladet til <i>Digte</i> 1803.
-
-
 
 I:oehlen2001052901
 T:Forerindring
@@ -269,7 +267,7 @@ saa skarp og snæver.
 Fieldstykker som hænger
 i Loftet, bæver.
 Og Blod hin röde
-af uhævnede Döde,<!-- OS har uhevnede -->
+af uhævnede Döde,<!-- OS har "uhevnede" -->
 af Sprækkerne rinde;
 og Lyn ham blinde,
 og Drager i Tidsler
@@ -1597,7 +1595,7 @@ Herr Erik heder ad Dotteren sin:
 Du komme ind til Brudgommen din.
 
 Det da blegnede brat den vene Maard:
-Min kiere Herre Fader hvi var I saa haard?<!-- I] i -->
+Min kiere Herre Fader hvi var I saa haard?<note>I] i</note>
 
 Liden Helgas Hierte slog saa fast,
 jeg siger for sanden hendes Öie brast.
@@ -1622,6 +1620,14 @@ T:Guldhornene
 F:De higer og söger
 N:Teksten følger <i>Digte</i> (1803), s. 75-82.
 K:romance
+P:g1.jpg%<i>Guldhornene</i> som det tager sig ud i førsteudgaven fra 1803 (side 1/8).
+P:g2.jpg%Side 2/8
+P:g3.jpg%Side 3/8
+P:g4.jpg%Side 4/8
+P:g5.jpg%Side 5/8
+P:g6.jpg%Side 6/8
+P:g7.jpg%Side 7/8
+P:g8.jpg%Side 8/8
 
 De higer og söger
 i gamle Böger,
@@ -1718,7 +1724,7 @@ Skatten at foröge.
 Men intet Guld!
 Deres Haab har bedraget.
 De see kun det Muld,
-hvoraf de er taget.<note>Poul Ingerslev-Jensen, udgiver af den vel nok mest autoritative udgave af <i>Digte</i> (1803), vil gerne have ,,de'' til at være en trykfejl for ,,det'' (dvs. ,,hvoraf <I>guldet</I> er taget''), selvom ,,de'' er meget meningsfuldt både i en romantisk og i en kristen forståelsesramme.</note>
+hvoraf de er taget.
 
 Et Sekel svinder!!
 
@@ -2897,7 +2903,7 @@ T:Natur-Temperamenter
 F:Östens lange, blege Strimmel
 N:Teksten følger <i>Digte</i> (1803), s. 133-39.
 
-<center>PHLEGMA</center>
+<nonum><center>PHLEGMA</center></nonum>
 
 Östens lange, blege Strimmel 
 breder ud sin hvide Fold. 
@@ -2926,7 +2932,7 @@ hyllende Naturens Liv.
 
 ---
 
-<center>SANGVINITET</center>
+<nonum><center>SANGVINITET</center></nonum>
 
 Milde Saphirer paa Himmelens Bue 
 hæve den prægtige Hvælving med Ynde. 
@@ -2966,7 +2972,7 @@ svungen i Straalens ophidsende Dands!
 
 ---
 
-<center>COLOR</center><note>I Liebenbergs udgivelse af Oehlenschlägers samlede skrifter (18 bd., 1857-62) kaldes digtet ,,Det choleriske'' (og ligeledes ,,Det sangvinske'', ,,Det phlegmatiske'' og ,,Det melancholske''). Men i <I>Samlede Digte. Første[-tredie] Deel</I> (1823) anføres titlen som ,,Det Choleriske'' etc. Derfor kan det nok undre, at i <I>Digte</I> (1803) er titlen ,,Color''. Der er imidlertid tale om en fejl, for umiddelbart efter udgivelsen af <I>Digte</I>, fulgte en liste med tretten rettelser, hvilken findes foruden den almindelige på fire rettelser bag i Prof. A.P. Berggreens eksemplar af <I>Digte</I>, hvor iblandt ,,Color'' rettes til ,,Cholera''.</note>
+<nonum><center>COLOR</center></nonum><note>I Liebenbergs udgivelse af Oehlenschlägers samlede skrifter (18 bd., 1857-62) kaldes digtet ,,Det choleriske'' (og ligeledes ,,Det sangvinske'', ,,Det phlegmatiske'' og ,,Det melancholske''). Men i <I>Samlede Digte. Første[-tredie] Deel</I> (1823) anføres titlen som ,,Det Choleriske'' etc. Derfor kan det nok undre, at i <I>Digte</I> (1803) er titlen ,,Color''. Der er imidlertid tale om en fejl, for umiddelbart efter udgivelsen af <I>Digte</I>, fulgte en liste med tretten rettelser, hvilken findes foruden den almindelige på fire rettelser bag i Prof. A.P. Berggreens eksemplar af <I>Digte</I>, hvor iblandt ,,Color'' rettes til ,,Cholera''.</note>
 
 Hvad sortner? 
 Det er Himlens Bue! 
@@ -3006,7 +3012,7 @@ Hvi bliver I alle saa blege?
 
 ---
 
-<center>MELANCHOLIE</center>
+<nonum><center>MELANCHOLIE</center></nonum>
 
 Tordnen meer ei lyder.
 Maanen giennembryder 
@@ -3322,6 +3328,7 @@ O snart! snart er mit Hierte,
 som blöder saa mat og saa nedtrykt nu,
 overvældet af sin Smerte,
 taust og brustent Harpe, som du!
+
  
 I:oehlenschlaeger2001052914
 T:Himmel-Lysene
@@ -3361,14 +3368,14 @@ de lyse Bölger i Maanskin rinde,
 saa salige nu mine Dage svinde.
 Hvad tryller mig Livet saa södt som hun?
 
+
 I:oehlenschlaeger2001052915
 T:Wilhelm og Blomsterne
 TOC:Wilhelm og Blomsterne*
 F:God Morgen I Skiönne!
 N:Teksten følger <i>Digte</i> (1803), s. 154-57.
 
-WILHELM
-
+<nonum><center><sc>WILHELM</sc></center></nonum>
 God Morgen I Skiönne! 
 Hvor smukt i det Grönne
 bæver I, prydet med Dugperlens Glands.
@@ -3376,9 +3383,7 @@ O kom lad mig binde
 min elskte Veninde 
 en frisk, en duftende Blomsterkrands!
 
-
-BLOMSTERNE
-
+<nonum><center><sc>BLOMSTERNE</sc></center></nonum>
 Ak altid kommer du kun herhen
 for at plukke os Stakkler, saa gaaer du igien. 
 Grusomme Wilhelm! kort er vort Liv; 
@@ -3388,9 +3393,7 @@ dufte i Dalen, smile i Bækken,
 aabne i Solen vor svulmende Barm, 
 indtil vi synker i Dödens Arm!
 
-
-WILHELM
-
+<nonum><center><sc>WILHELM</sc></center></nonum>
 O hvorfor kan Eders Söstre dog ei, 
 som visned i Lydas bölgende Haar, 
 vende tilbage paa Livets Vei, 
@@ -3405,9 +3408,7 @@ I veed vist ei
 hvor södt det er at omslynge en Pige, 
 men det veed jeg!
 
-
-BLOMSTERNE
-
+<nonum><center><sc>BLOMSTERNE</sc></center></nonum>
 En Pige mig hid 
 og en Pige mig did!
 Nei kiere Wilhelm du skal have Tak! 
@@ -3415,9 +3416,7 @@ Du narrer os ikke med al din Snak!
 Du kan længe nok til din Pige gaae, 
 men os Blomster skal du smukt lade staae!
 
-
-WILHELM
-
+<nonum><center><sc>WILHELM</sc></center></nonum>
 Hvor er I dog noget uvidende Kram! 
 Det er sandelig næsten en Spot og Skam. 
 Jeg <I>skal</I> lade jer staae? Det Imperativ 
@@ -3432,15 +3431,11 @@ Hvis I eengang imellem saae i en Bog,
 saa vidste I, inden en Uge var omme, 
 at jeres Villie stak i min Lomme!
 
-
-BLOMSTERNE
-
+<nonum><center><sc>BLOMSTERNE</sc></center></nonum>
 O fornuftige Wilhelm! bliv ikke vred; 
 og træd os ei i din Harme ned!
 
-
-WILHELM
-
+<nonum><center><sc>WILHELM</sc></center></nonum>
 Jeg har <I>Ret</I> til at blive alvorlig vred! 
 Jeg har <I>Ret</I> til at blive i Hovedet heed. 
 En Skabning! En Pige som min Veninde!
@@ -3462,9 +3457,7 @@ uden det skiönne, harmoniske <I>Hele!</I>
 Intet er deiligt og södt som hun! 
 Og I? <I>qvos ego!!</I>
 
-
-BLOMSTERNE
-
+<nonum><center><sc>BLOMSTERNE</sc></center></nonum>
                                     O pluk os kun!
 Du slog os alt med din Philosophie,
 men mere endnu med din Poesie!
@@ -3670,7 +3663,7 @@ U:Efter Steffens
 F:Ved gamle Borg
 N:Teksten følger <i>Digte</i> (1803), s. 167-68.
 
-Ved gamle Borg<!-- OS har Borg, -->
+Ved gamle Borg<!-- OS har "Borg," -->
 i kolde Mose,
 stod taus i Sorg
 den röde Rose.
@@ -3705,6 +3698,7 @@ O Dödens Haand,
 du söde, kolde!
 riv bort de Baand,
 som her mig holde.
+
 
 I:oehlenschlaeger2001052919
 T:Til Apol
@@ -3791,7 +3785,7 @@ som Rug og Flesk, som Gies og Hvede?
 Ja ganske sikkert! raaber ud 
 en Flok som önsker dig beskiermet; 
 hvis Hierter er ved Skiebnens Bud 
-smukt flyttet hen paa Kioleærmet;<!-- OS har Kioleærmet. -->
+smukt flyttet hen paa Kioleærmet;<!-- OS har "Kioleærmet." -->
 
 Paa Leipzigs Messe dette Fias, 
 (ironice vi Navnet vælge,) 
@@ -3858,28 +3852,24 @@ naar hvad du <I>er</I> kun ei du bliver.
 Du trives ei paa denne Jord, 
 hvis Lyren du ei sönderriver!
 
-#her
+
 I:oehlenschlaeger2001052920
 T:Anelsen
 F:Kammerat! Kammerat! afsted, afsted!
 N:Teksten følger <i>Digte</i> (1803), s. 175-81.
 
-WILHELM <I>og</I> LUDVIG <I>paa Valpladsen</I>
+<nonum><center><sc>WILHELM</sc> <small><I>og</I></small> <sc>LUDVIG</sc> <small><I>paa Valpladsen</I></small></center></nonum>
 
-
-WILHELM 
-
+<nonum><center><sc>WILHELM</sc></center></nonum>
 Kammerat! Kammerat! afsted, afsted!
 Hvor Faren er vil vi være med.
 Hist myldre de ind paa vor venstre Flöi.
 Hör de Saaredes Raab, hör Trompeternes Stöi.
 Afsted, afsted, giennem Ild og Blod,
 giennem Ægg' og Aad, slaae de ned for Fod.
-Lad os visse Fienden at vi har Mod.
+Lad os vise Fienden at vi har Mod.
 
-
-LUDVIG
-
+<nonum><center><sc>LUDVIG</sc></center></nonum>
 Gierne Faren jeg möder,
 men jeg mattes, jeg blöder.
 Jeg kan Sværdet ei svinge,
@@ -3887,20 +3877,17 @@ jeg kan Smerten ei tvinge.
 Blodet styrter af min Skulder.
 Bring mig bort fra Kampens Bulder.
 
-
-WILHELM 
-
+<nonum><center><sc>WILHELM</sc></center></nonum>
 Du mister lidt Blod, derfor er du bleg.
 Jeg bringe dig under den skyggefulde Eeg;
 der hviler du ud, jeg forbinder din Skramme,
 saa styrte vi atter i Damp og i Flamme.
 
+---
 
-EMILIA <I>og</I> STELLA <I>i Balsalen</I>
+<nonum><center><sc>EMILIA</sc> <small><I>og</I></small> <sc>STELLA</sc> <small><I>i Balsalen</I></small></center></nonum>
 
-
-EMILIA
-
+<nonum><center><sc>EMILIA</sc></center></nonum>
 Strengene klinge!
 Ynglinger svinge
 muntert med svævende Piger sig om!
@@ -3909,9 +3896,7 @@ See hvor de ile!
 Hvem vilde hvile?
 Söster, o kom!
 
-
-STELLA
-
+<nonum><center><sc>STELLA</sc></center></nonum>
 Lad mig ene, lad mig vandre.
 Jeg er træt, mit Hierte skielver!
 See hvor mörk sig Himlen hvælver!
@@ -3921,15 +3906,13 @@ i den friske Luft, hvor Bækken
 risler venligt langs med Hækken,
 glimtende ad Maanens Smile.
 
-
-EMILIA
-
+<nonum><center><sc>EMILIA</sc></center></nonum>
 Velan da! jeg fölger dig med derhen;
 snart ile vi atter til Dandsen igien.
 
+---
 
-LUDVIG <I>under Egen</I>
-
+<nonum><center><sc>LUDVIG</sc> <small><I>under Egen</I></small></center></nonum>
 Dækket falder. Rollen er forbi!
 Skiönne Haab, fremledt ved Phantasie!
 Er du <I>meer?</I> Er alting ei forbi?
@@ -3948,15 +3931,11 @@ Men om Stella hisset englehvid
 sank til dette Hierte huld og blid,
 ömtfortrydende - 
 
-
-WILHELM <I>kommer med Vand i sin Hat</I>
-
+<nonum><center><sc>WILHELM</sc> <small><I>kommer med Vand i sin Hat</I></small></center></nonum>
 Qvæg dig, min Broder! og fat saa Mod.
 Frisk Vand jeg bringer fra rullende Flod.
 
-
-LUDVIG
-
+<nonum><center><sc>LUDVIG</sc></center></nonum>
 Fra rullende Flod? O jeg er mat!
 Jeg föler den kommer, den lange Nat!
 Dog vil jeg væde min blege Mund,
@@ -3970,23 +3949,17 @@ der bugter den sig som en venlig Bæk.
 Maaskee hendes Taare sig blandte deri
 ved mindet om Ludvig. - Det er forbi!
 
-
-WILHELM 
-
+<nonum><center><sc>WILHELM</sc></center></nonum>
 Du elsker Stella, den skiönne Möe?
 
-
-LUDVIG
-
+<nonum><center><sc>LUDVIG</sc></center></nonum>
 Jeg elskte foragtet og gik at döe.
 Henrevet mit Hierte paa Læberne löd.
 Med Stolthed den Grumme mig tie böd.
 Jeg havde kun Hierte og Ære og Mod.
 Jeg taug og gik. Nu flyder mit Blod!
 
-
-WILHELM
-
+<nonum><center><sc>WILHELM</sc></center></nonum>
 Der er Redning endnu!
 Hvi blegner du?
 Jeg gaaer, jeg er rede,
@@ -4000,84 +3973,62 @@ Hun skal elske, hun skal haabe,
 hun skal Helten anraabe.
 Snart smiler din Skiebne som Morgenröden!
 
-
-LUDVIG <I>reiser sig overende</I>
-
+<nonum><center><sc>LUDVIG</sc> <small><I>reiser sig overende</I></small></center></nonum>
 Jeg föler Döden!
 Farvel Træer og Buske!
 Farvel Himmel og Jord!
 Farvel Wilhelm!
 Farvel Stella!
-                                   <I>Han döer</I>
+                                   <nonum><small><I>Han döer</I></small></nonum>
 
+---
 
-EMILIA <I>og</I> STELLA <I>i Haven</I>
+<nonum><center><sc>EMILIA</sc> <small><I>og</I></small> <sc>STELLA</sc> <small><I>i Haven</I></small></center></nonum>
 
-
-STELLA
-
+<nonum><center><sc>STELLA</sc></center></nonum>
 Seer du hist henne ved Bækken?
 Ser du det Hvide i Hækken?
 
-
-EMILIA
-
+<nonum><center><sc>EMILIA</sc></center></nonum>
 Intet jeg seer!
 
-
-STELLA
-
+<nonum><center><sc>STELLA</sc></center></nonum>
 Seer du det Hvide og Röde?
 Seer du ei Aanden at blöde?
 
-
-EMILIA
-
+<nonum><center><sc>EMILIA</sc></center></nonum>
 Dröm dog ei meer!
 
-
-STELLA
-
+<nonum><center><sc>STELLA</sc></center></nonum>
 Stille! Hans bristende Öie
 stirrer fra mig i det Höie!
 
-
-EMILIA
-
+<nonum><center><sc>EMILIA</sc></center></nonum>
 Ængst mig ei saa!
 
-
-STELLA
-
+<nonum><center><sc>STELLA</sc></center></nonum>
 Seer du hvor venligt han smiler?
 Seer du hvor bleg han bortiler?
 
-
-EMILIA
-
+<nonum><center><sc>EMILIA</sc></center></nonum>
 Kom lad os gaae!
 
-
-STELLA
-
+<nonum><center><sc>STELLA</sc></center></nonum>
 Det er Ludvig!
-                     <I>Hun synker i Afmagt</I>
+                     <nonum><I>Hun synker i Afmagt</I></nonum>
 
-
-BÖLGERNE <I>til</I> BUSKEN
-
+<nonum><center><sc>BÖLGERNE</sc> <small><I>til</I></small> <sc>BUSKEN</sc></center></nonum>
 Hvorfor hvisler du saa underligt?
 
-
-BUSKEN <I>til</I> BÖLGERNE
-
+<nonum><center<sc>BUSKEN</sc> <small><I>til</I></small> <sc>BÖLGERNE</sc></center></nonum>
 Hvorfor risler I med Maaneblod?
 
-NATTERGALEN slaaer!
+<center><sc>NATTERGALEN</sc> slaaer!</center>
 
 I:oehlenschlaeger2001052921
 T:Digteren i Leire-Lunden
 F:Phantasie! hvi river du mig
+N:Teksten følger <i>Digte</i> (1803), s. 182-84.
 
 Phantasie! hvi river du mig
 til skiönne Erindringer hen?
@@ -4138,20 +4089,18 @@ vil jeg synge og blusse og blegne og döe!
 I:oehlenschlaeger2001053001
 T:Cantate
 F:Det er Danmarks Höitidsdag!
-N:Den simple, dierve Sang som Almindeligt Chor giver sig til at synge er af <A F=abrahamson>W.H.F. Abrahamson</A>.
+N:Den ,,simple, dierve Sang'' som Almindeligt Chor giver sig til at synge er af <A F=abrahamson>W.H.F. Abrahamson</A>.
+N:Teksten følger <i>Digte</i> (1803), s. 185-92.
 
-CHOR
+<nonum><center><sc>CHOR</sc></center></nonum>
+    Det er Danmarks Höitidsdag!
+    Dandser I Piger!
+    Synger I Mænd!
+    Toner I Harper!
+    Blusser I Helte!
+    Det er Danmarks Höitidsdag!
 
-Det er Danmarks Höitidsdag!
-Dandser I Piger!
-Synger I Mænd!
-Toner I Harper!
-Blusser I Helte!
-Det er Danmarks Höitidsdag!
-
-
-EEN STEMME
-
+<nonum><center><sc>EEN STEMME</sc></center></nonum>
 I Retfærds Herredom, i Elskovs Arm,
 i Oliegrenens Skygge
 den Danske sad,
@@ -4167,9 +4116,7 @@ og gustne Avind laante ham sin Fakkel,
 der knittrede med Helveds Svovellue.
 Da flygted Fredens Genius og græd.
 
-
-EN ANDEN STEMME
-
+<nonum><center><sc>EN ANDEN STEMME</sc></center></nonum>
 Men sagte Tordner löd og Jorden bæved,
 og mosbegroete Bautastene rasled,
 og Oldtids siunkne Gravhöi hæved sig.
@@ -4192,17 +4139,13 @@ indhyllet i en giennemsigtig Taage,
 Favn imod Favn, med sine Heltebrödre
 paa Kongedybet!
 
-
-CHOR
-
+<nonum><center><sc>CHOR</sc></center></nonum>
 Vi fölte dem virke, de elskte Maner!
 I Töihuset hvidsled de gamle Faner.
 En underlig Aand steeg fra Himmel til Jord
 og svæved over Nord!
 
-
-EN STEMME
-
+<nonum><center><sc>EN STEMME</sc></center></nonum>
 Da vaagned <I>Thor!</I>
 og spendte om sin Lend det stærke Belte
 af Biörnesener.
@@ -4212,64 +4155,48 @@ med Jernet af sin Hammer rörte han
 hver Danskes og hver Normands Bryst,
 og giöd sin Helteild deri og smilte.
 
-
-NOGLE STEMMER
-
+<nonum><center><sc>NOGLE STEMMER</sc></center></nonum>
 Og Danmark og Norge smilte!
 
+<nonum><center><sc>STÆRKT CHOR</sc></center></nonum>
+    Freidigt smilte
+    det kiekke Nord!
+    Til Vaaben vi ilte
+    at glæde Thor!
 
-STÆRKT CHOR
-
-Freidigt smilte
-det kiekke Nord!
-Til Vaaben vi ilte
-at glæde Thor!
-
-
-PIGER
-
+<nonum><center><sc>PIGER</sc></center></nonum>
 Da runde vore Taarer stride,
 da blegned vore Kinder hvide,
 da mangled vore Læber Ord
 til Gud, for Eder og for Nord!
 
-
-KONER
-
+<nonum><center><sc>KONER</sc></center></nonum>
 Og skielvende med ængstlig Smerte
 vi knælte ned, mens kiekt I stod
 bortrevne fra vort ömme Hierte,
 i Rög, i Damp, i Brödres Blod.
 
-
-MANDE-CHOR
-
+<nonum><center><sc>MANDE-CHOR</sc></center></nonum>
 Kierlighed kommer fra Gud!
 Kierlighed lovsiunger Qvinde og Mand!
 Men Kierlighed viger for Ærens Bud.
 Alt offre vi Konge og Fædreland!
 
-
-EN STEMME
-
+<nonum><center><sc>EN STEMME</sc></center></nonum>
 Hvad sang I raske Skarer?
 Gientager höit idag
 een af de simple, dierve Sange
 som löd paa Eders Læber, medens I
 koldt vented Kampens Fare?
 
+<nonum><center><sc>ALMINDELIGT CHOR</sc></center></nonum>
+Vi alle dig elske livsalige Fred! o. s. v.
 
-ALMINDELIGT CHOR
-
-Vi alle dig elske livsalige Fred! o.s.v.
-
-
-SOLO
-
+<nonum><center><sc>SOLO</sc></center></nonum>
 Ja han kom som Nordhavets Bölge!
 Fraadende Fienden frembröd.
 Stolt af sin Vælde, tryg af sit Fölge
-vilde han Heltenes Död.
+vilde han Hæltenes Död.<!-- OS har "Heltenes" -->
 Men fra Danmarks gamle Vrag
 udbröd et græsseligt Vaabenbrag!
 Da styrted hans Mast,
@@ -4277,19 +4204,15 @@ og hans Hierte brast!
 Og den Bölge der ligned hans stolte Mod
 blandte sig nu med hans Blod!
 
+<nonum><center><sc>CHOR</sc></center></nonum>
+    Det er Danmarks Höitidsdag!
+    Dandser I Piger!
+    Synger I Mænd!
+    Toner I Harper!
+    Blusser I Helte!
+    Det er Danmarks Höitidsdag!
 
-CHOR
-
-Det er Danmarks Höitidsdag!
-Dandser I Piger!
-Synger I Mænd!
-Toner I Harper!
-Blusser I Helte!
-Det er Danmarks Höitidsdag!
-
-
-EN STEMME
-
+<nonum><center><sc>EN STEMME</sc></center></nonum>
 Men hvilke Suk og hvilke Sörgetoner
 indblande sig i Glædens Jubelchor?
 Ha stille! stille!
@@ -4300,33 +4223,26 @@ Den lyder svævende og dæmpet,
 den sörgelige Sang,
 ledsaget mildt af Harpetoner!
 
+<nonum><center><sc>UNGE PIGER</sc></center></nonum>
+    Elskovs Rosenkieder
+    mildt sig om os vandt!
+    Livets Saligheder
+    smilende vi fandt.
+    Favn mod Favn vi bæved,
+    ved de Elsktes Bryst,
+    Maanen blid sig hæved,
+    for at see vor Lyst!
 
-UNGE PIGER
+    Danmarks Ære vinkte,
+    Söens Torden gialt.
+    Krigens Lynild blinkte -
+    Smilende de faldt!
+    Söd er Gravens Slummer!
+    Ingen Klagelyd.<note>Ingen] ingen</note>
+    Kort er Jordens Kummer,
+    evig Himlens Fryd!
 
-Elskovs Rosenkieder
-mildt sig om os vandt!
-Livets Saligheder
-smilende vi fandt.
-Favn mod Favn vi bæved,
-ved de Elsktes Bryst,
-Maanen blid sig hæved,
-for at see vor Lyst!
-
-Danmarks Ære vinkte,
-Söens Torden gialt.
-Krigens Lynild blinkte -
-Smilende de faldt!
-Söd er Gravens Slummer!
-Ingen Klagelyd.
-Kort er Jordens Kummer,
-evig Himlens Fryd!
-
-
-PLUDSELIGT CHOR
-            AF DE
-HENFARNES MANER,
-        OVENFRA
-
+<nonum><center><sc>PLUDSELIGT CHOR</sc> <small>AF DE</small> <sc>HENFARNES MANER</sc>, <small>OVENFRA</small></center></nonum>
 Fra det himmelblaae, klare, usynlige Hiem
 hörer vor Röst:
 Ingen Glæder kan ligne dem
@@ -4347,6 +4263,7 @@ I:oehlenschlaeger2001053002
 T:Den elskende Bondeknös
 TOC:Den elskende Bondeknös*
 F:För var jeg saa froe
+N:Teksten følger <i>Digte</i> (1803), s. 193-97.
 
 För var jeg saa froe,
 jeg spögte, sang og stöied og loe,
@@ -4372,7 +4289,7 @@ Da Hanna jeg saae
 i Aar til Confirmation at staae,
 ak den Dag jeg vist aldrig skal glemme!
 For Præsten hun stod,
-saa yndig og god<note>Førstetrykket har fejlagtigt ,,yndig og ged''</note>,
+saa yndig og god<note>god] ged</note>,
 og læste saa klog
 af sin Lærebog
 og af Biblens Sprog,
@@ -4400,7 +4317,7 @@ var min Hanna altid tilstede.
 
 I Lunden engang
 jeg hörte hendes yndige Sang,
-did henflöi jeg paa Kierligheds Vinge.
+did henflöi jeg paa Kierligheds Vinge.<note>did] Did</note>
 Jeg for hende stod,
 saa röd som Blod.
 Hun smilte saa mild,
@@ -4448,13 +4365,15 @@ da isner mit Blod
 og jeg blier saa mod,
 og mit Hierte skrækkeligt banker!
 
+
 I:oehlenschlaeger1803a1
 T:Födselsdagen
-F:Jeg vaagnede ved Nattergalens Slag  
+F:Jeg vaagnede ved Nattergalens Slag
+N:Teksten følger <i>Digte</i> (1803), s. 198-200.
 
 Jeg vaagnede ved Nattergalens Slag.
 Naturen rödmed, Natten var forsvunden.
-Med Harpen taus jeg traadde ud i Lunden.
+Med Harpen taus jeg traadde ud i Lunden.<note>Lunden.] Lunden</note>
 Det var min kiere Piges Födselsdag!
 
 Med Taarer hen i Solens Glands jeg saae.
@@ -4502,10 +4421,12 @@ da standsede min Taare med min Klage.
 Til Emmas Bryst jeg vendte taus tilbage
 og takked Gud, fordi jeg var saa stum!
 
+
 I:oehlenschlaeger2001053003
 T:Biergmands-Liv
 U:Efter Novalis
 F:Den over Jorden byder
+N:Teksten følger <i>Digte</i> (1803), s. 201-03.
 
 Den over Jorden byder,
 som maaler Jordens Bund,
@@ -4557,16 +4478,19 @@ alt hvad han samled her,
 dog det ham lidet bryder.
 Hans Armod er ham kier.
 
-Lad dem som Bödler hærge<note>Førstetrykket har fejlagtigt ,,hænge'', istedet for ,,hærge''</note>
+Lad dem som Bödler hærge<note>hærge] hænge</note></note>
 for Penge, Land og Slot.
 Han blier i sine Bierge
 den glade Jordens Drot!
+
 
 I:oehlenschlaeger2001053004
 T:Hædersqvad
 TOC:Hædersqvad*
 U:Til en gammel Skiald
 F:Vildt skingre vor Röst over breden Bord
+N:Teksten følger <i>Digte</i> (1803), s. 204-07.
+N: Hyldesten gælder <A F=tode>Johan Clemens Tode (1736-1806)</A>, læge og forfatter.
 
 Vildt skingre vor Röst over breden Bord.
 Raaber höit I Frender tilsammen!
@@ -4604,7 +4528,7 @@ og stænked i Fodspor hinandens Blod,
 og svore at fölges i Döden!
 
 Naar Gotherne droge i Ledingsfærd,
-mod Voldsmænd, som gramt ville hærge,
+mod Voldsmænd, som gramt vilde hærge,
 da hærded dit Drapa det blanke Sværd,
 og hvæssed det danske Værge!
 
@@ -4625,11 +4549,11 @@ som kunde hannem tröste og husvale.
 
 Og inden det nye Aar frembröd
 da smilte de Sönner saa spæde.
-De skulle, eengang naar vi er död,
+De skulde, eengang naar vi er död,
 vort gamle Dannemark glæde.
 
 Men Tak skyldes dig for den kommende Æt,
-Herr Clemenz! du skieggede Kiempe.
+Herr Clemenz! du skieggede Kiempe.<note>skieggede] skggieede</note>
 Af at siunge din Priis jeg ei bliver træt.
 Kun Miöden min Röst kan dæmpe.
 
@@ -4638,12 +4562,12 @@ og siunger i Skye tilsammen.
 Hele det gamle og trofaste Nord
 skal drikke Herr Clemenz til Gammen!
 
-N: Hyldesten gælder <A F=tode>Johan Clemens Tode (1736-1806)</A>, læge og forfatter. 
 
 I:oehlenschlaeger2001053005
 T:Aarstiderne
 TOC:Aarstiderne*
 F:Du aldrig vil elske? Til Stella jeg taled
+N:Teksten følger <i>Digte</i> (1803), s. 208-09.
 
 Du aldrig vil elske? Til Stella jeg taled,
 en Morgen i Vaar, da jeg hos hende sad,
@@ -4681,9 +4605,11 @@ at henvandre Livet med dig ved min Side,
 til Alderens Snee farver Lokkerne hvide?
 Hun sank til mit Bryst.
 
+
 I:oehlenschlaeger2001053006
 T:Sköitelöberen
 F:Fra Træet Rimens Blade
+N:Teksten følger <i>Digte</i> (1803), s. 210-12.
 
 Fra Træet Rimens Blade
 faldt ned for sagte Vind;
@@ -4738,12 +4664,11 @@ H2:Prologer
 I:oehl2002020301
 T:Prologer
 F:Velkommen! i den röde Morgenstund
-N:pp. 215-221
-Q:side
+N:Teksten følger <i>Digte</i> (1803), s. 215-21.
 
-<small><i>En Vandringsmand triner op paa en gammel Gravhöi, der staaer ved Veien, og siger som <w>Prologus:</w></i></small>
+<wrap><small><i>En Vandringsmand triner op paa en gammel Gravhöi, der staaer ved Veien, og siger som <w>Prologus:</w></i></small><wrap>
 
-<sc>Velkommen!</sc> i den röde Morgenstund,
+Velkommen! i den röde Morgenstund,
 Enhver som tidlig nu har samlet sig,
 for snart med ufortrödne, raske Fied
 at fölge os fra Byens dorske Taage
@@ -4769,7 +4694,7 @@ afvexler med en dybere Natur.
 Jeg er en gammel Gubbe. Digteren
 har bedet mig at træde frem og tale.
 Han troer mit Sölvhaar og min svage Stemme
-kan mildne Eders Hierte<note>Senere udgaver skriver ,,Hierter''.</note>, aabne dem
+kan mildne Eders Hierte, aabne dem<note>Senere udgaver skriver ,,Hierter''.</note>
 og stemme Eder for det lette Spil,
 som flygtig Phantasie har sammenföiet.
 Betragter denne skiönne Foraarsmorgen!
@@ -4779,79 +4704,78 @@ Omringet af de blomsterklædte Sletter
 vil jeg ved Strengens simple, svage Klang
 paa Höien synge jer en Morgensang!
 
-    Du skiönne Blaae!
+        Du skiönne Blaae!
 Du hvælver saa huldt om de grönne Straae,
-    med Dugperlerne paa,
-    hvor Lærkerne slaae,
-    hvor Bölgerne gaae,
+        med Dugperlerne paa,
+        hvor Lærkerne slaae,
+        hvor Bölgerne gaae,
 hvor de spraglede Kornblomster venligt staae!
 
-    Du lave Höi!
+        Du lave Höi!
 Din Hvælving fierner fra Lys og Stöi.
-    Din Urne staaer
-    fra Oldtids Aar,
-    af Aske fuld
-    i det dybe Muld.
-    Ubevægelig den staaer,
+        Din Urne staaer
+        fra Oldtids Aar,
+        af Aske fuld
+        i det dybe Muld.
+        Ubevægelig den staaer,
 til eengang den store Klokke slaaer.
 
-    O lyse Glands!
+        O lyse Glands!
 Naturens funklende Straaledands!
-    Gyd i mit Bryst
+        Gyd i mit Bryst
 din liflige Glæde, din varme Lyst.
-    Snart er det forbi.
-    Snart synker jeg i
-    det kolde Muld;
+        Snart er det forbi.
+        Snart synker jeg i
+        det kolde Muld;
 og skuer ei længer dit luende Guld.
 
-    Ak Livets Lyst!
+        Ak Livets Lyst!
 kun stakket du flammer i det svage Bryst.
-    Din luende Drik
+        Din luende Drik
 indsuger saa kort kun det matte Blik.
-    Det brister saa brat,
-    i den dunkle, den dunkle Nat.
+        Det brister saa brat,
+        i den dunkle, den dunkle Nat.
 
-    Arme Menneskestöv!
-    Visne Löv!
+        Arme Menneskestöv!
+        Visne Löv!
 I den kolde Urne maa du hvile der,
 mens det er saa varmt og saa lyst og saa herligt her.
 
-    O du evige Natur!
+        O du evige Natur!
 inden jeg favnes af den sorte Muur,
-    lad mig skue dig!
-    Du oplue mig!
-    Din uendelige Harpe saa huld,
-    med de liflige Strenge,
-    af Havets Sölv og af Solens Guld
-    i mit Hierte trænge,
-    med sin Harmonie,
-    med sin söde Sympathie!
+        lad mig skue dig!
+        Du oplue mig!
+        Din uendelige Harpe saa huld,
+        med de liflige Strenge,
+        af Havets Sölv og af Solens Guld
+        i mit Hierte trænge,
+        med sin Harmonie,
+        med sin söde Sympathie!
 
-    Flora! evigunge Möe,
-    huld du kommer og forsvinder.
-    Roserne paa dine Kinder
-    livner Skov og Mark og Söe.
+        Flora! evigunge Möe,
+        huld du kommer og forsvinder.
+        Roserne paa dine Kinder
+        livner Skov og Mark og Söe.
 
-    Flora! evigunge Möe,
-    tryk mig huldt i dine Arme,
-    lad mig favne dig med Varme,
-    favne dig med Kraft og döe!
+        Flora! evigunge Möe,
+        tryk mig huldt i dine Arme,
+        lad mig favne dig med Varme,
+        favne dig med Kraft og döe!
+<center><nonum><small><i>Prologus gaaer.</i></small></nonum></center>
 
-                  <small><i>Prologus gaaer.
+---
 
-                    ______________
-
-<w>Harlekin</w> kommer styrtende op ad Höien og er færdig at snuble:</i></small>
+     <wrap><small><i><w>Harlekin</w> kommer styrtende op ad Höien og er færdig at snuble:</i></small></wrap>
 
 De Gravhöie skulde Fanden flytte!
 De staae her og giör ikke den mindste Nytte.
-                  <small><i>Gnider sit Been.</i></small>
+<center><nonum><small><i>Gnider sit Been.</i></small></nonum></center>
 Det er en Levning af Barbariet;
 jeg troer jeg skal klage for Politiet.
-     <small><i>Kommer frem og bukker meget ydmyg for Publikum.</i></small>
+     <wrap><small><i>Kommer frem og bukker meget ydmyg for Publikum.</i></small></wrap>
 Mine Herrer og Damer, jeg har rendt som en Hest.
 Bryd jer ikke om den gamle Kiellingepræst.
-Jeg er den <i>rigtige Prologus,</i> jeg!
+Jeg er den <i>rigtige Prologus</i>, jeg!
 Forfatteren bad mig löbe min Vei,
 og krybe op paa denne Höi
 og fortælle jer under megen Stöi
@@ -4867,7 +4791,7 @@ Han förte vel en lang Conferents
 om Composition og en höi Tendents.
 En höi Tendents i et Dyrehavespil!!
 I hans Pande det aldrig gaaer rigtig til.
-Det skal være paa sin <i>shakespearisk.</i>
+Det skal være paa sin <i>shakespearisk</i>.
 En Skik som hos os er reent barbarisk.
 For Guds Skyld lad Eder ikke smitte
 af denne uvidende, excentriske Britte,
@@ -4886,7 +4810,7 @@ vær derfor ikke altfor severus.
 Nu har jeg opremset min hele Lexe.
 Nu skal I see at jeg ogsaa kan hexe.
 
-<small><i>Han slaaer i Jorden med sin Brix. Skuepladsen forvandles til et Værelse i Byen.</i></small>
+     <wrap><small><i>Han slaaer i Jorden med sin Brix. Skuepladsen forvandles til et Værelse i Byen.</i></small></wrap>
 Nu ere vi alle til Staden draget.
 Stykkets <i>Eenhed</i> er just ei iagtaget;
 men de som ei lider Changement
@@ -4895,21 +4819,19 @@ Her er vi i Huus hos en Borgermand.
 Men hillemænd! see der kommer han.
 Jeg faaer da vel at vige for Personen,
 for ei at forstyrre Illusionen.
-                        <small><i>Gaaer.</i></small>
+                                           <nonum><small><i>Gaaer.</i></small></nonum>
 
-                 ______________
+---
 
 H2:I Byen
-
 
 I:oehlen2002020302
 T:Manden og hans Kone
 F:Det er i Dag et deiligt Væ'r
-N:pp. 222-224.
-Q:side
+N:Teksten følger <i>Digte</i> (1803), s. 222-24.
 
-        <sc>En Mand</sc> <small><i>triner frem og siger:</i></small>
-<sc>Det</sc> er i Dag et deiligt Væ'r,
+<center><nonum><sc>En Mand</sc> <small><i>triner frem og siger:</i></small></nonum></center>
+Det er i Dag et deiligt Væ'r,
 Vinden vifter i Voldens Træer.
 Der er ei en Skye paa Himlen at see.
 I Vinduet mine Blomster lee.
@@ -4938,19 +4860,19 @@ Det giör mig ondt! thi hun græmmer sig.
 Hendes Elsker er draget i Verden ud,
 om han eengang kommer igien, veed Gud!
 Fornöiet jeg vil hende gierne see.
-Idag beqvemt det kunde skee.
+Idag beqvemt det kunde skee.<note>skee.] skee,</note>
 Der kommer min Kone; vil höre hendes Mening.
 Ægtefolk maa giöre alt i Forening.
 
-           <sc>Konen</sc> <small><i>kommer.</i></small>
+<center><nonum><sc>Konen</sc> <small><i>kommer.</i></small></nonum></center>
 Min kiere Mand! bliv ikke suur.
 Jeg hörte alt, thi jeg stod paa Luur.
 Du vil kiöre os ud i Skoven idag!
 
-           <sc>Mand.</sc>
+<center><nonum><sc>Mand.</sc></nonum></center>
 Hvad siger du da til denne Sag.
 
-           <sc>Konen</sc> <small><i>kysser ham.</i></small>
+<center><nonum><sc>Konen</sc> <small><i>kysser ham.</i></small></nonum></center>
 At du dog er ret en god lille Mand!
 Fornöier os altid med hvad du kan.
 Det glæder mig ellers for Frökenen meer
@@ -4958,23 +4880,20 @@ end for mig selv, som vel du indseer.
 Hendes Öine som græder og er saa kiönne
 have godt af at komme ud i det Grönne.
 
-       <sc>Mand.</sc>
+<center><nonum><sc>Mand.</sc></nonum></center>
 Der er hun! Lav os da alting til.
 Mine Sager imens jeg ordne vil.
-                 <small><i>Gaaer.</i></small>
-
+                                       <nonum><small><i>Gaaer.</i></small></nonum>
 
 
 I:oehlen2001123101
 T:Teklas Sang
 F:Dybt Skoven bruser og Skyen gaaer
 N:Første to strofer er efter Schillers <XREF DIGT="schiller2001123101">.
-N:pp. 224-228.
-Q:side
+N:Teksten følger <i>Digte</i> (1803), s. 224-28.
 
-           <sc>Maria</sc>
+<center><nonum><sc>Maria</sc></nonum></center>
 <wrap><small><i>kommer ind. Hun sætter sig ved Klaveret og synger:</i></small></wrap>
-
 Dybt Skoven bruser og Skyen gaaer.
 Ved Strandens Blomsterbred Pigen staaer.
 Höit opskyller Bölgen saa brat, saa brat;
@@ -4987,87 +4906,87 @@ Du Hellige! kald da dit Barn til dit Bryst
 Mig har jo alt henrykt den jordiske Lyst.
 Jeg har jo alt elsket og levet!
 
-           <sc>Konen.</sc>
+<center><nonum><sc>Konen.</sc></nonum></center>
 Deres Stemme har dog en herlig Klang.
 Hvad hedder den Arie?
 
-           <sc>Maria.</sc>
-                      Teklas Sang.
+<center><nonum><sc>Maria.</sc></nonum></center>
+                                        <nonum>Teklas Sang.</nonum>
 Den er oversat efter tydsk Poesie
 til <i>Weyses</i> deilige Melodie.
 
-           <sc>Konen.</sc>
+<center><nonum><sc>Konen.</sc></nonum></center>
 Den er mig alt for melancolsk.
 Jeg kunde blive i Hovedet catholsk,
 hvis længe jeg hörte slige Sange.
 Af de Muntre er der dog ogsaa mange!
 
-           <sc>Maria</sc> <small><i>sukker.</i></small>
+<center><nonum><sc>Maria</sc> <small><i>sukker.</i></small></nonum></center>
 
-           <sc>Konen.</sc>
+<center><nonum><sc>Konen.</sc></nonum></center>
 Vær nu en lille, fornuftig Pige.
 Vær munter og lad Sorgerne vige.
 Min Mand har besluttet til Skoven at tage.
 Vi skulde saa derud i disse Dage,
 og idag er Veiret saa klart og net.
 
-           <sc>Maria</sc> <small><i>pludselig oprömt.</i></small>
+<center><nonum><sc>Maria</sc> <small><i>pludselig oprömt.</i></small></nonum></center>
 Deri har de sandelig ganske Ret.
 
-           <sc>Konen.</sc>
+<center><nonum><sc>Konen.</sc></nonum></center>
 Stakkels Pige! maa være saa meget inde.
 Nu ja! deri maa vi os finde.
 Det er hverken min Mand eller mig som vil
 holde Dem. Hvad skal man sige dertil!
 Deres Moder -
 
-           <sc>Maria.</sc>
-             Tal ikke om denne Sag.
+<center><nonum><sc>Maria.</sc></nonum></center>
+                           <nonum>Tal ikke om denne Sag.</nonum>
 
-           <sc>Konen.</sc>
+<center><nonum><sc>Konen.</sc></nonum></center>
 Saa kiöre vi da til Skoven idag.
 Ifald De Cathrine sende vil
 til Kudsken, skal jeg lave alting til
 i Kiökkenet.
 
-           <sc>Maria.</sc>
-             Ja, det vil jeg gierne.
+<center><nonum><sc>Maria.</sc></nonum></center>
+                     <nonum>Ja, det vil jeg gierne.</nonum>
 
-           <sc>Konen.</sc>
+<center><nonum><sc>Konen.</sc></nonum></center>
 Man skal have saa mange Ting i sin Hierne.
-                    <i>Gaaer.</i>
+                                                 <nonum><small><i>Gaaer.</i></small></nonum>
 
-<wrap>           <sc>Maria</sc> <small><i>sætter sig og skriver en lille Seddel, kalder saa paa Pigen:</i></small></wrap>
+<center><wrap><sc>Maria</sc> <small><i>sætter sig og skriver en lille Seddel, kalder saa paa Pigen:</i></small></wrap></center>
 Skynd dig til Hyrekudsken hen.
 Vi skal i Skoven. Kom snart igien, -
 thi vi har travelt. Men först et Ord -
 bring denne Seddel - du veed hvor han boer -
 
-           <sc>Cathrine.</sc>
+<center><nonum><sc>Cathrine.</sc></nonum></center>
 Den smukke -
 
-           <sc>Maria.</sc>
-            Tys!
+<center><nonum><sc>Maria.</sc></nonum></center>
+                           <nonum>Tys!</nonum>
 
-           <sc>Cathrine.</sc>
-                  Ih, Fröken Marie!
+<center><nonum><sc>Cathrine.</sc></nonum></center>
+                                                      <nonum>Ih, Fröken Marie!</nonum>
 De veed dog vel sagtens at jeg kan tie.
 
-           <sc>Maria.</sc>
+<center><nonum><sc>Maria.</sc></nonum></center>
 Mine gamle Örenringe skal du faae.
 
-           <sc>Cathrine.</sc>
+<center><nonum><sc>Cathrine.</sc></nonum></center>
 For dem jeg kunde i Ilden gaae.
 
-           <sc>Maria.</sc>
+<center><nonum><sc>Maria.</sc></nonum></center>
 Er det for Ringene, eller for mig?
 
-           <sc>Cathrine.</sc>
+<center><nonum><sc>Cathrine.</sc></nonum></center>
 Hvor kan De nu spörge saa underlig.
 
-           <sc>Maria</sc> <small><i>gaaer.</i></small>
+<center><nonum><sc>Maria</sc> <small><i>gaaer.</i></small></nonum></center>
 
-           <sc>Cathrine.</sc>
+<center><nonum><sc>Cathrine.</sc></nonum></center>
 Saa skal vi i Skoven? En herlig Sag!
 Skovtouren er min bedste Dag.
 Det er den eneste Dag jeg maa gaae
@@ -5085,19 +5004,17 @@ siger min Hosbond. Det er forbandet!
 Ja, du gode Gud, hvad skal man sige?
 Det morer dog altid en stakkels Pige.
 
-                        <small><i>Gaaer.</i></small>
+                                       <nonum><small><i>Gaaer.</i></small></nonum>
 
-             __________
+---
 
 I:oehlen2002020303
 T:Marias Canzone
 F:Da jeg imorges aabnede mit Öie
-N:pp. 228-229.
-Q:side
+N:Teksten følger <i>Digte</i> (1803), s. 228-29.
 
-           <sc>Maria</sc>
+<center><nonum><sc>Maria</sc>,</nonum></center>
 <wrap><small><i>paa sit Kammer; med Ludvigs Billede i sin Haand.</i></small></wrap>
-
 Da jeg imorges aabnede mit Öie
 da hopped Spurven glad paa törre Tage,
 som glimted rödere i Morgenröde.
@@ -5130,7 +5047,7 @@ En grusom Skiebne kold sit Jerngitter
 imellem tvende unge Hierter trænger,
 som Himlens Harmonier sammenslynger.
 Kun sielden sig det drukne Öie hænger
-paa elskte Gienstand; ved den svage Cither
+paa elskte Gienstand; ved den svage Cither<note>Cither] Cither;</note>
 kun fiernt han mig sin höie Længsel synger.
 Idag Naturen slynger
 sin Rosenkrands hen paa vor mörke Bane.
@@ -5140,20 +5057,16 @@ Det lærte Elskovs Aand mig tidlig ane.
 Naar Tumlens Glædeskrig sig hisset hæve
 skal taust i Lunden tvende Hierter bæve.
 
-             ___________
-
+---
 
 H2:De Kiörende	     
 
 I:oehlen2002012301
 T:De Kiörende
 F:Fra qvalmfulde Mure
-N:pp. 230-231.
-Q:side
+N:Teksten følger <i>Digte</i> (1803), s. 230-31.
 
-       <sc>De Kiörende</sc>
-
-           ___________
+<center><nonum><sc>De Kiörende</sc></nonum></center>
 
 Fra qvalmfulde Mure!
 Til Marken saa huld!
@@ -5200,7 +5113,7 @@ see hvirvlende Rög!
 Vi kiöre, vi ride,
 vi ile til Latter og Spög.
 
-     ______________
+---
 
 
 H2:Dyrehaven     
@@ -5208,14 +5121,13 @@ H2:Dyrehaven
 I:oehlen2002020304
 T:Mödende Chor af alt
 F:Allons! Allons! Courage! Courage! Courage!
-N:pp. 232-233.
-Q:side
- 
-             DYREHAVEN
-            ___________
+N:Teksten følger <i>Digte</i> (1803), s. 232-33.
 
+<center><nonum>DYREHAVEN</nonum></center>
 
-     <sc>Mödende Chor af alt.</sc>
+---
+
+<center><nonum><sc>Mödende Chor af alt.</sc></nonum></center>
 
 <sc>Allons!</sc> Allons! Courage! Courage! Courage!
 Skiönne Rariteter, Löier og Spas!
@@ -5250,89 +5162,87 @@ Allons! Allons! Courage! Courage! Courage!
 I:oehlen2002020305
 T:Spadseregang
 F:Ih hillemænd, skal vi træffes her?
-N:pp. 233-235.
-Q:side
+N:Teksten følger <i>Digte</i> (1803), s. 233-35.
 
-               Spadseregang
+<center><nonum>SPADSEREGANG</nonum></center>
 
-	       
-           <sc>En Dame.</sc>
+<center><nonum><sc>En Dame.</sc></nonum></center>
 Ih hillemænd, skal vi træffes her?
 
-           <sc>En Anden.</sc>
+<center><nonum><sc>En Anden.</sc></nonum></center>
 Velkommen i det Grönne. Det er et deiligt Vær!
-           <small><i>De gaae hinanden forbi.</i></small>
+                                          <nonum><small><i>De gaae hinanden forbi.</i></small></nonum>
 
-           <sc>En Borger.</sc>
+<center><nonum><sc>En Borger.</sc></nonum></center>
 Er du kommen herud, din gamle Biörn!
 
-           <sc>En Anden.</sc>
+<center><nonum><sc>En Anden.</sc></nonum></center>
 Hvad giör man ikke for Kone og Börn.
 Jeg selv lider ikke det Narrerie.
 
-           <sc>Förste.</sc>
+<center><nonum><sc>Förste.</sc></nonum></center>
 Kan dog godt lide Folk saadan gaaer forbi,
 med ordentlige, smukke Klæder paa;
 og nogle er gar pyntet fra Top til Taae!
 
-           <sc>Anden.</sc>
+<center><nonum><sc>Anden.</sc></nonum></center>
 Er det solid tænkt?
-           <small><i>Gaaer rystende med Hovedet.</i></small>
+                                                <nonum><small><i>Gaaer rystende med Hovedet.</i></small></nonum>
 
-           <sc>Förste.</sc>
-                    Han er nu saa klog.
+<center><nonum><sc>Förste.</sc></nonum></center>
+                                  <nonum>Han er nu saa klog.</nonum>
 Den Bogbinder taler altid som en Bog.
 
-           <sc>En ung Pige.</sc>
+<center><nonum><sc>En ung Pige.</sc></nonum></center>
 God Dag, min Bedste! Det er lummert! Hah!
 Hvordan lever Papa og Mama?
 
-           <sc>En Anden.</sc>
+<center><nonum><sc>En Anden.</sc></nonum></center>
 Der gaae de Begge. Jeg maa skynde mig.
 Farvel! Jeg skal snart besöge dig.
 
-           <sc>Maria.</sc>
+<center><nonum><sc>Maria.</sc></nonum></center>
 Hvem taler saa meget med deres Mand?
 
-           <sc>Konen.</sc>
+<center><nonum><sc>Konen.</sc></nonum></center>
 Det er en ung Herre fra Langeland.
 Han fortæller min Mand om sin Slægt og Venner,
 som boer der ovre og som han kiender.
 
-           <sc>Manden</sc> <small><i>kommer med et ungt Menneske.</i></small>
+<center><nonum><sc>Manden</sc> <small><i>kommer med et ungt Menneske.</i></small></nonum></center>
 Min Herre! Hvis De ei vil forsmaae
 med os lidt om at spadsere gaae
 og siden spise med i Græsset hist,
 saa glæder det os.
 
-           <sc>Maria</sc> <small><i>sagte.</i></small>
-                   O! hvilken List.
+<center><nonum><sc>Maria</sc> <small><i>sagte.</i></small></nonum></center>
+                                  <nonum>O! hvilken List.</nonum>
 Det er Ludvig!
 
-           <sc>Mand.</sc>
-               See, her seer de min Kone.
+<center><nonum><sc>Mand.</sc></nonum></center>
+                              <nonum>See, her seer de min Kone.</nonum>
 Den smukke Pige, med Egelövskrone
 om Haaret, det er en Fröken vi har
 i Kost.
 
-           <sc>Ludvig.</sc>
-        Deres Budskab jeg glad modtaer!
-                  <small><i>De gaae videre.</i></small>
+<center><nonum><sc>Ludvig.</sc></nonum></center><!-- 1803 har "Luevig." -->
+                  <nonum>Deres Budskab jeg glad modtaer!</nonum>
+                                                           <nonum><small><i>De gaae videre.</i></small></nonum>
 
-           <sc>Et ungt Menneske.</sc>
+<center><nonum><sc>Et ungt Menneske.</sc></nonum></center>
 O hvilken deilig Pige der gik.
 Hvilken tryllende Væxt! Hvilket smægtende Blik!
 Jeg maa see hende engang endnu!
 
-           <sc>De andre.</sc>
+<center><nonum><sc>De andre.</sc></nonum></center>
 Wilhelm! bliv hos os! hörer du!
 
-           <sc>Een.</sc>
+<center><nonum><sc>Een.</sc></nonum></center>
 Han er alt flöiten! Det er Fanden til Knös;
 han löber efter hver deilig Tös.
 Lad os tömme en Flaske midlertid.
 Den Fornöielse er mere solid.
-                     <small><i>De gaae.</i></small>
+                                                   <nonum><small><i>De gaae.</i></small></nonum>
 
 
 
@@ -5340,10 +5250,9 @@ Den Fornöielse er mere solid.
 I:oehlen2002020306
 T:Dandseren paa Voltigerlinien
 F:I Cirkelbue
-N:pp. 236-238.
-Q:side
+N:Teksten følger <i>Digte</i> (1803), s. 236-38.
 
-       <sc>Dandseren paa Voltigerlinien.</sc>
+<center><nonum><sc>Dandseren paa Voltigerlinien.</sc></nonum></center>
 I Cirkelbue,
 uden at grue,
 paa den smalle Snor,
@@ -5361,7 +5270,7 @@ Det er ikke Löier,
 som Jer fornöier.
 Det er Mod,
 stærke Muskler, luende Blod,
-Dristighed og Foragt!
+Dristighed og Foragt!<note>Foragt!] Feragt!</note>
 Heisa! Hopsa! Uforsagt.
 Du rynker Panden, du satte Flok!
 <i>Gavner</i> jeg ikke nok?
@@ -5376,19 +5285,19 @@ Og spör saa St. Peder: Hvad godt har du giort?
 svarer jeg Schweitseren: Ikke stort!
 Men hvad har de andre Bengler da giort?
 
-           <sc>En Kancellieraad.</sc>
+<center><nonum><sc>En Kancellieraad.</sc></nonum></center>
 Den Knegt falder lidt impertinent.
 
-           <sc>En Officeer.</sc>
+<center><nonum><sc>En Officeer.</sc></nonum></center>
 En Dragt Prygl han havde fortient.
 
-           <sc>Et ungt Menneske.</sc>
+<center><nonum><sc>Et ungt Menneske.</sc></nonum></center>
 Det er Skade han svæver dem for höit!
 
-           <sc>En Borger.</sc>
+<center><nonum><sc>En Borger.</sc></nonum></center>
 Af mig skal han ikke faae en Döit.
 
-           <sc>Folkene bag Teltet.</sc>
+<center><nonum><sc>Folkene bag Teltet.</sc></nonum></center>
 Her har vi gravet i Jorden et Hul.
 Det er fyldt med Kul.
 Mellem Græsset Luen slaaer op.
@@ -5406,20 +5315,19 @@ hvem vil
 da sige saa lige:
 Her har været et luunt lille Arnested!
 
-           <sc>Nogle Piger.</sc>
+<center><nonum><sc>Nogle Piger.</sc></nonum></center>
 Hvorfor blæser de i Trompeten der?
 
-           <sc>Nogle Andre.</sc>
+<center><nonum><sc>Nogle Andre.</sc></nonum></center>
 Nu begynder nok deres Comedier.
 
 
 I:oehlen2002020307
 T:En Jödedreng
 F:Deilige Pidskebaand! röde og blaae
-N:pp. 238-241.
-Q:side
+N:Teksten følger <i>Digte</i> (1803), s. 238-41.
 
-           <sc>En Jödedreng.</sc>
+<center><nonum><sc>En Jödedreng.</sc></nonum></center>
 
 Deilige Pidskebaand! röde og blaae,
 gule, grönne, violette og graae.
@@ -5442,18 +5350,18 @@ for dem jeg kiöber min Moder Draaber,
 saa reiser hun sig igien af sin Seng.
 Jeg er en god lille Jödedreng!
 
-           <sc>En Kone.</sc>
+<center><nonum><sc>En Kone.</sc></nonum></center>
 Ih! see god Dag, min söde Madamme.
 Der har de jo faaet en smuk, frisk Amme.
 
-           <sc>En Anden.</sc>
+<center><nonum><sc>En Anden.</sc></nonum></center>
 Hvad synes dem om min Glut?
 
-           <sc>Den Förste.</sc>
-                            Paa min Ære!
-Hun ligner virkelig sin <i>cher pere.</i>
+<center><nonum><sc>Den Förste.</sc></nonum></center>
+                                                  <nonum>Paa min Ære!</nonum>
+Hun ligner virkelig sin <i>cher pere</i>.
 
-           <sc>Manden med Hunden.</sc>
+<center><nonum><sc>Manden med Hunden.</sc></nonum></center>
 Vor Herre, mine Herrer, har lagt et stort Pund,
 som de vel alle ved i en Hund.
 Dog denne de andre overgaaer.
@@ -5465,42 +5373,40 @@ hvem af mine Damer der laver til Barsel.
 Kommer nu hid og seer herpaa. -
 Min Gud hvorfor mon de fleeste gaae?
 
-           <sc>Fielleboemand.</sc>
-Speilecabinet!
-Nok saa net!
-Kommer hid og leer.
-Paa Hodet I seer
-alleting!
-Alt vendes omkring.
-Kommer hid i Gallop.
-Det Nederste vender op.
-Egens Rod!
-Pigens Fod!
-Speilecabinet!
-Nok saa net!
+<center><nonum><sc>Fielleboemand.</sc></nonum></center>
+        Speilecabinet!
+        Nok saa net!
+        Kommer hid og leer.
+        Paa Hodet I seer
+        alleting!
+        Alt vendes omkring.
+        Kommer hid i Gallop.
+        Det Nederste vender op.
+        Egens Rod!
+        Pigens Fod!
+        Speilecabinet!
+        Nok saa net!
 
-           <sc>Mand.</sc>
+<center><nonum><sc>Mand.</sc></nonum></center>
 Ved Comediehuset sig samler en Flok.
 Skal vi gaae derind?
 
-           <sc>Kone.</sc>
-                     Som du vil, ja nok!
+<center><nonum><sc>Kone.</sc></nonum></center>
+                                   <nonum>Som du vil, ja nok!</nonum>
 
-       <sc>Ludvig.</sc>
+<center><nonum><sc>Ludvig.</sc></nonum></center>
 Maa jeg byde Frökenen min Arm?
 
-           <sc>Konen</sc> <small><i>til Maria.</i></small>
+<center><nonum><sc>Konen</sc> <small><i>til Maria.</i></small></nonum></center>
 Forkiöl Dem ikke, De er saa varm!
 
 
 I:oehlen2002020308
 T:Marionetspillet
 F:Höistærede Publikum! her vil
-N:pp. 241-255.
-Q:side
+N:Teksten følger <i>Digte</i> (1803), s. 241-55.
 
-           <sc>Marionetspilleren</sc> <small><i>triner frem og siger:</i></small>
-
+<center><nonum><sc>Marionetspilleren</sc> <small><i>triner frem og siger:</i></small></nonum></center>
 Höistærede Publikum! her vil
 vi före op et Skuespil.
 Et herligt Skuespil, som knap
@@ -5511,7 +5417,7 @@ At gavne medens vi fornöie
 har vi bestandig havt for Öie,<note>Allusion til Wessels <xref digt="wesselfortaellingera5">.</note>
 da det er Kunstens Hovedsag,
 som I skal faae at see idag.
-Her seer I intet <i>Sværmerie.</i>
+Her seer I intet <i>Sværmerie</i>.
 Med sligt har vi ingen Maskepie
 og endnu mindre Sympathie.
 Akkurat som det i Livet gaaer
@@ -5519,17 +5425,17 @@ til Eders Fryd I skue faaer.
 Det er det rene, gedigne Guld.
 Af Moraler Stykket er pære fuld.
 Humanitet, og Dyd og Gavn
-og frem for alt <i>Poesiens Savn,</i>
+og frem for alt <i>Poesiens Savn</i>,
 kort alt hvormed en ærlig Mand
 vor oplyste Tidsalder glæde kan.
 Her seer I nu en borgerlig Stue.
-Vi efterligne <i>Iffland</i> og <i>Kotzebue.</i>
+Vi efterligne <i>Iffland</i> og <i>Kotzebue</i>.
 Hvor huslig og net dog alting staaer!
-Ny begynder vi alt. Det er bedst jeg gaaer!
+Ny begynder vi alt. Det er bedst ieg gaaer!<!-- OS har "jeg" -->
 
-<wrap><small><i>Dækket gaaer op. Skuepladsen forestiller et anstændigt möbleret Værelse, med Stole paa Gulvet, Ruder i Vinduerne o. s. v.  Alt er simpelt, men reenligt.</i></small></wrap>
+     <wrap><small><i>Dækket gaaer op. Skuepladsen forestiller et anstændigt möbleret Værelse, med Stole paa Gulvet, Ruder i Vinduerne o. s. v. Alt er simpelt, men reenligt.</i></small></wrap>
 
-           <sc>Vertinden.</sc>
+<center><nonum><sc>Vertinden.</sc></nonum></center>
 Den Skiebne er dog grumme tung
 at være Enke naar man er ung.
 Vel sandt, min brave, elskte Mand
@@ -5548,7 +5454,7 @@ loe aldrig, men var stedse but;
 kaldte mig dog sin söde Snut.
 Ak, du uforglemmelige Mand!
 Jeg kunde græde en heel Spand Vand.
-           <small><i>Hun græder.</i></small>
+<center><nonum><small><i>Hun græder.</i></small></nonum></center>
 Han döde! - O hvis nu jeg stod
 for en stor Forsamling, med dristigt Mod,
 uden sand eller falsk Undseelse
@@ -5560,77 +5466,77 @@ Livets Hest pidsker af i fuld Gallop
 og inden I veed et Ord deraf
 har den smittet Jer i den sorte Grav!
 Ha ha! hvor jeg dog er grumme vittig.
-           <small><i>Griber sin Rok.</i></small>
+<center><nonum><small><i>Griber sin Rok.</i></small></nonum></center>
 Et Menneske bör være flittig.
-<wrap>     <small><i>Spytter paa Fingeren, nynner en moralsk Spindevise, falder i Tanker, sukker og siger endelig igien:</i></small></wrap>
+     <wrap><small><i>Spytter paa Fingeren, nynner en moralsk Spindevise, falder i Tanker, sukker og siger endelig igien:</i></small></wrap>
 Den Skiebne er dog grumme tung
 at være Enke naar man er ung!
-           <small><i>Det banker.</i></small>
+<center><nonum><small><i>Det banker.</i></small></nonum></center>
 Hvem banker der? Luk op! Kom ind!
 
-           <sc>Frieren</sc> <small><i>kommer.</i></small>
+<center><nonum><sc>Frieren</sc> <small><i>kommer.</i></small></nonum></center>
 Jeg ilte hid som Vestenvind,
 naar den til Rosen sig vil skynde.
 Saa hurtig löber ingen Mynde.
 
-           <sc>Vertinden</sc> <small><i>sagte.</i></small>
+<center><nonum><sc>Vertinden</sc> <small><i>sagte.</i></small></nonum></center>
 Ak! hvilken smuk indtagende Mand.
 Jeg elsker ham allerede alt hvad jeg kan.
-           <small><i>Höit.</i></small>
+<center><nonum><small><i>Höit.</i></small></nonum></center>
 Min Herre! De er jo en Digter.
 
-           <sc>Frieren.</sc>
+<center><nonum><sc>Frieren.</sc></nonum></center>
 Den Tid jeg levner fra mine Pligter
 den offrer jeg de hellige Ni.
 
-           <sc>Vertinden.</sc>
+<center><nonum><sc>Vertinden.</sc></nonum></center>
 De vil nok sige de hellige <i>Fem!</i>
 
-           <sc>Frieren.</sc>
+<center><nonum><sc>Frieren.</sc></nonum></center>
 Bliv ikke vred for jeg modsiger Dem.
-Jeg vilde sige de hellige <i>Ni.</i>
+Jeg vilde sige de hellige <i>Ni</i>.
 Jeg ilte Deres Dör forbi
 og saae et Glimt af Deres Stierne,
 som ganske forrykkede min Hierne.
 
-           <sc>Vertinden</sc> <small><i>skielmsk.</i></small>
+<center><nonum><sc>Vertinden</sc> <small><i>skielmsk.</i></small></nonum></center>
 Et Krudttaarn Hiernen er, min Herre!
-Troe mig, der er sandelig intet værre,
+Troe mig, der er sandelig intet værre
 end naar man den ei vel forskandser,
 mod alle Glimt, med Fornuftens Pandser.
 
-           <sc>Frieren.</sc>
+<center><nonum><sc>Frieren.</sc></nonum></center>
 Fornuftens Pandser, skiönt haardt det er,
 modstaaer dog ikke Kierligheds Sværd!
 
-           <sc>Vertinden.</sc>
+<center><nonum><sc>Vertinden.</sc></nonum></center>
 Elskov er et Barn, som i sin Haand
 kun svinger en Nyrrenberger Hövlespaan.
 
-           <sc>Frieren.</sc>
+<center><nonum><sc>Frieren.</sc></nonum></center>
 Til Jordens Lys blev os Elskov föd,
 en Hövlespaan i Lyset bebuder Död.
 
-           <sc>Vertinden.</sc>
+<center><nonum><sc>Vertinden.</sc></nonum></center>
 Elskovs Sværd er et Einheriasværd,
 man reiser sig snart til en anden Færd.
 
-           <sc>Frieren.</sc>
+<center><nonum><sc>Frieren.</sc></nonum></center>
 De forraader Kundskab og Lekture.
 Jeg skal besynge Dem ved min Lyre.
 
-           <sc>Vertinden.</sc>
+<center><nonum><sc>Vertinden.</sc></nonum></center>
 Af Stolthed kunde mit Hierte stige,
 hvis De mente hvad De behager at sige.
 
-           <sc>Frieren.</sc>
+<center><nonum><sc>Frieren.</sc></nonum></center>
 Min Naadige! Jeg er en Lirendreier,
 men derfor er jeg ingen Lurendreier!
 
-<wrap>           <sc>Vertinden</sc> <small><i>efter en kort Pause:</i></small></wrap>
+<center><nonum><sc>Vertinden</sc> <small><i>efter en kort Pause:</i></small></nonum></center>
 Hvad koster en Skinke paa Torvet idag?
 
-           <sc>Frieren.</sc>
+<center><nonum><sc>Frieren.</sc></nonum></center>
 Bring ikke paa Bane denne Sag.
 Taarerne staae mig i mit Öie.
 Priserne blive alt mere höie.
@@ -5642,105 +5548,103 @@ I min Tid spiste man Öllebröd
 og Bergefisk, som var lagt i Blöd,
 men nu er Folk slet ikke moralske.
 
-           <sc>Vertinden.</sc>
+<center><nonum><sc>Vertinden.</sc></nonum></center>
 Nei nu er de ganske kamschadalske!
 
-           <sc>Frieren.</sc>
+<center><nonum><sc>Frieren.</sc></nonum></center>
 For alting rör ei ved den Byld.
 Kamschatka er en sand Idyl!
 
-           <sc>Vertinden.</sc>
+<center><nonum><sc>Vertinden.</sc></nonum></center>
 Taler De maaskee lignelsesviis,
 fordi den er fuld af Vand og Iis?
 
-           <sc>Frieren.</sc>
+<center><nonum><sc>Frieren.</sc></nonum></center>
 For Kulden bruger man Foderskind,
 hvori de Store svöbes ind.
 
-           <sc>Vertinden.</sc>
+<center><nonum><sc>Vertinden.</sc></nonum></center>
 Lyster Dem ikke en Priis Tobak?
 
-           <sc>Frieren.</sc>
+<center><nonum><sc>Frieren.</sc></nonum></center>
 Fruen skal have saa mange Tak.
 
-<wrap><small><i>I det han vil tage Tobakken rörer han ved hendes Haand. Hun rödmer og taber Daasen. Han seer paa hende, hun seer paa ham. De slaaer Öinene ned, de slaaer Öinene op.</i></small></wrap>
+     <wrap><small><i>I det han vil tage Tobakken rörer han ved hendes Haand. Hun rödmer og taber Daasen. Han seer paa hende, hun seer paa ham. De slaaer Öinene ned, de slaaer Öinene op.</i></small></wrap>
 
-           <sc>Frieren</sc> <small><i>enthousiastisk:</i></small>
+<center><nonum><sc>Frieren</sc> <small><i>enthousiastisk:</i></small></nonum></center>
 O! hvilken Taler, nok saa klog,
 kan tolke Hierternes stumme Sprog?
 Den som sin Fryd med Ord kan male -
-han er arm paa Fryd, eller ogsaa paa Tale!<note>Nogle kritikere og udgivere mener der skulle have stået <i>eller rig paa Tale.</i></note>
-Den sande Glade er stum, for en Hund;<note>Senere udgaver har <i>som en Hund</i></note>
+han er arm paa Fryd, eller ogsaa paa Tale!
+Den sande Glade er stum, for en Hund;<note>Denne linie og den forrige, begge lidt knudrede, har været genstand for forskellige forsøg på rettelser, såsom at rette ,,eller ogsaa paa Tale!'' til ,,eller rig paa Tale.'', at rette ,,Glade'' til ,,Glæde'' og endelig ,,for en Hund'' til ,,som en Hund''.</i></note>
 Glæden slaaer Begplaster paa hans Mund!
 Hans höie Begeistrings Himmelelv
 gaaer meget betænksom i sig selv.
 Rigtignok skulde man troe <i>Poesie</i>
 ved slige Leiligheder Folk stod bi.
-<i>Shakespeare,</i> naar han er begeistret, taler,
-og <i>Göthe,</i> men det duer ei for en Daler.
+<i>Shakespeare</i>, naar han er begeistret, taler,
+og <i>Göthe</i>, men det duer ei for en Daler.
 De fölger ikke den rigtige Regel,
-roses desuden af <i>Tieck</i> og <i>Schlegel.</i>
+roses desuden af <i>Tieck</i> og <i>Schlegel</i>.
 Jeg læser i den spildte Urt
 dit hele Hierte saa reent og puurt.
 Det slaaer for mig, for mig, for mig!
 
-<wrap>           <sc>Vertinden</sc> <small><i>styrter i hans Arme:</i></small></wrap>
+<center><nonum><sc>Vertinden</sc> <small><i>styrter i hans Arme:</i></small></nonum></center>
 Ja, Elskte! ja det slaaer for dig.
 
-           <sc>Frieren.</sc>
+<center><nonum><sc>Frieren.</sc></nonum></center>
 Du gode Gud! hvi staae vi ene?
 Denne skiönne Expositionsscene
 fortiente nok at sees af fleer.
 Saa salig blier jeg aldrig meer!
 
-           <sc>Vertinden.</sc>
+<center><nonum><sc>Vertinden.</sc></nonum></center>
 Du skal blive salig saa tit du vil!
 For dig lukkes aldrig mit Hierte til.
+<center><nonum><small><i>Almindeligt Klap og Bravoraab.</i></small></nonum></center>
 
-       <small><i>Almindeligt Klap og Bravoraab.</i></small>
-
-           <sc>Marionetspilleren</sc>
-<wrap>    <small><i>kommer frem og törrer Sveden af Panden.</i></small></wrap>
+<center><nonum><sc>Marionetspilleren</sc></nonum></center><!-- 1803 har punktum efter talepræfiks -->
+<center><nonum><small><i>kommer frem og törrer Sveden af Panden.</i></small></nonum></center>
 Ihr Herren! Det var den förste Akt.
 Er det ikke som jeg har sagt?
 Den anden er ikke fuldt færdig til Enden.
 Det skal spilles saa varmt, som det kommer af Pennen!
-           <small><i>Gaaer.</i></small>
+<center><nonum><small><i>Gaaer.</i></small></nonum></center>
 
-           <sc>Förste Kunstdommer.</sc>
+<center><nonum><sc>Förste Kunstdommer.</sc></nonum></center>
 Det Stykke er fuldt af sandt Genie!
 
-           <sc>Anden.</sc>
+<center><nonum><sc>Anden.</sc></nonum></center>
 Den pure, klare <i>Livsphilosophie!</i>
 
-           <sc>Tredie.</sc>
+<center><nonum><sc>Tredie.</sc></nonum></center>
 Som er og bliver dog den bedste.
 De maa sige hvad de vil, de Heste!
 
-           <sc>Fierde.</sc>
+<center><nonum><sc>Fierde.</sc></nonum></center>
 Vertindens Rolle er meget naiv.
 
-           <sc>Femte.</sc>
+<center><nonum><sc>Femte.</sc></nonum></center>
 Havde hun kun lidt tyndere Liv.
 
-           <sc>Siette.</sc>
+<center><nonum><sc>Siette.</sc></nonum></center>
 Akteurerne giör saamænd alt hvad de kan.
 Saae De hvordan Frieren greb sig an?
 
-           <sc>Syvende.</sc>
+ <center><nonum><sc>Syvende.</sc></nonum></center>
 De er kun af Træe, men det er det samme.
 De giör mange Levende tilskamme.
 
-<wrap>           <sc>Ludvig</sc> <small><i>sagte til Maria:</i></small></wrap>
+<center><nonum><sc>Ludvig</sc> <small><i>sagte til Maria:</i></small></nonum></center>
 Tag denne glödende Abelsin.
 Hvor dine Kinder har södt Karmin!
 
-<wrap>           <sc>Maria</sc> <small><i>trykker hans Haand:</i></small></wrap>
+<center><nonum><sc>Maria</sc> <small><i>trykker hans Haand:</i></small></nonum></center>
 
+<center><wrap></i></small>Dækket gaaer op. Frieren kommer ind med en stor Potte, som han sætter paa Bordet.</i></small></wrap></center>
 
-<wrap></i></small>Dækket gaaer op. Frieren kommer ind med en stor Potte, som han sætter paa Bordet.</i></small></wrap>
-
-           <sc>Frieren.</sc>
+<center><nonum><sc>Frieren.</sc></nonum></center>
 Nu er jeg da endelig Vert i Huset.
 I Tönden er Viin, jeg har Skyllet Kruset.
 Min Kone sidder varmt inden Döre.
@@ -5751,7 +5655,7 @@ Det er dog galt, naar jeg ret betænker.
 Min ömme Samvittighed det krænker.
 O Gud! hvor kunde jeg handle saa slet?
 Bagefter kommer tyndt Öl, nu angrer jeg det!
-<wrap><small><i>Slaaer sig for Panden og spanker op og ned ad Gulvet, med lange Skridt.</i></small></wrap>
+     <wrap><small><i>Slaaer sig for Panden og spanker op og ned ad Gulvet, med lange Skridt.</i></small></wrap>
 Ha! hvor vi Mennesker dog er smaae. -
 Men tys - jeg hörer nogen gaae!
 Det er nok Een som vil smage min Viin.
@@ -5762,89 +5666,87 @@ Dem blev ei givet dette Pund;
 höist gaae de paa Sokker af Hiertens Grund.
 Men hvad kommer der ud af min tragiske Klage?
 I den <i>virkelige Verden</i> jeg vender tilbage.
-<wrap><small><i>Han visker Stövet af Stolene, skyller Glassene og sætter dem paa Bordet.</i></small></wrap>
+     <wrap><small><i>Han visker Stövet af Stolene, skyller Glassene og sætter dem paa Bordet.</i></small></wrap>
 Nu gavner jeg Verden med min Flid.
 Saaledes bör man anvende sin Tid!
 
-           <sc>Förste Kunstdommer.</sc>
+<center><nonum><sc>Förste Kunstdommer.</sc></nonum></center>
 Hvilken Overgang fra varmt til koldt.
 
-           <sc>Anden.</sc>
+<center><nonum><sc>Anden.</sc></nonum></center>
 Hvor Karakteren er vedligeholdt.
 
-           <sc>Tredie.</sc>
+<center><nonum><sc>Tredie.</sc></nonum></center>
 En Digter er dog et stort Genie!
 
-           <sc>Fierde.</sc>
+<center><nonum><sc>Fierde.</sc></nonum></center>
 Især naar han kiender sin <i>Psychologie!</i>
 
-<wrap><small><i>Det banker paa Dören. Verten lukker op. En Laps kommer ind.</i></small></wrap>
+     <wrap><small><i>Det banker paa Dören. Verten lukker op. En Laps kommer ind.</i></small></wrap>
 
-           <sc>Lapsen.</sc>
+<center><nonum><sc>Lapsen.</sc></nonum></center>
 Herr Vert! lad mig faae et Glas Æggepuns,
 som jeg kan hælde i mit Spuns.
 
-           <sc>Verten.</sc>
+<center><nonum><sc>Verten.</sc></nonum></center>
 Gierne min <i>humoristiske</i> Herre!
 
-           <sc>Lapsen</sc>
-       <small><i>sætter sig paa Bordet og flöiter.</i></small>
+<center><nonum><sc>Lapsen</sc> <small><i>sætter sig paa Bordet og flöiter.</i></small></nonum></center>
 Gid han kun ikke kaldte mig værre!
 
-           <sc>En Tilskuer.</sc>
+<center><nonum><sc>En Tilskuer.</sc></nonum></center>
 Hvad er <i>Humor?</i>
 
-           <sc>En Anden.</sc>
-                   Ikke andet
+<center><nonum><sc>En Anden.</sc></nonum></center>
+                                      <nonum>Ikke andet</nonum>
 end Vædske! Nemlig hvad der er vandet!
 
-           <sc>En Tredie.</sc>
+<center><nonum><sc>En Tredie.</sc></nonum></center>
 Seer I vel Faer! Det er paa sin <i>engelsk!</i>
 
-           <sc>Förste.</sc>
+<center><nonum><sc>Förste.</sc></nonum></center>
 Mig synes för det er paa sin bengelsk.
 
-           <sc>Verten</sc> <small><i>kommer ind.</i></small>
+<center><nonum><sc>Verten</sc> <small><i>kommer ind.</i></small></nonum></center>
 Her er Æggepuns, som kan Ganen glæde.
 Men lyster Dem ikke et bedre Sæde?
-De smudser til deres nye Kiol. <small><i>Med Vægt.</i></small>
+De smudser til deres nye Kiol.    <small><i>Med Vægt.</i></small>
 En fornuftig Mand bör sidde paa Stoel!
 
-           <sc>En Stolemager</sc> <small><i>blandt Tilskuerne.</i></small>
+<center><nonum><sc>En Stolemager</sc> <small><i>blandt Tilskuerne.</i></small></nonum></center>
 Den Hib var god!
 
-           <sc>En Skrædder.</sc>
-                 Kun som De troer.<note>Originalen har <i>troe.</i></note>
+<center><nonum><sc>En Skrædder.</sc></nonum></center>
+                             <nonum>Kun som De troer.</nonum><note>troer] troe</note>
 En fornuftig Mand sidder tit paa Bord.
 
-           <sc>Lapsen.</sc>
+<center><nonum><sc>Lapsen.</sc></nonum></center>
 Meer Punsch, Herr Vert! Töv ei for længe.
-     <small><i>Verten henter meer. Lapsen drikker og tager i Dören.</i></small>
+<center><nonum><small><i>Verten henter meer. Lapsen drikker og tager i Dören.</i></small></nonum></center>
 Adieu Herr Vert! Jeg har ingen Penge.
 
-           <sc>Verten.</sc>
+<center><nonum><sc>Verten.</sc></nonum></center>
 Hvad Knegt? Og dog er du impertinent?
 
-           <sc>Lapsen.</sc>
+<center><nonum><sc>Lapsen.</sc></nonum></center>
 Jeg har Kræfter, det er enhver bekiendt!
 Giör ellers ikke for meget Spektakel.
 I kiender min Fader, den rige Jakel!
 
-           <sc>Verten.</sc>
+<center><nonum><sc>Verten.</sc></nonum></center>
 Snik, Snak! Jeg kiender din Fader ei!
 Du kiender ham maaskee saa lidt som jeg.
+<center><nonum><small><i>De slaaes. Verten faaer Prygl. Lapsen gaaer.</i></small></nonum></center>
 
-  <small><i>De slaaes. Verten faaer Prygl. Lapsen gaaer.</i></small>
-
-       <sc>Verten</sc>
-<wrap><small><i>kommer tilbage. Han gaaer længe med Armene overkors op og ned ad Gulvet. Forventningen er spændt. Endelig giver han sig bitterlig til at græde.</i></small></wrap>
+<center><nonum><sc>Verten</sc></nonum></center>
+     <wrap><small><i>kommer tilbage. Han gaaer længe med Armene overkors op og ned ad Gulvet. Forventningen er spændt. Endelig giver han sig bitterlig til at græde.</i></small></wrap>
 O gudskeelov at jeg fik Luft!
 Nu kom jeg igien til min Fornuft.
 Der er Öieblik da den bliver knækket.
 Jeg kan ordentlig blive ganske forskrækket.
 Men hvad kommer der ud af al min Talen?
 Jeg glemmer jo reent at sige Moralen!
-<wrap><small><i>Han maaler Midten af Theatret med tragiske Skridt, stiller sig derpaa mod Tilskuerne, strækker Armene ud og bröler:</i></small></wrap>
+     <wrap><small><i>Han maaler Midten af Theatret med tragiske Skridt, stiller sig derpaa mod Tilskuerne, strækker Armene ud og bröler:</i></small></wrap>
 Ak! Verden fordrer saa mangt et Suk.
 Jeg skulde havt Penge - og fik kun Hug!
 Det skadte mig ikke! Det skeede med Rette.
@@ -5855,11 +5757,9 @@ O Menneske! Du reent er Beet,
 hvis du slipper din Dyd og din Moralitet.
 Speil dig derfor i mit Exemplar
 og hold paa dem begge, mens du dem har!
+<center><nonum><small><i>Tilskuerne svömmer i Taarer.</i></small></nonum></center>
 
-<small><i>Tilskuerne svömmer i Taarer.</i></small>
-
-<wrap>       <sc>Marionetspilleren</sc> <small><i>med Pengetallerkenen.</i></small></wrap>
-
+<center><nonum><sc>Marionetspilleren</sc> <small><i>med Pengetallerkenen.</i></small></nonum></center>
 Ihr Herren! behager at tilgive.
 For dennegang maa det derved blive.
 En Skielm giver mere end han har.
@@ -5885,14 +5785,12 @@ Binder Munden nu ei paa Oxen, som tærsker.<note>Allusion til <XREF BIBEL="bibel5
 Kaster i min Hat paa den glade Dag.
 Standspersoner betale efter Behag.
 
-           <sc>En Mand</sc> <small><i>giver ham en Toskilling.</i></small>
-
+<center><nonum><sc>En Mand</sc> <small><i>giver ham en Toskilling.</i></small></nonum></center>
 Min kiere Ven! Kom hid! See der!
 Det Stykke er ærligt de Penge værd.
+                                                     <nonum><small><i>Folk gaaer bort.</i></small></nonum>
 
-           <small><i>Folk gaaer bort.</i></small>
-
-           <sc>Manden med Vognen.</sc>
+<center><nonum><sc>Manden med Vognen.</sc></nonum></center>
 Laaner Öre! Laaner Öre!
 Her kan I kiöre,
 allessombedst,<note>Senere udgaver har ,,allersombedst''.</note>
@@ -5910,12 +5808,12 @@ Mekanisk Kunst;
 hvis det morer Jer ei
 maa I kiöre omsonst.
 
+#her
 
 I:oehlen2002012302
 T:Manden ved Kilden
 F:Det er saa lummert og saa tungt
-N:pp. 255-260.
-Q:side
+N:Teksten følger <i>Digte</i> (1803), s. 255-60.
 
 <sc>Manden ved Kilden.</sc>
 
@@ -6103,7 +6001,7 @@ Hast ja nicht Hörner an!
 I:oehlen2002020309
 T:Harlekin og Poppe
 F:Mens Pöbelen hisset vildt sig fryder
-N:pp. 260-269.
+N:Teksten følger <i>Digte</i> (1803), s. 260-269.
 Q:side
 
 
@@ -6290,7 +6188,7 @@ og anvender Jer Forædling i det praktiske Liv.
 I:oehlen2002012305
 T:Pigerne inde i Skoven
 F:I Skyggen vi vanke
-N:pp. 269-273 (men 270-271 er oversprunget i nummereringen)
+N:Teksten følger <i>Digte</i> (1803), s. 269-273 (men 270-271 er oversprunget i nummereringen)
 Q:side
 
            <sc>Pigerne inde i Skoven.</sc>
@@ -6348,7 +6246,7 @@ Det kommer af det hun er saa smuk!
 I:oehlen2002020310
 T:Den Blinde
 F:Hist sidder en gammel Mand, som er blind
-N:pp. 273-275.
+N:Teksten følger <i>Digte</i> (1803), s. 273-275.
 Q:side
 
            <sc>Maria.</sc>
@@ -6504,7 +6402,7 @@ og af det jeg har drukket for meget i Aften!
 I:oehlen2002012306
 T:En gammel Mand med en Perspektivkasse
 F:I kiere Venner! kommer hid
-N:pp. 278-284.
+N:Teksten følger <i>Digte</i> (1803), s. 278-284.
 Q:side
 
 <wrap>  <sc>En gammel Mand</sc> <small><i>med en Perspektivkasse.</i></small></wrap>
@@ -6674,7 +6572,7 @@ kun <i>Anelser</i> om dunkle Tid.
 I:oehlen2002020311
 T:Gyngesang
 F:Op og ned!
-N:pp. 285-287.
+N:Teksten følger <i>Digte</i> (1803), s. 285-287.
 Q:side
 
  <sc>Gyngesang.</sc>
@@ -6830,7 +6728,7 @@ H2:Natur-Mysterie
 I:oehlen2002020313
 T:Natur-Mysterie
 F:Den vilde Stöi nu lyder ikke længer
-N:pp. 292-294.
+N:Teksten følger <i>Digte</i> (1803), s. 292-294.
 Q:side
 
 <sc>Den</sc> vilde Stöi nu lyder ikke længer.
