@@ -42,9 +42,6 @@ my $HTML;
 
 my @works = $mode eq 'poetical' ? $poet->poeticalWorks : $poet->proseWorks;
 
-my $sth = $dbh->prepare("SELECT vhandle,titel,aar,findes FROM vaerker WHERE fhandle=? AND type='v' ORDER BY aar");
-$sth->execute($fhandle);
-
 if ($#works >= 0) {
     my $nr;
     my $splitpos = ($#works+1 > 6) ? int(($#works+1) / 2 + 0.5 ) : 0;
