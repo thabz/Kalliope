@@ -30,7 +30,7 @@ $fhandle = url_param('fhandle');
 $vhandle = url_param('vhandle');
 $outputtype = url_param('mode');
 
-($vtitel,$vaar,$vhandle,$fid,$vid,$vnoter) = $dbh->selectrow_array("SELECT titel,aar,vhandle,fid,vid,noter,type FROM vaerker WHERE vhandle = '$vhandle' AND fhandle = '$fhandle'");
+($vtitel,$vsubtitle,$vaar,$vhandle,$fid,$vid,$vnoter) = $dbh->selectrow_array("SELECT titel,underoverskrift,aar,vhandle,fid,vid,noter,type FROM vaerker WHERE vhandle = '$vhandle' AND fhandle = '$fhandle'");
 
 ($ffornavn,$fefternavn,$ffoedt,$fdoed) = $dbh->selectrow_array("SELECT fornavn,efternavn,foedt,doed FROM fnavne WHERE fhandle = '$fhandle'");
 
@@ -61,14 +61,16 @@ if ($outputtype eq 'XML') {
    <!ENTITY ndash "&#8211;">
    <!ENTITY bdquo "&#8222;">
    <!ENTITY ldquo "&#8220;">
+   <!ENTITY oelig "&#339;">
 ]>
 EOS
     print "<kalliopework>\n";
-    print "<head\n>";
-    print "<title>".$vtitel."</title>\n";
+    print "<head>\n";
+    print "   <title>$vtitel</title>\n";
+    print "   <subtitle>$vsubtitle</subtitle>\n" if $vsubtitle;
     print qq|   <author id="$fhandle">$ffornavn $fefternavn</author>\n|;
-    print "   <date>".$vaar."</date>\n";
-    print "   <notes>".$vnoter."</notes>\n";
+    print "   <date>$vaar</date>\n";
+    print "   <notes>$vnoter</notes>\n";
     print "</head>\n";
     print "<content>\n";
     while($d = $sth->fetchrow_hashref) {

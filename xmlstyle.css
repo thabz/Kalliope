@@ -7,6 +7,13 @@ head title {
    margin-top: 20pt;
 }
 
+head subtitle {
+   font-size: 14pt;
+   display: block;
+   margin-bottom: 10pt;
+   margin-top: 0pt;
+}
+
 poem {
    display: block;
    border-bottom: 1px solid #202080;
@@ -21,6 +28,7 @@ poem title {
    margin-bottom: 10pt;
    margin-top: 20pt;
 }
+
 
 verse {
    margin-top: 10pt;
