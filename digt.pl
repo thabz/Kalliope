@@ -80,7 +80,6 @@ if (defined param('korrektur')) {
 	    "Subject: Korrektur $longdid\r\n".
 	    "\r\n".$mailBody."\r\n");
     $smtp->quit;
-    print STDERR $mailBody;
 }
 
 if (defined param('newkeywords')) {
