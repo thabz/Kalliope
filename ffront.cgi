@@ -115,7 +115,7 @@ my %menuStruct = (
         primaer => { url => 'fsekundaer.pl?mode=p&', 
         title => 'Primærlitteratur', 
         status => $poet->{'primaer'},
-        desc => 'Henvisninger '.$poetName.'s primærlitterautur',
+        desc => 'Henvisninger til '.$poetName.'s primærlitteratur',
         icon => 'gfx/icons/secondary-h48.gif'
                     },
         sekundaer => { url => 'fsekundaer.pl?mode=s&', 
