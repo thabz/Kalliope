@@ -60,4 +60,66 @@ $page->addBox( width => '80%',
 	content => $search->getHTML,
 	end => "Tid i sekunder: ".(time-$starttid) );
 
+if (CGI::param('needle') eq 'prut') {
+    $page->addHTML(&getEasterJS());
+}
+
 $page->print();
+
+
+sub getEasterJS {
+    my $NUM = 10;
+return <<"EOF";
+<SCRIPT>
+for (i=1;i<=$NUM;i++) {
+   document.write('<DIV ID=div'+i+' STYLE="position:absolute"><IMG SRC="gfx/icons/poet-w64.gif"></DIV>');
+
+}
+
+mainx1=0;mainx2=10;mainy1=20;mainy2=1;
+mainaddx1=5; mainaddx2=-7; mainaddy1=-5; mainaddy2=9;
+addx1 = 47; addx2 = 59; addy1 = 42; addy2 = -57;
+
+sinusTable = new Array(1024);
+
+layerObjs = new Array($NUM);
+
+function doFrame() {
+   tempx1 = mainx1 = ( mainx1 + mainaddx1 ) & 1023;
+   tempx2 = mainx2 = ( mainx2 + mainaddx2 ) & 1023;
+   tempy1 = mainy1 = ( mainy1 + mainaddy1 ) & 1023;
+   tempy2 = mainy2 = ( mainy2 + mainaddy2 ) & 1023;
+   for (i=0;i<$NUM;i++) {
+      tempx1 = (tempx1 + addx1 ) &1023;
+      tempx2 = (tempx2 + addx2 ) &1023;
+      tempy1 = (tempy1 + addy1 ) &1023;
+      tempy2 = (tempy2 + addy2 ) &1023;
+
+      layerObjs[i].left = sinusTable[tempx1]+sinusTable[tempx2];
+      layerObjs[i].top = sinusTable[tempy1]+sinusTable[tempy2];
+   }
+   setTimeout("doFrame()",20);
+}
+
+for (i=0; i<$NUM; i++) {
+    if (document.all) {
+	layerObjs[i] = document.all('div'+(i+1)).style;
+   } else if (document.layers) {
+       layerObjs[i] = document.layers['div'+(i+1)];
+   } else {
+       layerObjs[i] = document.getElementById('div'+(i+1)).style;
+
+   }
+}
+
+for(i=0;i<1024;i++) {
+   sinusTable[i] = Math.floor(150*Math.sin(2*Math.PI*(i/1024)))+150;
+}
+
+doFrame();
+
+</SCRIPT>
+</BODY></HTML>
+EOF
+
+}
