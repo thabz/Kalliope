@@ -129,6 +129,15 @@ if ($poem->footnotes) {
 
 }
 
+if ($poem->hasLineNotes) {
+    $page->addBox( width => '250',
+	           coloumn => 2,
+	           printer => 1,
+		   theme => 'dark',
+                   title => 'Fodnoter',
+	           content => &linenotes($poem) );
+}
+
 if (&xrefs($poem)) { 
     $page->addBox( width => '250',
 	           coloumn => 2,
@@ -233,6 +242,20 @@ sub footnotes {
        $i++;
     }
     $HTML .= '</TABLE>';
+    return $HTML;
+}
+
+sub linenotes {
+    my $poem = shift;
+    my @lines = $poem->getContentAsLineHashes;
+    my $HTML;
+    foreach my $line (@lines) {
+	my %line = %{$line};
+	my $text = $line{'linenote'};
+	next unless $text;
+	my $num = $line{'linenum'};
+	$HTML .= "<b>$num</b> $text ";
+    }
     return $HTML;
 }
 

@@ -140,9 +140,8 @@ sub extractFootnotes {
     my ($self,$content) = @_;
     my @footnotes = $self->{'footnotes'} ? @{$self->{'footnotes'}} : ();
     my $num = $#footnotes >= 0 ? $#footnotes + 2 : 1;
-    $content =~ s/<note>/<footnote>/g;
-    $content =~ s/<\/note>/<\/footnote>/g;
-    $content = $self->resolveBiblioTags($content);
+#$content =~ s/<note>/<footnote>/g;
+#   $content =~ s/<\/note>/<\/footnote>/g;
     while ($content =~ s/<footnote>(.*?)<\/footnote>/<footmark id="footnote$num"\/>/mi) {
        push @{$self->{'footnotes'}},$1;
        $num++;
@@ -150,10 +149,18 @@ sub extractFootnotes {
     return $content;
 }
 
-
 sub footnotes {
     my $self = shift;
     return $self->{'footnotes'} ? @{$self->{'footnotes'}} : ();
+}
+
+sub getContentAsLineHashes {
+    my $self = shift;
+    return $self->{'lineHashes'} ? @{$self->{'lineHashes'}} : ();
+}
+
+sub hasLineNotes {
+    return shift->{'hasLineNotes'} || 0;
 }
 
 sub content {
@@ -170,6 +177,8 @@ sub content {
 	$self->{'noter'} = $data->{'noter'};
         $self->{'type'} = $data->{'type'};
 	$self->{'indhold'} = $self->extractFootnotes($self->{'indhold'});
+        $self->{'indhold'} = $self->resolveBiblioTags($self->{'indhold'});
+	$self->{'indhold'} = $self->_resolveTags($self->{'indhold'});
     }
     my $result;
 
@@ -182,7 +191,7 @@ sub content {
     } else {
          $result = $self->_contentAsPoemHTML();
     }
-    return _resolveTags($result); 
+    return $result;
 }
 
 sub _contentAsProseHTML {
@@ -205,6 +214,8 @@ sub _contentAsPoemHTML {
     my $dispNum = 0;
     my $lastNum = 0;
     foreach my $line (split /\n/,$self->{'indhold'}) {
+	my %lineHash;
+
 	if ($line =~ /<resetnum>/) {
 	    $line =~ s/<resetnum>//;
 	    $lastNum=0;
@@ -213,7 +224,7 @@ sub _contentAsPoemHTML {
 	}
 	my $lineForTjek = $line;
 	$lineForTjek =~ s/<[^>]+>//g;
-	if (   $lineForTjek =~ /[^ _\t\-]/
+	if ( $lineForTjek =~ /[^ _\t\-]/
 		&& $lineForTjek !~ /^ *\d+\.? *$/
 		&& $line !~ /<nonum>/
 		&& $line !~ /<wrap>/
@@ -234,6 +245,8 @@ sub _contentAsPoemHTML {
 	    $align = 'right';
 	    $line =~ s/<\/?right>//g;
 	}
+	$lineHash{'linenum'} = $num;
+	$lineHash{'align'} = $align;
 
 	$line =~ s/<\/?nonum>//gi;
 
@@ -250,20 +263,34 @@ sub _contentAsPoemHTML {
 	} else {
 	    $dispNum = '';
 	};
+	$lineHash{'displayLineNumber'} = $dispNum;
 
 	my $wrap = 'nowrap';
 	if ($line =~ /<wrap>/i) {
 	    $wrap = 'normal';
 	    $line =~ s/<\/?wrap>//g;
 	}
+	$lineHash{'white-space'} = $wrap;
+
+        # Grab line note 
+	if ($line =~ /<note>/i) {
+	    $line =~ s/<note>(.*?)<\/note>//;
+	    $lineHash{'linenote'} = $1;
+	    $self->{'hasLineNotes'} = 1;
+	    print STDERR "Linenote!\n";
+	}
 	
         # Fix indents
 	$line =~ s/^(\s+)/_nbsp($1)/e;
+
+	$lineHash{'text'} = $line;
 	
 	$result .= qq|<tr><td style="font-size: 9pt; color: #808080; text-align: left">|.$dispNum.'</td>';
 	$result .= qq|<td style="white-space: $wrap; text-align: $align" $wrap>$line </td>\n|;
 	$result .= '</tr>';
+	push @{$self->{'lineHashes'}}, \%lineHash;
     }
+    $self->{'numberOfVerses'} = $num;
     return $result.'</table>';
 }
 
@@ -280,7 +307,7 @@ sub _contentAsPlainPoemHTML {
 }
 
 sub _resolveTags {
-    my $txt = shift;
+    my ($self,$txt) = @_;
     $txt =~ s/<w>/<span class="wide">/gi;
     $txt =~ s/<\/w>/<\/span>/gi;
     $txt =~ s/<sc>/<span style="font-variant: small-caps">/g;
@@ -305,6 +332,10 @@ sub contentForSearch {
 
 sub _nbsp {
     return '&nbsp;'x(length shift);
+}
+
+sub getNumberOfVerses {
+    return shift->{'numberOfVerses'}
 }
 
 sub notes {
