@@ -146,15 +146,12 @@ sub list19 {
 	if ($f->{'sort'} - $last >= 25) {
 	    $last = $f->{'sort'} - $f->{'sort'}%25;
 	    $last2 = $last + 24;
-	    $blocks[$bi]->{'body'} .= '</TABLE>' unless $bi == -1;
 	    $bi++;
 	    $blocks[$bi]->{'head'} = "<DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR>";
-	    $blocks[$bi]->{'body'} = '<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=0>';
 	}
-	$blocks[$bi]->{'body'} .= '<TR><TD><A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.", ".$f->{'fornavn'}.'</A></TD><TD></TD><TD ALIGN="right"><FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></TD></TR>';
+	$blocks[$bi]->{'body'} .= '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%"><TR><TD NOWRAP><A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.",&nbsp;".$f->{'fornavn'}.'</A></TD><TD WIDTH="100%" BACKGROUND="gfx/gray_ellipsis.gif">&nbsp;</TD><TD ALIGN="right"><FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></TD></TR></TABLE>';
 	$blocks[$bi]->{'count'}++;
     }
-    $blocks[$bi]->{'body'} .= '</TABLE>' unless $bi == -1;
 
     # Udenfor kategori (dvs. folkeviser, o.l.)
     $bi++;
@@ -163,8 +160,9 @@ sub list19 {
     if ($sth->rows) {
 	$blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">Ukendt fødeår</DIV><BR>|;
 	while ($f = $sth->fetchrow_hashref) {
-	    $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'fornavn'}." ".$f->{'efternavn'}.' <FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></A><BR>';
+#	    $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'fornavn'}." ".$f->{'efternavn'}.' <FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></A><BR>';
 	    #$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'fornavn'}.' '.$f->{'efternavn'}.'</A><BR>';
+	$blocks[$bi]->{'body'} .= '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%"><TR><TD NOWRAP><A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.",&nbsp;".$f->{'fornavn'}.'</A></TD><TD WIDTH="100%" BACKGROUND="gfx/gray_ellipsis.gif">&nbsp;</TD><TD NOWRAP ALIGN="right"><FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></TD></TR></TABLE>';
 	    $blocks[$bi]->{'count'}++;
 	}
     }
