@@ -157,17 +157,13 @@ sub updateHitCounter {
     $dbh->do("replace into digthits (longdid,hits,lasttime) VALUES (?,?,?)","",$longdid,++$hits,time());
 }
 
-sub fid {
-    return shift->{'fid'};
-}
-
 sub fhandle {
     return shift->{'fhandle'};
 }
 
 sub author {
     my $self = shift;
-    return Kalliope::PersonHome::findByFid($self->fid);
+    return Kalliope::PersonHome::findByFhandle($self->fhandle);
 }
 
 sub year {
