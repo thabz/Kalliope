@@ -38,6 +38,7 @@ push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,['Bibliografi',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
+				      printer => url_param('printer') || 0,
                                       page => 'bibliografi',
                                       crumbs => \@crumbs );
 
@@ -53,7 +54,9 @@ if (-e "fdirs/$fhandle/primaer.txt") {
     $page->addBox(
 	    width => '80%',
 	    coloumn => 0,
+	    printer => 1,
 	    title => 'Primærlitteratur',
+	    end => qq|<a title="Udskriftsvenlig udgave" href="fsekundaer.pl?fhandle=$fhandle&printer=1"><img src="gfx/print.gif" border=0></a>|,
 	    content => $HTML );
 }
 
@@ -68,7 +71,9 @@ if (-e "fdirs/$fhandle/sekundaer.txt") {
     $page->addBox(
 	    width => '80%',
 	    coloumn => 1,
+	    printer => 1,
 	    title => 'Sekundærlitteratur',
+	    end => qq|<a title="Udskriftsvenlig udgave" href="fsekundaer.pl?fhandle=$fhandle&printer=1"><img src="gfx/print.gif" border=0></a>|,
 	    content => $HTML );
 }
 
