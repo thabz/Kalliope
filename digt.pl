@@ -59,12 +59,12 @@ push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,['Værker','fvaerker.pl?fhandle='.$poet->fhandle];
 push @crumbs,[$work->titleWithYear,'vaerktoc.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->vhandle];
-push @crumbs,[$poem->title,''];
+push @crumbs,[$poem->linkTitle,''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
 				      printer => url_param('printer') || 0,
                                       page => 'vaerker',
-				      extrawindowtitle => $poem->title,
+				      extrawindowtitle => $poem->linkTitle,
                                       crumbs => \@crumbs);
 
 
@@ -187,7 +187,7 @@ sub moreLinks {
 sub poem {
     my ($poem,$needle,$biblemark) = @_;
     my $HTML;
-    $HTML .= '<SPAN CLASS="digtoverskrift"><I>'.$poem->title."</I></SPAN><BR>";
+    $HTML .= '<SPAN CLASS="digtoverskrift"><I>'.$poem->topTitle."</I></SPAN><BR>";
     $HTML .= '<SPAN CLASS="digtunderoverskrift">'.$poem->subtitle.'</SPAN><BR>' if $poem->subtitleAsHTML;
     $HTML .= '<BR>';
 

@@ -208,8 +208,8 @@ sub getCrumbs {
 
 sub poeticalWorks {
     my $self = shift;
-    my $sth = $dbh->prepare("SELECT vid FROM vaerker WHERE fid=? AND type='v' ORDER BY aar");
-    $sth->execute($self->fid);
+    my $sth = $dbh->prepare("SELECT vid FROM vaerker WHERE fhandle = ? AND type='poetry' ORDER BY aar");
+    $sth->execute($self->fhandle);
     my @list;
     while (my ($vid) = $sth->fetchrow_array) {
         push @list, new Kalliope::Work('vid' => $vid);
@@ -219,8 +219,8 @@ sub poeticalWorks {
 
 sub proseWorks {
     my $self = shift;
-    my $sth = $dbh->prepare("SELECT vid FROM vaerker WHERE fid=? AND type='p' ORDER BY aar");
-    $sth->execute($self->fid);
+    my $sth = $dbh->prepare("SELECT vid FROM vaerker WHERE fhandle = ? AND type='prose' ORDER BY aar");
+    $sth->execute($self->fhandle);
     my @list;
     while (my ($vid) = $sth->fetchrow_array) {
         push @list, new Kalliope::Work('vid' => $vid);
@@ -334,3 +334,4 @@ sub getBiblioEntryAsString {
 }
 
 1;
+

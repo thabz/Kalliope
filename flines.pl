@@ -78,8 +78,9 @@ my %works = map {$_->vid => $_} $poet->poeticalWorks;
 #
 
 my @f;
-my $sth = $dbh->prepare("SELECT longdid, digte.tititel as titel, digte.foerstelinie, digte.vid FROM digte, vaerker WHERE digte.fid=? AND digte.vid = vaerker.vid AND digte.layouttype = 'digt' AND afsnit=0");
-$sth->execute($poet->fid);
+my $extraSQL = $mode == 1 ? "AND digte.tititel IS NOT NULL" : "AND digte.foerstelinie IS NOT NULL";
+my $sth = $dbh->prepare("SELECT longdid, digte.tititel as titel, digte.foerstelinie, digte.vid,digte.section FROM digte, vaerker WHERE digte.fhandle = ? AND digte.vid = vaerker.vid $extraSQL");
+$sth->execute($poet->fhandle);
 while (my $f = $sth->fetchrow_hashref) { 
     $f->{'sort'} = $mode == 1 ? $f->{'titel'} : $f->{'foerstelinie'};
     push @f,$f;
@@ -118,7 +119,12 @@ for (my $i = 0; $i <= $#lines; $i++) {
     $blocks[$idx]->{'head'} = '<DIV CLASS=listeoverskrifter>'.$firstLetterNew.'</DIV><BR>';
     $blocks[$idx]->{'count'}++;
     my $w = $works{$f->{'vid'}};
-    $blocks[$idx]->{'body'} .= '<p CLASS="digtliste"><A TITLE="Fra '.$w->titleWithYear.'" HREF="digt.pl?longdid='.$f->{'longdid'}.'">'.$line.'</A></p>';
+    print STDERR $f->{'vid'}." is missing\n" unless $w;
+    next unless $w;
+
+    my $url = $$f{section} ? qq(vaerktoc.pl?fhandle=$fhandle&vhandle=).$w->vhandle."#$$f{longdid}" : qq(digt.pl?longdid=$$f{'longdid'});
+    
+    $blocks[$idx]->{'body'} .= '<p CLASS="digtliste"><A TITLE="Fra '.$w->titleWithYear.qq(" HREF="$url">$line</A></p>);
     $previousLine = $line3;
 
 }

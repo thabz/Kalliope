@@ -109,11 +109,11 @@ sub dayToday {
 sub sonnet {
     my ($HTML,$END);
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT otherid FROM keywords_relation,keywords,digte WHERE keywords.ord = 'sonnet' AND keywords_relation.keywordid = keywords.id AND keywords_relation.othertype = 'digt' AND otherid = digte.did AND digte.lang = 'dk' ORDER BY RAND() LIMIT 1");
+    my $sth = $dbh->prepare("SELECT d.longdid FROM textxkeyword t, digte d WHERE t.keyword = 'sonnet' AND t.longdid = d.longdid AND d.lang = 'dk' ORDER BY RAND() LIMIT 1");
     $sth->execute();
-    my ($did) = $sth->fetchrow_array;
-    return ('','') unless $did;
-    my $poem = new Kalliope::Poem(did => $did);
+    my ($longdid) = $sth->fetchrow_array;
+    return ('','') unless $longdid;
+    my $poem = new Kalliope::Poem(longdid => $longdid);
     $HTML .= '<small>'.$poem->content(layout => 'plainpoem').'</small>';
     my $poet = $poem->author;
     $HTML .= '<br><div style="text-align:right"><i><small>'.$poet->name.'</small></i></div>';

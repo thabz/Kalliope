@@ -49,7 +49,7 @@ my $page = newAuthor Kalliope::Page ( poet => $poet,
                                       extrawindowtitle => $work->titleWithYear,
                                       crumbs => \@crumbs );
 
-my ($vtitel,$vaar,$vid,$noter) = $dbh->selectrow_array("SELECT titel, aar, vid,noter FROM vaerker WHERE vhandle = '$vhandle' AND fhandle = '$fhandle'");
+my ($vtitel,$vaar,$vid) = $dbh->selectrow_array("SELECT titel, aar, vid FROM vaerker WHERE vhandle = '$vhandle' AND fhandle = '$fhandle'");
 
 
 #$page->addBox( width => '80%',
@@ -167,38 +167,47 @@ sub tableOfContent {
 	$HTML .= '<SPAN CLASS="workunderoverskrift"><i>'.$subTitle.'</i></SPAN><BR>';
     }
     $HTML .= '<BR>';
-    my $sth = $dbh->prepare("SELECT longdid,toctitel as titel,afsnit,did FROM digte WHERE vid=? ORDER BY vaerkpos");
+    my $sth = $dbh->prepare("SELECT longdid,toctitel as titel,type,did FROM digte WHERE vid=? ORDER BY vaerkpos");
     $sth->execute($work->vid);
     return 'Kalliope indeholder endnu ingen tekster fra dette værk.' unless $sth->rows;
-    $HTML .= qq|\n<table cellpadding="0" cellspacing="0">\n|;
+    $HTML .= _renderSection($work->vid,0,1);
+    $sth->finish;
+    return $HTML;
+}
 
-    while(my $d = $sth->fetchrow_hashref) {
-	my $tit = $d->{'titel'};
+sub _renderSection {
+    my ($vid,$parent,$depth) = @_;
+    print STDERR "Render parent $parent\n";
+    my $HTML;
+    my $indentstr = '&nbsp;'x8;
+    my $sthgroup = $dbh->prepare("SELECT longdid,toctitel as title, type,did FROM digte WHERE vid = ? AND parentdid = ? AND toctitel IS NOT NULL ORDER BY vaerkpos");
+    $sthgroup->execute($vid,$parent);
+    $HTML .= qq|\n<table cellpadding="0" cellspacing="0">\n|;
+    while (my $d = $sthgroup->fetchrow_hashref) {
+	$HTML .= "<tr><td>$indentstr</td>";
+	my $tit = $d->{'title'};
 	my $num;
-        if ($tit =~ /<num>/) {
+	if ($tit =~ /<num>/) {
 	    ($num) = $tit =~ /<num>(.*?)<\/num>/;
 	    $tit =~ s/<num>.*?<\/num>//;
-	}		
-	
-        #if ($d->{'afsnit'} && !($tit =~ /^\s*$/)) {
-	if ($d->{'afsnit'}) {
-	    $tit = qq|<span class="toctitle$$d{afsnit}"><br>$tit</span>|;
-	} else {
-	    $tit = qq|<a href="digt.pl?longdid=$$d{longdid}">$tit</a>|;
 	}
-	if ($num) {
-	    $HTML .= qq|<tr><td nowrap class="tocnum">$num</td><td>$tit</td></tr>\n|;
-	} else { 
-	    if ($d->{'afsnit'}) {
-	       $HTML .= qq|<tr><td colspan="2">$tit</td></tr>\n|;
-   	    } else {
-	        $HTML .= qq|<tr><td colspan="2">&nbsp;&nbsp;&nbsp;$tit</td></tr>\n|;
+	my $anchor = $$d{longdid} ? qq(<A NAME="$$d{longdid}">) : '';
+	if ($d->{'type'} eq 'section') {
+	    $HTML .= qq|<td colspan="2" class="toctitle$depth">|;
+	    $HTML .= qq|$anchor$tit</td></tr>\n|;
+	    $HTML .= qq|<tr><td>$indentstr</td><td colspan="2">|;
+   	    $HTML .= _renderSection($vid,$d->{'did'},$depth+1);
+	    $HTML .= "</td></tr>\n";
+	} else {
+	    my $link = qq|$anchor<a href="digt.pl?longdid=$$d{longdid}">$tit</a>|;
+	    if ($num) {
+		$HTML .= qq(<td class="tocnum">$num</td><td>$link</td></tr>\n);
+	    } else {
+		$HTML .= qq(<td colspan="2">$link</td></tr>\n);
 	    }
 	}
-
-    }
-    $HTML .= '</table>';
-    $sth->finish;
+    }		
+    $HTML .= qq(\n</table>);
     return $HTML;
 }
 

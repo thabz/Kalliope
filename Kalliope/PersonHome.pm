@@ -38,5 +38,9 @@ sub findByFid {
     }
 }
 
+sub findByFhandle {
+    return new Kalliope::Person('fhandle' => shift);
+}
+
 1;
 

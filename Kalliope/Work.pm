@@ -93,7 +93,12 @@ sub clickableTitle {
 
 sub notes {
     my $self = shift;
-    my @notes = split /\n+/,$self->{'noter'};
+    my @notes;
+    my $sth = $dbh->prepare("SELECT note FROM worknotes WHERE fhandle = ? AND vhandle = ? ORDER BY orderby");
+    $sth->execute($self->fhandle,$self->vhandle);
+    while (my ($note) = $sth->fetchrow_array) {
+	push @notes,$note;
+    }
     return @notes;
 }
 
@@ -173,7 +178,7 @@ sub parenthesizedYear {
 }
 
 sub hasContent {
-    return shift->{'findes'} == 1;
+    return shift->{'hascontent'} eq 'yes';
 }
 
 sub iconURI {

@@ -382,22 +382,25 @@ a.submenu:hover {
 
 /* Work TOC */
 
-span.toctitle1 {
+td.toctitle1 {
     font-size: 14px;
     font-style: italic;
     font-weight: bold;
+    padding-top: 20px;
 }
 
-span.toctitle2 {
+td.toctitle2 {
     font-size: 13px;
     font-style: italic;
     font-weight: bold;
+    padding-top: 10px;
 }
 
-span.toctitle3 {
+td.toctitle3 {
     font-size: 12px;
     font-style: italic;
     font-weight: bold;
+    padding-top: 5px;
 }
 
 td.tocnum {

@@ -42,7 +42,7 @@ sub new {
     $sql = 'did = '.$arg{'did'} if defined $arg{'did'};
     $sql = 'did = '.$arg{'id'} if defined $arg{'id'};
     confess "Need some kind of id to initialize a new poem\n" unless $sql;
-    my $sth = $dbh->prepare("SELECT did,fid,vid,longdid,titel,toctitel,underoverskrift,foerstelinie,layouttype,pics,quality FROM digte WHERE $sql");
+    my $sth = $dbh->prepare("SELECT did,fhandle,vid,longdid,toptitel,linktitel,toctitel,underoverskrift,foerstelinie,layouttype,pics,quality FROM digte WHERE $sql");
     $sth->execute();
     return undef unless $sth->rows;
 
@@ -75,8 +75,12 @@ sub isProse {
     return shift->{'layouttype'} eq 'prosa' ? 1 : 0;
 }
 
-sub title {
-    return $_[0]->{'titel'};
+sub topTitle {
+    return $_[0]->{'toptitel'};
+}
+
+sub linkTitle {
+    return $_[0]->{'linktitel'};
 }
 
 sub tocTitle {
@@ -407,8 +411,8 @@ sub updateHitCounter {
     }
 }
 
-sub fid {
-    return $_[0]->{'fid'};
+sub fhandle {
+    return shift->{'fhandle'};
 }
 
 sub clickableTitle {
@@ -427,7 +431,7 @@ sub smallIcon {
 
 sub author {
     my $self = shift;
-    return Kalliope::PersonHome::findByFid($self->fid);
+    return Kalliope::PersonHome::findByFhandle($self->fhandle);
 }
 
 sub vid {
