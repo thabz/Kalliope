@@ -25,11 +25,11 @@ use CGI qw(:standard);
 use Kalliope::Page();
 use Kalliope::Sort();
 use Kalliope::Date ();
-use strict;
+#use strict;
 
 my $mode = url_param('mode') || 'titel';
 my $LA = url_param('sprog') || 'dk';
-my $limit = url_param('limit') || '10';
+my $limit = url_param('limit') eq 'no' ? 0 : 1;
 
 my %crumbTitle = ('aar'    => 'efter år',
                   'titel'  => 'efter titel',
@@ -193,7 +193,8 @@ if ($mode eq 'titel') {
 
 } elsif ($mode eq 'pop') {
     my $HTML;
-    my $sth = $dbh->prepare("SELECT fornavn, efternavn, v.titel as vtitel, vhandle, aar, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f, vaerker as v WHERE dh.longdid = d.longdid AND d.fid = f.fid AND d.vid = v.vid AND f.sprog=? GROUP BY v.vid ORDER BY hits DESC ".(defined($limit) ? 'LIMIT '.$limit : ''));
+    print STDERR "\nLimit = $limit\n";
+    my $sth = $dbh->prepare("SELECT fornavn, efternavn, v.titel as vtitel, vhandle, aar, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f, vaerker as v WHERE dh.longdid = d.longdid AND d.fid = f.fid AND d.vid = v.vid AND f.sprog=? GROUP BY v.vid ORDER BY hits DESC ".($limit == 0 ? '' : 'LIMIT 10' ));
     $sth->execute($LA);
     my $i = 1;
     my $total;
@@ -211,9 +212,9 @@ if ($mode eq 'titel') {
     }
     my $endHTML = '';
 
-    if (defined($limit)) {
+    if ($limit == 1) {
         $HTML .= '</TABLE>';
-        $endHTML = '<A class="more" HREF="kvaerker.pl?mode=pop&sprog='.$LA.'">Se hele listen...</A>';
+        $endHTML = '<A class="more" HREF="kvaerker.pl?mode=pop&limit=no&sprog='.$LA.'">Se hele listen...</A>';
     } else {
         $HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD><TD></TD></TR>";
         $HTML .= '</TABLE>';
