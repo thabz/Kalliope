@@ -45,7 +45,7 @@ if ($knap) {
     &handleForm($dir,$filename,$knap);
     my (undef,$next) = _nextAndPrevFiles($dir,$filename);
     print $next ? "Location: edit.cgi?dir=$dir&file=$next\n" : 
-	          "Location: edit.cgi?dir=$dir\n"
+	          "Location: edit.cgi?dir=$dir\n";
 } elsif ($filename) {
     $HTML = &editPage($dir,$filename);
 } elsif ($dir) {
@@ -100,10 +100,11 @@ sub editPage {
     $HTML .= qq|<td valign=top>|;
     $HTML .= $navHTML;
     $HTML .= qq|<br><img src="edit/files/$gfxFile"></td>|;
-    $HTML .= qq|<td valign=top><textarea rows=30 name="data" style="width:300px; height:90%">$data</textarea><br>|;
+    $HTML .= qq|<td valign=top>|;
+    $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Duplet">';
+    $HTML .= qq|<textarea rows=30 name="data" style="width:300px; height:90%">$data</textarea><br>|;
     $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Gem ændringer">';
     $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Godkend tekst">';
-    $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Duplet">';
     $HTML .= '</td>';
     $HTML .= '</tr></table>';
     $HTML .= '</form>';
