@@ -23,6 +23,7 @@
 package Kalliope;
 use URI::Escape;
 use Kalliope::Poem;
+use Kalliope::Poem::Bible;
 
 #
 # Datoer 
@@ -59,16 +60,16 @@ sub buildhrefs {
     my $txt = $_[0];
     $$txt =~ s/,,/&bdquo;/g;
     $$txt =~ s/''/&ldquo;/g;
-   if ($$txt =~ /<XREF BIBEL="(.+)">/) {
-      my $did = $1;
-      my $poem = new Kalliope::Poem(longdid => $did);
+   if ($$txt =~ /<XREF BIBEL="([^"]+)">/) {
+      my ($did,$verse) = split /,/,$1;
+      my $poem = new Kalliope::Poem::Bible(longdid => $did);
       my $link;
       if ($poem) {
-	  $link = $poem->clickableTitleSimple;
+	  $link = $poem->clickableTitleSimple($verse);
       } else {
           $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
       }
-      $$txt =~ s/<XREF BIBEL="$did">/$link/;
+      $$txt =~ s/<XREF BIBEL="[^"]+">/$link/;
    }
    if ($$txt =~ /<XREF DIGT="(.+)">/) {
       my $did = $1;
