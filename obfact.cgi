@@ -24,6 +24,7 @@
 
 use Kalliope::Page();
 use Kalliope::DB();
+use Kalliope;
 
 $dbh = Kalliope::DB::connect();
 my $sth;
@@ -85,6 +86,27 @@ $HTML .= "<li>Digterne blev i gennemsnit $val år gamle.";
 
 $HTML .= '</ul>';
 
+$HTML .= '<h3>Årets runde datoer</h3>';
+$HTML .= '<table>';
+my $sth = $dbh->prepare("select * from timeline where (? - year) % 50 = 0 and type = 'event' order by month,day");
+$sth->execute(2002);
+while ($h = $sth->fetchrow_hashref) {
+    $HTML .= '<tr><td>';
+    if ($h->{'day'}) {
+	$HTML .= "$$h{year}-$$h{month}-$$h{day}";
+    } else {
+	$HTML .= "$$h{year}";
+    }
+    $HTML .= ": ";
+    $HTML .= '</td><td>';
+    my $text = $h->{'description'};
+    Kalliope::buildhrefs(\$text);
+    $HTML .= $text;
+    $HTML .= '</td><td>(';
+    $HTML .= 2002-$h->{'year'};
+    $HTML .= ' år)</td></tr>';
+}
+$HTML .= '</table>';
 $page->addBox( content => $HTML );
 $page->print();
 
