@@ -25,6 +25,7 @@ use strict;
 use DBI;
 use Carp;
 use vars qw($COMC_DBH);
+use Kalliope::Page;
 
 sub connect {
     # connect
@@ -39,15 +40,7 @@ sub connect {
 }
 
 sub connect_error {
-    print "Content-Type: text/html; charset=ISO-8859-1\r\n",
-    "\r\n";
-    print '<HTML><HEAD>',
-    '<TITLE>Database Fejl</TITLE>',
-    '</HEAD><BODY>',
-    '<H1>Database Fejl</H1>',
-    'Der opstod en fejl under tilslutning til databasen, prøv igen senere!<P>',
-    $DBI::errstr,
-    '</BODY></HTML>';
+    Kalliope::Page::notFound('Der opstod en fejl under tilslutning til databasen, prøv igen senere!<p><i>'.$DBI::errstr.'</i>');
     exit;
 }
 
