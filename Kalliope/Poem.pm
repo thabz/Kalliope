@@ -245,6 +245,13 @@ sub _contentAsPoemHTML {
 	}
 	my $align = 'left';
 
+        # Gray out versenumbers
+	if ($lineForTjek =~ /^[ \t]*[IVXLMD]+\.? *$/ 
+               || $lineForTjek =~ /^ *\d+\.? *$/
+	       || $lineForTjek =~ /^ *\[\d+\] *$/ ) {
+	    $line = qq|<span style="color:#808080">$line</span>|;
+	}
+
 	if ($line =~ /<center>/) {
 	    $align = 'center';
 	    $line =~ s/<\/?center>//g;
