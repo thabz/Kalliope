@@ -184,7 +184,8 @@ A.leftframe:hover {
 
 A.white:link, A.white:visited, A.white:active { 
     text-decoration:none;
-    color: white;
+    color: rgb(217,206,189);
+
 }
 A.green:link, A.green:visited, A.green:active { 
 color: rgb(139,56,65)
