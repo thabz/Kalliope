@@ -98,7 +98,7 @@ if (defined param('newkeywords')) {
     $poem->addToKeyPool(param('newkeywords'));
 }
 
-$page->addBox( width => '',
+$page->addBox( width => $poem->isProse ? '' : '10',
 	       coloumn => 1,
                align => $poem->isProse ? 'justify' : 'left',
 	       content => &poem($poem,$needle,$biblemark) );
