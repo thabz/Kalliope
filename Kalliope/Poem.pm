@@ -466,7 +466,8 @@ sub getSearchResultEntry {
     my $match = '';
     my $slash = '<SPAN STYLE="color: #a0a0a0">//</SPAN>';
     foreach my $ne (@needle) {
-	my ($a,$b,$c) = $content =~ /(.{0,30})($ne)(.{0,30})/si;
+	$ne .= '\W' if $ne !~ /\*$/;
+	my ($a,$b,$c) = $content =~ /(.{0,30})(\W?$ne)(.{0,30})/si;
 	$a =~ s/\n+/ $slash /g if $a;
 	$c =~ s/\n+/ $slash /g if $b;
 	$match .= "...$a<b>$b</b>$c...<BR>" if $b;
