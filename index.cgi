@@ -22,11 +22,11 @@
 #
 #  $Id$
 
-use Kalliope;
-use Kalliope::Poem;
-use Kalliope::Page;
-use Kalliope::Timeline;
-use Kalliope::Server;
+use Kalliope();
+use Kalliope::Poem();
+use Kalliope::Page();
+use Kalliope::Timeline();
+use Kalliope::Server();
 use CGI ();
 use strict;
 
@@ -52,7 +52,7 @@ my $page = new Kalliope::Page (
 $page->addBox ( title => "Sidste nyheder",
                 width => '100%',
                 coloumn => 0,
-                content => &latestNews,
+                content => &latestNews($showAllNews),
                 end => qq|<A HREF="index.cgi?showall=yes"><IMG VALIGN=center BORDER=0 HEIGHT=16 WIDTH=16  SRC="gfx/rightarrow.gif" ALT="Vis gamle nyheder"></A>| );
 
 if (my $dayToday = &dayToday()) {
@@ -69,13 +69,14 @@ $page->addBox ( title => "Sonetten på pletten",
 	width => '100%',
 	content => $sonnetText,
 	end => $sonnetEnd);
-$page->print;
+$page->print();
 
 #
 # Nyheder --------------------------------------------------------------
 #
 
 sub latestNews {
+    my $showAllNews = shift;
     my $HTML;
     open (NEWS,"data/news.html");
     foreach my $line (<NEWS>) {

@@ -48,7 +48,7 @@ my $page = new Kalliope::Page (
 $page->addBox ( title => "",
                 width => '90%',
                 coloumn => 0,
-                content => &latestPoems);
+                content => &latestPoems($DAYS_TO_SHOW));
 
 $page->addBox ( title => "Nørderi",
                 width => '90%',
@@ -59,6 +59,7 @@ $page->addBox ( title => "Nørderi",
 $page->print;
 
 sub latestPoems {
+    $DAYS_TO_SHOW = shift;
     my $dbh = Kalliope::DB->connect();
     my $HTML;
     my @blocks;
