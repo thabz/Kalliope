@@ -80,6 +80,8 @@ sub buildhrefs {
       }
       $$txt =~ s/<XREF DIGT="$did">/»$link«/;
    }
+   $$txt =~ s/<sc>/<span style="font-variant: small-caps">/g;
+   $$txt =~ s/<\/sc>/<\/span>/g;
    $$txt =~ s/<A\s+F=([^\s>]+)\s*>/<A HREF="ffront.cgi?fhandle=$1">/g;
    $$txt =~ s/<A\s+D=([^\s>]+)\s*>/<A HREF="digt.pl?longdid=$1">/g;
    $$txt =~ s/<A\s+K=([^\s>]+)\s*>/<A HREF="keyword.cgi?keyword=$1">/g;
