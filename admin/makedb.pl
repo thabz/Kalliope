@@ -325,6 +325,7 @@ $rc = $dbh->do("CREATE TABLE digte (
               indhold mediumtext,
 	      haystack mediumtext,
               noter text,
+	      pics text,
               layouttype enum('prosa','digt') default 'digt',
               afsnit int,      /* 0 hvis ikke afsnitstitel, ellers H-level. */
 	      INDEX (longdid),
@@ -342,7 +343,7 @@ $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywor
 $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM digte");
 $sth = $dbh->prepare("SELECT * FROM vaerker WHERE findes=1");
 $sthafs = $dbh->prepare("INSERT INTO digte (fid,vid,titel,toctitel,vaerkpos,afsnit) VALUES (?,?,?,?,?,?)");
-$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,foerstelinie,underoverskrift,indhold,noter,afsnit,layouttype,haystack) VALUES (?,?,?,?,?,?,?,?,?,?,0,?,?)");
+$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,foerstelinie,underoverskrift,indhold,noter,pics,afsnit,layouttype,haystack) VALUES (?,?,?,?,?,?,?,?,?,?,?,0,?,?)");
 $sth->execute;
 print "  Ikke tomme: ".$sth->rows."\n";
 
@@ -357,6 +358,7 @@ while ($v = $sth->fetchrow_hashref) {
     $first = 1;
     $toctitel = $noter = $under = $indhold = '';
     @arvedekeys = ();
+    @pics = ();
     # Nedarv keys fra værket
     $stharv->execute($v->{'vid'});
     while ($kewl = $stharv->fetchrow_array) {
@@ -405,6 +407,9 @@ while ($v = $sth->fetchrow_hashref) {
 	} elsif (/^N:/) {
 	    s/^N://;
 	    $noter .= $_."\n";
+	} elsif (/^P:/) {
+	    s/^P://;
+	    push @pics,$_;
 	} elsif (/^U:/) {
 	    s/^U://;
 	    $under .= $_."\n";
@@ -483,15 +488,17 @@ sub insertdigt {
     $indhold =~ s/\s+$//;
     $noter =~ s/[\n\s]+$//;
     $indhold =~ s/^\n+//m;
+    $pics = join '$$$',@pics;
 # Insæt hvad vi har.
     $haystack = Kalliope::Strings::stripHTML("$titel $under $indhold");
 
-    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$toctitel || $titel,$firstline,$under,$indhold,$noter,$layouttype || 'digt',$haystack);
+    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$toctitel || $titel,$firstline,$under,$indhold,$noter,$pics,$layouttype || 'digt',$haystack);
     $i++;
     $layouttype = $noter = $under = $indhold = '';
     $firstline = '';
     $titel = '';
     $toctitel = '';
+    @pics = ();
     $lastinsertsth->execute();	
     ($mymylastid) = $lastinsertsth->fetchrow_array;
     foreach (@mykeys) {

@@ -38,7 +38,7 @@ sub new {
     $sql = 'did = '.$arg{'did'} if defined $arg{'did'};
     $sql = 'did = '.$arg{'id'} if defined $arg{'id'};
     confess "Need some kind of id to initialize a new poem\n" unless $sql;
-    my $sth = $dbh->prepare("SELECT did,fid,vid,longdid,titel,underoverskrift,foerstelinie,layouttype FROM digte WHERE $sql");
+    my $sth = $dbh->prepare("SELECT did,fid,vid,longdid,titel,underoverskrift,foerstelinie,layouttype,pics FROM digte WHERE $sql");
     $sth->execute();
     Kalliope::Page::notFound() unless $sth->rows;
     my $obj = $sth->fetchrow_hashref;
@@ -81,6 +81,25 @@ sub subtitleAsHTML {
 
 sub firstline {
     return $_[0]->{'title'};
+}
+
+sub pics {
+   my $self = shift;
+   my $pics = $self->{'pics'};
+   my @pics = split ;
+   my @result;
+   my $fhandle = $self->author->fhandle;
+   foreach my $line (split /\$\$\$/,$pics) {
+      my ($url,$desc) = split /%/,$line;
+      push @result,{ thumbfile => 'fdirs/'.$fhandle.'/_'.$url,
+                     destfile =>  'fdirs/'.$fhandle.'/'.$url,
+                     description => $desc };
+   }	     
+   return @result;
+}
+
+sub hasPics {
+   return shift->{'pics'} ? 1 : 0;
 }
 
 sub extractFootnotes {

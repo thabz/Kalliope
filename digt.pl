@@ -119,6 +119,15 @@ if ($poem->footnotes) {
 
 }
 
+if ($poem->hasPics) { 
+    $page->addBox( width => '200',
+	           coloumn => 2,
+		   theme => 'dark',
+                   title => 'Billeder',
+	           content => &pics($poem) );
+
+}
+
 my $workTitle = $work->titleWithYear;
 
 $page->addBox( width =>'100%',
@@ -268,3 +277,19 @@ sub notes {
     $HTML .= "<BR></span>";
     return $HTML;
 }
+
+sub pics {
+    my $work = shift;
+    my $HTML = '<center><small>';
+    my @pics = $work->pics;
+    foreach my $pic (@pics) {
+        $HTML .= Kalliope::Web::insertThumb($pic);
+	$HTML .= '<br>';
+	$HTML .= $pic->{'description'};
+	$HTML .= '<br>';
+	$HTML .= '<br>';
+    }
+    $HTML .= '</small></center>';
+    return $HTML;
+}
+
