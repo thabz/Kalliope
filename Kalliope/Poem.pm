@@ -226,6 +226,7 @@ sub _contentAsPoemHTML {
 	$lineForTjek =~ s/<[^>]+>//g;
 	if ( $lineForTjek =~ /[^ _\t\-]/
 		&& $lineForTjek !~ /^ *\d+\.? *$/
+		&& $lineForTjek !~ /^ *\[\d+\] *$/
 		&& $line !~ /<nonum>/
 		&& $line !~ /<wrap>/
 		&& $lineForTjek !~ /^[ \t]*[IVXLMD]+\.? *$/)
@@ -277,7 +278,6 @@ sub _contentAsPoemHTML {
 	    $line =~ s/<note>(.*?)<\/note>//;
 	    $lineHash{'linenote'} = $1;
 	    $self->{'hasLineNotes'} = 1;
-	    print STDERR "Linenote!\n";
 	}
 	
         # Fix indents
@@ -336,7 +336,7 @@ sub _nbsp {
 }
 
 sub getNumberOfVerses {
-    return shift->{'numberOfVerses'}
+    return shift->{'numberOfVerses'} || 0;
 }
 
 sub notes {
