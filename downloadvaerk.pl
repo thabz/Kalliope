@@ -59,6 +59,8 @@ if ($outputtype eq 'XML') {
 
    <!ENTITY mdash "&#8212;">
    <!ENTITY ndash "&#8211;">
+   <!ENTITY bdquo "&#8222;">
+   <!ENTITY ldquo "&#8220;">
 ]>
 EOS
     print "<kalliopework>\n";
