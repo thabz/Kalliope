@@ -1,0 +1,88 @@
+#!/usr/bin/perl -w
+
+#  Copyright (C) 1999-2001 Jesper Christensen 
+#
+#  This script is free software; you can redistribute it and/or
+#  modify it under the terms of the GNU General Public License as
+#  published by the Free Software Foundation; either version 2 of the
+#  License, or (at your option) any later version.
+#
+#  This script is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#  General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this script; if not, write to the Free Software
+#  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#
+#  Author: Jesper Christensen <jesper@kalliope.org>
+#
+#  $Id$
+
+use Kalliope;
+use CGI (':standard');
+use Kalliope::Person;
+use Kalliope::Page;
+use strict;
+
+my $dbh = Kalliope::DB->connect;
+my $fhandle = url_param('fhandle');
+my $poet = new Kalliope::Person(fhandle => $fhandle);
+
+#
+# Breadcrumbs -------------------------------------------------------------
+#
+
+my @crumbs;
+push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
+push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
+push @crumbs,['Henvisninger',''];
+
+my $page = newAuthor Kalliope::Page ( poet => $poet,
+                                      page => 'henvisninger',
+                                      crumbs => \@crumbs );
+
+#
+# Tekster der linker til denne digters tekster -------------------------------
+#
+
+my $sth = $dbh->prepare("SELECT fromid,toid FROM xrefs,digte WHERE xrefs.toid = digte.longdid AND digte.fid = ?");
+$sth->execute($poet->fid);
+
+my $antal = $sth->rows;
+if ($antal > 0) {
+    my $HTML;
+    my $i = 0;
+    $HTML .= '<TABLE WIDTH="100%"><TR><TD VALIGN=top>';
+    $HTML .= '<TABLE BORDER=0 CELLPADDING=0 CELLSPADING=0>';
+    while (my ($fromid,$toid) = $sth->fetchrow_array) {
+        my $fromdigt = new Kalliope::Poem(longdid => $fromid);
+        next if $fromdigt->fid == $poet->fid;
+        my $todigt= new Kalliope::Poem(longdid => $toid);
+
+        $HTML .= '<SPAN CLASS="listeblue">&#149;</SPAN> ';
+        $HTML .= $fromdigt->clickableTitle." henviser til ".$todigt->clickableTitle."<br>\n";
+	if ($i == int($antal/2) - 1 ) {
+	    $HTML .= '</TABLE></TD><TD VALIGN=top>';
+	    $HTML .= '<TABLE BORDER=0 CELLPADDING=0 CELLSPADING=0>';
+	}
+        $i++;
+    }
+    $HTML .= '</TABLE>';
+    $HTML .= '</TD></TR></TABLE>';
+    $HTML .= '<BR><SMALL><I>Oversigt over tekster som henviser til '.$poet->name.'s tekster.</I></SMALL>';
+    $page->addBox( title => 'Henvisninger',
+	    width => '80%',
+            coloumn => 1,
+	    content => $HTML );
+
+} else {
+    $page->addBox( title => 'Henvisninger',
+	    width => '80%',
+            coloumn => 1,
+	    content => "Der findes ingen tekster, som henviser til ".$poet->name."s tekster.");
+}
+
+$page->print;
+

@@ -100,6 +100,12 @@ my %menuStruct = (
         desc => qq|Digtere som udgav værker i ${poetName}s levetid|,
         icon => 'gfx/icons/biography-h48.gif'
                     },
+	henvisninger => { url => 'henvisninger.cgi?', 
+	title => 'Henvisninger', 
+	status => 1, 
+        desc => 'Oversigt over tekster som henviser til '.$poetName.'s tekster.',
+        icon => 'gfx/icons/links-h48.gif'
+                    },
 	links     => { url => 'flinks.pl?', 
 	title => 'Links', 
 	status => $poet->{'links'}, 
@@ -119,7 +125,7 @@ my %menuStruct = (
         icon => 'gfx/icons/secondary-h48.gif'
                     } );
 
-my @keys = qw/vaerker titlelines firstlines popular prosa pics bio samtidige links primaer sekundaer/;
+my @keys = qw/vaerker titlelines firstlines popular prosa pics bio samtidige henvisninger links primaer sekundaer/;
 
 my @activeItems = grep { $_->{status} } (values %menuStruct);
 my $itemsNum = $#activeItems+1;

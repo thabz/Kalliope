@@ -231,6 +231,9 @@ sub menu {
        samtidige => { url => 'samtidige.cgi?', 
                     title => 'Samtid', 
                     status => !$self->isUnknownPoet},
+       henvisninger => { url => 'henvisninger.cgi?', 
+                    title => 'Henvisninger', 
+                    status => 1 },
        links     => { url => 'flinks.pl?', 
                     title => 'Links', 
                     status => $self->{'links'} },
@@ -240,7 +243,7 @@ sub menu {
        sekundaer => { url => 'fsekundaer.pl?mode=s&', 
                     title => 'Sekundær', 
 		    status => $self->{'sekundaer'} } );
-    my @keys = qw/forside vaerker titlelines firstlines popular prosa pics bio samtidige links primaer sekundaer/;
+    my @keys = qw/forside vaerker titlelines firstlines popular prosa pics bio samtidige henvisninger links primaer sekundaer/;
     my $HTML;
     my @itemsHTML;
     foreach my $key (@keys) {
