@@ -98,12 +98,12 @@ for (my $i = 0; $i <= $#lines; $i++) {
     my $line2 =  $mode == 1 ? $f->{'foerstelinie'} : $f->{'titel'};
     my $line3 = $line;
 
-    $line = qq|$line <SPAN STYLE="color: #808080">[$line2]</SPAN>| if $line eq $previousLine;
+    $line = qq|$line <SPAN STYLE="color: #808080">[$line2]</SPAN>| if $line eq $previousLine && $line2 ne '';
 
     unless ($i+1 > $#lines) {
 	my $nextf = $lines[$i+1];
 	my $nextline =  $mode == 1 ? $nextf->{'titel'} : $nextf->{'foerstelinie'};
-	$line = qq|$line <SPAN STYLE="color: #808080">[$line2]</SPAN>| if $line eq $nextline;
+	$line = qq|$line <SPAN STYLE="color: #808080">[$line2]</SPAN>| if $line eq $nextline && $line2 ne '';
     }
 
     my $linefix = $line;
