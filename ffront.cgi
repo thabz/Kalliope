@@ -88,7 +88,7 @@ my %menuStruct = (
 	title => 'Biografi', 
 	status => $poet->{'bio'},
         desc => qq|En kortfattet introduktion til ${poetName}s liv og værk|,
-        icon => 'gfx/icons/biography-h48.gifF'
+        icon => 'gfx/icons/biography-h48.gif'
                     },
 	samtidige => { url => 'samtidige.cgi?', 
 	title => 'Samtid', 
