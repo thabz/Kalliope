@@ -81,7 +81,7 @@ sub latestPoems {
          $blocks[$j]->{'head'} = "<DIV CLASS=listeoverskrifter>$dateForDisplay</DIV><BR>";
     }
     $HTML = Kalliope::Web::doubleColumn(\@blocks);
-    $HTML .= "<HR><SMALL><I>Der er ialt tilføjet $count digte indenfor de sidste $DAYS_TO_SHOW dage.</I></SMALL>";
+    $HTML .= "<HR><SMALL><I>Der er i alt tilføjet $count digte indenfor de sidste $DAYS_TO_SHOW dage.</I></SMALL>";
 }
 
 1;
