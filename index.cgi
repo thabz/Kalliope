@@ -63,6 +63,11 @@ if (my $dayToday = &dayToday()) {
 	    end => '<A class="more" HREF="today.cgi">Vælg anden dato...</A>');
 }
 
+$page->addBox ( title => "",
+	coloumn => 1,
+	width => '100%',
+	content => '<br><br>' );
+
 my ($sonnetText,$sonnetEnd) = &sonnet;
 $page->addBox ( title => "Sonetten på pletten",
 	coloumn => 1,
