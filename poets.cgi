@@ -166,7 +166,7 @@ sub listpics {
 	 $f[0] =~ s/^Å/Aa/;
 	 if (-e "fdirs/$f[2]/thumb.jpg") {
 	     $HTML .= "<TD align=center valign=bottom>";
-	     $HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$f[2]/thumb.jpg",url=>"fpics.pl?$f[2]?$LA",alt=>"Vis portrætter af $f[1] $f[0]"});
+	     $HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$f[2]/thumb.jpg",url=>"fpics.pl?fhandle=$f[2]",alt=>"Vis portrætter af $f[1] $f[0]"});
 	     $HTML .= "<BR>$f[1] $f[0]<BR>";
 	     $HTML .= '<FONT COLOR="#808080">('.$f[3].'-'.$f[4].')</FONT><BR>';
 	     $HTML .= "</TD>";
