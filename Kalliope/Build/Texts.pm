@@ -27,7 +27,7 @@ use Kalliope::Date;
 use strict;
 
 my $dbh = Kalliope::DB::connect();
-my $sthGroup = $dbh->prepare("INSERT INTO digte (longdid,fhandle,vhandle,parentdid,linktitel,toptitel,toctitel,tititel,foerstelinie,indhold,vaerkpos,vid,type,underoverskrift,lang) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+my $sthGroup = $dbh->prepare("INSERT INTO digte (longdid,fhandle,vhandle,parentdid,linktitel,toptitel,toctitel,tititel,foerstelinie,indhold,vaerkpos,vid,type,underoverskrift,lang,createtime) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 my $sthnote = $dbh->prepare("INSERT INTO textnotes (longdid,note,orderby) VALUES (?,?,?)");
 my $sthpicture = $dbh->prepare("INSERT INTO textpictures (longdid,caption,url,orderby) VALUES (?,?,?,?)");
 my $sthkeyword = $dbh->prepare("INSERT INTO textxkeyword (longdid,keyword) VALUES (?,?)");
@@ -102,7 +102,7 @@ sub _insertGroup {
 
 	my $type = $node->tag;
 	if ($type eq 'section' || $type eq 'group') {
-	    $sthGroup->execute($longdid,$fhandle,$vhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,'','',$orderby++,$vid,$type,$subtitle,$lang);
+	    $sthGroup->execute($longdid,$fhandle,$vhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,'','',$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid));
 	    my $newparent = Kalliope::DB::getLastInsertId($dbh,'digte');
 	    print STDERR "New parent: $newparent\n";
 	    _insertGroup($fhandle,$vhandle,$vid,$lang,$newparent,$node->first_child('content')->children);
@@ -110,7 +110,7 @@ sub _insertGroup {
 	    my $longdid = $node->id;
  	    my $body = $node->first_child('body');
  	    my $firstline = $head->first_child('firstline') ? $head->first_child('firstline')->text : '';
-	    $sthGroup->execute($longdid,$fhandle,$vhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,$firstline,$body->sprint(1),$orderby++,$vid,$type,$subtitle,$lang);
+	    $sthGroup->execute($longdid,$fhandle,$vhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,$firstline,$body->sprint(1),$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid));
 	}
     }
 }
@@ -181,6 +181,13 @@ sub create {
 	      INDEX (keyword))
 	    ));
 
+}
+
+sub _createtime {
+    my $longdid = shift;
+    my ($year,$mon,$day) = $longdid =~ /(\d\d\d\d)(\d\d)(\d\d)/;
+    my $time = POSIX::mktime(0,0,2,$day,$mon-1,$year-1900) || 0;
+    return $time;
 }
 
 1;
