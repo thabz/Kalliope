@@ -261,7 +261,7 @@ EOF
     print '</TD>';
 
     print '<TD BGCOLOR="black">';
-#    print '<IMG SRC="gfx/trans1x1.gif" WIDTH=30 HEIGHT=1>';
+    print '<IMG SRC="gfx/trans1x1.gif" WIDTH=30 HEIGHT=1>';
     print '</TD>';
     print '</TR>';
 
