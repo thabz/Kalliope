@@ -33,6 +33,7 @@ my $dbh = Kalliope::DB->connect;
 my $MAILTAINER_EMAIL = 'jesper@kalliope.org';
 
 my $poem = new Kalliope::Poem ('longdid' => url_param('longdid'));
+
 $poem->updateHitCounter;
 my $poet = $poem->author;
 my $work = $poem->work;
