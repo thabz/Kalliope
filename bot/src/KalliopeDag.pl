@@ -29,7 +29,7 @@ sub get {
        ($dag,$md) = $line =~ /dagen *([^ \/-]+)[ \/-]([^ ]+) *$/i;
    }
 
-   return 'Hvilket dag tænkte du på?' unless $dag;
+   return 'Hvilken dag tænkte du på?' unless $dag;
 
    return "Der er da ikke $md måneder på et år..." if $md > 12;
 
