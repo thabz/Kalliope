@@ -83,7 +83,20 @@ sub getEventsInYear {
 	              descr => $$h{'description'}}
     }
     return @result;
+}
 
+sub getEventsForPerson {
+    my $fid = shift;
+
+    my $dbh = Kalliope::DB::connect();
+    my $sth = $dbh->prepare("SELECT * FROM timeline WHERE type = 'event' AND eventtype = 'personal' AND otherid = ?");
+    $sth->execute($fid);
+    my @result;
+    while (my $h = $sth->fetchrow_hashref) {
+        push @result,{year => $$h{'year'},
+	              descr => $$h{'description'}}
+    }
+    return @result;
 }
 
 1;
