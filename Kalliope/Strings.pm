@@ -40,6 +40,7 @@ sub abbr {
 
 sub uc {
     my $str = shift;
+    return '' unless $str;
     $str =~ tr/זרו/ֶ״ֵ/;
     return uc $str;
 }
