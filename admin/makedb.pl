@@ -4,6 +4,7 @@ use lib '..';
 use Kalliope::Sort;
 use Kalliope::DB;
 use Kalliope::Strings;
+use Kalliope::Array;
 use POSIX;
 
 my $dbh = Kalliope::DB->connect;
@@ -234,20 +235,24 @@ $rc = $dbh->do("CREATE TABLE vaerker (
 	      pics text,
               type char(5),
               findes char(1),
+	      quality set('korrektur1','korrektur2','korrektur3',
+	                  'kilde','side'),
 	      INDEX (vhandle),
 	      INDEX (fhandle),
 	      INDEX (type),
               UNIQUE (vid))");
 
+
 $sth = $dbh->prepare("SELECT * FROM fnavne");
 $sth->execute;
 $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM vaerker");
 $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywords.id = keywords_relation.keywordid AND keywords_relation.otherid = ? AND keywords_relation.othertype = 'biografi'");
-$sth2= $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle, titel,aar,type,findes,noter,pics) VALUES (?,?,?,?,?,?,?,?,?)");
+$sth2= $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle, titel,aar,type,findes,noter,pics,quality) VALUES (?,?,?,?,?,?,?,?,?,?)");
 print "Antal forfattere: ".$sth->rows."\n";
 
 while ($fn = $sth->fetchrow_hashref) {
     $fdir = "../fdirs/".$fn->{'fhandle'}."/";
+    my $fhandle = $fn->{'fhandle'};
     open(IN,$fdir."vaerker.txt");
     foreach (<IN>) {
 	($vhandle,$titel,$aar,$type)=split(/=/,$_);
@@ -258,6 +263,7 @@ while ($fn = $sth->fetchrow_hashref) {
 	    $noter = '';
 	    @pics = ();
 	    @keys = ();
+	    my @qualities;
 	    if ($findes) { 
                 # Nedarv keys fra digteren
 		$stharv->execute($fn->{'fid'});
@@ -273,6 +279,12 @@ while ($fn = $sth->fetchrow_hashref) {
 		    } elsif (/^VP:/) {
 			s/^VP://;
 		        push @pics,$_;
+		    } elsif (/^VQ:/) {
+			s/^VQ://;
+			my @q = split /\s*,\s*/,$_;
+			push @qualities,@q;
+			push @{$qualityCache{"$fhandle/$vhandle"}},@q;
+
 		    } elsif (/^VK/) {
 			s/^VK://;
 			chop;
@@ -283,8 +295,9 @@ while ($fn = $sth->fetchrow_hashref) {
 	    }
 	    chop($noter);
 	    $pics = join '$$$',@pics;
+	    my $quality = join ',',@qualities;
 	    $sth2->execute($fn->{'fhandle'},$fn->{'fid'},$vhandle,$titel,$aar,
-		    $type,$findes,$noter,$pics);
+		    $type,$findes,$noter,$pics,$quality);
             $lastinsertsth->execute;
 	    ($lastid) = $lastinsertsth->fetchrow_array;
 	    foreach (@keys) {
@@ -381,6 +394,8 @@ $rc = $dbh->do("CREATE TABLE digte (
 	      haystack mediumtext,
               noter text,
 	      pics text,
+	      quality set('korrektur1','korrektur2','korrektur3',
+	                  'kilde','side'),
               layouttype enum('prosa','digt') default 'digt',
 	      createtime INT NOT NULL,
               afsnit int,      /* 0 hvis ikke afsnitstitel, ellers H-level. */
@@ -400,7 +415,7 @@ $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywor
 $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM digte");
 $sth = $dbh->prepare("SELECT * FROM vaerker WHERE findes=1");
 $sthafs = $dbh->prepare("INSERT INTO digte (fid,vid,titel,toctitel,vaerkpos,afsnit) VALUES (?,?,?,?,?,?)");
-$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,foerstelinie,underoverskrift,indhold,noter,pics,afsnit,layouttype,haystack,createtime) VALUES (?,?,?,?,?,?,?,?,?,?,?,0,?,?,?)");
+$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,foerstelinie,underoverskrift,indhold,noter,pics,afsnit,layouttype,haystack,createtime,quality) VALUES (?,?,?,?,?,?,?,?,?,?,?,0,?,?,?,?)");
 $sth->execute;
 print "  Ikke tomme: ".$sth->rows."\n";
 
@@ -416,6 +431,7 @@ while ($v = $sth->fetchrow_hashref) {
     $toctitel = $noter = $under = $indhold = '';
     @arvedekeys = ();
     @pics = ();
+    @qualities = ();
     # Nedarv keys fra værket
     $stharv->execute($v->{'vid'});
     while ($kewl = $stharv->fetchrow_array) {
@@ -432,6 +448,7 @@ while ($v = $sth->fetchrow_hashref) {
 	next if (/^VN:/);
 	next if (/^VP:/);
 	next if (/^VK:/);
+	next if (/^VQ:/);
 	if (/^H(.):(.*)/) {
 	    $level = $1;
 	    $afsnitstitel = $2;
@@ -470,6 +487,10 @@ while ($v = $sth->fetchrow_hashref) {
 	} elsif (/^P:/) {
 	    s/^P://;
 	    push @pics,$_;
+	} elsif (/^Q:/) {
+	    s/^Q://;
+	    my @q = split /\s*,\s*/,$_;
+	    push @qualities,@q;
 	} elsif (/^U:/) {
 	    s/^U://;
 	    $under .= $_."\n";
@@ -555,14 +576,18 @@ sub insertdigt {
     my ($year,$mon,$day) = $id =~ /^\D*(\d\d\d\d)(\d\d)(\d\d)/;
     my $time = POSIX::mktime(0,0,2,$day,$mon-1,$year-1900) || 0;
 
+    # Prepare qualities
+    my $quality = join ',',Kalliope::Array::uniq(@qualities,@{$qualityCache{"$$v{fhandle}/$$v{vhandle}"}});
+    
     # Insæt hvad vi har.
-    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$toctitel || $titel,$firstline,$under,$indhold,$noter,$pics,$layouttype || 'digt',$haystack,$time);
+    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$toctitel || $titel,$firstline,$under,$indhold,$noter,$pics,$layouttype || 'digt',$haystack,$time,$quality);
     $i++;
     $layouttype = $noter = $under = $indhold = '';
     $firstline = '';
     $titel = '';
     $toctitel = '';
     @pics = ();
+    @qualities = ();
     $lastinsertsth->execute();	
     ($mymylastid) = $lastinsertsth->fetchrow_array;
     foreach (@mykeys) {

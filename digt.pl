@@ -275,6 +275,10 @@ sub notes {
         $HTML .= join ', ', map { $_->clickableTitle($LA) } @keywords;
     }
     $HTML .= "</span>";
+
+    # Quality
+#    $HTML .= '<br><br><b>Tillid:</b> '.$poem->quality->asHTML;
+    $HTML .= '<br><br>'.$poem->quality->asHTML;
     return $HTML;
 }
 

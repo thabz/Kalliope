@@ -28,6 +28,7 @@ use Kalliope::Keyword;
 use Kalliope::Person;
 use Kalliope::Work;
 use Kalliope::Strings;
+use Kalliope::Quality;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -38,11 +39,12 @@ sub new {
     $sql = 'did = '.$arg{'did'} if defined $arg{'did'};
     $sql = 'did = '.$arg{'id'} if defined $arg{'id'};
     confess "Need some kind of id to initialize a new poem\n" unless $sql;
-    my $sth = $dbh->prepare("SELECT did,fid,vid,longdid,titel,underoverskrift,foerstelinie,layouttype,pics FROM digte WHERE $sql");
+    my $sth = $dbh->prepare("SELECT did,fid,vid,longdid,titel,underoverskrift,foerstelinie,layouttype,pics,quality FROM digte WHERE $sql");
     $sth->execute();
     Kalliope::Page::notFound() unless $sth->rows;
     my $obj = $sth->fetchrow_hashref;
     bless $obj,$class;
+    $obj->{'quality_obj'} = new Kalliope::Quality($obj->{'quality'});
     return $obj;
 }
 
@@ -81,6 +83,10 @@ sub subtitleAsHTML {
 
 sub firstline {
     return $_[0]->{'title'};
+}
+
+sub quality {
+    return shift->{'quality_obj'};
 }
 
 sub pics {

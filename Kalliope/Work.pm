@@ -43,6 +43,7 @@ sub new {
     Kalliope::Page::notFound() unless $sth->rows;
     my $obj = $sth->fetchrow_hashref;
     bless $obj,$class;
+    $obj->{'quality_obj'} = new Kalliope::Quality($obj->{'quality'});
     return $obj;
 }
 
@@ -74,7 +75,14 @@ sub subtitle {
 }
 
 sub notes {
-    return shift->{'noter'}; 
+    my $self = shift;
+    my $notes = $self->{'noter'};
+    $notes .= '<br><br>'.$self->quality->asHTML;
+    return $notes;
+}
+
+sub quality {
+    return shift->{'quality_obj'};
 }
 
 sub pics {
