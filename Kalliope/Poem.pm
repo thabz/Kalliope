@@ -228,7 +228,9 @@ sub addToKeyPool {
     my ($self,$newKeys) = @_;
     my @keypool = $self->getKeyPool;
     my @newKeys = split /[ ,.;]+/,$newKeys;
-    my $keyString = join '; ', sort (@keypool,@newKeys);
+    my %uniq;
+    map { $uniq{$_} = 1 } (@keypool,@newKeys);
+    my $keyString = join '; ', sort (keys %uniq);
 
     my $dbh = Kalliope::DB->connect;
     if ($#keypool >= 0) {
