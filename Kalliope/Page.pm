@@ -202,6 +202,9 @@ sub addBox {
     $bggfx = 'notepap.jpg' if defined  $args{'theme'} && $args{'theme'} eq 'note';
     my $align =  $args{align} ? $args{align} : 'left';
     my $width = $args{width} ? qq|WIDTH="$args{width}"| : '';
+    if ($args{width} eq '100%') {
+	$width = '';
+    }
     my $theme = $args{'theme'} || 'normal';
 
     my $HTML;
@@ -237,13 +240,14 @@ function openTimeContext(year) {
 }
 </SCRIPT>
 </HEAD>
-<BODY LINK="#000000" VLINK="#000000" ALINK="#000000" LEFTMARGIN=0 TOPMARGIN=0 MARGINHEIGHT=0 MARGINWIDTH=0>
+<!--<BODY LINK="#000000" VLINK="#000000" ALINK="#000000" LEFTMARGIN=0 TOPMARGIN=0 MARGINHEIGHT=0 MARGINWIDTH=0>-->
+<BODY LINK="#000000" VLINK="#000000" ALINK="#000000">
 
 EOF
  
     print '<center><br>';
     print '<div class="body">';
-    print '<TABLE HEIGHT="500" WIDTH="770" BORDER="0" CELLSPACING="0" CELLPADDING="0">';
+    print '<TABLE WIDTH="770" BORDER="0" CELLSPACING="0" CELLPADDING="0">';
     
     if (my $crumbs = $self->_constructBreadcrumbs) {
         print '<tr><td colspan="3" class="breadcrumbs">';
@@ -283,7 +287,7 @@ EOF
     print $self->_navigationMain;
     print '</td>';
     print '<td class="paper" valign="top">';
-    print qq|<TABLE WIDTH="100%" HEIGHT="100%" CELLPADDING="5"><TR>\n\n|;
+    print qq|<TABLE WIDTH="100%" CELLPADDING="5"><TR>\n\n|;
     my @widths = $self->getColoumnWidths;
     my $count = 0;
     foreach my $colHTML (@{$self->{'coloumns'}}) {

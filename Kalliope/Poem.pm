@@ -330,7 +330,7 @@ sub _contentAsPlainPoemHTML {
     $result =~ s/\n/<BR>\n/g;
     $result =~ s/<note>.*?<\/note>//g;
     $result =~ s/\s/\&nbsp;/gs;
-    return '<div style="white-space: nowrap">'.$result.'</div>';
+    return '<span style="white-space: nowrap">'.$result.'</span>';
 }
 
 sub _resolveTags {

@@ -53,14 +53,12 @@ my $page = new Kalliope::Page (
            );
 
 $page->addBox (
-                width => '100%',
                 coloumn => 0,
                 content => &latestNews($showAllNews),
                 end => $showAllNews ? '' : qq|<a class="more" href="index.cgi?showall=yes">Læs gamle nyheder...</a>| );
 
 if (my $dayToday = &dayToday()) {
     $page->addBox ( title => "Dagen idag",
-	    width => '100%',
 	    coloumn => 1,
 	    content => $dayToday,
 	    end => '<A class="more" HREF="today.cgi">Vælg anden dato...</A>');
@@ -69,7 +67,6 @@ if (my $dayToday = &dayToday()) {
 my ($sonnetText,$sonnetEnd) = &sonnet;
 $page->addBox ( title => "Sonetten på pletten",
 	coloumn => 1,
-	width => '100%',
 	content => $sonnetText,
 	end => $sonnetEnd);
 $page->print();
