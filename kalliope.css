@@ -137,7 +137,7 @@ A.biothumb {
 
 }
 
-A:link, A:visited, A:active { text-decoration: none; color: black;}
+A:link, A:visited, A:active { text-decoration: none; }
 A:hover { color: #404040 }
 
 A.leftframe:link, A.leftframe:visited, A.leftframe:active { 
