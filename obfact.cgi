@@ -51,6 +51,9 @@ $val3 = getVal("select count(*) from keywords_relation where keywordid = $val2 a
 $prc = sprintf("%.0d",($val3/$val)*100);
 $HTML .= "<li>Der findes $val3 sonetter i Kalliope, hvilket er $prc% af alle digte.";
 
+$val = getVal("select count(*) from xrefs");
+$HTML .= "<li>$val digte har en henvisning til et andet digt.";
+
 $antalpoets = getVal("SELECT count(*) FROM fnavne");
 $val2 = getVal("SELECT count(*) FROM fnavne where vers = 1");
 $HTML .= "<li>Af de $antalpoets digtere i Kalliope, kan man læse digte hos de $val2 af dem.";
