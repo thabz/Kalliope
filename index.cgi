@@ -27,8 +27,11 @@ use Kalliope::Poem();
 use Kalliope::Page();
 use Kalliope::Timeline();
 use Kalliope::Server();
+use Kalliope::DB;
 use CGI ();
 use strict;
+
+my $dbh = Kalliope::DB::connect();
 
 Kalliope::Server::newHit();
 
@@ -53,7 +56,7 @@ $page->addBox (
                 width => '100%',
                 coloumn => 0,
                 content => &latestNews($showAllNews),
-                end => qq|<a class="more" href="index.cgi?showall=yes">Læs gamle nyheder...</a>| );
+                end => $showAllNews ? '' : qq|<a class="more" href="index.cgi?showall=yes">Læs gamle nyheder...</a>| );
 
 if (my $dayToday = &dayToday()) {
     $page->addBox ( title => "Dagen idag",
@@ -78,19 +81,12 @@ $page->print();
 sub latestNews {
     my $showAllNews = shift;
     my $HTML;
-    open (NEWS,"data/news.html");
-    foreach my $line (<NEWS>) {
-	Kalliope::buildhrefs(\$line);
-	if ($showAllNews) {
-	    $line =~ s/^\#//;
-	    $HTML .= qq|<p align="justify">$line</p>|;
-	} elsif ($line =~ /^[^#]/) {
-	    $HTML .= qq|<p align="justify">$line</p>|;
-	} else {
-            last;
-        }
+    my $where = $showAllNews ? "" : "WHERE active = 1";
+    my $sth = $dbh->prepare("SELECT entry FROM news $where ORDER BY orderby");
+    $sth->execute;
+    while (my ($line) = $sth->fetchrow_array) {
+        $HTML .= qq|<p align="justify">$line</p>|;
     }
-    close (NEWS);
     return $HTML;
 }
 
