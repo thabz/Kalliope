@@ -36,6 +36,7 @@ while ($f[$i] = $sth->fetchrow_hashref) {
     $f[$i]->{'sort'} = $f[$i]->{'titel'};
     $i++; 
 }
+my $antal2 = $i;
 
 my $last="";
 my $body;
@@ -63,7 +64,8 @@ print "Content-type: text/html\n\n";
 print <<"EOF";
 <HTML><HEAD><TITLE>Meretes oversigt på Kalliope</TITLE></HEAD>
 <BODY>
-<H1>Samtlige Grundtvig digte på Kalliope<H1>
+<H1>Samtlige Grundtvig digte på Kalliope</H1>
+$antal2 stks.<BR>
 $HTML
 </BODY>
 EOF
