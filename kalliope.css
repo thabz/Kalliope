@@ -2,6 +2,22 @@ footnote {
     display: none;
 }
 
+INPUT.button {
+    background-color: #AA7744;
+    color: white;
+    font-family:  Helvetica, Arial;
+    font-size: 8pt;
+    font-weight: bold;
+    border-bottom: 2px solid #663300;
+    border-right: 2px solid #663300;
+    border-top: 2px solid #EEBB88;
+    border-left: 2px solid #EEBB88;
+}
+
+.inputtext {
+    background-color: #F0f0e3;
+}
+
 SPAN.wide {
     letter-spacing: 0.2em;
 }
