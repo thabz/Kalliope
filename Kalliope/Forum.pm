@@ -56,7 +56,7 @@ sub getThreadAsHTML {
     my @posts = Kalliope::Forum::getPostsInThread($thread_id);
     foreach my $post (@posts) {
 	my $rid = "row".$post->id;
-        $HTML .= qq|<TR><TD ID="${rid}a" CLASS="unsel">|.$post->from.qq|</TD><TD ID="${rid}b" CLASS="unsel"><A ID="${rid}d" CLASS="unsel" HREF="javascript:{}" onClick="return parent.gotoPosting(|.$post->id.')">'.$post->subject.qq|</TD><TD ID="${rid}c" CLASS="unsel">|.$post->dateForDisplay.'</TD></TR>';
+        $HTML .= qq|<TR><TD ID="${rid}a" CLASS="unsel">|.$post->from.qq|</TD><TD ID="${rid}b" CLASS="unsel"><A ID="${rid}d" CLASS="unsel" HREF="javascript:{}" onClick="return parent.gotoPosting(|.$post->id.');">'.$post->subject.qq|</A></TD><TD ID="${rid}c" CLASS="unsel">|.$post->dateForDisplay.'</TD></TR>';
     }
     return $HTML;
 }

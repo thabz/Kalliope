@@ -38,15 +38,15 @@ my $page = new Kalliope::Page (
 
 my $HTML = '<TABLE WIDTH="100%" HEIGHT="100%">';
 $HTML .= '<TR><TD WIDTH="60%">';
-$HTML .= '<IFRAME STYLE="width: 100%; height: 500px; border: 0px" NAME="headers" SRC="forumheaders.cgi">';
+$HTML .= '<IFRAME STYLE="width: 100%; height: 500px; border: 0px" NAME="headers" SRC="forumheaders.cgi" FRAMEBORDER=0 SCROLLING="no"></IFRAME>';
 $HTML .= '</TD><TD WIDTH="40%">';
-$HTML .= '<IFRAME STYLE="width: 100%; height: 500px; border: 0px" NAME="posting" SRC="forumposting.cgi">';
+$HTML .= '<IFRAME STYLE="width: 100%; height: 500px; border: 0px" ID="postingframe" NAME="posting" SRC="forumposting.cgi" FRAMEBORDER=0 SCROLLING="no"></IFRAME>';
 $HTML .= '</TD></TR></TABLE>';
 
 $HTML .= <<"EOF";
-<SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.3">
 function gotoPosting(postingid) {
-    posting.location = 'forumposting.cgi?id='+postingid;
+    document.getElementById('postingframe').src = 'forumposting.cgi?id='+postingid;
     return false;
 }
 
