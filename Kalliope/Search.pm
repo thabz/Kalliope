@@ -166,6 +166,8 @@ sub result {
 	next if $i < $self->firstNumShowing;
 	my ($quality,$id) = split / /,$line;
 	next unless $id;
+	$id =~ s/.html$//;
+	$id =~ s/^.\/dump\///;
 	push @matches,[$id,'Kalliope::Poem',$quality];
 	$c++;
 	last if $c > 9;
@@ -175,3 +177,4 @@ sub result {
 }
 
 1;
+
