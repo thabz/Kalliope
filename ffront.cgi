@@ -81,7 +81,7 @@ my %menuStruct = (
 	pics      => { url => 'fpics.pl?', 
 	title => 'Portrætter', 
 	status => $poet->{'pics'},
-        icon => 'gfx/staffeli_40.GIF',
+        icon => 'gfx/icons/portrait-h48.gif',
         desc => 'Se giraffen'
                     },
 	bio       => { url => 'biografi.cgi?', 
@@ -100,7 +100,7 @@ my %menuStruct = (
 	title => 'Links', 
 	status => $poet->{'links'}, 
         desc => 'Henvisninger til andre steder på internettet, som har relevant information om '.$poetName,
-        icon => 'gfx/ikon09.gif'
+        icon => 'gfx/icons/links-h48.gif'
                     },
         sekundaer => { url => 'fsekundaer.pl?', 
         title => 'Sekundærlitteratur', 
