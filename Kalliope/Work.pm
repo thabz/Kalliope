@@ -80,7 +80,6 @@ sub notes {
 sub pics {
    my $self = shift;
    my $pics = $self->{'pics'};
-   my @pics = split ;
    my @result;
    my $fhandle = $self->author->fhandle;
    foreach my $line (split /\$\$\$/,$pics) {

@@ -281,7 +281,7 @@ while ($fn = $sth->fetchrow_hashref) {
 		close(IN2);
 	    }
 	    chop($noter);
-	    $pics = join /\$\$\$/,@pics;
+	    $pics = join '$$$',@pics;
 	    $sth2->execute($fn->{'fhandle'},$fn->{'fid'},$vhandle,$titel,$aar,
 		    $type,$findes,$noter,$pics);
             $lastinsertsth->execute;
