@@ -48,6 +48,10 @@ sub fromEmail {
     return shift->{'email'};
 }
 
+sub getForumId {
+    return shift->{'forum_id'};
+}
+
 sub subject {
     return shift->{'subject'};
 }
@@ -119,8 +123,9 @@ sub threadId {
 sub insertIntoDB {
     my $self = shift;
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("INSERT INTO forum (parent,thread_id,latest_thread_activity,date,sender,email,subject,content) VALUES (?,?,?,?,?,?,?,?)");
+    my $sth = $dbh->prepare("INSERT INTO forum (parent,forum_id,thread_id,latest_thread_activity,date,sender,email,subject,content) VALUES (?,?,?,?,?,?,?,?,?)");
     $sth->execute($self->{'parent'},
+                  $self->{'forum_id'},
                   $self->{'thread_id'},
                   $self->{'date'},
                   $self->{'date'},

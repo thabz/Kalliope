@@ -311,11 +311,11 @@ sub menuStructs {
                        pages => ['keywordtoc','timeline','keyword']
                        },
          'forum' =>    {menuTitle => 'Forum',
-                       url => 'forum.cgi',
-                       pages => ['forumheaders']
+                       url => 'forumindex.cgi',
+                       pages => ['forumindex']
                        },
-         'forumheaders' => {menuTitle => 'Oversigt',
-                       url => 'forum.cgi'
+         'forumindex' => {menuTitle => 'Oversigt',
+                       url => 'forumindex.cgi'
                        },
          'poemtitles' =>{menuTitle => 'Digttitler',
                        url => 'klines.pl?mode=1&forbogstav=A&sprog='.$lang

@@ -30,11 +30,13 @@ use CGI::Cookie ();
 use strict;
 
 my $parentId = param('parentid') || 0;
+my $forumId = param('forumid') || 0;
 my $threadId = param('threadid') || 0;
 
 if (defined param('posted')) {
     my $h = { parent => $parentId,
               thread_id => $threadId,
+              forum_id => $forumId,
 	      date => time,
 	      sender => param('name') || 'Anonym',
 	      email => param('email') || '',
@@ -95,6 +97,7 @@ Emne:<BR>
 Besked:<BR>
 <TEXTAREA CLASS="inputtext" WRAP="virtual" NAME="content" COLS=10 ROWS=15 STYLE="width:100%;">$content</TEXTAREA><BR><BR>
 <INPUT TYPE="hidden" NAME="parentid" VALUE="$parentId">
+<INPUT TYPE="hidden" NAME="forumid" VALUE="$forumId">
 <INPUT TYPE="hidden" NAME="threadid" VALUE="$threadId">
 <INPUT TYPE="hidden" NAME="posted" VALUE="1">
 <INPUT CLASS="button" TYPE="submit" VALUE=" Send ">

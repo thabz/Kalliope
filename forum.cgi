@@ -27,23 +27,31 @@ use Kalliope::Tree;
 use CGI qw(:standard);
 use strict;
 
+my $forumId = CGI::url_param('forumid');
+my $forum = new Kalliope::Forum($forumId);
+
+my @crumbs;
+push @crumbs,['Forum','forumindex.cgi'];
+push @crumbs,[$forum->getTitle,$forum->getHeadersURL];
+
 my $page = new Kalliope::Page (
-		title => 'Forum',
-		thumb => 'gfx/evolution-192.png',
+		title => 'Forum: '.$forum->getTitle,
+		thumb => $forum->getBigIcon,
 		page => 'forumheaders',
+		crumbs => \@crumbs,
                 pagegroup => 'forum');
 
 #
 # Draw forum
 #
 
-my @thread_ids = Kalliope::Forum::getLatestThreadIds(begin => 0, count => 20);
+my @thread_ids = $forum->getLatestThreadIds(begin => 0, count => 20);
 my $tree = new Kalliope::Tree('tree','gfx/tree',3,('Emne',("&nbsp;"x6).'Fra','&nbsp;Dato'));
 my %translate;
 $translate{0} = 0;
 
 foreach my $thread_id (@thread_ids) {
-    my @posts = Kalliope::Forum::getPostsInThread($thread_id);
+    my @posts = $forum->getPostsInThread($thread_id);
     foreach my $post (@posts) {
 	my $from = ("&nbsp;"x5).qq|<SPAN CLASS="unsel">&nbsp;|.$post->from.'&nbsp;</SPAN>';
 	my $date = qq|<SPAN CLASS="unsel">&nbsp;|.$post->dateForDisplay.'&nbsp;</SPAN>';
@@ -64,7 +72,7 @@ function gotoPosting(postingid) {
 }
 
 function composer(mode,id) {
-    window.open('forumcompose.cgi?mode='+mode+'&parentid='+id,'compose','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizeable=no,width=400,height=500'); 
+    window.open('forumcompose.cgi?forumid=$forumId&mode='+mode+'&parentid='+id,'compose','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizeable=no,width=400,height=500'); 
     return false;
 }
 </SCRIPT>

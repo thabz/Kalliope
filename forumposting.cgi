@@ -28,19 +28,25 @@ use Kalliope::Tree;
 use CGI qw(:standard);
 use strict;
 
-my $page = new Kalliope::Page (
-		title => 'Forum',
-		thumb => 'gfx/evolution-192.png',
-                pagegroup => 'forum');
-
 my $id = url_param('id');
 
-unless ($id) {
-    $page->print;
-    exit;
-}
-
 my $post = Kalliope::Forum::Post::newFromId ($id);
+my $forumId = $post->getForumId;
+my $forum = new Kalliope::Forum($forumId);
+
+my @crumbs;
+push @crumbs,['Forum','forumindex.cgi'];
+push @crumbs,[$forum->getTitle,$forum->getHeadersURL];
+push @crumbs,[$post->subject,''];
+
+my $page = new Kalliope::Page (
+		title => 'Forum: '.$forum->getTitle,
+		thumb => $forum->getBigIcon,
+		crumbs => \@crumbs,
+                pagegroup => 'forum');
+
+
+
 
 #
 # Show message -----------------------------------------------------
@@ -77,7 +83,7 @@ function gotoPosting(postingid) {
 }
 
 function composer(mode,id) {
-    window.open('forumcompose.cgi?mode='+mode+'&parentid='+id,'compose','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizeable=no,width=400,height=500'); 
+    window.open('forumcompose.cgi?forumid=$forumId&mode='+mode+'&parentid='+id,'compose','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizeable=no,width=400,height=500'); 
     return false;
 }
 </SCRIPT>
@@ -92,7 +98,7 @@ my $tree = new Kalliope::Tree('tree','gfx/tree',3,('Emne',("&nbsp;"x6).'Fra','&n
 my %translate;
 $translate{0} = 0;
 my $showing = $post;
-my @posts = Kalliope::Forum::getPostsInThread($post->threadId);
+my @posts = $forum->getPostsInThread($post->threadId);
 foreach my $post (@posts) {
     my $class = $showing->id == $post->id ? 'sel' : 'unsel';
     my $from = ("&nbsp;"x5).qq|<SPAN CLASS="$class" >&nbsp;|.$post->from.'&nbsp;</SPAN>';
