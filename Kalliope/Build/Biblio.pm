@@ -56,10 +56,10 @@ sub create {
 sub readfiles {
     my $fhandle = shift;
     my @result;
-    open (FILE,"fdirs/$fhandle/primaer.txt");
+    open (FILE,"../fdirs/$fhandle/primaer.txt");
     push @result,<FILE>;
     close (FILE);
-    open (FILE,"fdirs/$fhandle/sekundaer.txt");
+    open (FILE,"../fdirs/$fhandle/sekundaer.txt");
     push @result,<FILE>;
     close (FILE);
     return @result;
