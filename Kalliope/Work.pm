@@ -82,7 +82,7 @@ sub subtitle {
 
 sub clickableTitle {
     my $self = shift;
-    my $HTML = '<A HREF="vaerktoc.pl?fhandle='.$self->fhandle.'&vhandle='.$self->vhandle.'">';
+    my $HTML = '<A HREF="vaerktoc.pl?fhandle='.$self->fhandle.'&amp;vhandle='.$self->vhandle.'">';
     $HTML .= $self->title;
     $HTML .= '</A>';
     return $HTML;
@@ -214,7 +214,7 @@ sub getSearchResultEntry {
     $title =~ s/\t/<\/B>/g;
     
     my $HTML .= '<IMG ALT="Værk" ALIGN="right" SRC="gfx/icons/book-h48.gif">';
-    $HTML .= '<A CLASS=blue HREF="vaerktoc.pl?vhandle='.$self->vhandle.qq|&fhandle=|.$author->fhandle.'"><i>'.$title.'</i> '.$self->parenthesizedYear.qq|</A><BR>|;
+    $HTML .= '<A CLASS=blue HREF="vaerktoc.pl?vhandle='.$self->vhandle.qq|&amp;fhandle=|.$author->fhandle.'"><i>'.$title.'</i> '.$self->parenthesizedYear.qq|</A><BR>|;
     $HTML .= '<SPAN STYLE="color: green">'.$author->name.'</SPAN><BR><BR>';
     return $HTML;
 }

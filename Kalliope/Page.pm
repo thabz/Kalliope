@@ -303,8 +303,8 @@ EOF
     # Foot
     print '<TR><TD CLASS="footer" COLSPAN="3" HEIGHT="40" ALIGN="right" VALIGN="middle">';
 
-    print '<TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0">';
     print '<FORM METHOD="get" ACTION="ksearch.cgi">';
+    print '<TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0">';
     print '<TR>';
     print '<td nowrap style="padding-left: 20px; text-align: left;">';
     print '<b>Søg:</b> <INPUT CLASS="search" NAME="needle"><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free">';
@@ -312,8 +312,8 @@ EOF
     print '<TD VALIGN="middle" ALIGN="right" NOWRAP STYLE="padding-right: 20px">';
     print $self->langSelector;
     print '</TD></TR>';
-    print '</form>';
     print '</TABLE>';
+    print '</form>';
 
     print '</TD></TR>';
     
