@@ -74,7 +74,7 @@ my %menuStruct = (
                     },
 	prosa     => { url => 'fvaerker.pl?mode=prosa&', 
 	title => 'Prosa', 
-	desc => 'Prosatekster',
+	desc => qq|${poetName}s prosatekster|,
 	status => $poet->{'prosa'},
         icon => 'gfx/icons/works-h48.gif'
                     },
