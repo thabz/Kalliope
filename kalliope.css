@@ -1,4 +1,32 @@
 
+.tree IMG {
+  border: 0;
+  height: 20px;
+  vertical-align: top;
+}
+
+.tree TH {
+  font-family: Arial, Helvetica;
+  border-bottom: 1px solid black;
+}
+
+.tree A:hover {
+   background-color: rgb(238,216,174);
+}
+
+.tree TD {
+  font-family: Arial, Helvetica;
+}
+
+TABLE.tree {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+
 th.forumheads {
     font-family: Arial, Helvetica;
     font-weight: bold;

@@ -55,7 +55,8 @@ $page->addBox (width => '100%',
                content => $HTML);
 
 $HTML = $post->contentAsHTML;
-$HTML .= qq|<HR><A HREF="javascript:{}" onClick="return parent.composer('reply',$id)">Svar på dette indlæg</A>|;
+#$HTML .= qq|<HR><A HREF="javascript:{}" onClick="return parent.composer('reply',$id)">Svar på dette indlæg</A>|;
+$HTML .= qq|<HR><INPUT onClick="parent.composer('reply',$id);" TITLE="" CLASS="button" TYPE="submit" VALUE=" Svar på indlæg ">|;
 $HTML .= qq|<SCRIPT>parent.markSelection($id)</SCRIPT>|;
 
 $page->addBox (width => '100%',

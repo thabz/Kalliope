@@ -67,13 +67,10 @@ function markSelection(id) {
         headers.document.getElementById('row'+oldSelection+'a').className = 'unsel';
         headers.document.getElementById('row'+oldSelection+'b').className = 'unsel';
         headers.document.getElementById('row'+oldSelection+'c').className = 'unsel';
-        headers.document.getElementById('row'+oldSelection+'d').className = 'unsel';
-
     }
     headers.document.getElementById('row'+id+'a').className = 'sel';
     headers.document.getElementById('row'+id+'b').className = 'sel';
     headers.document.getElementById('row'+id+'c').className = 'sel';
-    headers.document.getElementById('row'+id+'d').className = 'sel';
     oldSelection = id;
 }
 </SCRIPT>

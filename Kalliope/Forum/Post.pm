@@ -74,6 +74,10 @@ sub id {
     return shift->{'id'};
 }
 
+sub parent {
+    return shift->{'parent'};
+}
+
 sub threadId {
     return shift->{'thread_id'};
 }

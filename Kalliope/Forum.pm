@@ -50,14 +50,13 @@ sub getPostsInThread {
     return @result;
 }
 
-sub getThreadAsHTML {
-    my $thread_id = shift;
-    my $HTML;
-    my @posts = Kalliope::Forum::getPostsInThread($thread_id);
-    foreach my $post (@posts) {
-	my $rid = "row".$post->id;
-        $HTML .= qq|<TR><TD ID="${rid}a" CLASS="unsel">|.$post->from.qq|</TD><TD ID="${rid}b" CLASS="unsel"><A ID="${rid}d" CLASS="unsel" HREF="javascript:{}" onClick="return parent.gotoPosting(|.$post->id.');">'.$post->subject.qq|</A></TD><TD ID="${rid}c" CLASS="unsel">|.$post->dateForDisplay.'</TD></TR>';
-    }
-    return $HTML;
-}
+#sub getThreadAsHTML {
+#    my $thread_id = shift;
+#    my $HTML;
+#    foreach my $post (@posts) {
+#	my $rid = "row".$post->id;
+#        $HTML .= qq|<TR><TD ID="${rid}a" CLASS="unsel">|..qq|</TD><TD ID="${rid}b" CLASS="unsel"><A ID="${rid}d" CLASS="unsel" HREF="javascript:{}" onClick="return parent.gotoPosting(|.$post->id.');">'.$post->subject.qq|</A></TD><TD ID="${rid}c" CLASS="unsel">|.$post->dateForDisplay.'</TD></TR>';
+#    }
+#    return $HTML;
+#}
 
