@@ -27,7 +27,7 @@ use Kalliope::Date;
 use strict;
 
 my $dbh = Kalliope::DB::connect();
-my $sthGroup = $dbh->prepare("INSERT INTO digte (longdid,fhandle,vhandle,parentdid,linktitel,toptitel,toctitel,tititel,foerstelinie,indhold,vaerkpos,vid,type,underoverskrift) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+my $sthGroup = $dbh->prepare("INSERT INTO digte (longdid,fhandle,vhandle,parentdid,linktitel,toptitel,toctitel,tititel,foerstelinie,indhold,vaerkpos,vid,type,underoverskrift,lang) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 my $sthnote = $dbh->prepare("INSERT INTO textnotes (longdid,note,orderby) VALUES (?,?,?)");
 my $sthpicture = $dbh->prepare("INSERT INTO textpictures (longdid,caption,url,orderby) VALUES (?,?,?,?)");
 my $sthkeyword = $dbh->prepare("INSERT INTO textxkeyword (longdid,keyword) VALUES (?,?)");
@@ -40,11 +40,11 @@ sub clean {
 }
 
 sub insert {
-    my $sthselect = $dbh->prepare("SELECT fhandle,vhandle,vid FROM vaerker WHERE dirty = 1");
+    my $sthselect = $dbh->prepare("SELECT fhandle,vhandle,vid,lang FROM vaerker WHERE dirty = 1");
     $sthselect->execute;
     my $sthupdate = $dbh->prepare("UPDATE vaerker SET dirty = 0 WHERE fhandle = ? AND vhandle = ?");
     my $orderby = 0;
-    while (my ($fhandle,$vhandle,$vid) = $sthselect->fetchrow_array) {
+    while (my ($fhandle,$vhandle,$vid,$lang) = $sthselect->fetchrow_array) {
 	clean($fhandle,$vhandle);
 	my $filename  = "../fdirs/$fhandle/$vhandle.xml";
 	print "           Inserting body $filename\n";
@@ -52,14 +52,14 @@ sub insert {
 	$twig->parsefile($filename);
 	my $kalliopework = $twig->root;
 	if ($kalliopework->first_child('workbody')) {
-	    _insertGroup($fhandle,$vhandle,$vid,0,$kalliopework->first_child('workbody')->children);
+	    _insertGroup($fhandle,$vhandle,$vid,$lang,0,$kalliopework->first_child('workbody')->children);
 	}
 	$sthupdate->execute($fhandle,$vhandle);
     }
 }
 
 sub _insertGroup {
-    my ($fhandle,$vhandle,$vid,$parent,@nodes) = @_;
+    my ($fhandle,$vhandle,$vid,$lang,$parent,@nodes) = @_;
     print STDERR "     using parent $parent\n";
     foreach my $node (@nodes) {
  	my $head = $node->first_child('head');
@@ -101,15 +101,15 @@ sub _insertGroup {
 
 	my $type = $node->tag;
 	if ($type eq 'section' || $type eq 'group') {
-	    $sthGroup->execute($longdid,$fhandle,$vhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,'','',$orderby++,$vid,$type,$subtitle);
+	    $sthGroup->execute($longdid,$fhandle,$vhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,'','',$orderby++,$vid,$type,$subtitle,$lang);
 	    my $newparent = Kalliope::DB::getLastInsertId($dbh,'digte');
 	    print STDERR "New parent: $newparent\n";
-	    _insertGroup($fhandle,$vhandle,$vid,$newparent,$node->first_child('content')->children);
+	    _insertGroup($fhandle,$vhandle,$vid,$lang,$newparent,$node->first_child('content')->children);
 	} else {
 	    my $longdid = $node->id;
  	    my $body = $node->first_child('body');
  	    my $firstline = $head->first_child('firstline') ? $head->first_child('firstline')->text : '';
-	    $sthGroup->execute($longdid,$fhandle,$vhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,$firstline,$body->sprint(1),$orderby++,$vid,$type,$subtitle);
+	    $sthGroup->execute($longdid,$fhandle,$vhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,$firstline,$body->sprint(1),$orderby++,$vid,$type,$subtitle,$lang);
 	}
     }
 }
