@@ -19,6 +19,7 @@
 #  $Id$
 
 package Kalliope::Page::Popup;
+use Kalliope::Page;
 @ISA = ('Kalliope::Page');
 
 sub addHTML {
