@@ -260,7 +260,7 @@ sub menuStructs {
     my %menuStructs = (
          'welcome' => {'menuTitle' => 'Velkommen',
                        'url' => 'index.cgi',
-                       'pages' => ['news','about','tak','musen','stats']
+                       'pages' => ['news','about','tak','musen','latest','stats']
                        },
          'poets'    => {menuTitle => 'Digtere',
                        url => 'poets.cgi?list=az&sprog='.$lang,
@@ -310,6 +310,9 @@ sub menuStructs {
                        },
          'stats' =>    {menuTitle => 'Statistik',
                        url => 'kstats.pl'
+                       },
+         'latest' =>    {menuTitle => 'Tilføjelser',
+                         url => 'latest.cgi'
                        },
          'poetsbyname' => {menuTitle => 'Digtere efter navn',
                            url => 'poets.cgi?list=az&sprog='.$lang

@@ -51,5 +51,11 @@ sub shortDate {
     }
 }
 
+sub longDate {
+    my $time = shift;
+    my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime($time);
+    $year+=1900;
+    return "$mday. $months[$mon] $year"
+}
 
 1;

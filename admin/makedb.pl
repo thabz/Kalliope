@@ -4,6 +4,7 @@ use lib '..';
 use Kalliope::Sort;
 use Kalliope::DB;
 use Kalliope::Strings;
+use POSIX;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -381,9 +382,11 @@ $rc = $dbh->do("CREATE TABLE digte (
               noter text,
 	      pics text,
               layouttype enum('prosa','digt') default 'digt',
+	      createtime INT NOT NULL,
               afsnit int,      /* 0 hvis ikke afsnitstitel, ellers H-level. */
 	      INDEX (longdid),
 	      INDEX (did),
+	      INDEX (createtime),
 	      INDEX (fid),
 	      INDEX (vid),
               UNIQUE (did,longdid))
@@ -397,7 +400,7 @@ $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywor
 $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM digte");
 $sth = $dbh->prepare("SELECT * FROM vaerker WHERE findes=1");
 $sthafs = $dbh->prepare("INSERT INTO digte (fid,vid,titel,toctitel,vaerkpos,afsnit) VALUES (?,?,?,?,?,?)");
-$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,foerstelinie,underoverskrift,indhold,noter,pics,afsnit,layouttype,haystack) VALUES (?,?,?,?,?,?,?,?,?,?,?,0,?,?)");
+$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,foerstelinie,underoverskrift,indhold,noter,pics,afsnit,layouttype,haystack,createtime) VALUES (?,?,?,?,?,?,?,?,?,?,?,0,?,?,?)");
 $sth->execute;
 print "  Ikke tomme: ".$sth->rows."\n";
 
@@ -546,10 +549,14 @@ sub insertdigt {
     $noter =~ s/[\n\s]+$//;
     $indhold =~ s/^\n+//m;
     $pics = join '$$$',@pics;
-# Insæt hvad vi har.
     $haystack = Kalliope::Strings::stripHTML("$titel $under $indhold");
 
-    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$toctitel || $titel,$firstline,$under,$indhold,$noter,$pics,$layouttype || 'digt',$haystack);
+    # Try to find create date...
+    my ($year,$mon,$day) = $id =~ /^\D*(\d\d\d\d)(\d\d)(\d\d)/;
+    my $time = POSIX::mktime(0,0,2,$day,$mon-1,$year-1900) || 0;
+
+    # Insæt hvad vi har.
+    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$toctitel || $titel,$firstline,$under,$indhold,$noter,$pics,$layouttype || 'digt',$haystack,$time);
     $i++;
     $layouttype = $noter = $under = $indhold = '';
     $firstline = '';
