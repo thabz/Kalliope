@@ -237,7 +237,7 @@ EOF
 
     print '<TABLE BGCOLOR="black" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
     print '<TD ROWSPAN=2><IMG SRC="gfx/trans1x1.gif" HEIGHT=70 WIDTH=1></TD>';
-    print '<TD WIDTH="100%" CLASS="maintitle">&nbsp;&nbsp;&nbsp;'.$self->titleAsHTML.'</TD>';
+    print '<TD WIDTH="100%" CLASS="maintitle">'.$self->titleAsHTML.'</TD>';
     print '<TD ROWSPAN=2 VALIGN="top">'.$self->thumbIMG.'</TD></TR>';
 #    print '</TR>';
     print '<TR><TD ALIGN="right" CLASS="navigation">'.$self->_navigationSub.'</TD>';
@@ -426,7 +426,7 @@ sub _navigationMain {
                                   $struct->{'url'},$struct->{'icon'});
 	$HTML .= qq|<A CLASS=white  HREF="$url">|;
 	$HTML .= qq|<IMG BORDER=0 SRC="$icon"><BR>|;
-        if ($key ne $self->{'pagegroup'}) {
+        if ($key ne $self->{'pagegroup'} && $key ne $self->{'pagegroupchoosen'}) {
 	    $HTML .= $title;
 	} else {
             $HTML .= "<B>$title</B>";
