@@ -44,8 +44,10 @@ sub build {
 	    $sth->execute($1,0,0,$2,'event','history','');
 	} elsif (/^(\d+)-(\d+)-(\d+): (.*)$/) {
 	    $sth->execute($1,$2,$3,$4,'event','history','');
-	} else {
-	    print STDERR "Error in aarstal.txt line $line: »$_«";
+	} elsif (/^#/) {
+
+        } else {
+	    print STDERR "Error in data/timeline.txt line $line: »$_«";
 	}
 	$line++;
     }
