@@ -41,6 +41,7 @@ push @crumbs,[$post->subject,''];
 
 my $page = new Kalliope::Page (
 		title => 'Forum: '.$forum->getTitle,
+		htmltitle => 'Forum: <SPAN CLASS="lifespan">'.$forum->getTitle.'</SPAN>',
 		thumb => $forum->getBigIcon,
 		crumbs => \@crumbs,
                 pagegroup => 'forum');

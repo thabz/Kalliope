@@ -118,7 +118,7 @@ sub titleAsHTML {
         $title = $self->{'poet'}->name;
         $title .= '<SPAN CLASS="lifespan"> '.$self->{'poet'}->lifespan.'</SPAN>';
     } else {
-        $title = $self->{'title'};
+        $title = $self->{'htmltitle'} || $self->{'title'};
     }
     return $title;
 }

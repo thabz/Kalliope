@@ -38,6 +38,7 @@ push @crumbs,[$forum->getTitle,$forum->getHeadersURL];
 
 my $page = new Kalliope::Page (
 		title => 'Forum: '.$forum->getTitle,
+		htmltitle => 'Forum: <SPAN CLASS="lifespan">'.$forum->getTitle.'</SPAN>',
 		thumb => $forum->getBigIcon,
 		page => 'forumheaders',
 		crumbs => \@crumbs,
