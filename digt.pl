@@ -62,6 +62,7 @@ push @crumbs,[$poem->title,'digt.pl?longdid='.$poem->longdid];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
                                       page => 'vaerker',
+				      extrawindowtitle => $poem->title,
                                       crumbs => \@crumbs);
 
 if (defined param('korrektur')) {
