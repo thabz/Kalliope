@@ -26,11 +26,11 @@ use Kalliope::Sort;
 
 my $dbh = Kalliope::DB::connect();
 
-my $sthinsert = $dbh->prepare("INSERT INTO forbogstaver (forbogstav,longdid,fhandle,vhandle,lang,type) VALUES (?,?,?,?)");
+my $sthinsert = $dbh->prepare("INSERT INTO forbogstaver (forbogstav,longdid,fhandle,vhandle,lang,type) VALUES (?,?,?,?,?,?)");
 
 sub clean {
     my @changedWorks = @_;
-    my $sth = $dbh->prepare("DELETE FROM firstletters WHERE fhandle = ? AND vhandle = ?");
+    my $sth = $dbh->prepare("DELETE FROM forbogstaver WHERE fhandle = ? AND vhandle = ?");
     foreach my $entry (@changedWorks) {
        $sth->execute($entry->{'fhandle'},$entry->{'vhandle'});
     }
@@ -38,17 +38,18 @@ sub clean {
 
 sub insert {
     my @changedWorks = @_;
-    $sth = $dbh->prepare("SELECT foerstelinie,tititel as titel,longdid,fhandle,vhandle,lang FROM digte D WHERE type='poem' ORDER BY lang");
+    $sth = $dbh->prepare("SELECT foerstelinie,tititel as titel,longdid,fhandle,vhandle,lang FROM digte WHERE type='poem' AND fhandle = ? AND vhandle = ? ORDER BY lang");
     my @poems;
     foreach my $entry (@changedWorks) {
        $sth->execute($entry->{'fhandle'},$entry->{'vhandle'});
+       my @poems;
        while (my $poem = $sth->fetchrow_hashref) {
 	   push @poems,$poem;
-	   map { $_->{'sort'} = $_->{'titel'} } @poems;
-	   _insert('t',@poems);
-	   map { $_->{'sort'} = $_->{'foerstelinie'} } @poems;
-	   _insert('f',@poems);
        }
+       map { $_->{'sort'} = $_->{'titel'} } @poems;
+       _insert('t',@poems);
+       map { $_->{'sort'} = $_->{'foerstelinie'} } @poems;
+       _insert('f',@poems);
     }
 }
 
@@ -58,7 +59,7 @@ sub _insert {
 	next unless $f->{'sort'};
 	$f->{'sort'} =~ s/Aa/Å/g;
 	$f->{'sort'} =~ tr/ÁÀÉÈÖ0-9/AAEEØ........../;
-	$sthinsert->execute(substr($f->{'sort'},0,1), $$f{longdid}, $$f{fhandle}, $$f{vhandle},$f->{'lang'},$mode);
+	$sthinsert->execute(substr($f->{'sort'},0,1), $$f{longdid}, $$f{fhandle}, $$f{vhandle},$f->{'lang'},$type);
     }
 }
 
