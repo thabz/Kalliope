@@ -22,6 +22,7 @@
 
 package Kalliope::Timeline;
 
+use Kalliope;
 use Kalliope::Date;
 use Kalliope::DB;
 
@@ -36,6 +37,24 @@ sub getEventsGivenMonthAndDay {
         $result{$$h{'year'}} = $$h{'description'};
     }
     return %result;
+}
+
+sub getEventsGivenMonthAndDayAsHTML {
+    my ($month,$day) = @_;
+    unless ($month && $day) {
+	(undef,undef,undef,$day,$month,undef,undef,undef,undef)=localtime(time);
+	$month++;
+    }
+    my %events = Kalliope::Timeline::getEventsGivenMonthAndDay($month,$day);
+
+    my $HTML;
+    foreach my $year (sort keys %events) {
+        my $text = $events{$year};
+	Kalliope::buildhrefs(\$text);
+	$HTML .= qq|<LI VALUE="$year">$text|;
+    }
+    $HTML = qq|<OL TYPE="1">$HTML</OL>| if $HTML;
+    return $HTML;
 }
 
 sub getHistoryInTimeSpan {

@@ -61,7 +61,7 @@ if (my $dayToday = &dayToday()) {
 	    width => '100%',
 	    coloumn => 1,
 	    content => $dayToday,
-	    end => '<A HREF="kdagenidag.pl"><IMG  HEIGHT=16 WIDTH=16 VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Vælg dato"></A>');
+	    end => '<A HREF="today.cgi"><IMG  HEIGHT=16 WIDTH=16 VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Vælg dato"></A>');
 }
 
 my ($sonnetText,$sonnetEnd) = &sonnet;
@@ -97,18 +97,7 @@ sub latestNews {
 #
 
 sub dayToday {
-    my $HTML;
-    my ($sec,$min,$hour,$dg,$md,$year,$wday,$yday,$isdst)=localtime(time);
-    $md++;
-    my %events = Kalliope::Timeline::getEventsGivenMonthAndDay($md,$dg);
-
-    foreach my $year (sort keys %events) {
-        my $text = $events{$year};
-	Kalliope::buildhrefs(\$text);
-	$HTML .= qq|<LI VALUE="$year">$text|;
-    }
-    $HTML = qq|<OL TYPE="1">$HTML</OL>| if $HTML;
-    return $HTML;
+    return Kalliope::Timeline::getEventsGivenMonthAndDayAsHTML();
 }
 
 #

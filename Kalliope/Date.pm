@@ -25,7 +25,16 @@ use strict;
 
 my @months = qw (Jan Feb Mar Apr Maj Jun Jul Aug Sep Okt Nov Dec);
 my @weekdays = qw (Søn Man Tir Ons Tors Fre Lør);
+my @monthsLong = qw (Januar Februar Marts April Maj Juni Juli 
+                     August September Oktober November December);
 
+sub getMonthNamesShort {
+    return @months;
+}
+
+sub getMonthNamesLong {
+    return @monthsLong;
+}
 
 sub weekdayShortName {
     return $weekdays[$_[0]];
