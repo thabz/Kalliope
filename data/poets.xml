@@ -87,6 +87,36 @@
   </period>
 </person>
 
+<person id="voigtlaender" lang="de" type="poet">
+  <name>
+    <firstname>Gabriel</firstname>
+    <lastname>Voigtländer</lastname>
+  </name>
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>1643</date>
+    </dead>
+  </period>
+</person>
+
+<person id="rist" lang="de" type="poet">
+  <name>
+    <firstname>Johan</firstname>
+    <lastname>Rist</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1606</date>
+    </born>
+    <dead>
+      <date>1667</date>
+    </dead>
+  </period>
+</person>
+
 <person id="hegedorn" lang="de" type="poet">
   <name>
     <firstname>Friedrich von</firstname>
@@ -707,10 +737,10 @@
   </name>
   <period>
     <born>
-      <date>?</date>
+      <date>1795-03-03</date>
     </born>
     <dead>
-      <date>?</date>
+      <date>1820</date>
     </dead>
   </period>
 </person>
@@ -748,29 +778,33 @@
 <person id="kruse" lang="dk" type="poet">
   <name>
     <firstname>M. P.</firstname>
-    <lastname>Kruse</lastname>
+    <lastname>Kruuse</lastname>
+    <fullname>Manderup Peder Kruuse</fullname>
   </name>
   <period>
     <born>
-      <date>?</date>
+      <date>1760-12-14</date>
+      <place>København</place>
     </born>
     <dead>
-      <date>?</date>
+      <date>?</date> <!-- levede stadig da Erslews Forfatter-Lexicon blev skrevet -->
     </dead>
   </period>
 </person>
 
 <person id="stenblock" lang="dk" type="poet">
   <name>
-    <firstname></firstname>
-    <lastname>Stenblock</lastname>
+    <firstname>C. E.</firstname>
+    <lastname>Steenbloch</lastname>
+    <fullname>Cornelius Enevold Steenbloch</fullname>
   </name>
   <period>
     <born>
-      <date>?</date>
+      <date>1773-02-27</date>
+      <place>Bynæsset ved Trondheim</place>
     </born>
     <dead>
-      <date>?</date>
+      <date>1836-10-31</date>
     </dead>
   </period>
 </person>
@@ -804,6 +838,21 @@
     </dead>
   </period>
 </person>
+
+<person id="ravn" lang="dk" type="poet">
+  <name>
+    <firstname>Hans Mikkelsen</firstname>
+    <lastname>Ravn</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1610</date>
+    </born>
+    <dead>
+      <date>1663</date>
+    </dead>
+  </period>
+</person>
  
 <person id="wichman" lang="dk" type="poet">
   <name>
@@ -819,6 +868,72 @@
     </dead>
   </period>
 </person>
+
+<!-- TODO: Find mere nøjagtige døds/fødselsdatoer -->
+<person id="roskilde" lang="dk" type="poet">
+  <name>
+    <firstname>Peder Jensen</firstname>
+    <lastname>Roskilde</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1575</date>
+    </born>
+    <dead>
+      <date>1641</date>
+    </dead>
+  </period>
+</person>
+
+<!-- TODO: Find døds/fødselsår -->
+<person id="aagaard" lang="dk" type="poet">
+  <name>
+    <firstname>Christian</firstname>
+    <lastname>Aagaard</lastname>
+  </name>
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>?</date>
+    </dead>
+  </period>
+</person>
+
+<!-- TODO: Find mere nøjagtige datoer -->
+<person id="bangc" lang="dk" type="poet">
+  <name>
+    <firstname>Claus Hansen</firstname>
+    <lastname>Bang</lastname>
+    <pseudonym>Dorus</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1618 ca.</date>
+    </born>
+    <dead>
+      <date>1682</date>
+    </dead>
+  </period>
+</person>
+
+<!-- TODO: Find mere nøjagtige datoer -->
+<person id="bering" lang="dk" type="poet">
+  <name>
+    <firstname>Vitus</firstname>
+    <lastname>Bering</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1617-10-06</date>
+      <place>Viborg</place>
+    </born>
+    <dead>
+      <date>1675-05-20</date>
+    </dead>
+  </period>
+</person>
  
 <person id="bording" lang="dk" type="poet">
   <name>
@@ -828,6 +943,7 @@
   <period>
     <born>
       <date>1619-01-21</date>
+      <place>Ribe</place>
     </born>
     <dead>
       <date>1677-05-24</date>
@@ -847,6 +963,21 @@
     <dead>
       <date>1698-03-16</date>
       <place>Maribo Kloster</place>
+    </dead>
+  </period>
+</person>
+
+<person id="olavius" lang="dk" type="poet">
+  <name>
+    <firstname>Johannes</firstname>
+    <lastname>Olavius</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1624</date>
+    </born>
+    <dead>
+      <date>1698</date>
     </dead>
   </period>
 </person>
@@ -1075,6 +1206,55 @@
   </period>
 </person>
 
+<person id="jernskaeg" lang="dk" type="poet">
+  <name>
+    <firstname>Mikkel Hansen</firstname>
+    <lastname>Jernskæg</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1654</date>
+    </born>
+    <dead>
+      <date>1711</date>
+    </dead>
+  </period>
+</person>
+
+<!-- TODO: Find dødsdato -->
+<person id="rostock" lang="dk" type="poet">
+  <name>
+    <firstname>Mads Pedersen</firstname>
+    <lastname>Rostock</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1655-01-01</date>
+      <place>Ribe</place>
+    </born>
+    <dead>
+      <date>1713</date>
+      <place>Middelfart</place>
+    </dead>
+  </period>
+</person>
+
+<!-- TODO: Find døds/fødselsår -->
+<person id="thrane" lang="dk" type="poet">
+  <name>
+    <firstname>Mads</firstname>
+    <lastname>Thrane</lastname>
+  </name>
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>?</date>
+    </dead>
+  </period>
+</person>
+
 <person id="reenberg" lang="dk" type="poet">
   <name>
     <firstname>Tøger</firstname>
@@ -1091,6 +1271,7 @@
   </period>
 </person>
 
+<!-- TODO: Find mere nøjagtige datoer -->
 <person id="thura" lang="dk" type="poet">
   <name>
     <firstname>Laurits</firstname>
@@ -1121,6 +1302,7 @@
   </period>
 </person>
 
+<!-- TODO: Find mere nøjagtige datoer -->
 <person id="tychonius" lang="dk" type="poet">
   <name>
     <firstname>Christen Lassen</firstname>
@@ -1183,6 +1365,7 @@
   </period>
 </person>
 
+<!-- TODO: Find mere nøjagtige datoer -->
 <person id="wolfburg" lang="dk" type="poet">
   <name>
     <firstname>Morten Caspar</firstname>
@@ -1278,6 +1461,7 @@
   </period>
 </person>
  
+<!-- TODO: Find mere nøjagtige datoer -->
 <person id="wadskiaer" lang="dk" type="poet">
   <name>
     <firstname>Christian Frederik</firstname>
@@ -1286,6 +1470,7 @@
   <period>
     <born>
       <date>1713</date>
+      <place>Ørslev Kloster ved Skive</place>
     </born>
     <dead>
       <date>1779</date>
@@ -1293,6 +1478,7 @@
   </period>
 </person>
 
+<!-- TODO: Find mere nøjagtige datoer -->
 <person id="graah" lang="dk" type="poet">
   <name>
     <firstname>Jacob</firstname>
@@ -1452,6 +1638,7 @@
   </period>
 </person>
  
+<!-- TODO: Find mere nøjagtige datoer -->
 <person id="stockfleth" lang="dk" type="poet">
   <name>
     <firstname>Th.</firstname>
@@ -1773,9 +1960,11 @@
   <period>
     <born>
       <date>1769-03-28</date>
+      <place>Gartz i Pommern</place>
     </born>
     <dead>
-      <date>1826-12-26</date>
+      <date>1826-12-16</date>  <!-- 16 eller 26 dec.? -->
+      <place>Slesvig</place>
     </dead>
   </period>
 </person>
