@@ -167,7 +167,9 @@ sub poem {
     $HTML .= '<SPAN CLASS="digtoverskrift"><I>'.$poem->title."</I></SPAN><BR>";
     $HTML .= '<SPAN CLASS="digtunderoverskrift">'.$poem->subtitle.'</SPAN><BR>' if $poem->subtitleAsHTML;
     $HTML .= '<BR>';
-    $HTML .= $poem->content;
+    
+    $HTML .= $poem->content($biblemark);
+    
     $HTML =~ s/<footmark id="footnote([^"]+)"\/>/<A CLASS="green" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup>$1<\/sup><\/A>/gsi;
     $HTML =~ s/<footmark&nbsp;id="footnote([^"]+)"\/>/<A CLASS="green" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup><span style="font-size: 9px">$1<\/span><\/sup><\/A>/gsi;
     if ($needle) {
@@ -186,18 +188,6 @@ sub poem {
 	$HTML =~ s/$split1/$anchor$split1/;
 	$HTML =~ s/$split1/$block1/g;
 	$HTML =~ s/$split2/$block2/g;
-    }
-    if ($biblemark) {
-       my ($begin,$end) = split /-/,$biblemark;
-       $end = $begin unless $end;
-       $end++;
-       print STDERR "** $begin - $end **\n";
-       $HTML =~ s/(&nbsp;$begin\.\s+)/<A NAME="biblemark"><\/A><DIV CLASS="biblemark">$1/s;
-       if ($HTML =~ /&nbsp;$end\.\s+/) {
-	   $HTML =~ s/(&nbsp;$end\.\s+)/<\/DIV>$1/s;
-       } else {
-           $HTML = "$HTML</DIV>";
-       }
     }
     return $HTML;
 }

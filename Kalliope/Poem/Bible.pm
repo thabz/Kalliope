@@ -104,3 +104,55 @@ sub clickableTitleSimple {
     my $extraURL = $verses ? '&biblemark='.$verses."#biblemark" : '';
     return '<A CLASS=green HREF="digt.pl?longdid='.$self->longdid.qq|$extraURL">$title</A>|;
 }
+
+sub content {
+    my $self = shift;
+    my $biblemark = shift;
+    my ($begin,$end) = (0,0);
+    if ($biblemark) {
+       ($begin,$end) = split /-/,$biblemark;
+       $end = $begin unless $end;
+    }
+#    print STDERR "** $begin - $end **\n";
+
+    unless (defined $self->{'content'}) {
+	my $dbh = Kalliope::DB->connect;
+	my $sth = $dbh->prepare("SELECT indhold,noter FROM digte WHERE did = ?");
+	$sth->execute($self->did);
+	my $data = $sth->fetchrow_hashref;
+	$self->{'indhold'} = $data->{'indhold'};
+	$self->{'noter'} = $data->{'noter'};
+	$self->{'type'} = $data->{'type'};
+	$self->{'indhold'} = $self->extractFootnotes($self->{'indhold'});
+    }
+    my @indhold;
+    foreach my $line (split /\n/,$self->{'indhold'}) {
+        if ($line =~ /^\s*$/) {
+            $line = '</TD></TR><TR><TD COLSPAN=2>&nbsp;';
+	}
+	if ($line =~ s/^\s*(\d+)\.\s+//) {
+	    my $num = $1;
+	    my $bg = '';
+	    if ($num >= $begin && $num <= $end) {
+                $bg = 'background-color: #fafac0';
+	    }
+	    if ($num == $begin) {
+                $line = '<A NAME="biblemark"></A>'.$line;
+	    }
+	    $line = qq|</TD></TR><TR><TD STYLE="$bg; color: #808080; text-align: right" VALIGN="top">$num&nbsp;&nbsp;&nbsp;</TD><TD STYLE="$bg">$line|;
+        }
+	push @indhold,"$line";
+    }
+    $self->{'indhold'} = join "",@indhold;
+    $self->{'indhold'} = '<table CELLSPACING=0 CELLPADDING=0>'.$self->{'indhold'}.'</table>';
+    $self->{'indhold'} =~ s/<w>/<span class="wide">/gi;
+    $self->{'indhold'} =~ s/<\/w>/<\/span>/gi;
+    $self->{'indhold'} =~ s/<sc>/<span style="font-variant: small-caps">/g;
+    $self->{'indhold'} =~ s/<\/sc>/<\/span>/g;
+
+#    $self->{'indhold'} =~ s/\n/<BR>\n/g;
+    $self->{'indhold'} =~ s/,,/&bdquo;/g;
+    $self->{'indhold'} =~ s/''/&ldquo;/g;
+    return $self->{'indhold'}; 
+}
+

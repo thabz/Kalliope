@@ -29,6 +29,7 @@ use Kalliope::Person;
 use Kalliope::Work;
 use Kalliope::Strings;
 use Kalliope::Quality;
+use Kalliope::Poem::Bible;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -43,7 +44,10 @@ sub new {
     $sth->execute();
     Kalliope::Page::notFound() unless $sth->rows;
     my $obj = $sth->fetchrow_hashref;
+    
+    $class = 'Kalliope::Poem::Bible' if $obj->{'longdid'} =~ /^bibel/;
     bless $obj,$class;
+    
     $obj->{'quality_obj'} = new Kalliope::Quality($obj->{'quality'});
     return $obj;
 }
