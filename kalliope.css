@@ -223,6 +223,24 @@ H1, H2, H3 {
     font-weight: bold;
     color: rgb(139,56,65);
 }
+
+span.title1 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+span.title2 {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+span.title3 {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+}
 	
 TD.textboxcontent { 
     padding: 0pt 0pt 0pt 0pt; 

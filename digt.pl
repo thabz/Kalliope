@@ -240,7 +240,7 @@ sub tableOfContents {
     $sth->execute($work->vid);
     while(my $d = $sth->fetchrow_hashref) {
 	if ($d->{'afsnit'} && !($d->{'titel'} =~ /^\s*$/)) {
-	    $HTML .= '<BR><FONT SIZE="+1"><I>'.$d->{'titel'}."</I></FONT><BR>";
+	    $HTML .= qq|<BR><SPAN CLASS="title$$d{afsnit}">$$d{titel}</SPAN><BR>\n|;
 	} else {
             $HTML .= '<SPAN CLASS="listeblue">&#149;</SPAN>&nbsp;' if $d->{'titel'};
 	    if ($d->{'longdid'} eq $longdid) {

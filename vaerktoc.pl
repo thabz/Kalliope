@@ -168,7 +168,7 @@ sub tableOfContent {
     return 'Kalliope indeholder endnu ingen tekster fra dette værk.' unless $sth->rows;
     while(my $d = $sth->fetchrow_hashref) {
 	if ($d->{'afsnit'} && !($d->{'titel'} =~ /^\s*$/)) {
-	    $HTML .= '<BR><FONT SIZE="+1"><I>'.$d->{'titel'}."</I></FONT><BR>\n";
+	    $HTML .= qq|<BR><SPAN CLASS="title$$d{afsnit}">$$d{titel}</SPAN><BR>\n|;
 	} else {
 	    $HTML .= "&nbsp;" x 4;
 	    $HTML .= "<A HREF=\"digt.pl?longdid=".$d->{'longdid'}.'">';
