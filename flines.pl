@@ -43,7 +43,7 @@ do 'fstdhead.ovs';
 print "<BR>\n";
 
 
-$sth = $dbh->prepare("SELECT longdid, digte.titel, digte.foerstelinie FROM digte, vaerker WHERE digte.fid=? AND digte.vid = vaerker.vid AND vaerker.type = 'v' AND afsnit=0");
+$sth = $dbh->prepare("SELECT longdid, digte.titel, digte.foerstelinie FROM digte, vaerker WHERE digte.fid=? AND digte.vid = vaerker.vid AND digte.layouttype = 'digt' AND afsnit=0");
 $sth->execute($fid);
 $i=0;
 while ($f[$i] = $sth->fetchrow_hashref) { 
