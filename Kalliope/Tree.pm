@@ -127,7 +127,7 @@ sub getJavaScript {
    my $gfxdir = $tree->{'gfxDir'};
 
    my ($node,$array);
-   my $HTML = qq|\n<SCRIPT LANGUAGE="javascript">\n|;
+   my $HTML = qq|\n<SCRIPT TYPE="text/javascript" LANGUAGE="javascript">\n|;
 
    # Arrays of arrays of children
    $HTML .= qq|TreeChildren = new Array ();\n|;

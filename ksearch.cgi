@@ -72,7 +72,7 @@ $page->print();
 sub getEasterJS {
     my $NUM = shift;
 return <<"EOF";
-<SCRIPT>
+<SCRIPT  TYPE="text/javascript">
 for (i=1;i<=$NUM;i++) {
    icon = i & 1 ? 'poet-w64.gif' : 'works-w64.gif';
    document.write('<DIV ID=div'+i+' STYLE="position:absolute"><IMG SRC="gfx/icons/'+icon+'"></DIV>');

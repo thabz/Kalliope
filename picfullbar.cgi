@@ -26,7 +26,7 @@ A:link, A:visited, A:active {
 	 color: white;
 }
 </STYLE>
-<SCRIPT>
+<SCRIPT TYPE="text/javascript">
 function zoom(val) {
     var border = val < 100 ? 3 : 0;
     var x = Math.round (($x * val) / 100);
