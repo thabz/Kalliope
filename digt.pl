@@ -325,14 +325,16 @@ sub notes {
 	$HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>',@notes;
     }
     if ($#keywords >= 0) {
-	$HTML .= '<br><br><B>Nøgleord:</B> ';
+	$HTML .= '<span class="noprint"><br><br><B>Nøgleord:</B> ';
         $HTML .= join ', ', map { $_->clickableTitle($LA) } @keywords;
+	$HTML .= '</span>';
     }
     $HTML .= "</span>";
 
     # Quality
 #    $HTML .= '<br><br><b>Tillid:</b> '.$poem->quality->asHTML;
-    $HTML .= '<br><br>'.$poem->quality->asHTML;
+    $HTML .= '<span class="noprint"><br><br>'.$poem->quality->asHTML;
+    $HTML .= "</span>";
     return $HTML;
 }
 
