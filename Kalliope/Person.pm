@@ -200,6 +200,10 @@ sub proseWorks {
     return @list;
 }
 
+sub hasHenvisninger {
+    return shift->{'hashenvisninger'} > 0;
+}
+
 sub menu {
     my $self = shift;
     my $page = shift;
@@ -244,7 +248,7 @@ sub menu {
        henvisninger => { url => 'henvisninger.cgi?', 
                     title => 'Henvisninger', 
                     desc => 'Oversigt over tekster, som henviser til '.$poetName.'s tekster.',
-                    status => 1 },
+                    status => $self->hasHenvisninger},
        links     => { url => 'flinks.pl?', 
                     title => 'Links', 
                     desc => 'Henvisninger til andre steder på internettet, som har relevant information om '.$poetName,

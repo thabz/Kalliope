@@ -102,7 +102,7 @@ my %menuStruct = (
                     },
 	henvisninger => { url => 'henvisninger.cgi?', 
 	title => 'Henvisninger', 
-	status => 1, 
+	status => $poet->hasHenvisninger, 
         desc => 'Oversigt over tekster som henviser til '.$poetName.'s tekster.',
         icon => 'gfx/icons/links-h48.gif'
                     },

@@ -12,6 +12,7 @@ use POSIX;
 
 my $dbh = Kalliope::DB->connect;
 
+goto pis;
 #
 # Keywords
 #
@@ -412,6 +413,14 @@ $sth->finish;
 
 print "Building Xrefs...\n";
 Kalliope::Build::Xrefs::build();
+
+#
+# Build hasHenvisninger 
+#
+
+pis:
+print "Detekterer henvisninger...\n";
+Kalliope::Build::Persons::buildHasHenvisninger($dbh);
 
 #
 # Build forbogstaver

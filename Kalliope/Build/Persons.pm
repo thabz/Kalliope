@@ -26,6 +26,7 @@ use XML::DOM;
 require Unicode::String;
 use Kalliope::DB;
 use Kalliope::Date;
+use Kalliope::Poem;
 use strict;
 
 my $dbh = Kalliope::DB::connect();
@@ -121,6 +122,7 @@ sub create {
               pics int(1),
               bio int(1),
               biotext text,
+              hashenvisninger int(1),
               links int(1),
               sekundaer int(1),
               primaer int(1),
@@ -209,3 +211,21 @@ sub insert {
     return %fhandle2fid;
 }
 
+sub buildHasHenvisninger {
+    my $dbh = shift;
+    my $sth = $dbh->prepare("SELECT fromid,toid FROM xrefs,digte WHERE xrefs.toid = digte.longdid AND digte.fid = ?");
+    my $sthp = $dbh->prepare("SELECT fid FROM fnavne");
+    my $sthu = $dbh->prepare("UPDATE fnavne SET hashenvisninger = ? WHERE fid = ?");
+    $sthp->execute;
+    while (my ($fid) = $sthp->fetchrow_array) {
+	$sth->execute($fid);
+	my $antal = $sth->rows;
+        next unless $antal > 0;
+        my $i = 0;
+        while (my ($fromid,$toid) = $sth->fetchrow_array) {
+           my $digt = new Kalliope::Poem(longdid => $fromid);
+           $i++ unless $digt->fid == $fid;
+        }
+        $sthu->execute($i,$fid);
+    }
+}
