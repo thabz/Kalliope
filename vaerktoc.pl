@@ -186,7 +186,7 @@ sub tableOfContent {
 	    $tit = qq|<a href="digt.pl?longdid=$$d{longdid}">$tit</a>|;
 	}
 	if ($num) {
-	    $HTML .= qq|<tr><td class="tocnum">$num</td><td>$tit</td></tr>\n|;
+	    $HTML .= qq|<tr><td nowrap class="tocnum">$num</td><td>$tit</td></tr>\n|;
 	} else { 
 	    if ($d->{'afsnit'}) {
 	       $HTML .= qq|<tr><td colspan="2">$tit</td></tr>\n|;
