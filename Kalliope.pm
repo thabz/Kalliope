@@ -51,7 +51,6 @@ sub shortdate {
     }
 }
 
-
 #
 # Fix URLer
 #
@@ -84,6 +83,7 @@ sub buildhrefs {
    }
    $$txt =~ s/<sc>/<span style="font-variant: small-caps">/g;
    $$txt =~ s/<\/sc>/<\/span>/g;
+   $$txt = makeMetricLetters($$txt);
    $$txt =~ s/<A\s+F=([^\s>]+)\s*>/<A HREF="ffront.cgi?fhandle=$1">/g;
    $$txt =~ s/<A\s+D=([^\s>]+)\s*>/<A HREF="digt.pl?longdid=$1">/g;
    $$txt =~ s/<A\s+K=([^\s>]+)\s*>/<A HREF="keyword.cgi?keyword=$1">/g;
@@ -91,6 +91,33 @@ sub buildhrefs {
    $$txt =~ s/<A\s+/<A CLASS=green /g;
    $$txt =~ s/<year>(\d+)<\/year>/<A CLASS="timecontext" TITLE="Vis historisk kontekst for året $1." onClick="return openTimeContext($1)" HREF="javascript:{}">$1<\/A>/gi;
    return $$txt;
+}
+
+sub makeMetricLetters {
+    my $text = shift;
+    return $text unless $text =~ /<metrik>/i;
+    while ($text =~ s/<metrik>([^<]*)<\/metrik>/&_makeMetricLetters($1)/mie) {
+       1;
+    }
+    return $text;
+}
+
+sub _makeMetricLetters {
+    my $metrik = shift;
+    my $output;
+    my %conv = ( 'uu' => 'uu',
+                 '|' => 'pipe',
+		 'u' => 'u',
+		 'U' => 'U',
+		 'UU' => 'UU',
+		 '_u' => '_u',
+		 'x' => 'x',
+		 '-' => 'minus',
+		 '/' => 'slash' );
+    foreach $part (split / +/,$metrik) {
+        $output .= '<IMG SRC="gfx/metrik/'.$conv{$part}.'.gif" BORDER=0>';
+    }
+    return $output;
 }
 
 #
