@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- xq503.xsl: converts xq502.xml into xq504.xml -->
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:fo="http://www.w3.org/1999/XSL/Format">
@@ -89,7 +88,6 @@
 	  <fo:page-number-citation ref-id="firstlineregistry"/>
         </fo:block>   
 
-
     </fo:block>
 
     <!-- Poems -->
@@ -131,7 +129,6 @@
         </fo:block>   
       </xsl:for-each>
     </fo:block>
-
     
   </xsl:template>
 
@@ -193,8 +190,9 @@
 
   <xsl:template match="footnote">
     <fo:footnote>
-      <fo:inline font-size="10pt" vertical-align="super"><xsl:number level="any" from="poem" format="1"/></fo:inline> 
-    
+      <fo:inline font-size="10pt" vertical-align="super">
+        <xsl:number level="any" from="poem" format="1"/>
+      </fo:inline>     
       <fo:footnote-body>
         <fo:block font-size="10pt">
 	  <xsl:number level="any" from="poem" format="1. "/>
