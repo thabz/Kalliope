@@ -12,7 +12,6 @@ use POSIX;
 
 my $dbh = Kalliope::DB->connect;
 
-goto pis;
 #
 # Keywords
 #
