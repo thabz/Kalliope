@@ -35,6 +35,7 @@ sub new {
     my $sql;
     $sql = 'fhandle = "'.$arg{'fhandle'}.'"' if defined $arg{'fhandle'};
     $sql = 'fid = "'.$arg{'fid'}.'"' if defined $arg{'fid'};
+    $sql = 'fid = "'.$arg{'id'}.'"' if defined $arg{'id'};
     confess "Need some kind of id to initialize a new person\n" unless $sql;
     my $sth = $dbh->prepare("SELECT * FROM  fnavne WHERE $sql");
     $sth->execute();
@@ -209,5 +210,22 @@ sub menu {
     }
     return $HTML;
 }
+
+sub getSearchResultEntry {
+    my ($self,$escapedNeedle,@needle) = @_;
+    my $content = $self->name;
+
+    foreach my $ne (@needle) {
+	$content=~ s/($ne)/\n$1\t/gi;
+    }
+    $content =~ s/\n/<B>/g;
+    $content =~ s/\t/<\/B>/g;
+    
+    my $HTML = '<IMG ALT="Digter" ALIGN="right" SRC="gfx/poet_40.GIF">';
+    $HTML .= '<A CLASS=blue HREF="ffront.cgi?fhandle='.$self->fhandle.qq|">|.$content.qq|</A><BR>|;
+    $HTML .= '<SPAN STYLE="color: #a0a0a0">'.$self->lifespan."</SPAN><BR><BR>";
+    return $HTML;
+}
+
 
 1;

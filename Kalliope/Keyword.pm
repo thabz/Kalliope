@@ -101,4 +101,26 @@ sub smallIcon {
     return '<IMG WIDTH=32 HEIGHT=32 BORDER=0 SRC="gfx/sundial_40.GIF">';
 }
 
+sub getSearchResultEntry {
+    my ($self,$escapedNeedle,@needle) = @_;
+    my $content = Kalliope::Strings::stripHTML($self->content);
+    my $title = $self->title;
+
+    my $match;
+    foreach my $ne (@needle) {
+	my ($a,$b,$c) = $content =~ /(.{0,30})($ne)(.{0,30})/si;
+	$a =~ s/\n+/ /g;
+	$c =~ s/\n+/ /g;
+	$match .= "...$a<b>$b</b>$c...<BR>" if $b;
+	$title =~ s/($ne)/\n$1\t/gi;
+    }
+    $title =~ s/\n/<B>/g;
+    $title =~ s/\t/<\/B>/g;
+    
+    my $HTML = '<IMG ALT="Nøgleord" ALIGN="right" SRC="gfx/sundial_40.GIF">';
+    $HTML .= '<A CLASS=blue HREF="keyword.cgi?keywordid='.$self->id.qq|&needle=$escapedNeedle">|.$title.qq|</A><BR>|;
+    $HTML .= qq|$match|;
+    $HTML .= '<BR><BR>';
+    return $HTML;
+}
 1;

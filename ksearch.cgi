@@ -60,20 +60,20 @@ my $page = new Kalliope::Page (
 
 my $starttid = time;
 
-my $sth = $dbh->prepare("SELECT count(*) FROM digte WHERE (MATCH titel,haystack AGAINST (?) > 0) AND afsnit = 0");
-$sth->execute($needle);
+my $sth = $dbh->prepare("SELECT count(*) FROM haystack WHERE (MATCH titel,hay AGAINST (?) > 0) AND lang = ?");
+$sth->execute($needle,$LA);
 my $hits = $sth->fetchrow_array;
 
 my $firstNumShowing = CGI::url_param('offset') || 0;
 my $lastNumShowing = $firstNumShowing  + 10 <= $hits ?
                      $firstNumShowing  + 10 : $hits;
 
-$sth = $dbh->prepare("SELECT did, MATCH titel,haystack AGAINST (?) AS quality FROM digte WHERE (MATCH titel,haystack AGAINST (?) > 0) AND afsnit = 0 ORDER BY quality DESC LIMIT $firstNumShowing,10");
-$sth->execute($needle,$needle);
+$sth = $dbh->prepare("SELECT id,id_class, MATCH titel,hay AGAINST (?) AS quality FROM haystack WHERE (MATCH titel,hay AGAINST (?) > 0) AND lang = ? ORDER BY quality DESC LIMIT $firstNumShowing,10");
+$sth->execute($needle,$needle,$LA);
 
 my @matches;
 while (my $d = $sth->fetchrow_hashref)  {
-    push @matches,[$d->{'did'},$d->{'quality'}];
+    push @matches,[$$d{'id'},$$d{'id_class'},$$d{'quality'}];
 }
 $sth->finish();
 
@@ -82,35 +82,17 @@ my $i = $firstNumShowing+1;
 
 $HTML .= "Viser ".($firstNumShowing+1)."-".($lastNumShowing)." af $hits<BR><BR>";
 
+$HTML .= '<TABLE WIDTH="100%">';
 foreach my $d (@matches)  {
-    my ($did,$quality) = @{$d};
-    my $poem = new Kalliope::Poem (did => $did);
-    my $author = $poem->author;
-    my $work = $poem->work;
-    my $poemTitle = $poem->title;
-
-    $HTML .= $i++.". ";
-
-    my $content = $poem->contentForSearch();
-    my $match;
-    my $slash = '<SPAN STYLE="color: #a0a0a0">//</SPAN>';
-    foreach my $ne (@needle) {
-	my ($a,$b,$c) = $content =~ /(.{0,30})($ne)(.{0,30})/si;
-	
-	$a =~ s/\n+/ $slash /g;
-	$c =~ s/\n+/ $slash /g;
-	$match .= "...$a<b>$b</b>$c...<BR>" if $b;
-	$poemTitle =~ s/($ne)/\n$1\t/gi;
-    }
-    $poemTitle =~ s/\n/<B>/g;
-    $poemTitle =~ s/\t/<\/B>/g;
+    my ($id,$id_class,$quality) = @{$d};
+    my $item = $id_class->new(id => $id);
     
-    $HTML .= '<IMG ALT="digt" ALIGN="right" SRC="gfx/open_book_40.GIF">';
-    $HTML .= '<A CLASS=blue HREF="digt.pl?longdid='.$poem->longdid.qq|&needle=$escapedNeedle#offset">|.$poemTitle.qq|</A><BR>|;
-    $HTML .= qq|$match|;
-    $HTML .= '<SPAN STYLE="color: green">'.$author->name.'</SPAN>: <SPAN STYLE="color: #a0a0a0"><I>'.$work->title."</I> ".$work->parenthesizedYear."</SPAN><BR><BR>";
-
+    $HTML .= qq|<TR><TD VALIGN="top">$i.</TD><TD>|;
+    $HTML .= $item->getSearchResultEntry($escapedNeedle,@needle);
+    $HTML .= '</TD></TR>';
+    $i++;
 }
+$HTML .= '</TABLE>';
 
 if ($hits > 10) {
     for ($i = 0; $i <= int (($hits-1)/10) ; $i++) {

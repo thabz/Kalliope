@@ -36,11 +36,12 @@ sub new {
     my $sql;
     $sql = 'vhandle = "'.$arg{'longvid'}.'" and fhandle = "'.$arg{'fhandle'}.'"' if defined $arg{'longvid'};
     $sql = 'vid = "'.$arg{'vid'}.'"' if defined $arg{'vid'};
+    $sql = 'vid = "'.$arg{'id'}.'"' if defined $arg{'id'};
     confess "Need some kind of id to initialize a new work\n" unless $sql;
     my $sth = $dbh->prepare("SELECT * FROM vaerker WHERE $sql");
     $sth->execute();
+    Kalliope::Page::notFound() unless $sth->rows;
     my $obj = $sth->fetchrow_hashref;
-    Kalliope::Page::notFound unless $obj;
     bless $obj,$class;
     return $obj;
 }
@@ -122,6 +123,23 @@ sub iconURI {
     my $self = shift;
     #TODO: Måske skulle værker uden år have et specielt ikon.
     return $self->hasContent ? 'gfx/book_40.GIF' : 'gfx/book_40_high.GIF';
+}
+
+sub getSearchResultEntry {
+    my ($self,$escapedNeedle,@needle) = @_;
+    my $author= $self->author;
+    my $title = $self->title;
+
+    foreach my $ne (@needle) {
+	$title =~ s/($ne)/\n$1\t/gi;
+    }
+    $title =~ s/\n/<B>/g;
+    $title =~ s/\t/<\/B>/g;
+    
+    my $HTML .= '<IMG ALT="Værk" ALIGN="right" SRC="gfx/book_40.GIF">';
+    $HTML .= '<A CLASS=blue HREF="vaerktoc.pl?vhandle='.$self->vhandle.qq|&fhandle=|.$author->fhandle.'">'.$title.' '.$self->parenthesizedYear.qq|</A><BR>|;
+    $HTML .= '<SPAN STYLE="color: green">'.$author->name.'</SPAN><BR><BR>';
+    return $HTML;
 }
 
 1;

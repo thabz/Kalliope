@@ -414,9 +414,6 @@ $sth->execute;
 print "Antal digte: $count\n";
 $sth->finish;
 
-print "Creating FULLTEXT index...\n";
-$dbh->do('CREATE FULLTEXT INDEX haystackidx ON digte (titel,haystack)');
-print "Done.\n";
 
 #
 # Build forbogstaver
@@ -499,4 +496,61 @@ sub insertkeywordrelation {
 	}
     }
 }
+
+
+#
+# Build haystack -------------------------------------------------------------
+#
+
+$rc = $dbh->do("DROP TABLE IF EXISTS haystack");
+$rc = $dbh->do("CREATE TABLE haystack ( 
+              id int,
+	      id_class enum('Kalliope::Poem',
+	                    'Kalliope::Keyword',
+	                    'Kalliope::Work',
+			    'Kalliope::Person'),
+	      titel text,
+	      hay text,
+	      lang char(2) NOT NULL)");
+
+my $sth_hay_ins = $dbh->prepare("INSERT INTO haystack (id,id_class,titel,hay,lang) VALUES (?,?,?,?,?)");
+
+# Poems
+print "Inserting poem hay\n";
+my $sth = $dbh->prepare("SELECT did,indhold,underoverskrift,titel,sprog FROM digte AS d,fnavne AS f WHERE d.fid = f.fid AND d.afsnit = 0"); 
+$sth->execute;
+while ($h = $sth->fetchrow_hashref) {
+    my $hay = Kalliope::Strings::stripHTML("$$h{titel} $$h{underoverskrift} $$h{indhold}");
+    $sth_hay_ins->execute($$h{did},'Kalliope::Poem',$$h{titel},$hay,$$h{sprog});
+}
+
+# Persons
+print "Inserting person hay\n";
+my $sth = $dbh->prepare("SELECT fid,efternavn,fornavn,sprog FROM fnavne"); 
+$sth->execute;
+while ($h = $sth->fetchrow_hashref) {
+    my $hay = "$$h{fornavn} $$h{efternavn}";
+    $sth_hay_ins->execute($$h{fid},'Kalliope::Person',$hay,$hay,$$h{sprog});
+}
+
+# Works 
+print "Inserting works hay\n";
+my $sth = $dbh->prepare("SELECT vid,titel,sprog FROM fnavne,vaerker WHERE fnavne.fid = vaerker.fid"); 
+$sth->execute;
+while ($h = $sth->fetchrow_hashref) {
+    my $hay = "$$h{titel}";
+    $sth_hay_ins->execute($$h{vid},'Kalliope::Work',$hay,$hay,$$h{sprog});
+}
+
+# Keywords 
+print "Inserting keyword hay\n";
+my $sth = $dbh->prepare("SELECT id,titel,beskrivelse FROM keywords"); 
+$sth->execute;
+while ($h = $sth->fetchrow_hashref) {
+    my $hay = Kalliope::Strings::stripHTML("$$h{titel} $$h{beskrivelse}");
+    $sth_hay_ins->execute($$h{id},'Kalliope::Keyword',$$h{titel},$hay,'dk');
+}
+
+print "Creating FULLTEXT index...\n";
+$dbh->do('CREATE FULLTEXT INDEX haystackidx ON haystack (titel,hay)');
 

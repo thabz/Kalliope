@@ -35,13 +35,14 @@ sub new {
     my ($class,%arg) = @_;
     my $sql;
     $sql = 'longdid = "'.$arg{'longdid'}.'"' if defined $arg{'longdid'};
-    $sql = 'did = "'.$arg{'did'}.'"' if defined $arg{'did'};
+    $sql = 'did = '.$arg{'did'} if defined $arg{'did'};
+    $sql = 'did = '.$arg{'id'} if defined $arg{'id'};
     confess "Need some kind of id to initialize a new poem\n" unless $sql;
     my $sth = $dbh->prepare("SELECT did,fid,vid,longdid,titel,underoverskrift,foerstelinie,layouttype FROM digte WHERE $sql");
     $sth->execute();
+    Kalliope::Page::notFound() unless $sth->rows;
     my $obj = $sth->fetchrow_hashref;
-    Kalliope::Page::notFound unless $obj;
-    bless $obj,$class if $obj;
+    bless $obj,$class;
     return $obj;
 }
 
@@ -179,6 +180,32 @@ sub work {
     return $self->{'cache'}->{'work'} if defined $self->{'cache'}->{'work'};
     $self->{'cache'}->{'work'} = new Kalliope::Work('vid' => $self->vid); 
     return $self->{'cache'}->{'work'};
+}
+
+sub getSearchResultEntry {
+    my ($self,$escapedNeedle,@needle) = @_;
+    my $content = $self->contentForSearch();
+    my $work = $self->work;
+    my $author = $self->author;
+    my $poemTitle = $self->title;
+
+    my $match;
+    my $slash = '<SPAN STYLE="color: #a0a0a0">//</SPAN>';
+    foreach my $ne (@needle) {
+	my ($a,$b,$c) = $content =~ /(.{0,30})($ne)(.{0,30})/si;
+	$a =~ s/\n+/ $slash /g;
+	$c =~ s/\n+/ $slash /g;
+	$match .= "...$a<b>$b</b>$c...<BR>" if $b;
+	$poemTitle =~ s/($ne)/\n$1\t/gi;
+    }
+    $poemTitle =~ s/\n/<B>/g;
+    $poemTitle =~ s/\t/<\/B>/g;
+    
+    my $HTML .= '<IMG ALT="Digt" ALIGN="right" SRC="gfx/open_book_40.GIF">';
+    $HTML .= '<A CLASS=blue HREF="digt.pl?longdid='.$self->longdid.qq|&needle=$escapedNeedle#offset">|.$poemTitle.qq|</A><BR>|;
+    $HTML .= qq|$match|;
+    $HTML .= '<SPAN STYLE="color: green">'.$author->name.'</SPAN>: <SPAN STYLE="color: #a0a0a0"><I>'.$work->title."</I> ".$work->parenthesizedYear."</SPAN><BR><BR>";
+    return $HTML;
 }
 
 1;
