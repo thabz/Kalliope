@@ -27,50 +27,47 @@ use strict;
 
 my $dbh = Kalliope::DB::connect();
 
-sub clean {
-    my @changed = @_;
-    my $sth = $dbh->prepare("DELETE FROM xrefs WHERE fromvid = ?");
-    foreach my $item (@changed) {
-	my $vid = $item->{'fhandle'}."/".$item->{'vhandle'};
-	$sth->execute($vid);
-    }
-}
-
 sub insert {
     my @changed = @_;
-    my $sth = $dbh->prepare("SELECT longdid,indhold as content FROM digte WHERE vid = ? UNION SELECT t.longdid,t.note as content FROM textnotes t, digte d WHERE d.longdid = t.longdid AND d.vid = ?");
-    my $sthins = $dbh->prepare("INSERT INTO xrefs (fromid,toid,fromvid) VALUES (?,?,?)");
+    my $sth = $dbh->prepare("(SELECT longdid,indhold as content FROM digte WHERE vid = ?) UNION (SELECT t.longdid as longdid,t.note as content FROM textnotes t, digte d WHERE d.longdid = t.longdid AND d.vid = ?)");
+    my $sthins = $dbh->prepare("INSERT INTO xrefs (fromid,toid) VALUES (?,?)");
 
     foreach my $item (@changed) {
 	my $vid = $item->{'fhandle'}."/".$item->{'vhandle'};
 	$sth->execute($vid,$vid);
 	while (my $h = $sth->fetchrow_hashref) {
 	    my $hay = $h->{'content'};
-	    while ($hay =~ s/<A D=([^>]+)>//si) {
-		$sthins->execute($h->{'longdid'},$1,$vid);
+	    my $longdid = $h->{'longdid'};
+
+	    while ($hay =~ s/<A\s+D=([^>]+)>//si) {
+		$sthins->execute($longdid,$1);
 	    }
-  	    while ($hay =~ s/<xref digt="([^"]+)">//si) {
-	        $sthins->execute($h->{'longdid'},$1,$vid);
+	    while ($hay =~ s/<a\s+poem="([^>]+)"\s*>//si) {
+		$sthins->execute($longdid,$1);
 	    }
-	    while ($hay =~ s/<xref bibel="([^"]+)">//si) {
-	        my $gah = $1;
- 	        $gah =~ s/,.*$//;
-    	        $sthins->execute($h->{'longdid'},$gah,$vid);
+  	    while ($hay =~ s/<xref\s+digt="([^"]+)"\s*\/>//si) {
+	        $sthins->execute($longdid,$1);
+	    }
+	    while ($hay =~ s/<xref\s+bibel="([^"]+)"\s*\/>//si) {
+	        my $tmp = $1;
+ 	        $tmp =~ s/,.*$//;
+    	        $sthins->execute($longdid,$tmp);
 	    }
 	}
     }
 }
 
 sub create {
-    $dbh->do("DROP TABLE xrefs");
     $dbh->do("CREATE TABLE xrefs ( 
-	fromid varchar(40) NOT NULL,
-    fromvid varchar(40) NOT NULL,
-	      toid varchar(40) NOT NULL)");
+	         fromid varchar(40) NOT NULL REFERENCES digte(longdid) ON DELETE CASCADE,
+	         toid varchar(40) NOT NULL REFERENCES digte(longdid) ON DELETE RESTRICT)");
    $dbh->do(q/CREATE INDEX xrefs_fromid ON xrefs(fromid)/);
-   $dbh->do(q/CREATE INDEX xrefs_fromvid ON xrefs(fromvid)/);
    $dbh->do(q/CREATE INDEX xrefs_toid ON xrefs(toid)/);
    $dbh->do(q/GRANT SELECT ON TABLE xrefs TO "www-data"/);
+}
+
+sub drop {
+    $dbh->do("DROP TABLE xrefs");
 }
 
 1;
