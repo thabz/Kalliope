@@ -124,7 +124,7 @@ sub extractFootnotes {
     my ($self,$content) = @_;
     my @footnotes = $self->{'footnotes'} ? @{$self->{'footnotes'}} : ();
     my $num = $#footnotes >= 0 ? $#footnotes + 2 : 1;
-    while ($content =~ s/<footnote>(.*)<\/footnote>/<footmark id="footnote$num"\/>/mi) {
+    while ($content =~ s/<footnote>(.*?)<\/footnote>/<footmark id="footnote$num"\/>/mi) {
        push @{$self->{'footnotes'}},$1;
        $num++;
     }
