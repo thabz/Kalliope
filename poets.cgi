@@ -211,8 +211,8 @@ sub listflittige {
     $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Navn</TH><TH ALIGN="right">Digte</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
 	my $poet = new Kalliope::Person (fhandle => $h->{'fhandle'});
-	$HTML .= '<TR><TD>'.$i++.'.</TD>';
-	$HTML .= '<TD><A HREF="ffront.cgi?fhandle='.$poet->fhandle.'">'.$poet->name.'<FONT COLOR=#808080> '.$poet->lifespan.'</FONT></A></TD>';
+	$HTML .= '<TR><TD ALIGN="right">'.$i++.'.</TD>';
+	$HTML .= '<TD WIDTH="100%"><A HREF="ffront.cgi?fhandle='.$poet->fhandle.'">&nbsp;'.$poet->name.'<FONT COLOR=#808080> '.$poet->lifespan.'</FONT></A></TD>';
 	$HTML .= '<TD ALIGN=right>'.$h->{'val'}.'</TD>';
 	$total += $h->{val};
     }
