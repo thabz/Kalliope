@@ -30,6 +30,7 @@ use strict;
 my $page = new Kalliope::Page (
 		title => 'Velkommen til den totalt fede webstil!',
                 pagegroup => 'welcome',
+		changelangurl => 'poets.cgi?list=az&sprog=XX',
                 page => 'news',
            );
 
