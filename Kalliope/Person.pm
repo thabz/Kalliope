@@ -45,6 +45,14 @@ sub new {
     return $obj;
 }
 
+# Class method
+sub exist {
+    my $fhandle = shift;
+    my $sth = $dbh->prepare("SELECT fhandle FROM fnavne WHERE fhandle = ?");
+    $sth->execute($fhandle);
+    return $sth->rows;
+}
+
 sub fhandle {
     return $_[0]->{'fhandle'};
 }

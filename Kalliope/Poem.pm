@@ -52,6 +52,14 @@ sub new {
     return $obj;
 }
 
+# Class method
+sub exist {
+    my $fhandle = shift;
+    my $sth = $dbh->prepare("SELECT longdid FROM digte WHERE longdid = ?");
+    $sth->execute($fhandle);
+    return $sth->rows;
+}
+
 sub did {
     return $_[0]->{'did'};
 }
