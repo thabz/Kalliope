@@ -41,7 +41,7 @@ my $page = $mode eq 's' ? 'sekundaer' : 'primaer';
 my @crumbs;
 push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
-push @crumbs,['Sekundær litteratur',''];
+push @crumbs,[$title,''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
                                       page => $page,
@@ -53,6 +53,6 @@ close (FILE);
 
 $page->addBox( width => '75%',
                coloumn => 1,
-	       title => 'Sekundær litteratur',
+	       title => $title,
 	       content => $HTML );
 $page->print;
