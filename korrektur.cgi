@@ -42,8 +42,8 @@ if (defined param('korrektur')) {
     $mailBody .= 'Forfatter:  '.$poet->name."\n";
     $mailBody .= 'Fhandle:    '.$poet->fhandle."\n";
     $mailBody .= 'Værk:       '.$work->title.' '.$work->parenthesizedYear."\n";
-    $mailBody .= 'Værk-id:    '.$work->longvid."\n";
-    $mailBody .= 'Digt:       '.$poem->title."\n";
+    $mailBody .= 'Værk-id:    '.$work->vid."\n";
+    $mailBody .= 'Digt:       '.$poem->linkTitle."\n";
     $mailBody .= 'Digt-id:    '.$poem->longdid."\n";
     $mailBody .= 'Korrektur:  '.param('korrektur')."\n";
     my $smtp = Net::SMTP->new('localhost') || last;
@@ -60,10 +60,10 @@ if (defined param('korrektur')) {
     my $dbh = Kalliope::DB->connect;
     my $sth = $dbh->prepare("INSERT INTO korrektur (date,longdid,korrektur) VALUES (?,?,?)");
     $sth->execute(time,$poem->longdid,param('korrektur'));
-    $HTML .= "Tak for din rettelse til »".$poem->title."«! <BR><BR>En mail er automatisk sendt til $MAILTAINER_EMAIL, som vil kigge på sagen.\n";
+    $HTML .= "Tak for din rettelse til »".$poem->linkTitle."«! <BR><BR>En mail er automatisk sendt til $MAILTAINER_EMAIL, som vil kigge på sagen.\n";
 } else {
     my $longdid = $poem->longdid;
-    my $fulltitle = $poet->name.': »'.$poem->title.'«';
+    my $fulltitle = $poet->name.': »'.$poem->linkTitle.'«';
     $HTML .= "Fandt du en trykfejl i $fulltitle, skriv da rettelsen i feltet herunder, og tryk Send.<BR><BR>";
     $HTML .= '<FORM><TEXTAREA STYLE="width: 100%" CLASS="inputtext" NAME="korrektur" WRAP="virtual" COLS=28 ROWS=6></TEXTAREA><BR><br>';
     $HTML .= qq|<INPUT TYPE="hidden" NAME="longdid" VALUE="$longdid">|;
