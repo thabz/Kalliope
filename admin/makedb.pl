@@ -557,7 +557,7 @@ sub insertforbogstav {
     foreach $f (sort { Kalliope::Sort::sort ($a,$b) } @f) {
 	next unless $f->{'sort'};
 	$f->{'sort'} =~ s/Aa/Å/g;
-
+	$f->{'sort'} =~ tr/ÁÀÉÈ/AAEE/;
 	$sthk->execute(substr($f->{'sort'},0,1), $f->{'did'}, $f->{'sprog'},$mode);
     }
 }
