@@ -203,7 +203,6 @@ while ($fn = $sth->fetchrow_hashref) {
 		    } elsif (/^VU:/) {
 			s/^VU://;
 		        push @subtitles,$_;
-		    } elsif (/^CVS-TIMESTAMP:/) {
 		    } elsif (/^VP:/) {
 			s/^VP://;
 		        push @pics,$_;
