@@ -40,7 +40,9 @@ push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,['Links',''];
 
-my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
+my $page = newAuthor Kalliope::Page ( poet => $poet,
+                                      page => 'links',
+                                      crumbs => \@crumbs );
 
 #Vis de tilgængelige links
 

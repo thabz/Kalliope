@@ -37,7 +37,9 @@ push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,['Biografi',''];
 
-my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
+my $page = newAuthor Kalliope::Page ( poet => $poet, 
+                                      page => 'bio',
+                                      crumbs => \@crumbs );
 
 #
 # Biografi ----------------------------------------------

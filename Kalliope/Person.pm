@@ -170,6 +170,7 @@ sub proseWorks {
 
 sub menu {
     my $self = shift;
+    my $page = shift;
     my %menuStruct = (
        vaerker => { url => 'fvaerker.pl?', 
                     title => 'Værker', 
@@ -206,7 +207,11 @@ sub menu {
     foreach my $key (@keys) {
         my %item = %{$menuStruct{$key}};
         my $url = $item{url}.'fhandle='.$self->fhandle;
-        $HTML .= qq|[<A CLASS="white" HREF="$url">$item{title}</A>] | if $item{status};
+	if ($key eq $page->{'page'}) {
+	    $HTML .= qq|[<A CLASS="white" HREF="$url"><b>$item{title}</b></A>] | if $item{status};
+	} else {
+	    $HTML .= qq|[<A CLASS="white" HREF="$url">$item{title}</A>] | if $item{status};
+	}
     }
     return $HTML;
 }

@@ -455,7 +455,7 @@ sub _navigationSub {
     }
     # Author menu
     if ($self->{'poet'}) {
-       $HTML .= $self->{'poet'}->menu;
+       $HTML .= $self->{'poet'}->menu($self);
     }
     return $HTML;
 }

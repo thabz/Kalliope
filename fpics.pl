@@ -39,7 +39,9 @@ push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,['Portrætter',''];
 
-my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
+my $page = newAuthor Kalliope::Page ( poet => $poet, 
+                                      page => 'pics',
+                                      crumbs => \@crumbs );
 
 my $i = 1;
 my $HTML .= "<TABLE><TR>";

@@ -60,7 +60,9 @@ push @crumbs,['Værker','fvaerker.pl?fhandle='.$poet->fhandle];
 push @crumbs,[$work->titleWithYear,'vaerktoc.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->vhandle];
 push @crumbs,[$poem->title,'digt.pl?longdid='.$poem->longdid];
 
-my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs);
+my $page = newAuthor Kalliope::Page ( poet => $poet,
+                                      page => 'vaerker',
+                                      crumbs => \@crumbs);
 
 if (defined param('korrektur')) {
     my $mailBody = 'Dato:       '.localtime(time)."\n";

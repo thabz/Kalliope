@@ -45,7 +45,9 @@ push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,[$mode ? 'Digttitler' : 'Førstelinier',''];
 
-my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
+my $page = newAuthor Kalliope::Page ( poet => $poet,
+                              page => $mode ? 'titlelines' : 'firstlines',
+                              crumbs => \@crumbs );
 
 
 #
