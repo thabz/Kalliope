@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="michelangelo" author="dam" status="incomplete" type="poetry">
+<kalliopework id="michelangelo" author="dam" status="complete" type="poetry">
 <workhead>
    <title>Digte af Michel Agniolo Buonarroti</title>
    <year>1912</year>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
    <cvs-timestamp>$Id$</cvs-timestamp>
    <notes>
       <note>Kilden er <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912.</note>
-      <note>Kilde til enkelte digte er <i>Michelangelos sonetter ved Johannes Dam</i>, Parnas-bøgerne, Thaning &amp; Appels Forlag, Kbh., 1945.</note>
+      <!--<note>Kilde til enkelte digte er <i>Michelangelos sonetter ved Johannes Dam</i>, Parnas-bøgerne, Thaning &amp; Appels Forlag, Kbh., 1945.</note>-->
       <note>Noterne markeret med * er Johannes Dams egne.</note>
    </notes>
 </workhead>
@@ -17,7 +17,10 @@
 <prose id="dam2004111802">
 <head>
    <title>Indledning</title>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
+   <notes>
+      <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, pp. I-X.</note>
+   </notes>
 </head>
 <body>
 De sidste Aartiers Aandsliv har ikke mindst i germanske Lande været præget af en stedse stigende Interesse for og Tilegnelse af italiensk Renæssancekultur, som har sat dybe Mærker i moderne bildende Kunst og Literatur.
@@ -56,10 +59,10 @@ De sidste Aartiers Aandsliv har ikke mindst i germanske Lande været præget af en
       <note><p>* Dette Kærlighedsdigt, hvis Genstand ikke nu kan efterspores, er vistnok det ældste kendte Digt af Ma., bortset fra et ubetydeligt Brudstykke, der refererer sig til Davidstatuens Udarbejdelse (ikke optaget her). Digtet antages skrevet i Firenze sidst i 1504 eller i Begyndelsen af 1505, altsaa i Mesterens 30te Aar.</p>
       <p>Manuskriptet er af Forfatteren selv gjort ulæseligt ved Ændring og Overmaling af en Mængde Bogstaver og først i vore Dage beundringsværdig Skarpsindighed rekonstrueret af Carl Frey.</p>
       </note>
-      <note>Indtastet af Tobias Davidsen.</note>
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 1.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hvor var jeg glad og tryg i svundne Aar, 
@@ -87,10 +90,10 @@ Saaledes ser I Kvinder her, hvorledes
    <firstline>O Herre, intet Ord som hint er sandt</firstline>
    <notes>
       <note>* Digtets Tilblivelse ansættes med stor Sikkerhed til Sommeren 1511, og den ,,Herre'', hvem Forfatteren anklager for at have tilsidesat ham som Følge af Fjenders Sladder, maa da være Julius II. (de la Rovere, 1503-1513). Bagvaskeren og Løgnhalsen er sikkert Arkitekten Bramante, Mesterens uforsonlige Uven. - I V.8 staar <i>den</i>, læs <i>des</i>.</note>
-      <note>Indtastet af Tobias Davidsen.</note>
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 2.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 O Herre, intet Ord som hint er sandt:
@@ -118,8 +121,9 @@ Men Himlen synes Dyden selv at haane
    <firstline>Alverdens store Ophav skabte alt</firstline>
    <notes>
    	<note>* Er rimeligvis stilede til den samme, os ubekendte, Dame som Sonetten Side 1.</note>
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 3.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Alverdens store Ophav skabte alt
@@ -134,8 +138,9 @@ Hvad han ved Guddomskunst til Liv har kaldt.
    <firstline>Hvem kan saa modstandsløs mig mod dig drage</firstline>
    <notes>
    	<note>* Er rimeligvis stilede til den samme, os ubekendte, Dame som Sonetten Side 1.</note>
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 4.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hvem kan saa modstandsløs mig mod dig drage,
@@ -152,10 +157,10 @@ Hvor skal jeg Værn da mod din Skønhed finde?
    <firstline>Lyksalig er den Krans af Blomster smaa</firstline>
    <notes>
       <note>* I Bologna hvor Ma. opholdt sig omkring Nytaar 1508, synes han at have forelsket sig hæftigt i en unge Pige. Vistnok har Herm. Grimm Ret i, at man ikke altid i Renæssancens Kærlighedsdigte tør forudsætte en bestemt eksisterende Dame som Genstand; men endnu mindre gaar det an, som nogle vil, at gøre det 16de Aarhundredes erotiske Poesi til lutter Abstraktion. Lad det være, som det være vil, med Beatrice og Laura; Kvindens Betydning for Tidens toneangivende Aander, fremgaar den Dag i Dag endog af Ligstenene over fejrede Kurtisaner (M. Valery, Curiosités et anecdotes Italiennes XVII, Bruxelles 1843). I den her omhandlede henrivende Sonet, som uvilkaarlig henleder danske Læseres Tanker paa Aarestrup, vidner Billedet i sin haandgribelige Klarhed saa uafviseligt om levende Model, at Sonetten fortjener at fremhæves som et vigtigt Dokument i Striden om, hvorvidt ,,Kvinden som saadan'' (Scheffler) har eksisteret for Ma.</note>
-      <note>Indtastet af Tobias Davidsen.</note>
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 5.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Lyksalig er den Krans af Blomster smaa,
@@ -187,8 +192,9 @@ Det simple Bælte, som om Midjen spænder,
 	<p>Den sidste Linje understreger, hvad Ma. saa ofte hævdede, at han som Maler kun ansaa sig for Amatør.</p>
 	<p>Om Giovanni af Pistoja vides intet sikkert.</p>
 	</note>
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 6.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Af disse Kvaler har jeg faaet Krop -
@@ -222,10 +228,10 @@ Bag paa min krumme Ryg sig Huden spænder,
    <firstline>Af Kalke gør man Sværd og Hjælme her</firstline>
    <notes>
       <note>* Man har i dette Digt villet se et Bevis for, at Ma. gennem Paavirkning af Luther var vakt til bevidst Oprør mod Pavedømmet og Præsteskabet, hvis Færd skildres i de to første Quartiner. Dette ville dog være uberettiget, om end Ma. som Tidens andre Stormænd gennem Humanismens Paavirkning var gledet over i en religiøs Opfattelse, der i visse Henseender nærmede sig den evangeliske (se bl a. C. Cantù: Gli Eretici d'Italia, Torino 1883). Her udtaler han dog kun sin Harme over, at den krigeriske Pave Julius II (,,han i lange klæder'') fyldte Rom med Vaabenlarm og Krigsfanfarer og forsømte Omsorgen for Kunsten. Den uforstaaelige Sammenligning med Medusa og Mohren maa sigte til en Myte, der nu er gaaet tabt. Digtet er skrevet i 1512.</note>
-      <note>Indtastet af Tobias Davidsen.</note>
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 7.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Af Kalke gør man Sværd og Hjælme her,
@@ -253,8 +259,9 @@ Men dersom Himlen er mod Armod huld,
    <firstline>Hvor skal jeg vinde Mod</firstline>
    <notes>
    	<note>* Vistnok skrevet i Rom 1517 til en nu ubekendt Dame og udkommet allerede i 1519 i Napoli som Tekst til Tromboncinos Musik. Madrigalen bærer i stærkere Grad end de fleste andre Digte af Ma. Præg af petrarkisk Paavirkning.</note>
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 8.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hvor skal jeg vinde Mod
@@ -275,8 +282,9 @@ Tag Hjærtet da, mig hører det ej til.
    <firstline>O grumme, haarde, hjærteløse Sind</firstline>
    <notes>
    	<note>* Ufuldendt Kærlighedsklage paa Bagsiden af et Brev fra Stefano di Tomaso i Firenze til Michelagniolo i Carrara, dateret 20 April 1521.</note>
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 9.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 O grumme, haarde, hjærteløse Sind,
@@ -304,8 +312,9 @@ Kortvarig Troskab er, og Skønhed falmer,
    <firstline>Langt mindre grufuld er den bratte Død</firstline>
    <notes>
    	<note>* Kan ikke med Sikkerhed tidfæstes, men synes i Følge Indholdet samhørig med den foregaaende Madrigal.</note>
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 10.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Langt mindre grufuld er den bratte Død
@@ -328,8 +337,9 @@ Vil over mig kun Døden sig forbarme?
    <firstline>De tusend Raad forsøger jeg i Blinde</firstline>
    <notes>
    	<note>* Paa Bagsiden af et Brev fra Giovanni da Udine i Venezia til Michelangelo i Firenze 1522.</note>
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 11.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 De tusend Raad forsøger jeg i Blinde:
@@ -348,11 +358,12 @@ Den, som mig Sans og Samling har berøvet
    <firstline>Dagen og Natten taler og siger</firstline>
    <notes>
    	<note>* Dette Prosaudkast, der hentyder til <i>Dagen</i> og <i>Natten</i> paa Giuliano-Gravmælet i San Lorenzo, men stammer fra en langt senere Tid (1523), er skrevet ud i ét uden Udgange; Frey har for Forstaaelsens Skyld inddelt det saaledes, som det her meddeles.</note>
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 12.</note>
    </notes>
    <pictures>
       <picture src="dam2004111405-p1.jpg">Michelangelo: Gravmælet over Giuliano de' Medici, 1526-31, Medici kapellet, San Lorenzo, Firenze.</picture>
    </pictures>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Dagen og Natten taler og siger:
@@ -371,9 +382,9 @@ Hvad vilde han ikke have faaet ud af os, om han var vedblevet at leve?
    <firstline>Jeg ser og hører det af mig, som bor</firstline>
    <notes>
    	<note>* Antagelig 1524.</note>
-	<!-- side 13 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 13.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg ser og hører det af mig, som bor
@@ -394,9 +405,9 @@ Kun Træ er jeg, mens du er lutter Glød.
    <firstline>Naar Solens Straaler bort fra Jorden haster</firstline>
    <notes>
    	<note>* Petrarca har i en Canzone: <a poem="petrarca2004011101"><i>Ne la stagion che 'l ciel rapido inchina</i></a> aandfuldt udviklet den samme Tanke, som Ma. her har sammentrængt i fire knappe Verslinjer. Man fristes til at tro, at det netop har været Ma.s Hensigt at brillere med et saadant versifikatorisk Virtuosnummer.</note>
-	<!-- side 14 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 14.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Naar Solens Straaler bort fra Jorden haster,
@@ -411,9 +422,9 @@ Til Jord med høje Jammerskrig mig kaster.
    <firstline>Fly Elskov, I som elske, fly dens Brand</firstline>
    <notes>
    	<note>* 1524 - Stærke Paavirkninger baade fra <a person="petrarca">Petrarca</a> og <a person="boiardo">Bojardo</a>.</note>
-	<!-- side 15 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 15.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet,fragment</keywords>
 </head>
 <body>
@@ -442,9 +453,9 @@ Betænk Jer ikke, frels Jer med det samme!
    <firstline>Saa sandt jeg aldrig, aldrig glemme kan</firstline>
    <notes>
    	<note>* 1524-26. Om Ma.s Hjærteanliggender i denne Periode af hans Liv ved man lidet eller intet med Sikkerhed.</note>
-	<!-- side 16 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 16.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Saa sandt jeg aldrig, aldrig glemme kan
@@ -472,10 +483,10 @@ Ej tænder, lever ikke,
 <head>
    <firstline>Du ædle Aand, hvis indre Væsen nøje</firstline>
    <notes>
-      <note>Indtastet af Tobias Davidsen.</note>
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 17.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Du ædle Aand, hvis indre Væsen nøje
@@ -502,10 +513,10 @@ Paa hvilken grusom Orden er det grundet,
 <head>
    <firstline>Mon virkelig jeg ser, o Amor, svar!</firstline>
    <notes>
-      <note>Indtastet af Tobias Davidsen.</note>
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 18.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Mon virkelig jeg ser, o Amor, svar!
@@ -532,10 +543,10 @@ Først her som Guddomsskønhed ren den luer,
 <head>
    <firstline>Fornuften klager og bebrejder mig</firstline>
    <notes>
-      <note>Indtastet af Tobias Davidsen.</note>
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 19.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Fornuften klager og bebrejder mig,
@@ -564,8 +575,9 @@ Min Kærlighed har Død til begge Sider.
    <notes>
    	<note>
 	</note>
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 20.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Her var det, hendes Skønheds Trylleri
@@ -586,9 +598,9 @@ Her bandt hun mig og gav mig atter fri,
    <notes>
    	<note>
 	</note>
-	<!-- side 21-25-->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, pp. 21-25.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg skulde tro, at var af Sten du end,
@@ -716,9 +728,9 @@ Ufattelig! Dit Blik har tændt i Brand
    <notes>
    	<note>
 	</note>
-	<!-- side 26 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 26.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Dit Ansigts Sødme Honnings overgaar,
@@ -756,9 +768,9 @@ Ser jeg paa Brysterne, der som et Par
    <notes>
    	<note>
 	</note>
-	<!-- side 27 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 27.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Før nogen dræbe sig i Troen paa,
@@ -779,9 +791,9 @@ Men da et Menneske ej haabe maa
    <notes>
    	<note>
 	</note>
-	<!-- side 28 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 28.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den, som om Natten rider, Nøder driver
@@ -804,11 +816,10 @@ Ej Lidelse, ej Lykke evigt bliver,
       <p>Romeren ,,Messer Tommaso'' blev i 1532, da Ma. var 57 Aa gammel, dennes Elev, og han blev han Ven for Livet. Til ham har Mesteren skrevet nogle af sine inderligste Digte og just dem, paa hvilke hans Uven, den ligesaa bigotte som obskøne Digter <a person="aretino">Pietro Aretino</a>, byggede sine lavsindede Bagvaskelser. Det har hverken fra denne eller andre Sider skortet paa Forsøg paa at skille de to Venner, og det synes til Tider at have været lige ved at lykkes (se Sonettens V. 13: ,,min Herre, som paa Løgne tror''.)</p>
       <p>Om Cavalieri se nærmere Ludwig v. Scheffler: Michelangelo, eine Renaissancestudie, Altenburg 1892.</p>
       </note>
-      <note>Indtastet af Tobias Davidsen.</note>
-      <!-- side 29 -->
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 29.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Om mine Tanker blot som andres kunde
@@ -835,11 +846,10 @@ For stedse maa jeg da mig lade tvinge
 <head>
    <firstline>Naar i kysk, ophøjet Kærlighed</firstline>
    <notes>
-      <note>Indtastet af Tobias Davidsen.</note>
-      <!-- side 30 -->
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 30.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Naar i kysk, ophøjet Kærlighed,
@@ -866,11 +876,10 @@ Naar ej blandt Tusinder et Par man finder,
 <head>
    <firstline>Du, Herre, som jeg selv maa jo forstaa</firstline>
    <notes>
-      <note>Indtastet af Tobias Davidsen.</note>
-      <!-- side 31 -->
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 31.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Du, Herre, som jeg selv maa jo forstaa:
@@ -897,11 +906,10 @@ Hvad i dit Aasyn mig saa stærkt betager,
 <head>
    <firstline>Ifald jeg havde troet, da først jeg saa</firstline>
    <notes>
-      <note>Indtastet af Tobias Davidsen.</note>
-      <!-- side 32 -->
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 32.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Ifald jeg havde troet, da først jeg saa
@@ -929,11 +937,10 @@ Om jeg ham havde mødt med yngre Sind,
    <firstline>Maaske for ret at vorde Andre god</firstline>
    <notes>
       <note>* Man har paa Grund af det religiøse Indhold villet henføre Sonetten til Ma.s seneste Leveaar. Menuskriptet findes imidlertid paa bagsiden af et Brev fra 1532. Og hvorfor skulde ikke Forholdt til Cavalieri, der gav Anledning til saa stærke Storme i Mesterens Sind, kunne afføde religiøse Stemningsudbrud som dette, ogsaa i en yngre Alder?</note>
-      <note>Indtastet af Tobias Davidsen.</note>
-      <!-- side 33 -->
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 33.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Maaske for ret at vorde Andre god,
@@ -961,9 +968,9 @@ Kun du er god! Dit grænseløse Hjærte
    <firstline>O ve mig Arme, ve, jeg er bedraget</firstline>
    <notes>
    	<note>* Canzone, som vistnok skriver sig fra samme Tid som den foregaaende Sonet. Af særlig Interesse er den oprigtige Tilstaaelse: ,,Jeg prøved alle dødelige Kaar'', og Selvforagten i Verset: ,,Dog holdt jeg ud, om længere jeg leved.'' Meningen er: Saa usel jeg er, og skønt det Liv jeg lever, næppe fortjener Navn af Liv, vil jeg nødig af med det.</note>
-      <!-- side 34-35 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, pp. 34-35.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 O ve mig Arme, ve, jeg er bedraget
@@ -1010,11 +1017,10 @@ Træt vandrer jeg, ak, ved ej selv, hvorhen -
    <firstline>Hvis Blikket aabner ind til Hjærtet Vej</firstline>
    <notes>
       <note>* Til Cavalieri 1533.</note>
-      <note>Indtastet af Tobias Davidsen.</note>
-      <!-- side 36 -->
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 36.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hvis Blikket aabner ind til Hjærtet Vej
@@ -1042,11 +1048,10 @@ At henrykt jeg som jeg begæret har,
    <firstline>Var Sjælens Glød i disse Øjne klare</firstline>
    <notes>
       <note>* Ligeledes.</note>
-      <note>Indtastet af Tobias Davidsen.</note>
-      <!-- side 37 -->
+        <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 37.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Var Sjælens Glød i disse Øjne klare
@@ -1074,9 +1079,9 @@ Mig, Herre, som er gammel, gaar det slig,
    <firstline>Jeg har dig købt, skønt Gavens Pris var stor</firstline>
    <notes>
    	<note>Spøgefuld Billet fra 1533, rimeligvis stilet til Niecen Francesca (Cecca) Buonarroti, som Ma. lod opdrage i Klostret San Francesco di Boldrone. Kladden findes paa Bagsiden af en Ønskeseddel, hvori Cecca beder Onklen om forskellige ret dyre Garderobesager, og den Parfyme, hvorom Digtet handler, har da sagtens (thi den staar ikke paa den unge Dames Ønskeseddel), været en lille ekstra Opmærksomhed, der fulgte med Forsendelsen.</note>
-        <!-- side 38 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 38.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg har dig købt, skønt Gavens Pris var stor,
@@ -1098,9 +1103,9 @@ Jeg har dig købt, skønt Gavens Pris var stor,
 	<p>Ma.s Fader, Lodovico Buonarroti, døde 1534, Broderen Buonarroto 1528.</p>
 	<p>Digtets Form er det saakaldte <i>capitolo</i>, hvis enkelte Strofer er Terziner med den ejendommelige Skiften af Rim: aba, bcb, cdc, o. s. v., benyttet tidligere bl. a. <a person="petrarca">Petrarca</a> i <i>Trionfi</i> og i <a person="dante">Dantes</a> <i>Divina commedia</i>. Ma. har med Dygtighed anvendt det baade i alvorlig Digtning som her, og spøgefuldt (f. Eks. i det følgende Digt.)</p>
 	</note>
-        <!-- side 39-42 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, pp. 39-42.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hvor dybt til Jord end knuget er mit Hjærte,
@@ -1206,9 +1211,9 @@ Og dersom Baandet mellem Søn og Fader
    	<note><p>* <a person="berni">Francesco Berni</a> (1497-1536), en begavet satirisk Digter, som var Kanonikus i Firenze, skrev i 1534 et Rimbrev til sin Ven, Maleren Sebastiano del Piombo, der var Seglbevarer hos Pave Clemens VII (Giulio de' Medici, 1523-34); det var heri, de berømte Ord om Michelagniolo forekommer: <i>Ei dice cose</i> etc. (se Indledningen). Ma., der var en god Ven saavel af Berni som af del Piombo, skrev i da dennes Navn Svaret, der lader hele deres fælles Omgangskreds passere Revy.</p>
 	<p>Overlægen er Paven, der som Familien Medicis Overhoved svarer nøje til Betegnelsen <i>il medico maggiore</i>, Underlægen er følgelig den yngre Kardinal Ippolito de' Medici. Det er denne ,,hellige'', hvis Vilje Berni ,,lyder fjernt og nær'' (fordi det var ham, der havde skaffet B. hans Kanonikat). - Underlægens ,,fortrolige Sekretær'' er Digteren <a person="molza">Francesco Molza</a>. - ,,Kødet'' er Pronotaren Carnesecchi, hvis Navn frister Ma. til et temmeligt dristigt Ordspil (tørt, salt Kød); Spøgen i Terzinens V. 2 fik en sørgelig profetisk Betydning, idet C. senere blev brændt som Kætter. - Bernia: Francesco Berni.</p>
 	</note>
-        <!-- side 43-46 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, pp. 43-46.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Straks, da min Herres Brev mig kom i Hænde,
@@ -1296,11 +1301,10 @@ Befal og brug mig efter frit Behag.
    <firstline>Jeg ser i dine skønne Øjne to</firstline>
    <notes>
       <note>* Sonetten er til Cavalieri (1534) og synes direkte rettet mod de gængse Mistydninger af de to Venners Forhold. Den gaar ud fra det platoniske Kærlighedsbegreb: Fra Gud udstrømmer alt skønt. Det er Gud, det ædle Menneske tilbeder gennem hans Skabning, som er en Afglans af den himmelske Skønhed; men dette forstaar Pøblen, <i>volgo malveggio</i>, ikke.</note>
-      <note>Indtastet af Tobias Davidsen.</note>
-      <!-- side 47 -->
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 47.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg ser i dine skønne Øjne to,
@@ -1328,9 +1332,9 @@ Vi ejer her ej anden Frugt og Spor
    <firstline>Naturen forudsaa, at til saa haardt</firstline>
    <notes>
    	<note>* Fra Tiden omkring 1537. Fragmentets Adresse kan ikke nøjere bestemmes.</note>
-        <!-- side 48 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 48.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Naturen forudsaa, at til saa haardt
@@ -1348,9 +1352,9 @@ Min Lidelse, saa jeg lyksalig bæver.
    <notes>
    	<note>
 	</note>
-        <!-- side 49 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 49.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den Dag, mit Hjærte bort fra dig sig vender,
@@ -1373,9 +1377,9 @@ Naar ej jeg mer for dine Fødder ligger,
    <notes>
    	<note>
 	</note>
-        <!-- side 50 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 50.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hvis Aanden lever først, som den jo gør,
@@ -1401,11 +1405,10 @@ Derfor ej heller maa
    <firstline>Mon det er Skaberlysets ædle Skær</firstline>
    <notes>
       <note>* En mange Gange omarbejdet Sonet - man har hele 8 forskellige Versioner i Haandskrift; den endelige Redaktion er fra Aarene omkring 1545, det første Udkast 10, maaske 20 Aar ældre. Oprindelig synes Digtet at have hasft en Kvinde til Genstand (den mystiske <i>donna bella e crudele</i>, som synes at have behersket Ma.s Sind i de yngre Aar), men er sikkert i sin endelige Form rettet til Cavalieri.</note>
-      <note>Indtastet af Tobias Davidsen.</note>
-      <!-- side 51 -->
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 51.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Mon det er Skaberlysets ædle Skær,
@@ -1434,9 +1437,9 @@ Saa gaar det, siden først jeg mødte Eder:
    <notes>
    	<note>
 	</note>
-	<!-- side 52-54- -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, pp. 52-54.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Her sidder jeg som Marven i en Pind,
@@ -1519,11 +1522,10 @@ Fortvivle maa jeg, om jeg snart ej dø.
 <head>
    <firstline>Det største Maal, en Kunstner har sig stillet</firstline>
    <notes>
-      <note>Indtastet af Tobias Davidsen.</note>
-      <!-- side 55 -->
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 55.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Det største Maal, en Kunstner har sig stillet,
@@ -1552,9 +1554,9 @@ Naar Død og Elskov begge bor i dig,
    <notes>
    	<note>
 	</note>
-	<!-- side 56 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 56.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Dig ser jeg kun tilfreds, naar jeg maa lide,
@@ -1582,11 +1584,10 @@ Thi Smærtens Løn ej her vi vente maa.
 <head>
    <firstline>Vel kan med Blikket jeg paa hver en Plet</firstline>
    <notes>
-      <note>Indtastet af Tobias Davidsen.</note>
-      <!-- side 57 -->
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 57.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Vel kan med Blikket jeg paa hver en Plet,
@@ -1615,9 +1616,9 @@ Ak, hvis i Himlen du som her har Magt,
    <notes>
    	<note>
 	</note>
-	<!-- side 58 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 58.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Saa kaad og saa behændig er den lille,
@@ -1640,9 +1641,9 @@ Thi Smærten svider mer, end Fryd kan lindre.
    <notes>
    	<note>
 	</note>
-	<!-- side 59 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 59.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <i>Her hvilker Natten yndefuldt i Dvale,</i>
@@ -1664,11 +1665,10 @@ End mer end Søvn er Stenens Død mig kær,
 <head>
    <firstline>Et herligt Lys, skjult for mit sløve Øje</firstline>
    <notes>
-      <note>Indtastet af Tobias Davidsen.</note>
-      <!-- side 60 -->
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 60.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Et herligt Lys, skjult for mit sløve Øje,
@@ -1700,9 +1700,9 @@ Som Maanens Glans paa Himlen, saa er min;
    <notes>
    	<note>
 	</note>
-	<!-- side 61 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 61.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 I Salige, som nu i Himlen faar
@@ -1730,11 +1730,10 @@ Saa er mit Liv forgæves,
 <head>
    <firstline>Fra Himlen kom han, og endnu i Live</firstline>
    <notes>
-      <note>Indtastet af Tobias Davidsen.</note>
-      <!-- side 62 -->
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 62.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Fra Himlen kom han, og endnu i Live
@@ -1763,9 +1762,9 @@ Dog, var jeg ham! Thi for en Lod som hans,
    <notes>
    	<note>
 	</note>
-        <!-- side 64 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 64.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Ved mange Aars Forsøg og Arbejd finder
@@ -1793,9 +1792,9 @@ Alverdens Ende eller Salighed.
    <notes>
    	<note>
 	</note>
-        <!-- side 65 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 65.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hvert Blik, du ødsel skænker,
@@ -1821,9 +1820,9 @@ At mig hun elsker, mens jeg afskyr hende.
    <notes>
    	<note>
 	</note>
-        <!-- side 66 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 66.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Ak sig mig, Amor, hvis saa hjærtensgod
@@ -1846,9 +1845,9 @@ Mer end jeg burde, hvis hun var mig god?
    <notes>
    	<note>
 	</note>
-        <!-- side 67 -->
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 67.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Gør Hjærtets Lykke skønt et Ansigt gærne
@@ -1870,15 +1869,119 @@ Skøn blev da hun, jeg ikke hæslig mere.
 </body>
 </poem>
 
+<poem id="dam2004112803">
+<head>
+   <firstline>Naar dine Øjne ler</firstline>
+   <notes>
+   	<note>
+	</note>
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 68.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Naar dine Øjne ler
+   Imod mig ret som nu,
+   Jeg ser mig selv, og du,
+   Min Elskede, dig selv i mine ser.
+   Mit Billed skuer ud
+   Fortrukket stygt af Livets Kampe svære -
+   Dit skønt endnu, som før du paa mig saa.
+   Vist vredes Himlens Gud,
+   At i saa skønt et Spejl jeg styg tør være,
+   Mens i det stygge du saa skøn kan staa.
+   Men i din Stolthed saaret
+   Du evigt vil forsmaa
+   Det Hjærte, du har daaret,
+   Saa tit det banker paa.
+   Jo mer jeg blues maa,
+   Des højere din kolde Dyd sig hæver,
+   Thi Elskov lige Kaar og Alder kræver.
+</body>
+</poem>
+
+<poem id="dam2004112802">
+<head>
+   <firstline>Naar Slaven af sin Herre mellem Fanger</firstline>
+   <notes>
+   	<note>
+	</note>
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 69.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Naar Slaven af sin Herre mellem Fanger
+   Foruden Haab i tunge Lænker lægges,
+   Hans Sans for egen Kval med Tiden svækkes,
+   Saa han sin Frihed næppe mer forlanger.
+
+Af Vanen tæmmes Tigre, kues Slanger,
+   Selv Skovens Søn, den stolte Løve, knækkes,
+   Ved fortsat Flid den unge Kunstner ægges,
+   Saa Slid og Sved med dobbelt Kraft er svanger.
+
+Men ej med Elkovsflammes saa det gaar,
+   Thi mens den Unges Saft og Kraft den tærer,
+   Den styrker, varmer under hvide Haar,
+
+Som Ungdomskraft i Aarerne den gærer,
+   Forynger, skaber frisk og frodig Vaar
+   Og Sjæl og Sind i Elskovsrus besnærer.
+
+Og den, som tror og lærer,
+   At ej i Tugt en Olding elske kan,
+   Hvad Gud har skabt, en Løgner fræk er han.
+
+Den, som med klar Forstand
+   Kan holde Maal og Maade, ren og stærk,
+   Kan elske uden Synd Naturens Værk.
+</body>
+</poem>
+
+
+<poem id="dam2004112801">
+<head>
+   <firstline>Alt, som fødes, Døden naar</firstline>
+   <notes>
+   	<note>
+	</note>
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 70.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Alt, som fødes, Døden naar,
+   Medens Tidens Bølger rinder,
+   Under Solen Alt forgaar.
+   Lykke svinder, Smærte svinder,
+   Ord og Tanker Glemsel finder,
+   Røg i Blæst er Slægters Minder,
+   Skygger, Solen kan forjage.
+   Snart med Fryd og snart med Klage
+   Vi som I paa Jorden leved -
+   Nu I ser, hvad vi er blevet:
+   Muld kun under Dødens Kaar.
+   Alt, som fødes, brat forgaar.
+
+Vores Øjne, som med Styrke
+   Spejled Lysets Herlighed,
+   De er blevet hule, mørke,
+   Fyldt med Gru, mens Tiden skred.
+   ................................
+       
+</body>
+</poem>
+
 
 <poem id="dam2004082321">
 <head>
    <firstline>Snart stævner paa de hvide Bølgers Flod</firstline>
    <notes>
-      <note>Indtastet af Tobias Davidsen.</note>
+      <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 71.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Snart stævner paa de hvide Bølgers Flod
@@ -1905,10 +2008,10 @@ Nu Penslens, Mejslens Tider brat er omme,
 <head>
    <firstline>Med Muldyr, Sukkertop og Kærtens Pragt</firstline>
    <notes>
-      <note>Indtastet af Tobias Davidsen.</note>
+        <note>Indtastet af Tobias Davidsen efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, p. 72.</note>
    </notes>
    <keywords>sonnet</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Med Muldyr, Sukkertop og Kærtens Pragt
@@ -1930,6 +2033,151 @@ Ret aldrig, kære Herre, blev jeg færdig,
    Thi at betale Gæld er ej at give. 
 </body>
 </poem>
+
+<poem id="dam2004112804">
+<head>
+   <firstline>Saa ny en Glæde, værd at agte paa!</firstline>
+   <notes>
+   	<note>
+	</note>
+        <note>Indtastet efter <i>Digte af Michel Agniolo Buonarroti i Udvalg og Oversættelse ved Johannes Dam</i>, Gyldendalske Boghandel, Kbh., 1912, pp. 73-77.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Saa ny en Glæde, værd at agte paa!
+   Se Gederne saa kvikt paa Klippen springe
+   Fra Top til Top og nippe grønne Straa!
+   Hist nede høres Hyrdens Fløjte klinge
+   Og, mens han slentrer om paa Maa og Faa,
+   Ukunstlet Bud fra Hjærtets Dybder bringe.
+   Hans Pigelil, der er som Staalet haard,
+   Med sine Svin ved Egen stille staar.
+
+Hvor køn er Hytten ej paa Højens Top,
+   Af Ler kun klinet og med Straaet takt,
+   Èn dækker Bord, én tænder Ilden op
+   Hist under Bøgens lyse Krones Pragt.
+   Èn fodrer Grisen glad og klør dens Krop,
+   Èn ser man tvinge under Tømmens Magt
+   Det unge Æsel, mens ved Døren dvæler
+   Vor Far og soler sig, ej stort han mæler.
+
+Udvendig ser man her, hvad inde bor:
+   Fred uden Guld og uden Guldbegær.
+   Mens de om Dagen pløjer deres Jord,
+   Let skønnes kan, hvad deres Gods er værd.
+   Laas findes ej, til Frygt ej kendes Spor,
+   For hvem som helst staar Døren aaben her.
+   Saa glade de ved Aften, arbejdstrætte,
+   Paa Straaet slumrer ind, af Agern mætte.
+
+Misundelsen har dette Hjem forladt,
+   Hovmodet her af Sult sig selv fortærer.
+   Som Maal for deres Ønsker har de sat
+   En frodig Eng, et Bed, som herligt bærer.
+   Den simple Plov er deres største Skat,
+   Dens Jærn er den Juvel, som mest dem ærer,
+   Som Disk de med to Kurve, ta'er til Takke,
+   Som drevet Gud de skatter Skovl og Hakke.
+
+I usle Sjæle, gærrige og blinde,
+   Som slet kun bruger, hvad Naturen skænker,
+   I Kamp om Gud og Jord og Magtens Tinde
+   Formasteligt I Himlens Love krænker.
+   Af lad Blødagtighed I lod Jer binde,
+   Og nidske paa Næstens Skade I kun tænker,
+   I sanseløst Begær I ænser ej,
+   Hvor lidt der kræves paa vor korte Vej.
+
+De gamle Tiders Folk, om hvem vi høre,
+   At deres Kost var Agern kun og Vand,
+   Vil jeg som Spejl for Øje Eder føre
+   Til Skjold og Værn mod Fraaseriets Ban.
+   Hør, hvad jeg siger, laan mig villigt Øre:
+   Den Fred, som Verdens Drot ej finde kan,
+   Mens efter jordisk Gods hans Brynde vokser,
+   Den ejer Bonden mellem sine Okser.
+
+I Guld og ædle Stenes Pragt de Rige
+   Man ser med sky, bekymret Mine staa,
+   Lidt Blæst og Regn gør dem ulykkelige,
+   Og Tegn og Spaadomsord de agter paa.
+   Men Stodderen kan glad og sorgløs sige,
+   Han ejer alt, hvordan det saa vil gaa.
+   I Pjalter klædt han kan i Skoven bygge
+   Og blæse Pligter, Sorg og Strid et Stykke.
+
+Om Mit og Dit, om udenlandske Sprader,
+   Om Godt og Ondt, om Kunstens høje Tind
+   Vèd Bonden ej Besked; paa fyldte Lader,
+   Paa Græs og Vand og Mælk han lægger Vind.
+   Hans simple Sang, hans Hænders haarde Flader
+   Er Regnskabsbogen, hvor han fører ind
+   De Renter, Jorden yder mangefold,
+   Og trygt han giver alt i Skæbnens Vold.
+
+Gudfrygtig, tillidsfuldt hans Arme bredes
+   Mod Himlen ud i Bøn for Mark og Dyr,
+   Om Arbejdslykke der enfoldigt bedes,
+   For Koens Kælvning, for den ædle Tyr.
+   Her trives ej Maaske, Hvorfor, Hvorledes,
+   Og Tvivlen fra den Frommes Tærskel flyr.
+   Naar frem for Gud i Tro sin Bøn han fører,
+   Han stoler paa, at Himlen mildt ham hører.
+
+Halt Tvivlen er, den Vaaben med sig bringer,
+   Græshoppen lig den flytter sig i Hop,
+   I Følge sin Natur den stadig svinger
+   For Vinden som i Kæret Sivets Top.
+   <i>Hvorfor</i> er magert, og ved Bæltet klinger
+   Der Nøgler nok, som intet lukker op,
+   Ej gaar i nogen Laar og intet nytter;
+   Ved Nat det færdes, Mørket det beskytter.
+
+Slægtnære er <i>Hvorledes</i> og <i>Maaske</i>,
+   To Kæmper, saa umaadelige begge,
+   At op til Solen, som de ej kan se,
+   Da de er blinde, næstendels de række.
+   Storstæders Glans formørkes èn - to - tre,
+   Naar disse Kæmpekarle for dem dække;
+   Paa stejle Klippestier de er paa Færde
+   Med Hænder prøvende, om de kan bære.
+
+<i>Sandheden</i> fattig, nøgen, ensom gaar,
+   Blandt jævne Folk den oftest Venner fandt.
+   Èt Øje har den, Straaler fra det staar;
+   Guld er dens Legem, Hjærtet Diamant.
+   Den trives frodig under usle Kaar,
+   Faar tusind Liv igen, for hvert, der svandt,
+   Smaragdgrøn skinner den med herligt Skær
+   Og svigter aldrig den, som har den kær.
+
+Med kyske Blikke, som mod Jorden vende,
+   Gaar <i>Falskhed</i> frem i gyldenstukket Skrud,
+   Den Hykler, der er kun de Godes Fjende
+   Men vil som som alles Ven sig tage ud.
+   Af Is den er, tør Solens Glans ej kende,
+   Har Hjem ved Hoffet, hytter helst sin Hud
+   I Skyggen gemt, og som dens Værn og Værge
+   Svig, Løgn og Tvedragt til dens Fane sværge.
+
+Nu kommer <i>Smiger</i>, smidig og adræt,
+   Saa ung og smuk den vimser allevegne,
+   Dens Klædedragt i Farver spiller, ret
+   Saa Blomster selv i Foraarssol maa blegne.
+   Ved kælen Lis den naar sit Formaal let,
+   Gør andres Meninger til sine egne,
+   Den gaar fra Graad til Latter uforknyt
+   Og stjæler fra dig, mens den smiler sødt.
+
+Den er for Hoffets Laster ikke blot
+   En Moder, men en Amme, ved hvis Bryster
+   De næres, plejes, trives rigtig godt,
+   .....................................
+</body>
+</poem>
+
 
 </workbody>
 </kalliopework>
