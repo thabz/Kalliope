@@ -1570,7 +1570,8 @@
   <name>
     <firstname>François</firstname>
     <lastname>Villon</lastname>
-    <fullname>François De Montcorbier eller François Des Loges</fullname>
+    <realname>François De Montcorbier</realname>
+    <realname>François Des Loges</realname>
   </name>
   <period>
     <born><date>1431</date><place>Paris</place></born>
@@ -1934,10 +1935,11 @@
   <name>
     <firstname>Johan Sebastian</firstname>
     <lastname>Welhaven</lastname>
+    <fullname>Johan Sebastian Cammermeyer Welhaven</fullname>
   </name>
   <period>
-    <born><date>1807</date></born>
-    <dead><date>1873</date></dead>
+    <born><date>1807-12-22</date><place>Bergen, Norge</place></born>
+    <dead><date>1873-10-21</date><place>Christiania (nu Oslo)</place></dead>
   </period>
 </person>
 
@@ -1947,8 +1949,8 @@
     <lastname>Wergeland</lastname>
   </name>
   <period>
-    <born><date>1808</date></born>
-    <dead><date>1845</date></dead>
+    <born><date>1808-06-17</date><place>Kristiansand, Norge</place></born>
+    <dead><date>1845-07-12</date><place>Christiania (nu Oslo)</place></dead>
   </period>
 </person>
 
@@ -1978,10 +1980,11 @@
   <name>
     <firstname>Ivar</firstname>
     <lastname>Aasen</lastname>
+    <fullname>Ivar Andreas Aasen</fullname>
   </name>
   <period>
-    <born><date>1813</date></born>
-    <dead><date>1896</date></dead>
+    <born><date>1813-08-05</date><place>Sunnmøre, Norge</place></born>
+    <dead><date>1896-09-23</date><place>Christiania (nu Oslo)</place></dead>
   </period>
 </person>
 
@@ -1991,8 +1994,8 @@
     <lastname>Vinje</lastname>
   </name>
   <period>
-    <born><date>1818</date></born>
-    <dead><date>1870</date></dead>
+    <born><date>1818-04-06</date><place>Vinje, Norge</place></born>
+    <dead><date>1870-07-30</date><place>Gran, Norge</place></dead>
   </period>
 </person>
 
@@ -2022,10 +2025,11 @@
   <name>
     <firstname>Henrik</firstname>
     <lastname>Ibsen</lastname>
+    <fullname>Henrik Johan Ibsen</fullname>
   </name>
   <period>
     <born><date>1828-03-20</date><place>Skien, Norge</place></born>
-    <dead><date>1906-06-23</date></dead>
+    <dead><date>1906-05-23</date><place>Christiania (nu Oslo)</place></dead>
   </period>
 </person>
 
@@ -2044,10 +2048,11 @@
   <name>
     <firstname>Jonas</firstname>
     <lastname>Lie</lastname>
+    <fullname>Jonas Lauritz Idemil Lie</fullname>
   </name>
   <period>
-    <born><date>1833</date></born>
-    <dead><date>1908</date></dead>
+    <born><date>1833-11-06</date><place>Hokksund i Eiker, Norge</place></born>
+    <dead><date>1908-07-05</date><place>Stavern, Norge</place></dead>
   </period>
 </person>
 
@@ -2068,8 +2073,8 @@
     <lastname>Kinck</lastname>
   </name>
   <period>
-    <born><date>1865</date></born>
-    <dead><date>1926</date></dead>
+    <born><date>1865-10-11</date><place>Øksfjord, Norge</place></born>
+    <dead><date>1926-10-13</date><place>Oslo</place></dead>
   </period>
 </person>
 
@@ -2079,8 +2084,8 @@
     <lastname>Obstfelder</lastname>
   </name>
   <period>
-    <born><date>1866</date></born>
-    <dead><date>1900</date></dead>
+    <born><date>1866-11-21</date><place>Stavanger, Norge</place></born>
+    <dead><date>1900-07-29</date><place>København</place></dead>
   </period>
 </person>
 
@@ -2143,10 +2148,13 @@
   <name>
     <firstname>Georg</firstname>
     <lastname>Stiernhielm</lastname>
+    <realname>Jöran Olofsson</realname>
+    <alternative>Georgius Olai</alternative>
+    <alternative>Göran Lilia</alternative>
   </name>
   <period>
-    <born><date>1598</date></born>
-    <dead><date>1672</date></dead>
+    <born><date>1598-08-07</date><place>Vika, Sverige</place></born>
+    <dead><date>1672-04-22</date><place>Stockholm</place></dead>
   </period>
 </person>
 
@@ -2156,8 +2164,8 @@
     <lastname>Wivallius</lastname>
   </name>
   <period>
-    <born><date>1605</date></born>
-    <dead><date>1669</date></dead>
+    <born><date>1605</date><place>Wivalla, Sverige</place></born>
+    <dead><date>1669-04-06</date>Stockholm<place></place></dead>
   </period>
 </person>
 
@@ -2165,10 +2173,11 @@
   <name>
     <firstname>Lars (Lucidor)</firstname>
     <lastname>Johansson</lastname>
+    <pseudonym>Lucidor</pseudonym>
   </name>
   <period>
-    <born><date>1638</date></born>
-    <dead><date>1674</date></dead>
+    <born><date>1638-10-18</date><place>Stockholm</place></born>
+    <dead><date>1674-08-13</date><place>Stockholm</place></dead>
   </period>
 </person>
 
@@ -2244,8 +2253,8 @@
     <lastname>Dalin</lastname>
   </name>
   <period>
-    <born><date>1708</date></born>
-    <dead><date>1763</date></dead>
+    <born><date>1708-08-29</date><place>Vinberg, Sverige</place></born>
+    <dead><date>1763-08-12</date><place>Stockholm</place></dead>
   </period>
 </person>
 
@@ -2255,8 +2264,8 @@
     <lastname>Nordenflycht</lastname>
   </name>
   <period>
-    <born><date>1718</date></born>
-    <dead><date>1763</date></dead>
+    <born><date>1718-11-28</date><place>Stockholm</place></born>
+    <dead><date>1763-06-29</date><place>Lugnet nær Stockholm</place></dead>
   </period>
 </person>
 
@@ -2264,10 +2273,11 @@
   <name>
     <firstname>Gustaf Philip</firstname>
     <lastname>Creutz</lastname>
+    <fullname>Gustav Philip, Greve Creutz</fullname>
   </name>
   <period>
-    <born><date>1731</date></born>
-    <dead><date>1785</date></dead>
+    <born><date>1731-05-01</date><place>Anjala, Svensk Finland (nu Finland)</place></born>
+    <dead><date>1785-10-30</date><place>Stockholm</place></dead>
   </period>
 </person>
 
@@ -2277,8 +2287,8 @@
     <lastname>Bellman</lastname>
   </name>
   <period>
-    <born><date>1740-02-04</date></born>
-    <dead><date>1795-02-11</date></dead>
+    <born><date>1740-02-04</date><place>Stockholm</place></born>
+    <dead><date>1795-02-11</date><place>Stockholm</place></dead>
   </period>
 </person>
 
@@ -2288,8 +2298,8 @@
     <lastname>Stagnelius</lastname>
   </name>
   <period>
-    <born><date>1793</date></born>
-    <dead><date>1823</date></dead>
+    <born><date>1793-10-14</date><place>Öland, Sverige</place></born>
+    <dead><date>1823-04-03</date><place>Stockholm</place></dead>
   </period>
 </person>
 
@@ -2297,10 +2307,11 @@
   <name>
     <firstname>Viktor</firstname>
     <lastname>Rydberg</lastname>
+    <fullname>Abraham Viktor Rydberg</fullname>
   </name>
   <period>
-    <born><date>1828</date></born>
-    <dead><date>1895</date></dead>
+    <born><date>1828-12-18</date><place>Jönköbing, Sverige</place></born>
+    <dead><date>1895-09-21</date><place>Djursholm, Sverige</place></dead>
   </period>
 </person>
 
