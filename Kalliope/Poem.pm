@@ -109,7 +109,8 @@ sub content {
         $self->{'type'} = $data->{'type'};
 	$self->{'indhold'} = $self->extractFootnotes($self->{'indhold'});
     }
-    if ($self->{'layouttype'} eq 'prosa') {
+#    if ($self->{'layouttype'} eq 'prosa') {
+    if (1) {
         my @indhold;
 	foreach my $line (split /\n/,$self->{'indhold'}) {
 	    $line =~ s/^(\s+)/_nbsp($1)/e;
@@ -117,9 +118,7 @@ sub content {
         }
         $self->{'indhold'} = join "",@indhold;
     } else {
-	$self->{'indhold'} =~ /^(\s*)/;
-	my $padding = '&nbsp;'x(length $1);
-	$self->{'indhold'} =~ s/^(\s*)/$padding/;
+	$self->{'indhold'} =~ s/ /&nbsp;/;
     }
     $self->{'indhold'} =~ s/<w>/<span class="wide">/g;
     $self->{'indhold'} =~ s/<\/w>/<\/span>/g;
