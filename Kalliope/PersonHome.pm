@@ -28,10 +28,10 @@ use Kalliope::DB;
 my %cache;
 my $dbh = Kalliope::DB->connect;
 
-my $findByFhandleSth = $dbh->prepare("SELECT * FROM  fnavne WHERE fhandle = ?");
     
 sub findByFhandle {
     my ($fhandle) = @_;
+    my $findByFhandleSth = $dbh->prepare("SELECT * FROM  fnavne WHERE fhandle = ?");
     if (defined $cache{$fhandle}) {
        return $cache{$fhandle};
     } else {
@@ -41,6 +41,19 @@ sub findByFhandle {
         $cache{$fhandle} = $obj;
         return $obj;
     }
+}
+
+sub findByLang {
+    my $lang = shift;
+    my $findByLangSth = $dbh->prepare("SELECT * FROM  fnavne WHERE sprog = ?");
+    $findByLangSth->execute($lang);
+    my @result;
+    while (my $obj = $findByLangSth->fetchrow_hashref) {
+	bless $obj,'Kalliope::Person';
+        $cache{$obj->fhandle} = $obj;
+	push @result,$obj;
+    }
+    return @result;
 }
 
 1;
