@@ -89,7 +89,6 @@ $page->addBox( width => '250',
 $page->addBox( width => '100%',
 	       coloumn => 2,
 	       theme => 'dark',
-       	       title => 'Formater',
 	       content => &otherFormats($poet,$work) );
 
 $page->addBox( width => '250',
@@ -207,8 +206,8 @@ sub otherFormats {
     my $HTML;
 #    $HTML .= '<A TARGET="_top" TITLE="»'.$work->title.'« i PDF format" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=Printer"><IMG SRC="gfx/pdf.gif" BORDER=0 ALT="»'.$work->title.'« i PDF format"></A><BR>PDF<BR><BR>';
 #    $HTML .= '<A TARGET="_top" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=Printer"><IMG HEIGHT=48 WIDTH=48 SRC="gfx/floppy.gif" BORDER=0 ALT="»'.$work->title.'« i printervenligt format"></A><BR>Printer venligt<BR><BR>';
-    $HTML .= '<A CLASS="more" TARGET="_top" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=Printer">Printervenligt...</A><BR>';
+    $HTML .= '<A CLASS="more" TARGET="_top" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=Printer">Vis printudgave...</A><BR>';
 #    $HTML .= '<A TARGET="_top" TITLE="»'.$work->title.'« som etext til Palm" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=PRC"><IMG SRC="gfx/pilot.gif" BORDER=0 ALT="»'.$work->title.'« som etext til Palm"></A><BR>Palmpilot<BR><BR>';
-    $HTML .=  '<A TARGET="_top" CLASS="more" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=XML">XML...</A><BR>';
+    $HTML .=  '<A TARGET="_top" CLASS="more" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=XML">Vis XML-udgave...</A><BR>';
     return $HTML;
 }
