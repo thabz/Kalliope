@@ -167,7 +167,7 @@ sub insert {
 	    $fcols+=2;
 	}   
 
-        $rc->execute($fhandle,$person->{'firstname'},$person->{'lastname'},$person->{'born'},$person->{'dead'},$person->{'lang'},$fcols,$fthumb,$fpics,$biotext,$fbio,$flinks,$fsekundaer,$fvaerkerindhold,$fvaerker,$fprosa);
+        $rc->execute($fhandle,$person->{'firstname'},$person->{'lastname'},$person->{'born'} || '',$person->{'dead'} || '',$person->{'lang'},$fcols,$fthumb,$fpics,$biotext,$fbio,$flinks,$fsekundaer,$fvaerkerindhold,$fvaerker,$fprosa);
 	$lastinsertsth->execute();
 	my ($lastid) = $lastinsertsth->fetchrow_array;
         $fhandle2fid{$fhandle} = $lastid;
