@@ -266,12 +266,12 @@ EOF
     print '</TR>';
 
     # Foot
-    print '<TR><TD COLSPAN=3 HEIGHT="40" BGCOLOR="black">';
+    print '<TR><TD COLSPAN=3 HEIGHT="40" BGCOLOR="black" ALIGN="right">';
 
-    print '<TABLE><TR><TD VALIGN="middle">';
-    print $self->langSelector;
-    print '</TD><TD VALIGN="middle">';
+    print '<TABLE><TR><TD VALIGN="middle" ALIGN="right">';
     print '<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT STYLE="width: 80px" NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><BR><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free"></FORM>';
+    print '</TD><TD VALIGN="middle" ALIGN="right">';
+    print $self->langSelector;
     print '</TD></TR></TABLE>';
 
     print '</TD></TR>';
