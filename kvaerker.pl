@@ -112,7 +112,7 @@ if ($mode eq 'titel') {
 
 } elsif ($mode eq 'aar') {
 
-    my $sth = $dbh->prepare("SELECT v.*,f.fornavn,f.efternavn FROM vaerker AS v, fnavne AS f WHERE f.fhandle = v.fhandle AND v.lang = ? AND v.aar != '?' ORDER BY v.aar ASC");
+    my $sth = $dbh->prepare("SELECT v.*,f.fornavn,f.efternavn FROM vaerker AS v, fnavne AS f WHERE f.fhandle = v.fhandle AND v.lang = ? AND v.aar != '?' AND v.aar IS NOT NULL ORDER BY v.aar ASC");
     $sth->execute($LA);
 
     my $HTML = '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>';
@@ -120,7 +120,7 @@ if ($mode eq 'titel') {
     my ($last,$last2,$last3); 
     while (my $v = $sth->fetchrow_hashref) {
         my $vaerkaar = $v->{'aar'};
-	if (int $vaerkaar - int $last >= 10) {
+	if (int("$vaerkaar") - int("$last") >= 10) {
 	    $last = $vaerkaar - $vaerkaar%10;
 	    $last2 = $last+9;
 	    $HTML .= "<TR><TD COLSPAN=2><BR><DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR></TD></TR>";
@@ -177,7 +177,7 @@ if ($mode eq 'titel') {
 		if ($v->{'hascontent'} eq 'no') {
 		    $html .= "<I>".$v->{'titel'}."</I> $aar, ";
 		} else {
-		    $html .='<A CLASS=green HREF="vaerktoc.pl?fhandle='.$f->{'fhandle'}.'&vhandle='.$v->{'vhandle'}.'">';
+		    $html .='<A CLASS=green HREF="vaerktoc.pl?vid='.$f->{'vid'}.'">';
 		    $html .= "<I>".$v->{'titel'}."</I> $aar</A>, ";
 		}
 	    }
