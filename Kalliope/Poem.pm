@@ -165,6 +165,8 @@ sub content {
     $self->{'indhold'} =~ s/<\/sc>/<\/span>/g;
     $self->{'indhold'} =~ s/<wrap>/<div style="white-space: normal; text-align: justify">/gi;
     $self->{'indhold'} =~ s/<\/wrap>/<\/div>/gi;
+    $self->{'indhold'} =~ s/<s>/<small>/gi;
+    $self->{'indhold'} =~ s/<\/s>/<\/small>/gi;
 
     $self->{'indhold'} =~ s/\n/<BR>\n/g;
     $self->{'indhold'} =~ s/,,/&bdquo;/g;
