@@ -137,7 +137,8 @@ sub footnotes {
 }
 
 sub content {
-    my $self = shift;
+    my ($self,%options) = @_;
+    
     unless (defined $self->{'content'}) {
 	my $sth = $dbh->prepare("SELECT indhold,noter FROM digte WHERE did = ?");
 	$sth->execute($self->did);
@@ -147,30 +148,84 @@ sub content {
         $self->{'type'} = $data->{'type'};
 	$self->{'indhold'} = $self->extractFootnotes($self->{'indhold'});
     }
-#    if ($self->{'layouttype'} eq 'prosa') {
-    if (1) {
-        my @indhold;
-	foreach my $line (split /\n/,$self->{'indhold'}) {
-	    $line =~ s/^(\s+)/_nbsp($1)/e;
-            push @indhold,"$line\n";
-        }
-        $self->{'indhold'} = join "",@indhold;
-    } else {
-	$self->{'indhold'} =~ s/ /&nbsp;/;
-    }
-    $self->{'indhold'} =~ s/<w>/<span class="wide">/gi;
-    $self->{'indhold'} =~ s/<\/w>/<\/span>/gi;
-    $self->{'indhold'} =~ s/<sc>/<span style="font-variant: small-caps">/g;
-    $self->{'indhold'} =~ s/<\/sc>/<\/span>/g;
-    $self->{'indhold'} =~ s/<wrap>/<div style="white-space: normal; text-align: justify">/gi;
-    $self->{'indhold'} =~ s/<\/wrap>/<\/div>/gi;
-    $self->{'indhold'} =~ s/<s>/<small>/gi;
-    $self->{'indhold'} =~ s/<\/s>/<\/small>/gi;
+    my $result;
 
-    $self->{'indhold'} =~ s/\n/<BR>\n/g;
-    $self->{'indhold'} =~ s/,,/&bdquo;/g;
-    $self->{'indhold'} =~ s/''/&ldquo;/g;
-    return $self->{'indhold'}; 
+    if ($self->{'layouttype'} eq 'prosa') {
+         $result = $self->_contentAsProseHTML();
+    } elsif ($options{'layout'} eq 'plainpoem') {
+         $result = $self->_contentAsPlainPoemHTML();
+    } else {
+         $result = $self->_contentAsPoemHTML();
+    }
+    return _resolveTags($result); 
+}
+
+sub _contentAsProseHTML {
+    my $self = shift;
+    my @indhold;
+    foreach my $line (split /\n/,$self->{'indhold'}) {
+	$line =~ s/^(\s+)/_nbsp($1)/e;
+	push @indhold,"$line\n";
+    }
+    my $result = join "",@indhold;
+    $result  =~ s/\n/<BR>\n/g;
+    return $result;
+}
+
+sub _contentAsPoemHTML {
+    my $self = shift;
+    my $result = '<table cellpadding=0 cellspacing=0>';
+    $result .= '<tr><td><img src="gfx/trans1x1.gif" width="50" height="1"></td><td></td></tr>';
+    my $num = 0;
+    my $dispNum = 0;
+    my $lastNum = 0;
+    foreach my $line (split /\n/,$self->{'indhold'}) {
+	$line =~ s/^(\s+)/_nbsp($1)/e;
+	if (   $line =~ /[^ ]/
+		&& !($line =~ /^ *\d+\.? *$/)) 
+	{
+	    $num++;
+	} else {
+	    $line .= '&nbsp;';
+	}
+	if (($num % 5 == 0 || $num == 1) && $lastNum ne $num) {
+	    $dispNum = $num;
+	    $lastNum = $num;
+	} else {
+	    $dispNum = '';
+	};
+	$result .= '<tr><td style="font-size: 9pt; color: #808080; text-align: left">'.$dispNum.'</td>';
+	$result .= qq|<td style="white-space: nowrap" nowrap>$line </td>\n|;
+	$result .= '</tr>';
+    }
+    return $result.'</table>';
+}
+
+sub _contentAsPlainPoemHTML {
+    my $self = shift;
+    my @indhold;
+    foreach my $line (split /\n/,$self->{'indhold'}) {
+	$line =~ s/^(\s+)/_nbsp($1)/e;
+	push @indhold,"$line\n";
+    }
+    my $result = join "",@indhold;
+    $result  =~ s/\n/<BR>\n/g;
+    return '<div style="white-space: nowrap">'.$result.'</div>';
+}
+
+sub _resolveTags {
+    my $txt = shift;
+    $txt =~ s/<w>/<span class="wide">/gi;
+    $txt =~ s/<\/w>/<\/span>/gi;
+    $txt =~ s/<sc>/<span style="font-variant: small-caps">/g;
+    $txt =~ s/<\/sc>/<\/span>/g;
+    $txt =~ s/<wrap>/<div style="white-space: normal; text-align: justify">/gi;
+    $txt =~ s/<\/wrap>/<\/div>/gi;
+    $txt =~ s/<s>/<small>/gi;
+    $txt =~ s/<\/s>/<\/small>/gi;
+    $txt =~ s/,,/&bdquo;/g;
+    $txt =~ s/''/&ldquo;/g;
+    return $txt;
 }
 
 sub contentForSearch {
@@ -189,7 +244,7 @@ sub _nbsp {
 sub notes {
     my $self = shift;
     unless (defined $self->{'indhold'}) {
-        $self->content;
+	$self->content;
     }
     return $self->{'noter'}; 
 }
@@ -200,7 +255,7 @@ sub keywords {
     my $sth = $dbh->prepare("SELECT keywordid FROM keywords_relation WHERE keywords_relation.otherid = ? AND keywords_relation.othertype = 'digt'");
     $sth->execute($self->did);
     while (my $id = $sth->fetchrow_array) {
-       push @keywords,new Kalliope::Keyword(id => $id);
+	push @keywords,new Kalliope::Keyword(id => $id);
     }
     return @keywords;
 }
@@ -212,7 +267,7 @@ sub xrefsTo {
 
     my @result;
     while (my $longdid = $sth->fetchrow_array) {
-        push @result, new Kalliope::Poem(longdid => $longdid);
+	push @result, new Kalliope::Poem(longdid => $longdid);
     }
     return @result;
 }

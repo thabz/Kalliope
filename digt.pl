@@ -171,10 +171,16 @@ sub poem {
     $HTML .= '<SPAN CLASS="digtunderoverskrift">'.$poem->subtitle.'</SPAN><BR>' if $poem->subtitleAsHTML;
     $HTML .= '<BR>';
 
+    unless ($poem->isProse) {
+        my $indhold = '<table cellpadding=0 cellspacing=0>';
+        $indhold .= qq|<tr><td><img src="gfx/trans1x1.gif" width="50" height="1"></td><td>$HTML</td></tr>|;
+        $indhold .= '</table>';
+        $HTML = $indhold;
+    }
    
-    $HTML .= '<div style="white-space: nowrap">' unless $poem->isProse;
+ #   $HTML .= '<div style="white-space: nowrap">' unless $poem->isProse;
     $HTML .= $poem->content($biblemark);
-    $HTML .= '</div>' unless $poem->isProse;
+ #   $HTML .= '</div>' unless $poem->isProse;
 
     $HTML =~ s/ - / &mdash; /g;
     $HTML =~ s/^- /&mdash; /gm;
