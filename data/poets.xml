@@ -2319,10 +2319,11 @@
   <name>
     <firstname>Carl</firstname>
     <lastname>Snoilsky</lastname>
+    <fullname>Carl Johan Gustaf, Greve Snoilsky</fullname>
   </name>
   <period>
-    <born><date>1841</date></born>
-    <dead><date>1903</date></dead>
+    <born><date>1841-09-08</date><place>Stockholm</place></born>
+    <dead><date>1903-05-19</date><place>Stockholm</place></dead>
   </period>
 </person>
 
@@ -2442,7 +2443,7 @@
     <lastname>Young</lastname>
   </name>
   <period>
-    <born><date>1683-07-03</date><note>Døbt</note><place>Upham, Hampshire, England</place></born>
+    <born><date>1683-07-03</date><note>Dåbsdag</note><place>Upham, Hampshire, England</place></born>
     <dead><date>1765-04-05</date><place>Welwyn, Hertfordshire, England</place></dead>
   </period>
 </person>
