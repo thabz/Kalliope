@@ -313,6 +313,7 @@ $rc = $dbh->do("CREATE TABLE digte (
               underoverskrift text,
               indhold mediumtext,
               noter text,
+              layouttype enum('prosa','digt') default 'digt',
               afsnit int,      /* 0 hvis ikke afsnitstitel, ellers H-level. */
               KEY longdid_indeks (longdid(10)),
               UNIQUE (did,longdid))");
@@ -324,7 +325,7 @@ $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywor
 $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM digte");
 $sth = $dbh->prepare("SELECT * FROM vaerker WHERE findes=1");
 $sthafs = $dbh->prepare("INSERT INTO digte (fid,vid,titel,vaerkpos,afsnit) VALUES (?,?,?,?,?)");
-$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,foerstelinie,underoverskrift,indhold,noter,afsnit) VALUES (?,?,?,?,?,?,?,?,?,0)");
+$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,foerstelinie,underoverskrift,indhold,noter,afsnit,layouttype) VALUES (?,?,?,?,?,?,?,?,?,0,?)");
 $sth->execute;
 print "  Ikke tomme: ".$sth->rows."\n";
 
@@ -383,7 +384,10 @@ while ($v = $sth->fetchrow_hashref) {
 	} elsif (/^U:/) {
 	    s/^U://;
 	    $under .= $_."\n";
-	}else {
+	} elsif (/^TYPE:/) {
+	    s/^TYPE://;
+            $layouttype = $_;
+        }  else {
 	    $indhold .= $_."\n";
 	}
     }
@@ -447,16 +451,17 @@ sub insertforbogstav {
 sub insertdigt {
     chop($noter);
     chop($under);
+    $layouttype = 'prosa' if $v->{'type'} ne 'v' && $layouttype ne 'digt';
     print "$id er set før!\n" if ++$knownlongdids{$id} > 1;
-    print "$id mangler førstelinie\n" if $firstline eq '' && $v->{'type'} eq 'v';
+    print "$id mangler førstelinie\n" if $firstline eq '' && $layouttype ne 'prosa';
     print "$id mangler titel\n" if $titel eq '';
     $indhold =~ s/\s+$//;
     $noter =~ s/[\n\s]+$//;
     $indhold =~ s/^\n+//m;
 # Insæt hvad vi har.
-    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$firstline,$under,$indhold,$noter);
+    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$firstline,$under,$indhold,$noter,$layouttype || 'digt');
     $i++;
-    $noter = $under = $indhold = '';
+    $layouttype = $noter = $under = $indhold = '';
     $firstline = '';
     $titel = '';
     $lastinsertsth->execute();	

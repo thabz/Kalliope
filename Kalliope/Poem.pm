@@ -36,7 +36,7 @@ sub new {
     $sql = 'longdid = "'.$arg{'longdid'}.'"' if defined $arg{'longdid'};
     $sql = 'did = "'.$arg{'did'}.'"' if defined $arg{'did'};
     confess "Need some kind of id to initialize a new poem\n" unless $sql;
-    my $sth = $dbh->prepare("SELECT did,fid,vid,longdid,titel,underoverskrift,foerstelinie FROM digte WHERE $sql");
+    my $sth = $dbh->prepare("SELECT did,fid,vid,longdid,titel,underoverskrift,foerstelinie,layouttype FROM digte WHERE $sql");
     $sth->execute();
     my $obj = $sth->fetchrow_hashref;
     bless $obj,$class if $obj;
@@ -80,14 +80,14 @@ sub firstline {
 sub content {
     my $self = shift;
     unless (defined $self->{'content'}) {
-	my $sth = $dbh->prepare("SELECT indhold,digte.noter,type FROM digte,vaerker WHERE did = ? AND digte.vid = vaerker.vid");
+	my $sth = $dbh->prepare("SELECT indhold,noter FROM digte WHERE did = ?");
 	$sth->execute($self->did);
 	my $data = $sth->fetchrow_hashref;
 	$self->{'indhold'} = $data->{'indhold'};
 	$self->{'noter'} = $data->{'noter'};
         $self->{'type'} = $data->{'type'};
     }
-    $self->{'indhold'} =~ s/ /&nbsp;/g unless ($self->{'type'} eq 'p');
+    $self->{'indhold'} =~ s/ /&nbsp;/g unless ($self->{'layouttype'} eq 'prosa');
     $self->{'indhold'} =~ s/\n/<BR>/g;
     return $self->{'indhold'}; 
 }
