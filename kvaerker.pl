@@ -80,10 +80,10 @@ if ($mode eq 'titel') {
     };
 
     # Udskriv titler på vaerker
-    my ($f,$new,$last);
+    my ($new,$last) = ('','');
     foreach my $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
-	next if ( $f->{'aar'} eq "?");
-	next if ($f->{'titel'} eq '');
+	next if ( $f->{'aar'} && $f->{'aar'} eq "?");
+	next unless $f->{'titel'};
 	$f->{'sort'} =~ s/Aa/Å/g;
 	$new = Kalliope::Sort::myuc(substr($f->{'sort'},0,1));
 	if ($new ne $last) {
@@ -106,7 +106,6 @@ if ($mode eq 'titel') {
     $page->print;
 
 } elsif ($mode eq 'aar') {
-    my $HTML;
 
     my $sth = $dbh->prepare("SELECT v.*,f.fornavn,f.efternavn FROM vaerker AS v, fnavne AS f WHERE f.fid = v.fid AND v.lang = ? AND v.aar != '?' ORDER BY v.aar ASC");
     $sth->execute($LA);
@@ -116,7 +115,7 @@ if ($mode eq 'titel') {
     my ($last,$last2,$last3); 
     while (my $v = $sth->fetchrow_hashref) {
         my $vaerkaar = $v->{'aar'};
-	if ($vaerkaar-$last >= 10) {
+	if (int $vaerkaar - int $last >= 10) {
 	    $last = $vaerkaar - $vaerkaar%10;
 	    $last2 = $last+9;
 	    $HTML .= "<TR><TD COLSPAN=2><BR><DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR></TD></TR>";
@@ -144,12 +143,12 @@ if ($mode eq 'titel') {
 
 } elsif ($mode eq 'digter') {
     my $HTML;
-    my $sth = $dbh->prepare("SELECT CONCAT(efternavn,', ',fornavn) as navn, fornavn, efternavn, fhandle,fid FROM fnavne WHERE sprog=?");
+    my $sth = $dbh->prepare("SELECT CONCAT(efternavn,', ',fornavn) as navn, fornavn, efternavn, fhandle,fid FROM fnavne WHERE sprog = ? AND vers = 1");
     my $sthvaerker = $dbh->prepare("SELECT vhandle,titel,aar,findes FROM vaerker WHERE fid = ? ORDER BY aar");
     $sth->execute($LA);
     my @f;
     while (my $f = $sth->fetchrow_hashref) {
-	$f->{'sort'} = $f->{'efternavn'}.$f->{fornavn};
+	$f->{'sort'} = $f->{'efternavn'}.$f->{'fornavn'};
 	push @f,$f;
     };
 
@@ -165,7 +164,7 @@ if ($mode eq 'titel') {
 	$sthvaerker->execute($f->{fid});
 	if ($sthvaerker->rows) {
             $HTML .= '<SPAN CLASS="listeblue">&#149;</SPAN> ';
-	    $f->{'navn'} =~ s/^, //;
+	    $f->{'navn'} =~ s/^, // if $f->{'navn'};
 	    $HTML .= $f->{navn}."<BR>";
 	    $html = '<DIV STYLE="padding:0 0 0 20">';
 	    while ($v = $sthvaerker->fetchrow_hashref) {
