@@ -46,38 +46,50 @@ if ($outputtype eq 'XML') {
    <!ELEMENT head (title, date, author, notes)>
    <!ELEMENT content (section|poem)*>
    <!ELEMENT poem (title, subtitle?, notes*, lines)>
+   <!ELEMENT lines (line)>
    <!ELEMENT title (#PCDATA)>
    <!ELEMENT date (#PCDATA)>
    <!ELEMENT author (#PCDATA)>
-   <!ELEMENT notes (#PCDATA)>
+   <!ELEMENT notes (lines)>
    <!ELEMENT subtitle (#PCDATA)>
-   <!ELEMENT lines (#PCDATA)>
-   <!ATTLIST lines xml:space (default|preserve) 'preserve'>
+   <!ELEMENT line (#PCDATA)>
+   <!ATTLIST line xml:space (default|preserve) 'preserve'>
    <!ELEMENT section (#PCDATA)> 
 ]>
 EOS
-    print "<KALLIOPEWORK>";
-    print "<HEAD>";
-    print "<TITLE>".$vtitel."</TITLE>\n";
-    print "   <DATE>".$vaar."</DATE>\n";
-    print "   <AUTHOR ID=\"".$fhandle."\">".$fefternavn.", ".$ffornavn."</AUTHOR>\n";
-    print "   <NOTES>".$vnoter."</NOTES>\n";
-    print "</HEAD>\n";
-    print "<CONTENT>\n";
+    print "<kalliopework>";
+    print "<head>";
+    print "<title>".$vtitel."</title>\n";
+    print "   <date>".$vaar."</date>\n";
+    print "   <author id=\"".$fhandle."\">".$fefternavn.", ".$ffornavn."</author>\n";
+    print "   <notes>".$vnoter."</notes>\n";
+    print "</head>\n";
+    print "<content>\n";
     while($d = $sth->fetchrow_hashref) {
 	if ($d->{afsnit}) {
-	    print "<SECTION>".$d->{titel}."</SECTION>\n";
+	    print "<section>".$d->{titel}."</section>\n";
 	} else {
 	    $d->{indhold} =~ s/\n+$/\n/;
-	    print '<POEM ID="'.$d->{longdid}."\">\n";
-	    print "   <TITLE>".$d->{titel}."</TITLE>\n";
-	    print "   <SUBTITLE>".$d->{underoverskrift}."</SUBTITLE>\n" if $d->{underoverskrift};
-	    print "   <NOTES>".$d->{noter}."</NOTES>\n" if $d->{noter};
-	    print "   <LINES>".$d->{indhold}."</LINES>\n";
-	    print "</POEM>\n\n";
+	    print '<poem id="'.$d->{longdid}."\">\n";
+	    print "   <title>".$d->{titel}."</title>\n";
+	    print "   <subtitle>".$d->{underoverskrift}."</subtitle>\n" if $d->{underoverskrift};
+	    $d->{noter} =~ s/<BR>/\n/gi;
+	    $d->{noter} = join "\n", map {"<line>$_</line>"} split /\n/,$d->{noter};
+	    print "   <notes>".$d->{noter}."</notes>\n" if $d->{noter};
+	    my @verse = split /\n\n/,$d->{indhold};
+	    foreach $verse (@verse) {
+	        print "  <verse>\n";
+		foreach $line (split /\n/,$verse) {
+		    $line =~ /^(\s*)/;
+		    my $indent = length $1;
+		    print qq|    <line indent="$indent">$line</line>\n|;
+		}
+		print "  </verse>\n";
+	    }
+	    print "</poem>\n\n";
 	}
     }
-    print "</CONTENT></KALLIOPEWORK>";
+    print "</content></kalliopework>";
 } elsif ($outputtype eq 'TXT') {
     print "Her kommer tekst versionen";
 } elsif ($outputtype eq 'Printer') {
