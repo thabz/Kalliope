@@ -56,7 +56,7 @@ sub needle {
 
 sub result {
     my $self = shift;
-    my $sth = $dbh->prepare("SELECT d.did FROM keywords_relation as k,digte as d, digthits = h WHERE k.keywordid = ? AND k.othertype = 'digt' AND k.otherid = d.did AND d.lang = ? AND d.longdid = h.longdid ORDER BY h.hits DESC LIMIT ?,10");
+    my $sth = $dbh->prepare("SELECT d.did FROM keywords_relation as k,digte as d LEFT JOIN digthits AS h ON h.longdid = d.longdid WHERE k.keywordid = ? AND k.othertype = 'digt' AND k.otherid = d.did AND d.lang = ? ORDER BY h.hits DESC LIMIT ?,10");
     $sth->execute($self->keyword->id,$self->lang,$self->firstNumShowing);
     my @matches;
     while (my $d = $sth->fetchrow_hashref)  {
