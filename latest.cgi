@@ -29,6 +29,8 @@ use Kalliope::DB;
 use Kalliope::Date;
 use strict;
 
+my $DAYS_TO_SHOW = 14;
+
 my $page = new Kalliope::Page (
 		title => 'Senest tilføjede digte',
                 pagegroup => 'welcome',
@@ -50,7 +52,8 @@ sub latestPoems {
     my $i = -1;
     my $lastDate = 0;
     my $sth = $dbh->prepare("SELECT longdid,createtime FROM digte WHERE createtime >= ? ORDER BY createtime DESC");
-    $sth->execute(time - 14*24*60*60);
+    $sth->execute(time - $DAYS_TO_SHOW*24*60*60);
+    my $count = $sth->rows;
     while (my @h = $sth->fetchrow_array) {
          my ($longdid,$createdate) = @h;
          $i++ if $lastDate != $createdate;
@@ -64,7 +67,8 @@ sub latestPoems {
          my $dateForDisplay = Kalliope::Date::longDate($blocks[$j]->{'createdate'});
          $blocks[$j]->{'head'} = "<DIV CLASS=listeoverskrifter>$dateForDisplay</DIV><BR>";
     }
-    return (Kalliope::Web::doubleColumn(\@blocks),'');
+    $HTML = Kalliope::Web::doubleColumn(\@blocks);
+    $HTML .= "<HR><SMALL><I>Der er ialt tilføjet $count digte indenfor de sidste $DAYS_TO_SHOW dage.</I></SMALL>";
 }
 
 1;
