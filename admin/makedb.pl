@@ -333,7 +333,8 @@ while ($v = $sth->fetchrow_hashref) {
     open(IN,$fdir.$v->{'vhandle'}.".txt") || die "Argh! ".$fdir.$v->{'vhandle'}.'.txt ikke fundet!';
     $i=0;
     $first = 1;
-    $tititel = $toctitel = $noter = $under = $indhold = '';
+    $toctitel = $noter = $under = $indhold = '';
+    $tititel = '';
     @arvedekeys = ();
     @pics = ();
     @qualities = ();
@@ -512,7 +513,7 @@ sub insertdigt {
     $layouttype = $noter = $under = $indhold = '';
     $firstline = '';
     $titel = '';
-    $titiel = '';
+    $tititel = '';
     $toctitel = '';
     @pics = ();
     @qualities = ();
