@@ -109,7 +109,7 @@ sub getHTML {
 	my ($id,$id_class,$quality) = @{$d};
 	my $item = $id_class->new(id => $id);
 
-	$HTML .= qq|<TR><TD VALIGN="top">$i.</TD><TD>|;
+	$HTML .= qq|<TR><TD ALIGN="right" VALIGN="top">$i.</TD><TD WIDTH="100%">|;
 	$HTML .= $item->getSearchResultEntry($escapedNeedle,@needle);
 	$HTML .= '</TD></TR>';
 	$i++;
