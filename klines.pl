@@ -56,15 +56,15 @@ my $page = new Kalliope::Page (
 
 my $sth;
 if ($mode == 1) {
-    $sth = $dbh->prepare("SELECT tititel as titel,fhandle,longdid,fornavn,efternavn FROM digte D, fnavne F, forbogstaver B WHERE B.forbogstav = ? AND B.type = ? AND B.sprog = ? AND B.did = D.did AND D.fid = F.fid");
+    $sth = $dbh->prepare("SELECT tititel as titel,d.fhandle,d.longdid,fornavn,efternavn FROM digte as d, fnavne as f, forbogstaver as b WHERE b.forbogstav = ? AND b.type = ? AND b.lang = ? AND b.longdid = d.longdid AND d.fhandle = f.fhandle ");
 } elsif ($mode == 0) {
-    $sth = $dbh->prepare("SELECT foerstelinie,fhandle,longdid,fornavn,efternavn FROM digte D, fnavne F, forbogstaver B WHERE B.forbogstav = ? AND B.type = ? AND B.sprog = ? AND B.did = D.did AND D.fid = F.fid");
+    $sth = $dbh->prepare("SELECT foerstelinie,d.fhandle,d.longdid,fornavn,efternavn FROM digte as d, fnavne as f, forbogstaver as b WHERE b.forbogstav = ? AND b.type = ? AND b.lang = ? AND b.longdid = d.longdid AND d.fhandle = f.fhandle");
 } elsif ($mode == 2) {
     goto POPU;
 }
 
 my @f;
-$sth->execute($forbogstav,$mode?'t':'f',$LA);
+$sth->execute($forbogstav, $mode ? 't' : 'f', $LA);
 unless ($sth->rows) {
     $HTML .= "Vælg begyndelsesbogstav nedenfor";
 } else {
@@ -84,7 +84,7 @@ unless ($sth->rows) {
 }
 
 # Bogstav menuen
-$sth = $dbh->prepare("SELECT DISTINCT forbogstav FROM forbogstaver WHERE type = ? AND sprog = ?" );
+$sth = $dbh->prepare("SELECT DISTINCT forbogstav FROM forbogstaver WHERE type = ? AND lang = ?" );
 $sth->execute($mode?'t':'f',$LA);
 
 my $i = 0;
@@ -114,7 +114,7 @@ exit 1;
 
 POPU:
 
-$sth = $dbh->prepare("SELECT fornavn, efternavn, fnavne.fhandle, digte.longdid, titel, hits, lasttime FROM digthits,fnavne,digte WHERE digthits.longdid = digte.longdid AND digte.fid = fnavne.fid AND fnavne.sprog=? ORDER BY hits DESC LIMIT 20");
+$sth = $dbh->prepare("SELECT fornavn, efternavn, fnavne.fhandle, digte.longdid, digte.linktitel as titel, hits, lasttime FROM digthits,fnavne,digte WHERE digthits.longdid = digte.longdid AND digte.fhandle = fnavne.fhandle AND fnavne.sprog=? ORDER BY hits DESC LIMIT 20");
 $sth->execute($LA);
 
 my $printed;
