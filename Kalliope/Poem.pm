@@ -201,7 +201,7 @@ sub _contentAsPoemHTML {
 	    s/<nonum>//gi;
 	    s/<\/nonum>//gi;
 	}
-	if (($num % 5 == 0 || $num == 1) && $lastNum ne $num) {
+	if (($num % 5 == 0) && $lastNum ne $num) {
 	    $dispNum = $num;
 	    $lastNum = $num;
 	} else {
