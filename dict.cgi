@@ -62,7 +62,7 @@ if ($wid) {
     my $HTML = "<b>$$h{word}</b>: ";
     $HTML .= $h->{'forkl'};
 
-    $HTML .= qq|<br><br><a class="green" href="ksearch.cgi?sprog=dk&type=free&needle=qq|.uri_escape($$h{word}).q|">Søg</a> efter tekster, som indeholder dette ord.|;
+    $HTML .= qq|<br><br><a class="green" href="ksearch.cgi?sprog=dk&type=free&needle=|.uri_escape($$h{word}).q|">Søg</a> efter tekster, som indeholder dette ord.|;
 
     $page->addBox (
 	    width => "80%",
