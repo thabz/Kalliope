@@ -28,7 +28,7 @@ use Kalliope::Web ();
 use Kalliope::Page ();
 use Kalliope::Sort ();
 
-my $LA = 'dk';
+my $LA = CGI::url_param('sprog') || 'dk';
 
 my %pageTypes = ('az' => {'title' => 'Digtere efter navn',
                           'function' => 'listaz',
@@ -51,6 +51,7 @@ my $struct = $pageTypes{$listType};
 
 my $page = new Kalliope::Page (
 		title => $struct->{'title'},
+		lang => $LA,
                 pagegroup => 'poets',
                 page => $struct->{'page'}); 
 $page->addBox ( width => '75%',
