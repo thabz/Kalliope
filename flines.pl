@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# Udskriver alle titel-linier for en forfatter.
+#  Udskriver alle titel-linier for en forfatter.
 #
 #  Copyright (C) 1999-2001 Jesper Christensen 
 #
