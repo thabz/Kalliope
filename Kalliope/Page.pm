@@ -232,14 +232,21 @@ EOF
 
 sub langSelector {
     my $self = shift;
-    my $selfLang = $self->lang;
+    my $selfLang = $self->lang; 
     my $HTML;
+    my %titles = ( dk => 'danske',
+                   uk => 'engelske',
+		   de => 'tyske',
+		   fr => 'franske',
+		   se => 'svenske',
+		   no => 'norske' );
     my $url = $self->{'changelangurl'};
     foreach my $lang ('dk','uk','de','fr','se','no') {
        my $refURL = $url;
        $refURL =~ s/sprog=../sprog=$lang/;
        my $img = $lang eq $selfLang ? "${lang}select.gif" : "$lang.gif";
-       $HTML .= qq|<A HREF="$refURL"><IMG BORDER=0 SRC="gfx/flags/$img"></A>|;
+       my $alt = $lang eq $selfLang ? 'Du befinder dig i den '.$titles{$lang}.' samling.' : 'Skift til den '.$titles{$lang}.' samling.';
+       $HTML .= qq|<A TITLE="$alt" HREF="$refURL"><IMG ALT="$alt" BORDER=0 SRC="gfx/flags/$img"></A>|;
     }
     return $HTML;
 }
