@@ -66,12 +66,41 @@ sub content {
 
 sub contentAsHTML {
     my $HTML = shift->content;
-    $HTML =~ s/^>+/\t/gm;
-    $HTML =~ s/</&lt;/gm;
-    $HTML =~ s/>/&gt;/gm;
-    my $HTML = Kalliope::Web::linkParse($HTML);
-    $HTML =~ s/^\t(.*)\n/<div style="color: #808080; margin: 0px; padding: 0 0 0 10px">$1<\/div>/gm;
-    $HTML =~ s/\n/<BR>/g;
+#    $HTML =~ s/^>+/\t/gm;
+
+    my @body;
+    my $div=0;
+    foreach (split(/\n/,$HTML)) {
+	my $res="";
+	/(^>*)(.*)/;
+	my $length = length($1);
+	if ($div < $length) {
+	    foreach my $i ($div..$length-1) {
+		$res .= '<BLOCKQUOTE STYLE="border-left: 2px solid rgb(185,185,174); padding:5px; margin: 3px; color: #808080" >';
+	    }
+	} elsif ($div > $length) {
+	    $res .= "</BLOCKQUOTE>"x($div-$length);
+	} else {
+	    $res.= "<BR>";
+	}
+	$div = $length;
+	my $rest = $2;
+	$rest =~ s/</&lt;/g;
+	$rest =~ s/>/&gt;/g;
+	$rest = Kalliope::Web::linkParse($rest);
+	$res .= "$rest\n";
+	push @body, $res;
+    }
+    if ($div > 0) {
+	push @body, "</BLOCKQUOTE>"x($div);
+    }
+    $HTML = join ('',@body);
+
+#    $HTML =~ s/</&lt;/gm;
+#    $HTML =~ s/>/&gt;/gm;
+#    my $HTML = Kalliope::Web::linkParse($HTML);
+#    $HTML =~ s/^\t(.*)\n/<div style="color: #808080; margin: 0px; padding: 0 0 0 10px">$1<\/div>/gm;
+#    $HTML =~ s/\n/<BR>/g;
     return $HTML;
 }
 
