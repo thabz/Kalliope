@@ -69,7 +69,7 @@ sub insert {
     my @changed = @_;
     my $sthwork = $dbh->prepare("INSERT INTO vaerker (vid,fhandle,vhandle,titel,underoverskrift,aar,type,hascontent,quality,lang,status,cvstimestamp,dirty) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,1)");
     my $sthnote = $dbh->prepare("INSERT INTO worknotes (vid,note,orderby) VALUES (?,?,?)");
-    my $sthpicture = $dbh->prepare("INSERT INTO workpictures (vid,caption,url,orderby) VALUES (?,?,?,?)");
+    my $sthpicture = $dbh->prepare("INSERT INTO workpictures (vid,caption,url,orderby,type) VALUES (?,?,?,?,?)");
     my $sthkeyword = $dbh->prepare("INSERT INTO workxkeyword (vid,keyword) VALUES (?,?)");
     foreach my $item (@changed) {
 	my ($fhandle,$vhandle) = ($item->{'fhandle'},$item->{'vhandle'});
@@ -104,7 +104,8 @@ sub insert {
 	   my $i = 1;
            foreach my $pic ($workhead->first_child('pictures')->children('picture')) {
 	       my $src = $pic->{'att'}->{'src'};
-   	       $sthpicture->execute($vid,$pic->sprint(1),$src,$i++);
+	       my $type = $pic->{'att'}->{'type'};
+   	       $sthpicture->execute($vid,$pic->sprint(1),$src,$i++,$type);
   	   }
 	}
 	if ($workhead->first_child('keywords')) {
@@ -155,6 +156,7 @@ sub create {
 	CREATE TABLE workpictures ( 
               vid varchar(80) NOT NULL REFERENCES vaerker(vid),
 	      caption text NOT NULL,
+	      type varchar(20),
 	      url varchar(200) NOT NULL,
 	      orderby int NOT NULL)
 	    ));
