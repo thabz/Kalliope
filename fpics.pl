@@ -45,7 +45,7 @@ my $i = 1;
 my $HTML .= "<TABLE><TR>";
 while (-e "fdirs/".$fhandle."/p".$i.".jpg") {
     $HTML .= '<TD WIDTH="33%" VALIGN="top" ALIGN="center">';
-    $HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/_p$i.jpg",destfile=>"fdirs/$fhandle/p$i.jpg",alt=>'Klik for fuld størrelse'});
+    $HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/_p$i.jpg",destfile=>"fdirs/$fhandle/p$i.jpg",alt=>$poet->name.'- klik for fuld størrelse'});
     $HTML .= '<BR>';
     if (-e "fdirs/".$fhandle."/p".$i.".txt") {
 	open(IN,"fdirs/".$fhandle."/p".$i.".txt");
