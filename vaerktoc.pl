@@ -180,7 +180,8 @@ sub tableOfContent {
 	    $tit =~ s/<num>.*?<\/num>//;
 	}		
 	
-	if ($d->{'afsnit'} && !($tit =~ /^\s*$/)) {
+        #if ($d->{'afsnit'} && !($tit =~ /^\s*$/)) {
+	if ($d->{'afsnit'}) {
 	    $tit = qq|<span class="toctitle$$d{afsnit}"><br>$tit</span>|;
 	} else {
 	    $tit = qq|<a href="digt.pl?longdid=$$d{longdid}">$tit</a>|;
