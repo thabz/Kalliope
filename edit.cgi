@@ -20,8 +20,6 @@
 #
 #  $Id$
 
-use lib '..';
-
 use CGI qw /:standard/;
 use Kalliope::Web;
 use Kalliope::Page;
