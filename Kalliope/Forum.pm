@@ -29,20 +29,20 @@ my $dbh = Kalliope::DB->connect;
 
 my @foraInfo = ( {title => 'Løst og fast',
                desc  => 'Her kan du diskutere alt muligt',
-	       smallicon  => 'gfx/evolution-48.png',
-	       bigicon  => 'gfx/evolution-192.png'},
+	       smallicon  => 'gfx/icons/forum-w48.gif',
+	       bigicon  => 'gfx/icons/forum-h70.gif'},
               {title => 'Tekstkritik',
                desc  => 'Her snakker vi tekstkritik',
-	       smallicon  => 'gfx/evolution-48.png',
-	       bigicon  => 'gfx/evolution-192.png'},
+	       smallicon  => 'gfx/icons/forum-w48.gif',
+	       bigicon  => 'gfx/icons/forum-h70.gif'},
               {title => 'Kalliope',
                desc  => 'Her snakker vi om Kalliope',
-	       smallicon  => 'gfx/evolution-48.png',
-	       bigicon  => 'gfx/evolution-192.png'},
+	       smallicon  => 'gfx/icons/forum-w48.gif',
+	       bigicon  => 'gfx/icons/forum-h70.gif'},
               {title => 'Hjælp',
                desc  => 'Her kan du spørge om hjælp til hvad som helst',
-	       smallicon  => 'gfx/evolution-48.png',
-	       bigicon  => 'gfx/evolution-192.png'},
+	       smallicon  => 'gfx/icons/forum-w48.gif',
+	       bigicon  => 'gfx/icons/forum-h70.gif'},
 	       );
 
 sub new {

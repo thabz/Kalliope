@@ -32,7 +32,7 @@ push @crumbs,['Forum','forumindex.cgi'];
 
 my $page = new Kalliope::Page (
 		title => 'Forum',
-		thumb => 'gfx/evolution-192.png',
+		thumb => 'gfx/icons/forum-h70.gif',
 		page => 'forumindex',
 		crumbs => \@crumbs,
                 pagegroup => 'forum');
@@ -46,7 +46,7 @@ $HTML .= '<TABLE>';
 
 for (my $i = 0; $i < Kalliope::Forum::getNumberOfForas; ++$i) {
     my $forum = new Kalliope::Forum($i);
-    $HTML .= '<TR><TD ROWSPAN=2><IMG ALT="" SRC="'.$forum->getSmallIcon.'" HEIGHT=48 WIDTH=48></TD>';
+    $HTML .= '<TR><TD ROWSPAN=2 VALIGN="top"><IMG ALT="" SRC="'.$forum->getSmallIcon.'" WIDTH=48></TD>';
     $HTML .= '<TD CLASS="ffronttitle"><A HREF="'.$forum->getHeadersURL.'">'.$forum->getTitle.'</A></TD><TR>';
     my $latestHTML = '';
     if (my $latestPost = $forum->getLatestPost) {
