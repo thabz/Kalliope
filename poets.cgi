@@ -47,13 +47,19 @@ my %pageTypes = ('az' => {'title' => 'Digtere efter navn',
                  'flittige' => {'title' => 'Flittigste digtere',
                           'function' => 'listflittige',
 			  'crumbtitle' => 'flittigste',
-                          'page' => 'poetsbyflittige'}
+                          'page' => 'poetsbyflittige'},
+                 'pop'  => {'title' => 'Mest populære digtere',
+                          'function' => 'listpop',
+			  'crumbtitle' => 'mest populære',
+                          'page' => 'poetsbypop'}
+
                 );
 
 my $listType = CGI::url_param('list');
 
 if ($listType ne 'az' && $listType ne '19' && 
-    $listType ne 'pics' && $listType ne 'flittige') {
+    $listType ne 'pics' && $listType ne 'flittige' &&
+    $listType ne 'pop') {
     Kalliope::Page::notFound;
 }
 
@@ -229,3 +235,31 @@ sub listflittige {
     $HTML .= '</TABLE>';
     return ($HTML,$endHTML); 
 }
+
+sub listpop {
+    my $dbh = Kalliope::DB->connect;
+    my $sth = $dbh->prepare("SELECT fornavn, efternavn, foedt, doed, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f WHERE dh.longdid = d.longdid AND d.fid = f.fid AND f.sprog=? GROUP BY f.fid ORDER BY hits DESC ".($limit != -1 ? "LIMIT $limit" : ''));
+    $sth->execute($LA);
+
+    my $i = 1;
+    my $total;
+    my $endHTML = '';
+    my $HTML = '<TABLE WIDTH="100%">';
+    $HTML .= '<TR><TH></TH><TH>Navn</TH><TH>Hits</TH><TH>Senest</TH></TR>';
+    while (my $h = $sth->fetchrow_hashref) {
+	$HTML .= '<TR><TD>'.$i++.'.</TD>';
+	$HTML .= '<TD><A HREF="fvaerker.pl?'.$h->{fhandle}.'?'.$LA.'">'.$h->{fornavn}.' '.$h->{efternavn}.'<FONT COLOR=#808080> ('.$h->{foedt}.'-'.$h->{doed}.')</FONT></A></TD>';
+	$HTML .= '<TD ALIGN=right>'.$h->{'hits'}.'</TD>';
+	$HTML .= '<TD ALIGN=right>'.Kalliope::shortdate($h->{'lasttime'}).'</TD>';
+	$total += $h->{'hits'};
+    }
+    if ($limit != -1) {
+        $endHTML = qq|<A HREF="poets.cgi?list=pop&limit=-1&sprog=$LA"><IMG VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Hele listen"></A>|;
+    } else {
+        $HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD></TR>";
+    }
+    $HTML .= '</TABLE>';
+    return ($HTML,$endHTML);
+}
+
+

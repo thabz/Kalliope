@@ -248,7 +248,7 @@ sub menuStructs {
          'poets'    => {menuTitle => 'Digtere',
                        url => 'poets.cgi?list=az&sprog='.$lang,
                        'pages' => ['poetsbyname','poetsbyyear','poetsbypic',
-		                   'poetsbyflittige']
+		                   'poetsbyflittige','poetsbypop']
                        },
          'worklist' => {menuTitle => 'Værker',
                        url => 'kvaerker.pl?sprog='.$lang,
@@ -301,6 +301,9 @@ sub menuStructs {
                        },
          'poetsbyflittige' => {menuTitle => 'Flittigste digtere',
                            url => 'poets.cgi?list=flittige&sprog='.$lang
+                       },
+         'poetsbypop'    => {menuTitle => 'Mest populære digtere',
+                             url => 'poets.cgi?list=pop&sprog='.$lang
                        },
          'kvaerkertitel' => {menuTitle => 'Værker efter titel',
                            url => 'kvaerker.pl?mode=titel&sprog='.$lang
