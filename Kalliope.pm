@@ -61,20 +61,24 @@ sub buildhrefs {
     $$txt =~ s/,,/&bdquo;/g;
     $$txt =~ s/''/&ldquo;/g;
 
-    while ($$txt =~ /XREF/i) {
+    while ($$txt =~ /XREF BIBEL/i) {
 	if ($$txt =~ /<XREF BIBEL="([^"]+)"\/?>/i) {
 	    my ($did,$verse) = split /,/,$1;
-	my $poem = new Kalliope::Poem::Bible(longdid => $did);
-	my $link;
-	if ($poem) {
-	    $link = $poem->clickableTitleSimple($verse);
-	} else {
-	    $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
-	}
-	$$txt =~ s/<XREF BIBEL="[^"]+"\/?>/$link/i;
-    }
-    if ($$txt =~ /<XREF DIGT="(.+)"\/?>/i) {
-	my $did = $1;
+	    my $poem = new Kalliope::Poem::Bible(longdid => $did);
+  	    my $link;
+	    if ($poem) {
+	        $link = $poem->clickableTitleSimple($verse);
+	    } else {
+	        $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
+	    }
+	    $$txt =~ s/<XREF BIBEL="[^"]+"\/?>/$link/i;
+        } 
+    } 
+
+    while ($$txt =~ /XREF DIGT/i) {
+	print STDERR "Pis!\n";
+	if ($$txt =~ /<XREF DIGT="([^"]+)"\/?>/i) {
+	    my $did = $1;
 	my $poem = new Kalliope::Poem(longdid => $did);
 	my $link;
 	if ($poem) {
@@ -83,6 +87,7 @@ sub buildhrefs {
 	    $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
 	}
 	$$txt =~ s/<XREF DIGT="$did"\/?>/»$link«/i;
+    }
     }
     if ($$txt =~ /<XREF KEYWORD="(.+)"\/?>/i) {
 	my $did = $1;
@@ -105,7 +110,7 @@ sub buildhrefs {
 	my $link = qq|<A HREF="dict.cgi?wid=$widurl">$ord</A>|;
 	$$txt =~ s/<XREF ORD="$wid"\/?>/$link/i;
     }
-    }
+    
     $$txt =~ s/<sc>/<span style="font-variant: small-caps">/g;
     $$txt =~ s/<\/sc>/<\/span>/g;
     $$txt = makeMetricLetters($$txt);
