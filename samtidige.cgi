@@ -59,7 +59,7 @@ if ($antal) {
     $HTML .= '<TABLE BORDER=0 CELLPADDING=0 CELLSPADING=0>';
     while (my $h = $sth->fetchrow_hashref) {
 	$HTML .= '<TR><TD><IMG WIDTH="20" HEIGHT="20" ALT="" SRC="gfx/flags/'.$h->{'sprog'}.'_light.gif"></TD><TD><A HREF="ffront.cgi?fhandle='.$h->{'fhandle'}.'">'.$h->{'fornavn'}.' '.$h->{'efternavn'}.' <FONT COLOR="#808080">('.$h->{'foedt'}.'-'.$h->{'doed'}.')</FONT></A></TD></TR>';
-	if ($i == int($antal/2)) {
+	if ($i == int($antal/2) - 1 ) {
 	    $HTML .= '</TABLE></TD><TD VALIGN=top>';
 	    $HTML .= '<TABLE BORDER=0 CELLPADDING=0 CELLSPADING=0>';
 	}
