@@ -30,81 +30,22 @@ $fhandle = url_param('fhandle');
 $vhandle = url_param('vhandle');
 $outputtype = url_param('mode');
 
-($vtitel,$vsubtitle,$vaar,$vhandle,$fid,$vid,$vnoter) = $dbh->selectrow_array("SELECT titel,underoverskrift,aar,vhandle,fid,vid,noter,type FROM vaerker WHERE vhandle = '$vhandle' AND fhandle = '$fhandle'");
-
-($ffornavn,$fefternavn,$ffoedt,$fdoed) = $dbh->selectrow_array("SELECT fornavn,efternavn,foedt,doed FROM fnavne WHERE fhandle = '$fhandle'");
-
-$sth = $dbh->prepare("SELECT longdid,titel,foerstelinie,underoverskrift,indhold,noter,afsnit FROM digte WHERE vid=? AND fid=?");
-$sth->execute($vid,$fid);
-
 if ($outputtype eq 'XML') {
     print "Content-type: text/xml\n\n";
-    print <<'EOS';
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<?xml-stylesheet href="xmlstyle.css" type="text/css"?>
-<!DOCTYPE kalliopework [
-   <!ELEMENT kalliopework (head, content)>
-   <!ELEMENT head (title, date, author, notes)>
-   <!ELEMENT content (section|poem)*>
-   <!ELEMENT poem (title, subtitle?, notes*, lines)>
-   <!ELEMENT lines (line)>
-   <!ELEMENT title (#PCDATA)>
-   <!ELEMENT date (#PCDATA)>
-   <!ELEMENT author (#PCDATA)>
-   <!ELEMENT notes (lines)>
-   <!ELEMENT subtitle (#PCDATA)>
-   <!ELEMENT line (#PCDATA)>
-   <!ATTLIST line xml:space (default|preserve) 'preserve'>
-   <!ELEMENT section (#PCDATA)> 
-
-   <!ENTITY mdash "&#8212;">
-   <!ENTITY ndash "&#8211;">
-   <!ENTITY bdquo "&#8222;">
-   <!ENTITY ldquo "&#8220;">
-   <!ENTITY oelig "&#339;">
-]>
-EOS
-    print "<kalliopework>\n";
-    print "<head>\n";
-    print "   <title>$vtitel</title>\n";
-    print "   <subtitle>$vsubtitle</subtitle>\n" if $vsubtitle;
-    print qq|   <author id="$fhandle">$ffornavn $fefternavn</author>\n|;
-    print "   <date>$vaar</date>\n";
-    print "   <notes>$vnoter</notes>\n";
-    print "</head>\n";
-    print "<content>\n";
-    while($d = $sth->fetchrow_hashref) {
-	if ($d->{afsnit}) {
-	    print "<section>".$d->{titel}."</section>\n";
-	} else {
-	    $d->{indhold} =~ s/\n+$/\n/;
-	    print '<poem id="'.$d->{longdid}."\">\n";
-	    print "   <title>".$d->{titel}."</title>\n";
-	    print "   <subtitle>".$d->{underoverskrift}."</subtitle>\n" if $d->{underoverskrift};
-	    print "   <firstline>".$d->{foerstelinie}."</firstline>\n";
-	    $d->{noter} =~ s/<BR>/\n/gi;
-	    $d->{noter} = join "\n", map {"<line>$_</line>"} split /\n/,$d->{noter};
-#	    print "   <notes>".$d->{noter}."</notes>\n" if $d->{noter};
-	    my @verse = split /\n\n/,$d->{indhold};
-	    foreach $verse (@verse) {
-	        print "  <verse>\n";
-		foreach $line (split /\n/,$verse) {
-		    $line =~ /^(\s*)/;
-		    my $indent = length $1;
-		    $line =~ s/ - / \&ndash; /g;
-		    $line =~ s/^- /\&ndash; /g;
-		    $line =~ s/ -$/ \&ndash;/g;
-		    print qq|    <line indent="$indent">$line</line>\n|;
-		}
-		print "  </verse>\n";
-	    }
-	    print "</poem>\n\n";
-	}
+    open (FILE,"fdirs/$fhandle/$vhandle.xml");
+    while (<FILE>) {
+	print $_;
     }
-    print "</content></kalliopework>";
+    close (FILE);
 } elsif ($outputtype eq 'TXT') {
     print "Her kommer tekst versionen";
 } elsif ($outputtype eq 'Printer') {
+    ($vtitel,$vsubtitle,$vaar,$vhandle,$vid) = $dbh->selectrow_array("SELECT titel,underoverskrift,aar,vhandle,vid,type FROM vaerker WHERE vhandle = '$vhandle' AND fhandle = '$fhandle'");
+
+    ($ffornavn,$fefternavn,$ffoedt,$fdoed) = $dbh->selectrow_array("SELECT fornavn,efternavn,foedt,doed FROM fnavne WHERE fhandle = '$fhandle'");
+
+    $sth = $dbh->prepare("SELECT longdid,toptitel,foerstelinie,underoverskrift,indhold FROM digte WHERE vid=? AND fhandle=?");
+    $sth->execute($vid,$fhandle);
     print "Content-type: text/html\n\n";
     print "<HTML><HEAD><TITLE>$vtitel</TITLE></HEAD>\n";
     print "<BODY BGCOLOR=white>\n";
@@ -117,7 +58,7 @@ EOS
 	    print "\n<H2>".$d->{titel}."</H2>\n";
 	} else {
 	    my $poem = new Kalliope::Poem (longdid => $d->{'longdid'});
-	    print "\n<H3>".$poem->title."</H3>\n";
+	    print "\n<H3>".$poem->topTitle."</H3>\n";
 	    $d->{'underoverskrift'} =~ s/\n/<BR>/g;
 	    print "\n<FONT SIZE=-1>".$poem->subtitle."</FONT><BR><BR><BR>\n" if $poem->subtitle;
 	    print $poem->content;
