@@ -27,6 +27,7 @@ use Kalliope::Person ();
 use Kalliope::DB ();
 use Kalliope::Work ();
 use Kalliope::Page ();
+use Kalliope;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -140,18 +141,15 @@ sub pics {
 
 sub notes {
     my $work = shift;
-    my $HTML;
-    my $noter = $work->notes;
-    $noter =~ s/<A /<A CLASS=green /g;
-    my @noter = split /\n/,$noter;
-    $HTML = join '<BR><BR>',@noter;
+    my @notes = $work->notes;
+    @notes = map { Kalliope::buildhrefs(\$_) } @notes;
 
-#    foreach (@noter) {
-#	next unless $_;
-#	$HTML .= '<IMG WIDTH=48 HEIGHT=48 SRC="gfx/clip.gif" BORDER=0 ALT="Note til »'.$work->title.'«">';
-#	$HTML .= $_."<BR><BR>";
-#    }
-    return qq|<span style="font-size: 12px">$HTML</span>|;
+    my $HTML;
+    $HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>',@notes;
+    $HTML = qq|<span style="font-size: 12px">$HTML</span>|;
+    $HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>';
+    $HTML .= $work->quality->asHTML;
+    return $HTML;
 }
 
 sub tableOfContent {

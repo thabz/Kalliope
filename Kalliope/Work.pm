@@ -88,9 +88,8 @@ sub clickableTitle {
 
 sub notes {
     my $self = shift;
-    my $notes = $self->{'noter'};
-    $notes .= '<br><br>'.$self->quality->asHTML;
-    return $notes;
+    my @notes = split /\n+/,$self->{'noter'};
+    return @notes;
 }
 
 sub quality {
