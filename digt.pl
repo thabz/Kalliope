@@ -171,9 +171,9 @@ sub poem {
     $HTML .= '<BR>';
 
    
-    $HTML .= '<TABLE CELLPADDING=0 CELLSPACING=0><TR><TD NOWRAP>' unless $poem->isProse;
+    $HTML .= '<div style="white-space: nowrap">' unless $poem->isProse;
     $HTML .= $poem->content($biblemark);
-    $HTML .= '</TD></TR></TABLE>' unless $poem->isProse;
+    $HTML .= '</div>' unless $poem->isProse;
 
     $HTML =~ s/ - / &mdash; /g;
     $HTML =~ s/^- /&mdash; /gm;
