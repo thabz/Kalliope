@@ -125,7 +125,7 @@ sub notes {
 sub tableOfContent {
     my $work = shift;
     my $HTML;
-    my $sth = $dbh->prepare("SELECT longdid,titel,afsnit,did FROM digte WHERE vid=? ORDER BY vaerkpos");
+    my $sth = $dbh->prepare("SELECT longdid,toctitel as titel,afsnit,did FROM digte WHERE vid=? ORDER BY vaerkpos");
     $sth->execute($work->vid);
     return 'Kalliope indeholder endnu ingen tekster fra dette værk.' unless $sth->rows;
     while(my $d = $sth->fetchrow_hashref) {

@@ -202,7 +202,7 @@ sub tableOfContents {
     my $HTML;
 
     $HTML .= '<SPAN STYLE="font-size: 12px">';
-    my $sth = $dbh->prepare("SELECT longdid,titel,afsnit,did FROM digte WHERE vid=? ORDER BY vaerkpos");
+    my $sth = $dbh->prepare("SELECT longdid,toctitel as titel,afsnit,did FROM digte WHERE vid=? ORDER BY vaerkpos");
     $sth->execute($work->vid);
     while(my $d = $sth->fetchrow_hashref) {
 	if ($d->{'afsnit'} && !($d->{'titel'} =~ /^\s*$/)) {

@@ -313,6 +313,7 @@ $rc = $dbh->do("CREATE TABLE digte (
               vid INT NOT NULL,
               vaerkpos INT,
               titel text NOT NULL,
+              toctitel text NOT NULL,
               foerstelinie text,
               underoverskrift text,
               indhold mediumtext,
@@ -334,8 +335,8 @@ $rc = $dbh->do("CREATE TABLE digte (
 $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywords.id = keywords_relation.keywordid AND keywords_relation.otherid = ? AND keywords_relation.othertype = 'vaerk'");
 $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM digte");
 $sth = $dbh->prepare("SELECT * FROM vaerker WHERE findes=1");
-$sthafs = $dbh->prepare("INSERT INTO digte (fid,vid,titel,vaerkpos,afsnit) VALUES (?,?,?,?,?)");
-$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,foerstelinie,underoverskrift,indhold,noter,afsnit,layouttype,haystack) VALUES (?,?,?,?,?,?,?,?,?,0,?,?)");
+$sthafs = $dbh->prepare("INSERT INTO digte (fid,vid,titel,toctitel,vaerkpos,afsnit) VALUES (?,?,?,?,?,?)");
+$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,foerstelinie,underoverskrift,indhold,noter,afsnit,layouttype,haystack) VALUES (?,?,?,?,?,?,?,?,?,0,?,?,?)");
 $sth->execute;
 print "  Ikke tomme: ".$sth->rows."\n";
 
@@ -348,7 +349,7 @@ while ($v = $sth->fetchrow_hashref) {
     open(IN,$fdir.$v->{'vhandle'}.".txt") || die "Argh! ".$fdir.$v->{'vhandle'}.'.txt ikke fundet!';
     $i=0;
     $first = 1;
-    $noter = $under = $indhold = '';
+    $toctitel = $noter = $under = $indhold = '';
     @arvedekeys = ();
     # Nedarv keys fra værket
     $stharv->execute($v->{'vid'});
@@ -369,7 +370,7 @@ while ($v = $sth->fetchrow_hashref) {
 	    &insertdigt unless ($first);
 	    @mykeys = @arvedekeys;
 	    $first = 1; #fordi vi ikke kender næste digt ID
-	    $sthafs->execute($v->{'fid'},$v->{'vid'},$afsnitstitel,$i,$level);
+	    $sthafs->execute($v->{'fid'},$v->{'vid'},$afsnitstitel,$afsnitstitel,$i,$level);
 	    $i++;
 	    next;
 	}; 
@@ -382,7 +383,10 @@ while ($v = $sth->fetchrow_hashref) {
 	    } else {
 		&insertdigt;
 	    }
-	} elsif (/^T:/) {
+	} elsif (/^TOC:/) {
+	    s/^TOC://;
+	    $toctitel = $_;
+	}  elsif (/^T:/) {
 	    s/^T://;
 	    $titel = $_;
 	} elsif (/^F:/) {
@@ -476,11 +480,12 @@ sub insertdigt {
 # Insæt hvad vi har.
     $haystack = Kalliope::Strings::stripHTML("$titel $under $indhold");
 
-    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$firstline,$under,$indhold,$noter,$layouttype || 'digt',$haystack);
+    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$toctitel || $titel,$firstline,$under,$indhold,$noter,$layouttype || 'digt',$haystack);
     $i++;
     $layouttype = $noter = $under = $indhold = '';
     $firstline = '';
     $titel = '';
+    $toctitel = '';
     $lastinsertsth->execute();	
     ($mymylastid) = $lastinsertsth->fetchrow_array;
     foreach (@mykeys) {
