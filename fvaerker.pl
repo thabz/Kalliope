@@ -57,8 +57,8 @@ if ($#works >= 0) {
 	    $HTML .= '<A HREF="vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle.'">';
 	    $HTML .= qq|<IMG HEIGHT=40 WIDTH=27 ALT="" BORDER=0 
 		        SRC="gfx/$iconfile" VALIGN="middle"></A>
-		        </TD><TD><FONT COLOR="black">|;
-	    $HTML .= '<A HREF="vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle.'">';
+		        </TD><TD>|;
+	    $HTML .= '<A HREF="vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle.'"><FONT COLOR="black">';
 	} else {
 	    my $iconfilena =  'book_40_high.GIF';
 	    $HTML .= qq|<IMG HEIGHT=40 WIDTH=27 ALT="" BORDER=0  
