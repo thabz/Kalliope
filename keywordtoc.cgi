@@ -42,13 +42,13 @@ my $page = new Kalliope::Page (
 
 my @blocks= ();
 my $idx;
-my $sth = $dbh->prepare("SELECT id,titel FROM keywords ORDER BY titel");
+my $sth = $dbh->prepare("SELECT ord,titel FROM keywords ORDER BY titel");
 $sth->execute ();
 while (my $h = $sth->fetchrow_hashref) {
     $idx = (ord lc substr($h->{'titel'},0,1)) - ord('a');
     $blocks[$idx]->{'head'} = '<DIV CLASS=listeoverskrifter>'.uc (chr $idx + ord('a')).'</DIV><BR>';
     $blocks[$idx]->{'count'}++;
-    $blocks[$idx]->{'body'} .= '<A HREF="keyword.cgi?keywordid='.$h->{'id'}.'&sprog='.$LA.'">'.$h->{'titel'}.'</A><BR>';
+    $blocks[$idx]->{'body'} .= '<A HREF="keyword.cgi?keyword='.$h->{'ord'}.'&sprog='.$LA.'">'.$h->{'titel'}.'</A><BR>';
 }
 
 $page->addBox ( title => "Indholdsfortegnelse",

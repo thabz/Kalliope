@@ -61,7 +61,7 @@ sub sortString {
 
 sub clickableTitle {
     my ($self,$lang) = @_;
-    return '<A CLASS=green HREF="keyword.cgi?keywordid='.$self->id.'&sprog='.$lang.'">'.$self->title.'</A>';
+    return '<A CLASS=green HREF="keyword.cgi?keyword='.$self->ord().'&sprog='.$lang.'">'.$self->title.'</A>';
 }
 
 sub linksToKeywords {
