@@ -49,6 +49,11 @@ $page->addBox ( title => "",
                 coloumn => 0,
                 content => &latestPoems);
 
+$page->addBox ( title => "Nørderi",
+                width => '90%',
+                coloumn => 0,
+                content => '<IMG SRC="cron/plot.gif">');
+
 $page->print;
 
 sub latestPoems {
