@@ -328,7 +328,9 @@ $sth = $dbh->prepare("INSERT INTO timeline (year,month,day,description,type,even
 open (FILE,"../aarstal.txt");
 my $line = 1;
 while (<FILE>) {
-    if (/^(\d+): (.*)$/) {
+    if (/^(\d+): P:(.*)%(.*)$/) {
+      $sth->execute($1,0,0,$3,'picture','history',$2);
+    } elsif (/^(\d+): (.*)$/) {
        $sth->execute($1,0,0,$2,'event','history','');
     } elsif (/^(\d+)-(\d+)-(\d+): (.*)$/) {
        $sth->execute($1,$2,$3,$4,'event','history','');
