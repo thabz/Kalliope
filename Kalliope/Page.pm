@@ -347,7 +347,7 @@ sub menuStructs {
          'history' => {menuTitle => 'Nøgleord',
 		       icon => 'gfx/icons/keywords-w64.gif',
                        url => 'keywordtoc.cgi?sprog='.$lang,
-                       pages => ['keywordtoc','timeline','keyword']
+                       pages => ['keywordtoc','timeline']
                        },
          'forum' =>    {menuTitle => 'Forum',
                        url => 'forumindex.cgi',
@@ -449,6 +449,7 @@ sub _navigationSub {
     my $self = shift;
     my %menuStructs = $self->menuStructs;
     my $HTML;
+    my @itemsHTML;
     
     # Pages
     my $struct = $menuStructs{$self->{'pagegroup'}};
@@ -457,11 +458,12 @@ sub _navigationSub {
         my ($title,$url) = ($struct->{'menuTitle'},
                            $struct->{'url'});
         if ($key ne $self->{'page'}) {
-	    $HTML .= qq|<A CLASS=white HREF="$url">[$title]</A> |;
+	    push @itemsHTML, qq|<A CLASS="white" HREF="$url">$title</A>|;
 	} else {
-            $HTML .= qq|<B>[$title]</B> |;
+            push @itemsHTML, qq|<A CLASS="white" HREF="$url"><B>$title</B></A>|;
 	}
     }
+    $HTML = join ' <span class="lifespan">&#149;</span> ',@itemsHTML;
     # Author menu
     if ($self->{'poet'}) {
        $HTML .= $self->{'poet'}->menu($self);

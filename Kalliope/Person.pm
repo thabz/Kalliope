@@ -212,15 +212,17 @@ sub menu {
 		    status => $self->{'sekundaer'} } );
     my @keys = qw/vaerker titlelines firstlines popular prosa pics bio samtidige links sekundaer/;
     my $HTML;
+    my @itemsHTML;
     foreach my $key (@keys) {
         my %item = %{$menuStruct{$key}};
         my $url = $item{url}.'fhandle='.$self->fhandle;
 	if ($key eq $page->{'page'}) {
-	    $HTML .= qq|[<A CLASS="white" HREF="$url"><b>$item{title}</b></A>] | if $item{status};
+	    push @itemsHTML, qq|<A CLASS="white" HREF="$url"><b>$item{title}</b></A>| if $item{status};
 	} else {
-	    $HTML .= qq|[<A CLASS="white" HREF="$url">$item{title}</A>] | if $item{status};
+	    push @itemsHTML, qq|<A CLASS="white" HREF="$url">$item{title}</A>| if $item{status};
 	}
     }
+    $HTML = join ' <span class="lifespan">&#149;</span> ',@itemsHTML;
     return $HTML;
 }
 
