@@ -95,7 +95,7 @@ $page->addBox(width => '75%',
               coloumn => 1,
               content => $HTML);
 
-if ($poet->yearDead>1931) {
+if ($poet->yearDead>1932) {
     my $name = $poet->name;
     $page->addBox( title => 'Bemærk',
                    width => '200',
