@@ -109,6 +109,7 @@ sub _makeMetricLetters {
     my %conv = ( 'uu' => 'uu',
                  '|' => 'pipe',
 		 'u' => 'u',
+		 'n' => 'n',
 		 'o' => 'o',
 		 '||' => 'pipepipe',
 		 'U' => 'U',
