@@ -31,11 +31,17 @@ use strict;
 
 my $DAYS_TO_SHOW = 14;
 
+my @crumbs;
+push @crumbs,['Digte',''];
+push @crumbs,['Tilføjelser',''];
+
+
 my $page = new Kalliope::Page (
 		title => 'Senest tilføjede digte',
                 pagegroup => 'poemlist',
 		changelangurl => 'poets.cgi?list=az&sprog=XX',
-                page => 'latest'
+                page => 'latest',
+		crumbs => \@crumbs
            );
 
 $page->addBox ( title => "",
