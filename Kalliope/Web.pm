@@ -32,26 +32,46 @@ sub doubleColumn {
     my $subtotal = 0;
     my $columnchanged = 0;
 
-    map { $total += $_->{'count'}+2 } grep {$_->{'count'}} @blocks;
+    map { $_->{'count'} += 3 } @blocks;
+    map { $total += $_->{'count'} } grep {$_->{'count'}} @blocks;
+
+    my ($left,$right);
+    my $minI;
+    my $minDiff = $total;
+    for ($i = 0; $i <= $#blocks; $i++) {
+	$right = $total - $left;
+	print STDERR "$left - $right";
+	if (abs ($right-$left) <= $minDiff ) {
+            $minDiff = abs ($right-$left);
+	    $minI = $i;
+	    print STDERR " *";
+	}
+        $left += $blocks[$i]->{'count'};
+        print STDERR "\n";
+    }
+    
 
     $HTML .= '<TABLE WIDTH="100%" CELLPADDING=0><TR><TD VALIGN=top>';
+    $i = 0;
     foreach $b (@blocks) {
         next unless ($b->{'count'});
-	if (!$columnchanged && $subtotal > $total/2) {
+	if ($i == $minI) {
 	    $columnchanged = 1;
 	    $HTML .= '</TD><TD WIDHT=1 VALIGN=top BGCOLOR=black>';
-	    $HTML .= '<IMG SRC="gfx/trans1x1.gif" BORDER=0 ALT=""></TD>';
+	    $HTML .= '<IMG ALT="" SRC="gfx/trans1x1.gif" BORDER=0 ALT=""></TD>';
 	    $HTML .= '<TD WIDHT=10 VALIGN=top>';
-	    $HTML .= '<IMG SRC="gfx/trans1x1.gif" WIDTH=10 BORDER=0 ALT=""></TD>';
+	    $HTML .= '<IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH=10 BORDER=0></TD>';
 	    $HTML .= '<TD VALIGN=top>';
 	}
-        $subtotal += $b->{'count'}+2;
+        $subtotal += $b->{'count'};
 	$HTML .= $b->{'head'};
 	$HTML .= $b->{'body'}."<BR>";
+	$i++;
     }
     $HTML .= '</TD></TR></TABLE>';
     return $HTML;
 }
+
 
 sub insertThumb {
     my $h = shift;
