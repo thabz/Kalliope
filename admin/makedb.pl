@@ -11,23 +11,25 @@ use Kalliope::Build::Timeline;
 use Kalliope::Build::Xrefs;
 use POSIX;
 
+$| = 1; # No buffered I/O on STDOUT
+
 my $dbh = Kalliope::DB->connect;
 
 #
 # Build dictionary 
 #
 
-print "Making dict\n";
+&log ("Making dict... ");
 Kalliope::Build::Dict::create();
 %dict = Kalliope::Build::Dict::parse('../data/dict.xml');
 Kalliope::Build::Dict::insert(\%dict);
-print "Done\n";
+&log ("Done");
 
 #
 # Keywords
 #
 
-print "Making keywords\n";
+&log ("Making keywords... ");
 
 $rc = $dbh->do("drop table if exists keywords");
 $rc = $dbh->do("CREATE TABLE keywords ( 
@@ -80,7 +82,7 @@ while ($file = readdir(DIR)) {
     }
 }
 
-print "Done\n";
+&log("Done");
 
 $rc = $dbh->do("drop table if exists keywords_relation");
 $rc = $dbh->do("CREATE TABLE keywords_relation ( 
@@ -95,16 +97,17 @@ $sthkeyword = $dbh->prepare("INSERT INTO keywords_relation (keywordid,otherid,ot
 # Build fnavne
 #
 
-print "Making persons\n";
+&log("Making persons... ");
 Kalliope::Build::Persons::create();
 my %persons = Kalliope::Build::Persons::parse('../data/poets.xml');
 my %fhandle2fid = Kalliope::Build::Persons::insert(%persons);
-print "Done\n";
+&log("Done");
 
 #
 # Andet pass af keywords som laver links imellem dem
 #
 
+&log("Second pass of keywords... ");
 $sth = $dbh->prepare("SELECT * FROM keywords");
 $sth->execute();
 while ($h = $sth->fetchrow_hashref) {
@@ -122,11 +125,13 @@ while ($h = $sth->fetchrow_hashref) {
     }
     close(FILE)
 }
+&log("Done");
 
 #
 # Build links
 #
 
+&log("Build links... ");
 $rc = $dbh->do("drop table if exists links");
 $rc = $dbh->do("CREATE TABLE links ( 
               id int UNSIGNED DEFAULT '0' NOT NULL PRIMARY KEY auto_increment,
@@ -151,11 +156,13 @@ while ($fn = $sth->fetchrow_hashref) {
 }
 $sth2->finish;
 $sth->finish;
+&log("Done");
 
 #
 # Build værker
 #
 
+&log("Build works... ");
 $rc = $dbh->do("drop table if exists vaerker");
 $rc = $dbh->do("CREATE TABLE vaerker ( 
               vid int UNSIGNED DEFAULT '0' NOT NULL PRIMARY KEY auto_increment,
@@ -185,7 +192,7 @@ $sth = $dbh->prepare("SELECT * FROM fnavne");
 $sth->execute;
 $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywords.id = keywords_relation.keywordid AND keywords_relation.otherid = ? AND keywords_relation.othertype = 'biografi'");
 $sth2= $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle,titel,underoverskrift,aar,type,findes,noter,pics,quality,lang,status,cvstimestamp) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-print "Antal forfattere: ".$sth->rows."\n";
+&log("Antal forfattere: ".$sth->rows);
 
 while ($fn = $sth->fetchrow_hashref) {
     $fdir = "../fdirs/".$fn->{'fhandle'}."/";
@@ -256,24 +263,25 @@ while ($fn = $sth->fetchrow_hashref) {
     }
     close(IN);
 }
+&log("Done");
 
 $sth->finish;
 $sth = $dbh->prepare("SELECT count(*) FROM vaerker");
 $sth->execute;
 ($c) = $sth->fetchrow_array;
-print "Antal værker: $c\n";
+&log ("Antal værker: $c");
 $sth->finish;
 $sth = $dbh->prepare("SELECT count(*) FROM vaerker WHERE type='p'");
 $sth->execute;
 ($c) = $sth->fetchrow_array;
-print "  heraf prosa: $c\n";
+&log("  heraf prosa: $c");
 $sth->finish;
 
 #
 # Timeline ------------------------------------------------------------
 #
 
-print "Making timeline... \n";
+&log ("Making timeline... ");
 Kalliope::Build::Timeline::build(%persons);
 
 #
@@ -324,13 +332,12 @@ my $sthLastIns = $dbh->prepare("SELECT LAST_INSERT_ID() FROM digte");
 
 $sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,tititel,foerstelinie,underoverskrift,indhold,noter,pics,afsnit,layouttype,haystack,createtime,quality,lang) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,0,?,?,?,?,?)");
 $sth->execute;
-print "  Ikke tomme: ".$sth->rows."\n";
+&log ("  Ikke tomme: ".$sth->rows);
 
 my $counterMax = $sth->rows;
 my $counter = 1;
 while ($v = $sth->fetchrow_hashref) {
-    print sprintf("[%3d/%3d]",$counter++,$counterMax);
-    print ' '.$v->{'titel'}."\n";
+    &log (sprintf("[%3d/%3d]",$counter++,$counterMax).' '.$v->{'titel'});
     $fdir = "../fdirs/".$v->{'fhandle'}."/";
     open(IN,$fdir.$v->{'vhandle'}.".txt") || die "Argh! ".$fdir.$v->{'vhandle'}.'.txt ikke fundet!';
     $i=0;
@@ -427,29 +434,31 @@ $sthafs->finish;
 $sth = $dbh->prepare("SELECT count(*) FROM digte WHERE afsnit=0");
 $sth->execute;
 ($count) = $sth->fetchrow_array;
-print "Antal digte: $count\n";
+&log ("Antal digte: $count");
 $sth->finish;
 
 #
 # Xrefs
 #
 
-print "Building Xrefs...\n";
+&log ("Building Xrefs...");
 Kalliope::Build::Xrefs::build();
+&log ("Done");
 
 #
 # Build hasHenvisninger 
 #
 
 pis:
-print "Detekterer henvisninger...\n";
+&log ("Detekterer henvisninger...");
 Kalliope::Build::Persons::buildHasHenvisninger($dbh);
+&log ("Done");
 
 #
 # Build forbogstaver
 #
 
-print "Building firstletters...\n";
+print "Building firstletters...";
 
 $rc = $dbh->do("drop table if exists forbogstaver");
 $rc = $dbh->do("CREATE TABLE forbogstaver ( 
@@ -486,6 +495,7 @@ sub insertforbogstav {
 	$sthk->execute(substr($f->{'sort'},0,1), $f->{'did'}, $f->{'sprog'},$mode);
     }
 }
+&log ("Done");
 
 #$dbh->disconnect;
 
@@ -493,9 +503,9 @@ sub insertdigt {
     chop($noter);
     chop($under);
     $layouttype = 'prosa' if $v->{'type'} ne 'v' && $layouttype ne 'digt';
-    print "$id er set før!\n" if ++$knownlongdids{$id} > 1;
-    print "$id mangler førstelinie\n" if $firstline eq '' && $layouttype ne 'prosa';
-    print "$id mangler titel\n" if $titel eq '';
+    &log ("$id er set før!") if ++$knownlongdids{$id} > 1;
+    &log ("$id mangler førstelinie") if $firstline eq '' && $layouttype ne 'prosa';
+    &log ("$id mangler titel") if $titel eq '';
     $indhold =~ s/\s+$//;
     $noter =~ s/[\n\s]+$//;
     $indhold =~ s/^\n+//s;
@@ -538,7 +548,7 @@ sub insertkeywordrelation {
 	if ($keywords{$keyword}) {
 	    $sthkeyword->execute($keywords{$keyword},$otherid,$othertype);
 	} else {
-	    print "Nøgleordet '$keyword' i $othertype:$ord er ukendt.\n";
+	    &log("Nøgleordet '$keyword' i $othertype:$ord er ukendt.");
 	}
     }
 }
@@ -565,7 +575,7 @@ $rc = $dbh->do("CREATE TABLE haystack (
 my $sth_hay_ins = $dbh->prepare("INSERT INTO haystack (id,id_class,titel,hay,lang,fid) VALUES (?,?,?,?,?,?)");
 
 # Poems
-print "Inserting poem hay\n";
+&log ("Inserting poem hay");
 my $sth = $dbh->prepare("SELECT did,f.fid,indhold,underoverskrift,titel,sprog FROM digte AS d,fnavne AS f WHERE d.fid = f.fid AND d.afsnit = 0"); 
 $sth->execute;
 while ($h = $sth->fetchrow_hashref) {
@@ -604,3 +614,8 @@ print "Creating FULLTEXT index...\n";
 $dbh->do('CREATE FULLTEXT INDEX haystackidx ON haystack (titel,hay)');
 
 
+sub log {
+   my $text = shift;
+   my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
+   print sprintf("<%02d:%02d:%02d> %s\n",$hour,$min,$sec,$text);
+}
