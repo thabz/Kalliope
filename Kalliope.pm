@@ -136,6 +136,7 @@ sub buildhrefs {
    $$txt =~ s/<a\s+work="(.*?)">/<a href="vaerktoc.pl?vid=$1">/gi;
    $$txt =~ s/<A\s+poem="?([^\s>"]+)"?\s*>/<A HREF="digt.pl?longdid=$1">/gi;
    $$txt =~ s/<A\s+poet="?([^\s>"]+)"?\s*>/<A HREF="ffront.cgi?fhandle=$1">/gi;
+   $$txt =~ s/<A\s+person="?([^\s>"]+)"?\s*>/<A HREF="ffront.cgi?fhandle=$1">/gi;
    $$txt =~ s/<A\s+keyword="?([^\s>"]+)"?\s*>/<A HREF="keyword.cgi?keyword=$1">/gi;
    $$txt =~ s/<A\s+/<A CLASS=green /gi;
    $$txt =~ s/<year>(\d+)<\/year>/<A CLASS="timecontext" TITLE="Vis historisk kontekst for året $1." onClick="return openTimeContext($1)" HREF="javascript:{}">$1<\/A>/gi;
