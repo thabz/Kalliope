@@ -69,7 +69,7 @@ $page->addBox( width => '80%',
 $page->addBox( width => '250',
                coloumn => 2,
                title => 'Noter',
-               theme => 'note',
+               theme => 'dark',
                content => &notes($work) );
 
 if ($work->hasPics) {

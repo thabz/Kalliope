@@ -108,7 +108,7 @@ my @keywords = $poem->keywords;
 if ($poem->notes || $#keywords >= 0) {
     $page->addBox( width => '250',
 	           coloumn => 2,
-		   theme => 'note',
+		   theme => 'dark',
 #                   title => 'Noter',
 	           content => &notes($poem,@keywords) );
 }
