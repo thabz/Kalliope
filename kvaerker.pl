@@ -107,46 +107,26 @@ if ($mode eq 'titel') {
 
 } elsif ($mode eq 'aar') {
     my $HTML;
-    my @liste = ();
-    my ($fhandle,$ffornavn,$fefternavn,$vhandle,$fsdir,@v);
-    open (FNAVNE, "data.$LA/fnavne.txt");
-    while (<FNAVNE>) {
-	chop($_);chop($_);
-	($fhandle,$ffornavn,$fefternavn) = split(/=/);
-	$fsdir = "fdirs/".$fhandle;
-	open (VAERKER,$fsdir."/vaerker.txt") || next;
-	while (<VAERKER>) {
-	    @v=split(/=/,$_);
-	    $vhandle=$v[0];
-	    if (-e $fsdir."/".$vhandle.".txt") {
-		push(@liste,"$v[2]%$v[1]%$vhandle%$fhandle%$ffornavn%$fefternavn%1");
-	    } else { 
-		push(@liste,"$v[2]%$v[1]%$vhandle%$fhandle%$ffornavn%$fefternavn%0");
-	    }
-	}
-	close (VAERKER)
-    }
-    close(FNAVNE);
+
+    my $sth = $dbh->prepare("SELECT v.*,f.fornavn,f.efternavn FROM vaerker AS v, fnavne AS f WHERE f.fid = v.fid AND v.lang = ? AND v.aar != '?' ORDER BY v.aar ASC");
+    $sth->execute($LA);
 
     #Udskriv titler på vaerker
-    my ($last,$last2,$vaerkaar,$vtitel,$exists); 
-    foreach (sort @liste) {
-	($vaerkaar,$vtitel,$vhandle,$fhandle,$ffornavn,$fefternavn,$exists) = split(/%/);
-	if ( ($vaerkaar eq "?") && !($last eq "?")) {
-	    last;
-	}
-	elsif ($vaerkaar-$last >= 10) {
+    my ($last,$last2); 
+    while (my $v = $sth->fetchrow_hashref) {
+        my $vaerkaar = $v->{'aar'};
+	if ($vaerkaar-$last >= 10) {
 	    $last = $vaerkaar - $vaerkaar%10;
 	    $last2 = $last+9;
 	    $HTML .= "<BR><DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR>\n";
 	}
 
-	$HTML .= $vaerkaar.' - <A HREF="fvaerker.pl?fhandle='.$fhandle.'">'.$ffornavn.' '.$fefternavn.'</A>: ';
-	if ($exists == 0) {
-	    $HTML .= "<I>$vtitel</I><BR>";
+	$HTML .= $vaerkaar.' - <A HREF="fvaerker.pl?fhandle='.$$v{fhandle}.'">'.$$v{fornavn}.' '.$$v{efternavn}.'</A>: ';
+	if ($$v{findes} == 0) {
+	    $HTML .= "<I>$$v{titel}</I><BR>";
 	} else {
-	    $HTML .= qq|<A CLASS=green HREF="vaerktoc.pl?fhandle=$fhandle&vhandle=$vhandle">|;
-	    $HTML .= "<I>$vtitel</I></A><BR>";
+	    $HTML .= qq|<A CLASS=green HREF="vaerktoc.pl?fhandle=$$v{fhandle}&vhandle=$$v{vhandle}">|;
+	    $HTML .= "<I>$$v{titel}</I></A><BR>";
 	}
     }
 
