@@ -29,12 +29,19 @@ use Kalliope::Timeline;
 use CGI ();
 use strict;
 
+my @randomPagesTitles = ('Digtarkiv',
+                         'Dlim - dumdlum - dumdumdrum!',
+			 'Det var Fanden gare mig Cecirie!',
+			 'Den totalt fede webstil');
+                          
+my $rnd = int rand($#randomPagesTitles+1);
+
 my $showAllNews = CGI::param('showall') eq 'yes' ? 1 : 0;
 
 my @crumbs = (['Velkommen','']);
 
 my $page = new Kalliope::Page (
-		title => 'Kalliope - Dlim - dumdlum - dumdumdrum!',
+		title => 'Kalliope - '.$randomPagesTitles[$rnd],
                 pagegroup => 'welcome',
 		frontpage => 1,
 		crumbs => \@crumbs,
