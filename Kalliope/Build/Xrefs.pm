@@ -35,17 +35,14 @@ sub build {
     while (my $h = $sth->fetchrow_hashref) {
         my $hay = $h->{'indhold'}.' '.$h->{'noter'};
 	while ($hay =~ s/<A D=([^>]+)>//si) {
-	    print "** $1\n";
 	    $sthins->execute($h->{'longdid'},$1);
 	}
 
 	while ($hay =~ s/<XREF DIGT="([^"]+)">//si) {
-	    print "** $1\n";
 	    $sthins->execute($h->{'longdid'},$1);
 	}
 
 	while ($hay =~ s/<XREF BIBEL="([^"]+)">//si) {
-	    print "** $1\n";
 	    my $gah = $1;
 	    $gah =~ s/,.*$//;
 	    $sthins->execute($h->{'longdid'},$gah);
