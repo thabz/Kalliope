@@ -166,6 +166,14 @@ sub clickableNameGreen {
    return '<A CLASS=green HREF="'.$self->bioURI.'">'.$self->name.'</A>';
 }
 
+sub poemCount {
+    my $self = shift;
+    my $sth = $dbh->prepare("SELECT count(*) FROM digte WHERE fid = ?");
+    $sth->execute($self->fid);
+    my ($count) = $sth->fetchrow_array;
+    return $count;
+}
+
 sub concurrentPersons {
 
 }

@@ -153,7 +153,10 @@ if ($poet->getDetailsAsHTML) {
     $HTML .= '<span style="font-size: 12px">';
     $HTML .= '<b>Navn: </b>'.$poet->name.'<br>';
     $HTML .= $poet->getDetailsAsHTML;
+    $HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>';
+    $HTML .= '<b>Antal digte: </b>'.$poet->poemCount.'<br>';
     $HTML .= '</span>';
+    
     
     $page->addBox( width => '150',
        	           coloumn => 2,
