@@ -43,7 +43,7 @@ my $page = newAuthor Kalliope::Page ( poet => $poet,
 #
 # Biografi ----------------------------------------------
 #
-$page->addBox( printtitle => $poet->name.'s biografi',
+$page->addBox( printtitle => $poet->name.' '.$poet->lifespan,
 	       title => 'Biografi',
                width => '80%',
                coloumn => 1,
