@@ -195,37 +195,47 @@ sub _contentAsPoemHTML {
 	if (   $lineForTjek =~ /[^ _\t\-]/
 		&& $lineForTjek !~ /^ *\d+\.? *$/
 		&& $line !~ /<nonum>/
+		&& $line !~ /<wrap>/
 		&& $lineForTjek !~ /^[ \t]*[IVXLMD]+\.? *$/)
 	{
 	    $num++;
 	} else {
+            # To make <td> not collapse in height.
 	    $line .= '&nbsp;';
 	}
 	my $align = 'left';
+
 	if ($line =~ /<center>/) {
 	    $align = 'center';
 	    $line =~ s/<\/?center>//g;
 	}
-		
-	if ($line =~ /nonum/) {
-	    $line =~ s/<\/?nonum>//gi;
+	$line =~ s/<\/?nonum>//gi;
+
+	if ($lineForTjek =~ /^ *(\-\-\-\-*) *$/) {
+	    my $width = (length $1)*10;
+	    $width = 100 if $width > 100;
+	    $line = qq|<hr noshade size=1 width="$width%" style="border: 1px solid black; color:black">|;
+	    $align = 'center';
 	}
+
 	if (($num % 5 == 0) && $lastNum ne $num) {
 	    $dispNum = $num;
 	    $lastNum = $num;
 	} else {
 	    $dispNum = '';
 	};
+
+	my $wrap = 'nowrap';
+	if ($line =~ /<wrap>/i) {
+	    $wrap = 'normal';
+	    $line =~ s/<\/?wrap>//g;
+	}
+	
+        # Fix indents
 	$line =~ s/^(\s+)/_nbsp($1)/e;
 	
 	$result .= qq|<tr><td style="font-size: 9pt; color: #808080; text-align: left">|.$dispNum.'</td>';
-	if ($line =~ /<wrap>/i) {
-	    $line =~ s/<wrap>//g;
-	    $line =~ s/<\/wrap>//g;
-	    $result .= qq|<td style="text-align: $align">$line </td>\n|;
-	} else {
-	    $result .= qq|<td style="white-space: nowrap; text-align: $align" nowrap>$line </td>\n|;
-	}
+	$result .= qq|<td style="white-space: $wrap; text-align: $align" $wrap>$line </td>\n|;
 	$result .= '</tr>';
     }
     return $result.'</table>';
