@@ -170,7 +170,7 @@ sub poem {
     
     $HTML .= $poem->content($biblemark);
     $HTML =~ s/ - / &mdash; /g;
-    $HTML =~ s/ - / &mdash; /g;
+    $HTML =~ s/^- /&mdash; /gm;
     $HTML =~ s/ -<br>/ &mdash;<br>/gi;
     
     $HTML =~ s/<footmark id="footnote([^"]+)"\/>/<A CLASS="green" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup>$1<\/sup><\/A>/gsi;
