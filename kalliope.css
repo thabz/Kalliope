@@ -200,7 +200,7 @@ A.green:hover {
       color: rgb(139,56,65)
 }
 
-A.blue:link, A.blue:visited, A.blue:active { color: blue}
+A.blue:link, A.blue:visited, A.blue:active { color: rgb(16,102,123)}
 P.hist { text-align: justify }
 
 TD.textboxheader  { 
