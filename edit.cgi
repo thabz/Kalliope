@@ -37,6 +37,10 @@ my $dir = param('dir') || '';
 my $knap = param('knap');
 
 my @crumbs;
+push @crumbs,['Redigér','edit.cgi'];
+push @crumbs,[$dir,"edit.cgi?dir=$dir"] if $dir;
+push @crumbs,[$filename,""] if $filename;
+
 my $HTML;
 
 if ($knap) {
@@ -50,9 +54,7 @@ if ($knap) {
     $HTML = &showRootDir();
 }
 
-#push @crumbs,['Ordbog','dict.cgi'];
 #push @crumbs,[Kalliope::Strings::uc($letter),''] if $letter;
-push @crumbs,[$filename,''];
 
 my $page;
 $page = new Kalliope::Page (
