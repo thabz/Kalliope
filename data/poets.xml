@@ -6174,6 +6174,23 @@
   </period>
 </person>
 
+<person id="pulci" lang="it" type="poet">
+  <name>
+    <firstname>Luigi</firstname>
+    <lastname>Pulci</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1431</date>
+      <place>Firenze</place>
+    </born>
+    <dead>
+      <date>1487</date>
+    </dead>
+  </period>
+  <works>1481</works>
+</person>
+
 <person id="poliziano" lang="it" type="poet">
   <name>
     <firstname>Angelo</firstname>
@@ -6236,22 +6253,6 @@
   </period>
 </person>
 
-<person id="berni" lang="it" type="poet">
-  <name>
-    <firstname>Francesco</firstname>
-    <lastname>Berni</lastname>
-  </name>
-  <period>
-    <born>
-      <date>1497</date>
-      <place>Lamporecchio, Bibbiena</place>
-    </born>
-    <dead>
-      <date>1536</date>
-    </dead>
-  </period>
-</person>
-
 <person id="boiardo" lang="it" type="poet">
   <name>
     <firstname>Matteo Maria</firstname>
@@ -6297,6 +6298,23 @@
     </dead>
   </period>
 </person>
+
+<person id="berni" lang="it" type="poet">
+  <name>
+    <firstname>Francesco</firstname>
+    <lastname>Berni</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1497</date>
+      <place>Lamporecchio, Bibbiena</place>
+    </born>
+    <dead>
+      <date>1536</date>
+    </dead>
+  </period>
+</person>
+
 
 <person id="marino" lang="it" type="poet">
   <name>
