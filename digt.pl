@@ -159,8 +159,8 @@ sub poem {
     $HTML .= '<SPAN CLASS="digtunderoverskrift">'.$poem->subtitle.'</SPAN><BR>' if $poem->subtitleAsHTML;
     $HTML .= '<BR>';
     $HTML .= $poem->content;
-    $HTML =~ s/<footmark id="footnote([^"]+)"\/>/<A CLASS="blue" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup>$1<\/sup><\/A>/gsi;
-    $HTML =~ s/<footmark&nbsp;id="footnote([^"]+)"\/>/<A CLASS="blue" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup><span style="font-size: 9px">$1<\/span><\/sup><\/A>/gsi;
+    $HTML =~ s/<footmark id="footnote([^"]+)"\/>/<A CLASS="green" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup>$1<\/sup><\/A>/gsi;
+    $HTML =~ s/<footmark&nbsp;id="footnote([^"]+)"\/>/<A CLASS="green" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup><span style="font-size: 9px">$1<\/span><\/sup><\/A>/gsi;
     if ($needle) {
 	$needle =~ s/^\s+//;
 	$needle =~ s/\s+$//;
@@ -185,13 +185,14 @@ sub footnotes {
     my $poem = shift;
     my @notes = $poem->footnotes;
     my $i = 1;
-    my $HTML = '<span style="font-size: 12px">';
+    my $HTML = '<TABLE WIDTH="100%">';
     foreach my $note (@notes) {
        Kalliope::buildhrefs(\$note);
-       $HTML .= qq|<A CLASS="blue" NAME="footnotedesc$i" HREF="#footnotemark$i">$i.</A> $note<BR>|;
+       
+       $HTML .= qq|<TR><TD  VALIGN="top"><A STYLE="font-size: 12px" CLASS="green" NAME="footnotedesc$i" HREF="#footnotemark$i">$i.</A></TD><TD STYLE="font-size: 12px">$note</TD></TR>|;
        $i++;
     }
-    $HTML .= '</span>';
+    $HTML .= '</TABLE>';
     return $HTML;
 }
 
@@ -229,7 +230,7 @@ sub tableOfContents {
 	} else {
             $HTML .= '<SPAN CLASS="listeblue">&#149;</SPAN>&nbsp;' if $d->{'titel'};
 	    if ($d->{'longdid'} eq $longdid) {
-		$HTML .= $d->{'titel'} = "<B>".$d->{'titel'}."</B><BR>";
+		$HTML .= $d->{'titel'} = '<span class="blue">'.$d->{'titel'}."</span><BR>";
 	    } else {
 		$HTML .= "<A HREF=\"digt.pl?longdid=".$d->{'longdid'}."\">";
 		$HTML .= $d->{'titel'}."</A><BR>";
