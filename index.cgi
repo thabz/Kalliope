@@ -26,15 +26,14 @@ use Kalliope;
 use Kalliope::Poem;
 use Kalliope::Page;
 use Kalliope::Timeline;
+use Kalliope::Server;
 use CGI ();
 use strict;
 
-my @randomPagesTitles = ('Digtarkiv',
-                         'Dlim - dumdlum - dumdumdrum!',
-			 'Det var Fanden gare mig Cæcirie!',
-			 'Den totalt fede webstil',
-			 'Sexy, men på en subtil måde.');
-                          
+Kalliope::Server::newHit();
+
+my @randomPagesTitles = ('Digtarkiv'); 
+
 my $rnd = int rand($#randomPagesTitles+1);
 
 my $showAllNews = CGI::param('showall') && CGI::param('showall') eq 'yes' ? 1 : 0;
