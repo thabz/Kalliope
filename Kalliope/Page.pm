@@ -473,11 +473,11 @@ sub _navigationSub {
 
 sub notFound {
     my $message = shift;
-    $message = $message || qq|Hovsa! Der gik det galt! Siden kunne ikke findes.<BR><BR>Send en mail til <A HREF="mailto:jesper\@kalliope.org">jesper\@kalliope.org</A> hvis du mener at jeg har lavet en fejl.|;
+    $message = $message || qq|Hovsa! Der gik det galt! Siden kunne ikke findes.<BR><BR>Send en mail til <A HREF="mailto:jesper\@kalliope.org">jesper\@kalliope.org</A>, hvis du mener, at jeg har lavet en fejl.|;
     my $HTML;
     my $picNo = int rand(10) + 1;
     my $page = new Kalliope::Page ('title' => 'Hovsa!');
-    $page->addBox(content => qq|<IMG BORDER=2 SRC="gfx/notfound/$picNo.jpg" ALIGN="center"><BR><BR>$message|);
+    $page->addBox(content => qq|<CENTER><IMG BORDER=2 SRC="gfx/notfound/$picNo.jpg" ALIGN="center"></CENTER><BR><BR>$message|);
     $page->print;
     exit;
 }
