@@ -527,7 +527,8 @@ sub _navigationSub {
             push @itemsHTML, qq|<A CLASS="submenu" HREF="$url"><B>$title</B></A>|;
 	}
     }
-    $HTML = join ' <span class="lifespan">&#149;</span> ',@itemsHTML;
+    $HTML = join ' <span class="lifespan">&bull;</span> ',@itemsHTML;
+    #$HTML = join ' <span class="lifespan">&#149;</span> ',@itemsHTML;
     # Author menu
     if ($self->{'poet'}) {
        $HTML .= $self->{'poet'}->menu($self);

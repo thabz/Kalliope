@@ -303,7 +303,8 @@ sub menu {
                     $item{'title'};
         push @itemsHTML, qq|<A CLASS="submenu" TITLE="$item{desc}" HREF="$url">$title</A>| if $item{status};
     }
-    $HTML = join ' <span class="lifespan">&#149;</span> ',@itemsHTML;
+#$HTML = join ' <span class="lifespan">&#149;</span> ',@itemsHTML;
+    $HTML = join ' <span class="lifespan">&bull;</span> ',@itemsHTML;
     return $HTML;
 }
 

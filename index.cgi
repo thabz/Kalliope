@@ -49,7 +49,7 @@ my $page = new Kalliope::Page (
 		frontpage => 1,
 		nosubmenu => 1,
 		crumbs => \@crumbs,
-		changelangurl => 'poets.cgi?list=az&sprog=XX',
+		changelangurl => 'poets.cgi?list=az&amp;sprog=XX',
            );
 
 $page->addBox (
