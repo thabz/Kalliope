@@ -57,7 +57,7 @@ sub new {
     if ($args{'changelangurl'}) {
         $self->{'changelangurl'} = $args{'changelangurl'};
     } elsif ($self->{'poet'}) {
-	$self->{'changelangurl'} = 'poets.cgi?list=az&sprog=XX';
+	$self->{'changelangurl'} = 'poets.cgi?list=az&amp;sprog=XX';
     } else {
 	$ENV{REQUEST_URI} =~ /([^\/]*)$/;
 	$self->{'changelangurl'} = $1;

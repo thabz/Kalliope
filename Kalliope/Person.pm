@@ -151,7 +151,7 @@ sub clickableTitle {
 }
 
 sub smallIcon {
-     return '<IMG BORDER=0 HEIGHT=32 WIDTH=32 SRC="gfx/icons/poet-h48.gif">';
+     return '<IMG alt="" BORDER=0 HEIGHT=32 WIDTH=32 SRC="gfx/icons/poet-h48.gif">';
 }
 
 sub clickableNameBlack {
@@ -186,7 +186,7 @@ sub getCrumbs {
     if ($self->getType eq 'person') {
 	push @crumbs,['Personer','persons.cgi?list=az'];
     } else {
-	push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$self->lang];
+	push @crumbs,['Digtere','poets.cgi?list=az&amp;sprog='.$self->lang];
     }
     if ($args{'front'}) {
         push @crumbs,[$self->name,''];
@@ -247,11 +247,11 @@ sub menu {
                     title => 'Værker', 
                     desc => "${poetName}s samlede poetiske værker",
                     status => $self->hasWorks },
-       titlelines => { url => 'flines.pl?mode=1&', 
+       titlelines => { url => 'flines.pl?mode=1&amp;', 
                     title => 'Digttitler', 
                     desc => "Vis titler på alle digte",
                     status => $self->hasPoems },
-       firstlines => { url => 'flines.pl?mode=0&', 
+       firstlines => { url => 'flines.pl?mode=0&amp;', 
                     title => 'Førstelinier', 
                     desc => "Vis førstelinier for samtlige digte",
                     status => $self->hasPoems },
@@ -263,7 +263,7 @@ sub menu {
                     title => 'Populære', 
                     desc => "Top-10 over mest læste $poetName digte i Kalliope",
                     status => $self->hasPoems },
-       prosa     => { url => 'fvaerker.pl?mode=prosa&', 
+       prosa     => { url => 'fvaerker.pl?mode=prosa&amp;', 
                     title => 'Prosa', 
 	            desc => qq|${poetName}s prosatekster|,
                     status => $self->{'prosa'} },
