@@ -181,8 +181,12 @@ sub _contentAsPoemHTML {
     my $lastNum = 0;
     foreach my $line (split /\n/,$self->{'indhold'}) {
 	$line =~ s/^(\s+)/_nbsp($1)/e;
-	if (   $line =~ /[^ ]/
-		&& !($line =~ /^ *\d+\.? *$/)) 
+	my $lineForTjek = $line;
+	$lineForTjek =~ s/<[^>]+>//g;
+	if (   $lineForTjek =~ /[^ ]/
+		&& $lineForTjek !~ /^ *\d+\.? *$/
+		&& $line !~ /<nonum>/
+		&& $lineForTjek !~ /^ *[IVXLMD]+\.? *$/)
 	{
 	    $num++;
 	} else {
