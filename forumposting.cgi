@@ -25,6 +25,7 @@ use Kalliope::Page::Popup;
 use Kalliope::Forum::Post;
 use Kalliope::Forum;
 use Kalliope::Tree;
+use Kalliope::Date;
 use CGI qw(:standard);
 use strict;
 
@@ -57,7 +58,7 @@ my $from = $post->from;
 $from = $email ? qq|<A HREF="mailto:$email">$from</A>| : $from;
 $HTML .= '<TR><TH CLASS="forumheads" ALIGN="right">Fra:</TH><TD CLASS="forumheads" WIDTH="100%">'.$from.'</TD></TR>';
 $HTML .= '<TR><TH  CLASS="forumheads" ALIGN="right">Emne:</TH><TD  CLASS="forumheads"WIDTH="100%">'.$post->subject.'</TD></TR>';
-$HTML .= '<TR><TH  CLASS="forumheads" ALIGN="right">Dato:</TH><TD  CLASS="forumheads"WIDHT="100%">'.$post->dateForDisplay.'</TD></TR>';
+$HTML .= '<TR><TH  CLASS="forumheads" ALIGN="right">Dato:</TH><TD  CLASS="forumheads"WIDHT="100%">'.Kalliope::Date::veryLongDate($post->date).'</TD></TR>';
 $HTML .= '</TABLE>';
 
 $page->addBox (width => '90%',
