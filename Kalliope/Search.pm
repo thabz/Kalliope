@@ -97,6 +97,8 @@ sub getHTML {
     my $self = shift;
 
     my $hits = $self->count;
+    print STDERR "Hits: $hits\n";
+    return 'Søgningen gav intet resultat.' unless $hits;
     my $firstNumShowing = $self->firstNumShowing;
     my $lastNumShowing = $self->lastNumShowing;
     my @matches = $self->result;
@@ -133,22 +135,18 @@ sub getHTML {
 	    }
 	}
     }
-
-    unless ($hits) {
-	$HTML = 'Søgningen gav intet resultat.';
-    }
-
     return $HTML;
 }
 
 sub count {
     my $self = shift;
-    open(FILE,"swish-search -f index/".$self->lang.".index -w ".$self->needleToUse."|");
+    open(FILE,"swish-search -f index/swish.index -w ".$self->needleToUse."|");
     my $hits = 0;
     while (my $line = <FILE>) {
 	next unless $line;
 	last if $line =~ /^\./;
 	next if $line =~ /^#/;
+	last if $line =~ /^err:/;
 	$hits++;
     }
     close(FILE);
@@ -158,12 +156,13 @@ sub count {
 sub result {
     my $self = shift;
     my @matches;
-    open(FILE,"swish-search -f index/".$self->lang.".index -w ".$self->needleToUse."|");
+    open(FILE,"swish-search -f index/swish.index -w ".$self->needleToUse."|");
     my $i = -1;
     my $c = 0;
     while (my $line = <FILE>) {
 	next if $line =~ /^#/;
 	last if $line =~ /^\./;
+	last if $line =~ /^err:/;
 	$i++;
 	next if $i < $self->firstNumShowing;
 	my ($quality,$id) = split / /,$line;
