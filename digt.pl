@@ -64,6 +64,7 @@ push @crumbs,[$work->titleWithYear,'vaerktoc.pl?fhandle='.$poet->fhandle.'&vhand
 push @crumbs,[$poem->title,'digt.pl?longdid='.$poem->longdid];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
+				      printer => url_param('printer') || 0,
                                       page => 'vaerker',
 				      extrawindowtitle => $poem->title,
                                       crumbs => \@crumbs);
@@ -100,13 +101,17 @@ if (defined param('newkeywords')) {
 
 $page->addBox( width => $poem->isProse ? '' : '10',
 	       coloumn => 1,
-               align => $poem->isProse ? 'justify' : 'left',
+	       align => $poem->isProse ? 'justify' : 'left',
+	       printer => 1,
+	       end => qq|<a title="Udskriftsvenlig udgave" href="digt.pl?longdid=$longdid&printer=1"><img src="gfx/print.gif" border=0></a>|,
 	       content => &poem($poem,$needle,$biblemark) );
 
 my @keywords = $poem->keywords;
 
 if ($poem->notes || $#keywords >= 0) {
     $page->addBox( width => '250',
+	           printer => 1,
+		   printtitle => 'Noter',
 	           coloumn => 2,
 		   theme => 'dark',
 #                   title => 'Noter',
@@ -117,6 +122,7 @@ if ($poem->notes || $#keywords >= 0) {
 if ($poem->footnotes) { 
     $page->addBox( width => '250',
 	           coloumn => 2,
+	           printer => 1,
 		   theme => 'dark',
                    title => 'Fodnoter',
 	           content => &footnotes($poem) );
