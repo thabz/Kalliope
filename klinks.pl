@@ -53,6 +53,4 @@ close(FILE2);
 print "</TD></TR></TABLE>";
 print "</td></tr></table>";
 
-do 'aboutrightmenu.pl';
-
 &kfooterHTML;

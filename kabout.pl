@@ -22,7 +22,7 @@
 
 use CGI qw /:standard/;
 $mycgi = new CGI;
-#Udskriver about.html filen
+
 
 do 'kstdhead.pl';
 
@@ -53,10 +53,4 @@ if ($abouttext =~ /\.\./ || !(-e "data.dk/$abouttext")) {
 }
 endbox();
 
-# Næste kolonne
-do 'aboutrightmenu.pl';
-
 &kfooterHTML;
-
-
-

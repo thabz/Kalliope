@@ -122,8 +122,5 @@ print "Skriv i gæstebogen.";
 print "<A/></CENTER>";
 endbox();
 
-
-do 'aboutrightmenu.pl';
-
 &kfooterHTML;
 

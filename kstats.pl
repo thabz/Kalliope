@@ -229,9 +229,6 @@ elsif ($valg == 5) {
 
 endbox();
 
-#do 'aboutrightmenu.pl';
-
-
 &kfooterHTML;
 
 

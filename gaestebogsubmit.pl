@@ -61,6 +61,4 @@ if (($FORM{'navn'} eq '') || ($FORM{'thetext'} eq ''))  {
     close (FILE);
 }
 
-do 'aboutrightmenu.pl';
-
 &kfooterHTML;

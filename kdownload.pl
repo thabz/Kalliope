@@ -76,9 +76,6 @@ EOT
 print "</TD></TR></TABLE>";
 print "</td></tr></table>";
 
-# Næste kolonne
-do 'aboutrightmenu.pl';
-
 &kfooterHTML;
 
 # Tager et tal og smider antal megs tilbage med en decimal.
