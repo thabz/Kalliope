@@ -72,7 +72,8 @@ my $work = $poem->work;
 print '<TABLE ALIGN=center><TR><TD width="100%" VALIGN=top>';
 
 #Begynd kasse til selve digtet.
-beginwhitebox();
+my $align = $poem->isProse ? 'justify' : 'left';
+beginwhitebox('','',$align);
 print '<SPAN CLASS="digtoverskrift"><I>'.$poem->title."</I></SPAN><BR>";
 print '<SPAN CLASS="digtunderoverskrift">'.$poem->subtitle.'</SPAN><BR>' if $poem->subtitle;
 print '<BR>';
