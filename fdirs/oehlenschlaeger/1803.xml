@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/work.xsl"?>
 <book>
 <head>
 <title>Digte</title>
    <date>1803</date>
-   <notes>Bidrag fra Brian Bentzen. Kilde er Adam Oehlenschläger: <i>Digte</i>, udgivet og kommenteret af Povl Ingerslev-Jensen, Oehlenschläger Selskabet, 1979.   </notes>
-   <notes>Rettelser af Sven Sørensen.</notes>
+   <note>Bidrag fra Brian Bentzen. Kilde er Adam Oehlenschläger: <i>Digte</i>, udgivet og kommenteret af Povl Ingerslev-Jensen, Oehlenschläger Selskabet, 1979.   </note>
+   <note>Rettelser af Sven Sørensen.</note>
 </head>
+
 <content>
 <poem id="oehlen2001052901">
    <title>Forerindring</title>
@@ -461,6 +463,7 @@ som minder om Oldtidens slukte Luer.
 
 <poem id="oehlenschlaeger2001052802">
    <title>Sivald og Thora</title>
+   <toc-title>Sivald og Thora*</toc-title>
    <firstline>Fra Thoras ömme elskovsfulde Bryst</firstline>
 <content>
 Fra Thoras ömme elskovsfulde Bryst
@@ -1057,6 +1060,7 @@ Man saae ham aldrig meer.
 
 <poem id="oehlenschlaeger2001052903">
    <title>Kongen i Leire</title>
+   <toc-title>Kongen i Leire*</toc-title>
    <subtitle>Efter Göthe</subtitle>
    <firstline>Der var en Konning i Leire</firstline>
 <content>
@@ -3147,6 +3151,7 @@ da skal jeg tolke hvad nu kun jeg skuer!
 
 <poem id="oehlenschlaeger2001052911">
    <title>Den Forladte</title>
+   <toc-title>Den Forladte*</toc-title>
    <firstline>Naar Solen röd og langsom daler</firstline>
 <content>
 Naar Solen röd og langsom daler
@@ -3351,6 +3356,7 @@ Hvad tryller mig Livet saa södt som hun?
 
 <poem id="oehlenschlaeger2001052915">
    <title>Wilhelm og Blomsterne</title>
+   <toc-title>Wilhelm og Blomsterne*</toc-title>
    <firstline>God Morgen I Skiönne!</firstline>
 <content>
 WILHELM
@@ -3697,6 +3703,7 @@ som her mig holde.
 
 <poem id="oehlenschlaeger2001052919">
    <title>Til Apol</title>
+   <toc-title>Til Apol*</toc-title>
    <firstline>Du lange, laurbærkrandste Dreng!</firstline>
 <content>
 Du lange, laurbærkrandste Dreng!
@@ -4336,6 +4343,7 @@ Fred være med Eder Halleluja!
 
 <poem id="oehlenschlaeger2001053002">
    <title>Den elskende Bondeknös</title>
+   <toc-title>Den elskende Bondeknös*</toc-title>
    <firstline>För var jeg saa froe</firstline>
 <content>
 För var jeg saa froe,
@@ -4560,6 +4568,7 @@ den glade Jordens Drot!
 
 <poem id="oehlenschlaeger2001053004">
    <title>Hædersqvad</title>
+   <toc-title>Hædersqvad*</toc-title>
    <subtitle>Til en gammel Skiald</subtitle>
    <firstline>Vildt skingre vor Röst over breden Bord</firstline>
 <content>
@@ -4637,6 +4646,7 @@ skal drikke Herr Clemenz til Gammen!
 
 <poem id="oehlenschlaeger2001053005">
    <title>Aarstiderne</title>
+   <toc-title>Aarstiderne*</toc-title>
    <firstline>Du aldrig vil elske? Til Stella jeg taled</firstline>
 <content>
 Du aldrig vil elske? Til Stella jeg taled,

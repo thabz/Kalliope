@@ -1,0 +1,35 @@
+
+body {
+    background: #a0a0f0 url('../gfx/pap.gif');
+    margin: 0px;
+    padding: 40px;
+}
+
+div.poem {
+    background: url('../gfx/lightpap.gif');
+    width: 50%;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+}
+
+pre.poem {
+    font-family: Georgia,Times;
+}
+
+div.note {
+    background: url('../gfx/notepap.jpg');
+    width: 30%;
+    border: 1px solid black; 
+    margin: 5px;
+    padding: 10px;
+}
+
+h2 {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+a.black:link, a.black:visited, a.black:active { text-decoration: none; color: black }
+
