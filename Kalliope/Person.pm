@@ -209,7 +209,7 @@ sub menu {
                     status => $self->{'links'} },
        primaer   => { url => 'fsekundaer.pl?mode=p&', 
                     title => 'Primær', 
-		    status => $self->{'sekundaer'} },
+		    status => $self->{'primaer'} },
        sekundaer => { url => 'fsekundaer.pl?mode=s&', 
                     title => 'Sekundær', 
 		    status => $self->{'sekundaer'} } );
