@@ -62,7 +62,7 @@ $page->addBox( width => '80%',
 
 if (CGI::param('needle') =~ /^prut/) {
     my ($antal) = CGI::param('needle') =~ /^prut(\d+)/;
-    $antal = $antal > 0 ? $antal : 3;
+    $antal = $antal > 0 ? $antal : 10;
     $page->addHTML(&getEasterJS(int $antal));
 }
 
@@ -74,7 +74,8 @@ sub getEasterJS {
 return <<"EOF";
 <SCRIPT>
 for (i=1;i<=$NUM;i++) {
-   document.write('<DIV ID=div'+i+' STYLE="position:absolute"><IMG SRC="gfx/icons/poet-w256.gif"></DIV>');
+   icon = i & 1 ? 'poet-w64.gif' : 'works-w64.gif';
+   document.write('<DIV ID=div'+i+' STYLE="position:absolute"><IMG SRC="gfx/icons/'+icon+'"></DIV>');
 
 }
 
