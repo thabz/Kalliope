@@ -147,7 +147,7 @@ my $workTitle = $work->titleWithYear;
 $page->addBox( width => '250',
 	       coloumn => 2,
 	       theme => 'dark',
-	       content =>  &moreLinks($poem));
+	       content =>  &moreLinks($poem,$work));
 
 $page->addBox( width => '250',
 	       coloumn => 2,
@@ -161,11 +161,21 @@ $page->print;
 #
 
 sub moreLinks {
-    my $poem = shift;
+    my ($poem,$work) = @_;
     my $longdid = $poem->longdid;
     my $HTML = '';
     $HTML .= qq|<a class="more" href="digt.pl?longdid=$longdid&printer=1">Vis printudgave...</a><br>|;
-    $HTML .= qq|<a class="more" onClick="window.open('korrektur.cgi?longdid=$longdid','Korrekturpopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=330'); return false" href="javascript:{}">Send en rettelse...</a>|;
+    $HTML .= qq|<a class="more" onClick="window.open('korrektur.cgi?longdid=$longdid','Korrekturpopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=330'); return false" href="javascript:{}">Send en rettelse...</a><br>|;
+
+    my $nextPoem = $work->getNextPoem($longdid);
+    my $prevPoem = $work->getPrevPoem($longdid);
+    if ($nextPoem) {
+        $HTML .= qq|<a class="more" href="digt.pl?longdid=$nextPoem">Næste tekst...</a><br>|;
+    }
+    if ($prevPoem) {
+        $HTML .= qq|<a class="more" href="digt.pl?longdid=$prevPoem">Forrige tekst...</a><br>|;
+    }
+
     return $HTML;
 }
 

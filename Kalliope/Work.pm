@@ -198,4 +198,47 @@ sub getSearchResultEntry {
     return $HTML;
 }
 
+sub _allPoemIds {
+    my $self = shift;
+    my $sth = $dbh->prepare("SELECT afsnit,longdid FROM digte WHERE vid = ? ORDER BY vaerkpos ASC");
+    $sth->execute($self->vid);
+    my @list;
+    while (my $h = $sth->fetchrow_hashref) {
+	next if $h->{'afsnit'} > 0;
+	push @list,$h->{'longdid'};
+    }
+    return @list;
+}
+
+sub getNextPoem {
+    my ($self,$longdid) = @_;
+    my @list = $self->_allPoemIds;
+    my $index = _indexOf($longdid,@list);
+    if ($index < $#list) {
+	return $list[$index+1];
+    } else {
+	return undef;
+    }
+}
+
+sub getPrevPoem {
+    my ($self,$longdid) = @_;
+    my @list = $self->_allPoemIds;
+    my $index = _indexOf($longdid,@list);
+    if ($index > 0) {
+	return $list[$index-1];
+    } else {
+	return undef;
+    }
+}
+
+sub _indexOf {
+    my ($item,@list) = @_;
+    my $index;
+    for (my $i = 0; $i<=$#list; $i++) {
+	$index = $i if $list[$i] eq $item;
+    }
+    return $index;
+}
+
 1;
