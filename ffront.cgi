@@ -111,23 +111,24 @@ my %menuStruct = (
 
 my @keys = qw/vaerker titlelines firstlines popular prosa pics bio samtidige links sekundaer/;
 
-my @activeItems = grep {$_->{status} } map {$menuStruct{$_} } (keys %menuStruct);
+my @activeItems = grep { $_->{status} } (values %menuStruct);
 my $itemsNum = $#activeItems+1;
 
 $HTML = '<TABLE WIDTH="100%"><TR><TD CLASS="ffront" VALIGN="top" WIDTH="50%">';
+$HTML .= '<TABLE CELLPADDING=2 CELLSPACING=0>';
 
 my $i = 0;
 foreach my $key (@keys) {
     my %item = %{$menuStruct{$key}};
     my $url = $item{url}.'fhandle='.$poet->fhandle;
     if ($item{status}) {
-	$HTML .= qq|<TABLE CELLPADDING=2 CELLSPACING=0><TR><TD VALIGN="top" ROWSPAN=2><IMG HEIGHT=48 BORDER=0 SRC="$item{icon}" ALT="*"></TD>|;
+	$HTML .= qq|<TR><TD VALIGN="top" ROWSPAN=2><IMG HEIGHT=48 BORDER=0 SRC="$item{icon}" ALT="*"></TD>|;
 	$HTML .= qq|<TD CLASS="ffronttitle"><A HREF="$url">$item{title}</A><TD></TR>|;
-        $HTML .= qq|<TR><TD CLASS="ffrontdesc">$item{desc}</TD></TR></TABLE>|;
-	$HTML .= '</TD><TD CLASS="ffront" VALIGN="top" WIDTH="50%">' if (++$i == int $itemsNum/2);
+        $HTML .= qq|<TR><TD VALIGN="top" CLASS="ffrontdesc">$item{desc}</TD></TR>|;
+	$HTML .= '</TABLE></TD><TD CLASS="ffront" VALIGN="top" WIDTH="50%"><TABLE CELLPADDING=2 CELLSPACING=0>' if (++$i == int $itemsNum/2);
     }
 }
-$HTML .= '</TD></TR></TABLE>';
+$HTML .= '</TABLE></TD></TR></TABLE>';
 
 $page->addBox( width => '80%',
 	coloumn => 1,
