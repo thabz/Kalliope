@@ -82,7 +82,7 @@ sub listaz {
 	    $bi++;
 	    $blocks[$bi]->{'head'} = "<DIV CLASS=listeoverskrifter>$new</DIV><BR>";
 	}
-	$blocks[$bi]->{'body'} .= '<A HREF="fvaerker.pl?'.$f->{'fhandle'}.'?'.$LA.'">'.$f->{'efternavn'}.", ".$f->{'fornavn'}.' <FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></A><BR>';
+	$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.", ".$f->{'fornavn'}.' <FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></A><BR>';
 	$blocks[$bi]->{'count'}++;
     }
 
@@ -93,7 +93,7 @@ sub listaz {
     if ($sth->rows) {
 	$blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">Ukendt digter</DIV><BR>|;
 	while ($f = $sth->fetchrow_hashref) {
-	    $blocks[$bi]->{'body'} .= '<A HREF="fvaerker.pl?'.$f->{'fhandle'}.'?'.$LA.'">'.$f->{'fornavn'}.'</A><BR>';
+	    $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'fornavn'}.'</A><BR>';
 	    $blocks[$bi]->{'count'}++;
 	}
     }
@@ -130,7 +130,7 @@ sub list19 {
 	    $HTML .= "<BR><DIV CLASS=listeoverskrifter>Ukendt fødeår</DIV><BR>\n";
 	    $notfirstukendt=1;
 	}
-	$HTML .= "<A HREF=\"fvaerker.pl?".$f[3]."?$LA\">";
+	$HTML .= "<A HREF=\"ffront.cgi?fhandle=".$f[3].'">';
 	$HTML .= $f[2]." ".$f[1].' <FONT COLOR="#808080">('.$f[0]."-".$f[4].")</FONT></A><BR>";
      }
 
@@ -140,7 +140,7 @@ sub list19 {
      if ($sth->rows) {
          $HTML .= "<BR><DIV CLASS=listeoverskrifter>Ukendt digter</DIV><BR>";
          while (my $f = $sth->fetchrow_hashref) {
-             $HTML .= '<A HREF="fvaerker.pl?'.$f->{'fhandle'}.'?'.$LA.'">';
+             $HTML .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">';
              $HTML .= $f->{'fornavn'}.'</A><BR>';
          }
      }
