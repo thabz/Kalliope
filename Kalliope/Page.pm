@@ -143,22 +143,25 @@ sub print {
 <META name="description" content="Stort arkiv for ældre digtning">
 <META name="keywords" content="digte, lyrik, litteratur, litteraturhistorie, digtere, digtarkiv, etext, e-text, elektronisk tekst, kalliope, kalliope.org, www.kalliope.org">
 </HEAD>
-<BODY LINK="#000000" VLINK="#000000" ALINK="#000000">
+<BODY LINK="#000000" VLINK="#000000" ALINK="#000000" LEFTMARGIN=0 TOPMARGIN=0 MARGINHEIGHT=0 MARGINWIDTH=0>
 
 EOF
     print '<DIV STYLE="background-color: #e0e0e0; padding: 1px">';
     print $self->_constructBreadcrumbs;
     print '</DIV>';
     print '<DIV HEIGHT=100 CLASS="nav"><TABLE WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
-    print '<TD CLASS="navigation"><IMG SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1>';
+    print '<TD CLASS="navigation">';
     print $self->_navigationMain.'</TD>';
+    print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1></TD>';
 
     print '<TD ROWSPAN=3 VALIGN="top">'.$self->thumbIMG.'</TD></TR>';
     
-    print '<TR><TD WIDTH="100%" CLASS="maintitle"><IMG SRC="gfx/trans1x1.gif" HEIGHT=36 WIDTH=1>'.$self->titleAsHTML.'</TD></TR>';
-
-    print '<TR><TD CLASS="navigation"><IMG SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1>'.$self->_navigationSub.'</TD></TR>';
-    print '</TABLE>';
+    print '<TR><TD WIDTH="100%" CLASS="maintitle">'.$self->titleAsHTML.'</TD>';
+    print '<TD CLASS="maintitle"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=36 WIDTH=1></TD>';
+    print '</TR>';
+    print '<TR><TD CLASS="navigation">'.$self->_navigationSub.'</TD>';
+    print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1></TD>';
+    print '</TR></TABLE>';
     print '</DIV>';
     print '<DIV CLASS="body">';
     print '<TABLE WIDTH="100%"><TR>';

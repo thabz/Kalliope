@@ -178,6 +178,7 @@ span.digtunderoverskrift {
 }
 
 td.maintitle {
+    vertical-align: middle;
     background-color: rgb(79,112,153);
     font-size: 24px;
     font-weight: bold;
@@ -186,6 +187,7 @@ td.maintitle {
 }
 
 td.navigation {
+    vertical-align: middle;
     font-size: 12px;
     color: black;
     font-family: Arial, Helvetica;
