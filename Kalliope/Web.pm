@@ -35,7 +35,7 @@ sub doubleColumn {
     map { $_->{'count'} += 3 } @blocks;
     map { $total += $_->{'count'} } grep {$_->{'count'}} @blocks;
 
-    my ($left,$right);
+    my ($left,$right) = (0,0);
     my $minI;
     my $minDiff = $total;
     for ($i = 0; $i <= $#blocks; $i++) {
@@ -61,7 +61,7 @@ sub doubleColumn {
 	    $HTML .= '<DIV STYLE="padding: 10px">';
 	}
         $subtotal += $b->{'count'};
-	$HTML .= $b->{'head'};
+	$HTML .= $b->{'head'} || '';
 	$HTML .= $b->{'body'}."<BR>";
 	$i++;
     }
