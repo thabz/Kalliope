@@ -68,7 +68,6 @@ sub _insertGroup {
 	my $linktitle = $head->first_child('linktitle') ? $head->first_child('linktitle')->text : undef;
 	my $toctitle = $head->first_child('toctitle') ? $head->first_child('toctitle')->sprint(1): undef;
 	my $toptitle = $head->first_child('title') ? $head->first_child('title')->text : undef;
-	$linktitle = $toptitle;
 	my $indextitle = $head->first_child('indextitle') ? $head->first_child('indextitle')->text : undef;
 	my $quality = $head->first_child('quality') ? $head->first_child('quality')->text : undef;
 	my $longdid = $node->id;
@@ -110,6 +109,9 @@ sub _insertGroup {
 	    }
 	    if (!$toctitle) {
 		$toctitle = $toptitle;
+	    }
+	    if (!$linktitle) {
+		$linktitle = $toptitle;
 	    }
 	    
 	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,$firstline,$body->xml_string,$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid),$quality);
