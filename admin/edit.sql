@@ -7,7 +7,7 @@
 #
 # Table structure for table 'editpages'
 #
-DROP TABLE IF EXISTS edipages;
+DROP TABLE IF EXISTS editpages;
 CREATE TABLE editpages (
 	filename varchar(128) NOT NULL,
 	dir varchar(128) NOT NULL,
