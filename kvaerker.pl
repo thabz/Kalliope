@@ -177,7 +177,7 @@ if ($mode eq 'titel') {
 		if ($v->{'hascontent'} eq 'no') {
 		    $html .= "<I>".$v->{'titel'}."</I> $aar, ";
 		} else {
-		    $html .='<A CLASS=green HREF="vaerktoc.pl?vid='.$f->{'vid'}.'">';
+		    $html .='<A CLASS=green HREF="vaerktoc.pl?vid='.$v->{'vid'}.'">';
 		    $html .= "<I>".$v->{'titel'}."</I> $aar</A>, ";
 		}
 	    }
