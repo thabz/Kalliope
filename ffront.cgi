@@ -90,7 +90,7 @@ my %menuStruct = (
         icon => 'gfx/poet_40.GIF'
                     },
 	samtidige => { url => 'samtidige.cgi?', 
-	title => 'Samtidige', 
+	title => 'Samtid', 
 	status => 1,
         desc => qq|Digtere som udgav værker i ${poetName}s levetid|,
         icon => 'gfx/poet_40.GIF'

@@ -24,6 +24,7 @@ use Kalliope;
 use CGI (':standard');
 use Kalliope::Person;
 use Kalliope::Page;
+use Kalliope::Timeline;
 use strict;
 
 my $dbh = Kalliope::DB->connect;
@@ -38,7 +39,7 @@ my $poet = new Kalliope::Person(fhandle => $fhandle);
 my @crumbs;
 push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
-push @crumbs,['Samtidige',''];
+push @crumbs,['Samtid',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
                                       page => 'samtidige',
@@ -67,11 +68,36 @@ if ($antal) {
     $HTML .= '</TABLE>';
     $HTML .= '</TD></TR></TABLE>';
     $HTML .= '<BR><SMALL><I>Oversigt over digtere som udgav værker i '.$poet->name.'s levetid.</I></SMALL>';
-    $page->addBox( title => 'Samtidige',
+    $page->addBox( title => 'Samtidige digtere',
 	    width => '80%',
             coloumn => 1,
 	    content => $HTML );
 
+}
+
+my @events = Kalliope::Timeline::getHistoryInTimeSpan($poet->yearBorn,$poet->yearDead);
+
+if ($#events > 0) {
+    my $antal = $#events + 1;
+    my $i = 0;
+    my $HTML = '<TABLE><TR><TD VALIGN="top">';
+
+    $HTML .= '<TABLE>';
+    my $last;
+    foreach my $e (sort { $a->{'year'} <=> $b->{'year'} } @events) {
+        my $yearForDisplay = $last != $$e{year} ? $$e{year} : '';
+        
+	$HTML .= qq|<TR><TD CLASS="blue" VALIGN="top">$yearForDisplay&nbsp;</TD>|;
+	$HTML .= '<TD VALIGN="top">'.$$e{descr}."</TD></TR>";
+	$HTML .= '</TABLE></TD><TD VALIGN="top"><TABLE>' if ++$i == int ($antal / 2);
+	$last = $$e{year};
+    }
+    $HTML .= '</TABLE></TD></TR></TABLE>';
+    Kalliope::buildhrefs(\$HTML);
+    $page->addBox( title => 'Historiske begivenheder',
+	    width => '80%',
+	    coloumn => 1,
+	    content => $HTML);
 }
 
 $page->print;

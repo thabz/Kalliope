@@ -2,6 +2,10 @@ A.timecontext:link, A.timecontext:visited, A.timecontext:active { text-decoratio
 A.timecontext:hover { border-bottom: 1px solid #f040f0}
 
 
+.blue {
+    color: rgb(16,102,123);
+}
+
 span.newsdate {
     font-family: Arial, Helvetica;
     font-weight: bold;

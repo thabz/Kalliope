@@ -194,7 +194,7 @@ sub menu {
                     title => 'Biografi', 
                     status => $self->{'bio'} },
        samtidige => { url => 'samtidige.cgi?', 
-                    title => 'Samtidige', 
+                    title => 'Samtid', 
                     status => 1 },
        links     => { url => 'flinks.pl?', 
                     title => 'Links', 
