@@ -203,45 +203,59 @@ sub proseWorks {
 sub menu {
     my $self = shift;
     my $page = shift;
+    my $poetName = $self->name;
     my %menuStruct = (
        forside => { url => 'ffront.cgi?', 
                     title => 'Forside', 
+                    desc => "Tilbage til forsiden for $poetName",
                     status => 1 },
        vaerker => { url => 'fvaerker.pl?', 
                     title => 'Værker', 
+                    desc => "${poetName}s samlede poetiske værker",
                     status => $self->hasWorks },
        titlelines => { url => 'flines.pl?mode=1&', 
                     title => 'Digttitler', 
+                    desc => "Vis titler på alle digte",
                     status => $self->hasPoems },
        firstlines => { url => 'flines.pl?mode=0&', 
                     title => 'Førstelinier', 
+                    desc => "Vis førstelinier for samtlige digte",
                     status => $self->hasPoems },
        popular => { url => 'fpop.pl?', 
                     title => 'Populære', 
+                    desc => "Top-10 over mest læste $poetName digte i Kalliope",
                     status => $self->hasPoems },
        prosa     => { url => 'fvaerker.pl?mode=prosa&', 
                     title => 'Prosa', 
+	            desc => qq|${poetName}s prosatekster|,
                     status => $self->{'prosa'} },
        pics      => { url => 'fpics.pl?', 
                     title => 'Portrætter', 
+                    desc => "Portrætgalleri for $poetName",
                     status => $self->{'pics'} },
        bio       => { url => 'biografi.cgi?', 
                     title => 'Biografi', 
+                    desc => qq|En kortfattet introduktion til ${poetName}s liv og værk|,
                     status => $self->hasBio },
        samtidige => { url => 'samtidige.cgi?', 
                     title => 'Samtid', 
+                    desc => qq|Digtere som udgav værker i ${poetName}s levetid|,
                     status => !$self->isUnknownPoet},
        henvisninger => { url => 'henvisninger.cgi?', 
                     title => 'Henvisninger', 
+                    desc => 'Oversigt over tekster som henviser til '.$poetName.'s tekster.',
                     status => 1 },
        links     => { url => 'flinks.pl?', 
                     title => 'Links', 
+                    desc => 'Henvisninger til andre steder på internettet, som har relevant information om '.$poetName,
                     status => $self->{'links'} },
        primaer   => { url => 'fsekundaer.pl?mode=p&', 
                     title => 'Primær', 
+                    desc => 'Henvisninger til '.$poetName.'s primærlitteratur',
 		    status => $self->{'primaer'} },
        sekundaer => { url => 'fsekundaer.pl?mode=s&', 
                     title => 'Sekundær', 
+                    desc => 'Henvisninger til sekundærlitteratur om '.$poetName,
 		    status => $self->{'sekundaer'} } );
     my @keys = qw/forside vaerker titlelines firstlines popular prosa pics bio samtidige henvisninger links primaer sekundaer/;
     my $HTML;
@@ -249,11 +263,10 @@ sub menu {
     foreach my $key (@keys) {
         my %item = %{$menuStruct{$key}};
         my $url = $item{url}.'fhandle='.$self->fhandle;
-	if ($key eq $page->{'page'}) {
-	    push @itemsHTML, qq|<A CLASS="white" HREF="$url"><b>$item{title}</b></A>| if $item{status};
-	} else {
-	    push @itemsHTML, qq|<A CLASS="white" HREF="$url">$item{title}</A>| if $item{status};
-	}
+        my $title = $key eq $page->{'page'} ?
+                    '<b>'.$item{'title'}.'</b>' :
+                    $item{'title'};
+        push @itemsHTML, qq|<A CLASS="white" TITLE="$item{desc}" HREF="$url"><b>$title</b></A>| if $item{status};
     }
     $HTML = join ' <span class="lifespan">&#149;</span> ',@itemsHTML;
     return $HTML;
