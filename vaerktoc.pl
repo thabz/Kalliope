@@ -62,7 +62,7 @@ $page->addBox( width => '80%',
                coloumn => 1,
                title => 'Indhold',
                content => &tableOfContent($work),
-               end => qq|<A TITLE="Tilbage til oversigten over værker" HREF="fvaerker.pl?fhandle=$fhandle"><IMG VALIGN=center ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 ALT="Tilbage til oversigten over værker"></A>|
+               end => qq|<A TITLE="Tilbage til oversigten over værker" HREF="fvaerker.pl?fhandle=$fhandle"><IMG ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 ALT="Tilbage til oversigten over værker"></A>|
               );
 
 if ($work->notes) {
@@ -157,7 +157,7 @@ sub tableOfContent {
     return 'Kalliope indeholder endnu ingen tekster fra dette værk.' unless $sth->rows;
     while(my $d = $sth->fetchrow_hashref) {
 	if ($d->{'afsnit'} && !($d->{'titel'} =~ /^\s*$/)) {
-	    $HTML .= "<BR><FONT SIZE=+1><I>".$d->{'titel'}."</I></FONT><BR>\n";
+	    $HTML .= '<BR><FONT SIZE="+1"><I>'.$d->{'titel'}."</I></FONT><BR>\n";
 	} else {
 	    $HTML .= "&nbsp;" x 4;
 	    $HTML .= "<A HREF=\"digt.pl?longdid=".$d->{'longdid'}.'">';
