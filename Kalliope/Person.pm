@@ -261,7 +261,7 @@ sub menu {
        samtidige => { url => 'samtidige.cgi?', 
                     title => 'Samtid', 
                     desc => qq|Digtere som udgav værker i ${poetName}s levetid|,
-                    status => !$self->isUnknownPoet},
+                    status => !$self->isUnknownPoet && $self->yearBorn ne '?'},
        henvisninger => { url => 'henvisninger.cgi?', 
                     title => 'Henvisninger', 
                     desc => 'Oversigt over tekster, som henviser til '.$poetName.'s tekster.',

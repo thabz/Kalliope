@@ -49,95 +49,76 @@ my $page = newAuthor Kalliope::Page (
 my $poetName = $poet->name;
 my $HTML;
 
-my %menuStruct = (
-	vaerker => { url => 'fvaerker.pl?', 
+my @menuStruct = (
+      { url => 'fvaerker.pl?', 
 	title => 'Værker', 
 	status => $poet->{'vers'},
         desc => "${poetName}s samlede poetiske værker",
         icon => 'gfx/icons/works-h48.gif'
-                    },
-	titlelines => { url => 'flines.pl?mode=1&', 
+                    },{
+        url => 'flines.pl?mode=1&', 
 	title => 'Digttitler', 
 	status => $poet->{'vaerker'}, 
         desc => "Vis titler på alle digte",
         icon => 'gfx/icons/poem-h48.gif'
-                    },
-	firstlines => { url => 'flines.pl?mode=0&', 
+                    },{
+	url => 'flines.pl?mode=0&', 
 	title => 'Førstelinier', 
 	status => $poet->{'vaerker'},
         desc => "Vis førstelinier for samtlige digte",
         icon => 'gfx/icons/poem-h48.gif'
-                    },
-	popular => { url => 'fpop.pl?', 
+                    },{
+	url => 'fpop.pl?', 
 	title => 'Populære digte', 
 	status => $poet->{'vaerker'},
         desc => "Top-10 over mest læste $poetName digte i Kalliope",
         icon => 'gfx/icons/pop-h48.gif'
-                    },
-	prosa     => { url => 'fvaerker.pl?mode=prosa&', 
+                    },{
+	url => 'fvaerker.pl?mode=prosa&', 
 	title => 'Prosa', 
 	desc => qq|${poetName}s prosatekster|,
 	status => $poet->{'prosa'},
         icon => 'gfx/icons/works-h48.gif'
-                    },
-	pics      => { url => 'fpics.pl?', 
+                    },{
+	url => 'fpics.pl?', 
 	title => 'Portrætter', 
 	status => $poet->{'pics'},
         icon => 'gfx/icons/portrait-h48.gif',
         desc => "Portrætgalleri for $poetName"
-                    },
-	bio       => { url => 'biografi.cgi?', 
+                    },{
+	url => 'biografi.cgi?', 
 	title => 'Biografi', 
 	status => $poet->{'bio'},
         desc => qq|En kortfattet introduktion til ${poetName}s liv og værk|,
         icon => 'gfx/icons/biography-h48.gif'
-                    },
-	samtidige => { url => 'samtidige.cgi?', 
+                    },{
+	url => 'samtidige.cgi?', 
 	title => 'Samtid', 
-	status => !$poet->isUnknownPoet,
+	status => !$poet->isUnknownPoet && $poet->yearBorn ne '?',
         desc => qq|Digtere som udgav værker i ${poetName}s levetid|,
         icon => 'gfx/icons/biography-h48.gif'
-                    },
-	henvisninger => { url => 'henvisninger.cgi?', 
+                    },{
+	url => 'henvisninger.cgi?', 
 	title => 'Henvisninger', 
 	status => $poet->hasHenvisninger, 
         desc => 'Oversigt over tekster som henviser til '.$poetName.'s tekster.',
         icon => 'gfx/icons/links-h48.gif'
-                    },
-	links     => { url => 'flinks.pl?', 
+                    },{
+	url => 'flinks.pl?', 
 	title => 'Links', 
 	status => $poet->{'links'}, 
         desc => 'Henvisninger til andre steder på internettet, som har relevant information om '.$poetName,
         icon => 'gfx/icons/links-h48.gif'
-                    },
-        bibliografi => { url => 'fsekundaer.pl?', 
+                    },{
+        url => 'fsekundaer.pl?', 
         title => 'Bibliografi', 
         status => $poet->{'primaer'} || $poet->{'sekundaer'},
         desc => $poetName.'s bibliografi',
         icon => 'gfx/icons/secondary-h48.gif'
                     } );
 
-my @keys = qw/vaerker titlelines firstlines popular prosa pics bio samtidige henvisninger links bibliografi/;
-
-my @activeItems = grep { $_->{status} } (values %menuStruct);
-my $itemsNum = $#activeItems+1;
-
-$HTML = '<TABLE WIDTH="100%"><TR><TD CLASS="ffront" VALIGN="top" WIDTH="50%">';
-$HTML .= '<TABLE CELLPADDING=2 CELLSPACING=0>';
-
-my $i = 0;
-foreach my $key (@keys) {
-    my %item = %{$menuStruct{$key}};
-    my $url = $item{url}.'fhandle='.$poet->fhandle;
-    if ($item{status}) {
-	$HTML .= qq|<TR><TD VALIGN="top" ROWSPAN=2><A HREF="$url"><IMG HEIGHT=48 BORDER=0 SRC="$item{icon}" ALT="*"></A></TD>|;
-	$HTML .= qq|<TD CLASS="ffronttitle"><A HREF="$url">$item{title}</A><TD></TR>|;
-        $HTML .= qq|<TR><TD VALIGN="top" CLASS="ffrontdesc">$item{desc}</TD></TR>|;
-	$HTML .= '</TABLE></TD><TD CLASS="ffront" VALIGN="top" WIDTH="50%"><TABLE CELLPADDING=2 CELLSPACING=0>' if (++$i == int $itemsNum/2);
-    }
-}
-$HTML .= '</TABLE></TD></TR></TABLE>';
-
+map {$_->{'url'} = $_->{'url'}.'fhandle='.$poet->fhandle} @menuStruct;
+$HTML = Kalliope::Page::frontMenu(@menuStruct);
 $page->addBox( width => '80%',
 	coloumn => 1,
 	content => $HTML );
