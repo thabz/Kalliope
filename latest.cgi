@@ -59,7 +59,7 @@ $page->addBox ( title => "Nørderi",
 $page->print;
 
 sub latestPoems {
-    $DAYS_TO_SHOW = shift;
+    my $DAYS_TO_SHOW = shift;
     my $dbh = Kalliope::DB->connect();
     my $HTML;
     my @blocks;
