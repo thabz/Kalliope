@@ -59,9 +59,14 @@ sub text {
 
 sub linkAsHTML {
     my $self = shift;
-    my $id = $self->helpid;
+    my $onClickJS = $self->onClickJS;
     my $title = $self->title;
-    return qq|<INPUT onClick="window.open('help.cgi?helpid=$id','Helppopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=400,height=300'); return false" TITLE="Hjælp til $title" CLASS="button" TYPE="submit" VALUE="Hjælp">|;
+    return qq|<INPUT onClick="$onClickJS" TITLE="Hjælp til $title" CLASS="button" TYPE="submit" VALUE="Hjælp">|;
+}
+
+sub onClickJS {
+    my $id = shift->helpid;
+    return qq|window.open('help.cgi?helpid=$id','Helppopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=300'); return false|;
 }
 
 1;

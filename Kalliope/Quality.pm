@@ -21,6 +21,7 @@
 
 package Kalliope::Quality;
 use strict;
+use Kalliope::Help;
 
 my %items = (
      korrektur1 => { name     => 'første korrekturlæsning',
@@ -59,7 +60,10 @@ sub asHTML {
       my $icon = $status ? $item{'icon_on'} : $item{'icon_off'};
       my $alt = $status ? 'Har ' : 'Mangler ';
       $alt .= $item{'name'};
-      $HTML .= qq|<IMG SRC="$icon" ALT="$alt" TITLE="$alt">|;
+      $HTML .= qq|<IMG SRC="$icon" BORDER=0 ALT="$alt" TITLE="$alt">|;
    }
+
+   my $help = new Kalliope::Help('quality');
+   $HTML = '<A HREF="javascript:{}" onClick="'.$help->onClickJS.'">'.$HTML.'</A>';
    return $HTML;
 }
