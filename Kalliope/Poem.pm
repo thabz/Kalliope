@@ -141,6 +141,9 @@ sub content {
     }
     $self->{'indhold'} =~ s/<w>/<span class="wide">/gi;
     $self->{'indhold'} =~ s/<\/w>/<\/span>/gi;
+    $self->{'indhold'} =~ s/<sc>/<span style="font-variant: small-caps">/g;
+    $self->{'indhold'} =~ s/<\/sc>/<\/span>/g;
+
     $self->{'indhold'} =~ s/\n/<BR>\n/g;
     $self->{'indhold'} =~ s/,,/&bdquo;/g;
     $self->{'indhold'} =~ s/''/&ldquo;/g;
