@@ -245,7 +245,7 @@ EOF
     print '<TR><TD HEIGHT=70 COLSPAN=3 VALIGN="top">';
 
     print '<TABLE BGCOLOR="black" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
-    print '<TD ROWSPAN=2><IMG SRC="gfx/trans1x1.gif" HEIGHT=70 WIDTH=1></TD>';
+    print '<TD ROWSPAN=2><IMG ALT="" SRC="gfx/trans1x1.gif" HEIGHT=70 WIDTH=1></TD>';
     print '<TD WIDTH="100%" CLASS="maintitle">'.$self->titleAsHTML.'</TD>';
     print '<TD ROWSPAN=2 VALIGN="top" STYLE="padding-right: 20px">'.$self->thumbIMG.'</TD></TR>';
 #    print '</TR>';
@@ -255,14 +255,14 @@ EOF
 
     # top pap
     print '<TR>';
-    print '<TD BACKGROUND="gfx/sidebartop.gif" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=10></TD>';
-    print '<TD BACKGROUND="gfx/paptop.gif" WIDTH="100%"><IMG SRC="gfx/trans1x1.gif" WIDTH="10" HEIGHT="10"></TD>';
-    print '<TD BACKGROUND="gfx/paptopcorner.gif" WIDTH="34"><IMG SRC="gfx/trans1x1.gif" WIDTH="34" HEIGHT=10></TD>';
+    print '<TD BACKGROUND="gfx/sidebartop.gif" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=10></TD>';
+    print '<TD BACKGROUND="gfx/paptop.gif" WIDTH="100%"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="10" HEIGHT="10"></TD>';
+    print '<TD BACKGROUND="gfx/paptopcorner.gif" WIDTH="34"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="34" HEIGHT=10></TD>';
     print '</TR>';
 
     # Body
     print '<TR>';
-    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=1><BR>';
+    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=1><BR>';
     print $self->_navigationMain.'<BR><BR>';
 
     print '</TD><TD VALIGN="top" WIDTH="100%" STYLE="padding: 10px">';
@@ -278,14 +278,14 @@ EOF
     }
     print '</TR></TABLE>';
     print '</TD>';
-    print '<TD BACKGROUND="gfx/papright.gif"><IMG SRC="gfx/trans1x1.gif" WIDTH="34" HEIGHT="1"></TD>';
+    print '<TD BACKGROUND="gfx/papright.gif"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="34" HEIGHT="1"></TD>';
     print '</TR>';
 
     # bottom pap
     print '<TR>';
-    print '<TD BACKGROUND="gfx/sidebarbottom.gif" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=10></TD>';
-    print '<TD BACKGROUND="gfx/papbottom.gif" WIDTH="100%"><IMG SRC="gfx/trans1x1.gif" WIDTH="10" HEIGHT="10"></TD>';
-    print '<TD BACKGROUND="gfx/paprightcorner.gif" WIDTH="34"><IMG SRC="gfx/trans1x1.gif" WIDTH="34" HEIGHT=10></TD>';
+    print '<TD BACKGROUND="gfx/sidebarbottom.gif" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=10></TD>';
+    print '<TD BACKGROUND="gfx/papbottom.gif" WIDTH="100%"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="10" HEIGHT="10"></TD>';
+    print '<TD BACKGROUND="gfx/paprightcorner.gif" WIDTH="34"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="34" HEIGHT=10></TD>';
     print '</TR>';
 
     # Foot
@@ -463,7 +463,7 @@ sub _navigationMain {
                                   $struct->{'url'},$struct->{'icon'});
 	next unless $icon;			  
 	$HTML .= qq|<A CLASS=white  HREF="$url">|;
-	$HTML .= qq|<IMG BORDER=0 SRC="$icon"><BR>|;
+	$HTML .= qq|<IMG ALT="" BORDER=0 SRC="$icon"><BR>|;
         if ($key ne $self->{'pagegroup'} && $key ne $self->{'pagegroupchoosen'}) {
 	    $HTML .= $title;
 	} else {
