@@ -42,7 +42,8 @@ sub keyword {
 }
 
 sub needleToUse {
-    return "keyword=".shift->keyword->ord;
+    my $self = shift;
+    return "lang=".$self->lang." keyword=".$self->keyword->ord;
 }
 
 sub getExtraURLParam {

@@ -48,6 +48,11 @@ sub needle {
     return shift->{'needle'};
 }
 
+sub needleToUse {
+    my $self = shift;
+    return "lang=".$self->lang." ".$self->needle;
+}
+
 sub splitNeedle {
     my $needle2 = shift->needle;
     $needle2 =~ s/^\s+//;
