@@ -32,7 +32,14 @@ my $dbh = Kalliope::DB->connect;
 
 my $MAILTAINER_EMAIL = 'jesper@kalliope.org';
 
-my $poem = new Kalliope::Poem ('longdid' => url_param('longdid'));
+my $poem;
+if (url_param('longdid')) {
+    $poem = new Kalliope::Poem ('longdid' => url_param('longdid'));
+} elsif (url_param('did')) {
+    $poem = new Kalliope::Poem (did => url_param('did'));
+} else {
+    Kalliope::Page::notFound();
+}
 
 my $needle = url_param('needle') || '';
 
