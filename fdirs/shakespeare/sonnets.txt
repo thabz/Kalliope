@@ -1,36 +1,53 @@
 CVS-TIMESTAMP: $Date$
 STATUS:complete
 VQ:korrektur1,kilde
-VN:Rettet ind efter <i>Shakespeare's Sonnets</i>, ed. Katherine Duncan-Jones, The Arden Shakespeare Third Series, 1998
-VN:Teksten stammer fra Project Gutenberg. Brian Bentzen har ført teksten up-to-date, og skriver: »Jeg har fulgt Arden Shakespeare i alt på nær deres ophævelse af "apostrof-e" (f.eks. measur'd til measured) og af stort begyndelsesbogstav i personifikationer (Nature, Time osv.), begge dele er unødige moderniseringer der eliminerer den stilfulde, arkaiske patina fra teksten. Romertallene er lavet om til arabertal, og det kunne da netop synes at være en unødig modernisering, men i Quartoen fra 1609 bruges faktisk arabertal. Den berømte, gådefulde dedikation er også kommet med for fuldstændighedens skyld.«
+VN:Kalliope bringer Shakespeares sonetter i to forskellige udgaver: alle de øverste tekster følger nøje originalens stavemåde, når man da lige ser bort fra det lange s (&#383;) og umiddelbart nedenunder følger så en fuldt ud moderniseret udgave. Ved hver enkelt sonet kan man også se en facsimilie af den pågældende sonet som den tager sig ud i originaludgaven, <i>Shake-speares Sonnets</i> fra 1609. Den irriterende vilkårlige tegnsætning er nænsomt og i stilhed blevet normaliseret. Ændringer i tekstens ordlyd (emendationer) er desværre ikke til at komme uden om, men alle sådanne "rettelser" er samvittighedsfuldt opregnet i de enkelte sonetters noter, f.eks. betyder: "1 Monuments] Monument" at i linie 1 hvor vi har "Monuments" har originalen "Monument".  
 
 I:shakespeare2001060201
-T:Dedikation
-F:TO.THE.ONLIE.BEGETTER.OF
+T:[Dedication]
+TYPE:prosa
+N:Denne sære dedikation, signeret af udgiveren Thomas Thorpe(?), forbliver et mysterium trods mange lærde og sindrige udredninger. Hvem er denne Mr. W.H.? Spidskandidaterne er William Herbert, third Earl of Pembroke og Henry Wriothesley, third Earl of Southampton.
 
-TO.THE.ONLIE.BEGETTER.OF.
-  THESE.INSVING.SONNETS.
-   Mr. W.H. ALL.HAPINESSE.
-     AND.THAT.ETERNITIE.
-              PROMISED.
-                     BY.
-   OVR.EVER-LIVING.POET.
-                WISHETH.
-      THE.WELL-WISHING.
-         ADVENTVRER.IN.
-                SETTING.
-                  FORTH.
+<center>TO.THE.ONLIE.BEGETTER.OF.
+THESE.INSVING.SONNETS.
+Mr. W.H. ALL.HAPINESSE.
+AND.THAT.ETERNITIE.
+PROMISED.
+BY.
+OVR.EVER-LIVING.POET.
+WISHETH.
+THE.WELL-WISHING.
+ADVENTVRER.IN.
+SETTING.
+FORTH.</center>
 
-                               T.T.
-
-N:Dechifreringen af denne kryptiske dedikation har længe været - og er stadig - en yndet sport blandt de udi Shakespeare velbevandrede nøddeknækkere. Den er skrevet af udgiveren Thomas Thorpe, mere eller mindre på vegne af "our ever-living poet" Shakespeare. Det store spørgsmål gælder Mr. W.H.'s identitet. Spidskandidaterne er William Herbert, third Earl of Pembroke og Henry Wriothesley, third Earl of Southampton. 
+                                         T.T.
 
 I:shakespeare0001
-T:Sonnet 1
+T:1
+TI:From fairest creatures we desire increase
+TOC:1 (From fairest creatures we desire increase)
 F:From fairest creatures we desire increase
 K:sonnet
 
 From fairest creatures we desire increase,
+That thereby beauties <I>Rose</I> might neuer die,
+But as the riper should by time decease
+His tender heire might beare his memory:
+But thou contracted to thine owne bright eyes,
+Feed'st thy lights flame with selfe substantiall fewell,
+Making a famine where aboundance lies,
+Thy selfe thy foe, to thy sweet selfe too cruell:
+Thou that art now the worlds fresh ornament,
+And only herauld to the gaudy spring,
+Within thine owne bud buriest thy content,
+And tender chorle makst wast in niggarding:
+    Pitty the world, or else this glutton be,
+    To eate the worlds due, by the graue and thee.
+
+<nonum>---</nonum>
+
+<resetnum>From fairest creatures we desire increase,
 That thereby beauty's rose might never die,
 But as the riper should by time decease
 His tender heir might bear his memory:
@@ -46,35 +63,73 @@ And, tender churl, mak'st waste in niggarding.
     To eat the world's due, by the grave and thee.
 
 I:shakespeare0002
-T:Sonnet 2
-F:When forty winters shall beseige thy brow
+T:2
+TI:When fortie Winters shall beseige thy brow
+TOC:2 (When fortie Winters shall beseige thy brow)
+F:When fortie Winters shall beseige thy brow
 K:sonnet
 
-When forty winters shall besiege thy brow,
+When fortie Winters shall beseige thy brow,
+And digge deep trenches in thy beauties field,
+Thy youthes proud liuery so gaz'd on now,
+Wil be a totter'd weed of smal worth held:
+Then being askt, where all thy beautie lies,
+Where all the treasure of thy lusty daies;
+To say within thine owne deepe sunken eyes,
+Were an all-eating shame, and thriftlesse praise.
+How much more praise deseru'd thy beauties vse,
+If thou couldst answere, this faire child of mine
+Shall sum my count, and make my old excuse,
+Proouing his beautie by succession thine.
+    This were to be new made when thou art ould,
+    And see thy blood warme when thou feel'st it could.
+
+<nonum>---</nonum>
+
+<resetnum>When forty winters shall besiege thy brow,
 And dig deep trenches in thy beauty's field,
-Thy youth's proud livery, so gaz'd on now,
-Will be a tatter'd weed of small worth held:
-Then being ask'd, where all thy beauty lies,
+Thy youth's proud livery, so gazed on now,
+Will be a tattered weed of small worth held:
+Then being asked, where all thy beauty lies,
 Where all the treasure of thy lusty days,
 To say, within thine own deep-sunken eyes,
 Were an all-eating shame and thriftless praise.
-How much more praise deserv'd thy beauty's use
-If thou couldst answer, "This fair child of mine
-Shall sum my count, and make my old excuse,"
+How much more praise deserved thy beauty's use
+If thou couldst answer, ,,This fair child of mine
+Shall sum my count, and make my old excuse,''
 Proving his beauty by succession thine:
     This were to be new made when thou art old,
     And see thy blood warm when thou feel'st it cold.
 
 I:shakespeare0003
-T:Sonnet 3
-F:Look in thy glass, and tell the face thou viewest
+T:3
+TI:Looke in thy glasse and tell the face thou vewest
+TOC:3 (Looke in thy glasse and tell the face thou vewest)
+F:Looke in thy glasse and tell the face thou vewest
 K:sonnet
 
-Look in thy glass, and tell the face thou viewest
+Looke in thy glasse and tell the face thou vewest,
+Now is the time that face should forme an other,
+Whose fresh repaire if now thou not renewest, 
+Thou doo'st beguile the world, vnblesse some mother. 
+For where is she so faire whose vn-eard wombe 
+Disdaines the tillage of thy husbandry? 
+Or who is he so fond will be the tombe 
+Of his selfe loue to stop posterity? 
+Thou art thy mothers glasse and she in thee 
+Calls backe the louely Aprill of her prime;
+So thou through windowes of thine age shalt see, 
+Dispight of wrinkles this thy goulden time. 
+    But if thou liue remembred not to be, 
+    Die single and thine Image dies with thee.
+
+<nonum>---</nonum>
+
+<resetnum>Look in thy glass, and tell the face thou viewest
 Now is the time that face should form another,
 Whose fresh repair if now thou not renewest
 Thou dost beguile the world, unbless some mother.
-For where is she so fair whose unear'd womb
+For where is she so fair whose uneared womb
 Disdains the tillage of thy husbandry?
 Or who is he so fond will be the tomb
 Of his self-love, to stop posterity?
@@ -82,15 +137,34 @@ Thou art thy mother's glass, and she in thee
 Calls back the lovely April of her prime:
 So thou through windows of thine age shall see,
 Despite of wrinkles, this thy golden time.
-    But if thou live rememb'red not to be,
+    But if thou live remembered not to be,
     Die single, and thine image dies with thee.
 
 I:shakespeare0004
-T:Sonnet 4
-F:Unthrifty loveliness, why dost thou spend
+T:4
+TI:Vnthrifty louelinesse, why dost thou spend
+TOC:4 (Vnthrifty louelinesse, why dost thou spend)
+F:Vnthrifty louelinesse, why dost thou spend
 K:sonnet
 
-Unthrifty loveliness, why dost thou spend
+Vnthrifty louelinesse, why dost thou spend
+Vpon thy selfe thy beauties legacy?
+Natures bequest giues nothing but doth lend, 
+And being franck she lends to those are free: 
+Then beautious nigard, why doost thou abuse
+The bountious largesse giuen thee to giue?
+Profitles vserer, why doost thou vse
+So great a summe of summes yet can'st not liue?
+For hauing traffike with thy selfe alone,
+Thou of thy selfe thy sweet selfe dost deceaue.
+Then how when nature calls thee to be gone,
+What acceptable <i>Audit</i> can'st thou leaue?
+    Thy vnus'd beauty must be tomb'd with thee, 
+    Which vsed liues th'executor to be.
+
+<nonum>---</nonum>
+
+<resetnum>Unthrifty loveliness, why dost thou spend
 Upon thyself thy beauty's legacy?
 Nature's bequest gives nothing, but doth lend,
 And being frank, she lends to those are free:
@@ -100,24 +174,43 @@ Profitless usurer, why dost thou use
 So great a sum of sums, yet canst not live?
 For having traffic with thyself alone,
 Thou of thyself thy sweet self dost deceive;
-Then how, when Nature calls thee to be gone,
+Then how, when nature calls thee to be gone,
 What acceptable audit canst thou leave?
-    Thy unus'd beauty must be tomb'd with thee,
-    Which used, lives th' executor to be.
+    Thy unused beauty must be tomb'd with thee,
+    Which used, lives th'executor to be.
 
 I:shakespeare0005
-T:Sonnet 5
-F:Those hours that with gentle work did frame
+T:5
+TI:Those howers that with gentle worke did frame
+TOC:5 (Those howers that with gentle worke did frame)
+F:Those howers that with gentle worke did frame
 K:sonnet
 
-Those hours that with gentle work did frame
+Those howers that with gentle worke did frame
+The louely gaze where euery eye doth dwell 
+Will play the tirants to the very same, 
+And that vnfaire which fairely doth excell: 
+For neuer resting time leads Summer on
+To hidious winter and confounds him there, 
+Sap checkt with frost and lustie leau's quite gon,
+Beauty ore-snow'd and barenes euery where.
+Then were not summers distillation left 
+A liquid prisoner pent in walls of glasse, 
+Beauties effect with beauty were bereft, 
+Nor it nor noe remembrance what it was. 
+    But flowers distil'd, though they with winter meete, 
+    Leese but their show, their substance still liues sweet.
+
+<nonum>---</nonum>
+
+<resetnum>Those hours that with gentle work did frame
 The lovely gaze where every eye doth dwell
 Will play the tyrants to the very same,
 And that unfair which fairly doth excel.
 For never-resting time leads summer on
 To hideous winter and confounds him there,
-Sap check'd with frost and lusty leaves quite gone,
-Beauty o'er-snow'd and bareness everywhere;
+Sap checked with frost and lusty leaves quite gone,
+Beauty o'er-snowed and bareness everywhere;
 Then were not summer's distillation left,
 A liquid prisoner pent in walls of glass,
 Beauty's effect with beauty were bereft,
@@ -126,35 +219,73 @@ Nor it, nor no remembrance what it was.
     Leese but their show; their substance still lives sweet.
 
 I:shakespeare0006
-T:Sonnet 6
-F:Then let not winter's ragged hand deface
+T:6
+TI:Then let not winters wragged hand deface
+TOC:6 (Then let not winters wragged hand deface)
+F:Then let not winters wragged hand deface
 K:sonnet
 
-Then let not winter's ragged hand deface
-In thee thy summer, ere thou be distill'd:
+Then let not winters wragged hand deface
+In thee thy summer ere thou be distil'd:   
+Make sweet some viall; treasure thou some place
+With beauties treasure ere it be selfe kil'd: 
+That vse is not forbidden vsery
+Which happies those that pay the willing lone; 
+That's for thy selfe to breed an other thee, 
+Or ten times happier be it ten for one;
+Ten times thy selfe were happier then thou art, 
+If ten of thine ten times refigur'd thee:
+Then what could death doe if thou should'st depart,
+Leauing thee liuing in posterity? 
+    Be not selfe-wild for thou art much too faire, 
+    To be deaths conquest and make wormes thine heire.
+
+<nonum>---</nonum>
+
+<resetnum>Then let not winter's ragged hand deface
+In thee thy summer, ere thou be distilled:
 Make sweet some vial; treasure thou some place
-With beauty's treasure, ere it be self-kill'd.
+With beauty's treasure, ere it be self-killed.
 That use is not forbidden usury
 Which happies those that pay the willing loan;
 That's for thyself to breed another thee,
 Or ten times happier, be it ten for one:
 Ten times thyself were happier than thou art,
-If ten of thine ten times refigur'd thee;
+If ten of thine ten times refigured thee;
 Then what could death do if thou shouldst depart,
 Leaving thee living in posterity?
-    Be not self-will'd, for thou art much too fair
+    Be not self-willed, for thou art much too fair
     To be death's conquest and make worms thine heir.
 
 I:shakespeare0007
-T:Sonnet 7
-F:Lo, in the Orient when the gracious light
+T:7
+TI:Loe, in the Orient when the gracious light
+TOC:7 (Loe, in the Orient when the gracious light)
+F:Loe, in the Orient when the gracious light
 K:sonnet
 
-Lo, in the Orient when the gracious light
+Loe, in the Orient when the gracious light
+Lifts vp his burning head, each vnder eye 
+Doth homage to his new appearing sight, 
+Seruing with lookes his sacred maiesty;
+And hauing clim'd the steepe vp heauenly hill, 
+Resembling strong youth in his middle age, 
+Yet mortall lookes adore his beauty still, 
+Attending on his goulden pilgrimage: 
+But when from high-most pich with wery car, 
+Like feeble age he reeleth from the day, 
+The eyes (fore dutious) now conuerted are 
+From his low tract and looke an other way: 
+    So thou, thy selfe out-going in thy noon,
+    Vnlok'd on diest vnlesse thou get a sonne.
+
+<nonum>---</nonum>
+
+<resetnum>Lo, in the Orient when the gracious light
 Lifts up his burning head, each under eye
 Doth homage to his new appearing sight,
 Serving with looks his sacred majesty;
-And having climb'd the steep-up heavenly hill,
+And having climbed the steep-up heavenly hill,
 Resembling strong youth in his middle age,
 Yet mortal looks adore his beauty still,
 Attending on his golden pilgrimage:
@@ -163,117 +294,233 @@ Like feeble age he reeleth from the day,
 The eyes, fore-duteous, now converted are
 From his low tract, and look another way:
     So thou, thyself out-going in thy noon,
-    Unlook'd on diest, unless thou get a son.
+    Unlooked on diest unless thou get a son.
 
 I:shakespeare0008
-T:Sonnet 8
-F:Music to hear, why hear'st thou music sadly?
+T:8
+TI:Musick to heare, why hear'st thou musick sadly?
+TOC:8 (Musick to heare, why hear'st thou musick sadly?)
+F:Musick to heare, why hear'st thou musick sadly?
 K:sonnet
 
-Music to hear, why hear'st thou music sadly?
-Sweets with sweets war not, joy delights in joy;
+Musick to heare, why hear'st thou musick sadly?
+Sweets with sweets warre not, ioy delights in ioy: 
+Why lou'st thou that which thou receaust not gladly, 
+Or else receau'st with pleasure thine annoy?
+If the true concord of well tuned sounds, 
+By vnions married do offend thine eare, 
+They do but sweetly chide thee, who confounds
+In singlenesse the parts that thou should'st beare: 
+Marke how one string sweet husband to an other,
+Strikes each in each by mutuall ordering; 
+Resembling sier, and child, and happy mother, 
+Who all in one, one pleasing note do sing: 
+    Whose speechlesse song being many, seeming one, 
+    Sings this to thee: thou single wilt proue none.
+
+<nonum>---</nonum>
+
+<resetnum>Music to hear, why hear'st thou music sadly?
+Sweets with sweets war not, joy delights in joy.
 Why lov'st thou that which thou receiv'st not gladly,
 Or else receiv'st with pleasure thine annoy?
-If the true concord of well-tuned sounds
+If the true concord of well-tuned sounds,
 By unions married, do offend thine ear,
 They do but sweetly chide thee, who confounds
-In singleness the parts that thou shouldst bear:
+In singleness the parts that thou shouldst bear.
 Mark how one string, sweet husband to another,
 Strikes each in each by mutual ordering,
 Resembling sire, and child, and happy mother,
-Who all in one, one pleasing note do sing:
+Who all in one, one pleasing note do sing;
     Whose speechless song being many, seeming one,
     Sings this to thee: "Thou single wilt prove none."
 
 I:shakespeare0009
-T:Sonnet 9
-F:Is it for fear to wet a widow's eye
+T:9
+TI:Is it for feare to wet a widdowes eye
+TOC:9 (Is it for feare to wet a widdowes eye)
+F:Is it for feare to wet a widdowes eye
 K:sonnet
 
-Is it for fear to wet a widow's eye
+Is it for feare to wet a widdowes eye
+That thou consum'st thy selfe in single life? 
+Ah, if thou issulesse shalt hap to die, 
+The world will waile thee like a makelesse wife;
+The world wilbe thy widdow and still weepe,
+That thou no forme of thee hast left behind,
+When euery priuat widdow well may keepe,
+By childrens eyes, her husbands shape in minde:
+Looke what an vnthrift in the world doth spend
+Shifts but his place, for still the world inioyes it;
+But beauties waste hath in the world an end,
+And kept vnvsde the vser so destroyes it:
+    No loue toward others in that bosom sits
+    That on himselfe such murdrous shame commits.
+
+<nonum>---</nonum>
+
+<resetnum>Is it for fear to wet a widow's eye
 That thou consum'st thyself in single life?
 Ah, if thou issueless shalt hap to die,
 The world will wail thee like a makeless wife;
 The world will be thy widow, and still weep
 That thou no form of thee hast left behind,
 When every private widow well may keep,
-By children's eyes, her husband's shape in mind,
-Look what an unthrift in the world doth spend,
+By children's eyes, her husband's shape in mind.
+Look what an unthrift in the world doth spend
 Shifts but his place, for still the world enjoys it;
 But beauty's waste hath in the world an end,
-And kept unus'd the user so destroys it:
+And kept unused the user so destroys it:
     No love toward others in that bosom sits
     That on himself such murd'rous shame commits.
 
 I:shakespeare0010
-T:Sonnet 10
-F:For shame deny that thou bear'st love to any
+T:10
+TI:For shame deny that thou bear'st loue to any
+TOC:10 (For shame deny that thou bear'st loue to any)
+F:For shame deny that thou bear'st loue to any
 K:sonnet
 
-For shame deny that thou bear'st love to any,
-Who for thyself art so unprovident;
-Grant, if thou wilt, thou art belov'd of many,
+For shame deny that thou bear'st loue to any,
+Who for thy selfe art so vnprouident;
+Graunt if thou wilt, thou art belou'd of many, 
+But that thou none lou'st is most euident: 
+For thou art so possesst with murdrous hate, 
+That gainst thy selfe thou stickst not to conspire, 
+Seeking that beautious roofe to ruinate,
+Which to repaire should be thy chiefe desire:
+O change thy thought, that I may change my minde;
+Shall hate be fairer log'd then gentle loue? 
+Be as thy presence is, gracious and kind, 
+Or to thy selfe at least kind harted proue; 
+    Make thee an other selfe for loue of me, 
+    That beauty still may liue in thine or thee.
+
+<nonum>---</nonum>
+
+<resetnum>For shame deny that thou bear'st love to any,
+Who for thyself art so unprovident.
+Grant if thou wilt, thou art beloved of many,
 But that thou none lov'st is most evident:
-For thou art so possess'd with murd'rous hate
+For thou art so possessed with murd'rous hate,
 That 'gainst thyself thou stick'st not to conspire,
-Seeking that beauteous roof to ruinate
+Seeking that beauteous roof to ruinate,
 Which to repair should be thy chief desire:
-O change thy thought, that I may change my mind;
-Shall hate be fairer lodg'd than gentle love?
-Be as thy presence is, gracious and kind;
-Or to thyself at least kind-hearted prove,
+O change thy thought, that I may change my mind.
+Shall hate be fairer lodged than gentle love?
+Be as thy presence is, gracious and kind,
+Or to thyself at least kind-hearted prove.
     Make thee another self for love of me,
     That beauty still may live in thine or thee.
 
 I:shakespeare0011
-T:Sonnet 11
+T:11
+TI:As fast as thou shalt wane, so fast thou grow'st
+TOC:11 (As fast as thou shalt wane, so fast thou grow'st)
 F:As fast as thou shalt wane, so fast thou grow'st
 K:sonnet
 
 As fast as thou shalt wane, so fast thou grow'st
-In one of thine, from that which thou departest;
+In one of thine, from that which thou departest, 
+And that fresh bloud which yongly thou bestow'st, 
+Thou maist call thine, when thou from youth conuertest.
+Herein liues wisdome, beauty, and increase, 
+Without this, follie, age, and could decay;
+If all were minded so, the times should cease, 
+And threescore yeare would make the world away: 
+Let those whom nature hath not made for store,
+Harsh, featurelesse, and rude, barrenly perrish.
+Looke whom she best indow'd, she gaue the more,
+Which bountious guift thou shouldst in bounty cherrish.
+    She caru'd thee for her seale, and ment therby
+    Thou shouldst print more, not let that coppy die.
+
+<nonum>---</nonum>
+
+<resetnum>As fast as thou shalt wane so fast thou grow'st
+In one of thine, from that which thou departest,
 And that fresh blood which youngly thou bestow'st
-Thou mayst call thine, when thou from youth convertest;
+Thou mayst call thine, when thou from youth convertest.
 Herein lives wisdom, beauty and increase;
 Without this, folly, age and cold decay.
-If all were minded so, the times should cease.
+If all were minded so, the times should cease,
 And threescore year would make the world away:
 Let those whom nature hath not made for store,
-Harsh, featureless and rude, barrenly perish;
-Look whom she best endow'd, she gave the more,
+Harsh, featureless and rude, barrenly perish.
+Look whom she best endowed, she gave the more;
 Which bounteous gift thou shouldst in bounty cherish;
-    She carv'd thee for her seal, and meant thereby
+    She carved thee for her seal, and meant thereby
     Thou shouldst print more, not let that copy die.
 
 I:shakespeare0012
-T:Sonnet 12
-F:When I do count the clock that tells the time
+T:12
+TI:When I doe count the clock that tels the time
+TOC:12 (When I doe count the clock that tels the time)
+F:When I doe count the clock that tels the time
+N:4 all siluer'd] or siluer'd
 K:sonnet
 
-When I do count the clock that tells the time,
+When I doe count the clock that tels the time,
+And see the braue day sunck in hidious night, 
+When I behold the violet past prime, 
+And sable curls all siluer'd ore with white: 
+When lofty trees I see barren of leaues, 
+Which erst from heat did canopie the herd,
+And Sommers greene all girded vp in sheaues 
+Borne on the beare with white and bristly beard: 
+Then of thy beauty do I question make 
+That thou among the wastes of time must goe, 
+Since sweets and beauties do them-selues forsake, 
+And die as fast as they see others grow, 
+    And nothing gainst Times sieth can make defence 
+    Saue breed to braue him, when he takes thee hence.
+
+<nonum>---</nonum>
+
+<resetnum>When I do count the clock that tells the time,
 And see the brave day sunk in hideous night;
 When I behold the violet past prime,
-And sable curls all silver'd o'er with white:
+And sable curls all silvered o'er with white:
 When lofty trees I see barren of leaves,
 Which erst from heat did canopy the herd,
 And summer's green all girded up in sheaves
 Borne on the bier with white and bristly beard:
-Then of thy beauty do I question make,
+Then of thy beauty do I question make
 That thou among the wastes of time must go,
 Since sweets and beauties do themselves forsake,
 And die as fast as they see others grow,
-    And nothing 'gainst Time's scythe can make defence
-    Save breed to brave him, when he takes thee hence.
+    And nothing 'gainst time's scythe can make defence
+    Save breed to brave him when he takes thee hence.
 
 I:shakespeare0013
-T:Sonnet 13
-F:O that you were yourself! but, love, you are
+T:13
+TI:O that you were your selfe, but, loue, you are
+TOC:13 (O that you were your selfe, but, loue, you are)
+F:O that you were your selfe, but, loue, you are
+N:7 Your selfe] You selfe
 K:sonnet
 
-O that you were yourself! but, love, you are
+O that you were your selfe, but, loue, you are
+No longer yours, then you your selfe here liue.
+Against this cumming end you should prepare, 
+And your sweet semblance to some other giue.
+So should that beauty which you hold in lease 
+Find no determination, then you were 
+Your selfe again after your selfes decease,
+When your sweet issue your sweet forme should beare. 
+Who lets so faire a house fall to decay, 
+Which husbandry in honour might vphold
+Against the stormy gusts of winters day 
+And barren rage of deaths eternall cold? 
+    O none but vnthrifts, deare my loue you know, 
+    You had a Father, let your Son say so.
+
+<nonum>---</nonum>
+
+<resetnum>O that you were yourself, but, love, you are
 No longer yours, than you yourself here live;
 Against this coming end you should prepare,
-And your sweet semblance to some other give:
+And your sweet semblance to some other give.
 So should that beauty which you hold in lease
 Find no determination; then you were
 Yourself again after yourself's decease,
@@ -282,22 +529,41 @@ Who lets so fair a house fall to decay,
 Which husbandry in honour might uphold
 Against the stormy gusts of winter's day
 And barren rage of death's eternal cold?
-    O none but unthrifts, dear my love you know:
-    You had a father; let your son say so.
+    O none but unthrifts, dear my love you know,
+    You had a father, let your son say so.
 
 I:shakespeare0014
-T:Sonnet 14
-F:Not from the stars do I my judgment pluck
+T:14
+TI:Not from the stars do I my iudgement plucke
+TOC:15 (Not from the stars do I my iudgement plucke)
+F:Not from the stars do I my iudgement plucke
 K:sonnet
 
-Not from the stars do I my judgment pluck;
-And yet, methinks, I have astronomy,
+Not from the stars do I my iudgement plucke,
+And yet me thinkes I haue Astronomy,
+But not to tell of good, or euil lucke, 
+Of plagues, of dearths, or seasons quallity;
+Nor can I fortune to breefe mynuits tell,
+Pointing to each his thunder, raine and winde, 
+Or say with Princes if it shal go wel 
+By oft predict that I in heauen finde. 
+But from thine eies my knowledge I deriue, 
+And, constant stars, in them I read such art 
+As truth and beautie shal together thriue,
+If from thy selfe to store thou wouldst conuert: 
+    Or else of thee this I prognosticate, 
+    Thy end is Truthes and Beauties doome and date.
+
+<nonum>---</nonum>
+
+<resetnum>Not from the stars do I my judgement pluck,
+And yet methinks I have astronomy,
 But not to tell of good or evil luck,
 Of plagues, of dearths, or seasons' quality;
 Nor can I fortune to brief minutes tell,
-Pointing to each his thunder, rain and wind;
+Pointing to each his thunder, rain and wind,
 Or say with princes if it shall go well
-By aught predict that I in heaven find;
+By oft predict that I in heaven find;
 But from thine eyes my knowledge I derive,
 And, constant stars, in them I read such art
 As truth and beauty shall together thrive
@@ -306,11 +572,30 @@ If from thyself to store thou wouldst convert:
     Thy end is truth's and beauty's doom and date.
 
 I:shakespeare0015
-T:Sonnet 15
-F:When I consider everything that grows
+T:15
+TI:When I consider euery thing that growes
+TOC:15 (When I consider euery thing that growes)
+F:When I consider euery thing that growes
 K:sonnet
 
-When I consider everything that grows
+When I consider euery thing that growes
+Holds in perfection but a little moment,
+That this huge stage presenteth nought but showes
+Whereon the Stars in secret influence comment;
+When I perceiue that men as plants increase,
+Cheared and checkt euen by the selfe-same skie,
+Vaunt in their youthfull sap, at height decrease,
+And were their braue state out of memory;
+Then the conceit of this inconstant stay
+Sets you most rich in youth before my sight,
+Where wastfull time debateth with decay
+To change your day of youth to sullied night;
+    And all in war with Time for loue of you
+    As he takes from you, I ingraft you new.
+
+<nonum>---</nonum>
+
+<resetnum>When I consider everything that grows
 Holds in perfection but a little moment;
 That this huge stage presenteth nought but shows
 Whereon the stars in secret influence comment;
@@ -320,64 +605,121 @@ Vaunt in their youthful sap, at height decrease,
 And wear their brave state out of memory:
 Then the conceit of this inconstant stay
 Sets you, most rich in youth, before my sight,
-Where wasteful Time debateth with Decay
+Where wasteful time debateth with decay
 To change your day of youth to sullied night:
-    And all in war with Time for love of you
+    And all in war with time for love of you
     As he takes from you, I engraft you new.
 
 I:shakespeare0016
-T:Sonnet 16
-F:But wherefore do not you a mightier way
+T:16
+TI:But wherefore do not you a mightier waie
+TOC:16 (But wherefore do not you a mightier waie)
+F:But wherefore do not you a mightier waie
 K:sonnet
 
-But wherefore do not you a mightier way
-Make war upon this bloody tyrant, Time,
+But wherefore do not you a mightier waie 
+Make warre vppon this bloudie tirant time? 
+And fortifie your selfe in your decay 
+With meanes more blessed then my barren rime?
+Now stand you on the top of happie houres, 
+And many maiden gardens yet vnset, 
+With vertuous wish would beare your liuing flowers, 
+Much liker then your painted counterfeit: 
+So should the lines of life that life repaire 
+Which this (Times pensel or my pupill pen) 
+Neither in inward worth nor outward faire 
+Can make you liue your selfe in eies of men.
+    To giue away your selfe, keeps your selfe still, 
+    And you must liue drawne by your owne sweet skill.
+
+<nonum>---</nonum>
+
+<resetnum>But wherefore do not you a mightier way
+Make war upon this bloody tyrant time?
 And fortify yourself in your decay
 With means more blessed than my barren rhyme?
 Now stand you on the top of happy hours,
-And many maiden gardens, yet unset,
+And many maiden gardens yet unset,
 With virtuous wish would bear your living flowers,
 Much liker than your painted counterfeit:
 So should the lines of life that life repair,
 Which this, time's pencil or my pupil pen,
-Neither in inward worth nor outward fair,
-Can make you live yourself in eyes of men:
+Neither in inward worth nor outward fair
+Can make you live yourself in eyes of men;
     To give away yourself keeps yourself still,
     And you must live drawn by your own sweet skill.
 
 I:shakespeare0017
-T:Sonnet 17
-F:Who will believe my verse in time to come
+T:17
+TI:Who will beleeue my verse in time to come
+TOC:17 (Who will beleeue my verse in time to come)
+F:Who will beleeue my verse in time to come
 K:sonnet
 
-Who will believe my verse in time to come,
-If it were fill'd with your most high deserts?
-Though yet, heaven knows, it is but as a tomb,
+Who will beleeue my verse in time to come
+If it were fild with your most high deserts? 
+Though yet heauen knowes it is but as a tombe 
+Which hides your life, and shewes not halfe your parts: 
+If I could write the beauty of your eyes, 
+And in fresh numbers number all your graces, 
+The age to come would say, this Poet lies, 
+Such heauenly touches nere toucht earthly faces. 
+So should my papers (yellowed with their age) 
+Be scorn'd, like old men of lesse truth then tongue, 
+And your true rights be termd a Poets rage
+And stretched miter of an Antique song. 
+  But were some childe of yours aliue that time, 
+  You should liue twise in it, and in my rime.
+
+<nonum>---</nonum>
+
+<resetnum>Who will believe my verse in time to come
+If it were filled with your most high deserts?
+Though yet heaven knows it is but as a tomb
 Which hides your life, and shows not half your parts:
 If I could write the beauty of your eyes,
 And in fresh numbers number all your graces,
-The age to come would say, "This poet lies;
-Such heavenly touches ne'er touch'd earthly faces."
+The age to come would say, ,,This poet lies,
+Such heavenly touches ne'er touched earthly faces.''
 So should my papers (yellowed with their age)
-Be scorn'd, like old men of less truth than tongue,
-And your true rights be term'd a poet's rage,
+Be scorned, like old men of less truth than tongue,
+And your true rights be termed a poet's rage,
 And stretched metre of an antique song;
     But were some child of yours alive that time,
     You should live twice: in it, and in my rhyme.
 
 I:shakespeare0018
-T:Sonnet 18
-F:Shall I compare thee to a summer's day?
+T:18
+TI:Shall I compare thee to a Summers day?
+TOC:18 (Shall I compare thee to a Summers day?)
+F:Shall I compare thee to a Summers day?
 K:sonnet
 
-Shall I compare thee to a summer's day?
+Shall I compare thee to a Summers day?
+Thou art more louely and more temperate:
+Rough windes do shake the darling buds of Maie,
+And Sommers lease hath all too short a date;
+Sometime too hot the eye of heauen shines,
+And often is his gold complexion dimm'd;
+And euery faire from faire some-time declines,
+By chance or natures changing course vntrim'd:
+But thy eternall Sommer shall not fade,
+Nor loose possession of that faire thou ow'st,
+Nor shall death brag thou wandr'st in his shade,
+When in eternall lines to time thou grow'st,
+    So long as men can breath or eyes can see,
+    So long liues this, and this giues life to thee.
+
+<nonum>---</nonum>
+
+<resetnum>Shall I compare thee to a summer's day?
 Thou art more lovely and more temperate:
 Rough winds do shake the darling buds of May,
 And summer's lease hath all too short a date:
 Sometime too hot the eye of heaven shines,
-And often is his gold complexion dimm'd;
+And often is his gold complexion dimmed;
 And every fair from fair sometime declines,
-By chance, or nature's changing course, untrimm'd:
+By chance, or nature's changing course, untrimmed:
 But thy eternal summer shall not fade,
 Nor lose possession of that fair thou ow'st,
 Nor shall Death brag thou wander'st in his shade
@@ -386,11 +728,30 @@ When in eternal lines to time thou grow'st:
     So long lives this, and this gives life to thee.
 
 I:shakespeare0019
-T:Sonnet 19
-F:Devouring Time, blunt thou the lion's paws
+T:19
+TI:Deuouring time, blunt thou the Lyons pawes
+TOC:19 (Deuouring time, blunt thou the Lyons pawes)
+F:Deuouring time, blunt thou the Lyons pawes
 K:sonnet
 
-Devouring Time, blunt thou the lion's paws,
+Deuouring time, blunt thou the Lyons pawes,
+And make the earth deuoure her owne sweet brood,
+Plucke the keene teeth from the fierce Tygers yawes,
+And burne the long liu'd Ph&aelig;nix in her blood,
+Make glad and sorry seasons as thou fleet'st,
+And do what ere thou wilt, swift-footed time,
+To the wide world and all her fading sweets:
+But I forbid thee one most hainous crime,
+O carue not with thy howers my loues faire brow,
+Nor draw noe lines there with thine antique pen;
+Him in thy course vntainted doe allow,
+For beauties patterne to succeding men.
+    Yet doe thy worst ould Time, dispight thy wrong,
+    My loue shall in my verse euer liue young.
+
+<nonum>---</nonum>
+
+<resetnum>Devouring Time, blunt thou the lion's paws,
 And make the earth devour her own sweet brood;
 Pluck the keen teeth from the fierce tiger's jaws,
 And burn the long-live' Phoenix in her blood;
@@ -406,12 +767,31 @@ For beauty's pattern to succeeding men.
     My love shall in my verse ever live young.
 
 I:shakespeare0020
-T:Sonnet 20
+T:20
+TI:
+TOC:
 F:A woman's face with Nature's own hand painted
 K:sonnet
 
-A woman's face with Nature's own hand painted
-Hast thou, the master-mistress of my passion;
+A womans face with natures owne hande painted
+Haste thou, the Master Mistris of my passion;
+A womans gentle hart, but not acquainted 
+With shifting change, as is false womens fashion;
+An eye more bright then theirs, lesse false in rowling,
+Gilding the obiect where-vpon it gazeth;
+A man in hew all <i>Hews</i> in his controwling, 
+Which steales mens eyes and womens soules amaseth;
+And for a woman wert thou first created, 
+Till nature as she wrought thee fell a dotinge,
+And by addition me of thee defeated, 
+By adding one thing to my purpose nothing.
+    But since she prickt thee out for womens pleasure, 
+    Mine be thy loue, and thy loues vse their treasure.
+
+<nonum>---</nonum>
+
+<resetnum>A woman's face with nature's own hand painted
+Hast thou, the master mistress of my passion;
 A woman's gentle heart, but not acquainted
 With shifting change, as is false women's fashion;
 An eye more bright than theirs, less false in rolling,
@@ -419,19 +799,21 @@ Gilding the object whereupon it gazeth;
 A man in hue, all hues in his controlling,
 Which steals men's eyes and women's souls amazeth;
 And for a woman wert thou first created,
-Till Nature as she wrought thee fell a-doting,
+Till nature as she wrought thee fell a-doting,
 And by addition me of thee defeated,
 By adding one thing to my purpose nothing:
-    But since she prick'd thee out for women's pleasure,
+    But since she pricked thee out for women's pleasure,
     Mine be thy love, and thy love's use their treasure.
 
 I:shakespeare0021
-T:Sonnet 21
+T:21
+TI:
+TOC:
 F:So is it not with me as with that Muse
 K:sonnet
 
 So is it not with me as with that Muse,
-Stirr'd by a painted beauty to his verse,
+Stirred by a painted beauty to his verse,
 Who heaven itself for ornament doth use,
 And every fair with his fair doth rehearse,
 Making a couplement of proud compare
@@ -441,12 +823,14 @@ That heaven's air in this huge rondure hems;
 O let me true in love but truly write,
 And then believe me: my love is as fair
 As any mother's child, though not so bright
-As those gold candles fix'd in heaven's air:
+As those gold candles fixed in heaven's air:
     Let them say more that like of hearsay well,
     I will not praise, that purpose not to sell.
 
 I:shakespeare0022
-T:Sonnet 22
+T:22
+TI:
+TOC:
 F:My glass shall not persuade me I am old
 K:sonnet
 
@@ -466,7 +850,9 @@ As tender nurse her babe from faring ill:
     Thou gav'st me thine not to give back again.
 
 I:shakespeare0023
-T:Sonnet 23
+T:23
+TI:
+TOC:
 F:As an unperfect actor on the stage
 K:sonnet
 
@@ -481,16 +867,18 @@ O'ercharged with burden of mine own love's might:
 O let my books be then the eloquence
 And dumb presagers of my speaking breast,
 Who plead for love, and look for recompense,
-More than that tongue that more hath more express'd:
+More than that tongue that more hath more expressed:
     O learn to read what silent love hath writ! 
     To hear with eyes belongs to love's fine wit.
 
 I:shakespeare0024
-T:Sonnet 24
-F:Mine eye hath play'd the painter, and hath steel'd
+T:24
+TI:
+TOC:
+F:Mine eye hath played the painter, and hath steeled
 K:sonnet
 
-Mine eye hath play'd the painter, and hath stell'd
+Mine eye hath played the painter, and hath stelled
 Thy beauty's form in table of my heart;
 My body is the frame wherein 'tis held,
 And perspective it is the painter's art;
@@ -506,27 +894,31 @@ Delights to peep, to gaze therein on thee;
     They draw but what they see, know not the heart.
 
 I:shakespeare0025
-T:Sonnet 25
+T:25
+TI:
+TOC:
 F:Let those who are in favour with their stars
 K:sonnet
 
 Let those who are in favour with their stars
 Of public honour and proud titles boast,
 Whilst I, whom fortune of such triumph bars,
-Unlook'd for joy in that I honour most;
+Unlooked for joy in that I honour most;
 Great princes' favourites their fair leaves spread
 But as the marigold at the sun's eye,
 And in themselves their pride lies buried,
 For at a frown they in their glory die.
 The painful warrior famoused for worth,
-After a thousand victories once foil'd,
+After a thousand victories once foiled,
 Is from the book of honour razed quite,
 And all the rest forgot for which he toil'd:
     Then happy I, that love and am beloved
     Where I may not remove, nor be removed.
 
 I:shakespeare0026
-T:Sonnet 26
+T:26
+TI:
+TOC:
 F:Lord of my love, to whom in vassalage
 K:sonnet
 
@@ -540,13 +932,15 @@ But that I hope some good conceit of thine
 In thy soul's thought (all naked) will bestow it:
 Till whatsoever star that guides my moving
 Points on me graciously with fair aspect,
-And puts apparel on my tatter'd loving,
+And puts apparel on my tattered loving,
 To show me worthy of thy sweet respect; 
     Then may I dare to boast how I do love thee;
     Till then, not show my head where thou mayst prove me.
 
 I:shakespeare0027
-T:Sonnet 27
+T:27
+TI:
+TOC:
 F:Weary with toil, I haste me to my bed
 K:sonnet
 
@@ -566,27 +960,31 @@ Makes black night beauteous, and her old face new:
     For thee, and for myself, no quiet find.
 
 I:shakespeare0028
-T:Sonnet 28
+T:28
+TI:
+TOC:
 F:How can I then return in happy plight
 K:sonnet
 
 How can I then return in happy plight,
-That am debarr'd the benefit of rest?
-When day's oppression is not eas'd by night,
-But day by night and night by day oppress'd?
+That am debarred the benefit of rest?
+When day's oppression is not eased by night,
+But day by night and night by day oppressed?
 And each, though enemies to either's reign,
 Do in consent shake hands to torture me,
 The one by toil, the other to complain
 How far I toil, still farther off from thee.
 I tell the day to please him, thou art bright,
 And dost him grace, when clouds do blot the heaven;
-So flatter I the swart-complexion'd night,
+So flatter I the swart-complexioned night,
 When sparkling stars twire not thou gild'st the even;
     But day doth daily draw my sorrows longer
     And night doth nightly make grief's length seem stronger.
 
 I:shakespeare0029
-T:Sonnet 29
+T:29
+TI:
+TOC:
 F:When in disgrace with fortune and men's eyes
 K:sonnet
 
@@ -595,7 +993,7 @@ I all alone beweep my outcast state,
 And trouble deal heav'n with my bootless cries,
 And look upon myself, and curse my fate,
 Wishing me like to one more rich in hope,
-Featured like him, like him with friends possess'd,
+Featured like him, like him with friends possessed,
 Desiring this man's art and that man's scope,
 With what I most enjoy contented least;
 Yet in these thoughts myself almost despising,
@@ -606,7 +1004,9 @@ From sullen earth sings hymns at heaven's gate;
     That then I scorn to change my state with kings.
 
 I:shakespeare0030
-T:Sonnet 30
+T:30
+TI:
+TOC:
 F:When to the sessions of sweet silent thought
 K:sonnet
 
@@ -616,8 +1016,8 @@ I sigh the lack of many a thing I sought,
 And with old woes new wail my dear time's waste;
 Then can I drown an eye (unused to flow)
 For precious friends hid in death's dateless night,
-And weep afresh love's long since cancell'd woe,
-And moan th'expense of many a vanish'd sight. 
+And weep afresh love's long since cancelled woe,
+And moan th'expense of many a vanished sight. 
 Then can I grieve at grievances foregone,
 And heavily from woe to woe tell o'er
 The sad account of fore-bemoaned moan,
@@ -626,7 +1026,9 @@ Which I new pay, as if not paid before;
     All losses are restored, and sorrows end.
 
 I:shakespeare0031
-T:Sonnet 31
+T:31
+TI:
+TOC:
 F:Thy bosom is endeared with all hearts
 K:sonnet
 
@@ -646,7 +1048,9 @@ That due of many, now is thine alone.
     And thou, all they, hast all the all of me.
 
 I:shakespeare0032
-T:Sonnet 32
+T:32
+TI:
+TOC:
 F:If thou survive my well-contented day
 K:sonnet
 
@@ -655,7 +1059,7 @@ When that churl Death my bones with dust shall cover,
 And shalt by fortune once more re-survey
 These poor rude lines of thy deceased lover:
 Compare them with the bett'ring of the time,
-And though they be outstripp'd by every pen,
+And though they be outstripped by every pen,
 Reserve them for my love, not for their rhyme,
 Exceeded by the height of happier men.
 O then vouchsafe me but this loving thought: 
@@ -666,7 +1070,9 @@ To march in ranks of better equipage:
     Theirs for their style I'll read, his for his love."
 
 I:shakespeare0033
-T:Sonnet 33
+T:33
+TI:
+TOC:
 F:Full many a glorious morning have I seen
 K:sonnet
 
@@ -681,12 +1087,14 @@ Stealing unseen to west with this disgrace:
 Even so my sun one early morn did shine
 With all triumphant splendour on my brow;
 But out alack, he was but one hour mine,
-The region cloud hath mask'd him from me now.
+The region cloud hath masked him from me now.
     Yet him for this, my love no whit disdaineth;
     Suns of the world may stain, when heaven's sun staineth.
 
 I:shakespeare0034
-T:Sonnet 34
+T:34
+TI:
+TOC:
 F:Why didst thou promise such a beauteous day
 K:sonnet
 
@@ -706,7 +1114,9 @@ To him that bears the strong offence's loss.
     And they are rich, and ransom all ill deeds.
 
 I:shakespeare0035
-T:Sonnet 35
+T:35
+TI:
+TOC:
 F:No more be grieved at that which thou hast done
 K:sonnet
 
@@ -726,7 +1136,9 @@ Such civil war is in my love and hate
     To that sweet thief which sourly robs from me.
 
 I:shakespeare0036
-T:Sonnet 36
+T:36
+TI:
+TOC:
 F:Let me confess that we two must be twain
 K:sonnet
 
@@ -746,7 +1158,9 @@ Unless thou take that honour from thy name:
     As thou being mine, mine is thy good report.
 
 I:shakespeare0037
-T:Sonnet 37
+T:37
+TI:
+TOC:
 F:As a decrepit father takes delight
 K:sonnet
 
@@ -766,7 +1180,9 @@ And by a part of all thy glory live:
     This wish I have; then ten times happy me.
 
 I:shakespeare0038
-T:Sonnet 38
+T:38
+TI:
+TOC:
 F:How can my Muse want subject to invent
 K:sonnet
 
@@ -786,7 +1202,9 @@ Eternal numbers to outlive long date.
     The pain be mine, but thine shall be the praise.
 
 I:shakespeare0039
-T:Sonnet 39
+T:39
+TI:
+TOC:
 F:O how thy worth with manners may I sing
 K:sonnet
 
@@ -806,7 +1224,9 @@ Which time and thoughts so sweetly dost deceive,
     By praising him here who doth hence remain.
 
 I:shakespeare0040
-T:Sonnet 40
+T:40
+TI:
+TOC:
 F:Take all my loves, my love; yea, take them all
 K:sonnet
 
@@ -826,7 +1246,9 @@ To bear love's wrong than hate's known injury.
     Kill me with spites; yet we must not be foes.
 
 I:shakespeare0041
-T:Sonnet 41
+T:41
+TI:
+TOC:
 F:Those petty wrongs that liberty commits
 K:sonnet
 
@@ -846,7 +1268,9 @@ Where thou art forced to break a twofold truth:
     Thine by thy beauty being false to me.
 
 I:shakespeare0042
-T:Sonnet 42
+T:42
+TI:
+TOC:
 F:That thou hast her it is not all my grief
 K:sonnet
 
@@ -866,7 +1290,9 @@ And both for my sake lay on me this cross:
     Sweet flattery! Then she loves but me alone.
 
 I:shakespeare0043
-T:Sonnet 43
+T:43
+TI:
+TOC:
 F:When most I wink, then do mine eyes best see
 K:sonnet
 
@@ -886,7 +1312,9 @@ Through heavy sleep on sightless eyes doth stay?
     And nights bright days when dreams do show thee me.
 
 I:shakespeare0044
-T:Sonnet 44
+T:44
+TI:
+TOC:
 F:If the dull substance of my flesh were thought
 K:sonnet
 
@@ -906,7 +1334,9 @@ I must attend time's leisure with my moan;
     But heavy tears, badges of either's woe.
 
 I:shakespeare0045
-T:Sonnet 45
+T:45
+TI:
+TOC:
 F:The other two, slight air, and purging fire
 K:sonnet
 
@@ -917,16 +1347,18 @@ These, present absent, with swift motion slide;
 For when these quicker elements are gone
 In tender embassy of love to thee,
 My life, being made of four, with two alone
-Sinks down to death, oppress'd with melancholy,
+Sinks down to death, oppressed with melancholy,
 Until life's composition be recured
-By those swift messengers return'd from thee
+By those swift messengers returned from thee
 Who even but now come back again assured
 Of thy fair health, recounting it to me.
     This told, I joy; but then no longer glad,
     I send them back again and straight grow sad.
 
 I:shakespeare0046
-T:Sonnet 46
+T:46
+TI:
+TOC:
 F:Mine eye and heart are at a mortal war
 K:sonnet
 
@@ -946,13 +1378,15 @@ The clear eye's moiety, and the dear heart's part:
     And my heart's right, thy inward love of heart.
 
 I:shakespeare0047
-T:Sonnet 47
+T:47
+TI:
+TOC:
 F:Betwixt mine eye and heart a league is took
 K:sonnet
 
 Betwixt mine eye and heart a league is took,
 And each doth good turns now unto the other;
-When that mine eye is famish'd for a look,
+When that mine eye is famished for a look,
 Or heart in love with sighs himself doth smother,
 With my love's picture then my eye doth feast,
 And to the painted banquet bids my heart;
@@ -966,7 +1400,9 @@ And I am still with them and they with thee;
     Awakes my heart to heart's and eye's delight.
 
 I:shakespeare0048
-T:Sonnet 48
+T:48
+TI:
+TOC:
 F:How careful was I, when I took my way
 K:sonnet
 
@@ -978,7 +1414,7 @@ But thou, to whom my jewels trifles are,
 Most worthy of comfort, now my greatest grief,
 Thou best of dearest, and mine only care,
 Art left the prey of every vulgar thief.
-Thee have I not lock'd up in any chest,
+Thee have I not locked up in any chest,
 Save where thou art not, though I feel thou art,
 Within the gentle closure of my breast,
 From whence at pleasure thou mayst come and part;
@@ -986,14 +1422,16 @@ From whence at pleasure thou mayst come and part;
     For truth proves thievish for a prize so dear.
 
 I:shakespeare0049
-T:Sonnet 49
+T:49
+TI:
+TOC:
 F:Against that time, if ever that time come
 K:sonnet
 
 Against that time, if ever that time come,
 When I shall see thee frown on my defects;
 Whenas thy love hath cast his utmost sum,
-Call'd to that audit by advised respects;
+Called to that audit by advised respects;
 Against that time when thou shalt strangely pass,
 And scarcely greet me with that sun, thine eye;
 When love, converted from the thing it was,
@@ -1006,7 +1444,9 @@ To guard the lawful reasons on thy part:
     Since why to love, I can allege no cause.
 
 I:shakespeare0050
-T:Sonnet 50
+T:50
+TI:
+TOC:
 F:How heavy do I journey on the way
 K:sonnet
 
@@ -1026,7 +1466,9 @@ More sharp to me than spurring to his side,
     My grief lies onward and my joy behind.
 
 I:shakespeare0051
-T:Sonnet 51
+T:51
+TI:
+TOC:
 F:Thus can my love excuse the slow offence
 K:sonnet
 
@@ -1046,7 +1488,9 @@ But love, for love, thus shall excuse my jade:
     Towards thee I'll run, and give him leave to go.
 
 I:shakespeare0052
-T:Sonnet 52
+T:52
+TI:
+TOC:
 F:So am I as the rich, whose blessed key
 K:sonnet
 
@@ -1061,12 +1505,14 @@ Or captain jewels in the carcanet.
 So is the time that keeps you as my chest,
 Or as the wardrobe which the robe doth hide,
 To make some special instant special blessed
-By new unfolding his imprison'd pride.
+By new unfolding his imprisoned pride.
     Blessed are you, whose worthiness gives scope,
-    Being had, to triumph; being lack'd, to hope.
+    Being had, to triumph; being lacked, to hope.
 
 I:shakespeare0053
-T:Sonnet 53
+T:53
+TI:
+TOC:
 F:What is your substance, whereof are you made
 K:sonnet
 
@@ -1086,7 +1532,9 @@ And you in every blessed shape we know.
     But you like none, none you, for constant heart.
 
 I:shakespeare0054
-T:Sonnet 54
+T:54
+TI:
+TOC:
 F:O how much more doth beauty beauteous seem
 K:sonnet
 
@@ -1099,21 +1547,23 @@ As the perfumed tincture of the roses,
 Hang on such thorns, and play as wantonly,
 When summer's breath their masked buds discloses;
 But for their virtue only is their show
-They live unwoo'd, and unrespected fade,
+They live unwooed, and unrespected fade,
 Die to themselves. Sweet roses do not so;
 Of their sweet deaths are sweetest odours made;
     And so of you, beauteous and lovely youth;
     When that shall vade, by verse distils your truth.
 
 I:shakespeare0055
-T:Sonnet 55
+T:55
+TI:
+TOC:
 F:Not marble, nor the gilded monuments
 K:sonnet
 
 Not marble, nor the gilded monuments
 Of princes, shall outlive this powerful rhyme;
 But you shall shine more bright in these contents
-Than unswept stone, besmear'd with sluttish time.
+Than unswept stone, besmeared with sluttish time.
 When wasteful war shall statues overturn
 And broils root out the work of masonry,
 Nor Mars his sword, nor war's quick fire, shall burn
@@ -1126,13 +1576,15 @@ That wear this world out to the ending doom.
     You live in this, and dwell in lover's eyes.
 
 I:shakespeare0056
-T:Sonnet 56
+T:56
+TI:
+TOC:
 F:Sweet love, renew thy force; be it not said
 K:sonnet
 
 Sweet love, renew thy force; be it not said
 Thy edge should blunter be than appetite,
-Which but today by feeding is allay'd,
+Which but today by feeding is allayed,
 Tomorrow sharp'ned in his former might; 
 So, love, be thou; although today thou fill
 Thy hungry eyes even till they wink with fullness,
@@ -1143,10 +1595,12 @@ Which parts the shore, where two contracted new
 Come daily to the banks, that when they see
 Return of love, more blessed may be the view;
     Or call it winter, which being full of care
-    Makes summer's welcome thrice more wish'd, more rare.
+    Makes summer's welcome thrice more wished, more rare.
 
 I:shakespeare0057
-T:Sonnet 57
+T:57
+TI:
+TOC:
 F:Being your slave, what should I do but tend
 K:sonnet
 
@@ -1166,7 +1620,9 @@ Save, where you are, how happy you make those.
     Though you do anything, he thinks no ill.
 
 I:shakespeare0058
-T:Sonnet 58
+T:58
+TI:
+TOC:
 F:That god forbid, that made me first your slave
 K:sonnet
 
@@ -1175,7 +1631,7 @@ I should in thought control your times of pleasure,
 Or at your hand th'account of hours to crave,
 Being your vassal bound to stay your leisure.
 O let me suffer, being at your beck,
-Th'imprison'd absence of your liberty,
+Th'imprisoned absence of your liberty,
 And patience tame, to sufferance bide each check,
 Without accusing you of injury.
 Be where you list, your charter is so strong
@@ -1186,7 +1642,9 @@ Yourself to pardon of self-doing crime.
     Not blame your pleasure be it ill or well.
 
 I:shakespeare0059
-T:Sonnet 59
+T:59
+TI:
+TOC:
 F:If there be nothing new, but that which is
 K:sonnet
 
@@ -1206,7 +1664,9 @@ Or whether revolution be the same.
     To subjects worse have given admiring praise.
 
 I:shakespeare0060
-T:Sonnet 60
+T:60
+TI:
+TOC:
 F:Like as the waves make towards the pebbled shore
 K:sonnet
 
@@ -1215,7 +1675,7 @@ So do our minutes hasten to their end,
 Each changing place with that which goes before,
 In sequent toil all forwards do contend.
 Nativity, once in the main of light,
-Crawls to maturity; wherewith being crown'd
+Crawls to maturity; wherewith being crowned
 Crooked eclipses 'gainst his glory fight,
 And Time, that gave, doth now his gift confound.
 Time doth transfix the flourish set on youth,
@@ -1226,7 +1686,9 @@ And nothing stands but for his scythe to mow.
     Praising thy worth, despite his cruel hand.
 
 I:shakespeare0061
-T:Sonnet 61
+T:61
+TI:
+TOC:
 F:Is it thy will thy image should keep open
 K:sonnet
 
@@ -1246,7 +1708,9 @@ To play the watchman ever for thy sake.
     From me far off, with others all too near.
 
 I:shakespeare0062
-T:Sonnet 62
+T:62
+TI:
+TOC:
 F:Sin of self-love possesseth all mine eye
 K:sonnet
 
@@ -1259,24 +1723,26 @@ No shape so true, no truth of such account,
 And for myself mine own worth do define
 As I all other in all worths surmount.
 But when my glass shows me myself indeed,
-Beated and chopp'd with tann'd antiquity,
+Beated and chopped with tanned antiquity,
 Mine own self-love quite contrary I read;
 Self, so self-loving, were iniquity;
     'Tis thee (myself) that for myself I praise,
     Painting my age with beauty of thy days.
 
 I:shakespeare0063
-T:Sonnet 63
+T:63
+TI:
+TOC:
 F:Against my love shall be as I am now
 K:sonnet
 
 Against my love shall be as I am now,
-With Time's injurious hand crush'd and o'erworn;
-When hours have drain'd his blood, and fill'd his brow
+With Time's injurious hand crushed and o'erworn;
+When hours have drained his blood, and filled his brow
 With lines and wrinkles; when his youthful morn
 Hath travailed on to age's steepy night,
 And all those beauties whereof now he's king
-Are vanishing, or vanish'd out of sight,
+Are vanishing, or vanished out of sight,
 Stealing away the treasure of his spring;
 For such a time do I now fortify
 Against confounding age's cruel knife,
@@ -1286,7 +1752,9 @@ My sweet love's beauty, though my lover's life.
     And they shall live, and he in them still green.
 
 I:shakespeare0064
-T:Sonnet 64
+T:64
+TI:
+TOC:
 F:When I have seen by Time's fell hand defaced
 K:sonnet
 
@@ -1306,7 +1774,9 @@ That Time will come and take my love away.
     But weep to have that which it fears to lose.
 
 I:shakespeare0065
-T:Sonnet 65
+T:65
+TI:
+TOC:
 F:Since brass, nor stone, nor earth, nor boundless sea
 K:sonnet
 
@@ -1326,13 +1796,15 @@ Or who his spoil o'er beauty can forbid?
     That in black ink my love may still shine bright.
 
 I:shakespeare0066
-T:Sonnet 66
+T:66
+TI:
+TOC:
 F:Tired with all these for restful death I cry
 K:sonnet
 
 Tired with all these for restful death I cry:
 As to behold desert a beggar born,
-And needy nothing trimm'd in jollity,
+And needy nothing trimmed in jollity,
 And purest faith unhappily forsworn,
 And guilded honour shamefully misplaced,
 And maiden virtue rudely strumpeted,
@@ -1340,13 +1812,15 @@ And right perfection wrongfully disgraced,
 And strength by limping sway disabled,
 And art made tongue-tied by authority,
 And folly, doctor-like, controlling skill,
-And simple truth miscall'd simplicity,
+And simple truth miscalled simplicity,
 And captive good attending captain ill:
     Tired with all these, from these would I be gone,
     Save that to die I leave my love alone.
 
 I:shakespeare0067
-T:Sonnet 67
+T:67
+TI:
+TOC:
 F:Ah, wherefore with infection should he live
 K:sonnet
 
@@ -1359,14 +1833,16 @@ And steal dead seeing of his living hue?
 Why should poor beauty indirectly seek
 Roses of shadow, since his rose is true?
 Why should he live, now Nature bankrupt is,
-Beggar'd of blood to blush through lively veins?
+Beggared of blood to blush through lively veins?
 For she hath no exchequer now but his,
 And proud of many, lives upon his gains.
     O, him she stores, to show what wealth she had
     In days long since, before these last so bad.
 
 I:shakespeare0068
-T:Sonnet 68
+T:68
+TI:
+TOC:
 F:Thus is his cheek the map of days outworn
 K:sonnet
 
@@ -1386,7 +1862,9 @@ Robbing no old to dress his beauty new;
     To show false Art what beauty was of yore.
 
 I:shakespeare0069
-T:Sonnet 69
+T:69
+TI:
+TOC:
 F:Those parts of thee that the world's eye doth view
 K:sonnet
 
@@ -1394,7 +1872,7 @@ Those parts of thee that the world's eye doth view
 Want nothing that the thought of hearts can mend;
 All tongues, the voice of souls, give thee that due,
 Utt'ring bare truth, even so as foes commend:
-Thy outward thus with outward praise is crown'd.
+Thy outward thus with outward praise is crowned.
 But those same tongues that give thee so thine own
 In other accents do this praise confound,
 By seeing further than the eye hath shown;
@@ -1406,7 +1884,9 @@ To thy fair flower add the rank smell of weeds.
     The soil is this, that thou dost common grow.
 
 I:shakespeare0070
-T:Sonnet 70
+T:70
+TI:
+TOC:
 F:That thou art blamed shall not be thy defect
 K:sonnet
 
@@ -1415,18 +1895,20 @@ For slander's mark was ever yet the fair;
 The ornament of beauty is suspect,
 A crow that flies in heaven's sweetest air.
 So thou be good, slander doth but approve
-Thy worth the greater, being woo'd of time;
+Thy worth the greater, being wooed of time;
 For canker vice the sweetest buds doth love,
 And thou present'st a pure unstained prime.
-Thou hast pass'd by the ambush of young days,
-Either not assail'd, or victor, being charged;
+Thou hast passed by the ambush of young days,
+Either not assailed, or victor, being charged;
 Yet this thy praise cannot be so thy praise,
 To tie up envy, evermore enlarged:
-    If some suspect of ill mask'd not thy show
+    If some suspect of ill masked not thy show
     Then thou alone kingdoms of hearts shouldst owe.
 
 I:shakespeare0071
-T:Sonnet 71
+T:71
+TI:
+TOC:
 F:No longer mourn for me when I am dead
 K:sonnet
 
@@ -1446,7 +1928,9 @@ But let your love even with my life decay;
     And mock you with me after I am gone.
 
 I:shakespeare0072
-T:Sonnet 72
+T:72
+TI:
+TOC:
 F:O, lest the world should task you to recite
 K:sonnet
 
@@ -1466,14 +1950,16 @@ And live no more to shame nor me, nor you:
     And so should you, to love things nothing worth.
 
 I:shakespeare0073
-T:Sonnet 73
+T:73
+TI:
+TOC:
 F:That time of year thou mayst in me behold
 K:sonnet
 
 That time of year thou mayst in me behold,
 When yellow leaves, or none, or few, do hang
 Upon those boughs which shake against the cold,
-Bare ruin'd choirs where late the sweet birds sang;
+Bare ruined choirs where late the sweet birds sang;
 In me thou seest the twilight of such day
 As after sunset fadeth in the west,
 Which by and by black night doth take away,
@@ -1481,12 +1967,14 @@ Death's second self, that seals up all in rest;
 In me thou seest the glowing of such fire
 That on the ashes of his youth doth lie,
 As the deathbed, whereon it must expire,
-Consumed with that which it was nourish'd by;
+Consumed with that which it was nourished by;
     This thou perceiv'st, which makes thy love more strong,
     To love that well, which thou must leave ere long.
 
 I:shakespeare0074
-T:Sonnet 74
+T:74
+TI:
+TOC:
 F:But be contented when that fell arrest
 K:sonnet
 
@@ -1506,18 +1994,20 @@ Too base of thee to be remembered:
     And that is this, and this with thee remains.
 
 I:shakespeare0075
-T:Sonnet 75
+T:75
+TI:
+TOC:
 F:So are you to my thoughts as food to life
 K:sonnet
 
 So are you to my thoughts as food to life,
-Or as sweet season'd showers are to the ground;
+Or as sweet seasoned showers are to the ground;
 And for the peace of you I hold such strife
 As 'twixt a miser and his wealth is found:
 Now proud as an enjoyer, and anon
 Doubting the filching age will steal his treasure;
 Now counting best to be with you alone,
-Then better'd that the world may see my pleasure;
+Then bettered that the world may see my pleasure;
 Sometime all full with feasting on your sight,
 And by and by clean starved for a look,
 Possessing or pursuing no delight
@@ -1526,7 +2016,9 @@ Save what is had, or must from you be took.
     Or gluttoning on all, or all away.
 
 I:shakespeare0076
-T:Sonnet 76
+T:76
+TI:
+TOC:
 F:Why is my verse so barren of new pride
 K:sonnet
 
@@ -1546,7 +2038,9 @@ Spending again what is already spent:
     So is my love still telling what is told.
 
 I:shakespeare0077
-T:Sonnet 77
+T:77
+TI:
+TOC:
 F:Thy glass will show thee how thy beauties wear
 K:sonnet
 
@@ -1560,13 +2054,15 @@ Thou by thy dial's shady stealth mayst know
 Time's thievish progress to eternity;
 Look what thy memory can not contain,
 Commit to these waste blanks, and thou shalt find
-Those children nurs'd, deliver'd from thy brain,
+Those children nursed, delivered from thy brain,
 To take a new acquaintance of thy mind.
     These offices, so oft as thou wilt look,
     Shall profit thee, and much enrich thy book.
 
 I:shakespeare0078
-T:Sonnet 78
+T:78
+TI:
+TOC:
 F:So oft have I invoked thee for my Muse
 K:sonnet
 
@@ -1586,13 +2082,15 @@ And arts with thy sweet graces graced be;
     As high as learning, my rude ignorance.
 
 I:shakespeare0079
-T:Sonnet 79
+T:79
+TI:
+TOC:
 F:Whilst I alone did call upon thy aid
 K:sonnet
 
 Whilst I alone did call upon thy aid
 My verse alone had all thy gentle grace;
-But now my gracious numbers are decay'd,
+But now my gracious numbers are decayed,
 And my sick Muse doth give another place.
 I grant, sweet love, thy lovely argument
 Deserves the travail of a worthier pen;
@@ -1606,7 +2104,9 @@ No praise to thee, but what in thee doth live:
     Since what he owes thee, thou thyself dost pay.
 
 I:shakespeare0080
-T:Sonnet 80
+T:80
+TI:
+TOC:
 F:O how I faint when I of you do write
 K:sonnet
 
@@ -1620,13 +2120,15 @@ My saucy bark, inferior far to his,
 On your broad main doth wilfully appear.
 Your shallowest help will hold me up afloat,
 Whilst he upon your soundless deep doth ride;
-Or being wrack'd, I am a worthless boat,
+Or being wracked, I am a worthless boat,
 He of tall building, and of goodly pride.
     Then if he thrive, and I be cast away,
     The worst was this: my love was my decay.
 
 I:shakespeare0081
-T:Sonnet 81
+T:81
+TI:
+TOC:
 F:Or I shall live, your epitaph to make
 K:sonnet
 
@@ -1646,7 +2148,9 @@ When all the breathers of this world are dead.
     Where breath most breathes, even in the mouths of men.
 
 I:shakespeare0082
-T:Sonnet 82
+T:82
+TI:
+TOC:
 F:I grant thou wert not married to my Muse
 K:sonnet
 
@@ -1666,7 +2170,9 @@ In true plain words, by thy true-telling friend;
     Where cheeks need blood; in thee it is abused.
 
 I:shakespeare0083
-T:Sonnet 83
+T:83
+TI:
+TOC:
 F:I never saw that you did painting need
 K:sonnet
 
@@ -1686,7 +2192,9 @@ When others would give life, and bring a tomb.
     Than both your poets can in praise devise.
 
 I:shakespeare0084
-T:Sonnet 84
+T:84
+TI:
+TOC:
 F:Who is it that says most? Which can say more
 K:sonnet
 
@@ -1706,7 +2214,9 @@ Making his style admired everywhere.
     Being fond on praise, which makes your praises worse.
 
 I:shakespeare0085
-T:Sonnet 85
+T:85
+TI:
+TOC:
 F:My tongue-tied Muse in manners holds her still
 K:sonnet
 
@@ -1717,7 +2227,7 @@ And precious phrase by all the Muses filed;
 I think good thoughts, whilst other write good words,
 And like unlettered clerk still cry "Amen"
 To every hymn that able spirit affords
-In polish'd form of well-refined pen.
+In polished form of well-refined pen.
 Hearing you praised, I say, "'Tis so, 'tis true,"
 And to the most of praise add something more;
 But that is in my thought, whose love to you
@@ -1726,7 +2236,9 @@ But that is in my thought, whose love to you
     Me for my dumb thoughts, speaking in effect.
 
 I:shakespeare0086
-T:Sonnet 86
+T:86
+TI:
+TOC:
 F:Was it the proud full sail of his great verse
 K:sonnet
 
@@ -1742,11 +2254,13 @@ He, nor that affable familiar ghost
 Which nightly gulls him with intelligence,
 As victors of my silence cannot boast;
 I was not sick of any fear from thence.
-    But when your countenance fill'd up his line,
-    Then lack'd I matter, that enfeebled mine.
+    But when your countenance filled up his line,
+    Then lacked I matter, that enfeebled mine.
 
 I:shakespeare0087
-T:Sonnet 87
+T:87
+TI:
+TOC:
 F:Farewell, thou art too dear for my possessing
 K:sonnet
 
@@ -1766,7 +2280,9 @@ Comes home again, on better judgement making.
     In sleep a king, but waking no such matter.
 
 I:shakespeare0088
-T:Sonnet 88
+T:88
+TI:
+TOC:
 F:When thou shalt be disposed to set me light
 K:sonnet
 
@@ -1776,7 +2292,7 @@ Upon thy side, against myself, I'll fight,
 And prove thee virtuous, though thou art forsworn;
 With mine own weakness being best acquainted,
 Upon thy part I can set down a story
-Of faults conceal'd, wherein I am attainted,
+Of faults concealed, wherein I am attainted,
 That thou, in losing me, shalt win much glory;
 And I by this will be a gainer too,
 For bending all my loving thoughts on thee,
@@ -1786,7 +2302,9 @@ Doing thee vantage, double vantage me:
     That for thy right myself will bear all wrong.
 
 I:shakespeare0089
-T:Sonnet 89
+T:89
+TI:
+TOC:
 F:Say that thou didst forsake me for some fault
 K:sonnet
 
@@ -1806,7 +2324,9 @@ And haply of our old acquaintance tell.
     For I must ne'er love him whom thou dost hate.
 
 I:shakespeare0090
-T:Sonnet 90
+T:90
+TI:
+TOC:
 F:Then hate me when thou wilt, if ever, now
 K:sonnet
 
@@ -1814,8 +2334,8 @@ Then hate me when thou wilt, if ever, now,
 Now, while the world is bent my deeds to cross,
 Join with the spite of fortune, make me bow,
 And do not drop in for an after-loss.
-Ah, do not, when my heart hath 'scap'd this sorrow,
-Come in the rearward of a conquer'd woe;
+Ah, do not, when my heart hath 'scaped this sorrow,
+Come in the rearward of a conquered woe;
 Give not a windy night a rainy morrow,
 To linger out a purposed overthrow.
 If thou wilt leave me, do not leave me last,
@@ -1826,7 +2346,9 @@ At first the very worst of fortune's might;
     Compared with loss of thee, will not seem so.
 
 I:shakespeare0091
-T:Sonnet 91
+T:91
+TI:
+TOC:
 F:Some glory in their birth, some in their skill
 K:sonnet
 
@@ -1846,7 +2368,9 @@ And having thee, of all men's pride I boast -
     All this away, and me most wretched make.
 
 I:shakespeare0092
-T:Sonnet 92
+T:92
+TI:
+TOC:
 F:But do thy worst to steal thyself away
 K:sonnet
 
@@ -1866,13 +2390,15 @@ Happy to have thy love, happy to die!
     Thou mayst be false, and yet I know it not.
 
 I:shakespeare0093
-T:Sonnet 93
+T:93
+TI:
+TOC:
 F:So shall I live, supposing thou art true
 K:sonnet
 
 So shall I live, supposing thou art true,
 Like a deceived husband; so love's face
-May still seem love to me, though alter'd new,
+May still seem love to me, though altered new,
 Thy looks with me, thy heart in other place;
 For there can live no hatred in thine eye,
 Therefore in that I cannot know thy change.
@@ -1886,7 +2412,9 @@ Thy looks should nothing thence but sweetness tell.
     if thy sweet virtue answer not thy show.
 
 I:shakespeare0094
-T:Sonnet 94
+T:94
+TI:
+TOC:
 F:They that have power to hurt, and will do none
 K:sonnet
 
@@ -1906,7 +2434,9 @@ The basest weed outbraves his dignity:
     Lilies that fester smell far worse than weeds.
 
 I:shakespeare0095
-T:Sonnet 95
+T:95
+TI:
+TOC:
 F:How sweet and lovely dost thou make the shame
 K:sonnet
 
@@ -1926,7 +2456,9 @@ And all things turn to fair that eyes can see!
     The hardest knife ill used doth lose his edge.
 
 I:shakespeare0096
-T:Sonnet 96
+T:96
+TI:
+TOC:
 F:Some say thy fault is youth, some wantonness
 K:sonnet
 
@@ -1935,9 +2467,9 @@ Some say thy grace is youth and gentle sport;
 Both grace and faults are loved of more and less;
 Thou mak'st faults graces, that to thee resort:
 As on the finger of a throned queen
-The basest jewel will be well esteem'd,
+The basest jewel will be well esteemed,
 So are those errors that in thee are seen
-To truths translated, and for true things deem'd.
+To truths translated, and for true things deemed.
 How many lambs might the stern wolf betray
 If like a lamb he could his looks translate?
 How many gazers mightst thou lead away
@@ -1946,7 +2478,9 @@ If thou wouldst use the strength of all thy state?
     As thou being mine, mine is thy good report.
 
 I:shakespeare0097
-T:Sonnet 97
+T:97
+TI:
+TOC:
 F:How like a winter hath my absence been
 K:sonnet
 
@@ -1954,11 +2488,11 @@ How like a winter hath my absence been
 From thee, the pleasure of the fleeting year!
 What freezings have I felt, what dark days seen,
 What old December's bareness everywhere!
-And yet this time remov'd was summer's time,
+And yet this time removed was summer's time,
 The teeming autumn big with rich increase
 Bearing the wanton burden of the prime,
 Like widowed wombs after their lords' decease:
-Yet this abundant issue seem'd to me
+Yet this abundant issue seemed to me
 But hope of orphans, and unfathered fruit;
 For summer and his pleasures wait on thee,
 And thou away, the very birds are mute;
@@ -1966,14 +2500,16 @@ And thou away, the very birds are mute;
     That leaves look pale, dreading the winter's near.
 
 I:shakespeare0098
-T:Sonnet 98
+T:98
+TI:
+TOC:
 F:From you have I been absent in the spring
 K:sonnet
 
 From you have I been absent in the spring,
-When proud pied April dress'd in all his trim,
+When proud pied April dressed in all his trim,
 Hath put a spirit of youth in everything,
-That heavy Saturn laugh'd, and leap'd with him.
+That heavy Saturn laughed, and leaped with him.
 Yet nor the lays of birds, nor the sweet smell
 Of different flowers in odour and in hue,
 Could make me any summer's story tell,
@@ -1982,11 +2518,13 @@ Nor did I wonder at the lily's white,
 Nor praise the deep vermilion in the rose;
 They were but sweet, but figures of delight,
 Drawn after you, you pattern of all those.
-    Yet seem'd it winter still, and, you away,
+    Yet seemed it winter still, and, you away,
     As with your shadow I with these did play.
 
 I:shakespeare0099
-T:Sonnet 99
+T:99
+TI:
+TOC:
 F:The forward violet thus did I chide
 K:sonnet
 
@@ -2000,14 +2538,16 @@ And buds of marjoram had stol'n thy hair;
 The roses fearfully on thorns did stand,
 One blushing shame, another white despair;
 A third, nor red, nor white, had stol'n of both,
-And to his robb'ry had annex'd thy breath;
+And to his robb'ry had annexed thy breath;
 But for his theft, in pride of all his growth,
 A vengeful canker ate him up to death.
     More flowers I noted, yet I none could see,
     But sweet, or colour, it had stol'n from thee.
 
 I:shakespeare0100
-T:Sonnet 100
+T:100
+TI:
+TOC:
 F:Where art thou, Muse, that thou forget'st so long
 K:sonnet
 
@@ -2027,7 +2567,9 @@ And make Time's spoils despised everywhere:
     So thou prevent'st his scythe and crooked knife.
 
 I:shakespeare0101
-T:Sonnet 101
+T:101
+TI:
+TOC:
 F:O truant Muse, what shall be thy amends
 K:sonnet
 
@@ -2036,9 +2578,9 @@ For thy neglect of truth in beauty dyed?
 Both truth and beauty on my love depends;
 So dost thou, too, and therein dignified:
 Make answer, Muse, wilt thou not haply say,
-"Truth needs no colour with his colour fix'd;
+"Truth needs no colour with his colour fixed;
 Beauty no pencil, beauty's truth to lay,
-But best is best if never intermix'd?"
+But best is best if never intermixed?"
 Because he needs no praise, wilt thou be dumb?
 Excuse not silence so, for't lies in thee
 To make him much outlive a gilded tomb,
@@ -2047,7 +2589,9 @@ And to be praised of ages yet to be.
     To make him seem long hence as he shows now.
 
 I:shakespeare0102
-T:Sonnet 102
+T:102
+TI:
+TOC:
 F:My love is strength'ned, though more weak in seeming
 K:sonnet
 
@@ -2067,7 +2611,9 @@ And sweets grown common lose their dear delight:
     Because I would not dull you with my song.
 
 I:shakespeare0103
-T:Sonnet 103
+T:103
+TI:
+TOC:
 F:Alack, what poverty my Muse brings forth
 K:sonnet
 
@@ -2087,7 +2633,9 @@ Than of your graces and your gifts to tell;
     Your own glass shows you, when you look in it.
 
 I:shakespeare0104
-T:Sonnet 104
+T:104
+TI:
+TOC:
 F:To me, fair friend, you never can be old
 K:sonnet
 
@@ -2095,9 +2643,9 @@ To me, fair friend, you never can be old;
 For as you were when first your eye I eyed,
 Such seems your beauty still: three winters cold
 Have from the forests shook three summers' pride;
-Three beauteous springs to yellow autumn turn'd
+Three beauteous springs to yellow autumn turned
 In process of the seasons have I seen;
-Three April perfumes in three hot Junes burn'd,
+Three April perfumes in three hot Junes burned,
 Since first I saw you fresh, which yet are green.
 Ah, yet doth beauty, like a dial hand,
 Steal from his figure, and no pace perceived;
@@ -2107,11 +2655,13 @@ Hath motion, and mine eye may be deceived;
     Ere you were born was beauty's summer dead.
 
 I:shakespeare0105
-T:Sonnet 105
-F:Let not my love be call'd idolatry
+T:105
+TI:
+TOC:
+F:Let not my love be called idolatry
 K:sonnet
 
-Let not my love be call'd idolatry,
+Let not my love be called idolatry,
 Nor my beloved as an idol show,
 Since all alike my songs and praises be,
 To one, of one, still such, and ever so.
@@ -2127,7 +2677,9 @@ Three themes in one, which wondrous scope affords.
     Which three, till now never kept seat in one.
 
 I:shakespeare0106
-T:Sonnet 106
+T:106
+TI:
+TOC:
 F:When in the chronicle of wasted time
 K:sonnet
 
@@ -2137,17 +2689,19 @@ And beauty making beautiful old rhyme,
 In praise of ladies dead, and lovely knights;
 Then in the blazon of sweet beauty's best,
 Of hand, of foot, of lip, of eye, of brow,
-I see their antique pen would have express'd
+I see their antique pen would have expressed
 Even such a beauty as you master now:
 So all their praises are but prophecies
 Of this our time, all you prefiguring;
-And for they look'd but with divining eyes
+And for they looked but with divining eyes
 They had not skill enough your worth to sing;
     For we which now behold these present days
     Had eyes to wonder, but lack tongues to praise.
 
 I:shakespeare0107
-T:Sonnet 107
+T:107
+TI:
+TOC:
 F:Not mine own fears, nor the prophetic soul
 K:sonnet
 
@@ -2167,7 +2721,9 @@ While he insults o'er dull and speechless tribes;
     When tyrants' crests and tombs of brass are spent.
 
 I:shakespeare0108
-T:Sonnet 108
+T:108
+TI:
+TOC:
 F:What's in the brain that ink may character
 K:sonnet
 
@@ -2187,27 +2743,31 @@ But makes antiquity for aye his page,
     Where time and outward form would show it dead.
 
 I:shakespeare0109
-T:Sonnet 109
+T:109
+TI:
+TOC:
 F:O never say that I was false of heart
 K:sonnet
 
 O never say that I was false of heart,
-Though absence seem'd my flame to qualify;
+Though absence seemed my flame to qualify;
 As easy might I from myself depart
 As from my soul which in thy breast doth lie:
 That is my home of love; if I have ranged,
 Like him that travels I return again,
 Just to the time, not with the time exchanged,
 So that myself bring water for my stain;
-Never believe, though in my nature reign'd
+Never believe, though in my nature reigned
 All frailties that besiege all kinds of blood,
-That it could so preposterously be stain'd,
+That it could so preposterously be stained,
 To leave for nothing all thy sum of good:
     For nothing this wide universe I call,
     Save thou, my rose; in it thou art my all.
 
 I:shakespeare0110
-T:Sonnet 110
+T:110
+TI:
+TOC:
 F:Alas, 'tis true, I have gone here and there
 K:sonnet
 
@@ -2215,7 +2775,7 @@ Alas, 'tis true, I have gone here and there,
 And made myself a motley to the view,
 Gored mine own thoughts, sold cheap what is most dear,
 Made old offences of affections new.
-Most true it is that I have look'd on truth
+Most true it is that I have looked on truth
 Askance and strangely; but by all above,
 These blenches gave my heart another youth,
 And worse essays proved thee my best of love.
@@ -2227,7 +2787,9 @@ A god in love, to whom I am confined:
     Even to thy pure and most most loving breast.
 
 I:shakespeare0111
-T:Sonnet 111
+T:111
+TI:
+TOC:
 F:O, for my sake do you with Fortune chide
 K:sonnet
 
@@ -2236,9 +2798,9 @@ The guilty goddess of my harmful deeds,
 That did not better for my life provide
 Than public means, which public manners breeds;
 Thence comes it that my name receives a brand,
-And almost thence my nature is subdu'd
+And almost thence my nature is subdued
 To what it works in, like the dyer's hand;
-Pity me, then, and wish I were renew'd,
+Pity me, then, and wish I were renewed,
 Whilst like a willing patient I will drink
 Potions of eisell 'gainst my strong infection;
 No bitterness that I will bitter think,
@@ -2247,18 +2809,20 @@ Nor double penance to correct correction.
     Even that your pity is enough to cure me.
 
 I:shakespeare0112
-T:Sonnet 112
+T:112
+TI:
+TOC:
 F:Your love and pity doth th'impression fill
 K:sonnet
 
 Your love and pity doth th'impression fill
-Which vulgar scandal stamp'd upon my brow;
+Which vulgar scandal stamped upon my brow;
 For what care I who calls me well or ill
 So you o'er-green my bad, my good allow?
 You are my all-the-world, and I must strive
 To know my shames and praises from your tongue;
 None else to me, nor I to none, alive,
-That my steel'd sense o'er-changes right or wrong.
+That my steeled sense o'er-changes right or wrong.
 In so profound abysm I throw all care
 Of others' voices, that my adder's sense
 To critic and to flatterer stopped are.
@@ -2267,7 +2831,9 @@ Mark how with my neglect I do dispense:
     That all the world besides me thinks you're dead.
 
 I:shakespeare0113
-T:Sonnet 113
+T:113
+TI:
+TOC:
 F:Since I left you, mine eye is in my mind
 K:sonnet
 
@@ -2287,11 +2853,13 @@ The crow, or dove, it shapes them to your feature.
     My most true mind thus maketh mine untrue.
 
 I:shakespeare0114
-T:Sonnet 114
-F:Or whether doth my mind, being crown'd with you
+T:114
+TI:
+TOC:
+F:Or whether doth my mind, being crowned with you
 K:sonnet
 
-Or whether doth my mind, being crown'd with you,
+Or whether doth my mind, being crowned with you,
 Drink up the monarch's plague, this flattery?
 Or whether shall I say mine eye saith true,
 And that your love taught it this alchemy,
@@ -2303,11 +2871,13 @@ O, 'tis the first, 'tis flatt'ry in my seeing,
 And my great mind most kingly drinks it up:
 Mine eye well knows what with his gust is greeing,
 And to his palate doth prepare the cup.
-    If it be poison'd, 'tis the lesser sin,
+    If it be poisoned, 'tis the lesser sin,
     That mine eye loves it and doth first begin.
 
 I:shakespeare0115
-T:Sonnet 115
+T:115
+TI:
+TOC:
 F:Those lines that I before have writ do lie
 K:sonnet
 
@@ -2315,7 +2885,7 @@ Those lines that I before have writ do lie,
 Even those that said I could not love you dearer;
 Yet then my judgement knew no reason why
 My most full flame should afterwards burn clearer.
-But reckoning Time, whose million'd accidents
+But reckoning Time, whose millioned accidents
 Creep in 'twixt vows, and change decrees of kings,
 Tan sacred beauty, blunt the sharp'st intents,
 Divert strong minds to th' course of alt'ring things;
@@ -2327,7 +2897,9 @@ Crowning the present, doubting of the rest?
     To give full growth to that which still doth grow?
 
 I:shakespeare0116
-T:Sonnet 116
+T:116
+TI:
+TOC:
 F:Let me not to the marriage of true minds
 K:sonnet
 
@@ -2347,7 +2919,9 @@ But bears it out even to the edge of doom.
     I never writ, nor no man ever loved.
 
 I:shakespeare0117
-T:Sonnet 117
+T:117
+TI:
+TOC:
 F:Accuse me thus: that I have scanted all
 K:sonnet
 
@@ -2367,7 +2941,9 @@ But shoot not at me in your wakened hate:
     The constancy and virtue of your love.
 
 I:shakespeare0118
-T:Sonnet 118
+T:118
+TI:
+TOC:
 F:Like as, to make our appetites more keen
 K:sonnet
 
@@ -2387,12 +2963,14 @@ Which, rank of goodness, would by ill be cured;
     Drugs poison him that so fell sick of you.
 
 I:shakespeare0119
-T:Sonnet 119
+T:119
+TI:
+TOC:
 F:What potions have I drunk of Siren tears
 K:sonnet
 
 What potions have I drunk of Siren tears
-Distill'd from limbecks foul as hell within,
+Distilled from limbecks foul as hell within,
 Applying fears to hopes, and hopes to fears,
 Still losing when I saw myself to win?
 What wretched errors hath my heart committed,
@@ -2401,13 +2979,15 @@ How have mine eyes out of their spheres been fitted
 In the distraction of this madding fever?
 O benefit of ill: now I find true
 That better is by evil still made better,
-And ruin'd love when it is built anew
+And ruined love when it is built anew
 Grows fairer than at first, more strong, far greater:
     So I return rebuked to my content,
     And gain by ill thrice more than I have spent.
 
 I:shakespeare0120
-T:Sonnet 120
+T:120
+TI:
+TOC:
 F:That you were once unkind befriends me now
 K:sonnet
 
@@ -2416,7 +2996,7 @@ And for that sorrow, which I then did feel,
 Needs must I under my transgression bow,
 Unless my nerves were brass or hammered steel:
 For if you were by my unkindness shaken,
-As I by yours, you've pass'd a hell of time,
+As I by yours, you've passed a hell of time,
 And I, a tyrant, have no leisure taken
 To weigh how once I suffered in your crime.
 O that our night of woe might have rememb'red
@@ -2427,7 +3007,9 @@ The humble salve which wounded bosoms fits!
     Mine ransoms yours, and yours must ransom me.
 
 I:shakespeare0121
-T:Sonnet 121
+T:121
+TI:
+TOC:
 F:Tis better to be vile than vile esteemed
 K:sonnet
 
@@ -2447,18 +3029,20 @@ By their rank thoughts my deeds must not be shown,
     All men are bad, and in their badness reign.
 
 I:shakespeare0122
-T:Sonnet 122
+T:122
+TI:
+TOC:
 F:Thy gift, thy tables, are within my brain
 K:sonnet
 
 Thy gift, thy tables, are within my brain
-Full character'd with lasting memory,
+Full charactered with lasting memory,
 Which shall above that idle rank remain
 Beyond all date, even to eternity;
 Or at the least, so long as brain and heart
 Have faculty by nature to subsist;
 Till each to razed oblivion yield his part
-Of thee, thy record never can be miss'd.
+Of thee, thy record never can be missed.
 That poor retention could not so much hold,
 Nor need I tallies thy dear love to score;
 Therefore to give them from me was I bold,
@@ -2467,7 +3051,9 @@ To trust those tables that receive thee more;
     Were to import forgetfulness in me.
 
 I:shakespeare0123
-T:Sonnet 123
+T:123
+TI:
+TOC:
 F:No! Time, thou shalt not boast that I do change
 K:sonnet
 
@@ -2487,14 +3073,16 @@ Made more or less by thy continual haste:
     I will be true despite thy scythe and thee.
 
 I:shakespeare0124
-T:Sonnet 124
+T:124
+TI:
+TOC:
 F:If my dear love were but the child of state
 K:sonnet
 
 If my dear love were but the child of state,
-It might, for Fortune's bastard, be unfather'd,
+It might, for Fortune's bastard, be unfathered,
 As subject to Time's love or to Time's hate,
-Weeds among weeds, or flowers with flowers gather'd.
+Weeds among weeds, or flowers with flowers gathered.
 No, it was builded far from accident;
 It suffers not in smiling pomp, nor falls
 Under the blow of thralled discontent,
@@ -2507,7 +3095,9 @@ That it nor grows with heat, nor drowns with showers.
     Which die for goodness, who have lived for crime.
 
 I:shakespeare0125
-T:Sonnet 125
+T:125
+TI:
+TOC:
 F:Were't aught to me I bore the canopy
 K:sonnet
 
@@ -2521,13 +3111,15 @@ For compound sweet forgoing simple savour,
 Pitiful thrivers, in their gazing spent?
 No, let me be obsequious in thy heart,
 And take thou my oblation, poor but free,
-Which is not mix'd with seconds, knows no art,
+Which is not mixed with seconds, knows no art,
 But mutual render, only me for thee.
-    Hence, thou suborn'd informer, a true soul
-    When most impeach'd, stands least in thy control.
+    Hence, thou suborned informer, a true soul
+    When most impeached, stands least in thy control.
 
 I:shakespeare0126
-T:Sonnet 126
+T:126
+TI:
+TOC:
 F:O thou my lovely Boy, who in thy power
 K:sonnet
 
@@ -2541,22 +3133,24 @@ She keeps thee to this purpose: that her skill
 May Time disgrace, and wretched minutes kill.
 Yet fear her, O thou minion of her pleasure:
 She may detain, but not still keep, her treasure!
-Her audit, though delay'd, answer'd must be,
+Her audit, though delayed, answered must be,
 And her quietus is to render thee.
     (                                      )
     (                                      )
 
 I:shakespeare0127
-T:Sonnet 127
+T:127
+TI:
+TOC:
 F:In the old age black was not counted fair
 K:sonnet
 
 In the old age black was not counted fair,
 Or if it were, it bore not beauty's name;
 But now is black beauty's successive heir,
-And beauty slander'd with a bastard shame:
+And beauty slandered with a bastard shame:
 For since each hand hath put on nature's power,
-Fairing the foul with art's false borrow'd face,
+Fairing the foul with art's false borrowed face,
 Sweet beauty hath no name, no holy bower,
 But is profaned, if not lives in disgrace.
 Therefore my mistress' brows are raven black,
@@ -2567,7 +3161,9 @@ Sland'ring creation with a false esteem;
     That every tongue says beauty should look so.
 
 I:shakespeare0128
-T:Sonnet 128
+T:128
+TI:
+TOC:
 F:How oft when thou, my music, music play'st
 K:sonnet
 
@@ -2587,15 +3183,17 @@ Making dead wood more blessed than living lips.
     Give them thy fingers, me thy lips to kiss.
 
 I:shakespeare0129
-T:Sonnet 129
+T:129
+TI:
+TOC:
 F:Th'expense of spirit in a waste of shame
 K:sonnet
 
 Th'expense of spirit in a waste of shame
 Is lust in action; and till action, lust
-Is perjur'd, murd'rous, bloody, full of blame,
+Is perjured, murd'rous, bloody, full of blame,
 Savage, extreme, rude, cruel, not to trust;
-Enjoy'd no sooner but despised straight;
+Enjoyed no sooner but despised straight;
 Past reason hunted, and no sooner had,
 Past reason hated as a swallowed bait,
 On purpose laid to make the taker mad;
@@ -2607,7 +3205,9 @@ Before, a joy proposed; behind, a dream.
     To shun the heaven that leads men to this hell.
 
 I:shakespeare0130
-T:Sonnet 130
+T:130
+TI:
+TOC:
 F:My mistress' eyes are nothing like the sun
 K:sonnet
 
@@ -2615,7 +3215,7 @@ My mistress' eyes are nothing like the sun;
 Coral is far more red than her lips' red;
 If snow be white, why then her breasts are dun;
 If hairs be wires, black wires grow on her head;
-I have seen roses damask'd, red and white,
+I have seen roses damasked, red and white,
 But no such roses see I in her cheeks;
 And in some perfumes is there more delight
 Than in the breath that from my mistress reeks.
@@ -2627,7 +3227,9 @@ My mistress, when she walks treads on the ground.
     As any she belied with false compare.
 
 I:shakespeare0131
-T:Sonnet 131
+T:131
+TI:
+TOC:
 F:Thou art as tyrannous, so as thou art
 K:sonnet
 
@@ -2647,7 +3249,9 @@ Thy black is fairest in my judgement's place.
     And thence this slander, as I think, proceeds.
 
 I:shakespeare0132
-T:Sonnet 132
+T:132
+TI:
+TOC:
 F:Thine eyes I love, and they, as pitying me
 K:sonnet
 
@@ -2667,7 +3271,9 @@ And suit thy pity like in every part:
     And all they foul that thy complexion lack.
 
 I:shakespeare0133
-T:Sonnet 133
+T:133
+TI:
+TOC:
 F:Beshrew that heart that makes my heart to groan
 K:sonnet
 
@@ -2687,17 +3293,24 @@ Thou canst not then use rigour in my jail.
     Perforce am thine, and all that is in me.
 
 I:shakespeare0134
+<<<<<<< sonnets.txt
+T:134
+TI:
+TOC:
+F:So now I have confessed that he is thine,
+=======
 T:Sonnet 134
-F:So now I have confess'd that he is thine
+F:So now I have confessed that he is thine
+>>>>>>> 1.9
 K:sonnet
 
-So now I have confess'd that he is thine,
+So now I have confessed that he is thine,
 And I myself am mortgaged to thy will,
 Myself I'll forfeit, so that other mine
 Thou wilt restore to be my comfort still;
 But thou wilt not, nor he will not be free,
 For thou art covetous, and he is kind;
-He learn'd but surety-like to write for me,
+He learned but surety-like to write for me,
 Under that bond that him as fast doth bind.
 The statute of thy beauty thou wilt take,
 Thou usurer, that put'st forth all to use,
@@ -2707,7 +3320,9 @@ So him I lose through my unkind abuse.
     He pays the whole, and yet am I not free.
 
 I:shakespeare0135
-T:Sonnet 135
+T:135
+TI:
+TOC:
 F:Whoever hath her wish, thou hast thy Will
 K:sonnet
 
@@ -2727,7 +3342,9 @@ One will of mine, to make thy large Will more:
     Think all but one, and me in that one Will.
 
 I:shakespeare0136
-T:Sonnet 136
+T:136
+TI:
+TOC:
 F:If thy soul check thee that I come so near
 K:sonnet
 
@@ -2738,7 +3355,7 @@ Thus far for love my love-suit sweet fulfil.
 Will will fulfil the treasure of thy love,
 Ay, fill it full with wills, and my will one;
 In things of great receipt with ease we prove
-Among a number one is reckon'd none.
+Among a number one is reckoned none.
 Then in the number let me pass untold,
 Though in thy store's account I one must be.
 For nothing hold me, so it please thee hold
@@ -2747,7 +3364,9 @@ That nothing, me a something sweet to thee.
     And then thou lov'st me, for my name is Will.
 
 I:shakespeare0137
-T:Sonnet 137
+T:137
+TI:
+TOC:
 F:Thou blind fool Love, what dost thou to mine eyes
 K:sonnet
 
@@ -2756,7 +3375,7 @@ That they behold, and see not what they see?
 They know what beauty is, see where it lies,
 Yet what the best is, take the worst to be.
 If eyes corrupt by over-partial looks,
-Be anchor'd in the bay where all men ride,
+Be anchored in the bay where all men ride,
 Why of eyes' falsehood hast thou forged hooks,
 Whereto the judgement of my heart is tied?
 Why should my heart think that a several plot
@@ -2767,18 +3386,20 @@ To put fair truth upon so foul a face?
     And to this false plague are they now transferred.
 
 I:shakespeare0138
-T:Sonnet 138
+T:138
+TI:
+TOC:
 F:When my love swears that she is made of truth
 K:sonnet
 
 When my love swears that she is made of truth,
 I do believe her, though I know she lies,
-That she might think me some untutor'd youth
+That she might think me some untutored youth
 Unlearned in the world's false subtleties.
 Thus vainly thinking that she thinks me young,
 Although she knows my days are past the best,
 Simply I credit her false-speaking tongue;
-On both sides thus is simple truth suppress'd.
+On both sides thus is simple truth suppressed.
 But wherefore says she not she is unjust?
 And wherefore say not I that I am old?
 O love's best habit is in seeming trust,
@@ -2787,7 +3408,9 @@ And age in love loves not t' have years told:
     And in our faults by lies we flattered be.
 
 I:shakespeare0139
-T:Sonnet 139
+T:139
+TI:
+TOC:
 F:O call not me to justify the wrong
 K:sonnet
 
@@ -2798,7 +3421,7 @@ Use power with power, and slay me not by art.
 Tell me thou lov'st elsewhere; but in my sight,
 Dear heart, forbear to glance thine eye aside.
 What need'st thou wound with cunning, when thy might
-Is more than my o'er-press'd defence can bide?
+Is more than my o'er-pressed defence can bide?
 Let me excuse thee: ah, my love well knows
 Her pretty looks have been mine enemies,
 And therefore from my face she turns my foes
@@ -2807,7 +3430,9 @@ That they elsewhere might dart their injuries.
     Kill me outright with looks, and rid my pain.
 
 I:shakespeare0140
-T:Sonnet 140
+T:140
+TI:
+TOC:
 F:Be wise as thou art cruel, do not press
 K:sonnet
 
@@ -2827,7 +3452,9 @@ Mad slanderers by mad ears believed be.
     Bear thine eyes straight, though thy proud heart go wide.
 
 I:shakespeare0141
-T:Sonnet 141
+T:141
+TI:
+TOC:
 F:In faith, I do not love thee with mine eyes
 K:sonnet
 
@@ -2841,13 +3468,15 @@ Nor taste, nor smell, desire to be invited
 To any sensual feast with thee alone:
 But my five wits, nor my five senses, can
 Dissuade one foolish heart from serving thee,
-Who leaves unsway'd the likeness of a man,
+Who leaves unswayed the likeness of a man,
 Thy proud heart's slave and vassal wretch to be:
     Only my plague thus far I count my gain,
     That she that makes me sin, awards me pain.
 
 I:shakespeare0142
-T:Sonnet 142
+T:142
+TI:
+TOC:
 F:Love is my sin, and thy dear virtue hate
 K:sonnet
 
@@ -2856,9 +3485,9 @@ Hate of my sin, grounded on sinful loving;
 O but with mine compare thou thine own state,
 And thou shalt find it merits not reproving;
 Or if it do, not from those lips of thine,
-That have profan'd their scarlet ornaments,
-And seal'd false bonds of love as oft as mine,
-Robb'd others' beds' revenues of their rents.
+That have profaned their scarlet ornaments,
+And sealed false bonds of love as oft as mine,
+Robbed others' beds' revenues of their rents.
 Be it lawful I love thee as thou lov'st those
 Whom thine eyes woo, as mine importune thee,
 Root pity in thy heart, that when it grows,
@@ -2867,7 +3496,9 @@ Thy pity may deserve to pitied be.
     By self-example mayst thou be denied.
 
 I:shakespeare0143
-T:Sonnet 143
+T:143
+TI:
+TOC:
 F:Lo, as a careful housewife runs to catch
 K:sonnet
 
@@ -2887,19 +3518,21 @@ And play the mother's part, kiss me, be kind:
     If thou turn back and my loud crying still.
 
 I:shakespeare0144
-T:Sonnet 144
+T:144
+TI:
+TOC:
 F:Two loves I have, of comfort and despair
 K:sonnet
 
 Two loves I have, of comfort and despair,
 Which, like two spirits, do suggest me still:
 The better angel is a man right fair,
-The worser spirit a woman colour'd ill.
+The worser spirit a woman coloured ill.
 To win me soon to hell my female evil
 Tempteth my better angel from my side,
 And would corrupt my saint to be a devil,
 Wooing his purity with her foul pride;
-And whether that my angel be turn'd fiend
+And whether that my angel be turned fiend
 Suspect I may, yet not directly tell;
 But being both from me both to each friend,
 I guess one angel in another's hell.
@@ -2907,27 +3540,31 @@ I guess one angel in another's hell.
     Till my bad angel fire my good one out.
 
 I:shakespeare0145
-T:Sonnet 145
+T:145
+TI:
+TOC:
 F:Those lips that Love's own hand did make
 K:sonnet
 
 Those lips that Love's own hand did make
-Breath'd forth the sound that said "I hate,"
-To me, that languish'd for her sake;
+Breathed forth the sound that said "I hate,"
+To me, that languished for her sake;
 But when she saw my woeful state,
 Straight in her heart did mercy come,
 Chiding that tongue that, ever sweet,
-Was us'd in giving gentle doom,
+Was used in giving gentle doom,
 And taught it thus anew to greet: 
-"I hate" she alter'd with an end
-That follow'd it as gentle day
+"I hate" she altered with an end
+That followed it as gentle day
 Doth follow night, who like a fiend
 From heaven to hell is flown away.
     "I hate" from "hate" away she threw,
     And saved my life, saying "not you."
 
 I:shakespeare0146
-T:Sonnet 146
+T:146
+TI:
+TOC:
 F:Poor soul, the centre of my sinful earth
 K:sonnet
 
@@ -2947,7 +3584,9 @@ Within be fed, without be rich no more:
     And Death once dead, there's no more dying then.
 
 I:shakespeare0147
-T:Sonnet 147
+T:147
+TI:
+TOC:
 F:My love is as a fever, longing still
 K:sonnet
 
@@ -2962,12 +3601,14 @@ Desire is death, which physic did except.
 Past cure I am, now reason is past care,
 And frantic mad with ever more unrest;
 My thoughts and my discourse as madmen's are,
-At random from the truth vainly express'd:
+At random from the truth vainly expressed:
     For I have sworn thee fair, and thought thee bright,
     Who art as black as hell, as dark as night.
 
 I:shakespeare0148
-T:Sonnet 148
+T:148
+TI:
+TOC:
 F:O me! What eyes hath Love put in my head
 K:sonnet
 
@@ -2980,14 +3621,16 @@ What means the world to say it is not so?
 If it be not, then love doth well denote,
 Love's eye is not so true as all men's: no,
 How can it? O how can Love's eye be true,
-That is so vex'd with watching and with tears?
+That is so vexed with watching and with tears?
 No marvel then though I mistake my view:
 The sun itself sees not, till heaven clears.
     O cunning Love, with tears thou keep'st me blind,
     Lest eyes well seeing thy foul faults should find.
 
 I:shakespeare0149
-T:Sonnet 149
+T:149
+TI:
+TOC:
 F:Canst thou, O cruel, say I love thee not
 K:sonnet
 
@@ -3007,7 +3650,9 @@ Commanded by the motion of thine eyes?
     Those that can see thou lov'st, and I am blind.
 
 I:shakespeare0150
-T:Sonnet 150
+T:150
+TI:
+TOC:
 F:O from what power hast thou this powerful might
 K:sonnet
 
@@ -3027,7 +3672,9 @@ With others thou shouldst not abhor my state:
     More worthy I to be beloved of thee.
 
 I:shakespeare0151
-T:Sonnet 151
+T:151
+TI:
+TOC:
 F:Love is too young to know what conscience is
 K:sonnet
 
@@ -3047,7 +3694,9 @@ To stand in thy affairs, fall by thy side.
     Her "love" for whose dear love I rise and fall.
 
 I:shakespeare0152
-T:Sonnet 152
+T:152
+TI:
+TOC:
 F:In loving thee thou knowst I am forsworn
 K:sonnet
 
@@ -3063,11 +3712,13 @@ For I have sworn deep oaths of thy deep kindness,
 Oaths of thy love, thy truth, thy constancy,
 And to enlighten thee gave eyes to blindness,
 Or made them swear against the thing they see:
-    For I have sworn thee fair: more perjur'd eye,
+    For I have sworn thee fair: more perjured eye,
     To swear against the truth so foul a lie.
 
 I:shakespeare0153
-T:Sonnet 153
+T:153
+TI:
+TOC:
 F:Cupid laid by his brand, and fell asleep
 K:sonnet
 
@@ -3075,30 +3726,32 @@ Cupid laid by his brand, and fell asleep;
 A maid of Dian's this advantage found,
 And his love-kindling fire did quickly steep
 In a cold valley-fountain of that ground,
-Which borrow'd from this holy fire of Love
+Which borrowed from this holy fire of Love
 A dateless lively heat still to endure,
 And grew a seething bath, which yet men prove
 Against strange maladies a sovereign cure:
 But at my mistress' eye Love's brand new fired,
 The boy for trial needs would touch my breast;
 I, sick withal, the help of bath desired,
-And thither hied, a sad distemper'd guest,
+And thither hied, a sad distempered guest,
     But found no cure; the bath for my help lies
     Where Cupid got new fire: my mistress' eyes.
 
 I:shakespeare0154
-T:Sonnet 154
+T:154
+TI:
+TOC:
 F:The little Love-god lying once asleep
 K:sonnet
 
 The little Love-god lying once asleep,
 Laid by his side his heart-inflaming brand,
-Whilst many nymphs, that vow'd chaste life to keep,
+Whilst many nymphs, that vowed chaste life to keep,
 Came tripping by; but in her maiden hand
 The fairest votary took up that fire
-Which many legions of true hearts had warm'd;
+Which many legions of true hearts had warmed;
 And so the general of hot desire
-Was sleeping by a virgin hand disarm'd.
+Was sleeping by a virgin hand disarmed.
 This brand she quenched in a cool well by,
 Which from Love's fire took heat perpetual,
 Growing a bath and healthful remedy
