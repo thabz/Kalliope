@@ -72,7 +72,7 @@ $weekHTML .= "</TABLE></FIELDSET>";
 
 my $forumHTML;
 
-foreach my $i (1..Kalliope::Forum::getNumberOfForas) {
+foreach my $i (0..Kalliope::Forum::getNumberOfForas-1) {
     my $forum = new Kalliope::Forum($i);
     my $post = $forum->getLatestPost;
     next unless $post;
