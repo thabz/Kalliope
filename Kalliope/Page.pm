@@ -21,6 +21,7 @@
 package Kalliope::Page;
 
 use Kalliope::Web ();
+use Kalliope::Forum ();
 use CGI::Cookie ();
 use strict;
 
@@ -418,6 +419,20 @@ sub menuStructs {
                            url => 'timeline.cgi&sprog='.$lang
                        }
           );
+
+    # Special topmenu for forum
+    if ($self->{'pagegroup'} eq 'forum') {
+	my $antalFora = Kalliope::Forum::getNumberOfForas;
+	my @temp;
+	foreach my $i (0..$antalFora-1) {
+	    my $forum = new Kalliope::Forum($i);
+	    $menuStructs{"forum$i"} = { menuTitle => $forum->getTitle,
+		                        url => 'forum.cgi?forumid='.$i };
+		push @temp,"forum$i";
+	}
+	$menuStructs{'forum'}->{'pages'} = \@temp;
+    }
+    
     return %menuStructs;
 }
 

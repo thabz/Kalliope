@@ -44,10 +44,8 @@ my $page = new Kalliope::Page (
 		htmltitle => 'Forum: <SPAN CLASS="lifespan">'.$forum->getTitle.'</SPAN>',
 		thumb => $forum->getBigIcon,
 		crumbs => \@crumbs,
+		page => 'forum'.$forumId,
                 pagegroup => 'forum');
-
-
-
 
 #
 # Show message -----------------------------------------------------

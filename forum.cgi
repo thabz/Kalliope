@@ -40,7 +40,7 @@ my $page = new Kalliope::Page (
 		title => 'Forum: '.$forum->getTitle,
 		htmltitle => 'Forum: <SPAN CLASS="lifespan">'.$forum->getTitle.'</SPAN>',
 		thumb => $forum->getBigIcon,
-		page => 'forumheaders',
+		page => 'forum'.$forumId,
 		crumbs => \@crumbs,
                 pagegroup => 'forum');
 

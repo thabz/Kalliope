@@ -22,10 +22,9 @@
 package Kalliope::Forum;
 
 use strict;
-use Kalliope::DB();
+use Kalliope::DB ();
 use Kalliope::Forum::Post();
 
-my $dbh = Kalliope::DB->connect;
 
 my @foraInfo = ( {title => 'Løst og fast',
                desc  => 'Her kan du diskutere alt muligt',
@@ -92,6 +91,7 @@ sub getNumberOfForas {
 
 sub getLatestPost {
     my $self = shift;
+    my $dbh = Kalliope::DB->connect;
     my $sth = $dbh->prepare("SELECT id FROM forum WHERE forum_id = ? ORDER BY date DESC LIMIT 1");
     $sth->execute($self->getId);
     my ($max) = $sth->fetchrow_array;
@@ -102,6 +102,7 @@ sub getLatestThreadIds {
     my ($self,%arg) = @_;
     my $begin = $arg{'begin'};
     my $count = $arg{'count'};
+    my $dbh = Kalliope::DB->connect;
     my $sth = $dbh->prepare("SELECT thread_id FROM forum WHERE parent = 0 AND forum_id = ? ORDER BY latest_thread_activity DESC LIMIT $begin,$count"); 
     $sth->execute($self->getId);
 
@@ -114,6 +115,7 @@ sub getLatestThreadIds {
 
 sub getNumberOfThreads {
     my $self = shift;
+    my $dbh = Kalliope::DB->connect;
     my $sth = $dbh->prepare("SELECT count(*) FROM forum WHERE parent = 0 AND forum_id = ?"); 
     $sth->execute($self->getId);
     my ($count) = $sth->fetchrow_array;
@@ -123,6 +125,7 @@ sub getNumberOfThreads {
 sub getPostsInThread {
     my ($self,$thread_id) = @_;
     my @result;
+    my $dbh = Kalliope::DB->connect;
     my $sth = $dbh->prepare("SELECT * FROM forum WHERE thread_id = ? ORDER BY id");
     $sth->execute($thread_id);
     while (my $h = $sth->fetchrow_hashref) {
