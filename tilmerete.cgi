@@ -25,8 +25,7 @@
 
 use Kalliope;
 use Kalliope::DB;
-
-do 'dk_sort.pl';
+use Kalliope::Sort ();
 
 my $dbh = Kalliope::DB->connect;
 $sth = $dbh->prepare("SELECT longdid, digte.titel FROM digte, vaerker, fnavne WHERE digte.fid=fnavne.fid AND fnavne.fhandle = 'grundtvig' AND digte.vid = vaerker.vid AND vaerker.type = 'v' AND afsnit=0");
@@ -42,7 +41,7 @@ my $last="";
 my $body;
 my $antal = 0;
 my @blocks = ();
-foreach $f (sort dk_sort2 @f) {
+foreach $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
     next unless $f->{'sort'};
     $line =  $f->{'titel'};
     $linefix = $line;
@@ -55,7 +54,7 @@ foreach $f (sort dk_sort2 @f) {
 }
 
 my $HTML;
-foreach $block (sort dk_sort2 grep {$_} @blocks) {
+foreach $block (sort { Kalliope::Sort::sort($a,$b) } grep {$_} @blocks) {
    $HTML .= '<H2>'.$block->{'head'}."</H2>\n";
    $HTML .= $block->{'body'};
 }
