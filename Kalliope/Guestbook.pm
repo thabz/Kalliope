@@ -25,23 +25,39 @@ package Kalliope::Guestbook;
 
 use strict;
 use Kalliope::Guestbook::Entry;
+use Kalliope::DB;
 
-my $GUESTBOOK_DIR = '../gaestebog';
+my $dbh = Kalliope::DB->connect;
+my $pagesize = 10;
 
-sub guestbookDir {
-    return $GUESTBOOK_DIR;
+sub setPageSize {
+    $pagesize = shift;
 }
 
-sub firstEntries {
-    my $antal = shift;
-    opendir (DIR,$GUESTBOOK_DIR);
-    my @files = reverse sort grep {-f "$GUESTBOOK_DIR/$_"} readdir(DIR);
-    closedir (DIR);
-    my @list;
-    foreach (@files[0..($antal-1)]) {
-       push @list, new Kalliope::Guestbook::Entry(id => $_);
+sub pageCount {
+    my $sth = $dbh->prepare("SELECT count(*) FROM guestbook WHERE active = TRUE");
+    $sth->execute();
+    my ($count) = $sth-fetchrow_array;
+    return $count / $pagesize;
+}
+
+# @param $pageNum page offset. First page is 1.
+sub getPage {
+    my $pageNum = shift;
+    my @result;
+    $pageNum--;
+    my $sth = $dbh->prepare("SELECT * FROM guestbook WHERE active = TRUE LIMIT ? OFFSET ?");
+    $sth->execute($pagesize,$pageNum*$pagesize);
+    while ($h = $sth->fetchrow_hashref) {
+	push @result, new Kalliope::Guestbook::Entry($h);
     }
-    return @list;
+    return @result;
+}
+
+sub createEntry {
+    my $data = shift;
+    my $sth = $dbh->prepare("INSERT INTO guestbook (id,name,email,homepage,subject,body,unixtime,active) VALUES (nextval('seq_guestbook_id'),?,?,?,?,?,?,?)");
+    $sth->execute($$data{'name'},$$data{'email'},$$data{'homepage'},$$data{'subject'},$$data{'body'},$$data{'unixtime'},1);
 }
 
 1;

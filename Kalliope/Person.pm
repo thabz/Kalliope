@@ -133,7 +133,9 @@ sub efternavn {
 }
 
 sub reversedName {
-   return $_[0]->efternavn.', '.$_[0]->fornavn;
+    my $result = $_[0]->efternavn;
+    $result .= $_[0]->fornavn eq '' ? '' : ',&nbsp;'.$_[0]->fornavn;
+    return $result;
 }
 
 sub bioURI {

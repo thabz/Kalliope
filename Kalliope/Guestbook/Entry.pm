@@ -25,40 +25,10 @@ use strict;
 use lib '..';
 use Kalliope::Guestbook;
 
-my $GUESTBOOK_DIR = '../gaestebog';
-
 sub new {
-    my ($class,%arg) = @_;
-    my $obj;
-    my $date = $arg{'id'};
-    open (FILE,"$GUESTBOOK_DIR/$date");
-    my ($time,$navn,$email,$web,$text);
-    foreach (<FILE>) {
-	chop;
-	if (/^\*\*D:/) {
-	    s/^\*\*D://;
-	    $obj->{'date'} = $_;
-	}
-	if (/^\*\*N:/) {
-	    s/^\*\*N://;
-	    $obj->{'name'} = $_;
-	}
-	if (/^\*\*E:/) {
-	    s/^\*\*E://;
-	    $obj->{'email'} = $_;
-	}
-	if (/^\*\*W:/) {
-	    s/^\*\*W://;
-	    $obj->{'homepage'} = $_;
-	}
-	if (/^\*\*T:/) {
-	    s/^\*\*T://;
-	    $obj->{'text'} = $_;
-	}
-    }
-    close (FILE);
-    bless $obj,$class;
-    return $obj; 
+    my ($class,$obj) = @_;
+    bless $class,$obj;
+    return $obj;
 }
 
 sub name {
@@ -69,16 +39,20 @@ sub email {
     return $_[0]->{'email'} || '';
 }
 
-sub text {
-    return $_[0]->{'text'} || '';
+sub subject {
+    return $_[0]->{'subject'} || '';
+}
+
+sub body {
+    return $_[0]->{'body'} || '';
 }
 
 sub homepage {
-    return $_[0]->{'web'};
+    return $_[0]->{'homepage'};
 }
 
-sub date {
-    return $_[0]->{'date'};
+sub unixtime {
+    return $_[0]->{'unixtime'};
 }
 
 1;
