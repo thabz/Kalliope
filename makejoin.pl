@@ -54,6 +54,7 @@ EOF
 
 
 sub usage {
-    print "USAGE: makejoin.pl fhandle dir\n";
+    print "Usage: makejoin.pl fhandle dir\n";
+    print "Wraps a dir of poem files into xml to create a work\n";
 }
 
