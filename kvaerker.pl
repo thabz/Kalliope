@@ -29,7 +29,7 @@ use Kalliope::Date ();
 
 my $mode = url_param('mode') || 'titel';
 my $LA = url_param('sprog') || 'dk';
-my $limit = url_param('limit') eq 'no' ? 0 : 1;
+my $limit = url_param('limit') && url_param('limit') eq 'no' ? 0 : 1;
 
 my %crumbTitle = ('aar'    => 'efter år',
                   'titel'  => 'efter titel',
@@ -59,7 +59,7 @@ my $dbh = Kalliope::DB->connect;
 
 if ($mode eq 'titel') {
     my $HTML;
-    my $sth = $dbh->prepare("SELECT fornavn,efternavn,fnavne.fhandle,vhandle,titel,aar,findes FROM fnavne,vaerker WHERE sprog=? AND vaerker.fid = fnavne.fid");
+    my $sth = $dbh->prepare("SELECT fornavn,efternavn,fnavne.fhandle,vhandle,titel,aar,hascontent FROM fnavne,vaerker WHERE sprog=? AND vaerker.fhandle = fnavne.fhandle ");
     $sth->execute($LA);
 
     my ($i,$et,$to,@f);
@@ -96,7 +96,7 @@ if ($mode eq 'titel') {
 	    $last = $new;
 	    $HTML .= "<BR><DIV CLASS=listeoverskrifter>$new</DIV><BR>\n";
 	}
-	unless ($f->{'findes'}) {
+	if ($f->{'hascontent'} eq 'no') {
 	    $HTML .= "<I>".$f->{'titel'}."</I> (".$f->{'aar'}.") - ".$f->{'fornavn'}." ".$f->{'efternavn'}."<BR>\n";
 	} else {
 	    $HTML .= '<A CLASS=green HREF="vaerktoc.pl?fhandle='.$f->{'fhandle'}.'&vhandle='.$f->{'vhandle'}.'">';
@@ -112,7 +112,7 @@ if ($mode eq 'titel') {
 
 } elsif ($mode eq 'aar') {
 
-    my $sth = $dbh->prepare("SELECT v.*,f.fornavn,f.efternavn FROM vaerker AS v, fnavne AS f WHERE f.fid = v.fid AND v.lang = ? AND v.aar != '?' ORDER BY v.aar ASC");
+    my $sth = $dbh->prepare("SELECT v.*,f.fornavn,f.efternavn FROM vaerker AS v, fnavne AS f WHERE f.fhandle = v.fhandle AND v.lang = ? AND v.aar != '?' ORDER BY v.aar ASC");
     $sth->execute($LA);
 
     my $HTML = '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>';
@@ -130,7 +130,7 @@ if ($mode eq 'titel') {
 	$last3 = $vaerkaar;
         $HTML .= qq|<TR><TD NOWRAP>$liVal</TD>|;
 	$HTML .= '<TD>&nbsp;<A HREF="fvaerker.pl?fhandle='.$$v{fhandle}.'">'.$$v{fornavn}.' '.$$v{efternavn}.'</A>: ';
-	if ($$v{findes} == 0) {
+	if ($$v{hascontent} eq 'yes') {
 	    $HTML .= "<I>$$v{titel}</I><BR>";
 	} else {
 	    $HTML .= qq|<A CLASS=green HREF="vaerktoc.pl?fhandle=$$v{fhandle}&vhandle=$$v{vhandle}">|;
@@ -147,8 +147,8 @@ if ($mode eq 'titel') {
 
 } elsif ($mode eq 'digter') {
     my $HTML;
-    my $sth = $dbh->prepare("SELECT CONCAT(efternavn,', ',fornavn) as navn, fornavn, efternavn, fhandle,fid FROM fnavne WHERE sprog = ? AND vers = 1");
-    my $sthvaerker = $dbh->prepare("SELECT vhandle,titel,aar,findes FROM vaerker WHERE fid = ? ORDER BY aar");
+    my $sth = $dbh->prepare("SELECT CONCAT(efternavn,', ',fornavn) as navn, fornavn, efternavn, fhandle FROM fnavne WHERE sprog = ? AND vers = 1");
+    my $sthvaerker = $dbh->prepare("SELECT vhandle,titel,aar,hascontent FROM vaerker WHERE fhandle = ? ORDER BY aar");
     $sth->execute($LA);
     my @f;
     while (my $f = $sth->fetchrow_hashref) {
@@ -165,7 +165,7 @@ if ($mode eq 'titel') {
 	    $last = $new;
 	    $HTML .= "<BR><DIV CLASS=listeoverskrifter>$new</DIV><BR>\n";
 	}
-	$sthvaerker->execute($f->{fid});
+	$sthvaerker->execute($f->{fhandle});
 	if ($sthvaerker->rows) {
             $HTML .= '<SPAN CLASS="listeblue">&#149;</SPAN> ';
 	    $f->{'navn'} =~ s/^, // if $f->{'navn'};
@@ -174,7 +174,7 @@ if ($mode eq 'titel') {
 	    while ($v = $sthvaerker->fetchrow_hashref) {
 		next if ($v->{'titel'} eq '');
 		$aar = ($v->{aar} ne '?') ? "($v->{aar})" : '';
-		unless ($v->{'findes'}) {
+		if ($v->{'hascontent'} eq 'no') {
 		    $html .= "<I>".$v->{'titel'}."</I> $aar, ";
 		} else {
 		    $html .='<A CLASS=green HREF="vaerktoc.pl?fhandle='.$f->{'fhandle'}.'&vhandle='.$v->{'vhandle'}.'">';
