@@ -259,6 +259,11 @@ sub work {
 
 sub getSearchResultEntry {
     my ($self,$escapedNeedle,@needle) = @_;
+
+    use locale;
+    use POSIX qw(locale_h);
+    setlocale(LC_CTYPE, "da_DK.ISO_8859-1");
+
     $escapedNeedle = $escapedNeedle || '';
     my $content = $self->contentForSearch();
     my $work = $self->work;
