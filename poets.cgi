@@ -234,7 +234,7 @@ sub listflittige {
 sub listpop {
     my ($LA,$limit) = @_;
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT f.fornavn, f.efternavn, f.foedt, f.doed, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f WHERE dh.longdid = d.longdid AND d.fhandle = f.fhandle AND f.sprog=? AND f.type != 'collection' GROUP BY f.fhandle ORDER BY hits DESC ".($limit != -1 ? "LIMIT $limit" : ''));
+    my $sth = $dbh->prepare("SELECT f.fornavn, f.efternavn, f.foedt, f.doed, d.fhandle, sum(hits) as hitssum, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f WHERE dh.longdid = d.longdid AND d.fhandle = f.fhandle AND f.sprog = ? AND f.type != 'collection' GROUP BY d.fhandle,f.fornavn,f.efternavn,f.foedt,f.doed ORDER BY hitssum DESC ".($limit != -1 ? "LIMIT $limit" : ''));
     $sth->execute($LA);
 
     my $i = 1;
@@ -246,9 +246,9 @@ sub listpop {
 	my $class = $i % 2 ? '' : ' CLASS="darker" ';
 	$HTML .= qq|<TR $class><TD ALIGN="right">|.$i++.'.</TD>';
 	$HTML .= '<TD WIDTH="100%"><A HREF="ffront.cgi?fhandle='.$h->{fhandle}.'">'.$h->{fornavn}.' '.$h->{efternavn}.'<FONT COLOR=#808080> ('.$h->{foedt}.'-'.$h->{doed}.')</FONT></A></TD>';
-	$HTML .= '<TD ALIGN="right">'.$h->{'hits'}.'&nbsp;&nbsp;</TD>';
+	$HTML .= '<TD ALIGN="right">'.$h->{'hitssum'}.'&nbsp;&nbsp;</TD>';
 	$HTML .= '<TD ALIGN="right" NOWRAP>'.Kalliope::shortdate($h->{'lasttime'}).'</TD>';
-	$total += $h->{'hits'};
+	$total += $h->{'hitssum'};
     }
     if ($limit != -1) {
         $endHTML = qq|<A class="more" HREF="poets.cgi?list=pop&limit=-1&sprog=$LA">Se hele listen...</A>|;
