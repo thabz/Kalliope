@@ -40,7 +40,7 @@ sub new {
     $sql = 'did = '.$arg{'did'} if defined $arg{'did'};
     $sql = 'did = '.$arg{'id'} if defined $arg{'id'};
     confess "Need some kind of id to initialize a new poem\n" unless $sql;
-    my $sth = $dbh->prepare("SELECT did,fid,vid,longdid,titel,underoverskrift,foerstelinie,layouttype,pics,quality FROM digte WHERE $sql");
+    my $sth = $dbh->prepare("SELECT did,fid,vid,longdid,titel,toctitel,underoverskrift,foerstelinie,layouttype,pics,quality FROM digte WHERE $sql");
     $sth->execute();
     return undef unless $sth->rows;
 
@@ -77,6 +77,10 @@ sub title {
     return $_[0]->{'titel'};
 }
 
+sub tocTitle {
+    return shift->{'toctitel'};
+}
+
 sub sortString {
     return $_[0]->title;
 }
@@ -95,7 +99,7 @@ sub subtitleAsHTML {
 }
 
 sub firstline {
-    return $_[0]->{'title'};
+    return $_[0]->{'foerstelinie'};
 }
 
 sub quality {
@@ -122,20 +126,30 @@ sub hasPics {
    return shift->{'pics'} ? 1 : 0;
 }
 
+sub resolveBiblioTags {
+    my ($self,$content) = @_;
+    while ($content =~ /<biblio>/mi) {
+	my ($bibid) = $content =~ /<biblio>(.*?)<\/biblio>/mi;
+	my $entry = $self->author->getBiblioEntryAsString($bibid);
+	$content =~ s/<biblio>$bibid<\/biblio>/<abbr title="$entry"><i>$bibid<\/i><\/abbr>/im;
+    }
+    return $content;
+}
+
 sub extractFootnotes {
     my ($self,$content) = @_;
     my @footnotes = $self->{'footnotes'} ? @{$self->{'footnotes'}} : ();
     my $num = $#footnotes >= 0 ? $#footnotes + 2 : 1;
     $content =~ s/<note>/<footnote>/g;
     $content =~ s/<\/note>/<\/footnote>/g;
-    $content =~ s/<biblio>/<i>/g;
-    $content =~ s/<\/biblio>/<\/i>/g;
+    $content = $self->resolveBiblioTags($content);
     while ($content =~ s/<footnote>(.*?)<\/footnote>/<footmark id="footnote$num"\/>/mi) {
        push @{$self->{'footnotes'}},$1;
        $num++;
     }
     return $content;
 }
+
 
 sub footnotes {
     my $self = shift;
@@ -152,13 +166,16 @@ sub content {
 	$sth->execute($self->did);
 	my $data = $sth->fetchrow_hashref;
 	$self->{'indhold'} = $data->{'indhold'};
+	$self->{'raw'} = $data->{'indhold'};
 	$self->{'noter'} = $data->{'noter'};
         $self->{'type'} = $data->{'type'};
 	$self->{'indhold'} = $self->extractFootnotes($self->{'indhold'});
     }
     my $result;
 
-    if ($self->{'layouttype'} eq 'prosa') {
+    if (%options && $options{'layout'} eq 'raw') {
+	return $self->{'raw'};
+    } elsif ($self->{'layouttype'} eq 'prosa') {
          $result = $self->_contentAsProseHTML();
     } elsif (%options && $options{'layout'} eq 'plainpoem') {
          $result = $self->_contentAsPlainPoemHTML();
@@ -290,7 +307,7 @@ sub notes {
     unless (defined $self->{'indhold'}) {
 	$self->content;
     }
-    return $self->{'noter'}; 
+    return $self->resolveBiblioTags($self->{'noter'}); 
 }
 
 sub keywords {

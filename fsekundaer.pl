@@ -47,6 +47,9 @@ if (-e "fdirs/$fhandle/primaer.txt") {
     my $HTML = join '<BR><BR>',<FILE>;
     close (FILE);
 
+    $HTML =~ s/<biblio>/[/gi;
+    $HTML =~ s/<\/biblio>/]&nbsp;&nbsp;/gi;
+
     $page->addBox(
 	    width => '80%',
 	    coloumn => 0,
@@ -58,6 +61,9 @@ if (-e "fdirs/$fhandle/sekundaer.txt") {
     open (FILE,"fdirs/$fhandle/sekundaer.txt");
     my $HTML = join '<BR><BR>',<FILE>;
     close (FILE);
+
+    $HTML =~ s/<biblio>/[/gi;
+    $HTML =~ s/<\/biblio>/]&nbsp;&nbsp;/gi;
 
     $page->addBox(
 	    width => '80%',

@@ -305,5 +305,20 @@ sub getSearchResultEntry {
     return $HTML;
 }
 
+sub getBiblioEntry {
+    my ($self,$bibid) = @_;
+    my $sth = $dbh->prepare("SELECT entry FROM biblio WHERE fhandle = ? AND bibid = ?");
+    $sth->execute($self->fhandle,$bibid);
+    my ($entry) = $sth->fetchrow_array;
+    return $entry;
+}
+
+sub getBiblioEntryAsString {
+    my ($self,$bibid) = @_;
+    my $entry = $self->getBiblioEntry($bibid);
+    $entry =~ s/<.*?>//g;
+    return $entry;
+    
+}
 
 1;
