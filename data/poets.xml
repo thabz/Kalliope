@@ -94,7 +94,7 @@
   </name>
   <period>
     <born>
-      <date>?</date>
+      <date>1596 ca.</date>
     </born>
     <dead>
       <date>1643</date>
@@ -109,10 +109,12 @@
   </name>
   <period>
     <born>
-      <date>1606</date>
+      <date>1606-03-08</date>
+      <place>Ottensen, Holstein</place>
     </born>
     <dead>
-      <date>1667</date>
+      <date>1667-08-31</date>
+      <place>Wedel, Tyskland</place>
     </dead>
   </period>
 </person>
@@ -599,9 +601,11 @@
   <period>
     <born>
       <date>1544</date>
+      <place>Roskilde</place>
     </born>
     <dead>
       <date>1610</date>
+      <place>Malmø</place>
     </dead>
   </period>
 </person>
@@ -2355,9 +2359,11 @@
   <period>
     <born>
       <date>1796-07-29</date>
+      <place>Fensmark</place>
     </born>
     <dead>
       <date>1876-12-30</date>
+      <place>Paris</place>
     </dead>
   </period>
 </person>
@@ -2447,9 +2453,11 @@
   <period>
     <born>
       <date>1800-12-04</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1856-07-21</date>
+      <place>Odense</place>
     </dead>
   </period>
 </person>
@@ -2500,6 +2508,7 @@
     </born>
     <dead>
       <date>1846-10-25</date>
+      <place>Odense</place>
     </dead>
   </period>
 </person>
@@ -2812,9 +2821,11 @@
   <period>
     <born>
       <date>1835-02-08</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1911-06-26</date>
+      <place>København</place>
     </dead>
   </period>
 </person>
@@ -3007,9 +3018,11 @@
   <period>
     <born>
       <date>1857-04-20</date>
+      <place>Asserballe sogn, Als</place>
     </born>
     <dead>
       <date>1912-01-29</date>
+      <place>Ogden City, Utah, USA</place>
     </dead>
   </period>
 </person>
@@ -3357,6 +3370,7 @@
   <name>
     <firstname>Nicolas</firstname>
     <lastname>Boileau</lastname>
+    <fullname>Nicolas Boileau-Despréaux</fullname>
   </name>
   <period>
     <born>
@@ -6112,6 +6126,23 @@
     </born>
     <dead>
       <date>1856-07-01</date>
+      <place>Kbh.</place>
+    </dead>
+  </period>
+</person>
+
+<person id="roemer" lang="dk" type="person">
+  <name>
+    <firstname>Ole</firstname>
+    <lastname>Rømer</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1644-09-25</date>
+      <place>Århus</place>
+    </born>
+    <dead>
+      <date>1710-09-19</date>
       <place>Kbh.</place>
     </dead>
   </period>
