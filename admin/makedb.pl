@@ -109,10 +109,12 @@ $poetsFile = '../data/poets.xml';
 my %persons;
 if (Kalliope::Build::Timestamps::hasChanged($poetsFile)) {
     &log("Making persons... ");
+    Kalliope::Build::Persons::drop() unless $_all;
     Kalliope::Build::Persons::create() unless $__all; 
     my %persons = Kalliope::Build::Persons::parse($poetsFile);
     Kalliope::Build::Persons::insert(%persons);
     Kalliope::Build::Timestamps::register($poetsFile);
+    Kalliope::Build::Links::drop() unless $__all;
     Kalliope::Build::Links::create()  unless $__all;
     Kalliope::Build::Links::insert();
     &log("Done");
