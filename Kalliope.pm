@@ -89,6 +89,7 @@ sub buildhrefs {
    $$txt =~ s/<A\s+K=([^\s>]+)\s*>/<A HREF="keyword.cgi?keyword=$1">/g;
    $$txt =~ s/<A\s+V=([^\s>\/]+)\/([^\s>\/]+)\s*>/<A HREF="vaerktoc.pl?fhandle=$1&vhandle=$2">/g;
    $$txt =~ s/<A\s+/<A CLASS=green /g;
+   $$txt =~ s/<year>(\d+)<\/year>/<A CLASS="timecontext" TITLE="Vis historisk kontekst for året $1." onClick="return openTimeContext($1)" HREF="javascript:{}">$1<\/A>/gi;
    return $$txt;
 }
 
