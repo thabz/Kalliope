@@ -51,12 +51,22 @@ $val3 = getVal("select count(*) from keywords_relation where keywordid = $val2 a
 $prc = sprintf("%.0d",($val3/$val)*100);
 $HTML .= "<li>Der findes $val3 sonetter i Kalliope, hvilket er $prc% af alle digte.";
 
-$val = getVal("SELECT count(*) FROM fnavne");
+$antalpoets = getVal("SELECT count(*) FROM fnavne");
 $val2 = getVal("SELECT count(*) FROM fnavne where vers = 1");
-$HTML .= "<li>Af de $val digtere i Kalliope, kan man læse digte hos de $val2 af dem.";
+$HTML .= "<li>Af de $antalpoets digtere i Kalliope, kan man læse digte hos de $val2 af dem.";
 
 $val = getVal("SELECT count(*) FROM fnavne where bio != ''");
 $HTML .= "<li>Der findes $val biografier i Kalliope.";
+
+$se = getVal("SELECT count(*) FROM fnavne where sprog = 'se'");
+$dk = getVal("SELECT count(*) FROM fnavne where sprog = 'dk'");
+$no = getVal("SELECT count(*) FROM fnavne where sprog = 'no'");
+$uk = getVal("SELECT count(*) FROM fnavne where sprog = 'uk'");
+$us = getVal("SELECT count(*) FROM fnavne where sprog = 'us'");
+$de = getVal("SELECT count(*) FROM fnavne where sprog = 'de'");
+$fr = getVal("SELECT count(*) FROM fnavne where sprog = 'fr'");
+$it = getVal("SELECT count(*) FROM fnavne where sprog = 'it'");
+$HTML .= "<li>Af de $antalpoets digtere i Kalliope, er de $dk danske, $se svenske, $no norske, $uk engelske, $us amerikanske, $fr franske, $it italienske og $de tyske.";
 
 
 $val = getVal("select count(*) from vaerker where status = 'complete'");
