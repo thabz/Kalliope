@@ -41,7 +41,7 @@ sub searchBoxHTML {
     my $self = shift;
     my $needle = $self->needle;
     my $LA = $self->lang;
-    return qq|<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle" VALUE="$needle"><INPUT TYPE="hidden" NAME="sprog" VALUE="$LA"><INPUT TYPE="hidden" NAME="type" VALUE="free"</FORM>|;
+    return qq|<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle" VALUE="$needle"><INPUT TYPE="hidden" NAME="sprog" VALUE="$LA"><INPUT TYPE="hidden" NAME="type" VALUE="free"></FORM>|;
 }
 
 sub count {
