@@ -6,6 +6,8 @@ do_country("dk");
 do_country("uk");
 do_country("fr");
 do_country("de");
+do_country("se");
+do_country("no");
 
 sub do_country {
     open(FILE,"data.$_[0]/fnavne.txt");

@@ -100,8 +100,8 @@ fhandle char(40) NOT NULL,
               UNIQUE (fid))");
 
 $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM fnavne");
-foreach $LA ('dk','uk','fr','de') {
-    open (IN, "../data.$LA/fnavne.txt");
+foreach $LA ('dk','uk','fr','de','se','no') {
+    open (IN, "../data.$LA/fnavne.txt") || next;
     while (<IN>) {
 	chop($_);chop($_);
 	($fhandle,$ffornavn,$fefternavn,$ffoedt,$fdoed) = split(/=/);
