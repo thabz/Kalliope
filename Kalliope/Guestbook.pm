@@ -26,7 +26,6 @@ package Kalliope::Guestbook;
 use strict;
 use Kalliope::Guestbook::Entry;
 
-
 my $GUESTBOOK_DIR = '../gaestebog';
 
 sub guestbookDir {
