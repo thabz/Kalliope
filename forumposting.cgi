@@ -103,7 +103,7 @@ foreach my $post (@posts) {
     my $class = $showing->id == $post->id ? 'sel' : 'unsel';
     my $from = ("&nbsp;"x5).qq|<SPAN CLASS="$class" >&nbsp;|.$post->from.'&nbsp;</SPAN>';
     my $date = qq|<SPAN CLASS="$class">&nbsp;|.$post->dateForDisplay.'&nbsp;</SPAN>';
-    my $subj = qq|<A CLASS="$class" HREF="javascript:{}" onClick="return gotoPosting(|.$post->id.');">&nbsp;'.$post->subject.qq|&nbsp;</A>|;
+    my $subj = qq|<A CLASS="$class" HREF="forumposting.cgi?id=|.$post->id.'">&nbsp;'.$post->subject.qq|&nbsp;</A>|;
     $translate{$post->id} = $tree->addNode($translate{$post->parent},1,($subj,$from,$date));
 }
 $HTML = $tree->getSimpleHTML().$tree->getJavaScript();
@@ -111,9 +111,6 @@ $HTML = $tree->getSimpleHTML().$tree->getJavaScript();
 $page->addBox (width => '90%',
                title => 'Tråd',
                content => $HTML);
-
-
-
 
 $page->print;
 

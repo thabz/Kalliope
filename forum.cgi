@@ -58,7 +58,7 @@ foreach my $thread_id (@thread_ids) {
     foreach my $post (@posts) {
 	my $from = ("&nbsp;"x5).qq|<SPAN CLASS="unsel">&nbsp;|.$post->from.'&nbsp;</SPAN>';
 	my $date = qq|<SPAN CLASS="unsel">&nbsp;|.$post->dateForDisplay.'&nbsp;</SPAN>';
-        my $subj = qq|<A CLASS="unsel" HREF="javascript:{}" onClick="return gotoPosting(|.$post->id.');">&nbsp;'.$post->subject.qq|&nbsp;</A>|;
+        my $subj = qq|<A CLASS="unsel" HREF="forumposting.cgi?id=|.$post->id.'">&nbsp;'.$post->subject.qq|&nbsp;</A>|;
         $translate{$post->id} = $tree->addNode($translate{$post->parent},1,($subj,$from,$date));
     }
 }
