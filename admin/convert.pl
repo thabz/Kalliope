@@ -1,5 +1,11 @@
 #!/usr/bin/perl -w
 
+# Dette program konverter fra det gamle værkformat til det nye
+# XML-baserede. Det trækker sine data fra databasen i sin nuværende
+# form.
+#
+# $Id$
+
 use strict;
 use lib '..';
 
@@ -26,6 +32,7 @@ while (my $w = $sthw->fetchrow_hashref) {
     print OUT qq(<workhead>\n);
     print OUT qq(   <title>$$w{titel}</title>\n);
     chomp $$w{underoverskrift} if $$w{underoverskrift};
+    $$w{underoverskrift} = fixHTML($$w{underoverskrift});
     print OUT qq(   <subtitle>$$w{underoverskrift}</subtitle>\n) if $$w{underoverskrift};
     print OUT qq(   <year>$$w{aar}</year>\n);
     printNotes($$w{noter});
@@ -56,6 +63,8 @@ sub printPoem {
     print OUT qq(\n<text id="$$p{longdid}" type="$type">\n);
     print OUT qq(<head>\n);
     print OUT qq(   <title>$$p{titel}</title>\n) if ($$p{titel});
+    chomp $$p{underoverskrift} if $$p{underoverskrift};
+    $$p{underoverskrift} = fixHTML($$p{underoverskrift});
     print OUT qq(   <subtitle>$$p{underoverskrift}</subtitle>\n) if ($$p{underoverskrift});
     print OUT qq(   <toctitle>$$p{toctitel}</toctitle>\n) if ($$p{toctitel});
     print OUT qq(   <indextitle>$$p{tititel}</indextitle>\n) if ($$p{tititel});
