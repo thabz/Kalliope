@@ -134,6 +134,8 @@ sub _constructBreadcrumbs {
 sub addBox {
     my ($self,%args) = @_;
 
+    my $bggfx = $args{'theme'} eq 'dark' ? 'pap.gif' : 'lightpap.gif';
+
     my $HTML;
     $HTML .= '<TABLE WIDTH="'.$args{width}.'" ALIGN="center" BORDER=0 CELLPADDING=1 CELLSPACING=0><TR><TD ALIGN=right>';
     if ($args{title}) {
@@ -147,7 +149,7 @@ sub addBox {
     }
     $HTML .= '</TD></TR><TR><TD VALIGN=top BGCOLOR=black>';
     $HTML .= '<TABLE STYLE="border-top: 1px solid #F8FAF2; border-left: 1px solid #F8F4F2; border-bottom: 1px solid #81807E; border-right: 1px solid #81807E" WIDTH="100%" ALIGN=center CELLSPACING=0 CELLPADDING=15 BORDER=0>';
-    $HTML .= '<TR><TD '.($args{align} ? qq|ALIGN="$args{align}"| : '').' BGCOLOR="#e0e0e0" BACKGROUND="gfx/lightpap.gif">';
+    $HTML .= '<TR><TD '.($args{align} ? qq|ALIGN="$args{align}"| : '').qq| BGCOLOR="#e0e0e0" BACKGROUND="gfx/$bggfx">|;
     $HTML .= $args{content};
     if ($args{end}) {
 	$HTML .= "</TD></TR></TABLE>";

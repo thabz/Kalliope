@@ -97,12 +97,14 @@ my @keywords = $poem->keywords;
 if ($poem->notes || $#keywords >= 0) {
     $page->addBox( width => '200',
 	           coloumn => 2,
+		   theme => 'dark',
                    title => 'Noter',
 	           content => &notes($poem,@keywords) );
 }
 
 $page->addBox( width => '200',
                coloumn => 2,
+		   theme => 'dark',
                title => 'Nøgleord',
                content => &keywords($poem) );
 
@@ -111,6 +113,7 @@ $page->addBox( width => '200',
 if ($poem->footnotes) { 
     $page->addBox( width => '200',
 	           coloumn => 2,
+		   theme => 'dark',
                    title => 'Fodnoter',
 	           content => &footnotes($poem) );
 
@@ -121,12 +124,14 @@ my $workTitle = $work->titleWithYear;
 $page->addBox( width =>'100%',
 	       coloumn => 0,
                title => 'Indhold',
+		   theme => 'dark',
 	       content => &tableOfContents($work),
 	       end => qq|<A HREF="vaerktoc.pl?fhandle=$fhandle&vhandle=$vhandle"><IMG VALIGN=center ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 TITLE="$workTitle" ALT="$workTitle"></A>|
 	     );
 
 $page->addBox( width => '100%',
 	       coloumn => 2,
+		   theme => 'dark',
 	       content => &korrekturFelt($poem) );
 
 $page->print;

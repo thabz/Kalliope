@@ -49,13 +49,14 @@ my ($vtitel,$vaar,$vid,$noter) = $dbh->selectrow_array("SELECT titel, aar, vid,n
 $page->addBox( width => '100%',
                coloumn => 0,
                title => 'Værker',
+	       theme => 'dark',
                content => &completeWorks($poet,$work)
               );
 
-$page->addBox( width => '80%',
-               coloumn => 1,
-               content => '<SPAN CLASS=digtoverskrift><I>'.$vtitel."</I> ".(($vaar ne '?')?"($vaar)":'').'</SPAN>'
-              );
+#$page->addBox( width => '80%',
+#               coloumn => 1,
+#               content => '<SPAN CLASS=digtoverskrift><I>'.$vtitel."</I> ".(($vaar ne '?')?"($vaar)":'').'</SPAN>'
+#              );
 
 $page->addBox( width => '80%',
                coloumn => 1,
@@ -68,12 +69,14 @@ if ($work->notes) {
     $page->addBox( width => '100%',
 	           coloumn => 2,
                    title => 'Noter',
+	           theme => 'dark',
                    content => &notes($work) );
 }
 
 $page->addBox( width => '100%',
 	       coloumn => 2,
                align => 'center',
+	       theme => 'dark',
        	       title => 'Formater',
 	       content => &otherFormats($poet,$work) );
 $page->setColoumnWidths(0,'100%',0);
@@ -125,6 +128,7 @@ sub notes {
 sub tableOfContent {
     my $work = shift;
     my $HTML;
+    $HTML .= '<SPAN CLASS=digtoverskrift><I>'.$work->title."</I> ".$work->parenthesizedYear.'</SPAN><BR><BR>';
     my $sth = $dbh->prepare("SELECT longdid,toctitel as titel,afsnit,did FROM digte WHERE vid=? ORDER BY vaerkpos");
     $sth->execute($work->vid);
     return 'Kalliope indeholder endnu ingen tekster fra dette værk.' unless $sth->rows;
