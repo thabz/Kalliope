@@ -367,6 +367,7 @@ while ($v = $sth->fetchrow_hashref) {
 	next if (/^VQ:/);
 	next if (/^STATUS:/);
 	next if (/^CVS-TIMESTAMP:/);
+	next if (/^FILES:/);
 	if (/^H(.):(.*)/) {
 	    $level = $1;
 	    $afsnitstitel = $2;
@@ -513,7 +514,7 @@ sub insertdigt {
     $haystack = Kalliope::Strings::stripHTML("$titel $under $indhold");
 
     # Try to find create date...
-    my ($year,$mon,$day) = $id =~ /^\D*(\d\d\d\d)(\d\d)(\d\d)/;
+    my ($year,$mon,$day) = $id =~ /(\d\d\d\d)(\d\d)(\d\d)/;
     my $time = POSIX::mktime(0,0,2,$day,$mon-1,$year-1900) || 0;
 
     # Prepare qualities
