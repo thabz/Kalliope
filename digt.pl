@@ -203,11 +203,13 @@ sub poem {
  #   $HTML .= '</div>' unless $poem->isProse;
 
     foreach (1..4) { # TODO: Løs dette mere elegant.
+	$HTML =~ s/ -&nbsp;/ &mdash;&nbsp;/g;
 	$HTML =~ s/ - / &mdash; /g;
 	$HTML =~ s/>- />&mdash; /gm;
 	$HTML =~ s/&nbsp;- /&nbsp;&mdash; /gm;
 	$HTML =~ s/ -<br>/ &mdash;<br>/gi;
 	$HTML =~ s/ -&ldquo;/ &mdash;&ldquo;/g;
+	$HTML =~ s/ -([\!;\?\.»«,:])/ &mdash;$1/g;
     }
 
     $HTML =~ s/<footmark id="footnote([^"]+)"\/>/<A CLASS="green" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup>$1<\/sup><\/A>/gsi;
