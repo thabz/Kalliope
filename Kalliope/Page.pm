@@ -152,7 +152,9 @@ EOF
     print '</DIV>';
     print '<DIV HEIGHT=100 CLASS="nav"><TABLE WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
     print '<TD CLASS="navigation">';
-    print $self->_navigationMain.'</TD>';
+    print $self->_navigationMain;
+    print '   '.$self->langSelector;
+    print '</TD>';
     print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1 ALT=""></TD>';
 
     print '<TD ROWSPAN=3 VALIGN="top">'.$self->thumbIMG.'</TD></TR>';
@@ -182,6 +184,25 @@ EOF
 #
 # Private ------------------------------------------------------
 #
+
+sub changeLangURL {
+    my $self = shift;
+    return 'poets.cgi?list=az&sprog='.$self->lang;
+}
+
+sub langSelector {
+    my $self = shift;
+    my $selfLang = $self->lang;
+    my $HTML;
+    my $url = $self->changeLangURL;
+    foreach my $lang ('dk','uk','de','fr','se','no') {
+       my $refURL = $url;
+       $refURL =~ s/sprog=../sprog=$lang/;
+       my $img = $lang eq $selfLang ? "${lang}select.gif" : "$lang.gif";
+       $HTML .= qq|<A HREF="$refURL"><IMG BORDER=0 SRC="gfx/flags/$img"></A>|;
+    }
+    return $HTML;
+}
 
 sub menuStructs {
     my $self = shift;
@@ -313,10 +334,12 @@ sub _navigationSub {
 }
 
 sub notFound {
+    my $message = shift;
+    $message = $message || qq|Hovsa! Der gik det galt! Siden kunne ikke findes.<BR><BR>Send en mail til <A HREF="mailto:jesper\@kalliope.org">jesper\@kalliope.org</A> hvis du mener at jeg har lavet en fejl.|;
     my $HTML;
     my $picNo = int rand(10) + 1;
     my $page = new Kalliope::Page ('title' => 'Hovsa!');
-    $page->addBox(content => qq|<IMG SRC="gfx/notfound/$picNo.jpg" ALIGN="center"><BR><BR>Hovsa! Der gik det galt! Siden kunne ikke findes.<BR><BR>Send en mail til <A HREF="mailto:jesper\@kalliope.org">jesper\@kalliope.org</A> hvis du mener at jeg har lavet en fejl.|);
+    $page->addBox(content => qq|<IMG SRC="gfx/notfound/$picNo.jpg" ALIGN="center"><BR><BR>$message|);
     $page->print;
     exit;
 }
