@@ -141,7 +141,7 @@ sub lastWeeksHits {
     $i = $wday;
     my @result;
     for ($j=0;$j<7;$j++) {
-        push @result, [$i, $counter[$j],($counter[$j]/$countmax)*100];
+        push @result, [$i, $counter[$j],$countmax ? ($counter[$j]/$countmax)*100 : 0];
 	if (--$i < 0) { $i = 6 };
     }
     return ($counttotal,@result);
