@@ -140,6 +140,7 @@ sub print {
     print <<"EOF";
 <HTML><HEAD><TITLE>$titleForWindow</TITLE>
 <LINK REL=STYLESHEET TYPE="text/css" HREF="kalliope.css">
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
 <META name="description" content="Stort arkiv for ældre digtning">
 <META name="keywords" content="digte, lyrik, litteratur, litteraturhistorie, digtere, digtarkiv, etext, e-text, elektronisk tekst, kalliope, kalliope.org, www.kalliope.org">
 </HEAD>
@@ -152,15 +153,15 @@ EOF
     print '<DIV HEIGHT=100 CLASS="nav"><TABLE WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
     print '<TD CLASS="navigation">';
     print $self->_navigationMain.'</TD>';
-    print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1></TD>';
+    print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1 ALT=""></TD>';
 
     print '<TD ROWSPAN=3 VALIGN="top">'.$self->thumbIMG.'</TD></TR>';
     
     print '<TR><TD WIDTH="100%" CLASS="maintitle">'.$self->titleAsHTML.'</TD>';
-    print '<TD CLASS="maintitle"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=36 WIDTH=1></TD>';
+    print '<TD CLASS="maintitle"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=36 WIDTH=1 ALT=""></TD>';
     print '</TR>';
     print '<TR><TD CLASS="navigation">'.$self->_navigationSub.'</TD>';
-    print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1></TD>';
+    print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1 ALT=""></TD>';
     print '</TR></TABLE>';
     print '</DIV>';
     print '<DIV CLASS="body">';
