@@ -57,8 +57,8 @@ my $email = $post->fromEmail;
 my $from = $post->from;
 $from = $email ? qq|<A HREF="mailto:$email">$from</A>| : $from;
 $HTML .= '<TR><TH CLASS="forumheads" ALIGN="right">Fra:</TH><TD CLASS="forumheads" WIDTH="100%">'.$from.'</TD></TR>';
-$HTML .= '<TR><TH  CLASS="forumheads" ALIGN="right">Emne:</TH><TD  CLASS="forumheads"WIDTH="100%">'.$post->subject.'</TD></TR>';
-$HTML .= '<TR><TH  CLASS="forumheads" ALIGN="right">Dato:</TH><TD  CLASS="forumheads"WIDHT="100%">'.Kalliope::Date::veryLongDate($post->date).'</TD></TR>';
+$HTML .= '<TR><TH  CLASS="forumheads" ALIGN="right">Emne:</TH><TD  CLASS="forumheads" WIDTH="100%">'.$post->subject.'</TD></TR>';
+$HTML .= '<TR><TH  CLASS="forumheads" ALIGN="right">Dato:</TH><TD  CLASS="forumheads" WIDHT="100%">'.Kalliope::Date::veryLongDate($post->date).'</TD></TR>';
 $HTML .= '</TABLE>';
 
 $page->addBox (width => '90%',
