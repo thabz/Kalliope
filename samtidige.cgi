@@ -80,7 +80,7 @@ my @events = Kalliope::Timeline::getHistoryInTimeSpan($poet->yearBorn,$poet->yea
 if ($#events > 0) {
     my $antal = $#events + 1;
     my $i = 0;
-    my $HTML = '<TABLE><TR><TD VALIGN="top">';
+    my $HTML = '<TABLE WIDTH="100%"><TR><TD WIDTH="50%" VALIGN="top">';
 
     $HTML .= '<TABLE>';
     my $last;
@@ -89,7 +89,7 @@ if ($#events > 0) {
         
 	$HTML .= qq|<TR><TD CLASS="blue" VALIGN="top">$yearForDisplay&nbsp;</TD>|;
 	$HTML .= '<TD VALIGN="top">'.$$e{descr}."</TD></TR>";
-	$HTML .= '</TABLE></TD><TD VALIGN="top"><TABLE>' if ++$i == int ($antal / 2);
+	$HTML .= '</TABLE></TD><TD WIDTH="50%" VALIGN="top"><TABLE>' if ++$i == int ($antal / 2);
 	$last = $$e{year};
     }
     $HTML .= '</TABLE></TD></TR></TABLE>';
