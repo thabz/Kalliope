@@ -46,7 +46,10 @@ push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,[$search->pageTitle,''];
 
-my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
+my $page = newAuthor Kalliope::Page ( poet => $poet,
+	                              page => 'search',
+				      subtitle => 'Søgning',
+	                              crumbs => \@crumbs );
 
 if ($search->hasSearchBox) {
     $page->addBox( width => '80%',
@@ -55,10 +58,9 @@ if ($search->hasSearchBox) {
 }
 
 
-my $starttid = time;
+if ($search->needle) {
 $page->addBox( width => '80%',
 	content => $search->getHTML,
-	coloumn => 1,
-	end => "Tid i sekunder: ".(time-$starttid) );
-
+	coloumn => 1);
+}
 $page->print();
