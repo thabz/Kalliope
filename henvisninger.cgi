@@ -54,23 +54,21 @@ my $antal = $sth->rows;
 if ($antal > 0) {
     my $HTML;
     my $i = 0;
-    $HTML .= '<TABLE WIDTH="100%"><TR><TD VALIGN=top>';
-    $HTML .= '<TABLE BORDER=0 CELLPADDING=0 CELLSPADING=0>';
+    $HTML .= '<TABLE CLASS="oversigt" WIDTH="100%">';
+    $HTML .= '<TH>Fra</TH><TH></TH><TH>Til</TH>';
+
     while (my ($fromid,$toid) = $sth->fetchrow_array) {
         my $fromdigt = new Kalliope::Poem(longdid => $fromid);
         next if $fromdigt->fid == $poet->fid;
         my $todigt= new Kalliope::Poem(longdid => $toid);
 
-        $HTML .= '<SPAN CLASS="listeblue">&#149;</SPAN> ';
-        $HTML .= $fromdigt->clickableTitle." henviser til ".$todigt->clickableTitle."<br>\n";
-	if ($i == int($antal/2) - 1 ) {
-	    $HTML .= '</TABLE></TD><TD VALIGN=top>';
-	    $HTML .= '<TABLE BORDER=0 CELLPADDING=0 CELLSPADING=0>';
-	}
-        $i++;
+        $HTML .= "<TR>";
+        $HTML .= '<TD>'.$fromdigt->clickableTitle."</TD>";
+        $HTML .= "<TD>&rarr;</TD>";
+        $HTML .= '<TD>'.$todigt->clickableTitle."</TD>";
+        $HTML .= "</TR>";
     }
     $HTML .= '</TABLE>';
-    $HTML .= '</TD></TR></TABLE>';
     $HTML .= '<BR><SMALL><I>Oversigt over tekster som henviser til '.$poet->name.'s tekster.</I></SMALL>';
     $page->addBox( title => 'Henvisninger',
 	    width => '80%',
