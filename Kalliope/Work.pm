@@ -85,6 +85,10 @@ sub quality {
     return shift->{'quality_obj'};
 }
 
+sub status {
+   return shift->{'status'};
+}
+
 sub pics {
    my $self = shift;
    my $pics = $self->{'pics'};

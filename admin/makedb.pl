@@ -149,6 +149,7 @@ $rc = $dbh->do("CREATE TABLE vaerker (
               noter text,
 	      pics text,
               type char(5),
+	      status enum('complete','incomplete'),
               findes char(1),
 	      quality set('korrektur1','korrektur2','korrektur3',
 	                  'kilde','side'),
@@ -164,7 +165,7 @@ $sth = $dbh->prepare("SELECT * FROM fnavne");
 $sth->execute;
 $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM vaerker");
 $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywords.id = keywords_relation.keywordid AND keywords_relation.otherid = ? AND keywords_relation.othertype = 'biografi'");
-$sth2= $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle, titel,aar,type,findes,noter,pics,quality,lang) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
+$sth2= $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle, titel,aar,type,findes,noter,pics,quality,lang,status) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
 print "Antal forfattere: ".$sth->rows."\n";
 
 while ($fn = $sth->fetchrow_hashref) {
@@ -177,6 +178,7 @@ while ($fn = $sth->fetchrow_hashref) {
 	if ($vhandle =~ /\S/) {
 	    $type = 'v' unless ($type =~ /\S/);
 	    $findes = (-e $fdir.$vhandle.".txt") ? 1 : 0;
+	    $status = 'incomplete';
 	    $noter = '';
 	    @pics = ();
 	    @keys = ();
@@ -201,7 +203,9 @@ while ($fn = $sth->fetchrow_hashref) {
 			my @q = split /\s*,\s*/,$_;
 			push @qualities,@q;
 			push @{$qualityCache{"$fhandle/$vhandle"}},@q;
-
+		    } elsif (/^STATUS:/) {
+			s/^STATUS://;
+			$status = $_;
 		    } elsif (/^VK/) {
 			s/^VK://;
 			chop;
@@ -214,7 +218,7 @@ while ($fn = $sth->fetchrow_hashref) {
 	    $pics = join '$$$',@pics;
 	    my $quality = join ',',@qualities;
 	    $sth2->execute($fn->{'fhandle'},$fn->{'fid'},$vhandle,$titel,$aar,
-		    $type,$findes,$noter,$pics,$quality,$fn->{'sprog'});
+		    $type,$findes,$noter,$pics,$quality,$fn->{'sprog'},$status);
             $lastinsertsth->execute;
 	    ($lastid) = $lastinsertsth->fetchrow_array;
 	    foreach (@keys) {
