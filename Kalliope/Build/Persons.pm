@@ -22,116 +22,112 @@
 
 package Kalliope::Build::Persons;
     
-use XML::DOM;
-require Unicode::String;
+use XML::Twig;
 use Kalliope::DB;
 use Kalliope::Date;
-use Kalliope::Poem;
 use strict;
 
 my $dbh = Kalliope::DB::connect();
 
 sub parse {
-   my $filename = shift;
-   my $parser = new XML::DOM::Parser;
-   my $doc = $parser->parsefile($filename);
- 
-   my %persons;
-   my $persons = $doc->getElementsByTagName('person');
-   my $n = $persons->getLength;
+    my $filename = shift;
+    my %persons;
 
-   for (my $i = 0; $i < $n; $i++) {
-       my $p;
-       my $person = $persons->item($i);
-       my $fhandle = $person->getAttributeNode('id')->getValue;
-       $p->{'lang'} = $person->getAttributeNode('lang')->getValue;
-       $p->{'type'} = $person->getAttributeNode('type')->getValue;
-       $p->{'fhandle'} = Unicode::String::utf8($fhandle)->latin1;
+    my $twig = new XML::Twig(keep_encoding => 1);
+    $twig->parsefile($filename);
+    foreach my $person ($twig->root->children('person')) {
+	my $p;
+	my $fhandle = $person->{'att'}->{'id'};
+	$p->{'lang'} = $person->{'att'}->{'lang'};
+	$p->{'type'} = $person->{'att'}->{'type'};
+	$p->{'fhandle'} = $fhandle;
 
-       if ($person->getElementsByTagName('firstname')->item(0)->getFirstChild) {
-           my $firstname = Unicode::String::utf8($person->getElementsByTagName('firstname')->item(0)->getFirstChild->getNodeValue);
-	   $p->{'firstname'} = $firstname->latin1;
-       }
+	if ($person->first_child('name')->first_child('firstname')) {
+	    $p->{'firstname'} = $person->first_child('name')->first_child('firstname')->text;
+	}
 
-       if ($p->{'type'} ne 'collection') {
-           # Efternavn
-           my $lastname = Unicode::String::utf8($person->getElementsByTagName('lastname')->item(0)->getFirstChild->getNodeValue);
-	   $p->{'lastname'} = $lastname->latin1;
+	if ($p->{'type'} ne 'collection') {
+	    if ($person->first_child('name')->first_child('lastname')) {
+	        $p->{'lastname'} = $person->first_child('name')->first_child('lastname')->text;
+	    }
 
-           # Fødsel
-	   my $born = $person->getElementsByTagName('born')->item(0)->getElementsByTagName('date')->item(0)->getFirstChild->getNodeValue;
-	   ($p->{'born'}) = Kalliope::Date::splitDate($born);
-	   $p->{'bornfull'} = $born;
-	   if ($person->getElementsByTagName('born')->item(0)->getElementsByTagName('place')->item(0)) {
-	       my $place = $person->getElementsByTagName('born')->item(0)->getElementsByTagName('place')->item(0)->getFirstChild->getNodeValue;
-	       $p->{'bornplace'} = Unicode::String::utf8($place)->latin1;
-	   }
+	    my $period = $person->first_child('period');
 
-	   # Død
-	   my $dead = $person->getElementsByTagName('dead')->item(0)->getElementsByTagName('date')->item(0)->getFirstChild->getNodeValue;
-	   ($p->{'dead'}) = Kalliope::Date::splitDate($dead);
-	   $p->{'deadfull'} = $dead;
-	   if ($person->getElementsByTagName('dead')->item(0)->getElementsByTagName('place')->item(0)) {
-	       my $place = $person->getElementsByTagName('dead')->item(0)->getElementsByTagName('place')->item(0)->getFirstChild->getNodeValue;
-	       $p->{'deadplace'} = Unicode::String::utf8($place)->latin1;
-	   }
+	    if ($period->first_child('born')) {
+	        my $born = $period->first_child('born')->first_child('date')->text;
+	        ($p->{'born'}) = Kalliope::Date::splitDate($born);
+	        $p->{'bornfull'} = $born;
+	        if ($period->first_child('born')->first_child('place')) {
+		    $p->{'bornplace'} = $period->first_child('born')->first_child('place')->text;
+	        }
+	    }
 
-           # Detaljer
-	   my $d;
-	   $d = "<b>F&oslash;dt: </b>".$p->{'bornfull'};
-	   $d .= ", ".$p->{'bornplace'} if $p->{'bornplace'};
-	   $d .= '<br>';
-	   $d .= "<b>D&oslash;d: </b>".$p->{'deadfull'};
-	   $d .= ", ".$p->{'deadplace'} if $p->{'deadplace'};
-	   $d .= '<br>';
-	   if ($person->getElementsByTagName('name')->item(0)->getElementsByTagName('fullname')->item(0)) {
-	       $d .= '<b>Fulde navn: </b>'.Unicode::String::utf8($person->getElementsByTagName('name')->item(0)->getElementsByTagName('fullname')->item(0)->getFirstChild->getNodeValue)->latin1.'<br>';
-	   };
-	   if ($person->getElementsByTagName('name')->item(0)->getElementsByTagName('pseudonym')->item(0)) {
-	       $d .= '<b>Pseudonym: </b>'.Unicode::String::utf8($person->getElementsByTagName('name')->item(0)->getElementsByTagName('pseudonym')->item(0)->getFirstChild->getNodeValue)->latin1.'<br>';
-	   };
-	   if ($person->getElementsByTagName('name')->item(0)->getElementsByTagName('realname')->item(0)) {
-	       $d .= '<b>Dåbsnavn: </b>'.Unicode::String::utf8($person->getElementsByTagName('name')->item(0)->getElementsByTagName('realname')->item(0)->getFirstChild->getNodeValue)->latin1.'<br>';
-	   };
-	   if ($person->getElementsByTagName('name')->item(0)->getElementsByTagName('alternative')->item(0)) {
-	       $d .= '<b>Andet navn: </b>'.Unicode::String::utf8($person->getElementsByTagName('name')->item(0)->getElementsByTagName('alternative')->item(0)->getFirstChild->getNodeValue)->latin1.'<br>';
-	   };
-	   $p->{'detaljer'} = $d;
-       }
+	    if ($period->first_child('dead')) {
+		my $dead = $period->first_child('dead')->first_child('date')->text;
+		($p->{'dead'}) = Kalliope::Date::splitDate($dead);
+		$p->{'deadfull'} = $dead;
 
-       $persons{$fhandle} = $p;
-   }
-   return %persons;
+		if ($period->first_child('dead')->first_child('place')) {
+		    $p->{'deadplace'} = $period->first_child('dead')->first_child('place')->text;
+		}
+	    }
+
+	    my $d;
+	    $d = "<b>F&oslash;dt: </b>".$p->{'bornfull'};
+	    $d .= ", ".$p->{'bornplace'} if $p->{'bornplace'};
+	    $d .= '<br>';
+	    $d .= "<b>D&oslash;d: </b>".$p->{'deadfull'};
+	    $d .= ", ".$p->{'deadplace'} if $p->{'deadplace'};
+	    $d .= '<br>';
+
+	    if ($person->first_child('name')->first_child('fullname')) {
+		$d .= '<b>Fulde navn: </b>'.$person->first_child('name')->first_child('fullname')->text;
+	    }
+	    if ($person->first_child('name')->first_child('pseudonym')) {
+		$d .= '<b>Pseudonym: </b>'.$person->first_child('name')->first_child('pseudonym')->text;
+	    }
+	    if ($person->first_child('name')->first_child('realname')) {
+		$d .= '<b>Dåbsnavn: </b>'.$person->first_child('name')->first_child('realname')->text;
+	    }
+	    if ($person->first_child('name')->first_child('alternative')) {
+		$d .= '<b>Andet navn: </b>'.$person->first_child('name')->first_child('alternative')->text;
+	    }
+	    $p->{'detaljer'} = $d;
+	}
+
+	$persons{$fhandle} = $p;
+    }
+    return %persons;
 }
 
 sub create {
     $dbh->do("DROP TABLE IF EXISTS fnavne");
     $dbh->do("CREATE TABLE fnavne ( 
-              fid int UNSIGNED DEFAULT '0' NOT NULL PRIMARY KEY auto_increment,
-              fhandle char(40) NOT NULL, 
-              fornavn text DEFAULT '', 
-              efternavn text DEFAULT '',
-	      detaljer text DEFAULT '',
-              foedt char(8), 
-              doed char(8), 
-              sprog char(2), 
-              land text,
-              /* Beholdning */
-              cols int(2),
-              thumb int(1),
-              pics int(1),
-              bio int(1),
-              biotext text,
-              hashenvisninger int(1),
-              links int(1),
-              sekundaer int(1),
-              primaer int(1),
-              vaerker int(1),
-              vers int(1),
-              prosa int(1),
-	      type varchar(32),
-              KEY fhandle_index (fhandle(10)), 
-              UNIQUE (fid))");
+	fid int UNSIGNED DEFAULT '0' NOT NULL PRIMARY KEY auto_increment,
+    fhandle char(40) NOT NULL, 
+    fornavn text DEFAULT '', 
+    efternavn text DEFAULT '',
+    detaljer text DEFAULT '',
+    foedt char(8), 
+    doed char(8), 
+    sprog char(2), 
+    land text,
+    /* Beholdning */
+    cols int(2),
+    thumb int(1),
+    pics int(1),
+    bio int(1),
+    biotext text,
+    hashenvisninger int(1),
+    links int(1),
+    sekundaer int(1),
+    primaer int(1),
+    vaerker int(1),
+    vers int(1),
+    prosa int(1),
+    type varchar(32),
+    KEY fhandle_index (fhandle(10)), 
+    UNIQUE (fid))");
 }
 
 sub insert {
