@@ -119,7 +119,8 @@ sub sonnet {
     my $poem = new Kalliope::Poem(did => $h->{'otherid'});
     $HTML .= '<SMALL>'.$poem->content.'</SMALL>';
     $HTML =~ s/ /&nbsp;/g;
-    $END = '<A TITLE="'.$poem->author->name.': »'.$poem->title.'«" HREF="digt.pl?longdid='.$poem->longdid.'"><IMG VALIGN=center BORDER=0 HEIGHT=16 WIDTH=16 SRC="gfx/rightarrow.gif" ALT="Vis digtet"></A>';
+    my $title = $poem->author->name.': »'.$poem->title.'«';
+    $END = qq|<A TITLE="$title" HREF="digt.pl?longdid=|.$poem->longdid.qq|"><IMG VALIGN=center BORDER=0 HEIGHT=16 WIDTH=16 SRC="gfx/rightarrow.gif" ALT="$title"></A>|;
     return ($HTML,$END);
 
 }
