@@ -29,6 +29,18 @@ use strict;
 
 my $dbh = Kalliope::DB->connect;
 my $fhandle = url_param('fhandle');
+
+unless ($fhandle) {
+    my @ARGV = split(/\?/,$ARGV[0]);
+    if (!($ARGV[1] eq "")) {
+	chop($ARGV[0]);
+	chomp($ARGV[1]);
+    }
+    print "Location: fvaerker.pl?fhandle=".$ARGV[0];
+    print "\n\n";
+    exit;
+}
+
 my $poet = new Kalliope::Person(fhandle => $fhandle);
 my $mode = url_param('mode') || 'poetical';
 
