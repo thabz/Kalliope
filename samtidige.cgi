@@ -48,7 +48,7 @@ my $page = newAuthor Kalliope::Page ( poet => $poet,
 # Samtidige digtere -------------------------------------
 #
 
-my $sth = $dbh->prepare("SELECT DISTINCT f.* FROM fnavne as f,vaerker as v WHERE v.fid = f.fid AND v.aar > ? AND v.aar < ? AND f.fid != ? ORDER BY f.foedt");
+my $sth = $dbh->prepare("SELECT DISTINCT f.* FROM fnavne as f,vaerker as v WHERE v.fid = f.fid AND v.aar > ? AND v.aar < ? AND f.fid != ? ORDER BY f.doed");
 $sth->execute($poet->yearBorn,$poet->yearDead,$poet->fid);
 my $antal = $sth->rows;
 if ($antal) {
