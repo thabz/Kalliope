@@ -251,7 +251,7 @@ sub getSearchResultEntry {
     $poemTitle =~ s/\n/<B>/g;
     $poemTitle =~ s/\t/<\/B>/g;
     
-    my $HTML .= '<IMG ALT="Digt" ALIGN="right" SRC="gfx/open_book_40.GIF">';
+    my $HTML .= '<IMG ALT="Digt" ALIGN="right" SRC="gfx/icons/poem-h48.gif">';
     $HTML .= '<A CLASS=blue HREF="digt.pl?longdid='.$self->longdid.qq|&needle=$escapedNeedle#offset">|.$poemTitle.qq|</A><BR>|;
     $HTML .= qq|$match|;
     $HTML .= '<SPAN STYLE="color: green">'.$author->name.'</SPAN>: <SPAN STYLE="color: #a0a0a0"><I>'.$work->title."</I> ".$work->parenthesizedYear."</SPAN><BR><BR>";

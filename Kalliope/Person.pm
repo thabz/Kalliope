@@ -137,7 +137,7 @@ sub clickableTitle {
 }
 
 sub smallIcon {
-     return '<IMG BORDER=0 HEIGHT=32 WIDTH=32 SRC="gfx/poet_40.GIF">';
+     return '<IMG BORDER=0 HEIGHT=32 WIDTH=32 SRC="gfx/icons/poet-h48.gif">';
 }
 
 sub clickableNameBlack {
@@ -234,7 +234,7 @@ sub getSearchResultEntry {
     $content =~ s/\n/<B>/g;
     $content =~ s/\t/<\/B>/g;
     
-    my $HTML = '<IMG ALT="Digter" ALIGN="right" SRC="gfx/poet_40.GIF">';
+    my $HTML = '<IMG ALT="Digter" ALIGN="right" SRC="gfx/icons/poet-h48.gif">';
     $HTML .= '<A CLASS=blue HREF="ffront.cgi?fhandle='.$self->fhandle.qq|">|.$content.qq|</A><BR>|;
     $HTML .= '<SPAN STYLE="color: #a0a0a0">'.$self->lifespan."</SPAN><BR><BR>";
     return $HTML;
