@@ -72,6 +72,7 @@ if ($noter) {
     $noter =~ s/<A /<A CLASS=green /g;
     @noter = split /\n/,$noter;
     foreach (@noter) {
+        next unless $_;
 	print '<IMG WIDTH=48 HEIGHT=48 SRC="gfx/clip.gif" BORDER=0 ALT="Note til »'.$vtitel.'«">';
 	print $_."<BR><BR>";
     }
