@@ -20,7 +20,7 @@ DROP TABLE IF EXISTS edithistory;
 CREATE TABLE edithistory (
 	filename varchar(128) NOT NULL,
 	dir varchar(128) NOT NULL,
-	action enum('edit','accept'),
+	action enum('edit','accept','duplet'),
         login varchar(64),
         date int,
         KEY(filename),

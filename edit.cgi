@@ -101,6 +101,7 @@ sub editPage {
     $HTML .= qq|<td valign=top><textarea rows=30 name="data" style="width:300px; height:90%">$data</textarea><br>|;
     $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Gem ændringer">';
     $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Godkend tekst">';
+    $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Duplet">';
     $HTML .= '</td>';
     $HTML .= '</tr></table>';
     $HTML .= '</form>';
@@ -123,6 +124,9 @@ sub handleForm {
     } elsif ($knap =~ /Godkend/) {
 	my $sth = $dbh->prepare("INSERT INTO edithistory (filename,dir,action,login,date) VALUES (?,?,?,?,?)");
 	$sth->execute($filename,$dir,'accept',param('user'),time);
+    } elsif ($knap =~ /Duplet/) {
+	my $sth = $dbh->prepare("INSERT INTO edithistory (filename,dir,action,login,date) VALUES (?,?,?,?,?)");
+	$sth->execute($filename,$dir,'duplet',param('user'),time);
     }
 }
 
