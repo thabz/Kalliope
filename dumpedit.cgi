@@ -27,11 +27,12 @@ my $did = '';
 
 while (my ($data,$filename) = $sth->fetchrow_array) {
     next if $data =~ /\[Duplet\]/i;
-    push @result, "\n# $dir/$filename";
+    # push @result, "\n# $dir/$filename";
     foreach my $line (split /\n/,$data) {
         if ($line =~ (/^T:/)) {
 	    $did = "$dir$year$mon$mday$i";
 	    push @result,"\n\n\nI:$did";
+	    push @{$filer{$filename}},$did;
 	    $i++;
 	}
 	chomp $line;
@@ -52,8 +53,8 @@ foreach $line (@result) {
     push @finalresult,$line;
     if ($line =~ /I:(.*)/) {
 	my $did = $1;
-	my $files = "FILES:".(join ",",@{$sider{$did}});
-	push @finalresult,$files;
+	my $files = join ",",uniq(@{$sider{$did}});
+	push @finalresult,"FILES:$files";
     }
 }
 
@@ -61,4 +62,13 @@ foreach $line (@result) {
 
 print "Content-type: text/plain\n\n";
 print join "\n",@finalresult;
+
+
+# ----
+
+sub uniq {
+    my %uniq;
+    map { $uniq{$_} = 1} @_;
+    return sort keys %uniq;
+}
 
