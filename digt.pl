@@ -97,8 +97,8 @@ my @keywords = $poem->keywords;
 if ($poem->notes || $#keywords >= 0) {
     $page->addBox( width => '200',
 	           coloumn => 2,
-		   theme => 'dark',
-                   title => 'Noter',
+		   theme => 'note',
+#                   title => 'Noter',
 	           content => &notes($poem,@keywords) );
 }
 
@@ -121,11 +121,11 @@ if ($poem->hasPics) {
 
 }
 
-$page->addBox( width => '200',
-               coloumn => 2,
-	       theme => 'dark',
-               title => 'Nøgleord',
-               content => &keywords($poem) );
+#$page->addBox( width => '200',
+#               coloumn => 2,
+#	       theme => 'dark',
+#               title => 'Nøgleord',
+#               content => &keywords($poem) );
 
 
 
@@ -267,7 +267,7 @@ sub notes {
     my $HTML = '<span style="font-size: 12px">';
     if ($poem->notes) {
 	foreach my $line (split /\n/,$poem->notes) {
-	    $HTML .= '<IMG ALIGN="left" SRC="gfx/clip.gif" BORDER=0 ALT="Note til »'.$poem->title.'«">';
+#	    $HTML .= '<IMG ALIGN="left" SRC="gfx/clip.gif" BORDER=0 ALT="Note til »'.$poem->title.'«">';
 	    Kalliope::buildhrefs(\$line);
 	    $HTML .= $line;
 	    $HTML .= "<BR><BR>";
@@ -277,6 +277,7 @@ sub notes {
 	$HTML .= '<B>Nøgleord:</B> ';
         $HTML .= join ', ', map { $_->clickableTitle($LA) } @keywords;
     }
+    $HTML =~ s/<BR><BR>$//;
     $HTML .= "<BR></span>";
     return $HTML;
 }

@@ -140,17 +140,17 @@ TD.darkblue {
 }
 
 DIV.nav {
-    background-color: white;
+/*    background-color: white; */
 /*    height: 100px;*/
 }
 
 DIV.body {
-    padding: 10px;
+    padding: 0px;
 }
 
 BODY {
 /*    background-color: rgb(79,112,153);*/
-    background-color: #CC9966;
+    background-image: url('gfx/pap.gif');
     padding: 0px;
     margin: 0px;
 }
@@ -185,17 +185,17 @@ A.leftframe:hover {
 
 A.white:link, A.white:visited, A.white:active { 
     text-decoration:none;
-    color: rgb(19,52,93);
+    color: white;
 }
 A.green:link, A.green:visited, A.green:active { 
-   color: #007000;
+color: rgb(139,56,65)
 
 }
 
 A.green:hover {
-   color: #00a000;
-
+      color: rgb(139,56,65)
 }
+
 A.blue:link, A.blue:visited, A.blue:active { color: blue}
 P.hist { text-align: justify }
 
@@ -231,16 +231,12 @@ TD.topframetitel {
 .listeoverskrifter {
     font-family: Arial, Helvetica;
     font-size: 16px;
-    color: #AA7744;
+    color: rgb(139,56,65);
 /*    color: rgb(99,132,173);*/
     font-weight: 800;
     width: 100%;
 /*    border-bottom: 1px solid rgb(99,132,173);*/
-    border-bottom: 1px solid #EEBB88;
-}
-
-.listeblue {
-    color: #AA7744;
+    border-bottom: 1px solid rgb(139,56,65);
 }
 
 legend {
@@ -281,12 +277,9 @@ td.maintitle {
 }
 
 td.navigation {
-    vertical-align: middle;
     font-size: 12px;
-    color: black;
+    color: white;
     font-family: Arial, Helvetica;
-    background-color: rgb(238,216,174);
-
 }
 
 span.lifespan {

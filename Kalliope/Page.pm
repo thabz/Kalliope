@@ -134,6 +134,7 @@ sub addBox {
     my ($self,%args) = @_;
 
     my $bggfx = (defined $args{'theme'} && $args{'theme'} eq 'dark') ? 'pap.gif' : 'lightpap.gif';
+    $bggfx = 'notepap.jpg' if defined $args{'theme'} && $args{'theme'} eq 'note';
 
     my $HTML;
     $HTML .= '<TABLE WIDTH="'.$args{width}.'" ALIGN="center" BORDER=0 CELLPADDING=1 CELLSPACING=0><TR><TD ALIGN=right>';
@@ -196,7 +197,7 @@ EOF
     }
     print '<DIV HEIGHT=100 CLASS="nav"><TABLE WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
     print '<TD CLASS="navigation">';
-    print $self->_navigationMain;
+#    print $self->_navigationMain;
     print '</TD>';
     print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1 ALT=""></TD>';
 
@@ -210,7 +211,11 @@ EOF
     print '</TR></TABLE>';
     print '</DIV>';
 
-    print '<DIV CLASS="body">';
+#    print '<DIV CLASS="body">';
+    print '<TABLE WIDTH="100%" HEIGHT="100%" CELLPADDING=0 CELLSPACING=0 BORDER=0><TR>';
+    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top">'.$self->_navigationMain.'<BR><BR>';
+    print $self->langSelector;
+    print '</TD><TD VALIGN="top">';
     print '<TABLE WIDTH="100%" HEIGHT="100%"><TR>';
     my @widths = $self->getColoumnWidths;
     foreach my $colHTML (@{$self->{'coloumns'}}) {
@@ -221,15 +226,16 @@ EOF
         }
     }
     print '</TR>';
-    print '<TR><TD COLSPAN=3>';
+    print '<TR><TD COLSPAN=4>';
     print '<TABLE WIDTH="100%"><TR><TD>';
     print '<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"></FORM>';
     print '</TD><TD ALIGN="right">';
-    print $self->langSelector;
     print '</TD></TR></TABLE>';
     print '</TD></TR></TABLE>';
     
-    print '</DIV></BODY></HTML>';
+    print '</TD></TR></TABLE>';
+#    print '</DIV>';
+    print '</BODY></HTML>';
 }
 
 #
@@ -253,6 +259,7 @@ sub langSelector {
        my $img = $lang eq $selfLang ? "${lang}select.gif" : "$lang.gif";
        my $alt = $lang eq $selfLang ? 'Du befinder dig i den '.$titles{$lang}.' samling.' : 'Skift til den '.$titles{$lang}.' samling.';
        $HTML .= qq|<A TITLE="$alt" HREF="$refURL"><IMG ALT="$alt" BORDER=0 SRC="gfx/flags/$img"></A>|;
+       $HTML .= '<BR>' if $lang eq 'de';
     }
     return $HTML;
 }
@@ -364,9 +371,9 @@ sub _navigationMain {
         my ($title,$url) = ($struct->{'menuTitle'},
                            $struct->{'url'});
         if ($key ne $self->{'pagegroup'}) {
-	    $HTML .= qq|<A HREF="$url">[$title]</A> |;
+	    $HTML .= qq|<A CLASS=white HREF="$url">[$title]</A><BR> |;
 	} else {
-            $HTML .= qq|<B>[$title]</B> |;
+            $HTML .= qq|<B>[$title]</B><BR>|;
 	}
     }
     return $HTML;
