@@ -35,7 +35,7 @@ sub build {
     &create();
     
     # Parse data/events.txt ---------------------------------------
-    open (FILE,"../aarstal.txt");
+    open (FILE,"../data/events.txt");
     my $line = 1;
     while (<FILE>) {
 	if (/^(\d+): P:(.*)%(.*)$/) {
