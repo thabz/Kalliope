@@ -1944,6 +1944,7 @@
   <name>
     <firstname>Ludvig</firstname>
     <lastname>Bødtcher</lastname>
+    <fullname>Ludvig Adolf Bødtcher</fullname>
   </name>
   <period>
     <born>
@@ -1969,6 +1970,22 @@
     </dead>
   </period>
 </person>
+
+<person id="thiele" lang="dk" type="poet">
+  <name>
+    <firstname>Just Mathias</firstname>
+    <lastname>Thiele</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1795-12-13</date>
+      <place>Kbh.</place>
+    </born>
+    <dead>
+      <date>1874-11-09</date>
+    </dead>
+  </period>
+</person>
  
 <person id="winter" lang="dk" type="poet">
   <name>
@@ -1990,6 +2007,7 @@
   <name>
     <firstname>Christian</firstname>
     <lastname>Wilster</lastname>
+    <fullname>Christian Frederik Emil Wilster</fullname>
   </name>
   <period>
     <born>
@@ -2114,10 +2132,12 @@
   <name>
     <firstname>Carl</firstname>
     <lastname>Bagger</lastname>
+    <fullname>Carl Christian Bagger</fullname>
   </name>
   <period>
     <born>
       <date>1807-05-11</date>
+      <place>Kbh.</place>
     </born>
     <dead>
       <date>1846-10-25</date>
