@@ -27,15 +27,12 @@
 ##############################################################################
 use DBI;
 use URI::Escape;
+use Kalliope::DB ();
 
-do 'dbconnect.pl';
+$dbh = Kalliope::DB::connect;
 
 $ENV{REQUEST_URI} =~ /([^\/]*)$/;
 $request_uri = $1;
-
-#$dbh = DBI->connect("DBI:mysql:kalliope:localhost", "httpd", "" ) or print STDERR ("Connect fejl: $DBI::errstr");
-#if ($dbh eq "") { die "Error!"; };
-
 
 sub kheaderHTML {
 

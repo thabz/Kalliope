@@ -21,7 +21,9 @@
 #  $Id$
 
 use CGI qw (:standard :html);
-do "dbconnect.pl";
+use Kalliope::DB ();
+
+$dbh = Kalliope::DB::connect;
 
 $LA = url_param('sprog');
 $links='&nbsp;';

@@ -24,15 +24,12 @@ package Web;
 use DBI;
 use URI::Escape;
 use Exporter ();
+use Kalliope::DB ();
 
 @ISA = qw(Exporter);
 @EXPORT = qw(kheaderHTML kfooterHTML beginwhitebox beginnotebox begindarkbluebox enddarkbluebox endbox $dbh);
 
-do 'dbconnect.pl';
-
-#$dbh = DBI->connect("DBI:mysql:kalliope:localhost", "httpd", "" ) or print STDERR ("Connect fejl: $DBI::errstr");
-#if ($dbh eq "") { die "Error!"; };
-
+$dbh = Kalliope::DB::connect;
 
 sub kheaderHTML {
     $ENV{REQUEST_URI} =~ /([^\/]*)$/;
