@@ -30,7 +30,7 @@ use strict;
 
 my $dbh = Kalliope::DB->connect;
 
-my $LA = CGI::param('lang');
+my $LA = CGI::param('sprog');
 my $needle = CGI::param('needle');
 my $escapedNeedle = uri_escape($needle);
 
@@ -101,7 +101,7 @@ if ($hits > 10) {
 	if ($offset == $firstNumShowing) {
 	    $HTML .= "<B>[$iDisplay] </B>";
 	} else {
-	    $HTML .= qq|<A HREF="ksearch.cgi?offset=$offset&needle=$escapedNeedle&lang=$LA">[$iDisplay]</A> |;
+	    $HTML .= qq|<A HREF="ksearch.cgi?offset=$offset&needle=$escapedNeedle&sprog=$LA">[$iDisplay]</A> |;
 	}
     }
 }
@@ -110,7 +110,7 @@ unless ($hits) {
     $HTML = 'Søgningen gav intet resultat.';
 }
 
-my $formHTML = qq|<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle" VALUE="$needle"><INPUT TYPE="hidden" NAME="lang" VALUE="$LA"></FORM>|;
+my $formHTML = qq|<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle" VALUE="$needle"><INPUT TYPE="hidden" NAME="sprog" VALUE="$LA"></FORM>|;
 
 $page->addBox( width => '80%',
 	content => $formHTML );

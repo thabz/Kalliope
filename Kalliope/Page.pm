@@ -217,7 +217,7 @@ EOF
     print '</TR>';
     print '<TR><TD COLSPAN=3>';
     print '<TABLE WIDTH="100%"><TR><TD>';
-    print '<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><INPUT TYPE="hidden" NAME="lang" VALUE="'.$self->lang.'"></FORM>';
+    print '<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"></FORM>';
     print '</TD><TD ALIGN="right">';
     print $self->langSelector;
     print '</TD></TR></TABLE>';
