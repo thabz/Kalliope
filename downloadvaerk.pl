@@ -34,13 +34,14 @@ $outputtype = url_param('mode');
 
 ($ffornavn,$fefternavn,$ffoedt,$fdoed) = $dbh->selectrow_array("SELECT fornavn,efternavn,foedt,doed FROM fnavne WHERE fhandle = '$fhandle'");
 
-$sth = $dbh->prepare("SELECT longdid,titel,underoverskrift,indhold,noter,afsnit FROM digte WHERE vid=? AND fid=?");
+$sth = $dbh->prepare("SELECT longdid,titel,foerstelinie,underoverskrift,indhold,noter,afsnit FROM digte WHERE vid=? AND fid=?");
 $sth->execute($vid,$fid);
 
 if ($outputtype eq 'XML') {
     print "Content-type: text/xml\n\n";
     print <<'EOS';
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="xmlstyle.css" type="text/css"?>
 <!DOCTYPE kalliopework [
    <!ELEMENT kalliopework (head, content)>
    <!ELEMENT head (title, date, author, notes)>
@@ -55,13 +56,16 @@ if ($outputtype eq 'XML') {
    <!ELEMENT line (#PCDATA)>
    <!ATTLIST line xml:space (default|preserve) 'preserve'>
    <!ELEMENT section (#PCDATA)> 
+
+   <!ENTITY mdash "&#8212;">
+   <!ENTITY ndash "&#8211;">
 ]>
 EOS
-    print "<kalliopework>";
-    print "<head>";
+    print "<kalliopework>\n";
+    print "<head\n>";
     print "<title>".$vtitel."</title>\n";
+    print qq|   <author id="$fhandle">$ffornavn $fefternavn</author>\n|;
     print "   <date>".$vaar."</date>\n";
-    print "   <author id=\"".$fhandle."\">".$fefternavn.", ".$ffornavn."</author>\n";
     print "   <notes>".$vnoter."</notes>\n";
     print "</head>\n";
     print "<content>\n";
@@ -73,15 +77,19 @@ EOS
 	    print '<poem id="'.$d->{longdid}."\">\n";
 	    print "   <title>".$d->{titel}."</title>\n";
 	    print "   <subtitle>".$d->{underoverskrift}."</subtitle>\n" if $d->{underoverskrift};
+	    print "   <firstline>".$d->{foerstelinie}."</firstline>\n";
 	    $d->{noter} =~ s/<BR>/\n/gi;
 	    $d->{noter} = join "\n", map {"<line>$_</line>"} split /\n/,$d->{noter};
-	    print "   <notes>".$d->{noter}."</notes>\n" if $d->{noter};
+#	    print "   <notes>".$d->{noter}."</notes>\n" if $d->{noter};
 	    my @verse = split /\n\n/,$d->{indhold};
 	    foreach $verse (@verse) {
 	        print "  <verse>\n";
 		foreach $line (split /\n/,$verse) {
 		    $line =~ /^(\s*)/;
 		    my $indent = length $1;
+		    $line =~ s/ - / \&ndash; /g;
+		    $line =~ s/^- /\&ndash; /g;
+		    $line =~ s/ -$/ \&ndash;/g;
 		    print qq|    <line indent="$indent">$line</line>\n|;
 		}
 		print "  </verse>\n";
