@@ -139,14 +139,14 @@ sub addBox {
     if ($args{title}) {
 	$HTML .= '<DIV STYLE="position: relative; top: 16px; left: -10px;">';
 	$HTML .= '<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=0><TR><TD BGCOLOR=black>';
-	$HTML .= '<TABLE ALIGN=center WIDTH="100%" CELLSPACING=0 CELLPADDING=2 BORDER=0><TR><TD CLASS="boxheaderlayer" BGCOLOR="#7394ad" BACKGROUND="gfx/pap.gif" >';
+	$HTML .= '<TABLE STYLE="border-top: 1px solid #F8FAF2; border-left: 1px solid #F8F4F2; border-bottom: 1px solid #81807E; border-right: 1px solid #81807E" ALIGN=center WIDTH="100%" CELLSPACING=0 CELLPADDING=2 BORDER=0><TR><TD CLASS="boxheaderlayer" BGCOLOR="#7394ad" BACKGROUND="gfx/pap.gif" >';
 	$HTML .= $args{title};
 	$HTML .= "</TD></TR></TABLE>";
 	$HTML .= "</TD></TR></TABLE>";
 	$HTML .= '</DIV>';
     }
     $HTML .= '</TD></TR><TR><TD VALIGN=top BGCOLOR=black>';
-    $HTML .= '<TABLE WIDTH="100%" ALIGN=center CELLSPACING=0 CELLPADDING=15 BORDER=0>';
+    $HTML .= '<TABLE STYLE="border-top: 1px solid #F8FAF2; border-left: 1px solid #F8F4F2; border-bottom: 1px solid #81807E; border-right: 1px solid #81807E" WIDTH="100%" ALIGN=center CELLSPACING=0 CELLPADDING=15 BORDER=0>';
     $HTML .= '<TR><TD '.($args{align} ? qq|ALIGN="$args{align}"| : '').' BGCOLOR="#e0e0e0" BACKGROUND="gfx/lightpap.gif">';
     $HTML .= $args{content};
     if ($args{end}) {
@@ -154,7 +154,7 @@ sub addBox {
 	$HTML .= "</TD></TR><TR><TD>";
 	$HTML .= '<DIV STYLE="position: relative; top: -10px; left: 10px;">';
 	$HTML .= '<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=0><TR><TD BGCOLOR=black>';
-	$HTML .= '<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=2 BORDER=0><TR><TD CLASS="boxheaderlayer" BGCOLOR="#7394ad" BACKGROUND="gfx/pap.gif" >';
+	$HTML .= '<TABLE STYLE="border-top: 1px solid #F8FAF2; border-left: 1px solid #F8F4F2; border-bottom: 1px solid #81807E; border-right: 1px solid #81807E" WIDTH="100%" CELLSPACING=0 CELLPADDING=2 BORDER=0><TR><TD CLASS="boxheaderlayer" BGCOLOR="#7394ad" BACKGROUND="gfx/pap.gif" >';
 	$HTML .= $args{end};
 	$HTML .= "</TD></TR></TABLE>";
 	$HTML .= "</TD></TR></TABLE>";
