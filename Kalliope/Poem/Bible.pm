@@ -130,7 +130,7 @@ sub content {
         if ($line =~ /^\s*$/) {
             $line = '</TD></TR><TR><TD COLSPAN=2>&nbsp;';
 	}
-	if ($line =~ s/^\s*(\d+)\.\s+//) {
+	if ($line =~ s/^\s*([\d,]+)\.\s+//) {
 	    my $num = $1;
 	    my $bg = '';
 	    if ($num >= $begin && $num <= $end) {
