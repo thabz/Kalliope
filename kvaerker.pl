@@ -178,6 +178,8 @@ if ($mode eq 'titel') {
 	}
 	$sthvaerker->execute($f->{fid});
 	if ($sthvaerker->rows) {
+            $HTML .= '<SPAN CLASS="listeblue">&#149;</SPAN> ';
+	    $f->{'navn'} =~ s/^, //;
 	    $HTML .= $f->{navn}."<BR>";
 	    $html = '<DIV STYLE="padding:0 0 0 20">';
 	    while ($v = $sthvaerker->fetchrow_hashref) {
@@ -187,7 +189,7 @@ if ($mode eq 'titel') {
 		    $html .= "<I>".$v->{'titel'}."</I> $aar, ";
 		} else {
 		    $html .='<A CLASS=green HREF="vaerktoc.pl?fhandle='.$f->{'fhandle'}.'&vhandle='.$v->{'vhandle'}.'">';
-		    $html .= "<I>".$v->{'titel'}."</I></A> $aar, ";
+		    $html .= "<I>".$v->{'titel'}."</I> $aar</A>, ";
 		}
 	    }
 	    $html =~ s/, $//;
