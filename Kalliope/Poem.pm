@@ -420,7 +420,7 @@ sub clickableTitle {
 
 sub clickableTitleSimple {
     my ($self) = @_;
-    return '<A CLASS=green HREF="digt.pl?longdid='.$self->longdid.'">»'.$self->title.'«</A>';
+    return '<A CLASS=green HREF="digt.pl?longdid='.$self->longdid.'">»'.$self->linkTitle.'«</A>';
 }
 
 sub smallIcon {
@@ -502,4 +502,5 @@ sub getKeyPool {
 }
 
 1;
+
 
