@@ -29,6 +29,7 @@ foreach my $file (@files) {
     open(FILE,"$dir/$file");
     while (<FILE>) { print $_ };
     print footer();
+    $i++;
 }
 
 sub header {
