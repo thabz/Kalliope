@@ -25,7 +25,10 @@
 use Kalliope;
 use Kalliope::Poem;
 use Kalliope::Page;
+use CGI ();
 use strict;
+
+my $showAllNews = CGI::param('showall') eq 'yes' ? 1 : 0;
 
 my $page = new Kalliope::Page (
 		title => 'Velkommen til den totalt fede webstil!',
@@ -38,7 +41,7 @@ $page->addBox ( title => "Sidste Nyheder",
                 width => '100%',
                 coloumn => 0,
                 content => &latestNews,
-                end => '<A onclick="document.location = \'kallnews.pl\'" HREF="kallnews.pl"><IMG VALIGN=center BORDER=0 HEIGHT=16 WIDTH=16  SRC="gfx/rightarrow.gif" ALT="Vis gamle nyheder"></A>' );
+                end => qq|<A HREF="index.cgi?showall=yes"><IMG VALIGN=center BORDER=0 HEIGHT=16 WIDTH=16  SRC="gfx/rightarrow.gif" ALT="Vis gamle nyheder"></A>| );
 
 if (my $dayToday = &dayToday()) {
     $page->addBox ( title => "Dagen idag",
@@ -65,7 +68,12 @@ sub latestNews {
     open (NEWS,"data.dk/news.html");
     foreach my $line (<NEWS>) {
 	Kalliope::buildhrefs(\$line);
-	$HTML .= $line unless ($line =~ /^\#/);
+	if ($showAllNews) {
+	    $line =~ s/^\#//;
+	    $HTML .= $line;
+	} elsif ($line =~ /^[^#]/) {
+	    $HTML .= $line;
+	}
     }
     close (NEWS);
     return $HTML;
