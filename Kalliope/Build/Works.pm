@@ -66,6 +66,7 @@ sub insert {
     my $sthkeyword = $dbh->prepare("INSERT INTO workxkeyword (fhandle,vhandle,keyword) VALUES (?,?,?)");
     foreach my $item (@changed) {
 	my ($fhandle,$vhandle) = ($item->{'fhandle'},$item->{'vhandle'});
+	my $person = Kalliope::PersonHome::findByFhandle($fhandle);
 	my $filename  = "../fdirs/$fhandle/$vhandle.xml";
 	print "           Inserting head $filename\n";
 	my $twig = new XML::Twig(keep_encoding => 1);
@@ -83,7 +84,7 @@ sub insert {
 	my $quality =  $workhead->first_child('quality') ? $workhead->first_child('quality')->text : '';
 	my $hascontent = $kalliopework->first_child('workbody') ? 'yes' : 'no';
 	$sthwork->execute($fhandle,0,$vhandle,$title,$subtitle,$year,
-		$type,$hascontent,$quality,'dk',$status,
+		$type,$hascontent,$quality,$person->lang,$status,
                 Kalliope::Date::cvsTimestampToUNIX($timestamptxt),
 		$timestamptxt);
 	if ($workhead->first_child('notes')) {
