@@ -139,6 +139,7 @@ sub titleForWindow {
     }
 }
 
+
 sub setColoumnWidths {
     my ($self,@widths) = @_;
     $self->{'coloumnwidths'} = \@widths;

@@ -26,13 +26,7 @@ use Kalliope::Page;
 use strict;
 
 my $fhandle = url_param('fhandle');
-my $mode = url_param('mode');
-my $filename =  $mode eq 's' ? 'sekundaer' : 'primaer';
-
 my $poet = new Kalliope::Person(fhandle => $fhandle);
-
-my $title = $mode eq 's' ? 'Sekundær litteratur' : 'Primær litteratur';
-my $pageMode = $mode eq 's' ? 'sekundaer' : 'primaer';
 
 #
 # Breadcrumbs -------------------------------------------------------------
@@ -41,18 +35,38 @@ my $pageMode = $mode eq 's' ? 'sekundaer' : 'primaer';
 my @crumbs;
 push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
-push @crumbs,[$title,''];
+push @crumbs,['Bibliografi',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
-                                      page => $pageMode,
+                                      page => 'bibliografi',
                                       crumbs => \@crumbs );
 
-open (FILE,"fdirs/".$fhandle."/".$filename.'.txt');
-my $HTML = join '<BR><BR>',<FILE>;
-close (FILE);
 
-$page->addBox( width => '75%',
-               coloumn => 1,
-	       title => $title,
-	       content => $HTML );
+if (-e "fdirs/$fhandle/primaer.txt") {
+    open (FILE,"fdirs/$fhandle/primaer.txt");
+    my $HTML = join '<BR><BR>',<FILE>;
+    close (FILE);
+
+    $page->addBox(
+	    width => '80%',
+	    coloumn => 0,
+	    title => 'Primærlitteratur',
+	    content => $HTML );
+}
+
+if (-e "fdirs/$fhandle/sekundaer.txt") {
+    open (FILE,"fdirs/$fhandle/sekundaer.txt");
+    my $HTML = join '<BR><BR>',<FILE>;
+    close (FILE);
+
+    $page->addBox(
+	    width => '80%',
+	    coloumn => 1,
+	    title => 'Sekundærlitteratur',
+	    content => $HTML );
+}
+
+$page->setColoumnWidths('50%','50%');
+
 $page->print;
+

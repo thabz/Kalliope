@@ -112,20 +112,14 @@ my %menuStruct = (
         desc => 'Henvisninger til andre steder på internettet, som har relevant information om '.$poetName,
         icon => 'gfx/icons/links-h48.gif'
                     },
-        primaer => { url => 'fsekundaer.pl?mode=p&', 
-        title => 'Primærlitteratur', 
-        status => $poet->{'primaer'},
-        desc => 'Henvisninger til '.$poetName.'s primærlitteratur',
-        icon => 'gfx/icons/secondary-h48.gif'
-                    },
-        sekundaer => { url => 'fsekundaer.pl?mode=s&', 
-        title => 'Sekundærlitteratur', 
-        status => $poet->{'sekundaer'},
-        desc => 'Henvisninger til sekundærlitteratur om '.$poetName,
+        bibliografi => { url => 'fsekundaer.pl?', 
+        title => 'Bibliografi', 
+        status => $poet->{'primaer'} || $poet->{'sekundaer'},
+        desc => $poetName.'s bibliografi',
         icon => 'gfx/icons/secondary-h48.gif'
                     } );
 
-my @keys = qw/vaerker titlelines firstlines popular prosa pics bio samtidige henvisninger links primaer sekundaer/;
+my @keys = qw/vaerker titlelines firstlines popular prosa pics bio samtidige henvisninger links bibliografi/;
 
 my @activeItems = grep { $_->{status} } (values %menuStruct);
 my $itemsNum = $#activeItems+1;

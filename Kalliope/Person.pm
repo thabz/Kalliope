@@ -254,15 +254,11 @@ sub menu {
                     title => 'Links', 
                     desc => 'Henvisninger til andre steder på internettet, som har relevant information om '.$poetName,
                     status => $self->{'links'} },
-       primaer   => { url => 'fsekundaer.pl?mode=p&', 
-                    title => 'Primær', 
-                    desc => 'Henvisninger til '.$poetName.'s primærlitteratur',
-		    status => $self->{'primaer'} },
-       sekundaer => { url => 'fsekundaer.pl?mode=s&', 
-                    title => 'Sekundær', 
-                    desc => 'Henvisninger til sekundærlitteratur om '.$poetName,
-		    status => $self->{'sekundaer'} } );
-    my @keys = qw/forside vaerker titlelines firstlines popular prosa pics bio samtidige henvisninger links primaer sekundaer/;
+       bibliografi => { url => 'fsekundaer.pl?', 
+                    title => 'Bibliografi', 
+                    desc => $poetName.'s bibliografi',
+		    status => $self->{'primaer'} || $self->{'sekundaer'} } );
+    my @keys = qw/forside vaerker titlelines firstlines popular prosa pics bio samtidige henvisninger links bibliografi/;
     my $HTML;
     my @itemsHTML;
     foreach my $key (@keys) {
