@@ -60,56 +60,58 @@ sub buildhrefs {
     my $txt = $_[0];
     $$txt =~ s/,,/&bdquo;/g;
     $$txt =~ s/''/&ldquo;/g;
-   if ($$txt =~ /<XREF BIBEL="([^"]+)"\/?>/i) {
-      my ($did,$verse) = split /,/,$1;
-      my $poem = new Kalliope::Poem::Bible(longdid => $did);
-      my $link;
-      if ($poem) {
-	  $link = $poem->clickableTitleSimple($verse);
-      } else {
-          $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
-      }
-      $$txt =~ s/<XREF BIBEL="[^"]+"\/?>/$link/i;
-   }
-   if ($$txt =~ /<XREF DIGT="(.+)"\/?>/i) {
-      my $did = $1;
-      my $poem = new Kalliope::Poem(longdid => $did);
-      my $link;
-      if ($poem) {
-	  $link = $poem->clickableTitleSimple;
-      } else {
-          $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
-      }
-      $$txt =~ s/<XREF DIGT="$did"\/?>/»$link«/i;
-   }
-   if ($$txt =~ /<XREF KEYWORD="(.+)"\/?>/i) {
-      my $did = $1;
-      my $keyword = new Kalliope::Keyword(ord => $did);
-      my $link;
-      if ($keyword) {
-	  $link = $keyword->clickableTitle('dk');
-      } else {
-          $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
-      }
-      $$txt =~ s/<XREF KEYWORD="$did"\/?>/$link/i;
-   }
-   if ($$txt =~ /<XREF ORD="(.+)"\/?>/i) {
-      my $wid = $1;
-      my $widurl = uri_escape($1);
-      my $dbh = Kalliope::DB->connect;
-      my $sth = $dbh->prepare("SELECT word FROM dict WHERE wid = ?");
-      $sth->execute($wid);
-      my ($ord) = $sth->fetchrow_array;
-      my $link = qq|<A HREF="dict.cgi?wid=$widurl">$ord</A>|;
-      $$txt =~ s/<XREF ORD="$wid"\/?>/$link/i;
-   }
 
-   $$txt =~ s/<sc>/<span style="font-variant: small-caps">/g;
-   $$txt =~ s/<\/sc>/<\/span>/g;
-   $$txt = makeMetricLetters($$txt);
-   $$txt =~ s/<A\s+F=([^\s>]+)\s*>/<A HREF="ffront.cgi?fhandle=$1">/g;
-   $$txt =~ s/<A\s+D=([^\s>]+)\s*>/<A HREF="digt.pl?longdid=$1">/g;
-   $$txt =~ s/<A\s+K=([^\s>]+)\s*>/<A HREF="keyword.cgi?keyword=$1">/g;
+    while ($$txt =~ /XREF/i) {
+	if ($$txt =~ /<XREF BIBEL="([^"]+)"\/?>/i) {
+	    my ($did,$verse) = split /,/,$1;
+	my $poem = new Kalliope::Poem::Bible(longdid => $did);
+	my $link;
+	if ($poem) {
+	    $link = $poem->clickableTitleSimple($verse);
+	} else {
+	    $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
+	}
+	$$txt =~ s/<XREF BIBEL="[^"]+"\/?>/$link/i;
+    }
+    if ($$txt =~ /<XREF DIGT="(.+)"\/?>/i) {
+	my $did = $1;
+	my $poem = new Kalliope::Poem(longdid => $did);
+	my $link;
+	if ($poem) {
+	    $link = $poem->clickableTitleSimple;
+	} else {
+	    $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
+	}
+	$$txt =~ s/<XREF DIGT="$did"\/?>/»$link«/i;
+    }
+    if ($$txt =~ /<XREF KEYWORD="(.+)"\/?>/i) {
+	my $did = $1;
+	my $keyword = new Kalliope::Keyword(ord => $did);
+	my $link;
+	if ($keyword) {
+	    $link = $keyword->clickableTitle('dk');
+	} else {
+	    $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
+	}
+	$$txt =~ s/<XREF KEYWORD="$did"\/?>/$link/i;
+    }
+    if ($$txt =~ /<XREF ORD="(.+)"\/?>/i) {
+	my $wid = $1;
+	my $widurl = uri_escape($1);
+	my $dbh = Kalliope::DB->connect;
+	my $sth = $dbh->prepare("SELECT word FROM dict WHERE wid = ?");
+	$sth->execute($wid);
+	my ($ord) = $sth->fetchrow_array;
+	my $link = qq|<A HREF="dict.cgi?wid=$widurl">$ord</A>|;
+	$$txt =~ s/<XREF ORD="$wid"\/?>/$link/i;
+    }
+    }
+    $$txt =~ s/<sc>/<span style="font-variant: small-caps">/g;
+    $$txt =~ s/<\/sc>/<\/span>/g;
+    $$txt = makeMetricLetters($$txt);
+    $$txt =~ s/<A\s+F=([^\s>]+)\s*>/<A HREF="ffront.cgi?fhandle=$1">/g;
+    $$txt =~ s/<A\s+D=([^\s>]+)\s*>/<A HREF="digt.pl?longdid=$1">/g;
+    $$txt =~ s/<A\s+K=([^\s>]+)\s*>/<A HREF="keyword.cgi?keyword=$1">/g;
    $$txt =~ s/<A\s+V=([^\s>\/]+)\/([^\s>\/]+)\s*>/<A HREF="vaerktoc.pl?fhandle=$1&vhandle=$2">/g;
    $$txt =~ s/<A\s+/<A CLASS=green /g;
    $$txt =~ s/<year>(\d+)<\/year>/<A CLASS="timecontext" TITLE="Vis historisk kontekst for året $1." onClick="return openTimeContext($1)" HREF="javascript:{}">$1<\/A>/gi;
