@@ -50,12 +50,12 @@ foreach $f (sort dk_sort2 @f) {
     $blocks[$idx]->{'head'} = uc (chr $idx + ord('A'));
     $blocks[$idx]->{'sort'} = $blocks[$idx]->{'head'};
     $blocks[$idx]->{'count'}++;
-    $blocks[$idx]->{'body'} .= '<A HREF="http://www.kalliope.org/digt.pl?longdid='.$f->{'longdid'}.'">'.$line.'</A><BR>';
+    $blocks[$idx]->{'body'} .= qq|<A HREF="http://www.kalliope.org/digt.pl?longdid=|.$f->{'longdid'}.'">'.$line."</A><BR>\n";
 }
 
 my $HTML;
 foreach $block (sort dk_sort2 grep {$_} @blocks) {
-   $HTML .= '<H2>'.$block->{'head'}.'</H2>';
+   $HTML .= '<H2>'.$block->{'head'}."</H2>\n";
    $HTML .= $block->{'body'};
 }
 
