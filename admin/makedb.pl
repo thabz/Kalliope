@@ -371,6 +371,7 @@ while ($v = $sth->fetchrow_hashref) {
 	s/ $//g;
 	next if (/^\#/);
 	next if (/^VN:/);
+	next if (/^VP:/);
 	next if (/^VK:/);
 	if (/^H(.):(.*)/) {
 	    $level = $1;
