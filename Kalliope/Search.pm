@@ -123,9 +123,9 @@ sub getHTML {
 	    my $offset = $i*10;
 	    my $iDisplay = $i+1;
 	    if ($offset == $firstNumShowing) {
-		$HTML .= "<B>[$iDisplay] </B>";
+		$HTML .= "<B>$iDisplay </B>";
 	    } else {
-		$HTML .= qq|<A HREF="$scriptName?offset=$offset&sprog=$LA$extraURLParam">[$iDisplay]</A> |;
+		$HTML .= qq|<A HREF="$scriptName?offset=$offset&sprog=$LA$extraURLParam">$iDisplay</A> |;
 	    }
 	}
     }
