@@ -2,7 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="../../xslt/dict.xsl"?>
 <!DOCTYPE kalliopedict [
 <!ELEMENT entries (entry)>
-<!ELEMENT entry (ord,forkl,frase?,var*)>
+<!ATTLIST entry 
+          id CDATE #REQUIRED>
+<!ELEMENT entry (ord,var*,forkl,frase?)>
 <!ELEMENT ord (#PCDATA)>
 <!ELEMENT forkl (#PCDATA)>
 <!ELEMENT frase (#PCDATA)>
