@@ -1,0 +1,8 @@
+set xdata time
+set timefmt "%Y/%m/%d"
+set xrange ["1999/3/1":"2001/8/1"]
+set format x "%b\n%Y"
+set terminal png color
+set title "Antal digte i Kalliope"
+plot 'tal' using 1:2 t ''  with lines 
+
