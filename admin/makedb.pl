@@ -19,8 +19,8 @@ my $dbh = Kalliope::DB->connect;
 
 print "Making dict\n";
 Kalliope::Build::Dict::create();
-@dict = Kalliope::Build::Dict::parse('../data/dict.xml');
-Kalliope::Build::Dict::insert(\@dict);
+%dict = Kalliope::Build::Dict::parse('../data/dict.xml');
+Kalliope::Build::Dict::insert(\%dict);
 print "Done\n";
 
 #
