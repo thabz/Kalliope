@@ -1,3 +1,7 @@
+footnote {
+    display: none;
+}
+
 SPAN.wide {
     letter-spacing: 0.2em;
 }
@@ -62,7 +66,8 @@ DIV.body {
 }
 
 BODY {
-    background-color: rgb(79,112,153);
+/*    background-color: rgb(79,112,153);*/
+    background-color: #CC9966;
     padding: 0px;
     margin: 0px;
 }
@@ -143,14 +148,17 @@ TD.topframetitel {
 .listeoverskrifter {
     font-family: Arial, Helvetica;
     font-size: 16px;
-    color: rgb(99,132,173);
+    color: #AA7744;
+/*    color: rgb(99,132,173);*/
     font-weight: 800;
     width: 100%;
-    border-bottom: 1px solid rgb(99,132,173);
+/*    border-bottom: 1px solid rgb(99,132,173);*/
+    border-bottom: 1px solid #EEBB88;
 }
 
 .listeblue {
-    color: rgb(99,132,173);
+/*    color: rgb(99,132,173);*/
+    color: #AA7744;
 }
 
 legend {
