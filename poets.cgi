@@ -199,7 +199,7 @@ sub listpics {
 
 sub listflittige {
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("select fhandle, count(did) as val from fnavne, digte where foedt != '' AND digte.fid=fnavne.fid and fnavne.sprog=? and afsnit=0 group by fnavne.fid order by val desc, efternavn ".($limit != -1 ? "LIMIT $limit" : ''));
+    my $sth = $dbh->prepare("select fhandle, count(did) as val from fnavne, digte where foedt != '' AND digte.fid=fnavne.fid and fnavne.sprog=? and layouttype = 'digt' and afsnit=0 group by fnavne.fid order by val desc, efternavn ".($limit != -1 ? "LIMIT $limit" : ''));
     $sth->execute($LA);
 
     my $HTML;
