@@ -72,6 +72,7 @@ sub doubleColumn {
 
 sub insertThumb {
     my $h = shift;
+    $h->{'alt'} = '' unless $h->{'alt'};
     my ($tx,$ty) = imgsize ($h->{'thumbfile'});
     my $border = defined $h->{border} ? $h->{border} : 2;
     my $html = '';
