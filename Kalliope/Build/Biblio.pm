@@ -28,7 +28,6 @@ use strict;
 my $dbh = Kalliope::DB::connect();
 
 sub build {
-    create();    
     my $sth = $dbh->prepare("SELECT fhandle FROM fnavne");
     $sth->execute();
     my $sthins = $dbh->prepare("INSERT INTO biblio VALUES (?,?,?)");
