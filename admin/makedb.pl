@@ -628,18 +628,21 @@ $rc = $dbh->do("CREATE TABLE haystack (
 	                    'Kalliope::Work',
 			    'Kalliope::Person'),
 	      titel text,
+	      fid char(40) NOT NULL,
 	      hay text,
-	      lang char(2) NOT NULL)");
+	      lang char(2) NOT NULL,
+	      INDEX (fid),
+	      INDEX (lang))");
 
-my $sth_hay_ins = $dbh->prepare("INSERT INTO haystack (id,id_class,titel,hay,lang) VALUES (?,?,?,?,?)");
+my $sth_hay_ins = $dbh->prepare("INSERT INTO haystack (id,id_class,titel,hay,lang,fid) VALUES (?,?,?,?,?,?)");
 
 # Poems
 print "Inserting poem hay\n";
-my $sth = $dbh->prepare("SELECT did,indhold,underoverskrift,titel,sprog FROM digte AS d,fnavne AS f WHERE d.fid = f.fid AND d.afsnit = 0"); 
+my $sth = $dbh->prepare("SELECT did,f.fid,indhold,underoverskrift,titel,sprog FROM digte AS d,fnavne AS f WHERE d.fid = f.fid AND d.afsnit = 0"); 
 $sth->execute;
 while ($h = $sth->fetchrow_hashref) {
     my $hay = Kalliope::Strings::stripHTML("$$h{titel} $$h{underoverskrift} $$h{indhold}");
-    $sth_hay_ins->execute($$h{did},'Kalliope::Poem',$$h{titel},$hay,$$h{sprog});
+    $sth_hay_ins->execute($$h{did},'Kalliope::Poem',$$h{titel},$hay,$$h{sprog},$$h{fid});
 }
 
 # Persons
@@ -648,16 +651,16 @@ my $sth = $dbh->prepare("SELECT fid,efternavn,fornavn,sprog FROM fnavne");
 $sth->execute;
 while ($h = $sth->fetchrow_hashref) {
     my $hay = "$$h{fornavn} $$h{efternavn}";
-    $sth_hay_ins->execute($$h{fid},'Kalliope::Person',$hay,$hay,$$h{sprog});
+    $sth_hay_ins->execute($$h{fid},'Kalliope::Person',$hay,$hay,$$h{sprog},'');
 }
 
 # Works 
 print "Inserting works hay\n";
-my $sth = $dbh->prepare("SELECT vid,titel,sprog FROM fnavne,vaerker WHERE fnavne.fid = vaerker.fid"); 
+my $sth = $dbh->prepare("SELECT vid,fnavne.fid,titel,sprog FROM fnavne,vaerker WHERE fnavne.fid = vaerker.fid"); 
 $sth->execute;
 while ($h = $sth->fetchrow_hashref) {
     my $hay = "$$h{titel}";
-    $sth_hay_ins->execute($$h{vid},'Kalliope::Work',$hay,$hay,$$h{sprog});
+    $sth_hay_ins->execute($$h{vid},'Kalliope::Work',$hay,$hay,$$h{sprog},$$h{fid});
 }
 
 # Keywords 
@@ -666,7 +669,7 @@ my $sth = $dbh->prepare("SELECT id,titel,beskrivelse FROM keywords");
 $sth->execute;
 while ($h = $sth->fetchrow_hashref) {
     my $hay = Kalliope::Strings::stripHTML("$$h{titel} $$h{beskrivelse}");
-    $sth_hay_ins->execute($$h{id},'Kalliope::Keyword',$$h{titel},$hay,'dk');
+    $sth_hay_ins->execute($$h{id},'Kalliope::Keyword',$$h{titel},$hay,'dk','');
 }
 
 print "Creating FULLTEXT index...\n";

@@ -132,5 +132,17 @@ $page->addBox( width => '80%',
 	coloumn => 1,
 	content => $HTML );
 
+#
+# Søgefelt
+#
+
+$HTML = qq|<FORM METHOD="get" ACTION="fsearch.cgi"><INPUT TYPE="text" NAME="needle"><INPUT TYPE="hidden" NAME="fhandle" VALUE="$fhandle"></FORM>|;
+
+$page->addBox( width => '80%',
+               title => 'Søgning',
+	       coloumn => 1,
+      	       content => $HTML );
+
+
 $page->print;
 

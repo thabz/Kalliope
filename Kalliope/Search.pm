@@ -24,6 +24,7 @@ package Kalliope::Search;
 use Kalliope::DB ();
 use Kalliope::Search::Free();
 use Kalliope::Search::Keyword();
+use Kalliope::Search::Author();
 
 use strict;
 
@@ -84,6 +85,10 @@ sub searchBoxHTML {
     return '';
 }
 
+sub scriptName {
+    return 'ksearch.cgi';
+}
+
 sub getHTML {
     my $self = shift;
 
@@ -113,13 +118,14 @@ sub getHTML {
 
     if ($hits > 10) {
 	my $extraURLParam = '&type='.$self->type.'&'.$self->getExtraURLParam;
+	my $scriptName = $self->scriptName;
 	for ($i = 0; $i <= int (($hits-1)/10) ; $i++) {
 	    my $offset = $i*10;
 	    my $iDisplay = $i+1;
 	    if ($offset == $firstNumShowing) {
 		$HTML .= "<B>[$iDisplay] </B>";
 	    } else {
-		$HTML .= qq|<A HREF="ksearch.cgi?offset=$offset&sprog=$LA$extraURLParam">[$iDisplay]</A> |;
+		$HTML .= qq|<A HREF="$scriptName?offset=$offset&sprog=$LA$extraURLParam">[$iDisplay]</A> |;
 	    }
 	}
     }
