@@ -65,7 +65,7 @@ foreach $f (sort dk_sort2 @f) {
     $linefix = $line;
     $linefix =~ s/^Aa/Å/ig;
     $idx = (ord lc substr($linefix,0,1)) - ord('a');
-    $blocks[$idx]->{'head'} = '<SPAN CLASS=listeoverskrifter>'.uc (chr $idx + ord('a')).'</SPAN><BR>';
+    $blocks[$idx]->{'head'} = '<DIV CLASS=listeoverskrifter>'.uc (chr $idx + ord('a')).'</DIV><BR>';
     $blocks[$idx]->{'count'}++;
     $blocks[$idx]->{'body'} .= '<A HREF="digt.pl?longdid='.$f->{'longdid'}.'">'.$line.'</A><BR>';
 }
