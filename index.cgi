@@ -30,10 +30,13 @@ use strict;
 
 my $showAllNews = CGI::param('showall') eq 'yes' ? 1 : 0;
 
+my @crumbs = (['Velkommen','']);
+
 my $page = new Kalliope::Page (
 		title => 'Kalliope - Det var Fanden gare mig Cæcirie!',
                 pagegroup => 'welcome',
 		frontpage => 1,
+		crumbs => \@crumbs,
 		changelangurl => 'poets.cgi?list=az&sprog=XX',
                 page => 'news'
            );
