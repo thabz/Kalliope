@@ -66,7 +66,7 @@ $page->print;
 
 sub latestNews {
     my $HTML;
-    open (NEWS,"data.dk/news.html");
+    open (NEWS,"data/news.html");
     foreach my $line (<NEWS>) {
 	Kalliope::buildhrefs(\$line);
 	if ($showAllNews) {
