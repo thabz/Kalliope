@@ -25,6 +25,8 @@ use CGI ();
 
 my %titler = ( musen => 'Musen',
                tak => 'Tak',
+               faq => 'Ofte stillede spørgsmål',
+               attractions => 'Coming attractions',
 	       about => 'Om' );
 
 my $select = CGI::url_param('page');
