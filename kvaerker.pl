@@ -80,7 +80,7 @@ if ($mode eq 'titel') {
 	$new = substr($f->{'sort'},0,1);
 	if ($new ne $last) {
 	    $last = $new;
-	    print "<BR><SPAN CLASS=listeoverskrifter>$new</SPAN><BR>\n";
+	    print "<BR><DIV CLASS=listeoverskrifter>$new</DIV><BR>\n";
 # print "<BR><I><FONT COLOR=#6384AC SIZE=+1><B>$new</B></FONT></I><BR>\n";
 	}
 	unless ($f->{'findes'}) {
@@ -128,7 +128,7 @@ if ($mode eq 'titel') {
 	elsif ($vaerkaar-$last >= 10) {
 	    $last = $vaerkaar - $vaerkaar%10;
 	    $last2 = $last+9;
-	    print "<BR><SPAN CLASS=listeoverskrifter>$last-$last2</SPAN><BR>\n";
+	    print "<BR><DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR>\n";
 	}
 
 	print $vaerkaar.' - <A HREF="fvaerker.pl?'.$fhandle.'">'.$ffornavn.' '.$fefternavn.'</A>: ';
@@ -162,7 +162,7 @@ if ($mode eq 'titel') {
 	$new = substr($f->{'sort'},0,1);
 	if ($new ne $last) {
 	    $last = $new;
-	    print "<BR><SPAN CLASS=listeoverskrifter>$new</SPAN><BR>\n";
+	    print "<BR><DIV CLASS=listeoverskrifter>$new</DIV><BR>\n";
 	}
 	$sthvaerker->execute($f->{fid});
 	if ($sthvaerker->rows) {
