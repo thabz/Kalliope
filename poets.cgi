@@ -32,12 +32,15 @@ my $LA = CGI::url_param('sprog') || 'dk';
 
 my %pageTypes = ('az' => {'title' => 'Digtere efter navn',
                           'function' => 'listaz',
+			  'crumbtitle' => 'efter navn',
                           'page' => 'poetsbyname'},
                  '19' => {'title' => 'Digtere efter fødeår',
                           'function' => 'list19',
+			  'crumbtitle' => 'efter fødeår',
                           'page' => 'poetsbyyear'},
                  'pics' => {'title' => 'Digtere efter udseende',
                           'function' => 'listpics',
+			  'crumbtitle' => 'efter udseende',
                           'page' => 'poetsbypic'}
                 );
 
@@ -49,9 +52,14 @@ if ($listType ne 'az' && $listType ne '19' && $listType ne 'pics') {
 
 my $struct = $pageTypes{$listType};
 
+my @crumbs;
+push @crumbs,['Digtere',''];
+push @crumbs,[$struct->{'crumbtitle'},''];
+
 my $page = new Kalliope::Page (
 		title => $struct->{'title'},
 		lang => $LA,
+		crumbs => \@crumbs,
                 pagegroup => 'poets',
                 page => $struct->{'page'}); 
 $page->addBox ( width => '75%',
