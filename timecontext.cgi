@@ -28,11 +28,13 @@ use Kalliope::Page::Popup;
 use Kalliope::DB;
 use Kalliope;
 
+my $SPAN = 2;
+
 my $dbh = Kalliope::DB->connect();
 
 my $year = CGI::param('center');
-my $fromYear = $year-2;
-my $toYear = $year+2;
+my $fromYear = $year-$SPAN;
+my $toYear = $year+$SPAN;
 
 my $sth = $dbh->prepare("SELECT * FROM timeline WHERE year >= ? AND year <= ? ORDER BY year ASC");
 $sth->execute($fromYear,$toYear);
@@ -45,10 +47,17 @@ Kalliope::buildhrefs(\$HTML);
 
 $HTML =~ s/<A(.*)HREF="([^"]*)"(.*)>/<A$1 onClick="javascript:opener.document.location = '$2';return false" HREF="javascript:{}"$3>/g;
 
+my ($from2,$to2,$c2) = ($fromYear-(2*$SPAN)-1,$fromYear-1,$fromYear-$SPAN-1);
+my $endHTML = qq|<A TITLE="Bladr tilbage til $from2-$to2" HREF="timecontext.cgi?center=$c2"><IMG VALIGN=center BORDER=0 SRC="gfx/leftarrow.gif" ALT="Bladr tilbage til $from2-$to2"></A>|;
+
+($from2,$to2,$c2) = ($toYear+1,$toYear+1+(2*$SPAN),$toYear+$SPAN+1);
+$endHTML .= qq|<A TITLE="Bladr frem til $from2-$to2" HREF="timecontext.cgi?center=$c2"><IMG VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Bladr frem til $from2-$to2"></A>|;
+
 my $title = "Begivenheder $fromYear - $toYear";
 my $page = new Kalliope::Page::Popup ( title => $title );
 $page->addBox( width => '100%',
                title => $title,
+	       end => $endHTML,
                content => $HTML );
 $page->print;
 
