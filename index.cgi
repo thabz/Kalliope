@@ -117,7 +117,7 @@ sub sonnet {
     $HTML .= '<small>'.$poem->content(layout => 'plainpoem').'</small>';
     my $poet = $poem->author;
     $HTML .= '<br><div style="text-align:right"><i><small>'.$poet->name.'</small></i></div>';
-    my $title = $poet->name.': »'.$poem->title.'«';
+    my $title = $poet->name.': »'.$poem->linkTitle.'«';
     $END = qq|<A class="more" TITLE="$title" HREF="digt.pl?longdid=|.$poem->longdid.qq|">Gå til digtet...</A>|;
     return ($HTML,$END);
 }
