@@ -106,7 +106,6 @@ sub insert {
 }
 
 sub create {
-    $dbh->do("DROP TABLE");
  $dbh->do(q(
 	CREATE TABLE vaerker ( 
               vid varchar(80) NOT NULL PRIMARY KEY,
@@ -129,7 +128,6 @@ sub create {
  $dbh->do(q/CREATE INDEX vaerker_type ON vaerker(type)/);
  $dbh->do(q/GRANT SELECT ON TABLE vaerker TO "www-data"/);
 
-    $dbh->do("DROP TABLE worknotes");
  $dbh->do(q/
 	CREATE TABLE worknotes ( 
               vid varchar(80) NOT NULL REFERENCES vaerker(vid) ON DELETE CASCADE,
@@ -139,7 +137,6 @@ sub create {
  $dbh->do(q/CREATE INDEX worknotes_vid ON worknotes(vid)/);
  $dbh->do(q/GRANT SELECT ON TABLE worknotes TO "www-data"/);
 
-    $dbh->do("DROP TABLE workpictures");
  $dbh->do(q(
 	CREATE TABLE workpictures ( 
               vid varchar(80) NOT NULL REFERENCES vaerker(vid) ON DELETE CASCADE,
@@ -151,7 +148,6 @@ sub create {
  $dbh->do(q/CREATE INDEX workpictures_vid ON workpictures(vid)/);
  $dbh->do(q/GRANT SELECT ON TABLE workpictures TO "www-data"/);
 
-    $dbh->do("DROP TABLE workxkeyword");
  $dbh->do(q(
 	CREATE TABLE workxkeyword ( 
               vid varchar(80) NOT NULL REFERENCES vaerker(vid) ON DELETE CASCADE,
@@ -161,3 +157,12 @@ sub create {
  $dbh->do(q/CREATE INDEX workxkeyword_keyword ON workxkeyword(keyword)/);
  $dbh->do(q/GRANT SELECT ON TABLE workxkeyword TO "www-data"/);
 }
+
+sub drop {
+    $dbh->do("DROP TABLE workxkeyword");
+    $dbh->do("DROP TABLE workpictures");
+    $dbh->do("DROP TABLE worknotes");
+    $dbh->do("DROP TABLE vaerker");
+}
+
+1;

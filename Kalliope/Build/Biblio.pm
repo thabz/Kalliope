@@ -43,14 +43,17 @@ sub build {
 }
 
 sub create {
-    $dbh->do("DROP TABLE biblio");
     $dbh->do("CREATE TABLE biblio ( 
-              fhandle char(40) NOT NULL,
-	      bibid char(40) NOT NULL,
+              fhandle varchar(40) NOT NULL REFERENCES fnavne(fhandle) ON DELETE CASCADE,
+	      bibid varchar(40) NOT NULL,
 	      entry text)
 	      ");
    $dbh->do(q/CREATE INDEX biblio_fhandle ON biblio(fhandle)/);
    $dbh->do(q/CREATE INDEX biblio_bibid ON biblio(bibid)/);
+}
+
+sub drop {
+    $dbh->do("DROP TABLE biblio");
 }
 
 

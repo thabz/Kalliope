@@ -61,9 +61,7 @@ sub _insert {
 }
 
 sub create {
-    $dbh->do(q/DROP SEQUENCE seq_forbogstaver_bid/);
     $dbh->do(q/CREATE SEQUENCE seq_forbogstaver_bid INCREMENT 1 START 1/);
-    $dbh->do("DROP TABLE forbogstaver");
     $dbh->do("CREATE TABLE forbogstaver ( 
               bid int DEFAULT '0' NOT NULL PRIMARY KEY,
 	      forbogstav char(1) NOT NULL,
@@ -75,4 +73,10 @@ sub create {
    $dbh->do(q/CREATE INDEX forbogstaver_forbogstav ON forbogstaver(forbogstav)/);
    $dbh->do(q/CREATE INDEX forbogstaver_lang ON forbogstaver(lang)/);
    $dbh->do(q/GRANT SELECT ON TABLE forbogstaver TO "www-data"/);
+}
+
+sub drop {
+    $dbh->do(q/DROP SEQUENCE seq_forbogstaver_bid/);
+    $dbh->do("DROP TABLE forbogstaver");
+
 }

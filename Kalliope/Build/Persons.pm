@@ -108,7 +108,6 @@ sub parse {
 }
 
 sub create {
-    $dbh->do("DROP TABLE fnavne");
     $dbh->do("CREATE TABLE fnavne ( 
     fhandle varchar(20) NOT NULL PRIMARY KEY, 
     fornavn text DEFAULT '', 
@@ -135,6 +134,11 @@ sub create {
     workslist text)
 	");
    $dbh->do(q/GRANT SELECT ON TABLE fnavne TO "www-data"/);
+}
+
+
+sub drop {
+    $dbh->do("DROP TABLE fnavne");
 }
 
 sub insert {

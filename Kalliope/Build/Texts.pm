@@ -132,11 +132,8 @@ sub doDepends {
 	}
 
 sub create {
-    $dbh->do(q/DROP SEQUENCE seq_digte_did/);
     $dbh->do(q/CREATE SEQUENCE seq_digte_did INCREMENT 1 START 1/);
-    $dbh->do(q/DROP SEQUENCE seq_digte_longdid/);
     $dbh->do(q/CREATE SEQUENCE seq_digte_longdid INCREMENT 1 START 1/);
-    $dbh->do("DROP TABLE digte");
     $dbh->do(q(CREATE TABLE digte ( 
               did int NOT NULL PRIMARY KEY, 
 	      parentdid int REFERENCES digte(did),
@@ -166,7 +163,6 @@ sub create {
    $dbh->do(q/GRANT SELECT ON TABLE digte TO "www-data"/);
 
 
-    $dbh->do("DROP TABLE textnotes");
     $dbh->do(q(
 	CREATE TABLE textnotes ( 
               longdid varchar(40) NOT NULL REFERENCES digte(longdid) ON DELETE CASCADE,
@@ -176,7 +172,6 @@ sub create {
    $dbh->do(q/CREATE INDEX textnotes_longdid ON textnotes(longdid)/);
    $dbh->do(q/GRANT SELECT ON TABLE textnotes TO "www-data"/);
 
-    $dbh->do("DROP TABLE textpictures");
     $dbh->do(q(
 	CREATE TABLE textpictures ( 
               longdid varchar(40) NOT NULL REFERENCES digte(longdid) ON DELETE CASCADE,
@@ -187,7 +182,6 @@ sub create {
    $dbh->do(q/CREATE INDEX textpictures_longdid ON textpictures(longdid)/);
    $dbh->do(q/GRANT SELECT ON TABLE textpictures TO "www-data"/);
 
-    $dbh->do("DROP TABLE textxkeyword");
     $dbh->do(q(
 	CREATE TABLE textxkeyword ( 
               longdid varchar(40) NOT NULL REFERENCES digte(longdid) ON DELETE CASCADE,
@@ -198,6 +192,15 @@ sub create {
    $dbh->do(q/CREATE INDEX textxkeyword_keyword ON textxkeyword(keyword)/);
    $dbh->do(q/GRANT SELECT ON TABLE textxkeyword TO "www-data"/);
 
+}
+
+sub drop {
+    $dbh->do("DROP TABLE textxkeyword");
+    $dbh->do("DROP TABLE textpictures");
+    $dbh->do("DROP TABLE textnotes");
+    $dbh->do(q/DROP SEQUENCE seq_digte_did/);
+    $dbh->do(q/DROP SEQUENCE seq_digte_longdid/);
+    $dbh->do("DROP TABLE digte");
 }
 
 sub _createtime {
