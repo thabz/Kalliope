@@ -159,7 +159,7 @@ sub hasYear {
 sub parenthesizedYear {
     my $self = shift;
     my $year = $self->year;
-    return $self->hasYear eq '?' ? '' : "($year)";
+    return $self->hasYear ? "($year)" : '';
 }
 
 sub hasContent {
