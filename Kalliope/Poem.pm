@@ -45,7 +45,7 @@ sub new {
     Kalliope::Page::notFound() unless $sth->rows;
     my $obj = $sth->fetchrow_hashref;
     
-    $class = 'Kalliope::Poem::Bible' if $obj->{'longdid'} =~ /^bibel/;
+    $class = 'Kalliope::Poem::Bible' if $obj->{'longdid'} =~ /^(bibel|bible)/;
     bless $obj,$class;
     
     $obj->{'quality_obj'} = new Kalliope::Quality($obj->{'quality'});
