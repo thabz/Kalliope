@@ -23,15 +23,19 @@
 #use strict;
 use Kalliope;
 use Kalliope::Poem;
+use Kalliope::Help;
+use Net::SMTP;
 use CGI qw(:standard);
 do 'fstdhead.pl';
 
+my $MAILTAINER_EMAIL = 'jesper@kalliope.org';
+
 my ($longdid,$fhandle,$LA);
 
-if (defined url_param('longdid')) {
-    $longdid = url_param('longdid');
+if (defined param('longdid')) {
+    $longdid = param('longdid');
     my $sth = $dbh->prepare("SELECT fhandle,sprog FROM digte,fnavne WHERE
-    digte.fid = fnavne.fid AND digte.longdid = ?");
+                             digte.fid = fnavne.fid AND digte.longdid = ?");
     $sth->execute($longdid);
     ($fhandle,$LA) = $sth->fetchrow_array;
 } else {
@@ -59,6 +63,8 @@ if (defined url_param('longdid')) {
 	}
 }
 
+
+
 fheaderHTML($fhandle);
 
 # Find detaljer om dette digt.
@@ -68,6 +74,27 @@ my $poem = new Kalliope::Poem ('longdid' => $longdid);
 $poem->updateHitCounter;
 my $author = $poem->author;
 my $work = $poem->work;
+
+if (defined param('korrektur')) {
+   my $mailBody = 'Dato:       '.localtime(time)."\n";
+     $mailBody .= 'Remotehost: '.remote_host()."\n";
+     $mailBody .= 'Forfatter:  '.$author->name."\n";
+     $mailBody .= 'Fhandle:    '.$author->fhandle."\n";
+     $mailBody .= 'Værk:       '.$work->title.' '.$work->parenthesizedYear."\n";
+     $mailBody .= 'Værk-id:    '.$vhandle."\n";
+     $mailBody .= 'Digt:       '.$poem->title."\n";
+     $mailBody .= "Digt-id:    $longdid\n";
+     $mailBody .= 'Korrektur:  '.param('korrektur')."\n";
+   my $smtp = Net::SMTP->new('localhost') || last;
+   $smtp->mail($MAILTAINER_EMAIL);
+   $smtp->to($MAILTAINER_EMAIL);
+   $smtp->data("From: Kalliope <$MAILTAINER_EMAIL>\r\n".
+               "To: $MAILTAINER_EMAIL\r\n".
+               "Subject: Korrektur $longdid\r\n".
+               "\r\n".$mailBody."\r\n");
+   $smtp->quit;
+   print STDERR $mailBody;
+}
 
 print '<TABLE ALIGN=center><TR><TD width="100%" VALIGN=top>';
 
@@ -137,6 +164,19 @@ while($d = $sth->fetchrow_hashref) {
 $sth->finish;
 print "</font>";
 endbox(qq(<A HREF="vaerktoc.pl?$fhandle?$vhandle?$LA"><IMG VALIGN=center ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 TITLE="$vtitel $myvaar" ALT="$vtitel $myvaar"></A>));
+
+beginwhitebox('Korrektur','200','left');
+if (defined param('korrektur')) {
+    print "<SMALL>Tak for din rettelse til »".$poem->title."«! <BR><BR>En mail er automatisk sendt til $MAILTAINER_EMAIL, som vil kigge på sagen.</SMALL>\n";
+} else {
+    print "<SMALL>Fandt du en trykfejl i denne tekst, skriv da rettelsen i feltet herunder, og tryk Send</SMALL><BR><BR>";
+    print '<FORM><TEXTAREA NAME="korrektur" WRAP="virtual" ROWS=4></TEXTAREA>';
+    print qq|<INPUT TYPE="hidden" NAME="longdid" VALUE="$longdid">|;
+    print '<INPUT TYPE="submit" VALUE="Send"> ';
+    print Kalliope::Help->new('korrektur')->linkAsHTML;
+    print "</FORM>";
+}
+endbox();
 
 enddarkbluebox();
 
