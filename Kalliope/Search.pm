@@ -168,7 +168,14 @@ sub result {
 	next unless $id;
 	$id =~ s/.html$//;
 	$id =~ s/^.\/dump\///;
-	push @matches,[$id,'Kalliope::Poem',$quality];
+	my $type = '';
+	if ($id =~ /:/) {
+           $id =~ s!:!/!;
+	   $type = 'Kalliope::Work';
+	} else {
+	   $type = 'Kalliope::Poem';
+	}
+	push @matches,[$id,$type,$quality];
 	$c++;
 	last if $c > 9;
     }
