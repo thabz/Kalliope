@@ -25,6 +25,7 @@
 use Kalliope;
 use Kalliope::Poem;
 use Kalliope::Page;
+use Kalliope::Timeline;
 use CGI ();
 use strict;
 
@@ -91,21 +92,14 @@ sub dayToday {
     my $HTML;
     my ($sec,$min,$hour,$dg,$md,$year,$wday,$yday,$isdst)=localtime(time);
     $md++;
-    open(FILE,"data.dk/dagenidag.txt");
+    my %events = Kalliope::Timeline::getEventsGivenMonthAndDay($md,$dg);
 
-    my $i = 0;
-    $md = "0".$md if $md < 10;
-    $dg = "0".$dg if $dg < 10;
-    foreach (<FILE>) {
-	if (/^$md\-$dg/) {
-	    my ($dato,$tekst) = split(/\%/);
-	    my ($tis,$prut,$aar)=split(/\-/,$dato);
-	    Kalliope::buildhrefs(\$tekst);
-	    $HTML .= "<FONT COLOR=#ff0000>$aar</FONT> $tekst<BR>";
-	    $i++;
-	}
+    foreach my $year (sort keys %events) {
+        my $text = $events{$year};
+	Kalliope::buildhrefs(\$text);
+	$HTML .= qq|<LI VALUE="$year">$text|;
     }
-    $HTML = "" unless $i;
+    $HTML = qq|<OL TYPE="1">$HTML</OL>| if $HTML;
     return $HTML;
 }
 

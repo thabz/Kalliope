@@ -6,6 +6,7 @@ use Kalliope::DB;
 use Kalliope::Strings;
 use Kalliope::Array;
 use Kalliope::Build::Persons;
+use Kalliope::Build::Timeline;
 use POSIX;
 
 my $dbh = Kalliope::DB->connect;
@@ -239,56 +240,9 @@ $sth->finish;
 #
 # Timeline ------------------------------------------------------------
 #
+
 print "Making timeline... \n";
-$dbh->do("drop table if exists timeline");
-$dbh->do("CREATE TABLE timeline ( 
-              id int UNSIGNED PRIMARY KEY NOT NULL auto_increment,
-	      year int,
-	      month int,
-	      day int,
-	      description text,
-	      type enum ('event','picture'),
-	      eventtype enum ('history','born','dead','publish'),
-	      url text,
-	      UNIQUE(id),
-	      KEY(year) )");
-
-$sth = $dbh->prepare("INSERT INTO timeline (year,month,day,description,type,eventtype,url) VALUES (?,?,?,?,?,?,?)");
-
-open (FILE,"../aarstal.txt");
-my $line = 1;
-while (<FILE>) {
-    if (/^(\d+): P:(.*)%(.*)$/) {
-      $sth->execute($1,0,0,$3,'picture','history',$2);
-    } elsif (/^(\d+): (.*)$/) {
-       $sth->execute($1,0,0,$2,'event','history','');
-    } elsif (/^(\d+)-(\d+)-(\d+): (.*)$/) {
-       $sth->execute($1,$2,$3,$4,'event','history','');
-    } else {
-        print STDERR "Error in aarstal.txt line $line: »$_«";
-    }
-    $line++;
-}
-close(FILE);
-
-$sthget = $dbh->prepare("SELECT fhandle,fornavn,efternavn,foedt,doed FROM fnavne WHERE foedt != '?'");
-$sthget->execute();
-
-while (my $h = $sthget->fetchrow_hashref) {
-    my $descr = "<A F=$$h{fhandle}>$$h{fornavn} $$h{efternavn}</A> født.";
-    $sth->execute($$h{foedt},0,0,$descr,'event','born','');
-    my $descr = "<A F=$$h{fhandle}>$$h{fornavn} $$h{efternavn}</A> død.";
-    $sth->execute($$h{doed},0,0,$descr,'event','dead','');
-}
-
-$sthget = $dbh->prepare("SELECT vhandle,f.fhandle,f.fornavn,f.efternavn,v.titel,v.aar FROM fnavne as f,vaerker as v WHERE f.fid = v.fid AND aar != '?'");
-$sthget->execute();
-
-while (my $h = $sthget->fetchrow_hashref) {
-    my $descr = "$$h{fornavn} $$h{efternavn}: <A V=$$h{fhandle}/$$h{vhandle}><I>$$h{titel}</I> ($$h{aar})</A>";
-    $sth->execute($$h{aar},0,0,$descr,'event','publish','');
-}
-
+Kalliope::Build::Timeline::build(%persons);
 
 #
 # Build digte -------------------------------------------------------------

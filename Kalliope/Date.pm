@@ -60,4 +60,10 @@ sub longDate {
     return "$mday. $months[$mon] $year"
 }
 
+sub splitDate {
+    my $date = shift;
+    my ($y,$m,$d) = split '-',$date;
+    return ($y,$m,$d);
+}
+
 1;
