@@ -191,7 +191,7 @@ sub _sizeOfDir {
 sub _readDir {
     my $dir = shift;
     opendir(DIR,"edit/files/$dir");
-    my @files = grep {!/^\./} readdir(DIR);
+    my @files = sort grep {!/^\./} readdir(DIR);
     close DIR;
     return @files;
 }
