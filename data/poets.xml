@@ -3466,7 +3466,7 @@
       <date>1926-01-09</date>
     </dead>
   </period>
-  <works>1926,michelangelo</works>
+  <works>michelangelo,1926</works>
 </person>
 
 <person id="aakjaer" lang="dk" type="poet">
@@ -6317,6 +6317,23 @@
     </born>
     <dead>
       <date>1494</date>
+    </dead>
+  </period>
+</person>
+
+<person id="molza" lang="it" type="poet">
+  <name>
+    <firstname>Francesco Maria</firstname>
+    <lastname>Molza</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1489-06-18</date>
+      <place>Modena</place>
+    </born>
+    <dead>
+      <date>1544-02-28</date>
+      <place>Modena</place>
     </dead>
   </period>
 </person>
