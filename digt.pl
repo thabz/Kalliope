@@ -322,7 +322,7 @@ sub notes {
     if ($poem->notes) {
         my @notes = split /\n/,$poem->notes;
 	@notes = map { Kalliope::buildhrefs(\$_) } @notes;
-	$HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>',@notes;
+	$HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center"><span class="noprint">&#149;&nbsp;&#149;&nbsp;&#149;</span></div>',@notes;
     }
     if ($#keywords >= 0) {
 	$HTML .= '<span class="noprint"><br><br><B>Nøgleord:</B> ';
