@@ -201,7 +201,8 @@ sub proseWorks {
 }
 
 sub hasHenvisninger {
-    return shift->{'hashenvisninger'} > 0;
+    my $self = shift;
+    return $self->{'hashenvisninger'} && $self->{'hashenvisninger'} > 0;
 }
 
 sub menu {
