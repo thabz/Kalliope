@@ -21,6 +21,7 @@
 package Kalliope::Page;
 
 use Kalliope::Web ();
+use CGI::Cookie ();
 use strict;
 
 sub new {
@@ -36,6 +37,10 @@ sub new {
     $self->{'title'} = $args{'title'};
     $self->{'columns'} = [];
 
+    if ($self->{'setcookies'}) {
+        $self->_setCookies(%{$self->{'setcookies'}});
+    }
+
     if ($args{'changelangurl'}) {
         $self->{'changelangurl'} = $args{'changelangurl'};
     } elsif ($self->{'poet'}) {
@@ -45,6 +50,30 @@ sub new {
 	$self->{'changelangurl'} = $1;
     }
     return $self;
+}
+
+sub _setCookies {
+    my ($self,%vals) = @_;
+    my @cookies;
+
+    foreach my $name (keys %vals) {
+        my $cookie = new CGI::Cookie(-expires => '+3M',
+	                             -name => $name,
+	                             -value => $vals{$name});
+	push @cookies,$cookie;			     
+    }
+    $self->{'cookies'} = \@cookies;
+    return @cookies;
+}
+
+sub _printCookies {
+    my $self = shift;
+    my $output;
+    return unless $self->{'cookies'};
+    foreach my $cookie (@{$self->{'cookies'}}) {
+        $output .= "Set-Cookie: $cookie\n";
+    }
+    return $output;
 }
 
 sub newAuthor {
@@ -172,6 +201,7 @@ sub addBox {
 sub print {
     my $self = shift;
     my $titleForWindow = $self->titleForWindow;
+    print $self->_printCookies;
     print "Content-type: text/html\n\n";
     print '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">';
     print <<"EOF";

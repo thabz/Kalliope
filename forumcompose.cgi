@@ -26,6 +26,7 @@ use Kalliope::Forum ();
 use Kalliope::Help ();
 use Kalliope::Forum::Post ();
 use CGI qw(:standard);
+use CGI::Cookie ();
 use strict;
 
 my $parentId = param('parentid') || 0;
@@ -41,10 +42,25 @@ if (defined param('posted')) {
 	      content => param('content') || 'Intet indhold' };
     my $post = new Kalliope::Forum::Post($h);
     $post->insertIntoDB;
+    my $dummyPage = new Kalliope::Page::Popup (
+                          setcookies => {name => param('name') || '',
+		                         email => param('email') || ''});
+    
+    print $dummyPage->_printCookies;
     print "Content-type: text/html\n\n";
     print qq|<html><body onLoad="opener.document.location = opener.document.location; this.close()"></body></html>|;
     exit;
 }
+
+
+#
+# Get ID from Cookie if set
+#
+
+my %cookies = fetch CGI::Cookie;
+my $userName = $cookies{'name'}->value || '';
+my $userEmail = $cookies{'email'}->value || '';
+
 
 my $parentPost;
 my $subject = '';
@@ -71,9 +87,9 @@ my $HTML = <<"EOF";
 <FORM>
 <SPAN STYLE="font-family: Arial, Helvetica">
 Navn:<BR>
-<INPUT CLASS="inputtext" STYLE="width:100%;" TYPE="text" NAME="name"><BR><BR>
+<INPUT CLASS="inputtext" STYLE="width:100%;" TYPE="text" NAME="name" VALUE="$userName"><BR><BR>
 E-mail:<BR>
-<INPUT CLASS="inputtext" STYLE="width:100%;" TYPE="text" NAME="email"><BR><BR>
+<INPUT CLASS="inputtext" STYLE="width:100%;" TYPE="text" NAME="email" VALUE="$userEmail"><BR><BR>
 Emne:<BR>
 <INPUT CLASS="inputtext" STYLE="width:100%;" WIDTH=40 TYPE="text" NAME="subject" VALUE="$subject"><BR><BR>
 Besked:<BR>

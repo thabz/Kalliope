@@ -35,7 +35,7 @@ my $page = new Kalliope::Page (
                 pagegroup => 'welcome',
 		frontpage => 1,
 		changelangurl => 'poets.cgi?list=az&sprog=XX',
-                page => 'news',
+                page => 'news'
            );
 
 $page->addBox ( title => "Sidste Nyheder",
