@@ -182,9 +182,6 @@ sub print {
 <BODY LINK="#000000" VLINK="#000000" ALINK="#000000" LEFTMARGIN=0 TOPMARGIN=0 MARGINHEIGHT=0 MARGINWIDTH=0>
 
 EOF
-    print '<DIV STYLE="background-color: #e0e0e0; padding: 1px">';
-    print $self->_constructBreadcrumbs;
-    print '</DIV>';
     print '<DIV HEIGHT=100 CLASS="nav"><TABLE WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
     print '<TD CLASS="navigation">';
     print $self->_navigationMain;
@@ -201,6 +198,11 @@ EOF
     print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1 ALT=""></TD>';
     print '</TR></TABLE>';
     print '</DIV>';
+    if (my $crumbs = $self->_constructBreadcrumbs) {
+	print '<DIV STYLE="background-color: #e0e0e0; padding: 1px">';
+	print $crumbs;
+	print '</DIV>';
+    }
     print '<DIV CLASS="body">';
     print '<TABLE WIDTH="100%"><TR>';
     my @widths = $self->getColoumnWidths;
@@ -260,6 +262,9 @@ sub menuStructs {
          'history' => {menuTitle => 'Nøgleord',
                        url => 'keywordtoc.cgi?sprog='.$lang,
                        pages => ['keywordtoc','timeline','keyword']
+                       },
+         'forum' =>    {menuTitle => 'Forum',
+                       url => 'forum.cgi'
                        },
          'poemtitles' =>{menuTitle => 'Digttitler',
                        url => 'klines.pl?mode=1&forbogstav=A&sprog='.$lang
@@ -321,7 +326,7 @@ sub menuStructs {
 
 sub _navigationMain {
     my $self = shift;
-    my @topMenuItems = ('welcome','poets','worklist','poemlist', 'history');
+    my @topMenuItems = ('welcome','poets','worklist','poemlist', 'history','forum');
     my %menuStructs = $self->menuStructs;
     my $HTML;
 
