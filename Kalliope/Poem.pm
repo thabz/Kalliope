@@ -214,7 +214,7 @@ sub _contentAsPoemHTML {
 	if ($lineForTjek =~ /^ *(\-\-\-\-*) *$/) {
 	    my $width = (length $1)*10;
 	    $width = 100 if $width > 100;
-	    $line = qq|<hr noshade size=1 width="$width%" style="border: 1px solid black; color:black">|;
+	    $line = qq|<hr noshade size=1 color="black" width="$width%" style="color:black">|;
 	    $align = 'center';
 	}
 
