@@ -150,7 +150,7 @@ sub listpics {
     $HTML = qq|<TABLE ALIGN="center" border=0 cellspacing=10><TR>|;
     my $i=0;
     while (my $fhandle = $sth->fetchrow_array) {
-	my $poet = new Kalliope::Person(fhandle => $fhandle);
+        my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 	my $fullname = $poet->name;
 	$HTML .= "<TD align=center valign=bottom>";
 	$HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/thumb.jpg",url=>"fpics.pl?fhandle=$fhandle",alt=>"Vis portrætter af $fullname"});

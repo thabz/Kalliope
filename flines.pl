@@ -45,9 +45,7 @@ unless ($fhandle) {
     exit;
 }
 
-
-
-my $poet = new Kalliope::Person(fhandle => $fhandle);
+my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 my $mode = CGI::url_param('mode');
 my $title = $mode ? "Digttitler" : "Førstelinier";
 

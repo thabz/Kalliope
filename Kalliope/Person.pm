@@ -205,9 +205,24 @@ sub getCrumbs {
     return @crumbs;
 }
 
+sub allVids {
+    my $self = shift;
+    my @vids = split /,/,$self->{'workslist'};
+    return \@vids;
+}
+
+sub allWorks {
+    my $self = shift;
+#   return (new Kalliope::Work(vid => "bibel/1mose"));
+    my @result;
+    @result = map { new Kalliope::Work('vid' => $_) } @{$self->allVids};
+    return @result;
+}
+
 sub poeticalWorks {
     my $self = shift;
-    my $sth = $dbh->prepare("SELECT vid FROM vaerker WHERE fhandle = ? AND type='poetry' ORDER BY aar");
+    my @vids = 
+    my $sth = $dbh->prepare("SELECT vid FROM vaerker WHERE fhandle = ? AND type='poetry' ORDER BY vid ASC");
     $sth->execute($self->fhandle);
     my @list;
     while (my ($vid) = $sth->fetchrow_array) {
@@ -218,7 +233,7 @@ sub poeticalWorks {
 
 sub proseWorks {
     my $self = shift;
-    my $sth = $dbh->prepare("SELECT vid FROM vaerker WHERE fhandle = ? AND type='prose' ORDER BY aar");
+    my $sth = $dbh->prepare("SELECT vid FROM vaerker WHERE fhandle = ? AND type='prose' ORDER BY vid ASC");
     $sth->execute($self->fhandle);
     my @list;
     while (my ($vid) = $sth->fetchrow_array) {

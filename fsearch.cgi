@@ -30,7 +30,7 @@ use URI::Escape;
 use strict;
 
 my $fhandle = CGI::param('fhandle');
-my $poet = new Kalliope::Person(fhandle => $fhandle);
+my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 
 my $dbh = Kalliope::DB->connect;
 

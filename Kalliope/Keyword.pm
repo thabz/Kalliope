@@ -81,7 +81,7 @@ sub linksToPersons {
     $sth->execute($self->id);
     my @list;
     while (my $id = $sth->fetchrow_array) {
-         push @list, new Kalliope::Person(fid => $id);
+         push @list, Kalliope::PersonHome::findByFhandle($id);
     }
     return grep {$_->lang eq $LA} @list;
 }

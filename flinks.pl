@@ -28,7 +28,7 @@ use strict;
 
 my $fhandle = url_param('fhandle');
 my $dbh = Kalliope::DB->connect;
-my $poet = new Kalliope::Person(fhandle => $fhandle);
+my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 
 #
 # Breadcrumbs -------------------------------------------------------------

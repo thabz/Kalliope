@@ -41,7 +41,7 @@ unless ($fhandle) {
     exit;
 }
 
-my $poet = new Kalliope::Person(fhandle => $fhandle);
+my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 my $mode = url_param('mode') || 'poetical';
 
 my @crumbs = $poet->getCrumbs();
@@ -54,6 +54,7 @@ my $page = newAuthor Kalliope::Page ( poet => $poet,
 my $HTML;
 
 my @works = $mode eq 'poetical' ? $poet->poeticalWorks : $poet->proseWorks;
+#@works = $poet->allWorks;
 
 if ($#works >= 0) {
     my $nr;

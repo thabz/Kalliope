@@ -28,6 +28,7 @@ use Kalliope::Web ();
 use Kalliope::Page ();
 use Kalliope::Sort ();
 use Kalliope::Person ();
+use Kalliope::PersonHome ();
 
 my $LA = CGI::url_param('sprog') || 'dk';
 my $limit = CGI::url_param('limit') || '10';
@@ -179,7 +180,7 @@ sub listpics {
     my $sth = $dbh->prepare("SELECT fhandle FROM fnavne WHERE type='poet' AND sprog=? AND foedt != '' AND foedt != '?' AND thumb = 1 ORDER BY efternavn,fornavn");
     $sth->execute($LA);
     while (my $fid = $sth->fetchrow_array) {
-	my $poet = new Kalliope::Person(fhandle => $fid);
+	my $poet = Kalliope::PersonHome::findByFhandle($fid);
 	push @poets, $poet;
     }
 
@@ -213,7 +214,8 @@ sub listflittige {
     $HTML .= '<TABLE CLASS="oversigt" CELLSPACING=0 WIDTH="100%">';
     $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Navn</TH><TH ALIGN="right">Digte</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
-	my $poet = new Kalliope::Person (fhandle => $h->{'fhandle'});
+	my $poet = Kalliope::PersonHome::findByFhandle($h->{'fhandle'});
+
 	my $class = $i % 2 ? '' : ' CLASS="darker" ';
 	$HTML .= qq|<TR $class><TD ALIGN="right">|.$i++.'.</TD>';
 	$HTML .= '<TD WIDTH="100%"><A HREF="ffront.cgi?fhandle='.$poet->fhandle.'">&nbsp;'.$poet->name.'<FONT COLOR=#808080> '.$poet->lifespan.'</FONT></A></TD>';

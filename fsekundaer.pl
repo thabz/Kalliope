@@ -26,7 +26,7 @@ use Kalliope::Page;
 use strict;
 
 my $fhandle = url_param('fhandle');
-my $poet = new Kalliope::Person(fhandle => $fhandle);
+my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 
 #
 # Breadcrumbs -------------------------------------------------------------
