@@ -154,11 +154,24 @@ sub showDir {
 
 sub showRootDir {
     opendir(DIR,"edit/files");
-    my $HTML = '';
+    my $dbh = Kalliope::DB::connect();
+    my $sth = $dbh->prepare("SELECT COUNT(DISTINCT filename) FROM edithistory WHERE action = ? AND dir = ?");
+    my $HTML = '<table class="oversigt">';
+    $HTML .= '<tr><th>Værk</th><th>Sider</th><th><img src="gfx/edit.png"></th><th><img src="gfx/accept.png"></th><th>Funktioner</th></tr>';
     foreach my $f (grep {!/^\./} readdir(DIR)) {
-	$HTML .= qq|<a class="green" href="edit.cgi?dir=$f">$f</a> <a href="dumpedit.cgi?dir=$f">[Formateret]</a><br>|
+	my $size = _sizeOfDir($f);
+	$sth->execute('edit',$f);
+	my ($edited) = $sth->fetchrow_array;
+	$sth->execute('accept',$f);
+	my ($accepted) = $sth->fetchrow_array;
+	$HTML .= qq|<tr><td><a class="green" href="edit.cgi?dir=$f">$f</a></td>|;
+	$HTML .= qq|<td>$size</td>|;
+	$HTML .= qq|<td>$edited</td>|;
+	$HTML .= qq|<td>$accepted</td>|;
+	$HTML .= qq|<td><a href="dumpedit.cgi?dir=$f">[Formateret]</a></td>|;
+	$HTML .= '</tr>';
     }
-    return $HTML;
+    return $HTML.'</table>';
 }
 
 sub _sizeOfDir {
