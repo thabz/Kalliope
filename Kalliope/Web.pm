@@ -51,7 +51,7 @@ sub doubleColumn {
     $i = 0;
     foreach $b (@blocks) {
         next unless ($b->{'count'});
-	if ($i == $minI) {
+	if ($i == $minI && $total > 8) {
 	    $columnchanged = 1;
 	    $HTML .= '</DIV></TD><TD WIDTH=1 VALIGN=top BGCOLOR="#808080">';
 	    $HTML .= '<IMG ALT="" SRC="gfx/trans1x1.gif" BORDER=0 ALT=""></TD>';
