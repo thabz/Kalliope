@@ -15,6 +15,8 @@ whitman2001060711 whitman2001060420 whitman2001060955
 whitman2001060930 whitman2001060929 whitman2001060873
 whitman2001060894 whitman2001060925 whitman2001060857 
 whitman2001060630 whitman2001060815 
+brandes2001061738 brandes2001061732
+staffeldt1999080102 baudel1999070186 thaarup2001120101 
 morgenstern200201293 rueckert2001102714 hostrup1999031808 jacobsenandrea8 grundtvig2001010759 grundtvig2001010769 grundtvig2001010729 grundtvig1837a7 lawrence2001060907 /;
 
 my $dbh = Kalliope::DB::connect();
@@ -28,6 +30,7 @@ while (my ($did) = $sth->fetchrow_array) {
 }
 foreach my $longdid (@false) {
    my $poem = new Kalliope::Poem(longdid => $longdid);
+   next unless $poem;
    $sonnets{$poem->did} = 1;
 }
 
@@ -39,7 +42,7 @@ while (my ($did) = $sth->fetchrow_array) {
     $poem->content;
     my $num = $poem->getNumberOfVerses;
     if ($num == 14) {
-	 print "\n*** candidate: ".$poem->author->fhandle."/".$poem->work->longvid.".txt : ".$poem->longdid."\n";
+	 print "\n*** ".$poem->author->fhandle."/".$poem->work->longvid.".txt : ".$poem->longdid."\n";
          print $poem->{'indhold'};
 	 print "\n***\n"
     }
