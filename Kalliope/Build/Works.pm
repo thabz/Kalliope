@@ -123,7 +123,6 @@ sub create {
 	      status enum('complete','incomplete'),
               hascontent enum('yes','no'),
 	      cvstimestamp int,
-	      cvstimestamptext varchar(200),
 	      quality set('korrektur1','korrektur2','korrektur3',
 	                  'kilde','side'),
 	      lang char(10),
