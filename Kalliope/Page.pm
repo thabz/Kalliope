@@ -33,8 +33,8 @@ sub new {
     $self->{'pagegroup'} = $args{'pagegroup'};
     $self->{'page'} = $args{'page'};
     $self->{'author'} = $args{'author'};
-    $self->{'title'} = $args{'title'}.' - Kalliope' || 'Kalliope';
-    my $title = $self->{'title'};
+    $self->{'thumb'} = $args{'thumb'};
+    $self->{'title'} = $args{'title'};
     $self->{'columns'} = [];
     return $self;
 }
@@ -44,10 +44,6 @@ sub newAuthor {
     my $poet = $args{'poet'};
     my $page = new Kalliope::Page(title => $poet->name,
                                   lang => $poet->lang,  %args);
-    $page->addBox(content => $poet->blobHTML,
-                  coloumn => 0,
-                  align => 'center',
-                  width => '100%' );
     return $page;
 }
 
@@ -59,6 +55,39 @@ sub addHTML {
     my ($self,$HTML,%args) = @_;
     my $coloumn = $args{'coloumn'} || 0;
     @{$self->{'coloumns'}}[$coloumn] .= $HTML;
+}
+
+sub thumbIMG {
+    my $self = shift;
+    my ($src,$alt,$href);
+    if ($self->{'poet'} && $self->{'poet'}->thumbURI) {
+        my $poet = $self->{'poet'};
+        $src = $poet->thumbURI;
+	$alt = 'Tilbage til hovedmenuen for '.$poet->name;
+	$href = 'ffront.cgi?fhandle='.$poet->fhandle;
+    } elsif ($self->{'thumb'}) {
+        $src = $self->{'thumb'};
+    }
+    my $img = qq|<IMG BORDER=0 ALT="$alt" HEIGHT=100 SRC="$src">| if $src;
+    my $a = qq|<A HREF="$href" TITLE="$alt">$img</A>| if $href; 
+    return $a || $img || '';
+}
+
+sub titleAsHTML {
+    my $self = shift;
+    my $title;
+    if ($self->{'poet'}) {
+        $title = $self->{'poet'}->name;
+        $title .= '<SPAN CLASS="lifespan"> '.$self->{'poet'}->lifespan.'</SPAN>';
+    } else {
+        $title = $self->{'title'};
+    }
+    return $title;
+}
+
+sub titleForWindow {
+    my $self = shift;
+    return $self->{'title'} ? $self->{'title'}.' - Kalliope' : 'Kalliope'
 }
 
 sub setColoumnWidths {
@@ -105,10 +134,11 @@ sub addBox {
 
 sub print {
     my $self = shift;
+    my $titleForWindow = $self->titleForWindow;
     print "Content-type: text/html\n\n";
     print '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">';
     print <<"EOF";
-<HTML><HEAD><TITLE>$$self{title}</TITLE>
+<HTML><HEAD><TITLE>$titleForWindow</TITLE>
 <LINK REL=STYLESHEET TYPE="text/css" HREF="kalliope.css">
 <META name="description" content="Stort arkiv for ældre digtning">
 <META name="keywords" content="digte, lyrik, litteratur, litteraturhistorie, digtere, digtarkiv, etext, e-text, elektronisk tekst, kalliope, kalliope.org, www.kalliope.org">
@@ -119,9 +149,17 @@ EOF
     print '<DIV STYLE="background-color: #e0e0e0; padding: 1px">';
     print $self->_constructBreadcrumbs;
     print '</DIV>';
-    print '<DIV CLASS="nav"><CENTER>';
-    print $self->_navigation;
-    print '</CENTER></DIV>';
+    print '<DIV HEIGHT=100 CLASS="nav"><TABLE WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
+    print '<TD CLASS="navigation"><IMG SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1>';
+    print $self->_navigationMain.'</TD>';
+
+    print '<TD ROWSPAN=3 VALIGN="top">'.$self->thumbIMG.'</TD></TR>';
+    
+    print '<TR><TD WIDTH="100%" CLASS="maintitle"><IMG SRC="gfx/trans1x1.gif" HEIGHT=36 WIDTH=1>'.$self->titleAsHTML.'</TD></TR>';
+
+    print '<TR><TD CLASS="navigation"><IMG SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1>'.$self->_navigationSub.'</TD></TR>';
+    print '</TABLE>';
+    print '</DIV>';
     print '<DIV CLASS="body">';
     print '<TABLE WIDTH="100%"><TR>';
     my @widths = $self->getColoumnWidths;
@@ -140,15 +178,11 @@ EOF
 # Private ------------------------------------------------------
 #
 
-my @topMenuItems = ('welcome','poets','worklist','poemlist',
-                    'history');
-
-
-sub _navigation {
+sub menuStructs {
     my $self = shift;
     my $lang = $self->lang;
 
-my %menuStructs = (
+    my %menuStructs = (
          'welcome' => {'menuTitle' => 'Velkommen',
                        'url' => 'index.cgi',
                        'pages' => ['news','about','tak','musen','stats']
@@ -167,7 +201,7 @@ my %menuStructs = (
                        url =>'klines.pl?mode=1&forbogstav=A&sprog='.$lang,
                        pages => ['poemtitles','poem1stlines','poempopular']
                        },
-         'history' => {menuTitle => 'Litt. hist',
+         'history' => {menuTitle => 'Nøgleord',
                        url => 'keywordtoc.cgi?sprog='.$lang,
                        pages => ['keywordtoc','timeline','keyword']
                        },
@@ -226,8 +260,15 @@ my %menuStructs = (
                            url => 'timeline.cgi&sprog='.$lang
                        }
           );
+    return %menuStructs;
+}
 
+sub _navigationMain {
+    my $self = shift;
+    my @topMenuItems = ('welcome','poets','worklist','poemlist', 'history');
+    my %menuStructs = $self->menuStructs;
     my $HTML;
+
     # Pagegroups
     foreach my $key (@topMenuItems) {
         my $struct = $menuStructs{$key};
@@ -239,7 +280,14 @@ my %menuStructs = (
             $HTML .= qq|<B>[$title]</B> |;
 	}
     }
-    $HTML .= '<BR>';
+    return $HTML;
+}
+
+sub _navigationSub {
+    my $self = shift;
+    my %menuStructs = $self->menuStructs;
+    my $HTML;
+    
     # Pages
     my $struct = $menuStructs{$self->{'pagegroup'}};
     foreach my $key (@{$struct->{'pages'}}) {
@@ -254,7 +302,7 @@ my %menuStructs = (
     }
     # Author menu
     if ($self->{'poet'}) {
-       $HTML .= '<BR>'.$self->{'poet'}->menu;
+       $HTML .= $self->{'poet'}->menu;
     }
     return $HTML;
 }

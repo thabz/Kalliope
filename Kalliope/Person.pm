@@ -154,16 +154,6 @@ sub proseWorks {
     return @list;
 }
 
-sub blobHTML {
-    my $self = shift;
-    my $url = $self->thumbURI;
-    my $HTML;
-    my $fhandle = $self->fhandle;
-    my $alt = "Tilbage til hovedmenuen for ".$self->name;
-    $HTML .= qq|<A TITLE="$alt" HREF="ffront.cgi?fhandle=$fhandle"><IMG ALT="$alt" BORDER=0 SRC="$url"></A><BR>| if $url;
-    $HTML .= $self->name.'<BR>'.$self->lifespan;
-}
-
 sub menu {
     my $self = shift;
     my %menuStruct = (

@@ -50,7 +50,7 @@ TD.darkblue {
 
 DIV.nav {
     background-color: white;
-    height: 100px;
+/*    height: 100px;*/
 }
 
 DIV.body {
@@ -175,4 +175,23 @@ span.digtoverskrift {
 
 span.digtunderoverskrift {
     font-size: 10px;
+}
+
+td.maintitle {
+    background-color: rgb(79,112,153);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica;
+}
+
+td.navigation {
+    font-size: 12px;
+    color: black;
+    font-family: Arial, Helvetica;
+    background-color: rgb(129,162,203);
+}
+
+span.lifespan {
+    color: rgb(129,162,203);
 }

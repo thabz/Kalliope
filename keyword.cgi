@@ -50,6 +50,7 @@ if (!$keywordid) {
 		title => 'Nøgleord',
                 lang => $LA,
                 pagegroup => 'history',
+                thumb => 'gfx/sundial_100.GIF',
                 page => 'keyword' );
     $page->addBox ( title => 'Fejl...',
                     width => "75%",
@@ -57,7 +58,7 @@ if (!$keywordid) {
     $page->print;
 } else {
     my @crumbs;
-    push @crumbs,['Litteraturhistorie','keywordtoc.cgi'];
+    push @crumbs,['Nøgleord','keywordtoc.cgi'];
     push @crumbs,[$keyword->title,''];
 
     $page = new Kalliope::Page (

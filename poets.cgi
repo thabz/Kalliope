@@ -68,6 +68,7 @@ my $page = new Kalliope::Page (
 		lang => $LA,
 		crumbs => \@crumbs,
                 pagegroup => 'poets',
+		thumb => 'gfx/poet00_100.GIF',
                 page => $struct->{'page'}); 
 
 my ($HTML,$endHTML) = &{$struct->{'function'}};

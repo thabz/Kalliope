@@ -31,12 +31,13 @@ my $dbh = Kalliope::DB->connect;
 my $LA = url_param('sprog') || 'dk';
 
 my @crumbs;
-push @crumbs,['Litteraturhistorie',''];
+push @crumbs,['Nøgleord',''];
 my $page = new Kalliope::Page (
-		title => 'Velkommen',
+		title => 'Indholdsfortegnelse for nøgleord',
                 pagegroup => 'history',
                 lang => $LA,
                 page => 'keywordtoc',
+                thumb => 'gfx/sundial_100.GIF',
                 crumbs => \@crumbs );
 
 my @blocks= ();
