@@ -232,6 +232,9 @@ $rc = $dbh->do("CREATE TABLE vaerker (
               noter text,
               type char(5),
               findes char(1),
+	      INDEX (vhandle),
+	      INDEX (fhandle),
+	      INDEX (type),
               UNIQUE (vid))");
 
 $sth = $dbh->prepare("SELECT * FROM fnavne");
@@ -317,7 +320,10 @@ $rc = $dbh->do("CREATE TABLE digte (
               noter text,
               layouttype enum('prosa','digt') default 'digt',
               afsnit int,      /* 0 hvis ikke afsnitstitel, ellers H-level. */
-              KEY longdid_indeks (longdid(10)),
+	      INDEX (longdid),
+	      INDEX (did),
+	      INDEX (fid),
+	      INDEX (vid),
               UNIQUE (did,longdid))
 	      TYPE = MYISAM
 	      ");
