@@ -137,7 +137,9 @@ sub footnotes {
 }
 
 sub content {
-    my ($self,%options) = @_;
+    my $self = shift;
+    my %options = @_ if $#_;
+#my ($self,%options) = @_;
     
     unless (defined $self->{'content'}) {
 	my $sth = $dbh->prepare("SELECT indhold,noter FROM digte WHERE did = ?");
@@ -152,7 +154,7 @@ sub content {
 
     if ($self->{'layouttype'} eq 'prosa') {
          $result = $self->_contentAsProseHTML();
-    } elsif ($options{'layout'} eq 'plainpoem') {
+    } elsif (%options && $options{'layout'} eq 'plainpoem') {
          $result = $self->_contentAsPlainPoemHTML();
     } else {
          $result = $self->_contentAsPoemHTML();
@@ -198,8 +200,8 @@ sub _contentAsPoemHTML {
 	    $line .= '&nbsp;';
 	}
 	if ($line =~ /nonum/) {
-	    s/<nonum>//gi;
-	    s/<\/nonum>//gi;
+	    $line =~ s/<nonum>//gi;
+	    $line =~ s/<\/nonum>//gi;
 	}
 	if (($num % 5 == 0) && $lastNum ne $num) {
 	    $dispNum = $num;
