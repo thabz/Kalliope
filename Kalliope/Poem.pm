@@ -26,7 +26,9 @@ use Carp;
 use Kalliope::DB;
 use Kalliope::Keyword;
 use Kalliope::Person;
+use Kalliope::PersonHome;
 use Kalliope::Work;
+use Kalliope::WorkHome;
 use Kalliope::Strings;
 use Kalliope::Quality;
 use Kalliope::Poem::Bible;
@@ -423,12 +425,9 @@ sub smallIcon {
     return '<IMG HEIGHT=48 BORDER=0 SRC="gfx/icons/poem-h48.gif">';
 }
 
-
 sub author {
     my $self = shift;
-    return $self->{'cache_author'} if $self->{'cache_author'};
-    $self->{'cache_author'} = new Kalliope::Person('fid' => $self->fid);
-    return  $self->{'cache_author'};
+    return Kalliope::PersonHome::findByFid($self->fid);
 }
 
 sub vid {
@@ -437,9 +436,7 @@ sub vid {
 
 sub work {
     my $self = shift;
-    return $self->{'cache'}->{'work'} if defined $self->{'cache'}->{'work'};
-    $self->{'cache'}->{'work'} = new Kalliope::Work('vid' => $self->vid); 
-    return $self->{'cache'}->{'work'};
+    return Kalliope::WorkHome::findByVid($self->vid);
 }
 
 sub getSearchResultEntry {

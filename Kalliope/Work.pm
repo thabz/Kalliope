@@ -28,6 +28,7 @@ use Carp;
 use Kalliope::DB;
 use Kalliope::Keyword;
 use Kalliope::Person;
+use Kalliope::PersonHome;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -153,7 +154,7 @@ sub fhandle {
 
 sub author {
     my $self = shift;
-    return new Kalliope::Person('fid' => $self->fid); 
+    return Kalliope::PersonHome::findByFid($self->fid);
 }
 
 sub year {
