@@ -51,6 +51,9 @@ sub longdid {
     return $_[0]->{'longdid'};
 }
 
+sub isProse {
+    return shift->{'layouttype'} eq 'prosa' ? 1 : 0;
+}
 
 sub title {
     return $_[0]->{'titel'};
@@ -87,9 +90,22 @@ sub content {
 	$self->{'noter'} = $data->{'noter'};
         $self->{'type'} = $data->{'type'};
     }
-    $self->{'indhold'} =~ s/ /&nbsp;/g unless ($self->{'layouttype'} eq 'prosa');
-    $self->{'indhold'} =~ s/\n/<BR>/g;
+    if ($self->{'layouttype'} eq 'prosa') {
+        my @indhold;
+	foreach my $line (split /\n/,$self->{'indhold'}) {
+	    $line =~ s/^(\s+)/_nbsp($1)/e;
+            push @indhold,"$line\n";
+        }
+        $self->{'indhold'} = join "",@indhold;
+    } else {
+	$self->{'indhold'} =~ s/ /&nbsp;/g;
+    }
+    $self->{'indhold'} =~ s/\n/<BR>\n/g;
     return $self->{'indhold'}; 
+}
+
+sub _nbsp {
+    return '&nbsp;'x(length shift);
 }
 
 sub notes {
