@@ -103,23 +103,28 @@ EOS
     print "\n\n</BODY></HTML>";
 } elsif ($outputtype eq 'PRC') {
     # PalmOS doc format
-    print "Content-type: text/plain\n\n";
-    print '<HEADER FONT=1 ALIGN="CENTER" TEXT="'.$ffornavn.' '.$fefternavn.'">'."\n";
-    print '<HEADER FONT=2 ALIGN="CENTER" TEXT="'.$vtitel;
-    print " ($vaar)" if ($vaar ne '?');
-    print '">'."\n";
-    print "<HRULE>\n";
+    my $HTML;
+    $HEAD.= "Content-type: text/plain\n\n";
+    $HEAD .= '<HEADER FONT=2 ALIGN="CENTER" TEXT="'.$vtitel;
+    $HEAD .= " ($vaar)" if ($vaar ne '?');
+    $HEAD .= '">'."\n";
+    $HEAD .= '<HEADER FONT=1 ALIGN="CENTER" TEXT="'.$ffornavn.' '.$fefternavn.'">'."\n";
+    my $TOC = qq|<HEADER FONT=1 TEXT="Indholdsfortegnelse">\n|;
     while($d = $sth->fetchrow_hashref) {
 	if ($d->{afsnit}) {
-	    print '<HEADER FONT=1 TEXT="'.$d->{titel}.'">'."\n";
+	    $HTML .= '<HEADER FONT=1 TEXT="'.$d->{titel}.'">'."\n";
+	    $TOC .= '<B>'.$d->{'titel'}."</B>\n";
 	} else {
 	    $d->{indhold} =~ s/\n+$/\n/;
 	    $d->{indhold} =~ s/<[^>]+>//g;
-	    print '<HEADER FONT=1 TEXT="'.$d->{titel}.'">'."\n";
-	    print $d->{'underoverskrift'}."\n";
-	    print $d->{indhold};
-	    print "\n\n<HRULE>\n";
+	    $HTML .= qq|<LABEL NAME="$$d{longdid}">|;
+	    $HTML .= '<HEADER FONT=1 TEXT="'.$d->{titel}.'">'."\n";
+	    $HTML .= $d->{'underoverskrift'}."\n";
+	    $HTML .= $d->{indhold};
+	    $HTML .= "\n\n<HRULE>\n";
+	    $TOC .= qq|  <LINK TEXT="$$d{titel}" X=10 TAG="$$d{longdid}" DIR="FORWARD" STYLE="BARE">\n|;
 	}
     }
+    print $HEAD."<HRULE>\n\n".$TOC."<HRULE>\n\n".$HTML;
 }
 
