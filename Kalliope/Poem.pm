@@ -199,6 +199,11 @@ sub _contentAsProseHTML {
     my @indhold;
     foreach my $line (split /\n/,$self->{'indhold'}) {
 	$line =~ s/^(\s+)/_nbsp($1)/e;
+	if ($line =~ /^ *(\-\-\-\-*) *$/) {
+	    my $width = (length $1)*10;
+	    $width = 100 if $width > 100;
+	    $line = qq|<hr align="center" noshade size=1 color="black" width="$width%" style="color:black">|;
+	}
 	push @indhold,"$line\n";
     }
     my $result = join "",@indhold;
