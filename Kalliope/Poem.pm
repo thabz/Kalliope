@@ -188,6 +188,18 @@ sub keywords {
     return @keywords;
 }
 
+sub xrefsTo {
+    my $self = shift;
+    my $sth = $dbh->prepare("SELECT fromid FROM xrefs WHERE toid = ?");
+    $sth->execute($self->longdid);
+
+    my @result;
+    while (my $longdid = $sth->fetchrow_array) {
+        push @result, new Kalliope::Poem(longdid => $longdid);
+    }
+    return @result;
+}
+
 sub updateHitCounter {
     my $self = shift;
     my $longdid = $self->longdid;
@@ -212,6 +224,7 @@ sub clickableTitleSimple {
 sub smallIcon {
     return '<IMG HEIGHT=48 BORDER=0 SRC="gfx/icons/poem-h48.gif">';
 }
+
 
 sub author {
     my $self = shift;

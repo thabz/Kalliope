@@ -115,6 +115,14 @@ if ($poem->footnotes) {
 
 }
 
+if (&xrefs($poem)) { 
+    $page->addBox( width => '200',
+	           coloumn => 2,
+		   theme => 'dark',
+                   title => 'Henvisninger hertil',
+	           content => &xrefs($poem) );
+}
+
 if ($poem->hasPics) { 
     $page->addBox( width => '200',
 	           coloumn => 2,
@@ -275,6 +283,17 @@ sub korrekturFelt {
 	$HTML .= Kalliope::Help->new('korrektur')->linkAsHTML;
 	$HTML .= "</FORM>";
     }
+    return $HTML;
+}
+
+sub xrefs {
+    my $poem = shift;
+    my @xrefs = $poem->xrefsTo;
+    my $HTML;
+    foreach my $otherPoem (@xrefs) {
+        $HTML .= $otherPoem->clickableTitle.'<BR>';
+    }
+    $HTML = qq|<span style="font-size: 12px">$HTML</span>| if $HTML;
     return $HTML;
 }
 

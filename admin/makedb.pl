@@ -7,6 +7,7 @@ use Kalliope::Strings;
 use Kalliope::Array;
 use Kalliope::Build::Persons;
 use Kalliope::Build::Timeline;
+use Kalliope::Build::Xrefs;
 use POSIX;
 
 my $dbh = Kalliope::DB->connect;
@@ -394,10 +395,18 @@ $sth->execute;
 print "Antal digte: $count\n";
 $sth->finish;
 
+#
+# Xrefs
+#
+
+print "Building Xrefs...\n";
+Kalliope::Build::Xrefs::build();
 
 #
 # Build forbogstaver
 #
+
+print "Building firstletters...\n";
 
 $rc = $dbh->do("drop table if exists forbogstaver");
 $rc = $dbh->do("CREATE TABLE forbogstaver ( 
