@@ -25,18 +25,33 @@ $| = 1; # No buffered I/O on STDOUT
 my $dbh = Kalliope::DB->connect;
 
 my $__all = '';
+my $__xrefs = '';
 GetOptions ("all" => \$__all);
+GetOptions ("xrefs" => \$__xrefs);
 
 if ($__all) {
     &log ("Creating tables...");
-    Kalliope::Build::Persons::create();
+    Kalliope::Build::Timestamps::create();
     Kalliope::Build::Timeline::create();
+    Kalliope::Build::Keywords::drop();
+
+    Kalliope::Build::Xrefs::drop();
+    Kalliope::Build::Links::drop();
+    Kalliope::Build::Firstletters::drop();
+    Kalliope::Build::Texts::drop();
+    Kalliope::Build::Works::drop();
+    Kalliope::Build::Biblio::drop();
+    Kalliope::Build::Persons::drop();
+
+    Kalliope::Build::Persons::create();
+    Kalliope::Build::Links::create();
+    Kalliope::Build::Biblio::create();
     Kalliope::Build::Works::create();
     Kalliope::Build::Texts::create();
     Kalliope::Build::Xrefs::create();
-    Kalliope::Build::Timestamps::create();
-    Kalliope::Build::Firstletters::create();
     Kalliope::Build::Keywords::create();
+    Kalliope::Build::Firstletters::create();
+
     Kalliope::Build::Database::grant();
 }
 
@@ -81,11 +96,11 @@ $poetsFile = '../data/poets.xml';
 my %persons;
 if (Kalliope::Build::Timestamps::hasChanged($poetsFile)) {
     &log("Making persons... ");
-    Kalliope::Build::Persons::create();
+    Kalliope::Build::Persons::create() unless $__all; 
     my %persons = Kalliope::Build::Persons::parse($poetsFile);
     Kalliope::Build::Persons::insert(%persons);
     Kalliope::Build::Timestamps::register($poetsFile);
-    Kalliope::Build::Links::create();
+    Kalliope::Build::Links::create()  unless $__all;
     Kalliope::Build::Links::insert();
     &log("Done");
     &log ("Making timeline... ");
@@ -122,11 +137,6 @@ Kalliope::Build::Firstletters::insert(@changedWorks);
 Kalliope::Build::Persons::postinsert();
 &log("Done");
 
-if (!$__all) {
-   &log('Cleaning xrefs...');
-   Kalliope::Build::Xrefs::clean(@changedWorks);
-   &log("Done");
-}
 &log('Inserting xrefs...');
 Kalliope::Build::Xrefs::insert(@changedWorks);
 &log("Done");
@@ -170,32 +180,9 @@ while ($h = $sth->fetchrow_hashref) {
 &log("Done");
 
 #
-# Build værker
-#
-
-$sth = $dbh->prepare("SELECT count(*) FROM vaerker");
-$sth->execute;
-($c) = $sth->fetchrow_array;
-&log ("Antal værker: $c");
-$sth->finish;
-$sth = $dbh->prepare("SELECT count(*) FROM vaerker WHERE type='p'");
-$sth->execute;
-($c) = $sth->fetchrow_array;
-&log("  heraf prosa: $c");
-$sth->finish;
-
-#
 # Timeline ------------------------------------------------------------
 #
 
-
-#
-# Xrefs
-#
-
-&log ("Building Xrefs...");
-Kalliope::Build::Xrefs::build();
-&log ("Done");
 
 #
 # Build hasHenvisninger 
