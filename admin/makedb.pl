@@ -16,6 +16,7 @@ use Kalliope::Build::Texts;
 use Kalliope::Build::Timestamps;
 use Kalliope::Build::Firstletters;
 use Kalliope::Build::Links;
+use Kalliope::Build::News;
 use Kalliope::Build::Database;
 use POSIX;
 use Getopt::Long;
@@ -54,6 +55,19 @@ if ($__all) {
 
     Kalliope::Build::Database::grant();
 }
+
+#
+# Build news
+#
+my $newsFile = "../data/news.html";
+if (Kalliope::Build::Timestamps::hasChanged($newsFile)) {
+    &log ("Making news... ");
+    Kalliope::Build::News::create();
+    Kalliope::Build::News::insert($newsFile);
+    Kalliope::Build::Timestamps::register($newsFile);
+    &log ("Done");
+}
+exit;
 
 #
 # Build dictionary 
