@@ -28,6 +28,7 @@ use Kalliope::Keyword;
 use Kalliope::DB;
 use Kalliope::Sort;
 use Kalliope;
+use URI::Escape;
 use strict;
 
 my $dbh = Kalliope::DB->connect;
@@ -61,7 +62,7 @@ if ($wid) {
     my $HTML = "<b>$$h{word}</b>: ";
     $HTML .= $h->{'forkl'};
 
-    $HTML .= qq|<br><br><a class="green" href="ksearch.cgi?sprog=dk&type=free&needle=$$h{word}">Søg</a> efter tekster, som indeholder dette ord.|;
+    $HTML .= qq|<br><br><a class="green" href="ksearch.cgi?sprog=dk&type=free&needle=qq|.uri_escape($$h{word}).q|">Søg</a> efter tekster, som indeholder dette ord.|;
 
     $page->addBox (
 	    width => "80%",
@@ -82,7 +83,7 @@ while (my ($myletter) = $sth->fetchrow_array()) {
 foreach my $mymyletter (sort {  Kalliope::Sort::sort($a,$b) } @letters) {
     my $myletter = $mymyletter->{'sort'};
     my $class = ($myletter eq $letter) ? 'green' : '';
-    $minimenu .= qq|<A CLASS="$class" TITLE="Ord som begynder med $myletter" HREF="dict.cgi?letter=$myletter"> |;
+    $minimenu .= qq|<A CLASS="$class" TITLE="Ord som begynder med $myletter" HREF="dict.cgi?letter=|.uri_escape($myletter).q|"> |;
     $minimenu .= Kalliope::Strings::uc($myletter)."</A>"; 
 
 }
@@ -98,7 +99,7 @@ while (my $h = $sth->fetchrow_hashref) {
     if (defined $wid && $wid eq $$h{wid}) {
         $$h{word} = "<b>$$h{word}</b>";
     }
-    $HTML .= qq|<A HREF="dict.cgi?wid=$$h{wid}">$$h{word}</A><br>|;
+    $HTML .= qq|<A HREF="dict.cgi?wid=|.uri_escape($$h{wid}).qq|">$$h{word}</A><br>|;
     $HTML .= '</td><td width="50%" valign="top">' if ++$i == int($rows/2);
 }
 $HTML .= '</td></tr></table>';
