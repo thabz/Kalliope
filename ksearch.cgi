@@ -32,13 +32,13 @@ my $dbh = Kalliope::DB->connect;
 
 my $LA = CGI::param('lang');
 my $needle = CGI::param('needle');
+my $escapedNeedle = uri_escape($needle);
 
 my $needle2 = $needle;
 $needle2 =~ s/^\s+//;
 $needle2 =~ s/\s+$//;
 $needle2 =~ s/[^a-zA-ZæøåÆØÅ ]//g;
 my @needle = split /\s+/,$needle2;
-
 
 #Log alle søgninger
 
@@ -60,7 +60,15 @@ my $page = new Kalliope::Page (
 
 my $starttid = time;
 
-my $sth = $dbh->prepare("SELECT did, MATCH titel,haystack AGAINST (?) AS quality FROM digte WHERE (MATCH titel,haystack AGAINST (?) > 0) AND afsnit = 0 ORDER BY quality DESC LIMIT 10");
+my $sth = $dbh->prepare("SELECT count(*) FROM digte WHERE (MATCH titel,haystack AGAINST (?) > 0) AND afsnit = 0");
+$sth->execute($needle);
+my $hits = $sth->fetchrow_array;
+
+my $firstNumShowing = CGI::url_param('offset') || 0;
+my $lastNumShowing = $firstNumShowing  + 10 <= $hits ?
+                     $firstNumShowing  + 10 : $hits;
+
+$sth = $dbh->prepare("SELECT did, MATCH titel,haystack AGAINST (?) AS quality FROM digte WHERE (MATCH titel,haystack AGAINST (?) > 0) AND afsnit = 0 ORDER BY quality DESC LIMIT $firstNumShowing,10");
 $sth->execute($needle,$needle);
 
 my @matches;
@@ -70,7 +78,9 @@ while (my $d = $sth->fetchrow_hashref)  {
 $sth->finish();
 
 my $HTML;
-my $i = 1;
+my $i = $firstNumShowing+1;
+
+$HTML .= "Viser ".($firstNumShowing+1)."-".($lastNumShowing)." af $hits<BR><BR>";
 
 foreach my $d (@matches)  {
     my ($did,$quality) = @{$d};
@@ -95,20 +105,33 @@ foreach my $d (@matches)  {
     $poemTitle =~ s/\n/<B>/g;
     $poemTitle =~ s/\t/<\/B>/g;
     
-    $HTML .= '<A CLASS=blue HREF="digt.pl?longdid='.$poem->longdid.'&needle='.uri_escape($needle).'#offset">'.$poemTitle.qq|</A><BR>|;
+    $HTML .= '<IMG ALT="digt" ALIGN="right" SRC="gfx/open_book_40.GIF">';
+    $HTML .= '<A CLASS=blue HREF="digt.pl?longdid='.$poem->longdid.qq|&needle=$escapedNeedle#offset">|.$poemTitle.qq|</A><BR>|;
     $HTML .= qq|$match|;
     $HTML .= '<SPAN STYLE="color: green">'.$author->name.'</SPAN>: <SPAN STYLE="color: #a0a0a0"><I>'.$work->title."</I> ".$work->parenthesizedYear."</SPAN><BR><BR>";
 
 }
 
-if ($i == 1) {
+if ($hits > 10) {
+    for ($i = 0; $i <= int ($hits/10) ; $i++) {
+	my $offset = $i*10;
+	my $iDisplay = $i+1;
+	if ($offset == $firstNumShowing) {
+	    $HTML .= "<B>[$iDisplay] </B>";
+	} else {
+	    $HTML .= qq|<A HREF="ksearch.cgi?offset=$offset&needle=$escapedNeedle&lang=$LA">[$iDisplay]</A> |;
+	}
+    }
+}
+
+unless ($hits) {
     $HTML = 'Søgningen gav intet resultat.';
 }
 
 my $formHTML = qq|<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle" VALUE="$needle"><INPUT TYPE="hidden" NAME="lang" VALUE="$LA"></FORM>|;
 
 $page->addBox( width => '80%',
-	       content => $formHTML );
+	content => $formHTML );
 
 
 $page->addBox( width => '80%',
