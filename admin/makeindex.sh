@@ -1,6 +1,7 @@
 #!/bin/sh
 
-mkdir dump
+if test \! -d "dump"; then mkdir "dump"; fi
+
 ./swish/dump2swish.pl
 swish-e -c swish/common.conf -S fs
 rm -fr dump
