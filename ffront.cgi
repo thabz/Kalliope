@@ -74,7 +74,7 @@ my @menuStruct = (
 	url => 'fsearch.cgi?', 
 	title => 'Søgning', 
 	status => $poet->{'vaerker'},
-        desc => "Søg i ".$poetName."s tekster.",
+        desc => "Søg i ".$poetName."s tekster",
         icon => 'gfx/icons/search-h48.gif'
                     },{
 	url => 'fpop.pl?', 
@@ -110,7 +110,7 @@ my @menuStruct = (
 	url => 'henvisninger.cgi?', 
 	title => 'Henvisninger', 
 	status => $poet->hasHenvisninger, 
-        desc => 'Oversigt over tekster som henviser til '.$poetName.'s tekster.',
+        desc => 'Oversigt over tekster som henviser til '.$poetName.'s tekster',
         icon => 'gfx/icons/links-h48.gif'
                     },{
 	url => 'flinks.pl?', 

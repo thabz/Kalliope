@@ -276,7 +276,7 @@ sub menu {
                     status => !$self->isUnknownPoet && $self->yearBorn ne '?'},
        henvisninger => { url => 'henvisninger.cgi?', 
                     title => 'Henvisninger', 
-                    desc => 'Oversigt over tekster, som henviser til '.$poetName.'s tekster.',
+                    desc => 'Oversigt over tekster, som henviser til '.$poetName.'s tekster',
                     status => $self->hasHenvisninger},
        links     => { url => 'flinks.pl?', 
                     title => 'Links', 
