@@ -27,8 +27,10 @@ use Kalliope::DB ();
 use Kalliope::Web ();
 use Kalliope::Page ();
 use Kalliope::Sort ();
+use Kalliope::Person ();
 
 my $LA = CGI::url_param('sprog') || 'dk';
+my $limit = CGI::url_param('limit') || '10';
 
 my %pageTypes = ('az' => {'title' => 'Digtere efter navn',
                           'function' => 'listaz',
@@ -67,8 +69,11 @@ my $page = new Kalliope::Page (
 		crumbs => \@crumbs,
                 pagegroup => 'poets',
                 page => $struct->{'page'}); 
+
+my ($HTML,$endHTML) = &{$struct->{'function'}};
 $page->addBox ( width => '75%',
-                content =>  &{$struct->{'function'}});
+                content =>  $HTML,
+		end => $endHTML);
 $page->print;
 
 sub listaz {
@@ -111,7 +116,7 @@ sub listaz {
 	    $blocks[$bi]->{'count'}++;
 	}
     }
-    return Kalliope::Web::doubleColumn(\@blocks)
+    return (Kalliope::Web::doubleColumn(\@blocks),'');
 }
 
 sub list19 {
@@ -158,7 +163,7 @@ sub list19 {
              $HTML .= $f->{'fornavn'}.'</A><BR>';
          }
      }
-     return $HTML;
+     return ($HTML,'');
 }
 
 sub listpics {
@@ -191,13 +196,12 @@ sub listpics {
 	 }
      }
      $HTML .= "</TR></TABLE>";
-     return $HTML;
+     return ($HTML,'');
 }
 
 sub listflittige {
-    my $limit = 10;
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("select fornavn,efternavn,foedt, doed, fhandle, count(did) as val from fnavne, digte where foedt != '' AND digte.fid=fnavne.fid and fnavne.sprog=? and afsnit=0 group by fnavne.fid order by val desc, efternavn ".(defined($limit) ? 'LIMIT '.$limit : ''));
+    my $sth = $dbh->prepare("select fhandle, count(did) as val from fnavne, digte where foedt != '' AND digte.fid=fnavne.fid and fnavne.sprog=? and afsnit=0 group by fnavne.fid order by val desc, efternavn ".($limit != -1 ? "LIMIT $limit" : ''));
     $sth->execute($LA);
 
     my $HTML;
@@ -206,17 +210,19 @@ sub listflittige {
     $HTML .= '<TABLE WIDTH="100%">';
     $HTML .= '<TR><TH></TH><TH>Navn</TH><TH>Digte</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
+        my $poet = new Kalliope::Person (fhandle => $h->{'fhandle'});
 	$HTML .= '<TR><TD>'.$i++.'.</TD>';
-	$HTML .= '<TD><A HREF="ffront.cgi?fhandle='.$h->{fhandle}.'">'.$h->{fornavn}.' '.$h->{efternavn}.'<FONT COLOR=#808080> ('.$h->{foedt}.'-'.$h->{doed}.')</FONT></A></TD>';
+	$HTML .= '<TD><A HREF="ffront.cgi?fhandle='.$poet->fhandle.'">'.$poet->name.'<FONT COLOR=#808080> '.$poet->lifespan.'</FONT></A></TD>';
 	$HTML .= '<TD ALIGN=right>'.$h->{'val'}.'</TD>';
 	$total += $h->{val};
     }
-#    if (defined($limit)) {
-#	$HTML .= '</TABLE>';
-#	endbox('<A HREF="flistflittige.pl?sprog='.$LA.'"><IMG VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Hele listen"></A>');
-#    } else {
-#    $HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD></TR>";
+
+    my $endHTML = '';
+    if ($limit != -1) {
+        $endHTML = qq|<A HREF="poets.cgi?list=flittige&limit=-1&sprog=$LA"><IMG VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Hele listen"></A>|;
+    } else {
+        $HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD></TR>";
+    }
     $HTML .= '</TABLE>';
-#}
-    return $HTML; 
+    return ($HTML,$endHTML); 
 }
