@@ -111,7 +111,9 @@ sub pics {
    my $fhandle = $self->author->fhandle;
    foreach my $line (split /\$\$\$/,$pics) {
       my ($url,$desc) = split /%/,$line;
-      push @result,{ thumbfile => 'fdirs/'.$fhandle.'/_'.$url,
+      my $thumb = $url;
+      $thumb =~ s/^(.*?)([^\/]+)$/$1_$2/;
+      push @result,{ thumbfile => 'fdirs/'.$fhandle.'/'.$thumb,
                      destfile =>  'fdirs/'.$fhandle.'/'.$url,
                      description => $desc };
    }	     
