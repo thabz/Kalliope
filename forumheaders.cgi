@@ -36,7 +36,7 @@ my $page = new Kalliope::Page::Popup;
 #my $HTML = '<TABLE WIDTH="100%">';
 #$HTML .= '<TR><TH STYLE="border-bottom: 1px solid black" CLASS="forumheads" ALIGN="left">Fra</TH><TH STYLE="border-bottom: 1px solid black" CLASS="forumheads" ALIGN="left">Emne</TH><TH STYLE="border-bottom: 1px solid black" CLASS="forumheads" ALIGN="left">Dato</TH><TR>';
 my @thread_ids = Kalliope::Forum::getLatestThreadIds(begin => 0, count => 20);
-my $tree = new Kalliope::Tree('tree','gfx/tree',3,('Emne',("&nbsp;"x5).'Fra','Dato'));
+my $tree = new Kalliope::Tree('tree','gfx/tree',3,('Emne',("&nbsp;"x6).'Fra','&nbsp;Dato'));
 my %translate;
 $translate{0} = 0;
 
