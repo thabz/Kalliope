@@ -96,4 +96,21 @@ sub imgsize {
 }
 
 
+sub linkParse {
+    my $text = shift;
+    $text =~ s/(\S+)/_linkParse($1)/mge;
+    return $text;
+}
+
+sub _linkParse {
+    my $word = shift;
+    if ($word =~ /^www\.\S/i) {
+        return '<A class="green" target="farawayontheoutside" href="http://'.$word.'">'.$word.'</A>';
+    } elsif ($word =~ /^(http|https|news|ftp):\/\//i) {
+        return '<A class="green" target="farawayontheoutside" href="'.$word.'">'.$word.'</A>';
+    }
+    return $word;
+}
+
+
 1;
