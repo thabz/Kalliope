@@ -50,7 +50,7 @@ my $page = new Kalliope::Page (
                 page => 'news'
            );
 
-$page->addBox ( title => "Sidste Nyheder",
+$page->addBox ( title => "Sidste nyheder",
                 width => '100%',
                 coloumn => 0,
                 content => &latestNews,
