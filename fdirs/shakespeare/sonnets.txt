@@ -1,7 +1,7 @@
 CVS-TIMESTAMP: $Date$
 STATUS:complete
 VQ:korrektur1,korrektur2,korrektur3,kilde
-VN:Kalliope bringer Shakespeares sonetter i to forskellige udgaver: under hver digttitel er først en version der nøje følger originalens stavemåde (moderniseret er kun typografiske særheder som langt s ( &#383; ) og ligaturer) og dernæst en moderniseret tekst følgende nutidig engelsk retskrivning; ude i højre side af skærmen kan nysgerrige også se en faksimilie af den pågældende sonet som den tager sig ud i originalen, <i>Shake-speares Sonnets</i> fra 1609. (forkortet <biblio>Q</biblio>)<br>Den ofte ret vilkårlige tegnsætning er nænsomt og i stilhed blevet rettet lidt til, dog uden at nogen konsekvent modernisering er tilstræbt. Alle ændringer i tekstforlæggets ordlyd (emendationer) er omhyggeligt anført i de enkelte sonetters noter; f.eks. betyder "1 monuments] <biblio>Malone</biblio>; monument <biblio>Q</biblio>" ud for sonnet 55, at i den øverste teksts linie 1 hvor vi har "Monuments", der har <biblio>Q</biblio> "Monument", og at rettelsen skyldes Edmond Malone. - Alt dette kan med fordel ignoreres, det ødelægger læseoplevelsen og er kun medtaget for fuldstændighedens skyld.
+VN:Kalliope bringer Shakespeares sonetter i to forskellige udgaver: under hver digttitel er først en version der nøje følger originalens stavemåde (moderniseret er kun typografiske særheder som langt s ( &#383; ) og ligaturer) og dernæst en moderniseret tekst følgende nutidig engelsk retskrivning; ude i højre side af skærmen kan nysgerrige også se en faksimilie af den pågældende sonet som den tager sig ud i originalen, <i>Shake-speares Sonnets</i> fra 1609. (forkortet <biblio>Q</biblio>)<br>Den ofte ret vilkårlige tegnsætning er nænsomt og i stilhed blevet rettet lidt til, dog uden at nogen konsekvent modernisering er tilstræbt. Alle ændringer i tekstforlæggets ordlyd (emendationer) er omhyggeligt anført i de enkelte sonetters noter; f.eks. betyder "1 monuments] <biblio>Malone</biblio>; monument <biblio>Q</biblio>" ud for sonnet 55, at i den øverste teksts linie 1 hvor vi har "Monuments", der har <biblio>Q</biblio> "Monument", og at rettelsen skyldes Edmond Malone. - Alt disse noter kan med fordel ignoreres, de ødelægger læseoplevelsen og er kun medtaget for fuldstændighedens skyld.
 VP:sonnets/sonnets-tit.jpg%Facsimile
 
 I:shakespeare2001060201
@@ -842,8 +842,6 @@ For beauty's pattern to succeeding men.
     Yet do thy worst old Time, despite thy wrong,
     My love shall in my verse ever live young.
 
-<!-- yawes fejl for iawes? -->
-
 I:shakespeare0020
 T:20
 TI:A womans face with natures owne hande painted
@@ -1206,8 +1204,6 @@ When sparkling stars twire not thou gild'st the even.
     But day doth daily draw my sorrows longer,
     And night doth nightly make grief's length seem stronger.
 
-#her
-
 I:shakespeare0029
 T:29
 TI:When in disgrace with Fortune and mens eyes
@@ -1226,7 +1222,7 @@ Featur'd like him, like him with friends possest,
 Desiring this mans art, and that mans skope, 
 With what I most inioy contented least;
 Yet in these thoughts my selfe almost despising, 
-Haply I thinke on thee, and then my state<note>state (Like ... arising ... earth)] <i><Malone/i>; state, (Like ... arising) ... earth <biblio>Q</biblio>; State, Like ... Lark, ... arising ... Earth <biblio>Gildon</biblio></note>
+Haply I thinke on thee, and then my state<note>state (Like ... arising ... earth)] <biblio>Malone</biblio>; state, (Like ... arising) ... earth <biblio>Q</biblio>; State, Like ... Lark, ... arising ... Earth <biblio>Gildon</biblio></note>
 (Like to the Larke at breake of daye arising
 From sullen earth) sings himns at Heauens gate,
     For thy sweet loue remembred such welth brings
@@ -1281,7 +1277,7 @@ And with old woes new wail my dear time's waste;
 Then can I drown an eye, unused to flow,
 For precious friends hid in death's dateless night,
 And weep afresh love's long since cancelled woe,
-And moan th'expense of many a vanished sight. 
+And moan th'expense of many a vanished sight.
 Then can I grieve at grievances foregone,
 And heavily from woe to woe tell o'er
 The sad account of fore-bemoaned moan,
@@ -1294,19 +1290,18 @@ T:31
 TI:Thy bosome is indeared with all hearts
 TOC:31 (Thy bosome is indeared with all hearts)
 F:Thy bosome is indeared with all hearts
-N:8 thee] there
 K:sonnet
 P:sonnets/sonnet-031.jpg%Facsimile
 P:sonnets/sonnet-031b.jpg%Facsimile
 
 Thy bosome is indeared with all hearts
-Which I by lacking have supposed dead, 
+Which I by lacking haue supposed dead, 
 And there raignes Loue and all Loues louing parts,
 And all those friends which I thought buried.
 How many a holy and obsequious teare 
 Hath deare religious loue stolne from mine eye, 
 As interest of the dead, which now appeare
-But things remou'd that hidden in thee lie. 
+But things remou'd that hidden in thee lie.<note>thee] <biblio>Gildon</biblio>; there <biblio>Q</biblio></note>
 Thou art the graue where buried loue doth liue, 
 Hung with the tropheis of my louers gon, 
 Who all their parts of me to thee did giue;
@@ -1336,11 +1331,10 @@ T:32
 TI:If thou suruiue my well contented daie
 TOC:32 (If thou suruiue my well contented daie)
 F:If thou suruiue my well contented daie
-N:14 Ile] ile
 K:sonnet
 P:sonnets/sonnet-032.jpg%Facsimile
 
-If thou suruiue my well contented daie, 
+If thou suruiue my well contented daie,
 When that churle death my bones with dust shall couer,
 And shalt by fortune once more re-suruay
 These poore rude lines of thy deceased Louer: 
@@ -1353,7 +1347,7 @@ Had my friends Muse growne with this growing age,
 A dearer birth then this his loue had brought
 To march in ranckes of better equipage:
     But since he died and Poets better proue, 
-    Theirs for their stile Ile read, his for his loue.
+    Theirs for their stile Ile read, his for his loue.<note>Ile] ?; ile <biblio>Q</biblio></note>
 
 ---
 
@@ -1377,7 +1371,6 @@ T:33
 TI:Full many a glorious morning haue I seene
 TOC:33 (Full many a glorious morning haue I seene)
 F:Full many a glorious morning haue I seene
-N:8 vnseene] vn'eene<br>14 when] whê<br>14 staineth] stainteh
 K:sonnet
 P:sonnets/sonnet-033.jpg%Facsimile
 
@@ -1394,7 +1387,7 @@ With all triumphant splendor on my brow,
 But out alack, he was but one houre mine,
 The region cloude hath mask'd him from me now.
     Yet him for this, my loue no whit disdaineth:
-    Suns of the world may staine, when heauens sun staineth.
+    Suns of the world may staine, when heauens sun staineth.<note>when ... staineth] <biblio>Benson</biblio>; whê ... stainteh <biblio>Q</biblio></note>
 
 ---
 
@@ -1418,7 +1411,6 @@ T:34
 TI:Why didst thou promise such a beautious day
 TOC:34 (Why didst thou promise such a beautious day)
 F:Why didst thou promise such a beautious day
-N:12 crosse] losse - <i>originalen har</i> losse <i>både i linje 10 og 12, hvilket synes at være en fejl, selvom gentagelsen kunne være en bevidst fremhævende effekt; rettelsen til</i> crosse <i>støttes dog af <xref digt="shakespeare0042"> hvor samme rim bruges, endda i de samme linjer.</i>
 K:sonnet
 P:sonnets/sonnet-034.jpg%Facsimile
 
@@ -1430,10 +1422,10 @@ Tis not enough that through the cloude thou breake,
 To dry the raine on my storme-beaten face,
 For no man well of such a salue can speake
 That heales the wound and cures not the disgrace;
-Nor can thy shame giue phisicke to my griefe;
-Though thou repent, yet I haue still the losse;
+Nor can thy shame giue phisicke to my griefe,
+Though thou repent, yet I haue still the losse,
 Th'offenders sorrow lends but weake reliefe
-To him that beares the strong offenses crosse.
+To him that beares the strong offenses crosse.<note>crosse] <biblio>Capell</biblio>; losse <biblio>Q</biblio>. <i>Det virker forkert med</i> losse <i>både i linje 10 og 12, selvom gentagelsen kunne være en bevidst fremhævende effekt; rettelsen til</i> crosse <i>støttes dog af <xref digt="shakespeare0042"> hvor samme rim bruges, endda i de samme linjer.</i></note>
     Ah but those teares are pearle which thy loue sheeds,
     And they are ritch, and ransome all ill deeds.
  
@@ -1447,12 +1439,14 @@ Hiding thy brav'ry in their rotten smoke?
 To dry the rain on my storm-beaten face,
 For no man well of such a salve can speak
 That heals the wound and cures not the disgrace;
-Nor can thy shame give physic to my grief;
-Though thou repent, yet I have still the loss;
+Nor can thy shame give physic to my grief,
+Though thou repent, yet I have still the loss,
 Th'offender's sorrow lends but weak relief
 To him that bears the strong offence's cross.
     Ah, but those tears are pearl which thy love sheds,
     And they are rich, and ransom all ill deeds.
+
+# her
 
 I:shakespeare0035
 T:35
