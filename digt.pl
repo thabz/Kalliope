@@ -42,6 +42,7 @@ if (url_param('longdid')) {
 }
 
 my $needle = url_param('needle') || '';
+my $biblemark = url_param('biblemark') || '';
 
 $poem->updateHitCounter;
 my $poet = $poem->author;
@@ -92,7 +93,7 @@ if (defined param('newkeywords')) {
 $page->addBox( width => '100%',
 	       coloumn => 1,
                align => $poem->isProse ? 'justify' : 'left',
-	       content => &poem($poem,$needle) );
+	       content => &poem($poem,$needle,$biblemark) );
 
 my @keywords = $poem->keywords;
 
@@ -153,7 +154,7 @@ $page->print;
 #
 
 sub poem {
-    my ($poem,$needle) = @_;
+    my ($poem,$needle,$biblemark) = @_;
     my $HTML;
     $HTML .= '<SPAN CLASS="digtoverskrift"><I>'.$poem->title."</I></SPAN><BR>";
     $HTML .= '<SPAN CLASS="digtunderoverskrift">'.$poem->subtitle.'</SPAN><BR>' if $poem->subtitleAsHTML;
@@ -177,6 +178,18 @@ sub poem {
 	$HTML =~ s/$split1/$anchor$split1/;
 	$HTML =~ s/$split1/$block1/g;
 	$HTML =~ s/$split2/$block2/g;
+    }
+    if ($biblemark) {
+       my ($begin,$end) = split /-/,$biblemark;
+       $end = $begin unless $end;
+       $end++;
+       print STDERR "** $begin - $end **\n";
+       $HTML =~ s/(&nbsp;$begin\.\s+)/<A NAME="biblemark"><\/A><DIV CLASS="biblemark">$1/s;
+       if ($HTML =~ /&nbsp;$end\.\s+/) {
+	   $HTML =~ s/(&nbsp;$end\.\s+)/<\/DIV>$1/s;
+       } else {
+           $HTML = "$HTML</DIV>";
+       }
     }
     return $HTML;
 }

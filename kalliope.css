@@ -6,6 +6,13 @@ A.timecontext:hover { border-bottom: 1px solid #f040f0}
     color: rgb(16,102,123);
 }
 
+div.biblemark {
+    background-color: #f0f080;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
 span.newsdate {
     font-family: Arial, Helvetica;
     font-weight: bold;

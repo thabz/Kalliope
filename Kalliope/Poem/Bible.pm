@@ -99,10 +99,8 @@ sub clickableTitleSimple {
     $id =~ s/^bibel//;
     ($kap) = $id =~ /(\d+)$/;
     $id =~ s/\d+$//;
-    print STDERR "Id: $id\n";
     my $title = $abbrevations{$id}.'.'.(int $kap);
     $title = "$title,$verses" if $verses;
-    my $extraURL = $verses ? '&biblemark='.$verses : '';
-    print STDERR "$title\n";
+    my $extraURL = $verses ? '&biblemark='.$verses."#biblemark" : '';
     return '<A CLASS=green HREF="digt.pl?longdid='.$self->longdid.qq|$extraURL">$title</A>|;
 }
