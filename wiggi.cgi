@@ -17,7 +17,7 @@
 #  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 #  Author: Jesper Christensen <jesper@kalliope.org>
-#  Test for Anders
+#
 #  $Id$
 
 use lib '.';
