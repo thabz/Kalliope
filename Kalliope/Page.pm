@@ -425,13 +425,14 @@ sub _navigationMain {
     my $self = shift;
     my @topMenuItems = ('welcome','poets','worklist','poemlist', 'history','forum');
     my %menuStructs = $self->menuStructs;
-    my $HTML;
+    my $HTML = '<BR>';
 
     # Pagegroups
     foreach my $key (@topMenuItems) {
         my $struct = $menuStructs{$key};
         my ($title,$url,$icon) = ($struct->{'menuTitle'},
                                   $struct->{'url'},$struct->{'icon'});
+	next unless $icon;			  
 	$HTML .= qq|<A CLASS=white  HREF="$url">|;
 	$HTML .= qq|<IMG BORDER=0 SRC="$icon"><BR>|;
         if ($key ne $self->{'pagegroup'} && $key ne $self->{'pagegroupchoosen'}) {
