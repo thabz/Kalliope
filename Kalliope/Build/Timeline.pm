@@ -40,7 +40,7 @@ sub build {
     my $twig = new XML::Twig(keep_encoding => 1);
     $twig->parsefile('../data/events.xml');
     foreach my $event ($twig->root->children('entry')) {
-	my $html = $event->first_child('html')->text;
+	my $html = $event->first_child('html')->xml_string;
 	my $date = $event->{'att'}->{'date'};
 	my $type = $event->{'att'}->{'type'};
 	my ($y,$m,$d) = (0,0,0);
@@ -92,7 +92,7 @@ sub build {
 	my $twig = new XML::Twig(keep_encoding => 1);
 	$twig->parsefile($file);
 	foreach my $event ($twig->root->children('entry')) {
-	    my $html = $event->first_child('html')->text;
+	    my $html = $event->first_child('html')->xml_string;
 	    my $date = $event->{'att'}->{'date'};
 	    my $type = $event->{'att'}->{'type'};
 	    my ($y,$m,$d) = (0,0,0);
