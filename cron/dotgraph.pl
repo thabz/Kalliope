@@ -32,6 +32,7 @@ $sth->execute;
 print FILE "digraph kalliopexrefs {\n";
 
 while (my ($fromlang,$fromhandle,$fromid,$toid,$tohandle,$tolang) = $sth->fetchrow_array) {
+    next if $fromhandle eq $tohandle;
     my $line = "    $fromhandle -> $tohandle;\n";
     $sprog{$fromhandle} = $fromlang;
     $sprog{$tohandle} = $tolang;
@@ -42,8 +43,9 @@ foreach my $handle (keys %sprog) {
     my $person = new Kalliope::Person (fhandle => $handle);
     my $sprog = $person->lang;
     my $name = $person->name;
+    my $span = $person->lifespan;
     my $color = $colors{$sprog};
-    print FILE qq|    $handle [ fontsize=9, fontname="Arial", label="$name",fontcolor="$color" ];\n|; 
+    print FILE qq|    $handle [ fontsize=9, fontname="Arial", label="$name\\n$span",fontcolor="$color" ];\n|; 
 }
 
 map { print FILE } keys %lines;
@@ -52,6 +54,6 @@ print FILE "}\n";
 
 close FILE;
 
-`/usr/local/bin/dot -Tpng -o dot.gif tmp.dot`;
-#`rm tmp.dot`;
+`dot -Tpng -o dot.gif tmp.dot`;
+`rm tmp.dot`;
 
