@@ -51,6 +51,7 @@ $page->addBox ( title => "",
 
 $page->addBox ( title => "Nørderi",
                 width => '90%',
+		align => 'center',
                 coloumn => 0,
                 content => '<IMG SRC="cron/plot.gif">');
 
