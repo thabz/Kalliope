@@ -102,7 +102,7 @@ sub create {
 #	      UNIQUE(keywordid,otherid,othertype))");
 #
 #
-    $dbh->do("DROP TABLE keywords CASCADE");
+    $dbh->do("DROP TABLE keywords");
     $dbh->do("CREATE TABLE keywords ( 
 	id int PRIMARY KEY NOT NULL,
         ord varchar(128) NOT NULL,
@@ -111,7 +111,7 @@ sub create {
 	)");
     $dbh->do(q/CREATE INDEX keywords_ord ON keywords(ord)/);
 
-    $dbh->do("DROP TABLE keywords_images CASCADE");
+    $dbh->do("DROP TABLE keywords_images");
     $dbh->do("CREATE TABLE keywords_images ( 
 	keyword_id INT REFERENCES keywords(id),
         imgfile varchar(128),

@@ -108,7 +108,7 @@ sub parse {
 }
 
 sub create {
-    $dbh->do("DROP TABLE fnavne CASCADE");
+    $dbh->do("DROP TABLE fnavne");
     $dbh->do("CREATE TABLE fnavne ( 
     fhandle varchar(20) NOT NULL PRIMARY KEY, 
     fornavn text DEFAULT '', 

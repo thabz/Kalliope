@@ -136,7 +136,7 @@ sub create {
     $dbh->do(q/CREATE SEQUENCE seq_digte_did INCREMENT 1 START 1/);
     $dbh->do(q/DROP SEQUENCE seq_digte_longdid/);
     $dbh->do(q/CREATE SEQUENCE seq_digte_longdid INCREMENT 1 START 1/);
-    $dbh->do("DROP TABLE digte CASCADE");
+    $dbh->do("DROP TABLE digte");
     $dbh->do(q(CREATE TABLE digte ( 
               did int NOT NULL PRIMARY KEY, 
 	      parentdid int REFERENCES digte(did),

@@ -106,7 +106,7 @@ sub insert {
 }
 
 sub create {
-    $dbh->do("DROP TABLE vaerker CASCADE");
+    $dbh->do("DROP TABLE");
  $dbh->do(q(
 	CREATE TABLE vaerker ( 
               vid varchar(80) NOT NULL PRIMARY KEY,
