@@ -98,7 +98,7 @@ sub linksToPoems {
 }
 
 sub smallIcon {
-    return '<IMG WIDTH=32 HEIGHT=32 BORDER=0 SRC="gfx/sundial_40.GIF">';
+    return '<IMG HEIGHT=48 BORDER=0 SRC="gfx/icons/keywords-h48.gif">';
 }
 
 sub getSearchResultEntry {

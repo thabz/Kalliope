@@ -173,7 +173,7 @@ sub hasContent {
 sub iconURI {
     my $self = shift;
     #TODO: Måske skulle værker uden år have et specielt ikon.
-    return $self->hasContent ? 'gfx/book_40.GIF' : 'gfx/book_40_high.GIF';
+    return $self->hasContent ? 'gfx/icons/book-h48.gif' : 'gfx/icons/book-na-h48.gif';
 }
 
 sub getSearchResultEntry {

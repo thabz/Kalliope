@@ -210,7 +210,7 @@ sub clickableTitleSimple {
 }
 
 sub smallIcon {
-    return '<IMG WIDTH=32 HEIGHT=32 BORDER=0 SRC="gfx/open_book_40.GIF">';
+    return '<IMG HEIGHT=48 BORDER=0 SRC="gfx/icons/poem-h48.gif">';
 }
 
 sub author {
