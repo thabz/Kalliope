@@ -403,6 +403,7 @@ $rc = $dbh->do("CREATE TABLE digte (
               afsnit int,      /* 0 hvis ikke afsnitstitel, ellers H-level. */
 	      lang char(10),
 	      INDEX (longdid),
+	      INDEX (afsnit),
 	      INDEX (did),
 	      INDEX (lang),
 	      INDEX (createtime),
