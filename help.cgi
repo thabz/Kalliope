@@ -24,7 +24,12 @@
 use strict;
 use CGI qw/:standard/;
 use Kalliope::Help;
+use Kalliope::Page::Popup;
 
 my $help = new Kalliope::Help(url_param('helpid'));
-print "Content-type: text/html\n\n";
-print $help->textAsHTML;
+my $page = new Kalliope::Page::Popup ( title => $help->title );
+$page->addBox( width => '100%',
+               title => $help->title,
+               content => $help->text );
+$page->print;
+

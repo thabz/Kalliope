@@ -57,21 +57,6 @@ sub text {
     return shift->{'text'};
 }
 
-
-sub textAsHTML {
-    my $self = shift;
-    my $HTML;
-    $HTML =  "<HEAD><TITLE>".$self->title.'</TITLE>';
-    $HTML .= '<LINK REL=STYLESHEET TYPE="text/css" HREF="kalliope.css">';
-    $HTML .= "</HEAD";
-    $HTML .= "<BODY>";
-    $HTML .= "<h2>$$self{title}</h2>";
-    $HTML .= $self->text;
-#    $HTML .= Kalliope::Web::makeBox($self->title,"100%",'',$self->text,'');
-    $HTML .= '</BODY></HTML>';
-    return $HTML;
-}
-
 sub linkAsHTML {
     my $self = shift;
     my $id = $self->helpid;
