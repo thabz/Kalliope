@@ -17,10 +17,11 @@ my $dbh = Kalliope::DB->connect;
 # Build dictionary 
 #
 
+print "Making dict\n";
 Kalliope::Build::Dict::create();
 @dict = Kalliope::Build::Dict::parse('../data/dict.xml');
 Kalliope::Build::Dict::insert(\@dict);
-exit;
+print "Done\n";
 
 #
 # Keywords
