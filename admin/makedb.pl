@@ -27,8 +27,7 @@ my $dbh = Kalliope::DB->connect;
 
 my $__all = '';
 my $__xrefs = '';
-GetOptions ("all" => \$__all);
-GetOptions ("xrefs" => \$__xrefs);
+GetOptions ("all" => \$__all,"xrefs" => \$__xrefs);
 
 if ($__all) {
     &log ("Creating tables...");
@@ -109,7 +108,7 @@ $poetsFile = '../data/poets.xml';
 my %persons;
 if (Kalliope::Build::Timestamps::hasChanged($poetsFile)) {
     &log("Making persons... ");
-    Kalliope::Build::Persons::drop() unless $_all;
+    Kalliope::Build::Persons::drop() unless $__all;
     Kalliope::Build::Persons::create() unless $__all; 
     my %persons = Kalliope::Build::Persons::parse($poetsFile);
     Kalliope::Build::Persons::insert(%persons);
