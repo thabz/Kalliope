@@ -420,11 +420,11 @@ while ($v = $sth->fetchrow_hashref) {
     }
     @mykeys = @arvedekeys;
     while (<IN>) {
-	chop;
+	chomp;
+	s/\r//;
 	s/,,/&bdquo;/g;
 	s/''/&ldquo;/g;
-	s/\r//;
-	s/ $//g;
+	s/ *$//g;
 	next if (/^\#/);
 	next if (/^VN:/);
 	next if (/^VP:/);
