@@ -1,16 +1,9 @@
-# MySQL dump 5.12
-#
-# Host: localhost    Database: kalliope
-#--------------------------------------------------------
-# Server version	3.22.16a-gamma
-
-#
-# Table structure for table 'digthits'
-#
 CREATE TABLE digthits (
-  longdid varchar(40) DEFAULT '0' NOT NULL,
-  hits int(11) DEFAULT '0' NOT NULL,
-  lasttime int DEFAULT '0' NOT NULL,
-  PRIMARY KEY (longdid),
-  UNIQUE did (longdid)
+  longdid varchar(40) NOT NULL PRIMARY KEY,
+  hits int NOT NULL,
+  lasttime int NOT NULL
 );
+
+CREATE INDEX digthits_hits ON digthits(hits);
+GRANT SELECT,UPDATE,INSERT ON TABLE digthits TO "www-data";
+
