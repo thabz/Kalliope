@@ -470,21 +470,35 @@ sub getSearchResultEntry {
 
     my $match = '';
     my $slash = '<SPAN STYLE="color: #a0a0a0">//</SPAN>';
+    my $match = '';
     foreach my $ne (@needle) {
-	$ne .= '(\W|$)' unless $ne =~ /\*$/;
+	next if $ne =~ /(and|or|not)/i;
+#	$ne .= '(\W|$)' unless $ne =~ /\*$/;
 	$ne =~ s/\*//;
-	my ($a,$b,$c) = $content =~ /(.{0,30}\W)($ne)(.{0,30})/si;
-	$a =~ s/\n+/ $slash /g if $a;
-	$c =~ s/\n+/ $slash /g if $b;
-	$match .= "...$a<b>$b</b>$c...<BR>" if $b;
+	if ($match !~ /$ne/is) {
+	    my ($a,$b,$c) = $content =~ /(\W.{0,30}\W)($ne)(.{0,30}\W)/si;
+	    $match .= " ... $a$b$c " if $b;
+	}
+    }
+    foreach my $ne (@needle) {
+	next if $ne =~ /(and|or|not)/i;
+#	$ne .= '(\W|$)' unless $ne =~ /\*$/;
+	$ne =~ s/\*//;
+	if ($ne =~ /\*$/) {
+            $match =~ s/(\W)($ne)/$1<b>$2<\/b>/gis;
+	} else {
+            $match =~ s/(\W)($ne)(\W)/$1<b>$2<\/b>$3/gis;
+	}
 	$poemTitle =~ s/($ne)/\n$1\t/gi;
     }
+    $match =~ s/\n+/ $slash /g if $match;
+
     $poemTitle =~ s/\n/<B>/g;
     $poemTitle =~ s/\t/<\/B>/g;
     
     my $HTML .= '<IMG ALT="Digt" ALIGN="right" SRC="gfx/icons/poem-h48.gif">';
     $HTML .= '<A CLASS=blue HREF="digt.pl?longdid='.$self->longdid.qq|&needle=$escapedNeedle#offset">|.$poemTitle.qq|</A><BR>|;
-    $HTML .= qq|$match|;
+    $HTML .= qq|$match<br>|;
     $HTML .= '<SPAN STYLE="color: green">'.$author->name.'</SPAN>: <SPAN STYLE="color: #a0a0a0"><I>'.$work->title."</I> ".$work->parenthesizedYear."</SPAN><BR><BR>";
     return $HTML;
 }

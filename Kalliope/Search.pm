@@ -155,7 +155,7 @@ sub count {
 sub result {
     my $self = shift;
     my @matches;
-    open(FILE,"swish-search -f index/swish.index -w ".$self->needleToUse."|");
+    open(FILE,"swish-search -m 100 -f index/swish.index -w ".$self->needleToUse."|");
     my $i = -1;
     my $c = 0;
     while (my $line = <FILE>) {
