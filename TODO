@@ -1,2 +1,42 @@
+
+Indhold:
+
 * Adam Homo ... hvilken udgave har vi? Müller udgav flere reviderede udgaver.
+* Der skal skrives nøgleord til de forskelige metriske enheder.
+* Hvilken fora vil vi have?
+* Omskriv eller fjern de enkelte eForlag tekster der stadig findes i nøgleord.
+
+
+Kode:
+
 * Claussen -> Digttitler crasher pga. digt med titel '19XX'
+* Bladring i Forum.
+* Mere overskuelig forside.
+* Søgning i en enkelt forfatters værk. Skal ske fra forfatterforside.
+* De gamle blå farver i stylesheetet skal udskiftes.
+* Statistik: Stay or go?
+* Nye ikoner skal integreres.
+
+
+XML:
+
+* Konvertering til værker i XML format.
+* CVS timestamp. Værker skal have en CVS Id, så vi har et gratis 
+  timestamp på sidste ændring. 
+* Skal vi have een stor fnavne.xml fil, som kan XSLT-includes fra
+  værk-filerne?
+* Skal vaerker.txt erstattes med en liste over værk-id'er i fnavne.xml?
+* Værker skal have et fuldstændig/ufuldstændig flag.
+* Hvordan løser vi problemer med at en bogs indholdsfortegnelse kræver
+  større fleksibilitet end hvad der kan graves ud af bogens struktur?
+  Skal vi droppe TOC: felterne til fordel for en helt eksplicit angivelse
+  af hele indholdsfortegnelsen først i værkfilen? Dette giver ultimativ
+  fleksibilitet, men kan være træls at vedligeholde...
+
+PDF:
+
+* XSLT fra work.xml -> work.fo kan ikke laves før værkformatet er fastlagt.
+* PDF generator skal kun bygge ændrede værker, cf. CVS timestamp.
+* PDF filer skal rsynces til serveren, så vi er fri for det store arbejde
+  det er at vedligeholde en Java installation på serveren.
+
