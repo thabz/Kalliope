@@ -130,7 +130,7 @@ if ($mode eq 'titel') {
 	$last3 = $vaerkaar;
         $HTML .= qq|<TR><TD NOWRAP>$liVal</TD>|;
 	$HTML .= '<TD>&nbsp;<A HREF="fvaerker.pl?fhandle='.$$v{fhandle}.'">'.$$v{fornavn}.' '.$$v{efternavn}.'</A>: ';
-	if ($$v{hascontent} eq 'yes') {
+	if ($$v{hascontent} ne 'yes') {
 	    $HTML .= "<I>$$v{titel}</I><BR>";
 	} else {
 	    $HTML .= qq|<A CLASS=green HREF="vaerktoc.pl?fhandle=$$v{fhandle}&vhandle=$$v{vhandle}">|;
