@@ -232,7 +232,7 @@ EOF
     }
 
     # Head
-    print '<TR><TD HEIGHT=70 BGCOLOR="blue" COLSPAN=3 VALIGN="top">';
+    print '<TR><TD HEIGHT=70 COLSPAN=3 VALIGN="top">';
 
     print '<TABLE BGCOLOR="black" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
     print '<TD ROWSPAN=2><IMG SRC="gfx/trans1x1.gif" HEIGHT=70 WIDTH=1></TD>';
@@ -316,6 +316,7 @@ sub menuStructs {
                        },
          'poets'    => {menuTitle => 'Digtere',
                        url => 'poets.cgi?list=az&sprog='.$lang,
+		       icon => 'gfx/icons/poet-w64.gif',
                        'pages' => ['poetsbyname','poetsbyyear','poetsbypic',
 		                   'poetsbyflittige','poetsbypop']
                        },
