@@ -5565,4 +5565,87 @@
   </period>
 </person>
 
+<!-- Personer som ikke er digtere -->
+
+<person id="heribergjohanne" lang="dk" type="person">
+  <name>
+    <firstname>Johanne Luise</firstname>
+    <lastname>Heiberg</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1812</date>
+    </born>
+    <dead>
+      <date>1890</date>
+    </dead>
+  </period>
+</person>
+
+<person id="gierlew" lang="dk" type="person">
+  <name>
+    <firstname>Andres Chr.</firstname>
+    <lastname>Gierlew</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1774</date>
+    </born>
+    <dead>
+      <date>1845</date>
+    </dead>
+  </period>
+</person>
+
+<person id="thorvaldsen" lang="dk" type="person">
+  <name>
+    <firstname>Bertel</firstname>
+    <lastname>Thorvaldsen</lastname>
+    <fullname>Albert Bertel Thorvaldsen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1770</date>
+    </born>
+    <dead>
+      <date>1844</date>
+    </dead>
+  </period>
+</person>
+
+<person id="eckersberg" lang="dk" type="person">
+  <name>
+    <firstname>C. W.</firstname>
+    <lastname>Eckersberg</lastname>
+    <fullname>Christoffer Wilhelm Eckersberg</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1783</date>
+      <place>Blåkrog, Als</place>
+    </born>
+    <dead>
+      <date>1853</date>
+    </dead>
+  </period>
+</person>
+
+<person id="struensee" lang="dk" type="person">
+  <name>
+    <firstname>J. F.</firstname>
+    <lastname>Struensee</lastname>
+    <fullname>Johan Friedrich Struensee</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1727-08-05</date>
+      <place>Halle</place>
+    </born>
+    <dead>
+      <date>1772-04-28</date>
+      <place>Kbh.</place>
+    </dead>
+  </period>
+</person>
+
 </persons>

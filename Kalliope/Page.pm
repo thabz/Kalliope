@@ -83,7 +83,8 @@ sub _printCookies {
 sub newAuthor {
     my ($class,%args) = @_;
     my $poet = $args{'poet'};
-    my $page = new Kalliope::Page(pagegroupchoosen => 'poets', 
+    my $group = $poet->getType ne 'person' ? 'persons' : 'poets';
+    my $page = new Kalliope::Page(pagegroupchoosen => $group, 
                                   title => $poet->name,
                                   lang => $poet->lang,  %args);
     return $page;
@@ -365,7 +366,7 @@ sub menuStructs {
          'history' => {menuTitle => 'Nøgleord',
 		       icon => 'gfx/icons/keywords-w64.gif',
                        url => 'keywordtoc.cgi?sprog='.$lang,
-                       pages => ['keywordtoc','dict']
+                       pages => ['keywordtoc','dict','persons']
                        },
          'forum' =>    {menuTitle => 'Forum',
                        url => 'forumindex.cgi',
@@ -434,6 +435,19 @@ sub menuStructs {
                        },
          'dict' => {menuTitle => 'Ordbog',
                            url => 'dict.cgi'
+                       },
+         'persons' => {menuTitle => 'Biografier',
+                           url => 'persons.cgi?list=az',
+                       'pages' => ['personsbyname','personsbyyear','personsbypic']
+                       },
+         'personsbyname' => {menuTitle => 'Personer efter navn',
+                           url => 'persons.cgi?list=az&sprog='.$lang
+                       },
+         'personsbyyear' => {menuTitle => 'Personer efter år',
+                           url => 'persons.cgi?list=19&sprog='.$lang
+                       },
+         'personsbypic' => {menuTitle => 'Personer efter udseende',
+                           url => 'persons.cgi?list=pics&sprog='.$lang
                        },
          'timeline' => {menuTitle => 'Tidslinie',
                            url => 'timeline.cgi&sprog='.$lang

@@ -32,9 +32,7 @@ my $poet = new Kalliope::Person(fhandle => $fhandle);
 # Breadcrumbs -------------------------------------------------------------
 #
 
-my @crumbs;
-push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
-push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
+my @crumbs = $poet->getCrumbs;
 push @crumbs,['Biografi',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 

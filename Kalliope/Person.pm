@@ -178,6 +178,22 @@ sub concurrentPersons {
 
 }
 
+sub getType {
+    return shift->{'type'};
+}
+
+sub getCrumbs {
+    my $self = shift;
+    my @crumbs;
+    if ($self->getType eq 'person') {
+	push @crumbs,['Personer','persons.cgi?list=az'];
+    } else {
+	push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$self->lang];
+    }
+    push @crumbs,[$self->name,'ffront.cgi?fhandle='.$self->fhandle];
+    return @crumbs;
+}
+
 sub poeticalWorks {
     my $self = shift;
     my $sth = $dbh->prepare("SELECT vid FROM vaerker WHERE fid=? AND type='v' ORDER BY aar");

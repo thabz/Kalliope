@@ -34,9 +34,7 @@ my $poet = new Kalliope::Person(fhandle => $fhandle);
 # Breadcrumbs -------------------------------------------------------------
 #
 
-my @crumbs;
-push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
-push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
+my @crumbs = $poet->getCrumbs;
 
 my $page = newAuthor Kalliope::Page (
 	                page => 'forside',
@@ -156,14 +154,16 @@ if ($poet->getDetailsAsHTML) {
     $HTML .= '<span style="font-size: 12px">';
     $HTML .= '<b>Navn: </b>'.$poet->name.'<br>';
     $HTML .= $poet->getDetailsAsHTML;
-    $HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>';
-    $HTML .= '<b>Antal digte: </b>'.$poet->poemCount.'<br>';
+    if ($poet->getType ne 'person') {
+	$HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>';
+	$HTML .= '<b>Antal digte: </b>'.$poet->poemCount.'<br>';
+    }
     $HTML .= '</span>';
-    
-    
+
+
     $page->addBox( width => '150',
-       	           coloumn => 2,
-       	           content => $HTML );
+	    coloumn => 2,
+	    content => $HTML );
 }
 
 #
