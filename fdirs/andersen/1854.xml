@@ -164,7 +164,7 @@ Han skjærer Ansigt, det er Smiil.
 Men <i>Mai</i>, hans Rygte det er godt,
 I Smug han lastes dog saa smaat.
 
-Høit raaber <i>Juni</i>: ,,Godtfolk kom,
+Høit raaber <i>Juni:</i> ,,Godtfolk kom,
 Kjør med i Skoven, see Jer om!''
 
 Og <i>Juli</i> - tidt han gjør lidt vaadt,
@@ -193,14 +193,14 @@ Tilraaber os: ,,Kom med, leg Juul!''
    <subtitle>(1825)</subtitle>
    <toctitle>Skovbal</toctitle>
    <indextitle>Skovbal</indextitle>
-   <firstline>Du friske, varme Sommerluft</firstline>
+   <firstline>Den friske, varme Sommerluft</firstline>
    <notes>
-      <note>Trykt første gang i 1835 som lejlighedstryk: <i>Sang ved Skovballet den 31 Juli 1835. Forfattet af H.C. Andersen</i>; teksten her følger <i>Samlede Skrifter</i>, bind XV (1854), side 43.</note>
+      <note>Trykt første gang i 1835 som lejlighedstryk: <i>Sang ved Skovballet den 31 Juli 1835. Forfattet af H.C. Andersen;</i> teksten her følger <i>Samlede Skrifter</i>, bind XV (1854), side 43.</note>
    </notes>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Du friske, varme Sommerluft
+Den friske, varme Sommerluft
 Beaander Danmarks Sletter,
 Nu hvert et Blad er fyldt med Duft,
 Vi har de lyse Nætter;
@@ -327,7 +327,10 @@ Vort Fædreland, det kaldes Danmark!
 <poem id="andersen2002122605">
 <head>
    <title>I</title>
-   <subtitle>Paa en Faders Fødselsdag, afsjunget af hans Børn</subtitle>
+   <subtitle>
+   <line>Paa en Faders Fødselsdag, afsjunget af hans Børn</line>
+   <line>Mel. Du lille Purk.</line>
+   </subtitle>
    <toctitle><num>I</num>Paa en Faders Fødselsdag, afsjunget af hans Børn</toctitle>
    <indextitle>Paa en Faders Fødselsdag, afsjunget af hans Børn</indextitle>
    <firstline>Nu kommer Visen med Knald, Hurra!</firstline>
@@ -337,7 +340,6 @@ Vort Fædreland, det kaldes Danmark!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<nonum><small>Mel. Du lillle Purk.</small></nonum>
 
 Nu kommer Visen med Knald, Hurra!
 Humeur forneden og foroven.
@@ -384,7 +386,10 @@ Ved din Skaal hver en Rose nikker!
 <poem id="andersen2002111303">
 <head>
    <title>II</title>
-   <subtitle>,,Ved en Vens Afrejse til Paris!''</subtitle>
+   <subtitle>
+   <line>,,Ved en Vens Afrejse til Paris!''</line>
+   <line>Mel. Jeg er et Søndagsbarn!</line>
+   </subtitle>
    <toctitle><num>II</num>&bdquo;Ved en Vens Afrejse til Paris!&ldquo;</toctitle>
    <indextitle>Ved en Vens Afreise til Paris!</indextitle>
    <firstline>Hør Venners Stemme: drik og spiis!</firstline>
@@ -394,7 +399,6 @@ Ved din Skaal hver en Rose nikker!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<nonum><small>Mel. Jeg er et Søndagsbarn!</small></nonum>
 
 Hør Venners Stemme: drik og spiis!
 Thi snart, saa er Du i Paris,
@@ -426,6 +430,7 @@ Farvel! farvel! det Bedste skee!
 <poem id="andersen2002111304">
 <head>
    <title>III</title>
+   <subtitle>Mel. Der var engang en tapper Mand</subtitle>
    <toctitle><num>III</num>Vi er i Marts, men Martsviol</toctitle>
    <indextitle>Vi er i Marts, men Martsviol</indextitle>
    <firstline>Vi er i Marts, men Martsviol</firstline>
@@ -435,7 +440,6 @@ Farvel! farvel! det Bedste skee!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<nonum><small>Mel. Der var engang en tapper Mand</small></nonum>
 
 Vi er i Marts, men Martsviol
 Kun sees i Rude-Isen,
@@ -478,6 +482,7 @@ Og ingen Rigsdags Tanker,
 <poem id="andersen2002111305">
 <head>
    <title>IV</title>
+   <subtitle>Mel. Hvis et godt Raad I følge kan</subtitle>
    <toctitle><num>IV</num>Hæv Dig vor Sang! her synger Stort og Smaat</toctitle>
    <indextitle>Hæv Dig vor Sang! her synger Stort og Smaat</indextitle>
    <firstline>Hæv Dig vor Sang! her synger Stort og Smaat</firstline>
@@ -487,7 +492,6 @@ Og ingen Rigsdags Tanker,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<nonum><small>Mel. Hvis et godt Raad I følge kan</small></nonum>
 
 Hæv Dig vor Sang! her synger Stort og Smaat,
 Har man kun Røst, paa den megen gode Spisen!
@@ -529,7 +533,10 @@ Hjertet vil og vor Sang forstaae! :/:
 <poem id="andersen2002122606">
 <head>
    <title>VI</title>
-   <subtitle>Sang, skreven og afsjungen paa Fregatten Bellona under Opseilingen til Helsingør</subtitle>
+   <subtitle>
+   <line>Sang, skreven og afsjungen paa Fregatten Bellona under Opseilingen til Helsingør</line>
+   <line>Mel. Vift stolt paa Codans Bølge</line>
+   </subtitle>
    <toctitle><num>VI</num>Sang, skreven og afsjungen paa Fregatten Bellona under Opseilingen til Helsingør</toctitle>
    <indextitle>Sang, skreven og afsjungen paa Fregatten Bellona under Opseilingen til Helsingør</indextitle>
    <firstline>Du, som nys Flugten satte</firstline>
@@ -539,7 +546,6 @@ Hjertet vil og vor Sang forstaae! :/:
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<nonum><small>Mel. Vift stolt paa Codans Bølge</small></nonum>
 
 Du, som nys Flugten satte
 Ned mod Italia
@@ -564,7 +570,10 @@ Farvel! Held Danmarks Flag!
 <poem id="andersen2002122607">
 <head>
    <title>VII</title>
-   <subtitle>Ved Botanikeren Liebmanns Afreise til Mexico 1840</subtitle>
+   <subtitle>
+   <line>Ved Botanikeren Liebmanns Afreise til Mexico 1840</line>
+   <line>Mel. Danmark deiligst Vang og Vænge</line>
+   </subtitle>
    <toctitle><num>VII</num>Ved Botanikeren Liebmanns Afreise til Mexico 1840</toctitle>
    <indextitle>Ved Botanikeren Liebmanns Afreise til Mexico 1840</indextitle>
    <firstline>Naar Du nu om ikke længe</firstline>
@@ -574,7 +583,6 @@ Farvel! Held Danmarks Flag!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<nonum><small>Mel. Danmark deiligst Vang og Vænge</small></nonum>
 
 Naar Du nu om ikke længe
 Staaer i Mexico,
@@ -643,7 +651,7 @@ Glædens Guld, tag din Betaling Ven!
 <poem id="andersen2002122608">
 <head>
    <title>Stakkels Mary Anne</title>
-   <subtitle>(Engelsk Folkevise, udsat af J. P. E. Hartmann)</subtitle>
+   <subtitle>(Engelsk Folkevise, udsat af <I>J. P. E. Hartmann</I>)</subtitle>
    <toctitle>Stakkels Mary Anne</toctitle>
    <indextitle>Stakkels Mary Anne</indextitle>
    <firstline>Under Gravens Græstørv sover</firstline>
@@ -667,7 +675,7 @@ Bleg blev Kinden, Smilet døde,
 Hele Verden syntes øde,
     Stakkels Mary Anne!
 Nær ved Kilden under Borgen,
-Hvor han ikke kom hiin Morgen,
+Hvor han ikke kom hiin Morgen,<note>han] kan</note>
 Stod hun, Billedet paa Sorgen,
     Stakkels Mary Anne!
 
@@ -1228,7 +1236,7 @@ Besøg selv Stjernen over Skyens Fjeld;
 Her voxe Palmer straalende og høie,
 Her gaaer en <i>Tinsoldat</i> med farvet Trøie,
 En <i>Guldskov</i> vil fortrylle sært dit Øie,
-Og ,,<i>Alferne</i>'', dem skal Du kjende nøie,
+Og <i>,,Alferne''</i>, dem skal Du kjende nøie,
 <i>Den Dødes Søn</i> Dig rører ved sit Liv,
 <i>Skjønheden</i> vil Dig lære elske <i>Dyret</i>,
 Prindsessen sidder skjult i Kjærets Siv,
@@ -1696,7 +1704,7 @@ Saa skal han Characteren faae:
 <body>
 Min fyenske Landsmand, som med Toner smukt
 Kan give Foden Vinger, Hjertet Flugt,
-Du hjalp paa lille ,,<i>Ole</i>'' ved Paraden,
+Du hjalp paa lille <i>,,Ole''</i> ved Paraden,
 Nu kommer han til Dig, heelt ud af Staden,
 Med Tak for sig og for alt Godt og Smukt.
 Han nikker venligt og med begge Hænder
@@ -2161,7 +2169,7 @@ Der fødtes Pierroen og Harlekinen,
 De ved Casorti blev Dansken kjær,
 Ja Pantomimen blev dansk som Nogen,
 Derom maa der staae i Mindebogen.
-Et Blad tages frem, med ,,<i>Guldnøglen</i>'' paa,
+Et Blad tages frem, med <i>,,Guldnøglen''</i> paa,
 Tableauer og Dandse skal Rammen slaae
 Saa broget, phantastisk og udenlandsk,
 Men Hjertet deri er ved Slægten dansk.
@@ -2250,7 +2258,7 @@ Ak Borddands-Feber, Valg- og Bal- Geni- Kold-Feber,
 De er igrunden ingen Ting mod min.
 Min - ja De lee - lee kun - det letter.
 Jeg gaaer iaften med Vertinde-Feber,
-Tør jeg betroe Dem det: ,,<i>Vertinde-Feber</i>''.
+Tør jeg betroe Dem det: <i>,,Vertinde-Feber''</i>.
 Paa Gjester, Huus og paa Anretningen
 Jeg tænker, tænkte, tænker meer end Nogen.
 ,,&mdash; Velkommen! tag til Takke! &mdash;'' er Prologen,
