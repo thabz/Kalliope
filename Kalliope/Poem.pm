@@ -117,7 +117,9 @@ sub content {
         }
         $self->{'indhold'} = join "",@indhold;
     } else {
-	$self->{'indhold'} =~ s/ /&nbsp;/g;
+	$self->{'indhold'} =~ /^(\s*)/;
+	my $padding = '&nbsp;'x(length $1);
+	$self->{'indhold'} =~ s/^(\s*)/$padding/;
     }
     $self->{'indhold'} =~ s/<w>/<span class="wide">/g;
     $self->{'indhold'} =~ s/<\/w>/<\/span>/g;
