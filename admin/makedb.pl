@@ -146,6 +146,7 @@ $rc = $dbh->do("CREATE TABLE vaerker (
               fid INT NOT NULL,
               vhandle char(40) NOT NULL,
               titel text NOT NULL, 
+	      underoverskrift text,
               aar char(40),
               noter text,
 	      pics text,
@@ -167,7 +168,7 @@ $sth = $dbh->prepare("SELECT * FROM fnavne");
 $sth->execute;
 $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM vaerker");
 $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywords.id = keywords_relation.keywordid AND keywords_relation.otherid = ? AND keywords_relation.othertype = 'biografi'");
-$sth2= $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle, titel,aar,type,findes,noter,pics,quality,lang,status,cvstimestamp) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
+$sth2= $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle,titel,underoverskrift,aar,type,findes,noter,pics,quality,lang,status,cvstimestamp) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 print "Antal forfattere: ".$sth->rows."\n";
 
 while ($fn = $sth->fetchrow_hashref) {
@@ -184,6 +185,7 @@ while ($fn = $sth->fetchrow_hashref) {
 	    $cvsdate = 0;
 	    $noter = '';
 	    @pics = ();
+	    @subtitles = ();
 	    @keys = ();
 	    my @qualities;
 	    if ($findes) { 
@@ -198,6 +200,10 @@ while ($fn = $sth->fetchrow_hashref) {
 		    if (/^VN:/) {
 			s/^VN://;
 			$noter .= $_."\n";
+		    } elsif (/^VU:/) {
+			s/^VU://;
+		        push @subtitles,$_;
+		    } elsif (/^CVS-TIMESTAMP:/) {
 		    } elsif (/^VP:/) {
 			s/^VP://;
 		        push @pics,$_;
@@ -222,7 +228,9 @@ while ($fn = $sth->fetchrow_hashref) {
 	    chop($noter);
 	    $pics = join '$$$',@pics;
 	    my $quality = join ',',@qualities;
-	    $sth2->execute($fn->{'fhandle'},$fn->{'fid'},$vhandle,$titel,$aar,
+	    my $subtitle = join "\n",@subtitles;
+	    $sth2->execute($fn->{'fhandle'},$fn->{'fid'},$vhandle,$titel,
+	            $subtitle,$aar,
 		    $type,$findes,$noter,$pics,$quality,$fn->{'sprog'},
 		    $status,$cvsdate);
             $lastinsertsth->execute;
@@ -331,6 +339,7 @@ while ($v = $sth->fetchrow_hashref) {
 	next if (/^VN:/);
 	next if (/^VP:/);
 	next if (/^VK:/);
+	next if (/^VU:/);
 	next if (/^VQ:/);
 	next if (/^STATUS:/);
 	next if (/^CVS-TIMESTAMP:/);
