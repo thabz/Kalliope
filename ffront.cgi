@@ -136,7 +136,7 @@ $page->addBox( width => '80%',
 # Søgefelt
 #
 
-$HTML = qq|<FORM METHOD="get" ACTION="fsearch.cgi"><INPUT TYPE="text" NAME="needle"><INPUT TYPE="hidden" NAME="fhandle" VALUE="$fhandle"></FORM>|;
+$HTML = qq|<FORM METHOD="get" ACTION="fsearch.cgi"><INPUT TYPE="text" NAME="needle"><INPUT TYPE="hidden" NAME="fhandle" VALUE="$fhandle"> <INPUT CLASS="button" TYPE="submit" NAME="Knap" "VALUE=" Søg "></FORM>|;
 
 $page->addBox( width => '80%',
                title => 'Søgning',
