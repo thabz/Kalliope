@@ -8,7 +8,7 @@ use strict;
 my %colors = (
     dk => 'black',
     se => 'magenta',
-    de => 'black',
+    de => 'orange',
     it => 'green',
     fr => 'burlywood',
     uk => 'blue',
