@@ -34,10 +34,12 @@ my $dbh = Kalliope::DB->connect;
 my $page;
 
 my $keywordid;
+my $keywordord;
 if (defined(url_param('keywordid'))) {
     $keywordid = url_param('keywordid');
 } elsif (defined(url_param('keyword'))) {
     $keywordid = $dbh->selectrow_array("SELECT id FROM keywords WHERE ord = '".url_param('keyword')."'");
+    $keywordord = url_param('keyword');
 }
 
 my $LA = url_param('sprog') || 'dk';
@@ -66,6 +68,7 @@ if (!$keywordid) {
 		title => $keyword->title,
                 pagegroup => 'history',
                 page => 'keyword',
+		printer => url_param('printer') || 0,
                 thumb => 'gfx/icons/keywords-h70.gif',
                 lang => $LA,
                 crumbs => \@crumbs );
@@ -73,7 +76,10 @@ if (!$keywordid) {
     $page->addBox ( title => $keyword->title,
                     width => "80%",
                     coloumn => 0,
-                    content => '<DIV STYLE="text-align: justify">'.Kalliope::buildhrefs(\$keyword->content).'</DIV>' );
+		    printer => 1,
+		    align => 'justify',
+		    end => qq|<a title="Udskriftsvenlig udgave" href="keyword.cgi?keyword=$keywordord&printer=1"><img src="gfx/print.gif" border=0></a>|,
+                    content => Kalliope::buildhrefs(\$keyword->content) );
     
     #
     # Related keywords -----------------------------------------------

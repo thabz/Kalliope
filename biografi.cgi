@@ -37,15 +37,18 @@ push @crumbs,['Biografi',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
                                       page => 'bio',
+				      printer => url_param('printer') || 0,
                                       crumbs => \@crumbs );
 
 #
 # Biografi ----------------------------------------------
 #
-$page->addBox( title => 'Biografi',
+$page->addBox( title => $poet->name.'s biografi',
                width => '80%',
                coloumn => 1,
-               align => 'justify',
+	       printer => 1,
+	       align => 'justify',
+	       end => qq|<a title="Udskriftsvenlig udgave" href="biografi.cgi?fhandle=$fhandle&printer=1"><img src="gfx/print.gif" border=0></a>|,
 	       content => $poet->bio || '<IMG ALIGN="left" SRC="gfx/excl.gif">Der er endnu ikke forfattet en biografi for '.$poet->name );
 
 $page->print;

@@ -21,12 +21,18 @@
 package Kalliope::Page;
 
 use Kalliope::Web ();
+use Kalliope::Page::Print();
 use Kalliope::Forum ();
 use CGI::Cookie ();
 use strict;
 
 sub new {
     my ($class,%args) = @_;
+
+    if (defined $args{'printer'} && $args{'printer'} == 1) {
+	$class = 'Kalliope::Page::Print';
+    }
+    
     my $self = bless {}, $class;
 
     $self->{'pagegroupchoosen'} = '';
