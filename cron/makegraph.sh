@@ -1,3 +1,4 @@
+#!/bin/sh
 
 ./graph.pl > tal
 gnuplot gplot > plot.png
