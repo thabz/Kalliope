@@ -113,7 +113,7 @@ foreach my $d (@matches)  {
 }
 
 if ($hits > 10) {
-    for ($i = 0; $i <= int ($hits/10) ; $i++) {
+    for ($i = 0; $i <= int (($hits-1)/10) ; $i++) {
 	my $offset = $i*10;
 	my $iDisplay = $i+1;
 	if ($offset == $firstNumShowing) {
