@@ -47,6 +47,10 @@ sub new {
     return $obj;
 }
 
+sub isProse {
+    return shift->{'type'} ne 'v';
+}
+
 sub vid {
     return shift->{'vid'};
 }
