@@ -319,6 +319,7 @@ sub _resolveTags {
     $txt =~ s/<\/s>/<\/small>/gi;
     $txt =~ s/,,/&bdquo;/g;
     $txt =~ s/''/&ldquo;/g;
+    $txt = Kalliope::makeMetricLetters($txt);
     return $txt;
 }
 
