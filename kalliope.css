@@ -198,9 +198,9 @@ A.white:link, A.white:visited, A.white:active {
     color: rgb(217,206,189);
 
 }
-A.green:link, A.green:visited, A.green:active { 
-color: rgb(139,56,65)
 
+A.green:link, A.green:visited, A.green:active { 
+    color: rgb(139,56,65)
 }
 
 A.green:hover {
@@ -209,6 +209,14 @@ A.green:hover {
 
 A.blue:link, A.blue:visited, A.blue:active { color: rgb(16,102,123)}
 P.hist { text-align: justify }
+
+span.gray {
+    color: #808080;
+}
+
+span.gray a.green {
+     color: rgb(159,92,99);
+}
 
 TD.textboxheader  { 
 padding: 0pt 0pt 0pt 0pt;
