@@ -58,6 +58,9 @@ $antalpoets = getVal("SELECT count(*) FROM fnavne");
 $val2 = getVal("SELECT count(*) FROM fnavne where vers = 1");
 $HTML .= "<li>Af de $antalpoets digtere i Kalliope, kan man læse digte hos de $val2 af dem.";
 
+$val = getVal("select sum(pics) from fnavne");
+$HTML .= "<li>Der findes $val portrætter i Kalliope.";
+
 $val = getVal("SELECT count(*) FROM fnavne where bio != ''");
 $HTML .= "<li>Der findes $val biografier i Kalliope.";
 
