@@ -189,7 +189,7 @@ sub content {
     if (%options && $options{'layout'} eq 'raw') {
 	return $self->{'raw'};
     } elsif ($self->isProse) {
-         $result = $self->_contentAsProseHTML()."Yo";
+         $result = $self->_contentAsProseHTML();
     } elsif (%options && $options{'layout'} eq 'plainpoem') {
          $result = $self->_contentAsPlainPoemHTML();
     } else {
@@ -218,7 +218,7 @@ sub _contentAsProseHTML {
     }
     my $result = join "",@indhold;
     $result  =~ s/\n/<br>\n/g;
-    return $result.'Hej med dig';
+    return $result;
 }
 
 sub _contentAsPoemHTML {
@@ -502,3 +502,4 @@ sub getKeyPool {
 }
 
 1;
+
