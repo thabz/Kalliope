@@ -50,6 +50,7 @@ my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
 
 if ($search->hasSearchBox) {
     $page->addBox( width => '80%',
+                   coloumn => 1,
 	           content => $search->searchBoxHTML);
 }
 
@@ -57,6 +58,7 @@ if ($search->hasSearchBox) {
 my $starttid = time;
 $page->addBox( width => '80%',
 	content => $search->getHTML,
+	coloumn => 1,
 	end => "Tid i sekunder: ".(time-$starttid) );
 
 $page->print();
