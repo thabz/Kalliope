@@ -1,7 +1,7 @@
 CVS-TIMESTAMP: $Date$
 STATUS:complete
 VQ:korrektur1,korrektur2,korrektur3,kilde
-VN:Kalliope bringer Shakespeares sonetter i to forskellige udgaver: under hver digttitel er først en version der nøje følger originalens stavemåde (bortset fra langt s ( &#383; )) og dernæst en fuldt ud moderniseret udgave; ude i højre side af skærmen kan man så ovenikøbet se en faksimilie af den pågældende sonet som den tager sig ud i originaludgaven, <i>Shake-speares Sonnets</i> fra 1609.<br>Den ofte ret vilkårlige tegnsætning er nænsomt og i stilhed blevet rettet lidt til, uden at nogen konsekvent modernisering er tilstræbt. Alle ændringer i tekstforlæggets ordlyd (emendationer) er omhyggeligt anført i de enkelte sonetters noter; f.eks. betyder "1 monuments] <i>Malone</i>; monument <biblio>Q</biblio>" ud for sonnet 55, at i den øverste teksts linie 1 hvor vi har "Monuments", der har <biblio>Q</biblio> (the 1609 Quarto) "Monument", og at rettelsen skyldes Edmond Malone. - Alt dette kan med fordel ignoreres, det ødelægger læseoplevelsen og er kun medtaget for fuldstændighedens skyld.
+VN:Kalliope bringer Shakespeares sonetter i to forskellige udgaver: under hver digttitel er først en version der nøje følger originalens stavemåde (bortset fra langt s ( &#383; )) og dernæst en fuldt ud moderniseret udgave; ude i højre side af skærmen kan man så ovenikøbet se en faksimilie af den pågældende sonet som den tager sig ud i originaludgaven, <i>Shake-speares Sonnets</i> fra 1609. (forkortet <biblio>Q</biblio>)<br>Den ofte ret vilkårlige tegnsætning er nænsomt og i stilhed blevet rettet lidt til, uden at nogen konsekvent modernisering er tilstræbt. Alle ændringer i tekstforlæggets ordlyd (emendationer) er omhyggeligt anført i de enkelte sonetters noter; f.eks. betyder "1 monuments] <i>Malone</i>; monument <biblio>Q</biblio>" ud for sonnet 55, at i den øverste teksts linie 1 hvor vi har "Monuments", der har <biblio>Q</biblio> "Monument", og at rettelsen skyldes Edmond Malone. - Alt dette kan med fordel ignoreres, det ødelægger læseoplevelsen og er kun medtaget for fuldstændighedens skyld.
 VP:sonnets/sonnets-tit.jpg%Facsimile
 
 I:shakespeare2001060201
@@ -41,11 +41,11 @@ His tender heire might beare his memory:
 But thou contracted to thine owne bright eyes,
 Feed'st thy lights flame with selfe substantiall fewell,
 Making a famine where aboundance lies,
-Thy selfe thy foe, to thy sweet selfe too cruell.
+Thy selfe thy foe, to thy sweet selfe too cruell:
 Thou that art now the worlds fresh ornament,
 And only herauld to the gaudy spring,
 Within thine owne bud buriest thy content,
-And, tender chorle, makst wast in niggarding.<note>And, ... chorle, <i>Capell</i>; And ... chorle <biblio>Q</biblio></note>
+And, tender chorle, makst wast in niggarding:<note>And, ... chorle, <i>Capell</i>; And ... chorle <biblio>Q</biblio></note>
     Pitty the world, or else this glutton be,
     To eate the worlds due, by the graue and thee.
 
@@ -58,11 +58,11 @@ His tender heir might bear his memory:
 But thou, contracted to thine own bright eyes,
 Feed'st thy light's flame with self-substantial fuel,
 Making a famine where abundance lies,
-Thyself thy foe, to thy sweet self too cruel.
+Thyself thy foe, to thy sweet self too cruel:
 Thou that art now the world's fresh ornament,
 And only herald to the gaudy spring,
 Within thine own bud buriest thy content,
-And, tender churl, mak'st waste in niggarding.
+And, tender churl, mak'st waste in niggarding:
     Pity the world, or else this glutton be,
     To eat the world's due, by the grave and thee.
 
@@ -71,6 +71,8 @@ T:2
 TI:When fortie Winters shall beseige thy brow
 TOC:2 (When fortie Winters shall beseige thy brow)
 F:When fortie Winters shall beseige thy brow
+N:4 totter'd <biblio>Q</biblio>; tatter'd <i>Gildon</i> - tottered <i>er en afvigende form af</i> tattered, <i>ikke en fejl.</i>
+N:Sonnet 2 kendes også fra manuskripter der af skriftkloge skønnes til ikke at være blot afledede af <biblio>Q</biblio> og derfor har selvstændig autoritet. Den her bragte tekst er taget fra manuskriptet kaldet "W" - almindeligt accepteret som den mest pålidelige version - undtagen titlen, som er lånt fra andre manuskripter.<br>Spes Altera = det andet håb, <i>citerer Vergils Aeneide, XII, l. 168.</i><br>2 y<sup>t</sup> = that<br>6 y<sup>e</sup> = the
 K:sonnet
 P:sonnets/sonnet-002.jpg%Facsimile
 P:sonnets/sonnet-002b.jpg%Facsimile
@@ -78,7 +80,7 @@ P:sonnets/sonnet-002b.jpg%Facsimile
 When fortie Winters shall beseige thy brow,
 And digge deep trenches in thy beauties field,
 Thy youthes proud liuery, so gaz'd on now,
-Wil be a totter'd weed of smal worth held:<note>totter'd <biblio>Q</biblio>; tatter'd <i>Gildon</i></note>
+Wil be a totter'd weed of smal worth held:
 Then being askt, where all thy beautie lies,
 Where all the treasure of thy lusty daies,
 To say within thine owne deepe sunken eyes,
@@ -107,6 +109,25 @@ Proving his beauty by succession thine.
     This were to be new made when thou art old,
     And see thy blood warm when thou feel'st it cold.
 
+---
+
+<nonum><b>Spes Altera</b></nonum>
+
+<resetnum>When forty winters shall beseige thy brow
+And trench deepe furrowes in y<sup>t</sup> louely feild
+Thy youthes faire liuery so accounted now
+Shall bee like rotten weeds of no worth held
+Then beeing askt where all thy bewty lyes
+Where all y<sup>e</sup> lustre of thy youthfull dayes
+To say within these hollow suncken eyes
+Were an all-eaten truth, & worthless prayse
+O how much better were thy bewtyes vse
+If thou couldst say this pretty child of mine
+Saues my account & makes my old excuse
+Making his bewty by succession thine
+    This were to bee new borne when thou art old
+    And see thy bloud warme when thou feelst it cold
+
 I:shakespeare0003
 T:3
 TI:Looke in thy glasse and tell the face thou vewest
@@ -117,17 +138,17 @@ P:sonnets/sonnet-003.jpg%Facsimile
 
 Looke in thy glasse and tell the face thou vewest,
 Now is the time that face should forme an other,
-Whose fresh repaire if now thou not renewest, 
-Thou doo'st beguile the world, vnblesse some mother. 
+Whose fresh repaire if now thou not renewest,
+Thou doo'st beguile the world, vnblesse some mother.
 For where is she so faire whose vn-eard wombe
-Disdaines the tillage of thy husbandry? 
+Disdaines the tillage of thy husbandry?
 Or who is he so fond will be the tombe
-Of his selfe loue, to stop posterity? 
-Thou art thy mothers glasse, and she in thee 
+Of his selfe loue to stop posterity?
+Thou art thy mothers glasse, and she in thee
 Calls backe the louely Aprill of her prime;
-So thou through windowes of thine age shalt see, 
-Dispight of wrinkles, this thy goulden time. 
-    But if thou liue remembred not to be, 
+So thou through windowes of thine age shalt see,
+Dispight of wrinkles, this thy goulden time.
+    But if thou liue remembred not to be,
     Die single and thine Image dies with thee.
 
 ---
@@ -139,7 +160,7 @@ Thou dost beguile the world, unbless some mother.
 For where is she so fair whose uneared womb
 Disdains the tillage of thy husbandry?
 Or who is he so fond will be the tomb
-Of his self-love, to stop posterity?
+Of his self-love to stop posterity?
 Thou art thy mother's glass, and she in thee
 Calls back the lovely April of her prime;
 So thou through windows of thine age shalt see,
@@ -164,7 +185,7 @@ The bountious largesse giuen thee to giue?
 Profitles vserer, why doost thou vse
 So great a summe of summes yet can'st not liue?
 For hauing traffike with thy selfe alone,
-Thou of thy selfe thy sweet selfe dost deceaue;
+Thou of thy selfe thy sweet selfe dost deceaue,
 Then how when nature calls thee to be gone,
 What acceptable <i>Audit</i> can'st thou leaue?
     Thy vnus'd beauty must be tomb'd with thee, 
@@ -181,7 +202,7 @@ The bounteous largess given thee to give?
 Profitless usurer, why dost thou use
 So great a sum of sums yet canst not live?
 For having traffic with thyself alone,
-Thou of thyself thy sweet self dost deceive;
+Thou of thyself thy sweet self dost deceive,
 Then how when nature calls thee to be gone,
 What acceptable audit canst thou leave?
     Thy unused beauty must be tombed with thee,
@@ -203,7 +224,7 @@ And that vnfaire which fairely doth excell:
 For neuer resting time leads Summer on
 To hidious winter and confounds him there,
 Sap checkt with frost and lustie leau's quite gon,
-Beauty ore-snow'd and barenes euery where;
+Beauty ore-snow'd and barenes euery where;<note>barenes] <biblio>Q</biblio>; Barenness <i>Gildon</i></note>
 Then were not summers distillation left
 A liquid prisoner pent in walls of glasse,
 Beauties effect with beauty were bereft,
@@ -220,7 +241,7 @@ And that unfair which fairly doth excel:
 For never-resting time leads summer on
 To hideous winter and confounds him there,
 Sap checked with frost and lusty leaves quite gone,
-Beauty o'er-snowed and bareness everywhere;
+Beauty o'ersnowed and bareness everywhere;
 Then were not summer's distillation left
 A liquid prisoner pent in walls of glass,
 Beauty's effect with beauty were bereft,
@@ -236,10 +257,10 @@ F:Then let not winters wragged hand deface
 K:sonnet
 P:sonnets/sonnet-006.jpg%Facsimile
 
-Then let not winters wragged hand deface
+Then let not winters wragged hand deface<note>wragged] <biblio>Q</biblio>; rugged <i>Capell</i></note>
 In thee thy summer ere thou be distil'd:   
 Make sweet some viall; treasure thou some place
-With beauties treasure ere it be selfe kil'd.<note>beauties] <biblio>Benson</biblio>; beautits <biblio>Q</biblio></note>
+With beauties treasure ere it be selfe kil'd:<note>beauties] <biblio>Benson</biblio>; beautits <biblio>Q</biblio></note>
 That vse is not forbidden vsery
 Which happies those that pay the willing lone; 
 That's for thy selfe to breed an other thee, 
@@ -256,7 +277,7 @@ Leauing thee liuing in posterity?
 <resetnum>Then let not winter's ragged hand deface
 In thee thy summer ere thou be distilled:
 Make sweet some vial; treasure thou some place
-With beauty's treasure ere it be self-killed.
+With beauty's treasure ere it be self-killed:
 That use is not forbidden usury
 Which happies those that pay the willing loan;
 That's for thyself to breed another thee,
@@ -281,7 +302,7 @@ Loe in the Orient when the gracious light
 Lifts vp his burning head, each vnder eye
 Doth homage to his new appearing sight,
 Seruing with lookes his sacred maiesty;
-And hauing clim'd the steepe vp heauenly hill,
+And hauing climb'd the steepe vp heauenly hill,
 Resembling strong youth in his middle age,
 Yet mortall lookes adore his beauty still,
 Attending on his goulden pilgrimage:
@@ -294,9 +315,9 @@ From his low tract and looke an other way:
 
 ---
 
-<resetnum>Lo in the Orient when the gracious light
+<resetnum>Lo in the orient when the gracious light
 Lifts up his burning head, each under eye
-Doth homage to his new appearing sight,
+Doth homage to his new-appearing sight,
 Serving with looks his sacred majesty;
 And having climbed the steep-up heavenly hill,
 Resembling strong youth in his middle age,
@@ -306,7 +327,7 @@ But when from highmost pitch with weary car,
 Like feeble age he reeleth from the day,
 The eyes, fore duteous, now converted are
 From his low tract and look another way:
-    So thou, thyself outgoing in thy noon,
+    So thou, thyself out-going in thy noon,
     Unlooked on diest unless thou get a son.
 
 I:shakespeare0008
@@ -752,8 +773,6 @@ When in eternal lines to time thou grow'st:
     So long as men can breathe or eyes can see,
     So long lives this, and this gives life to thee.
 
-#her
-
 I:shakespeare0019
 T:19
 TI:Deuouring time, blunt thou the Lyons pawes
@@ -767,7 +786,7 @@ Deuouring time, blunt thou the Lyons pawes,
 And make the earth deuoure her owne sweet brood;
 Plucke the keene teeth from the fierce Tygers yawes,
 And burne the long liu'd Ph&aelig;nix in her blood;
-Make glad and sorry seasons as thou fleet'st,
+Make glad and sorry seasons as thou fleet'st,<note>fleet'st] <biblio>Q</biblio>; fleets <i>Dyce</i></note>
 And do what ere thou wilt, swift-footed time,
 To the wide world and all her fading sweets:
 But I forbid thee one most hainous crime,
@@ -780,10 +799,10 @@ For beauties patterne to succeding men.
 
 ---
 
-<resetnum>Devouring Time, blunt thou the lion's paws,
+<resetnum>Devouring time, blunt thou the lion's paws,
 And make the earth devour her own sweet brood;
 Pluck the keen teeth from the fierce tiger's jaws,
-And burn the long-live' Phoenix in her blood;
+And burn the long-lived Phoenix in her blood;
 Make glad and sorry seasons as thou fleet'st,
 And do whate'er thou wilt, swift-footed time,
 To the wide world and all her fading sweets:
@@ -810,7 +829,7 @@ With shifting change, as is false womens fashion;
 An eye more bright then theirs, lesse false in rowling,
 Gilding the obiect where-vpon it gazeth;
 A man in hew all <i>Hews</i> in his controwling, 
-Which steales mens eyes and womens soules amaseth;
+Which steales mens eyes and womens soules amaseth.
 And for a woman wert thou first created, 
 Till nature as she wrought thee fell a dotinge,
 And by addition me of thee defeated, 
@@ -827,7 +846,7 @@ With shifting change, as is false women's fashion;
 An eye more bright than theirs, less false in rolling,
 Gilding the object whereupon it gazeth;
 A man in hue all hues in his controlling,
-Which steals men's eyes and women's souls amazeth;
+Which steals men's eyes and women's souls amazeth.
 And for a woman wert thou first created,
 Till nature as she wrought thee fell a-doting,
 And by addition me of thee defeated,
@@ -844,17 +863,17 @@ K:sonnet
 P:sonnets/sonnet-021.jpg%Facsimile
 
 So is it not with me as with that Muse,
-Stird by a painted beauty to his verse, 
+Stird by a painted beauty to his verse,
 Who heauen it selfe for ornament doth vse, 
 And euery faire with his faire doth reherse, 
 Making a coopelment of proud compare 
-With Sunne and Moone, with earth and seas rich gems;
+With Sunne and Moone, with earth and seas rich gems,
 With Aprills first borne flowers and all things rare 
 That heauens ayre in this huge rondure hems;
-O let me true in loue but truly write,
+O let me true in loue but truly write,<note>me ... love] <biblio>Q</biblio>; me, ... love, <i>Gildon</i></note>
 And then beleeue me, my loue is as faire
 As any mothers childe, though not so bright 
-As those gould candells fixt in heauens ayre: 
+As those gould candells fixt in heauens ayer: 
     Let them say more that like of heare-say well, 
     I will not prayse that purpose not to sell.
 
@@ -865,7 +884,7 @@ Stirred by a painted beauty to his verse,
 Who heaven itself for ornament doth use,
 And every fair with his fair doth rehearse,
 Making a couplement of proud compare
-With sun and moon, with earth and sea's rich gems;
+With sun and moon, with earth and sea's rich gems,
 With April's first-born flowers and all things rare
 That heaven's air in this huge rondure hems;
 O let me true in love but truly write,
@@ -884,14 +903,14 @@ K:sonnet
 P:sonnets/sonnet-022.jpg%Facsimile
 
 My glasse shall not perswade me I am ould,
-So long as youth and thou are of one date;
+So long as youth and thou are of one date,
 But when in thee times forrwes I behould,
 Then look I death my daies should expiate:
 For all that beauty that doth couer thee
 Is but the seemely rayment of my heart,
-Which in thy brest doth liue, as thine in me;
-How can I then be elder than thou art?
-O therefore loue be of thy selfe so wary
+Which in thy brest doth liue, as thine in me,
+How can I then be elder then thou art?
+O therefore, loue, be of thy selfe so wary
 As I not for my selfe, but for thee will, 
 Bearing thy heart, which I will keepe so chary 
 As tender nurse her babe from faring ill:
@@ -901,14 +920,14 @@ As tender nurse her babe from faring ill:
 ---
 
 <resetnum>My glass shall not persuade me I am old,
-So long as youth and thou are of one date;
+So long as youth and thou are of one date,
 But when in thee time's furrows I behold,
 Then look I death my days should expiate:
 For all that beauty that doth cover thee
 Is but the seemly raiment of my heart,
-Which in thy breast doth live, as thine in me;
+Which in thy breast doth live, as thine in me,
 How can I then be elder than thou art?
-O therefore love be of thyself so wary
+O therefore, love, be of thyself so wary
 As I not for myself, but for thee will,
 Bearing thy heart, which I will keep so chary
 As tender nurse her babe from faring ill:
@@ -920,7 +939,6 @@ T:23
 TI:As an vnperfect actor on the stage
 TOC:23 (As an vnperfect actor on the stage)
 F:As an vnperfect actor on the stage
-N:14 with] wit<br>14 wit] wiht
 K:sonnet
 P:sonnets/sonnet-023.jpg%Facsimile
 
@@ -929,15 +947,15 @@ Who with his feare is put besides his part,
 Or some fierce thing repleat with too much rage, 
 Whose strengths abondance weakens his owne heart; 
 So I for feare of trust, forget to say
-The perfect ceremony of loues right, 
+The perfect ceremony of loues right,<note>right] (rite) <i>Malone</i>. <i>Skriftsproget var på Shakespeares (og udgiverens) tid elastisk nok til at man her kunne læse både</i> rite <i>og</i> right, <i>en flertydighed der går tabt i moderniseringer, med mindre man da får læst digtene højt.</i></note>
 And in mine owne loues strength seeme to decay, 
 Ore-charg'd with burthen of mine owne loues might: 
-O let my books be then the eloquence
+O let my books be then the eloquence<note>books] <biblio>Q</biblio>; looks <i>Sewell</i></note>
 And domb presagers of my speaking brest, 
 Who pleade for loue, and look for recompence, 
-More then that tonge that more hath more exprest. 
-    O learne to read what silent loue hath writ, 
-    To heare with eies belongs to loues fine wit.
+More then that tonge that more hath more exprest.
+    O learne to read what silent loue hath writ,
+    To heare with eies belongs to loues fine wit.<note>with ... wit] <biblio>Benson</biblio>; wit ... wiht <biblio>Q</biblio></note>
 
 ---
 
@@ -958,31 +976,30 @@ More than that tongue that more hath more expressed.
 
 I:shakespeare0024
 T:24
-TI:Mine eye hath play'd the painter and hath steeld
-TOC:24 (Mine eye hath play'd the painter and hath steeld)
-F:Mine eye hath play'd the painter and hath steeld
-N:1 steeld <i>skal måske være</i> stelld<br>3 'tis] ti's
+TI:Mine eye hath play'd the painter and hath stelld
+TOC:24 (Mine eye hath play'd the painter and hath stelld)
+F:Mine eye hath play'd the painter and hath stelld
 K:sonnet
 P:sonnets/sonnet-024.jpg%Facsimile
 
-Mine eye hath play'd the painter and hath steeld
+Mine eye hath play'd the painter and hath stelld<note>stelld] <i>Capell</i>; steeld <biblio>Q</biblio></note>
 Thy beauties forme in table of my heart;
-My body is the frame wherein 'tis held, 
+My body is the frame wherein ti's held,
 And perspectiue it is best Painters art;
 For through the Painter must you see his skill
-To finde where your true Image pictur'd lies, 
-Which in my bosomes shop is hanging stil, 
-That hath his windowes glazed with thine eyes: 
-Now see what good-turnes eyes for eies haue done, 
-Mine eyes haue drawne thy shape, and thine for me 
+To finde where your true Image pictur'd lies,
+Which in my bosomes shop is hanging stil,
+That hath his windowes glazed with thine eyes:
+Now see what good-turnes eyes for eies haue done,
+Mine eyes haue drawne thy shape, and thine for me
 Are windowes to my brest, where-through the Sun
 Delights to peepe, to gaze therein on thee;
-    Yet eyes this cunning want to grace their art:
+    Yet eyes this cunning want to grace their art,
     They draw but what they see, know not the hart.
 
 ---
 
-<resetnum>Mine eye hath played the painter and hath steeled
+<resetnum>Mine eye hath played the painter and hath stelled
 Thy beauty's form in table of my heart;
 My body is the frame wherein 'tis held,
 And perspective it is the painter's art;
@@ -990,11 +1007,11 @@ For through the painter must you see his skill
 To find where your true image pictured lies,
 Which in my bosom's shop is hanging still,
 That hath his windows glazed with thine eyes:
-Now see what good turns eyes for eyes have done:
+Now see what good turns eyes for eyes have done,
 Mine eyes have drawn thy shape, and thine for me
 Are windows to my breast, wherethrough the sun
 Delights to peep, to gaze therein on thee;
-    Yet eyes this cunning want to grace their art:
+    Yet eyes this cunning want to grace their art,
     They draw but what they see, know not the heart.
 
 I:shakespeare0025
@@ -1002,23 +1019,22 @@ T:25
 TI:Let those who are in fauor with their stars
 TOC:25 (Let those who are in fauor with their stars)
 F:Let those who are in fauor with their stars
-N:<i>Linie 9's</i> worth <i>rimer ikke med</i> quite <i>i linie 11, så udgivere har foreslået enten at ændre</i> worth <i>til</i> fight <i>eller</i> might, <i>eller at ændre</i> quite <i>til</i> forth.
 K:sonnet
 P:sonnets/sonnet-025.jpg%Facsimile
 
 Let those who are in fauor with their stars,
-Of publike honour and proud titles bost, 
+Of publike honour and proud titles bost,
 Whilst I whome fortune of such tryumph bars,
-Vnlookt for ioy in that I honour most; 
+Vnlookt for ioy in that I honour most;
 Great Princes fauorites their fair leaues spread
-But as the Marygold at the suns eye, 
-And in them-selues their pride lies buried, 
-For at a frowne they in their glory die. 
-The painefull warrier famosed for worth,
+But as the Marygold at the suns eye,
+And in them-selues their pride lies buried,
+For at a frowne they in their glory die.
+The painefull warrier famosed for fight,<note>fight] <i>Theobald conj.</i>; worth <biblio>Q</biblio>. <i>Linie 9's</i> worth <i>rimer ikke med</i> quite <i>i linie 11, som det ellers sømmer sig for rimpar, så udgivere har foreslået enten at ændre</i> worth <i>til</i> fight (<i>Theobald conj.</i>) <i>eller</i> might (<i>Capell</i>), <i>eller at ændre</i> quite <i>til</i> forth (<i>Theobald conj.</i>), <i>men det kan jo også tænkes at Shakespeare her havde glemt at rime, og så er enhver ændring kun en anmassende forskønnelse.</i>
 After a thousand victories once foild,
-Is from the booke of honour rased quite, 
-And all the rest forgot for which he toild: 
-    Then happy I that loue and am beloued 
+Is from the booke of honour rased quite,
+And all the rest forgot for which he toild:
+    Then happy I that loue and am beloued
     Where I may not remoue, nor be remoued.
 
 ---
@@ -1031,10 +1047,10 @@ Great princes' favourites their fair leaves spread
 But as the marigold at the sun's eye,
 And in themselves their pride lies buried,
 For at a frown they in their glory die.
-The painful warrior famoused for worth,
+The painful warrior famoused for fight,
 After a thousand victories once foiled,
 Is from the book of honour razed quite,
-And all the rest forgot for which he toil'd:
+And all the rest forgot for which he toiled:
     Then happy I that love and am beloved
     Where I may not remove, nor be removed.
 
@@ -1043,13 +1059,12 @@ T:26
 TI:Lord of my loue, to whome in vassalage
 TOC:26 (Lord of my loue, to whome in vassalage)
 F:Lord of my loue, to whome in vassalage
-N:12 thy] their
 K:sonnet
 P:sonnets/sonnet-026b.jpg%Facsimile
 
 Lord of my loue, to whome in vassalage 
 Thy merrit hath my dutie strongly knit; 
-To thee I send this written ambassage,
+To thee I send this written ambassage
 To witnesse duty, not to shew my wit;
 Duty so great, which wit so poore as mine 
 May make seeme bare, in wanting words to shew it; 
@@ -1057,16 +1072,16 @@ But that I hope some good conceipt of thine
 In thy soules thought (all naked) will bestow it: 
 Til whatsoeuer star that guides my mouing, 
 Points on me gratiously with faire aspect, 
-And puts apparrell on my tottered louing, 
-To show me worthy of thy sweet respect;
-    Then may I dare to boast how I doe loue thee;
-    Till then, not show my head where thou maist proue me.
+And puts apparrell on my tottered louing,
+To show me worthy of thy sweet respect;<note>thy] <i>Capell</i>; their <biblio>Q</biblio></note>
+    Then may I dare to boast how I doe loue thee,
+    Til then, not show my head where thou maist proue me.
 
 ---
 
 <resetnum>Lord of my love, to whom in vassalage
 Thy merit hath my duty strongly knit;
-To thee I send this written embassage,
+To thee I send this written embassage
 To witness duty, not to show my wit;
 Duty so great, which wit so poor as mine
 May make seem bare, in wanting words to show it;
@@ -1074,9 +1089,9 @@ But that I hope some good conceit of thine
 In thy soul's thought, all naked, will bestow it:
 Till whatsoever star that guides my moving
 Points on me graciously with fair aspect,
-And puts apparel on my tattered loving,
-To show me worthy of thy sweet respect; 
-    Then may I dare to boast how I do love thee;
+And puts apparel on my tottered loving,
+To show me worthy of thy sweet respect.
+    Then may I dare to boast how I do love thee,
     Till then, not show my head where thou mayst prove me.
 
 I:shakespeare0027
@@ -1084,12 +1099,11 @@ T:27
 TI:Weary with toyle, I hast me to my bed
 TOC:27 (Weary with toyle, I hast me to my bed)
 F:Weary with toyle, I hast me to my bed
-N:10 thy] their
 K:sonnet
 P:sonnets/sonnet-027.jpg%Facsimile
 
 Weary with toyle, I hast me to my bed,
-The deare repose for lims with trauail tired,
+The deare repose for lims with trauaill tired,
 But then begins a iourny in my head
 To worke my mind, when boddies work's expired:
 For then my thoughts (from far where I abide)
@@ -1097,9 +1111,9 @@ Intend a zelous pilgrimage to thee,
 And keepe my drooping eye-lids open wide,
 Looking on darknes which the blind doe see;
 Saue that my soules imaginary sight
-Presents thy shaddoe to my sightles view,
-Which like a iewell (hunge in gastly night) 
-Makes blacke night beautious, and her old face new:
+Presents thy shaddoe to my sightles view,<note>thy] <i>Capell</i>; their <biblio>Q</biblio></note>
+Which like a iewell hunge in gastly night<note>hunge ... night] <i>Capell</i>; (hunge ... night) <biblio>Q</biblio></note>
+Makes blacke night beautious, and her old face new.
     Loe thus by day my lims, by night my mind, 
     For thee, and for my selfe, noe quiet finde.
 
@@ -1116,7 +1130,7 @@ Looking on darkness which the blind do see;
 Save that my soul's imaginary sight
 Presents thy shadow to my sightless view,
 Which like a jewel hung in ghastly night
-Makes black night beauteous, and her old face new:
+Makes black night beauteous, and her old face new.
     Lo thus by day my limbs, by night my mind,
     For thee, and for myself, no quiet find.
 
@@ -1125,7 +1139,6 @@ T:28
 TI:How can I then returne in happy plight
 TOC:28 (How can I then returne in happy plight)
 F:How can I then returne in happy plight
-N:12 gild'st] guil'st
 K:sonnet
 P:sonnets/sonnet-028.jpg%Facsimile
 
@@ -1137,12 +1150,12 @@ And each (though enimes to ethers raigne)
 Doe in consent shake hands to torture me, 
 The one by toyle, the other to complaine 
 How far I toyle, still farther off from thee.
-I tell the Day to please him, thou art bright, 
+I tell the Day, to please him, thou art bright, 
 And do'st him grace when clouds doe blot the heauen;
 So flatter I the swart complexiond night, 
-When sparkling stars twire not thou gild'st th' eauen;
-    But day doth daily draw my sorrowes longer,
-    And night doth nightly make greefes length seeme stronger.
+When sparkling stars twire not thou gild'st the eauen.<note>gild'st] <i>Gildon</i>; guil'st <biblio>Q</biblio></note><note>the] <i>Sewell</i>; th' <biblio>Q</biblio></note>
+    But day doth daily draw my sorrowes longer,<note>longer ... length ... stronger] <biblio>Q</biblio>; longer ... strength ... stronger <i>Capell</i>; stronger ... length ... longer <i>Capell conj.</i></note>
+    And night doth nightly make greefes length seeme stronger.<note>greefes] <biblio>Q</biblio>; grief's <i>Gildon</i>; griefs' <biblio>Evans</biblio></note>
 
 ---
 
@@ -1154,10 +1167,10 @@ And each, though enemies to either's reign,
 Do in consent shake hands to torture me,
 The one by toil, the other to complain
 How far I toil, still farther off from thee.
-I tell the day to please him, thou art bright,
+I tell the day, to please him, thou art bright,
 And dost him grace when clouds do blot the heaven;
 So flatter I the swart-complexioned night,
-When sparkling stars twire not thou gild'st the even;
+When sparkling stars twire not thou gild'st the even.
     But day doth daily draw my sorrows longer,
     And night doth nightly make grief's length seem stronger.
 
@@ -1179,11 +1192,11 @@ Featur'd like him, like him with friends possest,
 Desiring this mans art, and that mans skope, 
 With what I most inioy contented least;
 Yet in these thoughts my selfe almost despising, 
-Haply I thinke on thee, and then my state, 
-(Like to the Larke at breake of daye arising) 
-From sullen earth sings himns at Heauens gate,
+Haply I thinke on thee, and then my state<note>state (Like ... arising ... earth)] <i><Malone/i>; state, (Like ... arising) ... earth <biblio>Q</biblio>; State, Like ... Lark, ... arising ... Earth <i>Gildon</i></note>
+(Like to the Larke at breake of daye arising
+From sullen earth) sings himns at Heauens gate,
     For thy sweet loue remembred such welth brings
-    That then I skorne to change my state with Kings.
+    That then I skorne to change my state with Kings.<note>Kings] <biblio>Q</biblio>; kings' <i>Wells</i></note>
 
 ---
 
@@ -1193,12 +1206,12 @@ And trouble deaf heaven with my bootless cries,
 And look upon myself and curse my fate,
 Wishing me like to one more rich in hope,
 Featured like him, like him with friends possessed,
-Desiring this man's art and that man's scope,
+Desiring this man's art, and that man's scope,
 With what I most enjoy contented least;
 Yet in these thoughts myself almost despising,
 Haply I think on thee, and then my state,
-Like to the lark at break of day arising,
-From sullen earth sings hymns at heaven's gate,
+Like to the lark at break of day arising
+From sullen earth, sings hymns at heaven's gate,
     For thy sweet love remembered such wealth brings
     That then I scorn to change my state with kings.
 
@@ -1211,18 +1224,18 @@ K:sonnet
 P:sonnets/sonnet-030.jpg%Facsimile
 
 When to the Sessions of sweet silent thought
-I summon vp remembrance of things past, 
-I sigh the lacke of many a thing I sought, 
-And with old woes new waile my deare times waste;
-Then can I drowne an eye (vn-vs'd to flow) 
-For precious friends hid in deaths dateles night, 
-And weepe afresh loues long since canceld woe, 
-And mone th'expence of many a vannisht sight. 
-Then can I greeue at greeuances fore-gon, 
-And heauily from woe to woe tell ore 
-The sad account of fore-bemoned mone, 
+I summon vp remembrance of things past,
+I sigh the lacke of many a thing I sought,
+And with old woes new waile my deare times waste;<note>times] <biblio>Q</biblio>; time's <i>Gildon</i>; times' <i>Dyce</i></note>
+Then can I drowne an eye (vn-vs'd to flow)
+For precious friends hid in deaths dateles night,
+And weepe a fresh loues long since canceld woe,
+And mone th'expence of many a vannisht sight.
+Then can I greeue at greeuances fore-gon,
+And heauily from woe to woe tell ore
+The sad account of fore-bemoned mone,
 Which I new pay as if not payd before.
-    But if the while I thinke on thee (deare friend) 
+    But if the while I thinke on thee (deare friend)
     All losses are restord, and sorrowes end.
 
 ---
@@ -1238,7 +1251,7 @@ And moan th'expense of many a vanished sight.
 Then can I grieve at grievances foregone,
 And heavily from woe to woe tell o'er
 The sad account of fore-bemoaned moan,
-Which I new pay, as if not paid before.
+Which I new pay as if not paid before.
     But if the while I think on thee, dear friend,
     All losses are restored, and sorrows end.
 
@@ -4710,18 +4723,32 @@ To put fair truth upon so foul a face?
 
 I:shakespeare0138
 T:138
-TI:
-TOC:
-F:When my love swears that she is made of truth
+TI:When my loue sweares that she is made of truth
+TOC:138 (When my loue sweares that she is made of truth)
+F:When my loue sweares that she is made of truth
+N:<i>Sonnet 138 og 144 blev oprindeligt udgivet i 1599 som de to første digte af</i> The Passionate Pilgrime, <i>altså ti år før</i> <biblio>Q</biblio>. <i>Teksten er her nøjagtigt gengivet fra første udgave, mens faksimilen er taget fra anden udgave (også 1599); afvigelserne de to udgaver imellem er ubetydelige, bortset fra l. 11.</i>
 K:sonnet
 
-
-
+When my loue sweares that she is made of truth,
+I do beleeue her though I know she lyes,
+That she might thinke me some vntuterd youth,
+Vnlearned in the worlds false subtilties.
+Thus vainely thinking that she thinkes me young,
+Although she knowes my dayes are past the best,
+Simply I credit her false speaking tongue,
+On both sides thus is simple truth supprest:
+But wherefore sayes she not she is vniust?
+And wherefore say not I that I am old?
+O loues best habit is in seeming trust,
+And age in loue, loues not t'haue yeares told.
+    Therefore I lye with her, and she with me,
+    And in our faults by lyes we flattered be.
+ 
 ---
 
 <resetnum>When my love swears that she is made of truth,
 I do believe her, though I know she lies,
-That she might think me some untutored youth
+That she might think me some untutored youth,
 Unlearned in the world's false subtleties.
 Thus vainly thinking that she thinks me young,
 Although she knows my days are past the best,
@@ -4730,9 +4757,28 @@ On both sides thus is simple truth suppressed.
 But wherefore says she not she is unjust?
 And wherefore say not I that I am old?
 O love's best habit is in seeming trust,
-And age in love loves not t' have years told:
+And age in love loves not t'have years told:
     Therefore I lie with her, and she with me,
     And in our faults by lies we flattered be.
+
+---
+
+<nonum>[The Passionate Pilgrime (1599), I]</nonum>
+
+<resetnum>When my Loue sweares that she is made of truth,
+I do beleeue her (though I know she lies) 
+That she might thinke me some vntutor'd youth,
+Vnskilful in the worlds false forgeries. 
+Thus vainly thinking that she thinkes me young, 
+Although I know my yeares be past the best: 
+I smiling, credite her false speaking toung, 
+Outfacing faults in loue, with loues ill rest. 
+But wherefore sayes my loue that she is young? 
+And wherefore say not I, that I am old:
+O, Loues best habit's in a soothing toung, 
+And Age in Loue, loues not to haue yeares told. 
+    Therfore I'le lye with Loue, and loue with me, 
+    Since that our faultes in loue thus smother'd be.
 
 I:shakespeare0139
 T:139
@@ -4871,7 +4917,20 @@ TOC:
 F:Two loves I have, of comfort and despair
 K:sonnet
 
-
+Two loues I haue of comfort and dispaire,
+Which like two spirits do sugiest me still,
+The better angell is a man right faire:
+The worser spirit a woman collour'd il.
+To win me soone to hell my femall euill,
+Tempteth my better angel from my sight,
+And would corrupt my saint to be a diuel:
+Wooing his purity with her fowle pride.
+And whether that my angel be turn'd finde,
+Suspect I may, yet not directly tell,
+But being both from me both to each friend,
+I gesse one angel in an others hel.
+    Yet this shal I nere know but liue in doubt,
+    Till my bad angel fire my good one out.
 
 ---
 
@@ -4889,6 +4948,28 @@ But being both from me both to each friend,
 I guess one angel in another's hell.
     Yet this shall I ne'er know, but live in doubt,
     Till my bad angel fire my good one out.
+
+---
+
+<nonum>[The Passionate Pilgrime (1599), I]</nonum>
+
+<resetnum>Two loues I haue, of Comfort and Despaire,
+That like two Spirits, do suggest me still:
+My better Angell, is a Man (right faire)
+My worser spirite a Woman (colour'd ill.)
+To win me soone to hell, my Female euill
+Tempteth my better Angell from my side:
+And would corrupt my Saint to be a Diuell,
+Wooing his puritie with her faire pride.
+And whether that my Angell be turnde feend,
+Suspect I may (yet not directly tell:)
+For being both to me: both, to each friend,
+I ghesse one Angell in anothers hell:
+    The truth I shall not know, but liue in dout,
+    Till my bad Angell fire my good one out.
+
+
+
 
 I:shakespeare0145
 T:145
