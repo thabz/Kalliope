@@ -28,7 +28,7 @@ use Kalliope::Page;
 use strict;
 
 my $page = new Kalliope::Page (
-		title => 'Velkommen - og undskyld byggerodet!',
+		title => 'Velkommen til den totalt fede webstil!',
                 pagegroup => 'welcome',
                 page => 'news',
            );
