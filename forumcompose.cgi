@@ -70,7 +70,7 @@ E-mail:<BR>
 Emne:<BR>
 <INPUT STYLE="width:100%;" WIDTH=40 TYPE="text" NAME="subject" VALUE="$subject"><BR><BR>
 Besked:<BR>
-<TEXTAREA NAME="content" ROWS=15 STYLE="width:100%;"></TEXTAREA><BR><BR>
+<TEXTAREA WRAP="virtual" NAME="content" COLS=10 ROWS=15 STYLE="width:100%;"></TEXTAREA><BR><BR>
 <INPUT TYPE="hidden" NAME="parentid" VALUE="$parentId">
 <INPUT TYPE="hidden" NAME="threadid" VALUE="$threadId">
 <INPUT TYPE="hidden" NAME="posted" VALUE="1">
