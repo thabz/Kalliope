@@ -66,6 +66,7 @@ sub content {
 
 sub contentAsHTML {
     my $HTML = shift->content;
+    $HTML =~ s/^>+(.*)\n/<div style="color: #808080; margin: 0px; padding: 0 0 0 10px">$1<\/div>/gm;
     $HTML =~ s/\n/<BR>/g;
     return $HTML;
 }
