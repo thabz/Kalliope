@@ -136,11 +136,10 @@ sub insertIntoDB {
 
     # Set thread_id if first post of thread
     unless ($self->{'parent'}) {
-        $sth = $dbh->prepare("SELECT LAST_INSERT_ID() FROM forum");
-	$sth->execute;
-	my ($id) = $sth->fetchrow_array;
+	my $id = Kalliope::DB::getLastInsertId($dbh,"forum");
 	$sth = $dbh->prepare("UPDATE forum SET thread_id = id WHERE id = ?");
 	$sth->execute($id);
+	$sth->finish();
     }
 
     # Update activity in first post of thread

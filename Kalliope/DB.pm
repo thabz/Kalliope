@@ -44,4 +44,13 @@ sub connect_error {
     exit;
 }
 
+sub getLastInsertId {
+    my ($dbh,$table) = @_;
+    my $sth = $dbh->prepare_cached("SELECT LAST_INSERT_ID() FROM $table");
+    $sth->execute();
+    my ($id) = $sth->fetchrow_array();
+    $sth->finish();
+    return $id;
+}
+
 1;

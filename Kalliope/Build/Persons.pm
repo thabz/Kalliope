@@ -108,7 +108,6 @@ sub insert {
     my %persons = @_;
 
     my %fhandle2fid;
-    my $lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM fnavne");
     my $rc = $dbh->prepare("INSERT INTO fnavne (fhandle,fornavn,efternavn,foedt,doed,sprog,cols,thumb,pics,biotext,bio,links,sekundaer,primaer,vaerker,vers,prosa) VALUES (?,?,?,?, ?,?,?,?,?,?,?,?,?,?,?,?,?)");
     
     foreach my $fhandle (keys %persons) { 
@@ -174,8 +173,7 @@ sub insert {
 	}   
 
         $rc->execute($fhandle,$person->{'firstname'},$person->{'lastname'},$person->{'born'} || '',$person->{'dead'} || '',$person->{'lang'},$fcols,$fthumb,$fpics,$biotext,$fbio,$flinks,$fsekundaer,$fprimaer,$fvaerkerindhold,$fvaerker,$fprosa);
-	$lastinsertsth->execute();
-	my ($lastid) = $lastinsertsth->fetchrow_array;
+	my $lastid = Kalliope::DB::getLastInsertId($dbh,"fnavne");
         $fhandle2fid{$fhandle} = $lastid;
 	foreach (@keys) {
 #	    &insertkeywordrelation($_,$lastid,'biografi');

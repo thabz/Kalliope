@@ -166,7 +166,6 @@ $rc = $dbh->do("CREATE TABLE vaerker (
 
 $sth = $dbh->prepare("SELECT * FROM fnavne");
 $sth->execute;
-$lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM vaerker");
 $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywords.id = keywords_relation.keywordid AND keywords_relation.otherid = ? AND keywords_relation.othertype = 'biografi'");
 $sth2= $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle,titel,underoverskrift,aar,type,findes,noter,pics,quality,lang,status,cvstimestamp) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 print "Antal forfattere: ".$sth->rows."\n";
@@ -232,8 +231,7 @@ while ($fn = $sth->fetchrow_hashref) {
 	            $subtitle,$aar,
 		    $type,$findes,$noter,$pics,$quality,$fn->{'sprog'},
 		    $status,$cvsdate);
-            $lastinsertsth->execute;
-	    ($lastid) = $lastinsertsth->fetchrow_array;
+	    $lastid = Kalliope::DB::getLastInsertId($dbh,"vaerker");
 	    foreach (@keys) {
 		&insertkeywordrelation($_,$lastid,'vaerk');
 	    }
@@ -302,7 +300,6 @@ $rc = $dbh->do("CREATE TABLE digte (
 # afsnit i digtsamliner betegnes med afsnit=1. Afsnittets titel ligger i titel.
 #
 $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywords.id = keywords_relation.keywordid AND keywords_relation.otherid = ? AND keywords_relation.othertype = 'vaerk'");
-$lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM digte");
 $sth = $dbh->prepare("SELECT * FROM vaerker WHERE findes=1");
 $sthafs = $dbh->prepare("INSERT INTO digte (fid,vid,titel,toctitel,vaerkpos,afsnit) VALUES (?,?,?,?,?,?)");
 $sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,foerstelinie,underoverskrift,indhold,noter,pics,afsnit,layouttype,haystack,createtime,quality,lang) VALUES (?,?,?,?,?,?,?,?,?,?,?,0,?,?,?,?,?)");
@@ -489,8 +486,7 @@ sub insertdigt {
     $toctitel = '';
     @pics = ();
     @qualities = ();
-    $lastinsertsth->execute();	
-    ($mymylastid) = $lastinsertsth->fetchrow_array;
+    $mymylastid = Kalliope::DB::getLastInsertId($dbh,"digte");
     foreach (@mykeys) {
 	&insertkeywordrelation($_,$mymylastid,'digt');
    }
