@@ -22,8 +22,7 @@
 
 package Kalliope::Build::Dict;
 
-use XML::DOM;
-require Unicode::String;
+use XML::Twig;
 use Kalliope::DB;
 use Kalliope::Date;
 use Kalliope::Poem;
@@ -33,23 +32,21 @@ my $dbh = Kalliope::DB::connect();
 
 sub parse {
     my $filename = shift;
-    my $parser = new XML::DOM::Parser;
-    my $doc = $parser->parsefile($filename);
-
     my %dict;
-    my $entries = $doc->getElementsByTagName('entry');
-    my $n = $entries ->getLength;
+
+    my $twig = new XML::Twig(keep_encoding => 1);
+    $twig->parsefile($filename);
+    foreach my $entry ($twig->root->children('entry')) {
 
     my $lastOK;
-    for (my $i = 0; $i < $n; $i++) {
+    
 	my $p;
-	my $entry = $entries ->item($i);
 	my %dentry;
 
-	$dentry{'id'} = $entry->getAttribute('id');
+	$dentry{'id'} = $entry->{'att'}->{'id'};
 
-	if ($entry->getElementsByTagName('ord')->item(0)) {
-	    $dentry{'ord'} = Unicode::String::utf8($entry->getElementsByTagName('ord')->item(0)->getFirstChild->getNodeValue)->latin1;
+	if ($entry->first_child('ord')) {
+	    $dentry{'ord'} = $entry->first_child('ord')->text;
 	    $lastOK = $dentry{'ord'};
 	} else {
 	    print $lastOK;
@@ -58,31 +55,25 @@ sub parse {
 
 	$dentry{'forkl'} = '';
 
-	if ($entry->getElementsByTagName('frase')->item(0)) {
-	    $dentry{'forkl'} .= '<span style="color: #808080">('.Unicode::String::utf8(
-			$entry->getElementsByTagName('frase')->item(0)->toString)->latin1.
-		    ')</span> ';
+	if ($entry->first_child('frase')) {
+	    $dentry{'forkl'} .= '<span style="color: #808080">('.$entry->first_child('frase')->text.')</span> ';
 	}
 
-	if ($entry->getElementsByTagName('forkl')->item(0)) {
-	    $dentry{'forkl'} .= Unicode::String::utf8($entry->getElementsByTagName('forkl')->item(0)->toString)->latin1;
+	if ($entry->first_child('forkl')->text) {
+	    $dentry{'forkl'} .= $entry->first_child('forkl')->text;
 	} else {
 	}
 
 	addToDict(\%dentry);
 
-	if ($entry->getElementsByTagName('var')->item(0)) {
-	    my $vars = $entry->getElementsByTagName('var');
-	    my $nn = $vars->getLength;
-	    for (my $j = 0; $j < $nn; $j++) {
+	foreach my $var ($entry->children('var')) {
 		my %dentryVar;
-		my $var = Unicode::String::utf8($vars->item($j)->getFirstChild->getNodeValue)->latin1;
-		$dentryVar{'id'} = $dentry{'ord'}.$var;
-		$dentryVar{'ord'} = $var;
+		$dentryVar{'id'} = $dentry{'ord'}.$var->text;
+		$dentryVar{'ord'} = $var->text;
 		$dentryVar{'forkl'} = 'Se <A CLASS="green" HREF="dict.cgi?wid='.$dentry{'id'}.'">'.
 		    $dentry{'ord'}.'</A>';
 		addToDict(\%dentryVar);
-	    }
+		
 	}
     }
     return %dict;
