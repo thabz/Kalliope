@@ -25,6 +25,7 @@ package Kalliope::Timeline;
 use Kalliope;
 use Kalliope::Date;
 use Kalliope::DB;
+use Kalliope::Timeline::Event;
 
 sub getEventsGivenMonthAndDay {
     my ($month,$day) = @_;
@@ -32,11 +33,11 @@ sub getEventsGivenMonthAndDay {
     my $dbh = Kalliope::DB::connect();
     my $sth = $dbh->prepare("SELECT * FROM timeline WHERE type = 'event' AND month = ? AND day = ?");
     $sth->execute($month,$day);
-    my %result;
+    my @result;
     while (my $h = $sth->fetchrow_hashref) {
-        $result{$$h{'year'}} = $$h{'description'};
+        push @result,new Kalliope::Timeline::Event($h);
     }
-    return %result;
+    return @result;
 }
 
 sub getEventsGivenMonthAndDayAsHTML {
@@ -45,12 +46,13 @@ sub getEventsGivenMonthAndDayAsHTML {
 	(undef,undef,undef,$day,$month,undef,undef,undef,undef)=localtime(time);
 	$month++;
     }
-    my %events = Kalliope::Timeline::getEventsGivenMonthAndDay($month,$day);
+    my @events = Kalliope::Timeline::getEventsGivenMonthAndDay($month,$day);
 
     my $HTML;
-    foreach my $year (sort keys %events) {
-        my $text = $events{$year};
+    foreach my $event (@events) {
+        my $text = $event->getText;
 	Kalliope::buildhrefs(\$text);
+	my $year = $event->getYear;
 	$HTML .= qq|<TR><TD CLASS="blue" VALIGN="top">$year</TD><TD>$text</TD></TR>|;
     }
     $HTML = qq|<TABLE>$HTML</TABLE>| if $HTML;
@@ -66,8 +68,7 @@ sub getHistoryInTimeSpan {
     $sth->execute($beginYear,$endYear);
     my @result;
     while (my $h = $sth->fetchrow_hashref) {
-        push @result,{year => $$h{'year'},
-	              descr => $$h{'description'}}
+        push @result,new Kalliope::Timeline::Event($h);
     }
     return @result;
 }
@@ -79,8 +80,7 @@ sub getEventsInYear {
     $sth->execute($year);
     my @result;
     while (my $h = $sth->fetchrow_hashref) {
-        push @result,{year => $$h{'year'},
-	              descr => $$h{'description'}}
+        push @result,new Kalliope::Timeline::Event($h);
     }
     return @result;
 }
@@ -93,8 +93,7 @@ sub getEventsForPerson {
     $sth->execute($fid);
     my @result;
     while (my $h = $sth->fetchrow_hashref) {
-        push @result,{year => $$h{'year'},
-	              descr => $$h{'description'}}
+        push @result,new Kalliope::Timeline::Event($h);
     }
     return @result;
 }
