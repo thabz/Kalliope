@@ -209,7 +209,13 @@ sub _contentAsPoemHTML {
 	};
 	$line =~ s/^(\s+)/_nbsp($1)/e;
 	$result .= '<tr><td style="font-size: 9pt; color: #808080; text-align: left">'.$dispNum.'</td>';
-	$result .= qq|<td style="white-space: nowrap" nowrap>$line </td>\n|;
+	if ($line =~ /<wrap>/i) {
+	    $line =~ s/<wrap>//g;
+	    $line =~ s/<\/wrap>//g;
+	    $result .= qq|<td>$line </td>\n|;
+	} else {
+	    $result .= qq|<td style="white-space: nowrap" nowrap>$line </td>\n|;
+	}
 	$result .= '</tr>';
     }
     return $result.'</table>';
@@ -233,8 +239,8 @@ sub _resolveTags {
     $txt =~ s/<\/w>/<\/span>/gi;
     $txt =~ s/<sc>/<span style="font-variant: small-caps">/g;
     $txt =~ s/<\/sc>/<\/span>/g;
-    $txt =~ s/<wrap>/<div style="white-space: normal; text-align: justify">/gi;
-    $txt =~ s/<\/wrap>/<\/div>/gi;
+#    $txt =~ s/<wrap>/<div style="white-space: normal; text-align: justify">/gi;
+#    $txt =~ s/<\/wrap>/<\/div>/gi;
     $txt =~ s/<s>/<small>/gi;
     $txt =~ s/<\/s>/<\/small>/gi;
     $txt =~ s/,,/&bdquo;/g;
