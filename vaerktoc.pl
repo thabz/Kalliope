@@ -35,8 +35,10 @@ my $dbh = Kalliope::DB->connect;
 my $fhandle = url_param('fhandle');
 my $vhandle = url_param('vhandle');
 
-my $poet = new Kalliope::Person ( fhandle => $fhandle);
-my $work = new Kalliope::Work ( vid => "$fhandle/$vhandle");
+my $vid = $vhandle ? "$fhandle/$vhandle" : url_param('vid');
+
+my $work = new Kalliope::Work ( vid => $vid);
+my $poet = $work->author;
 
 my @crumbs;
 push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
@@ -197,7 +199,7 @@ sub _renderSection {
 	} else {
 	    my $link = qq|$anchor<a href="digt.pl?longdid=$$d{longdid}">$tit</a>|;
 	    if ($num) {
-		$HTML .= qq(<td class="tocnum">$num</td><td>$link</td></tr>\n);
+		$HTML .= qq(<td class="tocnum" nowrap>$num</td><td>$link</td></tr>\n);
 	    } else {
 		$HTML .= qq(<td colspan="2">$link</td></tr>\n);
 	    }
