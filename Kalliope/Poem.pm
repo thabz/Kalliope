@@ -182,7 +182,7 @@ sub _contentAsPoemHTML {
     foreach my $line (split /\n/,$self->{'indhold'}) {
 	my $lineForTjek = $line;
 	$lineForTjek =~ s/<[^>]+>//g;
-	if (   $lineForTjek =~ /[^ _\t]/
+	if (   $lineForTjek =~ /[^ _\t\-]/
 		&& $lineForTjek !~ /^ *\d+\.? *$/
 		&& $line !~ /<nonum>/
 		&& $lineForTjek !~ /^[ \t]*[IVXLMD]+\.? *$/)
