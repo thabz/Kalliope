@@ -329,7 +329,11 @@ $sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,foe
 $sth->execute;
 print "  Ikke tomme: ".$sth->rows."\n";
 
+my $counterMax = $sth->rows;
+my $counter = 1;
 while ($v = $sth->fetchrow_hashref) {
+    print sprintf("[%3d/%3d]",$counter++,$counterMax);
+    print ' '.$v->{'titel'}."\n";
     $fdir = "../fdirs/".$v->{'fhandle'}."/";
     open(IN,$fdir.$v->{'vhandle'}.".txt") || die "Argh! ".$fdir.$v->{'vhandle'}.'.txt ikke fundet!';
     $i=0;
