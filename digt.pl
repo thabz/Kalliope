@@ -131,7 +131,7 @@ if ($poem->hasPics) {
 
 my $workTitle = $work->titleWithYear;
 
-$page->addBox( width =>'100%',
+$page->addBox( width =>'150',
 	       coloumn => 0,
                title => 'Indhold',
 	       theme => 'dark',
