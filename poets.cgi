@@ -246,7 +246,7 @@ sub listpop {
     $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Navn</TH><TH ALIGN="right">Hits</TH><TH ALIGN="right">Senest</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
 	$HTML .= '<TR><TD>'.$i++.'.</TD>';
-	$HTML .= '<TD><A HREF="fvaerker.pl?'.$h->{fhandle}.'?'.$LA.'">'.$h->{fornavn}.' '.$h->{efternavn}.'<FONT COLOR=#808080> ('.$h->{foedt}.'-'.$h->{doed}.')</FONT></A></TD>';
+	$HTML .= '<TD><A HREF="ffront.cgi?fhandle='.$h->{fhandle}.'">'.$h->{fornavn}.' '.$h->{efternavn}.'<FONT COLOR=#808080> ('.$h->{foedt}.'-'.$h->{doed}.')</FONT></A></TD>';
 	$HTML .= '<TD ALIGN=right>'.$h->{'hits'}.'</TD>';
 	$HTML .= '<TD ALIGN=right>'.Kalliope::shortdate($h->{'lasttime'}).'</TD>';
 	$total += $h->{'hits'};
