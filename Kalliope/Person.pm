@@ -53,6 +53,10 @@ sub fid {
     return $_[0]->{'fid'};
 }
 
+sub hasPoems {
+    return shift->{'vers'};
+}
+
 sub lang {
     return shift->{'sprog'};
 }
