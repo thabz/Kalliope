@@ -289,12 +289,13 @@ sub langSelector {
     my $HTML;
     my %titles = ( dk => 'danske',
                    uk => 'engelske',
+                   us => 'amerikanske',
 		   de => 'tyske',
 		   fr => 'franske',
 		   se => 'svenske',
 		   no => 'norske' );
     my $url = $self->{'changelangurl'};
-    foreach my $lang ('dk','uk','de','fr','se','no') {
+    foreach my $lang ('dk','uk','de','fr','se','no','us') {
        my $refURL = $url;
        $refURL =~ s/sprog=../sprog=$lang/;
        my $img = $lang eq $selfLang ? "${lang}select.gif" : "$lang.gif";
