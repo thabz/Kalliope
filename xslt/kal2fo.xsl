@@ -185,11 +185,25 @@
     </fo:block>
   </xsl:template>
 
-  <xsl:template match="i"><!-- proper names -->
+  <xsl:template match="i">
     <fo:inline font-style="italic">
       <xsl:apply-templates/>
     </fo:inline>
   </xsl:template>
+
+  <xsl:template match="footnote">
+    <fo:footnote>
+      <fo:inline font-size="10pt" vertical-align="super"><xsl:number level="any" from="poem" format="1"/></fo:inline> 
+    
+      <fo:footnote-body>
+        <fo:block font-size="10pt">
+	  <xsl:number level="any" from="poem" format="1. "/>
+          <xsl:apply-templates/>
+        </fo:block>
+      </fo:footnote-body>   
+    </fo:footnote>
+  </xsl:template>
+  
 
 </xsl:stylesheet>
 
