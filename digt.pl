@@ -84,7 +84,7 @@ if (defined param('korrektur')) {
     $smtp->data("From: Kalliope <$MAILTAINER_EMAIL>\r\n".
 	    "To: $MAILTAINER_EMAIL\r\n".
 	    "Date: ".localtime(time)."\r\n".
- 	    "Subject: Korrektur $longdid\r\n".
+ 	    "Subject: [Korrektur] $longdid\r\n".
 	    "\r\n".$mailBody."\r\n");
     $smtp->quit;
 }
