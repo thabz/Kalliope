@@ -38,7 +38,10 @@ my @crumbs;
 push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 
-my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
+my $page = newAuthor Kalliope::Page (
+	                page => 'forside',
+                  	poet => $poet,
+		       	crumbs => \@crumbs );
 
 
 #

@@ -204,6 +204,9 @@ sub menu {
     my $self = shift;
     my $page = shift;
     my %menuStruct = (
+       forside => { url => 'ffront.cgi?', 
+                    title => 'Forside', 
+                    status => 1 },
        vaerker => { url => 'fvaerker.pl?', 
                     title => 'Værker', 
                     status => $self->hasWorks },
@@ -237,7 +240,7 @@ sub menu {
        sekundaer => { url => 'fsekundaer.pl?mode=s&', 
                     title => 'Sekundær', 
 		    status => $self->{'sekundaer'} } );
-    my @keys = qw/vaerker titlelines firstlines popular prosa pics bio samtidige links primaer sekundaer/;
+    my @keys = qw/forside vaerker titlelines firstlines popular prosa pics bio samtidige links primaer sekundaer/;
     my $HTML;
     my @itemsHTML;
     foreach my $key (@keys) {
