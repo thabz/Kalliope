@@ -31,6 +31,16 @@ use strict;
 
 my $dbh = Kalliope::DB->connect;
 
+# Spring direkte til digt, hvis needle er et digt-id
+my $needle = CGI::param('needle');
+if (Kalliope::Poem::exist(CGI::param('needle'))) {
+    print "Location: digt.pl?longdid=".CGI::param('needle')."\n\n";
+    exit;
+}
+
+
+
+#
 my $search = new Kalliope::Search(lang => CGI::param('sprog') || '',
                                   type => CGI::param('type') || '',
                                   offset => CGI::param('offset') || 0,
