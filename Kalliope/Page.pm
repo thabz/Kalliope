@@ -224,7 +224,7 @@ EOF
     print '<TABLE HEIGHT="100%" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0>';
     
     if (my $crumbs = $self->_constructBreadcrumbs) {
-        print '<TR><TD COLSPAN=2>';
+        print '<TR><TD COLSPAN=3>';
 	print '<DIV STYLE="background-color: #e0e0e0; padding: 1px">';
 	print $crumbs;
 	print '</DIV>';
@@ -232,8 +232,9 @@ EOF
     }
 
     # Head
-    print '<TR><TD COLSPAN=2 VALIGN="top">';
-    print '<TABLE HEIGHT="100%" BGCOLOR="black" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
+    print '<TR><TD HEIGHT=70 BGCOLOR="blue" COLSPAN=3 VALIGN="top">';
+
+    print '<TABLE BGCOLOR="black" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
     print '<TD ROWSPAN=2><IMG SRC="gfx/trans1x1.gif" HEIGHT=70 WIDTH=1></TD>';
     print '<TD WIDTH="100%" CLASS="maintitle">'.$self->titleAsHTML.'</TD>';
     print '<TD ROWSPAN=2 VALIGN="top">'.$self->thumbIMG.'</TD></TR>';
@@ -257,14 +258,19 @@ EOF
         }
     }
     print '</TR></TABLE>';
-    print '</TD></TR>';
+    print '</TD>';
+
+    print '<TD BGCOLOR="black">';
+#    print '<IMG SRC="gfx/trans1x1.gif" WIDTH=30 HEIGHT=1>';
+    print '</TD>';
+    print '</TR>';
 
     # Foot
-    print '<TR><TD COLSPAN=2 HEIGHT="40" BGCOLOR="black">';
+    print '<TR><TD COLSPAN=3 HEIGHT="40" BGCOLOR="black">';
 
-    print '<TABLE><TR><TD>';
+    print '<TABLE><TR><TD VALIGN="middle">';
     print $self->langSelector;
-    print '</TD><TD>';
+    print '</TD><TD VALIGN="middle">';
     print '<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT STYLE="width: 80px" NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><BR><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free"></FORM>';
     print '</TD></TR></TABLE>';
 
