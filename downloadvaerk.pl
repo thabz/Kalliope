@@ -84,30 +84,30 @@ EOS
     print "Her kommer tekst versionen";
 } elsif ($outputtype eq 'Printer') {
     print "Content-type: text/html\n\n";
-    print '<HTML><HEAD><TITLE>'.$vtitel.'</TITLE></HEAD>';
-    print '<BODY BGCOLOR=white>';
+    print "<HTML><HEAD><TITLE>$vtitel</TITLE></HEAD>\n";
+    print "<BODY BGCOLOR=white>\n";
     print "<H1>$ffornavn $fefternavn: <I>$vtitel</I>";
     print " ($vaar)" if ($vaar ne '?');
     print '</H1>';
-    print "<BR>";
+    print "<BR>\n";
     while($d = $sth->fetchrow_hashref) {
 	if ($d->{afsnit}) {
-	    print "<H2>".$d->{titel}."</H2>\n";
+	    print "\n<H2>".$d->{titel}."</H2>\n";
 	} else {
 	    $d->{indhold} =~ s/\n+$/\n/;
 	    if ($d->{type} ne 'p') {
 		$d->{indhold} =~ s/ /&nbsp;/g;
 	    }
 
-	    print "<H3>".$d->{titel}."</H3>\n";
+	    print "\n<H3>".$d->{titel}."</H3>\n";
 	    $d->{'underoverskrift'} =~ s/\n/<BR>/g;
-	    print "<FONT SIZE=-1>".$d->{underoverskrift}."</FONT><BR><BR><BR>" if $d->{underoverskrift};
-	    $d->{'indhold'} =~ s/\n/<BR>/g;
+	    print "\n<FONT SIZE=-1>".$d->{underoverskrift}."</FONT><BR><BR><BR>\n" if $d->{underoverskrift};
+	    $d->{'indhold'} =~ s/(\n)/<BR>$1/g;
 	    print $d->{indhold};
-	    print '<BR><BR><BR>';
+	    print "<BR><BR><BR>\n";
 	}
     }
-    print "</BODY></HTML>";
+    print "\n\n</BODY></HTML>";
 } elsif ($outputtype eq 'PRC') {
     # PalmOS doc format
     print "Content-type: text/plain\n\n";
