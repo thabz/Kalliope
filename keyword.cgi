@@ -50,7 +50,7 @@ if (!$keywordid) {
 		title => 'Nøgleord',
                 lang => $LA,
                 pagegroup => 'history',
-                thumb => 'gfx/sundial_100.GIF',
+                thumb => 'gfx/icons/keywords-h70.gif',
                 page => 'keyword' );
     $page->addBox ( title => 'Fejl...',
                     width => "75%",
@@ -66,6 +66,7 @@ if (!$keywordid) {
 		title => $keyword->title,
                 pagegroup => 'history',
                 page => 'keyword',
+                thumb => 'gfx/icons/keywords-h70.gif',
                 lang => $LA,
                 crumbs => \@crumbs );
 

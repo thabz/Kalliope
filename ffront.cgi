@@ -70,12 +70,12 @@ my %menuStruct = (
 	title => 'Populære digte', 
 	status => $poet->{'vaerker'},
         desc => "Top-10 over mest læste $poetName digte i Kalliope",
-        icon => 'gfx/heart.gif'
+        icon => 'gfx/icons/pop-h48.gif'
                     },
 	prosa     => { url => 'fprosa.pl?', 
 	title => 'Prosa', 
 	status => $poet->{'prosa'},
-        icon => 'gfx/books_40.GIF'
+        icon => 'gfx/icons/works-h48.gif'
                     },
 	pics      => { url => 'fpics.pl?', 
 	title => 'Portrætter', 

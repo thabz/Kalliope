@@ -325,7 +325,7 @@ sub menuStructs {
     my %menuStructs = (
          'welcome' => {'menuTitle' => '',
                        'url' => 'index.cgi',
-                       'pages' => ['news','about','tak','musen','stats']
+                       'pages' => ['news','about','tak','musen']
                        },
          'poets'    => {menuTitle => 'Digtere',
                        url => 'poets.cgi?list=az&sprog='.$lang,
@@ -345,6 +345,7 @@ sub menuStructs {
                        pages => ['poemtitles','poem1stlines','poempopular','latest']
                        },
          'history' => {menuTitle => 'Nøgleord',
+		       icon => 'gfx/icons/keywords-w64.gif',
                        url => 'keywordtoc.cgi?sprog='.$lang,
                        pages => ['keywordtoc','timeline','keyword']
                        },

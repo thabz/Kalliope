@@ -37,7 +37,7 @@ my $page = new Kalliope::Page (
                 pagegroup => 'history',
                 lang => $LA,
                 page => 'keywordtoc',
-                thumb => 'gfx/sundial_100.GIF',
+                thumb => 'gfx/icons/keywords-h70.gif',
                 crumbs => \@crumbs );
 
 my @blocks= ();

@@ -53,15 +53,15 @@ if ($#works >= 0) {
     foreach my $work (@works) {
 	$HTML .= '<TR><TD>';
 	if ($work->hasContent) {
-	    my $iconfile = $work->status eq 'complete' ? 'book_40.GIF' : 'icons/incomplete-h48.gif';
+	    my $iconfile = $work->status eq 'complete' ? 'icons/book-h48.gif' : 'icons/incomplete-h48.gif';
 	    $HTML .= '<A HREF="vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle.'">';
 	    $HTML .= qq|<IMG HEIGHT=48 ALT="" BORDER=0 
 		        SRC="gfx/$iconfile" VALIGN="middle"></A>
 		        </TD><TD>|;
 	    $HTML .= '<A HREF="vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle.'"><FONT COLOR="black">';
 	} else {
-	    my $iconfilena =  'book_40_high.GIF';
-	    $HTML .= qq|<IMG HEIGHT=40 WIDTH=27 ALT="" BORDER=0  
+	    my $iconfilena =  'icons/book-na-h48.gif';
+	    $HTML .= qq|<IMG HEIGHT=48 ALT="" BORDER=0  
 		SRC="gfx/$iconfilena" VALIGN="center">
 		</TD><TD><FONT COLOR="#808080">|;
 	}
