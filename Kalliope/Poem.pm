@@ -230,6 +230,11 @@ sub _contentAsPoemHTML {
 	    $align = 'center';
 	    $line =~ s/<\/?center>//g;
 	}
+	if ($line =~ /<right>/) {
+	    $align = 'right';
+	    $line =~ s/<\/?right>//g;
+	}
+
 	$line =~ s/<\/?nonum>//gi;
 
 	if ($lineForTjek =~ /^ *(\-\-\-\-*) *$/) {
