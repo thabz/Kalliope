@@ -1,10 +1,9 @@
 #!/usr/bin/perl
 
-use DBI;
-do '../dk_sort.pl';
-
-my $dbh = DBI->connect("DBI:mysql:kalliope:localhost", "kalliope", "" ) or print ("Connect fejl: $DBI::errstr");
-if ($dbh eq "") { die "Error!"; };
+use lib '..';
+use Kalliope::Sort;
+use Kalliope::DB;
+my $dbh = Kalliope::DB->connect;
 
 #
 # Keywords
@@ -442,7 +441,7 @@ foreach (@f) { $_->{'sort'} = $_->{'foerstelinie'}};
 #
 
 sub insertforbogstav {
-    foreach $f (sort dk_sort2 @f) {
+    foreach $f (sort { Kalliope::Sort::sort ($a,$b) } @f) {
 	next unless $f->{'sort'};
 	$f->{'sort'} =~ s/Aa/Å/g;
 
