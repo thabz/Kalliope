@@ -92,7 +92,7 @@ my %menuStruct = (
                     },
 	samtidige => { url => 'samtidige.cgi?', 
 	title => 'Samtid', 
-	status => 1,
+	status => !$poet->isUnknownPoet,
         desc => qq|Digtere som udgav værker i ${poetName}s levetid|,
         icon => 'gfx/icons/biography-h48.gif'
                     },

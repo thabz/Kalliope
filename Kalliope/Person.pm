@@ -203,7 +203,7 @@ sub menu {
                     status => $self->hasBio },
        samtidige => { url => 'samtidige.cgi?', 
                     title => 'Samtid', 
-                    status => 1 },
+                    status => !$self->isUnknownPoet},
        links     => { url => 'flinks.pl?', 
                     title => 'Links', 
                     status => $self->{'links'} },
