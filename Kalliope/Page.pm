@@ -247,7 +247,7 @@ EOF
     print '<TD WIDTH="100%" CLASS="maintitle">'.$self->titleAsHTML.'</TD>';
     print '<TD ROWSPAN=2 VALIGN="top">'.$self->thumbIMG.'</TD></TR>';
 #    print '</TR>';
-    print '<TR><TD ALIGN="right" CLASS="navigation">'.$self->_navigationSub.'</TD>';
+    print '<TR><TD ALIGN="right" CLASS="navigation">'.$self->_navigationSub.'&nbsp;&nbsp;</TD>';
     print '</TR></TABLE>';
     print '</TD></TR>';
 
