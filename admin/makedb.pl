@@ -419,7 +419,7 @@ $rc = $dbh->do("CREATE TABLE forbogstaver (
 	      type char(1) NOT NULL,   /* t eller f */
 	      KEY forbogstav_key (forbogstav(2)), 
 	      UNIQUE (bid))");
-$sth = $dbh->prepare("SELECT foerstelinie,titel,did,sprog FROM digte D, fnavne F WHERE D.fid = F.fid AND afsnit=0 ORDER BY F.sprog");
+$sth = $dbh->prepare("SELECT foerstelinie,titel,did,sprog FROM digte D, fnavne F WHERE D.fid = F.fid AND afsnit=0 AND D.layouttype = 'digt' ORDER BY F.sprog");
 $sth->execute();
 $i=0;
 while ($f[$i] = $sth->fetchrow_hashref) { 
