@@ -326,6 +326,7 @@ while ($v = $sth->fetchrow_hashref) {
 	next if (/^VP:/);
 	next if (/^VK:/);
 	next if (/^VQ:/);
+	next if (/^STATUS:/);
 	if (/^H(.):(.*)/) {
 	    $level = $1;
 	    $afsnitstitel = $2;
