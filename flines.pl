@@ -73,6 +73,7 @@ my @blocks = ();
 my $previousLine = '';
 my @lines = sort { Kalliope::Sort::sort($a,$b) } @f;
 
+my $idx = -1;
 for (my $i = 0; $i <= $#lines; $i++) {
     my $f = $lines[$i];
     next unless $f->{'sort'};
@@ -90,18 +91,26 @@ for (my $i = 0; $i <= $#lines; $i++) {
 
     my $linefix = $line;
     $linefix =~ s/^Aa/Å/ig;
-    my $idx = (ord lc substr($linefix,0,1)) - ord('a');
-    $blocks[$idx]->{'head'} = '<DIV CLASS=listeoverskrifter>'.uc (chr $idx + ord('a')).'</DIV><BR>';
+    my $linefixold = $previousLine;
+    $linefixold =~ s/^Aa/Å/ig;
+
+    my $firstLetterNew = uc substr($linefix,0,1);
+    my $firstLetterOld = uc substr($linefixold,0,1);
+
+    $idx++ if ($firstLetterOld ne $firstLetterNew);
+
+    $blocks[$idx]->{'head'} = '<DIV CLASS=listeoverskrifter>'.$firstLetterNew.'</DIV><BR>';
     $blocks[$idx]->{'count'}++;
     my $w = $works{$f->{'vid'}};
     $blocks[$idx]->{'body'} .= '<SPAN CLASS="listeblue">&#149;</SPAN> <A TITLE="Fra '.$w->titleWithYear.'" HREF="digt.pl?longdid='.$f->{'longdid'}.'">'.$line.'</A><BR>';
     $previousLine = $line3;
+
 }
 #
 # Udskriv boks
 #
 
-my $HTML = Kalliope::doublecolumnHTML(\@blocks);
+my $HTML = Kalliope::Web::doubleColumn(\@blocks);
 my $title = $mode ? "Digttitler" : "Førstelinier";
 
 $page->addBox( title => $title,
