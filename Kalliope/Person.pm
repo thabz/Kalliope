@@ -206,7 +206,7 @@ sub menu {
     foreach my $key (@keys) {
         my %item = %{$menuStruct{$key}};
         my $url = $item{url}.'fhandle='.$self->fhandle;
-        $HTML .= qq|[<A HREF="$url">$item{title}</A>] | if $item{status};
+        $HTML .= qq|[<A CLASS="white" HREF="$url">$item{title}</A>] | if $item{status};
     }
     return $HTML;
 }

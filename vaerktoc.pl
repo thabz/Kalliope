@@ -66,10 +66,10 @@ $page->addBox( width => '80%',
               );
 
 if ($work->notes) {
-    $page->addBox( width => '100%',
+    $page->addBox( width => '150',
 	           coloumn => 2,
                    title => 'Noter',
-	           theme => 'dark',
+	           theme => 'note',
                    content => &notes($work) );
 }
 
@@ -140,12 +140,14 @@ sub notes {
     my $noter = $work->notes;
     $noter =~ s/<A /<A CLASS=green /g;
     my @noter = split /\n/,$noter;
-    foreach (@noter) {
-	next unless $_;
-	$HTML .= '<IMG WIDTH=48 HEIGHT=48 SRC="gfx/clip.gif" BORDER=0 ALT="Note til »'.$work->title.'«">';
-	$HTML .= $_."<BR><BR>";
-    }
-    return $HTML;
+    $HTML = join '<BR><BR>',@noter;
+
+#    foreach (@noter) {
+#	next unless $_;
+#	$HTML .= '<IMG WIDTH=48 HEIGHT=48 SRC="gfx/clip.gif" BORDER=0 ALT="Note til »'.$work->title.'«">';
+#	$HTML .= $_."<BR><BR>";
+#    }
+    return qq|<span style="font-size: 12px">$HTML</span>|;
 }
 
 sub tableOfContent {

@@ -16,8 +16,8 @@ span.newsdate {
 
 .oversigt TH {
   font-family: Arial, Helvetica;
-  border-bottom: 1px solid #AA7744;
-  color: #AA7744;
+  border-bottom: 1px solid rgb(139,56,65);
+  color: rgb(139,56,65);
 }
 
 .tree IMG {
@@ -142,6 +142,8 @@ TD.darkblue {
 DIV.nav {
 /*    background-color: white; */
 /*    height: 100px;*/
+      background-color: black;
+      color: white;
 }
 
 DIV.body {
@@ -269,7 +271,7 @@ span.digtunderoverskrift {
 
 td.maintitle {
     vertical-align: middle;
-    background-color: #CC9966;
+    background-color: rgb(139,56,65);
     font-size: 24px;
     font-weight: bold;
     color: white;

@@ -213,7 +213,7 @@ EOF
 
 #    print '<DIV CLASS="body">';
     print '<TABLE WIDTH="100%" HEIGHT="100%" CELLPADDING=0 CELLSPACING=0 BORDER=0><TR>';
-    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top">'.$self->_navigationMain.'<BR><BR>';
+    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" STYLE="padding-top: 30px" >'.$self->_navigationMain.'<BR><BR>';
     print $self->langSelector;
     print '</TD><TD VALIGN="top">';
     print '<TABLE WIDTH="100%" HEIGHT="100%"><TR>';
@@ -391,7 +391,7 @@ sub _navigationSub {
         my ($title,$url) = ($struct->{'menuTitle'},
                            $struct->{'url'});
         if ($key ne $self->{'page'}) {
-	    $HTML .= qq|<A HREF="$url">[$title]</A> |;
+	    $HTML .= qq|<A CLASS=white HREF="$url">[$title]</A> |;
 	} else {
             $HTML .= qq|<B>[$title]</B> |;
 	}
