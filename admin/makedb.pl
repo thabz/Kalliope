@@ -31,7 +31,7 @@ $sthimg = $dbh->prepare('INSERT INTO keywords_images (keyword_id,imgfile,beskriv
 opendir (DIR,'../keywords');
 $i = 1;
 while ($file = readdir(DIR)) {
-    unless ($file =~ /^\./) {
+    unless ($file =~ /^\./ || $file eq 'CVS') {
 	$keywords{$file} = $i;
 	$beskr = '';
 	open(FILE,'../keywords/'.$file);
