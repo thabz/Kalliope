@@ -68,9 +68,24 @@ while (my $f = $sth->fetchrow_hashref) {
 }
 
 my @blocks = ();
-foreach my $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
+my $previousLine = '';
+my @lines = sort { Kalliope::Sort::sort($a,$b) } @f;
+
+for (my $i = 0; $i <= $#lines; $i++) {
+    my $f = $lines[$i];
     next unless $f->{'sort'};
     my $line =  $mode == 1 ? $f->{'titel'} : $f->{'foerstelinie'};
+    my $line2 =  $mode == 1 ? $f->{'foerstelinie'} : $f->{'titel'};
+    my $line3 = $line;
+
+    $line = qq|$line <SPAN STYLE="color: #808080">[$line2]</SPAN>| if $line eq $previousLine;
+
+    unless ($i+1 > $#lines) {
+	my $nextf = $lines[$i+1];
+	my $nextline =  $mode == 1 ? $nextf->{'titel'} : $nextf->{'foerstelinie'};
+	$line = qq|$line <SPAN STYLE="color: #808080">[$line2]</SPAN>| if $line eq $nextline;
+    }
+
     my $linefix = $line;
     $linefix =~ s/^Aa/Å/ig;
     my $idx = (ord lc substr($linefix,0,1)) - ord('a');
@@ -78,6 +93,7 @@ foreach my $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
     $blocks[$idx]->{'count'}++;
     my $w = $works{$f->{'vid'}};
     $blocks[$idx]->{'body'} .= '<SPAN CLASS="listeblue">&#149;</SPAN> <A TITLE="Fra '.$w->title.' '.$w->parenthesizedYear.'" HREF="digt.pl?longdid='.$f->{'longdid'}.'">'.$line.'</A><BR>';
+    $previousLine = $line3;
 }
 #
 # Udskriv boks
