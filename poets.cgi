@@ -172,38 +172,31 @@ sub list19 {
 }
 
 sub listpics {
-     # TODO: Skriv bedre kode og brug Kalliope::Person::isUnknownPoet
-     # så biblens billede ikke optræder her.
-     my $HTML;
-     my @liste = ();
-     open (IN, "data.$LA/fnavne.txt");
-     while (<IN>) {
-         chop($_);chop($_);
-         my ($fhandle,$ffornavn,$fefternavn,$ffoedt,$fdoed) = split(/=/);
-         $fefternavn =~ s/^Aa/Å/;
-         push(@liste,"$fefternavn%$ffornavn%$fhandle%$ffoedt%$fdoed");
-     }
-     close(IN);
+    # TODO: Skriv bedre kode og brug Kalliope::Person::isUnknownPoet
+    # så biblens billede ikke optræder her.
+    my $HTML;
 
-     $HTML = "<TABLE ALIGN=center border=0 cellspacing=10><TR>";
-     my $i=0;
-     foreach (sort @liste) {
-	 my @f = split(/%/);
-	 $f[0] =~ s/^Å/Aa/;
-	 if (-e "fdirs/$f[2]/thumb.jpg") {
-	     $HTML .= "<TD align=center valign=bottom>";
-	     $HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$f[2]/thumb.jpg",url=>"fpics.pl?fhandle=$f[2]",alt=>"Vis portrætter af $f[1] $f[0]"});
-	     $HTML .= "<BR>$f[1] $f[0]<BR>";
-	     $HTML .= '<FONT COLOR="#808080">('.$f[3].'-'.$f[4].')</FONT><BR>';
-	     $HTML .= "</TD>";
-	     $i++;
-	     if ($i % 3 == 0) {
-		 $HTML .= "</TR><TR>";
-	     }
-	 }
-     }
-     $HTML .= "</TR></TABLE>";
-     return ($HTML,'');
+    my $dbh = Kalliope::DB->connect;
+    my $sth = $dbh->prepare("SELECT fid FROM fnavne WHERE sprog=? AND foedt != '' AND foedt != '?' AND thumb = 1 ORDER BY efternavn, fornavn");
+    $sth->execute($LA);
+
+    $HTML = qq|<TABLE ALIGN="center" border=0 cellspacing=10><TR>|;
+    my $i=0;
+    while (my $fid = $sth->fetchrow_array) {
+	my $poet = new Kalliope::Person(fid => $fid);
+	my $fhandle = $poet->fhandle;
+	my $fullname = $poet->name;
+	$HTML .= "<TD align=center valign=bottom>";
+	$HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/thumb.jpg",url=>"fpics.pl?fhandle=$fhandle",alt=>"Vis portrætter af $fullname"});
+	$HTML .= "<BR>$fullname<BR>";
+	$HTML .= '<FONT COLOR="#808080">'.$poet->lifespan.'</FONT><BR>';
+	$HTML .= "</TD>";
+	if (++$i % 3 == 0) {
+	    $HTML .= "</TR><TR>";
+	}
+    }
+    $HTML .= "</TR></TABLE>";
+    return ($HTML,'');
 }
 
 sub listflittige {
@@ -217,7 +210,7 @@ sub listflittige {
     $HTML .= '<TABLE CLASS="oversigt" CELLSPACING=0 WIDTH="100%">';
     $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Navn</TH><TH ALIGN="right">Digte</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
-        my $poet = new Kalliope::Person (fhandle => $h->{'fhandle'});
+	my $poet = new Kalliope::Person (fhandle => $h->{'fhandle'});
 	$HTML .= '<TR><TD>'.$i++.'.</TD>';
 	$HTML .= '<TD><A HREF="ffront.cgi?fhandle='.$poet->fhandle.'">'.$poet->name.'<FONT COLOR=#808080> '.$poet->lifespan.'</FONT></A></TD>';
 	$HTML .= '<TD ALIGN=right>'.$h->{'val'}.'</TD>';
@@ -226,9 +219,9 @@ sub listflittige {
 
     my $endHTML = '';
     if ($limit != -1) {
-        $endHTML = qq|<A HREF="poets.cgi?list=flittige&limit=-1&sprog=$LA"><IMG VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Hele listen"></A>|;
+	$endHTML = qq|<A HREF="poets.cgi?list=flittige&limit=-1&sprog=$LA"><IMG VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Hele listen"></A>|;
     } else {
-        $HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD></TR>";
+	$HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD></TR>";
     }
     $HTML .= '</TABLE>';
     return ($HTML,$endHTML); 
