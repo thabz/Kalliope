@@ -302,7 +302,8 @@ sub _contentAsPlainPoemHTML {
 	push @indhold,"$line\n";
     }
     my $result = join "",@indhold;
-    $result  =~ s/\n/<BR>\n/g;
+    $result =~ s/\n/<BR>\n/g;
+    $result =~ s/<note>.*?<\/note>//g;
     return '<div style="white-space: nowrap">'.$result.'</div>';
 }
 
