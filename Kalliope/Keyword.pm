@@ -117,7 +117,7 @@ sub getSearchResultEntry {
     $title =~ s/\n/<B>/g;
     $title =~ s/\t/<\/B>/g;
     
-    my $HTML = '<IMG ALT="Nøgleord" ALIGN="right" SRC="gfx/sundial_40.GIF">';
+    my $HTML = '<IMG ALT="Nøgleord" ALIGN="right" SRC="gfx/icons/keywords-h48.gif">';
     $HTML .= '<A CLASS=blue HREF="keyword.cgi?keywordid='.$self->id.qq|&needle=$escapedNeedle">|.$title.qq|</A><BR>|;
     $HTML .= qq|$match|;
     $HTML .= '<BR><BR>';

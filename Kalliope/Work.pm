@@ -187,7 +187,7 @@ sub getSearchResultEntry {
     $title =~ s/\n/<B>/g;
     $title =~ s/\t/<\/B>/g;
     
-    my $HTML .= '<IMG ALT="Værk" ALIGN="right" SRC="gfx/book_40.GIF">';
+    my $HTML .= '<IMG ALT="Værk" ALIGN="right" SRC="gfx/icons/book-h48.gif">';
     $HTML .= '<A CLASS=blue HREF="vaerktoc.pl?vhandle='.$self->vhandle.qq|&fhandle=|.$author->fhandle.'">'.$title.' '.$self->parenthesizedYear.qq|</A><BR>|;
     $HTML .= '<SPAN STYLE="color: green">'.$author->name.'</SPAN><BR><BR>';
     return $HTML;
