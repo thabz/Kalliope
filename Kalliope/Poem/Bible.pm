@@ -134,7 +134,8 @@ sub content {
 	    my $num = $1;
 	    my $bg = '';
 	    if ($num >= $begin && $num <= $end) {
-                $bg = 'background-color: #fafac0';
+                $bg = 'background-image: url(gfx/notepap.jpg)';
+                #$bg = 'background-color: #fafac0';
 	    }
 	    if ($num == $begin) {
                 $line = '<A NAME="biblemark"></A>'.$line;
