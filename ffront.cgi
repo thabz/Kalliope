@@ -82,7 +82,7 @@ my %menuStruct = (
 	title => 'Portrætter', 
 	status => $poet->{'pics'},
         icon => 'gfx/icons/portrait-h48.gif',
-        desc => 'Se giraffen'
+        desc => "Portrætgalleri for $poetName"
                     },
 	bio       => { url => 'biografi.cgi?', 
 	title => 'Biografi', 
