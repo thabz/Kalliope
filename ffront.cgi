@@ -40,13 +40,14 @@ push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs );
 
+
 #
 # Hovedmenu for digter ----------------------------------------------
 #
 
 my $poetName = $poet->name;
-
 my $HTML;
+
 my %menuStruct = (
 	vaerker => { url => 'fvaerker.pl?', 
 	title => 'Værker', 
@@ -141,14 +142,33 @@ $page->addBox( width => '80%',
 	content => $HTML );
 
 #
+# Detaljer
+#
+
+if ($poet->getDetailsAsHTML) {
+    my $HTML = '';
+    if ($poet->thumbURI) {
+	$HTML .= '<center><IMG BORDER=2 SRC="'.$poet->thumbURI.'"></center><br>';
+    }
+    $HTML .= '<span style="font-size: 12px">';
+    $HTML .= '<b>Navn: </b>'.$poet->name.'<br>';
+    $HTML .= $poet->getDetailsAsHTML;
+    $HTML .= '</span>';
+    
+    $page->addBox( width => '150',
+       	           coloumn => 2,
+       	           content => $HTML );
+}
+
+#
 # Søgefelt
 #
 if ($poet->hasPoems) {
-    $HTML = qq|<FORM METHOD="get" ACTION="fsearch.cgi"><INPUT TYPE="text" NAME="needle"><INPUT TYPE="hidden" NAME="fhandle" VALUE="$fhandle"> <INPUT CLASS="button" TYPE="submit" NAME="Knap" VALUE=" Søg "></FORM>|;
+    $HTML = qq|<FORM METHOD="get" ACTION="fsearch.cgi"><span style="font-size: 12px">Søgning i |.$poet->name.qq|s værker:</span><br><INPUT SIZE=12 TYPE="text" NAME="needle"><INPUT TYPE="hidden" NAME="fhandle" VALUE="$fhandle"> <INPUT CLASS="button" TYPE="submit" NAME="Knap" VALUE=" Søg "></FORM>|;
 
-     $page->addBox( width => '80%',
-  	       	    title => 'Søgning hos '.$poet->name,
-		    coloumn => 1,
+     $page->addBox( width => '150',
+#    title => 'Søgning hos '.$poet->name,
+		    coloumn => 2,
 		    content => $HTML );
 }
 

@@ -92,6 +92,10 @@ sub bio {
    return $bio;
 }
 
+sub getDetailsAsHTML {
+    return shift->{'detaljer'} || '';
+}
+
 sub lifespan {
    my $self = shift;
    my $return;

@@ -53,8 +53,11 @@ sub parse {
        }
 
        if ($p->{'type'} ne 'collection') {
+           # Efternavn
            my $lastname = Unicode::String::utf8($person->getElementsByTagName('lastname')->item(0)->getFirstChild->getNodeValue);
 	   $p->{'lastname'} = $lastname->latin1;
+
+           # Fødsel
 	   my $born = $person->getElementsByTagName('born')->item(0)->getElementsByTagName('date')->item(0)->getFirstChild->getNodeValue;
 	   ($p->{'born'}) = Kalliope::Date::splitDate($born);
 	   $p->{'bornfull'} = $born;
@@ -63,6 +66,7 @@ sub parse {
 	       $p->{'bornplace'} = Unicode::String::utf8($place)->latin1;
 	   }
 
+	   # Død
 	   my $dead = $person->getElementsByTagName('dead')->item(0)->getElementsByTagName('date')->item(0)->getFirstChild->getNodeValue;
 	   ($p->{'dead'}) = Kalliope::Date::splitDate($dead);
 	   $p->{'deadfull'} = $dead;
@@ -70,6 +74,22 @@ sub parse {
 	       my $place = $person->getElementsByTagName('dead')->item(0)->getElementsByTagName('place')->item(0)->getFirstChild->getNodeValue;
 	       $p->{'deadplace'} = Unicode::String::utf8($place)->latin1;
 	   }
+
+           # Detaljer
+	   my $d;
+	   $d = "<b>F&oslash;dt: </b>".$p->{'bornfull'};
+	   $d .= ", ".$p->{'bornplace'} if $p->{'bornplace'};
+	   $d .= '<br>';
+	   $d .= "<b>D&oslash;d: </b>".$p->{'deadfull'};
+	   $d .= ", ".$p->{'deadplace'} if $p->{'deadplace'};
+	   $d .= '<br>';
+	   if ($person->getElementsByTagName('name')->item(0)->getElementsByTagName('fullname')->item(0)) {
+	       $d .= '<b>Fulde navn: </b>'.Unicode::String::utf8($person->getElementsByTagName('name')->item(0)->getElementsByTagName('fullname')->item(0)->getFirstChild->getNodeValue)->latin1.'<br>';
+	   };
+	   if ($person->getElementsByTagName('name')->item(0)->getElementsByTagName('pseudonym')->item(0)) {
+	       $d .= '<b>Psedudonym: </b>'.Unicode::String::utf8($person->getElementsByTagName('name')->item(0)->getElementsByTagName('pseudonym')->item(0)->getFirstChild->getNodeValue)->latin1.'<br>';
+	   };
+	   $p->{'detaljer'} = $d;
        }
 
        $persons{$fhandle} = $p;
@@ -84,6 +104,7 @@ sub create {
               fhandle char(40) NOT NULL, 
               fornavn text DEFAULT '', 
               efternavn text DEFAULT '',
+	      detaljer text DEFAULT '',
               foedt char(8), 
               doed char(8), 
               sprog char(2), 
@@ -108,7 +129,7 @@ sub insert {
     my %persons = @_;
 
     my %fhandle2fid;
-    my $rc = $dbh->prepare("INSERT INTO fnavne (fhandle,fornavn,efternavn,foedt,doed,sprog,cols,thumb,pics,biotext,bio,links,sekundaer,primaer,vaerker,vers,prosa) VALUES (?,?,?,?, ?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    my $rc = $dbh->prepare("INSERT INTO fnavne (fhandle,fornavn,efternavn,foedt,doed,sprog,cols,thumb,pics,biotext,bio,links,sekundaer,primaer,vaerker,vers,prosa,detaljer) VALUES (?,?,?,?, ?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
     
     foreach my $fhandle (keys %persons) { 
 	my $person = $persons{$fhandle};
@@ -172,7 +193,7 @@ sub insert {
 	    $fcols+=2;
 	}   
 
-        $rc->execute($fhandle,$person->{'firstname'},$person->{'lastname'},$person->{'born'} || '',$person->{'dead'} || '',$person->{'lang'},$fcols,$fthumb,$fpics,$biotext,$fbio,$flinks,$fsekundaer,$fprimaer,$fvaerkerindhold,$fvaerker,$fprosa);
+        $rc->execute($fhandle,$person->{'firstname'},$person->{'lastname'},$person->{'born'} || '',$person->{'dead'} || '',$person->{'lang'},$fcols,$fthumb,$fpics,$biotext,$fbio,$flinks,$fsekundaer,$fprimaer,$fvaerkerindhold,$fvaerker,$fprosa,$person->{'detaljer'} || '');
 	my $lastid = Kalliope::DB::getLastInsertId($dbh,"fnavne");
         $fhandle2fid{$fhandle} = $lastid;
 	foreach (@keys) {
