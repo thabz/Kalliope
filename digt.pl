@@ -69,6 +69,7 @@ my $page = newAuthor Kalliope::Page ( poet => $poet,
                                       crumbs => \@crumbs);
 
 if (defined param('korrektur')) {
+    # Send as mail ------------------
     my $mailBody = 'Dato:       '.localtime(time)."\n";
     $mailBody .= 'Remotehost: '.remote_host()."\n";
     $mailBody .= 'Forfatter:  '.$poet->name."\n";
@@ -87,6 +88,10 @@ if (defined param('korrektur')) {
  	    "Subject: [Korrektur] $longdid\r\n".
 	    "\r\n".$mailBody."\r\n");
     $smtp->quit;
+
+    # Database backup ---------------
+    my $sth = $dbh->prepare("INSERT INTO korrektur (date,longdid,korrektur) VALUES (?,?,?)");
+    $sth->execute(time,$poem->longdid,param('korrektur'));
 }
 
 if (defined param('newkeywords')) {
