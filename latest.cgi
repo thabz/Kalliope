@@ -78,7 +78,7 @@ sub latestPoems {
 	 $lastDate = $createdate;
     }
     for (my $j = 0; $j<=$i; $j++) {
-         my $dateForDisplay = Kalliope::Date::longDate($blocks[$j]->{'createdate'});
+         my $dateForDisplay = lc Kalliope::Date::longDate($blocks[$j]->{'createdate'});
          $blocks[$j]->{'head'} = "<DIV CLASS=listeoverskrifter>$dateForDisplay</DIV><BR>";
     }
     $HTML = Kalliope::Web::doubleColumn(\@blocks);
