@@ -23,16 +23,23 @@
 package Kalliope::PersonHome;
 
 use Kalliope::Person;
+use Kalliope::DB;
 
 my %cache;
+my $dbh = Kalliope::DB->connect;
 
+my $findByFhandleSth = $dbh->prepare("SELECT * FROM  fnavne WHERE fhandle = ?");
+    
 sub findByFhandle {
     my ($fhandle) = @_;
     if (defined $cache{$fhandle}) {
        return $cache{$fhandle};
     } else {
-       $cache{$fhandle} = new Kalliope::Person('fhandle' => $fhandle);
-       return $cache{$fhandle};
+	$findByFhandleSth->execute($fhandle);
+	my $obj = $findByFhandleSth->fetchrow_hashref;
+	bless $obj,'Kalliope::Person';
+        $cache{$fhandle} = $obj;
+        return $obj;
     }
 }
 

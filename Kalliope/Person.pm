@@ -31,17 +31,6 @@ use Kalliope ();
 
 my $dbh = Kalliope::DB->connect;
 
-sub new {
-    my ($class,%arg) = @_;
-    confess "Need some kind of id to initialize a new person\n" unless $arg{'fhandle'};
-    my $sth = $dbh->prepare("SELECT * FROM  fnavne WHERE fhandle = ?");
-    $sth->execute($arg{'fhandle'});
-    my $obj = $sth->fetchrow_hashref;
-    Kalliope::Page::notFound unless $obj;
-    bless $obj,$class;
-    return $obj;
-}
-
 # Class method
 sub exist {
     my $fhandle = shift;
