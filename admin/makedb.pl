@@ -151,7 +151,7 @@ if (!$__all) {
     &log("Done");
 }
 &log('Inserting firstletters...');
-Kalliope::Build::Firstletters::insert();
+Kalliope::Build::Firstletters::insert(@changedWorks);
 &log("Done");
 
 exit;
@@ -348,160 +348,6 @@ $sth->finish;
 Kalliope::Build::Timeline::build(%persons);
 
 #
-# Build digte -------------------------------------------------------------
-#
-      
-
-$rc = $dbh->do("drop table if exists digte");
-$rc = $dbh->do("CREATE TABLE digte ( 
-              did int UNSIGNED DEFAULT '0' NOT NULL PRIMARY KEY auto_increment,
-              longdid char(40) NOT NULL,
-              fid INT NOT NULL,
-              vid INT NOT NULL,
-              vaerkpos INT,
-              titel text NOT NULL,
-              toctitel text NOT NULL,
-	      tititel text NOT NULL,
-              foerstelinie text,
-              underoverskrift text,
-              indhold mediumtext,
-	      haystack mediumtext,
-              noter text,
-	      pics text,
-	      quality set('korrektur1','korrektur2','korrektur3',
-	                  'kilde','side'),
-              layouttype enum('prosa','digt') default 'digt',
-	      createtime INT NOT NULL,
-              afsnit int,      /* 0 hvis ikke afsnitstitel, ellers H-level. */
-	      lang char(10),
-	      INDEX (longdid),
-	      INDEX (afsnit),
-	      INDEX (did),
-	      INDEX (lang),
-	      INDEX (createtime),
-	      INDEX (fid),
-	      INDEX (vid),
-              UNIQUE (did,longdid))
-	      TYPE = MYISAM
-	      ");
-#
-# vaerkpos er digtets position i samlingen.
-# afsnit i digtsamliner betegnes med afsnit=1. Afsnittets titel ligger i titel.
-#
-$stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywords.id = keywords_relation.keywordid AND keywords_relation.otherid = ? AND keywords_relation.othertype = 'vaerk'");
-$sth = $dbh->prepare("SELECT * FROM vaerker WHERE findes=1 ORDER BY cvstimestamp DESC");
-$sthafs = $dbh->prepare("INSERT INTO digte (fid,vid,titel,toctitel,vaerkpos,afsnit) VALUES (?,?,?,?,?,?)");
-my $sthLastIns = $dbh->prepare("SELECT LAST_INSERT_ID() FROM digte");
-
-$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,tititel,foerstelinie,underoverskrift,indhold,noter,pics,afsnit,layouttype,haystack,createtime,quality,lang) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,0,?,?,?,?,?)");
-$sth->execute;
-&log ("  Ikke tomme: ".$sth->rows);
-
-my $counterMax = $sth->rows;
-my $counter = 1;
-while ($v = $sth->fetchrow_hashref) {
-    &log (sprintf("[%3d/%3d]",$counter++,$counterMax).' '.$v->{'titel'});
-    $fdir = "../fdirs/".$v->{'fhandle'}."/";
-    open(IN,$fdir.$v->{'vhandle'}.".txt") || die "Argh! ".$fdir.$v->{'vhandle'}.'.txt ikke fundet!';
-    $i=0;
-    $first = 1;
-    $toctitel = $noter = $under = $indhold = '';
-    $tititel = '';
-    @arvedekeys = ();
-    @pics = ();
-    @qualities = ();
-    # Nedarv keys fra værket
-    $stharv->execute($v->{'vid'});
-    while ($kewl = $stharv->fetchrow_array) {
-	push @arvedekeys,$kewl;
-    }
-    @mykeys = @arvedekeys;
-    while (<IN>) {
-	chomp;
-	s/\r//;
-	s/,,/&bdquo;/g;
-	s/''/&ldquo;/g;
-	s/ *$//;
-	next if (/^\#/);
-	next if (/^VN:/);
-	next if (/^VP:/);
-	next if (/^VK:/);
-	next if (/^VU:/);
-	next if (/^VQ:/);
-	next if (/^STATUS:/);
-	next if (/^CVS-TIMESTAMP:/);
-	next if (/^FILES:/);
-	if (/^H(.):(.*)/) {
-	    $level = $1;
-	    $afsnitstitel = $2;
-	    &insertdigt unless ($first);
-	    @mykeys = @arvedekeys;
-	    $first = 1; #fordi vi ikke kender næste digt ID
-	    $sthafs->execute($v->{'fid'},$v->{'vid'},$afsnitstitel,$afsnitstitel,$i,$level);
-	    $i++;
-	    next;
-	}; 
-	if (/^I:/) {
-	    s/^I://;	
-		$tempid = $_;
-	    if ($first) {
-		$id = $tempid;
-		$first = 0;
-	    } else {
-		&insertdigt;
-	    }
-	} elsif (/^TOC:/) {
-	    s/^TOC://;
-	    $toctitel = $_;
-	}  elsif (/^TI:/) {
-	    s/^TI://;
-	    $tititel = $_;
-	}  elsif (/^T:/) {
-	    s/^T://;
-	    $titel = $_;
-	} elsif (/^F:/) {
-	    s/^F://;
-	    $firstline = $_;
-	} elsif (/^K:/) { 
-	    s/^K://;
-	    s/\s+$//;
-	    push @mykeys,$_;
-	} elsif (/^N:/) {
-	    s/^N://;
-	    $noter .= $_."\n";
-	} elsif (/^P:/) {
-	    s/^P://;
-	    push @pics,$_;
-	} elsif (/^Q:/) {
-	    s/^Q://;
-	    my @q = split /\s*,\s*/,$_;
-	    push @qualities,@q;
-	} elsif (/^U:/) {
-	    s/^U://;
-	    $under .= $_."\n";
-	} elsif (/^TYPE:/) {
-	    s/^TYPE://;
-            $layouttype = $_;
-        }  else {
-	    $indhold .= $_."\n";
-	}
-    }
-    close(IN);
-    # insert sidste digt
-    &insertdigt;
-}
-$sth->finish;
-
-$sthkdigt->finish;
-$sthafs->finish;
-
-$sth = $dbh->prepare("SELECT count(*) FROM digte WHERE afsnit=0");
-$sth->execute;
-($count) = $sth->fetchrow_array;
-&log ("Antal digte: $count");
-$sth->finish;
-
-#
 # Xrefs
 #
 
@@ -520,46 +366,6 @@ Kalliope::Build::Persons::buildHasHenvisninger($dbh);
 
 #$dbh->disconnect;
 
-sub insertdigt {
-    chop($noter);
-    chop($under);
-    $layouttype = 'prosa' if $v->{'type'} ne 'v' && $layouttype ne 'digt';
-    &log ("$id er set før!") if ++$knownlongdids{$id} > 1;
-    &log ("$id mangler førstelinie") if $firstline eq '' && $layouttype ne 'prosa';
-    &log ("$id mangler titel") if $titel eq '';
-    $indhold =~ s/\s+$//;
-    $noter =~ s/[\n\s]+$//;
-    $indhold =~ s/^\n+//s;
-    $pics = join '$$$',@pics;
-    $haystack = Kalliope::Strings::stripHTML("$titel $under $indhold");
-
-    # Try to find create date...
-    my ($year,$mon,$day) = $id =~ /(\d\d\d\d)(\d\d)(\d\d)/;
-    my $time = POSIX::mktime(0,0,2,$day,$mon-1,$year-1900) || 0;
-
-    # Prepare qualities
-    my $quality = join ',',Kalliope::Array::uniq(@qualities,@{$qualityCache{"$$v{fhandle}/$$v{vhandle}"}});
-    
-    # Insæt hvad vi har.
-    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$toctitel || $titel, $tititel || $titel,$firstline,$under,$indhold,$noter,$pics,$layouttype || 'digt',$haystack,$time,$quality,$v->{'lang'});
-    $i++;
-    $layouttype = $noter = $under = $indhold = '';
-    $firstline = '';
-    $titel = '';
-    $tititel = '';
-    $toctitel = '';
-    @pics = ();
-    @qualities = ();
-    
-    $sthLastIns->execute();
-    ($mymylastid) = $sthLastIns->fetchrow_array();
-
-    foreach (@mykeys) {
-	&insertkeywordrelation($_,$mymylastid,'digt');
-    }
-    @mykeys = @arvedekeys;
-    $id = $tempid;
-}
 
 sub insertkeywordrelation {
     my ($keyword,$otherid,$othertype,$ord) = @_;
