@@ -201,8 +201,10 @@ sub addBox {
     my $bggfx = (defined $args{'theme'} && $args{'theme'} eq 'dark') ? 'pap.gif' : 'lightpap.gif';
     $bggfx = 'notepap.jpg' if defined  $args{'theme'} && $args{'theme'} eq 'note';
     my $align =  $args{align} ? $args{align} : 'left';
-    my $width = $args{width} ? qq|WIDTH="$args{width}"| : '';
-    if ($args{width} eq '100%') {
+    my $width;
+    if ($args{width} && $args{width} ne '100%') {
+	$width = qq|WIDTH="$args{width}"|;
+    } else {
 	$width = '';
     }
     my $theme = $args{'theme'} || 'normal';

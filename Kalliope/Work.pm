@@ -38,7 +38,10 @@ sub new {
     confess "Need some kind of id to initialize a new work\n" unless $vid;
     my $sth = $dbh->prepare("SELECT * FROM vaerker WHERE vid = ?");
     $sth->execute($vid);
-    Kalliope::Page::notFound() unless $sth->rows;
+    if (!$sth->rows) {
+	print STDERR "Work with id $vid not found.\n";
+	Kalliope::Page::notFound() unless $sth->rows;
+    }
     my $obj = $sth->fetchrow_hashref;
     bless $obj,$class;
     $obj->{'quality_obj'} = new Kalliope::Quality($obj->{'quality'});
@@ -50,7 +53,7 @@ sub lastModified {
 }
 
 sub isProse {
-    return shift->{'type'} ne 'v';
+    return shift->{'type'} ne 'poetry';
 }
 
 sub vid {

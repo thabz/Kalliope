@@ -204,33 +204,34 @@ sub allVids {
 
 sub allWorks {
     my $self = shift;
-#   return (new Kalliope::Work(vid => "bibel/1mose"));
+    my $fhandle = $self->fhandle;
     my @result;
-    @result = map { new Kalliope::Work('vid' => $_) } @{$self->allVids};
+    map { push @result, new Kalliope::Work('vid' => "$fhandle/$_") } @{$self->allVids};
     return @result;
 }
 
 sub poeticalWorks {
     my $self = shift;
-    my @vids = 
-    my $sth = $dbh->prepare("SELECT vid FROM vaerker WHERE fhandle = ? AND type='poetry' ORDER BY vid ASC");
-    $sth->execute($self->fhandle);
-    my @list;
-    while (my ($vid) = $sth->fetchrow_array) {
-        push @list, new Kalliope::Work('vid' => $vid);
+    my @works = $self->allWorks();
+    my @result;
+    foreach my $work (@works) {
+	if (!$work->isProse) {
+	    push @result, $work;
+	}
     }
-    return @list;
+    return @result;
 }
 
 sub proseWorks {
     my $self = shift;
-    my $sth = $dbh->prepare("SELECT vid FROM vaerker WHERE fhandle = ? AND type='prose' ORDER BY vid ASC");
-    $sth->execute($self->fhandle);
-    my @list;
-    while (my ($vid) = $sth->fetchrow_array) {
-        push @list, new Kalliope::Work('vid' => $vid);
+    my @works = $self->allWorks();
+    my @result;
+    foreach my $work (@works) {
+	if ($work->isProse) {
+	    push @result, $work;
+	}
     }
-    return @list;
+    return @result;
 }
 
 sub hasHenvisninger {
