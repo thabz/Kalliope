@@ -79,7 +79,6 @@ $page->addBox( width => $poem->isProse ? '' : '10',
 	       theme => 'book',
 	       content => &poem($poem,$needle,$biblemark).'<br><br>' );
 
-my @keywords = $poem->keywords;
 
 if ($poem->hasPics) { 
     $page->addBox( width => '250',
@@ -88,16 +87,22 @@ if ($poem->hasPics) {
 	           content => &pics($poem) );
 }
 
-if ($poem->notes || $#keywords >= 0) {
+my @keywords = $poem->keywords;
+my @notes = $poem->notes;
+if ($#notes > 0 || $#keywords >= 0) {
     $page->addBox( width => '250',
 	           printer => 1,
 		   printtitle => 'Noter',
 	           coloumn => 2,
 		   theme => 'dark',
-#                   title => 'Noter',
 	           content => &notes($poem,@keywords) );
 }
 
+$page->addBox( width => '250',
+               printer => 0,
+               coloumn => 2,
+  	       theme => 'dark',
+	       content => &quality($poem) );
 
 if ($poem->footnotes) { 
     $page->addBox( width => '250',
@@ -340,9 +345,12 @@ sub notes {
 	$HTML .= '</span>';
     }
     $HTML .= "</span>";
+    return $HTML;
+}
 
-    # Quality
-#    $HTML .= '<br><br><b>Tillid:</b> '.$poem->quality->asHTML;
+sub quality {
+    my $poem = shift;
+    my $HTML = '';
     $HTML .= '<span class="noprint"><br><br>'.$poem->quality->asHTML;
     $HTML .= "</span>";
     return $HTML;
