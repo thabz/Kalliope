@@ -43,7 +43,9 @@ my $HTML;
 
 if ($knap) {
     &handleForm($dir,$filename,$knap);
-   print "Location: edit.cgi?dir=$dir\n";
+    my (undef,$next) = _nextAndPrevFiles($dir,$filename);
+    print $next ? "Location: edit.cgi?dir=$dir&file=$next\n" : 
+	          "Location: edit.cgi?dir=$dir\n"
 } elsif ($filename) {
     $HTML = &editPage($dir,$filename);
 } elsif ($dir) {
