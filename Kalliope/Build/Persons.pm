@@ -92,6 +92,9 @@ sub parse {
 	   if ($person->getElementsByTagName('name')->item(0)->getElementsByTagName('realname')->item(0)) {
 	       $d .= '<b>Dåbsnavn: </b>'.Unicode::String::utf8($person->getElementsByTagName('name')->item(0)->getElementsByTagName('realname')->item(0)->getFirstChild->getNodeValue)->latin1.'<br>';
 	   };
+	   if ($person->getElementsByTagName('name')->item(0)->getElementsByTagName('alternative')->item(0)) {
+	       $d .= '<b>Andet navn: </b>'.Unicode::String::utf8($person->getElementsByTagName('name')->item(0)->getElementsByTagName('alternative')->item(0)->getFirstChild->getNodeValue)->latin1.'<br>';
+	   };
 	   $p->{'detaljer'} = $d;
        }
 
