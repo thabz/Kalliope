@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 
 #  Udskriv forfatterne med billeder...
 #
@@ -22,6 +22,7 @@
 #
 #  $Id$
 
+use strict;
 use Kalliope;
 do 'kstdhead.pl';
 $LA = $ARGV[0];

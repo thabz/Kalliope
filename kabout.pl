@@ -20,35 +20,31 @@
 #
 #  $Id$
 
-use CGI qw /:standard/;
-$mycgi = new CGI;
+use Kalliope::Page ();
+use CGI ();
+
+my $page = new Kalliope::Page (
+		title => 'Om Kalliope',
+                pagegroup => 'welcome',
+                page => CGI::url_param('page')); 
+
+$page->addBox (width => '75%',
+               content => &readFile(CGI::url_param('page')));
+$page->print;
 
 
-do 'kstdhead.pl';
-
-@ARGV = split(/\?/,$ARGV[0]);
-chop($ARGV[0]);
-chomp($ARGV[1]);
-$abouttext = $ARGV[0]; 
-$LA = $ARGV[1];
-
-#$0 =~ /\/([^\/]*)$/;
-#$wheretolinklanguage = $1.'?'.$abouttext;
-
-#$wheretolinklanguage
-
-&kheaderHTML("Kalliope - Om",$LA);
-
-beginwhitebox("","75%","left");
-
-if ($abouttext =~ /\.\./ || !(-e "data.dk/$abouttext")) {
-    print "Du som sidder ved ".$mycgi->remote_host()."... sådan leger vi ikke her! Men absolut et værdigt forsøg... :-)";
-} else {
-    open(FILE,"data.dk/$abouttext");
-    foreach  (<FILE>) {
-	print $_;
+sub readFile {
+    my $page = shift;
+    my $HTML;
+    if ($abouttext =~ /\.\./ || !(-e "data.dk/$page.html")) {
+        Kalliope::Page::notFound();
+    } else {
+	open(FILE,"data.dk/$page.html");
+	foreach  (<FILE>) {
+	    $HTML .= $_;
+	}
+        close (FILE);
     }
+    return $HTML;
 }
-endbox();
 
-&kfooterHTML;

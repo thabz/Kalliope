@@ -51,33 +51,6 @@ sub shortdate {
     }
 }
 
-#
-# Thumbnail pictures
-#
-
-sub insertthumb {
-    my $h = shift;
-    my ($tx,$ty) = imgsize ($h->{'thumbfile'});
-    my $border = defined $h->{border} ? $h->{border} : 2;
-    my $html = '';
-    if ($h->{destfile}) {
-	my ($dx,$dy) = imgsize ($h->{'destfile'});
-	$html .= '<A HREF="javascript:{}" onclick=\'window.open("picfull.pl?imgfile='.uri_escape($h->{destfile}).'","popup","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizeable=no,width='.$dx.',height='.$dy.'")\'>';
-    } elsif ($h->{url}) {
-	$html .= qq|<A HREF="$h->{url}">|;
-    }
-    $html .= qq|<IMG WIDTH=$tx HEIGHT=$ty ALT="$h->{alt}" SRC="$h->{thumbfile}" BORDER=$border></A>|;
-    return $html;
-}
-
-sub imgsize {
-    my $filename = shift;
-    open(IDE,"./jpeggeometry $filename|");
-    my ($kaj) = <IDE>;
-    close (IDE);
-    $kaj =~ /(.*)x(.*)/;
-    return ($1,$2);
-}
 
 #
 # Fix URLer

@@ -1,5 +1,7 @@
 #!/usr/bin/perl -w
 
+#  Udskriver Kalliopes forside: Nyheder, Dagen idag, Sonnetten på pletten.
+#
 #  Copyright (C) 1999-2001 Jesper Christensen 
 #
 #  This script is free software; you can redistribute it and/or
@@ -20,37 +22,95 @@
 #
 #  $Id$
 
+use Kalliope;
+use Kalliope::Poem;
+use Kalliope::Page;
 use strict;
-use CGI qw(:standard);
-use Kalliope::Server;
 
-Kalliope::Server::newHit;
+my $page = new Kalliope::Page (
+		title => 'Velkommen',
+                pagegroup => 'welcome',
+                page => 'news',
+           );
 
-my $innerframe = url_param('innerframe') || 'kfront.pl?dk';
+$page->addHTML ('<TABLE WIDTH="100%"><TR><TD WIDTH="60%" VALIGN=top>');
+$page->addBox ( title => "Sidste Nyheder",
+                width => '100%',
+                content => &latestNews,
+                end => '<A onclick="document.location = \'kallnews.pl\'" HREF="kallnews.pl"><IMG VALIGN=center BORDER=0 HEIGHT=16 WIDTH=16  SRC="gfx/rightarrow.gif" ALT="Vis gamle nyheder"></A>' );
 
-print "Content-type: text/html\n\n";
-print <<"EOF";
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN" "http://www.w3.org/TR/REC-html40/frameset.dtd">
-<HTML>
-<HEAD>
-<TITLE>Kalliope</TITLE>
-<META name="description" content="Stort arkiv for ældre digtning">
-<META name="keywords" content="digte, lyrik, litteratur, litteraturhistorie, digtere, digtarkiv, etext, elektronisk tekst, kalliope, kalliope.org, www.kalliope.org">
-</HEAD>
-<SCRIPT LANGUAGE="Javascript">
-<!--
-   IamOK = 1;
-   if (top.location != location) top.location.href = location.href;
-//-->
-</SCRIPT>
-<FRAMESET ROWS="100,*" BORDER=0 >
-   <FRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 NORESIZE SCROLLING="no" SRC="topframe.cgi?type=forside&sprog=dk" NAME="topframe">
-   <FRAMESET COLS="100,*" BORDER=0>
-      <FRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 NORESIZE SCROLLING="no" SRC="leftframe.html" NAME="leftframe">
-      <FRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 NORESIZE SCROLLING="auto" SRC="$innerframe" NAME="mainframe">
-   </FRAMESET>
-</FRAMESET>
+$page->addHTML ('</TD><TD VALIGN=top>');
+$page->addBox ( title => "Dagen idag",
+                width => '100%',
+                content => &dayToday,
+                end => '<A HREF="kdagenidag.pl"><IMG  HEIGHT=16 WIDTH=16 VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Vælg dato"></A>');
+my ($sonnetText,$sonnetEnd) = &sonnet;
+$page->addBox ( title => "Sonnetten på pletten",
+                width => '100%',
+                content => $sonnetText,
+                end => $sonnetEnd);
+$page->addHTML ('</TD></TR></TABLE>');
+$page->print;
 
-</HTML>
+#
+# Nyheder --------------------------------------------------------------
+#
 
-EOF
+sub latestNews {
+    my $HTML;
+    open (NEWS,"data.dk/news.html");
+    foreach my $line (<NEWS>) {
+	Kalliope::buildhrefs(\$line);
+	$HTML .= $line unless ($line =~ /^\#/);
+    }
+    close (NEWS);
+    return $HTML;
+}
+
+#
+# Dagen idag ------------------------------------------------------------
+#
+
+sub dayToday {
+    my $HTML;
+    my ($sec,$min,$hour,$dg,$md,$year,$wday,$yday,$isdst)=localtime(time);
+    $md++;
+    open(FILE,"data.dk/dagenidag.txt");
+
+    my $i = 0;
+    $md = "0".$md if $md < 10;
+    $dg = "0".$dg if $dg < 10;
+    foreach (<FILE>) {
+	if (/^$md\-$dg/) {
+	    my ($dato,$tekst) = split(/\%/);
+	    my ($tis,$prut,$aar)=split(/\-/,$dato);
+	    Kalliope::buildhrefs(\$tekst);
+	    $HTML .= "<FONT COLOR=#ff0000>$aar</FONT> $tekst<BR>";
+	    $i++;
+	}
+    }
+    $HTML = "Ingen begivenheder...<BR>" unless $i;
+    return $HTML;
+}
+
+#
+# Sonnetten på pletten --------------------------------------------------
+#
+
+sub sonnet {
+    my ($HTML,$END);
+    my $dbh = Kalliope::DB->connect;
+    my $sth = $dbh->prepare("SELECT otherid FROM keywords_relation,keywords WHERE keywords.ord = 'sonnet' AND keywords_relation.keywordid = keywords.id AND keywords_relation.othertype = 'digt'");
+    $sth->execute();
+    my $rnd = int rand ($sth->rows - 1);
+    my $i = 0;
+    my $h;
+    while ($h = $sth->fetchrow_hashref) {
+	last if ($i++ == $rnd);
+    }
+    my $poem = new Kalliope::Poem(did => $h->{'otherid'});
+    $HTML .= '<SMALL>'.$poem->content.'</SMALL>';
+    $END = '<A TITLE="'.$poem->author->name.': »'.$poem->title.'«" HREF="digt.pl?longdid='.$poem->longdid.'"><IMG VALIGN=center BORDER=0 HEIGHT=16 WIDTH=16 SRC="gfx/rightarrow.gif" ALT="Vis digtet"></A>';
+    return ($HTML,$END);
+
+}
