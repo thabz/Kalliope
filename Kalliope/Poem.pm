@@ -217,8 +217,16 @@ sub xrefsTo {
 sub updateHitCounter {
     my $self = shift;
     my $longdid = $self->longdid;
-    my $hits = $dbh->selectrow_array("select hits from digthits where longdid='$longdid'");
-    $dbh->do("replace into digthits (longdid,hits,lasttime) VALUES (?,?,?)","",$longdid,++$hits,time());
+    my $sth = $dbh->prepare("SELECT hits FROM digthits WHERE longdid=?");
+    $sth->execute($longdid);
+    if ($sth->rows) {
+	my ($hits) = $sth->fetchrow_array;
+	$sth = $dbh->prepare("UPDATE digthits SET hits=?, lasttime=? WHERE longdid = ?");
+	$sth->execute(++$hits,time(),$longdid);
+    } else {
+	$sth = $dbh->prepare("INSERT INTO digthits (hits,lasttime,longdid) VALUES (?,?,?)");
+	$sth->execute(1,time(),$longdid);
+    }
 }
 
 sub fid {
