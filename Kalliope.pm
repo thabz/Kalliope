@@ -91,6 +91,12 @@ sub buildhrefs {
       my $link = $poem->clickableTitleSimple;
       $$txt =~ s/<XREF BIBEL="$did">/$link/;
    }
+   if ($$txt =~ /<XREF DIGT="(.+)">/) {
+      my $did = $1;
+      my $poem = new Kalliope::Poem(longdid => $did);
+      my $link = $poem->clickableTitleSimple;
+      $$txt =~ s/<XREF DIGT="$did">/$link/;
+   }
    $$txt =~ s/<A\s+F=([^\s>]+)\s*>/<A HREF="biografi.cgi?fhandle=$1">/g;
    $$txt =~ s/<A\s+D=([^\s>]+)\s*>/<A HREF="digt.pl?longdid=$1">/g;
    $$txt =~ s/<A\s+K=([^\s>]+)\s*>/<A HREF="keyword.cgi?keyword=$1">/g;
