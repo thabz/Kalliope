@@ -90,7 +90,7 @@ sub editPage {
     $HTML .= qq|<input type="hidden" name="new" value="$new">|;
     $HTML .= qq|<table width="100%"><tr>\n|;
     $HTML .= qq|<td valign=top><img src="edit/files/$gfxFile"></td>|;
-    $HTML .= qq|<td valign=top><textarea name="data" style="width:300px; height:90%">$data</textarea><br>|;
+    $HTML .= qq|<td valign=top><textarea rows=30 name="data" style="width:300px; height:90%">$data</textarea><br>|;
     $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Gem ændringer">';
     $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Godkend tekst">';
     $HTML .= '</td>';
