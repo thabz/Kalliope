@@ -222,7 +222,7 @@ sub print {
 <META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
 <META name="description" content="Stort arkiv for ældre digtning">
 <META name="keywords" content="digte, lyrik, litteratur, litteraturhistorie, digtere, digtarkiv, etext, e-text, elektronisk tekst, kalliope, kalliope.org, www.kalliope.org">
-<SCRIPT>
+<SCRIPT TYPE="text/javascript">
 function openTimeContext(year) {
      window.open('timecontext.cgi?center='+year,'Timecontext','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=300');
      return false;

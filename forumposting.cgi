@@ -76,7 +76,7 @@ $page->addBox (width => '90%',
 #
 
 my $JS.= <<"EOF";
-<SCRIPT LANGUAGE="JavaScript1.3">
+<SCRIPT LANGUAGE="JavaScript1.3" TYPE="text/javascript">
 function gotoPosting(postingid) {
     document.location = 'forumposting.cgi?id='+postingid;
     return false;

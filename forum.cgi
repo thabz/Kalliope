@@ -68,7 +68,7 @@ $HTML .= qq|<INPUT onClick="parent.composer('new',0);" TITLE="" CLASS="button" T
 
 
 $HTML .= <<"EOF";
-<SCRIPT LANGUAGE="JavaScript1.3">
+<SCRIPT LANGUAGE="JavaScript1.3" TYPE="text/javascript">
 function gotoPosting(postingid) {
     document.location = 'forumposting.cgi?id='+postingid;
     return false;
