@@ -16,19 +16,7 @@ Kode:
 * Søgning efter nøgleord finder ikke de digte, som har fået givet deres nøgleord via VK:. Løsning: saml nøgleord efter samme metode som ved VQ: og Q:
 * Søgemaskinen indekserer også indhold at footnotes. Søg f.eks. efter 'kalliope'. Ups!
 * Samtidige digtere ser underlig ud for digtere med ukendt føde eller dødsår. Se f.es. Per Ræv Lille.
-
-XML:
-
-* Konvertering til værker i XML format.
-* Skal vi have een stor fnavne.xml fil, som kan XSLT-includes fra
-  værk-filerne?
-* Skal vaerker.txt erstattes med en liste over værk-id'er i fnavne.xml?
-* Hvordan løser vi problemer med at en bogs indholdsfortegnelse kræver
-  større fleksibilitet end hvad der kan graves ud af bogens struktur?
-  Skal vi droppe TOC: felterne til fordel for en helt eksplicit angivelse
-  af hele indholdsfortegnelsen først i værkfilen? Dette giver ultimativ
-  fleksibilitet, men kan være træls at vedligeholde...
-
+* "evt. ku du skrive i fejlmeddelelsen at siden er ved at blive opdateret og er midlertidigt utilgængelig - til ære for dem der ku tro det var resultatet af hackeri eller pædofil humor, or both"
 
 PDF:
 
@@ -38,8 +26,8 @@ PDF:
   det er at vedligeholde en Java installation på serveren.
 
 
+
 Køb:
 
 Poul Pedersen: Don Pedro af Granada, 1724.
 Peder Syv: Nogle Betænkninger om det Cimbriske Sprog, 1663.
-Hostrup: Komedier, I-III, 7. udg. 1918. (200 kr)
