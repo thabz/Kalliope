@@ -105,9 +105,12 @@ sub lifespan {
    return '' if ($self->isUnknownPoet);
    my $born = $self->yearBorn;
    my $dead = $self->yearDead;
+   $dead = 'Ukendt år' if $dead eq '?';
    if (substr($born,0,2) eq substr($dead,0,2)) {
        $dead = substr($dead,2);
    }
+   $born = 'Ukendt år' if $born eq '?';
+   return '(Ukendt levetid)' if $born eq $dead;
    return "($born-$dead)";
 }
 
