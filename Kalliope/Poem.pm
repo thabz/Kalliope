@@ -102,6 +102,8 @@ sub content {
     } else {
 	$self->{'indhold'} =~ s/ /&nbsp;/g;
     }
+    $self->{'indhold'} =~ s/<w>/<span class="wide">/g;
+    $self->{'indhold'} =~ s/<\/w>/<\/span>/g;
     $self->{'indhold'} =~ s/\n/<BR>\n/g;
     return $self->{'indhold'}; 
 }
