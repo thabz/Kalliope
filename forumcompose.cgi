@@ -86,7 +86,7 @@ my $page = new Kalliope::Page::Popup (
 my $HELP = Kalliope::Help->new('forumcompose')->linkAsHTML;
 
 my $HTML = <<"EOF";
-<FORM>
+<FORM METHOD="POST">
 <SPAN STYLE="font-family: Arial, Helvetica">
 Navn:<BR>
 <INPUT CLASS="inputtext" STYLE="width:100%;" TYPE="text" NAME="name" VALUE="$userName"><BR><BR>
