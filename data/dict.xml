@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <?xml-stylesheet type="text/xsl" href="../../xslt/dict.xsl"?>
-<!DOCTYPE kalliopedict [
+<!DOCTYPE entries [
 <!ELEMENT entries (entry)>
-<!ATTLIST entry 
-          id CDATE #REQUIRED>
-<!ELEMENT entry (ord,var*,forkl,frase?)>
+<!ELEMENT entry (ord,var*,frase?,forkl+)>
+<!ATTLIST entry id ID #REQUIRED>
 <!ELEMENT ord (#PCDATA)>
-<!ELEMENT forkl (#PCDATA)>
+<!ELEMENT forkl (#PCDATA|i)*>
 <!ELEMENT frase (#PCDATA)>
 <!ELEMENT var (#PCDATA)>
 <!ELEMENT i (#PCDATA)>
@@ -22,13 +21,11 @@
 <forkl>(vb.; præt. aatte, aadte) ejer, ejede</forkl>
 </entry>
 
-
 <entry id="Abild">
 <ord>Abild</ord>
 <var>Abildtræ</var>
 <forkl>æbletræ</forkl>
 </entry>
-
 
 <entry id="abildgraa">
 <ord>abildgraa</ord>
@@ -118,7 +115,7 @@ Jøde'</forkl>
 </entry>
 
 
-<entry id="Algodhed(s)">
+<entry id="Algodheds">
 <ord>Algodhed(s)</ord>
 <forkl>navn for (de kristnes) Gud</forkl>
 </entry>
@@ -308,13 +305,13 @@ personnavn</forkl>
 </entry>
 
 
-<entry id="Axel[1]">
+<entry id="Axel1">
 <ord>Axel[1]</ord>
 <forkl>skulder</forkl>
 </entry>
 
 
-<entry id="Axel[2]">
+<entry id="Axel2">
 <ord>Axel[2]</ord>
 <forkl>navn (næppe historisk) for Absalon (biskop, død 1201)</forkl>
 </entry>
@@ -491,8 +488,8 @@ bryllupper</forkl>
 
 <entry id="Bjærg">
 <ord>Bjærg</ord>
-<forkl>skjul, gemme (ikke sa. ord som Bjerg)</forkl>
 <frase>Sol i Bjærge</frase>
+<forkl>skjul, gemme (ikke sa. ord som Bjerg)</forkl>
 <forkl>solnedgang</forkl>
 </entry>
 
@@ -558,19 +555,6 @@ bryllupper</forkl>
 <forkl>hidsig</forkl>
 </entry>
 
-
-<entry id="Braad[1]">
-<ord>Braad[1]</ord>
-<henvisning>Brad</henvisning>
-</entry>
-
-
-<entry id="Braad[2]">
-<ord>Braad[2]</ord>
-<henvisning>Brod</henvisning>
-</entry>
-
-
 <entry id="Brad">
 <ord>Brad</ord>
 <var>Braad</var>
@@ -601,8 +585,8 @@ bryllupper</forkl>
 <entry id="Brod">
 <ord>Brod</ord>
 <var>Braad</var>
-<forkl>spidst redskab, pigkæp; billedligt: 'dødens brod'</forkl>
 <frase>en Braad i Hjærtet</frase>
+<forkl>spidst redskab, pigkæp; billedligt: 'dødens brod'</forkl>
 </entry>
 
 
@@ -1057,8 +1041,8 @@ køreplan)</forkl>
 <entry id="Feste">
 <ord>Feste</ord>
 <var>Fæste</var>
-<forkl>befæstet sted; borg</forkl>
 <frase>Borg og Feste (pleonastisk)</frase>
+<forkl>befæstet sted; borg</forkl>
 </entry>
 
 
@@ -1275,8 +1259,8 @@ administration</forkl>
 <entry id="Freya">
 <ord>Freya</ord>
 <var>Freia</var>
-<forkl>kærlighedens gudinde i nordisk mytologi</forkl>
 <frase>Freyas Rok</frase>
+<forkl>kærlighedens gudinde i nordisk mytologi</forkl>
 <forkl>stjernebilledet Orion</forkl>
 </entry>
 
@@ -1331,7 +1315,8 @@ fuldhøie, fuldkjær, fuldklart,
 fuldkry, fuldlange, fuldliden, fuldliflig, fuldmange, fuldmørkt, fuldnær, 
 fuldplat, fuldrappe, fuldrene,
 fuldrige, fuldsvare, fuldsær(t), fuldsød, fuldtaaget, fuldtør, fuldvarm, 
-fuldværd
+fuldværd</forkl>
+</entry>
 
 
 <entry id="fus">
@@ -1395,7 +1380,7 @@ fuldværd
 </entry>
 
 
-<entry id="Ganymed(es)">
+<entry id="Ganymedes">
 <ord>Ganymed(es)</ord>
 <forkl>en skøn yngling som elskes af Zeus</forkl>
 </entry>
@@ -1526,7 +1511,7 @@ drikkehilsen; skål</forkl>
 </entry>
 
 
-<entry id="Grande(r)">
+<entry id="Grander">
 <ord>Grande(r)</ord>
 <forkl>nabo, landsbyfælle</forkl>
 </entry>
@@ -1553,13 +1538,13 @@ drikkehilsen; skål</forkl>
 </entry>
 
 
-<entry id="Hald[1]">
+<entry id="Hald1">
 <ord>Hald[1]</ord>
 <forkl>klippe, bjergtinde</forkl>
 </entry>
 
 
-<entry id="Hald[2]">
+<entry id="Hald2">
 <ord>Hald[2]</ord>
 <forkl>skråning, brink</forkl>
 </entry>
@@ -1789,7 +1774,7 @@ i samfundet</forkl>
 </entry>
 
 
-<entry id="Hospital">
+<entry id="Hospital2">
 <ord>Hospital</ord>
 <forkl>stiftelse; alderdomshjem; fattiggård</forkl>
 </entry>
@@ -1883,7 +1868,7 @@ eller på øde fjelde</forkl>
 </entry>
 
 
-<entry id="Hymenæ(e)">
+<entry id="Hymenæe">
 <ord>Hymenæ(e)</ord>
 <forkl>bryllupssang</forkl>
 </entry>
@@ -2034,18 +2019,24 @@ ord forekommer næppe før 1900)</forkl>
 </entry>
 
 
-<entry id="Jus">
+<entry id="Jus1">
 <ord>Jus</ord>
 <frase>Jus naturæ</frase>
 <forkl>naturret</forkl>
+</entry>
+
+<entry id="Jus2">
+<ord>Jus</ord>
 <frase>Jus proponendi</frase>
 <forkl>forslagsret; kirkeejerens ret til at udpege en kandidat til 
 præsteembede</forkl>
+</entry>
+
+<entry id="Jus3">
+<ord>Jus</ord>
 <frase>Jus Talionis</frase>
 <forkl>gengældelses-ret</forkl>
 </entry>
-
-
 
 
 
@@ -2146,7 +2137,7 @@ skrofulose</forkl>
 </entry>
 
 
-<entry id="Kjærminde(r)">
+<entry id="Kjærminder">
 <ord>Kjærminde(r)</ord>
 <var>Kierminde</var>
 <var>Kærminde</var>
@@ -2160,14 +2151,18 @@ skrofulose</forkl>
 </entry>
 
 
-<entry id="Klokke">
+
+<entry id="Klokke1">
 <ord>Klokke</ord>
 <frase>Klokken gaar til to</frase>
 <forkl>klokken er over ét</forkl>
+</entry>
+
+<entry id="Klokke2">
+<ord>Klokke</ord>
 <frase>Klokken (er) tre Qvarter til Ni</frase>
 <forkl>klokken er ét kvarter i ni (8.45)</forkl>
 </entry>
-
 
 <entry id="Klokke-Slæt">
 <ord>Klokke-Slæt</ord>
@@ -2234,8 +2229,8 @@ også om opstyltet udtryksform</forkl>
 
 <entry id="kreng">
 <ord>kreng</ord>
-<forkl>dygtig</forkl>
 <frase>kreng i Tale</frase>
+<forkl>dygtig</forkl>
 <forkl>ordsnild, veltalende</forkl>
 </entry>
 
@@ -2311,13 +2306,6 @@ vand</forkl>
 <var>Leffue</var>
 <forkl>brød (sml. eng. <i>loaf</i>)</forkl>
 </entry>
-
-
-<entry id="Lidskialf">
-<ord>Lidskialf</ord>
-<henvisning>Hlidskialf</henvisning>
-</entry>
-
 
 <entry id="Liggendefæ">
 <ord>Liggendefæ</ord>
@@ -2416,8 +2404,8 @@ pige</forkl>
 <entry id="Maar">
 <ord>Maar</ord>
 <var>Maard</var>
-<forkl>(skind af) mår</forkl>
 <frase>vel svøbt i Maar(d)</frase>
+<forkl>(skind af) mår</forkl>
 <forkl>(stående udtryk i folkeviser) prægtigt klædt</forkl>
 </entry>
 
@@ -2546,19 +2534,19 @@ græske Hermes</forkl>
 </entry>
 
 
-<entry id="Mile[1]">
+<entry id="Mile1">
 <ord>Mile[1]</ord>
 <forkl>bidsel; hests hovedtøj</forkl>
 </entry>
 
 
-<entry id="Mile[2]">
+<entry id="Mile2">
 <ord>Mile[2]</ord>
 <forkl>stor ubevokset klit</forkl>
 </entry>
 
 
-<entry id="Mile[3]">
+<entry id="Mile3">
 <ord>Mile[3]</ord>
 <forkl>kulmile (til produktion af trækul)</forkl>
 </entry>
@@ -2596,7 +2584,7 @@ græske Hermes</forkl>
 </entry>
 
 
-<entry id="Miskundhed(s)">
+<entry id="Miskundheds">
 <ord>Miskundhed(s)</ord>
 <var>Mißgund</var>
 <var>Miskund</var>
@@ -3097,7 +3085,7 @@ ny Phønix; solfugl</forkl>
 </entry>
 
 
-<entry id="Pluto(n)">
+<entry id="Pluton">
 <ord>Pluto(n)</ord>
 <forkl>underverdenens hersker</forkl>
 </entry>
@@ -3225,7 +3213,7 @@ sang</forkl>
 </entry>
 
 
-<entry id="rar(e)">
+<entry id="rare">
 <ord>rar(e)</ord>
 <forkl>sjælden</forkl>
 </entry>
@@ -3358,7 +3346,7 @@ gør sig rede til gudstjenesten</forkl>
 </entry>
 
 
-<entry id="Saracen(er)">
+<entry id="Saracener">
 <ord>Saracen(er)</ord>
 <forkl>araber, muslim</forkl>
 </entry>
@@ -3502,12 +3490,12 @@ navn)</forkl>
 
 <entry id="skade">
 <ord>skade</ord>
-<frase>Hvad skaded Manden? = hvad var der i vejen med ham; hvad fejlede 
-han</frase>
+<frase>Hvad skaded Manden?</frase>
+<forkl>hvad var der i vejen med ham; hvad fejlede han</forkl>
 </entry>
 
 
-<entry id="skakre(r)">
+<entry id="skakrer">
 <ord>skakre(r)</ord>
 <var>sjakre</var>
 <forkl>opkøbe og sælge (f.eks. brugte klæder); prange</forkl>
@@ -3637,19 +3625,19 @@ renovation)</forkl>
 </entry>
 
 
-<entry id="Soer[1]">
+<entry id="Soer1">
 <ord>Soer[1]</ord>
 <forkl>Sorø</forkl>
 </entry>
 
 
-<entry id="soer[2]">
+<entry id="soer2">
 <ord>soer[2]</ord>
 <forkl>svor (præt. af <i>sværge</i>)</forkl>
 </entry>
 
 
-<entry id="solbar(e)">
+<entry id="solbare">
 <ord>solbar(e)</ord>
 <forkl>som ligger i solen; solrig</forkl>
 </entry>
@@ -3731,7 +3719,7 @@ renovation)</forkl>
 </entry>
 
 
-<entry id="stalt(en)">
+<entry id="stalten">
 <ord>stalt(en)</ord>
 <forkl>i folkeviser, foran kvindenavn: stolt</forkl>
 </entry>
@@ -3908,7 +3896,7 @@ i spidsen for et distrikt som skulle udruste et krigsskib)</forkl>
 </entry>
 
 
-<entry id="Talsmand(en)">
+<entry id="Talsmanden">
 <ord>Talsmand(en)</ord>
 <forkl>navn for Helligånden (Joh.14,26)</forkl>
 </entry>
@@ -3936,8 +3924,8 @@ forfængeligheden</forkl>
 
 <entry id="Thalia">
 <ord>Thalia</ord>
-<forkl>muse for skuespildigtning</forkl>
 <frase>Thalias Caroline</frase>
+<forkl>muse for skuespildigtning</forkl>
 <forkl>Ewalds navn for Caroline Walter (1755-1826), den betydeligste danske 
 skuespillerinde i slutningen af 1700-tallet</forkl>
 </entry>
@@ -3961,12 +3949,6 @@ kraftløst, småborgerligt</forkl>
 <entry id="Thrudvanger">
 <ord>Thrudvanger</ord>
 <forkl>Thors rige</forkl>
-</entry>
-
-
-<entry id="Thule">
-<ord>Thule</ord>
-<forkl>(poet.) Norden; en fjern og iskold egn</forkl>
 </entry>
 
 
@@ -4153,7 +4135,7 @@ Dionysos (eller af deltagere i Dionysos-optog)</forkl>
 </entry>
 
 
-<entry id="uskatterlig(e)">
+<entry id="uskatterlige">
 <ord>uskatterlig(e)</ord>
 <forkl>uvurderlig</forkl>
 </entry>
