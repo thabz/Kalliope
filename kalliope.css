@@ -306,17 +306,17 @@ td.top {
 /* Styles used by Kalliope::Page::addBox() */
 
 div.boxnormal {
-   padding: 10 10 10 10;
+   padding: 10px 10px 10px 10px;
 }
 
 div.boxbook {
-    font-family: Georgia, Times;
-    padding: 10 10 10 10;
+    font-family: Georgia, Times, serif;
+    padding: 10px 10px 10px 10px;
     height: 100%;		
 }
 
 div.boxdark {
-   padding: 10 10 10 10;
+   padding: 10px 10px 10px 10px;
 }
 
 a.more {
