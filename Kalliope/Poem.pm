@@ -468,7 +468,6 @@ sub getSearchResultEntry {
     my $author = $self->author;
     my $poemTitle = $self->linkTitle;
 
-    my $match = '';
     my $slash = '<SPAN STYLE="color: #a0a0a0">//</SPAN>';
     my $match = '';
     foreach my $ne (@needle) {
