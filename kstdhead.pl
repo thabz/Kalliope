@@ -116,7 +116,7 @@ goto kaj;
 # Language selector
 #
 
-beginbluebox ("Sprog","100%","center");
+beginwhitebox ("Sprog","100%","center");
 print "<TABLE CELLPADDING=4 ><TR>";
 
 $col1 = $col2 = $col3 = $col4 = '';
@@ -155,14 +155,24 @@ sub kfooterHTML {
 	print "</BODY></HTML>";
 };
 
+####
+# Udskriver overskriften for midter afsnit
+#
+
+sub kcenterpageheader {
+    return;
+    print "<table border=0 cellpadding=1 cellspacing=0 width=\"100%\"><tr><td bgcolor=#000000>";
+    print "<TABLE align=center cellspacing=0 cellpadding=15 border=0 bgcolor=#e0e0f0 BORDER=5 WIDTH=\"100%\"><TR>";
+    print "<TD WIDTH=\"100%\" BORDER=0 VALIGN=center align=center>";
+    print "<FONT SIZE=24><I>".$_[0]."</I></FONT>";
+    print "</TD></TR></TABLE>";
+    print "</td></tr></table><BR>";
+}
+
 #######################################
 #
 # Standard box 
 #
-
-sub beginbluebox {
-    beginwhitebox(@_);
-}
 
 sub beginwhitebox {
     my ($title,$width,$align) = @_;

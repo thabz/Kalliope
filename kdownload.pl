@@ -28,7 +28,7 @@ $LA = $ARGV[0];
 
 &kheaderHTML("Kalliope - Download",$LA);
 
-beginbluebox("Filer","","center");
+beginwhitebox("Filer","","center");
 
 print "<TABLE CELLPADDING=10><TR><TD ALIGN=center>";
 print "<A HREF=\"../../download/kalliope-cgi.tar.gz\">";

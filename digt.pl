@@ -114,7 +114,6 @@ if ($dnoter || $sth->rows>0) {
 #Udskriv indholdsfortegnelse for dette værk
 
 $myvaar = ($vaar eq "\?") ? "" : " (".$vaar.")";
-#beginbluebox("<I>$vtitel</I>".$myvaar,"175","left");
 beginwhitebox("Indhold","200","left");
 print '<FONT SIZE="-1">';
 

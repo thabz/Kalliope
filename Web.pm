@@ -26,7 +26,7 @@ use URI::Escape;
 use Exporter ();
 
 @ISA = qw(Exporter);
-@EXPORT = qw(kheaderHTML kfooterHTML beginbluebox beginwhitebox beginnotebox begindarkbluebox enddarkbluebox endbox $dbh);
+@EXPORT = qw(kheaderHTML kfooterHTML beginwhitebox beginnotebox begindarkbluebox enddarkbluebox endbox $dbh);
 
 do 'dbconnect.pl';
 
@@ -129,10 +129,6 @@ sub kfooterHTML {
 #
 # Standard box 
 #
-
-sub beginbluebox {
-    beginwhitebox(@_);
-}
 
 sub beginwhitebox {
     my ($title,$width,$align) = @_;
