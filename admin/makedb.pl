@@ -427,7 +427,7 @@ while ($v = $sth->fetchrow_hashref) {
 	s/\r//;
 	s/,,/&bdquo;/g;
 	s/''/&ldquo;/g;
-	s/ *$//g;
+	s/ *$//;
 	next if (/^\#/);
 	next if (/^VN:/);
 	next if (/^VP:/);
@@ -547,7 +547,7 @@ sub insertdigt {
     print "$id mangler titel\n" if $titel eq '';
     $indhold =~ s/\s+$//;
     $noter =~ s/[\n\s]+$//;
-    $indhold =~ s/^\n+//m;
+    $indhold =~ s/^\n+//s;
     $pics = join '$$$',@pics;
     $haystack = Kalliope::Strings::stripHTML("$titel $under $indhold");
 
