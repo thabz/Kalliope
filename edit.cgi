@@ -83,6 +83,13 @@ sub editPage {
 	$new = 0;
 	($data) = $sth->fetchrow_array;
     }
+    
+    my ($prev,$next) = _nextAndPrevFiles($dir,$filename);
+    my $navHTML = '<table width="100%"><tr>';
+    $navHTML .= $prev ? qq|<td width="33%"><a href="edit.cgi?dir=$dir&file=$prev">&lt;&lt; Forrige side</a></td>| : "<td></td>";
+    $navHTML .= qq|<td width="33%"><a href="edit.cgi?dir=$dir">Indeks</a></td>|;
+    $navHTML .= $next ? qq|<td width="33%"><a href="edit.cgi?dir=$dir&file=$next">Næste side &gt;&gt;</a></td>| : "<td></td>";
+    $navHTML .= '</tr></table>';
 
     my $HTML = '<form method="post">';
     $HTML .= qq|<input type="hidden" name="dir" value="$dir">|;
@@ -90,7 +97,9 @@ sub editPage {
     $HTML .= qq|<input type="hidden" name="user" value="$user">|;
     $HTML .= qq|<input type="hidden" name="new" value="$new">|;
     $HTML .= qq|<table width="100%"><tr>\n|;
-    $HTML .= qq|<td valign=top><img src="edit/files/$gfxFile"></td>|;
+    $HTML .= qq|<td valign=top>|;
+    $HTML .= $navHTML;
+    $HTML .= qq|<br><img src="edit/files/$gfxFile"></td>|;
     $HTML .= qq|<td valign=top><textarea rows=30 name="data" style="width:300px; height:90%">$data</textarea><br>|;
     $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Gem ændringer">';
     $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Godkend tekst">';
@@ -121,11 +130,13 @@ sub handleForm {
 
 sub showDir {
     my $dir = shift;
-    opendir(DIR,"edit/files/$dir");
-    my $HTML = '';
+    my $entriesPerColumn = int(_sizeOfDir($dir) / 3) + 1;
+    return "Fejl. Fandt ingen filer i <tt>$dir</tt>" unless $entriesPerColumn;
+    my $HTML = '<table width="100%"><tr><td valign="top" width="33%">';
     my $dbh = Kalliope::DB::connect();
     my $sth = $dbh->prepare("SELECT action,login,date FROM edithistory WHERE filename = ? AND dir = ?");
-    foreach my $f (grep {!/^\./} readdir(DIR)) {
+    my $i = 0;
+    foreach my $f (_readDir($dir)) {
 	$HTML .= qq|<a class="green" href="edit.cgi?dir=$dir&file=$f">$f</a>|;
 	$sth->execute($f,$dir);
 	while (my ($action,$login,$date) = $sth->fetchrow_array) {
@@ -133,8 +144,12 @@ sub showDir {
 	    $HTML .= qq|<IMG ALT="$dateTxt af $login" SRC="gfx/$action.png">|;
 	}
 	$HTML .= "<br>\n";
+	$i++;
+	unless ($i % $entriesPerColumn) {
+	    $HTML .= '</td><td valign="top" width="33%">';
+	}
     }
-    return $HTML;
+    return $HTML.'</td></tr></table>';
 }
 
 sub showRootDir {
@@ -146,3 +161,30 @@ sub showRootDir {
     return $HTML;
 }
 
+sub _sizeOfDir {
+    return _readDir(shift) + 1;
+}
+
+sub _readDir {
+    my $dir = shift;
+    opendir(DIR,"edit/files/$dir");
+    my @files = grep {!/^\./} readdir(DIR);
+    close DIR;
+    return @files;
+}
+
+sub _nextAndPrevFiles {
+    my ($dir,$file) = @_;
+    my @files = _readDir($dir);
+    my $index = _indexOf($file,@files);
+    return (($index - 1 >= 0) ? $files[$index - 1] : undef,
+	    ($index + 1 <= $#files) ? $files[$index + 1] : undef);
+}
+
+sub _indexOf {
+    my ($val,@array) = @_;
+    for(my $i = 0; $i <= $#array; $i++) {
+	return $i if $array[$i] eq $val;
+    }
+    return undef;
+}
