@@ -31,13 +31,24 @@ my $mode = url_param('mode') || 'titel';
 my $LA = url_param('sprog') || 'dk';
 my $limit = url_param('limit') || '10';
 
+my %crumbTitle = ('aar'    => 'efter år',
+                  'titel'  => 'efter titler',
+		  'digter' => 'efter figter',
+		  'pop'    => 'mest populære' );
+
+my @crumbs;
+push @crumbs,['Værker',''];
+push @crumbs,[$crumbTitle{$mode},''];
+
 my $page = new Kalliope::Page (
 		title => 'Værker',
                 lang => $LA,
+		crumbs => \@crumbs,
                 pagegroup => 'worklist',
                 page => "kvaerker$mode" );
 
 my $dbh = Kalliope::DB->connect;
+
 
 if ($mode eq 'titel') {
     my $HTML;
@@ -129,7 +140,7 @@ if ($mode eq 'titel') {
 	    $HTML .= "<BR><DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR>\n";
 	}
 
-	$HTML .= $vaerkaar.' - <A HREF="fvaerker.pl?'.$fhandle.'">'.$ffornavn.' '.$fefternavn.'</A>: ';
+	$HTML .= $vaerkaar.' - <A HREF="fvaerker.pl?fhandle='.$fhandle.'">'.$ffornavn.' '.$fefternavn.'</A>: ';
 	if ($exists == 0) {
 	    $HTML .= "<I>$vtitel</I><BR>";
 	} else {
