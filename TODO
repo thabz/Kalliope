@@ -12,7 +12,6 @@ Indhold:
 * Nøgleord om metadigtning (i forb. m. Oehl.s »Digtekunsten.«), læredigte (didaktiske digte),
    ode (redigering), epik/epos, lyrik.
 * Tilføj BFN numre til alle HCA digte i Kalliope. Cf. http://www.andersen.sdu.dk/bfn/bfn_bib.htm
-* Husk at skamrose Jesper minimum 4 gange dagligt for at have fået CVS til at virke igen.
 
 Kode:
 
@@ -26,6 +25,7 @@ Kode:
 * Søgemaskinen indekserer også indhold at footnotes. Søg f.eks. efter 'kalliope'. Ups!
 * Mest populære værker kan ikke expandes...
 * - skal konverteres til &dash; eller endnu bedre &#0151;
+* Kan pt. kun håndtere een XREF pr. linie.
 
 XML:
 
