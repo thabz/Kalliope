@@ -31,8 +31,9 @@ use strict;
 my $showAllNews = CGI::param('showall') eq 'yes' ? 1 : 0;
 
 my $page = new Kalliope::Page (
-		title => 'Kalliope - lækker og sommerbrun...',
+		title => 'Kalliope - nu også i en frisk sommerbrun',
                 pagegroup => 'welcome',
+		frontpage => 1,
 		changelangurl => 'poets.cgi?list=az&sprog=XX',
                 page => 'news',
            );

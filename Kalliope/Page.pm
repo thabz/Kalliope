@@ -95,7 +95,7 @@ sub titleAsHTML {
 
 sub titleForWindow {
     my $self = shift;
-    return $self->{'title'} ? $self->{'title'}.' - Kalliope' : 'Kalliope'
+    return $self->{'frontpage'} ? 'Kalliope' : $self->{'title'}.' - Kalliope';
 }
 
 sub setColoumnWidths {
