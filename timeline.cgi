@@ -23,7 +23,6 @@
 
 use Kalliope;
 use Kalliope::Person;
-use Web;
 use CGI qw(:standard);
 do 'kstdhead.pl';
 

@@ -23,8 +23,10 @@
 use CGI qw /:standard/;
 use Kalliope::Page ();
 use Kalliope::Web ();
-use Web;
+use Kalliope::DB ();
 use strict;
+
+my $dbh = Kalliope::DB->connect;
 
 my $LA = url_param('sprog') || 'dk';
 
