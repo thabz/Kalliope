@@ -247,7 +247,7 @@ sub _contentAsPoemHTML {
 		&& $lineForTjek !~ /^ *\[\d+\] *$/
 		&& $line !~ /<nonum>/
 		&& $line !~ /<wrap>/
-		&& $lineForTjek !~ /^[ \t]*[IVXLMD]+\.? *$/)
+		&& $lineForTjek !~ /^[ \t]*[IVXLCDM]+\.? *$/)
 	{
 	    $num++;
 	} else {
@@ -257,7 +257,7 @@ sub _contentAsPoemHTML {
 	my $align = 'left';
 
         # Gray out versenumbers
-	if ($lineForTjek =~ /^[ \t]*[IVXLMD]+\.? *$/ 
+	if ($lineForTjek =~ /^[ \t]*[IVXLCDM]+\.? *$/ 
                || $lineForTjek =~ /^ *\d+\.? *$/
 	       || $lineForTjek =~ /^ *\[\d+\] *$/ ) {
 	    $line = qq|<span style="color:#808080">$line</span>|;
