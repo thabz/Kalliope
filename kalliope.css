@@ -1,3 +1,8 @@
+abbr {
+   text-decoration: none;
+   border: none;
+}
+
 A.timecontext:link, A.timecontext:visited, A.timecontext:active { text-decoration: none; }
 A.timecontext:hover { border-bottom: 1px solid #f040f0}
 
