@@ -76,7 +76,6 @@ sub buildhrefs {
     } 
 
     while ($$txt =~ /XREF DIGT/i) {
-	print STDERR "Pis!\n";
 	if ($$txt =~ /<XREF DIGT="([^"]+)"\/?>/i) {
 	    my $did = $1;
 	my $poem = new Kalliope::Poem(longdid => $did);
@@ -86,7 +85,7 @@ sub buildhrefs {
 	} else {
 	    $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
 	}
-	$$txt =~ s/<XREF DIGT="$did"\/?>/»$link«/i;
+	$$txt =~ s/<XREF DIGT="$did"\/?>/$link/i;
     }
     }
     if ($$txt =~ /<XREF KEYWORD="(.+)"\/?>/i) {
