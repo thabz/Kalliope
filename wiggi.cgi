@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-# Test
+# Test min bare, jeg er for rå! :)
 
 #  Copyright (C) 1999-2001 Jesper Christensen 
 #
