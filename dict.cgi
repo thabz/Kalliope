@@ -39,7 +39,7 @@ my $wid = url_param('wid');
 my $letter = url_param('letter');
 my @crumbs;
 push @crumbs,['Ordbog','dict.cgi'];
-push @crumbs,[Kalliope::Strings::uc($letter),''];
+push @crumbs,[Kalliope::Strings::uc($letter),''] if $letter;
 
 $page = new Kalliope::Page (
 	title => "Ordbog",
