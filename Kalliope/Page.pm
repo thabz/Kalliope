@@ -32,10 +32,19 @@ sub new {
     $self->{'lang'} = $args{'lang'} || 'dk';
     $self->{'pagegroup'} = $args{'pagegroup'};
     $self->{'page'} = $args{'page'};
-    $self->{'author'} = $args{'author'};
     $self->{'thumb'} = $args{'thumb'};
     $self->{'title'} = $args{'title'};
     $self->{'columns'} = [];
+
+    if ($args{'changelangurl'}) {
+        $self->{'changelangurl'} = $args{'changelangurl'};
+    } elsif ($self->{'poet'}) {
+	$self->{'changelangurl'} = 'poets.cgi?list=az&sprog=XX';
+    } else {
+	$ENV{REQUEST_URI} =~ /([^\/]*)$/;
+	$self->{'changelangurl'} = $1;
+    }
+
     return $self;
 }
 
@@ -124,12 +133,38 @@ sub _constructBreadcrumbs {
 
 sub addBox {
     my ($self,%args) = @_;
-    $self->addHTML (Kalliope::Web::makeBox (
-               $args{'title'} || '',
-               $args{'width'} || '',
-               $args{'align'} || '',
-               $args{'content'} || '',
-               $args{'end'} || ''), %args );
+
+    my $HTML;
+    $HTML .= '<TABLE WIDTH="'.$args{width}.'" ALIGN="center" BORDER=0 CELLPADDING=1 CELLSPACING=0><TR><TD ALIGN=right>';
+    if ($args{title}) {
+	$HTML .= '<DIV STYLE="position: relative; top: 16px; left: -10px;">';
+	$HTML .= '<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=0><TR><TD BGCOLOR=black>';
+	$HTML .= '<TABLE ALIGN=center WIDTH="100%" CELLSPACING=0 CELLPADDING=2 BORDER=0><TR><TD CLASS="boxheaderlayer" BGCOLOR="#7394ad" BACKGROUND="gfx/pap.gif" >';
+	$HTML .= $args{title};
+	$HTML .= "</TD></TR></TABLE>";
+	$HTML .= "</TD></TR></TABLE>";
+	$HTML .= '</DIV>';
+    }
+    $HTML .= '</TD></TR><TR><TD VALIGN=top BGCOLOR=black>';
+    $HTML .= '<TABLE WIDTH="100%" ALIGN=center CELLSPACING=0 CELLPADDING=15 BORDER=0>';
+    $HTML .= '<TR><TD '.($args{align} ? qq|ALIGN="$args{align}"| : '').' BGCOLOR="#e0e0e0" BACKGROUND="gfx/lightpap.gif">';
+    $HTML .= $args{content};
+    if ($args{end}) {
+	$HTML .= "</TD></TR></TABLE>";
+	$HTML .= "</TD></TR><TR><TD>";
+	$HTML .= '<DIV STYLE="position: relative; top: -10px; left: 10px;">';
+	$HTML .= '<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=0><TR><TD BGCOLOR=black>';
+	$HTML .= '<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=2 BORDER=0><TR><TD CLASS="boxheaderlayer" BGCOLOR="#7394ad" BACKGROUND="gfx/pap.gif" >';
+	$HTML .= $args{end};
+	$HTML .= "</TD></TR></TABLE>";
+	$HTML .= "</TD></TR></TABLE>";
+	$HTML .= '</DIV>';
+	$HTML .= '</TD></TR></TABLE>';
+    } else {
+	$HTML .= "</TD></TR></TABLE>";
+	$HTML .= "</TD></TR></TABLE>";
+    }
+    $self->addHTML($HTML, %args);
 }
 
 sub print {
@@ -185,16 +220,11 @@ EOF
 # Private ------------------------------------------------------
 #
 
-sub changeLangURL {
-    my $self = shift;
-    return 'poets.cgi?list=az&sprog='.$self->lang;
-}
-
 sub langSelector {
     my $self = shift;
     my $selfLang = $self->lang;
     my $HTML;
-    my $url = $self->changeLangURL;
+    my $url = $self->{'changelangurl'};
     foreach my $lang ('dk','uk','de','fr','se','no') {
        my $refURL = $url;
        $refURL =~ s/sprog=../sprog=$lang/;
