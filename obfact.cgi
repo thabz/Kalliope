@@ -90,7 +90,7 @@ $HTML .= '<table>';
 my $sth = $dbh->prepare("select * from timeline where (? - year) % 50 = 0 and type = 'event' order by month,day");
 $sth->execute(2002);
 while ($h = $sth->fetchrow_hashref) {
-    $HTML .= '<tr><td>';
+    $HTML .= '<tr><td nowrap>';
     if ($h->{'day'}) {
 	$HTML .= "$$h{year}-$$h{month}-$$h{day}";
     } else {
@@ -101,7 +101,7 @@ while ($h = $sth->fetchrow_hashref) {
     my $text = $h->{'description'};
     Kalliope::buildhrefs(\$text);
     $HTML .= $text;
-    $HTML .= '</td><td>(';
+    $HTML .= '</td><td nowrap>(';
     $HTML .= 2002-$h->{'year'};
     $HTML .= ' år)</td></tr>';
 }
