@@ -155,7 +155,8 @@ my %menuStructs = (
                        },
          'poets'    => {menuTitle => 'Digtere',
                        url => 'poets.cgi?list=az&sprog='.$lang,
-                       'pages' => ['poetsbyname','poetsbyyear','poetsbypic']
+                       'pages' => ['poetsbyname','poetsbyyear','poetsbypic',
+		                   'poetsbyflittige']
                        },
          'worklist' => {menuTitle => 'Værker',
                        url => 'kvaerker.pl?sprog='.$lang,
@@ -202,6 +203,9 @@ my %menuStructs = (
                        },
          'poetsbypic' => {menuTitle => 'Digtere efter udseende',
                            url => 'poets.cgi?list=pics&sprog='.$lang
+                       },
+         'poetsbyflittige' => {menuTitle => 'Flittigste digtere',
+                           url => 'poets.cgi?list=flittige&sprog='.$lang
                        },
          'kvaerkertitel' => {menuTitle => 'Værker efter titel',
                            url => 'kvaerker.pl?mode=titel&sprog='.$lang

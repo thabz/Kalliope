@@ -41,12 +41,17 @@ my %pageTypes = ('az' => {'title' => 'Digtere efter navn',
                  'pics' => {'title' => 'Digtere efter udseende',
                           'function' => 'listpics',
 			  'crumbtitle' => 'efter udseende',
-                          'page' => 'poetsbypic'}
+                          'page' => 'poetsbypic'},
+                 'flittige' => {'title' => 'Flittigste digtere',
+                          'function' => 'listflittige',
+			  'crumbtitle' => 'flittigste',
+                          'page' => 'poetsbyflittige'}
                 );
 
 my $listType = CGI::url_param('list');
 
-if ($listType ne 'az' && $listType ne '19' && $listType ne 'pics') {
+if ($listType ne 'az' && $listType ne '19' && 
+    $listType ne 'pics' && $listType ne 'flittige') {
     Kalliope::Page::notFound;
 }
 
@@ -189,3 +194,29 @@ sub listpics {
      return $HTML;
 }
 
+sub listflittige {
+    my $limit = 10;
+    my $dbh = Kalliope::DB->connect;
+    my $sth = $dbh->prepare("select fornavn,efternavn,foedt, doed, fhandle, count(did) as val from fnavne, digte where foedt != '' AND digte.fid=fnavne.fid and fnavne.sprog=? and afsnit=0 group by fnavne.fid order by val desc, efternavn ".(defined($limit) ? 'LIMIT '.$limit : ''));
+    $sth->execute($LA);
+
+    my $HTML;
+    my $total;
+    my $i = 1;
+    $HTML .= '<TABLE WIDTH="100%">';
+    $HTML .= '<TR><TH></TH><TH>Navn</TH><TH>Digte</TH></TR>';
+    while (my $h = $sth->fetchrow_hashref) {
+	$HTML .= '<TR><TD>'.$i++.'.</TD>';
+	$HTML .= '<TD><A HREF="ffront.cgi?fhandle='.$h->{fhandle}.'">'.$h->{fornavn}.' '.$h->{efternavn}.'<FONT COLOR=#808080> ('.$h->{foedt}.'-'.$h->{doed}.')</FONT></A></TD>';
+	$HTML .= '<TD ALIGN=right>'.$h->{'val'}.'</TD>';
+	$total += $h->{val};
+    }
+#    if (defined($limit)) {
+#	$HTML .= '</TABLE>';
+#	endbox('<A HREF="flistflittige.pl?sprog='.$LA.'"><IMG VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Hele listen"></A>');
+#    } else {
+#    $HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD></TR>";
+    $HTML .= '</TABLE>';
+#}
+    return $HTML; 
+}
