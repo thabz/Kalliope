@@ -74,6 +74,10 @@ footnote {
     display: none;
 }
 
+.red {
+    color: rgb(139,56,65);
+}
+
 INPUT.button {
     background-color: rgb(139,56,65);
     color: white;
