@@ -15,6 +15,8 @@ use Kalliope::Build::Works;
 use Kalliope::Build::Texts;
 use Kalliope::Build::Timestamps;
 use Kalliope::Build::Firstletters;
+use Kalliope::Build::Links;
+use Kalliope::Build::Database;
 use POSIX;
 use Getopt::Long;
 
@@ -28,8 +30,10 @@ GetOptions ("all" => \$__all);
 if ($__all) {
     &log ("Creating tables...");
     Kalliope::Build::Persons::create();
+    Kalliope::Build::Timeline::create();
     Kalliope::Build::Works::create();
     Kalliope::Build::Texts::create();
+    Kalliope::Build::Xrefs::create();
     Kalliope::Build::Timestamps::create();
     Kalliope::Build::Firstletters::create();
     Kalliope::Build::Keywords::create();
@@ -74,12 +78,18 @@ $sthkeyword = $dbh->prepare("INSERT INTO keywords_relation (keywordid,otherid,ot
 #
 
 $poetsFile = '../data/poets.xml';
+my %persons;
 if (Kalliope::Build::Timestamps::hasChanged($poetsFile)) {
     &log("Making persons... ");
     Kalliope::Build::Persons::create();
     my %persons = Kalliope::Build::Persons::parse($poetsFile);
     Kalliope::Build::Persons::insert(%persons);
     Kalliope::Build::Timestamps::register($poetsFile);
+    Kalliope::Build::Links::create();
+    Kalliope::Build::Links::insert();
+    &log("Done");
+    &log ("Making timeline... ");
+    Kalliope::Build::Timeline::build(%persons);
     &log("Done");
 } else {
     &log ("(Poets not modified)");
@@ -108,10 +118,19 @@ if (!$__all) {
 Kalliope::Build::Firstletters::insert(@changedWorks);
 &log("Done");
 
-
 &log('Persons postinsert...');
 Kalliope::Build::Persons::postinsert();
 &log("Done");
+
+if (!$__all) {
+   &log('Cleaning xrefs...');
+   Kalliope::Build::Xrefs::clean(@changedWorks);
+   &log("Done");
+}
+&log('Inserting xrefs...');
+Kalliope::Build::Xrefs::insert(@changedWorks);
+&log("Done");
+
 
 #
 # Build biblio
@@ -120,6 +139,7 @@ Kalliope::Build::Persons::postinsert();
 &log("Making biblio... ");
 Kalliope::Build::Biblio::build();
 &log("Done");
+
 
 exit;
 
@@ -150,37 +170,6 @@ while ($h = $sth->fetchrow_hashref) {
 &log("Done");
 
 #
-# Build links
-#
-
-&log("Build links... ");
-$rc = $dbh->do("drop table if exists links");
-$rc = $dbh->do("CREATE TABLE links ( 
-              id int UNSIGNED DEFAULT '0' NOT NULL PRIMARY KEY auto_increment,
-              fid int NOT NULL,
-              fhandle char(40) NOT NULL,
-              url text NOT NULL,
-              beskrivelse text NOT NULL,
-              KEY fid_index (fid), 
-              UNIQUE (id))");
-
-$sth = $dbh->prepare("SELECT fhandle,fid FROM fnavne WHERE links=1");
-$sth->execute;
-$sth2= $dbh->prepare("INSERT INTO links (fhandle,fid,url,beskrivelse) VALUES (?,?,?,?)");
-while ($fn = $sth->fetchrow_hashref) {
-    open (FILE,"../fdirs/".$fn->{'fhandle'}."/links.txt");
-    while (<FILE>) {
-	$url = $_;
-	$desc = <FILE>;
-	$sth2->execute($fn->{'fhandle'},$fn->{'fid'},$url,$desc);
-    }
-    close (FILE)
-}
-$sth2->finish;
-$sth->finish;
-&log("Done");
-
-#
 # Build værker
 #
 
@@ -199,8 +188,6 @@ $sth->finish;
 # Timeline ------------------------------------------------------------
 #
 
-&log ("Making timeline... ");
-Kalliope::Build::Timeline::build(%persons);
 
 #
 # Xrefs
