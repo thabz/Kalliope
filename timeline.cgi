@@ -131,13 +131,11 @@ sub emptySlotId {
     my $yearBorn = shift;
     foreach my $slotid (0..$usedSlots) {
 	if (!defined $slotHTML[$slotid]) {
-            print STDERR "1. Unused $slotid\n";
             $slotHTML[$slotid] = '';
             $slotDead[$slotid] = $YEAR_BEGIN;
 	    return $slotid;
 	}
         if ($yearBorn > $slotDead[$slotid]) {
-            print STDERR "2. Unused $slotid\n";
             return $slotid;
         }
     }
@@ -145,6 +143,5 @@ sub emptySlotId {
     my $newSlot = ++$usedSlots;
     $slotHTML[$newSlot] = '';
     $slotDead[$newSlot] = $YEAR_BEGIN;
-    print STDERR "3. Unused $newSlot\n";
     return $newSlot;
 }

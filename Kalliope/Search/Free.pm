@@ -75,7 +75,6 @@ sub result {
     my $sth = $dbh->prepare("SELECT id,id_class, MATCH titel,hay AGAINST (?) AS quality FROM haystack WHERE (MATCH titel,hay AGAINST (?) > 0) AND lang = ? ORDER BY quality DESC LIMIT ?,10");
     $sth->execute($self->needle,$self->needle,$self->lang,$self->firstNumShowing);
 
-    print STDERR "Antal:".$sth->rows;
     my @matches;
     while (my $d = $sth->fetchrow_hashref)  {
 	push @matches,[$$d{'id'},$$d{'id_class'},$$d{'quality'}];
