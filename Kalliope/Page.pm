@@ -261,12 +261,12 @@ EOF
     print '</TD>';
 
     print '<TD BGCOLOR="black">';
-    print '<IMG SRC="gfx/trans1x1.gif" WIDTH=30>';
+    print '<IMG SRC="gfx/trans1x1.gif" WIDTH=0>';
     print '</TD>';
     print '</TR>';
 
     # Foot
-    print '<TR><TD COLSPAN=3 HEIGHT="40" BGCOLOR="black" ALIGN="right">';
+    print '<TR><TD COLSPAN=3 HEIGHT="40" BGCOLOR="black" ALIGN="right" VALIGN="middle">';
 
     print '<TABLE><TR><TD VALIGN="middle" ALIGN="right">';
     print '<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT STYLE="width: 80px" NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><BR><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free"></FORM>';
