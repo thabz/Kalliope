@@ -254,7 +254,7 @@ sub linenotes {
 	my $text = $line{'linenote'};
 	next unless $text;
 	my $num = $line{'linenum'};
-	$HTML .= "<b>$num</b> $text ";
+	$HTML .= "<b>$num</b> $text<br>";
     }
     return $HTML;
 }
