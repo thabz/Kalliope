@@ -38,7 +38,7 @@ sub clean {
 
 sub insert {
     my @changed = @_;
-    my $sth = $dbh->prepare("SELECT longdid,indhold as content FROM digte WHERE vid = ? UNION SELECT longdid,note as content FROM textnotes WHERE vid = ?");
+    my $sth = $dbh->prepare("SELECT longdid,indhold as content FROM digte WHERE vid = ? UNION SELECT t.longdid,t.note as content FROM textnotes t, digte d WHERE d.longdid = t.longdid AND d.vid = ?");
     my $sthins = $dbh->prepare("INSERT INTO xrefs (fromid,toid,fromvid) VALUES (?,?,?)");
 
     foreach my $item (@changed) {

@@ -46,7 +46,7 @@ sub insert {
 sub create {
     $dbh->do("DROP TABLE links");
     $dbh->do("CREATE TABLE links ( 
-              fhandle varchar(40) NOT NULL REFERENCES fnavne(fhandle),
+              fhandle varchar(40) NOT NULL REFERENCES fnavne(fhandle) ON DELETE CASCADE,
               url text NOT NULL,
               beskrivelse text NOT NULL)");
    $dbh->do(q/CREATE INDEX links_fhandle ON links(fhandle)/);

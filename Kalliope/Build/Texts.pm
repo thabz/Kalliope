@@ -27,9 +27,10 @@ use Kalliope::Date;
 use strict;
 
 my $dbh = Kalliope::DB::connect();
-my $sthGroup = $dbh->prepare("INSERT INTO digte (did,longdid,fhandle,parentdid,linktitel,toptitel,toctitel,tititel,foerstelinie,indhold,vaerkpos,vid,type,underoverskrift,lang,createtime,quality) VALUES (nextval('seq_digte_vid'),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-my $sthseqval = $dbh->prepare("SELECT currval('seq_digte_vid')");
-my $sthnote = $dbh->prepare("INSERT INTO textnotes (longdid,note,orderby,vid) VALUES (?,?,?,?)");
+my $sthGroup = $dbh->prepare("INSERT INTO digte (did,longdid,fhandle,parentdid,linktitel,toptitel,toctitel,tititel,foerstelinie,indhold,vaerkpos,vid,type,underoverskrift,lang,createtime,quality) VALUES (nextval('seq_digte_did'),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+my $sthseqval = $dbh->prepare("SELECT currval('seq_digte_did')");
+my $sthseqlongdid = $dbh->prepare("SELECT nextval('seq_digte_longdid')");
+my $sthnote = $dbh->prepare("INSERT INTO textnotes (longdid,note,orderby) VALUES (?,?,?)");
 my $sthpicture = $dbh->prepare("INSERT INTO textpictures (longdid,caption,url,orderby) VALUES (?,?,?,?)");
 my $sthkeyword = $dbh->prepare("INSERT INTO textxkeyword (longdid,keyword) VALUES (?,?)");
 my $sthclean = $dbh->prepare("DELETE FROM digte WHERE vid = ?");
@@ -85,9 +86,14 @@ sub _insertGroup {
 	}
 
 	my $type = $node->tag;
+	unless ($longdid) {
+	    $sthseqlongdid->execute();
+	    ($longdid) = $sthseqlongdid->fetchrow_array;
+	    $longdid = "dummy$longdid";
+	}
 	if ($type eq 'section' || $type eq 'group') {
 	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,'','',$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid),$quality);
-	    doDepends($head,$longdid,$vid);
+	    doDepends($head,$longdid);
 	    $sthseqval->execute();
 	    my ($newparent) = $sthseqval->fetchrow_array;
 	    _insertGroup($fhandle,$vid,$lang,$newparent,$node->first_child('content')->children);
@@ -96,45 +102,47 @@ sub _insertGroup {
  	    my $body = $node->first_child('body');
  	    my $firstline = $head->first_child('firstline') ? $head->first_child('firstline')->text : '';
 	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,$firstline,$body->xml_string,$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid),$quality);
-	    doDepends($head,$longdid,$vid);
+	    doDepends($head,$longdid);
 	}
 
     }
 }
 
-	sub doDepends {
-	    my ($head,$longdid,$vid) = @_;
-	if ($head->first_child('notes')) {
-	   my $i = 1;
-           foreach my $note ($head->first_child('notes')->children('note')) {
-   	       $sthnote->execute($longdid,$note->xml_string,$i++,$vid);
-  	   }
+sub doDepends {
+    my ($head,$longdid) = @_;
+    if ($head->first_child('notes')) {
+	my $i = 1;
+	foreach my $note ($head->first_child('notes')->children('note')) {
+	    $sthnote->execute($longdid,$note->xml_string,$i++);
 	}
-	if ($head->first_child('pictures')) {
-	   my $i = 1;
-           foreach my $pic ($head->first_child('pictures')->children('picture')) {
-	       my $src = $pic->{'att'}->{'src'};
-   	       $sthpicture->execute($longdid,$pic->xml_string,$src,$i++);
-  	   }
+    }
+    if ($head->first_child('pictures')) {
+	my $i = 1;
+	foreach my $pic ($head->first_child('pictures')->children('picture')) {
+	    my $src = $pic->{'att'}->{'src'};
+	    $sthpicture->execute($longdid,$pic->xml_string,$src,$i++);
 	}
-	if ($head->first_child('keywords')) {
-           foreach my $key (split ',',$head->first_child('keywords')->text) {
-   	       $sthkeyword->execute($longdid,$key);
-  	   }
+    }
+    if ($head->first_child('keywords')) {
+	foreach my $key (split ',',$head->first_child('keywords')->text) {
+	    $sthkeyword->execute($longdid,$key);
 	}
+    }
 
 	}
 
 sub create {
-    $dbh->do(q/DROP SEQUENCE seq_digte_vid/);
-    $dbh->do(q/CREATE SEQUENCE seq_digte_vid INCREMENT 1 START 1/);
+    $dbh->do(q/DROP SEQUENCE seq_digte_did/);
+    $dbh->do(q/CREATE SEQUENCE seq_digte_did INCREMENT 1 START 1/);
+    $dbh->do(q/DROP SEQUENCE seq_digte_longdid/);
+    $dbh->do(q/CREATE SEQUENCE seq_digte_longdid INCREMENT 1 START 1/);
     $dbh->do("DROP TABLE digte CASCADE");
     $dbh->do(q(CREATE TABLE digte ( 
               did int NOT NULL PRIMARY KEY, 
 	      parentdid int REFERENCES digte(did),
-              longdid varchar(40),
+              longdid varchar(40) NOT NULL UNIQUE,
               fhandle VARCHAR(20) NOT NULL REFERENCES fnavne(fhandle),
-              vid VARCHAR(80) NOT NULL REFERENCES vaerker(vid),
+              vid VARCHAR(80) NOT NULL REFERENCES vaerker(vid) ON DELETE CASCADE,
               vaerkpos INT,
               toctitel text,
 	      tititel text,
@@ -161,9 +169,8 @@ sub create {
     $dbh->do("DROP TABLE textnotes");
     $dbh->do(q(
 	CREATE TABLE textnotes ( 
-              longdid varchar(40) NOT NULL,-- REFERENCES digte(longdid),
+              longdid varchar(40) NOT NULL REFERENCES digte(longdid) ON DELETE CASCADE,
 	      note text NOT NULL,
-              vid VARCHAR(80) NOT NULL REFERENCES vaerker(vid),
 	      orderby int NOT NULL)
 	    ));
    $dbh->do(q/CREATE INDEX textnotes_longdid ON textnotes(longdid)/);
@@ -172,7 +179,7 @@ sub create {
     $dbh->do("DROP TABLE textpictures");
     $dbh->do(q(
 	CREATE TABLE textpictures ( 
-              longdid varchar(40) NOT NULL,-- REFERENCES digte(longdid),
+              longdid varchar(40) NOT NULL REFERENCES digte(longdid) ON DELETE CASCADE,
 	      caption text,
 	      url varchar(200) NOT NULL,
 	      orderby int NOT NULL)
@@ -183,7 +190,7 @@ sub create {
     $dbh->do("DROP TABLE textxkeyword");
     $dbh->do(q(
 	CREATE TABLE textxkeyword ( 
-              longdid varchar(40) NOT NULL,-- REFERENCES digte(longdid),
+              longdid varchar(40) NOT NULL REFERENCES digte(longdid) ON DELETE CASCADE,
 	      keyword varchar(100) NOT NULL -- REFERENCES keywords(ord)
 	    )
 	    ));

@@ -46,21 +46,9 @@ sub findmodified {
 
 sub clean {
     my @changed = @_;
-    my $sthforbogstaver = $dbh->prepare("DELETE FROM forbogstaver WHERE vid = ?");
-    my $sthdigte = $dbh->prepare("DELETE FROM digte WHERE vid = ?");
-    my $sthnotes = $dbh->prepare("DELETE FROM worknotes WHERE vid = ?");
-    my $sthtextnotes = $dbh->prepare("DELETE FROM textnotes WHERE vid = ?");
-    my $sthpictures = $dbh->prepare("DELETE FROM workpictures WHERE vid = ?");
-    my $sthkeywords = $dbh->prepare("DELETE FROM workxkeyword WHERE vid = ?");
     my $sthworks = $dbh->prepare("DELETE FROM vaerker WHERE vid = ?");
     foreach my $item (@changed) {
 	my $vid = $item->{'fhandle'}."/".$item->{'vhandle'};
-	$sthforbogstaver->execute($vid);
-	$sthtextnotes->execute($vid);
-	$sthdigte->execute($vid);
-	$sthnotes->execute($vid);
-	$sthpictures->execute($vid);
-	$sthkeywords->execute($vid);
 	$sthworks->execute($vid);
     }
 }
@@ -144,7 +132,7 @@ sub create {
     $dbh->do("DROP TABLE worknotes");
  $dbh->do(q/
 	CREATE TABLE worknotes ( 
-              vid varchar(80) NOT NULL REFERENCES vaerker(vid),
+              vid varchar(80) NOT NULL REFERENCES vaerker(vid) ON DELETE CASCADE,
 	      note text NOT NULL,
 	      orderby int NOT NULL)
 	    /);
@@ -154,7 +142,7 @@ sub create {
     $dbh->do("DROP TABLE workpictures");
  $dbh->do(q(
 	CREATE TABLE workpictures ( 
-              vid varchar(80) NOT NULL REFERENCES vaerker(vid),
+              vid varchar(80) NOT NULL REFERENCES vaerker(vid) ON DELETE CASCADE,
 	      caption text NOT NULL,
 	      type varchar(20),
 	      url varchar(200) NOT NULL,
@@ -166,7 +154,7 @@ sub create {
     $dbh->do("DROP TABLE workxkeyword");
  $dbh->do(q(
 	CREATE TABLE workxkeyword ( 
-              vid varchar(80) NOT NULL REFERENCES vaerker(vid),
+              vid varchar(80) NOT NULL REFERENCES vaerker(vid) ON DELETE CASCADE,
 	      keyword varchar(100) NOT NULL)
 	    ));
  $dbh->do(q/CREATE INDEX workxkeyword_vid ON workxkeyword(vid)/);
