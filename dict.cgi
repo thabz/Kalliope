@@ -35,9 +35,8 @@ my $dbh = Kalliope::DB->connect;
 
 my $page;
 
-my $letter = url_param('letter') || 'a';
 my $wid = url_param('wid');
-
+my $letter = url_param('letter');
 my @crumbs;
 push @crumbs,['Ordbog','dict.cgi'];
 push @crumbs,[Kalliope::Strings::uc($letter),''];
@@ -71,6 +70,20 @@ if ($wid) {
 	    coloumn => 0,
 	    content => $HTML)
 }
+
+unless ($letter) {
+    open FILE,'data/html/dictintro.html';
+    my $HTML = join '',<FILE>;
+    close FILE;
+    $page->addBox (
+	    width => "80%",
+	    coloumn => 0,
+	    title => 'Indledning',
+	    content => $HTML);
+
+    $letter = 'a';
+}
+
 
 # Bogstavrække
 
