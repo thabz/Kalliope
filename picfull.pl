@@ -12,11 +12,8 @@ print "Content-type: text/html\n\n";
 print <<"EOF";
 <HTML>
 <FRAMESET ROWS="20,*" BORDER=0>
-   <FRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 NORESIZE SCROLLING="no" SRC="picfullbar.cgi?imgfile=$imgfile&x=$x&y=$y">
-   <FRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING="auto" NAME="picframe">
+   <FRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 NORESIZE BORDER=0 SCROLLING="no" SRC="picfullbar.cgi?imgfile=$imgfile&x=$x&y=$y">
+   <FRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 NORESIZE BORDER=0 NAME="picframe" SRC="empty.html">
+</FRAMESET>
 </HTML>
 EOF
-print '<HTML><HEAD><TITLE>Billede</TITLE></HEAD>';
-print '<BODY leftmargin=0 topmargin=0 marginheight=0 marginwidth=0 BGCOLOR="#ffffff">';
-print "<IMG SRC=\"$imgfile\">";
-print '</BODY></HTML>';
