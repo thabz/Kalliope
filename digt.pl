@@ -324,7 +324,7 @@ sub pics {
     foreach my $pic (@pics) {
         $HTML .= Kalliope::Web::insertThumb($pic);
 	$HTML .= '<br>';
-	$HTML .= $pic->{'description'};
+	$HTML .= $pic->{'description'} || '';
 	$HTML .= '<br>';
 	$HTML .= '<br>';
     }
