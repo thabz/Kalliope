@@ -247,7 +247,7 @@ EOF
     print '<TABLE BGCOLOR="black" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
     print '<TD ROWSPAN=2><IMG SRC="gfx/trans1x1.gif" HEIGHT=70 WIDTH=1></TD>';
     print '<TD WIDTH="100%" CLASS="maintitle">'.$self->titleAsHTML.'</TD>';
-    print '<TD ROWSPAN=2 VALIGN="top">'.$self->thumbIMG.'</TD></TR>';
+    print '<TD ROWSPAN=2 VALIGN="top" STYLE="padding-right: 20px">'.$self->thumbIMG.'</TD></TR>';
 #    print '</TR>';
     print '<TR><TD ALIGN="right" CLASS="navigation">'.$self->_navigationSub.'&nbsp;&nbsp;</TD>';
     print '</TR></TABLE>';
@@ -255,7 +255,7 @@ EOF
 
     # top pap
     print '<TR>';
-    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=10></TD>';
+    print '<TD BACKGROUND="gfx/sidebartop.gif" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=10></TD>';
     print '<TD BACKGROUND="gfx/paptop.gif" WIDTH="100%"><IMG SRC="gfx/trans1x1.gif" WIDTH="10" HEIGHT="10"></TD>';
     print '<TD BACKGROUND="gfx/paptopcorner.gif" WIDTH="34"><IMG SRC="gfx/trans1x1.gif" WIDTH="34" HEIGHT=10></TD>';
     print '</TR>';
@@ -283,7 +283,7 @@ EOF
 
     # bottom pap
     print '<TR>';
-    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=10></TD>';
+    print '<TD BACKGROUND="gfx/sidebarbottom.gif" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=10></TD>';
     print '<TD BACKGROUND="gfx/papbottom.gif" WIDTH="100%"><IMG SRC="gfx/trans1x1.gif" WIDTH="10" HEIGHT="10"></TD>';
     print '<TD BACKGROUND="gfx/paprightcorner.gif" WIDTH="34"><IMG SRC="gfx/trans1x1.gif" WIDTH="34" HEIGHT=10></TD>';
     print '</TR>';
@@ -296,7 +296,7 @@ EOF
     print '<TD WIDTH="100%" STYLE="color: #806060; font-size: 10px; font-family: Helvetica, Arial"><!-- Copyright &copy; 1999-2001 Jesper Christensen --></TD>';
     print '<TD VALIGN="middle" ALIGN="right" NOWRAP>';
     print '<INPUT STYLE="width: 200px" NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free">';
-    print '</TD><TD VALIGN="middle" ALIGN="right" NOWRAP>';
+    print '</TD><TD VALIGN="middle" ALIGN="right" NOWRAP STYLE="padding-right: 20px">';
     print $self->langSelector;
     print '</TD></TR></TABLE>';
     print '</FORM>';
