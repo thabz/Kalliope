@@ -60,12 +60,12 @@ sub parse {
 
        if ($entry->getElementsByTagName('frase')->item(0)) {
           $dentry{'forkl'} .= '<span style="color: #808080">('.Unicode::String::utf8(
-		  $entry->getElementsByTagName('frase')->item(0)->getFirstChild->getNodeValue)->latin1.
+		  $entry->getElementsByTagName('frase')->item(0)->toString)->latin1.
                  ')</span> ';
        }
 
        if ($entry->getElementsByTagName('forkl')->item(0)) {
-          $dentry{'forkl'} .= Unicode::String::utf8($entry->getElementsByTagName('forkl')->item(0)->getFirstChild->getNodeValue)->latin1;
+          $dentry{'forkl'} .= Unicode::String::utf8($entry->getElementsByTagName('forkl')->item(0)->toString)->latin1;
        } else {
        }
 
