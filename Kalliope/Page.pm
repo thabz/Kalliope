@@ -237,7 +237,7 @@ EOF
 
     # Body
     print '<TABLE WIDTH="100%" HEIGHT="100%" CELLPADDING=0 CELLSPACING=0 BORDER=0><TR>';
-    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" STYLE="padding-top: 30px" >'.$self->_navigationMain.'<BR><BR>';
+    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" STYLE="padding-top: 30px" ALIGN="center">'.$self->_navigationMain.'<BR><BR>';
     print $self->langSelector;
     print '<BR><BR>';
     print '<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT STYLE="width: 80px" NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><BR><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free"></FORM>';
@@ -299,10 +299,12 @@ sub menuStructs {
                        },
          'worklist' => {menuTitle => 'Værker',
                        url => 'kvaerker.pl?sprog='.$lang,
+		       icon => 'gfx/icons/works-w64.gif',
                        pages => ['kvaerkertitel','kvaerkeraar','kvaerkerdigter',
                                  'kvaerkerpop']
                        },
          'poemlist' => {menuTitle => 'Digte',
+		       icon => 'gfx/icons/poem-w64.gif',
                        url =>'klines.pl?mode=1&forbogstav=A&sprog='.$lang,
                        pages => ['poemtitles','poem1stlines','poempopular','latest']
                        },
@@ -312,6 +314,7 @@ sub menuStructs {
                        },
          'forum' =>    {menuTitle => 'Forum',
                        url => 'forumindex.cgi',
+		       icon => 'gfx/icons/forum-w64.gif',
                        pages => ['forumindex']
                        },
          'forumindex' => {menuTitle => 'Oversigt',
@@ -390,13 +393,16 @@ sub _navigationMain {
     # Pagegroups
     foreach my $key (@topMenuItems) {
         my $struct = $menuStructs{$key};
-        my ($title,$url) = ($struct->{'menuTitle'},
-                           $struct->{'url'});
+        my ($title,$url,$icon) = ($struct->{'menuTitle'},
+                                  $struct->{'url'},$struct->{'icon'});
+	$HTML .= qq|<A CLASS=white  HREF="$url">|;
+	$HTML .= qq|<IMG BORDER=0 SRC="$icon"><BR>|;
         if ($key ne $self->{'pagegroup'}) {
-	    $HTML .= qq|<A CLASS=white HREF="$url">[$title]</A><BR> |;
+	    $HTML .= $title;
 	} else {
-            $HTML .= qq|<B>[$title]</B><BR>|;
+            $HTML .= "<B>$title</B>";
 	}
+	$HTML .= '</A><BR><BR>';
     }
     return $HTML;
 }

@@ -44,7 +44,7 @@ my $page = new Kalliope::Page (
 		title => 'Værker',
                 lang => $LA,
 		crumbs => \@crumbs,
-                thumb => 'gfx/books_100.GIF',
+                thumb => 'gfx/icons/works-h70.gif',
                 pagegroup => 'worklist',
                 page => "kvaerker$mode" );
 
