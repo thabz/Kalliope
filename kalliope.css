@@ -69,15 +69,15 @@ footnote {
 }
 
 INPUT.button {
-    background-color: #AA7744;
+    background-color: rgb(139,56,65);
     color: white;
     font-family:  Helvetica, Arial;
     font-size: 8pt;
     font-weight: bold;
-    border-bottom: 2px solid #663300;
-    border-right: 2px solid #663300;
-    border-top: 2px solid #EEBB88;
-    border-left: 2px solid #EEBB88;
+    border-bottom: 2px solid rgb(69,0,0);
+    border-right: 2px solid rgb(69,0,0);
+    border-top: 2px solid rgb(209,126,125);
+    border-left: 2px solid rgb(209,127,125);
 }
 
 .inputtext {
