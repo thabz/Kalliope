@@ -25,6 +25,7 @@ use CGI (':standard');
 use Kalliope::Person;
 use Kalliope::Page;
 use Kalliope::Timeline;
+use Kalliope::Timeline::Event;
 use strict;
 
 my $dbh = Kalliope::DB->connect;
@@ -52,20 +53,19 @@ my @events;
 
 my @works = ($poet->poeticalWorks,$poet->proseWorks);
 foreach my $w (grep { $_->hasYear } @works) {
-    push @events, { year => $w->year,
-                    descr => $poet->efternavn.': <i>'.$w->clickableTitle.'</i>' };
+    push @events, new Kalliope::Timeline::Event({ year => $w->year,
+                    description => $poet->efternavn.': <i>'.$w->clickableTitle.'</i>' });
 }
 
-push @events , { year => $poet->yearBorn,
-                 descr => $poet->name.' født.'} if $poet->yearBorn;
-
-push @events , { year => $poet->yearDead,
-                 descr => $poet->name.' død.'} if $poet->yearDead;
+push @events , new Kalliope::Timeline::Event({ year => $poet->yearBorn,
+                 description => $poet->name.' født.'}) if $poet->yearBorn;
+push @events , new Kalliope::Timeline::Event({ year => $poet->yearDead,
+                 description => $poet->name.' død.'}) if $poet->yearDead;
 
 push @events, Kalliope::Timeline::getEventsForPerson($poet->fhandle);
 
 my @other = Kalliope::Timeline::getHistoryInTimeSpan($poet->yearBorn,$poet->yearDead);
-map {$_->{'descr'} = '<span class="gray">'.$_->{'descr'}."</span>"} @other;
+map {$_->useGrayText(1)} @other;
 push @events, @other;
 
 if ($#events > 0) {
@@ -75,13 +75,13 @@ if ($#events > 0) {
 
     $HTML .= '<TABLE>';
     my $last = 0;
-    foreach my $e (sort { $a->{'year'} <=> $b->{'year'} } @events) {
-        my $yearForDisplay = $last != $$e{year} ? $$e{year} : '';
+    foreach my $e (sort { $a->getYear <=> $b->getYear } @events) {
+        my $yearForDisplay = $last != $e->getYear ? $e->getYear : '';
         
 	$HTML .= qq|<TR><TD CLASS="blue" VALIGN="top">$yearForDisplay&nbsp;</TD>|;
-	$HTML .= '<TD VALIGN="top">'.$$e{descr}."</TD></TR>\n";
+	$HTML .= '<TD VALIGN="top">'.$e->getText."</TD></TR>\n";
 	$HTML .= '</TABLE></TD><TD WIDTH="50%" VALIGN="top"><TABLE>' if ++$i == int ($antal / 2);
-	$last = $$e{year};
+	$last = $e->getYear;
     }
     $HTML .= '</TABLE></TD></TR></TABLE>';
     Kalliope::buildhrefs(\$HTML);
