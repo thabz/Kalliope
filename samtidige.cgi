@@ -87,6 +87,12 @@ foreach my $w (grep { $_->hasYear } @works) {
                     descr => $poet->efternavn.': <i>'.$w->clickableTitle.'</i>' };
 }
 
+push @events , { year => $poet->yearBorn,
+                 descr => $poet->name.' født.'} if $poet->yearBorn;
+
+push @events , { year => $poet->yearDead,
+                 descr => $poet->name.' død.'} if $poet->yearDead;
+
 push @events, Kalliope::Timeline::getHistoryInTimeSpan($poet->yearBorn,$poet->yearDead);
 
 if ($#events > 0) {
