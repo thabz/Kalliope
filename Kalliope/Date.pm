@@ -33,6 +33,7 @@ sub weekdayShortName {
 
 sub shortDate {
     my $time = shift;
+    return '[Ingen dato]' unless $time;
     my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime($time);
     my ($sec2,$min2,$hour2,$mday2,$mon2,$year2,$wday2,$yday2,$isdst2) = localtime(time);
     $min = "0".$min if ($min<10);
@@ -53,6 +54,7 @@ sub shortDate {
 
 sub longDate {
     my $time = shift;
+    return '[Ingen dato]' unless $time;
     my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime($time);
     $year+=1900;
     return "$mday. $months[$mon] $year"
