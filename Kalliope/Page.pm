@@ -235,15 +235,13 @@ EOF
     print '<TABLE HEIGHT="100%" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0>';
     
     if (my $crumbs = $self->_constructBreadcrumbs) {
-        print '<TR><TD COLSPAN=3>';
-	print '<DIV STYLE="background-color: #e0e0e0; padding: 1px">';
+        print '<TR><TD HEIGHT=10 COLSPAN=2 STYLE="background-color: #e0e0e0; padding: 1px">';
 	print $crumbs;
-	print '</DIV>';
 	print '</TD></TR>';
     }
 
     # Head
-    print '<TR><TD HEIGHT=70 COLSPAN=3 VALIGN="top">';
+    print '<TR><TD HEIGHT=70 COLSPAN=2 VALIGN="top">';
 
     print '<TABLE BGCOLOR="black" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
     print '<TD ROWSPAN=2><IMG SRC="gfx/trans1x1.gif" HEIGHT=70 WIDTH=1></TD>';
@@ -256,12 +254,14 @@ EOF
 
     # Body
     print '<TR>';
-    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center">'.$self->_navigationMain.'<BR><BR>';
+    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=1><BR>';
+    print $self->_navigationMain.'<BR><BR>';
 
-    print '</TD><TD VALIGN="top">';
+    print '</TD><TD VALIGN="top" WIDTH="100%" STYLE="padding: 10px">';
     print '<TABLE WIDTH="100%" HEIGHT="100%"><TR>';
     my @widths = $self->getColoumnWidths;
     foreach my $colHTML (@{$self->{'coloumns'}}) {
+        $colHTML = $colHTML || '';
 	if (my $width = shift @widths) {
 	    print qq|<TD VALIGN="top" WIDTH="$width">$colHTML</TD>\n|;
         } else {
@@ -271,13 +271,10 @@ EOF
     print '</TR></TABLE>';
     print '</TD>';
 
-    print '<TD BGCOLOR="black">';
-    print '<IMG SRC="gfx/trans1x1.gif" WIDTH=0>';
-    print '</TD>';
     print '</TR>';
 
     # Foot
-    print '<TR><TD COLSPAN=3 HEIGHT="40" BGCOLOR="black" ALIGN="right" VALIGN="middle">';
+    print '<TR><TD COLSPAN=2 HEIGHT="40" BGCOLOR="black" ALIGN="right" VALIGN="middle">';
 
     print '<FORM METHOD="get" ACTION="ksearch.cgi">';
     print '<TABLE WIDTH="100%"><TR>';
