@@ -267,11 +267,10 @@ span.digtunderoverskrift {
 td.maintitle {
     vertical-align: middle;
 /*    background-color: rgb(139,56,65); */
-    background-color: rgb(139,56,65);
     background-color: black;
     font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: rgb(217,206,189);
     font-family: Arial, Helvetica;
 }
 
@@ -282,5 +281,5 @@ td.navigation {
 }
 
 span.lifespan {
-    color: #EEBB88;
+    color: rgb(183,174,160);
 }
