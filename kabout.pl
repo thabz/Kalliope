@@ -44,12 +44,12 @@ $page->print;
 
 
 sub readFile {
-    my $page = shift;
+    my $file = shift;
     my $HTML;
-    if ($abouttext =~ /\.\./ || !(-e "data.dk/$page.html")) {
+    if ($file =~ /\.\./ || !(-e "data/html//$file.html")) {
         Kalliope::Page::notFound();
     } else {
-	open(FILE,"data.dk/$page.html");
+	open(FILE,"data/html/$file.html");
 	foreach  (<FILE>) {
 	    $HTML .= $_;
 	}
