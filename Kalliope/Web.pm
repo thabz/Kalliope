@@ -62,7 +62,7 @@ sub doubleColumn {
 	}
         $subtotal += $b->{'count'};
 	$HTML .= $b->{'head'} || '';
-	$HTML .= $b->{'body'}."<BR>";
+	$HTML .= ($b->{'body'} || '')."<BR>";
 	$i++;
     }
     $HTML .= '</DIV></TD></TR></TABLE>';

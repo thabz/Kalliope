@@ -45,6 +45,7 @@ my @order = qw/ korrektur1 korrektur2 korrektur3 kilde side /;
 
 sub new {
     my ($class,$quality) = @_;
+    $quality = '' unless $quality;
     my $self = bless {},$class;
     @{$self->{'array'}} = split ',',$quality;
     %{$self->{'hash'}} = map { $_ => 1 } @{$self->{'array'}};
