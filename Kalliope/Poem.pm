@@ -304,6 +304,7 @@ sub _contentAsPlainPoemHTML {
     my $result = join "",@indhold;
     $result =~ s/\n/<BR>\n/g;
     $result =~ s/<note>.*?<\/note>//g;
+    $result =~ s/\s/\&nbsp;/gs;
     return '<div style="white-space: nowrap">'.$result.'</div>';
 }
 
