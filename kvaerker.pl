@@ -170,7 +170,7 @@ if ($mode eq 'titel') {
 	if ($sthvaerker->rows) {
             $HTML .= '<SPAN CLASS="listeblue">&#149;</SPAN> ';
 	    $f->{'navn'} =~ s/^, // if $f->{'navn'};
-	    $HTML .= $f->{navn}."<BR>";
+	    $HTML .= ($f->{navn} || '')."<BR>";
 	    $html = '<DIV STYLE="padding:0 0 0 20">';
 	    while ($v = $sthvaerker->fetchrow_hashref) {
 		next if ($v->{'titel'} eq '');

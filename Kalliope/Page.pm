@@ -73,7 +73,7 @@ sub _setCookies {
 sub _printCookies {
     my $self = shift;
     my $output;
-    return unless $self->{'cookies'};
+    return '' unless $self->{'cookies'};
     foreach my $cookie (@{$self->{'cookies'}}) {
         $output .= "Set-Cookie: $cookie\n";
     }
@@ -213,7 +213,7 @@ sub addBox {
 sub print {
     my $self = shift;
     my $titleForWindow = $self->titleForWindow;
-    print $self->_printCookies;
+    print $self->_printCookies();
     print "Content-type: text/html\n\n";
     print '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">';
     print <<"EOF";

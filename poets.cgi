@@ -77,13 +77,14 @@ my $page = new Kalliope::Page (
 		thumb => 'gfx/icons/poet-h70.gif',
                 page => $struct->{'page'}); 
 
-my ($HTML,$endHTML) = &{$struct->{'function'}};
+my ($HTML,$endHTML) = &{$struct->{'function'}}($LA,$limit);
 $page->addBox ( width => '90%',
                 content =>  $HTML,
 		end => $endHTML);
 $page->print;
 
 sub listaz {
+    my $LA = shift;
     my $dbh = Kalliope::DB->connect;
     my $sth = $dbh->prepare("SELECT * FROM fnavne WHERE sprog=? AND foedt != '' ORDER BY efternavn, fornavn");
     $sth->execute($LA);
@@ -128,6 +129,7 @@ sub listaz {
 }
 
 sub list19 {
+    my $LA = shift;
     my $dbh = Kalliope::DB->connect;
     my $sth = $dbh->prepare("SELECT * FROM fnavne WHERE sprog=? AND foedt != '' AND foedt != '?' ORDER BY efternavn, fornavn");
     $sth->execute($LA);
@@ -172,6 +174,7 @@ sub list19 {
 }
 
 sub listpics {
+    my $LA = shift;
     my $HTML;
 
     my $dbh = Kalliope::DB->connect;
@@ -198,6 +201,7 @@ sub listpics {
 }
 
 sub listflittige {
+    my ($LA,$limit) = @_;
     my $dbh = Kalliope::DB->connect;
     my $sth = $dbh->prepare("select fhandle, count(did) as val from fnavne, digte where foedt != '' AND digte.fid=fnavne.fid and fnavne.sprog=? and layouttype = 'digt' and afsnit=0 group by fnavne.fid order by val desc, efternavn ".($limit != -1 ? "LIMIT $limit" : ''));
     $sth->execute($LA);
@@ -226,6 +230,7 @@ sub listflittige {
 }
 
 sub listpop {
+    my ($LA,$limit) = @_;
     my $dbh = Kalliope::DB->connect;
     my $sth = $dbh->prepare("SELECT fornavn, efternavn, foedt, doed, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f WHERE dh.longdid = d.longdid AND d.fid = f.fid AND f.sprog=? GROUP BY f.fid ORDER BY hits DESC ".($limit != -1 ? "LIMIT $limit" : ''));
     $sth->execute($LA);
