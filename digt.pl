@@ -291,7 +291,7 @@ sub xrefs {
     my @xrefs = $poem->xrefsTo;
     my $HTML;
     foreach my $otherPoem (@xrefs) {
-        $HTML .= $otherPoem->clickableTitle.'<BR>';
+        $HTML .= $otherPoem->clickableTitle.'<br><br>';
     }
     $HTML = qq|<span style="font-size: 12px">$HTML</span>| if $HTML;
     return $HTML;
