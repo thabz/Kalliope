@@ -59,7 +59,7 @@ foreach (sort @liste) {
 		print "<BR><DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR>";
 	}
 	if ( ($f[0] eq "?") && ($notfirstukendt == 0) ) {
-		print "<BR><SPAN DIV=listeoverskrifter>Ukendt fødeår</DIV><BR>\n";
+		print "<BR><DIV CLASS=listeoverskrifter>Ukendt fødeår</DIV><BR>\n";
 		$notfirstukendt=1;
 	}
 	print "<A HREF=\"fvaerker.pl?".$f[3]."?$LA\">";
