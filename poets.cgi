@@ -87,11 +87,10 @@ sub listaz {
     my $dbh = Kalliope::DB->connect;
     my $sth = $dbh->prepare("SELECT * FROM fnavne WHERE sprog=? AND foedt != '' ORDER BY efternavn, fornavn");
     $sth->execute($LA);
-    my $i=0;
     my @f;
-    while ($f[$i] = $sth->fetchrow_hashref) { 
-	$f[$i]->{'sort'} = $f[$i]->{'efternavn'};
-	$i++; 
+    while (my $f = $sth->fetchrow_hashref) { 
+        $f->{'sort'} = $f->{'efternavn'};
+	push @f,$f;
     }
 
     my $last = "";
@@ -127,50 +126,46 @@ sub listaz {
 }
 
 sub list19 {
-    my $HTML;
-    my @liste;
     my $dbh = Kalliope::DB->connect;
-    open (IN, "data.$LA/fnavne.txt");
-    while (<IN>) {
-	chop($_);chop($_);
-	s/\\//g;
-	my ($fhandle,$ffornavn,$fefternavn,$ffoedt,$fdoed) = split(/=/);
-	push @liste,"$ffoedt%$fefternavn%$ffornavn%$fhandle%$fdoed" if $ffoedt;
+    my $sth = $dbh->prepare("SELECT * FROM fnavne WHERE sprog=? AND foedt != '' AND foedt != '?' ORDER BY efternavn, fornavn");
+    $sth->execute($LA);
+    my @f;
+    while (my $f = $sth->fetchrow_hashref) { 
+        ($f->{'sort'}) = $f->{'foedt'} =~ /(\d\d\d\d)/;
+	push @f,$f;
     }
-    close(IN);
 
     my $last = 0;
     my $last2;
-    my $notfirstukendt = 0;
-    my $blocks = ();
+    my @blocks;
     my $bi = -1;
-
-    foreach (sort @liste) {
-	my @f = split(/%/);
-	if ($f[0]-$last >= 25) {
-	    $last=$f[0]-$f[0]%25;
-	    $last2=$last+24;
-	    $HTML .= "<BR><DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR>";
+    my $new;
+    my $f;
+    foreach $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
+	next unless $f->{'sort'};
+	if ($f->{'sort'} - $last >= 25) {
+	    $last = $f->{'sort'} - $f->{'sort'}%25;
+	    $last2 = $last + 24;
+	    $bi++;
+	    $blocks[$bi]->{'head'} = "<DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR>";
 	}
-	if ( ($f[0] eq "?") && ($notfirstukendt == 0) ) {
-	    $HTML .= "<BR><DIV CLASS=listeoverskrifter>Ukendt fødeår</DIV><BR>\n";
-	    $notfirstukendt=1;
-	}
-	$HTML .= "<A HREF=\"ffront.cgi?fhandle=".$f[3].'">';
-	$HTML .= $f[2]." ".$f[1].' <FONT COLOR="#808080">('.$f[0]."-".$f[4].")</FONT></A><BR>";
-     }
+	$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'fornavn'}." ".$f->{'efternavn'}.' <FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></A><BR>';
+	$blocks[$bi]->{'count'}++;
+    }
 
-     # Udenfor kategori (dvs. folkeviser, o.l.)
-     my $sth = $dbh->prepare("SELECT * FROM fnavne WHERE sprog=? AND foedt='' ORDER BY fornavn");
-     $sth->execute($LA);
-     if ($sth->rows) {
-         $HTML .= "<BR><DIV CLASS=listeoverskrifter>Ukendt digter</DIV><BR>";
-         while (my $f = $sth->fetchrow_hashref) {
-             $HTML .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">';
-             $HTML .= $f->{'fornavn'}.'</A><BR>';
-         }
-     }
-     return ($HTML,'');
+    # Udenfor kategori (dvs. folkeviser, o.l.)
+    $bi++;
+    $sth = $dbh->prepare("SELECT * FROM fnavne WHERE sprog=? AND foedt='?' ORDER BY fornavn");
+    $sth->execute($LA);
+    if ($sth->rows) {
+	$blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">Ukendt fødeår</DIV><BR>|;
+	while ($f = $sth->fetchrow_hashref) {
+	    $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'fornavn'}." ".$f->{'efternavn'}.' <FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></A><BR>';
+	    #$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'fornavn'}.' '.$f->{'efternavn'}.'</A><BR>';
+	    $blocks[$bi]->{'count'}++;
+	}
+    }
+    return (Kalliope::Web::doubleColumn(\@blocks),'');
 }
 
 sub listpics {
