@@ -30,9 +30,10 @@ sub addBox {
 	return;
     }
 
-    my $HTML;
+    my $title = $args{'printtitle'} || $args{'title'} || '';
 
-    $HTML .= "<h2>".$args{'title'}."</h2>";
+    my $HTML;
+    $HTML .= "<h2>$title</h2>";
     $HTML .= $args{content};
     $self->addHTML($HTML, %args);
 }
