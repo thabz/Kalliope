@@ -39,6 +39,7 @@ sub new {
     my $sth = $dbh->prepare("SELECT did,fid,vid,longdid,titel,underoverskrift,foerstelinie,layouttype FROM digte WHERE $sql");
     $sth->execute();
     my $obj = $sth->fetchrow_hashref;
+    Kalliope::Page::notFound unless $obj;
     bless $obj,$class if $obj;
     return $obj;
 }

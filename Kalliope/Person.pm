@@ -25,6 +25,7 @@ use strict ('vars');
 use Carp;
 use Kalliope::DB ();
 use Kalliope::Work ();
+use Kalliope::Page ();
 use Kalliope ();
 
 my $dbh = Kalliope::DB->connect;
@@ -38,6 +39,7 @@ sub new {
     my $sth = $dbh->prepare("SELECT * FROM  fnavne WHERE $sql");
     $sth->execute();
     my $obj = $sth->fetchrow_hashref;
+    Kalliope::Page::notFound unless $obj;
     bless $obj,$class;
     return $obj;
 }
