@@ -98,8 +98,8 @@ $page->print;
 
 sub completeWorks {
     my ($poet,$work) = @_;
-    $sth = $dbh->prepare("SELECT vhandle,titel,aar,findes FROM vaerker WHERE fhandle=? AND type='v' ORDER BY aar");
-    $sth->execute($fhandle);
+    $sth = $dbh->prepare("SELECT vhandle,titel,aar,findes FROM vaerker WHERE fhandle=? AND type = ? ORDER BY aar");
+    $sth->execute($fhandle,$work->isProse ? 'p' : 'v');
     while(my $d = $sth->fetchrow_hashref) {
 	$HTML .= '<P STYLE="font-size: 12px">';
 	if ($d->{'findes'}) {
