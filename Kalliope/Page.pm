@@ -44,7 +44,6 @@ sub new {
 	$ENV{REQUEST_URI} =~ /([^\/]*)$/;
 	$self->{'changelangurl'} = $1;
     }
-
     return $self;
 }
 
@@ -134,7 +133,7 @@ sub _constructBreadcrumbs {
 sub addBox {
     my ($self,%args) = @_;
 
-    my $bggfx = $args{'theme'} eq 'dark' ? 'pap.gif' : 'lightpap.gif';
+    my $bggfx = (defined $args{'theme'} && $args{'theme'} eq 'dark') ? 'pap.gif' : 'lightpap.gif';
 
     my $HTML;
     $HTML .= '<TABLE WIDTH="'.$args{width}.'" ALIGN="center" BORDER=0 CELLPADDING=1 CELLSPACING=0><TR><TD ALIGN=right>';

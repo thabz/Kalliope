@@ -1,3 +1,21 @@
+
+th.forumheads {
+    font-family: Arial, Helvetica;
+    font-weight: bold;
+}
+
+.sel {
+    font-family: Arial, Helvetica;
+    color: white;
+    background-color: #CC9966;
+}
+
+.unsel {
+    font-family: Arial, Helvetica;
+    color: #000000;
+    background-color: transparent;
+}
+
 footnote {
     display: none;
 }
