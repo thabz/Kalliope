@@ -320,10 +320,11 @@ sub langSelector {
                    us => 'amerikanske',
 		   de => 'tyske',
 		   fr => 'franske',
+		   it => 'italienske',
 		   se => 'svenske',
 		   no => 'norske' );
     my $url = $self->{'changelangurl'};
-    foreach my $lang ('dk','uk','de','fr','se','no','us') {
+    foreach my $lang ('dk','uk','de','fr','se','no','it','us') {
        my $refURL = $url;
        $refURL =~ s/sprog=../sprog=$lang/;
        my $img = $lang eq $selfLang ? "${lang}select.gif" : "$lang.gif";
