@@ -180,7 +180,6 @@ sub content {
 	$self->{'indhold'} = $data->{'indhold'};
 	$self->{'raw'} = $data->{'indhold'};
 	$self->{'noter'} = $data->{'noter'};
-        $self->{'type'} = $data->{'type'};
 	$self->{'indhold'} = $self->extractFootnotes($self->{'indhold'});
         $self->{'indhold'} = $self->resolveBiblioTags($self->{'indhold'});
 	$self->{'indhold'} = $self->_resolveTags($self->{'indhold'});
@@ -190,7 +189,7 @@ sub content {
     if (%options && $options{'layout'} eq 'raw') {
 	return $self->{'raw'};
     } elsif ($self->isProse) {
-         $result = $self->_contentAsProseHTML();
+         $result = $self->_contentAsProseHTML()."Yo";
     } elsif (%options && $options{'layout'} eq 'plainpoem') {
          $result = $self->_contentAsPlainPoemHTML();
     } else {
@@ -219,7 +218,7 @@ sub _contentAsProseHTML {
     }
     my $result = join "",@indhold;
     $result  =~ s/\n/<br>\n/g;
-    return $result;
+    return $result.'Hej med dig';
 }
 
 sub _contentAsPoemHTML {
