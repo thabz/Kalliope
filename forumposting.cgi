@@ -51,7 +51,7 @@ $page->addBox (width => '100%',
                theme => 'dark',
                content => $HTML);
 
-$HTML = $post->content;
+$HTML = $post->contentAsHTML;
 $HTML .= qq|<HR><A HREF="javascript:{}" onClick="return parent.composer('reply',$id)">Svar på dette indlæg</A>|;
 $HTML .= qq|<SCRIPT>parent.markSelection($id)</SCRIPT>|;
 

@@ -64,6 +64,12 @@ sub content {
     return shift->{'content'};
 }
 
+sub contentAsHTML {
+    my $HTML = shift->content;
+    $HTML =~ s/\n/<BR>/g;
+    return $HTML;
+}
+
 sub id {
     return shift->{'id'};
 }
