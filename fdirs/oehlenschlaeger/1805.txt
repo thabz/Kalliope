@@ -3488,7 +3488,7 @@ TYPE:prosa
 <i>Zulima,</i> hans Hustrue.
 <i>Gulnare,</i> deres Datter.
 <i>Stor-Veziren.
-Saladin,</i> hans Søn.
+Saladin,</i> hans Søn.<!-- Salladin -->
 <i>Mustapha,</i> Skrædder.
 <i>Morgiane,</i> hans Kone.
 <i>Aladdin,</i> deres Søn.
@@ -3498,7 +3498,7 @@ Saladin,</i> hans Søn.
 Sindbad.
 En Jøde.
 En christen Kiøbmand.</i>
-<i>Bedreddin</i> og <i>Ali.</i> Kiøbmænd.
+<i>Bedreddin</i> og <i>Ali.</i> Kiøbmænd.<!-- (<i>Bedreddin, / Ali,</i> Kiøbmænd) 
 <i>Gulnares Amme.
 En Urtekræmmer.
 Ali Baba.</i> Stiernetyder.
@@ -3518,7 +3518,7 @@ En Persisk Digter.
 Fatime,</i> en hellig Kone.
 <i>Caravane.
 Pillegrimme, Abdaller,</i> og <i>Calendere.
-Soldater, Pøbel</i> etc.
+Soldater, Pøbel</i> etc.<!-- etc.? -->
 <i>Lampens Aand.
 Ringens Aand.
 Paribanou,</i> Feernes Dronning.
@@ -3646,7 +3646,6 @@ Sin Aftenbøn, for fattig Folk som vi?
            <sc>Morgiane.</sc>
 Hvad kan det skade at man er gudsfrygtig?
 
-
            <sc>Mustapha.</sc>
 Meer end du troer. Imens du læser, seer du!
 Saa spinder du ey Bomuld. Af din Bøn
@@ -3676,7 +3675,7 @@ Som driver om og giør slet inge Nytte,
 Ham skal vi ogsaa føde.
 
            <sc>Morgiane.</sc>
-                       Altid har du
+                       <nonum>Altid har du</nonum>
 Saameget nu imod den stakkels Dreng.
 Han er saa ung, og med hans varme Blod
 Er man ey skikket til at sidde stille,
@@ -3688,15 +3687,15 @@ Den hele Dag, dertil er Blodet koldt nok.
 Hør Morgiane!
 
            <sc>Morgiane.</sc>
-             Nu saa vær dog rolig.
+             <nonum>Nu saa vær dog rolig.</nonum>
 Der kommer han.
 
            <sc>Aladdin</sc>
            <small><i>kommer ind.</i></small>
-               God Aften, Fader!
+               <nonum>God Aften, Fader!</nonum>
 
            <sc>Mustapha.</sc>
-                                  Ja
+                                  <nonum>Ja</nonum>
 Jeg skal godaftne dig, din lange Slyngel!
 Har du nu drevet hele Aftnen om
 Paa Gaden med de andre Drenge? Hvad?
@@ -3726,7 +3725,7 @@ O hvor det dog er skiønt at være Skrædder!
 Ja jeg skal skræddre dig! Ja jeg skal skræddre
 Dig Kieltring.
 <wrap>     <small><i>Vil springe ned af Bordet, men glider og er færdig at styrte.</i></small></wrap>
-              Ak du hellige Prophet!
+              <nonum>Ak du hellige Prophet!</nonum>
 Hielp! Hielp! Jeg glider. Hielp! Jeg brækker Halsen.
 
            <sc>Aladdin</sc>
@@ -3736,7 +3735,7 @@ Ja saadan er det at forhaste sig.
            <sc>Mustapha</sc>
       <small><i>med indbidt Forbittrelse.</i></small>
 Min Søn! Tag mig den Alen, som der hænger.
-<wrap>    <small><i>Aladdin rækker han Alnen. Mustapha hugger efter ham; men Aladdin springer tilside, saa at han slaaer Bomuldstotten paa Morgianes Rok ned i Lyset. Aladdin løber ud.</i></small></wrap>
+<wrap>    <small><i>Aladdin rækker han Alnen. Mustapha <!-- 1805 Mustafa --> hugger efter ham; men Aladdin springer tilside, saa at han slaaer Bomuldstotten paa Morgianes Rok ned i Lyset. Aladdin løber ud.</i></small></wrap>
 
            <sc>Morgiane.</sc>
 <wrap>  <small><i>som vaagner af den Søvn, hun nylig var falden i, seer Totten brænde og raaber:</i></small></wrap>
@@ -3744,9 +3743,8 @@ Brand! Brand! Brand! Ispahan! Brand! Ispahan!
 Den store Hovedstad i Persien
 Staaer i lys Lue.
 
-
            <sc>Mustapha.</sc>
-                  Ney, det er for galt,
+                  <nonum>Ney, det er for galt,</nonum>
 Jeg gamle Mand, det holder jeg ey ud.
 O slemme Skarn! Du liderlige Fugl!
 Som ey vil staae imens man straffer ham!
