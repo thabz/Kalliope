@@ -430,3 +430,16 @@ p.bibliografi {
     padding-left: 20px;
 }
 
+div.noter {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+    
+div.noter p {
+   padding: 0px;
+   margin: 0px;
+   text-indent: 10pt;	   
+}
+

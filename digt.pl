@@ -89,7 +89,7 @@ if ($poem->hasPics) {
 
 my @keywords = $poem->keywords;
 my @notes = $poem->notes;
-if ($#notes > 0 || $#keywords >= 0) {
+if ($#notes >= 0 || $#keywords >= 0) {
     $page->addBox( width => '250',
 	           printer => 1,
 		   printtitle => 'Noter',
@@ -336,7 +336,7 @@ sub xrefs {
 
 sub notes {
     my ($poem,@keywords) = @_;
-    my $HTML = '<span style="font-size: 12px">';
+    my $HTML = '<div class="noter" >';
     my @notes = $poem->notesAsHTML;
     $HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center"><span class="noprint">&#149;&nbsp;&#149;&nbsp;&#149;</span></div>',@notes;
     if ($#keywords >= 0) {
@@ -344,7 +344,7 @@ sub notes {
         $HTML .= join ', ', map { $_->clickableTitle($LA) } @keywords;
 	$HTML .= '</span>';
     }
-    $HTML .= "</span>";
+    $HTML .= "</noter>";
     return $HTML;
 }
 
