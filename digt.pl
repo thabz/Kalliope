@@ -98,7 +98,7 @@ if (defined param('newkeywords')) {
     $poem->addToKeyPool(param('newkeywords'));
 }
 
-$page->addBox( width => '100%',
+$page->addBox( width => '',
 	       coloumn => 1,
                align => $poem->isProse ? 'justify' : 'left',
 	       content => &poem($poem,$needle,$biblemark) );
@@ -330,7 +330,7 @@ sub notes {
 
 sub pics {
     my $work = shift;
-    my $HTML = '<center><small>';
+    my $HTML = "\n\n<center><small>";
     my @pics = $work->pics;
     foreach my $pic (@pics) {
         $HTML .= Kalliope::Web::insertThumb($pic);
