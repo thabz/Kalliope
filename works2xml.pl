@@ -96,8 +96,12 @@ EOS
 
 sub fixLinks {
    my $txt = shift;
-   $$txt =~ s/<A D=([^>]*)>/<A D="\1">/g;
-   $$txt =~ s/<A F=([^>]*)>/<A F="\1">/g;
-   $$txt =~ s/<A V=([^>]*)>/<A V="\1">/g;
-   $$txt =~ s/<A K=([^>]*)>/<A K="\1">/g;
+   $$txt =~ s/<I>/<i>/g;
+   $$txt =~ s,</I>,</i>,g;
+   $$txt =~ s/<A +D=([^>]*)>/<A D="\1">/g;
+   $$txt =~ s/<A +F=([^>]*)>/<A F="\1">/g;
+   $$txt =~ s/<A +V=([^>]*)>/<A V="\1">/g;
+   $$txt =~ s/<A +K=([^>]*)>/<A K="\1">/g;
+   $$txt =~ s/<XREF +DIGT=([^>]*)>/<XREF DIGT=\1\/>/gi;
+   $$txt =~ s/<XREF +BIBEL=([^>]*)>/<XREF BIBEL=\1\/>/gi;
 }

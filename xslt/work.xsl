@@ -55,11 +55,11 @@
     </div>
     </td>
     <td valign="top">
-      <div class="note">
+<!--      <div class="note">
         <xsl:value-of select="note"/>
       </div>
-      
-<!--       <xsl:apply-templates/> -->
+-->      
+       <xsl:apply-templates/> 
     </td>
     </tr></table>
   </xsl:template>
@@ -92,6 +92,9 @@
   </xsl:template>
 
   <xsl:template match="head/date">
+  </xsl:template>
+
+  <xsl:template match="poem/content">
   </xsl:template>
 
   <xsl:template match="note">
