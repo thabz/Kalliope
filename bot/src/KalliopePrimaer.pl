@@ -16,7 +16,7 @@ sub get {
 
    return "Jeg kender ingen $fhandle ..." unless Kalliope::Person::exist($fhandle);
 
-   my $person = new Kalliope::Person (fhandle => $fhandle);
+   my $person = Kalliope::PersonHome::findByFhandle($fhandle);
 
    $filename = "../fdirs/$fhandle/primaer.txt";
 

@@ -5,6 +5,7 @@ use lib "..";
 
 use Kalliope::Person;
 use Kalliope::Work;
+use Kalliope::PersonHome;
 
 sub get { 
     my $line = shift;
@@ -17,7 +18,7 @@ sub get {
 
    return "Jeg kender ingen $fhandle ..." unless Kalliope::Person::exist($fhandle);
 
-   my $person = new Kalliope::Person (fhandle => $fhandle);
+   my $person = Kalliope::PersonHome::findByFhandle($fhandle);
 
    my $result = $person->name."s værker er ";
    my @works = ($person->poeticalWorks,$person->proseWorks);

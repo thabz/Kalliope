@@ -20,7 +20,7 @@ sub get {
 
    my $result = "I $year skete der følgende: ";
    foreach $event (@events) {
-       my $descr = $event->{'descr'};
+       my $descr = $event->getText;
        $descr =~ s/<[^>]*>//g;
        $descr =~ s/\.$//g;
        $result .= $descr.", ";
