@@ -66,6 +66,7 @@ sub _insertGroup {
 	my $linktitle = $head->first_child('linktitle') ? $head->first_child('linktitle')->text : undef;
 	my $toctitle = $head->first_child('toctitle') ? $head->first_child('toctitle')->sprint(1): undef;
 	my $toptitle = $head->first_child('title') ? $head->first_child('title')->text : undef;
+	$linktitle = $toptitle;
 	my $indextitle = $head->first_child('indextitle') ? $head->first_child('indextitle')->text : undef;
 	my $longdid = $node->id;
 	my $subtitle;
