@@ -95,7 +95,7 @@ $page->addBox( width => '100%',
 $page->addBox( width => '250',
 	       coloumn => 2,
 	       theme => 'dark',
-	       content => qq|<img src="gfx/trans1x1.gif" width="100" height="1">| );
+	       content => qq|<img src="gfx/trans1x1.gif" width="150" height="1">| );
 
 $page->setColoumnWidths(0,'80%',250);
 $page->print;

@@ -153,7 +153,7 @@ $page->addBox( width => '250',
 $page->addBox( width => '250',
 	       coloumn => 2,
 	       theme => 'dark',
-	       content => qq|<img alt="" src="gfx/trans1x1.gif" width="100" height="1">| );
+	       content => qq|<img alt="" src="gfx/trans1x1.gif" width="150" height="1">| );
 
 $page->print;
 
