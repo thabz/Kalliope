@@ -90,7 +90,7 @@ sub cvsTimestampToUNIX {
     # format 2001/08/26 17:01:18 -> UNIX date
     my $string = shift;
     my ($y,$m,$d,$h,$min,$s) = $string =~ /(....)\/(..)\/(..) (..):(..):(..)/;
-    return POSIX::mktime($s,$m,$h,$d,$m-1,$y-1900);
+    return POSIX::mktime($s,$min,$h,$d,$m-1,$y-1900);
 }
 
 1;
