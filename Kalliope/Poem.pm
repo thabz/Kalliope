@@ -124,7 +124,8 @@ sub extractFootnotes {
 }
 
 sub footnotes {
-    return @{shift->{'footnotes'}};
+    my $self = shift;
+    return $self->{'footnotes'} ? @{$self->{'footnotes'}} : ();
 }
 
 sub content {

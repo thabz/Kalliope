@@ -113,15 +113,19 @@ sub sortString {
 }
 
 sub name {
-   return $_[0]->{'fornavn'}.' '.$_[0]->{'efternavn'};
+   return $_[0]->fornavn.' '.$_[0]->efternavn;
+}
+
+sub fornavn {
+   return shift->{'fornavn'} || '';
 }
 
 sub efternavn {
-   return $_[0]->{'efternavn'};
+   return shift->{'efternavn'} || '';
 }
 
 sub reversedName {
-   return $_[0]->{'efternavn'}.', '.$_[0]->{'fornavn'};
+   return $_[0]->efternavn.', '.$_[0]->fornavn;
 }
 
 sub bioURI {
