@@ -25,6 +25,7 @@ use lib '..';
 use CGI qw /:standard/;
 use Kalliope::Web;
 use Kalliope::Page;
+use Kalliope::Date;
 use Kalliope;
 use Kalliope::DB;
 use URI::Escape;
@@ -122,8 +123,16 @@ sub showDir {
     my $dir = shift;
     opendir(DIR,"edit/files/$dir");
     my $HTML = '';
+    my $dbh = Kalliope::DB::connect();
+    my $sth = $dbh->prepare("SELECT action,login,date FROM edithistory WHERE filename = ? AND dir = ?");
     foreach my $f (grep {!/^\./} readdir(DIR)) {
-	$HTML .= qq|<a class="green" href="edit.cgi?dir=$dir&file=$f">$f</a><br>|
+	$HTML .= qq|<a class="green" href="edit.cgi?dir=$dir&file=$f">$f</a>|;
+	$sth->execute($f,$dir);
+	while (my ($action,$login,$date) = $sth->fetchrow_array) {
+	    my $dateTxt = Kalliope::Date::shortDate($date);
+	    $HTML .= qq|<IMG ALT="$dateTxt af $login" SRC="gfx/$action.png">|;
+	}
+	$HTML .= "<br>\n";
     }
     return $HTML;
 }
