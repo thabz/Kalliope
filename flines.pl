@@ -78,7 +78,7 @@ my %works = map {$_->vid => $_} $poet->poeticalWorks;
 #
 
 my @f;
-my $sth = $dbh->prepare("SELECT longdid, digte.titel, digte.foerstelinie, digte.vid FROM digte, vaerker WHERE digte.fid=? AND digte.vid = vaerker.vid AND digte.layouttype = 'digt' AND afsnit=0");
+my $sth = $dbh->prepare("SELECT longdid, digte.tititel as titel, digte.foerstelinie, digte.vid FROM digte, vaerker WHERE digte.fid=? AND digte.vid = vaerker.vid AND digte.layouttype = 'digt' AND afsnit=0");
 $sth->execute($poet->fid);
 while (my $f = $sth->fetchrow_hashref) { 
     $f->{'sort'} = $mode == 1 ? $f->{'titel'} : $f->{'foerstelinie'};

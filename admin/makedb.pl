@@ -27,6 +27,8 @@ print "Done\n";
 # Keywords
 #
 
+print "Making keywords\n";
+
 $rc = $dbh->do("drop table if exists keywords");
 $rc = $dbh->do("CREATE TABLE keywords ( 
               id int UNSIGNED PRIMARY KEY NOT NULL,
@@ -78,6 +80,8 @@ while ($file = readdir(DIR)) {
     }
 }
 
+print "Done\n";
+
 $rc = $dbh->do("drop table if exists keywords_relation");
 $rc = $dbh->do("CREATE TABLE keywords_relation ( 
               keywordid int UNSIGNED NOT NULL,
@@ -91,9 +95,11 @@ $sthkeyword = $dbh->prepare("INSERT INTO keywords_relation (keywordid,otherid,ot
 # Build fnavne
 #
 
+print "Making persons\n";
 Kalliope::Build::Persons::create();
 my %persons = Kalliope::Build::Persons::parse('../data/poets.xml');
 my %fhandle2fid = Kalliope::Build::Persons::insert(%persons);
+print "Done\n";
 
 #
 # Andet pass af keywords som laver links imellem dem
@@ -284,6 +290,7 @@ $rc = $dbh->do("CREATE TABLE digte (
               vaerkpos INT,
               titel text NOT NULL,
               toctitel text NOT NULL,
+	      tititel text NOT NULL,
               foerstelinie text,
               underoverskrift text,
               indhold mediumtext,
@@ -313,7 +320,7 @@ $rc = $dbh->do("CREATE TABLE digte (
 $stharv = $dbh->prepare("SELECT ord FROM keywords,keywords_relation WHERE keywords.id = keywords_relation.keywordid AND keywords_relation.otherid = ? AND keywords_relation.othertype = 'vaerk'");
 $sth = $dbh->prepare("SELECT * FROM vaerker WHERE findes=1 ORDER BY cvstimestamp DESC");
 $sthafs = $dbh->prepare("INSERT INTO digte (fid,vid,titel,toctitel,vaerkpos,afsnit) VALUES (?,?,?,?,?,?)");
-$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,foerstelinie,underoverskrift,indhold,noter,pics,afsnit,layouttype,haystack,createtime,quality,lang) VALUES (?,?,?,?,?,?,?,?,?,?,?,0,?,?,?,?,?)");
+$sthkdigt = $dbh->prepare("INSERT INTO digte (longdid,fid,vid,vaerkpos,titel,toctitel,tititel,foerstelinie,underoverskrift,indhold,noter,pics,afsnit,layouttype,haystack,createtime,quality,lang) VALUES (?,?,?,?,?,?,?,?,?,?,?,0,?,?,?,?,?,?)");
 $sth->execute;
 print "  Ikke tomme: ".$sth->rows."\n";
 
@@ -326,7 +333,7 @@ while ($v = $sth->fetchrow_hashref) {
     open(IN,$fdir.$v->{'vhandle'}.".txt") || die "Argh! ".$fdir.$v->{'vhandle'}.'.txt ikke fundet!';
     $i=0;
     $first = 1;
-    $toctitel = $noter = $under = $indhold = '';
+    $tititel = $toctitel = $noter = $under = $indhold = '';
     @arvedekeys = ();
     @pics = ();
     @qualities = ();
@@ -372,6 +379,9 @@ while ($v = $sth->fetchrow_hashref) {
 	} elsif (/^TOC:/) {
 	    s/^TOC://;
 	    $toctitel = $_;
+	}  elsif (/^TI:/) {
+	    s/^TI://;
+	    $tititel = $_;
 	}  elsif (/^T:/) {
 	    s/^T://;
 	    $titel = $_;
@@ -447,7 +457,7 @@ $rc = $dbh->do("CREATE TABLE forbogstaver (
 	      type char(1) NOT NULL,   /* t eller f */
 	      KEY forbogstav_key (forbogstav(2)), 
 	      UNIQUE (bid))");
-$sth = $dbh->prepare("SELECT foerstelinie,titel,did,sprog FROM digte D, fnavne F WHERE D.fid = F.fid AND afsnit=0 AND D.layouttype = 'digt' ORDER BY F.sprog");
+$sth = $dbh->prepare("SELECT foerstelinie,tititel as titel,did,sprog FROM digte D, fnavne F WHERE D.fid = F.fid AND afsnit=0 AND D.layouttype = 'digt' ORDER BY F.sprog");
 $sth->execute();
 $i=0;
 while ($f[$i] = $sth->fetchrow_hashref) { 
@@ -497,7 +507,7 @@ sub insertdigt {
     my $quality = join ',',Kalliope::Array::uniq(@qualities,@{$qualityCache{"$$v{fhandle}/$$v{vhandle}"}});
     
     # Insæt hvad vi har.
-    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$toctitel || $titel,$firstline,$under,$indhold,$noter,$pics,$layouttype || 'digt',$haystack,$time,$quality,$v->{'lang'});
+    $sthkdigt->execute($id,$v->{'fid'},$v->{'vid'},$i,$titel,$toctitel || $titel, $tititel || $titel,$firstline,$under,$indhold,$noter,$pics,$layouttype || 'digt',$haystack,$time,$quality,$v->{'lang'});
     $i++;
     $layouttype = $noter = $under = $indhold = '';
     $firstline = '';
