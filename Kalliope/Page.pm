@@ -347,7 +347,7 @@ sub menuStructs {
          'history' => {menuTitle => 'Nøgleord',
 		       icon => 'gfx/icons/keywords-w64.gif',
                        url => 'keywordtoc.cgi?sprog='.$lang,
-                       pages => ['keywordtoc','timeline']
+                       pages => ['keywordtoc']
                        },
          'forum' =>    {menuTitle => 'Forum',
                        url => 'forumindex.cgi',
