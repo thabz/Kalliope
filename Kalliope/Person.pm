@@ -243,7 +243,7 @@ sub menu {
                     status => !$self->isUnknownPoet},
        henvisninger => { url => 'henvisninger.cgi?', 
                     title => 'Henvisninger', 
-                    desc => 'Oversigt over tekster som henviser til '.$poetName.'s tekster.',
+                    desc => 'Oversigt over tekster, som henviser til '.$poetName.'s tekster.',
                     status => 1 },
        links     => { url => 'flinks.pl?', 
                     title => 'Links', 

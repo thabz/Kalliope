@@ -69,7 +69,7 @@ if ($antal > 0) {
         $HTML .= "</TR>";
     }
     $HTML .= '</TABLE>';
-    $HTML .= '<BR><SMALL><I>Oversigt over tekster som henviser til '.$poet->name.'s tekster.</I></SMALL>';
+    $HTML .= '<BR><SMALL><I>Oversigt over tekster, som henviser til '.$poet->name.'s tekster.</I></SMALL>';
     $page->addBox( title => 'Henvisninger',
 	    width => '80%',
             coloumn => 1,
