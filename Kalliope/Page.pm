@@ -233,7 +233,8 @@ EOF
 
     # Head
     print '<TR><TD COLSPAN=2 VALIGN="top">';
-    print '<TABLE HEIGHT="100%" BGCOLOR="black" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR BGCOLOR="black" HEIGHT="70">';
+    print '<TABLE HEIGHT="100%" BGCOLOR="black" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
+    print '<TD ROWSPAN=2><IMG SRC="gfx/trans1x1.gif" HEIGHT=70 WIDTH=1></TD>';
     print '<TD WIDTH="100%" CLASS="maintitle">'.$self->titleAsHTML.'</TD>';
     print '<TD ROWSPAN=2 VALIGN="top">'.$self->thumbIMG.'</TD></TR>';
 #    print '</TR>';
@@ -245,7 +246,6 @@ EOF
     print '<TR>';
 #    print '<TABLE WIDTH="100%" HEIGHT="100%" CELLPADDING=0 CELLSPACING=0 BORDER=0><TR>';
     print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center">'.$self->_navigationMain.'<BR><BR>';
-    print '<BR><BR>';
 
     print '</TD><TD VALIGN="top">';
     print '<TABLE WIDTH="100%" HEIGHT="100%"><TR>';
