@@ -1,0 +1,16 @@
+<!ELEMENT kalliopework (workhead, workbody)>
+<!ELEMENT workhead (title, subtitle?, date, quality?, notes?, pictures?, keywords?, cvs-timestamp)>
+<!ELEMENT workbody (group|text)*>
+<!ELEMENT text (head,body)>
+<!ELEMENT head (headingtitle?, linktitle?, indextitle?, toctitle?, subtitle?, notes?)>
+<!ATTLIST body xml:space (default|preserve) 'preserve'>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT notes (note*)>
+<!ELEMENT note (#PCDATA)>
+<!ELEMENT pictures (picture?)>
+<!ELEMENT picture (#PCDATA)>
+<!ATTLIST note xml:space (default|preserve) 'preserve'>
+<!ELEMENT group (#PCDATA)> 
+<!ELEMENT subtitle (#PCDATA)>
