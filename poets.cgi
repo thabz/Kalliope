@@ -151,7 +151,7 @@ sub list19 {
 	    $blocks[$bi]->{'head'} = "<DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR>";
 	    $blocks[$bi]->{'body'} = '<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=0>';
 	}
-	$blocks[$bi]->{'body'} .= '<TR><TD><A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.", ".$f->{'fornavn'}.'</TD><TD></TD><TD ALIGN="right"><FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></A></TD></TR>';
+	$blocks[$bi]->{'body'} .= '<TR><TD><A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.", ".$f->{'fornavn'}.'</A></TD><TD></TD><TD ALIGN="right"><FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></TD></TR>';
 	$blocks[$bi]->{'count'}++;
     }
     $blocks[$bi]->{'body'} .= '</TABLE>' unless $bi == -1;
