@@ -54,6 +54,10 @@ sub fid {
 }
 
 sub hasPoems {
+    return shift->{'vaerker'};
+}
+
+sub hasWorks {
     return shift->{'vers'};
 }
 
@@ -178,16 +182,16 @@ sub menu {
     my %menuStruct = (
        vaerker => { url => 'fvaerker.pl?', 
                     title => 'Værker', 
-                    status => $self->{'vers'} },
+                    status => $self->hasWorks },
        titlelines => { url => 'flines.pl?mode=1&', 
                     title => 'Digttitler', 
-                    status => $self->{'vaerker'} },
+                    status => $self->hasPoems },
        firstlines => { url => 'flines.pl?mode=0&', 
                     title => 'Førstelinier', 
-                    status => $self->{'vaerker'} },
+                    status => $self->hasPoems },
        popular => { url => 'fpop.pl?', 
                     title => 'Populære', 
-                    status => $self->{'vaerker'} },
+                    status => $self->hasPoems },
        prosa     => { url => 'fvaerker.pl?mode=prosa&', 
                     title => 'Prosa', 
                     status => $self->{'prosa'} },
@@ -196,7 +200,7 @@ sub menu {
                     status => $self->{'pics'} },
        bio       => { url => 'biografi.cgi?', 
                     title => 'Biografi', 
-                    status => $self->{'bio'} },
+                    status => $self->hasBio },
        samtidige => { url => 'samtidige.cgi?', 
                     title => 'Samtid', 
                     status => 1 },
