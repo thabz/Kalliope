@@ -47,5 +47,6 @@ close (FILE);
 
 $page->addBox( width => '75%',
                coloumn => 1,
+	       title => 'Sekundær litteratur',
 	       content => $HTML );
 $page->print;
