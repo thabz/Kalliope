@@ -462,7 +462,7 @@ sub _navigationMain {
         my ($title,$url,$icon) = ($struct->{'menuTitle'},
                                   $struct->{'url'},$struct->{'icon'});
 	next unless $icon;			  
-	$HTML .= qq|<A CLASS=white  HREF="$url">|;
+	$HTML .= qq|<A CLASS="white" HREF="$url">|;
 	$HTML .= qq|<IMG ALT="" BORDER=0 SRC="$icon"><BR>|;
         if ($key ne $self->{'pagegroup'} && $key ne $self->{'pagegroupchoosen'}) {
 	    $HTML .= $title;
