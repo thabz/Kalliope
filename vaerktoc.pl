@@ -60,11 +60,13 @@ $page->addBox( width => '100%',
 #               content => '<SPAN CLASS=digtoverskrift><I>'.$vtitel."</I> ".(($vaar ne '?')?"($vaar)":'').'</SPAN>'
 #              );
 
+my $mode = $work->isProse ? 'prosa' : 'poetical'; 
+
 $page->addBox( width => '80%',
                coloumn => 1,
                title => 'Indhold',
                content => &tableOfContent($work),
-               end => qq|<A TITLE="Tilbage til oversigten over værker" HREF="fvaerker.pl?fhandle=$fhandle"><IMG ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 ALT="Tilbage til oversigten over værker"></A>|
+               end => qq|<A TITLE="Tilbage til oversigten over værker" HREF="fvaerker.pl?fhandle=$fhandle&mode=$mode"><IMG ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 ALT="Tilbage til oversigten over værker"></A>|
               );
 
 if ($work->notes) {

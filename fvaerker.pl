@@ -37,7 +37,9 @@ push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,['Værker','fvaerker.pl?fhandle='.$poet->fhandle];
 
-my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs, page => 'vaerker' );
+my $page = newAuthor Kalliope::Page ( poet => $poet, 
+                    crumbs => \@crumbs, 
+		    page => $mode eq 'prosa' ? 'prosa' : 'vaerker' );
 my $HTML;
 
 my @works = $mode eq 'poetical' ? $poet->poeticalWorks : $poet->proseWorks;
