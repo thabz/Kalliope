@@ -31,7 +31,7 @@ sub getEventsGivenMonthAndDay {
     my ($month,$day) = @_;
 
     my $dbh = Kalliope::DB::connect();
-    my $sth = $dbh->prepare("SELECT * FROM timeline WHERE type = 'event' AND month = ? AND day = ?");
+    my $sth = $dbh->prepare("SELECT * FROM timeline WHERE type = 'event' AND month = ? AND day = ? AND eventtype != 'personal'");
     $sth->execute($month,$day);
     my @result;
     while (my $h = $sth->fetchrow_hashref) {
