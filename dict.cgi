@@ -75,7 +75,12 @@ my $sth = $dbh->prepare ("SELECT DISTINCT firstletter FROM dict ORDER BY firstle
 $sth->execute();
 my $HTML;
 my $minimenu;
+my @letters;
 while (my ($myletter) = $sth->fetchrow_array()) {
+    push @letters, { 'sort' => $myletter };
+}
+foreach my $mymyletter (sort {  Kalliope::Sort::sort($a,$b) } @letters) {
+    my $myletter = $mymyletter->{'sort'};
     my $class = ($myletter eq $letter) ? 'green' : '';
     $minimenu .= qq|<A CLASS="$class" TITLE="Ord som begynder med $myletter" HREF="dict.cgi?letter=$myletter"> |;
     $minimenu .= Kalliope::Strings::uc($myletter)."</A>"; 
