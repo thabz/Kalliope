@@ -180,13 +180,12 @@ sub _contentAsPoemHTML {
     my $dispNum = 0;
     my $lastNum = 0;
     foreach my $line (split /\n/,$self->{'indhold'}) {
-	$line =~ s/^(\s+)/_nbsp($1)/e;
 	my $lineForTjek = $line;
 	$lineForTjek =~ s/<[^>]+>//g;
-	if (   $lineForTjek =~ /[^ ]/
+	if (   $lineForTjek =~ /[^ _\t]/
 		&& $lineForTjek !~ /^ *\d+\.? *$/
 		&& $line !~ /<nonum>/
-		&& $lineForTjek !~ /^ *[IVXLMD]+\.? *$/)
+		&& $lineForTjek !~ /^[ \t]*[IVXLMD]+\.? *$/)
 	{
 	    $num++;
 	} else {
@@ -198,6 +197,7 @@ sub _contentAsPoemHTML {
 	} else {
 	    $dispNum = '';
 	};
+	$line =~ s/^(\s+)/_nbsp($1)/e;
 	$result .= '<tr><td style="font-size: 9pt; color: #808080; text-align: left">'.$dispNum.'</td>';
 	$result .= qq|<td style="white-space: nowrap" nowrap>$line </td>\n|;
 	$result .= '</tr>';
