@@ -3,8 +3,6 @@ Indhold:
 
 * Adam Homo ... hvilken udgave har vi? Müller udgav flere reviderede udgaver.
 * Der skal skrives nøgleord til de forskellige metriske enheder. (Se længere nede.)
-* Hvilken fora vil vi have?
-* Omskriv eller fjern de enkelte eForlag tekster der stadig findes i nøgleord.
 * Tilføj Q:kilde eller VQ:kilde alle de steder hvor vi faktisk *har* en kilde angivet.
 * Nøgleord om stilistiske begreber: apostrofe, allitteration (og assonans?), metrik (redigering).
 * Nøgleord om metriske enheder: den sapphiske strofe, den alkæiske strofe, terzine (redigering), 
@@ -24,18 +22,14 @@ Kode:
 * Fix c:-tegnene til omvendte c: (cf. Staffeldts Digte 1804, »Emmelina«)
 * Søgemaskinen indekserer også indhold at footnotes. Søg f.eks. efter 'kalliope'. Ups!
 * Mest populære værker kan ikke expandes...
-* - skal konverteres til &dash; eller endnu bedre &#0151;
 * Kan pt. kun håndtere een XREF pr. linie.
 
 XML:
 
 * Konvertering til værker i XML format.
-* CVS timestamp. Værker skal have en CVS Id, så vi har et gratis 
-  timestamp på sidste ændring. 
 * Skal vi have een stor fnavne.xml fil, som kan XSLT-includes fra
   værk-filerne?
 * Skal vaerker.txt erstattes med en liste over værk-id'er i fnavne.xml?
-* Værker skal have et fuldstændig/ufuldstændig flag.
 * Hvordan løser vi problemer med at en bogs indholdsfortegnelse kræver
   større fleksibilitet end hvad der kan graves ud af bogens struktur?
   Skal vi droppe TOC: felterne til fordel for en helt eksplicit angivelse
