@@ -1,7 +1,7 @@
 CVS-TIMESTAMP: $Date$
 STATUS:complete
 VQ:korrektur1,korrektur2,korrektur3,kilde
-VN:Kalliope bringer Shakespeares sonetter i to forskellige udgaver: under hver digttitel er først en version der nøje følger originalens stavemåde (bortset fra langt s ( &#383; )), dernæst en fuldt ud moderniseret udgave - og ude i højre side af skærmen kan man så ovenikøbet se en faksimilie af den pågældende sonet som den tager sig ud i originaludgaven, <i>Shake-speares Sonnets</i> fra 1609.<br>Den ofte ret vilkårlige tegnsætning er nænsomt og i stilhed blevet rettet lidt til, uden at nogen konsekvent modernisering er tilstræbt. Alle ændringer i tekstforlæggets ordlyd (emendationer) er omhyggeligt opregnet i de enkelte sonetters noter; f.eks. betyder "1 monuments] <i>Malone</i>; monument <i>Q</i>" ud for sonnet 55, at i den øverste teksts linie 1 hvor vi har "Monuments", der har <i>Q</i> (the 1609 Quarto) "Monument", og at rettelsen skyldes Edmond Malone. Noteret er også de læsemåder vi ikke har optaget i vores tekst, men alligevel er plausible alternativer. - Alt dette kan med fordel ignoreres, det ødelægger læseoplevelsen og er kun medtaget for fuldstændighedens skyld.
+VN:Kalliope bringer Shakespeares sonetter i to forskellige udgaver: under hver digttitel er først en version der nøje følger originalens stavemåde (bortset fra langt s ( &#383; )) og dernæst en fuldt ud moderniseret udgave; ude i højre side af skærmen kan man så ovenikøbet se en faksimilie af den pågældende sonet som den tager sig ud i originaludgaven, <i>Shake-speares Sonnets</i> fra 1609.<br>Den ofte ret vilkårlige tegnsætning er nænsomt og i stilhed blevet rettet lidt til, uden at nogen konsekvent modernisering er tilstræbt. Alle ændringer i tekstforlæggets ordlyd (emendationer) er omhyggeligt anført i de enkelte sonetters noter; f.eks. betyder "1 monuments] <i>Malone</i>; monument <biblio>Q</biblio>" ud for sonnet 55, at i den øverste teksts linie 1 hvor vi har "Monuments", der har <biblio>Q</biblio> (the 1609 Quarto) "Monument", og at rettelsen skyldes Edmond Malone. - Alt dette kan med fordel ignoreres, det ødelægger læseoplevelsen og er kun medtaget for fuldstændighedens skyld.
 VP:sonnets/sonnets-tit.jpg%Facsimile
 
 I:shakespeare2001060201
@@ -119,7 +119,7 @@ Looke in thy glasse and tell the face thou vewest,
 Now is the time that face should forme an other,
 Whose fresh repaire if now thou not renewest, 
 Thou doo'st beguile the world, vnblesse some mother. 
-For where is she so faire whose vn-eard wombe 
+For where is she so faire whose vn-eard wombe
 Disdaines the tillage of thy husbandry? 
 Or who is he so fond will be the tombe
 Of his selfe loue, to stop posterity? 
@@ -562,16 +562,16 @@ P:sonnets/sonnet-014b.jpg%Facsimile
 Not from the stars do I my iudgement plucke,
 And yet me thinkes I haue Astronomy,
 But not to tell of good, or euil lucke,
-Of plagues, of dearths, or seasons quallity;<note>seasons] <biblio>Q</biblio>; season's <i>Dyce</i>; You selfe </note>
+Of plagues, of dearths, or seasons quallity;<note>seasons] <biblio>Q</biblio>; seasons' <i>Capell</i>; season's <i>Dyce</i></note>
 Nor can I fortune to breefe mynuits tell,
-Pointing to each his thunder, raine and winde, 
-Or say with Princes if it shal go wel 
-By oft predict that I in heauen finde. 
-But from thine eies my knowledge I deriue, 
-And, constant stars, in them I read such art 
+Pointing to each his thunder, raine and winde,<note>Pointing] <biblio>Q</biblio>; 'Pointing <i>Walker conj.</i></note>
+Or say with Princes if it shal go wel
+By oft predict that I in heauen finde.<note>oft] <biblio>Q</biblio>; ought <i>Gildon</i>; aught <biblio>Duncan-Jones</biblio></note>
+But from thine eies my knowledge I deriue,
+And, constant stars, in them I read such art
 As truth and beautie shal together thriue,
-If from thy selfe to store thou wouldst conuert: 
-    Or else of thee this I prognosticate, 
+If from thy selfe to store thou wouldst conuert:
+    Or else of thee this I prognosticate,
     Thy end is Truthes and Beauties doome and date.
 
 ---
@@ -648,7 +648,7 @@ And many maiden gardens yet vnset,
 With vertuous wish would beare your liuing flowers, 
 Much liker then your painted counterfeit: 
 So should the lines of life that life repaire,
-Which this (Times pensel or my pupill pen) 
+Which this Times pensel or my pupill pen<note>this Times pensel ... pen] <i>Tucker</i>; this (Times pensel ... pen) <biblio>Q</biblio>; this, - time's pencil, ... pen, - <i>Capell</i>; this (Time's Pencil) ... Pen, <i>Sewell</i>; this, Time's pencil, ... pen, <i>Malone</i>; this Time's Pencil, ... Pen, <i>Gildon</i></note>
 Neither in inward worth nor outward faire 
 Can make you liue your selfe in eies of men.
     To giue away your selfe, keeps your selfe still, 
@@ -665,7 +665,7 @@ And many maiden gardens yet unset,
 With virtuous wish would bear your living flowers,
 Much liker than your painted counterfeit:
 So should the lines of life that life repair,
-Which this, time's pencil or my pupil pen,
+Which this time's pencil or my pupil pen
 Neither in inward worth nor outward fair
 Can make you live yourself in eyes of men.
     To give away yourself keeps yourself still,
@@ -686,14 +686,14 @@ Though yet heauen knowes it is but as a tombe
 Which hides your life, and shewes not halfe your parts: 
 If I could write the beauty of your eyes, 
 And in fresh numbers number all your graces, 
-The age to come would say: this Poet lies, 
+The age to come would say, this Poet lies, 
 Such heauenly touches nere toucht earthly faces. 
 So should my papers (yellowed with their age) 
 Be scorn'd, like old men of lesse truth then tongue, 
 And your true rights be termd a Poets rage,
 And stretched miter of an Antique song;
-  But were some childe of yours aliue that time, 
-  You should liue twise in it, and in my rime.
+    But were some childe of yours aliue that time, 
+    You should liue twise, in it, and in my rime.<note>twise, in it,] <i>Capell</i>; twise in it, <biblio>Q</biblio>; twice, - in it <i>Capell</i></note>
 
 ---
 
@@ -710,7 +710,7 @@ Be scorned, like old men of less truth than tongue,
 And your true rights be termed a poet's rage,
 And stretched metre of an antique song;
     But were some child of yours alive that time,
-    You should live twice: in it, and in my rhyme.
+    You should live twice, in it, and in my rhyme.
 
 I:shakespeare0018
 T:18
@@ -725,7 +725,7 @@ Thou art more louely and more temperate;
 Rough windes do shake the darling buds of Maie,
 And Sommers lease hath all too short a date;
 Sometime too hot the eye of heauen shines,
-And often is his gold complexion dimm'd;
+And often is his gold complexion dimm'd,
 And euery faire from faire some-time declines,
 By chance or natures changing course vntrim'd:
 But thy eternall Sommer shall not fade,
@@ -742,12 +742,12 @@ Thou art more lovely and more temperate;
 Rough winds do shake the darling buds of May,
 And summer's lease hath all too short a date;
 Sometime too hot the eye of heaven shines,
-And often is his gold complexion dimmed;
+And often is his gold complexion dimmed,
 And every fair from fair sometime declines,
-By chance or nature's changing course, untrimmed:
+By chance or nature's changing course untrimmed:
 But thy eternal summer shall not fade,
 Nor lose possession of that fair thou ow'st,
-Nor shall death brag thou wander'st in his shade
+Nor shall death brag thou wand'rest in his shade
 When in eternal lines to time thou grow'st: 
     So long as men can breathe or eyes can see,
     So long lives this, and this gives life to thee.
