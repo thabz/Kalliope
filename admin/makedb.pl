@@ -9,6 +9,7 @@ use Kalliope::Build::Persons;
 use Kalliope::Build::Dict;
 use Kalliope::Build::Timeline;
 use Kalliope::Build::Xrefs;
+use Kalliope::Build::Biblio;
 use POSIX;
 
 $| = 1; # No buffered I/O on STDOUT
@@ -101,6 +102,14 @@ $sthkeyword = $dbh->prepare("INSERT INTO keywords_relation (keywordid,otherid,ot
 Kalliope::Build::Persons::create();
 my %persons = Kalliope::Build::Persons::parse('../data/poets.xml');
 my %fhandle2fid = Kalliope::Build::Persons::insert(%persons);
+&log("Done");
+
+#
+# Build biblio
+#
+
+&log("Making biblio... ");
+Kalliope::Build::Biblio::build();
 &log("Done");
 
 #
