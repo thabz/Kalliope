@@ -58,8 +58,8 @@ if (defined param('posted')) {
 #
 
 my %cookies = fetch CGI::Cookie;
-my $userName = $cookies{'name'}->value || '';
-my $userEmail = $cookies{'email'}->value || '';
+my $userName = $cookies{'name'} ? $cookies{'name'}->value : '';
+my $userEmail = $cookies{'email'} ? $cookies{'email'} ->value : '';
 
 
 my $parentPost;
