@@ -102,13 +102,6 @@ if ($poem->notes || $#keywords >= 0) {
 	           content => &notes($poem,@keywords) );
 }
 
-$page->addBox( width => '200',
-               coloumn => 2,
-		   theme => 'dark',
-               title => 'Nøgleord',
-               content => &keywords($poem) );
-
-
 
 if ($poem->footnotes) { 
     $page->addBox( width => '200',
@@ -128,12 +121,20 @@ if ($poem->hasPics) {
 
 }
 
+$page->addBox( width => '200',
+               coloumn => 2,
+	       theme => 'dark',
+               title => 'Nøgleord',
+               content => &keywords($poem) );
+
+
+
 my $workTitle = $work->titleWithYear;
 
 $page->addBox( width =>'100%',
 	       coloumn => 0,
                title => 'Indhold',
-		   theme => 'dark',
+	       theme => 'dark',
 	       content => &tableOfContents($work),
 	       end => qq|<A HREF="vaerktoc.pl?fhandle=$fhandle&vhandle=$vhandle"><IMG VALIGN=center ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 TITLE="$workTitle" ALT="$workTitle"></A>|
 	     );
@@ -196,18 +197,20 @@ sub keywords {
     my ($poem) = @_;
     my @keywords = $poem->getKeyPool;
     my $HTML;
+    $HTML .= '<SPAN STYLE="font-size: 12px">';
     if ($#keywords >= 0) {
 	foreach my $word (@keywords) {
 	    $HTML .= "$word, "
 	}
 	$HTML =~ s/, $//;
     } else {
-        $HTML = 'Dette digt har endnu ingen nøgleord tilknyttet.';
+        $HTML .= 'Dette digt har endnu ingen nøgleord tilknyttet.';
     }
     my $longdid = $poem->longdid;
     $HTML .= qq|<br><BR>Tilføj nøgleord<BR><FORM METHOD="get"><INPUT TYPE="text" CLASS="inputtext" NAME="newkeywords"><INPUT TYPE="hidden" NAME="longdid" VALUE="$longdid"><INPUT TYPE="submit" CLASS="button" VALUE="Tilføj"> |;
     $HTML .= Kalliope::Help->new('keywordadd')->linkAsHTML;
     $HTML .= '</FORM>';
+    $HTML .= '</SPAN>';
     return $HTML;
 }
 
