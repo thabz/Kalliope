@@ -66,10 +66,10 @@ sub content {
 
 sub contentAsHTML {
     my $HTML = shift->content;
+    $HTML =~ s/^>+/\t/gm;
     $HTML =~ s/</&lt;/gm;
     $HTML =~ s/>/&gt;/gm;
     my $HTML = Kalliope::Web::linkParse($HTML);
-    $HTML =~ s/^>+/\t/gm;
     $HTML =~ s/^\t(.*)\n/<div style="color: #808080; margin: 0px; padding: 0 0 0 10px">$1<\/div>/gm;
     $HTML =~ s/\n/<BR>/g;
     return $HTML;
