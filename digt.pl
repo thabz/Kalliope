@@ -55,10 +55,10 @@ my ($longdid,$fhandle,$vhandle) = ($poem->longdid,$poet->fhandle,$work->longvid)
 #
 
 my @crumbs;
-push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
+push @crumbs,['Digtere','poets.cgi?list=az&amp;sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,['Værker','fvaerker.pl?fhandle='.$poet->fhandle];
-push @crumbs,[$work->titleWithYear,'vaerktoc.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->vhandle];
+push @crumbs,[$work->titleWithYear,'vaerktoc.pl?fhandle='.$poet->fhandle.'&amp;vhandle='.$work->vhandle];
 push @crumbs,[$poem->linkTitle,''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
@@ -165,7 +165,7 @@ sub moreLinks {
     my ($poem,$work) = @_;
     my $longdid = $poem->longdid;
     my $HTML = '';
-    $HTML .= qq|<a class="more" title="Vis denne tekst i et format som pænere når udskrevet" href="digt.pl?longdid=$longdid&printer=1">Vis printudgave...</a><br>|;
+    $HTML .= qq|<a class="more" title="Vis denne tekst i et format som pænere når udskrevet" href="digt.pl?longdid=$longdid&amp;printer=1">Vis printudgave...</a><br>|;
     $HTML .= qq|<a title="Send redaktionen en rettelse til denne tekst" class="more" onClick="window.open('korrektur.cgi?longdid=$longdid','Korrekturpopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=330'); return false" href="javascript:{}">Send en rettelse...</a><br>|;
 
     my $nextPoem = $work->getNextPoem($longdid);
@@ -314,7 +314,7 @@ sub tableOfContents {
 sub otherFormats {
     my ($poet,$poem) = @_;
     my ($longdid,$fhandle) = ($poem->longdid,$poet->fhandle);
-    return qq|<A HREF="digtprinter.pl?fhandle=$fhandle&longdid=$longdid"><IMG ALT="Udskriftsvenligt format" SRC="gfxold/gfx/printer.gif" BORDER=0 ALT="Vis dette digt opsat på en side lige til at printe ud."></A><BR>Printer venligt<BR>|;
+    return qq|<A HREF="digtprinter.pl?fhandle=$fhandle&amp;longdid=$longdid"><IMG SRC="gfxold/gfx/printer.gif" BORDER=0 ALT="Vis dette digt opsat på en side lige til at printe ud."></A><BR>Printer venligt<BR>|;
 }
 
 
