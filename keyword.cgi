@@ -57,6 +57,7 @@ if (!$keywordid) {
                     content => 'Du er blevet henvist til et ugyldigt nøgleord. Fejlen vil blive rettet hurtigst muligt!');
     $page->print;
 } else {
+    my $ord = $keyword->ord;
     my @crumbs;
     push @crumbs,['Nøgleord','keywordtoc.cgi'];
     push @crumbs,[$keyword->title,''];
@@ -76,7 +77,8 @@ if (!$keywordid) {
     #
     # Related keywords -----------------------------------------------
     #
-    my $html;
+    
+    my $html = qq|<A HREF="ksearch.cgi?type=keyword&keyword=$ord&sprog=$LA">Vis alle digte som har dette nøgleord</A><br><br>|;
     my @list = $keyword->linksToKeywords;
     push @list,$keyword->linksToPersons($LA);
     #TODO: Måske jeg vælge 5 tilfældige udfra f.eks. top 10.

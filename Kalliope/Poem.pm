@@ -233,12 +233,13 @@ sub work {
 
 sub getSearchResultEntry {
     my ($self,$escapedNeedle,@needle) = @_;
+    $escapedNeedle = $escapedNeedle || '';
     my $content = $self->contentForSearch();
     my $work = $self->work;
     my $author = $self->author;
     my $poemTitle = $self->title;
 
-    my $match;
+    my $match = '';
     my $slash = '<SPAN STYLE="color: #a0a0a0">//</SPAN>';
     foreach my $ne (@needle) {
 	my ($a,$b,$c) = $content =~ /(.{0,30})($ne)(.{0,30})/si;

@@ -25,7 +25,6 @@ my @order = qw/ korrektur1 korrektur2 korrektur3 kilde side /;
 sub new {
     my ($class,$quality) = @_;
     my $self = bless {},$class;
-    print STDERR "** Q:$quality\n";
     @{$self->{'array'}} = split ',',$quality;
     %{$self->{'hash'}} = map { $_ => 1 } @{$self->{'array'}};
     return $self;

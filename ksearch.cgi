@@ -24,100 +24,40 @@ use CGI ();
 use Kalliope::Person;
 use Kalliope::Page;
 use Kalliope::Poem;
+use Kalliope::Search;
 use Kalliope::DB;
 use URI::Escape;
 use strict;
 
 my $dbh = Kalliope::DB->connect;
 
-my $LA = CGI::param('sprog');
-my $needle = CGI::param('needle');
-my $escapedNeedle = uri_escape($needle);
+my $search = new Kalliope::Search(lang => CGI::param('sprog') || '',
+                                  type => CGI::param('type') || '',
+                                  offset => CGI::param('offset') || 0,
+				  needle => CGI::param('needle') || '',
+				  keyword => CGI::param('keyword') || '');
 
-my $needle2 = $needle;
-$needle2 =~ s/^\s+//;
-$needle2 =~ s/\s+$//;
-$needle2 =~ s/[^a-zA-ZæøåÆØÅ ]//g;
-my @needle = split /\s+/,$needle2;
+$search->log;
 
-#Log alle søgninger
-
-my $remotehost = CGI::remote_host();
-open (FIL,">>../stat/searches.log");
-print FIL localtime()."\$\$".$remotehost."\$\$".$needle."\$\$\n";
-close FIL;
-
-my @crumbs;
-push @crumbs,["Søgning efter »$needle«",''];
+my @crumbs = ([$search->pageTitle,'']);
 
 my $page = new Kalliope::Page (
-		title => "Søgning efter »$needle«",
+		title => $search->pageTitle,
                 pagegroup => 'search',
-                lang => $LA,
+                lang => $search->lang,
                 page => '',
                 thumb => 'gfx/search_100.GIF',
                 crumbs => \@crumbs );
 
+if ($search->hasSearchBox) {
+    $page->addBox( width => '80%',
+	           content => $search->getSearchBoxHTML);
+}
+
+
 my $starttid = time;
-
-my $sth = $dbh->prepare("SELECT count(*) FROM haystack WHERE (MATCH titel,hay AGAINST (?) > 0) AND lang = ?");
-$sth->execute($needle,$LA);
-my $hits = $sth->fetchrow_array;
-
-my $firstNumShowing = CGI::url_param('offset') || 0;
-my $lastNumShowing = $firstNumShowing  + 10 <= $hits ?
-                     $firstNumShowing  + 10 : $hits;
-
-$sth = $dbh->prepare("SELECT id,id_class, MATCH titel,hay AGAINST (?) AS quality FROM haystack WHERE (MATCH titel,hay AGAINST (?) > 0) AND lang = ? ORDER BY quality DESC LIMIT $firstNumShowing,10");
-$sth->execute($needle,$needle,$LA);
-
-my @matches;
-while (my $d = $sth->fetchrow_hashref)  {
-    push @matches,[$$d{'id'},$$d{'id_class'},$$d{'quality'}];
-}
-$sth->finish();
-
-my $HTML;
-my $i = $firstNumShowing+1;
-
-$HTML .= "Viser ".($firstNumShowing+1)."-".($lastNumShowing)." af $hits<BR><BR>";
-
-$HTML .= '<TABLE WIDTH="100%">';
-foreach my $d (@matches)  {
-    my ($id,$id_class,$quality) = @{$d};
-    my $item = $id_class->new(id => $id);
-    
-    $HTML .= qq|<TR><TD VALIGN="top">$i.</TD><TD>|;
-    $HTML .= $item->getSearchResultEntry($escapedNeedle,@needle);
-    $HTML .= '</TD></TR>';
-    $i++;
-}
-$HTML .= '</TABLE>';
-
-if ($hits > 10) {
-    for ($i = 0; $i <= int (($hits-1)/10) ; $i++) {
-	my $offset = $i*10;
-	my $iDisplay = $i+1;
-	if ($offset == $firstNumShowing) {
-	    $HTML .= "<B>[$iDisplay] </B>";
-	} else {
-	    $HTML .= qq|<A HREF="ksearch.cgi?offset=$offset&needle=$escapedNeedle&sprog=$LA">[$iDisplay]</A> |;
-	}
-    }
-}
-
-unless ($hits) {
-    $HTML = 'Søgningen gav intet resultat.';
-}
-
-my $formHTML = qq|<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle" VALUE="$needle"><INPUT TYPE="hidden" NAME="sprog" VALUE="$LA"></FORM>|;
-
 $page->addBox( width => '80%',
-	content => $formHTML );
-
-
-$page->addBox( width => '80%',
-	       content => $HTML,
-               end => "Tid i sekunder: ".(time-$starttid) );
+	content => $search->getHTML,
+	end => "Tid i sekunder: ".(time-$starttid) );
 
 $page->print();
