@@ -870,6 +870,7 @@
   <name>
     <firstname>Poul</firstname>
     <lastname>Pedersen</lastname>
+    <fullname>Poul Pedersen Philedor</fullname>
   </name>
   <period>
     <born>
@@ -1089,6 +1090,21 @@
     </dead>
   </period>
 </person>
+
+<person id="thura" lang="dk" type="poet">
+  <name>
+    <firstname>Laurits</firstname>
+    <lastname>Thura</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1657</date>
+    </born>
+    <dead>
+      <date>1731</date>
+    </dead>
+  </period>
+</person>
  
 <person id="sorterup" lang="dk" type="poet">
   <name>
@@ -1101,6 +1117,21 @@
     </born>
     <dead>
       <date>1723-10-04</date>
+    </dead>
+  </period>
+</person>
+
+<person id="tychonius" lang="dk" type="poet">
+  <name>
+    <firstname>Christen Lassen</firstname>
+    <lastname>Tychonius</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1680</date>
+    </born>
+    <dead>
+      <date>1740</date>
     </dead>
   </period>
 </person>
@@ -1137,6 +1168,37 @@
   </period>
 </person>
 
+<person id="friis" lang="dk" type="poet">
+  <name>
+    <firstname>Jørgen</firstname>
+    <lastname>Friis</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1684</date>
+    </born>
+    <dead>
+      <date>1740</date>
+    </dead>
+  </period>
+</person>
+
+<person id="wolfburg" lang="dk" type="poet">
+  <name>
+    <firstname>Morten Caspar</firstname>
+    <lastname>Wolfburg</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1686</date>
+    </born>
+    <dead>
+      <date>1729</date>
+    </dead>
+  </period>
+</person>
+
+
 <person id="falster" lang="dk" type="poet">
   <name>
     <firstname>Christian</firstname>
@@ -1166,6 +1228,21 @@
     <dead>
       <date>1764-06-03</date>
       <place>Ribe</place>
+    </dead>
+  </period>
+</person>
+
+<person id="clitau" lang="dk" type="poet">
+  <name>
+    <firstname>Thomas</firstname>
+    <lastname>Clitau</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1695 ca.</date>
+    </born>
+    <dead>
+      <date>1754</date>
     </dead>
   </period>
 </person>
@@ -1212,6 +1289,21 @@
     </born>
     <dead>
       <date>1779</date>
+    </dead>
+  </period>
+</person>
+
+<person id="graah" lang="dk" type="poet">
+  <name>
+    <firstname>Jacob</firstname>
+    <lastname>Graah</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1721</date>
+    </born>
+    <dead>
+      <date>1756</date>
     </dead>
   </period>
 </person>
@@ -3068,6 +3160,21 @@
     <dead>
       <date>1673-02-17</date>
       <place>Paris</place>
+    </dead>
+  </period>
+</person>
+
+<person id="boileau" lang="fr" type="poet">
+  <name>
+    <firstname>Nicolas</firstname>
+    <lastname>Boileau</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1636</date>
+    </born>
+    <dead>
+      <date>1711</date>
     </dead>
   </period>
 </person>
