@@ -79,7 +79,7 @@ sub insertThumb {
 	my ($dx,$dy) = imgsize ($h->{'destfile'});
 	my $winy = $dy+20 < 600 ? $dy+20 : 600;
 	my $winx = $dx+30 < 800 ? $dx+30 : 800;
-	$html .= qq|<A HREF="javascript:{}" onclick='window.open("picfull.pl?imgfile=|.uri_escape($h->{destfile}).qq|&x=$dx&y=$dy","popup","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=$winx,height=$winy")'>|;
+	$html .= qq|<A HREF="javascript:{}" onclick='window.open("picfull.pl?imgfile=|.uri_escape($h->{destfile}).qq|&x=$dx&y=$dy","popup","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=$winx,height=$winy")'>|;
     } elsif ($h->{url}) {
 	$html .= qq|<A HREF="$h->{url}">|;
     }
