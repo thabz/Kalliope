@@ -33,7 +33,7 @@ sub sort {
 }
 
 sub mylc {
-    my $str = shift;
+    my $str = shift || '';
     $str =~ tr/A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖØÙÚÛÜİŞ/a-zàáâãäåæçèéêëìíîïğñòóôõöøùúûüış/;
     return $str;
 }

@@ -37,7 +37,7 @@ my @randomPagesTitles = ('Digtarkiv',
                           
 my $rnd = int rand($#randomPagesTitles+1);
 
-my $showAllNews = CGI::param('showall') eq 'yes' ? 1 : 0;
+my $showAllNews = CGI::param('showall') && CGI::param('showall') eq 'yes' ? 1 : 0;
 
 my @crumbs = (['Velkommen','']);
 

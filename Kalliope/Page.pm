@@ -27,12 +27,15 @@ use strict;
 sub new {
     my ($class,%args) = @_;
     my $self = bless {}, $class;
+
+    $self->{'pagegroupchoosen'} = '';
+
     foreach my $key (%args) {
         $self->{$key} = $args{$key};
     }
     $self->{'lang'} = $args{'lang'} || 'dk';
-    $self->{'pagegroup'} = $args{'pagegroup'};
-    $self->{'page'} = $args{'page'};
+    $self->{'pagegroup'} = $args{'pagegroup'} || '';
+    $self->{'page'} = $args{'page'} || '';
     $self->{'thumb'} = $args{'thumb'};
     $self->{'title'} = $args{'title'};
     $self->{'columns'} = [];
@@ -97,7 +100,7 @@ sub addHTML {
 
 sub thumbIMG {
     my $self = shift;
-    my ($src,$alt,$href);
+    my ($src,$alt,$href) = ('','','');
     if ($self->{'poet'} && $self->{'poet'}->thumbURI) {
         my $poet = $self->{'poet'};
         $src = $poet->thumbURI;
