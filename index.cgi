@@ -53,7 +53,7 @@ if (my $dayToday = &dayToday()) {
 }
 
 my ($sonnetText,$sonnetEnd) = &sonnet;
-$page->addBox ( title => "Sonnetten på pletten",
+$page->addBox ( title => "Sonetten på pletten",
 	coloumn => 1,
 	width => '100%',
 	content => $sonnetText,
