@@ -5,26 +5,22 @@ sub dk_sort {
 	$ai =~ s/aa/å/;
 	local($bi) = "\L$b";
 	$bi =~ s/aa/å/;
-	if ($ai lt $bi) {
-		-1;
-	}
-	elsif ($ai eq $bi) {
-		0;
-	}
-	else { 1; }
+        return $ai cmp $bi;
 }
 
 sub dk_sort2 { 
-    my $aa = lc($a->{'sort'});
-    $aa =~ s/aa/å/ig;
-    my $bb = lc($b->{'sort'});
-    $bb =~ s/aa/å/ig;
-    if ($aa lt $bb) {
-	-1;
-    } elsif ($aa eq $bb) {
-	0;
-    } else {
-	1;
-    }
+    my $aa = mylc($a->{'sort'});
+    $aa =~ s/aa/å/g;
+    $aa =~ tr/àáâãäåçèéêëìíîïğñòóôõöùúûüı/aaaaæüceeeeiiiidnooooøuuuyy/;
+
+    my $bb = mylc($b->{'sort'});
+    $bb =~ s/aa/å/g;
+    $bb =~ tr/àáâãäåçèéêëìíîïğñòóôõöùúûüı/aaaaæüceeeeiiiidnooooøuuuyy/;
+    return $aa cmp $bb;
 }
 
+sub mylc {
+    my $str = shift;
+    $str =~ tr/A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖØÙÚÛÜİŞ/a-zàáâãäåæçèéêëìíîïğñòóôõöøùúûüış/;
+    return $str;
+}
