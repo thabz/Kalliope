@@ -57,7 +57,9 @@ sub shortdate {
 #
 
 sub buildhrefs {
-   my $txt = $_[0];
+    my $txt = $_[0];
+    $$txt =~ s/,,/&bdquo;/g;
+    $$txt =~ s/''/&ldquo;/g;
    if ($$txt =~ /<XREF BIBEL="(.+)">/) {
       my $did = $1;
       my $poem = new Kalliope::Poem(longdid => $did);
