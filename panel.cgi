@@ -23,7 +23,7 @@
 use Kalliope;
 use Kalliope::Server;
 use Kalliope::Date;
-use Kalliope::Guestbook;
+use Kalliope::Forum;
 use Kalliope::Poem;
 use Kalliope::Date;
 use Kalliope::DB;
@@ -67,16 +67,21 @@ $weekHTML .= qq|<TR><TD><B>Total</B></TD><TD></TD><TD ALIGN="center">$weektotal<
 $weekHTML .= "</TABLE></FIELDSET>";
 
 #
-# Latest guestbook entries
+# Latest forum entries
 #
 
-my @entries = Kalliope::Guestbook::firstEntries(2);
-my $guestbookHTML;
-foreach my $entry (@entries) {
-    $guestbookHTML .= '<DIV STYLE="padding: 2px; background-color: rgb(69,102,143); color: white;">'.$entry->name.' - ';
-    $guestbookHTML .= Kalliope::shortdate($entry->date).'</DIV>';
-    $guestbookHTML .= $entry->text.'<BR><BR>';
+my $forumHTML;
+
+foreach my $i (1..Kalliope::Forum::getNumberOfForas) {
+    my $forum = new Kalliope::Forum($i);
+    my $post = $forum->getLatestPost;
+    next unless $post;
+
+    $forumHTML .= '<B><A HREF="forumposting.cgi?id='.$post->id.'">'.$post->subject.'</A></B> ('.$post->dateForDisplay.')<BR>';
+    $forumHTML .= $post->from.'<BR>';
+    $forumHTML .= '<BR>';
 }
+
 
 #
 # Sidste besøgte digte
@@ -122,16 +127,16 @@ $visitHTML
 
 $weekHTML
 
-<FIELDSET ALIGN=center><LEGEND>Guestbook</LEGEND>
-$guestbookHTML
+<FIELDSET ALIGN=center><LEGEND>Forum</LEGEND>
+$forumHTML
 </FIELDSET>
 
-<FIELDSET ALIGN=center><LEGEND>Recently read poems</LEGEND>
+<FIELDSET ALIGN=center><LEGEND>Senest læste digte</LEGEND>
 $poemsHTML
 </FIELDSET>
 
 
-<FIELDSET ALIGN=center><LEGEND>Total hits</LEGEND>
+<FIELDSET ALIGN=center><LEGEND>Hits</LEGEND>
 $totalHits
 </FIELDSET>
 
@@ -142,7 +147,7 @@ $uptime
 </FIELDSET>
 
 
-<FIELDSET ALIGN=center><LEGEND>Date</LEGEND>
+<FIELDSET ALIGN=center><LEGEND>Dato</LEGEND>
 $time
 </FIELDSET>
 
