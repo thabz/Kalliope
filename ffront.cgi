@@ -88,13 +88,13 @@ my %menuStruct = (
 	title => 'Biografi', 
 	status => $poet->{'bio'},
         desc => qq|En kortfattet introduktion til ${poetName}s liv og værk|,
-        icon => 'gfx/poet_40.GIF'
+        icon => 'gfx/icons/biography-h48.gifF'
                     },
 	samtidige => { url => 'samtidige.cgi?', 
 	title => 'Samtid', 
 	status => 1,
         desc => qq|Digtere som udgav værker i ${poetName}s levetid|,
-        icon => 'gfx/poet_40.GIF'
+        icon => 'gfx/icons/biography-h48.gif'
                     },
 	links     => { url => 'flinks.pl?', 
 	title => 'Links', 
