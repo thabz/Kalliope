@@ -198,7 +198,7 @@ sub _contentAsProseHTML {
     my $self = shift;
     my @indhold;
     foreach my $line (split /\n/,$self->{'indhold'}) {
-	$line =~ s/^(\s+)/_nbsp($1)/e;
+        $line =~ s/^(\s+)/_nbsp($1)/e;
 	if ($line =~ /^ *(\-\-\-\-*) *$/) {
 	    my $width = (length $1)*10;
 	    $width = 100 if $width > 100;
@@ -206,10 +206,14 @@ sub _contentAsProseHTML {
 	} else {
 	    $line = "$line\n";
 	}
+        # <center> har indbygget <br> så fjern \n
+	if ($line =~ /<center>/) {
+            $line =~ s/\n$//;
+	}
 	push @indhold,"$line";
     }
     my $result = join "",@indhold;
-    $result  =~ s/\n/<BR>\n/g;
+    $result  =~ s/\n/<br>\n/g;
     return $result;
 }
 
