@@ -101,6 +101,17 @@ sub _insertGroup {
 	    my $longdid = $node->id;
  	    my $body = $node->first_child('body');
  	    my $firstline = $head->first_child('firstline') ? $head->first_child('firstline')->text : '';
+
+            if (!$toptitle) {
+		$toptitle = $firstline;
+	    }
+	    if (!$indextitle) {
+		$indextitle = $toptitle;
+	    }
+	    if (!$toctitle) {
+		$toctitle = $toptitle;
+	    }
+	    
 	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,$firstline,$body->xml_string,$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid),$quality);
 	    doDepends($head,$longdid);
 	}
