@@ -132,7 +132,7 @@ sub buildhrefs {
     $$txt =~ s/<A\s+F="?([^\s>"]+)"?\s*>/<A HREF="ffront.cgi?fhandle=$1">/gi;
     $$txt =~ s/<A\s+D="?([^\s>"]+)"?\s*>/<A HREF="digt.pl?longdid=$1">/gi;
     $$txt =~ s/<A\s+K="?([^\s>"]+)"?\s*>/<A HREF="keyword.cgi?keyword=$1">/gi;
-   $$txt =~ s/<A\s+V="?([^\s>\/]+)\/([^\s>\/"]+)"?\s*>/<A HREF="vaerktoc.pl?fhandle=$1&vhandle=$2">/gi;
+   $$txt =~ s/<A\s+V="?([^\s>\/]+)\/([^\s>\/"]+)"?\s*>/<A HREF="vaerktoc.pl?fhandle=$1&amp;vhandle=$2">/gi;
    $$txt =~ s/<a\s+work="(.*?)">/<a href="vaerktoc.pl?vid=$1">/gi;
    $$txt =~ s/<A\s+poem="?([^\s>"]+)"?\s*>/<A HREF="digt.pl?longdid=$1">/gi;
    $$txt =~ s/<A\s+poet="?([^\s>"]+)"?\s*>/<A HREF="ffront.cgi?fhandle=$1">/gi;
