@@ -131,7 +131,7 @@ sub resolveBiblioTags {
     while ($content =~ /<biblio>/mi) {
 	my ($bibid) = $content =~ /<biblio>(.*?)<\/biblio>/mi;
 	my $entry = $self->author->getBiblioEntryAsString($bibid);
-	$content =~ s/<biblio>$bibid<\/biblio>/<abbr title="$entry"><i>$bibid<\/i><\/abbr>/im;
+	$content =~ s/<biblio>$bibid<\/biblio>/<acronym title="$entry"><i>$bibid<\/i><\/acronym>/im;
     }
     return $content;
 }
