@@ -77,7 +77,13 @@ sub bio {
 
 sub lifespan {
    my $self = shift;
-   return "(".$self->yearBorn.'-'.$self->yearDead.')';
+   my $return;
+   if ($self->isUnknownPoet) {
+      $return = '';
+   } else {
+      $return = "(".$self->yearBorn.'-'.$self->yearDead.')';
+   }
+   return $return;
 }
 
 sub yearBorn {
@@ -86,6 +92,11 @@ sub yearBorn {
 
 sub yearDead {
    return $_[0]->{'doed'};
+}
+
+sub isUnknownPoet {
+   my $self = shift;
+   return !($self->yearDead && $self->yearBorn);
 }
 
 sub sortString {
