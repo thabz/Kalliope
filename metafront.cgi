@@ -73,5 +73,5 @@ sub front {
         icon => 'gfx/icons/portrait-h48.gif',
                     } );
 
-    return (Kalliope::Web::frontMenu(@menuStruct),'');
+    return Kalliope::Web::frontMenu(@menuStruct);
 }
