@@ -60,7 +60,7 @@ sub clean {
 
 sub insert {
     my @changed = @_;
-    my $sthwork = $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle,titel,underoverskrift,aar,type,hascontent,quality,lang,status,cvstimestamp,cvstimestamptext,dirty) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,1)");
+    my $sthwork = $dbh->prepare("INSERT INTO vaerker (fhandle,fid,vhandle,titel,underoverskrift,aar,type,hascontent,quality,lang,status,cvstimestamp,dirty) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,1)");
     my $sthnote = $dbh->prepare("INSERT INTO worknotes (fhandle,vhandle,note,orderby) VALUES (?,?,?,?)");
     my $sthpicture = $dbh->prepare("INSERT INTO workpictures (fhandle,vhandle,caption,url,orderby) VALUES (?,?,?,?,?)");
     my $sthkeyword = $dbh->prepare("INSERT INTO workxkeyword (fhandle,vhandle,keyword) VALUES (?,?,?)");
@@ -85,8 +85,7 @@ sub insert {
 	my $hascontent = $kalliopework->first_child('workbody') ? 'yes' : 'no';
 	$sthwork->execute($fhandle,0,$vhandle,$title,$subtitle,$year,
 		$type,$hascontent,$quality,$person->lang,$status,
-                Kalliope::Date::cvsTimestampToUNIX($timestamptxt),
-		$timestamptxt);
+                Kalliope::Date::cvsTimestampToUNIX($timestamptxt));
 	if ($workhead->first_child('notes')) {
 	   my $i = 1;
            foreach my $note ($workhead->first_child('notes')->children('note')) {
