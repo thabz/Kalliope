@@ -72,7 +72,7 @@ $page->print;
 sub editPage {
     my ($dir,$filename) = @_;
     my $gfxFile = "$dir/$filename";
-    my $user = remote_user() || 'jec';
+    my $user = remote_user() || '';
     
     my $dbh = Kalliope::DB::connect();
     my $sth = $dbh->prepare("SELECT data FROM editpages WHERE filename=? AND dir=?");
