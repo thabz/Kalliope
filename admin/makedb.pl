@@ -5,6 +5,7 @@ use Kalliope::Sort;
 use Kalliope::DB;
 use Kalliope::Strings;
 use Kalliope::Array;
+use Kalliope::Build::Persons;
 use POSIX;
 
 my $dbh = Kalliope::DB->connect;
@@ -77,96 +78,9 @@ $sthkeyword = $dbh->prepare("INSERT INTO keywords_relation (keywordid,otherid,ot
 # Build fnavne
 #
 
-$rc = $dbh->do("drop table if exists fnavne");
-$rc = $dbh->do("CREATE TABLE fnavne ( 
-fid int UNSIGNED DEFAULT '0' NOT NULL PRIMARY KEY auto_increment,
-fhandle char(40) NOT NULL, 
-              fornavn text DEFAULT '', 
-              efternavn text DEFAULT '',
-              foedt char(8), 
-              doed char(8), 
-              sprog char(2), 
-              land text,
-              /* Beholdning */
-              cols int(2),
-              thumb int(1),
-              pics int(1),
-              bio int(1),
-              biotext text,
-              links int(1),
-              sekundaer int(1),
-              vaerker int(1),
-              vers int(1),
-              prosa int(1),
-              KEY fhandle_index (fhandle(10)), 
-              UNIQUE (fid))");
-
-$lastinsertsth = $dbh->prepare("SELECT DISTINCT LAST_INSERT_ID() FROM fnavne");
-foreach $LA ('dk','uk','fr','de','se','no') {
-    open (IN, "../data.$LA/fnavne.txt") || next;
-    while (<IN>) {
-	chop($_);chop($_);
-	($fhandle,$ffornavn,$fefternavn,$ffoedt,$fdoed) = split(/=/);
-	$fddir = "../fdirs/".$fhandle;		#forfatterens doc-dir
-	$fsdir = "../fdirs/".$fhandle;	#forfatterens cgi-bin-dir
-	$fcols = $fthumb = $pics = $fbio = $flinks = $fsekundaer = $fvaerker = $fprosa = $fvaerkerindhold = 0;	
-        $biotext = '';
-	@keys = ();
-	if (-e $fddir."/thumb.jpg") {
-	    $fthumb=1;
-	}
-	$fpics = 0;
-	while (-e $fddir."/p".($fpics+1).".jpg") { $fpics++; };
-	$fcols++ if ($fpics);
-	if (-e $fsdir."/bio.txt") {
-	    open(BIO,$fsdir."/bio.txt");
-	    while (<BIO>) {
-		if (/^K:/) {
-		    s/^K://;
-		    chop;
-		    push @keys,$_;
-		} else {
-                    $biotext .= $_;
-                } 
-	    }
-	    close(BIO);
-	    $fbio=1;
-	    $fcols++;
-	}
-	if (-e $fsdir."/links.txt") {
-	    $flinks=1;
-	    $fcols++;
-	}
-	if (-e $fsdir."/sekundaer.txt") {
-	    $fsekundaer=1;
-	    $fcols++;
-	}
-	if (-e $fsdir."/vaerker.txt") {
-	    $fvaerker=1;
-	    # Undersøg om der er indhold i disse vaerker.
-	    open (FILE,$fsdir."/vaerker.txt");
-	    foreach (<FILE>) {
-		my ($vhandle,$titel,$vaar,$type) = split(/=/,$_);
-		if ($type eq "p") {
-		    $fprosa = 1;
-		} elsif (-e $fsdir."/".$vhandle.".txt") {
-		    $fvaerkerindhold = 1;
-		}
-	    }
-	    $fcols+=2;
-	}   
-
-	$rc = $dbh->prepare("INSERT INTO fnavne (fhandle,fornavn,efternavn,foedt,doed,sprog,cols,thumb,pics,biotext,bio,links,sekundaer,vaerker,vers,prosa) VALUES (?,?,?,?, ?,?,?,?,?,?,?,?,?,?,?,?)");
-        $rc->execute($fhandle,$ffornavn,$fefternavn,$ffoedt,$fdoed,$LA,$fcols,$fthumb,$fpics,$biotext,$fbio,$flinks,$fsekundaer,$fvaerkerindhold,$fvaerker,$fprosa);
-	$lastinsertsth->execute();
-	($lastid) = $lastinsertsth->fetchrow_array;
-        $insertedfnavne{$fhandle} = $lastid;
-	foreach (@keys) {
-	    &insertkeywordrelation($_,$lastid,'biografi');
-	}
-    }
-    close(IN);
-}
+Kalliope::Build::Persons::create();
+my %persons = Kalliope::Build::Persons::parse('../data/poets.xml');
+my %fhandle2fid = Kalliope::Build::Persons::insert(%persons);
 
 #
 # Andet pass af keywords som laver links imellem dem
