@@ -49,17 +49,17 @@ unless ($fhandle) {
 
 my $poet = new Kalliope::Person(fhandle => $fhandle);
 my $mode = CGI::url_param('mode');
+my $title = $mode ? "Digttitler" : "Førstelinier";
 
 #
 # Breadcrumbs -------------------------------------------------------------
 #
 
-my @crumbs;
-push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
-push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
-push @crumbs,[$mode ? 'Digttitler' : 'Førstelinier',''];
+my @crumbs = $poet->getCrumbs();
+push @crumbs,[$title,''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
+	                      subtitle => $title,
                               page => $mode ? 'titlelines' : 'firstlines',
                               crumbs => \@crumbs );
 
@@ -118,7 +118,7 @@ for (my $i = 0; $i <= $#lines; $i++) {
     $blocks[$idx]->{'head'} = '<DIV CLASS=listeoverskrifter>'.$firstLetterNew.'</DIV><BR>';
     $blocks[$idx]->{'count'}++;
     my $w = $works{$f->{'vid'}};
-    $blocks[$idx]->{'body'} .= '<SPAN CLASS="listeblue">&#149;</SPAN> <A TITLE="Fra '.$w->titleWithYear.'" HREF="digt.pl?longdid='.$f->{'longdid'}.'">'.$line.'</A><BR>';
+    $blocks[$idx]->{'body'} .= '<p CLASS="digtliste"><A TITLE="Fra '.$w->titleWithYear.'" HREF="digt.pl?longdid='.$f->{'longdid'}.'">'.$line.'</A></p>';
     $previousLine = $line3;
 
 }
@@ -127,10 +127,8 @@ for (my $i = 0; $i <= $#lines; $i++) {
 #
 
 my $HTML = Kalliope::Web::doubleColumn(\@blocks);
-my $title = $mode ? "Digttitler" : "Førstelinier";
 
-$page->addBox( title => $title,
-               coloumn => 1,
+$page->addBox( coloumn => 1,
                width => '90%',
 	       content => $HTML );
 $page->print;

@@ -32,16 +32,17 @@ use strict;
 my $DAYS_TO_SHOW = 14;
 
 my @crumbs;
-push @crumbs,['Digte',''];
+push @crumbs,['Digte',"poemsfront.cgi?sprog=dk"];
 push @crumbs,['Tilføjelser',''];
 
 
 my $page = new Kalliope::Page (
-		title => 'Senest tilføjede digte',
+	        title => 'Digte',
+		subtitle => 'Seneste tilføjelser',
                 pagegroup => 'poemlist',
 		changelangurl => 'poets.cgi?list=az&sprog=XX',
                 page => 'latest',
-	        thumb => 'gfx/icons/poem-h70.gif',
+	        icon => 'poem-turkis',
 		crumbs => \@crumbs
            );
 

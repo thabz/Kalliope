@@ -26,6 +26,7 @@ use Carp;
 use Kalliope::DB ();
 use Kalliope::Work ();
 use Kalliope::Page ();
+use Kalliope::Sort ();
 use Kalliope ();
 
 my $dbh = Kalliope::DB->connect;
@@ -76,6 +77,13 @@ sub lang {
 sub thumbURI {
     my $self = shift;
     return $self->{'thumb'} ? 'fdirs/'.$self->fhandle.'/thumb.jpg' : '';
+}
+
+sub icon {
+    my $self = shift;
+    return -e 'fdirs/'.$self->fhandle.'/frame.gif' ?
+               'fdirs/'.$self->fhandle.'/frame.gif' :
+	       'gfx/frames/poet-red.gif';
 }
 
 sub hasBio {
@@ -183,14 +191,18 @@ sub getType {
 }
 
 sub getCrumbs {
-    my $self = shift;
+    my ($self,%args) = @_;
     my @crumbs;
     if ($self->getType eq 'person') {
 	push @crumbs,['Personer','persons.cgi?list=az'];
     } else {
 	push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$self->lang];
     }
-    push @crumbs,[$self->name,'ffront.cgi?fhandle='.$self->fhandle];
+    if ($args{'front'}) {
+        push @crumbs,[$self->name,''];
+    } else {
+        push @crumbs,[$self->name,'ffront.cgi?fhandle='.$self->fhandle];
+    }
     return @crumbs;
 }
 
@@ -226,10 +238,6 @@ sub menu {
     my $page = shift;
     my $poetName = $self->name;
     my %menuStruct = (
-       forside => { url => 'ffront.cgi?', 
-                    title => 'Forside', 
-                    desc => "Tilbage til forsiden for $poetName",
-                    status => 1 },
        vaerker => { url => 'fvaerker.pl?', 
                     title => 'Værker', 
                     desc => "${poetName}s samlede poetiske værker",
@@ -257,7 +265,7 @@ sub menu {
        bio       => { url => 'biografi.cgi?', 
                     title => 'Biografi', 
                     desc => qq|En kortfattet introduktion til ${poetName}s liv og værk|,
-                    status => $self->hasBio },
+                    status => 1 },
        samtidige => { url => 'samtidige.cgi?', 
                     title => 'Samtid', 
                     desc => qq|Digtere som udgav værker i ${poetName}s levetid|,
@@ -283,7 +291,7 @@ sub menu {
         my $title = $key eq $page->{'page'} ?
                     '<b>'.$item{'title'}.'</b>' :
                     $item{'title'};
-        push @itemsHTML, qq|<A CLASS="white" TITLE="$item{desc}" HREF="$url">$title</A>| if $item{status};
+        push @itemsHTML, qq|<A CLASS="submenu" TITLE="$item{desc}" HREF="$url">$title</A>| if $item{status};
     }
     $HTML = join ' <span class="lifespan">&#149;</span> ',@itemsHTML;
     return $HTML;

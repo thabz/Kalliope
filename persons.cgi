@@ -56,7 +56,7 @@ if ($listType ne 'az' && $listType ne '19' &&
 my $struct = $pageTypes{$listType};
 
 my @crumbs;
-push @crumbs,['Nøgleord',''];
+push @crumbs,['Baggrund','metafront.cgi'];
 push @crumbs,['Biografier',''];
 push @crumbs,['Andre personer',''];
 push @crumbs,[$struct->{'crumbtitle'},''];

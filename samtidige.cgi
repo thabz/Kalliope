@@ -42,54 +42,10 @@ push @crumbs,['Samtid',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
                                       page => 'samtidige',
+				      subtitle => 'Samtidige digtere',
                                       crumbs => \@crumbs );
 
 
-#
-# Historiske begivenheder --------------------------------------------------
-#
-
-my @events;
-
-my @works = ($poet->poeticalWorks,$poet->proseWorks);
-foreach my $w (grep { $_->hasYear } @works) {
-    push @events, new Kalliope::Timeline::Event({ year => $w->year,
-                    description => $poet->efternavn.': <i>'.$w->clickableTitle.'</i>' });
-}
-
-push @events , new Kalliope::Timeline::Event({ year => $poet->yearBorn,
-                 description => $poet->name.' født.'}) if $poet->yearBorn;
-push @events , new Kalliope::Timeline::Event({ year => $poet->yearDead,
-                 description => $poet->name.' død.'}) if $poet->yearDead;
-
-push @events, Kalliope::Timeline::getEventsForPerson($poet->fhandle);
-
-my @other = Kalliope::Timeline::getHistoryInTimeSpan($poet->yearBorn,$poet->yearDead);
-map {$_->useGrayText(1)} @other;
-push @events, @other;
-
-if ($#events > 0) {
-    my $antal = $#events + 1;
-    my $i = 0;
-    my $HTML = '<TABLE WIDTH="100%"><TR><TD WIDTH="50%" VALIGN="top">';
-
-    $HTML .= '<TABLE>';
-    my $last = 0;
-    foreach my $e (sort { $a->getYear <=> $b->getYear } @events) {
-        my $yearForDisplay = $last != $e->getYear ? $e->getYear : '';
-        
-	$HTML .= qq|<TR><TD CLASS="blue" VALIGN="top">$yearForDisplay&nbsp;</TD>|;
-	$HTML .= '<TD VALIGN="top">'.$e->getText."</TD></TR>\n";
-	$HTML .= '</TABLE></TD><TD WIDTH="50%" VALIGN="top"><TABLE>' if ++$i == int ($antal / 2);
-	$last = $e->getYear;
-    }
-    $HTML .= '</TABLE></TD></TR></TABLE>';
-    Kalliope::buildhrefs(\$HTML);
-    $page->addBox( title => 'Historiske begivenheder',
-	    width => '80%',
-	    coloumn => 1,
-	    content => $HTML);
-}
 #
 # Samtidige digtere -------------------------------------
 #
@@ -113,7 +69,7 @@ if ($antal) {
     $HTML .= '</TABLE>';
     $HTML .= '</TD></TR></TABLE>';
     $HTML .= '<BR><SMALL><I>Oversigt over digtere som udgav værker i '.$poet->name.'s levetid.</I></SMALL>';
-    $page->addBox( title => 'Samtidige digtere',
+    $page->addBox(
 	    width => '80%',
             coloumn => 1,
 	    content => $HTML );

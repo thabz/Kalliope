@@ -38,6 +38,7 @@ my $page;
 my $wid = url_param('wid');
 my $letter = url_param('letter');
 my @crumbs;
+push @crumbs,['Baggrund','metafront.cgi'];
 push @crumbs,['Ordbog','dict.cgi'];
 push @crumbs,[Kalliope::Strings::uc($letter),''] if $letter;
 
@@ -45,7 +46,7 @@ $page = new Kalliope::Page (
 	title => "Ordbog",
 	pagegroup => 'history',
 	page => 'dict',
-	thumb => 'gfx/icons/keywords-h70.gif',
+	icon => 'keywords-blue',
 	lang => 'dk',
 	crumbs => \@crumbs );
 
@@ -84,32 +85,13 @@ unless ($letter) {
     $letter = 'a';
 }
 
-
-# Bogstavrække
-
-my $sth = $dbh->prepare ("SELECT DISTINCT firstletter FROM dict ORDER BY firstletter ASC");
-$sth->execute();
-my $HTML;
-my $minimenu;
-my @letters;
-while (my ($myletter) = $sth->fetchrow_array()) {
-    push @letters, { 'sort' => $myletter };
-}
-foreach my $mymyletter (sort {  Kalliope::Sort::sort($a,$b) } @letters) {
-    my $myletter = $mymyletter->{'sort'};
-    my $class = ($myletter eq $letter) ? 'green' : '';
-    $minimenu .= qq|<A CLASS="$class" TITLE="Ord som begynder med $myletter" HREF="dict.cgi?letter=|.uri_escape($myletter).q|"> |;
-    $minimenu .= Kalliope::Strings::uc($myletter)."</A>"; 
-
-}
-
 # Ord i kategori
 
-$sth = $dbh->prepare("SELECT * FROM dict WHERE firstletter = ? ORDER BY word");
+my $sth = $dbh->prepare("SELECT * FROM dict WHERE firstletter = ? ORDER BY word");
 $sth->execute($letter);
 my $rows = $sth->rows;
 my $i = 0;
-$HTML = '<table width="100%"><tr><td width="50%" valign="top">';
+my $HTML = '<table width="100%"><tr><td width="50%" valign="top">';
 while (my $h = $sth->fetchrow_hashref) {
     if (defined $wid && $wid eq $$h{wid}) {
         $$h{word} = "<b>$$h{word}</b>";
@@ -119,10 +101,32 @@ while (my $h = $sth->fetchrow_hashref) {
 }
 $HTML .= '</td></tr></table>';
 
+
+# Bogstavrække
+
+$sth = $dbh->prepare ("SELECT DISTINCT firstletter FROM dict ORDER BY firstletter ASC");
+$sth->execute();
+my $minimenu;
+my @letters;
+while (my ($myletter) = $sth->fetchrow_array()) {
+    push @letters, { 'sort' => $myletter };
+}
+my @tabs;
+foreach my $mymyletter (sort {  Kalliope::Sort::sort($a,$b) } @letters) {
+    my $myletter = $mymyletter->{'sort'};
+    my $tab;
+    $tab->{'url'} = 'dict.cgi?letter='.uri_escape($myletter);
+    $tab->{'text'} = Kalliope::Strings::uc($myletter);
+    $tab->{'title'} = "Ord som begynder med $myletter";
+    $tab->{'id'} = $myletter;
+    push @tabs,$tab;
+}
+
+$HTML = Kalliope::Web::tabbedView($letter,$HTML,@tabs);
+
 $page->addBox ( title => 'Ord',
 	width => "80%",
 	coloumn => 0,
-        title => $minimenu,
 	content => $HTML );
 
 $page->print;

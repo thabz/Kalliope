@@ -52,7 +52,7 @@ if (!$keywordid) {
 		title => 'Nøgleord',
                 lang => $LA,
                 pagegroup => 'history',
-                thumb => 'gfx/icons/keywords-h70.gif',
+		icon => 'keywords-blue',
                 page => 'keyword' );
     $page->addBox ( title => 'Fejl...',
                     width => "75%",
@@ -61,19 +61,22 @@ if (!$keywordid) {
 } else {
     my $ord = $keyword->ord;
     my @crumbs;
+    push @crumbs,['Baggrund','metafront.cgi'];
     push @crumbs,['Nøgleord','keywordtoc.cgi'];
     push @crumbs,[$keyword->title,''];
 
     $page = new Kalliope::Page (
-		title => $keyword->title,
+	        title => 'Nøgleord',
+		subtitle => $keyword->title,
                 pagegroup => 'history',
                 page => 'keyword',
 		printer => url_param('printer') || 0,
-                thumb => 'gfx/icons/keywords-h70.gif',
+		icon => 'keywords-blue',
                 lang => $LA,
                 crumbs => \@crumbs );
 
-    $page->addBox ( title => $keyword->title,
+    $page->addBox (
+#	    title => $keyword->title,
                     width => "80%",
                     coloumn => 0,
 		    printer => 1,
@@ -85,20 +88,35 @@ if (!$keywordid) {
     # Related keywords -----------------------------------------------
     #
     
-    my $html = qq|<A HREF="ksearch.cgi?type=keyword&keyword=$ord&sprog=$LA">Vis alle digte som har dette nøgleord</A><br><br>|;
+    my $html;
     my @list = $keyword->linksToKeywords;
-    push @list,$keyword->linksToPersons($LA);
-    #TODO: Måske jeg vælge 5 tilfældige udfra f.eks. top 10.
-    push @list,$keyword->linksToPoems(5,$LA);
-    if ($#list >= 0) {
-        foreach my $k (sort { Kalliope::Sort::sortObject($a,$b) } @list) {
-	    $html .= $k->smallIcon.' '.$k->clickableTitle($LA).'<BR><BR>';
-	}
-	$html =~ s/<BR><BR>$//;
-	$page->addBox ( title => 'Se også',
-		        width => "100%",
+#    if ($#list >= 0) {
+    if (0) {
+	my $html;
+	map {$html .= $_->clickableTitle($LA)."<br>" } @list;
+	$page->addBox ( title => 'Nøgleord',
+		        width => "200",
 		        content => $html,
-                        coloumn => 1 )
+                        coloumn => 2 )
+    }
+    @list = $keyword->linksToPersons($LA);
+    if ($#list >= 0) {
+	my $html;
+	map {$html .= $_->clickableTitle($LA)."<br>" } @list;
+	$page->addBox ( title => 'Personer',
+		        width => "200",
+		        content => $html,
+                        coloumn => 2 )
+    }
+    #TODO: Måske jeg vælge 5 tilfældige udfra f.eks. top 10.
+    @list = $keyword->linksToPoems(5,$LA);
+    if ($#list >= 0) {
+	my $html;
+	map {$html .= $_->clickableTitle($LA)."<br>" } @list;
+        $html .= qq|<A HREF="ksearch.cgi?type=keyword&keyword=$ord&sprog=$LA">Flere ...</A><br><br>|;
+	$page->addBox ( title => 'Eksempler på digte',
+		        content => $html,
+                        coloumn => 0 )
     }
 
     my $sth = $dbh->prepare("SELECT imgfile,beskrivelse FROM keywords_images WHERE keyword_id = $keywordid");
@@ -110,10 +128,9 @@ if (!$keywordid) {
 	    $html .= '<BR><SMALL>'.$k->{beskrivelse}.' ('.Kalliope::filesize('gfx/hist/'.$k->{imgfile}.'.jpg').')</SMALL><BR><BR>';
 	}
 	$html =~ s/\<BR\>\<BR\>$//;
-	$page->addBox ( title => 'Billeder',
-		        width => "100%",
+	$page->addBox ( width => "200",
 		        content => $html,
-                        coloumn => 1 )
+                        coloumn => 2 )
     }
     $page->setColoumnWidths('80%','200');
     $page->print;

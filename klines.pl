@@ -36,21 +36,22 @@ my $mode = url_param('mode') || 0;
 my $forbogstav = url_param('forbogstav') || 'a';
 my $LA = url_param('sprog') || 'dk';
 
-my $title = ('Førstelinier','Digttitler','Populære')[$mode];
+my $title = ('Ordnet efter førstelinie','Ordnet efter digttitel','Mest populære')[$mode];
 my $page = ('poem1stlines','poemtitles','poempopular')[$mode];
 my $HTML;
 
 my @crumbs;
-push @crumbs,['Digte',''];
+push @crumbs,['Digte',"poemsfront.cgi?sprog=$LA"];
 push @crumbs,[$title,''];
 push @crumbs,[$forbogstav,''] unless $mode == 2;
 
 my $page = new Kalliope::Page (
-	title => $title,
+	title => 'Digte',
+	subtitle => $title,
 	pagegroup => 'poemlist',
 	page => $page,
+	icon => 'poem-turkis',
         lang => $LA,
-	thumb => 'gfx/icons/poem-h70.gif',
 	crumbs => \@crumbs );
 
 my $sth;
@@ -74,11 +75,11 @@ unless ($sth->rows) {
     foreach my $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
 	next unless $f->{'sort'};
 	my $tekst = $mode ? $f->{'titel'} : $f->{'foerstelinie'};
-	$HTML .= '<A HREF="digt.pl?longdid='.$f->{'longdid'}.'">';
+	$HTML .= '<p class="digtliste"><A HREF="digt.pl?longdid='.$f->{'longdid'}.'">';
 	$HTML .= $tekst;
 	$HTML .= '</A><FONT COLOR="#808080"> (';
 	$HTML .= $f->{'fornavn'}.' '.$f->{'efternavn'};
-	$HTML .= ")</FONT><BR>\n";
+	$HTML .= ")</FONT></p>\n";
     }
 }
 
@@ -93,17 +94,21 @@ while ($f[$i] = $sth->fetchrow_hashref) {
     $f[$i]->{'sort'} =~ s/Å/Aa/;
     $i++;
 }
-my $minimenu;
+my $minimenu = '<small>Vælg begyndelsesbogstav:</small><br><br>';
 foreach my  $f (sort { Kalliope::Sort::sort($a,$b) } @f) { 
     my $letter = $f->{'forbogstav'};
-    my $class = ($letter eq $forbogstav) ? 'green' : '';
+    my $class = ($letter eq $forbogstav) ? 'framed' : '';
     $minimenu .= qq|<A CLASS="$class" TITLE="Digte som begynder med $letter" HREF="klines.pl?mode=$mode&forbogstav=$letter&sprog=$LA">|;
-    $minimenu .= qq| $letter</A>|; 
+    $minimenu .= qq|$letter</A> |; 
 }
 
 $page->addBox ( width=> '80%',
-                title => $minimenu,
+	       coloumn => 0,
                 content => $HTML );
+
+$page->addBox( width => 200,
+	       coloumn => 1,
+	       content => $minimenu);
 $page->print;
 exit 1;
 
@@ -115,9 +120,11 @@ $sth->execute($LA);
 my $printed;
 $HTML = '<TABLE CLASS="oversigt" WIDTH="100%" CELLSPACING=0>';
 $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Titel</TH><TH ALIGN="right">Hits</TH><TH ALIGN="right">Senest</TH><TR>';
+my $i = 0;
 while (my $f = $sth->fetchrow_hashref) {
     $printed++;
-    $HTML .= "<TR><TD ALIGN=right>$printed.</TD>";
+    my $class = $i++ % 2 ? '' : ' CLASS="darker" ';
+    $HTML .= "<TR $class><TD ALIGN=right>$printed.</TD>";
     $HTML .= '<TD><A HREF="digt.pl?longdid='.$f->{'longdid'}.'">'.$f->{titel}.'</A>';
     $HTML .=  '<FONT COLOR="#808080"> ('.$f->{'fornavn'}.' '.$f->{'efternavn'}.')</FONT>';
     $HTML .= '</TD><TD ALIGN="right">';
@@ -128,7 +135,6 @@ while (my $f = $sth->fetchrow_hashref) {
 }
 $HTML .= "</TABLE>";
 
-$page->addBox ( title => 'Mest populære digte',
-                width => '80%',
+$page->addBox ( width => '80%',
                 content => $HTML ); 
 $page->print;

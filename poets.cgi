@@ -32,7 +32,8 @@ use Kalliope::Person ();
 my $LA = CGI::url_param('sprog') || 'dk';
 my $limit = CGI::url_param('limit') || '10';
 
-my %pageTypes = ('az' => {'title' => 'Digtere efter navn',
+my %pageTypes = (
+	         'az' => {'title' => 'Digtere efter navn',
                           'function' => 'listaz',
 			  'crumbtitle' => 'efter navn',
                           'page' => 'poetsbyname'},
@@ -52,7 +53,6 @@ my %pageTypes = ('az' => {'title' => 'Digtere efter navn',
                           'function' => 'listpop',
 			  'crumbtitle' => 'mest populære',
                           'page' => 'poetsbypop'}
-
                 );
 
 my $listType = CGI::url_param('list');
@@ -66,11 +66,12 @@ if ($listType ne 'az' && $listType ne '19' &&
 my $struct = $pageTypes{$listType};
 
 my @crumbs;
-push @crumbs,['Digtere',''];
+push @crumbs,['Digtere',"poetsfront.cgi?sprog=$LA"];
 push @crumbs,[$struct->{'crumbtitle'},''];
 
 my $page = new Kalliope::Page (
-		title => $struct->{'title'},
+	        title => 'Digtere',
+		subtitle => $struct->{'crumbtitle'},
 		lang => $LA,
 		crumbs => \@crumbs,
                 pagegroup => 'poets',
@@ -86,7 +87,7 @@ $page->print;
 sub listaz {
     my $LA = shift;
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT * FROM fnavne WHERE sprog=? AND foedt != '' ORDER BY efternavn, fornavn");
+    my $sth = $dbh->prepare("SELECT * FROM fnavne WHERE type='poet' AND sprog=? AND foedt != '' ORDER BY efternavn, fornavn");
     $sth->execute($LA);
     my @f;
     while (my $f = $sth->fetchrow_hashref) { 
@@ -106,9 +107,8 @@ sub listaz {
 	if ($new ne $last) {
 	    $last=$new;
 	    $bi++;
-	    $blocks[$bi]->{'head'} = "<DIV CLASS=listeoverskrifter>$new</DIV><BR>";
+	    $blocks[$bi]->{'head'} = qq|<DIV CLASS="listeoverskrifter">$new</DIV><BR>|;
 	}
-	#$blocks[$bi]->{'body'} .= '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%"><TR><TD NOWRAP><A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.",&nbsp;".$f->{'fornavn'}.'</A></TD><TD WIDTH="100%" BACKGROUND="gfx/gray_ellipsis.gif">&nbsp;</TD><TD NOWRAP ALIGN="right"><FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></TD></TR></TABLE>';
 	$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.($f->{'efternavn'} || '').",&nbsp;".($f->{'fornavn'} || '').'</A>&nbsp;<FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT><BR>';
 	$blocks[$bi]->{'count'}++;
     }
@@ -120,7 +120,6 @@ sub listaz {
     if ($sth->rows) {
 	$blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">Ukendt digter</DIV><BR>|;
 	while ($f = $sth->fetchrow_hashref) {
-	    #$blocks[$bi]->{'body'} .= '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%"><TR><TD NOWRAP><A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'fornavn'}.'</A></TD></TR></TABLE>';
 	    $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'fornavn'}.'</A><BR>';
 	    $blocks[$bi]->{'count'}++;
 	}
@@ -131,7 +130,7 @@ sub listaz {
 sub list19 {
     my $LA = shift;
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT * FROM fnavne WHERE sprog=? AND foedt != '' AND foedt != '?' ORDER BY efternavn, fornavn");
+    my $sth = $dbh->prepare("SELECT * FROM fnavne WHERE type='poet' AND sprog=? AND foedt != '' AND foedt != '?' ORDER BY efternavn, fornavn");
     $sth->execute($LA);
     my @f;
     while (my $f = $sth->fetchrow_hashref) { 
@@ -151,9 +150,8 @@ sub list19 {
 	    $last = $f->{'sort'} - $f->{'sort'}%25;
 	    $last2 = $last + 24;
 	    $bi++;
-	    $blocks[$bi]->{'head'} = "<DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR>";
+	    $blocks[$bi]->{'head'} = qq|<DIV CLASS="listeoverskrifter">$last-$last2</DIV><BR>|;
 	}
-	#$blocks[$bi]->{'body'} .= '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%"><TR><TD NOWRAP><A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.",&nbsp;".$f->{'fornavn'}.'</A></TD><TD WIDTH="100%" BACKGROUND="gfx/gray_ellipsis.gif">&nbsp;</TD><TD NOWRAP ALIGN="right"><FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></TD></TR></TABLE>';
 	$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.",&nbsp;".$f->{'fornavn'}.'</A>&nbsp;<FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT><BR>';
 	$blocks[$bi]->{'count'}++;
     }
@@ -165,7 +163,6 @@ sub list19 {
     if ($sth->rows) {
 	$blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">Ukendt fødeår</DIV><BR>|;
 	while ($f = $sth->fetchrow_hashref) {
-	#$blocks[$bi]->{'body'} .= '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%"><TR><TD NOWRAP><A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.",&nbsp;".$f->{'fornavn'}.'</A></TD><TD WIDTH="100%" BACKGROUND="gfx/gray_ellipsis.gif">&nbsp;</TD><TD NOWRAP ALIGN="right"><FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></TD></TR></TABLE>';
 	$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.",&nbsp;".$f->{'fornavn'}.'</A>&nbsp;<FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT><BR>';
 	    $blocks[$bi]->{'count'}++;
 	}
@@ -176,15 +173,19 @@ sub list19 {
 sub listpics {
     my $LA = shift;
     my $HTML;
+    my @poets;
 
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT fid FROM fnavne WHERE sprog=? AND foedt != '' AND foedt != '?' AND thumb = 1 ORDER BY efternavn, fornavn");
+    my $sth = $dbh->prepare("SELECT fid FROM fnavne WHERE sprog=? AND foedt != '' AND foedt != '?' AND thumb = 1");
     $sth->execute($LA);
+    while (my $fid = $sth->fetchrow_array) {
+	my $poet = new Kalliope::Person(fid => $fid);
+	push @poets, $poet;
+    }
 
     $HTML = qq|<TABLE ALIGN="center" border=0 cellspacing=10><TR>|;
     my $i=0;
-    while (my $fid = $sth->fetchrow_array) {
-	my $poet = new Kalliope::Person(fid => $fid);
+    foreach my $poet (sort Kalliope::Sort::sortObject @poets) {
 	my $fhandle = $poet->fhandle;
 	my $fullname = $poet->name;
 	$HTML .= "<TD align=center valign=bottom>";
@@ -213,7 +214,8 @@ sub listflittige {
     $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Navn</TH><TH ALIGN="right">Digte</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
 	my $poet = new Kalliope::Person (fhandle => $h->{'fhandle'});
-	$HTML .= '<TR><TD ALIGN="right">'.$i++.'.</TD>';
+	my $class = $i % 2 ? '' : ' CLASS="darker" ';
+	$HTML .= qq|<TR $class><TD ALIGN="right">|.$i++.'.</TD>';
 	$HTML .= '<TD WIDTH="100%"><A HREF="ffront.cgi?fhandle='.$poet->fhandle.'">&nbsp;'.$poet->name.'<FONT COLOR=#808080> '.$poet->lifespan.'</FONT></A></TD>';
 	$HTML .= '<TD ALIGN=right>'.$h->{'val'}.'</TD>';
 	$total += $h->{val};
@@ -221,7 +223,7 @@ sub listflittige {
 
     my $endHTML = '';
     if ($limit != -1) {
-	$endHTML = qq|<A HREF="poets.cgi?list=flittige&limit=-1&sprog=$LA"><IMG VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Hele listen"></A>|;
+	$endHTML = qq|<A class="more" HREF="poets.cgi?list=flittige&limit=-1&sprog=$LA">Se hele listen...</A>|;
     } else {
 	$HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD></TR>";
     }
@@ -232,7 +234,7 @@ sub listflittige {
 sub listpop {
     my ($LA,$limit) = @_;
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT fornavn, efternavn, foedt, doed, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f WHERE dh.longdid = d.longdid AND d.fid = f.fid AND f.sprog=? GROUP BY f.fid ORDER BY hits DESC ".($limit != -1 ? "LIMIT $limit" : ''));
+    my $sth = $dbh->prepare("SELECT fornavn, efternavn, foedt, doed, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f WHERE dh.longdid = d.longdid AND d.fid = f.fid AND f.sprog=? AND f.type != 'collection' GROUP BY f.fid ORDER BY hits DESC ".($limit != -1 ? "LIMIT $limit" : ''));
     $sth->execute($LA);
 
     my $i = 1;
@@ -241,18 +243,20 @@ sub listpop {
     my $HTML = '<TABLE CLASS="oversigt" WIDTH="100%" CELLSPACING=0>';
     $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Navn</TH><TH ALIGN="right">Hits</TH><TH ALIGN="right">Senest</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
-	$HTML .= '<TR><TD>'.$i++.'.</TD>';
+	my $class = $i % 2 ? '' : ' CLASS="darker" ';
+	$HTML .= qq|<TR $class><TD>|.$i++.'.</TD>';
 	$HTML .= '<TD><A HREF="ffront.cgi?fhandle='.$h->{fhandle}.'">'.$h->{fornavn}.' '.$h->{efternavn}.'<FONT COLOR=#808080> ('.$h->{foedt}.'-'.$h->{doed}.')</FONT></A></TD>';
 	$HTML .= '<TD ALIGN=right>'.$h->{'hits'}.'</TD>';
 	$HTML .= '<TD ALIGN=right>'.Kalliope::shortdate($h->{'lasttime'}).'</TD>';
 	$total += $h->{'hits'};
     }
     if ($limit != -1) {
-        $endHTML = qq|<A HREF="poets.cgi?list=pop&limit=-1&sprog=$LA"><IMG VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Hele listen"></A>|;
+        $endHTML = qq|<A class="more" HREF="poets.cgi?list=pop&limit=-1&sprog=$LA">Se hele listen...</A>|;
     } else {
         $HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD></TR>";
     }
     $HTML .= '</TABLE>';
     return ($HTML,$endHTML);
 }
+
 

@@ -33,7 +33,7 @@ my $limit = url_param('limit') || '10';
 
 my %crumbTitle = ('aar'    => 'efter år',
                   'titel'  => 'efter titel',
-		  'digter' => 'efter figter',
+		  'digter' => 'efter digter',
 		  'pop'    => 'mest populære' );
 
 my %pageTitle =  ('aar'    => 'Værker efter år',
@@ -42,14 +42,15 @@ my %pageTitle =  ('aar'    => 'Værker efter år',
 		  'pop'    => 'Mest populære værker' );
 
 my @crumbs;
-push @crumbs,['Værker',''];
+push @crumbs,['Værker',"worksfront.cgi?sprog=$LA"];
 push @crumbs,[$crumbTitle{$mode},''];
 
 my $page = new Kalliope::Page (
-		title => $pageTitle{$mode},
+	        title => 'Værker',
+		subtitle => $crumbTitle{$mode},
                 lang => $LA,
 		crumbs => \@crumbs,
-                thumb => 'gfx/icons/works-h70.gif',
+		icon => 'works-green',
                 pagegroup => 'worklist',
                 page => "kvaerker$mode" );
 
@@ -105,8 +106,7 @@ if ($mode eq 'titel') {
     }
 
     $HTML .= "<BR><BR><I>Denne oversigt indeholder kun værker som har et faktisk udgivelsesår</I><BR>\n";
-    $page->addBox( title => "Værker efter titel",
-                   width => '80%',
+    $page->addBox( width => '80%',
                    content => $HTML );
     $page->print;
 
@@ -141,8 +141,7 @@ if ($mode eq 'titel') {
     $HTML .= '</TABLE>';
 
     $HTML .= "<BR><BR><I>Denne oversigt indeholder kun værker som har et faktisk udgivelsesår</I><BR>\n";
-    $page->addBox( title => "Værker efter år",
-                   width => '80%',
+    $page->addBox( width => '80%',
                    content => $HTML );
     $page->print;
 
@@ -188,8 +187,7 @@ if ($mode eq 'titel') {
 	}
     }
 
-    $page->addBox( title => "Værker efter digter",
-                   width => '80%',
+    $page->addBox( width => '80%',
                    content => $HTML );
     $page->print;
 
@@ -204,7 +202,8 @@ if ($mode eq 'titel') {
     $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Titel</TH><TH ALIGN="right">Hits</TH><TH ALIGN="right">Senest</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
 	$aar = $h->{'aar'} ne '?' ? ' ('.$h->{'aar'}.')' : '';
-	$HTML .= '<TR><TD>'.($i++).'.</TD>';
+        my $class = $i % 2 ? '' : ' CLASS="darker" ';
+	$HTML .= qq|<TR $class><TD>|.$i++.'.</TD>';
 	$HTML .= '<TD>'.$h->{fornavn}.' '.$h->{efternavn}.': <A CLASS=green HREF="vaerktoc.pl?fhandle='.$h->{fhandle}.'&vhandle='.$h->{vhandle}.'"><I>'.$h->{vtitel}.'</I>'.$aar.'</A></TD>';
 	$HTML .= '<TD ALIGN=right>'.$h->{'hits'}.'</TD>';
 	$HTML .= '<TD ALIGN=right>'.Kalliope::Date::shortDate($h->{'lasttime'}).'</TD>';
@@ -214,13 +213,12 @@ if ($mode eq 'titel') {
 
     if (defined($limit)) {
         $HTML .= '</TABLE>';
-        $endHTML = '<A HREF="kvaerker.pl?mode=pop&sprog='.$LA.'"><IMG VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Hele listen"></A>';
+        $endHTML = '<A class="more" HREF="kvaerker.pl?mode=pop&sprog='.$LA.'">Se hele listen...</A>';
     } else {
         $HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD><TD></TD></TR>";
         $HTML .= '</TABLE>';
     }
-    $page->addBox( title => "Mest populære værker",
-	           width => '90%',
+    $page->addBox( width => '90%',
 	           content => $HTML,
 	           end => $endHTML );
     $page->print;

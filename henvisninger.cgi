@@ -34,13 +34,12 @@ my $poet = new Kalliope::Person(fhandle => $fhandle);
 # Breadcrumbs -------------------------------------------------------------
 #
 
-my @crumbs;
-push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
-push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
+my @crumbs = $poet->getCrumbs;
 push @crumbs,['Henvisninger',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
                                       page => 'henvisninger',
+				      subtitle => 'Henvisninger',
                                       crumbs => \@crumbs );
 
 #
@@ -70,13 +69,13 @@ if ($antal > 0) {
     }
     $HTML .= '</TABLE>';
     $HTML .= '<BR><SMALL><I>Oversigt over tekster, som henviser til '.$poet->name.'s tekster.</I></SMALL>';
-    $page->addBox( title => 'Henvisninger',
+    $page->addBox(
 	    width => '80%',
             coloumn => 1,
 	    content => $HTML );
 
 } else {
-    $page->addBox( title => 'Henvisninger',
+    $page->addBox(
 	    width => '80%',
             coloumn => 1,
 	    content => "Der findes ingen tekster, som henviser til ".$poet->name."s tekster.");

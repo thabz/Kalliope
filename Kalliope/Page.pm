@@ -44,7 +44,10 @@ sub new {
     $self->{'pagegroup'} = $args{'pagegroup'} || '';
     $self->{'page'} = $args{'page'} || '';
     $self->{'thumb'} = $args{'thumb'};
+    $self->{'icon'} = $args{'icon'} || 'poet-red';
     $self->{'title'} = $args{'title'};
+    $self->{'subtitle'} = $args{'subtitle'} || '';
+    $self->{'nosubmenu'} = $args{'nosubmenu'} || 0;
     $self->{'columns'} = [];
 
     if ($self->{'setcookies'}) {
@@ -92,6 +95,7 @@ sub newAuthor {
     my $group = $poet->getType ne 'person' ? 'persons' : 'poets';
     my $page = new Kalliope::Page(pagegroupchoosen => $group, 
                                   title => $poet->name,
+				  subtitle => $args{'subtitle'},
                                   lang => $poet->lang,  %args);
     return $page;
 }
@@ -122,16 +126,30 @@ sub thumbIMG {
     return $a || $img || '';
 }
 
+sub pageIcon {
+    my $self = shift;
+    if ($self->{'poet'}) {
+        return $self->{'poet'}->icon;
+    } else {
+        return "gfx/frames/$$self{'icon'}.gif";
+    }
+}
+
 sub titleAsHTML {
     my $self = shift;
     my $title;
+    my $subtitle;
     if ($self->{'poet'}) {
         $title = $self->{'poet'}->name;
-        $title .= '<SPAN CLASS="lifespan"> '.$self->{'poet'}->lifespan.'</SPAN>';
+        $subtitle = $self->{'subtitle'};
+#$subtitle = $self->{'poet'}->lifespan;
     } else {
-        $title = $self->{'htmltitle'} || $self->{'title'};
+        $title = $self->{'title'};
+        $subtitle = $self->{'subtitle'};
     }
-    return $title;
+    my $result = $title;
+    $result .= qq|<br><span class="subtitle">$subtitle</span>| if $subtitle;
+    return $result;
 }
 
 sub titleForWindow {
@@ -155,7 +173,7 @@ sub setColoumnWidths {
 sub getColoumnWidths {
     my $self = shift; 
     if ($self->{'poet'} && !$self->{'coloumnwidths'}) {
-        return ('100','100%','100');
+        return ('200','100%','200');
     }
     return $self->{'coloumnwidths'} ? @{$self->{'coloumnwidths'}} : ('100%');
 }
@@ -174,47 +192,28 @@ sub _constructBreadcrumbs {
           push @blocks,$$item[0];
        }
     }
-    my $HTML = join ' >> ',@blocks;
-    $HTML = qq|<SPAN STYLE="font-family:Arial,Helvetica; font-size: 10px">$HTML</SPAN>|;
-    return $HTML;
+    return join ' >> ',@blocks;
 }
 
 sub addBox {
     my ($self,%args) = @_;
 
     my $bggfx = (defined $args{'theme'} && $args{'theme'} eq 'dark') ? 'pap.gif' : 'lightpap.gif';
-    $bggfx = 'notepap.jpg' if defined $args{'theme'} && $args{'theme'} eq 'note';
+    $bggfx = 'notepap.jpg' if defined  && $args{'theme'} eq 'note';
+    my $align =  $args{align} ? $args{align} : 'left';
+    my $width = $args{width} ? qq|WIDTH="$args{width}"| : '';
+    my $theme = $args{'theme'} || 'normal';
 
     my $HTML;
-    $HTML .= '<TABLE WIDTH="'.$args{width}.'" ALIGN="center" BORDER=0 CELLPADDING=1 CELLSPACING=0><TR><TD ALIGN=right>';
+    $HTML .= qq|\n<div class="box$theme" $width style="text-align: $align">|;
     if ($args{title}) {
-	$HTML .= '<DIV STYLE="position: relative; top: 16px; left: -10px;">';
-	$HTML .= '<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=0><TR><TD BGCOLOR=black>';
-	$HTML .= '<TABLE STYLE="border-top: 1px solid #F8FAF2; border-left: 1px solid #F8F4F2; border-bottom: 1px solid #81807E; border-right: 1px solid #81807E" ALIGN=center WIDTH="100%" CELLSPACING=0 CELLPADDING=2 BORDER=0><TR><TD CLASS="boxheaderlayer" BACKGROUND="gfx/pap.gif" >';
-	$HTML .= $args{title};
-	$HTML .= "</TD></TR></TABLE>";
-	$HTML .= "</TD></TR></TABLE>";
-	$HTML .= '</DIV>';
+	$HTML .= qq|<div class="listeoverskrifter">$args{title}</div><br>|;
     }
-    $HTML .= '</TD></TR><TR><TD VALIGN=top BGCOLOR=black>';
-    $HTML .= '<TABLE STYLE="border-top: 1px solid #F8FAF2; border-left: 1px solid #F8F4F2; border-bottom: 1px solid #81807E; border-right: 1px solid #81807E" WIDTH="100%" ALIGN=center CELLSPACING=0 CELLPADDING=15 BORDER=0>';
-    $HTML .= '<TR><TD '.($args{align} ? qq|ALIGN="$args{align}"| : '').qq| BACKGROUND="gfx/$bggfx">|;
     $HTML .= $args{content};
     if ($args{end}) {
-	$HTML .= "</TD></TR></TABLE>";
-	$HTML .= "</TD></TR><TR><TD>";
-	$HTML .= '<DIV STYLE="position: relative; top: -10px; left: 10px;">';
-	$HTML .= '<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=0><TR><TD BGCOLOR=black>';
-	$HTML .= '<TABLE STYLE="border-top: 1px solid #F8FAF2; border-left: 1px solid #F8F4F2; border-bottom: 1px solid #81807E; border-right: 1px solid #81807E" WIDTH="100%" CELLSPACING=0 CELLPADDING=2 BORDER=0><TR><TD CLASS="boxheaderlayer" BACKGROUND="gfx/pap.gif" >';
 	$HTML .= $args{end};
-	$HTML .= "</TD></TR></TABLE>";
-	$HTML .= "</TD></TR></TABLE>";
-	$HTML .= '</DIV>';
-	$HTML .= '</TD></TR></TABLE>';
-    } else {
-	$HTML .= "</TD></TR></TABLE>";
-	$HTML .= "</TD></TR></TABLE>";
     }
+    $HTML .= "</div>\n";
     $self->addHTML($HTML, %args);
 }
 
@@ -242,77 +241,83 @@ function openTimeContext(year) {
 
 EOF
  
-    print '<TABLE HEIGHT="100%" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0>';
+    print '<center><br>';
+    print '<div class="body">';
+    print '<TABLE HEIGHT="500" WIDTH="770" BORDER="0" CELLSPACING="0" CELLPADDING="0">';
     
     if (my $crumbs = $self->_constructBreadcrumbs) {
-        print '<TR><TD HEIGHT=10 COLSPAN=3 STYLE="background-color: #e0e0e0; padding: 1px">';
+        print '<tr><td colspan="3" class="breadcrumbs">';
 	print $crumbs;
-	print '</TD></TR>';
+	print '</td></tr>';
     }
 
-    # Head
-    print '<TR><TD HEIGHT=70 COLSPAN=3 VALIGN="top">';
+    # Head BACKGROUND="gfx/frames/top.png"
+    print '<TR><TD HEIGHT="164" COLSPAN="3" VALIGN="top">';
+    print '<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR>';
+    print '<TD ROWSPAN="3" valign="top"><IMG ALT="" SRC="'.$self->pageIcon.'" HEIGHT="164" WIDTH="139"></TD>';
+    print '<TD colspan="5" HEIGHT="32" WIDTH="100%" CLASS="top"><img alt="" src="gfx/trans1x1.gif" height="72" width="1"></TD>';
+    print '</tr>';
+    
+    if ($self->{'nosubmenu'}) {
+	print q|<tr><td class="submenu" colspan="5"><img alt="" src="gfx/frames/small-menu-blank.gif"></td></tr>|;   
+    } else {
+	print q|<tr>|;
+	print q|<td width="100%" height="1" class="submenu"></td>|;   
+	print '<td class="submenu"><img alt="" src="gfx/frames/small-menu-left.gif"></td>';
+	print qq|<td class="submenu" style="background: url('gfx/frames/small-menu-middle.gif')" nowrap>|;
+	print $self->_navigationSub;
+	print '</td>';
+	print '<td class="submenu"><img alt="" src="gfx/frames/small-menu-right.gif"></td>';
+	print q|<td class="submenu"></td>|;
+	print '</tr>';
 
-    print '<TABLE BGCOLOR="black" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
-    print '<TD ROWSPAN=2><IMG ALT="" SRC="gfx/trans1x1.gif" HEIGHT=70 WIDTH=1></TD>';
-    print '<TD WIDTH="100%" CLASS="maintitle">'.$self->titleAsHTML.'</TD>';
-    print '<TD ROWSPAN=2 VALIGN="top" STYLE="padding-right: 20px">'.$self->thumbIMG.'</TD></TR>';
-#    print '</TR>';
-    print '<TR><TD ALIGN="right" CLASS="navigation">'.$self->_navigationSub.'&nbsp;&nbsp;</TD>';
-    print '</TR></TABLE>';
+    }
+    print '<tr><td colspan="5" height="74" class="maintitle">'.$self->titleAsHTML.'</td></tr>';   
+    print '</table>';
+    
     print '</TD></TR>';
 
-    # top pap
-    print '<TR>';
-    print '<TD BACKGROUND="gfx/sidebartop.gif" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=10></TD>';
-    print '<TD BACKGROUND="gfx/paptop.gif" WIDTH="100%"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="10" HEIGHT="10"></TD>';
-    print '<TD BACKGROUND="gfx/paptopcorner.gif" WIDTH="34"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="34" HEIGHT=10></TD>';
-    print '</TR>';
-
     # Body
-    print '<TR>';
-    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=1><BR>';
-    print $self->_navigationMain.'<BR><BR>';
-
-    print '</TD><TD VALIGN="top" WIDTH="100%" STYLE="padding: 10px">';
-    print '<TABLE WIDTH="100%" HEIGHT="100%"><TR>';
+    print '<tr>';
+    print '<td valign="top" colspan="2" class="navigation"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="138" HEIGHT="40">';
+    print $self->_navigationMain;
+    print '</td>';
+    print '<td class="paper" valign="top">';
+    print qq|<TABLE WIDTH="100%" HEIGHT="100%" CELLPADDING="5"><TR>\n\n|;
     my @widths = $self->getColoumnWidths;
+    my $count = 0;
     foreach my $colHTML (@{$self->{'coloumns'}}) {
         $colHTML = $colHTML || '';
-	if (my $width = shift @widths) {
-	    print qq|<TD VALIGN="top" WIDTH="$width">$colHTML</TD>\n|;
+	my $style = ++$count == 3 ? qq|style="width: 250px; border-left: 3px dotted #808080"| : '';
+        my $width = shift @widths;
+	if ($width) {
+	       print qq|<TD VALIGN="top" $style WIDTH="$width">$colHTML</TD>\n|;
         } else {
-	    print qq|<TD VALIGN="top">$colHTML</TD>\n|;
+	    print qq|<TD $style VALIGN="top">$colHTML</TD>\n|;
         }
     }
     print '</TR></TABLE>';
     print '</TD>';
-    print '<TD BACKGROUND="gfx/papright.gif"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="34" HEIGHT="1"></TD>';
-    print '</TR>';
-
-    # bottom pap
-    print '<TR>';
-    print '<TD BACKGROUND="gfx/sidebarbottom.gif" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="100" HEIGHT=10></TD>';
-    print '<TD BACKGROUND="gfx/papbottom.gif" WIDTH="100%"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="10" HEIGHT="10"></TD>';
-    print '<TD BACKGROUND="gfx/paprightcorner.gif" WIDTH="34"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="34" HEIGHT=10></TD>';
     print '</TR>';
 
     # Foot
-    print '<TR><TD COLSPAN=3 HEIGHT="40" BGCOLOR="black" ALIGN="right" VALIGN="middle">';
+    print '<TR><TD CLASS="footer" COLSPAN="3" HEIGHT="40" ALIGN="right" VALIGN="middle">';
 
+    print '<TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0">';
     print '<FORM METHOD="get" ACTION="ksearch.cgi">';
-    print '<TABLE WIDTH="100%"><TR>';
-    print '<TD WIDTH="100%" STYLE="color: #806060; font-size: 10px; font-family: Helvetica, Arial"><!-- Copyright &copy; 1999-2001 Jesper Christensen --></TD>';
-    print '<TD VALIGN="middle" ALIGN="right" NOWRAP>';
-    print '<INPUT STYLE="width: 200px" NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free">';
-    print '</TD><TD VALIGN="middle" ALIGN="right" NOWRAP STYLE="padding-right: 20px">';
+    print '<TR>';
+    print '<td nowrap style="padding-left: 20px; text-align: left;">';
+    print '<b>Søg:</b> <INPUT CLASS="search" NAME="needle"><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free">';
+    print '</td>';
+    print '<TD VALIGN="middle" ALIGN="right" NOWRAP STYLE="padding-right: 20px">';
     print $self->langSelector;
-    print '</TD></TR></TABLE>';
-    print '</FORM>';
+    print '</TD></TR>';
+    print '</form>';
+    print '</TABLE>';
 
     print '</TD></TR>';
     
-    print '</TABLE></BODY></HTML>';
+    print '</TABLE></div></center></BODY></HTML>';
 }
 
 #
@@ -350,28 +355,32 @@ sub menuStructs {
     my %menuStructs = (
          'welcome' => {'menuTitle' => '',
                        'url' => 'index.cgi',
-                       'pages' => ['news','about','tak','musen']
+                       'pages' => ['news']
                        },
+         'om'       => {'menuTitle' => '',
+                        'url' => 'index.cgi',
+                       'pages' => ['about','tak','musen']
+ 	               },
          'poets'    => {menuTitle => 'Digtere',
-                       url => 'poets.cgi?list=front&sprog='.$lang,
-		       icon => 'gfx/icons/poet-w64.gif',
+                       url => 'poetsfront.cgi?sprog='.$lang,
+		       icon => 'gfx/frames/menu-digtere.gif',
                        'pages' => ['poetsbyname','poetsbyyear','poetsbypic',
 		                   'poetsbyflittige','poetsbypop']
                        },
          'worklist' => {menuTitle => 'Værker',
-                       url => 'kvaerker.pl?sprog='.$lang,
-		       icon => 'gfx/icons/works-w64.gif',
+                       url => "worksfront.cgi?sprog=$lang",
+		       icon => 'gfx/frames/menu-vaerker.gif',
                        pages => ['kvaerkertitel','kvaerkeraar','kvaerkerdigter',
                                  'kvaerkerpop']
                        },
          'poemlist' => {menuTitle => 'Digte',
-		       icon => 'gfx/icons/poem-w64.gif',
-                       url =>'klines.pl?mode=1&forbogstav=A&sprog='.$lang,
+		       icon => 'gfx/frames/menu-digte.gif',
+                       url => "poemsfront.cgi?sprog=$lang",
                        pages => ['poemtitles','poem1stlines','poempopular','latest']
                        },
-         'history' => {menuTitle => 'Nøgleord',
-		       icon => 'gfx/icons/keywords-w64.gif',
-                       url => 'keywordtoc.cgi?sprog='.$lang,
+         'history' => {menuTitle => 'Baggrund',
+		       icon => 'gfx/frames/menu-meta.gif',
+                       url => 'metafront.cgi?sprog='.$lang,
                        pages => ['keywordtoc','dict','persons']
                        },
 #         'forum' =>    {menuTitle => 'Forum',
@@ -488,14 +497,14 @@ sub _navigationMain {
         my ($title,$url,$icon) = ($struct->{'menuTitle'},
                                   $struct->{'url'},$struct->{'icon'});
 	next unless $icon;			  
-	$HTML .= qq|<A CLASS="white" HREF="$url">|;
-	$HTML .= qq|<IMG ALT="" BORDER=0 SRC="$icon"><BR>|;
+	$HTML .= qq|<A TITLE="$title" HREF="$url">|;
+	$HTML .= qq|<IMG ALT="$title" BORDER=0 SRC="$icon">|;
         if ($key ne $self->{'pagegroup'} && $key ne $self->{'pagegroupchoosen'}) {
-	    $HTML .= $title;
+#	    $HTML .= $title;
 	} else {
-            $HTML .= "<B>$title</B>";
+#            $HTML .= "<B>$title</B>";
 	}
-	$HTML .= '</A><BR><BR>';
+	$HTML .= '</A><br>';
     }
     return $HTML;
 }
@@ -513,9 +522,9 @@ sub _navigationSub {
         my ($title,$url) = ($struct->{'menuTitle'},
                            $struct->{'url'});
         if ($key ne $self->{'page'}) {
-	    push @itemsHTML, qq|<A CLASS="white" HREF="$url">$title</A>|;
+	    push @itemsHTML, qq|<A CLASS="submenu" HREF="$url">$title</A>|;
 	} else {
-            push @itemsHTML, qq|<A CLASS="white" HREF="$url"><B>$title</B></A>|;
+            push @itemsHTML, qq|<A CLASS="submenu" HREF="$url"><B>$title</B></A>|;
 	}
     }
     $HTML = join ' <span class="lifespan">&#149;</span> ',@itemsHTML;
@@ -531,33 +540,10 @@ sub notFound {
     $message = $message || qq|Hovsa! Der gik det galt! Siden kunne ikke findes.<BR><BR>Send en mail til <A HREF="mailto:jesper\@kalliope.org">jesper\@kalliope.org</A>, hvis du mener, at jeg har lavet en fejl.|;
     my $HTML;
     my $picNo = int rand(10) + 1;
-    my $page = new Kalliope::Page ('title' => 'Hovsa!');
+    my $page = new Kalliope::Page ('title' => 'Hovsa!', nosubmenu => 1);
     $page->addBox(content => qq|<CENTER><IMG BORDER=2 SRC="gfx/notfound/$picNo.jpg" ALIGN="center"></CENTER><BR><BR>$message|);
     $page->print;
     exit;
-}
-
-sub frontMenu {
-    my @menuStruct = @_;
-    my @activeItems = grep { $_->{'status'} } @menuStruct;
-    my $itemsNum = $#activeItems+1;
-
-    my $HTML = '<TABLE WIDTH="100%"><TR><TD CLASS="ffront" VALIGN="top" WIDTH="50%">';
-    $HTML .= '<TABLE CELLPADDING=2 CELLSPACING=0>';
-
-    my $i = 0;
-    foreach my $str (@activeItems) {
-	my %item = %{$str};
-	my $url = $item{url};
-	if ($item{status}) {
-	    $HTML .= qq|<TR><TD VALIGN="top" ROWSPAN=2><A HREF="$url"><IMG HEIGHT=48 BORDER=0 SRC="$item{icon}" ALT="*"></A></TD>|;
-	    $HTML .= qq|<TD CLASS="ffronttitle"><A HREF="$url">$item{title}</A><TD></TR>|;
-	    $HTML .= qq|<TR><TD VALIGN="top" CLASS="ffrontdesc">$item{desc}</TD></TR>|;
-	    $HTML .= '</TABLE></TD><TD CLASS="ffront" VALIGN="top" WIDTH="50%"><TABLE CELLPADDING=2 CELLSPACING=0>' if (++$i == int $itemsNum/2);
-	}
-    }
-    $HTML .= '</TABLE></TD></TR></TABLE>';
-    return $HTML;
 }
 
 1;

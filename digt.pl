@@ -24,13 +24,10 @@ use Kalliope;
 use Kalliope::Poem;
 use Kalliope::Page;
 use Kalliope::Help;
-use Net::SMTP();
 use CGI qw(:standard);
 use strict;
 
 my $dbh = Kalliope::DB->connect;
-
-my $MAILTAINER_EMAIL = 'jesper@kalliope.org';
 
 my $poem;
 if (url_param('longdid')) {
@@ -61,7 +58,7 @@ push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,['Værker','fvaerker.pl?fhandle='.$poet->fhandle];
 push @crumbs,[$work->titleWithYear,'vaerktoc.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->vhandle];
-push @crumbs,[$poem->title,'digt.pl?longdid='.$poem->longdid];
+push @crumbs,[$poem->title,''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
 				      printer => url_param('printer') || 0,
@@ -69,31 +66,6 @@ my $page = newAuthor Kalliope::Page ( poet => $poet,
 				      extrawindowtitle => $poem->title,
                                       crumbs => \@crumbs);
 
-if (defined param('korrektur')) {
-    # Send as mail ------------------
-    my $mailBody = 'Dato:       '.localtime(time)."\n";
-    $mailBody .= 'Remotehost: '.remote_host()."\n";
-    $mailBody .= 'Forfatter:  '.$poet->name."\n";
-    $mailBody .= 'Fhandle:    '.$poet->fhandle."\n";
-    $mailBody .= 'Værk:       '.$work->title.' '.$work->parenthesizedYear."\n";
-    $mailBody .= 'Værk-id:    '.$work->longvid."\n";
-    $mailBody .= 'Digt:       '.$poem->title."\n";
-    $mailBody .= 'Digt-id:    '.$poem->longdid."\n";
-    $mailBody .= 'Korrektur:  '.param('korrektur')."\n";
-    my $smtp = Net::SMTP->new('localhost') || last;
-    $smtp->mail($MAILTAINER_EMAIL);
-    $smtp->to($MAILTAINER_EMAIL);
-    $smtp->data("From: Kalliope <$MAILTAINER_EMAIL>\r\n".
-	    "To: $MAILTAINER_EMAIL\r\n".
-	    "Date: ".localtime(time)."\r\n".
- 	    "Subject: [Korrektur] $longdid\r\n".
-	    "\r\n".$mailBody."\r\n");
-    $smtp->quit;
-
-    # Database backup ---------------
-    my $sth = $dbh->prepare("INSERT INTO korrektur (date,longdid,korrektur) VALUES (?,?,?)");
-    $sth->execute(time,$poem->longdid,param('korrektur'));
-}
 
 if (defined param('newkeywords')) {
     $poem->addToKeyPool(param('newkeywords'));
@@ -103,10 +75,18 @@ $page->addBox( width => $poem->isProse ? '' : '10',
 	       coloumn => 1,
 	       align => $poem->isProse ? 'justify' : 'left',
 	       printer => 1,
-	       end => qq|<a title="Udskriftsvenlig udgave" href="digt.pl?longdid=$longdid&printer=1"><img src="gfx/print.gif" border=0></a>|,
+	       theme => 'book',
+	       end => qq|<a title="Udskriftsvenlig udgave" href="digt.pl?longdid=$longdid&printer=1"><img alt="Udskriftsvenlig udgave" src="gfx/print.gif" border=0></a>|,
 	       content => &poem($poem,$needle,$biblemark) );
 
 my @keywords = $poem->keywords;
+
+if ($poem->hasPics) { 
+    $page->addBox( width => '250',
+	           coloumn => 2,
+		   theme => 'dark',
+	           content => &pics($poem) );
+}
 
 if ($poem->notes || $#keywords >= 0) {
     $page->addBox( width => '250',
@@ -146,14 +126,6 @@ if (&xrefs($poem)) {
 	           content => &xrefs($poem) );
 }
 
-if ($poem->hasPics) { 
-    $page->addBox( width => '250',
-	           coloumn => 2,
-		   theme => 'dark',
-                   title => 'Billeder',
-	           content => &pics($poem) );
-
-}
 
 #$page->addBox( width => '200',
 #               coloumn => 2,
@@ -165,18 +137,23 @@ if ($poem->hasPics) {
 
 my $workTitle = $work->titleWithYear;
 
-$page->addBox( width =>'250',
-	       coloumn => 2,
-               title => 'Indhold',
-	       theme => 'dark',
-	       content => &tableOfContents($work),
-	       end => qq|<A HREF="vaerktoc.pl?fhandle=$fhandle&vhandle=$vhandle"><IMG VALIGN=center ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 TITLE="$workTitle" ALT="$workTitle"></A>|
-	     );
+#$page->addBox( width =>'250',
+#	       coloumn => 2,
+#               title => 'Indhold',
+#	       theme => 'dark',
+#	       content => &tableOfContents($work),
+#	       end => qq|<A HREF="vaerktoc.pl?fhandle=$fhandle&vhandle=$vhandle"><IMG VALIGN=center ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 TITLE="$workTitle" ALT="$workTitle"></A>|
+#	     );
 
 $page->addBox( width => '250',
 	       coloumn => 2,
-		   theme => 'dark',
-	       content => &korrekturFelt($poem) );
+	       theme => 'dark',
+	       content => qq|<a class="more" onClick="window.open('korrektur.cgi?longdid=$longdid','Korrekturpopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=330'); return false" href="javascript:{}">Send en rettelse...</a>| );
+
+$page->addBox( width => '250',
+	       coloumn => 2,
+	       theme => 'dark',
+	       content => qq|<img alt="" src="gfx/trans1x1.gif" width="100" height="1">| );
 
 $page->print;
 
@@ -192,8 +169,8 @@ sub poem {
     $HTML .= '<BR>';
 
     unless ($poem->isProse) {
-        my $indhold = '<table cellpadding=0 cellspacing=0>';
-        $indhold .= qq|<tr><td><img src="gfx/trans1x1.gif" width="50" height="1"></td><td>$HTML</td></tr>|;
+        my $indhold = '<table cellpadding="0" cellspacing="0">';
+        $indhold .= qq|<tr><td><img alt="" src="gfx/trans1x1.gif" width="50" height="1"></td><td>$HTML</td></tr>|;
         $indhold .= '</table>';
         $HTML = $indhold;
     }
@@ -207,6 +184,7 @@ sub poem {
 	$HTML =~ s/>- />&mdash; /gm;
 	$HTML =~ s/&nbsp;- /&nbsp;&mdash; /gm;
 	$HTML =~ s/ -<br>/ &mdash;<br>/gi;
+	$HTML =~ s/ -&ldquo;/ &mdash;&ldquo;/g;
     }
 
     $HTML =~ s/<footmark id="footnote([^"]+)"\/>/<A CLASS="green" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup>$1<\/sup><\/A>/gsi;
@@ -254,6 +232,7 @@ sub linenotes {
 	my %line = %{$line};
 	my $text = $line{'linenote'};
 	next unless $text;
+	Kalliope::buildhrefs(\$text);
 	my $num = $line{'linenum'};
 	$HTML .= "<b>$num</b> $text<br>";
     }
@@ -309,25 +288,9 @@ sub tableOfContents {
 sub otherFormats {
     my ($poet,$poem) = @_;
     my ($longdid,$fhandle) = ($poem->longdid,$poet->fhandle);
-    return qq|<A HREF="digtprinter.pl?fhandle=$fhandle&longdid=$longdid"><IMG SRC="gfxold/gfx/printer.gif" BORDER=0 ALT="Vis dette digt opsat på en side lige til at printe ud."></A><BR>Printer venligt<BR>|;
+    return qq|<A HREF="digtprinter.pl?fhandle=$fhandle&longdid=$longdid"><IMG ALT="Udskriftsvenligt format" SRC="gfxold/gfx/printer.gif" BORDER=0 ALT="Vis dette digt opsat på en side lige til at printe ud."></A><BR>Printer venligt<BR>|;
 }
 
-sub korrekturFelt {
-    my $poem = shift;
-    my $HTML;
-    if (defined param('korrektur')) {
-	$HTML .= "<SMALL>Tak for din rettelse til »".$poem->title."«! <BR><BR>En mail er automatisk sendt til $MAILTAINER_EMAIL, som vil kigge på sagen.</SMALL>\n";
-    } else {
-        my $longdid = $poem->longdid;
-	$HTML .= "<SMALL>Fandt du en trykfejl i denne tekst, skriv da rettelsen i feltet herunder, og tryk Send</SMALL><BR><BR>";
-	$HTML .= '<FORM><TEXTAREA CLASS="inputtext" NAME="korrektur" WRAP="virtual" COLS=14 ROWS=4></TEXTAREA><BR>';
-	$HTML .= qq|<INPUT TYPE="hidden" NAME="longdid" VALUE="$longdid">|;
-	$HTML .= '<INPUT CLASS="button" TYPE="submit" VALUE="Send"> ';
-	$HTML .= Kalliope::Help->new('korrektur')->linkAsHTML;
-	$HTML .= "</FORM>";
-    }
-    return $HTML;
-}
 
 sub xrefs {
     my $poem = shift;

@@ -34,14 +34,13 @@ my $poet = new Kalliope::Person(fhandle => $fhandle);
 # Breadcrumbs -------------------------------------------------------------
 #
 
-my @crumbs;
-push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
-push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
+my @crumbs = $poet->getCrumbs;
 push @crumbs,['Portrætter',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
-                                      page => 'pics',
-                                      crumbs => \@crumbs );
+	subtitle => 'Portrætter',
+	page => 'pics',
+        crumbs => \@crumbs );
 
 my $i = 1;
 my $HTML .= "<TABLE><TR>";
@@ -64,8 +63,7 @@ while (-e "fdirs/".$fhandle."/p".$i.".jpg") {
 }
 $HTML .= "</TR></TABLE>";
 
-$page->addBox( title => 'Portrætter',
-               width => '80%',
+$page->addBox( width => '80%',
                coloumn => 1,
                align => 'center',
 	       content => $HTML );

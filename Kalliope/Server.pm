@@ -28,6 +28,7 @@ my $dbh = Kalliope::DB::connect;
 use strict;
 
 sub lastVisitors {
+    return;
     my @result;
     open (FIL,"../stat/remote_hosts");
     my $i=0;
@@ -41,6 +42,7 @@ sub lastVisitors {
 }
 
 sub totalHits {
+    return;
     open (FILE,"../stat/counter");
     my $hits = join ' ',<FILE>;
     close (FILE);
@@ -48,6 +50,7 @@ sub totalHits {
 }
 
 sub newHit {
+    return;
     #Læg een til den totale hitcounter
     my $statfilename = "../stat/counter";
 

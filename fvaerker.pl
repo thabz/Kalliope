@@ -44,13 +44,12 @@ unless ($fhandle) {
 my $poet = new Kalliope::Person(fhandle => $fhandle);
 my $mode = url_param('mode') || 'poetical';
 
-my @crumbs;
-push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
-push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
-push @crumbs,['Værker','fvaerker.pl?fhandle='.$poet->fhandle];
+my @crumbs = $poet->getCrumbs();
+push @crumbs,['Værker',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
                     crumbs => \@crumbs, 
+		    subtitle => 'Værker',
 		    page => $mode eq 'prosa' ? 'prosa' : 'vaerker' );
 my $HTML;
 

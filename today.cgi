@@ -34,7 +34,8 @@ my $day = CGI::param('day') || $dayNow;
 
 my @monthNames = Kalliope::Date::getMonthNamesLong;
 
-my $title = $month ? "Begivenheder $day. ".lc $monthNames[$month-1] : "Begivenheder idag";
+my $title = "Begivenheder";
+my $subtitle = $month ? "$day. ".lc $monthNames[$month-1] : "Begivenheder idag";
 my $HTML = Kalliope::Timeline::getEventsGivenMonthAndDayAsHTML($month,$day);
 unless ($HTML) {
     $HTML = '<i>Ingen begivenheder registreret.</i>';
@@ -43,12 +44,12 @@ unless ($HTML) {
 my @crumbs = ([$title,'']);
 
 my $page = new Kalliope::Page ( title => $title,
+	       subtitle => $subtitle,
                pagegroup => 'welcome',
 	       page => 'today',
 	       crumbs => \@crumbs ); 
 
 $page->addBox( width => '75%',
-               title => $title,
                content => $HTML );
 
 #
@@ -72,11 +73,10 @@ foreach my $m (@monthNames) {
 }
 $selectHTML .= '</SELECT>';
 
-$selectHTML .= '<INPUT TYPE="submit" VALUE=" Søg ">';
+$selectHTML .= '<INPUT TYPE="submit" VALUE=" Vælg dato ">';
 $selectHTML .= '</FORM>';
 
 $page->addBox( width => '75%',
-	title => 'Vælg anden dato',
                content => $selectHTML );
 
 $page->print;

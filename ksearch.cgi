@@ -56,6 +56,7 @@ my $page = new Kalliope::Page (
                 pagegroup => 'search',
                 lang => $search->lang,
                 page => '',
+		nosubmenu => 1,
                 thumb => 'gfx/icons/search-h70.gif',
                 crumbs => \@crumbs );
 
@@ -67,8 +68,8 @@ if ($search->hasSearchBox) {
 
 my $starttid = time;
 $page->addBox( width => '80%',
-	content => $search->getHTML,
-	end => "Tid i sekunder: ".(time-$starttid) );
+	content => $search->getHTML
+	);
 
 if (CGI::param('needle') && CGI::param('needle') =~ /^Cæcirie/) {
     my ($antal) = CGI::param('needle') =~ /^Cæcirie(\d+)/;

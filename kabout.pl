@@ -23,25 +23,29 @@
 use Kalliope::Page ();
 use CGI ();
 
-my %titler = ( musen => 'Musen',
-               tak => 'Tak',
+my %titler = ( musen => 'Musen Kalliope',
+               tak => 'Mange tak...',
+               interne => 'Interne sider',
                faq => 'Ofte stillede spørgsmål',
                attractions => 'Coming attractions',
-	       about => 'Om' );
+	       about => '' );
 
 my $select = CGI::url_param('page');
-my @crumbs = ([$titler{$select},'']);
+my $title = $titler{$select};
+my @crumbs = ([$title,'']);
+
+my $HTML = &readFile(CGI::url_param('page'));
 
 my $page = new Kalliope::Page (
 		title => 'Om Kalliope',
-                pagegroup => 'welcome',
+                pagegroup => 'om',
+		subtitle => $title,
 		crumbs => \@crumbs,
                 page => $select); 
 
 $page->addBox (width => '75%',
-               content => &readFile(CGI::url_param('page')));
+               content => $HTML);
 $page->print;
-
 
 sub readFile {
     my $file = shift;

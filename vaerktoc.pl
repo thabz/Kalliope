@@ -42,7 +42,7 @@ my @crumbs;
 push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,['Værker','fvaerker.pl?fhandle='.$poet->fhandle];
-push @crumbs,[$work->titleWithYear,'vaerktoc.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->vhandle];
+push @crumbs,[$work->titleWithYear,''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
                                       page => 'vaerker',
@@ -61,39 +61,43 @@ my $mode = $work->isProse ? 'prosa' : 'poetical';
 
 $page->addBox( width => '80%',
                coloumn => 1,
-               title => 'Indhold',
+#               title => 'Indhold',
                content => &tableOfContent($work),
-               end => qq|<A TITLE="Tilbage til oversigten over værker" HREF="fvaerker.pl?fhandle=$fhandle&mode=$mode"><IMG ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 ALT="Tilbage til oversigten over værker"></A>|
+	       theme => 'book'
               );
-
-$page->addBox( width => '250',
-               coloumn => 2,
-               title => 'Noter',
-               theme => 'dark',
-               content => &notes($work) );
 
 if ($work->hasPics) {
     $page->addBox( width => '100%',
 	           coloumn => 2,
-                   title => 'Billeder',
 	           theme => 'dark',
                    content => &pics($work) );
 }
 
 $page->addBox( width => '250',
                coloumn => 2,
-               title => 'Værker',
-	       theme => 'dark',
-               content => &completeWorks($poet,$work)
-              );
+               theme => 'dark',
+               content => &notes($work) );
+
+
+#$page->addBox( width => '250',
+#               coloumn => 2,
+#               title => 'Værker',
+#	       theme => 'dark',
+#               content => &completeWorks($poet,$work)
+#              );
 
 $page->addBox( width => '100%',
 	       coloumn => 2,
-               align => 'center',
 	       theme => 'dark',
        	       title => 'Formater',
 	       content => &otherFormats($poet,$work) );
-$page->setColoumnWidths(0,'100%',0);
+
+$page->addBox( width => '250',
+	       coloumn => 2,
+	       theme => 'dark',
+	       content => qq|<img src="gfx/trans1x1.gif" width="100" height="1">| );
+
+$page->setColoumnWidths(0,'80%',250);
 $page->print;
 
 #
@@ -167,15 +171,33 @@ sub tableOfContent {
     my $sth = $dbh->prepare("SELECT longdid,toctitel as titel,afsnit,did FROM digte WHERE vid=? ORDER BY vaerkpos");
     $sth->execute($work->vid);
     return 'Kalliope indeholder endnu ingen tekster fra dette værk.' unless $sth->rows;
+    $HTML .= qq|\n<table cellpadding="0" cellspacing="0">\n|;
+
     while(my $d = $sth->fetchrow_hashref) {
-	if ($d->{'afsnit'} && !($d->{'titel'} =~ /^\s*$/)) {
-	    $HTML .= qq|<BR><SPAN CLASS="title$$d{afsnit}">$$d{titel}</SPAN><BR>\n|;
+	my $tit = $d->{'titel'};
+	my $num;
+        if ($tit =~ /<num>/) {
+	    ($num) = $tit =~ /<num>(.*?)<\/num>/;
+	    $tit =~ s/<num>.*?<\/num>//;
+	}		
+	
+	if ($d->{'afsnit'} && !($tit =~ /^\s*$/)) {
+	    $tit = qq|<span class="toctitle$$d{afsnit}"><br>$tit</span>|;
 	} else {
-	    $HTML .= "&nbsp;" x 4;
-	    $HTML .= "<A HREF=\"digt.pl?longdid=".$d->{'longdid'}.'">';
-	    $HTML .= $d->{'titel'}."</A><BR>\n";
+	    $tit = qq|<a href="digt.pl?longdid=$$d{longdid}">$tit</a>|;
 	}
+	if ($num) {
+	    $HTML .= qq|<tr><td class="tocnum">$num</td><td>$tit</td></tr>\n|;
+	} else { 
+	    if ($d->{'afsnit'}) {
+	       $HTML .= qq|<tr><td colspan="2">$tit</td></tr>\n|;
+   	    } else {
+	        $HTML .= qq|<tr><td colspan="2">&nbsp;&nbsp;&nbsp;$tit</td></tr>\n|;
+	    }
+	}
+
     }
+    $HTML .= '</table>';
     $sth->finish;
     return $HTML;
 }
@@ -185,8 +207,8 @@ sub otherFormats {
     my $HTML;
 #    $HTML .= '<A TARGET="_top" TITLE="»'.$work->title.'« i PDF format" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=Printer"><IMG SRC="gfx/pdf.gif" BORDER=0 ALT="»'.$work->title.'« i PDF format"></A><BR>PDF<BR><BR>';
 #    $HTML .= '<A TARGET="_top" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=Printer"><IMG HEIGHT=48 WIDTH=48 SRC="gfx/floppy.gif" BORDER=0 ALT="»'.$work->title.'« i printervenligt format"></A><BR>Printer venligt<BR><BR>';
-    $HTML .= '<A TARGET="_top" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=Printer">Printervenligt format</A><BR><BR>';
+    $HTML .= '<A CLASS="more" TARGET="_top" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=Printer">Printervenligt...</A><BR>';
 #    $HTML .= '<A TARGET="_top" TITLE="»'.$work->title.'« som etext til Palm" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=PRC"><IMG SRC="gfx/pilot.gif" BORDER=0 ALT="»'.$work->title.'« som etext til Palm"></A><BR>Palmpilot<BR><BR>';
-    $HTML .=  '<A TARGET="_top" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=XML">XML format</A><BR>';
+    $HTML .=  '<A TARGET="_top" CLASS="more" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=XML">XML...</A><BR>';
     return $HTML;
 }

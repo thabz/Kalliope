@@ -38,19 +38,15 @@ push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,['Bibliografi',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
+	                              subtitle => 'Bibliografi',
 				      printer => url_param('printer') || 0,
                                       page => 'bibliografi',
                                       crumbs => \@crumbs );
 
 
 if (-e "fdirs/$fhandle/primaer.txt") {
-    open (FILE,"fdirs/$fhandle/primaer.txt");
-    my $HTML = join '<BR><BR>',<FILE>;
-    close (FILE);
 
-    $HTML =~ s/<biblio>/[/gi;
-    $HTML =~ s/<\/biblio>/]&nbsp;&nbsp;/gi;
-
+    my $HTML = fileAsHTML("fdirs/$fhandle/primaer.txt");
     $page->addBox(
 	    width => '80%',
 	    coloumn => 0,
@@ -61,16 +57,12 @@ if (-e "fdirs/$fhandle/primaer.txt") {
 }
 
 if (-e "fdirs/$fhandle/sekundaer.txt") {
-    open (FILE,"fdirs/$fhandle/sekundaer.txt");
-    my $HTML = join '<BR><BR>',<FILE>;
-    close (FILE);
+    my $HTML = fileAsHTML("fdirs/$fhandle/sekundaer.txt");
 
-    $HTML =~ s/<biblio>/[/gi;
-    $HTML =~ s/<\/biblio>/]&nbsp;&nbsp;/gi;
-
+    my $column = -e "fdirs/$fhandle/primaer.txt" ? 1 : 0;
     $page->addBox(
 	    width => '80%',
-	    coloumn => 1,
+	    coloumn => $column,
 	    printer => 1,
 	    title => 'Sekundærlitteratur',
 	    end => qq|<a title="Udskriftsvenlig udgave" href="fsekundaer.pl?fhandle=$fhandle&printer=1"><img src="gfx/print.gif" border=0></a>|,
@@ -81,3 +73,16 @@ $page->setColoumnWidths('50%','50%');
 
 $page->print;
 
+
+sub fileAsHTML {
+    my $file = shift;
+    open (FILE,$file);
+    my $HTML = join '</p><p class="bibliografi">',<FILE>;
+    $HTML = qq|<p class="bibliografi">$HTML</p>|;
+    close (FILE);
+
+    $HTML =~ s/<biblio>/[/gi;
+    $HTML =~ s/<\/biblio>/]&nbsp;&nbsp;/gi;
+    return $HTML;
+
+}

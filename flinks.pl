@@ -34,13 +34,12 @@ my $poet = new Kalliope::Person(fhandle => $fhandle);
 # Breadcrumbs -------------------------------------------------------------
 #
 
-my @crumbs;
-push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
-push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
+my @crumbs = $poet->getCrumbs;
 push @crumbs,['Links',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
                                       page => 'links',
+               subtitle => "Mere om ".$poet->name." på nettet",
                                       crumbs => \@crumbs );
 
 #Vis de tilgængelige links
@@ -57,6 +56,5 @@ $out .= "</TABLE>";
 
 $page->addBox( width => '75%',
                coloumn => 1,
-               title => "Mere om ".$poet->name." på nettet",
 	       content => $out);
 $page->print;

@@ -125,7 +125,7 @@ sub buildhrefs {
 sub makeMetricLetters {
     my $text = shift;
     return $text unless $text =~ /<metrik>/i;
-    while ($text =~ s/<metrik>([^<]*)<\/metrik>/&_makeMetricLetters($1)/mie) {
+    while ($text =~ s/<metrik>(.*?)<\/metrik>/&_makeMetricLetters($1)/mie) {
        1;
     }
     return $text;

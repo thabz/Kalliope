@@ -23,6 +23,7 @@
 package Kalliope::Web;
 
 use URI::Escape;
+use Image::Size;
 
 sub doubleColumn {
     my $ptr = $_[0];
@@ -62,22 +63,62 @@ sub doubleColumn {
 	}
         $subtotal += $b->{'count'};
 	$HTML .= $b->{'head'} || '';
-	$HTML .= ($b->{'body'} || '')."<BR>";
+	$HTML .= ($b->{'body'} || '')."<BR>\n";
 	$i++;
     }
     $HTML .= '</DIV></TD></TR></TABLE>';
     return $HTML;
 }
 
+sub frontMenu {
+    my @menuStruct = @_;
+    my @activeItems = grep { $_->{'status'} } @menuStruct;
+    my $itemsNum = $#activeItems+1;
+
+    my $HTML = '<br><TABLE WIDTH="100%"><TR><TD CLASS="ffront" VALIGN="top" WIDTH="50%">';
+    $HTML .= '<TABLE CELLPADDING=2 CELLSPACING=0>';
+
+    my $i = 0;
+    foreach my $str (@activeItems) {
+	my %item = %{$str};
+	my $url = $item{url};
+	if ($item{status}) {
+	    $HTML .= qq|<TR><TD VALIGN="top" ROWSPAN=2><A HREF="$url"><IMG HEIGHT=48 BORDER=0 SRC="$item{icon}" ALT=""></A></TD>|;
+	    $HTML .= qq|<TD CLASS="ffronttitle"><A HREF="$url">$item{title}</A><TD></TR>|;
+	    $HTML .= qq|<TR><TD VALIGN="top" CLASS="ffrontdesc">$item{desc}</TD></TR>|;
+	    $HTML .= qq|<tr><td></td></tr>|;
+	    $HTML .= '</TABLE></TD><TD CLASS="ffront" VALIGN="top" WIDTH="50%"><TABLE CELLPADDING=2 CELLSPACING=0>' if (++$i == int (($itemsNum + 1 )/2 ));
+	}
+    }
+    $HTML .= '</TABLE></TD></TR></TABLE>';
+    return $HTML;
+}
+
+sub tabbedView {
+    my ($selectedId,$body,@tabs) = @_;
+    my $HTML;
+
+    # Render tabs
+    $HTML = "";
+    foreach my $tab (@tabs) {
+	$HTML .= qq|<a title="$$tab{'title'}" href="$$tab{'url'}">|;
+	$HTML .= $$tab{'id'} eq $selectedId ? "<b>$$tab{'text'}</b>" : $$tab{'text'};
+	$HTML .= '</a>.';
+    }
+    $HTML =~ s/\.$//;
+
+    $HTML .= '<br>'.$body;
+    return $HTML;
+}
 
 sub insertThumb {
     my $h = shift;
     $h->{'alt'} = '' unless $h->{'alt'};
-    my ($tx,$ty) = imgsize ($h->{'thumbfile'});
+    my ($tx,$ty) = imagesize ($h->{'thumbfile'});
     my $border = defined $h->{border} ? $h->{border} : 2;
     my $html = '';
     if ($h->{destfile}) {
-	my ($dx,$dy) = imgsize ($h->{'destfile'});
+	my ($dx,$dy) = imagesize ($h->{'destfile'});
 	my $winy = $dy+20 < 600 ? $dy+20 : 600;
 	my $winx = $dx+30 < 800 ? $dx+30 : 800;
 	$html .= qq|<A TITLE="$$h{alt}" HREF="javascript:{}" onclick='window.open("picfull.pl?imgfile=|.uri_escape($h->{destfile}).qq|&x=$dx&y=$dy","popup","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=$winx,height=$winy")'>|;
@@ -88,13 +129,8 @@ sub insertThumb {
     return $html;
 }
 
-sub imgsize {
-    my $filename = shift;
-    open(IDE,"./jpeggeometry $filename|");
-    my ($kaj) = <IDE>;
-    close (IDE);
-    $kaj =~ /(.*)x(.*)/;
-    return ($1,$2);
+sub imagesize {
+    return imgsize(shift);
 }
 
 

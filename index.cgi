@@ -41,26 +41,26 @@ my $showAllNews = CGI::param('showall') && CGI::param('showall') eq 'yes' ? 1 : 
 my @crumbs = (['Velkommen','']);
 
 my $page = new Kalliope::Page (
-		title => 'Kalliope - '.$randomPagesTitles[$rnd],
-                pagegroup => 'welcome',
+		title => 'Kalliope',
+		subtitle => $randomPagesTitles[$rnd],
 		frontpage => 1,
+		nosubmenu => 1,
 		crumbs => \@crumbs,
 		changelangurl => 'poets.cgi?list=az&sprog=XX',
-                page => 'news'
            );
 
-$page->addBox ( title => "Sidste nyheder",
+$page->addBox (
                 width => '100%',
                 coloumn => 0,
                 content => &latestNews($showAllNews),
-                end => qq|<A HREF="index.cgi?showall=yes"><IMG VALIGN=center BORDER=0 HEIGHT=16 WIDTH=16  SRC="gfx/rightarrow.gif" ALT="Vis gamle nyheder"></A>| );
+                end => qq|<a class="more" href="index.cgi?showall=yes">Læs gamle nyheder...</a>| );
 
 if (my $dayToday = &dayToday()) {
     $page->addBox ( title => "Dagen idag",
 	    width => '100%',
 	    coloumn => 1,
 	    content => $dayToday,
-	    end => '<A HREF="today.cgi"><IMG  HEIGHT=16 WIDTH=16 VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Vælg dato"></A>');
+	    end => '<A class="more" HREF="today.cgi">Vælg anden dato...</A>');
 }
 
 my ($sonnetText,$sonnetEnd) = &sonnet;
@@ -114,11 +114,10 @@ sub sonnet {
     my ($did) = $sth->fetchrow_array;
     return ('','') unless $did;
     my $poem = new Kalliope::Poem(did => $did);
-    $HTML .= '<SMALL>'.$poem->content(layout => 'plainpoem').'</SMALL>';
-    $HTML =~ s/ /&nbsp;/g;
+    $HTML .= '<small>'.$poem->content(layout => 'plainpoem').'</small>';
     my $poet = $poem->author;
     $HTML .= '<br><div style="text-align:right"><i><small>'.$poet->name.'</small></i></div>';
     my $title = $poet->name.': »'.$poem->title.'«';
-    $END = qq|<A TITLE="$title" HREF="digt.pl?longdid=|.$poem->longdid.qq|"><IMG VALIGN=center BORDER=0 HEIGHT=16 WIDTH=16 SRC="gfx/rightarrow.gif" ALT="$title"></A>|;
+    $END = qq|<A class="more" TITLE="$title" HREF="digt.pl?longdid=|.$poem->longdid.qq|">Gå til digtet...</A>|;
     return ($HTML,$END);
 }

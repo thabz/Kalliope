@@ -37,12 +37,11 @@ my $poet = new Kalliope::Person(fhandle => $fhandle);
 # Breadcrumbs -------------------------------------------------------------
 #
 
-my @crumbs;
-push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
-push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
+my @crumbs = $poet->getCrumbs();
 push @crumbs,['Mest populære digte',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs,
+	                              subtitle => 'Mest populære digte',
                                       page => 'popular');
 
 my $sth =  $dbh->prepare("SELECT d.longdid,d.titel as titel,lasttime,hits,v.titel as vtitel,v.aar FROM fnavne as f, digte as d, digthits as dh, vaerker as v WHERE f.fhandle = ? AND f.fid = d.fid AND d.afsnit = 0 AND d.longdid = dh.longdid AND v.vid = d.vid ORDER BY dh.hits DESC LIMIT 10");
@@ -53,15 +52,15 @@ my $HTML .= '<TABLE CLASS="oversigt" CELLSPACING=0 WIDTH="100%">';
 $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Titel</TH><TH ALIGN="right">Hits</TH><TH ALIGN="right">Senest</TH></TR>';
 while (my $h = $sth->fetchrow_hashref) {
     my $aar = $h->{aar} ne '?' ? ' ('.$h->{aar}.')' : '';
-    $HTML .= '<TR><TD>'.$i++.'.</TD>';
+    my $class = $i % 2 ? '' : ' CLASS="darker" ';
+    $HTML .= qq|<TR $class><TD>|.$i++.'.</TD>';
     $HTML .= '<TD><A HREF="digt.pl?longdid='.$h->{longdid}.'">'.$h->{titel}.'</A><FONT COLOR=#808080> - <I>'.$h->{vtitel}.'</I>'.$aar.'</FONT></TD>';
     $HTML .= '<TD ALIGN=right>'.$h->{'hits'}.'</TD>';
     $HTML .= '<TD ALIGN=right>'.Kalliope::Date::shortDate($h->{'lasttime'}).'</TD>';
 }
 $HTML .= '</TABLE>';
 
-$page->addBox( title => 'Mest populære digte',
-    width => '80%',
+$page->addBox( width => '80%',
     coloumn => 1,
     content => $HTML );
 

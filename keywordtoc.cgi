@@ -31,13 +31,15 @@ my $dbh = Kalliope::DB->connect;
 my $LA = url_param('sprog') || 'dk';
 
 my @crumbs;
+push @crumbs,['Baggrund','metafront.cgi'];
 push @crumbs,['Nøgleord',''];
 my $page = new Kalliope::Page (
-		title => 'Indholdsfortegnelse for nøgleord',
+	        title => 'Nøgleord',
+		subtitle => 'Indholdsfortegnelse',
                 pagegroup => 'history',
                 lang => $LA,
                 page => 'keywordtoc',
-                thumb => 'gfx/icons/keywords-h70.gif',
+		icon => 'keywords-blue',
                 crumbs => \@crumbs );
 
 my @blocks= ();
@@ -51,7 +53,6 @@ while (my $h = $sth->fetchrow_hashref) {
     $blocks[$idx]->{'body'} .= '<A HREF="keyword.cgi?keyword='.$h->{'ord'}.'&sprog='.$LA.'">'.$h->{'titel'}.'</A><BR>';
 }
 
-$page->addBox ( title => "Indholdsfortegnelse",
-                width => '75%',
+$page->addBox ( width => '75%',
                 content => Kalliope::Web::doubleColumn(\@blocks) );
 $page->print;

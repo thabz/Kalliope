@@ -47,10 +47,27 @@ sub myuc {
 sub sortObject {
     my ($a,$b) = @_;
     if ($a && $b) {
-	return mylc($a->sortString) cmp mylc($b->sortString);
+	my $aa = $a->sortString;
+	$aa = mylc($aa);
+	$aa =~ s/aa/ו/g;
+
+	my $bb = $b->sortString;
+	$bb = mylc($bb);
+	$bb =~ s/aa/ו/g;
+
+	return $aa cmp $bb;
     } else {
         return 0
     };
+}
+
+sub fixForSort {
+    my $s = shift;
+    $s = mylc($s);
+    $s =~ s/aa/ו/g;
+# $s =~ tr/a-zאבגדהוזחטיךכלםמןנסעףפץצרשתûü‎‏/A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞ/;
+    print STDERR "$s x";
+    return $s;
 }
 
 1;
