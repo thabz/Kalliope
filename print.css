@@ -6,6 +6,10 @@ SPAN.wide {
     letter-spacing: 0.2em;
 }
 
+span.headtitle {
+    font-size: 18px;
+}
+
 a {
     color: black;
     text-decoration: none;	   
@@ -25,4 +29,9 @@ span.digtunderoverskrift {
 
 .noprint {
     display: none;
+}
+
+img.logo {
+    border: 0px;
+    padding-left: 10pt;	  
 }

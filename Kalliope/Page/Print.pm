@@ -65,9 +65,9 @@ function openTimeContext(year) {
 <table width="100%"><tr><td width="100%">
 <hr noshade size="1">
 </td><td>
-<h2>www.kalliope.org</h2>
+<span class="headtitle">www.kalliope.org</span>
 </td><td>
-<a href="javascript:{history.go(-1)}"><img align="right" src="gfx/icons/poet-h48.gif" border=0></a>
+<a href="javascript:{history.go(-1)}"><img class="logo" src="gfx/icons/poet-h48.gif" border=0></a>
 </td></tr></table>
 EOF
 
