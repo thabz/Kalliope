@@ -25,14 +25,14 @@
 use Kalliope;
 
 use Kalliope;
-use CGI (':standard');
+use CGI ();
 use Kalliope::Person ();
 use Kalliope::Page ();
 use Kalliope::Sort ();
 use strict;
 
 my $dbh = Kalliope::DB->connect;
-my $fhandle = url_param('fhandle');
+my $fhandle = CGI::url_param('fhandle');
 
 unless ($fhandle) {
     my @ARGV = split(/\?/,$ARGV[0]);
@@ -48,7 +48,7 @@ unless ($fhandle) {
 
 
 my $poet = new Kalliope::Person(fhandle => $fhandle);
-my $mode = url_param('mode') || 1;
+my $mode = CGI::url_param('mode');
 
 #
 # Breadcrumbs -------------------------------------------------------------
