@@ -76,7 +76,7 @@ sub thumbIMG {
     } elsif ($self->{'thumb'}) {
         $src = $self->{'thumb'};
     }
-    my $img = qq|<IMG BORDER=0 ALT="$alt" HEIGHT=100 SRC="$src">| if $src;
+    my $img = qq|<IMG BORDER=0 ALT="$alt" HEIGHT=70 SRC="$src">| if $src;
     my $a = qq|<A HREF="$href" TITLE="$alt">$img</A>| if $href; 
     return $a || $img || '';
 }
@@ -195,16 +195,16 @@ EOF
 	print $crumbs;
 	print '</DIV>';
     }
-    print '<DIV HEIGHT=100 CLASS="nav"><TABLE WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
-    print '<TD CLASS="navigation">';
-#    print $self->_navigationMain;
-    print '</TD>';
-    print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1 ALT=""></TD>';
+    print '<DIV HEIGHT=70 CLASS="nav"><TABLE WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
+#    print '<TD CLASS="navigation">';
+##    print $self->_navigationMain;
+#    print '</TD>';
+#    print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1 ALT=""></TD>';
 
-    print '<TD ROWSPAN=3 VALIGN="top">'.$self->thumbIMG.'</TD></TR>';
     
-    print '<TR><TD WIDTH="100%" CLASS="maintitle">'.$self->titleAsHTML.'</TD>';
-    print '<TD CLASS="maintitle"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=36 WIDTH=1 ALT=""></TD>';
+    print '<TD WIDTH="100%" CLASS="maintitle">'.$self->titleAsHTML.'</TD>';
+#    print '<TD CLASS="maintitle"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=36 WIDTH=1 ALT=""></TD>';
+    print '<TD ROWSPAN=2 VALIGN="top">'.$self->thumbIMG.'</TD></TR>';
     print '</TR>';
     print '<TR><TD ALIGN="right" CLASS="navigation">'.$self->_navigationSub.'</TD>';
     print '<TD CLASS="navigation"><IMG ALIGN=right SRC="gfx/trans1x1.gif" HEIGHT=32 WIDTH=1 ALT=""></TD>';
