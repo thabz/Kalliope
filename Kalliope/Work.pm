@@ -46,7 +46,7 @@ sub new {
 }
 
 sub vid {
-    return $_[0]->{'vid'};
+    return shift->{'vid'};
 }
 
 sub longvid {
@@ -72,10 +72,8 @@ sub subtitle {
     return shift->{'underoverskrift'};
 }
 
-
 sub notes {
-    my $self = shift;
-    return $self->{'noter'}; 
+    return shift->{'noter'}; 
 }
 
 sub keywords {
@@ -98,7 +96,7 @@ sub updateHitCounter {
 }
 
 sub fid {
-    return $_[0]->{'fid'};
+    return shift->{'fid'};
 }
 
 sub author {
@@ -107,7 +105,7 @@ sub author {
 }
 
 sub year {
-    return $_[0]->{'aar'};
+    return shift->{'aar'};
 }
 
 sub parenthesizedYear {
@@ -117,7 +115,7 @@ sub parenthesizedYear {
 }
 
 sub hasContent {
-    return $_[0]->{'findes'} == 1;
+    return shift->{'findes'} == 1;
 }
 
 sub iconURI {
