@@ -98,13 +98,13 @@ sub getDetailsAsHTML {
 
 sub lifespan {
    my $self = shift;
-   my $return;
-   if ($self->isUnknownPoet) {
-      $return = '';
-   } else {
-      $return = "(".$self->yearBorn.'-'.$self->yearDead.')';
+   return '' if ($self->isUnknownPoet);
+   my $born = $self->yearBorn;
+   my $dead = $self->yearDead;
+   if (substr($born,0,2) eq substr($dead,0,2)) {
+       $dead = substr($dead,2);
    }
-   return $return;
+   return "($born-$dead)";
 }
 
 sub yearBorn {
