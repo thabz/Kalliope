@@ -110,6 +110,14 @@ sub getLatestThreadIds {
     return @result;
 }
 
+sub getNumberOfThreads {
+    my $self = shift;
+    my $sth = $dbh->prepare("SELECT count(*) FROM forum WHERE parent = 0 AND forum_id = ?"); 
+    $sth->execute($self->getId);
+    my ($count) = $sth->fetchrow_array;
+    return $count;
+}
+
 sub getPostsInThread {
     my ($self,$thread_id) = @_;
     my @result;
