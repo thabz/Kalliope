@@ -88,7 +88,7 @@ sub tocTitle {
 }
 
 sub sortString {
-    return $_[0]->title;
+    return $_[0]->linkTitle;
 }
 
 sub subtitle {
@@ -452,7 +452,7 @@ sub getSearchResultEntry {
     my $content = $self->contentForSearch();
     my $work = $self->work;
     my $author = $self->author;
-    my $poemTitle = $self->title;
+    my $poemTitle = $self->linkTitle;
 
     my $match = '';
     my $slash = '<SPAN STYLE="color: #a0a0a0">//</SPAN>';
