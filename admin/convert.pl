@@ -20,6 +20,7 @@ while (my $w = $sthw->fetchrow_hashref) {
     my $outfile = $prefix.$$w{fhandle}.'/'.$$w{vhandle}.'.xml';
     open (OUT,">$outfile");
     print OUT qq(<?xml version="1.0" encoding="ISO-8859-1"?>\n);
+    print OUT qq(<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">\n);
     my $type = $$w{type} eq 'p' ? 'prose' : 'poetry';
     print OUT qq(<kalliopework id="$$w{vhandle}" author="$$w{fhandle}" status="$$w{status}" type="$type">\n);
     print OUT qq(<workhead>\n);
@@ -57,7 +58,7 @@ sub printPoem {
     print OUT qq(   <title>$$p{titel}</title>\n) if ($$p{titel});
     print OUT qq(   <subtitle>$$p{underoverskrift}</subtitle>\n) if ($$p{underoverskrift});
     print OUT qq(   <toctitle>$$p{toctitel}</toctitle>\n) if ($$p{toctitel});
-    print OUT qq(   <indexitle>$$p{tititel}</indextitle>\n) if ($$p{tititel});
+    print OUT qq(   <indextitle>$$p{tititel}</indextitle>\n) if ($$p{tititel});
     print OUT qq(   <firstline>$$p{foerstelinie}</firstline>\n) if ($$p{foerstelinie});
     printNotes($$p{noter});
     printPics($$p{pics});
@@ -105,11 +106,21 @@ sub fixHTML {
     my $s = shift;
     return '' unless $s;
     $s =~ s/<br>/<br\/>/ig;
+    $s =~ s/<resetnum>/<resetnum\/>/ig;
     $s =~ s/<I>/<i>/ig;
     $s =~ s/<\/I>/<\/i>/ig;
+    $s =~ s/<\/A>/<\/a>/ig;
     $s =~ s/\&bdquo;/,,/ig;
     $s =~ s/\&ldquo;/''/ig;
-    $s =~ s/<xref(.*?)>/<xref$1\/>/ig;
+    $s =~ s/&c\./&amp;c./ig;
+    $s =~ s/ & / &amp; /ig;
+    $s =~ s/<xref DIGT="?(.*?)"?>/<xref digt="$1"\/>/ig;
+    $s =~ s/<xref BIBEL="?(.*?)"?>/<xref bibel="$1"\/>/ig;
+    $s =~ s/<A D="?(.*?)"?>/<a poem="$1">/ig;
+    $s =~ s/<A F="?(.*?)"?>/<a person="$1">/ig;
+    $s =~ s/<A V="?(.*?)"?>/<a work="$1">/ig;
+    $s =~ s/<A K="?(.*?)"?>/<a keyword="$1">/ig;
+    $s =~ s/<A HREF="?(.*?)"?>/<a href="$1">/ig;
     return $s;
 }
 
