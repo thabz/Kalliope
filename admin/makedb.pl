@@ -10,21 +10,42 @@ use Kalliope::Build::Dict;
 use Kalliope::Build::Timeline;
 use Kalliope::Build::Xrefs;
 use Kalliope::Build::Biblio;
+use Kalliope::Build::Works;
+use Kalliope::Build::Texts;
+use Kalliope::Build::Timestamps;
+use Kalliope::Build::Firstletters;
 use POSIX;
+use Getopt::Long;
 
 $| = 1; # No buffered I/O on STDOUT
 
 my $dbh = Kalliope::DB->connect;
 
+my $__all = '';
+GetOptions ("all" => \$__all);
+
+if ($__all) {
+    &log ("Creating tables...");
+    Kalliope::Build::Works::create();
+    Kalliope::Build::Texts::create();
+    Kalliope::Build::Timestamps::create();
+    Kalliope::Build::Firstletters::create();
+}
+
 #
 # Build dictionary 
 #
-
-&log ("Making dict... ");
-Kalliope::Build::Dict::create();
-%dict = Kalliope::Build::Dict::parse('../data/dict.xml');
-Kalliope::Build::Dict::insert(\%dict);
-&log ("Done");
+my $dictFile = '../data/dict.xml';
+if (Kalliope::Build::Timestamps::hasChanged($dictFile)) {
+    &log ("Making dict... ");
+    Kalliope::Build::Dict::create();
+    %dict = Kalliope::Build::Dict::parse($dictFile);
+    Kalliope::Build::Dict::insert(\%dict);
+    Kalliope::Build::Timestamps::register($dictFile);
+    &log ("Done");
+} else {
+    &log ("(Dict not modified)");
+}
 
 #
 # Keywords
@@ -98,12 +119,42 @@ $sthkeyword = $dbh->prepare("INSERT INTO keywords_relation (keywordid,otherid,ot
 # Build fnavne
 #
 
-&log("Making persons... ");
-Kalliope::Build::Persons::create();
-my %persons = Kalliope::Build::Persons::parse('../data/poets.xml');
-my %fhandle2fid = Kalliope::Build::Persons::insert(%persons);
+$poetsFile = '../data/poets.xml';
+if (Kalliope::Build::Timestamps::hasChanged($poetsFile)) {
+    &log("Making persons... ");
+    Kalliope::Build::Persons::create();
+    my %persons = Kalliope::Build::Persons::parse($poetsFile);
+    my %fhandle2fid = Kalliope::Build::Persons::insert(%persons);
+    Kalliope::Build::Timestamps::register($poetsFile);
+    &log("Done");
+} else {
+    &log ("(Poets not modified)");
+}
+
+&log("Scanning works...");
+my @changedWorks = Kalliope::Build::Works::findmodified();
+&log("Done. ".($#changedWorks+1)." files have changed.");
+&log("Cleaning works...");
+Kalliope::Build::Works::clean(@changedWorks);
+&log("Done");
+&log("Inserting works heads...");
+Kalliope::Build::Works::insert(@changedWorks);
 &log("Done");
 
+&log("Inserting works bodies...");
+Kalliope::Build::Texts::insert();
+&log("Done");
+
+if (!$__all) {
+    &log('Cleaning firstletters...');
+    Kalliope::Build::Firstletters::clean(@changedWorks);
+    &log("Done");
+}
+&log('Inserting firstletters...');
+Kalliope::Build::Firstletters::insert();
+&log("Done");
+
+exit;
 #
 # Build biblio
 #
@@ -111,6 +162,9 @@ my %fhandle2fid = Kalliope::Build::Persons::insert(%persons);
 &log("Making biblio... ");
 Kalliope::Build::Biblio::build();
 &log("Done");
+
+
+
 
 #
 # Andet pass af keywords som laver links imellem dem
@@ -183,7 +237,7 @@ $rc = $dbh->do("CREATE TABLE vaerker (
               aar char(40),
               noter text,
 	      pics text,
-              type char(5),
+              type enum('poetry','prose'),
 	      status enum('complete','incomplete'),
               findes char(1),
 	      cvstimestamp int,
@@ -462,49 +516,6 @@ Kalliope::Build::Xrefs::build();
 pis:
 &log ("Detekterer henvisninger...");
 Kalliope::Build::Persons::buildHasHenvisninger($dbh);
-&log ("Done");
-
-#
-# Build forbogstaver
-#
-
-print "Building firstletters...";
-
-$rc = $dbh->do("drop table if exists forbogstaver");
-$rc = $dbh->do("CREATE TABLE forbogstaver ( 
-              bid int UNSIGNED DEFAULT '0' NOT NULL PRIMARY KEY auto_increment,
-	      forbogstav char(2) NOT NULL,
-	      did INT NOT NULL,
-	      sprog char(2) NOT NULL,
-	      type char(1) NOT NULL,   /* t eller f */
-	      KEY forbogstav_key (forbogstav(2)), 
-	      UNIQUE (bid))");
-$sth = $dbh->prepare("SELECT foerstelinie,tititel as titel,did,sprog FROM digte D, fnavne F WHERE D.fid = F.fid AND afsnit=0 AND D.layouttype = 'digt' ORDER BY F.sprog");
-$sth->execute();
-$i=0;
-while ($f[$i] = $sth->fetchrow_hashref) { 
-    $i++; 
-}
-$sthk = $dbh->prepare("INSERT INTO forbogstaver (forbogstav,did,sprog,type) VALUES (?,?,?,?)");
-$mode = 't';
-foreach (@f) { $_->{'sort'} = $_->{'titel'}};
-&insertforbogstav();
-$mode = 'f';
-foreach (@f) { $_->{'sort'} = $_->{'foerstelinie'}};
-&insertforbogstav();
-
-#
-# Subs
-#
-
-sub insertforbogstav {
-    foreach $f (sort { Kalliope::Sort::sort ($a,$b) } @f) {
-	next unless $f->{'sort'};
-	$f->{'sort'} =~ s/Aa/Å/g;
-	$f->{'sort'} =~ tr/ÁÀÉÈ/AAEE/;
-	$sthk->execute(substr($f->{'sort'},0,1), $f->{'did'}, $f->{'sprog'},$mode);
-    }
-}
 &log ("Done");
 
 #$dbh->disconnect;
