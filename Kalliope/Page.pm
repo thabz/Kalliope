@@ -199,7 +199,7 @@ sub addBox {
     my ($self,%args) = @_;
 
     my $bggfx = (defined $args{'theme'} && $args{'theme'} eq 'dark') ? 'pap.gif' : 'lightpap.gif';
-    $bggfx = 'notepap.jpg' if defined  && $args{'theme'} eq 'note';
+    $bggfx = 'notepap.jpg' if defined  $args{'theme'} && $args{'theme'} eq 'note';
     my $align =  $args{align} ? $args{align} : 'left';
     my $width = $args{width} ? qq|WIDTH="$args{width}"| : '';
     my $theme = $args{'theme'} || 'normal';
