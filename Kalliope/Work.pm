@@ -63,7 +63,9 @@ sub title {
 
 sub titleWithYear {
     my $self = shift;
-    return $self->title.' '.$self->parenthesizedYear;
+    return $self->{'titleWithYear'} if $self->{'titleWithYear'};
+    $self->{'titleWithYear'} = $self->title.' '.$self->parenthesizedYear;
+    return return $self->{'titleWithYear'};
 }
 
 sub subtitle {
