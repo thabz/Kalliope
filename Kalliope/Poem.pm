@@ -203,8 +203,10 @@ sub _contentAsProseHTML {
 	    my $width = (length $1)*10;
 	    $width = 100 if $width > 100;
 	    $line = qq|<hr align="center" noshade size=1 color="black" width="$width%" style="color:black">|;
+	} else {
+	    $line = "$line\n";
 	}
-	push @indhold,"$line\n";
+	push @indhold,"$line";
     }
     my $result = join "",@indhold;
     $result  =~ s/\n/<BR>\n/g;
