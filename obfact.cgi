@@ -73,7 +73,7 @@ $us = getVal("SELECT count(*) FROM fnavne where sprog = 'us'");
 $de = getVal("SELECT count(*) FROM fnavne where sprog = 'de'");
 $fr = getVal("SELECT count(*) FROM fnavne where sprog = 'fr'");
 $it = getVal("SELECT count(*) FROM fnavne where sprog = 'it'");
-$HTML .= "<li>Af de $antalpoets digtere i Kalliope, er de $dk danske, $se svenske, $no norske, $uk engelske, $us amerikanske, $fr franske, $it italienske og $de tyske.";
+$HTML .= "<li>Af de $antalpoets digtere i Kalliope, er de $dk danske, $se svenske, $no norske, $uk britiske, $us amerikanske, $fr franske, $it italienske og $de tyske.";
 
 
 $val = getVal("select count(*) from vaerker where status = 'complete'");

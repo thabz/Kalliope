@@ -316,7 +316,7 @@ sub langSelector {
     my $selfLang = $self->lang; 
     my $HTML;
     my %titles = ( dk => 'danske',
-                   uk => 'engelske',
+                   uk => 'britiske',
                    us => 'amerikanske',
 		   de => 'tyske',
 		   fr => 'franske',
