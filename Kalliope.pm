@@ -144,6 +144,7 @@ sub _makeMetricLetters {
 		 'UU' => 'UU',
 		 '_u' => '_u',
 		 'x' => 'x',
+		 '_' => 'space',
 		 '-' => 'minus',
 		 '/' => 'slash' );
     foreach $part (split / +/,$metrik) {
