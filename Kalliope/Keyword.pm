@@ -76,14 +76,14 @@ sub linksToKeywords {
 }
 
 sub linksToPersons {
-    my $self = shift;
+    my ($self,$LA) = @_;
     my $sth = $dbh->prepare("SELECT keywordid FROM keywords_relation WHERE otherid = ? AND othertype = 'person'");
     $sth->execute($self->id);
     my @list;
     while (my $id = $sth->fetchrow_array) {
          push @list, new Kalliope::Person(fid => $id);
     }
-    return @list;
+    return grep {$_->lang eq $LA} @list;
 }
 
 sub linksToPoems {

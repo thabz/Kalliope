@@ -44,10 +44,10 @@ sub shortDate {
     } elsif (time - $time < 6*24*60*60) {
 	return $weekdays[$wday]." $hour:$min";	
     } elsif ($year == $year2) {
-	return "$mday. $months[$mon] $hour:$min"
+	return "$mday. $months[$mon]"
     } else {
 	$year+=1900;
-	return "$mday. $months[$mon] $year $hour:$min"
+	return "$mday. $months[$mon] $year"
     }
 }
 

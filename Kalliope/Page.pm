@@ -33,26 +33,64 @@ sub new {
     $self->{'pagegroup'} = $args{'pagegroup'};
     $self->{'page'} = $args{'page'};
     $self->{'author'} = $args{'author'};
-    $self->{'title'} = $args{'title'}.' - Kalliope' || 'dk';
+    $self->{'title'} = $args{'title'}.' - Kalliope' || 'Kalliope';
     my $title = $self->{'title'};
-    $self->{'html'} = <<"EOF";
-<HTML><HEAD><TITLE>$title</TITLE>
-<LINK REL=STYLESHEET TYPE="text/css" HREF="kalliope.css">
-<META name="description" content="Stort arkiv for ældre digtning">
-<META name="keywords" content="digte, lyrik, litteratur, litteraturhistorie, digtere, digtarkiv, etext, e-text, elektronisk tekst, kalliope, kalliope.org, www.kalliope.org">
-</HEAD>
-<BODY LINK="#000000" VLINK="#000000" ALINK="#000000">
-<DIV CLASS="nav">
-EOF
-    $self->_addNavigation;
-    $self->addHTML ('</DIV><DIV CLASS="body">');
+    $self->{'columns'} = [];
     return $self;
 }
 
+sub newAuthor {
+    my ($class,%args) = @_;
+    my $poet = $args{'poet'};
+    my $page = new Kalliope::Page(title => $poet->name,
+                                  lang => $poet->lang,  %args);
+    $page->addBox(content => $poet->blobHTML,
+                  coloumn => 0,
+                  align => 'center',
+                  width => '100%' );
+    return $page;
+}
+
+sub lang {
+    return shift->{'lang'};
+}
 
 sub addHTML {
-    my ($self,$HTML) = @_;
-    $self->{'html'} .= $HTML;
+    my ($self,$HTML,%args) = @_;
+    my $coloumn = $args{'coloumn'} || 0;
+    @{$self->{'coloumns'}}[$coloumn] .= $HTML;
+}
+
+sub setColoumnWidths {
+    my ($self,@widths) = @_;
+    $self->{'coloumnwidths'} = \@widths;
+}
+
+sub getColoumnWidths {
+    my $self = shift; 
+    if ($self->{'poet'} && !$self->{'coloumnwidths'}) {
+        return ('100','100%','100');
+    }
+    return $self->{'coloumnwidths'} ? @{$self->{'coloumnwidths'}} : ('100%');
+}
+
+sub _constructBreadcrumbs {
+    my $self = shift;
+    return '' unless $self->{'crumbs'};
+    my @crumbs = (
+                ['Kalliope','index.cgi'],
+                @{$self->{'crumbs'}});
+    my @blocks;
+    foreach my $item (@crumbs) {
+       if ($$item[1]) {
+          push @blocks,qq|<A HREF="$$item[1]">$$item[0]</A>|;
+       } else {
+          push @blocks,$$item[0];
+       }
+    }
+    my $HTML = join ' >> ',@blocks;
+    $HTML = qq|<SMALL STYLE="font-family:Arial,Helvetica">$HTML</SMALL>|;
+    return $HTML;
 }
 
 sub addBox {
@@ -62,14 +100,37 @@ sub addBox {
                $args{'width'} || '',
                $args{'align'} || '',
                $args{'content'} || '',
-               $args{'end'} || '') );
+               $args{'end'} || ''), %args );
 }
 
 sub print {
     my $self = shift;
     print "Content-type: text/html\n\n";
     print '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">';
-    print $self->{'html'};
+    print <<"EOF";
+<HTML><HEAD><TITLE>$$self{title}</TITLE>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="kalliope.css">
+<META name="description" content="Stort arkiv for ældre digtning">
+<META name="keywords" content="digte, lyrik, litteratur, litteraturhistorie, digtere, digtarkiv, etext, e-text, elektronisk tekst, kalliope, kalliope.org, www.kalliope.org">
+</HEAD>
+<BODY LINK="#000000" VLINK="#000000" ALINK="#000000">
+<DIV CLASS="nav"><CENTER>
+EOF
+    print $self->_navigation;
+    print '</CENTER></DIV>';
+    print '<DIV STYLE="background-color: #e0e0e0"><SMALL>';
+    print $self->_constructBreadcrumbs;
+    print '</SMALL></DIV><DIV CLASS="body">';
+    print '<TABLE WIDTH="100%"><TR>';
+    my @widths = $self->getColoumnWidths;
+    foreach my $colHTML (@{$self->{'coloumns'}}) {
+	if (my $width = shift @widths) {
+	    print qq|<TD VALIGN="top" WIDTH="$width">$colHTML</TD>\n|;
+        } else {
+	    print qq|<TD VALIGN="top">$colHTML</TD>\n|;
+        }
+    }
+    print '</TR></TABLE>';
     print '</DIV></BODY></HTML>';
 }
 
@@ -80,29 +141,50 @@ sub print {
 my @topMenuItems = ('welcome','poets','worklist','poemlist',
                     'history');
 
+
+sub _navigation {
+    my $self = shift;
+    my $lang = $self->lang;
+
 my %menuStructs = (
          'welcome' => {'menuTitle' => 'Velkommen',
                        'url' => 'index.cgi',
-                       'pages' => ['news','about','musen','stats']
+                       'pages' => ['news','about','tak','musen','stats']
                        },
          'poets'    => {menuTitle => 'Digtere',
-                       url => 'poets.cgi?list=az',
+                       url => 'poets.cgi?list=az&sprog='.$lang,
                        'pages' => ['poetsbyname','poetsbyyear','poetsbypic']
                        },
          'worklist' => {menuTitle => 'Værker',
-                       url => 'kvaerker.pl'
+                       url => 'kvaerker.pl?sprog='.$lang,
+                       pages => ['kvaerkertitel','kvaerkeraar','kvaerkerdigter',
+                                 'kvaerkerpop']
                        },
          'poemlist' => {menuTitle => 'Digte',
-                       url => 'klines.pl'
+                       url =>'klines.pl?mode=1&forbogstav=A&sprog='.$lang,
+                       pages => ['poemtitles','poem1stlines','poempopular']
                        },
          'history' => {menuTitle => 'Litt. hist',
-                       url => 'keywords.cgi'
+                       url => 'keywordtoc.cgi?sprog='.$lang,
+                       pages => ['keywordtoc','timeline','keyword']
+                       },
+         'poemtitles' =>{menuTitle => 'Digttitler',
+                       url => 'klines.pl?mode=1&forbogstav=A&sprog='.$lang
+                       },
+         'poem1stlines' => {menuTitle => 'Førstelinier',
+                       url => 'klines.pl?mode=0&forbogstav=A&sprog='.$lang
+                       },
+         'poempopular' => {menuTitle => 'Populære',
+                       url => 'klines.pl?mode=2&sprog='.$lang
                        },
          'news' =>     {menuTitle => 'Nyheder',
-                       url => 'kfront.pl'
+                       url => 'index.cgi'
                        },
          'about' =>    {menuTitle => 'Om',
                        url => 'kabout.pl?page=about'
+                       },
+         'tak' =>      {menuTitle => 'Tak',
+                       url => 'kabout.pl?page=tak'
                        },
          'musen' =>     {menuTitle => 'Musen',
                        url => 'kabout.pl?page=musen'
@@ -111,18 +193,34 @@ my %menuStructs = (
                        url => 'kstats.pl'
                        },
          'poetsbyname' => {menuTitle => 'Digtere efter navn',
-                           url => 'poets.cgi?list=az'
+                           url => 'poets.cgi?list=az&sprog='.$lang
                        },
          'poetsbyyear' => {menuTitle => 'Digtere efter år',
-                           url => 'poets.cgi?list=19'
+                           url => 'poets.cgi?list=19&sprog='.$lang
                        },
          'poetsbypic' => {menuTitle => 'Digtere efter udseende',
-                           url => 'poets.cgi?list=pics'
+                           url => 'poets.cgi?list=pics&sprog='.$lang
+                       },
+         'kvaerkertitel' => {menuTitle => 'Værker efter titel',
+                           url => 'kvaerker.pl?mode=titel&sprog='.$lang
+                       },
+         'kvaerkerdigter' => {menuTitle => 'Værker efter digter',
+                           url => 'kvaerker.pl?mode=digter&sprog='.$lang
+                       },
+         'kvaerkeraar' => {menuTitle => 'Værker efter år',
+                           url => 'kvaerker.pl?mode=aar&sprog='.$lang
+                       },
+         'kvaerkerpop' => {menuTitle => 'Mest populære værker',
+                           url => 'kvaerker.pl?mode=pop&sprog='.$lang
+                       },
+         'keywordtoc' => {menuTitle => 'Indhold',
+                           url => 'keywordtoc.cgi?sprog='.$lang
+                       },
+         'timeline' => {menuTitle => 'Tidslinie',
+                           url => 'timeline.cgi&sprog='.$lang
                        }
           );
 
-sub _addNavigation {
-    my $self = shift;
     my $HTML;
     # Pagegroups
     foreach my $key (@topMenuItems) {
@@ -148,7 +246,11 @@ sub _addNavigation {
             $HTML .= qq|<B>[$title]</B> |;
 	}
     }
-    $self->addHTML("<CENTER>$HTML</CENTER>");
+    # Author menu
+    if ($self->{'poet'}) {
+       $HTML .= '<BR>'.$self->{'poet'}->menu;
+    }
+    return $HTML;
 }
 
 sub notFound {

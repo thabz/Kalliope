@@ -23,7 +23,9 @@ package Kalliope::Person;
 
 use strict ('vars');
 use Carp;
-use Kalliope::DB;
+use Kalliope::DB ();
+use Kalliope::Work ();
+use Kalliope ();
 
 my $dbh = Kalliope::DB->connect;
 
@@ -48,13 +50,17 @@ sub fid {
     return $_[0]->{'fid'};
 }
 
+sub lang {
+    return shift->{'sprog'};
+}
+
 sub thumbURI {
     my $self = shift;
     return $self->{'thumb'} ? 'fdirs/'.$self->fhandle.'/thumb.jpg' : '';
 }
 
 sub hasBio {
-   return $_[0]->{'bio'};
+    return $_[0]->{'bio'};
 }
 
 sub bio {
@@ -80,7 +86,6 @@ sub yearDead {
    return $_[0]->{'doed'};
 }
 
-
 sub sortString {
    return $_[0]->reversedName;
 }
@@ -98,7 +103,7 @@ sub reversedName {
 }
 
 sub bioURI {
-    return 'biografi.cgi?fhandle='.$_[0]->fhandle;
+    return 'ffront.cgi?fhandle='.$_[0]->fhandle;
 }
 
 sub worksURI {
@@ -148,4 +153,58 @@ sub proseWorks {
     }
     return @list;
 }
+
+sub blobHTML {
+    my $self = shift;
+    my $url = $self->thumbURI;
+    my $HTML;
+    my $fhandle = $self->fhandle;
+    my $alt = "Tilbage til hovedmenuen for ".$self->name;
+    $HTML .= qq|<A TITLE="$alt" HREF="ffront.cgi?fhandle=$fhandle"><IMG ALT="$alt" BORDER=0 SRC="$url"></A><BR>| if $url;
+    $HTML .= $self->name.'<BR>'.$self->lifespan;
+}
+
+sub menu {
+    my $self = shift;
+    my %menuStruct = (
+       vaerker => { url => 'fvaerker.pl?', 
+                    title => 'Værker', 
+                    status => $self->{'vaerker'} },
+       titlelines => { url => 'flines.pl?mode=1&', 
+                    title => 'Digttitler', 
+                    status => $self->{'vers'} },
+       firstlines => { url => 'flines.pl?mode=0&', 
+                    title => 'Førstelinier', 
+                    status => $self->{'vers'} },
+       popular => { url => 'fpop.pl?', 
+                    title => 'Populære', 
+                    status => $self->{'vers'} },
+       prosa     => { url => 'fvaerker.pl?mode=prosa&', 
+                    title => 'Prosa', 
+                    status => $self->{'prosa'} },
+       pics      => { url => 'fpics.pl?', 
+                    title => 'Portrætter', 
+                    status => $self->{'pics'} },
+       bio       => { url => 'biografi.cgi?', 
+                    title => 'Biografi', 
+                    status => $self->{'bio'} },
+       samtidige => { url => 'samtidige.cgi?', 
+                    title => 'Samtidige', 
+                    status => 1 },
+       links     => { url => 'flinks.pl?', 
+                    title => 'Links', 
+                    status => $self->{'links'} },
+       sekundaer => { url => 'fsekundaer.pl?', 
+                    title => 'Sekundær', 
+		    status => $self->{'sekundaer'} } );
+    my @keys = qw/vaerker titlelines firstlines popular prosa pics bio samtidige links sekundaer/;
+    my $HTML;
+    foreach my $key (@keys) {
+        my %item = %{$menuStruct{$key}};
+        my $url = $item{url}.'fhandle='.$self->fhandle;
+        $HTML .= qq|[<A HREF="$url">$item{title}</A>] | if $item{status};
+    }
+    return $HTML;
+}
+
 1;

@@ -37,4 +37,10 @@ sub mylc {
     return $str;
 }
 
+sub sortObject {
+    if ($a && $b) {
+    return lc($a->sortString) cmp lc($b->sortString);
+    } else { return 0 };
+}
+
 1;

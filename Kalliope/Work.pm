@@ -34,13 +34,14 @@ my $dbh = Kalliope::DB->connect;
 sub new {
     my ($class,%arg) = @_;
     my $sql;
-    $sql = 'longvid = "'.$arg{'longvid'}.'"' if defined $arg{'longvid'};
+    $sql = 'vhandle = "'.$arg{'longvid'}.'" and fhandle = "'.$arg{'fhandle'}.'"' if defined $arg{'longvid'};
     $sql = 'vid = "'.$arg{'vid'}.'"' if defined $arg{'vid'};
     confess "Need some kind of id to initialize a new work\n" unless $sql;
     my $sth = $dbh->prepare("SELECT * FROM vaerker WHERE $sql");
     $sth->execute();
     my $obj = $sth->fetchrow_hashref;
     bless $obj,$class;
+    confess "Work not found in DB\n" unless $obj->{'vid'};
     return $obj;
 }
 
@@ -49,15 +50,24 @@ sub vid {
 }
 
 sub longvid {
-    return $_[0]->{'longvid'};
+    return shift->{'vhandle'};
+}
+
+sub vhandle {
+    return shift->{'vhandle'};
 }
 
 sub title {
-    return $_[0]->{'titel'};
+    return shift->{'titel'};
+}
+
+sub titleWithYear {
+    my $self = shift;
+    return $self->title.' '.$self->parenthesizedYear;
 }
 
 sub subtitle {
-    return $_[0]->{'underoverskrift'};
+    return shift->{'underoverskrift'};
 }
 
 

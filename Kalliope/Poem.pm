@@ -119,10 +119,10 @@ sub notes {
 sub keywords {
     my $self = shift;
     my @keywords;
-    my $sth = $dbh->prepare("SELECT id FROM keywords_relation WHERE keywords_relation.otherid = ? AND keywords_relation.othertype = 'digt'");
+    my $sth = $dbh->prepare("SELECT keywordid FROM keywords_relation WHERE keywords_relation.otherid = ? AND keywords_relation.othertype = 'digt'");
     $sth->execute($self->did);
     while (my $id = $sth->fetchrow_array) {
-       push @keywords,new Kalliope::Keyword($id);
+       push @keywords,new Kalliope::Keyword(id => $id);
     }
     return @keywords;
 }
