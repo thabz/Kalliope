@@ -374,11 +374,11 @@ sub menuStructs {
                        url => 'keywordtoc.cgi?sprog='.$lang,
                        pages => ['keywordtoc','dict','persons']
                        },
-         'forum' =>    {menuTitle => 'Forum',
-                       url => 'forumindex.cgi',
-		       icon => 'gfx/icons/forum-w64.gif',
-                       pages => ['forumindex']
-                       },
+#         'forum' =>    {menuTitle => 'Forum',
+#                       url => 'forumindex.cgi',
+#		       icon => 'gfx/icons/forum-w64.gif',
+#                       pages => ['forumindex']
+#                       },
          'forumindex' => {menuTitle => 'Oversigt',
                        url => 'forumindex.cgi'
                        },
