@@ -147,9 +147,9 @@ sub doublecolumnHTML {
 	if (!$columnchanged && $subtotal > $total/2) {
 	    $columnchanged = 1;
 	    $HTML .= '</TD><TD WIDHT=1 VALIGN=top BGCOLOR=black>';
-	    $HTML .= '<IMG SRC="gfx/trans1x1.gif" BORDER=0></TD>';
+	    $HTML .= '<IMG ALT="" SRC="gfx/trans1x1.gif" BORDER=0 ALT=""></TD>';
 	    $HTML .= '<TD WIDHT=10 VALIGN=top>';
-	    $HTML .= '<IMG SRC="gfx/trans1x1.gif" WIDTH=10 BORDER=0></TD>';
+	    $HTML .= '<IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH=10 BORDER=0></TD>';
 	    $HTML .= '<TD VALIGN=top>';
 	}
         $subtotal += $b->{'count'}+2;
