@@ -118,14 +118,15 @@ sub pics {
    my $self = shift;
    return @{$self->{'cachepics'}} if $self->{'cachepics'};
    my @result;
-   my $sth = $dbh->prepare("SELECT caption,url FROM workpictures WHERE vid = ? ORDER BY orderby");
+   my $sth = $dbh->prepare("SELECT caption,url,type FROM workpictures WHERE vid = ? ORDER BY orderby");
    $sth->execute($self->vid);
    my $fhandle = $self->fhandle;
-   while (my ($desc,$url) = $sth->fetchrow_array) {
+   while (my ($desc,$url,$type) = $sth->fetchrow_array) {
       my $thumb = $url;
       $thumb =~ s/^(.*?)([^\/]+)$/$1_$2/;
       push @result,{ thumbfile => 'fdirs/'.$fhandle.'/'.$thumb,
                      destfile =>  'fdirs/'.$fhandle.'/'.$url,
+		     type => $type,
                      description => $desc };
    }
    $self->{'cachepics'} = \@result;
@@ -136,6 +137,16 @@ sub hasPics {
     my $self = shift;
     my @pics = $self->pics;
     return $#pics >= 0;
+}
+
+sub getTitlepagePic {
+    my $self = shift;
+    foreach my $pic ($self->pics) {
+        if ($pic->{'type'} eq 'titlepage') {
+            return $pic;
+	}
+    }
+    return undef;
 }
 
 sub keywords {

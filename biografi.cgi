@@ -88,8 +88,23 @@ my @events;
 
 my @works = ($poet->poeticalWorks,$poet->proseWorks);
 foreach my $w (grep { $_->hasYear } @works) {
-    push @events, new Kalliope::Timeline::Event({ year => $w->year,
-                    description => $poet->efternavn.': <i>'.$w->clickableTitle.'</i>' });
+    my $titlepic = $w->getTitlepagePic;
+    my $event;
+    if ($titlepic) {
+       $event = new Kalliope::Timeline::Event({ 
+	       url => $titlepic->{'destfile'},
+	       year => $w->year,
+               description => "Titelblad til ".$poet->efternavn.'s <i>'.$w->clickableTitle.'</i> som udkommer '.$w->year."." });
+    } elsif ($w->hasContent) {
+        $event = new Kalliope::Timeline::Event({ 
+		    year => $w->year,
+                    description => $poet->efternavn.': <i>'.$w->clickableTitle.'</i>.' });
+    } else {
+            $event = new Kalliope::Timeline::Event({ 
+		    year => $w->year,
+                    description => $poet->efternavn.': <i>'.$w->title.'</i>.' });
+    }
+    push @events,$event;
 }
 
 push @events , new Kalliope::Timeline::Event({ year => $poet->yearBorn,
