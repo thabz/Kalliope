@@ -36,6 +36,9 @@ my @monthNames = Kalliope::Date::getMonthNamesLong;
 
 my $title = $month ? "Begivenheder $day. ".lc $monthNames[$month-1] : "Begivenheder idag";
 my $HTML = Kalliope::Timeline::getEventsGivenMonthAndDayAsHTML($month,$day);
+unless ($HTML) {
+    $HTML = '<i>Ingen begivenheder registreret.</i>';
+}
 
 my @crumbs = ([$title,'']);
 
