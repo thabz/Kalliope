@@ -50,7 +50,7 @@ my $page = new Kalliope::Page (
 	pagegroup => 'poemlist',
 	page => $page,
         lang => $LA,
-	thumb => 'gfx/open_book_100.GIF',
+	thumb => 'gfx/icons/poem-h70.gif',
 	crumbs => \@crumbs );
 
 my $sth;

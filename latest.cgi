@@ -41,6 +41,7 @@ my $page = new Kalliope::Page (
                 pagegroup => 'poemlist',
 		changelangurl => 'poets.cgi?list=az&sprog=XX',
                 page => 'latest',
+	        thumb => 'gfx/icons/poem-h70.gif',
 		crumbs => \@crumbs
            );
 
