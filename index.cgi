@@ -28,7 +28,7 @@ use Kalliope::Page;
 use strict;
 
 my $page = new Kalliope::Page (
-		title => 'Velkommen',
+		title => 'Velkommen - og undskyld byggerodet!',
                 pagegroup => 'welcome',
                 page => 'news',
            );
@@ -39,18 +39,20 @@ $page->addBox ( title => "Sidste Nyheder",
                 content => &latestNews,
                 end => '<A onclick="document.location = \'kallnews.pl\'" HREF="kallnews.pl"><IMG VALIGN=center BORDER=0 HEIGHT=16 WIDTH=16  SRC="gfx/rightarrow.gif" ALT="Vis gamle nyheder"></A>' );
 
-$page->addBox ( title => "Dagen idag",
-                width => '100%',
-                coloumn => 1,
-                content => &dayToday,
-                end => '<A HREF="kdagenidag.pl"><IMG  HEIGHT=16 WIDTH=16 VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Vælg dato"></A>');
+if (my $dayToday = &dayToday()) {
+    $page->addBox ( title => "Dagen idag",
+	    width => '100%',
+	    coloumn => 1,
+	    content => ,
+	    end => '<A HREF="kdagenidag.pl"><IMG  HEIGHT=16 WIDTH=16 VALIGN=center BORDER=0 SRC="gfx/rightarrow.gif" ALT="Vælg dato"></A>');
+}
 
 my ($sonnetText,$sonnetEnd) = &sonnet;
 $page->addBox ( title => "Sonnetten på pletten",
-                coloumn => 1,
-                width => '100%',
-                content => $sonnetText,
-                end => $sonnetEnd);
+	coloumn => 1,
+	width => '100%',
+	content => $sonnetText,
+	end => $sonnetEnd);
 $page->print;
 
 #
@@ -90,7 +92,7 @@ sub dayToday {
 	    $i++;
 	}
     }
-    $HTML = "Ingen begivenheder...<BR>" unless $i;
+    $HTML = "" unless $i;
     return $HTML;
 }
 
