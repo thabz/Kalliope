@@ -38,8 +38,6 @@ $wheretolinklanguage = $1.'?'.$valg.'?';
 
 &kheaderHTML("Kalliope - Statistik",$LA);
 
-&kcenterpageheader("Statistik");
-
 if ($valg ==1) {
     $mytitel = "Mest flittige digter ifølge Kalliope\n";
 } elsif ($valg == 2) {

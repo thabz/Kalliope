@@ -28,8 +28,6 @@ $LA = $ARGV[0];
 
 &kheaderHTML("Kalliope - Download",$LA);
 
-&kcenterpageheader("Download Kalliope");
-
 beginbluebox("Filer","","center");
 
 print "<TABLE CELLPADDING=10><TR><TD ALIGN=center>";

@@ -26,7 +26,7 @@ use URI::Escape;
 use Exporter ();
 
 @ISA = qw(Exporter);
-@EXPORT = qw(kheaderHTML kfooterHTML kcenterpageheader beginbluebox beginwhitebox beginnotebox begindarkbluebox enddarkbluebox endbox $dbh);
+@EXPORT = qw(kheaderHTML kfooterHTML beginbluebox beginwhitebox beginnotebox begindarkbluebox enddarkbluebox endbox $dbh);
 
 do 'dbconnect.pl';
 
@@ -124,20 +124,6 @@ sub kfooterHTML {
 #	print "<BR><FONT COLOR=#2020d0>Copyright &copy; 1999 <A CLASS=blue HREF=\"mailto:jesper\@kalliope.org\">Jesper Christensen</A></FONT>";
 	print "</BODY></HTML>";
 };
-
-####
-# Udskriver overskriften for midter afsnit
-#
-
-sub kcenterpageheader {
-    return;
-    print "<table border=0 cellpadding=1 cellspacing=0 width=\"100%\"><tr><td bgcolor=#000000>";
-    print "<TABLE align=center cellspacing=0 cellpadding=15 border=0 bgcolor=#e0e0f0 BORDER=5 WIDTH=\"100%\"><TR>";
-    print "<TD WIDTH=\"100%\" BORDER=0 VALIGN=center align=center>";
-    print "<FONT SIZE=24><I>".$_[0]."</I></FONT>";
-    print "</TD></TR></TABLE>";
-    print "</td></tr></table><BR>";
-}
 
 #######################################
 #

@@ -55,10 +55,8 @@ if ($md eq "") {
 	$md++;
 }
 
-&kcenterpageheader("Dagen idag - ".$dg.". ".$maaneder[$md-1]);
-
 #Start kasse
-beginwhitebox('Dagen idag','','');
+beginwhitebox("Dagen idag - ".$dg.". ".$maaneder[$md-1],'','');
 
 open(FILE,"data.$LA/dagenidag.txt");
 $i=0;
@@ -77,7 +75,7 @@ foreach (<FILE>) {
 print "Ingen begivenheder...<BR>" if $i==0;
 
 #Print søge-FORMen
-#print "<BR><BR><BR>Vælg anden dato:\n";
+print "<BR><BR><BR>";
 print "<FORM METHOD=POST ACTION=\"kdagenidag.pl\">";
 #Udskriv dage 1-31...
 print "<FONT SIZE=2><select name=\"dg\">\n";

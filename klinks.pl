@@ -26,9 +26,6 @@ do 'kstdhead.pl';
 
 &kheaderHTML("Kalliope - Links");
 
-&kcenterpageheader("Weblinks ud af huset");
-
-
 print "<table align=center border=0 cellpadding=1 cellspacing=0 width=\"75%\"><tr width=\"100%\" ><td bgcolor=#000000>";
 print "<TABLE align=center cellspacing=0 cellpadding=15 border=0 bgcolor=ffffff BORDER=5 WIDTH=\"100%\"><TR width=\"100%\" >\n";
 print "<TD>";

@@ -27,10 +27,6 @@ $titel = "Litteraturhistorie ";
 $0 = "hpage.pl";
 &kheaderHTML("Litteraturhistorie");
 
-#&kcenterpageheader("Litteraturhistorie - indeks");
-
-
-#Indled kasse til selve teksten
 beginwhitebox("","","");
 
 opendir(ETC,"hist.$LA/") || die "ARGH!!";

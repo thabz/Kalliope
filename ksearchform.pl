@@ -29,8 +29,6 @@ $LA=$ARGV[0];
 
 do 'ksearch.ovs';
 
-#&kcenterpageheader($ovs1{$LA});
-
 #Indled kasse til selve teksten
 beginwhitebox("","","");
 

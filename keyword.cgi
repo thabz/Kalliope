@@ -38,7 +38,6 @@ my $limit = url_param('limit') || '';
 
 &kheaderHTML("Kalliope - Nøgleord",$LA);
 
-&kcenterpageheader("Nøgleord");
 my $keyword = new Kalliope::Keyword(id => $keywordid);
 
 if (!$keywordid) {

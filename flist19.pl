@@ -25,23 +25,14 @@
 do 'kstdhead.pl';
 $LA = $ARGV[0];
 
-do 'flist.ovs';
-
 $0 =~ /\/([^\/]*)$/;
 $wheretolinklanguage = $1.'?';
 
 
 &kheaderHTML('Digtere');
 
-#do 'flist.ovs';
-
-#&kcenterpageheader($ovs2{$LA});
-
-
 @liste = ();
 
-
-#Indled kasse til selve teksten
 beginwhitebox("Digtere efter fødeår","","left");
 
 #Indlæs alle navnene

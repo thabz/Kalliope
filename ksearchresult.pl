@@ -58,8 +58,6 @@ $wheretolinklanguage = 'ksearchform.pl';
 
 do 'ksearch.ovs';
 
-&kcenterpageheader($ovs13{$LA});
-
 unless ($string) {
     # Get the input
     read(STDIN, $data, $ENV{'CONTENT_LENGTH'});

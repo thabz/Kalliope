@@ -65,10 +65,7 @@ if ($ARGV[0] =~ /\.\./ || !(-e "hist.$LA/".$ARGV[0].".txt")) {
 }
 &kheaderHTML($titel,$LA);
 
-#&kcenterpageheader("Litteraturhistorie - $titel");
-
 print "<TABLE><TR><TD VALIGN=top>";
-
 
 #Indled kasse til selve teksten
 beginwhitebox("","100%","justify");

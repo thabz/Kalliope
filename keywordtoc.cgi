@@ -30,8 +30,6 @@ my $LA = url_param('sprog');
 
 &kheaderHTML("Kalliope - Nøgleord",$LA);
 
-&kcenterpageheader("Nøgleord");
-
 my @blocks= ();
 my $idx;
 my $sth = $dbh->prepare("SELECT id,titel FROM keywords ORDER BY titel");

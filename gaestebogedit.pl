@@ -9,8 +9,6 @@ $LA = $ARGV[0];
 
 &kheaderHTML("Kalliope - skriv i gæstebog",$LA);
 
-&kcenterpageheader("Skriv i gæstebogen");
-
 &beginwhitebox('Skriv i gæstebogen','');
 
 print "<FORM METHOD=POST ACTION=\"gaestebogsubmit.pl?$LA\">";

@@ -32,7 +32,6 @@ foreach $pair (@pairs)
 if (($FORM{'navn'} eq '') || ($FORM{'thetext'} eq ''))  {
 
     &kheaderHTML("Kalliope - Whoops!",$LA);
-    &kcenterpageheader("Hovsa!");
     &beginwhitebox("Hovsa!",'50%');
     if ($FORM{'thetext'} eq '') {
 	print "Du glemte at skrive noget til gæstebogen.";
@@ -43,7 +42,6 @@ if (($FORM{'navn'} eq '') || ($FORM{'thetext'} eq ''))  {
 } else {
 
     &kheaderHTML("Kalliope - Tak for indlægget",$LA);
-    &kcenterpageheader("Tak!");
     &beginwhitebox("Tak!","75%",'center');
     print "Dit indlæg er blevet optaget i gæstebogen.<BR><BR>";
     print "Se selv efter ved at klikke på ikonet foroven";

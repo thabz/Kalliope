@@ -39,8 +39,6 @@ $LA = $ARGV[1];
 
 &kheaderHTML("Kalliope - Om",$LA);
 
-&kcenterpageheader("Om Kalliope");
-
 beginwhitebox("","75%","left");
 
 if ($abouttext =~ /\.\./ || !(-e "data.dk/$abouttext")) {

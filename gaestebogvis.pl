@@ -27,8 +27,6 @@ chomp $ARGV[0];
 $LA = $ARGV[0];
 
 &kheaderHTML("Kalliope - Gæstebog",$LA);
-&kcenterpageheader("Gæstebog");
-
 
 print "<BR>";
 
