@@ -30,11 +30,11 @@ use Kalliope::Page;
 sub connect {
     # connect
     if (!defined $COMC_DBH) { 
-	$COMC_DBH = DBI->connect('DBI:mysql:kalliope:rlanarh114', 'kalliope', '') || connect_error();
+	$COMC_DBH = DBI->connect('DBI:mysql:kalliope:localhost', 'kalliope', '') || connect_error();
     }
     # Do status check on existing handle
     if (!$COMC_DBH->ping) {
-	$COMC_DBH = DBI->connect('DBI:mysql:kalliope:rlanarh114', 'kalliope', '') || connect_error();
+	$COMC_DBH = DBI->connect('DBI:mysql:kalliope:localhost', 'kalliope', '') || connect_error();
     }
     return $COMC_DBH;
 }
