@@ -213,7 +213,7 @@ sub addBox {
     if ($args{end}) {
 	$HTML .= $args{end};
     }
-    $HTML .= "</div>\n";
+    $HTML .= "</div><br><br>\n";
     $self->addHTML($HTML, %args);
 }
 
