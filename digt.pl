@@ -250,7 +250,7 @@ sub footnotes {
 sub linenotes {
     my $poem = shift;
     my @lines = $poem->getContentAsLineHashes;
-    my $HTML;
+    my $HTML = '<span style="font-size: 12px">';
     foreach my $line (@lines) {
 	my %line = %{$line};
 	my $text = $line{'linenote'};
@@ -259,6 +259,7 @@ sub linenotes {
 	my $num = $line{'linenum'};
 	$HTML .= "<b>$num</b> $text<br>";
     }
+    $HTML .= '</span>';
     return $HTML;
 }
 
