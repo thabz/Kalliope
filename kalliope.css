@@ -7,8 +7,7 @@ span.newsdate {
     font-weight: bold;
 //    border-bottom: 1px solid #EEBB88;
     border-bottom: 1px solid rgb(56,109,119);
-  //  color: rgb(56,109,119);
-  color: rgb(139,56,65);
+    color: rgb(56,109,119);
     display: block;
     text-align: right;
     font-size: 16px;
@@ -187,12 +186,12 @@ A.white:link, A.white:visited, A.white:active {
     color: white;
 }
 A.green:link, A.green:visited, A.green:active { 
-    color: rgb(56,109,119);
+color: rgb(139,56,65)
 
 }
 
 A.green:hover {
-    color: rgb(56,109,119);
+      color: rgb(139,56,65)
 }
 
 A.blue:link, A.blue:visited, A.blue:active { color: blue}
@@ -230,12 +229,10 @@ TD.topframetitel {
 .listeoverskrifter {
     font-family: Arial, Helvetica;
     font-size: 16px;
-    color: rgb(139,56,65);
-/*    color: rgb(99,132,173);*/
+    color: rgb(56,109,119);
     font-weight: 800;
     width: 100%;
-/*    border-bottom: 1px solid rgb(99,132,173);*/
-    border-bottom: 1px solid rgb(139,56,65);
+    border-bottom: 1px solid rgb(56,109,119);
 }
 
 legend {
