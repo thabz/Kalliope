@@ -1,0 +1,17 @@
+# angiv hvilken SHELL programmet skal udføres i
+SHELL=/bin/sh
+
+# angiv hvortil std-outputtet (ie. fejl) skal mæjles til
+MAILTO=jelle@localhost
+
+#Selve data til cron: kør rndsig.pl alle minutter hele året rundt.
+
+0 12 * * 7 mysqldump kalliope digthits digterhits dayhits hourhits| mail -s mysqldump jelle@localhost
+
+#nb. */2 * * * * $HOME/.mycron/rndsig.pl
+#starter rndsig hvert andet minut.
+
+#Formatet for denne fil findes beskrevet i man crontab(5)
+#Giv giv dette til cron ved kommandoen:
+#crontab -u jelle mycrontab 
+#Så er det lagt ind i cron, og kører også næste gang du rebooter

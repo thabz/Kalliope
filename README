@@ -1,0 +1,19 @@
+Kalliopes needs the following pieces of software to be able to run:
+
+
+** OS **
+
+Any UNIX will do.
+
+** Required software **
+
+Apache
+Perl
+MySQL
+ImageMagick
+
+** Required Perlmodules **
+
+mysql.com: DBI, Data-ShowTable, Msql-Mysql-modules
+cpan.org:  MIME::Base64, URI, CGI
+

@@ -1,0 +1,30 @@
+<H1>Ligegyldige tekniske detaljer</H1>
+<!--<IMG ALIGN="right" VALIGN="top" SRC="../../html/kalliope/gfx/babytux.jpg">-->
+Kalliope genereres dynamisk af en flok CGI scripts skrevet i Perl. Digte og al anden information indeholdt i Kalliope ligger i en <A CLASS=green HREF="http://www.mysql.com/">MySQL</A> database. Da alt genereres on-the-fly, eksisterer HTML siderne ikke i statisk form på webserveren, så jeg kan ikke tilbyde hele Kalliope som en flok HTML filer man kan browse rundt i offline. Derimod kan alle frit downloade alle CGI scipts og alt bagvedliggende data, så man kan afvikle Kalliope fra sin egen lokale webserver.
+<BR><BR>
+<TABLE ALIGN=center><TR>
+<TD ALIGN=center>
+<A HREF="var/download/kalliope-cgi.tar.gz">
+<IMG SRC="gfx/floppy.gif" BORDER=0></A><BR>
+kalliope-cgi.tar.gz
+</TD>
+<TD ALIGN=center>
+<A HREF="var/download/kalliope-html.tar.gz">
+<IMG SRC="gfx/floppy.gif" BORDER=0></A><BR>
+kalliope-html.tar.gz
+</TD>
+</TR></TABLE>
+<BR>
+Maskineriet bag Kalliope, nemlig koden og al data er frit tilgængelig og kan downloades ovenfor. Filerne vil altid indeholde de nyeste ændringer. Kalliope er programmeret i <A CLASS=green HREF="http://www.perl.com/">Perl</A> og udviklet under operativsystemet <A CLASS=green HREF="http://www.linux.org/">Linux</A>, og afvikles fra en Linux box som kører <A CLASS=green HREF="http://www.apache.org/">Apache</A> webserveren.
+<BR><BR>
+Følgende er en kort vejledning i hvordan man kan sætte Kalliope på en Linux eller anden UNIX computer med en webserver og Perl fortolkeren installeret. Denne distribution af Kalliope består af to dele, koden og data samlet i filen <B>kalliope-cgi.tar.gz</B> samt grafikken samlet i filen <B>kalliope-gfx.tar.gz</B>. Udpak tar-arkiverne i dit <B>~/public_html/</B> dir. Opret to tomme dirs med navnene <B>~/public_html/cgi/stat/</B> og <B>~/public_html/cgi/gaestebog/</B> som alle (deriblandt webserveren) har execute og write permissions til. Webserveren skal vide, at filer med <B>.pl</B> extensions er gyldige CGI scripts og at disse må udføres fra dit public_html dir. På min æske konfigureres dette i Apaches <B>/etc/httpd/conf/access.conf</B>. På din MySQL skal du oprette en database ved navn 'kalliope' som du og webserveren (httpd) har adgang til. I cgi/kalliope/admin/ ligger der scripts, som automatisk fylder indhold på databasen. Dette burde være alt, hvad der skal til. 
+<BR><BR>
+Man burde kunne køre Kalliope under en webserver til andre operativsystemer, såsom Microsofts berygtede produkter, men det kræver nok nogle få ændringer hist og her og alle vegne. 
+<BR><BR>
+Jeg yder <I>ingen</I> support på Kalliopes kode, og filerne indeholder ikke yderligere vejledning.
+<BR><BR>
+<H1>GNU Public License</H1>
+Kalliopes kildetekst er omfattet af <A CLASS=green HREF="kabout.pl?licence.html?dk">GNU Public License</A>. Dette betyder i korte træk, at man må bruge kildeteksten til hvad man ønsker og at man må udvikle videre på Kalliope, så længe at man også selv lader eens ændringer være frit tilgængelige samt omfattet af GNU Public License. Man må endda også tjene penge på produkter baseret på Kalliope, så længe kildeteksten forbliver frit tilgængelig.
+<BR><BR>
+Kalliope er 100% udviklet under <A CLASS=green HREF="http://www.linux.com/">Linux</A>. Linux er et gratis operativsystem baseret på UNIX. Jeg har benyttet mig af <A CLASS=green HREF="http://www.xemacs.org/">Emacs</A>, <A CLASS=green HREF="http://www.vim.org/">Vim</A>, <A CLASS=green HREF="http://www.perl.com">Perl 5</A> og <A CLASS=green HREF="http://www.gimp.org/">Gimp</A>.<BR>
+<BR><BR>

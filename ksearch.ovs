@@ -1,0 +1,137 @@
+$ovs1{"dk"}="Kalliope - søgning";
+$ovs1{"uk"}="Kalliope - search";
+$ovs1{"fr"}="Kalliope - recherche";
+$ovs1{"de"}="Kalliope - suchen";
+
+$ovs2{"dk"}="Søgetermer:";
+$ovs2{"uk"}="Terms to search";
+$ovs2{"fr"}="?";
+$ovs2{"de"}="?";
+
+$ovs3{"dk"}="Digter";
+$ovs3{"uk"}="Poet";
+$ovs3{"fr"}="Poète";
+$ovs3{"de"}="Dichter";
+
+$ovs4{"dk"}="Alle digtere";
+$ovs4{"uk"}="All poets";
+$ovs4{"fr"}="Tout les poètes";
+$ovs4{"de"}="?";
+
+$ovs5{"dk"}="Søg både i titler og indhold";
+$ovs5{"uk"}="Search both titles and contents";
+$ovs5{"fr"}="?";
+$ovs5{"de"}="?";
+
+$ovs6{"dk"}="Søg kun på digtindhold";
+$ovs6{"uk"}="Search body of poems";
+$ovs6{"fr"}="?";
+$ovs6{"de"}="?";
+
+$ovs7{"dk"}="Søg kun titler";
+$ovs7{"uk"}="Search only titles";
+$ovs7{"fr"}="?";
+$ovs7{"de"}="?";
+
+$ovs8{"dk"}="Søgeordene behøver ikke være i samme linie, men skal findes indenfor samme digt";
+$ovs8{"uk"}=" The words you are searching for don't have to be on the same line, but within the same poem";
+$ovs8{"fr"}="?";
+$ovs8{"de"}="?";
+
+$ovs9{"dk"}="Hjælp til avanceret søgning";
+$ovs9{"uk"}="Help with advanced search";
+$ovs9{"fr"}="?";
+$ovs9{"de"}="?";
+
+$ovs10{"dk"}="Søg i Kalliope";
+$ovs10{"uk"}="Search Kalliope";
+$ovs10{"fr"}="?";
+$ovs10{"de"}="?";
+
+$ovs11{"dk"}="Nulstil";
+$ovs11{"uk"}="Reset";
+$ovs11{"fr"}="?";
+$ovs11{"de"}="?";
+
+$ovs12{"dk"}="Kalliope - Resultat af søgning";
+$ovs12{"uk"}="Kalliope - Searchresult";
+$ovs12{"fr"}="?";
+$ovs12{"de"}="?";
+
+$ovs13{"dk"}="Søgeresultat";
+$ovs13{"uk"}="Searchresult";
+$ovs13{"fr"}="?";
+$ovs13{"de"}="?";
+
+$ovs14{"dk"}="Søgning efter";
+$ovs14{"uk"}="Search for";
+$ovs14{"fr"}="?";
+$ovs14{"de"}="?";
+
+$ovs15{"dk"}="i både digt-titler og -indhold";
+$ovs15{"uk"}="in both poems titles and bodys";
+$ovs15{"fr"}="?";
+$ovs15{"de"}="?";
+
+$ovs16{"dk"}="i digtindhold";
+$ovs16{"uk"}="in poems bodys";
+$ovs16{"fr"}="?";
+$ovs16{"de"}="?";
+
+$ovs17{"dk"}="i digt-titler";
+$ovs17{"uk"}="in poems titles";
+$ovs17{"fr"}="?";
+$ovs17{"de"}="?";
+
+$ovs18{"dk"}="hos ";
+$ovs18{"uk"}="by ";
+$ovs18{"fr"}="?";
+$ovs18{"de"}="?";
+
+$ovs19{"dk"}="tog $time sekunder og gav 1 resultat:";
+$ovs19{"uk"}="took $time seconds and gave 1 result:";
+$ovs19{"fr"}="?";
+$ovs19{"de"}="?";
+
+$ovs20{"dk"}="tog $time sekunder og gav $soegeresultat resultater:";
+$ovs20{"uk"}="took $time seconds and gave $soegeresultat results:";
+$ovs20{"fr"}="?";
+$ovs20{"de"}="?";
+
+$ovs21{"dk"}="gav intet resultat.";
+$ovs21{"uk"}="gave no result.";
+$ovs21{"fr"}="?";
+$ovs21{"de"}="?";
+
+$ovs22{"dk"}="alle digtere";
+$ovs22{"uk"}="all poets";
+$ovs22{"fr"}="?";
+$ovs22{"de"}="?";
+
+
+$ovs0{"uk"} = $ovs0{"fr"} = $ovs0{"de"} = $ovs0{"dk"};
+$ovs1{"uk"} = $ovs1{"fr"} = $ovs1{"de"} = $ovs1{"dk"};
+$ovs2{"uk"} = $ovs2{"fr"} = $ovs2{"de"} = $ovs2{"dk"};
+$ovs3{"uk"} = $ovs3{"fr"} = $ovs3{"de"} = $ovs3{"dk"};
+$ovs4{"uk"} = $ovs4{"fr"} = $ovs4{"de"} = $ovs4{"dk"};
+$ovs5{"uk"} = $ovs5{"fr"} = $ovs5{"de"} = $ovs5{"dk"};
+$ovs6{"uk"} = $ovs6{"fr"} = $ovs6{"de"} = $ovs6{"dk"};
+$ovs7{"uk"} = $ovs7{"fr"} = $ovs7{"de"} = $ovs7{"dk"};
+$ovs8{"uk"} = $ovs8{"fr"} = $ovs8{"de"} = $ovs8{"dk"};
+$ovs9{"uk"} = $ovs9{"fr"} = $ovs9{"de"} = $ovs9{"dk"};
+$ovs10{"uk"} = $ovs10{"fr"} = $ovs10{"de"} = $ovs10{"dk"};
+$ovs11{"uk"} = $ovs11{"fr"} = $ovs11{"de"} = $ovs11{"dk"};
+$ovs12{"uk"} = $ovs12{"fr"} = $ovs12{"de"} = $ovs12{"dk"};
+$ovs13{"uk"} = $ovs13{"fr"} = $ovs13{"de"} = $ovs13{"dk"};
+$ovs14{"uk"} = $ovs14{"fr"} = $ovs14{"de"} = $ovs14{"dk"};
+$ovs15{"uk"} = $ovs15{"fr"} = $ovs15{"de"} = $ovs15{"dk"};
+$ovs16{"uk"} = $ovs16{"fr"} = $ovs16{"de"} = $ovs16{"dk"};
+$ovs17{"uk"} = $ovs17{"fr"} = $ovs17{"de"} = $ovs17{"dk"};
+$ovs18{"uk"} = $ovs18{"fr"} = $ovs18{"de"} = $ovs18{"dk"};
+$ovs19{"uk"} = $ovs19{"fr"} = $ovs19{"de"} = $ovs19{"dk"};
+$ovs20{"uk"} = $ovs20{"fr"} = $ovs20{"de"} = $ovs20{"dk"};
+$ovs21{"uk"} = $ovs21{"fr"} = $ovs21{"de"} = $ovs21{"dk"};
+$ovs22{"uk"} = $ovs22{"fr"} = $ovs22{"de"} = $ovs22{"dk"};
+
+
+1;
