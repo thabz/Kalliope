@@ -48,6 +48,9 @@ sub insert {
   	    while ($hay =~ s/<xref\s+digt="([^"]+)"\s*\/>//si) {
 	        $sthins->execute($longdid,$1);
 	    }
+  	    while ($hay =~ s/<xref\s+poem="([^"]+)"\s*\/>//si) {
+	        $sthins->execute($longdid,$1);
+	    }
 	    while ($hay =~ s/<xref\s+bibel="([^"]+)"\s*\/>//si) {
 	        my $tmp = $1;
  	        $tmp =~ s/,.*$//;
@@ -60,7 +63,7 @@ sub insert {
 sub create {
     $dbh->do("CREATE TABLE xrefs ( 
 	         fromid varchar(40) NOT NULL REFERENCES digte(longdid) ON DELETE CASCADE,
-	         toid varchar(40) NOT NULL REFERENCES digte(longdid) ON DELETE RESTRICT)");
+	         toid varchar(40) NOT NULL) -- REFERENCES digte(longdid) ON DELETE RESTRICT)");
    $dbh->do(q/CREATE INDEX xrefs_fromid ON xrefs(fromid)/);
    $dbh->do(q/CREATE INDEX xrefs_toid ON xrefs(toid)/);
    $dbh->do(q/GRANT SELECT ON TABLE xrefs TO "www-data"/);
