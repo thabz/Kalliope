@@ -221,26 +221,31 @@ function openTimeContext(year) {
 
 EOF
  
+    print '<TABLE HEIGHT="100%" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0>';
+    
     if (my $crumbs = $self->_constructBreadcrumbs) {
+        print '<TR><TD COLSPAN=2>';
 	print '<DIV STYLE="background-color: #e0e0e0; padding: 1px">';
 	print $crumbs;
 	print '</DIV>';
+	print '</TD></TR>';
     }
 
     # Head
-    print '<TABLE HEIGHT=70 BGCOLOR="black" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>';
+    print '<TR><TD COLSPAN=2 VALIGN="top">';
+    print '<TABLE HEIGHT="100%" BGCOLOR="black" WIDTH="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><TR BGCOLOR="black" HEIGHT="70">';
     print '<TD WIDTH="100%" CLASS="maintitle">'.$self->titleAsHTML.'</TD>';
     print '<TD ROWSPAN=2 VALIGN="top">'.$self->thumbIMG.'</TD></TR>';
 #    print '</TR>';
     print '<TR><TD ALIGN="right" CLASS="navigation">'.$self->_navigationSub.'</TD>';
     print '</TR></TABLE>';
+    print '</TD></TR>';
 
     # Body
-    print '<TABLE WIDTH="100%" HEIGHT="100%" CELLPADDING=0 CELLSPACING=0 BORDER=0><TR>';
-    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" STYLE="padding-top: 30px" ALIGN="center">'.$self->_navigationMain.'<BR><BR>';
-    print $self->langSelector;
+    print '<TR>';
+#    print '<TABLE WIDTH="100%" HEIGHT="100%" CELLPADDING=0 CELLSPACING=0 BORDER=0><TR>';
+    print '<TD BACKGROUND="gfx/sidebar.jpg" CLASS="navigation" WIDTH="100" VALIGN="top" ALIGN="center">'.$self->_navigationMain.'<BR><BR>';
     print '<BR><BR>';
-    print '<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT STYLE="width: 80px" NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><BR><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free"></FORM>';
 
     print '</TD><TD VALIGN="top">';
     print '<TABLE WIDTH="100%" HEIGHT="100%"><TR>';
@@ -253,8 +258,20 @@ EOF
         }
     }
     print '</TR></TABLE>';
+    print '</TD></TR>';
+
+    # Foot
+    print '<TR><TD COLSPAN=2 HEIGHT="70" BGCOLOR="black">';
+
+    print '<TABLE><TR><TD>';
+    print $self->langSelector;
+    print '</TD><TD>';
+    print '<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT STYLE="width: 80px" NAME="needle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "><BR><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free"></FORM>';
     print '</TD></TR></TABLE>';
-    print '</BODY></HTML>';
+
+    print '</TD></TR>';
+    
+    print '</TABLE></BODY></HTML>';
 }
 
 #
