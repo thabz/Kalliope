@@ -176,7 +176,7 @@ sub listpics {
     my @poets;
 
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT fid FROM fnavne WHERE sprog=? AND foedt != '' AND foedt != '?' AND thumb = 1");
+    my $sth = $dbh->prepare("SELECT fid FROM fnavne WHERE type='poet' AND sprog=? AND foedt != '' AND foedt != '?' AND thumb = 1");
     $sth->execute($LA);
     while (my $fid = $sth->fetchrow_array) {
 	my $poet = new Kalliope::Person(fid => $fid);
@@ -241,19 +241,19 @@ sub listpop {
     my $total;
     my $endHTML = '';
     my $HTML = '<TABLE CLASS="oversigt" WIDTH="100%" CELLSPACING=0>';
-    $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Navn</TH><TH ALIGN="right">Hits</TH><TH ALIGN="right">Senest</TH></TR>';
+    $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Navn</TH><TH ALIGN="right">Hits&nbsp;&nbsp;</TH><TH ALIGN="right">Senest</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
 	my $class = $i % 2 ? '' : ' CLASS="darker" ';
-	$HTML .= qq|<TR $class><TD>|.$i++.'.</TD>';
-	$HTML .= '<TD><A HREF="ffront.cgi?fhandle='.$h->{fhandle}.'">'.$h->{fornavn}.' '.$h->{efternavn}.'<FONT COLOR=#808080> ('.$h->{foedt}.'-'.$h->{doed}.')</FONT></A></TD>';
-	$HTML .= '<TD ALIGN=right>'.$h->{'hits'}.'</TD>';
-	$HTML .= '<TD ALIGN=right>'.Kalliope::shortdate($h->{'lasttime'}).'</TD>';
+	$HTML .= qq|<TR $class><TD ALIGN="right">|.$i++.'.</TD>';
+	$HTML .= '<TD WIDTH="100%"><A HREF="ffront.cgi?fhandle='.$h->{fhandle}.'">'.$h->{fornavn}.' '.$h->{efternavn}.'<FONT COLOR=#808080> ('.$h->{foedt}.'-'.$h->{doed}.')</FONT></A></TD>';
+	$HTML .= '<TD ALIGN="right">'.$h->{'hits'}.'&nbsp;&nbsp;</TD>';
+	$HTML .= '<TD ALIGN="right" NOWRAP>'.Kalliope::shortdate($h->{'lasttime'}).'</TD>';
 	$total += $h->{'hits'};
     }
     if ($limit != -1) {
         $endHTML = qq|<A class="more" HREF="poets.cgi?list=pop&limit=-1&sprog=$LA">Se hele listen...</A>|;
     } else {
-        $HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD></TR>";
+        $HTML .= qq|<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN="right">$total</TD></TR>|;
     }
     $HTML .= '</TABLE>';
     return ($HTML,$endHTML);
