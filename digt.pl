@@ -205,7 +205,7 @@ sub keywords {
         $HTML = 'Dette digt har endnu ingen nøgleord tilknyttet.';
     }
     my $longdid = $poem->longdid;
-    $HTML .= qq|<br><BR>Tilføj nøgleord<BR><FORM METHOD="get" NAME="addkeyword"><INPUT TYPE="text" CLASS="inputtext" NAME="newkeywords"><INPUT TYPE="hidden" NAME="longdid" VALUE="$longdid"><INPUT TYPE="submit" CLASS="button" VALUE="Tilføj"> |;
+    $HTML .= qq|<br><BR>Tilføj nøgleord<BR><FORM METHOD="get"><INPUT TYPE="text" CLASS="inputtext" NAME="newkeywords"><INPUT TYPE="hidden" NAME="longdid" VALUE="$longdid"><INPUT TYPE="submit" CLASS="button" VALUE="Tilføj"> |;
     $HTML .= Kalliope::Help->new('keywordadd')->linkAsHTML;
     $HTML .= '</FORM>';
     return $HTML;
