@@ -31,7 +31,7 @@ use strict;
 my $showAllNews = CGI::param('showall') eq 'yes' ? 1 : 0;
 
 my $page = new Kalliope::Page (
-		title => 'Velkommen til den totalt fede webstil!',
+		title => 'Kalliope - lækker og sommerbrun...',
                 pagegroup => 'welcome',
 		changelangurl => 'poets.cgi?list=az&sprog=XX',
                 page => 'news',
@@ -70,9 +70,9 @@ sub latestNews {
 	Kalliope::buildhrefs(\$line);
 	if ($showAllNews) {
 	    $line =~ s/^\#//;
-	    $HTML .= $line;
+	    $HTML .= qq|<p align="justify">$line</p>|;
 	} elsif ($line =~ /^[^#]/) {
-	    $HTML .= $line;
+	    $HTML .= qq|<p align="justify">$line</p>|;
 	}
     }
     close (NEWS);

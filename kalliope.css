@@ -1,4 +1,15 @@
 
+span.newsdate {
+    font-family: Arial, Helvetica;
+    font-weight: bold;
+    border-bottom: 1px solid #EEBB88;
+    color: #AA7744;
+    display: block;
+    text-align: right;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
 .oversigt TH {
   font-family: Arial, Helvetica;
   border-bottom: 1px solid #AA7744;
