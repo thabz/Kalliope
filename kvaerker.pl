@@ -210,8 +210,8 @@ if ($mode eq 'titel') {
     my $i = 1;
     my $total;
     my $aar;
-    $HTML .= '<TABLE width="100%">';
-    $HTML .= '<TR><TH></TH><TH>Titel</TH><TH>Hits</TH><TH>Senest</TH></TR>';
+    $HTML .= '<TABLE CLASS="oversigt" width="100%" CELLSPACING=0>';
+    $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Titel</TH><TH ALIGN="right">Hits</TH><TH ALIGN="right">Senest</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
 	$aar = $h->{'aar'} ne '?' ? ' ('.$h->{'aar'}.')' : '';
 	$HTML .= '<TR><TD>'.($i++).'.</TD>';

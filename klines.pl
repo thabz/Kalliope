@@ -114,8 +114,8 @@ $sth = $dbh->prepare("SELECT fornavn, efternavn, fnavne.fhandle, digte.longdid, 
 $sth->execute($LA);
 
 my $printed;
-$HTML = "<TABLE>";
-$HTML .= "<TR><TH></TH><TH>Titel</TH><TH>Hits</TH><TH>Senest</TH><TR>\n";
+$HTML = '<TABLE CLASS="oversigt" WIDTH="100%" CELLSPACING=0>';
+$HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Titel</TH><TH ALIGN="right">Hits</TH><TH ALIGN="right">Senest</TH><TR>';
 while (my $f = $sth->fetchrow_hashref) {
     $printed++;
     $HTML .= "<TR><TD ALIGN=right>$printed.</TD>";

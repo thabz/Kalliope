@@ -211,8 +211,8 @@ sub listflittige {
     my $HTML;
     my $total;
     my $i = 1;
-    $HTML .= '<TABLE WIDTH="100%">';
-    $HTML .= '<TR><TH></TH><TH>Navn</TH><TH>Digte</TH></TR>';
+    $HTML .= '<TABLE CLASS="oversigt" CELLSPACING=0 WIDTH="100%">';
+    $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Navn</TH><TH ALIGN="right">Digte</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
         my $poet = new Kalliope::Person (fhandle => $h->{'fhandle'});
 	$HTML .= '<TR><TD>'.$i++.'.</TD>';
@@ -239,8 +239,8 @@ sub listpop {
     my $i = 1;
     my $total;
     my $endHTML = '';
-    my $HTML = '<TABLE WIDTH="100%">';
-    $HTML .= '<TR><TH></TH><TH>Navn</TH><TH>Hits</TH><TH>Senest</TH></TR>';
+    my $HTML = '<TABLE CLASS="oversigt" WIDTH="100%" CELLSPACING=0>';
+    $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Navn</TH><TH ALIGN="right">Hits</TH><TH ALIGN="right">Senest</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
 	$HTML .= '<TR><TD>'.$i++.'.</TD>';
 	$HTML .= '<TD><A HREF="fvaerker.pl?'.$h->{fhandle}.'?'.$LA.'">'.$h->{fornavn}.' '.$h->{efternavn}.'<FONT COLOR=#808080> ('.$h->{foedt}.'-'.$h->{doed}.')</FONT></A></TD>';
