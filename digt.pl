@@ -169,8 +169,12 @@ sub poem {
     $HTML .= '<SPAN CLASS="digtoverskrift"><I>'.$poem->title."</I></SPAN><BR>";
     $HTML .= '<SPAN CLASS="digtunderoverskrift">'.$poem->subtitle.'</SPAN><BR>' if $poem->subtitleAsHTML;
     $HTML .= '<BR>';
-    
+
+   
+    $HTML .= '<TABLE CELLPADDING=0 CELLSPACING=0><TR><TD NOWRAP>' unless $poem->isProse;
     $HTML .= $poem->content($biblemark);
+    $HTML .= '</TD></TR></TABLE>' unless $poem->isProse;
+
     $HTML =~ s/ - / &mdash; /g;
     $HTML =~ s/^- /&mdash; /gm;
     $HTML =~ s/ -<br>/ &mdash;<br>/gi;
