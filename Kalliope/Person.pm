@@ -168,7 +168,7 @@ sub clickableNameGreen {
 
 sub poemCount {
     my $self = shift;
-    my $sth = $dbh->prepare("SELECT count(*) FROM digte WHERE fid = ?");
+    my $sth = $dbh->prepare("SELECT count(*) FROM digte WHERE fid = ? AND layouttype = 'digt' AND afsnit = 0");
     $sth->execute($self->fid);
     my ($count) = $sth->fetchrow_array;
     return $count;
