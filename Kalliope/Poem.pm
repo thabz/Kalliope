@@ -468,7 +468,7 @@ sub getSearchResultEntry {
     foreach my $ne (@needle) {
 	$ne .= '\W' unless $ne =~ /\*$/;
 	$ne =~ s/\*//;
-	my ($a,$b,$c) = $content =~ /(.{0,30})(\W?$ne)(.{0,30})/si;
+	my ($a,$b,$c) = $content =~ /(.{0,30})(\W$ne)(.{0,30})/si;
 	$a =~ s/\n+/ $slash /g if $a;
 	$c =~ s/\n+/ $slash /g if $b;
 	$match .= "...$a<b>$b</b>$c...<BR>" if $b;
