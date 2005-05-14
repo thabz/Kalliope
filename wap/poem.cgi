@@ -49,6 +49,7 @@ sub renderPoem {
     $text =~ s/<[^>]+>//g;
     $text =~ s/\n/<br\/>/g;
     $text =~ s/&mdash;/-/g;
+    $text =~ s/&iuml;/ï/g;
 
     $HTML .= $text;
     return $HTML;
