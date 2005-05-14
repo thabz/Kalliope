@@ -30,16 +30,16 @@ sub addWML {
 sub print {
     $self = shift;
     my $crumbs = $self->_constructBreadcrumbs;
-    my $titleForWindow = $self->{'title'}." - Kalliope";
+    my $titleForWindow = $self->{'title'};
     print "Content-type: text/vnd.wap.wml\n\n";
     print '<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">';
     print <<"EOF";
 <wml>
 <card title="$titleForWindow">
 $$self{wml}
-<br/>
-<hr/>
+<p>
 <small>$crumbs</small>
+</p>
 </card>
 </wml>
 EOF

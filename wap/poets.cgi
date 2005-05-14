@@ -16,11 +16,13 @@ my $page = new Kalliope::Page::WML(
 
 my $WML = '<p>Oversigt over digtere.</p>';
 
+
 my @poets = Kalliope::PersonHome::findByLang('dk');
-print STDERR "Antal: ".@poets;
+$WML .= '<p>';
 foreach my $poet (@poets) {
     $WML .= '<a href="poet.cgi?fhandle='.$poet->fhandle.'">'.$poet->name.'</a><br/>';
 }
+$WML .= '</p>';
 
 $page->addWML($WML);
 $page->print;
