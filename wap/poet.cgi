@@ -20,7 +20,7 @@ my $page = new Kalliope::Page::WML(
 
 my $WML = '<p>';
 #$WML .= '<a href="poems.cgi?fhandle='.$poet->fhandle.'">Digte</a><br/>';
-$WML .= '<img src="../gfx/icons/works-w16.png" alt="Værker"/><a href="works.cgi?fhandle='.$poet->fhandle.'">Værker</a> ';
+$WML .= '<img src="gfx/works-w16.png" alt="Værker"/><a href="works.cgi?fhandle='.$poet->fhandle.'">Værker</a> ';
 $WML .= '</p>';
 $page->addWML($WML);
 $page->print;
