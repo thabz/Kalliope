@@ -24,9 +24,11 @@ my $WML = '<p>';
 my @works = $poet->poeticalWorks;
 foreach my $work (@works) {
     if ($work->hasContent) {
-	$WML .= '<a href="toc.cgi?fhandle='.$fhandle."&amp;vhandle=".$work->vhandle.'">'.$work->title.' '.$work->parenthesizedYear.'</a>';
+	$WML .= '<img src="../gfx/icons/book-h16.png" alt=""/>';
+	$WML .= '<a href="toc.cgi?fhandle='.$fhandle."&amp;vhandle=".$work->vhandle.'">'.$work->title.'</a> '.$work->parenthesizedYear;
     } else {
-	$WML .= ''.$work->title.' '.$work->parenthesizedYear;
+	$WML .= '<img src="../gfx/icons/book-na-h16.png" alt=""/>';
+	$WML .= $work->title.' '.$work->parenthesizedYear;
     }
     $WML .= '<br/>';
 }

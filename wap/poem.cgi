@@ -38,10 +38,17 @@ $page->print;
 sub renderPoem {
     my $poem = shift;
     my $HTML = '<b>'.$poem->topTitle.'</b>';
+    if ($poem->subtitleAsHTML) {
+	my $subtitle = $poem->subtitle;
+	$subtitle =~ s/<BR>/<br\/>/g;
+	$HTML .= "<br/>$subtitle";
+    }
+    $HTML .= '<br/>';
     
     $text = $poem->content(layout => 'raw');
     $text =~ s/<[^>]+>//g;
     $text =~ s/\n/<br\/>/g;
+    $text =~ s/&mdash;/-/g;
 
     $HTML .= $text;
     return $HTML;

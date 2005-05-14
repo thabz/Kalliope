@@ -55,6 +55,7 @@ sub renderSection {
 	    ($num) = $tit =~ /<num>(.*?)<\/num>/;
 	    $tit =~ s/<num>.*?<\/num>//;
 	}
+	$tit =~ s/&mdash;/-/g;
 	if ($d->{'type'} eq 'section') {
 	    $HTML .= qq|<b>$tit</b><br/>|;
    	    $HTML .= renderSection($vid,$d->{'did'},$depth+1);
