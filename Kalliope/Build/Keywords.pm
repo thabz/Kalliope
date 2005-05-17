@@ -118,6 +118,7 @@ sub create {
     $dbh->do(q/CREATE INDEX keywords_images_keyid ON keywords_images(keyword_id)/);
    $dbh->do(q/GRANT SELECT ON TABLE keywords TO "www-data"/);
    $dbh->do(q/GRANT SELECT ON TABLE keywords_images TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE keywords_relation TO "www-data"/);
 }
 
 sub drop {
