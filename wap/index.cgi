@@ -7,12 +7,12 @@ use Kalliope;
 use Kalliope::Page::WML;
 
 print STDERR CGI::user_agent();
-print STDERR "\n";
+#print STDERR "\n";
 
-@accepted = CGI::Accept();
-foreach my $type (@accepted) {
-   print STDERR $type."\n";
-}
+#@accepted = CGI::Accept();
+#foreach my $type (@accepted) {
+#   print STDERR $type."\n";
+#}
 
 
 my $page = new Kalliope::Page::WML( title => 'Kalliope' );

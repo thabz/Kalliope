@@ -14,7 +14,7 @@ push @crumbs, ['Digtere','poets.cgi'];
 push @crumbs, [$poet->name,""];
 
 my $page = new Kalliope::Page::WML( 
-	title => $poet->efternavn.' forside',
+	title => $poet->name,
 	crumbs => \@crumbs
        	);
 
