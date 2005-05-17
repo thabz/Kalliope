@@ -49,6 +49,7 @@ sub create {
 	      ");
    $dbh->do(q/CREATE INDEX biblio_fhandle ON biblio(fhandle)/);
    $dbh->do(q/CREATE INDEX biblio_bibid ON biblio(bibid)/);
+   $dbh->do(q/GRANT SELECT ON TABLE biblio TO "www-data"/);
 }
 
 sub drop {
