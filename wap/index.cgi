@@ -7,7 +7,7 @@ use Kalliope;
 use Kalliope::Page::WML;
 
 print STDERR CGI::user_agent();
-print "\n";
+print STDERR "\n";
 
 @accepted = CGI::Accept();
 foreach my $type (@accepted) {
@@ -17,8 +17,9 @@ foreach my $type (@accepted) {
 
 my $page = new Kalliope::Page::WML( title => 'Kalliope' );
 my $WML = '<p>Velkommen til Kalliopes mobiludgave.</p>';
-$WML .= '<p><img src="gfx/poet-w16.gif" alt="Digtere"/><a href="poets.cgi">Digtere</a></p>';
-$WML .= '<p><img src="gfx/keywords-w16.gif" alt="Om Kalliope"/><a href="about.cgi">Om Kalliope</a></p>';
-#$WML .= '<p><a href="test.cgi">Test</a></p>';
+$WML .= '<p>';
+$WML  .= '<img align="middle" width="16" height="21" src="gfx/poet-w16.gif" alt=""/><a href="poets.cgi">Digtere</a><br/>';
+$WML .= '<img align="middle" width="16" height="17" src="gfx/keywords-w16.gif" alt=""/><a href="about.cgi">Om Kalliope</a>';
+$WML .= '</p>';
 $page->addWML($WML);
 $page->print;
