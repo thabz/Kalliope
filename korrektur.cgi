@@ -57,9 +57,9 @@ if (defined param('korrektur')) {
     $smtp->quit;
 
     # Database backup ---------------
-    my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("INSERT INTO korrektur (date,longdid,korrektur) VALUES (?,?,?)");
-    $sth->execute(time,$poem->longdid,param('korrektur'));
+#my $dbh = Kalliope::DB->connect;
+#    my $sth = $dbh->prepare("INSERT INTO korrektur (date,longdid,korrektur) VALUES (?,?,?)");
+#    $sth->execute(time,$poem->longdid,param('korrektur'));
     $HTML .= "Tak for din rettelse til »".$poem->linkTitle."«! <BR><BR>En mail er automatisk sendt til $MAILTAINER_EMAIL, som vil kigge på sagen.\n";
 } else {
     my $longdid = $poem->longdid;
