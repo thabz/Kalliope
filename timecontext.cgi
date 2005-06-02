@@ -39,8 +39,8 @@ my $toYear = $year+$SPAN;
 my $sth = $dbh->prepare("SELECT * FROM timeline WHERE year >= ? AND year <= ? ORDER BY year ASC");
 $sth->execute($fromYear,$toYear);
 
-my $HTML;
-my $picHTML;
+my $HTML = '';
+my $picHTML = '';
 while (my $h = $sth->fetchrow_hashref) {
     if ($h->{'type'} eq 'picture') {
         my $k;
