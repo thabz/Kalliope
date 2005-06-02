@@ -198,7 +198,8 @@ sub getCrumbs {
 
 sub allVids {
     my $self = shift;
-    my @vids = split /,/,$self->{'workslist'};
+    my $workslist = $self->{'workslist'} || '';
+    my @vids = split /,/,$workslist;
     return \@vids;
 }
 
