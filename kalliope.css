@@ -264,7 +264,7 @@ td.breadcrumbs {
 
 td.navigation {
     color: rgb(117,106,89); 
-    background: url('gfx/frames/left.gif');
+    background: url(gfx/frames/left.gif);
     width: 138px;
     vertical-align: top;
     height: 320px;
@@ -298,7 +298,7 @@ td.top {
     font-weight: normal;
     font-family: Arial, Helvetica;
     padding-left: 10px;
-    background: url('gfx/frames/paper-dark.png');
+    background: url(gfx/frames/paper-dark.png);
     background-color: #e5dcb5;
     text-align: left;	   
 }
@@ -324,7 +324,7 @@ a.more {
    font-size: 11px;
 }
 a.more:after {
-   content: url("gfx/right.gif");
+   content: url(gfx/right.gif);
 }
 
 /* Omkringliggende div */
@@ -369,7 +369,7 @@ td.submenu {
     font-size: 11px;
     color: #d0d0d0;
     height: 2px;
-    background: url('gfx/frames/small-menu-blank.gif');
+    background: url(gfx/frames/small-menu-blank.gif);
     vertical-align: top;
 }
 
