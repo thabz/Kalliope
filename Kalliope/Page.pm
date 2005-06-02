@@ -270,7 +270,7 @@ EOF
 	print q|<tr>|;
 	print q|<td width="100%" height="1" class="submenu"></td>|;   
 	print '<td class="submenu"><img alt="" src="gfx/frames/small-menu-left.gif"></td>';
-	print qq|<td class="submenu" style="background: url('gfx/frames/small-menu-middle.gif')" nowrap>|;
+	print qq|<td class="submenu" style="background: url(gfx/frames/small-menu-middle.gif)" nowrap>|;
 	print $self->_navigationSub;
 	print '</td>';
 	print '<td class="submenu"><img alt="" src="gfx/frames/small-menu-right.gif"></td>';
