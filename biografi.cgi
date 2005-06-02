@@ -131,7 +131,7 @@ if ($#events > 0) {
     $HTML .= '<TABLE>';
     my $last = 0;
     foreach my $e (sort { $a->getYear cmp $b->getYear } @events) {
-        my $yearForDisplay = $last != $e->getYear ? $e->getYear : '';
+        my $yearForDisplay = $last ne $e->getYear ? $e->getYear : '';
         
 	$HTML .= qq|<TR><TD CLASS="blue" VALIGN="top">$yearForDisplay&nbsp;</TD>|;
 	$HTML .= '<TD VALIGN="top" class="gray">';
