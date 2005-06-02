@@ -128,7 +128,7 @@ if ($mode eq 'titel') {
 	    $HTML .= "<TR><TD COLSPAN=2><BR><DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR></TD></TR>";
 	}
 
-        my $liVal = $vaerkaar != $last3 ? "$vaerkaar" : '';
+        my $liVal = $vaerkaar ne $last3 ? "$vaerkaar" : '';
 	$last3 = $vaerkaar;
         $HTML .= qq|<TR><TD NOWRAP>$liVal</TD>|;
 	$HTML .= '<TD>&nbsp;<A HREF="fvaerker.pl?fhandle='.$$v{fhandle}.'">'.$$v{fornavn}.' '.$$v{efternavn}.'</A>: ';
