@@ -77,7 +77,7 @@ my %works = map {$_->vid => $_} $poet->poeticalWorks;
 
 my @f;
 my $extraSQL = $mode == 1 ? "AND digte.tititel IS NOT NULL" : "AND digte.foerstelinie IS NOT NULL";
-my $sth = $dbh->prepare("SELECT longdid, digte.tititel as titel, digte.foerstelinie, digte.vid,digte.type as type FROM digte, vaerker WHERE digte.fhandle = ? AND digte.vid = vaerker.vid $extraSQL");
+my $sth = $dbh->prepare("SELECT longdid, digte.tititel as titel, digte.foerstelinie, digte.vid,digte.type as type FROM digte, vaerker WHERE digte.fhandle = ? AND digte.vid = vaerker.vid AND digte.type = 'poem' $extraSQL");
 $sth->execute($poet->fhandle);
 while (my $f = $sth->fetchrow_hashref) { 
     $f->{'sort'} = $mode == 1 ? $f->{'titel'} : $f->{'foerstelinie'};
