@@ -91,12 +91,13 @@ Kalliope::Build::Keywords::clean();
 Kalliope::Build::Keywords::insert();
 &log("Done");
 
-$rc = $dbh->do("drop table keywords_relation");
+$rc = $dbh->do("DROP TABLE keywords_relation");
 $rc = $dbh->do("CREATE TABLE keywords_relation ( 
               keywordid int NOT NULL,
 	      otherid int NOT NULL,
 	      othertype VARCHAR(20), -- ENUM('digt','person','biografi','hist','keyword','vaerk') NOT NULL,
 	      UNIQUE(keywordid,otherid,othertype))");
+   $dbh->do(q/GRANT SELECT ON TABLE keywords_relation TO "www-data"/);
 
 $sthkeyword = $dbh->prepare("INSERT INTO keywords_relation (keywordid,otherid,othertype) VALUES (?,?,?)");
 
