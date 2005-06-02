@@ -117,9 +117,11 @@ if ($mode eq 'titel') {
 
     my $HTML = '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>';
     #Udskriv titler på vaerker
-    my ($last,$last2,$last3); 
+    my ($last,$last2,$last3) = (0,0,0);  
+    
     while (my $v = $sth->fetchrow_hashref) {
         my $vaerkaar = $v->{'aar'};
+	$vaerkaar =~ s/[^0-9].*$//;
 	if (int("$vaerkaar") - int("$last") >= 10) {
 	    $last = $vaerkaar - $vaerkaar%10;
 	    $last2 = $last+9;
