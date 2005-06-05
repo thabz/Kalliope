@@ -347,6 +347,25 @@
   <works>oedip,1804,1826,andre</works>
 </person>
 
+<person id="novalis" lang="de" type="poet">
+  <name>
+    <firstname></firstname>
+    <lastname>Novalis</lastname>
+    <realname>Georg Friedrich Philipp Freiherr von Hardenberg</realname>
+  </name>
+  <period>
+    <born>
+      <date>1772-05-02</date>
+      <place>Oberwiederstedt, Harz</place>
+    </born>
+    <dead>
+      <date>1801-03-25</date>
+      <place>Weiﬂenfels</place>
+    </dead>
+  </period>
+  <works>1797,1798,1802,1802h</works>
+</person>
+
 <person id="tieck" lang="de" type="poet">
   <name>
     <firstname>Johann Ludwig</firstname>
