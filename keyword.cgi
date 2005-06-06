@@ -45,9 +45,9 @@ if (defined(url_param('keywordid'))) {
 my $LA = url_param('sprog') || 'dk';
 my $limit = url_param('limit') || '';
 
-my $keyword = new Kalliope::Keyword(id => $keywordid);
 
 if (!$keywordid) {
+    print STDERR "Ukendt nøgleord: $keywordord\n";
     my $page = new Kalliope::Page (
 		title => 'Nøgleord',
                 lang => $LA,
@@ -59,6 +59,7 @@ if (!$keywordid) {
                     content => 'Du er blevet henvist til et ugyldigt nøgleord. Fejlen vil blive rettet hurtigst muligt!');
     $page->print;
 } else {
+    my $keyword = new Kalliope::Keyword(id => $keywordid);
     my $ord = $keyword->ord;
     my @crumbs;
     push @crumbs,['Baggrund','metafront.cgi'];
