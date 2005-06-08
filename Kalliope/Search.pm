@@ -113,6 +113,10 @@ sub getHTML {
     foreach my $d (@matches)  {
 	my ($id,$id_class,$quality) = @{$d};
 	my $item = $id_class->new(id => $id);
+	if (!$item) {
+	    print STDERR "Search.pm:getHTML: \$item er null. id = $id, \$id_class = $id_class, \$quality = $quality\n";
+	    next;
+	}
 
 	$HTML .= qq|<TR><TD ALIGN="right" VALIGN="top">$i.</TD><TD WIDTH="100%">|;
 	$HTML .= $item->getSearchResultEntry($escapedNeedle,@needle);
