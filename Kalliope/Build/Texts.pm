@@ -101,7 +101,7 @@ sub _insertGroup {
 		$linktitle = $toptitle;
 	    }
 	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,'','',$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid),$quality);
-	    doDepends($head,$longdid);
+	    doDepends($head,$longdid,$fhandle,$vid);
 	    $sthseqval->execute();
 	    my ($newparent) = $sthseqval->fetchrow_array;
 	    _insertGroup($fhandle,$vid,$lang,$newparent,$node->first_child('content')->children);
@@ -124,14 +124,14 @@ sub _insertGroup {
 	    }
 	    
 	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,$firstline,$body->xml_string,$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid),$quality);
-	    doDepends($head,$longdid);
+	    doDepends($head,$longdid,$fhandle,$vid);
 	}
 
     }
 }
 
 sub doDepends {
-    my ($head,$longdid) = @_;
+    my ($head,$longdid,$fhandle,$vid) = @_;
     if ($head->first_child('notes')) {
 	my $i = 1;
 	foreach my $note ($head->first_child('notes')->children('note')) {
@@ -142,7 +142,11 @@ sub doDepends {
 	my $i = 1;
 	foreach my $pic ($head->first_child('pictures')->children('picture')) {
 	    my $src = $pic->{'att'}->{'src'};
-	    $sthpicture->execute($longdid,$pic->xml_string,$src,$i++);
+	    if (-e "../fdirs/$fhandle/$src") {
+		$sthpicture->execute($longdid,$pic->xml_string,$src,$i++);
+	    } else {
+		print STDERR "Image $src for $longdid not found.\n";
+	    }
 	}
     }
     if ($head->first_child('keywords')) {
