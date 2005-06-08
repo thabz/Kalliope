@@ -144,7 +144,7 @@ sub getHTML {
 sub count {
     my $self = shift;
     my $args = $self->needleToUse;
-    $args =~ s/[\(\)'|]//g;
+    $args =~ s/[\(\)';|]//g;
     open(FILE,"swish-search -f index/swish.index -w $args |");
     my $hits = 0;
     while (my $line = <FILE>) {
@@ -162,7 +162,7 @@ sub result {
     my $self = shift;
     my @matches;
     my $args = $self->needleToUse;
-    $args =~ s/[\(\)'|]//g;
+    $args =~ s/[\(\)';|]//g;
     open(FILE,"swish-search -m 100 -f index/swish.index -w $args |");
     my $i = -1;
     my $c = 0;
