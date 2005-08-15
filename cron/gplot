@@ -4,7 +4,7 @@ set timefmt "%Y/%m/%d"
 set format x "%Y"
 set size 0.9,0.9
 set grid ytics
-set terminal png color 
+set terminal png transparent 
 set title "Antal digte i Kalliope"
 plot 'tal' using 1:2 t ''  with lines 
 
