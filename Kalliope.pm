@@ -58,6 +58,7 @@ sub shortdate {
 
 sub buildhrefs {
     my $txt = $_[0];
+    return $$txt unless $$txt;
     $$txt =~ s/,,/&bdquo;/g;
     $$txt =~ s/''/&ldquo;/g;
 
