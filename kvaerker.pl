@@ -121,7 +121,7 @@ if ($mode eq 'titel') {
     
     while (my $v = $sth->fetchrow_hashref) {
         my $vaerkaar = $v->{'aar'};
-	$vaerkaar =~ s/[^0-9].*$//;
+	$vaerkaar =~ s/[^0-9]+//g;
 	if (int("$vaerkaar") - int("$last") >= 10) {
 	    $last = $vaerkaar - $vaerkaar%10;
 	    $last2 = $last+9;
