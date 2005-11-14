@@ -46,8 +46,8 @@ unless ($fhandle) {
 }
 
 my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
-my $mode = CGI::url_param('mode');
-my $title = $mode ? "Digttitler" : "Førstelinier";
+my $mode = CGI::url_param('mode') || 1;
+my $title = $mode == 1 ? "Digttitler" : "Førstelinier";
 
 #
 # Breadcrumbs -------------------------------------------------------------
