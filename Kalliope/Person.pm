@@ -337,6 +337,7 @@ sub getBiblioEntry {
 sub getBiblioEntryAsString {
     my ($self,$bibid) = @_;
     my $entry = $self->getBiblioEntry($bibid);
+    print STDERR "Entry for bibid $bibid doesn't exist!\n" unless $entry;
     $entry =~ s/<.*?>//g;
     return $entry;
     
