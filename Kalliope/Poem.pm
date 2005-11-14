@@ -372,7 +372,7 @@ sub notes {
     $sth->execute($self->longdid);
     my @notes;
     while (my ($note) = $sth->fetchrow_array) {
-	$self->resolveBiblioTags($note);
+	$note = $self->resolveBiblioTags($note);
 	push @notes,$note;
     }
     return @notes;
