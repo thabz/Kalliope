@@ -24,6 +24,7 @@ use Kalliope::Web ();
 use Kalliope::Page::Print();
 use Kalliope::Forum ();
 use CGI::Cookie ();
+use CGI ();
 use strict;
 
 sub new {
