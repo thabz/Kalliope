@@ -154,7 +154,7 @@ if ($mode eq 'titel') {
     $sth->execute($LA);
     my @f;
     while (my $f = $sth->fetchrow_hashref) {
-	$f->{'sort'} = $f->{'efternavn'}.$f->{'fornavn'};
+	$f->{'sort'} = ($f->{'efternavn'}||'').($f->{'fornavn'}||'');
 	push @f,$f;
     };
 
