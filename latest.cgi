@@ -42,6 +42,8 @@ my $page = new Kalliope::Page (
                 pagegroup => 'poemlist',
 		changelangurl => 'poets.cgi?list=az&sprog=XX',
                 page => 'latest',
+                rss_feed_url => 'latest-feed.cgi',
+                rss_feed_title => 'Kalliope - Seneste tilføjelser',
 	        icon => 'poem-turkis',
 		crumbs => \@crumbs
            );

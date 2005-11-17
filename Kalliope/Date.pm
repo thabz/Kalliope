@@ -28,6 +28,7 @@ my @months = qw (Jan Feb Mar Apr Maj Jun Jul Aug Sep Okt Nov Dec);
 my @weekdays = qw (Søn Man Tir Ons Tors Fre Lør);
 my @monthsLong = qw (Januar Februar Marts April Maj Juni Juli 
                      August September Oktober November December);
+my @monthsRFC822 = qw (Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec);
 
 sub getMonthNamesShort {
     return @months;
@@ -78,6 +79,17 @@ sub veryLongDate {
     $hour = "0$hour" if $hour < 10;
     $min = "0$min" if $min < 10;
     return " $mday. $months[$mon] $year $hour:$min"
+}
+
+sub RFC822 {
+    # format 17 Oct 1982 16:30:25 +0100
+    my $time = shift;
+    my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime($time);
+    $year+=1900;
+    $hour = "0$hour" if $hour < 10;
+    $min = "0$min" if $min < 10;
+    $sec = "0$sec" if $sec < 10;
+    return "$mday $monthsRFC822[$mon] $year $hour:$min:$sec +0100";
 }
 
 sub splitDate {
