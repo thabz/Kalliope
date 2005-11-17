@@ -26,7 +26,7 @@ use Kalliope::Page::Feed;
 use Kalliope::Poem;
 use strict;
 
-my $DAYS_TO_SHOW = 120;
+my $DAYS_TO_SHOW = 200;
 
 my $link = 'http://www.kalliope.org/latest.cgi';
 
