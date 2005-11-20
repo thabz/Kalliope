@@ -60,9 +60,10 @@ while (my @h = $sth->fetchrow_array) {
 for (my $j = 0; $j<=$i; $j++) {
     my $descr = $blocks[$j]->{'descr'};
     $descr =~ s/, $//;
-    my $dateForDisplay = lc Kalliope::Date::longDate($blocks[$j]->{'createdate'});
+    my $date = $blocks[$j]->{'createdate'};
+    my $dateForDisplay = lc Kalliope::Date::longDate($date);
     $page->addItem("Tilføjelser $dateForDisplay",
-	           $link,$descr,
+	           $link."?date=".$date,$descr,
 		   $blocks[$j]->{'createdate'});
 }
 
