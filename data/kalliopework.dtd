@@ -14,3 +14,8 @@
 <!ATTLIST note xml:space (default|preserve) 'preserve'>
 <!ELEMENT group (#PCDATA)> 
 <!ELEMENT subtitle (#PCDATA)>
+
+<!--
+<!ENTITY dagger "&#8224;">
+<!ENTITY mdash "&#8212;">
+-->
