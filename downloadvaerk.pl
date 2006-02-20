@@ -34,6 +34,9 @@ if ($outputtype eq 'XML') {
     print "Content-type: text/xml\n\n";
     open (FILE,"fdirs/$fhandle/$vhandle.xml");
     while (<FILE>) {
+	if (/^<!DOCTYPE kalliopework/) { 
+	    s!../../data!data!;
+	}
 	print $_;
     }
     close (FILE);
