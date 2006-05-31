@@ -33,10 +33,10 @@ sub addItem {
     $descr =~ s/>/&gt;/g;
     my $xml = '';
     $xml .= qq|<item>\n|;
-    $xml .= qq|  <title>$title</title>\n|;
-    $xml .= qq|  <link>$link</link>\n|;
-    $xml .= qq|  <description>$descr</description>\n|;
-    $xml .= qq|  <pubDate>$pubDate</pubDate>\n|;
+    $xml .= qq|  <title><![CDATA[$title]]></title>\n|;
+    $xml .= qq|  <link><![CDATA[$link]]></link>\n|;
+    $xml .= qq|  <description><![CDATA[$descr]]></description>\n|;
+    $xml .= qq|  <pubDate><![CDATA[$pubDate]]></pubDate>\n|;
     $xml .= qq|</item>\n|;
     $self->{'feed_xml'} .= $xml;
 }
