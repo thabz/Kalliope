@@ -29,7 +29,7 @@ use Kalliope::DB;
 use Kalliope::Date;
 use strict;
 
-my $DAYS_TO_SHOW = 14;
+my $DAYS_TO_SHOW = 100;
 
 my @crumbs;
 push @crumbs,['Digte',"poemsfront.cgi?sprog=dk"];
