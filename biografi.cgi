@@ -119,6 +119,8 @@ if ($beginSpan eq '?' && $#personalEvents > 1) {
     $beginSpan = $personalEvents[0]->getYear;
 }
 push @events, @personalEvents;
+
+$beginSpan =~ s/[^0-9]//g;
 my @other = Kalliope::Timeline::getHistoryInTimeSpan($beginSpan,$poet->yearDead);
 map {$_->useGrayText(1)} @other;
 push @events, @other;
