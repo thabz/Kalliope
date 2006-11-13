@@ -240,6 +240,7 @@ sub print {
     print <<"EOF";
 <HTML><HEAD><TITLE>$titleForWindow</TITLE>
 <LINK REL="Shortcut Icon" HREF="http://www.kalliope.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" title="Kalliope" href="opensearch.xml">
 <LINK REL=STYLESHEET TYPE="text/css" HREF="kalliope.css">
 <META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
 <META name="description" content="Stort arkiv for ældre digtning">
