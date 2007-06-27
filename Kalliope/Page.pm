@@ -240,7 +240,7 @@ sub print {
     print <<"EOF";
 <HTML><HEAD><TITLE>$titleForWindow</TITLE>
 <LINK REL="Shortcut Icon" HREF="http://www.kalliope.org/favicon.ico">
-<link rel="search" type="application/opensearchdescription+xml" title="Kalliope" href="opensearch.xml">
+<link rel="search" type="application/opensearchdescription+xml" title="Kalliope" href="http://www.kalliope.org/opensearch.xml">
 <LINK REL=STYLESHEET TYPE="text/css" HREF="kalliope.css">
 <META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
 <META name="description" content="Stort arkiv for ældre digtning">
@@ -334,7 +334,16 @@ EOF
 
     print '</TD></TR>';
     
-    print '</TABLE></div></center></BODY></HTML>';
+    print '</TABLE></div></center>';
+
+    print q|
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+    _uacct = "UA-2135385-1";
+    urchinTracker();
+    </script>|;
+    print '</BODY></HTML>';
 }
 
 #
