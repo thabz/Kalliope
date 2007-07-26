@@ -162,7 +162,7 @@ sub _makeMetricLetters {
 		 'n' => 'n',
 		 'o' => 'o',
 		 '||' => 'pipepipe',
-		 'U' => 'U',
+		 'U' => 'bU',
 		 'UU' => 'UU',
 		 '_u' => '_u',
 		 'x' => 'x',
