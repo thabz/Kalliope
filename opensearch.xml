@@ -3,5 +3,6 @@
    <Description>Kalliopes digte</Description>
    <InputEncoding>ISO-8859-1</InputEncoding>
    <Image width="16" height="16" type="image/vnd.microsoft.icon">http://www.kalliope.org/favicon.ico</Image>
-   <Url type="text/html" method="get" template="http://www.kalliope.org/ksearch.cgi?needle={searchTerms}&sprog=dk&type=free"/>
+   <Url type="text/html" method="get" template="http://www.kalliope.org/ksearch.cgi?sprog=dk&amp;type=free&amp;needle={searchTerms}"></Url>
+   <AdultContent>false</AdultContent>
 </OpenSearchDescription>
