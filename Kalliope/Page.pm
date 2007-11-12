@@ -259,6 +259,19 @@ function openTimeContext(year) {
 EOF
  
     print '<center><br>';
+    print <<"GOOGLEADS";
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-3823256275585089";
+    //468x60, created 11/12/07
+    google_ad_slot = "7400134560";
+    google_ad_width = 468;
+    google_ad_height = 60;
+    //--></script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+GOOGLEADS
+    
     print '<div class="body">';
     print '<TABLE WIDTH="770" BORDER="0" CELLSPACING="0" CELLPADDING="0">';
     
