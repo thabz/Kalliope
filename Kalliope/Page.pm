@@ -272,7 +272,7 @@ EOF
     </script>
 GOOGLEADS
     
-    print '<div class="body">';
+    print '<br><div class="body">';
     print '<TABLE WIDTH="770" BORDER="0" CELLSPACING="0" CELLPADDING="0">';
     
     if (my $crumbs = $self->_constructBreadcrumbs) {
