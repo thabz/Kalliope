@@ -35,6 +35,7 @@ my $DB_CONNECT_STRING = 'dbi:Pg:dbname=kalliope';
 my $DB_USER = '';
 my $DB_PASSWORD = '';
 my %DB_ATTR = ( AutoCommit => 1, PrintError => 1, Warn => 1 );
+$ENV{PGCLIENTENCODING} = 'LATIN1';
 
 sub connect {
     # connect
