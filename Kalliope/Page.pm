@@ -23,6 +23,7 @@ package Kalliope::Page;
 use Kalliope::Web ();
 use Kalliope::Page::Print();
 use Kalliope::Forum ();
+use Kalliope::User();
 use CGI::Cookie ();
 use CGI ();
 use strict;
@@ -51,8 +52,17 @@ sub new {
     $self->{'nosubmenu'} = $args{'nosubmenu'} || 0;
     $self->{'columns'} = [];
 
-    if ($self->{'setcookies'}) {
-        $self->_setCookies(%{$self->{'setcookies'}});
+    if ($self->{'setremoteuser'}) {
+        my $cookie = new CGI::Cookie(-expires => '+3M',
+  	                             -name => 'user',
+	                             -value => $self->{'setremoteuser'});
+    	$self->{'cookies'} = [$cookie];
+    }
+    if ($self->{'removeremoteuser'}) {
+        my $cookie = new CGI::Cookie(-expires => '-1M',
+  	                             -name => 'user',
+	                             -value => 0);
+    	$self->{'cookies'} = [$cookie];
     }
 
     if ($args{'changelangurl'}) {
@@ -64,30 +74,6 @@ sub new {
 	$self->{'changelangurl'} = $1;
     }
     return $self;
-}
-
-sub _setCookies {
-    my ($self,%vals) = @_;
-    my @cookies;
-
-    foreach my $name (keys %vals) {
-        my $cookie = new CGI::Cookie(-expires => '+3M',
-	                             -name => $name,
-	                             -value => $vals{$name});
-	push @cookies,$cookie;			     
-    }
-    $self->{'cookies'} = \@cookies;
-    return @cookies;
-}
-
-sub _printCookies {
-    my $self = shift;
-    my $output;
-    return '' unless $self->{'cookies'};
-    foreach my $cookie (@{$self->{'cookies'}}) {
-        $output .= "Set-Cookie: $cookie\n";
-    }
-    return $output;
 }
 
 sub newAuthor {
@@ -232,9 +218,14 @@ sub print {
 	my $title = $self->{'rss_feed_title'};
 	$feedlink = qq|<link rel="alternate" type="application/rss+xml" title="$title" href="$url">|;
     }
-    print $self->_printCookies();
     print CGI::header(-type => 'text/html; charset=ISO-8859-1',
-	              -expires => '+4h');
+# -expires => '+4h',
+		      -cookie => $self->{'cookies'});
+    if ($self->{'redirect'}) {
+	my $url = $self->{'redirect'};
+	print qq|<html><head><meta http-equiv="refresh" content="0; URL=$url"></head></html>|;
+	return;
+    }
     
     print '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">';
     print <<"EOF";
@@ -259,6 +250,8 @@ function openTimeContext(year) {
 EOF
  
     print '<center><br>';
+
+    if (0) {
     print <<"GOOGLEADS";
     <script type="text/javascript"><!--
     google_ad_client = "pub-3823256275585089";
@@ -271,6 +264,7 @@ EOF
     src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
     </script>
 GOOGLEADS
+    };
     
     print '<br><div class="body">';
     print '<TABLE WIDTH="770" BORDER="0" CELLSPACING="0" CELLPADDING="0">';
@@ -359,6 +353,12 @@ try {
 var pageTracker = _gat._getTracker("UA-8418639-1");
 pageTracker._trackPageview();
 } catch(err) {}</script>|;
+    my $user = fetch Kalliope::User;
+    if ($user || $self->{'setremoteuser'}) {
+	print '<div style="padding:5px 5px 0 0;text-align:right"><a style="color:#808080;font-size:0.5em" href="login.cgi?action=logout">Log ud</a></div>';
+    } else {
+	print '<div style="padding:5px 5px 0 0;text-align:right"><a style="color:#a0a0a0;font-size:0.5em" href="login.cgi">&pi;</a></div>';
+    }
     print '</BODY></HTML>';
 }
 
