@@ -243,11 +243,21 @@ function openTimeContext(year) {
      return false;
 }
 </SCRIPT>
+EOF
+    my $user = fetch Kalliope::User;
+    if ($user) {
+	print qq|
+	    <script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.core.js"></script>
+<script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.draggable.js"></script>
+<script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.resizable.js"></script>
+<script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.dialog.js"></script>
+<link type="text/css" href="http://jqueryui.com/latest/themes/base/ui.all.css" rel="stylesheet"/>
+	    |;
+    }
+    print qq|
 </HEAD>
 <!--<BODY LINK="#000000" VLINK="#000000" ALINK="#000000" LEFTMARGIN=0 TOPMARGIN=0 MARGINHEIGHT=0 MARGINWIDTH=0>-->
-<BODY LINK="#000000" VLINK="#000000" ALINK="#000000">
-
-EOF
+<BODY LINK="#000000" VLINK="#000000" ALINK="#000000">|;
  
     print '<center><br>';
 
