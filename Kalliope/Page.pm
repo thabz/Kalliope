@@ -231,6 +231,7 @@ sub print {
     print <<"EOF";
 <HTML><HEAD><TITLE>$titleForWindow</TITLE>
 <LINK REL="Shortcut Icon" HREF="http://www.kalliope.org/favicon.ico">
+<link rel="apple-touch-icon" href="http://www.kalliope.org/gfx/icons/iphone-icon.png">
 <link rel="search" type="application/opensearchdescription+xml" title="Kalliope" href="http://www.kalliope.org/opensearch.xml">
 <LINK REL=STYLESHEET TYPE="text/css" HREF="kalliope.css">
 <META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
