@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: Helvetica;
     background: #FFFFFF;
+    background: rgb(234,234,218);
     color: #000000;
     overflow-x: hidden;
     -webkit-user-select: none;
@@ -257,14 +258,14 @@ body > .panel {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     padding: 10px;
-    background: #c8c8c8 url(pinstripes.png);
+    background: #e5dcb5 url(../../gfx/frames/paper-dark.png); 
 }
 
 .panel > fieldset {
     position: relative;
     margin: 0 0 20px 0;
     padding: 0;
-    background: #FFFFFF;
+    background: rgb(234,234,218);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border: 1px solid #999999;
@@ -278,6 +279,7 @@ body > .panel {
     border-bottom: 1px solid #999999;
     -webkit-border-radius: 0;
     text-align: right;
+    background: rgb(234,234,218);
 }
 
 fieldset > .row:last-child {
@@ -383,7 +385,7 @@ fieldset > .row:last-child {
     margin: 0 0 8px 14px;
     font-size: inherit;
     font-weight: bold;
-    color: #4d4d70;
+    color: #857c55;
     text-shadow: rgba(255, 255, 255, 0.75) 2px 2px 0;
 }
 
@@ -394,3 +396,26 @@ fieldset > .row:last-child {
     background-image: url(loading.gif), url(selection.png),
         url(blueButton.png), url(listArrowSel.png), url(listGroup.png);
 }
+
+
+
+/* Adding a new row CSS style to iUi for displaying blocks of text */
+.textRow  {
+    position: relative;
+    border-bottom: 1px solid #999999;
+    -webkit-border-radius: 0;
+    text-align: right;
+}
+
+.textRow > p {
+    text-align: left;
+    margin: 5px 8px 5px 10px;
+    padding: 0px 0px 0px 0px;
+}
+
+
+fieldset > .textRow:last-child {
+    border-bottom: none !important;
+}
+
+
