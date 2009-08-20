@@ -55,6 +55,35 @@ sub hasWorks {
     return shift->{'workslist'} || '' ne '';
 }
 
+sub hasPics {
+    return shift->{'pics'} || '' ne '';
+}
+
+# Digterens portrætter.
+# Returnerer et array med hashrefs.
+# Hver hash har keys thumbfile, file og måske text.
+sub pics {
+    my $i = 1;
+    my @result;
+    my $fhandle = shift->fhandle;
+    while (-e "fdirs/".$fhandle."/p".$i.".jpg") {
+	my %pic;
+        $pic{thumbfile} = "fdirs/$fhandle/_p$i.jpg";
+	$pic{file} = "fdirs/$fhandle/p$i.jpg";
+	if (-e "fdirs/".$fhandle."/p".$i.".txt") {
+	    my $html = '';
+	    open(IN,"fdirs/".$fhandle."/p".$i.".txt");
+	    while (<IN>) {
+		$html .= $_."<br>";
+	    }
+	    $pic{text} = $html;
+	}
+	$i++;
+	push @result,\%pic;
+    }
+    return @result;
+}
+
 sub lang {
     return shift->{'sprog'};
 }

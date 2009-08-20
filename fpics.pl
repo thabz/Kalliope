@@ -44,17 +44,14 @@ my $page = newAuthor Kalliope::Page ( poet => $poet,
 
 my $i = 1;
 my $HTML .= "<TABLE><TR>";
-while (-e "fdirs/".$fhandle."/p".$i.".jpg") {
+foreach my $pic ($poet->pics) {
     $HTML .= '<TD WIDTH="33%" VALIGN="top" ALIGN="center">';
-    $HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/_p$i.jpg",destfile=>"fdirs/$fhandle/p$i.jpg",alt=>$poet->name.'- klik for fuld størrelse'});
+    $HTML .= Kalliope::Web::insertThumb({
+	    thumbfile => $$pic{thumbfile},
+	    destfile => $$pic{file},
+	    alt => $poet->name.'- klik for fuld størrelse'});
     $HTML .= '<BR>';
-    if (-e "fdirs/".$fhandle."/p".$i.".txt") {
-	open(IN,"fdirs/".$fhandle."/p".$i.".txt");
-	while (<IN>) {
-	    $HTML .= $_."<BR>";
-	}
-    }
-    $HTML .= '('.Kalliope::filesize("fdirs/$fhandle/p$i.jpg").')';
+    $HTML .= $$pic{text};
     $HTML .= "</TD>";
     $i++;
     if ((($i-1)%3)==0) {
