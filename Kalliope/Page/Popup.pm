@@ -30,7 +30,7 @@ sub addHTML {
 sub print {
     $self = shift;
     my $titleForWindow = $self->{'title'}." - Kalliope";
-    $self->_printCookies;
+    #$self->_printCookies;
     print "Content-type: text/html; charset=ISO-8859-1\n\n";
     print '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">';
     print <<"EOF";
