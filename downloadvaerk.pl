@@ -47,7 +47,7 @@ if ($outputtype eq 'XML') {
 
     ($ffornavn,$fefternavn,$ffoedt,$fdoed) = $dbh->selectrow_array("SELECT fornavn,efternavn,foedt,doed FROM fnavne WHERE fhandle = '$fhandle'");
 
-    $sth = $dbh->prepare("SELECT longdid,toptitel,foerstelinie,underoverskrift,indhold FROM digte WHERE vid=? AND fhandle=?");
+    $sth = $dbh->prepare("SELECT longdid,toptitel,foerstelinie,underoverskrift,indhold FROM digte WHERE vid=? AND fhandle=? ORDER BY vaerkpos");
     $sth->execute($vid,$fhandle);
     print "Content-type: text/html\n\n";
     print "<HTML><HEAD><TITLE>$vtitel</TITLE></HEAD>\n";
