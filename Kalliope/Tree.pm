@@ -286,25 +286,25 @@ sub _doNode {
     if ($this_isLastChild) {
 	if ($this_HasChildren) {
 	    if ($DOM_HTML) {
-		$thisGfx = qq|<IMG ALT="" onclick="TreeNodeExpand($nodeId)" onfocus="blur()" ID="treeNodeGfx$nodeId" NODETYPE="L" SRC="$gfxdir/TreeEndPlus.gif">|;
+		$thisGfx = qq|<IMG alt="#" onclick="TreeNodeExpand($nodeId)" onfocus="blur()" ID="treeNodeGfx$nodeId" NODETYPE="L" SRC="$gfxdir/TreeEndPlus.gif">|;
 	    } else {
-		$thisGfx = qq|<IMG ALT="" SRC="$gfxdir/TreeEndMinus.gif">|;
+		$thisGfx = qq|<IMG alt="#" SRC="$gfxdir/TreeEndMinus.gif">|;
 	    }
 	} else {
-	    $thisGfx = qq|<IMG ALT="" SRC="$gfxdir/TreeEnd.gif">|;
+	    $thisGfx = qq|<IMG alt="#" SRC="$gfxdir/TreeEnd.gif">|;
 	}
-	$subGfx  = qq|<IMG ALT="" SRC="$gfxdir/TreeNone.gif">|;
+	$subGfx  = qq|<IMG alt="#" SRC="$gfxdir/TreeNone.gif">|;
     } else {
 	if ($this_HasChildren) {
 	    if ($DOM_HTML) {
-		$thisGfx = qq|<IMG ALT="" onclick="TreeNodeExpand($nodeId)" onfocus="blur()" ID="treeNodeGfx$nodeId" NODETYPE="T" SRC="$gfxdir/TreeTPlus.gif">|;
+		$thisGfx = qq|<IMG alt="#" onclick="TreeNodeExpand($nodeId)" onfocus="blur()" ID="treeNodeGfx$nodeId" NODETYPE="T" SRC="$gfxdir/TreeTPlus.gif">|;
 	    } else {
-		$thisGfx = qq|<IMG ALT="" SRC="$gfxdir/TreeTMinus.gif">|;
+		$thisGfx = qq|<IMG alt="#" SRC="$gfxdir/TreeTMinus.gif">|;
 	    }
 	} else {
-	    $thisGfx = qq|<IMG ALT="" SRC="$gfxdir/TreeT.gif">|;
+	    $thisGfx = qq|<IMG alt="#" SRC="$gfxdir/TreeT.gif">|;
 	}
-	$subGfx  = qq|<IMG ALT="" SRC="$gfxdir/TreeLine.gif">|;
+	$subGfx  = qq|<IMG alt="#" SRC="$gfxdir/TreeLine.gif">|;
     }
 
     $subGfx = '' unless $nodeId;

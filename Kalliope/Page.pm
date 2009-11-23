@@ -218,6 +218,7 @@ sub print {
 	my $title = $self->{'rss_feed_title'};
 	$feedlink = qq|<link rel="alternate" type="application/rss+xml" title="$title" href="$url">|;
     }
+    $feedlink .= qq|<link rel="alternate" type="application/rss+xml" title="Kalliope - Seneste nyheder" href="news-feed.cgi">|;
     print CGI::header(-type => 'text/html; charset=ISO-8859-1',
 # -expires => '+4h',
 		      -cookie => $self->{'cookies'});
@@ -289,20 +290,20 @@ GOOGLEADS
     # Head BACKGROUND="gfx/frames/top.png"
     print '<TR><TD HEIGHT="164" COLSPAN="3" VALIGN="top">';
     print '<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR>';
-    print '<TD ROWSPAN="3" valign="top"><IMG ALT="" SRC="'.$self->pageIcon.'" HEIGHT="164" WIDTH="139"></TD>';
-    print '<TD colspan="5" HEIGHT="32" WIDTH="100%" CLASS="top"><img alt="" src="gfx/trans1x1.gif" height="72" width="1"></TD>';
+    print '<TD ROWSPAN="3" valign="top"><IMG alt="#" SRC="'.$self->pageIcon.'" HEIGHT="164" WIDTH="139"></TD>';
+    print '<TD colspan="5" HEIGHT="32" WIDTH="100%" CLASS="top"><img alt="#" src="gfx/trans1x1.gif" height="72" width="1"></TD>';
     print '</tr>';
     
     if ($self->{'nosubmenu'}) {
-	print q|<tr><td class="submenu" colspan="5"><img alt="" src="gfx/frames/small-menu-blank.gif"></td></tr>|;   
+	print q|<tr><td class="submenu" colspan="5"><img alt="#" src="gfx/frames/small-menu-blank.gif"></td></tr>|;   
     } else {
 	print q|<tr>|;
 	print q|<td width="100%" height="1" class="submenu"></td>|;   
-	print '<td class="submenu"><img alt="" src="gfx/frames/small-menu-left.gif"></td>';
+	print '<td class="submenu"><img alt="#" src="gfx/frames/small-menu-left.gif"></td>';
 	print qq|<td class="submenu" style="background: url(gfx/frames/small-menu-middle.gif)" nowrap>|;
 	print $self->_navigationSub;
 	print '</td>';
-	print '<td class="submenu"><img alt="" src="gfx/frames/small-menu-right.gif"></td>';
+	print '<td class="submenu"><img alt="#" src="gfx/frames/small-menu-right.gif"></td>';
 	print q|<td class="submenu"></td>|;
 	print '</tr>';
 
@@ -314,7 +315,7 @@ GOOGLEADS
 
     # Body
     print '<tr>';
-    print '<td valign="top" colspan="2" class="navigation"><IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH="138" HEIGHT="40">';
+    print '<td valign="top" colspan="2" class="navigation"><IMG alt="#" SRC="gfx/trans1x1.gif" WIDTH="138" HEIGHT="40">';
     print $self->_navigationMain;
     print '</td>';
     print '<td class="paper" valign="top">';

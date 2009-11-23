@@ -55,9 +55,9 @@ sub doubleColumn {
 	if ($i == $minI && $total > 8) {
 	    $columnchanged = 1;
 	    $HTML .= '</DIV></TD><TD WIDTH=1 VALIGN=top BGCOLOR="#808080">';
-	    $HTML .= '<IMG ALT="" SRC="gfx/trans1x1.gif" BORDER=0 ALT=""></TD>';
+	    $HTML .= '<IMG alt="#" SRC="gfx/trans1x1.gif" BORDER=0 alt="#"></TD>';
 	    $HTML .= '<TD WIDTH=10 VALIGN=top>';
-	    $HTML .= '<IMG ALT="" SRC="gfx/trans1x1.gif" WIDTH=10 BORDER=0></TD>';
+	    $HTML .= '<IMG alt="#" SRC="gfx/trans1x1.gif" WIDTH=10 BORDER=0></TD>';
 	    $HTML .= '<TD WIDTH="50%" VALIGN=top>';
 	    $HTML .= '<DIV STYLE="padding: 10px">';
 	}
@@ -83,7 +83,7 @@ sub frontMenu {
 	my %item = %{$str};
 	my $url = $item{url};
 	if ($item{status}) {
-	    $HTML .= qq|<TR><TD VALIGN="top" ROWSPAN=2><A HREF="$url"><IMG HEIGHT=48 BORDER=0 SRC="$item{icon}" ALT=""></A></TD>|;
+	    $HTML .= qq|<TR><TD VALIGN="top" ROWSPAN=2><A HREF="$url"><IMG HEIGHT=48 BORDER=0 SRC="$item{icon}" alt="#"></A></TD>|;
 	    $HTML .= qq|<TD CLASS="ffronttitle"><A HREF="$url">$item{title}</A><TD></TR>|;
 	    $HTML .= qq|<TR><TD VALIGN="top" CLASS="ffrontdesc">$item{desc}</TD></TR>|;
 	    $HTML .= qq|<tr><td></td></tr>|;

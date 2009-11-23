@@ -98,7 +98,7 @@ sub linksToPoems {
 }
 
 sub smallIcon {
-    return '<IMG alt="" HEIGHT=48 BORDER=0 SRC="gfx/icons/keywords-h48.gif">';
+    return '<IMG alt="#" HEIGHT=48 BORDER=0 SRC="gfx/icons/keywords-h48.gif">';
 }
 
 sub getSearchResultEntry {

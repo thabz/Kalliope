@@ -180,7 +180,7 @@ sub clickableTitle {
 }
 
 sub smallIcon {
-     return '<IMG alt="" BORDER=0 HEIGHT=32 WIDTH=32 SRC="gfx/icons/poet-h48.gif">';
+     return '<IMG alt="#" BORDER=0 HEIGHT=32 WIDTH=32 SRC="gfx/icons/poet-h48.gif">';
 }
 
 sub clickableNameBlack {
