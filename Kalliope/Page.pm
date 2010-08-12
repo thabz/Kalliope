@@ -365,7 +365,6 @@ try {
 var pageTracker = _gat._getTracker("UA-8418639-1");
 pageTracker._trackPageview();
 } catch(err) {}</script>|;
-    my $user = fetch Kalliope::User;
     if ($user || $self->{'setremoteuser'}) {
 	print '<div style="padding:5px 5px 0 0;text-align:right"><a style="color:#808080;font-size:0.5em" href="login.cgi?action=logout">Log ud</a></div>';
     } else {
