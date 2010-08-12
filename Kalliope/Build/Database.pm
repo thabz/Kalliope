@@ -27,9 +27,9 @@ use strict;
 my $dbh = Kalliope::DB::connect();
 
 sub grant {
-   $dbh->do(q/GRANT SELECT ON TABLE fnavne,vaerker,digte,worknotes,textxkeyword,timeline,textpictures,keywords,keywords_images,xrefs TO "www-data"/);
-   $dbh->do(q/GRANT SELECT ON TABLE keywords_relation,textnotes TO "www-data"/);
-   $dbh->do(q/GRANT SELECT ON TABLE workpictures TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE fnavne,vaerker,digte,worknotes,textxkeyword,timeline,textpictures,keywords,keywords_images,xrefs TO PUBLIC/);
+   $dbh->do(q/GRANT SELECT ON TABLE keywords_relation,textnotes TO PUBLIC/);
+   $dbh->do(q/GRANT SELECT ON TABLE workpictures,news,dict TO PUBLIC/);
 }
 
 1;
