@@ -49,7 +49,7 @@ sub searchBoxHTML {
     my $self = shift;
     my $needle = $self->needle;
     my $fhandle = $self->poet->fhandle;
-    return qq|<FORM METHOD="get" ACTION="fsearch.cgi"><INPUT NAME="needle" VALUE="$needle"><INPUT TYPE="hidden" NAME="fhandle" VALUE="$fhandle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "></FORM>|;
+    return qq|<FORM METHOD="get" ACTION="fsearch.cgi"><INPUT NAME="needle" VALUE="$needle" autofocus><INPUT TYPE="hidden" NAME="fhandle" VALUE="$fhandle"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "></FORM>|;
 }
 
 sub needleToUse {
