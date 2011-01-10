@@ -343,7 +343,7 @@ GOOGLEADS
     print '<TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0">';
     print '<TR>';
     print '<td nowrap style="padding-left: 20px; text-align: left;">';
-    print '<b>Søg:</b> <INPUT CLASS="search" NAME="needle"><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free">';
+    print '<b>Søg:</b> <INPUT CLASS="search" NAME="needle" placeholder="Søg i Kalliope"><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free">';
     print '</td>';
     print '<TD VALIGN="middle" ALIGN="right" NOWRAP STYLE="padding-right: 20px">';
     print $self->langSelector;
