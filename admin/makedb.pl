@@ -117,6 +117,7 @@ if (Kalliope::Build::Timestamps::hasChanged($poetsFile)) {
     Kalliope::Build::Links::drop() unless $__all;
     Kalliope::Build::Links::create()  unless $__all;
     Kalliope::Build::Links::insert();
+    Kalliope::Build::Database::grant();
     &log("Done");
     &log ("Making timeline... ");
     Kalliope::Build::Timeline::build(%persons);
