@@ -279,83 +279,84 @@ EOF
 GOOGLEADS
     };
     
-    print '<br><div class="body">';
-    print '<TABLE WIDTH="770" BORDER="0" CELLSPACING="0" CELLPADDING="0">';
-    
+    print '<div class="body">';
+    print '<div class="site">';
+    print '<div class="layout">';
     if (my $crumbs = $self->_constructBreadcrumbs) {
-        print '<tr><td colspan="3" class="breadcrumbs">';
-	print $crumbs;
-	print '</td></tr>';
+        print '<div class="breadcrumbs">';
+	    print $crumbs;
+	    print '</div>';
     }
 
     # Head BACKGROUND="gfx/frames/top.png"
-    print '<TR><TD HEIGHT="164" COLSPAN="3" VALIGN="top">';
+    print '<div class="topsection">';
+
     print '<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR>';
     print '<TD ROWSPAN="3" valign="top"><IMG alt="#" SRC="'.$self->pageIcon.'" HEIGHT="164" WIDTH="139"></TD>';
     print '<TD colspan="5" HEIGHT="32" WIDTH="100%" CLASS="top"><img alt="#" src="gfx/trans1x1.gif" height="72" width="1"></TD>';
     print '</tr>';
     
     if ($self->{'nosubmenu'}) {
-	print q|<tr><td class="submenu" colspan="5"><img alt="#" src="gfx/frames/small-menu-blank.gif"></td></tr>|;   
+	    print q|<tr><td class="submenu" colspan="5"><img alt="#" src="gfx/frames/small-menu-blank.gif"></td></tr>|;   
     } else {
-	print q|<tr>|;
-	print q|<td width="100%" height="1" class="submenu"></td>|;   
-	print '<td class="submenu"><img alt="#" src="gfx/frames/small-menu-left.gif"></td>';
-	print qq|<td class="submenu" style="background: url(gfx/frames/small-menu-middle.gif)" nowrap>|;
-	print $self->_navigationSub;
-	print '</td>';
-	print '<td class="submenu"><img alt="#" src="gfx/frames/small-menu-right.gif"></td>';
-	print q|<td class="submenu"></td>|;
-	print '</tr>';
-
+	    print q|<tr>|;
+	    print q|<td width="100%" height="1" class="submenu"></td>|;   
+	    print '<td class="submenu"><img alt="#" src="gfx/frames/small-menu-left.gif"></td>';
+	    print qq|<td class="submenu" style="background: url(gfx/frames/small-menu-middle.gif)" nowrap>|;
+	    print $self->_navigationSub;
+	    print '</td>';
+	    print '<td class="submenu"><img alt="#" src="gfx/frames/small-menu-right.gif"></td>';
+	    print q|<td class="submenu"></td>|;
+	    print '</tr>';
     }
     print '<tr><td colspan="5" height="74" class="maintitle">'.$self->titleAsHTML.'</td></tr>';   
     print '</table>';
     
-    print '</TD></TR>';
+    print '</div> <!-- top section -->';
 
     # Body
-    print '<tr>';
-    print '<td valign="top" colspan="2" class="navigation"><IMG alt="#" SRC="gfx/trans1x1.gif" WIDTH="138" HEIGHT="40">';
+    print '<div class="middlesection">';
+    print '<div class="navigation"><div>';
     print $self->_navigationMain;
-    print '</td>';
-    print '<td class="paper" valign="top">';
+    print '</div></div> <!-- navigation -->';
+    print '<div class="paper">';
     print qq|<TABLE WIDTH="100%" CELLPADDING="5"><TR>\n\n|;
     my @widths = $self->getColoumnWidths;
     my $count = 0;
     foreach my $colHTML (@{$self->{'coloumns'}}) {
         $colHTML = $colHTML || '';
-	my $style = ++$count == 3 ? qq|style="width: 250px; border-left: 3px dotted #808080"| : '';
+	    my $style = ++$count == 3 ? qq|style="width: 250px; border-left: 3px dotted #808080"| : '';
         my $width = shift @widths;
-	if ($width) {
-	       print qq|<TD VALIGN="top" $style WIDTH="$width">$colHTML</TD>\n|;
+	    if ($width) {
+	        print qq|<TD VALIGN="top" $style WIDTH="$width">$colHTML</TD>\n|;
         } else {
-	    print qq|<TD $style VALIGN="top">$colHTML</TD>\n|;
+	        print qq|<TD $style VALIGN="top">$colHTML</TD>\n|;
         }
     }
     print '</TR></TABLE>';
-    print '</TD>';
-    print '</TR>';
+    print '</div> <!-- paper -->';
+    print '<div class="clear"></div>';
+    print '</div> <!-- middlesection -->';
 
     # Foot
-    print '<TR><TD CLASS="footer" COLSPAN="3" HEIGHT="40" ALIGN="right" VALIGN="middle">';
-
+    print '<div class="footer">';
+    print '<div class="searchbox">';
     print '<FORM METHOD="get" ACTION="ksearch.cgi">';
-    print '<TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0">';
-    print '<TR>';
-    print '<td nowrap style="padding-left: 20px; text-align: left;">';
-    print '<b>Søg:</b> <INPUT CLASS="search" NAME="needle" placeholder="Søg i Kalliope"><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free">';
-    print '</td>';
-    print '<TD VALIGN="middle" ALIGN="right" NOWRAP STYLE="padding-right: 20px">';
-    print $self->langSelector;
-    print '</TD></TR>';
-    print '</TABLE>';
+    print '<INPUT CLASS="search" NAME="needle" placeholder="Søg i Kalliope"><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free">';
     print '</form>';
-
-    print '</TD></TR>';
+    print '</div> <!-- searchbox -->';
+    print '<div class="flags">';
+    print $self->langSelector;
+    print '</div> <!-- flags -->';
+    print '<div class="clear"></div>';
+    print '</div> <!-- footer -->';
     
-    print '</TABLE></div></center>';
-
+    print '</div> <!-- layout -->'; 
+    print '</div> <!-- site -->'; 
+    print '</div> <!-- body -->';
+    print '</center>';
+    
+    # Google analytics
     print q|
     <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -371,7 +372,7 @@ pageTracker._trackPageview();
     } else {
 	print '<div style="padding:5px 5px 0 0;text-align:right"><a style="color:#a0a0a0;font-size:0.5em" href="login.cgi">&pi;</a></div>';
     }
-    print '</BODY></HTML>';
+    print '</body></html>';
 }
 
 #

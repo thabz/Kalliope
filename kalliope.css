@@ -61,6 +61,8 @@ input.search {
     font-size: 11px;
     background-color: #eaeada;
     width: 100px;
+    border: 1px solid black;
+    padding: 2px;
 }
 
 .inputtext {
@@ -286,12 +288,6 @@ td.paper {
     vertical-align: top;
 }
 
-td.footer {
-    border-top: 1px solid #c7bb95;
-    background-color: #fafaea;
-}
-
-
 td.top {
   /*  vertical-align: middle;*/
     font-size: 32px;
@@ -343,6 +339,7 @@ div.body {
     border-bottom: 2px solid #333333;
     background-color: #eaeada;
     width: 770px;
+    margin-top: 18px;
 }
 
 div.bodypopup {
@@ -450,3 +447,75 @@ div.noter p {
    text-indent: 10pt;	   
 }
 
+/* div layout */
+
+div.clear {
+    clear: both;
+}
+
+div.layout div {
+    padding: 0;
+    margin: 0;
+}
+
+div.layout div.site { 
+    margin-top: 20px;
+    width: 770px;
+}
+
+div.layout div.breadcrumbs {
+    background-color: #fafaea;
+    font-size: 11px;
+    color: #808080;
+    border-bottom: 1px solid #c7bb95;
+    text-align: left;
+    height: 13px;
+}
+
+div.layout div.topsection {
+    width: 770px;
+    height: 164px;
+}
+
+div.layout div.middlesection {
+    width: 770px;
+    background: url(gfx/frames/left.gif) repeat-y;
+    padding-bottom: 40px;
+    min-height: 400px;
+}
+
+div.layout div.navigation {
+    width: 139px;
+    float: left;
+}
+
+div.layout div.navigation div {
+    padding-top: 40px;
+    color: rgb(117,106,89); 
+    width: 138px;
+}
+
+div.layout div.toppart {
+    height: 164px;
+}
+
+div.layout div.paper {
+    float: left;
+    width: 631px;
+    padding-top: 20px;
+}
+
+div.layout div.footer {
+    border-top: 1px solid #c7bb95;
+    background-color: #fafaea;
+    padding: 10px 10px 10px 10px;
+}
+
+div.layout div.footer div.searchbox {
+    float: left;
+    height: 0;
+}
+
+div.layout div.footer div.flags {
+    float: right;
+}
