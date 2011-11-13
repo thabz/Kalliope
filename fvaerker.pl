@@ -59,30 +59,30 @@ my @works = $mode eq 'poetical' ? $poet->poeticalWorks : $poet->proseWorks;
 if ($#works >= 0) {
     my $nr;
     my $splitpos = ($#works+1 > 6) ? int(($#works+1) / 2 + 0.5 ) : 0;
-    $HTML .= '<TABLE HEIGHT="100%" CELLPADDING=0 CELLSPACING=10><TR><TD WDITH="50%" VALIGN=top>';
+    $HTML .= '<TABLE HEIGHT="100%" CELLPADDING=0 CELLSPACING=10><TR><TD WIDTH="50%" VALIGN=top>';
     $HTML .= '<TABLE>';
     foreach my $work (@works) {
-	$HTML .= '<TR><TD>';
-	if ($work->hasContent) {
-	    my $iconfile = $work->status eq 'complete' ? 'icons/book-h48.gif' : 'icons/incomplete-h48.gif';
-	    $HTML .= '<A HREF="vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle.'">';
-	    $HTML .= qq|<IMG HEIGHT=48 ALT="" BORDER=0 
-		        SRC="gfx/$iconfile" VALIGN="middle"></A>
-		        </TD><TD>|;
-	    $HTML .= '<A HREF="vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle.'"><FONT COLOR="black">';
-	} else {
-	    my $iconfilena =  'icons/book-na-h48.gif';
-	    $HTML .= qq|<IMG HEIGHT=48 ALT="" BORDER=0  
-		SRC="gfx/$iconfilena" VALIGN="center">
-		</TD><TD><FONT COLOR="#808080">|;
-	}
-	$HTML .= '<I>'.$work->title.'</I> '.$work->parenthesizedYear.'</FONT>';
-	$HTML .= '</A>' if $work->hasContent;
-	$HTML .= '</TD></TR>';
-	if (++$nr == $splitpos) {
-	    $HTML .= '</TABLE></TD><TD BGCOLOR=black><IMG WIDTH=1 HEIGHT=1 SRC="gfx/trans1x1.gif" ALT="">';
-	    $HTML .= '</TD><TD WIDTH="50%" VALIGN=top><TABLE>' ;
-	}
+	    $HTML .= '<TR><TD>';
+	    if ($work->hasContent) {
+	        my $iconfile = $work->status eq 'complete' ? 'icons/book-h48.gif' : 'icons/incomplete-h48.gif';
+	        $HTML .= '<A HREF="vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle.'">';
+	        $HTML .= qq|<IMG HEIGHT=48 ALT="" BORDER=0 
+	    	        SRC="gfx/$iconfile" VALIGN="middle"></A>
+	    	        </TD><TD>|;
+	        $HTML .= '<A HREF="vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle.'"><FONT COLOR="black">';
+	    } else {
+	        my $iconfilena =  'icons/book-na-h48.gif';
+	        $HTML .= qq|<IMG HEIGHT=48 ALT="" BORDER=0  
+	    	SRC="gfx/$iconfilena" VALIGN="center">
+	    	</TD><TD><FONT COLOR="#808080">|;
+	    }
+	    $HTML .= '<I>'.$work->title.'</I> '.$work->parenthesizedYear.'</FONT>';
+	    $HTML .= '</A>' if $work->hasContent;
+	    $HTML .= '</TD></TR>';
+	    if (++$nr == $splitpos) {
+	        $HTML .= '</TABLE></TD><TD BGCOLOR=black><IMG WIDTH=1 HEIGHT=1 SRC="gfx/trans1x1.gif" ALT="">';
+	        $HTML .= '</TD><TD WIDTH="50%" VALIGN=top><TABLE>' ;
+	    }
     }
     $HTML .= "</TABLE>";   
     $HTML .= '</TD></TR></TABLE>';

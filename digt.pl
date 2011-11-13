@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-#  Copyright (C) 1999-2001 Jesper Christensen 
+#  Copyright (C) 1999-2011 Jesper Christensen 
 # 
 #  This script is free software; you can redistribute it and/or
 #  modify it under the terms of the GNU General Public License as
@@ -61,11 +61,12 @@ push @crumbs,['Værker','fvaerker.pl?fhandle='.$poet->fhandle];
 push @crumbs,[$work->titleWithYear,'vaerktoc.pl?fhandle='.$poet->fhandle.'&amp;vhandle='.$work->vhandle];
 push @crumbs,[$poem->linkTitle,''];
 
-my $page = newAuthor Kalliope::Page ( poet => $poet,
-				      printer => url_param('printer') || 0,
-                                      page => 'vaerker',
-				      extrawindowtitle => $poem->linkTitle,
-                                      crumbs => \@crumbs);
+my $page = newAuthor Kalliope::Page(poet => $poet,
+				                    printer => url_param('printer') || 0,
+                                    page => 'vaerker',
+                                    coloumnwidths => [60,40],
+				                    extrawindowtitle => $poem->linkTitle,
+                                    crumbs => \@crumbs);
 
 
 if (defined param('newkeywords')) {
@@ -73,7 +74,7 @@ if (defined param('newkeywords')) {
 }
 
 $page->addBox( width => $poem->isProse ? '' : '10',
-	       coloumn => 1,
+	       coloumn => 0,
 	       align => $poem->isProse ? 'justify' : 'left',
 	       printer => 1,
 	       theme => 'book',
@@ -82,50 +83,49 @@ $page->addBox( width => $poem->isProse ? '' : '10',
 
 if ($poem->hasPics) { 
     $page->addBox( width => '250',
-	           coloumn => 2,
-		   theme => 'dark',
-	           content => &pics($poem) );
+	               coloumn => 1,
+		           theme => 'dark',
+	               content => &pics($poem) );
 }
 
 my @keywords = $poem->keywords;
 my @notes = $poem->notes;
 if ($#notes >= 0 || $#keywords >= 0) {
     $page->addBox( width => '250',
-	           printer => 1,
-		   printtitle => 'Noter',
-	           coloumn => 2,
-		   theme => 'dark',
-	           content => &notes($poem,@keywords) );
+	               printer => 1,
+		           printtitle => 'Noter',
+	               coloumn => 1,
+		           theme => 'dark',
+	               content => &notes($poem,@keywords) );
 }
 
 $page->addBox( width => '250',
                printer => 0,
-               coloumn => 2,
-  	       theme => 'dark',
-	       content => &quality($poem) );
+               coloumn => 1,
+  	           theme => 'dark',
+	           content => &quality($poem) );
 
 if ($poem->footnotes) { 
     $page->addBox( width => '250',
-	           coloumn => 2,
-	           printer => 1,
-		   theme => 'dark',
+	               coloumn => 1,
+	               printer => 1,
+		           theme => 'dark',
                    title => 'Fodnoter',
-	           content => &footnotes($poem) );
-
+	               content => &footnotes($poem) );
 }
 
 if ($poem->hasLineNotes) {
-    $page->addBox( width => '250',
-	           coloumn => 2,
-	           printer => 1,
-		   theme => 'dark',
-                   title => 'Fodnoter',
-	           content => &linenotes($poem) );
+    $page->addBox(width => '250',
+	              coloumn => 1,
+	              printer => 1,
+		          theme => 'dark',
+                  title => 'Fodnoter',
+	              content => &linenotes($poem) );
 }
 
 if (&xrefs($poem)) { 
     $page->addBox( width => '250',
-	           coloumn => 2,
+	           coloumn => 1,
 		   theme => 'dark',
                    title => 'Henvisninger hertil',
 	           content => &xrefs($poem) );
@@ -143,7 +143,7 @@ if (&xrefs($poem)) {
 my $workTitle = $work->titleWithYear;
 
 #$page->addBox( width =>'250',
-#	       coloumn => 2,
+#	       coloumn => 1,
 #               title => 'Indhold',
 #	       theme => 'dark',
 #	       content => &tableOfContents($work),
@@ -151,15 +151,16 @@ my $workTitle = $work->titleWithYear;
 #	     );
 
 $page->addBox( width => '250',
-	       coloumn => 2,
+	       coloumn => 1,
 	       theme => 'dark',
 	       content =>  &moreLinks($poem,$work));
 
 $page->addBox( width => '250',
-	       coloumn => 2,
+	       coloumn => 1,
 	       theme => 'dark',
 	       content => qq|<img alt="" src="gfx/trans1x1.gif" width="150" height="1">| );
 
+#$page->setColoumnWidths(60,40);	
 $page->print;
 
 #
@@ -345,7 +346,7 @@ sub notes {
         $HTML .= join ', ', map { $_->clickableTitle($LA) } @keywords;
 	$HTML .= '</span>';
     }
-    $HTML .= "</noter>";
+    $HTML .= "</div>";
     return $HTML;
 }
 

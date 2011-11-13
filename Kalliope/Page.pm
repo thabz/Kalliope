@@ -1,4 +1,4 @@
-#  Copyright (C) 1999-2001 Jesper Christensen 
+#  Copyright (C) 1999-2011 Jesper Christensen 
 #
 #  This script is free software; you can redistribute it and/or
 #  modify it under the terms of the GNU General Public License as
@@ -38,6 +38,7 @@ sub new {
     my $self = bless {}, $class;
 
     $self->{'pagegroupchoosen'} = '';
+    $self->{'coloumnwidths'} = [];
 
     foreach my $key (keys %args) {
         $self->{$key} = $args{$key};
@@ -51,7 +52,7 @@ sub new {
     $self->{'subtitle'} = $args{'subtitle'} || '';
     $self->{'nosubmenu'} = $args{'nosubmenu'} || 0;
     $self->{'columns'} = [];
-
+    
     if ($self->{'setremoteuser'}) {
         my $cookie = new CGI::Cookie(-expires => '+3M',
   	                             -name => 'user',
@@ -82,7 +83,8 @@ sub newAuthor {
     my $group = $poet->getType ne 'person' ? 'persons' : 'poets';
     my $page = new Kalliope::Page(pagegroupchoosen => $group, 
                                   title => $poet->name,
-				  subtitle => $args{'subtitle'},
+                                  coloumnwidths => $args{'coloumnwidths'},
+				                  subtitle => $args{'subtitle'},
                                   lang => $poet->lang,  %args);
     return $page;
 }
@@ -184,28 +186,19 @@ sub _constructBreadcrumbs {
 
 sub addBox {
     my ($self,%args) = @_;
-
-    my $bggfx = (defined $args{'theme'} && $args{'theme'} eq 'dark') ? 'pap.gif' : 'lightpap.gif';
-    $bggfx = 'notepap.jpg' if defined  $args{'theme'} && $args{'theme'} eq 'note';
     my $align =  $args{align} ? $args{align} : 'left';
     my $width;
-    if ($args{width} && $args{width} ne '100%') {
-	$width = qq|WIDTH="$args{width}"|;
-    } else {
-	$width = '';
-    }
     my $theme = $args{'theme'} || 'normal';
-
     my $HTML;
     $HTML .= qq|\n<div class="box$theme" $width style="text-align: $align">|;
     if ($args{title}) {
-	$HTML .= qq|<div class="listeoverskrifter">$args{title}</div><br>|;
+	    $HTML .= qq|<div class="listeoverskrifter">$args{title}</div><br>|;
     }
     $HTML .= $args{content};
     if ($args{end}) {
-	$HTML .= $args{end};
+	    $HTML .= $args{end};
     }
-    $HTML .= "</div><br><br>\n";
+    $HTML .= "</div>\n";
     $self->addHTML($HTML, %args);
 }
 
@@ -290,27 +283,22 @@ GOOGLEADS
 
     # Head BACKGROUND="gfx/frames/top.png"
     print '<div class="topsection">';
+    print '<img style="float:left" alt="#" src="'.$self->pageIcon.'" height="164" width="139">';
 
-    print '<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR>';
-    print '<TD ROWSPAN="3" valign="top"><IMG alt="#" SRC="'.$self->pageIcon.'" HEIGHT="164" WIDTH="139"></TD>';
-    print '<TD colspan="5" HEIGHT="32" WIDTH="100%" CLASS="top"><img alt="#" src="gfx/trans1x1.gif" height="72" width="1"></TD>';
-    print '</tr>';
-    
-    if ($self->{'nosubmenu'}) {
-	    print q|<tr><td class="submenu" colspan="5"><img alt="#" src="gfx/frames/small-menu-blank.gif"></td></tr>|;   
-    } else {
-	    print q|<tr>|;
-	    print q|<td width="100%" height="1" class="submenu"></td>|;   
-	    print '<td class="submenu"><img alt="#" src="gfx/frames/small-menu-left.gif"></td>';
-	    print qq|<td class="submenu" style="background: url(gfx/frames/small-menu-middle.gif)" nowrap>|;
+#    print '<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR>';
+#    print '<TD ROWSPAN="3" valign="top"><IMG alt="#" SRC="'.$self->pageIcon.'" HEIGHT="164" WIDTH="139"></TD>';
+#    print '<TD colspan="5" HEIGHT="32" WIDTH="100%" CLASS="top"><img alt="#" src="gfx/trans1x1.gif" height="72" width="1"></TD>';
+#    print '</tr>';
+#    
+    if (!$self->{'nosubmenu'}) {
+        print '<div class="submenu">';
 	    print $self->_navigationSub;
-	    print '</td>';
-	    print '<td class="submenu"><img alt="#" src="gfx/frames/small-menu-right.gif"></td>';
-	    print q|<td class="submenu"></td>|;
-	    print '</tr>';
+	    print '</div> <!-- submenu -->';
     }
-    print '<tr><td colspan="5" height="74" class="maintitle">'.$self->titleAsHTML.'</td></tr>';   
-    print '</table>';
+
+    print '<div class="maintitle">';
+    print $self->titleAsHTML;
+    print '</div> <!-- maintitle -->';
     
     print '</div> <!-- top section -->';
 
@@ -320,23 +308,32 @@ GOOGLEADS
     print $self->_navigationMain;
     print '</div></div> <!-- navigation -->';
     print '<div class="paper">';
-    print qq|<TABLE WIDTH="100%" CELLPADDING="5"><TR>\n\n|;
+    print '<div class="columnholder">';
     my @widths = $self->getColoumnWidths;
     my $count = 0;
     foreach my $colHTML (@{$self->{'coloumns'}}) {
         $colHTML = $colHTML || '';
-	    my $style = ++$count == 3 ? qq|style="width: 250px; border-left: 3px dotted #808080"| : '';
         my $width = shift @widths;
-	    if ($width) {
-	        print qq|<TD VALIGN="top" $style WIDTH="$width">$colHTML</TD>\n|;
-        } else {
-	        print qq|<TD $style VALIGN="top">$colHTML</TD>\n|;
-        }
+        print '<div class="column" style="width:'.$width.'%">';
+        print '<div class="column-content">';
+        print $colHTML;
+        print '</div> <!-- column-content -->';
+        print '</div> <!-- column -->';
+	    #my $style = ++$count == 3 ? qq|style="width: 250px; border-left: 3px dotted #808080"| : '';
+        #my $width = shift @widths;
+	    #if ($width) {
+	    #    print qq|<TD VALIGN="top" $style WIDTH="$width">$colHTML</TD>\n|;
+        #} else {
+	    #    print qq|<TD $style VALIGN="top">$colHTML</TD>\n|;
+        #}
     }
-    print '</TR></TABLE>';
+    print '<div class="clear"></div>';
+    print '</div> <!-- columnholder -->';
+    print '<div class="clear"></div>';
     print '</div> <!-- paper -->';
     print '<div class="clear"></div>';
     print '</div> <!-- middlesection -->';
+    print '<div class="clear"></div>';
 
     # Foot
     print '<div class="footer">';

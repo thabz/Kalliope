@@ -39,8 +39,9 @@ push @crumbs,['Biografi',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
                                       page => 'bio',
-				      subtitle => 'Biografi',
-				      printer => url_param('printer') || 0,
+                                      coloumnwidths => [70,30],
+				                      subtitle => 'Biografi',
+				                      printer => url_param('printer') || 0,
                                       crumbs => \@crumbs );
 
 #
@@ -49,11 +50,11 @@ my $page = newAuthor Kalliope::Page ( poet => $poet,
 if ($poet->hasBio) {
 $page->addBox( printtitle => $poet->name.' '.$poet->lifespan,
                width => '80%',
-               coloumn => 1,
-	       printer => 1,
-	       align => 'justify',
-	       end => qq|<a title="Udskriftsvenlig udgave" href="biografi.cgi?fhandle=$fhandle&printer=1"><img src="gfx/print.gif" border=0></a>|,
-	       content => $poet->bio || '<IMG ALIGN="left" SRC="gfx/excl.gif">Der er endnu ikke forfattet en biografi for '.$poet->name );
+               coloumn => 0,
+	           printer => 1,
+	           align => 'justify',
+	           end => qq|<a title="Udskriftsvenlig udgave" href="biografi.cgi?fhandle=$fhandle&printer=1"><img src="gfx/print.gif" border=0></a>|,
+	           content => $poet->bio || '<IMG ALIGN="left" SRC="gfx/excl.gif">Der er endnu ikke forfattet en biografi for '.$poet->name );
 }
 #
 # Detaljer
@@ -76,7 +77,7 @@ if ($poet->getDetailsAsHTML) {
 
 
     $page->addBox( width => '150',
-	    coloumn => 2,
+	    coloumn => 1,
 	    content => $HTML );
 }
 
@@ -151,7 +152,7 @@ if ($#events > 0) {
     Kalliope::buildhrefs(\$HTML);
     $page->addBox( title => 'Historiske begivenheder',
 	    width => '80%',
-	    coloumn => 1,
+	    coloumn => 0,
 	    content => $HTML);
 }
 

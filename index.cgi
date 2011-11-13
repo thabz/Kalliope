@@ -51,26 +51,27 @@ my $page = new Kalliope::Page (
 		frontpage => 1,
 		nosubmenu => 1,
 		crumbs => \@crumbs,
+		coloumnwidths => \[60,40],
 		changelangurl => 'poets.cgi?list=az&amp;sprog=XX',
            );
 
-$page->addBox (
-                coloumn => 0,
+$page->addBox ( coloumn => 0,
                 content => &latestNews($showAllNews),
                 end => $showAllNews ? '' : qq|<a class="more" href="index.cgi?showall=yes">Læs gamle nyheder...</a>| );
 
 if (my $dayToday = &dayToday()) {
     $page->addBox ( title => "Dagen idag",
-	    coloumn => 1,
-	    content => $dayToday,
-	    end => '<A class="more" HREF="today.cgi">Vælg anden dato...</A>');
+	                coloumn => 1,
+	                content => $dayToday,
+	                end => '<A class="more" HREF="today.cgi">Vælg anden dato...</A>');
 }
 
 my ($sonnetText,$sonnetEnd) = &sonnet;
 $page->addBox ( title => "Sonetten på pletten",
-	coloumn => 1,
-	content => $sonnetText,
-	end => $sonnetEnd);
+	            coloumn => 1,
+	            content => $sonnetText,
+	            end => $sonnetEnd);
+$page->setColoumnWidths(60,40);	
 $page->print();
 
 #
