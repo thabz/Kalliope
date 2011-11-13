@@ -39,39 +39,38 @@ my $page = new Kalliope::Page (
 		icon => 'keywords-blue',
                 page => 'historyfront'); 
 
-$page->addBox ( width => '70%',
-                content =>  &front($LA));
+$page->addFrontMenu(&front($LA));
 $page->print;
 
 
 sub front {
     my ($LA) = @_;
 
-    my @menuStruct = (
-      { url => "keywordtoc.cgi?sprog=$LA", 
-	title => 'Nøgleord', 
-	status => 1,
+    my @menuStruct = ({ 
+        url => "keywordtoc.cgi?sprog=$LA", 
+	    title => 'Nøgleord', 
+	    status => 1,
         desc => "Litteraturhistoriske skitser og forklaringer af litterære begreber",
         icon => 'gfx/icons/keywords-h48.gif'
-                    },{
+    },{
         url => "dict.cgi", 
-	title => 'Ordbog', 
-	status => 1, 
+	    title => 'Ordbog', 
+	    status => 1, 
         desc => "Forklaringer til svære eller usædvanlige ord som man støder på i de ældre digte",
         icon => 'gfx/icons/keywords-h48.gif'
-                    },{
-	url => "persons.cgi?list=az", 
-	title => 'Personer', 
-	status => 1,
+    },{
+	    url => "persons.cgi?list=az", 
+	    title => 'Personer', 
+	    status => 1,
         desc => "Litterært interessante personer som ikke har skrevet lyrik.",
         icon => 'gfx/icons/portrait-h48.gif',
-                    },{
-	url => "kabout.pl?page=about", 
-	title => 'Om Kalliope', 
-	status => 1,
+    },{
+	    url => "kabout.pl?page=about", 
+	    title => 'Om Kalliope', 
+	    status => 1,
         desc => "Om websitet Kalliope.",
         icon => 'gfx/icons/portrait-h48.gif',
-                    } );
+    });
 
-    return Kalliope::Web::frontMenu(@menuStruct);
+    return @menuStruct;
 }

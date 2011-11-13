@@ -127,25 +127,8 @@ my @menuStruct = (
                     } );
 
 map {$_->{'url'} = $_->{'url'}.'fhandle='.$poet->fhandle} @menuStruct;
-$HTML = Kalliope::Web::frontMenu(@menuStruct);
-$page->addBox( width => '80%',
-	coloumn => 1,
-	content => $HTML );
 
-
-#
-# Søgefelt
-#
-
-#if ($poet->hasPoems) {
-if (0) {
-    $HTML = qq|<FORM METHOD="get" ACTION="fsearch.cgi"><span style="font-size: 12px">Søgning i |.$poet->name.qq|s værker:</span><br><INPUT SIZE=12 TYPE="text" NAME="needle"><INPUT TYPE="hidden" NAME="fhandle" VALUE="$fhandle"> <INPUT CLASS="button" TYPE="submit" NAME="Knap" VALUE=" Søg "></FORM>|;
-
-     $page->addBox( width => '150',
-#    title => 'Søgning hos '.$poet->name,
-		    coloumn => 2,
-		    content => $HTML );
-}
+$page->addFrontMenu(@menuStruct);
 
 $page->print;
 

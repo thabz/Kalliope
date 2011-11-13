@@ -39,8 +39,7 @@ my $page = new Kalliope::Page (
                 thumb => 'gfx/icons/works-h70.gif',
                 page => 'worksfront'); 
 
-$page->addBox ( width => '70%',
-                content =>  &front($LA));
+$page->addFrontMenu(&front($LA));
 $page->print;
 
 sub front {
@@ -78,6 +77,6 @@ sub front {
         icon => 'gfx/icons/pop-h48.gif'
                     } );
 
-    return Kalliope::Web::frontMenu(@menuStruct);
+    return @menuStruct;
 }
 

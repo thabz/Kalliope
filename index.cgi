@@ -43,7 +43,7 @@ my $showAllNews = CGI::param('showall') && CGI::param('showall') eq 'yes' ? 1 : 
 
 my @crumbs = (['Velkommen','']);
 
-my $page = new Kalliope::Page (
+my $page = new Kalliope::Page(
 		title => 'Kalliope',
 		subtitle => $randomPagesTitles[$rnd],
 #		rss_feed_url => 'news-feed.cgi',
@@ -51,9 +51,9 @@ my $page = new Kalliope::Page (
 		frontpage => 1,
 		nosubmenu => 1,
 		crumbs => \@crumbs,
-		coloumnwidths => \[60,40],
+		coloumnwidths => [50,50],
 		changelangurl => 'poets.cgi?list=az&amp;sprog=XX',
-           );
+);
 
 $page->addBox ( coloumn => 0,
                 content => &latestNews($showAllNews),
@@ -71,7 +71,6 @@ $page->addBox ( title => "Sonetten på pletten",
 	            coloumn => 1,
 	            content => $sonnetText,
 	            end => $sonnetEnd);
-$page->setColoumnWidths(60,40);	
 $page->print();
 
 #

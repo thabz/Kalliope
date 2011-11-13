@@ -70,29 +70,6 @@ sub doubleColumn {
     return $HTML;
 }
 
-sub frontMenu {
-    my @menuStruct = @_;
-    my @activeItems = grep { $_->{'status'} } @menuStruct;
-    my $itemsNum = $#activeItems+1;
-
-    my $HTML = '<br><TABLE WIDTH="100%"><TR><TD CLASS="ffront" VALIGN="top" WIDTH="50%">';
-    $HTML .= '<TABLE CELLPADDING=2 CELLSPACING=0>';
-
-    my $i = 0;
-    foreach my $str (@activeItems) {
-	    my %item = %{$str};
-	    my $url = $item{url};
-	    if ($item{status}) {
-	        $HTML .= qq|<TR><TD VALIGN="top" ROWSPAN=2><A HREF="$url"><IMG HEIGHT=48 BORDER=0 SRC="$item{icon}" alt="#"></A></TD>|;
-	        $HTML .= qq|<TD CLASS="ffronttitle"><A HREF="$url">$item{title}</A><TD></TR>|;
-	        $HTML .= qq|<TR><TD VALIGN="top" CLASS="ffrontdesc">$item{desc}</TD></TR>|;
-	        $HTML .= qq|<tr><td></td></tr>|;
-	        $HTML .= '</TABLE></TD><TD CLASS="ffront" VALIGN="top" WIDTH="50%"><TABLE CELLPADDING=2 CELLSPACING=0>' if (++$i == int (($itemsNum + 1 )/2 ));
-	    }
-    }
-    $HTML .= '</TABLE></TD></TR></TABLE>';
-    return $HTML;
-}
 
 sub tabbedView {
     my ($selectedId,$body,@tabs) = @_;

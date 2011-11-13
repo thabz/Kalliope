@@ -28,7 +28,7 @@ my %titler = ( musen => 'Musen Kalliope',
                interne => 'Interne sider',
                faq => 'Ofte stillede spørgsmål',
                attractions => 'Coming attractions',
-	       about => '' );
+	           about => '' );
 
 my $select = CGI::url_param('page');
 my $title = $titler{$select};
@@ -38,10 +38,10 @@ my $HTML = &readFile(CGI::url_param('page'));
 
 my $page = new Kalliope::Page (
 		title => 'Om Kalliope',
-                pagegroup => 'om',
+        pagegroup => 'om',
 		subtitle => $title,
 		crumbs => \@crumbs,
-                page => $select); 
+        page => $select); 
 
 $page->addBox (width => '75%',
                content => $HTML);
@@ -53,10 +53,10 @@ sub readFile {
     if ($file =~ /\.\./ || !(-e "data/html//$file.html")) {
         Kalliope::Page::notFound();
     } else {
-	open(FILE,"data/html/$file.html");
-	foreach  (<FILE>) {
-	    $HTML .= $_;
-	}
+	    open(FILE,"data/html/$file.html");
+	    foreach  (<FILE>) {
+	        $HTML .= $_;
+	    }
         close (FILE);
     }
     return $HTML;

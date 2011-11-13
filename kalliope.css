@@ -98,16 +98,13 @@ TD.ffronttitle {
 
 TD.ffrontdesc {
     color: #808080;
-    font-family: Arial, Helvetica;
     font-size: 11px; 
 }
 
 TD.boxheaderlayer {
     color: black;
-    font-family: Arial,Helvetiva;
-/* text-align: center; */
-font-size: 14px;
-font-weight: 800;
+    font-size: 14px;
+    font-weight: 800;
 }
 
 DIV.nav {
@@ -118,7 +115,7 @@ DIV.nav {
 }
 
 body {
-    font-family: Arial, Helverica, SansSerif;
+    font-family: Helvetica, Arial, sans-serif;;
     font-size: 13px;
     background-color: #c0c0c0;
     padding: 0px;
@@ -437,15 +434,16 @@ div.noter p {
    text-indent: 10pt;	   
 }
 
+/* sidebars */
+
+div.morelinks {
+    padding-top: 40px;
+}
+
 /* div layout */
 
 div.clear {
     clear: both;
-}
-
-div.layout div {
-    padding: 0;
-    margin: 0;
 }
 
 div.layout div.site { 
@@ -465,7 +463,7 @@ div.layout div.breadcrumbs {
 div.layout div.topsection {
     width: 770px;
     height: 164px;
-    background: url(gfx/frames/topsection.gif) top right repeat-x;
+    background: url(gfx/frames/topsection.png) top right repeat-x;
     position: relative;
 }
 
@@ -550,3 +548,35 @@ div.layout div.footer div.searchbox {
 div.layout div.footer div.flags {
     float: right;
 }
+
+/* frontmenu elements */
+
+div.frontmenu-item {
+    padding-bottom: 20px;
+}
+
+div.frontmenu-item div.icon {
+    float: left;
+    margin-right: 20px;
+    width: 50px;
+}
+
+div.frontmenu-item div.title {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+div.frontmenu-item div.descr {
+    color: #808080;
+    font-size: 11px; 
+}
+
+/* Special style for smart phones */
+@media screen and (max-device-width: 480px) {
+    div {
+        color: red;
+    }
+
+}
+

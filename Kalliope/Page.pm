@@ -187,10 +187,9 @@ sub _constructBreadcrumbs {
 sub addBox {
     my ($self,%args) = @_;
     my $align =  $args{align} ? $args{align} : 'left';
-    my $width;
     my $theme = $args{'theme'} || 'normal';
     my $HTML;
-    $HTML .= qq|\n<div class="box$theme" $width style="text-align: $align">|;
+    $HTML .= qq|\n<div class="box$theme" style="text-align: $align">|;
     if ($args{title}) {
 	    $HTML .= qq|<div class="listeoverskrifter">$args{title}</div><br>|;
     }
@@ -198,9 +197,51 @@ sub addBox {
     if ($args{end}) {
 	    $HTML .= $args{end};
     }
-    $HTML .= "</div>\n";
+    $HTML .= "</div> <!-- box -->";
     $self->addHTML($HTML, %args);
 }
+
+sub addFrontMenu {
+    my ($self,@menuStruct) = @_;
+    my @activeItems = grep { $_->{'status'} } @menuStruct;
+    my $itemsNum = $#activeItems+1;
+
+    $self->setColoumnWidths(50,50);
+
+    my $splitAt = int(($itemsNum+1) / 2);
+
+#    my $HTML = '<TABLE WIDTH="100%"><TR><TD CLASS="ffront" VALIGN="top" WIDTH="50%">';
+#    $HTML .= '<TABLE CELLPADDING=2 CELLSPACING=0>';
+
+    my $i = 0;
+    foreach my $str (@activeItems) {
+	    my %item = %{$str};
+	    my $url = $item{url};
+	    if ($item{status}) {
+	        my $HTML = '<div class="frontmenu-item">';
+	        $HTML .= qq|<div class="icon"><a href="$url"><img height=48 border="0" src="$item{icon}" alt="#"></a></div>|;
+	        $HTML .= qq|<div class="title"><a href="$url">$item{title}</a></div>|;
+	        $HTML .= qq|<div class="descr"><a href="$url">$item{desc}</a></div>|;
+	        $HTML .= qq|<div class="clear"></div>|;
+	        $HTML .= '</div> <!-- frontmenu-item -->';
+	        $self->addBox(coloumn => $i++ < $splitAt ? 0 : 1,
+	                      content => $HTML);
+	        #$page->addBox( width => '80%',
+            #	coloumn => 1,
+            #	content => $HTML );
+            
+        }
+	    #    $HTML .= qq|<TR><TD VALIGN="top" ROWSPAN=2><A HREF="$url"><IMG HEIGHT=48 BORDER=0 SRC="$item{icon}" alt="#"></A></TD>|;
+	    #    $HTML .= qq|<TD CLASS="ffronttitle"><A HREF="$url">$item{title}</A><TD></TR>|;
+	    #    $HTML .= qq|<TR><TD VALIGN="top" CLASS="ffrontdesc">$item{desc}</TD></TR>|;
+	    #    $HTML .= qq|<tr><td></td></tr>|;
+	    #    $HTML .= '</TABLE></TD><TD CLASS="ffront" VALIGN="top" WIDTH="50%"><TABLE CELLPADDING=2 CELLSPACING=0>' if (++$i == int (($itemsNum + 1 )/2 ));
+	    
+    }
+#    $HTML .= '</TABLE></TD></TR></TABLE>';
+#    return $HTML;
+}
+
 
 sub print {
     my $self = shift;

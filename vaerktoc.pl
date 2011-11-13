@@ -48,13 +48,14 @@ push @crumbs,[$work->titleWithYear,''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
                                       page => 'vaerker',
+                                      coloumnwidths => [70,30],
                                       extrawindowtitle => $work->titleWithYear,
                                       crumbs => \@crumbs );
 
 my $mode = $work->isProse ? 'prosa' : 'poetical'; 
 
 $page->addBox( width => '80%',
-               coloumn => 1,
+               coloumn => 0,
 #               title => 'Indhold',
                content => &tableOfContent($work),
 	       theme => 'book'
@@ -62,13 +63,13 @@ $page->addBox( width => '80%',
 
 if ($work->hasPics) {
     $page->addBox( width => '100%',
-	           coloumn => 2,
-	           theme => 'dark',
-                   content => &pics($work) );
+	            coloumn => 1,
+	            theme => 'dark',
+                content => &pics($work) );
 }
 
 $page->addBox( width => '250',
-               coloumn => 2,
+               coloumn => 1,
                theme => 'dark',
                content => &notes($work) );
 
@@ -81,16 +82,15 @@ $page->addBox( width => '250',
 #              );
 
 $page->addBox( width => '100%',
-	       coloumn => 2,
+	       coloumn => 1,
 	       theme => 'dark',
 	       content => &otherFormats($poet,$work) );
 
 $page->addBox( width => '250',
-	       coloumn => 2,
+	       coloumn => 1,
 	       theme => 'dark',
 	       content => qq|<img src="gfx/trans1x1.gif" width="150" height="1">| );
 
-$page->setColoumnWidths(0,'80%',250);
 $page->print;
 
 #
@@ -147,6 +147,7 @@ sub notes {
     $HTML .= 'Sidst ændret: '.Kalliope::Date::shortDate($work->lastModified);
     $HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>';
     $HTML .= $work->quality->asHTML;
+    $HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>';
     $HTML = qq|<span style="font-size: 12px">$HTML</span>|;
     return $HTML;
 }

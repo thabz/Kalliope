@@ -57,51 +57,28 @@ my @works = $mode eq 'poetical' ? $poet->poeticalWorks : $poet->proseWorks;
 #@works = $poet->allWorks;
 
 if ($#works >= 0) {
-    my $nr;
-    my $splitpos = ($#works+1 > 6) ? int(($#works+1) / 2 + 0.5 ) : 0;
-    $HTML .= '<TABLE HEIGHT="100%" CELLPADDING=0 CELLSPACING=10><TR><TD WIDTH="50%" VALIGN=top>';
-    $HTML .= '<TABLE>';
+    my @menuItems;
     foreach my $work (@works) {
-	    $HTML .= '<TR><TD>';
-	    if ($work->hasContent) {
-	        my $iconfile = $work->status eq 'complete' ? 'icons/book-h48.gif' : 'icons/incomplete-h48.gif';
-	        $HTML .= '<A HREF="vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle.'">';
-	        $HTML .= qq|<IMG HEIGHT=48 ALT="" BORDER=0 
-	    	        SRC="gfx/$iconfile" VALIGN="middle"></A>
-	    	        </TD><TD>|;
-	        $HTML .= '<A HREF="vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle.'"><FONT COLOR="black">';
-	    } else {
-	        my $iconfilena =  'icons/book-na-h48.gif';
-	        $HTML .= qq|<IMG HEIGHT=48 ALT="" BORDER=0  
-	    	SRC="gfx/$iconfilena" VALIGN="center">
-	    	</TD><TD><FONT COLOR="#808080">|;
-	    }
-	    $HTML .= '<I>'.$work->title.'</I> '.$work->parenthesizedYear.'</FONT>';
-	    $HTML .= '</A>' if $work->hasContent;
-	    $HTML .= '</TD></TR>';
-	    if (++$nr == $splitpos) {
-	        $HTML .= '</TABLE></TD><TD BGCOLOR=black><IMG WIDTH=1 HEIGHT=1 SRC="gfx/trans1x1.gif" ALT="">';
-	        $HTML .= '</TD><TD WIDTH="50%" VALIGN=top><TABLE>' ;
-	    }
-    }
-    $HTML .= "</TABLE>";   
-    $HTML .= '</TD></TR></TABLE>';
+        my $iconfile;
+        if ($work->hasContent) {
+            $iconfile = $work->status eq 'complete' ? 'gfx/icons/book-h48.gif' : 'gfx/icons/incomplete-h48.gif';
+        } else {
+            $iconfile = 'gfx/icons/book-na-h48.gif';
+        }
+        push @menuItems, { 
+            url => 'vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle, 
+    	    title => $work->title, 
+    	    status => $work->hasContent,
+            desc => $work->parenthesizedYear,
+            icon => $iconfile
+        }
+    }    
+    $page->addFrontMenu(@menuItems);
 } else {
     my $name = $poet->name;
-    $HTML .= qq|<IMG SRC="gfx/excl.gif">Der findes endnu ingen af ${name}s værker i Kalliope|;
-}
-
-$page->addBox(width => '75%',
-              coloumn => 1,
-              content => $HTML);
-
-#if ($poet->yearDead>1932) {
-if (0) {
-    my $name = $poet->name;
-    $page->addBox( title => 'Bemærk',
-                   width => '200',
-                   coloumn => 2,
-	           content => qq|<IMG ALIGN="left" SRC="gfx/excl.gif">Ifølge reglerne om ophavsret, må ${name}s værker ikke kunne blive tilføjet Kalliope før 70 år efter digterens død.|);
+    my $HTML = qq|<IMG SRC="gfx/excl.gif">Der findes endnu ingen af ${name}s værker i Kalliope|;
+    $page->addBox(coloumn => 0,
+                  content => $HTML);
 }
 
 $page->print;

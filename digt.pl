@@ -64,7 +64,7 @@ push @crumbs,[$poem->linkTitle,''];
 my $page = newAuthor Kalliope::Page(poet => $poet,
 				                    printer => url_param('printer') || 0,
                                     page => 'vaerker',
-                                    coloumnwidths => [60,40],
+                                    coloumnwidths => [70,30],
 				                    extrawindowtitle => $poem->linkTitle,
                                     crumbs => \@crumbs);
 
@@ -155,12 +155,6 @@ $page->addBox( width => '250',
 	       theme => 'dark',
 	       content =>  &moreLinks($poem,$work));
 
-$page->addBox( width => '250',
-	       coloumn => 1,
-	       theme => 'dark',
-	       content => qq|<img alt="" src="gfx/trans1x1.gif" width="150" height="1">| );
-
-#$page->setColoumnWidths(60,40);	
 $page->print;
 
 #
@@ -187,7 +181,11 @@ sub moreLinks {
 	my $title = $poem->linkTitle;
         $HTML .= qq|<a class="more" title="Gå til »$title«" href="digt.pl?longdid=$prevPoem">Forrige tekst...</a><br>|;
     }
+<<<<<<< HEAD
     $HTML .= '</div>';
+=======
+    $HTML .= '</div> <!-- morelinks -->';
+>>>>>>> More div conversion
     return $HTML;
 }
 

@@ -39,8 +39,8 @@ my $page = new Kalliope::Page (
 	        icon => 'poem-turkis',
                 page => 'poemsfront'); 
 
-$page->addBox ( width => '70%',
-                content =>  &front($LA));
+$page->addFrontMenu(&front($LA));
+
 $page->print;
 
 
@@ -73,5 +73,5 @@ sub front {
         icon => 'gfx/icons/poem-h48.gif'
 		    } );
 
-    return Kalliope::Web::frontMenu(@menuStruct);
+    return @menuStruct;
 }
