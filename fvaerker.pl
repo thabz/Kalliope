@@ -68,7 +68,8 @@ if ($#works >= 0) {
         push @menuItems, { 
             url => 'vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle, 
     	    title => $work->title, 
-    	    status => $work->hasContent,
+    	    status => 1,
+    	    unclickable => !$work->hasContent,
             desc => $work->parenthesizedYear,
             icon => $iconfile
         }
@@ -82,4 +83,3 @@ if ($#works >= 0) {
 }
 
 $page->print;
-

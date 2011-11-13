@@ -3,17 +3,20 @@ acronym {
    border: none;
 }
 
-A.timecontext:link, A.timecontext:visited, A.timecontext:active { text-decoration: none; }
-A.timecontext:hover { border-bottom: 1px solid #f040f0}
-
+a.timecontext:link, a.timecontext:visited, a.timecontext:active { 
+    text-decoration: none; 
+}
+a.timecontext:hover {
+    border-bottom: 1px solid #f040f0
+}
 
 .blue {
     color: rgb(16,102,123);
 }
 
 a.framed {
-border: 1px solid black;
-padding: 1px;
+    border: 1px solid black;
+    padding: 1px;
 }
 
 span.newsdate {
@@ -45,7 +48,7 @@ footnote {
     color: rgb(139,56,65);
 }
 
-INPUT.button {
+input.button {
     background-color: rgb(139,56,65);
     color: white;
     font-family:  Helvetica, Arial;
@@ -69,15 +72,15 @@ input.search {
     background-color: #F0f0e3;
 }
 
-SPAN.wide {
+span.wide {
     letter-spacing: 0.2em;
 }
 
-TD {
+td {
     font-size: 13px;
 }
 
-TD.timeline {
+td.timeline {
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   border-top: 1px solid white;
@@ -90,24 +93,24 @@ TD.timeline {
   background-color: rgb(225,225,214);
 }
 
-TD.ffronttitle {
+td.ffronttitle {
     color: black;
     font-size: 16px;
     font-weight: bold;
 }
 
-TD.ffrontdesc {
+td.ffrontdesc {
     color: #808080;
     font-size: 11px; 
 }
 
-TD.boxheaderlayer {
+td.boxheaderlayer {
     color: black;
     font-size: 14px;
     font-weight: 800;
 }
 
-DIV.nav {
+div.nav {
 /*    background-color: white; */
 /*    height: 100px;*/
       background-color: black;
@@ -122,7 +125,7 @@ body {
     margin: 0px;
 }
 
-DIV.biothumb {
+div.biothumb {
     width: 150px;
     font-size: 8px;
     font-family: Helvetica, Arial;
@@ -132,40 +135,40 @@ DIV.biothumb {
     text-align: justify;
 }
 
-A.biothumb {
+a.biothumb {
     color: #808080;
 
 }
 
-A:link, A:visited, A:active { text-decoration: none; }
-A:hover { color: #404040 }
+a:link, a:visited, a:active { text-decoration: none; }
+a:hover { color: #404040 }
 
-A.leftframe:link, A.leftframe:visited, A.leftframe:active { 
+a.leftframe:link, a.leftframe:visited, a.leftframe:active { 
     text-decoration:none;
     color: rgb(119,152,193);
     border: 0px;
 }
-A.leftframe:hover {
+a.leftframe:hover {
     color: rgb(19,52,93);
 
 }
 
-A.white:link, A.white:visited, A.white:active { 
+a.white:link, a.white:visited, a.white:active { 
     text-decoration:none;
     color: rgb(217,206,189);
 
 }
 
-A.green:link, A.green:visited, A.green:active { 
+a.green:link, a.green:visited, a.green:active { 
     color: rgb(139,56,65)
 }
 
-A.green:hover {
+a.green:hover {
       color: rgb(139,56,65)
 }
 
-A.blue:link, A.blue:visited, A.blue:active { color: rgb(16,102,123)}
-P.hist { text-align: justify }
+a.blue:link, a.blue:visited, a.blue:active { color: rgb(16,102,123)}
+p.hist { text-align: justify }
 
 span.gray {
     color: #808080;
@@ -175,7 +178,7 @@ span.gray a.green {
      color: rgb(159,92,99);
 }
 
-TD.textboxheader  { 
+td.textboxheader  { 
 padding: 0pt 0pt 0pt 0pt;
 margin: 0pt 0pt 0pt 0pt;
 	font-size: 12pt;
@@ -184,7 +187,7 @@ margin: 0pt 0pt 0pt 0pt;
 	background-color: #6384ad;
 }
 
-H1, H2, H3 {
+h1, h2, h3 {
     font-size: 18px;
     text-align: left;
     font-family: Arial, Helvetiva;
@@ -193,12 +196,12 @@ H1, H2, H3 {
 }
 
 	
-TD.textboxcontent { 
+td.textboxcontent { 
     padding: 0pt 0pt 0pt 0pt; 
     margin: 0pt 0pt 0pt 0pt;
 }
 
-TD.topframetitel {
+td.topframetitel {
     font-family: Georgia, Times;
     font-size: 40px;
     color: white; 
@@ -338,15 +341,6 @@ div.bodypopup {
 
 /* Sidens overskrift */
 
-/*
-td.maintitle {
-    font-size: 24px;
-    font-weight: normal;
-    font-family: Arial, Helvetica;
-    padding-left: 25px;
-    text-align: left;	   
-}
-*/
 
 span.subtitle {
     color: rgb(117,106,89);
@@ -446,12 +440,11 @@ div.clear {
     clear: both;
 }
 
-div.layout div.site { 
-    margin-top: 20px;
+div.site { 
     width: 770px;
 }
 
-div.layout div.breadcrumbs {
+div.breadcrumbs {
     background-color: #fafaea;
     font-size: 11px;
     color: #808080;
@@ -460,14 +453,14 @@ div.layout div.breadcrumbs {
     height: 13px;
 }
 
-div.layout div.topsection {
+div.topsection {
     width: 770px;
     height: 164px;
     background: url(gfx/frames/topsection.png) top right repeat-x;
     position: relative;
 }
 
-div.layout div.topsection div.submenu {
+div.submenu {
     height: 13px;
     background: #ab201e;
     color: #f0f0f0;
@@ -483,7 +476,7 @@ div.layout div.topsection div.submenu {
     box-shadow: 1px 1px 2px black;
 }
 
-div.layout div.maintitle {
+div.maintitle {
     position: absolute;
     left: 156px;
     bottom: 0;
@@ -494,29 +487,29 @@ div.layout div.maintitle {
     
 }
 
-div.layout div.middlesection {
+div.middlesection {
     width: 770px;
     background: url(gfx/frames/left.gif) repeat-y;
     padding-bottom: 40px;
     min-height: 400px;
 }
 
-div.layout div.navigation {
+div.navigation {
     width: 139px;
     float: left;
 }
 
-div.layout div.navigation div {
+div.navigation div {
     padding-top: 40px;
     color: rgb(117,106,89); 
     width: 138px;
 }
 
-div.layout div.toppart {
+div.toppart {
     height: 164px;
 }
 
-div.layout div.paper {
+div.paper {
     float: left;
     width: 631px;
     padding-top: 20px;
@@ -526,26 +519,26 @@ div.columnholder {
     width: 100%;
 }
 
-div.layout div.column {
+div.column {
     float: left;
 }
 
-div.layout div.column-content {
+div.column-content {
     padding: 0 20px 0 20px;
 }
 
-div.layout div.footer {
+div.footer {
     border-top: 1px solid #c7bb95;
     background-color: #fafaea;
     padding: 10px 10px 10px 10px;
 }
 
-div.layout div.footer div.searchbox {
+div.footer div.searchbox {
     float: left;
     height: 0;
 }
 
-div.layout div.footer div.flags {
+div.footer div.flags {
     float: right;
 }
 
@@ -574,9 +567,42 @@ div.frontmenu-item div.descr {
 
 /* Special style for smart phones */
 @media screen and (max-device-width: 480px) {
+    body {
+        -webkit-text-size-adjust:none;
+        padding: 5px;
+    }
+    
     div {
-        color: red;
+      clear:both!important;
+      display:block!important;
+      width:100%!important;
+      height: auto;
+      float:none!important;
+      margin:0!important;
+      padding:0!important;
+      position: relative!important;
+      left: 0!important;
+      top: 0!important;
+      background:#EAEADA;
+      border: 0;
+      text-align: left;
+      clear: both;
     }
 
+    div.layout div.site, div.layout div.topsection {
+        width: 100%;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .topsection img {
+        display: none;
+    }
 }
-

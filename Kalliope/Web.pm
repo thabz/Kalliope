@@ -70,7 +70,6 @@ sub doubleColumn {
     return $HTML;
 }
 
-
 sub tabbedView {
     my ($selectedId,$body,@tabs) = @_;
     my $HTML;

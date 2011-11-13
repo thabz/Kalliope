@@ -209,37 +209,69 @@ sub addFrontMenu {
     $self->setColoumnWidths(50,50);
 
     my $splitAt = int(($itemsNum+1) / 2);
-
-#    my $HTML = '<TABLE WIDTH="100%"><TR><TD CLASS="ffront" VALIGN="top" WIDTH="50%">';
-#    $HTML .= '<TABLE CELLPADDING=2 CELLSPACING=0>';
-
     my $i = 0;
     foreach my $str (@activeItems) {
 	    my %item = %{$str};
 	    my $url = $item{url};
 	    if ($item{status}) {
 	        my $HTML = '<div class="frontmenu-item">';
-	        $HTML .= qq|<div class="icon"><a href="$url"><img height=48 border="0" src="$item{icon}" alt="#"></a></div>|;
-	        $HTML .= qq|<div class="title"><a href="$url">$item{title}</a></div>|;
-	        $HTML .= qq|<div class="descr"><a href="$url">$item{desc}</a></div>|;
+	        if ($item{unclickable}) {
+    	        $HTML .= qq|<div class="icon"><img height=48 border="0" src="$item{icon}" alt="#"></div>|;
+    	        $HTML .= qq|<div class="title">$item{title}</div>|;
+    	        $HTML .= qq|<div class="descr">$item{desc}</div>|;
+	        } else {
+    	        $HTML .= qq|<div class="icon"><a href="$url"><img height=48 border="0" src="$item{icon}" alt="#"></a></div>|;
+    	        $HTML .= qq|<div class="title"><a href="$url">$item{title}</a></div>|;
+    	        $HTML .= qq|<div class="descr"><a href="$url">$item{desc}</a></div>|;
+	        }
 	        $HTML .= qq|<div class="clear"></div>|;
 	        $HTML .= '</div> <!-- frontmenu-item -->';
 	        $self->addBox(coloumn => $i++ < $splitAt ? 0 : 1,
 	                      content => $HTML);
-	        #$page->addBox( width => '80%',
-            #	coloumn => 1,
-            #	content => $HTML );
-            
         }
-	    #    $HTML .= qq|<TR><TD VALIGN="top" ROWSPAN=2><A HREF="$url"><IMG HEIGHT=48 BORDER=0 SRC="$item{icon}" alt="#"></A></TD>|;
-	    #    $HTML .= qq|<TD CLASS="ffronttitle"><A HREF="$url">$item{title}</A><TD></TR>|;
-	    #    $HTML .= qq|<TR><TD VALIGN="top" CLASS="ffrontdesc">$item{desc}</TD></TR>|;
-	    #    $HTML .= qq|<tr><td></td></tr>|;
-	    #    $HTML .= '</TABLE></TD><TD CLASS="ffront" VALIGN="top" WIDTH="50%"><TABLE CELLPADDING=2 CELLSPACING=0>' if (++$i == int (($itemsNum + 1 )/2 ));
-	    
     }
-#    $HTML .= '</TABLE></TD></TR></TABLE>';
-#    return $HTML;
+}
+
+
+sub addDoubleColumn {
+    my ($self,@blocks) = @_;
+    my $HTML;
+    my $total;
+    my $subtotal = 0;
+    my $i;
+    
+    $self->setColoumnWidths(50,50);
+
+    map { $_->{'count'} += 3 } @blocks;
+    map { $total += $_->{'count'} } grep {$_->{'count'}} @blocks;
+
+    my ($left,$right) = (0,0);
+    my $minI;
+    my $minDiff = $total;
+    for ($i = 0; $i <= $#blocks; $i++) {
+	    $right = $total - $left;
+	    if (abs ($right-$left) <= $minDiff ) {
+            $minDiff = abs ($right-$left);
+	        $minI = $i;
+	    }
+        $left += $blocks[$i]->{'count'};
+    }
+    
+    $i = 0;
+    foreach $b (@blocks) {
+        next unless ($b->{'count'});
+	    if ($i == $minI && $total > 8) {
+	        $self->addBox(coloumn => 0,
+	                      content => $HTML);
+	        $HTML = '';
+	    }
+        $subtotal += $b->{'count'};
+	    $HTML .= $b->{'head'} || '';
+	    $HTML .= ($b->{'body'} || '')."<BR>\n";
+	    $i++;
+    }
+    $self->addBox(coloumn => 1,
+                  content => $HTML);
 }
 
 
@@ -289,6 +321,8 @@ EOF
 <script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.resizable.js"></script>
 <script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.dialog.js"></script>
 <link type="text/css" href="http://jqueryui.com/latest/themes/base/ui.all.css" rel="stylesheet"/>
+<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
 	    |;
     }
     print qq|

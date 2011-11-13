@@ -99,9 +99,9 @@ for (my $i = 0; $i <= $#lines; $i++) {
     $line = qq|$line <SPAN STYLE="color: #808080">[$line2]</SPAN>| if $line eq $previousLine && $line2 ne '';
 
     unless ($i+1 > $#lines) {
-	my $nextf = $lines[$i+1];
-	my $nextline =  $mode == 1 ? $nextf->{'titel'} : $nextf->{'foerstelinie'};
-	$line = qq|$line <SPAN STYLE="color: #808080">[$line2]</SPAN>| if $line eq $nextline && $line2 ne '';
+	    my $nextf = $lines[$i+1];
+	    my $nextline =  $mode == 1 ? $nextf->{'titel'} : $nextf->{'foerstelinie'};
+	    $line = qq|$line <SPAN STYLE="color: #808080">[$line2]</SPAN>| if $line eq $nextline && $line2 ne '';
     }
 
     my $linefix = $line;
@@ -126,14 +126,12 @@ for (my $i = 0; $i <= $#lines; $i++) {
     $previousLine = $line3;
 
 }
+
 #
 # Udskriv boks
 #
 
-my $HTML = Kalliope::Web::doubleColumn(\@blocks);
+$page->addDoubleColumn(@blocks);
 
-$page->addBox( coloumn => 1,
-               width => '90%',
-	       content => $HTML );
 $page->print;
 
