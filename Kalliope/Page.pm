@@ -32,17 +32,21 @@ sub new {
     my ($class,%args) = @_;
 
     if (defined $args{'printer'} && $args{'printer'} == 1) {
-	$class = 'Kalliope::Page::Print';
+	    $class = 'Kalliope::Page::Print';
     }
     
     my $self = bless {}, $class;
 
+    # Default values
     $self->{'pagegroupchoosen'} = '';
     $self->{'coloumnwidths'} = [];
+    $self->{'columnrule'} = 0;
 
+    # Override defaults
     foreach my $key (keys %args) {
         $self->{$key} = $args{$key};
     }
+    
     $self->{'lang'} = $args{'lang'} || 'dk';
     $self->{'pagegroup'} = $args{'pagegroup'} || '';
     $self->{'page'} = $args{'page'} || '';
@@ -54,25 +58,27 @@ sub new {
     $self->{'columns'} = [];
     
     if ($self->{'setremoteuser'}) {
-        my $cookie = new CGI::Cookie(-expires => '+3M',
-  	                             -name => 'user',
-	                             -value => $self->{'setremoteuser'});
+        my $cookie = new CGI::Cookie(
+            -expires => '+3M',
+  	        -name => 'user',
+	        -value => $self->{'setremoteuser'});
     	$self->{'cookies'} = [$cookie];
     }
     if ($self->{'removeremoteuser'}) {
-        my $cookie = new CGI::Cookie(-expires => '-1M',
-  	                             -name => 'user',
-	                             -value => 0);
+        my $cookie = new CGI::Cookie(
+            -expires => '-1M',
+  	        -name => 'user',
+	        -value => 0);
     	$self->{'cookies'} = [$cookie];
     }
 
     if ($args{'changelangurl'}) {
         $self->{'changelangurl'} = $args{'changelangurl'};
     } elsif ($self->{'poet'}) {
-	$self->{'changelangurl'} = 'poets.cgi?list=az&amp;sprog=XX';
+	    $self->{'changelangurl'} = 'poets.cgi?list=az&amp;sprog=XX';
     } else {
-	$ENV{REQUEST_URI} =~ /([^\/]*)$/;
-	$self->{'changelangurl'} = $1;
+	    $ENV{REQUEST_URI} =~ /([^\/]*)$/;
+	    $self->{'changelangurl'} = $1;
     }
     return $self;
 }
@@ -84,7 +90,8 @@ sub newAuthor {
     my $page = new Kalliope::Page(pagegroupchoosen => $group, 
                                   title => $poet->name,
                                   coloumnwidths => $args{'coloumnwidths'},
-				                  subtitle => $args{'subtitle'},
+                                  columrule => $args{'columnrule'},
+                                  subtitle => $args{'subtitle'},
                                   lang => $poet->lang,  %args);
     return $page;
 }
@@ -105,8 +112,8 @@ sub thumbIMG {
     if ($self->{'poet'} && $self->{'poet'}->thumbURI) {
         my $poet = $self->{'poet'};
         $src = $poet->thumbURI;
-	$alt = 'Tilbage til hovedmenuen for '.$poet->name;
-	$href = 'ffront.cgi?fhandle='.$poet->fhandle;
+	    $alt = 'Tilbage til hovedmenuen for '.$poet->name;
+	    $href = 'ffront.cgi?fhandle='.$poet->fhandle;
     } elsif ($self->{'thumb'}) {
         $src = $self->{'thumb'};
     }
@@ -356,15 +363,9 @@ GOOGLEADS
 	    print '</div>';
     }
 
-    # Head BACKGROUND="gfx/frames/top.png"
     print '<div class="topsection">';
     print '<img style="float:left" alt="#" src="'.$self->pageIcon.'" height="164" width="139">';
 
-#    print '<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR>';
-#    print '<TD ROWSPAN="3" valign="top"><IMG alt="#" SRC="'.$self->pageIcon.'" HEIGHT="164" WIDTH="139"></TD>';
-#    print '<TD colspan="5" HEIGHT="32" WIDTH="100%" CLASS="top"><img alt="#" src="gfx/trans1x1.gif" height="72" width="1"></TD>';
-#    print '</tr>';
-#    
     if (!$self->{'nosubmenu'}) {
         print '<div class="submenu">';
 	    print $self->_navigationSub;
@@ -383,28 +384,26 @@ GOOGLEADS
     print $self->_navigationMain;
     print '</div></div> <!-- navigation -->';
     print '<div class="paper">';
+
     print '<div class="columnholder">';
     my @widths = $self->getColoumnWidths;
-    my $count = 0;
     foreach my $colHTML (@{$self->{'coloumns'}}) {
         $colHTML = $colHTML || '';
         my $width = shift @widths;
-        print '<div class="column" style="width:'.$width.'%">';
-        print '<div class="column-content">';
+        my $columnrule = '';
+        if ($self->{'columnrule'} && $#widths == -1) {
+            $columnrule = 'columnrule';
+        }
+        print "<div class='column column$width'>";
+        print "<div class='column-content $columnrule'>";
         print $colHTML;
         print '</div> <!-- column-content -->';
         print '</div> <!-- column -->';
-	    #my $style = ++$count == 3 ? qq|style="width: 250px; border-left: 3px dotted #808080"| : '';
-        #my $width = shift @widths;
-	    #if ($width) {
-	    #    print qq|<TD VALIGN="top" $style WIDTH="$width">$colHTML</TD>\n|;
-        #} else {
-	    #    print qq|<TD $style VALIGN="top">$colHTML</TD>\n|;
-        #}
     }
     print '<div class="clear"></div>';
     print '</div> <!-- columnholder -->';
     print '<div class="clear"></div>';
+
     print '</div> <!-- paper -->';
     print '<div class="clear"></div>';
     print '</div> <!-- middlesection -->';

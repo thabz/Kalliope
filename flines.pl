@@ -56,10 +56,12 @@ my $title = $mode == 1 ? "Digttitler" : "Førstelinier";
 my @crumbs = $poet->getCrumbs();
 push @crumbs,[$title,''];
 
-my $page = newAuthor Kalliope::Page ( poet => $poet,
-	                      subtitle => $title,
-                              page => $mode ? 'titlelines' : 'firstlines',
-                              crumbs => \@crumbs );
+my $page = newAuthor Kalliope::Page ( 
+    poet => $poet,
+	subtitle => $title,
+    page => $mode ? 'titlelines' : 'firstlines',
+    columnrule => 1,
+    crumbs => \@crumbs);
 
 
 #

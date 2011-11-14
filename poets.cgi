@@ -34,27 +34,31 @@ my $LA = CGI::url_param('sprog') || 'dk';
 my $limit = CGI::url_param('limit') || '10';
 
 my %pageTypes = (
-	         'az' => {'title' => 'Digtere efter navn',
-                          'function' => 'listaz',
-			  'crumbtitle' => 'efter navn',
-                          'page' => 'poetsbyname'},
-                 '19' => {'title' => 'Digtere efter fødeår',
-                          'function' => 'list19',
-			  'crumbtitle' => 'efter fødeår',
-                          'page' => 'poetsbyyear'},
-                 'pics' => {'title' => 'Digtere efter udseende',
-                          'function' => 'listpics',
-			  'crumbtitle' => 'efter udseende',
-                          'page' => 'poetsbypic'},
-                 'flittige' => {'title' => 'Flittigste digtere',
-                          'function' => 'listflittige',
-			  'crumbtitle' => 'flittigste',
-                          'page' => 'poetsbyflittige'},
-                 'pop'  => {'title' => 'Mest populære digtere',
-                          'function' => 'listpop',
-			  'crumbtitle' => 'mest populære',
-                          'page' => 'poetsbypop'}
-                );
+    'az' => {
+        'title' => 'Digtere efter navn',
+        'function' => 'listaz',
+        'crumbtitle' => 'efter navn',
+        'page' => 'poetsbyname'},
+    '19' => {
+        'title' => 'Digtere efter fødeår',
+        'function' => 'list19',
+        'crumbtitle' => 'efter fødeår',
+        'page' => 'poetsbyyear'},
+    'pics' => {
+        'title' => 'Digtere efter udseende',
+        'function' => 'listpics',
+        'crumbtitle' => 'efter udseende',
+        'page' => 'poetsbypic'},
+    'flittige' => {
+        'title' => 'Flittigste digtere',
+        'function' => 'listflittige',
+        'crumbtitle' => 'flittigste',
+        'page' => 'poetsbyflittige'},
+    'pop'  => {
+        'title' => 'Mest populære digtere',
+        'function' => 'listpop',
+        'crumbtitle' => 'mest populære',
+        'page' => 'poetsbypop'});
 
 my $listType = CGI::url_param('list');
 
@@ -79,10 +83,19 @@ my $page = new Kalliope::Page (
 		thumb => 'gfx/icons/poet-h70.gif',
                 page => $struct->{'page'}); 
 
-my ($HTML,$endHTML) = &{$struct->{'function'}}($LA,$limit);
-$page->addBox ( width => '90%',
-                content =>  $HTML,
-		end => $endHTML);
+my $function = $struct->{'function'};
+
+if ($function eq 'listaz' || $function eq 'list19') {
+    my @blocks = &{$struct->{'function'}}($LA,$limit);
+    $page->addDoubleColumn(@blocks);
+} else {
+    my ($HTML,$endHTML) = &{$struct->{'function'}}($LA,$limit);
+    $page->addBox ( width => '90%',
+                    content =>  $HTML,
+    		        end => $endHTML);
+}
+
+
 $page->print;
 
 sub listaz {
@@ -112,13 +125,13 @@ sub listaz {
     $bi++;
     my @colls = grep {$_->getType eq 'collection'} @persons;
     if ($#colls >= 0) {
-	$blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">Ukendt digter</DIV><BR>|;
-	foreach my $f (@colls) {
-	    $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->fhandle.'">'.$f->fornavn.'</A><BR>';
-	    $blocks[$bi]->{'count'}++;
-	}
+	    $blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">Ukendt digter</DIV><BR>|;
+	    foreach my $f (@colls) {
+	        $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->fhandle.'">'.$f->fornavn.'</A><BR>';
+	        $blocks[$bi]->{'count'}++;
+	    }
     }
-    return (Kalliope::Web::doubleColumn(\@blocks),'');
+    return @blocks;
 }
 
 sub list19 {
@@ -136,27 +149,27 @@ sub list19 {
     my $new;
     my $f;
     foreach $f (sort { Kalliope::Sort::sort($a,$b) } @knownYear) {
-	next unless $f->{'sort'};
-	if ($f->{'sort'} - $last >= 25) {
-	    $last = $f->{'sort'} - $f->{'sort'}%25;
-	    $last2 = $last + 24;
-	    $bi++;
-	    $blocks[$bi]->{'head'} = qq|<DIV CLASS="listeoverskrifter">$last-$last2</DIV><BR>|;
-	}
-	$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->fhandle.'">'.$f->reversedName.'</A>&nbsp;<FONT COLOR="#808080">'.$f->lifespan.'</FONT><BR>';
-	$blocks[$bi]->{'count'}++;
+	    next unless $f->{'sort'};
+	    if ($f->{'sort'} - $last >= 25) {
+	        $last = $f->{'sort'} - $f->{'sort'}%25;
+	        $last2 = $last + 24;
+	        $bi++;
+	        $blocks[$bi]->{'head'} = qq|<DIV CLASS="listeoverskrifter">$last-$last2</DIV><BR>|;
+	    }
+	    $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->fhandle.'">'.$f->reversedName.'</A>&nbsp;<FONT COLOR="#808080">'.$f->lifespan.'</FONT><BR>';
+	    $blocks[$bi]->{'count'}++;
     }
 
     # Udenfor kategori (dvs. folkeviser, o.l.)
     $bi++;
     if ($#unknownYear >= 0) {
-	$blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">Ukendt fødeår</DIV><BR>|;
-	foreach my $f (@unknownYear) {
-	   $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->fhandle.'">'.$f->reversedName.'</A>&nbsp;<FONT COLOR="#808080">'.$f->lifespan.'</FONT><BR>';
-	    $blocks[$bi]->{'count'}++;
-	}
+	    $blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">Ukendt fødeår</DIV><BR>|;
+	    foreach my $f (@unknownYear) {
+	        $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->fhandle.'">'.$f->reversedName.'</A>&nbsp;<FONT COLOR="#808080">'.$f->lifespan.'</FONT><BR>';
+	        $blocks[$bi]->{'count'}++;
+	    }
     }
-    return (Kalliope::Web::doubleColumn(\@blocks),'');
+    return @blocks;
 }
 
 sub listpics {
@@ -202,20 +215,20 @@ sub listflittige {
     $HTML .= '<TABLE CLASS="oversigt" CELLSPACING=0 WIDTH="100%">';
     $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Navn</TH><TH ALIGN="right">Digte</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
-	my $poet = Kalliope::PersonHome::findByFhandle($h->{'fhandle'});
+	    my $poet = Kalliope::PersonHome::findByFhandle($h->{'fhandle'});
 
-	my $class = $i % 2 ? '' : ' CLASS="darker" ';
-	$HTML .= qq|<TR $class><TD ALIGN="right">|.$i++.'.</TD>';
-	$HTML .= '<TD WIDTH="100%"><A HREF="ffront.cgi?fhandle='.$poet->fhandle.'">&nbsp;'.$poet->name.'<FONT COLOR=#808080> '.$poet->lifespan.'</FONT></A></TD>';
-	$HTML .= '<TD ALIGN=right>'.$h->{'val'}.'</TD>';
-	$total += $h->{val};
+	    my $class = $i % 2 ? '' : ' CLASS="darker" ';
+	    $HTML .= qq|<TR $class><TD ALIGN="right">|.$i++.'.</TD>';
+	    $HTML .= '<TD WIDTH="100%"><A HREF="ffront.cgi?fhandle='.$poet->fhandle.'">&nbsp;'.$poet->name.'<FONT COLOR=#808080> '.$poet->lifespan.'</FONT></A></TD>';
+	    $HTML .= '<TD ALIGN=right>'.$h->{'val'}.'</TD>';
+	    $total += $h->{val};
     }
 
     my $endHTML = '';
     if ($limit != -1) {
-	$endHTML = qq|<A class="more" HREF="poets.cgi?list=flittige&limit=-1&sprog=$LA">Se hele listen...</A>|;
+	    $endHTML = qq|<A class="more" HREF="poets.cgi?list=flittige&limit=-1&sprog=$LA">Se hele listen...</A>|;
     } else {
-	$HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD></TR>";
+	    $HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD></TR>";
     }
     $HTML .= '</TABLE>';
     return ($HTML,$endHTML); 
@@ -233,12 +246,12 @@ sub listpop {
     my $HTML = '<TABLE CLASS="oversigt" WIDTH="100%" CELLSPACING=0>';
     $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Navn</TH><TH ALIGN="right">Hits&nbsp;&nbsp;</TH><TH ALIGN="right">Senest</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
-	my $class = $i % 2 ? '' : ' CLASS="darker" ';
-	$HTML .= qq|<TR $class><TD ALIGN="right">|.$i++.'.</TD>';
-	$HTML .= '<TD WIDTH="100%"><A HREF="ffront.cgi?fhandle='.$h->{fhandle}.'">'.$h->{fornavn}.' '.$h->{efternavn}.'<FONT COLOR=#808080> ('.$h->{foedt}.'-'.$h->{doed}.')</FONT></A></TD>';
-	$HTML .= '<TD ALIGN="right">'.$h->{'hitssum'}.'&nbsp;&nbsp;</TD>';
-	$HTML .= '<TD ALIGN="right" NOWRAP>'.Kalliope::shortdate($h->{'lasttime'}).'</TD>';
-	$total += $h->{'hitssum'};
+	    my $class = $i % 2 ? '' : ' CLASS="darker" ';
+	    $HTML .= qq|<TR $class><TD ALIGN="right">|.$i++.'.</TD>';
+	    $HTML .= '<TD WIDTH="100%"><A HREF="ffront.cgi?fhandle='.$h->{fhandle}.'">'.$h->{fornavn}.' '.$h->{efternavn}.'<FONT COLOR=#808080> ('.$h->{foedt}.'-'.$h->{doed}.')</FONT></A></TD>';
+	    $HTML .= '<TD ALIGN="right">'.$h->{'hitssum'}.'&nbsp;&nbsp;</TD>';
+	    $HTML .= '<TD ALIGN="right" NOWRAP>'.Kalliope::shortdate($h->{'lasttime'}).'</TD>';
+	    $total += $h->{'hitssum'};
     }
     if ($limit != -1) {
         $endHTML = qq|<A class="more" HREF="poets.cgi?list=pop&limit=-1&sprog=$LA">Se hele listen...</A>|;
