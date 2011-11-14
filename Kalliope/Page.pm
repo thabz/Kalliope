@@ -380,9 +380,9 @@ GOOGLEADS
 
     # Body
     print '<div class="middlesection">';
-    print '<div class="navigation"><div>';
+    print '<div class="navigation">';
     print $self->_navigationMain;
-    print '</div></div> <!-- navigation -->';
+    print '</div> <!-- navigation -->';
     print '<div class="paper">';
 
     print '<div class="columnholder">';
@@ -613,25 +613,47 @@ sub menuStructs {
 
 sub _navigationMain {
     my $self = shift;
-    my @topMenuItems = ('welcome','poets','worklist','poemlist', 'history','forum');
-    my %menuStructs = $self->menuStructs;
-    my $HTML = '<BR>';
+    my $lang = $self->lang;
+    
+    my @menuItems = ({
+            title => 'Kalliope',
+            klass => 'forside',
+            url => "index.cgi?lang=$lang",
+            caption => 'Tilbage til forsiden',
+            icon => 'gfx/icons/poet-w64.gif'
+        },{
+            title => 'Digtere',
+            url => "poetsfront.cgi?sprog=$lang",
+            caption => 'Digtere',
+            icon => 'gfx/icons/poet-w64.gif'
+        },{
+            title => 'Værker',
+            url => "worksfront.cgi?sprog=$lang",
+            caption => 'Værker',
+            icon => 'gfx/icons/works-w64.gif'
+        },{
+            title => 'Digte',
+            url => "poemsfront.cgi?sprog=$lang",
+            caption => 'Digte',
+            icon => 'gfx/icons/poem-w64.gif'
+        },{
+            title => 'Baggrund',
+            url => "metafront.cgi?sprog=$lang",
+            caption => 'Om Kalliope og andet baggrundsmateriale',
+            icon => 'gfx/icons/keywords-w64.gif'
+        });
 
-    # Pagegroups
-    foreach my $key (@topMenuItems) {
-        my $struct = $menuStructs{$key};
-        my ($title,$url,$icon) = ($struct->{'menuTitle'},
-                                  $struct->{'url'},$struct->{'icon'});
-	next unless $icon;			  
-	$HTML .= qq|<A TITLE="$title" HREF="$url">|;
-	$HTML .= qq|<IMG ALT="$title" BORDER=0 SRC="$icon">|;
-        if ($key ne $self->{'pagegroup'} && $key ne $self->{'pagegroupchoosen'}) {
-#	    $HTML .= $title;
-	} else {
-#            $HTML .= "<B>$title</B>";
-	}
-	$HTML .= '</A><br>';
+    my $HTML = '<div class="mainmenu"><ul>';
+    foreach my $item (@menuItems) {
+        my ($title,$url,$icon,$caption,$class) = ($item->{'title'},
+                                  $item->{'url'}, $item->{'icon'}, 
+                                  $item->{'caption'}, $item->{'klass'});
+        $HTML .= qq|<li class="$class">|;
+	    $HTML .= qq|<a title="$caption" href="$url"><img title="$caption" src="$icon"></a>|;
+	    $HTML .= qq|<p><a title="$caption" href="$url">$title</a></p>|;
+	    $HTML .= '</li>';
     }
+    $HTML .= '<ul></div> <!-- mainmenu -->';
     return $HTML;
 }
 
@@ -648,10 +670,10 @@ sub _navigationSub {
         my ($title,$url) = ($struct->{'menuTitle'},
                            $struct->{'url'});
         if ($key ne $self->{'page'}) {
-	    push @itemsHTML, qq|<A CLASS="submenu" HREF="$url">$title</A>|;
-	} else {
+	        push @itemsHTML, qq|<A CLASS="submenu" HREF="$url">$title</A>|;
+	    } else {
             push @itemsHTML, qq|<A CLASS="submenu" HREF="$url"><B>$title</B></A>|;
-	}
+	    }
     }
     $HTML = join ' <span class="lifespan">&bull;</span> ',@itemsHTML;
     #$HTML = join ' <span class="lifespan">&#149;</span> ',@itemsHTML;

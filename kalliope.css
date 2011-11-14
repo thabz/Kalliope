@@ -464,6 +464,7 @@ div.submenu {
     height: 13px;
     background: #ab201e;
     color: #f0f0f0;
+    color: rgba(255,255,255,0.9);
     position: absolute;
     right: 10px;
     bottom: 76px;
@@ -497,12 +498,6 @@ div.middlesection {
 div.navigation {
     width: 139px;
     float: left;
-    padding-top: 40px;
-}
-
-div.navigation div {
-    color: rgb(117,106,89); 
-    width: 138px;
 }
 
 div.toppart {
@@ -568,6 +563,54 @@ div.footer div.flags {
     float: right;
 }
 
+/* mainmenu */
+
+div.mainmenu {
+    padding-top: 48px;
+}
+
+div.mainmenu ul {
+    margin-left: 10px;
+    padding-left: 0;
+}
+div.mainmenu ul li {
+    position: relative;
+    display: block;
+    width: 70px;
+    background: #ab201e;
+    color: #f0f0f0;
+    border-radius: 2px;
+    margin-bottom: 36px;
+    text-align: left;
+    padding: 1px 0 1px 48px;
+    -moz-box-shadow: 1px 1px 2px black;
+    -webkit-box-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 2px black;
+}
+
+div.mainmenu ul li.forside {
+    display: none;
+}
+
+div.mainmenu ul li p {
+    margin: 0;
+    padding: 0;
+}
+
+div.mainmenu ul li p a {
+    color: #f0f0f0;
+    color: rgba(255,255,255,0.9);
+}
+
+
+div.mainmenu ul li img {
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+
 /* frontmenu elements */
 
 div.frontmenu-item {
@@ -629,6 +672,10 @@ div.frontmenu-item div.descr {
         height: auto;
     }
     
+    div.topsection {
+        height: auto;
+    }
+    
     .topsection img {
         display: none;
     }
@@ -653,5 +700,49 @@ div.frontmenu-item div.descr {
         color: #808080;
         font-size: 11px; 
     }
+
+    /* mainmenu */
+
+    div.mainmenu {
+    }
+
+    div.mainmenu ul {
+        padding: 4px 0 2px 0;
+        margin: 0;
+        background: #ab201e;
+        -moz-box-shadow: 1px 1px 2px black;
+        -webkit-box-shadow: 1px 1px 2px black;
+        box-shadow: 1px 1px 2px black;
+        width: 100%;
+    }
     
+    div.mainmenu ul li {
+        display: inline-block;
+        position: relative;
+        width: 20%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    
+    div.mainmenu ul li.forside {
+        display: inline-block;
+    }
+    
+
+    div.mainmenu ul li p {
+        clear: both;
+    }
+
+    div.mainmenu ul li img {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 48px;
+        clear: both;
+    }
 }
