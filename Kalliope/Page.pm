@@ -299,6 +299,7 @@ sub print {
 <HTML><HEAD><TITLE>$titleForWindow</TITLE>
 <LINK REL="Shortcut Icon" HREF="http://www.kalliope.org/favicon.ico">
 <link rel="apple-touch-icon" href="http://www.kalliope.org/gfx/icons/iphone-icon.png">
+<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 <link rel="search" type="application/opensearchdescription+xml" title="Kalliope" href="http://www.kalliope.org/opensearch.xml">
 <LINK REL=STYLESHEET TYPE="text/css" HREF="kalliope.css">
 <META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
@@ -321,7 +322,6 @@ EOF
 <script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.resizable.js"></script>
 <script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.dialog.js"></script>
 <link type="text/css" href="http://jqueryui.com/latest/themes/base/ui.all.css" rel="stylesheet"/>
-<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 
 	    |;
     }

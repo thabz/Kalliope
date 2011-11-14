@@ -40,10 +40,13 @@ my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 my @crumbs = $poet->getCrumbs;
 push @crumbs,['Samtid',''];
 
-my $page = newAuthor Kalliope::Page ( poet => $poet,
-                                      page => 'samtidige',
-				      subtitle => 'Samtidige digtere',
-                                      crumbs => \@crumbs );
+my $page = newAuthor Kalliope::Page( 
+    poet => $poet,
+    page => 'samtidige',
+	subtitle => 'Samtidige digtere',
+	coloumnwidths => [50,50],
+    crumbs => \@crumbs
+);
 
 
 #
@@ -56,23 +59,30 @@ my $antal = $sth->rows;
 if ($antal) {
     my $HTML;
     my $i = 0;
-    $HTML .= '<TABLE WIDTH="100%"><TR><TD VALIGN=top>';
-    $HTML .= '<TABLE BORDER=0 CELLPADDING=0 CELLSPADING=0>';
     while (my $h = $sth->fetchrow_hashref) {
-	$HTML .= '<TR><TD VALIGN="top"><IMG WIDTH="20" HEIGHT="20" ALT="" SRC="gfx/flags/'.$h->{'sprog'}.'_light.gif"></TD><TD><A HREF="ffront.cgi?fhandle='.$h->{'fhandle'}.'">'.$h->{'fornavn'}.' '.$h->{'efternavn'}.' <FONT COLOR="#808080">('.$h->{'foedt'}.'-'.$h->{'doed'}.')</FONT></A></TD></TR>';
-	if ($i == int($antal/2) - 1 ) {
-	    $HTML .= '</TABLE></TD><TD VALIGN=top>';
-	    $HTML .= '<TABLE BORDER=0 CELLPADDING=0 CELLSPADING=0>';
-	}
+        $HTML .= '<div>';
+	    $HTML .= '<img width="20" height="20" alt="" src="gfx/flags/'.$h->{'sprog'}.'_light.gif">';
+	    $HTML .= '<a href="ffront.cgi?fhandle='.$h->{'fhandle'}.'">'.$h->{'fornavn'}.' '.$h->{'efternavn'};
+	    $HTML .= ' <span class="gray">('.$h->{'foedt'}.'-'.$h->{'doed'}.')</span></a>';
+	    $HTML .= '</div>';
+	    if ($i == int($antal/2) - 1 ) {
+            $page->addBox(
+                coloumn => 0,
+        	    content => $HTML
+        	);
+        	$HTML = '';
+	    }
         $i++;
     }
-    $HTML .= '</TABLE>';
-    $HTML .= '</TD></TR></TABLE>';
-    $HTML .= '<BR><SMALL><I>Oversigt over digtere som udgav værker i '.$poet->name.'s levetid.</I></SMALL>';
     $page->addBox(
-	    width => '80%',
-            coloumn => 1,
-	    content => $HTML );
+        coloumn => 1,
+	    content => $HTML
+	);
+    $HTML = '<br><br><SMALL><I>Oversigt over digtere som udgav værker i '.$poet->name.'s levetid.</I></SMALL>';
+    $page->addBox(
+        coloumn => 0,
+	    content => $HTML
+	);
 
 }
 

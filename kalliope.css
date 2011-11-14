@@ -497,10 +497,10 @@ div.middlesection {
 div.navigation {
     width: 139px;
     float: left;
+    padding-top: 40px;
 }
 
 div.navigation div {
-    padding-top: 40px;
     color: rgb(117,106,89); 
     width: 138px;
 }
@@ -587,6 +587,7 @@ div.frontmenu-item div.descr {
       border: 0;
       text-align: left;
       clear: both;
+      min-height: 0;
     }
 
     div.layout div.site, div.layout div.topsection {
@@ -605,4 +606,26 @@ div.frontmenu-item div.descr {
     .topsection img {
         display: none;
     }
+    
+    div.frontmenu-item {
+        padding-bottom: 20px;
+    }
+
+    div.frontmenu-item div.icon {
+        float: left;
+        margin-right: 20px;
+        width: 50px;
+    }
+
+    div.frontmenu-item div.title {
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    div.frontmenu-item div.descr {
+        color: #808080;
+        font-size: 11px; 
+    }
+    
 }
