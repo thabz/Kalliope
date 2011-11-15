@@ -304,7 +304,6 @@ div.boxbook {
     font-family: Georgia, Times, serif;
 }
 
-
 div.morelinks a {
     color: #857c55;
     font-size: 11px;
@@ -716,14 +715,12 @@ div.frontmenu-item div.descr {
         width: auto!important;
         clear: none!important;
         margin-left: 60px!important;
-        background: rgba(0,255,0,0.05);
     }
 
     div.frontmenu-item div.descr {
         width: auto!important;
         clear: none!important;
         margin-left: 60px!important;
-        background: rgba(255,0,0,0.5);
     }
     
     /* mainmenu */
