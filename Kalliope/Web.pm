@@ -87,6 +87,7 @@ sub tabbedView {
     return $HTML;
 }
 
+# TODO: Brug http://fancybox.net/
 sub insertThumb {
     my $h = shift;
     $h->{'alt'} = '' unless $h->{'alt'};
