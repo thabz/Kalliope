@@ -337,7 +337,7 @@ EOF
 <!--<BODY LINK="#000000" VLINK="#000000" ALINK="#000000" LEFTMARGIN=0 TOPMARGIN=0 MARGINHEIGHT=0 MARGINWIDTH=0>-->
 <BODY LINK="#000000" VLINK="#000000" ALINK="#000000">|;
  
-    print '<center><br>';
+    print '<center>';
 
     if (0) {
     print <<"GOOGLEADS";
@@ -384,6 +384,7 @@ GOOGLEADS
     print $self->_navigationMain;
     print '</div> <!-- navigation -->';
     print '<div class="paper">';
+    print '<div class="paper-content">';
 
     print '<div class="columnholder">';
     my @widths = $self->getColoumnWidths;
@@ -403,7 +404,7 @@ GOOGLEADS
     print '<div class="clear"></div>';
     print '</div> <!-- columnholder -->';
     print '<div class="clear"></div>';
-
+    print '</div> <!-- paper-content -->';
     print '</div> <!-- paper -->';
     print '<div class="clear"></div>';
     print '</div> <!-- middlesection -->';

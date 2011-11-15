@@ -322,10 +322,7 @@ a.more:after {
 /* Omkringliggende div */
 
 div.body {
-    border-top: 1px solid #333333;
-    border-left: 1px solid #333333;
-    border-right: 2px solid #333333;
-    border-bottom: 2px solid #333333;
+    border: 1px solid #333333;
     background-color: #eaeada;
     width: 770px;
     margin-top: 18px;
@@ -507,8 +504,13 @@ div.toppart {
 div.paper {
     float: left;
     width: 631px;
-    padding-top: 20px;
 }
+
+div.paper-content {
+    width: auto;
+    padding: 20px 10px 0 10px;
+}
+
 
 div.columnholder {
     width: 100%;
@@ -659,6 +661,14 @@ div.frontmenu-item div.descr {
       min-height: 0;
     }
 
+    div.body {
+        border: 1px solid black;
+    }
+
+    div.breadcrumbs {
+        display: none!important;
+    }
+
     div.layout div.site, div.layout div.topsection {
         width: 100%;
     }
@@ -680,27 +690,42 @@ div.frontmenu-item div.descr {
         display: none;
     }
     
+    div.middlesection {
+        background-image: none;
+    }
+    
+    div.paper-content {
+        width: auto!important;
+        padding: 10px!important;
+    }
+    
+    /* frontmenu elements */
+
     div.frontmenu-item {
-        padding-bottom: 20px;
+        margin-bottom: 10px!important;
+        width: 100%;
     }
 
     div.frontmenu-item div.icon {
-        float: left;
-        margin-right: 20px;
-        width: 50px;
+        float: left!important;
+        width: 50px!important;
+        clear: left!important;
     }
 
     div.frontmenu-item div.title {
-        color: black;
-        font-size: 16px;
-        font-weight: bold;
+        width: auto!important;
+        clear: none!important;
+        margin-left: 60px!important;
+        background: rgba(0,255,0,0.05);
     }
 
     div.frontmenu-item div.descr {
-        color: #808080;
-        font-size: 11px; 
+        width: auto!important;
+        clear: none!important;
+        margin-left: 60px!important;
+        background: rgba(255,0,0,0.5);
     }
-
+    
     /* mainmenu */
 
     div.mainmenu {
@@ -710,9 +735,12 @@ div.frontmenu-item div.descr {
         padding: 4px 0 2px 0;
         margin: 0;
         background: #ab201e;
+        -webkit-box-shadow: 0px 3px 5px black;
+        /*
         -moz-box-shadow: 1px 1px 2px black;
         -webkit-box-shadow: 1px 1px 2px black;
         box-shadow: 1px 1px 2px black;
+        */
         width: 100%;
     }
     
