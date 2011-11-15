@@ -310,7 +310,7 @@ sub _contentAsPoemHTML {
 
 	$lineHash{'text'} = $line;
 	
-	$result .= qq|<tr><td style="font-size: 9pt; color: #808080; text-align: left">|.$dispNum.'</td>';
+	$result .= qq|<tr><td style="font-size: 9pt; color: #808080; text-align: left"><span class="linenumber">|.$dispNum.'</span></td>';
 	$result .= qq|<td style="white-space: $wrap; text-align: $align" $wrap>$line </td>\n|;
 	$result .= '</tr>';
 	push @{$self->{'lineHashes'}}, \%lineHash;

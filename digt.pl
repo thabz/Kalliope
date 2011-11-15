@@ -169,7 +169,8 @@ $page->print;
 sub moreLinks {
     my ($poem,$work) = @_;
     my $longdid = $poem->longdid;
-    my $HTML = '';
+    my $HTML = '<div class="morelinks">';
+    $HTML .= qq|<a title="Tilføj/fjern linienumre" href="javascript:{\$('.linenumber').toggle()}">Vis linienumre...<span class="linenumber">&#x2611;</span><span class="linenumber" style="display:none">&#x2610;</span></a><br>|;
     $HTML .= qq|<a class="more" title="Vis denne tekst i et format som pænere når udskrevet" href="digt.pl?longdid=$longdid&amp;printer=1">Vis printudgave...</a><br>|;
     $HTML .= qq|<a title="Send redaktionen en rettelse til denne tekst" class="more" onClick="window.open('korrektur.cgi?longdid=$longdid','Korrekturpopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=330'); return false" href="javascript:{}">Send en rettelse...</a><br>|;
 
@@ -185,7 +186,7 @@ sub moreLinks {
 	my $title = $poem->linkTitle;
         $HTML .= qq|<a class="more" title="Gå til »$title«" href="digt.pl?longdid=$prevPoem">Forrige tekst...</a><br>|;
     }
-
+    $HTML .= '</div>';
     return $HTML;
 }
 

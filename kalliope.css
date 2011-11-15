@@ -319,10 +319,17 @@ div.boxdark {
    padding: 10px 10px 10px 10px;
 }
 
-a.more {
-   color: #857c55;
-   font-size: 11px;
+
+div.morelinks a {
+    color: #857c55;
+    font-size: 11px;
 }
+
+a.more {
+    color: #857c55;
+    font-size: 11px;
+}
+
 a.more:after {
    content: url(gfx/right.gif);
 }
