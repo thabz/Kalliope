@@ -316,7 +316,7 @@ a.more {
 }
 
 a.more:after {
-   content: url(gfx/right.gif);
+   content: "\25B8";
 }
 
 /* Omkringliggende div */
