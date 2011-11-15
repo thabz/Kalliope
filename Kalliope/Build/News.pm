@@ -36,7 +36,7 @@ sub create {
         active integer,
 	orderby integer)");
    $dbh->do(q/CREATE INDEX news_active ON news(active)/);
-   $dbh->do(q/GRANT SELECT ON TABLE news TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE news TO public/);
 }
 
 sub insert {

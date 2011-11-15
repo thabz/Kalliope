@@ -73,7 +73,7 @@ sub create {
    $dbh->do(q/CREATE INDEX forbogstaver_forbogstav ON forbogstaver(forbogstav)/);
    $dbh->do(q/CREATE INDEX forbogstaver_lang ON forbogstaver(lang)/);
    $dbh->do(q/CREATE INDEX forbogstaver_type ON forbogstaver(type)/);
-   $dbh->do(q/GRANT SELECT ON TABLE forbogstaver TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE forbogstaver TO public/);
 }
 
 sub drop {

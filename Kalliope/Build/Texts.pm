@@ -186,7 +186,7 @@ sub create {
  $dbh->do(q/CREATE INDEX digte_type ON digte(type)/);
  $dbh->do(q/CREATE INDEX digte_createtime ON digte(createtime)/);
  $dbh->do(q/CREATE INDEX digte_vid ON digte(vid)/);
-   $dbh->do(q/GRANT SELECT ON TABLE digte TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE digte TO public/);
 
 
     $dbh->do(q(
@@ -196,7 +196,7 @@ sub create {
 	      orderby int NOT NULL)
 	    ));
    $dbh->do(q/CREATE INDEX textnotes_longdid ON textnotes(longdid)/);
-   $dbh->do(q/GRANT SELECT ON TABLE textnotes TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE textnotes TO public/);
 
     $dbh->do(q(
 	CREATE TABLE textpictures ( 
@@ -206,7 +206,7 @@ sub create {
 	      orderby int NOT NULL)
 	    ));
    $dbh->do(q/CREATE INDEX textpictures_longdid ON textpictures(longdid)/);
-   $dbh->do(q/GRANT SELECT ON TABLE textpictures TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE textpictures TO public/);
 
     $dbh->do(q(
 	CREATE TABLE textxkeyword ( 
@@ -216,7 +216,7 @@ sub create {
 	    ));
    $dbh->do(q/CREATE INDEX textxkeyword_longdid ON textxkeyword(longdid)/);
    $dbh->do(q/CREATE INDEX textxkeyword_keyword ON textxkeyword(keyword)/);
-   $dbh->do(q/GRANT SELECT ON TABLE textxkeyword TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE textxkeyword TO public/);
 
 }
 

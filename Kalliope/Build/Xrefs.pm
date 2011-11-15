@@ -66,7 +66,7 @@ sub create {
 	         toid varchar(40) NOT NULL) -- REFERENCES digte(longdid) ON DELETE RESTRICT)");
    $dbh->do(q/CREATE INDEX xrefs_fromid ON xrefs(fromid)/);
    $dbh->do(q/CREATE INDEX xrefs_toid ON xrefs(toid)/);
-   $dbh->do(q/GRANT SELECT ON TABLE xrefs TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE xrefs TO public/);
 }
 
 sub drop {

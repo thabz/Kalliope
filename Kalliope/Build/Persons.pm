@@ -133,7 +133,7 @@ sub create {
     type varchar(32),
     workslist text)
 	");
-   $dbh->do(q/GRANT SELECT ON TABLE fnavne TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE fnavne TO public/);
 }
 
 

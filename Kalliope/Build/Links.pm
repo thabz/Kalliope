@@ -49,7 +49,7 @@ sub create {
               url text NOT NULL,
               beskrivelse text NOT NULL)");
    $dbh->do(q/CREATE INDEX links_fhandle ON links(fhandle)/);
-   $dbh->do(q/GRANT SELECT ON TABLE links TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE links TO public/);
 }
 
 sub drop {

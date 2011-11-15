@@ -135,5 +135,5 @@ sub create {
     otherid varchar(50)
     )");
    $dbh->do(q/CREATE INDEX timeline_year ON timeline(year)/);
-   $dbh->do(q/GRANT SELECT ON TABLE timeline TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE timeline TO public/);
 }

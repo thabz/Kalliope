@@ -126,7 +126,7 @@ sub create {
  $dbh->do(q/CREATE INDEX vaerker_vhandle ON vaerker(vhandle)/);
  $dbh->do(q/CREATE INDEX vaerker_lang ON vaerker(lang)/);
  $dbh->do(q/CREATE INDEX vaerker_type ON vaerker(type)/);
- $dbh->do(q/GRANT SELECT ON TABLE vaerker TO "www-data"/);
+ $dbh->do(q/GRANT SELECT ON TABLE vaerker TO public/);
 
  $dbh->do(q/
 	CREATE TABLE worknotes ( 
@@ -135,7 +135,7 @@ sub create {
 	      orderby int NOT NULL)
 	    /);
  $dbh->do(q/CREATE INDEX worknotes_vid ON worknotes(vid)/);
- $dbh->do(q/GRANT SELECT ON TABLE worknotes TO "www-data"/);
+ $dbh->do(q/GRANT SELECT ON TABLE worknotes TO public/);
 
  $dbh->do(q(
 	CREATE TABLE workpictures ( 
@@ -146,7 +146,7 @@ sub create {
 	      orderby int NOT NULL)
 	    ));
  $dbh->do(q/CREATE INDEX workpictures_vid ON workpictures(vid)/);
- $dbh->do(q/GRANT SELECT ON TABLE workpictures TO "www-data"/);
+ $dbh->do(q/GRANT SELECT ON TABLE workpictures TO public/);
 
  $dbh->do(q(
 	CREATE TABLE workxkeyword ( 
@@ -155,7 +155,7 @@ sub create {
 	    ));
  $dbh->do(q/CREATE INDEX workxkeyword_vid ON workxkeyword(vid)/);
  $dbh->do(q/CREATE INDEX workxkeyword_keyword ON workxkeyword(keyword)/);
- $dbh->do(q/GRANT SELECT ON TABLE workxkeyword TO "www-data"/);
+ $dbh->do(q/GRANT SELECT ON TABLE workxkeyword TO public/);
 }
 
 sub drop {

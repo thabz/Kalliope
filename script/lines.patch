@@ -1,0 +1,83 @@
+diff --git a/Kalliope/Page.pm b/Kalliope/Page.pm
+index 04d47cc..39979fe 100644
+--- a/Kalliope/Page.pm
++++ b/Kalliope/Page.pm
+@@ -313,6 +313,7 @@ sub print {
+ <META name="description" content="Stort arkiv for ældre digtning">
+ <META name="keywords" content="digte, lyrik, litteratur, litteraturhistorie, digtere, digtarkiv, etext, e-text, elektronisk tekst, kalliope, kalliope.org, www.kalliope.org">
+ $feedlink
++<script type="text/javascript" src="script/jquery-1.7.min.js"></script>
+ 
+ <SCRIPT TYPE="text/javascript">
+ function openTimeContext(year) {
+diff --git a/Kalliope/Poem.pm b/Kalliope/Poem.pm
+index c7b0246..eabaf65 100644
+--- a/Kalliope/Poem.pm
++++ b/Kalliope/Poem.pm
+@@ -310,7 +310,7 @@ sub _contentAsPoemHTML {
+ 
+ 	$lineHash{'text'} = $line;
+ 	
+-	$result .= qq|<tr><td style="font-size: 9pt; color: #808080; text-align: left">|.$dispNum.'</td>';
++	$result .= qq|<tr><td style="font-size: 9pt; color: #808080; text-align: left"><span class="linenumber">|.$dispNum.'</span></td>';
+ 	$result .= qq|<td style="white-space: $wrap; text-align: $align" $wrap>$line </td>\n|;
+ 	$result .= '</tr>';
+ 	push @{$self->{'lineHashes'}}, \%lineHash;
+diff --git a/Kalliope/Web.pm b/Kalliope/Web.pm
+index 9a117f3..a9d304b 100644
+--- a/Kalliope/Web.pm
++++ b/Kalliope/Web.pm
+@@ -87,6 +87,7 @@ sub tabbedView {
+     return $HTML;
+ }
+ 
++# TODO: Brug http://fancybox.net/
+ sub insertThumb {
+     my $h = shift;
+     $h->{'alt'} = '' unless $h->{'alt'};
+diff --git a/digt.pl b/digt.pl
+index eb558ef..b244826 100755
+--- a/digt.pl
++++ b/digt.pl
+@@ -166,6 +166,7 @@ sub moreLinks {
+     my $longdid = $poem->longdid;
+     my $HTML = '';
+     $HTML .= '<div class="morelinks">';
++    $HTML .= qq|<a title="Tilføj/fjern linienumre" href="javascript:{\$('.linenumber').toggle()}">Vis linienumre...<span class="linenumber">&#x2611;</span><span class="linenumber" style="display:none">&#x2610;</span></a><br>|;
+     $HTML .= qq|<a class="more" title="Vis denne tekst i et format som pænere når udskrevet" href="digt.pl?longdid=$longdid&amp;printer=1">Vis printudgave...</a><br>|;
+     $HTML .= qq|<a title="Send redaktionen en rettelse til denne tekst" class="more" onClick="window.open('korrektur.cgi?longdid=$longdid','Korrekturpopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=330'); return false" href="javascript:{}">Send en rettelse...</a><br>|;
+ 
+diff --git a/kalliope.css b/kalliope.css
+index f453354..2300507 100644
+--- a/kalliope.css
++++ b/kalliope.css
+@@ -304,10 +304,11 @@ div.boxbook {
+     font-family: Georgia, Times, serif;
+ }
+ 
+-a.more {
+-   color: #857c55;
+-   font-size: 11px;
++div.morelinks a {
++    color: #857c55;
++    font-size: 11px;
+ }
++
+ a.more:after {
+    content: "\25B8";
+ }
+@@ -709,14 +710,12 @@ div.frontmenu-item div.descr {
+         width: auto!important;
+         clear: none!important;
+         margin-left: 60px!important;
+-        background: rgba(0,255,0,0.05);
+     }
+ 
+     div.frontmenu-item div.descr {
+         width: auto!important;
+         clear: none!important;
+         margin-left: 60px!important;
+-        background: rgba(255,0,0,0.5);
+     }
+     
+     /* mainmenu */

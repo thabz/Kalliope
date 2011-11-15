@@ -110,7 +110,7 @@ sub create {
     ");
    $dbh->do(q/CREATE INDEX dict_firstletter ON dict(firstletter)/);
    $dbh->do(q/CREATE INDEX dict_word ON dict(word)/);
-   $dbh->do(q/GRANT SELECT ON TABLE dict TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE dict TO public/);
 }
 
 sub insert {

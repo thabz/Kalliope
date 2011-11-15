@@ -116,8 +116,8 @@ sub create {
         beskrivelse text
 	)");
     $dbh->do(q/CREATE INDEX keywords_images_keyid ON keywords_images(keyword_id)/);
-   $dbh->do(q/GRANT SELECT ON TABLE keywords TO "www-data"/);
-   $dbh->do(q/GRANT SELECT ON TABLE keywords_images TO "www-data"/);
+   $dbh->do(q/GRANT SELECT ON TABLE keywords TO public/);
+   $dbh->do(q/GRANT SELECT ON TABLE keywords_images TO public/);
 }
 
 sub drop {
