@@ -181,11 +181,7 @@ sub moreLinks {
 	my $title = $poem->linkTitle;
         $HTML .= qq|<a class="more" title="Gå til »$title«" href="digt.pl?longdid=$prevPoem">Forrige tekst...</a><br>|;
     }
-<<<<<<< HEAD
-    $HTML .= '</div>';
-=======
     $HTML .= '</div> <!-- morelinks -->';
->>>>>>> More div conversion
     return $HTML;
 }
 
