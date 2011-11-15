@@ -84,7 +84,6 @@ sub latestNews {
     my $sth = $dbh->prepare("SELECT entry FROM news $where ORDER BY orderby");
     $sth->execute;
     while (my ($line) = $sth->fetchrow_array) {
-	print STDERR $line;
         $HTML .= qq|<p align="justify">$line</p>|;
     }
     return $HTML;
