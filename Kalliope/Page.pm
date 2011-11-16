@@ -143,8 +143,8 @@ sub titleAsHTML {
         $title = $self->{'title'};
         $subtitle = $self->{'subtitle'};
     }
-    my $result = "<div class='first'>$title</div>";
-    $result .= qq|<div class="second">$subtitle</div>| if $subtitle;
+    my $result = "<h1>$title</h1>";
+    $result .= qq|<h2>$subtitle</h2>| if $subtitle;
     return $result;
 }
 
