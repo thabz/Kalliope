@@ -226,97 +226,97 @@ sub _contentAsProseHTML {
 
 sub _contentAsPoemHTML {
     my $self = shift;
-    my $result = '<table cellpadding=0 cellspacing=0 width="10">';
-    $result .= '<tr><td><img src="gfx/trans1x1.gif" width="50" height="1"></td><td></td></tr>';
+    my $result = '';
     my $num = 0;
     my $dispNum = 0;
     my $lastNum = 0;
     foreach my $line (split /\n/,$self->{'indhold'}) {
-	my %lineHash;
-
-	if ($line =~ /<resetnum>/) {
-	    $line =~ s/<resetnum>//;
-	    $lastNum=0;
-	    $dispNum=0;
-	    $num=0;
-	}
-	my $lineForTjek = $line;
-	$lineForTjek =~ s/<[^>]+>//g;
-	if ( $lineForTjek =~ /[^ _\t\-]/
-		&& $lineForTjek !~ /^ *\d+\.? *$/
-		&& $lineForTjek !~ /^ *\[\d+\] *$/
-		&& $line !~ /<nonum>/
-		&& $line !~ /<wrap>/
-		&& $lineForTjek !~ /^[ \t]*[IVXLCDM]+\.? *$/)
-	{
-	    $num++;
-	} else {
-            # To make <td> not collapse in height.
-	    $line .= '&nbsp;';
-	}
-	my $align = 'left';
-
-        # Gray out versenumbers
-	if ($lineForTjek =~ /^[ \t]*[IVXLCDM]+\.? *$/ 
-               || $lineForTjek =~ /^ *\d+\.? *$/
-	       || $lineForTjek =~ /^ *\[\d+\] *$/ ) {
-	    $line = qq|<span style="color:#808080">$line</span>|;
-	}
-
-	if ($line =~ /<center>/) {
-	    $align = 'center';
-	    $line =~ s/<\/?center>//g;
-	}
-	if ($line =~ /<right>/) {
-	    $align = 'right';
-	    $line =~ s/<\/?right>//g;
-	}
-	$lineHash{'linenum'} = $num;
-	$lineHash{'align'} = $align;
-
-	$line =~ s/<\/?nonum>//gi;
-
-	if ($lineForTjek =~ /^ *(\-\-\-\-*) *$/) {
-	    my $width = (length $1)*10;
-	    $width = 100 if $width > 100;
-	    $line = qq|<hr noshade size=1 color="black" width="$width%" style="color:black">|;
-	    $align = 'center';
-	}
-
-	if (($num % 5 == 0) && $lastNum ne $num) {
-	    $dispNum = $num;
-	    $lastNum = $num;
-	} else {
-	    $dispNum = '';
-	};
-	$lineHash{'displayLineNumber'} = $dispNum;
-
-	my $wrap = 'nowrap';
-	if ($line =~ /<wrap>/i) {
-	    $wrap = 'normal';
-	    $line =~ s/<\/?wrap>//g;
-	}
-	$lineHash{'white-space'} = $wrap;
-
-        # Grab line note 
-	if ($line =~ /<note>/i) {
-	    $line =~ s/<note>(.*?)<\/note>//;
-	    $lineHash{'linenote'} = $1;
-	    $self->{'hasLineNotes'} = 1;
-	}
-	
-        # Fix indents
-	$line =~ s/^(\s+)/_nbsp($1)/e;
-
-	$lineHash{'text'} = $line;
-	
-	$result .= qq|<tr><td style="font-size: 9pt; color: #808080; text-align: left"><span class="linenumber">|.$dispNum.'</span></td>';
-	$result .= qq|<td style="white-space: $wrap; text-align: $align" $wrap>$line </td>\n|;
-	$result .= '</tr>';
-	push @{$self->{'lineHashes'}}, \%lineHash;
+	    my %lineHash;
+        
+	    if ($line =~ /<resetnum>/) {
+	        $line =~ s/<resetnum>//;
+	        $lastNum=0;
+	        $dispNum=0;
+	        $num=0;
+	    }
+	    my $lineForTjek = $line;
+	    $lineForTjek =~ s/<[^>]+>//g;
+	    if ( $lineForTjek =~ /[^ _\t\-]/
+	    	&& $lineForTjek !~ /^ *\d+\.? *$/
+	    	&& $lineForTjek !~ /^ *\[\d+\] *$/
+	    	&& $line !~ /<nonum>/
+	    	&& $line !~ /<wrap>/
+	    	&& $lineForTjek !~ /^[ \t]*[IVXLCDM]+\.? *$/)
+	    {
+	        $num++;
+	    } else {
+                # To make <td> not collapse in height.
+	        $line .= '&nbsp;';
+	    }
+	    my $align = 'left';
+        
+            # Gray out versenumbers
+	    if ($lineForTjek =~ /^[ \t]*[IVXLCDM]+\.? *$/ 
+                   || $lineForTjek =~ /^ *\d+\.? *$/
+	           || $lineForTjek =~ /^ *\[\d+\] *$/ ) {
+	        $line = qq|<span style="color:#808080">$line</span>|;
+	    }
+        
+	    if ($line =~ /<center>/) {
+	        $align = 'center';
+	        $line =~ s/<\/?center>//g;
+	    }
+	    if ($line =~ /<right>/) {
+	        $align = 'right';
+	        $line =~ s/<\/?right>//g;
+	    }
+	    $lineHash{'linenum'} = $num;
+	    $lineHash{'align'} = $align;
+        
+	    $line =~ s/<\/?nonum>//gi;
+        
+	    if ($lineForTjek =~ /^ *(\-\-\-\-*) *$/) {
+	        my $width = (length $1)*10;
+	        $width = 100 if $width > 100;
+	        $line = qq|<hr noshade size=1 color="black" width="$width%" style="color:black">|;
+	        $align = 'center';
+	    }
+        
+	    if (($num % 5 == 0) && $lastNum ne $num) {
+	        $dispNum = $num;
+	        $lastNum = $num;
+	    } else {
+	        $dispNum = '';
+	    };
+	    $lineHash{'displayLineNumber'} = $dispNum;
+        
+	    my $wrap = 'nowrap';
+	    if ($line =~ /<wrap>/i) {
+	        $wrap = 'normal';
+	        $line =~ s/<\/?wrap>//g;
+	    }
+	    $lineHash{'white-space'} = $wrap;
+        
+            # Grab line note 
+	    if ($line =~ /<note>/i) {
+	        $line =~ s/<note>(.*?)<\/note>//;
+	        $lineHash{'linenote'} = $1;
+	        $self->{'hasLineNotes'} = 1;
+	    }
+	    
+            # Fix indents
+	    $line =~ s/^(\s+)/_nbsp($1)/e;
+        
+	    $lineHash{'text'} = $line;
+	    
+	    $result .= qq|<p style="white-space: $wrap; text-align: $align" $wrap>|;
+	    $result .= qq|<span style="display:none" class="linenumber">$dispNum</span>|;
+	    $result .= qq|$line|;
+	    $result .= qq|</p>|;
+	    push @{$self->{'lineHashes'}}, \%lineHash;
     }
     $self->{'numberOfVerses'} = $num;
-    return $result.'</table>';
+    return $result;
 }
 
 sub _contentAsPlainPoemHTML {

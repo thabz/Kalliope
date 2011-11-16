@@ -187,18 +187,10 @@ sub moreLinks {
 
 sub poem {
     my ($poem,$needle,$biblemark) = @_;
-    my $HTML;
-    $HTML .= '<SPAN CLASS="digtoverskrift"><I>'.$poem->topTitle."</I></SPAN><BR>";
-    $HTML .= '<SPAN CLASS="digtunderoverskrift">'.$poem->subtitle.'</SPAN><BR>' if $poem->subtitleAsHTML;
-    $HTML .= '<BR>';
-
-    unless ($poem->isProse) {
-        my $indhold = '<table cellpadding="0" cellspacing="0">';
-        $indhold .= qq|<tr><td><img alt="" src="gfx/trans1x1.gif" width="50" height="1"></td><td>$HTML</td></tr>|;
-        $indhold .= '</table>';
-        $HTML = $indhold;
-    }
-   
+    my $HTML = '<div class="poem-body"><article>';
+    $HTML .= '<h1 class="digtoverskrift">'.$poem->topTitle."</h1>";
+    $HTML .= '<h2 class="digtunderoverskrift">'.$poem->subtitle.'</h2>' if $poem->subtitleAsHTML;
+  
  #   $HTML .= '<div style="white-space: nowrap">' unless $poem->isProse;
     $HTML .= $poem->content($biblemark);
  #   $HTML .= '</div>' unless $poem->isProse;
@@ -216,22 +208,23 @@ sub poem {
     $HTML =~ s/<footmark id="footnote([^"]+)"\/>/<A CLASS="green" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup>$1<\/sup><\/A>/gsi;
     $HTML =~ s/<footmark&nbsp;id="footnote([^"]+)"\/>/<A CLASS="green" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup><span style="font-size: 9px">$1<\/span><\/sup><\/A>/gsi;
     if ($needle) {
-	$needle =~ s/^\s+//;
-	$needle =~ s/\s+$//;
-	$needle =~ s/[^a-zA-Z‰Îˆ·ÈÌ˙Ê¯Â∆ÿ≈ ]//g;
-	my @needle = split /\s+/,$needle;
-	my $split1 = time+10043;
-	my $split2 = time+10045;
-	my $block1 = '<SPAN STYLE="background-color: #f0f080">';
-	my $block2 = '</SPAN>';
-	my $anchor = '<A NAME="offset">';
-	foreach my $ne (@needle) {
-	    $HTML =~ s/($ne)/$split1$1$split2/gi
+	    $needle =~ s/^\s+//;
+	    $needle =~ s/\s+$//;
+	    $needle =~ s/[^a-zA-Z‰Îˆ·ÈÌ˙Ê¯Â∆ÿ≈ ]//g;
+	    my @needle = split /\s+/,$needle;
+	    my $split1 = time+10043;
+	    my $split2 = time+10045;
+	    my $block1 = '<SPAN STYLE="background-color: #f0f080">';
+	    my $block2 = '</SPAN>';
+	    my $anchor = '<A NAME="offset">';
+	    foreach my $ne (@needle) {
+	        $HTML =~ s/($ne)/$split1$1$split2/gi
         }
-	$HTML =~ s/$split1/$anchor$split1/;
-	$HTML =~ s/$split1/$block1/g;
-	$HTML =~ s/$split2/$block2/g;
+	    $HTML =~ s/$split1/$anchor$split1/;
+	    $HTML =~ s/$split1/$block1/g;
+	    $HTML =~ s/$split2/$block2/g;
     }
+    $HTML .= '</article></div> <!-- poem-body -->';
     return $HTML;
 }
 

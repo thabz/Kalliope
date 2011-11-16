@@ -190,9 +190,7 @@ margin: 0pt 0pt 0pt 0pt;
 h1, h2, h3 {
     font-size: 18px;
     text-align: left;
-    font-family: Arial, Helvetiva;
     font-weight: bold;
-    color: rgb(139,56,65);
 }
 
 	
@@ -243,16 +241,23 @@ td.stat {
    font-size: 13px;
 }
 
-span.digtoverskrift {
+div.poem-body, div.prose-body {
+    font: Georgia, serif;
+}
+
+h1.digtoverskrift {
     font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+h2.digtunderoverskrift {
+    font-weight: normal;
+    font-size: 10px;
 }
 
 span.workunderoverskrift {
     font-size: 14px;
-}
-
-span.digtunderoverskrift {
-    font-size: 10px;
 }
 
 
@@ -630,6 +635,17 @@ div.frontmenu-item div.title {
 div.frontmenu-item div.descr {
     color: #808080;
     font-size: 11px; 
+}
+
+div.poem-body p {
+    margin: 0;
+    padding: 0;
+}
+
+div.poem-body p span.linenumber {
+    font-size: 9pt; 
+    color: #808080; 
+    text-align: left
 }
 
 /* Special style for smart phones */
