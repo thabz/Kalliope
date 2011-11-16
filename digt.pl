@@ -187,7 +187,7 @@ sub moreLinks {
 
 sub poem {
     my ($poem,$needle,$biblemark) = @_;
-    my $HTML = '<div class="poem-body"><article>';
+    my $HTML = '<div class="poem-body instapaper_body"><article>';
     $HTML .= '<h1 class="digtoverskrift">'.$poem->topTitle."</h1>";
     $HTML .= '<h2 class="digtunderoverskrift">'.$poem->subtitle.'</h2>' if $poem->subtitleAsHTML;
   
