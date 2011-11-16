@@ -143,8 +143,8 @@ sub titleAsHTML {
         $title = $self->{'title'};
         $subtitle = $self->{'subtitle'};
     }
-    my $result = $title;
-    $result .= qq|<br><span class="subtitle">$subtitle</span>| if $subtitle;
+    my $result = "<div class='first'>$title</div>";
+    $result .= qq|<div class="second">$subtitle</div>| if $subtitle;
     return $result;
 }
 
@@ -287,28 +287,29 @@ sub print {
     my $titleForWindow = $self->titleForWindow;
     my $feedlink = '';
     if ($self->{'rss_feed_url'}) {
-	my $url = $self->{'rss_feed_url'};
-	my $title = $self->{'rss_feed_title'};
-	$feedlink = qq|<link rel="alternate" type="application/rss+xml" title="$title" href="$url">|;
+	    my $url = $self->{'rss_feed_url'};
+	    my $title = $self->{'rss_feed_title'};
+	    $feedlink = qq|<link rel="alternate" type="application/rss+xml" title="$title" href="$url">|;
     }
     $feedlink .= qq|<link rel="alternate" type="application/rss+xml" title="Kalliope - Seneste nyheder" href="news-feed.cgi">|;
     print CGI::header(-type => 'text/html; charset=ISO-8859-1',
 # -expires => '+4h',
 		      -cookie => $self->{'cookies'});
     if ($self->{'redirect'}) {
-	my $url = $self->{'redirect'};
-	print qq|<html><head><meta http-equiv="refresh" content="0; URL=$url"></head></html>|;
-	return;
+	    my $url = $self->{'redirect'};
+	    print qq|<html><head><meta http-equiv="refresh" content="0; URL=$url"></head></html>|;
+	    return;
     }
     
     print '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">';
     print <<"EOF";
-<HTML><HEAD><TITLE>$titleForWindow</TITLE>
+<HTML class="kalliope"><HEAD><TITLE>$titleForWindow</TITLE>
 <LINK REL="Shortcut Icon" HREF="http://www.kalliope.org/favicon.ico">
 <link rel="apple-touch-icon" href="http://www.kalliope.org/gfx/icons/iphone-icon.png">
 <meta name="viewport" content="width=device-width; initial-scale=1.0" />
 <link rel="search" type="application/opensearchdescription+xml" title="Kalliope" href="http://www.kalliope.org/opensearch.xml">
-<LINK REL=STYLESHEET TYPE="text/css" HREF="kalliope.css">
+<link rel="stylesheet type="text/css" href="kalliope.css">
+<!-- <link rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 400px)" href="mobile.css">-->
 <META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
 <META name="description" content="Stort arkiv for ældre digtning">
 <META name="keywords" content="digte, lyrik, litteratur, litteraturhistorie, digtere, digtarkiv, etext, e-text, elektronisk tekst, kalliope, kalliope.org, www.kalliope.org">
@@ -373,10 +374,6 @@ GOOGLEADS
 	    print '</div> <!-- submenu -->';
     }
 
-    print '<div class="maintitle">';
-    print $self->titleAsHTML;
-    print '</div> <!-- maintitle -->';
-    
     print '</div> <!-- top section -->';
 
     # Body
@@ -385,6 +382,11 @@ GOOGLEADS
     print $self->_navigationMain;
     print '</div> <!-- navigation -->';
     print '<div class="paper">';
+    print '<div class="maintitle">';
+    print $self->titleAsHTML;
+    print '</div> <!-- maintitle -->';
+    
+
     print '<div class="paper-content">';
 
     print '<div class="columnholder">';
