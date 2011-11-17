@@ -103,6 +103,7 @@ $page->addBox( width => '250',
                printer => 0,
                coloumn => 1,
   	           theme => 'dark',
+  	           cssClass => 'quality',
 	           content => &quality($poem) );
 
 if ($poem->footnotes) { 
@@ -126,8 +127,8 @@ if ($poem->hasLineNotes) {
 if (&xrefs($poem)) { 
     $page->addBox( width => '250',
 	           coloumn => 1,
-		   theme => 'dark',
-                   title => 'Henvisninger hertil',
+		       theme => 'dark',
+               title => 'Henvisninger hertil',
 	           content => &xrefs($poem) );
 }
 
@@ -153,6 +154,7 @@ my $workTitle = $work->titleWithYear;
 $page->addBox( width => '250',
 	       coloumn => 1,
 	       theme => 'dark',
+	       cssClass => 'morelinks',
 	       content =>  &moreLinks($poem,$work));
 
 $page->print;
@@ -164,7 +166,7 @@ $page->print;
 sub moreLinks {
     my ($poem,$work) = @_;
     my $longdid = $poem->longdid;
-    my $HTML = '<div class="morelinks">';
+    my $HTML = '';
     if (!$poem->isProse ) {
         $HTML .= qq|<a title="Tilføj/fjern linienumre" href="javascript:{\$('.linenumber').toggle()}">Vis linienumre...<span class="linenumber">&#x2611;</span><span class="linenumber" style="display:none">&#x2610;</span></a><br>|;
     }
@@ -183,7 +185,6 @@ sub moreLinks {
 	my $title = $poem->linkTitle;
         $HTML .= qq|<a class="more" title="Gå til »$title«" href="digt.pl?longdid=$prevPoem">Forrige tekst...</a><br>|;
     }
-    $HTML .= '</div> <!-- morelinks -->';
     return $HTML;
 }
 
@@ -330,7 +331,7 @@ sub notes {
     my @notes = $poem->notesAsHTML;
     $HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center"><span class="noprint">&#149;&nbsp;&#149;&nbsp;&#149;</span></div>',@notes;
     if ($#keywords >= 0) {
-	$HTML .= '<span class="noprint"><br><br><B>Nøgleord:</B> ';
+	$HTML .= '<span class="noprint keywords"><br><br><B>Nøgleord:</B> ';
         $HTML .= join ', ', map { $_->clickableTitle($LA) } @keywords;
 	$HTML .= '</span>';
     }
@@ -348,16 +349,18 @@ sub quality {
 
 sub pics {
     my $work = shift;
-    my $HTML = "\n\n<center><small>";
+    my $HTML = "<small>";
     my @pics = $work->pics;
     foreach my $pic (@pics) {
+        $HTML .= '<center>';
         $HTML .= Kalliope::Web::insertThumb($pic);
-	$HTML .= '<br>';
-	$HTML .= $pic->{'description'} || '';
-	$HTML .= '<br>';
-	$HTML .= '<br>';
+        $HTML .= '</center>';
+	    $HTML .= '<br>';
+	    $HTML .= $pic->{'description'} || '';
+	    $HTML .= '<br>';
+	    $HTML .= '<br>';
     }
-    $HTML .= '</small></center>';
+    $HTML .= '</small>';
     return $HTML;
 }
 

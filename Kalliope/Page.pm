@@ -196,7 +196,7 @@ sub addBox {
     my $align =  $args{align} ? $args{align} : 'left';
     my $theme = $args{'theme'} || 'normal';
     my $HTML;
-    $HTML .= qq|\n<div class="box$theme" style="text-align: $align">|;
+    $HTML .= qq|\n<div class="box$theme $args{cssClass}" style="text-align: $align">|;
     if ($args{title}) {
 	    $HTML .= qq|<div class="listeoverskrifter">$args{title}</div><br>|;
     }
@@ -385,6 +385,7 @@ GOOGLEADS
     print '<div class="paper">';
     print '<div class="maintitle">';
     print $self->titleAsHTML;
+    print '<div class="clear"></div>';
     print '</div> <!-- maintitle -->';
     
 
@@ -417,8 +418,10 @@ GOOGLEADS
     # Foot
     print '<div class="footer">';
     print '<div class="searchbox">';
-    print '<FORM METHOD="get" ACTION="ksearch.cgi">';
-    print '<INPUT CLASS="search" NAME="needle" placeholder="Søg i Kalliope"><INPUT TYPE="hidden" NAME="sprog" VALUE="'.$self->lang.'"><INPUT TYPE="hidden" NAME="type" VALUE="free">';
+    print '<form method="get" action="ksearch.cgi">';
+    print '<input class="search" name="needle" placeholder="Søg i Kalliope">';
+    print '<input type="hidden" name="sprog" value="'.$self->lang.'">';
+    print '<input type="hidden" name="type" value="free">';
     print '</form>';
     print '</div> <!-- searchbox -->';
     print '<div class="flags">';
@@ -443,11 +446,11 @@ try {
 var pageTracker = _gat._getTracker("UA-8418639-1");
 pageTracker._trackPageview();
 } catch(err) {}</script>|;
-    if ($user || $self->{'setremoteuser'}) {
-	print '<div style="padding:5px 5px 0 0;text-align:right"><a style="color:#808080;font-size:0.5em" href="login.cgi?action=logout">Log ud</a></div>';
-    } else {
-	print '<div style="padding:5px 5px 0 0;text-align:right"><a style="color:#a0a0a0;font-size:0.5em" href="login.cgi">&pi;</a></div>';
-    }
+#    if ($user || $self->{'setremoteuser'}) {
+#	    print '<div style="padding:5px 5px 0 0;text-align:right"><a style="color:#808080;font-size:0.5em" href="login.cgi?action=logout">Log ud</a></div>';
+#    } else {
+#	    print '<div style="padding:5px 5px 0 0;text-align:right"><a style="color:#a0a0a0;font-size:0.5em" href="login.cgi">&pi;</a></div>';
+#    }
     print '</body></html>';
 }
 

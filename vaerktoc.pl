@@ -71,6 +71,7 @@ if ($work->hasPics) {
 $page->addBox( width => '250',
                coloumn => 1,
                theme => 'dark',
+               cssClass => 'noter',
                content => &notes($work) );
 
 
@@ -84,12 +85,8 @@ $page->addBox( width => '250',
 $page->addBox( width => '100%',
 	       coloumn => 1,
 	       theme => 'dark',
+	       cssClass => 'morelinks',
 	       content => &otherFormats($poet,$work) );
-
-$page->addBox( width => '250',
-	       coloumn => 1,
-	       theme => 'dark',
-	       content => qq|<img src="gfx/trans1x1.gif" width="150" height="1">| );
 
 $page->print;
 
@@ -124,16 +121,18 @@ sub completeWorks {
 
 sub pics {
     my $work = shift;
-    my $HTML = '<center><small>';
+    my $HTML = '<small>';
     my @pics = $work->pics;
     foreach my $pic (@pics) {
+        $HTML .= '<center>';
         $HTML .= Kalliope::Web::insertThumb($pic);
-	$HTML .= '<br>';
-	$HTML .= $pic->{'description'};
-	$HTML .= '<br>';
-	$HTML .= '<br>';
+        $HTML .= '</center>';
+	    $HTML .= '<br>';
+	    $HTML .= $pic->{'description'};
+	    $HTML .= '<br>';
+	    $HTML .= '<br>';
     }
-    $HTML .= '</small></center>';
+    $HTML .= '</small>';
     return $HTML;
 }
 
@@ -146,8 +145,10 @@ sub notes {
     $HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>' if $#notes >= 0;
     $HTML .= 'Sidst ændret: '.Kalliope::Date::shortDate($work->lastModified);
     $HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>';
+    $HTML .= '<div class="quality">';
     $HTML .= $work->quality->asHTML;
     $HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>';
+    $HTML .= '</div>';
     $HTML = qq|<span style="font-size: 12px">$HTML</span>|;
     return $HTML;
 }

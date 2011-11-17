@@ -646,7 +646,7 @@ div.prose-body {
 }
 
 div.poem-body {
-    padding-left: 50px;
+    padding-left: 20px;
 }
 
 div.poem-body p {
@@ -658,7 +658,7 @@ div.poem-body p {
 div.poem-body p span.linenumber {
     font-size: 9pt; 
     color: #808080; 
-    left: -30px;
+    left: -25px;
     top: 0;
     text-align: right;
     position: absolute;
@@ -682,7 +682,7 @@ div.poem-body p span.linenumber {
       position: relative!important;
       left: 0!important;
       top: 0!important;
-      background:#EAEADA;
+      background:#eaeada;
       border: 0;
       text-align: left;
       clear: both;
@@ -732,6 +732,13 @@ div.poem-body p span.linenumber {
     }
 
     div.maintitle {
+        padding-top: 4px!important;
+        padding-bottom: 4px!important;
+        background-color: #e5dcb5;
+        -webkit-box-shadow: 0px 4px 5px black;
+        -moz-box-shadow: 0px 4px 5px black;
+        box-shadow: 0px 4px 5px black;
+        z-index: 1000;
     }
 
     div.maintitle h1 {
@@ -739,9 +746,12 @@ div.poem-body p span.linenumber {
         font-size: 18px;
         float: left;
         padding-right: 4px;
+        padding-left: 8px;
         clear: none!important;
         width: auto!important;
+        background-color: transparent!important;
     }
+
 
     div.maintitle h2 {
         color: black;
@@ -749,9 +759,9 @@ div.poem-body p span.linenumber {
         float: left;
         clear: none!important;
         width: auto!important;
+        background-color: transparent!important;
     }
-    
-    
+
     /* frontmenu elements */
 
     div.frontmenu-item {
@@ -780,18 +790,16 @@ div.poem-body p span.linenumber {
     /* mainmenu */
 
     div.mainmenu {
+        z-index: 2000;
+        -webkit-box-shadow: 0px 4px 5px black;
+        -moz-box-shadow: 0px 4px 5px black;
+        box-shadow: 0px 4px 5px black;
+        background: #ab201e;
     }
 
     div.mainmenu ul {
         padding: 4px 0 2px 0;
         margin: 0;
-        background: #ab201e;
-        -webkit-box-shadow: 0px 3px 5px black;
-        /*
-        -moz-box-shadow: 1px 1px 2px black;
-        -webkit-box-shadow: 1px 1px 2px black;
-        box-shadow: 1px 1px 2px black;
-        */
         width: 100%;
     }
     
@@ -824,4 +832,57 @@ div.poem-body p span.linenumber {
         height: 48px;
         clear: both;
     }
+    
+    div.footer {
+        padding: 10px 10px 10px 10px!important;
+        clear: both!important;
+        width: auto!important;
+        -webkit-box-shadow: 0px -4px 5px black;
+        -moz-box-shadow: 0px -4px 5px black;
+        box-shadow: 0px -4px 5px black;
+        z-index: 2000;
+    }
+
+    div.footer input {
+        width: 100px;
+    }
+
+    div.footer div.searchbox {
+        float: left!important;
+    }
+
+    div.footer div.flags {
+        float: right!important;
+        width: auto!important;
+        background-color: #fafaea!important;
+    }
+
+    div.poem-body {
+        padding-left: 20px!important;
+        width: auto!important;
+    }
+
+    div.noter {
+        padding-top: 20px!important;
+/*
+        background-color: #e5dcb5;
+        padding: 10px 10px 10px 10px!important;
+        clear: both!important;
+        width: auto!important;
+        -webkit-box-shadow: 0px -4px 5px black;
+        -moz-box-shadow: 0px -4px 5px black;
+        box-shadow: 0px -4px 5px black;
+        z-index: 1000;
+*/
+    }
+    
+    div.quality, div.morelinks, div.noter span.keywords, div.boxdark div.listeoverskrifter {
+        display: none!important;
+    }
+
+    div.prose-body {
+        text-align: justify;
+    }
+
+    
 }
