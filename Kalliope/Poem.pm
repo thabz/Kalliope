@@ -310,7 +310,7 @@ sub _contentAsPoemHTML {
 	    $lineHash{'text'} = $line;
 	    
 	    $result .= qq|<p style="white-space: $wrap; text-align: $align" $wrap>|;
-	    $result .= qq|<span style="display:none" class="linenumber instapaper_ignore">$dispNum</span>|;
+	    $result .= qq|<span class="linenumber instapaper_ignore">$dispNum</span>|;
 	    $result .= qq|$line|;
 	    $result .= qq|</p>|;
 	    push @{$self->{'lineHashes'}}, \%lineHash;

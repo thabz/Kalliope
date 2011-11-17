@@ -315,6 +315,7 @@ sub print {
 <META name="keywords" content="digte, lyrik, litteratur, litteraturhistorie, digtere, digtarkiv, etext, e-text, elektronisk tekst, kalliope, kalliope.org, www.kalliope.org">
 $feedlink
 <script type="text/javascript" src="script/jquery-1.7.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic|PT+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 
 <SCRIPT TYPE="text/javascript">
 function openTimeContext(year) {

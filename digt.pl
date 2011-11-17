@@ -165,7 +165,9 @@ sub moreLinks {
     my ($poem,$work) = @_;
     my $longdid = $poem->longdid;
     my $HTML = '<div class="morelinks">';
-    $HTML .= qq|<a title="Tilføj/fjern linienumre" href="javascript:{\$('.linenumber').toggle()}">Vis linienumre...<span class="linenumber">&#x2611;</span><span class="linenumber" style="display:none">&#x2610;</span></a><br>|;
+    if (!$poem->isProse ) {
+        $HTML .= qq|<a title="Tilføj/fjern linienumre" href="javascript:{\$('.linenumber').toggle()}">Vis linienumre...<span class="linenumber">&#x2611;</span><span class="linenumber" style="display:none">&#x2610;</span></a><br>|;
+    }
     $HTML .= qq|<a class="more" title="Vis denne tekst i et format som pænere når udskrevet" href="digt.pl?longdid=$longdid&amp;printer=1">Vis printudgave...</a><br>|;
     $HTML .= qq|<a title="Send redaktionen en rettelse til denne tekst" class="more" onClick="window.open('korrektur.cgi?longdid=$longdid','Korrekturpopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=330'); return false" href="javascript:{}">Send en rettelse...</a><br>|;
 
@@ -187,13 +189,12 @@ sub moreLinks {
 
 sub poem {
     my ($poem,$needle,$biblemark) = @_;
-    my $HTML = '<div class="poem-body instapaper_body"><article>';
+    my $div_class = $poem->isProse ? 'prose-body' : 'poem-body';
+    my $HTML = qq|<div class="$div_class instapaper_body"><article>|;
     $HTML .= '<h1 class="digtoverskrift">'.$poem->topTitle."</h1>";
     $HTML .= '<h2 class="digtunderoverskrift">'.$poem->subtitle.'</h2>' if $poem->subtitleAsHTML;
   
- #   $HTML .= '<div style="white-space: nowrap">' unless $poem->isProse;
     $HTML .= $poem->content($biblemark);
- #   $HTML .= '</div>' unless $poem->isProse;
 
     foreach (1..4) { # TODO: Løs dette mere elegant.
 	$HTML =~ s/ -&nbsp;/ &mdash;&nbsp;/g;
