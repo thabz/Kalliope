@@ -664,6 +664,10 @@ div.poem-body p span.linenumber {
     position: absolute;
 }
 
+div.frontpage-about {
+    display: none;
+}
+
 /* Special style for smart phones */
 @media screen and (max-device-width: 480px) {
     body {
@@ -893,12 +897,16 @@ div.poem-body p span.linenumber {
 */
     }
     
-    div.quality, div.morelinks, div.noter span.keywords, div.boxdark div.listeoverskrifter {
+    div.hidemobile, div.quality, div.morelinks, div.noter span.keywords, div.boxdark div.listeoverskrifter {
         display: none!important;
     }
 
     div.prose-body {
         text-align: justify;
+    }
+
+    div.frontpage-about {
+        display: block;
     }
 
     

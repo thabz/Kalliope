@@ -55,6 +55,10 @@ my $page = new Kalliope::Page(
 		changelangurl => 'poets.cgi?list=az&amp;sprog=XX',
 );
 
+$page->addBox(coloumn => 0,
+              content => &about,
+              cssClass => 'frontpage-about');
+
 $page->addBox ( coloumn => 0,
                 content => &latestNews($showAllNews),
                 end => $showAllNews ? '' : qq|<a class="more" href="index.cgi?showall=yes">Læs gamle nyheder...</a>| );
@@ -62,6 +66,7 @@ $page->addBox ( coloumn => 0,
 if (my $dayToday = &dayToday()) {
     $page->addBox ( title => "Dagen idag",
 	                coloumn => 1,
+	                cssClass => 'hidemobile',
 	                content => $dayToday,
 	                end => '<A class="more" HREF="today.cgi">Vælg anden dato...</A>');
 }
@@ -69,6 +74,7 @@ if (my $dayToday = &dayToday()) {
 my ($sonnetText,$sonnetEnd) = &sonnet;
 $page->addBox ( title => "Sonetten på pletten",
 	            coloumn => 1,
+                cssClass => 'hidemobile',
 	            content => $sonnetText,
 	            end => $sonnetEnd);
 $page->print();
@@ -86,6 +92,12 @@ sub latestNews {
     while (my ($line) = $sth->fetchrow_array) {
         $HTML .= qq|<p align="justify">$line</p>|;
     }
+    return $HTML;
+}
+
+sub about {
+    my $HTML = '<p><i>Kalliope</i> er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning. Kalliope indeholder også udenlandsk digtning, men primært i et omfang som kan bruges til belysning af den danske samling.</p>';
+    #$HTML .= '<p>Når en forfatter har været død i over 70 år, bliver vedkommendes værk offentlig ejendom. Se evt. <A CLASS=green HREF="kabout.pl?page=attractions">coming attractions</A>. Derfor er det tilladt at bruge indholdet samlet i Kalliope til hvad man måtte ønske og af samme grund finder man ikke den nyere lyrik i samlingen. Det er gratis for alle at bruge Kalliope.</p>';
     return $HTML;
 }
 
