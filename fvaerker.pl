@@ -61,9 +61,9 @@ if ($#works >= 0) {
     foreach my $work (@works) {
         my $iconfile;
         if ($work->hasContent) {
-            $iconfile = $work->status eq 'complete' ? 'gfx/icons/book-h48.gif' : 'gfx/icons/incomplete-h48.gif';
+            $iconfile = $work->status eq 'complete' ? 'gfx/icons/book-w96.png' : 'gfx/icons/incomplete-w96.png';
         } else {
-            $iconfile = 'gfx/icons/book-na-h48.gif';
+            $iconfile = 'gfx/icons/book-na-w96.png';
         }
         push @menuItems, { 
             url => 'vaerktoc.pl?fhandle='.$fhandle."&vhandle=".$work->vhandle, 

@@ -50,31 +50,31 @@ sub front {
 	    title => 'Digtere efter navn', 
 	    status => 1,
         desc => "Oversigt over digtere ordnet alfabetisk efter navn",
-        icon => 'gfx/icons/works-h48.gif'
+        icon => 'gfx/icons/works-w96.png'
     },{
         url => "poets.cgi?list=19&sprog=$LA", 
 	    title => 'Digtere efter år', 
 	    status => 1, 
         desc => "Digtere ordnet kronologisk efter fødeår",
-        icon => 'gfx/icons/works-h48.gif'
+        icon => 'gfx/icons/works-w96.png'
     },{
 	    url => "poets.cgi?list=pics&sprog=$LA", 
 	    title => 'Digtere efter udseende', 
 	    status => 1,
         desc => "En oversigt med portrætter af alle digtere.",
-        icon => 'gfx/icons/portrait-h48.gif',
+        icon => 'gfx/icons/portrait-w96.png',
     },{
 	    url => "poets.cgi?list=flittige&sprog=$LA", 
 	    title => 'Flittigste digtere', 
 	    status => 1,
         desc => "Digtere ordnet efter hvor rigt repræsenteret de er i Kalliope.",
-        icon => 'gfx/icons/works-h48.gif'
+        icon => 'gfx/icons/works-w96.png'
     },{
 	    url => "poets.cgi?list=pop&sprog=$LA", 
 	    title => 'Mest populære digtere', 
 	    desc => 'En oversigt over de mest læste digtere i Kalliope.',
 	    status => 1,
-        icon => 'gfx/icons/pop-h48.gif'});
+        icon => 'gfx/icons/pop-w96.png'});
 
     return @menuStruct;
 }

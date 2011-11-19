@@ -52,25 +52,25 @@ sub front {
 	title => 'Digte efter titler', 
 	status => 1,
         desc => "Digte ordnet efter titler",
-        icon => 'gfx/icons/poem-h48.gif'
+        icon => 'gfx/icons/poem-w96.png'
                     },{
         url => "klines.pl?mode=0&forbogstav=A&sprog=$LA", 
 	title => 'Digte efter førstelinier', 
 	status => 1,
         desc => "Digte ordnet efter førstelinier",
-        icon => 'gfx/icons/poem-h48.gif'
+        icon => 'gfx/icons/poem-w96.png'
                     },{
         url => "klines.pl?mode=2&sprog=$LA", 
 	title => 'Mest populære digte', 
 	status => 1,
         desc => "De mest læste digte i Kalliope",
-        icon => 'gfx/icons/pop-h48.gif'
+        icon => 'gfx/icons/pop-w96.png'
                     },{
         url => "latest.cgi", 
 	title => 'Seneste tilføjelser', 
 	status => 1,
         desc => "De senest tilføjede digte i Kalliope",
-        icon => 'gfx/icons/poem-h48.gif'
+        icon => 'gfx/icons/poem-w96.png'
 		    } );
 
     return @menuStruct;

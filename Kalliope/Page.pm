@@ -225,11 +225,11 @@ sub addFrontMenu {
 	    if ($item{status}) {
 	        my $HTML = '<div class="frontmenu-item">';
 	        if ($item{unclickable}) {
-    	        $HTML .= qq|<div class="icon"><img height=48 border="0" src="$item{icon}" alt="#"></div>|;
+    	        $HTML .= qq|<div class="icon"><img width="48" border="0" src="$item{icon}" alt="$item{title}"></div>|;
     	        $HTML .= qq|<div class="title">$item{title}</div>|;
     	        $HTML .= qq|<div class="descr">$item{desc}</div>|;
 	        } else {
-    	        $HTML .= qq|<div class="icon"><a href="$url"><img height=48 border="0" src="$item{icon}" alt="#"></a></div>|;
+    	        $HTML .= qq|<div class="icon"><a href="$url"><img width="48" border="0" src="$item{icon}" alt="$item{title}"></a></div>|;
     	        $HTML .= qq|<div class="title"><a href="$url">$item{title}</a></div>|;
     	        $HTML .= qq|<div class="descr"><a href="$url">$item{desc}</a></div>|;
 	        }
@@ -635,27 +635,27 @@ sub _navigationMain {
             klass => 'forside',
             url => "index.cgi?lang=$lang",
             caption => 'Tilbage til forsiden',
-            icon => 'gfx/icons/poet-w64.gif'
+            icon => 'gfx/icons/poet-w96.png'
         },{
             title => 'Digtere',
             url => "poetsfront.cgi?sprog=$lang",
             caption => 'Digtere',
-            icon => 'gfx/icons/poet-w64.gif'
+            icon => 'gfx/icons/poet-w96.png'
         },{
             title => 'Værker',
             url => "worksfront.cgi?sprog=$lang",
             caption => 'Værker',
-            icon => 'gfx/icons/works-w64.gif'
+            icon => 'gfx/icons/works-w96.png'
         },{
             title => 'Digte',
             url => "poemsfront.cgi?sprog=$lang",
             caption => 'Digte',
-            icon => 'gfx/icons/poem-w64.gif'
+            icon => 'gfx/icons/poem-w96.png'
         },{
             title => 'Baggrund',
             url => "metafront.cgi?sprog=$lang",
             caption => 'Om Kalliope og andet baggrundsmateriale',
-            icon => 'gfx/icons/keywords-w64.gif'
+            icon => 'gfx/icons/keywords-w96.png'
         });
 
     my $HTML = '<div class="mainmenu"><ul>';

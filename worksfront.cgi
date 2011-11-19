@@ -51,25 +51,25 @@ sub front {
 	    title => 'Værker efter titel', 
 	    status => 1,
         desc => "Værker ordnet efter titel",
-        icon => 'gfx/icons/works-h48.gif'
+        icon => 'gfx/icons/works-w96.png'
     },{
         url => "kvaerker.pl?mode=aar&sprog=$LA", 
 	    title => 'Værker efter år', 
 	    status => 1,
         desc => "Værker ordnet efter udgivelsesår",
-        icon => 'gfx/icons/works-h48.gif'
+        icon => 'gfx/icons/works-w96.png'
     },{
         url => "kvaerker.pl?mode=digter&sprog=$LA", 
 	    title => 'Værker efter digter', 
 	    status => 1,
         desc => "Værker grupperet efter digter",
-        icon => 'gfx/icons/works-h48.gif'
+        icon => 'gfx/icons/works-w96.png'
     },{
         url => "kvaerker.pl?mode=pop&sprog=$LA", 
 	    title => 'Mest populære værker', 
 	    status => 1,
         desc => "De mest læste værker i Kalliope",
-        icon => 'gfx/icons/pop-h48.gif'
+        icon => 'gfx/icons/pop-w96.png'
     });
 
     return @menuStruct;

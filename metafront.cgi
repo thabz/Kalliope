@@ -51,25 +51,25 @@ sub front {
 	    title => 'Nøgleord', 
 	    status => 1,
         desc => "Litteraturhistoriske skitser og forklaringer af litterære begreber",
-        icon => 'gfx/icons/keywords-h48.gif'
+        icon => 'gfx/icons/keywords-w96.png'
     },{
         url => "dict.cgi", 
 	    title => 'Ordbog', 
 	    status => 1, 
         desc => "Forklaringer til svære eller usædvanlige ord som man støder på i de ældre digte",
-        icon => 'gfx/icons/keywords-h48.gif'
+        icon => 'gfx/icons/keywords-w96.png'
     },{
 	    url => "persons.cgi?list=az", 
 	    title => 'Personer', 
 	    status => 1,
         desc => "Litterært interessante personer som ikke har skrevet lyrik.",
-        icon => 'gfx/icons/portrait-h48.gif',
+        icon => 'gfx/icons/portrait-w96.png',
     },{
 	    url => "kabout.pl?page=about", 
 	    title => 'Om Kalliope', 
 	    status => 1,
         desc => "Om websitet Kalliope.",
-        icon => 'gfx/icons/portrait-h48.gif',
+        icon => 'gfx/icons/portrait-w96.png',
     });
 
     return @menuStruct;
