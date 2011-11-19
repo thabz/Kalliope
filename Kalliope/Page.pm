@@ -41,6 +41,7 @@ sub new {
     $self->{'pagegroupchoosen'} = '';
     $self->{'coloumnwidths'} = [];
     $self->{'columnrule'} = 0;
+    $self->{'cssClass'} = '';
 
     # Override defaults
     foreach my $key (keys %args) {
@@ -193,10 +194,11 @@ sub _constructBreadcrumbs {
 
 sub addBox {
     my ($self,%args) = @_;
-    my $align =  $args{align} ? $args{align} : 'left';
+    my $align =  $args{'align'} || 'left';
     my $theme = $args{'theme'} || 'normal';
-    my $HTML;
-    $HTML .= qq|\n<div class="box$theme $args{cssClass}" style="text-align: $align">|;
+    my $cssClass = $args{'cssClass'} || '';
+    my $HTML = '';
+    $HTML .= qq|<div class="box$theme $cssClass" style="text-align: $align">|;
     if ($args{title}) {
 	    $HTML .= qq|<div class="listeoverskrifter">$args{title}</div><br>|;
     }
@@ -661,6 +663,7 @@ sub _navigationMain {
         my ($title,$url,$icon,$caption,$class) = ($item->{'title'},
                                   $item->{'url'}, $item->{'icon'}, 
                                   $item->{'caption'}, $item->{'klass'});
+        $class = $class || '';                         
         $HTML .= qq|<li class="$class">|;
 	    $HTML .= qq|<a title="$caption" href="$url"><img title="$caption" src="$icon"></a>|;
 	    $HTML .= qq|<p><a title="$caption" href="$url">$title</a></p>|;
