@@ -732,12 +732,12 @@ div.poem-body p span.linenumber {
     }
 
     div.maintitle {
-        padding-top: 4px!important;
+        padding-top: 6px!important;
         padding-bottom: 4px!important;
         background-color: #e5dcb5;
-        -webkit-box-shadow: 0px 4px 5px black;
-        -moz-box-shadow: 0px 4px 5px black;
-        box-shadow: 0px 4px 5px black;
+        -webkit-box-shadow: 0px 4px 5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 4px 5px rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 5px rgba(0,0,0,0.75);
         z-index: 1000;
     }
 
@@ -791,10 +791,26 @@ div.poem-body p span.linenumber {
 
     div.mainmenu {
         z-index: 2000;
-        -webkit-box-shadow: 0px 4px 5px black;
-        -moz-box-shadow: 0px 4px 5px black;
-        box-shadow: 0px 4px 5px black;
+        -webkit-box-shadow: 0px 4px 5px  rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 4px 5px  rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 5px  rgba(0,0,0,0.75);
         background: #ab201e;
+        
+        background-image: linear-gradient(left , rgb(112,20,19) 0%, rgb(171,33,30) 50%, rgb(112,20,19) 100%);
+        background-image: -o-linear-gradient(left , rgb(112,20,19) 0%, rgb(171,33,30) 50%, rgb(112,20,19) 100%);
+        background-image: -moz-linear-gradient(left , rgb(112,20,19) 0%, rgb(171,33,30) 50%, rgb(112,20,19) 100%);
+        background-image: -webkit-linear-gradient(left , rgb(112,20,19) 0%, rgb(171,33,30) 50%, rgb(112,20,19) 100%);
+        background-image: -ms-linear-gradient(left , rgb(112,20,19) 0%, rgb(171,33,30) 50%, rgb(112,20,19) 100%);
+
+        background-image: -webkit-gradient(
+        	linear,
+        	left top,
+        	right top,
+        	color-stop(0, rgb(112,20,19)),
+        	color-stop(0.5, rgb(171,33,30)),
+        	color-stop(1, rgb(112,20,19))
+        );
+        
     }
 
     div.mainmenu ul {
@@ -814,6 +830,7 @@ div.poem-body p span.linenumber {
         -moz-box-shadow: none;
         -webkit-box-shadow: none;
         box-shadow: none;
+        background: transparent;
     }
     
     div.mainmenu ul li.forside {
@@ -837,9 +854,9 @@ div.poem-body p span.linenumber {
         padding: 10px 10px 10px 10px!important;
         clear: both!important;
         width: auto!important;
-        -webkit-box-shadow: 0px -4px 5px black;
-        -moz-box-shadow: 0px -4px 5px black;
-        box-shadow: 0px -4px 5px black;
+        -webkit-box-shadow: 0px -4px 5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px -4px 5px rgba(0,0,0,0.75);
+        box-shadow: 0px -4px 5px rgba(0,0,0,0.75);
         z-index: 2000;
     }
 
