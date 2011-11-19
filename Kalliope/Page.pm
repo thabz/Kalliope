@@ -184,9 +184,9 @@ sub _constructBreadcrumbs {
     my @blocks;
     foreach my $item (@crumbs) {
        if ($$item[1]) {
-          push @blocks,qq|<A HREF="$$item[1]">$$item[0]</A>|;
+          push @blocks,qq|<a href="$$item[1]">$$item[0]</a>|;
        } else {
-          push @blocks,$$item[0];
+          push @blocks,qq|<span>$$item[0]</span>|;
        }
     }
     return join ' >> ',@blocks;

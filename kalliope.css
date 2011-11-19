@@ -437,7 +437,7 @@ div.site {
 div.breadcrumbs {
     background-color: #fafaea;
     font-size: 10px;
-    color: #444;
+    color: #888;
     border-bottom: 1px solid #c7bb95;
     text-align: left;
     height: 13px;
@@ -446,6 +446,10 @@ div.breadcrumbs {
 
 div.breadcrumbs a {
     color: #888;
+}
+
+div.breadcrumbs span {
+    color: #444;
 }
 
 div.topsection {
