@@ -570,6 +570,19 @@ div.footer div.flags {
     float: right;
 }
 
+div.footer div.flags a {
+    padding-right: 4px;
+}
+
+div.footer div.flags img.selectedflag {
+    border: 1px solid black;
+}
+
+div.footer div.flags img.hidescreen {
+    display: none;
+}
+
+
 /* mainmenu */
 
 div.mainmenu {
@@ -877,6 +890,11 @@ div.frontpage-about {
         width: auto!important;
         background-color: #fafaea!important;
     }
+    
+    div.footer div.flags img.hidescreen {
+        display: inline;
+    }
+    
 
     div.poem-body {
         padding-left: 20px!important;
@@ -897,7 +915,7 @@ div.frontpage-about {
 */
     }
     
-    div.hidemobile, div.quality, div.morelinks, div.noter span.keywords, div.boxdark div.listeoverskrifter {
+    .hidemobile, div.quality, div.morelinks, div.noter span.keywords, div.boxdark div.listeoverskrifter {
         display: none!important;
     }
 
@@ -908,6 +926,7 @@ div.frontpage-about {
     div.frontpage-about {
         display: block;
     }
+
 
     
 }

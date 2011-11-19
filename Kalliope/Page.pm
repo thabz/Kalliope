@@ -474,10 +474,15 @@ sub langSelector {
     foreach my $lang ('dk','uk','de','fr','se','no','it','us') {
        my $refURL = $url;
        $refURL =~ s/sprog=../sprog=$lang/;
-       my $img = $lang eq $selfLang ? "${lang}select.gif" : "$lang.gif";
+       my $cssClass = $lang eq $selfLang ? 'selectedflag' : ';';
+       my $img16 = "gfx/flags/16/$lang.png";
+       my $img32 = "gfx/flags/32/$lang.png";
        my $alt = $lang eq $selfLang ? 'Du befinder dig i den '.$titles{$lang}.' samling.' : 'Skift til den '.$titles{$lang}.' samling.';
-       $HTML .= qq|<A TITLE="$alt" HREF="$refURL"><IMG ALT="$alt" BORDER=0 SRC="gfx/flags/$img"></A>|;
-#       $HTML .= '<BR>' if $lang eq 'de';
+
+       $HTML .= qq|<a title="$alt" href="$refURL">|;
+       $HTML .= qq|<img class="$cssClass hidescreen" width="16" alt="$alt" border="0" src="$img32">|;
+       $HTML .= qq|<img class="$cssClass hidemobile" width="16" alt="$alt" border="0" src="$img16">|;
+       $HTML .= qq|</a>|;
     }
     return $HTML;
 }
