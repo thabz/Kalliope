@@ -121,18 +121,21 @@ sub completeWorks {
 
 sub pics {
     my $work = shift;
-    my $HTML = '<small>';
+    my $HTML = "<div class='image-aside'>";
+    $HTML .= '<aside>';
     my @pics = $work->pics;
     foreach my $pic (@pics) {
-        $HTML .= '<center>';
+        $HTML .= '<div class="figure">';
+        $HTML .= '<figure>';
         $HTML .= Kalliope::Web::insertThumb($pic);
-        $HTML .= '</center>';
-	    $HTML .= '<br>';
-	    $HTML .= $pic->{'description'};
-	    $HTML .= '<br>';
-	    $HTML .= '<br>';
+	    $HTML .= '<figcaption>';
+	    $HTML .= $pic->{'description'} || '';
+	    $HTML .= '</figcaption>';
+	    $HTML .= '</figure>';
+	    $HTML .= '</div> <!-- figure -->';
     }
-    $HTML .= '</small>';
+    $HTML .= '</aside>';
+    $HTML .= '</div> <!-- image-aside -->';
     return $HTML;
 }
 

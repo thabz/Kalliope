@@ -82,9 +82,7 @@ $page->addBox( width => $poem->isProse ? '' : '10',
 
 
 if ($poem->hasPics) { 
-    $page->addBox( width => '250',
-	               coloumn => 1,
-		           theme => 'dark',
+    $page->addBox( coloumn => 1,
 	               content => &pics($poem) );
 }
 
@@ -327,7 +325,8 @@ sub xrefs {
 
 sub notes {
     my ($poem,@keywords) = @_;
-    my $HTML = '<div class="noter" >';
+    my $HTML = '<div class="noter">';
+    $HTML .= '<aside>';
     my @notes = $poem->notesAsHTML;
     $HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center"><span class="noprint">&#149;&nbsp;&#149;&nbsp;&#149;</span></div>',@notes;
     if ($#keywords >= 0) {
@@ -335,6 +334,7 @@ sub notes {
         $HTML .= join ', ', map { $_->clickableTitle($LA) } @keywords;
 	$HTML .= '</span>';
     }
+    $HTML .= "</aside>";
     $HTML .= "</div>";
     return $HTML;
 }
@@ -349,18 +349,21 @@ sub quality {
 
 sub pics {
     my $work = shift;
-    my $HTML = "<small>";
+    my $HTML = "<div class='image-aside'>";
+    $HTML .= '<aside>';
     my @pics = $work->pics;
     foreach my $pic (@pics) {
-        $HTML .= '<center>';
+        $HTML .= '<div class="figure">';
+        $HTML .= '<figure>';
         $HTML .= Kalliope::Web::insertThumb($pic);
-        $HTML .= '</center>';
-	    $HTML .= '<br>';
+	    $HTML .= '<figcaption>';
 	    $HTML .= $pic->{'description'} || '';
-	    $HTML .= '<br>';
-	    $HTML .= '<br>';
+	    $HTML .= '</figcaption>';
+	    $HTML .= '</figure>';
+	    $HTML .= '</div> <!-- figure -->';
     }
-    $HTML .= '</small>';
+    $HTML .= '</aside>';
+    $HTML .= '</div> <!-- image-aside -->';
     return $HTML;
 }
 

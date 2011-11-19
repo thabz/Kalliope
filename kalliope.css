@@ -309,6 +309,20 @@ a.more:after {
    content: "\25B8";
 }
 
+div.image-aside {
+    font-size: 0.8em;
+}
+
+div.image-aside figure {
+    margin: 0;
+    padding: 0;
+}
+
+div.image-aside div.figure {
+    margin-bottom: 10px;
+}
+
+
 /* Omkringliggende div */
 
 div.body {
@@ -762,13 +776,13 @@ div.frontpage-about {
         -moz-box-shadow: 0px 4px 5px rgba(0,0,0,0.75);
         box-shadow: 0px 4px 5px rgba(0,0,0,0.75);
         z-index: 1000;
+        font-size: 18px;
     }
 
     div.maintitle h1 {
         color: black;
         font-size: 18px;
         float: left;
-        padding-right: 4px;
         padding-left: 8px;
         clear: none!important;
         width: auto!important;
@@ -783,6 +797,10 @@ div.frontpage-about {
         clear: none!important;
         width: auto!important;
         background-color: transparent!important;
+    }
+    
+    div.maintitle h2:before {
+        content: ": ";
     }
 
     /* frontmenu elements */
