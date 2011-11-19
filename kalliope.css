@@ -121,6 +121,7 @@ body {
     background-color: #c0c0c0;
     padding: 0px;
     margin: 0px;
+    text-rendering: optimizeLegibility;
 }
 
 div.biothumb {
@@ -598,7 +599,7 @@ div.footer div.flags img {
     padding-right: 2px;
 }
 
-div.footer div.flags img.hidescreen {
+div.footer div.flags img.retina {
     display: none;
 }
 
@@ -966,7 +967,16 @@ div.frontpage-about {
     div.frontpage-about {
         display: block;
     }
+}
 
+/* Special graphics for highdensity displays */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
 
-    
+    img.non-retina {
+        display: none!important;
+    }
+
+    img.retina {
+        display: inline!important;
+    }
 }

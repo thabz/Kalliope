@@ -310,7 +310,7 @@ sub print {
 <link rel="apple-touch-icon" href="http://www.kalliope.org/gfx/icons/iphone-icon.png">
 <meta name="viewport" content="width=device-width; initial-scale=1.0" />
 <link rel="search" type="application/opensearchdescription+xml" title="Kalliope" href="http://www.kalliope.org/opensearch.xml">
-<link rel="stylesheet type="text/css" href="kalliope.css">
+<link rel="stylesheet" type="text/css" href="kalliope.css">
 <!-- <link rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 400px)" href="mobile.css">-->
 <META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
 <META name="description" content="Stort arkiv for ældre digtning">
@@ -328,19 +328,16 @@ function openTimeContext(year) {
 EOF
     my $user = fetch Kalliope::User;
     if ($user) {
-	print qq|
+	    print qq|
 	    <script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.core.js"></script>
-<script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.draggable.js"></script>
-<script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.resizable.js"></script>
-<script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.dialog.js"></script>
-<link type="text/css" href="http://jqueryui.com/latest/themes/base/ui.all.css" rel="stylesheet"/>
-
-	    |;
+        <script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.draggable.js"></script>
+        <script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.resizable.js"></script>
+        <script type="text/javascript" src="http://jqueryui.com/latest/ui/ui.dialog.js"></script>
+        <link type="text/css" href="http://jqueryui.com/latest/themes/base/ui.all.css" rel="stylesheet"/>|;
     }
     print qq|
 </HEAD>
-<!--<BODY LINK="#000000" VLINK="#000000" ALINK="#000000" LEFTMARGIN=0 TOPMARGIN=0 MARGINHEIGHT=0 MARGINWIDTH=0>-->
-<BODY LINK="#000000" VLINK="#000000" ALINK="#000000">|;
+<body link="#000000" vlink="#000000" alink="#000000">|;
  
     print '<center>';
 
@@ -464,15 +461,18 @@ sub langSelector {
     my $self = shift;
     my $selfLang = $self->lang; 
     my $HTML;
-    my %titles = ( dk => 'danske',
-                   uk => 'britiske',
-                   us => 'amerikanske',
-		   de => 'tyske',
-		   fr => 'franske',
-		   it => 'italienske',
-		   se => 'svenske',
-		   no => 'norske' );
+    my %titles = ( 
+        dk => 'danske',
+        uk => 'britiske',
+        us => 'amerikanske',
+		de => 'tyske',
+		fr => 'franske',
+		it => 'italienske',
+		se => 'svenske',
+		no => 'norske');
+    
     my $url = $self->{'changelangurl'};
+    
     foreach my $lang ('dk','uk','de','fr','se','no','it','us') {
        my $refURL = $url;
        $refURL =~ s/sprog=../sprog=$lang/;
@@ -482,8 +482,8 @@ sub langSelector {
        my $alt = $lang eq $selfLang ? 'Du befinder dig i den '.$titles{$lang}.' samling.' : 'Skift til den '.$titles{$lang}.' samling.';
 
        $HTML .= qq|<a class="$cssClass" title="$alt" href="$refURL">|;
-       $HTML .= qq|<img class="hidescreen" width="16" alt="$alt" border="0" src="$img32">|;
-       $HTML .= qq|<img class="hidemobile" width="16" alt="$alt" border="0" src="$img16">|;
+       $HTML .= qq|<img class="retina" width="16" alt="$alt" border="0" src="$img32">|;
+       $HTML .= qq|<img class="non-retina" width="16" alt="$alt" border="0" src="$img16">|;
        $HTML .= qq|</a>|;
     }
     return $HTML;
