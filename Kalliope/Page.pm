@@ -479,9 +479,9 @@ sub langSelector {
        my $img32 = "gfx/flags/32/$lang.png";
        my $alt = $lang eq $selfLang ? 'Du befinder dig i den '.$titles{$lang}.' samling.' : 'Skift til den '.$titles{$lang}.' samling.';
 
-       $HTML .= qq|<a title="$alt" href="$refURL">|;
-       $HTML .= qq|<img class="$cssClass hidescreen" width="16" alt="$alt" border="0" src="$img32">|;
-       $HTML .= qq|<img class="$cssClass hidemobile" width="16" alt="$alt" border="0" src="$img16">|;
+       $HTML .= qq|<a class="$cssClass" title="$alt" href="$refURL">|;
+       $HTML .= qq|<img class="hidescreen" width="16" alt="$alt" border="0" src="$img32">|;
+       $HTML .= qq|<img class="hidemobile" width="16" alt="$alt" border="0" src="$img16">|;
        $HTML .= qq|</a>|;
     }
     return $HTML;

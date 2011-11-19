@@ -570,12 +570,17 @@ div.footer div.flags {
     float: right;
 }
 
-div.footer div.flags a {
-    padding-right: 4px;
+
+div.footer div.flags a.selectedflag {
+    border: 1px solid #888;
+    border: 1px solid rgba(0,0,0,0.5);
+    padding-bottom: 1px;
 }
 
-div.footer div.flags img.selectedflag {
-    border: 1px solid black;
+div.footer div.flags img {
+    vertical-align: middle;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 div.footer div.flags img.hidescreen {
