@@ -158,13 +158,19 @@ sub notes {
 
 sub tableOfContent {
     my $work = shift;
-    my $HTML;
-    $HTML .= '<SPAN CLASS="digtoverskrift"><I>'.$work->title."</I> ".$work->parenthesizedYear.'</SPAN><BR>';
+    my $HTML = '';
+    
+    $HTML .= '<h1 class="digtoverskrift"><i>'.$work->title."</i> ".$work->parenthesizedYear."</h1>";
     if ($work->subtitle) {
-        my $subTitle = join '<BR>', split /\n/, $work->subtitle;
-	$HTML .= '<SPAN CLASS="workunderoverskrift"><i>'.$subTitle.'</i></SPAN><BR>';
+        my $subtitle = join '<br>', split /\n/, $work->subtitle;
+        $HTML .= '<h2 class="digtunderoverskrift">'.$subtitle.'</h2>';
     }
-    $HTML .= '<BR>';
+#    $HTML .= '<SPAN CLASS="digtoverskrift"><I>'.$work->title."</I> ".$work->parenthesizedYear.'</SPAN><BR>';
+#    if ($work->subtitle) {
+#        my $subTitle = join '<BR>', split /\n/, $work->subtitle;
+#	    $HTML .= '<SPAN CLASS="workunderoverskrift"><i>'.$subTitle.'</i></SPAN><BR>';
+#    }
+#    $HTML .= '<BR>';
     my $sth = $dbh->prepare("SELECT longdid,toctitel as titel,type,did FROM digte WHERE vid=? ORDER BY vaerkpos");
     $sth->execute($work->vid);
     return 'Kalliope indeholder endnu ingen tekster fra dette værk.' unless $sth->rows;
