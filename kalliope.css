@@ -119,6 +119,15 @@ td.boxheaderlayer {
     font-weight: 800;
 }
 
+div.box {
+    margin-bottom: 20px;
+}
+
+div.box:last-child {
+    margin-bottom: 0;
+}
+
+
 div.nav {
 /*    background-color: white; */
 /*    height: 100px;*/

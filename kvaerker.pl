@@ -46,13 +46,14 @@ push @crumbs,['Værker',"worksfront.cgi?sprog=$LA"];
 push @crumbs,[$crumbTitle{$mode},''];
 
 my $page = new Kalliope::Page (
-	        title => 'Værker',
-		subtitle => $crumbTitle{$mode},
-                lang => $LA,
-		crumbs => \@crumbs,
-		icon => 'works-green',
-                pagegroup => 'worklist',
-                page => "kvaerker$mode" );
+    title => 'Værker',
+    titleLink => "worksfront.cgi?sprog=$LA",
+	subtitle => $crumbTitle{$mode},
+    lang => $LA,
+	crumbs => \@crumbs,
+	icon => 'works-green',
+    pagegroup => 'worklist',
+    page => "kvaerker$mode" );
 
 my $dbh = Kalliope::DB->connect;
 

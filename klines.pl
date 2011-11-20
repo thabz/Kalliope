@@ -47,6 +47,7 @@ push @crumbs,[$forbogstav,''] unless $mode == 2;
 
 my $page = new Kalliope::Page (
 	title => 'Digte',
+	titleLink => "poemsfront.cgi?sprog=$LA",
 	subtitle => $title,
 	pagegroup => 'poemlist',
 	page => $page,

@@ -75,13 +75,14 @@ push @crumbs,['Digtere',"poetsfront.cgi?sprog=$LA"];
 push @crumbs,[$struct->{'crumbtitle'},''];
 
 my $page = new Kalliope::Page (
-	        title => 'Digtere',
-		subtitle => $struct->{'crumbtitle'},
-		lang => $LA,
-		crumbs => \@crumbs,
-                pagegroup => 'poets',
-		thumb => 'gfx/icons/poet-h70.gif',
-                page => $struct->{'page'}); 
+    title => 'Digtere',
+    titleLink => "poetsfront.cgi?sprog=$LA",
+    subtitle => $struct->{'crumbtitle'},
+    lang => $LA,
+	crumbs => \@crumbs,
+    pagegroup => 'poets',
+	thumb => 'gfx/icons/poet-h70.gif',
+    page => $struct->{'page'}); 
 
 my $function = $struct->{'function'};
 

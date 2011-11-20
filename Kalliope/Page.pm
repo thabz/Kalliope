@@ -90,6 +90,7 @@ sub newAuthor {
     my $group = $poet->getType ne 'person' ? 'persons' : 'poets';
     my $page = new Kalliope::Page(pagegroupchoosen => $group, 
                                   title => $poet->name,
+                                  titleLink => "ffront.cgi?fhandle=".$poet->fhandle,
                                   coloumnwidths => $args{'coloumnwidths'},
                                   columrule => $args{'columnrule'},
                                   subtitle => $args{'subtitle'},
@@ -136,15 +137,11 @@ sub titleAsHTML {
     my $self = shift;
     my $title;
     my $subtitle;
-    if ($self->{'poet'}) {
-        $title = $self->{'poet'}->name;
-        $subtitle = $self->{'subtitle'};
-#$subtitle = $self->{'poet'}->lifespan;
-    } else {
-        $title = $self->{'title'};
-        $subtitle = $self->{'subtitle'};
-    }
-    my $result = "<h1>$title</h1>";
+    $title = $self->{'title'};
+    $title = "<a href='".$self->{'titleLink'}."'>$title</a>" if $self->{'titleLink'};
+    $subtitle = $self->{'subtitle'};
+    my $result;
+    $result .= "<h1>$title</h1>";
     $result .= qq|<h2>$subtitle</h2>| if $subtitle;
     return $result;
 }
@@ -198,9 +195,9 @@ sub addBox {
     my $theme = $args{'theme'} || 'normal';
     my $cssClass = $args{'cssClass'} || '';
     my $HTML = '';
-    $HTML .= qq|<div class="box$theme $cssClass" style="text-align: $align">|;
+    $HTML .= qq|<div class="box $cssClass" style="text-align: $align">|;
     if ($args{title}) {
-	    $HTML .= qq|<div class="listeoverskrifter">$args{title}</div><br>|;
+	    $HTML .= qq|<div class="listeoverskrifter">$args{title}</div>|;
     }
     $HTML .= $args{content};
     if ($args{end}) {
