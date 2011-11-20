@@ -29,12 +29,25 @@ span.newsdate {
     margin-bottom: 4px;
 }
 
-.oversigt TH {
-   background-color: rgb(117,106,89);
-  color: #e5dcb5;
+table.oversigt {
 }
 
-.darker TD {
+table.oversigt th {
+   background-color: rgb(117,106,89);
+   background-color: rgba(0,0,0,0.5);
+   background-color: #756A59;
+   color: #e5dcb5;
+   color: rgba(255,255,255,0.8);
+   padding: 1px;
+   font-size: 14px;
+   font-weight: normal;
+}
+
+th, td {
+    vertical-align: top;
+}
+
+.darker td {
     background-color: #e2e2d2;
 }
 
@@ -82,7 +95,6 @@ td.timeline {
   border-right: 1px solid black;
   border-top: 1px solid white;
   border-left: 1px solid white;
-  font-family: Arial, Helvetica, SansSerif; 
   font-size: 12px;
   border: 1px;
   color: black;
@@ -176,36 +188,13 @@ span.gray a.green {
      color: rgb(159,92,99);
 }
 
-td.textboxheader  { 
-padding: 0pt 0pt 0pt 0pt;
-margin: 0pt 0pt 0pt 0pt;
-	font-size: 12pt;
-        color: white;
-	font-family: Sans-serif;
-	background-color: #6384ad;
-}
-
 h1, h2, h3 {
     font-size: 18px;
     text-align: left;
     font-weight: bold;
 }
 
-	
-td.textboxcontent { 
-    padding: 0pt 0pt 0pt 0pt; 
-    margin: 0pt 0pt 0pt 0pt;
-}
-
-td.topframetitel {
-    font-family: Georgia, Times;
-    font-size: 40px;
-    color: white; 
-    text-align: right;
-}
-
 .listeoverskrifter {
-    font-family: Arial, Helvetica;
     font-size: 14px;
     color: rgb(117,106,89);
     font-weight: 800;
@@ -222,7 +211,6 @@ p.digtliste {
 legend {
    font-weight: 100;
    color: rgb(99,132,173);
-   font-family: Arial, Helvetica;
    font-size: 8pt;
 }
        
@@ -230,13 +218,7 @@ fieldset {
   padding: 5pt;
   text-align: center;
   font-size: 13px;
-  font-family: Arial,Helvetica;
   border: 1px solid #808080;
-}
-
-td.stat {
-   font-family: Arial;
-   font-size: 13px;
 }
 
 div.poem-body, div.prose-body {
@@ -254,42 +236,8 @@ h2.digtunderoverskrift {
     font-size: 14px;
 }
 
-
-td.breadcrumbs {
-    background-color: #fafaea;
-    font-size: 11px;
-    height: 10px;
-    color: #808080;
-    border-bottom: 1px solid #c7bb95;
-    text-align: left;
-}
-
-td.navigation {
-    color: rgb(117,106,89); 
-    background: url(gfx/frames/left.gif);
-    width: 138px;
-    vertical-align: top;
-    height: 320px;
-}
-
-td.paper {
-    width: 100%;
-    vertical-align: top;
-}
-
-td.top {
-  /*  vertical-align: middle;*/
-    font-size: 32px;
-    font-weight: normal;
-    font-family: Arial, Helvetica;
-    padding-left: 10px;
-    background: url(gfx/frames/paper-dark.png);
-    background-color: #e5dcb5;
-    text-align: left;	   
-}
-
 div.boxbook {
-    font-family: Georgia, Times, serif;
+    font-family: 'PT Serif', serif;
 }
 
 div.morelinks a {
