@@ -653,7 +653,7 @@ sub _navigationMain {
             icon => 'gfx/icons/keywords-w96.png'
         });
 
-    my $HTML = '<div class="mainmenu"><ul>';
+    my $HTML = '<div class="mainmenu"><nav><ul>';
     foreach my $item (@menuItems) {
         my ($title,$url,$icon,$caption,$class) = ($item->{'title'},
                                   $item->{'url'}, $item->{'icon'}, 
@@ -664,7 +664,7 @@ sub _navigationMain {
 	    $HTML .= qq|<p><a title="$caption" href="$url">$title</a></p>|;
 	    $HTML .= '</li>';
     }
-    $HTML .= '<ul></div> <!-- mainmenu -->';
+    $HTML .= '<ul></nav></div> <!-- mainmenu -->';
     return $HTML;
 }
 
