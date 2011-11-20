@@ -300,9 +300,9 @@ sub print {
 	    return;
     }
     
-    print '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">';
+    print '<!DOCTYPE html>';
     print <<"EOF";
-<HTML class="kalliope"><HEAD><TITLE>$titleForWindow</TITLE>
+<html class="kalliope"><HEAD><TITLE>$titleForWindow</TITLE>
 <LINK REL="Shortcut Icon" HREF="http://www.kalliope.org/favicon.ico">
 <link rel="apple-touch-icon" href="http://www.kalliope.org/gfx/icons/iphone-icon.png">
 <meta name="viewport" content="width=device-width; initial-scale=1.0" />
