@@ -59,9 +59,7 @@ $page->addBox(coloumn => 0,
               content => &about,
               cssClass => 'frontpage-about');
 
-$page->addBox ( coloumn => 0,
-                content => &latestNews($showAllNews),
-                end => $showAllNews ? '' : qq|<a class="more" href="index.cgi?showall=yes">Læs gamle nyheder...</a>| );
+&latestNews($showAllNews);
 
 if (my $dayToday = &dayToday()) {
     $page->addBox ( title => "Dagen idag",
@@ -77,6 +75,7 @@ $page->addBox ( title => "Sonetten på pletten",
                 cssClass => 'hidemobile',
 	            content => $sonnetText,
 	            end => $sonnetEnd);
+	            
 $page->print();
 
 #
@@ -85,14 +84,17 @@ $page->print();
 
 sub latestNews {
     my $showAllNews = shift;
-    my $HTML;
     my $where = $showAllNews ? "" : "WHERE active = 1";
     my $sth = $dbh->prepare("SELECT entry FROM news $where ORDER BY orderby");
     $sth->execute;
     while (my ($line) = $sth->fetchrow_array) {
-        $HTML .= qq|<p align="justify">$line</p>|;
+        $page->addBox ( coloumn => 0,
+                        content => $line);
     }
-    return $HTML;
+    $page->addBox(
+        coloumn => 0,
+        content => $showAllNews ? '' : qq|<a class="more" href="index.cgi?showall=yes">Læs gamle nyheder...</a>|
+        );
 }
 
 sub about {
