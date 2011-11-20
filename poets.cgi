@@ -91,9 +91,8 @@ if ($function eq 'listaz' || $function eq 'list19') {
     $page->addDoubleColumn(@blocks);
 } else {
     my ($HTML,$endHTML) = &{$struct->{'function'}}($LA,$limit);
-    $page->addBox ( width => '90%',
-                    content =>  $HTML,
-    		        end => $endHTML);
+    $page->addBox(content =>  $HTML,
+    		      end => $endHTML);
 }
 
 

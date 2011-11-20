@@ -53,6 +53,6 @@ while (my $h = $sth->fetchrow_hashref) {
     $blocks[$idx]->{'body'} .= '<A HREF="keyword.cgi?keyword='.$h->{'ord'}.'&sprog='.$LA.'">'.$h->{'titel'}.'</A><BR>';
 }
 
-$page->addBox ( width => '75%',
-                content => Kalliope::Web::doubleColumn(\@blocks) );
+$page->addDoubleColumn(@blocks);
+
 $page->print;

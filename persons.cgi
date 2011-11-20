@@ -62,17 +62,15 @@ push @crumbs,['Andre personer',''];
 push @crumbs,[$struct->{'crumbtitle'},''];
 
 my $page = new Kalliope::Page (
-		title => $struct->{'title'},
-		lang => $LA,
-		crumbs => \@crumbs,
-                pagegroup => 'persons',
-		thumb => 'gfx/icons/poet-h70.gif',
-                page => $struct->{'page'}); 
+	title => $struct->{'title'},
+    lang => $LA,
+	crumbs => \@crumbs,
+    pagegroup => 'persons',
+	thumb => 'gfx/icons/poet-h70.gif',
+    page => $struct->{'page'}); 
 
-my ($HTML,$endHTML) = &{$struct->{'function'}}($LA,$limit);
-$page->addBox ( width => '90%',
-                content =>  $HTML,
-		end => $endHTML);
+&{$struct->{'function'}}($LA,$limit);
+
 $page->print;
 
 sub listaz {
@@ -83,7 +81,7 @@ sub listaz {
     my @f;
     while (my $f = $sth->fetchrow_hashref) { 
         $f->{'sort'} = $f->{'efternavn'};
-	push @f,$f;
+	    push @f,$f;
     }
 
     my $last = "";
@@ -92,18 +90,18 @@ sub listaz {
     my $new;
     my $f;
     foreach $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
-	next unless $f->{'sort'};
-	$f->{'sort'} =~ s/Aa/Å/g;
-	$new = uc substr($f->{'sort'},0,1);
-	if ($new ne $last) {
-	    $last=$new;
-	    $bi++;
-	    $blocks[$bi]->{'head'} = "<DIV CLASS=listeoverskrifter>$new</DIV><BR>";
-	}
-	$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.($f->{'efternavn'} || '').",&nbsp;".($f->{'fornavn'} || '').'</A>&nbsp;<FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT><BR>';
-	$blocks[$bi]->{'count'}++;
+	    next unless $f->{'sort'};
+	    $f->{'sort'} =~ s/Aa/Å/g;
+	    $new = uc substr($f->{'sort'},0,1);
+	    if ($new ne $last) {
+	        $last=$new;
+	        $bi++;
+	        $blocks[$bi]->{'head'} = "<DIV CLASS=listeoverskrifter>$new</DIV><BR>";
+	    }
+	    $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.($f->{'efternavn'} || '').",&nbsp;".($f->{'fornavn'} || '').'</A>&nbsp;<FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT><BR>';
+	    $blocks[$bi]->{'count'}++;
     }
-    return (Kalliope::Web::doubleColumn(\@blocks),'');
+    $page->addDoubleColumn(@blocks);
 }
 
 sub list19 {
@@ -131,12 +129,10 @@ sub list19 {
 	    $bi++;
 	    $blocks[$bi]->{'head'} = "<DIV CLASS=listeoverskrifter>$last-$last2</DIV><BR>";
 	}
-	#$blocks[$bi]->{'body'} .= '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%"><TR><TD NOWRAP><A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.",&nbsp;".$f->{'fornavn'}.'</A></TD><TD WIDTH="100%" BACKGROUND="gfx/gray_ellipsis.gif">&nbsp;</TD><TD NOWRAP ALIGN="right"><FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT></TD></TR></TABLE>';
 	$blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->{'fhandle'}.'">'.$f->{'efternavn'}.",&nbsp;".$f->{'fornavn'}.'</A>&nbsp;<FONT COLOR="#808080">('.$f->{'foedt'}."-".$f->{'doed'}.')</FONT><BR>';
 	$blocks[$bi]->{'count'}++;
     }
-
-    return (Kalliope::Web::doubleColumn(\@blocks),'');
+    $page->addDoubleColumn(@blocks);
 }
 
 sub listpics {
@@ -148,20 +144,20 @@ sub listpics {
     $sth->execute();
 
     $HTML = qq|<TABLE ALIGN="center" border=0 cellspacing=10><TR>|;
-    my $i=0;
+    my $i = 0;
     while (my $fhandle = $sth->fetchrow_array) {
         my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
-	my $fullname = $poet->name;
-	$HTML .= "<TD align=center valign=bottom>";
-	$HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/thumb.jpg",url=>"fpics.pl?fhandle=$fhandle",alt=>"Vis portrætter af $fullname"});
-	$HTML .= "<BR>$fullname<BR>";
-	$HTML .= '<FONT COLOR="#808080">'.$poet->lifespan.'</FONT><BR>';
-	$HTML .= "</TD>";
-	if (++$i % 3 == 0) {
-	    $HTML .= "</TR><TR>";
-	}
+	    my $fullname = $poet->name;
+	    $HTML .= "<TD align=center valign=bottom>";
+	    $HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/thumb.jpg",url=>"fpics.pl?fhandle=$fhandle",alt=>"Vis portrætter af $fullname"});
+	    $HTML .= "<BR>$fullname<BR>";
+	    $HTML .= '<FONT COLOR="#808080">'.$poet->lifespan.'</FONT><BR>';
+	    $HTML .= "</TD>";
+	    if (++$i % 3 == 0) {
+	        $HTML .= "</TR><TR>";
+	    }
     }
     $HTML .= "</TR></TABLE>";
-    return ($HTML,'');
+    $page->addBox(content => $HTML);
 }
 
