@@ -630,13 +630,15 @@ sub _navigationMain {
     my $self = shift;
     my $lang = $self->lang;
     
-    my @menuItems = ({
-            title => 'Kalliope',
-            klass => 'forside',
-            url => "index.cgi?lang=$lang",
-            caption => 'Tilbage til forsiden',
-            icon => 'gfx/icons/poet-w96.png'
-        },{
+    my @menuItems = (
+#        {
+#            title => 'Kalliope',
+#            klass => 'forside',
+#            url => "index.cgi?lang=$lang",
+#            caption => 'Tilbage til forsiden',
+#           icon => 'gfx/icons/poet-w96.png'
+#        },
+        {
             title => 'Digtere',
             url => "poetsfront.cgi?sprog=$lang",
             caption => 'Digtere',
