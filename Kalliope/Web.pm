@@ -87,6 +87,17 @@ sub tabbedView {
     return $HTML;
 }
 
+sub insertFlag {
+    my ($lang,$alt) = @_;
+    my $img16 = "gfx/flags/16/$lang.png";
+    my $img32 = "gfx/flags/32/$lang.png";
+    $alt = $alt || '';
+    my $HTML = '';
+    $HTML .= qq|<img class="retina" width="16" alt="$alt" border="0" src="$img32">|;
+    $HTML .= qq|<img class="non-retina" width="16" alt="$alt" border="0" src="$img16">|;
+    return $HTML;
+}
+
 # TODO: Brug http://fancybox.net/
 sub insertThumb {
     my $h = shift;

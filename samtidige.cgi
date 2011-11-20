@@ -48,7 +48,6 @@ my $page = newAuthor Kalliope::Page(
     crumbs => \@crumbs
 );
 
-
 #
 # Samtidige digtere -------------------------------------
 #
@@ -56,34 +55,23 @@ my $page = newAuthor Kalliope::Page(
 my $sth = $dbh->prepare("SELECT DISTINCT f.* FROM fnavne as f,vaerker as v WHERE v.fhandle = f.fhandle AND v.aar > ? AND v.aar < ? AND f.fhandle != ? ORDER BY f.doed");
 $sth->execute($poet->yearBorn,$poet->yearDead,$poet->fhandle);
 my $antal = $sth->rows;
+my @blocks;
 if ($antal) {
-    my $HTML;
     my $i = 0;
     while (my $h = $sth->fetchrow_hashref) {
-        $HTML .= '<div>';
-	    $HTML .= '<img width="20" height="20" alt="" src="gfx/flags/'.$h->{'sprog'}.'_light.gif">';
+        my $HTML .= '<div>';
+        $HTML .= Kalliope::Web::insertFlag($h->{sprog},'');
 	    $HTML .= '<a href="ffront.cgi?fhandle='.$h->{'fhandle'}.'">'.$h->{'fornavn'}.' '.$h->{'efternavn'};
 	    $HTML .= ' <span class="gray">('.$h->{'foedt'}.'-'.$h->{'doed'}.')</span></a>';
 	    $HTML .= '</div>';
-	    if ($i == int($antal/2) - 1 ) {
-            $page->addBox(
-                coloumn => 0,
-        	    content => $HTML
-        	);
-        	$HTML = '';
-	    }
+	    my $c = $i < $antal/2 ? 0 : 1;
+	    $blocks[$c]->{'body'} .= $HTML;
+	    $blocks[$c]->{'count'}++;
+	    
         $i++;
     }
-    $page->addBox(
-        coloumn => 1,
-	    content => $HTML
-	);
-    $HTML = '<br><br><SMALL><I>Oversigt over digtere som udgav værker i '.$poet->name.'s levetid.</I></SMALL>';
-    $page->addBox(
-        coloumn => 0,
-	    content => $HTML
-	);
-
+    $blocks[0]->{'body'} .= '<br><br><SMALL><I>Oversigt over digtere som udgav værker i '.$poet->name.'s levetid.</I></SMALL>';
+    $page->addDoubleColumn(@blocks);
 }
 
 $page->print;
