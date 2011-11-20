@@ -411,7 +411,8 @@ GOOGLEADS
     print '</div> <!-- middlesection -->';
     print '<div class="clear"></div>';
 
-    # Foot
+    # Footer
+    print '<footer>';
     print '<div class="footer">';
     print '<div class="searchbox">';
     print '<form method="get" action="ksearch.cgi">';
@@ -425,7 +426,7 @@ GOOGLEADS
     print '</div> <!-- flags -->';
     print '<div class="clear"></div>';
     print '</div> <!-- footer -->';
-    
+    print '</footer>';
     print '</div> <!-- layout -->'; 
     print '</div> <!-- site -->'; 
     print '</div> <!-- body -->';
