@@ -51,11 +51,12 @@ sub getEventsGivenMonthAndDayAsHTML {
     my $HTML;
     foreach my $event (@events) {
         my $text = $event->getText;
-	Kalliope::buildhrefs(\$text);
-	my $year = $event->getYear;
-	$HTML .= qq|<TR><TD CLASS="blue" VALIGN="top">$year</TD><TD>$text</TD></TR>|;
+	    Kalliope::buildhrefs(\$text);
+	    my $year = $event->getYear;
+	    my $time = qq|<time datetime="$year-$month-$day">$year</time>|;
+	    $HTML .= qq|<tr><td class="blue" valign="top">$time</td><td>$text</td></tr>|;
     }
-    $HTML = qq|<TABLE>$HTML</TABLE>| if $HTML;
+    $HTML = qq|<table>$HTML</table>| if $HTML;
 
     return $HTML;
 }
