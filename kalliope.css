@@ -265,6 +265,7 @@ a.more {
 
 a.more:after {
    content: "\25B8";
+   content: "\25BA";
 }
 
 div.image-aside {
