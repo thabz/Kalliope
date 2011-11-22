@@ -450,6 +450,10 @@ sub vid {
     return $_[0]->{'vid'};
 }
 
+sub isBible {
+    return 0;
+}
+
 sub work {
     my $self = shift;
     return Kalliope::WorkHome::findByVid($self->vid);

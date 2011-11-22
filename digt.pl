@@ -165,7 +165,7 @@ sub moreLinks {
     my ($poem,$work) = @_;
     my $longdid = $poem->longdid;
     my $HTML = '';
-    if (!$poem->isProse ) {
+    if (!$poem->isProse && !$poem->isBible ) {
         $HTML .= qq|<a title="Tilføj/fjern linienumre" href="javascript:{}" onclick="\$('.linenumber').toggle()">Vis linienumre...<span class="linenumber">&#x2611;</span><span class="linenumber" style="display:none">&#x2610;</span></a><br>|;
     }
     $HTML .= qq|<a class="more" title="Vis denne tekst i et format som pænere når udskrevet" href="digt.pl?longdid=$longdid&amp;printer=1">Vis printudgave...</a><br>|;

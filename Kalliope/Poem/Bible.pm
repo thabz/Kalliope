@@ -105,6 +105,10 @@ sub clickableTitleSimple {
     return '<A CLASS=green HREF="digt.pl?longdid='.$self->longdid.qq|$extraURL">$title</A>|;
 }
 
+sub isBible {
+    return 1;
+}
+
 sub content {
     my $self = shift;
     my $biblemark = shift;
