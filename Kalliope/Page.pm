@@ -192,12 +192,13 @@ sub _constructBreadcrumbs {
 sub addBox {
     my ($self,%args) = @_;
     my $align =  $args{'align'} || 'left';
+    my $titleAlign =  $args{'titleAlign'} || 'left';
     my $theme = $args{'theme'} || 'normal';
     my $cssClass = $args{'cssClass'} || '';
     my $HTML = '';
     $HTML .= qq|<div class="box $cssClass" style="text-align: $align">|;
     if ($args{title}) {
-	    $HTML .= qq|<div class="listeoverskrifter">$args{title}</div>|;
+	    $HTML .= qq|<div class="listeoverskrifter" style="text-align: $titleAlign">$args{title}</div>|;
     }
     $HTML .= $args{content};
     if ($args{end}) {

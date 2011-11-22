@@ -90,6 +90,7 @@ sub latestNews {
     while (my $item = $sth->fetchrow_hashref) {
         my ($year,$month,$day) = split '-', $item->{'pubdate'};
         $page->addBox ( coloumn => 0,
+                        titleAlign => 'right',
                         title => "$day-$month-$year",
                         content => $item->{'entry'});
     }
