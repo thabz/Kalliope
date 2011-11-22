@@ -25,6 +25,7 @@ package Kalliope::Build::News;
 
 use Kalliope::DB;
 use Kalliope;
+use XML::Twig;
 use strict;
 
 my $dbh = Kalliope::DB::connect();
@@ -34,24 +35,39 @@ sub create {
     $dbh->do("CREATE TABLE news ( 
         entry text,
         active integer,
-	orderby integer)");
+	    orderby integer,
+	    pubdate date)");
    $dbh->do(q/CREATE INDEX news_active ON news(active)/);
+   $dbh->do(q/CREATE INDEX news_pubdate ON news(pubdate)/);
    $dbh->do(q/GRANT SELECT ON TABLE news TO public/);
 }
 
 sub insert {
     my $filename = shift;
-    my $sth = $dbh->prepare("INSERT INTO news (entry,active,orderby) VALUES (?,?,?)");
-    open (NEWS,$filename);
+    my $sth = $dbh->prepare("INSERT INTO news (entry,active,orderby,pubdate) VALUES (?,?,?,?)");
+    
+    my $twig = new XML::Twig(keep_encoding => 1);
+    $twig->parsefile($filename);
     my $i = 1;
-    foreach my $line (<NEWS>) {
-	next if $line =~ /^\s*$/;
-	Kalliope::buildhrefs(\$line);
-	my $active = $line =~ /^#/ ? 0 : 1;
-        $line =~ s/^\#//;
-	$sth->execute($line,$active,$i++);
+    foreach my $event ($twig->root->children('item')) {
+        my $body = $event->first_child('body')->xml_string;
+    	my $date = $event->first_child('date')->xml_string;
+    	Kalliope::buildhrefs(\$body);
+    	my ($day,$month,$year) = split('-', $date);
+    	$sth->execute($body,1,$i++,"$year-$month-$day");
     }
-    close (NEWS);
+    
+    
+#    open (NEWS,$filename);
+#    my $i = 1;
+#    foreach my $line (<NEWS>) {
+#	next if $line =~ /^\s*$/;
+#	Kalliope::buildhrefs(\$line);
+#	my $active = $line =~ /^#/ ? 0 : 1;
+#        $line =~ s/^\#//;
+#	$sth->execute($line,$active,$i++);
+#    }
+#    close (NEWS);
 }
 
 1;

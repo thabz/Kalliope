@@ -84,12 +84,14 @@ $page->print();
 
 sub latestNews {
     my $showAllNews = shift;
-    my $where = $showAllNews ? "" : "WHERE active = 1";
-    my $sth = $dbh->prepare("SELECT entry FROM news $where ORDER BY orderby");
+    my $limit = $showAllNews ? "" : "LIMIT 3";
+    my $sth = $dbh->prepare("SELECT entry, pubdate FROM news ORDER BY pubdate DESC $limit");
     $sth->execute;
-    while (my ($line) = $sth->fetchrow_array) {
+    while (my $item = $sth->fetchrow_hashref) {
+        my ($year,$month,$day) = split '-', $item->{'pubdate'};
         $page->addBox ( coloumn => 0,
-                        content => $line);
+                        title => "$day-$month-$year",
+                        content => $item->{'entry'});
     }
     $page->addBox(
         coloumn => 0,

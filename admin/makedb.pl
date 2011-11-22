@@ -58,8 +58,8 @@ if ($__all) {
 #
 # Build news
 #
-my $newsFile = "../data/news.html";
-if (Kalliope::Build::Timestamps::hasChanged($newsFile)) {
+my $newsFile = "../data/news.xml";
+if (Kalliope::Build::Timestamps::hasChanged($newsFile) || 1) {
     &log ("Making news... ");
     Kalliope::Build::News::create();
     Kalliope::Build::News::insert($newsFile);
