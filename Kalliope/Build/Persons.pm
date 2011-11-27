@@ -241,7 +241,9 @@ WHERE 0 <
 	   );
    $dbh->do($SQL);
    $SQL = q(
-       UPDATE fnavne SET fulltext_index_column = to_tsvector('danish',coalesce(fornavn,'') || ' ' || coalesce(efternavn,''));
+       UPDATE fnavne SET fulltext_index_column = 
+          setweight(to_tsvector(coalesce(efternavn,'')), 'A') ||
+          setweight(to_tsvector(coalesce(fornavn,'')), 'B')
   );
   $dbh->do($SQL);
 }

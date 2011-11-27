@@ -663,6 +663,10 @@ div.frontpage-about {
     display: none;
 }
 
+p.searchresult-line {
+    padding-left: 20px;
+}
+
 /* Special style for smart phones */
 @media screen and (max-device-width: 480px) {
     body {

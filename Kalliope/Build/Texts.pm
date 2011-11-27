@@ -63,7 +63,10 @@ sub insert {
 
 sub postinsert {
     $SQL = q(
-         UPDATE digte SET fulltext_index_column = to_tsvector('danish',coalesce(toptitel,'') || ' ' || coalesce(underoverskrift,'') || ' ' || coalesce(indhold,''))
+         UPDATE digte SET fulltext_index_column = 
+            setweight(to_tsvector(coalesce(toptitel,'')), 'A') ||
+            setweight(to_tsvector(coalesce(underoverskrift,'')), 'B') ||
+            setweight(to_tsvector(coalesce(indhold,'')), 'B')
     );
     $dbh->do($SQL);
 }

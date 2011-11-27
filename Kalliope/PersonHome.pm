@@ -58,8 +58,13 @@ sub findByLang {
 
 sub findByNeedle {
     my ($lang,$q,$limit,$offset) = @_;
-    my $sth = $dbh->prepare("SELECT * FROM fnavne WHERE sprog = ? AND fulltext_index_column @@ to_tsquery(?) LIMIT ? OFFSET ?");
-    $sth->execute($lang,$q,$limit,$offset);
+    my $sth = $dbh->prepare(qq|
+        SELECT * FROM fnavne, to_tsquery(?) query
+        WHERE sprog = ? 
+        AND fulltext_index_column @@ query
+        ORDER BY ts_rank_cd(fulltext_index_column, query) DESC 
+        LIMIT ? OFFSET ?|);
+    $sth->execute($q,$lang,$limit,$offset);
     my @result;
     while (my $obj = $sth->fetchrow_hashref) {
 	    bless $obj,'Kalliope::Person';

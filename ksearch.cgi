@@ -98,7 +98,7 @@ sub pageLinks {
     my ($search,$result,$type) = @_;
     my $count = $result->{$type.'count'};
     my $i = 0;
-    my $html = '';
+    my $html = '<div class="morelinks">';
     while ($count > 0) {
         my $link = &link($search,$type,($i*10));
         my $page = $i + 1;
@@ -106,6 +106,7 @@ sub pageLinks {
         $i++;
         $count -= 10;
     }
+    $html .= '</div>';
     return $html;
 }
 
@@ -119,13 +120,15 @@ sub renderResult {
         if ($#persons >= 0) {
             my $HTML;
             foreach my $person (@persons) {
-                $HTML .= '<p>'.$person->clickableNameBlack.'</p>';
+                $HTML .= '<p class="searchresult-line">'.$person->clickableNameBlack.'</p>';
             }
             my $count = $result->{'authorcount'};
-            if ($count > 5) {
+            if ($search->type eq 'author') {
+                $HTML .= "<p>".pageLinks($search,$result,'author')."</p>" if $count > 10;
+            } elsif ($count > 5) {
                 my $flere = $count - 5;
-                $HTML .= qq|<p><a class="more" href="ksearch.cgi">Fandt $flere andre personer. Klik her for at se dem alle...</a></p>|;
-            }
+                $HTML .= qq|<p><a class="more" href="|.&link($search,'author',0).qq|">Fandt $flere andre personer. Klik her for at se dem alle...</a></p>|;
+            }    
             $page->addBox( 
                 title => 'Personer',
             	content => $HTML
@@ -138,13 +141,15 @@ sub renderResult {
         if ($#works >= 0) {
             my $HTML;
             foreach my $work (@works) {
-                $HTML .= '<p>'.$work->clickableTitleLong.'</p>';
+                $HTML .= '<p class="searchresult-line">'.$work->clickableTitleLong.'</p>';
             } 
             my $count = $result->{'workcount'};
-            if ($count > 5) {
+            if ($search->type eq 'work') {
+                $HTML .= "<p>".pageLinks($search,$result,'work')."</p>" if $count > 10;
+            } elsif ($count > 5) {
                 my $flere = $count - 5;
-                $HTML .= qq|<p><a class="more" href="ksearch.cgi">Fandt $flere andre værker. Klik her for at se dem alle...</a></p>|;
-            }
+                $HTML .= qq|<p><a class="more" href="|.&link($search,'work',0).qq|">Fandt $flere andre værker. Klik her for at se dem alle...</a></p>|;
+            }    
             $page->addBox( 
                 title => 'Værker',
             	content => $HTML
@@ -156,11 +161,11 @@ sub renderResult {
         if ($#poems >= 0) {
             my $HTML;
             foreach my $poem (@poems) {
-                $HTML .= '<p>'.$poem->clickableTitle.'</p>';
+                $HTML .= '<p class="searchresult-line">'.$poem->clickableTitle.'</p>';
             } 
             my $count = $result->{'poemcount'};
             if ($search->type eq 'poem') {
-                $HTML .= "<p>".pageLinks($search,$result,'poem')."</p>";
+                $HTML .= "<p".pageLinks($search,$result,'poem')."</p>" if $count > 10;
             } elsif ($count > 5) {
                 my $flere = $count - 5;
                 $HTML .= qq|<p><a class="more" href="|.&link($search,'poem',0).qq|">Fandt $flere andre digte. Klik her for at se dem alle...</a></p>|;
