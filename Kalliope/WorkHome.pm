@@ -25,6 +25,7 @@ package Kalliope::WorkHome;
 use Kalliope::Work;
 
 my %cache;
+my $dbh = Kalliope::DB->connect;
 
 sub findByVid {
     my ($vid) = @_;
@@ -34,6 +35,26 @@ sub findByVid {
         $cache{$vid} = new Kalliope::Work('vid' => $vid);
         return $cache{$vid};
     }
+}
+
+sub findByNeedle {
+    my ($lang,$q,$limit,$offset) = @_;
+    my $sth = $dbh->prepare("SELECT * FROM vaerker WHERE lang = ? AND fulltext_index_column @@ to_tsquery(?) LIMIT ? OFFSET ?");
+    $sth->execute($lang,$q,$limit,$offset);
+    my @result;
+    while (my $obj = $sth->fetchrow_hashref) {
+	    bless $obj,'Kalliope::Work';
+	    push @result,$obj;
+    }
+    return @result;
+}
+
+sub findCountByNeedle {
+    my ($lang,$q) = @_;
+    my $sth = $dbh->prepare("SELECT COUNT(*) FROM vaerker WHERE lang = ? AND fulltext_index_column @@ to_tsquery(?)");
+    $sth->execute($lang,$q);
+    my ($count) = $sth->fetchrow_array;
+    return $count;
 }
 
 1;

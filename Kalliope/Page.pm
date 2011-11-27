@@ -419,7 +419,7 @@ GOOGLEADS
     print '<form method="get" action="ksearch.cgi">';
     print '<input class="search" name="needle" placeholder="Søg i Kalliope">';
     print '<input type="hidden" name="sprog" value="'.$self->lang.'">';
-    print '<input type="hidden" name="type" value="free">';
+    print '<input type="hidden" name="type" value="all">';
     print '</form>';
     print '</div> <!-- searchbox -->';
     print '<div class="flags">';

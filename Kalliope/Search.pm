@@ -25,16 +25,19 @@ use Kalliope::DB ();
 use Kalliope::Search::Free();
 use Kalliope::Search::Keyword();
 use Kalliope::Search::Author();
+use Kalliope::PoemHome;
 
 use strict;
 
 my %objs = ( keyword => 'Keyword',
              free    => 'Free',
+             work => 'Work',
   	     author  => 'Author' );
 
 sub new {
     my ($class,%arg) = @_;
-    my $obj = bless {},'Kalliope::Search::'.$objs{$arg{'type'}};
+    my $obj = bless {}, $class;
+#    my $obj = bless {},'Kalliope::Search::'.$objs{$arg{'type'}};
     map { $obj->{$_} = $arg{$_} } keys %arg;
     return $obj;
 }
@@ -45,6 +48,10 @@ sub type {
 
 sub lang {
     return shift->{'lang'};
+}
+
+sub offset {
+    return shift->{'offset'};
 }
 
 sub firstNumShowing {
@@ -70,7 +77,7 @@ sub hasSearchBox {
 }
 
 sub needle {
-    return '';
+    return shift->{'needle'}
 }
 
 sub needleToUse {
@@ -92,6 +99,20 @@ sub searchBoxHTML {
 sub scriptName {
     return 'ksearch.cgi';
 }
+
+sub pageTitle {
+    return "Søgning"
+}
+
+sub subPageTitle {
+    my $needle = shift->{'needle'};
+    if ($needle ne '') {
+        return "efter »$needle«";
+    } else {
+        return "";
+    }
+}
+
 
 sub getHTML {
     my $self = shift;
@@ -159,36 +180,71 @@ sub count {
 }
 
 sub result {
-    my $self = shift;
-    my @matches;
-    my $args = $self->needleToUse;
-    $args =~ s/[\(\)';|]//g;
-    open(FILE,"swish-search -m 100 -f index/swish.index -w $args |");
-    my $i = -1;
-    my $c = 0;
-    while (my $line = <FILE>) {
-	next if $line =~ /^#/;
-	last if $line =~ /^\./;
-	last if $line =~ /^err:/;
-	$i++;
-	next if $i < $self->firstNumShowing;
-	my ($quality,$id) = split / /,$line;
-	next unless $id;
-	$id =~ s/.html$//;
-	$id =~ s/^.\/dump\///;
-	my $type = '';
-	if ($id =~ /:/) {
-           $id =~ s!:!/!;
-	   $type = 'Kalliope::Work';
-	} else {
-	   $type = 'Kalliope::Poem';
-	}
-	push @matches,[$id,$type,$quality];
-	$c++;
-	last if $c > 9;
+    my ($self,%options) = @_;
+    my $limit = $options{limit} || 500;
+    my $offset = $options{offset} || 0;
+    my $matches = {};
+    my $needle = $self->needleToUse;
+    $needle =~ s/[\(\)';|]//g;
+    print STDERR "Needle: $needle";
+    
+    if ($self->type eq 'all' || $self->type eq 'author') {
+        my @persons = Kalliope::PersonHome::findByNeedle($self->lang, $needle, $limit, $offset);
+        my $count = Kalliope::PersonHome::findCountByNeedle($self->lang, $needle);
+        $matches->{'author'} = \@persons;
+        $matches->{'authorcount'} = $count;
     }
-    close(FILE);
-    return @matches;
+
+    if ($self->type eq 'all' || $self->type eq 'work') {
+        my @works = Kalliope::WorkHome::findByNeedle($self->lang, $needle, $limit, $offset);
+        my $count = Kalliope::WorkHome::findCountByNeedle($self->lang, $needle);
+        $matches->{'work'} = \@works;
+        $matches->{'workcount'} = $count;
+    }
+
+    if ($self->type eq 'all' || $self->type eq 'poem') {
+        my @poems = Kalliope::PoemHome::findByNeedle($self->lang, $needle, $limit, $offset);
+        my $count = Kalliope::PoemHome::findCountByNeedle($self->lang, $needle);
+        $matches->{'poem'} = \@poems;
+        $matches->{'poemcount'} = $count;
+    }
+
+
+    return $matches;
+    
+#    open(FILE,"swish-search -m 100 -f index/swish.index -w $args |");
+#    my $i = -1;
+#    my $c = 0;
+#    while (my $line = <FILE>) {
+#	    next if $line =~ /^#/;
+#	    last if $line =~ /^\./;
+#	    last if $line =~ /^err:/;
+#	    $i++;
+#	    next if $i < $self->firstNumShowing;
+#	    my ($quality,$id) = split / /,$line;
+#	    next unless $id;
+#	    $id =~ s/.html$//;
+#	    $id =~ s/^.\/dump\///;
+#	    my $type = '';
+#	    if ($id =~ /:/) {
+#         $id =~ s!:!/!;
+#	        $type = 'Kalliope::Work';
+#	    } else {
+#	        $type = 'Kalliope::Poem';
+#	    }
+#	    push @matches,[$id,$type,$quality];
+#	    $c++;
+#	    last if $c > 9;
+#   }
+#    close(FILE);
+#    return @matches;
+
+}
+
+sub findPersons {
+    my ($lang,$needle) = @_;
+    my @persons = Kalliope::PersonHome::findByNeedle($lang,$needle);
+    return @persons;
 }
 
 1;

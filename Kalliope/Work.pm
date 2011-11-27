@@ -83,6 +83,14 @@ sub subtitle {
     return shift->{'underoverskrift'};
 }
 
+sub clickableTitleLong {
+    my $self = shift;
+    my $HTML = $self->author->name.': <A class="green" HREF="vaerktoc.pl?fhandle='.$self->fhandle.'&amp;vhandle='.$self->vhandle.'">';
+    $HTML .= $self->titleWithYear;
+    $HTML .= '</A>';
+    return $HTML;
+}
+
 sub clickableTitle {
     my $self = shift;
     my $HTML = '<A HREF="vaerktoc.pl?fhandle='.$self->fhandle.'&amp;vhandle='.$self->vhandle.'">';

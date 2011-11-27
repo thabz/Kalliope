@@ -41,35 +41,40 @@ if (Kalliope::Poem::exist(CGI::param('needle'))) {
 
 
 #
-my $search = new Kalliope::Search(lang => CGI::param('sprog') || '',
-                                  type => CGI::param('type') || '',
-                                  offset => CGI::param('offset') || 0,
-				  needle => CGI::param('needle') || '',
-				  keyword => CGI::param('keyword') || '');
+my $search = new Kalliope::Search(
+    lang => CGI::param('sprog') || '',
+    type => CGI::param('type') || '',
+    offset => CGI::param('offset') || 0,
+	needle => CGI::param('needle') || '',
+	keyword => CGI::param('keyword') || '');
 
 $search->log;
 
 my @crumbs = ([$search->pageTitle,'']);
 
 my $page = new Kalliope::Page (
-		title => $search->pageTitle,
-                pagegroup => 'search',
-                lang => $search->lang,
-                page => '',
-		nosubmenu => 1,
-                thumb => 'gfx/icons/search-h70.gif',
-                crumbs => \@crumbs );
+	title => $search->pageTitle,
+	subtitle => $search->subPageTitle,
+	pagegroup => 'search',
+    lang => $search->lang,
+    page => '',
+	nosubmenu => 1,
+    thumb => 'gfx/icons/search-h70.gif',
+    crumbs => \@crumbs);
 
 if ($search->hasSearchBox) {
-    $page->addBox( width => '80%',
-	           content => $search->searchBoxHTML);
+    $page->addBox( 
+        width => '80%',
+	    content => $search->searchBoxHTML);
 }
 
-
 my $starttid = time;
-$page->addBox( width => '80%',
-	content => $search->getHTML
-	);
+
+&renderResult($search);
+#$page->addBox( 
+#    width => '80%',
+#	content => renderResult($search)
+#);
 
 if (CGI::param('needle') && CGI::param('needle') =~ /^Cæcirie/) {
     my ($antal) = CGI::param('needle') =~ /^Cæcirie(\d+)/;
@@ -78,6 +83,95 @@ if (CGI::param('needle') && CGI::param('needle') =~ /^Cæcirie/) {
 }
 
 $page->print();
+
+sub link {
+    my ($search,$type,$offset) = @_;
+    my $link = 'ksearch.cgi';
+    $link .= "?sprog=".$search->lang;
+    $link .= "&type=".$type;
+    $link .= "&needle=".uri_escape($search->needle);
+    $link .= "&offset=".$offset,
+    return $link;
+}
+
+sub pageLinks {
+    my ($search,$result,$type) = @_;
+    my $count = $result->{$type.'count'};
+    my $i = 0;
+    my $html = '';
+    while ($count > 0) {
+        my $link = &link($search,$type,($i*10));
+        my $page = $i + 1;
+        $html .= qq|<a href="$link">$page</a> |;
+        $i++;
+        $count -= 10;
+    }
+    return $html;
+}
+
+sub renderResult {
+    my $search = shift;
+    my $limitEachType = $search->type eq 'all' ? 5 : 10;
+    my $result = $search->result(limit => $limitEachType, offset => $search->offset);
+
+    if ($search->type eq 'all' or $search->type eq 'author') {
+        my @persons = @{$result->{'author'}};
+        if ($#persons >= 0) {
+            my $HTML;
+            foreach my $person (@persons) {
+                $HTML .= '<p>'.$person->clickableNameBlack.'</p>';
+            }
+            my $count = $result->{'authorcount'};
+            if ($count > 5) {
+                my $flere = $count - 5;
+                $HTML .= qq|<p><a class="more" href="ksearch.cgi">Fandt $flere andre personer. Klik her for at se dem alle...</a></p>|;
+            }
+            $page->addBox( 
+                title => 'Personer',
+            	content => $HTML
+            );
+        }
+    }
+     
+    if ($search->type eq 'all' or $search->type eq 'work') {
+        my @works = @{$result->{'work'}};
+        if ($#works >= 0) {
+            my $HTML;
+            foreach my $work (@works) {
+                $HTML .= '<p>'.$work->clickableTitleLong.'</p>';
+            } 
+            my $count = $result->{'workcount'};
+            if ($count > 5) {
+                my $flere = $count - 5;
+                $HTML .= qq|<p><a class="more" href="ksearch.cgi">Fandt $flere andre værker. Klik her for at se dem alle...</a></p>|;
+            }
+            $page->addBox( 
+                title => 'Værker',
+            	content => $HTML
+            );
+        }
+    }
+    if ($search->type eq 'all' or $search->type eq 'poem') {
+        my @poems = @{$result->{'poem'}};
+        if ($#poems >= 0) {
+            my $HTML;
+            foreach my $poem (@poems) {
+                $HTML .= '<p>'.$poem->clickableTitle.'</p>';
+            } 
+            my $count = $result->{'poemcount'};
+            if ($search->type eq 'poem') {
+                $HTML .= "<p>".pageLinks($search,$result,'poem')."</p>";
+            } elsif ($count > 5) {
+                my $flere = $count - 5;
+                $HTML .= qq|<p><a class="more" href="|.&link($search,'poem',0).qq|">Fandt $flere andre digte. Klik her for at se dem alle...</a></p>|;
+            }
+            $page->addBox( 
+                title => 'Digte',
+            	content => $HTML
+            );
+        }
+    }
+}
 
 
 sub getEasterJS {

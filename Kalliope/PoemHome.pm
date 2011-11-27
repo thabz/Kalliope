@@ -25,6 +25,7 @@ package Kalliope::PoemHome;
 use Kalliope::Poem;
 
 my %cache;
+my $dbh = Kalliope::DB->connect;
 
 sub findByLongdid {
     my ($longdid) = @_;
@@ -35,6 +36,28 @@ sub findByLongdid {
        return $cache{$longdid};
     }
 }
+
+
+sub findByNeedle {
+    my ($lang,$q,$limit,$offset) = @_;
+    my $sth = $dbh->prepare("SELECT * FROM digte WHERE lang = ? AND fulltext_index_column @@ to_tsquery(?) LIMIT ? OFFSET ?");
+    $sth->execute($lang,$q,$limit,$offset);
+    my @result;
+    while (my $obj = $sth->fetchrow_hashref) {
+	    bless $obj,'Kalliope::Poem';
+	    push @result,$obj;
+    }
+    return @result;
+}
+
+sub findCountByNeedle {
+    my ($lang,$q) = @_;
+    my $sth = $dbh->prepare("SELECT COUNT(*) FROM digte WHERE lang = ? AND fulltext_index_column @@ to_tsquery(?)");
+    $sth->execute($lang,$q);
+    my ($count) = $sth->fetchrow_array;
+    return $count;
+}
+
 
 1;
 

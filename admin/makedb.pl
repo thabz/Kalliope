@@ -157,6 +157,14 @@ Kalliope::Build::Persons::postinsert();
 Kalliope::Build::Xrefs::insert(@changedWorks);
 &log("Done");
 
+&log('Works postinsert...');
+Kalliope::Build::Works::postinsert();
+&log("Done");
+
+&log('Texts postinsert...');
+Kalliope::Build::Texts::postinsert();
+&log("Done");
+
 
 #
 # Build biblio

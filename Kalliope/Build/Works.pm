@@ -105,6 +105,13 @@ sub insert {
     }
 }
 
+sub postinsert {
+   $SQL = q(
+       UPDATE vaerker SET fulltext_index_column = to_tsvector('danish',coalesce(titel,'') || ' ' || coalesce(underoverskrift,''))
+  );
+  $dbh->do($SQL);
+}
+
 sub create {
  $dbh->do(q(
 	CREATE TABLE vaerker ( 
@@ -120,12 +127,14 @@ sub create {
 	      cvstimestamp int,
 	      quality varchar(100), /* set('korrektur1','korrektur2','korrektur3', 'kilde','side'), */
 	      lang char(2),
+	      fulltext_index_column tsvector,
 	      dirty int)
 	   ));
  $dbh->do(q/CREATE INDEX vaerker_fhandle ON vaerker(fhandle)/);
  $dbh->do(q/CREATE INDEX vaerker_vhandle ON vaerker(vhandle)/);
  $dbh->do(q/CREATE INDEX vaerker_lang ON vaerker(lang)/);
  $dbh->do(q/CREATE INDEX vaerker_type ON vaerker(type)/);
+ $dbh->do(q/CREATE INDEX vaerker_textsearch_idx ON vaerker USING gin(fulltext_index_column)/);
  $dbh->do(q/GRANT SELECT ON TABLE vaerker TO public/);
 
  $dbh->do(q/

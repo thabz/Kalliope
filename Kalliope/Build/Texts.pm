@@ -61,6 +61,13 @@ sub insert {
     }
 }
 
+sub postinsert {
+    $SQL = q(
+         UPDATE digte SET fulltext_index_column = to_tsvector('danish',coalesce(toptitel,'') || ' ' || coalesce(underoverskrift,'') || ' ' || coalesce(indhold,''))
+    );
+    $dbh->do($SQL);
+}
+
 sub _insertGroup {
     my ($fhandle,$vid,$lang,$parent,@nodes) = @_;
     foreach my $node (@nodes) {
@@ -178,6 +185,7 @@ sub create {
 	      quality varchar(50), --set('korrektur1','korrektur2','korrektur3', 'kilde','side'),
               layouttype char(5) default 'digt', -- enum('prosa','digt') default 'digt',
 	      createtime INT NOT NULL,
+	      fulltext_index_column tsvector,
 	      lang char(2))
 	      ));
  $dbh->do(q/CREATE INDEX digte_longdid ON digte(longdid)/);
@@ -186,6 +194,8 @@ sub create {
  $dbh->do(q/CREATE INDEX digte_type ON digte(type)/);
  $dbh->do(q/CREATE INDEX digte_createtime ON digte(createtime)/);
  $dbh->do(q/CREATE INDEX digte_vid ON digte(vid)/);
+ $dbh->do(q/CREATE INDEX digte_textsearch_idx ON digte USING gin(fulltext_index_column)/);
+ 
    $dbh->do(q/GRANT SELECT ON TABLE digte TO public/);
 
 

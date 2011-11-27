@@ -131,9 +131,11 @@ sub create {
     vers int,
     prosa int,
     type varchar(32),
+    fulltext_index_column tsvector,
     workslist text)
 	");
-   $dbh->do(q/GRANT SELECT ON TABLE fnavne TO public/);
+	$dbh->do(q/CREATE INDEX fnavne_textsearch_idx ON fnavne USING gin(fulltext_index_column)/);
+    $dbh->do(q/GRANT SELECT ON TABLE fnavne TO public/);
 }
 
 
@@ -214,6 +216,7 @@ sub insert {
 #	    &insertkeywordrelation($_,$lastid,'biografi');
 	}
     }
+    $dbh->do(qq||);
 }
 
 sub postinsert {
@@ -227,7 +230,7 @@ WHERE 0 <
    AND v.type = 'poetry')
 	   );
    $dbh->do($SQL);
-   my $SQL = q(
+   $SQL = q(
 UPDATE fnavne SET prosa = 1
 WHERE 0 < 
 (SELECT count(*) 
@@ -237,6 +240,10 @@ WHERE 0 <
    AND v.type = 'prose')
 	   );
    $dbh->do($SQL);
+   $SQL = q(
+       UPDATE fnavne SET fulltext_index_column = to_tsvector('danish',coalesce(fornavn,'') || ' ' || coalesce(efternavn,''));
+  );
+  $dbh->do($SQL);
 }
 
 sub buildHasHenvisninger {
