@@ -106,7 +106,7 @@ sub insert {
 }
 
 sub postinsert {
-   $SQL = q(
+  my $SQL = q(
        UPDATE vaerker SET fulltext_index_column = 
           setweight(to_tsvector(coalesce(titel,'')), 'A') ||
           setweight(to_tsvector(coalesce(underoverskrift,'')), 'B')  
