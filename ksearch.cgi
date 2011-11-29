@@ -165,7 +165,7 @@ sub renderResult {
             } 
             my $count = $result->{'poemcount'};
             if ($search->type eq 'poem') {
-                $HTML .= "<p".pageLinks($search,$result,'poem')."</p>" if $count > 10;
+                $HTML .= "<p>".pageLinks($search,$result,'poem')."</p>" if $count > 10;
             } elsif ($count > 5) {
                 my $flere = $count - 5;
                 $HTML .= qq|<p><a class="more" href="|.&link($search,'poem',0).qq|">Fandt $flere andre digte. Klik her for at se dem alle...</a></p>|;
