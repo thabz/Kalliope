@@ -105,4 +105,9 @@ sub cvsTimestampToUNIX {
     return POSIX::mktime($s,$min,$h,$d,$m-1,$y-1900);
 }
 
+sub DMYtoUNIX {
+    my ($day,$month,$year) = @_;
+    return POSIX::mktime(0,0,0,$day,$month-1,$year-1900);
+}
+
 1;
