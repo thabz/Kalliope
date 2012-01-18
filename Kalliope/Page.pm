@@ -392,7 +392,7 @@ GOOGLEADS
     my @widths = $self->getColoumnWidths;
     foreach my $colHTML (@{$self->{'coloumns'}}) {
         $colHTML = $colHTML || '';
-        my $width = shift @widths;
+        my $width = shift @widths || '';
         my $columnrule = '';
         if ($self->{'columnrule'} && $#widths == -1) {
             $columnrule = 'columnrule';
