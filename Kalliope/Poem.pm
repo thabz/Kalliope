@@ -69,7 +69,7 @@ sub longdid {
 }
 
 sub isProse {
-    return shift->{'type'} eq 'prose';
+    return (shift->{'type'}||'') eq 'prose';
 }
 
 sub topTitle {
