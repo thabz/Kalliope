@@ -306,7 +306,7 @@ sub print {
 	    print qq|<html><head><meta http-equiv="refresh" content="0; URL=$url"></head></html>|;
 	    return;
     }
-    my $http_accept_language = $ENV{HTTP_ACCEPT_LANGUAGE};
+    my $http_accept_language = $ENV{HTTP_ACCEPT_LANGUAGE} || 'da';
     print '<!DOCTYPE html>';
     print <<"EOF";
 <html class="kalliope"><HEAD><TITLE>$titleForWindow</TITLE>
