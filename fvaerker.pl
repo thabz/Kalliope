@@ -23,6 +23,7 @@
 #  $Id$
 
 use CGI (':standard');
+use Kalliope;
 use Kalliope::Person;
 use Kalliope::Page;
 use strict;
@@ -45,11 +46,11 @@ my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 my $mode = url_param('mode') || 'poetical';
 
 my @crumbs = $poet->getCrumbs();
-push @crumbs,['Værker',''];
+push @crumbs,[_('Værker'),''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
                     crumbs => \@crumbs, 
-		    subtitle => 'Værker',
+		    subtitle => _('Værker'),
 		    page => $mode eq 'prosa' ? 'prosa' : 'vaerker' );
 my $HTML;
 
@@ -77,7 +78,7 @@ if ($#works >= 0) {
     $page->addFrontMenu(@menuItems);
 } else {
     my $name = $poet->name;
-    my $HTML = qq|<IMG SRC="gfx/excl.gif">Der findes endnu ingen af ${name}s værker i Kalliope|;
+    my $HTML = '<IMG SRC="gfx/excl.gif">'._("Der findes endnu ingen af %ss værker i Kalliope",${name});
     $page->addBox(coloumn => 0,
                   content => $HTML);
 }

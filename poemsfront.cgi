@@ -21,6 +21,7 @@
 #  $Id$
 
 use strict;
+use Kalliope;
 use Kalliope::Page ();
 use Kalliope::Web ();
 use CGI ();
@@ -28,10 +29,10 @@ use CGI ();
 my $LA = CGI::url_param('sprog') || 'dk';
 
 my @crumbs;
-push @crumbs,['Digte',''];
+push @crumbs,[_("Digte"),''];
 
 my $page = new Kalliope::Page (
-		title => 'Digte',
+		title => _('Digte'),
 		lang => $LA,
 		crumbs => \@crumbs,
 		nosubmenu => 1,
@@ -49,27 +50,27 @@ sub front {
 
     my @menuStruct = (
       { url => "klines.pl?mode=1&forbogstav=A&sprog=$LA", 
-	title => 'Digte efter titler', 
+	title => _('Digte efter titler'), 
 	status => 1,
-        desc => "Digte ordnet efter titler",
+        desc => _("Digte ordnet efter titler"),
         icon => 'gfx/icons/poem-w96.png'
                     },{
         url => "klines.pl?mode=0&forbogstav=A&sprog=$LA", 
-	title => 'Digte efter førstelinier', 
+	title => _('Digte efter førstelinier'), 
 	status => 1,
-        desc => "Digte ordnet efter førstelinier",
+        desc => _("Digte ordnet efter førstelinier"),
         icon => 'gfx/icons/poem-w96.png'
                     },{
         url => "klines.pl?mode=2&sprog=$LA", 
-	title => 'Mest populære digte', 
+	title => _('Mest populære digte'), 
 	status => 1,
-        desc => "De mest læste digte i Kalliope",
+        desc => _("De mest læste digte i Kalliope"),
         icon => 'gfx/icons/pop-w96.png'
                     },{
         url => "latest.cgi", 
-	title => 'Seneste tilføjelser', 
+	title => _('Seneste tilføjelser'), 
 	status => 1,
-        desc => "De senest tilføjede digte i Kalliope",
+        desc => _("De senest tilføjede digte i Kalliope"),
         icon => 'gfx/icons/poem-w96.png'
 		    } );
 

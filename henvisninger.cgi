@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-#  Copyright (C) 1999-2001 Jesper Christensen 
+#  Copyright (C) 1999-2012 Jesper Christensen 
 #
 #  This script is free software; you can redistribute it and/or
 #  modify it under the terms of the GNU General Public License as
@@ -35,11 +35,11 @@ my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 #
 
 my @crumbs = $poet->getCrumbs;
-push @crumbs,['Henvisninger',''];
+push @crumbs,[_('Henvisninger'),''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
                                       page => 'henvisninger',
-				      subtitle => 'Henvisninger',
+				      subtitle => _('Henvisninger'),
                                       crumbs => \@crumbs );
 
 #
@@ -68,7 +68,7 @@ if ($antal > 0) {
         $HTML .= "</TR>";
     }
     $HTML .= '</TABLE>';
-    $HTML .= '<BR><SMALL><I>Oversigt over tekster, som henviser til '.$poet->name.'s tekster.</I></SMALL>';
+    $HTML .= '<BR><SMALL><I>'._("Oversigt over tekster, som henviser til %ss tekster.",$poet->name).'</I></SMALL>';
     $page->addBox(
 	    width => '80%',
             coloumn => 1,
@@ -78,7 +78,7 @@ if ($antal > 0) {
     $page->addBox(
 	    width => '80%',
             coloumn => 1,
-	    content => "Der findes ingen tekster, som henviser til ".$poet->name."s tekster.");
+	    content => _("Der findes ingen tekster, som henviser til %ss tekster.",$poet->name));
 }
 
 $page->print;

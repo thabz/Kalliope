@@ -127,8 +127,8 @@ sub lifespan {
    if (substr($born,0,2) eq substr($dead,0,2)) {
        $dead = substr($dead,2);
    }
-   $born = 'Ukendt år' if $born eq '?';
-   return '(Ukendt levetid)' if $born eq $dead;
+   $born = _('Ukendt år') if $born eq '?';
+   return "("._('Ukendt levetid').")" if $born eq $dead;
    return "($born-$dead)";
 }
 
@@ -213,9 +213,9 @@ sub getCrumbs {
     my ($self,%args) = @_;
     my @crumbs;
     if ($self->getType eq 'person') {
-	push @crumbs,['Personer','persons.cgi?list=az'];
+	push @crumbs,[_('Personer'),'persons.cgi?list=az'];
     } else {
-	push @crumbs,['Digtere','poets.cgi?list=az&amp;sprog='.$self->lang];
+	push @crumbs,[_('Digtere'),'poets.cgi?list=az&amp;sprog='.$self->lang];
     }
     if ($args{'front'}) {
         push @crumbs,[$self->name,''];
@@ -275,52 +275,52 @@ sub menu {
     my $poetName = $self->name;
     my %menuStruct = (
        vaerker => { url => 'fvaerker.pl?', 
-                    title => 'Værker', 
-                    desc => "${poetName}s samlede poetiske værker",
+                    title => _('Værker'), 
+                    desc => _("%ss samlede poetiske værker", $poetName),
                     status => $self->hasWorks },
        titlelines => { url => 'flines.pl?mode=1&amp;', 
-                    title => 'Digttitler', 
-                    desc => "Vis titler på alle digte",
+                    title => _('Digttitler'), 
+                    desc => _("Vis titler på alle digte"),
                     status => $self->hasPoems },
        firstlines => { url => 'flines.pl?mode=0&amp;', 
-                    title => 'Førstelinier', 
-                    desc => "Vis førstelinier for samtlige digte",
+                    title => _('Førstelinier'), 
+                    desc => _("Vis førstelinier for samtlige digte"),
                     status => $self->hasPoems },
        search     => { url => 'fsearch.cgi?', 
-                    title => 'Søgning', 
-                    desc => "Søg i ".$poetName."s værker",
+                    title => _('Søgning'), 
+                    desc => _("Søg i %ss værker", $poetName),
                     status => $self->hasPoems },
        popular => { url => 'fpop.pl?', 
-                    title => 'Populære', 
-                    desc => "Top-10 over mest læste $poetName digte i Kalliope",
+                    title => _('Populære'), 
+                    desc => _("Top-10 over mest læste %s digte i Kalliope",$poetName),
                     status => $self->hasPoems },
        prosa     => { url => 'fvaerker.pl?mode=prosa&amp;', 
-                    title => 'Prosa', 
-	            desc => qq|${poetName}s prosatekster|,
+                    title => _('Prosa'), 
+	            desc => _("%ss prosatekster",$poetName),
                     status => $self->{'prosa'} },
        pics      => { url => 'fpics.pl?', 
-                    title => 'Portrætter', 
-                    desc => "Portrætgalleri for $poetName",
+                    title => _('Portrætter'), 
+                    desc => _("Portrætgalleri for %s", $poetName),
                     status => $self->{'pics'} },
        bio       => { url => 'biografi.cgi?', 
-                    title => 'Biografi', 
-                    desc => qq|En kortfattet introduktion til ${poetName}s liv og værk|,
+                    title => _('Biografi'), 
+                    desc => _("En kortfattet introduktion til %ss liv og værk", $poetName),
                     status => 1 },
        samtidige => { url => 'samtidige.cgi?', 
-                    title => 'Samtid', 
-                    desc => qq|Digtere som udgav værker i ${poetName}s levetid|,
+                    title => _('Samtid'), 
+                    desc => _("Digtere som udgav værker i %ss levetid", $poetName),
                     status => !$self->isUnknownPoet && $self->yearBorn ne '?'},
        henvisninger => { url => 'henvisninger.cgi?', 
-                    title => 'Henvisninger', 
-                    desc => 'Oversigt over tekster, som henviser til '.$poetName.'s tekster',
+                    title => _('Henvisninger'), 
+                    desc => _("Oversigt over tekster som henviser til %ss tekster", $poetName),
                     status => $self->hasHenvisninger},
        links     => { url => 'flinks.pl?', 
-                    title => 'Links', 
-                    desc => 'Henvisninger til andre steder på internettet, som har relevant information om '.$poetName,
+                    title => _('Links'), 
+                    desc => _('Henvisninger til andre steder på internettet som har relevant information om %s',$poetName),
                     status => $self->{'links'} },
        bibliografi => { url => 'fsekundaer.pl?', 
-                    title => 'Bibliografi', 
-                    desc => $poetName.'s bibliografi',
+                    title => _('Bibliografi'), 
+                    desc => _("%ss bibliografi", $poetName),
 		    status => $self->{'primaer'} || $self->{'sekundaer'} } );
     my @keys = qw/vaerker titlelines firstlines search popular prosa pics bio samtidige henvisninger links bibliografi/;
     my $HTML;
@@ -349,7 +349,7 @@ sub getSearchResultEntry {
     $content =~ s/\n/<B>/g;
     $content =~ s/\t/<\/B>/g;
     
-    my $HTML = '<IMG ALT="Digter" ALIGN="right" SRC="gfx/icons/poet-h48.gif">';
+    my $HTML = '<IMG ALT="'._("Digter").'" ALIGN="right" SRC="gfx/icons/poet-h48.gif">';
     $HTML .= '<A CLASS=blue HREF="ffront.cgi?fhandle='.$self->fhandle.qq|">|.$content.qq|</A><BR>|;
     $HTML .= '<SPAN STYLE="color: #a0a0a0">'.$self->lifespan."</SPAN><BR><BR>";
     return $HTML;

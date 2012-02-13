@@ -35,10 +35,10 @@ my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 #
 
 my @crumbs = $poet->getCrumbs;
-push @crumbs,['Portrætter',''];
+push @crumbs,[_('Portrætter'),''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
-	subtitle => 'Portrætter',
+	subtitle => _('Portrætter'),
 	page => 'pics',
         crumbs => \@crumbs );
 
@@ -49,7 +49,7 @@ foreach my $pic ($poet->pics) {
     $HTML .= Kalliope::Web::insertThumb({
 	    thumbfile => $$pic{thumbfile},
 	    destfile => $$pic{file},
-	    alt => $poet->name.'- klik for fuld størrelse'});
+	    alt => _('Klik for fuld størrelse')});
     $HTML .= '<BR>';
     $HTML .= $$pic{text};
     $HTML .= "</TD>";

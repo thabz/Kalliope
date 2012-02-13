@@ -47,7 +47,7 @@ unless ($fhandle) {
 
 my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 my $mode = CGI::url_param('mode') || 0;
-my $title = $mode == 1 ? "Digttitler" : "Førstelinier";
+my $title = $mode == 1 ? _("Digttitler") : _("Førstelinier");
 
 #
 # Breadcrumbs -------------------------------------------------------------
@@ -124,7 +124,7 @@ for (my $i = 0; $i <= $#lines; $i++) {
 
     my $url = $$f{type } eq 'section' ? qq(vaerktoc.pl?fhandle=$fhandle&vhandle=).$w->vhandle."#$$f{longdid}" : qq(digt.pl?longdid=$$f{'longdid'});
     
-    $blocks[$idx]->{'body'} .= '<p CLASS="digtliste"><A TITLE="Fra '.$w->titleWithYear.qq(" HREF="$url">$line</A></p>);
+    $blocks[$idx]->{'body'} .= '<p CLASS="digtliste"><A TITLE="'._("Fra %s",$w->titleWithYear).qq(" href="$url">$line</A></p>);
     $previousLine = $line3;
 
 }

@@ -22,7 +22,7 @@
 #
 #  $Id$
 
-use Kalliope();
+use Kalliope;
 use Kalliope::Poem();
 use Kalliope::Page();
 use Kalliope::Timeline();
@@ -35,13 +35,13 @@ my $dbh = Kalliope::DB::connect();
 
 Kalliope::Server::newHit();
 
-my @randomPagesTitles = ('Digtarkiv'); 
+my @randomPagesTitles = (_('Digtarkiv')); 
 
 my $rnd = int rand($#randomPagesTitles+1);
 
 my $showAllNews = CGI::param('showall') && CGI::param('showall') eq 'yes' ? 1 : 0;
 
-my @crumbs = (['Velkommen','']);
+my @crumbs = ([_('Velkommen'),'']);
 
 my $page = new Kalliope::Page(
 		title => 'Kalliope',
@@ -62,19 +62,19 @@ $page->addBox(coloumn => 0,
 &latestNews($showAllNews);
 
 if (my $dayToday = &dayToday()) {
-    $page->addBox ( title => "Dagen idag",
+    $page->addBox ( title => _("Dagen idag"),
 	                coloumn => 1,
 	                cssClass => 'hidemobile',
 	                content => $dayToday,
-	                end => '<A class="more" HREF="today.cgi">Vælg anden dato...</A>');
+	                end => '<a class="more" href="today.cgi">'._("Vælg anden dato...").'</a>');
 }
 
 my ($sonnetText,$sonnetEnd) = &sonnet;
-$page->addBox ( title => "Sonetten på pletten",
-	            coloumn => 1,
+$page->addBox ( title => _("Sonetten på pletten"),
+                coloumn => 1,
                 cssClass => 'hidemobile',
-	            content => $sonnetText,
-	            end => $sonnetEnd);
+                content => $sonnetText,
+                end => $sonnetEnd);
 	            
 $page->print();
 
@@ -96,12 +96,12 @@ sub latestNews {
     }
     $page->addBox(
         coloumn => 0,
-        content => $showAllNews ? '' : qq|<a class="more" href="index.cgi?showall=yes">Læs gamle nyheder...</a>|
+        content => $showAllNews ? '' : qq|<a class="more" href="index.cgi?showall=yes">|.&_("Læs gamle nyheder...").qq|</a>|
         );
 }
 
 sub about {
-    my $HTML = '<p><i>Kalliope</i> er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning. Kalliope indeholder også udenlandsk digtning, men primært i et omfang som kan bruges til belysning af den danske samling.</p>';
+    my $HTML = _('<p><i>Kalliope</i> er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning. Kalliope indeholder også udenlandsk digtning, men primært i et omfang som kan bruges til belysning af den danske samling.</p>');
     #$HTML .= '<p>Når en forfatter har været død i over 70 år, bliver vedkommendes værk offentlig ejendom. Se evt. <A CLASS=green HREF="kabout.pl?page=attractions">coming attractions</A>. Derfor er det tilladt at bruge indholdet samlet i Kalliope til hvad man måtte ønske og af samme grund finder man ikke den nyere lyrik i samlingen. Det er gratis for alle at bruge Kalliope.</p>';
     return $HTML;
 }
@@ -121,7 +121,8 @@ sub dayToday {
 sub sonnet {
     my ($HTML,$END);
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT d.longdid FROM textxkeyword t, digte d WHERE t.keyword = 'sonnet' AND t.longdid = d.longdid AND d.lang = 'dk' ORDER BY RANDOM() LIMIT 1");
+    my $language = Kalliope::Internationalization::http_accept_sprog();
+    my $sth = $dbh->prepare("SELECT d.longdid FROM textxkeyword t, digte d WHERE t.keyword = 'sonnet' AND t.longdid = d.longdid AND d.lang = '$language' ORDER BY RANDOM() LIMIT 1");
     $sth->execute();
     my ($longdid) = $sth->fetchrow_array;
     return ('','') unless $longdid;
@@ -130,6 +131,7 @@ sub sonnet {
     my $poet = $poem->author;
     $HTML .= '<br><div style="text-align:right"><i><small>'.$poet->name.'</small></i></div>';
     my $title = $poet->name.': »'.$poem->linkTitle.'«';
-    $END = qq|<A class="more" TITLE="$title" HREF="digt.pl?longdid=|.$poem->longdid.qq|">Gå til digtet...</A>|;
+    $END = qq|<A class="more" TITLE="$title" HREF="digt.pl?longdid=|.$poem->longdid.qq|">|;
+    $END .= _("Gå til digtet...")."</A>";
     return ($HTML,$END);
 }

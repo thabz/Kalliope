@@ -20,6 +20,7 @@
 #
 #  $Id$
 
+use Kalliope;
 use Kalliope::DB;
 use CGI qw(:standard);
 use Kalliope::Poem ();

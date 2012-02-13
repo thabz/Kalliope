@@ -21,6 +21,7 @@
 #  $Id$
 
 use CGI ();
+use Kalliope;
 use Kalliope::Person;
 use Kalliope::Page;
 use Kalliope::Poem;
@@ -42,13 +43,13 @@ my $search = new Kalliope::Search(lang => $poet->lang,
 $search->log;
 
 my @crumbs;
-push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
+push @crumbs,[_('Digtere'),'poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,[$search->pageTitle,''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
 	                              page => 'search',
-				      subtitle => 'Søgning',
+				      subtitle => _('Søgning'),
 	                              crumbs => \@crumbs );
 
 if ($search->hasSearchBox) {

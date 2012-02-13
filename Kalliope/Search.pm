@@ -102,14 +102,14 @@ sub scriptName {
 
 sub pageTitle {
     my $self = shift;
-    my $title = "Søgning";
+    my $title = "";
     if ($self->type ne 'all') {
         if ($self->type eq 'author') {
-            $title .= ' i navne';
+            $title .= _('Søgning i navne');
         } elsif ($self->type eq 'work') {
-            $title .= ' i værktitler';
+            $title .= _('Søgning i værktitler');
         } elsif ($self->type eq 'poem') {
-            $title .= ' i digttitler';
+            $title .= _('Søgning i digttitler');
         }        
     }
     return $title;

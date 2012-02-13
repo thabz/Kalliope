@@ -41,7 +41,7 @@ my @crumbs = $poet->getCrumbs();
 push @crumbs,['Mest populære digte',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, crumbs => \@crumbs,
-	                              subtitle => 'Mest populære digte',
+	                              subtitle => _('Mest populære digte'),
                                       page => 'popular');
 
 my $sth =  $dbh->prepare("SELECT d.longdid,d.linktitel as titel,lasttime,hits,v.titel as vtitel,v.aar FROM fnavne as f, digte as d, digthits as dh, vaerker as v WHERE f.fhandle = ? AND f.fhandle = d.fhandle AND d.type = 'poem' AND d.longdid = dh.longdid AND v.vid = d.vid ORDER BY dh.hits DESC LIMIT 10");
@@ -49,7 +49,7 @@ $sth->execute($fhandle);
 
 my $i = 1;
 my $HTML .= '<TABLE CLASS="oversigt" CELLSPACING="0" WIDTH="100%">';
-$HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Titel</TH><TH ALIGN="right">Hits</TH><TH ALIGN="right">Senest</TH></TR>';
+$HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">'._("Titel").'</TH><TH ALIGN="right">'._("Hits").'</TH><TH ALIGN="right">'._("Senest").'</TH></TR>';
 while (my $h = $sth->fetchrow_hashref) {
     my $aar = $h->{aar} ne '?' ? ' ('.$h->{aar}.')' : '';
     my $class = $i % 2 ? '' : ' CLASS="darker" ';

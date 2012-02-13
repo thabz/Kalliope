@@ -91,7 +91,7 @@ my @notes = $poem->notes;
 if ($#notes >= 0 || $#keywords >= 0) {
     $page->addBox( width => '250',
 	               printer => 1,
-		           printtitle => 'Noter',
+		           printtitle => _('Noter'),
 	               coloumn => 1,
 		           theme => 'dark',
 	               content => &notes($poem,@keywords) );
@@ -109,7 +109,7 @@ if ($poem->footnotes) {
 	               coloumn => 1,
 	               printer => 1,
 		           theme => 'dark',
-                   title => 'Fodnoter',
+                   title => _('Fodnoter'),
 	               content => &footnotes($poem) );
 }
 
@@ -118,7 +118,7 @@ if ($poem->hasLineNotes) {
 	              coloumn => 1,
 	              printer => 1,
 		          theme => 'dark',
-                  title => 'Fodnoter',
+                  title => _('Fodnoter'),
 	              content => &linenotes($poem) );
 }
 
@@ -126,7 +126,7 @@ if (&xrefs($poem)) {
     $page->addBox( width => '250',
 	           coloumn => 1,
 		       theme => 'dark',
-               title => 'Henvisninger hertil',
+               title => _('Henvisninger hertil'),
 	           content => &xrefs($poem) );
 }
 
@@ -134,7 +134,7 @@ if (&xrefs($poem)) {
 #$page->addBox( width => '200',
 #               coloumn => 2,
 #	       theme => 'dark',
-#               title => 'Nøgleord',
+#               title => _('Nøgleord'),
 #               content => &keywords($poem) );
 
 
@@ -143,7 +143,7 @@ my $workTitle = $work->titleWithYear;
 
 #$page->addBox( width =>'250',
 #	       coloumn => 1,
-#               title => 'Indhold',
+#               title => _('Indhold'),
 #	       theme => 'dark',
 #	       content => &tableOfContents($work),
 #	       end => qq|<A HREF="vaerktoc.pl?fhandle=$fhandle&vhandle=$vhandle"><IMG VALIGN=center ALIGN=left SRC="gfx/leftarrow.gif" BORDER=0 TITLE="$workTitle" ALT="$workTitle"></A>|
@@ -166,22 +166,22 @@ sub moreLinks {
     my $longdid = $poem->longdid;
     my $HTML = '';
     if (!$poem->isProse && !$poem->isBible ) {
-        $HTML .= qq|<a title="Tilføj/fjern linienumre" href="javascript:{}" onclick="\$('.linenumber').toggle()">Vis linienumre...<span class="linenumber">&#x2611;</span><span class="linenumber" style="display:none">&#x2610;</span></a><br>|;
+        $HTML .= qq|<a title="|._("Tilføj/fjern linjenumre").qq|" href="javascript:{}" onclick="\$('.linenumber').toggle()">|._("Vis linienumre...").qq|<span class="linenumber">&#x2611;</span><span class="linenumber" style="display:none">&#x2610;</span></a><br>|;
     }
-    $HTML .= qq|<a class="more" title="Vis denne tekst i et format som pænere når udskrevet" href="digt.pl?longdid=$longdid&amp;printer=1">Vis printudgave...</a><br>|;
-    $HTML .= qq|<a title="Send redaktionen en rettelse til denne tekst" class="more" onClick="window.open('korrektur.cgi?longdid=$longdid','Korrekturpopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=330'); return false" href="javascript:{}">Send en rettelse...</a><br>|;
+    $HTML .= qq|<a class="more" title="|._("Vis denne tekst i et format som pænere når udskrevet").qq|" href="digt.pl?longdid=$longdid&amp;printer=1">|._("Vis printudgave...").qq|</a><br>|;
+    $HTML .= qq|<a title="|._("Send redaktionen en rettelse til denne tekst").qq|" class="more" onClick="window.open('korrektur.cgi?longdid=$longdid','Korrekturpopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=330'); return false" href="javascript:{}">|._("Send en rettelse...").qq|</a><br>|;
 
     my $nextPoem = $work->getNextPoem($longdid);
     my $prevPoem = $work->getPrevPoem($longdid);
     if ($nextPoem) {
 	my $poem = Kalliope::PoemHome::findByLongdid($nextPoem);
 	my $title = $poem->linkTitle;
-        $HTML .= qq|<a class="more" title="Gå til »$title«" href="digt.pl?longdid=$nextPoem">Næste tekst...</a><br>|;
+        $HTML .= qq|<a class="more" title="|._("Gå til »%s«",$title).qq| href="digt.pl?longdid=$nextPoem">|._("Næste tekst...").qq|</a><br>|;
     }
     if ($prevPoem) {
 	my $poem = Kalliope::PoemHome::findByLongdid($prevPoem);
 	my $title = $poem->linkTitle;
-        $HTML .= qq|<a class="more" title="Gå til »$title«" href="digt.pl?longdid=$prevPoem">Forrige tekst...</a><br>|;
+        $HTML .= qq|<a class="more" title="|._("Gå til »%s«",$title).qq| href="digt.pl?longdid=$prevPoem">|._("Forrige tekst...").qq|</a><br>|;
     }
     return $HTML;
 }
@@ -270,10 +270,10 @@ sub keywords {
 	}
 	$HTML =~ s/, $//;
     } else {
-        $HTML .= 'Dette digt har endnu ingen nøgleord tilknyttet.';
+        $HTML .= _('Dette digt har endnu ingen nøgleord tilknyttet.');
     }
     my $longdid = $poem->longdid;
-    $HTML .= qq|<br><BR>Tilføj nøgleord<BR><FORM METHOD="get"><INPUT TYPE="text" CLASS="inputtext" NAME="newkeywords"><INPUT TYPE="hidden" NAME="longdid" VALUE="$longdid"><INPUT TYPE="submit" CLASS="button" VALUE="Tilføj"> |;
+    $HTML .= qq|<br><BR>|._('Tilføj nøgleord').qq|<BR><FORM METHOD="get"><INPUT TYPE="text" CLASS="inputtext" NAME="newkeywords"><INPUT TYPE="hidden" NAME="longdid" VALUE="$longdid"><INPUT TYPE="submit" CLASS="button" VALUE="|._("Tilføj").qq|"> |;
     $HTML .= Kalliope::Help->new('keywordadd')->linkAsHTML;
     $HTML .= '</FORM>';
     $HTML .= '</SPAN>';
@@ -308,7 +308,7 @@ sub tableOfContents {
 sub otherFormats {
     my ($poet,$poem) = @_;
     my ($longdid,$fhandle) = ($poem->longdid,$poet->fhandle);
-    return qq|<A HREF="digtprinter.pl?fhandle=$fhandle&amp;longdid=$longdid"><IMG SRC="gfxold/gfx/printer.gif" BORDER=0 ALT="Vis dette digt opsat på en side lige til at printe ud."></A><BR>Printer venligt<BR>|;
+    return qq|<A HREF="digtprinter.pl?fhandle=$fhandle&amp;longdid=$longdid"><IMG SRC="gfxold/gfx/printer.gif" BORDER=0 ALT="|._("Vis dette digt opsat på en side lige til at printe ud.").qq|"></A><BR>|._("Printer venligt").qq|<BR>|;
 }
 
 
@@ -330,7 +330,7 @@ sub notes {
     my @notes = $poem->notesAsHTML;
     $HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center"><span class="noprint">&#149;&nbsp;&#149;&nbsp;&#149;</span></div>',@notes;
     if ($#keywords >= 0) {
-	$HTML .= '<span class="noprint keywords"><br><br><B>Nøgleord:</B> ';
+	$HTML .= '<span class="noprint keywords"><br><br><B>'._("Nøgleord").':</B> ';
         $HTML .= join ', ', map { $_->clickableTitle($LA) } @keywords;
 	$HTML .= '</span>';
     }

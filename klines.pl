@@ -36,17 +36,17 @@ my $mode = url_param('mode') || 0;
 my $forbogstav = url_param('forbogstav') || 'a';
 my $LA = url_param('sprog') || 'dk';
 
-my $title = ('Ordnet efter førstelinie','Ordnet efter digttitel','Mest populære')[$mode];
+my $title = (_('Ordnet efter førstelinie'),_('Ordnet efter digttitel'),_('Mest populære'))[$mode];
 my $page = ('poem1stlines','poemtitles','poempopular')[$mode];
 my $HTML;
 
 my @crumbs;
-push @crumbs,['Digte',"poemsfront.cgi?sprog=$LA"];
+push @crumbs,[_('Digte'),"poemsfront.cgi?sprog=$LA"];
 push @crumbs,[$title,''];
 push @crumbs,[$forbogstav,''] unless $mode == 2;
 
 my $page = new Kalliope::Page (
-	title => 'Digte',
+	title => _('Digte'),
 	titleLink => "poemsfront.cgi?sprog=$LA",
 	subtitle => $title,
 	pagegroup => 'poemlist',
@@ -67,7 +67,7 @@ if ($mode == 1) {
 my @f;
 $sth->execute($forbogstav, $mode ? 't' : 'f', $LA);
 unless ($sth->rows) {
-    $HTML .= "Vælg begyndelsesbogstav nedenfor";
+    $HTML .= _("Vælg begyndelsesbogstav nedenfor");
 } else {
     while (my $f = $sth->fetchrow_hashref) { 
 	$f->{'sort'} = $mode ? $f->{'titel'} : $f->{'foerstelinie'};
@@ -95,12 +95,12 @@ while ($f[$i] = $sth->fetchrow_hashref) {
     $f[$i]->{'sort'} =~ s/Å/Aa/;
     $i++;
 }
-my $minimenu = '<small>Vælg begyndelsesbogstav:</small><br><br>';
+my $minimenu = '<small>'._("Vælg begyndelsesbogstav:").'</small><br><br>';
 foreach my  $f (sort { Kalliope::Sort::sort($a,$b) } @f) { 
     my $letter = $f->{'forbogstav'};
     my $class = ($letter eq $forbogstav) ? 'framed' : '';
     my $letterForDisplay = $letter eq '.' ? 'Tegn' : $letter;
-    $minimenu .= qq|<A CLASS="$class" TITLE="Digte som begynder med $letter" HREF="klines.pl?mode=$mode&forbogstav=$letter&sprog=$LA">|;
+    $minimenu .= qq|<A CLASS="$class" TITLE="|._("Digte som begynder med %s",$letter).qq|" HREF="klines.pl?mode=$mode&forbogstav=$letter&sprog=$LA">|;
     $minimenu .= qq|$letterForDisplay</A> |; 
 }
 
@@ -121,7 +121,7 @@ $sth->execute($LA);
 
 my $printed;
 $HTML = '<TABLE CLASS="oversigt" WIDTH="100%" CELLSPACING=0>';
-$HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Titel</TH><TH ALIGN="right">Hits</TH><TH ALIGN="right">Senest</TH><TR>';
+$HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">'._("Titel").'</TH><TH ALIGN="right">'._("Hits").'</TH><TH ALIGN="right">'._("Senest").'</TH><TR>';
 my $i = 0;
 while (my $f = $sth->fetchrow_hashref) {
     $printed++;

@@ -24,6 +24,7 @@ package Kalliope;
 use URI::Escape;
 use Kalliope::Poem;
 use Kalliope::Poem::Bible;
+use Kalliope::Internationalization qw(_);
 
 #
 # Datoer 

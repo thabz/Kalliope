@@ -35,10 +35,10 @@ my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 my @crumbs;
 push @crumbs,['Digtere','poets.cgi?list=az&sprog='.$poet->lang];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
-push @crumbs,['Bibliografi',''];
+push @crumbs,[_('Bibliografi'),''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
-	                              subtitle => 'Bibliografi',
+	                              subtitle => _('Bibliografi'),
 				      printer => url_param('printer') || 0,
                                       page => 'bibliografi',
                                       crumbs => \@crumbs );
@@ -51,8 +51,8 @@ if (-e "fdirs/$fhandle/primaer.txt") {
 	    width => '80%',
 	    coloumn => 0,
 	    printer => 1,
-	    title => 'Primærlitteratur',
-	    end => qq|<a title="Udskriftsvenlig udgave" href="fsekundaer.pl?fhandle=$fhandle&printer=1"><img src="gfx/print.gif" border=0></a>|,
+	    title => _('Primærlitteratur'),
+	    end => qq|<a title="|._("Udskriftsvenlig udgave").qq|" href="fsekundaer.pl?fhandle=$fhandle&printer=1"><img src="gfx/print.gif" border=0></a>|,
 	    content => $HTML );
 }
 
@@ -64,8 +64,8 @@ if (-e "fdirs/$fhandle/sekundaer.txt") {
 	    width => '80%',
 	    coloumn => $column,
 	    printer => 1,
-	    title => 'Sekundærlitteratur',
-	    end => qq|<a title="Udskriftsvenlig udgave" href="fsekundaer.pl?fhandle=$fhandle&printer=1"><img src="gfx/print.gif" border=0></a>|,
+	    title => _('Sekundærlitteratur'),
+	    end => qq|<a title="|._("Udskriftsvenlig udgave").qq|" href="fsekundaer.pl?fhandle=$fhandle&printer=1"><img src="gfx/print.gif" border=0></a>|,
 	    content => $HTML );
 }
 

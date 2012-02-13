@@ -20,8 +20,8 @@
 #  $Id$
 
 package Kalliope::Help;
-
-use Kalliope::Web ();
+use Kalliope;
+use Kalliope::Web;
 
 sub new {
    my ($class,$helpid) = @_;

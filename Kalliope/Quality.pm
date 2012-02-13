@@ -20,23 +20,25 @@
 #  $Id$
 
 package Kalliope::Quality;
-use strict;
+
+use Kalliope::Internationalization;
+use Kalliope;
 use Kalliope::Help;
 
 my %items = (
-     korrektur1 => { name     => 'første korrekturlæsning',
+     korrektur1 => { name     => _('Første korrekturlæsning'),
                      icon_on  => 'gfx/tb_yes.gif',
 		     icon_off => 'gfx/tb_yes_gray.gif' },
-     korrektur2 => { name     => 'anden korrekturlæsning',
+     korrektur2 => { name     => _('Anden korrekturlæsning'),
                      icon_on  => 'gfx/tb_yes.gif',
 		     icon_off => 'gfx/tb_yes_gray.gif' },
-     korrektur3 => { name     => 'tredie korrekturlæsning',
+     korrektur3 => { name     => _('Tredje korrekturlæsning'),
                      icon_on  => 'gfx/tb_yes.gif',
 		     icon_off => 'gfx/tb_yes_gray.gif' },
-     kilde      => { name     => 'kildeangivelse',
+     kilde      => { name     => _('Kildeangivelse'),
                      icon_on  => 'gfx/tb_yes.gif',
 		     icon_off => 'gfx/tb_yes_gray.gif' },
-     side       => { name     => 'sidehenvisninger',
+     side       => { name     => _('Sidehenvisninger'),
                      icon_on  => 'gfx/tb_yes.gif',
 		     icon_off => 'gfx/tb_yes_gray.gif' } 
 );
@@ -59,7 +61,7 @@ sub asHTML {
       my $status = $self->{'hash'}->{$key};
       my %item = %{$items{$key}};
       my $icon = $status ? $item{'icon_on'} : $item{'icon_off'};
-      my $alt = $status ? 'Har ' : 'Mangler ';
+      my $alt = $status ? _('Har ') : _('Mangler ');
       $alt .= $item{'name'};
       $HTML .= qq|<IMG SRC="$icon" BORDER=0 ALT="$alt" TITLE="$alt">|;
    }
@@ -68,3 +70,6 @@ sub asHTML {
    $HTML = '<A HREF="javascript:{}" onClick="'.$help->onClickJS.'">'.$HTML.'</A>';
    return $HTML;
 }
+
+1;
+

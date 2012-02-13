@@ -23,6 +23,7 @@
 use strict;
 no strict 'refs';
 use CGI ();
+use Kalliope;
 use Kalliope::DB ();
 use Kalliope::Web ();
 use Kalliope::Page ();
@@ -35,29 +36,29 @@ my $limit = CGI::url_param('limit') || '10';
 
 my %pageTypes = (
     'az' => {
-        'title' => 'Digtere efter navn',
+        'title' => _('Digtere efter navn'),
         'function' => 'listaz',
-        'crumbtitle' => 'efter navn',
+        'crumbtitle' => _('efter navn'),
         'page' => 'poetsbyname'},
     '19' => {
-        'title' => 'Digtere efter fødeår',
+        'title' => _('Digtere efter fødeår'),
         'function' => 'list19',
-        'crumbtitle' => 'efter fødeår',
+        'crumbtitle' => _('efter fødeår'),
         'page' => 'poetsbyyear'},
     'pics' => {
-        'title' => 'Digtere efter udseende',
+        'title' => _('Digtere efter udseende'),
         'function' => 'listpics',
-        'crumbtitle' => 'efter udseende',
+        'crumbtitle' => _('efter udseende'),
         'page' => 'poetsbypic'},
     'flittige' => {
-        'title' => 'Flittigste digtere',
+        'title' => _('Flittigste digtere'),
         'function' => 'listflittige',
-        'crumbtitle' => 'flittigste',
+        'crumbtitle' => _('flittigste'),
         'page' => 'poetsbyflittige'},
     'pop'  => {
-        'title' => 'Mest populære digtere',
+        'title' => _('Mest populære digtere'),
         'function' => 'listpop',
-        'crumbtitle' => 'mest populære',
+        'crumbtitle' => _('mest populære'),
         'page' => 'poetsbypop'});
 
 my $listType = CGI::url_param('list');
@@ -71,11 +72,11 @@ if ($listType ne 'az' && $listType ne '19' &&
 my $struct = $pageTypes{$listType};
 
 my @crumbs;
-push @crumbs,['Digtere',"poetsfront.cgi?sprog=$LA"];
+push @crumbs,[_('Digtere'),"poetsfront.cgi?sprog=$LA"];
 push @crumbs,[$struct->{'crumbtitle'},''];
 
 my $page = new Kalliope::Page (
-    title => 'Digtere',
+    title => _('Digtere'),
     titleLink => "poetsfront.cgi?sprog=$LA",
     subtitle => $struct->{'crumbtitle'},
     lang => $LA,
@@ -125,7 +126,7 @@ sub listaz {
     $bi++;
     my @colls = grep {$_->getType eq 'collection'} @persons;
     if ($#colls >= 0) {
-	    $blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">Ukendt digter</DIV><BR>|;
+	    $blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">|._("Ukendt digter").qq|</DIV><BR>|;
 	    foreach my $f (@colls) {
 	        $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->fhandle.'">'.$f->fornavn.'</A><BR>';
 	        $blocks[$bi]->{'count'}++;
@@ -191,7 +192,7 @@ sub listpics {
 	my $fhandle = $poet->fhandle;
 	my $fullname = $poet->name;
 	$HTML .= "<TD align=center valign=bottom>";
-	$HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/thumb.jpg",url=>"fpics.pl?fhandle=$fhandle",alt=>"Vis portrætter af $fullname"});
+	$HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/thumb.jpg",url=>"fpics.pl?fhandle=$fhandle",alt=>_("Vis portrætter af %s",$fullname)});
 	$HTML .= "<BR>$fullname<BR>";
 	$HTML .= '<FONT COLOR="#808080">'.$poet->lifespan.'</FONT><BR>';
 	$HTML .= "</TD>";
@@ -213,7 +214,7 @@ sub listflittige {
     my $total;
     my $i = 1;
     $HTML .= '<TABLE CLASS="oversigt" CELLSPACING=0 WIDTH="100%">';
-    $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Navn</TH><TH ALIGN="right">Digte</TH></TR>';
+    $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">'._("Navn").'</TH><TH ALIGN="right">'._("Digte").'</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
 	    my $poet = Kalliope::PersonHome::findByFhandle($h->{'fhandle'});
 
@@ -226,9 +227,9 @@ sub listflittige {
 
     my $endHTML = '';
     if ($limit != -1) {
-	    $endHTML = qq|<A class="more" HREF="poets.cgi?list=flittige&limit=-1&sprog=$LA">Se hele listen...</A>|;
+	    $endHTML = qq|<A class="more" HREF="poets.cgi?list=flittige&limit=-1&sprog=$LA">|._("Se hele listen...").qq|</A>|;
     } else {
-	    $HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD></TR>";
+	    $HTML .= "<TR><TD></TD><TD><B>"._("Total")."</B></TD><TD ALIGN=right>$total</TD></TR>";
     }
     $HTML .= '</TABLE>';
     return ($HTML,$endHTML); 
@@ -244,7 +245,7 @@ sub listpop {
     my $total;
     my $endHTML = '';
     my $HTML = '<TABLE CLASS="oversigt" WIDTH="100%" CELLSPACING=0>';
-    $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Navn</TH><TH ALIGN="right">Hits&nbsp;&nbsp;</TH><TH ALIGN="right">Senest</TH></TR>';
+    $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">'._("Navn").'</TH><TH ALIGN="right">'._("Hits").'&nbsp;&nbsp;</TH><TH ALIGN="right">'._("Senest").'</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
 	    my $class = $i % 2 ? '' : ' CLASS="darker" ';
 	    $HTML .= qq|<TR $class><TD ALIGN="right">|.$i++.'.</TD>';
@@ -254,7 +255,7 @@ sub listpop {
 	    $total += $h->{'hitssum'};
     }
     if ($limit != -1) {
-        $endHTML = qq|<A class="more" HREF="poets.cgi?list=pop&limit=-1&sprog=$LA">Se hele listen...</A>|;
+        $endHTML = qq|<A class="more" HREF="poets.cgi?list=pop&limit=-1&sprog=$LA">|._("Se hele listen...").qq|</A>|;
     } else {
         $HTML .= qq|<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN="right">$total</TD></TR>|;
     }

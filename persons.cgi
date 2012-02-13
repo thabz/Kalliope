@@ -23,6 +23,7 @@
 use strict;
 no strict 'refs';
 use CGI ();
+use Kalliope;
 use Kalliope::DB ();
 use Kalliope::Web ();
 use Kalliope::Page ();
@@ -32,17 +33,17 @@ use Kalliope::Person ();
 my $LA = CGI::url_param('sprog') || 'dk';
 my $limit = CGI::url_param('limit') || '10';
 
-my %pageTypes = ('az' => {'title' => 'Personer efter navn',
+my %pageTypes = ('az' => {'title' => _('Personer efter navn'),
                           'function' => 'listaz',
-			  'crumbtitle' => 'efter navn',
+			  'crumbtitle' => _('efter navn'),
                           'page' => 'personsbyname'},
-                 '19' => {'title' => 'Personer efter fødeår',
+                 '19' => {'title' => _('Personer efter fødeår'),
                           'function' => 'list19',
-			  'crumbtitle' => 'efter fødeår',
+			  'crumbtitle' => _('efter fødeår'),
                           'page' => 'personsbyyear'},
-                 'pics' => {'title' => 'Personer efter udseende',
+                 'pics' => {'title' => _('Personer efter udseende'),
                           'function' => 'listpics',
-			  'crumbtitle' => 'efter udseende',
+			  'crumbtitle' => _('efter udseende'),
                           'page' => 'personsbypic'}
                 );
 
@@ -56,9 +57,9 @@ if ($listType ne 'az' && $listType ne '19' &&
 my $struct = $pageTypes{$listType};
 
 my @crumbs;
-push @crumbs,['Baggrund','metafront.cgi'];
-push @crumbs,['Biografier',''];
-push @crumbs,['Andre personer',''];
+push @crumbs,[_('Baggrund'),'metafront.cgi'];
+push @crumbs,[_('Biografier'),''];
+push @crumbs,[_('Andre personer'),''];
 push @crumbs,[$struct->{'crumbtitle'},''];
 
 my $page = new Kalliope::Page (

@@ -21,6 +21,7 @@
 #  $Id$
 
 use strict;
+use Kalliope;
 use Kalliope::Page ();
 use Kalliope::Web ();
 use CGI ();
@@ -28,10 +29,10 @@ use CGI ();
 my $LA = CGI::url_param('sprog') || 'dk';
 
 my @crumbs;
-push @crumbs,['Digtere',''];
+push @crumbs,[_('Digtere'),''];
 
 my $page = new Kalliope::Page (
-	title => 'Digtere',
+	title => _('Digtere'),
 	lang => $LA,
 	crumbs => \@crumbs,
     pagegroup => 'poets',
@@ -47,32 +48,32 @@ sub front {
 
     my @menuStruct = ({ 
         url => "poets.cgi?list=az&sprog=$LA", 
-	    title => 'Digtere efter navn', 
+	    title => _('Digtere efter navn'), 
 	    status => 1,
-        desc => "Oversigt over digtere ordnet alfabetisk efter navn",
+        desc => _("Oversigt over digtere ordnet alfabetisk efter navn."),
         icon => 'gfx/icons/works-w96.png'
     },{
         url => "poets.cgi?list=19&sprog=$LA", 
-	    title => 'Digtere efter år', 
+	    title => _('Digtere efter år'), 
 	    status => 1, 
-        desc => "Digtere ordnet kronologisk efter fødeår",
+        desc => _("Digtere ordnet kronologisk efter fødeår."),
         icon => 'gfx/icons/works-w96.png'
     },{
 	    url => "poets.cgi?list=pics&sprog=$LA", 
-	    title => 'Digtere efter udseende', 
+	    title => _('Digtere efter udseende'), 
 	    status => 1,
-        desc => "En oversigt med portrætter af alle digtere.",
+        desc => _("En oversigt med portrætter af alle digtere."),
         icon => 'gfx/icons/portrait-w96.png',
     },{
 	    url => "poets.cgi?list=flittige&sprog=$LA", 
-	    title => 'Flittigste digtere', 
+	    title => _('Flittigste digtere'), 
 	    status => 1,
-        desc => "Digtere ordnet efter hvor rigt repræsenteret de er i Kalliope.",
+        desc => _("Digtere ordnet efter hvor rigt repræsenteret de er i Kalliope."),
         icon => 'gfx/icons/works-w96.png'
     },{
 	    url => "poets.cgi?list=pop&sprog=$LA", 
-	    title => 'Mest populære digtere', 
-	    desc => 'En oversigt over de mest læste digtere i Kalliope.',
+	    title => _('Mest populære digtere'), 
+	    desc => _('En oversigt over de mest læste digtere i Kalliope.'),
 	    status => 1,
         icon => 'gfx/icons/pop-w96.png'});
 

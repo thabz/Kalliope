@@ -21,6 +21,7 @@
 #  $Id$
 
 use strict;
+use Kalliope;
 use Kalliope::Page ();
 use Kalliope::Web ();
 use CGI ();
@@ -28,10 +29,10 @@ use CGI ();
 my $LA = CGI::url_param('sprog') || 'dk';
 
 my @crumbs;
-push @crumbs,['Baggrund',''];
+push @crumbs,[_('Baggrund'),''];
 
 my $page = new Kalliope::Page (
-		title => 'Baggrund',
+		title => _('Baggrund'),
 		lang => $LA,
 		crumbs => \@crumbs,
 		nosubmenu => 1,
@@ -45,30 +46,32 @@ $page->print;
 
 sub front {
     my ($LA) = @_;
+    my $accept_language = Kalliope::Internationalization::http_accept_language();
+
 
     my @menuStruct = ({ 
         url => "keywordtoc.cgi?sprog=$LA", 
-	    title => 'Nøgleord', 
-	    status => 1,
-        desc => "Litteraturhistoriske skitser og forklaringer af litterære begreber",
+	    title => _('Nøgleord'), 
+	    status => $accept_language eq 'da',
+        desc => _("Litteraturhistoriske skitser og forklaringer af litterære begreber."),
         icon => 'gfx/icons/keywords-w96.png'
     },{
         url => "dict.cgi", 
-	    title => 'Ordbog', 
-	    status => 1, 
-        desc => "Forklaringer til svære eller usædvanlige ord som man støder på i de ældre digte",
+	    title => _('Ordbog'), 
+	    status => $accept_language eq 'da', 
+        desc => _("Forklaringer til svære eller usædvanlige ord som man støder på i de ældre digte."),
         icon => 'gfx/icons/keywords-w96.png'
     },{
 	    url => "persons.cgi?list=az", 
-	    title => 'Personer', 
-	    status => 1,
-        desc => "Litterært interessante personer som ikke har skrevet lyrik.",
+	    title => _('Personer'), 
+	    status => $accept_language eq 'da',
+        desc => _("Litterært interessante personer som ikke har skrevet lyrik."),
         icon => 'gfx/icons/portrait-w96.png',
     },{
 	    url => "kabout.pl?page=about", 
-	    title => 'Om Kalliope', 
+	    title => _('Om Kalliope'), 
 	    status => 1,
-        desc => "Om websitet Kalliope.",
+        desc => _("Om websitet Kalliope."),
         icon => 'gfx/icons/portrait-w96.png',
     });
 

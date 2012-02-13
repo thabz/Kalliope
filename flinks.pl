@@ -39,7 +39,7 @@ push @crumbs,['Links',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
                                       page => 'links',
-               subtitle => "Mere om ".$poet->name." på nettet",
+               subtitle => _("Mere om %s på nettet",$poet->name),
                                       crumbs => \@crumbs );
 
 #Vis de tilgængelige links
@@ -49,7 +49,7 @@ my $sth = $dbh->prepare("SELECT url,beskrivelse FROM links WHERE fhandle = ?");
 $sth->execute($poet->fhandle);
 while (my $h = $sth->fetchrow_hashref) {
     $out .= '<TR><TD VALIGN="top"><A TARGET="_top" HREF="'.$h->{'url'}.'"><IMG 
-	ALIGN="left" SRC="gfx/icons/links-w96.png" width="48" height="48" BORDER=0 ALT="Click her for at følge nævnte link"></A></TD>';
+	ALIGN="left" SRC="gfx/icons/links-w96.png" width="48" height="48" BORDER=0 alt="" title="'._("Klik her for at følge linket").'"></A></TD>';
     $out .= '<TD VALIGN="top">'.$h->{'beskrivelse'}.'</TD></TR>';
 }
 $sth->finish;

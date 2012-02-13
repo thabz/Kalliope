@@ -54,77 +54,77 @@ my $HTML;
 
 my @menuStruct = (
       { url => 'fvaerker.pl?', 
-	title => 'Værker', 
+	title => _('Værker'), 
 	status => $poet->hasWorks,
-        desc => "${poetName}s samlede poetiske værker",
+        desc => _("%ss samlede poetiske værker",$poetName),
         icon => 'gfx/icons/works-w96.png'
                     },{
         url => 'flines.pl?mode=1&', 
-	title => 'Digttitler', 
+	title => _('Digttitler'), 
 	status => $poet->hasPoems, 
-        desc => "Vis titler på alle digte",
+        desc => _("Vis titler på alle digte"),
         icon => 'gfx/icons/poem-w96.png'
                     },{
 	url => 'flines.pl?mode=0&', 
-	title => 'Førstelinier', 
+	title => _('Førstelinier'), 
 	status => $poet->hasPoems,
-        desc => "Vis førstelinier for samtlige digte",
+        desc => _("Vis førstelinier for samtlige digte"),
         icon => 'gfx/icons/poem-w96.png'
                     },{
 	url => 'fsearch.cgi?', 
-	title => 'Søgning', 
+	title => _('Søgning'), 
 	status => $poet->hasPoems,
-        desc => "Søg i ".$poetName."s tekster",
+        desc => _("Søg i %ss tekster",$poetName),
         icon => 'gfx/icons/search-w96.png'
                     },{
 	url => 'fpop.pl?', 
-	title => 'Populære digte', 
+	title => _('Populære digte'), 
 	status => $poet->hasPoems,
-        desc => "Top-10 over mest læste $poetName digte i Kalliope",
+        desc => _("Top-10 over mest læste %s digte i Kalliope",$poetName),
         icon => 'gfx/icons/pop-w96.png'
                     },{
 	url => 'fvaerker.pl?mode=prosa&', 
-	title => 'Prosa', 
-	desc => qq|${poetName}s prosatekster|,
+	title => _('Prosa'), 
+	desc => _("%ss prosatekster",$poetName),
 	status => $poet->{'prosa'},
         icon => 'gfx/icons/works-w96.png'
                     },{
 	url => 'fpics.pl?', 
-	title => 'Portrætter', 
+	title => _('Portrætter'), 
 	status => $poet->{'pics'},
         icon => 'gfx/icons/portrait-w96.png',
-        desc => "Portrætgalleri for $poetName"
+        desc => _("Portrætgalleri for %s",$poetName)
                     },{
 	url => 'biografi.cgi?', 
-	title => 'Biografi', 
+	title => _('Biografi'), 
 	status => 1,
-        desc => qq|En kortfattet introduktion til ${poetName}s liv og værk|,
+        desc => _("En kortfattet introduktion til %ss liv og værk",$poetName),
         icon => 'gfx/icons/biography-w96.png'
                     },{
 	url => 'samtidige.cgi?', 
-	title => 'Samtid', 
+	title => _('Samtid'), 
 	status => !$poet->isUnknownPoet && $poet->yearBorn ne '?',
-        desc => qq|Digtere som udgav værker i ${poetName}s levetid|,
+        desc => _("Digtere som udgav værker i %ss levetid",$poetName),
         icon => 'gfx/icons/biography-w96.png'
                     },{
 	url => 'henvisninger.cgi?', 
-	title => 'Henvisninger', 
+	title => _('Henvisninger'), 
 	status => $poet->hasHenvisninger, 
-        desc => 'Oversigt over tekster som henviser til '.$poetName.'s tekster',
+        desc => _('Oversigt over tekster som henviser til %ss tekster', $poetName),
         icon => 'gfx/icons/links-w96.png'
                     },{
 	url => 'flinks.pl?', 
-	title => 'Links', 
+	title => _('Links'), 
 	status => $poet->{'links'}, 
-        desc => 'Henvisninger til andre steder på internettet, som har relevant information om '.$poetName,
+        desc => _('Henvisninger til andre steder på internettet som har relevant information om %s',$poetName),
         icon => 'gfx/icons/links-w96.png'
                     },{
         url => 'fsekundaer.pl?', 
-        title => 'Bibliografi', 
+        title => _('Bibliografi'), 
         status => $poet->{'primaer'} || $poet->{'sekundaer'},
-        desc => $poetName.'s bibliografi',
+        desc => _('Bibliografi for %s',$poetName),
         icon => 'gfx/icons/secondary-w96.png'
-                    } );
+      } );
 
 map {$_->{'url'} = $_->{'url'}.'fhandle='.$poet->fhandle} @menuStruct;
 

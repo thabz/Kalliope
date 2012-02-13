@@ -31,22 +31,22 @@ my $mode = url_param('mode') || 'titel';
 my $LA = url_param('sprog') || 'dk';
 my $limit = url_param('limit') && url_param('limit') eq 'no' ? 0 : 1;
 
-my %crumbTitle = ('aar'    => 'efter år',
-                  'titel'  => 'efter titel',
-		  'digter' => 'efter digter',
-		  'pop'    => 'mest populære' );
+my %crumbTitle = ('aar'    => _('efter år'),
+                  'titel'  => _('efter titel'),
+		  'digter' => _('efter digter'),
+		  'pop'    => _('mest populære' ));
 
-my %pageTitle =  ('aar'    => 'Værker efter år',
-                  'titel'  => 'Værker efter titel',
-		  'digter' => 'Værker efter digter',
-		  'pop'    => 'Mest populære værker' );
+my %pageTitle =  ('aar'    => _('Værker efter år'),
+                  'titel'  => _('Værker efter titel'),
+		  'digter' => _('Værker efter digter'),
+		  'pop'    => _('Mest populære værker' ));
 
 my @crumbs;
-push @crumbs,['Værker',"worksfront.cgi?sprog=$LA"];
+push @crumbs,[_('Værker'),"worksfront.cgi?sprog=$LA"];
 push @crumbs,[$crumbTitle{$mode},''];
 
 my $page = new Kalliope::Page (
-    title => 'Værker',
+    title => _('Værker'),
     titleLink => "worksfront.cgi?sprog=$LA",
 	subtitle => $crumbTitle{$mode},
     lang => $LA,
@@ -98,15 +98,15 @@ if ($mode eq 'titel') {
 	    $HTML .= "<BR><DIV CLASS=listeoverskrifter>$new</DIV><BR>\n";
 	}
 	if ($f->{'hascontent'} eq 'no') {
-	    $HTML .= "<I>".$f->{'titel'}."</I> (".$f->{'aar'}.") - ".$f->{'fornavn'}." ".$f->{'efternavn'}."<BR>\n";
+	    $HTML .= "<I>".$f->{'titel'}."</I> (".$f->{'aar'}.") - ".$f->{'fornavn'}." ".$f->{'efternavn'}."<BR>";
 	} else {
 	    $HTML .= '<A CLASS=green HREF="vaerktoc.pl?fhandle='.$f->{'fhandle'}.'&vhandle='.$f->{'vhandle'}.'">';
-	    $HTML .= "<I>".$f->{'titel'}."</I></A> (".$f->{'aar'}.") - ".$f->{'fornavn'}." ".$f->{'efternavn'}."<BR>\n";
+	    $HTML .= "<I>".$f->{'titel'}."</I></A> (".$f->{'aar'}.") - ".$f->{'fornavn'}." ".$f->{'efternavn'}."<BR>";
 
 	}
     }
 
-    $HTML .= "<BR><BR><I>Denne oversigt indeholder kun værker som har et faktisk udgivelsesår</I><BR>\n";
+    $HTML .= "<BR><BR><I>"._("Denne oversigt indeholder kun værker som har et faktisk udgivelsesår")."</I><BR>";
     $page->addBox( width => '80%',
                    content => $HTML );
     $page->print;
@@ -143,7 +143,7 @@ if ($mode eq 'titel') {
     }
     $HTML .= '</TABLE>';
 
-    $HTML .= "<BR><BR><I>Denne oversigt indeholder kun værker som har et faktisk udgivelsesår</I><BR>\n";
+    $HTML .= "<BR><BR><I>"._("Denne oversigt indeholder kun værker som har et faktisk udgivelsesår")."</I><BR>";
     $page->addBox( width => '80%',
                    content => $HTML );
     $page->print;
@@ -202,7 +202,7 @@ if ($mode eq 'titel') {
     my $total;
     my $aar;
     $HTML .= '<TABLE CLASS="oversigt" width="100%" CELLSPACING=0>';
-    $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">Titel</TH><TH ALIGN="right">Hits</TH><TH ALIGN="right">Senest</TH></TR>';
+    $HTML .= '<TR><TH>&nbsp;</TH><TH ALIGN="left">'._("Titel").'</TH><TH ALIGN="right">'._("Hits").'</TH><TH ALIGN="right">'._("Senest").'</TH></TR>';
     while (my $h = $sth->fetchrow_hashref) {
 	$aar = $h->{'aar'} ne '?' ? ' ('.$h->{'aar'}.')' : '';
         my $class = $i % 2 ? '' : ' CLASS="darker" ';
@@ -216,9 +216,9 @@ if ($mode eq 'titel') {
 
     if ($limit == 1) {
         $HTML .= '</TABLE>';
-        $endHTML = '<A class="more" HREF="kvaerker.pl?mode=pop&limit=no&sprog='.$LA.'">Se hele listen...</A>';
+        $endHTML = '<A class="more" HREF="kvaerker.pl?mode=pop&limit=no&sprog='.$LA.'">'._("Se hele listen...").'</A>';
     } else {
-        $HTML .= "<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN=right>$total</TD><TD></TD></TR>";
+        $HTML .= "<TR><TD></TD><TD><B>"._("Total")."</B></TD><TD ALIGN=right>$total</TD><TD></TD></TR>";
         $HTML .= '</TABLE>';
     }
     $page->addBox( width => '90%',

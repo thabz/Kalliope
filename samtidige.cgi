@@ -38,12 +38,12 @@ my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 #
 
 my @crumbs = $poet->getCrumbs;
-push @crumbs,['Samtid',''];
+push @crumbs,[_('Samtidige digtere'),''];
 
 my $page = newAuthor Kalliope::Page( 
     poet => $poet,
     page => 'samtidige',
-	subtitle => 'Samtidige digtere',
+	subtitle => _('Samtidige digtere'),
 	coloumnwidths => [50,50],
     crumbs => \@crumbs
 );
@@ -70,7 +70,7 @@ if ($antal) {
 	    
         $i++;
     }
-    $blocks[0]->{'body'} .= '<br><br><SMALL><I>Oversigt over digtere som udgav værker i '.$poet->name.'s levetid.</I></SMALL>';
+    $blocks[0]->{'body'} .= '<br><br><SMALL><I>'._("Oversigt over digtere som udgav værker i %ss levetid.",$poet->name).'</I></SMALL>';
     $page->addDoubleColumn(@blocks);
 }
 

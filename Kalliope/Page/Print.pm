@@ -73,9 +73,11 @@ EOF
 	print $colHTML || '';
     }
 
+my $copy_line = _('Udskrift af <tt>%s</tt> foretaget %s. Denne tekst må frit redistribueres.', $requestURI, $today);
+
 print <<"EOF2";
 <hr noshade size="1">
-<small>Udskrift af <tt>$requestURI</tt> foretaget $today. Denne tekst må frit redistribueres.</small>
+<small>$copy_line</small>
 </body></table>
 EOF2
 

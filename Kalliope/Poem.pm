@@ -23,6 +23,7 @@ package Kalliope::Poem;
 
 use strict ('vars');
 use Carp;
+use Kalliope;
 use Kalliope::DB;
 use Kalliope::Keyword;
 use Kalliope::Person;

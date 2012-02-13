@@ -20,6 +20,7 @@
 #
 #  $Id$
 
+use Kalliope;
 use CGI (':standard');
 use Kalliope::Person;
 use Kalliope::Page;
@@ -35,26 +36,27 @@ my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 #
 
 my @crumbs = $poet->getCrumbs;
-push @crumbs,['Biografi',''];
+push @crumbs,[_('Biografi'),''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
-                                      page => 'bio',
-                                      coloumnwidths => [70,30],
-				                      subtitle => 'Biografi',
-				                      printer => url_param('printer') || 0,
-                                      crumbs => \@crumbs );
+                        page => 'bio',
+                        coloumnwidths => [70,30],
+			subtitle => _('Biografi'),
+			printer => url_param('printer') || 0,
+                        crumbs => \@crumbs );
 
 #
 # Biografi ----------------------------------------------
 #
 if ($poet->hasBio) {
-$page->addBox( printtitle => $poet->name.' '.$poet->lifespan,
-               width => '80%',
-               coloumn => 0,
-	           printer => 1,
-	           align => 'justify',
-	           end => qq|<a title="Udskriftsvenlig udgave" href="biografi.cgi?fhandle=$fhandle&printer=1"><img src="gfx/print.gif" border=0></a>|,
-	           content => $poet->bio || '<IMG ALIGN="left" SRC="gfx/excl.gif">Der er endnu ikke forfattet en biografi for '.$poet->name );
+$page->addBox( 
+    printtitle => $poet->name.' '.$poet->lifespan,
+    width => '80%',
+    coloumn => 0,
+    printer => 1,
+    align => 'justify',
+    end => qq|<a title="|._("Udskriftsvenlig udgave").qq|" href="biografi.cgi?fhandle=$fhandle&printer=1"><img src="gfx/print.gif" border=0></a>|,
+    content => $poet->bio || '<IMG ALIGN="left" SRC="gfx/excl.gif">'._("Der er endnu ikke forfattet en biografi for %s",$poet->name));
 }
 #
 # Detaljer
@@ -71,7 +73,7 @@ if ($poet->getDetailsAsHTML) {
     if (0) {
 #    if ($poet->getType ne 'person') {
 	$HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>';
-        $HTML .= '<b>Antal digte: </b>'.$poet->poemCount.'<br>';
+        $HTML .= '<b>'._("Antal digte:").'</b> '.$poet->poemCount.'<br>';
     }
     $HTML .= '</span>';
 
@@ -95,7 +97,7 @@ foreach my $w (grep { $_->hasYear } @works) {
        $event = new Kalliope::Timeline::Event({ 
 	       url => $titlepic->{'destfile'},
 	       year => $w->year,
-               description => "Titelblad til ".$poet->efternavn.'s <i>'.$w->clickableTitle.'</i> som udkommer '.$w->year."." });
+               description => _("Titelblad til %s <i>%s</i> som udkommer %s.", $poet->efternavn, $w->clickableTitle, $w->year)});
     } elsif ($w->hasContent) {
         $event = new Kalliope::Timeline::Event({ 
 		    year => $w->year,
@@ -109,9 +111,9 @@ foreach my $w (grep { $_->hasYear } @works) {
 }
 
 push @events , new Kalliope::Timeline::Event({ year => $poet->yearBorn,
-                 description => $poet->name.' født.'}) if $poet->yearBorn ne '?';
+                 description => _("%s født",$poet->name)}) if $poet->yearBorn ne '?';
 push @events , new Kalliope::Timeline::Event({ year => $poet->yearDead,
-                 description => $poet->name.' død.'}) if $poet->yearDead;
+                 description => _("%s død", $poet->name)}) if $poet->yearDead;
 
 my @personalEvents = Kalliope::Timeline::getEventsForPerson($poet->fhandle);
 
@@ -150,7 +152,7 @@ if ($#events > 0) {
     }
     $HTML .= '</TABLE></TD></TR></TABLE>';
     Kalliope::buildhrefs(\$HTML);
-    $page->addBox( title => 'Historiske begivenheder',
+    $page->addBox( title => _('Historiske begivenheder'),
 	    width => '80%',
 	    coloumn => 0,
 	    content => $HTML);
