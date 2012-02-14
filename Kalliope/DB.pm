@@ -25,13 +25,14 @@ use strict;
 use DBI;
 use Carp;
 use vars qw($COMC_DBH);
-use Kalliope::Page;
+#use Kalliope::Page;
 
 #my $DB_CONNECT_STRING = 'DBI:mysql:kalliope:localhost';
 #my $DB_USER = 'jec';
 #my $DB_PASSWORD = '';
 
-my $DB_CONNECT_STRING = 'dbi:Pg:dbname=kalliope';
+#my $DB_CONNECT_STRING = 'dbi:Pg:dbname=kalliope';
+my $DB_CONNECT_STRING = 'dbi:Pg:dbname=beta';
 my $DB_USER = 'jec';
 my $DB_PASSWORD = '';
 my %DB_ATTR = ( AutoCommit => 1, PrintError => 1, Warn => 1 );
@@ -50,7 +51,8 @@ sub connect {
 }
 
 sub connect_error {
-    Kalliope::Page::notFound('Der opstod en fejl under tilslutning til databasen, prøv igen senere!<p><i>'.$DBI::errstr.'</i>');
+    print STDERR DBI::errstr."\n";
+#    Kalliope::Page::notFound('Der opstod en fejl under tilslutning til databasen, prøv igen senere!<p><i>'.$DBI::errstr.'</i>');
     exit;
 }
 

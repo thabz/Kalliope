@@ -35,16 +35,17 @@ sub create {
     $dbh->do("CREATE TABLE news ( 
         entry text,
         active integer,
-	    orderby integer,
-	    pubdate date)");
+	lang varchar(2),
+        orderby integer,
+        pubdate date)");
    $dbh->do(q/CREATE INDEX news_active ON news(active)/);
    $dbh->do(q/CREATE INDEX news_pubdate ON news(pubdate)/);
    $dbh->do(q/GRANT SELECT ON TABLE news TO public/);
 }
 
 sub insert {
-    my $filename = shift;
-    my $sth = $dbh->prepare("INSERT INTO news (entry,active,orderby,pubdate) VALUES (?,?,?,?)");
+    my ($filename,$lang) = @_;
+    my $sth = $dbh->prepare("INSERT INTO news (entry,active,orderby,lang,pubdate) VALUES (?,?,?,?,?)");
     
     my $twig = new XML::Twig(keep_encoding => 1);
     $twig->parsefile($filename);
@@ -54,7 +55,7 @@ sub insert {
     	my $date = $event->first_child('date')->xml_string;
     	Kalliope::buildhrefs(\$body);
     	my ($day,$month,$year) = split('-', $date);
-    	$sth->execute($body,1,$i++,"$year-$month-$day");
+    	$sth->execute($body,1,$i++,$lang,"$year-$month-$day");
     }
     
     

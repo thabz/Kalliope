@@ -58,13 +58,15 @@ if ($__all) {
 #
 # Build news
 #
-my $newsFile = "../data/news.xml";
-if (Kalliope::Build::Timestamps::hasChanged($newsFile) || 1) {
-    &log ("Making news... ");
-    Kalliope::Build::News::create();
-    Kalliope::Build::News::insert($newsFile);
-    Kalliope::Build::Timestamps::register($newsFile);
-    &log ("Done");
+foreach my $lang ('da','en') {
+    my $newsFile = "../data/news_$lang.xml";
+    if (Kalliope::Build::Timestamps::hasChanged($newsFile) || 1) {
+	&log ("Making news... ");
+	Kalliope::Build::News::create();
+	Kalliope::Build::News::insert($newsFile,$lang);
+	Kalliope::Build::Timestamps::register($newsFile);
+	&log ("Done");
+    }
 }
 
 #

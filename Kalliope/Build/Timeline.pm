@@ -137,3 +137,6 @@ sub create {
    $dbh->do(q/CREATE INDEX timeline_year ON timeline(year)/);
    $dbh->do(q/GRANT SELECT ON TABLE timeline TO public/);
 }
+
+1;
+

@@ -43,6 +43,10 @@ sub http_accept_language {
     return $http_accept_language;
 }
 
+sub http_accept_lang {
+    return "en";
+}
+
 sub http_accept_sprog {
     my $language = http_accept_language();
     if ($language eq 'da') {
@@ -67,7 +71,7 @@ sub init {
 # ./index.cgi
 $translation{'<p><i>Kalliope</i> er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning. Kalliope indeholder også udenlandsk digtning, men primært i et omfang som kan bruges til belysning af den danske samling.</p>'} = "fd081cbeeb66380fd3598d3e7e2b80ab";
 $translation{'da-fd081cbeeb66380fd3598d3e7e2b80ab'} = '<p><i>Kalliope</i> er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning. Kalliope indeholder også udenlandsk digtning, men primært i et omfang som kan bruges til belysning af den danske samling.</p>';
-$translation{'en-fd081cbeeb66380fd3598d3e7e2b80ab'} = "";
+$translation{'en-fd081cbeeb66380fd3598d3e7e2b80ab'} = "<i>Kalliope</i> is a database containing old Danish poetry and associated biographical data. The goal is no less than to collect all of the older Danish poetry, but until then, Kalliope will contain a representative and still growing selection. Kalliope also contains poetry in English and other languages, but primarily as reference material to the Danish collection.";
 $translation{'de-fd081cbeeb66380fd3598d3e7e2b80ab'} = "";
 $translation{'fr-fd081cbeeb66380fd3598d3e7e2b80ab'} = "";
 $translation{'it-fd081cbeeb66380fd3598d3e7e2b80ab'} = "";
@@ -170,23 +174,23 @@ $translation{'de-7f1cab0bb69799279ef0f344e2803d2a'} = "";
 $translation{'fr-7f1cab0bb69799279ef0f344e2803d2a'} = "";
 $translation{'it-7f1cab0bb69799279ef0f344e2803d2a'} = "";
 # ./fvaerker.pl
-$translation{'Der findes endnu ingen af \%ss værker i Kalliope'} = "57dc8bbeadbd2b7a15ad7460b1ff8454";
-$translation{'da-57dc8bbeadbd2b7a15ad7460b1ff8454'} = 'Der findes endnu ingen af \%ss værker i Kalliope';
-$translation{'en-57dc8bbeadbd2b7a15ad7460b1ff8454'} = "";
+$translation{'Der findes endnu ingen af %ss værker i Kalliope'} = "57dc8bbeadbd2b7a15ad7460b1ff8454";
+$translation{'da-57dc8bbeadbd2b7a15ad7460b1ff8454'} = 'Der findes endnu ingen af %ss værker i Kalliope';
+$translation{'en-57dc8bbeadbd2b7a15ad7460b1ff8454'} = "There are not yet any works by %s in Kalliope";
 $translation{'de-57dc8bbeadbd2b7a15ad7460b1ff8454'} = "";
 $translation{'fr-57dc8bbeadbd2b7a15ad7460b1ff8454'} = "";
 $translation{'it-57dc8bbeadbd2b7a15ad7460b1ff8454'} = "";
 # ./henvisninger.cgi
-$translation{'Der findes ingen tekster, som henviser til \%ss tekster.'} = "73e6b9684301f9f46c80db8afb9dea93";
-$translation{'da-73e6b9684301f9f46c80db8afb9dea93'} = 'Der findes ingen tekster, som henviser til \%ss tekster.';
-$translation{'en-73e6b9684301f9f46c80db8afb9dea93'} = "";
+$translation{'Der findes ingen tekster, som henviser til %ss tekster.'} = "73e6b9684301f9f46c80db8afb9dea93";
+$translation{'da-73e6b9684301f9f46c80db8afb9dea93'} = 'Der findes ingen tekster, som henviser til %ss tekster.';
+$translation{'en-73e6b9684301f9f46c80db8afb9dea93'} = "No texts reference the texts of %s";
 $translation{'de-73e6b9684301f9f46c80db8afb9dea93'} = "";
 $translation{'fr-73e6b9684301f9f46c80db8afb9dea93'} = "";
 $translation{'it-73e6b9684301f9f46c80db8afb9dea93'} = "";
 # ./digt.pl
 $translation{'Dette digt har endnu ingen nøgleord tilknyttet.'} = "c50b4f50c79e0969e4de30a6be4a6d93";
 $translation{'da-c50b4f50c79e0969e4de30a6be4a6d93'} = 'Dette digt har endnu ingen nøgleord tilknyttet.';
-$translation{'en-c50b4f50c79e0969e4de30a6be4a6d93'} = "";
+$translation{'en-c50b4f50c79e0969e4de30a6be4a6d93'} = "This poem has no keywords yet.";
 $translation{'de-c50b4f50c79e0969e4de30a6be4a6d93'} = "";
 $translation{'fr-c50b4f50c79e0969e4de30a6be4a6d93'} = "";
 $translation{'it-c50b4f50c79e0969e4de30a6be4a6d93'} = "";
@@ -555,7 +559,7 @@ $translation{'de-2c001f548aed36910c775240c5e6fda2'} = "";
 $translation{'fr-2c001f548aed36910c775240c5e6fda2'} = "";
 $translation{'it-2c001f548aed36910c775240c5e6fda2'} = "";
 # ./flinks.pl
-$translation{'Mere om \%s på nettet'} = "691647c270abcab20460e865730c696f";
+$translation{'Mere om %s på nettet'} = "691647c270abcab20460e865730c696f";
 $translation{'da-691647c270abcab20460e865730c696f'} = 'Mere om %s på nettet';
 $translation{'en-691647c270abcab20460e865730c696f'} = 'More on %s online';
 $translation{'de-691647c270abcab20460e865730c696f'} = "";
@@ -690,7 +694,7 @@ $translation{'it-790e7c31725b08bd887b25fd26e7f583'} = "";
 # ./klines.pl
 $translation{'Ordnet efter førstelinie'} = "ff869bc77e85bfb254c70ee636a3613c";
 $translation{'da-ff869bc77e85bfb254c70ee636a3613c'} = 'Ordnet efter førstelinie';
-$translation{'en-ff869bc77e85bfb254c70ee636a3613c'} = "";
+$translation{'en-ff869bc77e85bfb254c70ee636a3613c'} = "Ordered by firstline";
 $translation{'de-ff869bc77e85bfb254c70ee636a3613c'} = "";
 $translation{'fr-ff869bc77e85bfb254c70ee636a3613c'} = "";
 $translation{'it-ff869bc77e85bfb254c70ee636a3613c'} = "";
@@ -1108,9 +1112,9 @@ $translation{'de-5d4c9dbd7ac9f234178b59b3c6c40aeb'} = "";
 $translation{'fr-5d4c9dbd7ac9f234178b59b3c6c40aeb'} = "";
 $translation{'it-5d4c9dbd7ac9f234178b59b3c6c40aeb'} = "";
 # ./poets.cgi
-$translation{'Vis portrætter af \%s'} = "48e990d23b8f391375be7d516974d2c6";
-$translation{'da-48e990d23b8f391375be7d516974d2c6'} = 'Vis portrætter af \%s';
-$translation{'en-48e990d23b8f391375be7d516974d2c6'} = "";
+$translation{'Vis portrætter af %s'} = "48e990d23b8f391375be7d516974d2c6";
+$translation{'da-48e990d23b8f391375be7d516974d2c6'} = 'Vis portrætter af %s';
+$translation{'en-48e990d23b8f391375be7d516974d2c6'} = "Show portraits of %s";
 $translation{'de-48e990d23b8f391375be7d516974d2c6'} = "";
 $translation{'fr-48e990d23b8f391375be7d516974d2c6'} = "";
 $translation{'it-48e990d23b8f391375be7d516974d2c6'} = "";

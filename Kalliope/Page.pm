@@ -486,7 +486,7 @@ sub langSelector {
     my $HTML;
     my %titles = ( 
         dk => _('danske'),
-        uk => _('britiske'),
+        gb => _('britiske'),
         us => _('amerikanske'),
         de => _('tyske'),
 	fr => _('franske'),
@@ -496,7 +496,7 @@ sub langSelector {
     
     my $url = $self->{'changelangurl'};
     
-    foreach my $lang ('dk','uk','de','fr','se','no','it','us') {
+    foreach my $lang ('dk','gb','de','fr','se','no','it','us') {
        my $refURL = $url;
        $refURL =~ s/sprog=../sprog=$lang/;
        my $cssClass = $lang eq $selfLang ? 'selectedflag' : ';';

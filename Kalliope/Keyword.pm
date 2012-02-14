@@ -123,4 +123,6 @@ sub getSearchResultEntry {
     $HTML .= '<BR><BR>';
     return $HTML;
 }
+
 1;
+

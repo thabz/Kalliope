@@ -85,8 +85,9 @@ $page->print();
 sub latestNews {
     my $showAllNews = shift;
     my $limit = $showAllNews ? "" : "LIMIT 3";
-    my $sth = $dbh->prepare("SELECT entry, pubdate FROM news ORDER BY pubdate DESC $limit");
-    $sth->execute;
+    my $lang = Kalliope::Internationalization::http_accept_lang;
+    my $sth = $dbh->prepare("SELECT entry, pubdate FROM news WHERE lang = ? ORDER BY pubdate DESC $limit");
+    $sth->execute($lang);
     while (my $item = $sth->fetchrow_hashref) {
         my ($year,$month,$day) = split '-', $item->{'pubdate'};
         $page->addBox ( coloumn => 0,

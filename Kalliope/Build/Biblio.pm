@@ -68,3 +68,7 @@ sub readfiles {
     close (FILE);
     return @result;
 }
+
+1;
+
+

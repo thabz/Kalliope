@@ -81,3 +81,7 @@ sub drop {
     $dbh->do("DROP TABLE forbogstaver");
 
 }
+
+1;
+
+

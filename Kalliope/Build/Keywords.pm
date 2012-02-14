@@ -124,4 +124,5 @@ sub drop {
     $dbh->do("DROP TABLE keywords_images");
     $dbh->do("DROP TABLE keywords");
 }
+
 1;

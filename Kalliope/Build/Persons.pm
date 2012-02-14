@@ -266,3 +266,6 @@ sub buildHasHenvisninger {
         $sthu->execute($i,$fid);
     }
 }
+
+1;
+

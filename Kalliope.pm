@@ -188,3 +188,6 @@ sub filesize {
     return sprintf ("%.0f kB",$size);
 }
 
+1;
+
+
