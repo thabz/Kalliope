@@ -507,14 +507,10 @@ pageTracker._trackPageview();
 #    foreach my $k (keys %ENV) {
 #       print "<span style='color:white'>$k: ".$ENV{$k}."</span><br>";
 #    }
-    print "<span style='color:white'>cookie-lang: ".Kalliope::Internationalization::_cookie_lang()."</span><br>";
-    my %cookies = CGI::Cookie->fetch();
-    foreach my $k (keys %cookies) {
-       print "<span style='color:white'>Cookie '$k': ".$cookies{$k}."</span><br>";
-    }
-#    my @c = @{$self->{'cookies'}};
-#    foreach my $k (@c) {
-#       print "<span style='color:white'>My cookie: $k</span><br>";
+#    print "<span style='color:white'>cookie-lang: ".Kalliope::Internationalization::_cookie_lang()."</span><br>";
+#    my %cookies = CGI::Cookie->fetch();
+#    foreach my $k (keys %cookies) {
+#       print "<span style='color:white'>Cookie '$k': ".$cookies{$k}."</span><br>";
 #    }
     print '</body></html>';
 }

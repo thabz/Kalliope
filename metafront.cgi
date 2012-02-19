@@ -46,25 +46,24 @@ $page->print;
 
 sub front {
     my ($LA) = @_;
-    my $accept_language = Kalliope::Internationalization::http_accept_language();
-
+    my $language = Kalliope::Internationalization::language();
 
     my @menuStruct = ({ 
         url => "keywordtoc.cgi?sprog=$LA", 
 	    title => _('Nøgleord'), 
-	    status => $accept_language eq 'da',
+	    status => $language eq 'da',
         desc => _("Litteraturhistoriske skitser og forklaringer af litterære begreber."),
         icon => 'gfx/icons/keywords-w96.png'
     },{
         url => "dict.cgi", 
 	    title => _('Ordbog'), 
-	    status => $accept_language eq 'da', 
+	    status => $language eq 'da', 
         desc => _("Forklaringer til svære eller usædvanlige ord som man støder på i de ældre digte."),
         icon => 'gfx/icons/keywords-w96.png'
     },{
 	    url => "persons.cgi?list=az", 
 	    title => _('Personer'), 
-	    status => $accept_language eq 'da',
+	    status => $language eq 'da',
         desc => _("Litterært interessante personer som ikke har skrevet lyrik."),
         icon => 'gfx/icons/portrait-w96.png',
     },{
