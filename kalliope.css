@@ -668,7 +668,7 @@ p.searchresult-line {
 }
 
 /* Special style for smart phones */
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
     body {
         -webkit-text-size-adjust:none;
         padding: 5px;

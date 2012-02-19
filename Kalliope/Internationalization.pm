@@ -23,6 +23,7 @@
 package Kalliope::Internationalization;
 
 use CGI ();
+use CGI::Cookie;
 
 my %translation;
 my $translation_init = 0;
@@ -32,15 +33,79 @@ sub _ {
     init();
     my $md5 = $translation{$key};
     if ($md5) {
-	my $result = $translation{"en-$md5"};
+	my $lang = language();
+	my $result = $translation{"$lang-$md5"};
 	return sprintf("$result",@options) if $result;
     }
     return sprintf("*$key",@options);
 }
 
+# This always returns the correct lang selected by the user.
+# Our redirection-mechanisme guarantees that.
+sub language {
+    return CGI::param('prefer-lang');
+}
+
+sub country {
+    return _default_country(language());
+}
+
+# If we don't have a lang in the URL, we need to redirect. 
+# This function return the lang we should redirect to - or an empty string
+sub redirect_needed {
+    my $url_lang = _url_lang();
+    my $cookie_lang = _cookie_lang() || '';
+    my $accept_lang = http_accept_language()||'';
+    my $clicked_lang = CGI::param('clicked-lang');
+
+    # Have the user got a difference lang selection in the long-lived cookie,
+    # then redirect to that lang. 
+    if (!$url_lang) {
+        # Redirection is needed  
+        # Default to 'da' if remote-client didn't supply a accept-language.
+        # That's typically a searchengine, that should get same lang as the
+        # old site.	
+        return $accept_lang || 'da';
+    }
+
+    if (!$clicked_lang && $cookie_lang ne $url_lang) {
+	return $cookie_lang;
+    }
+
+    # No redirect needed
+    return "";
+}
+
+sub _url_lang() {
+    return CGI::param('prefer-lang');
+}
+
+sub _cookie_lang() {
+    my %cookies = CGI::Cookie->fetch();
+    my $cookie_lang = $cookies{'cookie-lang'};
+    return $cookie_lang ? $cookie_lang->value() : '';
+}
+
+# Private methods below
+
+sub _default_country {
+    my $lang = shift;
+    return 'dk' if ($lang eq 'da');
+    return 'fr' if ($lang eq 'fr');
+    return 'se' if ($lang eq 'sv');
+    return 'no' if ($lang eq 'no');
+    return 'gb' if ($lang eq 'en');
+    return 'de' if ($lang eq 'de');
+    return 'it' if ($lang eq 'it');
+}
+
 sub http_accept_language {
     my $http_accept_language = $ENV{HTTP_ACCEPT_LANGUAGE} || 'da';
-    return $http_accept_language;
+    if ($http_accept_language =~ /^da/) {
+	return "da";
+    } else {
+	return "en";
+    }
 }
 
 sub http_accept_lang {

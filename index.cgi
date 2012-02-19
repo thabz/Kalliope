@@ -85,7 +85,7 @@ $page->print();
 sub latestNews {
     my $showAllNews = shift;
     my $limit = $showAllNews ? "" : "LIMIT 3";
-    my $lang = Kalliope::Internationalization::http_accept_lang;
+    my $lang = Kalliope::Internationalization::language;
     my $sth = $dbh->prepare("SELECT entry, pubdate FROM news WHERE lang = ? ORDER BY pubdate DESC $limit");
     $sth->execute($lang);
     while (my $item = $sth->fetchrow_hashref) {
@@ -122,9 +122,9 @@ sub dayToday {
 sub sonnet {
     my ($HTML,$END);
     my $dbh = Kalliope::DB->connect;
-    my $language = Kalliope::Internationalization::http_accept_sprog();
-    my $sth = $dbh->prepare("SELECT d.longdid FROM textxkeyword t, digte d WHERE t.keyword = 'sonnet' AND t.longdid = d.longdid AND d.lang = '$language' ORDER BY RANDOM() LIMIT 1");
-    $sth->execute();
+    my $lang = Kalliope::Internationalization::country();
+    my $sth = $dbh->prepare("SELECT d.longdid FROM textxkeyword t, digte d WHERE t.keyword = 'sonnet' AND t.longdid = d.longdid AND d.lang = ? ORDER BY RANDOM() LIMIT 1");
+    $sth->execute($lang);
     my ($longdid) = $sth->fetchrow_array;
     return ('','') unless $longdid;
     my $poem = new Kalliope::Poem(longdid => $longdid);

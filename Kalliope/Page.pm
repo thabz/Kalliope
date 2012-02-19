@@ -58,29 +58,32 @@ sub new {
     $self->{'subtitle'} = $args{'subtitle'} || '';
     $self->{'nosubmenu'} = $args{'nosubmenu'} || 0;
     $self->{'columns'} = [];
+
+    my @cookies;
     
     if ($self->{'setremoteuser'}) {
         my $cookie = new CGI::Cookie(
             -expires => '+3M',
   	        -name => 'user',
 	        -value => $self->{'setremoteuser'});
-    	$self->{'cookies'} = [$cookie];
+	push @cookies, $cookie;
     }
     if ($self->{'removeremoteuser'}) {
         my $cookie = new CGI::Cookie(
-            -expires => '-1M',
+            -expires => '-1m',
   	        -name => 'user',
 	        -value => 0);
-    	$self->{'cookies'} = [$cookie];
+	push @cookies, $cookie;
     }
+    $self->{'cookies'} = \@cookies;
 
     if ($args{'changelangurl'}) {
         $self->{'changelangurl'} = $args{'changelangurl'};
     } elsif ($self->{'poet'}) {
-	    $self->{'changelangurl'} = 'poets.cgi?list=az&amp;sprog=XX';
+	$self->{'changelangurl'} = 'poets.cgi?list=az&amp;sprog=XX';
     } else {
-	    $ENV{REQUEST_URI} =~ /([^\/]*)$/;
-	    $self->{'changelangurl'} = $1;
+	$ENV{REQUEST_URI} =~ /([^\/]*)$/;
+	$self->{'changelangurl'} = $1;
     }
     return $self;
 }
@@ -293,20 +296,47 @@ sub print {
     my $self = shift;
     my $titleForWindow = $self->titleForWindow;
     my $feedlink = '';
+
+    # If no prefer-lang in URL, redirect.
+    my $redirect_lang = Kalliope::Internationalization::redirect_needed();
+    if ($redirect_lang) {
+	my $url;
+        if ($ENV{REQUEST_URI} =~ /\/..\//) {
+	    $url = "http://".$ENV{HTTP_HOST}.$ENV{REQUEST_URI};
+	    $url =~ s!/../!/$redirect_lang/!;
+	} else {
+	    $url = "http://".$ENV{HTTP_HOST}."/".$redirect_lang.$ENV{REQUEST_URI};
+	}
+	print STDERR "Redirecting to $url (REQUEST_URI:".$ENV{REQUEST_URI}.")\n";
+
+	print CGI::redirect($url);
+	return;
+    }
+
+    # Set cookie if lang just selected
+    if (CGI::param("clicked-lang")) {
+        my $cookie = new CGI::Cookie(
+            -expires => '+3M',
+  	    -name => 'cookie-lang',
+	    -value => CGI::param("clicked-lang"));
+    	push @{$self->{'cookies'}}, $cookie;
+    }
+
     if ($self->{'rss_feed_url'}) {
 	    my $url = $self->{'rss_feed_url'};
 	    my $title = $self->{'rss_feed_title'};
 	    $feedlink = qq|<link rel="alternate" type="application/rss+xml" title="$title" href="$url">|;
     }
     $feedlink .= qq|<link rel="alternate" type="application/rss+xml" title="Kalliope - Seneste nyheder" href="news-feed.cgi">|;
-    print CGI::header(-type => 'text/html; charset=ISO-8859-1',
-# -expires => '+4h',
-		      -cookie => $self->{'cookies'});
+#print CGI::header(-cookie => $c);
     if ($self->{'redirect'}) {
 	    my $url = $self->{'redirect'};
 	    print qq|<html><head><meta http-equiv="refresh" content="0; URL=$url"></head></html>|;
 	    return;
     }
+    my @c = $self->{'cookies'};
+    print CGI::header(-type => 'text/html; charset=ISO-8859-1',
+		      -cookie => @c);
     my $http_accept_language = $ENV{HTTP_ACCEPT_LANGUAGE} || 'da';
     print '<!DOCTYPE html>';
     print <<"EOF";
@@ -473,14 +503,26 @@ pageTracker._trackPageview();
 #    } else {
 #	    print '<div style="padding:5px 5px 0 0;text-align:right"><a style="color:#a0a0a0;font-size:0.5em" href="login.cgi">&pi;</a></div>';
 #    }
+#    print "<span style='color:white'>prefer-lang: ".Kalliope::Internationalization::language."</span><br>";
+#    foreach my $k (keys %ENV) {
+#       print "<span style='color:white'>$k: ".$ENV{$k}."</span><br>";
+#    }
+    print "<span style='color:white'>cookie-lang: ".Kalliope::Internationalization::_cookie_lang()."</span><br>";
+    my %cookies = CGI::Cookie->fetch();
+    foreach my $k (keys %cookies) {
+       print "<span style='color:white'>Cookie '$k': ".$cookies{$k}."</span><br>";
+    }
+#    my @c = @{$self->{'cookies'}};
+#    foreach my $k (@c) {
+#       print "<span style='color:white'>My cookie: $k</span><br>";
+#    }
     print '</body></html>';
 }
 
 #
 # Private ------------------------------------------------------
 #
-
-sub langSelector {
+sub countrySelector {
     my $self = shift;
     my $selfLang = $self->lang; 
     my $HTML;
@@ -503,6 +545,38 @@ sub langSelector {
        my $alt = $lang eq $selfLang ? _('Du befinder dig i den %s samling.',$titles{$lang}) : _('Skift til den %s samling',$titles{$lang});
        $HTML .= qq|<a class="$cssClass" title="$alt" href="$refURL">|;
        $HTML .= Kalliope::Web::insertFlag($lang,$alt);
+       $HTML .= qq|</a>|;
+    }
+    return $HTML;
+}
+
+sub langSelector {
+    my $self = shift;
+    my $selfLang = Kalliope::Internationalization->language(); 
+    my $HTML;
+    my %titles = ( 
+        da => _('dansk'),
+        en => _('engelsk'));
+    my %flags = ( 
+        da => 'dk',
+        en => 'uk');
+    
+    my $url = $ENV{REQUEST_URI};
+    
+    foreach my $lang ('da','en') {
+       my $refURL = $url;
+       $refURL =~ s/\/..\//\/$lang\//;
+       if ($refURL =~ /clicked-lang=../) {
+	   $refURL =~ s/clicked-lang=../clicked-lang=$lang/;
+       } elsif ($refURL =~ /\?/) {
+	   $refURL .= '&clicked-lang='.$lang;
+       } else {
+	   $refURL .= '?clicked-lang='.$lang;
+       }
+       my $cssClass = $lang eq $selfLang ? 'selectedflag' : ';';
+       my $alt = $lang eq $selfLang ? _('Dit sprog er %s.',$titles{$lang}) : _('Skift til %s sprog',$titles{$lang});
+       $HTML .= qq|<a class="$cssClass" title="$alt" href="$refURL">|;
+       $HTML .= Kalliope::Web::insertFlag($flags{$lang},$alt);
        $HTML .= qq|</a>|;
     }
     return $HTML;
