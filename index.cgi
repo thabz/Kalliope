@@ -61,12 +61,14 @@ $page->addBox(coloumn => 0,
 
 &latestNews($showAllNews);
 
-if (my $dayToday = &dayToday()) {
-    $page->addBox ( title => _("Dagen idag"),
+if (Kalliope::Internationalization::language() eq 'da') {
+    if (my $dayToday = &dayToday()) {
+        $page->addBox ( title => _("Dagen idag"),
 	                coloumn => 1,
 	                cssClass => 'hidemobile',
 	                content => $dayToday,
 	                end => '<a class="more" href="today.cgi">'._("Vælg anden dato...").'</a>');
+    }
 }
 
 my ($sonnetText,$sonnetEnd) = &sonnet;

@@ -164,7 +164,7 @@ sub list19 {
     # Udenfor kategori (dvs. folkeviser, o.l.)
     $bi++;
     if ($#unknownYear >= 0) {
-	    $blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">Ukendt fødeår</DIV><BR>|;
+	    $blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">|._("Ukendt fødeår").'</DIV><BR>';
 	    foreach my $f (@unknownYear) {
 	        $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->fhandle.'">'.$f->reversedName.'</A>&nbsp;<FONT COLOR="#808080">'.$f->lifespan.'</FONT><BR>';
 	        $blocks[$bi]->{'count'}++;
