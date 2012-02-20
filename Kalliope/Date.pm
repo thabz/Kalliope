@@ -25,11 +25,10 @@ use POSIX;
 use strict;
 use Kalliope::Internationalization;
 
-my @months = qw (Jan Feb Mar Apr Maj Jun Jul Aug Sep Okt Nov Dec);
-my @weekdays = qw (Søn Man Tir Ons Tors Fre Lør);
-my @monthsLong = qw (Januar Februar Marts April Maj Juni Juli 
-                     August September Oktober November December);
-my @monthsRFC822 = qw (Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec);
+my @months = split /\s+/, _("Jan Feb Mar Apr Maj Jun Jul Aug Sep Okt Nov Dec");
+my @weekdays = split /\s+/, _("Søn Man Tir Ons Tors Fre Lør");
+my @monthsLong = split /\s+/, _("Januar Februar Marts April Maj Juni Juli August September Oktober November December");
+my @monthsRFC822 = qw(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec);
 
 sub getMonthNamesShort {
     return @months;
@@ -51,9 +50,9 @@ sub shortDate {
     $min = "0".$min if ($min<10);
     $hour = "0".$hour if ($hour<10);
     if ($yday == $yday2 && $year == $year2) {
-	return _("Idag %s:%s",$hour,$min);
+	return _("I dag %s:%s",$hour,$min);
     } elsif ($yday == $yday2-1 && $year == $year2) {
-	return _("Igår %s:%s",$hour,$min);
+	return _("I går %s:%s",$hour,$min);
     } elsif (time - $time < 6*24*60*60) {
 	return $weekdays[$wday]." $hour:$min";	
     } elsif ($year == $year2) {

@@ -23,6 +23,7 @@
 
 use strict;
 use CGI qw/:standard/;
+use Kalliope;
 use Kalliope::Timeline;
 use Kalliope::Date;
 
@@ -34,11 +35,11 @@ my $day = CGI::param('day') || $dayNow;
 
 my @monthNames = Kalliope::Date::getMonthNamesLong;
 
-my $title = "Begivenheder";
-my $subtitle = $month ? "$day. ".lc $monthNames[$month-1] : "Begivenheder idag";
+my $title = _("Begivenheder");
+my $subtitle = $month ? "$day. ".lc $monthNames[$month-1] : _("Begivenheder i dag");
 my $HTML = Kalliope::Timeline::getEventsGivenMonthAndDayAsHTML($month,$day);
 unless ($HTML) {
-    $HTML = '<i>Ingen begivenheder registreret.</i>';
+    $HTML = _('<i>Ingen begivenheder registreret.</i>');
 }
 
 my @crumbs = ([$title,'']);
@@ -73,7 +74,7 @@ foreach my $m (@monthNames) {
 }
 $selectHTML .= '</SELECT>';
 
-$selectHTML .= '<INPUT TYPE="submit" VALUE=" Vælg dato ">';
+$selectHTML .= '<INPUT TYPE="submit" VALUE=" '._("Vælg dato").' ">';
 $selectHTML .= '</FORM>';
 
 $page->addBox( width => '75%',
