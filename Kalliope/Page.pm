@@ -337,23 +337,22 @@ sub print {
     my @c = $self->{'cookies'};
     print CGI::header(-type => 'text/html; charset=ISO-8859-1',
 		      -cookie => @c);
-    my $http_accept_language = $ENV{HTTP_ACCEPT_LANGUAGE} || 'da';
+    my $lang = Kalliope::Internationalization::language();
     print '<!DOCTYPE html>';
     print <<"EOF";
-<html class="kalliope"><HEAD><TITLE>$titleForWindow</TITLE>
-<!-- HTTP ACCEPT-LANGUAGE: $http_accept_language --> 
+<html class="kalliope" lang="$lang">
+<HEAD><TITLE>$titleForWindow</TITLE>
 <LINK REL="Shortcut Icon" HREF="http://www.kalliope.org/favicon.ico">
 <link rel="apple-touch-icon" href="http://www.kalliope.org/gfx/icons/iphone-icon.png">
 <meta name="viewport" content="width=device-width; initial-scale=1.0" />
 <link rel="search" type="application/opensearchdescription+xml" title="Kalliope" href="http://www.kalliope.org/opensearch.xml">
 <link rel="stylesheet" type="text/css" href="kalliope.css">
-<!-- <link rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 400px)" href="mobile.css">-->
 <META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
 <META name="description" content="Stort arkiv for ældre digtning">
 <META name="keywords" content="digte, lyrik, litteratur, litteraturhistorie, digtere, digtarkiv, etext, e-text, elektronisk tekst, kalliope, kalliope.org, www.kalliope.org">
 $feedlink
-<script type="text/javascript" src="script/jquery-1.7.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic|PT+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="script/jquery-1.7.min.js"></script>
 
 <SCRIPT TYPE="text/javascript">
 function openTimeContext(year) {
