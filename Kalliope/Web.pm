@@ -93,8 +93,8 @@ sub insertFlag {
     my $img32 = "gfx/flags/32/$lang.png";
     $alt = $alt || '';
     my $HTML = '';
-    $HTML .= qq|<img class="retina" width="16" alt="$alt" border="0" src="$img32">|;
-    $HTML .= qq|<img class="non-retina" width="16" alt="$alt" border="0" src="$img16">|;
+    $HTML .= qq|<img class="retina" width="16" height="16" alt="$alt" border="0" src="$img32">|;
+    $HTML .= qq|<img class="non-retina" width="16" height="16" alt="$alt" border="0" src="$img16">|;
     return $HTML;
 }
 
