@@ -233,11 +233,11 @@ sub addFrontMenu {
 	    if ($item{status}) {
 	        my $HTML = '<div class="frontmenu-item">';
 	        if ($item{unclickable}) {
-    	        $HTML .= qq|<div class="icon"><img width="48" border="0" src="$item{icon}" alt="$item{title}"></div>|;
+    	        $HTML .= qq|<div class="icon"><img width="48" height="48" border="0" src="$item{icon}" alt="$item{title}"></div>|;
     	        $HTML .= qq|<div class="title">$item{title}</div>|;
     	        $HTML .= qq|<div class="descr">$item{desc}</div>|;
 	        } else {
-    	        $HTML .= qq|<div class="icon"><a href="$url"><img width="48" border="0" src="$item{icon}" alt="$item{title}"></a></div>|;
+    	        $HTML .= qq|<div class="icon"><a href="$url"><img width="48" height="48" border="0" src="$item{icon}" alt="$item{title}"></a></div>|;
     	        $HTML .= qq|<div class="title"><a href="$url">$item{title}</a></div>|;
     	        $HTML .= qq|<div class="descr"><a href="$url">$item{desc}</a></div>|;
 	        }
