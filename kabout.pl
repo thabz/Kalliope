@@ -28,7 +28,7 @@ my %titler = ( musen => _('Musen Kalliope'),
                interne => _('Interne sider'),
                faq => _('Ofte stillede spørgsmål'),
                attractions => _('Coming attractions'),
-	           about => '' );
+	       about => '' );
 
 my $select = CGI::url_param('page');
 my $title = $titler{$select};
@@ -50,13 +50,15 @@ $page->print;
 sub readFile {
     my $file = shift;
     my $HTML;
-    if ($file =~ /\.\./ || !(-e "data/html//$file.html")) {
+    my $lang = Kalliope::Internationalization::language();
+    my $path = sprintf("data/html//%s_%s.html",$file,$lang);
+    if ($file =~ /\.\./ || !(-e $path)) {
         Kalliope::Page::notFound();
     } else {
-	    open(FILE,"data/html/$file.html");
-	    foreach  (<FILE>) {
-	        $HTML .= $_;
-	    }
+        open(FILE, $path);
+        foreach  (<FILE>) {
+            $HTML .= $_;
+        }
         close (FILE);
     }
     return $HTML;

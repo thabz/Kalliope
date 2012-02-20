@@ -580,7 +580,8 @@ sub langSelector {
 
 sub menuStructs {
     my $self = shift;
-    my $lang = $self->lang;
+    my $country = $self->lang;
+    my $lang = Kalliope::Internationalization::language();
 
     my %menuStructs = (
          'welcome' => {'menuTitle' => '',
@@ -592,25 +593,25 @@ sub menuStructs {
                        'pages' => ['about','tak','musen']
  	               },
          'poets'    => {menuTitle => _('Digtere'),
-                       url => 'poetsfront.cgi?sprog='.$lang,
+                       url => 'poetsfront.cgi?sprog='.$country,
 		       icon => 'gfx/frames/menu-digtere.gif',
                        'pages' => ['poetsbyname','poetsbyyear','poetsbypic',
 		                   'poetsbyflittige','poetsbypop']
                        },
          'worklist' => {menuTitle => _('Værker'),
-                       url => "worksfront.cgi?sprog=$lang",
+                       url => "worksfront.cgi?sprog=$country",
 		       icon => 'gfx/frames/menu-vaerker.gif',
                        pages => ['kvaerkertitel','kvaerkeraar','kvaerkerdigter',
                                  'kvaerkerpop']
                        },
          'poemlist' => {menuTitle => _('Digte'),
 		       icon => 'gfx/frames/menu-digte.gif',
-                       url => "poemsfront.cgi?sprog=$lang",
+                       url => "poemsfront.cgi?sprog=$country",
                        pages => ['poemtitles','poem1stlines','poempopular','latest']
                        },
          'history' => {menuTitle => _('Baggrund'),
 		       icon => 'gfx/frames/menu-meta.gif',
-                       url => 'metafront.cgi?sprog='.$lang,
+                       url => 'metafront.cgi?sprog='.$country,
                        pages => ['keywordtoc','dict','persons']
                        },
 #         'forum' =>    {menuTitle => 'Forum',
@@ -622,13 +623,13 @@ sub menuStructs {
                        url => 'forumindex.cgi'
                        },
          'poemtitles' =>{menuTitle => _('Digttitler'),
-                       url => 'klines.pl?mode=1&forbogstav=A&sprog='.$lang
+                       url => 'klines.pl?mode=1&forbogstav=A&sprog='.$country
                        },
          'poem1stlines' => {menuTitle => _('Førstelinier'),
-                       url => 'klines.pl?mode=0&forbogstav=A&sprog='.$lang
+                       url => 'klines.pl?mode=0&forbogstav=A&sprog='.$country
                        },
          'poempopular' => {menuTitle => _('Populære'),
-                       url => 'klines.pl?mode=2&sprog='.$lang
+                       url => 'klines.pl?mode=2&sprog='.$country
                        },
          'news' =>     {menuTitle => _('Nyheder'),
                        url => 'index.cgi'
@@ -640,7 +641,8 @@ sub menuStructs {
                        url => 'kabout.pl?page=tak'
                        },
          'musen' =>     {menuTitle => _('Musen'),
-                       url => 'kabout.pl?page=musen'
+                       url => 'kabout.pl?page=musen',
+		       disabled => ($lang ne 'da')
                        },
          'stats' =>    {menuTitle => _('Statistik'),
                        url => 'kstats.pl'
@@ -649,34 +651,34 @@ sub menuStructs {
                          url => 'latest.cgi'
                        },
          'poetsbyname' => {menuTitle => _('Digtere efter navn'),
-                           url => 'poets.cgi?list=az&sprog='.$lang
+                           url => 'poets.cgi?list=az&sprog='.$country
                        },
          'poetsbyyear' => {menuTitle => _('Digtere efter år'),
-                           url => 'poets.cgi?list=19&sprog='.$lang
+                           url => 'poets.cgi?list=19&sprog='.$country
                        },
          'poetsbypic' => {menuTitle => _('Digtere efter udseende'),
-                           url => 'poets.cgi?list=pics&sprog='.$lang
+                           url => 'poets.cgi?list=pics&sprog='.$country
                        },
          'poetsbyflittige' => {menuTitle => _('Flittigste digtere'),
-                           url => 'poets.cgi?list=flittige&sprog='.$lang
+                           url => 'poets.cgi?list=flittige&sprog='.$country
                        },
          'poetsbypop'    => {menuTitle => _('Mest populære digtere'),
-                             url => 'poets.cgi?list=pop&sprog='.$lang
+                             url => 'poets.cgi?list=pop&sprog='.$country
                        },
          'kvaerkertitel' => {menuTitle => _('Værker efter titel'),
-                           url => 'kvaerker.pl?mode=titel&sprog='.$lang
+                           url => 'kvaerker.pl?mode=titel&sprog='.$country
                        },
          'kvaerkerdigter' => {menuTitle => _('Værker efter digter'),
-                           url => 'kvaerker.pl?mode=digter&sprog='.$lang
+                           url => 'kvaerker.pl?mode=digter&sprog='.$country
                        },
          'kvaerkeraar' => {menuTitle => _('Værker efter år'),
-                           url => 'kvaerker.pl?mode=aar&sprog='.$lang
+                           url => 'kvaerker.pl?mode=aar&sprog='.$country
                        },
          'kvaerkerpop' => {menuTitle => _('Mest populære værker'),
-                           url => 'kvaerker.pl?mode=pop&sprog='.$lang
+                           url => 'kvaerker.pl?mode=pop&sprog='.$country
                        },
          'keywordtoc' => {menuTitle => _('Nøgleord'),
-                           url => 'keywordtoc.cgi?sprog='.$lang
+                           url => 'keywordtoc.cgi?sprog='.$country
                        },
          'dict' => {menuTitle => _('Ordbog'),
                            url => 'dict.cgi'
@@ -686,16 +688,16 @@ sub menuStructs {
                        'pages' => ['personsbyname','personsbyyear','personsbypic']
                        },
          'personsbyname' => {menuTitle => _('Personer efter navn'),
-                           url => 'persons.cgi?list=az&sprog='.$lang
+                           url => 'persons.cgi?list=az&sprog='.$country
                        },
          'personsbyyear' => {menuTitle => _('Personer efter år'),
-                           url => 'persons.cgi?list=19&sprog='.$lang
+                           url => 'persons.cgi?list=19&sprog='.$country
                        },
          'personsbypic' => {menuTitle => _('Personer efter udseende'),
-                           url => 'persons.cgi?list=pics&sprog='.$lang
+                           url => 'persons.cgi?list=pics&sprog='.$country
                        },
          'timeline' => {menuTitle => _('Tidslinie'),
-                           url => 'timeline.cgi&sprog='.$lang
+                           url => 'timeline.cgi&sprog='.$country
                        }
           );
 
@@ -774,13 +776,16 @@ sub _navigationSub {
     my $struct = $menuStructs{$self->{'pagegroup'}};
     foreach my $key (@{$struct->{'pages'}}) {
         my $struct = $menuStructs{$key};
-        my ($title,$url) = ($struct->{'menuTitle'},
-                           $struct->{'url'});
-        if ($key ne $self->{'page'}) {
-	        push @itemsHTML, qq|<A CLASS="submenu" HREF="$url">$title</A>|;
-	    } else {
-            push @itemsHTML, qq|<A CLASS="submenu" HREF="$url"><B>$title</B></A>|;
-	    }
+        my ($title,$url,$disabled) = ($struct->{'menuTitle'},
+                           $struct->{'url'},
+                           $struct->{'disabled'});
+	if (!$disabled) {
+            if ($key ne $self->{'page'}) {
+    	        push @itemsHTML, qq|<A CLASS="submenu" HREF="$url">$title</A>|;
+            } else {
+                push @itemsHTML, qq|<A CLASS="submenu" HREF="$url"><B>$title</B></A>|;
+            }
+	}
     }
     $HTML = join ' <span class="lifespan">&bull;</span> ',@itemsHTML;
     #$HTML = join ' <span class="lifespan">&#149;</span> ',@itemsHTML;
