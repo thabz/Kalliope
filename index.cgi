@@ -52,7 +52,7 @@ my $page = new Kalliope::Page(
 		nosubmenu => 1,
 		crumbs => \@crumbs,
 		coloumnwidths => [50,50],
-		changelangurl => 'poets.cgi?list=az&amp;sprog=XX',
+		changelangurl => 'poets.cgi?list=az&amp;cn=XX',
 );
 
 $page->addBox(coloumn => 0,
@@ -124,7 +124,7 @@ sub dayToday {
 sub sonnet {
     my ($HTML,$END);
     my $dbh = Kalliope::DB->connect;
-    my $lang = Kalliope::Internationalization::country();
+    my $lang = Kalliope::Internationalization::language();
     my $sth = $dbh->prepare("SELECT d.longdid FROM textxkeyword t, digte d WHERE t.keyword = 'sonnet' AND t.longdid = d.longdid AND d.lang = ? ORDER BY RANDOM() LIMIT 1");
     $sth->execute($lang);
     my ($longdid) = $sth->fetchrow_array;

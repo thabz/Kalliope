@@ -41,7 +41,7 @@ my $work = new Kalliope::Work ( vid => $vid);
 my $poet = $work->author;
 
 my @crumbs;
-push @crumbs,[_('Digtere'),'poets.cgi?list=az&sprog='.$poet->lang];
+push @crumbs,[_('Digtere'),'poets.cgi?list=az&cn='.$poet->country];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,[_('Værker'),'fvaerker.pl?fhandle='.$poet->fhandle];
 push @crumbs,[$work->titleWithYear,''];
@@ -72,7 +72,7 @@ $page->addBox( width => '250',
                coloumn => 1,
                theme => 'dark',
                cssClass => 'noter',
-               content => &notes($work) );
+               content => &notes($work, Kalliope::Internationalization::language()) );
 
 
 #$page->addBox( width => '250',
@@ -123,7 +123,7 @@ sub pics {
     my $work = shift;
     my $HTML = "<div class='image-aside'>";
     $HTML .= '<aside>';
-    my @pics = $work->pics;
+    my @pics = $work->pics();
     foreach my $pic (@pics) {
         $HTML .= '<div class="figure">';
         $HTML .= '<figure>';
@@ -140,8 +140,8 @@ sub pics {
 }
 
 sub notes {
-    my $work = shift;
-    my @notes = $work->notesAsHTML;
+    my ($work,$lang) = @_;
+    my @notes = $work->notesAsHTML($lang);
 
     my $HTML;
     $HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>',@notes;
@@ -152,13 +152,14 @@ sub notes {
     $HTML .= $work->quality->asHTML;
     $HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>';
     $HTML .= '</div>';
-    $HTML = qq|<span style="font-size: 12px">$HTML</span>|;
+    $HTML = qq|<div lang="$lang" style="font-size: 12px"><aside>$HTML</aside></div>|;
     return $HTML;
 }
 
 sub tableOfContent {
     my $work = shift;
-    my $HTML = '';
+    my $worklang = $work->language();
+    my $HTML = qq|<div lang="$worklang">|;
     
     $HTML .= '<h1 class="digtoverskrift"><i>'.$work->title."</i> ".$work->parenthesizedYear."</h1>";
     if ($work->subtitle) {
@@ -176,6 +177,7 @@ sub tableOfContent {
     return _('Kalliope indeholder endnu ingen tekster fra dette værk.') unless $sth->rows;
     $HTML .= _renderSection($work->vid,undef,1);
     $sth->finish;
+    $HTML .= '</div>';
     return $HTML;
 }
 

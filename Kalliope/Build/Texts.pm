@@ -27,11 +27,11 @@ use Kalliope::Date;
 use strict;
 
 my $dbh = Kalliope::DB::connect();
-my $sthGroup = $dbh->prepare("INSERT INTO digte (did,longdid,fhandle,parentdid,linktitel,toptitel,toctitel,tititel,foerstelinie,indhold,vaerkpos,vid,type,underoverskrift,lang,createtime,quality) VALUES (nextval('seq_digte_did'),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+my $sthGroup = $dbh->prepare("INSERT INTO digte (did,longdid,fhandle,parentdid,linktitel,toptitel,toctitel,tititel,foerstelinie,indhold,vaerkpos,vid,type,underoverskrift,lang,country,createtime,quality) VALUES (nextval('seq_digte_did'),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 my $sthseqval = $dbh->prepare("SELECT currval('seq_digte_did')");
 my $sthseqlongdid = $dbh->prepare("SELECT nextval('seq_digte_longdid')");
-my $sthnote = $dbh->prepare("INSERT INTO textnotes (longdid,note,orderby) VALUES (?,?,?)");
-my $sthpicture = $dbh->prepare("INSERT INTO textpictures (longdid,caption,url,orderby) VALUES (?,?,?,?)");
+my $sthnote = $dbh->prepare("INSERT INTO textnotes (longdid,note,lang,orderby) VALUES (?,?,?,?)");
+my $sthpicture = $dbh->prepare("INSERT INTO textpictures (longdid,caption,url,lang,orderby) VALUES (?,?,?,?,?)");
 my $sthkeyword = $dbh->prepare("INSERT INTO textxkeyword (longdid,keyword) VALUES (?,?)");
 my $sthclean = $dbh->prepare("DELETE FROM digte WHERE vid = ?");
 my $orderby;
@@ -42,11 +42,11 @@ sub clean {
 }
 
 sub insert {
-    my $sthselect = $dbh->prepare("SELECT fhandle,vhandle,vid,lang FROM vaerker WHERE dirty = 1");
+    my $sthselect = $dbh->prepare("SELECT fhandle,vhandle,vid,lang,country FROM vaerker WHERE dirty = 1");
     $sthselect->execute;
     my $sthupdate = $dbh->prepare("UPDATE vaerker SET dirty = 0 WHERE fhandle = ? AND vhandle = ?");
     my $orderby = 0;
-    while (my ($fhandle,$vhandle,$vid,$lang) = $sthselect->fetchrow_array) {
+    while (my ($fhandle,$vhandle,$vid,$lang,$country) = $sthselect->fetchrow_array) {
 	clean($fhandle,$vhandle);
 	my $filename  = "../fdirs/$fhandle/$vhandle.xml";
 	print "           Inserting body $filename\n";
@@ -55,7 +55,7 @@ sub insert {
 	$twig->parsefile($filename);
 	my $kalliopework = $twig->root;
 	if ($kalliopework->first_child('workbody')) {
-	    _insertGroup($fhandle,$vid,$lang,undef,$kalliopework->first_child('workbody')->children);
+	    _insertGroup($fhandle,$vid,$lang,$country,undef,$kalliopework->first_child('workbody')->children);
 	}
 	$sthupdate->execute($fhandle,$vhandle);
     }
@@ -72,7 +72,7 @@ sub postinsert {
 }
 
 sub _insertGroup {
-    my ($fhandle,$vid,$lang,$parent,@nodes) = @_;
+    my ($fhandle,$vid,$lang,$country,$parent,@nodes) = @_;
     foreach my $node (@nodes) {
  	my $head = $node->first_child('head');
 	my $linktitle = $head->first_child('linktitle') ? $head->first_child('linktitle')->text : undef;
@@ -110,11 +110,11 @@ sub _insertGroup {
 	    if (!$linktitle) {
 		$linktitle = $toptitle;
 	    }
-	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,'','',$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid),$quality);
-	    doDepends($head,$longdid,$fhandle,$vid);
+	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,'','',$orderby++,$vid,$type,$subtitle,$lang,$country,_createtime($longdid),$quality);
+	    doDepends($head,$longdid,$fhandle,$vid,$lang);
 	    $sthseqval->execute();
 	    my ($newparent) = $sthseqval->fetchrow_array;
-	    _insertGroup($fhandle,$vid,$lang,$newparent,$node->first_child('content')->children);
+	    _insertGroup($fhandle,$vid,$lang,$country,$newparent,$node->first_child('content')->children);
 	} else {
 	    my $longdid = $node->id;
  	    my $body = $node->first_child('body');
@@ -133,27 +133,29 @@ sub _insertGroup {
 		$linktitle = $toptitle;
 	    }
 	    
-	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,$firstline,$body->xml_string,$orderby++,$vid,$type,$subtitle,$lang,_createtime($longdid),$quality);
-	    doDepends($head,$longdid,$fhandle,$vid);
+	    $sthGroup->execute($longdid,$fhandle,$parent,$linktitle,$toptitle,$toctitle,$indextitle,$firstline,$body->xml_string,$orderby++,$vid,$type,$subtitle,$lang,$country,_createtime($longdid),$quality);
+	    doDepends($head,$longdid,$fhandle,$vid,$lang);
 	}
 
     }
 }
 
 sub doDepends {
-    my ($head,$longdid,$fhandle,$vid) = @_;
+    my ($head,$longdid,$fhandle,$vid,$poemlang) = @_;
     if ($head->first_child('notes')) {
 	my $i = 1;
 	foreach my $note ($head->first_child('notes')->children('note')) {
-	    $sthnote->execute($longdid,$note->xml_string,$i++);
+	    my $notelang = $note->{'att'}->{'lang'} || 'da';
+	    $sthnote->execute($longdid,$note->xml_string,$notelang,$i++);
 	}
     }
     if ($head->first_child('pictures')) {
 	my $i = 1;
 	foreach my $pic ($head->first_child('pictures')->children('picture')) {
 	    my $src = $pic->{'att'}->{'src'};
+	    my $notelang = $pic->{'att'}->{'lang'} || 'da';
 	    if (-e "../fdirs/$fhandle/$src") {
-		$sthpicture->execute($longdid,$pic->xml_string,$src,$i++);
+		$sthpicture->execute($longdid,$pic->xml_string,$src,$notelang,$i++);
 	    } else {
 		print STDERR "Image $src for $longdid not found.\n";
 	    }
@@ -170,7 +172,7 @@ sub doDepends {
 sub create {
     $dbh->do(q/CREATE SEQUENCE seq_digte_did INCREMENT 1 START 1/);
     $dbh->do(q/CREATE SEQUENCE seq_digte_longdid INCREMENT 1 START 1/);
-    $dbh->do(q(CREATE TABLE digte ( 
+    $dbh->do(q|CREATE TABLE digte ( 
               did int NOT NULL PRIMARY KEY, 
 	      parentdid int REFERENCES digte(did),
               longdid varchar(40) NOT NULL UNIQUE,
@@ -189,11 +191,13 @@ sub create {
               layouttype char(5) default 'digt', -- enum('prosa','digt') default 'digt',
 	      createtime INT NOT NULL,
 	      fulltext_index_column tsvector,
-	      lang char(2))
-	      ));
+	      lang char(2),
+	      country char(2))|);
+
  $dbh->do(q/CREATE INDEX digte_longdid ON digte(longdid)/);
  $dbh->do(q/CREATE INDEX digte_fhandle ON digte(fhandle)/);
  $dbh->do(q/CREATE INDEX digte_lang ON digte(lang)/);
+ $dbh->do(q/CREATE INDEX digte_country ON digte(country)/);
  $dbh->do(q/CREATE INDEX digte_type ON digte(type)/);
  $dbh->do(q/CREATE INDEX digte_createtime ON digte(createtime)/);
  $dbh->do(q/CREATE INDEX digte_vid ON digte(vid)/);
@@ -206,6 +210,7 @@ sub create {
 	CREATE TABLE textnotes ( 
               longdid varchar(40) NOT NULL REFERENCES digte(longdid) ON DELETE CASCADE,
 	      note text NOT NULL,
+	      lang char(2) NOT NULL,
 	      orderby int NOT NULL)
 	    ));
    $dbh->do(q/CREATE INDEX textnotes_longdid ON textnotes(longdid)/);
@@ -215,6 +220,7 @@ sub create {
 	CREATE TABLE textpictures ( 
               longdid varchar(40) NOT NULL REFERENCES digte(longdid) ON DELETE CASCADE,
 	      caption text,
+	      lang char(2) NOT NULL,
 	      url varchar(200) NOT NULL,
 	      orderby int NOT NULL)
 	    ));
@@ -230,6 +236,13 @@ sub create {
    $dbh->do(q/CREATE INDEX textxkeyword_longdid ON textxkeyword(longdid)/);
    $dbh->do(q/CREATE INDEX textxkeyword_keyword ON textxkeyword(keyword)/);
    $dbh->do(q/GRANT SELECT ON TABLE textxkeyword TO public/);
+
+   $dbh->do(q(
+	CREATE TABLE digthits /* IF NOT EXISTS */ ( 
+              longdid varchar(40) NOT NULL,
+	      hits int,
+	      lasttime int)
+	    ));
 
 }
 

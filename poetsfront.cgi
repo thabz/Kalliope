@@ -26,52 +26,52 @@ use Kalliope::Page ();
 use Kalliope::Web ();
 use CGI ();
 
-my $LA = CGI::url_param('sprog') || 'dk';
+my $country = CGI::url_param('cn') || 'dk';
 
 my @crumbs;
 push @crumbs,[_('Digtere'),''];
 
 my $page = new Kalliope::Page (
 	title => _('Digtere'),
-	lang => $LA,
+	lang => $country,
 	crumbs => \@crumbs,
     pagegroup => 'poets',
 	nosubmenu => 1,
     thumb => 'gfx/icons/works-h70.gif',
     page => 'worksfront'); 
 
-$page->addFrontMenu(&front($LA));
+$page->addFrontMenu(&front($country));
 $page->print;
 
 sub front {
-    my ($LA) = @_;
+    my ($country) = @_;
 
     my @menuStruct = ({ 
-        url => "poets.cgi?list=az&sprog=$LA", 
+        url => "poets.cgi?list=az&cn=$country", 
 	    title => _('Digtere efter navn'), 
 	    status => 1,
         desc => _("Oversigt over digtere ordnet alfabetisk efter navn."),
         icon => 'gfx/icons/works-w96.png'
     },{
-        url => "poets.cgi?list=19&sprog=$LA", 
+        url => "poets.cgi?list=19&cn=$country", 
 	    title => _('Digtere efter år'), 
 	    status => 1, 
         desc => _("Digtere ordnet kronologisk efter fødeår."),
         icon => 'gfx/icons/works-w96.png'
     },{
-	    url => "poets.cgi?list=pics&sprog=$LA", 
+	    url => "poets.cgi?list=pics&cn=$country", 
 	    title => _('Digtere efter udseende'), 
 	    status => 1,
         desc => _("En oversigt med portrætter af alle digtere."),
         icon => 'gfx/icons/portrait-w96.png',
     },{
-	    url => "poets.cgi?list=flittige&sprog=$LA", 
+	    url => "poets.cgi?list=flittige&cn=$country", 
 	    title => _('Flittigste digtere'), 
 	    status => 1,
         desc => _("Digtere ordnet efter hvor rigt repræsenteret de er i Kalliope."),
         icon => 'gfx/icons/works-w96.png'
     },{
-	    url => "poets.cgi?list=pop&sprog=$LA", 
+	    url => "poets.cgi?list=pop&cn=$country", 
 	    title => _('Mest populære digtere'), 
 	    desc => _('En oversigt over de mest læste digtere i Kalliope.'),
 	    status => 1,

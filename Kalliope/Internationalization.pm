@@ -232,8 +232,8 @@ $translation{'de-5f4cadaa2ba0cbd19dcf7619c2705c29'} = "";
 $translation{'fr-5f4cadaa2ba0cbd19dcf7619c2705c29'} = "";
 $translation{'it-5f4cadaa2ba0cbd19dcf7619c2705c29'} = "";
 # ./biografi.cgi
-$translation{'Der er endnu ikke forfattet en biografi for \%s'} = "7f1cab0bb69799279ef0f344e2803d2a";
-$translation{'da-7f1cab0bb69799279ef0f344e2803d2a'} = 'Der er endnu ikke forfattet en biografi for \%s';
+$translation{'Der er endnu ikke forfattet en biografi for %s'} = "7f1cab0bb69799279ef0f344e2803d2a";
+$translation{'da-7f1cab0bb69799279ef0f344e2803d2a'} = 'Der er endnu ikke forfattet en biografi for %s';
 $translation{'en-7f1cab0bb69799279ef0f344e2803d2a'} = 'There no biography for %s';
 $translation{'de-7f1cab0bb69799279ef0f344e2803d2a'} = "";
 $translation{'fr-7f1cab0bb69799279ef0f344e2803d2a'} = "";
@@ -519,22 +519,22 @@ $translation{'de-debf275b779557973252770283f45436'} = "";
 $translation{'fr-debf275b779557973252770283f45436'} = "";
 $translation{'it-debf275b779557973252770283f45436'} = "";
 # ./Kalliope/Page.pm
-$translation{'Hovsa! Der gik det galt! Siden kunne ikke findes.<br><br>Send en mail til <a href=\"mailto:jesper\@kalliope.org\">jesper\@kalliope.org</a>, hvis du mener, at jeg har lavet en fejl.'} = "c1fe8f4607eb97f61b863a538019a274";
-$translation{'da-c1fe8f4607eb97f61b863a538019a274'} = 'Hovsa! Der gik det galt! Siden kunne ikke findes.<br><br>Send en mail til <a href=\"mailto:jesper\@kalliope.org\">jesper\@kalliope.org</a>, hvis du mener, at jeg har lavet en fejl.';
+$translation{'Hovsa! Der gik det galt! Siden kunne ikke findes.<br><br>Send en mail til <a href="mailto:jesper\@kalliope.org">jesper\@kalliope.org</a>, hvis du mener, at jeg har lavet en fejl.'} = "c1fe8f4607eb97f61b863a538019a274";
+$translation{'da-c1fe8f4607eb97f61b863a538019a274'} = 'Hovsa! Der gik det galt! Siden kunne ikke findes.<br><br>Send en mail til <a href="mailto:jesper\@kalliope.org">jesper\@kalliope.org</a>, hvis du mener, at jeg har lavet en fejl.';
 $translation{'en-c1fe8f4607eb97f61b863a538019a274'} = "";
 $translation{'de-c1fe8f4607eb97f61b863a538019a274'} = "";
 $translation{'fr-c1fe8f4607eb97f61b863a538019a274'} = "";
 $translation{'it-c1fe8f4607eb97f61b863a538019a274'} = "";
 # ./Kalliope/Date.pm
-$translation{'Idag %s:%s'} = "07d41d9577c4abc42d71089692983343";
-$translation{'da-07d41d9577c4abc42d71089692983343'} = 'Idag %s:%s';
+$translation{'I dag %s:%s'} = "07d41d9577c4abc42d71089692983343";
+$translation{'da-07d41d9577c4abc42d71089692983343'} = 'I dag %s:%s';
 $translation{'en-07d41d9577c4abc42d71089692983343'} = "Today %s:%s";
 $translation{'de-07d41d9577c4abc42d71089692983343'} = "";
 $translation{'fr-07d41d9577c4abc42d71089692983343'} = "";
 $translation{'it-07d41d9577c4abc42d71089692983343'} = "";
 # ./Kalliope/Date.pm
-$translation{'Igår %s:%s'} = "cca280efd23ed9ba76209ec45d5c1387";
-$translation{'da-cca280efd23ed9ba76209ec45d5c1387'} = 'Igår %s:%s';
+$translation{'I går %s:%s'} = "cca280efd23ed9ba76209ec45d5c1387";
+$translation{'da-cca280efd23ed9ba76209ec45d5c1387'} = 'I går %s:%s';
 $translation{'en-cca280efd23ed9ba76209ec45d5c1387'} = "Yesterday %s:%s";
 $translation{'de-cca280efd23ed9ba76209ec45d5c1387'} = "";
 $translation{'fr-cca280efd23ed9ba76209ec45d5c1387'} = "";
@@ -1101,7 +1101,7 @@ $translation{'fr-f8ce85a2627340d7a9b5941c796033ca'} = "";
 $translation{'it-f8ce85a2627340d7a9b5941c796033ca'} = "";
 # ./Kalliope/Page/Print.pm
 $translation{'Udskrift af <tt>%s</tt> foretaget %s. Denne tekst må frit redistribueres.'} = "5d6404e06126ff596a4e574a804727bc";
-$translation{'da-5d6404e06126ff596a4e574a804727bc'} = 'Udskrift af <tt>\%s</tt> foretaget \%s. Denne tekst må frit redistribueres.';
+$translation{'da-5d6404e06126ff596a4e574a804727bc'} = 'Udskrift af <tt>%s</tt> foretaget %s. Denne tekst må frit redistribueres.';
 $translation{'en-5d6404e06126ff596a4e574a804727bc'} = "Print of <tt>%s</tt> done %s. This text may be freely redistributed.";
 $translation{'de-5d6404e06126ff596a4e574a804727bc'} = "";
 $translation{'fr-5d6404e06126ff596a4e574a804727bc'} = "";
@@ -1282,22 +1282,22 @@ $translation{'de-ac4b63e5249d65eeabc5ac17bc8fa0f5'} = "";
 $translation{'fr-ac4b63e5249d65eeabc5ac17bc8fa0f5'} = "";
 $translation{'it-ac4b63e5249d65eeabc5ac17bc8fa0f5'} = "";
 # ./Kalliope/Person.pm
-$translation{'\%ss bibliografi'} = "0ea99cc800d739898973254e13dd1884";
+$translation{'%ss bibliografi'} = "0ea99cc800d739898973254e13dd1884";
 $translation{'da-0ea99cc800d739898973254e13dd1884'} = '%ss bibliografi';
 $translation{'en-0ea99cc800d739898973254e13dd1884'} = '%ss biography';
 $translation{'de-0ea99cc800d739898973254e13dd1884'} = '';
 $translation{'fr-0ea99cc800d739898973254e13dd1884'} = "";
 $translation{'it-0ea99cc800d739898973254e13dd1884'} = "";
 # ./ffront.cgi,./Kalliope/Person.pm
-$translation{'\%ss prosatekster'} = "3dd7a915749fd08ed919bb88d4276af3";
-$translation{'da-3dd7a915749fd08ed919bb88d4276af3'} = '\%ss prosatekster';
+$translation{'%ss prosatekster'} = "3dd7a915749fd08ed919bb88d4276af3";
+$translation{'da-3dd7a915749fd08ed919bb88d4276af3'} = '%ss prosatekster';
 $translation{'en-3dd7a915749fd08ed919bb88d4276af3'} = 'The prose by %s';
 $translation{'de-3dd7a915749fd08ed919bb88d4276af3'} = "";
 $translation{'fr-3dd7a915749fd08ed919bb88d4276af3'} = "";
 $translation{'it-3dd7a915749fd08ed919bb88d4276af3'} = "";
 # ./ffront.cgi,./Kalliope/Person.pm
 $translation{'%ss samlede poetiske værker'} = "7929fd7c9f070d5903c049a936012cf6";
-$translation{'da-7929fd7c9f070d5903c049a936012cf6'} = '\%ss samlede poetiske værker';
+$translation{'da-7929fd7c9f070d5903c049a936012cf6'} = '%ss samlede poetiske værker';
 $translation{'en-7929fd7c9f070d5903c049a936012cf6'} = 'The collected poetical work of %s';
 $translation{'de-7929fd7c9f070d5903c049a936012cf6'} = "";
 $translation{'fr-7929fd7c9f070d5903c049a936012cf6'} = "";

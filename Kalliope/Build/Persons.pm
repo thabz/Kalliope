@@ -39,6 +39,7 @@ sub parse {
 	my $p;
 	my $fhandle = $person->{'att'}->{'id'};
 	$p->{'lang'} = $person->{'att'}->{'lang'};
+	$p->{'country'} = $person->{'att'}->{'country'};
 	$p->{'type'} = $person->{'att'}->{'type'};
 	$p->{'fhandle'} = $fhandle;
 
@@ -115,8 +116,8 @@ sub create {
     detaljer text DEFAULT '',
     foedt varchar(8), 
     doed varchar(8), 
-    sprog char(2), 
-    land text,
+    sprog char(2) NOT NULL, 
+    land char(2) NOT NULL,
     /* Beholdning */
     cols int,
     thumb int,
@@ -134,7 +135,7 @@ sub create {
     fulltext_index_column tsvector,
     workslist text)
 	");
-	$dbh->do(q/CREATE INDEX fnavne_textsearch_idx ON fnavne USING gin(fulltext_index_column)/);
+    $dbh->do(q/CREATE INDEX fnavne_textsearch_idx ON fnavne USING gin(fulltext_index_column)/);
     $dbh->do(q/GRANT SELECT ON TABLE fnavne TO public/);
 }
 
@@ -147,7 +148,7 @@ sub insert {
     my %persons = @_;
 
     my %fhandle2fid;
-    my $rc = $dbh->prepare("INSERT INTO fnavne (fhandle,fornavn,efternavn,foedt,doed,sprog,cols,thumb,pics,biotext,bio,links,sekundaer,primaer,vaerker,vers,prosa,detaljer,type,workslist) VALUES (?,?,?,?, ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    my $rc = $dbh->prepare("INSERT INTO fnavne (fhandle,fornavn,efternavn,foedt,doed,sprog,land,cols,thumb,pics,biotext,bio,links,sekundaer,primaer,vaerker,vers,prosa,detaljer,type,workslist) VALUES (?,?,?,?, ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
     
     foreach my $fhandle (keys %persons) { 
 	my $person = $persons{$fhandle};
@@ -211,7 +212,7 @@ sub insert {
 	    $fcols+=2;
 	}   
 
-        $rc->execute($fhandle,$person->{'firstname'},$person->{'lastname'},$person->{'born'} || '',$person->{'dead'} || '',$person->{'lang'},$fcols,$fthumb,$fpics,$biotext,$fbio,$flinks,$fsekundaer,$fprimaer,$fvaerkerindhold,$fvaerker,$fprosa,$person->{'detaljer'},$person->{'type'} || '',$person->{'workslist'});
+        $rc->execute($fhandle,$person->{'firstname'},$person->{'lastname'},$person->{'born'} || '',$person->{'dead'} || '',$person->{'lang'}, $person->{'country'},$fcols,$fthumb,$fpics,$biotext,$fbio,$flinks,$fsekundaer,$fprimaer,$fvaerkerindhold,$fvaerker,$fprosa,$person->{'detaljer'},$person->{'type'} || '',$person->{'workslist'});
 	foreach (@keys) {
 #	    &insertkeywordrelation($_,$lastid,'biografi');
 	}

@@ -34,38 +34,38 @@ my $dbh = Kalliope::DB->connect;
 
 my $mode = url_param('mode') || 0;
 my $forbogstav = url_param('forbogstav') || 'a';
-my $LA = url_param('sprog') || 'dk';
+my $country = url_param('cn') || 'dk';
 
 my $title = (_('Ordnet efter førstelinie'),_('Ordnet efter digttitel'),_('Mest populære'))[$mode];
 my $page = ('poem1stlines','poemtitles','poempopular')[$mode];
 my $HTML;
 
 my @crumbs;
-push @crumbs,[_('Digte'),"poemsfront.cgi?sprog=$LA"];
+push @crumbs,[_('Digte'),"poemsfront.cgi?cn=$country"];
 push @crumbs,[$title,''];
 push @crumbs,[$forbogstav,''] unless $mode == 2;
 
 my $page = new Kalliope::Page (
 	title => _('Digte'),
-	titleLink => "poemsfront.cgi?sprog=$LA",
+	titleLink => "poemsfront.cgi?cn=$country",
 	subtitle => $title,
 	pagegroup => 'poemlist',
 	page => $page,
 	icon => 'poem-turkis',
-        lang => $LA,
+        lang => $country,
 	crumbs => \@crumbs );
 
 my $sth;
 if ($mode == 1) {
-    $sth = $dbh->prepare("SELECT tititel as titel,d.fhandle,d.longdid,fornavn,efternavn FROM digte as d, fnavne as f, forbogstaver as b WHERE b.forbogstav = ? AND b.type = ? AND b.lang = ? AND b.longdid = d.longdid AND d.fhandle = f.fhandle ");
+    $sth = $dbh->prepare("SELECT tititel as titel,d.fhandle,d.longdid,fornavn,efternavn FROM digte as d, fnavne as f, forbogstaver as b WHERE b.forbogstav = ? AND b.type = ? AND b.country = ? AND b.longdid = d.longdid AND d.fhandle = f.fhandle ");
 } elsif ($mode == 0) {
-    $sth = $dbh->prepare("SELECT foerstelinie,d.fhandle,d.longdid,fornavn,efternavn FROM digte as d, fnavne as f, forbogstaver as b WHERE b.forbogstav = ? AND b.type = ? AND b.lang = ? AND b.longdid = d.longdid AND d.fhandle = f.fhandle");
+    $sth = $dbh->prepare("SELECT foerstelinie,d.fhandle,d.longdid,fornavn,efternavn FROM digte as d, fnavne as f, forbogstaver as b WHERE b.forbogstav = ? AND b.type = ? AND b.country = ? AND b.longdid = d.longdid AND d.fhandle = f.fhandle");
 } elsif ($mode == 2) {
     goto POPU;
 }
 
 my @f;
-$sth->execute($forbogstav, $mode ? 't' : 'f', $LA);
+$sth->execute($forbogstav, $mode ? 't' : 'f', $country);
 unless ($sth->rows) {
     $HTML .= _("Vælg begyndelsesbogstav nedenfor");
 } else {
@@ -85,8 +85,8 @@ unless ($sth->rows) {
 }
 
 # Bogstav menuen
-$sth = $dbh->prepare("SELECT DISTINCT forbogstav FROM forbogstaver WHERE type = ? AND lang = ?" );
-$sth->execute($mode?'t':'f',$LA);
+$sth = $dbh->prepare("SELECT DISTINCT forbogstav FROM forbogstaver WHERE type = ? AND country = ?" );
+$sth->execute($mode ? 't': 'f', $country);
 
 my $i = 0;
 @f = ();
@@ -100,7 +100,7 @@ foreach my  $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
     my $letter = $f->{'forbogstav'};
     my $class = ($letter eq $forbogstav) ? 'framed' : '';
     my $letterForDisplay = $letter eq '.' ? 'Tegn' : $letter;
-    $minimenu .= qq|<A CLASS="$class" TITLE="|._("Digte som begynder med %s",$letter).qq|" HREF="klines.pl?mode=$mode&forbogstav=$letter&sprog=$LA">|;
+    $minimenu .= qq|<A CLASS="$class" TITLE="|._("Digte som begynder med %s",$letter).qq|" HREF="klines.pl?mode=$mode&forbogstav=$letter&cn=$country">|;
     $minimenu .= qq|$letterForDisplay</A> |; 
 }
 
@@ -116,8 +116,8 @@ exit 1;
 
 POPU:
 
-$sth = $dbh->prepare("SELECT fornavn, efternavn, fnavne.fhandle, digte.longdid, digte.linktitel as titel, hits, lasttime FROM digthits,fnavne,digte WHERE digthits.longdid = digte.longdid AND digte.fhandle = fnavne.fhandle AND fnavne.sprog=? ORDER BY hits DESC LIMIT 20");
-$sth->execute($LA);
+$sth = $dbh->prepare("SELECT fornavn, efternavn, fnavne.fhandle, digte.longdid, digte.linktitel as titel, hits, lasttime FROM digthits,fnavne,digte WHERE digthits.longdid = digte.longdid AND digte.fhandle = fnavne.fhandle AND fnavne.land = ? ORDER BY hits DESC LIMIT 20");
+$sth->execute($country);
 
 my $printed;
 $HTML = '<TABLE CLASS="oversigt" WIDTH="100%" CELLSPACING=0>';

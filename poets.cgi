@@ -31,7 +31,7 @@ use Kalliope::Sort ();
 use Kalliope::Person ();
 use Kalliope::PersonHome ();
 
-my $LA = CGI::url_param('sprog') || 'dk';
+my $country = CGI::url_param('cn') || 'dk';
 my $limit = CGI::url_param('limit') || '10';
 
 my %pageTypes = (
@@ -72,26 +72,26 @@ if ($listType ne 'az' && $listType ne '19' &&
 my $struct = $pageTypes{$listType};
 
 my @crumbs;
-push @crumbs,[_('Digtere'),"poetsfront.cgi?sprog=$LA"];
+push @crumbs,[_('Digtere'),"poetsfront.cgi?cn=$country"];
 push @crumbs,[$struct->{'crumbtitle'},''];
 
 my $page = new Kalliope::Page (
     title => _('Digtere'),
-    titleLink => "poetsfront.cgi?sprog=$LA",
+    titleLink => "poetsfront.cgi?cn=$country",
     subtitle => $struct->{'crumbtitle'},
-    lang => $LA,
-	crumbs => \@crumbs,
+    country => $country,
+    crumbs => \@crumbs,
     pagegroup => 'poets',
-	thumb => 'gfx/icons/poet-h70.gif',
+    thumb => 'gfx/icons/poet-h70.gif',
     page => $struct->{'page'}); 
 
 my $function = $struct->{'function'};
 
 if ($function eq 'listaz' || $function eq 'list19') {
-    my @blocks = &{$struct->{'function'}}($LA,$limit);
+    my @blocks = &{$struct->{'function'}}($country,$limit);
     $page->addDoubleColumn(@blocks);
 } else {
-    my ($HTML,$endHTML) = &{$struct->{'function'}}($LA,$limit);
+    my ($HTML,$endHTML) = &{$struct->{'function'}}($country,$limit);
     $page->addBox(content =>  $HTML,
     		      end => $endHTML);
 }
@@ -100,8 +100,8 @@ if ($function eq 'listaz' || $function eq 'list19') {
 $page->print;
 
 sub listaz {
-    my $LA = shift;
-    my @persons = Kalliope::PersonHome::findByLang($LA);
+    my $country = shift;
+    my @persons = Kalliope::PersonHome::findByCountry($country);
     my @f = grep { $_->getType eq 'poet'} @persons;
     map {$_->{'sort'} = $_->efternavn } @f;
 
@@ -136,8 +136,8 @@ sub listaz {
 }
 
 sub list19 {
-    my $LA = shift;
-    my @persons = grep {$_->getType eq 'poet'} Kalliope::PersonHome::findByLang($LA);
+    my $country = shift;
+    my @persons = grep {$_->getType eq 'poet'} Kalliope::PersonHome::findByCountry($country);
     my @knownYear = grep {$_->yearBorn ne '' && $_->yearBorn ne '?'} @persons;
     my @unknownYear = grep {$_->yearBorn eq '' || $_->yearBorn eq '?'} @persons;
 
@@ -174,13 +174,13 @@ sub list19 {
 }
 
 sub listpics {
-    my $LA = shift;
+    my $country = shift;
     my $HTML;
     my @poets;
 
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT fhandle FROM fnavne WHERE type='poet' AND sprog=? AND foedt != '' AND foedt != '?' AND thumb = 1 ORDER BY efternavn,fornavn");
-    $sth->execute($LA);
+    my $sth = $dbh->prepare("SELECT fhandle FROM fnavne WHERE type='poet' AND land = ? AND foedt != '' AND foedt != '?' AND thumb = 1 ORDER BY efternavn,fornavn");
+    $sth->execute($country);
     while (my $fid = $sth->fetchrow_array) {
 	my $poet = Kalliope::PersonHome::findByFhandle($fid);
 	push @poets, $poet;
@@ -205,10 +205,10 @@ sub listpics {
 }
 
 sub listflittige {
-    my ($LA,$limit) = @_;
+    my ($country,$limit) = @_;
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("select fnavne.fhandle, count(longdid) as val from fnavne, digte where foedt != '' AND digte.fhandle = fnavne.fhandle and fnavne.sprog=? and digte.type = 'poem' group by fnavne.fhandle order by val desc ".($limit != -1 ? "LIMIT $limit" : ''));
-    $sth->execute($LA);
+    my $sth = $dbh->prepare("select fnavne.fhandle, count(longdid) as val from fnavne, digte where foedt != '' AND digte.fhandle = fnavne.fhandle and fnavne.land = ? and digte.type = 'poem' group by fnavne.fhandle order by val desc ".($limit != -1 ? "LIMIT $limit" : ''));
+    $sth->execute($country);
 
     my $HTML;
     my $total;
@@ -227,7 +227,7 @@ sub listflittige {
 
     my $endHTML = '';
     if ($limit != -1) {
-	    $endHTML = qq|<A class="more" HREF="poets.cgi?list=flittige&limit=-1&sprog=$LA">|._("Se hele listen...").qq|</A>|;
+	    $endHTML = qq|<A class="more" HREF="poets.cgi?list=flittige&limit=-1&cn=$country">|._("Se hele listen...").qq|</A>|;
     } else {
 	    $HTML .= "<TR><TD></TD><TD><B>"._("Total")."</B></TD><TD ALIGN=right>$total</TD></TR>";
     }
@@ -236,10 +236,10 @@ sub listflittige {
 }
 
 sub listpop {
-    my ($LA,$limit) = @_;
+    my ($country,$limit) = @_;
     my $dbh = Kalliope::DB->connect;
-    my $sth = $dbh->prepare("SELECT f.fornavn, f.efternavn, f.foedt, f.doed, d.fhandle, sum(hits) as hitssum, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f WHERE dh.longdid = d.longdid AND d.fhandle = f.fhandle AND f.sprog = ? AND f.type != 'collection' GROUP BY d.fhandle,f.fornavn,f.efternavn,f.foedt,f.doed ORDER BY hitssum DESC ".($limit != -1 ? "LIMIT $limit" : ''));
-    $sth->execute($LA);
+    my $sth = $dbh->prepare("SELECT f.fornavn, f.efternavn, f.foedt, f.doed, d.fhandle, sum(hits) as hitssum, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f WHERE dh.longdid = d.longdid AND d.fhandle = f.fhandle AND f.land = ? AND f.type != 'collection' GROUP BY d.fhandle,f.fornavn,f.efternavn,f.foedt,f.doed ORDER BY hitssum DESC ".($limit != -1 ? "LIMIT $limit" : ''));
+    $sth->execute($country);
 
     my $i = 1;
     my $total;
@@ -255,7 +255,7 @@ sub listpop {
 	    $total += $h->{'hitssum'};
     }
     if ($limit != -1) {
-        $endHTML = qq|<A class="more" HREF="poets.cgi?list=pop&limit=-1&sprog=$LA">|._("Se hele listen...").qq|</A>|;
+        $endHTML = qq|<A class="more" HREF="poets.cgi?list=pop&limit=-1&cn=$country">|._("Se hele listen...").qq|</A>|;
     } else {
         $HTML .= qq|<TR><TD></TD><TD><B>Total</B></TD><TD ALIGN="right">$total</TD></TR>|;
     }

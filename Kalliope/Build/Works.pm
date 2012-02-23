@@ -55,9 +55,9 @@ sub clean {
 
 sub insert {
     my @changed = @_;
-    my $sthwork = $dbh->prepare("INSERT INTO vaerker (vid,fhandle,vhandle,titel,underoverskrift,aar,type,hascontent,quality,lang,status,cvstimestamp,dirty) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,1)");
-    my $sthnote = $dbh->prepare("INSERT INTO worknotes (vid,note,orderby) VALUES (?,?,?)");
-    my $sthpicture = $dbh->prepare("INSERT INTO workpictures (vid,caption,url,orderby,type) VALUES (?,?,?,?,?)");
+    my $sthwork = $dbh->prepare("INSERT INTO vaerker (vid,fhandle,vhandle,titel,underoverskrift,aar,type,hascontent,quality,lang,country,status,cvstimestamp,dirty) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,1)");
+    my $sthnote = $dbh->prepare("INSERT INTO worknotes (vid,note,lang,orderby) VALUES (?,?,?,?)");
+    my $sthpicture = $dbh->prepare("INSERT INTO workpictures (vid,caption,url,orderby,lang,type) VALUES (?,?,?,?,?,?)");
     my $sthkeyword = $dbh->prepare("INSERT INTO workxkeyword (vid,keyword) VALUES (?,?)");
     foreach my $item (@changed) {
 	my ($fhandle,$vhandle) = ($item->{'fhandle'},$item->{'vhandle'});
@@ -70,6 +70,7 @@ sub insert {
 	my $kalliopework = $twig->root;
 	my $status = $kalliopework->{'att'}->{'status'} || 'incomplete';
 	my $type = $kalliopework->{'att'}->{'type'} || 'poetry';
+	my $worklang = $kalliopework->{'att'}->{'lang'} || $person->lang();
 	my $workhead = $kalliopework->first_child('workhead');
 	my $title = $workhead->first_child('title')->text;
 	my $subtitle = $workhead->first_child('subtitle') ? 
@@ -80,20 +81,22 @@ sub insert {
 	my $quality =  $workhead->first_child('quality') ? $workhead->first_child('quality')->text : '';
 	my $hascontent = $kalliopework->first_child('workbody') ? 'yes' : 'no';
 	$sthwork->execute($vid,$fhandle,$vhandle,$title,$subtitle,$year,
-		$type,$hascontent,$quality,$person->lang,$status,
+		$type,$hascontent,$quality,$worklang,$person->country(),$status,
                 Kalliope::Date::cvsTimestampToUNIX($timestamptxt));
 	if ($workhead->first_child('notes')) {
 	   my $i = 1;
            foreach my $note ($workhead->first_child('notes')->children('note')) {
-   	       $sthnote->execute($vid,$note->sprint(1),$i++);
+	       my $notelang = $note->{'att'}->{'lang'} || 'da';
+   	       $sthnote->execute($vid,$note->sprint(1),$notelang,$i++);
   	   }
 	}
 	if ($workhead->first_child('pictures')) {
 	   my $i = 1;
            foreach my $pic ($workhead->first_child('pictures')->children('picture')) {
+	       my $notelang = $pic->{'att'}->{'lang'} || 'da';
 	       my $src = $pic->{'att'}->{'src'};
 	       my $type = $pic->{'att'}->{'type'};
-   	       $sthpicture->execute($vid,$pic->sprint(1),$src,$i++,$type);
+   	       $sthpicture->execute($vid,$pic->sprint(1),$src,$i++,$notelang,$type);
   	   }
 	}
 	if ($workhead->first_child('keywords')) {
@@ -128,13 +131,15 @@ sub create {
               hascontent char(3), --enum('yes','no'),
 	      cvstimestamp int,
 	      quality varchar(100), /* set('korrektur1','korrektur2','korrektur3', 'kilde','side'), */
-	      lang char(2),
+	      lang char(2) NOT NULL,
+	      country char(2) NOT NULL,
 	      fulltext_index_column tsvector,
 	      dirty int)
 	   ));
  $dbh->do(q/CREATE INDEX vaerker_fhandle ON vaerker(fhandle)/);
  $dbh->do(q/CREATE INDEX vaerker_vhandle ON vaerker(vhandle)/);
  $dbh->do(q/CREATE INDEX vaerker_lang ON vaerker(lang)/);
+ $dbh->do(q/CREATE INDEX vaerker_country ON vaerker(country)/);
  $dbh->do(q/CREATE INDEX vaerker_type ON vaerker(type)/);
  $dbh->do(q/CREATE INDEX vaerker_textsearch_idx ON vaerker USING gin(fulltext_index_column)/);
  $dbh->do(q/GRANT SELECT ON TABLE vaerker TO public/);
@@ -143,6 +148,7 @@ sub create {
 	CREATE TABLE worknotes ( 
               vid varchar(80) NOT NULL REFERENCES vaerker(vid) ON DELETE CASCADE,
 	      note text NOT NULL,
+	      lang char(2) NOT NULL,
 	      orderby int NOT NULL)
 	    /);
  $dbh->do(q/CREATE INDEX worknotes_vid ON worknotes(vid)/);
@@ -153,6 +159,7 @@ sub create {
               vid varchar(80) NOT NULL REFERENCES vaerker(vid) ON DELETE CASCADE,
 	      caption text NOT NULL,
 	      type varchar(20),
+	      lang char(2) NOT NULL,
 	      url varchar(200) NOT NULL,
 	      orderby int NOT NULL)
 	    ));

@@ -2,28 +2,28 @@
 
 <persons>
 
-<person id="anonym1600uk" lang="gb" type="collection">
+<person id="anonym1600uk" country="gb" lang="en" type="collection">
   <name>
     <firstname>Anonymous, 17th Century</firstname>
   </name>
   <works>andre</works>
 </person>
 
-<person id="anonym1800dk" lang="dk" type="collection">
+<person id="anonym1800dk" country="dk" lang="da" type="collection">
   <name>
       <firstname>Anonym, 1800-tallet</firstname>
   </name>
   <works>drikke,andre</works>
 </person>
 
-<person id="anonym1500dk" lang="dk" type="collection">
+<person id="anonym1500dk" country="dk" lang="da" type="collection">
   <name>
       <firstname>Anonym, 1500-tallet</firstname>
   </name>
   <works>andre</works>
 </person>
 
-<person id="vogelweide" lang="de" type="poet">
+<person id="vogelweide" country="de" lang="de" type="poet">
   <name>
     <firstname>Walther von der</firstname>
     <lastname>Vogelweide</lastname>
@@ -39,7 +39,7 @@
   <works>andre</works>
 </person>
 
-<person id="luther" lang="de" type="poet">
+<person id="luther" country="de" lang="de" type="poet">
   <name>
     <firstname>Martin</firstname>
     <lastname>Luther</lastname>
@@ -57,7 +57,7 @@
   <works>salmer,andre</works>
 </person>
 
-<person id="opitz" lang="de" type="poet">
+<person id="opitz" country="de" lang="de" type="poet">
   <name>
     <firstname>Martin</firstname>
     <lastname>Opitz</lastname>
@@ -76,7 +76,7 @@
   <works>andre</works>
 </person>
 
-<person id="gerhardt" lang="de" type="poet">
+<person id="gerhardt" country="de" lang="de" type="poet">
   <name>
     <firstname>Paul</firstname>
     <lastname>Gerhardt</lastname>
@@ -94,7 +94,7 @@
   <works>andre</works>
 </person>
 
-<person id="voigtlaender" lang="de" type="poet">
+<person id="voigtlaender" country="de" lang="de" type="poet">
   <name>
     <firstname>Gabriel</firstname>
     <lastname>Voigtländer</lastname>
@@ -110,7 +110,7 @@
   <works>1642,andre</works>
 </person>
 
-<person id="rist" lang="de" type="poet">
+<person id="rist" country="de" lang="de" type="poet">
   <name>
     <firstname>Johan</firstname>
     <lastname>Rist</lastname>
@@ -128,7 +128,7 @@
   <works>1634,1642,1643,1651</works>
 </person>
 
-<person id="hegedorn" lang="de" type="poet">
+<person id="hegedorn" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich von</firstname>
     <lastname>Hagedorn</lastname>
@@ -145,7 +145,7 @@
   </period>
 </person>
 
-<person id="gellert" lang="de" type="poet">
+<person id="gellert" country="de" lang="de" type="poet">
   <name>
     <firstname>C.F.</firstname>
     <lastname>Gellert</lastname>
@@ -164,7 +164,7 @@
   <works>1746</works>
 </person>
 
-<person id="klopstock" lang="de" type="poet">
+<person id="klopstock" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich Gottlieb</firstname>
     <lastname>Klopstock</lastname>
@@ -182,7 +182,7 @@
   <works>1749,1758,1769,1771,1784,1787,andre</works>
 </person>
 
-<person id="lessing" lang="de" type="poet">
+<person id="lessing" country="de" lang="de" type="poet">
   <name>
     <firstname>Gotthold Ephraim</firstname>
     <lastname>Lessing</lastname>
@@ -200,7 +200,7 @@
   <works>1779,andre</works>
 </person>
 
-<person id="wieland" lang="de" type="poet">
+<person id="wieland" country="de" lang="de" type="poet">
   <name>
     <firstname>Christoph Martin</firstname>
     <lastname>Wieland</lastname>
@@ -218,7 +218,7 @@
   <works>1768,andre</works>
 </person>
 
-<person id="pfeffel" lang="de" type="poet">
+<person id="pfeffel" country="de" lang="de" type="poet">
   <name>
     <firstname>Gottlieb Konrad</firstname>
     <lastname>Pfeffel</lastname>
@@ -235,7 +235,7 @@
   </period>
 </person>
 
-<person id="claudius" lang="de" type="poet">
+<person id="claudius" country="de" lang="de" type="poet">
   <name>
     <firstname>Matthias</firstname>
     <lastname>Claudius</lastname>
@@ -253,7 +253,7 @@
   <works>andre</works>
 </person>
 
-<person id="herder" lang="de" type="poet">
+<person id="herder" country="de" lang="de" type="poet">
   <name>
     <firstname>Johann Gottfried von</firstname>
     <lastname>Herder</lastname>
@@ -271,7 +271,7 @@
   <works>1778,1778v,1779,andre</works>
 </person>
 
-<person id="holty" lang="de" type="poet">
+<person id="holty" country="de" lang="de" type="poet">
   <name>
     <firstname>L.H.C.</firstname>
     <lastname>Hölty</lastname>
@@ -291,7 +291,7 @@
 </person>
 
 
-<person id="goethe" lang="de" type="poet">
+<person id="goethe" country="de" lang="de" type="poet">
   <name>
     <firstname>Johann Wolfgang von</firstname>
     <lastname>Goethe</lastname>
@@ -309,7 +309,7 @@
   <works>1808,1819,1832,romi,andre</works>
 </person>
 
-<person id="schiller" lang="de" type="poet">
+<person id="schiller" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich von</firstname>
     <lastname>Schiller</lastname>
@@ -328,7 +328,7 @@
   <works>andre</works>
 </person>
 
-<person id="hoelderlin" lang="de" type="poet">
+<person id="hoelderlin" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich</firstname>
     <lastname>Hölderlin</lastname>
@@ -347,7 +347,7 @@
   <works>oedip,1804,1826,andre</works>
 </person>
 
-<person id="novalis" lang="de" type="poet">
+<person id="novalis" country="de" lang="de" type="poet">
   <name>
     <firstname></firstname>
     <lastname>Novalis</lastname>
@@ -366,7 +366,7 @@
   <works>1797,1798,1802,1802h</works>
 </person>
 
-<person id="tieck" lang="de" type="poet">
+<person id="tieck" country="de" lang="de" type="poet">
   <name>
     <firstname>Johann Ludwig</firstname>
     <lastname>Tieck</lastname>
@@ -384,7 +384,7 @@
   <works>andre</works>
 </person>
 
-<person id="chamisso" lang="de" type="poet">
+<person id="chamisso" country="de" lang="de" type="poet">
   <name>
     <firstname>Adelbert von</firstname>
     <lastname>Chamisso</lastname>
@@ -403,7 +403,7 @@
   <works>andre</works>
 </person>
 
-<person id="uhland" lang="de" type="poet">
+<person id="uhland" country="de" lang="de" type="poet">
   <name>
     <firstname>Ludwig</firstname>
     <lastname>Uhland</lastname>
@@ -421,7 +421,7 @@
   <works>andre</works>
 </person>
 
-<person id="rueckert" lang="de" type="poet">
+<person id="rueckert" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich</firstname>
     <lastname>Rückert</lastname>
@@ -440,7 +440,7 @@
   <works>1814,1844,1872,andre</works>
 </person>
 
-<person id="muellerw" lang="de" type="poet">
+<person id="muellerw" country="de" lang="de" type="poet">
   <name>
     <firstname>Wilhelm</firstname>
     <lastname>Müller</lastname>
@@ -458,7 +458,7 @@
   <works>andre</works>
 </person>
 
-<person id="heine" lang="de" type="poet">
+<person id="heine" country="de" lang="de" type="poet">
   <name>
     <firstname>Heinrich</firstname>
     <lastname>Heine</lastname>
@@ -476,7 +476,7 @@
   <works>1827,1844,deutsch,1851,1854,andre</works>
 </person>
 
-<person id="lenau" lang="de" type="poet">
+<person id="lenau" country="de" lang="de" type="poet">
   <name>
     <firstname>Nikolaus</firstname>
     <lastname>Lenau</lastname>
@@ -495,7 +495,7 @@
   <works>1822,1832,1835,1836,1837,1838,1840,1842,1843,blick,eitel,1844,andre</works>
 </person>
 
-<person id="morike" lang="de" type="poet">
+<person id="morike" country="de" lang="de" type="poet">
   <name>
     <firstname>Eduard</firstname>
     <lastname>Mörike</lastname>
@@ -513,7 +513,7 @@
   <works>1838,1839,1840,1844,1846,andre</works>
 </person>
 
-<person id="freiligrath" lang="de" type="poet">
+<person id="freiligrath" country="de" lang="de" type="poet">
   <name>
     <firstname>Ferdinand</firstname>
     <lastname>Freiligrath</lastname>
@@ -532,7 +532,7 @@
   <works>1838,1844,1846,1849,1871,andre</works>
 </person>
 
-<person id="nietzsche" lang="de" type="poet">
+<person id="nietzsche" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich</firstname>
     <lastname>Nietzsche</lastname>
@@ -551,7 +551,7 @@
   <works>1888</works>
 </person>
 
-<person id="morgenstern" lang="de" type="poet">
+<person id="morgenstern" country="de" lang="de" type="poet">
   <name>
     <firstname>Christian</firstname>
     <lastname>Morgenstern</lastname>
@@ -569,7 +569,7 @@
   <works>1895,1898,1900,1905,1906,1910,1910a,1911,1914,1916,1920,1918,1919,1928</works>
 </person>
 
-<person id="rilke" lang="de" type="poet">
+<person id="rilke" country="de" lang="de" type="poet">
   <name>
     <firstname>Rainer Maria</firstname>
     <lastname>Rilke</lastname>
@@ -590,21 +590,21 @@
 
 <!-- Danskere -->
 
-<person id="folkeviser" lang="dk" type="collection">
+<person id="folkeviser" country="dk" lang="da" type="collection">
   <name>
     <firstname>Folkeviser</firstname>
   </name>
   <works>folke</works>
 </person>
 
-<person id="bibel" lang="dk" type="collection">
+<person id="bibel" country="dk" lang="da" type="collection">
   <name>
     <firstname>Bibelen</firstname>
   </name>
   <works>1mose,2mose,3mose,4mose,5mose,josua,dommer,rut,1samuel,2samuel,1konge,2konge,1kroen,2kroen,ezra,nehemias,ester,job,salme,ordsprog,praed,hoej,esajas,jeremias,klage,ezekiel,daniel,hoseas,joel,amos,obadias,jonas,mikas,nahum,habakkuk,zefanias,haggaj,zakarias,malakias,matt,markus,lukas,johannes,apostlene,rom,1korint,2korint,galaterne,efeserne,filipperne,kolossen,1tessa,2tessa,1timoteus,2timoteus,titus,filemon,hebrae,jakob,1peter,2peter,1johannes,2johannes,3johannes,judas,aabenbaringen</works>
 </person>
 
-<person id="raev" lang="dk" type="poet">
+<person id="raev" country="dk" lang="da" type="poet">
   <name>
     <firstname>Per</firstname>
     <lastname>Ræv Lille</lastname>
@@ -620,7 +620,7 @@
   <works>andre</works>
 </person>
 
-<person id="boerup" lang="dk" type="poet">
+<person id="boerup" country="dk" lang="da" type="poet">
   <name>
     <firstname>Morten</firstname>
     <lastname>Børup</lastname>
@@ -636,7 +636,7 @@
   <works>andre</works>
 </person>
 
-<person id="bergenhammer" lang="dk" type="poet">
+<person id="bergenhammer" country="dk" lang="da" type="poet">
   <name>
     <firstname>Peder</firstname>
     <lastname>Bergenhammer</lastname>
@@ -652,7 +652,7 @@
   <works>andre</works>
 </person>
 
-<person id="kjaer" lang="dk" type="poet">
+<person id="kjaer" country="dk" lang="da" type="poet">
   <name>
     <firstname>Søren</firstname>
     <lastname>Kjær</lastname>
@@ -667,7 +667,7 @@
   </period>
 </person>
 
-<person id="frandsen" lang="dk" type="poet">
+<person id="frandsen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Hans</firstname>
     <lastname>Frandsen</lastname>
@@ -687,7 +687,7 @@
 </person>
 
 
-<person id="vedel" lang="dk" type="poet">
+<person id="vedel" country="dk" lang="da" type="poet">
   <name>
     <firstname>Anders Sørensen</firstname>
     <lastname>Vedel</lastname>
@@ -703,7 +703,7 @@
   <works>1571,1591</works>
 </person>
 
-<person id="sthen" lang="dk" type="poet">
+<person id="sthen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Hans Christensen</firstname>
     <lastname>Sthen</lastname>
@@ -721,7 +721,7 @@
   <works>1578,1581,1588</works>
 </person>
 
-<person id="ranch" lang="dk" type="poet">
+<person id="ranch" country="dk" lang="da" type="poet">
   <name>
     <firstname>Hieronymus Justesen</firstname>
     <lastname>Ranch</lastname>
@@ -738,7 +738,7 @@
   <works>1584,1599,1607,1633,andre</works>
 </person>
 
-<person id="hegelund" lang="dk" type="poet">
+<person id="hegelund" country="dk" lang="da" type="poet">
   <name>
     <firstname>Peder Jensen</firstname>
     <lastname>Hegelund</lastname>
@@ -753,7 +753,7 @@
   </period>
 </person>
 
-<person id="brahe" lang="dk" type="poet">
+<person id="brahe" country="dk" lang="da" type="poet">
   <name>
     <firstname>Tycho</firstname>
     <lastname>Brahe</lastname>
@@ -772,7 +772,7 @@
   <works>andre</works>
 </person>
 
-<person id="lyschander" lang="dk" type="poet">
+<person id="lyschander" country="dk" lang="da" type="poet">
   <name>
     <firstname>Claus Christophersen</firstname>
     <lastname>Lyschander</lastname>
@@ -788,7 +788,7 @@
   <works>1597,1608,1622</works>
 </person>
 
-<person id="terkelsen" lang="dk" type="poet">
+<person id="terkelsen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Søren</firstname>
     <lastname>Terkelsen</lastname>
@@ -804,7 +804,7 @@
   <works>1645,1648</works>
 </person>
 
-<person id="arrebo" lang="dk" type="poet">
+<person id="arrebo" country="dk" lang="da" type="poet">
   <name>
     <firstname>Anders</firstname>
     <lastname>Arrebo</lastname>
@@ -822,7 +822,7 @@
   <works>1623,1661</works>
 </person>
 
-<person id="judichaer" lang="dk" type="poet">
+<person id="judichaer" country="dk" lang="da" type="poet">
   <name>
     <firstname>Søren Poulsen</firstname>
     <lastname>Judichær</lastname>
@@ -839,7 +839,7 @@
   <works>andre</works>
 </person>
 
-<person id="rothe" lang="dk" type="poet">
+<person id="rothe" country="dk" lang="da" type="poet">
   <name>
     <firstname>Tyge</firstname>
     <lastname>Rothe</lastname>
@@ -854,7 +854,7 @@
   </period>
 </person>
 
-<person id="rode" lang="dk" type="poet">
+<person id="rode" country="dk" lang="da" type="poet">
   <name>
     <firstname></firstname>
     <lastname>Rode</lastname>
@@ -870,7 +870,7 @@
   <works>andre</works>
 </person>
 
-<person id="birkerod" lang="dk" type="poet">
+<person id="birkerod" country="dk" lang="da" type="poet">
   <name>
     <firstname>C.V.P.</firstname>
     <lastname>Birkerod</lastname>
@@ -887,7 +887,7 @@
   <works>1816,andre</works>
 </person>
 
-<person id="hansenmc" lang="dk" type="poet">
+<person id="hansenmc" country="dk" lang="da" type="poet">
   <name>
     <firstname>M.C.</firstname>
     <lastname>Hansen</lastname>
@@ -903,7 +903,7 @@
   <works>andre,1816</works>
 </person>
 
-<person id="bachjn" lang="dk" type="poet">
+<person id="bachjn" country="dk" lang="da" type="poet">
   <name>
     <firstname>J.N.</firstname>
     <lastname>Bach</lastname>
@@ -919,7 +919,7 @@
   <works>andre</works>
 </person>
 
-<person id="kruse" lang="dk" type="poet">
+<person id="kruse" country="dk" lang="da" type="poet">
   <name>
     <firstname>M.P.</firstname>
     <lastname>Kruuse</lastname>
@@ -937,7 +937,7 @@
   <works>andre</works>
 </person>
 
-<person id="stenblock" lang="dk" type="poet">
+<person id="stenblock" country="dk" lang="da" type="poet">
   <name>
     <firstname>C.E.</firstname>
     <lastname>Steenbloch</lastname>
@@ -955,7 +955,7 @@
   <works>andre</works>
 </person>
  
-<person id="schandrup" lang="dk" type="poet">
+<person id="schandrup" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jacob Knudsen</firstname>
     <lastname>Schandrup</lastname>
@@ -971,7 +971,7 @@
   <works>andre</works>
 </person>
 
-<person id="loenborg" lang="dk" type="poet">
+<person id="loenborg" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jens Christensen</firstname>
     <lastname>Lønborg</lastname>
@@ -986,7 +986,7 @@
   </period>
 </person>
 
-<person id="ravn" lang="dk" type="poet">
+<person id="ravn" country="dk" lang="da" type="poet">
   <name>
     <firstname>Hans Mikkelsen</firstname>
     <lastname>Ravn</lastname>
@@ -1003,7 +1003,7 @@
   <works>1649</works>
 </person>
  
-<person id="wichman" lang="dk" type="poet">
+<person id="wichman" country="dk" lang="da" type="poet">
   <name>
     <firstname>Berthel</firstname>
     <lastname>Wichman</lastname>
@@ -1020,7 +1020,7 @@
 </person>
 
 <!-- TODO: Find mere nøjagtige døds/fødselsdatoer -->
-<person id="roskilde" lang="dk" type="poet">
+<person id="roskilde" country="dk" lang="da" type="poet">
   <name>
     <firstname>Peder Jensen</firstname>
     <lastname>Roskilde</lastname>
@@ -1037,7 +1037,7 @@
 </person>
 
 <!-- TODO: Find døds/fødselsår -->
-<person id="aagaard" lang="dk" type="poet">
+<person id="aagaard" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christian</firstname>
     <lastname>Aagaard</lastname>
@@ -1053,7 +1053,7 @@
 </person>
 
 <!-- TODO: Find mere nøjagtige datoer -->
-<person id="bangc" lang="dk" type="poet">
+<person id="bangc" country="dk" lang="da" type="poet">
   <name>
     <firstname>Claus Hansen</firstname>
     <lastname>Bang</lastname>
@@ -1069,7 +1069,7 @@
   </period>
 </person>
 
-<person id="bering" lang="dk" type="poet">
+<person id="bering" country="dk" lang="da" type="poet">
   <name>
     <firstname>Vitus</firstname>
     <lastname>Bering</lastname>
@@ -1086,7 +1086,7 @@
   <works>andre</works>
 </person>
  
-<person id="bording" lang="dk" type="poet">
+<person id="bording" country="dk" lang="da" type="poet">
   <name>
     <firstname>Anders Christensen</firstname>
     <lastname>Bording</lastname>
@@ -1103,7 +1103,7 @@
   <works>andre</works>
 </person>
  
-<person id="leonora" lang="dk" type="poet">
+<person id="leonora" country="dk" lang="da" type="poet">
   <name>
     <firstname>Leonora Christina</firstname>
     <lastname>Ulfeldt</lastname>
@@ -1121,7 +1121,7 @@
   <works>andre</works>
 </person>
 
-<person id="olavius" lang="dk" type="poet">
+<person id="olavius" country="dk" lang="da" type="poet">
   <name>
     <firstname>Johannes</firstname>
     <lastname>Olavius</lastname>
@@ -1136,7 +1136,7 @@
   </period>
 </person>
 
-<person id="gerner" lang="dk" type="poet">
+<person id="gerner" country="dk" lang="da" type="poet">
   <name>
     <firstname>Henrik</firstname>
     <lastname>Gerner</lastname>
@@ -1151,7 +1151,7 @@
   </period>
 </person>
  
-<person id="pedersen" lang="dk" type="poet">
+<person id="pedersen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Poul</firstname>
     <lastname>Pedersen</lastname>
@@ -1168,7 +1168,7 @@
   <works>1724</works>
 </person>
 
-<person id="syv" lang="dk" type="poet">
+<person id="syv" country="dk" lang="da" type="poet">
   <name>
     <firstname>Peder</firstname>
     <lastname>Syv</lastname>
@@ -1186,7 +1186,7 @@
   <works>1663,1682,1688,1695,andre</works>
 </person>
  
-<person id="kingo" lang="dk" type="poet">
+<person id="kingo" country="dk" lang="da" type="poet">
   <name>
     <firstname>Thomas</firstname>
     <lastname>Kingo</lastname>
@@ -1205,7 +1205,7 @@
   <works>1667,1674,1681,1689,1699,andre</works>
 </person>
  
-<person id="engelbretsdatter" lang="dk" type="poet">
+<person id="engelbretsdatter" country="dk" lang="da" type="poet">
   <name>
     <firstname>Dorothe</firstname>
     <lastname>Engelbretsdatter</lastname>
@@ -1221,7 +1221,7 @@
   <works>1678,1685</works>
 </person>
 
-<person id="kok" lang="dk" type="poet">
+<person id="kok" country="dk" lang="da" type="poet">
   <name>
     <firstname>Laurids</firstname>
     <lastname>Kok</lastname>
@@ -1237,7 +1237,7 @@
   <works>andre</works>
 </person>
 
-<person id="griffenfeld" lang="dk" type="poet">
+<person id="griffenfeld" country="dk" lang="da" type="poet">
   <name>
     <firstname>Peder Schumacher</firstname>
     <lastname>Griffenfeld</lastname>
@@ -1256,7 +1256,7 @@
   <works>andre</works>
 </person>
 
-<person id="sehested" lang="dk" type="poet">
+<person id="sehested" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jens Steen</firstname>
     <lastname>Sehested</lastname>
@@ -1272,7 +1272,7 @@
   <works>andre</works>
 </person>
  
-<person id="wormj" lang="dk" type="poet">
+<person id="wormj" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jacob</firstname>
     <lastname>Worm</lastname>
@@ -1289,7 +1289,7 @@
   <works>andre</works>
 </person>
  
-<person id="wormm" lang="dk" type="poet">
+<person id="wormm" country="dk" lang="da" type="poet">
   <name>
     <firstname>Matthias</firstname>
     <lastname>Worm</lastname>
@@ -1306,7 +1306,7 @@
   <works>andre</works>
 </person>
 
-<person id="stistrup" lang="dk" type="poet">
+<person id="stistrup" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christen Christensen</firstname>
     <lastname>Stistrup</lastname>
@@ -1323,7 +1323,7 @@
   <works>andre</works>
 </person>
 
-<person id="lauremberg" lang="dk" type="poet">
+<person id="lauremberg" country="dk" lang="da" type="poet">
   <name>
     <firstname>Hans Willumsen</firstname>
     <lastname>Lauremberg</lastname>
@@ -1341,7 +1341,7 @@
   </period>
 </person>
  
-<person id="naur" lang="dk" type="poet">
+<person id="naur" country="dk" lang="da" type="poet">
   <name>
     <firstname>Elias Eskildsen</firstname>
     <lastname>Naur</lastname>
@@ -1357,7 +1357,7 @@
   <works>1689</works>
 </person>
  
-<person id="helt" lang="dk" type="poet">
+<person id="helt" country="dk" lang="da" type="poet">
   <name>
     <firstname>Vilhelm</firstname>
     <lastname>Helt</lastname>
@@ -1373,7 +1373,7 @@
   <works>andre</works>
 </person>
 
-<person id="jernskaeg" lang="dk" type="poet">
+<person id="jernskaeg" country="dk" lang="da" type="poet">
   <name>
     <firstname>Mikkel Hansen</firstname>
     <lastname>Jernskæg</lastname>
@@ -1390,7 +1390,7 @@
 </person>
 
 <!-- TODO: Find dødsdato -->
-<person id="rostock" lang="dk" type="poet">
+<person id="rostock" country="dk" lang="da" type="poet">
   <name>
     <firstname>Mads Pedersen</firstname>
     <lastname>Rostock</lastname>
@@ -1409,7 +1409,7 @@
 </person>
 
 <!-- TODO: Find døds/fødselsår -->
-<person id="thrane" lang="dk" type="poet">
+<person id="thrane" country="dk" lang="da" type="poet">
   <name>
     <firstname>Mads</firstname>
     <lastname>Thrane</lastname>
@@ -1425,7 +1425,7 @@
   <works>1699</works>
 </person>
 
-<person id="reenberg" lang="dk" type="poet">
+<person id="reenberg" country="dk" lang="da" type="poet">
   <name>
     <firstname>Tøger</firstname>
     <lastname>Reenberg</lastname>
@@ -1443,7 +1443,7 @@
 </person>
 
 <!-- TODO: Find mere nøjagtige datoer -->
-<person id="thura" lang="dk" type="poet">
+<person id="thura" country="dk" lang="da" type="poet">
   <name>
     <firstname>Laurits</firstname>
     <lastname>Thura</lastname>
@@ -1459,7 +1459,7 @@
   <works>1726</works>
 </person>
  
-<person id="sorterup" lang="dk" type="poet">
+<person id="sorterup" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jørgen Jørgensen</firstname>
     <lastname>Sorterup</lastname>
@@ -1476,7 +1476,7 @@
 </person>
 
 <!-- TODO: Find mere nøjagtige datoer -->
-<person id="tychonius" lang="dk" type="poet">
+<person id="tychonius" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christen Lassen</firstname>
     <lastname>Tychonius</lastname>
@@ -1491,7 +1491,7 @@
   </period>
 </person>
 
-<person id="nordrup" lang="dk" type="poet">
+<person id="nordrup" country="dk" lang="da" type="poet">
   <name>
     <firstname>Hans Hansen</firstname>
     <lastname>Nordrup</lastname>
@@ -1507,7 +1507,7 @@
   <works>andre</works>
 </person>
 
-<person id="holberg" lang="dk" type="poet">
+<person id="holberg" country="dk" lang="da" type="poet">
   <name>
     <firstname>Ludvig</firstname>
     <lastname>Holberg</lastname>
@@ -1525,7 +1525,7 @@
   <works>1719,metam,skiemte,andre</works>
 </person>
 
-<person id="friis" lang="dk" type="poet">
+<person id="friis" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jørgen</firstname>
     <lastname>Friis</lastname>
@@ -1541,7 +1541,7 @@
 </person>
 
 <!-- TODO: Find mere nøjagtige datoer -->
-<person id="wolfburg" lang="dk" type="poet">
+<person id="wolfburg" country="dk" lang="da" type="poet">
   <name>
     <firstname>Morten Caspar</firstname>
     <lastname>Wolfburg</lastname>
@@ -1558,7 +1558,7 @@
 </person>
 
 
-<person id="falster" lang="dk" type="poet">
+<person id="falster" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christian</firstname>
     <lastname>Falster</lastname>
@@ -1574,7 +1574,7 @@
   <works>1721,1722,1730,andre</works>
 </person>
 
-<person id="brorson" lang="dk" type="poet">
+<person id="brorson" country="dk" lang="da" type="poet">
   <name>
     <firstname>H.A.</firstname>
     <lastname>Brorson</lastname>
@@ -1593,7 +1593,7 @@
   <works>1732,1739,1765,andre</works>
 </person>
 
-<person id="clitau" lang="dk" type="poet">
+<person id="clitau" country="dk" lang="da" type="poet">
   <name>
     <firstname>Thomas</firstname>
     <lastname>Clitau</lastname>
@@ -1609,7 +1609,7 @@
   <works>1738</works>
 </person>
 
-<person id="wormw" lang="dk" type="poet">
+<person id="wormw" country="dk" lang="da" type="poet">
   <name>
     <firstname>Willum</firstname>
     <lastname>Worm</lastname>
@@ -1626,7 +1626,7 @@
   <works>andre</works>
 </person>
  
-<person id="stub" lang="dk" type="poet">
+<person id="stub" country="dk" lang="da" type="poet">
   <name>
     <firstname>Ambrosius</firstname>
     <lastname>Stub</lastname>
@@ -1643,7 +1643,7 @@
 </person>
  
 <!-- TODO: Find mere nøjagtige datoer -->
-<person id="wadskiaer" lang="dk" type="poet">
+<person id="wadskiaer" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christian Frederik</firstname>
     <lastname>Wadskiær</lastname>
@@ -1661,7 +1661,7 @@
 </person>
 
 <!-- TODO: Find mere nøjagtige datoer -->
-<person id="graah" lang="dk" type="poet">
+<person id="graah" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jacob</firstname>
     <lastname>Graah</lastname>
@@ -1676,7 +1676,7 @@
   </period>
 </person>
  
-<person id="stenersen" lang="dk" type="poet">
+<person id="stenersen" country="dk" lang="da" type="poet">
   <name>
     <firstname>P.C.</firstname>
     <lastname>Stenersen</lastname>
@@ -1693,7 +1693,7 @@
   <works>1752,andre</works>
 </person>
  
-<person id="lous" lang="dk" type="poet">
+<person id="lous" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christian Carl</firstname>
     <lastname>Lous</lastname>
@@ -1710,7 +1710,7 @@
   <works>andre</works>
 </person>
 
-<person id="biehl" lang="dk" type="poet">
+<person id="biehl" country="dk" lang="da" type="poet">
   <name>
     <firstname>Charlotte Dorothea</firstname>
     <lastname>Biehl</lastname>
@@ -1726,7 +1726,7 @@
   <works>1773,1774,1774k,1786</works>
 </person>
  
-<person id="tode" lang="dk" type="poet">
+<person id="tode" country="dk" lang="da" type="poet">
   <name>
     <firstname>Johann Clemens</firstname>
     <lastname>Tode</lastname>
@@ -1744,7 +1744,7 @@
   <works>andre</works>
 </person>
  
-<person id="wandal" lang="dk" type="poet">
+<person id="wandal" country="dk" lang="da" type="poet">
   <name>
     <firstname>Peder Topp</firstname>
     <lastname>Wandall</lastname>
@@ -1760,7 +1760,7 @@
   <works>andre</works>
 </person>
 
-<person id="hertzb" lang="dk" type="poet">
+<person id="hertzb" country="dk" lang="da" type="poet">
   <name>
     <firstname>Birgitte</firstname>
     <lastname>Boye</lastname>
@@ -1780,7 +1780,7 @@
   <works>1778</works>
 </person>
  
-<person id="wessel" lang="dk" type="poet">
+<person id="wessel" country="dk" lang="da" type="poet">
   <name>
     <firstname>Johan Herman</firstname>
     <lastname>Wessel</lastname>
@@ -1798,7 +1798,7 @@
   <works>1772,1776,1785,fortaellinger,blandede,smaavers</works>
 </person>
  
-<person id="ewald" lang="dk" type="poet">
+<person id="ewald" country="dk" lang="da" type="poet">
   <name>
     <firstname>Johannes</firstname>
     <lastname>Ewald</lastname>
@@ -1816,7 +1816,7 @@
   <works>1766,1769,1770,1771,1772,1779,andre,p1780</works>
 </person>
 
-<person id="trojelpm" lang="dk" type="poet">
+<person id="trojelpm" country="dk" lang="da" type="poet">
   <name>
     <firstname>Peder Magnus</firstname>
     <lastname>Trojel</lastname>
@@ -1833,7 +1833,7 @@
   <works>andre</works>
 </person>
 
-<person id="schoenheyder" lang="dk" type="poet">
+<person id="schoenheyder" country="dk" lang="da" type="poet">
   <name>
     <firstname>Johan Heinrich</firstname>
     <lastname>Schønheyder</lastname>
@@ -1849,7 +1849,7 @@
 </person>
  
 <!-- TODO: Find mere nøjagtige datoer -->
-<person id="stockfleth" lang="dk" type="poet">
+<person id="stockfleth" country="dk" lang="da" type="poet">
   <name>
     <firstname>Th.</firstname>
     <lastname>Stockfleth</lastname>
@@ -1864,7 +1864,7 @@
   </period>
 </person>
  
-<person id="abrahamson" lang="dk" type="poet">
+<person id="abrahamson" country="dk" lang="da" type="poet">
   <name>
     <firstname>W.H.F.</firstname>
     <lastname>Abrahamson</lastname>
@@ -1881,7 +1881,7 @@
   <works>andre</works>
 </person>
  
-<person id="thaarup" lang="dk" type="poet">
+<person id="thaarup" country="dk" lang="da" type="poet">
   <name>
     <firstname>Thomas</firstname>
     <lastname>Thaarup</lastname>
@@ -1897,7 +1897,7 @@
   <works>1790,1793,andre</works>
 </person>
  
-<person id="bruuntc" lang="dk" type="poet">
+<person id="bruuntc" country="dk" lang="da" type="poet">
   <name>
     <firstname>Thomas Christopher</firstname>
     <lastname>Bruun</lastname>
@@ -1914,7 +1914,7 @@
   <works>andre</works>
 </person>
  
-<person id="brun" lang="no" type="poet">
+<person id="brun" country="no" lang="no" type="poet">
   <name>
     <firstname>Johan Nordahl</firstname>
     <lastname>Brun</lastname>
@@ -1930,7 +1930,7 @@
   <works>1772,1772a,1786,1791,1793,andre</works>
 </person>
 
-<person id="obelitz" lang="dk" type="poet">
+<person id="obelitz" country="dk" lang="da" type="poet">
   <name>
     <firstname>Ove von</firstname>
     <lastname>Obelitz</lastname>
@@ -1946,7 +1946,7 @@
   <works>andre</works>
 </person>
 
-<person id="thoroup" lang="dk" type="poet">
+<person id="thoroup" country="dk" lang="da" type="poet">
   <name>
     <firstname>Adam Gottlob</firstname>
     <lastname>Thoroup</lastname>
@@ -1962,7 +1962,7 @@
   <works>andre</works>
 </person>
 
-<person id="colbjoernsen" lang="dk" type="poet">
+<person id="colbjoernsen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Edvard</firstname>
     <lastname>Colbjørnsen</lastname>
@@ -1977,7 +1977,7 @@
   </period>
 </person>
  
-<person id="trojel" lang="dk" type="poet">
+<person id="trojel" country="dk" lang="da" type="poet">
   <name>
     <firstname>Peder Kofod</firstname>
     <lastname>Trojel</lastname>
@@ -1993,7 +1993,7 @@
   <works>andre</works>
 </person>
 
-<person id="falsen" lang="dk" type="poet">
+<person id="falsen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Enevold de</firstname>
     <lastname>Falsen</lastname>
@@ -2009,7 +2009,7 @@
   <works>1797,andre</works>
 </person>
 
-<person id="pram" lang="dk" type="poet">
+<person id="pram" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christen H.</firstname>
     <lastname>Pram</lastname>
@@ -2026,7 +2026,7 @@
   <works>andre</works>
 </person>
  
-<person id="sander" lang="dk" type="poet">
+<person id="sander" country="dk" lang="da" type="poet">
   <name>
     <firstname>L.C.</firstname>
     <lastname>Sander</lastname>
@@ -2043,7 +2043,7 @@
   <works>andre</works>
 </person>
 
-<person id="heibergpa" lang="dk" type="poet">
+<person id="heibergpa" country="dk" lang="da" type="poet">
   <name>
     <firstname>P.A.</firstname>
     <lastname>Heiberg</lastname>
@@ -2062,7 +2062,7 @@
   <works>andre</works>
 </person>
  
-<person id="rahbek" lang="dk" type="poet">
+<person id="rahbek" country="dk" lang="da" type="poet">
   <name>
     <firstname>Knud Lyne</firstname>
     <lastname>Rahbek</lastname>
@@ -2078,7 +2078,7 @@
   <works>1794,1802,andre</works>
 </person>
  
-<person id="riber" lang="dk" type="poet">
+<person id="riber" country="dk" lang="da" type="poet">
   <name>
     <firstname>Hans Vilhelm</firstname>
     <lastname>Riber</lastname>
@@ -2094,7 +2094,7 @@
   <works>andre</works>
 </person>
 
-<person id="baggesen" lang="dk" type="poet">
+<person id="baggesen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jens</firstname>
     <lastname>Baggesen</lastname>
@@ -2113,7 +2113,7 @@
   <works>1785,1791,1801,1807s,1807e,1807,1808,1808h,1814,1816,1816d,1819,andre</works>
 </person>
  
-<person id="olufsen" lang="dk" type="poet">
+<person id="olufsen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Oluf Christian</firstname>
     <lastname>Olufsen</lastname>
@@ -2129,7 +2129,7 @@
   <works>1793,andre</works>
 </person>
 
-<person id="haste" lang="dk" type="poet">
+<person id="haste" country="dk" lang="da" type="poet">
   <name>
     <firstname>Peder Horrebow</firstname>
     <lastname>Haste</lastname>
@@ -2145,7 +2145,7 @@
   <works>1780,andre</works>
 </person>
 
-<person id="brunf" lang="dk" type="poet">
+<person id="brunf" country="dk" lang="da" type="poet">
   <name>
     <firstname>Friederike</firstname>
     <lastname>Brun</lastname>
@@ -2162,7 +2162,7 @@
   </period>
 </person>
 
-<person id="frankenau" lang="dk" type="poet">
+<person id="frankenau" country="dk" lang="da" type="poet">
   <name>
     <firstname>Rasmus</firstname>
     <lastname>Frankenau</lastname>
@@ -2180,7 +2180,7 @@
   <works>andre</works>
 </person>
 
-<person id="staffeldt" lang="dk" type="poet">
+<person id="staffeldt" country="dk" lang="da" type="poet">
   <name>
     <firstname>A.W. Schack von</firstname>
     <lastname>Staffeldt</lastname>
@@ -2199,7 +2199,7 @@
   <works>1804,1808,andre</works>
 </person>
  
-<person id="horrebow" lang="dk" type="poet">
+<person id="horrebow" country="dk" lang="da" type="poet">
   <name>
     <firstname>Otto</firstname>
     <lastname>Horrebow</lastname>
@@ -2215,7 +2215,7 @@
   <works>andre</works>
 </person>
 
-<person id="hoeghguldbergf" lang="dk" type="poet">
+<person id="hoeghguldbergf" country="dk" lang="da" type="poet">
   <name>
     <firstname>Frederik</firstname>
     <lastname>Høegh-Guldberg</lastname>
@@ -2231,7 +2231,7 @@
   <works>andre</works>
 </person>
 
-<person id="weyse" lang="dk" type="poet">
+<person id="weyse" country="dk" lang="da" type="poet">
   <name>
     <firstname>C.E.F</firstname>
     <lastname>Weyse</lastname>
@@ -2250,7 +2250,7 @@
   <works>andre</works>
 </person>
 
-<person id="bruunmc" lang="dk" type="poet">
+<person id="bruunmc" country="dk" lang="da" type="poet">
   <name>
     <firstname>Malthe Conrad</firstname>
     <lastname>Bruun</lastname>
@@ -2266,7 +2266,7 @@
   <works>andre</works>
 </person>
  
-<person id="soeborg" lang="dk" type="poet">
+<person id="soeborg" country="dk" lang="da" type="poet">
   <name>
     <firstname>Carl</firstname>
     <lastname>Søeborg</lastname>
@@ -2282,7 +2282,7 @@
   <works>1817</works>
 </person>
 
-<person id="hempel" lang="dk" type="poet">
+<person id="hempel" country="dk" lang="da" type="poet">
   <name>
     <firstname>Søren</firstname>
     <lastname>Hempel</lastname>
@@ -2298,7 +2298,7 @@
   <works>andre</works>
 </person>
 
-<person id="foersom" lang="dk" type="poet">
+<person id="foersom" country="dk" lang="da" type="poet">
   <name>
     <firstname>Peter</firstname>
     <lastname>Foersom</lastname>
@@ -2317,7 +2317,7 @@
   <works>1818,andre</works>
 </person>
 
-<person id="bruunnt" lang="dk" type="poet">
+<person id="bruunnt" country="dk" lang="da" type="poet">
   <name>
     <firstname>N.T.</firstname>
     <lastname>Bruun</lastname>
@@ -2334,7 +2334,7 @@
   <works>andre</works>
 </person>
 
-<person id="oehlenschlaeger" lang="dk" type="poet">
+<person id="oehlenschlaeger" country="dk" lang="da" type="poet">
   <name>
     <firstname>Adam</firstname>
     <lastname>Oehlenschläger</lastname>
@@ -2353,7 +2353,7 @@
   <works>1803,1805,1807,1811,1813,1814,1817,1819,1828,1841,1849,1849d,andre</works>
 </person>
 
-<person id="jetsmark" lang="dk" type="poet">
+<person id="jetsmark" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jens</firstname>
     <lastname>Jetsmark</lastname>
@@ -2370,7 +2370,7 @@
 </person>
 
  
-<person id="magnusson" lang="dk" type="poet">
+<person id="magnusson" country="dk" lang="da" type="poet">
   <name>
     <firstname>Finnur</firstname>
     <lastname>Magnusson</lastname>
@@ -2386,7 +2386,7 @@
   <works>andre</works>
 </person>
 
-<person id="blicher" lang="dk" type="poet">
+<person id="blicher" country="dk" lang="da" type="poet">
   <name>
     <firstname>Steen Steensen</firstname>
     <lastname>Blicher</lastname>
@@ -2404,7 +2404,7 @@
   <works>1807,1814,1817,1824,1825,1826,1837,1838,andre,1847</works>
 </person>
  
-<person id="grundtvig" lang="dk" type="poet">
+<person id="grundtvig" country="dk" lang="da" type="poet">
   <name>
     <firstname>N.F.S.</firstname>
     <lastname>Grundtvig</lastname>
@@ -2423,7 +2423,7 @@
   <works>1808,1810a,1810b,1811a,1811b,1814a,1814b,1815a,1815b,1820,1824,1829,1837,1838,1840,1853,1870,julesalmer,pinsesalmer,andresalmer,andre</works>
 </person>
  
-<person id="bredahl" lang="dk" type="poet">
+<person id="bredahl" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christian Hviid</firstname>
     <lastname>Bredahl</lastname>
@@ -2439,7 +2439,7 @@
   <works>1819,1820,1821,1822,1832,1833</works>
 </person>
 
-<person id="blache" lang="dk" type="poet">
+<person id="blache" country="dk" lang="da" type="poet">
   <name>
     <firstname>Hans Henrik</firstname>
     <lastname>Blache</lastname>
@@ -2455,7 +2455,7 @@
   <works>andre</works>
 </person>
  
-<person id="ingemann" lang="dk" type="poet">
+<person id="ingemann" country="dk" lang="da" type="poet">
   <name>
     <firstname>B.S.</firstname>
     <lastname>Ingemann</lastname>
@@ -2474,7 +2474,7 @@
   <works>1811,1812,1813,1820,1821,1822,1824,1825,1831,1832,1833,1837,1837h,1838,1839,1842,1842S,1855,andre</works>
 </person>
  
-<person id="hauch" lang="dk" type="poet">
+<person id="hauch" country="dk" lang="da" type="poet">
   <name>
     <firstname>Carsten</firstname>
     <lastname>Hauch</lastname>
@@ -2493,7 +2493,7 @@
   <works>1842,1854,1861,1869,andre</works>
 </person>
  
-<person id="dampe" lang="dk" type="poet">
+<person id="dampe" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jacob J.</firstname>
     <lastname>Dampe</lastname>
@@ -2510,7 +2510,7 @@
   <works>1858,andre</works>
 </person>
 
-<person id="irgens" lang="dk" type="poet">
+<person id="irgens" country="dk" lang="da" type="poet">
   <name>
     <firstname>Hanna</firstname>
     <lastname>Irgens</lastname>
@@ -2527,7 +2527,7 @@
   <works>1822,1825</works>
 </person>
 
-<person id="boyecj" lang="dk" type="poet">
+<person id="boyecj" country="dk" lang="da" type="poet">
   <name>
     <firstname>C.J.</firstname>
     <lastname>Boye</lastname>
@@ -2545,7 +2545,7 @@
   <works>1819,andre</works>
 </person>
  
-<person id="heibergjl" lang="dk" type="poet">
+<person id="heibergjl" country="dk" lang="da" type="poet">
   <name>
     <firstname>Johan Ludvig</firstname>
     <lastname>Heiberg</lastname>
@@ -2563,7 +2563,7 @@
   <works>1817,1819,1841,1842,1849,andre,drama</works>
 </person>
  
-<person id="boedtcher" lang="dk" type="poet">
+<person id="boedtcher" country="dk" lang="da" type="poet">
   <name>
     <firstname>Ludvig</firstname>
     <lastname>Bødtcher</lastname>
@@ -2580,7 +2580,7 @@
   <works>1870,andre</works>
 </person>
  
-<person id="moellerpm" lang="dk" type="poet">
+<person id="moellerpm" country="dk" lang="da" type="poet">
   <name>
     <firstname>Poul Martin</firstname>
     <lastname>Møller</lastname>
@@ -2598,7 +2598,7 @@
   <works>andre</works>
 </person>
 
-<person id="thiele" lang="dk" type="poet">
+<person id="thiele" country="dk" lang="da" type="poet">
   <name>
     <firstname>Just Mathias</firstname>
     <lastname>Thiele</lastname>
@@ -2615,7 +2615,7 @@
   <works>1848</works>
 </person>
  
-<person id="winter" lang="dk" type="poet">
+<person id="winter" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christian</firstname>
     <lastname>Winther</lastname>
@@ -2634,7 +2634,7 @@
   <works>1828,1832,1835,1840,1840h,1843,1846,1849,1851,1853,1855,1858,1865,1872,1879,andre</works>
 </person>
  
-<person id="wilster" lang="dk" type="poet">
+<person id="wilster" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christian</firstname>
     <lastname>Wilster</lastname>
@@ -2651,7 +2651,7 @@
   <works>1827,1836,1837,1840</works>
 </person>
  
-<person id="hertzh" lang="dk" type="poet">
+<person id="hertzh" country="dk" lang="da" type="poet">
   <name>
     <firstname>Henrik</firstname>
     <lastname>Hertz</lastname>
@@ -2667,7 +2667,7 @@
   <works>1830,1836,1837,1841,1848,1854,andre</works>
 </person>
  
-<person id="liunge" lang="dk" type="poet">
+<person id="liunge" country="dk" lang="da" type="poet">
   <name>
     <firstname>Andreas Peter</firstname>
     <lastname>Liunge</lastname>
@@ -2683,7 +2683,7 @@
   <works>andre</works>
 </person>
 
-<person id="krossing" lang="dk" type="poet">
+<person id="krossing" country="dk" lang="da" type="poet">
   <name>
     <firstname>Nikolaj</firstname>
     <lastname>Krossing</lastname>
@@ -2699,7 +2699,7 @@
   <works>1858</works>
 </person>
 
-<person id="overskou" lang="dk" type="poet">
+<person id="overskou" country="dk" lang="da" type="poet">
   <name>
     <firstname>Thomas</firstname>
     <lastname>Overskou</lastname>
@@ -2717,7 +2717,7 @@
   <works>andre</works>
 </person>
  
-<person id="aarestrup" lang="dk" type="poet">
+<person id="aarestrup" country="dk" lang="da" type="poet">
   <name>
     <firstname>Emil</firstname>
     <lastname>Aarestrup</lastname>
@@ -2736,7 +2736,7 @@
   <works>1838,trykte,1815-24,1825-37,1838-56,udat,ovs</works>
 </person>
  
-<person id="deichmann" lang="dk" type="poet">
+<person id="deichmann" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christian</firstname>
     <lastname>Deichmann</lastname>
@@ -2752,7 +2752,7 @@
   <works>1825</works>
 </person>
 
-<person id="andersen" lang="dk" type="poet">
+<person id="andersen" country="dk" lang="da" type="poet">
   <name>
     <firstname>H.C.</firstname>
     <lastname>Andersen</lastname>
@@ -2771,7 +2771,7 @@
   <works>1830,1831,1832,1833,1833S,1838,1847,1849,1851,1854,1863,1867,1879,andre</works>
 </person>
  
-<person id="bagger" lang="dk" type="poet">
+<person id="bagger" country="dk" lang="da" type="poet">
   <name>
     <firstname>Carl</firstname>
     <lastname>Bagger</lastname>
@@ -2790,7 +2790,7 @@
   <works>1834,1835,1836,1845,andre</works>
 </person>
  
-<person id="mueller" lang="dk" type="poet">
+<person id="mueller" country="dk" lang="da" type="poet">
   <name>
     <firstname>Frederik</firstname>
     <lastname>Paludan-Müller</lastname>
@@ -2806,7 +2806,7 @@
   <works>1832,1833,1834,1837,1838,1841,1842,1844,1844t,1853,1854,1857,1861,1874,andre</works>
 </person>
 
-<person id="karstensen" lang="dk" type="poet">
+<person id="karstensen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Kristen</firstname>
     <lastname>Karstensen</lastname>
@@ -2822,7 +2822,7 @@
   <works>1849,andre</works>
 </person>
 
-<person id="hansenfj" lang="dk" type="poet">
+<person id="hansenfj" country="dk" lang="da" type="poet">
   <name>
     <firstname>Frantz Johannes</firstname>
     <lastname>Hansen</lastname>
@@ -2837,7 +2837,7 @@
   </period>
 </person>
 
-<person id="faber" lang="dk" type="poet">
+<person id="faber" country="dk" lang="da" type="poet">
   <name>
     <firstname>Peter</firstname>
     <lastname>Faber</lastname>
@@ -2853,7 +2853,7 @@
   <works>1877,andre</works>
 </person>
  
-<person id="gerson" lang="dk" type="poet">
+<person id="gerson" country="dk" lang="da" type="poet">
   <name>
     <firstname>Julius Christian</firstname>
     <lastname>Gerson</lastname>
@@ -2869,7 +2869,7 @@
   <works>1844,1845,andre</works>
 </person>
  
-<person id="holst" lang="dk" type="poet">
+<person id="holst" country="dk" lang="da" type="poet">
   <name>
     <firstname>H.P.</firstname>
     <lastname>Holst</lastname>
@@ -2887,7 +2887,7 @@
   <works>andre,1843,1874,1884</works>
 </person>
 
-<person id="plough" lang="dk" type="poet">
+<person id="plough" country="dk" lang="da" type="poet">
   <name>
     <firstname>Carl</firstname>
     <lastname>Ploug</lastname>
@@ -2905,7 +2905,7 @@
   <works>1854,1861,1869,1883,1895,andre</works>
 </person>
  
-<person id="moellerpl" lang="dk" type="poet">
+<person id="moellerpl" country="dk" lang="da" type="poet">
   <name>
     <firstname>P.L.</firstname>
     <lastname>Møller</lastname>
@@ -2923,7 +2923,7 @@
   <works>1840,1847,1855,andre</works>
 </person>
  
-<person id="lembcke" lang="dk" type="poet">
+<person id="lembcke" country="dk" lang="da" type="poet">
   <name>
     <firstname>Edvard</firstname>
     <lastname>Lembcke</lastname>
@@ -2939,7 +2939,7 @@
   <works>1870,andre</works>
 </person>
 
-<person id="hostrup" lang="dk" type="poet">
+<person id="hostrup" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jens Christian</firstname>
     <lastname>Hostrup</lastname>
@@ -2956,7 +2956,7 @@
   <works>1852,1865,1872,1884,1893,andre</works>
 </person>
  
-<person id="kaalund" lang="dk" type="poet">
+<person id="kaalund" country="dk" lang="da" type="poet">
   <name>
     <firstname>Hans Vilhelm</firstname>
     <lastname>Kaalund</lastname>
@@ -2972,7 +2972,7 @@
   <works>1840s,1840k,1845,1858,1875,1877,efterladte</works>
 </person>
 
-<person id="recke" lang="dk" type="poet">
+<person id="recke" country="dk" lang="da" type="poet">
   <name>
     <firstname>Adolph</firstname>
     <lastname>Recke</lastname>
@@ -2988,7 +2988,7 @@
   <works>andre</works>
 </person>
 
-<person id="fibiger" lang="dk" type="poet">
+<person id="fibiger" country="dk" lang="da" type="poet">
   <name>
     <firstname>Johannes</firstname>
     <lastname>Fibiger</lastname>
@@ -3006,7 +3006,7 @@
 </person>
 
 
-<person id="molbechsr" lang="dk" type="poet">
+<person id="molbechsr" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christian</firstname>
     <lastname>Molbech</lastname>
@@ -3022,7 +3022,7 @@
   <works>andre</works>
 </person>
  
-<person id="molbech" lang="dk" type="poet">
+<person id="molbech" country="dk" lang="da" type="poet">
   <name>
     <firstname>Chr.K.F.</firstname>
     <lastname>Molbech</lastname>
@@ -3039,7 +3039,7 @@
   <works>1840,1851,1852,blandede,andre</works>
 </person>
 
-<person id="boegh" lang="dk" type="poet">
+<person id="boegh" country="dk" lang="da" type="poet">
   <name>
     <firstname>Erik</firstname>
     <lastname>Bøgh</lastname>
@@ -3055,7 +3055,7 @@
   <works>andre</works>
 </person>
 
-<person id="arentzen" lang="dk" type="poet">
+<person id="arentzen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Kristian</firstname>
     <lastname>Arentzen</lastname>
@@ -3073,7 +3073,7 @@
   <works>1858,1867</works>
 </person>
 
-<person id="wormp" lang="dk" type="poet">
+<person id="wormp" country="dk" lang="da" type="poet">
   <name>
     <firstname>Pauline</firstname>
     <lastname>Worm</lastname>
@@ -3092,7 +3092,7 @@
   <works>1850,1864,andre</works>
 </person>
 
-<person id="helms" lang="dk" type="poet">
+<person id="helms" country="dk" lang="da" type="poet">
   <name>
     <firstname>Johannes</firstname>
     <lastname>Helms</lastname>
@@ -3108,7 +3108,7 @@
   <works>1859,1866,1878,1888,andre</works>
 </person>
 
-<person id="rosenberg" lang="dk" type="poet">
+<person id="rosenberg" country="dk" lang="da" type="poet">
   <name>
     <firstname>Carl</firstname>
     <lastname>Rosenberg</lastname>
@@ -3125,7 +3125,7 @@
   <works>andre</works>
 </person>
 
-<person id="rodeg" lang="dk" type="poet">
+<person id="rodeg" country="dk" lang="da" type="poet">
   <name>
     <firstname>Gotfred</firstname>
     <lastname>Rode</lastname>
@@ -3144,7 +3144,7 @@
 </person>
 
 
-<person id="richardt" lang="dk" type="poet">
+<person id="richardt" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christian</firstname>
     <lastname>Richardt</lastname>
@@ -3161,7 +3161,7 @@
   <works>1861,1864,1868,1874,1878,1880,andre</works>
 </person>
 
-<person id="strandberg" lang="dk" type="poet">
+<person id="strandberg" country="dk" lang="da" type="poet">
   <name>
     <firstname>Peter Julius</firstname>
     <lastname>Strandberg</lastname>
@@ -3177,7 +3177,7 @@
   <works>1864,1883,andre</works>
 </person>
  
-<person id="bergsoe" lang="dk" type="poet">
+<person id="bergsoe" country="dk" lang="da" type="poet">
   <name>
     <firstname>Vilhelm</firstname>
     <lastname>Bergsøe</lastname>
@@ -3196,7 +3196,7 @@
   <works>1887,andre</works>
 </person>
 
-<person id="schandorph" lang="dk" type="poet">
+<person id="schandorph" country="dk" lang="da" type="poet">
   <name>
     <firstname>Sophus</firstname>
     <lastname>Schandorph</lastname>
@@ -3213,7 +3213,7 @@
   <works>1875,1879,1882,1898,andre</works>
 </person>
 
-<person id="schmidt" lang="dk" type="poet">
+<person id="schmidt" country="dk" lang="da" type="poet">
   <name>
     <firstname>Rudolf</firstname>
     <lastname>Schmidt</lastname>
@@ -3228,7 +3228,7 @@
   </period>
 </person>
 
-<person id="brandes" lang="dk" type="poet">
+<person id="brandes" country="dk" lang="da" type="poet">
   <name>
     <firstname>Georg</firstname>
     <lastname>Brandes</lastname>
@@ -3247,7 +3247,7 @@
   <works>1902</works>
 </person>
 
-<person id="krohn" lang="dk" type="poet">
+<person id="krohn" country="dk" lang="da" type="poet">
   <name>
     <firstname>Johan</firstname>
     <lastname>Krohn</lastname>
@@ -3264,7 +3264,7 @@
   <works>1866</works>
 </person>
 
-<person id="nielsenz" lang="dk" type="poet">
+<person id="nielsenz" country="dk" lang="da" type="poet">
   <name>
     <firstname>Zakarias</firstname>
     <lastname>Nielsen</lastname>
@@ -3281,7 +3281,7 @@
   <works>1871</works>
 </person>
 
-<person id="drachmann" lang="dk" type="poet">
+<person id="drachmann" country="dk" lang="da" type="poet">
   <name>
     <firstname>Holger</firstname>
     <lastname>Drachmann</lastname>
@@ -3298,7 +3298,7 @@
   <works>1872,1875,1877,1877t,1877d,1879r,1879,1881,1884,1885,1890,1889,1892,1899,1901,andre</works>
 </person>
  
-<person id="jacobsen" lang="dk" type="poet">
+<person id="jacobsen" country="dk" lang="da" type="poet">
   <name>
     <firstname>J.P.</firstname>
     <lastname>Jacobsen</lastname>
@@ -3317,7 +3317,7 @@
   <works>1868,1871,andre,noveller</works>
 </person>
 
-<person id="reckee" lang="dk" type="poet">
+<person id="reckee" country="dk" lang="da" type="poet">
   <name>
     <firstname>Ernst von der</firstname>
     <lastname>Recke</lastname>
@@ -3334,7 +3334,7 @@
   <works>1872,1876,1883,1885,1889,1890,andre</works>
 </person>
 
-<person id="gregersen" lang="dk" type="poet">
+<person id="gregersen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Vilhelm</firstname>
     <lastname>Gregersen</lastname>
@@ -3352,7 +3352,7 @@
 </person>
 
 
-<person id="lange" lang="dk" type="poet">
+<person id="lange" country="dk" lang="da" type="poet">
   <name>
     <firstname>Thor</firstname>
     <lastname>Lange</lastname>
@@ -3371,7 +3371,7 @@
   <works>1878,1894,1902,1906,1915</works>
 </person>
 
-<person id="ipsen" lang="dk" type="poet">
+<person id="ipsen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Alfred</firstname>
     <lastname>Ipsen</lastname>
@@ -3389,7 +3389,7 @@
   <works>1883,andre</works>
 </person>
 
-<person id="heibergjly" lang="dk" type="poet">
+<person id="heibergjly" country="dk" lang="da" type="poet">
   <name>
     <firstname>Johan Ludvig</firstname>
     <lastname>Heiberg</lastname>
@@ -3405,7 +3405,7 @@
   <works>andre</works>
 </person>
 
-<person id="gjellerup" lang="dk" type="poet">
+<person id="gjellerup" country="dk" lang="da" type="poet">
   <name>
     <firstname>Karl</firstname>
     <lastname>Gjellerup</lastname>
@@ -3421,7 +3421,7 @@
   <works>1881,1887,1887h,1889,1895,1898,1910</works>
 </person>
 
-<person id="bang" lang="dk" type="poet">
+<person id="bang" country="dk" lang="da" type="poet">
   <name>
     <firstname>Herman</firstname>
     <lastname>Bang</lastname>
@@ -3440,7 +3440,7 @@
   <works>1889,p1879,p1890</works>
 </person>
  
-<person id="knudsen" lang="dk" type="poet">
+<person id="knudsen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jakob</firstname>
     <lastname>Knudsen</lastname>
@@ -3457,7 +3457,7 @@
   <works>1908,1938,andre</works>
 </person>
  
-<person id="esmann" lang="dk" type="poet">
+<person id="esmann" country="dk" lang="da" type="poet">
   <name>
     <firstname>Gustav</firstname>
     <lastname>Esmann</lastname>
@@ -3474,7 +3474,7 @@
   </period>
 </person>
 
-<person id="moth" lang="dk" type="poet">
+<person id="moth" country="dk" lang="da" type="poet">
   <name>
     <firstname>Fr.</firstname>
     <lastname>Moth</lastname>
@@ -3490,7 +3490,7 @@
   <works>andre</works>
 </person>
  
-<person id="nansen" lang="dk" type="poet">
+<person id="nansen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Peter</firstname>
     <lastname>Nansen</lastname>
@@ -3505,7 +3505,7 @@
   </period>
 </person>
  
-<person id="stuckenberg" lang="dk" type="poet">
+<person id="stuckenberg" country="dk" lang="da" type="poet">
   <name>
     <firstname>Viggo</firstname>
     <lastname>Stuckenberg</lastname>
@@ -3524,7 +3524,7 @@
   <works>1886,1894,1898,1901,1905,1906</works>
 </person>
  
-<person id="claussen" lang="dk" type="poet">
+<person id="claussen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Sophus</firstname>
     <lastname>Claussen</lastname>
@@ -3543,7 +3543,7 @@
   <works>1887,1899,1901,1902,1904,1910,1912,1917,1925,1927,1930,ovs,digtefraprosa,andre</works>
 </person>
 
-<person id="michaelis" lang="dk" type="poet">
+<person id="michaelis" country="dk" lang="da" type="poet">
   <name>
     <firstname>Sophus</firstname>
     <lastname>Michaëlis</lastname>
@@ -3561,7 +3561,7 @@
   <works>1889,1893,1898,1900,1913,1927,andre</works>
 </person>
 
-<person id="dam" lang="dk" type="poet">
+<person id="dam" country="dk" lang="da" type="poet">
   <name>
     <firstname>Johannes</firstname>
     <lastname>Dam</lastname>
@@ -3577,7 +3577,7 @@
   <works>michelangelo,1926</works>
 </person>
 
-<person id="aakjaer" lang="dk" type="poet">
+<person id="aakjaer" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jeppe</firstname>
     <lastname>Aakjær</lastname>
@@ -3595,7 +3595,7 @@
   <works>1899,1905,1906,1909,1910,1913,1916,1919,1920,1921,1924,1926,1927,andre</works>
 </person>
 
-<person id="dalgas" lang="dk" type="poet">
+<person id="dalgas" country="dk" lang="da" type="poet">
   <name>
     <firstname>Ernesto</firstname>
     <lastname>Dalgas</lastname>
@@ -3611,7 +3611,7 @@
   <works>1903</works>
 </person>
 
-<person id="nielsenlc" lang="dk" type="poet">
+<person id="nielsenlc" country="dk" lang="da" type="poet">
   <name>
     <firstname>L.C.</firstname>
     <lastname>Nielsen</lastname>
@@ -3627,7 +3627,7 @@
   <works>1897,andre</works>
 </person>
 
-<person id="mylius" lang="dk" type="poet">
+<person id="mylius" country="dk" lang="da" type="poet">
   <name>
     <firstname>Ludvig</firstname>
     <lastname>Mylius-Erichsen</lastname>
@@ -3643,7 +3643,7 @@
   <works>1904</works>
 </person>
 
-<person id="ewaldt" lang="dk" type="poet">
+<person id="ewaldt" country="dk" lang="da" type="poet">
   <name>
     <firstname>Theodor</firstname>
     <lastname>Ewald</lastname>
@@ -3659,7 +3659,7 @@
   <works>1894</works>
 </person>
 
-<person id="larsent" lang="dk" type="poet">
+<person id="larsent" country="dk" lang="da" type="poet">
   <name>
     <firstname>Thøger</firstname>
     <lastname>Larsen</lastname>
@@ -3675,7 +3675,7 @@
   <works>1895,1904,1905,1907,1912,1914,1920,rubai,1923,1924,1925,1926,1927,andre</works>
 </person>
 
-<person id="kidde" lang="dk" type="poet">
+<person id="kidde" country="dk" lang="da" type="poet">
   <name>
     <firstname>Harald</firstname>
     <lastname>Kidde</lastname>
@@ -3690,7 +3690,7 @@
   </period>
 </person>
 
-<person id="villon" lang="fr" type="poet">
+<person id="villon" country="fr" lang="fr" type="poet">
   <name>
     <firstname>François</firstname>
     <lastname>Villon</lastname>
@@ -3709,7 +3709,7 @@
   <works>andre</works>
 </person>
 
-<person id="marot" lang="fr" type="poet">
+<person id="marot" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Clément</firstname>
     <lastname>Marot</lastname>
@@ -3727,7 +3727,7 @@
   <works>1532,1544,andre</works>
 </person>
 
-<person id="bartas" lang="fr" type="poet">
+<person id="bartas" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Guillaume de Salluste Du</firstname>
     <lastname>Bartas</lastname>
@@ -3745,7 +3745,7 @@
   <works>1578,1584</works>
 </person>
 
-<person id="urfe" lang="fr" type="poet">
+<person id="urfe" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Honoré</firstname>
     <lastname>d'Urfé</lastname>
@@ -3762,7 +3762,7 @@
   </period>
 </person>
 
-<person id="corneille" lang="fr" type="poet">
+<person id="corneille" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Pierre</firstname>
     <lastname>Corneille</lastname>
@@ -3780,7 +3780,7 @@
   <works>1635,1637,1640,1641,1643,1643m,1649,1650,1659</works>
 </person>
 
-<person id="fontaine" lang="fr" type="poet">
+<person id="fontaine" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Jean de</firstname>
     <lastname>La Fontaine</lastname>
@@ -3797,7 +3797,7 @@
   </period>
 </person>
 
-<person id="moliere" lang="fr" type="poet">
+<person id="moliere" country="fr" lang="fr" type="poet">
   <name>
     <firstname></firstname>
     <lastname>Molière</lastname>
@@ -3816,7 +3816,7 @@
   <works>1664,1666</works>
 </person>
 
-<person id="boileau" lang="fr" type="poet">
+<person id="boileau" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Nicolas</firstname>
     <lastname>Boileau</lastname>
@@ -3833,7 +3833,7 @@
   <works>1674</works>
 </person>
 
-<person id="racine" lang="fr" type="poet">
+<person id="racine" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Jean</firstname>
     <lastname>Racine</lastname>
@@ -3851,7 +3851,7 @@
   </period>
 </person>
 
-<person id="beranger" lang="fr" type="poet">
+<person id="beranger" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Pierre-Jean de</firstname>
     <lastname>Béranger</lastname>
@@ -3869,7 +3869,7 @@
   <works>andre</works>
 </person>
 
-<person id="lamartine" lang="fr" type="poet">
+<person id="lamartine" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Alphonse de</firstname>
     <lastname>Lamartine</lastname>
@@ -3887,7 +3887,7 @@
   <works>1820,1830</works>
 </person>
 
-<person id="delavigne" lang="fr" type="poet">
+<person id="delavigne" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Casimir</firstname>
     <lastname>Delavigne</lastname>
@@ -3903,7 +3903,7 @@
   <works>andre</works>
 </person>
 
-<person id="voltaire" lang="fr" type="poet">
+<person id="voltaire" country="fr" lang="fr" type="poet">
   <name>
     <firstname></firstname>
     <lastname>Voltaire</lastname>
@@ -3923,7 +3923,7 @@
 </person>
 
 
-<person id="lisle" lang="fr" type="poet">
+<person id="lisle" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Claude-Joseph</firstname>
     <lastname>Rouget de Lisle</lastname>
@@ -3941,7 +3941,7 @@
   <works>andre</works>
 </person>
 
-<person id="vigny" lang="fr" type="poet">
+<person id="vigny" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Alfred de</firstname>
     <lastname>Vigny</lastname>
@@ -3960,7 +3960,7 @@
   <works>1826,1864</works>
 </person>
 
-<person id="hugo" lang="fr" type="poet">
+<person id="hugo" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Victor</firstname>
     <lastname>Hugo</lastname>
@@ -3979,7 +3979,7 @@
   <works>1822,1829,1831,1837,1840,1853,1856,1859,1865,1881,1881L</works>
 </person>
 
-<person id="nerval" lang="fr" type="poet">
+<person id="nerval" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Gérard de</firstname>
     <lastname>Nerval</lastname>
@@ -3998,7 +3998,7 @@
   <works>1854,1855</works>
 </person>
 
-<person id="musset" lang="fr" type="poet">
+<person id="musset" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Alfred de</firstname>
     <lastname>Musset</lastname>
@@ -4017,7 +4017,7 @@
   <works>1829,andre</works>
 </person>
 
-<person id="gautier" lang="fr" type="poet">
+<person id="gautier" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Théophile</firstname>
     <lastname>Gautier</lastname>
@@ -4035,7 +4035,7 @@
   <works>1832,1838,1852,andre</works>
 </person>
 
-<person id="baudelaire" lang="fr" type="poet">
+<person id="baudelaire" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Charles</firstname>
     <lastname>Baudelaire</lastname>
@@ -4054,7 +4054,7 @@
   <works>1857,1866</works>
 </person>
 
-<person id="mallarme" lang="fr" type="poet">
+<person id="mallarme" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Stéphane</firstname>
     <lastname>Mallarmé</lastname>
@@ -4072,7 +4072,7 @@
   <works>1871,1876,1897,poesies</works>
 </person>
 
-<person id="verlaine" lang="fr" type="poet">
+<person id="verlaine" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Paul</firstname>
     <lastname>Verlaine</lastname>
@@ -4091,7 +4091,7 @@
   <works>1866,1869,1870,1874,1880,1884,1885,1892</works>
 </person>
 
-<person id="lautreamont" lang="fr" type="poet">
+<person id="lautreamont" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Comte de</firstname>
     <lastname>Lautréamont</lastname>
@@ -4109,7 +4109,7 @@
   </period>
 </person>
 
-<person id="nouveau" lang="fr" type="poet">
+<person id="nouveau" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Germain</firstname>
     <lastname>Nouveau</lastname>
@@ -4124,7 +4124,7 @@
   </period>
 </person>
 
-<person id="rimbaud" lang="fr" type="poet">
+<person id="rimbaud" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Arthur</firstname>
     <lastname>Rimbaud</lastname>
@@ -4143,7 +4143,7 @@
   <works>1873</works>
 </person>
 
-<person id="dass" lang="no" type="poet">
+<person id="dass" country="no" lang="no" type="poet">
   <name>
     <firstname>Petter</firstname>
     <lastname>Dass</lastname>
@@ -4159,7 +4159,7 @@
   <works>1739,bib,kate,evang,andre</works>
 </person>
 
-<person id="tullin" lang="no" type="poet">
+<person id="tullin" country="no" lang="no" type="poet">
   <name>
     <firstname>Christian Braunman</firstname>
     <lastname>Tullin</lastname>
@@ -4175,7 +4175,7 @@
   <works>andre</works>
 </person>
  
-<person id="frimannc" lang="no" type="poet">
+<person id="frimannc" country="no" lang="no" type="poet">
   <name>
     <firstname>Claus</firstname>
     <lastname>Frimann</lastname>
@@ -4191,7 +4191,7 @@
   <works>1780,1785,1788,1790,1793,1794,1826,andre</works>
 </person>
  
-<person id="fasting" lang="no" type="poet">
+<person id="fasting" country="no" lang="no" type="poet">
   <name>
     <firstname>Claus</firstname>
     <lastname>Fasting</lastname>
@@ -4207,7 +4207,7 @@
   <works>epigrammer,1778,andre</works>
 </person>
  
-<person id="vibe" lang="no" type="poet">
+<person id="vibe" country="no" lang="no" type="poet">
   <name>
     <firstname>Johan</firstname>
     <lastname>Vibe</lastname>
@@ -4223,7 +4223,7 @@
   <works>andre</works>
 </person>
  
-<person id="storm" lang="no" type="poet">
+<person id="storm" country="no" lang="no" type="poet">
   <name>
     <firstname>Edvard</firstname>
     <lastname>Storm</lastname>
@@ -4239,7 +4239,7 @@
   <works>1782,andre</works>
 </person>
  
-<person id="frimannph" lang="no" type="poet">
+<person id="frimannph" country="no" lang="no" type="poet">
   <name>
     <firstname>Peter Harboe</firstname>
     <lastname>Frimann</lastname>
@@ -4254,7 +4254,7 @@
   </period>
 </person>
  
-<person id="rein" lang="no" type="poet">
+<person id="rein" country="no" lang="no" type="poet">
   <name>
     <firstname>Jonas</firstname>
     <lastname>Rein</lastname>
@@ -4270,7 +4270,7 @@
   <works>andre</works>
 </person>
  
-<person id="zetlitz" lang="no" type="poet">
+<person id="zetlitz" country="no" lang="no" type="poet">
   <name>
     <firstname>Jens</firstname>
     <lastname>Zetlitz</lastname>
@@ -4286,7 +4286,7 @@
   <works>andre</works>
 </person>
  
-<person id="schmidtf" lang="no" type="poet">
+<person id="schmidtf" country="no" lang="no" type="poet">
   <name>
     <firstname>Frederik</firstname>
     <lastname>Schmidt</lastname>
@@ -4302,7 +4302,7 @@
   <works>andre</works>
 </person>
 
-<person id="bjerregaard" lang="no" type="poet">
+<person id="bjerregaard" country="no" lang="no" type="poet">
   <name>
     <firstname>Henrik Anker</firstname>
     <lastname>Bjerregaard</lastname>
@@ -4318,7 +4318,7 @@
   <works>1824,1829,andre</works>
 </person>
 
-<person id="landstad" lang="no" type="poet">
+<person id="landstad" country="no" lang="no" type="poet">
   <name>
     <firstname>Magnus Brostrup</firstname>
     <lastname>Landstad</lastname>
@@ -4335,7 +4335,7 @@
   <works>1856,1861,1863,1907,1917</works>
 </person>
 
-<person id="welhaven" lang="no" type="poet">
+<person id="welhaven" country="no" lang="no" type="poet">
   <name>
     <firstname>Johan Sebastian</firstname>
     <lastname>Welhaven</lastname>
@@ -4354,7 +4354,7 @@
   <works>1834,1838,1844,1847,1851,1859,andre</works>
 </person>
 
-<person id="wergeland" lang="no" type="poet">
+<person id="wergeland" country="no" lang="no" type="poet">
   <name>
     <firstname>Henrik Arnold</firstname>
     <lastname>Wergeland</lastname>
@@ -4372,7 +4372,7 @@
   <works>1829,1830,1833s,1833d,1838,1840,1844e,1844j,1845,andre</works>
 </person>
 
-<person id="munch" lang="no" type="poet">
+<person id="munch" country="no" lang="no" type="poet">
   <name>
     <firstname>Andreas</firstname>
     <lastname>Munch</lastname>
@@ -4387,7 +4387,7 @@
   </period>
 </person>
 
-<person id="moe" lang="no" type="poet">
+<person id="moe" country="no" lang="no" type="poet">
   <name>
     <firstname>Jørgen</firstname>
     <lastname>Moe</lastname>
@@ -4402,7 +4402,7 @@
   </period>
 </person>
 
-<person id="aasen" lang="no" type="poet">
+<person id="aasen" country="no" lang="no" type="poet">
   <name>
     <firstname>Ivar</firstname>
     <lastname>Aasen</lastname>
@@ -4421,7 +4421,7 @@
   <works>1863</works>
 </person>
 
-<person id="vinje" lang="no" type="poet">
+<person id="vinje" country="no" lang="no" type="poet">
   <name>
     <firstname>Aasmund Olavsson</firstname>
     <lastname>Vinje</lastname>
@@ -4439,7 +4439,7 @@
   <works>1864,1866,1867</works>
 </person>
 
-<person id="kjerulf" lang="no" type="poet">
+<person id="kjerulf" country="no" lang="no" type="poet">
   <name>
     <firstname>Theodor</firstname>
     <lastname>Kjerulf</lastname>
@@ -4454,7 +4454,7 @@
   </period>
 </person>
 
-<person id="hougen" lang="no" type="poet">
+<person id="hougen" country="no" lang="no" type="poet">
   <name>
     <firstname>Engebret</firstname>
     <lastname>Hougen</lastname>
@@ -4469,7 +4469,7 @@
   </period>
 </person>
 
-<person id="ibsen" lang="no" type="poet">
+<person id="ibsen" country="no" lang="no" type="poet">
   <name>
     <firstname>Henrik</firstname>
     <lastname>Ibsen</lastname>
@@ -4488,7 +4488,7 @@
   <works>andre</works>
 </person>
 
-<person id="bjoernson" lang="no" type="poet">
+<person id="bjoernson" country="no" lang="no" type="poet">
   <name>
     <firstname>Bjørnstjerne</firstname>
     <lastname>Bjørnson</lastname>
@@ -4504,7 +4504,7 @@
   <works>1870,1895</works>
 </person>
 
-<person id="lie" lang="no" type="poet">
+<person id="lie" country="no" lang="no" type="poet">
   <name>
     <firstname>Jonas</firstname>
     <lastname>Lie</lastname>
@@ -4523,7 +4523,7 @@
   <works>1867</works>
 </person>
 
-<person id="sivle" lang="no" type="poet">
+<person id="sivle" country="no" lang="no" type="poet">
   <name>
     <firstname>Per</firstname>
     <lastname>Sivle</lastname>
@@ -4538,7 +4538,7 @@
   </period>
 </person>
 
-<person id="kinck" lang="no" type="poet">
+<person id="kinck" country="no" lang="no" type="poet">
   <name>
     <firstname>Hans Ernst</firstname>
     <lastname>Kinck</lastname>
@@ -4556,7 +4556,7 @@
   <works>1927</works>
 </person>
 
-<person id="obstfelder" lang="no" type="poet">
+<person id="obstfelder" country="no" lang="no" type="poet">
   <name>
     <firstname>Sigbjørn</firstname>
     <lastname>Obstfelder</lastname>
@@ -4574,7 +4574,7 @@
   <works>1893,1903</works>
 </person>
 
-<person id="kjaer" lang="no" type="poet">
+<person id="kjaer" country="no" lang="no" type="poet">
   <name>
     <firstname>Nils</firstname>
     <lastname>Kjær</lastname>
@@ -4589,7 +4589,7 @@
   </period>
 </person>
 
-<person id="bull" lang="no" type="poet">
+<person id="bull" country="no" lang="no" type="poet">
   <name>
     <firstname>Olaf</firstname>
     <lastname>Bull</lastname>
@@ -4608,7 +4608,7 @@
   <works>1909,1913,1916,1924,1927,1928,1930,1931,1932</works>
 </person>
 
-<person id="aukrust" lang="no" type="poet">
+<person id="aukrust" country="no" lang="no" type="poet">
   <name>
     <firstname>Olav</firstname>
     <lastname>Aukrust</lastname>
@@ -4624,7 +4624,7 @@
   <works>1916,1926,1930,1931</works>
 </person>
 
-<person id="nygard" lang="no" type="poet">
+<person id="nygard" country="no" lang="no" type="poet">
   <name>
     <firstname>Olav</firstname>
     <lastname>Nygard</lastname>
@@ -4639,7 +4639,7 @@
   </period>
 </person>
 
-<person id="solstad" lang="no" type="poet">
+<person id="solstad" country="no" lang="no" type="poet">
   <name>
     <firstname>Einar</firstname>
     <lastname>Solstad</lastname>
@@ -4654,7 +4654,7 @@
   </period>
 </person>
 
-<person id="nilsen" lang="no" type="poet">
+<person id="nilsen" country="no" lang="no" type="poet">
   <name>
     <firstname>Rudolf</firstname>
     <lastname>Nilsen</lastname>
@@ -4670,7 +4670,7 @@
   <works>1924,1926,1929</works>
 </person>
 
-<person id="stiernhielm" lang="se" type="poet">
+<person id="stiernhielm" country="se" lang="sv" type="poet">
   <name>
     <firstname>Georg</firstname>
     <lastname>Stiernhielm</lastname>
@@ -4691,7 +4691,7 @@
   <works>1658</works>
 </person>
 
-<person id="wivallius" lang="se" type="poet">
+<person id="wivallius" country="se" lang="sv" type="poet">
   <name>
     <firstname>Lars</firstname>
     <lastname>Wivallius</lastname>
@@ -4709,7 +4709,7 @@
   <works>andre</works>
 </person>
 
-<person id="lucidor" lang="se" type="poet">
+<person id="lucidor" country="se" lang="sv" type="poet">
   <name>
     <firstname>Lars (Lucidor)</firstname>
     <lastname>Johansson</lastname>
@@ -4728,7 +4728,7 @@
   <works>andre</works>
 </person>
 
-<person id="columbus" lang="se" type="poet">
+<person id="columbus" country="se" lang="sv" type="poet">
   <name>
     <firstname>Samuel</firstname>
     <lastname>Columbus</lastname>
@@ -4747,7 +4747,7 @@
   <works>1674</works>
 </person>
 
-<person id="bergbo" lang="se" type="poet">
+<person id="bergbo" country="se" lang="sv" type="poet">
   <name>
     <firstname>Skogekär</firstname>
     <lastname>Bergbo</lastname>
@@ -4763,7 +4763,7 @@
   <works>1658,1680,1682</works>
 </person>
 
-<person id="spegel" lang="se" type="poet">
+<person id="spegel" country="se" lang="sv" type="poet">
   <name>
     <firstname>Haquin</firstname>
     <lastname>Spegel</lastname>
@@ -4779,7 +4779,7 @@
   </period>
 </person>
 
-<person id="runius" lang="se" type="poet">
+<person id="runius" country="se" lang="sv" type="poet">
   <name>
     <firstname>Johan</firstname>
     <lastname>Runius</lastname>
@@ -4794,7 +4794,7 @@
   </period>
 </person>
 
-<person id="brenner" lang="se" type="poet">
+<person id="brenner" country="se" lang="sv" type="poet">
   <name>
     <firstname>Sophia Elisabet</firstname>
     <lastname>Brenner</lastname>
@@ -4810,7 +4810,7 @@
   <works>1709</works>
 </person>
 
-<person id="frese" lang="se" type="poet">
+<person id="frese" country="se" lang="sv" type="poet">
   <name>
     <firstname>Jakob</firstname>
     <lastname>Frese</lastname>
@@ -4826,7 +4826,7 @@
   </period>
 </person>
 
-<person id="dalin" lang="se" type="poet">
+<person id="dalin" country="se" lang="sv" type="poet">
   <name>
     <firstname>Olof von</firstname>
     <lastname>Dalin</lastname>
@@ -4844,7 +4844,7 @@
   <works>andre,1740,1742</works>
 </person>
 
-<person id="wennerberg" lang="se" type="poet">
+<person id="wennerberg" country="se" lang="sv" type="poet">
   <name>
     <firstname>Gunnar</firstname>
     <lastname>Wennerberg</lastname>
@@ -4860,7 +4860,7 @@
   <works>1849</works>
 </person>
 
-<person id="nordenflycht" lang="se" type="poet">
+<person id="nordenflycht" country="se" lang="sv" type="poet">
   <name>
     <firstname>Hedvig Charlotta</firstname>
     <lastname>Nordenflycht</lastname>
@@ -4878,7 +4878,7 @@
   <works>andre</works>
 </person>
 
-<person id="creutz" lang="se" type="poet">
+<person id="creutz" country="se" lang="sv" type="poet">
   <name>
     <firstname>Gustaf Philip</firstname>
     <lastname>Creutz</lastname>
@@ -4896,7 +4896,7 @@
   </period>
 </person>
 
-<person id="bellman" lang="se" type="poet">
+<person id="bellman" country="se" lang="sv" type="poet">
   <name>
     <firstname>Carl Michael</firstname>
     <lastname>Bellman</lastname>
@@ -4914,7 +4914,7 @@
   <works>1760,1790,1791</works>
 </person>
 
-<person id="stagnelius" lang="se" type="poet">
+<person id="stagnelius" country="se" lang="sv" type="poet">
   <name>
     <firstname>Erik Johan</firstname>
     <lastname>Stagnelius</lastname>
@@ -4932,7 +4932,7 @@
   <works>1821,1822,andre</works>
 </person>
 
-<person id="rydberg" lang="se" type="poet">
+<person id="rydberg" country="se" lang="sv" type="poet">
   <name>
     <firstname>Viktor</firstname>
     <lastname>Rydberg</lastname>
@@ -4951,7 +4951,7 @@
   <works>andre</works>
 </person>
 
-<person id="nyblom" lang="se" type="poet">
+<person id="nyblom" country="se" lang="sv" type="poet">
   <name>
     <firstname>Carl Rupert</firstname>
     <lastname>Nyblom</lastname>
@@ -4967,7 +4967,7 @@
   <works>1858,1860,1865,1871</works>
 </person>
 
-<person id="snoilsky" lang="se" type="poet">
+<person id="snoilsky" country="se" lang="sv" type="poet">
   <name>
     <firstname>Carl</firstname>
     <lastname>Snoilsky</lastname>
@@ -4986,7 +4986,7 @@
   <works>1869</works>
 </person>
 
-<person id="froeding" lang="se" type="poet">
+<person id="froeding" country="se" lang="sv" type="poet">
   <name>
     <firstname>Gustaf</firstname>
     <lastname>Fröding</lastname>
@@ -5002,7 +5002,7 @@
   <works>andre</works>
 </person>
 
-<person id="sjoberg" lang="se" type="poet">
+<person id="sjoberg" country="se" lang="sv" type="poet">
   <name>
     <firstname>Birger</firstname>
     <lastname>Sjöberg</lastname>
@@ -5022,7 +5022,7 @@
 
 <!-- Engelske digtere -->
 
-<person id="langland" lang="gb" type="poet">
+<person id="langland" country="gb" lang="en" type="poet">
   <name>
     <firstname>William</firstname>
     <lastname>Langland</lastname>
@@ -5037,7 +5037,7 @@
   </period>
 </person>
 
-<person id="chaucer" lang="gb" type="poet">
+<person id="chaucer" country="gb" lang="en" type="poet">
   <name>
     <firstname>Geoffrey</firstname>
     <lastname>Chaucer</lastname>
@@ -5055,7 +5055,7 @@
   <works>troilus,duchess,canterbury</works>
 </person>
 
-<person id="wyatt" lang="gb" type="poet">
+<person id="wyatt" country="gb" lang="en" type="poet">
   <name>
     <firstname>Sir Thomas</firstname>
     <lastname>Wyatt</lastname>
@@ -5073,7 +5073,7 @@
   <works>andre</works>
 </person>
 
-<person id="howard" lang="gb" type="poet">
+<person id="howard" country="gb" lang="en" type="poet">
   <name>
     <firstname>Henry</firstname>
     <lastname>Howard, Earl of Surrey</lastname>
@@ -5091,7 +5091,7 @@
   <works>andre</works>
 </person>
 
-<person id="spenser" lang="gb" type="poet">
+<person id="spenser" country="gb" lang="en" type="poet">
   <name>
     <firstname>Edmund</firstname>
     <lastname>Spenser</lastname>
@@ -5109,7 +5109,7 @@
   <works>1569,1579,1590,1591,1595,1595e,1596</works>
 </person>
 
-<person id="sidney" lang="gb" type="poet">
+<person id="sidney" country="gb" lang="en" type="poet">
   <name>
     <firstname>Philip</firstname>
     <lastname>Sidney</lastname>
@@ -5125,7 +5125,7 @@
   <works>1591,andre</works>
 </person>
 
-<person id="daniel" lang="gb" type="poet">
+<person id="daniel" country="gb" lang="en" type="poet">
   <name>
     <firstname>Samuel</firstname>
     <lastname>Daniel</lastname>
@@ -5141,7 +5141,7 @@
   <works>1592,1594,1595,1599,1603,1604,1605,1606,1609,1610,1615</works>
 </person>
 
-<person id="drayton" lang="gb" type="poet">
+<person id="drayton" country="gb" lang="en" type="poet">
   <name>
     <firstname>Michael</firstname>
     <lastname>Drayton</lastname>
@@ -5157,7 +5157,7 @@
   <works>1591,1593,1593-94,1594,1595,1596,1597,1600,1603,1604,1606,1607,1619,1622,1627,1630</works>
 </person>
 
-<person id="marlowe" lang="gb" type="poet">
+<person id="marlowe" country="gb" lang="en" type="poet">
   <name>
     <firstname>Christopher</firstname>
     <lastname>Marlowe</lastname>
@@ -5175,7 +5175,7 @@
   </period>
 </person>
 
-<person id="dyer" lang="gb" type="poet">
+<person id="dyer" country="gb" lang="en" type="poet">
   <name>
     <firstname>Sir Edward</firstname>
     <lastname>Dyer</lastname>
@@ -5193,7 +5193,7 @@
   <works>andre</works>
 </person>
 
-<person id="shakespeare" lang="gb" type="poet">
+<person id="shakespeare" country="gb" lang="en" type="poet">
   <name>
     <firstname>William</firstname>
     <lastname>Shakespeare</lastname>
@@ -5212,7 +5212,7 @@
   <works>1593,1594,1601,lovers,sonnets</works>
 </person>
 
-<person id="campion" lang="gb" type="poet">
+<person id="campion" country="gb" lang="en" type="poet">
   <name>
     <firstname>Thomas</firstname>
     <lastname>Campion</lastname>
@@ -5229,7 +5229,7 @@
   <works>andre</works>
 </person>
 
-<person id="wotton" lang="gb" type="poet">
+<person id="wotton" country="gb" lang="en" type="poet">
   <name>
     <firstname>Sir Henry</firstname>
     <lastname>Wotton</lastname>
@@ -5245,7 +5245,7 @@
   <works>andre</works>
 </person>
 
-<person id="donne" lang="gb" type="poet">
+<person id="donne" country="gb" lang="en" type="poet">
   <name>
     <firstname>John</firstname>
     <lastname>Donne</lastname>
@@ -5262,7 +5262,7 @@
   <works>1601,andre</works>
 </person>
 
-<person id="milton" lang="gb" type="poet">
+<person id="milton" country="gb" lang="en" type="poet">
   <name>
     <firstname>John</firstname>
     <lastname>Milton</lastname>
@@ -5280,7 +5280,7 @@
   <works>1667,1671,1671s</works>
 </person>
 
-<person id="lovelace" lang="gb" type="poet">
+<person id="lovelace" country="gb" lang="en" type="poet">
   <name>
     <firstname>Richard</firstname>
     <lastname>Lovelace</lastname>
@@ -5298,7 +5298,7 @@
   <works>1649</works>
 </person>
 
-<person id="dryden" lang="gb" type="poet">
+<person id="dryden" country="gb" lang="en" type="poet">
   <name>
     <firstname>John</firstname>
     <lastname>Dryden</lastname>
@@ -5315,7 +5315,7 @@
   </period>
 </person>
 
-<person id="swift" lang="gb" type="poet">
+<person id="swift" country="gb" lang="en" type="poet">
   <name>
     <firstname>Jonathan</firstname>
     <lastname>Swift</lastname>
@@ -5333,7 +5333,7 @@
   <works>andre</works>
 </person>
 
-<person id="young" lang="gb" type="poet">
+<person id="young" country="gb" lang="en" type="poet">
   <name>
     <firstname>Edward</firstname>
     <lastname>Young</lastname>
@@ -5351,7 +5351,7 @@
   <works>1742,1759</works>
 </person>
 
-<person id="gay" lang="gb" type="poet">
+<person id="gay" country="gb" lang="en" type="poet">
   <name>
     <firstname>John</firstname>
     <lastname>Gay</lastname>
@@ -5368,7 +5368,7 @@
   <works>1727,andre</works>
 </person>
 
-<person id="pope" lang="gb" type="poet">
+<person id="pope" country="gb" lang="en" type="poet">
   <name>
     <firstname>Alexander</firstname>
     <lastname>Pope</lastname>
@@ -5386,7 +5386,7 @@
   <works>andre,1733,1714</works>
 </person>
 
-<person id="thomson" lang="gb" type="poet">
+<person id="thomson" country="gb" lang="en" type="poet">
   <name>
     <firstname>James</firstname>
     <lastname>Thomson</lastname>
@@ -5404,7 +5404,7 @@
   <works>1730s,1730,1740,1745,andre</works>
 </person>
 
-<person id="gray" lang="gb" type="poet">
+<person id="gray" country="gb" lang="en" type="poet">
   <name>
     <firstname>Thomas</firstname>
     <lastname>Gray</lastname>
@@ -5422,7 +5422,7 @@
   <works>andre</works>
 </person>
 
-<person id="cowper" lang="gb" type="poet">
+<person id="cowper" country="gb" lang="en" type="poet">
   <name>
     <firstname>William</firstname>
     <lastname>Cowper</lastname>
@@ -5440,7 +5440,7 @@
   <works>1779</works>
 </person>
 
-<person id="macpherson" lang="gb" type="poet">
+<person id="macpherson" country="gb" lang="en" type="poet">
   <name>
     <firstname>James</firstname>
     <lastname>MacPherson</lastname>
@@ -5458,7 +5458,7 @@
   <works>1758,1760,1761,1763,1765</works>
 </person>
 
-<person id="blake" lang="gb" type="poet">
+<person id="blake" country="gb" lang="en" type="poet">
   <name>
     <firstname>William</firstname>
     <lastname>Blake</lastname>
@@ -5476,7 +5476,7 @@
   <works>inno,1790,expe,1804a,1804</works>
 </person>
 
-<person id="burns" lang="gb" type="poet">
+<person id="burns" country="gb" lang="en" type="poet">
   <name>
     <firstname>Robert</firstname>
     <lastname>Burns</lastname>
@@ -5494,7 +5494,7 @@
   <works>1786,1787,1788,1789,1786p,andre</works>
 </person>
 
-<person id="wordsworth" lang="gb" type="poet">
+<person id="wordsworth" country="gb" lang="en" type="poet">
   <name>
     <firstname>William</firstname>
     <lastname>Wordsworth</lastname>
@@ -5512,7 +5512,7 @@
   <works>1798,andre</works>
 </person>
 
-<person id="scott" lang="gb" type="poet">
+<person id="scott" country="gb" lang="en" type="poet">
   <name>
     <firstname>Sir Walter</firstname>
     <lastname>Scott</lastname>
@@ -5530,7 +5530,7 @@
   <works>1802,1804,1805,1808,1810,1811,1813r,1813,1815l,1815,1817,andre</works>
 </person>
 
-<person id="montgomery" lang="gb" type="poet">
+<person id="montgomery" country="gb" lang="en" type="poet">
   <name>
     <firstname>James</firstname>
     <lastname>Montgomery</lastname>
@@ -5548,7 +5548,7 @@
   <works>1797,1806,1807,1813,1819,1822,1825,1825a,1828,1835,1853</works>
 </person>
 
-<person id="coleridge" lang="gb" type="poet">
+<person id="coleridge" country="gb" lang="en" type="poet">
   <name>
     <firstname>Samuel Taylor</firstname>
     <lastname>Coleridge</lastname>
@@ -5566,7 +5566,7 @@
   <works>1796,1798,1816,1817,andre</works>
 </person>
 
-<person id="moore" lang="gb" type="poet">
+<person id="moore" country="gb" lang="en" type="poet">
   <name>
     <firstname>Thomas</firstname>
     <lastname>Moore</lastname>
@@ -5584,7 +5584,7 @@
   <works>1801,1801t,1806,1808,1813,1818,1834,1835,andre</works>
 </person>
 
-<person id="cornwall" lang="gb" type="poet">
+<person id="cornwall" country="gb" lang="en" type="poet">
   <name>
     <firstname>Barry</firstname>
     <lastname>Cornwall</lastname>
@@ -5601,7 +5601,7 @@
   <works>andre</works>
 </person>
 
-<person id="byron" lang="gb" type="poet">
+<person id="byron" country="gb" lang="en" type="poet">
   <name>
     <firstname>George Gordon</firstname>
     <lastname>Byron</lastname>
@@ -5620,7 +5620,7 @@
   <works>1812,1813,1813a,1814,1814a,1814b,1815,1816,1816a,1817,1817a,1818,1819,1821,1821a,1821b,andre</works>
 </person>
 
-<person id="shelley" lang="gb" type="poet">
+<person id="shelley" country="gb" lang="en" type="poet">
   <name>
     <firstname>Percy Bysshe</firstname>
     <lastname>Shelley</lastname>
@@ -5638,7 +5638,7 @@
   <works>1810,1813,1816,1818,1819,1823,1824,ovs,andre</works>
 </person>
 
-<person id="keats" lang="gb" type="poet">
+<person id="keats" country="gb" lang="en" type="poet">
   <name>
     <firstname>John</firstname>
     <lastname>Keats</lastname>
@@ -5656,7 +5656,7 @@
   <works>1817,1818,1820,otho,king,post</works>
 </person>
 
-<person id="hood" lang="gb" type="poet">
+<person id="hood" country="gb" lang="en" type="poet">
   <name>
     <firstname>Thomas</firstname>
     <lastname>Hood</lastname>
@@ -5673,7 +5673,7 @@
 </person>
 
 
-<person id="browningeb" lang="gb" type="poet">
+<person id="browningeb" country="gb" lang="en" type="poet">
   <name>
     <firstname>Elizabeth Barrett</firstname>
     <lastname>Browning</lastname>
@@ -5691,7 +5691,7 @@
   <works>1820,1844,1850,1851,1860,1862</works>
 </person>
 
-<person id="longfellow" lang="us" type="poet">
+<person id="longfellow" country="us" lang="en" type="poet">
   <name>
     <firstname>Henry Wadsworth</firstname>
     <lastname>Longfellow</lastname>
@@ -5709,7 +5709,7 @@
   <works>1839,1842,1847,1855,1858,1863,1865,andre</works>
 </person>
 
-<person id="poe" lang="us" type="poet">
+<person id="poe" country="us" lang="en" type="poet">
   <name>
     <firstname>Edgar Allan</firstname>
     <lastname>Poe</lastname>
@@ -5727,7 +5727,7 @@
   <works>1827,1829,1831,1840,1841,1845,andre</works>
 </person>
 
-<person id="tennyson" lang="gb" type="poet">
+<person id="tennyson" country="gb" lang="en" type="poet">
   <name>
     <firstname>Alfred Lord</firstname>
     <lastname>Tennyson</lastname>
@@ -5745,7 +5745,7 @@
   <works>1827,1830,1833,1842,1847,1850,1855,1859,1864,1870,1872,1875,1876,1880,1885,1886,1889,1892a,1892b,andre</works>
 </person>
 
-<person id="lear" lang="gb" type="poet">
+<person id="lear" country="gb" lang="en" type="poet">
   <name>
     <firstname>Edward</firstname>
     <lastname>Lear</lastname>
@@ -5761,7 +5761,7 @@
   <works>1846,1861,1871,1872,1877,1895</works>
 </person>
 
-<person id="browningr" lang="gb" type="poet">
+<person id="browningr" country="gb" lang="en" type="poet">
   <name>
     <firstname>Robert</firstname>
     <lastname>Browning</lastname>
@@ -5779,7 +5779,7 @@
   <works>1842,1855,1864,andre</works>
 </person>
 
-<person id="whittier" lang="us" type="poet">
+<person id="whittier" country="us" lang="en" type="poet">
   <name>
     <firstname>John Greenleaf</firstname>
     <lastname>Whittier</lastname>
@@ -5797,7 +5797,7 @@
   <works>1831,1838,1843,1850,1853,1856,1860,1864,1866,1867,1869,1871,1875,1878,1886,1888,1890</works>
 </person>
 
-<person id="bates" lang="us" type="poet">
+<person id="bates" country="us" lang="en" type="poet">
   <name>
     <firstname>David</firstname>
     <lastname>Bates</lastname>
@@ -5814,7 +5814,7 @@
   <works>1849,1870</works>
 </person>
 
-<person id="holmes" lang="us" type="poet">
+<person id="holmes" country="us" lang="en" type="poet">
   <name>
     <firstname>Oliver Wendell</firstname>
     <lastname>Holmes</lastname>
@@ -5832,7 +5832,7 @@
   <works>1836,1862,1875,1880,1887</works>
 </person>
 
-<person id="sears" lang="us" type="poet">
+<person id="sears" country="us" lang="en" type="poet">
   <name>
     <firstname>Edmund Hamilton</firstname>
     <lastname>Sears</lastname>
@@ -5849,7 +5849,7 @@
 </person>
 
 
-<person id="emmett" lang="us" type="poet">
+<person id="emmett" country="us" lang="en" type="poet">
   <name>
     <firstname>Daniel Decatur</firstname>
     <lastname>Emmett</lastname>
@@ -5866,7 +5866,7 @@
   <works>andre</works>
 </person>
 
-<person id="jackson" lang="us" type="poet">
+<person id="jackson" country="us" lang="en" type="poet">
   <name>
     <firstname>Helen Hunt</firstname>
     <lastname>Jackson</lastname>
@@ -5882,7 +5882,7 @@
   </period>
 </person>
 
-<person id="howe" lang="us" type="poet">
+<person id="howe" country="us" lang="en" type="poet">
   <name>
     <firstname>Julia Ward</firstname>
     <lastname>Howe</lastname>
@@ -5898,7 +5898,7 @@
   </period>
 </person>
 
-<person id="emerson" lang="us" type="poet">
+<person id="emerson" country="us" lang="en" type="poet">
   <name>
     <firstname>Ralph Waldo</firstname>
     <lastname>Emerson</lastname>
@@ -5916,7 +5916,7 @@
   <works>1836,1847,1867</works>
 </person>
 
-<person id="freneau" lang="us" type="poet">
+<person id="freneau" country="us" lang="en" type="poet">
   <name>
     <firstname>Philip</firstname>
     <lastname>Freneau</lastname>
@@ -5935,7 +5935,7 @@
   <works>1781,andre</works>
 </person>
 
-<person id="whitman" lang="us" type="poet">
+<person id="whitman" country="us" lang="en" type="poet">
   <name>
     <firstname>Walt</firstname>
     <lastname>Whitman</lastname>
@@ -5953,7 +5953,7 @@
   <works>1865,1871,1891</works>
 </person>
 
-<person id="rossettid" lang="gb" type="poet">
+<person id="rossettid" country="gb" lang="en" type="poet">
   <name>
     <firstname>Dante Gabriel</firstname>
     <lastname>Rossetti</lastname>
@@ -5971,7 +5971,7 @@
   <works>1861,1881</works>
 </person>
 
-<person id="dickinson" lang="us" type="poet">
+<person id="dickinson" country="us" lang="en" type="poet">
   <name>
     <firstname>Emily</firstname>
     <lastname>Dickinson</lastname>
@@ -5989,7 +5989,7 @@
   <works>digte</works>
 </person>
 
-<person id="rossettic" lang="gb" type="poet">
+<person id="rossettic" country="gb" lang="en" type="poet">
   <name>
     <firstname>Christina</firstname>
     <lastname>Rossetti</lastname>
@@ -6007,7 +6007,7 @@
   <works>1862,1866,1872,1881,1885,1892,andre</works>
 </person>
 
-<person id="carrol" lang="gb" type="poet">
+<person id="carrol" country="gb" lang="en" type="poet">
   <name>
     <firstname>Lewis</firstname>
     <lastname>Carroll</lastname>
@@ -6026,7 +6026,7 @@
   <works>1869,1876,1889,1898,andre</works>
 </person>
 
-<person id="kipling" lang="gb" type="poet">
+<person id="kipling" country="gb" lang="en" type="poet">
   <name>
     <firstname>Rudyard</firstname>
     <lastname>Kipling</lastname>
@@ -6044,7 +6044,7 @@
   <works>1891,1894,1895</works>
 </person>
 
-<person id="hardy" lang="gb" type="poet">
+<person id="hardy" country="gb" lang="en" type="poet">
   <name>
     <firstname>Thomas</firstname>
     <lastname>Hardy</lastname>
@@ -6062,7 +6062,7 @@
   <works>1898,1902,1903,1909,1914,1917,1922,1925,1928</works>
 </person>
 
-<person id="hopkins" lang="gb" type="poet">
+<person id="hopkins" country="gb" lang="en" type="poet">
   <name>
     <firstname>Gerard Manley</firstname>
     <lastname>Hopkins</lastname>
@@ -6080,7 +6080,7 @@
   <works>andre</works>
 </person>
 
-<person id="wilde" lang="gb" type="poet">
+<person id="wilde" country="gb" lang="en" type="poet">
   <name>
     <firstname>Oscar</firstname>
     <lastname>Wilde</lastname>
@@ -6099,7 +6099,7 @@
   <works>1881,andre</works>
 </person>
 
-<person id="housman" lang="gb" type="poet">
+<person id="housman" country="gb" lang="en" type="poet">
   <name>
     <firstname>A.E.</firstname>
     <lastname>Housman</lastname>
@@ -6118,7 +6118,7 @@
   <works>1896,1922,1936,1939</works>
 </person>
 
-<person id="yeats" lang="gb" type="poet">
+<person id="yeats" country="gb" lang="en" type="poet">
   <name>
     <firstname>W.B.</firstname>
     <lastname>Yeats</lastname>
@@ -6137,7 +6137,7 @@
   <works>1889,1893,1899,1904,1910,1914,1919,1921,1928,1933,1935,1938a,1938</works>
 </person>
 
-<person id="lawrence" lang="gb" type="poet">
+<person id="lawrence" country="gb" lang="en" type="poet">
   <name>
     <firstname>D.H.</firstname>
     <lastname>Lawrence</lastname>
@@ -6156,7 +6156,7 @@
   <works>rhyming,unrhyming,1929,1930,1932m,1932</works>
 </person>
 
-<person id="brooke" lang="gb" type="poet">
+<person id="brooke" country="gb" lang="en" type="poet">
   <name>
     <firstname>Rupert</firstname>
     <lastname>Brooke</lastname>
@@ -6174,7 +6174,7 @@
   <works>1911,1915n,1915,1918</works>
 </person>
 
-<person id="bradstreet" lang="us" type="poet">
+<person id="bradstreet" country="us" lang="en" type="poet">
   <name>
     <firstname>Anne</firstname>
     <lastname>Bradstreet</lastname>
@@ -6194,7 +6194,7 @@
 
 <!-- Italienske digtere -->
 
-<person id="cavalcanti" lang="it" type="poet">
+<person id="cavalcanti" country="it" lang="it" type="poet">
   <name>
     <firstname>Guido</firstname>
     <lastname>Cavalcanti</lastname>
@@ -6209,7 +6209,7 @@
   </period>
 </person>
 
-<person id="dante" lang="it" type="poet">
+<person id="dante" country="it" lang="it" type="poet">
   <name>
     <firstname>Dante</firstname>
     <lastname>Alighieri</lastname>
@@ -6228,7 +6228,7 @@
   <works>commedia</works>
 </person>
 
-<person id="petrarca" lang="it" type="poet">
+<person id="petrarca" country="it" lang="it" type="poet">
   <name>
     <firstname>Francesco</firstname>
     <lastname>Petrarca</lastname>
@@ -6244,7 +6244,7 @@
   <works>1360</works>
 </person>
 
-<person id="todi" lang="it" type="poet">
+<person id="todi" country="it" lang="it" type="poet">
   <name>
     <firstname>Jacopone da</firstname>
     <lastname>Todi</lastname>
@@ -6259,7 +6259,7 @@
   </period>
 </person>
 
-<person id="boccaccio" lang="it" type="poet">
+<person id="boccaccio" country="it" lang="it" type="poet">
   <name>
     <firstname>Giovanni</firstname>
     <lastname>Boccaccio</lastname>
@@ -6277,7 +6277,7 @@
 </person>
 
 
-<person id="arezzo" lang="it" type="poet">
+<person id="arezzo" country="it" lang="it" type="poet">
   <name>
     <firstname>Guinttone d'</firstname>
     <lastname>Arezzo</lastname>
@@ -6294,7 +6294,7 @@
   </period>
 </person>
 
-<person id="segni" lang="it" type="poet">
+<person id="segni" country="it" lang="it" type="poet">
   <name>
     <firstname>Fabio</firstname>
     <lastname>Segni</lastname>
@@ -6310,7 +6310,7 @@
   <works>andre</works>
 </person>
 
-<person id="aquino" lang="it" type="poet">
+<person id="aquino" country="it" lang="it" type="poet">
   <name>
     <firstname>Rinaldo d'</firstname>
     <lastname>Aquino</lastname>
@@ -6325,7 +6325,7 @@
   </period>
 </person>
 
-<person id="guinizelli" lang="it" type="poet">
+<person id="guinizelli" country="it" lang="it" type="poet">
   <name>
     <firstname>Guido</firstname>
     <lastname>Guinizelli</lastname>
@@ -6340,7 +6340,7 @@
   </period>
 </person>
 
-<person id="publiese" lang="it" type="poet">
+<person id="publiese" country="it" lang="it" type="poet">
   <name>
     <firstname>Giacomo</firstname>
     <lastname>Publiese</lastname>
@@ -6355,7 +6355,7 @@
   </period>
 </person>
 
-<person id="pulci" lang="it" type="poet">
+<person id="pulci" country="it" lang="it" type="poet">
   <name>
     <firstname>Luigi</firstname>
     <lastname>Pulci</lastname>
@@ -6372,7 +6372,7 @@
   <works>1481</works>
 </person>
 
-<person id="poliziano" lang="it" type="poet">
+<person id="poliziano" country="it" lang="it" type="poet">
   <name>
     <firstname>Angelo</firstname>
     <lastname>Poliziano</lastname>
@@ -6387,7 +6387,7 @@
   </period>
 </person>
 
-<person id="tasso" lang="it" type="poet">
+<person id="tasso" country="it" lang="it" type="poet">
   <name>
     <firstname>Torquato</firstname>
     <lastname>Tasso</lastname>
@@ -6403,7 +6403,7 @@
   </period>
 </person>
 
-<person id="fiorentini" lang="it" type="poet">
+<person id="fiorentini" country="it" lang="it" type="poet">
   <name>
     <firstname>F.</firstname>
     <lastname>Fiorentini</lastname>
@@ -6419,7 +6419,7 @@
   <works>andre</works>
 </person>
 
-<person id="ariosto" lang="it" type="poet">
+<person id="ariosto" country="it" lang="it" type="poet">
   <name>
     <firstname>Ludovico</firstname>
     <lastname>Ariosto</lastname>
@@ -6434,7 +6434,7 @@
   </period>
 </person>
 
-<person id="michelangelo" lang="it" type="poet">
+<person id="michelangelo" country="it" lang="it" type="poet">
   <name>
     <firstname>Michelangelo</firstname>
     <lastname>Buonarroti</lastname>
@@ -6450,7 +6450,7 @@
   </period>
 </person>
 
-<person id="boiardo" lang="it" type="poet">
+<person id="boiardo" country="it" lang="it" type="poet">
   <name>
     <firstname>Matteo Maria</firstname>
     <lastname>Boiardo</lastname>
@@ -6466,7 +6466,7 @@
   </period>
 </person>
 
-<person id="molza" lang="it" type="poet">
+<person id="molza" country="it" lang="it" type="poet">
   <name>
     <firstname>Francesco Maria</firstname>
     <lastname>Molza</lastname>
@@ -6483,7 +6483,7 @@
   </period>
 </person>
 
-<person id="aretino" lang="it" type="poet">
+<person id="aretino" country="it" lang="it" type="poet">
   <name>
     <firstname>Pietro</firstname>
     <lastname>Aretino</lastname>
@@ -6498,7 +6498,7 @@
   </period>
 </person>
 
-<person id="bandello" lang="it" type="poet">
+<person id="bandello" country="it" lang="it" type="poet">
   <name>
     <firstname>Matteo Maria</firstname>
     <lastname>Bandello</lastname>
@@ -6513,7 +6513,7 @@
   </period>
 </person>
 
-<person id="berni" lang="it" type="poet">
+<person id="berni" country="it" lang="it" type="poet">
   <name>
     <firstname>Francesco</firstname>
     <lastname>Berni</lastname>
@@ -6530,7 +6530,7 @@
 </person>
 
 
-<person id="marino" lang="it" type="poet">
+<person id="marino" country="it" lang="it" type="poet">
   <name>
     <firstname>Giambattista</firstname>
     <lastname>Marino</lastname>
@@ -6545,7 +6545,7 @@
   </period>
 </person>
 
-<person id="valle" lang="it" type="poet">
+<person id="valle" country="it" lang="it" type="poet">
   <name>
     <firstname>Federigo della</firstname>
     <lastname>Valle</lastname>
@@ -6563,7 +6563,7 @@
   <works>1591</works>
 </person>
 
-<person id="campanella" lang="it" type="poet">
+<person id="campanella" country="it" lang="it" type="poet">
   <name>
     <firstname>Tommaso</firstname>
     <lastname>Campanella</lastname>
@@ -6578,7 +6578,7 @@
   </period>
 </person>
 
-<person id="metastasio" lang="it" type="poet">
+<person id="metastasio" country="it" lang="it" type="poet">
   <name>
     <firstname>Pietro</firstname>
     <lastname>Metastasio</lastname>
@@ -6594,7 +6594,7 @@
   </period>
 </person>
 
-<person id="goldoni" lang="it" type="poet">
+<person id="goldoni" country="it" lang="it" type="poet">
   <name>
     <firstname>Carlo</firstname>
     <lastname>Goldoni</lastname>
@@ -6609,7 +6609,7 @@
   </period>
 </person>
 
-<person id="parini" lang="it" type="poet">
+<person id="parini" country="it" lang="it" type="poet">
   <name>
     <firstname>Giuseppe</firstname>
     <lastname>Parini</lastname>
@@ -6624,7 +6624,7 @@
   </period>
 </person>
 
-<person id="alfieri" lang="it" type="poet">
+<person id="alfieri" country="it" lang="it" type="poet">
   <name>
     <firstname>Vittorio</firstname>
     <lastname>Alfieri</lastname>
@@ -6639,7 +6639,7 @@
   </period>
 </person>
 
-<person id="monti" lang="it" type="poet">
+<person id="monti" country="it" lang="it" type="poet">
   <name>
     <firstname>Vincenzo</firstname>
     <lastname>Monti</lastname>
@@ -6654,7 +6654,7 @@
   </period>
 </person>
 
-<person id="foscolo" lang="it" type="poet">
+<person id="foscolo" country="it" lang="it" type="poet">
   <name>
     <firstname>Ugo</firstname>
     <lastname>Foscolo</lastname>
@@ -6669,7 +6669,7 @@
   </period>
 </person>
 
-<person id="leopardi" lang="it" type="poet">
+<person id="leopardi" country="it" lang="it" type="poet">
   <name>
     <firstname>Giacomo</firstname>
     <lastname>Leopardi</lastname>
@@ -6685,7 +6685,7 @@
   </period>
 </person>
 
-<person id="manzoni" lang="it" type="poet">
+<person id="manzoni" country="it" lang="it" type="poet">
   <name>
     <firstname>Alessandro</firstname>
     <lastname>Manzoni</lastname>
@@ -6701,7 +6701,7 @@
   </period>
 </person>
 
-<person id="carducci" lang="it" type="poet">
+<person id="carducci" country="it" lang="it" type="poet">
   <name>
     <firstname>Giosuè</firstname>
     <lastname>Carducci</lastname>
@@ -6719,7 +6719,7 @@
 
 <!-- Personer som ikke er digtere -->
 
-<person id="heibergjohanne" lang="dk" type="person">
+<person id="heibergjohanne" country="dk" lang="da" type="person">
   <name>
     <firstname>Johanne Luise</firstname>
     <lastname>Heiberg</lastname>
@@ -6734,7 +6734,7 @@
   </period>
 </person>
 
-<person id="gierlew" lang="dk" type="person">
+<person id="gierlew" country="dk" lang="da" type="person">
   <name>
     <firstname>Andreas Chr.</firstname>
     <lastname>Gierlew</lastname>
@@ -6749,7 +6749,7 @@
   </period>
 </person>
 
-<person id="thorvaldsen" lang="dk" type="person">
+<person id="thorvaldsen" country="dk" lang="da" type="person">
   <name>
     <firstname>Bertel</firstname>
     <lastname>Thorvaldsen</lastname>
@@ -6765,7 +6765,7 @@
   </period>
 </person>
 
-<person id="eckersberg" lang="dk" type="person">
+<person id="eckersberg" country="dk" lang="da" type="person">
   <name>
     <firstname>C.W.</firstname>
     <lastname>Eckersberg</lastname>
@@ -6783,7 +6783,7 @@
   </period>
 </person>
 
-<person id="struensee" lang="dk" type="person">
+<person id="struensee" country="dk" lang="da" type="person">
   <name>
     <firstname>J.F.</firstname>
     <lastname>Struensee</lastname>
@@ -6801,7 +6801,7 @@
   </period>
 </person>
 
-<person id="rahbekk" lang="dk" type="person">
+<person id="rahbekk" country="dk" lang="da" type="person">
   <name>
     <firstname>Kamma</firstname>
     <lastname>Rahbek</lastname>
@@ -6817,7 +6817,7 @@
   </period>
 </person>
 
-<person id="steffens" lang="dk" type="person">
+<person id="steffens" country="dk" lang="da" type="person">
   <name>
     <firstname>Henrich</firstname>
     <lastname>Steffens</lastname>
@@ -6834,7 +6834,7 @@
   </period>
 </person>
 
-<person id="gyllembourg" lang="dk" type="person">
+<person id="gyllembourg" country="dk" lang="da" type="person">
   <name>
     <firstname>Thomasine</firstname>
     <lastname>Gyllembourg</lastname>
@@ -6853,7 +6853,7 @@
   </period>
 </person>
 
-<person id="roemer" lang="dk" type="person">
+<person id="roemer" country="dk" lang="da" type="person">
   <name>
     <firstname>Ole</firstname>
     <lastname>Rømer</lastname>

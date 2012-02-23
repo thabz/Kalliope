@@ -28,7 +28,7 @@ use Kalliope::Date ();
 #use strict;
 
 my $mode = url_param('mode') || 'titel';
-my $LA = url_param('sprog') || 'dk';
+my $country = url_param('sprog') || 'dk';
 my $limit = url_param('limit') && url_param('limit') eq 'no' ? 0 : 1;
 
 my %crumbTitle = ('aar'    => _('efter år'),
@@ -42,16 +42,16 @@ my %pageTitle =  ('aar'    => _('Værker efter år'),
 		  'pop'    => _('Mest populære værker' ));
 
 my @crumbs;
-push @crumbs,[_('Værker'),"worksfront.cgi?sprog=$LA"];
+push @crumbs,[_('Værker'),"worksfront.cgi?cn=$country"];
 push @crumbs,[$crumbTitle{$mode},''];
 
 my $page = new Kalliope::Page (
     title => _('Værker'),
-    titleLink => "worksfront.cgi?sprog=$LA",
-	subtitle => $crumbTitle{$mode},
-    lang => $LA,
-	crumbs => \@crumbs,
-	icon => 'works-green',
+    titleLink => "worksfront.cgi?cn=$country",
+    subtitle => $crumbTitle{$mode},
+    country => $country,
+    crumbs => \@crumbs,
+    icon => 'works-green',
     pagegroup => 'worklist',
     page => "kvaerker$mode" );
 
@@ -60,23 +60,23 @@ my $dbh = Kalliope::DB->connect;
 
 if ($mode eq 'titel') {
     my $HTML;
-    my $sth = $dbh->prepare("SELECT fornavn,efternavn,fnavne.fhandle,vhandle,titel,aar,hascontent FROM fnavne,vaerker WHERE sprog=? AND vaerker.fhandle = fnavne.fhandle ");
-    $sth->execute($LA);
+    my $sth = $dbh->prepare("SELECT fornavn,efternavn,fnavne.fhandle,vhandle,titel,aar,hascontent FROM fnavne,vaerker WHERE country = ? AND vaerker.fhandle = fnavne.fhandle ");
+    $sth->execute($country);
 
     my ($i,$et,$to,@f);
     $i = 0;
     while ($f[$i] = $sth->fetchrow_hashref) {
-	if ($LA eq 'dk' && $f[$i]->{'titel'} =~ /^Den |^Det |^Af /) {
+	if ($country eq 'dk' && $f[$i]->{'titel'} =~ /^Den |^Det |^Af /) {
 	    $f[$i]->{'titel'} =~ /^([^ ]+) (.*)/;
 	    $et = $1;
 	    $to = $2;
 	    $f[$i]->{'titel'} = $to.", ".$et;
-	} elsif ($LA eq 'uk' && $f[$i]->{'titel'} =~ /^The /) {
+	} elsif ($country eq 'gb' && $f[$i]->{'titel'} =~ /^The /) {
 	    $f[$i]->{'titel'} =~ /^([^ ]+) (.*)/;
 	    $et = $1;
 	    $to = $2;
 	    $f[$i]->{'titel'} = $to.", ".$et;
-	} elsif ($LA eq 'fr' && $f[$i]->{'titel'} =~ /^La |^Les /) {
+	} elsif ($country eq 'fr' && $f[$i]->{'titel'} =~ /^La |^Les /) {
 	    $f[$i]->{'titel'} =~ /^([^ ]+) (.*)/;
 	    $et = $1;
 	    $to = $2;
@@ -113,8 +113,8 @@ if ($mode eq 'titel') {
 
 } elsif ($mode eq 'aar') {
 
-    my $sth = $dbh->prepare("SELECT v.*,f.fornavn,f.efternavn FROM vaerker AS v, fnavne AS f WHERE f.fhandle = v.fhandle AND v.lang = ? AND v.aar != '?' AND v.aar IS NOT NULL ORDER BY v.aar ASC");
-    $sth->execute($LA);
+    my $sth = $dbh->prepare("SELECT v.*,f.fornavn,f.efternavn FROM vaerker AS v, fnavne AS f WHERE f.fhandle = v.fhandle AND v.country = ? AND v.aar != '?' AND v.aar IS NOT NULL ORDER BY v.aar ASC");
+    $sth->execute($country);
 
     my $HTML = '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>';
     #Udskriv titler på vaerker
@@ -150,9 +150,9 @@ if ($mode eq 'titel') {
 
 } elsif ($mode eq 'digter') {
     my $HTML;
-    my $sth = $dbh->prepare("SELECT fornavn, efternavn, fhandle FROM fnavne WHERE sprog = ? AND vers = 1");
+    my $sth = $dbh->prepare("SELECT fornavn, efternavn, fhandle FROM fnavne WHERE land = ? AND vers = 1");
     my $sthvaerker = $dbh->prepare("SELECT vid,titel,aar,hascontent FROM vaerker WHERE fhandle = ? ORDER BY aar");
-    $sth->execute($LA);
+    $sth->execute($country);
     my @f;
     while (my $f = $sth->fetchrow_hashref) {
 	$f->{'sort'} = ($f->{'efternavn'}||'').($f->{'fornavn'}||'');
@@ -196,8 +196,8 @@ if ($mode eq 'titel') {
 
 } elsif ($mode eq 'pop') {
     my $HTML;
-    my $sth = $dbh->prepare("SELECT fornavn, efternavn, v.titel as vtitel, v.vid, aar, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f, vaerker as v WHERE dh.longdid = d.longdid AND d.fhandle = f.fhandle AND d.vid = v.vid AND f.sprog=? GROUP BY v.vid,fornavn,efternavn,vtitel,aar,f.fhandle ORDER BY hits DESC ".($limit == 0 ? '' : 'LIMIT 10' ));
-    $sth->execute($LA);
+    my $sth = $dbh->prepare("SELECT fornavn, efternavn, v.titel as vtitel, v.vid, aar, f.fhandle, sum(hits) as hits, max(lasttime) as lasttime FROM digthits as dh,digte as d,fnavne as f, vaerker as v WHERE dh.longdid = d.longdid AND d.fhandle = f.fhandle AND d.vid = v.vid AND f.land = ? GROUP BY v.vid,fornavn,efternavn,vtitel,aar,f.fhandle ORDER BY hits DESC ".($limit == 0 ? '' : 'LIMIT 10' ));
+    $sth->execute($country);
     my $i = 1;
     my $total;
     my $aar;
@@ -216,7 +216,7 @@ if ($mode eq 'titel') {
 
     if ($limit == 1) {
         $HTML .= '</TABLE>';
-        $endHTML = '<A class="more" HREF="kvaerker.pl?mode=pop&limit=no&sprog='.$LA.'">'._("Se hele listen...").'</A>';
+        $endHTML = '<A class="more" HREF="kvaerker.pl?mode=pop&limit=no&cn='.$country.'">'._("Se hele listen...").'</A>';
     } else {
         $HTML .= "<TR><TD></TD><TD><B>"._("Total")."</B></TD><TD ALIGN=right>$total</TD><TD></TD></TR>";
         $HTML .= '</TABLE>';

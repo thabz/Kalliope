@@ -43,10 +43,10 @@ sub findByFhandle {
     }
 }
 
-sub findByLang {
-    my $lang = shift;
-    my $findByLangSth = $dbh->prepare("SELECT * FROM  fnavne WHERE sprog = ?");
-    $findByLangSth->execute($lang);
+sub findByCountry {
+    my $country = shift;
+    my $findByLangSth = $dbh->prepare("SELECT * FROM  fnavne WHERE land = ?");
+    $findByLangSth->execute($country);
     my @result;
     while (my $obj = $findByLangSth->fetchrow_hashref) {
 	bless $obj,'Kalliope::Person';

@@ -52,6 +52,10 @@ sub lastModified {
     return shift->{'cvstimestamp'};
 }
 
+sub language {
+    return shift->{'lang'};
+}
+
 sub isProse {
     return shift->{'type'} ne 'poetry';
 }
@@ -100,10 +104,10 @@ sub clickableTitle {
 }
 
 sub notes {
-    my $self = shift;
+    my ($self,$lang) = @_;
     my @notes;
-    my $sth = $dbh->prepare("SELECT note FROM worknotes WHERE vid = ? ORDER BY orderby");
-    $sth->execute($self->vid);
+    my $sth = $dbh->prepare("SELECT note FROM worknotes WHERE vid = ? AND lang = ?ORDER BY orderby");
+    $sth->execute($self->vid, $lang);
     while (my ($note) = $sth->fetchrow_array) {
 	push @notes,$note;
     }
@@ -111,8 +115,8 @@ sub notes {
 }
 
 sub notesAsHTML {
-    my $self = shift;
-    my @notes = $self->notes();
+    my ($self,$lang) = @_;
+    my @notes = $self->notes($lang);
     @notes = map { Kalliope::buildhrefs(\$_) } @notes;
     return @notes;
 }

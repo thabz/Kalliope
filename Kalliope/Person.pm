@@ -88,6 +88,10 @@ sub lang {
     return shift->{'sprog'};
 }
 
+sub country {
+    return shift->{'land'};
+}
+
 sub thumbURI {
     my $self = shift;
     return $self->{'thumb'} ? 'fdirs/'.$self->fhandle.'/thumb.jpg' : '';
@@ -215,7 +219,7 @@ sub getCrumbs {
     if ($self->getType eq 'person') {
 	push @crumbs,[_('Personer'),'persons.cgi?list=az'];
     } else {
-	push @crumbs,[_('Digtere'),'poets.cgi?list=az&amp;sprog='.$self->lang];
+	push @crumbs,[_('Digtere'),'poets.cgi?list=az&amp;cn='.$self->country];
     }
     if ($args{'front'}) {
         push @crumbs,[$self->name,''];

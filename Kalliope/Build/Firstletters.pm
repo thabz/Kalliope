@@ -26,14 +26,14 @@ use Kalliope::Sort;
 
 my $dbh = Kalliope::DB::connect();
 
-my $sthinsert = $dbh->prepare("INSERT INTO forbogstaver (bid,forbogstav,longdid,fhandle,lang,type) VALUES (nextval('seq_forbogstaver_bid'),?,?,?,?,?)");
+my $sthinsert = $dbh->prepare("INSERT INTO forbogstaver (bid,forbogstav,longdid,fhandle,lang,country,type) VALUES (nextval('seq_forbogstaver_bid'),?,?,?,?,?,?)");
 
 sub clean {
 }
 
 sub insert {
     my @changedWorks = @_;
-    $sth = $dbh->prepare("SELECT foerstelinie,tititel as titel,longdid,fhandle,lang FROM digte WHERE type='poem' AND vid = ? ORDER BY lang");
+    $sth = $dbh->prepare("SELECT foerstelinie,tititel as titel,longdid,fhandle,lang,country FROM digte WHERE type='poem' AND vid = ? ORDER BY lang");
     my @poems;
     foreach my $entry (@changedWorks) {
        $sth->execute($entry->{'fhandle'}."/".$entry->{'vhandle'});
@@ -56,7 +56,7 @@ sub _insert {
 	$f->{'sort'} =~ tr/ÁÀÉÈÖ0-9/AAEEØ........../;
 	my $letter = substr($f->{'sort'},0,1);
 	$letter = '.' unless $letter =~ /[A-ZÆØÅ]/;
-	$sthinsert->execute($letter, $$f{longdid}, $$f{fhandle},$f->{'lang'},$type);
+	$sthinsert->execute($letter, $$f{longdid}, $$f{fhandle},$f->{'lang'},$f->{'country'},$type);
     }
 }
 
@@ -68,10 +68,12 @@ sub create {
 	      longdid varchar(40) NOT NULL REFERENCES digte(longdid) ON DELETE CASCADE,
 	      fhandle varchar(50), -- NOT NULL REFERENCES fnavne(fhandle) ON DELETE RESTRICT,
 	      lang char(2) NOT NULL,
+	      country char(2) NOT NULL,
 	      type char(1)) -- ENUM('t','f') NOT NULL
 	      ");
    $dbh->do(q/CREATE INDEX forbogstaver_forbogstav ON forbogstaver(forbogstav)/);
    $dbh->do(q/CREATE INDEX forbogstaver_lang ON forbogstaver(lang)/);
+   $dbh->do(q/CREATE INDEX forbogstaver_country ON forbogstaver(country)/);
    $dbh->do(q/CREATE INDEX forbogstaver_type ON forbogstaver(type)/);
    $dbh->do(q/GRANT SELECT ON TABLE forbogstaver TO public/);
 }

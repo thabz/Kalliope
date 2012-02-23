@@ -75,7 +75,7 @@ sub latestPoems {
          my ($longdid,$createdate) = @h;
          $i++ if $lastDate != $createdate;
 	 my $poem = new Kalliope::Poem (longdid => $longdid);
-	 $blocks[$i]->{'body'} .= '<IMG ALT="" SRC="gfx/flags/'.$poem->author->lang.'_light.gif">';
+	 $blocks[$i]->{'body'} .= '<IMG ALT="" SRC="gfx/flags/'.$poem->author->country.'_light.gif">';
 	 $blocks[$i]->{'body'} .= $poem->clickableTitle."<br>";
 	 $blocks[$i]->{'count'}++;
 	 $blocks[$i]->{'createdate'} = $createdate;

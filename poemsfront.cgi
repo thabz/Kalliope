@@ -26,42 +26,42 @@ use Kalliope::Page ();
 use Kalliope::Web ();
 use CGI ();
 
-my $LA = CGI::url_param('sprog') || 'dk';
+my $country = CGI::url_param('cn') || 'dk';
 
 my @crumbs;
 push @crumbs,[_("Digte"),''];
 
 my $page = new Kalliope::Page (
 		title => _('Digte'),
-		lang => $LA,
+		lang => $country,
 		crumbs => \@crumbs,
 		nosubmenu => 1,
                 pagegroup => 'poemlist',
 	        icon => 'poem-turkis',
                 page => 'poemsfront'); 
 
-$page->addFrontMenu(&front($LA));
+$page->addFrontMenu(&front($country));
 
 $page->print;
 
 
 sub front {
-    my ($LA) = @_;
+    my ($country) = @_;
 
     my @menuStruct = (
-      { url => "klines.pl?mode=1&forbogstav=A&sprog=$LA", 
+      { url => "klines.pl?mode=1&forbogstav=A&cn=$country", 
 	title => _('Digte efter titler'), 
 	status => 1,
         desc => _("Digte ordnet efter titler"),
         icon => 'gfx/icons/poem-w96.png'
                     },{
-        url => "klines.pl?mode=0&forbogstav=A&sprog=$LA", 
+        url => "klines.pl?mode=0&forbogstav=A&cn=$country", 
 	title => _('Digte efter førstelinier'), 
 	status => 1,
         desc => _("Digte ordnet efter førstelinier"),
         icon => 'gfx/icons/poem-w96.png'
                     },{
-        url => "klines.pl?mode=2&sprog=$LA", 
+        url => "klines.pl?mode=2&cn=$country", 
 	title => _('Mest populære digte'), 
 	status => 1,
         desc => _("De mest læste digte i Kalliope"),

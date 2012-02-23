@@ -40,7 +40,7 @@ sub new {
     my ($class,%arg) = @_;
     $arg{'longdid'} = $arg{'id'} if $arg{'id'};
     confess "Need some kind of id to initialize a new poem\n" unless $arg{'longdid'};
-    my $sth = $dbh->prepare("SELECT did,fhandle,vid,longdid,toptitel,linktitel,toctitel,underoverskrift,foerstelinie,type,quality FROM digte WHERE longdid = ?");
+    my $sth = $dbh->prepare("SELECT did,fhandle,vid,longdid,toptitel,linktitel,toctitel,underoverskrift,foerstelinie,type,quality,lang FROM digte WHERE longdid = ?");
     $sth->execute($arg{'longdid'});
     return undef unless $sth->rows;
 
@@ -67,6 +67,10 @@ sub did {
 
 sub longdid {
     return $_[0]->{'longdid'};
+}
+
+sub language {
+    shift->{'lang'};
 }
 
 sub isProse {
@@ -368,9 +372,9 @@ sub getNumberOfVerses {
 }
 
 sub notes {
-    my $self = shift;
-    my $sth = $dbh->prepare("SELECT note FROM textnotes WHERE longdid = ? ORDER BY orderby");
-    $sth->execute($self->longdid);
+    my ($self,$lang) = @_;
+    my $sth = $dbh->prepare("SELECT note FROM textnotes WHERE longdid = ? AND lang = ? ORDER BY orderby");
+    $sth->execute($self->longdid,$lang);
     my @notes;
     while (my ($note) = $sth->fetchrow_array) {
 	$note = $self->resolveBiblioTags($note);
@@ -380,8 +384,8 @@ sub notes {
 }
 
 sub notesAsHTML {
-    my $self = shift;
-    my @notes = $self->notes();
+    my ($self,$lang) = @_;
+    my @notes = $self->notes($lang);
     @notes = map { Kalliope::buildhrefs(\$_) } @notes;
     return @notes;
 }

@@ -26,47 +26,47 @@ use Kalliope::Page ();
 use Kalliope::Web ();
 use CGI ();
 
-my $LA = CGI::url_param('sprog') || 'dk';
+my $country = CGI::url_param('cn') || 'dk';
 
 my @crumbs;
 push @crumbs,[_('Værker'),''];
 
 my $page = new Kalliope::Page (
-		title => _('Værker'),
-		lang => $LA,
-		crumbs => \@crumbs,
+	title => _('Værker'),
+	lang => $country,
+	crumbs => \@crumbs,
         pagegroup => 'worklist',
-		nosubmenu => 1,
-		icon => 'works-green',
+	nosubmenu => 1,
+	icon => 'works-green',
         page => 'worksfront'); 
 
-$page->addFrontMenu(&front($LA));
+$page->addFrontMenu(&front($country));
 $page->print;
 
 
 sub front {
-    my ($LA) = @_;
+    my ($country) = @_;
 
     my @menuStruct = ({ 
-        url => "kvaerker.pl?mode=titel&sprog=$LA", 
+        url => "kvaerker.pl?mode=titel&cn=$country", 
 	    title => _('Værker efter titel'), 
 	    status => 1,
         desc => _("Værker ordnet efter titel"),
         icon => 'gfx/icons/works-w96.png'
     },{
-        url => "kvaerker.pl?mode=aar&sprog=$LA", 
+        url => "kvaerker.pl?mode=aar&cn=$country", 
 	    title => _('Værker efter år'), 
 	    status => 1,
         desc => _("Værker ordnet efter udgivelsesår"),
         icon => 'gfx/icons/works-w96.png'
     },{
-        url => "kvaerker.pl?mode=digter&sprog=$LA", 
+        url => "kvaerker.pl?mode=digter&cn=$country", 
 	    title => _('Værker efter digter'), 
 	    status => 1,
         desc => _("Værker grupperet efter digter"),
         icon => 'gfx/icons/works-w96.png'
     },{
-        url => "kvaerker.pl?mode=pop&sprog=$LA", 
+        url => "kvaerker.pl?mode=pop&cn=$country", 
 	    title => _('Mest populære værker'), 
 	    status => 1,
         desc => _("De mest læste værker i Kalliope"),

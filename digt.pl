@@ -55,17 +55,17 @@ my ($longdid,$fhandle,$vhandle) = ($poem->longdid,$poet->fhandle,$work->longvid)
 #
 
 my @crumbs;
-push @crumbs,['Digtere','poets.cgi?list=az&amp;sprog='.$poet->lang];
+push @crumbs,['Digtere','poets.cgi?list=az&amp;cn='.$poet->country];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
 push @crumbs,['Værker','fvaerker.pl?fhandle='.$poet->fhandle];
 push @crumbs,[$work->titleWithYear,'vaerktoc.pl?fhandle='.$poet->fhandle.'&amp;vhandle='.$work->vhandle];
 push @crumbs,[$poem->linkTitle,''];
 
 my $page = newAuthor Kalliope::Page(poet => $poet,
-				                    printer => url_param('printer') || 0,
+				    printer => url_param('printer') || 0,
                                     page => 'vaerker',
                                     coloumnwidths => [70,30],
-				                    extrawindowtitle => $poem->linkTitle,
+				    extrawindowtitle => $poem->linkTitle,
                                     crumbs => \@crumbs);
 
 
@@ -188,8 +188,10 @@ sub moreLinks {
 
 sub poem {
     my ($poem,$needle,$biblemark) = @_;
+    my $lang = Kalliope::Internationalization::language();
+    my $textlang = $poem->language();
     my $div_class = $poem->isProse ? 'prose-body' : 'poem-body';
-    my $HTML = qq|<div class="$div_class instapaper_body"><article>|;
+    my $HTML = qq|<div lang="$textlang" class="$div_class instapaper_body"><article>|;
     $HTML .= '<h1 class="digtoverskrift">'.$poem->topTitle."</h1>";
     $HTML .= '<h2 class="digtunderoverskrift">'.$poem->subtitle.'</h2>' if $poem->subtitleAsHTML;
   
@@ -325,9 +327,10 @@ sub xrefs {
 
 sub notes {
     my ($poem,@keywords) = @_;
-    my $HTML = '<div class="noter">';
+    my $lang = Kalliope::Internationalization::language();
+    my $HTML = qq|<div class="noter" lang="$lang">|;
     $HTML .= '<aside>';
-    my @notes = $poem->notesAsHTML;
+    my @notes = $poem->notesAsHTML($lang);
     $HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center"><span class="noprint">&#149;&nbsp;&#149;&nbsp;&#149;</span></div>',@notes;
     if ($#keywords >= 0) {
 	$HTML .= '<span class="noprint keywords"><br><br><B>'._("Nøgleord").':</B> ';
@@ -335,7 +338,7 @@ sub notes {
 	$HTML .= '</span>';
     }
     $HTML .= "</aside>";
-    $HTML .= "</div>";
+    $HTML .= "</div><!-- noter -->";
     return $HTML;
 }
 
