@@ -441,10 +441,6 @@ GOOGLEADS
 
     print '<div class="paper-content">';
 
-    if ($self->{'countrySelector'}) {
-	print $self->countrySelector();
-    }
-
     print '<div class="columnholder">';
     my @widths = $self->getColoumnWidths;
     foreach my $colHTML (@{$self->{'coloumns'}}) {
@@ -463,6 +459,14 @@ GOOGLEADS
     print '<div class="clear"></div>';
     print '</div> <!-- columnholder -->';
     print '<div class="clear"></div>';
+
+
+    if ($self->{'countrySelector'}) {
+	print '<div class="country-selector">';
+	print $self->countrySelector();
+	print '</div><!-- country-selector -->';
+    }
+
     print '</div> <!-- paper-content -->';
     print '</div> <!-- paper -->';
     print '<div class="clear"></div>';
@@ -523,7 +527,7 @@ pageTracker._trackPageview();
 #
 sub countrySelector {
     my $self = shift;
-    my $selfLang = Kalliope::Internationalization::country(); 
+    my $selfLang = CGI::param('cn'); 
     my $HTML;
     my %titles = ( 
         dk => _('danske'),
@@ -537,15 +541,22 @@ sub countrySelector {
     
     my $url = $self->{'changelangurl'};
     
+    $HTML .= _('Se den ');
     foreach my $lang ('dk','gb','de','fr','se','no','it','us') {
        my $refURL = $url;
        $refURL =~ s/cn=../cn=$lang/;
        my $cssClass = $lang eq $selfLang ? 'selectedflag' : ';';
        my $alt = $lang eq $selfLang ? _('Du befinder dig i den %s samling.',$titles{$lang}) : _('Skift til den %s samling',$titles{$lang});
-       $HTML .= qq|<a class="$cssClass" title="$alt" href="$refURL">|;
-       $HTML .= Kalliope::Web::insertFlag($lang,$alt);
+       $HTML .= qq|<a title="$alt" href="$refURL">|;
+       my $link = $titles{$lang};
+       $link = "<b>$link</b>" if $lang eq $selfLang;
+       $HTML .= $link;
+#$HTML .= Kalliope::Web::insertFlag($lang,$alt);
        $HTML .= qq|</a>|;
+       $HTML .= _(' eller ') if $lang eq 'it';
+       $HTML .= ', ' if $lang ne 'it' and $lang ne 'us';
     }
+    $HTML .= _(' samling.');
     return $HTML;
 }
 

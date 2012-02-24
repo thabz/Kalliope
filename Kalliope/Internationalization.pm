@@ -525,20 +525,6 @@ $translation{'en-c1fe8f4607eb97f61b863a538019a274'} = "";
 $translation{'de-c1fe8f4607eb97f61b863a538019a274'} = "";
 $translation{'fr-c1fe8f4607eb97f61b863a538019a274'} = "";
 $translation{'it-c1fe8f4607eb97f61b863a538019a274'} = "";
-# ./Kalliope/Date.pm
-$translation{'I dag %s:%s'} = "07d41d9577c4abc42d71089692983343";
-$translation{'da-07d41d9577c4abc42d71089692983343'} = 'I dag %s:%s';
-$translation{'en-07d41d9577c4abc42d71089692983343'} = "Today %s:%s";
-$translation{'de-07d41d9577c4abc42d71089692983343'} = "";
-$translation{'fr-07d41d9577c4abc42d71089692983343'} = "";
-$translation{'it-07d41d9577c4abc42d71089692983343'} = "";
-# ./Kalliope/Date.pm
-$translation{'I går %s:%s'} = "cca280efd23ed9ba76209ec45d5c1387";
-$translation{'da-cca280efd23ed9ba76209ec45d5c1387'} = 'I går %s:%s';
-$translation{'en-cca280efd23ed9ba76209ec45d5c1387'} = "Yesterday %s:%s";
-$translation{'de-cca280efd23ed9ba76209ec45d5c1387'} = "";
-$translation{'fr-cca280efd23ed9ba76209ec45d5c1387'} = "";
-$translation{'it-cca280efd23ed9ba76209ec45d5c1387'} = "";
 # ./digt.pl
 $translation{'Indhold'} = "1bebc1ca10adbd9863a9367410f2d918";
 $translation{'da-1bebc1ca10adbd9863a9367410f2d918'} = 'Indhold';
@@ -1429,7 +1415,139 @@ $translation{'de-b04745626317e6772a7edc4e91d3daab'} = "";
 $translation{'fr-b04745626317e6772a7edc4e91d3daab'} = "";
 $translation{'it-b04745626317e6772a7edc4e91d3daab'} = "";
 
-
+# ./Kalliope/Page.pm
+$translation{' samling.'} = "2a2c1e31af213030290c22f1887893e7";
+$translation{'da-2a2c1e31af213030290c22f1887893e7'} = ' samling.';
+$translation{'en-2a2c1e31af213030290c22f1887893e7'} = " collection";
+$translation{'de-2a2c1e31af213030290c22f1887893e7'} = "";
+$translation{'fr-2a2c1e31af213030290c22f1887893e7'} = "";
+$translation{'it-2a2c1e31af213030290c22f1887893e7'} = "";
+# ./today.cgi
+$translation{'<i>Ingen begivenheder registreret.</i>'} = "d4a27fa94fbf79d622962afc7ce6740a";
+$translation{'da-d4a27fa94fbf79d622962afc7ce6740a'} = '<i>Ingen begivenheder registreret.</i>';
+$translation{'en-d4a27fa94fbf79d622962afc7ce6740a'} = "<i>Not events.</i>";
+$translation{'de-d4a27fa94fbf79d622962afc7ce6740a'} = "";
+$translation{'fr-d4a27fa94fbf79d622962afc7ce6740a'} = "";
+$translation{'it-d4a27fa94fbf79d622962afc7ce6740a'} = "";
+# ./today.cgi
+$translation{'Begivenheder'} = "708ae249d8171053821dc6c65b58ab6f";
+$translation{'da-708ae249d8171053821dc6c65b58ab6f'} = 'Begivenheder';
+$translation{'en-708ae249d8171053821dc6c65b58ab6f'} = "Events";
+$translation{'de-708ae249d8171053821dc6c65b58ab6f'} = "";
+$translation{'fr-708ae249d8171053821dc6c65b58ab6f'} = "";
+$translation{'it-708ae249d8171053821dc6c65b58ab6f'} = "";
+# ./today.cgi
+$translation{'Begivenheder i dag'} = "68d9f634bc5aa83bcefcc82a604b32e0";
+$translation{'da-68d9f634bc5aa83bcefcc82a604b32e0'} = 'Begivenheder i dag';
+$translation{'en-68d9f634bc5aa83bcefcc82a604b32e0'} = "Events today";
+$translation{'de-68d9f634bc5aa83bcefcc82a604b32e0'} = "";
+$translation{'fr-68d9f634bc5aa83bcefcc82a604b32e0'} = "";
+$translation{'it-68d9f634bc5aa83bcefcc82a604b32e0'} = "";
+# ./Kalliope/Page.pm
+$translation{'Dit sprog er %s.'} = "b4b5e3bfd908ce40870caa2169fef1fd";
+$translation{'da-b4b5e3bfd908ce40870caa2169fef1fd'} = 'Dit sprog er %s.';
+$translation{'en-b4b5e3bfd908ce40870caa2169fef1fd'} = "Your language is %s";
+$translation{'de-b4b5e3bfd908ce40870caa2169fef1fd'} = "";
+$translation{'fr-b4b5e3bfd908ce40870caa2169fef1fd'} = "";
+$translation{'it-b4b5e3bfd908ce40870caa2169fef1fd'} = "";
+# ./ffront.cgi,./Kalliope/Person.pm
+$translation{'Henvisninger til andre steder på internettet som har relevant information om \%s'} = "17b90ab0cf0d2830255043a9ebc1c19a";
+$translation{'da-17b90ab0cf0d2830255043a9ebc1c19a'} = 'Henvisninger til andre steder på internettet som har relevant information om %s';
+$translation{'en-17b90ab0cf0d2830255043a9ebc1c19a'} = "Links to other places on the internet with relevant information on %s";
+$translation{'de-17b90ab0cf0d2830255043a9ebc1c19a'} = "";
+$translation{'fr-17b90ab0cf0d2830255043a9ebc1c19a'} = "";
+$translation{'it-17b90ab0cf0d2830255043a9ebc1c19a'} = "";
+# ./Kalliope/Date.pm
+$translation{'I dag %s:%s'} = "6de5b7803168089e7b702353dc563ebb";
+$translation{'da-6de5b7803168089e7b702353dc563ebb'} = 'I dag %s:%s';
+$translation{'en-6de5b7803168089e7b702353dc563ebb'} = "Today %s:%s";
+$translation{'de-6de5b7803168089e7b702353dc563ebb'} = "";
+$translation{'fr-6de5b7803168089e7b702353dc563ebb'} = "";
+$translation{'it-6de5b7803168089e7b702353dc563ebb'} = "";
+# ./Kalliope/Date.pm
+$translation{'I går %s:%s'} = "22621136f4dee3af478e54d95f1919c1";
+$translation{'da-22621136f4dee3af478e54d95f1919c1'} = 'I går %s:%s';
+$translation{'en-22621136f4dee3af478e54d95f1919c1'} = "Yesterday %s:%s";
+$translation{'de-22621136f4dee3af478e54d95f1919c1'} = "";
+$translation{'fr-22621136f4dee3af478e54d95f1919c1'} = "";
+$translation{'it-22621136f4dee3af478e54d95f1919c1'} = "";
+# ./Kalliope/Date.pm
+$translation{'Jan Feb Mar Apr Maj Jun Jul Aug Sep Okt Nov Dec'} = "eb646be551c6b813938d8bdcb206bf24";
+$translation{'da-eb646be551c6b813938d8bdcb206bf24'} = 'Jan Feb Mar Apr Maj Jun Jul Aug Sep Okt Nov Dec';
+$translation{'en-eb646be551c6b813938d8bdcb206bf24'} = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec";
+$translation{'de-eb646be551c6b813938d8bdcb206bf24'} = "";
+$translation{'fr-eb646be551c6b813938d8bdcb206bf24'} = "";
+$translation{'it-eb646be551c6b813938d8bdcb206bf24'} = "";
+# ./Kalliope/Date.pm
+$translation{'Januar Februar Marts April Maj Juni Juli August September Oktober November December'} = "cae45e26c1b9d2835b3d0bb0254cf8fe";
+$translation{'da-cae45e26c1b9d2835b3d0bb0254cf8fe'} = 'Januar Februar Marts April Maj Juni Juli August September Oktober November December';
+$translation{'en-cae45e26c1b9d2835b3d0bb0254cf8fe'} = "January February Match April May June July August September October November December";
+$translation{'de-cae45e26c1b9d2835b3d0bb0254cf8fe'} = "";
+$translation{'fr-cae45e26c1b9d2835b3d0bb0254cf8fe'} = "";
+$translation{'it-cae45e26c1b9d2835b3d0bb0254cf8fe'} = "";
+# ./persons.cgi
+$translation{'Personer efter fødeår'} = "1deff5d4866d347c15a0a4c723ea76ba";
+$translation{'da-1deff5d4866d347c15a0a4c723ea76ba'} = 'Personer efter fødeår';
+$translation{'en-1deff5d4866d347c15a0a4c723ea76ba'} = "Persons by year of birth";
+$translation{'de-1deff5d4866d347c15a0a4c723ea76ba'} = "";
+$translation{'fr-1deff5d4866d347c15a0a4c723ea76ba'} = "";
+$translation{'it-1deff5d4866d347c15a0a4c723ea76ba'} = "";
+# ./Kalliope/Page.pm
+$translation{'Se den '} = "7aa26a5fc3200bafb38f42c77d04ab13";
+$translation{'da-7aa26a5fc3200bafb38f42c77d04ab13'} = 'Se den ';
+$translation{'en-7aa26a5fc3200bafb38f42c77d04ab13'} = "See the ";
+$translation{'de-7aa26a5fc3200bafb38f42c77d04ab13'} = "";
+$translation{'fr-7aa26a5fc3200bafb38f42c77d04ab13'} = "";
+$translation{'it-7aa26a5fc3200bafb38f42c77d04ab13'} = "";
+# ./Kalliope/Page.pm
+$translation{'Skift til %s sprog'} = "f1b5fedd09c8b2bbaa6a6465df5b0f39";
+$translation{'da-f1b5fedd09c8b2bbaa6a6465df5b0f39'} = 'Skift til %s sprog';
+$translation{'en-f1b5fedd09c8b2bbaa6a6465df5b0f39'} = "Change to %s language";
+$translation{'de-f1b5fedd09c8b2bbaa6a6465df5b0f39'} = "";
+$translation{'fr-f1b5fedd09c8b2bbaa6a6465df5b0f39'} = "";
+$translation{'it-f1b5fedd09c8b2bbaa6a6465df5b0f39'} = "";
+# ./Kalliope/Date.pm
+$translation{'Søn Man Tir Ons Tors Fre Lør'} = "19f91efe1009b171bbe1c4530de9d502";
+$translation{'da-19f91efe1009b171bbe1c4530de9d502'} = 'Søn Man Tir Ons Tors Fre Lør';
+$translation{'en-19f91efe1009b171bbe1c4530de9d502'} = "Sun Mon Tue Wed Thu Fri Sat";
+$translation{'de-19f91efe1009b171bbe1c4530de9d502'} = "";
+$translation{'fr-19f91efe1009b171bbe1c4530de9d502'} = "";
+$translation{'it-19f91efe1009b171bbe1c4530de9d502'} = "";
+# ./poets.cgi
+$translation{'Ukendt fødeår'} = "3fb695988be53d1711f29175f8e8fd2b";
+$translation{'da-3fb695988be53d1711f29175f8e8fd2b'} = 'Ukendt fødeår';
+$translation{'en-3fb695988be53d1711f29175f8e8fd2b'} = "Unknown year of birth";
+$translation{'de-3fb695988be53d1711f29175f8e8fd2b'} = "";
+$translation{'fr-3fb695988be53d1711f29175f8e8fd2b'} = "";
+$translation{'it-3fb695988be53d1711f29175f8e8fd2b'} = "";
+# ./today.cgi
+$translation{'Vælg dato'} = "a33f6b6e9ba58b25d2c5f7db60526de2";
+$translation{'da-a33f6b6e9ba58b25d2c5f7db60526de2'} = 'Vælg dato';
+$translation{'en-a33f6b6e9ba58b25d2c5f7db60526de2'} = "Choose date";
+$translation{'de-a33f6b6e9ba58b25d2c5f7db60526de2'} = "";
+$translation{'fr-a33f6b6e9ba58b25d2c5f7db60526de2'} = "";
+$translation{'it-a33f6b6e9ba58b25d2c5f7db60526de2'} = "";
+# ./Kalliope/Page.pm
+$translation{'dansk'} = "49948f9dde255985719f5e43f6e8d392";
+$translation{'da-49948f9dde255985719f5e43f6e8d392'} = 'dansk';
+$translation{'en-49948f9dde255985719f5e43f6e8d392'} = "danish";
+$translation{'de-49948f9dde255985719f5e43f6e8d392'} = "";
+$translation{'fr-49948f9dde255985719f5e43f6e8d392'} = "";
+$translation{'it-49948f9dde255985719f5e43f6e8d392'} = "";
+# ./Kalliope/Page.pm
+$translation{'engelsk'} = "181e4d1223aa271c719ddb03c2ee89f1";
+$translation{'da-181e4d1223aa271c719ddb03c2ee89f1'} = 'engelsk';
+$translation{'en-181e4d1223aa271c719ddb03c2ee89f1'} = "english";
+$translation{'de-181e4d1223aa271c719ddb03c2ee89f1'} = "";
+$translation{'fr-181e4d1223aa271c719ddb03c2ee89f1'} = "";
+$translation{'it-181e4d1223aa271c719ddb03c2ee89f1'} = "";
+# ./Kalliope/Page.pm
+$translation{' eller '} = "026944aa29103709a0a7124a59884789";
+$translation{'da-026944aa29103709a0a7124a59884789'} = ' eller ';
+$translation{'en-026944aa29103709a0a7124a59884789'} = " or ";
+$translation{'de-026944aa29103709a0a7124a59884789'} = "";
+$translation{'fr-026944aa29103709a0a7124a59884789'} = "";
+$translation{'it-026944aa29103709a0a7124a59884789'} = "";
 };
 
 1;

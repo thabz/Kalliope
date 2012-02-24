@@ -494,6 +494,16 @@ div.paper-content {
     padding: 20px 10px 0 10px;
 }
 
+div.country-selector {
+    padding: 20px 10px 0 20px;
+    text-align: left;
+    color: #888;
+}
+
+div.country-selector a {
+    color: #888;
+}
+
 
 div.columnholder {
     width: 100%;

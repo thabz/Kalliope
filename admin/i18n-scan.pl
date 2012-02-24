@@ -28,7 +28,7 @@ sub handle_file {
 	    $found =~ s/'/\\'/g;
 	    $found =~ s/\@/\\\@/g;
 	    $found =~ s/\$/\\\$/g;
-	    $found =~ s/\%/\\\%/g;
+	    $found =~ s/%/%/g;
 	    my @empty;
             $strings_found{$found} = \@empty if !($strings_found{$found});
 	    push @{$strings_found{$found}}, $path;
