@@ -51,6 +51,7 @@ my $page = new Kalliope::Page (
 	subtitle => $title,
 	pagegroup => 'poemlist',
 	page => $page,
+        countrySelector => 1,
 	icon => 'poem-turkis',
         lang => $country,
 	crumbs => \@crumbs );

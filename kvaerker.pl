@@ -53,6 +53,7 @@ my $page = new Kalliope::Page (
     crumbs => \@crumbs,
     icon => 'works-green',
     pagegroup => 'worklist',
+    countrySelector => 1,
     page => "kvaerker$mode" );
 
 my $dbh = Kalliope::DB->connect;

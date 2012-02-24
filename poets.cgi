@@ -82,6 +82,7 @@ my $page = new Kalliope::Page (
     country => $country,
     crumbs => \@crumbs,
     pagegroup => 'poets',
+    countrySelector => 1,
     thumb => 'gfx/icons/poet-h70.gif',
     page => $struct->{'page'}); 
 

@@ -441,6 +441,10 @@ GOOGLEADS
 
     print '<div class="paper-content">';
 
+    if ($self->{'countrySelector'}) {
+	print $self->countrySelector();
+    }
+
     print '<div class="columnholder">';
     my @widths = $self->getColoumnWidths;
     foreach my $colHTML (@{$self->{'coloumns'}}) {
@@ -519,7 +523,7 @@ pageTracker._trackPageview();
 #
 sub countrySelector {
     my $self = shift;
-    my $selfLang = $self->lang; 
+    my $selfLang = Kalliope::Internationalization::country(); 
     my $HTML;
     my %titles = ( 
         dk => _('danske'),
