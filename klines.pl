@@ -34,7 +34,7 @@ my $dbh = Kalliope::DB->connect;
 
 my $mode = url_param('mode') || 0;
 my $forbogstav = url_param('forbogstav') || 'a';
-my $country = url_param('cn') || 'dk';
+my $country = Kalliope::Internationalization::country();
 
 my $title = (_('Ordnet efter førstelinie'),_('Ordnet efter digttitel'),_('Mest populære'))[$mode];
 my $page = ('poem1stlines','poemtitles','poempopular')[$mode];

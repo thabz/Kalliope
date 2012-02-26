@@ -47,7 +47,7 @@ sub language {
 }
 
 sub country {
-    return _default_country(language());
+    return CGI::param("cn") || _default_country(language());
 }
 
 # If we don't have a lang in the URL, we need to redirect. 

@@ -49,7 +49,7 @@ sub new {
         $self->{$key} = $args{$key};
     }
     
-    $self->{'country'} = $args{'country'} || 'dk';
+    $self->{'country'} = Kalliope::Internationalization::country();
     $self->{'pagegroup'} = $args{'pagegroup'} || '';
     $self->{'page'} = $args{'page'} || '';
     $self->{'thumb'} = $args{'thumb'};

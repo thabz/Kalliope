@@ -28,7 +28,7 @@ use Kalliope::Date ();
 #use strict;
 
 my $mode = url_param('mode') || 'titel';
-my $country = url_param('sprog') || 'dk';
+my $country = Kalliope::Internationalization::country();
 my $limit = url_param('limit') && url_param('limit') eq 'no' ? 0 : 1;
 
 my %crumbTitle = ('aar'    => _('efter år'),

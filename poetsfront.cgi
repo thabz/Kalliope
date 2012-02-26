@@ -26,7 +26,7 @@ use Kalliope::Page ();
 use Kalliope::Web ();
 use CGI ();
 
-my $country = CGI::url_param('cn') || 'dk';
+my $country = Kalliope::Internationalization::country();
 
 my @crumbs;
 push @crumbs,[_('Digtere'),''];

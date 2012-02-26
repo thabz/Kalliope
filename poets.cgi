@@ -31,7 +31,7 @@ use Kalliope::Sort ();
 use Kalliope::Person ();
 use Kalliope::PersonHome ();
 
-my $country = CGI::url_param('cn') || 'dk';
+my $country = Kalliope::Internationalization::country();
 my $limit = CGI::url_param('limit') || '10';
 
 my %pageTypes = (
