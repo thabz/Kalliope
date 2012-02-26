@@ -60,7 +60,7 @@ if ($antal) {
     my $i = 0;
     while (my $h = $sth->fetchrow_hashref) {
         my $HTML .= '<div>';
-        $HTML .= Kalliope::Web::insertFlag($h->{sprog},'');
+        $HTML .= Kalliope::Web::insertFlag($h->{land},'');
 	    $HTML .= '<a href="ffront.cgi?fhandle='.$h->{'fhandle'}.'">'.$h->{'fornavn'}.' '.$h->{'efternavn'};
 	    $HTML .= ' <span class="gray">('.$h->{'foedt'}.'-'.$h->{'doed'}.')</span></a>';
 	    $HTML .= '</div>';
