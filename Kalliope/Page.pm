@@ -43,13 +43,13 @@ sub new {
     $self->{'coloumnwidths'} = [];
     $self->{'columnrule'} = 0;
     $self->{'cssClass'} = '';
+    $self->{'country'} = Kalliope::Internationalization::country();
 
     # Override defaults
     foreach my $key (keys %args) {
         $self->{$key} = $args{$key};
     }
     
-    $self->{'country'} = Kalliope::Internationalization::country();
     $self->{'pagegroup'} = $args{'pagegroup'} || '';
     $self->{'page'} = $args{'page'} || '';
     $self->{'thumb'} = $args{'thumb'};
@@ -104,6 +104,7 @@ sub newAuthor {
                                   coloumnwidths => $args{'coloumnwidths'},
                                   columrule => $args{'columnrule'},
                                   subtitle => $args{'subtitle'},
+                                  country => $poet->country,
                                   lang => $poet->lang,  %args);
     return $page;
 }
