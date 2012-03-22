@@ -22,6 +22,7 @@
 package Kalliope::DB;
 
 use strict;
+use utf8;
 use DBI;
 use Carp;
 use vars qw($COMC_DBH);
@@ -31,12 +32,13 @@ use vars qw($COMC_DBH);
 #my $DB_USER = 'jec';
 #my $DB_PASSWORD = '';
 
-my $DB_CONNECT_STRING = 'dbi:Pg:dbname=kalliope';
-#my $DB_CONNECT_STRING = 'dbi:Pg:dbname=beta';
+#my $DB_CONNECT_STRING = 'dbi:Pg:dbname=kalliope';
+my $DB_CONNECT_STRING = 'dbi:Pg:dbname=beta';
 my $DB_USER = 'jec';
 my $DB_PASSWORD = '';
-my %DB_ATTR = ( AutoCommit => 1, PrintError => 1, Warn => 1 );
-$ENV{PGCLIENTENCODING} = 'LATIN1';
+my %DB_ATTR = ( AutoCommit => 1, PrintError => 1, Warn => 1, pg_enable_utf8 => 1  );
+#$ENV{PGCLIENTENCODING} = 'LATIN1';
+#$ENV{PGCLIENTENCODING} = 'UNICODE';
 
 sub connect {
     # connect
@@ -52,7 +54,7 @@ sub connect {
 
 sub connect_error {
     print STDERR DBI::errstr."\n";
-#    Kalliope::Page::notFound('Der opstod en fejl under tilslutning til databasen, prøv igen senere!<p><i>'.$DBI::errstr.'</i>');
+#    Kalliope::Page::notFound('Der opstod en fejl under tilslutning til databasen, prÃ¸v igen senere!<p><i>'.$DBI::errstr.'</i>');
     exit;
 }
 

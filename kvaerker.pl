@@ -26,27 +26,28 @@ use Kalliope::Page();
 use Kalliope::Sort();
 use Kalliope::Date ();
 #use strict;
+use utf8;
 
 my $mode = url_param('mode') || 'titel';
 my $country = Kalliope::Internationalization::country();
 my $limit = url_param('limit') && url_param('limit') eq 'no' ? 0 : 1;
 
-my %crumbTitle = ('aar'    => _('efter år'),
+my %crumbTitle = ('aar'    => _('efter Ã¥r'),
                   'titel'  => _('efter titel'),
 		  'digter' => _('efter digter'),
-		  'pop'    => _('mest populære' ));
+		  'pop'    => _('mest populÃ¦re' ));
 
-my %pageTitle =  ('aar'    => _('Værker efter år'),
-                  'titel'  => _('Værker efter titel'),
-		  'digter' => _('Værker efter digter'),
-		  'pop'    => _('Mest populære værker' ));
+my %pageTitle =  ('aar'    => _('VÃ¦rker efter Ã¥r'),
+                  'titel'  => _('VÃ¦rker efter titel'),
+		  'digter' => _('VÃ¦rker efter digter'),
+		  'pop'    => _('Mest populÃ¦re vÃ¦rker' ));
 
 my @crumbs;
-push @crumbs,[_('Værker'),"worksfront.cgi?cn=$country"];
+push @crumbs,[_('VÃ¦rker'),"worksfront.cgi?cn=$country"];
 push @crumbs,[$crumbTitle{$mode},''];
 
 my $page = new Kalliope::Page (
-    title => _('Værker'),
+    title => _('VÃ¦rker'),
     titleLink => "worksfront.cgi?cn=$country",
     subtitle => $crumbTitle{$mode},
     country => $country,
@@ -87,12 +88,12 @@ if ($mode eq 'titel') {
 	$i++;
     };
 
-    # Udskriv titler på vaerker
+    # Udskriv titler pÃ¥ vaerker
     my ($new,$last) = ('','');
     foreach my $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
 	next if ( $f->{'aar'} && $f->{'aar'} eq "?");
 	next unless $f->{'titel'};
-	$f->{'sort'} =~ s/Aa/Å/g;
+	$f->{'sort'} =~ s/Aa/Ã…/g;
 	$new = Kalliope::Sort::myuc(substr($f->{'sort'},0,1));
 	if ($new ne $last) {
 	    $last = $new;
@@ -107,7 +108,7 @@ if ($mode eq 'titel') {
 	}
     }
 
-    $HTML .= "<BR><BR><I>"._("Denne oversigt indeholder kun værker som har et faktisk udgivelsesår")."</I><BR>";
+    $HTML .= "<BR><BR><I>"._("Denne oversigt indeholder kun vÃ¦rker som har et faktisk udgivelsesÃ¥r")."</I><BR>";
     $page->addBox( width => '80%',
                    content => $HTML );
     $page->print;
@@ -118,7 +119,7 @@ if ($mode eq 'titel') {
     $sth->execute($country);
 
     my $HTML = '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>';
-    #Udskriv titler på vaerker
+    #Udskriv titler pÃ¥ vaerker
     my ($last,$last2,$last3) = (0,0,0);  
     
     while (my $v = $sth->fetchrow_hashref) {
@@ -144,7 +145,7 @@ if ($mode eq 'titel') {
     }
     $HTML .= '</TABLE>';
 
-    $HTML .= "<BR><BR><I>"._("Denne oversigt indeholder kun værker som har et faktisk udgivelsesår")."</I><BR>";
+    $HTML .= "<BR><BR><I>"._("Denne oversigt indeholder kun vÃ¦rker som har et faktisk udgivelsesÃ¥r")."</I><BR>";
     $page->addBox( width => '80%',
                    content => $HTML );
     $page->print;
@@ -163,7 +164,7 @@ if ($mode eq 'titel') {
     my $last = "";
     my ($new,$html,$f,$v,$aar);
     foreach $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
-	$f->{'sort'} =~ s/Aa/Å/g;
+	$f->{'sort'} =~ s/Aa/Ã…/g;
 	$new = substr($f->{'sort'},0,1);
 	if ($new ne $last) {
 	    $last = $new;

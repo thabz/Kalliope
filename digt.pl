@@ -27,6 +27,7 @@ use Kalliope::Page;
 use Kalliope::Help;
 use CGI qw(:standard);
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -57,7 +58,7 @@ my ($longdid,$fhandle,$vhandle) = ($poem->longdid,$poet->fhandle,$work->longvid)
 my @crumbs;
 push @crumbs,['Digtere','poets.cgi?list=az&amp;cn='.$poet->country];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
-push @crumbs,['Værker','fvaerker.pl?fhandle='.$poet->fhandle];
+push @crumbs,['VÃ¦rker','fvaerker.pl?fhandle='.$poet->fhandle];
 push @crumbs,[$work->titleWithYear,'vaerktoc.pl?fhandle='.$poet->fhandle.'&amp;vhandle='.$work->vhandle];
 push @crumbs,[$poem->linkTitle,''];
 
@@ -134,7 +135,7 @@ if (&xrefs($poem)) {
 #$page->addBox( width => '200',
 #               coloumn => 2,
 #	       theme => 'dark',
-#               title => _('Nøgleord'),
+#               title => _('NÃ¸gleord'),
 #               content => &keywords($poem) );
 
 
@@ -166,9 +167,9 @@ sub moreLinks {
     my $longdid = $poem->longdid;
     my $HTML = '';
     if (!$poem->isProse && !$poem->isBible ) {
-        $HTML .= qq|<a title="|._("Tilføj/fjern linjenumre").qq|" href="javascript:{}" onclick="\$('.linenumber').toggle()">|._("Vis linienumre...").qq|<span class="linenumber">&#x2611;</span><span class="linenumber" style="display:none">&#x2610;</span></a><br>|;
+        $HTML .= qq|<a title="|._("TilfÃ¸j/fjern linjenumre").qq|" href="javascript:{}" onclick="\$('.linenumber').toggle()">|._("Vis linienumre...").qq|<span class="linenumber">&#x2611;</span><span class="linenumber" style="display:none">&#x2610;</span></a><br>|;
     }
-    $HTML .= qq|<a class="more" title="|._("Vis denne tekst i et format som pænere når udskrevet").qq|" href="digt.pl?longdid=$longdid&amp;printer=1">|._("Vis printudgave...").qq|</a><br>|;
+    $HTML .= qq|<a class="more" title="|._("Vis denne tekst i et format som pÃ¦nere nÃ¥r udskrevet").qq|" href="digt.pl?longdid=$longdid&amp;printer=1">|._("Vis printudgave...").qq|</a><br>|;
     $HTML .= qq|<a title="|._("Send redaktionen en rettelse til denne tekst").qq|" class="more" onClick="window.open('korrektur.cgi?longdid=$longdid','Korrekturpopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=330'); return false" href="javascript:{}">|._("Send en rettelse...").qq|</a><br>|;
 
     my $nextPoem = $work->getNextPoem($longdid);
@@ -176,12 +177,12 @@ sub moreLinks {
     if ($nextPoem) {
 	my $poem = Kalliope::PoemHome::findByLongdid($nextPoem);
 	my $title = $poem->linkTitle;
-        $HTML .= qq|<a class="more" title="|._("Gå til »%s«",$title).qq| href="digt.pl?longdid=$nextPoem">|._("Næste tekst...").qq|</a><br>|;
+        $HTML .= qq|<a class="more" title="|._("GÃ¥ til Â»%sÂ«",$title).qq| href="digt.pl?longdid=$nextPoem">|._("NÃ¦ste tekst...").qq|</a><br>|;
     }
     if ($prevPoem) {
 	my $poem = Kalliope::PoemHome::findByLongdid($prevPoem);
 	my $title = $poem->linkTitle;
-        $HTML .= qq|<a class="more" title="|._("Gå til »%s«",$title).qq| href="digt.pl?longdid=$prevPoem">|._("Forrige tekst...").qq|</a><br>|;
+        $HTML .= qq|<a class="more" title="|._("GÃ¥ til Â»%sÂ«",$title).qq| href="digt.pl?longdid=$prevPoem">|._("Forrige tekst...").qq|</a><br>|;
     }
     return $HTML;
 }
@@ -197,14 +198,14 @@ sub poem {
   
     $HTML .= $poem->content($biblemark);
 
-    foreach (1..4) { # TODO: Løs dette mere elegant.
+    foreach (1..4) { # TODO: LÃ¸s dette mere elegant.
 	$HTML =~ s/ -&nbsp;/ &mdash;&nbsp;/g;
 	$HTML =~ s/ - / &mdash; /g;
 	$HTML =~ s/>- />&mdash; /gm;
 	$HTML =~ s/&nbsp;- /&nbsp;&mdash; /gm;
 	$HTML =~ s/ -<br>/ &mdash;<br>/gi;
 	$HTML =~ s/ -&ldquo;/ &mdash;&ldquo;/g;
-	$HTML =~ s/ -([\!;\?\.»«,:])/ &mdash;$1/g;
+	$HTML =~ s/ -([\!;\?\.Â»Â«,:])/ &mdash;$1/g;
     }
 
     $HTML =~ s/<footmark id="footnote([^"]+)"\/>/<A CLASS="green" NAME="footnotemark$1" HREF="#footnotedesc$1"><sup>$1<\/sup><\/A>/gsi;
@@ -212,7 +213,7 @@ sub poem {
     if ($needle) {
 	    $needle =~ s/^\s+//;
 	    $needle =~ s/\s+$//;
-	    $needle =~ s/[^a-zA-ZäëöáéíúæøåÆØÅ ]//g;
+	    $needle =~ s/[^a-zA-ZÃ¤Ã«Ã¶Ã¡Ã©Ã­ÃºÃ¦Ã¸Ã¥Ã†Ã˜Ã… ]//g;
 	    my @needle = split /\s+/,$needle;
 	    my $split1 = time+10043;
 	    my $split2 = time+10045;
@@ -272,10 +273,10 @@ sub keywords {
 	}
 	$HTML =~ s/, $//;
     } else {
-        $HTML .= _('Dette digt har endnu ingen nøgleord tilknyttet.');
+        $HTML .= _('Dette digt har endnu ingen nÃ¸gleord tilknyttet.');
     }
     my $longdid = $poem->longdid;
-    $HTML .= qq|<br><BR>|._('Tilføj nøgleord').qq|<BR><FORM METHOD="get"><INPUT TYPE="text" CLASS="inputtext" NAME="newkeywords"><INPUT TYPE="hidden" NAME="longdid" VALUE="$longdid"><INPUT TYPE="submit" CLASS="button" VALUE="|._("Tilføj").qq|"> |;
+    $HTML .= qq|<br><BR>|._('TilfÃ¸j nÃ¸gleord').qq|<BR><FORM METHOD="get"><INPUT TYPE="text" CLASS="inputtext" NAME="newkeywords"><INPUT TYPE="hidden" NAME="longdid" VALUE="$longdid"><INPUT TYPE="submit" CLASS="button" VALUE="|._("TilfÃ¸j").qq|"> |;
     $HTML .= Kalliope::Help->new('keywordadd')->linkAsHTML;
     $HTML .= '</FORM>';
     $HTML .= '</SPAN>';
@@ -310,7 +311,7 @@ sub tableOfContents {
 sub otherFormats {
     my ($poet,$poem) = @_;
     my ($longdid,$fhandle) = ($poem->longdid,$poet->fhandle);
-    return qq|<A HREF="digtprinter.pl?fhandle=$fhandle&amp;longdid=$longdid"><IMG SRC="gfxold/gfx/printer.gif" BORDER=0 ALT="|._("Vis dette digt opsat på en side lige til at printe ud.").qq|"></A><BR>|._("Printer venligt").qq|<BR>|;
+    return qq|<A HREF="digtprinter.pl?fhandle=$fhandle&amp;longdid=$longdid"><IMG SRC="gfxold/gfx/printer.gif" BORDER=0 ALT="|._("Vis dette digt opsat pÃ¥ en side lige til at printe ud.").qq|"></A><BR>|._("Printer venligt").qq|<BR>|;
 }
 
 
@@ -333,7 +334,7 @@ sub notes {
     my @notes = $poem->notesAsHTML($lang);
     $HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center"><span class="noprint">&#149;&nbsp;&#149;&nbsp;&#149;</span></div>',@notes;
     if ($#keywords >= 0) {
-	$HTML .= '<span class="noprint keywords"><br><br><B>'._("Nøgleord").':</B> ';
+	$HTML .= '<span class="noprint keywords"><br><br><B>'._("NÃ¸gleord").':</B> ';
         $HTML .= join ', ', map { $_->clickableTitle($LA) } @keywords;
 	$HTML .= '</span>';
     }

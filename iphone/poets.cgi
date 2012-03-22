@@ -14,7 +14,7 @@ my $last = "";
 my $poetListHTML = '<ul id="poets" title="Digtere" selected="true">';
 foreach my $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
     next unless $f->{'sort'};
-    $f->{'sort'} =~ s/Aa/Å/g;
+    $f->{'sort'} =~ s/Aa/Ã/g;
     $new = uc substr($f->{'sort'},0,1);
     if ($new ne $last) {
 	$last = $new;            

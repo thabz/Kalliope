@@ -20,6 +20,8 @@
 #
 #  $Id$
 
+use utf8;
+binmode STDOUT => ":utf8";
 use CGI qw /:standard/;
 use Kalliope::Web;
 use Kalliope::Page;
@@ -29,14 +31,15 @@ use Kalliope::DB;
 use Kalliope::Sort;
 use Kalliope;
 use URI::Escape;
+use Encode;
 use strict;
 
 my $dbh = Kalliope::DB->connect;
 
 my $page;
 
-my $wid = url_param('wid');
-my $letter = url_param('letter');
+my $wid = decode utf8 => url_param('wid');
+my $letter = decode utf8 => url_param('letter');
 my @crumbs;
 push @crumbs,['Baggrund','metafront.cgi'];
 push @crumbs,['Ordbog','dict.cgi'];
@@ -64,7 +67,7 @@ if ($wid) {
     Kalliope::buildhrefs(\$forkl);
     $HTML .= $forkl;
 
-    $HTML .= qq|<br><br><a class="green" href="ksearch.cgi?sprog=dk&type=free&needle=|.uri_escape($$h{word}).q|">Søg</a> efter tekster, som indeholder dette ord.|;
+    $HTML .= qq|<br><br><a class="green" href="ksearch.cgi?sprog=dk&type=free&needle=|.uri_escape_utf8($$h{word}).q|">SÃ¸g</a> efter tekster, som indeholder dette ord.|;
 
     $page->addBox (
 	    width => "80%",
@@ -74,6 +77,7 @@ if ($wid) {
 
 unless ($letter) {
     open FILE,'data/html/dictintro.html';
+    binmode FILE => ":utf8";
     my $HTML = join '',<FILE>;
     close FILE;
     $page->addBox (
@@ -96,13 +100,13 @@ while (my $h = $sth->fetchrow_hashref) {
     if (defined $wid && $wid eq $$h{wid}) {
         $$h{word} = "<b>$$h{word}</b>";
     }
-    $HTML .= qq|<A HREF="dict.cgi?wid=|.uri_escape($$h{wid}).qq|">$$h{word}</A><br>|;
+    $HTML .= qq|<A HREF="dict.cgi?wid=|.uri_escape_utf8($$h{wid}).qq|">$$h{word}</A><br>|;
     $HTML .= '</td><td width="50%" valign="top">' if ++$i == int($rows/2);
 }
 $HTML .= '</td></tr></table>';
 
 
-# Bogstavrække
+# BogstavrÃ¦kke
 
 $sth = $dbh->prepare ("SELECT DISTINCT firstletter FROM dict ORDER BY firstletter ASC");
 $sth->execute();
@@ -115,7 +119,7 @@ my @tabs;
 foreach my $mymyletter (sort {  Kalliope::Sort::sort($a,$b) } @letters) {
     my $myletter = $mymyletter->{'sort'};
     my $tab;
-    $tab->{'url'} = 'dict.cgi?letter='.uri_escape($myletter);
+    $tab->{'url'} = 'dict.cgi?letter='.uri_escape_utf8($myletter);
     $tab->{'text'} = Kalliope::Strings::uc($myletter);
     $tab->{'title'} = "Ord som begynder med $myletter";
     $tab->{'id'} = $myletter;

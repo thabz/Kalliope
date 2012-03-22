@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-#  Udskriver Kalliopes forside: Nyheder, Dagen idag, Sonnetten på pletten.
+#  Udskriver Kalliopes forside: Nyheder, Dagen idag, Sonnetten pÃ¥ pletten.
 #
 #  Copyright (C) 1999-2001 Jesper Christensen 
 #
@@ -25,14 +25,15 @@
 use Kalliope::Page();
 use Kalliope::DB();
 use Kalliope;
+use utf8;
 
 $dbh = Kalliope::DB::connect();
 
 my @crumbs = (['Velkommen',''],
-	      ['Sært','']);
+	      ['SÃ¦rt','']);
 
 my $page = new Kalliope::Page (
-		title => 'Kalliope - sære facts',
+		title => 'Kalliope - sÃ¦re facts',
                 pagegroup => 'welcome',
 		crumbs => \@crumbs,
 		changelangurl => 'poets.cgi?list=az&sprog=XX',
@@ -40,7 +41,7 @@ my $page = new Kalliope::Page (
            );
 
 
-$HTML = '<h3>Sære facts</h3><ul>';
+$HTML = '<h3>SÃ¦re facts</h3><ul>';
 
 $val = getVal("SELECT count(*) FROM digte WHERE layouttype = 'digt' AND afsnit != 1");
 $val2 = getVal("select count(*) from digte where noter != ''");
@@ -56,10 +57,10 @@ $HTML .= "<li>$val digte har en henvisning til et andet digt.";
 
 $antalpoets = getVal("SELECT count(*) FROM fnavne");
 $val2 = getVal("SELECT count(*) FROM fnavne where vers = 1");
-$HTML .= "<li>Af de $antalpoets digtere i Kalliope, kan man læse digte hos de $val2 af dem.";
+$HTML .= "<li>Af de $antalpoets digtere i Kalliope, kan man lÃ¦se digte hos de $val2 af dem.";
 
 $val = getVal("select sum(pics) from fnavne");
-$HTML .= "<li>Der findes $val portrætter i Kalliope.";
+$HTML .= "<li>Der findes $val portrÃ¦tter i Kalliope.";
 
 $val = getVal("SELECT count(*) FROM fnavne where bio != ''");
 $HTML .= "<li>Der findes $val biografier i Kalliope.";
@@ -78,14 +79,14 @@ $HTML .= "<li>Af de $antalpoets digtere i Kalliope, er de $dk danske, $se svensk
 $val = getVal("select count(*) from vaerker where status = 'complete'");
 $val2 = getVal("select count(*) from vaerker");
 $val3 = getVal("select count(*) from vaerker where findes = 1");
-$HTML .= "<li>Af de $val2 værker som Kalliope kender til, har $val3 indhold og  $val er komplette.";
+$HTML .= "<li>Af de $val2 vÃ¦rker som Kalliope kender til, har $val3 indhold og  $val er komplette.";
 
 $val = sprintf ("%.0d",getVal("select avg(doed-foedt) from fnavne"));
-$HTML .= "<li>Digterne blev i gennemsnit $val år gamle.";
+$HTML .= "<li>Digterne blev i gennemsnit $val Ã¥r gamle.";
 
 $HTML .= '</ul>';
 
-$HTML .= '<h3>Årets runde datoer</h3>';
+$HTML .= '<h3>Ã…rets runde datoer</h3>';
 $HTML .= '<table>';
 my $sth = $dbh->prepare("select * from timeline where (? - year) % 50 = 0 and type = 'event' order by month,day");
 $sth->execute(2002);
@@ -103,7 +104,7 @@ while ($h = $sth->fetchrow_hashref) {
     $HTML .= $text;
     $HTML .= '</td><td nowrap>(';
     $HTML .= 2002-$h->{'year'};
-    $HTML .= ' år)</td></tr>';
+    $HTML .= ' Ã¥r)</td></tr>';
 }
 $HTML .= '</table>';
 $page->addBox( content => $HTML );

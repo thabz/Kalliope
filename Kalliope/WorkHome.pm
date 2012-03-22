@@ -23,6 +23,7 @@
 package Kalliope::WorkHome;
 
 use Kalliope::Work;
+use utf8;
 
 my %cache;
 my $dbh = Kalliope::DB->connect;

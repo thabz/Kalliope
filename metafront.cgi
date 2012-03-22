@@ -21,6 +21,7 @@
 #  $Id$
 
 use strict;
+use utf8;
 use Kalliope;
 use Kalliope::Page ();
 use Kalliope::Web ();
@@ -50,21 +51,21 @@ sub front {
 
     my @menuStruct = ({ 
         url => "keywordtoc.cgi?sprog=$LA", 
-	    title => _('Nøgleord'), 
+	    title => _('NÃ¸gleord'), 
 	    status => $language eq 'da',
-        desc => _("Litteraturhistoriske skitser og forklaringer af litterære begreber."),
+        desc => _("Litteraturhistoriske skitser og forklaringer af litterÃ¦re begreber."),
         icon => 'gfx/icons/keywords-w96.png'
     },{
         url => "dict.cgi", 
 	    title => _('Ordbog'), 
 	    status => $language eq 'da', 
-        desc => _("Forklaringer til svære eller usædvanlige ord som man støder på i de ældre digte."),
+        desc => _("Forklaringer til svÃ¦re eller usÃ¦dvanlige ord som man stÃ¸der pÃ¥ i de Ã¦ldre digte."),
         icon => 'gfx/icons/keywords-w96.png'
     },{
 	    url => "persons.cgi?list=az", 
 	    title => _('Personer'), 
 	    status => $language eq 'da',
-        desc => _("Litterært interessante personer som ikke har skrevet lyrik."),
+        desc => _("LitterÃ¦rt interessante personer som ikke har skrevet lyrik."),
         icon => 'gfx/icons/portrait-w96.png',
     },{
 	    url => "kabout.pl?page=about", 

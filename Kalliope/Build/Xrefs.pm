@@ -24,6 +24,7 @@ package Kalliope::Build::Xrefs;
     
 use Kalliope::DB;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB::connect();
 

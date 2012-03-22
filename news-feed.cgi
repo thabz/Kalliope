@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-#  Viser senest tilføjede digte som rss feed.
+#  Viser senest tilfÃ¸jede digte som rss feed.
 #
 #  Copyright (C) 2005 Jesper Christensen 
 #
@@ -25,6 +25,7 @@
 use Kalliope::Page::Feed;
 use Kalliope::Poem;
 use strict;
+use utf8;
 
 my $DAYS_TO_SHOW = 200;
 

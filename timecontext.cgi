@@ -22,6 +22,7 @@
 
 
 use strict;
+use utf8;
 use CGI qw/:standard/;
 use Kalliope::Help;
 use Kalliope::Page::Popup;

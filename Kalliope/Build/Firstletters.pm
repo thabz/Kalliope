@@ -23,6 +23,7 @@ package Kalliope::Build::Firstletters;
 
 use Kalliope::DB;
 use Kalliope::Sort;
+use utf8;
 
 my $dbh = Kalliope::DB::connect();
 
@@ -52,10 +53,10 @@ sub _insert {
     my ($type,@f) = @_;
     foreach $f (sort { Kalliope::Sort::sort ($a,$b) } @f) {
 	next unless $f->{'sort'};
-	$f->{'sort'} =~ s/Aa/Å/g;
-	$f->{'sort'} =~ tr/ÁÀÉÈÖ0-9/AAEEØ........../;
+	$f->{'sort'} =~ s/Aa/Ã…/g;
+	$f->{'sort'} =~ tr/ÃÃ€Ã‰ÃˆÃ–0-9/AAEEÃ˜........../;
 	my $letter = substr($f->{'sort'},0,1);
-	$letter = '.' unless $letter =~ /[A-ZÆØÅ]/;
+	$letter = '.' unless $letter =~ /[A-ZÃ†Ã˜Ã…]/;
 	$sthinsert->execute($letter, $$f{longdid}, $$f{fhandle},$f->{'lang'},$f->{'country'},$type);
     }
 }

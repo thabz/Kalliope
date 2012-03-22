@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-#  Viser senest tilføjede digte som rss feed.
+#  Viser senest tilfÃ¸jede digte som rss feed.
 #
 #  Copyright (C) 2005 Jesper Christensen 
 #
@@ -25,13 +25,14 @@
 use Kalliope::Page::Feed;
 use Kalliope::Poem;
 use strict;
+use utf8;
 
 my $DAYS_TO_SHOW = 200;
 
 my $link = 'http://www.kalliope.org/latest.cgi';
 
 my $page = new Kalliope::Page::Feed(
-	rss_feed_title => 'Kalliope - seneste tilføjelser',
+	rss_feed_title => 'Kalliope - seneste tilfÃ¸jelser',
 	rss_feed_url => $link 
 	);
 
@@ -51,7 +52,7 @@ while (my @h = $sth->fetchrow_array) {
     if ($authorName ne $lastAuthor) {
 	$blocks[$i]->{'descr'} .= $authorName.": ";
     }
-    $blocks[$i]->{'descr'} .= "»".$poem->linkTitle."«, ";
+    $blocks[$i]->{'descr'} .= "Â»".$poem->linkTitle."Â«, ";
     $blocks[$i]->{'count'}++;
     $blocks[$i]->{'createdate'} = $createdate;
     $lastDate = $createdate;
@@ -62,7 +63,7 @@ for (my $j = 0; $j<=$i; $j++) {
     $descr =~ s/, $//;
     my $date = $blocks[$j]->{'createdate'};
     my $dateForDisplay = lc Kalliope::Date::longDate($date);
-    $page->addItem("Tilføjelser $dateForDisplay",
+    $page->addItem("TilfÃ¸jelser $dateForDisplay",
 	           $link."?date=".$date,$descr,
 		   $blocks[$j]->{'createdate'});
 }

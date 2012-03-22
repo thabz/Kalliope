@@ -27,6 +27,7 @@ use Kalliope::DB;
 use Kalliope;
 use XML::Twig;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB::connect();
 

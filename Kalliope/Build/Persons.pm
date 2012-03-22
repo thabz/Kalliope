@@ -26,6 +26,7 @@ use XML::Twig;
 use Kalliope::DB;
 use Kalliope::Date;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB::connect();
 
@@ -95,7 +96,7 @@ sub parse {
 		$d .= '<b>Pseudonym: </b>'.$person->first_child('name')->first_child('pseudonym')->text;
 	    }
 	    if ($person->first_child('name')->first_child('realname')) {
-		$d .= '<b>Dåbsnavn: </b>'.$person->first_child('name')->first_child('realname')->text;
+		$d .= '<b>DÃ¥bsnavn: </b>'.$person->first_child('name')->first_child('realname')->text;
 	    }
 	    if ($person->first_child('name')->first_child('alternative')) {
 		$d .= '<b>Andet navn: </b>'.$person->first_child('name')->first_child('alternative')->text;
@@ -199,7 +200,7 @@ sub insert {
 	
 	if (-e $fdir."/vaerker.txt") {
 	    $fvaerker=1;
-            # Undersøg om der er indhold i disse vaerker.
+            # UndersÃ¸g om der er indhold i disse vaerker.
 	    open (FILE,$fdir."/vaerker.txt");
 	    foreach (<FILE>) {
 		my ($vhandle,$titel,$vaar,$type) = split(/=/,$_);

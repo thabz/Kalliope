@@ -26,6 +26,7 @@ use Carp;
 use Kalliope::DB;
 use Kalliope::Person;
 use Kalliope::Poem;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -117,7 +118,7 @@ sub getSearchResultEntry {
     $title =~ s/\n/<B>/g;
     $title =~ s/\t/<\/B>/g;
     
-    my $HTML = '<IMG ALT="Nøgleord" ALIGN="right" SRC="gfx/icons/keywords-h48.gif">';
+    my $HTML = '<IMG ALT="NÃ¸gleord" ALIGN="right" SRC="gfx/icons/keywords-h48.gif">';
     $HTML .= '<A CLASS=blue HREF="keyword.cgi?keywordid='.$self->id.qq|&amp;needle=$escapedNeedle">|.$title.qq|</A><BR>|;
     $HTML .= qq|$match|;
     $HTML .= '<BR><BR>';

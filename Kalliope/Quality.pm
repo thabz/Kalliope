@@ -24,15 +24,16 @@ package Kalliope::Quality;
 use Kalliope::Internationalization;
 use Kalliope;
 use Kalliope::Help;
+use utf8;
 
 my %items = (
-     korrektur1 => { name     => _('Første korrekturlæsning'),
+     korrektur1 => { name     => _('FÃ¸rste korrekturlÃ¦sning'),
                      icon_on  => 'gfx/tb_yes.gif',
 		     icon_off => 'gfx/tb_yes_gray.gif' },
-     korrektur2 => { name     => _('Anden korrekturlæsning'),
+     korrektur2 => { name     => _('Anden korrekturlÃ¦sning'),
                      icon_on  => 'gfx/tb_yes.gif',
 		     icon_off => 'gfx/tb_yes_gray.gif' },
-     korrektur3 => { name     => _('Tredje korrekturlæsning'),
+     korrektur3 => { name     => _('Tredje korrekturlÃ¦sning'),
                      icon_on  => 'gfx/tb_yes.gif',
 		     icon_off => 'gfx/tb_yes_gray.gif' },
      kilde      => { name     => _('Kildeangivelse'),

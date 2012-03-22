@@ -24,6 +24,7 @@ package Kalliope::Guestbook::Entry;
 use strict;
 use lib '..';
 use Kalliope::Guestbook;
+use utf8;
 
 sub new {
     my ($class,$obj) = @_;

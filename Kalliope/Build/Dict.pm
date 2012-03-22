@@ -27,6 +27,7 @@ use Kalliope::DB;
 use Kalliope::Date;
 use Kalliope::Poem;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB::connect();
 
@@ -34,7 +35,7 @@ sub parse {
     my $filename = shift;
     my %dict;
 
-    my $twig = new XML::Twig(keep_encoding => 1);
+    my $twig = new XML::Twig();
     $twig->parsefile($filename);
     foreach my $entry ($twig->root->children('entry')) {
 
@@ -122,7 +123,7 @@ sub insert {
     foreach my $entry (values %dict) {
 	my $ord = $entry->{'ord'};
 	my $fl = lc substr($ord,0,2);
-	$fl = $fl eq 'aa' ? 'å' : lc substr($ord,0,1);
+	$fl = $fl eq 'aa' ? 'Ã¥' : lc substr($ord,0,1);
 
 	$rc->execute($entry->{'id'},
 		$fl,

@@ -25,12 +25,13 @@ package Kalliope::Search::Keyword;
 use Kalliope::DB ();
 use URI::Escape;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 
 sub pageTitle {
     my $title = shift->keyword->title;
-    return "Søgning efter nøgleordet »$title«"
+    return "SÃ¸gning efter nÃ¸gleordet Â»$titleÂ«"
 }
 
 sub keyword {

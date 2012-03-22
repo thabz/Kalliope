@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-#  Indholdsfortegnelse for et værk.
+#  Indholdsfortegnelse for et vÃ¦rk.
 #
 #  Copyright (C) 1999-2001 Jesper Christensen 
 #
@@ -29,6 +29,7 @@ use Kalliope::DB ();
 use Kalliope::Work ();
 use Kalliope::Page ();
 use Kalliope::Date ();
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -43,7 +44,7 @@ my $poet = $work->author;
 my @crumbs;
 push @crumbs,[_('Digtere'),'poets.cgi?list=az&cn='.$poet->country];
 push @crumbs,[$poet->name,'ffront.cgi?fhandle='.$poet->fhandle];
-push @crumbs,[_('Værker'),'fvaerker.pl?fhandle='.$poet->fhandle];
+push @crumbs,[_('VÃ¦rker'),'fvaerker.pl?fhandle='.$poet->fhandle];
 push @crumbs,[$work->titleWithYear,''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
@@ -77,7 +78,7 @@ $page->addBox( width => '250',
 
 #$page->addBox( width => '250',
 #               coloumn => 2,
-#               title => 'Værker',
+#               title => 'VÃ¦rker',
 #	       theme => 'dark',
 #               content => &completeWorks($poet,$work)
 #              );
@@ -146,7 +147,7 @@ sub notes {
     my $HTML;
     $HTML .= join '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>',@notes;
     $HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>' if $#notes >= 0;
-    $HTML .= _('Sidst ændret:').' '.Kalliope::Date::shortDate($work->lastModified);
+    $HTML .= _('Sidst Ã¦ndret:').' '.Kalliope::Date::shortDate($work->lastModified);
     $HTML .= '<div class="lifespan" style="padding: 5px 0 5px 0; text-align: center">&#149;&nbsp;&#149;&nbsp;&#149;</div>';
     $HTML .= '<div class="quality">';
     $HTML .= $work->quality->asHTML;
@@ -174,7 +175,7 @@ sub tableOfContent {
 #    $HTML .= '<BR>';
     my $sth = $dbh->prepare("SELECT longdid,toctitel as titel,type,did FROM digte WHERE vid=? ORDER BY vaerkpos");
     $sth->execute($work->vid);
-    return _('Kalliope indeholder endnu ingen tekster fra dette værk.') unless $sth->rows;
+    return _('Kalliope indeholder endnu ingen tekster fra dette vÃ¦rk.') unless $sth->rows;
     $HTML .= _renderSection($work->vid,undef,1);
     $sth->finish;
     $HTML .= '</div>';
@@ -225,10 +226,10 @@ sub _renderSection {
 sub otherFormats {
     my ($poet,$work) = @_;
     my $HTML;
-#    $HTML .= '<A TARGET="_top" TITLE="»'.$work->title.'« i PDF format" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=Printer"><IMG SRC="gfx/pdf.gif" BORDER=0 ALT="»'.$work->title.'« i PDF format"></A><BR>PDF<BR><BR>';
-#    $HTML .= '<A TARGET="_top" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=Printer"><IMG HEIGHT=48 WIDTH=48 SRC="gfx/floppy.gif" BORDER=0 ALT="»'.$work->title.'« i printervenligt format"></A><BR>Printer venligt<BR><BR>';
+#    $HTML .= '<A TARGET="_top" TITLE="Â»'.$work->title.'Â« i PDF format" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=Printer"><IMG SRC="gfx/pdf.gif" BORDER=0 ALT="Â»'.$work->title.'Â« i PDF format"></A><BR>PDF<BR><BR>';
+#    $HTML .= '<A TARGET="_top" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=Printer"><IMG HEIGHT=48 WIDTH=48 SRC="gfx/floppy.gif" BORDER=0 ALT="Â»'.$work->title.'Â« i printervenligt format"></A><BR>Printer venligt<BR><BR>';
     $HTML .= '<A CLASS="more" TARGET="_top" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=Printer">'._("Vis printudgave...").'</A><BR>';
-#    $HTML .= '<A TARGET="_top" TITLE="»'.$work->title.'« som etext til Palm" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=PRC"><IMG SRC="gfx/pilot.gif" BORDER=0 ALT="»'.$work->title.'« som etext til Palm"></A><BR>Palmpilot<BR><BR>';
+#    $HTML .= '<A TARGET="_top" TITLE="Â»'.$work->title.'Â« som etext til Palm" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=PRC"><IMG SRC="gfx/pilot.gif" BORDER=0 ALT="Â»'.$work->title.'Â« som etext til Palm"></A><BR>Palmpilot<BR><BR>';
     $HTML .=  '<A TARGET="_top" CLASS="more" HREF="downloadvaerk.pl?fhandle='.$poet->fhandle.'&vhandle='.$work->longvid.'&mode=XML">'._("Vis XML-udgave...").'</A><BR>';
     return $HTML;
 }

@@ -22,6 +22,8 @@
 
 use strict;
 no strict 'refs';
+use utf8;
+
 use CGI ();
 use Kalliope;
 use Kalliope::DB ();
@@ -41,9 +43,9 @@ my %pageTypes = (
         'crumbtitle' => _('efter navn'),
         'page' => 'poetsbyname'},
     '19' => {
-        'title' => _('Digtere efter fødeår'),
+        'title' => _('Digtere efter fÃ¸deÃ¥r'),
         'function' => 'list19',
-        'crumbtitle' => _('efter fødeår'),
+        'crumbtitle' => _('efter fÃ¸deÃ¥r'),
         'page' => 'poetsbyyear'},
     'pics' => {
         'title' => _('Digtere efter udseende'),
@@ -56,9 +58,9 @@ my %pageTypes = (
         'crumbtitle' => _('flittigste'),
         'page' => 'poetsbyflittige'},
     'pop'  => {
-        'title' => _('Mest populære digtere'),
+        'title' => _('Mest populÃ¦re digtere'),
         'function' => 'listpop',
-        'crumbtitle' => _('mest populære'),
+        'crumbtitle' => _('mest populÃ¦re'),
         'page' => 'poetsbypop'});
 
 my $listType = CGI::url_param('list');
@@ -112,7 +114,7 @@ sub listaz {
     my $new;
     foreach my $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
 	next unless $f->{'sort'};
-	$f->{'sort'} =~ s/Aa/Å/g;
+	$f->{'sort'} =~ s/Aa/Ã…/g;
 	$new = uc substr($f->{'sort'},0,1);
 	if ($new ne $last) {
 	    $last=$new;
@@ -165,7 +167,7 @@ sub list19 {
     # Udenfor kategori (dvs. folkeviser, o.l.)
     $bi++;
     if ($#unknownYear >= 0) {
-	    $blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">|._("Ukendt fødeår").'</DIV><BR>';
+	    $blocks[$bi]->{'head'} = qq|<BR><DIV CLASS="listeoverskrifter">|._("Ukendt fÃ¸deÃ¥r").'</DIV><BR>';
 	    foreach my $f (@unknownYear) {
 	        $blocks[$bi]->{'body'} .= '<A HREF="ffront.cgi?fhandle='.$f->fhandle.'">'.$f->reversedName.'</A>&nbsp;<FONT COLOR="#808080">'.$f->lifespan.'</FONT><BR>';
 	        $blocks[$bi]->{'count'}++;
@@ -193,7 +195,7 @@ sub listpics {
 	my $fhandle = $poet->fhandle;
 	my $fullname = $poet->name;
 	$HTML .= "<TD align=center valign=bottom>";
-	$HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/thumb.jpg",url=>"fpics.pl?fhandle=$fhandle",alt=>_("Vis portrætter af %s",$fullname)});
+	$HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/thumb.jpg",url=>"fpics.pl?fhandle=$fhandle",alt=>_("Vis portrÃ¦tter af %s",$fullname)});
 	$HTML .= "<BR>$fullname<BR>";
 	$HTML .= '<FONT COLOR="#808080">'.$poet->lifespan.'</FONT><BR>';
 	$HTML .= "</TD>";

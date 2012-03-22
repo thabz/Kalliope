@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-#  Udskriver Kalliopes forside: Nyheder, Dagen idag, Sonnetten på pletten.
+#  Udskriver Kalliopes forside: Nyheder, Dagen idag, Sonnetten pÃ¥ pletten.
 #
 #  Copyright (C) 1999-2001 Jesper Christensen 
 #
@@ -30,6 +30,7 @@ use Kalliope::Server();
 use Kalliope::DB;
 use CGI ();
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB::connect();
 
@@ -67,12 +68,12 @@ if (Kalliope::Internationalization::language() eq 'da') {
 	                coloumn => 1,
 	                cssClass => 'hidemobile',
 	                content => $dayToday,
-	                end => '<a class="more" href="today.cgi">'._("Vælg anden dato...").'</a>');
+	                end => '<a class="more" href="today.cgi">'._("VÃ¦lg anden dato...").'</a>');
     }
 }
 
 my ($sonnetText,$sonnetEnd) = &sonnet;
-$page->addBox ( title => _("Sonetten på pletten"),
+$page->addBox ( title => _("Sonetten pÃ¥ pletten"),
                 coloumn => 1,
                 cssClass => 'hidemobile',
                 content => $sonnetText,
@@ -99,13 +100,13 @@ sub latestNews {
     }
     $page->addBox(
         coloumn => 0,
-        content => $showAllNews ? '' : qq|<a class="more" href="index.cgi?showall=yes">|.&_("Læs gamle nyheder...").qq|</a>|
+        content => $showAllNews ? '' : qq|<a class="more" href="index.cgi?showall=yes">|.&_("LÃ¦s gamle nyheder...").qq|</a>|
         );
 }
 
 sub about {
-    my $HTML = _('<p><i>Kalliope</i> er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning. Kalliope indeholder også udenlandsk digtning, men primært i et omfang som kan bruges til belysning af den danske samling.</p>');
-    #$HTML .= '<p>Når en forfatter har været død i over 70 år, bliver vedkommendes værk offentlig ejendom. Se evt. <A CLASS=green HREF="kabout.pl?page=attractions">coming attractions</A>. Derfor er det tilladt at bruge indholdet samlet i Kalliope til hvad man måtte ønske og af samme grund finder man ikke den nyere lyrik i samlingen. Det er gratis for alle at bruge Kalliope.</p>';
+    my $HTML = _('<p><i>Kalliope</i> er en database indeholdende Ã¦ldre dansk lyrik samt biografiske oplysninger om danske digtere. MÃ¥let er intet mindre end at samle hele den Ã¦ldre danske lyrik, men indtil videre indeholder Kalliope et forhÃ¥bentligt reprÃ¦sentativt, og stadigt voksende, udvalg af den danske digtning. Kalliope indeholder ogsÃ¥ udenlandsk digtning, men primÃ¦rt i et omfang som kan bruges til belysning af den danske samling.</p>');
+    #$HTML .= '<p>NÃ¥r en forfatter har vÃ¦ret dÃ¸d i over 70 Ã¥r, bliver vedkommendes vÃ¦rk offentlig ejendom. Se evt. <A CLASS=green HREF="kabout.pl?page=attractions">coming attractions</A>. Derfor er det tilladt at bruge indholdet samlet i Kalliope til hvad man mÃ¥tte Ã¸nske og af samme grund finder man ikke den nyere lyrik i samlingen. Det er gratis for alle at bruge Kalliope.</p>';
     return $HTML;
 }
 
@@ -118,7 +119,7 @@ sub dayToday {
 }
 
 #
-# Sonnetten på pletten --------------------------------------------------
+# Sonnetten pÃ¥ pletten --------------------------------------------------
 #
 
 sub sonnet {
@@ -133,8 +134,8 @@ sub sonnet {
     $HTML .= '<small>'.$poem->content(layout => 'plainpoem').'</small>';
     my $poet = $poem->author;
     $HTML .= '<br><div style="text-align:right"><i><small>'.$poet->name.'</small></i></div>';
-    my $title = $poet->name.': »'.$poem->linkTitle.'«';
+    my $title = $poet->name.': Â»'.$poem->linkTitle.'Â«';
     $END = qq|<A class="more" TITLE="$title" HREF="digt.pl?longdid=|.$poem->longdid.qq|">|;
-    $END .= _("Gå til digtet...")."</A>";
+    $END .= _("GÃ¥ til digtet...")."</A>";
     return ($HTML,$END);
 }

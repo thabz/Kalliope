@@ -25,12 +25,13 @@ package Kalliope::Search::Free;
 use Kalliope::DB;
 use URI::Escape;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 
 sub pageTitle {
     my $needle = shift->{'needle'};
-    return "Søgning efter »$needle«"
+    return "SÃ¸gning efter Â»$needleÂ«"
 }
 
 sub hasSearchBox {
@@ -41,7 +42,7 @@ sub searchBoxHTML {
     my $self = shift;
     my $needle = $self->needle;
     my $LA = $self->lang;
-    return qq|<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle" VALUE="$needle" autofocus><INPUT TYPE="hidden" NAME="sprog" VALUE="$LA"><INPUT TYPE="hidden" NAME="type" VALUE="free"> <INPUT CLASS="button" TYPE="submit" VALUE=" Søg "></FORM>|;
+    return qq|<FORM METHOD="get" ACTION="ksearch.cgi"><INPUT NAME="needle" VALUE="$needle" autofocus><INPUT TYPE="hidden" NAME="sprog" VALUE="$LA"><INPUT TYPE="hidden" NAME="type" VALUE="free"> <INPUT CLASS="button" TYPE="submit" VALUE=" SÃ¸g "></FORM>|;
 }
 
 sub needle {
@@ -57,18 +58,18 @@ sub splitNeedle {
     my $needle2 = shift->needle;
     $needle2 =~ s/^\s+//;
     $needle2 =~ s/\s+$//;
-    $needle2 =~ s/[^a-zA-ZæøåÆØÅ=\* ]//g;
+    $needle2 =~ s/[^a-zA-ZÃ¦Ã¸Ã¥Ã†Ã˜Ã…=\* ]//g;
     return split /\s+/,$needle2;
 }
 
 sub escapedNeedle {
-    return uri_escape(shift->needle);
+    return uri_escape_utf8(shift->needle);
 }
 
 
 sub getExtraURLParam {
     my $self = shift;
-    return 'needle='.uri_escape($self->needle);
+    return 'needle='.uri_escape_utf8($self->needle);
 }
 
 sub log {

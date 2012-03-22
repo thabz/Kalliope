@@ -21,6 +21,8 @@
 
 package Kalliope::Timeline::Event;
 
+use utf8;
+
 sub new {
     my ($class,$select) = @_;
     my $self = $select;

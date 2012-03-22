@@ -24,6 +24,7 @@ use CGI (':standard');
 use Kalliope::Person;
 use Kalliope::Page;
 use strict;
+use utf8;
 
 my $fhandle = url_param('fhandle');
 my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
@@ -51,7 +52,7 @@ if (-e "fdirs/$fhandle/primaer.txt") {
 	    width => '80%',
 	    coloumn => 0,
 	    printer => 1,
-	    title => _('Primærlitteratur'),
+	    title => _('PrimÃ¦rlitteratur'),
 	    end => qq|<a title="|._("Udskriftsvenlig udgave").qq|" href="fsekundaer.pl?fhandle=$fhandle&printer=1"><img src="gfx/print.gif" border=0></a>|,
 	    content => $HTML );
 }
@@ -64,7 +65,7 @@ if (-e "fdirs/$fhandle/sekundaer.txt") {
 	    width => '80%',
 	    coloumn => $column,
 	    printer => 1,
-	    title => _('Sekundærlitteratur'),
+	    title => _('SekundÃ¦rlitteratur'),
 	    end => qq|<a title="|._("Udskriftsvenlig udgave").qq|" href="fsekundaer.pl?fhandle=$fhandle&printer=1"><img src="gfx/print.gif" border=0></a>|,
 	    content => $HTML );
 }
@@ -77,6 +78,7 @@ $page->print;
 sub fileAsHTML {
     my $file = shift;
     open (FILE,$file);
+    binmode FILE => ":utf8";
     my $HTML = join '</p><p class="bibliografi">',<FILE>;
     $HTML = qq|<p class="bibliografi">$HTML</p>|;
     close (FILE);

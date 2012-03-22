@@ -29,6 +29,7 @@ use Kalliope::DB;
 use Kalliope::Keyword;
 use Kalliope::Person;
 use Kalliope::PersonHome;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -213,7 +214,7 @@ sub hasContent {
 
 sub iconURI {
     my $self = shift;
-    #TODO: Måske skulle værker uden år have et specielt ikon.
+    #TODO: MÃ¥ske skulle vÃ¦rker uden Ã¥r have et specielt ikon.
     return $self->hasContent ? 'gfx/icons/book-h48.gif' : 'gfx/icons/book-na-h48.gif';
 }
 
@@ -228,7 +229,7 @@ sub getSearchResultEntry {
     $title =~ s/\n/<B>/g;
     $title =~ s/\t/<\/B>/g;
     
-    my $HTML .= '<IMG ALT="Værk" ALIGN="right" SRC="gfx/icons/book-h48.gif">';
+    my $HTML .= '<IMG ALT="VÃ¦rk" ALIGN="right" SRC="gfx/icons/book-h48.gif">';
     $HTML .= '<A CLASS=blue HREF="vaerktoc.pl?vhandle='.$self->vhandle.qq|&amp;fhandle=|.$author->fhandle.'"><i>'.$title.'</i> '.$self->parenthesizedYear.qq|</A><BR>|;
     $HTML .= '<SPAN STYLE="color: green">'.$author->name.'</SPAN><BR><BR>';
     return $HTML;

@@ -25,6 +25,7 @@ use CGI (':standard');
 use Kalliope::Person;
 use Kalliope::Page;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 my $fhandle = url_param('fhandle');
@@ -35,10 +36,10 @@ my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 #
 
 my @crumbs = $poet->getCrumbs;
-push @crumbs,[_('PortrÊtter'),''];
+push @crumbs,[_('Portr√¶tter'),''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
-	subtitle => _('PortrÊtter'),
+	subtitle => _('Portr√¶tter'),
 	page => 'pics',
         crumbs => \@crumbs );
 
@@ -49,7 +50,7 @@ foreach my $pic ($poet->pics) {
     $HTML .= Kalliope::Web::insertThumb({
 	    thumbfile => $$pic{thumbfile},
 	    destfile => $$pic{file},
-	    alt => _('Klik for fuld st¯rrelse')});
+	    alt => _('Klik for fuld st√∏rrelse')});
     $HTML .= '<BR>';
     $HTML .= $$pic{text};
     $HTML .= "</TD>";

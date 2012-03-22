@@ -25,6 +25,7 @@ use XML::Twig;
 use Kalliope::DB;
 use Kalliope::Date;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB::connect();
 my $sthGroup = $dbh->prepare("INSERT INTO digte (did,longdid,fhandle,parentdid,linktitel,toptitel,toctitel,tititel,foerstelinie,indhold,vaerkpos,vid,type,underoverskrift,lang,country,createtime,quality) VALUES (nextval('seq_digte_did'),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");

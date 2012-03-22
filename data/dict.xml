@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE entries [
 <!ELEMENT entries (entry)>
 <!ELEMENT entry (ord,var*,frase?,forkl+)>
@@ -10,19 +10,19 @@
 <!ELEMENT i (#PCDATA)>
 ]>
 
-<!-- Online validator på http://www.stg.brown.edu/service/xmlvalid/ -->
+<!-- Online validator pÃ¥ http://www.stg.brown.edu/service/xmlvalid/ -->
 
 <entries>
 
 <entry id="aa">
  <ord>aa</ord>
- <forkl>(vb.; præt. aatte, aadte) ejer, ejede</forkl>
+ <forkl>(vb.; prÃ¦t. aatte, aadte) ejer, ejede</forkl>
 </entry>
 
 <entry id="Abild">
  <ord>Abild</ord>
- <var>Abildtræ</var>
- <forkl>æbletræ; også: æble</forkl>
+ <var>AbildtrÃ¦</var>
+ <forkl>Ã¦bletrÃ¦; ogsÃ¥: Ã¦ble</forkl>
 </entry>
 
 <entry id="Abildgaard">
@@ -32,31 +32,31 @@
 
 <entry id="abildgraa">
  <ord>abildgraa</ord>
- <forkl>gråskimlet (om hest)</forkl>
+ <forkl>grÃ¥skimlet (om hest)</forkl>
 </entry>
 
-<entry id="Actæon">
- <ord>Actæon</ord>
- <forkl>en jæger som belurede den badende <xref ord="Diana"/>; hun forvandlede ham til en hjort, og hans egne hunde sønderrev ham</forkl>
+<entry id="ActÃ¦on">
+ <ord>ActÃ¦on</ord>
+ <forkl>en jÃ¦ger som belurede den badende <xref ord="Diana"/>; hun forvandlede ham til en hjort, og hans egne hunde sÃ¸nderrev ham</forkl>
 </entry>
 
 <entry id="Adonis">
  <ord>Adonis</ord>
- <forkl>i græsk mytologi en skøn yngling som elskes af <xref ord="Afrodite"/></forkl>
+ <forkl>i grÃ¦sk mytologi en skÃ¸n yngling som elskes af <xref ord="Afrodite"/></forkl>
 </entry>
 
-<entry id="afhøre">
- <ord>afhøre</ord>
- <forkl>høre om</forkl>
+<entry id="afhÃ¸re">
+ <ord>afhÃ¸re</ord>
+ <forkl>hÃ¸re om</forkl>
 </entry>
 
-<entry id="afløse">
- <ord>afløse</ord>
+<entry id="aflÃ¸se">
+ <ord>aflÃ¸se</ord>
  <forkl>give syndsforladelse, absolvere</forkl>
 </entry>
 
-<entry id="Afløsning">
- <ord>Afløsning</ord>
+<entry id="AflÃ¸sning">
+ <ord>AflÃ¸sning</ord>
  <forkl>(sakramental) syndsforladelse, absolution</forkl>
 </entry>
 
@@ -67,54 +67,54 @@
 
 <entry id="Afrodite">
  <ord>Afrodite</ord>
- <forkl>den græske gudinde for skønhed og kærlighed; svarer til den romerske Venus</forkl>
+ <forkl>den grÃ¦ske gudinde for skÃ¸nhed og kÃ¦rlighed; svarer til den romerske Venus</forkl>
 </entry>
 
 <entry id="Aftenstjernen">
  <ord>Aftenstjernen</ord>
- <forkl>Venus, når den er synlig efter solnedgang</forkl>
+ <forkl>Venus, nÃ¥r den er synlig efter solnedgang</forkl>
 </entry>
 
 <entry id="Agent">
  <ord>Agent</ord>
- <forkl>en titel som kongen kunne tildele handelsmænd (grosserere)</forkl>
+ <forkl>en titel som kongen kunne tildele handelsmÃ¦nd (grosserere)</forkl>
 </entry>
 
-<entry id="Agerrén">
- <ord>Agerrén</ord>
+<entry id="AgerrÃ©n">
+ <ord>AgerrÃ©n</ord>
  <forkl>markskel; agerfure; plovfure</forkl>
 </entry>
 
 <entry id="Agonie">
  <ord>Agonie</ord>
- <forkl>dødskamp (egl.: væddekamp)</forkl>
+ <forkl>dÃ¸dskamp (egl.: vÃ¦ddekamp)</forkl>
 </entry>
 
 <entry id="Ahasverus">
  <ord>Ahasverus</ord>
- <forkl>gammeltestamentlig skikkelse; navn for den legendære 'Evige Jøde'</forkl>
+ <forkl>gammeltestamentlig skikkelse; navn for den legendÃ¦re 'Evige JÃ¸de'</forkl>
 </entry>
 
 <entry id="alamodig">
  <ord>alamodig</ord>
- <forkl>alamodisk, moderne (af fr. <i>à la mode</i>)</forkl>
+ <forkl>alamodisk, moderne (af fr. <i>Ã  la mode</i>)</forkl>
 </entry>
 
 <entry id="Albion">
  <ord>Albion</ord>
- <forkl>poetisk navn for England eller de britiske øer</forkl>
+ <forkl>poetisk navn for England eller de britiske Ã¸er</forkl>
 </entry>
 
 <entry id="Album">
  <ord>Album</ord>
  <frase>Album amicorum</frase>
- <forkl>se Nøgleord <xref keyword="stambog"/></forkl>
+ <forkl>se NÃ¸gleord <xref keyword="stambog"/></forkl>
 </entry>
 
 <entry id="Alfader">
  <ord>Alfader</ord>
  <var>Alfaudur</var>
- <forkl>navn for <xref ord="Odin"/>; også for de kristnes Gud</forkl>
+ <forkl>navn for <xref ord="Odin"/>; ogsÃ¥ for de kristnes Gud</forkl>
 </entry>
 
 <entry id="Algodheds">
@@ -129,12 +129,12 @@
 
 <entry id="allegorisk">
  <ord>allegorisk</ord>
- <forkl>se Nøgleord <xref keyword="allegori"/></forkl>
+ <forkl>se NÃ¸gleord <xref keyword="allegori"/></forkl>
 </entry>
 
 <entry id="Almagt">
  <ord>Almagt</ord>
- <forkl>om en af Guds egenskaber; også: den almægtige (Gud)</forkl>
+ <forkl>om en af Guds egenskaber; ogsÃ¥: den almÃ¦gtige (Gud)</forkl>
 </entry>
 
 <entry id="Amazone">
@@ -154,12 +154,12 @@
 
 <entry id="Anacreon">
  <ord>Anacreon</ord>
- <forkl>græsk lyriker, 500-tallet f.Kr.</forkl>
+ <forkl>grÃ¦sk lyriker, 500-tallet f.Kr.</forkl>
 </entry>
 
 <entry id="anbelange">
  <ord>anbelange</ord>
- <forkl>vedkomme, vedrøre, angå</forkl>
+ <forkl>vedkomme, vedrÃ¸re, angÃ¥</forkl>
 </entry>
 
 <entry id="annamme">
@@ -171,7 +171,7 @@
  <ord>Ansvar</ord>
  <var>Ansuar</var>
 <forkl>
- (i folkevise) svar (på spørgsmål) (sml. eng.
+ (i folkevise) svar (pÃ¥ spÃ¸rgsmÃ¥l) (sml. eng.
  <i>answer</i>
  )
  </forkl>
@@ -185,50 +185,50 @@
 <entry id="Apollo">
  <ord>Apollo</ord>
  <var>Apol</var>
- <forkl>græsk gud for musik, for solen m.m.; personifikation af solen</forkl>
+ <forkl>grÃ¦sk gud for musik, for solen m.m.; personifikation af solen</forkl>
 </entry>
 
 <entry id="Apostat">
  <ord>Apostat</ord>
- <forkl>en frafalden, især: fra en religion</forkl>
+ <forkl>en frafalden, isÃ¦r: fra en religion</forkl>
 </entry>
 
 <entry id="Apotheose">
  <ord>Apotheose</ord>
- <forkl>ophøjelse til guddom</forkl>
+ <forkl>ophÃ¸jelse til guddom</forkl>
 </entry>
 
 <entry id="Argelist">
  <ord>Argelist</ord>
- <forkl>træskhed, lumskhed</forkl>
+ <forkl>trÃ¦skhed, lumskhed</forkl>
 </entry>
 
 <entry id="Arhe">
  <ord>Arhe</ord>
- <forkl>åre (til at ro med)</forkl>
+ <forkl>Ã¥re (til at ro med)</forkl>
 </entry>
 
 <entry id="Arild">
  <ord>Arild</ord>
  <frase>fra Arilds Tid</frase>
- <forkl>fra de ældste tider; fra gammel tid; Arild er ikke et personnavn</forkl>
+ <forkl>fra de Ã¦ldste tider; fra gammel tid; Arild er ikke et personnavn</forkl>
 </entry>
 
 <entry id="Arkipelag">
  <ord>Arkipelag</ord>
- <forkl>øhav</forkl>
+ <forkl>Ã¸hav</forkl>
 </entry>
 
 <entry id="Artemis">
  <ord>Artemis</ord>
- <forkl>græsk gudinde for jagten; svarer til den romerske Diana</forkl>
+ <forkl>grÃ¦sk gudinde for jagten; svarer til den romerske Diana</forkl>
 </entry>
 
 <entry id="As">
  <ord>As</ord>
  <var>As-</var>
 <forkl>
- en af de nordiske hovedguder; i sammensætninger:
+ en af de nordiske hovedguder; i sammensÃ¦tninger:
  <i>As-,</i>
  f.eks.
  <i>Asa-Thor</i>
@@ -237,7 +237,7 @@
 
 <entry id="Aseninde">
  <ord>Aseninde</ord>
- <forkl>hunæsel, æselhoppe</forkl>
+ <forkl>hunÃ¦sel, Ã¦selhoppe</forkl>
 </entry>
 
 <entry id="Asgaard">
@@ -247,17 +247,17 @@
 
 <entry id="Asgaardsrej">
  <ord>Asgaardsrej</ord>
- <forkl>flok af væsener der om natten rider støjende gennem luften</forkl>
+ <forkl>flok af vÃ¦sener der om natten rider stÃ¸jende gennem luften</forkl>
 </entry>
 
 <entry id="Aske">
  <ord>Aske</ord>
- <forkl>(dødelige) mennesker</forkl>
+ <forkl>(dÃ¸delige) mennesker</forkl>
 </entry>
 
 <entry id="Asynie">
  <ord>Asynie</ord>
- <forkl>gudinde hørende til aserne</forkl>
+ <forkl>gudinde hÃ¸rende til aserne</forkl>
 </entry>
 
 <entry id="Attestats">
@@ -273,18 +273,18 @@
 
 <entry id="Attraa">
  <ord>Attraa</ord>
- <forkl>(stærkt) ønske, begær</forkl>
+ <forkl>(stÃ¦rkt) Ã¸nske, begÃ¦r</forkl>
 </entry>
 
 <entry id="attraa2">
  <ord>attraa</ord>
  <var>adtraa</var>
- <forkl>ønske (stærkt), begære</forkl>
+ <forkl>Ã¸nske (stÃ¦rkt), begÃ¦re</forkl>
 </entry>
 
 <entry id="Aurora">
  <ord>Aurora</ord>
- <forkl>romersk gudinde; (personifikation af) morgenrøden</forkl>
+ <forkl>romersk gudinde; (personifikation af) morgenrÃ¸den</forkl>
 </entry>
 
 <entry id="Avind">
@@ -295,8 +295,8 @@
 
 <entry id="Avindskjold">
  <ord>Avindskjold</ord>
- <frase>bære Avindskjold mod Riget</frase>
- <forkl>kæmpe mod sit fædreland</forkl>
+ <frase>bÃ¦re Avindskjold mod Riget</frase>
+ <forkl>kÃ¦mpe mod sit fÃ¦dreland</forkl>
 </entry>
 
 <entry id="Avindsmand">
@@ -311,14 +311,14 @@
 
 <entry id="Axel2">
  <ord>Axel</ord>
- <forkl>navn (næppe historisk) for Absalon (biskop, død <year>1201</year>)</forkl>
+ <forkl>navn (nÃ¦ppe historisk) for Absalon (biskop, dÃ¸d <year>1201</year>)</forkl>
 </entry>
 
 <entry id="Axelstad">
  <ord>Axelstad</ord>
  <var>Axelhus</var>
  <var>Axelshavn</var>
- <forkl>poetisk navn for København</forkl>
+ <forkl>poetisk navn for KÃ¸benhavn</forkl>
 </entry>
 
 <entry id="axle">
@@ -327,7 +327,7 @@
  <var>agsele</var>
  <var>achsele</var>
  <frase>axle sin Kaabe, sit Skind, osv.</frase>
- <forkl>stående udtryk i folkeviser: lægge kappen (osv.) på sin skulder; gøre sig rede til at gå ud; også: trække kappen bagom skuldrene for at vise at man er ubevæbnet, ikke har ondt i sinde</forkl>
+ <forkl>stÃ¥ende udtryk i folkeviser: lÃ¦gge kappen (osv.) pÃ¥ sin skulder; gÃ¸re sig rede til at gÃ¥ ud; ogsÃ¥: trÃ¦kke kappen bagom skuldrene for at vise at man er ubevÃ¦bnet, ikke har ondt i sinde</forkl>
 </entry>
 
 <entry id="baade">
@@ -348,7 +348,7 @@
 
 <entry id="Bacchantinde">
  <ord>Bacchantinde</ord>
- <forkl>bacchusdyrker, sviresøster</forkl>
+ <forkl>bacchusdyrker, sviresÃ¸ster</forkl>
 </entry>
 
 <entry id="Bacchus">
@@ -356,7 +356,7 @@
  <var>Bacchi</var>
  <var>Bakkus</var>
  <var>Bakkos</var>
- <forkl>gen. <i>Bacchi</i>: romersk vingud; svarer til den græske <xref ord="Dionysos"/></forkl>
+ <forkl>gen. <i>Bacchi</i>: romersk vingud; svarer til den grÃ¦ske <xref ord="Dionysos"/></forkl>
 </entry>
 
 <entry id="Bajadere">
@@ -371,13 +371,13 @@
 
 <entry id="bandsat">
  <ord>bandsat</ord>
- <forkl>(egl.) sat i band; (med afsvækket bet.) i høj grad; 'forfærdelig'</forkl>
+ <forkl>(egl.) sat i band; (med afsvÃ¦kket bet.) i hÃ¸j grad; 'forfÃ¦rdelig'</forkl>
 </entry>
 
 <entry id="Barcarole">
  <ord>Barcarole</ord>
  <var>Barkarole</var>
- <forkl>gondolsang, bådvise</forkl>
+ <forkl>gondolsang, bÃ¥dvise</forkl>
 </entry>
 
 <entry id="Barde">
@@ -387,7 +387,7 @@
 
 <entry id="Basilisk">
  <ord>Basilisk</ord>
- <forkl>egl. 'lille konge'; fabeldyr hvis blik kan dræbe</forkl>
+ <forkl>egl. 'lille konge'; fabeldyr hvis blik kan drÃ¦be</forkl>
 </entry>
 
 <entry id="Bedemand">
@@ -397,7 +397,7 @@
 
 <entry id="Bedemandsstiil">
  <ord>Bedemandsstiil</ord>
- <forkl>vidtløftig, dunkel, uforståelig tale- eller skrivemåde</forkl>
+ <forkl>vidtlÃ¸ftig, dunkel, uforstÃ¥elig tale- eller skrivemÃ¥de</forkl>
 </entry>
 
 <entry id="befale">
@@ -405,48 +405,48 @@
  <forkl>overgive, overdrage, betro</forkl>
 </entry>
 
-<entry id="beføre">
- <ord>beføre</ord>
+<entry id="befÃ¸re">
+ <ord>befÃ¸re</ord>
  <forkl>anklage, bagtale; vildlede, forlokke</forkl>
 </entry>
 
 <entry id="begegne">
  <ord>begegne</ord>
 <forkl>
- tilstøde, hænde, vederfares (sml. ty.
+ tilstÃ¸de, hÃ¦nde, vederfares (sml. ty.
  <i>begegnen</i>
  )
  </forkl>
 </entry>
 
-<entry id="behænde">
- <ord>behænde</ord>
- <forkl>behændig(t), flink(t); snild, listig</forkl>
+<entry id="behÃ¦nde">
+ <ord>behÃ¦nde</ord>
+ <forkl>behÃ¦ndig(t), flink(t); snild, listig</forkl>
 </entry>
 
 <entry id="belee">
  <ord>belee</ord>
- <forkl>le ad; gøre nar af</forkl>
+ <forkl>le ad; gÃ¸re nar af</forkl>
 </entry>
 
 <entry id="Belial">
  <ord>Belial</ord>
- <forkl>navn for djævelen</forkl>
+ <forkl>navn for djÃ¦velen</forkl>
 </entry>
 
 <entry id="belyve">
  <ord>belyve</ord>
- <forkl>udsprede løgne om (en), bagvaske</forkl>
+ <forkl>udsprede lÃ¸gne om (en), bagvaske</forkl>
 </entry>
 
 <entry id="bert">
  <ord>bert</ord>
  <var>bjert</var>
- <forkl>bjert; lys, klar; skøn, fager</forkl>
+ <forkl>bjert; lys, klar; skÃ¸n, fager</forkl>
 </entry>
 
-<entry id="beskære">
- <ord>beskære</ord>
+<entry id="beskÃ¦re">
+ <ord>beskÃ¦re</ord>
 <forkl>
  tildele, tilskikke, forunde (sml. ty.
  <i>bescheren</i>
@@ -456,13 +456,13 @@
 
 <entry id="bestedt">
  <ord>bestedt</ord>
- <var>bestæd</var>
+ <var>bestÃ¦d</var>
  <forkl>som er i en vis stilling eller situation; stedt</forkl>
 </entry>
 
 <entry id="betee">
  <ord>betee</ord>
- <forkl>lægge for dagen; vise sig</forkl>
+ <forkl>lÃ¦gge for dagen; vise sig</forkl>
 </entry>
 
 <entry id="billig">
@@ -475,14 +475,14 @@
  <forkl>lille stump, smule</forkl>
 </entry>
 
-<entry id="Bjærg1">
- <ord>Bjærg</ord>
+<entry id="BjÃ¦rg1">
+ <ord>BjÃ¦rg</ord>
  <forkl>skjul, gemme (ikke samme ord som <i>Bjerg</i>)</forkl>
 </entry>
 
-<entry id="Bjærg2">
- <ord>Bjærg</ord>
- <frase>Sol i Bjærge</frase>
+<entry id="BjÃ¦rg2">
+ <ord>BjÃ¦rg</ord>
+ <frase>Sol i BjÃ¦rge</frase>
  <forkl>solnedgang</forkl>
 </entry>
 
@@ -516,20 +516,20 @@
 <entry id="Blusemand">
  <ord>Blusemand</ord>
 <forkl>
- revolutionær arbejder (efter fr.
+ revolutionÃ¦r arbejder (efter fr.
  <i>blousier</i>
  )
  </forkl>
 </entry>
 
-<entry id="Blær">
- <ord>Blær</ord>
- <forkl>larm, ståhej; ufred; storm</forkl>
+<entry id="BlÃ¦r">
+ <ord>BlÃ¦r</ord>
+ <forkl>larm, stÃ¥hej; ufred; storm</forkl>
 </entry>
 
 <entry id="bold">
  <ord>bold</ord>
- <forkl>dristig, modig; ypperlig, skiøn</forkl>
+ <forkl>dristig, modig; ypperlig, skiÃ¸n</forkl>
 </entry>
 
 <entry id="Boreas">
@@ -544,7 +544,7 @@
 
 <entry id="Borgeled">
  <ord>Borgeled</ord>
- <forkl>led eller låge ved indgangen til en borg</forkl>
+ <forkl>led eller lÃ¥ge ved indgangen til en borg</forkl>
 </entry>
 
 <entry id="braa">
@@ -555,7 +555,7 @@
 <entry id="Brad">
  <ord>Brad</ord>
  <var>Braad</var>
- <forkl>jagtbytte, steg (sml. 'mørbrad')</forkl>
+ <forkl>jagtbytte, steg (sml. 'mÃ¸rbrad')</forkl>
 </entry>
 
 <entry id="brad2">
@@ -588,14 +588,14 @@
 
 <entry id="Brod1">
  <ord>Brod1</ord>
- <forkl>spidst redskab, pigkæp; billedligt: 'dødens brod'</forkl>
+ <forkl>spidst redskab, pigkÃ¦p; billedligt: 'dÃ¸dens brod'</forkl>
 </entry>
 
 <entry id="Brod2">
  <ord>Brod2</ord>
  <var>Braad</var>
- <frase>en Braad i Hjærtet</frase>
- <forkl>billedligt; sml. 'dødens brod'</forkl>
+ <frase>en Braad i HjÃ¦rtet</frase>
+ <forkl>billedligt; sml. 'dÃ¸dens brod'</forkl>
 </entry>
 
 <entry id="Brog">
@@ -605,18 +605,18 @@
 
 <entry id="Brok">
  <ord>Brok</ord>
- <forkl>grævling</forkl>
+ <forkl>grÃ¦vling</forkl>
 </entry>
 
-<entry id="brøste">
- <ord>brøste</ord>
+<entry id="brÃ¸ste">
+ <ord>brÃ¸ste</ord>
  <forkl>svigte, mislykkes; udeblive, mangle</forkl>
 </entry>
 
-<entry id="brøstfældig">
- <ord>brøstfældig</ord>
- <var>brystfældig</var>
- <forkl>forfalden, skrøbelig</forkl>
+<entry id="brÃ¸stfÃ¦ldig">
+ <ord>brÃ¸stfÃ¦ldig</ord>
+ <var>brystfÃ¦ldig</var>
+ <forkl>forfalden, skrÃ¸belig</forkl>
 </entry>
 
 <entry id="Buur">
@@ -628,7 +628,7 @@
 
 <entry id="Bycicle">
  <ord>Bycicle</ord>
- <forkl>(ellers sædvanligvis: <i>Bicycle</i>); cykel</forkl>
+ <forkl>(ellers sÃ¦dvanligvis: <i>Bicycle</i>); cykel</forkl>
 </entry>
 
 <entry id="bygge">
@@ -636,14 +636,14 @@
  <forkl>have sin bolig; bo</forkl>
 </entry>
 
-<entry id="böge">
- <ord>böge</ord>
- <forkl>(små)brøle (om ko)</forkl>
+<entry id="bÃ¶ge">
+ <ord>bÃ¶ge</ord>
+ <forkl>(smÃ¥)brÃ¸le (om ko)</forkl>
 </entry>
 
 <entry id="Camoene">
  <ord>Camoene</ord>
- <var>Kamøne</var>
+ <var>KamÃ¸ne</var>
  <forkl>kildenymfe; muse, sanggudinde</forkl>
 </entry>
 
@@ -660,13 +660,13 @@
 
 <entry id="Cato">
  <ord>Cato</ord>
- <forkl>romersk statsmand (død 46 f.Kr.)</forkl>
+ <forkl>romersk statsmand (dÃ¸d 46 f.Kr.)</forkl>
 </entry>
 
 <entry id="Caudi">
  <ord>Caudi</ord>
  <frase>Peer Caudi</frase>
- <forkl>hånende betegnelse for student</forkl>
+ <forkl>hÃ¥nende betegnelse for student</forkl>
 </entry>
 
 <entry id="Ceres">
@@ -679,20 +679,20 @@
  <var>Charite</var>
  <var>Kharite</var>
 <forkl>
- græsk(e) gudinde(r) for skønhed og ynde; også navn på tidsskrift:
+ grÃ¦sk(e) gudinde(r) for skÃ¸nhed og ynde; ogsÃ¥ navn pÃ¥ tidsskrift:
  <i>Charis</i>
  </forkl>
 </entry>
 
 <entry id="Charon">
  <ord>Charon</ord>
- <forkl>i græsk mytologi en færgemand der i underverdenen fragter de afdøde over floden <xref ord="Styx"/></forkl>
+ <forkl>i grÃ¦sk mytologi en fÃ¦rgemand der i underverdenen fragter de afdÃ¸de over floden <xref ord="Styx"/></forkl>
 </entry>
 
 <entry id="Cherub">
  <ord>Cherub</ord>
  <var>Cherubim</var>
- <forkl>(hebr. plur. <i>Cherubim</i>) engel; engel med flammesværd</forkl>
+ <forkl>(hebr. plur. <i>Cherubim</i>) engel; engel med flammesvÃ¦rd</forkl>
 </entry>
 
 <entry id="Chiddekel">
@@ -703,7 +703,7 @@
 
 <entry id="Chloris">
  <ord>Chloris</ord>
- <forkl>græsk gudinde for vegetation og blomster; svarer til romernes Flora</forkl>
+ <forkl>grÃ¦sk gudinde for vegetation og blomster; svarer til romernes Flora</forkl>
 </entry>
 
 <entry id="Christendommen">
@@ -719,17 +719,17 @@
  <ord>Cimbrien</ord>
  <var>Cimbrer</var>
  <var>cimbrisk</var>
- <forkl>poetisk (om) Jylland; også om hele Danmark</forkl>
+ <forkl>poetisk (om) Jylland; ogsÃ¥ om hele Danmark</forkl>
 </entry>
 
 <entry id="Circe">
  <ord>Circe</ord>
- <forkl>en troldkvinde hvem <xref ord="Odysseus"/> besøgte og som forvandlede hans mænd til svin</forkl>
+ <forkl>en troldkvinde hvem <xref ord="Odysseus"/> besÃ¸gte og som forvandlede hans mÃ¦nd til svin</forkl>
 </entry>
 
 <entry id="Colberger">
  <ord>Colberger-Hede</ord>
- <forkl>Kolberger Heide, et farvandsafsnit i Østersøen, benævnt efter en nærliggende hedestrækning</forkl>
+ <forkl>Kolberger Heide, et farvandsafsnit i Ã˜stersÃ¸en, benÃ¦vnt efter en nÃ¦rliggende hedestrÃ¦kning</forkl>
 </entry>
 
 <entry id="Collats">
@@ -755,7 +755,7 @@
 
 <entry id="Confirmation">
  <ord>Confirmation</ord>
- <forkl>stadfæstelse</forkl>
+ <forkl>stadfÃ¦stelse</forkl>
 </entry>
 
 <entry id="Contenance">
@@ -780,51 +780,51 @@
 
 <entry id="Croesus">
  <ord>Croesus</ord>
- <forkl>konge i Lydien, berømt for sin rigdom</forkl>
+ <forkl>konge i Lydien, berÃ¸mt for sin rigdom</forkl>
 </entry>
 
 <entry id="Cypria">
  <ord>Cypria</ord>
  <frase>Venus Cypria</frase>
- <forkl>navn for Venus på Cypern</forkl>
+ <forkl>navn for Venus pÃ¥ Cypern</forkl>
 </entry>
 
 <entry id="Dagmoder">
  <ord>Dagmoder</ord>
  <var>Dagmoer</var>
- <forkl>poetisk navn for morgenrøden eller solen</forkl>
+ <forkl>poetisk navn for morgenrÃ¸den eller solen</forkl>
 </entry>
 
 <entry id="Dandser">
  <ord>Dandser</ord>
- <forkl>hest der er afrettet til at gøre dansetrin</forkl>
+ <forkl>hest der er afrettet til at gÃ¸re dansetrin</forkl>
 </entry>
 
 <entry id="Dannebrogstegn">
  <ord>Dannebrogstegn</ord>
- <forkl>sølvkorset, den laveste grad i Dannebrogsordenen</forkl>
+ <forkl>sÃ¸lvkorset, den laveste grad i Dannebrogsordenen</forkl>
 </entry>
 
 <entry id="Dannemand">
  <ord>Dannemand</ord>
  <var>Dannermand</var>
- <forkl>agtværdig mand, hædersmand</forkl>
+ <forkl>agtvÃ¦rdig mand, hÃ¦dersmand</forkl>
 </entry>
 
 <entry id="dannis">
  <ord>dannis</ord>
  <var>danis</var>
- <forkl>brav, hæderlig; høvisk; venlig</forkl>
+ <forkl>brav, hÃ¦derlig; hÃ¸visk; venlig</forkl>
 </entry>
 
 <entry id="Diana">
  <ord>Diana</ord>
- <forkl>romersk gudinde for jagten; svarer til den græske Artemis</forkl>
+ <forkl>romersk gudinde for jagten; svarer til den grÃ¦ske Artemis</forkl>
 </entry>
 
 <entry id="Dionysos">
  <ord>Dionysos</ord>
- <forkl>græsk vingud; svarer til den romerske Bacchus</forkl>
+ <forkl>grÃ¦sk vingud; svarer til den romerske Bacchus</forkl>
 </entry>
 
 <entry id="Dise">
@@ -833,7 +833,7 @@
  <var>Disse</var>
  <var>Diis</var>
  <var>Disa</var>
- <forkl>overnaturligt kvindeligt væsen; (poet.) gudinde; begrebet tilhører den norrøne forestillingsverden og kan også (poetisk) bruges om almindelige dødelige kvinder</forkl>
+ <forkl>overnaturligt kvindeligt vÃ¦sen; (poet.) gudinde; begrebet tilhÃ¸rer den norrÃ¸ne forestillingsverden og kan ogsÃ¥ (poetisk) bruges om almindelige dÃ¸delige kvinder</forkl>
 </entry>
 
 <entry id="Doris">
@@ -843,12 +843,12 @@
 
 <entry id="dove">
  <ord>dove</ord>
- <forkl>blive sløv; lægge sig (om vind)</forkl>
+ <forkl>blive slÃ¸v; lÃ¦gge sig (om vind)</forkl>
 </entry>
 
 <entry id="Drapa">
  <ord>Drapa</ord>
- <forkl>oldnordisk digt med omkvæd</forkl>
+ <forkl>oldnordisk digt med omkvÃ¦d</forkl>
 </entry>
 
 <entry id="Dreng">
@@ -864,47 +864,47 @@
 <entry id="Dryade">
  <ord>Dryade</ord>
  <var>Dryas</var>
- <forkl><xref ord="Nymphe"/> knyttet til et træ</forkl>
+ <forkl><xref ord="Nymphe"/> knyttet til et trÃ¦</forkl>
 </entry>
 
 <entry id="duftig">
  <ord>duftig</ord>
- <forkl>tåget, diset; ubestemt; virkelighedsfjern</forkl>
+ <forkl>tÃ¥get, diset; ubestemt; virkelighedsfjern</forkl>
 </entry>
 
 <entry id="Dunstkreds">
  <ord>Dunstkreds</ord>
- <forkl>atmosfære</forkl>
+ <forkl>atmosfÃ¦re</forkl>
 </entry>
 
 <entry id="dus">
  <ord>dus</ord>
- <forkl>dæmpet, sagte</forkl>
+ <forkl>dÃ¦mpet, sagte</forkl>
 </entry>
 
 <entry id="Dyrendal">
  <ord>Dyrendal</ord>
- <forkl>(stort) sværd; egl. navnet på Rolands sværd</forkl>
+ <forkl>(stort) svÃ¦rd; egl. navnet pÃ¥ Rolands svÃ¦rd</forkl>
 </entry>
 
-<entry id="dædalisk">
- <ord>dædalisk</ord>
+<entry id="dÃ¦dalisk">
+ <ord>dÃ¦dalisk</ord>
  <forkl>indviklet, sindrig</forkl>
 </entry>
 
-<entry id="Døn">
- <ord>Døn</ord>
- <forkl>drøn</forkl>
+<entry id="DÃ¸n">
+ <ord>DÃ¸n</ord>
+ <forkl>drÃ¸n</forkl>
 </entry>
 
-<entry id="dønne">
- <ord>dønne</ord>
- <forkl>drøne</forkl>
+<entry id="dÃ¸nne">
+ <ord>dÃ¸nne</ord>
+ <forkl>drÃ¸ne</forkl>
 </entry>
 
 <entry id="Edom">
  <ord>Edom</ord>
- <forkl>Esau, patriarken Jakobs broder; folkestamme som anser sig for dennes efterslægt</forkl>
+ <forkl>Esau, patriarken Jakobs broder; folkestamme som anser sig for dennes efterslÃ¦gt</forkl>
 </entry>
 
 <entry id="efterdi">
@@ -915,14 +915,14 @@
 <entry id="Eiland">
  <ord>Eiland</ord>
 <forkl>
- øland, ø; sml. eng.
+ Ã¸land, Ã¸; sml. eng.
  <i>island</i>
  </forkl>
 </entry>
 
 <entry id="Elysium">
  <ord>Elysium</ord>
- <forkl>de saliges boliger i græsk mytologi</forkl>
+ <forkl>de saliges boliger i grÃ¦sk mytologi</forkl>
 </entry>
 
 <entry id="enddog">
@@ -938,22 +938,22 @@
 <entry id="ephemer">
  <ord>ephemer</ord>
  <var>efemer</var>
- <forkl>døgnkort; forbigående; betydningsløs; også: døgnflue</forkl>
+ <forkl>dÃ¸gnkort; forbigÃ¥ende; betydningslÃ¸s; ogsÃ¥: dÃ¸gnflue</forkl>
 </entry>
 
 <entry id="Erato">
  <ord>Erato</ord>
- <forkl><xref ord="Muse"/> for kærlighedslyrikken</forkl>
+ <forkl><xref ord="Muse"/> for kÃ¦rlighedslyrikken</forkl>
 </entry>
 
 <entry id="Erebus">
  <ord>Erebus</ord>
- <forkl>underverdenen i græsk mytologi</forkl>
+ <forkl>underverdenen i grÃ¦sk mytologi</forkl>
 </entry>
 
 <entry id="Eriksgata">
  <ord>Eriksgata</ord>
- <forkl>egl. den nytiltrådte svenske konges rundrejse gennem riget</forkl>
+ <forkl>egl. den nytiltrÃ¥dte svenske konges rundrejse gennem riget</forkl>
 </entry>
 
 <entry id="erkjende">
@@ -969,7 +969,7 @@
 <entry id="erlange">
  <ord>erlange</ord>
 <forkl>
- erhverve, opnå (efter ty.
+ erhverve, opnÃ¥ (efter ty.
  <i>erlangen</i>
  )
  </forkl>
@@ -978,7 +978,7 @@
 <entry id="Erycine">
  <ord>Erycine</ord>
  <frase>Venus Erycine</frase>
- <forkl>navn for Venus (efter bjerget Eryx på Sicilien)</forkl>
+ <forkl>navn for Venus (efter bjerget Eryx pÃ¥ Sicilien)</forkl>
 </entry>
 
 <entry id="Eumenide">
@@ -988,7 +988,7 @@
 
 <entry id="Euterpe">
  <ord>Euterpe</ord>
- <forkl><xref ord="Muse"/> for fløjtespil</forkl>
+ <forkl><xref ord="Muse"/> for flÃ¸jtespil</forkl>
 </entry>
 
 <entry id="Evan">
@@ -998,13 +998,13 @@
 
 <entry id="Extrapost">
  <ord>Extrapost</ord>
- <forkl>personbefordring som man mod særlig betaling kan bestille hos postvæsenet (til forskel fra den ordinære 'post' der følger en fast køreplan)</forkl>
+ <forkl>personbefordring som man mod sÃ¦rlig betaling kan bestille hos postvÃ¦senet (til forskel fra den ordinÃ¦re 'post' der fÃ¸lger en fast kÃ¸replan)</forkl>
 </entry>
 
 <entry id="fage">
  <ord>fage</ord>
 <forkl>
- hastig, hurtig; hos Oehlenschläger (ved sammenblanding med
+ hastig, hurtig; hos OehlenschlÃ¤ger (ved sammenblanding med
  <i><xref ord="fager"/></i>): smuk)
  </forkl>
 </entry>
@@ -1013,17 +1013,17 @@
  <ord>fager</ord>
  <var>favr</var>
  <var>fejr</var>
- <forkl>skøn, dejlig, yndig</forkl>
+ <forkl>skÃ¸n, dejlig, yndig</forkl>
 </entry>
 
-<entry id="Falæner">
- <ord>Falæner</ord>
+<entry id="FalÃ¦ner">
+ <ord>FalÃ¦ner</ord>
  <forkl>nat-sommerfugle</forkl>
 </entry>
 
 <entry id="Fang">
  <ord>Fang</ord>
- <forkl>favn; skød</forkl>
+ <forkl>favn; skÃ¸d</forkl>
 </entry>
 
 <entry id="Farsot">
@@ -1038,21 +1038,21 @@
 
 <entry id="Fedel">
  <ord>Fedel</ord>
- <var>Fædel</var>
+ <var>FÃ¦del</var>
  <forkl>violin; violinlignende instrument</forkl>
 </entry>
 
-<entry id="Feldskiær">
- <ord>Feldskiær</ord>
- <var>Feltskær</var>
- <forkl>sårlæge, kirurg</forkl>
+<entry id="FeldskiÃ¦r">
+ <ord>FeldskiÃ¦r</ord>
+ <var>FeltskÃ¦r</var>
+ <forkl>sÃ¥rlÃ¦ge, kirurg</forkl>
 </entry>
 
 <entry id="Feste">
  <ord>Feste</ord>
- <var>Fæste</var>
+ <var>FÃ¦ste</var>
  <frase>Borg og Feste (pleonastisk)</frase>
- <forkl>befæstet sted; borg</forkl>
+ <forkl>befÃ¦stet sted; borg</forkl>
 </entry>
 
 <entry id="Fibel">
@@ -1062,7 +1062,7 @@
 
 <entry id="fige">
  <ord>fige</ord>
- <forkl>skynde sig, haste; stræbe, ivre, hige (efter), attrå</forkl>
+ <forkl>skynde sig, haste; strÃ¦be, ivre, hige (efter), attrÃ¥</forkl>
 </entry>
 
 <entry id="Fimbulvinter">
@@ -1070,8 +1070,8 @@
  <forkl>(i nordisk mytologi) lang vinter forud for <xref ord="Ragnarok"/></forkl>
 </entry>
 
-<entry id="Fiskeskjær">
- <ord>Fiskeskjær</ord>
+<entry id="FiskeskjÃ¦r">
+ <ord>FiskeskjÃ¦r</ord>
  <forkl>klippegrund i havet hvor der drives fiskeri</forkl>
 </entry>
 
@@ -1086,9 +1086,9 @@
  <forkl>skridt, trin</forkl>
 </entry>
 
-<entry id="fjæle">
- <ord>fjæle</ord>
- <forkl>skjule, dølge</forkl>
+<entry id="fjÃ¦le">
+ <ord>fjÃ¦le</ord>
+ <forkl>skjule, dÃ¸lge</forkl>
 </entry>
 
 <entry id="Flaccus">
@@ -1098,12 +1098,12 @@
 
 <entry id="flak">
  <ord>flak</ord>
- <forkl>flad, jævn</forkl>
+ <forkl>flad, jÃ¦vn</forkl>
 </entry>
 
 <entry id="Flora">
  <ord>Flora</ord>
- <forkl>romersk gudinde for vegetation og blomster; svarer til den græske Chloris</forkl>
+ <forkl>romersk gudinde for vegetation og blomster; svarer til den grÃ¦ske Chloris</forkl>
 </entry>
 
 <entry id="Flynder">
@@ -1111,14 +1111,14 @@
  <forkl>fladfisk; (om person) fjols</forkl>
 </entry>
 
-<entry id="Flæg">
- <ord>Flæg</ord>
+<entry id="FlÃ¦g">
+ <ord>FlÃ¦g</ord>
  <forkl>(forskellige slags) vandplanter</forkl>
 </entry>
 
 <entry id="Fole">
  <ord>Fole</ord>
- <forkl>ung hest; føl; plag</forkl>
+ <forkl>ung hest; fÃ¸l; plag</forkl>
 </entry>
 
 <entry id="forblommet">
@@ -1139,23 +1139,23 @@
 
 <entry id="fordrage">
  <ord>fordrage</ord>
- <forkl>udholde, tåle</forkl>
+ <forkl>udholde, tÃ¥le</forkl>
 </entry>
 
 <entry id="Fore">
  <ord>Fore</ord>
  <var>Forde</var>
- <forkl>adfærd, fremtræden</forkl>
+ <forkl>adfÃ¦rd, fremtrÃ¦den</forkl>
 </entry>
 
 <entry id="forekomme">
  <ord>forekomme</ord>
- <forkl>komme i forkøbet</forkl>
+ <forkl>komme i forkÃ¸bet</forkl>
 </entry>
 
 <entry id="forfare">
  <ord>forfare</ord>
- <forkl>gå til værks; bære sig ad</forkl>
+ <forkl>gÃ¥ til vÃ¦rks; bÃ¦re sig ad</forkl>
 </entry>
 
 <entry id="forfaren">
@@ -1168,25 +1168,25 @@
  <forkl>erfaring</forkl>
 </entry>
 
-<entry id="forfængelig">
- <ord>forfængelig</ord>
+<entry id="forfÃ¦ngelig">
+ <ord>forfÃ¦ngelig</ord>
  <forkl>indbildsk</forkl>
 </entry>
 
-<entry id="Forfængelighed">
- <ord>Forfængelighed</ord>
+<entry id="ForfÃ¦ngelighed">
+ <ord>ForfÃ¦ngelighed</ord>
  <forkl>tomhed, tant; indbildskhed</forkl>
 </entry>
 
 <entry id="Forgemak">
  <ord>Forgemak</ord>
- <forkl>venteværelse for audienssøgende</forkl>
+ <forkl>ventevÃ¦relse for audienssÃ¸gende</forkl>
 </entry>
 
 <entry id="forgiette">
  <ord>forgiette</ord>
- <var>forgjætte</var>
- <var>forgætte</var>
+ <var>forgjÃ¦tte</var>
+ <var>forgÃ¦tte</var>
 <forkl>
  glemme (sml. eng.
  <i>forget</i>
@@ -1214,7 +1214,7 @@
  <var>fornam</var>
  <var>fornommen</var>
  <var>fornummet</var>
- <forkl>(præt. <i>fornam;</i> part. <i>fornommen, fornummet</i>) høre, få at vide, erfare; erkende</forkl>
+ <forkl>(prÃ¦t. <i>fornam;</i> part. <i>fornommen, fornummet</i>) hÃ¸re, fÃ¥ at vide, erfare; erkende</forkl>
 </entry>
 
 <entry id="fornumstig">
@@ -1244,7 +1244,7 @@
 
 <entry id="fortryde">
  <ord>fortryde</ord>
- <forkl>fremkalde eller nære en følelse af ubehag; harmes, ærgre sig</forkl>
+ <forkl>fremkalde eller nÃ¦re en fÃ¸lelse af ubehag; harmes, Ã¦rgre sig</forkl>
 </entry>
 
 <entry id="Fortuna">
@@ -1259,28 +1259,28 @@
 
 <entry id="forvinde">
  <ord>forvinde</ord>
- <forkl>komme over; overstå</forkl>
+ <forkl>komme over; overstÃ¥</forkl>
 </entry>
 
 <entry id="forvorpen">
  <ord>forvorpen</ord>
- <forkl>ryggesløs, fræk</forkl>
+ <forkl>ryggeslÃ¸s, frÃ¦k</forkl>
 </entry>
 
-<entry id="fredsæl">
- <ord>fredsæl</ord>
+<entry id="fredsÃ¦l">
+ <ord>fredsÃ¦l</ord>
  <forkl>fredselskende, fredelig</forkl>
 </entry>
 
-<entry id="Fredsælhed">
- <ord>Fredsælhed</ord>
- <forkl>det at være fredselskende</forkl>
+<entry id="FredsÃ¦lhed">
+ <ord>FredsÃ¦lhed</ord>
+ <forkl>det at vÃ¦re fredselskende</forkl>
 </entry>
 
 <entry id="Freya">
  <ord>Freya</ord>
  <var>Freia</var>
- <forkl>kærlighedens gudinde i nordisk mytologi</forkl>
+ <forkl>kÃ¦rlighedens gudinde i nordisk mytologi</forkl>
 </entry>
 
 <entry id="Freya2">
@@ -1298,7 +1298,7 @@
 <entry id="friste">
  <ord>friste</ord>
  <frase>friste Livet</frase>
- <forkl>opholde livet (især: under vanskeligheder, farer, osv.)</forkl>
+ <forkl>opholde livet (isÃ¦r: under vanskeligheder, farer, osv.)</forkl>
 </entry>
 
 <entry id="from">
@@ -1316,17 +1316,17 @@
  <forkl>indtil o. <year>1860</year> kun om en standspersons hustru; ellers: Madam(e)</forkl>
 </entry>
 
-<entry id="Frøken">
- <ord>Frøken</ord>
- <forkl>indtil o. <year>1860</year> kun om en standspersons datter; ellers: Jomfru(e); i middelalderen også om kongedatter</forkl>
+<entry id="FrÃ¸ken">
+ <ord>FrÃ¸ken</ord>
+ <forkl>indtil o. <year>1860</year> kun om en standspersons datter; ellers: Jomfru(e); i middelalderen ogsÃ¥ om kongedatter</forkl>
 </entry>
 
 <entry id="fuld">
  <ord>fuld</ord>
 <forkl>
- som adverbium med forstærkende betydning, eller blot udfyldende. Ofte sammenskrevet med det følgende ord; almindeligt hos Ingemann og Grundtvig. Alene fra denne sidstes
+ som adverbium med forstÃ¦rkende betydning, eller blot udfyldende. Ofte sammenskrevet med det fÃ¸lgende ord; almindeligt hos Ingemann og Grundtvig. Alene fra denne sidstes
  <i>Nyaars-Morgen</i>
- (<year>1824</year>) er noteret følgende: <i>fuldbange, fuldbrat, fulddybt, fuldgammel, fuldgjerne, fuldgod, fuldhøie, fuldkjær, fuldklart, fuldkry, fuldlange, fuldliden, fuldliflig, fuldmange, fuldmørkt, fuldnær, fuldplat, fuldrappe, fuldrene, fuldrige, fuldsvare, fuldsær(t), fuldsød, fuldtaaget, fuldtør, fuldvarm, fuldværd</i>
+ (<year>1824</year>) er noteret fÃ¸lgende: <i>fuldbange, fuldbrat, fulddybt, fuldgammel, fuldgjerne, fuldgod, fuldhÃ¸ie, fuldkjÃ¦r, fuldklart, fuldkry, fuldlange, fuldliden, fuldliflig, fuldmange, fuldmÃ¸rkt, fuldnÃ¦r, fuldplat, fuldrappe, fuldrene, fuldrige, fuldsvare, fuldsÃ¦r(t), fuldsÃ¸d, fuldtaaget, fuldtÃ¸r, fuldvarm, fuldvÃ¦rd</i>
  </forkl>
 </entry>
 
@@ -1338,23 +1338,23 @@
 
 <entry id="Fylgie">
  <ord>Fylgie</ord>
- <forkl>værneånd</forkl>
+ <forkl>vÃ¦rneÃ¥nd</forkl>
 </entry>
 
 <entry id="Fylking">
  <ord>Fylking</ord>
- <forkl>slagorden; (opstillet) hær</forkl>
+ <forkl>slagorden; (opstillet) hÃ¦r</forkl>
 </entry>
 
-<entry id="Fæstensøl">
- <ord>Fæstensøl</ord>
- <forkl>forlovelsesgilde (sml. <i>gravøl</i>)</forkl>
+<entry id="FÃ¦stensÃ¸l">
+ <ord>FÃ¦stensÃ¸l</ord>
+ <forkl>forlovelsesgilde (sml. <i>gravÃ¸l</i>)</forkl>
 </entry>
 
 
 <entry id="Galathe">
  <ord>Galathe</ord>
- <forkl>navn på en nereide</forkl>
+ <forkl>navn pÃ¥ en nereide</forkl>
 </entry>
 
 <entry id="Gallien">
@@ -1364,7 +1364,7 @@
 
 <entry id="Galpen">
  <ord>Galpen</ord>
- <forkl>råben; gispen</forkl>
+ <forkl>rÃ¥ben; gispen</forkl>
 </entry>
 
 <entry id="Gam">
@@ -1374,32 +1374,32 @@
 
 <entry id="Gammen">
  <ord>Gammen</ord>
- <forkl>glæde, morskab; skæmt</forkl>
+ <forkl>glÃ¦de, morskab; skÃ¦mt</forkl>
 </entry>
 
 <entry id="Ganger">
  <ord>Ganger</ord>
- <forkl>(ædel) ridehest</forkl>
+ <forkl>(Ã¦del) ridehest</forkl>
 </entry>
 
 <entry id="Ganymedes">
  <ord>Ganymed(es)</ord>
- <forkl>en skøn yngling som elskes af <xref ord="Zeus"/></forkl>
+ <forkl>en skÃ¸n yngling som elskes af <xref ord="Zeus"/></forkl>
 </entry>
 
 <entry id="Gavler">
  <ord>Gavler</ord>
- <forkl>(planten) skvalderkål</forkl>
+ <forkl>(planten) skvalderkÃ¥l</forkl>
 </entry>
 
 <entry id="Gefion">
  <ord>Gefion</ord>
- <forkl>mytisk kvindelig skikkelse, knyttet til Sjælland</forkl>
+ <forkl>mytisk kvindelig skikkelse, knyttet til SjÃ¦lland</forkl>
 </entry>
 
 <entry id="Geni">
  <ord>Geni</ord>
- <forkl>(spøg.) med afsvækket bet.: anlæg, dygtighed</forkl>
+ <forkl>(spÃ¸g.) med afsvÃ¦kket bet.: anlÃ¦g, dygtighed</forkl>
 </entry>
 
 <entry id="Gestalt">
@@ -1428,7 +1428,7 @@
 
 <entry id="gild">
  <ord>gild</ord>
- <forkl>fortrinlig, ypperlig; prægtig; dygtig</forkl>
+ <forkl>fortrinlig, ypperlig; prÃ¦gtig; dygtig</forkl>
 </entry>
 
 <entry id="Gimle">
@@ -1439,16 +1439,16 @@
 <entry id="Ginistan">
  <ord>Ginistan</ord>
 <forkl>
- Ginnistan; et af ånder beboet fabelland (af. arab.
+ Ginnistan; et af Ã¥nder beboet fabelland (af. arab.
  <i>djinni,</i>
  plur.
- <i>djinn,</i> (ond) ånd, dæmon)
+ <i>djinn,</i> (ond) Ã¥nd, dÃ¦mon)
  </forkl>
 </entry>
 
 <entry id="Gisel">
  <ord>Gisel</ord>
- <forkl>strålekrans; glorie</forkl>
+ <forkl>strÃ¥lekrans; glorie</forkl>
 </entry>
 
 <entry id="Gjallarhorn">
@@ -1456,16 +1456,16 @@
  <forkl><xref ord="Heimdal"/>s horn eller lur</forkl>
 </entry>
 
-<entry id="gjække">
- <ord>gjække</ord>
+<entry id="gjÃ¦kke">
+ <ord>gjÃ¦kke</ord>
  <var>gecke</var>
- <var>gække</var>
+ <var>gÃ¦kke</var>
  <forkl>narre, bedrage, vildlede</forkl>
 </entry>
 
 <entry id="Gladhjem">
  <ord>Gladhjem</ord>
- <forkl>navn på <xref ord="Odin"/>s bolig; egl. 'det strålende hjem'</forkl>
+ <forkl>navn pÃ¥ <xref ord="Odin"/>s bolig; egl. 'det strÃ¥lende hjem'</forkl>
 </entry>
 
 <entry id="Glar">
@@ -1476,7 +1476,7 @@
 <entry id="Glavind">
  <ord>Glavind</ord>
  <var>Glaffuend</var>
- <forkl>spyd; sværd</forkl>
+ <forkl>spyd; svÃ¦rd</forkl>
 </entry>
 
 <entry id="Godike">
@@ -1491,34 +1491,34 @@
  <i>godt-Aar</i>
  ; senere opfattet som
  <i>god-Taar</i>
- ; drikkehilsen; skål
+ ; drikkehilsen; skÃ¥l
  </forkl>
 </entry>
 
 <entry id="Gothen">
  <ord>Gothen</ord>
- <forkl>(poet.) svenskeren, de svenske (egl.: person fra Götaland)</forkl>
+ <forkl>(poet.) svenskeren, de svenske (egl.: person fra GÃ¶taland)</forkl>
 </entry>
 
-<entry id="graahærdet">
- <ord>graahærdet</ord>
- <forkl>gråhåret</forkl>
+<entry id="graahÃ¦rdet">
+ <ord>graahÃ¦rdet</ord>
+ <forkl>grÃ¥hÃ¥ret</forkl>
 </entry>
 
 <entry id="graaiset">
  <ord>graaiset</ord>
- <forkl>som har grå isse; gråhåret</forkl>
+ <forkl>som har grÃ¥ isse; grÃ¥hÃ¥ret</forkl>
 </entry>
 
 <entry id="gran">
  <ord>gran</ord>
  <var>grand</var>
- <forkl>prægtig; dygtig, forstandig</forkl>
+ <forkl>prÃ¦gtig; dygtig, forstandig</forkl>
 </entry>
 
-<entry id="Guldtærning">
- <ord>Guldtærning</ord>
- <forkl>poet. om skæbnens uberegnelighed</forkl>
+<entry id="GuldtÃ¦rning">
+ <ord>GuldtÃ¦rning</ord>
+ <forkl>poet. om skÃ¦bnens uberegnelighed</forkl>
 </entry>
 
 <entry id="Gulland">
@@ -1530,13 +1530,13 @@
 
 <entry id="Haandtag">
  <ord>Haandtag</ord>
- <forkl>det at tage ngn. i hånden; håndtryk</forkl>
+ <forkl>det at tage ngn. i hÃ¥nden; hÃ¥ndtryk</forkl>
 </entry>
 
 <entry id="Hading">
  <ord>Hading</ord>
- <var>Hadingsfærd</var>
- <forkl>hånlig eller hadefuld adfærd</forkl>
+ <var>HadingsfÃ¦rd</var>
+ <forkl>hÃ¥nlig eller hadefuld adfÃ¦rd</forkl>
 </entry>
 
 <entry id="Hald1">
@@ -1546,33 +1546,33 @@
 
 <entry id="Hald2">
  <ord>Hald</ord>
- <forkl>skråning, brink</forkl>
+ <forkl>skrÃ¥ning, brink</forkl>
 </entry>
 
 <entry id="Hallandsaas">
  <ord>Hallandsaas</ord>
- <forkl>området hvor nu Kongens Nytorv er (i København)</forkl>
+ <forkl>omrÃ¥det hvor nu Kongens Nytorv er (i KÃ¸benhavn)</forkl>
 </entry>
 
 <entry id="hartad">
  <ord>hartad</ord>
- <forkl>næsten; omtrent</forkl>
+ <forkl>nÃ¦sten; omtrent</forkl>
 </entry>
 
 <entry id="Hauge">
  <ord>Hauge</ord>
- <forkl>have (ældre stavemåde)</forkl>
+ <forkl>have (Ã¦ldre stavemÃ¥de)</forkl>
 </entry>
 
 <entry id="Hebe">
  <ord>Hebe</ord>
- <forkl>græsk gudinde for ungdom</forkl>
+ <forkl>grÃ¦sk gudinde for ungdom</forkl>
 </entry>
 
 <entry id="hede">
  <ord>hede</ord>
 <forkl>
- (i folkeviser; sa. ord som <i>hedde</i>) kalde (på); (for betydningen sml. ty.
+ (i folkeviser; sa. ord som <i>hedde</i>) kalde (pÃ¥); (for betydningen sml. ty.
  <i>heissen</i>
  )
  </forkl>
@@ -1580,26 +1580,26 @@
 
 <entry id="Heimdal">
  <ord>Heimdal</ord>
- <forkl>(i nordisk mytologi) gudernes vægter</forkl>
+ <forkl>(i nordisk mytologi) gudernes vÃ¦gter</forkl>
 </entry>
 
 <entry id="Hel">
  <ord>Hel</ord>
  <var>Hela</var>
  <var>Helheim</var>
- <forkl>(herskerinden over) de dødes rige i nordisk mytologi</forkl>
+ <forkl>(herskerinden over) de dÃ¸des rige i nordisk mytologi</forkl>
 </entry>
 
 <entry id="Helikon">
  <ord>Helikon</ord>
- <forkl>bjergegn i Grækenland</forkl>
+ <forkl>bjergegn i GrÃ¦kenland</forkl>
 </entry>
 
 <entry id="Helled">
  <ord>Helled</ord>
  <var>Hellede</var>
 <forkl>
- helt, kæmpe (sa. ord som
+ helt, kÃ¦mpe (sa. ord som
  <i>Helt</i>
  )
  </forkl>
@@ -1613,18 +1613,18 @@
 <entry id="Heloff">
  <ord>Heloff</ord>
  <frase>Christ Heloff</frase>
- <forkl>heloffer (gammeltestamentligt begreb, anvendt om Kristi offerdød)</forkl>
+ <forkl>heloffer (gammeltestamentligt begreb, anvendt om Kristi offerdÃ¸d)</forkl>
 </entry>
 
 <entry id="Hera">
  <ord>Hera</ord>
  <var>Here</var>
- <forkl>den øverste gudinde i græsk mytologi; gift med <xref ord="Zeus"/></forkl>
+ <forkl>den Ã¸verste gudinde i grÃ¦sk mytologi; gift med <xref ord="Zeus"/></forkl>
 </entry>
 
 <entry id="Hermes">
  <ord>Hermes</ord>
- <forkl>de græske guders sendebud; gud for handel m.m.; svarer til den romerske Merkur</forkl>
+ <forkl>de grÃ¦ske guders sendebud; gud for handel m.m.; svarer til den romerske Merkur</forkl>
 </entry>
 
 <entry id="Hermod">
@@ -1635,23 +1635,23 @@
 
 <entry id="Herold">
  <ord>Herold</ord>
- <forkl>højtideligt sendebud eller budbringer; udråber ved højtidelige lejligheder</forkl>
+ <forkl>hÃ¸jtideligt sendebud eller budbringer; udrÃ¥ber ved hÃ¸jtidelige lejligheder</forkl>
 </entry>
 
 <entry id="Herredom">
  <ord>Herredom</ord>
- <forkl>herredømme; magtområde, rige, stat</forkl>
+ <forkl>herredÃ¸mme; magtomrÃ¥de, rige, stat</forkl>
 </entry>
 
-<entry id="Herrefærd">
- <ord>Herrefærd</ord>
+<entry id="HerrefÃ¦rd">
+ <ord>HerrefÃ¦rd</ord>
  <forkl>krigstog, leding</forkl>
 </entry>
 
 <entry id="Hertha">
  <ord>Hertha</ord>
 <forkl>
- dansk gudinde, traditionelt knyttet til Sjælland; misforståelse af
+ dansk gudinde, traditionelt knyttet til SjÃ¦lland; misforstÃ¥else af
  <i>Nertha</i>
  hos den romerske historiker Tacitus
  </forkl>
@@ -1659,12 +1659,12 @@
 
 <entry id="Herthadalen">
  <ord>Herthadalen</ord>
- <forkl>lokalitet nær Roskilde (oprindelig dog <i>Ærtedalen</i>)</forkl>
+ <forkl>lokalitet nÃ¦r Roskilde (oprindelig dog <i>Ã†rtedalen</i>)</forkl>
 </entry>
 
 <entry id="Hesperien">
  <ord>Hesperien</ord>
- <forkl>Vesterlandet (for grækerne:) Italien</forkl>
+ <forkl>Vesterlandet (for grÃ¦kerne:) Italien</forkl>
 </entry>
 
 <entry id="Hesperus">
@@ -1673,59 +1673,59 @@
  <forkl>navn for planeten Venus; aftenstjernen</forkl>
 </entry>
 
-<entry id="Hetære">
- <ord>Hetære</ord>
- <forkl>finere skøge; 'call-girl'</forkl>
+<entry id="HetÃ¦re">
+ <ord>HetÃ¦re</ord>
+ <forkl>finere skÃ¸ge; 'call-girl'</forkl>
 </entry>
 
 <entry id="Hialte">
  <ord>Hialte</ord>
- <forkl>håndgreb på sværd; sværdfæste</forkl>
+ <forkl>hÃ¥ndgreb pÃ¥ svÃ¦rd; svÃ¦rdfÃ¦ste</forkl>
 </entry>
 
 <entry id="hil">
  <ord>hil</ord>
  <var>hel</var>
- <frase>hil sidde du; (også:) hel sidde du</frase>
- <forkl>stående udtryk i (efterligning af) folkeviser: 'gid du må sidde (være) sund, lykkelig; jeg hilser dig!'</forkl>
+ <frase>hil sidde du; (ogsÃ¥:) hel sidde du</frase>
+ <forkl>stÃ¥ende udtryk i (efterligning af) folkeviser: 'gid du mÃ¥ sidde (vÃ¦re) sund, lykkelig; jeg hilser dig!'</forkl>
 </entry>
 
 <entry id="Hippocrene">
  <ord>Hippocrene</ord>
- <forkl>en brønd nær <xref ord="Helikon"/>; kilde for digterisk begejstring</forkl>
+ <forkl>en brÃ¸nd nÃ¦r <xref ord="Helikon"/>; kilde for digterisk begejstring</forkl>
 </entry>
 
 <entry id="Hird">
  <ord>Hird</ord>
  <var>Hirdmand</var>
- <forkl>livvagt tilknyttet konger og stormænd</forkl>
+ <forkl>livvagt tilknyttet konger og stormÃ¦nd</forkl>
 </entry>
 
 <entry id="Hjald">
  <ord>Hjald</ord>
  <var>Hald</var>
  <var>Porthjald</var>
- <forkl>loft i en stald, høstænge; pinde som hønsene sidder på om natten</forkl>
+ <forkl>loft i en stald, hÃ¸stÃ¦nge; pinde som hÃ¸nsene sidder pÃ¥ om natten</forkl>
 </entry>
 
 <entry id="Hlidskialf">
  <ord>Hlidskialf</ord>
  <var>Lidskialf</var>
- <forkl><xref ord="Odin"/>s sæde hvorfra han skuer over hele verden</forkl>
+ <forkl><xref ord="Odin"/>s sÃ¦de hvorfra han skuer over hele verden</forkl>
 </entry>
 
 <entry id="Hofbud">
  <ord>Hofbud</ord>
- <forkl>kongelig befaling; også: dristig eller fræk befaling</forkl>
+ <forkl>kongelig befaling; ogsÃ¥: dristig eller frÃ¦k befaling</forkl>
 </entry>
 
-<entry id="hoffærdig">
- <ord>hoffærdig</ord>
+<entry id="hoffÃ¦rdig">
+ <ord>hoffÃ¦rdig</ord>
  <forkl>hovmodig, overlegen</forkl>
 </entry>
 
-<entry id="Hoffærdighed">
- <ord>Hoffærdighed</ord>
+<entry id="HoffÃ¦rdighed">
+ <ord>HoffÃ¦rdighed</ord>
  <forkl>hovmod, overlegenhed</forkl>
 </entry>
 
@@ -1754,9 +1754,9 @@
 <entry id="Hor">
  <ord>Hor</ord>
 <forkl>
- at en (gift eller ugift) mand 'bedriver Hor' eller 'begaar Ægteskabsbrud' betyder i Bibelen at han bryder en
+ at en (gift eller ugift) mand 'bedriver Hor' eller 'begaar Ã†gteskabsbrud' betyder i Bibelen at han bryder en
  <i>anden</i>
- mands ægteskab; senere omtolket til at stemme med et ændret syn på kvindens plads i samfundet
+ mands Ã¦gteskab; senere omtolket til at stemme med et Ã¦ndret syn pÃ¥ kvindens plads i samfundet
  </forkl>
 </entry>
 
@@ -1771,12 +1771,12 @@
 
 <entry id="Hospital">
  <ord>Hospital</ord>
- <forkl>fattiggård; stiftelse; alderdomshjem; fattiggård</forkl>
+ <forkl>fattiggÃ¥rd; stiftelse; alderdomshjem; fattiggÃ¥rd</forkl>
 </entry>
 
 <entry id="Houri">
  <ord>Houri</ord>
- <forkl>kvinde som betjener de salige (mænd) i det muslimske paradis</forkl>
+ <forkl>kvinde som betjener de salige (mÃ¦nd) i det muslimske paradis</forkl>
 </entry>
 
 <entry id="hue">
@@ -1787,55 +1787,55 @@
 
 <entry id="Huen">
  <ord>Huen</ord>
- <var>Huenø</var>
+ <var>HuenÃ¸</var>
  <var>Hveen</var>
- <forkl>Hveen, Ven (i Øresund)</forkl>
+ <forkl>Hveen, Ven (i Ã˜resund)</forkl>
 </entry>
 
 <entry id="huld">
  <ord>huld</ord>
- <forkl>hengiven, venligsindet; yndig, skøn</forkl>
+ <forkl>hengiven, venligsindet; yndig, skÃ¸n</forkl>
 </entry>
 
 <entry id="Huldre">
  <ord>Huldre</ord>
- <forkl>overnaturligt (farligt) kvindeligt væsen; holder ofte til i skove eller på øde fjelde</forkl>
+ <forkl>overnaturligt (farligt) kvindeligt vÃ¦sen; holder ofte til i skove eller pÃ¥ Ã¸de fjelde</forkl>
 </entry>
 
 <entry id="huldsalig">
  <ord>huldsalig</ord>
- <forkl>nådig, venligt nedladende</forkl>
+ <forkl>nÃ¥dig, venligt nedladende</forkl>
 </entry>
 
 <entry id="husvale">
  <ord>husvale</ord>
  <var>hussuale</var>
- <forkl>lindre, trøste</forkl>
+ <forkl>lindre, trÃ¸ste</forkl>
 </entry>
 
 <entry id="Husvalelse">
  <ord>Husvalelse</ord>
- <forkl>lindring, trøst</forkl>
+ <forkl>lindring, trÃ¸st</forkl>
 </entry>
 
 <entry id="Husvaler">
  <ord>Husvaler</ord>
- <forkl>en der trøster; navn for Helligånden</forkl>
+ <forkl>en der trÃ¸ster; navn for HelligÃ¥nden</forkl>
 </entry>
 
 <entry id="hvalt">
  <ord>hvalt</ord>
  <var>hvalvt</var>
 <forkl>
- hvælvet (part. af
- <i>hvælve</i>
+ hvÃ¦lvet (part. af
+ <i>hvÃ¦lve</i>
  )
  </forkl>
 </entry>
 
 <entry id="Hvalv">
  <ord>Hvalv</ord>
- <forkl>hvælving</forkl>
+ <forkl>hvÃ¦lving</forkl>
 </entry>
 
 <entry id="hveden">
@@ -1846,7 +1846,7 @@
 
 <entry id="hvege">
  <ord>hvege</ord>
- <forkl>svaje, vifte, blafre; bevæge sig uroligt frem og tilbage</forkl>
+ <forkl>svaje, vifte, blafre; bevÃ¦ge sig uroligt frem og tilbage</forkl>
 </entry>
 
 <entry id="hviste">
@@ -1856,53 +1856,53 @@
 
 <entry id="Hymen">
  <ord>Hymen</ord>
- <forkl>græsk bryllupsgud; (om) bryllup eller ægteskab</forkl>
+ <forkl>grÃ¦sk bryllupsgud; (om) bryllup eller Ã¦gteskab</forkl>
 </entry>
 
-<entry id="Hymenæe">
- <ord>Hymenæ(e)</ord>
+<entry id="HymenÃ¦e">
+ <ord>HymenÃ¦(e)</ord>
  <forkl>bryllupssang</forkl>
 </entry>
 
-<entry id="Hærde">
- <ord>Hærde</ord>
+<entry id="HÃ¦rde">
+ <ord>HÃ¦rde</ord>
  <var>Herde</var>
  <forkl>skulder</forkl>
 </entry>
 
-<entry id="høde">
- <ord>høde</ord>
- <var>høge</var>
- <forkl>true med hånden, med en stok eller lignende</forkl>
+<entry id="hÃ¸de">
+ <ord>hÃ¸de</ord>
+ <var>hÃ¸ge</var>
+ <forkl>true med hÃ¥nden, med en stok eller lignende</forkl>
 </entry>
 
-<entry id="Højeloft">
- <ord>Højeloft</ord>
- <var>Høienloft</var>
- <var>Høyelofft</var>
- <forkl>husets øverste etage; borgens fornemste sal; kongens sal</forkl>
+<entry id="HÃ¸jeloft">
+ <ord>HÃ¸jeloft</ord>
+ <var>HÃ¸ienloft</var>
+ <var>HÃ¸yelofft</var>
+ <forkl>husets Ã¸verste etage; borgens fornemste sal; kongens sal</forkl>
 </entry>
 
-<entry id="Højskole">
- <ord>Højskole</ord>
+<entry id="HÃ¸jskole">
+ <ord>HÃ¸jskole</ord>
  <forkl>universitet</forkl>
 </entry>
 
-<entry id="Høresal">
- <ord>Høresal</ord>
- <forkl>klasseværelse, auditorium</forkl>
+<entry id="HÃ¸resal">
+ <ord>HÃ¸resal</ord>
+ <forkl>klassevÃ¦relse, auditorium</forkl>
 </entry>
 
 <entry id="Id">
  <ord>Id</ord>
  <var>Iid</var>
  <var>Jid</var>
- <forkl>virksomhed, gerning; hensigt, stræben</forkl>
+ <forkl>virksomhed, gerning; hensigt, strÃ¦ben</forkl>
 </entry>
 
-<entry id="Idræt">
- <ord>Idræt</ord>
- <forkl>gerning, handling; dåd, bedrift</forkl>
+<entry id="IdrÃ¦t">
+ <ord>IdrÃ¦t</ord>
+ <forkl>gerning, handling; dÃ¥d, bedrift</forkl>
 </entry>
 
 <entry id="igen">
@@ -1910,7 +1910,7 @@
  <var>igien</var>
  <frase>sidde igien, osv.</frase>
 <forkl>
- gå eller stå én igen = gå én i møde (sml. ty.
+ gÃ¥ eller stÃ¥ Ã©n igen = gÃ¥ Ã©n i mÃ¸de (sml. ty.
  <i>entgegen</i>
  )
  </forkl>
@@ -1923,12 +1923,12 @@
 
 <entry id="Ildgierningsmand">
  <ord>Ildgierningsmand</ord>
- <forkl>forbryder, røver, bandit</forkl>
+ <forkl>forbryder, rÃ¸ver, bandit</forkl>
 </entry>
 
 <entry id="Immanuel">
  <ord>Immanuel</ord>
- <forkl>hebraisk navn; egl. 'Gud med os' (<xref bibel="bibelesajas07,14"/>); <xref bibel="bibelmatt01,23"/> tolker det som en profeti om Jesu fødsel</forkl>
+ <forkl>hebraisk navn; egl. 'Gud med os' (<xref bibel="bibelesajas07,14"/>); <xref bibel="bibelmatt01,23"/> tolker det som en profeti om Jesu fÃ¸dsel</forkl>
 </entry>
 
 <entry id="Imperativ">
@@ -1972,57 +1972,57 @@
  <i>I</i>
  og
  <i>J</i>
- den samme type, og det er ofte en skønssag om man skal gengive bogstavet som det ene eller det andet
+ den samme type, og det er ofte en skÃ¸nssag om man skal gengive bogstavet som det ene eller det andet
  </forkl>
 </entry>
 
 <entry id="Jason">
  <ord>Jason</ord>
- <forkl>græsk sagnhelt; Thorvaldsens statue forestillende denne</forkl>
+ <forkl>grÃ¦sk sagnhelt; Thorvaldsens statue forestillende denne</forkl>
 </entry>
 
-<entry id="Jomfruløve">
- <ord>Jomfruløve</ord>
- <forkl>sfinks (vist kun brugt af Oehlenschläger)</forkl>
+<entry id="JomfrulÃ¸ve">
+ <ord>JomfrulÃ¸ve</ord>
+ <forkl>sfinks (vist kun brugt af OehlenschlÃ¤ger)</forkl>
 </entry>
 
 <entry id="Jorsal">
  <ord>Jorsal</ord>
- <var>Jørsal</var>
+ <var>JÃ¸rsal</var>
  <forkl>Jerusalem</forkl>
 </entry>
 
 <entry id="Jotun">
  <ord>Jotun</ord>
- <forkl>jætte</forkl>
+ <forkl>jÃ¦tte</forkl>
 </entry>
 
 <entry id="Julefaer">
  <ord>Julefaer</ord>
- <forkl>personifikation af julen eller af juleglæden; 'julemand' (men dette ord forekommer næppe før <year>1900</year>)</forkl>
+ <forkl>personifikation af julen eller af juleglÃ¦den; 'julemand' (men dette ord forekommer nÃ¦ppe fÃ¸r <year>1900</year>)</forkl>
 </entry>
 
 <entry id="Juno">
  <ord>Juno</ord>
- <forkl>den øverste gudinde i romersk mytologi; gift med <xref ord="Jupiter"/></forkl>
+ <forkl>den Ã¸verste gudinde i romersk mytologi; gift med <xref ord="Jupiter"/></forkl>
 </entry>
 
 <entry id="Jus1">
  <ord>Jus</ord>
- <frase>Jus naturæ</frase>
+ <frase>Jus naturÃ¦</frase>
  <forkl>naturret</forkl>
 </entry>
 
 <entry id="Jus2">
  <ord>Jus</ord>
  <frase>Jus proponendi</frase>
- <forkl>forslagsret; kirkeejerens ret til at udpege en kandidat til præsteembede</forkl>
+ <forkl>forslagsret; kirkeejerens ret til at udpege en kandidat til prÃ¦steembede</forkl>
 </entry>
 
 <entry id="Jus3">
  <ord>Jus</ord>
  <frase>Jus Talionis</frase>
- <forkl>gengældelses-ret</forkl>
+ <forkl>gengÃ¦ldelses-ret</forkl>
 </entry>
 
 <entry id="Kaar">
@@ -2037,13 +2037,13 @@
 
 <entry id="Kabuds">
  <ord>Kabuds</ord>
- <forkl>hue med øreklapper eller slag der kan knappes foran munden olgn.</forkl>
+ <forkl>hue med Ã¸reklapper eller slag der kan knappes foran munden olgn.</forkl>
 </entry>
 
 <entry id="Kakkelorum">
  <ord>Kakkelorum</ord>
 <forkl>
- (vistnok spøgende dannet af
+ (vistnok spÃ¸gende dannet af
  <i>Kakkelovn</i>
  med latinsk endelse) 'om fromme formler ell. ramser' (ODS)
  </forkl>
@@ -2051,17 +2051,17 @@
 
 <entry id="Kalmus">
  <ord>Kalmus</ord>
- <forkl>græsagtig plante med aromatisk rodstok</forkl>
+ <forkl>grÃ¦sagtig plante med aromatisk rodstok</forkl>
 </entry>
 
 <entry id="Kalvekryds">
  <ord>Kalvekryds</ord>
- <forkl>kalvekrøs; skjortebryst i brug omkring <year>1800</year></forkl>
+ <forkl>kalvekrÃ¸s; skjortebryst i brug omkring <year>1800</year></forkl>
 </entry>
 
 <entry id="Kammerjunker">
  <ord>Kammerjunker</ord>
- <forkl>en lavere hoftitel; har vistnok undertiden et skær af latterlighed</forkl>
+ <forkl>en lavere hoftitel; har vistnok undertiden et skÃ¦r af latterlighed</forkl>
 </entry>
 
 <entry id="Kands">
@@ -2083,13 +2083,13 @@
 <entry id="kaste">
  <ord>kaste</ord>
  <frase>kaste op i en bog; kaste Loven op</frase>
- <forkl>slå op i bogen; i loven</forkl>
+ <forkl>slÃ¥ op i bogen; i loven</forkl>
 </entry>
 
 <entry id="keg">
  <ord>keg</ord>
 <forkl>
- kiggede (præt. af
+ kiggede (prÃ¦t. af
  <i>kige</i>
  )
  </forkl>
@@ -2098,12 +2098,12 @@
 <entry id="keise">
  <ord>keise</ord>
  <var>keyse</var>
- <forkl>vælge, kåre, hylde (en konge olgn.)</forkl>
+ <forkl>vÃ¦lge, kÃ¥re, hylde (en konge olgn.)</forkl>
 </entry>
 
 <entry id="Kildevogn">
  <ord>Kildevogn</ord>
- <forkl>kapervogn der kører til Kirsten Piils Kilde i Dyrehaven nord for København</forkl>
+ <forkl>kapervogn der kÃ¸rer til Kirsten Piils Kilde i Dyrehaven nord for KÃ¸benhavn</forkl>
 </entry>
 
 <entry id="Kjeldermand">
@@ -2113,14 +2113,14 @@
 
 <entry id="kjertelsvag">
  <ord>kjertelsvag</ord>
- <forkl>kirtelsvag; (om børn) som lider af tuberkulose eller skrofulose</forkl>
+ <forkl>kirtelsvag; (om bÃ¸rn) som lider af tuberkulose eller skrofulose</forkl>
 </entry>
 
-<entry id="Kjærminde">
- <ord>Kjærminde</ord>
+<entry id="KjÃ¦rminde">
+ <ord>KjÃ¦rminde</ord>
  <var>Kierminde</var>
- <var>Kærminde</var>
- <forkl>(blomsten) forglemmigej; kært minde</forkl>
+ <var>KÃ¦rminde</var>
+ <forkl>(blomsten) forglemmigej; kÃ¦rt minde</forkl>
 </entry>
 
 <entry id="Klaffer">
@@ -2131,24 +2131,24 @@
 <entry id="Klokke1">
  <ord>Klokke</ord>
  <frase>Klokken gaar til to</frase>
- <forkl>klokken er over ét</forkl>
+ <forkl>klokken er over Ã©t</forkl>
 </entry>
 
 <entry id="Klokke2">
  <ord>Klokke</ord>
  <frase>Klokken (er) tre Qvarter til Ni</frase>
- <forkl>klokken er ét kvarter i ni (8.45)</forkl>
+ <forkl>klokken er Ã©t kvarter i ni (8.45)</forkl>
 </entry>
 
-<entry id="Klokke-Slæt">
- <ord>Klokke-Slæt</ord>
+<entry id="Klokke-SlÃ¦t">
+ <ord>Klokke-SlÃ¦t</ord>
  <forkl>klokkeslag (time- eller kvarterslag)</forkl>
 </entry>
 
 <entry id="Knar">
  <ord>Knar</ord>
  <var>Knor</var>
- <forkl>handels- eller kampfartøj i nordisk oldtid og middelalder</forkl>
+ <forkl>handels- eller kampfartÃ¸j i nordisk oldtid og middelalder</forkl>
 </entry>
 
 <entry id="Kobberstykke">
@@ -2158,33 +2158,33 @@
 
 <entry id="Koglerie">
  <ord>Koglerie</ord>
- <forkl>trolddom; blændværk, gøgleri</forkl>
+ <forkl>trolddom; blÃ¦ndvÃ¦rk, gÃ¸gleri</forkl>
 </entry>
 
 <entry id="Kornmod">
  <ord>Kornmod</ord>
  <var>Kornmoen</var>
- <forkl>glimt i horizonten fra fjerne (uhørlige) tordenvejr</forkl>
+ <forkl>glimt i horizonten fra fjerne (uhÃ¸rlige) tordenvejr</forkl>
 </entry>
 
 <entry id="Kors">
  <ord>Kors</ord>
  <frase>Korsets Ord</frase>
- <forkl>alluderer til <xref bibel="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' Ordbog over det danske sprog [under Kors, sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.)</forkl>
+ <forkl>alluderer til <xref bibel="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' Ordbog over det danske sprog [under Kors, sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforstÃ¥else: Meningen er 'ordet om korset,' (sÃ¥ledes da ogsÃ¥ i 1948-oversÃ¦ttelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi dÃ¸d pÃ¥ korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord pÃ¥ korset.)</forkl>
 </entry>
 
-<entry id="Korsdør">
- <ord>Korsdør</ord>
+<entry id="KorsdÃ¸r">
+ <ord>KorsdÃ¸r</ord>
 <forkl>
- kordør, adgangen fra kirkeskibet til koret; man skrev tidligere
- <i>Chorsdør,</i>
+ kordÃ¸r, adgangen fra kirkeskibet til koret; man skrev tidligere
+ <i>ChorsdÃ¸r,</i>
  men da
- <i>Korsdør</i>
- kan misforstås som en sammensætning med
+ <i>KorsdÃ¸r</i>
+ kan misforstÃ¥s som en sammensÃ¦tning med
  <i>Kors-,</i>
  blev
- <i>Kordør</i>
- den nu fastslåede form
+ <i>KordÃ¸r</i>
+ den nu fastslÃ¥ede form
  </forkl>
 </entry>
 
@@ -2196,12 +2196,12 @@
 <entry id="Kothurne">
  <ord>Kothurne</ord>
  <var>Cothurne</var>
- <forkl>høje sko eller klodser båret af skuespillerne på oldtidens teater; også om opstyltet udtryksform</forkl>
+ <forkl>hÃ¸je sko eller klodser bÃ¥ret af skuespillerne pÃ¥ oldtidens teater; ogsÃ¥ om opstyltet udtryksform</forkl>
 </entry>
 
 <entry id="kredentse">
  <ord>kredentse</ord>
- <forkl>smage (prøvende) på vinen; drikke én til</forkl>
+ <forkl>smage (prÃ¸vende) pÃ¥ vinen; drikke Ã©n til</forkl>
 </entry>
 
 <entry id="kreng">
@@ -2213,35 +2213,35 @@
 
 <entry id="Kritikakler">
  <ord>Kritikakler</ord>
- <forkl>smålig kritiker</forkl>
+ <forkl>smÃ¥lig kritiker</forkl>
 </entry>
 
-<entry id="kvær">
- <ord>kvær</ord>
+<entry id="kvÃ¦r">
+ <ord>kvÃ¦r</ord>
  <var>quer</var>
- <var>qvær</var>
- <forkl>rolig, stille, tavs; (på) tværs (sml. tysk <i>quer</i>)</forkl>
+ <var>qvÃ¦r</var>
+ <forkl>rolig, stille, tavs; (pÃ¥) tvÃ¦rs (sml. tysk <i>quer</i>)</forkl>
 </entry>
 
 <entry id="Kyklop">
  <ord>Kyklop</ord>
- <forkl>menneskelignende fabelvæsen med ét øje i panden</forkl>
+ <forkl>menneskelignende fabelvÃ¦sen med Ã©t Ã¸je i panden</forkl>
 </entry>
 
 <entry id="Kyndelmisse">
  <ord>Kyndelmisse</ord>
- <var>Kjørmes</var>
+ <var>KjÃ¸rmes</var>
  <forkl>(opr. festen for Marias renselse, 2. februar; <xref bibel="bibellukas02,22"/>)</forkl>
 </entry>
 
 <entry id="Ladegaarden">
  <ord>Ladegaarden</ord>
- <forkl>staden Københavns fattiggård</forkl>
+ <forkl>staden KÃ¸benhavns fattiggÃ¥rd</forkl>
 </entry>
 
-<entry id="Landemærke">
- <ord>Landemærke</ord>
- <forkl>grænse, grænseskel</forkl>
+<entry id="LandemÃ¦rke">
+ <ord>LandemÃ¦rke</ord>
+ <forkl>grÃ¦nse, grÃ¦nseskel</forkl>
 </entry>
 
 <entry id="Landsoldat">
@@ -2256,19 +2256,19 @@
 
 <entry id="Lazarus">
  <ord>Lazarus</ord>
- <forkl>navn på to personer i Ny Testamente: <xref bibel="bibellukas16,19-31"/> og <xref bibel="bibeljohannes11,1-44"/></forkl>
+ <forkl>navn pÃ¥ to personer i Ny Testamente: <xref bibel="bibellukas16,19-31"/> og <xref bibel="bibeljohannes11,1-44"/></forkl>
 </entry>
 
 <entry id="Leding">
  <ord>Leding</ord>
- <var>Ledingsfærd</var>
- <forkl>krigstog uden for landets grænser</forkl>
+ <var>LedingsfÃ¦rd</var>
+ <forkl>krigstog uden for landets grÃ¦nser</forkl>
 </entry>
 
 <entry id="Lest">
  <ord>Lest</ord>
- <var>Læst</var>
- <forkl>stykke fra Bibelen til oplæsning ved gudstjenesten</forkl>
+ <var>LÃ¦st</var>
+ <forkl>stykke fra Bibelen til oplÃ¦sning ved gudstjenesten</forkl>
 </entry>
 
 <entry id="Lethe">
@@ -2280,7 +2280,7 @@
  <ord>Lev</ord>
  <var>Leffue</var>
 <forkl>
- brød (sml. eng.
+ brÃ¸d (sml. eng.
  <i>loaf</i>
  )
  </forkl>
@@ -2293,20 +2293,20 @@
 <forkl>et kortspil for tre personer</forkl>
 </entry>
 
-<entry id="Liggendefæ">
- <ord>Liggendefæ</ord>
+<entry id="LiggendefÃ¦">
+ <ord>LiggendefÃ¦</ord>
  <forkl>gods, skatte, kostbarheder</forkl>
 </entry>
 
 <entry id="Lilievaand">
  <ord>Lilievaand</ord>
  <var>Lilievand</var>
- <forkl>liljens stængel; billedligt: ung (slank, skøn) pige</forkl>
+ <forkl>liljens stÃ¦ngel; billedligt: ung (slank, skÃ¸n) pige</forkl>
 </entry>
 
 <entry id="Lindorm">
  <ord>Lindorm</ord>
- <forkl>stor menneskeædende slange eller drage</forkl>
+ <forkl>stor menneskeÃ¦dende slange eller drage</forkl>
 </entry>
 
 <entry id="Lise">
@@ -2317,65 +2317,65 @@
 
 <entry id="Litsenbroder">
  <ord>Litsenbroder</ord>
- <forkl>drager (ved posthus eller færge)</forkl>
+ <forkl>drager (ved posthus eller fÃ¦rge)</forkl>
 </entry>
 
 <entry id="Loft">
  <ord>Loft</ord>
 <forkl>
- (rum i) en bygnings øverste etage (sml.
- <i><xref ord="Højeloft"/></i>)
+ (rum i) en bygnings Ã¸verste etage (sml.
+ <i><xref ord="HÃ¸jeloft"/></i>)
  </forkl>
 </entry>
 
 <entry id="Luna">
  <ord>Luna</ord>
- <forkl>(personifikation af) månen</forkl>
+ <forkl>(personifikation af) mÃ¥nen</forkl>
 </entry>
 
 <entry id="Lykke">
  <ord>Lykke</ord>
  <var>Lycke</var>
- <forkl>skæbne (god eller ond)</forkl>
+ <forkl>skÃ¦bne (god eller ond)</forkl>
 </entry>
 
-<entry id="lækker">
- <ord>lækker</ord>
- <forkl>kræsen, forfinet</forkl>
+<entry id="lÃ¦kker">
+ <ord>lÃ¦kker</ord>
+ <forkl>krÃ¦sen, forfinet</forkl>
 </entry>
 
-<entry id="löde">
- <ord>löde</ord>
- <forkl>give lød; farve</forkl>
+<entry id="lÃ¶de">
+ <ord>lÃ¶de</ord>
+ <forkl>give lÃ¸d; farve</forkl>
 </entry>
 
-<entry id="Løibænk">
- <ord>Løibænk</ord>
- <forkl>(polstret) bænk til at ligge på</forkl>
+<entry id="LÃ¸ibÃ¦nk">
+ <ord>LÃ¸ibÃ¦nk</ord>
+ <forkl>(polstret) bÃ¦nk til at ligge pÃ¥</forkl>
 </entry>
 
-<entry id="Løkke">
- <ord>Løkke</ord>
- <forkl>indhegning, vænge</forkl>
+<entry id="LÃ¸kke">
+ <ord>LÃ¸kke</ord>
+ <forkl>indhegning, vÃ¦nge</forkl>
 </entry>
 
 <entry id="maa">
  <ord>maa</ord>
 <forkl>befinde sig; sml. sv.
- <i>jag mår bra</i>
+ <i>jag mÃ¥r bra</i>
  </forkl>
 </entry>
 
 <entry id="Maadelighed">
  <ord>Maadelighed</ord>
- <forkl>jævnhed, mådehold(enhed)</forkl>
+ <forkl>jÃ¦vnhed, mÃ¥dehold(enhed)</forkl>
 </entry>
 
 <entry id="Maage">
  <ord>Maage</ord>
 <forkl>
- svoger; svigerfader; svigersøn (sml. sv.
- <i>måg</i>
+ svoger; svigerfader; svigersÃ¸n (sml. sv.
+ <i>mÃ¥g</i>
  )
  </forkl>
 </entry>
@@ -2383,32 +2383,32 @@
 <entry id="Maar">
  <ord>Maar</ord>
  <var>Maard</var>
- <forkl>(skind af) mår</forkl>
+ <forkl>(skind af) mÃ¥r</forkl>
 </entry>
 
 <entry id="Maar2">
  <ord>Maar</ord>
- <frase>vel svøbt i Maar(d)</frase>
- <forkl>(stående udtryk i folkeviser) prægtigt klædt</forkl>
+ <frase>vel svÃ¸bt i Maar(d)</frase>
+ <forkl>(stÃ¥ende udtryk i folkeviser) prÃ¦gtigt klÃ¦dt</forkl>
 </entry>
 
 <entry id="Maard">
  <ord>Maard</ord>
  <var>Maar</var>
- <forkl>mø, pige</forkl>
+ <forkl>mÃ¸, pige</forkl>
 </entry>
 
 <entry id="Maj">
  <ord>Maj</ord>
- <var>Mailøv</var>
+ <var>MailÃ¸v</var>
  <var>May</var>
- <forkl>nyudsprungne (bøge)grene</forkl>
+ <forkl>nyudsprungne (bÃ¸ge)grene</forkl>
 </entry>
 
 <entry id="Mammon">
  <ord>Mammon</ord>
  <var>Mamon</var>
- <forkl>(personifikation af) rigdom, jordisk gods; (spøg.) penge</forkl>
+ <forkl>(personifikation af) rigdom, jordisk gods; (spÃ¸g.) penge</forkl>
 </entry>
 
 <entry id="Man">
@@ -2423,7 +2423,7 @@
 
 <entry id="Mandebod">
  <ord>Mandebod</ord>
- <forkl>bøde som drabsmand betaler til den dræbtes familie</forkl>
+ <forkl>bÃ¸de som drabsmand betaler til den drÃ¦btes familie</forkl>
 </entry>
 
 <entry id="mandhaftig">
@@ -2433,12 +2433,12 @@
 
 <entry id="Mare">
  <ord>Mare</ord>
- <forkl>væsen der om natten hjemsøger sovende personer med 'mareridt'</forkl>
+ <forkl>vÃ¦sen der om natten hjemsÃ¸ger sovende personer med 'mareridt'</forkl>
 </entry>
 
 <entry id="Marine">
  <ord>Marine</ord>
- <forkl>marinemaleri, søstykke; også: digt med sådant motiv</forkl>
+ <forkl>marinemaleri, sÃ¸stykke; ogsÃ¥: digt med sÃ¥dant motiv</forkl>
 </entry>
 
 <entry id="Mars">
@@ -2450,7 +2450,7 @@
 <entry id="Maue">
  <ord>Maue</ord>
  <var>Maffue</var>
- <forkl>slægtning</forkl>
+ <forkl>slÃ¦gtning</forkl>
 </entry>
 
 <entry id="Medicus">
@@ -2459,24 +2459,24 @@
 <forkl>
  (genitiv
  <i>Medici</i>
- ) læge
+ ) lÃ¦ge
  </forkl>
 </entry>
 
 <entry id="medynksom">
  <ord>medynksom</ord>
  <var>medynkfuld</var>
- <forkl>som føler (viser) stærk medlidenhed</forkl>
+ <forkl>som fÃ¸ler (viser) stÃ¦rk medlidenhed</forkl>
 </entry>
 
-<entry id="Megære">
- <ord>Megære</ord>
- <forkl>hævngerrig eller arrig kvinde</forkl>
+<entry id="MegÃ¦re">
+ <ord>MegÃ¦re</ord>
+ <forkl>hÃ¦vngerrig eller arrig kvinde</forkl>
 </entry>
 
 <entry id="Melpap">
  <ord>Melpap</ord>
- <forkl>tynd melgrød</forkl>
+ <forkl>tynd melgrÃ¸d</forkl>
 </entry>
 
 <entry id="Melpomene">
@@ -2486,7 +2486,7 @@
 
 <entry id="Merkur">
  <ord>Merkur</ord>
- <forkl>de romerske guders sendebud; gud for handel m.m.; svarer til den græske Hermes</forkl>
+ <forkl>de romerske guders sendebud; gud for handel m.m.; svarer til den grÃ¦ske Hermes</forkl>
 </entry>
 
 <entry id="Messe">
@@ -2496,29 +2496,29 @@
 
 <entry id="middelmaadig">
  <ord>middelmaadig</ord>
- <forkl>mellemstor; af middelhøjde</forkl>
+ <forkl>mellemstor; af middelhÃ¸jde</forkl>
 </entry>
 
 <entry id="Midgaardsormen">
  <ord>Midgaardsormen</ord>
  <var>Midgardormen</var>
  <var>Midgaardslangen</var>
- <forkl>kæmpeslange; ligger i verdenshavet og omslutter jorden</forkl>
+ <forkl>kÃ¦mpeslange; ligger i verdenshavet og omslutter jorden</forkl>
 </entry>
 
 <entry id="mild">
  <ord>mild</ord>
- <forkl>gavmild, nådig</forkl>
+ <forkl>gavmild, nÃ¥dig</forkl>
 </entry>
 
 <entry id="Mildhed">
  <ord>Mildhed</ord>
- <forkl>gavmildhed, velgørenhed</forkl>
+ <forkl>gavmildhed, velgÃ¸renhed</forkl>
 </entry>
 
 <entry id="Mile1">
  <ord>Mile</ord>
- <forkl>bidsel; hests hovedtøj</forkl>
+ <forkl>bidsel; hests hovedtÃ¸j</forkl>
 </entry>
 
 <entry id="Mile2">
@@ -2528,23 +2528,23 @@
 
 <entry id="Mile3">
  <ord>Mile</ord>
- <forkl>kulmile (til produktion af trækul)</forkl>
+ <forkl>kulmile (til produktion af trÃ¦kul)</forkl>
 </entry>
 
 <entry id="Mimer">
  <ord>Mimer</ord>
- <forkl>en jætte hos hvem <xref ord="Odin"/> henter visdom</forkl>
+ <forkl>en jÃ¦tte hos hvem <xref ord="Odin"/> henter visdom</forkl>
 </entry>
 
 <entry id="mindes">
  <ord>mindes</ord>
- <forkl>huske; (undertiden også): huskes, ihukommes</forkl>
+ <forkl>huske; (undertiden ogsÃ¥): huskes, ihukommes</forkl>
 </entry>
 
 <entry id="Minne">
  <ord>Minne</ord>
  <var>Minni</var>
- <forkl>elskov, kærlighed</forkl>
+ <forkl>elskov, kÃ¦rlighed</forkl>
 </entry>
 
 <entry id="Minnesang">
@@ -2555,21 +2555,21 @@
 
 <entry id="miskundelig">
  <ord>miskundelig</ord>
- <forkl>barmhjertig, overbærende</forkl>
+ <forkl>barmhjertig, overbÃ¦rende</forkl>
 </entry>
 
 <entry id="Miskundhed">
  <ord>Miskundhed</ord>
- <var>Mißgund</var>
+ <var>MiÃŸgund</var>
  <var>Miskund</var>
- <forkl>barmhjertighed, overbærenhed</forkl>
+ <forkl>barmhjertighed, overbÃ¦renhed</forkl>
 </entry>
 
 <entry id="mod">
  <ord>mod</ord>
  <var>modt</var>
  <frase>mod i Hu</frase>
- <forkl>bedrøvet, nedslået</forkl>
+ <forkl>bedrÃ¸vet, nedslÃ¥et</forkl>
 </entry>
 
 <entry id="Monader">
@@ -2582,55 +2582,55 @@
 <forkl>
  verbum der (ligesom eng.
  <i>do</i>
- ) bruges ved omskrivning; giver et højtideligt eller gammeldags præg
+ ) bruges ved omskrivning; giver et hÃ¸jtideligt eller gammeldags prÃ¦g
  </forkl>
 </entry>
 
 <entry id="Montgolfier">
  <ord>Montgolfier</ord>
 <forkl>
- ellers sædvanligvis:
- <i>Montgolfière</i>
- ; varmluftballon, konstrueret af brødrene Montgolfier (<year>1783</year>)
+ ellers sÃ¦dvanligvis:
+ <i>MontgolfiÃ¨re</i>
+ ; varmluftballon, konstrueret af brÃ¸drene Montgolfier (<year>1783</year>)
  </forkl>
 </entry>
 
 <entry id="Morfeus">
  <ord>Morfeus</ord>
  <var>Morpheus</var>
- <forkl>søvnens gud</forkl>
+ <forkl>sÃ¸vnens gud</forkl>
 </entry>
 
 <entry id="Morgenstjernen1">
  <ord>Morgenstjernen</ord>
- <forkl>Venus, når den er synlig hen imod solopgang.</forkl>
+ <forkl>Venus, nÃ¥r den er synlig hen imod solopgang.</forkl>
 </entry>
 
 <entry id="Morgenstjernen2">
  <ord>Morgenstjernen</ord>
- <forkl>Lucifer (Djævelen), se <xref bibel="bibelesajas14,12"/>.</forkl>
+ <forkl>Lucifer (DjÃ¦velen), se <xref bibel="bibelesajas14,12"/>.</forkl>
 </entry>
 
 <entry id="Morgenstjernen3">
  <ord>Morgenstjernen</ord>
- <forkl>vægterens våben aller attribut, en kølle med pigge</forkl>
+ <forkl>vÃ¦gterens vÃ¥ben aller attribut, en kÃ¸lle med pigge</forkl>
 </entry>
 
 <entry id="Morgenstund">
  <ord>Morgenstund</ord>
  <frase>Morgenstund har Guld i Mund</frase>
 <forkl>
- stående udtryk; vistnok misforståelse af
+ stÃ¥ende udtryk; vistnok misforstÃ¥else af
  <i>aurora</i>
  som
  <i>aurum in ore</i>
- (men andre forklaringer har været foreslået)
+ (men andre forklaringer har vÃ¦ret foreslÃ¥et)
  </forkl>
 </entry>
 
 <entry id="moxen">
  <ord>moxen</ord>
-<forkl>næsten, hartad</forkl>
+<forkl>nÃ¦sten, hartad</forkl>
 </entry>
 
 <entry id="Muldskud">
@@ -2641,7 +2641,7 @@
 <entry id="Muse">
  <ord>Muse</ord>
  <var>Musa</var>
- <forkl>gudinde for kunst og (især) digtning m.m.; personifikation af digtekunsten og af den digteriske inspiration</forkl>
+ <forkl>gudinde for kunst og (isÃ¦r) digtning m.m.; personifikation af digtekunsten og af den digteriske inspiration</forkl>
 </entry>
 
 <entry id="Muskelthrone">
@@ -2678,33 +2678,33 @@
 
 <entry id="Mysterie">
  <ord>Mysterie</ord>
- <forkl>symbolsk digt med religiøst emne</forkl>
+ <forkl>symbolsk digt med religiÃ¸st emne</forkl>
 </entry>
 
-<entry id="Mæcen">
- <ord>Mæcen</ord>
- <forkl>privatperson som økonomisk understøtter digtere og kunstnere</forkl>
+<entry id="MÃ¦cen">
+ <ord>MÃ¦cen</ord>
+ <forkl>privatperson som Ã¸konomisk understÃ¸tter digtere og kunstnere</forkl>
 </entry>
 
-<entry id="Mænade">
- <ord>Mænade</ord>
+<entry id="MÃ¦nade">
+ <ord>MÃ¦nade</ord>
  <forkl>rasende kvinde; <xref ord="Bacchantinde"/></forkl>
 </entry>
 
-<entry id="Mærkesmand">
- <ord>Mærkesmand</ord>
- <forkl>bannerfører></forkl>
+<entry id="MÃ¦rkesmand">
+ <ord>MÃ¦rkesmand</ord>
+ <forkl>bannerfÃ¸rer></forkl>
 </entry>
 
-<entry id="møgle">
- <ord>møgle</ord>
+<entry id="mÃ¸gle">
+ <ord>mÃ¸gle</ord>
  <forkl>(i folkeviser) megen, meget</forkl>
 </entry>
 
 
 <entry id="Nadver">
  <ord>Nadver</ord>
- <forkl>aftensmåltid; alterets sakramente</forkl>
+ <forkl>aftensmÃ¥ltid; alterets sakramente</forkl>
 </entry>
 
 <entry id="Najade">
@@ -2725,19 +2725,19 @@
 
 <entry id="Nectar">
  <ord>Nectar</ord>
- <forkl>egl. om gudernes drik; (spøg.) om (spirituøse) drikke(varer)</forkl>
+ <forkl>egl. om gudernes drik; (spÃ¸g.) om (spirituÃ¸se) drikke(varer)</forkl>
 </entry>
 
 <entry id="nedrig">
  <ord>nedrig</ord>
- <var>nædrig</var>
+ <var>nÃ¦drig</var>
  <forkl>lavtliggende; som har beskeden stilling eller ringe anseelse</forkl>
 </entry>
 
 <entry id="nemme">
  <ord>nemme</ord>
  <var>nam</var>
- <forkl>præt. <i>nam</i>; begribe, mærke sig; lære</forkl>
+ <forkl>prÃ¦t. <i>nam</i>; begribe, mÃ¦rke sig; lÃ¦re</forkl>
 </entry>
 
 <entry id="Nereide">
@@ -2754,7 +2754,7 @@
 <entry id="Niding">
  <ord>Niding</ord>
  <var>Nidding</var>
- <forkl>en foragtelig, fej og æreløs person, usling, kujon; en ondskabsfuld og nedrig person</forkl>
+ <forkl>en foragtelig, fej og Ã¦relÃ¸s person, usling, kujon; en ondskabsfuld og nedrig person</forkl>
 </entry>
 
 <entry id="Niffelhjem">
@@ -2762,38 +2762,38 @@
  <var>Niffelheim</var>
  <var>Nivlheim</var>
  <var>Niffelqvalm</var>
- <forkl><xref ord="Hel"/>s bolig; en kold tågeverden</forkl>
+ <forkl><xref ord="Hel"/>s bolig; en kold tÃ¥geverden</forkl>
 </entry>
 
 <entry id="Nymphe">
  <ord>Nymphe</ord>
- <forkl>kvindelig guddom; ung (skøn) kvinde; kvinde i tjenende stilling; gadepige</forkl>
+ <forkl>kvindelig guddom; ung (skÃ¸n) kvinde; kvinde i tjenende stilling; gadepige</forkl>
 </entry>
 
 <entry id="Nytaarsgave">
  <ord>Nytaarsgave</ord>
- <forkl>samling digte, udgivet ved nytårstid</forkl>
+ <forkl>samling digte, udgivet ved nytÃ¥rstid</forkl>
 </entry>
 
-<entry id="Næ">
- <ord>Næ</ord>
- <var>Næde</var>
- <forkl>aftagende måne; perioden hvor månen er i aftagende</forkl>
+<entry id="NÃ¦">
+ <ord>NÃ¦</ord>
+ <var>NÃ¦de</var>
+ <forkl>aftagende mÃ¥ne; perioden hvor mÃ¥nen er i aftagende</forkl>
 </entry>
 
-<entry id="Nødtørft">
- <ord>Nødtørft</ord>
- <forkl>naturlig trang, behov; handling hvorved denne tilfredsstilles; (livs)fornødenhed; det at leve i tarvelighed</forkl>
+<entry id="NÃ¸dtÃ¸rft">
+ <ord>NÃ¸dtÃ¸rft</ord>
+ <forkl>naturlig trang, behov; handling hvorved denne tilfredsstilles; (livs)fornÃ¸denhed; det at leve i tarvelighed</forkl>
 </entry>
 
-<entry id="nødtørftig">
- <ord>nødtørftig</ord>
- <forkl>nødlidende; nødvendig, kun lige tilstrækkelig; tarvelig, sparsom</forkl>
+<entry id="nÃ¸dtÃ¸rftig">
+ <ord>nÃ¸dtÃ¸rftig</ord>
+ <forkl>nÃ¸dlidende; nÃ¸dvendig, kun lige tilstrÃ¦kkelig; tarvelig, sparsom</forkl>
 </entry>
 
-<entry id="nøgter">
- <ord>nøgter</ord>
- <forkl>ædru (sml. sv. <i>nykter</i>)</forkl>
+<entry id="nÃ¸gter">
+ <ord>nÃ¸gter</ord>
+ <forkl>Ã¦dru (sml. sv. <i>nykter</i>)</forkl>
 </entry>
 
 <entry id="Odel">
@@ -2803,16 +2803,16 @@
 
 <entry id="odelsbaaren">
  <ord>odelsbaaren</ord>
- <forkl>arveberettiget til jordejendom; fribåren; selvstændig</forkl>
+ <forkl>arveberettiget til jordejendom; fribÃ¥ren; selvstÃ¦ndig</forkl>
 </entry>
 
 <entry id="Odin">
  <ord>Odin</ord>
- <forkl>den øverste gud i nordisk mytologi</forkl>
+ <forkl>den Ã¸verste gud i nordisk mytologi</forkl>
 </entry>
 
-<entry id="Odinsøen">
- <ord>Odinsøen</ord>
+<entry id="OdinsÃ¸en">
+ <ord>OdinsÃ¸en</ord>
  <forkl>Fyn</forkl>
 </entry>
 
@@ -2823,17 +2823,17 @@
 
 <entry id="Olympen">
  <ord>Olympen</ord>
- <forkl>de græske guders bolig</forkl>
+ <forkl>de grÃ¦ske guders bolig</forkl>
 </entry>
 
 <entry id="omskygge">
  <ord>omskygge</ord>
- <forkl>brede skygge over; også billedligt</forkl>
+ <forkl>brede skygge over; ogsÃ¥ billedligt</forkl>
 </entry>
 
 <entry id="opdage">
  <ord>opdage</ord>
- <forkl>afdække, afsløre, åbenbare</forkl>
+ <forkl>afdÃ¦kke, afslÃ¸re, Ã¥benbare</forkl>
 </entry>
 
 <entry id="Ophir">
@@ -2845,13 +2845,13 @@
 <entry id="Ophold">
  <ord>Ophold</ord>
  <frase>Livets Ophold</frase>
- <forkl>man skriver nu ofte: livets opretholdelse; men denne længere form dukker først op efter <year>1930</year></forkl>
+ <forkl>man skriver nu ofte: livets opretholdelse; men denne lÃ¦ngere form dukker fÃ¸rst op efter <year>1930</year></forkl>
 </entry>
 
 <entry id="opholde">
  <ord>opholde</ord>
  <frase>opholde Livet</frase>
- <forkl>man skriver nu ofte: opretholde livet; men denne længere form dukker først op efter <year>1930</year></forkl>
+ <forkl>man skriver nu ofte: opretholde livet; men denne lÃ¦ngere form dukker fÃ¸rst op efter <year>1930</year></forkl>
 </entry>
 
 <entry id="oppebie">
@@ -2867,12 +2867,12 @@
 <entry id="Orcus">
  <ord>Orcus</ord>
  <var>Orkus</var>
- <forkl>dødsriget(s behersker) i romersk mytologi</forkl>
+ <forkl>dÃ¸dsriget(s behersker) i romersk mytologi</forkl>
 </entry>
 
 <entry id="Ordsprogsleg">
  <ord>Ordsprogsleg</ord>
- <forkl>selskabsleg, hvor man dramatisk (mimisk) fremstiller et ordsprog eller lignende, som de andre tilstedeværende så skal gætte</forkl>
+ <forkl>selskabsleg, hvor man dramatisk (mimisk) fremstiller et ordsprog eller lignende, som de andre tilstedevÃ¦rende sÃ¥ skal gÃ¦tte</forkl>
 </entry>
 
 <entry id="Oringborg">
@@ -2885,7 +2885,7 @@
 <forkl>
  krig i almindelighed (som holl.
  <i>oorlog</i>
- ); senere kun om krig til søs
+ ); senere kun om krig til sÃ¸s
  </forkl>
 </entry>
 
@@ -2904,7 +2904,7 @@
 
 <entry id="Orpheus">
  <ord>Orpheus</ord>
- <forkl>mytisk sanger som drog til dødsriget for at hente sin hustru hjem</forkl>
+ <forkl>mytisk sanger som drog til dÃ¸dsriget for at hente sin hustru hjem</forkl>
 </entry>
 
 <entry id="orthodox">
@@ -2920,28 +2920,28 @@
 <entry id="Osteri">
  <ord>Osteri</ord>
 <forkl>
- italiensk gæstgiveri (ital.
+ italiensk gÃ¦stgiveri (ital.
  <i>osteria,</i>
  af
  <i>oste,</i>
- vært)
+ vÃ¦rt)
  </forkl>
 </entry>
 
 <entry id="Ottesang">
  <ord>Ottesang</ord>
- <forkl>(munkes) korbøn om morgenen; matutin</forkl>
+ <forkl>(munkes) korbÃ¸n om morgenen; matutin</forkl>
 </entry>
 
 <entry id="Ovid">
  <ord>Ovid</ord>
  <var>Naso</var>
- <forkl>P. Ovidius Naso, romersk digter, død 18 e.Kr.</forkl>
+ <forkl>P. Ovidius Naso, romersk digter, dÃ¸d 18 e.Kr.</forkl>
 </entry>
 
 <entry id="Pallas">
  <ord>Pallas</ord>
- <forkl>Pallas Athene, græsk gudinde for visdom; svarer til romernes Minerva</forkl>
+ <forkl>Pallas Athene, grÃ¦sk gudinde for visdom; svarer til romernes Minerva</forkl>
 </entry>
 
 <entry id="Palter">
@@ -2956,13 +2956,13 @@
 
 <entry id="Pan">
  <ord>Pan</ord>
- <forkl>græsk skovgud</forkl>
+ <forkl>grÃ¦sk skovgud</forkl>
 </entry>
 
 <entry id="panisk">
  <ord>panisk</ord>
- <frase>panisk skræk</frase>
- <forkl>skræk som indgydes af <xref ord="Pan"/></forkl>
+ <frase>panisk skrÃ¦k</frase>
+ <forkl>skrÃ¦k som indgydes af <xref ord="Pan"/></forkl>
 </entry>
 
 <entry id="Pantalons">
@@ -2972,12 +2972,12 @@
 
 <entry id="Paphos">
  <ord>Paphos</ord>
- <forkl>by på Kypern med berømt <xref ord="Afrodite"/>tempel</forkl>
+ <forkl>by pÃ¥ Kypern med berÃ¸mt <xref ord="Afrodite"/>tempel</forkl>
 </entry>
 
 <entry id="Parce">
  <ord>Parce</ord>
- <forkl>en skæbnegudinde</forkl>
+ <forkl>en skÃ¦bnegudinde</forkl>
 </entry>
 
 <entry id="Parder">
@@ -2987,12 +2987,12 @@
 
 <entry id="parisk">
  <ord>parisk</ord>
- <forkl>fra den græske ø Paros</forkl>
+ <forkl>fra den grÃ¦ske Ã¸ Paros</forkl>
 </entry>
 
 <entry id="Parnas">
  <ord>Parnas</ord>
- <forkl>bjerg i Grækenland med <xref ord="Apollo"/>s og <xref ord="Muse"/>rnes bolig; kollektivt om ansete digtere og forfattere</forkl>
+ <forkl>bjerg i GrÃ¦kenland med <xref ord="Apollo"/>s og <xref ord="Muse"/>rnes bolig; kollektivt om ansete digtere og forfattere</forkl>
 </entry>
 
 <entry id="Particulier">
@@ -3002,12 +3002,12 @@
 
 <entry id="Paulun">
  <ord>Paulun</ord>
- <forkl>teltbolig; også billedligt</forkl>
+ <forkl>teltbolig; ogsÃ¥ billedligt</forkl>
 </entry>
 
 <entry id="Pegasus">
  <ord>Pegasus</ord>
- <forkl>vinget hest; symbol på digterevnen</forkl>
+ <forkl>vinget hest; symbol pÃ¥ digterevnen</forkl>
 </entry>
 
 <entry id="Penater">
@@ -3032,43 +3032,43 @@
 
 <entry id="Phidias">
  <ord>Phidias</ord>
- <forkl>berømt græsk billedhugger</forkl>
+ <forkl>berÃ¸mt grÃ¦sk billedhugger</forkl>
 </entry>
 
 <entry id="Philister">
  <ord>Philister</ord>
  <var>Filister</var>
- <forkl>medlem af et folkeslag i oldtidens Palæstina; også (nedsættende): spidsborger, ikke-akademiker</forkl>
+ <forkl>medlem af et folkeslag i oldtidens PalÃ¦stina; ogsÃ¥ (nedsÃ¦ttende): spidsborger, ikke-akademiker</forkl>
 </entry>
 
 <entry id="Philolog">
  <ord>Philolog</ord>
- <forkl>person hvis fag er filologi, tolkning af (især: klassiske) tekster</forkl>
+ <forkl>person hvis fag er filologi, tolkning af (isÃ¦r: klassiske) tekster</forkl>
 </entry>
 
 <entry id="Philomele">
  <ord>Philomele</ord>
  <var>Philomela</var>
- <forkl>græsk mytologisk person; poetisk navn for nattergalen</forkl>
+ <forkl>grÃ¦sk mytologisk person; poetisk navn for nattergalen</forkl>
 </entry>
 
 <entry id="Phoenix">
  <ord>Phoenix</ord>
- <forkl>mytisk fugl som hvert år opbrænder sig selv; af asken opstår der en ny Phønix; solfugl</forkl>
+ <forkl>mytisk fugl som hvert Ã¥r opbrÃ¦nder sig selv; af asken opstÃ¥r der en ny PhÃ¸nix; solfugl</forkl>
 </entry>
 
 <entry id="Phoibos">
  <ord>Phoibos</ord>
  <var>Foibos</var>
- <var>Føibos</var>
+ <var>FÃ¸ibos</var>
  <var>Phoebus</var>
- <var>Phøbus</var>
+ <var>PhÃ¸bus</var>
  <forkl>tilnavn for <xref ord="Apollo"/> som solgud; poetisk navn for solen</forkl>
 </entry>
 
 <entry id="Pion">
  <ord>Pion</ord>
- <forkl>pæon; bonderose</forkl>
+ <forkl>pÃ¦on; bonderose</forkl>
 </entry>
 
 <entry id="Pisjon">
@@ -3119,12 +3119,12 @@
 
 <entry id="Politur">
  <ord>Politur</ord>
- <forkl>dannelse; pæne manerer</forkl>
+ <forkl>dannelse; pÃ¦ne manerer</forkl>
 </entry>
 
 <entry id="Procne">
  <ord>Procne</ord>
- <forkl>græsk mytologisk person; poetisk navn for svalen</forkl>
+ <forkl>grÃ¦sk mytologisk person; poetisk navn for svalen</forkl>
 </entry>
 
 <entry id="Promemorie">
@@ -3134,17 +3134,17 @@
 
 <entry id="Prometheus">
  <ord>Prometheus</ord>
- <forkl>græsk mytisk skikkelse; bragte ilden til menneskene</forkl>
+ <forkl>grÃ¦sk mytisk skikkelse; bragte ilden til menneskene</forkl>
 </entry>
 
 <entry id="Proserpina">
  <ord>Proserpina</ord>
- <forkl>Persephone; dødsrigets dronning</forkl>
+ <forkl>Persephone; dÃ¸dsrigets dronning</forkl>
 </entry>
 
 <entry id="prud">
  <ord>prud</ord>
- <forkl>fornem, ædel, prægtig</forkl>
+ <forkl>fornem, Ã¦del, prÃ¦gtig</forkl>
 </entry>
 
 <entry id="Psalter">
@@ -3172,12 +3172,12 @@
 
 <entry id="Pyramiden">
  <ord>Pyramiden</ord>
- <forkl>allusion til den protestantiske kirkegård, tæt ved Cestius-pyramiden i <xref keyword="Rom"/></forkl>
+ <forkl>allusion til den protestantiske kirkegÃ¥rd, tÃ¦t ved Cestius-pyramiden i <xref keyword="Rom"/></forkl>
 </entry>
 
 <entry id="Python">
  <ord>Python</ord>
- <forkl>en drage som dræbtes af <xref ord="Apollo"/></forkl>
+ <forkl>en drage som drÃ¦btes af <xref ord="Apollo"/></forkl>
 </entry>
 
 <entry id="Poenitens">
@@ -3188,7 +3188,7 @@
 
 <entry id="Poenitent">
  <ord>Poenitent</ord>
- <forkl>angrende, bodfærdig synder</forkl>
+ <forkl>angrende, bodfÃ¦rdig synder</forkl>
 </entry>
 
 <entry id="queg">
@@ -3225,7 +3225,7 @@
 
 <entry id="rar">
  <ord>rar</ord>
- <forkl>sjælden</forkl>
+ <forkl>sjÃ¦lden</forkl>
 </entry>
 
 <entry id="Recensent">
@@ -3235,12 +3235,12 @@
 
 <entry id="Recension">
  <ord>Recension</ord>
- <forkl>(litterær) kritik; anmeldelse</forkl>
+ <forkl>(litterÃ¦r) kritik; anmeldelse</forkl>
 </entry>
 
 <entry id="Renegat">
  <ord>Renegat</ord>
- <forkl>frafalden, overløber</forkl>
+ <forkl>frafalden, overlÃ¸ber</forkl>
 </entry>
 
 <entry id="Rhin">
@@ -3252,20 +3252,20 @@
 
 <entry id="rig">
  <ord>rig</ord>
- <forkl>mægtig; stor; fornem</forkl>
+ <forkl>mÃ¦gtig; stor; fornem</forkl>
 </entry>
 
 <entry id="rimme">
  <ord>rimme</ord>
- <forkl>(små)vrinske (om hest)</forkl>
+ <forkl>(smÃ¥)vrinske (om hest)</forkl>
 </entry>
 
 <entry id="Rise">
  <ord>Rise</ord>
 <forkl>
- kæmpe; jætte (sml. ty.
+ kÃ¦mpe; jÃ¦tte (sml. ty.
  <i>Riese</i>
- ); også som led i navne, f.eks.
+ ); ogsÃ¥ som led i navne, f.eks.
  <i>Bermeriis</i>
  </forkl>
 </entry>
@@ -3277,38 +3277,38 @@
 
 <entry id="Rosenlund">
  <ord>Rosenlund</ord>
- <forkl>skov hvor der vokser roser; rosengård</forkl>
+ <forkl>skov hvor der vokser roser; rosengÃ¥rd</forkl>
 </entry>
 
-<entry id="Rosenlænker">
- <ord>Rosenlænker</ord>
- <var>Rosenkjæder</var>
- <forkl>(poet.) elskovens, ægteskabets bånd</forkl>
+<entry id="RosenlÃ¦nker">
+ <ord>RosenlÃ¦nker</ord>
+ <var>RosenkjÃ¦der</var>
+ <forkl>(poet.) elskovens, Ã¦gteskabets bÃ¥nd</forkl>
 </entry>
 
 <entry id="Rota">
  <ord>Rota</ord>
- <forkl>navn på en <xref ord="Valkyrie"/></forkl>
+ <forkl>navn pÃ¥ en <xref ord="Valkyrie"/></forkl>
 </entry>
 
 <entry id="Rov">
  <ord>Rov</ord>
  <frase>(ikke) holde ngt. for (et) Rov</frase>
- <forkl>ikke anse ngt. for utilbørligt; ikke forsmå; (efter <xref bibel="bibelfilipperne02,6"/></forkl>
+ <forkl>ikke anse ngt. for utilbÃ¸rligt; ikke forsmÃ¥; (efter <xref bibel="bibelfilipperne02,6"/></forkl>
 </entry>
 
 <entry id="rund">
  <ord>rund</ord>
 <forkl>
  gavmild (sml.
- <i>rundhåndet</i>
+ <i>rundhÃ¥ndet</i>
  )
  </forkl>
 </entry>
 
 <entry id="Sacristi">
  <ord>Sacristi</ord>
- <forkl>det rum i kirken hvor messeklæder m.m. opbevares, og hvor præsterne gør sig rede til gudstjenesten</forkl>
+ <forkl>det rum i kirken hvor messeklÃ¦der m.m. opbevares, og hvor prÃ¦sterne gÃ¸r sig rede til gudstjenesten</forkl>
 </entry>
 
 <entry id="Sal">
@@ -3318,12 +3318,12 @@
 
 <entry id="Sandemand">
  <ord>Sandemand</ord>
- <forkl>nævning (i visse retssager)</forkl>
+ <forkl>nÃ¦vning (i visse retssager)</forkl>
 </entry>
 
 <entry id="Sang">
  <ord>Sang</ord>
- <forkl>afsnit i et længere digt, f.eks. de <xref ord="Homer"/>iske digte</forkl>
+ <forkl>afsnit i et lÃ¦ngere digt, f.eks. de <xref ord="Homer"/>iske digte</forkl>
 </entry>
 
 <entry id="Sanger">
@@ -3339,7 +3339,7 @@
 <entry id="sankes">
  <ord>sankes</ord>
  <var>sanckis</var>
- <forkl>samler sig, mødes</forkl>
+ <forkl>samler sig, mÃ¸des</forkl>
 </entry>
 
 <entry id="Saracener">
@@ -3350,27 +3350,27 @@
 <entry id="Sarkophag">
  <ord>Sarkophag</ord>
  <var>Sarcophag</var>
- <forkl>marmorkiste; (egl. 'kød-æder')</forkl>
+ <forkl>marmorkiste; (egl. 'kÃ¸d-Ã¦der')</forkl>
 </entry>
 
 <entry id="Sarpen">
  <ord>Sarpen</ord>
- <forkl>navn på et vandfald i Norge</forkl>
+ <forkl>navn pÃ¥ et vandfald i Norge</forkl>
 </entry>
 
 <entry id="Saturnus">
  <ord>Saturnus</ord>
- <forkl><xref ord="Jupiter"/>s fader i romersk mytologi; svarer til den græske Kronos</forkl>
+ <forkl><xref ord="Jupiter"/>s fader i romersk mytologi; svarer til den grÃ¦ske Kronos</forkl>
 </entry>
 
 <entry id="sauge">
  <ord>sauge</ord>
- <forkl>save (ældre stavemåde)</forkl>
+ <forkl>save (Ã¦ldre stavemÃ¥de)</forkl>
 </entry>
 
 <entry id="Schrifft">
  <ord>Schrifft</ord>
- <forkl>skrifte, skriftemål</forkl>
+ <forkl>skrifte, skriftemÃ¥l</forkl>
 </entry>
 
 <entry id="Sejd">
@@ -3378,15 +3378,15 @@
  <forkl>trolddom; skumle planer</forkl>
 </entry>
 
-<entry id="Sejerværk">
- <ord>Sejerværk</ord>
+<entry id="SejervÃ¦rk">
+ <ord>SejervÃ¦rk</ord>
  <var>Seyerverch</var>
- <forkl>(større) ur</forkl>
+ <forkl>(stÃ¸rre) ur</forkl>
 </entry>
 
 <entry id="Selene">
  <ord>Selene</ord>
- <forkl>(personifikation af) månen</forkl>
+ <forkl>(personifikation af) mÃ¥nen</forkl>
 </entry>
 
 <entry id="Seline">
@@ -3422,38 +3422,38 @@
 <entry id="Seraph">
  <ord>Seraph</ord>
  <var>Seraphim</var>
- <forkl>(hebr. plur. <i>Seraphim</i>) seksvinget væsen (<xref bibel="bibelesajas06,2"/>); ånd; overjordisk væsen i almindelighed</forkl>
+ <forkl>(hebr. plur. <i>Seraphim</i>) seksvinget vÃ¦sen (<xref bibel="bibelesajas06,2"/>); Ã¥nd; overjordisk vÃ¦sen i almindelighed</forkl>
 </entry>
 
 <entry id="Shawl">
  <ord>Shawl</ord>
  <var>Schawl</var>
- <forkl>sjal (ældre stavemåde)</forkl>
+ <forkl>sjal (Ã¦ldre stavemÃ¥de)</forkl>
 </entry>
 
 <entry id="Silie">
  <ord>Silie</ord>
  <var>Selje</var>
 <forkl>
- piletræ (sml. sv.
- <i>sälg</i>
+ piletrÃ¦ (sml. sv.
+ <i>sÃ¤lg</i>
  )
  </forkl>
 </entry>
 
 <entry id="Sibylle">
  <ord>Sibylle</ord>
- <forkl>spåkvinde</forkl>
+ <forkl>spÃ¥kvinde</forkl>
 </entry>
 
 <entry id="Silen">
  <ord>Silen</ord>
- <forkl>Silén; <xref ord="Bacchus"/>' opdrager og ledsager</forkl>
+ <forkl>SilÃ©n; <xref ord="Bacchus"/>' opdrager og ledsager</forkl>
 </entry>
 
 <entry id="Sindal">
  <ord>Sindal</ord>
- <forkl>(klæder af) silketøj</forkl>
+ <forkl>(klÃ¦der af) silketÃ¸j</forkl>
 </entry>
 
 <entry id="Sirius">
@@ -3463,25 +3463,25 @@
 
 <entry id="Sisyphos">
  <ord>Sisyphos</ord>
- <forkl>græsk mytologisk skikkelse; straffes i underverdenen med at skulle rulle en stor sten op ad et bjerg</forkl>
+ <forkl>grÃ¦sk mytologisk skikkelse; straffes i underverdenen med at skulle rulle en stor sten op ad et bjerg</forkl>
 </entry>
 
 <entry id="Sjouer">
  <ord>Sjouer</ord>
- <forkl>mand som lever af tilfældigt arbejde</forkl>
+ <forkl>mand som lever af tilfÃ¦ldigt arbejde</forkl>
 </entry>
 
-<entry id="Sjølund">
- <ord>Sjølund</ord>
+<entry id="SjÃ¸lund">
+ <ord>SjÃ¸lund</ord>
  <var>Seeland</var>
  <var>Seland</var>
  <var>Sieland</var>
  <var>Sielland</var>
- <var>Siælland</var>
- <var>Siølunda</var>
- <var>Sælland</var>
- <var>Søelund</var>
- <forkl>Seeland, Sieland, Siølunda, Sælland, osv.; poetiske navne for Sjælland</forkl>
+ <var>SiÃ¦lland</var>
+ <var>SiÃ¸lunda</var>
+ <var>SÃ¦lland</var>
+ <var>SÃ¸elund</var>
+ <forkl>Seeland, Sieland, SiÃ¸lunda, SÃ¦lland, osv.; poetiske navne for SjÃ¦lland</forkl>
 </entry>
 
 <entry id="skade">
@@ -3493,7 +3493,7 @@
 <entry id="skakre">
  <ord>skakre</ord>
  <var>sjakre</var>
- <forkl>opkøbe og sælge (f.eks. brugte klæder); prange</forkl>
+ <forkl>opkÃ¸be og sÃ¦lge (f.eks. brugte klÃ¦der); prange</forkl>
 </entry>
 
 <entry id="skellig">
@@ -3503,7 +3503,7 @@
 
 <entry id="Skilsmisse">
  <ord>Skilsmisse</ord>
- <forkl>adskillelse (ikke blot om ægteskab)</forkl>
+ <forkl>adskillelse (ikke blot om Ã¦gteskab)</forkl>
 </entry>
 
 <entry id="skimte">
@@ -3519,23 +3519,23 @@
 <entry id="skjalv">
  <ord>skjalv</ord>
  <var>skialfe</var>
- <forkl>skælvede (præt. af <i>skjælve</i>)</forkl>
+ <forkl>skÃ¦lvede (prÃ¦t. af <i>skjÃ¦lve</i>)</forkl>
 </entry>
 
 <entry id="Skjers">
  <ord>Skjers</ord>
- <forkl>Skerts; spøgende handling eller ytring</forkl>
+ <forkl>Skerts; spÃ¸gende handling eller ytring</forkl>
 </entry>
 
 <entry id="Skjorte">
  <ord>Skjorte</ord>
  <frase>i bare Skjorte(n)</frase>
- <forkl>i skjorteærmer</forkl>
+ <forkl>i skjorteÃ¦rmer</forkl>
 </entry>
 
 <entry id="Skok">
  <ord>Skok</ord>
- <forkl>antal af 60; et ubestemt (større) antal</forkl>
+ <forkl>antal af 60; et ubestemt (stÃ¸rre) antal</forkl>
 </entry>
 
 <entry id="Skraldemand">
@@ -3545,7 +3545,7 @@
 
 <entry id="Skyttel">
  <ord>Skyttel</ord>
- <forkl>(væve)skytte</forkl>
+ <forkl>(vÃ¦ve)skytte</forkl>
 </entry>
 
 <entry id="Slaglosianer">
@@ -3560,13 +3560,13 @@
 
 <entry id="Slippen">
  <ord>Slippen</ord>
- <forkl>navn for den østlige ende af gaden Landemæket i København</forkl>
+ <forkl>navn for den Ã¸stlige ende af gaden LandemÃ¦ket i KÃ¸benhavn</forkl>
 </entry>
 
 <entry id="Slum">
  <ord>Slum</ord>
  <var>Slumme</var>
- <forkl>søvn, slummer</forkl>
+ <forkl>sÃ¸vn, slummer</forkl>
 </entry>
 
 <entry id="Smaadreng">
@@ -3576,12 +3576,12 @@
 
 <entry id="Smakke">
  <ord>Smakke</ord>
- <forkl>mindre skib eller færge</forkl>
+ <forkl>mindre skib eller fÃ¦rge</forkl>
 </entry>
 
 <entry id="smuk">
  <ord>smuk</ord>
- <frase>smukke Folk, smukke Bondemænd, osv.</frase>
+ <frase>smukke Folk, smukke BondemÃ¦nd, osv.</frase>
  <forkl>belevne, dannede, respektable, ansete</forkl>
 </entry>
 
@@ -3602,20 +3602,20 @@
 <entry id="Snekke">
  <ord>Snekke</ord>
  <var>Snecke</var>
- <var>Snække</var>
+ <var>SnÃ¦kke</var>
  <forkl>(sejl)skib</forkl>
 </entry>
 
 <entry id="Soer1"><xref ord="entry-id"/>
  <ord>Soer</ord>
- <forkl>Sorø</forkl>
+ <forkl>SorÃ¸</forkl>
 </entry>
 
 <entry id="soer2">
  <ord>soer</ord>
 <forkl>
- svor (præt. af
- <i>sværge</i>
+ svor (prÃ¦t. af
+ <i>svÃ¦rge</i>
  )
  </forkl>
 </entry>
@@ -3633,7 +3633,7 @@
 <entry id="Solstits">
  <ord>Solstits</ord>
  <var>Vintersolstits</var>
- <forkl>solhverv; årets korteste (længste) dag</forkl>
+ <forkl>solhverv; Ã¥rets korteste (lÃ¦ngste) dag</forkl>
 </entry>
 
 <entry id="Sopken">
@@ -3646,14 +3646,14 @@
  <forkl>sygdom</forkl>
 </entry>
 
-<entry id="sotdød">
- <ord>sotdød</ord>
- <forkl>død af sygdom; strådød</forkl>
+<entry id="sotdÃ¸d">
+ <ord>sotdÃ¸d</ord>
+ <forkl>dÃ¸d af sygdom; strÃ¥dÃ¸d</forkl>
 </entry>
 
 <entry id="Sotteseng">
  <ord>Sotteseng</ord>
- <forkl>sygeleje; dødsleje</forkl>
+ <forkl>sygeleje; dÃ¸dsleje</forkl>
 </entry>
 
 <entry id="Sottise">
@@ -3670,7 +3670,7 @@
  <ord>Spir</ord>
  <var>Herrespir</var>
  <var>Kongespiir</var>
- <forkl>scepter (symbol på kongemagt)</forkl>
+ <forkl>scepter (symbol pÃ¥ kongemagt)</forkl>
 </entry>
 
 <entry id="Spitsbube">
@@ -3678,7 +3678,7 @@
  <var>Spitsbub</var>
  <var>Spidsbube</var>
  <var>Spidsbub</var>
- <forkl>gavtyv, forbryder, kæltring (af tysk
+ <forkl>gavtyv, forbryder, kÃ¦ltring (af tysk
  <i>Spitzbube</i>
  )</forkl>
 </entry>
@@ -3688,25 +3688,25 @@
  <forkl>knitre; sprude gnister</forkl>
 </entry>
 
-<entry id="spærlemmet">
- <ord>spærlemmet</ord>
+<entry id="spÃ¦rlemmet">
+ <ord>spÃ¦rlemmet</ord>
  <forkl>som har spinkle arme og ben</forkl>
 </entry>
 
-<entry id="spørge">
- <ord>spørge</ord>
- <forkl>høre, erfare</forkl>
+<entry id="spÃ¸rge">
+ <ord>spÃ¸rge</ord>
+ <forkl>hÃ¸re, erfare</forkl>
 </entry>
 
-<entry id="spørges">
- <ord>spørges</ord>
+<entry id="spÃ¸rges">
+ <ord>spÃ¸rges</ord>
  <forkl>rygtes, forlyde</forkl>
 </entry>
 
 <entry id="stakket">
  <ord>stakket</ord>
  <var>stacked</var>
- <forkl>kort; især: af kort varighed</forkl>
+ <forkl>kort; isÃ¦r: af kort varighed</forkl>
 </entry>
 
 <entry id="stalten">
@@ -3716,34 +3716,34 @@
 
 <entry id="Stambog">
  <ord>Stambog</ord>
- <forkl>se Nøgleord <xref keyword="Stambog"/></forkl>
+ <forkl>se NÃ¸gleord <xref keyword="Stambog"/></forkl>
 </entry>
 
 <entry id="Statsminister">
  <ord>Statsminister</ord>
- <forkl>minister der er medlem af statsrådet (nuværende bet. først efter <year>1900</year>!)</forkl>
+ <forkl>minister der er medlem af statsrÃ¥det (nuvÃ¦rende bet. fÃ¸rst efter <year>1900</year>!)</forkl>
 </entry>
 
 <entry id="Stavn">
  <ord>Stavn</ord>
  <var>Staufn</var>
  <var>Staffn</var>
- <forkl>et skibs forreste del; også om hele skibet; sted hvor man har hjemme</forkl>
+ <forkl>et skibs forreste del; ogsÃ¥ om hele skibet; sted hvor man har hjemme</forkl>
 </entry>
 
 <entry id="Stegers">
  <ord>Stegers</ord>
- <forkl>køkken</forkl>
+ <forkl>kÃ¸kken</forkl>
 </entry>
 
 <entry id="Stiftelsen">
  <ord>Stiftelsen</ord>
- <forkl>Fødselsstiftelsen (hvor ugifte mødre kan føde anonymt)</forkl>
+ <forkl>FÃ¸dselsstiftelsen (hvor ugifte mÃ¸dre kan fÃ¸de anonymt)</forkl>
 </entry>
 
 <entry id="stind">
  <ord>stind</ord>
- <forkl>(adj.) som har nedsat bevægelighed; stiv, stejl, trodsig</forkl>
+ <forkl>(adj.) som har nedsat bevÃ¦gelighed; stiv, stejl, trodsig</forkl>
 </entry>
 
 <entry id="Stjern">
@@ -3753,7 +3753,7 @@
 
 <entry id="Stolkonge">
  <ord>Stolkonge</ord>
- <forkl>mægtig konge; overkonge</forkl>
+ <forkl>mÃ¦gtig konge; overkonge</forkl>
 </entry>
 
 <entry id="strag">
@@ -3763,7 +3763,7 @@
 
 <entry id="Strand">
  <ord>Strand</ord>
- <forkl>den del af havet som er nærmest kysten</forkl>
+ <forkl>den del af havet som er nÃ¦rmest kysten</forkl>
 </entry>
 
 <entry id="strippe">
@@ -3771,30 +3771,30 @@
  <forkl>fare omkring, strejfe</forkl>
 </entry>
 
-<entry id="Strængeleg">
- <ord>Strængeleg</ord>
+<entry id="StrÃ¦ngeleg">
+ <ord>StrÃ¦ngeleg</ord>
  <var>Strengeleeg</var>
- <forkl>(spil på) strengeinstrument(er); musik i almindelighed; billedligt: digtekunst</forkl>
+ <forkl>(spil pÃ¥) strengeinstrument(er); musik i almindelighed; billedligt: digtekunst</forkl>
 </entry>
 
 <entry id="Studiegaard">
  <ord>Studiegaard</ord>
  <var>Studiigaard</var>
 <forkl>
- universitet, universitetsbygning (heraf det københavnske gadenavn
- <i>Studiestræde</i>
+ universitet, universitetsbygning (heraf det kÃ¸benhavnske gadenavn
+ <i>StudiestrÃ¦de</i>
  )
  </forkl>
 </entry>
 
 <entry id="stunde">
  <ord>stunde</ord>
- <forkl>komme nærmere (i tid), nærme sig</forkl>
+ <forkl>komme nÃ¦rmere (i tid), nÃ¦rme sig</forkl>
 </entry>
 
 <entry id="Styreshaffn">
  <ord>Styreshaffn</ord>
- <forkl>styresmandens embede eller gård (len fra kongen); (styresmanden stod i spidsen for et distrikt som skulle udruste et krigsskib)</forkl>
+ <forkl>styresmandens embede eller gÃ¥rd (len fra kongen); (styresmanden stod i spidsen for et distrikt som skulle udruste et krigsskib)</forkl>
 </entry>
 
 <entry id="Styx">
@@ -3803,20 +3803,20 @@
 sml.<xref ord="Charon"/></forkl>
 </entry>
 
-<entry id="Støv">
- <ord>Støv</ord>
- <var>Støff</var>
- <forkl>(dødelige) mennesker</forkl>
+<entry id="StÃ¸v">
+ <ord>StÃ¸v</ord>
+ <var>StÃ¸ff</var>
+ <forkl>(dÃ¸delige) mennesker</forkl>
 </entry>
 
 <entry id="Supplicant">
  <ord>Supplicant</ord>
- <forkl>ansøger</forkl>
+ <forkl>ansÃ¸ger</forkl>
 </entry>
 
 <entry id="Suttung">
  <ord>Suttung</ord>
- <forkl>en jætte som ejede skjaldemjøden</forkl>
+ <forkl>en jÃ¦tte som ejede skjaldemjÃ¸den</forkl>
 </entry>
 
 <entry id="svelte">
@@ -3827,28 +3827,28 @@ sml.<xref ord="Charon"/></forkl>
 <entry id="Syld">
  <ord>Syld</ord>
  <var>Syllen</var>
- <forkl>stykke tømmer som danner underlag i bindingsværk; dørtrin</forkl>
+ <forkl>stykke tÃ¸mmer som danner underlag i bindingsvÃ¦rk; dÃ¸rtrin</forkl>
 </entry>
 
 <entry id="Syrach">
  <ord>Syrach</ord>
  <var>Syrak</var>
  <var>Sirak</var>
- <forkl>et af det Gamle Testamentes såkaldte apokryfiske skrifter</forkl>
+ <forkl>et af det Gamle Testamentes sÃ¥kaldte apokryfiske skrifter</forkl>
 </entry>
 
 <entry id="Syring">
  <ord>Syring</ord>
- <forkl>syrén</forkl>
+ <forkl>syrÃ©n</forkl>
 </entry>
 
 <entry id="Syrinx">
  <ord>Syrinx</ord>
- <forkl><xref ord="Pan"/>'s fløjte</forkl>
+ <forkl><xref ord="Pan"/>'s flÃ¸jte</forkl>
 </entry>
 
-<entry id="sødet">
- <ord>sødet</ord>
+<entry id="sÃ¸det">
+ <ord>sÃ¸det</ord>
 <forkl>
  kogt (part. af
  <i>syde</i>
@@ -3856,40 +3856,40 @@ sml.<xref ord="Charon"/></forkl>
  </forkl>
 </entry>
 
-<entry id="søffne">
- <ord>søffne</ord>
- <var>søvne</var>
- <forkl>sove ind; dysse i søvn</forkl>
+<entry id="sÃ¸ffne">
+ <ord>sÃ¸ffne</ord>
+ <var>sÃ¸vne</var>
+ <forkl>sove ind; dysse i sÃ¸vn</forkl>
 </entry>
 
 <entry id="Taal">
  <ord>Taal</ord>
- <forkl>tålmodigt sind; udholdenhed</forkl>
+ <forkl>tÃ¥lmodigt sind; udholdenhed</forkl>
 </entry>
 
 <entry id="taalig">
  <ord>taalig</ord>
- <forkl>tålmodig</forkl>
+ <forkl>tÃ¥lmodig</forkl>
 </entry>
 
 <entry id="Taalmod">
  <ord>Taalmod</ord>
- <forkl>tålmodighed</forkl>
+ <forkl>tÃ¥lmodighed</forkl>
 </entry>
 
 <entry id="Talsmanden">
  <ord>Talsmanden</ord>
- <forkl>navn for Helligånden (<xref bibel="bibeljohannes14,26"/>)</forkl>
+ <forkl>navn for HelligÃ¥nden (<xref bibel="bibeljohannes14,26"/>)</forkl>
 </entry>
 
 <entry id="Tant">
  <ord>Tant</ord>
- <forkl>noget værdiløst, indholdsløst; hvad der blot tilfredsstiller forfængeligheden</forkl>
+ <forkl>noget vÃ¦rdilÃ¸st, indholdslÃ¸st; hvad der blot tilfredsstiller forfÃ¦ngeligheden</forkl>
 </entry>
 
 <entry id="tarsk">
  <ord>tarsk</ord>
- <forkl>tærskede</forkl>
+ <forkl>tÃ¦rskede</forkl>
 </entry>
 
 <entry id="Tazet">
@@ -3900,7 +3900,7 @@ sml.<xref ord="Charon"/></forkl>
 <entry id="Tejne">
  <ord>Tejne</ord>
  <var>Melmadstejnen</var>
- <forkl>æske (madkasse) af træspån</forkl>
+ <forkl>Ã¦ske (madkasse) af trÃ¦spÃ¥n</forkl>
 </entry>
 
 <entry id="Terpsichore">
@@ -3922,12 +3922,12 @@ sml.<xref ord="Charon"/></forkl>
 <entry id="Theemaskine">
  <ord>Theemaskine</ord>
  <var>Temaskine</var>
- <forkl>kedel (på tebordet) hvori vand holdes kogende; selvkoger, samovar</forkl>
+ <forkl>kedel (pÃ¥ tebordet) hvori vand holdes kogende; selvkoger, samovar</forkl>
 </entry>
 
 <entry id="Theevand">
  <ord>Theevand</ord>
- <forkl>te; også (i modsætning til spirituøse drikke) om hvad der er kraftløst, småborgerligt</forkl>
+ <forkl>te; ogsÃ¥ (i modsÃ¦tning til spirituÃ¸se drikke) om hvad der er kraftlÃ¸st, smÃ¥borgerligt</forkl>
 </entry>
 
 <entry id="Thetis">
@@ -3948,7 +3948,7 @@ sml.<xref ord="Charon"/></forkl>
 <entry id="Thyrsus">
  <ord>Thyrsus</ord>
  <var>Thyrsusstav</var>
- <forkl>stav omvundet med vinløv og med en pinjekogle i toppen; blev ført af <xref ord="Dionysos"/> (eller af deltagere i Dionysos-optog)</forkl>
+ <forkl>stav omvundet med vinlÃ¸v og med en pinjekogle i toppen; blev fÃ¸rt af <xref ord="Dionysos"/> (eller af deltagere i Dionysos-optog)</forkl>
 </entry>
 
 <entry id="Tidende">
@@ -3963,15 +3963,15 @@ sml.<xref ord="Charon"/></forkl>
  <forkl>gulv; jordoverflade</forkl>
 </entry>
 
-<entry id="tjælde">
- <ord>tjælde</ord>
+<entry id="tjÃ¦lde">
+ <ord>tjÃ¦lde</ord>
  <var>tjelde</var>
- <forkl>behænge med tæpper</forkl>
+ <forkl>behÃ¦nge med tÃ¦pper</forkl>
 </entry>
 
 <entry id="toe">
  <ord>toe</ord>
- <forkl>vaske, tvætte, skylle</forkl>
+ <forkl>vaske, tvÃ¦tte, skylle</forkl>
 </entry>
 
 <entry id="tone">
@@ -3986,13 +3986,13 @@ sml.<xref ord="Charon"/></forkl>
 
 <entry id="Topper">
  <ord>Topper</ord>
- <forkl>prydelser på hestes hovedtøj (må kun føres af standspersoner)</forkl>
+ <forkl>prydelser pÃ¥ hestes hovedtÃ¸j (mÃ¥ kun fÃ¸res af standspersoner)</forkl>
 </entry>
 
 <entry id="Traa">
  <ord>Traa</ord>
 <forkl>
- stærk længsel eller higen (sml.
+ stÃ¦rk lÃ¦ngsel eller higen (sml.
  <i><xref ord="Attraa"/></i>
  )
  </forkl>
@@ -4000,13 +4000,13 @@ sml.<xref ord="Charon"/></forkl>
 
 <entry id="tredde">
  <ord>tredde</ord>
-<forkl>tredie (ældre stavemåde)</forkl>
+<forkl>tredie (Ã¦ldre stavemÃ¥de)</forkl>
 </entry>
 
 <entry id="trine">
  <ord>trine</ord>
  <var>tren</var>
-<forkl>(præt. <i>tren</i>) træde; gøre trin</forkl>
+<forkl>(prÃ¦t. <i>tren</i>) trÃ¦de; gÃ¸re trin</forkl>
 </entry>
 
 <entry id="Triton">
@@ -4019,23 +4019,23 @@ sml.<xref ord="Charon"/></forkl>
 <forkl>
  (dial. form af adj.
  <i>trang</i>
- ) præget af travlhed
+ ) prÃ¦get af travlhed
  </forkl>
 </entry>
 
-<entry id="trøst">
- <ord>trøst</ord>
+<entry id="trÃ¸st">
+ <ord>trÃ¸st</ord>
  <forkl>(adj.) modig, dristig</forkl>
 </entry>
 
-<entry id="Trøster">
- <ord>Trøster</ord>
- <forkl>pølle til at læne hovedet mod</forkl>
+<entry id="TrÃ¸ster">
+ <ord>TrÃ¸ster</ord>
+ <forkl>pÃ¸lle til at lÃ¦ne hovedet mod</forkl>
 </entry>
 
-<entry id="Trøstermand">
- <ord>Trøstermand</ord>
- <forkl>navn for Helligånden</forkl>
+<entry id="TrÃ¸stermand">
+ <ord>TrÃ¸stermand</ord>
+ <forkl>navn for HelligÃ¥nden</forkl>
 </entry>
 
 <entry id="Tvedragt">
@@ -4045,7 +4045,7 @@ sml.<xref ord="Charon"/></forkl>
 
 <entry id="Tycho">
  <ord>Tycho</ord>
- <forkl>den danske astronom Tycho Brahe (død <year>1601</year>)</forkl>
+ <forkl>den danske astronom Tycho Brahe (dÃ¸d <year>1601</year>)</forkl>
 </entry>
 
 <entry id="Tylvt">
@@ -4063,16 +4063,16 @@ sml.<xref ord="Charon"/></forkl>
  </forkl>
 </entry>
 
-<entry id="Tærne">
- <ord>Tærne</ord>
+<entry id="TÃ¦rne">
+ <ord>TÃ¦rne</ord>
  <var>Terne</var>
  <forkl>ung kvinde i tjenende stilling</forkl>
 </entry>
 
-<entry id="Tønder">
- <ord>Tønder</ord>
+<entry id="TÃ¸nder">
+ <ord>TÃ¸nder</ord>
  <var>Tynder</var>
- <forkl>noget letfængeligt, brændbart</forkl>
+ <forkl>noget letfÃ¦ngeligt, brÃ¦ndbart</forkl>
 </entry>
 
 <entry id="uafseelig">
@@ -4080,15 +4080,15 @@ sml.<xref ord="Charon"/></forkl>
  <forkl>uoverskuelig</forkl>
 </entry>
 
-<entry id="Udgangsøg">
- <ord>Udgangsøg</ord>
+<entry id="UdgangsÃ¸g">
+ <ord>UdgangsÃ¸g</ord>
  <forkl>udslidt hest; krikke</forkl>
 </entry>
 
 <entry id="udslagen">
  <ord>udslagen</ord>
  <frase>den udslagne Dag</frase>
- <forkl>dagen i dens fulde udstrækning; hele dagen</forkl>
+ <forkl>dagen i dens fulde udstrÃ¦kning; hele dagen</forkl>
 </entry>
 
 <entry id="uforsagt">
@@ -4096,25 +4096,25 @@ sml.<xref ord="Charon"/></forkl>
  <forkl>ikke forsagt; modig</forkl>
 </entry>
 
-<entry id="Ufærd">
- <ord>Ufærd</ord>
- <forkl>ulykke; voldsfærd</forkl>
+<entry id="UfÃ¦rd">
+ <ord>UfÃ¦rd</ord>
+ <forkl>ulykke; voldsfÃ¦rd</forkl>
 </entry>
 
 <entry id="ugemeen">
  <ord>ugemeen</ord>
- <forkl>ualmindelig, sjælden</forkl>
+ <forkl>ualmindelig, sjÃ¦lden</forkl>
 </entry>
 
 <entry id="Uhlfeldsplads">
  <ord>Uhlfeldsplads</ord>
  <var>Ulfeldsplads</var>
- <forkl>Ulfeldts Plads, det nuværende Gråbrødretorv i København</forkl>
+ <forkl>Ulfeldts Plads, det nuvÃ¦rende GrÃ¥brÃ¸dretorv i KÃ¸benhavn</forkl>
 </entry>
 
 <entry id="Ulivssaar">
  <ord>Ulivssaar</ord>
- <forkl>dødeligt sår</forkl>
+ <forkl>dÃ¸deligt sÃ¥r</forkl>
 </entry>
 
 <entry id="underlig">
@@ -4126,12 +4126,12 @@ sml.<xref ord="Charon"/></forkl>
 <entry id="undfaa">
  <ord>undfaa</ord>
  <var>undfange</var>
- <forkl>få tildelt, modtage; tage imod (en gæst, osv.)</forkl>
+ <forkl>fÃ¥ tildelt, modtage; tage imod (en gÃ¦st, osv.)</forkl>
 </entry>
 
 <entry id="Undine">
  <ord>Undine</ord>
- <forkl>kvindelig vandånd</forkl>
+ <forkl>kvindelig vandÃ¥nd</forkl>
 </entry>
 
 <entry id="Urania">
@@ -4141,13 +4141,13 @@ sml.<xref ord="Charon"/></forkl>
 
 <entry id="Urian">
  <ord>Urian</ord>
- <forkl>spøgende navn for en lidet agtet person</forkl>
+ <forkl>spÃ¸gende navn for en lidet agtet person</forkl>
 </entry>
 
 <entry id="Urtegaard">
  <ord>Urtegaard</ord>
  <var>Urtehave</var>
- <forkl>egl. (køkken)have; ofte billedligt; poetisk om kirkegård</forkl>
+ <forkl>egl. (kÃ¸kken)have; ofte billedligt; poetisk om kirkegÃ¥rd</forkl>
 </entry>
 
 <entry id="uskatterlig">
@@ -4155,26 +4155,26 @@ sml.<xref ord="Charon"/></forkl>
  <forkl>uvurderlig</forkl>
 </entry>
 
-<entry id="usøgt">
- <ord>usøgt</ord>
- <var>wsøgt</var>
+<entry id="usÃ¸gt">
+ <ord>usÃ¸gt</ord>
+ <var>wsÃ¸gt</var>
  <forkl>overset; ukunstlet, utvungen</forkl>
 </entry>
 
 <entry id="Vaabenbrag">
  <ord>Vaabenbrag</ord>
  <var>Vaabengnye</var>
- <forkl>kamplarm; også: hyldest</forkl>
+ <forkl>kamplarm; ogsÃ¥: hyldest</forkl>
 </entry>
 
 <entry id="Vaade">
  <ord>Vaade</ord>
- <forkl>nød; elendighed</forkl>
+ <forkl>nÃ¸d; elendighed</forkl>
 </entry>
 
 <entry id="Valbirk">
  <ord>Valbirk</ord>
- <forkl>ahorn(træ)</forkl>
+ <forkl>ahorn(trÃ¦)</forkl>
 </entry>
 
 <entry id="Valborgsdag">
@@ -4195,18 +4195,18 @@ sml.<xref ord="Charon"/></forkl>
 
 <entry id="Valkyrie">
  <ord>Valkyrie</ord>
- <forkl>kvinde som fører faldne krigere til <xref ord="Valhal"/></forkl>
+ <forkl>kvinde som fÃ¸rer faldne krigere til <xref ord="Valhal"/></forkl>
 </entry>
 
 <entry id="Valravn">
  <ord>Valravn</ord>
  <var>Valraffn</var>
- <forkl>overnaturligt, flyvende væsen i ravneskikkelse</forkl>
+ <forkl>overnaturligt, flyvende vÃ¦sen i ravneskikkelse</forkl>
 </entry>
 
 <entry id="vandlidt">
  <ord>vandlidt</ord>
- <forkl>som har været offer for oversvømmelseskatastrofe</forkl>
+ <forkl>som har vÃ¦ret offer for oversvÃ¸mmelseskatastrofe</forkl>
 </entry>
 
 <entry id="Vanfred">
@@ -4222,7 +4222,7 @@ sml.<xref ord="Charon"/></forkl>
 <entry id="veffue">
  <ord>veffue</ord>
  <var>voff</var>
- <forkl>(præt. <i>voff</i>) væve</forkl>
+ <forkl>(prÃ¦t. <i>voff</i>) vÃ¦ve</forkl>
 </entry>
 
 <entry id="veje">
@@ -4230,12 +4230,12 @@ sml.<xref ord="Charon"/></forkl>
  <var>veget</var>
  <var>vog</var>
  <var>voget</var>
- <forkl>(præt. <i>vog, vogst;</i> part. <i>veget, vejet, voget</i>) dræbe, fælde</forkl>
+ <forkl>(prÃ¦t. <i>vog, vogst;</i> part. <i>veget, vejet, voget</i>) drÃ¦be, fÃ¦lde</forkl>
 </entry>
 
 <entry id="Venus">
  <ord>Venus</ord>
- <forkl>den romerske gudinde for skønhed og kærlighed; svarer til den græske Afrodite</forkl>
+ <forkl>den romerske gudinde for skÃ¸nhed og kÃ¦rlighed; svarer til den grÃ¦ske Afrodite</forkl>
 </entry>
 
 <entry id="Vesterbro">
@@ -4243,7 +4243,7 @@ sml.<xref ord="Charon"/></forkl>
 <forkl>
  den
  <i>bro</i>
- lagte landevej som vestfra fører til Københavns Vesterport (først efter <year>1850</year>, da området omkring vejen bebygges, kommer navnet efterhånden til at betegne bydelen) [tilsvarende:] <i>Østerbro</i>
+ lagte landevej som vestfra fÃ¸rer til KÃ¸benhavns Vesterport (fÃ¸rst efter <year>1850</year>, da omrÃ¥det omkring vejen bebygges, kommer navnet efterhÃ¥nden til at betegne bydelen) [tilsvarende:] <i>Ã˜sterbro</i>
  </forkl>
 </entry>
 
@@ -4254,7 +4254,7 @@ sml.<xref ord="Charon"/></forkl>
 
 <entry id="Videslet">
  <ord>Videslet</ord>
- <forkl>Danmark øst for Storebælt; også om hele Danmark</forkl>
+ <forkl>Danmark Ã¸st for StorebÃ¦lt; ogsÃ¥ om hele Danmark</forkl>
 </entry>
 
 <entry id="Vidskab">
@@ -4270,7 +4270,7 @@ sml.<xref ord="Charon"/></forkl>
 <entry id="Virgil">
  <ord>Virgil</ord>
  <var>Maro</var>
- <forkl>Publius Vergilius Maro, romersk digter (død 19 f.Kr.)</forkl>
+ <forkl>Publius Vergilius Maro, romersk digter (dÃ¸d 19 f.Kr.)</forkl>
 </entry>
 
 <entry id="virm">
@@ -4287,68 +4287,68 @@ sml.<xref ord="Charon"/></forkl>
 <entry id="Vunde">
  <ord>Vunde</ord>
 <forkl>
- sår (sml. ty.
+ sÃ¥r (sml. ty.
  <i>Wunde</i>
  )
  </forkl>
 </entry>
 
-<entry id="Vægtskaal">
- <ord>Vægtskaal</ord>
- <forkl>skålvægt</forkl>
+<entry id="VÃ¦gtskaal">
+ <ord>VÃ¦gtskaal</ord>
+ <forkl>skÃ¥lvÃ¦gt</forkl>
 </entry>
 
-<entry id="vælig">
- <ord>vælig</ord>
+<entry id="vÃ¦lig">
+ <ord>vÃ¦lig</ord>
  <forkl>sund, fyrig, livlig (om hest)</forkl>
 </entry>
 
-<entry id="vælsk">
- <ord>vælsk</ord>
+<entry id="vÃ¦lsk">
+ <ord>vÃ¦lsk</ord>
  <var>valsk</var>
  <var>velsk</var>
- <var>Vælskland</var>
+ <var>VÃ¦lskland</var>
  <forkl>poetisk (om) Italien</forkl>
 </entry>
 
-<entry id="væn">
- <ord>væn</ord>
+<entry id="vÃ¦n">
+ <ord>vÃ¦n</ord>
  <var>ven</var>
- <forkl>skøn, smuk</forkl>
+ <forkl>skÃ¸n, smuk</forkl>
 </entry>
 
-<entry id="være">
- <ord>være</ord>
- <frase>være sig det er (osv.)</frase>
+<entry id="vÃ¦re">
+ <ord>vÃ¦re</ord>
+ <frase>vÃ¦re sig det er (osv.)</frase>
  <forkl>hvad enten det er</forkl>
 </entry>
 
-<entry id="værkbruden">
- <ord>værkbruden</ord>
+<entry id="vÃ¦rkbruden">
+ <ord>vÃ¦rkbruden</ord>
  <var>verkbrudden</var>
- <forkl>gigtsvag; bevægelseshæmmet</forkl>
+ <forkl>gigtsvag; bevÃ¦gelseshÃ¦mmet</forkl>
 </entry>
 
-<entry id="Vølve">
- <ord>Vølve</ord>
- <forkl>spåkvinde (i nordisk mytologi)</forkl>
+<entry id="VÃ¸lve">
+ <ord>VÃ¸lve</ord>
+ <forkl>spÃ¥kvinde (i nordisk mytologi)</forkl>
 </entry>
 
 <entry id="wdedisk">
  <ord>wdedisk</ord>
- <var>udædisk</var>
- <forkl>udædisk; forbryderisk; ond, slet</forkl>
+ <var>udÃ¦disk</var>
+ <forkl>udÃ¦disk; forbryderisk; ond, slet</forkl>
 </entry>
 
 <entry id="Wskel">
  <ord>Wskel</ord>
- <forkl>uret; fortræd, forulempelse</forkl>
+ <forkl>uret; fortrÃ¦d, forulempelse</forkl>
 </entry>
 
 <entry id="wspard">
  <ord>wspard</ord>
  <var>vspard</var>
- <forkl>usparet; som ikke spares eller forskånes</forkl>
+ <forkl>usparet; som ikke spares eller forskÃ¥nes</forkl>
 </entry>
 
 <entry id="Xantippe">
@@ -4359,13 +4359,13 @@ sml.<xref ord="Charon"/></forkl>
 
 <entry id="ysk">
  <ord>ysk</ord>
- <forkl>ung og rask; kæk; vakker</forkl>
+ <forkl>ung og rask; kÃ¦k; vakker</forkl>
 </entry>
 
 <entry id="Zebaoth">
  <ord>Zebaoth</ord>
  <frase>Den Herre Zebaoth</frase>
- <forkl>navn for (jødernes) gud; egl. 'hærskarer'</forkl>
+ <forkl>navn for (jÃ¸dernes) gud; egl. 'hÃ¦rskarer'</forkl>
 </entry>
 
 <entry id="Zelot">
@@ -4381,7 +4381,7 @@ sml.<xref ord="Charon"/></forkl>
 
 <entry id="Zeus">
  <ord>Zeus</ord>
- <forkl>den øverste gud i græsk mytologi; svarer til romernes Jupiter</forkl>
+ <forkl>den Ã¸verste gud i grÃ¦sk mytologi; svarer til romernes Jupiter</forkl>
 </entry>
 
 <entry id="Zion">
@@ -4390,78 +4390,78 @@ sml.<xref ord="Charon"/></forkl>
  <forkl>navn for Jerusalem</forkl>
 </entry>
 
-<entry id="Ædil">
- <ord>Ædil</ord>
+<entry id="Ã†dil">
+ <ord>Ã†dil</ord>
  <forkl>romersk embedsmand med politimyndighed</forkl>
 </entry>
 
-<entry id="Ædling">
- <ord>Ædling</ord>
+<entry id="Ã†dling">
+ <ord>Ã†dling</ord>
  <var>Edling</var>
- <var>Ædeling</var>
+ <var>Ã†deling</var>
  <forkl>adelig eller fyrstelig person</forkl>
 </entry>
 
-<entry id="Ægide">
- <ord>Ægide</ord>
- <forkl>Pallas Athenes (Minervas) eller Zeus' (Jupiters) panser eller skjold; også billedligt</forkl>
+<entry id="Ã†gide">
+ <ord>Ã†gide</ord>
+ <forkl>Pallas Athenes (Minervas) eller Zeus' (Jupiters) panser eller skjold; ogsÃ¥ billedligt</forkl>
 </entry>
 
-<entry id="Ære">
- <ord>Ære</ord>
- <frase>Ære være Gud (Kongen, osv.)</frase>
+<entry id="Ã†re">
+ <ord>Ã†re</ord>
+ <frase>Ã†re vÃ¦re Gud (Kongen, osv.)</frase>
 <forkl>
  (stivnet udtryk;
  <i>Gud</i>
- skal forstås som hensynsled (hvad der ikke ses af formen); sml. eng.
+ skal forstÃ¥s som hensynsled (hvad der ikke ses af formen); sml. eng.
  <i>Glory to God</i>
  ; lat.
  <i>Gloria Deo</i>
  </forkl>
 </entry>
 
-<entry id="Æronaut">
- <ord>Æronaut</ord>
+<entry id="Ã†ronaut">
+ <ord>Ã†ronaut</ord>
 <forkl>
- usædvanlig stavning af
+ usÃ¦dvanlig stavning af
  <i>Aeronaut</i>: luftskipper
  </forkl>
 </entry>
 
-<entry id="Ødyp">
- <ord>Ødyp</ord>
- <forkl>Oidipos (Ødipus)</forkl>
+<entry id="Ã˜dyp">
+ <ord>Ã˜dyp</ord>
+ <forkl>Oidipos (Ã˜dipus)</forkl>
 </entry>
 
-<entry id="Øg">
- <ord>Øg</ord>
+<entry id="Ã˜g">
+ <ord>Ã˜g</ord>
  <forkl>(gammel) hest, krikke</forkl>
 </entry>
 
-<entry id="Ørk">
- <ord>Ørk</ord>
- <forkl>ørken, ødemark</forkl>
+<entry id="Ã˜rk">
+ <ord>Ã˜rk</ord>
+ <forkl>Ã¸rken, Ã¸demark</forkl>
 </entry>
 
-<entry id="Ørne">
- <ord>Ørne</ord>
- <forkl>ører</forkl>
+<entry id="Ã˜rne">
+ <ord>Ã˜rne</ord>
+ <forkl>Ã¸rer</forkl>
 </entry>
 
-<entry id="Ørss">
- <ord>Ørss</ord>
+<entry id="Ã˜rss">
+ <ord>Ã˜rss</ord>
  <forkl>(folkeviser) hest, stridshest</forkl>
 </entry>
 
-<entry id="Øxne">
- <ord>Øxne</ord>
- <var>Øxen</var>
+<entry id="Ã˜xne">
+ <ord>Ã˜xne</ord>
+ <var>Ã˜xen</var>
  <forkl>okser (plur. af <i>Oxe</i>)</forkl>
 </entry>
 
-<entry id="Øyenskalck">
- <ord>Øyenskalck</ord>
- <forkl>øjentjener; hykler</forkl>
+<entry id="Ã˜yenskalck">
+ <ord>Ã˜yenskalck</ord>
+ <forkl>Ã¸jentjener; hykler</forkl>
 </entry>
 
 </entries>

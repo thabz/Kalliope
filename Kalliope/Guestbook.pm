@@ -26,6 +26,7 @@ package Kalliope::Guestbook;
 use strict;
 use Kalliope::Guestbook::Entry;
 use Kalliope::DB;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 my $pagesize = 10;

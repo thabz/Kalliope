@@ -22,6 +22,7 @@
 package Kalliope::Forum::Post;
 
 use strict;
+use utf8;
 use Kalliope::Date();
 use Kalliope::DB();
 

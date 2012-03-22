@@ -21,6 +21,9 @@
 package Kalliope::Page::WML;
 use Kalliope::Page;
 @ISA = ('Kalliope::Page');
+use utf8;
+binmode STDOUT => ":utf8";
+
 
 sub addWML {
    my ($self,$WML) = @_;

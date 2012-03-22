@@ -3,6 +3,7 @@
 # Make thumbnails of all images in fdirs
 
 use Kalliope::DB;
+use utf8;
 
 my $dbh = Kalliope::DB::connect();
 

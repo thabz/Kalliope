@@ -24,6 +24,7 @@ package Kalliope::Build::Biblio;
     
 use Kalliope::DB;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB::connect();
 

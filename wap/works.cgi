@@ -13,10 +13,10 @@ my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 my @crumbs;
 push @crumbs, ['Digtere','poets.cgi'];
 push @crumbs, [$poet->name,"poet.cgi?fhandle=$fhandle"];
-push @crumbs, ["Værker",""];
+push @crumbs, ["VÃ¦rker",""];
 
 my $page = new Kalliope::Page::WML( 
-	title => $poet->efternavn.'s værker',
+	title => $poet->efternavn.'s vÃ¦rker',
 	crumbs => \@crumbs
        	);
 

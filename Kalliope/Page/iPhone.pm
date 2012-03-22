@@ -21,6 +21,8 @@
 package Kalliope::Page::iPhone;
 use Kalliope::Page;
 @ISA = ('Kalliope::Page');
+use utf8;
+binmode STDOUT => ":utf8";
 
 sub addHTML {
    my ($self,$HTML) = @_;

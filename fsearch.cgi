@@ -21,6 +21,7 @@
 #  $Id$
 
 use CGI ();
+use Encode;
 use Kalliope;
 use Kalliope::Person;
 use Kalliope::Page;
@@ -29,15 +30,16 @@ use Kalliope::Search;
 use Kalliope::DB;
 use URI::Escape;
 use strict;
+use utf8;
 
 my $fhandle = CGI::param('fhandle');
 my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 
 my $dbh = Kalliope::DB->connect;
-
+my $needle = decode utf8 => CGI::param('needle');
 my $search = new Kalliope::Search(lang => $poet->lang,
                                   type => 'author',
-                                  offset => CGI::param('offset') || 0,
+                                  offset => $needle || 0,
 				  needle => CGI::param('needle') || '',
 				  poet => $poet);
 $search->log;
@@ -49,7 +51,7 @@ push @crumbs,[$search->pageTitle,''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
 	                              page => 'search',
-				      subtitle => _('Søgning'),
+				      subtitle => _('SÃ¸gning'),
 	                              crumbs => \@crumbs );
 
 if ($search->hasSearchBox) {
@@ -60,7 +62,7 @@ if ($search->hasSearchBox) {
 
 
 if ($search->needle) {
-$page->addBox( width => '80%',
+    $page->addBox( width => '80%',
 	content => $search->getHTML,
 	coloumn => 1);
 }

@@ -19,7 +19,7 @@ my ($longdid,$fhandle,$vhandle) = ($poem->longdid,$poet->fhandle,$work->longvid)
 my @crumbs;
 push @crumbs, ['Digtere','poets.cgi'];
 push @crumbs, [$poet->name,"poet.cgi?fhandle=$fhandle"];
-push @crumbs, ["Værker","works.cgi?fhandle=$fhandle"];
+push @crumbs, ["VÃ¦rker","works.cgi?fhandle=$fhandle"];
 push @crumbs, [$work->titleWithYear,"toc.cgi?fhandle=$fhandle&amp;vhandle=$vhandle"];
 push @crumbs,[$poem->linkTitle,''];
 
@@ -49,7 +49,7 @@ sub renderPoem {
     $text =~ s/<[^>]+>//g;
     $text =~ s/\n/<br\/>/g;
     $text =~ s/&mdash;/-/g;
-    $text =~ s/&iuml;/ï/g;
+    $text =~ s/&iuml;/Ã¯/g;
 
     $HTML .= $text;
     return $HTML;

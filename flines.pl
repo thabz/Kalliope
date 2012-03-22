@@ -30,6 +30,7 @@ use Kalliope::Person ();
 use Kalliope::Page ();
 use Kalliope::Sort ();
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 my $fhandle = CGI::url_param('fhandle');
@@ -47,7 +48,7 @@ unless ($fhandle) {
 
 my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 my $mode = CGI::url_param('mode') || 0;
-my $title = $mode == 1 ? _("Digttitler") : _("Førstelinier");
+my $title = $mode == 1 ? _("Digttitler") : _("FÃ¸rstelinier");
 
 #
 # Breadcrumbs -------------------------------------------------------------
@@ -107,9 +108,9 @@ for (my $i = 0; $i <= $#lines; $i++) {
     }
 
     my $linefix = $line;
-    $linefix =~ s/^Aa/Å/ig;
+    $linefix =~ s/^Aa/Ã…/ig;
     my $linefixold = $previousLine;
-    $linefixold =~ s/^Aa/Å/ig;
+    $linefixold =~ s/^Aa/Ã…/ig;
 
     my $firstLetterNew = uc substr($linefix,0,1);
     my $firstLetterOld = uc substr($linefixold,0,1);

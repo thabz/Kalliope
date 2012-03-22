@@ -28,6 +28,7 @@ use Kalliope;
 use Kalliope::DB;
 use URI::Escape;
 use strict;
+use utf8;
 
 
 my $filename = param('file') || '';
@@ -35,7 +36,7 @@ my $dir = param('dir') || '';
 my $knap = param('knap');
 
 my @crumbs;
-push @crumbs,['Redigér','edit.cgi'];
+push @crumbs,['RedigÃ©r','edit.cgi'];
 push @crumbs,[$dir,"edit.cgi?dir=$dir"] if $dir;
 push @crumbs,[$filename,""] if $filename;
 
@@ -56,7 +57,7 @@ if ($knap) {
 
 my $page;
 $page = new Kalliope::Page (
-	title => "Redigér $dir/$filename",
+	title => "RedigÃ©r $dir/$filename",
 	thumb => 'gfx/icons/keywords-h70.gif',
 	lang => 'dk',
 	crumbs => \@crumbs );
@@ -88,7 +89,7 @@ sub editPage {
     my $navHTML = '<table width="100%"><tr>';
     $navHTML .= $prev ? qq|<td width="33%"><a href="edit.cgi?dir=$dir&file=$prev">&lt;&lt; Forrige side</a></td>| : "<td></td>";
     $navHTML .= qq|<td width="33%"><a href="edit.cgi?dir=$dir">Indeks</a></td>|;
-    $navHTML .= $next ? qq|<td width="33%"><a href="edit.cgi?dir=$dir&file=$next">Næste side &gt;&gt;</a></td>| : "<td></td>";
+    $navHTML .= $next ? qq|<td width="33%"><a href="edit.cgi?dir=$dir&file=$next">NÃ¦ste side &gt;&gt;</a></td>| : "<td></td>";
     $navHTML .= '</tr></table>';
 
     my $HTML = '<form method="post">';
@@ -105,7 +106,7 @@ sub editPage {
     $HTML .= qq|<td valign=top>|;
     $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Duplet">';
     $HTML .= qq|<textarea rows=30 name="data" style="width:300px; height:90%">$data</textarea><br>|;
-    $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Gem ændringer">';
+    $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Gem Ã¦ndringer">';
     $HTML .= '<INPUT TYPE="Submit" NAME="knap" VALUE="Godkend tekst">';
     $HTML .= '</td>';
     $HTML .= '</tr></table>';
@@ -164,7 +165,7 @@ sub showRootDir {
     my $dbh = Kalliope::DB::connect();
     my $sth = $dbh->prepare("SELECT COUNT(DISTINCT filename) FROM edithistory WHERE action = ? AND dir = ?");
     my $HTML = '<table class="oversigt">';
-    $HTML .= '<tr><th>Værk</th><th>Sider</th><th><img alt="redigeret" src="gfx/edit.png"></th><th><img alt="godkendte" src="gfx/accept.png"></th><th><img alt="markerede som dupletter" src="gfx/duplet.png"></th><th>Funktioner</th></tr>';
+    $HTML .= '<tr><th>VÃ¦rk</th><th>Sider</th><th><img alt="redigeret" src="gfx/edit.png"></th><th><img alt="godkendte" src="gfx/accept.png"></th><th><img alt="markerede som dupletter" src="gfx/duplet.png"></th><th>Funktioner</th></tr>';
     foreach my $f (grep {!/^\./} readdir(DIR)) {
 	my $size = _sizeOfDir($f);
 	$sth->execute('edit',$f);

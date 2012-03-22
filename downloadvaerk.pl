@@ -24,6 +24,8 @@ use Kalliope;
 use Kalliope::DB;
 use CGI qw(:standard);
 use Kalliope::Poem ();
+use utf8;
+binmode STDOUT => ":utf8";
 
 my $dbh = Kalliope::DB->connect;
 
@@ -34,6 +36,7 @@ $outputtype = url_param('mode');
 if ($outputtype eq 'XML') {
     print "Content-type: text/xml\n\n";
     open (FILE,"fdirs/$fhandle/$vhandle.xml");
+    binmode FILE => ":utf8";
     while (<FILE>) {
 	if (/^<!DOCTYPE kalliopework/) { 
 	    s!../../data!data!;
@@ -50,7 +53,7 @@ if ($outputtype eq 'XML') {
 
     $sth = $dbh->prepare("SELECT longdid,toptitel,foerstelinie,underoverskrift,indhold FROM digte WHERE vid=? AND fhandle=? ORDER BY vaerkpos");
     $sth->execute($vid,$fhandle);
-    print "Content-type: text/html\n\n";
+    print "Content-type: text/html; charset=UTF-8\n\n";
     print "<HTML><HEAD><TITLE>$vtitel</TITLE></HEAD>\n";
     print "<BODY BGCOLOR=white>\n";
     print "<H1>$ffornavn $fefternavn: <I>$vtitel</I>";
@@ -73,7 +76,7 @@ if ($outputtype eq 'XML') {
 } elsif ($outputtype eq 'PRC') {
     # PalmOS doc format
     my $HTML;
-    $HEAD.= "Content-type: text/plain\n\n";
+    $HEAD.= "Content-type: text/plain; charset=UTF-8\n\n";
     $HEAD .= '<HEADER FONT=2 ALIGN="CENTER" TEXT="'.$vtitel;
     $HEAD .= " ($vaar)" if ($vaar ne '?');
     $HEAD .= '">'."\n";

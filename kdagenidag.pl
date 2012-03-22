@@ -19,6 +19,7 @@
 #  Author: Jesper Christensen <jesper@kalliope.org>
 #
 #  $Id$
+use utf8;
 
 do 'kstdhead.pl';
 
@@ -49,7 +50,7 @@ foreach $pair (@pairs)
 $md=$FORM{"md"};
 $dg=$FORM{"dg"};
 
-#Hvis argument er tomt, så vælg dagen i dag.
+#Hvis argument er tomt, sÃ¥ vÃ¦lg dagen i dag.
 if ($md eq "") {
 	($sec,$min,$hour,$dg,$md,$year,$wday,$yday,$isdst)=localtime(time);
 	$md++;
@@ -74,7 +75,7 @@ foreach (<FILE>) {
 }
 print "Ingen begivenheder...<BR>" if $i==0;
 
-#Print søge-FORMen
+#Print sÃ¸ge-FORMen
 print "<BR><BR><BR>";
 print "<FORM METHOD=POST ACTION=\"kdagenidag.pl\">";
 #Udskriv dage 1-31...
@@ -87,7 +88,7 @@ foreach (1..31) {
 	print ">$_";
 }
 print "</select></FONT>";
-#Udskriv måneder
+#Udskriv mÃ¥neder
 print "<FONT SIZE=2><select name=\"md\">\n";
 foreach (0..11) {
 	print "<option value=\"".($_+1)."\" ";
@@ -97,10 +98,10 @@ foreach (0..11) {
 	print ">$maaneder[$_]";
 }
 print "</select></FONT>";
-print "<INPUT TYPE=submit VALUE=\"Søg\">";
+print "<INPUT TYPE=submit VALUE=\"SÃ¸g\">";
 print "</FORM>";
 endbox();
 
-# Næste kolonne
+# NÃ¦ste kolonne
 
 &kfooterHTML;

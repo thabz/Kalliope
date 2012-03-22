@@ -21,6 +21,7 @@
 #  $Id$
 
 use strict;
+use utf8;
 use Kalliope;
 use Kalliope::Page ();
 use Kalliope::Web ();
@@ -29,10 +30,10 @@ use CGI ();
 my $country = Kalliope::Internationalization::country();
 
 my @crumbs;
-push @crumbs,[_('Værker'),''];
+push @crumbs,[_('VÃ¦rker'),''];
 
 my $page = new Kalliope::Page (
-	title => _('Værker'),
+	title => _('VÃ¦rker'),
 	lang => $country,
 	crumbs => \@crumbs,
         pagegroup => 'worklist',
@@ -49,27 +50,27 @@ sub front {
 
     my @menuStruct = ({ 
         url => "kvaerker.pl?mode=titel&cn=$country", 
-	    title => _('Værker efter titel'), 
+	    title => _('VÃ¦rker efter titel'), 
 	    status => 1,
-        desc => _("Værker ordnet efter titel"),
+        desc => _("VÃ¦rker ordnet efter titel"),
         icon => 'gfx/icons/works-w96.png'
     },{
         url => "kvaerker.pl?mode=aar&cn=$country", 
-	    title => _('Værker efter år'), 
+	    title => _('VÃ¦rker efter Ã¥r'), 
 	    status => 1,
-        desc => _("Værker ordnet efter udgivelsesår"),
+        desc => _("VÃ¦rker ordnet efter udgivelsesÃ¥r"),
         icon => 'gfx/icons/works-w96.png'
     },{
         url => "kvaerker.pl?mode=digter&cn=$country", 
-	    title => _('Værker efter digter'), 
+	    title => _('VÃ¦rker efter digter'), 
 	    status => 1,
-        desc => _("Værker grupperet efter digter"),
+        desc => _("VÃ¦rker grupperet efter digter"),
         icon => 'gfx/icons/works-w96.png'
     },{
         url => "kvaerker.pl?mode=pop&cn=$country", 
-	    title => _('Mest populære værker'), 
+	    title => _('Mest populÃ¦re vÃ¦rker'), 
 	    status => 1,
-        desc => _("De mest læste værker i Kalliope"),
+        desc => _("De mest lÃ¦ste vÃ¦rker i Kalliope"),
         icon => 'gfx/icons/pop-w96.png'
     });
 

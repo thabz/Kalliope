@@ -26,6 +26,7 @@ use Kalliope::DB;
 my $dbh = Kalliope::DB::connect;
 
 use strict;
+use utf8;
 
 sub lastVisitors {
     return;
@@ -51,7 +52,7 @@ sub totalHits {
 
 sub newHit {
     return;
-    #Læg een til den totale hitcounter
+    #LÃ¦g een til den totale hitcounter
     my $statfilename = "../stat/counter";
 
     open (FIL,"+<$statfilename");
@@ -62,7 +63,7 @@ sub newHit {
     print FIL $globalcounter."\n";
     close (FIL);
 
-    #Læg een til denne datos hit-counter
+    #LÃ¦g een til denne datos hit-counter
     my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime;
     $statfilename = "../stat/dailyhits.$wday";
     if (!(-e $statfilename)) {
@@ -126,7 +127,7 @@ sub uptime {
 sub lastWeeksHits {
     my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
     my $i = $wday;
-    my @dage = ("Søn","Man","Tir","Ons","Tors","Fre","Lør");
+    my @dage = ("SÃ¸n","Man","Tir","Ons","Tors","Fre","LÃ¸r");
     my $counttotal = 0;
     my $countmax = 0;
     my $j;

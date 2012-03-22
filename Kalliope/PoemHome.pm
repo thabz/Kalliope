@@ -23,6 +23,7 @@
 package Kalliope::PoemHome;
 
 use Kalliope::Poem;
+use utf8;
 
 my %cache;
 my $dbh = Kalliope::DB->connect;

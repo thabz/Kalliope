@@ -13,6 +13,3 @@ RewriteRule ^(da|en)/(.*)$ $2?prefer-lang=$1&pis=%{REQUEST_URI}&%{QUERY_STRING} 
 # Cache control
 #
 
-<FilesMatch "\.(png|gif|jpg|js|css)$">
-    Header set Cache-Control "max-age=290304000, public"
-</FilesMatch>

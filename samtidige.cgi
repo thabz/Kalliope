@@ -27,6 +27,7 @@ use Kalliope::Page;
 use Kalliope::Timeline;
 use Kalliope::Timeline::Event;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 my $fhandle = url_param('fhandle');
@@ -70,7 +71,7 @@ if ($antal) {
 	    
         $i++;
     }
-    $blocks[0]->{'body'} .= '<br><br><SMALL><I>'._("Oversigt over digtere som udgav værker i %ss levetid.",$poet->name).'</I></SMALL>';
+    $blocks[0]->{'body'} .= '<br><br><SMALL><I>'._("Oversigt over digtere som udgav vÃ¦rker i %ss levetid.",$poet->name).'</I></SMALL>';
     $page->addDoubleColumn(@blocks);
 }
 

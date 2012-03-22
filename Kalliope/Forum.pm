@@ -24,9 +24,10 @@ package Kalliope::Forum;
 use strict;
 use Kalliope::DB ();
 use Kalliope::Forum::Post();
+use utf8;
 
 
-my @foraInfo = ( {title => 'Løst og fast',
+my @foraInfo = ( {title => 'LÃ¸st og fast',
                desc  => 'Her kan du diskutere alt muligt',
 	       smallicon  => 'gfx/icons/forum-w48.gif',
 	       bigicon  => 'gfx/icons/forum-h70.gif'},
@@ -38,8 +39,8 @@ my @foraInfo = ( {title => 'Løst og fast',
                desc  => 'Her snakker vi om Kalliope',
 	       smallicon  => 'gfx/icons/forum-w48.gif',
 	       bigicon  => 'gfx/icons/forum-h70.gif'},
-              {title => 'Hjælp',
-               desc  => 'Her kan du spørge om hjælp til hvad som helst',
+              {title => 'HjÃ¦lp',
+               desc  => 'Her kan du spÃ¸rge om hjÃ¦lp til hvad som helst',
 	       smallicon  => 'gfx/icons/forum-w48.gif',
 	       bigicon  => 'gfx/icons/forum-h70.gif'},
 	       );

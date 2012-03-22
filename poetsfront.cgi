@@ -21,6 +21,7 @@
 #  $Id$
 
 use strict;
+use utf8;
 use Kalliope;
 use Kalliope::Page ();
 use Kalliope::Web ();
@@ -54,26 +55,26 @@ sub front {
         icon => 'gfx/icons/works-w96.png'
     },{
         url => "poets.cgi?list=19&cn=$country", 
-	    title => _('Digtere efter år'), 
+	    title => _('Digtere efter Ã¥r'), 
 	    status => 1, 
-        desc => _("Digtere ordnet kronologisk efter fødeår."),
+        desc => _("Digtere ordnet kronologisk efter fÃ¸deÃ¥r."),
         icon => 'gfx/icons/works-w96.png'
     },{
 	    url => "poets.cgi?list=pics&cn=$country", 
 	    title => _('Digtere efter udseende'), 
 	    status => 1,
-        desc => _("En oversigt med portrætter af alle digtere."),
+        desc => _("En oversigt med portrÃ¦tter af alle digtere."),
         icon => 'gfx/icons/portrait-w96.png',
     },{
 	    url => "poets.cgi?list=flittige&cn=$country", 
 	    title => _('Flittigste digtere'), 
 	    status => 1,
-        desc => _("Digtere ordnet efter hvor rigt repræsenteret de er i Kalliope."),
+        desc => _("Digtere ordnet efter hvor rigt reprÃ¦senteret de er i Kalliope."),
         icon => 'gfx/icons/works-w96.png'
     },{
 	    url => "poets.cgi?list=pop&cn=$country", 
-	    title => _('Mest populære digtere'), 
-	    desc => _('En oversigt over de mest læste digtere i Kalliope.'),
+	    title => _('Mest populÃ¦re digtere'), 
+	    desc => _('En oversigt over de mest lÃ¦ste digtere i Kalliope.'),
 	    status => 1,
         icon => 'gfx/icons/pop-w96.png'});
 

@@ -22,11 +22,12 @@
 
 use Kalliope::Page ();
 use CGI ();
+use utf8;
 
 my %titler = ( musen => _('Musen Kalliope'),
                tak => _('Mange tak...'),
                interne => _('Interne sider'),
-               faq => _('Ofte stillede spørgsmål'),
+               faq => _('Ofte stillede spÃ¸rgsmÃ¥l'),
                attractions => _('Coming attractions'),
 	       about => '' );
 

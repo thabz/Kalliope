@@ -20,6 +20,8 @@
 
 package Kalliope::Page;
 
+use utf8;
+binmode STDOUT => ":utf8";
 use Kalliope;
 use Kalliope::Web ();
 use Kalliope::Page::Print();
@@ -336,7 +338,7 @@ sub print {
 	    return;
     }
     my @c = $self->{'cookies'};
-    print CGI::header(-type => 'text/html; charset=ISO-8859-1',
+    print CGI::header(-type => 'text/html; charset=UTF-8',
 		      -cookie => @c);
     my $lang = Kalliope::Internationalization::language();
     print '<!DOCTYPE html>';
@@ -348,8 +350,8 @@ sub print {
 <meta name="viewport" content="width=device-width; initial-scale=1.0" />
 <link rel="search" type="application/opensearchdescription+xml" title="Kalliope" href="http://www.kalliope.org/opensearch.xml">
 <link rel="stylesheet" type="text/css" href="kalliope.css">
-<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
-<META name="description" content="Stort arkiv for ældre digtning">
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=UTF-8">
+<META name="description" content="Stort arkiv for Ã¦ldre digtning">
 <META name="keywords" content="digte, lyrik, litteratur, litteraturhistorie, digtere, digtarkiv, etext, e-text, elektronisk tekst, kalliope, kalliope.org, www.kalliope.org">
 $feedlink
 <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic|PT+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
@@ -479,7 +481,7 @@ GOOGLEADS
     print '<div class="footer">';
     print '<div class="searchbox">';
     print '<form method="get" action="ksearch.cgi">';
-    print '<input class="search" name="needle" placeholder="'._("Søg i Kalliope").'">';
+    print '<input class="search" name="needle" placeholder="'._("SÃ¸g i Kalliope").'">';
     print '<input type="hidden" name="cn" value="'.$self->country.'">';
     print '<input type="hidden" name="type" value="all">';
     print '</form>';
@@ -613,7 +615,7 @@ sub menuStructs {
                        'pages' => ['poetsbyname','poetsbyyear','poetsbypic',
 		                   'poetsbyflittige','poetsbypop']
                        },
-         'worklist' => {menuTitle => _('Værker'),
+         'worklist' => {menuTitle => _('VÃ¦rker'),
                        url => "worksfront.cgi?cn=$country",
 		       icon => 'gfx/frames/menu-vaerker.gif',
                        pages => ['kvaerkertitel','kvaerkeraar','kvaerkerdigter',
@@ -640,10 +642,10 @@ sub menuStructs {
          'poemtitles' =>{menuTitle => _('Digttitler'),
                        url => 'klines.pl?mode=1&forbogstav=A&cn='.$country
                        },
-         'poem1stlines' => {menuTitle => _('Førstelinier'),
+         'poem1stlines' => {menuTitle => _('FÃ¸rstelinier'),
                        url => 'klines.pl?mode=0&forbogstav=A&cn='.$country
                        },
-         'poempopular' => {menuTitle => _('Populære'),
+         'poempopular' => {menuTitle => _('PopulÃ¦re'),
                        url => 'klines.pl?mode=2&cn='.$country
                        },
          'news' =>     {menuTitle => _('Nyheder'),
@@ -662,13 +664,13 @@ sub menuStructs {
          'stats' =>    {menuTitle => _('Statistik'),
                        url => 'kstats.pl'
                        },
-         'latest' =>    {menuTitle => _('Tilføjelser'),
+         'latest' =>    {menuTitle => _('TilfÃ¸jelser'),
                          url => 'latest.cgi'
                        },
          'poetsbyname' => {menuTitle => _('Digtere efter navn'),
                            url => 'poets.cgi?list=az&cn='.$country
                        },
-         'poetsbyyear' => {menuTitle => _('Digtere efter år'),
+         'poetsbyyear' => {menuTitle => _('Digtere efter Ã¥r'),
                            url => 'poets.cgi?list=19&cn='.$country
                        },
          'poetsbypic' => {menuTitle => _('Digtere efter udseende'),
@@ -677,22 +679,22 @@ sub menuStructs {
          'poetsbyflittige' => {menuTitle => _('Flittigste digtere'),
                            url => 'poets.cgi?list=flittige&cn='.$country
                        },
-         'poetsbypop'    => {menuTitle => _('Mest populære digtere'),
+         'poetsbypop'    => {menuTitle => _('Mest populÃ¦re digtere'),
                              url => 'poets.cgi?list=pop&cn='.$country
                        },
-         'kvaerkertitel' => {menuTitle => _('Værker efter titel'),
+         'kvaerkertitel' => {menuTitle => _('VÃ¦rker efter titel'),
                            url => 'kvaerker.pl?mode=titel&cn='.$country
                        },
-         'kvaerkerdigter' => {menuTitle => _('Værker efter digter'),
+         'kvaerkerdigter' => {menuTitle => _('VÃ¦rker efter digter'),
                            url => 'kvaerker.pl?mode=digter&cn='.$country
                        },
-         'kvaerkeraar' => {menuTitle => _('Værker efter år'),
+         'kvaerkeraar' => {menuTitle => _('VÃ¦rker efter Ã¥r'),
                            url => 'kvaerker.pl?mode=aar&cn='.$country
                        },
-         'kvaerkerpop' => {menuTitle => _('Mest populære værker'),
+         'kvaerkerpop' => {menuTitle => _('Mest populÃ¦re vÃ¦rker'),
                            url => 'kvaerker.pl?mode=pop&cn='.$country
                        },
-         'keywordtoc' => {menuTitle => _('Nøgleord'),
+         'keywordtoc' => {menuTitle => _('NÃ¸gleord'),
                            url => 'keywordtoc.cgi?cn='.$country
                        },
          'dict' => {menuTitle => _('Ordbog'),
@@ -705,7 +707,7 @@ sub menuStructs {
          'personsbyname' => {menuTitle => _('Personer efter navn'),
                            url => 'persons.cgi?list=az&cn='.$country
                        },
-         'personsbyyear' => {menuTitle => _('Personer efter år'),
+         'personsbyyear' => {menuTitle => _('Personer efter Ã¥r'),
                            url => 'persons.cgi?list=19&cn='.$country
                        },
          'personsbypic' => {menuTitle => _('Personer efter udseende'),
@@ -750,9 +752,9 @@ sub _navigationMain {
             caption => _('Digtere'),
             icon => 'gfx/icons/poet-w96.png'
         },{
-            title => _('Værker'),
+            title => _('VÃ¦rker'),
             url => "worksfront.cgi?cn=$country",
-            caption => _('Værker'),
+            caption => _('VÃ¦rker'),
             icon => 'gfx/icons/works-w96.png'
         },{
             title => _('Digte'),

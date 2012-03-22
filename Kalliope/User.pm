@@ -24,6 +24,7 @@ package Kalliope::User;
 use strict ('vars');
 use Carp;
 use Kalliope::DB;
+use utf8;
 
 sub new {
     my ($class,%arg) = @_;
