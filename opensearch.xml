@@ -1,7 +1,7 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
    <ShortName>Kalliope</ShortName>
    <Description>Kalliopes digte</Description>
-   <InputEncoding>ISO-8859-1</InputEncoding>
+   <InputEncoding>UTF-8</InputEncoding>
    <Image width="16" height="16" type="image/vnd.microsoft.icon">http://www.kalliope.org/favicon.ico</Image>
    <Url type="text/html" method="get" template="http://www.kalliope.org/ksearch.cgi?sprog=dk&amp;type=free&amp;needle={searchTerms}"></Url>
    <AdultContent>false</AdultContent>

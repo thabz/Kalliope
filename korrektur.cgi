@@ -27,6 +27,7 @@ use Kalliope::Help;
 use Kalliope::Page::Popup;
 use Kalliope;
 use Net::SMTP();
+use utf8;
 
 my $MAILTAINER_EMAIL = 'jesper@kalliope.org';
 
@@ -41,8 +42,8 @@ if (defined param('korrektur')) {
     $mailBody .= 'Remotehost: '.remote_host()."\n";
     $mailBody .= 'Forfatter:  '.$poet->name."\n";
     $mailBody .= 'Fhandle:    '.$poet->fhandle."\n";
-    $mailBody .= 'Værk:       '.$work->title.' '.$work->parenthesizedYear."\n";
-    $mailBody .= 'Værk-id:    '.$work->vid."\n";
+    $mailBody .= 'VÃ¦rk:       '.$work->title.' '.$work->parenthesizedYear."\n";
+    $mailBody .= 'VÃ¦rk-id:    '.$work->vid."\n";
     $mailBody .= 'Digt:       '.$poem->linkTitle."\n";
     $mailBody .= 'Digt-id:    '.$poem->longdid."\n";
     $mailBody .= 'Korrektur:  '.param('korrektur')."\n";
@@ -60,10 +61,10 @@ if (defined param('korrektur')) {
 #my $dbh = Kalliope::DB->connect;
 #    my $sth = $dbh->prepare("INSERT INTO korrektur (date,longdid,korrektur) VALUES (?,?,?)");
 #    $sth->execute(time,$poem->longdid,param('korrektur'));
-    $HTML .= "Tak for din rettelse til »".$poem->linkTitle."«! <BR><BR>En mail er automatisk sendt til $MAILTAINER_EMAIL, som vil kigge på sagen.\n";
+    $HTML .= "Tak for din rettelse til Â»".$poem->linkTitle."Â«! <BR><BR>En mail er automatisk sendt til $MAILTAINER_EMAIL, som vil kigge pÃ¥ sagen.\n";
 } else {
     my $longdid = $poem->longdid;
-    my $fulltitle = $poet->name.': »'.$poem->linkTitle.'«';
+    my $fulltitle = $poet->name.': Â»'.$poem->linkTitle.'Â«';
     $HTML .= "Fandt du en trykfejl i $fulltitle, skriv da rettelsen i feltet herunder, og tryk Send.<BR><BR>";
     $HTML .= '<FORM><TEXTAREA STYLE="width: 100%" CLASS="inputtext" NAME="korrektur" WRAP="virtual" COLS=28 ROWS=6></TEXTAREA><BR><br>';
     $HTML .= qq|<INPUT TYPE="hidden" NAME="longdid" VALUE="$longdid">|;

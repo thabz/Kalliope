@@ -1,5 +1,5 @@
 <h1>Kalliopes XML format</h1>
-<p>Kalliopes digte er alle indtastet i et skræddersyet XML-format. Følgende er en introduktion til dette. Jeg viser et eksempel efterfulgt af forklaring af de forskellige elementer i XMLen.</p>
+<p>Kalliopes digte er alle indtastet i et skrÃ¦ddersyet XML-format. FÃ¸lgende er en introduktion til dette. Jeg viser et eksempel efterfulgt af forklaring af de forskellige elementer i XMLen.</p>
 
 <pre style="background-color: white; padding: 10px; border: 1px solid black">
 &lt;poem id="aarestrup-20041112-1"&gt;
@@ -14,17 +14,17 @@ Hold fast, imens dit Hjerte
    Endnu har Blod og Varme.
 
 Om lidt, saa er vi skilt ad,
-   Som Bærrene paa Hækken;
+   Som BÃ¦rrene paa HÃ¦kken;
 Om lidt, er vi forsvundne,
-   Som Boblerne i Bækken.
+   Som Boblerne i BÃ¦kken.
 &lt;/body&gt;
 &lt;/poem&gt;
 </pre>
 
-<p>Hele digtet er omkrandset af <tt>&lt;poem&gt;</tt> som består af to elementer <tt>&lt;head&gt;</tt> efterfulgt af <tt>&lt;body&gt;</tt>. Førstnævnte er digtets metadata og sidste nævnte er selve teksten i digtet.</p>
-<p>Et digt har desuden er unikt id i Kalliope. Dette angives som attribut til <tt>&lt;poem&gt;</tt>. Et id er typisk på formen digternavn efterfuldt af dato for indtastning efterfulgt af en løbenummer. Hvis du ikke forstår dette, så lad bare være med at tildele digte et id.
+<p>Hele digtet er omkrandset af <tt>&lt;poem&gt;</tt> som bestÃ¥r af to elementer <tt>&lt;head&gt;</tt> efterfulgt af <tt>&lt;body&gt;</tt>. FÃ¸rstnÃ¦vnte er digtets metadata og sidste nÃ¦vnte er selve teksten i digtet.</p>
+<p>Et digt har desuden er unikt id i Kalliope. Dette angives som attribut til <tt>&lt;poem&gt;</tt>. Et id er typisk pÃ¥ formen digternavn efterfuldt af dato for indtastning efterfulgt af en lÃ¸benummer. Hvis du ikke forstÃ¥r dette, sÃ¥ lad bare vÃ¦re med at tildele digte et id.
 </p>
-<p>Et digts metadata er oplysninger om titel, nøgleord, førstelinie, noter, m.m. Ovenstående digt viser kun en lille del af de metadata som Kalliope faktisk understøtter. Ikke alle metadata er påkrævede, faktisk er det eneste krav til en digt metadata at titel og førstelinie er indtastet. Disse to markeres som <tt>&lt;title&gt;</tt> og <tt>&lt;firstline&gt;</tt>.</p>
-<p>Digtets <tt>&lt;body&gt;</tt> indeholder selve teksten. Der er mulighed for at markere at ord skal have en speciel formattering, såsom kursiv og fed. Dette gøres med tags som ligner HTML. Der findes en <a class="green" href="kabout.pl?page=tags"> speciel side</a> om disse formatteringtags.</p>
+<p>Et digts metadata er oplysninger om titel, nÃ¸gleord, fÃ¸rstelinie, noter, m.m. OvenstÃ¥ende digt viser kun en lille del af de metadata som Kalliope faktisk understÃ¸tter. Ikke alle metadata er pÃ¥krÃ¦vede, faktisk er det eneste krav til en digt metadata at titel og fÃ¸rstelinie er indtastet. Disse to markeres som <tt>&lt;title&gt;</tt> og <tt>&lt;firstline&gt;</tt>.</p>
+<p>Digtets <tt>&lt;body&gt;</tt> indeholder selve teksten. Der er mulighed for at markere at ord skal have en speciel formattering, sÃ¥som kursiv og fed. Dette gÃ¸res med tags som ligner HTML. Der findes en <a class="green" href="kabout.pl?page=tags"> speciel side</a> om disse formatteringtags.</p>
 
-<p>Et værk i Kalliope består af een fil som indeholder en masse <tt>&lt;poem&gt;</tt> ... <tt>&lt;/poem&gt;</tt>. En digters udgivelser opdeles således i een fil pr. værk.</p>
+<p>Et vÃ¦rk i Kalliope bestÃ¥r af een fil som indeholder en masse <tt>&lt;poem&gt;</tt> ... <tt>&lt;/poem&gt;</tt>. En digters udgivelser opdeles sÃ¥ledes i een fil pr. vÃ¦rk.</p>

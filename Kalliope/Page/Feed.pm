@@ -21,6 +21,7 @@
 package Kalliope::Page::Feed;
 use Kalliope::Page;
 use Kalliope::Date;
+use utf8;
 
 @ISA = 'Kalliope::Page';
 

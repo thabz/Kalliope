@@ -27,6 +27,7 @@ use Kalliope::Forum;
 use Kalliope::Poem;
 use Kalliope::Date;
 use Kalliope::DB;
+use utf8;
 
 my $time = localtime(time).'';
 my $dbh = Kalliope::DB->connect;
@@ -38,7 +39,7 @@ my @lastVisitors = Kalliope::Server::lastVisitors;
 #
 # Last Visitors
 #
-$visitHTML =  '<FIELDSET><LEGEND>Sidste besøgende</LEGEND>';
+$visitHTML =  '<FIELDSET><LEGEND>Sidste besÃ¸gende</LEGEND>';
 $visitHTML .= "<TABLE>";
 $visitHTML .= "<TR><TD ALIGN=center>Tidspunkt</TD><TD ALIGN=center>Host</TD></TR>\n";
 foreach my $v (@lastVisitors) {
@@ -84,7 +85,7 @@ foreach my $i (0..Kalliope::Forum::getNumberOfForas-1) {
 
 
 #
-# Sidste besøgte digte
+# Sidste besÃ¸gte digte
 #
 
 my $sth = $dbh->prepare("select longdid,lasttime from digthits order by lasttime desc limit 10");
@@ -131,7 +132,7 @@ $weekHTML
 $forumHTML
 </FIELDSET>
 
-<FIELDSET ALIGN=center><LEGEND>Senest læste digte</LEGEND>
+<FIELDSET ALIGN=center><LEGEND>Senest lÃ¦ste digte</LEGEND>
 $poemsHTML
 </FIELDSET>
 

@@ -27,6 +27,7 @@ use Kalliope::Page;
 use Kalliope::Timeline;
 use Kalliope::Timeline::Event;
 use strict;
+use utf8;
 
 my $fhandle = url_param('fhandle');
 my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
@@ -111,9 +112,9 @@ foreach my $w (grep { $_->hasYear } @works) {
 }
 
 push @events , new Kalliope::Timeline::Event({ year => $poet->yearBorn,
-                 description => _("%s født",$poet->name)}) if $poet->yearBorn ne '?';
+                 description => _("%s fÃ¸dt",$poet->name)}) if $poet->yearBorn ne '?';
 push @events , new Kalliope::Timeline::Event({ year => $poet->yearDead,
-                 description => _("%s død", $poet->name)}) if $poet->yearDead;
+                 description => _("%s dÃ¸d", $poet->name)}) if $poet->yearDead;
 
 my @personalEvents = Kalliope::Timeline::getEventsForPerson($poet->fhandle);
 

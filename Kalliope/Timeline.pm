@@ -26,6 +26,7 @@ use Kalliope;
 use Kalliope::Date;
 use Kalliope::DB;
 use Kalliope::Timeline::Event;
+use utf8;
 
 sub getEventsGivenMonthAndDay {
     my ($month,$day) = @_;

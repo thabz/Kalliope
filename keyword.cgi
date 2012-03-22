@@ -28,6 +28,7 @@ use Kalliope::DB;
 use Kalliope::Sort;
 use Kalliope;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -47,27 +48,27 @@ my $limit = url_param('limit') || '';
 
 
 if (!$keywordid) {
-    print STDERR "Ukendt n¯gleord: $keywordord\n";
+    print STDERR "Ukendt n√∏gleord: $keywordord\n";
     my $page = new Kalliope::Page (
-		title => 'N¯gleord',
+		title => 'N√∏gleord',
                 lang => $LA,
                 pagegroup => 'history',
 		icon => 'keywords-blue',
                 page => 'keyword' );
     $page->addBox ( title => 'Fejl...',
                     width => "75%",
-                    content => 'Du er blevet henvist til et ugyldigt n¯gleord. Fejlen vil blive rettet hurtigst muligt!');
+                    content => 'Du er blevet henvist til et ugyldigt n√∏gleord. Fejlen vil blive rettet hurtigst muligt!');
     $page->print;
 } else {
     my $keyword = new Kalliope::Keyword(id => $keywordid);
     my $ord = $keyword->ord;
     my @crumbs;
     push @crumbs,['Baggrund','metafront.cgi'];
-    push @crumbs,['N¯gleord','keywordtoc.cgi'];
+    push @crumbs,['N√∏gleord','keywordtoc.cgi'];
     push @crumbs,[$keyword->title,''];
 
     $page = new Kalliope::Page (
-	        title => 'N¯gleord',
+	        title => 'N√∏gleord',
 		subtitle => $keyword->title,
                 pagegroup => 'history',
                 page => 'keyword',
@@ -95,7 +96,7 @@ if (!$keywordid) {
     if (0) {
 	my $html;
 	map {$html .= $_->clickableTitle($LA)."<br>" } @list;
-	$page->addBox ( title => 'N¯gleord',
+	$page->addBox ( title => 'N√∏gleord',
 		        width => "200",
 		        content => $html,
                         coloumn => 2 )
@@ -109,13 +110,13 @@ if (!$keywordid) {
 		        content => $html,
                         coloumn => 2 )
     }
-    #TODO: MÂske jeg vÊlge 5 tilfÊldige udfra f.eks. top 10.
+    #TODO: M√•ske jeg v√¶lge 5 tilf√¶ldige udfra f.eks. top 10.
     @list = $keyword->linksToPoems(5,$LA);
     if ($#list >= 0) {
 	my $html;
 	map {$html .= $_->clickableTitle($LA)."<br>" } @list;
         $html .= qq|<A HREF="ksearch.cgi?type=keyword&keyword=$ord&sprog=$LA">Flere ...</A><br><br>|;
-	$page->addBox ( title => 'Eksempler pÂ digte',
+	$page->addBox ( title => 'Eksempler p√• digte',
 		        content => $html,
                         coloumn => 0 )
     }
@@ -125,7 +126,7 @@ if (!$keywordid) {
     $html = '';
     if ($sth->rows) {
 	while (my $k = $sth->fetchrow_hashref) {
-	    $html .= Kalliope::Web::insertThumb({thumbfile=>'gfx/hist/_'.$k->{imgfile}.'.jpg',destfile=>'gfx/hist/'.$k->{imgfile}.'.jpg',alt=>'Klik for fuld st¯rrelse'});
+	    $html .= Kalliope::Web::insertThumb({thumbfile=>'gfx/hist/_'.$k->{imgfile}.'.jpg',destfile=>'gfx/hist/'.$k->{imgfile}.'.jpg',alt=>'Klik for fuld st√∏rrelse'});
 	    $html .= '<BR><SMALL>'.$k->{beskrivelse}.' ('.Kalliope::filesize('gfx/hist/'.$k->{imgfile}.'.jpg').')</SMALL><BR><BR>';
 	}
 	$html =~ s/\<BR\>\<BR\>$//;

@@ -23,36 +23,37 @@ package Kalliope::Tree;
 
 use strict "vars"; 
 use Carp;
+use utf8;
 
 
 #
-# Dokumentation, så godt som det nu bliver  ----------------------------
+# Dokumentation, sÃ¥ godt som det nu bliver  ----------------------------
 # 
 # Et Tree er et array af nodes.
-# Hver node består af $parent,@fieldsData
+# Hver node bestÃ¥r af $parent,@fieldsData
 # $parentid == 0 er topnodes.
 # 
-# Nodedata består af @fieldsData.
+# Nodedata bestÃ¥r af @fieldsData.
 #
-# Man kan trække den repræsenterende HTML og nødvendig Javascript ud.
-# Selve træet er en <TABLE>. Første <TD> indeholder trægrafik
+# Man kan trÃ¦kke den reprÃ¦senterende HTML og nÃ¸dvendig Javascript ud.
+# Selve trÃ¦et er en <TABLE>. FÃ¸rste <TD> indeholder trÃ¦grafik
 # og $fieldsData[0]. Resten af <TD>'erne indeholder $fieldsData[1..n]
 #
-# HTMLen som trækkes har $style, fra ;;new(), påklistret alle TD, TR, TABLE
-# tags. Således er udseende af træet fuldstændigt styret udefra.
+# HTMLen som trÃ¦kkes har $style, fra ;;new(), pÃ¥klistret alle TD, TR, TABLE
+# tags. SÃ¥ledes er udseende af trÃ¦et fuldstÃ¦ndigt styret udefra.
 #
-# Arbejdsgangen ved brug er følgende:
+# Arbejdsgangen ved brug er fÃ¸lgende:
 # 1) et kald af new():                         $myTree = Tree:new(...);
 # 2) antal kald af addNode()                   $myTree->addNode(...);
 # 3) et kald af getHTML()                      $myTree->getHTML();
 # 4) et kald af getJavaScript()                $myTree->getJavaScript();
 #
-# Kort sagt, den HTML man har trukket ud, repræsenterer ikke længere træet
-# hvis man senere tilføjer flere nodes.
+# Kort sagt, den HTML man har trukket ud, reprÃ¦senterer ikke lÃ¦ngere trÃ¦et
+# hvis man senere tilfÃ¸jer flere nodes.
 #
 # Man kan ikke fjerne nodes.
 #
-# I eens dokument skal HTMLen placeres før Javascriptet.
+# I eens dokument skal HTMLen placeres fÃ¸r Javascriptet.
 #
 
 # ------------------------------------------------------------------------
@@ -142,7 +143,7 @@ sub getJavaScript {
 	   my $child = $children[0];
 	   $HTML .= qq|TreeChildren[$Id] = new Array (1);\n|;
 	   $HTML .= qq|TreeChildren[$Id][0] = $child;\n|;
-       } elsif ($#children > 0)  {  # flere børn
+       } elsif ($#children > 0)  {  # flere bÃ¸rn
 	   $array = '('.(join ',',@children).')';
 	   $HTML .= qq|TreeChildren[$Id] = new Array $array;\n|;
        }
@@ -227,7 +228,7 @@ EOF
 # ------------------------------------------------------------------------
 #
 # getHTML
-#    OUT: HTML for træet, hvilket består af en <TABLE>***</TABLE>.
+#    OUT: HTML for trÃ¦et, hvilket bestÃ¥r af en <TABLE>***</TABLE>.
 #
 
 sub getHTML {
@@ -266,7 +267,7 @@ sub _getHTML {
 	$HTML .= "</TR>\n";
     }
 
-    # Resten af træet
+    # Resten af trÃ¦et
     $HTML .= $tree->_doNode(0,'',$DOM_HTML);
     $HTML .= '</TABLE>';
     return $HTML;
@@ -282,7 +283,7 @@ sub _doNode {
     my $this_HasChildren = defined $tree->{'children'}[$nodeId] ? 1 : 0;
     my $this_isLastChild = $node->{'thisIsLastChild'};
 
-    # Afgør hvilken grafik der skal bruges
+    # AfgÃ¸r hvilken grafik der skal bruges
     if ($this_isLastChild) {
 	if ($this_HasChildren) {
 	    if ($DOM_HTML) {
@@ -324,7 +325,7 @@ sub _doNode {
 	$HTML .= "</TR>\n";
     }
 
-# Børnene 
+# BÃ¸rnene 
     if (defined $tree->{'children'}[$nodeId]) {
 	foreach my $child (@{$tree->{'children'}[$nodeId]}) {
 	    my $nodeId = $child->{'id'};

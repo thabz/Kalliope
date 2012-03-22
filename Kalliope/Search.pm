@@ -26,7 +26,7 @@ use Kalliope::Search::Free();
 use Kalliope::Search::Keyword();
 use Kalliope::Search::Author();
 use Kalliope::PoemHome;
-
+use utf8;
 use strict;
 
 my %objs = ( keyword => 'Keyword',
@@ -102,14 +102,14 @@ sub scriptName {
 
 sub pageTitle {
     my $self = shift;
-    my $title = "";
+    my $title = _("SÃ¸gning");
     if ($self->type ne 'all') {
         if ($self->type eq 'author') {
-            $title .= _('Søgning i navne');
+            $title .= _('SÃ¸gning i navne');
         } elsif ($self->type eq 'work') {
-            $title .= _('Søgning i værktitler');
+            $title .= _('SÃ¸gning i vÃ¦rktitler');
         } elsif ($self->type eq 'poem') {
-            $title .= _('Søgning i digttitler');
+            $title .= _('SÃ¸gning i digttitler');
         }        
     }
     return $title;
@@ -118,7 +118,7 @@ sub pageTitle {
 sub subPageTitle {
     my $needle = shift->{'needle'};
     if ($needle ne '') {
-        return "efter »$needle«";
+        return "efter Â»$needleÂ«";
     } else {
         return "";
     }
@@ -129,7 +129,7 @@ sub getHTML {
     my $self = shift;
 
     my $hits = $self->count;
-    return 'Søgningen gav intet resultat.' unless $hits;
+    return 'SÃ¸gningen gav intet resultat.' unless $hits;
     my $firstNumShowing = $self->firstNumShowing;
     my $lastNumShowing = $self->lastNumShowing;
     my @matches = $self->result;

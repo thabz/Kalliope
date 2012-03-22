@@ -3,6 +3,7 @@
 use CGI ();
 use URI::Escape();
 use strict;
+use utf8;
 
 my $imgfile = CGI::param('imgfile');
 my $x = CGI::param('x');

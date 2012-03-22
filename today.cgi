@@ -22,6 +22,7 @@
 
 
 use strict;
+use utf8;
 use CGI qw/:standard/;
 use Kalliope;
 use Kalliope::Timeline;
@@ -74,7 +75,7 @@ foreach my $m (@monthNames) {
 }
 $selectHTML .= '</SELECT>';
 
-$selectHTML .= '<INPUT TYPE="submit" VALUE=" '._("Vælg dato").' ">';
+$selectHTML .= '<INPUT TYPE="submit" VALUE=" '._("VÃ¦lg dato").' ">';
 $selectHTML .= '</FORM>';
 
 $page->addBox( width => '75%',

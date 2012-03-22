@@ -2,6 +2,7 @@
 
 use Kalliope::DB;
 use CGI qw /:standard/;
+use utf8;
 
 
 my $dir = param('dir');

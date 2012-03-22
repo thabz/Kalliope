@@ -22,6 +22,7 @@
 package Kalliope::Help;
 use Kalliope;
 use Kalliope::Web;
+use utf8;
 
 sub new {
    my ($class,$helpid) = @_;
@@ -61,7 +62,7 @@ sub linkAsHTML {
     my $self = shift;
     my $onClickJS = $self->onClickJS;
     my $title = $self->title;
-    return qq|<INPUT onClick="$onClickJS" TITLE="Hjælp til $title" CLASS="button" TYPE="submit" VALUE="Hjælp">|;
+    return qq|<INPUT onClick="$onClickJS" TITLE="HjÃ¦lp til $title" CLASS="button" TYPE="submit" VALUE="HjÃ¦lp">|;
 }
 
 sub onClickJS {

@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-#  Viser senest ændrede værker 
+#  Viser senest Ã¦ndrede vÃ¦rker 
 #
 #  Copyright (C) 1999-2001 Jesper Christensen 
 #
@@ -28,16 +28,17 @@ use Kalliope::Page;
 use Kalliope::DB;
 use Kalliope::Date;
 use strict;
+use utf8;
 
 my $DAYS_TO_SHOW = 14;
 
 my @crumbs;
-push @crumbs,['Værker',''];
-push @crumbs,['Ændringer',''];
+push @crumbs,['VÃ¦rker',''];
+push @crumbs,['Ã†ndringer',''];
 
 
 my $page = new Kalliope::Page (
-		title => 'Senest ændrede værker',
+		title => 'Senest Ã¦ndrede vÃ¦rker',
                 pagegroup => 'worklist',
                 page => 'latest',
 	        thumb => 'gfx/icons/works-h70.gif',
@@ -54,7 +55,7 @@ $page->print;
 sub latestWorks {
     my $dbh = Kalliope::DB->connect();
     my $HTML = '<TABLE CLASS="oversigt">';
-    $HTML .= '<TR><TH ALIGN="left">Værk</TH><TH ALIGN="right">Tidspunkt</TH></TR>';
+    $HTML .= '<TR><TH ALIGN="left">VÃ¦rk</TH><TH ALIGN="right">Tidspunkt</TH></TR>';
     my $sth = $dbh->prepare("SELECT vid,cvstimestamp FROM vaerker ORDER BY cvstimestamp DESC LIMIT 50");
     $sth->execute();
     my $count = $sth->rows;

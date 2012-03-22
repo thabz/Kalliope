@@ -25,6 +25,7 @@ use CGI (':standard');
 use Kalliope::Person;
 use Kalliope::Page;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 my $fhandle = url_param('fhandle');

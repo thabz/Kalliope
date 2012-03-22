@@ -22,6 +22,8 @@
 
 package Kalliope::Internationalization;
 
+use utf8;
+binmode STDOUT => ":utf8";
 use CGI ();
 use CGI::Cookie;
 
@@ -134,15 +136,15 @@ sub init {
     $translation_init = 1;
 
 # ./index.cgi
-$translation{'<p><i>Kalliope</i> er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning. Kalliope indeholder også udenlandsk digtning, men primært i et omfang som kan bruges til belysning af den danske samling.</p>'} = "fd081cbeeb66380fd3598d3e7e2b80ab";
-$translation{'da-fd081cbeeb66380fd3598d3e7e2b80ab'} = '<p><i>Kalliope</i> er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning. Kalliope indeholder også udenlandsk digtning, men primært i et omfang som kan bruges til belysning af den danske samling.</p>';
+$translation{'<p><i>Kalliope</i> er en database indeholdende Ã¦ldre dansk lyrik samt biografiske oplysninger om danske digtere. MÃ¥let er intet mindre end at samle hele den Ã¦ldre danske lyrik, men indtil videre indeholder Kalliope et forhÃ¥bentligt reprÃ¦sentativt, og stadigt voksende, udvalg af den danske digtning. Kalliope indeholder ogsÃ¥ udenlandsk digtning, men primÃ¦rt i et omfang som kan bruges til belysning af den danske samling.</p>'} = "fd081cbeeb66380fd3598d3e7e2b80ab";
+$translation{'da-fd081cbeeb66380fd3598d3e7e2b80ab'} = '<p><i>Kalliope</i> er en database indeholdende Ã¦ldre dansk lyrik samt biografiske oplysninger om danske digtere. MÃ¥let er intet mindre end at samle hele den Ã¦ldre danske lyrik, men indtil videre indeholder Kalliope et forhÃ¥bentligt reprÃ¦sentativt, og stadigt voksende, udvalg af den danske digtning. Kalliope indeholder ogsÃ¥ udenlandsk digtning, men primÃ¦rt i et omfang som kan bruges til belysning af den danske samling.</p>';
 $translation{'en-fd081cbeeb66380fd3598d3e7e2b80ab'} = "<i>Kalliope</i> is a database containing old Danish poetry and associated biographical data. The goal is no less than to collect all of the older Danish poetry, but until then, Kalliope will contain a representative and still growing selection. Kalliope also contains poetry in English and other languages, but primarily as reference material to the Danish collection.";
 $translation{'de-fd081cbeeb66380fd3598d3e7e2b80ab'} = "";
 $translation{'fr-fd081cbeeb66380fd3598d3e7e2b80ab'} = "";
 $translation{'it-fd081cbeeb66380fd3598d3e7e2b80ab'} = "";
 # ./Kalliope/Quality.pm
-$translation{'Anden korrekturlæsning'} = "8057e4af70929d15a8510ce0556774b3";
-$translation{'da-8057e4af70929d15a8510ce0556774b3'} = 'Anden korrekturlæsning';
+$translation{'Anden korrekturlÃ¦sning'} = "8057e4af70929d15a8510ce0556774b3";
+$translation{'da-8057e4af70929d15a8510ce0556774b3'} = 'Anden korrekturlÃ¦sning';
 $translation{'en-8057e4af70929d15a8510ce0556774b3'} = "Second proofreading";
 $translation{'de-8057e4af70929d15a8510ce0556774b3'} = "";
 $translation{'fr-8057e4af70929d15a8510ce0556774b3'} = "";
@@ -204,29 +206,29 @@ $translation{'de-f0ecc464c228ab3de1d6d5e2b7337ced'} = "";
 $translation{'fr-f0ecc464c228ab3de1d6d5e2b7337ced'} = "";
 $translation{'it-f0ecc464c228ab3de1d6d5e2b7337ced'} = "";
 # ./poemsfront.cgi
-$translation{'De mest læste digte i Kalliope'} = "dccadf1aea0191390c652061674aeef3";
-$translation{'da-dccadf1aea0191390c652061674aeef3'} = 'De mest læste digte i Kalliope';
+$translation{'De mest lÃ¦ste digte i Kalliope'} = "dccadf1aea0191390c652061674aeef3";
+$translation{'da-dccadf1aea0191390c652061674aeef3'} = 'De mest lÃ¦ste digte i Kalliope';
 $translation{'en-dccadf1aea0191390c652061674aeef3'} = "The most read poems in Kalliope";
 $translation{'de-dccadf1aea0191390c652061674aeef3'} = "";
 $translation{'fr-dccadf1aea0191390c652061674aeef3'} = "";
 $translation{'it-dccadf1aea0191390c652061674aeef3'} = "";
 # ./worksfront.cgi
-$translation{'De mest læste værker i Kalliope'} = "5ff0c0dbf7e8dba6111e3e34e482e76d";
-$translation{'da-5ff0c0dbf7e8dba6111e3e34e482e76d'} = 'De mest læste værker i Kalliope';
+$translation{'De mest lÃ¦ste vÃ¦rker i Kalliope'} = "5ff0c0dbf7e8dba6111e3e34e482e76d";
+$translation{'da-5ff0c0dbf7e8dba6111e3e34e482e76d'} = 'De mest lÃ¦ste vÃ¦rker i Kalliope';
 $translation{'en-5ff0c0dbf7e8dba6111e3e34e482e76d'} = "The most read works in Kalliope";
 $translation{'de-5ff0c0dbf7e8dba6111e3e34e482e76d'} = "";
 $translation{'fr-5ff0c0dbf7e8dba6111e3e34e482e76d'} = "";
 $translation{'it-5ff0c0dbf7e8dba6111e3e34e482e76d'} = "";
 # ./poemsfront.cgi
-$translation{'De senest tilføjede digte i Kalliope'} = "5a235460271c06b7f40c3f76ab400718";
-$translation{'da-5a235460271c06b7f40c3f76ab400718'} = 'De senest tilføjede digte i Kalliope';
+$translation{'De senest tilfÃ¸jede digte i Kalliope'} = "5a235460271c06b7f40c3f76ab400718";
+$translation{'da-5a235460271c06b7f40c3f76ab400718'} = 'De senest tilfÃ¸jede digte i Kalliope';
 $translation{'en-5a235460271c06b7f40c3f76ab400718'} = "Latest added poems in Kalliope";
 $translation{'de-5a235460271c06b7f40c3f76ab400718'} = "";
 $translation{'fr-5a235460271c06b7f40c3f76ab400718'} = "";
 $translation{'it-5a235460271c06b7f40c3f76ab400718'} = "";
 # ./kvaerker.pl,./kvaerker.pl
-$translation{'Denne oversigt indeholder kun værker som har et faktisk udgivelsesår'} = "5f4cadaa2ba0cbd19dcf7619c2705c29";
-$translation{'da-5f4cadaa2ba0cbd19dcf7619c2705c29'} = 'Denne oversigt indeholder kun værker som har et faktisk udgivelsesår';
+$translation{'Denne oversigt indeholder kun vÃ¦rker som har et faktisk udgivelsesÃ¥r'} = "5f4cadaa2ba0cbd19dcf7619c2705c29";
+$translation{'da-5f4cadaa2ba0cbd19dcf7619c2705c29'} = 'Denne oversigt indeholder kun vÃ¦rker som har et faktisk udgivelsesÃ¥r';
 $translation{'en-5f4cadaa2ba0cbd19dcf7619c2705c29'} = "This list only contains works with an actual publishing year";
 $translation{'de-5f4cadaa2ba0cbd19dcf7619c2705c29'} = "";
 $translation{'fr-5f4cadaa2ba0cbd19dcf7619c2705c29'} = "";
@@ -239,8 +241,8 @@ $translation{'de-7f1cab0bb69799279ef0f344e2803d2a'} = "";
 $translation{'fr-7f1cab0bb69799279ef0f344e2803d2a'} = "";
 $translation{'it-7f1cab0bb69799279ef0f344e2803d2a'} = "";
 # ./fvaerker.pl
-$translation{'Der findes endnu ingen af %ss værker i Kalliope'} = "57dc8bbeadbd2b7a15ad7460b1ff8454";
-$translation{'da-57dc8bbeadbd2b7a15ad7460b1ff8454'} = 'Der findes endnu ingen af %ss værker i Kalliope';
+$translation{'Der findes endnu ingen af %ss vÃ¦rker i Kalliope'} = "57dc8bbeadbd2b7a15ad7460b1ff8454";
+$translation{'da-57dc8bbeadbd2b7a15ad7460b1ff8454'} = 'Der findes endnu ingen af %ss vÃ¦rker i Kalliope';
 $translation{'en-57dc8bbeadbd2b7a15ad7460b1ff8454'} = "There are not yet any works by %s in Kalliope";
 $translation{'de-57dc8bbeadbd2b7a15ad7460b1ff8454'} = "";
 $translation{'fr-57dc8bbeadbd2b7a15ad7460b1ff8454'} = "";
@@ -253,8 +255,8 @@ $translation{'de-73e6b9684301f9f46c80db8afb9dea93'} = "";
 $translation{'fr-73e6b9684301f9f46c80db8afb9dea93'} = "";
 $translation{'it-73e6b9684301f9f46c80db8afb9dea93'} = "";
 # ./digt.pl
-$translation{'Dette digt har endnu ingen nøgleord tilknyttet.'} = "c50b4f50c79e0969e4de30a6be4a6d93";
-$translation{'da-c50b4f50c79e0969e4de30a6be4a6d93'} = 'Dette digt har endnu ingen nøgleord tilknyttet.';
+$translation{'Dette digt har endnu ingen nÃ¸gleord tilknyttet.'} = "c50b4f50c79e0969e4de30a6be4a6d93";
+$translation{'da-c50b4f50c79e0969e4de30a6be4a6d93'} = 'Dette digt har endnu ingen nÃ¸gleord tilknyttet.';
 $translation{'en-c50b4f50c79e0969e4de30a6be4a6d93'} = "This poem has no keywords yet.";
 $translation{'de-c50b4f50c79e0969e4de30a6be4a6d93'} = "";
 $translation{'fr-c50b4f50c79e0969e4de30a6be4a6d93'} = "";
@@ -274,8 +276,8 @@ $translation{'de-ce2dcea5bfcec9e27805794eb74c8ead'} = "";
 $translation{'fr-ce2dcea5bfcec9e27805794eb74c8ead'} = "";
 $translation{'it-ce2dcea5bfcec9e27805794eb74c8ead'} = "";
 # ./poemsfront.cgi
-$translation{'Digte efter førstelinier'} = "8a9f8840a8f8eed66845850a71f1601d";
-$translation{'da-8a9f8840a8f8eed66845850a71f1601d'} = 'Digte efter førstelinier';
+$translation{'Digte efter fÃ¸rstelinier'} = "8a9f8840a8f8eed66845850a71f1601d";
+$translation{'da-8a9f8840a8f8eed66845850a71f1601d'} = 'Digte efter fÃ¸rstelinier';
 $translation{'en-8a9f8840a8f8eed66845850a71f1601d'} = "Poems by firstlines";
 $translation{'de-8a9f8840a8f8eed66845850a71f1601d'} = "";
 $translation{'fr-8a9f8840a8f8eed66845850a71f1601d'} = "";
@@ -288,8 +290,8 @@ $translation{'de-fb943732e79c310aa86ae010d78e4ae8'} = "";
 $translation{'fr-fb943732e79c310aa86ae010d78e4ae8'} = "";
 $translation{'it-fb943732e79c310aa86ae010d78e4ae8'} = "";
 # ./poemsfront.cgi
-$translation{'Digte ordnet efter førstelinier'} = "7b133727212ab5e23e908ee686bea431";
-$translation{'da-7b133727212ab5e23e908ee686bea431'} = 'Digte ordnet efter førstelinier';
+$translation{'Digte ordnet efter fÃ¸rstelinier'} = "7b133727212ab5e23e908ee686bea431";
+$translation{'da-7b133727212ab5e23e908ee686bea431'} = 'Digte ordnet efter fÃ¸rstelinier';
 $translation{'en-7b133727212ab5e23e908ee686bea431'} = "Poems ordered by firstlines";
 $translation{'de-7b133727212ab5e23e908ee686bea431'} = "";
 $translation{'fr-7b133727212ab5e23e908ee686bea431'} = "";
@@ -323,8 +325,8 @@ $translation{'de-bc81cfd8a351788310a5dd08a3b31c97'} = "";
 $translation{'fr-bc81cfd8a351788310a5dd08a3b31c97'} = "";
 $translation{'it-bc81cfd8a351788310a5dd08a3b31c97'} = "";
 # ./poets.cgi
-$translation{'Digtere efter fødeår'} = "327b96078a4b38f6b5fa96daf4df8a1a";
-$translation{'da-327b96078a4b38f6b5fa96daf4df8a1a'} = 'Digtere efter fødeår';
+$translation{'Digtere efter fÃ¸deÃ¥r'} = "327b96078a4b38f6b5fa96daf4df8a1a";
+$translation{'da-327b96078a4b38f6b5fa96daf4df8a1a'} = 'Digtere efter fÃ¸deÃ¥r';
 $translation{'en-327b96078a4b38f6b5fa96daf4df8a1a'} = "Poets by year of birth";
 $translation{'de-327b96078a4b38f6b5fa96daf4df8a1a'} = "";
 $translation{'fr-327b96078a4b38f6b5fa96daf4df8a1a'} = "";
@@ -344,29 +346,29 @@ $translation{'de-9e71eab329126d9d785151b6b125798c'} = "";
 $translation{'fr-9e71eab329126d9d785151b6b125798c'} = "";
 $translation{'it-9e71eab329126d9d785151b6b125798c'} = "";
 # ./poetsfront.cgi,./Kalliope/Page.pm
-$translation{'Digtere efter år'} = "b04d0224d905074b195a7a41d4ca3584";
-$translation{'da-b04d0224d905074b195a7a41d4ca3584'} = 'Digtere efter år';
+$translation{'Digtere efter Ã¥r'} = "b04d0224d905074b195a7a41d4ca3584";
+$translation{'da-b04d0224d905074b195a7a41d4ca3584'} = 'Digtere efter Ã¥r';
 $translation{'en-b04d0224d905074b195a7a41d4ca3584'} = "Poets by year";
 $translation{'de-b04d0224d905074b195a7a41d4ca3584'} = "";
 $translation{'fr-b04d0224d905074b195a7a41d4ca3584'} = "";
 $translation{'it-b04d0224d905074b195a7a41d4ca3584'} = "";
 # ./poetsfront.cgi
-$translation{'Digtere ordnet efter hvor rigt repræsenteret de er i Kalliope.'} = "af077964be77dd3936d21f2f4c960330";
-$translation{'da-af077964be77dd3936d21f2f4c960330'} = 'Digtere ordnet efter hvor rigt repræsenteret de er i Kalliope.';
+$translation{'Digtere ordnet efter hvor rigt reprÃ¦senteret de er i Kalliope.'} = "af077964be77dd3936d21f2f4c960330";
+$translation{'da-af077964be77dd3936d21f2f4c960330'} = 'Digtere ordnet efter hvor rigt reprÃ¦senteret de er i Kalliope.';
 $translation{'en-af077964be77dd3936d21f2f4c960330'} = "Poets sorted by the numbers of texts in Kalliope";
 $translation{'de-af077964be77dd3936d21f2f4c960330'} = "";
 $translation{'fr-af077964be77dd3936d21f2f4c960330'} = "";
 $translation{'it-af077964be77dd3936d21f2f4c960330'} = "";
 # ./poetsfront.cgi
-$translation{'Digtere ordnet kronologisk efter fødeår.'} = "bdd90da20d8cb174560c983ca14a1672";
-$translation{'da-bdd90da20d8cb174560c983ca14a1672'} = 'Digtere ordnet kronologisk efter fødeår.';
+$translation{'Digtere ordnet kronologisk efter fÃ¸deÃ¥r.'} = "bdd90da20d8cb174560c983ca14a1672";
+$translation{'da-bdd90da20d8cb174560c983ca14a1672'} = 'Digtere ordnet kronologisk efter fÃ¸deÃ¥r.';
 $translation{'en-bdd90da20d8cb174560c983ca14a1672'} = "Poets sorted by year of birth";
 $translation{'de-bdd90da20d8cb174560c983ca14a1672'} = "";
 $translation{'fr-bdd90da20d8cb174560c983ca14a1672'} = "";
 $translation{'it-bdd90da20d8cb174560c983ca14a1672'} = "";
 # ./ffront.cgi,./Kalliope/Person.pm
-$translation{'Digtere som udgav værker i %ss levetid'} = "dd736dc8f8d60c5471f5f69818571f28";
-$translation{'da-dd736dc8f8d60c5471f5f69818571f28'} = 'Digtere som udgav værker i %ss levetid';
+$translation{'Digtere som udgav vÃ¦rker i %ss levetid'} = "dd736dc8f8d60c5471f5f69818571f28";
+$translation{'da-dd736dc8f8d60c5471f5f69818571f28'} = 'Digtere som udgav vÃ¦rker i %ss levetid';
 $translation{'en-dd736dc8f8d60c5471f5f69818571f28'} = "Contemporary poets of %s";
 $translation{'de-dd736dc8f8d60c5471f5f69818571f28'} = "";
 $translation{'fr-dd736dc8f8d60c5471f5f69818571f28'} = "";
@@ -386,22 +388,22 @@ $translation{'de-ff0a8e5af01436687521b76064680810'} = "";
 $translation{'fr-ff0a8e5af01436687521b76064680810'} = "";
 $translation{'it-ff0a8e5af01436687521b76064680810'} = "";
 # ./ffront.cgi,./Kalliope/Person.pm
-$translation{'En kortfattet introduktion til %ss liv og værk'} = "7fadf21c8182f34debb7b60dbc83a7a0";
-$translation{'da-7fadf21c8182f34debb7b60dbc83a7a0'} = 'En kortfattet introduktion til %ss liv og værk';
+$translation{'En kortfattet introduktion til %ss liv og vÃ¦rk'} = "7fadf21c8182f34debb7b60dbc83a7a0";
+$translation{'da-7fadf21c8182f34debb7b60dbc83a7a0'} = 'En kortfattet introduktion til %ss liv og vÃ¦rk';
 $translation{'en-7fadf21c8182f34debb7b60dbc83a7a0'} = "A short introduction to the life and work of %s";
 $translation{'de-7fadf21c8182f34debb7b60dbc83a7a0'} = "";
 $translation{'fr-7fadf21c8182f34debb7b60dbc83a7a0'} = "";
 $translation{'it-7fadf21c8182f34debb7b60dbc83a7a0'} = "";
 # ./poetsfront.cgi
-$translation{'En oversigt med portrætter af alle digtere.'} = "40d208a354a5c2b01b912250895b53c0";
-$translation{'da-40d208a354a5c2b01b912250895b53c0'} = 'En oversigt med portrætter af alle digtere.';
+$translation{'En oversigt med portrÃ¦tter af alle digtere.'} = "40d208a354a5c2b01b912250895b53c0";
+$translation{'da-40d208a354a5c2b01b912250895b53c0'} = 'En oversigt med portrÃ¦tter af alle digtere.';
 $translation{'en-40d208a354a5c2b01b912250895b53c0'} = "An overview with portraits of all poets";
 $translation{'de-40d208a354a5c2b01b912250895b53c0'} = "";
 $translation{'fr-40d208a354a5c2b01b912250895b53c0'} = "";
 $translation{'it-40d208a354a5c2b01b912250895b53c0'} = "";
 # ./poetsfront.cgi
-$translation{'En oversigt over de mest læste digtere i Kalliope.'} = "60d0bd054902a8c8def0c2d6b329de87";
-$translation{'da-60d0bd054902a8c8def0c2d6b329de87'} = 'En oversigt over de mest læste digtere i Kalliope.';
+$translation{'En oversigt over de mest lÃ¦ste digtere i Kalliope.'} = "60d0bd054902a8c8def0c2d6b329de87";
+$translation{'da-60d0bd054902a8c8def0c2d6b329de87'} = 'En oversigt over de mest lÃ¦ste digtere i Kalliope.';
 $translation{'en-60d0bd054902a8c8def0c2d6b329de87'} = "The most read poets in Kalliope";
 $translation{'de-60d0bd054902a8c8def0c2d6b329de87'} = "";
 $translation{'fr-60d0bd054902a8c8def0c2d6b329de87'} = "";
@@ -421,8 +423,8 @@ $translation{'de-4ec62dbd5751fa1bb6c24e0347ae6774'} = "";
 $translation{'fr-4ec62dbd5751fa1bb6c24e0347ae6774'} = "";
 $translation{'it-4ec62dbd5751fa1bb6c24e0347ae6774'} = "";
 # ./metafront.cgi
-$translation{'Forklaringer til svære eller usædvanlige ord som man støder på i de ældre digte.'} = "5f3ec3cec1db5d61f1d5139a82ae335c";
-$translation{'da-5f3ec3cec1db5d61f1d5139a82ae335c'} = 'Forklaringer til svære eller usædvanlige ord som man støder på i de ældre digte.';
+$translation{'Forklaringer til svÃ¦re eller usÃ¦dvanlige ord som man stÃ¸der pÃ¥ i de Ã¦ldre digte.'} = "5f3ec3cec1db5d61f1d5139a82ae335c";
+$translation{'da-5f3ec3cec1db5d61f1d5139a82ae335c'} = 'Forklaringer til svÃ¦re eller usÃ¦dvanlige ord som man stÃ¸der pÃ¥ i de Ã¦ldre digte.';
 $translation{'en-5f3ec3cec1db5d61f1d5139a82ae335c'} = "";
 $translation{'de-5f3ec3cec1db5d61f1d5139a82ae335c'} = "";
 $translation{'fr-5f3ec3cec1db5d61f1d5139a82ae335c'} = "";
@@ -442,30 +444,30 @@ $translation{'de-b9e98c673130f2666a4db6219d7a45ed'} = "";
 $translation{'fr-b9e98c673130f2666a4db6219d7a45ed'} = "";
 $translation{'it-b9e98c673130f2666a4db6219d7a45ed'} = "";
 # ./Kalliope/Quality.pm
-$translation{'Første korrekturlæsning'} = "40989f71dbf01d784b2b411b10ff1b73";
-$translation{'da-40989f71dbf01d784b2b411b10ff1b73'} = 'Første korrekturlæsning';
+$translation{'FÃ¸rste korrekturlÃ¦sning'} = "40989f71dbf01d784b2b411b10ff1b73";
+$translation{'da-40989f71dbf01d784b2b411b10ff1b73'} = 'FÃ¸rste korrekturlÃ¦sning';
 $translation{'en-40989f71dbf01d784b2b411b10ff1b73'} = "First proofreading";
 $translation{'de-40989f71dbf01d784b2b411b10ff1b73'} = "";
 $translation{'fr-40989f71dbf01d784b2b411b10ff1b73'} = "";
 $translation{'it-40989f71dbf01d784b2b411b10ff1b73'} = "";
 # ./ffront.cgi,./flines.pl,./Kalliope/Page.pm,./Kalliope/Person.pm
-$translation{'Førstelinier'} = "bf149544d46ceb80fcff40e3d3d7dcd5";
-$translation{'da-bf149544d46ceb80fcff40e3d3d7dcd5'} = 'Førstelinier';
+$translation{'FÃ¸rstelinier'} = "bf149544d46ceb80fcff40e3d3d7dcd5";
+$translation{'da-bf149544d46ceb80fcff40e3d3d7dcd5'} = 'FÃ¸rstelinier';
 $translation{'en-bf149544d46ceb80fcff40e3d3d7dcd5'} = 'Firstlines';
 $translation{'de-bf149544d46ceb80fcff40e3d3d7dcd5'} = "";
 $translation{'fr-bf149544d46ceb80fcff40e3d3d7dcd5'} = "";
 $translation{'it-bf149544d46ceb80fcff40e3d3d7dcd5'} = "";
 # ./index.cgi
-$translation{'Gå til digtet...'} = "8b85e28920532d5c70beea23a0894f61";
-$translation{'da-8b85e28920532d5c70beea23a0894f61'} = 'Gå til digtet...';
+$translation{'GÃ¥ til digtet...'} = "8b85e28920532d5c70beea23a0894f61";
+$translation{'da-8b85e28920532d5c70beea23a0894f61'} = 'GÃ¥ til digtet...';
 $translation{'en-8b85e28920532d5c70beea23a0894f61'} = 'Show more...';
 $translation{'de-8b85e28920532d5c70beea23a0894f61'} = "";
 $translation{'fr-8b85e28920532d5c70beea23a0894f61'} = "";
 $translation{'it-8b85e28920532d5c70beea23a0894f61'} = "";
 # ./digt.pl,./digt.pl
-$translation{'Gå til »%s«'} = "b89fb0839442475ca79c9be116cca499";
-$translation{'da-b89fb0839442475ca79c9be116cca499'} = 'Gå til »%s«';
-$translation{'en-b89fb0839442475ca79c9be116cca499'} = 'Go to »%s«';
+$translation{'GÃ¥ til Â»%sÂ«'} = "b89fb0839442475ca79c9be116cca499";
+$translation{'da-b89fb0839442475ca79c9be116cca499'} = 'GÃ¥ til Â»%sÂ«';
+$translation{'en-b89fb0839442475ca79c9be116cca499'} = 'Go to Â»%sÂ«';
 $translation{'de-b89fb0839442475ca79c9be116cca499'} = "";
 $translation{'fr-b89fb0839442475ca79c9be116cca499'} = "";
 $translation{'it-b89fb0839442475ca79c9be116cca499'} = "";
@@ -491,8 +493,8 @@ $translation{'de-e4b53d965ccba68df0466a85c357a7f3'} = "";
 $translation{'fr-e4b53d965ccba68df0466a85c357a7f3'} = "";
 $translation{'it-e4b53d965ccba68df0466a85c357a7f3'} = "";
 # ./ffront.cgi,./Kalliope/Person.pm
-$translation{'Henvisninger til andre steder på internettet som har relevant information om %s'} = "97890d161ef4d663f8d4e71425700ce0";
-$translation{'da-97890d161ef4d663f8d4e71425700ce0'} = 'Henvisninger til andre steder på internettet som har relevant information om %s';
+$translation{'Henvisninger til andre steder pÃ¥ internettet som har relevant information om %s'} = "97890d161ef4d663f8d4e71425700ce0";
+$translation{'da-97890d161ef4d663f8d4e71425700ce0'} = 'Henvisninger til andre steder pÃ¥ internettet som har relevant information om %s';
 $translation{'en-97890d161ef4d663f8d4e71425700ce0'} = 'Links to relevant material on the internet about %s';
 $translation{'de-97890d161ef4d663f8d4e71425700ce0'} = "";
 $translation{'fr-97890d161ef4d663f8d4e71425700ce0'} = "";
@@ -540,8 +542,8 @@ $translation{'de-0951afebb144bc765182b4ad23cd0a2c'} = "";
 $translation{'fr-0951afebb144bc765182b4ad23cd0a2c'} = "";
 $translation{'it-0951afebb144bc765182b4ad23cd0a2c'} = "";
 # ./vaerktoc.pl
-$translation{'Kalliope indeholder endnu ingen tekster fra dette værk.'} = "d0af8985faa1aabeaa70b52f21bf384f";
-$translation{'da-d0af8985faa1aabeaa70b52f21bf384f'} = 'Kalliope indeholder endnu ingen tekster fra dette værk.';
+$translation{'Kalliope indeholder endnu ingen tekster fra dette vÃ¦rk.'} = "d0af8985faa1aabeaa70b52f21bf384f";
+$translation{'da-d0af8985faa1aabeaa70b52f21bf384f'} = 'Kalliope indeholder endnu ingen tekster fra dette vÃ¦rk.';
 $translation{'en-d0af8985faa1aabeaa70b52f21bf384f'} = "Kalliope does not yet contain texts from this work";
 $translation{'de-d0af8985faa1aabeaa70b52f21bf384f'} = "";
 $translation{'fr-d0af8985faa1aabeaa70b52f21bf384f'} = "";
@@ -554,15 +556,15 @@ $translation{'de-c32bdac6063f25a87292cc15ee595e5b'} = "";
 $translation{'fr-c32bdac6063f25a87292cc15ee595e5b'} = "";
 $translation{'it-c32bdac6063f25a87292cc15ee595e5b'} = "";
 # ./fpics.pl
-$translation{'Klik for fuld størrelse'} = "2a45d0e2d101256ba2af628dd1884d83";
-$translation{'da-2a45d0e2d101256ba2af628dd1884d83'} = 'Klik for fuld størrelse';
+$translation{'Klik for fuld stÃ¸rrelse'} = "2a45d0e2d101256ba2af628dd1884d83";
+$translation{'da-2a45d0e2d101256ba2af628dd1884d83'} = 'Klik for fuld stÃ¸rrelse';
 $translation{'en-2a45d0e2d101256ba2af628dd1884d83'} = "Click for full size";
 $translation{'de-2a45d0e2d101256ba2af628dd1884d83'} = "";
 $translation{'fr-2a45d0e2d101256ba2af628dd1884d83'} = "";
 $translation{'it-2a45d0e2d101256ba2af628dd1884d83'} = "";
 # ./flinks.pl
-$translation{'Klik her for at følge linket'} = "6ed928931826dd741c235c768f5fc735";
-$translation{'da-6ed928931826dd741c235c768f5fc735'} = 'Klik her for at følge linket';
+$translation{'Klik her for at fÃ¸lge linket'} = "6ed928931826dd741c235c768f5fc735";
+$translation{'da-6ed928931826dd741c235c768f5fc735'} = 'Klik her for at fÃ¸lge linket';
 $translation{'en-6ed928931826dd741c235c768f5fc735'} = "Click to follow the link";
 $translation{'de-6ed928931826dd741c235c768f5fc735'} = "";
 $translation{'fr-6ed928931826dd741c235c768f5fc735'} = "";
@@ -575,22 +577,22 @@ $translation{'de-bd908db5ccb07777ced8023dffc802f4'} = "";
 $translation{'fr-bd908db5ccb07777ced8023dffc802f4'} = "";
 $translation{'it-bd908db5ccb07777ced8023dffc802f4'} = "";
 # ./metafront.cgi
-$translation{'Litteraturhistoriske skitser og forklaringer af litterære begreber.'} = "4df9a384b30f0f9646c9d97a2626966e";
-$translation{'da-4df9a384b30f0f9646c9d97a2626966e'} = 'Litteraturhistoriske skitser og forklaringer af litterære begreber.';
+$translation{'Litteraturhistoriske skitser og forklaringer af litterÃ¦re begreber.'} = "4df9a384b30f0f9646c9d97a2626966e";
+$translation{'da-4df9a384b30f0f9646c9d97a2626966e'} = 'Litteraturhistoriske skitser og forklaringer af litterÃ¦re begreber.';
 $translation{'en-4df9a384b30f0f9646c9d97a2626966e'} = "";
 $translation{'de-4df9a384b30f0f9646c9d97a2626966e'} = "";
 $translation{'fr-4df9a384b30f0f9646c9d97a2626966e'} = "";
 $translation{'it-4df9a384b30f0f9646c9d97a2626966e'} = "";
 # ./metafront.cgi
-$translation{'Litterært interessante personer som ikke har skrevet lyrik.'} = "28d6c5128bf3242b0449d1fc6c977f27";
-$translation{'da-28d6c5128bf3242b0449d1fc6c977f27'} = 'Litterært interessante personer som ikke har skrevet lyrik.';
+$translation{'LitterÃ¦rt interessante personer som ikke har skrevet lyrik.'} = "28d6c5128bf3242b0449d1fc6c977f27";
+$translation{'da-28d6c5128bf3242b0449d1fc6c977f27'} = 'LitterÃ¦rt interessante personer som ikke har skrevet lyrik.';
 $translation{'en-28d6c5128bf3242b0449d1fc6c977f27'} = "Interesting non-poets";
 $translation{'de-28d6c5128bf3242b0449d1fc6c977f27'} = "";
 $translation{'fr-28d6c5128bf3242b0449d1fc6c977f27'} = "";
 $translation{'it-28d6c5128bf3242b0449d1fc6c977f27'} = "";
 # ./index.cgi
-$translation{'Læs gamle nyheder...'} = "2e7a3352be9b62fbe7e6c2cc7339d8ae";
-$translation{'da-2e7a3352be9b62fbe7e6c2cc7339d8ae'} = 'Læs gamle nyheder...';
+$translation{'LÃ¦s gamle nyheder...'} = "2e7a3352be9b62fbe7e6c2cc7339d8ae";
+$translation{'da-2e7a3352be9b62fbe7e6c2cc7339d8ae'} = 'LÃ¦s gamle nyheder...';
 $translation{'en-2e7a3352be9b62fbe7e6c2cc7339d8ae'} = "Read older news...";
 $translation{'de-2e7a3352be9b62fbe7e6c2cc7339d8ae'} = "";
 $translation{'fr-2e7a3352be9b62fbe7e6c2cc7339d8ae'} = "";
@@ -610,36 +612,36 @@ $translation{'de-2c001f548aed36910c775240c5e6fda2'} = "";
 $translation{'fr-2c001f548aed36910c775240c5e6fda2'} = "";
 $translation{'it-2c001f548aed36910c775240c5e6fda2'} = "";
 # ./flinks.pl
-$translation{'Mere om %s på nettet'} = "691647c270abcab20460e865730c696f";
-$translation{'da-691647c270abcab20460e865730c696f'} = 'Mere om %s på nettet';
+$translation{'Mere om %s pÃ¥ nettet'} = "691647c270abcab20460e865730c696f";
+$translation{'da-691647c270abcab20460e865730c696f'} = 'Mere om %s pÃ¥ nettet';
 $translation{'en-691647c270abcab20460e865730c696f'} = 'More on %s online';
 $translation{'de-691647c270abcab20460e865730c696f'} = "";
 $translation{'fr-691647c270abcab20460e865730c696f'} = "";
 $translation{'it-691647c270abcab20460e865730c696f'} = "";
 # ./klines.pl
-$translation{'Mest populære'} = "8f11be27d70f9bfe3678d4a328f3111b";
-$translation{'da-8f11be27d70f9bfe3678d4a328f3111b'} = 'Mest populære';
+$translation{'Mest populÃ¦re'} = "8f11be27d70f9bfe3678d4a328f3111b";
+$translation{'da-8f11be27d70f9bfe3678d4a328f3111b'} = 'Mest populÃ¦re';
 $translation{'en-8f11be27d70f9bfe3678d4a328f3111b'} = "Most popular";
 $translation{'de-8f11be27d70f9bfe3678d4a328f3111b'} = "";
 $translation{'fr-8f11be27d70f9bfe3678d4a328f3111b'} = "";
 $translation{'it-8f11be27d70f9bfe3678d4a328f3111b'} = "";
 # ./fpop.pl,./poemsfront.cgi
-$translation{'Mest populære digte'} = "486adfd4c9234d90f4e6663fe5e3b0b6";
-$translation{'da-486adfd4c9234d90f4e6663fe5e3b0b6'} = 'Mest populære digte';
+$translation{'Mest populÃ¦re digte'} = "486adfd4c9234d90f4e6663fe5e3b0b6";
+$translation{'da-486adfd4c9234d90f4e6663fe5e3b0b6'} = 'Mest populÃ¦re digte';
 $translation{'en-486adfd4c9234d90f4e6663fe5e3b0b6'} = "Most popular poems";
 $translation{'de-486adfd4c9234d90f4e6663fe5e3b0b6'} = "";
 $translation{'fr-486adfd4c9234d90f4e6663fe5e3b0b6'} = "";
 $translation{'it-486adfd4c9234d90f4e6663fe5e3b0b6'} = "";
 # ./poets.cgi,./poetsfront.cgi,./Kalliope/Page.pm
-$translation{'Mest populære digtere'} = "d947697fdc78629bb5b7772994a4d2be";
-$translation{'da-d947697fdc78629bb5b7772994a4d2be'} = 'Mest populære digtere';
+$translation{'Mest populÃ¦re digtere'} = "d947697fdc78629bb5b7772994a4d2be";
+$translation{'da-d947697fdc78629bb5b7772994a4d2be'} = 'Mest populÃ¦re digtere';
 $translation{'en-d947697fdc78629bb5b7772994a4d2be'} = "Most popular poets";
 $translation{'de-d947697fdc78629bb5b7772994a4d2be'} = "";
 $translation{'fr-d947697fdc78629bb5b7772994a4d2be'} = "";
 $translation{'it-d947697fdc78629bb5b7772994a4d2be'} = "";
 # ./kvaerker.pl,./worksfront.cgi,./Kalliope/Page.pm
-$translation{'Mest populære værker'} = "b38c7820ce8a765ec1ba83b3755e1a8d";
-$translation{'da-b38c7820ce8a765ec1ba83b3755e1a8d'} = 'Mest populære værker';
+$translation{'Mest populÃ¦re vÃ¦rker'} = "b38c7820ce8a765ec1ba83b3755e1a8d";
+$translation{'da-b38c7820ce8a765ec1ba83b3755e1a8d'} = 'Mest populÃ¦re vÃ¦rker';
 $translation{'en-b38c7820ce8a765ec1ba83b3755e1a8d'} = "Most popular works";
 $translation{'de-b38c7820ce8a765ec1ba83b3755e1a8d'} = "";
 $translation{'fr-b38c7820ce8a765ec1ba83b3755e1a8d'} = "";
@@ -680,22 +682,22 @@ $translation{'de-ef09864269d996d836dc8e3ff4a78107'} = "";
 $translation{'fr-ef09864269d996d836dc8e3ff4a78107'} = "";
 $translation{'it-ef09864269d996d836dc8e3ff4a78107'} = "";
 # ./digt.pl
-$translation{'Næste tekst...'} = "156c574a52bb9a7b03e97ceee30fc17e";
-$translation{'da-156c574a52bb9a7b03e97ceee30fc17e'} = 'Næste tekst...';
+$translation{'NÃ¦ste tekst...'} = "156c574a52bb9a7b03e97ceee30fc17e";
+$translation{'da-156c574a52bb9a7b03e97ceee30fc17e'} = 'NÃ¦ste tekst...';
 $translation{'en-156c574a52bb9a7b03e97ceee30fc17e'} = 'Next text...';
 $translation{'de-156c574a52bb9a7b03e97ceee30fc17e'} = "";
 $translation{'fr-156c574a52bb9a7b03e97ceee30fc17e'} = "";
 $translation{'it-156c574a52bb9a7b03e97ceee30fc17e'} = "";
 # ./digt.pl,./digt.pl,./metafront.cgi,./Kalliope/Page.pm
-$translation{'Nøgleord'} = "eeedf991f35b476b4f453f01b18aac23";
-$translation{'da-eeedf991f35b476b4f453f01b18aac23'} = 'Nøgleord';
+$translation{'NÃ¸gleord'} = "eeedf991f35b476b4f453f01b18aac23";
+$translation{'da-eeedf991f35b476b4f453f01b18aac23'} = 'NÃ¸gleord';
 $translation{'en-eeedf991f35b476b4f453f01b18aac23'} = "Keywords";
 $translation{'de-eeedf991f35b476b4f453f01b18aac23'} = "";
 $translation{'fr-eeedf991f35b476b4f453f01b18aac23'} = "";
 $translation{'it-eeedf991f35b476b4f453f01b18aac23'} = "";
 # ./kabout.pl
-$translation{'Ofte stillede spørgsmål'} = "d69c1e1a20c8b42b0c133fef4954554e";
-$translation{'da-d69c1e1a20c8b42b0c133fef4954554e'} = 'Ofte stillede spørgsmål';
+$translation{'Ofte stillede spÃ¸rgsmÃ¥l'} = "d69c1e1a20c8b42b0c133fef4954554e";
+$translation{'da-d69c1e1a20c8b42b0c133fef4954554e'} = 'Ofte stillede spÃ¸rgsmÃ¥l';
 $translation{'en-d69c1e1a20c8b42b0c133fef4954554e'} = "Frequently asked questions";
 $translation{'de-d69c1e1a20c8b42b0c133fef4954554e'} = "";
 $translation{'fr-d69c1e1a20c8b42b0c133fef4954554e'} = "";
@@ -743,8 +745,8 @@ $translation{'de-790e7c31725b08bd887b25fd26e7f583'} = "";
 $translation{'fr-790e7c31725b08bd887b25fd26e7f583'} = "";
 $translation{'it-790e7c31725b08bd887b25fd26e7f583'} = "";
 # ./klines.pl
-$translation{'Ordnet efter førstelinie'} = "ff869bc77e85bfb254c70ee636a3613c";
-$translation{'da-ff869bc77e85bfb254c70ee636a3613c'} = 'Ordnet efter førstelinie';
+$translation{'Ordnet efter fÃ¸rstelinie'} = "ff869bc77e85bfb254c70ee636a3613c";
+$translation{'da-ff869bc77e85bfb254c70ee636a3613c'} = 'Ordnet efter fÃ¸rstelinie';
 $translation{'en-ff869bc77e85bfb254c70ee636a3613c'} = "Ordered by firstline";
 $translation{'de-ff869bc77e85bfb254c70ee636a3613c'} = "";
 $translation{'fr-ff869bc77e85bfb254c70ee636a3613c'} = "";
@@ -764,8 +766,8 @@ $translation{'de-b2586e2d144fb78d1dab42d24a3e8d2e'} = "";
 $translation{'fr-b2586e2d144fb78d1dab42d24a3e8d2e'} = "";
 $translation{'it-b2586e2d144fb78d1dab42d24a3e8d2e'} = "";
 # ./samtidige.cgi
-$translation{'Oversigt over digtere som udgav værker i %ss levetid.'} = "bcf9b35f1da7e5d1968c93fd58739f17";
-$translation{'da-bcf9b35f1da7e5d1968c93fd58739f17'} = 'Oversigt over digtere som udgav værker i %ss levetid.';
+$translation{'Oversigt over digtere som udgav vÃ¦rker i %ss levetid.'} = "bcf9b35f1da7e5d1968c93fd58739f17";
+$translation{'da-bcf9b35f1da7e5d1968c93fd58739f17'} = 'Oversigt over digtere som udgav vÃ¦rker i %ss levetid.';
 $translation{'en-bcf9b35f1da7e5d1968c93fd58739f17'} = 'Overview the contemporay poets that published in the lifetime of %s';
 $translation{'de-bcf9b35f1da7e5d1968c93fd58739f17'} = "";
 $translation{'fr-bcf9b35f1da7e5d1968c93fd58739f17'} = "";
@@ -806,43 +808,43 @@ $translation{'de-7e678df38bcbb51fef5ca2e8ba22ee48'} = "";
 $translation{'fr-7e678df38bcbb51fef5ca2e8ba22ee48'} = "";
 $translation{'it-7e678df38bcbb51fef5ca2e8ba22ee48'} = "";
 # ./Kalliope/Page.pm
-$translation{'Personer efter år'} = "ad8185b723edf1d4a6600df80c18c717";
-$translation{'da-ad8185b723edf1d4a6600df80c18c717'} = 'Personer efter år';
+$translation{'Personer efter Ã¥r'} = "ad8185b723edf1d4a6600df80c18c717";
+$translation{'da-ad8185b723edf1d4a6600df80c18c717'} = 'Personer efter Ã¥r';
 $translation{'en-ad8185b723edf1d4a6600df80c18c717'} = "Persons by year";
 $translation{'de-ad8185b723edf1d4a6600df80c18c717'} = "";
 $translation{'fr-ad8185b723edf1d4a6600df80c18c717'} = "";
 $translation{'it-ad8185b723edf1d4a6600df80c18c717'} = "";
 # ./Kalliope/Page.pm,./Kalliope/Person.pm
-$translation{'Populære'} = "25977e5b77fe71ca35e8647c1532d02b";
-$translation{'da-25977e5b77fe71ca35e8647c1532d02b'} = 'Populære';
+$translation{'PopulÃ¦re'} = "25977e5b77fe71ca35e8647c1532d02b";
+$translation{'da-25977e5b77fe71ca35e8647c1532d02b'} = 'PopulÃ¦re';
 $translation{'en-25977e5b77fe71ca35e8647c1532d02b'} = "Popular";
 $translation{'de-25977e5b77fe71ca35e8647c1532d02b'} = "";
 $translation{'fr-25977e5b77fe71ca35e8647c1532d02b'} = "";
 $translation{'it-25977e5b77fe71ca35e8647c1532d02b'} = "";
 # ./ffront.cgi
-$translation{'Populære digte'} = "e79698500590d188a3a949b649ac957f";
-$translation{'da-e79698500590d188a3a949b649ac957f'} = 'Populære digte';
+$translation{'PopulÃ¦re digte'} = "e79698500590d188a3a949b649ac957f";
+$translation{'da-e79698500590d188a3a949b649ac957f'} = 'PopulÃ¦re digte';
 $translation{'en-e79698500590d188a3a949b649ac957f'} = "Popular poems";
 $translation{'de-e79698500590d188a3a949b649ac957f'} = "";
 $translation{'fr-e79698500590d188a3a949b649ac957f'} = "";
 $translation{'it-e79698500590d188a3a949b649ac957f'} = "";
 # ./ffront.cgi,./Kalliope/Person.pm
-$translation{'Portrætgalleri for %s'} = "fc4b05ca8521e3767844866f2c85e7f1";
-$translation{'da-fc4b05ca8521e3767844866f2c85e7f1'} = 'Portrætgalleri for %s';
+$translation{'PortrÃ¦tgalleri for %s'} = "fc4b05ca8521e3767844866f2c85e7f1";
+$translation{'da-fc4b05ca8521e3767844866f2c85e7f1'} = 'PortrÃ¦tgalleri for %s';
 $translation{'en-fc4b05ca8521e3767844866f2c85e7f1'} = "Portraits of %s";
 $translation{'de-fc4b05ca8521e3767844866f2c85e7f1'} = "";
 $translation{'fr-fc4b05ca8521e3767844866f2c85e7f1'} = "";
 $translation{'it-fc4b05ca8521e3767844866f2c85e7f1'} = "";
 # ./ffront.cgi,./fpics.pl,./fpics.pl,./Kalliope/Person.pm
-$translation{'Portrætter'} = "86104b953e80ba57555c76e47c3c4c90";
-$translation{'da-86104b953e80ba57555c76e47c3c4c90'} = 'Portrætter';
+$translation{'PortrÃ¦tter'} = "86104b953e80ba57555c76e47c3c4c90";
+$translation{'da-86104b953e80ba57555c76e47c3c4c90'} = 'PortrÃ¦tter';
 $translation{'en-86104b953e80ba57555c76e47c3c4c90'} = "Portraits";
 $translation{'de-86104b953e80ba57555c76e47c3c4c90'} = "";
 $translation{'fr-86104b953e80ba57555c76e47c3c4c90'} = "";
 $translation{'it-86104b953e80ba57555c76e47c3c4c90'} = "";
 # ./fsekundaer.pl
-$translation{'Primærlitteratur'} = "3e131d96d4630d0eaa1a998648bf40bf";
-$translation{'da-3e131d96d4630d0eaa1a998648bf40bf'} = 'Primærlitteratur';
+$translation{'PrimÃ¦rlitteratur'} = "3e131d96d4630d0eaa1a998648bf40bf";
+$translation{'da-3e131d96d4630d0eaa1a998648bf40bf'} = 'PrimÃ¦rlitteratur';
 $translation{'en-3e131d96d4630d0eaa1a998648bf40bf'} = "Primary sources";
 $translation{'de-3e131d96d4630d0eaa1a998648bf40bf'} = "";
 $translation{'fr-3e131d96d4630d0eaa1a998648bf40bf'} = "";
@@ -883,8 +885,8 @@ $translation{'de-fd0666d3e36dd803438a757aca0875e3'} = "";
 $translation{'fr-fd0666d3e36dd803438a757aca0875e3'} = "";
 $translation{'it-fd0666d3e36dd803438a757aca0875e3'} = "";
 # ./fsekundaer.pl
-$translation{'Sekundærlitteratur'} = "1c9612052beda375a4a86e63d8dd0920";
-$translation{'da-1c9612052beda375a4a86e63d8dd0920'} = 'Sekundærlitteratur';
+$translation{'SekundÃ¦rlitteratur'} = "1c9612052beda375a4a86e63d8dd0920";
+$translation{'da-1c9612052beda375a4a86e63d8dd0920'} = 'SekundÃ¦rlitteratur';
 $translation{'en-1c9612052beda375a4a86e63d8dd0920'} = 'Bibliography';
 $translation{'de-1c9612052beda375a4a86e63d8dd0920'} = "";
 $translation{'fr-1c9612052beda375a4a86e63d8dd0920'} = "";
@@ -911,8 +913,8 @@ $translation{'de-4192ba5e4edbf93411dcd777f889d078'} = "";
 $translation{'fr-4192ba5e4edbf93411dcd777f889d078'} = "";
 $translation{'it-4192ba5e4edbf93411dcd777f889d078'} = "";
 # ./poemsfront.cgi
-$translation{'Seneste tilføjelser'} = "26beba78e8a48c7ceb464e78076362f4";
-$translation{'da-26beba78e8a48c7ceb464e78076362f4'} = 'Seneste tilføjelser';
+$translation{'Seneste tilfÃ¸jelser'} = "26beba78e8a48c7ceb464e78076362f4";
+$translation{'da-26beba78e8a48c7ceb464e78076362f4'} = 'Seneste tilfÃ¸jelser';
 $translation{'en-26beba78e8a48c7ceb464e78076362f4'} = 'Latest additions';
 $translation{'de-26beba78e8a48c7ceb464e78076362f4'} = "";
 $translation{'fr-26beba78e8a48c7ceb464e78076362f4'} = "";
@@ -925,8 +927,8 @@ $translation{'de-228c8240544cebab96dd0a00f91c2087'} = "";
 $translation{'fr-228c8240544cebab96dd0a00f91c2087'} = "";
 $translation{'it-228c8240544cebab96dd0a00f91c2087'} = "";
 # ./vaerktoc.pl
-$translation{'Sidst ændret:'} = "a22f34722bd0821c43c6263a25729c3f";
-$translation{'da-a22f34722bd0821c43c6263a25729c3f'} = 'Sidst ændret:';
+$translation{'Sidst Ã¦ndret:'} = "a22f34722bd0821c43c6263a25729c3f";
+$translation{'da-a22f34722bd0821c43c6263a25729c3f'} = 'Sidst Ã¦ndret:';
 $translation{'en-a22f34722bd0821c43c6263a25729c3f'} = 'Last modified:';
 $translation{'de-a22f34722bd0821c43c6263a25729c3f'} = "";
 $translation{'fr-a22f34722bd0821c43c6263a25729c3f'} = "";
@@ -939,8 +941,8 @@ $translation{'de-d77de40ce4c768c41660d45cbdf0cb32'} = "";
 $translation{'fr-d77de40ce4c768c41660d45cbdf0cb32'} = "";
 $translation{'it-d77de40ce4c768c41660d45cbdf0cb32'} = "";
 # ./index.cgi
-$translation{'Sonetten på pletten'} = "250f358546f8c7dae496c9a280145049";
-$translation{'da-250f358546f8c7dae496c9a280145049'} = 'Sonetten på pletten';
+$translation{'Sonetten pÃ¥ pletten'} = "250f358546f8c7dae496c9a280145049";
+$translation{'da-250f358546f8c7dae496c9a280145049'} = 'Sonetten pÃ¥ pletten';
 $translation{'en-250f358546f8c7dae496c9a280145049'} = 'Sonnet';
 $translation{'de-250f358546f8c7dae496c9a280145049'} = "";
 $translation{'fr-250f358546f8c7dae496c9a280145049'} = "";
@@ -953,50 +955,50 @@ $translation{'de-9ba4b5882443870a87c03aa9035ba6f2'} = "";
 $translation{'fr-9ba4b5882443870a87c03aa9035ba6f2'} = "";
 $translation{'it-9ba4b5882443870a87c03aa9035ba6f2'} = "";
 # ./Kalliope/Page.pm
-$translation{'Søg i Kalliope'} = "4665871d901b94be9636e422e12b79c3";
-$translation{'da-4665871d901b94be9636e422e12b79c3'} = 'Søg i Kalliope';
+$translation{'SÃ¸g i Kalliope'} = "4665871d901b94be9636e422e12b79c3";
+$translation{'da-4665871d901b94be9636e422e12b79c3'} = 'SÃ¸g i Kalliope';
 $translation{'en-4665871d901b94be9636e422e12b79c3'} = "Search Kalliope";
 $translation{'de-4665871d901b94be9636e422e12b79c3'} = "";
 $translation{'fr-4665871d901b94be9636e422e12b79c3'} = "";
 $translation{'it-4665871d901b94be9636e422e12b79c3'} = "";
 # ./ffront.cgi
-$translation{'Søg i %ss tekster'} = "9f390dbab05339ad08f92e2e59b7e98f";
-$translation{'da-9f390dbab05339ad08f92e2e59b7e98f'} = 'Søg i %ss tekster';
+$translation{'SÃ¸g i %ss tekster'} = "9f390dbab05339ad08f92e2e59b7e98f";
+$translation{'da-9f390dbab05339ad08f92e2e59b7e98f'} = 'SÃ¸g i %ss tekster';
 $translation{'en-9f390dbab05339ad08f92e2e59b7e98f'} = 'Search the texts of %s';
 $translation{'de-9f390dbab05339ad08f92e2e59b7e98f'} = "";
 $translation{'fr-9f390dbab05339ad08f92e2e59b7e98f'} = "";
 $translation{'it-9f390dbab05339ad08f92e2e59b7e98f'} = "";
 # ./Kalliope/Person.pm
-$translation{'Søg i %ss værker'} = "c39f2fc4bf192d95362e0faea29498df";
-$translation{'da-c39f2fc4bf192d95362e0faea29498df'} = 'Søg i %ss værker';
+$translation{'SÃ¸g i %ss vÃ¦rker'} = "c39f2fc4bf192d95362e0faea29498df";
+$translation{'da-c39f2fc4bf192d95362e0faea29498df'} = 'SÃ¸g i %ss vÃ¦rker';
 $translation{'en-c39f2fc4bf192d95362e0faea29498df'} = "Search the works of %s";
 $translation{'de-c39f2fc4bf192d95362e0faea29498df'} = "";
 $translation{'fr-c39f2fc4bf192d95362e0faea29498df'} = "";
 $translation{'it-c39f2fc4bf192d95362e0faea29498df'} = "";
 # ./ffront.cgi,./fsearch.cgi,./Kalliope/Person.pm
-$translation{'Søgning'} = "71848520ad378c70d245fa68815b0eb5";
-$translation{'da-71848520ad378c70d245fa68815b0eb5'} = 'Søgning';
+$translation{'SÃ¸gning'} = "71848520ad378c70d245fa68815b0eb5";
+$translation{'da-71848520ad378c70d245fa68815b0eb5'} = 'SÃ¸gning';
 $translation{'en-71848520ad378c70d245fa68815b0eb5'} = 'Search';
 $translation{'de-71848520ad378c70d245fa68815b0eb5'} = "";
 $translation{'fr-71848520ad378c70d245fa68815b0eb5'} = "";
 $translation{'it-71848520ad378c70d245fa68815b0eb5'} = "";
 # ./Kalliope/Search.pm
-$translation{'Søgning i digttitler'} = "7a591c99ceca8cac7606d2b89555b779";
-$translation{'da-7a591c99ceca8cac7606d2b89555b779'} = 'Søgning i digttitler';
+$translation{'SÃ¸gning i digttitler'} = "7a591c99ceca8cac7606d2b89555b779";
+$translation{'da-7a591c99ceca8cac7606d2b89555b779'} = 'SÃ¸gning i digttitler';
 $translation{'en-7a591c99ceca8cac7606d2b89555b779'} = "Search poemtitles";
 $translation{'de-7a591c99ceca8cac7606d2b89555b779'} = "";
 $translation{'fr-7a591c99ceca8cac7606d2b89555b779'} = "";
 $translation{'it-7a591c99ceca8cac7606d2b89555b779'} = "";
 # ./Kalliope/Search.pm
-$translation{'Søgning i navne'} = "09c98f355679f65a205d7842adda1edb";
-$translation{'da-09c98f355679f65a205d7842adda1edb'} = 'Søgning i navne';
+$translation{'SÃ¸gning i navne'} = "09c98f355679f65a205d7842adda1edb";
+$translation{'da-09c98f355679f65a205d7842adda1edb'} = 'SÃ¸gning i navne';
 $translation{'en-09c98f355679f65a205d7842adda1edb'} = "Search names";
 $translation{'de-09c98f355679f65a205d7842adda1edb'} = "";
 $translation{'fr-09c98f355679f65a205d7842adda1edb'} = "";
 $translation{'it-09c98f355679f65a205d7842adda1edb'} = "";
 # ./Kalliope/Search.pm
-$translation{'Søgning i værktitler'} = "9c37e8d5fa412ac31188a0727c017539";
-$translation{'da-9c37e8d5fa412ac31188a0727c017539'} = 'Søgning i værktitler';
+$translation{'SÃ¸gning i vÃ¦rktitler'} = "9c37e8d5fa412ac31188a0727c017539";
+$translation{'da-9c37e8d5fa412ac31188a0727c017539'} = 'SÃ¸gning i vÃ¦rktitler';
 $translation{'en-9c37e8d5fa412ac31188a0727c017539'} = "Search worktitles";
 $translation{'de-9c37e8d5fa412ac31188a0727c017539'} = "";
 $translation{'fr-9c37e8d5fa412ac31188a0727c017539'} = "";
@@ -1023,29 +1025,29 @@ $translation{'de-086d15c57d28ca8e60794c8c3082f2a2'} = "";
 $translation{'fr-086d15c57d28ca8e60794c8c3082f2a2'} = "";
 $translation{'it-086d15c57d28ca8e60794c8c3082f2a2'} = "";
 # ./digt.pl
-$translation{'Tilføj'} = "0053a122e6bf32f70122ee27c72af448";
-$translation{'da-0053a122e6bf32f70122ee27c72af448'} = 'Tilføj';
+$translation{'TilfÃ¸j'} = "0053a122e6bf32f70122ee27c72af448";
+$translation{'da-0053a122e6bf32f70122ee27c72af448'} = 'TilfÃ¸j';
 $translation{'en-0053a122e6bf32f70122ee27c72af448'} = "Add";
 $translation{'de-0053a122e6bf32f70122ee27c72af448'} = "";
 $translation{'fr-0053a122e6bf32f70122ee27c72af448'} = "";
 $translation{'it-0053a122e6bf32f70122ee27c72af448'} = "";
 # ./digt.pl
-$translation{'Tilføj nøgleord'} = "41492cb1037be414f2dcfef2ebe9bc52";
-$translation{'da-41492cb1037be414f2dcfef2ebe9bc52'} = 'Tilføj nøgleord';
+$translation{'TilfÃ¸j nÃ¸gleord'} = "41492cb1037be414f2dcfef2ebe9bc52";
+$translation{'da-41492cb1037be414f2dcfef2ebe9bc52'} = 'TilfÃ¸j nÃ¸gleord';
 $translation{'en-41492cb1037be414f2dcfef2ebe9bc52'} = "Add keywork";
 $translation{'de-41492cb1037be414f2dcfef2ebe9bc52'} = "";
 $translation{'fr-41492cb1037be414f2dcfef2ebe9bc52'} = "";
 $translation{'it-41492cb1037be414f2dcfef2ebe9bc52'} = "";
 # ./digt.pl
-$translation{'Tilføj/fjern linjenumre'} = "678abe193c64cf9da8151c70e75aca0d";
-$translation{'da-678abe193c64cf9da8151c70e75aca0d'} = 'Tilføj/fjern linjenumre';
+$translation{'TilfÃ¸j/fjern linjenumre'} = "678abe193c64cf9da8151c70e75aca0d";
+$translation{'da-678abe193c64cf9da8151c70e75aca0d'} = 'TilfÃ¸j/fjern linjenumre';
 $translation{'en-678abe193c64cf9da8151c70e75aca0d'} = "Toggle linenumbers";
 $translation{'de-678abe193c64cf9da8151c70e75aca0d'} = "";
 $translation{'fr-678abe193c64cf9da8151c70e75aca0d'} = "";
 $translation{'it-678abe193c64cf9da8151c70e75aca0d'} = "";
 # ./Kalliope/Page.pm
-$translation{'Tilføjelser'} = "29dfea721f2ace0e9f2d69ef43086583";
-$translation{'da-29dfea721f2ace0e9f2d69ef43086583'} = 'Tilføjelser';
+$translation{'TilfÃ¸jelser'} = "29dfea721f2ace0e9f2d69ef43086583";
+$translation{'da-29dfea721f2ace0e9f2d69ef43086583'} = 'TilfÃ¸jelser';
 $translation{'en-29dfea721f2ace0e9f2d69ef43086583'} = "Additions";
 $translation{'de-29dfea721f2ace0e9f2d69ef43086583'} = "";
 $translation{'fr-29dfea721f2ace0e9f2d69ef43086583'} = "";
@@ -1065,8 +1067,8 @@ $translation{'de-20311b52fa2a26baa1ad2e4dfd9c7e10'} = "";
 $translation{'fr-20311b52fa2a26baa1ad2e4dfd9c7e10'} = "";
 $translation{'it-20311b52fa2a26baa1ad2e4dfd9c7e10'} = "";
 # ./ffront.cgi,./Kalliope/Person.pm
-$translation{'Top-10 over mest læste %s digte i Kalliope'} = "5f341a0fc25fa9fff5ac1ac60e16dca5";
-$translation{'da-5f341a0fc25fa9fff5ac1ac60e16dca5'} = 'Top-10 over mest læste %s digte i Kalliope';
+$translation{'Top-10 over mest lÃ¦ste %s digte i Kalliope'} = "5f341a0fc25fa9fff5ac1ac60e16dca5";
+$translation{'da-5f341a0fc25fa9fff5ac1ac60e16dca5'} = 'Top-10 over mest lÃ¦ste %s digte i Kalliope';
 $translation{'en-5f341a0fc25fa9fff5ac1ac60e16dca5'} = 'Top 10 most read %s poems in Kalliope';
 $translation{'de-5f341a0fc25fa9fff5ac1ac60e16dca5'} = "";
 $translation{'fr-5f341a0fc25fa9fff5ac1ac60e16dca5'} = "";
@@ -1079,15 +1081,15 @@ $translation{'de-96b0141273eabab320119c467cdcaf17'} = "";
 $translation{'fr-96b0141273eabab320119c467cdcaf17'} = "";
 $translation{'it-96b0141273eabab320119c467cdcaf17'} = "";
 # ./Kalliope/Quality.pm
-$translation{'Tredje korrekturlæsning'} = "f8ce85a2627340d7a9b5941c796033ca";
-$translation{'da-f8ce85a2627340d7a9b5941c796033ca'} = 'Tredje korrekturlæsning';
+$translation{'Tredje korrekturlÃ¦sning'} = "f8ce85a2627340d7a9b5941c796033ca";
+$translation{'da-f8ce85a2627340d7a9b5941c796033ca'} = 'Tredje korrekturlÃ¦sning';
 $translation{'en-f8ce85a2627340d7a9b5941c796033ca'} = "Third proofreading";
 $translation{'de-f8ce85a2627340d7a9b5941c796033ca'} = "";
 $translation{'fr-f8ce85a2627340d7a9b5941c796033ca'} = "";
 $translation{'it-f8ce85a2627340d7a9b5941c796033ca'} = "";
 # ./Kalliope/Page/Print.pm
-$translation{'Udskrift af <tt>%s</tt> foretaget %s. Denne tekst må frit redistribueres.'} = "5d6404e06126ff596a4e574a804727bc";
-$translation{'da-5d6404e06126ff596a4e574a804727bc'} = 'Udskrift af <tt>%s</tt> foretaget %s. Denne tekst må frit redistribueres.';
+$translation{'Udskrift af <tt>%s</tt> foretaget %s. Denne tekst mÃ¥ frit redistribueres.'} = "5d6404e06126ff596a4e574a804727bc";
+$translation{'da-5d6404e06126ff596a4e574a804727bc'} = 'Udskrift af <tt>%s</tt> foretaget %s. Denne tekst mÃ¥ frit redistribueres.';
 $translation{'en-5d6404e06126ff596a4e574a804727bc'} = "Print of <tt>%s</tt> done %s. This text may be freely redistributed.";
 $translation{'de-5d6404e06126ff596a4e574a804727bc'} = "";
 $translation{'fr-5d6404e06126ff596a4e574a804727bc'} = "";
@@ -1114,8 +1116,8 @@ $translation{'de-543e1bb1120a79a25bfea67d454e680f'} = "";
 $translation{'fr-543e1bb1120a79a25bfea67d454e680f'} = "";
 $translation{'it-543e1bb1120a79a25bfea67d454e680f'} = "";
 # ./Kalliope/Person.pm
-$translation{'Ukendt år'} = "b3f99ad2dea3d4d14ff47bc776ef79af";
-$translation{'da-b3f99ad2dea3d4d14ff47bc776ef79af'} = 'Ukendt år';
+$translation{'Ukendt Ã¥r'} = "b3f99ad2dea3d4d14ff47bc776ef79af";
+$translation{'da-b3f99ad2dea3d4d14ff47bc776ef79af'} = 'Ukendt Ã¥r';
 $translation{'en-b3f99ad2dea3d4d14ff47bc776ef79af'} = 'Unknown year';
 $translation{'de-b3f99ad2dea3d4d14ff47bc776ef79af'} = "";
 $translation{'fr-b3f99ad2dea3d4d14ff47bc776ef79af'} = "";
@@ -1135,22 +1137,22 @@ $translation{'de-4c4b52c68a22e73a85dd4058510db662'} = "";
 $translation{'fr-4c4b52c68a22e73a85dd4058510db662'} = "";
 $translation{'it-4c4b52c68a22e73a85dd4058510db662'} = "";
 # ./digt.pl
-$translation{'Vis denne tekst i et format som pænere når udskrevet'} = "f9633a35bc85326652e826df77eafc81";
-$translation{'da-f9633a35bc85326652e826df77eafc81'} = 'Vis denne tekst i et format som pænere når udskrevet';
+$translation{'Vis denne tekst i et format som pÃ¦nere nÃ¥r udskrevet'} = "f9633a35bc85326652e826df77eafc81";
+$translation{'da-f9633a35bc85326652e826df77eafc81'} = 'Vis denne tekst i et format som pÃ¦nere nÃ¥r udskrevet';
 $translation{'en-f9633a35bc85326652e826df77eafc81'} = "Show this text in a format ready to print";
 $translation{'de-f9633a35bc85326652e826df77eafc81'} = "";
 $translation{'fr-f9633a35bc85326652e826df77eafc81'} = "";
 $translation{'it-f9633a35bc85326652e826df77eafc81'} = "";
 # ./digt.pl
-$translation{'Vis dette digt opsat på en side lige til at printe ud.'} = "ee6fe8f0efc4db5201edba054f8935d6";
-$translation{'da-ee6fe8f0efc4db5201edba054f8935d6'} = 'Vis dette digt opsat på en side lige til at printe ud.';
+$translation{'Vis dette digt opsat pÃ¥ en side lige til at printe ud.'} = "ee6fe8f0efc4db5201edba054f8935d6";
+$translation{'da-ee6fe8f0efc4db5201edba054f8935d6'} = 'Vis dette digt opsat pÃ¥ en side lige til at printe ud.';
 $translation{'en-ee6fe8f0efc4db5201edba054f8935d6'} = "Show this poem in a format ready to print";
 $translation{'de-ee6fe8f0efc4db5201edba054f8935d6'} = "";
 $translation{'fr-ee6fe8f0efc4db5201edba054f8935d6'} = "";
 $translation{'it-ee6fe8f0efc4db5201edba054f8935d6'} = "";
 # ./ffront.cgi,./Kalliope/Person.pm
-$translation{'Vis førstelinier for samtlige digte'} = "638d70eca26b388500c1611b0032a69b";
-$translation{'da-638d70eca26b388500c1611b0032a69b'} = 'Vis førstelinier for samtlige digte';
+$translation{'Vis fÃ¸rstelinier for samtlige digte'} = "638d70eca26b388500c1611b0032a69b";
+$translation{'da-638d70eca26b388500c1611b0032a69b'} = 'Vis fÃ¸rstelinier for samtlige digte';
 $translation{'en-638d70eca26b388500c1611b0032a69b'} = "All poems listed by firstline";
 $translation{'de-638d70eca26b388500c1611b0032a69b'} = "";
 $translation{'fr-638d70eca26b388500c1611b0032a69b'} = "";
@@ -1163,8 +1165,8 @@ $translation{'de-5d4c9dbd7ac9f234178b59b3c6c40aeb'} = "";
 $translation{'fr-5d4c9dbd7ac9f234178b59b3c6c40aeb'} = "";
 $translation{'it-5d4c9dbd7ac9f234178b59b3c6c40aeb'} = "";
 # ./poets.cgi
-$translation{'Vis portrætter af %s'} = "48e990d23b8f391375be7d516974d2c6";
-$translation{'da-48e990d23b8f391375be7d516974d2c6'} = 'Vis portrætter af %s';
+$translation{'Vis portrÃ¦tter af %s'} = "48e990d23b8f391375be7d516974d2c6";
+$translation{'da-48e990d23b8f391375be7d516974d2c6'} = 'Vis portrÃ¦tter af %s';
 $translation{'en-48e990d23b8f391375be7d516974d2c6'} = "Show portraits of %s";
 $translation{'de-48e990d23b8f391375be7d516974d2c6'} = "";
 $translation{'fr-48e990d23b8f391375be7d516974d2c6'} = "";
@@ -1177,92 +1179,92 @@ $translation{'de-00262825dd966ccebc94494727fc80ab'} = "";
 $translation{'fr-00262825dd966ccebc94494727fc80ab'} = "";
 $translation{'it-00262825dd966ccebc94494727fc80ab'} = "";
 # ./ffront.cgi,./Kalliope/Person.pm
-$translation{'Vis titler på alle digte'} = "182aef90e38b049d54acb73d5a0afb33";
-$translation{'da-182aef90e38b049d54acb73d5a0afb33'} = 'Vis titler på alle digte';
+$translation{'Vis titler pÃ¥ alle digte'} = "182aef90e38b049d54acb73d5a0afb33";
+$translation{'da-182aef90e38b049d54acb73d5a0afb33'} = 'Vis titler pÃ¥ alle digte';
 $translation{'en-182aef90e38b049d54acb73d5a0afb33'} = "All poems listed by title";
 $translation{'de-182aef90e38b049d54acb73d5a0afb33'} = "";
 $translation{'fr-182aef90e38b049d54acb73d5a0afb33'} = "";
 $translation{'it-182aef90e38b049d54acb73d5a0afb33'} = "";
 # ./index.cgi
-$translation{'Vælg anden dato...'} = "b377b3fa9ef0ae7f198ce0527cf16512";
-$translation{'da-b377b3fa9ef0ae7f198ce0527cf16512'} = 'Vælg anden dato...';
+$translation{'VÃ¦lg anden dato...'} = "b377b3fa9ef0ae7f198ce0527cf16512";
+$translation{'da-b377b3fa9ef0ae7f198ce0527cf16512'} = 'VÃ¦lg anden dato...';
 $translation{'en-b377b3fa9ef0ae7f198ce0527cf16512'} = 'Choose another date...';
 $translation{'de-b377b3fa9ef0ae7f198ce0527cf16512'} = "";
 $translation{'fr-b377b3fa9ef0ae7f198ce0527cf16512'} = "";
 $translation{'it-b377b3fa9ef0ae7f198ce0527cf16512'} = "";
 # ./klines.pl
-$translation{'Vælg begyndelsesbogstav nedenfor'} = "2d5cef4658ebf82f6bb1d7701ebd9d08";
-$translation{'da-2d5cef4658ebf82f6bb1d7701ebd9d08'} = 'Vælg begyndelsesbogstav nedenfor';
+$translation{'VÃ¦lg begyndelsesbogstav nedenfor'} = "2d5cef4658ebf82f6bb1d7701ebd9d08";
+$translation{'da-2d5cef4658ebf82f6bb1d7701ebd9d08'} = 'VÃ¦lg begyndelsesbogstav nedenfor';
 $translation{'en-2d5cef4658ebf82f6bb1d7701ebd9d08'} = 'Choose first letter below';
 $translation{'de-2d5cef4658ebf82f6bb1d7701ebd9d08'} = "";
 $translation{'fr-2d5cef4658ebf82f6bb1d7701ebd9d08'} = "";
 $translation{'it-2d5cef4658ebf82f6bb1d7701ebd9d08'} = "";
 # ./klines.pl
-$translation{'Vælg begyndelsesbogstav:'} = "b8d5192dfaa7807c3c3bb7ec0ac5cbcd";
-$translation{'da-b8d5192dfaa7807c3c3bb7ec0ac5cbcd'} = 'Vælg begyndelsesbogstav:';
+$translation{'VÃ¦lg begyndelsesbogstav:'} = "b8d5192dfaa7807c3c3bb7ec0ac5cbcd";
+$translation{'da-b8d5192dfaa7807c3c3bb7ec0ac5cbcd'} = 'VÃ¦lg begyndelsesbogstav:';
 $translation{'en-b8d5192dfaa7807c3c3bb7ec0ac5cbcd'} = 'Choose first letter:';
 $translation{'de-b8d5192dfaa7807c3c3bb7ec0ac5cbcd'} = "";
 $translation{'fr-b8d5192dfaa7807c3c3bb7ec0ac5cbcd'} = "";
 $translation{'it-b8d5192dfaa7807c3c3bb7ec0ac5cbcd'} = "";
 # ./ffront.cgi,./fvaerker.pl,./fvaerker.pl,./kvaerker.pl,./kvaerker.pl,./vaerktoc.pl,./worksfront.cgi,./worksfront.cgi,./Kalliope/Page.pm,./Kalliope/Page.pm,./Kalliope/Page.pm,./Kalliope/Person.pm
-$translation{'Værker'} = "9fe9bca93a18c2f510836c03ce202a20";
-$translation{'da-9fe9bca93a18c2f510836c03ce202a20'} = 'Værker';
+$translation{'VÃ¦rker'} = "9fe9bca93a18c2f510836c03ce202a20";
+$translation{'da-9fe9bca93a18c2f510836c03ce202a20'} = 'VÃ¦rker';
 $translation{'en-9fe9bca93a18c2f510836c03ce202a20'} = "Works";
 $translation{'de-9fe9bca93a18c2f510836c03ce202a20'} = "";
 $translation{'fr-9fe9bca93a18c2f510836c03ce202a20'} = "";
 $translation{'it-9fe9bca93a18c2f510836c03ce202a20'} = "";
 # ./kvaerker.pl,./worksfront.cgi,./Kalliope/Page.pm
-$translation{'Værker efter digter'} = "5b3786dc42ed14701136f89e35b50488";
-$translation{'da-5b3786dc42ed14701136f89e35b50488'} = 'Værker efter digter';
+$translation{'VÃ¦rker efter digter'} = "5b3786dc42ed14701136f89e35b50488";
+$translation{'da-5b3786dc42ed14701136f89e35b50488'} = 'VÃ¦rker efter digter';
 $translation{'en-5b3786dc42ed14701136f89e35b50488'} = "Works by poet";
 $translation{'de-5b3786dc42ed14701136f89e35b50488'} = "";
 $translation{'fr-5b3786dc42ed14701136f89e35b50488'} = "";
 $translation{'it-5b3786dc42ed14701136f89e35b50488'} = "";
 # ./kvaerker.pl,./worksfront.cgi,./Kalliope/Page.pm
-$translation{'Værker efter titel'} = "b964dad1cc3be9da648bc80199706ef5";
-$translation{'da-b964dad1cc3be9da648bc80199706ef5'} = 'Værker efter titel';
+$translation{'VÃ¦rker efter titel'} = "b964dad1cc3be9da648bc80199706ef5";
+$translation{'da-b964dad1cc3be9da648bc80199706ef5'} = 'VÃ¦rker efter titel';
 $translation{'en-b964dad1cc3be9da648bc80199706ef5'} = "Works by title";
 $translation{'de-b964dad1cc3be9da648bc80199706ef5'} = "";
 $translation{'fr-b964dad1cc3be9da648bc80199706ef5'} = "";
 $translation{'it-b964dad1cc3be9da648bc80199706ef5'} = "";
 # ./kvaerker.pl,./worksfront.cgi,./Kalliope/Page.pm
-$translation{'Værker efter år'} = "d6abeed19f921e485ed5142458f6dce5";
-$translation{'da-d6abeed19f921e485ed5142458f6dce5'} = 'Værker efter år';
+$translation{'VÃ¦rker efter Ã¥r'} = "d6abeed19f921e485ed5142458f6dce5";
+$translation{'da-d6abeed19f921e485ed5142458f6dce5'} = 'VÃ¦rker efter Ã¥r';
 $translation{'en-d6abeed19f921e485ed5142458f6dce5'} = "Works by year";
 $translation{'de-d6abeed19f921e485ed5142458f6dce5'} = "";
 $translation{'fr-d6abeed19f921e485ed5142458f6dce5'} = "";
 $translation{'it-d6abeed19f921e485ed5142458f6dce5'} = "";
 # ./worksfront.cgi
-$translation{'Værker grupperet efter digter'} = "cdec7d760604e076af1381b60a4c9eda";
-$translation{'da-cdec7d760604e076af1381b60a4c9eda'} = 'Værker grupperet efter digter';
+$translation{'VÃ¦rker grupperet efter digter'} = "cdec7d760604e076af1381b60a4c9eda";
+$translation{'da-cdec7d760604e076af1381b60a4c9eda'} = 'VÃ¦rker grupperet efter digter';
 $translation{'en-cdec7d760604e076af1381b60a4c9eda'} = "Works grouped by poet";
 $translation{'de-cdec7d760604e076af1381b60a4c9eda'} = "";
 $translation{'fr-cdec7d760604e076af1381b60a4c9eda'} = "";
 $translation{'it-cdec7d760604e076af1381b60a4c9eda'} = "";
 # ./worksfront.cgi
-$translation{'Værker ordnet efter titel'} = "86180cf3fb52fcc6897f1296bd58376a";
-$translation{'da-86180cf3fb52fcc6897f1296bd58376a'} = 'Værker ordnet efter titel';
+$translation{'VÃ¦rker ordnet efter titel'} = "86180cf3fb52fcc6897f1296bd58376a";
+$translation{'da-86180cf3fb52fcc6897f1296bd58376a'} = 'VÃ¦rker ordnet efter titel';
 $translation{'en-86180cf3fb52fcc6897f1296bd58376a'} = "Works grouped by title";
 $translation{'de-86180cf3fb52fcc6897f1296bd58376a'} = "";
 $translation{'fr-86180cf3fb52fcc6897f1296bd58376a'} = "";
 $translation{'it-86180cf3fb52fcc6897f1296bd58376a'} = "";
 # ./worksfront.cgi
-$translation{'Værker ordnet efter udgivelsesår'} = "03d00876d96382a5f0c9d1c179ebb373";
-$translation{'da-03d00876d96382a5f0c9d1c179ebb373'} = 'Værker ordnet efter udgivelsesår';
+$translation{'VÃ¦rker ordnet efter udgivelsesÃ¥r'} = "03d00876d96382a5f0c9d1c179ebb373";
+$translation{'da-03d00876d96382a5f0c9d1c179ebb373'} = 'VÃ¦rker ordnet efter udgivelsesÃ¥r';
 $translation{'en-03d00876d96382a5f0c9d1c179ebb373'} = "Works grouped by year of publishing";
 $translation{'de-03d00876d96382a5f0c9d1c179ebb373'} = "";
 $translation{'fr-03d00876d96382a5f0c9d1c179ebb373'} = "";
 $translation{'it-03d00876d96382a5f0c9d1c179ebb373'} = "";
 # ./biografi.cgi
-$translation{'%s død'} = "6ff81942f8e9149c85bb4b35a54ee956";
-$translation{'da-6ff81942f8e9149c85bb4b35a54ee956'} = '%s død';
+$translation{'%s dÃ¸d'} = "6ff81942f8e9149c85bb4b35a54ee956";
+$translation{'da-6ff81942f8e9149c85bb4b35a54ee956'} = '%s dÃ¸d';
 $translation{'en-6ff81942f8e9149c85bb4b35a54ee956'} = '%s dead';
 $translation{'de-6ff81942f8e9149c85bb4b35a54ee956'} = "";
 $translation{'fr-6ff81942f8e9149c85bb4b35a54ee956'} = "";
 $translation{'it-6ff81942f8e9149c85bb4b35a54ee956'} = "";
 # ./biografi.cgi
-$translation{'%s født'} = "ac4b63e5249d65eeabc5ac17bc8fa0f5";
-$translation{'da-ac4b63e5249d65eeabc5ac17bc8fa0f5'} = '%s født';
+$translation{'%s fÃ¸dt'} = "ac4b63e5249d65eeabc5ac17bc8fa0f5";
+$translation{'da-ac4b63e5249d65eeabc5ac17bc8fa0f5'} = '%s fÃ¸dt';
 $translation{'en-ac4b63e5249d65eeabc5ac17bc8fa0f5'} = '%s born';
 $translation{'de-ac4b63e5249d65eeabc5ac17bc8fa0f5'} = "";
 $translation{'fr-ac4b63e5249d65eeabc5ac17bc8fa0f5'} = "";
@@ -1282,8 +1284,8 @@ $translation{'de-3dd7a915749fd08ed919bb88d4276af3'} = "";
 $translation{'fr-3dd7a915749fd08ed919bb88d4276af3'} = "";
 $translation{'it-3dd7a915749fd08ed919bb88d4276af3'} = "";
 # ./ffront.cgi,./Kalliope/Person.pm
-$translation{'%ss samlede poetiske værker'} = "7929fd7c9f070d5903c049a936012cf6";
-$translation{'da-7929fd7c9f070d5903c049a936012cf6'} = '%ss samlede poetiske værker';
+$translation{'%ss samlede poetiske vÃ¦rker'} = "7929fd7c9f070d5903c049a936012cf6";
+$translation{'da-7929fd7c9f070d5903c049a936012cf6'} = '%ss samlede poetiske vÃ¦rker';
 $translation{'en-7929fd7c9f070d5903c049a936012cf6'} = 'The collected poetical work of %s';
 $translation{'de-7929fd7c9f070d5903c049a936012cf6'} = "";
 $translation{'fr-7929fd7c9f070d5903c049a936012cf6'} = "";
@@ -1317,8 +1319,8 @@ $translation{'de-2b7b110bd2ad6e2ad30dcbcffc92adcc'} = "";
 $translation{'fr-2b7b110bd2ad6e2ad30dcbcffc92adcc'} = "";
 $translation{'it-2b7b110bd2ad6e2ad30dcbcffc92adcc'} = "";
 # ./poets.cgi
-$translation{'efter fødeår'} = "55df9468ce9f20dad3ed7d0e7ea428b9";
-$translation{'da-55df9468ce9f20dad3ed7d0e7ea428b9'} = 'efter fødeår';
+$translation{'efter fÃ¸deÃ¥r'} = "55df9468ce9f20dad3ed7d0e7ea428b9";
+$translation{'da-55df9468ce9f20dad3ed7d0e7ea428b9'} = 'efter fÃ¸deÃ¥r';
 $translation{'en-55df9468ce9f20dad3ed7d0e7ea428b9'} = "by year";
 $translation{'de-55df9468ce9f20dad3ed7d0e7ea428b9'} = "";
 $translation{'fr-55df9468ce9f20dad3ed7d0e7ea428b9'} = "";
@@ -1345,8 +1347,8 @@ $translation{'de-3dfaadcd6c9d704ce6fff53b23afdf33'} = "";
 $translation{'fr-3dfaadcd6c9d704ce6fff53b23afdf33'} = "";
 $translation{'it-3dfaadcd6c9d704ce6fff53b23afdf33'} = "";
 # ./kvaerker.pl
-$translation{'efter år'} = "2f4760d60bf545d00a4013123c059635";
-$translation{'da-2f4760d60bf545d00a4013123c059635'} = 'efter år';
+$translation{'efter Ã¥r'} = "2f4760d60bf545d00a4013123c059635";
+$translation{'da-2f4760d60bf545d00a4013123c059635'} = 'efter Ã¥r';
 $translation{'en-2f4760d60bf545d00a4013123c059635'} = "by year";
 $translation{'de-2f4760d60bf545d00a4013123c059635'} = "";
 $translation{'fr-2f4760d60bf545d00a4013123c059635'} = "";
@@ -1373,8 +1375,8 @@ $translation{'de-359468881f9f02c9d386618d6c32ea67'} = "";
 $translation{'fr-359468881f9f02c9d386618d6c32ea67'} = "";
 $translation{'it-359468881f9f02c9d386618d6c32ea67'} = "";
 # ./kvaerker.pl,./poets.cgi
-$translation{'mest populære'} = "e9ba81d072438c1dd03962f8a3813685";
-$translation{'da-e9ba81d072438c1dd03962f8a3813685'} = 'mest populære';
+$translation{'mest populÃ¦re'} = "e9ba81d072438c1dd03962f8a3813685";
+$translation{'da-e9ba81d072438c1dd03962f8a3813685'} = 'mest populÃ¦re';
 $translation{'en-e9ba81d072438c1dd03962f8a3813685'} = "most popular";
 $translation{'de-e9ba81d072438c1dd03962f8a3813685'} = "";
 $translation{'fr-e9ba81d072438c1dd03962f8a3813685'} = "";
@@ -1451,8 +1453,8 @@ $translation{'de-b4b5e3bfd908ce40870caa2169fef1fd'} = "";
 $translation{'fr-b4b5e3bfd908ce40870caa2169fef1fd'} = "";
 $translation{'it-b4b5e3bfd908ce40870caa2169fef1fd'} = "";
 # ./ffront.cgi,./Kalliope/Person.pm
-$translation{'Henvisninger til andre steder på internettet som har relevant information om \%s'} = "17b90ab0cf0d2830255043a9ebc1c19a";
-$translation{'da-17b90ab0cf0d2830255043a9ebc1c19a'} = 'Henvisninger til andre steder på internettet som har relevant information om %s';
+$translation{'Henvisninger til andre steder pÃ¥ internettet som har relevant information om \%s'} = "17b90ab0cf0d2830255043a9ebc1c19a";
+$translation{'da-17b90ab0cf0d2830255043a9ebc1c19a'} = 'Henvisninger til andre steder pÃ¥ internettet som har relevant information om %s';
 $translation{'en-17b90ab0cf0d2830255043a9ebc1c19a'} = "Links to other places on the internet with relevant information on %s";
 $translation{'de-17b90ab0cf0d2830255043a9ebc1c19a'} = "";
 $translation{'fr-17b90ab0cf0d2830255043a9ebc1c19a'} = "";
@@ -1465,8 +1467,8 @@ $translation{'de-6de5b7803168089e7b702353dc563ebb'} = "";
 $translation{'fr-6de5b7803168089e7b702353dc563ebb'} = "";
 $translation{'it-6de5b7803168089e7b702353dc563ebb'} = "";
 # ./Kalliope/Date.pm
-$translation{'I går %s:%s'} = "22621136f4dee3af478e54d95f1919c1";
-$translation{'da-22621136f4dee3af478e54d95f1919c1'} = 'I går %s:%s';
+$translation{'I gÃ¥r %s:%s'} = "22621136f4dee3af478e54d95f1919c1";
+$translation{'da-22621136f4dee3af478e54d95f1919c1'} = 'I gÃ¥r %s:%s';
 $translation{'en-22621136f4dee3af478e54d95f1919c1'} = "Yesterday %s:%s";
 $translation{'de-22621136f4dee3af478e54d95f1919c1'} = "";
 $translation{'fr-22621136f4dee3af478e54d95f1919c1'} = "";
@@ -1486,8 +1488,8 @@ $translation{'de-cae45e26c1b9d2835b3d0bb0254cf8fe'} = "";
 $translation{'fr-cae45e26c1b9d2835b3d0bb0254cf8fe'} = "";
 $translation{'it-cae45e26c1b9d2835b3d0bb0254cf8fe'} = "";
 # ./persons.cgi
-$translation{'Personer efter fødeår'} = "1deff5d4866d347c15a0a4c723ea76ba";
-$translation{'da-1deff5d4866d347c15a0a4c723ea76ba'} = 'Personer efter fødeår';
+$translation{'Personer efter fÃ¸deÃ¥r'} = "1deff5d4866d347c15a0a4c723ea76ba";
+$translation{'da-1deff5d4866d347c15a0a4c723ea76ba'} = 'Personer efter fÃ¸deÃ¥r';
 $translation{'en-1deff5d4866d347c15a0a4c723ea76ba'} = "Persons by year of birth";
 $translation{'de-1deff5d4866d347c15a0a4c723ea76ba'} = "";
 $translation{'fr-1deff5d4866d347c15a0a4c723ea76ba'} = "";
@@ -1507,22 +1509,22 @@ $translation{'de-f1b5fedd09c8b2bbaa6a6465df5b0f39'} = "";
 $translation{'fr-f1b5fedd09c8b2bbaa6a6465df5b0f39'} = "";
 $translation{'it-f1b5fedd09c8b2bbaa6a6465df5b0f39'} = "";
 # ./Kalliope/Date.pm
-$translation{'Søn Man Tir Ons Tors Fre Lør'} = "19f91efe1009b171bbe1c4530de9d502";
-$translation{'da-19f91efe1009b171bbe1c4530de9d502'} = 'Søn Man Tir Ons Tors Fre Lør';
+$translation{'SÃ¸n Man Tir Ons Tors Fre LÃ¸r'} = "19f91efe1009b171bbe1c4530de9d502";
+$translation{'da-19f91efe1009b171bbe1c4530de9d502'} = 'SÃ¸n Man Tir Ons Tors Fre LÃ¸r';
 $translation{'en-19f91efe1009b171bbe1c4530de9d502'} = "Sun Mon Tue Wed Thu Fri Sat";
 $translation{'de-19f91efe1009b171bbe1c4530de9d502'} = "";
 $translation{'fr-19f91efe1009b171bbe1c4530de9d502'} = "";
 $translation{'it-19f91efe1009b171bbe1c4530de9d502'} = "";
 # ./poets.cgi
-$translation{'Ukendt fødeår'} = "3fb695988be53d1711f29175f8e8fd2b";
-$translation{'da-3fb695988be53d1711f29175f8e8fd2b'} = 'Ukendt fødeår';
+$translation{'Ukendt fÃ¸deÃ¥r'} = "3fb695988be53d1711f29175f8e8fd2b";
+$translation{'da-3fb695988be53d1711f29175f8e8fd2b'} = 'Ukendt fÃ¸deÃ¥r';
 $translation{'en-3fb695988be53d1711f29175f8e8fd2b'} = "Unknown year of birth";
 $translation{'de-3fb695988be53d1711f29175f8e8fd2b'} = "";
 $translation{'fr-3fb695988be53d1711f29175f8e8fd2b'} = "";
 $translation{'it-3fb695988be53d1711f29175f8e8fd2b'} = "";
 # ./today.cgi
-$translation{'Vælg dato'} = "a33f6b6e9ba58b25d2c5f7db60526de2";
-$translation{'da-a33f6b6e9ba58b25d2c5f7db60526de2'} = 'Vælg dato';
+$translation{'VÃ¦lg dato'} = "a33f6b6e9ba58b25d2c5f7db60526de2";
+$translation{'da-a33f6b6e9ba58b25d2c5f7db60526de2'} = 'VÃ¦lg dato';
 $translation{'en-a33f6b6e9ba58b25d2c5f7db60526de2'} = "Choose date";
 $translation{'de-a33f6b6e9ba58b25d2c5f7db60526de2'} = "";
 $translation{'fr-a33f6b6e9ba58b25d2c5f7db60526de2'} = "";

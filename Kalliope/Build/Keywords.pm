@@ -88,7 +88,7 @@ sub insertkeywordrelation {
 	if ($keywords{$keyword}) {
 	    $sthkeyword->execute($keywords{$keyword},$otherid,$othertype);
 	} else {
-	    &log("Nøgleordet '$keyword' i $othertype:$ord er ukendt.");
+	    &log("NÃ¸gleordet '$keyword' i $othertype:$ord er ukendt.");
 	}
     }
 }

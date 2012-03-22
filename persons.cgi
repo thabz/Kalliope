@@ -21,6 +21,7 @@
 #  $Id$
 
 use strict;
+use utf8;
 no strict 'refs';
 use CGI ();
 use Kalliope;
@@ -37,9 +38,9 @@ my %pageTypes = ('az' => {'title' => _('Personer efter navn'),
                           'function' => 'listaz',
 			  'crumbtitle' => _('efter navn'),
                           'page' => 'personsbyname'},
-                 '19' => {'title' => _('Personer efter f¯deÂr'),
+                 '19' => {'title' => _('Personer efter f√∏de√•r'),
                           'function' => 'list19',
-			  'crumbtitle' => _('efter f¯deÂr'),
+			  'crumbtitle' => _('efter f√∏de√•r'),
                           'page' => 'personsbyyear'},
                  'pics' => {'title' => _('Personer efter udseende'),
                           'function' => 'listpics',
@@ -92,7 +93,7 @@ sub listaz {
     my $f;
     foreach $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
 	    next unless $f->{'sort'};
-	    $f->{'sort'} =~ s/Aa/≈/g;
+	    $f->{'sort'} =~ s/Aa/√Ö/g;
 	    $new = uc substr($f->{'sort'},0,1);
 	    if ($new ne $last) {
 	        $last=$new;
@@ -150,7 +151,7 @@ sub listpics {
         my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 	    my $fullname = $poet->name;
 	    $HTML .= "<TD align=center valign=bottom>";
-	    $HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/thumb.jpg",url=>"fpics.pl?fhandle=$fhandle",alt=>"Vis portrÊtter af $fullname"});
+	    $HTML .= Kalliope::Web::insertThumb({thumbfile=>"fdirs/$fhandle/thumb.jpg",url=>"fpics.pl?fhandle=$fhandle",alt=>"Vis portr√¶tter af $fullname"});
 	    $HTML .= "<BR>$fullname<BR>";
 	    $HTML .= '<FONT COLOR="#808080">'.$poet->lifespan.'</FONT><BR>';
 	    $HTML .= "</TD>";

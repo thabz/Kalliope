@@ -24,6 +24,7 @@ package Kalliope::PersonHome;
 
 use Kalliope::Person;
 use Kalliope::DB;
+use utf8;
 
 my %cache;
 my $dbh = Kalliope::DB->connect;

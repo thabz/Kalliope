@@ -33,6 +33,7 @@ use Kalliope::WorkHome;
 use Kalliope::Strings;
 use Kalliope::Quality;
 use Kalliope::Poem::Bible;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -218,7 +219,7 @@ sub _contentAsProseHTML {
 	} else {
 	    $line = "$line\n";
 	}
-        # <center> har indbygget <br> så fjern \n
+        # <center> har indbygget <br> sÃ¥ fjern \n
 	if ($line =~ /<center>/) {
             $line =~ s/\n$//;
 	}
@@ -434,12 +435,12 @@ sub fhandle {
 
 sub clickableTitle {
     my ($self) = @_;
-    return $self->author->name.': <A CLASS=green HREF="digt.pl?longdid='.$self->longdid.'">»'.$self->linkTitle.'«</A> - '.$self->work->title.' '.$self->work->parenthesizedYear;
+    return $self->author->name.': <A CLASS=green HREF="digt.pl?longdid='.$self->longdid.'">Â»'.$self->linkTitle.'Â«</A> - '.$self->work->title.' '.$self->work->parenthesizedYear;
 }
 
 sub clickableTitleSimple {
     my ($self) = @_;
-    return '<A CLASS=green HREF="digt.pl?longdid='.$self->longdid.'">»'.$self->linkTitle.'«</A>';
+    return '<A CLASS=green HREF="digt.pl?longdid='.$self->longdid.'">Â»'.$self->linkTitle.'Â«</A>';
 }
 
 sub smallIcon {
@@ -469,7 +470,7 @@ sub getSearchResultEntry {
 
     use locale;
     use POSIX qw(locale_h);
-    setlocale(LC_CTYPE, "da_DK.ISO_8859-1");
+    setlocale(LC_CTYPE, "da_DK.UTF-8");
 
     $escapedNeedle = $escapedNeedle || '';
     my $content = $self->contentForSearch();

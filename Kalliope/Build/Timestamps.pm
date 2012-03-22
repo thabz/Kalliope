@@ -24,6 +24,7 @@ package Kalliope::Build::Timestamps;
     
 use Kalliope::DB;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB::connect();
 my $sthlookup = $dbh->prepare("SELECT timestamp FROM timestamps WHERE filename = ?");

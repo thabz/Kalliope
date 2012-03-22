@@ -25,6 +25,7 @@ use strict;
 use CGI qw/:standard/;
 use Kalliope::Help;
 use Kalliope::Page::Popup;
+use utf8;
 
 my $help = new Kalliope::Help(url_param('helpid'));
 my $page = new Kalliope::Page::Popup ( title => $help->title );

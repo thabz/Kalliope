@@ -13,7 +13,7 @@ my $poetMenuHTML = '';
 $poetMenuHTML .= '<div title="Biografi" class="panel">';
 #$poetMenuHTML .= '<fieldset>';
 #$poetMenuHTML .= '<ul id="poet" title="Digter">';
-#$poetMenuHTML .= '<li><a href="">Værker</a></li>';
+#$poetMenuHTML .= '<li><a href="">VÃ¦rker</a></li>';
 #$poetMenuHTML .= '<li><a href="">Digte</a></li>';
 #$poetMenuHTML .= '<li><a href="">Biografi</a></li>';
 #$poetMenuHTML .= '</ul>';

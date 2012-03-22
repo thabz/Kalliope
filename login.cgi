@@ -24,6 +24,7 @@ use Kalliope::Page ();
 use Kalliope::User ();
 use CGI ();
 use CGI::Cookie;
+use utf8;
 
 my $login = CGI::param('login');
 my $password = CGI::param('password');
@@ -39,7 +40,7 @@ if ($action eq 'logout') {
     if ($user) {
 	my $HTML = "Du er logget ind som ".$user->name();
 	my $page = new Kalliope::Page (
-		title => "Redaktør side",
+		title => "RedaktÃ¸r side",
 		setremoteuser => $user->login(),
 		pagegroup => 'om',
 		crumbs => \@crumbs
@@ -67,7 +68,7 @@ if ($action eq 'logout') {
     my $page = new Kalliope::Page (
 		title => "Kalliope login $login",
                 pagegroup => 'om',
-		subtitle => "Hemmelig side for redaktører",
+		subtitle => "Hemmelig side for redaktÃ¸rer",
 		crumbs => \@crumbs
                 ); 
 

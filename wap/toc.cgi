@@ -19,7 +19,7 @@ my $work = Kalliope::WorkHome::findByVid($vid);
 my @crumbs;
 push @crumbs, ['Digtere','poets.cgi'];
 push @crumbs, [$poet->name,"poet.cgi?fhandle=$fhandle"];
-push @crumbs, ["Værker","works.cgi?fhandle=$fhandle"];
+push @crumbs, ["VÃ¦rker","works.cgi?fhandle=$fhandle"];
 push @crumbs, [$work->titleWithYear,""];
 
 my $page = new Kalliope::Page::WML( 

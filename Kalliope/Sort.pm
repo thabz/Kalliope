@@ -20,27 +20,30 @@ package Kalliope::Sort;
 #
 #  $Id$
 
+use utf8;
+binmode STDOUT => ":utf8";
+
 sub sort { 
     my ($a,$b) = @_;
     my $aa = mylc($a->{'sort'});
-    $aa =~ s/aa/ε/g;
-    $aa =~ tr/ΰαβγδεηθικλμνξοπρςστυφωϊϋόύ/aaaaζόceeeeiiiidnooooψuuuyy/;
+    $aa =~ s/aa/Γ¥/g;
+    $aa =~ tr/Γ Γ΅ΓΆΓ£Γ¤Γ¥Γ§Γ¨Γ©ΓªΓ«Γ¬Γ­Γ®Γ―Γ°Γ±Γ²Γ³Γ΄ΓµΓ¶ΓΉΓΊΓ»ΓΌΓ½/aaaaΓ¦ΓΌceeeeiiiidnooooΓΈuuuyy/;
 
     my $bb = mylc($b->{'sort'});
-    $bb =~ s/aa/ε/g;
-    $bb =~ tr/ΰαβγδεηθικλμνξοπρςστυφωϊϋόύ/aaaaζόceeeeiiiidnooooψuuuyy/;
+    $bb =~ s/aa/Γ¥/g;
+    $bb =~ tr/Γ Γ΅ΓΆΓ£Γ¤Γ¥Γ§Γ¨Γ©ΓªΓ«Γ¬Γ­Γ®Γ―Γ°Γ±Γ²Γ³Γ΄ΓµΓ¶ΓΉΓΊΓ»ΓΌΓ½/aaaaΓ¦ΓΌceeeeiiiidnooooΓΈuuuyy/;
     return $aa cmp $bb;
 }
 
 sub mylc {
     my $str = shift || '';
-    $str =~ tr/A-ZΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡÒΣΤΥΦΨΩΪΫάέή/a-zΰαβγδεζηθικλμνξοπρςστυφψωϊϋόύώ/;
+    $str =~ tr/A-ZΓ€ΓΓ‚ΓƒΓ„Γ…Γ†Γ‡ΓΓ‰ΓΓ‹ΓΓΓΓΓΓ‘Γ’Γ“Γ”Γ•Γ–ΓΓ™ΓΓ›ΓΓΓ/a-zΓ Γ΅ΓΆΓ£Γ¤Γ¥Γ¦Γ§Γ¨Γ©ΓªΓ«Γ¬Γ­Γ®Γ―Γ°Γ±Γ²Γ³Γ΄ΓµΓ¶ΓΈΓΉΓΊΓ»ΓΌΓ½ΓΎ/;
     return $str;
 }
 
 sub myuc {
     my $str = shift;
-    $str =~ tr/a-zΰαβγδεζηθικλμνξοπρςστυφψωϊϋόύώ/A-ZΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡÒΣΤΥΦΨΩΪΫάέή/;
+    $str =~ tr/a-zΓ Γ΅ΓΆΓ£Γ¤Γ¥Γ¦Γ§Γ¨Γ©ΓªΓ«Γ¬Γ­Γ®Γ―Γ°Γ±Γ²Γ³Γ΄ΓµΓ¶ΓΈΓΉΓΊΓ»ΓΌΓ½ΓΎ/A-ZΓ€ΓΓ‚ΓƒΓ„Γ…Γ†Γ‡ΓΓ‰ΓΓ‹ΓΓΓΓΓΓ‘Γ’Γ“Γ”Γ•Γ–ΓΓ™ΓΓ›ΓΓΓ/;
     return $str;
 }
 
@@ -49,11 +52,11 @@ sub sortObject {
     if ($a && $b) {
 	my $aa = $a->sortString;
 	$aa = mylc($aa);
-	$aa =~ s/aa/ε/g;
+	$aa =~ s/aa/Γ¥/g;
 
 	my $bb = $b->sortString;
 	$bb = mylc($bb);
-	$bb =~ s/aa/ε/g;
+	$bb =~ s/aa/Γ¥/g;
 
 	return $aa cmp $bb;
     } else {
@@ -64,8 +67,8 @@ sub sortObject {
 sub fixForSort {
     my $s = shift;
     $s = mylc($s);
-    $s =~ s/aa/ε/g;
-# $s =~ tr/a-zΰαβγδεζηθικλμνξοπρςστυφψωϊϋόύώ/A-ZΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡÒΣΤΥΦΨΩΪΫάέή/;
+    $s =~ s/aa/Γ¥/g;
+# $s =~ tr/a-zΓ Γ΅ΓΆΓ£Γ¤Γ¥Γ¦Γ§Γ¨Γ©ΓªΓ«Γ¬Γ­Γ®Γ―Γ°Γ±Γ²Γ³Γ΄ΓµΓ¶ΓΈΓΉΓΊΓ»ΓΌΓ½ΓΎ/A-ZΓ€ΓΓ‚ΓƒΓ„Γ…Γ†Γ‡ΓΓ‰ΓΓ‹ΓΓΓΓΓΓ‘Γ’Γ“Γ”Γ•Γ–ΓΓ™ΓΓ›ΓΓΓ/;
     print STDERR "$s x";
     return $s;
 }

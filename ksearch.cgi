@@ -20,7 +20,9 @@
 #
 #  $Id$
 
-use CGI ();
+use utf8;
+use CGI qw /:standard/;
+use Encode;
 use Kalliope::Person;
 use Kalliope::Page;
 use Kalliope::Poem;
@@ -32,9 +34,9 @@ use strict;
 my $dbh = Kalliope::DB->connect;
 
 # Spring direkte til digt, hvis needle er et digt-id
-my $needle = CGI::param('needle');
-if (Kalliope::Poem::exist(CGI::param('needle'))) {
-    print "Location: digt.pl?longdid=".CGI::param('needle')."\n\n";
+my $needle = decode utf8 => url_param('needle');
+if (Kalliope::Poem::exist($needle)) {
+    print "Location: digt.pl?longdid=$needle\n\n";
     exit;
 }
 
@@ -45,7 +47,7 @@ my $search = new Kalliope::Search(
     lang => CGI::param('sprog') || '',
     type => CGI::param('type') || '',
     offset => CGI::param('offset') || 0,
-	needle => CGI::param('needle') || '',
+	needle => $needle || '',
 	keyword => CGI::param('keyword') || '');
 
 $search->log;
@@ -76,8 +78,8 @@ my $starttid = time;
 #	content => renderResult($search)
 #);
 
-if (CGI::param('needle') && CGI::param('needle') =~ /^Cæcirie/) {
-    my ($antal) = CGI::param('needle') =~ /^Cæcirie(\d+)/;
+if (CGI::param('needle') && CGI::param('needle') =~ /^CÃ¦cirie/) {
+    my ($antal) = CGI::param('needle') =~ /^CÃ¦cirie(\d+)/;
     $antal = $antal > 0 ? $antal : 10;
     $page->addHTML(&getEasterJS(int $antal));
 }
@@ -89,7 +91,7 @@ sub link {
     my $link = 'ksearch.cgi';
     $link .= "?sprog=".$search->lang;
     $link .= "&type=".$type;
-    $link .= "&needle=".uri_escape($search->needle);
+    $link .= "&needle=".uri_escape_utf8($search->needle);
     $link .= "&offset=".$offset,
     return $link;
 }
@@ -148,10 +150,10 @@ sub renderResult {
                 $HTML .= "<p>".pageLinks($search,$result,'work')."</p>" if $count > 10;
             } elsif ($count > 5) {
                 my $flere = $count - 5;
-                $HTML .= qq|<p><a class="more" href="|.&link($search,'work',0).qq|">Fandt $flere andre værker. Klik her for at se dem alle...</a></p>|;
+                $HTML .= qq|<p><a class="more" href="|.&link($search,'work',0).qq|">Fandt $flere andre vÃ¦rker. Klik her for at se dem alle...</a></p>|;
             }    
             $page->addBox( 
-                title => 'Værker',
+                title => 'VÃ¦rker',
             	content => $HTML
             );
         }

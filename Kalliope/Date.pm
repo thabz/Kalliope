@@ -24,9 +24,10 @@ package Kalliope::Date;
 use POSIX;
 use strict;
 use Kalliope::Internationalization;
+use utf8;
 
 my @months = split /\s+/, _("Jan Feb Mar Apr Maj Jun Jul Aug Sep Okt Nov Dec");
-my @weekdays = split /\s+/, _("Søn Man Tir Ons Tors Fre Lør");
+my @weekdays = split /\s+/, _("SÃ¸n Man Tir Ons Tors Fre LÃ¸r");
 my @monthsLong = split /\s+/, _("Januar Februar Marts April Maj Juni Juli August September Oktober November December");
 my @monthsRFC822 = qw(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec);
 
@@ -52,7 +53,7 @@ sub shortDate {
     if ($yday == $yday2 && $year == $year2) {
 	return _("I dag %s:%s",$hour,$min);
     } elsif ($yday == $yday2-1 && $year == $year2) {
-	return _("I går %s:%s",$hour,$min);
+	return _("I gÃ¥r %s:%s",$hour,$min);
     } elsif (time - $time < 6*24*60*60) {
 	return $weekdays[$wday]." $hour:$min";	
     } elsif ($year == $year2) {

@@ -27,6 +27,7 @@ use Kalliope::DB;
 use Kalliope::Date;
 use XML::Twig;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB::connect();
 my $sth = $dbh->prepare("INSERT INTO timeline (id,year,month,day,description,type,eventtype,url,otherid) VALUES (nextval('seq_timeline_id'),?,?,?,?,?,?,?,?)");
@@ -72,13 +73,13 @@ sub build {
     foreach my $k (keys %persons) {
         my $p = $persons{$k};
 	my ($y,$m,$d) = Kalliope::Date::splitDate($$p{'bornfull'});
-	my $descr = "<A F=$$p{fhandle}>$$p{firstname} $$p{lastname}</A> født";
+	my $descr = "<A F=$$p{fhandle}>$$p{firstname} $$p{lastname}</A> fÃ¸dt";
 	$descr .= ', '.$$p{'bornplace'} if $$p{'bornplace'};
 	$descr .= '.';
 	$sth->execute(int($y),$m,$d,$descr,'event','born','','');
 
 	my ($y,$m,$d) = Kalliope::Date::splitDate($$p{'deadfull'});
-	my $descr = "<A F=$$p{fhandle}>$$p{firstname} $$p{lastname}</A> død";
+	my $descr = "<A F=$$p{fhandle}>$$p{firstname} $$p{lastname}</A> dÃ¸d";
 	$descr .= ', '.$$p{'deadplace'} if $$p{'deadplace'};
 	$descr .= '.';
 	$sth->execute(int($y),$m,$d,$descr,'event','dead','','');

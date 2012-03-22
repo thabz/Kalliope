@@ -7,7 +7,7 @@ use Kalliope::DB;
 use Kalliope::Poem;
 
 #
-# Finder digte på 14 vers, som ikke er markeret som sonnetter.
+# Finder digte pÃ¥ 14 vers, som ikke er markeret som sonnetter.
 #
 
 my @false = qw/ rueckert20011027134 rueckert2001102725 brandes2001061715 lessing2002080159 lessing200208012 rilke2002080113 rilke2002080303 grundtvig20010107324 grundtvig20010107279 claussen2002090104 claussen2001123105  oehlenschlaeger1805a1 oehlenschlaeger1805a4 lawrence2001061761 lawrence2001061106 moellerpmandrea0

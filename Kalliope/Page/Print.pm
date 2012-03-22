@@ -20,7 +20,8 @@
 
 package Kalliope::Page::Print;
 @ISA = 'Kalliope::Page';
-
+use utf8;
+binmode STDOUT => ":utf8";
 use strict;
 
 sub addBox {
@@ -43,14 +44,14 @@ sub print {
     my $requestURI = $ENV{'HTTP_HOST'}.$ENV{'REQUEST_URI'};
 
     #print $self->_printCookies;
-    print "Content-type: text/html; charset=ISO-8859-1\n\n";
+    print "Content-type: text/html; charset=UTF-8\n\n";
     print '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">';
     print <<"EOF";
 <HTML><HEAD><TITLE>$titleForWindow</TITLE>
 <LINK REL="Shortcut Icon" HREF="http://www.kalliope.org/favicon.ico">
 <LINK REL=STYLESHEET TYPE="text/css" HREF="print.css">
 <META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
-<META name="description" content="Stort arkiv for ældre digtning">
+<META name="description" content="Stort arkiv for Ã¦ldre digtning">
 <META name="keywords" content="digte, lyrik, litteratur, litteraturhistorie, digtere, digtarkiv, etext, e-text, elektronisk tekst, kalliope, kalliope.org, www.kalliope.org">
 <SCRIPT TYPE="text/javascript">
 function openTimeContext(year) {
@@ -73,7 +74,7 @@ EOF
 	print $colHTML || '';
     }
 
-my $copy_line = _('Udskrift af <tt>%s</tt> foretaget %s. Denne tekst må frit redistribueres.', $requestURI, $today);
+my $copy_line = _('Udskrift af <tt>%s</tt> foretaget %s. Denne tekst mÃ¥ frit redistribueres.', $requestURI, $today);
 
 print <<"EOF2";
 <hr noshade size="1">

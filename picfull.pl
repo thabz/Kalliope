@@ -3,8 +3,9 @@
 use CGI ();
 use URI::Escape();
 use strict;
+use utf8;
 
-my $imgfile = URI::Escape::uri_escape(CGI::param('imgfile'));
+my $imgfile = URI::Escape::uri_escape_utf8(CGI::param('imgfile'));
 my $x = CGI::param('x');
 my $y = CGI::param('y');
 

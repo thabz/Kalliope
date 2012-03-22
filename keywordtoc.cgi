@@ -25,6 +25,7 @@ use Kalliope::Page ();
 use Kalliope::Web ();
 use Kalliope::DB ();
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -32,9 +33,9 @@ my $LA = url_param('sprog') || 'dk';
 
 my @crumbs;
 push @crumbs,['Baggrund','metafront.cgi'];
-push @crumbs,['Nøgleord',''];
+push @crumbs,['NÃ¸gleord',''];
 my $page = new Kalliope::Page (
-	        title => 'Nøgleord',
+	        title => 'NÃ¸gleord',
 		subtitle => 'Indholdsfortegnelse',
                 pagegroup => 'history',
                 lang => $LA,

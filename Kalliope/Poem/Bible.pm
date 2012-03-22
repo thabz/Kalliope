@@ -21,6 +21,7 @@
 
 package Kalliope::Poem::Bible;
 @ISA = qw/ Kalliope::Poem /;
+use utf8;
 
 use Kalliope::Poem;
 
@@ -37,16 +38,16 @@ my %abbrevations = (
         '2samuel'	 => '2 Sam',
         '1konge'	 => '1 Kong',
         '2konge'	 => '2 Kong',
-        '1kroen'	 => '1 Krøn',
-        '2kroen'	 => '2 Krøn',
+        '1kroen'	 => '1 KrÃ¸n',
+        '2kroen'	 => '2 KrÃ¸n',
         'ezra'		 => 'Ezra',
         'nehemias'	 => 'Neh',
         'ester'		 => 'Est',
         'job'		 => 'Job',
         'salme'		 => 'Sl',
         'ordsprog'	 => 'Ordsp',
-        'praed'		 => 'Præd',
-        'hoej'		 => 'Højs',
+        'praed'		 => 'PrÃ¦d',
+        'hoej'		 => 'HÃ¸js',
         'esajas'	 => 'Es',
         'jeremias'	 => 'Jer',
         'klage'		 => 'Klages',
@@ -90,7 +91,7 @@ my %abbrevations = (
         '2johannes'	 => '2 Joh',
         '3johannes'	 => '3 Joh',
         'judas'		 => 'Jud',
-        'aabenbaringen'	 => 'Åb',
+        'aabenbaringen'	 => 'Ã…b',
 );
 
 sub clickableTitleSimple {

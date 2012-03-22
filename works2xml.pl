@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-#  Konverterer fra den gamle .txt format til værker til det
+#  Konverterer fra den gamle .txt format til vÃ¦rker til det
 #  nye XML format.
 # 
 #  Copyright (C) 1999-2001 Jesper Christensen 
@@ -26,6 +26,8 @@
 use Kalliope::DB;
 use CGI qw(:standard);
 use Kalliope::Poem ();
+use utf8;
+binmode STDOUT => ":utf8";
 
 my $dbh = Kalliope::DB->connect;
 

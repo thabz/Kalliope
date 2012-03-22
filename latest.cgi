@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-#  Viser senest tilføjede digte
+#  Viser senest tilfÃ¸jede digte
 #
 #  Copyright (C) 1999-2001 Jesper Christensen 
 #
@@ -28,22 +28,23 @@ use Kalliope::Page;
 use Kalliope::DB;
 use Kalliope::Date;
 use strict;
+use utf8;
 
 my $DAYS_TO_SHOW = 100;
 
 my @crumbs;
 push @crumbs,['Digte',"poemsfront.cgi?sprog=dk"];
-push @crumbs,['Tilføjelser',''];
+push @crumbs,['TilfÃ¸jelser',''];
 
 
 my $page = new Kalliope::Page (
 	        title => 'Digte',
-		subtitle => 'Seneste tilføjelser',
+		subtitle => 'Seneste tilfÃ¸jelser',
                 pagegroup => 'poemlist',
 		changelangurl => 'poets.cgi?list=az&sprog=XX',
                 page => 'latest',
                 rss_feed_url => 'latest-feed.cgi',
-                rss_feed_title => 'Kalliope - Seneste tilføjelser',
+                rss_feed_title => 'Kalliope - Seneste tilfÃ¸jelser',
 	        icon => 'poem-turkis',
 		crumbs => \@crumbs
            );
@@ -53,7 +54,7 @@ $page->addBox ( title => "",
                 coloumn => 0,
                 content => &latestPoems($DAYS_TO_SHOW));
 
-$page->addBox ( title => "Nørderi",
+$page->addBox ( title => "NÃ¸rderi",
                 width => '90%',
 		align => 'center',
                 coloumn => 0,
@@ -86,7 +87,7 @@ sub latestPoems {
          $blocks[$j]->{'head'} = "<DIV CLASS=listeoverskrifter>$dateForDisplay</DIV><BR>";
     }
     $HTML = Kalliope::Web::doubleColumn(\@blocks);
-    $HTML .= "<HR><SMALL><I>Der er i alt tilføjet $count digte indenfor de sidste $DAYS_TO_SHOW dage.</I></SMALL>";
+    $HTML .= "<HR><SMALL><I>Der er i alt tilfÃ¸jet $count digte indenfor de sidste $DAYS_TO_SHOW dage.</I></SMALL>";
 }
 
 1;

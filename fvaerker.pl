@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-#  En digters samlede værker.
+#  En digters samlede vÃ¦rker.
 #
 #  Copyright (C) 1999-2001 Jesper Christensen 
 #
@@ -27,6 +27,7 @@ use Kalliope;
 use Kalliope::Person;
 use Kalliope::Page;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 my $fhandle = url_param('fhandle');
@@ -46,11 +47,11 @@ my $poet = Kalliope::PersonHome::findByFhandle($fhandle);
 my $mode = url_param('mode') || 'poetical';
 
 my @crumbs = $poet->getCrumbs();
-push @crumbs,[_('Værker'),''];
+push @crumbs,[_('VÃ¦rker'),''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet, 
                     crumbs => \@crumbs, 
-		    subtitle => _('Værker'),
+		    subtitle => _('VÃ¦rker'),
 		    page => $mode eq 'prosa' ? 'prosa' : 'vaerker' );
 my $HTML;
 
@@ -78,7 +79,7 @@ if ($#works >= 0) {
     $page->addFrontMenu(@menuItems);
 } else {
     my $name = $poet->name;
-    my $HTML = '<IMG SRC="gfx/excl.gif">'._("Der findes endnu ingen af %ss værker i Kalliope",${name});
+    my $HTML = '<IMG SRC="gfx/excl.gif">'._("Der findes endnu ingen af %ss vÃ¦rker i Kalliope",${name});
     $page->addBox(coloumn => 0,
                   content => $HTML);
 }

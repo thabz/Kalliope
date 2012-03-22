@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 
-# Dette program konverter fra det gamle værkformat til det nye
-# XML-baserede. Det trækker sine data fra databasen i sin nuværende
+# Dette program konverter fra det gamle vÃ¦rkformat til det nye
+# XML-baserede. Det trÃ¦kker sine data fra databasen i sin nuvÃ¦rende
 # form.
 #
 # $Id$

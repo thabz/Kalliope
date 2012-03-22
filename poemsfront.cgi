@@ -21,6 +21,7 @@
 #  $Id$
 
 use strict;
+use utf8;
 use Kalliope;
 use Kalliope::Page ();
 use Kalliope::Web ();
@@ -56,21 +57,21 @@ sub front {
         icon => 'gfx/icons/poem-w96.png'
                     },{
         url => "klines.pl?mode=0&forbogstav=A&cn=$country", 
-	title => _('Digte efter førstelinier'), 
+	title => _('Digte efter fÃ¸rstelinier'), 
 	status => 1,
-        desc => _("Digte ordnet efter førstelinier"),
+        desc => _("Digte ordnet efter fÃ¸rstelinier"),
         icon => 'gfx/icons/poem-w96.png'
                     },{
         url => "klines.pl?mode=2&cn=$country", 
-	title => _('Mest populære digte'), 
+	title => _('Mest populÃ¦re digte'), 
 	status => 1,
-        desc => _("De mest læste digte i Kalliope"),
+        desc => _("De mest lÃ¦ste digte i Kalliope"),
         icon => 'gfx/icons/pop-w96.png'
                     },{
         url => "latest.cgi", 
-	title => _('Seneste tilføjelser'), 
+	title => _('Seneste tilfÃ¸jelser'), 
 	status => 1,
-        desc => _("De senest tilføjede digte i Kalliope"),
+        desc => _("De senest tilfÃ¸jede digte i Kalliope"),
         icon => 'gfx/icons/poem-w96.png'
 		    } );
 

@@ -28,6 +28,7 @@ use Kalliope::Work ();
 use Kalliope::Page ();
 use Kalliope::Sort ();
 use Kalliope ();
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -59,9 +60,9 @@ sub hasPics {
     return shift->{'pics'} || '' ne '';
 }
 
-# Digterens portrætter.
+# Digterens portrÃ¦tter.
 # Returnerer et array med hashrefs.
-# Hver hash har keys thumbfile, file og måske text.
+# Hver hash har keys thumbfile, file og mÃ¥ske text.
 sub pics {
     my $i = 1;
     my @result;
@@ -127,11 +128,11 @@ sub lifespan {
    return '' if ($self->isUnknownPoet);
    my $born = $self->yearBorn;
    my $dead = $self->yearDead;
-   $dead = _('Ukendt år') if $dead eq '?';
+   $dead = _('Ukendt Ã¥r') if $dead eq '?';
    if (substr($born,0,2) eq substr($dead,0,2)) {
        $dead = substr($dead,2);
    }
-   $born = _('Ukendt år') if $born eq '?';
+   $born = _('Ukendt Ã¥r') if $born eq '?';
    return "("._('Ukendt levetid').")" if $born eq $dead;
    return "($born-$dead)";
 }
@@ -279,40 +280,40 @@ sub menu {
     my $poetName = $self->name;
     my %menuStruct = (
        vaerker => { url => 'fvaerker.pl?', 
-                    title => _('Værker'), 
-                    desc => _("%ss samlede poetiske værker", $poetName),
+                    title => _('VÃ¦rker'), 
+                    desc => _("%ss samlede poetiske vÃ¦rker", $poetName),
                     status => $self->hasWorks },
        titlelines => { url => 'flines.pl?mode=1&amp;', 
                     title => _('Digttitler'), 
-                    desc => _("Vis titler på alle digte"),
+                    desc => _("Vis titler pÃ¥ alle digte"),
                     status => $self->hasPoems },
        firstlines => { url => 'flines.pl?mode=0&amp;', 
-                    title => _('Førstelinier'), 
-                    desc => _("Vis førstelinier for samtlige digte"),
+                    title => _('FÃ¸rstelinier'), 
+                    desc => _("Vis fÃ¸rstelinier for samtlige digte"),
                     status => $self->hasPoems },
        search     => { url => 'fsearch.cgi?', 
-                    title => _('Søgning'), 
-                    desc => _("Søg i %ss værker", $poetName),
+                    title => _('SÃ¸gning'), 
+                    desc => _("SÃ¸g i %ss vÃ¦rker", $poetName),
                     status => $self->hasPoems },
        popular => { url => 'fpop.pl?', 
-                    title => _('Populære'), 
-                    desc => _("Top-10 over mest læste %s digte i Kalliope",$poetName),
+                    title => _('PopulÃ¦re'), 
+                    desc => _("Top-10 over mest lÃ¦ste %s digte i Kalliope",$poetName),
                     status => $self->hasPoems },
        prosa     => { url => 'fvaerker.pl?mode=prosa&amp;', 
                     title => _('Prosa'), 
 	            desc => _("%ss prosatekster",$poetName),
                     status => $self->{'prosa'} },
        pics      => { url => 'fpics.pl?', 
-                    title => _('Portrætter'), 
-                    desc => _("Portrætgalleri for %s", $poetName),
+                    title => _('PortrÃ¦tter'), 
+                    desc => _("PortrÃ¦tgalleri for %s", $poetName),
                     status => $self->{'pics'} },
        bio       => { url => 'biografi.cgi?', 
                     title => _('Biografi'), 
-                    desc => _("En kortfattet introduktion til %ss liv og værk", $poetName),
+                    desc => _("En kortfattet introduktion til %ss liv og vÃ¦rk", $poetName),
                     status => 1 },
        samtidige => { url => 'samtidige.cgi?', 
                     title => _('Samtid'), 
-                    desc => _("Digtere som udgav værker i %ss levetid", $poetName),
+                    desc => _("Digtere som udgav vÃ¦rker i %ss levetid", $poetName),
                     status => !$self->isUnknownPoet && $self->yearBorn ne '?'},
        henvisninger => { url => 'henvisninger.cgi?', 
                     title => _('Henvisninger'), 
@@ -320,7 +321,7 @@ sub menu {
                     status => $self->hasHenvisninger},
        links     => { url => 'flinks.pl?', 
                     title => _('Links'), 
-                    desc => _('Henvisninger til andre steder på internettet som har relevant information om %s',$poetName),
+                    desc => _('Henvisninger til andre steder pÃ¥ internettet som har relevant information om %s',$poetName),
                     status => $self->{'links'} },
        bibliografi => { url => 'fsekundaer.pl?', 
                     title => _('Bibliografi'), 

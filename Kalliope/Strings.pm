@@ -24,6 +24,7 @@ package Kalliope::Strings;
 use strict ('vars');
 use Carp;
 use Kalliope::DB;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -41,7 +42,7 @@ sub abbr {
 sub uc {
     my $str = shift;
     return '' unless $str;
-    $str =~ tr/æøå/ÆØÅ/;
+    $str =~ tr/Ã¦Ã¸Ã¥/Ã†Ã˜Ã…/;
     return uc $str;
 }
 

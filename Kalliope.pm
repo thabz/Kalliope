@@ -21,6 +21,10 @@
 #  $Id$
 
 package Kalliope;
+
+use utf8;
+binmode STDOUT => ":utf8";
+
 use URI::Escape;
 use Kalliope::Poem;
 use Kalliope::Poem::Bible;
@@ -31,7 +35,7 @@ use Kalliope::Internationalization qw(_);
 #
 
 @months = qw (Jan Feb Mar Apr Maj Jun Jul Aug Sep Okt Nov Dec);
-@weekdays = qw (Søn Man Tir Ons Tors Fre Lør);
+@weekdays = qw (SÃ¸n Man Tir Ons Tors Fre LÃ¸r);
 
 sub shortdate {
     my $time = shift;
@@ -42,7 +46,7 @@ sub shortdate {
     if ($yday == $yday2 && $year == $year2) {
 	return "Idag $hour:$min";
     } elsif ($yday == $yday2-1 && $year == $year2) {
-	return "Igår $hour:$min";
+	return "IgÃ¥r $hour:$min";
     } elsif (time - $time < 6*24*60*60) {
 	return $weekdays[$wday]." $hour:$min";	
     } elsif ($year == $year2) {
@@ -71,7 +75,7 @@ sub buildhrefs {
 	    if ($poem) {
 	        $link = $poem->clickableTitleSimple($verse);
 	    } else {
-	        $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
+	        $link = '<SPAN STYLE="color:red">Fejl! dÃ¸dt link...</SPAN>';
 	    }
 	    $$txt =~ s/<XREF BIBEL="[^"]+"\/?>/$link/i;
         } 
@@ -85,7 +89,7 @@ sub buildhrefs {
  	    if ($poem) {
 	        $link = $poem->clickableTitleSimple;
  	    } else {
-	        $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
+	        $link = '<SPAN STYLE="color:red">Fejl! dÃ¸dt link...</SPAN>';
 	    }
 	    $$txt =~ s/<XREF DIGT="$did"\/?>/$link/i;
         }
@@ -99,7 +103,7 @@ sub buildhrefs {
  	    if ($poem) {
 	        $link = $poem->clickableTitleSimple;
  	    } else {
-	        $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
+	        $link = '<SPAN STYLE="color:red">Fejl! dÃ¸dt link...</SPAN>';
 	    }
 	    $$txt =~ s/<xref poem="$did"\/?>/$link/i;
         }
@@ -113,13 +117,13 @@ sub buildhrefs {
 	if ($keyword) {
 	    $link = $keyword->clickableTitle('dk');
 	} else {
-	    $link = '<SPAN STYLE="color:red">Fejl! dødt link...</SPAN>';
+	    $link = '<SPAN STYLE="color:red">Fejl! dÃ¸dt link...</SPAN>';
 	}
 	$$txt =~ s/<XREF KEYWORD="$did"\/?>/$link/i;
     }
     if ($$txt =~ /<XREF ORD="(.+)"\/?>/i) {
 	my $wid = $1;
-	my $widurl = uri_escape($1);
+	my $widurl = uri_escape_utf8($1);
 	my $dbh = Kalliope::DB->connect;
 	my $sth = $dbh->prepare("SELECT word FROM dict WHERE wid = ?");
 	$sth->execute($wid);
@@ -141,7 +145,7 @@ sub buildhrefs {
    $$txt =~ s/<A\s+person="?([^\s>"]+)"?\s*>/<A HREF="ffront.cgi?fhandle=$1">/gi;
    $$txt =~ s/<A\s+keyword="?([^\s>"]+)"?\s*>/<A HREF="keyword.cgi?keyword=$1">/gi;
    $$txt =~ s/<A\s+/<A CLASS=green /gi;
-   $$txt =~ s/<year>(\d+)<\/year>/<A CLASS="timecontext" TITLE="Vis historisk kontekst for året $1." onClick="return openTimeContext($1)" HREF="javascript:{}">$1<\/A>/gi;
+   $$txt =~ s/<year>(\d+)<\/year>/<A CLASS="timecontext" TITLE="Vis historisk kontekst for Ã¥ret $1." onClick="return openTimeContext($1)" HREF="javascript:{}">$1<\/A>/gi;
    return $$txt;
 }
 
@@ -177,7 +181,7 @@ sub _makeMetricLetters {
 }
 
 #
-# Returnerer en fils størrelse i kB
+# Returnerer en fils stÃ¸rrelse i kB
 # 
 
 sub filesize {

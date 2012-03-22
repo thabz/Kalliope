@@ -22,7 +22,7 @@ my @blocks = findBlocks('dk');
 
 if (defined $letter) {
 
-    $WML = '<p>Vælg digter.</p>';
+    $WML = '<p>VÃ¦lg digter.</p>';
     $WML .= '<p>';
     foreach my $block (@blocks) {
 	if ($block->{'letter'} eq $letter) {
@@ -31,7 +31,7 @@ if (defined $letter) {
     }
     $WML .= '</p>';
 } else {
-    $WML = '<p>Vælg bogstav</p>';
+    $WML = '<p>VÃ¦lg bogstav</p>';
     $WML .= '<p>';
     foreach my $block (@blocks) {
 	my $letter = $block->{'letter'};
@@ -53,7 +53,7 @@ sub findBlocks {
     my $new;
     foreach my $f (sort { Kalliope::Sort::sort($a,$b) } @f) {
 	next unless $f->{'sort'};
-	$f->{'sort'} =~ s/Aa/Å/g;
+	$f->{'sort'} =~ s/Aa/Ã…/g;
 	$new = uc substr($f->{'sort'},0,1);
 	if ($new ne $last) {
 	    $last=$new;

@@ -29,6 +29,7 @@ use Kalliope::DB;
 use Kalliope::Sort;
 use Kalliope;
 use strict;
+use utf8;
 
 my $dbh = Kalliope::DB->connect;
 
@@ -36,7 +37,7 @@ my $mode = url_param('mode') || 0;
 my $forbogstav = url_param('forbogstav') || 'a';
 my $country = Kalliope::Internationalization::country();
 
-my $title = (_('Ordnet efter førstelinie'),_('Ordnet efter digttitel'),_('Mest populære'))[$mode];
+my $title = (_('Ordnet efter fÃ¸rstelinie'),_('Ordnet efter digttitel'),_('Mest populÃ¦re'))[$mode];
 my $page = ('poem1stlines','poemtitles','poempopular')[$mode];
 my $HTML;
 
@@ -68,7 +69,7 @@ if ($mode == 1) {
 my @f;
 $sth->execute($forbogstav, $mode ? 't' : 'f', $country);
 unless ($sth->rows) {
-    $HTML .= _("Vælg begyndelsesbogstav nedenfor");
+    $HTML .= _("VÃ¦lg begyndelsesbogstav nedenfor");
 } else {
     while (my $f = $sth->fetchrow_hashref) { 
 	$f->{'sort'} = $mode ? $f->{'titel'} : $f->{'foerstelinie'};
@@ -93,10 +94,10 @@ my $i = 0;
 @f = ();
 while ($f[$i] = $sth->fetchrow_hashref) { 
     $f[$i]->{'sort'} = $f[$i]->{'forbogstav'};
-    $f[$i]->{'sort'} =~ s/Å/Aa/;
+    $f[$i]->{'sort'} =~ s/Ã…/Aa/;
     $i++;
 }
-my $minimenu = '<small>'._("Vælg begyndelsesbogstav:").'</small><br><br>';
+my $minimenu = '<small>'._("VÃ¦lg begyndelsesbogstav:").'</small><br><br>';
 foreach my  $f (sort { Kalliope::Sort::sort($a,$b) } @f) { 
     my $letter = $f->{'forbogstav'};
     my $class = ($letter eq $forbogstav) ? 'framed' : '';

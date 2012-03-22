@@ -2,6 +2,7 @@
 
 use strict;
 use Getopt::Long;
+use utf8;
 
 my @notes = ();
 my $quality;

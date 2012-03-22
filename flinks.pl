@@ -25,6 +25,7 @@ use Kalliope::Person;
 use Kalliope::Page;
 use Kalliope::DB;
 use strict;
+use utf8;
 
 my $fhandle = url_param('fhandle');
 my $dbh = Kalliope::DB->connect;
@@ -39,17 +40,17 @@ push @crumbs,['Links',''];
 
 my $page = newAuthor Kalliope::Page ( poet => $poet,
                                       page => 'links',
-               subtitle => _("Mere om %s på nettet",$poet->name),
+               subtitle => _("Mere om %s pÃ¥ nettet",$poet->name),
                                       crumbs => \@crumbs );
 
-#Vis de tilgængelige links
+#Vis de tilgÃ¦ngelige links
 
 my $out = "<TABLE>";
 my $sth = $dbh->prepare("SELECT url,beskrivelse FROM links WHERE fhandle = ?");
 $sth->execute($poet->fhandle);
 while (my $h = $sth->fetchrow_hashref) {
     $out .= '<TR><TD VALIGN="top"><A TARGET="_top" HREF="'.$h->{'url'}.'"><IMG 
-	ALIGN="left" SRC="gfx/icons/links-w96.png" width="48" height="48" BORDER=0 alt="" title="'._("Klik her for at følge linket").'"></A></TD>';
+	ALIGN="left" SRC="gfx/icons/links-w96.png" width="48" height="48" BORDER=0 alt="" title="'._("Klik her for at fÃ¸lge linket").'"></A></TD>';
     $out .= '<TD VALIGN="top">'.$h->{'beskrivelse'}.'</TD></TR>';
 }
 $sth->finish;

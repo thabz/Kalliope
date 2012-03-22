@@ -24,6 +24,7 @@ package Kalliope::Web;
 
 use URI::Escape;
 use Image::Size;
+use utf8;
 
 sub doubleColumn {
     my $ptr = $_[0];
@@ -108,11 +109,11 @@ sub insertThumb {
     if ($h->{destfile}) {
 	my ($dx,$dy) = imagesize ($h->{'destfile'});
 	if (!$dx || !$dy) {
-	    print STDERR "Kunne ikke finde billedestørrelse for: " .($h->{'destfile'})."\n";
+	    print STDERR "Kunne ikke finde billedestÃ¸rrelse for: " .($h->{'destfile'})."\n";
 	}
 	my $winy = $dy+20 < 600 ? $dy+20 : 600;
 	my $winx = $dx+30 < 800 ? $dx+30 : 800;
-	$html .= qq|<A TITLE="$$h{alt}" HREF="javascript:{}" onclick='window.open("picfull.pl?imgfile=|.uri_escape($h->{destfile}).qq|&x=$dx&y=$dy","popup","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=$winx,height=$winy")'>|;
+	$html .= qq|<A TITLE="$$h{alt}" HREF="javascript:{}" onclick='window.open("picfull.pl?imgfile=|.uri_escape_utf8($h->{destfile}).qq|&x=$dx&y=$dy","popup","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=$winx,height=$winy")'>|;
     } elsif ($h->{url}) {
 	$html .= qq|<A HREF="$h->{url}">|;
     }
