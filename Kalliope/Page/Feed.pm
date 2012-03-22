@@ -22,6 +22,7 @@ package Kalliope::Page::Feed;
 use Kalliope::Page;
 use Kalliope::Date;
 use utf8;
+binmode STDOUT => ":utf8";
 
 @ISA = 'Kalliope::Page';
 
@@ -48,9 +49,9 @@ sub print {
     my $link = $self->{'rss_feed_url'};
     my $title = $self->{'rss_feed_title'};
     my $items = $self->{'feed_xml'};
-    print "Content-Type: text/xml; charset=ISO-8859-1\n\n";
+    print "Content-Type: text/xml; charset=UTF-8\n\n";
     print <<"EOF"
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
      <title>$title</title>
