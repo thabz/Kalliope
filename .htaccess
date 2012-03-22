@@ -12,7 +12,7 @@ RewriteRule ^(da|en)/(.*)$ $2?prefer-lang=$1&pis=%{REQUEST_URI}&%{QUERY_STRING} 
 #
 # Cache control
 #
+ExpiresActive On
+ExpiresDefault "access plus 2 hours"
+ExpiresByType image/png "access plus 4 hours"
 
-<FilesMatch "\.(png|gif|jpg|js|css)$">
-    Header set Cache-Control "max-age=290304000, public"
-</FilesMatch>
