@@ -23,6 +23,7 @@
 #  $Id$
 
 use CGI qw(:standard);
+use Encode;
 use Kalliope::Page;
 use Kalliope::Date;
 use Kalliope::DB;
@@ -34,7 +35,7 @@ use utf8;
 my $dbh = Kalliope::DB->connect;
 
 my $mode = url_param('mode') || 0;
-my $forbogstav = url_param('forbogstav') || 'a';
+my $forbogstav = decode utf8 => url_param('forbogstav') || 'a';
 my $country = Kalliope::Internationalization::country();
 
 my $title = (_('Ordnet efter førstelinie'),_('Ordnet efter digttitel'),_('Mest populære'))[$mode];
