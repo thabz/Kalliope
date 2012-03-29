@@ -57,6 +57,7 @@ sub readFile {
         Kalliope::Page::notFound();
     } else {
         open(FILE, $path);
+	binmode FILE => ":utf8";
         foreach  (<FILE>) {
             $HTML .= $_;
         }
