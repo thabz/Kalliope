@@ -45,7 +45,7 @@ sub _ {
 # This always returns the correct lang selected by the user.
 # Our redirection-mechanisme guarantees that.
 sub language {
-    return CGI::param('prefer-lang');
+    return CGI::param('prefer-lang') || '';
 }
 
 sub country {
@@ -91,7 +91,7 @@ sub _cookie_lang() {
 # Private methods below
 
 sub _default_country {
-    my $lang = shift;
+    my $lang = shift || '';
     return 'dk' if ($lang eq 'da');
     return 'fr' if ($lang eq 'fr');
     return 'se' if ($lang eq 'sv');

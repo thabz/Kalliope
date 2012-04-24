@@ -310,7 +310,7 @@ sub print {
 	} else {
 	    $url = "http://".$ENV{HTTP_HOST}."/".$redirect_lang.$ENV{REQUEST_URI};
 	}
-	print STDERR "Redirecting to $url (REQUEST_URI:".$ENV{REQUEST_URI}.")\n";
+#print STDERR "Redirecting to $url (REQUEST_URI:".$ENV{REQUEST_URI}.")\n";
 
 	print CGI::redirect($url);
 	return;
@@ -530,7 +530,7 @@ pageTracker._trackPageview();
 #
 sub countrySelector {
     my $self = shift;
-    my $selfLang = CGI::param('cn'); 
+    my $selfLang = CGI::param('cn') || ''; 
     my $HTML;
     my %titles = ( 
         dk => _('danske'),
