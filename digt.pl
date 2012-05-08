@@ -88,7 +88,7 @@ if ($poem->hasPics) {
 }
 
 my @keywords = $poem->keywords;
-my @notes = $poem->notes;
+my @notes = $poem->notes(Kalliope::Internationalization::language());
 if ($#notes >= 0 || $#keywords >= 0) {
     $page->addBox( width => '250',
 	               printer => 1,
