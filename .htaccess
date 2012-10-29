@@ -1,5 +1,6 @@
 AddHandler cgi-script .cgi .pl
 Options +ExecCGI +FollowSymlinks
+DirectoryIndex index.cgi
 
 # http://www.askapache.com/htaccess/modrewrite-tips-tricks.html
 # http://stackoverflow.com/questions/3439668/multilanguage-site-subdirectories-as-language-rewriterule
