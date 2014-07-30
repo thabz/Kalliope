@@ -32,7 +32,9 @@ use vars qw($COMC_DBH);
 #my $DB_USER = 'jec';
 #my $DB_PASSWORD = '';
 
-my $DB_CONNECT_STRING = 'dbi:Pg:dbname=kalliope';
+# Added the host parameter on 30-07-2014 after Mac OS X Server suddenly began starting Postgres with its own settings, that only wants Postgres to run over TCP and not Unix sockets.
+#my $DB_CONNECT_STRING = 'dbi:Pg:dbname=kalliope';
+my $DB_CONNECT_STRING = 'dbi:Pg:dbname=kalliope;host=localhost';
 my $DB_USER = 'jec';
 my $DB_PASSWORD = '';
 my %DB_ATTR = ( AutoCommit => 1, PrintError => 1, Warn => 1, pg_enable_utf8 => 1  );
