@@ -170,7 +170,7 @@ sub moreLinks {
         $HTML .= qq|<a title="|._("Tilføj/fjern linjenumre").qq|" href="javascript:{}" onclick="\$('.linenumber').toggle()">|._("Vis linienumre...").qq|<span class="linenumber">&#x2611;</span><span class="linenumber" style="display:none">&#x2610;</span></a><br>|;
     }
     $HTML .= qq|<a class="more" title="|._("Vis denne tekst i et format som pænere når udskrevet").qq|" href="digt.pl?longdid=$longdid&amp;printer=1">|._("Vis printudgave...").qq|</a><br>|;
-    $HTML .= qq|<a title="|._("Send redaktionen en rettelse til denne tekst").qq|" class="more" onClick="window.open('korrektur.cgi?longdid=$longdid','Korrekturpopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=330'); return false" href="javascript:{}">|._("Send en rettelse...").qq|</a><br>|;
+#$HTML .= qq|<a title="|._("Send redaktionen en rettelse til denne tekst").qq|" class="more" onClick="window.open('korrektur.cgi?longdid=$longdid','Korrekturpopup','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=330'); return false" href="javascript:{}">|._("Send en rettelse...").qq|</a><br>|;
 
     my $nextPoem = $work->getNextPoem($longdid);
     my $prevPoem = $work->getPrevPoem($longdid);
