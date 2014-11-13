@@ -130,7 +130,7 @@ sub create {
               type varchar(10), -- enum('poetry','prose'),
 	      status varchar(20), -- enum('complete','incomplete'),
               hascontent char(3), --enum('yes','no'),
-	      cvstimestamp int,
+	      cvstimestamp bigint,
 	      quality varchar(100), /* set('korrektur1','korrektur2','korrektur3', 'kilde','side'), */
 	      lang char(2) NOT NULL,
 	      country char(2) NOT NULL,

@@ -190,7 +190,7 @@ sub create {
 	      type varchar(10), -- enum('poem','prose','group','section'),
 	      quality varchar(50), --set('korrektur1','korrektur2','korrektur3', 'kilde','side'),
               layouttype char(5) default 'digt', -- enum('prosa','digt') default 'digt',
-	      createtime INT NOT NULL,
+	      createtime BIGINT NOT NULL,
 	      fulltext_index_column tsvector,
 	      lang char(2),
 	      country char(2))|);
@@ -242,7 +242,7 @@ sub create {
 	CREATE TABLE digthits /* IF NOT EXISTS */ ( 
               longdid varchar(40) NOT NULL,
 	      hits int,
-	      lasttime int)
+	      lasttime bigint)
 	    ));
 
 }
