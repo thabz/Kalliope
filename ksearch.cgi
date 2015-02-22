@@ -44,7 +44,7 @@ if (Kalliope::Poem::exist($needle)) {
 
 #
 my $search = new Kalliope::Search(
-    lang => CGI::param('sprog') || '',
+    lang => 'da',#CGI::param('lang') || 'da',
     type => CGI::param('type') || '',
     offset => CGI::param('offset') || 0,
 	needle => $needle || '',
@@ -115,7 +115,7 @@ sub pageLinks {
 sub renderResult {
     my $search = shift;
     my $limitEachType = $search->type eq 'all' ? 5 : 10;
-    my $result = $search->result(limit => $limitEachType, offset => $search->offset);
+    my $result = $search->result(lang => 'da', limit => $limitEachType, offset => $search->offset);
 
     if ($search->type eq 'all' or $search->type eq 'author') {
         my @persons = @{$result->{'author'}};

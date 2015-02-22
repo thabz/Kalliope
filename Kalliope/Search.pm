@@ -194,10 +194,10 @@ sub result {
     my ($self,%options) = @_;
     my $limit = $options{limit} || 500;
     my $offset = $options{offset} || 0;
+    my $lang = $options{lang} || 'da';
     my $matches = {};
     my $needle = $self->needleToUse;
     $needle =~ s/[\(\)';|]//g;
-    print STDERR "Needle: $needle";
     
     if ($self->type eq 'all' || $self->type eq 'author') {
         my @persons = Kalliope::PersonHome::findByNeedle($self->lang, $needle, $limit, $offset);
