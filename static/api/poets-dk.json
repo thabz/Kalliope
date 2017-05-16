@@ -1,14 +1,3652 @@
 [
   {
-    "firstName": "Anders Sørensen",
-    "lastName": "Vedel",
-    "born": "1542",
-    "dead": "1616"
+    "id": "aagaard",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Christian",
+      "lastname": "Aagaard"
+    },
+    "period": {
+      "born": {
+        "date": "?"
+      },
+      "dead": {
+        "date": "?"
+      }
+    }
   },
   {
-    "firstName": "J.P.",
-    "lastName": "Jacobsen",
-    "born": "1847",
-    "dead": "1885"
+    "id": "aakjaer",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Jeppe",
+      "lastname": "Aakjær"
+    },
+    "period": {
+      "born": {
+        "date": "1866-09-10",
+        "place": "Aakjær, Fly Sogn"
+      },
+      "dead": {
+        "date": "1930-04-22",
+        "place": "Jenle, Grinderslev Sogn"
+      }
+    }
+  },
+  {
+    "id": "aarestrup",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Emil",
+      "lastname": "Aarestrup",
+      "fullname": "Carl Ludvig Emil Aarestrup"
+    },
+    "period": {
+      "born": {
+        "date": "1800-12-04",
+        "place": "København"
+      },
+      "dead": {
+        "date": "1856-07-21",
+        "place": "Odense"
+      }
+    }
+  },
+  {
+    "id": "abrahamson",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "W.H.F.",
+      "lastname": "Abrahamson",
+      "fullname": "Werner Hans Frederik Abrahamson"
+    },
+    "period": {
+      "born": {
+        "date": "1744-04-10"
+      },
+      "dead": {
+        "date": "1812-09-22"
+      }
+    }
+  },
+  {
+    "id": "andersen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "H.C.",
+      "lastname": "Andersen",
+      "fullname": "Hans Christian Andersen"
+    },
+    "period": {
+      "born": {
+        "date": "1805-04-02",
+        "place": "Odense"
+      },
+      "dead": {
+        "date": "1875-08-04",
+        "place": "København"
+      }
+    }
+  },
+  {
+    "id": "anonym1500dk",
+    "country": "dk",
+    "lang": "da",
+    "type": "collection",
+    "name": {
+      "firstname": "Anonym, 1500-tallet"
+    }
+  },
+  {
+    "id": "anonym1800dk",
+    "country": "dk",
+    "lang": "da",
+    "type": "collection",
+    "name": {
+      "firstname": "Anonym, 1800-tallet"
+    }
+  },
+  {
+    "id": "arentzen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Kristian",
+      "lastname": "Arentzen",
+      "fullname": "Kristian August Emil Arentzen"
+    },
+    "period": {
+      "born": {
+        "date": "1823-11-10",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1899-12-30"
+      }
+    }
+  },
+  {
+    "id": "arrebo",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Anders",
+      "lastname": "Arrebo",
+      "fullname": "Anders Christensen Arrebo"
+    },
+    "period": {
+      "born": {
+        "date": "1587-01-02",
+        "place": "Ærø"
+      },
+      "dead": {
+        "date": "1637-03-12"
+      }
+    }
+  },
+  {
+    "id": "bachjn",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "J.N.",
+      "lastname": "Bach"
+    },
+    "period": {
+      "born": {
+        "date": "?"
+      },
+      "dead": {
+        "date": "?"
+      }
+    }
+  },
+  {
+    "id": "bagger",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Carl",
+      "lastname": "Bagger",
+      "fullname": "Carl Christian Bagger"
+    },
+    "period": {
+      "born": {
+        "date": "1807-05-11",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1846-10-25",
+        "place": "Odense"
+      }
+    }
+  },
+  {
+    "id": "baggesen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Jens",
+      "lastname": "Baggesen",
+      "fullname": "Jens Immanuel Baggesen"
+    },
+    "period": {
+      "born": {
+        "date": "1764-02-15",
+        "place": "Korsør"
+      },
+      "dead": {
+        "date": "1826-10-03",
+        "place": "Hamburg"
+      }
+    }
+  },
+  {
+    "id": "bang",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Herman",
+      "lastname": "Bang",
+      "fullname": "Herman Joachim Bang"
+    },
+    "period": {
+      "born": {
+        "date": "1857-04-20",
+        "place": "Asserballe sogn, Als"
+      },
+      "dead": {
+        "date": "1912-01-29",
+        "place": "Ogden City, Utah, USA"
+      }
+    }
+  },
+  {
+    "id": "bangc",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Claus Hansen",
+      "lastname": "Bang",
+      "pseudonym": "Dorus"
+    },
+    "period": {
+      "born": {
+        "date": "1618 ca."
+      },
+      "dead": {
+        "date": "1682"
+      }
+    }
+  },
+  {
+    "id": "bergenhammer",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Peder",
+      "lastname": "Bergenhammer"
+    },
+    "period": {
+      "born": {
+        "date": "1768"
+      },
+      "dead": {
+        "date": "1825"
+      }
+    }
+  },
+  {
+    "id": "bergsoe",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Vilhelm",
+      "lastname": "Bergsøe",
+      "fullname": "Jørgen Vilhelm Bergsøe"
+    },
+    "period": {
+      "born": {
+        "date": "1835-02-08",
+        "place": "København"
+      },
+      "dead": {
+        "date": "1911-06-26",
+        "place": "København"
+      }
+    }
+  },
+  {
+    "id": "bering",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Vitus",
+      "lastname": "Bering"
+    },
+    "period": {
+      "born": {
+        "date": "1617-10-06",
+        "place": "Viborg"
+      },
+      "dead": {
+        "date": "1675-05-20"
+      }
+    }
+  },
+  {
+    "id": "bibel",
+    "country": "dk",
+    "lang": "da",
+    "type": "collection",
+    "name": {
+      "firstname": "Bibelen"
+    }
+  },
+  {
+    "id": "biehl",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Charlotte Dorothea",
+      "lastname": "Biehl"
+    },
+    "period": {
+      "born": {
+        "date": "1731-06-02"
+      },
+      "dead": {
+        "date": "1788-05-17"
+      }
+    }
+  },
+  {
+    "id": "birkerod",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "C.V.P.",
+      "lastname": "Birkerod",
+      "fullname": "Carl Vilhelm Peter Birkerod"
+    },
+    "period": {
+      "born": {
+        "date": "1795-03-03"
+      },
+      "dead": {
+        "date": "1820"
+      }
+    }
+  },
+  {
+    "id": "blache",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Hans Henrik",
+      "lastname": "Blache"
+    },
+    "period": {
+      "born": {
+        "date": "1787-11-07"
+      },
+      "dead": {
+        "date": "1874-05-30"
+      }
+    }
+  },
+  {
+    "id": "blicher",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Steen Steensen",
+      "lastname": "Blicher"
+    },
+    "period": {
+      "born": {
+        "date": "1782-10-11",
+        "place": "Vium, Jylland"
+      },
+      "dead": {
+        "date": "1848-03-26",
+        "place": "Spentrup, Jylland"
+      }
+    }
+  },
+  {
+    "id": "boedtcher",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Ludvig",
+      "lastname": "Bødtcher",
+      "fullname": "Ludvig Adolph Bødtcher"
+    },
+    "period": {
+      "born": {
+        "date": "1793-04-22"
+      },
+      "dead": {
+        "date": "1874-10-01"
+      }
+    }
+  },
+  {
+    "id": "boegh",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Erik",
+      "lastname": "Bøgh"
+    },
+    "period": {
+      "born": {
+        "date": "1822-01-17"
+      },
+      "dead": {
+        "date": "1899-08-17"
+      }
+    }
+  },
+  {
+    "id": "boerup",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Morten",
+      "lastname": "Børup"
+    },
+    "period": {
+      "born": {
+        "date": "1446 ca."
+      },
+      "dead": {
+        "date": "1526-05-30"
+      }
+    }
+  },
+  {
+    "id": "bording",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Anders Christensen",
+      "lastname": "Bording"
+    },
+    "period": {
+      "born": {
+        "date": "1619-01-21",
+        "place": "Ribe"
+      },
+      "dead": {
+        "date": "1677-05-24"
+      }
+    }
+  },
+  {
+    "id": "boyecj",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "C.J.",
+      "lastname": "Boye",
+      "fullname": "Caspar Johannes Boye"
+    },
+    "period": {
+      "born": {
+        "date": "1791-12-27",
+        "place": "Kongsberg, Norge"
+      },
+      "dead": {
+        "date": "1853-07-06"
+      }
+    }
+  },
+  {
+    "id": "brahe",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Tycho",
+      "lastname": "Brahe",
+      "fullname": "Tyge Otteson Brahe"
+    },
+    "period": {
+      "born": {
+        "date": "1546-12-14",
+        "place": "Knudstrup, Skåne"
+      },
+      "dead": {
+        "date": "1601-10-24",
+        "place": "Prag"
+      }
+    }
+  },
+  {
+    "id": "brandes",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Georg",
+      "lastname": "Brandes",
+      "fullname": "Georg Morris Cohen Brandes"
+    },
+    "period": {
+      "born": {
+        "date": "1842-02-04",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1927-02-19",
+        "place": "Kbh."
+      }
+    }
+  },
+  {
+    "id": "bredahl",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Christian Hviid",
+      "lastname": "Bredahl"
+    },
+    "period": {
+      "born": {
+        "date": "1784-10-03"
+      },
+      "dead": {
+        "date": "1860-01-16"
+      }
+    }
+  },
+  {
+    "id": "brorson",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "H.A.",
+      "lastname": "Brorson",
+      "fullname": "Hans Adolph Brorson"
+    },
+    "period": {
+      "born": {
+        "date": "1694-06-20",
+        "place": "Randerup"
+      },
+      "dead": {
+        "date": "1764-06-03",
+        "place": "Ribe"
+      }
+    }
+  },
+  {
+    "id": "brunf",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Friederike",
+      "lastname": "Brun",
+      "fullname": "Sophie Christiane Friederike Münter"
+    },
+    "period": {
+      "born": {
+        "date": "1765-06-03",
+        "place": "Gräfin Tonna ved Gotha"
+      },
+      "dead": {
+        "date": "1835-03-25"
+      }
+    }
+  },
+  {
+    "id": "bruunmc",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Malthe Conrad",
+      "lastname": "Bruun"
+    },
+    "period": {
+      "born": {
+        "date": "1775-08-12"
+      },
+      "dead": {
+        "date": "1826-12-14"
+      }
+    }
+  },
+  {
+    "id": "bruunnt",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "N.T.",
+      "lastname": "Bruun",
+      "fullname": "Niels Thoroup Bruun"
+    },
+    "period": {
+      "born": {
+        "date": "1778-01-19"
+      },
+      "dead": {
+        "date": "1823-06-08"
+      }
+    }
+  },
+  {
+    "id": "bruuntc",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Thomas Christopher",
+      "lastname": "Bruun"
+    },
+    "period": {
+      "born": {
+        "date": "1750-11-02",
+        "place": "Gaunø, Sjælland"
+      },
+      "dead": {
+        "date": "1834-06-24"
+      }
+    }
+  },
+  {
+    "id": "claussen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Sophus",
+      "lastname": "Claussen",
+      "fullname": "Sophus Niels Christen Claussen"
+    },
+    "period": {
+      "born": {
+        "date": "1865-09-12",
+        "place": "Helletoft på Langeland"
+      },
+      "dead": {
+        "date": "1931-04-11",
+        "place": "Gentofte"
+      }
+    }
+  },
+  {
+    "id": "clitau",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Thomas",
+      "lastname": "Clitau"
+    },
+    "period": {
+      "born": {
+        "date": "1695 ca."
+      },
+      "dead": {
+        "date": "1754"
+      }
+    }
+  },
+  {
+    "id": "colbjoernsen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Edvard",
+      "lastname": "Colbjørnsen"
+    },
+    "period": {
+      "born": {
+        "date": "1751"
+      },
+      "dead": {
+        "date": "1792"
+      }
+    }
+  },
+  {
+    "id": "dalgas",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Ernesto",
+      "lastname": "Dalgas"
+    },
+    "period": {
+      "born": {
+        "date": "1871-07-22"
+      },
+      "dead": {
+        "date": "1899-07-11"
+      }
+    }
+  },
+  {
+    "id": "dam",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Johannes",
+      "lastname": "Dam"
+    },
+    "period": {
+      "born": {
+        "date": "1866-04-29"
+      },
+      "dead": {
+        "date": "1926-01-09"
+      }
+    }
+  },
+  {
+    "id": "dampe",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Jacob J.",
+      "lastname": "Dampe",
+      "fullname": "Dr. Jacob Jacobsen Dampe"
+    },
+    "period": {
+      "born": {
+        "date": "1790-01-17"
+      },
+      "dead": {
+        "date": "1867"
+      }
+    }
+  },
+  {
+    "id": "deichmann",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Christian",
+      "lastname": "Deichmann"
+    },
+    "period": {
+      "born": {
+        "date": "1800-10-11"
+      },
+      "dead": {
+        "date": "1838-08-09"
+      }
+    }
+  },
+  {
+    "id": "drachmann",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Holger",
+      "lastname": "Drachmann",
+      "fullname": "Holger Henrik Herholdt Drachmann"
+    },
+    "period": {
+      "born": {
+        "date": "1846-10-09"
+      },
+      "dead": {
+        "date": "1908-01-14"
+      }
+    }
+  },
+  {
+    "id": "eckersberg",
+    "country": "dk",
+    "lang": "da",
+    "type": "person",
+    "name": {
+      "firstname": "C.W.",
+      "lastname": "Eckersberg",
+      "fullname": "Christoffer Wilhelm Eckersberg"
+    },
+    "period": {
+      "born": {
+        "date": "1783",
+        "place": "Blåkrog, Sundeved"
+      },
+      "dead": {
+        "date": "1853"
+      }
+    }
+  },
+  {
+    "id": "engelbretsdatter",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Dorothe",
+      "lastname": "Engelbretsdatter"
+    },
+    "period": {
+      "born": {
+        "date": "1634-01-06"
+      },
+      "dead": {
+        "date": "1716-02-19"
+      }
+    }
+  },
+  {
+    "id": "esmann",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Gustav",
+      "lastname": "Esmann",
+      "fullname": "Gustav Frederik Esmann"
+    },
+    "period": {
+      "born": {
+        "date": "1860-08-17"
+      },
+      "dead": {
+        "date": "1904-09-04",
+        "note": "Skudt af elskerinde"
+      }
+    }
+  },
+  {
+    "id": "ewald",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Johannes",
+      "lastname": "Ewald"
+    },
+    "period": {
+      "born": {
+        "date": "1743-11-18",
+        "place": "København"
+      },
+      "dead": {
+        "date": "1781-03-17",
+        "place": "København"
+      }
+    }
+  },
+  {
+    "id": "ewaldt",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Theodor",
+      "lastname": "Ewald"
+    },
+    "period": {
+      "born": {
+        "date": "1874-07-19"
+      },
+      "dead": {
+        "date": "1923-06-29"
+      }
+    }
+  },
+  {
+    "id": "faber",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Peter",
+      "lastname": "Faber"
+    },
+    "period": {
+      "born": {
+        "date": "1810-10-07"
+      },
+      "dead": {
+        "date": "1877-04-25"
+      }
+    }
+  },
+  {
+    "id": "falsen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Enevold de",
+      "lastname": "Falsen"
+    },
+    "period": {
+      "born": {
+        "date": "1755-10-17"
+      },
+      "dead": {
+        "date": "1808-11-16"
+      }
+    }
+  },
+  {
+    "id": "falster",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Christian",
+      "lastname": "Falster"
+    },
+    "period": {
+      "born": {
+        "date": "1690-01-01"
+      },
+      "dead": {
+        "date": "1752-10-24"
+      }
+    }
+  },
+  {
+    "id": "fibiger",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Johannes",
+      "lastname": "Fibiger",
+      "fullname": "Johannes Henrik Tauber Fibiger"
+    },
+    "period": {
+      "born": {
+        "date": "1821-01-27",
+        "place": "Nykøbing Falster"
+      },
+      "dead": {
+        "date": "1897-11-13"
+      }
+    }
+  },
+  {
+    "id": "foersom",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Peter",
+      "lastname": "Foersom",
+      "fullname": "Peter Thun Foersom"
+    },
+    "period": {
+      "born": {
+        "date": "1777-02-20",
+        "place": "Østerlinnet, Ribe Stift"
+      },
+      "dead": {
+        "date": "1817-01-24",
+        "place": "København"
+      }
+    }
+  },
+  {
+    "id": "folkeviser",
+    "country": "dk",
+    "lang": "da",
+    "type": "collection",
+    "name": {
+      "firstname": "Folkeviser"
+    }
+  },
+  {
+    "id": "frandsen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Hans",
+      "lastname": "Frandsen",
+      "latin": "Johannes Francisci Ripensis"
+    },
+    "period": {
+      "born": {
+        "date": "1522",
+        "place": "Ribe"
+      },
+      "dead": {
+        "date": "1584",
+        "place": "København"
+      }
+    }
+  },
+  {
+    "id": "frankenau",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Rasmus",
+      "lastname": "Frankenau"
+    },
+    "period": {
+      "born": {
+        "date": "1767-01-06",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1814-10-12",
+        "place": "Slagelse"
+      }
+    }
+  },
+  {
+    "id": "friis",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Jørgen",
+      "lastname": "Friis"
+    },
+    "period": {
+      "born": {
+        "date": "1684"
+      },
+      "dead": {
+        "date": "1740"
+      }
+    }
+  },
+  {
+    "id": "gerner",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Henrik",
+      "lastname": "Gerner"
+    },
+    "period": {
+      "born": {
+        "date": "1629-12-09"
+      },
+      "dead": {
+        "date": "1700-05-14"
+      }
+    }
+  },
+  {
+    "id": "gerson",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Julius Christian",
+      "lastname": "Gerson"
+    },
+    "period": {
+      "born": {
+        "date": "1811-11-15"
+      },
+      "dead": {
+        "date": "1894-02-28"
+      }
+    }
+  },
+  {
+    "id": "gierlew",
+    "country": "dk",
+    "lang": "da",
+    "type": "person",
+    "name": {
+      "firstname": "Andreas Chr.",
+      "lastname": "Gierlew"
+    },
+    "period": {
+      "born": {
+        "date": "1774"
+      },
+      "dead": {
+        "date": "1845"
+      }
+    }
+  },
+  {
+    "id": "gjellerup",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Karl",
+      "lastname": "Gjellerup"
+    },
+    "period": {
+      "born": {
+        "date": "1857-06-02"
+      },
+      "dead": {
+        "date": "1919-10-11"
+      }
+    }
+  },
+  {
+    "id": "graah",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Jacob",
+      "lastname": "Graah"
+    },
+    "period": {
+      "born": {
+        "date": "1721"
+      },
+      "dead": {
+        "date": "1756"
+      }
+    }
+  },
+  {
+    "id": "gregersen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Vilhelm",
+      "lastname": "Gregersen",
+      "fullname": "Andreas Peter Vilhelm Gregersen"
+    },
+    "period": {
+      "born": {
+        "date": "1848-03-17"
+      },
+      "dead": {
+        "date": "1929-01-16"
+      }
+    }
+  },
+  {
+    "id": "griffenfeld",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Peder Schumacher",
+      "lastname": "Griffenfeld",
+      "fullname": "Greve Peder Schumacher Griffenfeld"
+    },
+    "period": {
+      "born": {
+        "date": "1635-08-24",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1699-03-12",
+        "place": "Trondheim"
+      }
+    }
+  },
+  {
+    "id": "grundtvig",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "N.F.S.",
+      "lastname": "Grundtvig",
+      "fullname": "Nikolai Frederik Severin Grundtvig"
+    },
+    "period": {
+      "born": {
+        "date": "1783-09-08",
+        "place": "Udby"
+      },
+      "dead": {
+        "date": "1872-09-02",
+        "place": "København"
+      }
+    }
+  },
+  {
+    "id": "gyllembourg",
+    "country": "dk",
+    "lang": "da",
+    "type": "person",
+    "name": {
+      "firstname": "Thomasine",
+      "lastname": "Gyllembourg",
+      "fullname": "Baronesse Thomasine Christine Gyllembourg-Ehrensvärd",
+      "christened": "Thomasine Christine Buntzen"
+    },
+    "period": {
+      "born": {
+        "date": "1773-11-09",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1856-07-01",
+        "place": "Kbh."
+      }
+    }
+  },
+  {
+    "id": "hansenfj",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Frantz Johannes",
+      "lastname": "Hansen"
+    },
+    "period": {
+      "born": {
+        "date": "1810-09-04"
+      },
+      "dead": {
+        "date": "1852-03-14"
+      }
+    }
+  },
+  {
+    "id": "hansenmc",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "M.C.",
+      "lastname": "Hansen"
+    },
+    "period": {
+      "born": {
+        "date": "?"
+      },
+      "dead": {
+        "date": "?"
+      }
+    }
+  },
+  {
+    "id": "haste",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Peder Horrebow",
+      "lastname": "Haste"
+    },
+    "period": {
+      "born": {
+        "date": "1765-01-12"
+      },
+      "dead": {
+        "date": "1831-01-28"
+      }
+    }
+  },
+  {
+    "id": "hauch",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Carsten",
+      "lastname": "Hauch",
+      "fullname": "Johannes Carsten Hauch"
+    },
+    "period": {
+      "born": {
+        "date": "1790-05-12",
+        "place": "Frederikshald (nu Halden), Norge"
+      },
+      "dead": {
+        "date": "1872-03-04",
+        "place": "Rom"
+      }
+    }
+  },
+  {
+    "id": "hegelund",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Peder Jensen",
+      "lastname": "Hegelund"
+    },
+    "period": {
+      "born": {
+        "date": "1542-06-09"
+      },
+      "dead": {
+        "date": "1614-02-18"
+      }
+    }
+  },
+  {
+    "id": "heibergjl",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Johan Ludvig",
+      "lastname": "Heiberg"
+    },
+    "period": {
+      "born": {
+        "date": "1791-12-14",
+        "place": "København"
+      },
+      "dead": {
+        "date": "1860-08-25",
+        "place": "Bonderup ved Ringsted"
+      }
+    }
+  },
+  {
+    "id": "heibergjly",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Johan Ludvig",
+      "lastname": "Heiberg"
+    },
+    "period": {
+      "born": {
+        "date": "1854-11-27"
+      },
+      "dead": {
+        "date": "1928-01-04"
+      }
+    }
+  },
+  {
+    "id": "heibergjohanne",
+    "country": "dk",
+    "lang": "da",
+    "type": "person",
+    "name": {
+      "firstname": "Johanne Luise",
+      "lastname": "Heiberg"
+    },
+    "period": {
+      "born": {
+        "date": "1812"
+      },
+      "dead": {
+        "date": "1890"
+      }
+    }
+  },
+  {
+    "id": "heibergpa",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "P.A.",
+      "lastname": "Heiberg",
+      "fullname": "Peter Andreas Heiberg"
+    },
+    "period": {
+      "born": {
+        "date": "1758-11-16",
+        "place": "Vordingborg"
+      },
+      "dead": {
+        "date": "1841-04-30",
+        "place": "Paris"
+      }
+    }
+  },
+  {
+    "id": "helms",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Johannes",
+      "lastname": "Helms"
+    },
+    "period": {
+      "born": {
+        "date": "1828-11-08"
+      },
+      "dead": {
+        "date": "1895-12-04"
+      }
+    }
+  },
+  {
+    "id": "helt",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Vilhelm",
+      "lastname": "Helt"
+    },
+    "period": {
+      "born": {
+        "date": "1652-05-19"
+      },
+      "dead": {
+        "date": "1724-01-16"
+      }
+    }
+  },
+  {
+    "id": "hempel",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Søren",
+      "lastname": "Hempel"
+    },
+    "period": {
+      "born": {
+        "date": "1775"
+      },
+      "dead": {
+        "date": "1844"
+      }
+    }
+  },
+  {
+    "id": "hertzb",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Birgitte",
+      "lastname": "Boye",
+      "alternative": "Birgitte Hertz",
+      "fullname": "Birgitte Cathrine Boye"
+    },
+    "period": {
+      "born": {
+        "date": "1742-03-07",
+        "place": "Gentofte Sogn"
+      },
+      "dead": {
+        "date": "1824-10-17",
+        "place": "København"
+      }
+    }
+  },
+  {
+    "id": "hertzh",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Henrik",
+      "lastname": "Hertz"
+    },
+    "period": {
+      "born": {
+        "date": "1797/98-08-25"
+      },
+      "dead": {
+        "date": "1870-02-25"
+      }
+    }
+  },
+  {
+    "id": "hoeghguldbergf",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Frederik",
+      "lastname": "Høegh-Guldberg"
+    },
+    "period": {
+      "born": {
+        "date": "1771-03-26"
+      },
+      "dead": {
+        "date": "1852-09-21"
+      }
+    }
+  },
+  {
+    "id": "holberg",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Ludvig",
+      "lastname": "Holberg"
+    },
+    "period": {
+      "born": {
+        "date": "1684-12-03",
+        "place": "Bergen"
+      },
+      "dead": {
+        "date": "1754-01-28",
+        "place": "København"
+      }
+    }
+  },
+  {
+    "id": "holst",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "H.P.",
+      "lastname": "Holst",
+      "fullname": "Hans Peter Holst"
+    },
+    "period": {
+      "born": {
+        "date": "1811-10-23",
+        "note": "eller 1811-10-22"
+      },
+      "dead": {
+        "date": "1893-06-02"
+      }
+    }
+  },
+  {
+    "id": "horrebow",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Otto",
+      "lastname": "Horrebow"
+    },
+    "period": {
+      "born": {
+        "date": "1769-02-25"
+      },
+      "dead": {
+        "date": "1823-07-10"
+      }
+    }
+  },
+  {
+    "id": "hostrup",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Jens Christian",
+      "lastname": "Hostrup",
+      "pseudonym": "Jens Kristrup"
+    },
+    "period": {
+      "born": {
+        "date": "1818-05-20"
+      },
+      "dead": {
+        "date": "1892-11-21"
+      }
+    }
+  },
+  {
+    "id": "ingemann",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "B.S.",
+      "lastname": "Ingemann",
+      "fullname": "Bernhard Severin Ingemann"
+    },
+    "period": {
+      "born": {
+        "date": "1789-05-28",
+        "place": "Torkilstrup"
+      },
+      "dead": {
+        "date": "1862-02-24",
+        "place": "Sorø"
+      }
+    }
+  },
+  {
+    "id": "ipsen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Alfred",
+      "lastname": "Ipsen",
+      "christened": "Peter Alfred Buntzen"
+    },
+    "period": {
+      "born": {
+        "date": "1852-03-17",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1922-11-20"
+      }
+    }
+  },
+  {
+    "id": "irgens",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Hanna",
+      "lastname": "Irgens"
+    },
+    "period": {
+      "born": {
+        "date": "1792-08-19",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1853-06-13"
+      }
+    }
+  },
+  {
+    "id": "jacobsen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "J.P.",
+      "lastname": "Jacobsen",
+      "fullname": "Jens Peter Jacobsen"
+    },
+    "period": {
+      "born": {
+        "date": "1847-04-07",
+        "place": "Thisted"
+      },
+      "dead": {
+        "date": "1885-04-30",
+        "place": "Thisted"
+      }
+    }
+  },
+  {
+    "id": "jernskaeg",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Mikkel Hansen",
+      "lastname": "Jernskæg"
+    },
+    "period": {
+      "born": {
+        "date": "1654"
+      },
+      "dead": {
+        "date": "1711"
+      }
+    }
+  },
+  {
+    "id": "jetsmark",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Jens",
+      "lastname": "Jetsmark"
+    },
+    "period": {
+      "born": {
+        "date": "1781"
+      },
+      "dead": {
+        "date": "1853"
+      }
+    }
+  },
+  {
+    "id": "judichaer",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Søren Poulsen",
+      "lastname": "Judichær",
+      "fullname": "Søren Poulsen Gotlænder Judichær"
+    },
+    "period": {
+      "born": {
+        "date": "1599"
+      },
+      "dead": {
+        "date": "1668"
+      }
+    }
+  },
+  {
+    "id": "kaalund",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Hans Vilhelm",
+      "lastname": "Kaalund"
+    },
+    "period": {
+      "born": {
+        "date": "1818-06-23"
+      },
+      "dead": {
+        "date": "1885-04-27"
+      }
+    }
+  },
+  {
+    "id": "karstensen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Kristen",
+      "lastname": "Karstensen"
+    },
+    "period": {
+      "born": {
+        "date": "1809"
+      },
+      "dead": {
+        "date": "1882"
+      }
+    }
+  },
+  {
+    "id": "kidde",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Harald",
+      "lastname": "Kidde"
+    },
+    "period": {
+      "born": {
+        "date": "1878-08-14"
+      },
+      "dead": {
+        "date": "1918-11-23"
+      }
+    }
+  },
+  {
+    "id": "kingo",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Thomas",
+      "lastname": "Kingo",
+      "fullname": "Thomas Hansen Kingo"
+    },
+    "period": {
+      "born": {
+        "date": "1634-12-15",
+        "place": "Slangerup"
+      },
+      "dead": {
+        "date": "1703-10-14",
+        "place": "Odense"
+      }
+    }
+  },
+  {
+    "id": "kjaer",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Søren",
+      "lastname": "Kjær"
+    },
+    "period": {
+      "born": {
+        "date": "1520"
+      },
+      "dead": {
+        "date": "1582"
+      }
+    }
+  },
+  {
+    "id": "knudsen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Jakob",
+      "lastname": "Knudsen",
+      "fullname": "Jakob Christian Lindberg Knudsen"
+    },
+    "period": {
+      "born": {
+        "date": "1858-09-14"
+      },
+      "dead": {
+        "date": "1917-01-21"
+      }
+    }
+  },
+  {
+    "id": "kok",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Laurids",
+      "lastname": "Kok"
+    },
+    "period": {
+      "born": {
+        "date": "1634-09-13"
+      },
+      "dead": {
+        "date": "1691-03-17"
+      }
+    }
+  },
+  {
+    "id": "krohn",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Johan",
+      "lastname": "Krohn",
+      "fullname": "Johan Jacob Krohn"
+    },
+    "period": {
+      "born": {
+        "date": "1841-08-09"
+      },
+      "dead": {
+        "date": "1925-01-06"
+      }
+    }
+  },
+  {
+    "id": "krossing",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Nikolaj",
+      "lastname": "Krossing"
+    },
+    "period": {
+      "born": {
+        "date": "1798-06-13"
+      },
+      "dead": {
+        "date": "1872-02-05"
+      }
+    }
+  },
+  {
+    "id": "kruse",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "M.P.",
+      "lastname": "Kruuse",
+      "fullname": "Manderup Peder Kruuse"
+    },
+    "period": {
+      "born": {
+        "date": "1760-12-14",
+        "place": "København"
+      },
+      "dead": {
+        "date": "?"
+      }
+    }
+  },
+  {
+    "id": "lange",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Thor",
+      "lastname": "Lange",
+      "fullname": "Thor Næve Lange"
+    },
+    "period": {
+      "born": {
+        "date": "1851-04-09",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1915-02-22",
+        "place": "Ukraine"
+      }
+    }
+  },
+  {
+    "id": "larsent",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Thøger",
+      "lastname": "Larsen"
+    },
+    "period": {
+      "born": {
+        "date": "1875-04-05"
+      },
+      "dead": {
+        "date": "1928-05-29"
+      }
+    }
+  },
+  {
+    "id": "lauremberg",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Hans Willumsen",
+      "lastname": "Lauremberg",
+      "note": "Kaldes ofte Johann Lauremberg. På sine latinske skrifter kalder han sig Joannes Laurenbergius"
+    },
+    "period": {
+      "born": {
+        "date": "1590-02-26",
+        "place": "Rostock"
+      },
+      "dead": {
+        "date": "1658-02-28",
+        "place": "Sorø"
+      }
+    }
+  },
+  {
+    "id": "lembcke",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Edvard",
+      "lastname": "Lembcke"
+    },
+    "period": {
+      "born": {
+        "date": "1815-06-15"
+      },
+      "dead": {
+        "date": "1897-03-21"
+      }
+    }
+  },
+  {
+    "id": "leonora",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Leonora Christina",
+      "lastname": "Ulfeldt"
+    },
+    "period": {
+      "born": {
+        "date": "1621-07-08",
+        "place": "Frederiksborg"
+      },
+      "dead": {
+        "date": "1698-03-16",
+        "place": "Maribo Kloster"
+      }
+    }
+  },
+  {
+    "id": "liunge",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Andreas Peter",
+      "lastname": "Liunge"
+    },
+    "period": {
+      "born": {
+        "date": "1798"
+      },
+      "dead": {
+        "date": "1879"
+      }
+    }
+  },
+  {
+    "id": "loenborg",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Jens Christensen",
+      "lastname": "Lønborg"
+    },
+    "period": {
+      "born": {
+        "date": "1663 ca."
+      },
+      "dead": {
+        "date": "1700"
+      }
+    }
+  },
+  {
+    "id": "lous",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Christian Carl",
+      "lastname": "Lous"
+    },
+    "period": {
+      "born": {
+        "date": "1724",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1804-10-24"
+      }
+    }
+  },
+  {
+    "id": "lyschander",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Claus Christophersen",
+      "lastname": "Lyschander"
+    },
+    "period": {
+      "born": {
+        "date": "1558"
+      },
+      "dead": {
+        "date": "1624"
+      }
+    }
+  },
+  {
+    "id": "magnusson",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Finnur",
+      "lastname": "Magnusson"
+    },
+    "period": {
+      "born": {
+        "date": "1781"
+      },
+      "dead": {
+        "date": "1847"
+      }
+    }
+  },
+  {
+    "id": "michaelis",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Sophus",
+      "lastname": "Michaëlis",
+      "fullname": "Sophus August Berthel Michaëlis"
+    },
+    "period": {
+      "born": {
+        "date": "1865-05-14",
+        "place": "Odense"
+      },
+      "dead": {
+        "date": "1932-01-28"
+      }
+    }
+  },
+  {
+    "id": "moellerpl",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "P.L.",
+      "lastname": "Møller",
+      "fullname": "Peder Ludvig Møller"
+    },
+    "period": {
+      "born": {
+        "date": "1814-04-18",
+        "place": "Aalborg"
+      },
+      "dead": {
+        "date": "1865-12-06"
+      }
+    }
+  },
+  {
+    "id": "moellerpm",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Poul Martin",
+      "lastname": "Møller"
+    },
+    "period": {
+      "born": {
+        "date": "1794-03-21",
+        "place": "Uldum ved Vejle"
+      },
+      "dead": {
+        "date": "1838-03-12",
+        "place": "Kbh."
+      }
+    }
+  },
+  {
+    "id": "molbech",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Chr.K.F.",
+      "lastname": "Molbech",
+      "fullname": "Christian Knud Frederik Molbech"
+    },
+    "period": {
+      "born": {
+        "date": "1821-07-20"
+      },
+      "dead": {
+        "date": "1888-05-20"
+      }
+    }
+  },
+  {
+    "id": "molbechsr",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Christian",
+      "lastname": "Molbech"
+    },
+    "period": {
+      "born": {
+        "date": "1783-10-08"
+      },
+      "dead": {
+        "date": "1857-11-23"
+      }
+    }
+  },
+  {
+    "id": "moth",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Fr.",
+      "lastname": "Moth"
+    },
+    "period": {
+      "born": {
+        "date": "1861"
+      },
+      "dead": {
+        "date": "1930"
+      }
+    }
+  },
+  {
+    "id": "mueller",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Frederik",
+      "lastname": "Paludan-Müller"
+    },
+    "period": {
+      "born": {
+        "date": "1809-02-07"
+      },
+      "dead": {
+        "date": "1876-12-28"
+      }
+    }
+  },
+  {
+    "id": "mylius",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Ludvig",
+      "lastname": "Mylius-Erichsen"
+    },
+    "period": {
+      "born": {
+        "date": "1872-01-15"
+      },
+      "dead": {
+        "date": "1907-11-25"
+      }
+    }
+  },
+  {
+    "id": "nansen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Peter",
+      "lastname": "Nansen"
+    },
+    "period": {
+      "born": {
+        "date": "1861-01-20"
+      },
+      "dead": {
+        "date": "1918-07-31"
+      }
+    }
+  },
+  {
+    "id": "naur",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Elias Eskildsen",
+      "lastname": "Naur"
+    },
+    "period": {
+      "born": {
+        "date": "1650-02-17"
+      },
+      "dead": {
+        "date": "1728-05-06"
+      }
+    }
+  },
+  {
+    "id": "nielsenlc",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "L.C.",
+      "lastname": "Nielsen"
+    },
+    "period": {
+      "born": {
+        "date": "1871-10-27"
+      },
+      "dead": {
+        "date": "1930-03-11"
+      }
+    }
+  },
+  {
+    "id": "nielsenz",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Zakarias",
+      "lastname": "Nielsen",
+      "note": "Døbt Zacarias"
+    },
+    "period": {
+      "born": {
+        "date": "1844-06-05"
+      },
+      "dead": {
+        "date": "1922-11-11"
+      }
+    }
+  },
+  {
+    "id": "nordrup",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Hans Hansen",
+      "lastname": "Nordrup"
+    },
+    "period": {
+      "born": {
+        "date": "1681"
+      },
+      "dead": {
+        "date": "1750"
+      }
+    }
+  },
+  {
+    "id": "obelitz",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Ove von",
+      "lastname": "Obelitz"
+    },
+    "period": {
+      "born": {
+        "date": "1750"
+      },
+      "dead": {
+        "date": "1804"
+      }
+    }
+  },
+  {
+    "id": "oehlenschlaeger",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Adam",
+      "lastname": "Oehlenschläger",
+      "fullname": "Adam Gottlob Oehlenschläger"
+    },
+    "period": {
+      "born": {
+        "date": "1779-11-14",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1850-01-20",
+        "place": "Kbh."
+      }
+    }
+  },
+  {
+    "id": "olavius",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Johannes",
+      "lastname": "Olavius"
+    },
+    "period": {
+      "born": {
+        "date": "1624"
+      },
+      "dead": {
+        "date": "1698"
+      }
+    }
+  },
+  {
+    "id": "olufsen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Oluf Christian",
+      "lastname": "Olufsen"
+    },
+    "period": {
+      "born": {
+        "date": "1764-01-20"
+      },
+      "dead": {
+        "date": "1827-05-19"
+      }
+    }
+  },
+  {
+    "id": "overskou",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Thomas",
+      "lastname": "Overskou"
+    },
+    "period": {
+      "born": {
+        "date": "1798-10-11",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1873-11-07",
+        "place": "Kbh."
+      }
+    }
+  },
+  {
+    "id": "pedersen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Poul",
+      "lastname": "Pedersen",
+      "fullname": "Poul Pedersen Philedor"
+    },
+    "period": {
+      "born": {
+        "date": "?"
+      },
+      "dead": {
+        "date": "1700 ca."
+      }
+    }
+  },
+  {
+    "id": "plough",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Carl",
+      "lastname": "Ploug",
+      "fullname": "Parmo Carl Ploug"
+    },
+    "period": {
+      "born": {
+        "date": "1813-10-29",
+        "place": "Kolding"
+      },
+      "dead": {
+        "date": "1894-10-27"
+      }
+    }
+  },
+  {
+    "id": "pram",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Christen H.",
+      "lastname": "Pram",
+      "fullname": "Christen Henriksen Pram"
+    },
+    "period": {
+      "born": {
+        "date": "1756-09-04"
+      },
+      "dead": {
+        "date": "1821-11-25"
+      }
+    }
+  },
+  {
+    "id": "raev",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Per",
+      "lastname": "Ræv Lille"
+    },
+    "period": {
+      "born": {
+        "date": "1400?"
+      },
+      "dead": {
+        "date": "?"
+      }
+    }
+  },
+  {
+    "id": "rahbek",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Knud Lyne",
+      "lastname": "Rahbek"
+    },
+    "period": {
+      "born": {
+        "date": "1760-12-18"
+      },
+      "dead": {
+        "date": "1830-04-22"
+      }
+    }
+  },
+  {
+    "id": "rahbekk",
+    "country": "dk",
+    "lang": "da",
+    "type": "person",
+    "name": {
+      "firstname": "Kamma",
+      "lastname": "Rahbek",
+      "fullname": "Karen Margrethe Heger"
+    },
+    "period": {
+      "born": {
+        "date": "1775-10-19"
+      },
+      "dead": {
+        "date": "1829-01-21"
+      }
+    }
+  },
+  {
+    "id": "ranch",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Hieronymus Justesen",
+      "lastname": "Ranch"
+    },
+    "period": {
+      "born": {
+        "date": "1539",
+        "place": "Vinkel ved Viborg"
+      },
+      "dead": {
+        "date": "1607-12-03"
+      }
+    }
+  },
+  {
+    "id": "ravn",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Hans Mikkelsen",
+      "lastname": "Ravn"
+    },
+    "period": {
+      "born": {
+        "date": "1610",
+        "place": "Fævejle ved Grenå"
+      },
+      "dead": {
+        "date": "1663"
+      }
+    }
+  },
+  {
+    "id": "recke",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Adolph",
+      "lastname": "Recke"
+    },
+    "period": {
+      "born": {
+        "date": "1820-05-17"
+      },
+      "dead": {
+        "date": "1867-12-06"
+      }
+    }
+  },
+  {
+    "id": "reckee",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Ernst von der",
+      "lastname": "Recke",
+      "fullname": "Ernst Frederik Vilhelm von der Recke"
+    },
+    "period": {
+      "born": {
+        "date": "1848-08-14"
+      },
+      "dead": {
+        "date": "1933-02-12"
+      }
+    }
+  },
+  {
+    "id": "reenberg",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Tøger",
+      "lastname": "Reenberg",
+      "fullname": "Thøger Clausen Reenberg"
+    },
+    "period": {
+      "born": {
+        "date": "1656-10-10"
+      },
+      "dead": {
+        "date": "1742-06-24"
+      }
+    }
+  },
+  {
+    "id": "riber",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Hans Vilhelm",
+      "lastname": "Riber"
+    },
+    "period": {
+      "born": {
+        "date": "1760-01-07"
+      },
+      "dead": {
+        "date": "1796-11-26"
+      }
+    }
+  },
+  {
+    "id": "richardt",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Christian",
+      "lastname": "Richardt",
+      "fullname": "Christian Ernst Richardt"
+    },
+    "period": {
+      "born": {
+        "date": "1831-05-25"
+      },
+      "dead": {
+        "date": "1892-12-18"
+      }
+    }
+  },
+  {
+    "id": "rode",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "",
+      "lastname": "Rode"
+    },
+    "period": {
+      "born": {
+        "date": "?"
+      },
+      "dead": {
+        "date": "?"
+      }
+    }
+  },
+  {
+    "id": "rodeg",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Gotfred",
+      "lastname": "Rode",
+      "fullname": "Gotfred Benjamin Rode",
+      "pseudonym": "Carl Ghetto"
+    },
+    "period": {
+      "born": {
+        "date": "1830-03-09"
+      },
+      "dead": {
+        "date": "1878-08-12"
+      }
+    }
+  },
+  {
+    "id": "roemer",
+    "country": "dk",
+    "lang": "da",
+    "type": "person",
+    "name": {
+      "firstname": "Ole",
+      "lastname": "Rømer"
+    },
+    "period": {
+      "born": {
+        "date": "1644-09-25",
+        "place": "Århus"
+      },
+      "dead": {
+        "date": "1710-09-19",
+        "place": "Kbh."
+      }
+    }
+  },
+  {
+    "id": "rosenberg",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Carl",
+      "lastname": "Rosenberg",
+      "fullname": "Carl Frederik Vilhelm Mathildus Rosenberg"
+    },
+    "period": {
+      "born": {
+        "date": "1829"
+      },
+      "dead": {
+        "date": "1885"
+      }
+    }
+  },
+  {
+    "id": "roskilde",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Peder Jensen",
+      "lastname": "Roskilde"
+    },
+    "period": {
+      "born": {
+        "date": "1575"
+      },
+      "dead": {
+        "date": "1641"
+      }
+    }
+  },
+  {
+    "id": "rostock",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Mads Pedersen",
+      "lastname": "Rostock"
+    },
+    "period": {
+      "born": {
+        "date": "1655-01-01",
+        "place": "Ribe"
+      },
+      "dead": {
+        "date": "1713",
+        "place": "Middelfart"
+      }
+    }
+  },
+  {
+    "id": "rothe",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Tyge",
+      "lastname": "Rothe"
+    },
+    "period": {
+      "born": {
+        "date": "1731-01-16"
+      },
+      "dead": {
+        "date": "1795-12-19"
+      }
+    }
+  },
+  {
+    "id": "sander",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "L.C.",
+      "lastname": "Sander",
+      "fullname": "Levin Christian Sander"
+    },
+    "period": {
+      "born": {
+        "date": "1756-11-13"
+      },
+      "dead": {
+        "date": "1819-07-29"
+      }
+    }
+  },
+  {
+    "id": "schandorph",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Sophus",
+      "lastname": "Schandorph",
+      "fullname": "Sophus Christian Frederik Schandorph"
+    },
+    "period": {
+      "born": {
+        "date": "1836-05-08"
+      },
+      "dead": {
+        "date": "1901-01-01"
+      }
+    }
+  },
+  {
+    "id": "schandrup",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Jacob Knudsen",
+      "lastname": "Schandrup"
+    },
+    "period": {
+      "born": {
+        "date": "?"
+      },
+      "dead": {
+        "date": "1720"
+      }
+    }
+  },
+  {
+    "id": "schmidt",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Rudolf",
+      "lastname": "Schmidt"
+    },
+    "period": {
+      "born": {
+        "date": "1836-07-25"
+      },
+      "dead": {
+        "date": "1899-04-05"
+      }
+    }
+  },
+  {
+    "id": "schoenheyder",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Johan Heinrich",
+      "lastname": "Schønheyder"
+    },
+    "period": {
+      "born": {
+        "date": "1744-06-07"
+      },
+      "dead": {
+        "date": "1831-05-25"
+      }
+    }
+  },
+  {
+    "id": "sehested",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Jens Steen",
+      "lastname": "Sehested"
+    },
+    "period": {
+      "born": {
+        "date": "1640"
+      },
+      "dead": {
+        "date": "1698"
+      }
+    }
+  },
+  {
+    "id": "soeborg",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Carl",
+      "lastname": "Søeborg"
+    },
+    "period": {
+      "born": {
+        "date": "1775-08-15"
+      },
+      "dead": {
+        "date": "1852-11-03"
+      }
+    }
+  },
+  {
+    "id": "sorterup",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Jørgen Jørgensen",
+      "lastname": "Sorterup"
+    },
+    "period": {
+      "born": {
+        "date": "1662-11-01"
+      },
+      "dead": {
+        "date": "1723-10-04"
+      }
+    }
+  },
+  {
+    "id": "staffeldt",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "A.W. Schack von",
+      "lastname": "Staffeldt",
+      "fullname": "Adolph Wilhelm Schack von Staffeldt"
+    },
+    "period": {
+      "born": {
+        "date": "1769-03-28",
+        "place": "Gartz i Pommern"
+      },
+      "dead": {
+        "date": "1826-12-16",
+        "place": "Slesvig"
+      }
+    }
+  },
+  {
+    "id": "steffens",
+    "country": "dk",
+    "lang": "da",
+    "type": "person",
+    "name": {
+      "firstname": "Henrich",
+      "lastname": "Steffens"
+    },
+    "period": {
+      "born": {
+        "date": "1773-05-02",
+        "place": "Stavanger"
+      },
+      "dead": {
+        "date": "1845-02-13",
+        "place": "Berlin"
+      }
+    }
+  },
+  {
+    "id": "stenblock",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "C.E.",
+      "lastname": "Steenbloch",
+      "fullname": "Cornelius Enevold Steenbloch"
+    },
+    "period": {
+      "born": {
+        "date": "1773-02-27",
+        "place": "Bynæsset ved Trondheim"
+      },
+      "dead": {
+        "date": "1836-10-31"
+      }
+    }
+  },
+  {
+    "id": "stenersen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "P.C.",
+      "lastname": "Stenersen",
+      "fullname": "Peter Christopher Stenersen"
+    },
+    "period": {
+      "born": {
+        "date": "1723-04-09"
+      },
+      "dead": {
+        "date": "1776-04-17"
+      }
+    }
+  },
+  {
+    "id": "sthen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Hans Christensen",
+      "lastname": "Sthen"
+    },
+    "period": {
+      "born": {
+        "date": "1544",
+        "place": "Roskilde"
+      },
+      "dead": {
+        "date": "1610",
+        "place": "Malmø"
+      }
+    }
+  },
+  {
+    "id": "stistrup",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Christen Christensen",
+      "lastname": "Stistrup"
+    },
+    "period": {
+      "born": {
+        "date": "1651-03-23",
+        "place": "Foulum Sogn"
+      },
+      "dead": {
+        "date": "1712-01-28"
+      }
+    }
+  },
+  {
+    "id": "stockfleth",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Th.",
+      "lastname": "Stockfleth"
+    },
+    "period": {
+      "born": {
+        "date": "1743"
+      },
+      "dead": {
+        "date": "1808"
+      }
+    }
+  },
+  {
+    "id": "strandberg",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Peter Julius",
+      "lastname": "Strandberg"
+    },
+    "period": {
+      "born": {
+        "date": "1834"
+      },
+      "dead": {
+        "date": "1903"
+      }
+    }
+  },
+  {
+    "id": "struensee",
+    "country": "dk",
+    "lang": "da",
+    "type": "person",
+    "name": {
+      "firstname": "J.F.",
+      "lastname": "Struensee",
+      "fullname": "Johan Friedrich Struensee"
+    },
+    "period": {
+      "born": {
+        "date": "1737-08-05",
+        "place": "Halle"
+      },
+      "dead": {
+        "date": "1772-04-28",
+        "place": "Kbh."
+      }
+    }
+  },
+  {
+    "id": "stub",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Ambrosius",
+      "lastname": "Stub"
+    },
+    "period": {
+      "born": {
+        "date": "1705-05-17"
+      },
+      "dead": {
+        "date": "1758-07-15"
+      }
+    }
+  },
+  {
+    "id": "stuckenberg",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Viggo",
+      "lastname": "Stuckenberg",
+      "fullname": "Viggo Henrik Fog Stuckenberg",
+      "pseudonym": "Silius"
+    },
+    "period": {
+      "born": {
+        "date": "1863-09-17",
+        "place": "Vridsløselille"
+      },
+      "dead": {
+        "date": "1905-12-06"
+      }
+    }
+  },
+  {
+    "id": "syv",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Peder",
+      "lastname": "Syv",
+      "fullname": "Peder Pedersen Syv"
+    },
+    "period": {
+      "born": {
+        "date": "1631-02-22",
+        "place": "landsbyen Syv ved Roskilde"
+      },
+      "dead": {
+        "date": "1702-02-17"
+      }
+    }
+  },
+  {
+    "id": "terkelsen",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Søren",
+      "lastname": "Terkelsen"
+    },
+    "period": {
+      "born": {
+        "date": "?"
+      },
+      "dead": {
+        "date": "1656 ca."
+      }
+    }
+  },
+  {
+    "id": "thaarup",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Thomas",
+      "lastname": "Thaarup"
+    },
+    "period": {
+      "born": {
+        "date": "1749-08-21"
+      },
+      "dead": {
+        "date": "1821-07-12"
+      }
+    }
+  },
+  {
+    "id": "thiele",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Just Mathias",
+      "lastname": "Thiele"
+    },
+    "period": {
+      "born": {
+        "date": "1795-12-13",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1874-11-09"
+      }
+    }
+  },
+  {
+    "id": "thoroup",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Adam Gottlob",
+      "lastname": "Thoroup"
+    },
+    "period": {
+      "born": {
+        "date": "1751"
+      },
+      "dead": {
+        "date": "1804"
+      }
+    }
+  },
+  {
+    "id": "thorvaldsen",
+    "country": "dk",
+    "lang": "da",
+    "type": "person",
+    "name": {
+      "firstname": "Bertel",
+      "lastname": "Thorvaldsen",
+      "fullname": "Albert Bertel Thorvaldsen"
+    },
+    "period": {
+      "born": {
+        "date": "1770"
+      },
+      "dead": {
+        "date": "1844"
+      }
+    }
+  },
+  {
+    "id": "thrane",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Mads",
+      "lastname": "Thrane"
+    },
+    "period": {
+      "born": {
+        "date": "?"
+      },
+      "dead": {
+        "date": "?"
+      }
+    }
+  },
+  {
+    "id": "thura",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Laurits",
+      "lastname": "Thura"
+    },
+    "period": {
+      "born": {
+        "date": "1657"
+      },
+      "dead": {
+        "date": "1731"
+      }
+    }
+  },
+  {
+    "id": "tode",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Johann Clemens",
+      "lastname": "Tode"
+    },
+    "period": {
+      "born": {
+        "date": "1736-06-24",
+        "place": "Zollenspieker ved Hamburg"
+      },
+      "dead": {
+        "date": "1806-03-16",
+        "place": "København"
+      }
+    }
+  },
+  {
+    "id": "trojel",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Peder Kofod",
+      "lastname": "Trojel"
+    },
+    "period": {
+      "born": {
+        "date": "1754-05-05"
+      },
+      "dead": {
+        "date": "1784-11-09"
+      }
+    }
+  },
+  {
+    "id": "trojelpm",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Peder Magnus",
+      "lastname": "Trojel"
+    },
+    "period": {
+      "born": {
+        "date": "1743-6-3",
+        "note": "eller 1743-6-6"
+      },
+      "dead": {
+        "date": "1793-12-16"
+      }
+    }
+  },
+  {
+    "id": "tychonius",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Christen Lassen",
+      "lastname": "Tychonius"
+    },
+    "period": {
+      "born": {
+        "date": "1680"
+      },
+      "dead": {
+        "date": "1740"
+      }
+    }
+  },
+  {
+    "id": "vedel",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Anders Sørensen",
+      "lastname": "Vedel"
+    },
+    "period": {
+      "born": {
+        "date": "1542-11-09"
+      },
+      "dead": {
+        "date": "1616-02-13"
+      }
+    }
+  },
+  {
+    "id": "wadskiaer",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Christian Frederik",
+      "lastname": "Wadskiær"
+    },
+    "period": {
+      "born": {
+        "date": "1713",
+        "place": "Ørslev Kloster ved Skive"
+      },
+      "dead": {
+        "date": "1779"
+      }
+    }
+  },
+  {
+    "id": "wandal",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Peder Topp",
+      "lastname": "Wandall"
+    },
+    "period": {
+      "born": {
+        "date": "1737-12-25"
+      },
+      "dead": {
+        "date": "1794-10-05"
+      }
+    }
+  },
+  {
+    "id": "wessel",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Johan Herman",
+      "lastname": "Wessel"
+    },
+    "period": {
+      "born": {
+        "date": "1742-10-06",
+        "place": "Jonsrud, nær Vestby, Norge"
+      },
+      "dead": {
+        "date": "1785-12-29",
+        "place": "København"
+      }
+    }
+  },
+  {
+    "id": "weyse",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "C.E.F",
+      "lastname": "Weyse",
+      "fullname": "Christoph Ernst Friedrich Weyse"
+    },
+    "period": {
+      "born": {
+        "date": "1774",
+        "place": "Altona"
+      },
+      "dead": {
+        "date": "1842",
+        "place": "København"
+      }
+    }
+  },
+  {
+    "id": "wichman",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Berthel",
+      "lastname": "Wichman"
+    },
+    "period": {
+      "born": {
+        "date": "1617-02-04"
+      },
+      "dead": {
+        "date": "1665-01-10"
+      }
+    }
+  },
+  {
+    "id": "wilster",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Christian",
+      "lastname": "Wilster",
+      "fullname": "Christian Frederik Emil Wilster"
+    },
+    "period": {
+      "born": {
+        "date": "1797-09-27"
+      },
+      "dead": {
+        "date": "1840-01-11"
+      }
+    }
+  },
+  {
+    "id": "winter",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Christian",
+      "lastname": "Winther",
+      "fullname": "Rasmus Villads Christian Ferdinand Winther"
+    },
+    "period": {
+      "born": {
+        "date": "1796-07-29",
+        "place": "Fensmark"
+      },
+      "dead": {
+        "date": "1876-12-30",
+        "place": "Paris"
+      }
+    }
+  },
+  {
+    "id": "wolfburg",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Morten Caspar",
+      "lastname": "Wolfburg"
+    },
+    "period": {
+      "born": {
+        "date": "1686"
+      },
+      "dead": {
+        "date": "1729"
+      }
+    }
+  },
+  {
+    "id": "wormj",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Jacob",
+      "lastname": "Worm",
+      "fullname": "Jacob Pedersen Worm"
+    },
+    "period": {
+      "born": {
+        "date": "1642-12-8"
+      },
+      "dead": {
+        "date": "1692 ca."
+      }
+    }
+  },
+  {
+    "id": "wormm",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Matthias",
+      "lastname": "Worm"
+    },
+    "period": {
+      "born": {
+        "date": "1636-04-19",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1707-02-14"
+      }
+    }
+  },
+  {
+    "id": "wormp",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Pauline",
+      "lastname": "Worm",
+      "fullname": "Pauline Frederikke Worm"
+    },
+    "period": {
+      "born": {
+        "date": "1825-11-29",
+        "place": "Hyllested ved Ebeltoft"
+      },
+      "dead": {
+        "date": "1883-12-13",
+        "place": "Kbh."
+      }
+    }
+  },
+  {
+    "id": "wormw",
+    "country": "dk",
+    "lang": "da",
+    "type": "poet",
+    "name": {
+      "firstname": "Willum",
+      "lastname": "Worm"
+    },
+    "period": {
+      "born": {
+        "date": "1698-08-29",
+        "place": "Kbh."
+      },
+      "dead": {
+        "date": "1737-04-11"
+      }
+    }
   }
 ]

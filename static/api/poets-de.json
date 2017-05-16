@@ -1,0 +1,629 @@
+[
+  {
+    "id": "chamisso",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Adelbert von",
+      "lastname": "Chamisso",
+      "realname": "Louis Charles Adélaïde de Chamisso de Boncourt"
+    },
+    "period": {
+      "born": {
+        "date": "1781-01-30",
+        "place": "Slottet Boncourt, Champagne"
+      },
+      "dead": {
+        "date": "1838-08-21",
+        "place": "Berlin"
+      }
+    }
+  },
+  {
+    "id": "claudius",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Matthias",
+      "lastname": "Claudius"
+    },
+    "period": {
+      "born": {
+        "date": "1740-08-15",
+        "place": "Reinfeld, Holstein"
+      },
+      "dead": {
+        "date": "1815-01-21",
+        "place": "Hamburg"
+      }
+    }
+  },
+  {
+    "id": "freiligrath",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Ferdinand",
+      "lastname": "Freiligrath",
+      "fullname": "Hermann Ferdinand Freiligrath"
+    },
+    "period": {
+      "born": {
+        "date": "1810-06-17",
+        "place": "Detmold"
+      },
+      "dead": {
+        "date": "1876-03-18",
+        "place": "Cannstatt"
+      }
+    }
+  },
+  {
+    "id": "gellert",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "C.F.",
+      "lastname": "Gellert",
+      "fullname": "Christian Fürchtegott Gellert"
+    },
+    "period": {
+      "born": {
+        "date": "1715-07-04",
+        "place": "Hainichen/Erzgebirge"
+      },
+      "dead": {
+        "date": "1769-12-13",
+        "place": "Leipzig"
+      }
+    }
+  },
+  {
+    "id": "gerhardt",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Paul",
+      "lastname": "Gerhardt"
+    },
+    "period": {
+      "born": {
+        "date": "1607",
+        "place": "Gräfenhainichen, Sachsen"
+      },
+      "dead": {
+        "date": "1676",
+        "place": "Lübben, Spree"
+      }
+    }
+  },
+  {
+    "id": "goethe",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Johann Wolfgang von",
+      "lastname": "Goethe"
+    },
+    "period": {
+      "born": {
+        "date": "1749-08-28",
+        "place": "Frankfurt am Main"
+      },
+      "dead": {
+        "date": "1832-03-22",
+        "place": "Weimar"
+      }
+    }
+  },
+  {
+    "id": "hegedorn",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Friedrich von",
+      "lastname": "Hagedorn"
+    },
+    "period": {
+      "born": {
+        "date": "1708-04-23",
+        "place": "Hamburg"
+      },
+      "dead": {
+        "date": "1754-10-28",
+        "place": "Hamburg"
+      }
+    }
+  },
+  {
+    "id": "heine",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Heinrich",
+      "lastname": "Heine"
+    },
+    "period": {
+      "born": {
+        "date": "1797-12-13",
+        "place": "Düsseldorf"
+      },
+      "dead": {
+        "date": "1856-02-17",
+        "place": "Paris"
+      }
+    }
+  },
+  {
+    "id": "herder",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Johann Gottfried von",
+      "lastname": "Herder"
+    },
+    "period": {
+      "born": {
+        "date": "1744-08-25",
+        "place": "Mohrungen (nu Murag, Polen)"
+      },
+      "dead": {
+        "date": "1803-12-18",
+        "place": "Weimar"
+      }
+    }
+  },
+  {
+    "id": "hoelderlin",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Friedrich",
+      "lastname": "Hölderlin",
+      "fullname": "Johann Christian Friedrich Hölderlin"
+    },
+    "period": {
+      "born": {
+        "date": "1770-03-20",
+        "place": "Lauffen am Neckar, Württemberg"
+      },
+      "dead": {
+        "date": "1843-06-07",
+        "place": "Tübingen"
+      }
+    }
+  },
+  {
+    "id": "holty",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "L.H.C.",
+      "lastname": "Hölty",
+      "fullname": "Ludwig Heinrich Christoph Hölty"
+    },
+    "period": {
+      "born": {
+        "date": "1748-12-21",
+        "place": "Mariensee ved Hannover"
+      },
+      "dead": {
+        "date": "1776-09-01",
+        "place": "Hannover"
+      }
+    }
+  },
+  {
+    "id": "klopstock",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Friedrich Gottlieb",
+      "lastname": "Klopstock"
+    },
+    "period": {
+      "born": {
+        "date": "1724-07-02",
+        "place": "Quedlinburg"
+      },
+      "dead": {
+        "date": "1803-03-14",
+        "place": "Hamburg"
+      }
+    }
+  },
+  {
+    "id": "lenau",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Nikolaus",
+      "lastname": "Lenau",
+      "fullname": "Nikolaus Franz Niembsch, Edler von Strehlenau"
+    },
+    "period": {
+      "born": {
+        "date": "1802-08-13",
+        "place": "Csatád, Ungarn"
+      },
+      "dead": {
+        "date": "1850-08-22",
+        "place": "Oberdöbling nær Wien"
+      }
+    }
+  },
+  {
+    "id": "lessing",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Gotthold Ephraim",
+      "lastname": "Lessing"
+    },
+    "period": {
+      "born": {
+        "date": "1729-01-22",
+        "place": "Kamenz/Oberlausitz"
+      },
+      "dead": {
+        "date": "1781-02-15",
+        "place": "Braunschweig"
+      }
+    }
+  },
+  {
+    "id": "luther",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Martin",
+      "lastname": "Luther"
+    },
+    "period": {
+      "born": {
+        "date": "1483-11-10",
+        "place": "Eisleben, Sachsen (nu Tyskland)"
+      },
+      "dead": {
+        "date": "1546-02-18",
+        "place": "Eisleben, Sachsen (nu Tyskland)"
+      }
+    }
+  },
+  {
+    "id": "morgenstern",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Christian",
+      "lastname": "Morgenstern"
+    },
+    "period": {
+      "born": {
+        "date": "1871-05-06",
+        "place": "München"
+      },
+      "dead": {
+        "date": "1914-03-31",
+        "place": "Meran"
+      }
+    }
+  },
+  {
+    "id": "morike",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Eduard",
+      "lastname": "Mörike"
+    },
+    "period": {
+      "born": {
+        "date": "1804-09-08",
+        "place": "Ludwigsburg"
+      },
+      "dead": {
+        "date": "1875-06-04",
+        "place": "Stuttgart"
+      }
+    }
+  },
+  {
+    "id": "muellerw",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Wilhelm",
+      "lastname": "Müller"
+    },
+    "period": {
+      "born": {
+        "date": "1794-10-07",
+        "place": "Dessau, Anhalt"
+      },
+      "dead": {
+        "date": "1827-09-30",
+        "place": "Dessau, Anhalt"
+      }
+    }
+  },
+  {
+    "id": "nietzsche",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Friedrich",
+      "lastname": "Nietzsche",
+      "fullname": "Friedrich Vilhelm Nietzsche"
+    },
+    "period": {
+      "born": {
+        "date": "1844-10-15",
+        "place": "Röcken ved Lützen"
+      },
+      "dead": {
+        "date": "1900-08-25",
+        "place": "Weimar"
+      }
+    }
+  },
+  {
+    "id": "novalis",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "",
+      "lastname": "Novalis",
+      "realname": "Georg Friedrich Philipp Freiherr von Hardenberg"
+    },
+    "period": {
+      "born": {
+        "date": "1772-05-02",
+        "place": "Oberwiederstedt, Harz"
+      },
+      "dead": {
+        "date": "1801-03-25",
+        "place": "Weißenfels"
+      }
+    }
+  },
+  {
+    "id": "opitz",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Martin",
+      "lastname": "Opitz",
+      "fullname": "Martin Opitz von Boberfeld"
+    },
+    "period": {
+      "born": {
+        "date": "1597-12-23",
+        "place": "Bunzlau, Schlesien"
+      },
+      "dead": {
+        "date": "1639-08-20",
+        "place": "Danzig"
+      }
+    }
+  },
+  {
+    "id": "pfeffel",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Gottlieb Konrad",
+      "lastname": "Pfeffel"
+    },
+    "period": {
+      "born": {
+        "date": "1736-06-28",
+        "place": "Colmar"
+      },
+      "dead": {
+        "date": "1809-05-01",
+        "place": "Colmar"
+      }
+    }
+  },
+  {
+    "id": "rilke",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Rainer Maria",
+      "lastname": "Rilke"
+    },
+    "period": {
+      "born": {
+        "date": "1875-12-04",
+        "place": "Prag, Østrig-Ungarn (nu Tjekkiet)"
+      },
+      "dead": {
+        "date": "1926-12-29",
+        "place": "Valmont, Schweiz"
+      }
+    }
+  },
+  {
+    "id": "rist",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Johan",
+      "lastname": "Rist"
+    },
+    "period": {
+      "born": {
+        "date": "1606-03-08",
+        "place": "Ottensen, Holstein"
+      },
+      "dead": {
+        "date": "1667-08-31",
+        "place": "Wedel, Tyskland"
+      }
+    }
+  },
+  {
+    "id": "rueckert",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Friedrich",
+      "lastname": "Rückert",
+      "pseudonym": "Freimund Raimar"
+    },
+    "period": {
+      "born": {
+        "date": "1788-05-16",
+        "place": "Schweinfurt"
+      },
+      "dead": {
+        "date": "1866-01-31",
+        "place": "Neuses"
+      }
+    }
+  },
+  {
+    "id": "schiller",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Friedrich von",
+      "lastname": "Schiller",
+      "fullname": "Johann Christoph Friedrich von Schiller"
+    },
+    "period": {
+      "born": {
+        "date": "1759-11-10",
+        "place": "Marbach, Württemberg"
+      },
+      "dead": {
+        "date": "1805-05-09",
+        "place": "Weimar"
+      }
+    }
+  },
+  {
+    "id": "tieck",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Johann Ludwig",
+      "lastname": "Tieck"
+    },
+    "period": {
+      "born": {
+        "date": "1773-05-31",
+        "place": "Berlin"
+      },
+      "dead": {
+        "date": "1853-04-28",
+        "place": "Berlin"
+      }
+    }
+  },
+  {
+    "id": "uhland",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Ludwig",
+      "lastname": "Uhland"
+    },
+    "period": {
+      "born": {
+        "date": "1787-04-26",
+        "place": "Tübingen"
+      },
+      "dead": {
+        "date": "1862-11-13",
+        "place": "Tübingen"
+      }
+    }
+  },
+  {
+    "id": "vogelweide",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Walther von der",
+      "lastname": "Vogelweide"
+    },
+    "period": {
+      "born": {
+        "date": "1170 ca."
+      },
+      "dead": {
+        "date": "1230 ca."
+      }
+    }
+  },
+  {
+    "id": "voigtlaender",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Gabriel",
+      "lastname": "Voigtländer"
+    },
+    "period": {
+      "born": {
+        "date": "1596 ca."
+      },
+      "dead": {
+        "date": "1643"
+      }
+    }
+  },
+  {
+    "id": "wieland",
+    "country": "de",
+    "lang": "de",
+    "type": "poet",
+    "name": {
+      "firstname": "Christoph Martin",
+      "lastname": "Wieland"
+    },
+    "period": {
+      "born": {
+        "date": "1733-09-05",
+        "place": "Oberholzheim, nær Biberach"
+      },
+      "dead": {
+        "date": "1813-01-20",
+        "place": "Weimar"
+      }
+    }
+  }
+]

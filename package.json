@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "build-json": "node tools/build-json-files.js"
   },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
@@ -12,6 +13,9 @@
     "path-match": "^1.2.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "xml2js": "^0.4.17"
   },
   "author": "Jesper Christensen",
   "license": "MIT"
