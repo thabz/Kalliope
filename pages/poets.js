@@ -19,7 +19,7 @@ export default class extends React.Component {
       <Head title="Digtere - Kalliope" />
       <Nav />
 
-      <div className="hero">
+      <div className="row">
         <h1 className="title">Poets {this.props.lang}!</h1>
         <p className="description">Here goes the list of poets</p>
         {list}
