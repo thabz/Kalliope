@@ -12,15 +12,15 @@ export default () => (
       <p className="description">To get started, edit <code>pages/index.js</code> and save to reload.</p>
 
       <div className="row">
-        <Link href="/poets">
+        <a href="/poets/en">
           <a className="card">
             <h3>Poets &rarr;</h3>
             <p>The list of all poets. This needs to be localized.</p>
           </a>
-        </Link>
-        <Link href="https://open.segment.com/create-next-app">
+        </a>
+        <Link href="/poets/en">
           <a className="card">
-            <h3>Examples &rarr;</h3>
+            <h3>Directly &rarr;</h3>
             <p>
               And find other example boilerplates on the <code>create-next-app</code> site
             </p>
@@ -33,6 +33,7 @@ export default () => (
           </a>
         </Link>
       </div>
+      <a href="/poets/en">Direkte</a>
     </div>
 
     <style jsx>{`
