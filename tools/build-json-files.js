@@ -13,11 +13,11 @@ fs.readFile('data/poets.xml', (err, data) => {
   parser.parseString(data, (err, result) => {
     const persons = { result };
     result.persons.person.forEach(p => {
-      console.log(p);
+      //console.log(p);
       const { id, country, lang, type } = p.$;
       const { name, period, works } = p;
       let list = byCountry.get(country) || [];
-      let worksArray = works ? works.split(",") : null;
+      let worksArray = works ? works.split(",") : [];
       list.push({ id, country, lang, type, name,
          period, works: worksArray });
       byCountry.set(country, list);
