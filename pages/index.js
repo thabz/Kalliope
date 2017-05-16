@@ -8,32 +8,8 @@ export default () => (
     <Nav />
 
     <div className="hero">
-      <h1 className="title">Welcome to Next!</h1>
-      <p className="description">To get started, edit <code>pages/index.js</code> and save to reload.</p>
-
-      <div className="row">
-        <a href="/poets/en">
-          <a className="card">
-            <h3>Poets &rarr;</h3>
-            <p>The list of all poets. This needs to be localized.</p>
-          </a>
-        </a>
-        <Link href="/poets/en">
-          <a className="card">
-            <h3>Directly &rarr;</h3>
-            <p>
-              And find other example boilerplates on the <code>create-next-app</code> site
-            </p>
-          </a>
-        </Link>
-        <Link href="https://github.com/segmentio/create-next-app">
-          <a className="card">
-            <h3>Create Next App &rarr;</h3>
-            <p>Was this tool helpful? Let us know how we can improve it</p>
-          </a>
-        </Link>
-      </div>
-      <a href="/poets/en">Direkte</a>
+      <h1 className="title">Kalliope in Next!</h1>
+      <p className="description">Here we go</p>
     </div>
 
     <style jsx>{`

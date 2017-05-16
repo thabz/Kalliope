@@ -7,7 +7,7 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 const route = pathMatch()
-const match = route('/poets/:lang')
+const match = route('/:lang/poets')
 
 app.prepare()
 .then(() => {

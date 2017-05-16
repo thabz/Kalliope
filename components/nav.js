@@ -2,7 +2,8 @@ import Head from './head'
 import Link from 'next/link'
 
 const links = [
-  { href: 'https://github.com/segmentio/create-next-app', label: 'Github' }
+  { href: '/da/poets', label: 'Danish poets' },
+  { href: '/en/poets', label: 'English poets' },
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
@@ -20,9 +21,7 @@ const Nav = () => (
         {links.map(
           ({ key, href, label }) => (
             <li key={key}>
-              <Link href={href}>
-                <a>{label}</a>
-              </Link>
+              <a href={href}>{label}</a>
             </li>
           )
         )}
