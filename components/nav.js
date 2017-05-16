@@ -2,8 +2,8 @@ import Head from './head'
 import Link from 'next/link'
 
 const links = [
-  { href: '/da/poets', label: 'Danish poets' },
-  { href: '/en/poets', label: 'English poets' },
+  { href: '/da/poets', label: 'Dansk' },
+  { href: '/en/poets', label: 'Engelsk' },
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
