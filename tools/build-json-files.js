@@ -4,8 +4,8 @@ const parser = new xml2js.Parser({
   explicitArray: false
 });
 
-const first = (a) => {
-  return a ? a[0] : null;
+const forceArray = (a) => {
+  return a instanceof Array ? a : [a];
 }
 
 fs.readFile('data/poets.xml', (err, data) => {
@@ -13,12 +13,13 @@ fs.readFile('data/poets.xml', (err, data) => {
   parser.parseString(data, (err, result) => {
     const persons = { result };
     result.persons.person.forEach(p => {
-      //console.log(p);
+      console.log(p);
       const { id, country, lang, type } = p.$;
-      const { name, period } = p;
+      const { name, period, works } = p;
       let list = byCountry.get(country) || [];
+      let worksArray = works ? works.split(",") : null;
       list.push({ id, country, lang, type, name,
-         period });
+         period, works: worksArray });
       byCountry.set(country, list);
     });
   });
