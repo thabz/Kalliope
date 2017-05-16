@@ -1,5 +1,6 @@
 {
-  "name": "create-next-example-app",
+  "name": "Kalliope",
+  "version": "1.0.0",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
@@ -10,5 +11,7 @@
     "path-match": "^1.2.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
-  }
+  },
+  "author": "Jesper Christensen",
+  "license": "MIT"
 }
