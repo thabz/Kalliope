@@ -12,7 +12,7 @@ export default class extends React.Component {
   render() {
     const { lang, poets } = this.props;
     const list = poets.map( (poet, i) => {
-      return <div key={i}>{poet.lastName}</div>;
+      return <div key={i}>{poet.name.lastname}</div>;
     })
     return (
     <div>
