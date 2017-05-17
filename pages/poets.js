@@ -12,7 +12,8 @@ export default class extends React.Component {
   render() {
     const { lang, poets } = this.props;
     const list = poets.map((poet, i) => {
-      return <div key={i}>{poet.name.lastname}</div>;
+      const url = `/${lang}/works/${poet.id}`;
+      return <div key={i}><a href={url}>{poet.name.lastname}</a></div>;
     });
     return (
       <div>
