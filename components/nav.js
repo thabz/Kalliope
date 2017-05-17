@@ -14,7 +14,7 @@ const Nav = () => (
     <ul>
       <li>
         <Link prefetch href="/">
-          <a>Home</a>
+          <a>Kalliope</a>
         </Link>
       </li>
       <ul>
@@ -46,11 +46,6 @@ const Nav = () => (
       li {
         display: flex;
         padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
       }
     `}</style>
   </nav>
