@@ -87,5 +87,11 @@ const build_poet_works_json = collected_poets => {
   });
 };
 
+try {
+  fs.mkdirSync(`static/api`);
+} catch (err) {
+  if (err.code !== 'EEXIST') throw err;
+}
+
 const collected_poets = build_poets_json();
 build_poet_works_json(collected_poets);
