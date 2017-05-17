@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Head from '../components/head';
 import Nav from '../components/nav';
+import Heading from '../components/heading';
 import 'isomorphic-fetch';
 
 export default class extends React.Component {
@@ -21,8 +22,7 @@ export default class extends React.Component {
         <Nav />
 
         <div className="row">
-          <h1 className="title">Poets {this.props.lang}!</h1>
-          <p className="description">Here goes the list of poets</p>
+        <Heading title="Digtere"/>
           {list}
         </div>
       </div>

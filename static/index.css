@@ -3,6 +3,11 @@
   color: #333;
 }
 
+.heading {
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+}
+
 .heading h1 {
   margin: 0;
   width: 100%;
@@ -15,7 +20,7 @@
 .heading h2 {
   margin: 0;
   width: 100%;
-  margin-top: 10px;
+  margin: 10px 0;
   line-height: 1.15;
   font-size: 32px;
   font-weight: lighter;

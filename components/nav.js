@@ -12,11 +12,14 @@ const links = [
 const Nav = () => (
   <nav>
     <ul>
+      <ul>
+        <li>
+          <a href="/">Kalliope</a>
+        </li>
       <li>
-        <Link prefetch href="/">
-          <a>Kalliope</a>
-        </Link>
+          <a href="/da/poets">Digtere</a>
       </li>
+      </ul>
       <ul>
         {links.map(
           ({ key, href, label }) => (
@@ -34,18 +37,18 @@ const Nav = () => (
         font-family: -apple-system,BlinkMacSystemFont,Avenir Next,Avenir,Helvetica,sans-serif;
       }
       nav {
-        text-align: center;
+        text-align: left;
       }
       ul {
         display: flex;
         justify-content: space-between;
       }
       nav > ul {
-        padding: 4px 16px;
+        padding: 4px 0px;
       }
       li {
         display: flex;
-        padding: 6px 8px;
+        padding: 6px 16px;
       }
     `}</style>
   </nav>
