@@ -49,7 +49,7 @@ const build_poets_json = () => {
 
 const build_poet_works_json = collected_poets => {
   collected_poets.forEach((poet, poetId) => {
-    let collected = [];
+    let collectedHeaders = [];
     poet.workIds.forEach(workId => {
       const data = fs.readFileSync(`fdirs/${poetId}/${workId}.xml`);
       const parser = new xml2js.Parser({
@@ -66,12 +66,12 @@ const build_poet_works_json = collected_poets => {
         const head = work.workhead;
         const { title, year } = head;
         const data = { id: workId, title, year, status, type };
-        collected.push(data);
+        collectedHeaders.push(data);
       });
     });
     const objectToWrite = {
       poet: poet,
-      works: collected,
+      works: collectedHeaders,
     };
     const json = JSON.stringify(objectToWrite, null, 2);
     try {
