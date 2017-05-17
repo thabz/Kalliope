@@ -23,22 +23,18 @@ app.prepare().then(() => {
   createServer((req, res) => {
     const { pathname, query } = parse(req.url, true);
 
-    const matches = routes.filter(p => p.match(pathname) !== false).map(p => {
-      return {
-        params: p.match(pathname),
-        path: p.path,
-      };
-    });
-    if (matches.length === 0) {
-      handle(req, res);
-      return;
-    } else {
-      const { params, path } = matches[0];
-      // assigning `query` into the params means that we still
-      // get the query string passed to our application
-      // i.e. /blog/foo?show-comments=true
-      app.render(req, res, path, Object.assign(params, query));
+    for (let i = 0; i < routes.length; i++) {
+      const r = routes[i];
+      const params = r.match(pathname);
+      if (params !== false) {
+        // Assigning `query` into the params means that we still
+        // get the query string passed to our application
+        // i.e. /blog/foo?show-comments=true
+        app.render(req, res, r.path, Object.assign(params, query));
+        return;
+      }
     }
+    handle(req, res);
   }).listen(3000, err => {
     if (err) throw err;
     console.log('> Ready on http://localhost:3000');
