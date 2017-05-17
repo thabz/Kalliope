@@ -19,14 +19,14 @@ export default class extends React.Component {
     const list = works.map((work, i) => {
       return <div key={i}>{work.title}</div>;
     });
-    const title = <PoetName poet={poet}/>
+    const title = <PoetName poet={poet} />;
     return (
       <div>
         <Head title="Digtere - Kalliope" />
         <Nav />
 
         <div className="row">
-          <Heading title={title} subtitle="Værker"/>
+          <Heading title={title} subtitle="Værker" />
           {list}
         </div>
       </div>

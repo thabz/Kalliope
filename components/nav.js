@@ -1,13 +1,13 @@
-import Head from './head'
-import Link from 'next/link'
+import Head from './head';
+import Link from 'next/link';
 
 const links = [
   { href: '/da/poets', label: 'Dansk' },
   { href: '/en/poets', label: 'Engelsk' },
 ].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`
-  return link
-})
+  link.key = `nav-link-${link.href}-${link.label}`;
+  return link;
+});
 
 const Nav = () => (
   <nav>
@@ -16,18 +16,16 @@ const Nav = () => (
         <li>
           <a href="/">Kalliope</a>
         </li>
-      <li>
+        <li>
           <a href="/da/poets">Digtere</a>
-      </li>
+        </li>
       </ul>
       <ul>
-        {links.map(
-          ({ key, href, label }) => (
-            <li key={key}>
-              <a href={href}>{label}</a>
-            </li>
-          )
-        )}
+        {links.map(({ key, href, label }) => (
+          <li key={key}>
+            <a href={href}>{label}</a>
+          </li>
+        ))}
       </ul>
     </ul>
 
@@ -52,6 +50,6 @@ const Nav = () => (
       }
     `}</style>
   </nav>
-)
+);
 
-export default Nav
+export default Nav;
