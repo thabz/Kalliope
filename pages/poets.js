@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Head from '../components/head';
 import Nav from '../components/nav';
-import Heading from '../components/heading';
+import Heading from '../components/heading.js';
+import PoetName from '../components/poetname.js';
 import 'isomorphic-fetch';
 
 const groupsByLetter = poets => {
@@ -10,6 +11,9 @@ const groupsByLetter = poets => {
     let key = 'Ukendt digter';
     if (p.name.lastname) {
       key = p.name.lastname[0];
+    }
+    if (key === 'A' && p.name.lastname.indexOf('Aa') === 0) {
+      key = 'Å';
     }
     let group = groups.get(key) || [];
     group.push(p);
@@ -35,7 +39,13 @@ export default class extends React.Component {
     groups.forEach((poets, key) => {
       const list = poets.map((poet, i) => {
         const url = `/${lang}/works/${poet.id}`;
-        return <div key={i}><a href={url}>{poet.name.lastname}</a></div>;
+        return (
+          <div key={i}>
+            <a href={url}>
+              <PoetName poet={poet} lastNameFirst includePeriod />
+            </a>
+          </div>
+        );
       });
       const renderedGroup = (
         <div className="list-section">

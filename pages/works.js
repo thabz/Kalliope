@@ -19,7 +19,7 @@ export default class extends React.Component {
     const list = works.map((work, i) => {
       return <div key={i}>{work.title}</div>;
     });
-    const title = <PoetName poet={poet} />;
+    const title = <PoetName poet={poet} includePeriod />;
     return (
       <div>
         <Head title="Digtere - Kalliope" />
