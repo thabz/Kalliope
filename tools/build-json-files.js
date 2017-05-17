@@ -58,7 +58,7 @@ const build_poet_works_json = collected_poets => {
       });
       parser.parseString(data, (err, result) => {
         if (!result) {
-          console.log(`Error parsing ${poetId}/${workId}`);
+          console.log(`Error parsing ${poetId}/${workId}: ${err}`);
           return;
         }
         const work = result.kalliopework;
