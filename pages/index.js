@@ -3,7 +3,7 @@ import Head from '../components/head';
 import Nav from '../components/nav';
 import Heading from '../components/heading.js';
 
-const todoItems = ["To digtere har 'kjaer' som id."];
+const todoItems = ['Vis digt'];
 
 export default class extends React.Component {
   render() {
