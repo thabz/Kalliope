@@ -1,3 +1,8 @@
+body {
+  box-sizing: border-box;
+  height: 150px;
+}
+
 .hero {
   width: 100%;
   color: #333;
@@ -26,12 +31,9 @@
   font-weight: lighter;
 }
 
-.list-section {
-  width: 40%;
-}
-
 .list-section h3 {
   font-weight: lighter;
+  font-size: 18px;
   border-bottom: 1px solid black;
   margin: 30px 0 10px 0;
 }
@@ -39,9 +41,11 @@
 .title, .description {
   text-align: center;
 }
+
 .row {
   max-width: 880px;
   margin: 80px auto 40px;
+  padding: 0 20px;
 }
 
 a {
@@ -50,11 +54,23 @@ a {
   font-size: 13px;
 }
 
-.group {
+.two-columns {
+  width: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid #fee;
+  overflow: auto;
+}
+
+.list-section {
+  background: #efe;
+  max-width: 40%;
+  align-self: flex-start;
 }
 
 .poetname .period {
-  opacity: 0.7;
+  opacity: 0.5;
 }

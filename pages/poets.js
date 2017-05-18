@@ -60,11 +60,13 @@ export default class extends React.Component {
     return (
       <div>
         <Head title="Digtere - Kalliope" />
-        <Nav />
 
         <div className="row">
+          <Nav />
           <Heading title="Digtere" subtitle="Efter navn" />
-          {renderedGroups}
+          <div className="two-columns">
+            {renderedGroups}
+          </div>
         </div>
       </div>
     );
