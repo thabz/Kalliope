@@ -5,7 +5,7 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "test": "jest",
+    "test": "jest --watch",
     "build-json": "node tools/build-json-files.js"
   },
   "dependencies": {
