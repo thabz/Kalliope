@@ -3,6 +3,7 @@ import Head from '../components/head';
 import Nav from '../components/nav';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
+import WorkName from '../components/workname.js';
 import 'isomorphic-fetch';
 
 export default class extends React.Component {
@@ -17,7 +18,8 @@ export default class extends React.Component {
   render() {
     const { lang, poet, works } = this.props;
     const list = works.map((work, i) => {
-      return <div key={i}>{work.title}</div>;
+      const url = `/${lang}/work/${poet.id}/${work.id}`;
+      return <div key={i}><a href={url}><WorkName work={work} /></a></div>;
     });
     const title = <PoetName poet={poet} includePeriod />;
     return (
@@ -27,7 +29,9 @@ export default class extends React.Component {
 
         <div className="row">
           <Heading title={title} subtitle="Værker" />
-          {list}
+          <div className="two-columns">
+            {list}
+          </div>
         </div>
       </div>
     );

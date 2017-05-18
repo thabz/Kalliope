@@ -33,7 +33,6 @@ export default class extends React.Component {
     const { lang, poets } = this.props;
 
     const groups = groupsByLetter(poets);
-    console.log(groups.entries());
 
     let renderedGroups = [];
     groups.forEach((poets, key) => {
