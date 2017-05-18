@@ -5,6 +5,7 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
+    "test": "jest",
     "build-json": "node tools/build-json-files.js"
   },
   "dependencies": {
@@ -15,7 +16,11 @@
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
-    "xml2js": "^0.4.17"
+    "xml2js": "^0.4.17",
+    "enzyme": "^2.8.2",
+    "jest": "^20.0.0",
+    "react-addons-test-utils": "^15.5.1",
+    "react-test-renderer": "^15.5.4"
   },
   "author": "Jesper Christensen",
   "license": "MIT"
