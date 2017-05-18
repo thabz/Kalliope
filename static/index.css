@@ -44,7 +44,7 @@ body {
 
 .row {
   max-width: 880px;
-  margin: 80px auto 40px;
+  margin: 80px auto 80px;
   padding: 0 20px;
 }
 
@@ -56,12 +56,12 @@ a {
 
 .two-columns {
   width: 100%;
-  columns: 2 auto;
-  break-inside: avoid;
-  column-fill: auto;
+  columns: 2;
 }
 
 .list-section {
+  break-inside: avoid;
+  margin-bottom: 10px;
 }
 
 .poetname .period {
