@@ -1,61 +1,26 @@
 import Link from 'next/link';
 import Head from '../components/head';
 import Nav from '../components/nav';
+import Heading from '../components/heading.js';
 
-export default () => (
-  <div>
-    <Head title="Kalliope" />
-    <Nav />
+const todoItems = ["To digtere har 'kjaer' som id."];
 
-    <div className="hero">
-      <h1 className="title">Kalliope in Next!</h1>
-      <p className="description">Here we go</p>
-    </div>
-
-    <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .title, .description {
-        text-align: center;
-      }
-      .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
-        text-decoration: none;
-        color: #434343;
-        border: 1px solid #9B9B9B;
-      }
-      .card:hover {
-        border-color: #067df7;
-      }
-      .card h3 {
-        margin: 0;
-        color: #067df7;
-        font-size: 18px;
-      }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
-      }
-    `}</style>
-  </div>
-);
+export default class extends React.Component {
+  render() {
+    const items = todoItems.map(item => {
+      return <div>{item.name}</div>;
+    });
+    return (
+      <div>
+        <Head title="Digtere - Kalliope" />
+        <div className="row">
+          <Nav />
+          <Heading title="Kalliope" subtitle="Spring/summer 2017" />
+          <div className="two-columns">
+            {todoItems}
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
