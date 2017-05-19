@@ -24,22 +24,41 @@ const groupsByLetter = poets => {
   return groups;
 };
 
+const groupsByYear = poets => {
+  let groups = new Map();
+  poets.forEach(p => {
+    let key = 'Ukendt digter';
+    if (p.name.lastname) {
+      key = p.name.lastname[0];
+    }
+    if (key === 'A' && p.name.lastname.indexOf('Aa') === 0) {
+      key = 'Å';
+    }
+    let group = groups.get(key) || [];
+    group.push(p);
+    groups.set(key, group);
+  });
+  return groups;
+};
+
 export default class extends React.Component {
-  static async getInitialProps({ query: { lang } }) {
+  static async getInitialProps({ query: { lang, groupBy } }) {
     const res = await fetch('http://localhost:3000/static/api/poets-dk.json');
     const poets = await res.json();
-    return { lang, poets };
+    return { lang, groupBy, poets };
   }
 
   render() {
-    const { lang, poets } = this.props;
+    const { lang, poets, groupBy } = this.props;
 
     const tabs = [
       { title: 'Efter navn', url: Links.poetsURL(lang, 'name') },
       { title: 'Efter år', url: Links.poetsURL(lang, 'year') },
     ];
-
-    const groups = groupsByLetter(poets);
+    const selectedTabIndex = groupBy === 'name' ? 0 : 1;
+    const groups = groupBy === 'name'
+      ? groupsByLetter(poets)
+      : groupsByYear(poets);
 
     let renderedGroups = [];
     groups.forEach((poets, key) => {
@@ -70,7 +89,7 @@ export default class extends React.Component {
         <div className="row">
           <Nav />
           <Heading title="Digtere" />
-          <Tabs items={tabs} selectedIndex={0} />
+          <Tabs items={tabs} selectedIndex={selectedTabIndex} />
           <div className="two-columns">
             {renderedGroups}
           </div>
