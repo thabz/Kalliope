@@ -9,15 +9,14 @@ body {
 }
 
 .heading {
-  border-bottom: 1px solid black;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .heading h1 {
   margin: 0;
   width: 100%;
   padding-top: 20px;
-  line-height: 1.15;
+  line-height: 48px;
   font-size: 48px;
   font-weight: lighter;
 }
@@ -69,4 +68,37 @@ a {
 
 .workname .year {
   opacity: 0.5;
+}
+
+
+/* Tabs */
+.tabs {
+  border-bottom: 1px solid black;
+  margin-bottom: 40px;
+}
+
+.tabs > .tab {
+  display: inline-block;
+  margin-right: 20px;
+  border-bottom: 2px solid transparent;
+}
+
+.tabs > .tab h2 {
+  line-height: 32px;
+  font-size: 32px;
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs > .tab.selected {
+  border-bottom: 2px solid black;
+}
+
+.tabs .tab.selected a {
+  color: black;
+}
+
+.tabs .tab a {
+  color: #888;
 }

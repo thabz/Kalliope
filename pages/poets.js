@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Head from '../components/head';
+import * as Links from '../components/links';
 import Nav from '../components/nav';
+import Tabs from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import 'isomorphic-fetch';
@@ -32,6 +34,11 @@ export default class extends React.Component {
   render() {
     const { lang, poets } = this.props;
 
+    const tabs = [
+      { title: 'Efter navn', url: Links.poetsURL(lang, 'name') },
+      { title: 'Efter år', url: Links.poetsURL(lang, 'year') },
+    ];
+
     const groups = groupsByLetter(poets);
 
     let renderedGroups = [];
@@ -62,7 +69,8 @@ export default class extends React.Component {
 
         <div className="row">
           <Nav />
-          <Heading title="Digtere" subtitle="Efter navn" />
+          <Heading title="Digtere" />
+          <Tabs items={tabs} selectedIndex={0} />
           <div className="two-columns">
             {renderedGroups}
           </div>
