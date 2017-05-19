@@ -1,6 +1,6 @@
 import Head from './head';
 import Link from 'next/link';
-
+import * as Links from './links.js';
 const links = [
   { href: '/da/poets', label: 'Dansk' },
   { href: '/en/poets', label: 'Engelsk' },
@@ -9,27 +9,30 @@ const links = [
   return link;
 });
 
-const Nav = () => (
-  <nav>
-    <ul>
+const Nav = props => {
+  const { lang } = props;
+  const _poetsURL = Links.poetsURL(lang);
+  return (
+    <nav>
       <ul>
-        <li>
-          <a href="/">Kalliope</a>
-        </li>
-        <li>
-          <a href="/da/poets">Digtere</a>
-        </li>
-      </ul>
-      <ul>
-        {links.map(({ key, href, label }) => (
-          <li key={key}>
-            <a href={href}>{label}</a>
+        <ul>
+          <li>
+            <a href="/">Kalliope</a>
           </li>
-        ))}
+          <li>
+            <a href={_poetsURL}>Digtere</a>
+          </li>
+        </ul>
+        <ul>
+          {links.map(({ key, href, label }) => (
+            <li key={key}>
+              <a href={href}>{label}</a>
+            </li>
+          ))}
+        </ul>
       </ul>
-    </ul>
 
-    <style jsx>{`
+      <style jsx>{`
       :global(body) {
         margin: 0;
         font-family: -apple-system,BlinkMacSystemFont,Avenir Next,Avenir,Helvetica,sans-serif;
@@ -49,7 +52,7 @@ const Nav = () => (
         padding: 6px 16px;
       }
     `}</style>
-  </nav>
-);
-
+    </nav>
+  );
+};
 export default Nav;
