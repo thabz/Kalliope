@@ -22,7 +22,7 @@ export default props => {
         ? 'Ukendt år'
         : born.date.substring(0, 4);
       let deadYear = dead.date === '?'
-        ? 'Ukendt år'
+        ? 'ukendt år'
         : dead.date.substring(0, 4);
       if (deadYear.substring(0, 2) === bornYear.substring(0, 2)) {
         deadYear = deadYear.substring(2, 4);

@@ -10,7 +10,7 @@ const route = pathMatch();
 
 const routes = [
   {
-    match: route('/:lang/poets'),
+    match: route('/:lang/poets/:groupBy'),
     path: '/poets',
   },
   {

@@ -47,7 +47,7 @@ export default class extends React.Component {
         );
       });
       const renderedGroup = (
-        <div className="list-section">
+        <div className="list-section" key={key}>
           <h3>{key}</h3>
           {list}
         </div>
