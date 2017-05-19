@@ -11,7 +11,7 @@ const links = [
 
 const Nav = props => {
   const { lang } = props;
-  const _poetsURL = Links.poetsURL(lang);
+  const poetsURL = Links.poetsURL(lang);
   return (
     <nav>
       <ul>
@@ -20,7 +20,7 @@ const Nav = props => {
             <a href="/">Kalliope</a>
           </li>
           <li>
-            <a href={_poetsURL}>Digtere</a>
+            <a href={poetsURL}>Digtere</a>
           </li>
         </ul>
         <ul>
