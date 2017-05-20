@@ -9,6 +9,8 @@ export type Poet = {
 
 export type Work = {
   id: string,
+  title: string,
+  year?: string,
 };
 
 export type SortReturn = 1 | 0 | -1;

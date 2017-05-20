@@ -1,5 +1,6 @@
 // @flow
 
+import React from 'react';
 import Link from 'next/link';
 import Head from '../components/head';
 import Nav from '../components/nav';
@@ -16,11 +17,15 @@ export default class extends React.Component {
     works: Array<Work>,
   };
 
-  static async getInitialProps({ query: { lang, poetId } }) {
+  static async getInitialProps({
+    query: { lang, poetId },
+  }: {
+    query: { lang: Lang, poetId: string },
+  }) {
     const res = await fetch(
       `http://localhost:3000/static/api/${poetId}/works.json`
     );
-    const json = await res.json();
+    const json: { poet: Poet, works: Array<Work> } = await res.json();
     return { lang, poet: json.poet, works: json.works };
   }
 
@@ -34,7 +39,7 @@ export default class extends React.Component {
     return (
       <div>
         <Head title="Digtere - Kalliope" />
-        <Nav />
+        <Nav lang={lang} />
 
         <div className="row">
           <Heading title={title} subtitle="Værker" />

@@ -1,16 +1,23 @@
-const Tabs = props => {
-  const { items, selectedIndex } = props;
+// @flow
+import React from 'react';
 
-  const itemsRendered = items.map((item, i) => {
-    const className = i === selectedIndex ? 'tab selected' : 'tab';
-    return (
-      <div className={className} key={i}>
-        <a href={item.url}><h2>{item.title}</h2></a>
-      </div>
-    );
-  });
+export default class extends React.Component {
+  props: {
+    items: Array<{ url: string, title: string }>,
+    selectedIndex: number,
+  };
+  render() {
+    const { items, selectedIndex } = this.props;
 
-  return <div className="tabs">{itemsRendered}</div>;
-};
+    const itemsRendered = items.map((item, i) => {
+      const className = i === selectedIndex ? 'tab selected' : 'tab';
+      return (
+        <div className={className} key={i}>
+          <a href={item.url}><h2>{item.title}</h2></a>
+        </div>
+      );
+    });
 
-export default Tabs;
+    return <div className="tabs">{itemsRendered}</div>;
+  }
+}

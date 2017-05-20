@@ -1,6 +1,7 @@
 // @flow
 
 import 'isomorphic-fetch';
+import React from 'react';
 import Link from 'next/link';
 import Head from '../components/head';
 import * as Links from '../components/links';
@@ -9,7 +10,9 @@ import Tabs from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import * as Sorting from './helpers/sorting.js';
-import type { Section, Poet, SortReturn } from './helpers/types.js';
+import type { Lang, Section, Poet, SortReturn } from './helpers/types.js';
+
+type GroupBy = 'name' | 'year';
 
 const groupsByLetter = poets => {
   let groups = new Map();
@@ -59,16 +62,20 @@ const groupsByYear = (poets: Array<Poet>) => {
 };
 
 export default class extends React.Component {
-  static async getInitialProps({ query: { lang, groupBy } }) {
+  static async getInitialProps({
+    query: { lang, groupBy },
+  }: {
+    query: { lang: Lang, groupBy: GroupBy },
+  }) {
     const res = await fetch('http://localhost:3000/static/api/poets-dk.json');
     const poets: Array<Poet> = await res.json();
     return { lang, groupBy, poets };
   }
 
   props: {
-    lang: string,
+    lang: Lang,
     poets: Array<Poet>,
-    groupBy: 'name' | 'year',
+    groupBy: GroupBy,
   };
 
   render() {
@@ -111,7 +118,7 @@ export default class extends React.Component {
         <Head title="Digtere - Kalliope" />
 
         <div className="row">
-          <Nav />
+          <Nav lang={lang} />
           <Heading title="Digtere" />
           <Tabs items={tabs} selectedIndex={selectedTabIndex} />
           <div className="two-columns">
