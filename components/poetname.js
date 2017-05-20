@@ -32,7 +32,7 @@ export default props => {
   }
   const parts = [namePart, periodPart].map((p, i) => {
     const className = i === 0 ? 'name' : 'period';
-    return p ? <span className={className}>{p} </span> : null;
+    return p ? <span key={i} className={className}>{p} </span> : null;
   });
   return <span className="poetname">{parts}</span>;
 };
