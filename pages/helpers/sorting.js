@@ -1,4 +1,7 @@
-export const poetsByLastname = (a, b) => {
+// @flow
+import type { Section, Poet, SortReturn } from './types.js';
+
+export const poetsByLastname = (a: Poet, b: Poet): SortReturn => {
   const a1 = a.name.lastname || 'X';
   const a2 = a.name.firstname || 'X';
   const b1 = b.name.lastname || 'X';
@@ -14,7 +17,7 @@ export const poetsByLastname = (a, b) => {
   }
 };
 
-export const poetsByBirthDate = (a, b) => {
+export const poetsByBirthDate = (a: Poet, b: Poet): SortReturn => {
   if (a.period == null || b.period == null) {
     return poetsByLastname(a, b);
   } else {
@@ -28,7 +31,7 @@ export const poetsByBirthDate = (a, b) => {
   }
 };
 
-export const sectionsByTitle = (a, b) => {
+export function sectionsByTitle<T>(a: Section<T>, b: Section<T>): SortReturn {
   if (a.title.startsWith('Ukendt')) {
     return 1;
   } else if (b.title.startsWith('Ukendt')) {
@@ -36,4 +39,4 @@ export const sectionsByTitle = (a, b) => {
   } else {
     return a.title < b.title ? -1 : 1;
   }
-};
+}

@@ -1,0 +1,15 @@
+// @flow
+
+export type Poet = {
+  id: string,
+  type: 'poet' | 'person' | 'collection',
+  name: { lastname?: string, firstname: string },
+  period?: { born: { date: string }, dead: { date: string } },
+};
+
+export type SortReturn = 1 | 0 | -1;
+
+export type Section<T> = {
+  title: string,
+  items: Array<T>,
+};

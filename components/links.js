@@ -1,7 +1,16 @@
-export const workURL = (lang = 'da', poetId, workId, groupBy = 'name') => {
-  return `/${lang}/work/${poetId}/${workId}/${groupBy}`;
+// @flow
+
+export const workURL = (
+  lang: string = 'da',
+  poetId: string,
+  workId: string
+) => {
+  return `/${lang}/work/${poetId}/${workId}`;
 };
 
-export const poetsURL = (lang = 'da', groupBy = 'name') => {
+export const poetsURL = (
+  lang: string = 'da',
+  groupBy: 'name' | 'year' = 'name'
+) => {
   return `/${lang}/poets/${groupBy}`;
 };

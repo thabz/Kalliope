@@ -1,3 +1,6 @@
+// @flow
+
+import 'isomorphic-fetch';
 import Link from 'next/link';
 import Head from '../components/head';
 import * as Links from '../components/links';
@@ -6,16 +9,16 @@ import Tabs from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import * as Sorting from './helpers/sorting.js';
-import 'isomorphic-fetch';
+import type { Section, Poet, SortReturn } from './helpers/types.js';
 
 const groupsByLetter = poets => {
   let groups = new Map();
-  poets.forEach(p => {
+  poets.filter(p => p.type !== 'person').forEach(p => {
     let key = 'Ukendt digter';
     if (p.name.lastname) {
       key = p.name.lastname[0];
     }
-    if (key === 'A' && p.name.lastname.indexOf('Aa') === 0) {
+    if (key === 'A' && p.name.lastname && p.name.lastname.indexOf('Aa') === 0) {
       key = 'Å';
     }
     let group = groups.get(key) || [];
@@ -32,11 +35,11 @@ const groupsByLetter = poets => {
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
-const groupsByYear = poets => {
+const groupsByYear = (poets: Array<Poet>) => {
   let groups = new Map();
   poets.filter(p => p.type === 'poet').forEach(p => {
     let key = 'Ukendt fødeår';
-    if (p.period.born.date !== '?') {
+    if (p.period != null && p.period.born.date !== '?') {
       const year = parseInt(p.period.born.date.substring(0, 4), 10);
       const intervalStart = year - year % 25;
       key = `${intervalStart} - ${intervalStart + 24}`;
@@ -52,15 +55,21 @@ const groupsByYear = poets => {
       items: group.sort(Sorting.poetsByBirthDate),
     });
   });
-  return sortedGroups.sort(Sorting.sortSectionsByTitle);
+  return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
 export default class extends React.Component {
   static async getInitialProps({ query: { lang, groupBy } }) {
     const res = await fetch('http://localhost:3000/static/api/poets-dk.json');
-    const poets = await res.json();
+    const poets: Array<Poet> = await res.json();
     return { lang, groupBy, poets };
   }
+
+  props: {
+    lang: string,
+    poets: Array<Poet>,
+    groupBy: 'name' | 'year',
+  };
 
   render() {
     const { lang, poets, groupBy } = this.props;

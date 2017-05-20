@@ -6,9 +6,11 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "test": "jest --watch",
+    "flow": "flow",
     "build-json": "node tools/build-json-files.js"
   },
   "dependencies": {
+    "global": "^4.3.2",
     "isomorphic-fetch": "^2.2.1",
     "next": "^2.3.1",
     "path-match": "^1.2.4",
@@ -16,11 +18,14 @@
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
-    "xml2js": "^0.4.17",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-flow-strip-types": "^6.21.0",
     "enzyme": "^2.8.2",
+    "flow-bin": "^0.46.0",
     "jest": "^20.0.0",
     "react-addons-test-utils": "^15.5.1",
-    "react-test-renderer": "^15.5.4"
+    "react-test-renderer": "^15.5.4",
+    "xml2js": "^0.4.17"
   },
   "author": "Jesper Christensen",
   "license": "MIT"
