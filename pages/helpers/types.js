@@ -7,9 +7,15 @@ export type Poet = {
   period?: { born: { date: string }, dead: { date: string } },
 };
 
+export type Work = {
+  id: string,
+};
+
 export type SortReturn = 1 | 0 | -1;
 
 export type Section<T> = {
   title: string,
   items: Array<T>,
 };
+
+export type Lang = 'da' | 'en';

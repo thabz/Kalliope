@@ -1,12 +1,21 @@
+// @flow
+
 import Link from 'next/link';
 import Head from '../components/head';
 import Nav from '../components/nav';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
+import type { Lang, Poet, Work } from './helpers/types.js';
 import 'isomorphic-fetch';
 
 export default class extends React.Component {
+  props: {
+    lang: Lang,
+    poet: Poet,
+    works: Array<Work>,
+  };
+
   static async getInitialProps({ query: { lang, poetId } }) {
     const res = await fetch(
       `http://localhost:3000/static/api/${poetId}/works.json`
