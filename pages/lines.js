@@ -9,11 +9,11 @@ import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import Tabs from '../components/tabs.js';
 import * as Links from '../components/links.js';
-import type { Lang, Poet, Work } from './helpers/types.js';
+import * as Sorting from './helpers/sorting.js';
+import type { LinesPair, Lang, Poet, Work } from './helpers/types.js';
 import 'isomorphic-fetch';
 
 type LinesType = 'first' | 'titles';
-type LinesPair = { id: string, title: string, firstline: string };
 export default class extends React.Component {
   props: {
     lang: Lang,
@@ -34,6 +34,29 @@ export default class extends React.Component {
     return { lang, poet: json.poet, lines: json.lines, type };
   }
 
+  groupLines(lines: Array<LinesPair>) {
+    let groups: Map<string, Array<LinesPair>> = new Map();
+    lines.forEach(linePair => {
+      const line = this.type === 'titles' ? linePair.title : linePair.firstline;
+      linePair['sortBy'] = line;
+      let letter: string = line[0];
+      if (letter === 'A' && line.startsWith('Aa')) {
+        letter = 'Å';
+      }
+      let array = groups.get(letter) || [];
+      array.push(linePair);
+      groups.set(letter, array);
+    });
+    let sortedGroups = [];
+    groups.forEach((group, key) => {
+      sortedGroups.push({
+        title: key,
+        items: group.sort(Sorting.linesPairsByLine),
+      });
+    });
+    return sortedGroups.sort(Sorting.sectionsByTitle);
+  }
+
   render() {
     const { lang, poet, type, lines } = this.props;
 
@@ -43,6 +66,8 @@ export default class extends React.Component {
       { title: 'Førstelinjer', url: Links.linesURL(lang, poet.id, 'first') },
     ];
     const selectedTabIndex = type === 'titles' ? 1 : 2;
+
+    const groups = this.groupLines(lines);
 
     const list = lines.map((lines, i) => {
       const url = Links.textURL(lang, poet.id, lines.id);

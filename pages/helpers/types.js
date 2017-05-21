@@ -21,3 +21,10 @@ export type Section<T> = {
 };
 
 export type Lang = 'da' | 'en';
+
+export type LinesPair = {
+  id: string,
+  title: string,
+  firstline: string,
+  sortBy: string,
+};

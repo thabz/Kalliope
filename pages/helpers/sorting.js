@@ -31,6 +31,16 @@ export const poetsByBirthDate = (a: Poet, b: Poet): SortReturn => {
   }
 };
 
+export const linesPairsByLine = (a: LinesPair, b: LinesPair): SortReturn => {
+  const a1 = a.line;
+  const b1 = b.line;
+  if (a1 === b1) {
+    return 0;
+  } else {
+    return a1 < b1 ? -1 : 1;
+  }
+};
+
 export function sectionsByTitle<T>(a: Section<T>, b: Section<T>): SortReturn {
   if (a.title.startsWith('Ukendt')) {
     return 1;
