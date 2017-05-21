@@ -1,6 +1,8 @@
 const fs = require('fs');
 const xml2js = require('xml2js');
 
+let collected_poets = null;
+
 const forceArray = a => {
   return a instanceof Array ? a : [a];
 };
@@ -47,6 +49,46 @@ const build_poets_json = () => {
   return collected_poets;
 };
 
+const build_lines_json = work => {
+  const { type, author, id } = work.$;
+  let lines = [];
+  const handle_section = section => {
+    section.forEach(item => {
+      let id = item.$.id;
+      let { head } = item;
+      let { title, indextitle, firstline } = head;
+      lines.push({ id, title: indextitle || title, firstline });
+    });
+  };
+
+  if (type !== 'poetry') {
+    console.log(`${author}/${id}.xml is not poetry`);
+    return;
+  }
+  let { workbody } = work;
+  if (workbody == null) {
+    return;
+  }
+  if (workbody.poem) {
+    handle_section(forceArray(workbody.poem));
+  } else {
+    console.log(`${author}/${id}.xml`);
+    console.log(workbody);
+    // TODO: Handle section here
+    return;
+  }
+  const data = {
+    poet: collected_poets.get(author),
+    lines,
+  };
+  const json = JSON.stringify(data, null, 2);
+  fs.writeFile(`static/api/${author}/lines.json`, json, err => {
+    if (err) {
+      console.log(err);
+    }
+  });
+};
+
 const build_poet_works_json = collected_poets => {
   collected_poets.forEach((poet, poetId) => {
     let collectedHeaders = [];
@@ -67,6 +109,8 @@ const build_poet_works_json = collected_poets => {
         const { title, year } = head;
         const data = { id: workId, title, year, status, type };
         collectedHeaders.push(data);
+
+        build_lines_json(work);
       });
     });
     const objectToWrite = {
@@ -93,5 +137,5 @@ try {
   if (err.code !== 'EEXIST') throw err;
 }
 
-const collected_poets = build_poets_json();
+collected_poets = build_poets_json();
 build_poet_works_json(collected_poets);
