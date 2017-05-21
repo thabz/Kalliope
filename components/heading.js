@@ -3,7 +3,7 @@ import React from 'react';
 
 export default class extends React.Component {
   props: {
-    title: string,
+    title: any,
   };
   render() {
     const { title } = this.props;
