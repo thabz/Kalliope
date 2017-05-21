@@ -54,44 +54,41 @@ const build_lines_json = work => {
   let lines = [];
   const handle_section = section => {
     section.forEach(item => {
-      let id = item.$.id;
+      let textId = item.$.id;
       let { head } = item;
       let { title, indextitle, firstline } = head;
-      lines.push({ id, title: indextitle || title, firstline });
+      lines.push({
+        id: textId,
+        work_id: id,
+        title: indextitle || title,
+        firstline,
+      });
     });
   };
 
   if (type !== 'poetry') {
     console.log(`${author}/${id}.xml is not poetry`);
-    return;
+    return lines;
   }
   let { workbody } = work;
   if (workbody == null) {
-    return;
+    return lines;
   }
   if (workbody.poem) {
     handle_section(forceArray(workbody.poem));
+    return lines;
   } else {
     console.log(`${author}/${id}.xml`);
     console.log(workbody);
     // TODO: Handle section here
-    return;
+    return lines;
   }
-  const data = {
-    poet: collected_poets.get(author),
-    lines,
-  };
-  const json = JSON.stringify(data, null, 2);
-  fs.writeFile(`static/api/${author}/lines.json`, json, err => {
-    if (err) {
-      console.log(err);
-    }
-  });
 };
 
 const build_poet_works_json = collected_poets => {
   collected_poets.forEach((poet, poetId) => {
     let collectedHeaders = [];
+    let collectedLines = [];
     poet.workIds.forEach(workId => {
       const data = fs.readFileSync(`fdirs/${poetId}/${workId}.xml`);
       const parser = new xml2js.Parser({
@@ -110,20 +107,31 @@ const build_poet_works_json = collected_poets => {
         const data = { id: workId, title, year, status, type };
         collectedHeaders.push(data);
 
-        build_lines_json(work);
+        collectedLines = collectedLines.concat(build_lines_json(work));
       });
     });
     const objectToWrite = {
       poet: poet,
       works: collectedHeaders,
     };
-    const json = JSON.stringify(objectToWrite, null, 2);
+    let json = JSON.stringify(objectToWrite, null, 2);
     try {
       fs.mkdirSync(`static/api/${poetId}`);
     } catch (err) {
       if (err.code !== 'EEXIST') throw err;
     }
     fs.writeFile(`static/api/${poetId}/works.json`, json, err => {
+      if (err) {
+        console.log(err);
+      }
+    });
+
+    const linesToWrite = {
+      poet: collected_poets.get(poetId),
+      lines: collectedLines,
+    };
+    json = JSON.stringify(linesToWrite, null, 2);
+    fs.writeFile(`static/api/${poetId}/lines.json`, json, err => {
       if (err) {
         console.log(err);
       }
