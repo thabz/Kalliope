@@ -3,9 +3,14 @@
   "name": "Kalliope",
   "icons": [
     {
-      "src": "touch-icon.png",
+      "src": "/static/touch-icon.png",
       "type": "image/png",
       "sizes": "129x129"
+    },
+    {
+      "src": "/static/poet-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "/"
