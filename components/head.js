@@ -26,6 +26,7 @@ export default class extends React.Component {
         <link rel="apple-touch-icon" href="/static/touch-icon.png" />
         <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
         <link rel="icon" href="/static/favicon.ico" />
+        <link rel="manifest" href="/static/manifest.json" />
         <meta property="og:url" content={url || defaultOGURL} />
         <meta property="og:title" content={title || ''} />
         <meta
