@@ -8,9 +8,17 @@ import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import Tabs from '../components/tabs.js';
+import SectionedList from '../components/sectionedlist.js';
 import * as Links from '../components/links.js';
 import * as Sorting from './helpers/sorting.js';
-import type { LinesPair, Lang, Poet, Work } from './helpers/types.js';
+import type {
+  LinesPair,
+  Section,
+  Lang,
+  Poet,
+  Work,
+  SectionForRendering,
+} from './helpers/types.js';
 import 'isomorphic-fetch';
 
 type LinesType = 'first' | 'titles';
@@ -34,10 +42,16 @@ export default class extends React.Component {
     return { lang, poet: json.poet, lines: json.lines, type };
   }
 
-  groupLines(lines: Array<LinesPair>) {
+  groupLines(lines: Array<LinesPair>): Array<Section<LinesPair>> {
     let groups: Map<string, Array<LinesPair>> = new Map();
     lines.forEach(linePair => {
-      const line = this.type === 'titles' ? linePair.title : linePair.firstline;
+      const line = this.props.type === 'titles'
+        ? linePair.title
+        : linePair.firstline;
+      if (line == null) {
+        // TODO: Skal vi bare ignorere digte uden titel eller førstelinje?
+        return;
+      }
       linePair['sortBy'] = line;
       let letter: string = line[0];
       if (letter === 'A' && line.startsWith('Aa')) {
@@ -68,12 +82,21 @@ export default class extends React.Component {
     const selectedTabIndex = type === 'titles' ? 1 : 2;
 
     const groups = this.groupLines(lines);
-
-    const list = lines.map((lines, i) => {
-      const url = Links.textURL(lang, poet.id, lines.id);
-      const line = lines[type === 'titles' ? 'title' : 'firstline'];
-      return <div key={i}><a href={url}>{line}</a></div>;
+    let sections: Array<SectionForRendering> = [];
+    groups.forEach(group => {
+      const items = group.items.map(lines => {
+        const url = Links.textURL(lang, poet.id, lines.id);
+        const line = lines[type === 'titles' ? 'title' : 'firstline'];
+        return {
+          id: lines.id,
+          url: url,
+          html: <span>{line}</span>,
+        };
+      });
+      sections.push({ title: group.title, items });
     });
+    let renderedGroups = <SectionedList sections={sections} />;
+
     const title = <PoetName poet={poet} includePeriod />;
     return (
       <div>
@@ -83,9 +106,7 @@ export default class extends React.Component {
         <div className="row">
           <Heading title={title} />
           <Tabs items={tabs} selectedIndex={selectedTabIndex} />
-          <div className="two-columns">
-            {list}
-          </div>
+          {renderedGroups}
         </div>
       </div>
     );

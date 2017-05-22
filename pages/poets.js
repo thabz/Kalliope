@@ -9,8 +9,15 @@ import Nav from '../components/nav';
 import Tabs from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
+import SectionedList from '../components/sectionedlist.js';
 import * as Sorting from './helpers/sorting.js';
-import type { Lang, Section, Poet, SortReturn } from './helpers/types.js';
+import type {
+  Lang,
+  Section,
+  Poet,
+  SortReturn,
+  SectionForRendering,
+} from './helpers/types.js';
 
 type GroupBy = 'name' | 'year';
 
@@ -90,28 +97,20 @@ export default class extends React.Component {
       ? groupsByLetter(poets)
       : groupsByYear(poets);
 
-    let renderedGroups = [];
-    groups.forEach(group => {
-      const { title, items } = group;
-      const list = items.map((poet, i) => {
-        const url = `/${lang}/works/${poet.id}`;
-        return (
-          <div key={poet.id}>
-            <a href={url}>
-              <PoetName poet={poet} lastNameFirst includePeriod />
-            </a>
-          </div>
-        );
-      });
-      const renderedGroup = (
-        <div className="list-section" key={title}>
-          <h3>{title}</h3>
-          {list}
-        </div>
-      );
+    let sections: Array<SectionForRendering> = [];
 
-      renderedGroups.push(renderedGroup);
+    groups.forEach(group => {
+      const items = group.items.map(poet => {
+        return {
+          id: poet.id,
+          url: `/${lang}/works/${poet.id}`,
+          html: <PoetName poet={poet} lastNameFirst includePeriod />,
+        };
+      });
+      sections.push({ title: group.title, items });
     });
+
+    let renderedGroups = <SectionedList sections={sections} />;
 
     return (
       <div>
@@ -121,9 +120,7 @@ export default class extends React.Component {
           <Nav lang={lang} />
           <Heading title="Digtere" />
           <Tabs items={tabs} selectedIndex={selectedTabIndex} />
-          <div className="two-columns">
-            {renderedGroups}
-          </div>
+          {renderedGroups}
         </div>
       </div>
     );

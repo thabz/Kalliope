@@ -28,3 +28,10 @@ export type LinesPair = {
   firstline: string,
   sortBy: string,
 };
+
+// Used for SectionedList
+export type SectionForRendering = Section<{
+  id: string,
+  url: string,
+  html: any,
+}>;
