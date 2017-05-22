@@ -21,24 +21,17 @@ export default class extends React.Component {
     const poetsURL = Links.poetsURL(lang);
     return (
       <nav>
-        <ul>
-          <ul>
-            <li>
-              <a href="/">Kalliope</a>
-            </li>
-            <li>
-              <a href={poetsURL}>Digtere</a>
-            </li>
-          </ul>
-          <ul>
-            {links.map(({ href, label }) => (
-              <li key={href}>
-                <a href={href}>{label}</a>
-              </li>
-            ))}
-          </ul>
-        </ul>
-
+        <div>
+          <div><a href="/">Kalliope</a></div>
+          <div><a href={poetsURL}>Digtere</a></div>
+        </div>
+        <div>
+          {links.map(({ href, label }) => (
+            <div>
+              <a href={href}>{label}</a>
+            </div>
+          ))}
+        </div>
         <style jsx>{`
         :global(body) {
           margin: 0;
@@ -47,15 +40,17 @@ export default class extends React.Component {
         nav {
           text-align: left;
         }
-        ul {
+        nav {
           display: flex;
           justify-content: space-between;
         }
-        nav > ul {
+        nav > div {
           padding: 4px 0px;
         }
-        li {
+        nav > div {
           display: flex;
+        }
+        nav > div > div {
           padding: 6px 16px;
         }
       `}</style>
