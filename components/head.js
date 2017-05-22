@@ -27,7 +27,7 @@ export default class extends React.Component {
         <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
         <link rel="icon" href="/static/favicon.ico" />
         <link rel="manifest" href="/static/manifest.json" />
-        <meta name="theme_color" content="rgb(139, 56, 65)" />
+        <meta name="theme-color" content="rgb(139, 56, 65)" />
         <meta property="og:url" content={url || defaultOGURL} />
         <meta property="og:title" content={title || ''} />
         <meta
