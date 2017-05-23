@@ -2,10 +2,11 @@
 import type { Section, Poet, LinesPair, SortReturn } from './types.js';
 
 export const poetsByLastname = (a: Poet, b: Poet): SortReturn => {
-  const a1 = a.name.lastname || 'X';
-  const a2 = a.name.firstname || 'X';
-  const b1 = b.name.lastname || 'X';
-  const b2 = b.name.firstname || 'X';
+  const a1 = (a.name.lastname || 'X').replace('aa', 'å').replace('Aa', 'Å');
+  const a2 = (a.name.firstname || 'X').replace('aa', 'å').replace('Aa', 'Å');
+  const b1 = (b.name.lastname || 'X').replace('aa', 'å').replace('Aa', 'Å');
+  const b2 = (b.name.firstname || 'X').replace('aa', 'å').replace('Aa', 'Å');
+
   if (a1 === b1) {
     if (a2 === b2) {
       return a.id < b.id ? -1 : 1;
