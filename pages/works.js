@@ -41,7 +41,9 @@ export default class extends React.Component {
     const selectedTabIndex = 0;
     const list = works.map((work, i) => {
       const url = `/${lang}/work/${poet.id}/${work.id}`;
-      return <div key={i}><a href={url}><WorkName work={work} /></a></div>;
+      return (
+        <div key={work.id}><a href={url}><WorkName work={work} /></a></div>
+      );
     });
     const title = <PoetName poet={poet} includePeriod />;
     return (
