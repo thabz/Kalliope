@@ -63,6 +63,13 @@ a {
   break-inside: avoid;
 }
 
+/* Fix vertical aligment layout problem in Safari and Chrome */
+.list-section:before {
+  content: '';
+  display: block;
+  height: 1px;
+}
+
 .poetname .period {
   opacity: 0.5;
 }
