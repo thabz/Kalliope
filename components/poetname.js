@@ -15,10 +15,14 @@ export default class extends React.Component {
     const { firstname, lastname } = name;
     let namePart = null;
     if (lastname) {
-      if (lastNameFirst) {
-        namePart = <span>{lastname}, {firstname}</span>;
+      if (firstname) {
+        if (lastNameFirst) {
+          namePart = <span>{lastname}, {firstname}</span>;
+        } else {
+          namePart = <span>{firstname} {lastname}</span>;
+        }
       } else {
-        namePart = <span>{firstname} {lastname}</span>;
+        namePart = <span>{lastname}</span>;
       }
     } else {
       namePart = <span>{firstname}</span>;
