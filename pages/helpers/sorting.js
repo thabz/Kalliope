@@ -1,5 +1,5 @@
 // @flow
-import type { Section, Poet, SortReturn } from './types.js';
+import type { Section, Poet, LinesPair, SortReturn } from './types.js';
 
 export const poetsByLastname = (a: Poet, b: Poet): SortReturn => {
   const a1 = a.name.lastname || 'X';
@@ -32,8 +32,8 @@ export const poetsByBirthDate = (a: Poet, b: Poet): SortReturn => {
 };
 
 export const linesPairsByLine = (a: LinesPair, b: LinesPair): SortReturn => {
-  const a1 = a.line;
-  const b1 = b.line;
+  const a1 = a.sortBy;
+  const b1 = b.sortBy;
   if (a1 === b1) {
     return 0;
   } else {
