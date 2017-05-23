@@ -7,8 +7,8 @@ import * as Links from './links.js';
 import type { Lang } from '../pages/helpers/types.js';
 
 const links = [
-  { href: '/da/poets', label: 'Dansk' },
-  { href: '/en/poets', label: 'Engelsk' },
+  { href: '/da/poets/name', label: 'Dansk' },
+  { href: '/en/poets/name', label: 'Engelsk' },
 ];
 
 export default class extends React.Component {
@@ -27,7 +27,7 @@ export default class extends React.Component {
         </div>
         <div>
           {links.map(({ href, label }) => (
-            <div>
+            <div key={href}>
               <a href={href}>{label}</a>
             </div>
           ))}

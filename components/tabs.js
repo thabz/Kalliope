@@ -12,7 +12,7 @@ export default class extends React.Component {
     const itemsRendered = items.map((item, i) => {
       const className = i === selectedIndex ? 'tab selected' : 'tab';
       return (
-        <div className={className} key={i}>
+        <div className={className} key={item.url}>
           <a href={item.url}><h2>{item.title}</h2></a>
         </div>
       );
