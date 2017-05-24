@@ -52,10 +52,29 @@ const build_poets_json = () => {
 const build_lines_json = work => {
   const { type, author, id } = work.$;
   let lines = [];
+
   const handle_section = section => {
-    section.forEach(item => {
+    //console.log('Handling section', section);
+    let poems = null;
+    if (section.poem) {
+      poems = forceArray(section.poem);
+    } else if (section.section) {
+      forceArray(section.section).forEach(s => {
+        handle_section(s.content);
+      });
+      return;
+    } else {
+      return;
+    }
+    poems.forEach(item => {
+      if (item.$ == null) {
+        return;
+      }
       let textId = item.$.id;
       let { head } = item;
+      if (head == null) {
+        return;
+      }
       let { title, indextitle, firstline } = head;
       lines.push({
         id: textId,
@@ -74,15 +93,9 @@ const build_lines_json = work => {
   if (workbody == null) {
     return lines;
   }
-  if (workbody.poem) {
-    handle_section(forceArray(workbody.poem));
-    return lines;
-  } else {
-    console.log(`${author}/${id}.xml`);
-    console.log(workbody);
-    // TODO: Handle section here
-    return lines;
-  }
+  console.log(`${author}/${id}.xml`);
+  handle_section(workbody);
+  return lines;
 };
 
 const build_poet_works_json = collected_poets => {
