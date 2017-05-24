@@ -13,7 +13,7 @@ export type Work = {
   year?: string,
 };
 
-export type SortReturn = 1 | 0 | -1;
+export type SortReturn = number; //1 | 0 | -1;
 
 export type Section<T> = {
   title: string,

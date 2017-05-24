@@ -52,7 +52,7 @@ export default class extends React.Component {
         // TODO: Skal vi bare ignorere digte uden titel eller førstelinje?
         return;
       }
-      linePair['sortBy'] = line.replace('aa', 'å').replace('Aa', 'Å');
+      linePair['sortBy'] = line;
       let letter: string = line[0];
       if (line.startsWith('Aa')) {
         letter = 'Å';
