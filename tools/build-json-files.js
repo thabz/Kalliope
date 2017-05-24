@@ -80,6 +80,12 @@ const build_lines_json = work => {
       if (titleToUse == null) {
         throw `${textId} mangler førstelinje, indextitle og title i ${author}/${id}.xml`;
       }
+      if (firstline != null && typeof firstline !== 'string') {
+        throw `${textId} har markup i førstelinjen i ${author}/${id}.xml`;
+      }
+      if (typeof titleToUse !== 'string') {
+        throw `${textId} har markup i titlen i ${author}/${id}.xml`;
+      }
       lines.push({
         id: textId,
         work_id: id,
