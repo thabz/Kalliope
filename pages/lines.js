@@ -48,8 +48,7 @@ export default class extends React.Component {
       const line = this.props.type === 'titles'
         ? linePair.title
         : linePair.firstline;
-      if (line == null) {
-        // TODO: Skal vi bare ignorere digte uden titel eller førstelinje?
+      if (line == null || line.length == 0) {
         return;
       }
       linePair['sortBy'] = line;
