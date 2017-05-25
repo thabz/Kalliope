@@ -1,5 +1,21 @@
 const fs = require('fs');
 const xml2js = require('xml2js');
+const libxml = require('libxmljs');
+
+const writeJSON = (filename, data) => {
+  const json = JSON.stringify(data, null, 2);
+  fs.writeFileSync(filename, json, err => {
+    if (err) {
+      console.log(err, filename);
+    }
+  });
+};
+
+const loadXMLDoc = filename => {
+  const data = fs.readFileSync(filename);
+  const doc = libxml.parseXmlString(data);
+  return doc;
+};
 
 let collected_poets = null;
 
@@ -15,7 +31,6 @@ const build_poets_json = () => {
   parser.parseString(data, (err, result) => {
     const persons = { result };
     result.persons.person.forEach(p => {
-      //console.log(p);
       const { id, country, lang, type } = p.$;
       const { name, period, works } = p;
       let list = byCountry.get(country) || [];
@@ -39,126 +54,141 @@ const build_poets_json = () => {
     const sorted = poets.sort((a, b) => {
       return a.id < b.id ? -1 : 1;
     });
-    const json = JSON.stringify(sorted, null, 2);
-    fs.writeFile(`static/api/poets-${country}.json`, json, err => {
-      if (err) {
-        console.log(err);
-      }
-    });
+    writeJSON(`static/api/poets-${country}.json`, sorted);
   });
   return collected_poets;
 };
 
-const build_lines_json = work => {
-  const { type, author, id } = work.$;
+const handle_work = work => {
+  const type = work.attr('type').value();
+  const poetId = work.attr('author').value();
+  const id = work.attr('id').value();
   let lines = [];
 
   const handle_section = section => {
-    //console.log('Handling section', section);
-    let poems = null;
-    if (section.poem) {
-      poems = forceArray(section.poem);
-    } else if (section.section) {
-      forceArray(section.section).forEach(s => {
-        handle_section(s.content);
-      });
-      return;
-    } else {
-      return;
-    }
-    poems.forEach(item => {
-      if (item.$ == null) {
-        return;
+    let poems = [];
+    let proses = [];
+    let toc = [];
+
+    section.childNodes().forEach(part => {
+      const partName = part.name();
+      if (partName === 'poem') {
+        const textId = part.attr('id').value();
+        const head = part.get('head');
+        const title = head.get('title') ? head.get('title').text() : null;
+        const indextitle = head.get('indextitle')
+          ? head.get('indextitle').text()
+          : null;
+        const toctitle = head.get('toctitle')
+          ? head.get('toctitle').text()
+          : null;
+        const firstline = head.get('firstline')
+          ? head.get('firstline').text()
+          : null;
+        const indexTitleToUse = indextitle || title || firstline;
+        const tocTitleToUse = toctitle || title;
+        if (indexTitleToUse == null) {
+          throw `${textId} mangler førstelinje, indextitle og title i ${author}/${id}.xml`;
+        }
+        if (firstline != null && typeof firstline !== 'string') {
+          throw `${textId} har markup i førstelinjen i ${author}/${id}.xml`;
+        }
+        if (typeof indexTitleToUse !== 'string') {
+          throw `${textId} har markup i titlen i ${author}/${id}.xml`;
+        }
+        lines.push({
+          id: textId,
+          work_id: id,
+          title: indexTitleToUse,
+          firstline,
+        });
+        toc.push({
+          type: 'text',
+          id: textId,
+          title: tocTitleToUse,
+        });
+      } else if (partName === 'section') {
+        const subtoc = handle_section(part.get('content'));
+        const title = part.get('head/toctitle').text();
+        toc.push({
+          type: 'section',
+          title: title,
+          content: subtoc,
+        });
+      } else if (partName === 'prose') {
+        const textId = part.attr('id').value();
+        const head = part.get('head');
+        const title = head.get('title') ? head.get('title').text() : null;
+        const indextitle = head.get('indextitle')
+          ? head.get('indextitle').text()
+          : null;
+        const toctitle = head.get('toctitle')
+          ? head.get('toctitle').text()
+          : null;
+        const tocTitleToUse = toctitle || title;
+        toc.push({
+          type: 'text',
+          id: textId,
+          title: tocTitleToUse,
+        });
       }
-      let textId = item.$.id;
-      let { head } = item;
-      if (head == null) {
-        return;
-      }
-      let { title, indextitle, firstline } = head;
-      const titleToUse = indextitle || title || firstline;
-      if (titleToUse == null) {
-        throw `${textId} mangler førstelinje, indextitle og title i ${author}/${id}.xml`;
-      }
-      if (firstline != null && typeof firstline !== 'string') {
-        throw `${textId} har markup i førstelinjen i ${author}/${id}.xml`;
-      }
-      if (typeof titleToUse !== 'string') {
-        throw `${textId} har markup i titlen i ${author}/${id}.xml`;
-      }
-      lines.push({
-        id: textId,
-        work_id: id,
-        title: titleToUse,
-        firstline,
-      });
     });
+    return toc;
   };
 
   if (type !== 'poetry') {
-    console.log(`${author}/${id}.xml is not poetry`);
-    return lines;
+    console.log(`${poetId}/${id}.xml is not poetry`);
+    return null;
   }
-  let { workbody } = work;
+  let workbody = work.get('//workbody');
   if (workbody == null) {
-    return lines;
+    return null;
   }
-  console.log(`${author}/${id}.xml`);
-  handle_section(workbody);
-  return lines;
+  const toc = handle_section(workbody);
+  return { lines, toc };
 };
 
 const build_poet_works_json = collected_poets => {
   collected_poets.forEach((poet, poetId) => {
+    try {
+      fs.mkdirSync(`static/api/${poetId}`);
+    } catch (err) {
+      if (err.code !== 'EEXIST') throw err;
+    }
     let collectedHeaders = [];
     let collectedLines = [];
     poet.workIds.forEach(workId => {
-      const data = fs.readFileSync(`fdirs/${poetId}/${workId}.xml`);
-      const parser = new xml2js.Parser({
-        explicitArray: false,
-        normalize: true,
-      });
-      parser.parseString(data, (err, result) => {
-        if (!result) {
-          console.log(`Error parsing ${poetId}/${workId}: ${err}`);
-          return;
-        }
-        const work = result.kalliopework;
-        const { status, type } = work.$;
-        const head = work.workhead;
-        const { title, year } = head;
-        const data = { id: workId, title, year, status, type };
-        collectedHeaders.push(data);
+      if (workId === '1827') return;
+      let doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
+      console.log(`fdirs/${poetId}/${workId}.xml`);
+      const work = doc.get('//kalliopework');
+      const status = work.attr('status').value();
+      const type = work.attr('type').value();
+      const head = work.get('//workhead');
+      const title = head.get('//title').text();
+      const year = head.get('//year').text();
+      const data = { id: workId, title, year, status, type };
+      collectedHeaders.push(data);
 
-        collectedLines = collectedLines.concat(build_lines_json(work));
-      });
+      const work_data = handle_work(work);
+      if (work_data) {
+        collectedLines = collectedLines.concat(work_data.lines);
+        writeJSON(`static/api/${poetId}/${workId}-toc.json`, work_data.toc);
+      }
+      doc = null;
     });
     const objectToWrite = {
       poet: poet,
       works: collectedHeaders,
     };
     let json = JSON.stringify(objectToWrite, null, 2);
-    try {
-      fs.mkdirSync(`static/api/${poetId}`);
-    } catch (err) {
-      if (err.code !== 'EEXIST') throw err;
-    }
-    fs.writeFile(`static/api/${poetId}/works.json`, json, err => {
-      if (err) {
-        console.log(err);
-      }
-    });
+    writeJSON(`static/api/${poetId}/works.json`, objectToWrite);
 
     const linesToWrite = {
       poet: collected_poets.get(poetId),
       lines: collectedLines,
     };
-    json = JSON.stringify(linesToWrite, null, 2);
-    fs.writeFile(`static/api/${poetId}/lines.json`, json, err => {
-      if (err) {
-        console.log(err);
-      }
-    });
+    writeJSON(`static/api/${poetId}/lines.json`, linesToWrite);
   });
 };
 
