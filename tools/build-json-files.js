@@ -158,7 +158,6 @@ const build_poet_works_json = collected_poets => {
     let collectedHeaders = [];
     let collectedLines = [];
     poet.workIds.forEach(workId => {
-      if (workId === '1827') return;
       let doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
       console.log(`fdirs/${poetId}/${workId}.xml`);
       const work = doc.get('//kalliopework');
@@ -173,7 +172,12 @@ const build_poet_works_json = collected_poets => {
       const work_data = handle_work(work);
       if (work_data) {
         collectedLines = collectedLines.concat(work_data.lines);
-        writeJSON(`static/api/${poetId}/${workId}-toc.json`, work_data.toc);
+        const toc_file_data = {
+          poet,
+          toc: work_data.toc,
+          work: data,
+        };
+        writeJSON(`static/api/${poetId}/${workId}-toc.json`, toc_file_data);
       }
       doc = null;
     });
