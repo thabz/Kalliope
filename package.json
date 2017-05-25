@@ -25,7 +25,9 @@
     "jest": "^20.0.0",
     "react-addons-test-utils": "^15.5.1",
     "react-test-renderer": "^15.5.4",
-    "xml2js": "^0.4.17"
+    "xml2js": "^0.4.17",
+    "libxmljs": "^0.18.4",
+    "node-gyp": "^3.6.1"
   },
   "author": "Jesper Christensen",
   "license": "MIT"
