@@ -89,8 +89,8 @@ export default class extends React.Component {
     const { lang, poets, groupBy } = this.props;
 
     const tabs = [
-      { title: 'Efter navn', url: Links.poetsURL(lang, 'name') },
-      { title: 'Efter år', url: Links.poetsURL(lang, 'year') },
+      { id: 'name', title: 'Efter navn', url: Links.poetsURL(lang, 'name') },
+      { id: 'year', title: 'Efter år', url: Links.poetsURL(lang, 'year') },
     ];
     const selectedTabIndex = groupBy === 'name' ? 0 : 1;
     const groups = groupBy === 'name'
@@ -119,7 +119,7 @@ export default class extends React.Component {
         <div className="row">
           <Nav lang={lang} />
           <Heading title="Digtere" />
-          <Tabs items={tabs} selectedIndex={selectedTabIndex} />
+          <Tabs items={tabs} selected={groupBy} />
           {renderedGroups}
         </div>
       </div>

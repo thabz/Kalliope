@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Head from '../components/head';
 import Nav from '../components/nav';
-import Tabs from '../components/tabs.js';
+import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
@@ -53,7 +53,7 @@ export default class extends React.Component {
 
         <div className="row">
           <Heading title={title} subtitle="Værker" />
-          <Tabs items={tabs} selectedIndex={0} />
+          <PoetTabs lang={lang} poet={poet} selected="works" />
           <div className="two-columns">
             {list}
           </div>

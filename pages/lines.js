@@ -7,7 +7,7 @@ import Nav from '../components/nav';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
-import Tabs from '../components/tabs.js';
+import { PoetTabs } from '../components/tabs.js';
 import SectionedList from '../components/sectionedlist.js';
 import * as Links from '../components/links.js';
 import * as Sorting from './helpers/sorting.js';
@@ -104,7 +104,7 @@ export default class extends React.Component {
 
         <div className="row">
           <Heading title={title} />
-          <Tabs items={tabs} selectedIndex={selectedTabIndex} />
+          <PoetTabs lang={lang} poet={poet} selected={type} />
           {renderedGroups}
         </div>
       </div>
