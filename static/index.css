@@ -21,12 +21,12 @@ body {
   font-weight: lighter;
 }
 
-.heading h2 {
+.subheading h2 {
   margin: 0;
   width: 100%;
   margin: 10px 0;
   line-height: 1.15;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: lighter;
 }
 
@@ -109,4 +109,19 @@ a {
 
 .tabs .tab a {
   color: #888;
+}
+
+/* TOC */
+
+.toc {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.toc h3 {
+  font-weight: lighter;
+  font-size: 18px;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 20px;
 }
