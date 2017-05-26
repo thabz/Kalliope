@@ -42,7 +42,9 @@ export default class extends React.Component {
     const list = works.map((work, i) => {
       const url = `/${lang}/work/${poet.id}/${work.id}`;
       return (
-        <div key={work.id}><a href={url}><WorkName work={work} /></a></div>
+        <div className="list-section-line" key={work.id}>
+          <a href={url}><WorkName work={work} /></a>
+        </div>
       );
     });
     const title = <PoetName poet={poet} includePeriod />;

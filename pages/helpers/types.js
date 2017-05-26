@@ -42,3 +42,14 @@ export type TocItem = {
   type: 'section' | 'text',
   content?: Array<TocItem>,
 };
+
+export type NoteItem = {
+  lang: Lang,
+  content_html: string,
+};
+
+export type PictureItem = {
+  lang: Lang,
+  content_html: string,
+  src: string,
+};

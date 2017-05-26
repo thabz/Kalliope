@@ -140,12 +140,40 @@ const handle_work = work => {
     console.log(`${poetId}/${id}.xml is not poetry`);
     return null;
   }
-  let workbody = work.get('//workbody');
+
+  const workhead = work.get('workhead');
+  const notes = workhead.find('notes/note').map(note => {
+    const lang = note.attr('lang') ? note.attr('lang').value() : 'da';
+    return {
+      lang,
+      content_html: note
+        .toString()
+        .replace('<note>', '')
+        .replace('</note>', ''),
+    };
+  });
+  const pictures = workhead.find('pictures/picture').map(picture => {
+    const src = picture.attr('src').value();
+    const lang = picture.attr('lang') ? picture.attr('lang').value() : 'da';
+    const type = picture.attr('type') ? picture.attr('type').value() : null;
+    return {
+      lang,
+      src,
+      type,
+      content_html: picture
+        .toString()
+        .replace(/<picture[^>]*>/, '')
+        .replace('</picture>', ''),
+    };
+  });
+
+  const workbody = work.get('workbody');
   if (workbody == null) {
     return null;
   }
+
   const toc = handle_section(workbody);
-  return { lines, toc };
+  return { lines, toc, notes, pictures };
 };
 
 const build_poet_works_json = collected_poets => {
@@ -163,9 +191,9 @@ const build_poet_works_json = collected_poets => {
       const work = doc.get('//kalliopework');
       const status = work.attr('status').value();
       const type = work.attr('type').value();
-      const head = work.get('//workhead');
-      const title = head.get('//title').text();
-      const year = head.get('//year').text();
+      const head = work.get('workhead');
+      const title = head.get('title').text();
+      const year = head.get('year').text();
       const data = { id: workId, title, year, status, type };
       collectedHeaders.push(data);
 
@@ -176,6 +204,8 @@ const build_poet_works_json = collected_poets => {
           poet,
           toc: work_data.toc,
           work: data,
+          notes: work_data.notes || [],
+          pictures: work_data.pictures || [],
         };
         writeJSON(`static/api/${poetId}/${workId}-toc.json`, toc_file_data);
       }

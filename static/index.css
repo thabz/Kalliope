@@ -1,6 +1,16 @@
 body {
   box-sizing: border-box;
+  font-size: 14px;
   height: 150px;
+}
+
+p {
+}
+
+a {
+  color: #067df7;
+  color: rgb(139, 56, 65);
+  text-decoration: none;
 }
 
 .hero {
@@ -46,12 +56,6 @@ body {
   padding: 0 20px;
 }
 
-a {
-  color: #067df7;
-  color: rgb(139, 56, 65);
-  text-decoration: none;
-  font-size: 13px;
-}
 
 .two-columns {
   width: 100%;
@@ -63,6 +67,9 @@ a {
   break-inside: avoid;
 }
 
+.list-section *, .list-section-line {
+  line-height: 1.5;
+}
 /* Fix vertical aligment layout problem in Safari and Chrome */
 .list-section:before {
   content: '';
@@ -124,4 +131,19 @@ a {
   padding: 0;
   margin-bottom: 0;
   margin-top: 20px;
+}
+
+/* Sidebar split */
+.sidebar-split {
+  width: 100%;
+  display: flex;
+}
+
+.sidebar-split div:first-child {
+  flex-grow: 1;
+}
+
+.sidebar-split div:last-child {
+  flex-grow: 0;
+  width: 300px;
 }
