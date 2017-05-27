@@ -1,8 +1,8 @@
 const fs = require('fs');
 const xml2js = require('xml2js');
 const libxml = require('libxmljs');
-const crypto = require('crypto');
 const mkdirp = require('mkdirp');
+const Paths = require('../pages/helpers/paths.js');
 
 const writeJSON = (filename, data) => {
   const json = JSON.stringify(data, null, 2);
@@ -58,25 +58,63 @@ const build_poets_json = () => {
   return collected_poets;
 };
 
+const get_notes = head => {
+  return head.find('notes/note').map(note => {
+    const lang = note.attr('lang') ? note.attr('lang').value() : 'da';
+    return {
+      lang,
+      content_html: note
+        .toString()
+        .replace('<note>', '')
+        .replace('</note>', ''),
+    };
+  });
+};
+const get_pictures = head => {
+  return head.find('pictures/picture').map(picture => {
+    const src = picture.attr('src').value();
+    const lang = picture.attr('lang') ? picture.attr('lang').value() : 'da';
+    const type = picture.attr('type') ? picture.attr('type').value() : null;
+    return {
+      lang,
+      src,
+      type,
+      content_html: picture
+        .toString()
+        .replace(/<picture[^>]*>/, '')
+        .replace('</picture>', ''),
+    };
+  });
+};
+
 const handle_text = (poetId, workId, text) => {
   const poet = collected_poets.get(poetId);
   const work = collected_works.get(poetId + '-' + workId);
 
   const textId = text.attr('id').value();
-  // Create the JSON filepath as MD5 of textId.
-  const hash = crypto.createHash('md5');
-  hash.update(textId);
-  const md5 = hash.digest('hex');
-  const foldername = `static/api/texts/${md5[0]}/${md5[1]}${md5[2]}`;
+  const head = text.get('head');
+  const body = text.get('body');
+  const title = head.get('title') ? head.get('title').text() : null;
+  const subtitle = head.get('subtitle') ? head.get('subtitle').text() : null;
+
+  const foldername = Paths.textFolder(textId);
   mkdirp.sync(foldername);
   const text_data = {
     poet,
     work,
     text: {
       id: textId,
+      title,
+      subtitle,
+      notes: get_notes(head),
+      pictures: get_pictures(head),
+      content_html: body
+        .toString()
+        .replace('<body>', '')
+        .replace('</body>', ''),
     },
   };
-  writeJSON(`${foldername}/${textId}.json`, text_data);
+  writeJSON(Paths.textPath(textId), text_data);
 };
 
 const handle_work = work => {
@@ -163,30 +201,8 @@ const handle_work = work => {
   }
 
   const workhead = work.get('workhead');
-  const notes = workhead.find('notes/note').map(note => {
-    const lang = note.attr('lang') ? note.attr('lang').value() : 'da';
-    return {
-      lang,
-      content_html: note
-        .toString()
-        .replace('<note>', '')
-        .replace('</note>', ''),
-    };
-  });
-  const pictures = workhead.find('pictures/picture').map(picture => {
-    const src = picture.attr('src').value();
-    const lang = picture.attr('lang') ? picture.attr('lang').value() : 'da';
-    const type = picture.attr('type') ? picture.attr('type').value() : null;
-    return {
-      lang,
-      src,
-      type,
-      content_html: picture
-        .toString()
-        .replace(/<picture[^>]*>/, '')
-        .replace('</picture>', ''),
-    };
-  });
+  const notes = get_notes(workhead);
+  const pictures = get_pictures(workhead);
 
   const workbody = work.get('workbody');
   if (workbody == null) {

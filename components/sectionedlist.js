@@ -9,7 +9,7 @@ export default class extends React.Component {
   };
   render() {
     const { sections } = this.props;
-    let renderedGroups = sections.map(group => {
+    let renderedGroups = sections.map((group, i) => {
       const { title, items } = group;
       const list = items.map(item => {
         return (
@@ -19,7 +19,7 @@ export default class extends React.Component {
         );
       });
       return (
-        <div className="list-section" key={title}>
+        <div className="list-section" key={i + title}>
           <h3>{title}</h3>
           {list}
         </div>

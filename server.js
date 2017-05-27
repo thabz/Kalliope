@@ -25,6 +25,10 @@ const routes = [
     match: route('/:lang/work/:poetId/:workId'),
     path: '/work',
   },
+  {
+    match: route('/:lang/text/:textId'),
+    path: '/text',
+  },
 ];
 
 app.prepare().then(() => {

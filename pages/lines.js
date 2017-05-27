@@ -73,18 +73,11 @@ export default class extends React.Component {
   render() {
     const { lang, poet, type, lines } = this.props;
 
-    const tabs = [
-      { title: 'Værker', url: Links.worksURL(lang, poet.id) },
-      { title: 'Digttitler', url: Links.linesURL(lang, poet.id, 'titles') },
-      { title: 'Førstelinjer', url: Links.linesURL(lang, poet.id, 'first') },
-    ];
-    const selectedTabIndex = type === 'titles' ? 1 : 2;
-
     const groups = this.groupLines(lines);
     let sections: Array<SectionForRendering> = [];
     groups.forEach(group => {
       const items = group.items.map(lines => {
-        const url = Links.textURL(lang, poet.id, lines.id);
+        const url = Links.textURL(lang, lines.id);
         const line = lines[type === 'titles' ? 'title' : 'firstline'];
         return {
           id: lines.id,
