@@ -4,11 +4,7 @@ const libxml = require('libxmljs');
 
 const writeJSON = (filename, data) => {
   const json = JSON.stringify(data, null, 2);
-  fs.writeFileSync(filename, json, err => {
-    if (err) {
-      console.log(err, filename);
-    }
-  });
+  fs.writeFileSync(filename, json);
 };
 
 const loadXMLDoc = filename => {
