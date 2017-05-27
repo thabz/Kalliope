@@ -68,7 +68,9 @@ export default class extends React.Component {
           <div className="sidebar-split">
             <div>
               <SubHeading><TextName text={text} /></SubHeading>
-              <div dangerouslySetInnerHTML={{ __html: body }} />
+              <div className="text-content">
+                <div dangerouslySetInnerHTML={{ __html: body }} />
+              </div>
             </div>
             <div>{sidebar}</div>
           </div>

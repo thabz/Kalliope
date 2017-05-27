@@ -72,7 +72,9 @@ export default class extends React.Component {
           );
         } else if (type === 'text' && id != null) {
           const url = Links.textURL(lang, id);
-          return <div key={id}><a href={url}>{title}</a></div>;
+          return (
+            <div className="toc-line" key={id}><a href={url}>{title}</a></div>
+          );
         }
       });
     };
