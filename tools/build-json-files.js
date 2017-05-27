@@ -1,6 +1,8 @@
 const fs = require('fs');
 const xml2js = require('xml2js');
 const libxml = require('libxmljs');
+const crypto = require('crypto');
+const mkdirp = require('mkdirp');
 
 const writeJSON = (filename, data) => {
   const json = JSON.stringify(data, null, 2);
@@ -14,6 +16,7 @@ const loadXMLDoc = filename => {
 };
 
 let collected_poets = null;
+let collected_works = new Map();
 
 const forceArray = a => {
   return a instanceof Array ? a : [a];
@@ -55,10 +58,31 @@ const build_poets_json = () => {
   return collected_poets;
 };
 
+const handle_text = (poetId, workId, text) => {
+  const poet = collected_poets.get(poetId);
+  const work = collected_works.get(poetId + '-' + workId);
+
+  const textId = text.attr('id').value();
+  // Create the JSON filepath as MD5 of textId.
+  const hash = crypto.createHash('md5');
+  hash.update(textId);
+  const md5 = hash.digest('hex');
+  const foldername = `static/api/texts/${md5[0]}/${md5[1]}${md5[2]}`;
+  mkdirp.sync(foldername);
+  const text_data = {
+    poet,
+    work,
+    text: {
+      id: textId,
+    },
+  };
+  writeJSON(`${foldername}/${textId}.json`, text_data);
+};
+
 const handle_work = work => {
   const type = work.attr('type').value();
   const poetId = work.attr('author').value();
-  const id = work.attr('id').value();
+  const workId = work.attr('id').value();
   let lines = [];
 
   const handle_section = section => {
@@ -94,7 +118,7 @@ const handle_work = work => {
         }
         lines.push({
           id: textId,
-          work_id: id,
+          work_id: workId,
           title: indexTitleToUse,
           firstline,
         });
@@ -103,6 +127,7 @@ const handle_work = work => {
           id: textId,
           title: tocTitleToUse,
         });
+        handle_text(poetId, workId, part);
       } else if (partName === 'section') {
         const subtoc = handle_section(part.get('content'));
         const title = part.get('head/toctitle').text();
@@ -133,7 +158,7 @@ const handle_work = work => {
   };
 
   if (type !== 'poetry') {
-    console.log(`${poetId}/${id}.xml is not poetry`);
+    console.log(`${poetId}/${workId}.xml is not poetry`);
     return null;
   }
 
@@ -192,6 +217,7 @@ const build_poet_works_json = collected_poets => {
       const year = head.get('year').text();
       const data = { id: workId, title, year, status, type };
       collectedHeaders.push(data);
+      collected_works.set(poetId + '-' + workId, data);
 
       const work_data = handle_work(work);
       if (work_data) {
