@@ -15,6 +15,10 @@ import type { Lang, Poet, Work, Text } from './helpers/types.js';
 import 'isomorphic-fetch';
 import * as Paths from './helpers/paths.js';
 
+const renderBody = (content_html: string) => {
+  return content_html.replace(/\n/g, '<br/>');
+};
+
 export default class extends React.Component {
   props: {
     lang: Lang,
@@ -50,6 +54,7 @@ export default class extends React.Component {
       return <Note key={i} note={note} />;
     });
     const sidebar = <div>{renderedNotes}</div>;
+    const body = renderBody(text.content_html);
 
     const title = <PoetName poet={poet} includePeriod />;
     return (
@@ -63,9 +68,7 @@ export default class extends React.Component {
           <div className="sidebar-split">
             <div>
               <SubHeading><TextName text={text} /></SubHeading>
-              <div>
-                {text.content_html}
-              </div>
+              <div dangerouslySetInnerHTML={{ __html: body }} />
             </div>
             <div>{sidebar}</div>
           </div>
