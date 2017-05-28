@@ -15,6 +15,11 @@ const loadXMLDoc = filename => {
   return doc;
 };
 
+// Reimplementation of Kalliope::buildhrefs
+const buildHrefs = html => {
+  return html.replace(/<xref poet=\"\"/, '');
+};
+
 let collected_poets = null;
 let collected_works = new Map();
 
