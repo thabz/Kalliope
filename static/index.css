@@ -67,7 +67,7 @@ a {
   break-inside: avoid;
 }
 
-.list-section *, .list-section-line, .toc-line {
+.list-section *, .list-section-line {
   line-height: 1.5;
 }
 /* Fix vertical aligment layout problem in Safari and Chrome */
@@ -116,49 +116,4 @@ a {
 
 .tabs .tab a {
   color: #888;
-}
-
-/* TOC */
-
-.toc {
-  margin-left: 30px;
-  margin-bottom: 20px;
-}
-
-.toc h3 {
-  font-weight: lighter;
-  font-size: 18px;
-  padding: 0;
-  margin-bottom: 0;
-  margin-top: 20px;
-}
-
-/* Sidebar split */
-.sidebar-split {
-  width: 100%;
-  display: flex;
-}
-
-.sidebar-split > div:first-child {
-  flex-grow: 1;
-}
-
-.sidebar-split > div:last-child {
-  flex-grow: 0;
-  width: 300px;
-  padding: 0 10px;
-  font-weight: lighter;
-  line-height: 1.5;
-  /*background-color: #f0f0f0;*/
-}
-
-/* Text */
-.text-content {
-  font-family: "Palatino", "Georgia", serif;
-  line-height: 1.5;
-  font-size: 1.15em;
-}
-
-.text-content sc {
-  font-variant: small-caps;
 }

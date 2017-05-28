@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Head from '../components/head';
 import Nav from '../components/nav';
+import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
@@ -66,15 +67,25 @@ export default class extends React.Component {
           <Nav lang={lang} poet={poet} work={work} text={text} />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="works" />
-          <div className="sidebar-split">
+          <SidebarSplit>
             <div>
               <SubHeading><TextName text={text} /></SubHeading>
               <div className="text-content">
                 <div dangerouslySetInnerHTML={{ __html: body }} />
+                <style jsx>{`
+                  .text-content {
+                    font-family: "Palatino", "Georgia", serif;
+                    line-height: 1.5;
+                    font-size: 1.15em;
+                  }
+                  .text-content sc {
+                    font-variant: small-caps;
+                  }
+              `}</style>
               </div>
             </div>
             <div>{sidebar}</div>
-          </div>
+          </SidebarSplit>
           <LangSelect lang={lang} />
         </div>
       </div>
