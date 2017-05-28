@@ -190,6 +190,7 @@ const handle_work = work => {
           id: textId,
           title: tocTitleToUse,
         });
+        handle_text(poetId, workId, part);
       }
     });
     return toc;
