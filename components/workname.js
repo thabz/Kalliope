@@ -17,7 +17,7 @@ export default class extends React.Component {
 
     const parts = [titlePart, yearPart].map((p, i) => {
       const className = i === 0 ? 'title' : 'year';
-      return p ? <span className={className}>{p} </span> : null;
+      return p ? <span key={i} className={className}>{p} </span> : null;
     });
     return <span className="workname">{parts}</span>;
   }
