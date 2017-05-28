@@ -196,11 +196,6 @@ const handle_work = work => {
     return toc;
   };
 
-  if (type !== 'poetry') {
-    console.log(`${poetId}/${workId}.xml is not poetry`);
-    return null;
-  }
-
   const workhead = work.get('workhead');
   const notes = get_notes(workhead);
   const pictures = get_pictures(workhead);
