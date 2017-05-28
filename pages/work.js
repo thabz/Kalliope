@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Head from '../components/head';
 import Nav from '../components/nav';
+import LangSelect from '../components/langselect.js';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
@@ -89,9 +90,8 @@ export default class extends React.Component {
     return (
       <div>
         <Head title="Digtere - Kalliope" />
-        <Nav lang={lang} />
-
         <div className="row">
+          <Nav lang={lang} poet={poet} work={work} />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="works" />
           <div className="sidebar-split">
@@ -103,6 +103,7 @@ export default class extends React.Component {
             </div>
             <div>{sidebar}</div>
           </div>
+          <LangSelect lang={lang} />
         </div>
       </div>
     );
