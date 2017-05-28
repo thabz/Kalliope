@@ -206,7 +206,12 @@ const handle_work = work => {
 
   const workbody = work.get('workbody');
   if (workbody == null) {
-    return null;
+    return {
+      lines: [],
+      toc: [],
+      notes: [],
+      pictures: [],
+    };
   }
 
   const toc = handle_section(workbody);
