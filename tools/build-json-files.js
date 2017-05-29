@@ -15,9 +15,11 @@ const loadXMLDoc = filename => {
   return doc;
 };
 
-// Reimplementation of Kalliope::buildhrefs
-const buildHrefs = html => {
-  return html.replace(/<xref poet=\"\"/, '');
+const htmlToXml = html => {
+  return html
+    .replace(/,,/g, '&bdquo;')
+    .replace(/''/g, '/&ldquo;')
+    .replace(/\n/g, '<br/>');
 };
 
 let collected_poets = null;
@@ -68,8 +70,7 @@ const get_notes = head => {
     const lang = note.attr('lang') ? note.attr('lang').value() : 'da';
     return {
       lang,
-      content_html: note
-        .toString()
+      content_html: htmlToXml(note.toString())
         .replace('<note>', '')
         .replace('</note>', ''),
     };
@@ -84,8 +85,7 @@ const get_pictures = head => {
       lang,
       src,
       type,
-      content_html: picture
-        .toString()
+      content_html: htmlToXml(picture.toString())
         .replace(/<picture[^>]*>/, '')
         .replace('</picture>', ''),
     };
@@ -113,8 +113,7 @@ const handle_text = (poetId, workId, text) => {
       subtitle,
       notes: get_notes(head),
       pictures: get_pictures(head),
-      content_html: body
-        .toString()
+      content_html: htmlToXml(body.toString())
         .replace('<body>', '')
         .replace('</body>', ''),
     },
