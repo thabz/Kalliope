@@ -38,6 +38,8 @@ export default class extends React.Component {
         return <br />;
       case '#text':
         return node.textContent;
+      case '#comment':
+        return null;
       case 'i':
         return <i>{this.handle_nodes(node.childNodes)}</i>;
       case 'content':
