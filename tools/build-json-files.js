@@ -2,6 +2,7 @@ const fs = require('fs');
 const xml2js = require('xml2js');
 const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
+const entities = require('entities');
 const Paths = require('../pages/helpers/paths.js');
 
 const writeJSON = (filename, data) => {
@@ -16,10 +17,12 @@ const loadXMLDoc = filename => {
 };
 
 const htmlToXml = html => {
-  return html
-    .replace(/,,/g, '&bdquo;')
-    .replace(/''/g, '/&ldquo;')
-    .replace(/\n/g, '<br/>');
+  return entities.decodeHTML(
+    html
+      .replace(/\n/g, '<br/>')
+      .replace(/,,/g, '&bdquo;')
+      .replace(/''/g, '&ldquo;')
+  );
 };
 
 let collected_poets = null;
