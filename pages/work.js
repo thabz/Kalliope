@@ -107,7 +107,7 @@ export default class extends React.Component {
                   margin-bottom: 20px;
                 }
 
-                :global(div.toc h3) {
+                div.toc :global(h3) {
                   font-weight: lighter;
                   font-size: 18px;
                   padding: 0;
