@@ -15,6 +15,10 @@ export const poetsURL = (
   return `/${lang}/poets/${groupBy}`;
 };
 
+export const poetURL = (lang: string = 'da', poetId: string) => {
+  return `/${lang}/works/${poetId}`;
+};
+
 export const linesURL = (
   lang: string = 'da',
   poetId: string,

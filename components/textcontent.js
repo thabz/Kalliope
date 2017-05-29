@@ -2,12 +2,36 @@
 import React from 'react';
 var DOMParser = require('xmldom').DOMParser;
 
-import type { Text } from '../pages/helpers/types.js';
+import type { Text, Lang } from '../pages/helpers/types.js';
+import * as Links from './links';
 
 export default class extends React.Component {
   props: {
     contentHtml: string,
+    lang: Lang,
   };
+  handle_a(node: any) {
+    const lang = this.props.lang;
+    if (node.hasAttribute('person')) {
+      const poetId = node.getAttribute('person');
+      return (
+        <a href={Links.poetURL(lang, poetId)}>
+          {this.handle_nodes(node.childNodes)}
+        </a>
+      );
+    } else if (node.hasAttribute('work')) {
+      const parts = node.getAttribute('work').split('/');
+      const poetId = parts[0];
+      const workId = parts[1];
+      return (
+        <a href={Links.workURL(lang, poetId, workId)}>
+          {this.handle_nodes(node.childNodes)}
+        </a>
+      );
+    } else {
+      return <code>{node.toString()}</code>;
+    }
+  }
   handle_node(node: any) {
     switch (node.nodeName) {
       case 'br':
@@ -17,7 +41,24 @@ export default class extends React.Component {
       case 'i':
         return <i>{this.handle_nodes(node.childNodes)}</i>;
       case 'content':
+      case 'nonum':
         return this.handle_nodes(node.childNodes);
+      case 'center':
+        return <center>{this.handle_nodes(node.childNodes)}</center>;
+      case 'w':
+        return (
+          <span style={{ letterSpacing: '0.2em' }}>
+            {this.handle_nodes(node.childNodes)}
+          </span>
+        );
+      case 'sc':
+        return (
+          <span style={{ fontVariant: 'small-caps' }}>
+            {this.handle_nodes(node.childNodes)}
+          </span>
+        );
+      case 'a':
+        return this.handle_a(node);
       default:
         return <code>{node.toString()}</code>;
     }

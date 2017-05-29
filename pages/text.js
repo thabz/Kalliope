@@ -57,7 +57,7 @@ export default class extends React.Component {
       return <Note key={i} note={note} />;
     });
     const sidebar = <div>{renderedNotes}</div>;
-    const body = <TextContent contentHtml={text.content_html} />;
+    const body = <TextContent contentHtml={text.content_html} lang={lang} />;
 
     const title = <PoetName poet={poet} includePeriod />;
     return (
