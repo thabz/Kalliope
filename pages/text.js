@@ -12,6 +12,7 @@ import SubHeading from '../components/subheading.js';
 import PoetName from '../components/poetname.js';
 import TextName from '../components/textname.js';
 import TextContent from '../components/textcontent.js';
+import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
 import type { Lang, Poet, Work, Text } from './helpers/types.js';
@@ -56,24 +57,24 @@ export default class extends React.Component {
     const renderedNotes = text.notes.map((note, i) => {
       return <Note key={i} note={note} />;
     });
-    const sidebar = <div>{renderedNotes}</div>;
+    const sidebar = <div>{renderedNotes}<FootnoteList /></div>;
     const body = <TextContent contentHtml={text.content_html} lang={lang} />;
 
     const title = <PoetName poet={poet} includePeriod />;
     return (
       <div>
-        <Head title="Digtere - Kalliope" />
-
-        <div className="row">
-          <Nav lang={lang} poet={poet} work={work} text={text} />
-          <Heading title={title} subtitle="Værker" />
-          <PoetTabs lang={lang} poet={poet} selected="works" />
-          <SidebarSplit>
-            <div>
-              <SubHeading><TextName text={text} /></SubHeading>
-              <div className="text-content">
-                {body}
-                <style jsx>{`
+        <FootnoteContainer>
+          <Head title="Digtere - Kalliope" />
+          <div className="row">
+            <Nav lang={lang} poet={poet} work={work} text={text} />
+            <Heading title={title} subtitle="Værker" />
+            <PoetTabs lang={lang} poet={poet} selected="works" />
+            <SidebarSplit>
+              <div>
+                <SubHeading><TextName text={text} /></SubHeading>
+                <div className="text-content">
+                  {body}
+                  <style jsx>{`
                   .text-content {
                     font-family: "Palatino", "Georgia", serif;
                     line-height: 1.5;
@@ -83,12 +84,13 @@ export default class extends React.Component {
                     font-variant: small-caps;
                   }
               `}</style>
+                </div>
               </div>
-            </div>
-            <div>{sidebar}</div>
-          </SidebarSplit>
-          <LangSelect lang={lang} />
-        </div>
+              <div>{sidebar}</div>
+            </SidebarSplit>
+            <LangSelect lang={lang} />
+          </div>
+        </FootnoteContainer>
       </div>
     );
   }

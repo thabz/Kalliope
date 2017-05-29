@@ -3,6 +3,7 @@ import React from 'react';
 var DOMParser = require('xmldom').DOMParser;
 
 import type { Text, Lang } from '../pages/helpers/types.js';
+import { Footnote } from './footnotes.js';
 import * as Links from './links';
 
 export default class extends React.Component {
@@ -53,6 +54,9 @@ export default class extends React.Component {
             {this.handle_nodes(node.childNodes)}
           </span>
         );
+      case 'note':
+        const noteContent = this.handle_nodes(node.childNodes);
+        return <Footnote text={noteContent} />;
       case 'sc':
         return (
           <span style={{ fontVariant: 'small-caps' }}>
