@@ -51,6 +51,12 @@ export default class extends React.Component {
       case 's':
       case 'small':
         return <small>{this.handle_nodes(node.childNodes)}</small>;
+      case 'right':
+        return (
+          <p style={{ textAlign: 'right' }}>
+            {this.handle_nodes(node.childNodes)}
+          </p>
+        );
       case 'w':
         return (
           <span style={{ letterSpacing: '0.2em' }}>
@@ -77,12 +83,13 @@ export default class extends React.Component {
     let collected = [];
     for (let i = 0; i < nodes.length; i++) {
       const node = nodes.item(i);
-      collected.push(this.handle_node(node));
+      let renderedNode = this.handle_node(node);
+      collected.push(renderedNode);
     }
     return collected;
   }
   render() {
-    // TODO: We need lang too, and some context.
+    // TODO: Some refs-context with titles of references poems and works.
     const { contentHtml } = this.props;
     const frag = new DOMParser().parseFromString(
       '<content>' + contentHtml + '</content>'
