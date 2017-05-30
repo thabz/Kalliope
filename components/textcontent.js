@@ -48,6 +48,9 @@ export default class extends React.Component {
         return this.handle_nodes(node.childNodes);
       case 'center':
         return <center>{this.handle_nodes(node.childNodes)}</center>;
+      case 's':
+      case 'small':
+        return <small>{this.handle_nodes(node.childNodes)}</small>;
       case 'w':
         return (
           <span style={{ letterSpacing: '0.2em' }}>
