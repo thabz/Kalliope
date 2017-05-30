@@ -117,7 +117,7 @@ export default class extends React.Component {
       <div>
         <Head title="Digtere - Kalliope" />
         <div className="row">
-          <Nav lang={lang} />
+          <Nav lang={lang} title="Digtere" />
           <Heading title="Digtere" />
           <Tabs items={tabs} selected={groupBy} />
           {renderedGroups}
