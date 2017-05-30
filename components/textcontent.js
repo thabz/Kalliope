@@ -20,6 +20,13 @@ export default class extends React.Component {
           {this.handle_nodes(node.childNodes)}
         </a>
       );
+    } else if (node.hasAttribute('poet')) {
+      const poetId = node.getAttribute('poet');
+      return (
+        <a href={Links.poetURL(lang, poetId)}>
+          {this.handle_nodes(node.childNodes)}
+        </a>
+      );
     } else if (node.hasAttribute('work')) {
       const parts = node.getAttribute('work').split('/');
       const poetId = parts[0];
