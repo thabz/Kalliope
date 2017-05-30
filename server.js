@@ -35,6 +35,11 @@ app.prepare().then(() => {
   createServer((req, res) => {
     const { pathname, query } = parse(req.url, true);
 
+    if (pathname === '/sw.js') {
+      app.render(req, res, '/static/sw.js', query);
+      return;
+    }
+
     for (let i = 0; i < routes.length; i++) {
       const r = routes[i];
       const params = r.match(pathname);
