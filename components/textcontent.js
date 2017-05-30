@@ -66,14 +66,14 @@ export default class extends React.Component {
           </span>
         );
       case 'hr':
-        const width = node.getAttribute('width');
+        const width = Math.min(node.getAttribute('width') * 10, 100);
         return (
           <hr
             noshade
             align="center"
             size="1"
             color="black"
-            style={{ color: 'black', width: width * 10 + '%' }}
+            style={{ color: 'black', width: `${width}%` }}
           />
         );
       case 'footnote':
