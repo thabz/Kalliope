@@ -65,6 +65,17 @@ export default class extends React.Component {
             {this.handle_nodes(node.childNodes)}
           </span>
         );
+      case 'hr':
+        const width = node.getAttribute('width');
+        return (
+          <hr
+            noshade
+            align="center"
+            size="1"
+            color="black"
+            style={{ color: 'black', width: width * 10 + '%' }}
+          />
+        );
       case 'footnote':
       case 'note':
         const noteContent = this.handle_nodes(node.childNodes);

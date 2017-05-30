@@ -19,6 +19,9 @@ const loadXMLDoc = filename => {
 const htmlToXml = html => {
   return entities.decodeHTML(
     html
+      .replace(/\n(---+)\n/g, (match, p1) => {
+        return `\n<hr width=${p1.length}/>\n`;
+      })
       .replace(/\n/g, '<br/>')
       .replace(/,,/g, '&bdquo;')
       .replace(/''/g, '&ldquo;')
