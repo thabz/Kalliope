@@ -5,9 +5,7 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('kalliope').then(cache => {
       return cache
-        .add('/')
-        .add('/da/poets/name')
-        .add('/da/poets/year')
+        .addAll(['/', '/da/poets/name', '/da/poets/year'])
         .then(() => self.skipWaiting());
     })
   );
