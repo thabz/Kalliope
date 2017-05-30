@@ -43,6 +43,8 @@ export default class extends React.Component {
         return null;
       case 'i':
         return <i>{this.handle_nodes(node.childNodes)}</i>;
+      case 'b':
+        return <b>{this.handle_nodes(node.childNodes)}</b>;
       case 'content':
       case 'nonum':
         return this.handle_nodes(node.childNodes);
@@ -63,6 +65,7 @@ export default class extends React.Component {
             {this.handle_nodes(node.childNodes)}
           </span>
         );
+      case 'footnote':
       case 'note':
         const noteContent = this.handle_nodes(node.childNodes);
         return <Footnote text={noteContent} />;
