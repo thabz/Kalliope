@@ -18,15 +18,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script>
-            if ('serviceWorker' in navigator) {
-              navigator.serviceWorker.register('/static/sw.js', { scope: '/' });
-            }
-
-            navigator.serviceWorker.ready.then(function(registration) {
-              console.log('Service Worker Ready');
-            });
-          </script>
+          <script src="static/register-sw.js" />
         </body>
       </html>
     );
