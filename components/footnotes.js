@@ -1,6 +1,10 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export class Footnote extends Component {
+  props: {
+    text: string,
+  };
   componentWillMount() {
     this.context.footnoteContainer.registrer(this);
   }
@@ -21,11 +25,7 @@ export class Footnote extends Component {
 }
 
 Footnote.contextTypes = {
-  footnoteContainer: React.PropTypes.object,
-};
-
-Footnote.propTypes = {
-  text: PropTypes.string.isRequired,
+  footnoteContainer: PropTypes.object,
 };
 
 export class FootnoteList extends Component {
@@ -49,7 +49,7 @@ export class FootnoteList extends Component {
 }
 
 FootnoteList.contextTypes = {
-  footnoteContainer: React.PropTypes.object,
+  footnoteContainer: PropTypes.object,
 };
 
 export class FootnoteContainer extends Component {
@@ -82,9 +82,5 @@ export class FootnoteContainer extends Component {
 }
 
 FootnoteContainer.childContextTypes = {
-  footnoteContainer: React.PropTypes.object,
-};
-
-FootnoteContainer.propTypes = {
-  children: PropTypes.node,
+  footnoteContainer: PropTypes.object,
 };
