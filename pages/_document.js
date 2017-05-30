@@ -9,17 +9,6 @@ export default class MyDocument extends Document {
     return { lang, html, head, errorHtml, chunks, styles };
   }
 
-  registerServiceWorker() {
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/static/sw.js', { scope: '/' });
-    }
-
-    navigator.serviceWorker.ready.then(function(registration) {
-      console.log('Service Worker Ready');
-    });
-    return null;
-  }
-
   render() {
     return (
       <html lang={this.props.lang}>
@@ -29,7 +18,15 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          {this.registerServiceWorker()}
+          <script>
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('/static/sw.js', { scope: '/' });
+            }
+
+            navigator.serviceWorker.ready.then(function(registration) {
+              console.log('Service Worker Ready');
+            });
+          </script>
         </body>
       </html>
     );
