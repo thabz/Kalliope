@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
 
   registerServiceWorker() {
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js', { scope: '/' });
+      navigator.serviceWorker.register('/static/sw.js', { scope: '/' });
     }
 
     navigator.serviceWorker.ready.then(function(registration) {
