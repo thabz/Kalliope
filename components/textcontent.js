@@ -11,6 +11,17 @@ export default class extends React.Component {
     contentHtml: string,
     lang: Lang,
   };
+  handle_metrik(s: string) {
+    // TODO: All should be equal width (esp. the space _ aka 00A0),
+    // so wrap them as a flexbox thingie.
+    // TODO: Handle more symbols from http://www.unicode.org/charts/PDF/U2300.pdf
+    return s
+      .replace(/_u/g, '\u23D3')
+      .replace(/_/g, '\u00A0')
+      .replace(/uu/g, '\u23D6')
+      .replace(/u/g, '\u23D1')
+      .replace(/-/g, '\u2013');
+  }
   handle_a(node: any) {
     const lang = this.props.lang;
     if (node.hasAttribute('person')) {
@@ -52,6 +63,7 @@ export default class extends React.Component {
         return <i>{this.handle_nodes(node.childNodes)}</i>;
       case 'b':
         return <b>{this.handle_nodes(node.childNodes)}</b>;
+      case 'wrap':
       case 'content':
       case 'nonum':
         return this.handle_nodes(node.childNodes);
@@ -72,6 +84,8 @@ export default class extends React.Component {
             {this.handle_nodes(node.childNodes)}
           </span>
         );
+      case 'metrik':
+        return this.handle_metrik(node.textContent);
       case 'hr':
         const width = Math.min(node.getAttribute('width') * 10, 100);
         return (
