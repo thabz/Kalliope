@@ -12,15 +12,22 @@ export default class extends React.Component {
     lang: Lang,
   };
   handle_metrik(s: string) {
-    // TODO: All should be equal width (esp. the space _ aka 00A0),
-    // so wrap them as a flexbox thingie.
-    // TODO: Handle more symbols from http://www.unicode.org/charts/PDF/U2300.pdf
-    return s
+    // Disse metrik symboler ligger i Unicode 23Dx
+    // http://www.unicode.org/charts/PDF/U2300.pdf
+    const unicode = s
       .replace(/_u/g, '\u23D3')
       .replace(/_/g, '\u00A0')
       .replace(/uu/g, '\u23D6')
       .replace(/u/g, '\u23D1')
       .replace(/-/g, '\u2013');
+    const parts = unicode
+      .split(/ */)
+      .map(x => <div style={{ flexGrow: 1 }}>{x}</div>);
+    return (
+      <div style={{ display: 'inline-flex', justifyContent: 'space-between' }}>
+        {parts}
+      </div>
+    );
   }
   handle_a(node: any) {
     const lang = this.props.lang;
