@@ -20,6 +20,13 @@ export default class extends React.Component {
           {this.handle_nodes(node.childNodes)}
         </a>
       );
+    } else if (node.hasAttribute('poet')) {
+      const poetId = node.getAttribute('poet');
+      return (
+        <a href={Links.poetURL(lang, poetId)}>
+          {this.handle_nodes(node.childNodes)}
+        </a>
+      );
     } else if (node.hasAttribute('work')) {
       const parts = node.getAttribute('work').split('/');
       const poetId = parts[0];
@@ -64,6 +71,17 @@ export default class extends React.Component {
           <span style={{ letterSpacing: '0.2em' }}>
             {this.handle_nodes(node.childNodes)}
           </span>
+        );
+      case 'hr':
+        const width = Math.min(node.getAttribute('width') * 10, 100);
+        return (
+          <hr
+            noshade
+            align="center"
+            size="1"
+            color="black"
+            style={{ color: 'black', width: `${width}%` }}
+          />
         );
       case 'footnote':
       case 'note':

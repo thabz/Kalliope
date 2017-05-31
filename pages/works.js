@@ -53,7 +53,7 @@ export default class extends React.Component {
       <div>
         <Head title="Digtere - Kalliope" />
         <div className="row">
-          <Nav lang={lang} poet={poet} />
+          <Nav lang={lang} poet={poet} title="Værker" />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="works" />
           <div className="two-columns">

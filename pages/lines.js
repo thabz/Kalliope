@@ -95,7 +95,11 @@ export default class extends React.Component {
       <div>
         <Head title="Digtere - Kalliope" />
         <div className="row">
-          <Nav lang={lang} />
+          <Nav
+            lang={lang}
+            poet={poet}
+            title={type === 'titles' ? 'Titler' : 'Førstelinjer'}
+          />
           <Heading title={title} />
           <PoetTabs lang={lang} poet={poet} selected={type} />
           {renderedGroups}

@@ -66,7 +66,12 @@ export default class extends React.Component {
         <FootnoteContainer>
           <Head title="Digtere - Kalliope" />
           <div className="row">
-            <Nav lang={lang} poet={poet} work={work} text={text} />
+            <Nav
+              lang={lang}
+              poet={poet}
+              work={work}
+              title={<TextName text={text} />}
+            />
             <Heading title={title} subtitle="Værker" />
             <PoetTabs lang={lang} poet={poet} selected="works" />
             <SidebarSplit>

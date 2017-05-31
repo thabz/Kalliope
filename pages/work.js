@@ -92,7 +92,7 @@ export default class extends React.Component {
       <div>
         <Head title="Digtere - Kalliope" />
         <div className="row">
-          <Nav lang={lang} poet={poet} work={work} />
+          <Nav lang={lang} poet={poet} title={<WorkName work={work} />} />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="works" />
           <SidebarSplit>
