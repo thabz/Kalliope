@@ -19,15 +19,17 @@ export default class extends React.Component {
       .replace(/_/g, '\u00A0')
       .replace(/uu/g, '\u23D6')
       .replace(/u/g, '\u23D1')
-      .replace(/-/g, '\u2013');
-    const parts = unicode
-      .split(/ */)
-      .map(x => <div style={{ flexGrow: 1 }}>{x}</div>);
-    return (
-      <div style={{ display: 'inline-flex', justifyContent: 'space-between' }}>
-        {parts}
-      </div>
-    );
+      .replace(/-/g, '\u23BC');
+    const parts = unicode.split(/ */).map(x => (
+      <span
+        style={{
+          display: 'inline-block',
+          width: '1em',
+        }}>
+        {x}
+      </span>
+    ));
+    return <span style={{ fontSize: '1.1em' }}>{parts}</span>;
   }
   handle_a(node: any) {
     const lang = this.props.lang;
