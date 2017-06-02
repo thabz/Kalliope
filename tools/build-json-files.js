@@ -142,6 +142,33 @@ const handle_work = work => {
     let proses = [];
     let toc = [];
 
+    const extractTocTitle = head => {
+      const firstline = head.get('firstline')
+        ? head.get('firstline').text()
+        : null;
+      const toctitle = head.get('toctitle')
+        ? head.get('toctitle').toString()
+        : null;
+      const title = head.get('title') ? head.get('title').text() : null;
+      let titleToUse = toctitle || title || firstline;
+      if (titleToUse == null) {
+        return null;
+      }
+      titleToUse = entities
+        .decodeHTML(titleToUse)
+        .replace('<toctitle>', '')
+        .replace('</toctitle>', '');
+      const parts = titleToUse.match(/<num>([^<]*)<\/num>(.*)$/);
+      if (parts != null) {
+        return {
+          prefix: parts[1],
+          title: parts[2],
+        };
+      } else {
+        return { title: titleToUse };
+      }
+    };
+
     section.childNodes().forEach(part => {
       const partName = part.name();
       if (partName === 'poem') {
@@ -151,22 +178,22 @@ const handle_work = work => {
         const indextitle = head.get('indextitle')
           ? head.get('indextitle').text()
           : null;
-        const toctitle = head.get('toctitle')
-          ? head.get('toctitle').text()
-          : null;
         const firstline = head.get('firstline')
           ? head.get('firstline').text()
           : null;
         const indexTitleToUse = indextitle || title || firstline;
-        const tocTitleToUse = toctitle || title;
         if (indexTitleToUse == null) {
-          throw `${textId} mangler førstelinje, indextitle og title i ${author}/${id}.xml`;
+          throw `${textId} mangler førstelinje, indextitle og title i ${poetId}/${workId}.xml`;
         }
         if (firstline != null && typeof firstline !== 'string') {
-          throw `${textId} har markup i førstelinjen i ${author}/${id}.xml`;
+          throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
         }
         if (typeof indexTitleToUse !== 'string') {
-          throw `${textId} har markup i titlen i ${author}/${id}.xml`;
+          throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
+        }
+        const toctitle = extractTocTitle(head);
+        if (toctitle == null) {
+          throw `${textId} mangler toctitle, firstline og title i ${poetId}/${workId}.xml`;
         }
         lines.push({
           id: textId,
@@ -177,7 +204,8 @@ const handle_work = work => {
         toc.push({
           type: 'text',
           id: textId,
-          title: tocTitleToUse,
+          title: toctitle.title,
+          prefix: toctitle.prefix,
         });
         handle_text(poetId, workId, part);
       } else if (partName === 'section') {
@@ -192,17 +220,15 @@ const handle_work = work => {
         const textId = part.attr('id').value();
         const head = part.get('head');
         const title = head.get('title') ? head.get('title').text() : null;
-        const indextitle = head.get('indextitle')
-          ? head.get('indextitle').text()
-          : null;
-        const toctitle = head.get('toctitle')
-          ? head.get('toctitle').text()
-          : null;
-        const tocTitleToUse = toctitle || title;
+        const toctitle = extractTocTitle(head, textId);
+        if (toctitle == null) {
+          throw `${textId} mangler title og toctitle i ${poetId}/${workId}.xml`;
+        }
         toc.push({
           type: 'text',
           id: textId,
-          title: tocTitleToUse,
+          title: toctitle.title,
+          prefix: toctitle.prefix,
         });
         handle_text(poetId, workId, part);
       }

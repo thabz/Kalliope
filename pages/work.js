@@ -62,8 +62,10 @@ export default class extends React.Component {
     const { lang, poet, work, notes, pictures, toc } = this.props;
 
     const renderItems = (items: Array<TocItem>, indent: number = 0) => {
+      const hasPrefixes = items.filter(x => x.prefix != null).length > 0;
+      // TODO: Render a table if hasPrefixes
       return items.map((item, i) => {
-        const { id, title, type } = item;
+        const { id, title, type, prefix } = item;
         if (type === 'section' && item.content != null) {
           const className = `toc indent-${indent}`;
           return (
@@ -74,9 +76,8 @@ export default class extends React.Component {
           );
         } else if (type === 'text' && id != null) {
           const url = Links.textURL(lang, id);
-          return (
-            <div className="toc-line" key={id}><a href={url}>{title}</a></div>
-          );
+          const linkedTitle = <a href={url}>{title}</a>;
+          return <div className="toc-line" key={id}>{linkedTitle}</div>;
         }
       });
     };
