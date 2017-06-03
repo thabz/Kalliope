@@ -11,6 +11,26 @@ export default class extends React.Component {
     contentHtml: string,
     lang: Lang,
   };
+  handle_metrik(s: string) {
+    // Disse metrik symboler ligger i Unicode 23Dx
+    // http://www.unicode.org/charts/PDF/U2300.pdf
+    const unicode = s
+      .replace(/_u/g, '\u23D3')
+      .replace(/_/g, '\u00A0')
+      .replace(/uu/g, '\u23D6')
+      .replace(/u/g, '\u23D1')
+      .replace(/-/g, '\u23BC');
+    const parts = unicode.split(/ */).map(x => (
+      <span
+        style={{
+          display: 'inline-block',
+          width: '1em',
+        }}>
+        {x}
+      </span>
+    ));
+    return <span style={{ fontSize: '1.1em' }}>{parts}</span>;
+  }
   handle_a(node: any) {
     const lang = this.props.lang;
     if (node.hasAttribute('person')) {
@@ -52,6 +72,7 @@ export default class extends React.Component {
         return <i>{this.handle_nodes(node.childNodes)}</i>;
       case 'b':
         return <b>{this.handle_nodes(node.childNodes)}</b>;
+      case 'wrap':
       case 'content':
       case 'nonum':
         return this.handle_nodes(node.childNodes);
@@ -72,6 +93,8 @@ export default class extends React.Component {
             {this.handle_nodes(node.childNodes)}
           </span>
         );
+      case 'metrik':
+        return this.handle_metrik(node.textContent);
       case 'hr':
         const width = Math.min(node.getAttribute('width') * 10, 100);
         return (

@@ -42,7 +42,7 @@ export default class extends React.Component {
         if (deadYear.substring(0, 2) === bornYear.substring(0, 2)) {
           deadYear = deadYear.substring(2, 4);
         }
-        periodPart = <span>({bornYear}-{deadYear})</span>;
+        periodPart = <span>({bornYear}–{deadYear})</span>;
       }
     }
     const parts = [namePart, periodPart].map((p, i) => {

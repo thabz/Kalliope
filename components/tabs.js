@@ -20,7 +20,56 @@ export default class Tabs extends React.Component {
       );
     });
 
-    return <div className="tabs">{itemsRendered}</div>;
+    return (
+      <div className="tabs">
+        {itemsRendered}
+        <style jsx>{`
+          .tabs {
+            border-bottom: 1px solid black;
+            margin-bottom: 40px;
+          }
+
+          .tabs > :global(.tab) {
+            display: inline-block;
+            margin-right: 40px;
+            border-bottom: 2px solid transparent;
+          }
+
+          .tabs > :global(.tab) :global(h2) {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            line-height: 32px;
+            font-size: 32px;
+            font-weight: lighter;
+          }
+
+          @media (max-width: 480px) {
+            .tabs > :global(.tab) {
+              margin-right: 10px;
+            }
+            .tabs > :global(.tab) :global(h2) {
+              margin-top: 5px;
+              margin-bottom: 10px;
+              line-height: 16px;
+              font-size: 16px;
+              font-weight: lighter;
+            }
+          }
+
+          .tabs > :global(.tab.selected) {
+            border-bottom: 2px solid black;
+          }
+
+          .tabs :global(.tab.selected a) {
+            color: black;
+          }
+
+          .tabs > :global(.tab) :global(a) {
+            color: #888;
+          }
+        `}</style>
+      </div>
+    );
   }
 }
 

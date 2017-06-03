@@ -18,23 +18,10 @@ a {
   color: #333;
 }
 
-.heading {
-  margin-bottom: 20px;
-}
-
-.heading h1 {
-  margin: 0;
-  width: 100%;
-  padding-top: 20px;
-  line-height: 48px;
-  font-size: 48px;
-  font-weight: lighter;
-}
-
 .subheading h2 {
   margin: 0;
   width: 100%;
-  margin: 10px 0;
+  margin: 10px 0 30px 0;
   line-height: 1.15;
   font-size: 28px;
   font-weight: lighter;
@@ -56,64 +43,10 @@ a {
   padding: 0 20px;
 }
 
-
-.two-columns {
-  width: 100%;
-  columns: 2;
-  column-gap: 20px;
-}
-
-.list-section {
-  break-inside: avoid;
-}
-
-.list-section *, .list-section-line {
-  line-height: 1.5;
-}
-/* Fix vertical aligment layout problem in Safari and Chrome */
-.list-section:before {
-  content: '';
-  display: block;
-  height: 1px;
-}
-
 .poetname .period {
   opacity: 0.5;
 }
 
 .workname .year {
   opacity: 0.5;
-}
-
-
-/* Tabs */
-.tabs {
-  border-bottom: 1px solid black;
-  margin-bottom: 40px;
-}
-
-.tabs > .tab {
-  display: inline-block;
-  margin-right: 40px;
-  border-bottom: 2px solid transparent;
-}
-
-.tabs > .tab h2 {
-  line-height: 32px;
-  font-size: 32px;
-  font-weight: lighter;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.tabs > .tab.selected {
-  border-bottom: 2px solid black;
-}
-
-.tabs .tab.selected a {
-  color: black;
-}
-
-.tabs .tab a {
-  color: #888;
 }

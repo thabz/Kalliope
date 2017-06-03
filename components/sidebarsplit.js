@@ -20,6 +20,16 @@ export default class extends React.Component {
             font-weight: lighter;
             line-height: 1.5;
           }
+          @media (max-width: 480px) {
+            div.sidebar-spl {
+              flex-direction: column;
+            }
+            div.sidebar-spl > :global(div:last-child) {
+              border-top: 1px solid black;
+              width: 100%;
+              padding: 0;
+            }
+          }
       `}</style>
       </div>
     );

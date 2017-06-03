@@ -39,6 +39,7 @@ export type SectionForRendering = Section<{
 export type TocItem = {
   id?: string,
   title: string,
+  prefix?: string,
   type: 'section' | 'text',
   content?: Array<TocItem>,
 };
