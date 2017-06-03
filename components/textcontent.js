@@ -47,12 +47,26 @@ export default class extends React.Component {
           {this.handle_nodes(node.childNodes)}
         </a>
       );
+    } else if (node.hasAttribute('poem')) {
+      const textId = node.getAttribute('poem');
+      return (
+        <a href={Links.textURL(lang, textId)}>
+          {this.handle_nodes(node.childNodes)}
+        </a>
+      );
     } else if (node.hasAttribute('work')) {
       const parts = node.getAttribute('work').split('/');
       const poetId = parts[0];
       const workId = parts[1];
       return (
         <a href={Links.workURL(lang, poetId, workId)}>
+          {this.handle_nodes(node.childNodes)}
+        </a>
+      );
+    } else if (node.hasAttribute('href')) {
+      const href = node.getAttribute('href');
+      return (
+        <a href={href}>
           {this.handle_nodes(node.childNodes)}
         </a>
       );

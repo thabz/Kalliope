@@ -5,6 +5,12 @@ const mkdirp = require('mkdirp');
 const entities = require('entities');
 const Paths = require('../pages/helpers/paths.js');
 
+let collected_poets = null;
+let collected_work_heads = new Map();
+let collected_texts = new Map();
+// Ready after second pass
+let collected_works = new Map();
+
 const writeJSON = (filename, data) => {
   const json = JSON.stringify(data, null, 2);
   fs.writeFileSync(filename, json);
@@ -17,7 +23,8 @@ const loadXMLDoc = filename => {
 };
 
 const htmlToXml = html => {
-  return entities.decodeHTML(
+  const regexp = /<xref\s+(digt|poem|keyword|work)=['"]([^'"]*)['"][^>]*>/;
+  let decoded = entities.decodeHTML(
     html
       .replace(/\n( +)/g, (match, p1) => {
         return '\n' + '&nbsp;'.repeat(p1.length);
@@ -30,10 +37,30 @@ const htmlToXml = html => {
       .replace(/,,/g, '&bdquo;')
       .replace(/''/g, '&ldquo;')
   );
+  while (decoded.match(regexp)) {
+    decoded = decoded.replace(regexp, (_, type, id) => {
+      if (type === 'digt' || type === 'poem') {
+        if (type === 'digt') {
+          type = 'poem';
+        }
+        const meta = collected_texts.get(id);
+        if (meta == null) {
+          return 'DEAD-LINK';
+        } else {
+          console.log('Found a match ' + type + id);
+          return `<a ${type}="${id}">${meta.title}</a`;
+        }
+      } else if (type === 'keyword') {
+        // TODO: Implement
+      } else if (type === 'ord') {
+        // TODO: Implement
+      } else if (type === 'bibel') {
+        // TODO: Implement
+      }
+    });
+  }
+  return decoded;
 };
-
-let collected_poets = null;
-let collected_works = new Map();
 
 const forceArray = a => {
   return a instanceof Array ? a : [a];
@@ -254,6 +281,47 @@ const handle_work = work => {
   return { lines, toc, notes, pictures };
 };
 
+// Constructs collected_work_heads and collected_texts to
+// be used for resolving <xref poem="">, etc.
+const works_first_pass = poets => {
+  poets.forEach(poet => {
+    poet.workIds.forEach(workId => {
+      const handle_section = section => {
+        section.childNodes().forEach(part => {
+          const partName = part.name();
+          if (partName === 'section') {
+            handle_section(part.get('content'));
+          } else if (partName == 'poem' || partName === 'prose') {
+            const textId = part.attr('id').value();
+            const head = part.get('head');
+            const title = head.get('title') ? head.get('title').text() : null;
+            const firstline = head.get('firstline')
+              ? head.get('firstline').text()
+              : null;
+            const linkTitle = title || firstline;
+            collected_texts.set(textId, {
+              title: linkTitle,
+            });
+          }
+        });
+      };
+      let doc = loadXMLDoc(`fdirs/${poet.id}/${workId}.xml`);
+      const work = doc.get('//kalliopework');
+      const head = work.get('workhead');
+      const title = head.get('title').text();
+      const year = head.get('year').text();
+      collected_work_heads.set(`${poet.id}/${workId}`, {
+        title: title,
+        year: year,
+      });
+      const workbody = work.get('workbody');
+      if (workbody != null) {
+        handle_section(workbody);
+      }
+    });
+  });
+};
+
 const build_poet_works_json = collected_poets => {
   collected_poets.forEach((poet, poetId) => {
     try {
@@ -312,4 +380,5 @@ try {
 }
 
 collected_poets = build_poets_json();
+works_first_pass(collected_poets);
 build_poet_works_json(collected_poets);
