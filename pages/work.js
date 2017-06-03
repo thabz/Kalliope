@@ -62,24 +62,30 @@ export default class extends React.Component {
     const { lang, poet, work, notes, pictures, toc } = this.props;
 
     const renderItems = (items: Array<TocItem>, indent: number = 0) => {
-      const hasPrefixes = items.filter(x => x.prefix != null).length > 0;
-      // TODO: Render a table if hasPrefixes
-      return items.map((item, i) => {
+      const rows = items.map((item, i) => {
         const { id, title, type, prefix } = item;
         if (type === 'section' && item.content != null) {
-          const className = `toc indent-${indent}`;
           return (
-            <div className={className} key={i}>
-              <h3>{title}</h3>
-              {renderItems(item.content, indent + 1)}
-            </div>
+            <tr key={i}>
+              <td />
+              <td>
+                <h3>{title}</h3>
+                {renderItems(item.content, indent + 1)}
+              </td>
+            </tr>
           );
         } else if (type === 'text' && id != null) {
           const url = Links.textURL(lang, id);
           const linkedTitle = <a href={url}>{title}</a>;
-          return <div className="toc-line" key={id}>{linkedTitle}</div>;
+          return (
+            <tr key={id}>
+              <td className="num">{prefix}</td><td>{linkedTitle}</td>
+            </tr>
+          );
         }
       });
+      const className = `toc ${indent === 0 ? 'outer' : null}`;
+      return <table className={className}><tbody>{rows}</tbody></table>;
     };
 
     const renderedNotes = notes.map((note, i) => {
@@ -87,7 +93,7 @@ export default class extends React.Component {
     });
 
     const sidebar = <div>{renderedNotes}</div>;
-    const list = renderItems(toc);
+    const table = renderItems(toc);
     const title = <PoetName poet={poet} includePeriod />;
     return (
       <div>
@@ -99,24 +105,35 @@ export default class extends React.Component {
           <SidebarSplit>
             <div>
               <SubHeading><WorkName work={work} /></SubHeading>
-              <div className="toc">
-                {list}
-              </div>
+              {table}
               <style jsx>{`
-                :global(div.toc) {
+                :global(table.toc) {
                   margin-left: 30px;
-                  margin-bottom: 20px;
+                  margin-bottom: 10px;
+                  cell-spacing: 0;
+                  cell-padding: 0;
+                  border-collapse: collapse;
                 }
-
-                div.toc :global(h3) {
+                :global(table.toc.outer) {
+                  margin-left: 0;
+                }
+                :global(.toc) :global(h3) {
                   font-weight: lighter;
                   font-size: 18px;
                   padding: 0;
-                  margin-bottom: 0;
-                  margin-top: 20px;
+                  margin: 0;
+                  margin-top: 10px;
                 }
-                :global(div.toc-line) {
-                  line-height: 1.5;
+                :global(.toc) :global(td.num) {
+                  text-align: right;
+                  color: rgb(139, 56, 65);
+                  opacity: 0.5;
+                  white-space: nowrap;
+                  padding-right: 5px;
+                }
+                :global(.toc) :global(td) {
+                  line-height: 1.7;
+                  padding: 0;
                 }
             `}</style>
             </div>
