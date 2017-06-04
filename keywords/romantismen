@@ -1,8 +1,13 @@
-T:Romantisme
-P:friedrich7
-P:Hugo
-P:ingres8
-P:Heine
+<?xml version="1.0" encoding="UTF-8"?>
+<keyword>
+<head>
+<title>Romantisme</title>
+<picture>friedrich7</picture>
+<picture>Hugo</picture>
+<picture>ingres8</picture>
+<picture>Heine</picture>
+</head>
+<body>
 
 <P>  Den franske <A K=romantikken>romantik</A>, romantismen,  har først sin begyndelse i
 <year>1820</year>erne, og viser sig forskellig fra den tyske - og dermed danske
@@ -38,7 +43,9 @@ kun form.
 fremmede og eksotiske medens Biedermeierkulturen mest var
 interesseret i det danske.</P>
 
-K:romantikken
-K:biedermeier
-K:efterromantik
-K:perioder
+<related>romantikken</related>
+<related>biedermeier</related>
+<related>efterromantik</related>
+<related>perioder</related>
+</body>
+</keyword>

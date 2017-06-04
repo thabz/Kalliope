@@ -1,4 +1,13 @@
-T:Salme
+<?xml version="1.0" encoding="UTF-8"?>
+<keyword>
+<head>
+<title>Salme</title>
+<picture>luther</picture>
+<related>genrer</related>
+<related>salmeboeger</related>
+<related>enevaelde_og_kirke</related>
+</head>
+<body>
 <p>Salmer som synges af menigheden under gudstjenesten blev indført af <A F=luther> Luther</A> under reformationen. 
 
 <p>Salmen tilhører den lyriske hovedgenre. Salmen kan kort defineres som en kirkelig sang.
@@ -6,10 +15,10 @@ T:Salme
 
 <p>Salmen har en klar strofisk form, en fast rytme og enderim.
 
-P:luther
-K:genrer
-K:salmeboeger
-K:enevaelde_og_kirke
+<!--
 F:grundtvig
 F:brorson
 F:kingo
+-->
+</body>
+</keyword>

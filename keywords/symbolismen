@@ -1,7 +1,11 @@
-T:Symbolismen
-P:Baudelaire
-P:monet.st-lazare
-
+<?xml version="1.0" encoding="UTF-8"?>
+<keyword>
+<head>
+<title>Symbolismen</title>
+<picture>Baudelaire</picture>
+<picture>monet.st-lazare</picture>
+</head>
+<body>
 <P>Symbolismen havde sin foregangsmand i den franske lyriker og
 kritiker <A F=baudelaire>Charles Baudelaire</A> (<year>1821</year>-<year>1867</year>) og en af de sidste store
 repræsentanter var tyske <A F=rilke>Rainer Maria Rilke</A> (<year>1875</year>-<year>1925</year>). Fra det
@@ -47,9 +51,13 @@ på en bagvedliggende virkelighed, som poeten ved billeder og
 symboler kan udtrykke sin indsigt i. Ikke opfindelser af historier men
 videregivelser af stemninger. Ikke underholdning men indtryk.</P>
 
-K:perioder
-K:realismen
+<!--
+<related>perioder</related>
+<related>realismen</related>
 F:stuckenberg
 F:claussen
 F:baudelaire
 F:rilke
+-->
+</body>
+</keyword>

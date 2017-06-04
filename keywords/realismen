@@ -1,9 +1,15 @@
-T:Realismen
-
-P:Flaubert2
-P:Brandes
-P:Balzac
-P:Zola
+<?xml version="1.0" encoding="UTF-8"?>
+<keyword>
+<head>
+<title>Realismen</title>
+<related>perioder</related>
+<related>symbolismen</related>
+<picture>Flaubert2</picture>
+<picture>Brandes</picture>
+<picture>Balzac</picture>
+<picture>Zola</picture>
+</head>
+<body>
 
 <P>  <A F=brandes>Georg Brandes'</A> forelæsninger ved Kbh. Universitet med titlen 
 <I>Hovedstrømninger i det 19. Aarhundredes Litteratur</I> starter <year>1871</year>, og
@@ -56,9 +62,11 @@ finder sted - fra digte, læsedramaer og noveller til romaner og
 dramaer. Udviklingsromanen afløser dannelsesromanen.</P>
 
 <P>  Realismen, eller perioden <year>1870</year>-<year>1910</year>, falder i tre strømninger:</P>
-<LI> Det Moderne Gennembrud, kredsen omkring Brandes.<BR>
-<LI> <A K=symbolismen>Symbolismen</A>, især kredsen omkring tidsskriftet <I>Taarnet.</I><BR>
-<LI> Det folkelige gennembrud.<BR>
+<ul>
+    <li> Det Moderne Gennembrud, kredsen omkring Brandes.</li>
+    <li> <A K=symbolismen>Symbolismen</A>, især kredsen omkring tidsskriftet <I>Taarnet.</I></li>
+    <li> Det folkelige gennembrud.</li>
+</ul>
+</body>
+</keyword>
 
-K:perioder
-K:symbolismen
