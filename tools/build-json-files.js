@@ -44,7 +44,6 @@ const htmlToXml = html => {
         if (meta == null) {
           return 'DEAD-LINK';
         } else {
-          console.log('Found a match ' + type + id);
           return `<a ${type}="${id}">${meta.title}</a`;
         }
       } else if (type === 'keyword') {
