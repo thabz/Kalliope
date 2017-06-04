@@ -14,35 +14,40 @@ export default class extends React.Component {
     lang: Lang,
     poet?: Poet,
     work?: Work,
+    links?: Array<any>,
     title?: any,
   };
 
   render() {
     const { lang, poet, work, title } = this.props;
+    let { links } = this.props;
     const rootLink = <a href="/">Kalliope</a>;
-    const poetsURL = poet ? <a href={Links.poetsURL(lang)}>Digtere</a> : null;
-    const poetLink = poet
-      ? <a href={Links.poetURL(lang, poet.id)}><PoetName poet={poet} /></a>
-      : null;
-    const workLink = work && poet
-      ? <a href={Links.workURL(lang, poet.id, work.id)}>
-          <WorkName work={work} />
-        </a>
-      : null;
-    const titleLink = title;
-    const links = [rootLink, poetsURL, poetLink, workLink, titleLink]
-      .filter(x => x != null)
-      .map((link, i, a) => {
-        if (i != 0) {
-          return <div><span>&nbsp;→&nbsp;</span>{link}</div>;
-        } else {
-          return <div>{link}</div>;
-        }
-      });
+
+    if (!links) {
+      const poetsURL = poet ? <a href={Links.poetsURL(lang)}>Digtere</a> : null;
+      const poetLink = poet
+        ? <a href={Links.poetURL(lang, poet.id)}><PoetName poet={poet} /></a>
+        : null;
+      const workLink = work && poet
+        ? <a href={Links.workURL(lang, poet.id, work.id)}>
+            <WorkName work={work} />
+          </a>
+        : null;
+      links = [poetsURL, poetLink, workLink];
+    }
+
+    links = [rootLink, ...links, title];
+    const joinedLinks = links.filter(x => x != null).map((link, i) => {
+      if (i !== 0) {
+        return <div><span>&nbsp;→&nbsp;</span>{link}</div>;
+      } else {
+        return <div>{link}</div>;
+      }
+    });
     return (
       <nav>
         <div>
-          {links}
+          {joinedLinks}
         </div>
         <style jsx>{`
         :global(body) {

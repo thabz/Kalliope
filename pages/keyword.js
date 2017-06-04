@@ -45,14 +45,14 @@ export default class extends React.Component {
 
     const sidebar = <div><FootnoteList /></div>;
     const body = <TextContent contentHtml={keyword.content_html} lang={lang} />;
-
+    const navbar = [<a href={Links.keywordsURL(lang)}>Nøgleord</a>];
     const title = keyword.title;
     return (
       <div>
         <FootnoteContainer>
           <Head title="Digtere - Kalliope" />
           <div className="row">
-            <Nav lang={lang} title={keyword.title} />
+            <Nav lang={lang} links={navbar} title={keyword.title} />
             <Heading title={title} />
             <KalliopeTabs lang={lang} selected="keywords" />
             <SidebarSplit>
