@@ -39,10 +39,7 @@ const htmlToXml = html => {
   );
   while (decoded.match(regexp)) {
     decoded = decoded.replace(regexp, (_, type, id) => {
-      if (type === 'digt' || type === 'poem') {
-        if (type === 'digt') {
-          type = 'poem';
-        }
+      if (type === 'poem') {
         const meta = collected_texts.get(id);
         if (meta == null) {
           return 'DEAD-LINK';
