@@ -32,6 +32,14 @@ const routes = [
     match: route('/:lang/text/:textId'),
     path: '/text',
   },
+  {
+    match: route('/:lang/keywords'),
+    path: '/keywords',
+  },
+  {
+    match: route('/:lang/keyword/:keywordId'),
+    path: '/keyword',
+  },
 ];
 
 app.prepare().then(() => {

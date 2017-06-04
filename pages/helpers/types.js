@@ -63,3 +63,8 @@ export type Text = {
   pictures: Array<PictureItem>,
   content_html: string,
 };
+
+export type Keyword = {
+  id: string,
+  title: string,
+};

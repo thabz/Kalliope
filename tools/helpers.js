@@ -2,6 +2,14 @@ const fs = require('fs');
 const entities = require('entities');
 const libxml = require('libxmljs');
 
+const safeMkdir = dirname => {
+  try {
+    fs.mkdirSync(dirname);
+  } catch (err) {
+    if (err.code !== 'EEXIST') throw err;
+  }
+};
+
 const writeJSON = (filename, data) => {
   const json = JSON.stringify(data, null, 2);
   fs.writeFileSync(filename, json);
@@ -49,4 +57,4 @@ const htmlToXml = (html, collected) => {
   return decoded;
 };
 
-module.exports = { writeJSON, loadXMLDoc, htmlToXml };
+module.exports = { safeMkdir, writeJSON, loadXMLDoc, htmlToXml };

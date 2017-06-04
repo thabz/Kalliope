@@ -4,7 +4,7 @@ const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
 const Paths = require('../pages/helpers/paths.js');
 const entities = require('entities');
-const { writeJSON, loadXMLDoc, htmlToXml } = require('./helpers.js');
+const { safeMkdir, writeJSON, loadXMLDoc, htmlToXml } = require('./helpers.js');
 
 let collected = {
   texts: new Map(),
@@ -323,6 +323,8 @@ const works_second_pass = collected_poets => {
 };
 
 const build_keywords = () => {
+  safeMkdir('static/api/keywords');
+  const collected = [];
   const folder = 'data/keywords';
   fs.readdirSync(folder).map(filename => {
     if (!filename.endsWith('.xml')) {
@@ -331,14 +333,30 @@ const build_keywords = () => {
     const path = `${folder}/${filename}`;
     console.log(path);
     const doc = loadXMLDoc(path);
+    const keyword = doc.get('//keyword');
+    const head = keyword.get('head');
+    const body = keyword.get('body');
+    const id = keyword.attr('id').value();
+    const title = head.get('title').text();
+    const author = head.get('author') ? head.get('author').text() : null;
+    const data = {
+      id,
+      title,
+      author,
+      content_html: htmlToXml(body.toString(), collected)
+        .replace('<body>', '')
+        .replace('</body>', ''),
+    };
+    collected.push({
+      id,
+      title,
+    });
+    writeJSON(`static/api/keywords/${id}.json`, data);
   });
+  writeJSON(`static/api/keywords.json`, collected);
 };
 
-try {
-  fs.mkdirSync(`static/api`);
-} catch (err) {
-  if (err.code !== 'EEXIST') throw err;
-}
+safeMkdir(`static/api`);
 
 build_keywords();
 collected.poets = build_poets_json();
