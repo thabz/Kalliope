@@ -43,7 +43,7 @@ const htmlToXml = (html, collected) => {
         if (meta == null) {
           return 'DEAD-LINK';
         } else {
-          return `<a ${type}="${id}">${meta.title}</a`;
+          return `<a ${type}="${id}">${meta.title}</a>`;
         }
       } else if (type === 'keyword') {
         // TODO: Implement

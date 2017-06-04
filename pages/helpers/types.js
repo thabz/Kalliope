@@ -67,4 +67,6 @@ export type Text = {
 export type Keyword = {
   id: string,
   title: string,
+  author?: string,
+  content_html: string,
 };

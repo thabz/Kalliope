@@ -324,7 +324,7 @@ const works_second_pass = collected_poets => {
 
 const build_keywords = () => {
   safeMkdir('static/api/keywords');
-  const collected = [];
+  const collected_keywords = [];
   const folder = 'data/keywords';
   fs.readdirSync(folder).map(filename => {
     if (!filename.endsWith('.xml')) {
@@ -347,18 +347,18 @@ const build_keywords = () => {
         .replace('<body>', '')
         .replace('</body>', ''),
     };
-    collected.push({
+    collected_keywords.push({
       id,
       title,
     });
     writeJSON(`static/api/keywords/${id}.json`, data);
   });
-  writeJSON(`static/api/keywords.json`, collected);
+  writeJSON(`static/api/keywords.json`, collected_keywords);
 };
 
 safeMkdir(`static/api`);
 
-build_keywords();
 collected.poets = build_poets_json();
 works_first_pass(collected.poets);
 works_second_pass(collected.poets);
+build_keywords();
