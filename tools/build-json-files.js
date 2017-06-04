@@ -2,65 +2,18 @@ const fs = require('fs');
 const xml2js = require('xml2js');
 const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
-const entities = require('entities');
 const Paths = require('../pages/helpers/paths.js');
+const entities = require('entities');
+const { writeJSON, loadXMLDoc, htmlToXml } = require('./helpers.js');
 
-let collected_poets = null;
-let collected_work_heads = new Map();
-let collected_texts = new Map();
+let collected = {
+  texts: new Map(),
+  works: new Map(),
+  keywords: new Map(),
+  poets: new Map(),
+};
 // Ready after second pass
 let collected_works = new Map();
-
-const writeJSON = (filename, data) => {
-  const json = JSON.stringify(data, null, 2);
-  fs.writeFileSync(filename, json);
-};
-
-const loadXMLDoc = filename => {
-  const data = fs.readFileSync(filename);
-  const doc = libxml.parseXmlString(data);
-  return doc;
-};
-
-const htmlToXml = html => {
-  const regexp = /<xref\s+(digt|poem|keyword|work)=['"]([^'"]*)['"][^>]*>/;
-  let decoded = entities.decodeHTML(
-    html
-      .replace(/\n( +)/g, (match, p1) => {
-        return '\n' + '&nbsp;'.repeat(p1.length);
-      })
-      .replace(/\n *(----*) *\n/g, (match, p1) => {
-        return `\n<hr width=${p1.length}/>\n`;
-      })
-      .replace(/^\n/, '') // <-- virker ikke
-      .replace(/\n/g, '<br/>')
-      .replace(/,,/g, '&bdquo;')
-      .replace(/''/g, '&ldquo;')
-  );
-  while (decoded.match(regexp)) {
-    decoded = decoded.replace(regexp, (_, type, id) => {
-      if (type === 'poem') {
-        const meta = collected_texts.get(id);
-        if (meta == null) {
-          return 'DEAD-LINK';
-        } else {
-          return `<a ${type}="${id}">${meta.title}</a`;
-        }
-      } else if (type === 'keyword') {
-        // TODO: Implement
-      } else if (type === 'ord') {
-        // TODO: Implement
-      } else if (type === 'bibel') {
-        // TODO: Implement
-      }
-    });
-  }
-  return decoded;
-};
-
-const forceArray = a => {
-  return a instanceof Array ? a : [a];
-};
 
 const build_poets_json = () => {
   const data = fs.readFileSync('data/poets.xml');
@@ -103,7 +56,7 @@ const get_notes = head => {
     const lang = note.attr('lang') ? note.attr('lang').value() : 'da';
     return {
       lang,
-      content_html: htmlToXml(note.toString())
+      content_html: htmlToXml(note.toString(), collected)
         .replace('<note>', '')
         .replace('</note>', ''),
     };
@@ -118,7 +71,7 @@ const get_pictures = head => {
       lang,
       src,
       type,
-      content_html: htmlToXml(picture.toString())
+      content_html: htmlToXml(picture.toString(), collected)
         .replace(/<picture[^>]*>/, '')
         .replace('</picture>', ''),
     };
@@ -126,7 +79,7 @@ const get_pictures = head => {
 };
 
 const handle_text = (poetId, workId, text) => {
-  const poet = collected_poets.get(poetId);
+  const poet = collected.poets.get(poetId);
   const work = collected_works.get(poetId + '-' + workId);
 
   const textId = text.attr('id').value();
@@ -146,7 +99,7 @@ const handle_text = (poetId, workId, text) => {
       subtitle,
       notes: get_notes(head),
       pictures: get_pictures(head),
-      content_html: htmlToXml(body.toString())
+      content_html: htmlToXml(body.toString(), collected)
         .replace('<body>', '')
         .replace('</body>', ''),
     },
@@ -277,7 +230,7 @@ const handle_work = work => {
   return { lines, toc, notes, pictures };
 };
 
-// Constructs collected_work_heads and collected_texts to
+// Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
 const works_first_pass = poets => {
   poets.forEach(poet => {
@@ -295,7 +248,7 @@ const works_first_pass = poets => {
               ? head.get('firstline').text()
               : null;
             const linkTitle = title || firstline;
-            collected_texts.set(textId, {
+            collected.texts.set(textId, {
               title: linkTitle,
             });
           }
@@ -306,7 +259,7 @@ const works_first_pass = poets => {
       const head = work.get('workhead');
       const title = head.get('title').text();
       const year = head.get('year').text();
-      collected_work_heads.set(`${poet.id}/${workId}`, {
+      collected.works.set(`${poet.id}/${workId}`, {
         title: title,
         year: year,
       });
@@ -318,7 +271,7 @@ const works_first_pass = poets => {
   });
 };
 
-const build_poet_works_json = collected_poets => {
+const works_second_pass = collected_poets => {
   collected_poets.forEach((poet, poetId) => {
     try {
       fs.mkdirSync(`static/api/${poetId}`);
@@ -369,12 +322,25 @@ const build_poet_works_json = collected_poets => {
   });
 };
 
+const build_keywords = () => {
+  const folder = 'data/keywords';
+  fs.readdirSync(folder).map(filename => {
+    if (!filename.endsWith('.xml')) {
+      return;
+    }
+    const path = `${folder}/${filename}`;
+    console.log(path);
+    const doc = loadXMLDoc(path);
+  });
+};
+
 try {
   fs.mkdirSync(`static/api`);
 } catch (err) {
   if (err.code !== 'EEXIST') throw err;
 }
 
-collected_poets = build_poets_json();
-works_first_pass(collected_poets);
-build_poet_works_json(collected_poets);
+build_keywords();
+collected.poets = build_poets_json();
+works_first_pass(collected.poets);
+works_second_pass(collected.poets);
