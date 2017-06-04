@@ -2,11 +2,14 @@ const { createServer } = require('http');
 const { parse } = require('url');
 const next = require('next');
 const pathMatch = require('path-match');
+const { join } = require('path');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
 const route = pathMatch();
+
+const rootStaticFiles = ['/sw.js'];
 
 const routes = [
   {
@@ -34,6 +37,12 @@ const routes = [
 app.prepare().then(() => {
   createServer((req, res) => {
     const { pathname, query } = parse(req.url, true);
+
+    if (rootStaticFiles.indexOf(pathname) > -1) {
+      const path = join(__dirname, 'static', pathname);
+      app.serveStatic(req, res, path);
+      return;
+    }
 
     for (let i = 0; i < routes.length; i++) {
       const r = routes[i];
