@@ -1,5 +1,5 @@
 // @flow
-import type { Section, Poet, LinesPair, SortReturn } from './types.js';
+import type { Section, Poet, LinesPair, SortReturn, Keyword } from './types.js';
 
 export const poetsByLastname = (a: Poet, b: Poet): SortReturn => {
   const a1 = a.name.lastname || 'X';
@@ -36,6 +36,10 @@ export const linesPairsByLine = (a: LinesPair, b: LinesPair): SortReturn => {
   const a1 = a.sortBy;
   const b1 = b.sortBy;
   return a1.localeCompare(b1, 'da');
+};
+
+export const keywordsByTitle = (a: Keyword, b: Keyword): SortReturn => {
+  return a.title.localeCompare(b.title, 'da');
 };
 
 export function sectionsByTitle<T>(a: Section<T>, b: Section<T>): SortReturn {

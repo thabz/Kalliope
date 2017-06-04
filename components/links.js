@@ -34,3 +34,11 @@ export const worksURL = (lang: string = 'da', poetId: string) => {
 export const textURL = (lang: string = 'da', textId: string) => {
   return `/${lang}/text/${textId}`;
 };
+
+export const keywordsURL = (lang: string = 'da') => {
+  return `/${lang}/keywords`;
+};
+
+export const keywordURL = (lang: string = 'da', keywordId: string) => {
+  return `/${lang}/keyword/${keywordId}`;
+};

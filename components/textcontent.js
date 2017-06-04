@@ -54,6 +54,13 @@ export default class extends React.Component {
           {this.handle_nodes(node.childNodes)}
         </a>
       );
+    } else if (node.hasAttribute('keyword')) {
+      const keywordId = node.getAttribute('keyword');
+      return (
+        <a href={Links.keywordURL(lang, keywordId)}>
+          {this.handle_nodes(node.childNodes)}
+        </a>
+      );
     } else if (node.hasAttribute('work')) {
       const parts = node.getAttribute('work').split('/');
       const poetId = parts[0];
@@ -86,6 +93,12 @@ export default class extends React.Component {
         return <i>{this.handle_nodes(node.childNodes)}</i>;
       case 'b':
         return <b>{this.handle_nodes(node.childNodes)}</b>;
+      case 'p':
+        return <p>{this.handle_nodes(node.childNodes)}</p>;
+      case 'blockquote':
+        return <blockquote>{this.handle_nodes(node.childNodes)}</blockquote>;
+      case 'sup':
+        return <sup>{this.handle_nodes(node.childNodes)}</sup>;
       case 'wrap':
       case 'content':
       case 'nonum':
