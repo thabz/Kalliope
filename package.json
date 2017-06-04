@@ -6,6 +6,7 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "test": "jest --watch",
+    "test-ci": "jest",
     "flow": "flow",
     "build-json": "node tools/build-json-files.js"
   },
