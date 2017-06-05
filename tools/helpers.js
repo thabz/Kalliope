@@ -22,7 +22,7 @@ const loadXMLDoc = filename => {
 };
 
 const htmlToXml = (html, collected) => {
-  const regexp = /<xref\s+(digt|poem|keyword|work)=['"]([^'"]*)['"][^>]*>/;
+  const regexp = /<xref\s+(digt|poem|keyword|work|bibel)=['"]([^'"]*)['"][^>]*>/;
   let decoded = entities.decodeHTML(
     html
       .replace(/^\n/, '')
