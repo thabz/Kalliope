@@ -4,7 +4,13 @@ const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
 const Paths = require('../pages/helpers/paths.js');
 const entities = require('entities');
-const { safeMkdir, writeJSON, loadXMLDoc, htmlToXml } = require('./helpers.js');
+const {
+  safeMkdir,
+  writeJSON,
+  loadXMLDoc,
+  htmlToXml,
+  replaceDashes,
+} = require('./helpers.js');
 
 let collected = {
   texts: new Map(),
@@ -100,8 +106,8 @@ const handle_text = (poetId, workId, text) => {
     work,
     text: {
       id: textId,
-      title,
-      subtitle,
+      title: replaceDashes(title),
+      subtitle: replaceDashes(subtitle),
       notes: get_notes(head),
       pictures: get_pictures(head),
       content_html: htmlToXml(
@@ -144,10 +150,10 @@ const handle_work = work => {
       if (parts != null) {
         return {
           prefix: parts[1],
-          title: parts[2],
+          title: replaceDashes(parts[2]),
         };
       } else {
-        return { title: titleToUse };
+        return { title: replaceDashes(titleToUse) };
       }
     };
 
@@ -180,14 +186,14 @@ const handle_work = work => {
         lines.push({
           id: textId,
           work_id: workId,
-          title: indexTitleToUse,
-          firstline,
+          title: replaceDashes(indexTitleToUse),
+          firstline: replaceDashes(firstline),
         });
         toc.push({
           type: 'text',
           id: textId,
-          title: toctitle.title,
-          prefix: toctitle.prefix,
+          title: replaceDashes(toctitle.title),
+          prefix: replaceDashes(toctitle.prefix),
         });
         handle_text(poetId, workId, part);
       } else if (partName === 'section') {
@@ -209,7 +215,7 @@ const handle_work = work => {
         toc.push({
           type: 'text',
           id: textId,
-          title: toctitle.title,
+          title: replaceDashes(toctitle.title),
           prefix: toctitle.prefix,
         });
         handle_text(poetId, workId, part);
@@ -255,7 +261,7 @@ const works_first_pass = poets => {
               : null;
             const linkTitle = title || firstline;
             collected.texts.set(textId, {
-              title: linkTitle,
+              title: replaceDashes(linkTitle),
             });
           }
         });
@@ -266,7 +272,7 @@ const works_first_pass = poets => {
       const title = head.get('title').text();
       const year = head.get('year').text();
       collected.works.set(`${poet.id}/${workId}`, {
-        title: title,
+        title: replaceDashes(title),
         year: year,
       });
       const workbody = work.get('workbody');
