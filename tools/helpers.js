@@ -25,13 +25,13 @@ const htmlToXml = (html, collected) => {
   const regexp = /<xref\s+(digt|poem|keyword|work)=['"]([^'"]*)['"][^>]*>/;
   let decoded = entities.decodeHTML(
     html
+      .replace(/^\n/, '')
       .replace(/\n( +)/g, (match, p1) => {
         return '\n' + '&nbsp;'.repeat(p1.length);
       })
       .replace(/\n *(----*) *\n/g, (match, p1) => {
         return `\n<hr width=${p1.length}/>\n`;
       })
-      .replace(/^\n/, '') // <-- virker ikke
       .replace(/\n/g, '<br/>')
       .replace(/,,/g, '&bdquo;')
       .replace(/''/g, '&ldquo;')

@@ -56,9 +56,10 @@ const get_notes = head => {
     const lang = note.attr('lang') ? note.attr('lang').value() : 'da';
     return {
       lang,
-      content_html: htmlToXml(note.toString(), collected)
-        .replace('<note>', '')
-        .replace('</note>', ''),
+      content_html: htmlToXml(
+        note.toString().replace('<note>', '').replace('</note>', ''),
+        collected
+      ),
     };
   });
 };
@@ -71,9 +72,13 @@ const get_pictures = head => {
       lang,
       src,
       type,
-      content_html: htmlToXml(picture.toString(), collected)
-        .replace(/<picture[^>]*>/, '')
-        .replace('</picture>', ''),
+      content_html: htmlToXml(
+        picture
+          .toString()
+          .replace(/<picture[^>]*>/, '')
+          .replace('</picture>', ''),
+        collected
+      ),
     };
   });
 };
@@ -99,9 +104,10 @@ const handle_text = (poetId, workId, text) => {
       subtitle,
       notes: get_notes(head),
       pictures: get_pictures(head),
-      content_html: htmlToXml(body.toString(), collected)
-        .replace('<body>', '')
-        .replace('</body>', ''),
+      content_html: htmlToXml(
+        body.toString().replace('<body>', '').replace('</body>', ''),
+        collected
+      ),
     },
   };
   writeJSON(Paths.textPath(textId), text_data);
@@ -343,9 +349,10 @@ const build_keywords = () => {
       id,
       title,
       author,
-      content_html: htmlToXml(body.toString(), collected)
-        .replace('<body>', '')
-        .replace('</body>', ''),
+      content_html: htmlToXml(
+        body.toString().replace('<body>', '').replace('</body>', ''),
+        collected
+      ),
     };
     collected_keywords.push({
       id,
