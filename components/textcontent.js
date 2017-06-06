@@ -117,9 +117,14 @@ export default class extends React.Component {
         return <small>{this.handle_nodes(node.childNodes)}</small>;
       case 'right':
         return (
-          <p style={{ textAlign: 'right' }}>
+          <span
+            style={{
+              display: 'inline-block',
+              width: '100%',
+              textAlign: 'right',
+            }}>
             {this.handle_nodes(node.childNodes)}
-          </p>
+          </span>
         );
       case 'w':
         return (
