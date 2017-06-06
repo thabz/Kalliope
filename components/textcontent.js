@@ -179,11 +179,6 @@ export default class extends React.Component {
       '<content>' + contentHtml + '</content>'
     );
     const rendered = this.handle_nodes(frag.childNodes);
-    return (
-      <div>
-        <div>{rendered}</div>
-        <pre style={{ whiteSpace: 'pre-wrap' }}>{contentHtml}</pre>
-      </div>
-    );
+    return <div>{rendered}</div>;
   }
 }
