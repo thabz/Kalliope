@@ -99,6 +99,7 @@ export default class extends React.Component {
         return <blockquote>{this.handle_nodes(node.childNodes)}</blockquote>;
       case 'sup':
         return <sup>{this.handle_nodes(node.childNodes)}</sup>;
+      case 'year':
       case 'wrap':
       case 'content':
       case 'nonum':

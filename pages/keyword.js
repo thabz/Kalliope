@@ -47,6 +47,14 @@ export default class extends React.Component {
     const body = <TextContent contentHtml={keyword.content_html} lang={lang} />;
     const navbar = [<a href={Links.keywordsURL(lang)}>Nøgleord</a>];
     const title = keyword.title;
+    let author = null;
+    if (keyword.author != null) {
+      author = (
+        <div style={{ fontVariant: 'small-caps', marginBottom: '40px' }}>
+          Af {keyword.author}
+        </div>
+      );
+    }
     return (
       <div>
         <FootnoteContainer>
@@ -58,6 +66,7 @@ export default class extends React.Component {
             <SidebarSplit>
               <div>
                 <SubHeading>{keyword.title}</SubHeading>
+                {author}
                 <div className="text-content">
                   {body}
                   <style jsx>{`
