@@ -16,7 +16,7 @@ export default class extends React.Component {
           div.sidebar-spl > :global(div:last-child) {
             flex-grow: 0;
             width: 300px;
-            padding: 0 10px;
+            padding: 0 0 0 40px;;
             font-weight: lighter;
             line-height: 1.5;
           }
