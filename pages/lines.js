@@ -57,6 +57,9 @@ export default class extends React.Component {
       if (line.startsWith('Aa')) {
         letter = 'Å';
       }
+      if (line.startsWith('Ö')) {
+        letter = 'Ø';
+      }
       let array = groups.get(letter) || [];
       array.push(linePair);
       groups.set(letter, array);

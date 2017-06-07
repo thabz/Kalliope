@@ -186,6 +186,7 @@ const handle_work = work => {
         lines.push({
           id: textId,
           work_id: workId,
+          lang: collected.poets.get(poetId).lang,
           title: replaceDashes(indexTitleToUse),
           firstline: replaceDashes(firstline),
         });
