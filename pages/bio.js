@@ -22,6 +22,9 @@ class PersonMetaLine extends React.Component {
   };
   render() {
     const { label, value } = this.props;
+    if (value == null) {
+      return null;
+    }
     const styles = {
       key: {
         fontWeight: 'bold',
