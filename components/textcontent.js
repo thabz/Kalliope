@@ -115,7 +115,11 @@ export default class extends React.Component {
         );
       case 's':
       case 'small':
-        return <small>{this.handle_nodes(node.childNodes)}</small>;
+        return (
+          <small style={{ display: 'inline-block', lineHeight: '1.4em' }}>
+            {this.handle_nodes(node.childNodes)}
+          </small>
+        );
       case 'right':
         return (
           <div
