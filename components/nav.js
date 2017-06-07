@@ -35,42 +35,31 @@ export default class extends React.Component {
         : null;
       links = [poetsURL, poetLink, workLink];
     }
-
     links = [rootLink, ...links, title];
-    const joinedLinks = links.filter(x => x != null).map((link, i) => {
+
+    let joinedLinks = [];
+    links.filter(x => x != null).map((link, i) => {
       if (i !== 0) {
-        return <div><span>&nbsp;→&nbsp;</span>{link}</div>;
-      } else {
-        return <div>{link}</div>;
+        joinedLinks.push(<div>&nbsp;→&nbsp;</div>);
       }
+      joinedLinks.push(<div>{link}</div>);
     });
     return (
       <nav>
-        <div>
-          {joinedLinks}
-        </div>
+        {joinedLinks}
         <style jsx>{`
         :global(body) {
           margin: 0;
           font-family: -apple-system,BlinkMacSystemFont,Avenir Next,Avenir,Helvetica,sans-serif;
         }
         nav {
-          text-align: left;
           margin-bottom: 80px;
           font-weight: lighter;
-        }
-        nav {
           display: flex;
-          justify-content: space-between;
         }
-        nav > div {
+        nav > :global(div) {
+          flex-shrink: 1;
           padding: 4px 0px;
-        }
-        nav > div {
-          display: flex;
-        }
-        nav > div > div {
-          padding: 6px 16px 6px 0;
         }
       `}</style>
       </nav>
