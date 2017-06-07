@@ -61,6 +61,12 @@ export default class extends React.Component {
           flex-shrink: 1;
           padding: 4px 0px;
         }
+        @media print {
+          nav {
+            display: none;
+          }
+        }
+
       `}</style>
       </nav>
     );

@@ -67,6 +67,12 @@ export default class Tabs extends React.Component {
           .tabs > :global(.tab) :global(a) {
             color: #888;
           }
+
+          @media print {
+            .tabs {
+              display: none;
+            }
+          }
         `}</style>
       </div>
     );

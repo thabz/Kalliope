@@ -20,7 +20,7 @@ export default class extends React.Component {
             font-weight: lighter;
             line-height: 1.5;
           }
-          @media (max-width: 700px) {
+          @media (max-width: 700px), print {
             div.sidebar-spl {
               flex-direction: column;
             }

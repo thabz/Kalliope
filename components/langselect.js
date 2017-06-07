@@ -36,6 +36,11 @@ export default class extends React.Component {
           nav > div {
             padding-left: 16px;
           }
+          @media print {
+            nav {
+              display: none;
+            }
+          }
           `}</style>
       </nav>
     );
