@@ -67,18 +67,8 @@ export default class extends React.Component {
               <div>
                 <SubHeading>{keyword.title}</SubHeading>
                 {author}
-                <div className="text-content">
+                <div style={{ lineHeight: 1.6 }}>
                   {body}
-                  <style jsx>{`
-                  .text-content {
-                    font-family: "Palatino", "Georgia", serif;
-                    line-height: 1.5;
-                    font-size: 1.15em;
-                  }
-                  .text-content sc {
-                    font-variant: small-caps;
-                  }
-              `}</style>
                 </div>
               </div>
               <div>{sidebar}</div>
