@@ -16,7 +16,7 @@ export type Poet = {
     christened?: string,
     realname?: string,
   },
-  period: { born?: DateWithPlace, dead?: DateWithPlace },
+  period?: { born?: DateWithPlace, dead?: DateWithPlace },
 };
 
 export type Work = {

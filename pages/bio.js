@@ -71,13 +71,19 @@ class PersonMeta extends React.Component {
   };
   render() {
     const { poet } = this.props;
+    if (poet.type === 'collection') {
+      return null;
+    }
     const name = <PoetName poet={poet} />;
-    const born = (
-      <DateAndPlace datePlace={poet.period.born} nullText="Ukendt fødeår" />
-    );
-    const dead = (
-      <DateAndPlace datePlace={poet.period.dead} nullText="Ukendt dødsår" />
-    );
+    let born, dead;
+    if (poet.period != null) {
+      born = (
+        <DateAndPlace datePlace={poet.period.born} nullText="Ukendt fødeår" />
+      );
+      dead = (
+        <DateAndPlace datePlace={poet.period.dead} nullText="Ukendt dødsår" />
+      );
+    }
     return (
       <div>
         <PersonMetaLine value={name} label="Navn" />
