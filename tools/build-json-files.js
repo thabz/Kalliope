@@ -25,28 +25,24 @@ const build_bio_json = collected => {
   collected.poets.forEach((poet, poetId) => {
     safeMkdir(`static/api/${poet.id}`);
     const bioXmlPath = `fdirs/${poet.id}/bio.xml`;
-    // if (!fs.existsSync(bioXmlPath)) {
-    //   return;
-    // }
-    const doc = loadXMLDoc(bioXmlPath);
-    if (doc == null) {
-      return;
-    }
-    const bio = doc.get('//bio');
-    const head = bio.get('head');
-    const body = bio.get('body');
-    let author = null;
-    if (head && head.get('author')) {
-      author = head.get('author').text();
-    }
     const data = {
       poet,
-      author,
-      content_html: htmlToXml(
+      content_html: null,
+    };
+    const doc = loadXMLDoc(bioXmlPath);
+    if (doc != null) {
+      const bio = doc.get('//bio');
+      const head = bio.get('head');
+      const body = bio.get('body');
+      let author = null;
+      if (head && head.get('author')) {
+        data.author = head.get('author').text();
+      }
+      data.content_html = htmlToXml(
         body.toString().replace('<body>', '').replace('</body>', ''),
         collected
-      ),
-    };
+      );
+    }
     writeJSON(`static/api/${poet.id}/bio.json`, data);
   });
 };
