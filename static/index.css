@@ -4,13 +4,16 @@ body {
   height: 150px;
 }
 
-p {
-}
-
 a {
   color: #067df7;
   color: rgb(139, 56, 65);
   text-decoration: none;
+}
+
+@media print {
+  a {
+    color: black;
+  }
 }
 
 .hero {

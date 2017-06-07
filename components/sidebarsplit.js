@@ -28,7 +28,7 @@ export default class extends React.Component {
               margin-top: 30px;
               border-top: 1px solid black;
               width: 100%;
-              padding: 0;
+              padding: 20px 0 0 0;
             }
           }
       `}</style>
