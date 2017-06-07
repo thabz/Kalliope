@@ -3,7 +3,7 @@
 export type Poet = {
   id: string,
   type: 'poet' | 'person' | 'collection',
-  name: { lastname?: string, firstname: string },
+  name: { lastname?: string, firstname: string, fullname?: string },
   period?: { born: { date: string }, dead: { date: string } },
 };
 

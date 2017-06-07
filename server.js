@@ -25,6 +25,10 @@ const routes = [
     path: '/lines',
   },
   {
+    match: route('/:lang/bio/:poetId'),
+    path: '/bio',
+  },
+  {
     match: route('/:lang/work/:poetId/:workId'),
     path: '/work',
   },
