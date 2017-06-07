@@ -12,8 +12,30 @@ import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import TextContent from '../components/textcontent.js';
 import * as Links from '../components/links';
-import type { Lang, Poet } from './helpers/types.js';
+import type { Lang, Poet, DateWithPlace } from './helpers/types.js';
 import 'isomorphic-fetch';
+
+class DateAndPlace extends React.Component {
+  props: {
+    datePlace?: DateWithPlace,
+  };
+  render() {
+    const { datePlace } = this.props;
+    if (datePlace == null) {
+      return <div>Ukendt år</div>;
+    }
+    let result = '';
+    if (datePlace.date === '?') {
+      result += 'Ukendt år';
+    } else {
+      result += datePlace.date;
+    }
+    if (datePlace.place != null) {
+      result += `, ${datePlace.place}`;
+    }
+    return <div>{result}</div>;
+  }
+}
 
 class PersonMetaLine extends React.Component {
   props: {
@@ -50,13 +72,23 @@ class PersonMeta extends React.Component {
   render() {
     const { poet } = this.props;
     const name = <PoetName poet={poet} />;
-    const fullName = (() => {
-      return poet.name.fullname;
-    })();
+    const born = (
+      <DateAndPlace datePlace={poet.period.born} nullText="Ukendt fødeår" />
+    );
+    const dead = (
+      <DateAndPlace datePlace={poet.period.dead} nullText="Ukendt dødsår" />
+    );
     return (
       <div>
         <PersonMetaLine value={name} label="Navn" />
         <PersonMetaLine value={poet.name.fullname} label="Fulde navn" />
+        <PersonMetaLine
+          value={poet.name.christened || poet.name.realname}
+          label="Døbt"
+        />
+        <PersonMetaLine value={poet.name.pseudonym} label="Pseudonym" />
+        <PersonMetaLine value={born} label="Født" />
+        <PersonMetaLine value={dead} label="Død" />
       </div>
     );
   }

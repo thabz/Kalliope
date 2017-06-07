@@ -173,8 +173,10 @@ export default class extends React.Component {
     return collected;
   }
   render() {
-    // TODO: Some refs-context with titles of references poems and works.
     const { contentHtml } = this.props;
+    if (contentHtml == null) {
+      return null;
+    }
     const frag = new DOMParser().parseFromString(
       '<content>' + contentHtml + '</content>'
     );

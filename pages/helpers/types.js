@@ -1,10 +1,22 @@
 // @flow
 
+export type DateWithPlace = {
+  date: string, // Kan være '?'
+  place?: string,
+};
+
 export type Poet = {
   id: string,
   type: 'poet' | 'person' | 'collection',
-  name: { lastname?: string, firstname: string, fullname?: string },
-  period?: { born: { date: string }, dead: { date: string } },
+  name: {
+    lastname?: string,
+    firstname: string,
+    fullname?: string,
+    pseudonym?: string,
+    christened?: string,
+    realname?: string,
+  },
+  period: { born?: DateWithPlace, dead?: DateWithPlace },
 };
 
 export type Work = {

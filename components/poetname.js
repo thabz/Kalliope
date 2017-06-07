@@ -28,7 +28,7 @@ export default class extends React.Component {
       namePart = <span>{firstname}</span>;
     }
     let periodPart = null;
-    if (includePeriod && poet.period) {
+    if (includePeriod && poet.period != null) {
       const { born, dead } = poet.period;
       if (born.date === '?' && dead.date === '?') {
         periodPart = <span>(Ukendt levetid)</span>;
