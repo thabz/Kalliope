@@ -21,6 +21,36 @@ let collected = {
 // Ready after second pass
 let collected_works = new Map();
 
+const build_bio_json = collected => {
+  collected.poets.forEach((poet, poetId) => {
+    safeMkdir(`static/api/${poet.id}`);
+    const bioXmlPath = `fdirs/${poet.id}/bio.xml`;
+    // if (!fs.existsSync(bioXmlPath)) {
+    //   return;
+    // }
+    const doc = loadXMLDoc(bioXmlPath);
+    if (doc == null) {
+      return;
+    }
+    const bio = doc.get('//bio');
+    const head = bio.get('head');
+    const body = bio.get('body');
+    let author = null;
+    if (head && head.get('author')) {
+      author = head.get('author').text();
+    }
+    const data = {
+      poet,
+      author,
+      content_html: htmlToXml(
+        body.toString().replace('<body>', '').replace('</body>', ''),
+        collected
+      ),
+    };
+    writeJSON(`static/api/${poet.id}/bio.json`, data);
+  });
+};
+
 const build_poets_json = () => {
   const data = fs.readFileSync('data/poets.xml');
   const parser = new xml2js.Parser({ explicitArray: false });
@@ -371,8 +401,8 @@ const build_keywords = () => {
 };
 
 safeMkdir(`static/api`);
-
 collected.poets = build_poets_json();
 works_first_pass(collected.poets);
 works_second_pass(collected.poets);
 build_keywords();
+build_bio_json(collected);

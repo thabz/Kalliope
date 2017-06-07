@@ -16,9 +16,19 @@ const writeJSON = (filename, data) => {
 };
 
 const loadXMLDoc = filename => {
+  if (!fs.existsSync(filename)) {
+    return null;
+  }
   const data = fs.readFileSync(filename);
-  const doc = libxml.parseXmlString(data);
-  return doc;
+  if (data == null) {
+    return null;
+  }
+  try {
+    return libxml.parseXmlString(data);
+  } catch (err) {
+    console.log(`Problem with ${filename}`);
+    throw err;
+  }
 };
 
 const replaceDashes = html => {
