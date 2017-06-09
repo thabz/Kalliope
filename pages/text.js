@@ -58,7 +58,16 @@ export default class extends React.Component {
       return <Note key={i} note={note} />;
     });
     const sidebar = <div>{renderedNotes}<FootnoteList /></div>;
-    const body = <TextContent contentHtml={text.content_html} lang={lang} />;
+    const options = {
+      isBibleVerses: poet.id === 'bibel',
+    };
+    const body = (
+      <TextContent
+        contentHtml={text.content_html}
+        lang={lang}
+        options={options}
+      />
+    );
 
     const title = <PoetName poet={poet} includePeriod />;
     return (

@@ -87,3 +87,8 @@ export type NewsItem = {
   date: string,
   content_html: string,
 };
+
+export type TextContentOptions = {
+  isBibleVerses?: boolean,
+  highlightBibleVerses?: Array<number>,
+};

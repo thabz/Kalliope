@@ -2,7 +2,7 @@
 import React from 'react';
 var DOMParser = require('xmldom').DOMParser;
 
-import type { Text, Lang } from '../pages/helpers/types.js';
+import type { Text, Lang, TextContentOptions } from '../pages/helpers/types.js';
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
 
@@ -10,6 +10,7 @@ export default class extends React.Component {
   props: {
     contentHtml: string,
     lang: Lang,
+    options?: TextContentOptions,
   };
   handle_metrik(s: string) {
     // Disse metrik symboler ligger i Unicode 23Dx
@@ -177,14 +178,17 @@ export default class extends React.Component {
     return collected;
   }
   render() {
-    const { contentHtml } = this.props;
+    const { contentHtml, options } = this.props;
     if (contentHtml == null) {
       return null;
     }
     const frag = new DOMParser().parseFromString(
       '<content>' + contentHtml + '</content>'
     );
-    const rendered = this.handle_nodes(frag.childNodes);
+    let rendered = this.handle_nodes(frag.childNodes);
+    if (options != null && options.isBibleVerses) {
+      //console.log(rendered);
+    }
     return <div>{rendered}</div>;
   }
 }
