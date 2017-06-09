@@ -21,7 +21,7 @@ export default class extends React.Component {
   render() {
     const { lang, poet, work, title } = this.props;
     let { links } = this.props;
-    const rootLink = <a href="/">Kalliope</a>;
+    const rootLink = <a href={Links.frontPageURL(lang)}>Kalliope</a>;
 
     if (!links) {
       const poetsURL = poet ? <a href={Links.poetsURL(lang)}>Digtere</a> : null;

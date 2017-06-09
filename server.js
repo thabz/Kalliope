@@ -13,6 +13,10 @@ const rootStaticFiles = ['/sw.js'];
 
 const routes = [
   {
+    match: route('/:lang/'),
+    path: '/index',
+  },
+  {
     match: route('/:lang/poets/:groupBy'),
     path: '/poets',
   },

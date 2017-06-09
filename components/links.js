@@ -1,5 +1,9 @@
 // @flow
 
+export const frontPageURL = (lang: string = 'da') => {
+  return `/${lang}/`;
+};
+
 export const workURL = (
   lang: string = 'da',
   poetId: string,

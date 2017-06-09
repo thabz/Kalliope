@@ -118,7 +118,7 @@ export class KalliopeTabs extends React.Component {
   render() {
     const { lang, selected } = this.props;
     const tabs = [
-      { id: 'index', title: 'Kalliope', url: '/' },
+      { id: 'index', title: 'Kalliope', url: Links.frontPageURL(lang) },
       { id: 'poets', title: 'Digtere', url: Links.poetsURL(lang, 'name') },
       { id: 'keywords', title: 'Nøgleord', url: Links.keywordsURL(lang) },
     ];

@@ -82,3 +82,8 @@ export type Keyword = {
   author?: string,
   content_html: string,
 };
+
+export type NewsItem = {
+  date: string,
+  content_html: string,
+};
