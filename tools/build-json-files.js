@@ -403,8 +403,10 @@ const build_news = collected => {
     const items = doc.get('//items');
     let list = [];
     items.childNodes().forEach(item => {
+      if (item.name() !== 'item') {
+        return;
+      }
       const date = item.get('date').text();
-      console.log(date);
       const body = item.get('body');
       list.push({
         date,
