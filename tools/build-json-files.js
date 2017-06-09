@@ -421,9 +421,9 @@ const build_news = collected => {
 };
 
 safeMkdir(`static/api`);
-build_news(collected);
 collected.poets = build_poets_json();
 works_first_pass(collected.poets);
 works_second_pass(collected.poets);
 build_keywords();
 build_bio_json(collected);
+build_news(collected);
