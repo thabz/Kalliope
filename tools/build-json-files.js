@@ -396,7 +396,30 @@ const build_keywords = () => {
   writeJSON(`static/api/keywords.json`, collected_keywords);
 };
 
+const build_news = collected => {
+  ['da', 'en'].forEach(lang => {
+    const path = `data/news_${lang}.xml`;
+    const doc = loadXMLDoc(path);
+    const items = doc.get('//items');
+    let list = [];
+    items.childNodes().forEach(item => {
+      const date = item.get('date').text();
+      console.log(date);
+      const body = item.get('body');
+      list.push({
+        date,
+        content_html: htmlToXml(
+          body.toString().replace('<body>', '').replace('</body>', ''),
+          collected
+        ),
+      });
+    });
+    writeJSON(`static/api/news_${lang}.json`, list);
+  });
+};
+
 safeMkdir(`static/api`);
+build_news(collected);
 collected.poets = build_poets_json();
 works_first_pass(collected.poets);
 works_second_pass(collected.poets);
