@@ -1,6 +1,7 @@
 const fs = require('fs');
 const entities = require('entities');
 const libxml = require('libxmljs');
+const bible = require('./bible-abbr.js');
 
 const safeMkdir = dirname => {
   try {
@@ -74,11 +75,38 @@ const htmlToXml = (html, collected) => {
           return `<a ${type}="${id}">»${meta.title}«</a>`;
         }
       } else if (type === 'keyword') {
-        // TODO: Implement
+        const meta = collected.keywords.get(id);
+        if (meta == null) {
+          return 'DEAD-LINK';
+        } else {
+          return `<a ${type}="${id}">»${meta.title}«</a>`;
+        }
       } else if (type === 'ord') {
         // TODO: Implement
       } else if (type === 'bibel') {
-        // TODO: Implement
+        const originalAttribute = `${id}`;
+        id = id.replace(/^bibel/, '');
+        let verses = id.match(/,(.*)$/);
+        if (verses != null) {
+          id = id.replace(',' + verses[1], '');
+          verses = verses[1];
+        }
+        let chapter = id.match(/(\d*)$/);
+        if (chapter != null) {
+          id = id.replace(chapter[1], '');
+          chapter = chapter[1];
+        } else {
+          throw `Ulovlig bibel angivelse: ${originalAttribute}`;
+        }
+        const abbr = bible.abbrevations[id];
+        console.log(`Bibel id ${id} => ${abbr}`);
+        if (abbr == null) {
+          return 'DEAD-LINK';
+        } else if (verses == null) {
+          return `<a bible="${originalAttribute}">${abbr}${chapter}</a>`;
+        } else {
+          return `<a bible="${originalAttribute}">${abbr}${chapter},${verses}</a>`;
+        }
       }
     });
   }

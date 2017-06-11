@@ -392,6 +392,7 @@ const build_keywords = () => {
       title,
     });
     writeJSON(`static/api/keywords/${id}.json`, data);
+    collected.keywords.set(id, { id, title });
   });
   writeJSON(`static/api/keywords.json`, collected_keywords);
 };

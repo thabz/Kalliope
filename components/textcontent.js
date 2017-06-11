@@ -78,6 +78,13 @@ export default class extends React.Component {
           {this.handle_nodes(node.childNodes)}
         </a>
       );
+    } else if (node.hasAttribute('bible')) {
+      const bibleId = node.getAttribute('bible');
+      return (
+        <a href={Links.bibleURL(lang, bibleId)}>
+          {this.handle_nodes(node.childNodes)}
+        </a>
+      );
     } else {
       return <code>{node.toString()}</code>;
     }

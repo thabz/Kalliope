@@ -43,6 +43,18 @@ export const textURL = (lang: string = 'da', textId: string) => {
   return `/${lang}/text/${textId}`;
 };
 
+export const bibleURL = (lang: string = 'da', bibleId: string) => {
+  const verses = bibleId.match(/,(.*)$/);
+  if (verses != null) {
+    bibleId = bibleId.replace(',' + verses[1], '');
+  }
+  if (verses) {
+    return `/${lang}/text/bibel${bibleId}?verses=${verses[1]}`;
+  } else {
+    return `/${lang}/text/bibel${bibleId}`;
+  }
+};
+
 export const keywordsURL = (lang: string = 'da') => {
   return `/${lang}/keywords`;
 };
