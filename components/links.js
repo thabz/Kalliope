@@ -49,9 +49,9 @@ export const bibleURL = (lang: string = 'da', bibleId: string) => {
     bibleId = bibleId.replace(',' + verses[1], '');
   }
   if (verses) {
-    return `/${lang}/text/bibel${bibleId}?verses=${verses[1]}`;
+    return `/${lang}/text/${bibleId}?verses=${verses[1]}`;
   } else {
-    return `/${lang}/text/bibel${bibleId}`;
+    return `/${lang}/text/${bibleId}`;
   }
 };
 
