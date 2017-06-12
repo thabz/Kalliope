@@ -70,14 +70,16 @@ const htmlToXml = (html, collected) => {
       if (type === 'poem') {
         const meta = collected.texts.get(id);
         if (meta == null) {
-          return 'DEAD-LINK';
+          const error = `xref dead poem link: ${id}`;
+          throw error;
         } else {
           return `<a ${type}="${id}">»${meta.title}«</a>`;
         }
       } else if (type === 'keyword') {
         const meta = collected.keywords.get(id);
         if (meta == null) {
-          return 'DEAD-LINK';
+          const error = `xref dead keyword link: ${id}`;
+          throw error;
         } else {
           return `<a ${type}="${id}">»${meta.title}«</a>`;
         }
@@ -96,12 +98,13 @@ const htmlToXml = (html, collected) => {
           id = id.replace(chapter[1], '');
           chapter = chapter[1];
         } else {
-          throw `Ulovlig bibel angivelse: ${originalAttribute}`;
+          const error = `xref dead bible link: ${originalAttribute}`;
+          throw error;
         }
         const abbr = bible.abbrevations[id];
-        console.log(`Bibel id ${id} => ${abbr}`);
         if (abbr == null) {
-          return 'DEAD-LINK';
+          const error = `xref dead bible link: ${originalAttribute}`;
+          throw error;
         } else if (verses == null) {
           return `<a bible="${originalAttribute}">${abbr}${chapter}</a>`;
         } else {
