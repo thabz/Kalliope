@@ -47,7 +47,7 @@ const replaceDashes = html => {
 };
 
 const htmlToXml = (html, collected) => {
-  const regexp = /<xref\s+(digt|poem|keyword|work|bibel)=['"]([^'"]*)['"][^>]*>/;
+  const regexp = /<xref\s+(digt|poem|keyword|work|bibel|ord)=['"]([^'"]*)['"][^>]*>/;
   let decoded = entities.decodeHTML(
     replaceDashes(
       html
@@ -81,10 +81,16 @@ const htmlToXml = (html, collected) => {
           const error = `xref dead keyword link: ${id}`;
           throw error;
         } else {
-          return `<a ${type}="${id}">»${meta.title}«</a>`;
+          return `<a ${type}="${id}">${meta.title}</a>`;
         }
       } else if (type === 'ord') {
-        // TODO: Implement
+        const meta = collected.dict.get(id);
+        if (meta == null) {
+          const error = `xref dead dictionary link: ${id}`;
+          throw error;
+        } else {
+          return `<a dict="${id}">${meta.title}</a>`;
+        }
       } else if (type === 'bibel') {
         const originalAttribute = `${id}`;
         id = id.replace(/^bibel/, '');

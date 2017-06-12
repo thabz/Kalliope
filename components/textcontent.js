@@ -62,6 +62,13 @@ export default class extends React.Component {
           {this.handle_nodes(node.childNodes)}
         </a>
       );
+    } else if (node.hasAttribute('dict')) {
+      const keywordId = node.getAttribute('dict');
+      return (
+        <a href={Links.dictionaryURL(lang, keywordId)}>
+          {this.handle_nodes(node.childNodes)}
+        </a>
+      );
     } else if (node.hasAttribute('work')) {
       const parts = node.getAttribute('work').split('/');
       const poetId = parts[0];

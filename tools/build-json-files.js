@@ -17,6 +17,7 @@ let collected = {
   works: new Map(),
   keywords: new Map(),
   poets: new Map(),
+  dict: new Map(),
 };
 // Ready after second pass
 let collected_works = new Map();
@@ -362,6 +363,7 @@ const works_second_pass = collected_poets => {
 };
 
 const build_keywords = () => {
+  console.log('Building keywords');
   safeMkdir('static/api/keywords');
   const collected_keywords = [];
   const folder = 'data/keywords';
@@ -398,6 +400,7 @@ const build_keywords = () => {
 };
 
 const build_news = collected => {
+  console.log('Building news');
   ['da', 'en'].forEach(lang => {
     const path = `data/news_${lang}.xml`;
     const doc = loadXMLDoc(path);
@@ -421,6 +424,45 @@ const build_news = collected => {
   });
 };
 
+const build_dict = collected => {
+  console.log('Building dict');
+  safeMkdir('static/api/dict');
+  const path = `data/dict.xml`;
+  const doc = loadXMLDoc(path);
+  let items = new Array();
+  doc.get('//entries').childNodes().forEach(item => {
+    if (item.name() !== 'entry') {
+      return;
+    }
+    const id = item.attr('id').value();
+    const body = item.get('forkl');
+    const title = item.get('ord').text();
+    let phrase = null;
+    if (item.get('frase')) {
+      phrase = item.get('frase').text();
+    }
+    const variants = item.find('var').map(varItem => varItem.text());
+    const data = {
+      id,
+      title,
+      phrase,
+      variants,
+      content_html: htmlToXml(
+        body.toString().replace('<forkl>', '').replace('</forkl>', ''),
+        collected
+      ),
+    };
+    writeJSON(`static/api/dict/${id}.json`, data);
+    const simpleData = {
+      id,
+      title,
+    };
+    items.push(simpleData);
+    collected.dict.set(id, simpleData);
+  });
+  writeJSON(`static/api/dict.json`, items);
+};
+
 safeMkdir(`static/api`);
 collected.poets = build_poets_json();
 works_first_pass(collected.poets);
@@ -428,3 +470,4 @@ works_second_pass(collected.poets);
 build_keywords();
 build_bio_json(collected);
 build_news(collected);
+build_dict(collected);

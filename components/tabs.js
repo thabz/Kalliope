@@ -113,7 +113,7 @@ export class PoetTabs extends React.Component {
 export class KalliopeTabs extends React.Component {
   props: {
     lang: Lang,
-    selected: 'index' | 'poets' | 'keywords',
+    selected: 'index' | 'poets' | 'keywords' | 'dictionary',
   };
   render() {
     const { lang, selected } = this.props;
@@ -121,6 +121,7 @@ export class KalliopeTabs extends React.Component {
       { id: 'index', title: 'Kalliope', url: Links.frontPageURL(lang) },
       { id: 'poets', title: 'Digtere', url: Links.poetsURL(lang, 'name') },
       { id: 'keywords', title: 'Nøgleord', url: Links.keywordsURL(lang) },
+      { id: 'dictionary', title: 'Ordbog', url: Links.dictionaryURL(lang) },
     ];
     return <Tabs items={tabs} selected={selected} />;
   }

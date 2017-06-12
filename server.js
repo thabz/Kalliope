@@ -48,6 +48,14 @@ const routes = [
     match: route('/:lang/keyword/:keywordId'),
     path: '/keyword',
   },
+  {
+    match: route('/:lang/dict/:dictItemId'),
+    path: '/dictitem',
+  },
+  {
+    match: route('/:lang/dict'),
+    path: '/dict',
+  },
 ];
 
 app.prepare().then(() => {

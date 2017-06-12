@@ -83,6 +83,14 @@ export type Keyword = {
   content_html: string,
 };
 
+export type DictItem = {
+  id: string,
+  title: string,
+  variants?: Array<string>,
+  phrase?: string,
+  content_html: string,
+};
+
 export type NewsItem = {
   date: string,
   content_html: string,
