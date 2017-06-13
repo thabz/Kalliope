@@ -424,7 +424,26 @@ const build_news = collected => {
   });
 };
 
-const build_dict = collected => {
+const build_dict_first_pass = collected => {
+  console.log('Building dict');
+  safeMkdir('static/api/dict');
+  const path = `data/dict.xml`;
+  const doc = loadXMLDoc(path);
+  doc.get('//entries').childNodes().forEach(item => {
+    if (item.name() !== 'entry') {
+      return;
+    }
+    const id = item.attr('id').value();
+    const title = item.get('ord').text();
+    const simpleData = {
+      id,
+      title,
+    };
+    collected.dict.set(id, simpleData);
+  });
+};
+
+const build_dict_second_pass = collected => {
   console.log('Building dict');
   safeMkdir('static/api/dict');
   const path = `data/dict.xml`;
@@ -458,7 +477,6 @@ const build_dict = collected => {
       title,
     };
     items.push(simpleData);
-    collected.dict.set(id, simpleData);
   });
   writeJSON(`static/api/dict.json`, items);
 };
@@ -466,8 +484,9 @@ const build_dict = collected => {
 safeMkdir(`static/api`);
 collected.poets = build_poets_json();
 works_first_pass(collected.poets);
+build_dict_first_pass(collected);
 works_second_pass(collected.poets);
 build_keywords();
 build_bio_json(collected);
 build_news(collected);
-build_dict(collected);
+build_dict_second_pass(collected);
