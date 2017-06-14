@@ -146,6 +146,17 @@ export default class extends React.Component {
             {this.handle_nodes(node.childNodes)}
           </div>
         );
+      case 'num':
+        return (
+          <div
+            style={{
+              display: 'block',
+              opacity: 0.4,
+              pageBreakAfter: 'avoid', // Not working.
+            }}>
+            {this.handle_nodes(node.childNodes)}
+          </div>
+        );
       case 'w':
         return (
           <span style={{ letterSpacing: '0.2em' }}>

@@ -52,6 +52,8 @@ const htmlToXml = (html, collected) => {
     replaceDashes(
       html
         .replace(/^\n/, '')
+        .replace(/^(\d+\.?)\s*\n/gm, '<num>$1</num>')
+        .replace(/^(\d+\.?)/gm, '<num>$1</num>')
         .replace(/^\s*(<right>.*)$/gm, '$1')
         .replace(/^\s*(<center>.*)$/gm, '$1')
         .replace(/\n( +)/g, (match, p1) => {
