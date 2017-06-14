@@ -10,9 +10,14 @@ export default class extends React.Component {
   render() {
     const { note, lang } = this.props;
     return (
-      <p className="sidebar-note">
+      <div className="sidebar-note">
         <TextContent contentHtml={note.content_html} lang={lang} />
-      </p>
+        <style jsx>{`
+              div.sidebar-note {
+                margin-bottom: 10px;
+              }
+          `}</style>
+      </div>
     );
   }
 }

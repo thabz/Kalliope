@@ -124,7 +124,27 @@ const handle_text = (poetId, workId, text) => {
   const head = text.get('head');
   const body = text.get('body');
   const title = head.get('title') ? head.get('title').text() : null;
-  const subtitle = head.get('subtitle') ? head.get('subtitle').text() : null;
+  let subtitles = null;
+  const subtitle = head.get('subtitle');
+  if (subtitle && subtitle.find('line').length > 0) {
+    subtitles = subtitle
+      .find('line')
+      .map(s =>
+        replaceDashes(
+          s
+            .toString()
+            .replace('<line>', '')
+            .replace('</line>', '')
+            .replace('<line/>', '')
+        )
+      );
+  } else if (subtitle) {
+    subtitles = [
+      replaceDashes(
+        subtitle.toString().replace('<subtitle>', '').replace('</subtitle>', '')
+      ),
+    ];
+  }
 
   const foldername = Paths.textFolder(textId);
   mkdirp.sync(foldername);
@@ -134,7 +154,7 @@ const handle_text = (poetId, workId, text) => {
     text: {
       id: textId,
       title: replaceDashes(title),
-      subtitle: replaceDashes(subtitle),
+      subtitles,
       notes: get_notes(head),
       pictures: get_pictures(head),
       content_html: htmlToXml(

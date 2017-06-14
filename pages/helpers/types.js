@@ -70,7 +70,7 @@ export type PictureItem = {
 export type Text = {
   id: string,
   title: string,
-  subtitle?: string,
+  subtitles?: Array<string>,
   notes: Array<NoteItem>,
   pictures: Array<PictureItem>,
   content_html: string,
