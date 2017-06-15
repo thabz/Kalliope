@@ -18,6 +18,8 @@ export type Poet = {
   },
   period?: { born?: DateWithPlace, dead?: DateWithPlace },
   has_bibliography: boolean,
+  has_biography: boolean,
+  has_works: boolean,
 };
 
 export type Work = {
