@@ -67,6 +67,9 @@ const build_poets_json = () => {
         type,
         name: name,
         period,
+        has_bibliography: fs.existsSync(
+          `fdirs/${id}/bibliography-primary.xml`
+        ) || fs.existsSync(`fdirs/${id}/bibliography-secondary.xml`),
         workIds: worksArray,
       };
       list.push(poet);
