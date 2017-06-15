@@ -501,8 +501,31 @@ const build_dict_second_pass = collected => {
   writeJSON(`static/api/dict.json`, items);
 };
 
+const build_bibliography_json = collected => {
+  collected.poets.forEach((poet, poetId) => {
+    safeMkdir(`static/api/${poet.id}`);
+    let data = { poet, primary: [], secondary: [] };
+    ['primary', 'secondary'].forEach(filename => {
+      const bioXmlPath = `fdirs/${poet.id}/bibliography-${filename}.xml`;
+      const doc = loadXMLDoc(bioXmlPath);
+      if (doc != null) {
+        data[filename] = doc.find('//items/item').map(line => {
+          return htmlToXml(
+            line.toString().replace('<item>', '').replace('</item>', ''),
+            collected
+          );
+        });
+      }
+    });
+    if (data.primary.length > 0 || data.secondary.length > 0) {
+      writeJSON(`static/api/${poet.id}/bibliography.json`, data);
+    }
+  });
+};
+
 safeMkdir(`static/api`);
 collected.poets = build_poets_json();
+build_bibliography_json(collected);
 works_first_pass(collected.poets);
 build_dict_first_pass(collected);
 works_second_pass(collected.poets);
