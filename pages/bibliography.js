@@ -57,8 +57,8 @@ export default class extends React.Component {
               <div
                 style={{
                   marginBottom: '5px',
-                  marginLeft: '20px',
-                  textIndent: '-20px',
+                  marginLeft: '30px',
+                  textIndent: '-30px',
                 }}>
                 <TextContent key={j} contentHtml={line} lang={lang} />
               </div>
