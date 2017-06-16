@@ -33,6 +33,10 @@ const routes = [
     path: '/bio',
   },
   {
+    match: route('/:lang/bibliography/:poetId'),
+    path: '/bibliography',
+  },
+  {
     match: route('/:lang/work/:poetId/:workId'),
     path: '/work',
   },

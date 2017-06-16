@@ -12,11 +12,10 @@ export default class extends React.Component {
     let renderedGroups = sections.map((group, i) => {
       const { title, items } = group;
       const list = items.map(item => {
-        return (
-          <div key={item.id}>
-            <a href={item.url}>{item.html}</a>
-          </div>
-        );
+        const content = item.url != null
+          ? <a href={item.url}>{item.html}</a>
+          : item.html;
+        return <div key={item.id}>{content}</div>;
       });
       return (
         <div className="list-section" key={i + title}>

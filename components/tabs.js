@@ -83,7 +83,7 @@ export class PoetTabs extends React.Component {
   props: {
     poet: Poet,
     lang: Lang,
-    selected: 'works' | 'titles' | 'first' | 'bio',
+    selected: 'works' | 'titles' | 'first' | 'bio' | 'bibliography',
   };
 
   render() {
@@ -99,6 +99,11 @@ export class PoetTabs extends React.Component {
         id: 'first',
         title: 'Førstelinjer',
         url: Links.linesURL(lang, poet.id, 'first'),
+      },
+      {
+        id: 'bibliography',
+        title: 'Bibliografi',
+        url: Links.bibliographyURL(lang, poet.id),
       },
       {
         id: 'bio',

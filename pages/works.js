@@ -34,12 +34,6 @@ export default class extends React.Component {
 
   render() {
     const { lang, poet, works } = this.props;
-    const tabs = [
-      { title: 'Værker', url: Links.worksURL(lang, poet.id) },
-      { title: 'Digttitler', url: Links.linesURL(lang, poet.id, 'titles') },
-      { title: 'Førstelinjer', url: Links.linesURL(lang, poet.id, 'first') },
-    ];
-    const selectedTabIndex = 0;
     const list = works.map((work, i) => {
       const url = `/${lang}/work/${poet.id}/${work.id}`;
       return (

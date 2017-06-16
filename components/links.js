@@ -39,6 +39,10 @@ export const bioURL = (lang: string = 'da', poetId: string) => {
   return `/${lang}/bio/${poetId}`;
 };
 
+export const bibliographyURL = (lang: string = 'da', poetId: string) => {
+  return `/${lang}/bibliography/${poetId}`;
+};
+
 export const textURL = (lang: string = 'da', textId: string) => {
   return `/${lang}/text/${textId}`;
 };
