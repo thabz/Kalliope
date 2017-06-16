@@ -5,13 +5,13 @@ import type { Lang, Poet } from '../pages/helpers/types.js';
 
 export default class Tabs extends React.Component {
   props: {
-    items: Array<{ id: string, url: string, title: string }>,
+    items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
     selected: string,
   };
   render() {
     const { items, selected } = this.props;
 
-    const itemsRendered = items.map((item, i) => {
+    const itemsRendered = items.filter(item => !item.hide).map((item, i) => {
       const className = item.id === selected ? 'tab selected' : 'tab';
       return (
         <div className={className} key={item.url}>
@@ -88,26 +88,40 @@ export class PoetTabs extends React.Component {
 
   render() {
     const { lang, poet, selected } = this.props;
-    const tabs = [
-      { id: 'works', title: 'Værker', url: Links.worksURL(lang, poet.id) },
+    const tabs: Array<{
+      id: string,
+      title: string,
+      hide?: boolean,
+      url: string,
+    }> = [
+      {
+        id: 'works',
+        title: 'Værker',
+        hide: !poet.has_works,
+        url: Links.worksURL(lang, poet.id),
+      },
       {
         id: 'titles',
         title: 'Digttitler',
+        hide: !poet.has_works,
         url: Links.linesURL(lang, poet.id, 'titles'),
       },
       {
         id: 'first',
         title: 'Førstelinjer',
+        hide: !poet.has_works,
         url: Links.linesURL(lang, poet.id, 'first'),
       },
       {
         id: 'bibliography',
         title: 'Bibliografi',
+        hide: !poet.has_bibliography,
         url: Links.bibliographyURL(lang, poet.id),
       },
       {
         id: 'bio',
         title: 'Biografi',
+        hide: !poet.has_biography,
         url: Links.bioURL(lang, poet.id),
       },
     ];
