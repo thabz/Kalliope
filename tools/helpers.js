@@ -47,7 +47,7 @@ const replaceDashes = html => {
 };
 
 const htmlToXml = (html, collected) => {
-  const regexp = /<xref\s+(digt|poem|keyword|work|bibel|ord)=['"]([^'"]*)['"][^>]*>/;
+  const regexp = /<xref\s+(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
   let decoded = entities.decodeHTML(
     replaceDashes(
       html
@@ -85,7 +85,7 @@ const htmlToXml = (html, collected) => {
         } else {
           return `<a ${type}="${id}">${meta.title}</a>`;
         }
-      } else if (type === 'ord') {
+      } else if (type === 'dict') {
         const meta = collected.dict.get(id);
         if (meta == null) {
           const error = `xref dead dictionary link: ${id}`;
