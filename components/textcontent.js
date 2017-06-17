@@ -135,6 +135,12 @@ export default class extends React.Component {
             {this.handle_nodes(node.childNodes)}
           </small>
         );
+      case 'biblio':
+        return (
+          <span style={{ opacity: 0.5 }}>
+            [{this.handle_nodes(node.childNodes)}]
+          </span>
+        );
       case 'right':
         return (
           <div
