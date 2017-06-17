@@ -129,6 +129,7 @@ const handle_text = (poetId, workId, text) => {
   const head = text.get('head');
   const body = text.get('body');
   const title = head.get('title') ? head.get('title').text() : null;
+  const keywords = head.get('keywords');
   let subtitles = null;
   const subtitle = head.get('subtitle');
   if (subtitle && subtitle.find('line').length > 0) {
@@ -150,6 +151,10 @@ const handle_text = (poetId, workId, text) => {
       ),
     ];
   }
+  let keywordsArray = null;
+  if (keywords) {
+    keywordsArray = keywords.text().split(',');
+  }
 
   const foldername = Paths.textFolder(textId);
   mkdirp.sync(foldername);
@@ -161,6 +166,7 @@ const handle_text = (poetId, workId, text) => {
       title: replaceDashes(title),
       subtitles,
       notes: get_notes(head),
+      keywords: keywordsArray,
       pictures: get_pictures(head),
       content_html: htmlToXml(
         body.toString().replace('<body>', '').replace('</body>', ''),
