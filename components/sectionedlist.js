@@ -2,6 +2,7 @@
 
 import React from 'react';
 import type { SectionForRendering } from '../pages/helpers/types.js';
+import TwoColumns from './twocolumns.js';
 
 export default class extends React.Component {
   props: {
@@ -25,21 +26,9 @@ export default class extends React.Component {
       );
     });
     return (
-      <div className="two-columns">
+      <TwoColumns>
         {renderedGroups}
         <style jsx>{`
-            div.two-columns {
-              width: 100%;
-              columns: 2;
-              column-gap: 20px;
-            }
-
-            @media (max-width: 480px) {
-              div.two-columns {
-                columns: 1 !important;
-              }
-            }
-
             :global(.list-section) {
               break-inside: avoid;
             }
@@ -54,7 +43,7 @@ export default class extends React.Component {
               height: 1px;
             }
         `}</style>
-      </div>
+      </TwoColumns>
     );
   }
 }
