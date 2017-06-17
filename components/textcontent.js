@@ -118,6 +118,7 @@ export default class extends React.Component {
       case 'wrap':
       case 'content':
       case 'nonum':
+      case 'resetnum':
         return this.handle_nodes(node.childNodes);
       case 'center':
         // <center> er et block element og for at undgå dobbelt
