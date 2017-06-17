@@ -51,6 +51,9 @@ const htmlToXml = (html, collected) => {
   let decoded = entities.decodeHTML(
     replaceDashes(
       html
+        .replace(/\n *(----*) *\n/g, (match, p1) => {
+          return `\n<hr width=${p1.length}/>\n`;
+        })
         .replace(/^\n/, '')
         .replace(/^(\d+\.?)\s*\n/gm, '<num>$1</num>')
         .replace(/^(\d+\.?)/gm, '<num>$1</num>')
@@ -58,9 +61,6 @@ const htmlToXml = (html, collected) => {
         .replace(/^\s*(<center>.*)$/gm, '$1')
         .replace(/\n( +)/g, (match, p1) => {
           return '\n' + '&nbsp;'.repeat(p1.length);
-        })
-        .replace(/\n *(----*) *\n/g, (match, p1) => {
-          return `\n<hr width=${p1.length}/>\n`;
         })
         .replace(/\n/g, '<br/>')
         .replace(/,,/g, '&bdquo;')
