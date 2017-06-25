@@ -48,26 +48,30 @@ export default class extends React.Component {
       <nav>
         {joinedLinks}
         <style jsx>{`
-        :global(body) {
-          margin: 0;
-          font-family: -apple-system,BlinkMacSystemFont,Avenir Next,Avenir,Helvetica,sans-serif;
-        }
-        nav {
-          margin-bottom: 80px;
-          font-weight: lighter;
-          display: flex;
-        }
-        nav > :global(div) {
-          flex-shrink: 1;
-          padding: 4px 0px;
-        }
-        @media print {
-          nav {
-            display: none;
+          :global(body) {
+            margin: 0;
+            font-family: -apple-system,
+              BlinkMacSystemFont,
+              Avenir Next,
+              Avenir,
+              Helvetica,
+              sans-serif;
           }
-        }
-
-      `}</style>
+          nav {
+            margin-bottom: 80px;
+            font-weight: lighter;
+            display: flex;
+          }
+          nav > :global(div) {
+            flex-shrink: 1;
+            padding: 4px 0px;
+          }
+          @media print {
+            nav {
+              display: none;
+            }
+          }
+        `}</style>
       </nav>
     );
   }
