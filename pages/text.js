@@ -14,6 +14,7 @@ import TextName from '../components/textname.js';
 import TextContent from '../components/textcontent.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
+import Picture from '../components/picture.js';
 import * as Links from '../components/links';
 import type { Lang, Poet, Work, Text } from './helpers/types.js';
 import 'isomorphic-fetch';
@@ -93,7 +94,20 @@ export default class extends React.Component {
     const renderedNotes = text.notes.map((note, i) => {
       return <Note key={i} note={note} />;
     });
-    const sidebar = <div>{renderedNotes}<FootnoteList /></div>;
+    const renderedPictures = text.pictures.map((picture, i) => {
+      const srcPrefix = `/static/images/${poet.id}`;
+      return (
+        <Picture
+          key={'picture' + i}
+          picture={picture}
+          srcPrefix={srcPrefix}
+          lang={lang}
+        />
+      );
+    });
+    const sidebar = (
+      <div>{renderedNotes}{renderedPictures}<FootnoteList /></div>
+    );
     const options = {
       isBibleVerses: poet.id === 'bibel',
     };

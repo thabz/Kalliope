@@ -12,6 +12,7 @@ import SubHeading from '../components/subheading.js';
 import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import Note from '../components/note.js';
+import Picture from '../components/picture.js';
 import * as Links from '../components/links';
 import type {
   Lang,
@@ -89,10 +90,22 @@ export default class extends React.Component {
     };
 
     const renderedNotes = notes.map((note, i) => {
-      return <Note key={i} note={note} />;
+      return <Note key={'note' + i} note={note} />;
     });
 
-    const sidebar = <div>{renderedNotes}</div>;
+    const renderedPictures = pictures.map((picture, i) => {
+      const srcPrefix = `/static/images/${poet.id}`;
+      return (
+        <Picture
+          key={'picture' + i}
+          picture={picture}
+          srcPrefix={srcPrefix}
+          lang={lang}
+        />
+      );
+    });
+
+    const sidebar = <div>{renderedPictures}{renderedNotes}</div>;
     const table = renderItems(toc);
     const title = <PoetName poet={poet} includePeriod />;
     return (
