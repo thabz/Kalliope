@@ -12,7 +12,7 @@ import SubHeading from '../components/subheading.js';
 import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import Note from '../components/note.js';
-import Picture from '../components/picture.js';
+import SidebarPictures from '../components/sidebarpictures.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import type {
@@ -86,17 +86,13 @@ export default class extends React.Component {
       return <Note key={'note' + i} note={note} lang={lang} />;
     });
 
-    const renderedPictures = pictures.map((picture, i) => {
-      const srcPrefix = `/static/images/${poet.id}`;
-      return (
-        <Picture
-          key={'picture' + i}
-          picture={picture}
-          srcPrefix={srcPrefix}
-          lang={lang}
-        />
-      );
-    });
+    const renderedPictures = (
+      <SidebarPictures
+        lang={lang}
+        pictures={pictures}
+        srcPrefix={`/static/images/${poet.id}`}
+      />
+    );
 
     const sidebar = <div>{renderedPictures}{renderedNotes}</div>;
     const table = renderItems(toc);
@@ -141,7 +137,7 @@ export default class extends React.Component {
                   line-height: 1.7;
                   padding: 0;
                 }
-            `}</style>
+              `}</style>
             </div>
             <div>{sidebar}</div>
           </SidebarSplit>

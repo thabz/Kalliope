@@ -14,7 +14,7 @@ import TextName from '../components/textname.js';
 import TextContent from '../components/textcontent.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
-import Picture from '../components/picture.js';
+import SidebarPictures from '../components/sidebarpictures.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import type { Lang, Poet, Work, Text } from './helpers/types.js';
@@ -36,25 +36,25 @@ class TextHeading extends React.Component {
         <h2><TextName text={text} /></h2>
         {subtitles}
         <style jsx>{`
-        .text-heading :global(h2) {
-          line-height: 1.5;
-          font-size: 1.4em;
-          font-weight: normal;
-          margin: 0 0 20px 0;
-          font-style: italic;
-        }
-        .text-heading :global(h4) {
-          line-height: 1.5;
-          font-size: 1.2em;
-          font-weight: normal;
-          font-size: 1.0em;
-          margin: 0;
-          min-height: 1em;
-        }
-        .text-heading {
-          margin-bottom: 30px;
-        }
-    `}</style>
+          .text-heading :global(h2) {
+            line-height: 1.5;
+            font-size: 1.4em;
+            font-weight: normal;
+            margin: 0 0 20px 0;
+            font-style: italic;
+          }
+          .text-heading :global(h4) {
+            line-height: 1.5;
+            font-size: 1.2em;
+            font-weight: normal;
+            font-size: 1.0em;
+            margin: 0;
+            min-height: 1em;
+          }
+          .text-heading {
+            margin-bottom: 30px;
+          }
+        `}</style>
       </div>
     );
   }
@@ -88,17 +88,13 @@ export default class extends React.Component {
     const renderedNotes = text.notes.map((note, i) => {
       return <Note key={i} note={note} lang={lang} />;
     });
-    const renderedPictures = text.pictures.map((picture, i) => {
-      const srcPrefix = `/static/images/${poet.id}`;
-      return (
-        <Picture
-          key={'picture' + i}
-          picture={picture}
-          srcPrefix={srcPrefix}
-          lang={lang}
-        />
-      );
-    });
+    const renderedPictures = (
+      <SidebarPictures
+        lang={lang}
+        pictures={text.pictures}
+        srcPrefix={`/static/images/${poet.id}`}
+      />
+    );
     const sidebar = (
       <div>{renderedNotes}{renderedPictures}<FootnoteList /></div>
     );
@@ -133,15 +129,15 @@ export default class extends React.Component {
                   <TextHeading text={text} lang={lang} />
                   {body}
                   <style jsx>{`
-                  .text-content {
-                    font-family: "Palatino", "Georgia", serif;
-                    line-height: 1.5;
-                    font-size: 1.15em;
-                  }
-                  .text-content sc {
-                    font-variant: small-caps;
-                  }
-              `}</style>
+                    .text-content {
+                      font-family: "Palatino", "Georgia", serif;
+                      line-height: 1.5;
+                      font-size: 1.15em;
+                    }
+                    .text-content sc {
+                      font-variant: small-caps;
+                    }
+                  `}</style>
                 </div>
               </div>
               <div>{sidebar}</div>

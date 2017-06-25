@@ -8,6 +8,7 @@ import type {
   PoetId,
   Work,
   WorkId,
+  Text,
   LinesPair,
   TocItem,
   NoteItem,

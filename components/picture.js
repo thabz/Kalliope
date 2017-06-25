@@ -22,25 +22,26 @@ export default class extends React.Component {
           </figcaption>
         </figure>
         <style jsx>{`
-              div.sidebar-picture {
-                margin-bottom: 30px;
-              }
-              figure {
-                margin: 0;
-              }
-              figcaption {
-                font-size: 0.8em;
-              }
-              img {
-                border: 0;
-                box-shadow: 4px 4px 12px #888;
-              }
-              @media print {
-                figure {
-                  display: none;
-                }
-              }
-          `}</style>
+          div.sidebar-picture {
+            margin-bottom: 30px;
+          }
+          figure {
+            margin: 0;
+          }
+          figcaption {
+            font-size: 0.8em;
+          }
+          img {
+            border: 0;
+            box-shadow: 4px 4px 12px #888;
+          }
+
+          @media print {
+            figure {
+              display: none;
+            }
+          }
+        `}</style>
       </div>
     );
   }
