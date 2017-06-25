@@ -20,4 +20,8 @@ yarn-error.log*
 
 # Generated JSON files
 static/api
-               
+
+# Generated thumbnails
+static/images/**/*-w????.jpg
+static/images/**/*-w???.jpg
+static/images/**/*-w??.jpg

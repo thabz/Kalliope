@@ -8,7 +8,8 @@
     "test": "jest --watch",
     "test-ci": "jest",
     "flow": "flow",
-    "build-json": "node tools/build-json-files.js"
+    "build-json": "node tools/build-json-files.js",
+    "resize-images": "node tools/resize-images.js"
   },
   "dependencies": {
     "global": "^4.3.2",
@@ -32,6 +33,7 @@
     "node-gyp": "^3.6.1",
     "react-addons-test-utils": "^15.5.1",
     "react-test-renderer": "^15.5.4",
+    "sharp": "^0.18.1",
     "xml2js": "^0.4.17"
   },
   "author": "Jesper Christensen",
