@@ -1,9 +1,13 @@
+// @flow
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export class Footnote extends Component {
   props: {
     text: string,
+  };
+  context: {
+    footnoteContainer: FootnoteContainer,
   };
   componentWillMount() {
     this.context.footnoteContainer.registrer(this);
@@ -29,6 +33,9 @@ Footnote.contextTypes = {
 };
 
 export class FootnoteList extends Component {
+  context: {
+    footnoteContainer: FootnoteContainer,
+  };
   render() {
     const container = this.context.footnoteContainer;
     const notes = container.footnotes().map((footnote, i) => {
@@ -53,6 +60,10 @@ FootnoteList.contextTypes = {
 };
 
 export class FootnoteContainer extends Component {
+  _footnotes: Array<Footnote>;
+  props: {
+    children: Array<Component<*, *, *>>,
+  };
   constructor() {
     super();
     this._footnotes = [];
@@ -60,24 +71,23 @@ export class FootnoteContainer extends Component {
   getChildContext() {
     return { footnoteContainer: this };
   }
-  footnotes() {
+  footnotes(): Array<Footnote> {
     return this._footnotes;
   }
-  registrer(footnote) {
+  registrer(footnote: Footnote) {
     const findes = this.nummer(footnote) !== 0;
     if (!findes) {
       this._footnotes.push(footnote);
     }
   }
-  unregister(footnote) {
+  unregister(footnote: Footnote) {
     this._footnotes = this._footnotes.filter(x => x !== footnote);
   }
-  nummer(footnote) {
+  nummer(footnote: Footnote) {
     return this._footnotes.indexOf(footnote) + 1;
   }
   render() {
     return <div>{this.props.children}</div>;
-    return React.Children.only(this.props.children);
   }
 }
 

@@ -85,12 +85,12 @@ export default class extends React.Component {
           );
         }
       });
-      const className = `toc ${indent === 0 ? 'outer' : null}`;
+      const className = `toc ${indent === 0 ? 'outer' : ''}`;
       return <table className={className}><tbody>{rows}</tbody></table>;
     };
 
     const renderedNotes = notes.map((note, i) => {
-      return <Note key={'note' + i} note={note} />;
+      return <Note key={'note' + i} note={note} lang={lang} />;
     });
 
     const renderedPictures = pictures.map((picture, i) => {

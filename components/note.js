@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import type { NoteItem, Lang } from '../pages/helpers/types.js';
 import TextContent from './textcontent.js';

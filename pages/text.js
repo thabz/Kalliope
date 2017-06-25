@@ -92,7 +92,7 @@ export default class extends React.Component {
     const { lang, poet, work, text } = this.props;
 
     const renderedNotes = text.notes.map((note, i) => {
-      return <Note key={i} note={note} />;
+      return <Note key={i} note={note} lang={lang} />;
     });
     const renderedPictures = text.pictures.map((picture, i) => {
       const srcPrefix = `/static/images/${poet.id}`;
