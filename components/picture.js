@@ -16,17 +16,24 @@ export default class extends React.Component {
     return (
       <div className="sidebar-picture">
         <figure>
-          <img src={src} width="100%" style={{ border: '1px solid black' }} />
+          <img src={src} width="100%" />
           <figcaption>
             <TextContent contentHtml={picture.content_html} lang={lang} />
           </figcaption>
         </figure>
         <style jsx>{`
               div.sidebar-picture {
-                margin-bottom: 15px;
+                margin-bottom: 30px;
               }
               figure {
                 margin: 0;
+              }
+              figcaption {
+                font-size: 0.8em;
+              }
+              img {
+                border: 0;
+                box-shadow: 4px 4px 12px #888;
               }
               @media print {
                 figure {

@@ -14,7 +14,12 @@ export default class extends React.Component {
         <TextContent contentHtml={note.content_html} lang={lang} />
         <style jsx>{`
               div.sidebar-note {
-                margin-bottom: 10px;
+                margin-bottom: 30px;
+              }
+              @media print {
+                div.sidebar-note {
+                  margin-bottom: 10px;
+                }
               }
           `}</style>
       </div>
