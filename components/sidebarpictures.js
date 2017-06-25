@@ -42,9 +42,8 @@ export default class extends React.Component {
               align-items: start;
             }
             div.sidebar-pictures > :global(*) {
-              flex-basis: 150px;
-              flex-grow: 1;
-              margin: 0 10px;
+              flex-basis: 47%;
+              flex-grow: 0;
             }
           }
         `}</style>

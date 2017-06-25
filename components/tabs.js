@@ -28,13 +28,11 @@ export default class Tabs extends React.Component {
             border-bottom: 1px solid black;
             margin-bottom: 40px;
           }
-
           .tabs > :global(.tab) {
             display: inline-block;
             margin-right: 40px;
             border-bottom: 2px solid transparent;
           }
-
           .tabs > :global(.tab) :global(h2) {
             margin-top: 10px;
             margin-bottom: 20px;
@@ -42,7 +40,11 @@ export default class Tabs extends React.Component {
             font-size: 32px;
             font-weight: lighter;
           }
-
+          @media (max-width: 321px) {
+            .tabs > :global(.tab) {
+              margin-right: 4px !important;
+            }
+          }
           @media (max-width: 480px) {
             .tabs > :global(.tab) {
               margin-right: 10px;
@@ -50,24 +52,43 @@ export default class Tabs extends React.Component {
             .tabs > :global(.tab) :global(h2) {
               margin-top: 5px;
               margin-bottom: 10px;
-              line-height: 16px;
-              font-size: 16px;
-              font-weight: lighter;
+              line-height: 12px;
+              font-size: 12px !important;
             }
           }
-
           .tabs > :global(.tab.selected) {
             border-bottom: 2px solid black;
           }
-
           .tabs :global(.tab.selected a) {
             color: black;
           }
-
           .tabs > :global(.tab) :global(a) {
             color: #888;
           }
-
+          @media (max-width: 800px) {
+            .tabs > :global(.tab) :global(h2) {
+              font-size: 28px;
+            }
+            .tabs > :global(.tab) {
+              margin-right: 20px;
+            }
+          }
+          @media (max-width: 700px) {
+            .tabs > :global(.tab) :global(h2) {
+              font-size: 24px;
+            }
+            .tabs > :global(.tab) {
+              margin-right: 15px;
+            }
+          }
+          @media (max-width: 600px) {
+            .tabs > :global(.tab) :global(h2) {
+              font-size: 18px;
+            }
+            .tabs > :global(.tab) {
+              margin-right: 15px;
+            }
+          }
           @media print {
             .tabs {
               display: none;
