@@ -50,7 +50,7 @@ export default class extends React.Component {
           <Nav lang={lang} poet={poet} title="Værker" />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="works" />
-          <div className="two-columns">
+          <div className="two-columns" style={{ lineHeight: 1.5 }}>
             {list}
           </div>
           <LangSelect lang={lang} />
