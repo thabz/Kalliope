@@ -16,9 +16,9 @@ import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import Picture from '../components/picture.js';
 import * as Links from '../components/links';
+import * as Client from './helpers/client.js';
 import type { Lang, Poet, Work, Text } from './helpers/types.js';
 import 'isomorphic-fetch';
-import * as Paths from './helpers/paths.js';
 
 class TextHeading extends React.Component {
   props: { text: Text, lang: Lang };
@@ -73,13 +73,7 @@ export default class extends React.Component {
   }: {
     query: { lang: Lang, textId: string },
   }) {
-    const path = Paths.textPath(textId);
-    const res = await fetch(`http://localhost:3000/${path}`);
-    const json: {
-      poet: Poet,
-      work: Work,
-      text: Text,
-    } = await res.json();
+    const json = await Client.text(textId);
     return {
       lang,
       poet: json.poet,

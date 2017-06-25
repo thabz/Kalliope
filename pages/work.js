@@ -14,6 +14,7 @@ import WorkName from '../components/workname.js';
 import Note from '../components/note.js';
 import Picture from '../components/picture.js';
 import * as Links from '../components/links';
+import * as Client from './helpers/client.js';
 import type {
   Lang,
   Poet,
@@ -22,7 +23,6 @@ import type {
   NoteItem,
   PictureItem,
 } from './helpers/types.js';
-import 'isomorphic-fetch';
 
 export default class extends React.Component {
   props: {
@@ -39,16 +39,7 @@ export default class extends React.Component {
   }: {
     query: { lang: Lang, poetId: string, workId: string },
   }) {
-    const res = await fetch(
-      `http://localhost:3000/static/api/${poetId}/${workId}-toc.json`
-    );
-    const json: {
-      poet: Poet,
-      work: Work,
-      toc: Array<TocItem>,
-      notes: Array<NoteItem>,
-      pictures: Array<PictureItem>,
-    } = await res.json();
+    const json = await Client.work(poetId, workId);
     return {
       lang,
       poet: json.poet,

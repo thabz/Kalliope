@@ -10,6 +10,7 @@ import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import * as Links from '../components/links';
+import * as Client from './helpers/client.js';
 import type { Lang, Poet, Work } from './helpers/types.js';
 import 'isomorphic-fetch';
 
@@ -25,10 +26,7 @@ export default class extends React.Component {
   }: {
     query: { lang: Lang, poetId: string },
   }) {
-    const res = await fetch(
-      `http://localhost:3000/static/api/${poetId}/works.json`
-    );
-    const json: { poet: Poet, works: Array<Work> } = await res.json();
+    const json = await Client.works(poetId);
     return { lang, poet: json.poet, works: json.works };
   }
 
