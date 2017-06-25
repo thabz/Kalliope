@@ -5,8 +5,11 @@ export type DateWithPlace = {
   place?: string,
 };
 
+export type PoetId = string;
+export type WorkId = string;
+
 export type Poet = {
-  id: string,
+  id: PoetId,
   type: 'poet' | 'person' | 'collection',
   name: {
     lastname?: string,
@@ -23,7 +26,7 @@ export type Poet = {
 };
 
 export type Work = {
-  id: string,
+  id: WorkId,
   title: string,
   year?: string,
 };

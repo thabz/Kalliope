@@ -18,6 +18,8 @@ import * as Client from './helpers/client.js';
 import type {
   Lang,
   Poet,
+  PoetId,
+  WorkId,
   Work,
   TocItem,
   NoteItem,
@@ -37,7 +39,7 @@ export default class extends React.Component {
   static async getInitialProps({
     query: { lang, poetId, workId },
   }: {
-    query: { lang: Lang, poetId: string, workId: string },
+    query: { lang: Lang, poetId: PoetId, workId: WorkId },
   }) {
     const json = await Client.work(poetId, workId);
     return {

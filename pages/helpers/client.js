@@ -5,7 +5,9 @@ import * as Paths from './paths.js';
 import type {
   Lang,
   Poet,
+  PoetId,
   Work,
+  WorkId,
   LinesPair,
   TocItem,
   NoteItem,
@@ -20,8 +22,8 @@ export type FetchWorkResult = {
   pictures: Array<PictureItem>,
 };
 export const work = async (
-  poetId: string,
-  workId: string
+  poetId: PoetId,
+  workId: WorkId
 ): Promise<FetchWorkResult> => {
   const res = await fetch(
     `http://localhost:3000/static/api/${poetId}/${workId}-toc.json`
