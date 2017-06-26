@@ -9,7 +9,7 @@ import TextName from './textname';
 import * as Links from './links.js';
 import type { Lang, Poet, Work, Text } from '../pages/helpers/types.js';
 
-export default class extends React.Component {
+export default class Nav extends React.Component {
   props: {
     lang: Lang,
     poet?: Poet,
@@ -40,9 +40,9 @@ export default class extends React.Component {
     let joinedLinks = [];
     links.filter(x => x != null).map((link, i) => {
       if (i !== 0) {
-        joinedLinks.push(<div>&nbsp;→&nbsp;</div>);
+        joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
       }
-      joinedLinks.push(<div>{link}</div>);
+      joinedLinks.push(<div key={'link' + i}>{link}</div>);
     });
     return (
       <nav>
