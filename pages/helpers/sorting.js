@@ -1,6 +1,8 @@
 // @flow
 import type { Section, Poet, LinesPair, SortReturn, Keyword } from './types.js';
 
+const daDK = 'da-DK';
+
 export const poetsByLastname = (a: Poet, b: Poet): SortReturn => {
   const a1 = a.name.lastname || 'X';
   const a2 = a.name.firstname || 'X';
@@ -11,10 +13,10 @@ export const poetsByLastname = (a: Poet, b: Poet): SortReturn => {
     if (a2 === b2) {
       return a.id < b.id ? -1 : 1;
     } else {
-      return a2.localeCompare(b2, 'da');
+      return a2.localeCompare(b2, daDK);
     }
   } else {
-    return a1.localeCompare(b1, 'da');
+    return a1.localeCompare(b1, daDK);
   }
 };
 
@@ -35,11 +37,11 @@ export const poetsByBirthDate = (a: Poet, b: Poet): SortReturn => {
 export const linesPairsByLine = (a: LinesPair, b: LinesPair): SortReturn => {
   const a1 = a.sortBy;
   const b1 = b.sortBy;
-  return a1.localeCompare(b1, 'da');
+  return a1.localeCompare(b1, daDK);
 };
 
 export const keywordsByTitle = (a: Keyword, b: Keyword): SortReturn => {
-  return a.title.localeCompare(b.title, 'da');
+  return a.title.localeCompare(b.title, daDK);
 };
 
 export function sectionsByTitle<T>(a: Section<T>, b: Section<T>): SortReturn {
@@ -48,6 +50,6 @@ export function sectionsByTitle<T>(a: Section<T>, b: Section<T>): SortReturn {
   } else if (b.title.startsWith('Ukendt')) {
     return -1;
   } else {
-    return a.title.localeCompare(b.title, 'da');
+    return a.title.localeCompare(b.title, daDK);
   }
 }
