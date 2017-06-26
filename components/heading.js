@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-export default class extends React.Component {
+export default class Heading extends React.Component {
   props: {
     title: any,
   };

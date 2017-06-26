@@ -4,7 +4,7 @@ import type { PictureItem, Lang } from '../pages/helpers/types.js';
 import TextContent from './textcontent.js';
 import CommonData from '../pages/helpers/commondata.js';
 
-export default class extends React.Component {
+export default class Picture extends React.Component {
   props: {
     picture: PictureItem,
     srcPrefix?: string,

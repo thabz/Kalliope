@@ -4,7 +4,7 @@ import React from 'react';
 import type { SectionForRendering } from '../pages/helpers/types.js';
 import TwoColumns from './twocolumns.js';
 
-export default class extends React.Component {
+export default class SectionedList extends React.Component {
   props: {
     sections: Array<SectionForRendering>,
   };

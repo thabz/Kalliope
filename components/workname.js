@@ -2,7 +2,7 @@
 import React from 'react';
 import type { Work } from '../pages/helpers/types.js';
 
-export default class extends React.Component {
+export default class WorkName extends React.Component {
   props: {
     work: Work,
   };

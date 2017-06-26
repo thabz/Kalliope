@@ -6,7 +6,7 @@ import type { Text, Lang, TextContentOptions } from '../pages/helpers/types.js';
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
 
-export default class extends React.Component {
+export default class TextContent extends React.Component {
   props: {
     contentHtml: string,
     lang: Lang,

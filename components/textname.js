@@ -2,7 +2,7 @@
 import React from 'react';
 import type { Text } from '../pages/helpers/types.js';
 
-export default class extends React.Component {
+export default class TextName extends React.Component {
   props: {
     text: Text,
   };

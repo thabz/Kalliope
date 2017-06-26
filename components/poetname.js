@@ -3,7 +3,7 @@
 import React from 'react';
 import type { Poet } from '../pages/helpers/types.js';
 
-export default class extends React.Component {
+export default class PoetName extends React.Component {
   props: {
     poet: Poet,
     lastNameFirst?: boolean,

@@ -11,7 +11,7 @@ const links = [
   { href: '/en/poets/name', label: 'Engelsk' },
 ];
 
-export default class extends React.Component {
+export default class LangSelect extends React.Component {
   props: {
     lang: Lang,
   };

@@ -3,7 +3,7 @@ import React from 'react';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
 import Picture from './picture.js';
 
-export default class extends React.Component {
+export default class SidebarPictures extends React.Component {
   props: {
     pictures: Array<PictureItem>,
     srcPrefix?: string,

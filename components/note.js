@@ -4,7 +4,7 @@ import React from 'react';
 import type { NoteItem, Lang } from '../pages/helpers/types.js';
 import TextContent from './textcontent.js';
 
-export default class extends React.Component {
+export default class Note extends React.Component {
   props: {
     note: NoteItem,
     lang: Lang,

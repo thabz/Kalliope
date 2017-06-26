@@ -7,7 +7,7 @@ const defaultDescription = '';
 const defaultOGURL = '';
 const defaultOGImage = '';
 
-export default class extends React.Component {
+export default class Head extends React.Component {
   props: {
     title?: string,
     description?: string,
