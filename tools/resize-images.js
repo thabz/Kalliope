@@ -25,18 +25,13 @@ const handleDirRecursive = dirname => {
     } else if (
       stats.isFile() &&
       filename.endsWith('.jpg') &&
-      !filename.match(/-w\d+-x\d+.jpg$/)
+      !filename.match(/-w\d+.jpg$/)
     ) {
       CommonData.availableImageWidths.forEach(width => {
-        CommonData.availableScreenDensities.forEach(density => {
-          const outputfile = fullFilename.replace(
-            /.jpg$/,
-            `-w${width}-x${density}.jpg`
-          );
-          if (!fs.existsSync(outputfile)) {
-            resize(fullFilename, outputfile, width * density);
-          }
-        });
+        const outputfile = fullFilename.replace(/.jpg$/, `-w${width}.jpg`);
+        if (!fs.existsSync(outputfile)) {
+          resize(fullFilename, outputfile, width);
+        }
       });
     }
   });

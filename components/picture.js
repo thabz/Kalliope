@@ -16,18 +16,15 @@ export default class Picture extends React.Component {
     const src = (srcPrefix || '') + '/' + picture.src;
     const srcset = CommonData.availableImageWidths
       .map(width => {
-        return CommonData.availableScreenDensities
-          .map(density => {
-            const filename = src.replace(/.jpg$/, `-w${width}-x${density}.jpg`);
-            return `${filename} ${width}w ${density}x`;
-          })
-          .join(', ');
+        const filename = src.replace(/.jpg$/, `-w${width}.jpg`);
+        return `${filename} ${width}w`;
       })
       .join(', ');
+    const sizes = '(max-width: 700px) 250px, 48vw';
     return (
       <div className="sidebar-picture">
         <figure>
-          <img src={src} srcSet={srcset} width="100%" />
+          <img src={src} srcSet={srcset} sizes={sizes} width="100%" />
           <figcaption>
             <TextContent contentHtml={picture.content_html} lang={lang} />
           </figcaption>
