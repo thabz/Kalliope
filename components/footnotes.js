@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export class Footnote extends Component {
   props: {
-    text: string,
+    text: any,
   };
   context: {
     footnoteContainer: FootnoteContainer,
