@@ -1,8 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
-
-const wantedWidths = [100, 150, 200, 300, 400, 600];
+const CommonData = require('../pages/helpers/commondata.js');
 
 const resize = (inputfile, outputfile, maxWidth) => {
   sharp(inputfile)
@@ -28,7 +27,7 @@ const handleDirRecursive = dirname => {
       filename.endsWith('.jpg') &&
       !filename.match(/-w\d+.jpg$/)
     ) {
-      wantedWidths.forEach(width => {
+      CommonData.availableImageWidths.forEach(width => {
         const outputfile = fullFilename.replace(/.jpg$/, `-w${width}.jpg`);
         if (!fs.existsSync(outputfile)) {
           resize(fullFilename, outputfile, width);
