@@ -28,10 +28,15 @@ const handleDirRecursive = dirname => {
       !filename.match(/-w\d+.jpg$/)
     ) {
       CommonData.availableImageWidths.forEach(width => {
-        const outputfile = fullFilename.replace(/.jpg$/, `-w${width}.jpg`);
-        if (!fs.existsSync(outputfile)) {
-          resize(fullFilename, outputfile, width);
-        }
+        CommonData.availableScreenDensities.forEach(density => {
+          const outputfile = fullFilename.replace(
+            /.jpg$/,
+            `-w${width}-x${density}.jpg`
+          );
+          if (!fs.existsSync(outputfile)) {
+            resize(fullFilename, outputfile, width * density);
+          }
+        });
       });
     }
   });

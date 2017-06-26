@@ -22,6 +22,6 @@ yarn-error.log*
 static/api
 
 # Generated thumbnails
-static/images/**/*-w????.jpg
-static/images/**/*-w???.jpg
-static/images/**/*-w??.jpg
+static/images/**/*-w????-x?.jpg
+static/images/**/*-w???-x?.jpg
+static/images/**/*-w??-x?.jpg

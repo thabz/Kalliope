@@ -2,6 +2,7 @@
 import React from 'react';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
 import TextContent from './textcontent.js';
+import CommonData from '../pages/helpers/commondata.js';
 
 export default class extends React.Component {
   props: {
@@ -13,10 +14,20 @@ export default class extends React.Component {
     const { picture, lang, srcPrefix } = this.props;
 
     const src = (srcPrefix || '') + '/' + picture.src;
+    const srcset = CommonData.availableImageWidths
+      .map(width => {
+        return CommonData.availableScreenDensities
+          .map(density => {
+            const filename = src.replace(/.jpg$/, `-w${width}-x${density}.jpg`);
+            return `${filename} ${width}w ${density}x`;
+          })
+          .join(', ');
+      })
+      .join(', ');
     return (
       <div className="sidebar-picture">
         <figure>
-          <img src={src} width="100%" />
+          <img src={src} srcSet={srcset} width="100%" />
           <figcaption>
             <TextContent contentHtml={picture.content_html} lang={lang} />
           </figcaption>
@@ -35,7 +46,6 @@ export default class extends React.Component {
             border: 0;
             box-shadow: 4px 4px 12px #888;
           }
-
           @media print {
             figure {
               display: none;
