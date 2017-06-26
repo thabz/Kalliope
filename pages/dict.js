@@ -17,7 +17,7 @@ import type { Lang, DictItem, SectionForRendering } from './helpers/types.js';
 const groupsByLetter = (dictItems: Array<DictItem>) => {
   let groups = new Map();
   dictItems.forEach(k => {
-    let key = k.title[0].toLocaleUpperCase('da');
+    let key = k.title.replace(/^aa/i, 'Å')[0].toLocaleUpperCase('da');
     let group = groups.get(key) || [];
     group.push(k);
     groups.set(key, group);
@@ -26,7 +26,7 @@ const groupsByLetter = (dictItems: Array<DictItem>) => {
   groups.forEach((group, key) => {
     sortedGroups.push({
       title: key,
-      items: group.sort(Sorting.keywordsByTitle),
+      items: group.sort(Sorting.dictItemsByTitle),
     });
   });
   return sortedGroups.sort(Sorting.sectionsByTitle);

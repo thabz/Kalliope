@@ -1,5 +1,12 @@
 // @flow
-import type { Section, Poet, LinesPair, SortReturn, Keyword } from './types.js';
+import type {
+  Section,
+  Poet,
+  LinesPair,
+  SortReturn,
+  Keyword,
+  DictItem,
+} from './types.js';
 
 const daDK = 'da-DK';
 
@@ -41,6 +48,10 @@ export const linesPairsByLine = (a: LinesPair, b: LinesPair): SortReturn => {
 };
 
 export const keywordsByTitle = (a: Keyword, b: Keyword): SortReturn => {
+  return a.title.localeCompare(b.title, daDK);
+};
+
+export const dictItemsByTitle = (a: DictItem, b: DictItem): SortReturn => {
   return a.title.localeCompare(b.title, daDK);
 };
 
