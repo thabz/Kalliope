@@ -12,6 +12,11 @@ export default class extends React.Component {
     lang: Lang,
     options?: TextContentOptions,
   };
+  keySeq: number;
+  constructor(props) {
+    super(props);
+    this.keySeq = 1;
+  }
   handle_metrik(s: string) {
     // Disse metrik symboler ligger i Unicode 23Dx
     // http://www.unicode.org/charts/PDF/U2300.pdf
@@ -105,7 +110,7 @@ export default class extends React.Component {
       case '#comment':
         return null;
       case 'i':
-        return <i>{this.handle_nodes(node.childNodes)}</i>;
+        return <i key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</i>;
       case 'b':
         return <b>{this.handle_nodes(node.childNodes)}</b>;
       case 'p':
