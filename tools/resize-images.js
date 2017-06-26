@@ -25,7 +25,7 @@ const handleDirRecursive = dirname => {
     } else if (
       stats.isFile() &&
       filename.endsWith('.jpg') &&
-      !filename.match(/-w\d+.jpg$/)
+      !filename.match(/-w\d+-x\d+.jpg$/)
     ) {
       CommonData.availableImageWidths.forEach(width => {
         CommonData.availableScreenDensities.forEach(density => {
