@@ -121,7 +121,7 @@ const get_pictures = head => {
   });
 };
 
-const handle_text = (poetId, workId, text) => {
+const handle_text = (poetId, workId, text, isPoetry) => {
   const poet = collected.poets.get(poetId);
   const work = collected_works.get(poetId + '-' + workId);
 
@@ -170,7 +170,8 @@ const handle_text = (poetId, workId, text) => {
       pictures: get_pictures(head),
       content_html: htmlToXml(
         body.toString().replace('<body>', '').replace('</body>', ''),
-        collected
+        collected,
+        isPoetry
       ),
     },
   };
@@ -254,7 +255,7 @@ const handle_work = work => {
           title: replaceDashes(toctitle.title),
           prefix: replaceDashes(toctitle.prefix),
         });
-        handle_text(poetId, workId, part);
+        handle_text(poetId, workId, part, true);
       } else if (partName === 'section') {
         const subtoc = handle_section(part.get('content'));
         const title = part.get('head/toctitle').text();
@@ -277,7 +278,7 @@ const handle_work = work => {
           title: replaceDashes(toctitle.title),
           prefix: toctitle.prefix,
         });
-        handle_text(poetId, workId, part);
+        handle_text(poetId, workId, part, false);
       }
     });
     return toc;
