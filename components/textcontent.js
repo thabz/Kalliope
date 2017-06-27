@@ -137,7 +137,7 @@ export default class TextContent extends React.Component {
       case 's':
       case 'small':
         return (
-          <small style={{ display: 'inline-block', lineHeight: '1.4em' }}>
+          <small style={{ display: 'inline', lineHeight: '1.4em' }}>
             {this.handle_nodes(node.childNodes)}
           </small>
         );
