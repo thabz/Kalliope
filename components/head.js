@@ -28,6 +28,7 @@ export default class Head extends React.Component {
         <link rel="icon" href="/static/favicon.ico" />
         <link rel="manifest" href="/static/manifest.json" />
         <meta name="theme-color" content="rgb(139, 56, 65)" />
+        <meta property="og:site_name" content="Kalliope" />
         <meta property="og:url" content={url || defaultOGURL} />
         <meta property="og:title" content={title || ''} />
         <meta
