@@ -2,9 +2,11 @@
 <keyword id="rom">
   <head>
     <title>Rom</title>
-    <picture>Thorvaldsen</picture>
-    <picture>hansen</picture>
-    <picture>eckersberg2</picture>
+    <pictures>
+      <picture src="Thorvaldsen">C. W. Eckersberg: <i>Bertel Thorvaldsen</i>, 1814, 90x74 cm, Kunstakademiet.</picture>
+      <picture src="hansen">Constatin Hansen: <i>Et Selskab af danske Kunstnere i Rom</i>, 1837, 62x74cm, Statens Museum for Kunst.</picture>
+      <picture src="eckersberg2">C.W. Eckersberg: <i>Udsigt gennem tre af de nordvestlige buer i Colosseums tredje stokværk.</i></picture>
+    </pictures>
     <author>Sven Sørensen</author>
   </head>
   <body>
