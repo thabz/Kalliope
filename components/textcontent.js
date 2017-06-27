@@ -181,8 +181,6 @@ export default class TextContent extends React.Component {
         const width = Math.min(node.getAttribute('width') * 10, 100);
         return (
           <hr
-            noshade
-            align="center"
             size="1"
             color="black"
             style={{ color: 'black', width: `${width}%` }}
@@ -191,7 +189,7 @@ export default class TextContent extends React.Component {
       case 'footnote':
       case 'note':
         const noteContent = this.handle_nodes(node.childNodes);
-        return <Footnote text={noteContent} />;
+        return <Footnote key={this.keySeq++} text={noteContent} />;
       case 'sc':
         return (
           <span style={{ fontVariant: 'small-caps' }}>
