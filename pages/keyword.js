@@ -12,6 +12,7 @@ import SubHeading from '../components/subheading.js';
 import PoetName from '../components/poetname.js';
 import TextName from '../components/textname.js';
 import TextContent from '../components/textcontent.js';
+import SidebarPictures from '../components/sidebarpictures.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
@@ -43,7 +44,14 @@ export default class extends React.Component {
   render() {
     const { lang, keyword } = this.props;
 
-    const sidebar = <div><FootnoteList /></div>;
+    const renderedPictures = (
+      <SidebarPictures
+        lang={lang}
+        pictures={keyword.pictures}
+        srcPrefix={'/static/images/keywords'}
+      />
+    );
+    const sidebar = <div><FootnoteList />{renderedPictures}</div>;
     const body = <TextContent contentHtml={keyword.content_html} lang={lang} />;
     const navbar = [<a href={Links.keywordsURL(lang)}>Nøgleord</a>];
     const title = keyword.title;

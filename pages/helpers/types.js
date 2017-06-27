@@ -86,6 +86,7 @@ export type Keyword = {
   id: string,
   title: string,
   author?: string,
+  pictures: Array<PictureItem>,
   content_html: string,
 };
 

@@ -411,11 +411,13 @@ const build_keywords = () => {
     const body = keyword.get('body');
     const id = keyword.attr('id').value();
     const title = head.get('title').text();
+    const pictures = get_pictures(head);
     const author = head.get('author') ? head.get('author').text() : null;
     const data = {
       id,
       title,
       author,
+      pictures,
       content_html: htmlToXml(
         body.toString().replace('<body>', '').replace('</body>', ''),
         collected
