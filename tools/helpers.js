@@ -50,8 +50,9 @@ const htmlToXml = (html, collected, isPoetry = false) => {
   const regexp = /<xref\s+(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
   if (isPoetry) {
     html = html
-      .replace(/^(\d+\.?)\s*\n/gm, '<num>$1</num>')
-      .replace(/^(\d+\.?)/gm, '<num>$1</num>');
+      .replace(/^(\d+\.?)\s*\n/gm, '<num>$1</num>\n')
+      .replace(/^(\d+\.?)/gm, '<num>$1</num>')
+      .replace(/^\[(\d+\.?)\]\s*\n/gm, '<num>[$1]</num>\n');
   }
   let decoded = entities.decodeHTML(
     replaceDashes(
@@ -62,8 +63,8 @@ const htmlToXml = (html, collected, isPoetry = false) => {
         .replace(/^\n/, '')
         .replace(/^\s*(<right>.*)$/gm, '$1')
         .replace(/^\s*(<center>.*)$/gm, '$1')
-        .replace(/\n( +)/g, (match, p1) => {
-          return '\n' + '&nbsp;'.repeat(p1.length);
+        .replace(/^( +)/gm, (match, p1) => {
+          return '&nbsp;'.repeat(p1.length);
         })
         .replace(/\n/g, '<br/>')
         .replace(/,,/g, '&bdquo;')

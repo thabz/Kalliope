@@ -26,7 +26,7 @@ export default class TextContent extends React.Component {
       .replace(/uu/g, '\u23D6')
       .replace(/u/g, '\u23D1')
       .replace(/-/g, '\u23BC');
-    const parts = unicode.split(/ */).map(x => (
+    const parts = unicode.split(/ */).map(x =>
       <span
         style={{
           display: 'inline-block',
@@ -34,7 +34,7 @@ export default class TextContent extends React.Component {
         }}>
         {x}
       </span>
-    ));
+    );
     return <span style={{ fontSize: '1.1em' }}>{parts}</span>;
   }
   handle_a(node: any) {
@@ -162,7 +162,7 @@ export default class TextContent extends React.Component {
         return (
           <div
             style={{
-              display: 'block',
+              display: 'inline',
               opacity: 0.4,
               pageBreakAfter: 'avoid', // Not working.
             }}>
