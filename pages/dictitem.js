@@ -43,6 +43,19 @@ export default class extends React.Component {
 
     const sidebar = <div><FootnoteList /></div>;
     const body = <TextContent contentHtml={item.content_html} lang={lang} />;
+    let variants, phrase;
+    if (item.variants != null && item.variants.length > 0) {
+      variants = (
+        <div style={{ marginBottom: '10px' }}>
+          <b>Varianter: </b>{item.variants.join(', ')}
+        </div>
+      );
+    }
+    if (item.phrase != null) {
+      phrase = (
+        <div style={{ marginBottom: '10px' }}><b>Frase: </b>{item.phrase}</div>
+      );
+    }
     const navbar = [<a href={Links.dictionaryURL(lang)}>Ordbog</a>];
     const title = item.title;
     return (
@@ -56,6 +69,8 @@ export default class extends React.Component {
             <SidebarSplit>
               <div>
                 <SubHeading>{item.title}</SubHeading>
+                {variants}
+                {phrase}
                 <div style={{ lineHeight: 1.6 }}>
                   {body}
                 </div>

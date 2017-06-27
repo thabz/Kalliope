@@ -67,9 +67,9 @@ const build_poets_json = () => {
         type,
         name: name,
         period,
-        has_bibliography: fs.existsSync(
-          `fdirs/${id}/bibliography-primary.xml`
-        ) || fs.existsSync(`fdirs/${id}/bibliography-secondary.xml`),
+        has_bibliography:
+          fs.existsSync(`fdirs/${id}/bibliography-primary.xml`) ||
+            fs.existsSync(`fdirs/${id}/bibliography-secondary.xml`),
         has_works: worksArray.length > 0,
         has_biography: fs.existsSync(`fdirs/${id}/bio.xml`),
         workIds: worksArray,
@@ -480,21 +480,10 @@ const build_dict_first_pass = collected => {
 const build_dict_second_pass = collected => {
   console.log('Building dict');
   safeMkdir('static/api/dict');
-  const path = `data/dict.xml`;
-  const doc = loadXMLDoc(path);
+
   let items = new Array();
-  doc.get('//entries').childNodes().forEach(item => {
-    if (item.name() !== 'entry') {
-      return;
-    }
-    const id = item.attr('id').value();
-    const body = item.get('forkl');
-    const title = item.get('ord').text();
-    let phrase = null;
-    if (item.get('frase')) {
-      phrase = item.get('frase').text();
-    }
-    const variants = item.find('var').map(varItem => varItem.text());
+
+  const createItem = (id, title, phrase, variants, body, collected) => {
     const data = {
       id,
       title,
@@ -511,6 +500,33 @@ const build_dict_second_pass = collected => {
       title,
     };
     items.push(simpleData);
+  };
+
+  const path = `data/dict.xml`;
+  const doc = loadXMLDoc(path);
+  doc.get('//entries').childNodes().forEach(item => {
+    if (item.name() !== 'entry') {
+      return;
+    }
+    const id = item.attr('id').value();
+    const body = item.get('forkl');
+    const title = item.get('ord').text();
+    let phrase = null;
+    if (item.get('frase')) {
+      phrase = item.get('frase').text();
+    }
+    const variants = item.find('var').map(varItem => varItem.text());
+    variants.forEach(variant => {
+      createItem(
+        variant,
+        variant,
+        null,
+        null,
+        `<b>${variant}</b>: se <a dict="${id}">${title}</a>.`,
+        collected
+      );
+    });
+    createItem(id, title, phrase, variants, body, collected);
   });
   writeJSON(`static/api/dict.json`, items);
 };
