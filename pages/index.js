@@ -35,23 +35,23 @@ export default class extends React.Component {
 
     const renderedNews = news.filter((_, i) => i < 5).map(item => {
       return (
-        <div className="news-item">
+        <div className="news-item" key={i + item.date}>
           <div className="news-date">{item.date}</div>
           <div className="news-body">
             <TextContent contentHtml={item.content_html} lang={lang} />
           </div>
           <style jsx>{`
-              div.news-item {
-                margin-bottom: 40px;
-              }
-              div.news-date {
-                text-align: right;
-                margin-bottom: 10px;
-              }
-              div.news-body {
-                line-height: 1.6;
-                font-weight: lighter;
-              }
+            div.news-item {
+              margin-bottom: 40px;
+            }
+            div.news-date {
+              text-align: right;
+              margin-bottom: 10px;
+            }
+            div.news-body {
+              line-height: 1.6;
+              font-weight: lighter;
+            }
           `}</style>
         </div>
       );
