@@ -33,9 +33,9 @@ export default class extends React.Component {
   render() {
     const { lang, news } = this.props;
 
-    const renderedNews = news.filter((_, i) => i < 5).map(item => {
+    const renderedNews = news.filter((_, i) => i < 5).map((item, i) => {
       return (
-        <div className="news-item" key={i + item.date}>
+        <div className="news-item" key={item.date + i}>
           <div className="news-date">{item.date}</div>
           <div className="news-body">
             <TextContent contentHtml={item.content_html} lang={lang} />
