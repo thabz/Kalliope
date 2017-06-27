@@ -9,8 +9,9 @@ import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
-import PoetName from '../components/poetname.js';
-import TextName from '../components/textname.js';
+import PoetName, { poetNameString } from '../components/poetname.js';
+import { workTitleString } from '../components/workname.js';
+import TextName, { textTitleString } from '../components/textname.js';
 import TextContent from '../components/textcontent.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
@@ -110,10 +111,16 @@ export default class extends React.Component {
     );
 
     const title = <PoetName poet={poet} includePeriod />;
+    const headTitle =
+      poetNameString(poet, false, true) +
+      ': »' +
+      textTitleString(text) +
+      '« fra ' +
+      workTitleString(work);
     return (
       <div>
         <FootnoteContainer>
-          <Head title="Digtere - Kalliope" />
+          <Head title={headTitle} />
           <div className="row">
             <Nav
               lang={lang}

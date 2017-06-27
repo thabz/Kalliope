@@ -12,3 +12,7 @@ export default class TextName extends React.Component {
     return <span className="textname">{title}</span>;
   }
 }
+
+export function textTitleString(text: Text): string {
+  return text.title;
+}

@@ -22,3 +22,12 @@ export default class WorkName extends React.Component {
     return <span className="workname">{parts}</span>;
   }
 }
+
+export function workTitleString(work: Work): string {
+  const { title, year } = work;
+  let yearPart = '';
+  if (year && year !== '?') {
+    yearPart = ` (${year})`;
+  }
+  return title + yearPart;
+}
