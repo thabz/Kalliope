@@ -32,14 +32,19 @@ export default class extends React.Component {
 
   render() {
     const { lang, poet, works } = this.props;
-    const list = works.map((work, i) => {
-      const url = `/${lang}/work/${poet.id}/${work.id}`;
-      return (
-        <div className="list-section-line" key={work.id}>
-          <a href={url}><WorkName work={work} /></a>
+    const list = works.length == 0
+      ? <div className="nodata">
+          Kalliope indeholder endnu ingen tekster fra denne digter.
         </div>
-      );
-    });
+      : works.map((work, i) => {
+          const url = `/${lang}/work/${poet.id}/${work.id}`;
+          return (
+            <div className="list-section-line" key={work.id}>
+              <a href={url}><WorkName work={work} /></a>
+            </div>
+          );
+        });
+
     const title = <PoetName poet={poet} includePeriod />;
     return (
       <div>
@@ -50,6 +55,12 @@ export default class extends React.Component {
           <PoetTabs lang={lang} poet={poet} selected="works" />
           <div className="two-columns" style={{ lineHeight: 1.5 }}>
             {list}
+            <style jsx>{`
+              :global(.nodata) {
+                padding: 30px 0;
+                font-weight: lighter;
+              }
+            `}</style>
           </div>
           <LangSelect lang={lang} />
         </div>
