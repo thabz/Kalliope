@@ -95,7 +95,11 @@ export default class extends React.Component {
     );
 
     const sidebar = <div>{renderedPictures}{renderedNotes}</div>;
-    const table = renderItems(toc);
+    const table = toc.length > 0
+      ? renderItems(toc)
+      : <div className="nodata">
+          <i>Kalliope indeholder endnu ingen tekster fra dette værk.</i>
+        </div>;
     const title = <PoetName poet={poet} includePeriod />;
     return (
       <div>
@@ -136,6 +140,10 @@ export default class extends React.Component {
                 :global(.toc) :global(td) {
                   line-height: 1.7;
                   padding: 0;
+                }
+                :global(.nodata) {
+                  padding: 30px 0;
+                  font-weight: lighter;
                 }
               `}</style>
             </div>
