@@ -1,4 +1,18 @@
+// server.js
+const next = require('next');
+const routes = require('./routes');
 const { createServer } = require('http');
+const dev = process.env.NODE_ENV !== 'production';
+const app = next({ dev });
+const handler = routes.getRequestHandler(app);
+
+app.prepare().then(() => {
+  createServer(handler).listen(3000);
+});
+
+/*
+
+
 const { parse } = require('url');
 const next = require('next');
 const pathMatch = require('path-match');
@@ -6,61 +20,9 @@ const { join } = require('path');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
-const handle = app.getRequestHandler();
-const route = pathMatch();
+const handler = routes.getRequestHandler(app);
 
 const rootStaticFiles = ['/sw.js'];
-
-const routes = [
-  {
-    match: route('/:lang/'),
-    path: '/index',
-  },
-  {
-    match: route('/:lang/poets/:groupBy'),
-    path: '/poets',
-  },
-  {
-    match: route('/:lang/works/:poetId'),
-    path: '/works',
-  },
-  {
-    match: route('/:lang/lines/:poetId/:type'),
-    path: '/lines',
-  },
-  {
-    match: route('/:lang/bio/:poetId'),
-    path: '/bio',
-  },
-  {
-    match: route('/:lang/bibliography/:poetId'),
-    path: '/bibliography',
-  },
-  {
-    match: route('/:lang/work/:poetId/:workId'),
-    path: '/work',
-  },
-  {
-    match: route('/:lang/text/:textId'),
-    path: '/text',
-  },
-  {
-    match: route('/:lang/keywords'),
-    path: '/keywords',
-  },
-  {
-    match: route('/:lang/keyword/:keywordId'),
-    path: '/keyword',
-  },
-  {
-    match: route('/:lang/dict/:dictItemId'),
-    path: '/dictitem',
-  },
-  {
-    match: route('/:lang/dict'),
-    path: '/dict',
-  },
-];
 
 app.prepare().then(() => {
   createServer((req, res) => {
@@ -89,3 +51,4 @@ app.prepare().then(() => {
     console.log('> Ready on http://localhost:3000');
   });
 });
+*/

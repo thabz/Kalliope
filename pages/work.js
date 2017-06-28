@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '../routes';
 import Head from '../components/head';
 import Nav from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
@@ -70,7 +70,7 @@ export default class extends React.Component {
           );
         } else if (type === 'text' && id != null) {
           const url = Links.textURL(lang, id);
-          const linkedTitle = <Link href={url}><a>{title}</a></Link>;
+          const linkedTitle = <Link route={url}><a>{title}</a></Link>;
           return (
             <tr key={id}>
               <td className="num">{prefix}</td><td>{linkedTitle}</td>

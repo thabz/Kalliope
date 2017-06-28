@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '../routes';
 import Head from '../components/head';
 import Nav from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
@@ -54,7 +54,7 @@ export default class extends React.Component {
     const sidebar = <div><FootnoteList />{renderedPictures}</div>;
     const body = <TextContent contentHtml={keyword.content_html} lang={lang} />;
     const navbar = [
-      <Link as="/keywords" href={Links.keywordsURL(lang)}>
+      <Link route={Links.keywordsURL(lang)}>
         <a>Nøgleord</a>
       </Link>,
     ];

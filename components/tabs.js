@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '../routes';
 import * as Links from './links.js';
 import type { Lang, Poet } from '../pages/helpers/types.js';
 
@@ -16,7 +16,7 @@ export default class Tabs extends React.Component {
       const className = item.id === selected ? 'tab selected' : 'tab';
       return (
         <div className={className} key={item.url}>
-          <Link href={item.url}><a><h2>{item.title}</h2></a></Link>
+          <Link route={item.url}><a><h2>{item.title}</h2></a></Link>
         </div>
       );
     });

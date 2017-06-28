@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '../routes';
 var DOMParser = require('xmldom').DOMParser;
 
 import type { Text, Lang, TextContentOptions } from '../pages/helpers/types.js';
@@ -43,28 +43,28 @@ export default class TextContent extends React.Component {
     if (node.hasAttribute('person')) {
       const poetId = node.getAttribute('person');
       return (
-        <Link href={Links.poetURL(lang, poetId)}>
+        <Link route={Links.poetURL(lang, poetId)}>
           <a>{this.handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('poet')) {
       const poetId = node.getAttribute('poet');
       return (
-        <Link href={Links.poetURL(lang, poetId)}>
+        <Link route={Links.poetURL(lang, poetId)}>
           <a>{this.handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('poem')) {
       const textId = node.getAttribute('poem');
       return (
-        <Link href={Links.textURL(lang, textId)}>
+        <Link route={Links.textURL(lang, textId)}>
           <a>{this.handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('keyword')) {
       const keywordId = node.getAttribute('keyword');
       return (
-        <Link href={Links.keywordURL(lang, keywordId)}>
+        <Link route={Links.keywordURL(lang, keywordId)}>
           <a>
             {this.handle_nodes(node.childNodes)}
           </a>
@@ -73,7 +73,7 @@ export default class TextContent extends React.Component {
     } else if (node.hasAttribute('dict')) {
       const keywordId = node.getAttribute('dict');
       return (
-        <Link href={Links.dictionaryURL(lang, keywordId)}>
+        <Link route={Links.dictionaryURL(lang, keywordId)}>
           <a>
             {this.handle_nodes(node.childNodes)}
           </a>
@@ -84,7 +84,7 @@ export default class TextContent extends React.Component {
       const poetId = parts[0];
       const workId = parts[1];
       return (
-        <Link href={Links.workURL(lang, poetId, workId)}>
+        <Link route={Links.workURL(lang, poetId, workId)}>
           <a>
             {this.handle_nodes(node.childNodes)}
           </a>
@@ -93,14 +93,14 @@ export default class TextContent extends React.Component {
     } else if (node.hasAttribute('href')) {
       const href = node.getAttribute('href');
       return (
-        <Link href={href}>
+        <Link route={href}>
           <a>{this.handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('bible')) {
       const bibleId = node.getAttribute('bible');
       return (
-        <Link href={Links.bibleURL(lang, bibleId)}>
+        <Link route={Links.bibleURL(lang, bibleId)}>
           <a>{this.handle_nodes(node.childNodes)}</a>
         </Link>
       );

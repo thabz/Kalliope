@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Head from './head';
-import Link from 'next/link';
+import { Link } from '../routes';
 import PoetName from './poetname';
 import WorkName from './workname';
 import TextName from './textname';
@@ -22,20 +22,20 @@ export default class Nav extends React.Component {
     const { lang, poet, work, title } = this.props;
     let { links } = this.props;
     const rootLink = (
-      <Link prefetch href={Links.frontPageURL(lang)}><a>Kalliope</a></Link>
+      <Link prefetch route={Links.frontPageURL(lang)}><a>Kalliope</a></Link>
     );
 
     if (!links) {
       const poetsURL = poet
-        ? <Link prefetch href={Links.poetsURL(lang)}><a>Digtere</a></Link>
+        ? <Link prefetch route={Links.poetsURL(lang)}><a>Digtere</a></Link>
         : null;
       const poetLink = poet
-        ? <Link prefetch href={Links.poetURL(lang, poet.id)}>
+        ? <Link prefetch route={Links.poetURL(lang, poet.id)}>
             <a><PoetName poet={poet} /></a>
           </Link>
         : null;
       const workLink = work && poet
-        ? <Link prefetch href={Links.workURL(lang, poet.id, work.id)}>
+        ? <Link prefetch route={Links.workURL(lang, poet.id, work.id)}>
             <a>
               <WorkName work={work} />
             </a>

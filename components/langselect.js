@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Head from './head';
-import Link from 'next/link';
+import { Link } from '../routes';
 import * as Links from './links.js';
 import type { Lang } from '../pages/helpers/types.js';
 
@@ -22,7 +22,7 @@ export default class LangSelect extends React.Component {
       <nav>
         {links.map(({ href, label }) =>
           <div key={href}>
-            <Link href={href}><a>{label}</a></Link>
+            <Link route={href}><a>{label}</a></Link>
           </div>
         )}
         <style jsx>{`

@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '../routes';
 import type { SectionForRendering } from '../pages/helpers/types.js';
 import TwoColumns from './twocolumns.js';
 
@@ -15,7 +15,7 @@ export default class SectionedList extends React.Component {
       const { title, items } = group;
       const list = items.map(item => {
         const content = item.url != null
-          ? <Link href={item.url}><a>{item.html}</a></Link>
+          ? <Link route={item.url}><a>{item.html}</a></Link>
           : item.html;
         return <div key={item.id}>{content}</div>;
       });

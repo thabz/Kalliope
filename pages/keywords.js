@@ -2,7 +2,6 @@
 
 import 'isomorphic-fetch';
 import React from 'react';
-import Link from 'next/link';
 import Head from '../components/head';
 import * as Links from '../components/links';
 import Nav from '../components/nav';
