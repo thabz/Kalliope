@@ -11,6 +11,7 @@ import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
 import * as Sorting from './helpers/sorting.js';
+import { createURL } from './helpers/client.js';
 import type {
   Lang,
   Section,
@@ -74,7 +75,7 @@ export default class extends React.Component {
   }: {
     query: { lang: Lang, groupBy: GroupBy },
   }) {
-    const res = await fetch('http://localhost:3000/static/api/poets-dk.json');
+    const res = await fetch(createURL(`/static/api/poets-${lang}.json`));
     const poets: Array<Poet> = await res.json();
     return { lang, groupBy, poets };
   }

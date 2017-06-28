@@ -12,6 +12,7 @@ import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
 import * as Sorting from './helpers/sorting.js';
 import type { Lang, Keyword, SectionForRendering } from './helpers/types.js';
+import { createURL } from './helpers/client.js';
 
 const groupsByLetter = (keywords: Array<Keyword>) => {
   let groups = new Map();
@@ -33,7 +34,7 @@ const groupsByLetter = (keywords: Array<Keyword>) => {
 
 export default class extends React.Component {
   static async getInitialProps({ query: { lang } }: { query: { lang: Lang } }) {
-    const res = await fetch('http://localhost:3000/static/api/keywords.json');
+    const res = await fetch(createURL('/static/api/keywords.json'));
     const keywords: Array<Keyword> = await res.json();
     return { lang, keywords };
   }

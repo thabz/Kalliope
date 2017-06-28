@@ -19,6 +19,7 @@ import * as Links from '../components/links';
 import type { Lang, Keyword } from './helpers/types.js';
 import 'isomorphic-fetch';
 import * as Paths from './helpers/paths.js';
+import { createURL } from './helpers/client.js';
 
 export default class extends React.Component {
   props: {
@@ -32,7 +33,7 @@ export default class extends React.Component {
     query: { lang: Lang, keywordId: string },
   }) {
     const res = await fetch(
-      `http://localhost:3000/static/api/keywords/${keywordId}.json`
+      createURL(`/static/api/keywords/${keywordId}.json`)
     );
     const keyword: Keyword = await res.json();
     return {

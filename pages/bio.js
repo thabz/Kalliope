@@ -12,6 +12,7 @@ import WorkName from '../components/workname.js';
 import TextContent from '../components/textcontent.js';
 import * as Links from '../components/links';
 import type { Lang, Poet, DateWithPlace } from './helpers/types.js';
+import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
 
 class DateAndPlace extends React.Component {
@@ -111,9 +112,7 @@ export default class extends React.Component {
   }: {
     query: { lang: Lang, poetId: string },
   }) {
-    const res = await fetch(
-      `http://localhost:3000/static/api/${poetId}/bio.json`
-    );
+    const res = await fetch(createURL(`/static/api/${poetId}/bio.json`));
     const json: { poet: Poet, content_html: string } = await res.json();
     return { lang, poet: json.poet, content_html: json.content_html };
   }

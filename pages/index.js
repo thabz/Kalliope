@@ -10,6 +10,7 @@ import * as Links from '../components/links';
 import Heading from '../components/heading.js';
 import TextContent from '../components/textcontent.js';
 import type { Lang, NewsItem } from './helpers/types.js';
+import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
 
 export default class extends React.Component {
@@ -22,9 +23,7 @@ export default class extends React.Component {
     if (lang == null) {
       lang = 'da';
     }
-    const res = await fetch(
-      `http://localhost:3000/static/api/news_${lang}.json`
-    );
+    const res = await fetch(createURL(`/static/api/news_${lang}.json`));
     const news: Array<NewsItem> = await res.json();
     return { lang, news };
   }

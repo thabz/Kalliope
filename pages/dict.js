@@ -12,6 +12,7 @@ import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
 import * as Sorting from './helpers/sorting.js';
 import type { Lang, DictItem, SectionForRendering } from './helpers/types.js';
+import { createURL } from './helpers/client.js';
 
 const groupsByLetter = (dictItems: Array<DictItem>) => {
   let groups = new Map();
@@ -33,7 +34,9 @@ const groupsByLetter = (dictItems: Array<DictItem>) => {
 
 export default class extends React.Component {
   static async getInitialProps({ query: { lang } }: { query: { lang: Lang } }) {
-    const res = await fetch('http://localhost:3000/static/api/dict.json');
+    const res = await fetch(
+      createURL('http://localhost:3000/static/api/dict.json')
+    );
     const dictItems: Array<DictItem> = await res.json();
     return { lang, dictItems };
   }

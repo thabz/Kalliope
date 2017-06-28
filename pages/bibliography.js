@@ -11,6 +11,7 @@ import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
 import * as Links from '../components/links';
 import type { Lang, Poet, Work } from './helpers/types.js';
+import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
 
 export default class extends React.Component {
@@ -27,7 +28,7 @@ export default class extends React.Component {
     query: { lang: Lang, poetId: string },
   }) {
     const res = await fetch(
-      `http://localhost:3000/static/api/${poetId}/bibliography.json`
+      createURL(`/static/api/${poetId}/bibliography.json`)
     );
     const json: {
       poet: Poet,

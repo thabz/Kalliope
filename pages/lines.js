@@ -11,6 +11,7 @@ import { PoetTabs } from '../components/tabs.js';
 import SectionedList from '../components/sectionedlist.js';
 import * as Links from '../components/links.js';
 import * as Sorting from './helpers/sorting.js';
+import { createURL } from './helpers/client.js';
 import type {
   LinesPair,
   Section,
@@ -35,9 +36,7 @@ export default class extends React.Component {
   }: {
     query: { lang: Lang, poetId: string, type: LinesType },
   }) {
-    const res = await fetch(
-      `http://localhost:3000/static/api/${poetId}/lines.json`
-    );
+    const res = await fetch(createURL(`/static/api/${poetId}/lines.json`));
     const json: { poet: Poet, lines: Array<LinesPair> } = await res.json();
     return { lang, poet: json.poet, lines: json.lines, type };
   }

@@ -16,6 +16,7 @@ import * as Links from '../components/links';
 import type { Lang, DictItem } from './helpers/types.js';
 import 'isomorphic-fetch';
 import * as Paths from './helpers/paths.js';
+import { createURL } from './helpers/client.js';
 
 export default class extends React.Component {
   props: {
@@ -28,9 +29,7 @@ export default class extends React.Component {
   }: {
     query: { lang: Lang, dictItemId: string },
   }) {
-    const res = await fetch(
-      `http://localhost:3000/static/api/dict/${dictItemId}.json`
-    );
+    const res = await fetch(createURL(`/static/api/dict/${dictItemId}.json`));
     const item: DictItem = await res.json();
     return {
       lang,

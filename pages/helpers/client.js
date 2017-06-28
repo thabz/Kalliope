@@ -1,6 +1,5 @@
 // @flow
 import 'isomorphic-fetch';
-
 import * as Paths from './paths.js';
 import type {
   Lang,
@@ -15,6 +14,17 @@ import type {
   PictureItem,
 } from './types.js';
 
+export const createURL = (path: string): string => {
+  try {
+    let l = eval('document.location');
+    // We're running in the browser
+    return `${l.protocol}//${l.host}${path}`;
+  } catch (error) {
+    // We're running in node.js on the server
+    return `http://localhost:3000${path}`;
+  }
+};
+
 export type FetchWorkResult = {
   poet: Poet,
   work: Work,
@@ -27,7 +37,7 @@ export const work = async (
   workId: WorkId
 ): Promise<FetchWorkResult> => {
   const res = await fetch(
-    `http://localhost:3000/static/api/${poetId}/${workId}-toc.json`
+    createURL(`/static/api/${poetId}/${workId}-toc.json`)
   );
   const json = (await res.json(): Promise<FetchWorkResult>);
   return json;
@@ -38,9 +48,7 @@ type FetchWorksResult = Promise<{
   works: Array<Work>,
 }>;
 export const works = async (poetId: string): FetchWorksResult => {
-  const res = await fetch(
-    `http://localhost:3000/static/api/${poetId}/works.json`
-  );
+  const res = await fetch(createURL(`/static/api/${poetId}/works.json`));
   return (await res.json(): FetchWorksResult);
 };
 
@@ -51,6 +59,6 @@ type FetchTextResult = Promise<{
 }>;
 export const text = async (textId: string): FetchTextResult => {
   const path: string = Paths.textPath(textId);
-  const res = await fetch(`http://localhost:3000/${path}`);
+  const res = await fetch(createURL(`/${path}`));
   return (await res.json(): FetchWorksResult);
 };
