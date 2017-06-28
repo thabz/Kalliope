@@ -34,9 +34,7 @@ const groupsByLetter = (dictItems: Array<DictItem>) => {
 
 export default class extends React.Component {
   static async getInitialProps({ query: { lang } }: { query: { lang: Lang } }) {
-    const res = await fetch(
-      createURL('http://localhost:3000/static/api/dict.json')
-    );
+    const res = await fetch(createURL('/static/api/dict.json'));
     const dictItems: Array<DictItem> = await res.json();
     return { lang, dictItems };
   }
