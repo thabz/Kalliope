@@ -53,7 +53,11 @@ export default class extends React.Component {
     );
     const sidebar = <div><FootnoteList />{renderedPictures}</div>;
     const body = <TextContent contentHtml={keyword.content_html} lang={lang} />;
-    const navbar = [<a href={Links.keywordsURL(lang)}>Nøgleord</a>];
+    const navbar = [
+      <Link as="/keywords" href={Links.keywordsURL(lang)}>
+        <a>Nøgleord</a>
+      </Link>,
+    ];
     const title = keyword.title;
     let author = null;
     if (keyword.author != null) {

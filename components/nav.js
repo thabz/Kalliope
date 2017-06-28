@@ -21,17 +21,25 @@ export default class Nav extends React.Component {
   render() {
     const { lang, poet, work, title } = this.props;
     let { links } = this.props;
-    const rootLink = <a href={Links.frontPageURL(lang)}>Kalliope</a>;
+    const rootLink = (
+      <Link prefetch href={Links.frontPageURL(lang)}><a>Kalliope</a></Link>
+    );
 
     if (!links) {
-      const poetsURL = poet ? <a href={Links.poetsURL(lang)}>Digtere</a> : null;
+      const poetsURL = poet
+        ? <Link prefetch href={Links.poetsURL(lang)}><a>Digtere</a></Link>
+        : null;
       const poetLink = poet
-        ? <a href={Links.poetURL(lang, poet.id)}><PoetName poet={poet} /></a>
+        ? <Link prefetch href={Links.poetURL(lang, poet.id)}>
+            <a><PoetName poet={poet} /></a>
+          </Link>
         : null;
       const workLink = work && poet
-        ? <a href={Links.workURL(lang, poet.id, work.id)}>
-            <WorkName work={work} />
-          </a>
+        ? <Link prefetch href={Links.workURL(lang, poet.id, work.id)}>
+            <a>
+              <WorkName work={work} />
+            </a>
+          </Link>
         : null;
       links = [poetsURL, poetLink, workLink];
     }

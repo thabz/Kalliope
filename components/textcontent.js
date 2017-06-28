@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import Link from 'next/link';
 var DOMParser = require('xmldom').DOMParser;
 
 import type { Text, Lang, TextContentOptions } from '../pages/helpers/types.js';
@@ -42,60 +43,66 @@ export default class TextContent extends React.Component {
     if (node.hasAttribute('person')) {
       const poetId = node.getAttribute('person');
       return (
-        <a href={Links.poetURL(lang, poetId)}>
-          {this.handle_nodes(node.childNodes)}
-        </a>
+        <Link href={Links.poetURL(lang, poetId)}>
+          <a>{this.handle_nodes(node.childNodes)}</a>
+        </Link>
       );
     } else if (node.hasAttribute('poet')) {
       const poetId = node.getAttribute('poet');
       return (
-        <a href={Links.poetURL(lang, poetId)}>
-          {this.handle_nodes(node.childNodes)}
-        </a>
+        <Link href={Links.poetURL(lang, poetId)}>
+          <a>{this.handle_nodes(node.childNodes)}</a>
+        </Link>
       );
     } else if (node.hasAttribute('poem')) {
       const textId = node.getAttribute('poem');
       return (
-        <a href={Links.textURL(lang, textId)}>
-          {this.handle_nodes(node.childNodes)}
-        </a>
+        <Link href={Links.textURL(lang, textId)}>
+          <a>{this.handle_nodes(node.childNodes)}</a>
+        </Link>
       );
     } else if (node.hasAttribute('keyword')) {
       const keywordId = node.getAttribute('keyword');
       return (
-        <a href={Links.keywordURL(lang, keywordId)}>
-          {this.handle_nodes(node.childNodes)}
-        </a>
+        <Link href={Links.keywordURL(lang, keywordId)}>
+          <a>
+            {this.handle_nodes(node.childNodes)}
+          </a>
+        </Link>
       );
     } else if (node.hasAttribute('dict')) {
       const keywordId = node.getAttribute('dict');
       return (
-        <a href={Links.dictionaryURL(lang, keywordId)}>
-          {this.handle_nodes(node.childNodes)}
-        </a>
+        <Link href={Links.dictionaryURL(lang, keywordId)}>
+          <a>
+            {this.handle_nodes(node.childNodes)}
+          </a>
+        </Link>
       );
     } else if (node.hasAttribute('work')) {
       const parts = node.getAttribute('work').split('/');
       const poetId = parts[0];
       const workId = parts[1];
       return (
-        <a href={Links.workURL(lang, poetId, workId)}>
-          {this.handle_nodes(node.childNodes)}
-        </a>
+        <Link href={Links.workURL(lang, poetId, workId)}>
+          <a>
+            {this.handle_nodes(node.childNodes)}
+          </a>
+        </Link>
       );
     } else if (node.hasAttribute('href')) {
       const href = node.getAttribute('href');
       return (
-        <a href={href}>
-          {this.handle_nodes(node.childNodes)}
-        </a>
+        <Link href={href}>
+          <a>{this.handle_nodes(node.childNodes)}</a>
+        </Link>
       );
     } else if (node.hasAttribute('bible')) {
       const bibleId = node.getAttribute('bible');
       return (
-        <a href={Links.bibleURL(lang, bibleId)}>
-          {this.handle_nodes(node.childNodes)}
-        </a>
+        <Link href={Links.bibleURL(lang, bibleId)}>
+          <a>{this.handle_nodes(node.childNodes)}</a>
+        </Link>
       );
     } else {
       return <code>{node.toString()}</code>;

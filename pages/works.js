@@ -40,7 +40,7 @@ export default class extends React.Component {
           const url = `/${lang}/work/${poet.id}/${work.id}`;
           return (
             <div className="list-section-line" key={work.id}>
-              <a href={url}><WorkName work={work} /></a>
+              <Link href={url}><a><WorkName work={work} /></a></Link>
             </div>
           );
         });

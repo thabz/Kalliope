@@ -51,9 +51,9 @@ export default class extends React.Component {
     let sections: Array<SectionForRendering> = [];
 
     groups.forEach(group => {
-      const items = group.items.map(item => {
+      const items = group.items.map((item, i) => {
         return {
-          id: item.id,
+          id: item.id + '.' + i,
           url: Links.dictionaryURL(lang, item.id),
           html: item.title,
         };

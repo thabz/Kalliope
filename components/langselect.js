@@ -20,11 +20,11 @@ export default class LangSelect extends React.Component {
     const { lang } = this.props;
     return (
       <nav>
-        {links.map(({ href, label }) => (
+        {links.map(({ href, label }) =>
           <div key={href}>
-            <a href={href}>{label}</a>
+            <Link href={href}><a>{label}</a></Link>
           </div>
-        ))}
+        )}
         <style jsx>{`
           nav {
             padding-top: 40px;
@@ -41,7 +41,7 @@ export default class LangSelect extends React.Component {
               display: none;
             }
           }
-          `}</style>
+        `}</style>
       </nav>
     );
   }

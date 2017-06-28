@@ -70,7 +70,7 @@ export default class extends React.Component {
           );
         } else if (type === 'text' && id != null) {
           const url = Links.textURL(lang, id);
-          const linkedTitle = <a href={url}>{title}</a>;
+          const linkedTitle = <Link href={url}><a>{title}</a></Link>;
           return (
             <tr key={id}>
               <td className="num">{prefix}</td><td>{linkedTitle}</td>
