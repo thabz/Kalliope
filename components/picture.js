@@ -37,6 +37,7 @@ export default class Picture extends React.Component {
             margin: 0;
           }
           figcaption {
+            margin-top: 8px;
             font-size: 0.8em;
           }
           img {
