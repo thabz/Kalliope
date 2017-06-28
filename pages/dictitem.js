@@ -56,7 +56,9 @@ export default class extends React.Component {
         <div style={{ marginBottom: '10px' }}><b>Frase: </b>{item.phrase}</div>
       );
     }
-    const navbar = [<a href={Links.dictionaryURL(lang)}>Ordbog</a>];
+    const navbar = [
+      <Link href={Links.dictionaryURL(lang)}><a>Ordbog</a></Link>,
+    ];
     const title = item.title;
     return (
       <div>

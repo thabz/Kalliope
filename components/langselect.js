@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Head from './head';
-import Link from 'next/link';
+import { Link } from '../routes';
 import * as Links from './links.js';
 import type { Lang } from '../pages/helpers/types.js';
 
@@ -20,11 +20,11 @@ export default class LangSelect extends React.Component {
     const { lang } = this.props;
     return (
       <nav>
-        {links.map(({ href, label }) => (
+        {links.map(({ href, label }) =>
           <div key={href}>
-            <a href={href}>{label}</a>
+            <Link route={href}><a>{label}</a></Link>
           </div>
-        ))}
+        )}
         <style jsx>{`
           nav {
             padding-top: 40px;
@@ -41,7 +41,7 @@ export default class LangSelect extends React.Component {
               display: none;
             }
           }
-          `}</style>
+        `}</style>
       </nav>
     );
   }

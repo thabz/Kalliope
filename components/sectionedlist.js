@@ -1,6 +1,7 @@
 // @flow
 
 import React from 'react';
+import { Link } from '../routes';
 import type { SectionForRendering } from '../pages/helpers/types.js';
 import TwoColumns from './twocolumns.js';
 
@@ -14,7 +15,7 @@ export default class SectionedList extends React.Component {
       const { title, items } = group;
       const list = items.map(item => {
         const content = item.url != null
-          ? <a href={item.url}>{item.html}</a>
+          ? <Link route={item.url}><a>{item.html}</a></Link>
           : item.html;
         return <div key={item.id}>{content}</div>;
       });
@@ -29,19 +30,17 @@ export default class SectionedList extends React.Component {
       <TwoColumns>
         {renderedGroups}
         <style jsx>{`
-            :global(.list-section) {
-              break-inside: avoid;
-            }
-
-            :global(.list-section), :global(.list-section-line) {
-              line-height: 1.5;
-            }
-            /* Fix vertical aligment layout problem in Safari and Chrome */
-            :global(.list-section:before) {
-              content: '';
-              display: block;
-              height: 1px;
-            }
+          :global(.list-section) {
+            break-inside: avoid;
+          }
+          :global(.list-section), :global(.list-section-line) {
+            line-height: 1.5;
+          } /* Fix vertical aligment layout problem in Safari and Chrome */
+          :global(.list-section:before) {
+            content: '';
+            display: block;
+            height: 1px;
+          }
         `}</style>
       </TwoColumns>
     );

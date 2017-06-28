@@ -2,7 +2,6 @@
 
 import 'isomorphic-fetch';
 import React from 'react';
-import Link from 'next/link';
 import Head from '../components/head';
 import * as Links from '../components/links';
 import Nav from '../components/nav';
@@ -51,9 +50,9 @@ export default class extends React.Component {
     let sections: Array<SectionForRendering> = [];
 
     groups.forEach(group => {
-      const items = group.items.map(item => {
+      const items = group.items.map((item, i) => {
         return {
-          id: item.id,
+          id: item.id + '.' + i,
           url: Links.dictionaryURL(lang, item.id),
           html: item.title,
         };

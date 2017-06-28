@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '../routes';
 import Head from '../components/head';
 import Nav from '../components/nav';
 import LangSelect from '../components/langselect';
@@ -40,7 +40,7 @@ export default class extends React.Component {
           const url = `/${lang}/work/${poet.id}/${work.id}`;
           return (
             <div className="list-section-line" key={work.id}>
-              <a href={url}><WorkName work={work} /></a>
+              <Link route={url}><a><WorkName work={work} /></a></Link>
             </div>
           );
         });
