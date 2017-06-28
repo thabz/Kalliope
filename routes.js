@@ -13,4 +13,5 @@ routes.add('work', '/:lang/work/:poetId/:workId');
 routes.add('text', '/:lang/text/:textId');
 routes.add('keywords', '/:lang/keywords');
 routes.add('keyword', '/:lang/keyword/:keywordId');
+routes.add('dict', '/:lang/dict');
 routes.add('dictitem', '/:lang/dict/:dictItemId');
