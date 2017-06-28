@@ -53,6 +53,7 @@ export default class extends React.Component {
           items: list.map((line, j) => {
             return (
               <div
+                key={j}
                 style={{
                   marginBottom: '5px',
                   marginLeft: '30px',
