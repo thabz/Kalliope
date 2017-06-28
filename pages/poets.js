@@ -75,7 +75,7 @@ export default class extends React.Component {
   }: {
     query: { lang: Lang, groupBy: GroupBy },
   }) {
-    const res = await fetch(createURL(`/static/api/poets-${lang}.json`));
+    const res = await fetch(createURL(`/static/api/poets-dk.json`));
     const poets: Array<Poet> = await res.json();
     return { lang, groupBy, poets };
   }
