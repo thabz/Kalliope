@@ -21,8 +21,16 @@ app.prepare().then(() => {
     } else {
       handler(req, res);
     }
-  }).listen(3000);
+  }).listen(3000, err => {
+    if (err) throw err;
+    console.log('> Ready on http://localhost:3000');
+  });
 });
+
+// Assigning `query` into the params means that we still
+// get the query string passed to our application
+// i.e. /blog/foo?show-comments=true
+//app.render(req, res, r.path, Object.assign(params, query));
 
 /*
 
