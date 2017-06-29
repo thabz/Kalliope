@@ -331,6 +331,12 @@ const works_first_pass = poets => {
       const head = work.get('workhead');
       const title = head.get('title').text();
       const year = head.get('year').text();
+      // Sanity check
+      if (work.attr('author').value() !== poet.id) {
+        throw new Error(
+          `fdirs/${poet.id}/${workId}.xml has wrong author-attribute in <kalliopework>`
+        );
+      }
       collected.works.set(`${poet.id}/${workId}`, {
         title: replaceDashes(title),
         year: year,
