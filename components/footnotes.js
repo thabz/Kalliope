@@ -49,7 +49,7 @@ export class FootnoteList extends Component {
           ol.footnotes {
             padding-left: 1.2em;
           }
-          `}</style>
+        `}</style>
       </ol>
     );
   }
@@ -66,6 +66,10 @@ export class FootnoteContainer extends Component {
   };
   constructor() {
     super();
+    this._footnotes = [];
+  }
+  componentDidMount() {
+    // Reset when mounting. See issue #76.
     this._footnotes = [];
   }
   getChildContext() {
