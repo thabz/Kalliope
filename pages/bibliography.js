@@ -75,7 +75,15 @@ export default class extends React.Component {
             key={g.title}
             className="list-section"
             style={{ marginBottom: '20px' }}>
-            <h3 style={{ columnSpan: 'all' }}>{g.title}</h3>{g.items}
+            <h3 style={{ columnSpan: 'all' }}>{g.title}</h3>
+            {g.items}
+            <style jsx>{`
+              h3 {
+                font-weight: lighter;
+                font-size: 18px;
+                border-bottom: 1px solid black;
+              }
+            `}</style>
           </div>
         );
       });
