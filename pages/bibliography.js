@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Head from '../components/head';
+import Main from '../components/main.js';
 import Nav from '../components/nav';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
@@ -83,7 +84,7 @@ export default class extends React.Component {
     return (
       <div>
         <Head title="Digtere - Kalliope" />
-        <div className="row">
+        <Main>
           <Nav lang={lang} poet={poet} title="Bibliografi" />
           <Heading title={title} subtitle="Bibliografi" />
           <PoetTabs lang={lang} poet={poet} selected="bibliography" />
@@ -91,7 +92,7 @@ export default class extends React.Component {
             {sections}
           </TwoColumns>
           <LangSelect lang={lang} />
-        </div>
+        </Main>
       </div>
     );
   }

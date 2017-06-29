@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Head from '../components/head';
+import Main from '../components/main.js';
 import Nav from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
@@ -123,7 +124,7 @@ export default class extends React.Component {
     return (
       <div>
         <Head title="Digtere - Kalliope" />
-        <div className="row">
+        <Main>
           <Nav lang={lang} poet={poet} title="Værker" />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="bio" />
@@ -134,7 +135,7 @@ export default class extends React.Component {
             <PersonMeta poet={poet} />
           </SidebarSplit>
           <LangSelect lang={lang} />
-        </div>
+        </Main>
       </div>
     );
   }

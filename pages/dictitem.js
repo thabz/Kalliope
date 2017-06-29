@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Head from '../components/head';
+import Main from '../components/main.js';
 import Nav from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
@@ -63,7 +64,7 @@ export default class extends React.Component {
       <div>
         <FootnoteContainer>
           <Head title="Digtere - Kalliope" />
-          <div className="row">
+          <Main>
             <Nav lang={lang} links={navbar} title={item.title} />
             <Heading title={title} />
             <KalliopeTabs lang={lang} selected="dictionary" />
@@ -79,7 +80,7 @@ export default class extends React.Component {
               <div>{sidebar}</div>
             </SidebarSplit>
             <LangSelect lang={lang} />
-          </div>
+          </Main>
         </FootnoteContainer>
       </div>
     );

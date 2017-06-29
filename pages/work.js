@@ -3,6 +3,7 @@
 import React from 'react';
 import { Link } from '../routes';
 import Head from '../components/head';
+import Main from '../components/main.js';
 import Nav from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect.js';
@@ -104,7 +105,7 @@ export default class extends React.Component {
     return (
       <div>
         <Head title="Digtere - Kalliope" />
-        <div className="row">
+        <Main>
           <Nav lang={lang} poet={poet} title={<WorkName work={work} />} />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="works" />
@@ -150,7 +151,7 @@ export default class extends React.Component {
             <div>{sidebar}</div>
           </SidebarSplit>
           <LangSelect lang={lang} />
-        </div>
+        </Main>
       </div>
     );
   }

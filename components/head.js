@@ -41,7 +41,6 @@ export default class Head extends React.Component {
         <meta property="og:image" content={ogImage || defaultOGImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <link rel="stylesheet" type="text/css" href="/static/index.css" />
       </NextHead>
     );
   }
