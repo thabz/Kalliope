@@ -207,7 +207,7 @@ const handle_work = work => {
       titleToUse = entities
         .decodeHTML(titleToUse)
         .replace('<toctitle>', '')
-        .replace('<toctitle/>', '');
+        .replace('</toctitle>', '');
       const parts = titleToUse.match(/<num>([^<]*)<\/num>(.*)$/);
       if (parts != null) {
         return {
