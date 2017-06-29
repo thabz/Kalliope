@@ -5,13 +5,7 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('kalliope').then(cache => {
       return cache
-        .addAll([
-          '/',
-          '/da/poets/name',
-          '/da/poets/year',
-          '/static/index.css',
-          '/static/register-sw.js',
-        ])
+        .addAll(['/static/index.css', '/static/register-sw.js'])
         .then(() => self.skipWaiting());
     })
   );
