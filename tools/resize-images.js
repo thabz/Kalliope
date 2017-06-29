@@ -16,6 +16,9 @@ const resize = (inputfile, outputfile, maxWidth) => {
     });
 };
 
+const pipeJoinedExts = CommonData.availableImageFormats.join('|');
+const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
+
 const handleDirRecursive = dirname => {
   fs.readdirSync(dirname).forEach(filename => {
     const fullFilename = path.join(dirname, filename);
@@ -25,13 +28,18 @@ const handleDirRecursive = dirname => {
     } else if (
       stats.isFile() &&
       filename.endsWith('.jpg') &&
-      !filename.match(/-w\d+.jpg$/)
+      !skipRegExps.test(filename)
     ) {
-      CommonData.availableImageWidths.forEach(width => {
-        const outputfile = fullFilename.replace(/.jpg$/, `-w${width}.jpg`);
-        if (!fs.existsSync(outputfile)) {
-          resize(fullFilename, outputfile, width);
-        }
+      CommonData.availableImageFormats.forEach((ext, i) => {
+        CommonData.availableImageWidths.forEach(width => {
+          const outputfile = fullFilename.replace(
+            /\.jpg$/,
+            `-w${width}.${ext}`
+          );
+          if (!fs.existsSync(outputfile)) {
+            resize(fullFilename, outputfile, width);
+          }
+        });
       });
     }
   });

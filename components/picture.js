@@ -14,17 +14,28 @@ export default class Picture extends React.Component {
     const { picture, lang, srcPrefix } = this.props;
 
     const src = (srcPrefix || '') + '/' + picture.src;
-    const srcset = CommonData.availableImageWidths
-      .map(width => {
-        const filename = src.replace(/.jpg$/, `-w${width}.jpg`);
-        return `${filename} ${width}w`;
-      })
-      .join(', ');
     const sizes = '(max-width: 700px) 250px, 48vw';
+    let srcsets = {};
+    const sources = CommonData.availableImageFormats.map(ext => {
+      const srcset = CommonData.availableImageWidths
+        .map(width => {
+          const filename = src.replace(/.jpg$/, `-w${width}.${ext}`);
+          return `${filename} ${width}w`;
+        })
+        .join(', ');
+      srcsets[ext] = srcset;
+      const type = ext !== 'jpg' ? `image/${ext}` : '';
+      return <source key={ext} type={type} srcSet={srcset} sizes={sizes} />;
+    });
+    // Nedenstående <img> burde ikke have setSet og sizes sat, men Safari virker
+    // ikke uden. //  srcSet={srcsets['jpg']} sizes={sizes}
     return (
       <div className="sidebar-picture">
         <figure>
-          <img src={src} srcSet={srcset} sizes={sizes} width="100%" />
+          <picture>
+            {sources}
+            <img src={src} width="100%" />
+          </picture>
           <figcaption>
             <TextContent contentHtml={picture.content_html} lang={lang} />
           </figcaption>
