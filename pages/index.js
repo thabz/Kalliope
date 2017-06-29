@@ -58,7 +58,7 @@ export default class extends React.Component {
 
     return (
       <div>
-        <Head title="Digtere - Kalliope" />
+        <Head headTitle="Kalliope" />
         <Main>
           <Nav lang="da" />
           <Heading title="Kalliope" />

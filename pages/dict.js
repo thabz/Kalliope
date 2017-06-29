@@ -66,9 +66,9 @@ export default class extends React.Component {
 
     return (
       <div>
-        <Head title="Ordbog - Kalliope" />
+        <Head headTitle="Ordbog - Kalliope" />
         <Main>
-          <Nav lang={lang} title="Nøgleord" />
+          <Nav lang={lang} title="Ordbog" />
           <Heading title="Ordbog" />
           <KalliopeTabs lang={lang} selected="dictionary" />
           {renderedGroups}

@@ -69,10 +69,11 @@ export default class extends React.Component {
         </div>
       );
     }
+    const headTitle = `${keyword.title} - Kalliope`;
     return (
       <div>
         <FootnoteContainer>
-          <Head title="Digtere - Kalliope" />
+          <Head headTitle={headTitle} />
           <Main>
             <Nav lang={lang} links={navbar} title={keyword.title} />
             <Heading title={title} />

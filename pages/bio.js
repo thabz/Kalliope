@@ -8,7 +8,7 @@ import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
-import PoetName from '../components/poetname.js';
+import PoetName, { poetNameString } from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import TextContent from '../components/textcontent.js';
 import * as Links from '../components/links';
@@ -121,9 +121,10 @@ export default class extends React.Component {
   render() {
     const { lang, poet, content_html } = this.props;
     const title = <PoetName poet={poet} includePeriod />;
+    const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
     return (
       <div>
-        <Head title="Digtere - Kalliope" />
+        <Head headTitle={headTitle} />
         <Main>
           <Nav lang={lang} poet={poet} title="Værker" />
           <Heading title={title} subtitle="Værker" />

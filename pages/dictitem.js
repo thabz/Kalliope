@@ -60,10 +60,11 @@ export default class extends React.Component {
       <Link href={Links.dictionaryURL(lang)}><a>Ordbog</a></Link>,
     ];
     const title = item.title;
+    const headTitle = `${item.title} - Kalliope`;
     return (
       <div>
         <FootnoteContainer>
-          <Head title="Digtere - Kalliope" />
+          <Head headTitle={headTitle} />
           <Main>
             <Nav lang={lang} links={navbar} title={item.title} />
             <Heading title={title} />

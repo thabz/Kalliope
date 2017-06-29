@@ -66,7 +66,7 @@ export default class extends React.Component {
 
     return (
       <div>
-        <Head title="Nøgleord - Kalliope" />
+        <Head headTitle="Nøgleord - Kalliope" />
         <Main>
           <Nav lang={lang} title="Nøgleord" />
           <Heading title="Nøgleord" />

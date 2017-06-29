@@ -10,8 +10,8 @@ import LangSelect from '../components/langselect.js';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
-import PoetName from '../components/poetname.js';
-import WorkName from '../components/workname.js';
+import PoetName, { poetNameString } from '../components/poetname.js';
+import WorkName, { workTitleString } from '../components/workname.js';
 import Note from '../components/note.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import * as Links from '../components/links';
@@ -102,9 +102,12 @@ export default class extends React.Component {
           <i>Kalliope indeholder endnu ingen tekster fra dette værk.</i>
         </div>;
     const title = <PoetName poet={poet} includePeriod />;
+    const headTitle = `${workTitleString(work)} - ${poetNameString(
+      poet
+    )} - Kalliope`;
     return (
       <div>
-        <Head title="Digtere - Kalliope" />
+        <Head headTitle={headTitle} />
         <Main>
           <Nav lang={lang} poet={poet} title={<WorkName work={work} />} />
           <Heading title={title} subtitle="Værker" />

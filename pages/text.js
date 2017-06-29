@@ -111,16 +111,21 @@ export default class extends React.Component {
     );
 
     const title = <PoetName poet={poet} includePeriod />;
-    const headTitle =
+    const ogTitle =
       poetNameString(poet, false, true) +
       ': »' +
       textTitleString(text) +
       '« fra ' +
       workTitleString(work);
+    const headTitle =
+      textTitleString(text) +
+      ' - ' +
+      poetNameString(poet, false, false) +
+      ' - Kalliope';
     return (
       <div>
         <FootnoteContainer>
-          <Head title={headTitle} />
+          <Head headTitle={headTitle} ogTitle={ogTitle} />
           <Main>
             <Nav
               lang={lang}
