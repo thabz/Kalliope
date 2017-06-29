@@ -140,6 +140,7 @@ export default class extends React.Component {
                   opacity: 0.5;
                   white-space: nowrap;
                   padding-right: 5px;
+                  vertical-align: top;
                 }
                 :global(.toc) :global(td) {
                   line-height: 1.7;
