@@ -14,6 +14,7 @@ export default class Picture extends React.Component {
     const { picture, lang, srcPrefix } = this.props;
 
     const src = (srcPrefix || '') + '/' + picture.src;
+    const fallbackSrc = src.replace(/.jpg$/, CommonData.fallbackImagePostfix);
     const sizes = '(max-width: 700px) 250px, 48vw';
     let srcsets = {};
     const sources = CommonData.availableImageFormats.map(ext => {
@@ -27,14 +28,12 @@ export default class Picture extends React.Component {
       const type = ext !== 'jpg' ? `image/${ext}` : '';
       return <source key={ext} type={type} srcSet={srcset} sizes={sizes} />;
     });
-    // Nedenstående <img> burde ikke have setSet og sizes sat, men Safari virker
-    // ikke uden. //  srcSet={srcsets['jpg']} sizes={sizes}
     return (
       <div className="sidebar-picture">
         <figure>
           <picture>
             {sources}
-            <img src={src} width="100%" />
+            <img src={fallbackSrc} width="100%" />
           </picture>
           <figcaption>
             <TextContent contentHtml={picture.content_html} lang={lang} />
