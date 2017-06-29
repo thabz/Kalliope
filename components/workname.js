@@ -19,7 +19,16 @@ export default class WorkName extends React.Component {
       const className = i === 0 ? 'title' : 'year';
       return p ? <span key={i} className={className}>{p} </span> : null;
     });
-    return <span className="workname">{parts}</span>;
+    return (
+      <span className="workname">
+        {parts}
+        <style jsx>{`
+          .workname :global(.year) {
+            opacity: 0.5;
+          }
+        `}</style>
+      </span>
+    );
   }
 }
 

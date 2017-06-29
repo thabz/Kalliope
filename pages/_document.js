@@ -19,6 +19,23 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
           <script src="/static/register-sw.js" />
+          <style jsx>{`
+            @media print {
+              :global(a) {
+                color: black;
+              }
+            }
+            :global(a) {
+              color: #067df7;
+              color: rgb(139, 56, 65);
+              text-decoration: none;
+            }
+            body {
+              box-sizing: border-box;
+              font-size: 14px;
+              height: 150px;
+            }
+          `}</style>
         </body>
       </html>
     );
