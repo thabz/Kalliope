@@ -8,7 +8,7 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handler = routes.getRequestHandler(app);
 
-const rootStaticFiles = ['/sw.js'];
+const rootStaticFiles = ['/sw.js', '/favicon.ico'];
 
 app.prepare().then(() => {
   createServer((req, res) => {
