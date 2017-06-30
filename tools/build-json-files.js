@@ -395,6 +395,26 @@ const works_second_pass = collected_poets => {
     let json = JSON.stringify(objectToWrite, null, 2);
     writeJSON(`static/api/${poetId}/works.json`, objectToWrite);
 
+    // Detect firstlines and titles that are shared between multiple
+    // poems. Mark these with non_unique_firstline and non_unique_indextitle.
+    let counts = {
+      firstlines: {},
+      titles: {},
+    };
+    collectedLines.forEach(pair => {
+      counts.titles[pair.title] = (counts.titles[pair.title] || 0) + 1;
+      counts.firstlines[pair.firstline] =
+        (counts.firstlines[pair.firstline] || 0) + 1;
+    });
+    collectedLines = collectedLines.map(pair => {
+      if (pair.title != null && counts.titles[pair.title] > 1) {
+        pair.non_unique_indextitle = true;
+      }
+      if (pair.firstline != null && counts.firstlines[pair.firstline] > 1) {
+        pair.non_unique_firstline = true;
+      }
+      return pair;
+    });
     const linesToWrite = {
       poet: collected_poets.get(poetId),
       lines: collectedLines,
