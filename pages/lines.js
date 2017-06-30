@@ -45,13 +45,18 @@ export default class extends React.Component {
   groupLines(lines: Array<LinesPair>): Array<Section<LinesPair>> {
     let groups: Map<string, Array<LinesPair>> = new Map();
     lines.forEach(linePair => {
-      const line = this.props.type === 'titles'
-        ? linePair.title
-        : linePair.firstline;
+      let line, alternative;
+      if (this.props.type === 'titles') {
+        line = linePair.title;
+        alternative = linePair.firstline;
+      } else {
+        line = linePair.firstline;
+        alternative = linePair.title;
+      }
       if (line == null || line.length == 0) {
         return;
       }
-      linePair['sortBy'] = line;
+      linePair['sortBy'] = line + alternative;
       let letter: string = line[0];
       if (line.startsWith('Aa')) {
         letter = 'Å';
@@ -81,11 +86,22 @@ export default class extends React.Component {
     groups.forEach(group => {
       const items = group.items.map(lines => {
         const url = Links.textURL(lang, lines.id);
-        const line = lines[type === 'titles' ? 'title' : 'firstline'];
+        let line = lines[type === 'titles' ? 'title' : 'firstline'];
+        let alternative = lines[type === 'titles' ? 'firstline' : 'title'];
+        let renderedAlternative = null;
+        let isNonUnique =
+          lines[
+            type === 'titles' ? 'non_unique_indextitle' : 'non_unique_firstline'
+          ];
+        if (isNonUnique && alternative != null) {
+          renderedAlternative = (
+            <span style={{ opacity: 0.5 }}>{' '}[{alternative}]</span>
+          );
+        }
         return {
           id: lines.id,
           url: url,
-          html: <span>{line}</span>,
+          html: <span>{line}{renderedAlternative}</span>,
         };
       });
       sections.push({ title: group.title, items });

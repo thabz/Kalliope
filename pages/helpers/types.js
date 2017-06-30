@@ -44,6 +44,8 @@ export type LinesPair = {
   id: string,
   title: string,
   firstline: string,
+  non_unique_indextitle?: boolean,
+  non_unique_firstline?: boolean,
   sortBy: string,
 };
 
