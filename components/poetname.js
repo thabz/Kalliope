@@ -65,7 +65,17 @@ export default class PoetName extends React.Component {
     } else if (p0) {
       pp = p0;
     }
-    return <span className="poetname">{pp}</span>;
+    return (
+      <span className="poetname">
+        {pp}
+        <style jsx>{`
+          .poetname :global(.period) {
+            opacity: 0.5;
+          }
+        `}</style>
+
+      </span>
+    );
   }
 }
 

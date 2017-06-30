@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Head from '../components/head';
+import Main from '../components/main.js';
 import { KalliopeTabs } from '../components/tabs.js';
 import LangSelect from '../components/langselect';
 import Nav from '../components/nav';
@@ -57,8 +58,8 @@ export default class extends React.Component {
 
     return (
       <div>
-        <Head title="Digtere - Kalliope" />
-        <div className="row">
+        <Head headTitle="Kalliope" />
+        <Main>
           <Nav lang="da" />
           <Heading title="Kalliope" />
           <KalliopeTabs lang={lang} selected="index" />
@@ -69,7 +70,7 @@ export default class extends React.Component {
             <div />
           </SidebarSplit>
           <LangSelect lang={lang} />
-        </div>
+        </Main>
       </div>
     );
   }

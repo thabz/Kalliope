@@ -41,6 +41,11 @@ export default class SectionedList extends React.Component {
             display: block;
             height: 1px;
           }
+          :global(.list-section) :global(h3) {
+            font-weight: lighter;
+            font-size: 18px;
+            border-bottom: 1px solid black;
+          }
         `}</style>
       </TwoColumns>
     );

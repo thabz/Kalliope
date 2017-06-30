@@ -193,14 +193,17 @@ const handle_work = work => {
       const firstline = head.get('firstline')
         ? head.get('firstline').text()
         : null;
-      const toctitle = head.get('toctitle')
+      let toctitle = head.get('toctitle')
         ? head.get('toctitle').toString()
         : null;
+      if (toctitle === '<toctitle/>') {
+        console.log(
+          `${poetId}/${workId}.xml has superfluous empty <toctitle/>`
+        );
+        toctitle = null;
+      }
       const title = head.get('title') ? head.get('title').text() : null;
       let titleToUse = toctitle || title || firstline;
-      if (titleToUse == null) {
-        return null;
-      }
       titleToUse = entities
         .decodeHTML(titleToUse)
         .replace('<toctitle>', '')

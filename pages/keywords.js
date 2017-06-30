@@ -3,6 +3,7 @@
 import 'isomorphic-fetch';
 import React from 'react';
 import Head from '../components/head';
+import Main from '../components/main.js';
 import * as Links from '../components/links';
 import Nav from '../components/nav';
 import LangSelect from '../components/langselect.js';
@@ -65,14 +66,14 @@ export default class extends React.Component {
 
     return (
       <div>
-        <Head title="Nøgleord - Kalliope" />
-        <div className="row">
+        <Head headTitle="Nøgleord - Kalliope" />
+        <Main>
           <Nav lang={lang} title="Nøgleord" />
           <Heading title="Nøgleord" />
           <KalliopeTabs lang={lang} selected="keywords" />
           {renderedGroups}
           <LangSelect lang={lang} />
-        </div>
+        </Main>
       </div>
     );
   }

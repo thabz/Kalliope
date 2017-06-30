@@ -2,12 +2,13 @@
 
 import React from 'react';
 import Head from '../components/head';
+import Main from '../components/main.js';
 import Nav from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
-import PoetName from '../components/poetname.js';
+import PoetName, { poetNameString } from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import TextContent from '../components/textcontent.js';
 import * as Links from '../components/links';
@@ -120,10 +121,11 @@ export default class extends React.Component {
   render() {
     const { lang, poet, content_html } = this.props;
     const title = <PoetName poet={poet} includePeriod />;
+    const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
     return (
       <div>
-        <Head title="Digtere - Kalliope" />
-        <div className="row">
+        <Head headTitle={headTitle} />
+        <Main>
           <Nav lang={lang} poet={poet} title="Værker" />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="bio" />
@@ -134,7 +136,7 @@ export default class extends React.Component {
             <PersonMeta poet={poet} />
           </SidebarSplit>
           <LangSelect lang={lang} />
-        </div>
+        </Main>
       </div>
     );
   }

@@ -3,14 +3,15 @@
 import React from 'react';
 import { Link } from '../routes';
 import Head from '../components/head';
+import Main from '../components/main.js';
 import Nav from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect.js';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
-import PoetName from '../components/poetname.js';
-import WorkName from '../components/workname.js';
+import PoetName, { poetNameString } from '../components/poetname.js';
+import WorkName, { workTitleString } from '../components/workname.js';
 import Note from '../components/note.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import * as Links from '../components/links';
@@ -101,10 +102,13 @@ export default class extends React.Component {
           <i>Kalliope indeholder endnu ingen tekster fra dette værk.</i>
         </div>;
     const title = <PoetName poet={poet} includePeriod />;
+    const headTitle = `${workTitleString(work)} - ${poetNameString(
+      poet
+    )} - Kalliope`;
     return (
       <div>
-        <Head title="Digtere - Kalliope" />
-        <div className="row">
+        <Head headTitle={headTitle} />
+        <Main>
           <Nav lang={lang} poet={poet} title={<WorkName work={work} />} />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="works" />
@@ -136,6 +140,7 @@ export default class extends React.Component {
                   opacity: 0.5;
                   white-space: nowrap;
                   padding-right: 5px;
+                  vertical-align: top;
                 }
                 :global(.toc) :global(td) {
                   line-height: 1.7;
@@ -150,7 +155,7 @@ export default class extends React.Component {
             <div>{sidebar}</div>
           </SidebarSplit>
           <LangSelect lang={lang} />
-        </div>
+        </Main>
       </div>
     );
   }

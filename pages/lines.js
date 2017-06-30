@@ -2,10 +2,11 @@
 
 import React from 'react';
 import Head from '../components/head';
+import Main from '../components/main.js';
 import Nav from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import Heading from '../components/heading.js';
-import PoetName from '../components/poetname.js';
+import PoetName, { poetNameString } from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import { PoetTabs } from '../components/tabs.js';
 import SectionedList from '../components/sectionedlist.js';
@@ -92,10 +93,11 @@ export default class extends React.Component {
     let renderedGroups = <SectionedList sections={sections} />;
 
     const title = <PoetName poet={poet} includePeriod />;
+    const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
     return (
       <div>
-        <Head title="Digtere - Kalliope" />
-        <div className="row">
+        <Head headTitle={headTitle} ogTitle={headTitle} />
+        <Main>
           <Nav
             lang={lang}
             poet={poet}
@@ -105,8 +107,7 @@ export default class extends React.Component {
           <PoetTabs lang={lang} poet={poet} selected={type} />
           {renderedGroups}
           <LangSelect lang={lang} />
-
-        </div>
+        </Main>
       </div>
     );
   }

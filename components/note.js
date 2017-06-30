@@ -15,15 +15,15 @@ export default class Note extends React.Component {
       <div className="sidebar-note">
         <TextContent contentHtml={note.content_html} lang={lang} />
         <style jsx>{`
-              div.sidebar-note {
-                margin-bottom: 30px;
-              }
-              @media print {
-                div.sidebar-note {
-                  margin-bottom: 10px;
-                }
-              }
-          `}</style>
+          div.sidebar-note {
+            margin-bottom: 10px;
+          }
+          @media print {
+            div.sidebar-note {
+              margin-bottom: 10px;
+            }
+          }
+        `}</style>
       </div>
     );
   }

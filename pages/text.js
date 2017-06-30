@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Head from '../components/head';
+import Main from '../components/main.js';
 import Nav from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
@@ -110,17 +111,22 @@ export default class extends React.Component {
     );
 
     const title = <PoetName poet={poet} includePeriod />;
-    const headTitle =
+    const ogTitle =
       poetNameString(poet, false, true) +
       ': »' +
       textTitleString(text) +
       '« fra ' +
       workTitleString(work);
+    const headTitle =
+      textTitleString(text) +
+      ' - ' +
+      poetNameString(poet, false, false) +
+      ' - Kalliope';
     return (
       <div>
         <FootnoteContainer>
-          <Head title={headTitle} />
-          <div className="row">
+          <Head headTitle={headTitle} ogTitle={ogTitle} />
+          <Main>
             <Nav
               lang={lang}
               poet={poet}
@@ -149,7 +155,7 @@ export default class extends React.Component {
               <div>{sidebar}</div>
             </SidebarSplit>
             <LangSelect lang={lang} />
-          </div>
+          </Main>
         </FootnoteContainer>
       </div>
     );

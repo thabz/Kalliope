@@ -64,7 +64,7 @@ export default class Tabs extends React.Component {
             color: black;
           }
           .tabs > :global(.tab) :global(a) {
-            color: #808080;
+            color: #707070;
           }
           @media (max-width: 800px) {
             .tabs > :global(.tab) :global(h2) {

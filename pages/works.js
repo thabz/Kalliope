@@ -3,11 +3,12 @@
 import React from 'react';
 import { Link } from '../routes';
 import Head from '../components/head';
+import Main from '../components/main.js';
 import Nav from '../components/nav';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
-import PoetName from '../components/poetname.js';
+import PoetName, { poetNameString } from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
@@ -46,10 +47,11 @@ export default class extends React.Component {
         });
 
     const title = <PoetName poet={poet} includePeriod />;
+    const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
     return (
       <div>
-        <Head title="Digtere - Kalliope" />
-        <div className="row">
+        <Head headTitle={headTitle} />
+        <Main>
           <Nav lang={lang} poet={poet} title="Værker" />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="works" />
@@ -63,7 +65,7 @@ export default class extends React.Component {
             `}</style>
           </div>
           <LangSelect lang={lang} />
-        </div>
+        </Main>
       </div>
     );
   }

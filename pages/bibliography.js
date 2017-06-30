@@ -2,11 +2,12 @@
 
 import React from 'react';
 import Head from '../components/head';
+import Main from '../components/main.js';
 import Nav from '../components/nav';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
-import PoetName from '../components/poetname.js';
+import PoetName, { poetNameString } from '../components/poetname.js';
 import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
 import * as Links from '../components/links';
@@ -74,16 +75,25 @@ export default class extends React.Component {
             key={g.title}
             className="list-section"
             style={{ marginBottom: '20px' }}>
-            <h3 style={{ columnSpan: 'all' }}>{g.title}</h3>{g.items}
+            <h3 style={{ columnSpan: 'all' }}>{g.title}</h3>
+            {g.items}
+            <style jsx>{`
+              h3 {
+                font-weight: lighter;
+                font-size: 18px;
+                border-bottom: 1px solid black;
+              }
+            `}</style>
           </div>
         );
       });
 
     const title = <PoetName poet={poet} includePeriod />;
+    const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
     return (
       <div>
-        <Head title="Digtere - Kalliope" />
-        <div className="row">
+        <Head headTitle={headTitle} />
+        <Main>
           <Nav lang={lang} poet={poet} title="Bibliografi" />
           <Heading title={title} subtitle="Bibliografi" />
           <PoetTabs lang={lang} poet={poet} selected="bibliography" />
@@ -91,7 +101,7 @@ export default class extends React.Component {
             {sections}
           </TwoColumns>
           <LangSelect lang={lang} />
-        </div>
+        </Main>
       </div>
     );
   }
