@@ -188,7 +188,9 @@ const build_poets_json = () => {
           fs.existsSync(`fdirs/${id}/bibliography-primary.xml`) ||
             fs.existsSync(`fdirs/${id}/bibliography-secondary.xml`),
         has_works: worksArray.length > 0,
-        has_biography: fs.existsSync(`fdirs/${id}/bio.xml`),
+        has_biography:
+          fs.existsSync(`fdirs/${id}/bio.xml`) ||
+            fs.existsSync(`fdirs/${id}/events.xml`),
         workIds: worksArray,
       };
       list.push(poet);
