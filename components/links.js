@@ -4,19 +4,16 @@ export const frontPageURL = (lang: string = 'da') => {
   return `/${lang}/`;
 };
 
-export const workURL = (
-  lang: string = 'da',
-  poetId: string,
-  workId: string
-) => {
+export const workURL = (lang: Lang = 'da', poetId: string, workId: string) => {
   return `/${lang}/work/${poetId}/${workId}`;
 };
 
 export const poetsURL = (
   lang: string = 'da',
-  groupBy: 'name' | 'year' = 'name'
+  groupBy: 'name' | 'year' = 'name',
+  country: string = 'dk'
 ) => {
-  return `/${lang}/poets/${groupBy}`;
+  return `/${lang}/poets/${country}/${groupBy}`;
 };
 
 export const poetURL = (lang: string = 'da', poetId: string) => {

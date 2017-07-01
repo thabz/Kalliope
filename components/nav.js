@@ -27,7 +27,9 @@ export default class Nav extends React.Component {
 
     if (!links) {
       const poetsURL = poet
-        ? <Link prefetch route={Links.poetsURL(lang)}><a>Digtere</a></Link>
+        ? <Link prefetch route={Links.poetsURL(lang, 'name', poet.country)}>
+            <a>Digtere</a>
+          </Link>
         : null;
       const poetLink = poet
         ? <Link prefetch route={Links.poetURL(lang, poet.id)}>

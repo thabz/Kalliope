@@ -16,3 +16,62 @@ module.exports.availableImageWidths = [
 module.exports.availableImageFormats = ['webp', 'jpg'];
 
 module.exports.fallbackImagePostfix = '-w800.jpg';
+
+module.exports.countries = [
+  {
+    code: 'dk',
+    adjective: {
+      da: 'danske',
+      en: 'Danish',
+    },
+  },
+  {
+    code: 'gb',
+    adjective: {
+      da: 'engelske',
+      en: 'English',
+    },
+  },
+  {
+    code: 'de',
+    adjective: {
+      da: 'tyske',
+      en: 'German',
+    },
+  },
+  {
+    code: 'fr',
+    adjective: {
+      da: 'franske',
+      en: 'French',
+    },
+  },
+  {
+    code: 'se',
+    adjective: {
+      da: 'svenske',
+      en: 'Swedish',
+    },
+  },
+  {
+    code: 'no',
+    adjective: {
+      da: 'norske',
+      en: 'Norwegian',
+    },
+  },
+  {
+    code: 'it',
+    adjective: {
+      da: 'italienske',
+      en: 'Italian',
+    },
+  },
+  {
+    code: 'us',
+    adjective: {
+      da: 'amerikanske',
+      en: 'North American',
+    },
+  },
+];

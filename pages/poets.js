@@ -4,6 +4,7 @@ import 'isomorphic-fetch';
 import React from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
+import { Link } from '../routes';
 import * as Links from '../components/links';
 import Nav from '../components/nav';
 import LangSelect from '../components/langselect.js';
@@ -12,9 +13,12 @@ import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
 import * as Sorting from './helpers/sorting.js';
+import * as Strings from './helpers/strings.js';
+import CommonData from '../pages/helpers/commondata.js';
 import { createURL } from './helpers/client.js';
 import type {
   Lang,
+  Country,
   Section,
   Poet,
   SortReturn,
@@ -70,29 +74,69 @@ const groupsByYear = (poets: Array<Poet>) => {
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
+class CountryPicker extends React.Component {
+  props: {
+    lang: Lang,
+    selectedCountry: Country,
+    selectedGroupBy: GroupBy,
+    style: any,
+  };
+  render() {
+    const { lang, selectedCountry, selectedGroupBy, style } = this.props;
+    const items = CommonData.countries.map(country => {
+      const url = Links.poetsURL(lang, selectedGroupBy, country.code);
+      const adj = country.adjective[lang] + ' ';
+      if (country.code === selectedCountry) {
+        return <b key={country.code}>{adj}</b>;
+      } else {
+        return (
+          <Link route={url} key={country.code}>
+            <a>{adj}</a>
+          </Link>
+        );
+      }
+    });
+    return (
+      <div style={style}>
+        <div>Skift samling: {items}</div>
+      </div>
+    );
+  }
+}
+
 export default class extends React.Component {
   static async getInitialProps({
-    query: { lang, groupBy },
+    query: { lang, country, groupBy },
   }: {
-    query: { lang: Lang, groupBy: GroupBy },
+    query: { lang: Lang, country: Country, groupBy: GroupBy },
   }) {
-    const res = await fetch(createURL(`/static/api/poets-dk.json`));
+    const url = `/static/api/poets-${country}.json`;
+    const res = await fetch(createURL(url));
     const poets: Array<Poet> = await res.json();
-    return { lang, groupBy, poets };
+    return { lang, country, groupBy, poets };
   }
 
   props: {
     lang: Lang,
+    country: Country,
     poets: Array<Poet>,
     groupBy: GroupBy,
   };
 
   render() {
-    const { lang, poets, groupBy } = this.props;
+    const { lang, country, poets, groupBy } = this.props;
 
     const tabs = [
-      { id: 'name', title: 'Efter navn', url: Links.poetsURL(lang, 'name') },
-      { id: 'year', title: 'Efter år', url: Links.poetsURL(lang, 'year') },
+      {
+        id: 'name',
+        title: 'Efter navn',
+        url: Links.poetsURL(lang, 'name', country),
+      },
+      {
+        id: 'year',
+        title: 'Efter år',
+        url: Links.poetsURL(lang, 'year', country),
+      },
     ];
     const selectedTabIndex = groupBy === 'name' ? 0 : 1;
     const groups = groupBy === 'name'
@@ -114,14 +158,30 @@ export default class extends React.Component {
 
     let renderedGroups = <SectionedList sections={sections} />;
 
+    let pageTitle = null;
+
+    if (country !== 'dk') {
+      const cn = CommonData.countries.filter(c => {
+        return c.code === country;
+      })[0];
+      pageTitle = Strings.toTitleCase(cn.adjective[lang]) + ' ' + ' digtere';
+    } else {
+      pageTitle = 'Digtere';
+    }
     return (
       <div>
         <Head headTitle="Digtere - Kalliope" />
         <Main>
           <Nav lang={lang} title="Digtere" />
-          <Heading title="Digtere" />
+          <Heading title={pageTitle} />
           <Tabs items={tabs} selected={groupBy} />
           {renderedGroups}
+          <CountryPicker
+            style={{ marginTop: '40px' }}
+            lang={lang}
+            selectedCountry={country}
+            selectedGroupBy={groupBy}
+          />
           <LangSelect lang={lang} />
         </Main>
       </div>

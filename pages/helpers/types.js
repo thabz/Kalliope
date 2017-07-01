@@ -5,12 +5,16 @@ export type DateWithPlace = {
   place?: string,
 };
 
+export type Country = 'dk' | 'se';
+
 export type PoetId = string;
 export type WorkId = string;
 
 export type Poet = {
   id: PoetId,
   type: 'poet' | 'person' | 'collection',
+  lang: Lang,
+  country: Country,
   name: {
     lastname?: string,
     firstname: string,
