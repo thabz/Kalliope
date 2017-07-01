@@ -139,7 +139,7 @@ class Timeline extends React.Component {
       }
 
       return (
-        <div style={{ marginBottom: '10px' }}>
+        <div style={{ marginBottom: '10px', breakInside: 'avoid' }}>
           <div style={{ float: 'left' }}>{year}</div>
           <div
             style={{
