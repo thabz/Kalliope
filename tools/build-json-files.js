@@ -54,6 +54,7 @@ const load_timeline = filename => {
       date,
       type,
       lang: 'da',
+      is_history_item: true,
       content_html: htmlToXml(
         html.toString().replace('<html>', '').replace('</html>', ''),
         collected
@@ -82,6 +83,7 @@ const build_poet_timeline_json = (poet, collected) => {
           date: work.year,
           type: 'text',
           lang: 'da',
+          is_history_item: false,
           content_html: `${poet.name
             .lastname}: <a work="${poet.id}/${workId}">${work.title}</a>.`,
         });
@@ -95,6 +97,7 @@ const build_poet_timeline_json = (poet, collected) => {
         date: poet.period.born.date,
         type: 'text',
         lang: 'da',
+        is_history_item: false,
         content_html: `${poet.name.lastname} født${place}`,
       });
     }
@@ -106,13 +109,18 @@ const build_poet_timeline_json = (poet, collected) => {
         date: poet.period.dead.date,
         type: 'text',
         lang: 'da',
+        is_history_item: false,
         content_html: `${poet.name.lastname} død${place}`,
       });
     }
-    items = [...items, ...load_timeline(`fdirs/${poet.id}/events.xml`)];
+    let poet_events = load_timeline(`fdirs/${poet.id}/events.xml`).map(e => {
+      e.is_history_item = false;
+      return e;
+    });
+    items = [...items, ...poet_events];
     items = sorted_timeline(items);
   }
-  if (items.length >= 1) {
+  if (items.length >= 2) {
     const start_date = normalize_timeline_date(items[0].date);
     const end_date = normalize_timeline_date(items[items.length - 1].date);
     let globalItems = collected.timeline.filter(item => {
@@ -121,6 +129,10 @@ const build_poet_timeline_json = (poet, collected) => {
     });
     items = [...globalItems, ...items];
     items = sorted_timeline(items);
+  }
+  if (items.length == 1) {
+    // We only have an born or dead event. Not an interesting timeline.
+    items = [];
   }
   return items;
 };
@@ -146,8 +158,8 @@ const build_bio_json = collected => {
         body.toString().replace('<body>', '').replace('</body>', ''),
         collected
       );
-      data.timeline = build_poet_timeline_json(poet, collected);
     }
+    data.timeline = build_poet_timeline_json(poet, collected);
     writeJSON(`static/api/${poet.id}/bio.json`, data);
   });
 };
