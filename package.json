@@ -2,9 +2,9 @@
   "name": "Kalliope",
   "version": "1.0.0",
   "scripts": {
-    "dev": "node server.js",
+    "dev": " LOCALE=da_DK.UTF_8 node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
+    "start": "NODE_ENV=production LOCALE=da_DK.UTF_8 node server.js",
     "test": "jest --watch",
     "test-ci": "jest",
     "flow": "flow",
