@@ -105,6 +105,15 @@ export type NewsItem = {
   content_html: string,
 };
 
+export type TimelineItem = {
+  date: string,
+  lang: Lang,
+  type: 'text' | 'image',
+  is_history_item: boolean,
+  content_html: string,
+  src?: string, // When type is 'image'
+};
+
 export type TextContentOptions = {
   isBibleVerses?: boolean,
   highlightBibleVerses?: Array<number>,
