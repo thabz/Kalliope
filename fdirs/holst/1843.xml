@@ -8,7 +8,6 @@
        <picture type="titlepage" src="1843-p1.jpg">Titelbladet til <i>Ude og hjemme</i> / Reise-Erindringer / af / H. P. Holst // Kjøbenhavn / Paa Universitetsboghandler C. A. Reitzels Forlag. / Trykt i BiancoLunos Bogtrykkeri. / 1843.</picture>
    </pictures>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
@@ -16,9 +15,10 @@
 <head>
    <title>Paa Rhinen</title>
    <firstline>Vi seilede ned ad Rhinen</firstline>
-   <quality>korrektur1</quality>
-   <keywords></keywords>
-   <note>Vi seilede ned ad Rhinen, pp. 1-4</note>
+   <quality>korrektur1,kilde,side</quality>
+   <notes>
+     <note>pp. 1-4</note>
+   </notes>
 </head>
 <body>
 Vi seilede ned ad Rhinen,
