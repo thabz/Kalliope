@@ -18,9 +18,112 @@ let collected = {
   keywords: new Map(),
   poets: new Map(),
   dict: new Map(),
+  timeline: new Array(),
 };
+
 // Ready after second pass
 let collected_works = new Map();
+
+const normalize_timeline_date = date => {
+  if (date.length !== 4 + 1 + 2 + 1 + 2) {
+    return `${date.substring(0, 4)}-01-01`;
+  } else {
+    return date;
+  }
+};
+
+const sorted_timeline = timeline => {
+  return timeline.sort((a, b) => {
+    let date_a = normalize_timeline_date(a.date);
+    let date_b = normalize_timeline_date(b.date);
+    return date_b === date_a ? 0 : date_a < date_b ? -1 : 1;
+  });
+};
+
+const load_timeline = filename => {
+  console.log(`${filename}`);
+  let doc = loadXMLDoc(filename);
+  if (doc == null) {
+    return [];
+  }
+  return doc.find('//events/entry').map(event => {
+    const type = event.attr('type').value();
+    const date = event.attr('date').value();
+    const html = event.get('html');
+    let data = {
+      date,
+      type,
+      lang: 'da',
+      content_html: htmlToXml(
+        html.toString().replace('<html>', '').replace('</html>', ''),
+        collected
+      ),
+    };
+    if (type === 'image') {
+      data.src = event.get('src').text();
+    }
+    return data;
+  });
+};
+
+const build_global_timeline = collected => {
+  return load_timeline('data/events.xml');
+};
+
+const build_poet_timeline_json = (poet, collected) => {
+  let items = [];
+  if (poet.type === 'poet') {
+    poet.workIds.forEach(workId => {
+      const work = collected.works.get(`${poet.id}/${workId}`);
+      if (work.year != '?') {
+        // TODO: This der er et titel-blad, så output type image.
+        // TODO: Kun output <a> hvis værket har indhold.
+        items.push({
+          date: work.year,
+          type: 'text',
+          lang: 'da',
+          content_html: `${poet.name
+            .lastname}: <a work="${poet.id}/${workId}">${work.title}</a>.`,
+        });
+      }
+    });
+    if (poet.period.born.date !== '?') {
+      const place = poet.period.born.place != null
+        ? ' i ' + poet.period.born.place
+        : '';
+      items.push({
+        date: poet.period.born.date,
+        type: 'text',
+        lang: 'da',
+        content_html: `${poet.name.lastname} født${place}`,
+      });
+    }
+    if (poet.period.dead.date !== '?') {
+      const place = poet.period.dead.place != null
+        ? ' i ' + poet.period.dead.place
+        : '';
+      items.push({
+        date: poet.period.dead.date,
+        type: 'text',
+        lang: 'da',
+        content_html: `${poet.name.lastname} død${place}`,
+      });
+    }
+    items = [...items, ...load_timeline(`fdirs/${poet.id}/events.xml`)];
+    items = sorted_timeline(items);
+  }
+  if (items.length >= 1) {
+    const start_date = normalize_timeline_date(items[0].date);
+    const end_date = normalize_timeline_date(items[items.length - 1].date);
+    let globalItems = collected.timeline.filter(item => {
+      const d = normalize_timeline_date(item.date);
+      return d > start_date && d < end_date;
+    });
+    items = [...globalItems, ...items];
+    items = sorted_timeline(items);
+  }
+  return items;
+};
 
 const build_bio_json = collected => {
   collected.poets.forEach((poet, poetId) => {
@@ -43,6 +146,7 @@ const build_bio_json = collected => {
         body.toString().replace('<body>', '').replace('</body>', ''),
         collected
       );
+      data.timeline = build_poet_timeline_json(poet, collected);
     }
     writeJSON(`static/api/${poet.id}/bio.json`, data);
   });
@@ -586,9 +690,18 @@ safeMkdir(`static/api`);
 collected.poets = build_poets_json();
 build_bibliography_json(collected);
 works_first_pass(collected.poets);
+
+// Remove when done
+(function() {
+  collected.timeline = build_global_timeline(collected);
+  build_bio_json(collected);
+})();
+return;
+
 build_dict_first_pass(collected);
 works_second_pass(collected.poets);
 build_keywords();
+collected.timeline = build_global_timeline(collected);
 build_bio_json(collected);
 build_news(collected);
 build_dict_second_pass(collected);
