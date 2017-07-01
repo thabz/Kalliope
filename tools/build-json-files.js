@@ -703,14 +703,6 @@ safeMkdir(`static/api`);
 collected.poets = build_poets_json();
 build_bibliography_json(collected);
 works_first_pass(collected.poets);
-
-// Remove when done
-(function() {
-  collected.timeline = build_global_timeline(collected);
-  build_bio_json(collected);
-})();
-return;
-
 build_dict_first_pass(collected);
 works_second_pass(collected.poets);
 build_keywords();
