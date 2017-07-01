@@ -46,3 +46,4 @@ const handleDirRecursive = dirname => {
 };
 
 handleDirRecursive('static/images');
+handleDirRecursive('static/kunst');

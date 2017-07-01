@@ -132,7 +132,7 @@ class Timeline extends React.Component {
           content_html: item.content_html,
         };
         html = (
-          <Picture picture={picture} lang={item.lang} srcPrefix="/static/" />
+          <Picture picture={picture} lang={item.lang} srcPrefix="/static" />
         );
       } else {
         html = <TextContent contentHtml={item.content_html} lang={item.lang} />;
@@ -144,7 +144,7 @@ class Timeline extends React.Component {
           <div
             style={{
               marginLeft: '50px',
-              opacity: item.is_history_item ? 0.6 : 1.0,
+              color: item.is_history_item ? '#666' : 'black',
             }}>
             {html}
           </div>
