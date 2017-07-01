@@ -131,7 +131,8 @@ const build_poet_timeline_json = (poet, collected) => {
     items = sorted_timeline(items);
   }
   if (items.length == 1) {
-    // We only have an born or dead event. Not an interesting timeline.
+    // We only have a single born or dead event. Not an interesting timeline,
+    // so ignore it.
     items = [];
   }
   return items;
