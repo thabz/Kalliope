@@ -18,6 +18,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Caches used by build-json
+caches
+
 # Generated JSON files
 static/api
 

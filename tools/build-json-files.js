@@ -5,12 +5,18 @@ const mkdirp = require('mkdirp');
 const Paths = require('../pages/helpers/paths.js');
 const entities = require('entities');
 const {
+  isFileModified,
+  refreshFilesModifiedCache,
+  loadCachedJSON,
+  writeCachedJSON,
+} = require('./libs/caching.js');
+const {
   safeMkdir,
   writeJSON,
   loadXMLDoc,
   htmlToXml,
   replaceDashes,
-} = require('./helpers.js');
+} = require('./libs/helpers.js');
 
 let collected = {
   texts: new Map(),
@@ -481,8 +487,12 @@ const works_second_pass = collected_poets => {
     let collectedHeaders = [];
     let collectedLines = [];
     poet.workIds.forEach(workId => {
-      let doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
-      console.log(`fdirs/${poetId}/${workId}.xml`);
+      const filename = `fdirs/${poetId}/${workId}.xml`;
+      console.log(filename);
+      if (!isFileModified(filename)) {
+        return;
+      }
+      let doc = loadXMLDoc(filename);
       const work = doc.get('//kalliopework');
       const status = work.attr('status').value();
       const type = work.attr('type').value();
@@ -607,9 +617,14 @@ const build_news = collected => {
 };
 
 const build_dict_first_pass = collected => {
+  const path = `data/dict.xml`;
+  if (!isFileModified(path)) {
+    collected.dict = new Map(loadCachedJSON('collected.dict'));
+    return;
+  }
+
   console.log('Building dict');
   safeMkdir('static/api/dict');
-  const path = `data/dict.xml`;
   const doc = loadXMLDoc(path);
   doc.get('//entries').childNodes().forEach(item => {
     if (item.name() !== 'entry') {
@@ -623,9 +638,14 @@ const build_dict_first_pass = collected => {
     };
     collected.dict.set(id, simpleData);
   });
+  writeCachedJSON('collected.dict', Array.from(collected.dict));
 };
 
 const build_dict_second_pass = collected => {
+  const path = `data/dict.xml`;
+  if (!isFileModified(path)) {
+    return;
+  }
   console.log('Building dict');
   safeMkdir('static/api/dict');
 
@@ -650,7 +670,6 @@ const build_dict_second_pass = collected => {
     items.push(simpleData);
   };
 
-  const path = `data/dict.xml`;
   const doc = loadXMLDoc(path);
   doc.get('//entries').childNodes().forEach(item => {
     if (item.name() !== 'entry') {
@@ -712,3 +731,4 @@ collected.timeline = build_global_timeline(collected);
 build_bio_json(collected);
 build_news(collected);
 build_dict_second_pass(collected);
+refreshFilesModifiedCache();

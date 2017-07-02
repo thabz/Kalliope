@@ -11,16 +11,25 @@ const safeMkdir = dirname => {
   }
 };
 
+const loadFile = filename => {
+  if (!fs.existsSync(filename)) {
+    return null;
+  }
+  return fs.readFileSync(filename);
+};
+
+const loadJSON = filename => {
+  const data = loadFile(filename);
+  return data ? JSON.parse(data) : null;
+};
+
 const writeJSON = (filename, data) => {
   const json = JSON.stringify(data, null, 2);
   fs.writeFileSync(filename, json);
 };
 
 const loadXMLDoc = filename => {
-  if (!fs.existsSync(filename)) {
-    return null;
-  }
-  const data = fs.readFileSync(filename);
+  const data = loadFile(filename);
   if (data == null) {
     return null;
   }
@@ -128,4 +137,12 @@ const htmlToXml = (html, collected, isPoetry = false) => {
   return decoded;
 };
 
-module.exports = { safeMkdir, writeJSON, loadXMLDoc, htmlToXml, replaceDashes };
+module.exports = {
+  safeMkdir,
+  loadJSON,
+  loadFile,
+  writeJSON,
+  loadXMLDoc,
+  htmlToXml,
+  replaceDashes,
+};
