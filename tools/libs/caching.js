@@ -1,4 +1,10 @@
-const { loadJSON, loadFile, writeJSON, safeMkdir } = require('./helpers.js');
+const {
+  loadJSON,
+  loadFile,
+  writeJSON,
+  safeMkdir,
+  fileExists,
+} = require('./helpers.js');
 const crypto = require('crypto');
 
 // Load caches
@@ -8,24 +14,37 @@ let is_unmodified = {};
 
 safeMkdir(`caches`);
 
-const isFileModified = filename => {
-  if (new_sha[filename]) {
-    return true;
+const isFileModified = (...filenames) => {
+  const _isFileModified = filename => {
+    // For now remove the :id part of the filename
+    filename = filename.split(':')[0];
+    if (new_sha[filename]) {
+      return true;
+    }
+    if (is_unmodified[filename]) {
+      return false;
+    }
+    const shasum = crypto.createHash('sha1');
+    const data = loadFile(filename);
+    let digest = '0';
+    if (data != null) {
+      shasum.update(data);
+      digest = shasum.digest('hex');
+    }
+    if (digest != old_sha[filename]) {
+      new_sha[filename] = digest;
+      return true;
+    } else {
+      is_unmodified[filename] = true;
+      return false;
+    }
+  };
+  for (let i = 0; i < filenames.length; i++) {
+    if (_isFileModified(filenames[i])) {
+      return true;
+    }
   }
-  if (is_unmodified[filename]) {
-    return false;
-  }
-  const shasum = crypto.createHash('sha1');
-  const data = loadFile(filename);
-  shasum.update(data);
-  const digest = shasum.digest('hex');
-  if (digest != old_sha[filename]) {
-    new_sha[filename] = digest;
-    return true;
-  } else {
-    is_unmodified[filename] = true;
-    return false;
-  }
+  return false;
 };
 
 const refreshFilesModifiedCache = () => {

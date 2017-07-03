@@ -74,15 +74,27 @@ const load_timeline = filename => {
 };
 
 const build_global_timeline = collected => {
+  // TODO: Cache this file
   return load_timeline('data/events.xml');
 };
 
 const build_poet_timeline_json = (poet, collected) => {
+  // Skip if all of the participating xml files aren't modified
+  if (
+    !isFileModified(
+      `data/poets.xml:${poet.id}`,
+      'data/events.xml',
+      ...poet.workIds.map(workId => `fdirs/${poet.id}/${workId}.xml`),
+      `fdirs/${poet.id}/events.xml`
+    )
+  ) {
+    return;
+  }
+
   let items = [];
   if (poet.type === 'poet') {
     poet.workIds.forEach(workId => {
       const work = collected.works.get(`${poet.id}/${workId}`);
-      // TODO: Skip if poets.xml, work.xml, global events.xml and poet events are unchanged
       if (work.year != '?') {
         // TODO: This der er et titel-blad, så output type image.
         // TODO: Kun output <a> hvis værket har indhold.

@@ -11,8 +11,12 @@ const safeMkdir = dirname => {
   }
 };
 
+const fileExists = filename => {
+  return fs.existsSync(filename);
+};
+
 const loadFile = filename => {
-  if (!fs.existsSync(filename)) {
+  if (!fileExists(filename)) {
     return null;
   }
   return fs.readFileSync(filename);
@@ -139,6 +143,7 @@ const htmlToXml = (html, collected, isPoetry = false) => {
 
 module.exports = {
   safeMkdir,
+  fileExists,
   loadJSON,
   loadFile,
   writeJSON,
