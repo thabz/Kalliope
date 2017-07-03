@@ -454,8 +454,18 @@ const handle_work = work => {
 // Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
 const works_first_pass = poets => {
+  collected.texts = new Map(loadCachedJSON('collected.texts') || []);
+  collected.works = new Map(loadCachedJSON('collected.works') || []);
+  let found_changes = false;
+  const force_reload = collected.texts.size === 0 || collected.works.size === 0;
   poets.forEach(poet => {
     poet.workIds.forEach(workId => {
+      const workFilename = `fdirs/${poet.id}/${workId}.xml`;
+      if (!force_reload && !isFileModified(workFilename)) {
+        return;
+      } else {
+        found_changes = true;
+      }
       const handle_section = section => {
         section.childNodes().forEach(part => {
           const partName = part.name();
@@ -475,7 +485,7 @@ const works_first_pass = poets => {
           }
         });
       };
-      let doc = loadXMLDoc(`fdirs/${poet.id}/${workId}.xml`);
+      let doc = loadXMLDoc(workFilename);
       const work = doc.get('//kalliopework');
       const head = work.get('workhead');
       const title = head.get('title').text();
@@ -496,6 +506,10 @@ const works_first_pass = poets => {
       }
     });
   });
+  if (found_changes) {
+    writeCachedJSON('collected.texts', Array.from(collected.texts));
+    writeCachedJSON('collected.works', Array.from(collected.works));
+  }
 };
 
 const works_second_pass = collected_poets => {
@@ -770,8 +784,8 @@ collected.poets = build_poets_json();
 build_bibliography_json(collected);
 works_first_pass(collected.poets);
 build_dict_first_pass(collected);
-works_second_pass(collected.poets);
 build_keywords();
+works_second_pass(collected.poets);
 collected.timeline = build_global_timeline(collected);
 build_bio_json(collected);
 build_news(collected);
