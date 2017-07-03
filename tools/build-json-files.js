@@ -718,6 +718,16 @@ const build_dict_second_pass = collected => {
 
 const build_bibliography_json = collected => {
   collected.poets.forEach((poet, poetId) => {
+    if (
+      !isFileModified(
+        `data/poets.xml:${poet.id}`,
+        `fdirs/${poet.id}/bibliography-primary.xml`,
+        `fdirs/${poet.id}/bibliography-secondary.xml`
+      )
+    ) {
+      return;
+    }
+
     safeMkdir(`static/api/${poet.id}`);
     let data = { poet, primary: [], secondary: [] };
     ['primary', 'secondary'].forEach(filename => {
@@ -732,9 +742,9 @@ const build_bibliography_json = collected => {
         });
       }
     });
-    if (data.primary.length > 0 || data.secondary.length > 0) {
-      writeJSON(`static/api/${poet.id}/bibliography.json`, data);
-    }
+    const outFilename = `static/api/${poet.id}/bibliography.json`;
+    console.log(outFilename);
+    writeJSON(outFilename, data);
   });
 };
 
