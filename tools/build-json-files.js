@@ -590,7 +590,6 @@ const works_second_pass = collected_poets => {
   });
 };
 
-// TODO: keywords.json is empty if none are changed
 const build_keywords = () => {
   safeMkdir('static/api/keywords');
   collected.keywords = new Map(loadCachedJSON('collected.keywords') || []);
