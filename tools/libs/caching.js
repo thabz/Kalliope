@@ -26,10 +26,12 @@ const isFileModified = (...filenames) => {
     }
     const shasum = crypto.createHash('sha1');
     const data = loadFile(filename);
-    let digest = '0';
+    let digest = null;
     if (data != null) {
       shasum.update(data);
       digest = shasum.digest('hex');
+    } else {
+      digest = 'MISSING-FILE';
     }
     if (digest != old_sha[filename]) {
       new_sha[filename] = digest;
