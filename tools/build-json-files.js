@@ -262,6 +262,11 @@ const get_pictures = head => {
 };
 
 const handle_text = (poetId, workId, text, isPoetry) => {
+  if (
+    !isFileModified(`data/poets.xml:${poetId}`, `fdirs/${poetId}/${workId}.xml`)
+  ) {
+    return;
+  }
   const poet = collected.poets.get(poetId);
   const work = collected_works.get(poetId + '-' + workId);
 
@@ -315,6 +320,7 @@ const handle_text = (poetId, workId, text, isPoetry) => {
       ),
     },
   };
+  console.log(Paths.textPath(textId));
   writeJSON(Paths.textPath(textId), text_data);
 };
 
@@ -494,19 +500,15 @@ const works_first_pass = poets => {
 
 const works_second_pass = collected_poets => {
   collected_poets.forEach((poet, poetId) => {
-    try {
-      fs.mkdirSync(`static/api/${poetId}`);
-    } catch (err) {
-      if (err.code !== 'EEXIST') throw err;
-    }
+    safeMkdir(`static/api/${poetId}`);
+
     let collectedHeaders = [];
     let collectedLines = [];
     poet.workIds.forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
-      if (!isFileModified(filename)) {
-        return;
-      }
-      console.log(filename);
+      // if (!isFileModified(filename)) {
+      //   return;
+      // }
       let doc = loadXMLDoc(filename);
       const work = doc.get('//kalliopework');
       const status = work.attr('status').value();
@@ -528,16 +530,21 @@ const works_second_pass = collected_poets => {
           notes: work_data.notes || [],
           pictures: work_data.pictures || [],
         };
-        writeJSON(`static/api/${poetId}/${workId}-toc.json`, toc_file_data);
+        const tocFilename = `static/api/${poetId}/${workId}-toc.json`;
+        console.log(tocFilename);
+        writeJSON(tocFilename, toc_file_data);
       }
       doc = null;
     });
+
     const objectToWrite = {
       poet: poet,
       works: collectedHeaders,
     };
     let json = JSON.stringify(objectToWrite, null, 2);
-    writeJSON(`static/api/${poetId}/works.json`, objectToWrite);
+    const worksOutFilename = `static/api/${poetId}/works.json`;
+    console.log(worksOutFilename);
+    writeJSON(worksOutFilename, objectToWrite);
 
     // Detect firstlines and titles that are shared between multiple
     // poems. Mark these with non_unique_firstline and non_unique_indextitle.
@@ -563,14 +570,16 @@ const works_second_pass = collected_poets => {
       poet: collected_poets.get(poetId),
       lines: collectedLines,
     };
-    writeJSON(`static/api/${poetId}/lines.json`, linesToWrite);
+    const linesOutFilename = `static/api/${poetId}/lines.json`;
+    console.log(linesOutFilename);
+    writeJSON(linesOutFilename, linesToWrite);
   });
 };
 
+// TODO: keywords.json is empty if none are changed
 const build_keywords = () => {
-  console.log('Building keywords');
   safeMkdir('static/api/keywords');
-  const collected_keywords = [];
+  const collected_keywords = loadCachedJSON('collected.keywords') || [];
   const folder = 'data/keywords';
   fs.readdirSync(folder).map(filename => {
     const path = `${folder}/${filename}`;
@@ -580,7 +589,6 @@ const build_keywords = () => {
     if (!isFileModified(path)) {
       return;
     }
-    console.log(path);
     const doc = loadXMLDoc(path);
     const keyword = doc.get('//keyword');
     const head = keyword.get('head');
@@ -603,7 +611,9 @@ const build_keywords = () => {
       id,
       title,
     });
-    writeJSON(`static/api/keywords/${id}.json`, data);
+    const outFilename = `static/api/keywords/${id}.json`;
+    console.log(outFilename);
+    writeJSON(outFilename, data);
     collected.keywords.set(id, { id, title });
   });
   writeJSON(`static/api/keywords.json`, collected_keywords);
