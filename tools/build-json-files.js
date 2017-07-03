@@ -579,44 +579,51 @@ const works_second_pass = collected_poets => {
 // TODO: keywords.json is empty if none are changed
 const build_keywords = () => {
   safeMkdir('static/api/keywords');
-  const collected_keywords = loadCachedJSON('collected.keywords') || [];
+  collected.keywords = new Map(loadCachedJSON('collected.keywords') || []);
   const folder = 'data/keywords';
-  fs.readdirSync(folder).map(filename => {
-    const path = `${folder}/${filename}`;
-    if (!filename.endsWith('.xml')) {
-      return;
-    }
-    if (!isFileModified(path)) {
-      return;
-    }
-    const doc = loadXMLDoc(path);
-    const keyword = doc.get('//keyword');
-    const head = keyword.get('head');
-    const body = keyword.get('body');
-    const id = keyword.attr('id').value();
-    const title = head.get('title').text();
-    const pictures = get_pictures(head);
-    const author = head.get('author') ? head.get('author').text() : null;
-    const data = {
-      id,
-      title,
-      author,
-      pictures,
-      content_html: htmlToXml(
-        body.toString().replace('<body>', '').replace('</body>', ''),
-        collected
-      ),
-    };
-    collected_keywords.push({
-      id,
-      title,
+  const filenames = fs
+    .readdirSync(folder)
+    .filter(x => x.endsWith('.xml'))
+    .map(x => `${folder}/${x}`);
+  if (collected.keywords.size === 0 || isFileModified(...filenames)) {
+    collected.keywords = new Map();
+    let keywords_toc = new Array();
+    filenames.map(path => {
+      if (!path.endsWith('.xml')) {
+        return;
+      }
+      const doc = loadXMLDoc(path);
+      const keyword = doc.get('//keyword');
+      const head = keyword.get('head');
+      const body = keyword.get('body');
+      const id = keyword.attr('id').value();
+      const title = head.get('title').text();
+      const pictures = get_pictures(head);
+      const author = head.get('author') ? head.get('author').text() : null;
+      const data = {
+        id,
+        title,
+        author,
+        pictures,
+        content_html: htmlToXml(
+          body.toString().replace('<body>', '').replace('</body>', ''),
+          collected
+        ),
+      };
+      keywords_toc.push({
+        id,
+        title,
+      });
+      const outFilename = `static/api/keywords/${id}.json`;
+      console.log(outFilename);
+      writeJSON(outFilename, data);
+      collected.keywords.set(id, { id, title });
     });
-    const outFilename = `static/api/keywords/${id}.json`;
+    writeCachedJSON('collected.keywords', Array.from(collected.keywords));
+    const outFilename = `static/api/keywords.json`;
     console.log(outFilename);
-    writeJSON(outFilename, data);
-    collected.keywords.set(id, { id, title });
-  });
-  writeJSON(`static/api/keywords.json`, collected_keywords);
+    writeJSON(outFilename, keywords_toc);
+  }
 };
 
 const build_news = collected => {
