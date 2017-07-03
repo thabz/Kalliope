@@ -466,25 +466,7 @@ const works_first_pass = poets => {
       } else {
         found_changes = true;
       }
-      const handle_section = section => {
-        section.childNodes().forEach(part => {
-          const partName = part.name();
-          if (partName === 'section') {
-            handle_section(part.get('content'));
-          } else if (partName == 'poem' || partName === 'prose') {
-            const textId = part.attr('id').value();
-            const head = part.get('head');
-            const title = head.get('title') ? head.get('title').text() : null;
-            const firstline = head.get('firstline')
-              ? head.get('firstline').text()
-              : null;
-            const linkTitle = title || firstline;
-            collected.texts.set(textId, {
-              title: replaceDashes(linkTitle),
-            });
-          }
-        });
-      };
+
       let doc = loadXMLDoc(workFilename);
       const work = doc.get('//kalliopework');
       const head = work.get('workhead');
@@ -500,10 +482,19 @@ const works_first_pass = poets => {
         title: replaceDashes(title),
         year: year,
       });
-      const workbody = work.get('workbody');
-      if (workbody != null) {
-        handle_section(workbody);
-      }
+
+      work.find('//poem|//prose').forEach(part => {
+        const textId = part.attr('id').value();
+        const head = part.get('head');
+        const title = head.get('title') ? head.get('title').text() : null;
+        const firstline = head.get('firstline')
+          ? head.get('firstline').text()
+          : null;
+        const linkTitle = title || firstline;
+        collected.texts.set(textId, {
+          title: replaceDashes(linkTitle),
+        });
+      });
     });
   });
   if (found_changes) {
