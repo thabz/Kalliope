@@ -11,6 +11,7 @@ const crypto = require('crypto');
 const old_sha = loadJSON('./caches/files-sha.json') || {};
 let new_sha = {};
 let is_unmodified = {};
+let deleted_files = new Set();
 
 safeMkdir(`caches`);
 
@@ -25,7 +26,12 @@ const isFileModified = (...filenames) => {
       return false;
     }
     if (!fileExists(filename)) {
-      return false;
+      if (old_sha[filename] != null) {
+        deleted_files.add(filename);
+        return true;
+      } else {
+        return false;
+      }
     }
     const shasum = crypto.createHash('sha1');
     const data = loadFile(filename);
@@ -57,6 +63,9 @@ const refreshFilesModifiedCache = () => {
   // update 'files-sha.json'.
   // Call this function after each complete import run.
   Object.assign(old_sha, new_sha);
+  deleted_files.forEach(filename => {
+    delete old_sha[filename];
+  });
   writeJSON('./caches/files-sha.json', old_sha);
 };
 
