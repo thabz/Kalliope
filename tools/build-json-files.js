@@ -47,7 +47,6 @@ const sorted_timeline = timeline => {
 };
 
 const load_timeline = filename => {
-  console.log(`${filename}`);
   let doc = loadXMLDoc(filename);
   if (doc == null) {
     return [];
@@ -79,18 +78,6 @@ const build_global_timeline = collected => {
 };
 
 const build_poet_timeline_json = (poet, collected) => {
-  // Skip if all of the participating xml files aren't modified
-  if (
-    !isFileModified(
-      `data/poets.xml:${poet.id}`,
-      'data/events.xml',
-      ...poet.workIds.map(workId => `fdirs/${poet.id}/${workId}.xml`),
-      `fdirs/${poet.id}/events.xml`
-    )
-  ) {
-    return;
-  }
-
   let items = [];
   if (poet.type === 'poet') {
     poet.workIds.forEach(workId => {
@@ -159,6 +146,19 @@ const build_poet_timeline_json = (poet, collected) => {
 
 const build_bio_json = collected => {
   collected.poets.forEach((poet, poetId) => {
+    // Skip if all of the participating xml files aren't modified
+    if (
+      !isFileModified(
+        `data/poets.xml:${poet.id}`,
+        'data/events.xml',
+        ...poet.workIds.map(workId => `fdirs/${poet.id}/${workId}.xml`),
+        `fdirs/${poet.id}/events.xml`,
+        `fdirs/${poet.id}/bio.xml`
+      )
+    ) {
+      return;
+    }
+
     safeMkdir(`static/api/${poet.id}`);
     const bioXmlPath = `fdirs/${poet.id}/bio.xml`;
     const data = {
@@ -180,7 +180,9 @@ const build_bio_json = collected => {
       );
     }
     data.timeline = build_poet_timeline_json(poet, collected);
-    writeJSON(`static/api/${poet.id}/bio.json`, data);
+    const destFilename = `static/api/${poet.id}/bio.json`;
+    console.log(destFilename);
+    writeJSON(destFilename, data);
   });
 };
 
