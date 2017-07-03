@@ -82,6 +82,7 @@ const build_poet_timeline_json = (poet, collected) => {
   if (poet.type === 'poet') {
     poet.workIds.forEach(workId => {
       const work = collected.works.get(`${poet.id}/${workId}`);
+      // TODO: Skip if poets.xml, work.xml, global events.xml and poet events are unchanged
       if (work.year != '?') {
         // TODO: This der er et titel-blad, så output type image.
         // TODO: Kun output <a> hvis værket har indhold.
@@ -488,10 +489,10 @@ const works_second_pass = collected_poets => {
     let collectedLines = [];
     poet.workIds.forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
-      console.log(filename);
       if (!isFileModified(filename)) {
         return;
       }
+      console.log(filename);
       let doc = loadXMLDoc(filename);
       const work = doc.get('//kalliopework');
       const status = work.attr('status').value();
@@ -558,10 +559,13 @@ const build_keywords = () => {
   const collected_keywords = [];
   const folder = 'data/keywords';
   fs.readdirSync(folder).map(filename => {
+    const path = `${folder}/${filename}`;
     if (!filename.endsWith('.xml')) {
       return;
     }
-    const path = `${folder}/${filename}`;
+    if (!isFileModified(path)) {
+      return;
+    }
     console.log(path);
     const doc = loadXMLDoc(path);
     const keyword = doc.get('//keyword');
