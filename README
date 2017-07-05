@@ -7,13 +7,8 @@ Any UNIX will do.
 
 ** Required software **
 
-Apache
-Perl
-MySQL
-ImageMagick
+Node.js
 
-** Required Perlmodules **
+** Required global node packages **
 
-mysql.com: DBI, Data-ShowTable, Msql-Mysql-modules
-cpan.org:  MIME::Base64, URI, CGI
-
+yarn
