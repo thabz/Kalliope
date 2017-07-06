@@ -454,10 +454,10 @@ const handle_work = work => {
 // Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
 const works_first_pass = poets => {
-  collected.texts = new Map(loadCachedJSON('collected.texts') || []);
-  collected.works = new Map(loadCachedJSON('collected.works') || []);
+  let texts = new Map(loadCachedJSON('collected.texts') || []);
+  let works = new Map(loadCachedJSON('collected.works') || []);
   let found_changes = false;
-  const force_reload = collected.texts.size === 0 || collected.works.size === 0;
+  const force_reload = texts.size === 0 || works.size === 0;
   poets.forEach(poet => {
     poet.workIds.forEach(workId => {
       const workFilename = `fdirs/${poet.id}/${workId}.xml`;
@@ -478,7 +478,7 @@ const works_first_pass = poets => {
           `fdirs/${poet.id}/${workId}.xml has wrong author-attribute in <kalliopework>`
         );
       }
-      collected.works.set(`${poet.id}/${workId}`, {
+      works.set(`${poet.id}/${workId}`, {
         title: replaceDashes(title),
         year: year,
       });
@@ -491,16 +491,17 @@ const works_first_pass = poets => {
           ? head.get('firstline').text()
           : null;
         const linkTitle = title || firstline;
-        collected.texts.set(textId, {
+        texts.set(textId, {
           title: replaceDashes(linkTitle),
         });
       });
     });
   });
   if (found_changes) {
-    writeCachedJSON('collected.texts', Array.from(collected.texts));
-    writeCachedJSON('collected.works', Array.from(collected.works));
+    writeCachedJSON('collected.texts', Array.from(texts));
+    writeCachedJSON('collected.works', Array.from(works));
   }
+  return { works, texts };
 };
 
 const works_second_pass = collected_poets => {
@@ -769,10 +770,22 @@ const build_bibliography_json = collected => {
   });
 };
 
+const benchmark = (name, f, args) => {
+  const beforeMillis = Date.now();
+  const result = f(args);
+  const afterMillis = Date.now();
+  console.log(`${name}: ${afterMillis - beforeMillis}ms`);
+  return result;
+};
+
 safeMkdir(`static/api`);
 collected.poets = build_poets_json();
 build_bibliography_json(collected);
-works_first_pass(collected.poets);
+// Build collected.works and collected.texts
+Object.assign(collected, works_first_pass(collected.poets));
+console.log('Found texts', collected.texts.size > 200);
+console.log('Found works', collected.works.size > 50);
+return;
 build_dict_first_pass(collected);
 build_keywords();
 works_second_pass(collected.poets);
