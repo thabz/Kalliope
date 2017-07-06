@@ -510,9 +510,9 @@ const works_second_pass = collected_poets => {
 
     poet.workIds.forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
-      // if (!isFileModified(filename)) {
-      //   return;
-      // }
+      if (!isFileModified(filename)) {
+        return;
+      }
       let doc = loadXMLDoc(filename);
       const work = doc.get('//kalliopework');
       const status = work.attr('status').value();
@@ -523,6 +523,8 @@ const works_second_pass = collected_poets => {
       const data = { id: workId, title, year, status, type };
       collected_works.set(poetId + '-' + workId, data);
 
+      // TODO: Make handle_work non-recursive by using a simple XPath
+      // to select all the poems and prose texts.
       handle_work(work); // Creates texts
       doc = null;
     });
