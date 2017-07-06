@@ -551,7 +551,53 @@ const works_second_pass = collected_poets => {
     const worksOutFilename = `static/api/${poetId}/works.json`;
     console.log(worksOutFilename);
     writeJSON(worksOutFilename, objectToWrite);
+  });
+};
 
+const build_poet_lines_json = poets => {
+  poets.forEach((poet, poetId) => {
+    const filenames = poet.workIds.map(
+      workId => `fdirs/${poetId}/${workId}.xml`
+    );
+    if (!isFileModified(`data/poets.xml:${poetId}`, ...filenames)) {
+      return;
+    }
+
+    safeMkdir(`static/api/${poetId}`);
+
+    let collectedLines = [];
+    poet.workIds.forEach(workId => {
+      const filename = `fdirs/${poetId}/${workId}.xml`;
+      let doc = loadXMLDoc(filename);
+      doc.find('//poem').forEach(part => {
+        const textId = part.attr('id').value();
+        const head = part.get('head');
+        const title = head.get('title') ? head.get('title').text() : null;
+        const indextitle = head.get('indextitle')
+          ? head.get('indextitle').text()
+          : null;
+        const firstline = head.get('firstline')
+          ? head.get('firstline').text()
+          : null;
+        const indexTitleToUse = indextitle || title || firstline;
+        if (indexTitleToUse == null) {
+          throw `${textId} mangler førstelinje, indextitle og title i ${poetId}/${workId}.xml`;
+        }
+        if (firstline != null && typeof firstline !== 'string') {
+          throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
+        }
+        if (typeof indexTitleToUse !== 'string') {
+          throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
+        }
+        collectedLines.push({
+          id: textId,
+          work_id: workId,
+          lang: poet.lang,
+          title: replaceDashes(indexTitleToUse),
+          firstline: replaceDashes(firstline),
+        });
+      });
+    });
     // Detect firstlines and titles that are shared between multiple
     // poems. Mark these with non_unique_firstline and non_unique_indextitle.
     let counts = {
@@ -572,13 +618,13 @@ const works_second_pass = collected_poets => {
       }
       return pair;
     });
-    const linesToWrite = {
-      poet: collected_poets.get(poetId),
+    const data = {
+      poet: poet,
       lines: collectedLines,
     };
     const linesOutFilename = `static/api/${poetId}/lines.json`;
     console.log(linesOutFilename);
-    writeJSON(linesOutFilename, linesToWrite);
+    writeJSON(linesOutFilename, data);
   });
 };
 
@@ -797,6 +843,7 @@ console.log('Found texts', collected.texts.size > 200);
 console.log('Found works', collected.works.size > 50);
 build_dict_first_pass(collected);
 b('build_keywords', build_keywords);
+b('build_poet_lines_json', build_poet_lines_json, collected.poets);
 b('works_second_pass', works_second_pass, collected.poets);
 collected.timeline = build_global_timeline(collected);
 build_bio_json(collected);
