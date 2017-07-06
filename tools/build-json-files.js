@@ -770,27 +770,38 @@ const build_bibliography_json = collected => {
   });
 };
 
-const benchmark = (name, f, args) => {
+let b_results = [];
+// Benchmarking
+const b = (name, f, args) => {
   const beforeMillis = Date.now();
   const result = f(args);
   const afterMillis = Date.now();
-  console.log(`${name}: ${afterMillis - beforeMillis}ms`);
+  b_results.push({ name, millis: afterMillis - beforeMillis });
   return result;
+};
+const print_benchmarking_results = () => {
+  b_results.forEach(r => {
+    console.log(`${r.name}: ${r.millis}ms`);
+  });
 };
 
 safeMkdir(`static/api`);
-collected.poets = build_poets_json();
-build_bibliography_json(collected);
+collected.poets = b('build_poets_json', build_poets_json);
+b('build_bibliography_json', build_bibliography_json, collected);
 // Build collected.works and collected.texts
-Object.assign(collected, works_first_pass(collected.poets));
+Object.assign(
+  collected,
+  b('works_first_pass', works_first_pass, collected.poets)
+);
 console.log('Found texts', collected.texts.size > 200);
 console.log('Found works', collected.works.size > 50);
-return;
 build_dict_first_pass(collected);
-build_keywords();
-works_second_pass(collected.poets);
+b('build_keywords', build_keywords);
+b('works_second_pass', works_second_pass, collected.poets);
 collected.timeline = build_global_timeline(collected);
 build_bio_json(collected);
 build_news(collected);
 build_dict_second_pass(collected);
+
 refreshFilesModifiedCache();
+print_benchmarking_results();
