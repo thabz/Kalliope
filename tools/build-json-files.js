@@ -523,7 +523,151 @@ const works_second_pass = collected_poets => {
       const data = { id: workId, title, year, status, type };
       collected_works.set(poetId + '-' + workId, data);
 
-      const work_data = handle_work(work); // Creates texts
+      handle_work(work); // Creates texts
+      doc = null;
+    });
+  });
+};
+
+const build_works_toc = poets => {
+  // Returns {toc, notes, pictures}
+  const extract_work_data = work => {
+    const type = work.attr('type').value();
+    const poetId = work.attr('author').value();
+    const workId = work.attr('id').value();
+    let lines = [];
+
+    const handle_section = section => {
+      let poems = [];
+      let proses = [];
+      let toc = [];
+
+      const extractTocTitle = head => {
+        const firstline = head.get('firstline')
+          ? head.get('firstline').text()
+          : null;
+        let toctitle = head.get('toctitle')
+          ? head.get('toctitle').toString()
+          : null;
+        if (toctitle === '<toctitle/>') {
+          console.log(
+            `${poetId}/${workId}.xml has superfluous empty <toctitle/>`
+          );
+          toctitle = null;
+        }
+        const title = head.get('title') ? head.get('title').text() : null;
+        let titleToUse = toctitle || title || firstline;
+        titleToUse = entities
+          .decodeHTML(titleToUse)
+          .replace('<toctitle>', '')
+          .replace('</toctitle>', '');
+        const parts = titleToUse.match(/<num>([^<]*)<\/num>(.*)$/);
+        if (parts != null) {
+          return {
+            prefix: parts[1],
+            title: replaceDashes(parts[2]),
+          };
+        } else {
+          return { title: replaceDashes(titleToUse) };
+        }
+      };
+
+      section.childNodes().forEach(part => {
+        const partName = part.name();
+        if (partName === 'poem') {
+          const textId = part.attr('id').value();
+          const head = part.get('head');
+          const title = head.get('title') ? head.get('title').text() : null;
+          const indextitle = head.get('indextitle')
+            ? head.get('indextitle').text()
+            : null;
+          const firstline = head.get('firstline')
+            ? head.get('firstline').text()
+            : null;
+          const indexTitleToUse = indextitle || title || firstline;
+          if (indexTitleToUse == null) {
+            throw `${textId} mangler førstelinje, indextitle og title i ${poetId}/${workId}.xml`;
+          }
+          if (firstline != null && typeof firstline !== 'string') {
+            throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
+          }
+          if (typeof indexTitleToUse !== 'string') {
+            throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
+          }
+          const toctitle = extractTocTitle(head);
+          if (toctitle == null) {
+            throw `${textId} mangler toctitle, firstline og title i ${poetId}/${workId}.xml`;
+          }
+          toc.push({
+            type: 'text',
+            id: textId,
+            title: replaceDashes(toctitle.title),
+            prefix: replaceDashes(toctitle.prefix),
+          });
+        } else if (partName === 'section') {
+          const subtoc = handle_section(part.get('content'));
+          const title = part.get('head/toctitle').text();
+          toc.push({
+            type: 'section',
+            title: title,
+            content: subtoc,
+          });
+        } else if (partName === 'prose') {
+          const textId = part.attr('id').value();
+          const head = part.get('head');
+          const title = head.get('title') ? head.get('title').text() : null;
+          const toctitle = extractTocTitle(head, textId);
+          if (toctitle == null) {
+            throw `${textId} mangler title og toctitle i ${poetId}/${workId}.xml`;
+          }
+          toc.push({
+            type: 'text',
+            id: textId,
+            title: replaceDashes(toctitle.title),
+            prefix: toctitle.prefix,
+          });
+        }
+      });
+      return toc;
+    };
+
+    const workhead = work.get('workhead');
+    const notes = get_notes(workhead);
+    const pictures = get_pictures(workhead);
+
+    const workbody = work.get('workbody');
+    if (workbody == null) {
+      return {
+        lines: [],
+        toc: [],
+        notes: [],
+        pictures: [],
+      };
+    }
+
+    const toc = handle_section(workbody);
+    return { lines, toc, notes, pictures };
+  };
+
+  poets.forEach((poet, poetId) => {
+    safeMkdir(`static/api/${poetId}`);
+
+    poet.workIds.forEach(workId => {
+      const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!isFileModified(filename)) {
+        return;
+      }
+      let doc = loadXMLDoc(filename);
+      const work = doc.get('//kalliopework');
+      const status = work.attr('status').value();
+      const type = work.attr('type').value();
+      const head = work.get('workhead');
+      const title = head.get('title').text();
+      const year = head.get('year').text();
+      const data = { id: workId, title, year, status, type };
+      collected_works.set(poetId + '-' + workId, data);
+
+      const work_data = extract_work_data(work);
 
       if (work_data) {
         const toc_file_data = {
@@ -862,13 +1006,12 @@ Object.assign(
   collected,
   b('works_first_pass', works_first_pass, collected.poets)
 );
-console.log('Found texts', collected.texts.size > 200);
-console.log('Found works', collected.works.size > 50);
 build_dict_first_pass(collected);
 b('build_keywords', build_keywords);
 b('build_poet_lines_json', build_poet_lines_json, collected.poets);
 b('build_poet_works_json', build_poet_works_json, collected.poets);
 b('works_second_pass', works_second_pass, collected.poets);
+b('build_works_toc', build_works_toc, collected.poets);
 collected.timeline = build_global_timeline(collected);
 build_bio_json(collected);
 build_news(collected);
