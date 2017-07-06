@@ -508,8 +508,6 @@ const works_second_pass = collected_poets => {
   collected_poets.forEach((poet, poetId) => {
     safeMkdir(`static/api/${poetId}`);
 
-    let collectedHeaders = [];
-    let collectedLines = [];
     poet.workIds.forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       // if (!isFileModified(filename)) {
@@ -523,12 +521,11 @@ const works_second_pass = collected_poets => {
       const title = head.get('title').text();
       const year = head.get('year').text();
       const data = { id: workId, title, year, status, type };
-      collectedHeaders.push(data);
       collected_works.set(poetId + '-' + workId, data);
 
-      const work_data = handle_work(work);
+      const work_data = handle_work(work); // Creates texts
+
       if (work_data) {
-        collectedLines = collectedLines.concat(work_data.lines);
         const toc_file_data = {
           poet,
           toc: work_data.toc,
@@ -542,12 +539,38 @@ const works_second_pass = collected_poets => {
       }
       doc = null;
     });
+  });
+};
+
+const build_poet_works_json = poets => {
+  poets.forEach((poet, poetId) => {
+    safeMkdir(`static/api/${poetId}`);
+
+    const filenames = poet.workIds.map(
+      workId => `fdirs/${poetId}/${workId}.xml`
+    );
+    if (!isFileModified(`data/poets.xml:${poetId}`, ...filenames)) {
+      return;
+    }
+
+    let collectedHeaders = [];
+    poet.workIds.forEach(workId => {
+      const filename = `fdirs/${poetId}/${workId}.xml`;
+      let doc = loadXMLDoc(filename);
+      const work = doc.get('//kalliopework');
+      const status = work.attr('status').value();
+      const type = work.attr('type').value();
+      const head = work.get('workhead');
+      const title = head.get('title').text();
+      const year = head.get('year').text();
+      const data = { id: workId, title, year, status, type };
+      collectedHeaders.push(data);
+    });
 
     const objectToWrite = {
       poet: poet,
       works: collectedHeaders,
     };
-    let json = JSON.stringify(objectToWrite, null, 2);
     const worksOutFilename = `static/api/${poetId}/works.json`;
     console.log(worksOutFilename);
     writeJSON(worksOutFilename, objectToWrite);
@@ -844,6 +867,7 @@ console.log('Found works', collected.works.size > 50);
 build_dict_first_pass(collected);
 b('build_keywords', build_keywords);
 b('build_poet_lines_json', build_poet_lines_json, collected.poets);
+b('build_poet_works_json', build_poet_works_json, collected.poets);
 b('works_second_pass', works_second_pass, collected.poets);
 collected.timeline = build_global_timeline(collected);
 build_bio_json(collected);
