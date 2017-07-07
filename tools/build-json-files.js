@@ -186,6 +186,7 @@ const build_bio_json = collected => {
   });
 };
 
+// TODO: Speed this up
 const build_poets_json = () => {
   const data = fs.readFileSync('data/poets.xml');
   const parser = new xml2js.Parser({ explicitArray: false });
