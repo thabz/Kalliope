@@ -4,6 +4,7 @@ const {
   writeJSON,
   safeMkdir,
   fileExists,
+  fileModifiedTime,
 } = require('./helpers.js');
 const crypto = require('crypto');
 
@@ -12,7 +13,6 @@ const old_sha = loadJSON('./caches/files-sha.json') || {};
 let new_sha = {};
 let is_unmodified = {};
 let deleted_files = new Set();
-
 safeMkdir(`caches`);
 
 const isFileModified = (...filenames) => {
@@ -33,6 +33,13 @@ const isFileModified = (...filenames) => {
         return false;
       }
     }
+
+    const mtime = fileModifiedTime(filename);
+    if (old_sha[filename] != null && mtime === old_sha[filename].mtime) {
+      is_unmodified[filename] = true;
+      return false;
+    }
+
     const shasum = crypto.createHash('sha1');
     const data = loadFile(filename);
     let digest = null;
@@ -42,8 +49,13 @@ const isFileModified = (...filenames) => {
     } else {
       digest = 'NO-DATA';
     }
-    if (digest != old_sha[filename]) {
-      new_sha[filename] = digest;
+
+    if (
+      old_sha[filename] == null ||
+      digest !== old_sha[filename].sha ||
+      mtime !== old_sha[filename].mtime
+    ) {
+      new_sha[filename] = { sha: digest, mtime: mtime };
       return true;
     } else {
       is_unmodified[filename] = true;

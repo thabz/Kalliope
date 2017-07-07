@@ -15,6 +15,14 @@ const fileExists = filename => {
   return fs.existsSync(filename);
 };
 
+const fileModifiedTime = filename => {
+  if (fileExists(filename)) {
+    return fs.statSync(filename).mtimeMs;
+  } else {
+    return null;
+  }
+};
+
 const loadFile = filename => {
   if (!fileExists(filename)) {
     return null;
@@ -144,6 +152,7 @@ const htmlToXml = (html, collected, isPoetry = false) => {
 module.exports = {
   safeMkdir,
   fileExists,
+  fileModifiedTime,
   loadJSON,
   loadFile,
   writeJSON,
