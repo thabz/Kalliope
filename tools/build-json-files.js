@@ -800,14 +800,14 @@ const build_poet_lines_json = poets => {
 
 const build_keywords = () => {
   safeMkdir('static/api/keywords');
-  collected.keywords = new Map(loadCachedJSON('collected.keywords') || []);
+  let collected_keywords = new Map(loadCachedJSON('collected.keywords') || []);
   const folder = 'data/keywords';
   const filenames = fs
     .readdirSync(folder)
     .filter(x => x.endsWith('.xml'))
     .map(x => `${folder}/${x}`);
-  if (collected.keywords.size === 0 || isFileModified(...filenames)) {
-    collected.keywords = new Map();
+  if (collected_keywords.size === 0 || isFileModified(...filenames)) {
+    collected_keywords = new Map();
     let keywords_toc = new Array();
     filenames.map(path => {
       if (!path.endsWith('.xml')) {
@@ -838,13 +838,14 @@ const build_keywords = () => {
       const outFilename = `static/api/keywords/${id}.json`;
       console.log(outFilename);
       writeJSON(outFilename, data);
-      collected.keywords.set(id, { id, title });
+      collected_keywords.set(id, { id, title });
     });
-    writeCachedJSON('collected.keywords', Array.from(collected.keywords));
+    writeCachedJSON('collected.keywords', Array.from(collected_keywords));
     const outFilename = `static/api/keywords.json`;
     console.log(outFilename);
     writeJSON(outFilename, keywords_toc);
   }
+  return collected_keywords;
 };
 
 const build_news = collected => {
@@ -1010,7 +1011,7 @@ Object.assign(
   b('works_first_pass', works_first_pass, collected.poets)
 );
 build_dict_first_pass(collected);
-b('build_keywords', build_keywords);
+collected.keywords = b('build_keywords', build_keywords);
 b('build_poet_lines_json', build_poet_lines_json, collected.poets);
 b('build_poet_works_json', build_poet_works_json, collected.poets);
 b('works_second_pass', works_second_pass, collected.poets);

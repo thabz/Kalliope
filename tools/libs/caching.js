@@ -11,7 +11,7 @@ const crypto = require('crypto');
 // Load caches
 const old_sha = loadJSON('./caches/files-sha.json') || {};
 let new_sha = {};
-let is_unmodified = {};
+let unmodified_files = new Set();
 let deleted_files = new Set();
 safeMkdir(`caches`);
 
@@ -22,7 +22,7 @@ const isFileModified = (...filenames) => {
     if (new_sha[filename]) {
       return true;
     }
-    if (is_unmodified[filename]) {
+    if (unmodified_files.has(filename)) {
       return false;
     }
     if (!fileExists(filename)) {
@@ -36,7 +36,7 @@ const isFileModified = (...filenames) => {
 
     const mtime = fileModifiedTime(filename);
     if (old_sha[filename] != null && mtime === old_sha[filename].mtime) {
-      is_unmodified[filename] = true;
+      unmodified_files.add(filename);
       return false;
     }
 
@@ -58,16 +58,15 @@ const isFileModified = (...filenames) => {
       new_sha[filename] = { sha: digest, mtime: mtime };
       return true;
     } else {
-      is_unmodified[filename] = true;
+      unmodified_files.add(filename);
       return false;
     }
   };
+  let result = false;
   for (let i = 0; i < filenames.length; i++) {
-    if (_isFileModified(filenames[i])) {
-      return true;
-    }
+    result = _isFileModified(filenames[i]) || result;
   }
-  return false;
+  return result;
 };
 
 const refreshFilesModifiedCache = () => {
