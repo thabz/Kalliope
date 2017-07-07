@@ -1016,9 +1016,9 @@ b('build_poet_works_json', build_poet_works_json, collected.poets);
 b('works_second_pass', works_second_pass, collected.poets);
 b('build_works_toc', build_works_toc, collected.poets);
 collected.timeline = build_global_timeline(collected);
-build_bio_json(collected);
-build_news(collected);
-build_dict_second_pass(collected);
+b('build_bio_json', build_bio_json, collected);
+b('build_news', build_news, collected);
+b('build_dict_second_pass', build_dict_second_pass, collected);
 
 refreshFilesModifiedCache();
 print_benchmarking_results();
