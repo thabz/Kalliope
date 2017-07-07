@@ -122,10 +122,16 @@ export default class extends React.Component {
       ' - ' +
       poetNameString(poet, false, false) +
       ' - Kalliope';
+    const ogImage = `static/images/${poet.id}/p1-w600.jpg`;
     return (
       <div>
         <FootnoteContainer>
-          <Head headTitle={headTitle} ogTitle={ogTitle} />
+          <Head
+            headTitle={headTitle}
+            ogTitle={ogTitle}
+            ogImage={ogImage}
+            description="Her kommer de første linjer"
+          />
           <Main>
             <Nav
               lang={lang}

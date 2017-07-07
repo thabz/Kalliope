@@ -5,7 +5,7 @@ import { string } from 'prop-types';
 
 const defaultDescription = '';
 const defaultOGURL = '';
-const defaultOGImage = '';
+const defaultOGImage = '/static/poet-512.png';
 
 export default class Head extends React.Component {
   props: {
@@ -29,7 +29,7 @@ export default class Head extends React.Component {
         <link rel="icon" href="/static/favicon.ico" />
         <link rel="manifest" href="/static/manifest.json" />
         <meta name="theme-color" content="rgb(139, 56, 65)" />
-        <meta property="og:site_name" content="Kalliope" />
+        <meta property="og:site_name" content="www.kalliope.org" />
         <meta property="og:url" content={url || defaultOGURL} />
         <meta property="og:title" content={ogTitle || headTitle || ''} />
         <meta
@@ -40,8 +40,7 @@ export default class Head extends React.Component {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={ogImage || defaultOGImage} />
         <meta property="og:image" content={ogImage || defaultOGImage} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:width" content="600" />
       </NextHead>
     );
   }
