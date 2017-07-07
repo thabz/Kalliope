@@ -21,6 +21,7 @@ const {
 let collected = {
   texts: new Map(),
   works: new Map(),
+  workids: new Map(),
   keywords: new Map(),
   poets: new Map(),
   dict: new Map(),
@@ -80,10 +81,10 @@ const build_global_timeline = collected => {
 const build_poet_timeline_json = (poet, collected) => {
   let items = [];
   if (poet.type === 'poet') {
-    poet.workIds.forEach(workId => {
+    collected.workids.get(poet.id).forEach(workId => {
       const work = collected.works.get(`${poet.id}/${workId}`);
       if (work.year != '?') {
-        // TODO: This der er et titel-blad, så output type image.
+        // TODO: Hvis der er et titel-blad, så output type image.
         // TODO: Kun output <a> hvis værket har indhold.
         items.push({
           date: work.year,
@@ -151,7 +152,9 @@ const build_bio_json = collected => {
       !isFileModified(
         `data/poets.xml:${poet.id}`,
         'data/events.xml',
-        ...poet.workIds.map(workId => `fdirs/${poet.id}/${workId}.xml`),
+        ...collected.workids
+          .get(poetId)
+          .map(workId => `fdirs/${poet.id}/${workId}.xml`),
         `fdirs/${poet.id}/events.xml`,
         `fdirs/${poet.id}/bio.xml`
       )
@@ -186,7 +189,7 @@ const build_bio_json = collected => {
   });
 };
 
-// TODO: Speed this up
+// TODO: Speed this up by caching.
 const build_poets_json = () => {
   const data = fs.readFileSync('data/poets.xml');
   const parser = new xml2js.Parser({ explicitArray: false });
@@ -213,7 +216,6 @@ const build_poets_json = () => {
         has_biography:
           fs.existsSync(`fdirs/${id}/bio.xml`) ||
             fs.existsSync(`fdirs/${id}/events.xml`),
-        workIds: worksArray,
       };
       list.push(poet);
       byCountry.set(country, list);
@@ -228,6 +230,24 @@ const build_poets_json = () => {
     writeJSON(`static/api/poets-${country}.json`, sorted);
   });
   return collected_poets;
+};
+
+const build_poet_workids = () => {
+  let collected_workids = new Map(loadCachedJSON('collected.workids') || []);
+  if (collected_workids.size === 0 || isFileModified('data/poets.xml')) {
+    collected_workids = new Map();
+    const doc = loadXMLDoc('data/poets.xml');
+    doc.find('/persons/person').forEach(person => {
+      const poetId = person.attr('id').value();
+      const workIds = person.get('works');
+      let items = workIds
+        ? workIds.text().split(',').filter(x => x.length > 0)
+        : [];
+      collected_workids.set(poetId, items);
+    });
+    writeCachedJSON('collected.workids', Array.from(collected_workids));
+  }
+  return collected_workids;
 };
 
 const get_notes = head => {
@@ -454,13 +474,13 @@ const handle_work = work => {
 
 // Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
-const works_first_pass = poets => {
+const works_first_pass = collected => {
   let texts = new Map(loadCachedJSON('collected.texts') || []);
   let works = new Map(loadCachedJSON('collected.works') || []);
   let found_changes = false;
   const force_reload = texts.size === 0 || works.size === 0;
-  poets.forEach(poet => {
-    poet.workIds.forEach(workId => {
+  collected.poets.forEach(poet => {
+    collected.workids.get(poet.id).forEach(workId => {
       const workFilename = `fdirs/${poet.id}/${workId}.xml`;
       if (!force_reload && !isFileModified(workFilename)) {
         return;
@@ -505,11 +525,11 @@ const works_first_pass = poets => {
   return { works, texts };
 };
 
-const works_second_pass = collected_poets => {
-  collected_poets.forEach((poet, poetId) => {
+const works_second_pass = collected => {
+  collected.poets.forEach((poet, poetId) => {
     safeMkdir(`static/api/${poetId}`);
 
-    poet.workIds.forEach(workId => {
+    collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!isFileModified(filename)) {
         return;
@@ -532,7 +552,7 @@ const works_second_pass = collected_poets => {
   });
 };
 
-const build_works_toc = poets => {
+const build_works_toc = collected => {
   // Returns {toc, notes, pictures}
   const extract_work_data = work => {
     const type = work.attr('type').value();
@@ -652,10 +672,10 @@ const build_works_toc = poets => {
     return { lines, toc, notes, pictures };
   };
 
-  poets.forEach((poet, poetId) => {
+  collected.poets.forEach((poet, poetId) => {
     safeMkdir(`static/api/${poetId}`);
 
-    poet.workIds.forEach(workId => {
+    collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!isFileModified(filename)) {
         return;
@@ -689,19 +709,19 @@ const build_works_toc = poets => {
   });
 };
 
-const build_poet_works_json = poets => {
-  poets.forEach((poet, poetId) => {
+const build_poet_works_json = collected => {
+  collected.poets.forEach((poet, poetId) => {
     safeMkdir(`static/api/${poetId}`);
 
-    const filenames = poet.workIds.map(
-      workId => `fdirs/${poetId}/${workId}.xml`
-    );
+    const filenames = collected.workids
+      .get(poetId)
+      .map(workId => `fdirs/${poetId}/${workId}.xml`);
     if (!isFileModified(`data/poets.xml:${poetId}`, ...filenames)) {
       return;
     }
 
     let collectedHeaders = [];
-    poet.workIds.forEach(workId => {
+    collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       let doc = loadXMLDoc(filename);
       const work = doc.get('//kalliopework');
@@ -724,11 +744,11 @@ const build_poet_works_json = poets => {
   });
 };
 
-const build_poet_lines_json = poets => {
-  poets.forEach((poet, poetId) => {
-    const filenames = poet.workIds.map(
-      workId => `fdirs/${poetId}/${workId}.xml`
-    );
+const build_poet_lines_json = collected => {
+  collected.poets.forEach((poet, poetId) => {
+    const filenames = collected.workids
+      .get(poetId)
+      .map(workId => `fdirs/${poetId}/${workId}.xml`);
     if (!isFileModified(`data/poets.xml:${poetId}`, ...filenames)) {
       return;
     }
@@ -736,9 +756,12 @@ const build_poet_lines_json = poets => {
     safeMkdir(`static/api/${poetId}`);
 
     let collectedLines = [];
-    poet.workIds.forEach(workId => {
+    collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       let doc = loadXMLDoc(filename);
+      if (doc == null) {
+        console.log("Couldn't load", filename);
+      }
       doc.find('//poem').forEach(part => {
         const textId = part.attr('id').value();
         const head = part.get('head');
@@ -1003,19 +1026,17 @@ const print_benchmarking_results = () => {
 };
 
 safeMkdir(`static/api`);
+collected.workids = b('build_poet_workids', build_poet_workids);
 collected.poets = b('build_poets_json', build_poets_json);
 b('build_bibliography_json', build_bibliography_json, collected);
 // Build collected.works and collected.texts
-Object.assign(
-  collected,
-  b('works_first_pass', works_first_pass, collected.poets)
-);
+Object.assign(collected, b('works_first_pass', works_first_pass, collected));
 build_dict_first_pass(collected);
 collected.keywords = b('build_keywords', build_keywords);
-b('build_poet_lines_json', build_poet_lines_json, collected.poets);
-b('build_poet_works_json', build_poet_works_json, collected.poets);
-b('works_second_pass', works_second_pass, collected.poets);
-b('build_works_toc', build_works_toc, collected.poets);
+b('build_poet_lines_json', build_poet_lines_json, collected);
+b('build_poet_works_json', build_poet_works_json, collected);
+b('works_second_pass', works_second_pass, collected);
+b('build_works_toc', build_works_toc, collected);
 collected.timeline = build_global_timeline(collected);
 b('build_bio_json', build_bio_json, collected);
 b('build_news', build_news, collected);
