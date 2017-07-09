@@ -8,8 +8,10 @@ const {
 } = require('./helpers.js');
 const crypto = require('crypto');
 
+const force_reload = process.argv.indexOf('--force-reload') !== -1;
+
 // Load caches
-const old_sha = loadJSON('./caches/files-sha.json') || {};
+const old_sha = force_reload ? {} : loadJSON('./caches/files-sha.json') || {};
 let new_sha = {};
 let unmodified_files = new Set();
 let deleted_files = new Set();
