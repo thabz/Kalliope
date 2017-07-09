@@ -97,11 +97,15 @@ export default class extends React.Component {
       />
     );
     const refs = text.refs.map((ref, i) => {
-      return <p key={i}><TextContent contentHtml={ref} lang={lang} /></p>;
+      return (
+        <div key={i} style={{ marginBottom: '10px' }}>
+          <TextContent contentHtml={ref} lang={lang} />
+        </div>
+      );
     });
-    const renderedRefs = refs.length === 0
+    const renderedRefs = refs.length == 0
       ? null
-      : <div><p>Henvisninger hertil:</p>{refs}</div>;
+      : [<p>Henvisninger hertil:</p>, ...refs];
     const sidebar = (
       <div>{renderedNotes}{renderedPictures}{renderedRefs}<FootnoteList /></div>
     );

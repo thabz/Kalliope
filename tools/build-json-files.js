@@ -34,11 +34,7 @@ const poetName = poet => {
   const { firstname, lastname } = name;
   if (lastname) {
     if (firstname) {
-      if (lastNameFirst) {
-        namePart = `${lastname}, ${firstname}`;
-      } else {
-        namePart = `${firstname} ${lastname}`;
-      }
+      namePart = `${firstname} ${lastname}`;
     } else {
       namePart = lastname;
     }
@@ -355,7 +351,7 @@ const handle_text = (poetId, workId, text, isPoetry) => {
   let refsArray = (collected.textrefs.get(textId) || []).map(id => {
     const meta = collected.texts.get(id);
     const poet = poetName(collected.poets.get(meta.poetId));
-    const work = workName(collected.works.get(meta.workId));
+    const work = workName(collected.works.get(meta.poetId + '/' + meta.workId));
     return `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`;
   });
 
@@ -612,14 +608,16 @@ const build_textrefs = collected => {
       let doc = loadXMLDoc(filename);
       const texts = doc.find('//poem|//prose');
       texts.forEach(text => {
-        const notes = text.find('head/notes/note|body/footnote');
+        const notes = text.find('head/notes/note|body//footnote|body//note');
         notes.forEach(note => {
           regexps.forEach(regexp => {
             while ((match = regexp.exec(note.toString())) != null) {
               const fromId = text.attr('id').value();
               const toId = match[1];
               const array = textrefs.get(toId) || [];
-              array.push(fromId);
+              if (array.indexOf(fromId) === -1) {
+                array.push(fromId);
+              }
               textrefs.set(toId, array);
             }
           });
