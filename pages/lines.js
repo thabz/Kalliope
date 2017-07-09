@@ -56,7 +56,7 @@ export default class extends React.Component {
       if (line == null || line.length == 0) {
         return;
       }
-      linePair['sortBy'] = line + alternative;
+      linePair['sortBy'] = line + ' [' + alternative;
       let letter: string = line[0];
       if (line.startsWith('Aa')) {
         letter = 'Å';
