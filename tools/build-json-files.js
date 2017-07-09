@@ -28,6 +28,36 @@ let collected = {
   timeline: new Array(),
 };
 
+// Use poetname.js:poetNameString instead when node.js uses modules
+const poetName = poet => {
+  const { name } = poet;
+  const { firstname, lastname } = name;
+  if (lastname) {
+    if (firstname) {
+      if (lastNameFirst) {
+        namePart = `${lastname}, ${firstname}`;
+      } else {
+        namePart = `${firstname} ${lastname}`;
+      }
+    } else {
+      namePart = lastname;
+    }
+  } else {
+    namePart = firstname;
+  }
+  return namePart;
+};
+
+// Use workname.js: workTitleString instead when node.js uses modules
+const workName = work => {
+  const { title, year } = work;
+  let yearPart = '';
+  if (year && year !== '?') {
+    yearPart = ` (${year})`;
+  }
+  return title + yearPart;
+};
+
 // Ready after second pass
 let collected_works = new Map();
 
@@ -322,6 +352,13 @@ const handle_text = (poetId, workId, text, isPoetry) => {
     keywordsArray = keywords.text().split(',');
   }
 
+  let refsArray = (collected.textrefs.get(textId) || []).map(id => {
+    const meta = collected.texts.get(id);
+    const poet = poetName(collected.poets.get(meta.poetId));
+    const work = workName(collected.works.get(meta.workId));
+    return `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`;
+  });
+
   const foldername = Paths.textFolder(textId);
   mkdirp.sync(foldername);
   const text_data = {
@@ -333,6 +370,7 @@ const handle_text = (poetId, workId, text, isPoetry) => {
       subtitles,
       notes: get_notes(head),
       keywords: keywordsArray,
+      refs: refsArray,
       pictures: get_pictures(head),
       content_html: htmlToXml(
         body.toString().replace('<body>', '').replace('</body>', ''),
@@ -514,6 +552,8 @@ const works_first_pass = collected => {
         const linkTitle = title || firstline;
         texts.set(textId, {
           title: replaceDashes(linkTitle),
+          poetId: poet.id,
+          workId: workId,
         });
       });
     });
@@ -550,6 +590,47 @@ const works_second_pass = collected => {
       doc = null;
     });
   });
+};
+
+const build_textrefs = collected => {
+  let textrefs = new Map(loadCachedJSON('collected.textrefs') || []);
+  const force_reload = textrefs.size == 0;
+  let found_changes = false;
+  const regexps = [
+    /xref poem="([^"]*)"/g,
+    /a poem="([^"]*)"/g,
+    /xref bibel="([^",]*)/g,
+  ];
+  collected.poets.forEach((poet, poetId) => {
+    collected.workids.get(poetId).forEach(workId => {
+      const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!force_reload && !isFileModified(filename)) {
+        return;
+      } else {
+        found_changes = true;
+      }
+      let doc = loadXMLDoc(filename);
+      const texts = doc.find('//poem|//prose');
+      texts.forEach(text => {
+        const notes = text.find('head/notes/note|body/footnote');
+        notes.forEach(note => {
+          regexps.forEach(regexp => {
+            while ((match = regexp.exec(note.toString())) != null) {
+              const fromId = text.attr('id').value();
+              const toId = match[1];
+              const array = textrefs.get(toId) || [];
+              array.push(fromId);
+              textrefs.set(toId, array);
+            }
+          });
+        });
+      });
+    });
+  });
+  if (found_changes) {
+    writeCachedJSON('collected.textrefs', Array.from(textrefs));
+  }
+  return textrefs;
 };
 
 const build_works_toc = collected => {
@@ -1029,6 +1110,7 @@ safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);
 collected.poets = b('build_poets_json', build_poets_json);
 b('build_bibliography_json', build_bibliography_json, collected);
+collected.textrefs = b('build_textrefs', build_textrefs, collected);
 // Build collected.works and collected.texts
 Object.assign(collected, b('works_first_pass', works_first_pass, collected));
 build_dict_first_pass(collected);

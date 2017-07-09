@@ -96,8 +96,14 @@ export default class extends React.Component {
         srcPrefix={`/static/images/${poet.id}`}
       />
     );
+    const refs = text.refs.map((ref, i) => {
+      return <p key={i}><TextContent contentHtml={ref} lang={lang} /></p>;
+    });
+    const renderedRefs = refs.length === 0
+      ? null
+      : <div><p>Henvisninger hertil:</p>{refs}</div>;
     const sidebar = (
-      <div>{renderedNotes}{renderedPictures}<FootnoteList /></div>
+      <div>{renderedNotes}{renderedPictures}{renderedRefs}<FootnoteList /></div>
     );
     const options = {
       isBibleVerses: poet.id === 'bibel',

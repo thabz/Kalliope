@@ -84,6 +84,7 @@ export type Text = {
   title: string,
   subtitles?: Array<string>,
   notes: Array<NoteItem>,
+  refs: Array<string>,
   pictures: Array<PictureItem>,
   content_html: string,
 };
