@@ -107,7 +107,7 @@ export default class extends React.Component {
       ? null
       : [<p>Henvisninger hertil:</p>, ...refs];
     const sidebar = (
-      <div>{renderedNotes}{renderedPictures}{renderedRefs}<FootnoteList /></div>
+      <div>{renderedNotes}{renderedPictures}<FootnoteList />{renderedRefs}</div>
     );
     const options = {
       isBibleVerses: poet.id === 'bibel',
