@@ -37,14 +37,20 @@ export default class extends React.Component {
       ? <div className="nodata">
           Kalliope indeholder endnu ingen tekster fra denne digter.
         </div>
-      : works.map((work, i) => {
-          const url = `/${lang}/work/${poet.id}/${work.id}`;
-          return (
-            <div className="list-section-line" key={work.id}>
-              <Link route={url}><a><WorkName work={work} /></a></Link>
-            </div>
-          );
-        });
+      : works
+          .sort((a, b) => {
+            return (a.year || 'a') > (b.year || 'a') ? 1 : -1;
+          })
+          .map((work, i) => {
+            const workName = <WorkName work={work} />;
+            const url = `/${lang}/work/${poet.id}/${work.id}`;
+            const name = work.has_content
+              ? <Link route={url}><a>{workName}</a></Link>
+              : workName;
+            return (
+              <div className="list-section-line" key={work.id}>{name}</div>
+            );
+          });
 
     const title = <PoetName poet={poet} includePeriod />;
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';

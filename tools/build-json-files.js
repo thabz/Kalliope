@@ -804,12 +804,16 @@ const build_poet_works_json = collected => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       let doc = loadXMLDoc(filename);
       const work = doc.get('//kalliopework');
-      const status = work.attr('status').value();
-      const type = work.attr('type').value();
       const head = work.get('workhead');
-      const title = head.get('title').text();
-      const year = head.get('year').text();
-      const data = { id: workId, title, year, status, type };
+      const body = work.get('workbody');
+      const data = {
+        id: workId,
+        title: head.get('title').text(),
+        year: head.get('year').text(),
+        has_content: body != null && body.find('//poem|//prose').length > 0,
+        status: work.attr('status').value(),
+        type: work.attr('type').value(),
+      };
       collectedHeaders.push(data);
     });
 
