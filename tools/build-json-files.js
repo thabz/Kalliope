@@ -111,14 +111,15 @@ const build_poet_timeline_json = (poet, collected) => {
       const work = collected.works.get(`${poet.id}/${workId}`);
       if (work.year != '?') {
         // TODO: Hvis der er et titel-blad, så output type image.
-        // TODO: Kun output <a> hvis værket har indhold.
+        const workName = work.has_content
+          ? `<a work="${poet.id}/${workId}">${work.title}</a>`
+          : work.title;
         items.push({
           date: work.year,
           type: 'text',
           lang: 'da',
           is_history_item: false,
-          content_html: `${poet.name
-            .lastname}: <a work="${poet.id}/${workId}">${work.title}</a>.`,
+          content_html: `${poet.name.lastname}: ${workName}.`,
         });
       }
     });
@@ -536,6 +537,7 @@ const works_first_pass = collected => {
       works.set(`${poet.id}/${workId}`, {
         title: replaceDashes(title),
         year: year,
+        has_content: work.find('//poem|//prose').length > 0,
       });
 
       work.find('//poem|//prose').forEach(part => {
