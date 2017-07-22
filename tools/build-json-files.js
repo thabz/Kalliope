@@ -204,6 +204,7 @@ const build_bio_json = collected => {
           .get(poetId)
           .map(workId => `fdirs/${poet.id}/${workId}.xml`),
         `fdirs/${poet.id}/events.xml`,
+        `fdirs/${poet.id}/p1.xml`,
         `fdirs/${poet.id}/bio.xml`
       )
     ) {
