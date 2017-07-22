@@ -27,6 +27,7 @@ export type Poet = {
   has_bibliography: boolean,
   has_biography: boolean,
   has_works: boolean,
+  has_portraits: boolean,
 };
 
 export type Work = {

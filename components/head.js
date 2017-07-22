@@ -5,7 +5,7 @@ import { string } from 'prop-types';
 
 const defaultDescription = '';
 const defaultOGURL = '';
-const defaultOGImage = '/static/poet-512.png';
+const defaultOGImage = '/static/touch-icon.png';
 
 export default class Head extends React.Component {
   props: {
@@ -13,8 +13,9 @@ export default class Head extends React.Component {
     ogTitle?: string,
     description?: string,
     url?: string,
-    ogImage?: string,
+    ogImage?: ?string,
   };
+
   render() {
     const { ogTitle, headTitle, description, url, ogImage } = this.props;
     return (

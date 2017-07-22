@@ -142,7 +142,7 @@ export default class extends React.Component {
 
     const title = <PoetName poet={poet} includePeriod />;
     const ogTitle =
-      poetNameString(poet, false, true) +
+      poetNameString(poet, false, false) +
       ': »' +
       textTitleString(text) +
       '« fra ' +
@@ -152,7 +152,15 @@ export default class extends React.Component {
       ' - ' +
       poetNameString(poet, false, false) +
       ' - Kalliope';
-    const ogImage = `static/images/${poet.id}/p1-w600.jpg`;
+
+    let ogImage: ?string = poet.has_portraits
+      ? `/static/images/${poet.id}/p1-w600.jpg`
+      : null;
+    let ogDescription = text.content_html
+      .replace('\n', ' // ')
+      .replace('<br/>', ' // ')
+      .replace(/\s\s/g, ' ')
+      .substr(0, 300);
     return (
       <div>
         <FootnoteContainer>
@@ -160,7 +168,7 @@ export default class extends React.Component {
             headTitle={headTitle}
             ogTitle={ogTitle}
             ogImage={ogImage}
-            description="Her kommer de første linjer"
+            description={ogDescription}
           />
           <Main>
             <Nav
