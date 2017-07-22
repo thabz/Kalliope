@@ -75,7 +75,7 @@ export type NoteItem = {
 
 export type PictureItem = {
   lang: Lang,
-  content_html: string,
+  content_html?: string,
   src: string,
 };
 

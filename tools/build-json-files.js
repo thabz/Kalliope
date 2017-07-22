@@ -243,6 +243,7 @@ const build_poets_json = () => {
         has_biography:
           fs.existsSync(`fdirs/${id}/bio.xml`) ||
             fs.existsSync(`fdirs/${id}/events.xml`),
+        has_thumb: fs.existsSync(`static/images/${id}/sq.jpg`),
       };
       list.push(poet);
       byCountry.set(country, list);

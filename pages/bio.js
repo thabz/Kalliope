@@ -109,6 +109,26 @@ class PersonMeta extends React.Component {
   }
 }
 
+class PersonThumb extends React.Component {
+  props: {
+    poet: Poet,
+    lang: Lang,
+  };
+  render() {
+    const { poet, lang } = this.props;
+    if (!poet.has_thumb) {
+      return null;
+    }
+    const srcPrefix = `/static/images/${poet.id}`;
+    const picture = {
+      lang: lang,
+      src: 'sq.jpg',
+      content_html: 'Maleri af C.A. Jensen, 1832.',
+    };
+    return <Picture picture={picture} lang={lang} srcPrefix={srcPrefix} />;
+  }
+}
+
 class Timeline extends React.Component {
   props: {
     timeline: Array<TimelineItem>,
@@ -119,7 +139,7 @@ class Timeline extends React.Component {
       return null;
     }
     let prevYear = null;
-    const items = timeline.map(item => {
+    const items = timeline.map((item, i) => {
       const curYear = item.date.substring(0, 4);
       const year = curYear !== prevYear ? <div>{curYear}</div> : null;
       prevYear = curYear;
@@ -139,7 +159,7 @@ class Timeline extends React.Component {
       }
 
       return (
-        <div style={{ marginBottom: '10px', breakInside: 'avoid' }}>
+        <div key={i} style={{ marginBottom: '10px', breakInside: 'avoid' }}>
           <div style={{ float: 'left' }}>{year}</div>
           <div
             style={{
@@ -202,7 +222,12 @@ export default class extends React.Component {
               <TextContent contentHtml={content_html} lang={lang} />
               <Timeline timeline={timeline} />
             </div>
-            <PersonMeta poet={poet} />
+            <div>
+              <PersonMeta poet={poet} />
+              <div style={{ width: '100%', marginTop: '40px' }}>
+                <PersonThumb poet={poet} lang={lang} />
+              </div>
+            </div>
           </SidebarSplit>
           <LangSelect lang={lang} />
         </Main>
