@@ -172,6 +172,27 @@ const build_poet_timeline_json = (poet, collected) => {
   return items;
 };
 
+const build_portrait_json = (poet, number, collected) => {
+  const imagePath = `static/images/${poet.id}/p${number}.jpg`;
+  if (!fs.existsSync(imagePath)) {
+    return null;
+  }
+  const data = {
+    src: `p${number}.jpg`,
+    lang: poet.lang,
+  };
+  const portraitTextPath = `fdirs/${poet.id}/p${number}.xml`;
+  const doc = loadXMLDoc(portraitTextPath);
+  if (doc != null) {
+    const body = doc.get('//body');
+    data.content_html = htmlToXml(
+      body.toString().replace('<body>', '').replace('</body>', ''),
+      collected
+    );
+  }
+  return data;
+};
+
 const build_bio_json = collected => {
   collected.poets.forEach((poet, poetId) => {
     // Skip if all of the participating xml files aren't modified
@@ -210,6 +231,7 @@ const build_bio_json = collected => {
       );
     }
     data.timeline = build_poet_timeline_json(poet, collected);
+    data.portrait = build_portrait_json(poet, 1, collected);
     const destFilename = `static/api/${poet.id}/bio.json`;
     console.log(destFilename);
     writeJSON(destFilename, data);
@@ -243,6 +265,7 @@ const build_poets_json = () => {
         has_biography:
           fs.existsSync(`fdirs/${id}/bio.xml`) ||
             fs.existsSync(`fdirs/${id}/events.xml`),
+        has_portraits: fs.existsSync(`static/images/${id}/p1.jpg`),
       };
       list.push(poet);
       byCountry.set(country, list);

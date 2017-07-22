@@ -109,6 +109,24 @@ class PersonMeta extends React.Component {
   }
 }
 
+class PersonPortrait extends React.Component {
+  props: {
+    poet: Poet,
+    portrait?: PictureItem,
+    lang: Lang,
+  };
+  render() {
+    const { portrait, poet, lang } = this.props;
+    if (!poet.has_portraits || portrait == null) {
+      return null;
+    }
+    const srcPrefix = `/static/images/${poet.id}`;
+    return (
+      <Picture picture={portrait} lang={portrait.lang} srcPrefix={srcPrefix} />
+    );
+  }
+}
+
 class Timeline extends React.Component {
   props: {
     timeline: Array<TimelineItem>,
@@ -119,7 +137,7 @@ class Timeline extends React.Component {
       return null;
     }
     let prevYear = null;
-    const items = timeline.map(item => {
+    const items = timeline.map((item, i) => {
       const curYear = item.date.substring(0, 4);
       const year = curYear !== prevYear ? <div>{curYear}</div> : null;
       prevYear = curYear;
@@ -139,7 +157,7 @@ class Timeline extends React.Component {
       }
 
       return (
-        <div style={{ marginBottom: '10px', breakInside: 'avoid' }}>
+        <div key={i} style={{ marginBottom: '10px', breakInside: 'avoid' }}>
           <div style={{ float: 'left' }}>{year}</div>
           <div
             style={{
@@ -162,6 +180,7 @@ class Timeline extends React.Component {
 export default class extends React.Component {
   props: {
     lang: Lang,
+    portrait?: PictureItem,
     poet: Poet,
     timeline: Array<TimelineItem>,
     content_html: string,
@@ -175,11 +194,13 @@ export default class extends React.Component {
     const res = await fetch(createURL(`/static/api/${poetId}/bio.json`));
     const json: {
       poet: Poet,
+      portrait?: PictureItem,
       timeline: Array<TimelineItem>,
       content_html: string,
     } = await res.json();
     return {
       lang,
+      portrait: json.portrait,
       poet: json.poet,
       content_html: json.content_html,
       timeline: json.timeline,
@@ -187,7 +208,7 @@ export default class extends React.Component {
   }
 
   render() {
-    const { lang, poet, content_html, timeline } = this.props;
+    const { lang, poet, portrait, content_html, timeline } = this.props;
     const title = <PoetName poet={poet} includePeriod />;
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
     return (
@@ -202,7 +223,31 @@ export default class extends React.Component {
               <TextContent contentHtml={content_html} lang={lang} />
               <Timeline timeline={timeline} />
             </div>
-            <PersonMeta poet={poet} />
+            <div>
+              <div className="horizontal-on-small">
+                <PersonMeta poet={poet} />
+                <div style={{ width: '100%', marginTop: '40px' }}>
+                  <PersonPortrait poet={poet} portrait={portrait} lang={lang} />
+                </div>
+                <style jsx>{`
+                  .horizontal-on-small {
+                    display: flex;
+                    flex-direction: column;
+                  }
+                  @media (max-width: 700px) {
+                    .horizontal-on-small {
+                      flex-direction: row;
+                      justify-content: space-between;
+                      width: 100%;
+                    }
+                    .horizontal-on-small > * {
+                      flex-basis: 50%;
+                      margin: 0 !important;
+                    }
+                  }
+                `}</style>
+              </div>
+            </div>
           </SidebarSplit>
           <LangSelect lang={lang} />
         </Main>
