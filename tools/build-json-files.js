@@ -333,7 +333,7 @@ const get_pictures = head => {
   });
 };
 
-const handle_text = (poetId, workId, text, isPoetry) => {
+const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
   if (
     !isFileModified(`data/poets.xml:${poetId}`, `fdirs/${poetId}/${workId}.xml`)
   ) {
@@ -381,10 +381,13 @@ const handle_text = (poetId, workId, text, isPoetry) => {
   });
 
   const foldername = Paths.textFolder(textId);
+  const prev_next = resolve_prev_next(textId);
   mkdirp.sync(foldername);
   const text_data = {
     poet,
     work,
+    prev: prev_next.prev,
+    next: prev_next.next,
     text: {
       id: textId,
       title: replaceDashes(title),
@@ -410,7 +413,7 @@ const handle_work = work => {
   const workId = work.attr('id').value();
   let lines = [];
 
-  const handle_section = section => {
+  const handle_section = (section, resolve_prev_next) => {
     let poems = [];
     let proses = [];
     let toc = [];
@@ -484,9 +487,9 @@ const handle_work = work => {
           title: replaceDashes(toctitle.title),
           prefix: replaceDashes(toctitle.prefix),
         });
-        handle_text(poetId, workId, part, true);
+        handle_text(poetId, workId, part, true, resolve_prev_next);
       } else if (partName === 'section') {
-        const subtoc = handle_section(part.get('content'));
+        const subtoc = handle_section(part.get('content'), resolve_prev_next);
         const title = part.get('head/toctitle').text();
         toc.push({
           type: 'section',
@@ -507,7 +510,7 @@ const handle_work = work => {
           title: replaceDashes(toctitle.title),
           prefix: toctitle.prefix,
         });
-        handle_text(poetId, workId, part, false);
+        handle_text(poetId, workId, part, false, resolve_prev_next);
       }
     });
     return toc;
@@ -527,7 +530,31 @@ const handle_work = work => {
     };
   }
 
-  const toc = handle_section(workbody);
+  // Create function to resolve prev/next links in texts
+  const resolve_prev_next = (function() {
+    const items = workbody.find('//poem|//prose').map(part => {
+      const textId = part.attr('id').value();
+      const head = part.get('head');
+      const title = head.get('title') ? head.get('title').text() : null;
+      return { id: textId, title: title };
+    });
+    return textId => {
+      const index = items.findIndex(x => {
+        return x.id === textId;
+      });
+      let prev = null,
+        next = null;
+      if (index < items.length - 1) {
+        next = items[index + 1];
+      }
+      if (index > 0) {
+        prev = items[index - 1];
+      }
+      return { prev, next };
+    };
+  })();
+
+  const toc = handle_section(workbody, resolve_prev_next);
   return { lines, toc, notes, pictures };
 };
 

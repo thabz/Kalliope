@@ -1,6 +1,7 @@
 // @flow
 
 import React from 'react';
+import { Link } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
 import Nav from '../components/nav';
@@ -18,7 +19,7 @@ import Note from '../components/note.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
-import type { Lang, Poet, Work, Text } from './helpers/types.js';
+import type { Lang, Poet, Work, Text, PrevNextText } from './helpers/types.js';
 import 'isomorphic-fetch';
 
 class TextHeading extends React.Component {
@@ -67,6 +68,8 @@ export default class extends React.Component {
     poet: Poet,
     work: Work,
     text: Text,
+    prev?: PrevNextText,
+    next?: PrevNextText,
   };
 
   static async getInitialProps({
@@ -79,12 +82,14 @@ export default class extends React.Component {
       lang,
       poet: json.poet,
       work: json.work,
+      prev: json.prev,
+      next: json.next,
       text: json.text,
     };
   }
 
   render() {
-    const { lang, poet, work, text } = this.props;
+    const { lang, poet, work, prev, next, text } = this.props;
 
     const renderedNotes = text.notes.map((note, i) => {
       return <Note key={i} note={note} lang={lang} />;
@@ -103,6 +108,21 @@ export default class extends React.Component {
         </div>
       );
     });
+    const rightSideItems = [prev, next].map((t, i) => {
+      if (t == null) return null;
+      const url = Links.textURL(lang, t.id);
+      const arrow = i === 0 ? '←' : '→';
+      const style = i === 1 ? { marginLeft: '10px' } : null;
+      return (
+        <div style={style}>
+          <Link prefetch route={url}><a title={t.title}>{arrow}</a></Link>
+        </div>
+      );
+    });
+    const rightSide = (
+      <div style={{ display: 'flex', padding: '4px 0' }}>{rightSideItems}</div>
+    );
+
     const renderedRefs = refs.length == 0
       ? null
       : [<p>Henvisninger hertil:</p>, ...refs];
@@ -147,6 +167,7 @@ export default class extends React.Component {
               lang={lang}
               poet={poet}
               work={work}
+              rightSide={rightSide}
               title={<TextName text={text} />}
             />
             <Heading title={title} subtitle="Værker" />

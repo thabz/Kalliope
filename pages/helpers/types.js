@@ -42,6 +42,11 @@ export type Section<T> = {
   items: Array<T>,
 };
 
+export type PrevNextText = {
+  id: string,
+  title: string,
+};
+
 export type Lang = 'da' | 'en';
 
 export type LinesPair = {

@@ -16,10 +16,11 @@ export default class Nav extends React.Component {
     work?: Work,
     links?: Array<any>,
     title?: any,
+    rightSide?: any,
   };
 
   render() {
-    const { lang, poet, work, title } = this.props;
+    const { lang, poet, work, title, rightSide } = this.props;
     let { links } = this.props;
     const rootLink = (
       <Link prefetch route={Links.frontPageURL(lang)}><a>Kalliope</a></Link>
@@ -55,8 +56,13 @@ export default class Nav extends React.Component {
       joinedLinks.push(<div key={'link' + i}>{link}</div>);
     });
     return (
-      <nav>
-        {joinedLinks}
+      <div className="nav-container">
+        <nav>
+          {joinedLinks}
+        </nav>
+        <div>
+          {rightSide}
+        </div>
         <style jsx>{`
           :global(body) {
             margin: 0;
@@ -76,13 +82,18 @@ export default class Nav extends React.Component {
             flex-shrink: 1;
             padding: 4px 0px;
           }
+          .nav-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+          }
           @media print {
             nav {
               display: none;
             }
           }
         `}</style>
-      </nav>
+      </div>
     );
   }
 }

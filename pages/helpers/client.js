@@ -8,6 +8,7 @@ import type {
   Work,
   WorkId,
   Text,
+  PrevNextText,
   LinesPair,
   TocItem,
   NoteItem,
@@ -55,10 +56,12 @@ export const works = async (poetId: string): FetchWorksResult => {
 type FetchTextResult = Promise<{
   poet: Poet,
   work: Work,
+  prev: PrevNextText,
+  next: PrevNextText,
   text: Text,
 }>;
 export const text = async (textId: string): FetchTextResult => {
   const path: string = Paths.textPath(textId);
   const res = await fetch(createURL(`/${path}`));
-  return (await res.json(): FetchWorksResult);
+  return (await res.json(): FetchTextResult);
 };
