@@ -5,9 +5,10 @@ import type { Work } from '../pages/helpers/types.js';
 export default class WorkName extends React.Component {
   props: {
     work: Work,
+    cursive?: boolean,
   };
   render() {
-    const { work } = this.props;
+    const { work, cursive } = this.props;
     const { title, year } = work;
     let titlePart = <span>{title}</span>;
     let yearPart = null;
@@ -16,7 +17,10 @@ export default class WorkName extends React.Component {
     }
 
     const parts = [titlePart, yearPart].map((p, i) => {
-      const className = i === 0 ? 'title' : 'year';
+      let className = i === 0 ? 'title' : 'year';
+      if (cursive === true && i === 0) {
+        className += ' cursive';
+      }
       return p ? <span key={i} className={className}>{p} </span> : null;
     });
     return (
@@ -25,6 +29,9 @@ export default class WorkName extends React.Component {
         <style jsx>{`
           .workname :global(.year) {
             opacity: 0.5;
+          }
+          .workname :global(.title.cursive) {
+            font-style: italic;
           }
         `}</style>
       </span>

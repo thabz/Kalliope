@@ -94,8 +94,17 @@ export default class extends React.Component {
         srcPrefix={`/static/images/${poet.id}`}
       />
     );
+    const completedStatus = work.status === 'incomplete' && work.id !== 'andre'
+      ? <div>
+          Kalliopes udgave af <WorkName work={work} cursive={true} /> er endnu
+          ikke
+          fuldstændig.
+        </div>
+      : null;
 
-    const sidebar = <div>{renderedPictures}{renderedNotes}</div>;
+    const sidebar = (
+      <div>{renderedPictures}{renderedNotes}{completedStatus}</div>
+    );
     const table = toc.length > 0
       ? renderItems(toc)
       : <div className="nodata">
