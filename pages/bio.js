@@ -224,9 +224,28 @@ export default class extends React.Component {
               <Timeline timeline={timeline} />
             </div>
             <div>
-              <PersonMeta poet={poet} />
-              <div style={{ width: '100%', marginTop: '40px' }}>
-                <PersonPortrait poet={poet} portrait={portrait} lang={lang} />
+              <div className="horizontal-on-small">
+                <PersonMeta poet={poet} />
+                <div style={{ width: '100%', marginTop: '40px' }}>
+                  <PersonPortrait poet={poet} portrait={portrait} lang={lang} />
+                </div>
+                <style jsx>{`
+                  .horizontal-on-small {
+                    display: flex;
+                    flex-direction: column;
+                  }
+                  @media (max-width: 700px) {
+                    .horizontal-on-small {
+                      flex-direction: row;
+                      justify-content: space-between;
+                      width: 100%;
+                    }
+                    .horizontal-on-small > * {
+                      flex-basis: 50%;
+                      margin: 0 !important;
+                    }
+                  }
+                `}</style>
               </div>
             </div>
           </SidebarSplit>
