@@ -43,8 +43,8 @@ export default class Head extends React.Component {
           property="og:description"
           content={description || defaultDescription}
         />
-        <meta name="twitter:site" content={url || defaultOGURL} />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@kalliope_org" />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:image" content={ogImageAbsolute} />
         <meta property="og:image" content={ogImageAbsolute} />
         <meta property="og:image:width" content="600" />
