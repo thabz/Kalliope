@@ -12,7 +12,8 @@ export const trimmedDescription = (content_html: string, is_poetry = false) => {
   if (is_poetry) {
     result = result.replace(/\n/g, ' // ').replace(/<br\/>/g, ' // ');
   }
-  return result.substr(0, 300);
+  result = result.replace(/<[^>]*>/g, ''); // Remove remaining tags
+  return result.substr(0, 600);
 };
 
 export const poetImage = (poet: Poet) => {
