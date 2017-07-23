@@ -154,7 +154,10 @@ export default class extends React.Component {
       poetNameString(poet, false, false) +
       ' - Kalliope';
 
-    const ogDescription = OpenGraph.trimmedDescription(text.content_html, true);
+    const ogDescription = OpenGraph.trimmedDescription(
+      text.content_html,
+      !text.is_prose
+    );
     const ogImage = OpenGraph.poetImage(poet);
 
     return (

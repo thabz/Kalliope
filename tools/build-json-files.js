@@ -392,6 +392,7 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
       id: textId,
       title: replaceDashes(title),
       subtitles,
+      is_prose: text.name() === 'prose',
       notes: get_notes(head),
       keywords: keywordsArray,
       refs: refsArray,

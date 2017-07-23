@@ -93,6 +93,7 @@ export type Text = {
   refs: Array<string>,
   pictures: Array<PictureItem>,
   content_html: string,
+  is_prose: boolean,
 };
 
 export type Keyword = {

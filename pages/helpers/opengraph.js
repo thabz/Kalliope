@@ -11,6 +11,8 @@ export const trimmedDescription = (content_html: string, is_poetry = false) => {
     .replace(/\s\s/g, ' ');
   if (is_poetry) {
     result = result.replace(/\n/g, ' // ').replace(/<br\/>/g, ' // ');
+  } else {
+    result = result.replace(/\n/g, ' ').replace(/<br\/>/g, ' ');
   }
   result = result.replace(/<[^>]*>/g, ''); // Remove remaining tags
   return result.substr(0, 600);
