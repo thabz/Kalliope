@@ -37,7 +37,7 @@ export default class Head extends React.Component {
         <link rel="manifest" href="/static/manifest.json" />
         <meta name="theme-color" content="rgb(139, 56, 65)" />
         <meta property="og:site_name" content="www.kalliope.org" />
-        <meta property="og:url" content={url || defaultOGURL} />
+        {/*<meta property="og:url" content={url || defaultOGURL} />*/}
         <meta property="og:title" content={ogTitle || headTitle || ''} />
         <meta
           property="og:description"
