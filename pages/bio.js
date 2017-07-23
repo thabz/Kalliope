@@ -14,6 +14,8 @@ import Picture from '../components/picture.js';
 import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
 import * as Links from '../components/links';
+import * as OpenGraph from './helpers/opengraph.js';
+
 import type {
   Lang,
   Poet,
@@ -210,10 +212,21 @@ export default class extends React.Component {
   render() {
     const { lang, poet, portrait, content_html, timeline } = this.props;
     const title = <PoetName poet={poet} includePeriod />;
-    const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
+    const headTitle =
+      'Biografi  - ' + poetNameString(poet, false, false) + ' - Kalliope';
+
+    const ogDescription = OpenGraph.trimmedDescription(content_html);
+    const ogImage = OpenGraph.poetImage(poet);
+    const ogTitle = poetNameString(poet, false, false) + ' biografi';
+
     return (
       <div>
-        <Head headTitle={headTitle} />
+        <Head
+          headTitle={headTitle}
+          ogTitle={ogTitle}
+          ogImage={ogImage}
+          description={ogDescription}
+        />
         <Main>
           <Nav lang={lang} poet={poet} title="Værker" />
           <Heading title={title} subtitle="Værker" />

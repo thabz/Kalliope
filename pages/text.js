@@ -19,6 +19,7 @@ import Note from '../components/note.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
+import * as OpenGraph from './helpers/opengraph.js';
 import type { Lang, Poet, Work, Text, PrevNextText } from './helpers/types.js';
 import 'isomorphic-fetch';
 
@@ -153,17 +154,9 @@ export default class extends React.Component {
       poetNameString(poet, false, false) +
       ' - Kalliope';
 
-    let ogImage: ?string = poet.has_portraits
-      ? `/static/images/${poet.id}/p1-w600.jpg`
-      : null;
-    let ogDescription = text.content_html
-      .replace(/<num>[^<]*<\/num>/g, '')
-      .replace(/^<br\/>/, '')
-      .replace(/^\s*/, '')
-      .replace(/\n/g, ' // ')
-      .replace(/<br\/>/g, ' // ')
-      .replace(/\s\s/g, ' ')
-      .substr(0, 300);
+    const ogDescription = OpenGraph.trimmedDescription(text.content_html, true);
+    const ogImage = OpenGraph.poetImage(poet);
+
     return (
       <div>
         <FootnoteContainer>
