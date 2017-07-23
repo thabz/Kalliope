@@ -158,7 +158,7 @@ export default class extends React.Component {
       : null;
     let ogDescription = text.content_html
       .replace(/\n/g, ' // ')
-      .replace(/<br\/>/g, ' // ')
+      .replace(/<br[^>]*>/g, ' // ')
       .replace(/\s\s/g, ' ')
       .substr(0, 300);
     return (
