@@ -29,8 +29,8 @@ class TextHeading extends React.Component {
 
     let subtitles = null;
     if (text.subtitles != null) {
-      subtitles = text.subtitles.map(t => {
-        return <h4><TextContent contentHtml={t} lang={lang} /></h4>;
+      subtitles = text.subtitles.map((t, i) => {
+        return <h4 key={i}><TextContent contentHtml={t} lang={lang} /></h4>;
       });
     }
     return (
