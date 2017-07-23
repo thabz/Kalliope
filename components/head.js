@@ -3,9 +3,11 @@ import React from 'react';
 import NextHead from 'next/head';
 import { string } from 'prop-types';
 
-const defaultDescription = '';
-const defaultOGURL = '';
-const defaultOGImage = '/static/touch-icon.png';
+const urlPrefix = 'https://beta.kalliope.org';
+const defaultDescription =
+  'Kalliope er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning.';
+const defaultOGURL = urlPrefix;
+const defaultOGImage = `${urlPrefix}/static/touch-icon.png`;
 
 export default class Head extends React.Component {
   props: {
@@ -18,6 +20,10 @@ export default class Head extends React.Component {
 
   render() {
     const { ogTitle, headTitle, description, url, ogImage } = this.props;
+    let ogImageAbsolute = ogImage || defaultOGImage;
+    if (!ogImageAbsolute.startsWith('http')) {
+      ogImageAbsolute = `${urlPrefix}${ogImageAbsolute}`;
+    }
     return (
       <NextHead>
         <meta charset="UTF-8" />
@@ -39,8 +45,8 @@ export default class Head extends React.Component {
         />
         <meta name="twitter:site" content={url || defaultOGURL} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content={ogImage || defaultOGImage} />
-        <meta property="og:image" content={ogImage || defaultOGImage} />
+        <meta name="twitter:image" content={ogImageAbsolute} />
+        <meta property="og:image" content={ogImageAbsolute} />
         <meta property="og:image:width" content="600" />
       </NextHead>
     );
