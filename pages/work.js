@@ -16,6 +16,7 @@ import Note from '../components/note.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
+import * as OpenGraph from './helpers/opengraph.js';
 import type {
   Lang,
   Poet,
@@ -111,12 +112,22 @@ export default class extends React.Component {
           <i>Kalliope indeholder endnu ingen tekster fra dette værk.</i>
         </div>;
     const title = <PoetName poet={poet} includePeriod />;
+    const ogTitle =
+      poetNameString(poet, false, false) + ': ' + workTitleString(work);
     const headTitle = `${workTitleString(work)} - ${poetNameString(
       poet
     )} - Kalliope`;
+    const ogImage = OpenGraph.poetImage(poet);
+    const ogDescription = toc.map(part => part.title).join(', ');
     return (
       <div>
-        <Head headTitle={headTitle} />
+        <Head
+          headTitle={headTitle}
+          ogTitle={ogTitle}
+          ogImage={ogImage}
+          description={ogDescription}
+        />
+
         <Main>
           <Nav lang={lang} poet={poet} title={<WorkName work={work} />} />
           <Heading title={title} subtitle="Værker" />
