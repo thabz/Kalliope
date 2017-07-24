@@ -44,8 +44,8 @@ class CrossSVG extends React.Component {
     };
     return (
       <svg viewBox="0 0 48 48" width="100%" height="100%">
-        <line style={style} x1="47" y1="47" x2="1" y2="1" />
-        <line style={style} x1="47" y1="1" x2="1" y2="47" />
+        <line style={style} x1="47" y1="47" x2="4" y2="4" />
+        <line style={style} x1="47" y1="4" x2="4" y2="47" />
       </svg>
     );
   }
