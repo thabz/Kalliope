@@ -6,6 +6,7 @@ import type { Lang, Poet } from '../pages/helpers/types.js';
 
 // TODO: Don't export Tabs and make KalliopeTabs and PoetTabs send extra
 // TODO: props into Tabs to configure it's placeholder text, etc.
+// TODO: Wrap Tabs in a TabWithSearch component to keep Tabs simple.
 
 class LoupeSVG extends React.Component {
   props: {
@@ -60,6 +61,7 @@ export default class Tabs extends React.Component {
   onLoupeClick: (e: Event) => void;
   onCrossClick: (e: Event) => void;
   onSubmit: (e: Event) => void;
+  onKeyDown: (e: KeyboardEvent) => void;
 
   constructor(props: any) {
     super(props);
@@ -67,6 +69,25 @@ export default class Tabs extends React.Component {
     this.onLoupeClick = this.onLoupeClick.bind(this);
     this.onCrossClick = this.onCrossClick.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+    this.onKeyDown = this.onKeyDown.bind(this);
+  }
+
+  hideSearchField() {
+    this.searchField.value = '';
+    if (window) {
+      window.removeEventListener('keydown', this.onKeyDown);
+    }
+    this.setState({ showSearchField: false });
+  }
+
+  showSeachField() {
+    this.setState({ showSearchField: true });
+    if (window) {
+      window.addEventListener('keydown', this.onKeyDown);
+    }
+    setTimeout(() => {
+      this.searchField.focus();
+    }, 10);
   }
 
   onSubmit(e: Event) {
@@ -80,23 +101,26 @@ export default class Tabs extends React.Component {
       const q = this.searchField.value;
       if (q.length === 0) {
         // Hide search field again.
-        this.setState({ showSearchField: false });
+        this.hideSearchField();
       } else {
         this.onSubmit(e);
       }
     } else {
-      this.setState({ showSearchField: true });
-      setTimeout(() => {
-        this.searchField.focus();
-      }, 10);
+      this.showSeachField();
     }
     e.preventDefault();
   }
 
   onCrossClick(e: Event) {
-    this.searchField.value = '';
-    this.setState({ showSearchField: false });
+    this.hideSearchField();
     e.preventDefault();
+  }
+
+  onKeyDown(e: KeyboardEvent) {
+    if (e.keyCode === 27) {
+      this.hideSearchField();
+      e.preventDefault();
+    }
   }
 
   render() {
