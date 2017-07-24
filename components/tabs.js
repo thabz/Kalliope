@@ -31,33 +31,36 @@ export default class Tabs extends React.Component {
     items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
     selected: string,
   };
+  searchField: any;
+  onLoupeClick: any;
 
-  constructor(props) {
+  constructor(props: any) {
     super(props);
     this.state = { showSearchField: false };
     this.searchField = null;
     this.onLoupeClick = this.onLoupeClick.bind(this);
   }
 
-  onLoupeClick(e) {
+  onLoupeClick(e: any) {
     this.setState({ showSearchField: !this.state.showSearchField });
-    this.searchField.focus();
+    setTimeout(() => {
+      this.searchField.focus();
+    }, 10);
     e.stopPropagation();
+    e.preventDefault();
   }
 
   render() {
     const { items, selected } = this.props;
 
     const searchField = (
-      <div>
-        <input
-          ref={x => {
-            this.searchField = x;
-          }}
-          className="search-field"
-          placeholder="Søg i Kalliope"
-        />
-      </div>
+      <input
+        ref={domElement => {
+          this.searchField = domElement;
+        }}
+        className="search-field"
+        placeholder="Søg i Kalliope"
+      />
     );
 
     const itemsRendered = items.filter(item => !item.hide).map((item, i) => {
@@ -79,6 +82,7 @@ export default class Tabs extends React.Component {
           {itemsRendered}
         </div>
         <div
+          className="searchfield-container"
           style={{
             display: this.state.showSearchField ? 'block' : 'none',
           }}>
@@ -102,13 +106,17 @@ export default class Tabs extends React.Component {
             display: flex;
             justify-content: space-between;
             border-bottom: 1px solid black;
-            margin-bottom: 40px; /* background-color: yellow; */
+            margin-bottom: 40px;
             flex-grow: 1;
           }
           .loupe {
             flex-basis: 28px;
             flex-shrink: 1;
             padding-top: 14px;
+          }
+          :global(.leftside) {
+            width: 100%;
+            padding-right: 10px;
           }
           :global(.search-field) {
             font-size: 32px;
@@ -123,7 +131,11 @@ export default class Tabs extends React.Component {
             padding-bottom: 0px;
             margin-top: 6px;
           }
+          :global(.searchfield-container) {
+            width: 100%;
+          }
           .tabs {
+            background-color: yellow;
           }
           :global(.tabs) > :global(.tab) {
             display: inline-block;
