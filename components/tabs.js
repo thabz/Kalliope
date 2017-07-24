@@ -4,6 +4,9 @@ import { Link } from '../routes';
 import * as Links from './links.js';
 import type { Lang, Poet } from '../pages/helpers/types.js';
 
+// TODO: Don't export Tabs and make KalliopeTabs and PoetTabs send extra
+// TODO: props into Tabs to configure it's placeholder text, etc.
+
 class LoupeSVG extends React.Component {
   props: {
     color: string,
@@ -26,27 +29,73 @@ class LoupeSVG extends React.Component {
   }
 }
 
+class CrossSVG extends React.Component {
+  props: {
+    color: string,
+  };
+  render() {
+    const { color } = this.props;
+    const style = {
+      fill: 'none',
+      stroke: color,
+      strokeLinecap: 'round',
+      strokeLinejoin: 'round',
+      strokeWidth: '2px',
+    };
+    return (
+      <svg viewBox="0 0 48 48" width="100%" height="100%">
+        <line style={style} x1="47" y1="47" x2="1" y2="1" />
+        <line style={style} x1="47" y1="1" x2="1" y2="47" />
+      </svg>
+    );
+  }
+}
+
 export default class Tabs extends React.Component {
   props: {
     items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
     selected: string,
   };
-  searchField: any;
-  onLoupeClick: any;
+  searchField: HTMLInputElement;
+  onLoupeClick: (e: Event) => void;
+  onCrossClick: (e: Event) => void;
+  onSubmit: (e: Event) => void;
 
   constructor(props: any) {
     super(props);
     this.state = { showSearchField: false };
-    this.searchField = null;
     this.onLoupeClick = this.onLoupeClick.bind(this);
+    this.onCrossClick = this.onCrossClick.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
-  onLoupeClick(e: any) {
-    this.setState({ showSearchField: !this.state.showSearchField });
-    setTimeout(() => {
-      this.searchField.focus();
-    }, 10);
-    e.stopPropagation();
+  onSubmit(e: Event) {
+    const q = this.searchField.value;
+    console.log('Searching for ' + q);
+    e.preventDefault();
+  }
+
+  onLoupeClick(e: Event) {
+    if (this.state.showSearchField) {
+      const q = this.searchField.value;
+      if (q.length === 0) {
+        // Hide search field again.
+        this.setState({ showSearchField: false });
+      } else {
+        this.onSubmit(e);
+      }
+    } else {
+      this.setState({ showSearchField: true });
+      setTimeout(() => {
+        this.searchField.focus();
+      }, 10);
+    }
+    e.preventDefault();
+  }
+
+  onCrossClick(e: Event) {
+    this.searchField.value = '';
+    this.setState({ showSearchField: false });
     e.preventDefault();
   }
 
@@ -54,13 +103,31 @@ export default class Tabs extends React.Component {
     const { items, selected } = this.props;
 
     const searchField = (
-      <input
-        ref={domElement => {
-          this.searchField = domElement;
-        }}
-        className="search-field"
-        placeholder="Søg i Kalliope"
-      />
+      <div style={{ display: 'flex' }}>
+        <div style={{ flexGrow: 1 }}>
+          <form onSubmit={this.onSubmit}>
+            <input
+              ref={domElement => {
+                this.searchField = domElement;
+              }}
+              className="search-field"
+              placeholder="Søg i Kalliope"
+            />
+          </form>
+        </div>
+        <div
+          onClick={this.onCrossClick}
+          style={{
+            cursor: 'pointer',
+            flexBasis: '28px',
+            flexShrink: 1,
+            marginTop: '12px',
+            marginRight: '20px',
+            marginLeft: '20px',
+          }}>
+          <CrossSVG color="black" />
+        </div>
+      </div>
     );
 
     const itemsRendered = items.filter(item => !item.hide).map((item, i) => {
