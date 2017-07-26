@@ -21,7 +21,7 @@ export default class extends React.Component {
   };
 
   static async getInitialProps({
-    query: { lang },
+    query: { lang, aboutItemId },
   }: {
     query: { lang: Lang, aboutItemId: string },
   }) {

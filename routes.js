@@ -15,4 +15,4 @@ routes.add('keywords', '/:lang/keywords');
 routes.add('keyword', '/:lang/keyword/:keywordId');
 routes.add('dict', '/:lang/dict');
 routes.add('dictitem', '/:lang/dict/:dictItemId');
-routes.add('about', '/:lang/about/:aboutIemId');
+routes.add('about', '/:lang/about/:aboutItemId');
