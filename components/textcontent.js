@@ -126,6 +126,8 @@ export default class TextContent extends React.Component {
         return <blockquote>{this.handle_nodes(node.childNodes)}</blockquote>;
       case 'sup':
         return <sup>{this.handle_nodes(node.childNodes)}</sup>;
+      case 'strike':
+        return <strike>{this.handle_nodes(node.childNodes)}</strike>;
       case 'year':
       case 'wrap':
       case 'content':
