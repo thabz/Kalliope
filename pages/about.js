@@ -1,11 +1,13 @@
 // @flow
 
 import React from 'react';
+import { Link } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
 import { KalliopeTabs } from '../components/tabs.js';
 import LangSelect from '../components/langselect';
 import Nav from '../components/nav';
+import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import * as Links from '../components/links';
 import Heading from '../components/heading.js';
@@ -37,6 +39,11 @@ export default class extends React.Component {
 
   render() {
     const { lang, item } = this.props;
+    const navbar = [
+      <Link route={Links.aboutURL(lang, 'kalliope')}>
+        <a>Om</a>
+      </Link>,
+    ];
 
     const renderedAbout = (
       <TextContent contentHtml={item.content_html} lang={lang} />
@@ -46,11 +53,12 @@ export default class extends React.Component {
       <div>
         <Head headTitle="Kalliope" />
         <Main>
-          <Nav lang="da" />
+          <Nav lang="da" links={navbar} title={item.title} />
           <Heading title="Kalliope" />
           <KalliopeTabs lang={lang} selected="about" />
           <SidebarSplit>
             <div>
+              <SubHeading>{item.title}</SubHeading>
               {renderedAbout}
             </div>
             <div />

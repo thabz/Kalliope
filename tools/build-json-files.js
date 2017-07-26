@@ -1162,8 +1162,10 @@ const build_about_pages = collected => {
     .filter(paths => isFileModified(paths.xml))
     .forEach(paths => {
       const doc = loadXMLDoc(paths.xml);
+      const head = doc.get('//head');
       const body = doc.get('//body');
       const data = {
+        title: head.get('title').text(),
         content_html: htmlToXml(
           body.toString().replace('<body>', '').replace('</body>', ''),
           collected
