@@ -1147,6 +1147,33 @@ const build_bibliography_json = collected => {
   });
 };
 
+const build_about_pages = collected => {
+  safeMkdir(`static/api/about`);
+  const folder = 'data/about';
+  const filenames = fs
+    .readdirSync(folder)
+    .filter(x => x.endsWith('.xml'))
+    .map(x => {
+      return {
+        xml: `${folder}/${x}`,
+        json: `static/api/about/${x.replace(/.xml$/, '.json')}`,
+      };
+    })
+    .filter(paths => isFileModified(paths.xml))
+    .forEach(paths => {
+      const doc = loadXMLDoc(paths.xml);
+      const body = doc.get('//body');
+      const data = {
+        content_html: htmlToXml(
+          body.toString().replace('<body>', '').replace('</body>', ''),
+          collected
+        ),
+      };
+      console.log(paths.json);
+      writeJSON(paths.json, data);
+    });
+};
+
 let b_results = [];
 // Benchmarking
 const b = (name, f, args) => {
@@ -1178,6 +1205,7 @@ b('build_works_toc', build_works_toc, collected);
 collected.timeline = build_global_timeline(collected);
 b('build_bio_json', build_bio_json, collected);
 b('build_news', build_news, collected);
+b('build_about_pages', build_about_pages, collected);
 b('build_dict_second_pass', build_dict_second_pass, collected);
 
 refreshFilesModifiedCache();

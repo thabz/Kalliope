@@ -71,3 +71,7 @@ export const dictionaryURL = (lang: string = 'da', id?: string) => {
 export const keywordURL = (lang: string = 'da', keywordId: string) => {
   return `/${lang}/keyword/${keywordId}`;
 };
+
+export const aboutURL = (lang: string = 'da', aboutText: string) => {
+  return `/${lang}/about/${aboutText}`;
+};

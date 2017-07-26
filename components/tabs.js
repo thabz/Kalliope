@@ -363,6 +363,7 @@ export class KalliopeTabs extends React.Component {
       { id: 'poets', title: 'Digtere', url: Links.poetsURL(lang, 'name') },
       { id: 'keywords', title: 'Nøgleord', url: Links.keywordsURL(lang) },
       { id: 'dictionary', title: 'Ordbog', url: Links.dictionaryURL(lang) },
+      { id: 'about', title: 'Om', url: Links.aboutURL(lang, 'kalliope') },
     ];
     return <Tabs items={tabs} selected={selected} />;
   }
