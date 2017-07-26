@@ -100,7 +100,8 @@ export default class Tabs extends React.Component {
     if (this.state.showSearchField) {
       const q = this.searchField.value;
       if (q.length === 0) {
-        // Hide search field again.
+        // When the text input is empty, the loupe
+        // should simply toggle seach mode.
         this.hideSearchField();
       } else {
         this.onSubmit(e);
@@ -111,7 +112,7 @@ export default class Tabs extends React.Component {
     e.preventDefault();
   }
 
-  onCrossClick(e: Event) {
+  onCrossClick(e: MouseEvent) {
     this.hideSearchField();
     e.preventDefault();
   }
