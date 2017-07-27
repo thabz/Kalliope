@@ -4,6 +4,8 @@ const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
 const Paths = require('../pages/helpers/paths.js');
 const entities = require('entities');
+const elasticSearchClient = require('./libs/elasticsearch-client.js');
+
 const {
   isFileModified,
   refreshFilesModifiedCache,
@@ -1191,6 +1193,98 @@ const print_benchmarking_results = () => {
   });
 };
 
+const update_elasticsearch = collected => {
+  collected.poets.forEach((poet, poetId) => {
+    safeMkdir(`static/api/${poetId}`);
+    elasticSearchClient.createIndex('kalliope');
+    collected.workids.get(poetId).forEach(workId => {
+      const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!isFileModified(filename)) {
+        return;
+      }
+      let doc = loadXMLDoc(filename);
+      const work = doc.get('//kalliopework');
+      const status = work.attr('status').value();
+      const type = work.attr('type').value();
+      const head = work.get('workhead');
+      const title = head.get('title').text();
+      const year = head.get('year').text();
+      const workData = {
+        id: workId,
+        title,
+        year,
+        status,
+        type,
+      };
+      const data = {
+        poet,
+        work: workData,
+      };
+      elasticSearchClient.create(
+        'kalliope',
+        'work',
+        `${poetId}-${workId}`,
+        data
+      );
+
+      doc.find('//poem|//prose').forEach(text => {
+        const textId = text.attr('id').value();
+        const head = text.get('head');
+        const body = text.get('body');
+        const title = head.get('title') ? head.get('title').text() : null;
+        const keywords = head.get('keywords');
+        let subtitles = null;
+        const subtitle = head.get('subtitle');
+        if (subtitle && subtitle.find('line').length > 0) {
+          subtitles = subtitle
+            .find('line')
+            .map(s =>
+              replaceDashes(
+                s
+                  .toString()
+                  .replace('<line>', '')
+                  .replace('</line>', '')
+                  .replace('<line/>', '')
+              )
+            );
+        } else if (subtitle) {
+          subtitles = [
+            replaceDashes(
+              subtitle
+                .toString()
+                .replace('<subtitle>', '')
+                .replace('</subtitle>', '')
+            ),
+          ];
+        }
+        let keywordsArray = null;
+        if (keywords) {
+          keywordsArray = keywords.text().split(',');
+        }
+
+        const textData = {
+          id: textId,
+          title: replaceDashes(title),
+          subtitles,
+          is_prose: text.name() === 'prose',
+          keywords: keywordsArray,
+          content_html: htmlToXml(
+            body.toString().replace('<body>', '').replace('</body>', ''),
+            collected,
+            text.name() === 'poem'
+          ),
+        };
+        const data = {
+          poet,
+          work: workData,
+          text: textData,
+        };
+        elasticSearchClient.create('kalliope', 'text', textId, data);
+      });
+    });
+  });
+};
+
 safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);
 collected.poets = b('build_poets_json', build_poets_json);
@@ -1209,6 +1303,7 @@ b('build_bio_json', build_bio_json, collected);
 b('build_news', build_news, collected);
 b('build_about_pages', build_about_pages, collected);
 b('build_dict_second_pass', build_dict_second_pass, collected);
+b('update_elasticsearch', update_elasticsearch, collected);
 
 refreshFilesModifiedCache();
 print_benchmarking_results();
