@@ -16,3 +16,5 @@ routes.add('keyword', '/:lang/keyword/:keywordId');
 routes.add('dict', '/:lang/dict');
 routes.add('dictitem', '/:lang/dict/:dictItemId');
 routes.add('about', '/:lang/about/:aboutItemId');
+routes.add('search', '/:lang/search/:country/:poetId/');
+routes.add('search', '/:lang/search/:country');

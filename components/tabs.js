@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { Link } from '../routes';
+import { Link, Router } from '../routes';
 import * as Links from './links.js';
 import type { Lang, Poet } from '../pages/helpers/types.js';
 
@@ -92,7 +92,10 @@ export default class Tabs extends React.Component {
 
   onSubmit(e: Event) {
     const q = this.searchField.value;
+    const lang = 'da';
+    const country = 'dk';
     console.log('Searching for ' + q);
+    Router.pushRoute(`/${lang}/search/${country}?query=${q}`);
     e.preventDefault();
   }
 
@@ -305,7 +308,7 @@ export class PoetTabs extends React.Component {
   props: {
     poet: Poet,
     lang: Lang,
-    selected: 'works' | 'titles' | 'first' | 'bio' | 'bibliography',
+    selected: 'works' | 'titles' | 'first' | 'bio' | 'bibliography' | 'search',
   };
 
   render() {
@@ -354,7 +357,7 @@ export class PoetTabs extends React.Component {
 export class KalliopeTabs extends React.Component {
   props: {
     lang: Lang,
-    selected: 'index' | 'poets' | 'keywords' | 'dictionary',
+    selected: 'index' | 'poets' | 'keywords' | 'dictionary' | 'search',
   };
   render() {
     const { lang, selected } = this.props;

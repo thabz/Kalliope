@@ -5,7 +5,8 @@ export type DateWithPlace = {
   place?: string,
 };
 
-export type Country = 'dk' | 'se';
+export type Lang = 'da' | 'en';
+export type Country = 'dk' | 'gb' | 'de' | 'fr' | 'se' | 'no' | 'it' | 'us';
 
 export type PoetId = string;
 export type WorkId = string;
@@ -47,8 +48,6 @@ export type PrevNextText = {
   id: string,
   title: string,
 };
-
-export type Lang = 'da' | 'en';
 
 export type LinesPair = {
   id: string,

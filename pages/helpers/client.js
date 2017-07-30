@@ -3,6 +3,7 @@ import 'isomorphic-fetch';
 import * as Paths from './paths.js';
 import type {
   Lang,
+  Country,
   Poet,
   PoetId,
   Work,
@@ -64,4 +65,18 @@ export const text = async (textId: string): FetchTextResult => {
   const path: string = Paths.textPath(textId);
   const res = await fetch(createURL(`/${path}`));
   return (await res.json(): FetchTextResult);
+};
+
+type FetchSearchResult = Promise<{
+  hits: any,
+}>;
+export const search = async (
+  poetId: string = '',
+  country: Country,
+  query: string
+): FetchSearchResult => {
+  const res = await fetch(
+    createURL(`/search?country=${country}&poet=${poetId}&query=${query}`)
+  );
+  return (await res.json(): FetchSearchResult);
 };

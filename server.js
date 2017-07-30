@@ -23,7 +23,7 @@ app.prepare().then(() => {
         'text',
         query.country,
         query.poet,
-        query.q || 'Guld*'
+        query.query
       );
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.write(result);
