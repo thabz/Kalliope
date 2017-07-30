@@ -19,7 +19,7 @@ class ElasticSearchClient {
 
   // Returns the raw JSON as (a promise of) text, not as an object.
   async search(index, type, country, poet, query) {
-    const URL = `${URLPrefix}/${index}/_search?q=${query}`;
+    const URL = `${URLPrefix}/${index}/_search`;
     const body = {
       query: {
         query_string: {
@@ -28,9 +28,12 @@ class ElasticSearchClient {
       },
     };
     const res = await fetch(URL, {
-      method: 'GET', // TODO: Do as POST
-      contentType: 'application/json',
-      body: body,
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
     });
     const result = await res.text();
     return result;
