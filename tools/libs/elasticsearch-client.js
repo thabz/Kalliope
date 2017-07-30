@@ -16,6 +16,24 @@ class ElasticSearchClient {
     const result = await res.json();
     return result;
   }
+
+  async search(index, type, country, query) {
+    const URL = `${URLPrefix}/${index}/_search?q=${query}`;
+    const body = {
+      query: {
+        query_string: {
+          query: query,
+        },
+      },
+    };
+    const res = await fetch(URL, {
+      method: 'GET', // TODO: Do as POST
+      contentType: 'application/json',
+      body: body,
+    });
+    const result = await res.json();
+    return result;
+  }
 }
 
 const elasticSearchClient = new ElasticSearchClient();

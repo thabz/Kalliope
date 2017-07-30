@@ -7,16 +7,29 @@ const { createServer } = require('http');
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handler = routes.getRequestHandler(app);
-
+const elasticSearchClient = require('./tools/libs/elasticsearch-client.js');
 const rootStaticFiles = ['/sw.js', '/favicon.ico'];
 
 app.prepare().then(() => {
-  createServer((req, res) => {
+  createServer(async (req, res) => {
     const { pathname, query } = parse(req.url, true);
 
     if (rootStaticFiles.indexOf(pathname) > -1) {
       const path = join(__dirname, 'static', pathname);
       app.serveStatic(req, res, path);
+      return;
+    } else if (pathname.indexOf('search') > -1) {
+      console.log('Searching for', query.q);
+      const result = await elasticSearchClient.search(
+        'kalliope',
+        'text',
+        'dk',
+        query.q || 'Guld*'
+      );
+      console.log(result);
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.write(JSON.stringify(result));
+      res.end();
       return;
     } else {
       handler(req, res);
