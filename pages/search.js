@@ -51,20 +51,39 @@ export default class extends React.Component {
       renderedResult = <div>Ingen søgeresultat</div>;
     } else {
       const items = result.hits.hits
-        .filter(x => x._source.poet != null)
+        .filter(x => x._source.text != null)
         .map((hit, i) => {
           const { poet, work, text } = hit._source;
-          const textURL = Links.textURL(lang, text.id);
+          let item = null;
+          if (text == null) {
+            const workURL = Links.textURL(lang, work.id);
+            item = (
+              <div>
+                <div>
+                  <Link route={textURL}><a><WorkName work={work} /></a></Link>
+                </div>
+                <div>
+                  <PoetName poet={poet} />:{' '}
+                </div>
+              </div>
+            );
+          } else {
+            const textURL = Links.textURL(lang, text.id);
+            item = (
+              <div>
+                <div>
+                  <Link route={textURL}><a><TextName text={text} /></a></Link>
+                </div>
+                <div>
+                  <PoetName poet={poet} />:{' '}
+                  <WorkName work={work} />
+                </div>
+              </div>
+            );
+          }
           return (
             <div key={hit._id} className="result-item">
-              {i + 1}.
-              <div>
-                <Link route={textURL}><a><TextName text={text} /></a></Link>
-              </div>
-              <div>
-                <PoetName poet={poet} />:{' '}
-                <WorkName work={work} />
-              </div>
+              {item}
               <style jsx>{`
                 .result-item {
                   margin-bottom: 20px;
@@ -82,6 +101,9 @@ export default class extends React.Component {
           <style jsx>{`
             .result-count {
               margin-bottom: 30px;
+            }
+            .result-items {
+              line-height: 1.5;
             }
           `}</style>
         </div>
