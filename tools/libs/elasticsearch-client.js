@@ -18,7 +18,7 @@ class ElasticSearchClient {
   }
 
   // Returns the raw JSON as (a promise of) text, not as an object.
-  async search(index, type, country, query) {
+  async search(index, type, country, poet, query) {
     const URL = `${URLPrefix}/${index}/_search?q=${query}`;
     const body = {
       query: {

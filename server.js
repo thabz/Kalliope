@@ -17,18 +17,17 @@ app.prepare().then(() => {
     if (rootStaticFiles.indexOf(pathname) > -1) {
       const path = join(__dirname, 'static', pathname);
       app.serveStatic(req, res, path);
-      return;
-    } else if (pathname.indexOf('search') > -1) {
+    } else if (pathname.indexOf('/search') === 0) {
       const result = await elasticSearchClient.search(
         'kalliope',
         'text',
-        'dk',
+        query.country,
+        query.poet,
         query.q || 'Guld*'
       );
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.write(result);
       res.end();
-      return;
     } else {
       handler(req, res);
     }
