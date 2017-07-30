@@ -19,16 +19,14 @@ app.prepare().then(() => {
       app.serveStatic(req, res, path);
       return;
     } else if (pathname.indexOf('search') > -1) {
-      console.log('Searching for', query.q);
       const result = await elasticSearchClient.search(
         'kalliope',
         'text',
         'dk',
         query.q || 'Guld*'
       );
-      console.log(result);
       res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.write(JSON.stringify(result));
+      res.write(result);
       res.end();
       return;
     } else {
