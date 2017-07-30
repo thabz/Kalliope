@@ -22,8 +22,16 @@ class ElasticSearchClient {
     const URL = `${URLPrefix}/${index}/_search`;
     const body = {
       query: {
-        query_string: {
-          query: query,
+        bool: {
+          must: [
+            {
+              multi_match: {
+                query: query,
+                fields: ['text.title', 'text.content_html'],
+              },
+            },
+          ],
+          filter: [{ term: { 'poet.country': country } }],
         },
       },
     };
