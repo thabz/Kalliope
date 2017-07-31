@@ -54,6 +54,7 @@ export default class extends React.Component {
         .filter(x => x._source.text != null)
         .map((hit, i) => {
           const { poet, work, text } = hit._source;
+          const { highlight } = hit;
           let item = null;
           if (text == null) {
             const workURL = Links.textURL(lang, work.id);
@@ -69,15 +70,27 @@ export default class extends React.Component {
             );
           } else {
             const textURL = Links.textURL(lang, text.id);
+            let renderedHighlight = null;
+            if (highlight && highlight['text.content_html']) {
+              // The query is highlighted in each line using <em> by Elasticsearch
+              const lines = highlight['text.content_html'];
+              renderedHighlight = lines.join(',');
+            }
             item = (
               <div>
                 <div>
                   <Link route={textURL}><a><TextName text={text} /></a></Link>
                 </div>
+                <div className="hightlights">{renderedHighlight}</div>
                 <div>
                   <PoetName poet={poet} />:{' '}
                   <WorkName work={work} />
                 </div>
+                <style jsx>{`
+                  .hightlights {
+                    color: #888;
+                  }
+                `}</style>
               </div>
             );
           }
