@@ -267,7 +267,10 @@ const build_poets_json = () => {
         has_works: worksArray.length > 0,
         has_biography:
           fs.existsSync(`fdirs/${id}/bio.xml`) ||
-            fs.existsSync(`fdirs/${id}/events.xml`),
+            fs.existsSync(`fdirs/${id}/events.xml`) ||
+            (period != null &&
+              period.born.date !== '?' &&
+              period.dead.date !== '?'),
         has_portraits: fs.existsSync(`static/images/${id}/p1.jpg`),
       };
       list.push(poet);
