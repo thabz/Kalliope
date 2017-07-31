@@ -5,15 +5,24 @@ const URLPrefix = 'http://localhost:9200';
 class ElasticSearchClient {
   async createIndex(index) {
     const URL = `${URLPrefix}/${index}`;
-    await fetch(URL, { method: 'PUT' });
+    try {
+      await fetch(URL, { method: 'PUT' });
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   async create(index, type, id, json, callback) {
     const URL = `${URLPrefix}/${index}/${type}/${id}`;
     const body = JSON.stringify(json);
-    const res = await fetch(URL, { method: 'PUT', body: body });
-    const result = await res.json();
-    return result;
+    try {
+      const res = await fetch(URL, { method: 'PUT', body: body });
+      const result = await res.json();
+      return result;
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
   }
 
   // Returns the raw JSON as (a promise of) text, not as an object.
@@ -41,16 +50,20 @@ class ElasticSearchClient {
         },
       },
     };
-    const res = await fetch(URL, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(body),
-    });
-    const result = await res.text();
-    return result;
+    try {
+      const res = await fetch(URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(body),
+      });
+      const result = await res.text();
+      return result;
+    } catch (error) {
+      console.log(error);
+    }
   }
 }
 
