@@ -74,21 +74,36 @@ export default class extends React.Component {
             if (highlight && highlight['text.content_html']) {
               // The query is highlighted in each line using <em> by Elasticsearch
               const lines = highlight['text.content_html'];
-              renderedHighlight = lines.join(',');
+              renderedHighlight = lines.map(line => {
+                let parts = line
+                  .replace(/\s+/g, ' ')
+                  .replace(/^[\s,.!:;]+/, '')
+                  .replace(/[\s,.!:;]+$/, '')
+                  .split(/<\/?em>/);
+                parts[1] = <em>{parts[1]}</em>;
+                return <div>{parts}</div>;
+              });
             }
             item = (
               <div>
-                <div>
+                <div className="title">
                   <Link route={textURL}><a><TextName text={text} /></a></Link>
                 </div>
                 <div className="hightlights">{renderedHighlight}</div>
-                <div>
+                <div className="poet-and-work">
                   <PoetName poet={poet} />:{' '}
                   <WorkName work={work} />
                 </div>
                 <style jsx>{`
+                  .title {
+                    font-size: 1.15em;
+                  }
                   .hightlights {
                     color: #888;
+                    font-weight: lighter;
+                  }
+                  .poet-and-work {
+                    font-weight: lighter;
                   }
                 `}</style>
               </div>
@@ -108,7 +123,7 @@ export default class extends React.Component {
       renderedResult = (
         <div className="result-items">
           <div className="result-count">
-            Fandt {result.hits.total} resultat(er)
+            Fandt {result.hits.total} resultat(er) ved søgning efter »{query}«
           </div>
           {items}
           <style jsx>{`
