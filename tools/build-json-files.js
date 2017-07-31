@@ -1194,10 +1194,8 @@ const print_benchmarking_results = () => {
 };
 
 const update_elasticsearch = collected => {
+  elasticSearchClient.createIndex('kalliope');
   collected.poets.forEach((poet, poetId) => {
-    safeMkdir(`static/api/${poetId}`);
-    elasticSearchClient.createIndex('kalliope');
-
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!isFileModified(filename)) {
