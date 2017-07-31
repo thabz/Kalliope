@@ -59,7 +59,14 @@ export default class extends React.Component {
           <SidebarSplit>
             <div>
               <SubHeading>{item.title}</SubHeading>
-              {renderedAbout}
+              <div className="about-body">
+                {renderedAbout}
+              </div>
+              <style jsx>{`
+                .about-body {
+                  font-weight: lighter;
+                }
+              `}</style>
             </div>
             <div />
           </SidebarSplit>
