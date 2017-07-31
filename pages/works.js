@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import { Link } from '../routes';
+import { Link, Router } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
 import Nav from '../components/nav';
@@ -28,11 +28,18 @@ export default class extends React.Component {
     query: { lang: Lang, poetId: string },
   }) {
     const json = await Client.works(poetId);
+
     return { lang, poet: json.poet, works: json.works };
   }
 
   render() {
     const { lang, poet, works } = this.props;
+
+    if (works.length === 0 && poet.has_biography) {
+      const bioURL = Links.bioURL(lang, poet.id);
+      Router.replaceRoute(bioURL);
+    }
+
     const list = works.length == 0
       ? <div className="nodata">
           Kalliope indeholder endnu ingen tekster fra denne digter.
