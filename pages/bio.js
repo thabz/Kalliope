@@ -228,7 +228,7 @@ export default class extends React.Component {
           description={ogDescription}
         />
         <Main>
-          <Nav lang={lang} poet={poet} title="Værker" />
+          <Nav lang={lang} poet={poet} title="Biografi" />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="bio" />
           <SidebarSplit>
