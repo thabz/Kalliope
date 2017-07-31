@@ -1,6 +1,21 @@
 const fetch = require('node-fetch');
+const queue = require('async/queue');
 
 const URLPrefix = 'http://localhost:9200';
+
+const indexingQueue = queue(async (task, callback) => {
+  const { index, type, id, json } = task;
+  const URL = `${URLPrefix}/${index}/${type}/${id}`;
+  const body = JSON.stringify(json);
+  try {
+    const res = await fetch(URL, { method: 'PUT', body: body });
+    const result = await res.json();
+    return result;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+}, 100);
 
 class ElasticSearchClient {
   async createIndex(index) {
@@ -12,17 +27,12 @@ class ElasticSearchClient {
     }
   }
 
-  async create(index, type, id, json, callback) {
-    const URL = `${URLPrefix}/${index}/${type}/${id}`;
-    const body = JSON.stringify(json);
-    try {
-      const res = await fetch(URL, { method: 'PUT', body: body });
-      const result = await res.json();
-      return result;
-    } catch (error) {
-      console.log(error);
-      return null;
-    }
+  async create(index, type, id, json) {
+    indexingQueue.push({ index, type, id, json }, err => {
+      if (err) {
+        console.log(err);
+      }
+    });
   }
 
   // Returns the raw JSON as (a promise of) text, not as an object.
