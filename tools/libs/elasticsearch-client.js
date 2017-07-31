@@ -5,8 +5,7 @@ const URLPrefix = 'http://localhost:9200';
 class ElasticSearchClient {
   async createIndex(index) {
     const URL = `${URLPrefix}/${index}`;
-    const body = JSON.stringify(json);
-    await fetch(URL, { method: 'PUT', body: body });
+    await fetch(URL, { method: 'PUT' });
   }
 
   async create(index, type, id, json, callback) {
@@ -18,9 +17,11 @@ class ElasticSearchClient {
   }
 
   // Returns the raw JSON as (a promise of) text, not as an object.
-  async search(index, type, country, poet, query) {
+  async search(index, type, country, poet, query, page = 0) {
     const URL = `${URLPrefix}/${index}/_search`;
     const body = {
+      size: 10,
+      from: page * 10,
       query: {
         bool: {
           must: [
@@ -32,6 +33,11 @@ class ElasticSearchClient {
             },
           ],
           filter: [{ term: { 'poet.country': country } }],
+        },
+      },
+      highlight: {
+        fields: {
+          'text.content_html': {},
         },
       },
     };

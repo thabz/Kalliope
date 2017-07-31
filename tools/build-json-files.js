@@ -1197,6 +1197,7 @@ const update_elasticsearch = collected => {
   collected.poets.forEach((poet, poetId) => {
     safeMkdir(`static/api/${poetId}`);
     elasticSearchClient.createIndex('kalliope');
+
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!isFileModified(filename)) {
@@ -1220,13 +1221,13 @@ const update_elasticsearch = collected => {
         poet,
         work: workData,
       };
+
       elasticSearchClient.create(
         'kalliope',
         'work',
         `${poetId}-${workId}`,
         data
       );
-
       doc.find('//poem|//prose').forEach(text => {
         const textId = text.attr('id').value();
         const head = text.get('head');
@@ -1269,7 +1270,12 @@ const update_elasticsearch = collected => {
           is_prose: text.name() === 'prose',
           keywords: keywordsArray,
           content_html: htmlToXml(
-            body.toString().replace('<body>', '').replace('</body>', ''),
+            body
+              .toString()
+              .replace('<body>', '')
+              .replace('</body>', '')
+              .replace(/<note>.*?<\/note>/g, '')
+              .replace(/<.*?>/g, ' '),
             collected,
             text.name() === 'poem'
           ),
