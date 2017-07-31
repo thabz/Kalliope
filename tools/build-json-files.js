@@ -1278,7 +1278,7 @@ const update_elasticsearch = collected => {
               .replace(/<.*?>/g, ' '),
             collected,
             text.name() === 'poem'
-          ),
+          ).replace(/<.*?>/g, ' '),
         };
         const data = {
           poet,
