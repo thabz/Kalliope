@@ -1,5 +1,7 @@
 // @flow
 
+import type { Lang, PoetId } from '../pages/helpers/types.js';
+
 export const frontPageURL = (lang: string = 'da') => {
   return `/${lang}/`;
 };
@@ -74,4 +76,17 @@ export const keywordURL = (lang: string = 'da', keywordId: string) => {
 
 export const aboutURL = (lang: string = 'da', aboutText: string) => {
   return `/${lang}/about/${aboutText}`;
+};
+
+export const searchURL = (
+  lang: string,
+  query: string,
+  country: string,
+  poetId: ?PoetId = null
+) => {
+  if (poetId != null) {
+    return `/${lang}/search/${country}/${poetId}?query=${query}`;
+  } else {
+    return `/${lang}/search/${country}?query=${query}`;
+  }
 };

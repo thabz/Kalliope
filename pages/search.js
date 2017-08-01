@@ -49,11 +49,9 @@ export default class extends React.Component {
   render() {
     const { lang, poet, country, query, result } = this.props;
 
-    let renderedResult = null;
-    if (result.hits.total === 0) {
-      renderedResult = <div>Ingen søgeresultat</div>;
-    } else {
-      const items = result.hits.hits
+    let items = [];
+    if (result.hits.total > 0) {
+      items = result.hits.hits
         .filter(x => x._source.text != null)
         .map((hit, i) => {
           const { poet, work, text } = hit._source;
@@ -123,37 +121,47 @@ export default class extends React.Component {
             </div>
           );
         });
-
-      const resultaterOrd = result.hits.total > 0 ? 'resultater' : 'resultat';
-      let resultaterBeskrivelse = `Fandt ${result.hits
-        .total} ${resultaterOrd} ved søgning efter »${query}«`;
-      if (poet != null) {
-        const genetive = poetGenetiveLastName(poet, lang);
-        resultaterBeskrivelse += ` i ${genetive} værker`;
-      } else if (country != 'dk') {
-        const countryData = CommonData.countries.filter(
-          x => x.code === country
-        );
-        if (countryData.length > 0) {
-          const adjective = countryData[0].adjective[lang];
-          resultaterBeskrivelse += ` i den ${adjective} samling`;
-        }
-      }
-      renderedResult = (
-        <div className="result-items">
-          <div className="result-count">{resultaterBeskrivelse}</div>
-          {items}
-          <style jsx>{`
-            .result-count {
-              margin-bottom: 30px;
-            }
-            .result-items {
-              line-height: 1.5;
-            }
-          `}</style>
-        </div>
-      );
     }
+    const antal = result.hits.total;
+    let resultaterOrd = null;
+    let linkToFullSearch = null;
+    if (antal === 0) {
+      resultaterOrd = 'ingen resultater';
+    } else if (antal > 1) {
+      resultaterOrd = antal + ' resultater';
+    } else {
+      resultaterOrd = antal + ' resultat';
+    }
+    let resultaterBeskrivelse = `Fandt ${resultaterOrd} ved søgning efter »${query}«`;
+    if (poet != null) {
+      const genetive = poetGenetiveLastName(poet, lang);
+      resultaterBeskrivelse += ` i ${genetive} værker.`;
+      const fullSearchURL = Links.searchURL(lang, query, country);
+      linkToFullSearch = <Link route={fullSearchURL}>Søg i hele Kalliope</Link>;
+    } else if (country != 'dk') {
+      const countryData = CommonData.countries.filter(x => x.code === country);
+      if (countryData.length > 0) {
+        const adjective = countryData[0].adjective[lang];
+        resultaterBeskrivelse += ` i den ${adjective} samling`;
+      }
+    }
+
+    const renderedResult = (
+      <div className="result-items">
+        <div className="result-count">
+          {resultaterBeskrivelse}{' '}{linkToFullSearch}
+        </div>
+        {items}
+        <style jsx>{`
+          .result-count {
+            margin-bottom: 30px;
+          }
+          .result-items {
+            line-height: 1.5;
+          }
+        `}</style>
+      </div>
+    );
 
     let tabs = null;
     let headTitle = null;

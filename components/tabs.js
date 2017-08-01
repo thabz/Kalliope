@@ -102,11 +102,10 @@ export default class Tabs extends React.Component {
     const { poet, country, lang } = this.props;
     let URL = null;
     if (poet != null) {
-      URL = `/${lang}/search/${poet.country}/${poet.id}?query=${q}`;
+      URL = Links.searchURL(lang, q, poet.country, poet.id);
     } else {
-      URL = `/${lang}/search/${country}?query=${q}`;
+      URL = Links.searchURL(lang, q, country);
     }
-    console.log('Search result URL', URL);
     Router.pushRoute(URL);
     e.preventDefault();
   }
