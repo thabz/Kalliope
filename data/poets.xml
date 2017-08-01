@@ -1475,7 +1475,6 @@
   <works>1716</works>
 </person>
 
-<!-- TODO: Find mere nøjagtige datoer -->
 <person id="tychonius" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christen Lassen</firstname>
@@ -1483,10 +1482,12 @@
   </name>
   <period>
     <born>
-      <date>1680</date>
+      <date>1680-08-17</date>
+      <place>Sahl ved Holstebro</place>
     </born>
     <dead>
-      <date>1740</date>
+      <date>1740-12-25</date>
+      <place>Viborg</place>
     </dead>
   </period>
 </person>
