@@ -129,14 +129,14 @@ export default class extends React.Component {
         .total} ${resultaterOrd} ved søgning efter »${query}«`;
       if (poet != null) {
         const genetive = poetGenetiveLastName(poet, lang);
-        resultaterBeskrivelse += `i ${genetive} værker`;
+        resultaterBeskrivelse += ` i ${genetive} værker`;
       } else if (country != 'dk') {
         const countryData = CommonData.countries.filter(
           x => x.code === country
         );
         if (countryData.length > 0) {
           const adjective = countryData[0].adjective[lang];
-          resultaterBeskrivelse += `i den ${adjective} samling`;
+          resultaterBeskrivelse += ` i den ${adjective} samling`;
         }
       }
       renderedResult = (
@@ -160,13 +160,22 @@ export default class extends React.Component {
     let pageTitle = null;
     let nav = null;
     if (poet != null) {
-      tabs = <PoetTabs lang={lang} poet={poet} selected="search" />;
+      tabs = (
+        <PoetTabs lang={lang} poet={poet} selected="search" query={query} />
+      );
       headTitle =
         'Søgning - ' + poetNameString(poet, false, false) + ' - Kalliope';
       pageTitle = <PoetName poet={poet} includePeriod />;
       nav = <Nav lang={lang} poet={poet} title="Søgeresultat" />;
     } else {
-      tabs = <KalliopeTabs selected="search" lang={lang} country={country} />;
+      tabs = (
+        <KalliopeTabs
+          selected="search"
+          lang={lang}
+          country={country}
+          query={query}
+        />
+      );
       headTitle = 'Søgning - Kalliope';
       pageTitle = 'Kalliope';
       nav = <Nav lang={lang} title="Søgeresultat" />;

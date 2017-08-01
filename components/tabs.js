@@ -60,6 +60,7 @@ export default class Tabs extends React.Component {
     poet?: Poet,
     country: Country,
     lang: Lang,
+    query?: ?string,
     selected: string,
   };
   searchField: HTMLInputElement;
@@ -70,7 +71,8 @@ export default class Tabs extends React.Component {
 
   constructor(props: any) {
     super(props);
-    this.state = { showSearchField: false };
+    const { query } = props;
+    this.state = { showSearchField: query != null && query.length > 0 };
     this.onLoupeClick = this.onLoupeClick.bind(this);
     this.onCrossClick = this.onCrossClick.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
@@ -138,7 +140,7 @@ export default class Tabs extends React.Component {
   }
 
   render() {
-    const { items, selected, poet, country, lang } = this.props;
+    const { items, selected, poet, country, lang, query } = this.props;
     let placeholder = null;
     if (poet != null) {
       const genetiveLastName = poetGenetiveLastName(poet, lang);
@@ -166,6 +168,7 @@ export default class Tabs extends React.Component {
               ref={domElement => {
                 this.searchField = domElement;
               }}
+              defaultValue={query}
               className="search-field"
               placeholder={placeholder}
             />
@@ -336,11 +339,12 @@ export class PoetTabs extends React.Component {
   props: {
     poet: Poet,
     lang: Lang,
+    query?: ?string,
     selected: 'works' | 'titles' | 'first' | 'bio' | 'bibliography' | 'search',
   };
 
   render() {
-    const { lang, poet, selected } = this.props;
+    const { lang, poet, selected, query } = this.props;
     const tabs: Array<{
       id: string,
       title: string,
@@ -385,6 +389,7 @@ export class PoetTabs extends React.Component {
         lang={lang}
         country={poet.country}
         poet={poet}
+        query={query}
       />
     );
   }
@@ -394,10 +399,11 @@ export class KalliopeTabs extends React.Component {
   props: {
     lang: Lang,
     country?: Country,
+    query?: ?string,
     selected: 'index' | 'poets' | 'keywords' | 'dictionary' | 'search',
   };
   render() {
-    const { lang, selected, country } = this.props;
+    const { lang, selected, country, query } = this.props;
     const tabs = [
       { id: 'index', title: 'Kalliope', url: Links.frontPageURL(lang) },
       { id: 'poets', title: 'Digtere', url: Links.poetsURL(lang, 'name') },
@@ -411,6 +417,7 @@ export class KalliopeTabs extends React.Component {
         selected={selected}
         lang={lang}
         country={country || 'dk'}
+        query={query}
       />
     );
   }
