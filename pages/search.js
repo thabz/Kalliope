@@ -137,12 +137,14 @@ export default class extends React.Component {
       const genetive = poetGenetiveLastName(poet, lang);
       resultaterBeskrivelse += ` i ${genetive} værker.`;
       const fullSearchURL = Links.searchURL(lang, query, country);
-      linkToFullSearch = <Link route={fullSearchURL}>Søg i hele Kalliope</Link>;
+      linkToFullSearch = (
+        <Link route={fullSearchURL}>Søg i hele Kalliope.</Link>
+      );
     } else if (country != 'dk') {
       const countryData = CommonData.countries.filter(x => x.code === country);
       if (countryData.length > 0) {
         const adjective = countryData[0].adjective[lang];
-        resultaterBeskrivelse += ` i den ${adjective} samling`;
+        resultaterBeskrivelse += ` i den ${adjective} samling.`;
       }
     }
 
