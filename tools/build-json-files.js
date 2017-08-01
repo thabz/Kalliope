@@ -108,7 +108,7 @@ const build_global_timeline = collected => {
 
 const build_poet_timeline_json = (poet, collected) => {
   let items = [];
-  if (poet.type === 'poet') {
+  if (poet.type !== 'collection') {
     collected.workids.get(poet.id).forEach(workId => {
       const work = collected.works.get(`${poet.id}/${workId}`);
       if (work.year != '?') {
