@@ -1279,6 +1279,7 @@ const update_elasticsearch = collected => {
               .replace('<body>', '')
               .replace('</body>', '')
               .replace(/<note>.*?<\/note>/g, '')
+              .replace(/<footnote>.*?<\/footnote>/g, '')
               .replace(/<.*?>/g, ' '),
             collected,
             text.name() === 'poem'
