@@ -120,5 +120,7 @@ export function poetGenetiveLastName(poet: Poet, lang: Lang): string {
     } else {
       return `${name}’s`;
     }
+  } else {
+    throw `Ukendt sprog: ${lang}`;
   }
 }

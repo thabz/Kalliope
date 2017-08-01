@@ -4,6 +4,7 @@ import { Link, Router } from '../routes';
 import * as Links from './links.js';
 import { poetGenetiveLastName } from './poetname.js';
 import type { Lang, Poet, Country } from '../pages/helpers/types.js';
+import CommonData from '../pages/helpers/commondata.js';
 
 // TODO: Don't export Tabs and make KalliopeTabs and PoetTabs send extra
 // TODO: props into Tabs to configure it's placeholder text, etc.
@@ -146,7 +147,15 @@ export default class Tabs extends React.Component {
       if (country === 'dk') {
         placeholder = `Søg i Kalliope`;
       } else {
-        placeholder = `Søg i Kalliope`; // TODO: 's italienske samling'
+        const countryData = CommonData.countries.filter(
+          x => x.code === country
+        );
+        if (countryData.length > 0) {
+          const adjective = countryData[0].adjective[lang];
+          placeholder = `Søg i Kalliopes ${adjective} samling`;
+        } else {
+          placeholder = `Søg i Kalliope`;
+        }
       }
     }
     const searchField = (

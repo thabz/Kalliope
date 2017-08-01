@@ -10,7 +10,10 @@ import Nav from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import { KalliopeTabs, PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
-import PoetName, { poetNameString } from '../components/poetname.js';
+import PoetName, {
+  poetNameString,
+  poetGenetiveLastName,
+} from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import TextName from '../components/textname.js';
 import * as Strings from './helpers/strings.js';
@@ -24,7 +27,6 @@ export default class extends React.Component {
   }: {
     query: { lang: Lang, country: Country, poetId?: PoetId, query: string },
   }) {
-    console.log('Will search for ' + query);
     const result = await Client.search(poetId, country, query);
     const poet = await Client.poet(poetId);
     return {
@@ -121,11 +123,25 @@ export default class extends React.Component {
             </div>
           );
         });
+
+      const resultaterOrd = result.hits.total > 0 ? 'resultater' : 'resultat';
+      let resultaterBeskrivelse = `Fandt ${result.hits
+        .total} ${resultaterOrd} ved søgning efter »${query}«`;
+      if (poet != null) {
+        const genetive = poetGenetiveLastName(poet, lang);
+        resultaterBeskrivelse += `i ${genetive} værker`;
+      } else if (country != 'dk') {
+        const countryData = CommonData.countries.filter(
+          x => x.code === country
+        );
+        if (countryData.length > 0) {
+          const adjective = countryData[0].adjective[lang];
+          resultaterBeskrivelse += `i den ${adjective} samling`;
+        }
+      }
       renderedResult = (
         <div className="result-items">
-          <div className="result-count">
-            Fandt {result.hits.total} resultat(er) ved søgning efter »{query}«
-          </div>
+          <div className="result-count">{resultaterBeskrivelse}</div>
           {items}
           <style jsx>{`
             .result-count {
@@ -150,7 +166,7 @@ export default class extends React.Component {
       pageTitle = <PoetName poet={poet} includePeriod />;
       nav = <Nav lang={lang} poet={poet} title="Søgeresultat" />;
     } else {
-      tabs = <KalliopeTabs selected="search" lang={lang} />;
+      tabs = <KalliopeTabs selected="search" lang={lang} country={country} />;
       headTitle = 'Søgning - Kalliope';
       pageTitle = 'Kalliope';
       nav = <Nav lang={lang} title="Søgeresultat" />;
