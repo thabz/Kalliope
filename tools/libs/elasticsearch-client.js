@@ -61,7 +61,6 @@ class ElasticSearchClient {
       },
     };
     if (poetId != null && poetId.length > 0) {
-      console.log('Add poet filter for ', poetId);
       body.query.bool.filter.push({
         term: { 'poet.id': poetId },
       });
