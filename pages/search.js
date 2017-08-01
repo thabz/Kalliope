@@ -10,41 +10,42 @@ import Nav from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import { KalliopeTabs, PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
-import PoetName from '../components/poetname.js';
+import PoetName, { poetNameString } from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import TextName from '../components/textname.js';
 import * as Strings from './helpers/strings.js';
 import CommonData from '../pages/helpers/commondata.js';
 import * as Client from './helpers/client.js';
-import type { Lang, Country, Poet } from './helpers/types.js';
+import type { Lang, Country, Poet, PoetId } from './helpers/types.js';
 
 export default class extends React.Component {
   static async getInitialProps({
     query: { lang, country, poetId, query },
   }: {
-    query: { lang: Lang, country: Country, poetId?: string, query: string },
+    query: { lang: Lang, country: Country, poetId?: PoetId, query: string },
   }) {
+    console.log('Will search for ' + query);
     const result = await Client.search(poetId, country, query);
+    const poet = await Client.poet(poetId);
     return {
       lang,
       country,
       query,
       result,
+      poet,
     };
   }
 
   props: {
     lang: Lang,
-    poetId: string,
+    poet: ?Poet,
     country: Country,
     query: string,
     result: any,
   };
 
   render() {
-    const { lang, poetId, country, query, result } = this.props;
-
-    let pageTitle = null;
+    const { lang, poet, country, query, result } = this.props;
 
     let renderedResult = null;
     if (result.hits.total === 0) {
@@ -61,7 +62,7 @@ export default class extends React.Component {
             item = (
               <div>
                 <div>
-                  <Link route={textURL}><a><WorkName work={work} /></a></Link>
+                  <Link route={workURL}><a><WorkName work={work} /></a></Link>
                 </div>
                 <div>
                   <PoetName poet={poet} />:{' '}
@@ -77,8 +78,8 @@ export default class extends React.Component {
               renderedHighlight = lines.map(line => {
                 let parts = line
                   .replace(/\s+/g, ' ')
-                  .replace(/^[\s,.!:;]+/, '')
-                  .replace(/[\s,.!:;]+$/, '')
+                  .replace(/^[\s,.!:;?"“„]+/, '')
+                  .replace(/[\s,.!:;?"“„]+$/, '')
                   .split(/<\/?em>/);
                 parts[1] = <em>{parts[1]}</em>;
                 return <div>{parts}</div>;
@@ -139,17 +140,26 @@ export default class extends React.Component {
     }
 
     let tabs = null;
-    if (poetId) {
-      //tabs = <PoetTabs lang={lang} poet={poet} selected="search" />;
-      tabs = <KalliopeTabs selected="search" lang={lang} />;
+    let headTitle = null;
+    let pageTitle = null;
+    let nav = null;
+    if (poet != null) {
+      tabs = <PoetTabs lang={lang} poet={poet} selected="search" />;
+      headTitle =
+        'Søgning - ' + poetNameString(poet, false, false) + ' - Kalliope';
+      pageTitle = <PoetName poet={poet} includePeriod />;
+      nav = <Nav lang={lang} poet={poet} title="Søgeresultat" />;
     } else {
       tabs = <KalliopeTabs selected="search" lang={lang} />;
+      headTitle = 'Søgning - Kalliope';
+      pageTitle = 'Kalliope';
+      nav = <Nav lang={lang} title="Søgeresultat" />;
     }
     return (
       <div>
-        <Head headTitle="Søgeresultat - Kalliope" />
+        <Head headTitle={headTitle} />
         <Main>
-          <Nav lang={lang} title="Søgeresultat" />
+          {nav}
           <Heading title={pageTitle} />
           {tabs}
           {renderedResult}

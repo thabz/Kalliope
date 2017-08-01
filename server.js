@@ -18,11 +18,12 @@ app.prepare().then(() => {
       const path = join(__dirname, 'static', pathname);
       app.serveStatic(req, res, path);
     } else if (pathname.indexOf('/search') === 0) {
+      console.log('Seaching using', req.url);
       const result = await elasticSearchClient.search(
         'kalliope',
         'text',
         query.country,
-        query.poet,
+        query.poetId,
         query.query
       );
       res.writeHead(200, { 'Content-Type': 'application/json' });

@@ -27,6 +27,16 @@ export const createURL = (path: string): string => {
   }
 };
 
+export const poet = async (poetId: ?PoetId): Promise<?Poet> => {
+  if (poetId == null) {
+    return Promise.resolve(null);
+  } else {
+    const res = await fetch(createURL(`/static/api/${poetId}.json`));
+    const json = (await res.json(): Promise<Poet>);
+    return json;
+  }
+};
+
 export type FetchWorkResult = {
   poet: Poet,
   work: Work,
@@ -49,7 +59,7 @@ type FetchWorksResult = Promise<{
   poet: Poet,
   works: Array<Work>,
 }>;
-export const works = async (poetId: string): FetchWorksResult => {
+export const works = async (poetId: PoetId): FetchWorksResult => {
   const res = await fetch(createURL(`/static/api/${poetId}/works.json`));
   return (await res.json(): FetchWorksResult);
 };
@@ -75,8 +85,10 @@ export const search = async (
   country: Country,
   query: string
 ): FetchSearchResult => {
-  const res = await fetch(
-    createURL(`/search?country=${country}&poet=${poetId}&query=${query}`)
-  );
+  let URL = `/search?country=${country}&query=${query}`;
+  if (poetId != null) {
+    URL += `&poetId=${poetId}`;
+  }
+  const res = await fetch(createURL(URL));
   return (await res.json(): FetchSearchResult);
 };

@@ -36,7 +36,7 @@ class ElasticSearchClient {
   }
 
   // Returns the raw JSON as (a promise of) text, not as an object.
-  async search(index, type, country, poet, query, page = 0) {
+  async search(index, type, country, poetId, query, page = 0) {
     const URL = `${URLPrefix}/${index}/_search`;
     const body = {
       size: 10,
@@ -60,6 +60,12 @@ class ElasticSearchClient {
         },
       },
     };
+    if (poetId != null && poetId.length > 0) {
+      console.log('Add poet filter for ', poetId);
+      body.query.bool.filter.push({
+        term: { 'poet.id': poetId },
+      });
+    }
     try {
       const res = await fetch(URL, {
         method: 'POST',

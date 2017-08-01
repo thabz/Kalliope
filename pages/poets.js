@@ -174,7 +174,7 @@ export default class extends React.Component {
         <Main>
           <Nav lang={lang} title="Digtere" />
           <Heading title={pageTitle} />
-          <Tabs items={tabs} selected={groupBy} />
+          <Tabs items={tabs} selected={groupBy} country={country} lang={lang} />
           {renderedGroups}
           <CountryPicker
             style={{ marginTop: '40px' }}

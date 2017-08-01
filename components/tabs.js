@@ -2,7 +2,8 @@
 import React from 'react';
 import { Link, Router } from '../routes';
 import * as Links from './links.js';
-import type { Lang, Poet } from '../pages/helpers/types.js';
+import { poetGenetiveLastName } from './poetname.js';
+import type { Lang, Poet, Country } from '../pages/helpers/types.js';
 
 // TODO: Don't export Tabs and make KalliopeTabs and PoetTabs send extra
 // TODO: props into Tabs to configure it's placeholder text, etc.
@@ -55,6 +56,9 @@ class CrossSVG extends React.Component {
 export default class Tabs extends React.Component {
   props: {
     items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
+    poet?: Poet,
+    country: Country,
+    lang: Lang,
     selected: string,
   };
   searchField: HTMLInputElement;
@@ -92,10 +96,15 @@ export default class Tabs extends React.Component {
 
   onSubmit(e: Event) {
     const q = this.searchField.value;
-    const lang = 'da';
-    const country = 'dk';
-    console.log('Searching for ' + q);
-    Router.pushRoute(`/${lang}/search/${country}?query=${q}`);
+    const { poet, country, lang } = this.props;
+    let URL = null;
+    if (poet != null) {
+      URL = `/${lang}/search/${poet.country}/${poet.id}?query=${q}`;
+    } else {
+      URL = `/${lang}/search/${country}?query=${q}`;
+    }
+    console.log('Search result URL', URL);
+    Router.pushRoute(URL);
     e.preventDefault();
   }
 
@@ -128,8 +137,18 @@ export default class Tabs extends React.Component {
   }
 
   render() {
-    const { items, selected } = this.props;
-
+    const { items, selected, poet, country, lang } = this.props;
+    let placeholder = null;
+    if (poet != null) {
+      const genetiveLastName = poetGenetiveLastName(poet, lang);
+      placeholder = `Søg i ${genetiveLastName} værker`;
+    } else {
+      if (country === 'dk') {
+        placeholder = `Søg i Kalliope`;
+      } else {
+        placeholder = `Søg i Kalliope`; // TODO: 's italienske samling'
+      }
+    }
     const searchField = (
       <div style={{ display: 'flex' }}>
         <div style={{ flexGrow: 1 }}>
@@ -139,7 +158,7 @@ export default class Tabs extends React.Component {
                 this.searchField = domElement;
               }}
               className="search-field"
-              placeholder="Søg i Kalliope"
+              placeholder={placeholder}
             />
           </form>
         </div>
@@ -350,17 +369,26 @@ export class PoetTabs extends React.Component {
         url: Links.bioURL(lang, poet.id),
       },
     ];
-    return <Tabs items={tabs} selected={selected} />;
+    return (
+      <Tabs
+        items={tabs}
+        selected={selected}
+        lang={lang}
+        country={poet.country}
+        poet={poet}
+      />
+    );
   }
 }
 
 export class KalliopeTabs extends React.Component {
   props: {
     lang: Lang,
+    country?: Country,
     selected: 'index' | 'poets' | 'keywords' | 'dictionary' | 'search',
   };
   render() {
-    const { lang, selected } = this.props;
+    const { lang, selected, country } = this.props;
     const tabs = [
       { id: 'index', title: 'Kalliope', url: Links.frontPageURL(lang) },
       { id: 'poets', title: 'Digtere', url: Links.poetsURL(lang, 'name') },
@@ -368,6 +396,13 @@ export class KalliopeTabs extends React.Component {
       { id: 'dictionary', title: 'Ordbog', url: Links.dictionaryURL(lang) },
       { id: 'about', title: 'Om', url: Links.aboutURL(lang, 'kalliope') },
     ];
-    return <Tabs items={tabs} selected={selected} />;
+    return (
+      <Tabs
+        items={tabs}
+        selected={selected}
+        lang={lang}
+        country={country || 'dk'}
+      />
+    );
   }
 }

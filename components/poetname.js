@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import type { Poet } from '../pages/helpers/types.js';
+import type { Poet, Lang } from '../pages/helpers/types.js';
 
 const parts = (
   poet: Poet,
@@ -91,5 +91,34 @@ export function poetNameString(
     return p[0];
   } else {
     return '';
+  }
+}
+
+export const navnMedEjefald = (navn: ?string): ?string => {
+  if (navn == null) {
+    return null;
+  }
+  if (navn.match(/[szx]$/)) {
+    return `${navn}’`;
+  } else {
+    return `${navn}s`;
+  }
+};
+
+export function poetGenetiveLastName(poet: Poet, lang: Lang): string {
+  const { firstname, lastname } = poet.name;
+  let name: string = lastname || firstname || 'Ukendt';
+  if (lang === 'da') {
+    if (name.match(/[szx]$/)) {
+      return `${name}’`;
+    } else {
+      return `${name}s`;
+    }
+  } else if (lang === 'en') {
+    if (name.match(/s$/)) {
+      return `${name}’`;
+    } else {
+      return `${name}’s`;
+    }
   }
 }

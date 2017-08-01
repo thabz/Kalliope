@@ -284,6 +284,9 @@ const build_poets_json = () => {
       return a.id < b.id ? -1 : 1;
     });
     writeJSON(`static/api/poets-${country}.json`, sorted);
+    poets.forEach(poet => {
+      writeJSON(`static/api/${poet.id}.json`, poet);
+    });
   });
   return collected_poets;
 };
