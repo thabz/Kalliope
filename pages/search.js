@@ -78,8 +78,8 @@ export default class extends React.Component {
               renderedHighlight = lines.map(line => {
                 let parts = line
                   .replace(/\s+/g, ' ')
-                  .replace(/^[\s,.!:;?"“„]+/, '')
-                  .replace(/[\s,.!:;?"“„]+$/, '')
+                  .replace(/^[\s,.!:;?\d"“„]+/, '')
+                  .replace(/[\s,.!:;?\d"“„]+$/, '')
                   .split(/<\/?em>/);
                 parts[1] = <em>{parts[1]}</em>;
                 return <div>{parts}</div>;
