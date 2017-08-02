@@ -314,6 +314,9 @@ const build_poets_json = () => {
         };
       }
     }
+    if (period.born == null || period.dead == null) {
+      period = null;
+    }
 
     let list = byCountry.get(country) || [];
     let worksArray = works ? works.split(',') : [];
