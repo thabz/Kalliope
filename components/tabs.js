@@ -101,7 +101,7 @@ export default class Tabs extends React.Component {
     const q = this.searchField.value;
     const { poet, country, lang } = this.props;
     let URL = null;
-    if (poet != null) {
+    if (poet != null && poet.has_texts) {
       URL = Links.searchURL(lang, q, poet.country, poet.id);
     } else {
       URL = Links.searchURL(lang, q, country);
@@ -141,7 +141,7 @@ export default class Tabs extends React.Component {
   render() {
     const { items, selected, poet, country, lang, query } = this.props;
     let placeholder = null;
-    if (poet != null) {
+    if (poet != null && poet.has_texts) {
       const genetiveLastName = poetGenetiveLastName(poet, lang);
       placeholder = `Søg i ${genetiveLastName} værker`;
     } else {
