@@ -83,9 +83,10 @@ type FetchSearchResult = Promise<{
 export const search = async (
   poetId: string = '',
   country: Country,
-  query: string
+  query: string,
+  page: number = 0
 ): FetchSearchResult => {
-  let URL = `/search?country=${country}&query=${query}`;
+  let URL = `/search?country=${country}&query=${query}&page=${page}`;
   if (poetId != null) {
     URL += `&poetId=${poetId}`;
   }

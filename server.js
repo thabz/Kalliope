@@ -23,7 +23,8 @@ app.prepare().then(() => {
         'text',
         query.country,
         query.poetId,
-        query.query
+        query.query,
+        query.page || 0
       );
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.write(result);
