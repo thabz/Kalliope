@@ -248,22 +248,22 @@ const build_poets_json = () => {
     const has_works = workIds.length > 0;
     let has_poems = false;
     let has_prose = false;
-    while ((has_poems === false || has_prose === false) && workIds.length > 0) {
+    while ((has_poems == false || has_prose == false) && workIds.length > 0) {
       const workId = workIds.pop();
       let doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
       if (!has_poems) {
-        has_poems |= doc.find('//poem').length > 0;
+        has_poems = doc.find('//poem').length > 0;
       }
       if (!has_prose) {
-        has_prose |= doc.find('//prose').length > 0;
+        has_prose = doc.find('//prose').length > 0;
       }
     }
-    has_poems = !!has_poems;
-    has_prose = !!has_prose;
-    const has_texts = !!(has_poems | has_prose);
+    // has_poems = !!has_poems;
+    // has_prose = !!has_prose;
+    const has_texts = has_poems || has_prose;
     return {
-      has_poems: !!has_poems,
-      has_prose: has_prose,
+      has_poems,
+      has_prose,
       has_texts,
       has_works,
     };
