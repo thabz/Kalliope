@@ -94,7 +94,7 @@ export default class extends React.Component {
         html.scrollHeight,
         html.offsetHeight
       );
-      if (window.pageYOffset + window.innerHeight > documentHeight - 200) {
+      if (window.pageYOffset + window.innerHeight > documentHeight - 50) {
         this.appendItems();
       }
     }
@@ -131,6 +131,8 @@ export default class extends React.Component {
     this.resultPage = 0;
     if (this.hits.length < result.hits.total) {
       this.enableInfiniteScrolling();
+      // Check scrollposition after
+      setTimeout(this.scrollListener, 500);
     } else {
       this.disableInfiniteScrolling();
     }
@@ -147,6 +149,7 @@ export default class extends React.Component {
     this.resultPage = 0;
     if (this.hits.length < result.hits.total) {
       this.enableInfiniteScrolling();
+      setTimeout(this.scrollListener, 500);
     } else {
       this.disableInfiniteScrolling();
     }
