@@ -1,5 +1,4 @@
 const fs = require('fs');
-const xml2js = require('xml2js');
 const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
 const Paths = require('../pages/helpers/paths.js');
@@ -243,41 +242,109 @@ const build_bio_json = collected => {
 
 // TODO: Speed this up by caching.
 const build_poets_json = () => {
-  const data = fs.readFileSync('data/poets.xml');
-  const parser = new xml2js.Parser({ explicitArray: false });
+  // Returns {has_poems: bool, has_prose: bool,
+  //  has_texts: bool, has_works: bool}
+  const hasTexts = (poetId, workIds) => {
+    const has_works = workIds.length > 0;
+    let has_poems = false;
+    let has_prose = false;
+    while ((has_poems === false || has_prose === false) && workIds.length > 0) {
+      const workId = workIds.pop();
+      let doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
+      if (!has_poems) {
+        has_poems |= doc.find('//poem').length > 0;
+      }
+      if (!has_prose) {
+        has_prose |= doc.find('//prose').length > 0;
+      }
+    }
+    has_poems = !!has_poems;
+    has_prose = !!has_prose;
+    const has_texts = !!(has_poems | has_prose);
+    return {
+      has_poems: !!has_poems,
+      has_prose: has_prose,
+      has_texts,
+      has_works,
+    };
+  };
+
+  const safeGetText = (element, child) => {
+    if (element) {
+      const childElement = element.get(child);
+      if (childElement) {
+        return childElement.text();
+      }
+    }
+    return null;
+  };
+
+  let doc = loadXMLDoc('data/poets.xml');
+  const persons = doc.find('//person');
+
   let byCountry = new Map();
   let collected_poets = new Map();
-  parser.parseString(data, (err, result) => {
-    const persons = { result };
-    result.persons.person.forEach(p => {
-      const { id, country, lang, type } = p.$;
-      const { name, period, works } = p;
-      let list = byCountry.get(country) || [];
-      let worksArray = works ? works.split(',') : [];
-      const poet = {
-        id,
-        country,
-        lang,
-        type,
-        name: name,
-        period,
-        has_bibliography:
-          fs.existsSync(`fdirs/${id}/bibliography-primary.xml`) ||
-            fs.existsSync(`fdirs/${id}/bibliography-secondary.xml`),
-        has_works: worksArray.length > 0,
-        has_biography:
-          fs.existsSync(`fdirs/${id}/bio.xml`) ||
-            fs.existsSync(`fdirs/${id}/events.xml`) ||
-            (period != null &&
-              period.born.date !== '?' &&
-              period.dead.date !== '?'),
-        has_portraits: fs.existsSync(`static/images/${id}/p1.jpg`),
-      };
-      list.push(poet);
-      byCountry.set(country, list);
-      collected_poets.set(id, poet);
-    });
-    return collected_poets;
+
+  persons.forEach(p => {
+    const id = p.attr('id').value();
+    const country = p.attr('country').value();
+    const lang = p.attr('lang').value();
+    const type = p.attr('type').value();
+    const nameE = p.get('name');
+    const periodE = p.get('period');
+    const works = safeGetText(p, 'works');
+
+    const firstname = safeGetText(nameE, 'firstname');
+    const lastname = safeGetText(nameE, 'lastname');
+
+    let period = {};
+    if (periodE) {
+      const bornE = periodE.get('born');
+      const deadE = periodE.get('dead');
+      if (bornE) {
+        period.born = {
+          date: safeGetText(bornE, 'date'),
+          place: safeGetText(bornE, 'place'),
+        };
+      }
+      if (deadE) {
+        period.dead = {
+          date: safeGetText(deadE, 'date'),
+          place: safeGetText(deadE, 'place'),
+        };
+      }
+    }
+
+    let list = byCountry.get(country) || [];
+    let worksArray = works ? works.split(',') : [];
+    const has = hasTexts(id, worksArray);
+    const poet = {
+      id,
+      country,
+      lang,
+      type,
+      name: { firstname, lastname },
+      period,
+      has_works: has.has_works,
+      has_poems: has.has_poems,
+      has_prose: has.has_prose,
+      has_texts: has.has_texts,
+      has_bibliography:
+        fs.existsSync(`fdirs/${id}/bibliography-primary.xml`) ||
+          fs.existsSync(`fdirs/${id}/bibliography-secondary.xml`),
+      has_biography:
+        fs.existsSync(`fdirs/${id}/bio.xml`) ||
+          fs.existsSync(`fdirs/${id}/events.xml`) ||
+          (period != null &&
+            period.born != null &&
+            period.dead != null &&
+            period.born.date !== '?' &&
+            period.dead.date !== '?'),
+      has_portraits: fs.existsSync(`static/images/${id}/p1.jpg`),
+    };
+    list.push(poet);
+    byCountry.set(country, list);
+    collected_poets.set(id, poet);
   });
   byCountry.forEach((poets, country) => {
     const sorted = poets.sort((a, b) => {
