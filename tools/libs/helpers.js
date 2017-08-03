@@ -17,7 +17,7 @@ const fileExists = filename => {
 
 const fileModifiedTime = filename => {
   if (fileExists(filename)) {
-    return fs.statSync(filename).mtimeMs;
+    return fs.statSync(filename).mtimeMs || fs.statSync(filename).mtime;
   } else {
     return null;
   }
