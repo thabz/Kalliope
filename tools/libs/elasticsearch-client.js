@@ -24,9 +24,7 @@ const indexingQueue = queue((task, callback) => {
 class ElasticSearchClient {
   createIndex(index) {
     const URL = `${URLPrefix}/${index}`;
-    fetch(URL, { method: 'PUT' }).catch(error => {
-      console.log(error);
-    });
+    return fetch(URL, { method: 'PUT' });
   }
 
   create(index, type, id, json) {
