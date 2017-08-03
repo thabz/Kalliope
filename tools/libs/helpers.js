@@ -17,7 +17,10 @@ const fileExists = filename => {
 
 const fileModifiedTime = filename => {
   if (fileExists(filename)) {
-    return fs.statSync(filename).mtimeMs || fs.statSync(filename).mtime;
+    // Older node.js has no mtimeMs so we use mtime.getTime()
+    return (
+      fs.statSync(filename).mtimeMs || fs.statSync(filename).mtime.getTime()
+    );
   } else {
     return null;
   }
