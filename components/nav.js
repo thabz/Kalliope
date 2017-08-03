@@ -72,6 +72,19 @@ export default class Nav extends React.Component {
               Avenir,
               Helvetica,
               sans-serif;
+            box-sizing: border-box;
+            font-size: 14px;
+            height: 150px;
+          }
+          :global(a) {
+            color: #067df7;
+            color: rgb(139, 56, 65);
+            text-decoration: none;
+          }
+          @media print {
+            :global(a) {
+              color: black;
+            }
           }
           nav {
             margin-bottom: 80px;
