@@ -8,7 +8,7 @@ const indexingQueue = queue((task, callback) => {
   const URL = `${URLPrefix}/${index}/${type}/${id}`;
   const body = JSON.stringify(json);
 
-  fetch(URL, { method: 'PUT', body: body })
+  return fetch(URL, { method: 'PUT', body: body })
     .then(res => {
       return res.json();
     })
@@ -68,7 +68,7 @@ class ElasticSearchClient {
       });
     }
 
-    fetch(URL, {
+    return fetch(URL, {
       method: 'POST',
       mode: 'no-cors',
       headers: {
@@ -79,11 +79,10 @@ class ElasticSearchClient {
       .then(res => {
         return res.text();
       })
-      .then(text => {
-        return text;
-      })
       .catch(error => {
+        console.log('Got error', error);
         console.log(error);
+        return 'ERROR';
       });
   }
 }

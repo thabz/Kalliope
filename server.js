@@ -11,24 +11,32 @@ const elasticSearchClient = require('./tools/libs/elasticsearch-client.js');
 const rootStaticFiles = ['/sw.js', '/favicon.ico'];
 
 app.prepare().then(() => {
-  createServer(async (req, res) => {
+  createServer((req, res) => {
     const { pathname, query } = parse(req.url, true);
 
     if (rootStaticFiles.indexOf(pathname) > -1) {
       const path = join(__dirname, 'static', pathname);
       app.serveStatic(req, res, path);
     } else if (pathname.indexOf('/search') === 0) {
-      const result = await elasticSearchClient.search(
-        'kalliope',
-        'text',
-        query.country,
-        query.poetId,
-        query.query,
-        query.page || 0
-      );
-      res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.write(result);
-      res.end();
+      elasticSearchClient
+        .search(
+          'kalliope',
+          'text',
+          query.country,
+          query.poetId,
+          query.query,
+          query.page || 0
+        )
+        .then(result => {
+          res.writeHead(200, { 'Content-Type': 'application/json' });
+          res.write(result);
+          res.end();
+        })
+        .catch(err => {
+          res.writeHead(500, { 'Content-Type': 'application/json' });
+          res.write(JSON.stringify({ error: err }));
+          res.end();
+        });
     } else {
       handler(req, res);
     }
