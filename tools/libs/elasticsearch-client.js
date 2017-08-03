@@ -3,31 +3,33 @@ const queue = require('async/queue');
 
 const URLPrefix = 'http://localhost:9200';
 
-const indexingQueue = queue(async (task, callback) => {
+const indexingQueue = queue((task, callback) => {
   const { index, type, id, json } = task;
   const URL = `${URLPrefix}/${index}/${type}/${id}`;
   const body = JSON.stringify(json);
-  try {
-    const res = await fetch(URL, { method: 'PUT', body: body });
-    const result = await res.json();
-    return result;
-  } catch (error) {
-    console.log(error);
-    return null;
-  }
+
+  fetch(URL, { method: 'PUT', body: body })
+    .then(res => {
+      return res.json();
+    })
+    .then(json => {
+      return json;
+    })
+    .catch(error => {
+      console.log(error);
+      return null;
+    });
 }, 100);
 
 class ElasticSearchClient {
-  async createIndex(index) {
+  createIndex(index) {
     const URL = `${URLPrefix}/${index}`;
-    try {
-      await fetch(URL, { method: 'PUT' });
-    } catch (error) {
+    fetch(URL, { method: 'PUT' }).catch(error => {
       console.log(error);
-    }
+    });
   }
 
-  async create(index, type, id, json) {
+  create(index, type, id, json) {
     indexingQueue.push({ index, type, id, json }, err => {
       if (err) {
         console.log(err);
@@ -36,7 +38,7 @@ class ElasticSearchClient {
   }
 
   // Returns the raw JSON as (a promise of) text, not as an object.
-  async search(index, type, country, poetId, query, page = 0) {
+  search(index, type, country, poetId, query, page = 0) {
     const URL = `${URLPrefix}/${index}/_search`;
     const body = {
       size: 10,
@@ -65,20 +67,24 @@ class ElasticSearchClient {
         term: { 'poet.id': poetId },
       });
     }
-    try {
-      const res = await fetch(URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(body),
+
+    fetch(URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    })
+      .then(res => {
+        return res.text();
+      })
+      .then(text => {
+        return text;
+      })
+      .catch(error => {
+        console.log(error);
       });
-      const result = await res.text();
-      return result;
-    } catch (error) {
-      console.log(error);
-    }
   }
 }
 
