@@ -88,6 +88,7 @@ export default class Nav extends React.Component {
           }
           nav {
             margin-bottom: 80px;
+            margin-top: 10px;
             font-weight: lighter;
             display: flex;
           }
