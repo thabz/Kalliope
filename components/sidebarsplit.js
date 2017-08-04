@@ -5,6 +5,7 @@ import React from 'react';
 export default class SidebarSplit extends React.Component {
   props: {
     sidebar: ?Array<any>,
+    children?: *,
   };
   render() {
     const { sidebar } = this.props;

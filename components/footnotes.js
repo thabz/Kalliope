@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export class Footnote extends Component {
   props: {
-    text: any,
+    text: string,
   };
   context: {
     footnoteContainer: FootnoteContainer,
@@ -15,7 +15,7 @@ export class Footnote extends Component {
   componentWillUnmount() {
     this.context.footnoteContainer.unregister(this);
   }
-  text() {
+  text(): string {
     return this.props.text;
   }
   render() {
@@ -62,7 +62,7 @@ FootnoteList.contextTypes = {
 export class FootnoteContainer extends Component {
   _footnotes: Array<Footnote>;
   props: {
-    children: Array<Component<*, *, *>>,
+    children?: *,
   };
   constructor() {
     super();
