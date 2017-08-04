@@ -9,6 +9,37 @@ const app = next({ dev });
 const handler = routes.getRequestHandler(app);
 const elasticSearchClient = require('./tools/libs/elasticsearch-client.js');
 const rootStaticFiles = ['/sw.js', '/favicon.ico'];
+const redirects = [
+  {
+    from: /\/(..)\/ffront.cgi/,
+    to: '/$1/works/${fhandle}',
+  },
+  {
+    from: /\/(..)\/digt.pl/,
+    to: '/$1/text/${longdid}',
+  },
+  {
+    from: /\/(..)\/biografi.cgi/,
+    to: '/$1/bio/${fhandle}',
+  },
+  {
+    // Smid både førsteliner og titler til titler
+    from: /\/(..)\/flines.pl/,
+    to: '/$1/texts/${fhandle}/titles',
+  },
+  {
+    from: /\/(..)\/keyword.cgi/,
+    to: '/$1/keyword/${keyword}',
+  },
+  {
+    from: /\/(..)\/fsekundaer.pl/,
+    to: '/$1/bibliography/${fhandle}',
+  },
+  {
+    from: /\/(..)\/poets.cgi/,
+    to: '/$1/poets/dk/name',
+  },
+];
 
 app.prepare().then(() => {
   createServer((req, res) => {
@@ -17,6 +48,22 @@ app.prepare().then(() => {
     if (rootStaticFiles.indexOf(pathname) > -1) {
       const path = join(__dirname, 'static', pathname);
       app.serveStatic(req, res, path);
+    } else if (pathname.indexOf('.cgi') > -1 || pathname.indexOf('.pl') > -1) {
+      let done = false;
+      redirects.forEach(descr => {
+        const m = descr.from.exec(pathname);
+        if (!done && m != null) {
+          const to = descr.to
+            .replace('$1', m[1])
+            .replace(/\${(.*)}/g, (m, p1) => {
+              return query[p1];
+            });
+          console.log('Redirecting to', to, query);
+          res.writeHead(301, { Location: to });
+          res.end();
+          done = true;
+        }
+      });
     } else if (pathname.indexOf('/search') === 0) {
       elasticSearchClient
         .search(
