@@ -83,19 +83,17 @@ export default class extends React.Component {
       return;
     }
     if (typeof window !== 'undefined' && typeof document !== 'undefined') {
-      const body = document.body;
-      const html = document.documentElement;
+      const body = document.body || {};
+      const html = document.documentElement || {};
 
       // See https://stackoverflow.com/a/1147768/1514022
-      const documentHeight = body != null && html != null
-        ? Math.max(
-            body.scrollHeight || 0,
-            body.offsetHeight || 0,
-            html.clientHeight || 0,
-            html.scrollHeight || 0,
-            html.offsetHeight || 0
-          )
-        : 0;
+      const documentHeight = Math.max(
+        body.scrollHeight || 0,
+        body.offsetHeight || 0,
+        html.clientHeight || 0,
+        html.scrollHeight || 0,
+        html.offsetHeight || 0
+      );
       if (window.pageYOffset + window.innerHeight > documentHeight - 50) {
         this.appendItems();
       }
