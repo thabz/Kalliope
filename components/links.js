@@ -22,12 +22,12 @@ export const poetURL = (lang: string = 'da', poetId: string) => {
   return `/${lang}/works/${poetId}`;
 };
 
-export const linesURL = (
+export const textsURL = (
   lang: string = 'da',
   poetId: string,
   type: 'first' | 'titles'
 ) => {
-  return `/${lang}/lines/${poetId}/${type}`;
+  return `/${lang}/texts/${poetId}/${type}`;
 };
 
 export const worksURL = (lang: string = 'da', poetId: string) => {

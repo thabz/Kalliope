@@ -1030,7 +1030,7 @@ const build_poet_lines_json = collected => {
       poet: poet,
       lines: collectedLines,
     };
-    const linesOutFilename = `static/api/${poetId}/lines.json`;
+    const linesOutFilename = `static/api/${poetId}/texts.json`;
     console.log(linesOutFilename);
     writeJSON(linesOutFilename, data);
   });

@@ -6,7 +6,7 @@ const routes = (module.exports = nextRoutes());
 routes.add('index', '/:lang/');
 routes.add('poets', '/:lang/poets/:country/:groupBy');
 routes.add('works', '/:lang/works/:poetId/');
-routes.add('lines', '/:lang/lines/:poetId/:type');
+routes.add('texts', '/:lang/texts/:poetId/:type');
 routes.add('bio', '/:lang/bio/:poetId');
 routes.add('bibliography', '/:lang/bibliography/:poetId');
 routes.add('work', '/:lang/work/:poetId/:workId');

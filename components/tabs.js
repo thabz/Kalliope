@@ -360,13 +360,13 @@ export class PoetTabs extends React.Component {
         id: 'titles',
         title: 'Digttitler',
         hide: !poet.has_poems,
-        url: Links.linesURL(lang, poet.id, 'titles'),
+        url: Links.textsURL(lang, poet.id, 'titles'),
       },
       {
         id: 'first',
         title: 'Førstelinjer',
         hide: !poet.has_poems,
-        url: Links.linesURL(lang, poet.id, 'first'),
+        url: Links.textsURL(lang, poet.id, 'first'),
       },
       {
         id: 'bibliography',

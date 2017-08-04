@@ -37,7 +37,7 @@ export default class extends React.Component {
   }: {
     query: { lang: Lang, poetId: string, type: LinesType },
   }) {
-    const res = await fetch(createURL(`/static/api/${poetId}/lines.json`));
+    const res = await fetch(createURL(`/static/api/${poetId}/texts.json`));
     const json: { poet: Poet, lines: Array<LinesPair> } = await res.json();
     return { lang, poet: json.poet, lines: json.lines, type };
   }
