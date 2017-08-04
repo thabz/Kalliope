@@ -7,14 +7,15 @@ import type { Text, Lang, TextContentOptions } from '../pages/helpers/types.js';
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
 
+type TextContentPropsType = {
+  contentHtml: string,
+  lang: Lang,
+  options?: TextContentOptions,
+};
 export default class TextContent extends React.Component {
-  props: {
-    contentHtml: string,
-    lang: Lang,
-    options?: TextContentOptions,
-  };
+  props: TextContentPropsType;
   keySeq: number;
-  constructor(props) {
+  constructor(props: TextContentPropsType) {
     super(props);
     this.keySeq = 1;
   }
