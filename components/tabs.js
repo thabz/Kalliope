@@ -399,7 +399,13 @@ export class KalliopeTabs extends React.Component {
     lang: Lang,
     country?: Country,
     query?: ?string,
-    selected: 'index' | 'poets' | 'keywords' | 'dictionary' | 'search',
+    selected:
+      | 'index'
+      | 'poets'
+      | 'keywords'
+      | 'dictionary'
+      | 'about'
+      | 'search',
   };
   render() {
     const { lang, selected, country, query } = this.props;
