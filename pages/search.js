@@ -87,13 +87,15 @@ export default class extends React.Component {
       const html = document.documentElement;
 
       // See https://stackoverflow.com/a/1147768/1514022
-      const documentHeight = Math.max(
-        body.scrollHeight,
-        body.offsetHeight,
-        html.clientHeight,
-        html.scrollHeight,
-        html.offsetHeight
-      );
+      const documentHeight = body != null && html != null
+        ? Math.max(
+            body.scrollHeight || 0,
+            body.offsetHeight || 0,
+            html.clientHeight || 0,
+            html.scrollHeight || 0,
+            html.offsetHeight || 0
+          )
+        : 0;
       if (window.pageYOffset + window.innerHeight > documentHeight - 50) {
         this.appendItems();
       }
