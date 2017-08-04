@@ -41,7 +41,7 @@ export default class extends React.Component {
   render() {
     const { lang, item } = this.props;
 
-    const sidebar = <div><FootnoteList /></div>;
+    const sidebar = item.has_footnotes ? <div><FootnoteList /></div> : null;
     const body = <TextContent contentHtml={item.content_html} lang={lang} />;
     let variants, phrase;
     if (item.variants != null && item.variants.length > 0) {
@@ -69,7 +69,7 @@ export default class extends React.Component {
             <Nav lang={lang} links={navbar} title={item.title} />
             <Heading title={title} />
             <KalliopeTabs lang={lang} selected="dictionary" />
-            <SidebarSplit>
+            <SidebarSplit sidebar={sidebar}>
               <div>
                 <SubHeading>{item.title}</SubHeading>
                 {variants}
@@ -78,7 +78,6 @@ export default class extends React.Component {
                   {body}
                 </div>
               </div>
-              <div>{sidebar}</div>
             </SidebarSplit>
             <LangSelect lang={lang} />
           </Main>

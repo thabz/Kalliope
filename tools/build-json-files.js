@@ -460,6 +460,15 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
 
   const foldername = Paths.textFolder(textId);
   const prev_next = resolve_prev_next(textId);
+
+  const content_html = htmlToXml(
+    body.toString().replace('<body>', '').replace('</body>', ''),
+    collected,
+    isPoetry
+  );
+  const has_footnotes =
+    content_html.indexOf('<footnote') !== -1 ||
+    content_html.indexOf('<note') !== -1;
   mkdirp.sync(foldername);
   const text_data = {
     poet,
@@ -471,15 +480,12 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
       title: replaceDashes(title),
       subtitles,
       is_prose: text.name() === 'prose',
+      has_footnotes,
       notes: get_notes(head),
       keywords: keywordsArray,
       refs: refsArray,
       pictures: get_pictures(head),
-      content_html: htmlToXml(
-        body.toString().replace('<body>', '').replace('</body>', ''),
-        collected,
-        isPoetry
-      ),
+      content_html,
     },
   };
   console.log(Paths.textPath(textId));
@@ -1059,15 +1065,20 @@ const build_keywords = () => {
       const title = head.get('title').text();
       const pictures = get_pictures(head);
       const author = head.get('author') ? head.get('author').text() : null;
+      const content_html = htmlToXml(
+        body.toString().replace('<body>', '').replace('</body>', ''),
+        collected
+      );
+      const has_footnotes =
+        content_html.indexOf('<footnote') !== -1 ||
+        content_html.indexOf('<note') !== -1;
       const data = {
         id,
         title,
         author,
         pictures,
-        content_html: htmlToXml(
-          body.toString().replace('<body>', '').replace('</body>', ''),
-          collected
-        ),
+        has_footnotes,
+        content_html,
       };
       keywords_toc.push({
         id,
@@ -1147,15 +1158,20 @@ const build_dict_second_pass = collected => {
   let items = new Array();
 
   const createItem = (id, title, phrase, variants, body, collected) => {
+    const content_html = htmlToXml(
+      body.toString().replace('<forkl>', '').replace('</forkl>', ''),
+      collected
+    );
+    const has_footnotes =
+      content_html.indexOf('<footnote') !== -1 ||
+      content_html.indexOf('<note') !== -1;
     const data = {
       id,
       title,
       phrase,
       variants,
-      content_html: htmlToXml(
-        body.toString().replace('<forkl>', '').replace('</forkl>', ''),
-        collected
-      ),
+      has_footnotes,
+      content_html,
     };
     writeJSON(`static/api/dict/${id}.json`, data);
     const simpleData = {

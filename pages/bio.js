@@ -211,6 +211,33 @@ export default class extends React.Component {
 
   render() {
     const { lang, poet, portrait, content_html, timeline } = this.props;
+
+    const sidebarItems: Array<any> = [
+      <div className="horizontal-on-small">
+        <PersonMeta poet={poet} />
+        <div style={{ width: '100%', marginTop: '40px' }}>
+          <PersonPortrait poet={poet} portrait={portrait} lang={lang} />
+        </div>
+        <style jsx>{`
+          .horizontal-on-small {
+            display: flex;
+            flex-direction: column;
+          }
+          @media (max-width: 700px) {
+            .horizontal-on-small {
+              flex-direction: row;
+              justify-content: space-between;
+              width: 100%;
+            }
+            .horizontal-on-small > * {
+              flex-basis: 50%;
+              margin: 0 !important;
+            }
+          }
+        `}</style>
+      </div>,
+    ];
+
     const title = <PoetName poet={poet} includePeriod />;
     const headTitle =
       'Biografi  - ' + poetNameString(poet, false, false) + ' - Kalliope';
@@ -231,35 +258,10 @@ export default class extends React.Component {
           <Nav lang={lang} poet={poet} title="Biografi" />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="bio" />
-          <SidebarSplit>
+          <SidebarSplit sidebar={sidebarItems}>
             <div style={{ lineHeight: '1.6' }}>
               <TextContent contentHtml={content_html} lang={lang} />
               <Timeline timeline={timeline} />
-            </div>
-            <div>
-              <div className="horizontal-on-small">
-                <PersonMeta poet={poet} />
-                <div style={{ width: '100%', marginTop: '40px' }}>
-                  <PersonPortrait poet={poet} portrait={portrait} lang={lang} />
-                </div>
-                <style jsx>{`
-                  .horizontal-on-small {
-                    display: flex;
-                    flex-direction: column;
-                  }
-                  @media (max-width: 700px) {
-                    .horizontal-on-small {
-                      flex-direction: row;
-                      justify-content: space-between;
-                      width: 100%;
-                    }
-                    .horizontal-on-small > * {
-                      flex-basis: 50%;
-                      margin: 0 !important;
-                    }
-                  }
-                `}</style>
-              </div>
             </div>
           </SidebarSplit>
           <LangSelect lang={lang} />

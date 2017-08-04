@@ -127,9 +127,19 @@ export default class extends React.Component {
     const renderedRefs = refs.length == 0
       ? null
       : [<p>Henvisninger hertil:</p>, ...refs];
-    const sidebar = (
-      <div>{renderedNotes}{renderedPictures}<FootnoteList />{renderedRefs}</div>
-    );
+    let sidebar: any = null;
+    if (
+      refs.length > 0 ||
+      text.has_footnotes ||
+      text.pictures.length > 0 ||
+      text.notes.length > 0
+    ) {
+      sidebar = (
+        <div>
+          {renderedNotes}{renderedPictures}<FootnoteList />{renderedRefs}
+        </div>
+      );
+    }
     const options = {
       isBibleVerses: poet.id === 'bibel',
     };
@@ -179,7 +189,7 @@ export default class extends React.Component {
             />
             <Heading title={title} subtitle="Værker" />
             <PoetTabs lang={lang} poet={poet} selected="works" />
-            <SidebarSplit>
+            <SidebarSplit sidebar={sidebar}>
               <div>
                 <div className="text-content">
                   <TextHeading text={text} lang={lang} />
@@ -196,7 +206,6 @@ export default class extends React.Component {
                   `}</style>
                 </div>
               </div>
-              <div>{sidebar}</div>
             </SidebarSplit>
             <LangSelect lang={lang} />
           </Main>

@@ -63,11 +63,10 @@ export default class extends React.Component {
           <Nav lang="da" />
           <Heading title="Kalliope" />
           <KalliopeTabs lang={lang} selected="index" />
-          <SidebarSplit>
+          <SidebarSplit sidebar={null}>
             <div>
               {renderedNews}
             </div>
-            <div />
           </SidebarSplit>
           <LangSelect lang={lang} />
         </Main>

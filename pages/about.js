@@ -19,7 +19,7 @@ import 'isomorphic-fetch';
 export default class extends React.Component {
   props: {
     lang: Lang,
-    news: Array<NewsItem>,
+    item: { title: string, content_html: string },
   };
 
   static async getInitialProps({
@@ -56,7 +56,7 @@ export default class extends React.Component {
           <Nav lang="da" links={navbar} title={item.title} />
           <Heading title="Kalliope" />
           <KalliopeTabs lang={lang} selected="about" />
-          <SidebarSplit>
+          <SidebarSplit sidebar={null}>
             <div>
               <SubHeading>{item.title}</SubHeading>
               <div className="about-body">

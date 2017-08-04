@@ -1,10 +1,21 @@
+// @flow
+
 import React from 'react';
 
 export default class SidebarSplit extends React.Component {
+  props: {
+    sidebar: ?Array<any>,
+  };
   render() {
+    const { sidebar } = this.props;
+    let className = sidebar == null || sidebar.length == 0
+      ? 'sidebar-spl empty'
+      : 'sidebar-spl';
+    const renderedSidebar = <div>{sidebar}</div>;
     return (
-      <div className="sidebar-spl">
+      <div className={className}>
         {this.props.children}
+        {renderedSidebar}
         <style jsx>{`
           div.sidebar-spl {
             width: 100%;
@@ -22,6 +33,9 @@ export default class SidebarSplit extends React.Component {
             line-height: 1.5;
             border-left: 1px solid #666;
             color: #666;
+          }
+          div.sidebar-spl.empty > :global(div:last-child) {
+            border-left: none;
           }
           @media (max-width: 700px), print {
             div.sidebar-spl {

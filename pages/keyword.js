@@ -53,7 +53,10 @@ export default class extends React.Component {
         srcPrefix={'/static/images/keywords'}
       />
     );
-    const sidebar = <div><FootnoteList />{renderedPictures}</div>;
+    let sidebar: any = null;
+    if (keyword.has_footnotes || keyword.pictures.length > 0) {
+      sidebar = <div><FootnoteList />{renderedPictures}</div>;
+    }
     const body = <TextContent contentHtml={keyword.content_html} lang={lang} />;
     const navbar = [
       <Link route={Links.keywordsURL(lang)}>
@@ -78,7 +81,7 @@ export default class extends React.Component {
             <Nav lang={lang} links={navbar} title={keyword.title} />
             <Heading title={title} />
             <KalliopeTabs lang={lang} selected="keywords" />
-            <SidebarSplit>
+            <SidebarSplit sidebar={sidebar}>
               <div>
                 <SubHeading>{keyword.title}</SubHeading>
                 {author}
@@ -86,7 +89,6 @@ export default class extends React.Component {
                   {body}
                 </div>
               </div>
-              <div>{sidebar}</div>
             </SidebarSplit>
             <LangSelect lang={lang} />
           </Main>

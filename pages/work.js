@@ -102,10 +102,10 @@ export default class extends React.Component {
           fuldstændig.
         </div>
       : null;
-
-    const sidebar = (
-      <div>{renderedPictures}{renderedNotes}{completedStatus}</div>
-    );
+    let sidebar: any = null;
+    if (pictures.length > 0 || notes.length > 0 || completedStatus != null) {
+      sidebar = <div>{renderedPictures}{renderedNotes}{completedStatus}</div>;
+    }
     const table = toc.length > 0
       ? renderItems(toc)
       : <div className="nodata">
@@ -132,7 +132,7 @@ export default class extends React.Component {
           <Nav lang={lang} poet={poet} title={<WorkName work={work} />} />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="works" />
-          <SidebarSplit>
+          <SidebarSplit sidebar={sidebar}>
             <div>
               <SubHeading><WorkName work={work} /></SubHeading>
               {table}
@@ -172,7 +172,6 @@ export default class extends React.Component {
                 }
               `}</style>
             </div>
-            <div>{sidebar}</div>
           </SidebarSplit>
           <LangSelect lang={lang} />
         </Main>
