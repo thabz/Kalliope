@@ -3,7 +3,7 @@ import React from 'react';
 
 export default class SubHeading extends React.Component {
   props: {
-    children: any,
+    children?: *,
   };
   render() {
     const { children } = this.props;
