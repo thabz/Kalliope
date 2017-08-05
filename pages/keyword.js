@@ -53,9 +53,14 @@ export default class extends React.Component {
         srcPrefix={'/static/images/keywords'}
       />
     );
-    let sidebar: any = null;
+    let sidebar = [];
     if (keyword.has_footnotes || keyword.pictures.length > 0) {
-      sidebar = <div><FootnoteList />{renderedPictures}</div>;
+      if (keyword.has_footnotes) {
+        sidebar.push(<FootnoteList />);
+      }
+      if (keyword.pictures.length > 0) {
+        sidebar.push(renderedPictures);
+      }
     }
     const body = <TextContent contentHtml={keyword.content_html} lang={lang} />;
     const navbar = [
@@ -83,7 +88,9 @@ export default class extends React.Component {
             <KalliopeTabs lang={lang} selected="keywords" />
             <SidebarSplit sidebar={sidebar}>
               <div>
-                <SubHeading>{keyword.title}</SubHeading>
+                <SubHeading>
+                  {keyword.title}
+                </SubHeading>
                 {author}
                 <div style={{ lineHeight: 1.6 }}>
                   {body}
