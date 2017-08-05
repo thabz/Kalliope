@@ -40,7 +40,11 @@ export class FootnoteList extends Component {
     const container = this.context.footnoteContainer;
     const notes = container.footnotes().map((footnote, i) => {
       const text = footnote.text();
-      return <li value={i + 1} key={i + text}>{text}</li>;
+      return (
+        <li value={i + 1} key={i + text}>
+          {text}
+        </li>
+      );
     });
     return (
       <ol className="footnotes footnotes-print-only">
@@ -48,6 +52,7 @@ export class FootnoteList extends Component {
         <style jsx>{`
           ol.footnotes {
             padding-left: 1.2em;
+            margin-top: 0;
           }
         `}</style>
       </ol>
@@ -91,7 +96,11 @@ export class FootnoteContainer extends Component {
     return this._footnotes.indexOf(footnote) + 1;
   }
   render() {
-    return <div>{this.props.children}</div>;
+    return (
+      <div>
+        {this.props.children}
+      </div>
+    );
   }
 }
 
