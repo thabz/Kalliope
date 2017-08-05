@@ -55,7 +55,11 @@ const groupsByYear = (poets: Array<Poet>) => {
   let groups = new Map();
   poets.filter(p => p.type === 'poet').forEach(p => {
     let key = 'Ukendt fødeår';
-    if (p.period != null && p.period.born.date !== '?') {
+    if (
+      p.period != null &&
+      p.period.born != null &&
+      p.period.born.date !== '?'
+    ) {
       const year = parseInt(p.period.born.date.substring(0, 4), 10);
       const intervalStart = year - year % 25;
       key = `${intervalStart} - ${intervalStart + 24}`;
@@ -87,18 +91,26 @@ class CountryPicker extends React.Component {
       const url = Links.poetsURL(lang, selectedGroupBy, country.code);
       const adj = country.adjective[lang] + ' ';
       if (country.code === selectedCountry) {
-        return <b key={country.code}>{adj}</b>;
+        return (
+          <b key={country.code}>
+            {adj}
+          </b>
+        );
       } else {
         return (
           <Link route={url} key={country.code}>
-            <a>{adj}</a>
+            <a>
+              {adj}
+            </a>
           </Link>
         );
       }
     });
     return (
       <div style={style}>
-        <div>Skift samling: {items}</div>
+        <div>
+          Skift samling: {items}
+        </div>
       </div>
     );
   }
@@ -139,9 +151,8 @@ export default class extends React.Component {
       },
     ];
     const selectedTabIndex = groupBy === 'name' ? 0 : 1;
-    const groups = groupBy === 'name'
-      ? groupsByLetter(poets)
-      : groupsByYear(poets);
+    const groups =
+      groupBy === 'name' ? groupsByLetter(poets) : groupsByYear(poets);
 
     let sections: Array<SectionForRendering> = [];
 
