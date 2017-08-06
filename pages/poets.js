@@ -85,7 +85,7 @@ function joinWithCommaAndOr(items, andOrWord) {
     if (i == items.length - 2) {
       result.push(' ' + andOrWord + ' ');
     } else if (i < items.length - 2) {
-      result.push(<span style={{ marginLeft: '-0.25em' }}>, </span>);
+      result.push(<span key={i} style={{ marginLeft: '-0.25em' }}>, </span>);
     }
   });
   return result;
