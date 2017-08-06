@@ -85,8 +85,8 @@ const htmlToXml = (html, collected, isPoetry = false) => {
           return `\n<hr width=${p1.length}/>\n`;
         })
         .replace(/^\n/, '')
-        .replace(/^\s*(<right>.*)$/gm, '$1')
-        .replace(/^\s*(<center>.*)$/gm, '$1')
+        .replace(/^ *(<right>.*)$/gm, '$1')
+        .replace(/^ *(<center>.*)$/gm, '$1')
         .replace(/^( +)/gm, (match, p1) => {
           return '&nbsp;'.repeat(p1.length);
         })
