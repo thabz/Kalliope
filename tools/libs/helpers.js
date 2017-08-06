@@ -63,6 +63,7 @@ const replaceDashes = html => {
   return html
     .replace(/ -&nbsp;/g, ' —&nbsp;')
     .replace(/ - /g, ' — ')
+    .replace(/ -/g, ' —')
     .replace(/>- /g, '>— ')
     .replace(/&nbsp;- /g, '&nbsp;— ')
     .replace(/ -&ldquo;/g, ' —&ldquo;')
