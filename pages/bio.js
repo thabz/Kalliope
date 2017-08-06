@@ -51,7 +51,7 @@ class DateAndPlace extends React.Component {
 class PersonMetaLine extends React.Component {
   props: {
     label: string,
-    value: any,
+    value: ?any,
   };
   render() {
     const { label, value } = this.props;
@@ -212,8 +212,8 @@ export default class extends React.Component {
   render() {
     const { lang, poet, portrait, content_html, timeline } = this.props;
 
-    const sidebarItems: Array<any> = [
-      <div className="horizontal-on-small">
+    const sidebarItems = (
+      <div className="horizontal-on-small" key="first-and-on">
         <PersonMeta poet={poet} />
         <div style={{ width: '100%', marginTop: '40px' }}>
           <PersonPortrait poet={poet} portrait={portrait} lang={lang} />
@@ -235,8 +235,8 @@ export default class extends React.Component {
             }
           }
         `}</style>
-      </div>,
-    ];
+      </div>
+    );
 
     const title = <PoetName poet={poet} includePeriod />;
     const headTitle =
