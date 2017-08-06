@@ -78,6 +78,19 @@ const groupsByYear = (poets: Array<Poet>) => {
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
+function joinWithCommaAndOr(items, andOrWord) {
+  const result = [];
+  items.forEach((item, i) => {
+    result.push(item);
+    if (i == items.length - 2) {
+      result.push(' ' + andOrWord + ' ');
+    } else if (i < items.length - 2) {
+      result.push(<span style={{ marginLeft: '-0.25em' }}>, </span>);
+    }
+  });
+  return result;
+}
+
 class CountryPicker extends React.Component {
   props: {
     lang: Lang,
@@ -106,10 +119,11 @@ class CountryPicker extends React.Component {
         );
       }
     });
+    const joinedItems = joinWithCommaAndOr(items, 'eller');
     return (
       <div style={style}>
         <div>
-          Skift samling: {items}
+          Skift mellem {joinedItems} digtere.
         </div>
       </div>
     );
@@ -151,8 +165,9 @@ export default class extends React.Component {
       },
     ];
     const selectedTabIndex = groupBy === 'name' ? 0 : 1;
-    const groups =
-      groupBy === 'name' ? groupsByLetter(poets) : groupsByYear(poets);
+    const groups = groupBy === 'name'
+      ? groupsByLetter(poets)
+      : groupsByYear(poets);
 
     let sections: Array<SectionForRendering> = [];
 
