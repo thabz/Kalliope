@@ -296,6 +296,10 @@ const build_poets_json = () => {
 
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');
+    const fullname = safeGetText(nameE, 'fullname');
+    const pseudonym = safeGetText(nameE, 'pseudonym');
+    const christened = safeGetText(nameE, 'christened');
+    const realname = safeGetText(nameE, 'realname');
 
     let period = {};
     if (periodE) {
@@ -326,7 +330,7 @@ const build_poets_json = () => {
       country,
       lang,
       type,
-      name: { firstname, lastname },
+      name: { firstname, lastname, fullname, pseudonym, christened, realname },
       period,
       has_works: has.has_works,
       has_poems: has.has_poems,
