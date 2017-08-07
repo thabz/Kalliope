@@ -280,10 +280,10 @@ export default class Tabs extends React.Component {
             }
           }
           @media (max-width: 480px) {
-            .tabs > :global(.tab) {
+            :global(.tabs) > :global(.tab) {
               margin-right: 10px;
             }
-            .tabs > :global(.tab) :global(h2) {
+            :global(.tabs) > :global(.tab) :global(h2) {
               margin-top: 5px;
               margin-bottom: 10px;
               line-height: 12px;
@@ -300,26 +300,26 @@ export default class Tabs extends React.Component {
             color: #707070;
           }
           @media (max-width: 800px) {
-            .tabs > :global(.tab) :global(h2) {
+            :global(.tabs) > :global(.tab) :global(h2) {
               font-size: 28px;
             }
-            .tabs > :global(.tab) {
+            :global(.tabs) > :global(.tab) {
               margin-right: 20px;
             }
           }
           @media (max-width: 700px) {
-            .tabs > :global(.tab) :global(h2) {
+            :global(.tabs) > :global(.tab) :global(h2) {
               font-size: 24px;
             }
-            .tabs > :global(.tab) {
+            :global(.tabs) > :global(.tab) {
               margin-right: 15px;
             }
           }
           @media (max-width: 600px) {
-            .tabs > :global(.tab) :global(h2) {
+            :global(.tabs) > :global(.tab) :global(h2) {
               font-size: 18px;
             }
-            .tabs > :global(.tab) {
+            :global(.tabs) > :global(.tab) {
               margin-right: 15px;
             }
           }
