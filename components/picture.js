@@ -3,6 +3,7 @@ import React from 'react';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
 import TextContent from './textcontent.js';
 import CommonData from '../pages/helpers/commondata.js';
+import * as Strings from '../pages/helpers/strings.js';
 
 export default class Picture extends React.Component {
   props: {
@@ -28,12 +29,15 @@ export default class Picture extends React.Component {
       const type = ext !== 'jpg' ? `image/${ext}` : '';
       return <source key={ext} type={type} srcSet={srcset} sizes={sizes} />;
     });
+    const alt = picture.content_html
+      ? Strings.trimHtml(picture.content_html)
+      : 'Billede';
     return (
       <div className="sidebar-picture">
         <figure>
           <picture>
             {sources}
-            <img src={fallbackSrc} width="100%" />
+            <img src={fallbackSrc} width="100%" alt={alt} />
           </picture>
           <figcaption>
             <TextContent contentHtml={picture.content_html} lang={lang} />
