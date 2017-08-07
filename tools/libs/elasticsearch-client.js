@@ -13,6 +13,7 @@ const indexingQueue = queue((task, callback) => {
       return res.json();
     })
     .then(json => {
+      callback();
       return json;
     })
     .catch(error => {
