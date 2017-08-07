@@ -40,24 +40,42 @@ export default class extends React.Component {
       Router.replaceRoute(bioURL);
     }
 
+    const sortWorks = works => {
+      if (poet.id === 'bibel') {
+        return works;
+      } else {
+        return works.sort((a, b) => {
+          if (a.id === 'andre') {
+            return 1;
+          } else if (b.id === 'andre') {
+            return -1;
+          } else {
+            const aKey = a.year == null || a.year === '?'
+              ? a.title
+              : a.year + a.id;
+            const bKey = b.year == null || b.year === '?'
+              ? b.title
+              : b.year + b.id;
+            return aKey > bKey ? 1 : -1;
+          }
+        });
+      }
+    };
+
     const list = works.length == 0
       ? <div className="nodata">
           Kalliope indeholder endnu ingen tekster fra denne digter.
         </div>
-      : works
-          .sort((a, b) => {
-            return (a.year || 'a') > (b.year || 'a') ? 1 : -1;
-          })
-          .map((work, i) => {
-            const workName = <WorkName work={work} />;
-            const url = `/${lang}/work/${poet.id}/${work.id}`;
-            const name = work.has_content
-              ? <Link route={url}><a>{workName}</a></Link>
-              : workName;
-            return (
-              <div className="list-section-line" key={work.id}>{name}</div>
-            );
-          });
+      : sortWorks(works).map((work, i) => {
+          const workName = <WorkName work={work} />;
+          const url = `/${lang}/work/${poet.id}/${work.id}`;
+          const name = work.has_content
+            ? <Link route={url}><a title={work.year}>{workName}</a></Link>
+            : workName;
+          return (
+            <div className="list-section-line" key={i + work.id}>{name}</div>
+          );
+        });
 
     const title = <PoetName poet={poet} includePeriod />;
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
