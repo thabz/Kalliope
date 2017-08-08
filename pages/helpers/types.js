@@ -2,7 +2,7 @@
 
 export type DateWithPlace = {
   date: string, // Kan være '?'
-  place?: string,
+  place: ?string,
 };
 
 export type Lang = 'da' | 'en';
@@ -24,7 +24,7 @@ export type Poet = {
     christened?: string,
     realname?: string,
   },
-  period?: { born?: DateWithPlace, dead?: DateWithPlace },
+  period: ?{ born?: DateWithPlace, dead?: DateWithPlace },
   has_bibliography: boolean,
   has_biography: boolean,
   has_works: boolean,

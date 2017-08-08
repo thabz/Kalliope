@@ -30,15 +30,22 @@ const parts = (
 
   if (includePeriod && poet.period != null) {
     const { born, dead } = poet.period;
-    if (born.date === '?' && dead.date === '?') {
+    if (
+      born != null &&
+      born.date === '?' &&
+      dead != null &&
+      dead.date === '?'
+    ) {
       periodPart = '(Ukendt levetid)';
     } else {
-      let bornYear = born.date === '?'
-        ? 'Ukendt år'
-        : born.date.substring(0, 4);
-      let deadYear = dead.date === '?'
-        ? 'ukendt år'
-        : dead.date.substring(0, 4);
+      let bornYear =
+        born == null || born.date === '?'
+          ? 'Ukendt år'
+          : born.date.substring(0, 4);
+      let deadYear =
+        dead == null || dead.date === '?'
+          ? 'ukendt år'
+          : dead.date.substring(0, 4);
       if (deadYear.substring(0, 2) === bornYear.substring(0, 2)) {
         deadYear = deadYear.substring(2, 4);
       }
@@ -58,8 +65,16 @@ export default class PoetName extends React.Component {
     const { poet, lastNameFirst, includePeriod } = this.props;
     let pp = null;
     const p = parts(poet, lastNameFirst, includePeriod);
-    const p0 = p[0] ? <span key={0} className="name">{p[0]}</span> : null;
-    const p1 = p[1] ? <span key={1} className="period"> {p[1]}</span> : null;
+    const p0 = p[0]
+      ? <span key={0} className="name">
+          {p[0]}
+        </span>
+      : null;
+    const p1 = p[1]
+      ? <span key={1} className="period">
+          {' '}{p[1]}
+        </span>
+      : null;
     if (p0 && p1) {
       pp = [p0, p1];
     } else if (p0) {
@@ -73,7 +88,6 @@ export default class PoetName extends React.Component {
             opacity: 0.5;
           }
         `}</style>
-
       </span>
     );
   }

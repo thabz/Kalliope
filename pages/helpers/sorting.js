@@ -30,6 +30,8 @@ export const poetsByLastname = (a: Poet, b: Poet): SortReturn => {
 export const poetsByBirthDate = (a: Poet, b: Poet): SortReturn => {
   if (a.period == null || b.period == null) {
     return poetsByLastname(a, b);
+  } else if (a.period.born == null || b.period.born == null) {
+    return poetsByLastname(a, b);
   } else {
     const a1 = a.period.born.date;
     const b1 = b.period.born.date;
