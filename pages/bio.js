@@ -22,6 +22,7 @@ import type {
   DateWithPlace,
   PictureItem,
   TimelineItem,
+  TextContentType,
 } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
@@ -202,7 +203,7 @@ export default class extends React.Component {
     portrait?: PictureItem,
     poet: Poet,
     timeline: Array<TimelineItem>,
-    content_html: string,
+    content_html: TextContentType,
   };
 
   static async getInitialProps({
@@ -215,7 +216,7 @@ export default class extends React.Component {
       poet: Poet,
       portrait?: PictureItem,
       timeline: Array<TimelineItem>,
-      content_html: string,
+      content_html: TextContentType,
     } = await res.json();
     return {
       lang,
@@ -259,8 +260,8 @@ export default class extends React.Component {
     const headTitle =
       'Biografi  - ' + poetNameString(poet, false, false) + ' - Kalliope';
 
-    const ogDescription = OpenGraph.trimmedDescription(content_html);
-    const ogImage = OpenGraph.poetImage(poet);
+    const ogDescription: string = OpenGraph.trimmedDescription(content_html);
+    const ogImage: string = OpenGraph.poetImage(poet);
     const ogTitle = poetNameString(poet, false, false) + ' biografi';
 
     return (

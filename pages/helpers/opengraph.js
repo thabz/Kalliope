@@ -1,6 +1,11 @@
+// @flow
+
 import type { Poet, TextContentType } from './types.js';
 
-export const trimmedDescription = (content_html: TextContentType, is_poetry = false) => {
+export const trimmedDescription = (
+  content_html: TextContentType,
+  is_poetry = false
+): string => {
   if (content_html == null) {
     return null;
   }
@@ -19,6 +24,6 @@ export const trimmedDescription = (content_html: TextContentType, is_poetry = fa
   return result.substr(0, 600);
 };
 
-export const poetImage = (poet: Poet) => {
+export const poetImage = (poet: Poet): ?string => {
   return poet.has_portraits ? `/static/images/${poet.id}/p1-w600.jpg` : null;
 };
