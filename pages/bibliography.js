@@ -11,7 +11,7 @@ import PoetName, { poetNameString } from '../components/poetname.js';
 import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
 import * as Links from '../components/links';
-import type { Lang, Poet, Work } from './helpers/types.js';
+import type { Lang, Poet, Work, TextContentType } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
 
@@ -19,8 +19,8 @@ export default class extends React.Component {
   props: {
     lang: Lang,
     poet: Poet,
-    primary: Array<string>,
-    secondary: Array<string>,
+    primary: Array<TextContentType>,
+    secondary: Array<TextContentType>,
   };
 
   static async getInitialProps({
@@ -75,7 +75,9 @@ export default class extends React.Component {
             key={g.title}
             className="list-section"
             style={{ marginBottom: '20px' }}>
-            <h3 style={{ columnSpan: 'all' }}>{g.title}</h3>
+            <h3 style={{ columnSpan: 'all' }}>
+              {g.title}
+            </h3>
             {g.items}
             <style jsx>{`
               h3 {
