@@ -3,7 +3,12 @@ import React from 'react';
 import { Link } from '../routes';
 var DOMParser = require('xmldom').DOMParser;
 
-import type { Text, Lang, TextContentOptions, TextContentType } from '../pages/helpers/types.js';
+import type {
+  Text,
+  Lang,
+  TextContentOptions,
+  TextContentType,
+} from '../pages/helpers/types.js';
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
 
@@ -299,14 +304,14 @@ export default class TextContent extends React.Component {
         }
       }
       if (lineOptions.center) {
-        className += ' center;'
+        className += ' center';
       }
       if (lineOptions.right) {
-        className += ' right;'
+        className += ' right';
       }
       const lineNum = lineOptions.num || null;
       if (options && options.isPoetry) {
-        className += " poem-line";
+        className += ' poem-line';
         return (
           <div className={className} data-num={lineNum}>
             {rendered}
@@ -329,12 +334,12 @@ export default class TextContent extends React.Component {
         <style jsx>{`
           :global(.poem-line::before) {
             content: attr(data-num);
-		        color: #888;
-		        margin: 0 1em;
-		        width: 1em;
+            color: #888;
+            margin: 0 1em;
+            width: 1em;
             font-size: 0.8em;
-		        text-align: right;
-		        display: inline-block;
+            text-align: right;
+            display: inline-block;
           }
           :global(.right) {
             text-align: right;
