@@ -11,6 +11,16 @@ export type Country = 'dk' | 'gb' | 'de' | 'fr' | 'se' | 'no' | 'it' | 'us';
 export type PoetId = string;
 export type WorkId = string;
 
+type TextContentLine = Array<string>
+
+export type TextContentType = Array<TextContentLine>
+
+export type TextContentOptions = {
+  isBibleVerses?: boolean,
+  highlightBibleVerses?: Array<number>,
+  isPoetry?: boolean,
+};
+
 export type Poet = {
   id: PoetId,
   type: 'poet' | 'person' | 'collection',
@@ -78,23 +88,23 @@ export type TocItem = {
 
 export type NoteItem = {
   lang: Lang,
-  content_html: string,
+  content_html: TextContentType,
 };
 
 export type PictureItem = {
   lang: Lang,
-  content_html?: string,
+  content_html?: TextContentType,
   src: string,
 };
 
 export type Text = {
   id: string,
   title: string,
-  subtitles?: Array<string>,
+  subtitles?: Array<TextContentType>,
   notes: Array<NoteItem>,
-  refs: Array<string>,
+  refs: Array<TextContentType>,
   pictures: Array<PictureItem>,
-  content_html: string,
+  content_html: TextContentType,
   is_prose: boolean,
 };
 
@@ -103,7 +113,7 @@ export type Keyword = {
   title: string,
   author?: string,
   pictures: Array<PictureItem>,
-  content_html: string,
+  content_html: TextContentType,
 };
 
 export type DictItem = {
@@ -116,7 +126,7 @@ export type DictItem = {
 
 export type NewsItem = {
   date: string,
-  content_html: string,
+  content_html: TextContentType,
 };
 
 export type TimelineItem = {
@@ -124,12 +134,7 @@ export type TimelineItem = {
   lang: Lang,
   type: 'text' | 'image',
   is_history_item: boolean,
-  content_html: string,
+  content_html: TextContentType,
   src?: string, // When type is 'image'
 };
 
-export type TextContentOptions = {
-  isBibleVerses?: boolean,
-  highlightBibleVerses?: Array<number>,
-  isPoetry?: boolean,
-};
