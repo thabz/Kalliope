@@ -286,7 +286,7 @@ export default class TextContent extends React.Component {
     const lines = contentHtml.map(l => {
       const lineOptions = l.length > 1 ? l[1] : {};
       let rendered = null;
-      let style = {};
+      let className = '';
       if (lineOptions.html) {
         const frag = new DOMParser().parseFromString(
           '<content>' + l[0] + '</content>'
@@ -299,17 +299,22 @@ export default class TextContent extends React.Component {
         }
       }
       if (lineOptions.center) {
-        style.textAlign = 'center;'
+        className += ' center;'
       }
+      if (lineOptions.right) {
+        className += ' right;'
+      }
+      const lineNum = lineOptions.num || null;
       if (options && options.isPoetry) {
+        className += " poem-line";
         return (
-          <div style={{style}}>
+          <div className={className} data-num={lineNum}>
             {rendered}
           </div>
         );
       } else {
         return (
-          <p>
+          <p className={className}>
             {rendered}
           </p>
         );
@@ -321,6 +326,23 @@ export default class TextContent extends React.Component {
     return (
       <div>
         {lines}
+        <style jsx>{`
+          :global(.poem-line::before) {
+            content: attr(data-num);
+		        color: #888;
+		        margin: 0 1em;
+		        width: 1em;
+            font-size: 0.8em;
+		        text-align: right;
+		        display: inline-block;
+          }
+          :global(.right) {
+            text-align: right;
+          }
+          :global(.center) {
+            text-align: center;
+          }
+        `}</style>
       </div>
     );
   }
