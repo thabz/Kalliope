@@ -91,11 +91,13 @@ const htmlToXml = (html, collected, isPoetry = false) => {
         .replace(/^( +)/gm, (match, p1) => {
           return '&nbsp;'.repeat(p1.length);
         })
-        .replace(/\n/g, '<br/>')
         .replace(/,,/g, '&bdquo;')
         .replace(/''/g, '&ldquo;')
     )
   );
+  // if (!isPoetry) {
+  //   decoded = decoded.replace(/\n/g, '<br/>');
+  // }
   while (decoded.match(regexp)) {
     decoded = decoded.replace(regexp, (_, type, id) => {
       if (type === 'poem') {
@@ -150,7 +152,37 @@ const htmlToXml = (html, collected, isPoetry = false) => {
       }
     });
   }
-  return decoded;
+
+  lineNum = 1;
+  lines = decoded.split('\n').map(l => {
+    let options = {};
+    const hasNonum = l.indexOf('<nonum>') > -1;
+    if (!hasNonum) {
+      if (isPoetry && (lineNum == 1 || lineNum % 5 == 0)) {
+        options.num = lineNum;
+      }
+      lineNum += 1;
+    } else {
+      l = l.replace('<nonum>', '').replace('</nonum>', '');
+    }
+    if (l.indexOf('<center>') > -1) {
+      l = l.replace('<center>', '').replace('</center>', '');
+      options.center = true;
+    }
+    if (l.indexOf('<wrap>') > -1) {
+      l = l.replace('<wrap>', '').replace('</wrap>', '');
+      options.wrap = true;
+    }
+    if (l.match(/<.*>/)) {
+      options.html = true;
+    }
+    if (Object.keys(options).length > 0) {
+      return [l, options];
+    } else {
+      return [l];
+    }
+  });
+  return lines;
 };
 
 module.exports = {

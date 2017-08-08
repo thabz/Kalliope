@@ -30,7 +30,7 @@ export default class Picture extends React.Component {
       return <source key={ext} type={type} srcSet={srcset} sizes={sizes} />;
     });
     const alt = picture.content_html
-      ? Strings.trimHtml(picture.content_html)
+      ? '' //Strings.trimHtml(picture.content_html)
       : 'Billede';
     return (
       <div className="sidebar-picture">

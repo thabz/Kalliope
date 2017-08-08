@@ -4,6 +4,7 @@ export const trimmedDescription = (content_html: string, is_poetry = false) => {
   if (content_html == null) {
     return null;
   }
+  content_html = content_html.map(x => x[0]).join(' ');
   let result = content_html
     .replace(/<num>[^<]*<\/num>/g, '')
     .replace(/^<br\/>/, '')
