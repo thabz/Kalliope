@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 
 export default class TwoColumns extends React.Component {
@@ -17,7 +19,7 @@ export default class TwoColumns extends React.Component {
               columns: 1 !important;
             }
           }
-      `}</style>
+        `}</style>
       </div>
     );
   }
