@@ -87,14 +87,19 @@ export default class Tabs extends React.Component {
     this.setState({ showSearchField: false });
   }
 
+  componentDidUpdate() {
+    if (this.state.showSearchField) {
+      if (window) {
+        window.addEventListener('keydown', this.onKeyDown);
+      }
+      if (document && document.activeElement !== this.searchField) {
+        this.searchField.focus();
+      }
+    }
+  }
+
   showSeachField() {
     this.setState({ showSearchField: true });
-    if (window) {
-      window.addEventListener('keydown', this.onKeyDown);
-    }
-    setTimeout(() => {
-      this.searchField.focus();
-    }, 10);
   }
 
   onSubmit(e: Event) {
