@@ -41,23 +41,33 @@ export default class extends React.Component {
   render() {
     const { lang, item } = this.props;
 
-    const sidebar = item.has_footnotes ? <div><FootnoteList /></div> : null;
+    const sidebar = item.has_footnotes
+      ? <div>
+          <FootnoteList />
+        </div>
+      : null;
     const body = <TextContent contentHtml={item.content_html} lang={lang} />;
     let variants, phrase;
     if (item.variants != null && item.variants.length > 0) {
       variants = (
         <div style={{ marginBottom: '10px' }}>
-          <b>Varianter: </b>{item.variants.join(', ')}
+          <b>Varianter: </b>
+          {item.variants.join(', ')}
         </div>
       );
     }
     if (item.phrase != null) {
       phrase = (
-        <div style={{ marginBottom: '10px' }}><b>Frase: </b>{item.phrase}</div>
+        <div style={{ marginBottom: '10px' }}>
+          <b>Frase: </b>
+          {item.phrase}
+        </div>
       );
     }
     const navbar = [
-      <Link href={Links.dictionaryURL(lang)}><a>Ordbog</a></Link>,
+      <Link href={Links.dictionaryURL(lang)}>
+        <a>Ordbog</a>
+      </Link>,
     ];
     const title = item.title;
     const headTitle = `${item.title} - Kalliope`;
@@ -71,7 +81,9 @@ export default class extends React.Component {
             <KalliopeTabs lang={lang} selected="dictionary" />
             <SidebarSplit sidebar={sidebar}>
               <div>
-                <SubHeading>{item.title}</SubHeading>
+                <SubHeading>
+                  {item.title}
+                </SubHeading>
                 {variants}
                 {phrase}
                 <div style={{ lineHeight: 1.6 }}>

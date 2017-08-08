@@ -11,9 +11,9 @@ export type Country = 'dk' | 'gb' | 'de' | 'fr' | 'se' | 'no' | 'it' | 'us';
 export type PoetId = string;
 export type WorkId = string;
 
-type TextContentLine = Array<string>
+type TextContentLine = Array<string>;
 
-export type TextContentType = Array<TextContentLine>
+export type TextContentType = Array<TextContentLine>;
 
 export type TextContentOptions = {
   isBibleVerses?: boolean,
@@ -121,7 +121,7 @@ export type DictItem = {
   title: string,
   variants?: Array<string>,
   phrase?: string,
-  content_html: string,
+  content_html: TextContentType,
 };
 
 export type NewsItem = {
@@ -137,4 +137,3 @@ export type TimelineItem = {
   content_html: TextContentType,
   src?: string, // When type is 'image'
 };
-
