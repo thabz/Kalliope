@@ -131,4 +131,5 @@ export type TimelineItem = {
 export type TextContentOptions = {
   isBibleVerses?: boolean,
   highlightBibleVerses?: Array<number>,
+  isPoetry?: boolean,
 };

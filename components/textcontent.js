@@ -8,7 +8,7 @@ import { Footnote } from './footnotes.js';
 import * as Links from './links';
 
 type TextContentPropsType = {
-  contentHtml: string,
+  contentHtml: Array<Array<string>>,
   lang: Lang,
   options?: TextContentOptions,
 };
@@ -37,7 +37,11 @@ export default class TextContent extends React.Component {
         {x}
       </span>
     );
-    return <span style={{ fontSize: '1.1em' }}>{parts}</span>;
+    return (
+      <span style={{ fontSize: '1.1em' }}>
+        {parts}
+      </span>
+    );
   }
   handle_a(node: any) {
     const lang = this.props.lang;
@@ -45,21 +49,27 @@ export default class TextContent extends React.Component {
       const poetId = node.getAttribute('person');
       return (
         <Link route={Links.poetURL(lang, poetId)}>
-          <a>{this.handle_nodes(node.childNodes)}</a>
+          <a>
+            {this.handle_nodes(node.childNodes)}
+          </a>
         </Link>
       );
     } else if (node.hasAttribute('poet')) {
       const poetId = node.getAttribute('poet');
       return (
         <Link route={Links.poetURL(lang, poetId)}>
-          <a>{this.handle_nodes(node.childNodes)}</a>
+          <a>
+            {this.handle_nodes(node.childNodes)}
+          </a>
         </Link>
       );
     } else if (node.hasAttribute('poem')) {
       const textId = node.getAttribute('poem');
       return (
         <Link route={Links.textURL(lang, textId)}>
-          <a>{this.handle_nodes(node.childNodes)}</a>
+          <a>
+            {this.handle_nodes(node.childNodes)}
+          </a>
         </Link>
       );
     } else if (node.hasAttribute('keyword')) {
@@ -95,18 +105,26 @@ export default class TextContent extends React.Component {
       const href = node.getAttribute('href');
       return (
         <Link route={href}>
-          <a>{this.handle_nodes(node.childNodes)}</a>
+          <a>
+            {this.handle_nodes(node.childNodes)}
+          </a>
         </Link>
       );
     } else if (node.hasAttribute('bible')) {
       const bibleId = node.getAttribute('bible');
       return (
         <Link route={Links.bibleURL(lang, bibleId)}>
-          <a>{this.handle_nodes(node.childNodes)}</a>
+          <a>
+            {this.handle_nodes(node.childNodes)}
+          </a>
         </Link>
       );
     } else {
-      return <code>{node.toString()}</code>;
+      return (
+        <code>
+          {node.toString()}
+        </code>
+      );
     }
   }
   handle_node(node: any) {
@@ -118,17 +136,41 @@ export default class TextContent extends React.Component {
       case '#comment':
         return null;
       case 'i':
-        return <i key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</i>;
+        return (
+          <i key={this.keySeq++}>
+            {this.handle_nodes(node.childNodes)}
+          </i>
+        );
       case 'b':
-        return <b>{this.handle_nodes(node.childNodes)}</b>;
+        return (
+          <b>
+            {this.handle_nodes(node.childNodes)}
+          </b>
+        );
       case 'p':
-        return <p>{this.handle_nodes(node.childNodes)}</p>;
+        return (
+          <p>
+            {this.handle_nodes(node.childNodes)}
+          </p>
+        );
       case 'blockquote':
-        return <blockquote>{this.handle_nodes(node.childNodes)}</blockquote>;
+        return (
+          <blockquote>
+            {this.handle_nodes(node.childNodes)}
+          </blockquote>
+        );
       case 'sup':
-        return <sup>{this.handle_nodes(node.childNodes)}</sup>;
+        return (
+          <sup>
+            {this.handle_nodes(node.childNodes)}
+          </sup>
+        );
       case 'strike':
-        return <strike>{this.handle_nodes(node.childNodes)}</strike>;
+        return (
+          <strike>
+            {this.handle_nodes(node.childNodes)}
+          </strike>
+        );
       case 'year':
       case 'wrap':
       case 'content':
@@ -209,7 +251,11 @@ export default class TextContent extends React.Component {
       case 'a':
         return this.handle_a(node);
       default:
-        return <code>{node.toString()}</code>;
+        return (
+          <code>
+            {node.toString()}
+          </code>
+        );
     }
   }
 
@@ -224,16 +270,54 @@ export default class TextContent extends React.Component {
   }
   render() {
     const { contentHtml, options } = this.props;
+
     if (contentHtml == null) {
       return null;
     }
-    const frag = new DOMParser().parseFromString(
-      '<content>' + contentHtml + '</content>'
-    );
-    let rendered = this.handle_nodes(frag.childNodes);
+    if (!(contentHtml instanceof Array)) {
+      return (
+        <div>
+          <pre>
+            {JSON.stringify(contentHtml)}
+          </pre>
+        </div>
+      );
+    }
+    const lines = contentHtml.map(l => {
+      const lineOptions = l.length > 1 ? l[1] : {};
+      let rendered = null;
+      if (lineOptions.html) {
+        const frag = new DOMParser().parseFromString(
+          '<content>' + l[0] + '</content>'
+        );
+        rendered = this.handle_nodes(frag.childNodes);
+      } else {
+        rendered = l[0];
+        if (options && options.isPoetry && rendered.length === 0) {
+          rendered = <br />;
+        }
+      }
+      if (options && options.isPoetry) {
+        return (
+          <div>
+            {rendered}
+          </div>
+        );
+      } else {
+        return (
+          <p>
+            {rendered}
+          </p>
+        );
+      }
+    });
     if (options != null && options.isBibleVerses) {
       //console.log(rendered);
     }
-    return <div>{rendered}</div>;
+    return (
+      <div>
+        {lines}
+      </div>
+    );
   }
 }

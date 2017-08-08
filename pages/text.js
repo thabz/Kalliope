@@ -31,12 +31,18 @@ class TextHeading extends React.Component {
     let subtitles = null;
     if (text.subtitles != null) {
       subtitles = text.subtitles.map((t, i) => {
-        return <h4 key={i}><TextContent contentHtml={t} lang={lang} /></h4>;
+        return (
+          <h4 key={i}>
+            <TextContent contentHtml={t} lang={lang} />
+          </h4>
+        );
       });
     }
     return (
       <div className="text-heading">
-        <h2><TextName text={text} /></h2>
+        <h2>
+          <TextName text={text} />
+        </h2>
         {subtitles}
         <style jsx>{`
           .text-heading :global(h2) {
@@ -116,17 +122,22 @@ export default class extends React.Component {
       const style = i === 1 ? { marginLeft: '10px' } : null;
       return (
         <div style={style}>
-          <Link prefetch route={url}><a title={t.title}>{arrow}</a></Link>
+          <Link prefetch route={url}>
+            <a title={t.title}>
+              {arrow}
+            </a>
+          </Link>
         </div>
       );
     });
     const rightSide = (
-      <div style={{ display: 'flex', padding: '4px 0' }}>{rightSideItems}</div>
+      <div style={{ display: 'flex', padding: '4px 0' }}>
+        {rightSideItems}
+      </div>
     );
 
-    const renderedRefs = refs.length == 0
-      ? null
-      : [<p>Henvisninger hertil:</p>, ...refs];
+    const renderedRefs =
+      refs.length == 0 ? null : [<p>Henvisninger hertil:</p>, ...refs];
     let sidebar: any = null;
     if (
       refs.length > 0 ||
@@ -136,12 +147,16 @@ export default class extends React.Component {
     ) {
       sidebar = (
         <div>
-          {renderedNotes}{renderedPictures}<FootnoteList />{renderedRefs}
+          {renderedNotes}
+          {renderedPictures}
+          <FootnoteList />
+          {renderedRefs}
         </div>
       );
     }
     const options = {
       isBibleVerses: poet.id === 'bibel',
+      isPoetry: !text.is_prose,
     };
     const body = (
       <TextContent

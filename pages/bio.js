@@ -44,7 +44,11 @@ class DateAndPlace extends React.Component {
     if (datePlace.place != null) {
       result += `, ${datePlace.place}`;
     }
-    return <div>{result}</div>;
+    return (
+      <div>
+        {result}
+      </div>
+    );
   }
 }
 
@@ -69,8 +73,12 @@ class PersonMetaLine extends React.Component {
     };
     return (
       <div style={styles.item}>
-        <div style={styles.key}>{label}</div>
-        <div>{value}</div>
+        <div style={styles.key}>
+          {label}
+        </div>
+        <div>
+          {value}
+        </div>
       </div>
     );
   }
@@ -141,7 +149,12 @@ class Timeline extends React.Component {
     let prevYear = null;
     const items = timeline.map((item, i) => {
       const curYear = item.date.substring(0, 4);
-      const year = curYear !== prevYear ? <div>{curYear}</div> : null;
+      const year =
+        curYear !== prevYear
+          ? <div>
+              {curYear}
+            </div>
+          : null;
       prevYear = curYear;
 
       let html = null;
@@ -160,7 +173,9 @@ class Timeline extends React.Component {
 
       return (
         <div key={i} style={{ marginBottom: '10px', breakInside: 'avoid' }}>
-          <div style={{ float: 'left' }}>{year}</div>
+          <div style={{ float: 'left' }}>
+            {year}
+          </div>
           <div
             style={{
               marginLeft: '50px',
@@ -173,7 +188,9 @@ class Timeline extends React.Component {
     });
     return (
       <div className="timeline">
-        <TwoColumns>{items}</TwoColumns>
+        <TwoColumns>
+          {items}
+        </TwoColumns>
       </div>
     );
   }
