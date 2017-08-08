@@ -156,9 +156,9 @@ const htmlToXml = (html, collected, isPoetry = false) => {
   lineNum = 1;
   lines = decoded.split('\n').map(l => {
     let options = {};
-    const hasNonum = l.indexOf('<nonum>') > -1;
+    const hasNonum = l.indexOf('<nonum>') > -1 || l.indexOf('<num>') > -1 || l.match(/^\s*$/);
     if (!hasNonum) {
-      if (isPoetry && (lineNum == 1 || lineNum % 5 == 0)) {
+      if (isPoetry && lineNum % 5 == 0) {
         options.num = lineNum;
       }
       lineNum += 1;
@@ -168,6 +168,10 @@ const htmlToXml = (html, collected, isPoetry = false) => {
     if (l.indexOf('<center>') > -1) {
       l = l.replace('<center>', '').replace('</center>', '');
       options.center = true;
+    }
+    if (l.indexOf('<right>') > -1) {
+      l = l.replace('<right>', '').replace('</right>', '');
+      options.right = true;
     }
     if (l.indexOf('<wrap>') > -1) {
       l = l.replace('<wrap>', '').replace('</wrap>', '');
