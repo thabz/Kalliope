@@ -83,7 +83,7 @@ const htmlToXml = (html, collected, isPoetry = false) => {
     replaceDashes(
       html
         .replace(/\n *(----*) *\n/g, (match, p1) => {
-          return `\n<hr width=${p1.length}/>\n`;
+          return `\n<hr width="${p1.length}"/>\n`;
         })
         .replace(/^\n/, '')
         .replace(/^ *(<right>.*)$/gm, '$1')
@@ -153,10 +153,18 @@ const htmlToXml = (html, collected, isPoetry = false) => {
     });
   }
 
-  lineNum = 1;
+  let lineNum = 1;
   lines = decoded.split('\n').map(l => {
     let options = {};
-    const hasNonum = l.indexOf('<nonum>') > -1 || l.indexOf('<num>') > -1 || l.match(/^\s*$/);
+    if (l.indexOf('<resetnum/>') > -1) {
+      lineNum = 1;
+      l = l.replace('<resetnum/>', '');
+    }
+    const hasNonum =
+      l.indexOf('<nonum>') > -1 ||
+      l.indexOf('<num>') > -1 ||
+      l.match(/^\s*$/) ||
+      l.match(/^\s*<hr[^>]*>\s*$/);
     if (!hasNonum) {
       if (isPoetry && lineNum % 5 == 0) {
         options.num = lineNum;
