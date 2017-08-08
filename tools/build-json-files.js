@@ -125,9 +125,8 @@ const build_poet_timeline_json = (poet, collected) => {
       }
     });
     if (poet.period.born.date !== '?') {
-      const place = poet.period.born.place != null
-        ? ' i ' + poet.period.born.place
-        : '';
+      const place =
+        poet.period.born.place != null ? ' i ' + poet.period.born.place : '';
       items.push({
         date: poet.period.born.date,
         type: 'text',
@@ -137,9 +136,8 @@ const build_poet_timeline_json = (poet, collected) => {
       });
     }
     if (poet.period.dead.date !== '?') {
-      const place = poet.period.dead.place != null
-        ? ' i ' + poet.period.dead.place
-        : '';
+      const place =
+        poet.period.dead.place != null ? ' i ' + poet.period.dead.place : '';
       items.push({
         date: poet.period.dead.date,
         type: 'text',
@@ -338,15 +336,15 @@ const build_poets_json = () => {
       has_texts: has.has_texts,
       has_bibliography:
         fs.existsSync(`fdirs/${id}/bibliography-primary.xml`) ||
-          fs.existsSync(`fdirs/${id}/bibliography-secondary.xml`),
+        fs.existsSync(`fdirs/${id}/bibliography-secondary.xml`),
       has_biography:
         fs.existsSync(`fdirs/${id}/bio.xml`) ||
-          fs.existsSync(`fdirs/${id}/events.xml`) ||
-          (period != null &&
-            period.born != null &&
-            period.dead != null &&
-            period.born.date !== '?' &&
-            period.dead.date !== '?'),
+        fs.existsSync(`fdirs/${id}/events.xml`) ||
+        (period != null &&
+          period.born != null &&
+          period.dead != null &&
+          period.born.date !== '?' &&
+          period.dead.date !== '?'),
       has_portraits: fs.existsSync(`static/images/${id}/p1.jpg`),
     };
     list.push(poet);
