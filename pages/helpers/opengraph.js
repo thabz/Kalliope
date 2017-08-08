@@ -1,6 +1,6 @@
-import type { Poet } from './types.js';
+import type { Poet, TextContentType } from './types.js';
 
-export const trimmedDescription = (content_html: string, is_poetry = false) => {
+export const trimmedDescription = (content_html: TextContentType, is_poetry = false) => {
   if (content_html == null) {
     return null;
   }

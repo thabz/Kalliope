@@ -432,20 +432,20 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
   if (subtitle && subtitle.find('line').length > 0) {
     subtitles = subtitle
       .find('line')
-      .map(s =>
+      .map(s => [[
         replaceDashes(
           s
             .toString()
             .replace('<line>', '')
             .replace('</line>', '')
             .replace('<line/>', '')
-        )
+        )]]
       );
   } else if (subtitle) {
     subtitles = [
-      replaceDashes(
+      [[replaceDashes(
         subtitle.toString().replace('<subtitle>', '').replace('</subtitle>', '')
-      ),
+      )]],
     ];
   }
   let keywordsArray = null;
@@ -457,20 +457,21 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
     const meta = collected.texts.get(id);
     const poet = poetName(collected.poets.get(meta.poetId));
     const work = workName(collected.works.get(meta.poetId + '/' + meta.workId));
-    return `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`;
+    return [[`${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`, {html: true}]];
   });
 
   const foldername = Paths.textFolder(textId);
   const prev_next = resolve_prev_next(textId);
 
+  const rawBody = body.toString().replace('<body>', '').replace('</body>', '');
   const content_html = htmlToXml(
-    body.toString().replace('<body>', '').replace('</body>', ''),
+    rawBody,
     collected,
     isPoetry
   );
   const has_footnotes =
-    content_html.indexOf('<footnote') !== -1 ||
-    content_html.indexOf('<note') !== -1;
+    rawBody.indexOf('<footnote') !== -1 ||
+    rawBody.indexOf('<note') !== -1;
   mkdirp.sync(foldername);
   const text_data = {
     poet,
@@ -1067,13 +1068,14 @@ const build_keywords = () => {
       const title = head.get('title').text();
       const pictures = get_pictures(head);
       const author = head.get('author') ? head.get('author').text() : null;
+      const rawBody = body.toString().replace('<body>', '').replace('</body>', '');
       const content_html = htmlToXml(
-        body.toString().replace('<body>', '').replace('</body>', ''),
+        rawBody,
         collected
       );
       const has_footnotes =
-        content_html.indexOf('<footnote') !== -1 ||
-        content_html.indexOf('<note') !== -1;
+        rawBody.indexOf('<footnote') !== -1 ||
+        rawBody.indexOf('<note') !== -1;
       const data = {
         id,
         title,

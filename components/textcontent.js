@@ -3,12 +3,12 @@ import React from 'react';
 import { Link } from '../routes';
 var DOMParser = require('xmldom').DOMParser;
 
-import type { Text, Lang, TextContentOptions } from '../pages/helpers/types.js';
+import type { Text, Lang, TextContentOptions, TextContentType } from '../pages/helpers/types.js';
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
 
 type TextContentPropsType = {
-  contentHtml: Array<Array<string>>,
+  contentHtml: TextContentType,
   lang: Lang,
   options?: TextContentOptions,
 };
@@ -201,25 +201,25 @@ export default class TextContent extends React.Component {
         );
       case 'right':
         return (
-          <div
+          <span
             style={{
               display: 'inline-block',
               width: '100%',
               textAlign: 'right',
             }}>
             {this.handle_nodes(node.childNodes)}
-          </div>
+          </span>
         );
       case 'num':
         return (
-          <div
+          <span
             style={{
               display: 'inline',
               opacity: 0.4,
               pageBreakAfter: 'avoid', // Not working.
             }}>
             {this.handle_nodes(node.childNodes)}
-          </div>
+          </span>
         );
       case 'w':
         return (
@@ -286,6 +286,7 @@ export default class TextContent extends React.Component {
     const lines = contentHtml.map(l => {
       const lineOptions = l.length > 1 ? l[1] : {};
       let rendered = null;
+      let style = {};
       if (lineOptions.html) {
         const frag = new DOMParser().parseFromString(
           '<content>' + l[0] + '</content>'
@@ -297,9 +298,12 @@ export default class TextContent extends React.Component {
           rendered = <br />;
         }
       }
+      if (lineOptions.center) {
+        style.textAlign = 'center;'
+      }
       if (options && options.isPoetry) {
         return (
-          <div>
+          <div style={{style}}>
             {rendered}
           </div>
         );
