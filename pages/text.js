@@ -82,6 +82,7 @@ class TextHeading extends React.Component {
 export default class extends React.Component {
   props: {
     lang: Lang,
+    highlightBibleVerses: string,
     poet: Poet,
     work: Work,
     text: Text,
@@ -90,13 +91,14 @@ export default class extends React.Component {
   };
 
   static async getInitialProps({
-    query: { lang, textId },
+    query: { lang, textId, verses },
   }: {
-    query: { lang: Lang, textId: string },
+    query: { lang: Lang, textId: string, verses: string },
   }) {
     const json = await Client.text(textId);
     return {
       lang,
+      highlightBibleVerses: verses,
       poet: json.poet,
       work: json.work,
       prev: json.prev,
@@ -106,7 +108,15 @@ export default class extends React.Component {
   }
 
   render() {
-    const { lang, poet, work, prev, next, text } = this.props;
+    const {
+      lang,
+      highlightBibleVerses,
+      poet,
+      work,
+      prev,
+      next,
+      text,
+    } = this.props;
 
     const renderedNotes = text.notes.map((note, i) => {
       return <Note key={i} note={note} lang={lang} />;
@@ -164,9 +174,24 @@ export default class extends React.Component {
         </div>
       );
     }
+    let highlightBibleVersesInterval: { from: number, to: number };
+    if (highlightBibleVerses) {
+      let m = null;
+      let from: number = -1,
+        to: number = -1;
+      if ((m = highlightBibleVerses.match(/(\d+)-(\d+)/))) {
+        from = parseInt(m[1]);
+        to = parseInt(m[2]);
+      } else if ((m = highlightBibleVerses.match(/(\d+)/))) {
+        from = parseInt(m[1]);
+        to = parseInt(m[1]);
+      }
+      highlightBibleVersesInterval = { from, to };
+    }
     const options = {
       isBible: poet.id === 'bibel',
       isPoetry: poet.id !== 'bibel' && !text.is_prose,
+      highlightBibleVerses: highlightBibleVersesInterval,
     };
     const body = (
       <TextContent

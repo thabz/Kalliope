@@ -313,7 +313,7 @@ export default class TextContent extends React.Component {
         className += ' right';
       }
 
-      const lineNum = lineOptions.num || null;
+      const lineNum: ?number = lineOptions.num;
       if (options != null && options.isPoetry) {
         className += ' poem-line';
         return (
@@ -323,6 +323,15 @@ export default class TextContent extends React.Component {
         );
       } else if (options != null && options.isBible) {
         className += ' bible-line';
+        if (options.highlightBibleVerses != null) {
+          if (
+            lineNum != null &&
+            lineNum >= options.highlightBibleVerses.from &&
+            lineNum <= options.highlightBibleVerses.to
+          ) {
+            className += ' highlighted-bible-line';
+          }
+        }
         return (
           <div className={className} data-num={lineNum} key={i}>
             {rendered}
@@ -358,6 +367,9 @@ export default class TextContent extends React.Component {
           :global(.bible-line),
           :global(.poem-line) {
             margin-left: 1.5em;
+          }
+          :global(.highlighted-bible-line) {
+            background-color: lightyellow;
           }
           :global(.right) {
             text-align: right;
