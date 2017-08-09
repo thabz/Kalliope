@@ -73,7 +73,7 @@ const replaceDashes = html => {
 
 const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
   const regexp = /<xref\s+(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
-  if (isPoetry) {
+  if (isPoetry && !isBible) {
     // Marker strofe numre
     html = html
       .replace(/^(\d+\.?)\s*\n/gm, '<num>$1</num>\n')
@@ -167,7 +167,7 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
           curLine = '';
         }
         collectedLines.push(line);
-      } else if (line.match(/^\s*\d+\.\s*/)) {
+      } else if (line.match(/^\s*\d+,?\d*\.\s*/)) {
         if (curLine !== '') {
           collectedLines.push(curLine);
         }
@@ -201,11 +201,11 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
       l = l.replace('<nonum>', '').replace('</nonum>', '');
     }
     if (isBible) {
-      const match = l.match(/^\s*(\d+)\.\s*/);
+      const match = l.match(/^\s*(\d+,?\d*)\.\s*/);
       if (match) {
         options.num = match[1];
         options.bible = true;
-        l = l.replace(/^\s*\d+\.\s*/, '');
+        l = l.replace(/^\s*\d+,?\d*\.\s*/, '');
       }
     }
     if (l.indexOf('<center>') > -1) {
