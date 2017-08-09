@@ -335,8 +335,8 @@ export default class TextContent extends React.Component {
           :global(.poem-line::before) {
             content: attr(data-num);
             color: #888;
-            margin: 0 1em;
-            width: 1em;
+            margin-right: 1em;
+            width: 1.5em;
             font-size: 0.8em;
             text-align: right;
             display: inline-block;

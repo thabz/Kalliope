@@ -24,9 +24,16 @@ import type { Lang, Poet, Work, Text, PrevNextText } from './helpers/types.js';
 import 'isomorphic-fetch';
 
 class TextHeading extends React.Component {
-  props: { text: Text, lang: Lang };
+  props: { text: Text, lang: Lang, isProse: boolean };
   render() {
-    const { text, lang } = this.props;
+    const { text, lang, isProse } = this.props;
+
+    let className = 'text-heading';
+    if (isProse) {
+      className += ' prose';
+    } else {
+      className += ' poem';
+    }
 
     let subtitles = null;
     if (text.subtitles != null) {
@@ -39,7 +46,7 @@ class TextHeading extends React.Component {
       });
     }
     return (
-      <div className="text-heading">
+      <div className={className}>
         <h2>
           <TextName text={text} />
         </h2>
@@ -62,6 +69,9 @@ class TextHeading extends React.Component {
           }
           .text-heading {
             margin-bottom: 30px;
+          }
+          .text-heading.poem {
+            margin-left: 2em;
           }
         `}</style>
       </div>
@@ -207,7 +217,11 @@ export default class extends React.Component {
             <SidebarSplit sidebar={sidebar}>
               <div>
                 <div className="text-content">
-                  <TextHeading text={text} lang={lang} />
+                  <TextHeading
+                    text={text}
+                    lang={lang}
+                    isProse={text.is_prose}
+                  />
                   {body}
                   <style jsx>{`
                     .text-content {
