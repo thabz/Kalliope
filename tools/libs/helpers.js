@@ -95,9 +95,7 @@ const htmlToXml = (html, collected, isPoetry = false) => {
         .replace(/''/g, '&ldquo;')
     )
   );
-  // if (!isPoetry) {
-  //   decoded = decoded.replace(/\n/g, '<br/>');
-  // }
+
   while (decoded.match(regexp)) {
     decoded = decoded.replace(regexp, (_, type, id) => {
       if (type === 'poem') {
