@@ -197,7 +197,13 @@ export default class Tabs extends React.Component {
       const className = item.id === selected ? 'tab selected' : 'tab';
       return (
         <div className={className} key={item.url}>
-          <Link route={item.url}><a><h2>{item.title}</h2></a></Link>
+          <Link route={item.url}>
+            <a>
+              <h2>
+                {item.title}
+              </h2>
+            </a>
+          </Link>
         </div>
       );
     });
@@ -329,7 +335,7 @@ export default class Tabs extends React.Component {
             }
           }
           @media print {
-            .tabs {
+            .tabs-container {
               display: none;
             }
           }

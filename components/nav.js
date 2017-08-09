@@ -23,7 +23,9 @@ export default class Nav extends React.Component {
     const { lang, poet, work, title, rightSide } = this.props;
     let { links } = this.props;
     const rootLink = (
-      <Link prefetch route={Links.frontPageURL(lang)}><a>Kalliope</a></Link>
+      <Link prefetch route={Links.frontPageURL(lang)}>
+        <a>Kalliope</a>
+      </Link>
     );
 
     if (!links) {
@@ -34,16 +36,19 @@ export default class Nav extends React.Component {
         : null;
       const poetLink = poet
         ? <Link prefetch route={Links.poetURL(lang, poet.id)}>
-            <a><PoetName poet={poet} /></a>
-          </Link>
-        : null;
-      const workLink = work && poet
-        ? <Link prefetch route={Links.workURL(lang, poet.id, work.id)}>
             <a>
-              <WorkName work={work} />
+              <PoetName poet={poet} />
             </a>
           </Link>
         : null;
+      const workLink =
+        work && poet
+          ? <Link prefetch route={Links.workURL(lang, poet.id, work.id)}>
+              <a>
+                <WorkName work={work} />
+              </a>
+            </Link>
+          : null;
       links = [poetsURL, poetLink, workLink];
     }
     links = [rootLink, ...links, title];
@@ -53,7 +58,11 @@ export default class Nav extends React.Component {
       if (i !== 0) {
         joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
       }
-      joinedLinks.push(<div key={'link' + i}>{link}</div>);
+      joinedLinks.push(
+        <div key={'link' + i}>
+          {link}
+        </div>
+      );
     });
     return (
       <div className="nav-container">
@@ -66,12 +75,8 @@ export default class Nav extends React.Component {
         <style jsx>{`
           :global(body) {
             margin: 0;
-            font-family: -apple-system,
-              BlinkMacSystemFont,
-              Avenir Next,
-              Avenir,
-              Helvetica,
-              sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
+              Helvetica, sans-serif;
             box-sizing: border-box;
             font-size: 14px;
             height: 150px;
@@ -102,7 +107,7 @@ export default class Nav extends React.Component {
             justify-content: space-between;
           }
           @media print {
-            nav {
+            .nav-container {
               display: none;
             }
           }
