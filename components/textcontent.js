@@ -299,7 +299,10 @@ export default class TextContent extends React.Component {
         rendered = this.handle_nodes(frag.childNodes);
       } else {
         rendered = l[0];
-        if (options && options.isPoetry && rendered.length === 0) {
+        if (rendered.trim().length === 0) {
+          if (options == null || !options.isPoetry) {
+            className += ' half-height-blank';
+          }
           rendered = <br />;
         }
       }
@@ -319,9 +322,9 @@ export default class TextContent extends React.Component {
         );
       } else {
         return (
-          <p className={className}>
+          <div className={className}>
             {rendered}
-          </p>
+          </div>
         );
       }
     });
@@ -346,6 +349,9 @@ export default class TextContent extends React.Component {
           }
           :global(.center) {
             text-align: center;
+          }
+          :global(.half-height-blank) {
+            line-height: 0.8;
           }
         `}</style>
       </div>

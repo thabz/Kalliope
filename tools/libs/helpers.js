@@ -80,6 +80,10 @@ const htmlToXml = (html, collected, isPoetry = false) => {
       .replace(/^(\d+\.?)/gm, '<num>$1</num>')
       .replace(/^\[(\d+\.?)\]\s*\n/gm, '<num>[$1]</num>\n');
   }
+  html = html
+    .replace(/\n/g, '::NEWLINE-PLACEHOLDER::') // Regexp nedenunder spænder ikke over flere linjer... underligt.
+    .replace(/<!--.*?-->/g, '')
+    .replace(/::NEWLINE-PLACEHOLDER::/g, '\n');
   let decoded = entities.decodeHTML(
     replaceDashes(
       html
