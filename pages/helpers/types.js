@@ -11,6 +11,8 @@ export type Country = 'dk' | 'gb' | 'de' | 'fr' | 'se' | 'no' | 'it' | 'us';
 export type PoetId = string;
 export type WorkId = string;
 
+export type Error = { statusCode: number };
+
 type TextContentLine = Array<string>; // TODO: Make this more precise
 
 export type TextContentType = Array<TextContentLine>;

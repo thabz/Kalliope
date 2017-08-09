@@ -27,13 +27,20 @@ export const createURL = (path: string): string => {
   }
 };
 
+const fetchJSON = async (path: string): Promise<*> => {
+  const res = await fetch(createURL(path));
+  if (res.status > 200) {
+    return Promise.resolve({ error: { statusCode: res.status } });
+  } else {
+    return await res.json();
+  }
+};
+
 export const poet = async (poetId: ?PoetId): Promise<?Poet> => {
   if (poetId == null) {
     return Promise.resolve(null);
   } else {
-    const res = await fetch(createURL(`/static/api/${poetId}.json`));
-    const json = (await res.json(): Promise<Poet>);
-    return json;
+    return fetchJSON(`/static/api/${poetId}.json`);
   }
 };
 
@@ -70,11 +77,12 @@ type FetchTextResult = Promise<{
   prev: PrevNextText,
   next: PrevNextText,
   text: Text,
+  error: ?Error,
 }>;
 export const text = async (textId: string): FetchTextResult => {
   const path: string = Paths.textPath(textId);
-  const res = await fetch(createURL(`/${path}`));
-  return (await res.json(): FetchTextResult);
+  const json: FetchTextResult = fetchJSON(`/${path}`);
+  return json;
 };
 
 type FetchSearchResult = Promise<{

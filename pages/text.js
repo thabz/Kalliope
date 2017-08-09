@@ -20,7 +20,16 @@ import SidebarPictures from '../components/sidebarpictures.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
-import type { Lang, Poet, Work, Text, PrevNextText } from './helpers/types.js';
+import ErrorPage from './error.js';
+
+import type {
+  Lang,
+  Poet,
+  Work,
+  Text,
+  PrevNextText,
+  Error,
+} from './helpers/types.js';
 import 'isomorphic-fetch';
 
 class TextHeading extends React.Component {
@@ -88,6 +97,7 @@ export default class extends React.Component {
     text: Text,
     prev?: PrevNextText,
     next?: PrevNextText,
+    error: ?Error,
   };
 
   static async getInitialProps({
@@ -104,6 +114,7 @@ export default class extends React.Component {
       prev: json.prev,
       next: json.next,
       text: json.text,
+      error: json.error,
     };
   }
 
@@ -116,7 +127,12 @@ export default class extends React.Component {
       prev,
       next,
       text,
+      error,
     } = this.props;
+
+    if (error) {
+      return <ErrorPage error={error} lang={lang} message="Ukendt tekst" />;
+    }
 
     const renderedNotes = text.notes.map((note, i) => {
       return <Note key={i} note={note} lang={lang} />;
