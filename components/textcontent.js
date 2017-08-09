@@ -288,7 +288,7 @@ export default class TextContent extends React.Component {
         </div>
       );
     }
-    const lines = contentHtml.map(l => {
+    const lines = contentHtml.map((l, i) => {
       const lineOptions = l.length > 1 ? l[1] : {};
       let rendered = null;
       let className = '';
@@ -317,21 +317,21 @@ export default class TextContent extends React.Component {
       if (options != null && options.isPoetry) {
         className += ' poem-line';
         return (
-          <div className={className} data-num={lineNum}>
+          <div className={className} data-num={lineNum} key={i}>
             {rendered}
           </div>
         );
       } else if (options != null && options.isBible) {
         className += ' bible-line';
         return (
-          <div className={className} data-num={lineNum}>
+          <div className={className} data-num={lineNum} key={i}>
             {rendered}
           </div>
         );
       } else {
         // Prose
         return (
-          <div className={className}>
+          <div className={className} key={i}>
             {rendered}
           </div>
         );
