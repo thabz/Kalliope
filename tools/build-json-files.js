@@ -120,7 +120,9 @@ const build_poet_timeline_json = (poet, collected) => {
           type: 'text',
           lang: 'da',
           is_history_item: false,
-          content_html: [[`${poet.name.lastname}: ${workName}.`, {html: true}]],
+          content_html: [
+            [`${poet.name.lastname}: ${workName}.`, { html: true }],
+          ],
         });
       }
     });
@@ -430,23 +432,23 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
   let subtitles = null;
   const subtitle = head.get('subtitle');
   if (subtitle && subtitle.find('line').length > 0) {
-    subtitles = subtitle
-      .find('line')
-      .map(s => [[
-        replaceDashes(
-          s
-            .toString()
-            .replace('<line>', '')
-            .replace('</line>', '')
-            .replace('<line/>', '')
-        )]]
+    subtitles = subtitle.find('line').map(s => {
+      return htmlToXml(
+        s
+          .toString()
+          .replace('<line>', '')
+          .replace('</line>', '')
+          .replace('<line/>', ''),
+        collected,
+        true
       );
+    });
   } else if (subtitle) {
-    subtitles = [
-      [[replaceDashes(
-        subtitle.toString().replace('<subtitle>', '').replace('</subtitle>', '')
-      )]],
-    ];
+    subtitles = htmlToXml(
+      subtitle.toString().replace('<subtitle>', '').replace('</subtitle>', ''),
+      collected,
+      true
+    );
   }
   let keywordsArray = null;
   if (keywords) {
@@ -457,21 +459,21 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
     const meta = collected.texts.get(id);
     const poet = poetName(collected.poets.get(meta.poetId));
     const work = workName(collected.works.get(meta.poetId + '/' + meta.workId));
-    return [[`${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`, {html: true}]];
+    return [
+      [
+        `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`,
+        { html: true },
+      ],
+    ];
   });
 
   const foldername = Paths.textFolder(textId);
   const prev_next = resolve_prev_next(textId);
 
   const rawBody = body.toString().replace('<body>', '').replace('</body>', '');
-  const content_html = htmlToXml(
-    rawBody,
-    collected,
-    isPoetry
-  );
+  const content_html = htmlToXml(rawBody, collected, isPoetry);
   const has_footnotes =
-    rawBody.indexOf('<footnote') !== -1 ||
-    rawBody.indexOf('<note') !== -1;
+    rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
   mkdirp.sync(foldername);
   const text_data = {
     poet,
@@ -1068,14 +1070,13 @@ const build_keywords = () => {
       const title = head.get('title').text();
       const pictures = get_pictures(head);
       const author = head.get('author') ? head.get('author').text() : null;
-      const rawBody = body.toString().replace('<body>', '').replace('</body>', '');
-      const content_html = htmlToXml(
-        rawBody,
-        collected
-      );
+      const rawBody = body
+        .toString()
+        .replace('<body>', '')
+        .replace('</body>', '');
+      const content_html = htmlToXml(rawBody, collected);
       const has_footnotes =
-        rawBody.indexOf('<footnote') !== -1 ||
-        rawBody.indexOf('<note') !== -1;
+        rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
       const data = {
         id,
         title,
