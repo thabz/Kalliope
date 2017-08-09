@@ -56,7 +56,7 @@ class DateAndPlace extends React.Component {
 class PersonMetaLine extends React.Component {
   props: {
     label: string,
-    value: ?any,
+    value: string | React$Element,
   };
   render() {
     const { label, value } = this.props;
