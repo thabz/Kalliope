@@ -9,7 +9,9 @@ export default class Heading extends React.Component {
     const { title } = this.props;
     return (
       <div className="heading">
-        <h1>{title}</h1>
+        <h1>
+          {title}
+        </h1>
         <style jsx>{`
           .heading {
             margin-bottom: 20px;
@@ -32,6 +34,12 @@ export default class Heading extends React.Component {
               line-height: 24px;
               font-size: 24px;
               font-weight: lighter;
+            }
+          }
+          @media print {
+            .heading :global(h1) {
+              font-size: 24px;
+              border-bottom: 1px solid #888;
             }
           }
         `}</style>
