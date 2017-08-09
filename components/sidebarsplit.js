@@ -4,15 +4,20 @@ import React from 'react';
 
 export default class SidebarSplit extends React.Component {
   props: {
-    sidebar: *,
+    sidebar: React$Element<*> | string | Array<React$Element<*>> | null,
     children?: *,
   };
   render() {
     const { sidebar } = this.props;
-    let className = sidebar == null || sidebar.length == 0
-      ? 'sidebar-spl empty'
-      : 'sidebar-spl';
-    const renderedSidebar = <div>{sidebar}</div>;
+    let className =
+      sidebar == null || sidebar.length == 0
+        ? 'sidebar-spl empty'
+        : 'sidebar-spl';
+    const renderedSidebar = (
+      <div>
+        {sidebar}
+      </div>
+    );
     return (
       <div className={className}>
         {this.props.children}

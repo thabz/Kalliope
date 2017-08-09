@@ -12,14 +12,14 @@ import SidebarSplit from '../components/sidebarsplit.js';
 import * as Links from '../components/links';
 import Heading from '../components/heading.js';
 import TextContent from '../components/textcontent.js';
-import type { Lang, NewsItem } from './helpers/types.js';
+import type { Lang, NewsItem, TextContentType } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
 
 export default class extends React.Component {
   props: {
     lang: Lang,
-    item: { title: string, content_html: string },
+    item: { title: string, content_html: TextContentType },
   };
 
   static async getInitialProps({
@@ -58,7 +58,9 @@ export default class extends React.Component {
           <KalliopeTabs lang={lang} selected="about" />
           <SidebarSplit sidebar={null}>
             <div>
-              <SubHeading>{item.title}</SubHeading>
+              <SubHeading>
+                {item.title}
+              </SubHeading>
               <div className="about-body">
                 {renderedAbout}
               </div>

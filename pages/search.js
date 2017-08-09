@@ -169,7 +169,11 @@ export default class extends React.Component {
           item = (
             <div>
               <div>
-                <Link route={workURL}><a><WorkName work={work} /></a></Link>
+                <Link route={workURL}>
+                  <a>
+                    <WorkName work={work} />
+                  </a>
+                </Link>
               </div>
               <div>
                 <PoetName poet={poet} />:{' '}
@@ -188,19 +192,32 @@ export default class extends React.Component {
                 .replace(/^[\s,.!:;?\d"“„]+/, '')
                 .replace(/[\s,.!:;?\d"“„]+$/, '')
                 .split(/<\/?em>/);
-              parts[1] = <em key={i}>{parts[1]}</em>;
-              return <div key={i}>{parts}</div>;
+              parts[1] = (
+                <em key={i}>
+                  {parts[1]}
+                </em>
+              );
+              return (
+                <div key={i}>
+                  {parts}
+                </div>
+              );
             });
           }
           item = (
             <div>
               <div className="title">
-                <Link route={textURL}><a><TextName text={text} /></a></Link>
+                <Link route={textURL}>
+                  <a>
+                    <TextName text={text} />
+                  </a>
+                </Link>
               </div>
-              <div className="hightlights">{renderedHighlight}</div>
+              <div className="hightlights">
+                {renderedHighlight}
+              </div>
               <div className="poet-and-work">
-                <PoetName poet={poet} />:{' '}
-                <WorkName work={work} />
+                <PoetName poet={poet} />: <WorkName work={work} />
               </div>
               <style jsx>{`
                 .title {
@@ -258,7 +275,7 @@ export default class extends React.Component {
     const renderedResult = (
       <div className="result-items">
         <div className="result-count">
-          {resultaterBeskrivelse}{' '}{linkToFullSearch}
+          {resultaterBeskrivelse} {linkToFullSearch}
         </div>
         {items}
         <style jsx>{`

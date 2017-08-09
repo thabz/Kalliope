@@ -65,23 +65,42 @@ export default class extends React.Component {
             <tr key={i}>
               <td />
               <td>
-                <h3>{title}</h3>
+                <h3>
+                  {title}
+                </h3>
                 {renderItems(item.content, indent + 1)}
               </td>
             </tr>
           );
         } else if (type === 'text' && id != null) {
           const url = Links.textURL(lang, id);
-          const linkedTitle = <Link route={url}><a>{title}</a></Link>;
+          const linkedTitle = (
+            <Link route={url}>
+              <a>
+                {title}
+              </a>
+            </Link>
+          );
           return (
             <tr key={id}>
-              <td className="num">{prefix}</td><td>{linkedTitle}</td>
+              <td className="num">
+                {prefix}
+              </td>
+              <td>
+                {linkedTitle}
+              </td>
             </tr>
           );
         }
       });
       const className = `toc ${indent === 0 ? 'outer' : ''}`;
-      return <table className={className}><tbody>{rows}</tbody></table>;
+      return (
+        <table className={className}>
+          <tbody>
+            {rows}
+          </tbody>
+        </table>
+      );
     };
 
     const renderedNotes = notes.map((note, i) => {
@@ -95,22 +114,29 @@ export default class extends React.Component {
         srcPrefix={`/static/images/${poet.id}`}
       />
     );
-    const completedStatus = work.status === 'incomplete' && work.id !== 'andre'
-      ? <div>
-          Kalliopes udgave af <WorkName work={work} cursive={true} /> er endnu
-          ikke
-          fuldstændig.
-        </div>
-      : null;
-    let sidebar: any = null;
+    const completedStatus =
+      work.status === 'incomplete' && work.id !== 'andre'
+        ? <div>
+            Kalliopes udgave af <WorkName work={work} cursive={true} /> er endnu
+            ikke fuldstændig.
+          </div>
+        : null;
+    let sidebar = null;
     if (pictures.length > 0 || notes.length > 0 || completedStatus != null) {
-      sidebar = <div>{renderedPictures}{renderedNotes}{completedStatus}</div>;
+      sidebar = (
+        <div>
+          {renderedPictures}
+          {renderedNotes}
+          {completedStatus}
+        </div>
+      );
     }
-    const table = toc.length > 0
-      ? renderItems(toc)
-      : <div className="nodata">
-          <i>Kalliope indeholder endnu ingen tekster fra dette værk.</i>
-        </div>;
+    const table =
+      toc.length > 0
+        ? renderItems(toc)
+        : <div className="nodata">
+            <i>Kalliope indeholder endnu ingen tekster fra dette værk.</i>
+          </div>;
     const title = <PoetName poet={poet} includePeriod />;
     const ogTitle =
       poetNameString(poet, false, false) + ': ' + workTitleString(work);
@@ -134,7 +160,9 @@ export default class extends React.Component {
           <PoetTabs lang={lang} poet={poet} selected="works" />
           <SidebarSplit sidebar={sidebar}>
             <div>
-              <SubHeading><WorkName work={work} /></SubHeading>
+              <SubHeading>
+                <WorkName work={work} />
+              </SubHeading>
               {table}
               <style jsx>{`
                 :global(table.toc) {

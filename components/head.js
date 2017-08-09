@@ -13,7 +13,7 @@ export default class Head extends React.Component {
   props: {
     headTitle?: string,
     ogTitle?: string,
-    description?: string,
+    description?: ?string,
     url?: string,
     ogImage?: ?string,
   };
@@ -27,7 +27,9 @@ export default class Head extends React.Component {
     return (
       <NextHead>
         <meta charset="UTF-8" />
-        <title>{headTitle || ogTitle || ''}</title>
+        <title>
+          {headTitle || ogTitle || ''}
+        </title>
         <meta name="description" content={description || defaultDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" sizes="192x192" href="/static/touch-icon.png" />

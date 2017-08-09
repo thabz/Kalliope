@@ -56,7 +56,7 @@ class DateAndPlace extends React.Component {
 class PersonMetaLine extends React.Component {
   props: {
     label: string,
-    value: string | React$Element,
+    value: string | ?React$Element<*>,
   };
   render() {
     const { label, value } = this.props;
@@ -95,7 +95,8 @@ class PersonMeta extends React.Component {
       return null;
     }
     const name = <PoetName poet={poet} />;
-    let born, dead;
+    let born: ?React$Element<*> = null,
+      dead: ?React$Element<*> = null;
     if (poet.period != null) {
       born = (
         <DateAndPlace datePlace={poet.period.born} nullText="Ukendt fødeår" />
@@ -260,8 +261,8 @@ export default class extends React.Component {
     const headTitle =
       'Biografi  - ' + poetNameString(poet, false, false) + ' - Kalliope';
 
-    const ogDescription: string = OpenGraph.trimmedDescription(content_html);
-    const ogImage: string = OpenGraph.poetImage(poet);
+    const ogDescription = OpenGraph.trimmedDescription(content_html);
+    const ogImage = OpenGraph.poetImage(poet);
     const ogTitle = poetNameString(poet, false, false) + ' biografi';
 
     return (

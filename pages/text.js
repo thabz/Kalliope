@@ -148,7 +148,7 @@ export default class extends React.Component {
 
     const renderedRefs =
       refs.length == 0 ? null : [<p>Henvisninger hertil:</p>, ...refs];
-    let sidebar: any = null;
+    let sidebar = null;
     if (
       refs.length > 0 ||
       text.has_footnotes ||

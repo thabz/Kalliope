@@ -3,14 +3,16 @@
 import type { Poet, TextContentType } from './types.js';
 
 export const trimmedDescription = (
-  content_html: TextContentType,
-  is_poetry = false
-): string => {
+  content_html: ?TextContentType,
+  is_poetry: boolean = false
+): ?string => {
   if (content_html == null) {
     return null;
   }
-  content_html = content_html.map(x => x[0]).join(' ');
+
   let result = content_html
+    .map(x => x[0])
+    .join(' ')
     .replace(/<num>[^<]*<\/num>/g, '')
     .replace(/^<br\/>/, '')
     .replace(/^\s*/, '')

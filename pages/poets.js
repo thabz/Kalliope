@@ -78,14 +78,21 @@ const groupsByYear = (poets: Array<Poet>) => {
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
-function joinWithCommaAndOr(items, andOrWord) {
+function joinWithCommaAndOr(
+  items: Array<string | React$Element<*>>,
+  andOrWord
+) {
   const result = [];
   items.forEach((item, i) => {
     result.push(item);
     if (i == items.length - 2) {
       result.push(' ' + andOrWord + ' ');
     } else if (i < items.length - 2) {
-      result.push(<span key={i} style={{ marginLeft: '-0.25em' }}>, </span>);
+      result.push(
+        <span key={i} style={{ marginLeft: '-0.25em' }}>
+          ,{' '}
+        </span>
+      );
     }
   });
   return result;
@@ -165,9 +172,8 @@ export default class extends React.Component {
       },
     ];
     const selectedTabIndex = groupBy === 'name' ? 0 : 1;
-    const groups = groupBy === 'name'
-      ? groupsByLetter(poets)
-      : groupsByYear(poets);
+    const groups =
+      groupBy === 'name' ? groupsByLetter(poets) : groupsByYear(poets);
 
     let sections: Array<SectionForRendering> = [];
 
