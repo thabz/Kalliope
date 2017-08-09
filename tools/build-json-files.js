@@ -429,6 +429,8 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
   const body = text.get('body');
   const title = head.get('title') ? head.get('title').text() : null;
   const keywords = head.get('keywords');
+  const isBible = poetId === 'bibel';
+
   let subtitles = null;
   const subtitle = head.get('subtitle');
   if (subtitle && subtitle.find('line').length > 0) {
@@ -471,7 +473,7 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
   const prev_next = resolve_prev_next(textId);
 
   const rawBody = body.toString().replace('<body>', '').replace('</body>', '');
-  const content_html = htmlToXml(rawBody, collected, isPoetry);
+  const content_html = htmlToXml(rawBody, collected, isPoetry, isBible);
   const has_footnotes =
     rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
   mkdirp.sync(foldername);

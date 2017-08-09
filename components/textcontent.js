@@ -312,15 +312,24 @@ export default class TextContent extends React.Component {
       if (lineOptions.right) {
         className += ' right';
       }
+
       const lineNum = lineOptions.num || null;
-      if (options && options.isPoetry) {
+      if (options != null && options.isPoetry) {
         className += ' poem-line';
         return (
           <div className={className} data-num={lineNum}>
             {rendered}
           </div>
         );
+      } else if (options != null && options.isBible) {
+        className += ' bible-line';
+        return (
+          <div className={className} data-num={lineNum}>
+            {rendered}
+          </div>
+        );
       } else {
+        // Prose
         return (
           <div className={className}>
             {rendered}
@@ -328,14 +337,15 @@ export default class TextContent extends React.Component {
         );
       }
     });
-    if (options != null && options.isBibleVerses) {
+    if (options != null && options.isBible) {
       //console.log(rendered);
     }
     return (
       <div>
         {lines}
         <style jsx>{`
-          :global(.poem-line::before) {
+          :global(.poem-line::before),
+          :global(.bible-line::before) {
             content: attr(data-num);
             color: #888;
             margin-right: 1em;
@@ -343,6 +353,11 @@ export default class TextContent extends React.Component {
             font-size: 0.8em;
             text-align: right;
             display: inline-block;
+            margin-left: -2.5em;
+          }
+          :global(.bible-line),
+          :global(.poem-line) {
+            margin-left: 1.5em;
           }
           :global(.right) {
             text-align: right;

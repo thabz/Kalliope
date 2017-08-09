@@ -71,7 +71,7 @@ const replaceDashes = html => {
     .replace(/ -([\!;\?\.»«,:\n])/g, / —$1/);
 };
 
-const htmlToXml = (html, collected, isPoetry = false) => {
+const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
   const regexp = /<xref\s+(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
   if (isPoetry) {
     // Marker strofe numre
@@ -156,6 +156,30 @@ const htmlToXml = (html, collected, isPoetry = false) => {
     });
   }
 
+  if (isBible) {
+    // Saml linjer som hører til samme vers.
+    const collectedLines = [];
+    let curLine = '';
+    decoded.split(/\n/).forEach(line => {
+      if (line.match(/^\s*$/)) {
+        if (curLine !== '') {
+          collectedLines.push(curLine);
+          curLine = '';
+        }
+        collectedLines.push(line);
+      } else if (line.match(/^\s*\d+\.\s*/)) {
+        if (curLine !== '') {
+          collectedLines.push(curLine);
+        }
+        curLine = line;
+      } else {
+        curLine += line.replace(/\s+/, ' ');
+      }
+    });
+    collectedLines.push(curLine);
+    decoded = collectedLines.join('\n');
+  }
+
   let lineNum = 1;
   lines = decoded.split('\n').map(l => {
     let options = {};
@@ -169,12 +193,20 @@ const htmlToXml = (html, collected, isPoetry = false) => {
       l.match(/^\s*$/) ||
       l.match(/^\s*<hr[^>]*>\s*$/);
     if (!hasNonum) {
-      if (isPoetry && lineNum % 5 == 0) {
+      if (isPoetry && !isBible && lineNum % 5 == 0) {
         options.num = lineNum;
       }
       lineNum += 1;
     } else {
       l = l.replace('<nonum>', '').replace('</nonum>', '');
+    }
+    if (isBible) {
+      const match = l.match(/^\s*(\d+)\.\s*/);
+      if (match) {
+        options.num = match[1];
+        options.bible = true;
+        l = l.replace(/^\s*\d+\.\s*/, '');
+      }
     }
     if (l.indexOf('<center>') > -1) {
       l = l.replace('<center>', '').replace('</center>', '');

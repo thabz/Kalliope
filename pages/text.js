@@ -71,7 +71,7 @@ class TextHeading extends React.Component {
             margin-bottom: 30px;
           }
           .text-heading.poem {
-            margin-left: 2em;
+            margin-left: 1.5em;
           }
         `}</style>
       </div>
@@ -165,8 +165,8 @@ export default class extends React.Component {
       );
     }
     const options = {
-      isBibleVerses: poet.id === 'bibel',
-      isPoetry: !text.is_prose,
+      isBible: poet.id === 'bibel',
+      isPoetry: poet.id !== 'bibel' && !text.is_prose,
     };
     const body = (
       <TextContent

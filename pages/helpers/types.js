@@ -16,7 +16,7 @@ type TextContentLine = Array<string>; // TODO: Make this more precise
 export type TextContentType = Array<TextContentLine>;
 
 export type TextContentOptions = {
-  isBibleVerses?: boolean,
+  isBible?: boolean,
   highlightBibleVerses?: Array<number>,
   isPoetry?: boolean,
 };
