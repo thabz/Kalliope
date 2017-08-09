@@ -74,6 +74,7 @@ const replaceDashes = html => {
 const htmlToXml = (html, collected, isPoetry = false) => {
   const regexp = /<xref\s+(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
   if (isPoetry) {
+    // Marker strofe numre
     html = html
       .replace(/^(\d+\.?)\s*\n/gm, '<num>$1</num>\n')
       .replace(/^(\d+\.?)/gm, '<num>$1</num>')
