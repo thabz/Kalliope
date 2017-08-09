@@ -78,11 +78,6 @@ class ElasticSearchClient {
       .then(res => {
         return res.text();
       })
-      .catch(error => {
-        console.log('Got error', error);
-        console.log(error);
-        return 'ERROR';
-      });
   }
 }
 
