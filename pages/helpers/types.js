@@ -107,6 +107,7 @@ export type Text = {
   refs: Array<TextContentType>,
   pictures: Array<PictureItem>,
   content_html: TextContentType,
+  has_footnotes: boolean,
   is_prose: boolean,
 };
 
