@@ -193,7 +193,7 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
       l.match(/^\s*$/) ||
       l.match(/^\s*<hr[^>]*>\s*$/);
     if (!hasNonum) {
-      if (isPoetry && !isBible && lineNum % 5 == 0) {
+      if (isPoetry) {
         options.num = lineNum;
       }
       lineNum += 1;
