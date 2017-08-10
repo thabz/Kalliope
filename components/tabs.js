@@ -270,6 +270,7 @@ export default class Tabs extends React.Component {
           }
           :global(.search-field) {
             font-size: 32px;
+            line-height: 32px;
             width: 100%;
             border: 0;
             padding: 0;
@@ -323,6 +324,10 @@ export default class Tabs extends React.Component {
             :global(.loupe) {
               flex-basis: 12px;
             }
+            :global(.search-field) {
+              font-size: 12px;
+              line-height: 12px;
+            }
           }
           @media (max-width: 800px) {
             :global(.tabs) > :global(.tab) :global(h2) {
@@ -334,6 +339,10 @@ export default class Tabs extends React.Component {
             }
             :global(.tabs) > :global(.tab) {
               margin-right: 20px;
+            }
+            :global(.search-field) {
+              font-size: 28px;
+              line-height: 28px;
             }
           }
           @media (max-width: 700px) {
@@ -347,6 +356,10 @@ export default class Tabs extends React.Component {
             :global(.tabs) > :global(.tab) {
               margin-right: 15px;
             }
+            :global(.search-field) {
+              font-size: 24px;
+              line-height: 24px;
+            }
           }
           @media (max-width: 600px) {
             :global(.tabs) > :global(.tab) :global(h2) {
@@ -358,6 +371,10 @@ export default class Tabs extends React.Component {
             }
             :global(.tabs) > :global(.tab) {
               margin-right: 15px;
+            }
+            :global(.search-field) {
+              font-size: 18px;
+              line-height: 18px;
             }
           }
           @media print {
