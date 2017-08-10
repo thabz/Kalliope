@@ -24,7 +24,7 @@ class LoupeSVG extends React.Component {
       strokeWidth: '2px',
     };
     return (
-      <svg viewBox="0 0 48 48" width="100%" height="100%">
+      <svg viewBox="0 -5 48 53" width="100%" height="100%">
         <ellipse style={style} cx="19.55" cy="19.5" rx="18.55" ry="18.5" />
         <line style={style} x1="47" x2="32.96" y1="47" y2="33" />
       </svg>
@@ -47,8 +47,22 @@ class CrossSVG extends React.Component {
     };
     return (
       <svg viewBox="0 0 48 48" width="100%" height="100%">
-        <line style={style} x1="47" y1="47" x2="4" y2="4" />
-        <line style={style} x1="47" y1="4" x2="4" y2="47" />
+        <line
+          style={style}
+          x1="47"
+          y1="47"
+          x2="4"
+          y2="4"
+          vector-effect="non-scaling-stroke"
+        />
+        <line
+          style={style}
+          x1="47"
+          y1="4"
+          x2="4"
+          y2="47"
+          vector-effect="non-scaling-stroke"
+        />
       </svg>
     );
   }
@@ -235,7 +249,7 @@ export default class Tabs extends React.Component {
     return (
       <div className="tabs-container">
         {leftSide}
-        <div className="loupe">
+        <div className="loupe" style={{ alignSelf: 'flex-start' }}>
           <span onClick={this.onLoupeClick} style={{ cursor: 'pointer' }}>
             <LoupeSVG color={loupeColor} />
           </span>
@@ -246,12 +260,13 @@ export default class Tabs extends React.Component {
             justify-content: space-between;
             border-bottom: 1px solid black;
             margin-bottom: 40px;
+            margin-top: 30px;
             flex-grow: 1;
           }
-          .loupe {
-            flex-basis: 28px;
+          :global(.loupe) {
+            flex-basis: 32px;
             flex-shrink: 1;
-            padding-top: 14px;
+            align-self: flex-start;
           }
           :global(.leftside) {
             width: 100%;
@@ -259,7 +274,6 @@ export default class Tabs extends React.Component {
           }
           :global(.search-field) {
             font-size: 32px;
-            height: 40px;
             width: 100%;
             border: 0;
             padding: 0;
@@ -267,12 +281,10 @@ export default class Tabs extends React.Component {
             outline: 0;
             font-weight: lighter;
             font-family: inherit;
-            margin-bottom: 18px;
-            padding-bottom: 0px;
-            margin-top: 6px;
           }
           :global(.searchfield-container) {
             width: 100%;
+            padding-bottom: 11px;
           }
           .tabs {
             background-color: yellow;
@@ -281,10 +293,11 @@ export default class Tabs extends React.Component {
             display: inline-block;
             margin-right: 40px;
             border-bottom: 2px solid transparent;
+            padding-bottom: 20px;
           }
           :global(.tabs) > :global(.tab) :global(h2) {
-            margin-top: 10px;
-            margin-bottom: 20px;
+            margin: 0;
+            padding: 0;
             line-height: 32px;
             font-size: 32px;
             font-weight: lighter;
@@ -299,10 +312,11 @@ export default class Tabs extends React.Component {
               margin-right: 10px;
             }
             :global(.tabs) > :global(.tab) :global(h2) {
-              margin-top: 5px;
-              margin-bottom: 10px;
               line-height: 12px;
               font-size: 12px !important;
+            }
+            :global(.loupe) {
+              flex-basis: 12px;
             }
           }
           :global(.tabs) > :global(.tab.selected) {
@@ -318,6 +332,9 @@ export default class Tabs extends React.Component {
             :global(.tabs) > :global(.tab) :global(h2) {
               font-size: 28px;
             }
+            :global(.loupe) {
+              flex-basis: 28px;
+            }
             :global(.tabs) > :global(.tab) {
               margin-right: 20px;
             }
@@ -326,6 +343,9 @@ export default class Tabs extends React.Component {
             :global(.tabs) > :global(.tab) :global(h2) {
               font-size: 24px;
             }
+            :global(.loupe) {
+              flex-basis: 24px;
+            }
             :global(.tabs) > :global(.tab) {
               margin-right: 15px;
             }
@@ -333,6 +353,9 @@ export default class Tabs extends React.Component {
           @media (max-width: 600px) {
             :global(.tabs) > :global(.tab) :global(h2) {
               font-size: 18px;
+            }
+            :global(.loupe) {
+              flex-basis: 18px;
             }
             :global(.tabs) > :global(.tab) {
               margin-right: 15px;
