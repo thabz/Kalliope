@@ -8,4 +8,7 @@ node_modules/
 [libs]
 types/
 
+[lints]
+all=warn
 [options]
+include_warnings=true
