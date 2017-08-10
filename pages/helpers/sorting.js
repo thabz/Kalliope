@@ -10,11 +10,15 @@ import type {
 
 const daDK = 'da-DK';
 
+const nvl = <T>(x: ?T, v: T): T => {
+  return x == null ? v : x;
+};
+
 export const poetsByLastname = (a: Poet, b: Poet): SortReturn => {
-  const a1 = a.name.lastname || 'X';
-  const a2 = a.name.firstname || 'X';
-  const b1 = b.name.lastname || 'X';
-  const b2 = b.name.firstname || 'X';
+  const a1 = nvl(a.name.lastname, 'X');
+  const a2 = nvl(a.name.firstname, 'X');
+  const b1 = nvl(b.name.lastname, 'X');
+  const b2 = nvl(b.name.firstname, 'X');
 
   if (a1 === b1) {
     if (a2 === b2) {

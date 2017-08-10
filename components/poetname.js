@@ -3,6 +3,10 @@
 import React from 'react';
 import type { Poet, Lang } from '../pages/helpers/types.js';
 
+const nvl = <T>(x: ?T, v: T): T => {
+  return x == null ? v : x;
+};
+
 const parts = (
   poet: Poet,
   lastNameFirst: boolean = false,
@@ -14,8 +18,8 @@ const parts = (
   let namePart = null;
   let periodPart = null;
 
-  if (lastname) {
-    if (firstname) {
+  if (lastname != null) {
+    if (firstname != null) {
       if (lastNameFirst) {
         namePart = `${lastname}, ${firstname}`;
       } else {
@@ -65,16 +69,18 @@ export default class PoetName extends React.Component {
     const { poet, lastNameFirst, includePeriod } = this.props;
     let pp = null;
     const p = parts(poet, lastNameFirst, includePeriod);
-    const p0 = p[0]
-      ? <span key={0} className="name">
-          {p[0]}
-        </span>
-      : null;
-    const p1 = p[1]
-      ? <span key={1} className="period">
-          {' '}{p[1]}
-        </span>
-      : null;
+    const p0 =
+      p[0] != null
+        ? <span key={0} className="name">
+            {p[0]}
+          </span>
+        : null;
+    const p1 =
+      p[1] != null
+        ? <span key={1} className="period">
+            {' '}{p[1]}
+          </span>
+        : null;
     if (p0 && p1) {
       pp = [p0, p1];
     } else if (p0) {
@@ -99,9 +105,9 @@ export function poetNameString(
   includePeriod: boolean = false
 ): string {
   const p = parts(poet, lastNameFirst, includePeriod);
-  if (p[0] && p[1]) {
+  if (p[0] != null && p[1] != null) {
     return p[0] + ' ' + p[1];
-  } else if (p[0]) {
+  } else if (p[0] != null) {
     return p[0];
   } else {
     return '';
@@ -121,7 +127,7 @@ export const navnMedEjefald = (navn: ?string): ?string => {
 
 export function poetGenetiveLastName(poet: Poet, lang: Lang): string {
   const { firstname, lastname } = poet.name;
-  let name: string = lastname || firstname || 'Ukendt';
+  let name = nvl(lastname, nvl(firstname, 'Ukendt'));
   if (lang === 'da') {
     if (name.match(/[szx]$/)) {
       return `${name}’`;

@@ -50,6 +50,7 @@ export type Work = {
   id: WorkId,
   title: string,
   year?: string,
+  has_content: boolean,
 };
 
 export type SortReturn = number; //1 | 0 | -1;
@@ -117,6 +118,7 @@ export type Keyword = {
   author?: string,
   pictures: Array<PictureItem>,
   content_html: TextContentType,
+  has_footnotes: boolean,
 };
 
 export type DictItem = {
@@ -125,6 +127,7 @@ export type DictItem = {
   variants?: Array<string>,
   phrase?: string,
   content_html: TextContentType,
+  has_footnotes: boolean,
 };
 
 export type NewsItem = {

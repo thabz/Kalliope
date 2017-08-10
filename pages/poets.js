@@ -31,10 +31,14 @@ const groupsByLetter = poets => {
   let groups = new Map();
   poets.filter(p => p.type !== 'person').forEach(p => {
     let key = 'Ukendt digter';
-    if (p.name.lastname) {
+    if (p.name.lastname != null) {
       key = p.name.lastname[0];
     }
-    if (key === 'A' && p.name.lastname && p.name.lastname.indexOf('Aa') === 0) {
+    if (
+      key === 'A' &&
+      p.name.lastname != null &&
+      p.name.lastname.indexOf('Aa') === 0
+    ) {
       key = 'Å';
     }
     let group = groups.get(key) || [];
