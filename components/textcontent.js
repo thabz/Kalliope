@@ -274,7 +274,8 @@ export default class TextContent extends React.Component {
     return collected;
   }
   render() {
-    const { contentHtml, options } = this.props;
+    const { contentHtml } = this.props;
+    const options = this.props.options || {};
 
     if (contentHtml == null) {
       return null;
@@ -288,10 +289,29 @@ export default class TextContent extends React.Component {
         </div>
       );
     }
+
+    let isHighlighting = false;
     const lines = contentHtml.map((l, i) => {
       const lineOptions = l.length > 1 ? l[1] : {};
-      let rendered = null;
+      const lineNum: ?number =
+        lineOptions.num != null ? parseInt(lineOptions.num) : null;
       let className = '';
+
+      let rendered = null;
+      if (options.isBible && options.highlightBibleVerses != null) {
+        if (lineNum != null && lineNum === options.highlightBibleVerses.from) {
+          isHighlighting = true;
+          className += ' highlighted-bible-line first-highlighted-bible-line';
+        }
+        if (lineNum != null && lineNum === options.highlightBibleVerses.to) {
+          isHighlighting = false;
+          className += ' highlighted-bible-line last-highlighted-bible-line';
+        }
+        if (isHighlighting) {
+          className += ' highlighted-bible-line';
+        }
+      }
+
       if (lineOptions.html) {
         const frag = new DOMParser().parseFromString(
           '<content>' + l[0] + '</content>'
@@ -313,25 +333,15 @@ export default class TextContent extends React.Component {
         className += ' right';
       }
 
-      const lineNum: ?number = lineOptions.num;
-      if (options != null && options.isPoetry) {
+      if (options.isPoetry) {
         className += ' poem-line';
         return (
           <div className={className} data-num={lineNum} key={i}>
             {rendered}
           </div>
         );
-      } else if (options != null && options.isBible) {
+      } else if (options.isBible) {
         className += ' bible-line';
-        if (options.highlightBibleVerses != null) {
-          if (
-            lineNum != null &&
-            lineNum >= options.highlightBibleVerses.from &&
-            lineNum <= options.highlightBibleVerses.to
-          ) {
-            className += ' highlighted-bible-line';
-          }
-        }
         return (
           <div className={className} data-num={lineNum} key={i}>
             {rendered}
@@ -346,9 +356,7 @@ export default class TextContent extends React.Component {
         );
       }
     });
-    if (options != null && options.isBible) {
-      //console.log(rendered);
-    }
+
     return (
       <div>
         {lines}
@@ -369,8 +377,31 @@ export default class TextContent extends React.Component {
             margin-left: 1.5em;
           }
           :global(.highlighted-bible-line) {
-            background-color: lightyellow;
+            background-color: rgb(253, 246, 227);
+            margin-left: 1em;
+            padding-left: 0.5em;
+            margin-right: -0.5em;
+            padding-right: 0.5em;
+            margin-top: -0.08em;
+            padding-top: 0.08em;
+            margin-bottom: -0.08em;
+            padding-bottom: 0.08em;
+            border-left: 1px solid rgb(238, 232, 213);
+            border-right: 1px solid rgb(238, 232, 213);
           }
+
+          :global(.first-highlighted-bible-line) {
+            border-top: 1px solid rgb(238, 232, 213);
+            border-top-left-radius: 0.25em;
+            border-top-right-radius: 0.25em;
+          }
+
+          :global(.last-highlighted-bible-line) {
+            border-bottom: 1px solid rgb(238, 232, 213);
+            border-bottom-left-radius: 0.25em;
+            border-bottom-right-radius: 0.25em;
+          }
+
           :global(.right) {
             text-align: right;
           }
