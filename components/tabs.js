@@ -111,6 +111,9 @@ export default class Tabs extends React.Component {
     } else {
       URL = Links.searchURL(lang, q, country);
     }
+    if (document) {
+      this.searchField.blur();
+    }
     Router.pushRoute(URL);
     e.preventDefault();
   }
