@@ -266,6 +266,8 @@ export default class Tabs extends React.Component {
             margin: 0;
             outline: 0;
             font-weight: lighter;
+            font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
+              Helvetica, sans-serif;
             margin-bottom: 18px;
             padding-bottom: 0px;
             margin-top: 6px;
