@@ -27,31 +27,21 @@ import type {
 import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
 
-class DateAndPlace extends React.Component {
-  props: {
-    datePlace?: DateWithPlace,
-  };
-  render() {
-    const { datePlace } = this.props;
-    if (datePlace == null) {
-      return <div>Ukendt år</div>;
-    }
-    let result = '';
-    if (datePlace.date === '?') {
-      result += 'Ukendt år';
-    } else {
-      result += datePlace.date;
-    }
-    if (datePlace.place != null) {
-      result += `, ${datePlace.place}`;
-    }
-    return (
-      <div>
-        {result}
-      </div>
-    );
+const dateAndPlace = (datePlace: ?DateWithPlace): string => {
+  if (datePlace == null) {
+    return 'Ukendt år';
   }
-}
+  let result = '';
+  if (datePlace.date === '?') {
+    result += 'Ukendt år';
+  } else {
+    result += datePlace.date;
+  }
+  if (datePlace.place != null) {
+    result += `, ${datePlace.place}`;
+  }
+  return result;
+};
 
 class PersonMetaLine extends React.Component {
   props: {
@@ -95,24 +85,16 @@ class PersonMeta extends React.Component {
       return null;
     }
     const name = <PoetName poet={poet} />;
-    let born: ?React$Element<*> = null;
-    let dead: ?React$Element<*> = null;
-    if (poet.period != null) {
-      born = (
-        <DateAndPlace datePlace={poet.period.born} nullText="Ukendt fødeår" />
-      );
-      dead = (
-        <DateAndPlace datePlace={poet.period.dead} nullText="Ukendt dødsår" />
-      );
-    }
+    let born = poet.period == null ? null : dateAndPlace(poet.period.born);
+    let dead = poet.period == null ? null : dateAndPlace(poet.period.dead);
+
+    const christened =
+      poet.name.christened == null ? poet.name.realname : poet.name.christened;
     return (
       <div>
         <PersonMetaLine value={name} label="Navn" />
         <PersonMetaLine value={poet.name.fullname} label="Fulde navn" />
-        <PersonMetaLine
-          value={poet.name.christened || poet.name.realname}
-          label="Døbt"
-        />
+        <PersonMetaLine value={christened} label="Døbt" />
         <PersonMetaLine value={poet.name.pseudonym} label="Pseudonym" />
         <PersonMetaLine value={born} label="Født" />
         <PersonMetaLine value={dead} label="Død" />
