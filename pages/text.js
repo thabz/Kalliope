@@ -91,7 +91,7 @@ class TextHeading extends React.Component {
 export default class extends React.Component {
   props: {
     lang: Lang,
-    highlightBibleVerses: string,
+    highlightVerses: string,
     poet: Poet,
     work: Work,
     text: Text,
@@ -108,7 +108,7 @@ export default class extends React.Component {
     const json = await Client.text(textId);
     return {
       lang,
-      highlightBibleVerses: verses,
+      highlightVerses: verses,
       poet: json.poet,
       work: json.work,
       prev: json.prev,
@@ -121,7 +121,7 @@ export default class extends React.Component {
   render() {
     const {
       lang,
-      highlightBibleVerses,
+      highlightVerses,
       poet,
       work,
       prev,
@@ -190,24 +190,24 @@ export default class extends React.Component {
         </div>
       );
     }
-    let highlightBibleVersesInterval: { from: number, to: number };
-    if (highlightBibleVerses) {
+    let highlightVersesInterval: { from: number, to: number };
+    if (highlightVerses) {
       let m = null;
       let from: number = -1,
         to: number = -1;
-      if ((m = highlightBibleVerses.match(/(\d+)-(\d+)/))) {
+      if ((m = highlightVerses.match(/(\d+)-(\d+)/))) {
         from = parseInt(m[1]);
         to = parseInt(m[2]);
-      } else if ((m = highlightBibleVerses.match(/(\d+)/))) {
+      } else if ((m = highlightVerses.match(/(\d+)/))) {
         from = parseInt(m[1]);
         to = parseInt(m[1]);
       }
-      highlightBibleVersesInterval = { from, to };
+      highlightVersesInterval = { from, to };
     }
     const options = {
       isBible: poet.id === 'bibel',
       isPoetry: poet.id !== 'bibel' && !text.is_prose,
-      highlightBibleVerses: highlightBibleVersesInterval,
+      highlightVerses: highlightVersesInterval,
     };
     const body = (
       <TextContent

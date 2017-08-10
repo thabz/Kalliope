@@ -298,17 +298,17 @@ export default class TextContent extends React.Component {
       let className = '';
 
       let rendered = null;
-      if (options.isBible && options.highlightBibleVerses != null) {
-        if (lineNum != null && lineNum === options.highlightBibleVerses.from) {
+      if (options.highlightVerses != null) {
+        if (lineNum != null && lineNum === options.highlightVerses.from) {
           isHighlighting = true;
-          className += ' highlighted-bible-line first-highlighted-bible-line';
+          className += ' highlighted-line first-highlighted-line';
         }
-        if (lineNum != null && lineNum === options.highlightBibleVerses.to) {
+        if (lineNum != null && lineNum === options.highlightVerses.to) {
           isHighlighting = false;
-          className += ' highlighted-bible-line last-highlighted-bible-line';
+          className += ' highlighted-line last-highlighted-line';
         }
         if (isHighlighting) {
-          className += ' highlighted-bible-line';
+          className += ' highlighted-line';
         }
       }
 
@@ -376,7 +376,7 @@ export default class TextContent extends React.Component {
           :global(.poem-line) {
             margin-left: 1.5em;
           }
-          :global(.highlighted-bible-line) {
+          :global(.highlighted-line) {
             background-color: rgb(253, 246, 227);
             margin-left: 1em;
             padding-left: 0.5em;
@@ -390,13 +390,13 @@ export default class TextContent extends React.Component {
             border-right: 1px solid rgb(238, 232, 213);
           }
 
-          :global(.first-highlighted-bible-line) {
+          :global(.first-highlighted-line) {
             border-top: 1px solid rgb(238, 232, 213);
             border-top-left-radius: 0.25em;
             border-top-right-radius: 0.25em;
           }
 
-          :global(.last-highlighted-bible-line) {
+          :global(.last-highlighted-line) {
             border-bottom: 1px solid rgb(238, 232, 213);
             border-bottom-left-radius: 0.25em;
             border-bottom-right-radius: 0.25em;
