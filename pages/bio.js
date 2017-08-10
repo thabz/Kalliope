@@ -95,8 +95,8 @@ class PersonMeta extends React.Component {
       return null;
     }
     const name = <PoetName poet={poet} />;
-    let born: ?React$Element<*> = null,
-      dead: ?React$Element<*> = null;
+    let born: ?React$Element<*> = null;
+    let dead: ?React$Element<*> = null;
     if (poet.period != null) {
       born = (
         <DateAndPlace datePlace={poet.period.born} nullText="Ukendt fødeår" />

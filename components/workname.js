@@ -10,10 +10,18 @@ export default class WorkName extends React.Component {
   render() {
     const { work, cursive } = this.props;
     const { title, year } = work;
-    let titlePart = <span>{title}</span>;
+    let titlePart = (
+      <span>
+        {title}
+      </span>
+    );
     let yearPart = null;
-    if (year && year !== '?') {
-      yearPart = <span>({year})</span>;
+    if (year != null && year !== '?') {
+      yearPart = (
+        <span>
+          ({year})
+        </span>
+      );
     }
 
     const parts = [titlePart, yearPart].map((p, i) => {
@@ -21,7 +29,11 @@ export default class WorkName extends React.Component {
       if (cursive === true && i === 0) {
         className += ' cursive';
       }
-      return p ? <span key={i} className={className}>{p} </span> : null;
+      return p
+        ? <span key={i} className={className}>
+            {p}{' '}
+          </span>
+        : null;
     });
     return (
       <span className="workname">
@@ -42,7 +54,7 @@ export default class WorkName extends React.Component {
 export function workTitleString(work: Work): string {
   const { title, year } = work;
   let yearPart = '';
-  if (year && year !== '?') {
+  if (year != null && year !== '?') {
     yearPart = ` (${year})`;
   }
   return title + yearPart;

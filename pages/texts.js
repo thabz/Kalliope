@@ -93,15 +93,22 @@ export default class extends React.Component {
           lines[
             type === 'titles' ? 'non_unique_indextitle' : 'non_unique_firstline'
           ];
-        if (isNonUnique && alternative != null) {
+        if (isNonUnique != null && alternative != null) {
           renderedAlternative = (
-            <span style={{ opacity: 0.5 }}>{' '}[{alternative}]</span>
+            <span style={{ opacity: 0.5 }}>
+              {' '}[{alternative}]
+            </span>
           );
         }
         return {
           id: lines.id,
           url: url,
-          html: <span>{line}{renderedAlternative}</span>,
+          html: (
+            <span>
+              {line}
+              {renderedAlternative}
+            </span>
+          ),
         };
       });
       sections.push({ title: group.title, items });
