@@ -6,10 +6,6 @@ import { poetGenetiveLastName } from './poetname.js';
 import type { Lang, Poet, Country } from '../pages/helpers/types.js';
 import CommonData from '../pages/helpers/commondata.js';
 
-// TODO: Don't export Tabs and make KalliopeTabs and PoetTabs send extra
-// TODO: props into Tabs to configure it's placeholder text, etc.
-// TODO: Wrap Tabs in a TabWithSearch component to keep Tabs simple.
-
 class LoupeSVG extends React.Component {
   props: {
     color: string,
@@ -302,7 +298,6 @@ export default class Tabs extends React.Component {
             font-size: 32px;
             font-weight: lighter;
           }
-
           :global(.tabs) > :global(.tab.selected) {
             border-bottom: 2px solid black;
           }
@@ -312,7 +307,6 @@ export default class Tabs extends React.Component {
           :global(.tabs) > :global(.tab) :global(a) {
             color: #707070;
           }
-
           @media (max-width: 321px) {
             .tabs > :global(.tab) {
               margin-right: 4px !important;
