@@ -52,7 +52,7 @@ export const bibleURL = (lang: string = 'da', bibleId: string) => {
     bibleId = bibleId.replace(',' + verses[1], '');
   }
   if (verses) {
-    return `/${lang}/text/${bibleId}?verses=${verses[1]}`;
+    return `/${lang}/text/${bibleId}?highlight=${verses[1]}#h`;
   } else {
     return `/${lang}/text/${bibleId}`;
   }

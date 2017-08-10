@@ -296,19 +296,23 @@ export default class TextContent extends React.Component {
       const lineNum: ?number =
         lineOptions.num != null ? parseInt(lineOptions.num) : null;
       let className = '';
+      let anchor = null;
 
       let rendered = null;
-      if (options.highlightVerses != null) {
-        if (lineNum != null && lineNum === options.highlightVerses.from) {
+      if (options.highlight != null) {
+        if (lineNum != null && lineNum === options.highlight.from) {
           isHighlighting = true;
           className += ' highlighted-line first-highlighted-line';
         }
-        if (lineNum != null && lineNum === options.highlightVerses.to) {
+        if (lineNum != null && lineNum === options.highlight.to) {
           isHighlighting = false;
           className += ' highlighted-line last-highlighted-line';
         }
         if (isHighlighting) {
           className += ' highlighted-line';
+        }
+        if (lineNum === options.highlight.from - 1) {
+          anchor = <a id="h" name="h" />;
         }
       }
 
@@ -339,6 +343,7 @@ export default class TextContent extends React.Component {
           lineNum != null && lineNum % 5 === 0 ? lineNum : null;
         return (
           <div className={className} data-num={displayedLineNum} key={i}>
+            {anchor}
             {rendered}
           </div>
         );
@@ -346,6 +351,7 @@ export default class TextContent extends React.Component {
         className += ' bible-line';
         return (
           <div className={className} data-num={lineNum} key={i}>
+            {anchor}
             {rendered}
           </div>
         );

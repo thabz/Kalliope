@@ -91,7 +91,7 @@ class TextHeading extends React.Component {
 export default class extends React.Component {
   props: {
     lang: Lang,
-    highlightVerses: string,
+    highlight: string,
     poet: Poet,
     work: Work,
     text: Text,
@@ -101,14 +101,14 @@ export default class extends React.Component {
   };
 
   static async getInitialProps({
-    query: { lang, textId, verses },
+    query: { lang, textId, highlight },
   }: {
-    query: { lang: Lang, textId: string, verses: string },
+    query: { lang: Lang, textId: string, highlight: string },
   }) {
     const json = await Client.text(textId);
     return {
       lang,
-      highlightVerses: verses,
+      highlight,
       poet: json.poet,
       work: json.work,
       prev: json.prev,
@@ -118,17 +118,17 @@ export default class extends React.Component {
     };
   }
 
+  componentDidUpdate() {
+    if (typeof location !== undefined) {
+      const hash = location.hash;
+      if (hash != null) {
+        location.href = hash;
+      }
+    }
+  }
+
   render() {
-    const {
-      lang,
-      highlightVerses,
-      poet,
-      work,
-      prev,
-      next,
-      text,
-      error,
-    } = this.props;
+    const { lang, highlight, poet, work, prev, next, text, error } = this.props;
 
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt tekst" />;
@@ -190,24 +190,24 @@ export default class extends React.Component {
         </div>
       );
     }
-    let highlightVersesInterval: { from: number, to: number };
-    if (highlightVerses) {
+    let highlightInterval: { from: number, to: number };
+    if (highlight != null) {
       let m = null;
       let from: number = -1,
         to: number = -1;
-      if ((m = highlightVerses.match(/(\d+)-(\d+)/))) {
+      if ((m = highlight.match(/(\d+)-(\d+)/))) {
         from = parseInt(m[1]);
         to = parseInt(m[2]);
-      } else if ((m = highlightVerses.match(/(\d+)/))) {
+      } else if ((m = highlight.match(/(\d+)/))) {
         from = parseInt(m[1]);
         to = parseInt(m[1]);
       }
-      highlightVersesInterval = { from, to };
+      highlightInterval = { from, to };
     }
     const options = {
       isBible: poet.id === 'bibel',
       isPoetry: poet.id !== 'bibel' && !text.is_prose,
-      highlightVerses: highlightVersesInterval,
+      highlight: highlightInterval,
     };
     const body = (
       <TextContent
