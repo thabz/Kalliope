@@ -17,12 +17,27 @@ class LoupeSVG extends React.Component {
       stroke: color,
       strokeLinecap: 'round',
       strokeLinejoin: 'round',
-      strokeWidth: '2px',
+      strokeWidth: '1px',
     };
     return (
       <svg viewBox="0 -5 48 53" width="100%" height="100%">
-        <ellipse style={style} cx="19.55" cy="19.5" rx="18.55" ry="18.5" />
-        <line style={style} x1="47" x2="32.96" y1="47" y2="33" />
+        <ellipse
+          style={style}
+          cx="19.55"
+          cy="19.5"
+          rx="18.55"
+          ry="18.5"
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          style={style}
+          x1="47"
+          x2="32.96"
+          y1="47"
+          y2="33"
+          strokeWidth="0.5"
+          vectorEffect="non-scaling-stroke"
+        />
       </svg>
     );
   }
@@ -39,7 +54,7 @@ class CrossSVG extends React.Component {
       stroke: color,
       strokeLinecap: 'round',
       strokeLinejoin: 'round',
-      strokeWidth: '2px',
+      strokeWidth: '1px',
     };
     return (
       <svg viewBox="0 0 48 48" width="100%" height="100%">
@@ -49,7 +64,7 @@ class CrossSVG extends React.Component {
           y1="47"
           x2="4"
           y2="4"
-          vector-effect="non-scaling-stroke"
+          vectorEffect="non-scaling-stroke"
         />
         <line
           style={style}
@@ -57,7 +72,7 @@ class CrossSVG extends React.Component {
           y1="4"
           x2="4"
           y2="47"
-          vector-effect="non-scaling-stroke"
+          vectorEffect="non-scaling-stroke"
         />
       </svg>
     );
