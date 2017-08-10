@@ -302,6 +302,17 @@ export default class Tabs extends React.Component {
             font-size: 32px;
             font-weight: lighter;
           }
+
+          :global(.tabs) > :global(.tab.selected) {
+            border-bottom: 2px solid black;
+          }
+          :global(.tabs) :global(.tab.selected a) {
+            color: black;
+          }
+          :global(.tabs) > :global(.tab) :global(a) {
+            color: #707070;
+          }
+
           @media (max-width: 321px) {
             .tabs > :global(.tab) {
               margin-right: 4px !important;
@@ -312,25 +323,17 @@ export default class Tabs extends React.Component {
               margin-right: 10px;
             }
             :global(.tabs) > :global(.tab) :global(h2) {
-              line-height: 12px;
               font-size: 12px !important;
+              line-height: 12px;
             }
             :global(.loupe) {
               flex-basis: 12px;
             }
           }
-          :global(.tabs) > :global(.tab.selected) {
-            border-bottom: 2px solid black;
-          }
-          :global(.tabs) :global(.tab.selected a) {
-            color: black;
-          }
-          :global(.tabs) > :global(.tab) :global(a) {
-            color: #707070;
-          }
           @media (max-width: 800px) {
             :global(.tabs) > :global(.tab) :global(h2) {
               font-size: 28px;
+              line-height: 28px;
             }
             :global(.loupe) {
               flex-basis: 28px;
@@ -342,6 +345,7 @@ export default class Tabs extends React.Component {
           @media (max-width: 700px) {
             :global(.tabs) > :global(.tab) :global(h2) {
               font-size: 24px;
+              line-height: 24px;
             }
             :global(.loupe) {
               flex-basis: 24px;
@@ -353,6 +357,7 @@ export default class Tabs extends React.Component {
           @media (max-width: 600px) {
             :global(.tabs) > :global(.tab) :global(h2) {
               font-size: 18px;
+              line-height: 18px;
             }
             :global(.loupe) {
               flex-basis: 18px;
