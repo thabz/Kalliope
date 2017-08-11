@@ -59,21 +59,21 @@ class CrossSVG extends React.Component {
       strokeWidth: '1px',
     };
     return (
-      <svg viewBox="0 0 48 48" width="100%" height="100%">
+      <svg viewBox="0 -5 48 53" width="100%" height="100%">
         <line
           style={style}
-          x1="47"
-          y1="47"
+          x1="38"
+          y1="38"
           x2="4"
           y2="4"
           vectorEffect="non-scaling-stroke"
         />
         <line
           style={style}
-          x1="47"
+          x1="38"
           y1="4"
           x2="4"
-          y2="47"
+          y2="38"
           vectorEffect="non-scaling-stroke"
         />
       </svg>
@@ -209,14 +209,10 @@ export default class Tabs extends React.Component {
           </form>
         </div>
         <div
+          className="svg-container"
           onClick={this.onCrossClick}
           style={{
             cursor: 'pointer',
-            flexBasis: '28px',
-            flexShrink: 1,
-            marginTop: '12px',
-            marginRight: '20px',
-            marginLeft: '20px',
           }}>
           <CrossSVG color="black" />
         </div>
@@ -262,7 +258,7 @@ export default class Tabs extends React.Component {
     return (
       <div className="tabs-container">
         {leftSide}
-        <div className="loupe" style={{ alignSelf: 'flex-start' }}>
+        <div className="svg-container" style={{ alignSelf: 'flex-start' }}>
           <span onClick={this.onLoupeClick} style={{ cursor: 'pointer' }}>
             <LoupeSVG color={loupeColor} />
           </span>
@@ -276,10 +272,11 @@ export default class Tabs extends React.Component {
             margin-top: 30px;
             flex-grow: 1;
           }
-          :global(.loupe) {
+          :global(.svg-container)  {
             flex-basis: 32px;
             flex-shrink: 1;
             align-self: flex-start;
+            transition: flex-basis ${transitionDuration};
           }
           :global(.leftside) {
             width: 100%;
@@ -341,7 +338,7 @@ export default class Tabs extends React.Component {
               font-size: 12px !important;
               line-height: 12px;
             }
-            :global(.loupe) {
+            :global(.svg-container) {
               flex-basis: 12px;
             }
             :global(.search-field) {
@@ -354,7 +351,7 @@ export default class Tabs extends React.Component {
               font-size: 30px;
               line-height: 30px;
             }
-            :global(.loupe) {
+            :global(.svg-container) {
               flex-basis: 30px;
             }
             :global(.tabs) > :global(.tab) {
@@ -371,7 +368,7 @@ export default class Tabs extends React.Component {
               font-size: 28px;
               line-height: 28px;
             }
-            :global(.loupe) {
+            :global(.svg-container) {
               flex-basis: 28px;
             }
             :global(.tabs) > :global(.tab) {
@@ -387,7 +384,7 @@ export default class Tabs extends React.Component {
               font-size: 24px;
               line-height: 24px;
             }
-            :global(.loupe) {
+            :global(.svg-container) {
               flex-basis: 24px;
             }
             :global(.tabs) > :global(.tab) {
@@ -403,7 +400,7 @@ export default class Tabs extends React.Component {
               font-size: 18px;
               line-height: 18px;
             }
-            :global(.loupe) {
+            :global(.svg-container) {
               flex-basis: 18px;
             }
             :global(.tabs) > :global(.tab) {
