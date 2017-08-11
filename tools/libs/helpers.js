@@ -138,7 +138,7 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
         let chapter = id.match(/(\d*)$/);
         if (chapter != null) {
           id = id.replace(chapter[1], '');
-          chapter = chapter[1];
+          chapter = chapter[1].replace(/^0*/, '');
         } else {
           const error = `xref dead bible link: ${originalAttribute}`;
           throw error;
