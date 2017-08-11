@@ -261,8 +261,11 @@ export default class extends React.Component {
           <PoetTabs lang={lang} poet={poet} selected="bio" />
           <SidebarSplit sidebar={sidebarItems}>
             <div style={{ lineHeight: '1.6' }}>
-              <TextContent contentHtml={content_html} lang={lang} />
-              <div style={{ height: '30px' }} />
+              <TextContent
+                contentHtml={content_html}
+                lang={lang}
+                style={{ marginBottom: '30px' }}
+              />
               <Timeline timeline={timeline} />
             </div>
           </SidebarSplit>

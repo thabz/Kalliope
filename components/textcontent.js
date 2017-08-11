@@ -16,6 +16,7 @@ type TextContentPropsType = {
   contentHtml: TextContentType,
   lang: Lang,
   options?: TextContentOptions,
+  style?: ?Object,
 };
 export default class TextContent extends React.Component {
   props: TextContentPropsType;
@@ -274,7 +275,7 @@ export default class TextContent extends React.Component {
     return collected;
   }
   render() {
-    const { contentHtml } = this.props;
+    const { contentHtml, style } = this.props;
     const options = this.props.options || {};
 
     if (contentHtml == null) {
@@ -366,7 +367,7 @@ export default class TextContent extends React.Component {
     });
 
     return (
-      <div>
+      <div style={style}>
         {lines}
         <style jsx>{`
           :global(.poem-line::before),
