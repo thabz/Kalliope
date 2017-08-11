@@ -311,7 +311,7 @@ export default class TextContent extends React.Component {
         if (isHighlighting) {
           className += ' highlighted-line';
         }
-        if (lineNum === options.highlight.from - 1) {
+        if (lineNum === options.highlight.from - 4) {
           anchor = <a id="h" name="h" />;
         }
       }
@@ -400,14 +400,18 @@ export default class TextContent extends React.Component {
 
           :global(.first-highlighted-line) {
             border-top: 1px solid rgb(238, 232, 213);
+            /*
             border-top-left-radius: 0.25em;
             border-top-right-radius: 0.25em;
+            */
           }
 
           :global(.last-highlighted-line) {
             border-bottom: 1px solid rgb(238, 232, 213);
+            /*
             border-bottom-left-radius: 0.25em;
             border-bottom-right-radius: 0.25em;
+            */
           }
 
           :global(.right) {
