@@ -6,6 +6,8 @@ import { poetGenetiveLastName } from './poetname.js';
 import type { Lang, Poet, Country } from '../pages/helpers/types.js';
 import CommonData from '../pages/helpers/commondata.js';
 
+const transitionDuration = '0.2s';
+
 class LoupeSVG extends React.Component {
   props: {
     color: string,
@@ -293,6 +295,7 @@ export default class Tabs extends React.Component {
             outline: 0;
             font-weight: lighter;
             font-family: inherit;
+            transition: font-size ${transitionDuration}, line-height: ${transitionDuration};
           }
           :global(.searchfield-container) {
             width: 100%;
@@ -306,6 +309,7 @@ export default class Tabs extends React.Component {
             margin-right: 40px;
             border-bottom: 2px solid transparent;
             padding-bottom: 20px;
+            transition: margin-right ${transitionDuration};
           }
           :global(.tabs) > :global(.tab) :global(h2) {
             margin: 0;
@@ -313,6 +317,7 @@ export default class Tabs extends React.Component {
             line-height: 32px;
             font-size: 32px;
             font-weight: lighter;
+            transition: font-size ${transitionDuration}, line-height: ${transitionDuration};
           }
           :global(.tabs) > :global(.tab.selected) {
             border-bottom: 2px solid black;
@@ -344,6 +349,23 @@ export default class Tabs extends React.Component {
               line-height: 12px;
             }
           }
+          @media (max-width: 850px) {
+            :global(.tabs) > :global(.tab) :global(h2) {
+              font-size: 30px;
+              line-height: 30px;
+            }
+            :global(.loupe) {
+              flex-basis: 30px;
+            }
+            :global(.tabs) > :global(.tab) {
+              margin-right: 30px;
+            }
+            :global(.search-field) {
+              font-size: 30px;
+              line-height: 30px;
+            }
+          }
+
           @media (max-width: 800px) {
             :global(.tabs) > :global(.tab) :global(h2) {
               font-size: 28px;
