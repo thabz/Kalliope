@@ -24,12 +24,39 @@ export default class Heading extends React.Component {
             line-height: 48px;
             font-size: 48px;
             font-weight: lighter;
+            transition: font-size 0.2s;
+          }
+
+          @media (max-width: 850px) {
+            .heading :global(h1) {
+              line-height: 44px;
+              font-size: 44px;
+            }
+          }
+
+          @media (max-width: 800px) {
+            .heading :global(h1) {
+              line-height: 38px;
+              font-size: 38px;
+            }
+          }
+
+          @media (max-width: 700px) {
+            .heading :global(h1) {
+              line-height: 32px;
+              font-size: 32px;
+            }
+          }
+
+          @media (max-width: 600px) {
+            .heading :global(h1) {
+              line-height: 28px;
+              font-size: 28px;
+            }
           }
 
           @media (max-width: 480px) {
             .heading :global(h1) {
-              margin: 0;
-              width: 100%;
               padding-top: 10px;
               line-height: 24px;
               font-size: 24px;
