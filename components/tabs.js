@@ -289,14 +289,14 @@ export default class Tabs extends React.Component {
             border: 0;
             padding: 0;
             margin: 0;
-            outline: 0;
+            outline: 0;            
             font-weight: lighter;
             font-family: inherit;
             transition: font-size ${transitionDuration}, line-height: ${transitionDuration};
           }
           :global(.searchfield-container) {
             width: 100%;
-            padding-bottom: 11px;
+            padding-bottom: 16px;
           }
           .tabs {
             background-color: yellow;
