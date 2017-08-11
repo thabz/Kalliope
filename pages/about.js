@@ -66,7 +66,7 @@ export default class extends React.Component {
               </div>
               <style jsx>{`
                 .about-body {
-                  font-weight: lighter;
+                  line-height: 1.6;
                 }
               `}</style>
             </div>
