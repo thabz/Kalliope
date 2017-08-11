@@ -8,7 +8,7 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handler = routes.getRequestHandler(app);
 const elasticSearchClient = require('./tools/libs/elasticsearch-client.js');
-const rootStaticFiles = ['/sw.js', '/favicon.ico'];
+const rootStaticFiles = ['/sw.js', '/favicon.ico', '/robots.txt'];
 const redirects = [
   {
     from: /\/(..)\/ffront.cgi/,
