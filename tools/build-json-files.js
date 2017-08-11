@@ -446,11 +446,16 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
       );
     });
   } else if (subtitle) {
-    subtitles = [htmlToXml(
-      subtitle.toString().replace('<subtitle>', '').replace('</subtitle>', ''),
-      collected,
-      true
-    )];
+    subtitles = [
+      htmlToXml(
+        subtitle
+          .toString()
+          .replace('<subtitle>', '')
+          .replace('</subtitle>', ''),
+        collected,
+        true
+      ),
+    ];
   }
   let keywordsArray = null;
   if (keywords) {
@@ -947,6 +952,11 @@ const build_poet_works_json = collected => {
     let collectedHeaders = [];
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
+
+      // Copy the xml-file into static to allow for xml download.
+      fs
+        .createReadStream(filename)
+        .pipe(fs.createWriteStream(`static/api/${poetId}/${workId}.xml`));
       let doc = loadXMLDoc(filename);
       const work = doc.get('//kalliopework');
       const head = work.get('workhead');

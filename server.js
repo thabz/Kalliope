@@ -39,6 +39,10 @@ const redirects = [
     from: /\/(..)\/poets.cgi/,
     to: '/$1/poets/dk/name',
   },
+  {
+    from: /\/..\/work\/([^\/]+)\/(.*?)\.xml/,
+    to: '/static/api/$1/$2.xml',
+  },
 ];
 
 app.prepare().then(() => {
@@ -48,13 +52,18 @@ app.prepare().then(() => {
     if (rootStaticFiles.indexOf(pathname) > -1) {
       const path = join(__dirname, 'static', pathname);
       app.serveStatic(req, res, path);
-    } else if (pathname.indexOf('.cgi') > -1 || pathname.indexOf('.pl') > -1) {
+    } else if (
+      pathname.indexOf('.cgi') > -1 ||
+      pathname.indexOf('.pl') > -1 ||
+      (pathname.indexOf('.xml') > -1 && pathname.indexOf('/work/') > -1)
+    ) {
       let done = false;
       redirects.forEach(descr => {
         const m = descr.from.exec(pathname);
         if (!done && m != null) {
           const to = descr.to
             .replace('$1', m[1])
+            .replace('$2', m[2])
             .replace(/\${(.*)}/g, (m, p1) => {
               return query[p1];
             });
