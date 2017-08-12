@@ -224,7 +224,7 @@ export default class extends React.Component {
             display: flex;
             flex-direction: column;
           }
-          @media (max-width: 700px) {
+          @media (max-width: 800px) {
             .horizontal-on-small {
               flex-direction: row;
               justify-content: space-between;

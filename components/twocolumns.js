@@ -11,7 +11,7 @@ export default class TwoColumns extends React.Component {
           div.two-columns {
             width: 100%;
             columns: 2;
-            column-gap: 20px;
+            column-gap: 30px;
           }
 
           @media (max-width: 480px) {

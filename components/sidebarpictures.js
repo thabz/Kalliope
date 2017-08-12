@@ -34,7 +34,7 @@ export default class SidebarPictures extends React.Component {
               display: none;
             }
           }
-          @media (max-width: 700px) {
+          @media (max-width: 800px) {
             div.sidebar-pictures {
               flex-direction: row;
               flex-wrap: wrap;

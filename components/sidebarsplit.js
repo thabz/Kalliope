@@ -43,7 +43,7 @@ export default class SidebarSplit extends React.Component {
           div.sidebar-spl.empty > :global(div:last-child) {
             border-left: none;
           }
-          @media (max-width: 700px), print {
+          @media (max-width: 800px), print {
             div.sidebar-spl {
               flex-direction: column;
             }
