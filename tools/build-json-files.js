@@ -387,10 +387,12 @@ const build_poet_workids = () => {
 const get_notes = head => {
   return head.find('notes/note').map(note => {
     const lang = note.attr('lang') ? note.attr('lang').value() : 'da';
+    const type = note.attr('type') ? note.attr('type').value() : null;
     return {
       lang,
+      type,
       content_html: htmlToXml(
-        note.toString().replace('<note>', '').replace('</note>', ''),
+        note.toString().replace(/<note[^>]*>/, '').replace('</note>', ''),
         collected
       ),
     };
