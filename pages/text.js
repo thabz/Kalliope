@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
-import Nav from '../components/nav';
+import Nav, { NavPaging } from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
@@ -152,24 +152,17 @@ export default class extends React.Component {
       );
     });
     const rightSideItems = [prev, next].map((t, i) => {
-      if (t == null) return null;
-      const url = Links.textURL(lang, t.id);
-      const arrow = i === 0 ? '←' : '→';
-      const style = i === 1 ? { marginLeft: '10px' } : null;
-      return (
-        <div style={style}>
-          <Link prefetch route={url}>
-            <a title={t.title}>
-              {arrow}
-            </a>
-          </Link>
-        </div>
-      );
+      if (t == null) {
+        return null;
+      } else {
+        return {
+          url: Links.textURL(lang, t.id),
+          title: t.title,
+        };
+      }
     });
     const rightSide = (
-      <div style={{ display: 'flex', padding: '4px 0' }}>
-        {rightSideItems}
-      </div>
+      <NavPaging prev={rightSideItems[0]} next={rightSideItems[1]} />
     );
 
     const renderedRefs =
