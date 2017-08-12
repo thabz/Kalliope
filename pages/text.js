@@ -134,6 +134,20 @@ export default class extends React.Component {
       return <ErrorPage error={error} lang={lang} message="Ukendt tekst" />;
     }
 
+    const rightSideItems = [prev, next].map((t, i) => {
+      if (t == null) {
+        return null;
+      } else {
+        return {
+          url: Links.textURL(lang, t.id),
+          title: t.title,
+        };
+      }
+    });
+    const rightSide = (
+      <NavPaging prev={rightSideItems[0]} next={rightSideItems[1]} />
+    );
+
     const renderedNotes = text.notes.map((note, i) => {
       return <Note key={i} note={note} lang={lang} />;
     });
@@ -151,22 +165,23 @@ export default class extends React.Component {
         </div>
       );
     });
-    const rightSideItems = [prev, next].map((t, i) => {
-      if (t == null) {
-        return null;
-      } else {
-        return {
-          url: Links.textURL(lang, t.id),
-          title: t.title,
-        };
-      }
-    });
-    const rightSide = (
-      <NavPaging prev={rightSideItems[0]} next={rightSideItems[1]} />
-    );
+    let renderedRefs = null;
+    if (refs.length > 0) {
+      renderedRefs = (
+        <div className="refs">
+          <p>Henvisninger hertil:</p>
+          {refs}
+          <style jsx>{`
+            @media print {
+              .refs {
+                display: none;
+              }
+            }
+          `}</style>
+        </div>
+      );
+    }
 
-    const renderedRefs =
-      refs.length == 0 ? null : [<p>Henvisninger hertil:</p>, ...refs];
     let sidebar = null;
     if (
       refs.length > 0 ||
