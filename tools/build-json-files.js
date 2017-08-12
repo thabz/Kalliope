@@ -207,6 +207,7 @@ const build_bio_json = collected => {
           .map(workId => `fdirs/${poet.id}/${workId}.xml`),
         `fdirs/${poet.id}/events.xml`,
         `fdirs/${poet.id}/p1.xml`,
+        `static/images/${poet.id}/p1.jpg`,
         `fdirs/${poet.id}/bio.xml`
       )
     ) {
@@ -1306,10 +1307,21 @@ const print_benchmarking_results = () => {
 };
 
 const build_todays_events_json = collected => {
-  const filenames = Array.from(collected.poets.values()).map(poet => {
+  const portrait_descriptions = Array.from(
+    collected.poets.values()
+  ).map(poet => {
     return `fdirs/${poet.id}/p1.xml`;
   });
-  if (!isFileModified(`data/poets.xml`, ...filenames)) {
+  const portrait_images = Array.from(collected.poets.values()).map(poet => {
+    return `static/images/${poet.id}/p1.jpg`;
+  });
+  if (
+    !isFileModified(
+      `data/poets.xml`,
+      ...portrait_descriptions,
+      ...portrait_images
+    )
+  ) {
     return;
   }
 
