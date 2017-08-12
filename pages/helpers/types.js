@@ -93,6 +93,7 @@ export type TocItem = {
 
 export type NoteItem = {
   lang: Lang,
+  type: null | 'credits' | 'source',
   content_html: TextContentType,
 };
 
