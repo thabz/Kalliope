@@ -13,6 +13,8 @@ export type WorkId = string;
 
 export type Error = { statusCode: number };
 
+export type URLString = string;
+
 type TextContentLine = Array<string>; // TODO: Make this more precise
 
 export type TextContentType = Array<TextContentLine>;
@@ -141,5 +143,11 @@ export type TimelineItem = {
   type: 'text' | 'image',
   is_history_item: boolean,
   content_html: TextContentType,
-  src?: string, // When type is 'image'
+  src?: string, // When type is 'image',
+  // context is set for today-items
+  context?: {
+    poet: Poet,
+    event_type: 'born' | 'dead',
+    year: string,
+  },
 };
