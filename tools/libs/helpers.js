@@ -78,6 +78,7 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
     html = html
       .replace(/^(\d+\.?)\s*\n/gm, '<num>$1</num>\n')
       .replace(/^(\d+\.?)/gm, '<num>$1</num>')
+      .replace(/^[ \t]*([IVXLCDM]+\.?) *$/gm, '<num>$1</num>')
       .replace(/^\[(\d+\.?)\]\s*\n/gm, '<num>[$1]</num>\n');
   }
   html = html
@@ -104,12 +105,17 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
   while (decoded.match(regexp)) {
     decoded = decoded.replace(regexp, (_, type, id) => {
       if (type === 'poem') {
+        const originalAttribute = `${id}`;
+        let highlight = id.match(/,(.*)$/);
+        if (highlight != null) {
+          id = id.replace(',' + highlight[1], '');
+        }
         const meta = collected.texts.get(id);
         if (meta == null) {
           const error = `xref dead poem link: ${id}`;
           throw error;
         } else {
-          return `<a ${type}="${id}">»${meta.title}«</a>`;
+          return `<a ${type}="${originalAttribute}">»${meta.title}«</a>`;
         }
       } else if (type === 'keyword') {
         const meta = collected.keywords.get(id);

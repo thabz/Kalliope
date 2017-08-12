@@ -43,7 +43,16 @@ export const bibliographyURL = (lang: string = 'da', poetId: PoetId) => {
 };
 
 export const textURL = (lang: string = 'da', textId: string) => {
-  return `/${lang}/text/${textId}`;
+  const highlight = textId.match(/,(.*)$/);
+  if (highlight != null) {
+    textId = textId.replace(',' + highlight[1], '');
+  }
+
+  if (highlight) {
+    return `/${lang}/text/${textId}?highlight=${highlight[1]}#h`;
+  } else {
+    return `/${lang}/text/${textId}`;
+  }
 };
 
 export const bibleURL = (lang: string = 'da', bibleId: string) => {
