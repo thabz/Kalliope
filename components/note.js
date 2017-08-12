@@ -11,8 +11,14 @@ export default class Note extends React.Component {
   };
   render() {
     const { note, lang } = this.props;
+    const { type } = note;
+    let className = 'sidebar-note';
+    if (type === 'credits') {
+      className += ' sidebar-note-credits';
+    }
+
     return (
-      <div className="sidebar-note">
+      <div className={className}>
         <TextContent contentHtml={note.content_html} lang={lang} />
         <style jsx>{`
           div.sidebar-note {
@@ -21,6 +27,9 @@ export default class Note extends React.Component {
           @media print {
             div.sidebar-note {
               margin-bottom: 10px;
+            }
+            div.sidebar-note.sidebar-note-credits {
+              display: none;
             }
           }
         `}</style>
