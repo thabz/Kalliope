@@ -12,6 +12,7 @@ const {
   writeCachedJSON,
 } = require('./libs/caching.js');
 const {
+  fileExists,
   safeMkdir,
   writeJSON,
   loadXMLDoc,
@@ -187,7 +188,7 @@ const build_portrait_json = (poet, number, collected) => {
   if (doc != null) {
     const body = doc.get('//body');
     data.content_html = htmlToXml(
-      body.toString().replace('<body>', '').replace('</body>', ''),
+      body.toString().replace('<body>', '').replace('</body>', '').trim(),
       collected
     );
   }
@@ -1303,7 +1304,10 @@ const print_benchmarking_results = () => {
 };
 
 const build_todays_events_json = collected => {
-  if (!isFileModified(`data/poets.xml`)) {
+  const filenames = Array.from(collected.poets.values()).map(poet => {
+    return `fdirs/${poet.id}/p1.xml`;
+  });
+  if (!isFileModified(`data/poets.xml`, ...filenames)) {
     return;
   }
 
@@ -1373,6 +1377,53 @@ const build_todays_events_json = collected => {
               context: { event_type: 'dead', year, poet },
             });
           });
+        }
+      }
+    }
+  });
+
+  langs.forEach(lang => {
+    for (let m = 1; m <= 12; m++) {
+      for (let d = 1; d <= 31; d++) {
+        const dd = d < 10 ? '0' + d : d;
+        const mm = m < 10 ? '0' + m : m;
+        const events = collected_events.get(`${lang}-${mm}-${dd}`) || [];
+        if (events.filter(e => e.type === 'image').length === 0) {
+          // There are no images from events in today.xml. Find the most relevant poet portrait.
+          const weighted = events
+            .filter(e => e.context.poet.has_portraits)
+            .map(event => {
+              const poet = event.context.poet;
+              let weight = 0;
+              weight += fileExists(`fdirs/${poet.id}/p1.xml`) ? 12 : 6;
+              weight += poet.has_texts ? 10 : 5;
+              weight += poet.has_works ? 6 : 3;
+              weight += event.context.event_type === 'born' ? 3 : 0; // Foretræk fødselsdage
+              return {
+                weight,
+                event,
+              };
+            })
+            .sort((a, b) => (a.weight < b.weight ? 1 : -1));
+          if (weighted.length > 0) {
+            const event = weighted[0].event;
+            const poet = event.context.poet;
+            let content_html = null;
+            if (fileExists(`fdirs/${poet.id}/p1.xml`)) {
+              content_html = build_portrait_json(poet, 1, collected)
+                .content_html;
+            } else {
+              content_html = [[poetName(poet)]];
+            }
+            const data = {
+              type: 'image',
+              src: `images/${poet.id}/p1.jpg`,
+              content_html,
+              date: event.date,
+              lang,
+            };
+            add_event(lang, `${mm}-${dd}`, data);
+          }
         }
       }
     }

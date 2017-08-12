@@ -10,6 +10,7 @@ import SidebarSplit from '../components/sidebarsplit.js';
 import * as Links from '../components/links';
 import Heading from '../components/heading.js';
 import TextContent from '../components/textcontent.js';
+import Picture from '../components/picture.js';
 import type { Lang, NewsItem } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
@@ -25,12 +26,29 @@ class TodaysEvents extends React.Component {
     }
     const renderedEvents = events.map((item, i) => {
       let html = null;
-      html = <TextContent contentHtml={item.content_html} lang={item.lang} />;
-      return (
-        <div className="today-item" key={i}>
+      let yearHtml = null;
+      if (item.type === 'image' && item.src != null) {
+        const picture: PictureItem = {
+          src: item.src,
+          lang: item.lang,
+          content_html: item.content_html,
+        };
+        html = (
+          <div style={{ marginTop: '30px' }}>
+            <Picture picture={picture} lang={item.lang} srcPrefix="/static" />
+          </div>
+        );
+      } else {
+        yearHtml = (
           <div className="today-year">
             {item.date.substring(0, 4)}
           </div>
+        );
+        html = <TextContent contentHtml={item.content_html} lang={item.lang} />;
+      }
+      return (
+        <div className="today-item" key={i}>
+          {yearHtml}
           <div className="today-body">
             {html}
           </div>
@@ -107,9 +125,6 @@ export default class extends React.Component {
         prev: `${zeroPad(prev.getMonth() + 1)}-${zeroPad(prev.getDate())}`,
         next: `${zeroPad(next.getMonth() + 1)}-${zeroPad(next.getDate())}`,
       };
-      console.log(
-        `param=${dayAndMonth}, parsed as ${date}, prev=${prev}, next=${next}`
-      );
     }
     let res = await fetch(createURL(`/static/api/news_${lang}.json`));
     const news: Array<NewsItem> = await res.json();
