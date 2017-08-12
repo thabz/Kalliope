@@ -1383,6 +1383,8 @@ const build_todays_events_json = collected => {
   });
 
   langs.forEach(lang => {
+    const preferredCountries =
+      lang === 'da' ? ['dk', 'de', 'se'] : ['gb', 'us'];
     for (let m = 1; m <= 12; m++) {
       for (let d = 1; d <= 31; d++) {
         const dd = d < 10 ? '0' + d : d;
@@ -1398,6 +1400,7 @@ const build_todays_events_json = collected => {
               weight += fileExists(`fdirs/${poet.id}/p1.xml`) ? 12 : 6;
               weight += poet.has_texts ? 10 : 5;
               weight += poet.has_works ? 6 : 3;
+              weight += preferredCountries.indexOf(poet.country) > -1 ? 11 : 6;
               weight += event.context.event_type === 'born' ? 3 : 0; // Foretræk fødselsdage
               return {
                 weight,
