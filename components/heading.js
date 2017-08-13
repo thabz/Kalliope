@@ -68,6 +68,9 @@ export default class Heading extends React.Component {
               font-size: 24px;
               border-bottom: 1px solid #888;
             }
+            .heading {
+              margin-bottom: 40px;
+            }
           }
         `}</style>
       </div>
