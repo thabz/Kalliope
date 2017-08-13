@@ -20,12 +20,15 @@ import * as Links from '../components/links';
 import type { Lang, Keyword } from './helpers/types.js';
 import 'isomorphic-fetch';
 import * as Paths from './helpers/paths.js';
+import * as Client from './helpers/client.js';
 import { createURL } from './helpers/client.js';
+import ErrorPage from './error.js';
 
 export default class extends React.Component {
   props: {
     lang: Lang,
     keyword: Keyword,
+    error: ?Error,
   };
 
   static async getInitialProps({
@@ -33,18 +36,20 @@ export default class extends React.Component {
   }: {
     query: { lang: Lang, keywordId: string },
   }) {
-    const res = await fetch(
-      createURL(`/static/api/keywords/${keywordId}.json`)
-    );
-    const keyword: Keyword = await res.json();
+    const json = await Client.keyword(keywordId);
     return {
       lang,
-      keyword,
+      keyword: json,
+      error: json.error,
     };
   }
 
   render() {
-    const { lang, keyword } = this.props;
+    const { lang, keyword, error } = this.props;
+
+    if (error) {
+      return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
+    }
 
     const renderedPictures = (
       <SidebarPictures

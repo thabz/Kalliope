@@ -80,6 +80,11 @@ export const bio = async (poetId: PoetId): FetchBioResult => {
   return fetchJSON(`/static/api/${poetId}/bio.json`);
 };
 
+type FetchKeywordResult = Promise<Keyword>;
+export const keyword = async (keywordId: string): FetchKeywordResult => {
+  return fetchJSON(`/static/api/keywords/${keywordId}.json`);
+};
+
 type FetchTextResult = Promise<{
   poet: Poet,
   work: Work,
