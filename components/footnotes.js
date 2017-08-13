@@ -20,8 +20,10 @@ export class Footnote extends Component {
   }
   render() {
     const nummer = this.context.footnoteContainer.nummer(this);
+    const anchor = `note-${nummer}`;
     return (
       <sup style={{ marginLeft: '0.3em' }} className="footnotes-print-only">
+        <a name={anchor} />
         {nummer}
       </sup>
     );
@@ -40,22 +42,48 @@ export class FootnoteList extends Component {
     const container = this.context.footnoteContainer;
     const notes = container.footnotes().map((footnote, i) => {
       const text = footnote.text();
+      const anchor = `#note-${i + 1}`;
       return (
-        <li value={i + 1} key={i + text}>
-          {text}
-        </li>
+        <div className="footnote" key={i + text}>
+          <div className="footnote-num">
+            <a href={anchor}>
+              {i + 1}.
+            </a>
+          </div>
+          <div className="footnote-text">
+            {text}
+          </div>
+        </div>
       );
     });
     return (
-      <ol className="footnotes footnotes-print-only">
+      <div className="footnotes footnotes-print-only">
         {notes}
         <style jsx>{`
-          ol.footnotes {
-            padding-left: 1.2em;
+          div.footnotes {
             margin-top: 0;
           }
+          :global(.footnote) {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            margin-left: -5px;
+          }
+          :global(.footnote .footnote-num) {
+            flex-basis: 20px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            text-align: right;
+            padding-right: 7px;
+          }
+          :global(.footnote .footnote-num a) {
+            color: #666;
+          }
+          :global(.footnote .footnote-text) {
+            flex-grow: 1;
+          }
         `}</style>
-      </ol>
+      </div>
     );
   }
 }
