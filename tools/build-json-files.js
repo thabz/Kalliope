@@ -431,7 +431,9 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
   const textId = text.attr('id').value();
   const head = text.get('head');
   const body = text.get('body');
-  const title = head.get('title') ? head.get('title').text() : null;
+  const firstline = head.get('firstline') ? head.get('firstline').text() : null;
+  let title = head.get('title') ? head.get('title').text() : null;
+  title = title || firstline;
   const keywords = head.get('keywords');
   const isBible = poetId === 'bibel';
 
