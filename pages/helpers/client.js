@@ -53,13 +53,11 @@ export type FetchWorkResult = {
 };
 export const work = async (
   poetId: PoetId,
-  workId: WorkId
+  workId: WorkId,
+  error: ?Error
 ): Promise<FetchWorkResult> => {
-  const res = await fetch(
-    createURL(`/static/api/${poetId}/${workId}-toc.json`)
-  );
-  const json = (await res.json(): Promise<FetchWorkResult>);
-  return json;
+  const path = `/static/api/${poetId}/${workId}-toc.json`;
+  return fetchJSON(path);
 };
 
 type FetchWorksResult = Promise<{

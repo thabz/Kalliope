@@ -14,6 +14,7 @@ import PoetName, { poetNameString } from '../components/poetname.js';
 import WorkName, { workTitleString } from '../components/workname.js';
 import Note from '../components/note.js';
 import SidebarPictures from '../components/sidebarpictures.js';
+import ErrorPage from './error.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
@@ -26,6 +27,7 @@ import type {
   TocItem,
   NoteItem,
   PictureItem,
+  Error,
 } from './helpers/types.js';
 
 export default class extends React.Component {
@@ -36,6 +38,7 @@ export default class extends React.Component {
     toc: Array<TocItem>,
     notes: Array<NoteItem>,
     pictures: Array<PictureItem>,
+    error: ?Error,
   };
 
   static async getInitialProps({
@@ -51,11 +54,16 @@ export default class extends React.Component {
       toc: json.toc,
       notes: json.notes,
       pictures: json.pictures,
+      error: json.error,
     };
   }
 
   render() {
-    const { lang, poet, work, notes, pictures, toc } = this.props;
+    const { lang, poet, work, notes, pictures, toc, error } = this.props;
+
+    if (error) {
+      return <ErrorPage error={error} lang={lang} message="Ukendt værk" />;
+    }
 
     const renderItems = (items: Array<TocItem>, indent: number = 0) => {
       const rows = items.map((item, i) => {
