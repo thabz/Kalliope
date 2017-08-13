@@ -63,10 +63,21 @@ export const work = async (
 type FetchWorksResult = Promise<{
   poet: Poet,
   works: Array<Work>,
+  error: ?Error,
 }>;
 export const works = async (poetId: PoetId): FetchWorksResult => {
-  const res = await fetch(createURL(`/static/api/${poetId}/works.json`));
-  return (await res.json(): FetchWorksResult);
+  return fetchJSON(`/static/api/${poetId}/works.json`);
+};
+
+type FetchBioResult = Promise<{
+  poet: Poet,
+  portrait?: PictureItem,
+  timeline: Array<TimelineItem>,
+  content_html: TextContentType,
+  error: ?Error,
+}>;
+export const bio = async (poetId: PoetId): FetchBioResult => {
+  return fetchJSON(`/static/api/${poetId}/bio.json`);
 };
 
 type FetchTextResult = Promise<{

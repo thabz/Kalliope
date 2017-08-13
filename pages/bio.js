@@ -13,7 +13,9 @@ import WorkName from '../components/workname.js';
 import Picture from '../components/picture.js';
 import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
+import ErrorPage from './error.js';
 import * as Links from '../components/links';
+import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
 
 import type {
@@ -23,6 +25,7 @@ import type {
   PictureItem,
   TimelineItem,
   TextContentType,
+  Error,
 } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
@@ -187,6 +190,7 @@ export default class extends React.Component {
     poet: Poet,
     timeline: Array<TimelineItem>,
     content_html: TextContentType,
+    Error: ?Error,
   };
 
   static async getInitialProps({
@@ -194,24 +198,23 @@ export default class extends React.Component {
   }: {
     query: { lang: Lang, poetId: string },
   }) {
-    const res = await fetch(createURL(`/static/api/${poetId}/bio.json`));
-    const json: {
-      poet: Poet,
-      portrait?: PictureItem,
-      timeline: Array<TimelineItem>,
-      content_html: TextContentType,
-    } = await res.json();
+    const json = await Client.bio(poetId);
     return {
       lang,
       portrait: json.portrait,
       poet: json.poet,
       content_html: json.content_html,
       timeline: json.timeline,
+      error: json.error,
     };
   }
 
   render() {
-    const { lang, poet, portrait, content_html, timeline } = this.props;
+    const { lang, poet, portrait, content_html, timeline, error } = this.props;
+
+    if (error) {
+      return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
+    }
 
     const sidebarItems = (
       <div className="horizontal-on-small" key="first-and-on">

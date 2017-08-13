@@ -12,7 +12,8 @@ import PoetName, { poetNameString } from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
-import type { Lang, Poet, Work } from './helpers/types.js';
+import ErrorPage from './error.js';
+import type { Lang, Poet, Work, Error } from './helpers/types.js';
 import 'isomorphic-fetch';
 
 export default class extends React.Component {
@@ -20,6 +21,7 @@ export default class extends React.Component {
     lang: Lang,
     poet: Poet,
     works: Array<Work>,
+    Error: ?Error,
   };
 
   static async getInitialProps({
@@ -29,11 +31,15 @@ export default class extends React.Component {
   }) {
     const json = await Client.works(poetId);
 
-    return { lang, poet: json.poet, works: json.works };
+    return { lang, poet: json.poet, works: json.works, error: json.error };
   }
 
   render() {
-    const { lang, poet, works } = this.props;
+    const { lang, poet, works, error } = this.props;
+
+    if (error) {
+      return <ErrorPage error={error} lang={lang} message="Ukendt digter" />;
+    }
 
     if (works.length === 0 && poet.has_biography) {
       const bioURL = Links.bioURL(lang, poet.id);
@@ -50,32 +56,37 @@ export default class extends React.Component {
           } else if (b.id === 'andre') {
             return -1;
           } else {
-            const aKey = a.year == null || a.year === '?'
-              ? a.title
-              : a.year + a.id;
-            const bKey = b.year == null || b.year === '?'
-              ? b.title
-              : b.year + b.id;
+            const aKey =
+              a.year == null || a.year === '?' ? a.title : a.year + a.id;
+            const bKey =
+              b.year == null || b.year === '?' ? b.title : b.year + b.id;
             return aKey > bKey ? 1 : -1;
           }
         });
       }
     };
 
-    const list = works.length == 0
-      ? <div className="nodata">
-          Kalliope indeholder endnu ingen tekster fra denne digter.
-        </div>
-      : sortWorks(works).map((work, i) => {
-          const workName = <WorkName work={work} />;
-          const url = `/${lang}/work/${poet.id}/${work.id}`;
-          const name = work.has_content
-            ? <Link route={url}><a title={work.year}>{workName}</a></Link>
-            : workName;
-          return (
-            <div className="list-section-line" key={i + work.id}>{name}</div>
-          );
-        });
+    const list =
+      works.length == 0
+        ? <div className="nodata">
+            Kalliope indeholder endnu ingen tekster fra denne digter.
+          </div>
+        : sortWorks(works).map((work, i) => {
+            const workName = <WorkName work={work} />;
+            const url = `/${lang}/work/${poet.id}/${work.id}`;
+            const name = work.has_content
+              ? <Link route={url}>
+                  <a title={work.year}>
+                    {workName}
+                  </a>
+                </Link>
+              : workName;
+            return (
+              <div className="list-section-line" key={i + work.id}>
+                {name}
+              </div>
+            );
+          });
 
     const title = <PoetName poet={poet} includePeriod />;
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
