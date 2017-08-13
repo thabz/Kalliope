@@ -90,7 +90,7 @@ const load_timeline = filename => {
       lang: 'da',
       is_history_item: true,
       content_html: htmlToXml(
-        html.toString().replace('<html>', '').replace('</html>', ''),
+        html.toString().replace('<html>', '').replace('</html>', '').trim(),
         collected
       ),
     };
