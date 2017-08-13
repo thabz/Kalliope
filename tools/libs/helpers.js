@@ -92,6 +92,9 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
         .replace(/\n *(----*) *\n/g, (match, p1) => {
           return `\n<hr width="${p1.length}"/>\n`;
         })
+        .replace(/( *_+ *)/g, (match, p1) => {
+          return `<nonum>${p1}</nonum>`;
+        })
         .replace(/^\n/, '')
         .replace(/^ *(<right>.*)$/gm, '$1')
         .replace(/^ *(<center>.*)$/gm, '$1')
@@ -205,7 +208,7 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
       }
       lineNum += 1;
     } else {
-      l = l.replace('<nonum>', '').replace('</nonum>', '');
+      l = l.replace(/<nonum>/g, '').replace(/<\/nonum>/g, '');
     }
     if (isBible) {
       const match = l.match(/^\s*(\d+,?\d*)\.\s*/);
