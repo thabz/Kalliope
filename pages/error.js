@@ -26,12 +26,17 @@ export default class extends React.Component {
       <div>
         <Head headTitle="Kalliope" />
         <Main>
-          <Nav lang={lang} title="Fejl" />
-          <Heading title="Fejl" />
+          <Nav lang={lang} title={message} />
+          <Heading title="&nbsp;" />
           <KalliopeTabs lang={lang} selected="index" />
-          <SubHeading>Der er opstået en fejl</SubHeading>
-          <div>
+          <SubHeading>
             {message}
+          </SubHeading>
+          <div style={{ lineHeight: 1.7 }}>
+            Noget er gået helt galt. Hvis du har lyst, må du meget gerne skrive
+            til <a href="mailto:jesper@kalliope">jesper@kalliope.org</a> og
+            forklare, hvordan du er endt på denne side. Så vil jeg sørge for at
+            ingen andre får den oplevelse.
           </div>
           <LangSelect lang={lang} />
         </Main>
