@@ -42,6 +42,7 @@ export default class extends React.Component {
     }
 
     if (works.length === 0 && poet.has_biography) {
+      // TODO: This fails on the server... we should return a 302 instead (moved temporarily) when serverside. See issue #147.
       const bioURL = Links.bioURL(lang, poet.id);
       Router.replaceRoute(bioURL);
     }
