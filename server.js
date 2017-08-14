@@ -1,6 +1,7 @@
 // server.js
 const next = require('next');
 const routes = require('./routes');
+const fs = require('fs');
 const { parse } = require('url');
 const { join } = require('path');
 const { createServer } = require('http');
@@ -9,6 +10,8 @@ const app = next({ dev });
 const handler = routes.getRequestHandler(app);
 const elasticSearchClient = require('./tools/libs/elasticsearch-client.js');
 const rootStaticFiles = ['/sw.js', '/favicon.ico', '/robots.txt'];
+
+const worksRedirects = JSON.parse(fs.readFileSync('static/api/redirects.json'));
 const redirects = [
   {
     from: /\/(..)\/ffront.cgi/,
@@ -93,6 +96,11 @@ app.prepare().then(() => {
           res.write(JSON.stringify({ error: err }));
           res.end();
         });
+    } else if (worksRedirects[pathname] != null) {
+      const to = worksRedirects[pathname];
+      console.log('Redirecting to', to);
+      res.writeHead(302, { Location: to });
+      res.end();
     } else {
       handler(req, res);
     }

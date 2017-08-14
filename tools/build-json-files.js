@@ -1323,6 +1323,20 @@ const print_benchmarking_results = () => {
   });
 };
 
+const build_redirects_json = collected => {
+  if (!isFileModified('data/poets.xml')) {
+    return;
+  }
+  let redirects = {};
+  collected.poets.forEach((poet, poetId) => {
+    if (!poet.has_works) {
+      redirects[`/en/works/${poetId}`] = `/en/bio/${poetId}`;
+      redirects[`/da/works/${poetId}`] = `/da/bio/${poetId}`;
+    }
+  });
+  writeJSON('static/api/redirects.json', redirects);
+};
+
 const build_todays_events_json = collected => {
   const portrait_descriptions = Array.from(
     collected.poets.values()
@@ -1606,6 +1620,7 @@ b('build_news', build_news, collected);
 b('build_about_pages', build_about_pages, collected);
 b('build_dict_second_pass', build_dict_second_pass, collected);
 b('build_todays_events_json', build_todays_events_json, collected);
+b('build_redirects_json', build_redirects_json, collected);
 b('update_elasticsearch', update_elasticsearch, collected);
 
 refreshFilesModifiedCache();
