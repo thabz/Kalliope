@@ -154,6 +154,7 @@ export default class extends React.Component {
             }
             div.news-date {
               margin-bottom: 10px;
+              font-weight: lighter;
             }
             div.news-body {
               line-height: 1.6;
