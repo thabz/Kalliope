@@ -299,8 +299,17 @@ const build_poets_json = () => {
     const nameE = p.get('name');
     const periodE = p.get('period');
     const works = safeGetText(p, 'works');
-    const portrait =
-      p.attr('portrait') != null ? p.attr('portrait').value() : 'p1.jpg';
+    let portrait = 'p1.jpg';
+    if (p.attr('portrait') != null) {
+      portrait = p.attr('portrait').value();
+      if (!fileExists(`static/images/${id}/${portrait}`)) {
+        throw `${id} har portrait="${portrait}" men filen findes ikke.`;
+      }
+    }
+    const has_portraits = fileExists(`static/images/${id}/${portrait}`);
+    if (!has_portraits) {
+      portrait = null;
+    }
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');
     const fullname = safeGetText(nameE, 'fullname');
@@ -340,6 +349,7 @@ const build_poets_json = () => {
       portrait,
       name: { firstname, lastname, fullname, pseudonym, christened, realname },
       period,
+      has_portraits,
       has_works: has.has_works,
       has_poems: has.has_poems,
       has_prose: has.has_prose,
@@ -355,9 +365,6 @@ const build_poets_json = () => {
           period.dead != null &&
           period.born.date !== '?' &&
           period.dead.date !== '?'),
-      has_portraits:
-        fs.existsSync(`static/images/${id}/p1.jpg`) ||
-        fs.existsSync(`static/images/${id}/p1-oval.jpg`),
     };
     list.push(poet);
     byCountry.set(country, list);
