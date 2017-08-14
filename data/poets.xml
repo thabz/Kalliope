@@ -1867,7 +1867,7 @@
   </period>
 </person>
 
-<person id="abrahamson" country="dk" lang="da" type="poet">
+<person id="abrahamson" country="dk" lang="da" type="poet" portrait="p3.jpg">
   <name>
     <firstname>W.H.F.</firstname>
     <lastname>Abrahamson</lastname>
@@ -1876,9 +1876,11 @@
   <period>
     <born>
       <date>1744-04-10</date>
+      <place>Slesvig by</place>
     </born>
     <dead>
       <date>1812-09-22</date>
+      <place>København</place>
     </dead>
   </period>
   <works>andre</works>
