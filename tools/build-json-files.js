@@ -174,16 +174,20 @@ const build_poet_timeline_json = (poet, collected) => {
   return items;
 };
 
-const build_portrait_json = (poet, number, collected) => {
-  const imagePath = `static/images/${poet.id}/p${number}.jpg`;
+const build_portrait_json = (poet, collected) => {
+  const imagePath = `static/images/${poet.id}/${poet.portrait}`;
+
   if (!fs.existsSync(imagePath)) {
     return null;
   }
   const data = {
-    src: `p${number}.jpg`,
+    src: poet.portrait,
     lang: poet.lang,
   };
-  const portraitTextPath = `fdirs/${poet.id}/p${number}.xml`;
+
+  const portraitTextPath = imagePath
+    .replace('static/images', 'fdirs')
+    .replace('.jpg', '.xml');
   const doc = loadXMLDoc(portraitTextPath);
   if (doc != null) {
     const body = doc.get('//body');
@@ -235,7 +239,7 @@ const build_bio_json = collected => {
       );
     }
     data.timeline = build_poet_timeline_json(poet, collected);
-    data.portrait = build_portrait_json(poet, 1, collected);
+    data.portrait = build_portrait_json(poet, collected);
     const destFilename = `static/api/${poet.id}/bio.json`;
     console.log(destFilename);
     writeJSON(destFilename, data);
@@ -295,7 +299,8 @@ const build_poets_json = () => {
     const nameE = p.get('name');
     const periodE = p.get('period');
     const works = safeGetText(p, 'works');
-
+    const portrait =
+      p.attr('portrait') != null ? p.attr('portrait').value() : 'p1.jpg';
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');
     const fullname = safeGetText(nameE, 'fullname');
@@ -332,6 +337,7 @@ const build_poets_json = () => {
       country,
       lang,
       type,
+      portrait,
       name: { firstname, lastname, fullname, pseudonym, christened, realname },
       period,
       has_works: has.has_works,
@@ -349,7 +355,9 @@ const build_poets_json = () => {
           period.dead != null &&
           period.born.date !== '?' &&
           period.dead.date !== '?'),
-      has_portraits: fs.existsSync(`static/images/${id}/p1.jpg`),
+      has_portraits:
+        fs.existsSync(`static/images/${id}/p1.jpg`) ||
+        fs.existsSync(`static/images/${id}/p1-oval.jpg`),
     };
     list.push(poet);
     byCountry.set(country, list);
@@ -1428,15 +1436,18 @@ const build_todays_events_json = collected => {
             const event = weighted[0].event;
             const poet = event.context.poet;
             let content_html = null;
-            if (fileExists(`fdirs/${poet.id}/p1.xml`)) {
-              content_html = build_portrait_json(poet, 1, collected)
-                .content_html;
+            if (
+              fileExists(
+                `fdirs/${poet.id}/${poet.portrait.replace('.jpg', '.xml')}`
+              )
+            ) {
+              content_html = build_portrait_json(poet, collected).content_html;
             } else {
               content_html = [[poetName(poet)]];
             }
             const data = {
               type: 'image',
-              src: `images/${poet.id}/p1.jpg`,
+              src: `images/${poet.id}/${poet.portrait}`,
               content_html,
               date: event.date,
               lang,

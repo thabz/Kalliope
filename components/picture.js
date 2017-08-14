@@ -14,7 +14,7 @@ export default class Picture extends React.Component {
   render() {
     const { picture, lang, srcPrefix } = this.props;
 
-    const src = (srcPrefix || '') + '/' + picture.src;
+    const src: string = (srcPrefix || '') + '/' + picture.src;
     const fallbackSrc = src.replace(/.jpg$/, CommonData.fallbackImagePostfix);
     const sizes = '(max-width: 700px) 250px, 48vw';
     let srcsets = {};
@@ -32,12 +32,21 @@ export default class Picture extends React.Component {
     const alt = picture.content_html
       ? '' //Strings.trimHtml(picture.content_html)
       : 'Billede';
+    let pictureClassName = null;
+    if (picture.src.indexOf('-oval.jpg') > -1) {
+      pictureClassName = 'oval-mask';
+    }
     return (
       <div className="sidebar-picture">
         <figure>
-          <picture>
+          <picture className={pictureClassName}>
             {sources}
-            <img src={fallbackSrc} width="100%" alt={alt} />
+            <img
+              className={pictureClassName}
+              src={fallbackSrc}
+              width="100%"
+              alt={alt}
+            />
           </picture>
           <figcaption>
             <TextContent contentHtml={picture.content_html} lang={lang} />
@@ -53,6 +62,9 @@ export default class Picture extends React.Component {
           figcaption {
             margin-top: 8px;
             font-size: 0.8em;
+          }
+          .oval-mask {
+            border-radius: 50%;
           }
           img {
             border: 0;
