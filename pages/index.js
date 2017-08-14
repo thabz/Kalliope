@@ -6,6 +6,7 @@ import Main from '../components/main.js';
 import { KalliopeTabs } from '../components/tabs.js';
 import LangSelect from '../components/langselect';
 import Nav, { NavPaging } from '../components/nav';
+import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import * as Links from '../components/links';
 import Heading from '../components/heading.js';
@@ -57,7 +58,7 @@ class TodaysEvents extends React.Component {
     });
     return (
       <div>
-        <h2>Dagen i dag</h2>
+        <SubHeading>Dagen i dag</SubHeading>
         {renderedEvents}
         <style jsx>{`
           h2 {
@@ -152,7 +153,6 @@ export default class extends React.Component {
               margin-bottom: 40px;
             }
             div.news-date {
-              text-align: right;
               margin-bottom: 10px;
             }
             div.news-body {
@@ -188,6 +188,7 @@ export default class extends React.Component {
           <KalliopeTabs lang={lang} selected="index" />
           <SidebarSplit sidebar={sidebar}>
             <div>
+              <SubHeading>Nyheder</SubHeading>
               {renderedNews}
             </div>
           </SidebarSplit>

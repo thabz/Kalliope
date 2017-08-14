@@ -9,13 +9,14 @@ export default class SubHeading extends React.Component {
     const { children } = this.props;
     return (
       <div className="subheading">
-        <h2>{children}</h2>
+        <h2>
+          {children}
+        </h2>
         <style jsx>{`
           h2 {
-            margin: 0;
             width: 100%;
-            margin: 10px 0 30px 0;
-            line-height: 1.15;
+            margin: 0 0 50px 0;
+            line-height: 28px;
             font-size: 28px;
             font-weight: lighter;
           }
