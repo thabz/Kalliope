@@ -18,8 +18,9 @@ import WorkName from '../components/workname.js';
 import TextName from '../components/textname.js';
 import * as Strings from './helpers/strings.js';
 import CommonData from '../pages/helpers/commondata.js';
+import ErrorPage from './error.js';
 import * as Client from './helpers/client.js';
-import type { Lang, Country, Poet, PoetId } from './helpers/types.js';
+import type { Lang, Country, Poet, PoetId, Error } from './helpers/types.js';
 
 export default class extends React.Component {
   resultPage: number;
@@ -30,6 +31,7 @@ export default class extends React.Component {
     country: Country,
     query: string,
     result: any,
+    error: ?Error,
   };
   appendItems: Function;
   scrollListener: Function;
@@ -61,6 +63,7 @@ export default class extends React.Component {
       query,
       result,
       poet,
+      error: result.error,
     };
   }
 
@@ -122,7 +125,10 @@ export default class extends React.Component {
 
   // Clientside refresh
   componentWillReceiveProps(newProps: any) {
-    const { result } = newProps;
+    const { result, error } = newProps;
+    if (error != null) {
+      return;
+    }
     if (result.hits.total > 0) {
       this.hits = result.hits.hits;
     } else {
@@ -140,7 +146,10 @@ export default class extends React.Component {
 
   // Serverside refresh
   componentWillMount() {
-    const { result } = this.props;
+    const { result, error } = this.props;
+    if (error != null) {
+      return;
+    }
     if (result.hits.total > 0) {
       this.hits = result.hits.hits;
     } else {
@@ -156,7 +165,11 @@ export default class extends React.Component {
   }
 
   render() {
-    const { lang, poet, country, query, result } = this.props;
+    const { lang, poet, country, query, result, error } = this.props;
+
+    if (error != null) {
+      return <ErrorPage error={error} lang={lang} message="Søgning fejlede" />;
+    }
 
     let items = [];
     if (result.hits.total > 0) {
