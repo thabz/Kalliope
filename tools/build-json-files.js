@@ -626,7 +626,7 @@ const handle_work = work => {
         toc.push({
           type: 'text',
           id: textId,
-          title: replaceDashes(toctitle.title),
+          title: toctitle.title,
           prefix: toctitle.prefix,
         });
         handle_text(poetId, workId, part, false, resolve_prev_next);
