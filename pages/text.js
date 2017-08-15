@@ -222,6 +222,7 @@ export default class extends React.Component {
         contentHtml={text.content_html}
         lang={lang}
         options={options}
+        keyPrefix={text.id}
       />
     );
 

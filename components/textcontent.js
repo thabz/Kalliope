@@ -17,6 +17,7 @@ type TextContentPropsType = {
   lang: Lang,
   options?: TextContentOptions,
   style?: ?Object,
+  keyPrefix?: string, // Ved bladring hopper linjenumrene hvis alle digtes linjer har samme key.
 };
 export default class TextContent extends React.Component {
   props: TextContentPropsType;
@@ -276,7 +277,7 @@ export default class TextContent extends React.Component {
     return collected;
   }
   render() {
-    const { contentHtml, style } = this.props;
+    const { contentHtml, style, keyPrefix } = this.props;
     const options = this.props.options || {};
 
     if (contentHtml == null) {
@@ -344,7 +345,10 @@ export default class TextContent extends React.Component {
         const displayedLineNum =
           lineNum != null && lineNum % 5 === 0 ? lineNum : null;
         return (
-          <div className={className} data-num={displayedLineNum} key={i}>
+          <div
+            className={className}
+            data-num={displayedLineNum}
+            key={keyPrefix + i}>
             {anchor}
             {rendered}
           </div>
@@ -352,7 +356,7 @@ export default class TextContent extends React.Component {
       } else if (options.isBible) {
         className += ' bible-line';
         return (
-          <div className={className} data-num={lineNum} key={i}>
+          <div className={className} data-num={lineNum} key={keyPrefix + i}>
             {anchor}
             {rendered}
           </div>
@@ -360,7 +364,7 @@ export default class TextContent extends React.Component {
       } else {
         // Prose
         return (
-          <div className={className} key={i}>
+          <div className={className} key={keyPrefix + i}>
             {rendered}
           </div>
         );
