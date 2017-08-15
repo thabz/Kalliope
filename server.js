@@ -103,7 +103,7 @@ app.prepare().then(() => {
       res.end();
     } else {
       if (pathname.match(/.(jpg|json)$/) == null) {
-        console.log(pathname);
+        console.log('        ' + pathname);
       }
       handler(req, res);
     }
