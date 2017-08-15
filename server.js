@@ -102,9 +102,9 @@ app.prepare().then(() => {
       res.writeHead(302, { Location: to });
       res.end();
     } else {
-      if (pathname.match(/.(jpg|json)$/) == null) {
-        console.log('        ' + pathname);
-      }
+      //      if (pathname.match(/.(jpg|json)$/) == null) {
+      //        console.log('        ' + pathname);
+      //      }
       handler(req, res);
     }
   }).listen(3000, err => {
