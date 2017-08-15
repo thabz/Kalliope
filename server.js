@@ -70,7 +70,7 @@ app.prepare().then(() => {
             .replace(/\${(.*)}/g, (m, p1) => {
               return query[p1];
             });
-          console.log('Redirecting to', to, query);
+          //console.log('Redirecting to', to, query);
           res.writeHead(301, { Location: to });
           res.end();
           done = true;
@@ -98,10 +98,13 @@ app.prepare().then(() => {
         });
     } else if (worksRedirects[pathname] != null) {
       const to = worksRedirects[pathname];
-      console.log('Redirecting to', to);
+      //console.log('Redirecting to', to);
       res.writeHead(302, { Location: to });
       res.end();
     } else {
+      if (pathname.match(/.(jpg|json)$/) == null) {
+        console.log(pathname);
+      }
       handler(req, res);
     }
   }).listen(3000, err => {
