@@ -13,6 +13,7 @@ import SubHeading from '../components/subheading.js';
 import PoetName, { poetNameString } from '../components/poetname.js';
 import WorkName, { workTitleString } from '../components/workname.js';
 import Note from '../components/note.js';
+import TextContent from '../components/textcontent.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
@@ -74,7 +75,7 @@ export default class extends React.Component {
               <td />
               <td>
                 <h3>
-                  {title}
+                  <TextContent contentHtml={title} lang={lang} />
                 </h3>
                 {renderItems(item.content, indent + 1)}
               </td>
@@ -85,7 +86,7 @@ export default class extends React.Component {
           const linkedTitle = (
             <Link route={url}>
               <a>
-                {title}
+                <TextContent contentHtml={title} lang={lang} />
               </a>
             </Link>
           );

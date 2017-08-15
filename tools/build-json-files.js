@@ -559,10 +559,10 @@ const handle_work = work => {
       if (parts != null) {
         return {
           prefix: parts[1],
-          title: replaceDashes(parts[2]),
+          title: htmlToXml(parts[2]),
         };
       } else {
-        return { title: replaceDashes(titleToUse) };
+        return { title: htmlToXml(titleToUse) };
       }
     };
 
@@ -602,16 +602,17 @@ const handle_work = work => {
         toc.push({
           type: 'text',
           id: textId,
-          title: replaceDashes(toctitle.title),
+          title: toctitle.title,
           prefix: replaceDashes(toctitle.prefix),
         });
         handle_text(poetId, workId, part, true, resolve_prev_next);
       } else if (partName === 'section') {
+        const head = part.get('head');
+        const toctitle = extractTocTitle(head);
         const subtoc = handle_section(part.get('content'), resolve_prev_next);
-        const title = part.get('head/toctitle').text();
         toc.push({
           type: 'section',
-          title: title,
+          title: toctitle.title,
           content: subtoc,
         });
       } else if (partName === 'prose') {
@@ -838,10 +839,10 @@ const build_works_toc = collected => {
         if (parts != null) {
           return {
             prefix: parts[1],
-            title: replaceDashes(parts[2]),
+            title: parts[2],
           };
         } else {
-          return { title: replaceDashes(titleToUse) };
+          return { title: titleToUse };
         }
       };
 
@@ -874,29 +875,29 @@ const build_works_toc = collected => {
           toc.push({
             type: 'text',
             id: textId,
-            title: replaceDashes(toctitle.title),
+            title: htmlToXml(toctitle.title),
             prefix: replaceDashes(toctitle.prefix),
           });
         } else if (partName === 'section') {
           const subtoc = handle_section(part.get('content'));
-          const title = part.get('head/toctitle').text();
+          const head = part.get('head');
+          const toctitle = extractTocTitle(head);
           toc.push({
             type: 'section',
-            title: title,
+            title: htmlToXml(toctitle.title),
             content: subtoc,
           });
         } else if (partName === 'prose') {
           const textId = part.attr('id').value();
           const head = part.get('head');
-          const title = head.get('title') ? head.get('title').text() : null;
-          const toctitle = extractTocTitle(head, textId);
+          const toctitle = extractTocTitle(head);
           if (toctitle == null) {
             throw `${textId} mangler title og toctitle i ${poetId}/${workId}.xml`;
           }
           toc.push({
             type: 'text',
             id: textId,
-            title: replaceDashes(toctitle.title),
+            title: htmlToXml(toctitle.title),
             prefix: toctitle.prefix,
           });
         }
