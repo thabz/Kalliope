@@ -467,16 +467,13 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
       );
     });
   } else if (subtitle) {
-    subtitles = [
-      htmlToXml(
-        subtitle
-          .toString()
-          .replace('<subtitle>', '')
-          .replace('</subtitle>', ''),
-        collected,
-        true
-      ),
-    ];
+    const subtitleString = subtitle
+      .toString()
+      .replace('<subtitle>', '')
+      .replace('</subtitle>', '');
+    if (subtitleString.indexOf('<subtitle/>') === -1) {
+      subtitles = [htmlToXml(subtitleString, collected, true)];
+    }
   }
   let keywordsArray = null;
   if (keywords) {
@@ -1549,14 +1546,13 @@ const update_elasticsearch = collected => {
                 )
               );
           } else if (subtitle) {
-            subtitles = [
-              replaceDashes(
-                subtitle
-                  .toString()
-                  .replace('<subtitle>', '')
-                  .replace('</subtitle>', '')
-              ),
-            ];
+            const subtitleString = subtitle
+              .toString()
+              .replace('<subtitle>', '')
+              .replace('</subtitle>', '');
+            if (subtitleString.indexOf('<subtitle/>') === -1) {
+              subtitles = [replaceDashes(subtitleString)];
+            }
           }
           let keywordsArray = null;
           if (keywords) {
