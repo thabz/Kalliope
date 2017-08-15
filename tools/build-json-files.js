@@ -692,6 +692,10 @@ const works_first_pass = collected => {
 
       let doc = loadXMLDoc(workFilename);
       const work = doc.get('//kalliopework');
+      const attrId = work.attr('id').value();
+      if (attrId !== workId) {
+        throw new Error(`${workFilename} has wrong id in <kalliopework>`);
+      }
       const head = work.get('workhead');
       const title = head.get('title').text();
       const year = head.get('year').text();
