@@ -257,6 +257,7 @@ export default class TextContent extends React.Component {
       case 'a':
         return this.handle_a(node);
       default:
+        console.log(`Mærkeligt tag fundet ${node.toString()}`);
         return (
           <code>
             {node.toString()}
