@@ -304,7 +304,9 @@ export default class extends React.Component {
 
     let henterFlere = null;
     if (this.hits.length < result.hits.total) {
-      henterFlere = <div>Henter flere</div>;
+      henterFlere = (
+        <div style={{ marginBottom: '500px' }}>Henter flere...</div>
+      );
     }
 
     let tabs = null;
