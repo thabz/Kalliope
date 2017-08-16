@@ -45,11 +45,11 @@
             <text id="I" font-family="Palatino-Italic, Palatino" font-size="16" font-style="italic" font-weight="normal" fill="#000000">
                 <tspan x="325" y="472">I</tspan>
             </text>
-            <polygon id="Path-2" stroke="#000000" points="28.8815664 183.014898 123.272493 253.342301 123.946922 451.282316 321.270733 452.335201 321.0718 253.694071 416.789751 127.335702 290.130557 32.3018841 194.817749 158.352151 99.259915 88.3037387"></polygon>
-            <polygon id="Path-3" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" points="123.257324 253.513769 195.120629 158.155645 321.074226 253.949951"></polygon>
-            <path d="M196.195719,158.648123 L194.929346,450.054758" id="Path-4" stroke="#000000" stroke-dasharray="9.936908517350158"></path>
-            <path d="M196.241813,158.529249 L321.307123,452.259995" id="Path-5" stroke="#000000" stroke-dasharray="9.936908517350158"></path>
-            <path d="M124.987677,253.274372 L416.901347,127.364814" id="Path-6" stroke="#000000" stroke-dasharray="9.936908517350158"></path>
+            <polygon id="Path-2" stroke="#000000" points="28.8815664 183.014898 123 253 123 452 321 452 321 253 417 127 290.130557 32.3018841 194.817749 158.352151 99.259915 88.3037387" vector-effect="non-scaling-stroke"></polygon>
+            <polygon id="Path-3" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" points="123 253 195.123307 158.155645 321 253" vector-effect="non-scaling-stroke"></polygon>
+            <path d="M195,158 L195,451.595764" id="Path-4" stroke="#000000" stroke-dasharray="8" vector-effect="non-scaling-stroke"></path>
+            <path d="M195,158 L321,452" id="Path-5" stroke="#000000" stroke-dasharray="8" vector-effect="non-scaling-stroke"></path>
+            <path d="M123,253 L417,127" id="Path-6" stroke="#000000" stroke-dasharray="8" vector-effect="non-scaling-stroke"></path>
         </g>
     </g>
 </svg>
