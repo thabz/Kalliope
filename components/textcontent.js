@@ -17,6 +17,7 @@ type TextContentPropsType = {
   lang: Lang,
   options?: TextContentOptions,
   style?: ?Object,
+  className?: ?string,
   keyPrefix?: string, // Ved bladring hopper linjenumrene hvis alle digtes linjer har samme key.
 };
 export default class TextContent extends React.Component {
@@ -290,7 +291,7 @@ export default class TextContent extends React.Component {
     return collected;
   }
   render() {
-    const { contentHtml, style, keyPrefix } = this.props;
+    const { contentHtml, style, keyPrefix, className } = this.props;
     const options = this.props.options || {};
 
     if (contentHtml == null) {
@@ -385,7 +386,7 @@ export default class TextContent extends React.Component {
     });
 
     return (
-      <div style={style}>
+      <div style={style} className={className}>
         {lines}
         <style jsx>{`
           :global(.poem-line::before),

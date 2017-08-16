@@ -267,9 +267,18 @@ export default class extends React.Component {
               <TextContent
                 contentHtml={content_html}
                 lang={lang}
-                style={{ marginBottom: '30px' }}
+                className="bio-text"
+                style={{ marginBottom: '40px' }}
               />
               <Timeline timeline={timeline} />
+              <style jsx>{`
+                @media (max-width: 800px) {
+                  :global(.bio-text) {
+                    border-bottom: 1px solid #666;
+                    padding-bottom: 40px;
+                  }
+                }
+              `}</style>
             </div>
           </SidebarSplit>
           <LangSelect lang={lang} />
