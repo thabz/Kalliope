@@ -58,9 +58,15 @@ export default class Heading extends React.Component {
           @media (max-width: 480px) {
             .heading :global(h1) {
               padding-top: 10px;
-              line-height: 24px;
-              font-size: 24px;
-              font-weight: lighter;
+              line-height: 22px;
+              font-size: 22px;
+            }
+          }
+          @media (max-width: 320px) {
+            .heading :global(h1) {
+              padding-top: 10px;
+              line-height: 18px;
+              font-size: 18px;
             }
           }
           @media print {
