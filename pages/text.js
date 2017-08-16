@@ -282,6 +282,11 @@ export default class extends React.Component {
                     .text-content sc {
                       font-variant: small-caps;
                     }
+
+                    @media print {
+                      font-size: 8pt;
+                      line-height: 1.5;
+                    }
                   `}</style>
                 </div>
               </div>
