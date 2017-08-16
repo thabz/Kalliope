@@ -128,8 +128,9 @@ const build_poet_timeline_json = (poet, collected) => {
       }
     });
     if (poet.period.born.date !== '?') {
-      const place =
-        poet.period.born.place != null ? ' i ' + poet.period.born.place : '';
+      const place = (poet.period.born.place != null
+        ? ' i ' + poet.period.born.place + ''
+        : '').replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.
       items.push({
         date: poet.period.born.date,
         type: 'text',
@@ -139,8 +140,9 @@ const build_poet_timeline_json = (poet, collected) => {
       });
     }
     if (poet.period.dead.date !== '?') {
-      const place =
-        poet.period.dead.place != null ? ' i ' + poet.period.dead.place : '';
+      const place = (poet.period.dead.place != null
+        ? ' i ' + poet.period.dead.place
+        : '').replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.;
       items.push({
         date: poet.period.dead.date,
         type: 'text',
