@@ -40,7 +40,7 @@ export default class TextContent extends React.Component {
       .replace(/uu/g, '\u23D6')
       .replace(/u/g, '\u23D1')
       .replace(/-/g, '\u23BC');
-    const parts = unicode.split(/ */).map(x =>
+    const parts = unicode.split(/ */).map((x, i) =>
       <span
         style={{
           display: 'inline-block',
@@ -50,7 +50,7 @@ export default class TextContent extends React.Component {
       </span>
     );
     return (
-      <span style={{ fontSize: '1.1em' }}>
+      <span key={i} style={{ fontSize: '1.1em' }}>
         {parts}
       </span>
     );
@@ -60,7 +60,7 @@ export default class TextContent extends React.Component {
     if (node.hasAttribute('person')) {
       const poetId = node.getAttribute('person');
       return (
-        <Link route={Links.poetURL(lang, poetId)}>
+        <Link key={this.keySeq++} route={Links.poetURL(lang, poetId)}>
           <a>
             {this.handle_nodes(node.childNodes)}
           </a>
@@ -69,7 +69,7 @@ export default class TextContent extends React.Component {
     } else if (node.hasAttribute('poet')) {
       const poetId = node.getAttribute('poet');
       return (
-        <Link route={Links.poetURL(lang, poetId)}>
+        <Link key={this.keySeq++} route={Links.poetURL(lang, poetId)}>
           <a>
             {this.handle_nodes(node.childNodes)}
           </a>
@@ -78,7 +78,7 @@ export default class TextContent extends React.Component {
     } else if (node.hasAttribute('poem')) {
       const textId = node.getAttribute('poem');
       return (
-        <Link route={Links.textURL(lang, textId)}>
+        <Link key={this.keySeq++} route={Links.textURL(lang, textId)}>
           <a>
             {this.handle_nodes(node.childNodes)}
           </a>
@@ -87,7 +87,7 @@ export default class TextContent extends React.Component {
     } else if (node.hasAttribute('keyword')) {
       const keywordId = node.getAttribute('keyword');
       return (
-        <Link route={Links.keywordURL(lang, keywordId)}>
+        <Link key={this.keySeq++} route={Links.keywordURL(lang, keywordId)}>
           <a>
             {this.handle_nodes(node.childNodes)}
           </a>
@@ -96,7 +96,7 @@ export default class TextContent extends React.Component {
     } else if (node.hasAttribute('dict')) {
       const keywordId = node.getAttribute('dict');
       return (
-        <Link route={Links.dictionaryURL(lang, keywordId)}>
+        <Link key={this.keySeq++} route={Links.dictionaryURL(lang, keywordId)}>
           <a>
             {this.handle_nodes(node.childNodes)}
           </a>
@@ -107,7 +107,7 @@ export default class TextContent extends React.Component {
       const poetId = parts[0];
       const workId = parts[1];
       return (
-        <Link route={Links.workURL(lang, poetId, workId)}>
+        <Link key={this.keySeq++} route={Links.workURL(lang, poetId, workId)}>
           <a>
             {this.handle_nodes(node.childNodes)}
           </a>
@@ -116,7 +116,7 @@ export default class TextContent extends React.Component {
     } else if (node.hasAttribute('href')) {
       const href = node.getAttribute('href');
       return (
-        <Link route={href}>
+        <Link key={this.keySeq++} route={href}>
           <a>
             {this.handle_nodes(node.childNodes)}
           </a>
@@ -125,7 +125,7 @@ export default class TextContent extends React.Component {
     } else if (node.hasAttribute('bible')) {
       const bibleId = node.getAttribute('bible');
       return (
-        <Link route={Links.bibleURL(lang, bibleId)}>
+        <Link key={this.keySeq++} route={Links.bibleURL(lang, bibleId)}>
           <a>
             {this.handle_nodes(node.childNodes)}
           </a>
@@ -173,7 +173,7 @@ export default class TextContent extends React.Component {
         );
       case 'sup':
         return (
-          <sup>
+          <sup key={this.keySeq++}>
             {this.handle_nodes(node.childNodes)}
           </sup>
         );
@@ -194,26 +194,31 @@ export default class TextContent extends React.Component {
         // linjeskift efter (vi laver jo \n til <br/>) renderer
         // vi som inline-block.
         return (
-          <center style={{ display: 'inline-block', width: '100%' }}>
+          <center
+            key={this.keySeq++}
+            style={{ display: 'inline-block', width: '100%' }}>
             {this.handle_nodes(node.childNodes)}
           </center>
         );
       case 's':
       case 'small':
         return (
-          <small style={{ display: 'inline', lineHeight: '1.4em' }}>
+          <small
+            key={this.keySeq++}
+            style={{ display: 'inline', lineHeight: '1.4em' }}>
             {this.handle_nodes(node.childNodes)}
           </small>
         );
       case 'biblio':
         return (
-          <span style={{ opacity: 0.5 }}>
+          <span key={this.keySeq++} style={{ opacity: 0.5 }}>
             [{this.handle_nodes(node.childNodes)}]
           </span>
         );
       case 'right':
         return (
           <span
+            key={this.keySeq++}
             style={{
               display: 'inline-block',
               width: '100%',
@@ -225,6 +230,7 @@ export default class TextContent extends React.Component {
       case 'num':
         return (
           <span
+            key={this.keySeq++}
             style={{
               display: 'inline',
               opacity: 0.4,
@@ -235,7 +241,7 @@ export default class TextContent extends React.Component {
         );
       case 'w':
         return (
-          <span style={{ letterSpacing: '0.2em' }}>
+          <span key={this.keySeq++} style={{ letterSpacing: '0.2em' }}>
             {this.handle_nodes(node.childNodes)}
           </span>
         );
@@ -245,6 +251,7 @@ export default class TextContent extends React.Component {
         const width = Math.min(node.getAttribute('width') * 10, 100);
         return (
           <hr
+            key={this.keySeq++}
             size="1"
             color="black"
             style={{ color: 'black', width: `${width}%` }}
@@ -261,7 +268,7 @@ export default class TextContent extends React.Component {
           width: width,
           maxWidth: '100%',
         };
-        return <img src={src} style={style} alt={alt} />;
+        return <img key={this.keySeq++} src={src} style={style} alt={alt} />;
       }
       case 'footnote':
       case 'note':
