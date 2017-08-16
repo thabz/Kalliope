@@ -298,9 +298,6 @@ export default class Tabs extends React.Component {
             width: 100%;
             padding-bottom: 16px;
           }
-          .tabs {
-            background-color: yellow;
-          }
           :global(.tabs) > :global(.tab) {
             display: inline-block;
             margin-right: 40px;
@@ -325,27 +322,6 @@ export default class Tabs extends React.Component {
           :global(.tabs) > :global(.tab) :global(a) {
             color: #707070;
           }
-          @media (max-width: 321px) {
-            .tabs > :global(.tab) {
-              margin-right: 4px !important;
-            }
-          }
-          @media (max-width: 480px) {
-            :global(.tabs) > :global(.tab) {
-              margin-right: 10px;
-            }
-            :global(.tabs) > :global(.tab) :global(h2) {
-              font-size: 12px !important;
-              line-height: 12px;
-            }
-            :global(.svg-container) {
-              flex-basis: 12px;
-            }
-            :global(.search-field) {
-              font-size: 12px;
-              line-height: 12px;
-            }
-          }
           @media (max-width: 850px) {
             :global(.tabs) > :global(.tab) :global(h2) {
               font-size: 30px;
@@ -362,7 +338,6 @@ export default class Tabs extends React.Component {
               line-height: 30px;
             }
           }
-
           @media (max-width: 800px) {
             :global(.tabs) > :global(.tab) :global(h2) {
               font-size: 28px;
@@ -411,6 +386,41 @@ export default class Tabs extends React.Component {
               line-height: 18px;
             }
           }
+
+          @media (max-width: 480px) {
+            :global(.tabs) > :global(.tab) {
+              margin-right: 10px;
+            }
+            :global(.tabs) > :global(.tab) :global(h2) {
+              font-size: 12px !important;
+              line-height: 12px;
+            }
+            :global(.svg-container) {
+              flex-basis: 12px;
+            }
+            :global(.search-field) {
+              font-size: 12px;
+              line-height: 12px;
+            }
+          }
+
+          @media (max-width: 320px) {
+            :global(.tabs) > :global(.tab) {
+              margin-right: 4px;
+            }
+            :global(.tabs) > :global(.tab) :global(h2) {
+              font-size: 10px !important;
+              line-height: 10px;
+            }
+            :global(.svg-container) {
+              flex-basis: 10px;
+            }
+            :global(.search-field) {
+              font-size: 10px;
+              line-height: 10px;
+            }
+          }
+
           @media print {
             .tabs-container {
               display: none;
