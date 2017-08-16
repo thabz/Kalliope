@@ -22,7 +22,11 @@ type TextContentPropsType = {
 };
 export default class TextContent extends React.Component {
   props: TextContentPropsType;
+  static defaultProps = {
+    keyPrefix: 'linje-',
+  };
   keySeq: number;
+
   constructor(props: TextContentPropsType) {
     super(props);
     this.keySeq = 1;
@@ -378,7 +382,7 @@ export default class TextContent extends React.Component {
       } else {
         // Prose
         return (
-          <div className={className} key={keyPrefix + i}>
+          <div className={className} key={i + keyPrefix}>
             {rendered}
           </div>
         );
