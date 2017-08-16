@@ -208,7 +208,7 @@ export default class extends React.Component {
       <div>
         <Head headTitle="Digtere - Kalliope" />
         <Main>
-          <Nav lang={lang} title="Digtere" />
+          <Nav lang={lang} title={pageTitle} />
           <Heading title={pageTitle} />
           <Tabs items={tabs} selected={groupBy} country={country} lang={lang} />
           {renderedGroups}

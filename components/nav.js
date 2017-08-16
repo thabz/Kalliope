@@ -6,6 +6,8 @@ import { Link } from '../routes';
 import PoetName from './poetname';
 import WorkName from './workname';
 import TextName from './textname';
+import CommonData from '../pages/helpers/commondata.js';
+import * as Strings from '../pages/helpers/strings.js';
 import * as Links from './links.js';
 import type {
   Lang,
@@ -72,11 +74,26 @@ export default class Nav extends React.Component {
     );
 
     if (!links) {
-      const poetsURL = poet
-        ? <Link prefetch route={Links.poetsURL(lang, 'name', poet.country)}>
-            <a>Digtere</a>
+      let poetsURL = null;
+      if (poet != null) {
+        let poetsLinkText = null;
+        if (poet.country !== 'dk') {
+          const cn = CommonData.countries.filter(c => {
+            return c.code === poet.country;
+          })[0];
+          poetsLinkText =
+            Strings.toTitleCase(cn.adjective[lang]) + ' ' + ' digtere';
+        } else {
+          poetsLinkText = 'Digtere';
+        }
+        poetsURL = (
+          <Link prefetch route={Links.poetsURL(lang, 'name', poet.country)}>
+            <a>
+              {poetsLinkText}
+            </a>
           </Link>
-        : null;
+        );
+      }
       const poetLink = poet
         ? <Link prefetch route={Links.poetURL(lang, poet.id)}>
             <a>
