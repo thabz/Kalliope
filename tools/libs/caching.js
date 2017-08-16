@@ -66,7 +66,9 @@ const isFileModified = (...filenames) => {
   };
   let result = false;
   for (let i = 0; i < filenames.length; i++) {
-    result = _isFileModified(filenames[i]) || result;
+    if (filenames[i] != null) {
+      result = _isFileModified(filenames[i]) || result;
+    }
   }
   return result;
 };

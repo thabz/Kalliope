@@ -204,6 +204,10 @@ const build_portrait_json = (poet, collected) => {
 const build_bio_json = collected => {
   collected.poets.forEach((poet, poetId) => {
     // Skip if all of the participating xml files aren't modified
+    const portrait_xml =
+      poet.portrait != null
+        ? `fdirs/${poet.id}/` + poet.portrait.replace('.jpg', '.xml')
+        : null;
     if (
       !isFileModified(
         `data/poets.xml:${poet.id}`,
@@ -212,8 +216,8 @@ const build_bio_json = collected => {
           .get(poetId)
           .map(workId => `fdirs/${poet.id}/${workId}.xml`),
         `fdirs/${poet.id}/events.xml`,
-        `fdirs/${poet.id}/p1.xml`,
-        `static/images/${poet.id}/p1.jpg`,
+        portrait_xml,
+        `static/images/${poet.id}/${poet.portrait}`,
         `fdirs/${poet.id}/bio.xml`
       )
     ) {
