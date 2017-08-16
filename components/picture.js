@@ -15,13 +15,17 @@ export default class Picture extends React.Component {
     const { picture, lang, srcPrefix } = this.props;
 
     const src: string = (srcPrefix || '') + '/' + picture.src;
-    const fallbackSrc = src.replace(/.jpg$/, CommonData.fallbackImagePostfix);
+    const fallbackSrc = src.replace(/\/(.*?).jpg$/, (m, p1) => {
+      return '/t/' + p1 + CommonData.fallbackImagePostfix;
+    });
     const sizes = '(max-width: 700px) 250px, 48vw';
     let srcsets = {};
     const sources = CommonData.availableImageFormats.map(ext => {
       const srcset = CommonData.availableImageWidths
         .map(width => {
-          const filename = src.replace(/.jpg$/, `-w${width}.${ext}`);
+          const filename = src
+            .replace(/.jpg$/, `-w${width}.${ext}`)
+            .replace(/\/([^\/]*?)$/, '/t/$1');
           return `${filename} ${width}w`;
         })
         .join(', ');

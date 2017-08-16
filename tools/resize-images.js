@@ -2,6 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 const CommonData = require('../pages/helpers/commondata.js');
+const {
+  isFileModified,
+  refreshFilesModifiedCache,
+  loadCachedJSON,
+  writeCachedJSON,
+} = require('./libs/caching.js');
+const { fileExists, safeMkdir } = require('./libs/helpers.js');
 
 const resize = (inputfile, outputfile, maxWidth) => {
   sharp(inputfile)
@@ -32,11 +39,11 @@ const handleDirRecursive = dirname => {
     ) {
       CommonData.availableImageFormats.forEach((ext, i) => {
         CommonData.availableImageWidths.forEach(width => {
-          const outputfile = fullFilename.replace(
-            /\.jpg$/,
-            `-w${width}.${ext}`
-          );
-          if (!fs.existsSync(outputfile)) {
+          const outputfile = fullFilename
+            .replace(/\.jpg$/, `-w${width}.${ext}`)
+            .replace(/\/([^\/]+)$/, '/t/$1');
+          safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
+          if (isFileModified(fullFilename) || !fileExists(outputfile)) {
             resize(fullFilename, outputfile, width);
           }
         });
@@ -47,3 +54,5 @@ const handleDirRecursive = dirname => {
 
 handleDirRecursive('static/images');
 handleDirRecursive('static/kunst');
+
+refreshFilesModifiedCache();
