@@ -149,8 +149,12 @@
    <entry date="1592-09-13" type="text">
      <html>Michel de Montaigne død i Bordeaux.</html>
    </entry>
-   <entry date="1599" type="text">
-     <html>Shakespeares teater The Globe Playhouse åbner i London.</html>
+   <entry date="1599-06" type="text">
+       <html><a poet="shakespeare">Shakespeares</a> teater The Globe Playhouse åbner i London.</html>
+   </entry>
+   <entry date="1599" type="image">
+       <src>kunst/the-globe.jpg</src>
+     <html><i>Globe Theatre</i>, stik fra 1612. Yale Center for British Art.</html>
    </entry>
    <entry date="1613" type="text">
      <html>Første tobakdyrkning i Englands nordamerikanske kolonier.</html>
