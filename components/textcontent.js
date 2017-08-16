@@ -150,7 +150,7 @@ export default class TextContent extends React.Component {
         );
       case 'b':
         return (
-          <b>
+          <b key={this.keySeq++}>
             {this.handle_nodes(node.childNodes)}
           </b>
         );
@@ -245,6 +245,19 @@ export default class TextContent extends React.Component {
             style={{ color: 'black', width: `${width}%` }}
           />
         );
+      case 'img': {
+        const width = node.getAttribute('width');
+        const src = node.getAttribute('src');
+        const alt = node.getAttribute('alt');
+        if (width == null || alt == null) {
+          console.log(`Der mangler alt-attribut på inline img.`);
+        }
+        const style = {
+          width: width,
+          maxWidth: '100%',
+        };
+        return <img src={src} style={style} alt={alt} />;
+      }
       case 'footnote':
       case 'note':
         const noteContent = this.handle_nodes(node.childNodes);
