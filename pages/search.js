@@ -97,7 +97,7 @@ export default class extends React.Component {
         html.scrollHeight || 0,
         html.offsetHeight || 0
       );
-      if (window.pageYOffset + window.innerHeight > documentHeight - 50) {
+      if (window.pageYOffset + window.innerHeight > documentHeight - 600) {
         this.appendItems();
       }
     }
