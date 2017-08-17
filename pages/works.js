@@ -41,10 +41,10 @@ export default class extends React.Component {
       return <ErrorPage error={error} lang={lang} message="Ukendt digter" />;
     }
 
-    if (works.length === 0 && poet.has_biography) {
-      // TODO: This fails on the server... we should return a 302 instead (moved temporarily) when serverside. See issue #147.
+    if (works.length === 0) {
       const bioURL = Links.bioURL(lang, poet.id);
       Router.replaceRoute(bioURL);
+      return null;
     }
 
     const sortWorks = works => {
