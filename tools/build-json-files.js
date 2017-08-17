@@ -1424,7 +1424,7 @@ const build_todays_events_json = collected => {
           langs.forEach(lang => {
             content_html = `<a poet="${poetId}">${poetName(poet)}</a>`;
             content_html += lang === 'da' ? ' død' : ' dead';
-            if (born.place != null) {
+            if (dead.place != null) {
               content_html += `, ${dead.place}.`;
             } else {
               content_html += '.';
