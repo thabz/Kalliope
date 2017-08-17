@@ -1302,10 +1302,18 @@ const build_about_pages = collected => {
     .filter(paths => isFileModified(paths.xml))
     .forEach(paths => {
       const doc = loadXMLDoc(paths.xml);
-      const head = doc.get('//head');
-      const body = doc.get('//body');
+      const about = doc.get('//about');
+      const head = about.get('head');
+      const body = about.get('body');
+      const title = head.get('title').text();
+      const pictures = get_pictures(head);
+      // Data er samme format som keywords
       const data = {
-        title: head.get('title').text(),
+        id: paths.xml,
+        title,
+        author: null,
+        has_footnotes: false,
+        pictures,
         content_html: htmlToXml(
           body.toString().replace('<body>', '').replace('</body>', ''),
           collected

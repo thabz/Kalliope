@@ -9,17 +9,28 @@ import LangSelect from '../components/langselect';
 import Nav from '../components/nav';
 import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
+import SidebarPictures from '../components/sidebarpictures.js';
 import * as Links from '../components/links';
+import * as Client from './helpers/client.js';
 import Heading from '../components/heading.js';
 import TextContent from '../components/textcontent.js';
-import type { Lang, NewsItem, TextContentType } from './helpers/types.js';
+import ErrorPage from './error.js';
+import type {
+  Lang,
+  NewsItem,
+  TextContentType,
+  Keyword,
+} from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
+
+// Koden er stort set identisk med keyword
 
 export default class extends React.Component {
   props: {
     lang: Lang,
-    item: { title: string, content_html: TextContentType },
+    keyword: Keyword,
+    error: ?Error,
   };
 
   static async getInitialProps({
@@ -30,39 +41,59 @@ export default class extends React.Component {
     if (lang == null) {
       lang = 'da';
     }
-    const res = await fetch(
-      createURL(`/static/api/about/${aboutItemId}_${lang}.json`)
-    );
-    const item = await res.json();
-    return { lang, item };
+
+    const json = await Client.about(aboutItemId, lang);
+    return {
+      lang,
+      keyword: json,
+      error: json.error,
+    };
   }
 
   render() {
-    const { lang, item } = this.props;
+    const { lang, keyword, error } = this.props;
+
+    if (error) {
+      return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
+    }
+
+    const renderedPictures = (
+      <SidebarPictures
+        lang={lang}
+        pictures={keyword.pictures}
+        srcPrefix={'/static/images/keywords'}
+      />
+    );
+    let sidebar = [];
+    if (keyword.has_footnotes || keyword.pictures.length > 0) {
+      if (keyword.has_footnotes) {
+        sidebar.push(<FootnoteList />);
+      }
+      if (keyword.pictures.length > 0) {
+        sidebar.push(renderedPictures);
+      }
+    }
+    const body = <TextContent contentHtml={keyword.content_html} lang={lang} />;
     const navbar = [
       <Link route={Links.aboutURL(lang, 'kalliope')}>
         <a>Om</a>
       </Link>,
     ];
 
-    const renderedAbout = (
-      <TextContent contentHtml={item.content_html} lang={lang} />
-    );
-
     return (
       <div>
         <Head headTitle="Kalliope" />
         <Main>
-          <Nav lang="da" links={navbar} title={item.title} />
+          <Nav lang="da" links={navbar} title={keyword.title} />
           <Heading title="Kalliope" />
           <KalliopeTabs lang={lang} selected="about" />
           <SidebarSplit sidebar={null}>
             <div>
               <SubHeading>
-                {item.title}
+                {keyword.title}
               </SubHeading>
               <div className="about-body">
-                {renderedAbout}
+                {body}
               </div>
               <style jsx>{`
                 .about-body {

@@ -9,6 +9,7 @@ import type {
   Work,
   WorkId,
   Text,
+  Keyword,
   PrevNextText,
   LinesPair,
   TocItem,
@@ -83,6 +84,13 @@ export const bio = async (poetId: PoetId): FetchBioResult => {
 type FetchKeywordResult = Promise<Keyword>;
 export const keyword = async (keywordId: string): FetchKeywordResult => {
   return fetchJSON(`/static/api/keywords/${keywordId}.json`);
+};
+
+export const about = async (
+  keywordId: string,
+  lang: Lang
+): FetchKeywordResult => {
+  return fetchJSON(`/static/api/about/${keywordId}_${lang}.json`);
 };
 
 type FetchTextResult = Promise<{
