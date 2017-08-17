@@ -3901,17 +3901,19 @@
   <works>1820,1830</works>
 </person>
 
-<person id="delavigne" country="fr" lang="fr" type="poet">
+<person id="delavigne" country="fr" lang="fr" type="poet" portrait="p3.jpg">
   <name>
     <firstname>Casimir</firstname>
     <lastname>Delavigne</lastname>
+    <fullname>Jean-François Casimir Delavigne</fullname>
   </name>
   <period>
     <born>
-      <date>1793</date>
+      <date>1793-04-04</date>
+      <place>Le Havre</place>
     </born>
     <dead>
-      <date>1843</date>
+      <date>1843-12-11</date>
     </dead>
   </period>
   <works>andre</works>
@@ -4030,7 +4032,7 @@
   <works>1829,andre</works>
 </person>
 
-<person id="gautier" country="fr" lang="fr" type="poet">
+<person id="gautier" country="fr" lang="fr" type="poet" portrait="p4.jpg">
   <name>
     <firstname>Théophile</firstname>
     <lastname>Gautier</lastname>
