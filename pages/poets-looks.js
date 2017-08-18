@@ -168,9 +168,9 @@ export default class extends React.Component {
         item = <MissingPortrait poet={poet} lang={lang} />;
       }
       const url = Links.bioURL(lang, poet.id);
-      const searchURL = `https://duckduckgo.com/?q=${poetNameString(
-        poet
-      ).replace(/ /g, '+')}&t=osx&ia=images&iax=1`;
+      const q = poetNameString(poet).replace(/ /g, '+');
+      //const searchURL = `https://duckduckgo.com/?q=${q}&t=osx&ia=images&iax=1`;
+      const searchURL = `https://www.google.dk/search?tbm=isch&q=${q}&tbs=imgo:1&gws_rd=c`;
       return (
         <div style={{ flexBasis: '30%', marginTop: '30px' }} key={poet.id}>
           <Link key={poet.id} route={url}>
