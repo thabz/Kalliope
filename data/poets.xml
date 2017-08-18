@@ -6826,7 +6826,7 @@
   </period>
 </person>
 
-<person id="rahbekk" country="dk" lang="da" type="person">
+<person id="rahbekk" country="dk" lang="da" type="person" portrait="p2.jpg">
   <name>
     <firstname>Kamma</firstname>
     <lastname>Rahbek</lastname>
@@ -6835,9 +6835,11 @@
   <period>
     <born>
       <date>1775-10-19</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1829-01-21</date>
+      <place>Frederiksberg</place>
     </dead>
   </period>
 </person>
