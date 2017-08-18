@@ -9,10 +9,14 @@ export default class Picture extends React.Component {
   props: {
     picture: PictureItem,
     srcPrefix?: string,
+    showDropShadow?: boolean,
     lang: Lang,
   };
+  static defaultProps = {
+    showDropShadow: true,
+  };
   render() {
-    const { picture, lang, srcPrefix } = this.props;
+    const { picture, lang, srcPrefix, showDropShadow } = this.props;
 
     const src: string = (srcPrefix || '') + '/' + picture.src;
     const fallbackSrc = src.replace(/\/(.*?).jpg$/, (m, p1) => {
@@ -36,9 +40,12 @@ export default class Picture extends React.Component {
     const alt = picture.content_html
       ? '' //Strings.trimHtml(picture.content_html)
       : 'Billede';
-    let pictureClassName = null;
+    let pictureClassName = '';
     if (picture.src.indexOf('-oval.jpg') > -1) {
-      pictureClassName = 'oval-mask';
+      pictureClassName += 'oval-mask';
+    }
+    if (showDropShadow) {
+      pictureClassName += ' with-drop-shadow';
     }
     return (
       <div className="sidebar-picture">
@@ -72,6 +79,8 @@ export default class Picture extends React.Component {
           }
           img {
             border: 0;
+          }
+          img.with-drop-shadow {
             box-shadow: 4px 4px 12px #888;
           }
           @media print {

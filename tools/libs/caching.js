@@ -11,11 +11,20 @@ const crypto = require('crypto');
 const force_reload = process.argv.indexOf('--force-reload') !== -1;
 
 // Load caches
-const old_sha = force_reload ? {} : loadJSON('./caches/files-sha.json') || {};
+let old_sha = loadJSON('./caches/files-sha.json') || {};
 let new_sha = {};
 let unmodified_files = new Set();
 let deleted_files = new Set();
 safeMkdir(`caches`);
+
+// Only keep images in old_sha if force_reload
+if (force_reload) {
+  for (let key in old_sha) {
+    if (!key.match(/.jpg/)) {
+      delete old_sha[key];
+    }
+  }
+}
 
 const isFileModified = (...filenames) => {
   const _isFileModified = filename => {

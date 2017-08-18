@@ -7,16 +7,21 @@ export default class SidebarPictures extends React.Component {
   props: {
     pictures: Array<PictureItem>,
     srcPrefix?: string,
+    showDropShadow?: boolean,
     lang: Lang,
   };
+  static defaultProps = {
+    showDropShadow: true,
+  };
   render() {
-    const { pictures, lang, srcPrefix } = this.props;
+    const { pictures, lang, srcPrefix, showDropShadow } = this.props;
     const renderedPictures = pictures.map((picture, i) => {
       return (
         <Picture
           key={'picture' + i}
           picture={picture}
           srcPrefix={srcPrefix}
+          showDropShadow={showDropShadow}
           lang={lang}
         />
       );

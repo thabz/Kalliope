@@ -383,7 +383,7 @@
   <works>andre</works>
 </person>
 
-<person id="chamisso" country="de" lang="de" type="poet">
+<person id="chamisso" country="de" lang="de" type="poet" portrait="p2.jpg">
   <name>
     <firstname>Adelbert von</firstname>
     <lastname>Chamisso</lastname>
@@ -1083,7 +1083,7 @@
   <works>andre</works>
 </person>
 
-<person id="bording" country="dk" lang="da" type="poet">
+<person id="bording" country="dk" lang="da" type="poet" portrait="p2.jpg">
   <name>
     <firstname>Anders Christensen</firstname>
     <lastname>Bording</lastname>
@@ -1865,7 +1865,7 @@
   </period>
 </person>
 
-<person id="abrahamson" country="dk" lang="da" type="poet" portrait="p3.jpg">
+<person id="abrahamson" country="dk" lang="da" type="poet" portrait="p3-oval.jpg">
   <name>
     <firstname>W.H.F.</firstname>
     <lastname>Abrahamson</lastname>
@@ -2725,7 +2725,7 @@
   <works>andre</works>
 </person>
 
-<person id="aarestrup" country="dk" lang="da" type="poet">
+<person id="aarestrup" country="dk" lang="da" type="poet" portrait="p3-oval.jpg">
   <name>
     <firstname>Emil</firstname>
     <lastname>Aarestrup</lastname>
@@ -2779,7 +2779,7 @@
   <works>1830,1831,1832,1833,1833S,1838,1847,1849,1851,1854,1863,1867,1879,andre</works>
 </person>
 
-<person id="bagger" country="dk" lang="da" type="poet">
+<person id="bagger" country="dk" lang="da" type="poet" portrait="p1-oval.jpg">
   <name>
     <firstname>Carl</firstname>
     <lastname>Bagger</lastname>
@@ -2798,7 +2798,7 @@
   <works>1834,1835,1836,1845,andre</works>
 </person>
 
-<person id="mueller" country="dk" lang="da" type="poet">
+<person id="mueller" country="dk" lang="da" type="poet" portrait="p1.jpg">
   <name>
     <firstname>Frederik</firstname>
     <lastname>Paludan-Müller</lastname>
@@ -3291,7 +3291,7 @@
   <works>1871</works>
 </person>
 
-<person id="drachmann" country="dk" lang="da" type="poet">
+<person id="drachmann" country="dk" lang="da" type="poet" portrait="p5.jpg">
   <name>
     <firstname>Holger</firstname>
     <lastname>Drachmann</lastname>
@@ -5515,7 +5515,7 @@
   <works>1786,1787,1788,1789,1786p,andre</works>
 </person>
 
-<person id="wordsworth" country="gb" lang="en" type="poet">
+<person id="wordsworth" country="gb" lang="en" type="poet" portrait="p5.jpg">
   <name>
     <firstname>William</firstname>
     <lastname>Wordsworth</lastname>
@@ -5533,7 +5533,7 @@
   <works>1798,andre</works>
 </person>
 
-<person id="scott" country="gb" lang="en" type="poet">
+<person id="scott" country="gb" lang="en" type="poet" portrait="p3.jpg">
   <name>
     <firstname>Sir Walter</firstname>
     <lastname>Scott</lastname>
@@ -5622,7 +5622,7 @@
   <works>andre</works>
 </person>
 
-<person id="byron" country="gb" lang="en" type="poet">
+<person id="byron" country="gb" lang="en" type="poet" portrait="p3.jpg">
   <name>
     <firstname>George Gordon</firstname>
     <lastname>Byron</lastname>
@@ -5974,7 +5974,7 @@
   <works>1865,1871,1891</works>
 </person>
 
-<person id="rossettid" country="gb" lang="en" type="poet">
+<person id="rossettid" country="gb" lang="en" type="poet" portrait="p2.jpg">
   <name>
     <firstname>Dante Gabriel</firstname>
     <lastname>Rossetti</lastname>
@@ -6826,7 +6826,7 @@
   </period>
 </person>
 
-<person id="rahbekk" country="dk" lang="da" type="person">
+<person id="rahbekk" country="dk" lang="da" type="person" portrait="p2.jpg">
   <name>
     <firstname>Kamma</firstname>
     <lastname>Rahbek</lastname>
@@ -6835,9 +6835,11 @@
   <period>
     <born>
       <date>1775-10-19</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1829-01-21</date>
+      <place>Frederiksberg</place>
     </dead>
   </period>
 </person>

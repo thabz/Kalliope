@@ -406,15 +406,23 @@ const build_poet_workids = () => {
   return collected_workids;
 };
 
-const get_notes = head => {
+// context contains keys for any `${var}` that's to be replaced in the note texts.
+const get_notes = (head, context = {}) => {
   return head.find('notes/note').map(note => {
     const lang = note.attr('lang') ? note.attr('lang').value() : 'da';
     const type = note.attr('type') ? note.attr('type').value() : null;
+    const replaceContextPlaceholders = s => {
+      return s.replace(/\$\{(.*?)\}/g, (_, p1) => {
+        return context[p1];
+      });
+    };
     return {
       lang,
       type,
       content_html: htmlToXml(
-        note.toString().replace(/<note[^>]*>/, '').replace('</note>', ''),
+        replaceContextPlaceholders(note.toString())
+          .replace(/<note[^>]*>/, '')
+          .replace('</note>', ''),
         collected
       ),
     };
@@ -727,6 +735,7 @@ const works_first_pass = collected => {
         const linkTitle = title || firstline;
         texts.set(textId, {
           title: replaceDashes(linkTitle),
+          type: part.name(),
           poetId: poet.id,
           workId: workId,
         });
@@ -1289,6 +1298,13 @@ const build_bibliography_json = collected => {
 
 const build_about_pages = collected => {
   safeMkdir(`static/api/about`);
+  // Regenerate all about-pages if any work-file is modified, since our poem-counts then might be off
+  const areAnyWorkModified = Array.from(collected.works.keys())
+    .filter(key => {
+      return isFileModified(`fdirs/${key}.xml`);
+    })
+    .reduce((result, b) => b || result, false);
+  const arePoetsModified = isFileModified('data/poets.xml');
   const folder = 'data/about';
   const filenames = fs
     .readdirSync(folder)
@@ -1299,14 +1315,34 @@ const build_about_pages = collected => {
         json: `static/api/about/${x.replace(/.xml$/, '.json')}`,
       };
     })
-    .filter(paths => isFileModified(paths.xml))
+    .filter(
+      paths =>
+        isFileModified(paths.xml) || arePoetsModified || areAnyWorkModified
+    )
     .forEach(paths => {
+      let lang = 'da';
+      const m = paths.xml.match(/_(..)\.xml$/);
+      if (m) {
+        lang = m[1];
+      }
       const doc = loadXMLDoc(paths.xml);
       const about = doc.get('//about');
       const head = about.get('head');
       const body = about.get('body');
       const title = head.get('title').text();
       const pictures = get_pictures(head);
+      const poemsNum = Array.from(collected.texts.values())
+        .map(t => (t.type === 'poem' ? 1 : 0))
+        .reduce((sum, v) => sum + v, 0);
+      const poetsNum = Array.from(collected.poets.values())
+        .map(t => (t.type === 'poet' ? 1 : 0))
+        .reduce((sum, v) => sum + v, 0);
+      const notes = get_notes(head, {
+        poemsNum: poemsNum.toLocaleString(lang),
+        poetsNum: poetsNum.toLocaleString(lang),
+        worksNum: collected.works.size.toLocaleString(lang),
+        langsNum: 8 - 1, // gb og us er begge engelsk.
+      });
       // Data er samme format som keywords
       const data = {
         id: paths.xml,
@@ -1314,6 +1350,7 @@ const build_about_pages = collected => {
         author: null,
         has_footnotes: false,
         pictures,
+        notes,
         content_html: htmlToXml(
           body.toString().replace('<body>', '').replace('</body>', ''),
           collected

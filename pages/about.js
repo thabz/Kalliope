@@ -10,6 +10,7 @@ import Nav from '../components/nav';
 import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import SidebarPictures from '../components/sidebarpictures.js';
+import Note from '../components/note.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import Heading from '../components/heading.js';
@@ -61,9 +62,13 @@ export default class extends React.Component {
       <SidebarPictures
         lang={lang}
         pictures={keyword.pictures}
-        srcPrefix={'/static/images/keywords'}
+        showDropShadow={false}
+        srcPrefix={'/static/images/about'}
       />
     );
+    const renderedNotes = keyword.notes.map((note, i) => {
+      return <Note key={i} note={note} lang={lang} />;
+    });
     let sidebar = [];
     if (keyword.has_footnotes || keyword.pictures.length > 0) {
       if (keyword.has_footnotes) {
@@ -71,6 +76,9 @@ export default class extends React.Component {
       }
       if (keyword.pictures.length > 0) {
         sidebar.push(renderedPictures);
+      }
+      if (keyword.notes.length > 0) {
+        sidebar.push(renderedNotes);
       }
     }
     const body = <TextContent contentHtml={keyword.content_html} lang={lang} />;
@@ -87,7 +95,7 @@ export default class extends React.Component {
           <Nav lang="da" links={navbar} title={keyword.title} />
           <Heading title="Kalliope" />
           <KalliopeTabs lang={lang} selected="about" />
-          <SidebarSplit sidebar={null}>
+          <SidebarSplit sidebar={sidebar}>
             <div>
               <SubHeading>
                 {keyword.title}

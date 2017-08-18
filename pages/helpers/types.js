@@ -30,6 +30,7 @@ export type Poet = {
   type: 'poet' | 'person' | 'collection',
   lang: Lang,
   country: Country,
+  portrait: string,
   name: {
     lastname?: string,
     firstname: string,
@@ -119,6 +120,7 @@ export type Keyword = {
   id: string,
   title: string,
   author?: string,
+  notes?: Array<NoteItem>,
   pictures: Array<PictureItem>,
   content_html: TextContentType,
   has_footnotes: boolean,

@@ -2,6 +2,12 @@
 <about>
 <head>
     <title>Om Kalliope</title>
+    <notes>
+        <note>Kalliope indeholder ${poemsNum} digte fordelt på ${worksNum} værker af ${poetsNum} digtere på ${langsNum} sprog.</note>
+    </notes>
+    <pictures>
+        <picture src="poet.jpg" />
+    </pictures>
 </head>
 <body>
 <i>Kalliope</i> er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning. Kalliope indeholder også udenlandsk digtning, men primært i et omfang som kan bruges til belysning af den danske samling.
