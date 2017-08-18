@@ -2,6 +2,12 @@
 <about>
 <head>
     <title>About Kalliope</title>
+    <notes>
+        <note>Kalliope contains ${poemsNum} poems in ${worksNum} works by ${poetsNum} poets in ${langsNum} languages.</note>
+    </notes>
+    <pictures>
+        <picture src="poet.jpg" />
+    </pictures>
 </head>
 <body>
     <i>Kalliope</i> is a database containing old Danish poetry and associated biographical data. The goal is no less than to collect all of the older Danish poetry, but until then, Kalliope will contain a representative and still growing selection. Kalliope also contains poetry in English and other languages, but primarily as reference material to the Danish collection.
