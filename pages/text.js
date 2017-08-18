@@ -206,6 +206,9 @@ export default class extends React.Component {
       if ((m = highlight.match(/(\d+)-(\d+)/))) {
         from = parseInt(m[1]);
         to = parseInt(m[2]);
+      } else if ((m = highlight.match(/(\d+)ff/))) {
+        from = parseInt(m[1]);
+        to = Number.MAX_VALUE;
       } else if ((m = highlight.match(/(\d+)/))) {
         from = parseInt(m[1]);
         to = parseInt(m[1]);
