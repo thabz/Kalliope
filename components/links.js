@@ -12,7 +12,7 @@ export const workURL = (lang: Lang = 'da', poetId: string, workId: string) => {
 
 export const poetsURL = (
   lang: string = 'da',
-  groupBy: 'name' | 'year' = 'name',
+  groupBy: 'name' | 'year' | 'looks' = 'name',
   country: string = 'dk'
 ) => {
   return `/${lang}/poets/${country}/${groupBy}`;
