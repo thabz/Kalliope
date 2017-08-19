@@ -1156,7 +1156,6 @@ const build_keywords = () => {
 };
 
 const build_news = collected => {
-  console.log('Building news');
   ['da', 'en'].forEach(lang => {
     const path = `data/news_${lang}.xml`;
     const doc = loadXMLDoc(path);
@@ -1187,7 +1186,6 @@ const build_dict_first_pass = collected => {
     return;
   }
 
-  console.log('Building dict');
   safeMkdir('static/api/dict');
   const doc = loadXMLDoc(path);
   doc.get('//entries').childNodes().forEach(item => {
@@ -1680,7 +1678,7 @@ const update_elasticsearch = collected => {
                 .replace(/<.*?>/g, ' '),
               collected,
               text.name() === 'poem'
-            ).replace(/<.*?>/g, ' '),
+            ).map(line => line[0]).join(" ").replace(/<.*?>/g, ' '),
           };
           const data = {
             poet,
@@ -1696,10 +1694,15 @@ const update_elasticsearch = collected => {
   elasticSearchClient
     .createIndex('kalliope')
     .then(() => {
-      inner_update_elasticsearch();
+      try {
+        inner_update_elasticsearch();
+      } catch (error) {
+        console.log(error);
+      }
     })
     .catch(error => {
       console.log('Elasticsearch server not found on localhost:9200.');
+      //console.log(error);
     });
 };
 
