@@ -62,22 +62,22 @@ class TextHeading extends React.Component {
         {subtitles}
         <style jsx>{`
           .text-heading :global(h2) {
-            line-height: 1.5;
+            line-height: 1.4em;
             font-size: 1.4em;
             font-weight: normal;
-            margin: 0 0 20px 0;
+            margin: 0 0 15px 0;
             font-style: italic;
+            padding: 0;
           }
           .text-heading :global(h4) {
-            line-height: 1.5;
-            font-size: 1.2em;
+            font-size: 1.05em;
+            line-height: 1.05em;
             font-weight: normal;
-            font-size: 1.0em;
             margin: 0;
-            min-height: 1em;
+            padding: 0;
           }
           .text-heading {
-            margin-bottom: 30px;
+            margin-bottom: 60px;
           }
           .text-heading.poem {
             margin-left: 1.5em;
