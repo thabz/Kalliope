@@ -19,7 +19,7 @@ export default class Picture extends React.Component {
     const { picture, lang, srcPrefix, showDropShadow } = this.props;
 
     const src: string = (srcPrefix || '') + '/' + picture.src;
-    const fallbackSrc = src.replace(/\/(.*?).jpg$/, (m, p1) => {
+    const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
       return '/t/' + p1 + CommonData.fallbackImagePostfix;
     });
     const sizes = '(max-width: 700px) 250px, 48vw';
@@ -29,7 +29,7 @@ export default class Picture extends React.Component {
         .map(width => {
           const filename = src
             .replace(/.jpg$/, `-w${width}.${ext}`)
-            .replace(/\/([^\/]*?)$/, '/t/$1');
+            .replace(/\/([^\/]+)$/, '/t/$1');
           return `${filename} ${width}w`;
         })
         .join(', ');
