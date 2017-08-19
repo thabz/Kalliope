@@ -293,6 +293,7 @@ export default class Tabs extends React.Component {
             font-weight: lighter;
             font-family: inherit;
             transition: font-size ${transitionDuration}, line-height: ${transitionDuration};
+            caret-color: black;
           }
           :global(.searchfield-container) {
             width: 100%;
