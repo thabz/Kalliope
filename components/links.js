@@ -93,9 +93,10 @@ export const searchURL = (
   country: string,
   poetId: ?PoetId = null
 ) => {
+  const escapedQuery = encodeURIComponent(query).replace('%20', '+');
   if (poetId != null) {
-    return `/${lang}/search/${country}/${poetId}?query=${query}`;
+    return `/${lang}/search/${country}/${poetId}?query=${escapedQuery}`;
   } else {
-    return `/${lang}/search/${country}?query=${query}`;
+    return `/${lang}/search/${country}?query=${escapedQuery}`;
   }
 };
