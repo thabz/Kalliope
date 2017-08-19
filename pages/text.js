@@ -148,9 +148,18 @@ export default class extends React.Component {
       <NavPaging prev={rightSideItems[0]} next={rightSideItems[1]} />
     );
 
-    const renderedNotes = text.notes.map((note, i) => {
+    const notes = text.notes.map((note, i) => {
       return <Note key={i} note={note} lang={lang} />;
     });
+    let renderedNotes = null;
+    if (notes.length > 0) {
+      renderedNotes = (
+        <div style={{ marginBottom: '30px' }}>
+          {notes}
+        </div>
+      );
+    }
+
     const renderedPictures = (
       <SidebarPictures
         lang={lang}
