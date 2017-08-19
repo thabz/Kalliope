@@ -8,9 +8,8 @@
     "test": "jest --watch",
     "test-ci": "jest",
     "flow": "flow",
-    "build-json": "node tools/build-json-files.js",
-    "build-json-force-reload": "node tools/build-json-files.js --force-reload",
-    "resize-images": "node tools/resize-images.js"
+    "build-static": "node tools/build-static.js",
+    "build-static-force-reload": "node tools/build-static.js --force-reload"
   },
   "dependencies": {
     "global": "^4.3.2",

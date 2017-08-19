@@ -1,9 +1,12 @@
 const fs = require('fs');
+const path = require('path');
+const sharp = require('sharp');
 const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
 const Paths = require('../pages/helpers/paths.js');
 const entities = require('entities');
 const elasticSearchClient = require('./libs/elasticsearch-client.js');
+const CommonData = require('../pages/helpers/commondata.js');
 
 const {
   isFileModified,
@@ -1547,6 +1550,53 @@ const build_todays_events_json = collected => {
   });
 };
 
+const build_image_thumbnails = () => {
+  const resize = (inputfile, outputfile, maxWidth) => {
+    sharp(inputfile)
+      .resize(maxWidth, 10000)
+      .max()
+      .withoutEnlargement()
+      .toFile(outputfile, function(err) {
+        if (err != null) {
+          console.log(err);
+        }
+        console.log(outputfile);
+      });
+  };
+
+  const pipeJoinedExts = CommonData.availableImageFormats.join('|');
+  const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
+
+  const handleDirRecursive = dirname => {
+    fs.readdirSync(dirname).forEach(filename => {
+      const fullFilename = path.join(dirname, filename);
+      const stats = fs.statSync(fullFilename);
+      if (stats.isDirectory()) {
+        handleDirRecursive(fullFilename);
+      } else if (
+        stats.isFile() &&
+        filename.endsWith('.jpg') &&
+        !skipRegExps.test(filename)
+      ) {
+        CommonData.availableImageFormats.forEach((ext, i) => {
+          CommonData.availableImageWidths.forEach(width => {
+            const outputfile = fullFilename
+              .replace(/\.jpg$/, `-w${width}.${ext}`)
+              .replace(/\/([^\/]+)$/, '/t/$1');
+            safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
+            if (isFileModified(fullFilename) || !fileExists(outputfile)) {
+              resize(fullFilename, outputfile, width);
+            }
+          });
+        });
+      }
+    });
+  };
+
+  handleDirRecursive('static/images');
+  handleDirRecursive('static/kunst');
+};
+
 const update_elasticsearch = collected => {
   const inner_update_elasticsearch = () => {
     collected.poets.forEach((poet, poetId) => {
@@ -1673,6 +1723,7 @@ b('build_about_pages', build_about_pages, collected);
 b('build_dict_second_pass', build_dict_second_pass, collected);
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
+b('build_image_thumbnails', build_image_thumbnails);
 b('update_elasticsearch', update_elasticsearch, collected);
 
 refreshFilesModifiedCache();
