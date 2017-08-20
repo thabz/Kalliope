@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <events>
-   <entry date="1219-06-15" type="text">
-     <html>Dannebrog falder tilsyneladende ned fra himlen i forbindelse med Valdemar Sejrs erobringer i Estland.</html>
-   </entry>
-   <entry date="1613-06-29" type="text">
-     <html>Shakespeares Globe Theatre brænder ned under en opførelse af <i>Henry VIII</i>. Teatret genopbygges året efter.</html>
-   </entry>
-   <entry date="1807-08-16" type="text">
-     <html>Engelske styrker belejrer København.</html>
-   </entry>
+  <entry date="1219-06-15" type="text">
+    <html>Dannebrog falder tilsyneladende ned fra himlen i forbindelse med Valdemar Sejrs erobringer i Estland.</html>
+  </entry>
+  <entry date="1613-06-29" type="text">
+    <html>Shakespeares Globe Theatre brænder ned under en opførelse af <i>Henry VIII</i>. Teatret genopbygges året efter.</html>
+  </entry>
+  <entry date="1807-08-16" type="text">
+    <html>Engelske styrker belejrer København.</html>
+  </entry>
+  <entry date="1871-11-03" type="text">
+    <html>Georg Brandes indleder sine fore­læsninger <i>Hoved­strøm­ninger i det 19de Aarhundredes Litteratur</i>.</html>
+  </entry>
+  <entry date="1871-11-04" type="image">
+    <!-- Året er korrekt, men måned-dag er sat, så dette billede vises efter begivenheden om forelæsningerne -->
+    <src>kunst/slott-moeller-brandes.jpg</src>
+    <html>Udsnit af Harald Slott-Møller: <i>Georg Brandes på Universitetets talerstol</i>, 1889-90.</html>
+  </entry>
 </events>
