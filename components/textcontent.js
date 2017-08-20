@@ -42,6 +42,7 @@ export default class TextContent extends React.Component {
       .replace(/-/g, '\u23BC');
     const parts = unicode.split(/ */).map((x, i) =>
       <span
+        key={i}
         style={{
           display: 'inline-block',
           width: '1em',
@@ -50,7 +51,7 @@ export default class TextContent extends React.Component {
       </span>
     );
     return (
-      <span key={i} style={{ fontSize: '1.1em' }}>
+      <span key={this.keySeq++} style={{ fontSize: '1.1em' }}>
         {parts}
       </span>
     );
