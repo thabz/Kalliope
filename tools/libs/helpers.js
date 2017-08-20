@@ -77,10 +77,9 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
   if (isPoetry && !isBible) {
     // Marker strofe numre
     html = html
-      .replace(/^(\d+\.?)\s*\n/gm, '<num>$1</num>\n')
-      .replace(/^(\d+\.?)/gm, '<num>$1</num>')
+      .replace(/^(\d+\.?)\s*$/gm, '<num>$1</num>')
       .replace(/^[ \t]*([IVXLCDM]+\.?) *$/gm, '<num>$1</num>')
-      .replace(/^\[(\d+\.?)\]\s*\n/gm, '<num>[$1]</num>\n');
+      .replace(/^\[(\d+\.?)\]\s*$/gm, '<num>[$1]</num>');
   }
   html = html
     .replace(/\n/g, '::NEWLINE-PLACEHOLDER::') // Regexp nedenunder spænder ikke over flere linjer... underligt.
