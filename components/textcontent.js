@@ -329,7 +329,6 @@ export default class TextContent extends React.Component {
         .reduce((maxLineNum, lineNum) => {
           return Math.max(lineNum, maxLineNum);
         }, -1);
-      console.log('lastLineNum', lastLineNum);
       // Bound the values
       options.highlight.from = Math.max(1, options.highlight.from);
       options.highlight.to = Math.min(lastLineNum, options.highlight.to);
