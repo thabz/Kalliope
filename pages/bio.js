@@ -12,6 +12,7 @@ import PoetName, { poetNameString } from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import Picture from '../components/picture.js';
 import TextContent from '../components/textcontent.js';
+import FormattedDate from '../components/formatteddate.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
@@ -30,18 +31,25 @@ import type {
 import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
 
-const dateAndPlace = (datePlace: ?DateWithPlace): string => {
+const dateAndPlace = (
+  datePlace: ?DateWithPlace,
+  lang: Lang
+): Array<?React$Element<*>> => {
   if (datePlace == null) {
     return 'Ukendt år';
   }
-  let result = '';
+  let result = [];
   if (datePlace.date === '?') {
-    result += 'Ukendt år';
+    result.push('Ukendt år');
   } else {
-    result += datePlace.date;
+    result.push(<FormattedDate date={datePlace.date} lang={lang} />);
   }
   if (datePlace.place != null) {
-    result += `, ${datePlace.place}`;
+    result.push(
+      <span>
+        {', ' + datePlace.place}
+      </span>
+    );
   }
   return result;
 };
@@ -49,7 +57,7 @@ const dateAndPlace = (datePlace: ?DateWithPlace): string => {
 class PersonMetaLine extends React.Component {
   props: {
     label: string,
-    value: string | ?React$Element<*>,
+    value: string | ?React$Element<*> | Array<?React$Element<*>>,
   };
   render() {
     const { label, value } = this.props;
@@ -81,15 +89,18 @@ class PersonMetaLine extends React.Component {
 class PersonMeta extends React.Component {
   props: {
     poet: Poet,
+    lang: Lang,
   };
   render() {
-    const { poet } = this.props;
+    const { poet, lang } = this.props;
     if (poet.type === 'collection') {
       return null;
     }
     const name = <PoetName poet={poet} />;
-    let born = poet.period == null ? null : dateAndPlace(poet.period.born);
-    let dead = poet.period == null ? null : dateAndPlace(poet.period.dead);
+    let born =
+      poet.period == null ? null : dateAndPlace(poet.period.born, lang);
+    let dead =
+      poet.period == null ? null : dateAndPlace(poet.period.dead, lang);
 
     const christened =
       poet.name.christened == null ? poet.name.realname : poet.name.christened;
@@ -218,7 +229,7 @@ export default class extends React.Component {
 
     const sidebarItems = (
       <div className="horizontal-on-small" key="first-and-on">
-        <PersonMeta poet={poet} />
+        <PersonMeta poet={poet} lang={lang} />
         <div style={{ width: '100%', marginTop: '40px' }}>
           <PersonPortrait poet={poet} portrait={portrait} lang={lang} />
         </div>

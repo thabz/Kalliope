@@ -12,33 +12,18 @@ import * as Links from '../components/links';
 import Heading from '../components/heading.js';
 import TextContent from '../components/textcontent.js';
 import Picture from '../components/picture.js';
+import FormattedDate from '../components/formatteddate.js';
 import type { Lang, NewsItem } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
 
-class FormattedDate extends React.Component {
-  props: {
-    day: string,
-    month: string,
-    year?: string,
-  };
-
-  render() {
-    const { day, month, year } = this.props;
-    return (
-      <span>
-        <span>{day}</span>/<span>{month}</span> {year}
-      </span>
-    );
-  }
-}
-
 class TodaysEvents extends React.Component {
   props: {
+    lang: Lang,
     events: ?Array<TimelineItem>,
   };
   render() {
-    const { events } = this.props;
+    const { lang, events } = this.props;
     if (events == null || events.length == 0) {
       return null;
     }
@@ -57,14 +42,9 @@ class TodaysEvents extends React.Component {
           </div>
         );
       } else {
-        const dateParts = item.date.split('-').map(x => parseInt(x));
         yearHtml = (
           <div className="today-date">
-            <FormattedDate
-              day={dateParts[2]}
-              month={dateParts[1]}
-              year={dateParts[0]}
-            />
+            <FormattedDate date={item.date} lang={lang} />
           </div>
         );
         html = <TextContent contentHtml={item.content_html} lang={item.lang} />;
@@ -112,7 +92,6 @@ class News extends React.Component {
     const items = news.filter((_, i) => i < 5).map((item, i) => {
       const { date, content_html, title } = item;
 
-      const dateParts = date.split('-').map(x => parseInt(x));
       return (
         <div className="news-item" key={date + i}>
           <h3>
@@ -122,11 +101,7 @@ class News extends React.Component {
             <TextContent contentHtml={content_html} lang={lang} />
           </div>
           <div className="news-date">
-            <FormattedDate
-              day={dateParts[0]}
-              month={dateParts[1]}
-              year={dateParts[2]}
-            />
+            <FormattedDate date={date} lang={lang} />
           </div>
           <style jsx>{`
             div.news-item {
