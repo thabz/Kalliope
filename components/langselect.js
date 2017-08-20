@@ -18,7 +18,7 @@ export default class LangSelect extends React.Component {
 
   render() {
     const { lang } = this.props;
-    return null;
+    return <div style={{ paddingBottom: '70px' }} />;
     /*
     return (
       <nav>
