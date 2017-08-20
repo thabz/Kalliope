@@ -121,7 +121,7 @@ export default class Nav extends React.Component {
     links = [rootLink, ...links, title];
 
     if (isIndexPage) {
-      links = [<span>&nbsp;</span>];
+      links = [<span>Kalliope</span>];
     }
 
     let joinedLinks = [];
