@@ -46,6 +46,7 @@ export default class TextContent extends React.Component {
         style={{
           display: 'inline-block',
           width: '1em',
+          marginRight: '0.3em',
         }}>
         {x}
       </span>
