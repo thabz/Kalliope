@@ -18,6 +18,8 @@ export default class LangSelect extends React.Component {
 
   render() {
     const { lang } = this.props;
+    return null;
+    /*
     return (
       <nav>
         {links.map(({ href, label }) =>
@@ -44,5 +46,6 @@ export default class LangSelect extends React.Component {
         `}</style>
       </nav>
     );
+    */
   }
 }
