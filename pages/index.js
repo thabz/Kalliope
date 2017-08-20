@@ -16,6 +16,23 @@ import type { Lang, NewsItem } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
 
+class FormattedDate extends React.Component {
+  props: {
+    day: string,
+    month: string,
+    year?: string,
+  };
+
+  render() {
+    const { day, month, year } = this.props;
+    return (
+      <span>
+        <span>{day}</span>/<span>{month}</span> {year}
+      </span>
+    );
+  }
+}
+
 class TodaysEvents extends React.Component {
   props: {
     events: ?Array<TimelineItem>,
@@ -40,9 +57,14 @@ class TodaysEvents extends React.Component {
           </div>
         );
       } else {
+        const dateParts = item.date.split('-').map(x => parseInt(x));
         yearHtml = (
-          <div className="today-year">
-            {item.date.substring(0, 4)}
+          <div className="today-date">
+            <FormattedDate
+              day={dateParts[2]}
+              month={dateParts[1]}
+              year={dateParts[0]}
+            />
           </div>
         );
         html = <TextContent contentHtml={item.content_html} lang={item.lang} />;
@@ -62,10 +84,11 @@ class TodaysEvents extends React.Component {
         {renderedEvents}
         <style jsx>{`
           :global(div.today-item) {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
           }
           :global(div.today-date) {
-            text-align: rigth;
+            font-size: 0.8em;
+            margin-bottom: 3px;
           }
           :global(div.today-body) {
             line-height: 1.6;
@@ -73,39 +96,6 @@ class TodaysEvents extends React.Component {
           }
         `}</style>
       </div>
-    );
-  }
-}
-
-class FormattedDate extends React.Component {
-  props: {
-    day: string,
-    month: string,
-    year?: string,
-  };
-
-  render() {
-    const { day, month, year } = this.props;
-    return (
-      <span>
-        <span className="day smaller">{day}</span>/<span className="month smaller">{month}</span>{' '}
-        {year}
-        <style jsx>{`
-          .day {
-            display: inline-block;
-            position: relative;
-            top: -3px;
-          }
-          .month {
-            display: inline-block;
-            position: relative;
-            bottom: -3px;
-          }
-          .smaller {
-            font-size: 0.9em;
-          }
-        `}</style>
-      </span>
     );
   }
 }
@@ -143,7 +133,9 @@ class News extends React.Component {
               margin-bottom: 20px;
             }
             div.news-item:first-child {
-              margin-bottom: 60px;
+              padding-bottom: 40px;
+              border-bottom: 1px solid #777;
+              margin-bottom: 50px;
             }
 
             div.news-item h3 {
