@@ -67,6 +67,13 @@ export default class Nav extends React.Component {
   render() {
     const { lang, poet, work, title, rightSide } = this.props;
     let { links } = this.props;
+
+    const isIndexPage =
+      poet == null &&
+      work == null &&
+      title == null &&
+      (links == null || links.length === 0);
+
     const rootLink = (
       <Link prefetch route={Links.frontPageURL(lang)}>
         <a>Kalliope</a>
@@ -112,6 +119,10 @@ export default class Nav extends React.Component {
       links = [poetsURL, poetLink, workLink];
     }
     links = [rootLink, ...links, title];
+
+    if (isIndexPage) {
+      links = [<span>&nbsp;</span>];
+    }
 
     let joinedLinks = [];
     links.filter(x => x != null).map((link, i) => {
