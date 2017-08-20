@@ -61,6 +61,7 @@ const replaceDashes = html => {
     return null;
   }
   return html
+    .replace(/(\d\d\d\d)-(\d\d\d\d)/g, '$1–$2')
     .replace(/ -&nbsp;/g, ' —&nbsp;')
     .replace(/ - /g, ' — ')
     .replace(/ -/g, ' —')
