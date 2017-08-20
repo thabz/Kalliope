@@ -61,13 +61,6 @@ class TodaysEvents extends React.Component {
         <SubHeading>Dagen i dag</SubHeading>
         {renderedEvents}
         <style jsx>{`
-          h2 {
-            font-weight: lighter;
-            font-size: 18px;
-            line-height: 18px;
-            margin: 0 0 20px 0;
-            padding: 0;
-          }
           :global(div.today-item) {
             margin-bottom: 10px;
           }
@@ -79,6 +72,104 @@ class TodaysEvents extends React.Component {
             font-weight: lighter;
           }
         `}</style>
+      </div>
+    );
+  }
+}
+
+class FormattedDate extends React.Component {
+  props: {
+    day: string,
+    month: string,
+    year?: string,
+  };
+
+  render() {
+    const { day, month, year } = this.props;
+    return (
+      <span>
+        <span className="day smaller">{day}</span>/<span className="month smaller">{month}</span>{' '}
+        {year}
+        <style jsx>{`
+          .day {
+            display: inline-block;
+            position: relative;
+            top: -3px;
+          }
+          .month {
+            display: inline-block;
+            position: relative;
+            bottom: -3px;
+          }
+          .smaller {
+            font-size: 0.9em;
+          }
+        `}</style>
+      </span>
+    );
+  }
+}
+
+class News extends React.Component {
+  props: {
+    news: Array<NewsItem>,
+    lang: Lang,
+  };
+
+  render() {
+    const { lang, news } = this.props;
+
+    const items = news.filter((_, i) => i < 5).map((item, i) => {
+      const { date, content_html, title } = item;
+
+      const dateParts = date.split('-').map(x => parseInt(x));
+      return (
+        <div className="news-item" key={date + i}>
+          <h3>
+            {title}
+          </h3>
+          <div className="news-body">
+            <TextContent contentHtml={content_html} lang={lang} />
+          </div>
+          <div className="news-date">
+            <FormattedDate
+              day={dateParts[0]}
+              month={dateParts[1]}
+              year={dateParts[2]}
+            />
+          </div>
+          <style jsx>{`
+            div.news-item {
+              margin-bottom: 20px;
+            }
+            div.news-item:first-child {
+              margin-bottom: 60px;
+            }
+
+            div.news-item h3 {
+              font-weight: lighter;
+              font-size: 1.3em;
+              margin: 0 0 20px 0;
+              padding: 0;
+            }
+            div.news-body {
+              line-height: 1.6;
+              font-weight: lighter;
+            }
+            div.news-date {
+              margin-top: 5px;
+              font-weight: lighter;
+              font-size: 0.8em;
+              color: #777;
+            }
+          `}</style>
+        </div>
+      );
+    });
+
+    return (
+      <div>
+        {items}
       </div>
     );
   }
@@ -139,32 +230,6 @@ export default class extends React.Component {
   render() {
     const { lang, news, todaysEvents, pagingContext } = this.props;
 
-    const renderedNews = news.filter((_, i) => i < 5).map((item, i) => {
-      return (
-        <div className="news-item" key={item.date + i}>
-          <div className="news-date">
-            {item.date}
-          </div>
-          <div className="news-body">
-            <TextContent contentHtml={item.content_html} lang={lang} />
-          </div>
-          <style jsx>{`
-            div.news-item {
-              margin-bottom: 40px;
-            }
-            div.news-date {
-              margin-bottom: 10px;
-              font-weight: lighter;
-            }
-            div.news-body {
-              line-height: 1.6;
-              font-weight: lighter;
-            }
-          `}</style>
-        </div>
-      );
-    });
-
     let navPaging = null;
     if (pagingContext != null) {
       let prevURL = {
@@ -177,6 +242,8 @@ export default class extends React.Component {
       };
       navPaging = <NavPaging prev={prevURL} next={nextURL} />;
     }
+
+    const renderedNews = <News news={news} lang={lang} />;
 
     const sidebar = <TodaysEvents events={todaysEvents} />;
 

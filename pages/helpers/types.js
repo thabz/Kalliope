@@ -137,6 +137,7 @@ export type DictItem = {
 
 export type NewsItem = {
   date: string,
+  title: ?string,
   content_html: TextContentType,
 };
 

@@ -59,6 +59,16 @@ const workName = work => {
   return title + yearPart;
 };
 
+const safeGetText = (element, child) => {
+  if (element) {
+    const childElement = element.get(child);
+    if (childElement) {
+      return childElement.text();
+    }
+  }
+  return null;
+};
+
 // Ready after second pass
 let collected_works = new Map();
 
@@ -282,16 +292,6 @@ const build_poets_json = () => {
       has_texts,
       has_works,
     };
-  };
-
-  const safeGetText = (element, child) => {
-    if (element) {
-      const childElement = element.get(child);
-      if (childElement) {
-        return childElement.text();
-      }
-    }
-    return null;
   };
 
   let doc = loadXMLDoc('data/poets.xml');
@@ -1122,7 +1122,7 @@ const build_keywords = () => {
       const id = keyword.attr('id').value();
       const title = head.get('title').text();
       const pictures = get_pictures(head);
-      const author = head.get('author') ? head.get('author').text() : null;
+      const author = safeGetText(head, 'author');
       const rawBody = body
         .toString()
         .replace('<body>', '')
@@ -1158,6 +1158,9 @@ const build_keywords = () => {
 const build_news = collected => {
   ['da', 'en'].forEach(lang => {
     const path = `data/news_${lang}.xml`;
+    if (!isFileModified(path)) {
+      return;
+    }
     const doc = loadXMLDoc(path);
     const items = doc.get('//items');
     let list = [];
@@ -1167,15 +1170,19 @@ const build_news = collected => {
       }
       const date = item.get('date').text();
       const body = item.get('body');
+      const title = safeGetText(item, 'title');
       list.push({
         date,
+        title,
         content_html: htmlToXml(
-          body.toString().replace('<body>', '').replace('</body>', ''),
+          body.toString().replace('<body>', '').replace('</body>', '').trim(),
           collected
         ),
       });
     });
-    writeJSON(`static/api/news_${lang}.json`, list);
+    const outfile = `static/api/news_${lang}.json`;
+    writeJSON(outfile, list);
+    console.log(outfile);
   });
 };
 
@@ -1678,7 +1685,10 @@ const update_elasticsearch = collected => {
                 .replace(/<.*?>/g, ' '),
               collected,
               text.name() === 'poem'
-            ).map(line => line[0]).join(" ").replace(/<.*?>/g, ' '),
+            )
+              .map(line => line[0])
+              .join(' ')
+              .replace(/<.*?>/g, ' '),
           };
           const data = {
             poet,
