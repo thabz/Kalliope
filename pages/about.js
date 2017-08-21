@@ -9,6 +9,7 @@ import LangSelect from '../components/langselect';
 import Nav from '../components/nav';
 import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
+import TwoColumns from '../components/twocolumns.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
@@ -46,13 +47,14 @@ export default class extends React.Component {
     const json = await Client.about(aboutItemId, lang);
     return {
       lang,
+      aboutItemId,
       keyword: json,
       error: json.error,
     };
   }
 
   render() {
-    const { lang, keyword, error } = this.props;
+    const { lang, aboutItemId, keyword, error } = this.props;
 
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
@@ -88,6 +90,44 @@ export default class extends React.Component {
       </Link>,
     ];
 
+    let pageBody = null;
+    if (aboutItemId === 'thanks') {
+      pageBody = (
+        <div className="thanks-list">
+          <SubHeading>
+            {keyword.title}
+          </SubHeading>
+          <TwoColumns>
+            {body}
+          </TwoColumns>
+          <style jsx>{`
+            .thanks-list {
+              line-height: 1.7;
+            }
+          `}</style>
+        </div>
+      );
+    } else {
+      pageBody = (
+        <SidebarSplit sidebar={sidebar}>
+          <div>
+            <SubHeading>
+              {keyword.title}
+            </SubHeading>
+            <div className="about-body">
+              {body}
+            </div>
+            <style jsx>{`
+              .about-body {
+                line-height: 1.6;
+              }
+            `}</style>
+          </div>
+          <div />
+        </SidebarSplit>
+      );
+    }
+
     return (
       <div>
         <Head headTitle="Kalliope" />
@@ -95,22 +135,7 @@ export default class extends React.Component {
           <Nav lang="da" links={navbar} title={keyword.title} />
           <Heading title="Kalliope" />
           <KalliopeTabs lang={lang} selected="about" />
-          <SidebarSplit sidebar={sidebar}>
-            <div>
-              <SubHeading>
-                {keyword.title}
-              </SubHeading>
-              <div className="about-body">
-                {body}
-              </div>
-              <style jsx>{`
-                .about-body {
-                  line-height: 1.6;
-                }
-              `}</style>
-            </div>
-            <div />
-          </SidebarSplit>
+          {pageBody}
           <LangSelect lang={lang} />
         </Main>
       </div>
