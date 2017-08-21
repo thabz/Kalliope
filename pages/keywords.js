@@ -48,7 +48,8 @@ export default class extends React.Component {
   render() {
     const { lang, keywords } = this.props;
 
-    const groups = groupsByLetter(keywords);
+    const nonDrafts = keywords.filter(k => !k.draft);
+    const groups = groupsByLetter(nonDrafts);
     let sections: Array<SectionForRendering> = [];
 
     groups.forEach(group => {
