@@ -14,7 +14,7 @@ import * as Links from './links';
 
 // Fiks bindestreger mellem årstal, sidetal osv.
 const replaceHyphens = s => {
-  return s.replace(/(\d)-(\d)/g, '$1–$2');
+  return s.replace(/(\d)-(\d)/g, '$1–$2'); // Hyphen/minus (U+002D) to en-dash (U+2013)
 };
 
 type TextContentPropsType = {
