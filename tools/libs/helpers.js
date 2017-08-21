@@ -61,7 +61,6 @@ const replaceDashes = html => {
     return null;
   }
   return html
-    .replace(/(\d\d\d\d)-(\d\d\d\d)/g, '$1–$2')
     .replace(/ -&nbsp;/g, ' —&nbsp;')
     .replace(/ - /g, ' — ')
     .replace(/ -/g, ' —')
@@ -230,6 +229,7 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
       l = l.replace('<wrap>', '').replace('</wrap>', '');
       options.wrap = true;
     }
+    // Marker linjer som skal igennem XML parseren client-side.
     if (l.match(/<.*>/)) {
       options.html = true;
     }

@@ -12,6 +12,11 @@ import type {
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
 
+// Fiks bindestreger mellem årstal, sidetal osv.
+const replaceHyphens = s => {
+  return s.replace(/(\d)-(\d)/g, '$1–$2');
+};
+
 type TextContentPropsType = {
   contentHtml: TextContentType,
   lang: Lang,
@@ -146,7 +151,7 @@ export default class TextContent extends React.Component {
       case 'br':
         return <br />;
       case '#text':
-        return node.textContent;
+        return replaceHyphens(node.textContent);
       case '#comment':
         return null;
       case 'i':
@@ -368,7 +373,7 @@ export default class TextContent extends React.Component {
         );
         rendered = this.handle_nodes(frag.childNodes);
       } else {
-        rendered = l[0];
+        rendered = replaceHyphens(l[0]);
         if (rendered.trim().length === 0) {
           if (options == null || !options.isPoetry) {
             className += ' half-height-blank';
