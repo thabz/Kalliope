@@ -119,7 +119,7 @@ export type Text = {
 export type Keyword = {
   id: string,
   title: string,
-  draft: boolean,
+  is_draft: boolean,
   author?: string,
   notes?: Array<NoteItem>,
   pictures: Array<PictureItem>,

@@ -1120,7 +1120,7 @@ const build_keywords = () => {
       const head = keyword.get('head');
       const body = keyword.get('body');
       const id = keyword.attr('id').value();
-      const draft =
+      const is_draft =
         keyword.attr('draft') != null
           ? keyword.attr('draft').value() === 'true'
           : false;
@@ -1137,7 +1137,7 @@ const build_keywords = () => {
       const data = {
         id,
         title,
-        draft,
+        is_draft,
         author,
         pictures,
         has_footnotes,
@@ -1146,7 +1146,7 @@ const build_keywords = () => {
       keywords_toc.push({
         id,
         title,
-        draft,
+        is_draft,
       });
       const outFilename = `static/api/keywords/${id}.json`;
       console.log(outFilename);
