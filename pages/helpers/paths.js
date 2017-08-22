@@ -1,10 +1,19 @@
-const crypto = require('crypto');
+const hashCode = str => {
+  // Javas String.hashCode()
+  let hash = 0;
+  if (str.length == 0) return hash;
+  for (let i = 0; i < str.length; i++) {
+    let char = str.charCodeAt(i);
+    hash = (hash << 5) + hash + char;
+    hash = hash & hash; // Convert to 32bit integer
+  }
+  return Math.abs(hash);
+};
 
 const textFolder = id => {
-  const hash = crypto.createHash('md5');
-  hash.update(id);
-  const md5 = hash.digest('hex');
-  return `static/api/texts/${md5[0]}/${md5[1]}${md5[2]}`;
+  // Hashen bevæger sig mest i de mindst betydende bits, så reverse hex-strengen.
+  const hash = hashCode(id).toString(16).split('').reverse().join('');
+  return `static/api/texts/${hash[0]}/${hash[1]}${hash[2]}`;
 };
 
 const textPath = id => {
