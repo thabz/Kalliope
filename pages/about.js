@@ -24,7 +24,6 @@ import type {
   Keyword,
 } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
-import 'isomorphic-fetch';
 
 // Koden er stort set identisk med keyword
 

@@ -29,7 +29,6 @@ import type {
   Error,
 } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
-import 'isomorphic-fetch';
 
 const dateAndPlace = (
   datePlace: ?DateWithPlace,

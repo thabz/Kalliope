@@ -1,7 +1,6 @@
 // @flow
 
 import React from 'react';
-import { Link, Router } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
 import Nav from '../components/nav';
@@ -10,7 +9,6 @@ import { KalliopeTabs } from '../components/tabs.js';
 import SubHeading from '../components/subheading.js';
 import Heading from '../components/heading.js';
 import type { Lang, Error } from './helpers/types.js';
-import 'isomorphic-fetch';
 
 export default class extends React.Component {
   props: {
