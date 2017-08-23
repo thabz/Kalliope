@@ -73,7 +73,7 @@ class TextHeading extends React.Component {
             font-size: 1.05em;
             line-height: 1.05em;
             font-weight: normal;
-            margin: 0;
+            margin: 0 0 15px 0;
             padding: 0;
           }
           .text-heading {
