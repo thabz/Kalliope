@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
+import { Link, Router } from '../routes';
 import TextContent from './textcontent.js';
 import CommonData from '../pages/helpers/commondata.js';
 import * as Strings from '../pages/helpers/strings.js';
@@ -47,22 +48,28 @@ export default class Picture extends React.Component {
     if (showDropShadow) {
       pictureClassName += ' with-drop-shadow';
     }
+    const onClick = e => {
+      const pathname = window.location.pathname;
+      Router.pushRoute(pathname + '?overlayType=picture&overlayId=' + src);
+    };
     return (
       <div className="sidebar-picture">
-        <figure>
-          <picture className={pictureClassName}>
-            {sources}
-            <img
-              className={pictureClassName}
-              src={fallbackSrc}
-              width="100%"
-              alt={alt}
-            />
-          </picture>
-          <figcaption>
-            <TextContent contentHtml={picture.content_html} lang={lang} />
-          </figcaption>
-        </figure>
+        <a onClick={onClick} style={{ cursor: 'pointer' }}>
+          <figure>
+            <picture className={pictureClassName}>
+              {sources}
+              <img
+                className={pictureClassName}
+                src={fallbackSrc}
+                width="100%"
+                alt={alt}
+              />
+            </picture>
+            <figcaption>
+              <TextContent contentHtml={picture.content_html} lang={lang} />
+            </figcaption>
+          </figure>
+        </a>
         <style jsx>{`
           div.sidebar-picture {
             margin-bottom: 30px;
