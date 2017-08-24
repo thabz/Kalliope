@@ -64,6 +64,7 @@ export default class extends React.Component {
         lang={lang}
         pictures={keyword.pictures}
         showDropShadow={false}
+        clickToZoom={false}
         srcPrefix={'/static/images/about'}
       />
     );
