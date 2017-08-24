@@ -54,6 +54,7 @@ class BiggerPicture extends React.Component {
           }
           figcaption {
             margin-top: 16px;
+            line-height: 1.5;
           }
           .oval-mask {
             border-radius: 50%;
