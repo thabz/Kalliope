@@ -18,6 +18,25 @@ class BiggerPicture extends React.Component {
     const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
       return '/t/' + p1 + CommonData.fallbackImagePostfix;
     });
+    const sizes = '';
+    let srcsets = {};
+    const sources = CommonData.availableImageFormats.map(ext => {
+      const srcset = CommonData.availableImageWidths
+        .map(width => {
+          const filename = src
+            .replace(/.jpg$/, `-w${width}.${ext}`)
+            .replace(/\/([^\/]+)$/, '/t/$1');
+          return `${filename} ${width}w`;
+        })
+        .join(', ');
+      srcsets[ext] = srcset;
+      const type = ext !== 'jpg' ? `image/${ext}` : '';
+      return <source key={ext} type={type} srcSet={srcset} />;
+    });
+    const alt = picture.content_html
+      ? '' //Strings.trimHtml(picture.content_html)
+      : 'Billede';
+
     let pictureClassName = 'overlay-picture';
     let imgClassName = '';
     if (picture.src.indexOf('-oval.jpg') > -1) {
@@ -27,7 +46,8 @@ class BiggerPicture extends React.Component {
     return (
       <figure className="overlay-figure">
         <picture className={pictureClassName}>
-          <img src={fallbackSrc} className={imgClassName} />
+          {sources}
+          <img src={fallbackSrc} className={imgClassName} alt={alt} />
         </picture>
         <figcaption>
           <TextContent contentHtml={picture.content_html} lang={lang} />
