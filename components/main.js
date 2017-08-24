@@ -12,7 +12,9 @@ export default class Main extends React.Component {
   constructor(props: any) {
     super(props);
     this.hidePictureOverlay = this.hidePictureOverlay.bind(this);
-    this.state = { overlayPicture: null };
+    this.state = {
+      overlayPicture: null,
+    };
   }
 
   getChildContext() {
@@ -22,8 +24,8 @@ export default class Main extends React.Component {
     };
   }
 
-  showPictureOverlay(picture) {
-    this.setState({ overlayPicture: picture });
+  showPictureOverlay(picture, srcPrefix, lang) {
+    this.setState({ overlayPicture: { picture, srcPrefix, lang } });
   }
 
   hidePictureOverlay() {
@@ -35,12 +37,15 @@ export default class Main extends React.Component {
 
     let overlay = null;
     if (overlayPicture != null) {
+      const { picture, lang, srcPrefix } = overlayPicture;
       overlay = (
         <PictureOverlay
-          picture={overlayPicture}
-          closeCallback={this.hidePictureOverlay}>
-          **Picture**
-        </PictureOverlay>
+          picture={picture}
+          srcPrefix={srcPrefix}
+          lang={lang}
+          clickToZoom={false}
+          closeCallback={this.hidePictureOverlay}
+        />
       );
     }
 

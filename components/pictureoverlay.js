@@ -2,23 +2,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
+import Picture from './picture';
+
+type PictureOverlayPropType = {
+  picture: PictureItem,
+  srcPrefix?: string,
+  lang: Lang,
+  closeCallback: Function,
+};
 
 export default class PictureOverlay extends React.Component {
-  props: {
-    picture: PictureItem,
-    srcPrefix?: string,
-    lang: Lang,
-    closeCallback: Function,
-  };
+  props: PictureOverlayPropType;
+  onKeyUp: Function;
+  hideOverlay: Function;
+
   static contextTypes = {
     showPictureOverlay: PropTypes.func,
     hidePictureOverlay: PropTypes.func,
   };
 
-  onKeyUp: Function;
-  hideOverlay: Function;
-
-  constructor(props) {
+  constructor(props: PictureOverlayPropType) {
     super(props);
     this.onKeyUp = this.onKeyUp.bind(this);
     this.hideOverlay = this.hideOverlay.bind(this);
@@ -51,7 +54,7 @@ export default class PictureOverlay extends React.Component {
     this.props.closeCallback();
   }
 
-  eatClick(e) {
+  eatClick(e: MouseEvent) {
     e.stopPropagation();
   }
 
@@ -59,11 +62,11 @@ export default class PictureOverlay extends React.Component {
     console.log('Overlay did mount');
   }
   render() {
+    const { picture, srcPrefix } = this.props;
     return (
       <div className="overlay-background" onClick={this.hideOverlay}>
         <div className="overlay-container" onClick={this.eatClick}>
-          <figure />
-          {this.props.children}
+          <Picture picture={picture} srcPrefix={srcPrefix} />
         </div>
         <style jsx>{`
           .overlay-background {
@@ -72,25 +75,22 @@ export default class PictureOverlay extends React.Component {
             right: 0;
             top: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(255, 255, 255, 0.9);
             overflow-y: scroll;
           }
 
           .overlay-background .overlay-container {
-            margin: 10vh auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
             width: 80%;
-            max-width: 1024px;
-            min-height: 80vh;
+            height: 80%;
+            transform: translate(-50%, -50%);
+            max-width: 80vh;
+            max-height: 80vh;
             z-index: 999;
 
-            background-color: white;
-            border: 1px solid black;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-
             /* Just for the overlay-close with position: absolute below */
-            position: relative;
           }
 
           .overlay-container .overlay-close {

@@ -12,18 +12,25 @@ export default class Picture extends React.Component {
     picture: PictureItem,
     srcPrefix?: string,
     showDropShadow?: boolean,
+    clickToZoom?: boolean,
     lang: Lang,
   };
   static contextTypes = {
     showPictureOverlay: PropTypes.func,
-    hidePictureOverlay: PropTypes.func,
   };
 
   static defaultProps = {
     showDropShadow: true,
+    clickToZoom: true,
   };
   render() {
-    const { picture, lang, srcPrefix, showDropShadow } = this.props;
+    const {
+      picture,
+      lang,
+      srcPrefix,
+      showDropShadow,
+      clickToZoom,
+    } = this.props;
 
     const src: string = (srcPrefix || '') + '/' + picture.src;
     const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
@@ -55,9 +62,13 @@ export default class Picture extends React.Component {
       pictureClassName += ' with-drop-shadow';
     }
     const onClick = e => {
-      this.context.showPictureOverlay(picture);
+      if (clickToZoom) {
+        this.context.showPictureOverlay(picture, srcPrefix);
+      }
     };
-    pictureClassName += ' clickable';
+    if (clickToZoom) {
+      pictureClassName += ' clickable';
+    }
     return (
       <div className="sidebar-picture">
         <figure>
