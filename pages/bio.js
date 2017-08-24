@@ -41,11 +41,13 @@ const dateAndPlace = (
   if (datePlace.date === '?') {
     result.push('Ukendt år');
   } else {
-    result.push(<FormattedDate date={datePlace.date} lang={lang} />);
+    result.push(
+      <FormattedDate key={datePlace.date} date={datePlace.date} lang={lang} />
+    );
   }
   if (datePlace.place != null) {
     result.push(
-      <span>
+      <span key="place">
         {', ' + datePlace.place}
       </span>
     );
