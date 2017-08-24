@@ -2,7 +2,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
-import Picture from './picture';
+import CommonData from '../pages/helpers/commondata.js';
+
+class BiggerPicture extends React.Component {
+  props: {
+    picture: PictureItem,
+    srcPrefix: ?string,
+    lang: Lang,
+  };
+
+  render() {
+    const { srcPrefix, picture } = this.props;
+    const src: string = (srcPrefix || '') + '/' + picture.src;
+    const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
+      return '/t/' + p1 + CommonData.fallbackImagePostfix;
+    });
+    return <img src={fallbackSrc} />;
+  }
+}
 
 type PictureOverlayPropType = {
   picture: PictureItem,
@@ -62,11 +79,12 @@ export default class PictureOverlay extends React.Component {
     console.log('Overlay did mount');
   }
   render() {
-    const { picture, srcPrefix } = this.props;
+    const { picture, srcPrefix, lang } = this.props;
+
     return (
       <div className="overlay-background" onClick={this.hideOverlay}>
         <div className="overlay-container" onClick={this.eatClick}>
-          <Picture picture={picture} srcPrefix={srcPrefix} />
+          <BiggerPicture picture={picture} srcPrefix={srcPrefix} lang={lang} />
         </div>
         <style jsx>{`
           .overlay-background {
@@ -79,18 +97,19 @@ export default class PictureOverlay extends React.Component {
             overflow-y: scroll;
           }
 
-          .overlay-background .overlay-container {
+          .overlay-background :global(.overlay-container) {
             position: absolute;
             left: 50%;
             top: 50%;
-            width: 80%;
-            height: 80%;
             transform: translate(-50%, -50%);
-            max-width: 80vh;
-            max-height: 80vh;
             z-index: 999;
 
             /* Just for the overlay-close with position: absolute below */
+          }
+
+          .overlay-background .overlay-container :global(img) {
+            max-width: 80vw;
+            max-height: 80%;
           }
 
           .overlay-container .overlay-close {
@@ -110,7 +129,7 @@ export default class PictureOverlay extends React.Component {
             fill: rgba(0, 0, 0, 0.05);
           }
 
-          .noscroll {
+          :global(.noscroll) {
             overflow: hidden;
           }
         `}</style>
