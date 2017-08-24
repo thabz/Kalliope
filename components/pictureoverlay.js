@@ -18,21 +18,20 @@ class BiggerPicture extends React.Component {
     const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
       return '/t/' + p1 + CommonData.fallbackImagePostfix;
     });
-    const sizes = '';
-    let srcsets = {};
-    const sources = CommonData.availableImageFormats.map(ext => {
-      const srcset = CommonData.availableImageWidths
-        .map(width => {
-          const filename = src
-            .replace(/.jpg$/, `-w${width}.${ext}`)
-            .replace(/\/([^\/]+)$/, '/t/$1');
-          return `${filename} ${width}w`;
-        })
-        .join(', ');
-      srcsets[ext] = srcset;
-      const type = ext !== 'jpg' ? `image/${ext}` : '';
-      return <source key={ext} type={type} srcSet={srcset} />;
-    });
+    const srcSet = CommonData.availableImageFormats
+      .map(ext => {
+        return CommonData.availableImageWidths
+          .map(width => {
+            const filename = src
+              .replace(/.jpg$/, `-w${width}.${ext}`)
+              .replace(/\/([^\/]+)$/, '/t/$1');
+            return `${filename} ${width}w`;
+          })
+          .join(', ');
+      })
+      .join(', ');
+    console.log(srcSet);
+
     const alt = picture.content_html
       ? '' //Strings.trimHtml(picture.content_html)
       : 'Billede';
@@ -45,10 +44,7 @@ class BiggerPicture extends React.Component {
     }
     return (
       <figure className="overlay-figure">
-        <picture className={pictureClassName}>
-          {sources}
-          <img src={fallbackSrc} className={imgClassName} alt={alt} />
-        </picture>
+        <img src={fallbackSrc} className={imgClassName} alt={alt} />
         <figcaption>
           <TextContent contentHtml={picture.content_html} lang={lang} />
         </figcaption>
