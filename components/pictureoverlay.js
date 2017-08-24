@@ -156,8 +156,6 @@ export default class PictureOverlay extends React.Component {
             top: 50%;
             transform: translate(-50%, -50%);
             z-index: 999;
-
-            /* Just for the overlay-close with position: absolute below */
           }
 
           .overlay-background .overlay-container :global(.overlay-figure) {
