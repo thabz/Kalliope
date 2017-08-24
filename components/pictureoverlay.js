@@ -15,6 +15,9 @@ export default class PictureOverlay extends React.Component {
     hidePictureOverlay: PropTypes.func,
   };
 
+  onKeyUp: Function;
+  hideOverlay: Function;
+
   constructor(props) {
     super(props);
     this.onKeyUp = this.onKeyUp.bind(this);
@@ -32,7 +35,9 @@ export default class PictureOverlay extends React.Component {
     // eslint-disable-next-line no-undef
     document.removeEventListener('keyup', this.onKeyUp, false);
     // eslint-disable-next-line no-undef
-    document.body.classList.remove('noscroll');
+    if (document.body != null) {
+      document.body.classList.remove('noscroll');
+    }
   }
 
   onKeyUp(e: KeyboardEvent) {
