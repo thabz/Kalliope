@@ -1,8 +1,9 @@
 // @flow
 import React from 'react';
 import PropTypes from 'prop-types';
-import type { PictureItem, Lang } from '../pages/helpers/types.js';
 import CommonData from '../pages/helpers/commondata.js';
+import TextContent from './textcontent.js';
+import type { PictureItem, Lang } from '../pages/helpers/types.js';
 
 class BiggerPicture extends React.Component {
   props: {
@@ -12,12 +13,44 @@ class BiggerPicture extends React.Component {
   };
 
   render() {
-    const { srcPrefix, picture } = this.props;
+    const { srcPrefix, picture, lang } = this.props;
     const src: string = (srcPrefix || '') + '/' + picture.src;
     const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
       return '/t/' + p1 + CommonData.fallbackImagePostfix;
     });
-    return <img src={fallbackSrc} />;
+    let pictureClassName = 'overlay-picture';
+    let imgClassName = '';
+    if (picture.src.indexOf('-oval.jpg') > -1) {
+      pictureClassName += ' oval-mask';
+      imgClassName += ' oval-mask';
+    }
+    return (
+      <figure className="overlay-figure">
+        <picture className={pictureClassName}>
+          <img src={fallbackSrc} className={imgClassName} />
+        </picture>
+        <figcaption>
+          <TextContent contentHtml={picture.content_html} lang={lang} />
+        </figcaption>
+        <style jsx>{`
+          figure {
+            margin: 0;
+          }
+          figcaption {
+            margin-top: 16px;
+          }
+          .oval-mask {
+            border-radius: 50%;
+          }
+          img {
+            border: 0;
+          }
+          img {
+            box-shadow: 4px 4px 12px #888;
+          }
+        `}</style>{' '}
+      </figure>
+    );
   }
 }
 
@@ -107,7 +140,13 @@ export default class PictureOverlay extends React.Component {
             /* Just for the overlay-close with position: absolute below */
           }
 
-          .overlay-background .overlay-container :global(img) {
+          .overlay-background .overlay-container :global(.overlay-figure) {
+            width: auto;
+          }
+
+          .overlay-background .overlay-container :global(.overlay-figure) :global(img) {
+            margin-left: 50%;
+            transform: translate(-50%, 0);
             max-width: 80vw;
             max-height: 80%;
           }
