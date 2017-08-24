@@ -19,6 +19,7 @@ import ErrorPage from './error.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
+import CommonData from './helpers/commondata.js';
 import type {
   Lang,
   Poet,
@@ -193,8 +194,7 @@ export default class extends React.Component {
                 }
                 :global(.toc) :global(td.num) {
                   text-align: right;
-                  color: rgb(139, 56, 65);
-                  opacity: 0.5;
+                  color: ${CommonData.lightLinkColor};
                   white-space: nowrap;
                   padding-right: 5px;
                   vertical-align: top;

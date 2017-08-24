@@ -218,7 +218,7 @@ export default class TextContent extends React.Component {
         );
       case 'biblio':
         return (
-          <span key={this.keySeq++} style={{ opacity: 0.5 }}>
+          <span key={this.keySeq++} style={{ color: '#888' }}>
             [{this.handle_nodes(node.childNodes)}]
           </span>
         );
@@ -240,7 +240,7 @@ export default class TextContent extends React.Component {
             key={this.keySeq++}
             style={{
               display: 'inline',
-              opacity: 0.4,
+              color: '#888',
               pageBreakAfter: 'avoid', // Not working.
             }}>
             {this.handle_nodes(node.childNodes)}

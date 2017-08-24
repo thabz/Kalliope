@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import type { Work } from '../pages/helpers/types.js';
+import CommonData from '../pages/helpers/commondata.js';
 
 export default class WorkName extends React.Component {
   props: {
@@ -25,7 +26,7 @@ export default class WorkName extends React.Component {
     }
 
     const parts = [titlePart, yearPart].map((p, i) => {
-      let className = i === 0 ? 'title' : 'year';
+      let className = i === 0 ? 'title' : 'lighter';
       if (cursive === true && i === 0) {
         className += ' cursive';
       }
@@ -39,8 +40,8 @@ export default class WorkName extends React.Component {
       <span className="workname">
         {parts}
         <style jsx>{`
-          .workname :global(.year) {
-            opacity: 0.5;
+          .workname :global(.lighter) {
+            color: ${CommonData.lightLinkColor};
           }
           .workname :global(.title.cursive) {
             font-style: italic;

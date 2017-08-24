@@ -77,7 +77,7 @@ export default class PoetName extends React.Component {
         : null;
     const p1 =
       p[1] != null
-        ? <span key={1} className="period">
+        ? <span key={1} className="lighter">
             {' '}{p[1]}
           </span>
         : null;
@@ -89,11 +89,6 @@ export default class PoetName extends React.Component {
     return (
       <span className="poetname">
         {pp}
-        <style jsx>{`
-          .poetname :global(.period) {
-            opacity: 0.5;
-          }
-        `}</style>
       </span>
     );
   }

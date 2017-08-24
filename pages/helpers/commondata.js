@@ -75,3 +75,6 @@ module.exports.countries = [
     },
   },
 ];
+
+module.exports.lightLinkColor = 'hsla(353, 20%, 65%, 1)';
+module.exports.linkColor = 'hsla(353, 43%, 38%, 1)';

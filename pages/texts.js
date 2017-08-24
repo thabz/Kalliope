@@ -13,6 +13,7 @@ import SectionedList from '../components/sectionedlist.js';
 import * as Links from '../components/links.js';
 import * as Sorting from './helpers/sorting.js';
 import { createURL } from './helpers/client.js';
+import CommonData from '../pages/helpers/commondata.js';
 import type {
   LinesPair,
   Section,
@@ -95,7 +96,7 @@ export default class extends React.Component {
           ];
         if (isNonUnique != null && alternative != null) {
           renderedAlternative = (
-            <span style={{ opacity: 0.5 }}>
+            <span style={{ color: CommonData.lightLinkColor }}>
               {' '}[{alternative}]
             </span>
           );

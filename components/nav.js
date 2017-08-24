@@ -153,9 +153,11 @@ export default class Nav extends React.Component {
             height: 150px;
           }
           :global(a) {
-            color: #067df7;
-            color: rgb(139, 56, 65);
+            color: ${CommonData.linkColor};
             text-decoration: none;
+          }
+          :global(a):global(.lighter) {
+            color: ${CommonData.lightLinkColor};
           }
           @media print {
             :global(a) {
