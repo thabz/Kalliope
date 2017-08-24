@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import PropTypes from 'prop-types';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
 import { Link, Router } from '../routes';
 import TextContent from './textcontent.js';
@@ -13,6 +14,11 @@ export default class Picture extends React.Component {
     showDropShadow?: boolean,
     lang: Lang,
   };
+  static contextTypes = {
+    showPictureOverlay: PropTypes.func,
+    hidePictureOverlay: PropTypes.func,
+  };
+
   static defaultProps = {
     showDropShadow: true,
   };
@@ -49,27 +55,25 @@ export default class Picture extends React.Component {
       pictureClassName += ' with-drop-shadow';
     }
     const onClick = e => {
-      const pathname = window.location.pathname;
-      Router.pushRoute(pathname + '?overlayType=picture&overlayId=' + src);
+      this.context.showPictureOverlay(picture);
     };
+    pictureClassName += ' clickable';
     return (
       <div className="sidebar-picture">
-        <a onClick={onClick} style={{ cursor: 'pointer' }}>
-          <figure>
-            <picture className={pictureClassName}>
-              {sources}
-              <img
-                className={pictureClassName}
-                src={fallbackSrc}
-                width="100%"
-                alt={alt}
-              />
-            </picture>
-            <figcaption>
-              <TextContent contentHtml={picture.content_html} lang={lang} />
-            </figcaption>
-          </figure>
-        </a>
+        <figure>
+          <picture className={pictureClassName} onClick={onClick}>
+            {sources}
+            <img
+              className={pictureClassName}
+              src={fallbackSrc}
+              width="100%"
+              alt={alt}
+            />
+          </picture>
+          <figcaption>
+            <TextContent contentHtml={picture.content_html} lang={lang} />
+          </figcaption>
+        </figure>
         <style jsx>{`
           div.sidebar-picture {
             margin-bottom: 30px;
@@ -89,6 +93,9 @@ export default class Picture extends React.Component {
           }
           img.with-drop-shadow {
             box-shadow: 4px 4px 12px #888;
+          }
+          img.clickable {
+            cursor: pointer;
           }
           @media print {
             figure {

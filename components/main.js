@@ -1,31 +1,42 @@
 import React from 'react';
-import Overlay from './overlay.js';
+import PropTypes from 'prop-types';
+import PictureOverlay from './pictureoverlay.js';
 import { Link, Router } from '../routes';
 
 export default class Main extends React.Component {
+  static childContextTypes = {
+    showPictureOverlay: PropTypes.func,
+    hidePictureOverlay: PropTypes.func,
+  };
+
   constructor(props: any) {
     super(props);
-    this.state = { overlayType: null, overlayId: null };
+    this.state = { overlayPicture: null };
   }
-  componentDidMount() {
-    Router.onRouteChangeStart = url => {
-      console.log('App is changing to: ', url);
-      const { overlayType, overlayId } = Router.query;
-      console.log('Overlay id is', overlayId);
-      this.setState({ overlayType, overlayId });
+
+  getChildContext() {
+    return {
+      showPictureOverlay: this.showPictureOverlay.bind(this),
+      hidePictureOverlay: this.hidePictureOverlay.bind(this),
     };
   }
 
-  componentDidUpdate() {
-    console.log('Updating with state', this.state);
+  showPictureOverlay(picture) {
+    this.setState({ overlayPicture: picture });
+  }
+
+  hidePictureOverlay() {
+    console.log('Hiding overlay');
   }
 
   render() {
-    const { overlayType, overlayId } = this.state;
+    const { overlayPicture } = this.state;
 
     let overlay = null;
-    if (overlayType != null) {
-      overlay = <Overlay>Something</Overlay>;
+    if (overlayPicture != null) {
+      overlay = (
+        <PictureOverlay picture={overlayPicture}>**Picture**</PictureOverlay>
+      );
     }
 
     return (
