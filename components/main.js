@@ -11,6 +11,7 @@ export default class Main extends React.Component {
 
   constructor(props: any) {
     super(props);
+    this.hidePictureOverlay = this.hidePictureOverlay.bind(this);
     this.state = { overlayPicture: null };
   }
 
@@ -26,7 +27,7 @@ export default class Main extends React.Component {
   }
 
   hidePictureOverlay() {
-    console.log('Hiding overlay');
+    this.setState({ overlayPicture: null });
   }
 
   render() {
@@ -35,7 +36,11 @@ export default class Main extends React.Component {
     let overlay = null;
     if (overlayPicture != null) {
       overlay = (
-        <PictureOverlay picture={overlayPicture}>**Picture**</PictureOverlay>
+        <PictureOverlay
+          picture={overlayPicture}
+          closeCallback={this.hidePictureOverlay}>
+          **Picture**
+        </PictureOverlay>
       );
     }
 

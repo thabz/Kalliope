@@ -1,19 +1,63 @@
 // @flow
 import React from 'react';
+import PropTypes from 'prop-types';
+import type { PictureItem, Lang } from '../pages/helpers/types.js';
 
 export default class PictureOverlay extends React.Component {
   props: {
     picture: PictureItem,
     srcPrefix?: string,
     lang: Lang,
+    closeCallback: Function,
   };
+  static contextTypes = {
+    showPictureOverlay: PropTypes.func,
+    hidePictureOverlay: PropTypes.func,
+  };
+
+  constructor(props) {
+    super(props);
+    this.onKeyUp = this.onKeyUp.bind(this);
+    this.hideOverlay = this.hideOverlay.bind(this);
+  }
+
+  componentDidMount() {
+    // eslint-disable-next-line no-undef
+    document.addEventListener('keyup', this.onKeyUp, false);
+    // eslint-disable-next-line no-undef
+    document.body.classList.add('noscroll');
+  }
+
+  componentWillUnmount() {
+    // eslint-disable-next-line no-undef
+    document.removeEventListener('keyup', this.onKeyUp, false);
+    // eslint-disable-next-line no-undef
+    document.body.classList.remove('noscroll');
+  }
+
+  onKeyUp(e: KeyboardEvent) {
+    if (e.keyCode === 27) {
+      this.hideOverlay(e);
+    }
+  }
+
+  hideOverlay(e: Event) {
+    e.preventDefault();
+    this.props.closeCallback();
+  }
+
+  eatClick(e) {
+    e.stopPropagation();
+  }
+
   componentDidMount() {
     console.log('Overlay did mount');
   }
   render() {
     return (
-      <div className="overlay-background">
-        <div className="overlay-container">
+      <div className="overlay-background" onClick={this.hideOverlay}>
+        <div className="overlay-container" onClick={this.eatClick}>
+          <figure />
           {this.props.children}
         </div>
         <style jsx>{`
