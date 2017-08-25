@@ -34,7 +34,7 @@ export default class SectionedList extends React.Component {
             break-inside: avoid;
           }
           :global(.list-section), :global(.list-section-line) {
-            line-height: 1.5;
+            line-height: 1.7;
           } /* Fix vertical aligment layout problem in Safari and Chrome */
           :global(.list-section:before) {
             content: '';

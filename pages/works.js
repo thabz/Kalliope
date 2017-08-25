@@ -98,7 +98,7 @@ export default class extends React.Component {
           <Nav lang={lang} poet={poet} title="Værker" />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="works" />
-          <div className="two-columns" style={{ lineHeight: 1.5 }}>
+          <div className="two-columns" style={{ lineHeight: 1.7 }}>
             {list}
             <style jsx>{`
               :global(.nodata) {
