@@ -164,7 +164,9 @@ class Timeline extends React.Component {
           content_html: item.content_html,
         };
         html = (
-          <Picture picture={picture} lang={item.lang} srcPrefix="/static" />
+          <div style={{ paddingTop: '0.37em' }}>
+            <Picture picture={picture} lang={item.lang} srcPrefix="/static" />
+          </div>
         );
       } else {
         html = <TextContent contentHtml={item.content_html} lang={item.lang} />;
