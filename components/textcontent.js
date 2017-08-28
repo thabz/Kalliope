@@ -382,10 +382,18 @@ export default class TextContent extends React.Component {
         }
       }
       if (lineOptions.center) {
-        className += ' center';
+        rendered = (
+          <div className="centered-text">
+            {rendered}
+          </div>
+        );
       }
       if (lineOptions.right) {
-        className += ' right';
+        rendered = (
+          <div className="right-aligned-text">
+            {rendered}
+          </div>
+        );
       }
 
       if (options.isPoetry) {
@@ -468,10 +476,14 @@ export default class TextContent extends React.Component {
             */
           }
 
-          :global(.right) {
+          :global(.right-aligned-text) {
+            display: inline-block;
+            width: 100%;
             text-align: right;
           }
-          :global(.center) {
+          :global(.centered-text) {
+            display: inline-block;
+            width: 100%;
             text-align: center;
           }
           :global(.half-height-blank) {
