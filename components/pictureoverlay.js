@@ -179,7 +179,7 @@ export default class PictureOverlay extends React.Component {
 
     return (
       <div className="overlay-background" onClick={this.hideOverlay}>
-        <div className="overlay-container" onClick={this.hideOverlay}>
+        <div className="overlay-container" onClick={this.eatClick}>
           <div className="overlay-close" onClick={this.hideOverlay}>
             <CloseButton />
           </div>
