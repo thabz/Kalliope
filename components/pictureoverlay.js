@@ -95,10 +95,16 @@ export default class PictureOverlay extends React.Component {
   }
 
   componentDidMount() {
-    // eslint-disable-next-line no-undef
-    document.addEventListener('keyup', this.onKeyUp, false);
-    // eslint-disable-next-line no-undef
-    document.body.classList.add('noscroll');
+    if (
+      document != null &&
+      document.body != null &&
+      document.body.classList != null
+    ) {
+      // eslint-disable-next-line no-undef
+      document.addEventListener('keyup', this.onKeyUp, false);
+      // eslint-disable-next-line no-undef
+      document.body.classList.add('noscroll');
+    }
   }
 
   componentWillUnmount() {
@@ -125,9 +131,6 @@ export default class PictureOverlay extends React.Component {
     e.stopPropagation();
   }
 
-  componentDidMount() {
-    console.log('Overlay did mount');
-  }
   render() {
     const { picture, srcPrefix, lang } = this.props;
 
