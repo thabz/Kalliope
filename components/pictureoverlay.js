@@ -133,7 +133,7 @@ export default class PictureOverlay extends React.Component {
 
     return (
       <div className="overlay-background" onClick={this.hideOverlay}>
-        <div className="overlay-container" onClick={this.eatClick}>
+        <div className="overlay-container" onClick={this.hideOverlay}>
           <BiggerPicture picture={picture} srcPrefix={srcPrefix} lang={lang} />
         </div>
         <style jsx>{`
@@ -148,21 +148,25 @@ export default class PictureOverlay extends React.Component {
           }
 
           .overlay-background :global(.overlay-container) {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
           }
 
           .overlay-background .overlay-container :global(.overlay-figure) {
-            width: auto;
+            height: 100%;
+            width: 100%;
+            max-width: 100vw;
+            max-height: 100%;
+            margin-left: 50%;
+            transform: translate(-50%, 0);
           }
 
           .overlay-background .overlay-container :global(.overlay-figure) :global(img) {
-            margin-left: 50%;
-            transform: translate(-50%, 0);
-            max-width: 80vw;
+            display: block;
+            max-width: 100%;
             max-height: 80%;
           }
 
