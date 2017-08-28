@@ -151,26 +151,19 @@ export default class PictureOverlay extends React.Component {
           }
 
           .overlay-background :global(.overlay-container) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
           }
 
           .overlay-background .overlay-container :global(.overlay-figure) {
-            height: 100%;
-            width: 100%;
-            max-width: 100vw;
-            max-height: 100%;
-            margin-left: 50%;
-            transform: translate(-50%, 0);
           }
 
           .overlay-background .overlay-container :global(.overlay-figure) :global(img) {
-            display: block;
-            max-width: 100%;
-            max-height: 80%;
+            max-width: 80vw;
+            max-height: 80vh;
           }
 
           .overlay-container .overlay-close {
