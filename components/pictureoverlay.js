@@ -5,6 +5,49 @@ import CommonData from '../pages/helpers/commondata.js';
 import TextContent from './textcontent.js';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
 
+class CloseButton extends React.Component {
+  render() {
+    return (
+      <svg width="30" height="30">
+        <circle
+          cx="15"
+          cy="15"
+          r="14"
+          fill="white"
+          stroke="black"
+          strokeWidth="1"
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          x1="10"
+          y1="10"
+          x2="20"
+          y2="20"
+          strokeWidth="2"
+          stroke="black"
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          x1="20"
+          y1="10"
+          x2="10"
+          y2="20"
+          strokeWidth="2"
+          stroke="black"
+          vectorEffect="non-scaling-stroke"
+        />
+        <circle
+          className="button-overlay"
+          cx="15"
+          cy="15"
+          r="14"
+          fill="transparent"
+        />
+      </svg>
+    );
+  }
+}
+
 class BiggerPicture extends React.Component {
   props: {
     picture: PictureItem,
@@ -137,6 +180,9 @@ export default class PictureOverlay extends React.Component {
     return (
       <div className="overlay-background" onClick={this.hideOverlay}>
         <div className="overlay-container" onClick={this.hideOverlay}>
+          <div className="overlay-close" onClick={this.hideOverlay}>
+            <CloseButton />
+          </div>
           <BiggerPicture picture={picture} srcPrefix={srcPrefix} lang={lang} />
         </div>
         <style jsx>{`
