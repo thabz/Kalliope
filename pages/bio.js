@@ -247,8 +247,8 @@ export default class extends React.Component {
               justify-content: space-between;
               width: 100%;
             }
-            .horizontal-on-small > * {
-              flex-basis: 50%;
+            .horizontal-on-small > :global(*) {
+              flex-basis: 47%; /* Add 6% spacing between */
               margin: 0 !important;
             }
           }
