@@ -383,6 +383,8 @@ export default class TextContent extends React.Component {
       }
       if (lineOptions.center) {
         rendered = (
+          // Bliver nødt til at wrappe centreret tekst, ellers fucker det
+          // med linjenumre sat med ::before
           <div className="centered-text">
             {rendered}
           </div>
@@ -390,6 +392,8 @@ export default class TextContent extends React.Component {
       }
       if (lineOptions.right) {
         rendered = (
+          // Bliver nødt til at wrappe højrestillet tekst, ellers fucker det
+          // med linjenumre sat med ::before
           <div className="right-aligned-text">
             {rendered}
           </div>
