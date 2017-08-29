@@ -40,11 +40,16 @@ export default class WorkName extends React.Component {
       <span className="workname">
         {parts}
         <style jsx>{`
-          .workname :global(.lighter) {
-            color: ${CommonData.lightLinkColor};
-          }
           .workname :global(.title.cursive) {
             font-style: italic;
+          }
+
+          :global(.workname) :global(.lighter) {
+            color: #888 !important;
+          }
+
+          :global(a) :global(.workname) :global(.lighter) {
+            color: ${CommonData.lightLinkColor} !important;
           }
         `}</style>
       </span>

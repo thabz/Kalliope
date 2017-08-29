@@ -106,14 +106,6 @@ export default class extends React.Component {
                 padding: 30px 0;
                 font-weight: lighter;
               }
-
-              :global(.workname) :global(.lighter) {
-                color: #888 !important;
-              }
-
-              :global(a) :global(.workname) :global(.lighter) {
-                color: ${CommonData.lightLinkColor} !important;
-              }
             `}</style>
           </div>
           <LangSelect lang={lang} />
