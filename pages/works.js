@@ -1,6 +1,7 @@
 // @flow
 
 import React from 'react';
+import 'isomorphic-fetch';
 import { Link, Router } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
@@ -13,8 +14,8 @@ import WorkName from '../components/workname.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import ErrorPage from './error.js';
+import CommonData from './helpers/commondata.js';
 import type { Lang, Poet, Work, Error } from './helpers/types.js';
-import 'isomorphic-fetch';
 
 export default class extends React.Component {
   props: {
@@ -104,6 +105,14 @@ export default class extends React.Component {
               :global(.nodata) {
                 padding: 30px 0;
                 font-weight: lighter;
+              }
+
+              :global(.workname) :global(.lighter) {
+                color: #888 !important;
+              }
+
+              :global(a) :global(.workname) :global(.lighter) {
+                color: ${CommonData.lightLinkColor} !important;
               }
             `}</style>
           </div>
