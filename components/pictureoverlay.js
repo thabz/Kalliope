@@ -212,6 +212,11 @@ export default class PictureOverlay extends React.Component {
             max-height: 80vh;
           }
 
+          .overlay-background .overlay-container :global(.overlay-figure) :global(figcaption) {
+            min-width: 100%;
+            width: 100px;
+          }
+
           .overlay-container .overlay-close {
             width: 30px;
             height: 30px;
