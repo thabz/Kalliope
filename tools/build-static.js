@@ -309,6 +309,7 @@ const build_poets_json = () => {
     const periodE = p.get('period');
     const works = safeGetText(p, 'works');
     let portrait = 'p1.jpg';
+    let square_portrait = 'p1-square.jpg';
     if (p.attr('portrait') != null) {
       portrait = p.attr('portrait').value();
       if (!fileExists(`static/images/${id}/${portrait}`)) {
@@ -318,6 +319,18 @@ const build_poets_json = () => {
     const has_portraits = fileExists(`static/images/${id}/${portrait}`);
     if (!has_portraits) {
       portrait = null;
+    }
+    if (p.attr('square-portrait') != null) {
+      square_portrait = p.attr('square-portrait').value();
+      if (!fileExists(`static/images/${id}/${square_portrait}`)) {
+        throw `${id} har square-portrait="${square_portrait}" men filen findes ikke.`;
+      }
+    }
+    const has_square_portrait = fileExists(
+      `static/images/${id}/${square_portrait}`
+    );
+    if (!has_square_portrait) {
+      square_portrait = null;
     }
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');
@@ -356,9 +369,11 @@ const build_poets_json = () => {
       lang,
       type,
       portrait,
+      square_portrait,
       name: { firstname, lastname, fullname, pseudonym, christened, realname },
       period,
       has_portraits,
+      has_square_portrait,
       has_works: has.has_works,
       has_poems: has.has_poems,
       has_prose: has.has_prose,
