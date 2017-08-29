@@ -235,10 +235,7 @@ export default class PictureOverlay extends React.Component {
           }
 
           :global(.noscroll) {
-            height: 100%;
             overflow: hidden;
-            width: 100%;
-            position: fixed;
           }
         `}</style>
       </div>
