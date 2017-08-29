@@ -157,7 +157,11 @@ export default class extends React.Component {
       }
       let item = null;
       if (poet.portrait != null) {
-        const name = poetNameString(poet, false, true);
+        const name = `<a href="/${lang}/bio/${poet.id}">${poetNameString(
+          poet,
+          false,
+          true
+        )}</a>`;
         const picture = {
           src: poet.portrait,
           content_html: [[name, { html: true }]],
@@ -165,7 +169,13 @@ export default class extends React.Component {
         const srcPrefix = `/static/images/${poet.id}`;
         item = <Picture picture={picture} lang={lang} srcPrefix={srcPrefix} />;
       } else {
-        item = <MissingPortrait poet={poet} lang={lang} />;
+        item = (
+          <Link key={poet.id} route={url}>
+            <a>
+              <MissingPortrait poet={poet} lang={lang} />
+            </a>
+          </Link>
+        );
       }
       const url = Links.bioURL(lang, poet.id);
       const q = poetNameString(poet).replace(/ /g, '+');
@@ -173,11 +183,7 @@ export default class extends React.Component {
       const searchURL = `https://www.google.dk/search?tbm=isch&q=${q}&tbs=imgo:1&gws_rd=c`;
       return (
         <div style={{ flexBasis: '30%', marginTop: '30px' }} key={poet.id}>
-          <Link key={poet.id} route={url}>
-            <a>
-              {item}
-            </a>
-          </Link>
+          {item}
           <a style={{ fontSize: '0.8em' }} href={searchURL} target="search">
             Søg
           </a>
