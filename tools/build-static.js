@@ -1345,6 +1345,7 @@ const build_about_pages = collected => {
       const body = about.get('body');
       const title = head.get('title').text();
       const pictures = get_pictures(head);
+      const author = safeGetText(head, 'author');
       const poemsNum = Array.from(collected.texts.values())
         .map(t => (t.type === 'poem' ? 1 : 0))
         .reduce((sum, v) => sum + v, 0);
@@ -1361,7 +1362,7 @@ const build_about_pages = collected => {
       const data = {
         id: paths.xml,
         title,
-        author: null,
+        author,
         has_footnotes: false,
         pictures,
         notes,

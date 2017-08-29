@@ -63,8 +63,8 @@ export default class extends React.Component {
       <SidebarPictures
         lang={lang}
         pictures={keyword.pictures}
-        showDropShadow={false}
-        clickToZoom={false}
+        showDropShadow={aboutItemId !== 'kalliope'}
+        clickToZoom={aboutItemId !== 'kalliope'}
         srcPrefix={'/static/images/about'}
       />
     );
@@ -89,6 +89,14 @@ export default class extends React.Component {
         <a>Om</a>
       </Link>,
     ];
+    let author = null;
+    if (keyword.author != null) {
+      author = (
+        <div style={{ fontVariant: 'small-caps', marginBottom: '40px' }}>
+          Af {keyword.author}
+        </div>
+      );
+    }
 
     let pageBody = null;
     if (aboutItemId === 'thanks') {
@@ -114,6 +122,7 @@ export default class extends React.Component {
             <SubHeading>
               {keyword.title}
             </SubHeading>
+            {author}
             <div className="about-body">
               {body}
             </div>
