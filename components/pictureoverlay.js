@@ -19,20 +19,20 @@ class CloseButton extends React.Component {
           vectorEffect="non-scaling-stroke"
         />
         <line
-          x1="10"
-          y1="10"
-          x2="20"
-          y2="20"
-          strokeWidth="2"
+          x1="9"
+          y1="9"
+          x2="21"
+          y2="21"
+          strokeWidth="1"
           stroke="black"
           vectorEffect="non-scaling-stroke"
         />
         <line
-          x1="20"
-          y1="10"
-          x2="10"
-          y2="20"
-          strokeWidth="2"
+          x1="21"
+          y1="9"
+          x2="9"
+          y2="21"
+          strokeWidth="1"
           stroke="black"
           vectorEffect="non-scaling-stroke"
         />
