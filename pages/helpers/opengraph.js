@@ -27,5 +27,5 @@ export const trimmedDescription = (
 };
 
 export const poetImage = (poet: Poet): ?string => {
-  return poet.has_portraits ? `/static/images/${poet.id}/p1-w600.jpg` : null;
+  return poet.has_portraits ? `/static/images/${poet.id}/t/p1-w600.jpg` : null;
 };
