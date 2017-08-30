@@ -34,7 +34,7 @@ export default class Head extends React.Component {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" sizes="192x192" href="/static/touch-icon.png" />
         <link rel="apple-touch-icon" href="/static/touch-icon.png" />
-        <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
+        <link rel="mask-icon" href="/static/favicon-mask.svg" color="black" />
         <link rel="icon" href="/static/favicon.ico" />
         <link rel="manifest" href="/static/manifest.json" />
         <meta name="theme-color" content="rgb(139, 56, 65)" />
