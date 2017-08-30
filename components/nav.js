@@ -135,12 +135,17 @@ export default class Nav extends React.Component {
         </div>
       );
     });
+
+    let rightSideStyle = null;
+    if (rightSide != null) {
+      rightSideStyle = { paddingLeft: '10px' };
+    }
     return (
       <div className="nav-container">
         <nav>
           {joinedLinks}
         </nav>
-        <div>
+        <div style={rightSideStyle}>
           {rightSide}
         </div>
         <style jsx>{`
