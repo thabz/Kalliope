@@ -48,7 +48,7 @@ class TextHeading extends React.Component {
     if (text.subtitles != null) {
       subtitles = text.subtitles.map((t, i) => {
         return (
-          <h4 key={i}>
+          <h4 key={i} style={{ lineHeight: '1.6' }}>
             <TextContent contentHtml={t} lang={lang} />
           </h4>
         );
