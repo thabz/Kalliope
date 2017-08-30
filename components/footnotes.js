@@ -15,7 +15,7 @@ export class Footnote extends Component {
   componentWillUnmount() {
     this.context.footnoteContainer.unregister(this);
   }
-  text(): string {
+  text(): * {
     return this.props.text;
   }
   render() {
