@@ -424,6 +424,12 @@ export default class TextContent extends React.Component {
       } else {
         // Prose
         className += ' prose-paragraph';
+        if (lineOptions.right) {
+          className += ' right-aligned-prose-text';
+        }
+        if (lineOptions.center) {
+          className += ' centered-prose-text';
+        }
         return (
           <div className={className} key={i + keyPrefix}>
             {rendered}
@@ -505,6 +511,12 @@ export default class TextContent extends React.Component {
             width: 100%;
             text-indent: 0;
             margin-left: 0;
+          }
+          :global(.right-aligned-prose-text) {
+            text-align: right;
+          }
+          :global(.centered-prose-text) {
+            text-align: center;
           }
           :global(.half-height-blank) {
             line-height: 0.8;
