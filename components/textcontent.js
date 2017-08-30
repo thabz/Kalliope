@@ -470,16 +470,24 @@ export default class TextContent extends React.Component {
             border-bottom-right-radius: 0.25em;
             */
           }
-
           :global(.inner-line) {
             display: inline-block;
-            width: 100%;
+            width: calc(100%-7em);
+            margin-left: 7em;
+            text-indent: -7em;
+          }
           }
           :global(.right-aligned-text) {
             text-align: right;
+            width: 100%;
+            text-indent: 0;
+            margin-left: 0;
           }
           :global(.centered-text) {
             text-align: center;
+            width: 100%;
+            text-indent: 0;
+            margin-left: 0;
           }
           :global(.half-height-blank) {
             line-height: 0.8;
