@@ -19,7 +19,11 @@ export default class Note extends React.Component {
 
     return (
       <div className={className}>
-        <TextContent contentHtml={note.content_html} lang={lang} />
+        <TextContent
+          contentHtml={note.content_html}
+          contentLang={note.content_lang}
+          lang={lang}
+        />
         <style jsx>{`
           div.sidebar-note {
             margin-bottom: 10px;

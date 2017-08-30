@@ -6,6 +6,7 @@ export type DateWithPlace = {
 };
 
 export type Lang = 'da' | 'en';
+export type TextLang = 'da' | 'en' | 'de' | 'fr' | 'sv' | 'no' | 'it';
 export type Country = 'dk' | 'gb' | 'de' | 'fr' | 'se' | 'no' | 'it' | 'us';
 
 export type PoetId = string;
@@ -96,10 +97,11 @@ export type NoteItem = {
   lang: Lang,
   type: null | 'credits' | 'source',
   content_html: TextContentType,
+  content_lang: TextLang,
 };
 
 export type PictureItem = {
-  lang: Lang,
+  content_lang?: TextLang,
   content_html?: TextContentType,
   src: string,
 };
@@ -112,6 +114,7 @@ export type Text = {
   refs: Array<TextContentType>,
   pictures: Array<PictureItem>,
   content_html: TextContentType,
+  content_lang: TextLang,
   has_footnotes: boolean,
   is_prose: boolean,
 };
@@ -124,6 +127,7 @@ export type Keyword = {
   notes?: Array<NoteItem>,
   pictures: Array<PictureItem>,
   content_html: TextContentType,
+  content_lang: TextLang,
   has_footnotes: boolean,
 };
 
@@ -133,6 +137,7 @@ export type DictItem = {
   variants?: Array<string>,
   phrase?: string,
   content_html: TextContentType,
+  content_lang: TextLang,
   has_footnotes: boolean,
 };
 
@@ -140,14 +145,15 @@ export type NewsItem = {
   date: string,
   title: ?string,
   content_html: TextContentType,
+  content_lang: TextLang,
 };
 
 export type TimelineItem = {
   date: string,
-  lang: Lang,
   type: 'text' | 'image',
   is_history_item: boolean,
   content_html: TextContentType,
+  content_lang: TextLang,
   src?: string, // When type is 'image',
   // context is set for today-items
   context?: {

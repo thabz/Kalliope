@@ -15,6 +15,7 @@ import type {
   TocItem,
   NoteItem,
   PictureItem,
+  TextLang,
 } from './types.js';
 
 export const createURL = (path: string): string => {
@@ -75,6 +76,7 @@ type FetchBioResult = Promise<{
   portrait?: PictureItem,
   timeline: Array<TimelineItem>,
   content_html: TextContentType,
+  content_lang: TextLang,
   error: ?Error,
 }>;
 export const bio = async (poetId: PoetId): FetchBioResult => {

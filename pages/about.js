@@ -83,7 +83,13 @@ export default class extends React.Component {
         sidebar.push(renderedNotes);
       }
     }
-    const body = <TextContent contentHtml={keyword.content_html} lang={lang} />;
+    const body = (
+      <TextContent
+        contentHtml={keyword.content_html}
+        contentLang={keyword.content_lang}
+        lang={lang}
+      />
+    );
     const navbar = [
       <Link route={Links.aboutURL(lang, 'kalliope')}>
         <a>Om</a>

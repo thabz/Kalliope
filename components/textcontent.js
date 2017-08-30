@@ -5,6 +5,7 @@ var DOMParser = require('xmldom').DOMParser;
 
 import type {
   Text,
+  TextLang,
   Lang,
   TextContentOptions,
   TextContentType,
@@ -19,6 +20,7 @@ const replaceHyphens = s => {
 
 type TextContentPropsType = {
   contentHtml: TextContentType,
+  contentLang: TextLang,
   lang: Lang,
   options?: TextContentOptions,
   style?: ?Object,
@@ -309,7 +311,14 @@ export default class TextContent extends React.Component {
     return collected;
   }
   render() {
-    const { contentHtml, style, keyPrefix, className } = this.props;
+    const {
+      contentHtml,
+      contentLang,
+      lang,
+      style,
+      keyPrefix,
+      className,
+    } = this.props;
     const options = this.props.options || {};
 
     if (contentHtml == null) {
@@ -414,6 +423,7 @@ export default class TextContent extends React.Component {
         );
       } else {
         // Prose
+        className += ' prose-paragraph';
         return (
           <div className={className} key={i + keyPrefix}>
             {rendered}
@@ -423,7 +433,12 @@ export default class TextContent extends React.Component {
     });
 
     return (
-      <div style={style} className={className}>
+      <div style={style} className={className} lang={contentLang}>
+        {/*
+        <pre>
+          {contentLang || 'Mangler content_lang'}
+        </pre>
+        */}
         {lines}
         <style jsx>{`
           :global(.poem-line::before),
@@ -441,6 +456,9 @@ export default class TextContent extends React.Component {
           :global(.poem-line) {
             margin-left: 1.5em;
           }
+          :global(.prose-paragraph) {
+            hyphens: auto;
+          }
           :global(.highlighted-line) {
             background-color: rgb(253, 246, 227);
             margin-left: 1em;
@@ -454,7 +472,6 @@ export default class TextContent extends React.Component {
             border-left: 1px solid rgb(238, 232, 213);
             border-right: 1px solid rgb(238, 232, 213);
           }
-
           :global(.first-highlighted-line) {
             border-top: 1px solid rgb(238, 232, 213);
             /*

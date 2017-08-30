@@ -121,8 +121,8 @@ class PersonMeta extends React.Component {
 class PersonPortrait extends React.Component {
   props: {
     poet: Poet,
-    portrait?: PictureItem,
     lang: Lang,
+    portrait?: PictureItem,
   };
   render() {
     const { portrait, poet, lang } = this.props;
@@ -130,18 +130,17 @@ class PersonPortrait extends React.Component {
       return null;
     }
     const srcPrefix = `/static/images/${poet.id}`;
-    return (
-      <Picture picture={portrait} lang={portrait.lang} srcPrefix={srcPrefix} />
-    );
+    return <Picture picture={portrait} srcPrefix={srcPrefix} lang={lang} />;
   }
 }
 
 class Timeline extends React.Component {
   props: {
     timeline: Array<TimelineItem>,
+    lang: Lang,
   };
   render() {
-    const { timeline } = this.props;
+    const { timeline, lang } = this.props;
     if (timeline.length === 0) {
       return null;
     }
@@ -160,16 +159,23 @@ class Timeline extends React.Component {
       if (item.type === 'image' && item.src != null) {
         const picture: PictureItem = {
           src: item.src,
-          lang: item.lang,
+          lang: lang,
+          content_lang: item.content_lang,
           content_html: item.content_html,
         };
         html = (
           <div style={{ paddingTop: '0.37em' }}>
-            <Picture picture={picture} lang={item.lang} srcPrefix="/static" />
+            <Picture picture={picture} srcPrefix="/static" lang={lang} />
           </div>
         );
       } else {
-        html = <TextContent contentHtml={item.content_html} lang={item.lang} />;
+        html = (
+          <TextContent
+            contentHtml={item.content_html}
+            contentLang={item.content_lang}
+            lang={lang}
+          />
+        );
       }
 
       return (
@@ -204,6 +210,7 @@ export default class extends React.Component {
     poet: Poet,
     timeline: Array<TimelineItem>,
     content_html: TextContentType,
+    content_lang: TextLang,
     Error: ?Error,
   };
 
@@ -218,13 +225,22 @@ export default class extends React.Component {
       portrait: json.portrait,
       poet: json.poet,
       content_html: json.content_html,
+      content_lang: json.content_lang,
       timeline: json.timeline,
       error: json.error,
     };
   }
 
   render() {
-    const { lang, poet, portrait, content_html, timeline, error } = this.props;
+    const {
+      lang,
+      poet,
+      portrait,
+      content_html,
+      content_lang,
+      timeline,
+      error,
+    } = this.props;
 
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
@@ -280,11 +296,12 @@ export default class extends React.Component {
             <div style={{ lineHeight: '1.6' }}>
               <TextContent
                 contentHtml={content_html}
+                contentLang={content_lang}
                 lang={lang}
                 className="bio-text"
                 style={{ marginBottom: '40px' }}
               />
-              <Timeline timeline={timeline} />
+              <Timeline timeline={timeline} lang={lang} />
               <style jsx>{`
                 @media (max-width: 800px) {
                   :global(.bio-text) {

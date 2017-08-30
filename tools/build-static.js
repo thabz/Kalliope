@@ -102,6 +102,7 @@ const load_timeline = filename => {
       type,
       lang: 'da',
       is_history_item: true,
+      content_lang: 'da',
       content_html: htmlToXml(
         html.toString().replace('<html>', '').replace('</html>', '').trim(),
         collected
@@ -132,7 +133,7 @@ const build_poet_timeline_json = (poet, collected) => {
         items.push({
           date: work.year,
           type: 'text',
-          lang: 'da',
+          content_lang: 'da',
           is_history_item: false,
           content_html: [
             [`${poet.name.lastname}: ${workName}.`, { html: true }],
@@ -147,8 +148,8 @@ const build_poet_timeline_json = (poet, collected) => {
       items.push({
         date: poet.period.born.date,
         type: 'text',
-        lang: 'da',
         is_history_item: false,
+        content_lang: 'da',
         content_html: [[`${poet.name.lastname} født${place}`]],
       });
     }
@@ -159,8 +160,8 @@ const build_poet_timeline_json = (poet, collected) => {
       items.push({
         date: poet.period.dead.date,
         type: 'text',
-        lang: 'da',
         is_history_item: false,
+        content_lang: 'da',
         content_html: [[`${poet.name.lastname} død${place}`]],
       });
     }
@@ -206,6 +207,7 @@ const build_portrait_json = (poet, collected) => {
   const doc = loadXMLDoc(portraitTextPath);
   if (doc != null) {
     const body = doc.get('//body');
+    data.content_lang = 'da';
     data.content_html = htmlToXml(
       body.toString().replace('<body>', '').replace('</body>', '').trim(),
       collected
@@ -256,6 +258,7 @@ const build_bio_json = collected => {
         body.toString().replace('<body>', '').replace('</body>', ''),
         collected
       );
+      data.content_lang = 'da';
     }
     data.timeline = build_poet_timeline_json(poet, collected);
     data.portrait = build_portrait_json(poet, collected);
@@ -435,8 +438,8 @@ const get_notes = (head, context = {}) => {
       });
     };
     return {
-      lang,
       type,
+      content_lang: lang,
       content_html: htmlToXml(
         replaceContextPlaceholders(note.toString())
           .replace(/<note[^>]*>/, '')
@@ -452,9 +455,9 @@ const get_pictures = head => {
     const lang = picture.attr('lang') ? picture.attr('lang').value() : 'da';
     const type = picture.attr('type') ? picture.attr('type').value() : null;
     return {
-      lang,
       src,
       type,
+      content_lang: lang,
       content_html: htmlToXml(
         picture
           .toString()
@@ -547,6 +550,7 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
       keywords: keywordsArray,
       refs: refsArray,
       pictures: get_pictures(head),
+      content_lang: poet.lang,
       content_html,
     },
   };
@@ -1156,6 +1160,7 @@ const build_keywords = () => {
         author,
         pictures,
         has_footnotes,
+        content_lang: 'da',
         content_html,
       };
       keywords_toc.push({
@@ -1195,6 +1200,7 @@ const build_news = collected => {
       list.push({
         date,
         title,
+        content_lang: lang,
         content_html: htmlToXml(
           body.toString().replace('<body>', '').replace('</body>', '').trim(),
           collected
@@ -1381,6 +1387,7 @@ const build_about_pages = collected => {
         has_footnotes: false,
         pictures,
         notes,
+        content_lang: 'da',
         content_html: htmlToXml(
           body.toString().replace('<body>', '').replace('</body>', ''),
           collected
@@ -1476,8 +1483,8 @@ const build_todays_events_json = collected => {
             add_event(lang, monthAndDay, {
               type: 'text',
               content_html: [[content_html, { html: true }]],
+              content_lang: lang,
               date: born.date,
-              lang: lang,
               context: { event_type: 'born', year, poet },
             });
           });
@@ -1501,7 +1508,7 @@ const build_todays_events_json = collected => {
               type: 'text',
               content_html: [[content_html, { html: true }]],
               date: dead.date,
-              lang: lang,
+              content_lang: lang,
               context: { event_type: 'dead', year, poet },
             });
           });
@@ -1553,8 +1560,8 @@ const build_todays_events_json = collected => {
               type: 'image',
               src: `images/${poet.id}/${poet.portrait}`,
               content_html,
+              content_lang: lang,
               date: event.date,
-              lang,
             };
             add_event(lang, `${mm}-${dd}`, data);
           }

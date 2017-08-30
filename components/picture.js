@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import PropTypes from 'prop-types';
-import type { PictureItem, Lang } from '../pages/helpers/types.js';
+import type { PictureItem, Lang, TextLang } from '../pages/helpers/types.js';
 import { Link, Router } from '../routes';
 import TextContent from './textcontent.js';
 import CommonData from '../pages/helpers/commondata.js';
@@ -10,10 +10,11 @@ import * as Strings from '../pages/helpers/strings.js';
 export default class Picture extends React.Component {
   props: {
     picture: PictureItem,
+    lang: Lang,
     srcPrefix?: string,
     showDropShadow?: boolean,
     clickToZoom?: boolean,
-    lang: Lang,
+    contentLang: TextLang,
   };
   static contextTypes = {
     showPictureOverlay: PropTypes.func,
@@ -27,6 +28,7 @@ export default class Picture extends React.Component {
     const {
       picture,
       lang,
+      contentLang,
       srcPrefix,
       showDropShadow,
       clickToZoom,
@@ -82,7 +84,11 @@ export default class Picture extends React.Component {
             />
           </picture>
           <figcaption>
-            <TextContent contentHtml={picture.content_html} lang={lang} />
+            <TextContent
+              contentHtml={picture.content_html}
+              contentLang={picture.content_lang}
+              lang={lang}
+            />
           </figcaption>
         </figure>
         <style jsx>{`

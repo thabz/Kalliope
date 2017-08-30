@@ -232,6 +232,7 @@ export default class extends React.Component {
     const body = (
       <TextContent
         contentHtml={text.content_html}
+        contentLang={text.content_lang}
         lang={lang}
         options={options}
         keyPrefix={text.id}

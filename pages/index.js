@@ -90,7 +90,7 @@ class News extends React.Component {
     const { lang, news } = this.props;
 
     const items = news.filter((_, i) => i < 5).map((item, i) => {
-      const { date, content_html, title } = item;
+      const { date, content_html, content_lang, title } = item;
 
       return (
         <div className="news-item" key={date + i}>
@@ -98,7 +98,11 @@ class News extends React.Component {
             {title}
           </h3>
           <div className="news-body">
-            <TextContent contentHtml={content_html} lang={lang} />
+            <TextContent
+              contentHtml={content_html}
+              contentLang={content_lang}
+              lang={lang}
+            />
           </div>
           <div className="news-date">
             <FormattedDate date={date} lang={lang} />
