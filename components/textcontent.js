@@ -381,23 +381,12 @@ export default class TextContent extends React.Component {
           rendered = <br />;
         }
       }
+      let lineInnerClass = 'inner-line';
       if (lineOptions.center) {
-        rendered = (
-          // Bliver nødt til at wrappe centreret tekst, ellers fucker det
-          // med linjenumre sat med ::before
-          <div className="centered-text">
-            {rendered}
-          </div>
-        );
+        lineInnerClass += ' centered-text';
       }
       if (lineOptions.right) {
-        rendered = (
-          // Bliver nødt til at wrappe højrestillet tekst, ellers fucker det
-          // med linjenumre sat med ::before
-          <div className="right-aligned-text">
-            {rendered}
-          </div>
-        );
+        lineInnerClass += ' right-aligned-text';
       }
 
       if (options.isPoetry) {
@@ -410,7 +399,9 @@ export default class TextContent extends React.Component {
             data-num={displayedLineNum}
             key={keyPrefix + i}>
             {anchor}
-            {rendered}
+            <div className={lineInnerClass}>
+              {rendered}
+            </div>
           </div>
         );
       } else if (options.isBible) {
@@ -480,14 +471,14 @@ export default class TextContent extends React.Component {
             */
           }
 
-          :global(.right-aligned-text) {
+          :global(.inner-line) {
             display: inline-block;
             width: 100%;
+          }
+          :global(.right-aligned-text) {
             text-align: right;
           }
           :global(.centered-text) {
-            display: inline-block;
-            width: 100%;
             text-align: center;
           }
           :global(.half-height-blank) {
