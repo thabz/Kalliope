@@ -77,7 +77,7 @@ class TodaysEvents extends React.Component {
           <div>
             {renderedEvents}
           </div>
-          <div>
+          <div style={{ marginTop: '40px' }}>
             {pictureItem}
           </div>
         </SplitWhenSmall>
@@ -92,14 +92,6 @@ class TodaysEvents extends React.Component {
           :global(div.today-body) {
             line-height: 1.6;
             font-weight: lighter;
-          }
-          :global(.picture-item) {
-            margin-top: 30px;
-          }
-          @media (max-width: 800px) {
-            :global(.picture-item) {
-              margin-top: 0;
-            }
           }
         `}</style>
       </div>

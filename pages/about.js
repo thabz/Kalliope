@@ -31,6 +31,7 @@ export default class extends React.Component {
   props: {
     lang: Lang,
     keyword: Keyword,
+    aboutItemId: string,
     error: ?Error,
   };
 
@@ -73,9 +74,6 @@ export default class extends React.Component {
     });
     let sidebar = [];
     if (keyword.has_footnotes || keyword.pictures.length > 0) {
-      if (keyword.has_footnotes) {
-        sidebar.push(<FootnoteList />);
-      }
       if (keyword.pictures.length > 0) {
         sidebar.push(renderedPictures);
       }
