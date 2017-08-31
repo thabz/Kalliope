@@ -11,6 +11,7 @@ import SidebarSplit from '../components/sidebarsplit.js';
 import * as Links from '../components/links';
 import Heading from '../components/heading.js';
 import TextContent from '../components/textcontent.js';
+import SplitWhenSmall from '../components/split-when-small.js';
 import Picture from '../components/picture.js';
 import FormattedDate from '../components/formatteddate.js';
 import type { Lang, NewsItem } from './helpers/types.js';
@@ -27,41 +28,59 @@ class TodaysEvents extends React.Component {
     if (events == null || events.length == 0) {
       return null;
     }
-    const renderedEvents = events.map((item, i) => {
-      let html = null;
-      let yearHtml = null;
-      if (item.type === 'image' && item.src != null) {
+    const renderedEvents = events
+      .filter(item => item.type !== 'image')
+      .map((item, i) => {
+        const yearHtml = (
+          <div className="today-date">
+            <FormattedDate date={item.date} lang={lang} />
+          </div>
+        );
+        const html = (
+          <TextContent contentHtml={item.content_html} lang={item.lang} />
+        );
+        return (
+          <div className="today-item" key={i}>
+            {yearHtml}
+            <div className="today-body">
+              {html}
+            </div>
+          </div>
+        );
+      });
+    let pictureItems = events
+      .filter(item => item.type === 'image' && item.src != null)
+      .map((item, i) => {
         const picture: PictureItem = {
           src: item.src,
           lang: item.lang,
           content_html: item.content_html,
         };
-        html = (
-          <div style={{ marginTop: '30px' }}>
+        const html = (
+          <div className="picture-item">
             <Picture picture={picture} lang={item.lang} srcPrefix="/static" />
           </div>
         );
-      } else {
-        yearHtml = (
-          <div className="today-date">
-            <FormattedDate date={item.date} lang={lang} />
+        return (
+          <div className="today-item" key={i}>
+            <div className="today-body">
+              {html}
+            </div>
           </div>
         );
-        html = <TextContent contentHtml={item.content_html} lang={item.lang} />;
-      }
-      return (
-        <div className="today-item" key={i}>
-          {yearHtml}
-          <div className="today-body">
-            {html}
-          </div>
-        </div>
-      );
-    });
+      });
+    let pictureItem = pictureItems.length > 0 ? pictureItems[0] : null;
     return (
       <div>
         <SubHeading>Dagen i dag</SubHeading>
-        {renderedEvents}
+        <SplitWhenSmall>
+          <div>
+            {renderedEvents}
+          </div>
+          <div>
+            {pictureItem}
+          </div>
+        </SplitWhenSmall>
         <style jsx>{`
           :global(div.today-item) {
             margin-bottom: 20px;
@@ -73,6 +92,14 @@ class TodaysEvents extends React.Component {
           :global(div.today-body) {
             line-height: 1.6;
             font-weight: lighter;
+          }
+          :global(.picture-item) {
+            margin-top: 30px;
+          }
+          @media (max-width: 800px) {
+            :global(.picture-item) {
+              margin-top: 0;
+            }
           }
         `}</style>
       </div>

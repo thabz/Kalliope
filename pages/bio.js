@@ -12,6 +12,7 @@ import PoetName, { poetNameString } from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import Picture from '../components/picture.js';
 import TextContent from '../components/textcontent.js';
+import SplitWhenSmall from '../components/split-when-small.js';
 import FormattedDate from '../components/formatteddate.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
@@ -247,29 +248,12 @@ export default class extends React.Component {
     }
 
     const sidebarItems = (
-      <div className="horizontal-on-small" key="first-and-on">
+      <SplitWhenSmall key="first-and-on">
         <PersonMeta poet={poet} lang={lang} />
         <div style={{ width: '100%', marginTop: '40px' }}>
           <PersonPortrait poet={poet} portrait={portrait} lang={lang} />
         </div>
-        <style jsx>{`
-          .horizontal-on-small {
-            display: flex;
-            flex-direction: column;
-          }
-          @media (max-width: 800px) {
-            .horizontal-on-small {
-              flex-direction: row;
-              justify-content: space-between;
-              width: 100%;
-            }
-            .horizontal-on-small > :global(*) {
-              flex-basis: 47%; /* Add 6% spacing between */
-              margin: 0 !important;
-            }
-          }
-        `}</style>
-      </div>
+      </SplitWhenSmall>
     );
 
     const title = <PoetName poet={poet} includePeriod />;
