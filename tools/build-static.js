@@ -69,6 +69,16 @@ const safeGetText = (element, child) => {
   return null;
 };
 
+const safeGetAttr = (element, attrName) => {
+  if (element) {
+    const attrElement = element.attr(attrName);
+    if (attrElement) {
+      return attrElement.value();
+    }
+  }
+  return null;
+};
+
 // Ready after second pass
 let collected_works = new Map();
 
@@ -191,27 +201,32 @@ const build_poet_timeline_json = (poet, collected) => {
 };
 
 const build_portrait_json = (poet, collected) => {
-  const imagePath = `static/images/${poet.id}/${poet.portrait}`;
-
-  if (!fs.existsSync(imagePath)) {
+  if (!poet.has_portraits) {
     return null;
   }
-  const data = {
-    src: poet.portrait,
-    lang: poet.lang,
-  };
-
-  const portraitTextPath = imagePath
-    .replace('static/images', 'fdirs')
-    .replace('.jpg', '.xml');
-  const doc = loadXMLDoc(portraitTextPath);
+  let data = null;
+  const doc = loadXMLDoc(`fdirs/${poet.id}/portraits.xml`);
   if (doc != null) {
-    const body = doc.get('//body');
-    data.content_lang = 'da';
-    data.content_html = htmlToXml(
-      body.toString().replace('<body>', '').replace('</body>', '').trim(),
-      collected
-    );
+    const primaries = doc.find('//pictures/picture').filter(picture => {
+      return safeGetAttr(picture, 'primary') == 'true';
+    });
+    if (primaries.length === 0) {
+      throw `fdirs/${poet.id}/portraits.xml mangler primary`;
+    }
+    const primary = primaries[0];
+    data = {
+      lang: poet.lang,
+      src: primary.attr('src').value(),
+      content_lang: 'da',
+      content_html: htmlToXml(
+        primary
+          .toString()
+          .replace(/<picture[^>]*?>/, '')
+          .replace('</picture>', '')
+          .trim(),
+        collected
+      ),
+    };
   }
   return data;
 };
@@ -219,10 +234,6 @@ const build_portrait_json = (poet, collected) => {
 const build_bio_json = collected => {
   collected.poets.forEach((poet, poetId) => {
     // Skip if all of the participating xml files aren't modified
-    const portrait_xml =
-      poet.portrait != null
-        ? `fdirs/${poet.id}/` + poet.portrait.replace('.jpg', '.xml')
-        : null;
     if (
       !isFileModified(
         `data/poets.xml:${poet.id}`,
@@ -231,8 +242,7 @@ const build_bio_json = collected => {
           .get(poetId)
           .map(workId => `fdirs/${poet.id}/${workId}.xml`),
         `fdirs/${poet.id}/events.xml`,
-        portrait_xml,
-        `static/images/${poet.id}/${poet.portrait}`,
+        `fdirs/${poet.id}/portraits.xml`,
         `fdirs/${poet.id}/bio.xml`
       )
     ) {
@@ -1431,18 +1441,9 @@ const build_todays_events_json = collected => {
   const portrait_descriptions = Array.from(
     collected.poets.values()
   ).map(poet => {
-    return `fdirs/${poet.id}/p1.xml`;
+    return `fdirs/${poet.id}/portraits.xml`;
   });
-  const portrait_images = Array.from(collected.poets.values()).map(poet => {
-    return `static/images/${poet.id}/p1.jpg`;
-  });
-  if (
-    !isFileModified(
-      `data/poets.xml`,
-      ...portrait_descriptions,
-      ...portrait_images
-    )
-  ) {
+  if (!isFileModified(`data/poets.xml`, ...portrait_descriptions)) {
     return;
   }
 
@@ -1532,7 +1533,7 @@ const build_todays_events_json = collected => {
             .map(event => {
               const poet = event.context.poet;
               let weight = 0;
-              weight += fileExists(`fdirs/${poet.id}/p1.xml`) ? 12 : 6;
+              weight += poet.has_portraits ? 12 : 6; // TODO: Find the one with a portrait description
               weight += poet.has_texts ? 10 : 5;
               weight += poet.has_works ? 6 : 3;
               weight += preferredCountries.indexOf(poet.country) > -1 ? 11 : 6;
@@ -1547,23 +1548,26 @@ const build_todays_events_json = collected => {
             const event = weighted[0].event;
             const poet = event.context.poet;
             let content_html = null;
+            const primary_portrait = build_portrait_json(poet, collected);
             if (
-              fileExists(
-                `fdirs/${poet.id}/${poet.portrait.replace('.jpg', '.xml')}`
-              )
+              primary_portrait != null &&
+              primary_portrait.content_html[0][0].length > 0
             ) {
-              content_html = build_portrait_json(poet, collected).content_html;
+              content_html = primary_portrait.content_html;
+              console.log(JSON.stringify(primary_portrait.content_html));
             } else {
               content_html = [[poetName(poet)]];
             }
-            const data = {
-              type: 'image',
-              src: `images/${poet.id}/${poet.portrait}`,
-              content_html,
-              content_lang: lang,
-              date: event.date,
-            };
-            add_event(lang, `${mm}-${dd}`, data);
+            if (primary_portrait != null) {
+              const data = {
+                type: 'image',
+                src: `images/${poet.id}/${primary_portrait.src}`,
+                content_html,
+                content_lang: lang,
+                date: event.date,
+              };
+              add_event(lang, `${mm}-${dd}`, data);
+            }
           }
         }
       }
