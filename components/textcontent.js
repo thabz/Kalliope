@@ -457,6 +457,8 @@ export default class TextContent extends React.Component {
             text-align: right;
             display: inline-block;
             margin-left: -2.5em;
+            vertical-align: top;
+            margin-top: 0.25em;            
           }
           :global(.bible-line),
           :global(.poem-line) {
@@ -480,18 +482,10 @@ export default class TextContent extends React.Component {
           }
           :global(.first-highlighted-line) {
             border-top: 1px solid rgb(238, 232, 213);
-            /*
-            border-top-left-radius: 0.25em;
-            border-top-right-radius: 0.25em;
-            */
           }
 
           :global(.last-highlighted-line) {
             border-bottom: 1px solid rgb(238, 232, 213);
-            /*
-            border-bottom-left-radius: 0.25em;
-            border-bottom-right-radius: 0.25em;
-            */
           }
           :global(.inner-line) {
             display: inline-block;
