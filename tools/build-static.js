@@ -321,30 +321,21 @@ const build_poets_json = () => {
     const nameE = p.get('name');
     const periodE = p.get('period');
     const works = safeGetText(p, 'works');
-    let portrait = 'p1.jpg';
-    let square_portrait = 'p1-square.jpg';
-    if (p.attr('portrait') != null) {
-      portrait = p.attr('portrait').value();
-      if (!fileExists(`static/images/${id}/${portrait}`)) {
-        throw `${id} har portrait="${portrait}" men filen findes ikke.`;
+
+    let square_portrait = null;
+    const has_portraits = fileExists(`fdirs/${id}/portraits.xml`);
+    if (has_portraits) {
+      const portraitsDoc = loadXMLDoc(`fdirs/${id}/portraits.xml`);
+      const squares = portraitsDoc
+        .find('//pictures/picture')
+        .map(p => safeGetAttr(p, 'square-src'))
+        .filter(s => s != null);
+      if (squares.length > 0) {
+        square_portrait = squares[0];
       }
     }
-    const has_portraits = fileExists(`static/images/${id}/${portrait}`);
-    if (!has_portraits) {
-      portrait = null;
-    }
-    if (p.attr('square-portrait') != null) {
-      square_portrait = p.attr('square-portrait').value();
-      if (!fileExists(`static/images/${id}/${square_portrait}`)) {
-        throw `${id} har square-portrait="${square_portrait}" men filen findes ikke.`;
-      }
-    }
-    const has_square_portrait = fileExists(
-      `static/images/${id}/${square_portrait}`
-    );
-    if (!has_square_portrait) {
-      square_portrait = null;
-    }
+    const has_square_portrait = square_portrait != null;
+
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');
     const fullname = safeGetText(nameE, 'fullname');
@@ -381,7 +372,6 @@ const build_poets_json = () => {
       country,
       lang,
       type,
-      portrait,
       square_portrait,
       name: { firstname, lastname, fullname, pseudonym, christened, realname },
       period,
@@ -1554,7 +1544,6 @@ const build_todays_events_json = collected => {
               primary_portrait.content_html[0][0].length > 0
             ) {
               content_html = primary_portrait.content_html;
-              console.log(JSON.stringify(primary_portrait.content_html));
             } else {
               content_html = [[poetName(poet)]];
             }
