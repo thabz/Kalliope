@@ -1,6 +1,7 @@
 #!/usr/local/bin/ruby 
 
 require 'json'
+require 'fileutils'
 
 @imagesDir = "static/images"
 @primaries = {}
@@ -28,11 +29,12 @@ end
 
 Dir.new(@imagesDir).each { |poet| 
     if (poet != '..' and File.directory?("#{@imagesDir}/#{poet}")) 
-        puts(poet)
         images = Dir.new("#{@imagesDir}/#{poet}").find_all { |image|
             image.match?(/^p\d.jpg/) or image.match?(/^p\d-oval.jpg/)
         }
-        if (images.size > 0 and File.exist?("fdirs/#{poet}")) 
+        if (images.size > 0 && !File.exists?("fdirs/#{poet}/portraits.xml"))
+            puts("fdirs/#{poet}/portraits.xml")
+            FileUtils.mkdir "fdirs/#{poet}"
             File.open("fdirs/#{poet}/portraits.xml","w") { |f|
                 f.puts("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")
                 f.puts("<pictures>")
