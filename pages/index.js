@@ -28,11 +28,13 @@ class TodaysEvents extends React.Component {
     if (events == null || events.length == 0) {
       return null;
     }
+    const nowYear = new Date().getFullYear();
     const renderedEvents = events
       .filter(item => item.type !== 'image')
       .map((item, i) => {
+        const yearsAgo = nowYear - parseInt(item.date.substring(0, 4));
         const yearHtml = (
-          <div className="today-date">
+          <div className="today-date" title={yearsAgo + ' år siden'}>
             <FormattedDate date={item.date} lang={lang} />
           </div>
         );
