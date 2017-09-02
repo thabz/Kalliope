@@ -34,7 +34,7 @@ class TodaysEvents extends React.Component {
       .map((item, i) => {
         const yearsAgo = nowYear - parseInt(item.date.substring(0, 4));
         const yearHtml = (
-          <div className="today-date" title={yearsAgo + ' år siden'}>
+          <div className="today-date" title={yearsAgo + ' år siden i dag'}>
             <FormattedDate date={item.date} lang={lang} />
           </div>
         );
