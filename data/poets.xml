@@ -1270,10 +1270,11 @@
   <name>
     <firstname>Jens Steen</firstname>
     <lastname>Sehested</lastname>
+    <pseudonym>Siennest</pseudonym> <!-- Anagram af Iens Steen -->
   </name>
   <period>
     <born>
-      <date>1640</date>
+      <date>1640 ca.</date>
     </born>
     <dead>
       <date>1698</date>
@@ -1394,12 +1395,12 @@
     </born>
     <dead>
       <date>1711</date>
+      <place>Hellestrup</place>
     </dead>
   </period>
   <works>andre</works>
 </person>
 
-<!-- TODO: Find dødsdato -->
 <person id="rostock" country="dk" lang="da" type="poet">
   <name>
     <firstname>Mads Pedersen</firstname>
@@ -1411,28 +1412,29 @@
       <place>Ribe</place>
     </born>
     <dead>
-      <date>1713</date>
+      <date>1713-02-24</date>
       <place>Middelfart</place>
     </dead>
   </period>
   <works>ribe</works>
 </person>
 
-<!-- TODO: Find døds/fødselsår -->
 <person id="thrane" country="dk" lang="da" type="poet">
   <name>
     <firstname>Mads</firstname>
     <lastname>Thrane</lastname>
+    <fullname>Mads Rasmussen Thrane</fullname>
   </name>
   <period>
     <born>
       <date>?</date>
     </born>
     <dead>
-      <date>?</date>
+      <date>1717-07-06</date>
     </dead>
   </period>
   <works>1699</works>
+  <!-- http://danskforfatterleksikon.dk/1850/TMadsRasmussenThrane.htm -->
 </person>
 
 <person id="reenberg" country="dk" lang="da" type="poet">
@@ -1452,18 +1454,20 @@
   <works>1742,andre</works>
 </person>
 
-<!-- TODO: Find mere nøjagtige datoer -->
 <person id="thura" country="dk" lang="da" type="poet">
   <name>
-    <firstname>Laurits</firstname>
+    <firstname>Laurids</firstname>
     <lastname>Thura</lastname>
+    <fullname>Laurids Lauridsen Thura</fullname>
   </name>
   <period>
     <born>
-      <date>1657</date>
+      <date>1657-08-20</date>
+      <place>Nakskov</place>
     </born>
     <dead>
-      <date>1731</date>
+      <date>1731-04-01</date>
+      <place>Ribe</place>
     </dead>
   </period>
   <works>1726</works>
@@ -1540,18 +1544,20 @@
   <name>
     <firstname>Jørgen</firstname>
     <lastname>Friis</lastname>
+    <fullname>Jørgen Pedersen Friis</fullname>
   </name>
   <period>
     <born>
-      <date>1684</date>
+      <date>1684-01-03</date>
+      <place>Thisted</place>
     </born>
     <dead>
-      <date>1740</date>
+      <date>1740-02-12</date>
+      <place>Helsinge</place>
     </dead>
   </period>
 </person>
 
-<!-- TODO: Find mere nøjagtige datoer -->
 <person id="wolfburg" country="dk" lang="da" type="poet">
   <name>
     <firstname>Morten Caspar</firstname>
@@ -1559,10 +1565,12 @@
   </name>
   <period>
     <born>
-      <date>1686</date>
+      <date>1686-05-22</date>
+      <place>Fjellerup, Fyn</place>
     </born>
     <dead>
-      <date>1729</date>
+      <date>1729-06-01</date>
+      <place>Søllested, Fyn</place>
     </dead>
   </period>
   <works>1724</works>
@@ -1612,9 +1620,11 @@
   <period>
     <born>
       <date>1695 ca.</date>
+      <place>Bygholm ved Horsens</place>
     </born>
     <dead>
-      <date>1754</date>
+      <date>1754-01-09</date>
+      <place>Bergen</place>
     </dead>
   </period>
   <works>1738</works>
@@ -1653,7 +1663,6 @@
   <works>gudelige,moralske,ovs,andre</works>
 </person>
 
-<!-- TODO: Find mere nøjagtige datoer -->
 <person id="wadskiaer" country="dk" lang="da" type="poet">
   <name>
     <firstname>Christian Frederik</firstname>
@@ -1665,13 +1674,13 @@
       <place>Ørslev Kloster ved Skive</place>
     </born>
     <dead>
-      <date>1779</date>
+      <date>1779-11-05</date>
+      <place>København</place>
     </dead>
   </period>
   <works>1743,andre</works>
 </person>
 
-<!-- TODO: Find mere nøjagtige datoer -->
 <person id="graah" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jacob</firstname>
@@ -1680,11 +1689,14 @@
   <period>
     <born>
       <date>1721</date>
+      <place>Rendsborg</place>
     </born>
     <dead>
       <date>1756</date>
+      <place>Skibsforlis på vej hjem fra Kina</place>
     </dead>
   </period>
+  <works>1751</works>
 </person>
 
 <person id="stenersen" country="dk" lang="da" type="poet">
@@ -1861,18 +1873,20 @@
   </period>
 </person>
 
-<!-- TODO: Find mere nøjagtige datoer -->
 <person id="stockfleth" country="dk" lang="da" type="poet">
   <name>
     <firstname>Th.</firstname>
     <lastname>Stockfleth</lastname>
+    <fullname>Thomas Rosing de Stockfleth</fullname>
   </name>
   <period>
     <born>
-      <date>1743</date>
+      <date>1742-12-03</date>
+      <place>Fåberg (nu Lillehammer)</place>
     </born>
     <dead>
-      <date>1808</date>
+      <date>1808-06-22</date>
+      <place>Kongsberg, Buskerud</place>
     </dead>
   </period>
 </person>
@@ -1952,10 +1966,12 @@
   </name>
   <period>
     <born>
-      <date>1750</date>
+      <date>1750-01-17</date>
+      <place>Mariager</place>
     </born>
     <dead>
-      <date>1804</date>
+      <date>1804-06-09</date>
+      <place>København</place>
     </dead>
   </period>
   <works>andre</works>
@@ -1968,10 +1984,10 @@
   </name>
   <period>
     <born>
-      <date>1751</date>
+      <date>1751-11-06</date>
     </born>
     <dead>
-      <date>1804</date>
+      <date>1804-02-28</date>
     </dead>
   </period>
   <works>andre</works>
@@ -2016,9 +2032,11 @@
   <period>
     <born>
       <date>1755-10-17</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1808-11-16</date>
+      <place>Kristiania</place>
     </dead>
   </period>
   <works>1797,andre</works>
@@ -2256,11 +2274,11 @@
   </name>
   <period>
     <born>
-      <date>1774</date>
+      <date>1774-03-05</date>
       <place>Altona</place>
     </born>
     <dead>
-      <date>1842</date>
+      <date>1842-10-08</date>
       <place>København</place>
     </dead>
   </period>
@@ -2306,10 +2324,12 @@
   </name>
   <period>
     <born>
-      <date>1775</date>
+      <date>1775-01-03</date>
+      <place>Fåborg</place>
     </born>
     <dead>
-      <date>1844</date>
+      <date>1844-01-12</date>
+      <place>Odense</place>
     </dead>
   </period>
   <works>andre</works>
@@ -2390,14 +2410,16 @@
 <person id="magnusson" country="dk" lang="da" type="poet">
   <name>
     <firstname>Finnur</firstname>
-    <lastname>Magnusson</lastname>
+    <lastname>Magnússon</lastname>
   </name>
   <period>
     <born>
-      <date>1781</date>
+      <date>1781-08-27</date>
+      <place>Skålholt, Island</place>
     </born>
     <dead>
-      <date>1847</date>
+      <date>1847-12-24</date>
+      <place>København</place>
     </dead>
   </period>
   <works>andre</works>
@@ -2694,10 +2716,12 @@
   </name>
   <period>
     <born>
-      <date>1798</date>
+      <date>1798-04-06</date>
+      <place>København</place>
     </born>
     <dead>
-      <date>1879</date>
+        <date>1879-03-31</date>
+        <place>Frederiksberg</place>
     </dead>
   </period>
   <works>andre</works>
@@ -2833,10 +2857,12 @@
   </name>
   <period>
     <born>
-      <date>1809</date>
+      <date>1809-04-25</date>
+      <place>Kær, Ulkebøl</place>
     </born>
     <dead>
-      <date>1882</date>
+        <date>1882-11-01</date>
+        <place>Gelsted</place>
     </dead>
   </period>
   <works>1849,andre</works>
@@ -3138,10 +3164,12 @@
   </name>
   <period>
     <born>
-      <date>1829</date>
+      <date>1829-01-02</date>
+      <place>Skanderborg</place>
     </born>
     <dead>
-      <date>1885</date>
+      <date>1885-12-03</date>
+      <place>Frederiksberg</place>
     </dead>
   </period>
   <works>andre</works>
