@@ -3,7 +3,7 @@ import React from 'react';
 import NextHead from 'next/head';
 import { string } from 'prop-types';
 
-const urlPrefix = 'https://beta.kalliope.org';
+const urlPrefix = 'https://kalliope.org';
 const defaultDescription =
   'Kalliope er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning.';
 const defaultOGURL = urlPrefix;
