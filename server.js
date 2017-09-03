@@ -38,6 +38,14 @@ const redirects = [
     to: '/da/bio/${fhandle}',
   },
   {
+    from: /\/(..)\/vaerktoc.pl/,
+    to: '/$1/work/${vid}',
+  },
+  {
+    from: /\/vaerktoc.pl/,
+    to: '/da/work/${vid}',
+  },
+  {
     // Smid både førsteliner og titler til titler
     from: /\/(..)\/flines.pl/,
     to: '/$1/texts/${fhandle}/titles',
