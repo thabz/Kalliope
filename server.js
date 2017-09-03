@@ -22,6 +22,14 @@ const redirects = [
     to: '/da/works/${fhandle}',
   },
   {
+    from: /\/(..)\/fpop.pl/,
+    to: '/$1/works/${fhandle}',
+  },
+  {
+    from: /\/fpop.pl/,
+    to: '/da/works/${fhandle}',
+  },
+  {
     from: /\/(..)\/digt.pl/,
     to: '/$1/text/${longdid}',
   },
