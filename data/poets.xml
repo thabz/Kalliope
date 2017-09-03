@@ -896,15 +896,18 @@
 
 <person id="hansenmc" country="dk" lang="da" type="poet">
   <name>
-    <firstname>M.C.</firstname>
+    <firstname>Maurits</firstname>
     <lastname>Hansen</lastname>
+    <fullname>Maurits Christopher Hansen</fullname>
   </name>
   <period>
     <born>
-      <date>?</date>
+      <date>1794-07-05</date>
+      <place>Modum</place>
     </born>
     <dead>
-      <date>?</date>
+      <date>1852-03-16</date>
+      <place>Kongsberg</place>
     </dead>
   </period>
   <works>andre,1816</works>
@@ -938,7 +941,8 @@
       <place>København</place>
     </born>
     <dead>
-      <date>?</date> <!-- levede stadig da Erslews Forfatter-Lexicon blev skrevet -->
+      <date>1846-04-14</date>
+      <place>Højelse</place>
     </dead>
   </period>
   <works>andre</works>
@@ -972,7 +976,7 @@
       <date>?</date>
     </born>
     <dead>
-      <date>1720</date>
+      <date>1720-06-28</date>
     </dead>
   </period>
   <works>andre</works>
@@ -986,9 +990,11 @@
   <period>
     <born>
       <date>1663 ca.</date>
+      <place>Odense (formodentligt)</place>
     </born>
     <dead>
-      <date>1700</date>
+      <date>1700-08-14</date>
+      <place>Grenå</place>
     </dead>
   </period>
 </person>
@@ -1004,7 +1010,8 @@
       <place>Fævejle ved Grenå</place>
     </born>
     <dead>
-      <date>1663</date>
+      <date>1663-08-10</date>
+      <place>Ørslev, Vester Flakkebjerg</place>
     </dead>
   </period>
   <works>1649</works>
@@ -1034,7 +1041,7 @@
   </name>
   <period>
     <born>
-      <date>1575</date>
+      <date>1575-04-06</date>
     </born>
     <dead>
       <date>1641</date>
@@ -1135,10 +1142,12 @@
   </name>
   <period>
     <born>
-      <date>1624</date>
+      <date>1624-09-27</date>
+      <place>Randers</place>
     </born>
     <dead>
-      <date>1698</date>
+      <date>1698-05-01</date>
+      <place>Randers</place>
     </dead>
   </period>
 </person>
