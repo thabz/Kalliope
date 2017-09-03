@@ -18,12 +18,24 @@ const redirects = [
     to: '/$1/works/${fhandle}',
   },
   {
+    from: /\/ffront.cgi/,
+    to: '/da/works/${fhandle}',
+  },
+  {
     from: /\/(..)\/digt.pl/,
     to: '/$1/text/${longdid}',
   },
   {
+    from: /\/digt.pl/,
+    to: '/da/text/${longdid}',
+  },
+  {
     from: /\/(..)\/biografi.cgi/,
     to: '/$1/bio/${fhandle}',
+  },
+  {
+    from: /\/biografi.cgi/,
+    to: '/da/bio/${fhandle}',
   },
   {
     // Smid både førsteliner og titler til titler
@@ -31,16 +43,33 @@ const redirects = [
     to: '/$1/texts/${fhandle}/titles',
   },
   {
+    // Smid både førsteliner og titler til titler
+    from: /\/flines.pl/,
+    to: '/da/texts/${fhandle}/titles',
+  },
+  {
     from: /\/(..)\/keyword.cgi/,
     to: '/$1/keyword/${keyword}',
+  },
+  {
+    from: /\/keyword.cgi/,
+    to: '/da/keyword/${keyword}',
   },
   {
     from: /\/(..)\/fsekundaer.pl/,
     to: '/$1/bibliography/${fhandle}',
   },
   {
+    from: /\/fsekundaer.pl/,
+    to: '/da/bibliography/${fhandle}',
+  },
+  {
     from: /\/(..)\/poets.cgi/,
     to: '/$1/poets/dk/name',
+  },
+  {
+    from: /\/poets.cgi/,
+    to: '/da/poets/dk/name',
   },
   {
     from: /\/..\/work\/([^\/]+)\/(.*?)\.xml/,
@@ -76,7 +105,11 @@ app.prepare().then(() => {
           done = true;
         }
       });
-    } else if (pathname.indexOf('/search') === 0) {
+      if (done) {
+          return;
+      }
+    };
+    if (pathname.indexOf('/search') === 0) {
       elasticSearchClient
         .search(
           'kalliope',
