@@ -14,7 +14,7 @@
    <title>Der Soldat</title>
    <firstline>Es geht bei gedämpfter Trommel Klang</firstline>
    <notes>
-      <note>Gendigtning af H. C. Andersens <xref digt="andersen2002011301"/>.</note>
+      <note>Gendigtning af H. C. Andersens <xref poem="andersen2002011301"/>.</note>
       <note>Dette digt blev umådelig populært i samtiden, ikke mindst efter at adskillige komponister, bl.a. Robert Schumann, havde skrevet melodier til det. Schumanns melodi findes i hans ,,Fünf Lieder'', opus 40 (1840).</note>
    </notes>
    <quality>korrektur1</quality>
@@ -50,7 +50,7 @@ Ich aber, ich traf ihn mitten in das Herz.
    <firstline>O lasset uns, in dieser düstern, bangen Zeit</firstline>
    <notes>
       <note><a person="andersen">H. C. Andersen</a> opsøgte Chamisso på sin Tysklands-rejse i 1831 og modtog da et stambogsbladblad med dette digt. Trykt i <i>Skyggebilleder</i> (1831), og i Chamissos <i>Werke,</i> Bd. 4 (1842). Her indtastet efter manuskriptet i <i>H. C. Andersen Album</i> (1980), side 72.</note>
-      <note>Bidrag fra Sven Sørensen, Malta.</note>
+      <note type="credits">Bidrag fra Sven Sørensen.</note>
    </notes>
    <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>stambog</keywords>
@@ -84,7 +84,7 @@ Adelbert v Chamisso
    <indextitle>Die Weiber von Weinsberg</indextitle>
    <firstline>Der erste Hohenstaufe, der König Konrad, lag</firstline>
    <notes>
-      <note>Samme stof er behandlet i Chr. Winthers <xref digt="winther20020217134"/> som dog næppe bygger direkte på Chamiss.</note>
+      <note>Samme stof er behandlet i Chr. Winthers <xref poem="winther20020217134"/> som dog næppe bygger direkte på Chamiss.</note>
    </notes>
    <quality>korrektur1</quality>
 </head>
@@ -158,7 +158,6 @@ Der Räuber dient uns zur Speise!
 <head>
    <title>Der Spielman</title>
    <firstline>Im Städtchen gibt es des Jubels viel</firstline>
-   <subtitle></subtitle>
    <quality>korrektur1</quality>
    <notes>
       <note>Gendigtning af H.C. Andersens <xref poem="andersen2002110714"/></note>
@@ -244,6 +243,34 @@ Da sang der selbige Schiffer
 Es seiner Liebsten vor.
 Nun singen's auf Straßen und Mäkten
 Die Knaben und Mädchen im Chor.
+</body>
+</poem>
+
+<poem id="chamisso2017082101">
+<head>
+   <firstline>Die Mühle dreht ihre Flügel,</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Die Mühle die dreht ihre Flügel
+der Sturm, der sauset darin
+und unter der Linde am Hügel
+da weinet die Müllerin
+
+Lass saussen den Sturm und brausen,
+ich habe gebaut auf den Wind
+ich habe gebaut auf Schwüre
+da war ich ein törichtes Kind
+
+Noch hat mich den Wind nicht belogen
+der Wind, der blieb mir treu
+Und bin ich verarmt und betrogen,
+die Schwüre die waren nur spreu.
+
+Wo ist der sie geschworen?
+Der Wind nimmt die Klagen nur auf;
+Er hat sich auf’s Wandern verloren
+es findet der Wind ihn nicht auf.    
 </body>
 </poem>
 

@@ -8,7 +8,7 @@
    <notes>
       <note>Kalliopes udgave af <i>In Memoriam A.H.H.</i> følger i alt væsentligt Christopher Ricks' autoritative tekst fra <i>The Poems of Tennyson</i> (1987); men hvor Ricks moderniserer (f.eks. "thro'" til "through", "drown'd" til "drowned" og "blessed" til "blessèd") har vi overalt bibeholdt Tennysons stavemåde. To fejl er her rettet: "wall" i LXXXV,19 er rettet til "walls" og punktumet i CXXVI,6 er rettet til et komma.</note>
       <note>A.H.H. er Tennysons kammersjuk Arthur Henry Hallam, der døde 1833 i Wien. "OBIIT MDCCCXXXIII" betyder: Han døde i 1833.</note>
-      <note>Bidrag fra Brian Bentsen.</note>
+      <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <quality>korrektur1,kilde</quality>
    <cvs-timestamp>$Id$</cvs-timestamp>
@@ -2974,7 +2974,7 @@ And loyal unto kindly laws.
 
 My blood an even tenor kept,
     Till on mine ear this message falls,
-    That in Vienna's fatal <corr err="wall">walls</corr>
+    That in Vienna's fatal walls<note>walls] wall</note>
 God's finger touch'd him, and he slept.
 
 The great Intelligences fair
@@ -4739,7 +4739,7 @@ Love is and was my Lord and King,
 Which every hour his couriers bring.
 
 Love is and was my King and Lord,
-    And will be <corr err=".">,</corr> tho' as yet I keep
+And will be,<note>,].</note> tho' as yet I keep
     Within his court on earth, and sleep
 Encompass'd by his faithful guard,
 

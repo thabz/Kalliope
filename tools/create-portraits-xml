@@ -1,0 +1,64 @@
+#!/usr/local/bin/ruby 
+
+require 'json'
+require 'fileutils'
+
+@imagesDir = "static/images"
+@primaries = {}
+@squares = {}
+
+["de","dk","fr","gb","it","no","se","us"].each { |cc|
+    data = File.read("static/api/poets-#{cc}.json")
+    JSON.parse(data).each { |poet| 
+        @primaries[poet["id"]] = poet["portrait"]
+        @squares[poet["id"]] = poet["square_portrait"]
+    }
+}
+
+puts @primaries
+
+def image_title(poet, image)
+
+    xml_file = "fdirs/#{poet}/#{image.gsub(/.jpg$/,'.xml')}"
+    if (File.exist?(xml_file))
+        return File.read(xml_file).gsub(/<\?.*?>/,'').gsub(/<\/?body>/,'').strip
+    else
+        return ""
+    end
+end
+
+Dir.new(@imagesDir).each { |poet| 
+    if (poet != '..' and File.directory?("#{@imagesDir}/#{poet}")) 
+        images = Dir.new("#{@imagesDir}/#{poet}").find_all { |image|
+            image.match?(/^p\d.jpg/) or image.match?(/^p\d-oval.jpg/)
+        }
+        if (images.size > 0 && !File.exists?("fdirs/#{poet}/portraits.xml"))
+            puts("fdirs/#{poet}/portraits.xml")
+            FileUtils.mkdir "fdirs/#{poet}"
+            File.open("fdirs/#{poet}/portraits.xml","w") { |f|
+                f.puts("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")
+                f.puts("<pictures>")
+                images.each { |image|
+                    title = image_title(poet,image)
+                    primary = ""
+                    square = ""
+                    if (@primaries[poet] == image)
+                        primary = ' primary="true"'
+                        if @squares[poet] 
+                            square = " square-src=\"#{@squares[poet]}\""
+                        end
+                    end
+                    f.puts("  <picture src=\"#{image}\"#{primary}#{square}>")
+                    if (title.size > 0)
+                        f.puts("    #{title}")
+                    end
+                    f.puts("  </picture>")
+
+                }
+                f.puts("</pictures>")
+            }
+
+        end
+    end
+}
+

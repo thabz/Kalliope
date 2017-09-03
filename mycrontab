@@ -1,3 +1,0 @@
-# Mail et databasedump til mig hver søndag middag
-
-0 12 * * 7 mysqldump kalliope digthits digterhits dayhits hourhits| mail -s mysqldump jelle@localhost

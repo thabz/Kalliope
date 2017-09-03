@@ -1,0 +1,16 @@
+[ignore]
+.*/static/api/.*
+.*/fdirs/.*
+.*/node_modules/mitt/.*
+.*/node_modules/babel-plugin-transform-react-remove-prop-types/.*
+
+
+[include]
+
+[libs]
+types/
+
+[lints]
+all=warn
+[options]
+include_warnings=true
