@@ -1,3 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<about>
+<head>
+    <title>Kalliopes XML-format</title>
+</head>
+<body>
+    <!--
 <h1>Kalliopes XML format</h1>
 <p>Kalliopes digte er alle indtastet i et skræddersyet XML-format. Følgende er en introduktion til dette. Jeg viser et eksempel efterfulgt af forklaring af de forskellige elementer i XMLen.</p>
 
@@ -28,3 +35,6 @@ Om lidt, er vi forsvundne,
 <p>Digtets <tt>&lt;body&gt;</tt> indeholder selve teksten. Der er mulighed for at markere at ord skal have en speciel formattering, såsom kursiv og fed. Dette gøres med tags som ligner HTML. Der findes en <a class="green" href="kabout.pl?page=tags"> speciel side</a> om disse formatteringtags.</p>
 
 <p>Et værk i Kalliope består af een fil som indeholder en masse <tt>&lt;poem&gt;</tt> ... <tt>&lt;/poem&gt;</tt>. En digters udgivelser opdeles således i een fil pr. værk.</p>
+-->
+</body>
+</about>
