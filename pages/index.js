@@ -14,14 +14,14 @@ import TextContent from '../components/textcontent.js';
 import SplitWhenSmall from '../components/split-when-small.js';
 import Picture from '../components/picture.js';
 import FormattedDate from '../components/formatteddate.js';
-import type { Lang, NewsItem } from './helpers/types.js';
+import type { Lang, NewsItem, TimelineItem } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
 
 class TodaysEvents extends React.Component {
   props: {
     lang: Lang,
-    events: ?Array<TimelineItem>,
+    events: Array<TimelineItem>,
   };
   render() {
     const { lang, events } = this.props;
@@ -39,7 +39,11 @@ class TodaysEvents extends React.Component {
           </div>
         );
         const html = (
-          <TextContent contentHtml={item.content_html} lang={item.lang} />
+          <TextContent
+            contentHtml={item.content_html}
+            contentLang={item.content_lang}
+            lang={lang}
+          />
         );
         return (
           <div className="today-item" key={i}>
@@ -226,7 +230,7 @@ export default class extends React.Component {
 
     const renderedNews = <News news={news} lang={lang} />;
 
-    const sidebar = <TodaysEvents events={todaysEvents} />;
+    const sidebar = <TodaysEvents events={todaysEvents} lang={lang} />;
 
     return (
       <div>
