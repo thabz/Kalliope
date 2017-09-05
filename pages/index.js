@@ -44,9 +44,7 @@ class TodaysEvents extends React.Component {
         return (
           <div className="today-item" key={i}>
             {yearHtml}
-            <div className="today-body">
-              {html}
-            </div>
+            <div className="today-body">{html}</div>
           </div>
         );
       });
@@ -65,9 +63,7 @@ class TodaysEvents extends React.Component {
         );
         return (
           <div className="today-item" key={i}>
-            <div className="today-body">
-              {html}
-            </div>
+            <div className="today-body">{html}</div>
           </div>
         );
       });
@@ -76,12 +72,8 @@ class TodaysEvents extends React.Component {
       <div>
         <SubHeading>Dagen i dag</SubHeading>
         <SplitWhenSmall>
-          <div>
-            {renderedEvents}
-          </div>
-          <div style={{ marginTop: '40px' }}>
-            {pictureItem}
-          </div>
+          <div>{renderedEvents}</div>
+          <div style={{ marginTop: '40px' }}>{pictureItem}</div>
         </SplitWhenSmall>
         <style jsx>{`
           :global(div.today-item) {
@@ -115,9 +107,7 @@ class News extends React.Component {
 
       return (
         <div className="news-item" key={date + i}>
-          <h3>
-            {title}
-          </h3>
+          <h3>{title}</h3>
           <div className="news-body">
             <TextContent
               contentHtml={content_html}
@@ -159,11 +149,7 @@ class News extends React.Component {
       );
     });
 
-    return (
-      <div>
-        {items}
-      </div>
-    );
+    return <div>{items}</div>;
   }
 }
 
