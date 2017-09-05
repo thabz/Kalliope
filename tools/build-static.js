@@ -114,7 +114,11 @@ const load_timeline = filename => {
       is_history_item: true,
       content_lang: 'da',
       content_html: htmlToXml(
-        html.toString().replace('<html>', '').replace('</html>', '').trim(),
+        html
+          .toString()
+          .replace('<html>', '')
+          .replace('</html>', '')
+          .trim(),
         collected
       ),
     };
@@ -265,7 +269,10 @@ const build_bio_json = collected => {
         data.author = head.get('author').text();
       }
       data.content_html = htmlToXml(
-        body.toString().replace('<body>', '').replace('</body>', ''),
+        body
+          .toString()
+          .replace('<body>', '')
+          .replace('</body>', ''),
         collected
       );
       data.content_lang = 'da';
@@ -335,6 +342,9 @@ const build_poets_json = () => {
       }
     }
     const has_square_portrait = square_portrait != null;
+    if (has_portraits && !has_square_portrait) {
+      throw `${id} har portræt men ikke square-portrait`;
+    }
 
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');
@@ -418,7 +428,10 @@ const build_poet_workids = () => {
       const poetId = person.attr('id').value();
       const workIds = person.get('works');
       let items = workIds
-        ? workIds.text().split(',').filter(x => x.length > 0)
+        ? workIds
+            .text()
+            .split(',')
+            .filter(x => x.length > 0)
         : [];
       collected_workids.set(poetId, items);
     });
@@ -530,7 +543,10 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
   const foldername = Paths.textFolder(textId);
   const prev_next = resolve_prev_next(textId);
 
-  const rawBody = body.toString().replace('<body>', '').replace('</body>', '');
+  const rawBody = body
+    .toString()
+    .replace('<body>', '')
+    .replace('</body>', '');
   const content_html = htmlToXml(rawBody, collected, isPoetry, isBible);
   const has_footnotes =
     rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
@@ -1202,7 +1218,11 @@ const build_news = collected => {
         title,
         content_lang: lang,
         content_html: htmlToXml(
-          body.toString().replace('<body>', '').replace('</body>', '').trim(),
+          body
+            .toString()
+            .replace('<body>', '')
+            .replace('</body>', '')
+            .trim(),
           collected
         ),
       });
@@ -1222,18 +1242,21 @@ const build_dict_first_pass = collected => {
 
   safeMkdir('static/api/dict');
   const doc = loadXMLDoc(path);
-  doc.get('//entries').childNodes().forEach(item => {
-    if (item.name() !== 'entry') {
-      return;
-    }
-    const id = item.attr('id').value();
-    const title = item.get('ord').text();
-    const simpleData = {
-      id,
-      title,
-    };
-    collected.dict.set(id, simpleData);
-  });
+  doc
+    .get('//entries')
+    .childNodes()
+    .forEach(item => {
+      if (item.name() !== 'entry') {
+        return;
+      }
+      const id = item.attr('id').value();
+      const title = item.get('ord').text();
+      const simpleData = {
+        id,
+        title,
+      };
+      collected.dict.set(id, simpleData);
+    });
   writeCachedJSON('collected.dict', Array.from(collected.dict));
 };
 
@@ -1249,7 +1272,10 @@ const build_dict_second_pass = collected => {
 
   const createItem = (id, title, phrase, variants, body, collected) => {
     const content_html = htmlToXml(
-      body.toString().replace('<forkl>', '').replace('</forkl>', ''),
+      body
+        .toString()
+        .replace('<forkl>', '')
+        .replace('</forkl>', ''),
       collected
     );
     const has_footnotes =
@@ -1272,30 +1298,33 @@ const build_dict_second_pass = collected => {
   };
 
   const doc = loadXMLDoc(path);
-  doc.get('//entries').childNodes().forEach(item => {
-    if (item.name() !== 'entry') {
-      return;
-    }
-    const id = item.attr('id').value();
-    const body = item.get('forkl');
-    const title = item.get('ord').text();
-    let phrase = null;
-    if (item.get('frase')) {
-      phrase = item.get('frase').text();
-    }
-    const variants = item.find('var').map(varItem => varItem.text());
-    variants.forEach(variant => {
-      createItem(
-        variant,
-        variant,
-        null,
-        null,
-        `<b>${variant}</b>: se <a dict="${id}">${title}</a>.`,
-        collected
-      );
+  doc
+    .get('//entries')
+    .childNodes()
+    .forEach(item => {
+      if (item.name() !== 'entry') {
+        return;
+      }
+      const id = item.attr('id').value();
+      const body = item.get('forkl');
+      const title = item.get('ord').text();
+      let phrase = null;
+      if (item.get('frase')) {
+        phrase = item.get('frase').text();
+      }
+      const variants = item.find('var').map(varItem => varItem.text());
+      variants.forEach(variant => {
+        createItem(
+          variant,
+          variant,
+          null,
+          null,
+          `<b>${variant}</b>: se <a dict="${id}">${title}</a>.`,
+          collected
+        );
+      });
+      createItem(id, title, phrase, variants, body, collected);
     });
-    createItem(id, title, phrase, variants, body, collected);
-  });
   writeJSON(`static/api/dict.json`, items);
 };
 
@@ -1319,7 +1348,10 @@ const build_bibliography_json = collected => {
       if (doc != null) {
         data[filename] = doc.find('//items/item').map(line => {
           return htmlToXml(
-            line.toString().replace('<item>', '').replace('</item>', ''),
+            line
+              .toString()
+              .replace('<item>', '')
+              .replace('</item>', ''),
             collected
           );
         });
@@ -1389,7 +1421,10 @@ const build_about_pages = collected => {
         notes,
         content_lang: 'da',
         content_html: htmlToXml(
-          body.toString().replace('<body>', '').replace('</body>', ''),
+          body
+            .toString()
+            .replace('<body>', '')
+            .replace('</body>', ''),
           collected
         ),
       };
@@ -1666,17 +1701,15 @@ const update_elasticsearch = collected => {
           let subtitles = null;
           const subtitle = head.get('subtitle');
           if (subtitle && subtitle.find('line').length > 0) {
-            subtitles = subtitle
-              .find('line')
-              .map(s =>
-                replaceDashes(
-                  s
-                    .toString()
-                    .replace('<line>', '')
-                    .replace('</line>', '')
-                    .replace('<line/>', '')
-                )
-              );
+            subtitles = subtitle.find('line').map(s =>
+              replaceDashes(
+                s
+                  .toString()
+                  .replace('<line>', '')
+                  .replace('</line>', '')
+                  .replace('<line/>', '')
+              )
+            );
           } else if (subtitle) {
             const subtitleString = subtitle
               .toString()
