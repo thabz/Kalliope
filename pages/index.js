@@ -210,12 +210,15 @@ export default class extends React.Component {
         next: `${zeroPad(next.getMonth() + 1)}-${zeroPad(next.getDate())}`,
       };
     }
-    let res = await fetch(createURL(`/static/api/news_${lang}.json`));
-    const news: Array<NewsItem> = await res.json();
-    res = await fetch(
+    const newsPromise = fetch(createURL(`/static/api/news_${lang}.json`));
+    const todayPromise = fetch(
       createURL(`/static/api/today/${lang}/${dayAndMonth}.json`)
     );
-    const todaysEvents: Array<TimelineItem> = await res.json();
+    const todayResponse = await todayPromise;
+    const newsResponse = await newsPromise;
+    const todaysEvents: Array<TimelineItem> = await todayResponse.json();
+    const news: Array<NewsItem> = await newsResponse.json();
+
     return { lang, news, todaysEvents, pagingContext };
   }
 
