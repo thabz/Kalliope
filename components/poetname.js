@@ -70,27 +70,24 @@ export default class PoetName extends React.Component {
     let pp = null;
     const p = parts(poet, lastNameFirst, includePeriod);
     const p0 =
-      p[0] != null
-        ? <span key={0} className="name">
-            {p[0]}
-          </span>
-        : null;
+      p[0] != null ? (
+        <span key={0} className="name">
+          {p[0]}
+        </span>
+      ) : null;
     const p1 =
-      p[1] != null
-        ? <span key={1} className="lighter">
-            {' '}{p[1]}
-          </span>
-        : null;
+      p[1] != null ? (
+        <span key={1} className="lighter">
+          {' '}
+          {p[1]}
+        </span>
+      ) : null;
     if (p0 && p1) {
       pp = [p0, p1];
     } else if (p0) {
       pp = p0;
     }
-    return (
-      <span className="poetname">
-        {pp}
-      </span>
-    );
+    return <span className="poetname">{pp}</span>;
   }
 }
 
@@ -119,6 +116,11 @@ export const navnMedEjefald = (navn: ?string): ?string => {
     return `${navn}s`;
   }
 };
+
+export function poetLastNameString(poet: Poet): string {
+  const { firstname, lastname } = poet.name;
+  return nvl(lastname, nvl(firstname, 'Ukendt'));
+}
 
 export function poetGenetiveLastName(poet: Poet, lang: Lang): string {
   const { firstname, lastname } = poet.name;
