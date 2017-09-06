@@ -127,7 +127,14 @@ class PersonMeta extends React.Component {
           yearDiff -= 1;
         }
         let ca = '';
-        if (born.prefix != null || dead.prefix != null) {
+        if (
+          born.prefix != null ||
+          dead.prefix != null ||
+          born.month === 0 ||
+          dead.month === 0 ||
+          born.day === 0 ||
+          dead.day === 0
+        ) {
           ca = 'ca. ';
         }
         age = `${lastName} blev ${ca}${yearDiff} år gammel`;
