@@ -9,7 +9,17 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handler = routes.getRequestHandler(app);
 const elasticSearchClient = require('./tools/libs/elasticsearch-client.js');
-const rootStaticFiles = ['/sw.js', '/favicon.ico', '/robots.txt'];
+const rootStaticFiles = [
+  '/sw.js',
+  '/favicon.ico',
+  '/robots.txt',
+  '/apple-touch-icon-120x120.png',
+  '/apple-touch-icon-152x152.png',
+  '/apple-touch-icon-180x180.png',
+  '/apple-touch-icon-60x60.png',
+  '/apple-touch-icon-76x76.png',
+  '/apple-touch-icon.png', // 180x180
+];
 
 const worksRedirects = JSON.parse(fs.readFileSync('static/api/redirects.json'));
 const redirects = [
@@ -130,9 +140,9 @@ app.prepare().then(() => {
         }
       });
       if (done) {
-          return;
+        return;
       }
-    };
+    }
     if (pathname.indexOf('/search') === 0) {
       elasticSearchClient
         .search(
