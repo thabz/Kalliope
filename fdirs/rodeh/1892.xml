@@ -21,12 +21,6 @@ http://kb-images.kb.dk/public/adl/rode/rode_01/rode_01_fm_0XX/full/!2000,/0/nati
 </workhead>
 <workbody>
 
-<!-- TODO: Gå igennem og find
-1. Versindrykninger
-2. Strofemellemrum
-3. Kursivere ord
--->
-
 <section level="1">
 <head>
    <toctitle>I</toctitle>
@@ -37,7 +31,7 @@ http://kb-images.kb.dk/public/adl/rode/rode_01/rode_01_fm_0XX/full/!2000,/0/nati
 <head>
    <title>Jeg stirrer ud</title>
    <firstline>Jeg stirrer ud af mit Vindu</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Jeg stirrer ud af mit Vindu
@@ -64,7 +58,7 @@ naar man venter En, som man véd ikke kommer.
 <head>
    <title>Bøjet er dit Hoved</title>
    <firstline>Bøjet er dit Hoved af tunge Tanker</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrktur2,kilde</quality>
 </head>
 <body>
 Bøjet er dit Hoved af tunge Tanker,
@@ -94,7 +88,7 @@ Sælsom Klang har de angstfulde Blikke.
 <head>
    <title>Liljekonval</title>
    <firstline>Liljekonval med de hvide Kar</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Liljekonval med de hvide Kar,
@@ -125,7 +119,7 @@ og giver mig Lyst til at græde.
 <head>
    <title>Skyggekunstnerens Melodi</title>
    <firstline>Nej hvad er det dog for en Sang, jeg nynner</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Nej hvad er det dog for en Sang, jeg nynner.
@@ -150,6 +144,8 @@ Levende nu for mit Øje staar
 London town med de fem Millioner.
 Skyggekunstner! Dine Skygger er arme,
 dem, jeg nu ser, ejer Liv og Varme.
+
+<center>- - -</center>
 
 Aften. - Paa Gaden i Taagemulmet,
 hvor London stønner og sukker,
@@ -198,7 +194,6 @@ paa Lur.
 London - ja London!
 Hele den travle puffende Vrimmel,
 Støj og Stimmel,
-
 Struggle for life i alle Gader,
 Larm og Raab,
 skrigende Skilte paa alle Facader:
@@ -218,7 +213,6 @@ Parken - ja Hydepark med high life til Hest,
 Bare at se er at være til Fest.
 Højt paa Bukkene stramme Lakajer;
 de i Vognene er det, der ejer
-
 Millionerne
 (regnet i Pundene, ikke i Kronerne).
 Smækkre Vogne. Vælige Heste.
@@ -356,7 +350,6 @@ Ogsaa det - ogsaa det!
 Hvorfor borer jeg Hovedet ned i Sengen?
 Hvorfor bider jeg hvast i mit Pudevaar?
 For at hindre Graaden i at briste.
-
 Var det Minderne? - Ja de sidste.
 Eller dem alle. Var de da saa triste?
 Aanej. Aanej. - Men de svundne Aar!
@@ -378,7 +371,7 @@ Selv om det ikke er mange. -
 <head>
    <title>Stjerne og Morild</title>
    <firstline>Over mig er Himlen med Stjerneglimt</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Over mig er Himlen med Stjerneglimt,
@@ -431,7 +424,7 @@ eller Evigheders Vidunderlykke?
 <head>
    <title>Paa Klippeøen</title>
    <firstline>Bare Hav, Himmel og Sten!</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Bare Hav, Himmel og Sten!
@@ -444,7 +437,6 @@ intet Blodløbs rindende Elv.
 Intet stakket Liv, der sig klamrer
 til Evighedernes Hvælv.
 
-
 Min Fod er paa Klippen
 den haarde og gamle,
 mejslet af Tidernes Finger,
@@ -453,9 +445,9 @@ af levende Liv.
 Hvem traadte vel sidst
 paa den Sten, hvor jeg træder?
 
-
 Maaske en Fugl, der fløj
 - langt, langt bort.
+
 Gammel, ærværdig
 løfter Klippen sit Hoved,
 sit graanende Hoved,
@@ -500,11 +492,11 @@ til Evighedernes Hvælv.
 </body>
 </poem>
 
-<poem id="rodeh2017090706">
+<poem id="rodeh2017090737">
 <head>
    <title>Tro ikke, jeg hører til dem</title>
    <firstline>Tro ikke, jeg hører til dem</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Tro ikke, jeg hører til dem,
@@ -526,7 +518,7 @@ saa kender den ogsaa til Jubelens Lys.
 <head>
    <title>Ja, var jeg Maler</title>
    <firstline>Ja, var jeg Maler, saa vilde jeg male</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Ja, var jeg Maler, saa vilde jeg male
@@ -550,7 +542,7 @@ spejler al Himmelens Vælde.
 <head>
     <title>Dagen spandt ud -</title>
    <firstline>Dagen spandt ud sin lange Traad</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Dagen spandt ud sin lange Traad,
@@ -567,7 +559,7 @@ Hvad vil min Død?
 <head>
    <title>Dialog</title>
    <firstline>Jeg kommer fra Ligfærd</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 <nonum><center><i>Min Ven:</i></center></nonum>
@@ -605,7 +597,6 @@ Nej, Ven! Fader Død bør ej volde os Kvide.
 For det er stolt om sig selv at vide:
 Jeg er en Gaade,
 som ingen kan raade.
-
 </body>
 </poem>
 
@@ -613,7 +604,7 @@ som ingen kan raade.
 <head>
    <title>Der er noget smukt -</title>
    <firstline>Der er noget smukt et Sted i mit Sind</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Der er noget smukt et Sted i mit Sind,
@@ -656,7 +647,7 @@ der stiger af Sjælens brusende Sø.
 <head>
    <title>Forundrede Øjne</title>
    <firstline>Jeg aabned en Dag to forundrede Øjne</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Jeg aabned en Dag to forundrede Øjne,
@@ -683,7 +674,7 @@ stundom den blafrer i Angst for Blæsten.
 <head>
    <title>I Ensomheden</title>
    <firstline>I Ensomheden</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 I Ensomheden
@@ -755,7 +746,7 @@ imod din Bringe.
 <head>
    <title>Stambogsvers</title>
    <firstline>Som smaabitte sorte Toppe</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Som smaabitte sorte Toppe
@@ -771,7 +762,7 @@ og stundom vi føler den suser omkring os.
 <head>
    <title>Vinden</title>
    <firstline>Mo'r, Mo'r! Kan du høre de klagende Støn?</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Mo'r, Mo'r! Kan du høre de klagende Støn?
@@ -800,7 +791,7 @@ Aa Mo'r. Jeg er angst for Vinden.
 <head>
    <title>Drøm</title>
    <firstline>Jeg ved ikke hvor</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Jeg ved ikke hvor.
@@ -849,7 +840,7 @@ i tunge, pinefulde Drømme.
 <head>
    <title>Leden</title>
    <firstline>Og du er en Verden - kun engang skabt</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Og du er en Verden - kun engang skabt
@@ -861,7 +852,7 @@ og bander Skaberens første Bliv.
 Og du er en Verden med Stjerners Hær,
 og ønsker at Døden, den sorte var nær.
 
-- -
+<center>- -</center>
 
 Ja jeg er en Verden med Banesving
 i livløs Flakken paa Jorden omkring.
@@ -875,18 +866,15 @@ med dækkende Islag fra Pol til Pol.
 <head>
    <title>En Fabel</title>
    <firstline>De kender Fablen om Fanden</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
-
-
 De kender Fablen om Fanden,
 der var i en Nøddeskal gemt.
 En Smed blev trods Hamren og Banden
 baade skuffet og siden skræmt.
 Thi Fanden og Nødden tog Skorstenens Vej.
 Se saadan en Smed er jeg.
-
 
 Og Smedjen, det er min Hjerne,
 og Nødden det Spørgsmaalstegn
@@ -895,8 +883,6 @@ der gemmes bag Skallens Hegn.
 Tit dundred jeg løs paa den stakkels Nød,
 men aldrig jeg Skallen brød.
 
-
-
 Thi er den i Hjernens Kammer,
 den narrer mig ved sine Spring,
 og altid ved Siden jeg rammer,
@@ -904,12 +890,12 @@ og Nødden hopper omkring.
 Saa slaar jeg et rasende Slag tilsidst,
 da bruger Nødden sin List.
 
+<center>- -</center>
 
 Med ét er der tomt bag Panden,
 og Smeden staar dum som en Stud.
 Jeg tror i den Nød var Fanden
 - hvis det da ikke var Gud.
-
 </body>
 </poem>
 
@@ -917,7 +903,7 @@ Jeg tror i den Nød var Fanden
 <head>
    <title>En Ramme</title>
    <firstline>Du raaded at danne en Ramme</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Du raaded at danne en Ramme
@@ -930,11 +916,10 @@ dem til et helstøbt Hele,
 saa de ej faldt fra hinanden
 i uensartede Dele.
 
-Jeg loved det skal jeg gøre,
-hvad andet skulde jeg svare.
-Nu har jeg tænkt over Sagen
-og Løftet lader jeg fare.
-
+    Jeg loved det skal jeg gøre,
+    hvad andet skulde jeg svare.
+    Nu har jeg tænkt over Sagen
+    og Løftet lader jeg fare.
 
 Thi jeg har søgt i mit eget Liv
 at finde den rette Ramme;
@@ -961,6 +946,8 @@ Dog lad mig se. Lad mig tænke mig om
 Nu siger jeg dig hvad jeg mest har kær:
 Det bli'r dog den bedste Ramme.
 
+<center>- -</center>
+
 Jeg elsker i Sjælen de dybeste Strømme,
 jeg elsker de Taarer, der frem sig lister,
 jeg elsker i Sjælen de særeste Drømme,
@@ -982,7 +969,7 @@ Thi ogsaa den har Mysteriets Mærke.
 <head>
    <title>Til dem af Eder -</title>
    <firstline>Til dem af Eder, der leder og lider</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Til dem af Eder, der leder og lider
@@ -991,11 +978,15 @@ og higer mod andre Steder og Tider!
 Til dem af Eder, hvis Hjerner brænder
 og slukkes ud og paa ny sig tænder!
 
+<center>- -</center>
+
 Nogle Hjerter i Fryd, nogle Hjerter i Nød,
 er mer end Tilfredsheden gold og død.
 
 Nogle Hjerner i flammende, gnistrende Brand
 er mere end Lys over Rige og Land.
+
+<center>- -</center>
 
 Saa ville vi tale sammen
 om al vores haarde Nød
@@ -1008,11 +999,9 @@ og om vores Liv og Død.
 <head>
    <title>Jeg fryser</title>
    <firstline>Ak vor Lykke bort er svunden</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
-
-
 Ak vor Lykke bort er svunden,
 bliver aldrig mere funden,
 Manden er for klog og vis.
@@ -1026,8 +1015,6 @@ mellem skønne Engles Klynger,
 der med søde Stemmer synger
 Lykkens og Gudfaders Pris.
 
-
-
 Himlen var saa lun og varm,
 Tro: en venlig Visdomsugle.
 - Aa hvor jeg er træt og arm.
@@ -1039,7 +1026,6 @@ i det tomme, sorte, golde.
 - Ingen Hvile. - Intet lyser.
 - Aa hvor Himlene er kolde.
 Og jeg fryser, og jeg fryser.
-
 </body>
 </poem>
 
@@ -1047,7 +1033,7 @@ Og jeg fryser, og jeg fryser.
 <head>
    <title>Elskov</title>
    <firstline>Drages du, Jord?</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Drages du, Jord?
@@ -1063,12 +1049,14 @@ Længes du, Jord?
 Drives som vi du af Brynde og Brunst?
 Solen nægter dig ej sin Gunst.
 
-Lokker du, Sol?
-Længes du, Sol?
-Sødt er dit Smil hver Morgenstund;
-Vel jeg forstaar det kan friste.
-Et eneste Kys af den brændende Mund
-vil Jorden i Døden vriste.
+    Lokker du, Sol?
+    Længes du, Sol?
+    Sødt er dit Smil hver Morgenstund;
+    Vel jeg forstaar det kan friste.
+    Et eneste Kys af den brændende Mund
+    vil Jorden i Døden vriste.
+
+<center>- -</center>
 
 Der gaar gennem Rummet saa dirrende Strømme,
 de binder til Solen med sære Traade,
@@ -1081,7 +1069,7 @@ om vordende Vellysts Naade.
 <head>
    <title>Paa Havet ved Nat</title>
    <firstline>Jeg er fjernt fra Livets Lande</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Jeg er fjernt fra Livets Lande.
@@ -1115,7 +1103,7 @@ vandre paa de sorte Vande.
 <head>
    <title>Jeg bygger et Alter</title>
    <firstline>Jeg bygger et Alter for den ukendte Gud</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Jeg bygger et Alter for den ukendte Gud
@@ -1140,12 +1128,11 @@ der bor i min Sjæl den dunkle.
 </body>
 </poem>
 
-
 <poem id="rodeh2017090724">
 <head>
    <title>Den fremmede</title>
    <firstline>Spil op, Musikanter!</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Spil op, Musikanter!
@@ -1153,131 +1140,107 @@ Spil op, Musikanter!
 Dens Tone er sørgmodig,
 dens Tone er for fin.
 
-
 Trompeter og Fløjter
 de giver lystigt Spil,
 og Skøger og Tøjter
 skal danse dertil.
-
-
 
 Jeg elsker den forfløjne,
 der slipper sig løs.
 Jeg elsker dig, du nøgne,
 du Helvedes Tøs!
 
-
 Spil op, Musikanter!
 Men ikke Violin.
 Nu drikker vi os fulde
 i den funklende Vin.
-
 
 Nu drikker vi os fulde
 og vælter os i Lyst.
 Kom, Skøger og Tøjter,
 og hvil ved mit Bryst.
 
-
 En paradisisk Have,
 det er mit stolte Krav.
 Og drukne vil vi rave
 ned i den sorte Grav.
-
-
 
 Hvad var det for en Stemme,
 der hvisked i mit Øre?
 - Er nogen fremmed kommen?
 Nej, i Laas er alle Døre.
 
-
 Det hvisked i mit Øre,
 som et Pust af kolde Vinde.
 Det klang som fra Dybet,
 som var Stemmen spærret inde.
-
 
 Det risled ned ad Ryggen
 med isnende Strømme.
 Jeg kender den Stemme!
 - Har jeg hørt den i Drømme?
 
-
 Tal højt, du der hvisked,
 tre Gange hvisked: Stille!
 Tal ud. Hvor er, hvem er du,
 der kommer her saa silde?
-
-
 
 Jeg beder dig at tale,
 jeg laaner dig mit Øre. -
 - Nej, gaa! Jeg byder gaa;
 Jeg vil dig ikke høre.
 
-
 Af Spøgelser og Skygger
 jeg lader mig ej true.
 Den bedste Trolddrik brygger
 min Mundskænk mig af Drue.
-
 
 Nu drikker vi os fulde
 og vælter os i Lyst!
 Kom hid, I hvide Skøger,
 og hvil ved mit Bryst.
 
-
 I Rus vil vi leve,
 da først er Livet Fest;
 Vi drikker under Bordet
 den ubudne Gæst.
-
-
 
 Haahaa, du dumme Skygge,
 nu blev du dog tam.
 Du vover ej at tale,
 du frygter Spot og Skam.
 
-
 Du holder ej af Glæden,
 der gør mit Hjerte trygt.
 - Aanej! - aanej! jeg lyver.
 - Jeg skælver jo af Frygt.
-
 
 Saa tal da, du Fremmede,
 jeg ofrer Druens Trøst.
 Hvem er du - du min Dommer?
 Lad mig høre din Røst!
 
-
 «Jeg er en afsat Konge
 i et Fængsel spærret ind.
 Født var jeg til at herske
 over Vilje og Sind.
 
-
+<center>- -</center>
 
 Jeg er en afsat Konge,
 jeg ejer ej min Borg,
 jeg er din høje Lykke,
 jeg er din dybe Sorg.
 
-
 Jeg er en Gud, hvis Tempel
 nu smuldrer hen for Blæst,
 hvis Alter er bespottet
 og bespyttet af dets Præst.
 
-
 Og Præsten er din Tanke,
 og Guden er dit Selv,
 der lider og forsmægter
 i den dybe Kælderhvælv.
-
 </body>
 </poem>
 
@@ -1285,7 +1248,7 @@ i den dybe Kælderhvælv.
 <head>
    <title>Morgen</title>
    <firstline>Ah, det er Morgen!</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Ah, det er Morgen!
@@ -1329,7 +1292,7 @@ Alle Livsens Farver!
 <head>
    <title>Drøm</title>
    <firstline>Vi gik og drev langs med Bækken</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Vi gik og drev langs med Bækken,
@@ -1358,7 +1321,6 @@ han havde saa sikker Tro;
 han havde ej Lyset sveget.
 Jeg trak paa Skuldren og lo:
 
-
 Du svirrer om Lyset som Myggen.
 Haha! Det er farlig Sport.
 Jeg holder mig rolig i Skyggen,
@@ -1372,7 +1334,6 @@ han skalv fra Hoved til Fod,
 og dengang han talte til Skyggen,
 saa klang det, som risled der Blod.
 
-
 «Jeg skal male dig Natten, den triste,
 saa du ved ej din arme Raad,
 og Maanestraaler, der liste
@@ -1385,7 +1346,6 @@ Han skalv, som skulde han briste
 for Sjælens smertende Trang.
 - «Jeg skal male, hvad slet ingen vidste!»
 Hver Nerve sitred og sang.
-
 
 «Jeg skal male de funklende Stjerner,
 saa Sjælene vider sig ud.
@@ -1428,12 +1388,11 @@ saa Blomster syngende gror.
 </body>
 </poem>
 
-
 <poem id="rodeh2017090727">
 <head>
    <title>Ved Vuggen</title>
    <firstline>Saadan en vaagnende lille Verden</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 <nonum><center><i>Moderen.</i></center></nonum>
@@ -1460,20 +1419,20 @@ ind under Øjnenes Laage.
 
 <nonum><center><i>En Stemme i Koret.</i></center></nonum>
 
-Har du løftet dit blege Hoved
-op af det evige dunkle?
-Har du aabnet dit grønne Øje
-at se hvor Solen kan funkle.
+    Har du løftet dit blege Hoved
+    op af det evige dunkle?
+    Har du aabnet dit grønne Øje
+    at se hvor Solen kan funkle.
 
-Har de tunge, gulbrune Dampe
-formet sig fast i dit Billed.
-Er du vordet en villende Verden,
-fordi en Vilje har villet.
+    Har de tunge, gulbrune Dampe
+    formet sig fast i dit Billed.
+    Er du vordet en villende Verden,
+    fordi en Vilje har villet.
 
-Er du steget op som en Boble
-af Dyndet - til Livets Tinder.
-Er du steget op som en Boble,
-der skinner et Nu og svinder.
+    Er du steget op som en Boble
+    af Dyndet - til Livets Tinder.
+    Er du steget op som en Boble,
+    der skinner et Nu og svinder.
 
 <nonum><center><i>Koret.</i></center></nonum>
 
@@ -1484,10 +1443,10 @@ At du kan fortælle hvorfra du kom.
 
 <nonum><center><i>Stemmen.</i></center></nonum>
 
-Aanej, du tier, vil altid tie,
-ved ikke selv, hvorfra du kommer.
-Hej, vil du følge med os i Toget,
-saa skal vi vise dig Livets Blommer.
+    Aanej, du tier, vil altid tie,
+    ved ikke selv, hvorfra du kommer.
+    Hej, vil du følge med os i Toget,
+    saa skal vi vise dig Livets Blommer.
 
 <nonum><center><i>Koret.</i></center></nonum>
 
@@ -1534,15 +1493,15 @@ de lukkede Øjne, de ser dog bedst.
 
 <nonum><center><i>Stemmen.</i></center></nonum>
 
-Du Barn med det blege Hoved,
-der vaagned i Dødens Lande,
-dine stakkels Øjne skal græde,
-og Lidelser fure din Pande.
+    Du Barn med det blege Hoved,
+    der vaagned i Dødens Lande,
+    dine stakkels Øjne skal græde,
+    og Lidelser fure din Pande.
 
-Du skal skue i Nattens Drømme,
-naar Solen ej lyver og dølger,
-den druknendes hvide Hoved
-over sugende sorte Bølger.
+    Du skal skue i Nattens Drømme,
+    naar Solen ej lyver og dølger,
+    den druknendes hvide Hoved
+    over sugende sorte Bølger.
 
 <nonum><center><i>Koret.</i></center></nonum>
 
@@ -1565,20 +1524,20 @@ Du stakkels Barn. Har du onde Drømme?
 
 <nonum><center><i>En syngende Røst.</i></center></nonum>
 
-Er din Vilje en brændende Flamme,
-Død kan ej slukke og binde.
-Er dit Øje en villende Seer,
-Grav kan ej lukke og blinde.
+    Er din Vilje en brændende Flamme,
+    Død kan ej slukke og binde.
+    Er dit Øje en villende Seer,
+    Grav kan ej lukke og blinde.
+ 
+    Du skal høre min jublende Stemme
+    ved Nat og de klare Dage.
+    Du skal føle mit Øjes Straaler
+    med Evighedslængsel drage.
 
-Du skal høre min jublende Stemme
-ved Nat og de klare Dage.
-Du skal føle mit Øjes Straaler
-med Evighedslængsel drage.
-
-Jeg skal sitre dig gennem Sindet,
-naar videst din Tanke flyver.
-Men selv skal du søge og lede,
-thi ingen ved, om jeg lyver.
+    Jeg skal sitre dig gennem Sindet,
+    naar videst din Tanke flyver.
+    Men selv skal du søge og lede,
+    thi ingen ved, om jeg lyver.
 
 <nonum><center><i>Moderen.</i></center></nonum>
 
@@ -1593,7 +1552,7 @@ ind under Øjnenes Laage.
 <head>
    <title>Morgen</title>
    <firstline>Jeg aabner mit friske Øje blidt</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Jeg aabner mit friske Øje blidt,
@@ -1642,7 +1601,7 @@ Jeg skaber den i et Sekund.
 <head>
    <title>Sang</title>
    <firstline>Naar Solen stiger ved Morgengry</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Naar Solen stiger ved Morgengry,
@@ -1667,65 +1626,53 @@ hav Tak for min Tanke, mit Øje.
 <head>
    <title>Højtid</title>
    <firstline>I har mig saa dorske Øjne</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
-
 I har mig saa dorske Øjne,
 I har mig saa tomme Blikke.
 Ser I da ikke Jer Lykke?
 Aanej I ser den nok ikke.
-
 
 I kunde dog juble og lide
 og ane med skælvende Blikke.
 I vil ikke løfte Skatten?
 I lader den urørt ligge?
 
-
 «Vi hører til Dyrene dorske,
 snart raadner i Jorden vi sænket.
 Hvad Lykke ejer vel Livet,
 der ukaldet blev os skænket.»
-
-
 
 I hører til Dyrene dorske,
 - I vil jo til Dyrene høre!
 Mennesker, Mennesker er vi,
 det stolteste Liv skal vi føre.
 
-
 Den Verden af Fryd og Smerte
 i Sjælens Dybder fortøjet,
 den skal paany vi skabe,
 det giver os Glans i Øjet.
-
 
 Aa, stundom jeg lider af Lykke,
 som Sol kan i Øjnene skære.
 Ja stundom jeg lider af Lykke
 og magter den ikke at bære.
 
-
 Det er mig, som skulde jeg briste
 og sprænge min Tankes Ramme.
 Det er mig, som vilde jeg flyve,
 og al min Sjæl er en Flamme.
-
-
 
 Det er mig, som vilde jeg flyve
 ud af mit Legemes Ramme.
 - I har mig saa dorske Øjne!
 I er mig saa trætte og tamme!
 
-
 Aa det er Højtid at leve,
 og Lidelsen kan dig henrykke.
 Skælv for din Vidunder-Verden.
 Skælv for dig selv og din Lykke.
-
 </body>
 </poem>
 
@@ -1734,17 +1681,15 @@ Skælv for dig selv og din Lykke.
 <head>
    <title>Hvem er jeg?</title>
    <firstline>Jeg kender et Spørgsmaal, der Fryd mig gav</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
-
 Jeg kender et Spørgsmaal, der Fryd mig gav,
 Fryd som jeg aldrig aned,
 det aabned for Sjælens Længsler og Krav,
 og videste Veje det baned.
 Jeg kender et Spørgsmaal, der skabte min Lykke;
 det er paa min Pande et lysende Smykke.
-
 
 Det springer som Kildevæld bag min Barm,
 sælsomme Længsler fødes.
@@ -1753,8 +1698,6 @@ i Vellyst min Hjerne glødes.
 Det skaber den Undren, der flyver og synger.
 Hver Dag det beriger, hver Dag det forynger.
 
-
-
 Maaske kan det tænde en Hjerne i Brand,
 skænke en Broder Lykke.
 Maaske kan det hæve et Mismods Ban,
@@ -1762,14 +1705,12 @@ maaske kan det stolt henrykke.
 Og dog er det simpelt, og alle det kender,
 men naaer det til Bunden, en Flamme det tænder.
 
-
 Du spørge dig selv en Dag, du er led,
 Taage din Tanke skjuler,
 Du spørge dig selv, saa det klinger ned
 i Sjælens Krypter og Huler.
 Hvem er du - du fremmede gaadefulde?
 Hvem er du - du underlig længselsfulde?
-
 </body>
 </poem>
 
@@ -1786,10 +1727,9 @@ Hvem er du - du underlig længselsfulde?
 <head>
    <title>Middelalder</title>
    <firstline>Ensom paa sit Leje</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
-
 Ensom paa sit Leje
 lider Hertugen,
 vrider han sig.
@@ -1801,11 +1741,8 @@ som en tung sort Sky.
 De borer sig ind
 i hans Øjne.
 
-
 Aa, hvad vil I mig,
 hvad vil I mig I sorte, sorte Tanker?
-
-
 
 Hvad vil du mig du sorte, sorte Nat
 fuld af Rædsel og grusomme Klør.
@@ -1813,28 +1750,21 @@ Gennem mine stakkels Øjne
 borer du dig Vej til min Hjerne
 og suger den ud.
 
-
 Aa giv mig Vellyst!
 Vellyst svidende vild,
 der med skarpe Svøber
-kn pidske ud de sorte Tanker.
-
+kan pidske ud de sorte Tanker.
 
 Ak jeg er træt af matte Flammer,
 af Vellysts tamme Ild,
 af Kvinders flove Skød.
 
-
 Aa Satanas! Satanas!
 Helvedes Lyst
 skal risle gennem mit Legeme
-
-
-
 som kogende Blod,
 som smeltet Guld.
 Aa Satanas! Satanas!
-
 
 Først vil jeg lade hende binde mine Hænder
 paa Ryggen.
@@ -1851,9 +1781,6 @@ Saa skal hun komme
 med langsomme Skridt,
 Jeg skal høre hendes Fødder,
 hendes nøgne Fødder,
-
-
-
 skride gennem den store Sal
 langt borte.
 Og langsomt skal hun gaa forbi
@@ -1872,16 +1799,12 @@ og løse mig fra Pælen,
 men ikke løse mine Baand.
 Og hun skal gribe mig
 med begge Hænder
-
-
-
 i min Strube
 og kaste mig til Jorden.
 Ja gribe mig i Struben
 med begge sine Hænder,
 saa halvt jeg kvæles,
 og kaste mig til Jorden.
-
 
 - Og der skal være et Kor
 af Kvinder,
@@ -1896,15 +1819,12 @@ De skal alle - ja, ja -
 de skal alle spytte paa mig,
 alle, alle!
 
-
-
 Og de skal pidske mig,
 alle, alle!
 Ja de skal pidske mig
 og spytte paa mig!
 - Men saa vil jeg dræbe. -
 Saa vil jeg dræbe.
-
 
 Aa, Satanas, Satanas!
 Der risler kogende Blod
@@ -1919,12 +1839,9 @@ til disse fyrstelige Løjer?
 Der er saa mange skønne Kvinder
 i Venedig.
 
-
-
 Hvem skal jeg vælge?
 Maaske den usleste,
 den hæsligste af alle?
-
 
 - Aa, kommer du der,
 kommer du der, du stolte, skønne Jomfru!
@@ -1938,12 +1855,9 @@ som I aldrig rørte.
 Grib hende, djævelske Tanker.
 Hende, hende vil jeg vælge.
 
-
 - Nej, nej! Ikke dig -
 ikke dig, du kølige, kyske,
 ikke dig!
-
-
 
 For dine stolte Øjne,
 for dine dybe, gode Øjne
@@ -1952,7 +1866,6 @@ som rædde Hunde
 ind i deres Skjul.
 Jeg ser kun deres Haler logre.
 - Nu forsvandt ogsaa de i Hulerne.
-
 
 Nej, ikke dig!
 Hvorfor kom du just nu?
@@ -1965,9 +1878,6 @@ Hvor du er kold!
 Du bærer jo et Panser
 af grøn Is.
 Men det er spaltet
-
-
-
 fra Hals til Fod,
 og jeg kan se dit blegrøde Legeme
 fra Isse og til Fod.
@@ -1978,8 +1888,8 @@ Dig kan mine Tanker ikke gribe,
 dig kan mine Tanker ikke tvinge.
 Som rædde Hunde
 krøb de ind i Skjul.
-Her blev saa stille - saa stille,
 
+Her blev saa stille - saa stille,
 
 Aa, du - du. -
 Naar dine Øjne hviler paa mig
@@ -1988,14 +1898,11 @@ som Stjerner i min Sjæl,
 da faar jeg Lyst til at flyve -
 flyve - flyve. -
 
-
-
 Ja, jeg vil flyve langt, langt bort,
 ja, jeg vil flyve did -
 did, hvor Solen staar op af Havet,
 did, hvor Solen løfter sit store Øje
 af det kølige Bad.
-
 
 Ja, jeg ser det.
 Jeg ser den første gyldne Stribe
@@ -2006,14 +1913,10 @@ med takkede Tinder
 af sort og gyldenbræmmet Sten.
 Aa, did vil jeg flyve.
 
-
 Der bor en gammel Mager,
 som véd alt, hvad der var,
 og hvad der vorder.
 Hans hvide Sjæl
-
-
-
 kan vandre, hvor den vil,
 og han har seet Gud.
 Aa, did, did vil jeg flyve.
@@ -2033,13 +1936,10 @@ Aa, Herre! Did, did vil jeg flyve.
 Der vil jeg bade mig i varme Farver,
 og dykke mig i kølig Renhed.
 
-
-
 Der vil jeg lære hellig Visdom
 og svømme hen i himmelsk Vellyst.
 Der, der, hvor Solen stiger
 af Havet.
-
 </body>
 </poem>
 
@@ -2048,41 +1948,32 @@ af Havet.
 <head>
    <title>Slangetæmmeren</title>
    <firstline>Det er sært at lægge paa Pulsen sin Finger</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
-
-
-
 Det er sært at lægge paa Pulsen sin Finger
 og føle det Blod, som du sjelden saa;
 bag Huden det risler og springer.
-
 
 Ja, hvor muntert med smaabitte Skridt det smutter,
 du sikkert kan tælle dem paa din Puls;
 af Glæde den svulmer og strutter.
 
-
 Ja, lystige er de, de Smaa i Kanalen,
 og pudsigt lyder det: Hop! hop! hop!
 De holder hinanden i Halen.
 
-
-
 De prøver at gemme sig ind i Kroge,
 de kryber over, de smyger under
 som smidige Slanger og Snoge.
-
 
 Hvem er vel Midtpunkt for deres Leg,
 der leges Dagen og Natten sen?
 - Aa, det er bare en Knokkelmand,
 en stakkels Dødning med hvide Ben.
 
-
-- Aa, se, se! Ser du ikke Slangetæmmeren og de røde Slanger!
-
+- Aa, se, se! Ser du ikke Slangetæmmeren
+og de røde Slanger!
 
 De snor sig ned ad hans Ben og Arm,
 de slynger sig om hans Ryg og Barm.
@@ -2091,8 +1982,6 @@ i Slanger staar,
 de glider frem mellem hver en Taa.
 Og se hans Hænder!
 Og se hans Laar!
-
-
 
 De bugter frem, hvor de blot kan naa.
 De hvisler ud og de hvisler ind.
@@ -2104,25 +1993,21 @@ De kryber over,
 de smyger under.
 Det suser rødt om de hvide Knokler.
 
-
 Men vent! - Nu samler han sine Snoge
 og gemmer dem under Kistelaage:
 Ned, ned i Jorden og bliv til Gødning!
 
-
 Aa, se, se! I den sorte Taage
 den store, den hvide, den mægtige Dødning
 og de røde - de stakkels, smaa, døde Snoge.
-
 </body>
 </poem>
-
 
 <poem id="rodeh2017090733">
 <head>
    <title>Den hvide Streg</title>
    <firstline>Jeg staar som en hvid Søjle</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Jeg staar som en hvid Søjle
@@ -2135,13 +2020,10 @@ Hvad vil den? Hvem bragte den hid?
 Den er jo en Afgrund af Svimlen.
 Luk Øjet. Aa, se ikke did!
 
-
-
 Hvad véd jeg? -
 Hvad vil mig det sorte?
 Hvad véd jeg? -
 Hvert Lysglimt er borte!
-
 
 Véd kun, jeg selv
 staar som en Søjle hvid
@@ -2158,27 +2040,21 @@ Aa, Herre, fri mig!
 Sluktes der Lys
 i mit eget Hus?
 
-
-
 Af Angest bleg,
 hvad var det, jeg skreg:
 Aa, store Gud!
 Den hvide Streg -
 vidsk den ikke ud!
-
 </body>
 </poem>
-
 
 <poem id="rodeh2017090734">
 <head>
    <title>Jeg vandrer omkring</title>
    <firstline>Jeg vandrer omkring</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
-
-
 Jeg vandrer omkring
 paa den sære Jord,
 paa den brune Jord,
@@ -2187,18 +2063,13 @@ der viger og bliver,
 der ikke kan sees,
 men føles hvid.
 
-
 Mine Fødder er paa Jorden,
 paa den underlige Jord.
-
-
 
 Mit Hoved stikker op gennem Luften -
 gennem den sære Luft.
 
-
 Aa, Gud, hvor jeg morer mig!
-
 
 Hvorfor skaber vi os saa meget?
 Hvorfor er vi saa bange for hinanden?
@@ -2209,72 +2080,57 @@ mellem Himmel og Jord.
 Mellem den underlige Jord
 og den forunderlige Himmel.
 
-
 Ja, det er komisk, komisk, komisk
 saadan at danse over Vulkaner
 med en Strikke om sin Hals.
-
-
 
 Hahaha!
 En munter, en lystig Højtid,
 en lystig, en dejlig Højtid!
 - Og jeg har Rædsel for min egen Glæde!
-
 </body>
 </poem>
-
 
 <poem id="rodeh2017090735">
 <head>
    <title>Jeg</title>
    <firstline>Jeg - forunderlige Ord</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
-
-
 Jeg - forunderlige Ord.
 Jeg - du dybe Ord.
 Jeg - du Verdens Midtpunkt.
 I dig samles alle Straaler,
 i dig faar de Glans.
 
-
-Jeg jeg jeg!
+Jeg  jeg  jeg!
 Jeg - du flammende Lyn
 paa en Uvejrshimmel,
 Jeg - du Evighedens Midtpunkt,
 du lysende Prik
 i det grænseløse Mørke.
 
-
-
 Jeg jeg jeg!
 Jeg - du har dyb Klang.
 Jeg - du har Toner lyse og klare.
 Jeg - du rungende glade Fanfare.
-
 
 Jeg - en Flamme, som Sol ej kuer.
 Jeg - saa straalende hvid en Vinge.
 Jeg - saa blinkende blank en Klinge,
 der gennem Luftens Hvide luer.
 
-
 Jeg jeg jeg!
 Aa hvor faa, der dog fatter
 den Jubel, der raaber
 fra dette lyse Ord!
-
 
 Jeg jeg jeg!
 Jeg - du ukendte Kongerige.
 Jeg - du Dyb, hvorfra Mørke vælder.
 Lad os tænde en Lygte og prøve at stige
 ned i den dybe Kælder.
-
-
 
 Der er koldt og sort
 og slibrige Trapper,
@@ -2283,7 +2139,6 @@ Efter Luften vi snapper,
 og Lyset blafrer
 nær ved at slukne.
 
-
 Aa Rædsel, der splitter vor Tanke
 for de vilde Vinde!
 Men Rædsel kan ogsaa risle
@@ -2291,26 +2146,20 @@ med skønne Anelser.
 Lad os tænde en Lygte
 og stige ned.
 
-
 Jeg jeg jeg!
 Det vil vare længe, før vi naar frem.
 Det er en tung Gang,
 men maaske er der straalende Sale
-
-
-
 i Guld og Safirer,
 og dejlig Sang
 og gyldent Lys,
 dér, hvor Livet spirer.
-
 
 Jeg - store Jeg!
 Jeg - i min Hjerne et blussende Baal,
 Jeg - du Glans i mit Øje.
 Jeg - i mit Legem en Fjeder af Staal.
 Jeg - du mit høje Maal.
-
 
 Aa, nu ser jeg. Nu ser jeg.
 Det staar skrevet med Ildskrift
@@ -2319,7 +2168,6 @@ Paa den anden Side af den sorte Mur,
 der stanser vor Tanke.
 Med Ildskrift:
 Jeg!
-
 </body>
 </poem>
 
@@ -2327,7 +2175,7 @@ Jeg!
 <head>
    <title>De blege Blomster</title>
    <firstline>Vi sidder ved Bordet</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 Vi sidder ved Bordet.
@@ -2342,12 +2190,9 @@ og blege Blomster,
 der rødme.
 - Saa skære, hvide Blomster.
 
-
-
 Da kommer der gyldent Lys
 ind i min Sjæl,
 og mit Væsen vider sig ud.
-
 
 Aa se, se dog
 de hvide Blomster,
@@ -2362,14 +2207,12 @@ de blege, rødmende Blomster,
 steget mod Himlen af den hede Jord.
 - Saa altfor - altfor skønne.
 
-
 Aa, forstaar I da ikke?
 - Hvorfor vil I ikke forstaa?
 
 Hvorfor giver vi os ikke
 til at skrige og græde. -
 Alle vi der sidder ved Bordet.
-
 
 Aa, Herre, hvor, er vi dog bedrøvede,
 hvor er vi dog tynget
@@ -2382,7 +2225,6 @@ længes -
 vi hvide Blomster,
 vi blege Blomster,
 der rødme.
-
 </body>
 </poem>
 
