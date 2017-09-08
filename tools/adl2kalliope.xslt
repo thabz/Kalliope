@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 
-<!-- Nedenstående virker kun hvis xmlns="...." fjernes fra kildes rodelement TEI -->
-<!-- Brug xsltproc adl2kalliope.xslt adl-xml-fil -->
-
 <xsl:stylesheet version="1.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
     xmlns:tei="http://www.tei-c.org/ns/1.0">
 <xsl:output method="xml" indent="yes"/>
+
+<!-- Nedenstående virker kun hvis xmlns="...." fjernes fra kildes rodelement TEI -->
+<!-- Brug xsltproc adl2kalliope.xslt adl-xml-fil -->
 
 <xsl:template match="teiHeader">
     <title><xsl:value-of select="fileDesc/titleStmt/title"/></title>
@@ -15,6 +15,16 @@
 <!-- vers -->
 <xsl:template match="l">
     <xsl:value-of select="."/>
+    <xsl:text>&#xa;</xsl:text> 
+</xsl:template>
+
+<xsl:template match="hi[@rend=italics]">
+    <i><xsl:value-of select="."/></i>
+</xsl:template>
+
+<!-- paragraph-->
+<xsl:template match="p">
+    <nonum><xsl:apply-templates select="."/></nonum>
     <xsl:text>&#xa;</xsl:text> 
 </xsl:template>
 
