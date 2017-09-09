@@ -12,17 +12,17 @@
 
 <!-- vers -->
 <xsl:template match="l">
-    <xsl:value-of select="."/>
+    <xsl:apply-templates/>
     <xsl:text>&#xa;</xsl:text> 
 </xsl:template>
 
-<xsl:template match="hi[@rend=italics]">
-    <i><xsl:value-of select="."/></i>
+<xsl:template match="hi[contains(@rend, 'italics')]">
+    <i><xsl:apply-templates/></i>
 </xsl:template>
 
 <!-- paragraph-->
 <xsl:template match="p">
-    <xsl:value-of select="."/>
+    <xsl:apply-templates/>
     <xsl:text>&#xa;</xsl:text> 
 </xsl:template>
 
