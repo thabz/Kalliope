@@ -25,6 +25,7 @@ export default class Head extends React.Component {
       const x = `${s}x${s}`;
       return (
         <link
+          key={x}
           rel="apple-touch-icon"
           sizes={x}
           href={`/apple-touch-icon-${x}.png`}
