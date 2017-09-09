@@ -10,7 +10,14 @@
    <pictures>
        <picture type="titlepage" src="1896-p1.jpg">Titelbladet til <i>Digte</i> (1896).<br/>,,Digte / af / Helge Rode // Kristiania og Kjøbenhavn / Alb. Cammermeyers Forlag / (Lars Swanstrøm) / 1896.''</picture>
    </pictures>
-   <quality>kilde, korrektur1</quality>
+   <!-- 
+Siderne findes som hvor XX er 01, 02,...
+http://kb-images.kb.dk/public/adl/rode/rode_02/rode_02_0XX/full/!2000,/0/native.jpg
+
+for i in {001..200}; do URL="http://kb-images.kb.dk/public/adl/rode/rode_02/rode_02_$i/full/\!2000,/0/native.jpg"; curl $URL > $i.jpg ; done
+
+-->
+<quality>kilde, korrektur1</quality>
 </workhead>
 <workbody>
     <section>
@@ -40,31 +47,33 @@ Blandt brydende Bølger.
 Ja, det gaar højt!
 Maagerne følger.
 
-Delfin, Delfin,
-Lykken er Din!
-Leve og lege,
-Lykken er Din!
+    Delfin, Delfin,
+    Lykken er Din!
+    Leve og lege,
+    Lykken er Din!
 Pjaskende, dukkende, plaskende, vuggende,
 trillende, tumlende, boltrende, hoppende
 op paa Toppene.
 
-Delfin, Delfin,
-Lykken er Din!
-Lunet er Loven,
-Lykken er Din!
+    Delfin, Delfin,
+    Lykken er Din!
+    Lunet er Loven,
+    Lykken er Din!
 mellem de legende, leende Bølger,
 mellem de kæmpende, fnysende Bølger.
 Tilhavs! hvor Synsranden dølger.
 
-Delfin, Delfin,
-Lykken er Din!
-Lege og kæmpe,
-Lykken er Din!
+    Delfin, Delfin,
+    Lykken er Din!
+    Lege og kæmpe,
+    Lykken er Din!
 Vandene skummer og skyller og sprøjter,
 Vindene brummer og hyler og fløjter.
 Maagerne skriger de hæseste Hvin.
 Delfin, Delfin!
 Dejlige Sange: Lykken er Din!
+
+<center>*</center>
 
 Og dog, Delfin, jeg kunde ikke bytte.
 Selv har jeg Sange, der min Lykke kroner,
@@ -241,7 +250,7 @@ til Hjertet træt og sygt:
 «I disse klare Strømme
 kan Du kaste Dig ned
 og glide bort i Drømme
-og svinde hen i Frecl.»
+og svinde hen i Fred.»
 
 Om hvert et Livshaab brister,
 Fred, Fred i Strøm og Flod. —
@@ -370,7 +379,7 @@ Højt, højt mod Solen vil vort Liv vi bygge,
 Afgrundens Rædsel aaben for vort Øje.
 Stærkt skinner Lyset mod den sorte Skygge.
 Ved svimmelt Svælg vi fatter først det Høje.
-Men og jeg selv saa ticlt blev træt og bøjet-
+Men og jeg selv saa tidt blev træt og bøjet-
 Jeg ved det vel; thi tungt er Lykkens Eje.
 Da flygtede jeg did, hvor Godtfolk støj ed,
 og vandred viljeløs paa flade Veje.
@@ -507,7 +516,7 @@ Mørket har rejst sin sorte Mur,
 som ingen kan klatre over.
 
 Nat, Nat, Midienat!
-og Støjen og Stormen forstummecl.
+og Støjen og Stormen forstummed.
 Sitrende sejler den sorte Jord
 sin lydløse Vej gennem Rummet.
 
@@ -876,7 +885,7 @@ fuldt af duftende Vin, efter Vinterens Nød,
 med et Smil vinker hen til Befrugtelsens Rus,
 er en Kvinde i Elskovens Foraar genfød.
 
-Lig en perlende Vin rinder Blodløbots Strøm,
+Lig en perlende Vin rinder Blodløbets Strøm,
 Hjertets Aske blev rød i den blussende Glød.
 Det er Sorg, det er Fryd, at den Fred kun er Drøm,
 da Du stille sad hen, de smaa Hænder i Skød.
@@ -2001,7 +2010,7 @@ Se! Norge skænked hver Søn, det bar,
 en Sum af Tillid i Moderarv;
 men Danmark tager fra den, der har,
 det suger Kraft af den Stærkes Marv.
-Er vi beskedne? Det var clog bedre
+Er vi beskedne? Det var dog bedre
 vort gamle Land og dets Mænd at hædre.
 Oh, dyre Danmark! Det er Dit Tarv!
 
