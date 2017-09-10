@@ -214,7 +214,11 @@ export default class TextContent extends React.Component {
         return (
           <small
             key={this.keySeq++}
-            style={{ display: 'inline', lineHeight: '1.4em' }}>
+            style={{
+              display: 'inline',
+              fontSize: '0.85em',
+              lineHeight: '1.6em',
+            }}>
             {this.handle_nodes(node.childNodes)}
           </small>
         );
