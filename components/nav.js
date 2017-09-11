@@ -151,7 +151,7 @@ export default class Nav extends React.Component {
         <style jsx>{`
           :global(body) {
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Avenir Next, Avenir,
               Helvetica, sans-serif;
             box-sizing: border-box;
             font-size: 14px;
