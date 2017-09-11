@@ -37,7 +37,7 @@
 </xsl:template>
 
 <!-- Digte -->
-<xsl:template match="div[@decls]">
+<xsl:template match="//div">
   <!-- digt div har et decls-attribute. Det har section div'er ikke -->    
   <xsl:param name="number"/>
   <poem id="XXX{$number}{position()}"><xsl:text>&#xa;</xsl:text>
@@ -52,8 +52,8 @@
 </xsl:template>
 
 <!-- Section -->
+<!--
 <xsl:template match="div[not(@decls)]">
-  <!-- digt div har et decls-attribute. Det har section div'er ikke -->    
   <section>
     <head>
         <toctitle><xsl:value-of select="head"/></toctitle>
@@ -65,14 +65,14 @@
     </content>
   </section>
 </xsl:template>
-
+-->
 <xsl:template match="/">
   <kalliopework>
   <workhead>
       <xsl:apply-templates select="//TEI/teiHeader"/>
   </workhead>
   <workbody>
-      <xsl:apply-templates select="//TEI/text/body/div"/>
+      <xsl:apply-templates select="//TEI/text/body//div"/>
   </workbody>
   </kalliopework>
 </xsl:template>
