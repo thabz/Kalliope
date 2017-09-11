@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1914" author="rodeh" status="incomplete" type="poetry">
+<kalliopework id="1914" author="rodeh" status="complete" type="poetry">
 <workhead>
    <title>Ariel</title>
    <year>1914</year>
+  <notes>
+      <note>Teksten følger førsteudgaven af <i>Ariel - en Digtsamling</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1914.</note>
+      <note>Dette er en korrekturlæst udgave af teksten hos <a href="http://www.adl.dk/">Arkiv for Dansk Litteratur</a>.</note>
+  </notes>
+   <pictures>
+       <picture type="titlepage" src="1914-p1.jpg">Titelbladet til <i>Ariel</i> (1914).<br/>,,Helge Rode / Ariel / En Digtsamling // Gyldendalske Boghandel / Nordisk Forlag / København og Kristiania - MDCCCCXIV</picture>
+   </pictures>
    <quality>korrektur1</quality>
 </workhead>
 <workbody>
@@ -200,7 +207,7 @@ for alle elsker Perler, naar de ikke er af Aand.
 <nonum><i>Abels Sang.</i></nonum>
    <nonum><i>(Af Kain og Abel.)</i></nonum>
           
-<center>I.</center>
+<nonum><center>I.</center></nonum>
 
 Eja for Solen,
 den mægtige Herre,
@@ -238,7 +245,7 @@ Ven af mit Blod.
 <nonum><i>Ainos Sange.</i></nonum>
    <nonum><i>(Af Solsang.)</i></nonum>
           
-<center>II.</center>
+<nonum><center>II.</center></nonum>
 
 Morgenrøden kyssede mine Øjne og min Pande.
 Med et faderligt Kys kyssede den mine Øjne og min Pande.
@@ -277,7 +284,7 @@ Og jeg strakte mine Arme imod den.
 Fader, Fader. Sandelig jeg føler i min Sjæl, at jeg er kommen fra dig.
 
 
-<center>III.</center>
+<nonum><center>III.</center></nonum>
 
 Naar Solen synker i de store Vande
 og Græsset er vaadt af glimrende Draaber
@@ -661,11 +668,83 @@ af Ild.
 <poem id="rode2017091123">
 <head>
     <title>Ved Holger Drachmanns Død</title>
-    <firstline></firstline>
+    <firstline>Du lyse Dag!</firstline>
 </head>
 <body>
 <nonum><center><small>Imellem Klitter ved Havet i et Solhjørne. Blaa Himmel. Den unge Mand kommer ind. Gaar hurtig op paa Klitten. Ser sig omkring. Ser op paa Himlen — udover Havet.</small></center></nonum>
-<!-- TODO: Stor sektion mangler -->
+
+<center><nonum><sc>den unge mand.</sc></nonum></center>
+Du lyse Dag!
+Jeg drikker dig i fulde Drag.
+Vor Lykkedag, brudt frem af Slud og Taage.
+Du løfter os og bærer os
+Du kvæger og ernærer os.
+<center><nonum><small>(Staar lidt og lytter.)</small></nonum></center>
+Der skreg en Maage!
+Der skreg en Maage, jagende
+i store Sving
+i Ring, I Ring!
+Klagende?
+<center><nonum><small>(Urolig.)</small></nonum></center>
+Aa nej, hvor blir hun af idag
+til vores Stævnemøde?
+<center><nonum><small>(Ser atter ud.)</small></nonum></center>
+Hvad vil den Maages vilde Jag?
+Den flyver sig tildøde.
+<center><nonum><small>(Lidt efter.)</small></nonum></center>
+Jeg mindes én
+paa Skagens Gren,
+en herlig Kongemaage!
+Hvor stolt den stred,
+da Stormen bed
+Den kløved Slud og Taage.
+Men Solen kom en Sommerdag.
+Jeg saa den fløj i Ro og Mag
+forgyldt af Solens Straaler.
+Og kongekronet sad den der
+paa Skagens Gren i Solens Skær
+og drak sin Fryd af Himlens fulde Skaaler.
+<center><nonum><small>(Ser atter ud.)</small></nonum></center>
+Nu fandt den Maage nok sin Grav.
+Den jog sig selv til døde!
+<center><nonum><small>(Atter urolig.)</small></nonum></center>
+Hvor blir hun af. Hvor blir hun af
+idag til Stævnemøde?
+<center><nonum><small>(Lytter.)</small></nonum></center>
+Var det mon hendes Skridt, der lød?
+<center><nonum><small>(Raaber ud.)</small></nonum></center>
+Hvad er det I vil sige?
+<center><nonum><small>(En gammel Fisker kommer frem mellem Klitterne. Hans Ansigt er alvorligt. Den unge Mand springer ned.)</small></nonum></center>
+
+<center><nonum><sc>den unge.</sc></nonum></center>
+Har I ej mødt en Pige?
+
+<center><nonum><sc>fiskeren</sc></nonum></center>
+<center><nonum><small>(helt fremme)</small></nonum></center>
+Ja nu er Holger Drachmann død,
+det vilde jeg blot sige.
+
+<center><nonum><sc>den unge.</sc></nonum></center>
+Aa er han død. Aanej. Aanej.
+
+<center><nonum><sc>fiskeren.</sc></nonum></center>
+Vi skal jo alle gaa den Vej.
+
+<center><nonum><sc>den unge.</sc></nonum></center>
+Jeg fatter ej!
+<center><nonum><small>(Skjuler Ansigtet i sine Hænder.)</small></nonum></center>
+
+<center><nonum><sc>fiskeren.</sc></nonum></center>
+Han var — den Ting er vis og sand
+en dygtig Digter i sit Fag
+og det er ogsaa sandt, at han
+tillige var en herlig Mand,
+som hilste venligt til Goddag
+og hjalp enhver, som bad derom
+og der er neppe En, som kan
+med Sandhed sige, at han kom
+uhjulpen ud fra denne Mand.
+<center><nonum><small>(Dæmpet.)</small></nonum></center>
 Han siger jo saa meget Præsten
 og Rigsdagsmanden med forresten.
 Det kan jo gerne være rigtig,
@@ -674,6 +753,220 @@ Det maa de Store bedst forstaa,
 men han var afholdt blandt de Smaa.
 Og digtede — som ingen anden.
 Vi holdt af Manden!
+
+<center><nonum><sc>den unge</sc></nonum></center>
+<center><nonum><small>(lidenskabeligt).</small></nonum></center>
+Han sejled frem for fulde Sejl
+Han havde ingen Fejl!
+
+<center><nonum><sc>fiskeren.</sc></nonum></center>
+Naa Fejl har alle, som maa klandres.,
+men har han fejlet og gjort galt,
+saa har han allenfals betalt,
+kan hænds — for nogle af de andres.
+Og jeg vil tage Hatten af
+for ham — og ogsaa for hans Grav.
+
+<center><nonum><sc>den unge.</sc></nonum></center>
+Hvor blir hun af?
+
+<center><nonum><sc>fiskeren</sc></nonum></center>
+<center><nonum><small>(smiler lunt).</small></nonum></center>
+
+,,Hvor blir <i>hun</i> af?''
+Der fandt han atter Tonen.
+          
+<center><nonum><sc>den unge.</sc></nonum></center>
+Forstaar I ikke?
+
+<center><nonum><sc>fiskeren</sc></nonum></center>
+<center><nonum><small>(lidt efter).</small></nonum></center>
+Jo saamænd.
+Selv gaar jeg hjem til Konen.
+<center><nonum><small>(Han gaar.)</small></nonum></center>
+<center><nonum><small>(I det samme kommer den unge Pige fra venstre.)</small></nonum></center>
+
+<center><nonum><sc>han.</sc></nonum></center>
+Aa har du hørt? —
+
+<center><nonum><sc>hun</sc></nonum></center>
+<center><nonum><small>(smerteligt).</small></nonum></center>
+Ja lige nu!
+Jeg fatter ej.
+
+<center><nonum><sc>han</sc></nonum></center>
+<center><nonum><small>(lidt efter).</small></nonum></center>
+Hvad tænkte du?
+
+<center><nonum><sc>hun</sc></nonum></center>
+<center><nonum><small>(ryster paa Hovedet).</small></nonum></center>
+Jeg fatter ej! — Hvad tænkte jeg?
+Jeg længtes efter dig!
+
+<center><nonum><sc>han.</sc></nonum></center>
+Det samme tænkte jeg!
+<center><nonum><small>(De omfavner hinanden. Staar med Hovedet bøjet. De sætter sig ned i tunge Tanker.)</small></nonum></center>
+
+<center><nonum><sc>han</sc></nonum></center>
+Nu er de lyse Nætters Tid forbi
+de dirred hen de gyldne Melodier.
+Der bliver tavst paa Strand og Skovens Sti,
+den taler kun om ham, som evig tier.
+
+Hvor var han glitrende som Sol paa Sund.
+Frisk som den aarle Morgenstund ved Havet
+og sitrende som Dug i Blomstens Bund.
+— Nu er den danske Sommers Fryd begravet.
+
+<center><nonum><small>(De sidder stille ved hinandens Side.)</small></nonum></center>
+<center><nonum><small>(Klokker ringer.)</small></nonum></center>
+
+<center><nonum><sc>hun.</sc></nonum></center>
+Hør de fjerne Klokkeklemt,
+,,Bud fra gamle Dage''.
+
+<center><nonum><sc>han.</sc></nonum></center>
+Dem har jeg ingensinde glemt,
+nu kommer de tilbage.
+Og han, som var saa hed og vild,
+var i sit Inderste saa mild,
+som Vaarens første Dage.
+
+<center><nonum><sc>hun.</sc></nonum></center>
+Men ved du, at hans Død var blid?
+Den kom saa let, i venlig Tid
+og uden Gru og Klage.
+
+<center><nonum><sc>han</sc></nonum></center>
+Aa det er godt at tænke paa!
+Det maatte, maatte være saa!
+<center><nonum><small>(sidder lidt og ser frem for sig).</small></nonum></center>
+Døden var god imod ham
+den kendte hans Inderste og forstod ham.
+<center><nonum><small>(Rejser sig stille og lytter.)</small></nonum></center>
+Hør! — hør, hvor det suser i Skovens Kroner.
+Hør Havet toner!
+Det suser og toner med bønlig Klang,
+Det er som om Jordens Aander sang.
+
+<center><nonum><sc>kor af aander fra jord og hav.</sc></nonum></center>
+Luftens Aander! Tag imod
+vores kære Broder!
+Giv ham Haand og før hans Fod
+over Dybets Floder.
+Milde Vinde! Vift hans Kind,
+Kys hans Pande Brise!
+Klare Toner! Fyld hans Sind
+med sød og stille Lise.
+
+<center><nonum><sc>hun</sc></nonum></center>
+<center><nonum><small>(løfter Hovedet og lytter).</small></nonum></center>
+Det suser og toner med liflig Klang
+Det er som om Luftens Aander sang.
+
+<center><nonum><sc>kor af luftaander</sc></nonum></center>
+<center><nonum><small>(svarer).</small></nonum></center>
+Luftens Aander er ham god!
+Han var vores Broder!
+Sjælens blide Blomsterblod
+fik han af vor Moder.
+Vinden leged i hans Sang,
+Æolsharpens Brusen
+dirred hen i sagte Klang,
+de fjerne Stjerners Susen.
+
+<center><nonum><sc>han.</sc></nonum></center>
+Det suser blidt — det toner tyst
+Her blev med Et saa mildt og lyst.
+
+<center><nonum><sc>hun</sc></nonum></center>
+<center><nonum><small>(peger paa en hvid Sky, som Solen nu beskinner).</small></nonum></center>
+Sér Du den hvide Sky, som hist
+har faaet gylden Krone paa.
+
+<center><nonum><sc>han</sc></nonum></center>
+<center><nonum><small>(smiler).</small></nonum></center>
+Er det mon ham, som nu tilsidst
+kan — som han lyster, gaa?
+<center><nonum><small>(Med Ansigtet vendt mod Skyen.)</small></nonum></center>
+
+Den hvide Sky med gylden Bræm
+deroppe i det klare Blaa.
+— Saa fri og sorgløs i sit Hjem,
+kan ingen anden gaa!
+
+Den glider bort, saa langt den vil,
+i Utids Tider om den vil
+for Luftens Pust, til Vindens Spil
+og ser — som ingen saa:
+Hvor Himlen dog er blaa!
+
+Den hvide Sky — ja det er dig,
+saaledes som saa tidt jeg saa
+dig gaa din egen frie Vej
+saa helt paa Maa og Faa.
+Der stanser du og hviler du,
+der driver du og iler du,
+der drømmer du og smiler du
+med Hovedet paa Skraa:
+Hvor Himlen dog er blaa!
+
+Du smiler til den gode Sol,
+til alle Stjerner, store, smaa!
+Ak Guld i Himlens blaa Viol,
+som Pigeøjne blaa!
+Én Stjerne lyser som Rubin!
+Den funkler som den røde Vin,
+saa ungdomsvarm og uskyldsfin.
+Du ler og tænker paa:
+Hvor Himlen dog er blaa!
+
+Du ler og tænker stille paa,
+at denne Glød af rød Rubin
+kan ingen vrede Øjne naa
+og dog — dog er den din.
+Hvor er det svundne fjernt og nær!
+De samme Farver her som der;
+men badet i et Uskyldsskær,
+saa aldrig før du saa:
+Hvor Himlen dog er blaa!
+
+Saa dyb som ingen før den saa
+og rig og fuld af gylden Glans
+og ingen onde Øjne naa
+de lyse Stjerners Dands.
+Du frie Sky! Far hen! Far hen!
+vi mindes dig vor gode Ven!
+Du kommer mild og glad igen,
+saa tidt vi tænker paa:
+Hvor Himlen dog er blaa!
+
+
+<center><nonum><sc>hun</sc></nonum></center>
+<center><nonum><small>(dæmpet.)</small></nonum></center>
+Hvor Himlen dog er blaa.
+<center><nonum><small>(De sidder stille og lyttes.)</small></nonum></center>
+
+<center><nonum><sc>kor fra jorden.</sc></nonum></center>
+Hør o store Sol vor Bøn,
+Kærlighedens Kerte!
+Tag imod ham, som din Søn
+for han var din af Hjerte.
+
+For hver Svaghed paa vor Vej
+maa vi bittert bøde;
+men den Sjæl, som elsked dig
+gaar du mildt imøde.
+
+Høje Stjerner skjul jer ej!
+Lad ham stille stige.
+Lys for ham og vis ham Vej
+i Eders fjerne Riger.
+
+<center><nonum><sc>kor</sc></nonum></center>
+<center><nonum><small>(fra Luft og Jord.)</small></nonum></center>
+Lys for ham og vis ham Vej
+i Eders stille Rige.
 </body>
 </poem>
 
@@ -1381,7 +1674,7 @@ og bruser sin Hymne: Lad Danmark bestaa!
     <firstline></firstline>
 </head>
 <body>
-I.
+<nonum><center>I.</center></nonum>
     
 Jeg er Ariel, Luftens Aand,
 skabt af Dybdernes inderste Gud,
@@ -1440,7 +1733,7 @@ medens Fødderne dirred af Dans.
 Til en Dag, hvor Regnbuen brast.
 
 
-II.
+<nonum><center>II.</center></nonum>
 
 Jeg kom for nær til denne tunge Jord.
 Det tætte Stof vil altid binde Foden.
@@ -1653,7 +1946,7 @@ Jeg kommer før mig selv!
     <firstline></firstline>
 </head>
 <body>
-I.
+<nonum><center>I.</center></nonum>
 
 Bølgen bar noget mod Strandens Bred
 og den rulled det ind i sin hvide Bræm
@@ -1676,7 +1969,7 @@ kom han tavs iland paa den samme Strand,
 men med blodigt Saar og med Tang i sit Haar.
 
 
-II.
+<nonum><center>II.</center></nonum>
 
 Det er Morgen snart og det var igaar.
 Er det samme Bølger, som endnu slaar,
@@ -1705,7 +1998,7 @@ Men En gik hjem til et hjemløst Hus,
 Mens den Døde drev udad i Sus og Dus.
 
 
-III.
+<nonum><center>III.</center></nonum>
 
 Man siger, naar Menneskers Sorg er kort,
 om døde Mænd, at de rider fort;
@@ -1744,7 +2037,7 @@ Han er mere død end en anden Død:
 Han er lige saa bundløst død som vi.
 
 
-IV.
+<nonum><center>IV.</center></nonum>
 
 Det er Morgen snart, og det var igaar
 maaske, han kyssed sin Hustrus Haar.
@@ -1881,7 +2174,7 @@ og maa bestandig rejse sig paany,
 kun for at knuses af sin egen Vrede.
 
 
-II.
+<nonum><center>II.</center></nonum>
 
 Stormen skreg til de sorte Skyer:
 lad Fjendskab raade i Verdensrummet.
@@ -1913,7 +2206,7 @@ og opslug dit Ekko.
 Stumhed din Lod!
 
 
-III.
+<nonum><center>III.</center></nonum>
 
 Er det din tusindaarig gamle Klage
 som stiger op fra Dybet nu Atlantis?
@@ -1938,7 +2231,7 @@ og vor begynder.
 Der raser din forglemte Vaandes Jammer.
 
 
-IV.
+<nonum><center>IV.</center></nonum>
 
 Dernede voksed skyggefulde Skove.
 O nævn dem ikke!
@@ -1970,7 +2263,7 @@ din sorte Himmel fraade vildt imod os,
 som kræved den vort Liv, vort Liv i Offer.
 
 
-V.
+<nonum><center>V.</center></nonum>
 
 Idag er Havets Flade blank og stille
 og drømmer, ak saa blide blanke Drømme
@@ -1999,7 +2292,7 @@ var ogsaa dengang Undere af Ælde.
 Og dine Piger gik og sang. Atlantis!
 
 
-VI.
+<nonum><center>VI.</center></nonum>
 
 Atlantis! — Ak dine Piger gik
     nedover Bjerget i Klynge,
