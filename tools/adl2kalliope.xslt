@@ -26,6 +26,19 @@
     <xsl:text>&#xa;</xsl:text> 
 </xsl:template>
 
+<xsl:template match="sp">
+    <xsl:apply-templates/>
+    <xsl:text>&#xa;</xsl:text> 
+</xsl:template>
+
+<xsl:template match="speaker">
+    <center><nonum><sc><xsl:apply-templates/></sc></nonum></center><xsl:text>&#xa;</xsl:text>
+</xsl:template>
+
+<xsl:template match="stage">
+    <center><nonum><small><xsl:apply-templates/></small></nonum></center><xsl:text>&#xa;</xsl:text> 
+</xsl:template>
+
 <!-- linegroup / strofe -->
 <xsl:template match="lg">
    <xsl:apply-templates select="l"/>
@@ -46,7 +59,7 @@
       <xsl:text>    </xsl:text><firstline>xx</firstline><xsl:text>&#xa;</xsl:text>
     </head><xsl:text>&#xa;</xsl:text>
     <body><xsl:text>&#xa;</xsl:text>
-        <xsl:apply-templates select="lg|p"/>
+        <xsl:apply-templates select="lg|p|sp"/>
     </body><xsl:text>&#xa;</xsl:text>
   </poem><xsl:text>&#xa;</xsl:text><xsl:text>&#xa;</xsl:text>
 </xsl:template>
