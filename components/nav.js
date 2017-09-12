@@ -17,17 +17,50 @@ import type {
   URLString,
 } from '../pages/helpers/types.js';
 
+type NavPagingType = {
+  prev: ?{
+    url: URLString,
+    title: string,
+  },
+  next: ?{
+    url: URLString,
+    title: string,
+  },
+};
+
 export class NavPaging extends React.Component {
-  props: {
-    prev: ?{
-      url: URLString,
-      title: string,
-    },
-    next: ?{
-      url: URLString,
-      title: string,
-    },
-  };
+  props: NavPagingType;
+
+  constructor(props: NavPagingType) {
+    super(props);
+    this.onKeyUp = this.onKeyUp.bind(this);
+  }
+
+  componentDidMount() {
+    if (
+      document != null &&
+      document.body != null &&
+      document.body.classList != null
+    ) {
+      // eslint-disable-next-line no-undef
+      document.addEventListener('keyup', this.onKeyUp, false);
+    }
+  }
+
+  componentWillUnmount() {
+    // eslint-disable-next-line no-undef
+    document.removeEventListener('keyup', this.onKeyUp, false);
+  }
+
+  onKeyUp(e: KeyboardEvent) {
+    const { prev, next } = this.props;
+    // TODO: Don't page when in input field
+    if (e.keyCode === 37) {
+      // Left cursor key
+    } else if (e.keyCode === 39) {
+      // Right cursor key
+    }
+  }
 
   render() {
     const { prev, next } = this.props;
@@ -39,18 +72,12 @@ export class NavPaging extends React.Component {
       return (
         <div style={style} key={i}>
           <Link prefetch route={url}>
-            <a title={title}>
-              {arrow}
-            </a>
+            <a title={title}>{arrow}</a>
           </Link>
         </div>
       );
     });
-    return (
-      <div style={{ display: 'flex', padding: '4px 0' }}>
-        {arrows}
-      </div>
-    );
+    return <div style={{ display: 'flex', padding: '4px 0' }}>{arrows}</div>;
   }
 }
 
@@ -95,27 +122,25 @@ export default class Nav extends React.Component {
         }
         poetsURL = (
           <Link prefetch route={Links.poetsURL(lang, 'name', poet.country)}>
-            <a>
-              {poetsLinkText}
-            </a>
+            <a>{poetsLinkText}</a>
           </Link>
         );
       }
-      const poetLink = poet
-        ? <Link prefetch route={Links.poetURL(lang, poet.id)}>
+      const poetLink = poet ? (
+        <Link prefetch route={Links.poetURL(lang, poet.id)}>
+          <a>
+            <PoetName poet={poet} />
+          </a>
+        </Link>
+      ) : null;
+      const workLink =
+        work && poet ? (
+          <Link prefetch route={Links.workURL(lang, poet.id, work.id)}>
             <a>
-              <PoetName poet={poet} />
+              <WorkName work={work} />
             </a>
           </Link>
-        : null;
-      const workLink =
-        work && poet
-          ? <Link prefetch route={Links.workURL(lang, poet.id, work.id)}>
-              <a>
-                <WorkName work={work} />
-              </a>
-            </Link>
-          : null;
+        ) : null;
       links = [poetsURL, poetLink, workLink];
     }
     links = [rootLink, ...links, title];
@@ -129,11 +154,7 @@ export default class Nav extends React.Component {
       if (i !== 0) {
         joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
       }
-      joinedLinks.push(
-        <div key={'link' + i}>
-          {link}
-        </div>
-      );
+      joinedLinks.push(<div key={'link' + i}>{link}</div>);
     });
 
     let rightSideStyle = null;
@@ -142,17 +163,13 @@ export default class Nav extends React.Component {
     }
     return (
       <div className="nav-container">
-        <nav>
-          {joinedLinks}
-        </nav>
-        <div style={rightSideStyle}>
-          {rightSide}
-        </div>
+        <nav>{joinedLinks}</nav>
+        <div style={rightSideStyle}>{rightSide}</div>
         <style jsx>{`
           :global(body) {
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Avenir Next, Avenir,
-              Helvetica, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+              Avenir Next, Avenir, Helvetica, sans-serif;
             box-sizing: border-box;
             font-size: 14px;
             height: 150px;
