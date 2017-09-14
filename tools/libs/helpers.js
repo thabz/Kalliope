@@ -201,6 +201,7 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
     }
     const hasNonum =
       l.indexOf('<nonum>') > -1 ||
+      l.indexOf('<wrap>') > -1 ||
       l.indexOf('<num>') > -1 ||
       l.match(/^\s*$/) ||
       l.match(/^\s*<hr[^>]*>\s*$/);

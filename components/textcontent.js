@@ -354,7 +354,7 @@ export default class TextContent extends React.Component {
         lineInnerClass += ' right-aligned-text';
       }
 
-      if (options.isPoetry) {
+      if (options.isPoetry && !lineOptions.wrap) {
         className += ' poem-line';
         const displayedLineNum =
           lineNum != null && lineNum % 5 === 0 ? lineNum : null;
