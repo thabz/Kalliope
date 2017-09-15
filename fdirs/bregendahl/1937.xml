@@ -3,7 +3,7 @@
 <kalliopework id="1937" author="bregendahl" status="complete" type="poetry">
 <workhead>
    <title>Filtret Høst</title>
-   <year>1803</year>
+   <year>1937</year>
    <quality>korrektur1,kilde,side</quality>
 </workhead>
 <workbody>
@@ -11,6 +11,9 @@
 <prose id="bregendahl2017091501">
 <head>
    <title>Forord</title>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 5.</note>
+   </notes>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -22,52 +25,69 @@ København, 1937.
 </body>
 </prose>
 
+<section>
+<head>    
+    <title>Skiftende Aarstider</title>    
+</head>    
+<content>
+
+<!-- Section Skiftende Aarstider -->
+
 <poem id="bregendahl2017091502">
 <head>
    <title>Vinterstemning</title>
+   <firstline>Det er svært saa det fryser om Dagene, nu</firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 11-12.</note>
+   </notes>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-»Det er svært saa det fryser om Dagene, nu.« »Ja, det er Vinter igen.«
-»Det er svært saa det hvidner paa Tagene, du.« »Ja, det er Sneen, min Ven.«
-»Og se, hvor der danner sig Blomsterforhæng paa Ruden af Rim og Frost,
-og Vinden har rejst sig saa barsk og streng, og drejet sig stik i Nordost.«
+»Det er svært saa det fryser om Dagene, nu.« 
+    »Ja, det er Vinter igen.«
+»Det er svært saa det hvidner paa Tagene, du.« 
+    »Ja, det er Sneen, min Ven.«
+»Og se, hvor der danner sig Blomsterforhæng
+    paa Ruden af Rim og Frost,
+og Vinden har rejst sig saa barsk og streng, 
+    og drejet sig stik i Nordost.«
 — »Ja, den er stik i Nordost.«
-»Og Nætterne de er saa lange nu, og Dagen saa mørk og kort;
-og Tankerne bliver saa bange, Du, nu Solen har vildet sig bort.
-Aa, hør hvor det klamrer med Forstuens Dør, og rusker i Vindfløjens Hat.
-Aa, hør hvor det jamrer i Skorstenens Rør og puster om Gavlen i Nat.
-— Huh! det tuder om Gavlen i Nat!«
- »Vi kan varme vor Ovn, vi kan tænde vort Lys, vi kan stænge for Frost og Sne.
-Vi kan lune med Dyner vor bløde Kabys, saa glemmer vi Vintrens Ve.«
-»Nej!
+
+»Og Nætterne de er saa lange nu, 
+    og Dagen saa mørk og kort;
+og Tankerne bliver saa bange, Du,
+    nu Solen har vildet sig bort.
+Aa, hør hvor det klamrer med Forstuens Dør,
+    og rusker i Vindfløjens Hat.
+Aa, hør hvor det jamrer i Skorstenens Rør 
+    og puster om Gavlen i Nat.
+— Huh! det <i>tuder</i> om Gavlen i Nat!«
+
+»Vi kan varme vor Ovn, vi kan tænde vort Lys, 
+    vi kan stænge for Frost og Sne.
+Vi kan lune med Dyner vor bløde Kabys, 
+    saa glemmer vi Vintrens Ve.«
+    
+    »Nej!
 Det er ingen Trøst, det gi’r dobbelt Uro,
-at vi har det blødt og lunt.
+    at <i>vi</i> har det blødt og lunt.
 Vi ved jo, der savnes baade Brød og Bo,
-og andre i Nød gaar rundt. — Oh! det fryser, det fryser i Nat!«
+    og andre i Nød gaar rundt. 
+— Oh! det fryser, det fryser i Nat!«
 </body>
 </poem>
-<!--
- MIDVINTERSTEMNING
-»Det er svært saa det fryser om Dagene, nu.« »Ja, det er Vinter igen.«
-»Det er svært saa det hvidner paa Tagene, du.« »Ja, det er Sneen, min Ven.«
-»Og se, hvor der danner sig Blomsterforhæng paa Ruden af Rim og Frost,
-og Vinden har rejst sig saa barsk og streng, og drejet sig stik i Nordost.«
-— »Ja, den er stik i Nordost.«
-»Og Nætterne de er saa lange nu, og Dagen saa mørk og kort;
-og Tankerne bliver saa bange, Du, nu Solen har vildet sig bort.
-Aa, hør hvor det klamrer med Forstuens Dør, og rusker i Vindfløjens Hat.
-Aa, hør hvor det jamrer i Skorstenens Rør og puster om Gavlen i Nat.
-— Huh! det tuder om Gavlen i Nat!«
- »Vi kan varme vor Ovn, vi kan tænde vort Lys, vi kan stænge for Frost og Sne.
-Vi kan lune med Dyner vor bløde Kabys, saa glemmer vi Vintrens Ve.«
-»Nej!
-Det er ingen Trøst, det gi’r dobbelt Uro,
-at vi har det blødt og lunt.
-Vi ved jo, der savnes baade Brød og Bo,
-og andre i Nød gaar rundt. — Oh! det fryser, det fryser i Nat!«
- MARTSVINTER
-Oh, Moder Jord,
+
+<poem id="bregendahl2017091503">
+<head>
+   <title>Martsvinter</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 13-15.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+    Oh, Moder Jord,
 vaagn op af din Slummer, kast Isdynen af dig,
 og det kolde, hvide Lagen!
 — Du har sovet saa længe, Moder Jord,
@@ -111,6 +131,19 @@ vaagn op af din Slummer, kast Isdynen af dig
 og det kolde hvide Lagen! Hør os Moder Jord!
 Hør vor ømme Bøn!
 
+</body>
+</poem>
+
+<poem id="bregendahl2017091504">
+<head>
+   <title>Aprilsvejr</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 16-18.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  APRILSVEJR
 Jeg vaagner op en Morgenstund og ser fra Torv og Tage,
 det lyser mod mig hvidt af Sne, som midt i Vintrens Dage.
@@ -143,6 +176,21 @@ til Grøde i April.
 Jeg har en Ven, med ham det er som Vejret i April,
 og paa hans Ansigt skifter Skyer tit med Solskinssmil.
 Men naar hans Smil saa lyst og kønt er vendt mod mig, alt godt og skønt gror i min Sjæl, som Vaarens Grønt for Solens varme Smil.
+    
+</body>
+</poem>
+
+<poem id="bregendahl2017091505">
+<head>
+   <title>Vaar paany</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 19-20.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+    
  VAAR PAANY
 Nu synker Væden i Damme og Sig, nu grønnes de lave Kær;
 nu fyldes Luften af Ve og Skrig
@@ -168,7 +216,21 @@ de drages, de drives og ved ej af hvad.
 Oh!
 det er Vaar, det er Vaar paany!
 
-MIDSOMMERVISÉ
+
+</body>
+</poem>
+
+<poem id="bregendahl2017091506">
+<head>
+   <title>Midsommervise</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 21.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+    MIDSOMMERVISÉ
 Nu bølger Rugen,
 Nu blomstrer Hylden,
 og Rosen blusser i Havens Bed.
@@ -186,6 +248,20 @@ Aa, Trylleri til en dugget Kvæld!
 Mit Hjerte skælver,
 •— jeg tror jeg græder,
 her midt i Sommerens Lykkevæld?
+
+</body>
+</poem>
+
+<poem id="bregendahl2017091507">
+<head>
+   <title>Sommeraften</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 22.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  SOMMERAFTEN
 Nu glider Solen saa langsomt ned bag Jordens fjerneste Rand,
 se alting farves i gyldent Skær, og hver en Rude i Brand.
@@ -198,6 +274,20 @@ Saa sænker Natten sit sorte Slør
 og hyller hver Jorderigs Vraa.
 — Langt borte høres en Hund, der gøer,
 saa slumrer Store og Smaa.
+    
+</body>
+</poem>
+
+<poem id="bregendahl2017091508">
+<head>
+   <title>Julibrynde</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 23-24.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  J U L I B R Y N D E 1)
 Der er saa kvalmt i den store By, i Julidagenes Brynde.
 En Luft, saa trykkende tung som Bly, forpester Stuernes lumre Ly,
@@ -215,6 +305,20 @@ i Stadens Gader og Gyder.
  Ak! den, der sad ved en kølig Strand, i Julidagenes Brynde,
 og fik et Bad i det klare Vand, indaanded’ Duften af dugget Gran,
 og i et Blik over Somrens Land, saa Solen synke i Vester!
+    
+</body>
+</poem>
+
+<poem id="bregendahl2017091509">
+<head>
+   <title>Høstaftner</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 25-28.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  HØSTAFTNER Naar Solen nu er dalet
 ____
 og Dagens Lys forsvundet,
@@ -286,6 +390,20 @@ og lette Skyer vifter mildt om Næets smalle Rest,
 da gaar vi ud, betagne,
 i Høstens skønne Aftner,
 og nyder deres dunkle Drøm og deres Duftes Fest.
+    
+</body>
+</poem>
+
+<poem id="bregendahl2017091510">
+<head>
+   <title>I Efteraarsstormen</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 29-36.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  I EFTERAARSSTORMEN
 I
 Der staar en strid Storm ind over Landet.
@@ -416,7 +534,20 @@ Saadan staar jeg bag Morgenruden og taler til den gamle Kastanie. Aah, Herregud!
 og jeg ynkes over dens Taalsomhed og pines af dens langmodige Ro,
 — thi det kan jeg. Men glædes —
 — nej, glædes,
-det kan jeg ikke.
+det kan jeg ikke.    
+</body>
+</poem>
+
+<poem id="bregendahl2017091511">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 36.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  DECEMBERNÆTTER
 Vinterens Mørke har sænket sig over det hele Land,
 Skoven er ribbet og Markerne sover, fra Strand til Strand.
@@ -429,7 +560,29 @@ vilde Vinde om Gavlene tuder, i Natten sort.
 Modet er stænget i Menneskets Bryst, Sindet er ribbet for Haab og Trøst, og alle Vunder er aabne.
 Mørke, Mørke, hvorhen vi ser,
 i sorte Nætters vildtvaagne Veer; Dag og Sol — Sol og Dag, kommer I aldrig mer?
-HAN OG HUN
+    
+</body>
+</poem>
+
+</content>
+</section>
+
+<section>
+<head>    
+    <title>Han og Hun</title>    
+</head>    
+<content>
+
+<poem id="bregendahl2017091512">
+<head>
+   <title>Morgenstemning</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 39-41.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  MORGENSTEMNING
 Det var Ferietid,
 det var Midsommertid, og Solen steg op over Byen.
@@ -479,6 +632,19 @@ Var det sandt, han var min, —
 — ja! ifald han var min,
 — da fyldtes jeg af jublende Fest i mit Sind,
 og Solskin, og Solskin og Sol! 41
+</body>
+</poem>
+
+<poem id="bregendahl2017091513">
+<head>
+   <title>Hvad er Kvinders Længsel?</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 42-43.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  HVAD ER KVINDERS LÆNGSEL?
 Ja, hvad er Kvinders Længsel og Kvinders Begær?
 En aldrig slukket Trang
@@ -498,7 +664,19 @@ for den, man har kær.
 Se, saadan synger Karen,
 og Karen ved en Del;
 men passer det for andre mon, end for ung Karen selv?
+</body>
+</poem>
 
+<poem id="bregendahl2017091514">
+<head>
+   <title>Jeg kunde ikke sove -</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 44-45.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 JEG KUNDE IKKE SOVE —
 Saa svandt den da, den Nat saa lang; jeg kunde ikke sove.
 Jeg syntes, Stuen var saa trang, urolig var jeg Natten lang,
@@ -515,7 +693,20 @@ Hvergang jeg vilde slumre ind, jeg saa’ hans Ansigt kært og fint, saa lidende
 I Uvejrshyl, i Tordenbrag,
 — endda saa kan jeg sove.
 Men ved jeg, at du ligger syg og pint i din Alkove,
-da kan jeg ikke sove.
+da kan jeg ikke sove.    
+</body>
+</poem>
+
+<poem id="bregendahl2017091515">
+<head>
+   <title>En lille Sang</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 46.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  EN LILLE SANG
 Du er saa vakker, Du,
 Du er saa varm,
@@ -533,6 +724,20 @@ Du er saa hed, Du,
 Du er saa vild,
 med alt Dit Kysseri — og meget andet.
 Jeg gaar min Vej, Du; — Ohnej, ohnej, Du! Jeg følger, — for jeg kan jo ikke andet.
+    
+</body>
+</poem>
+
+<poem id="bregendahl2017091516">
+<head>
+   <title>Navnet</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 47-48.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  NAVNET
 Jeg er saa sært bevæget, herinde i min Sjæl.
 Jeg er saa sær forandret, jeg kender knapt mig selv.
@@ -554,6 +759,29 @@ men altid, altid vugger et Navn i mine Tanker,
 — et Navn, mit Hjerte sukker.
 Hvor tit de Stemningsbølger end skifter i mit Sind,
 det Navn staar uudsletteligt i Sjælen prentet ind.
+    
+</body>
+</poem>
+
+</content>
+</section>
+
+<section>
+<head>    
+    <title>Mor og Barn</title>    
+</head>    
+<content>
+
+<poem id="bregendahl2017091517">
+<head>
+   <title>Adskilte</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 49-50.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  ADSKILTE
 Du skulde komme herhjem til mig, jeg har saa meget at hviske dig,
 — saa meget sødt og rart.
@@ -571,7 +799,20 @@ at du er den eneste, jeg har kær; jeg græder mig syg af Savn.
 Du skulde komme — men kommer ej,
 — du skulde lytte — og hører ej.
 Men hver min Længsel — og hvert mit Savn s de vandrer dog tro til dig.
- MOR OG BARN
+    
+</body>
+</poem>
+
+<poem id="bregendahl2017091518">
+<head>
+   <title>Mor og Barn</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s.53-54.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  MOR OG BARN
 Ja, du er mit Barn, du lille Dreng, du er Kød af mit og Blod af mit. Du er knyttet til mig med en Streng
 stærkere end den, som Saksens Snit klipped over, da jeg fødte dig.
@@ -590,6 +831,20 @@ Til mig lød det Moderskabets Bud: Glem dig selv — du har et lille Barn. Dybt 
 Men saa ved jeg da, at noget her
 er der, som urokkeligt staar fast:
 — Hvad med dig og mig i Verden sker, hvor vi hvirvles om for Skæbnens Kast, saa er du min Søn, og jeg din Mor!
+    
+</body>
+</poem>
+
+<poem id="bregendahl2017091519">
+<head>
+   <title>Forladte Mor</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 55-56.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  FORLADTE MOR
 Aa, mit eget søde Pus,
 hvor du fægter, hvor du spræller, hvor du klukker højt af Fryd,
@@ -613,7 +868,20 @@ Mussemus — lille Pus! Mussemus — mit eget Pus!
 Ak, mit Barn, hvad nytter Bøn, og hvad nytter al min Stræben, naar den sorte Ovn er kold,
 og i Lampen Olien synker? Tømt er Fadet, Skabet tomt, og din Mor forgaar i Graad.
 Mussemus — lille Pus! arme, lille, stakkels Pus!!
- FRA MOR TIL SØN
+    
+</body>
+</poem>
+
+<poem id="bregendahl2017091520">
+<head>
+   <title>Fra Mor til Søn</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 57-58.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nu maa vi leve skilte Du og jeg,
 og Du maa færdes mange Mil fra mig, til mig der fører ingen Hverdagssti,
 og Dine Tanker gaar vel mig forbi? Men mine gaar saa tit at møde Dig.
@@ -630,7 +898,28 @@ Tit listet jeg mig til, med løftet Blik, at kigge efter, hvordan Dig det gik? J
 det var en Lykke da, det er det end.
 For alt, Du gav og bar herhjem til mig, af Mod og Arbejdslyst og Glæde rig,
 — min egen Dreng, jeg takker til jeg dør.
- UDBRUD
+</body>
+</poem>
+
+</content>
+</section>
+
+<section>
+<head>    
+    <title>Udbrud</title>    
+</head>    
+<content>
+
+<poem id="bregendahl2017091521">
+<head>
+   <title>Udbrud</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 61-64.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  UDBRUD
 Har man traadt paa vore dyre Følelser, — ja, trampet dem,
 ætset dem med Gift og Syre, sønderflængt dem,
@@ -665,9 +954,29 @@ har Haanen mig saaret,
 og dristigt og højt som det fagreste Maal
 og spændstig og stærk som en Fjeder af Staal.
 For min Livsvilje er som en Fjeder af Staal. den kan bøjes, men aldrig den brister.
-.I
- VED SLÆGTENS GRAV
- VED SLÆGTENS GRAV
+    
+</body>
+</poem>
+
+</content>
+</section>
+
+<section>
+<head>    
+    <title>Ved Slægtens Grav</title>    
+</head>    
+<content>
+
+<poem id="bregendahl2017091522">
+<head>
+   <title>Ved Slægtens Grav</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 67-70.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I.
 Vi var engang en Sødskendflok, vi leved sammen Nat og Dag, vi spiste ved det samme Bord, sov under samme Tag.
 Vi delte Leg, vi delte Fryd
@@ -708,22 +1017,59 @@ Men ti; — vi ved, den Herre Død Pardon til ingen gav.
  Hans sikre Lov adlydes maa: Vi ender i vor Grav.
 — Her sænktes mine Fædre ned i Slægtens sidste Bo.
 Og om en Stund saa hviler ogsaa vi i Gravens Ro.
- SÆDEMANDENS SANG
-Den Sædemand gaar ud at saa, saa — saa —
-sin Sæd i Agren gold og graa, gold og graa.
-Han tænker, mens hans Arbejd gaar, gaar — gaar —
-hvad høster jeg til næste Aar — næste Aar?
-Han ser paa Kærnen trind og bold, bold — bold —
-»Voks op og giv mig mange Fold — mange Fold.
-Og giv mig Penge, Foder, Brød, Brød — Brød —
-at jeg og mine ej faar Nød, — ej faar Nød.
- Jeg ved, jeg har beredt min Muld, Muld — Muld —
-men Vejr og Vind er svigefuld, — svigefuld.«
-Dog hvor det end med Høsten gaar, gaar — gaar —
-den Sædemand sin Sæd udsaar, — Sæd udsaar.
-Biir Lønnen end Utak og Skam, Skam — Skam —
-er det et Livsens Bud for ham, — Bud for ham.
+    
+</body>
+</poem>
 
--->
+<poem id="bregendahl2017091523">
+<head>
+   <title>Sædemandens Sang</title>
+   <firstline></firstline>
+   <notes>
+       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 71-72.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Den Sædemand gaar ud at saa, 
+    saa — saa —
+sin Sæd i Agren gold og graa, 
+    gold og graa.
+
+Han tænker, mens hans Arbejd gaar, 
+    gaar — gaar —
+hvad høster jeg til næste Aar 
+    — næste Aar?
+
+Han ser paa Kærnen trind og bold, 
+    bold — bold —
+»Voks op og giv mig mange Fold 
+    — mange Fold.
+
+Og giv mig Penge, Foder, Brød, 
+    Brød — Brød —
+at jeg og mine ej faar Nød, 
+    — ej faar Nød.
+
+Jeg ved, jeg har beredt min Muld, 
+    Muld — Muld —
+men Vejr og Vind er svigefuld, 
+    — svigefuld.«
+
+Dog hvor det end med Høsten gaar, 
+    gaar — gaar —
+den Sædemand sin Sæd udsaar, 
+    — Sæd udsaar.
+
+Biir Lønnen end Utak og Skam, 
+    Skam — Skam —
+er det et Livsens Bud for ham, 
+    — Bud for ham.
+</body>
+</poem>
+
+</content>
+</section>
+
 </workbody>
 </kalliopework>
