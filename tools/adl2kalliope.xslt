@@ -85,7 +85,7 @@
       <xsl:apply-templates select="//TEI/teiHeader"/>
   </workhead>
   <workbody>
-      <xsl:apply-templates select="//TEI/text/body//div"/>
+      <xsl:apply-templates select="//TEI/text//body//div"/>
   </workbody>
   </kalliopework>
 </xsl:template>
