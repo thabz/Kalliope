@@ -36,7 +36,8 @@ import { createURL } from './helpers/client.js';
 
 const dateAndPlace = (
   datePlace: ?DateWithPlace,
-  lang: Lang
+  lang: Lang,
+  age?: ?number
 ): Array<?React$Element<*>> => {
   if (datePlace == null) {
     return 'Ukendt år';
@@ -52,6 +53,9 @@ const dateAndPlace = (
   if (datePlace.place != null) {
     result.push(<span key="place">{', ' + datePlace.place}</span>);
   }
+  if (age != null) {
+    result.push(<span key="age"> {age}</span>);
+  }
   return result;
 };
 
@@ -59,10 +63,9 @@ class PersonMetaLine extends React.Component {
   props: {
     label: string,
     value: string | ?React$Element<*> | Array<?React$Element<*>>,
-    title: ?string,
   };
   render() {
-    const { label, value, title } = this.props;
+    const { label, value } = this.props;
     if (value == null) {
       return null;
     }
@@ -78,7 +81,7 @@ class PersonMetaLine extends React.Component {
     return (
       <div style={styles.item}>
         <div style={styles.key}>{label}</div>
-        <div title={title}>{value}</div>
+        <div>{value}</div>
       </div>
     );
   }
@@ -95,10 +98,6 @@ class PersonMeta extends React.Component {
       return null;
     }
     const name = <PoetName poet={poet} />;
-    let born =
-      poet.period == null ? null : dateAndPlace(poet.period.born, lang);
-    let dead =
-      poet.period == null ? null : dateAndPlace(poet.period.dead, lang);
 
     // Age when dead
     let age = null;
@@ -137,9 +136,14 @@ class PersonMeta extends React.Component {
         ) {
           ca = 'ca. ';
         }
-        age = `${lastName} blev ${ca}${yearDiff} år gammel`;
+        age = `(blev ${ca}${yearDiff} år)`;
       }
     }
+
+    let born =
+      poet.period == null ? null : dateAndPlace(poet.period.born, lang);
+    let dead =
+      poet.period == null ? null : dateAndPlace(poet.period.dead, lang, age);
 
     const christened =
       poet.name.christened == null ? poet.name.realname : poet.name.christened;
@@ -150,7 +154,7 @@ class PersonMeta extends React.Component {
         <PersonMetaLine value={christened} label="Døbt" />
         <PersonMetaLine value={poet.name.pseudonym} label="Pseudonym" />
         <PersonMetaLine value={born} label="Født" />
-        <PersonMetaLine value={dead} label="Død" title={age} />
+        <PersonMetaLine value={dead} label="Død" />
       </div>
     );
   }
