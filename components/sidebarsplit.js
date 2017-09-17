@@ -13,11 +13,7 @@ export default class SidebarSplit extends React.Component {
       sidebar == null || sidebar.length == 0
         ? 'sidebar-spl empty'
         : 'sidebar-spl';
-    const renderedSidebar = (
-      <div>
-        {sidebar}
-      </div>
-    );
+    const renderedSidebar = <aside>{sidebar}</aside>;
     return (
       <div className={className}>
         {this.props.children}
@@ -31,7 +27,7 @@ export default class SidebarSplit extends React.Component {
             flex-grow: 1;
             padding: 0 40px 0 0;
           }
-          div.sidebar-spl > :global(div:last-child) {
+          div.sidebar-spl > :global(aside:last-child) {
             flex-shrink: 0;
             width: 250px;
             padding: 0 0 0 40px;
@@ -40,14 +36,14 @@ export default class SidebarSplit extends React.Component {
             border-left: 1px solid #666;
             color: #666;
           }
-          div.sidebar-spl.empty > :global(div:last-child) {
+          div.sidebar-spl.empty > :global(aside:last-child) {
             border-left: none;
           }
           @media (max-width: 800px), print {
             div.sidebar-spl {
               flex-direction: column;
             }
-            div.sidebar-spl > :global(div:last-child) {
+            div.sidebar-spl > :global(aside:last-child) {
               margin-top: 30px;
               border-top: 1px solid #666;
               border-left: 0;
