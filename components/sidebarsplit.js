@@ -36,12 +36,18 @@ export default class SidebarSplit extends React.Component {
             border-left: 1px solid #666;
             color: #666;
           }
+          div.sidebar-spl.empty > :global(div:first-child) {
+            padding-right: 0;
+          }
           div.sidebar-spl.empty > :global(aside:last-child) {
             border-left: none;
           }
           @media (max-width: 800px), print {
             div.sidebar-spl {
               flex-direction: column;
+            }
+            div.sidebar-spl > :global(div:first-child) {
+              padding: 0;
             }
             div.sidebar-spl > :global(aside:last-child) {
               margin-top: 30px;
