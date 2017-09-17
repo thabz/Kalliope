@@ -6,13 +6,15 @@ export default class SidebarSplit extends React.Component {
   props: {
     sidebar: React$Element<*> | string | Array<React$Element<*>> | null,
     children?: *,
+    sidebarOnTopWhenSplit?: boolean,
   };
   render() {
-    const { sidebar } = this.props;
+    const { sidebar, sidebarOnTopWhenSplit } = this.props;
     let className =
       sidebar == null || sidebar.length == 0
         ? 'sidebar-spl empty'
         : 'sidebar-spl';
+    className += sidebarOnTopWhenSplit ? ' reverse-split' : '';
     const renderedSidebar = <aside>{sidebar}</aside>;
     return (
       <div className={className}>
@@ -42,7 +44,13 @@ export default class SidebarSplit extends React.Component {
           div.sidebar-spl.empty > :global(aside:last-child) {
             border-left: none;
           }
-          @media (max-width: 800px), print {
+
+          @media (max-width: 800px) {
+            div.sidebar-spl > :global(aside:last-child) {
+              width: 200px;
+            }
+          }
+          @media (max-width: 760px), print {
             div.sidebar-spl {
               flex-direction: column;
             }
@@ -55,6 +63,19 @@ export default class SidebarSplit extends React.Component {
               border-left: 0;
               width: 100%;
               padding: 20px 0 0 0;
+            }
+
+            div.sidebar-spl.reverse-split > :global(div:first-child) {
+              padding-top: 40px;
+              order: 2;
+            }
+            div.sidebar-spl.reverse-split > :global(aside:last-child) {
+              order: 1;
+              border-top: none;
+              border-bottom: 1px solid #666;
+              border-left: 0;
+              width: 100%;
+              padding: 0 0 10px 0;
             }
           }
         `}</style>

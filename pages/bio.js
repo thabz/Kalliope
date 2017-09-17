@@ -308,7 +308,7 @@ export default class extends React.Component {
           <Nav lang={lang} poet={poet} title="Biografi" />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="bio" />
-          <SidebarSplit sidebar={sidebarItems}>
+          <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
             <div style={{ lineHeight: '1.6' }}>
               <TextContent
                 contentHtml={content_html}
