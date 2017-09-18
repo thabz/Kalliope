@@ -354,7 +354,7 @@ export default class TextContent extends React.Component {
         lineInnerClass += ' right-aligned-text';
       }
 
-      if (options.isPoetry) {
+      if (options.isPoetry && !lineOptions.wrap) {
         className += ' poem-line';
         const displayedLineNum =
           lineNum != null && lineNum % 5 === 0 ? lineNum : null;
@@ -412,7 +412,7 @@ export default class TextContent extends React.Component {
             display: inline-block;
             margin-left: -2.5em;
             vertical-align: top;
-            margin-top: 0.25em;            
+            margin-top: 0.25em;
           }
           :global(.bible-line),
           :global(.poem-line) {
@@ -446,7 +446,6 @@ export default class TextContent extends React.Component {
             width: calc(100%-7em);
             margin-left: 7em;
             text-indent: -7em;
-          }
           }
           :global(.right-aligned-text) {
             text-align: right;

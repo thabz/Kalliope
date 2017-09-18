@@ -3601,7 +3601,7 @@
       <date>1905-12-06</date>
     </dead>
   </period>
-  <works>1886,1894,1898,1901,1905,1906</works>
+  <works>1886,1894,1898,1901,1905,1906,andre</works>
 </person>
 
 <person id="claussen" country="dk" lang="da" type="poet">
@@ -3636,9 +3636,10 @@
     </born>
     <dead>
       <date>1932-01-28</date>
+      <place>København</place>
     </dead>
   </period>
-  <works>1889,1893,1898,1900,1913,1927,andre</works>
+  <works>1889,1893,1898,1900,1904,1913,1921,andre</works>
 </person>
 
 <person id="dam" country="dk" lang="da" type="poet">
@@ -3754,9 +3755,11 @@
   <period>
     <born>
       <date>1872-01-15</date>
+      <place>Viborg</place>
     </born>
     <dead>
       <date>1907-11-25</date>
+      <place>Grønland</place>
     </dead>
   </period>
   <works>1904</works>
@@ -3770,9 +3773,11 @@
   <period>
     <born>
       <date>1874-07-19</date>
+      <place>Frederiksborg Slot</place>
     </born>
     <dead>
       <date>1923-06-29</date>
+      <place>Nykøbing Sjælland</place>
     </dead>
   </period>
   <works>1894</works>

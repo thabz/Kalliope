@@ -1545,7 +1545,7 @@ const build_todays_events_json = collected => {
 
   langs.forEach(lang => {
     const preferredCountries =
-      lang === 'da' ? ['dk', 'de', 'se'] : ['gb', 'us'];
+      lang === 'da' ? ['se', 'de', 'dk'] : ['us', 'gb']; // Større index er større vægt
     for (let m = 1; m <= 12; m++) {
       for (let d = 1; d <= 31; d++) {
         const dd = d < 10 ? '0' + d : d;
@@ -1561,7 +1561,7 @@ const build_todays_events_json = collected => {
               weight += poet.has_portraits ? 12 : 6; // TODO: Find the one with a portrait description
               weight += poet.has_texts ? 10 : 5;
               weight += poet.has_works ? 6 : 3;
-              weight += preferredCountries.indexOf(poet.country) > -1 ? 11 : 6;
+              weight += preferredCountries.indexOf(poet.country);
               weight += event.context.event_type === 'born' ? 3 : 0; // Foretræk fødselsdage
               return {
                 weight,

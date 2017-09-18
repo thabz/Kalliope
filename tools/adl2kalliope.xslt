@@ -59,7 +59,7 @@
       <xsl:text>    </xsl:text><firstline>xx</firstline><xsl:text>&#xa;</xsl:text>
     </head><xsl:text>&#xa;</xsl:text>
     <body><xsl:text>&#xa;</xsl:text>
-        <xsl:apply-templates select="lg|p|sp"/>
+        <xsl:apply-templates select="lg|p|sp|stage"/>
     </body><xsl:text>&#xa;</xsl:text>
   </poem><xsl:text>&#xa;</xsl:text><xsl:text>&#xa;</xsl:text>
 </xsl:template>
@@ -85,7 +85,7 @@
       <xsl:apply-templates select="//TEI/teiHeader"/>
   </workhead>
   <workbody>
-      <xsl:apply-templates select="//TEI/text/body//div"/>
+      <xsl:apply-templates select="//TEI/text//body//div"/>
   </workbody>
   </kalliopework>
 </xsl:template>

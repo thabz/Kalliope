@@ -173,6 +173,8 @@ export default class Nav extends React.Component {
             box-sizing: border-box;
             font-size: 14px;
             height: 150px;
+            /* Remove Gray Highlight When Tapping Links in Mobile Safari */
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
           }
           :global(a) {
             color: ${CommonData.linkColor};

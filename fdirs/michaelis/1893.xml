@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1893" author="michaelis" status="incomplete" type="poetry">
+<kalliopework id="1893" author="michaelis" status="complete" type="poetry">
 <workhead>
    <title>Solblomster</title>
    <year>1893</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+   <notes>
+      <note>Teksten følger førsteudgaven af <i>Solblomster</i>, Jakob H. Mansas Forlag, Kbh., 1893.</note>
+      <note>Dette er en korrekturlæst udgave af teksten hos <a href="http://www.adl.dk/">Arkiv for Dansk Litteratur</a>.</note>
+   </notes>
+   <pictures>
+       <picture type="titlepage" src="1893-p1.jpg">Titelbladet til <i>Solblomster</i> (1893).<br/>,,Solblomster / af / Sophus Michaëlis // Titelvignet af Frode Eskesen // København / Jakob H. Mansas Forlag / P. Petersens Bogtrykkeri (Egmont H. Petersen) / 1893''</picture>
+   </pictures>
 </workhead>
 <workbody>
       
@@ -13,6 +19,10 @@
 <head>
     <title>Solblomster</title>
     <firstline>O stærke Glød, som Millioner Mil</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 1-2.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 O stærke Glød, som Millioner Mil
@@ -68,6 +78,10 @@ og visne — for at fødes kun paa ny.
 <head>
     <title>Et Billed</title>
     <firstline>Der hænger paa min Væg et lille Billed</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 3-5.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Der hænger paa min Væg et lille Billed,
@@ -136,7 +150,6 @@ og læste Troskabsløftet af dit Øje:
 hvor tvende Elskende sig sammen bøje ...
 
 <nonum>    <small>Oktbr. 1886.</small></nonum>
-        
 </body>
 </poem>
 
@@ -145,6 +158,10 @@ hvor tvende Elskende sig sammen bøje ...
     <title>En ung Piges Sang</title>
     <subtitle>(Musik af August Enna)</subtitle>
     <firstline>Og er der et eneste Hjerte kun</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 6-7.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Og er der et eneste Hjerte kun,
@@ -178,7 +195,6 @@ da fik jeg mere at virke end den,
 der bærer Dronningedragt.
 
 <nonum>    <small>26. Juli 1887.</small></nonum>
-        
 </body>
 </poem>
 
@@ -186,6 +202,10 @@ der bærer Dronningedragt.
 <head>
     <title>Nyaarsny</title>
     <firstline>I Tidens Hovedbog et Blad der vendes</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 8-9.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 I Tidens Hovedbog et Blad der vendes ...
@@ -225,7 +245,6 @@ Saa nikker trøstigt vi til Nyaarsnyet:
 Vi skælver ej, om Aaret bliver skyet.
 
 <nonum>    <small>1888/89.</small></nonum>
-        
 </body>
 </poem>
 
@@ -233,6 +252,10 @@ Vi skælver ej, om Aaret bliver skyet.
 <head>
     <title>Du Sol —</title>
     <firstline>Som Bulmeurt og Galnebær</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 10.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Som Bulmeurt og Galnebær
@@ -263,6 +286,10 @@ naar Een kun har mig kær.
 <head>
     <title>Dans</title>
     <firstline>Der danser Maane, danser Sol, der danser tusind Stjerner</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 11-12.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Der danser Maane, danser Sol, der danser tusind Stjerner,
@@ -297,6 +324,10 @@ men Satan til en vild Kankan i Helved op skal blæse.
 <head>
     <title>Sol paa Sne</title>
     <firstline>Hor skinner Sol paa Sne, der gnistrer hvid</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 13.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
 <body>
@@ -326,6 +357,10 @@ du smelter vore Statuer som Sne.
 <head>
     <title>Sang</title>
     <firstline>Ved Foraarstide det risler med Sang</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 14.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Ved Foraarstide det risler med Sang
@@ -350,7 +385,6 @@ og dufter sødt som et Minde;
 skal Myrtekransen hun binde? —
 
 <nonum>    <small>4. April 1889.</small></nonum>
-        
 </body>
 </poem>
 
@@ -358,6 +392,10 @@ skal Myrtekransen hun binde? —
 <head>
     <title>Langfredag</title>
     <firstline>Det er Langfredag. Skarp og kølig Luft</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 15-17.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Det er Langfredag. Skarp og kølig Luft
@@ -426,7 +464,6 @@ men alle Ulve omgaa Kirken vidt,
 — de stærke Sjæle, som har Mod at synde.
 
 <nonum>    <small>18. April 1889.</small></nonum>
-        
 </body>
 </poem>
 
@@ -434,6 +471,10 @@ men alle Ulve omgaa Kirken vidt,
 <head>
     <title>Erindring</title>
     <firstline>Du med det kære Navn, jeg mindes dig</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 18-19.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Du med det kære Navn, jeg mindes dig
@@ -464,7 +505,6 @@ i Aftenstundens stille Vande synker
 og dykker langsomt mod dens dybe Bund ...
 
 <nonum>    <small>19. Maj 1889.</small></nonum>
-        
 </body>
 </poem>
 
@@ -472,6 +512,10 @@ og dykker langsomt mod dens dybe Bund ...
 <head>
     <title>Skumringssang</title>
     <firstline>Mit enlige Fodslag sagtner</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 20-21.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Mit enlige Fodslag sagtner
@@ -522,6 +566,10 @@ kærlighedssvangre Stund.
 <head>
     <title>Foran Christiansborg</title>
     <firstline>Midt i et grønt Buskads Gudinden troner</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 22-25.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Midt i et grønt Buskads Gudinden troner:
@@ -607,6 +655,10 @@ og Himlens Blaa har Kongeborgen tjældet.
 <head>
     <title>Skovbryllup</title>
     <firstline>Spring, du smaa Dryade</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 26-27.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Spring, du smaa Dryade,
@@ -657,7 +709,6 @@ nu jeg favnes af din fine Arm
 for i Skovens Himmelseng at hvile.
 
 <nonum>    <small>14. Juni 1889.</small></nonum>
-        
 </body>
 </poem>
 
@@ -665,6 +716,10 @@ for i Skovens Himmelseng at hvile.
 <head>
     <title>En Krans</title>
     <firstline>En Dag skal rinde uden dine Smil</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 28-30.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 En Dag skal rinde uden dine Smil.
@@ -722,7 +777,6 @@ og Øreflippens lille fine Hul ...
 ... en Sommerfugl, der flagrer henrykt om dig.
 
 <nonum>    <small>17. Juli 1889.</small></nonum>
-        
 </body>
 </poem>
 
@@ -730,6 +784,10 @@ og Øreflippens lille fine Hul ...
 <head>
     <title>Storhed</title>
     <firstline>Hvad Storhed er? — Giv Svar, som ikke svækkes!</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 31.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
 <body>
@@ -759,6 +817,10 @@ ej Granskertvivl, som føder Fattigdom,
 <head>
     <title>Talisman</title>
     <firstline>Hold Kærlighedens store Guldmynt hel</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 32.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
 <body>
@@ -788,6 +850,10 @@ og du alene véd Adversens Billed.
 <head>
     <title>Pensée</title>
     <firstline>Du Sommerfugleblomst, som lavt i Græsset</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 33-34.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Du Sommerfugleblomst, som lavt i Græsset
@@ -839,6 +905,10 @@ som hendes Læbers Blod gav Purpurfarve.
 <head>
     <title>Bøn</title>
     <firstline>Giv mig igen min Ungdoms Tro</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 35.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Giv mig igen min Ungdoms Tro
@@ -864,6 +934,10 @@ og knytter til Kamp vore Hænder.
 <head>
     <title>Hver lille Gnist —</title>
     <firstline>Hver lille Gnist af hendes Skønheds Ild</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 36-38.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hver lille Gnist af hendes Skønheds Ild
@@ -924,7 +998,6 @@ I er for mig to bitte smaa Juvelskrin,
 der dog de største Ædelstene rummer.
 
 <nonum>    <small>4. Decbr. 1889.</small></nonum>
-        
 </body>
 </poem>
 
@@ -932,6 +1005,10 @@ der dog de største Ædelstene rummer.
 <head>
     <title>Saa let —</title>
     <firstline>Saa let dine Ord lader dufte du</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 39.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Saa let dine Ord lader dufte du
@@ -955,7 +1032,6 @@ foragtende alle de Daarer,
 der larmer ved Søjlens Fod.
 
 <nonum>    <small>4. Jan. 1890.</small></nonum>
-        
 </body>
 </poem>
 
@@ -963,6 +1039,10 @@ der larmer ved Søjlens Fod.
 <head>
     <title>Livets Rus</title>
     <firstline>Springer, I Vande!</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 40-41.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
     Springer, I Vande!
@@ -1003,7 +1083,6 @@ for mig er der Liv i hvert eneste lidet Frø:
     Jeg er saa stærk, at jeg aldrig vil dø.
 
 <nonum>    <small>5. Jan. 1890.</small></nonum>
-        
 </body>
 </poem>
 
@@ -1011,6 +1090,10 @@ for mig er der Liv i hvert eneste lidet Frø:
 <head>
     <title>Spleen</title>
     <firstline>Saa tyndt er Skroget slidt</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 42-43.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
     Saa tyndt er Skroget slidt.
@@ -1064,6 +1147,10 @@ mens mine visner som Lindens Blade i Høst.
 <head>
     <title>Buketten</title>
     <firstline>Der dufter paa mit Bord en blaa Buket</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 44.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
 <body>
@@ -1086,7 +1173,6 @@ Jeg ser dit Øje lukke sig, Veninde,
 og atter Græsset os til Hvile vinke.
 
 <nonum>    <small>Marts 1890.</small></nonum>
-        
 </body>
 </poem>
 
@@ -1094,6 +1180,10 @@ og atter Græsset os til Hvile vinke.
 <head>
     <title>For alt det søde Liv —</title>
     <firstline>For alt det søde Liv, som Vaaren skænker</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 45.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
 <body>
@@ -1116,7 +1206,6 @@ Du Maal, mod hvilket jeg hver Aften stræber,
 — et Kys, som lukker mine Øjne til!
 
 <nonum>    <small>Maj 1890.</small></nonum>
-        
 </body>
 </poem>
 
@@ -1124,6 +1213,10 @@ Du Maal, mod hvilket jeg hver Aften stræber,
 <head>
     <title>Solskin</title>
     <firstline>Mig har du aabnet al din unge Skønhed</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 46-48.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Mig har du aabnet al din unge Skønhed.
@@ -1198,7 +1291,6 @@ mod denne ene levende Gudinde?
 Mig har du aabnet al din unge Skønhed.
 
 <nonum>    <small>Maj 1890.</small></nonum>
-        
 </body>
 </poem>
 
@@ -1206,6 +1298,10 @@ Mig har du aabnet al din unge Skønhed.
 <head>
     <title>Sirene</title>
     <firstline>Jeg har mødt dig engang, Sirene —</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 49-50.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg har mødt dig engang, Sirene —
@@ -1248,6 +1344,10 @@ drager mig fjærn og nær.
 <head>
     <title>Du kom</title>
     <firstline>Du kom</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 51-52.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Du kom.
@@ -1292,7 +1392,6 @@ du mødte mig livsalig paa min Vej
 og fulgte mig til Evighedens Grænser.
 
 <nonum>    <small>24. Juni 1890.</small></nonum>
-        
 </body>
 </poem>
 
@@ -1300,6 +1399,10 @@ og fulgte mig til Evighedens Grænser.
 <head>
     <title>Saa tit —</title>
     <firstline>Saa tit mit Billed du sender</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 53.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Saa tit mit Billed du sender
@@ -1320,6 +1423,10 @@ ud over mit Skrivebord.
 <head>
     <title>Hymne</title>
     <firstline>Hellige Afrodite!</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 54-55.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
     Hellige Afrodite!
@@ -1363,7 +1470,6 @@ gaar jeg Helvedes Luer i Møde
         Jeg elsker!
 
 <nonum>    <small>19. Jan. 1891.</small></nonum>
-        
 </body>
 </poem>
 
@@ -1371,6 +1477,10 @@ gaar jeg Helvedes Luer i Møde
 <head>
     <title>Gensyn</title>
     <firstline>Tykkes vel du om et Gensynsmøde</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 56-60.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <nonum><i>Han</i>.</nonum>
@@ -1483,6 +1593,10 @@ gaar jeg Helvedes Luer i Møde
 <head>
     <title>Vort Liv —</title>
     <firstline>Vort Liv er som et sejlbart Løb af Dage</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 61-62.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Vort Liv er som et sejlbart Løb af Dage
@@ -1531,7 +1645,6 @@ i din Mund aanded ud jeg, at i dig
 endnu en stakket Stund jeg leve skulde.
 
 <nonum>    <small>Febr. 1891.</small></nonum>
-        
 </body>
 </poem>
 
@@ -1539,6 +1652,10 @@ endnu en stakket Stund jeg leve skulde.
 <head>
     <title>Georg Brandes</title>
     <firstline>En stille Nat. Den dyb-safirblaa Himmel</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 63-64.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
     <nonum><right><small>25. Oktbr. 1891.</small></right></nonum>
@@ -1585,6 +1702,10 @@ den skarpe Morgen og den stærke Vaar.
 <head>
     <title>Tvillingstjerner</title>
     <firstline>Nu synker Natten paa de sorte Vande</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 65-66.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Nu synker Natten paa de sorte Vande,
@@ -1626,7 +1747,6 @@ skal ligefuldt vor Tvillingstjerne vandre
 — udødelig — hen over Firmamentet.
 
 <nonum>    <small>6. Novbr. 1891.</small></nonum>
-        
 </body>
 </poem>
 
@@ -1634,6 +1754,10 @@ skal ligefuldt vor Tvillingstjerne vandre
 <head>
     <title>Aften</title>
     <firstline>Kastaniebladet af Vinden</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 67-68.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Kastaniebladet af Vinden
@@ -1672,7 +1796,6 @@ Engang skal de Vejen finde
 blandt talløse Kloders Gang.
 
 <nonum>    <small>18. Maj 1892.</small></nonum>
-        
 </body>
 </poem>
 
@@ -1680,6 +1803,10 @@ blandt talløse Kloders Gang.
 <head>
     <title>Nocturne</title>
     <firstline>O skumle Nat, der brygger som en Hex</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 69-71.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 O skumle Nat, der brygger som en Hex,
@@ -1749,7 +1876,6 @@ der banker i den samme Takt som mit,
 bestænkt af Nattens stærke Vievand.
 
 <nonum>    <small>14. Juli 1892.</small></nonum>
-        
 </body>
 </poem>
 
@@ -1757,6 +1883,10 @@ bestænkt af Nattens stærke Vievand.
 <head>
     <title>Før og nu</title>
     <firstline>Der er en Kvinde, for hvem jeg er bange</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 72-73.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Der er en Kvinde, for hvem jeg er bange,
@@ -1790,7 +1920,6 @@ Før kunde min Tale et Sprog berige,
 — nu véd jeg ikke et Ord at sige.
 
 <nonum>    <small>26. Juli 1892.</small></nonum>
-        
 </body>
 </poem>
 
@@ -1798,6 +1927,10 @@ Før kunde min Tale et Sprog berige,
 <head>
     <title>Barnet</title>
     <firstline>Jeg elsked et Barnebilled</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 74-75.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg elsked et Barnebilled,
@@ -1846,7 +1979,6 @@ naar Bladene splittes ad:
 der plukkedes Blad for Blad.
 
 <nonum>    <small>4. Avg. 1892.</small></nonum>
-        
 </body>
 </poem>
 
@@ -1854,6 +1986,10 @@ der plukkedes Blad for Blad.
 <head>
     <title>Stille —</title>
     <firstline>Stille, mine skræmte Tanker</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 76-77.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Stille, mine skræmte Tanker,
@@ -1897,7 +2033,6 @@ stille, Mindets brustne Klokker,
 for jeg hulker, naar I ringer.
 
 <nonum>    <small>4. Avg. 1892.</small></nonum>
-        
 </body>
 </poem>
 
@@ -1905,6 +2040,10 @@ for jeg hulker, naar I ringer.
 <head>
     <title>Søvnløs</title>
     <firstline>Korsvis til Hvile paa mit stille Bryst</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 78-79.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Korsvis til Hvile paa mit stille Bryst
@@ -1948,7 +2087,6 @@ min pinte Tanke hendes Leje søger,
 min stumme Læbe om Forløsning tigger.
 
 <nonum>    <small>4. Avg. 1892.</small></nonum>
-        
 </body>
 </poem>
 
@@ -1956,6 +2094,10 @@ min stumme Læbe om Forløsning tigger.
 <head>
     <title>Forraadt</title>
     <firstline>O Nat, som puster Gravmulm mod mit Ansigt</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 80-83.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 O Nat, som puster Gravmulm mod mit Ansigt,
@@ -2041,7 +2183,6 @@ Hvem søger vel paa Havets Bund et Sandskorn?
 en Sang af Evighedens Gudesprog.
 
 <nonum>    <small>4. Avg. 1892.</small></nonum>
-        
 </body>
 </poem>
 
@@ -2049,9 +2190,13 @@ en Sang af Evighedens Gudesprog.
 <head>
     <title>Aftenvandring</title>
     <firstline>Staa stille, du!</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 84-97.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-En ung Mand og en ung Kvinde kommer gaaende ad en bred og høj Allé. Koralrøde Rønnebær funkler i det mørknende Løv, og mens de gaar, sitrer deres Næsebor af og til, naar de kommer ind under Lindeblomster. — Han er klædt i Farver som den skyede Aftenhimmel; den brede Hat er gledet tilbage paa hans Hoved, om hvilket den runde Skygge tegner en silkelysende Glorie. Hun er i sort Underkjole, hvis Rødtjørnblomster endnu skinner frem af den skyggesorte Bund, men hendes Liv er blaat med runde hvide Pletter, blaat af den samme dybe Lød som hans Øjne, der endnu er stærke, naar de løfter sig mod Aftenhimlen. Fra hendes lille havregule Hat bøjer Margueriterne sig ned for at se hendes Øjne, der er ganske sorte i den skumrende Aften. De gaar Side om Side med to forenede Hænder svingende i en Bue imellem dem.
+<wrap>En ung Mand og en ung Kvinde kommer gaaende ad en bred og høj Allé. Koralrøde Rønnebær funkler i det mørknende Løv, og mens de gaar, sitrer deres Næsebor af og til, naar de kommer ind under Lindeblomster. — Han er klædt i Farver som den skyede Aftenhimmel; den brede Hat er gledet tilbage paa hans Hoved, om hvilket den runde Skygge tegner en silkelysende Glorie. Hun er i sort Underkjole, hvis Rødtjørnblomster endnu skinner frem af den skyggesorte Bund, men hendes Liv er blaat med runde hvide Pletter, blaat af den samme dybe Lød som hans Øjne, der endnu er stærke, naar de løfter sig mod Aftenhimlen. Fra hendes lille havregule Hat bøjer Margueriterne sig ned for at se hendes Øjne, der er ganske sorte i den skumrende Aften. De gaar Side om Side med to forenede Hænder svingende i en Bue imellem dem.</wrap>
 
 <center><nonum><i>Han</i>.</nonum></center>
 Staa stille, du!
@@ -2369,7 +2514,6 @@ der maner dig min stærke Magt i Minde.
 Ja, det var dig, jeg véd jo, det var dig.
 
 <nonum>    <small>15. Avg. 1892.</small></nonum>
-        
 </body>
 </poem>
 
@@ -2377,6 +2521,10 @@ Ja, det var dig, jeg véd jo, det var dig.
 <head>
     <title>Sang til Solen</title>
     <firstline>Tag mig, I syngende Vover</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 98-100.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Tag mig, I syngende Vover,
@@ -2434,7 +2582,6 @@ er dog kun et Blink fra det store
 evige Lysets Hjem.
 
 <nonum>    <small>18. Avg. 1892.</small></nonum>
-        
 </body>
 </poem>
 
@@ -2442,6 +2589,10 @@ evige Lysets Hjem.
 <head>
     <title>Ekko</title>
     <firstline>Jeg véd om en Ekko, som kaldte og kaldte</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 101.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg véd om en Ekko, som kaldte og kaldte
@@ -2466,7 +2617,6 @@ Han favnede hende ved Bækkens Rand,
 blev ikke en Blomst, men blev til en Mand.
 
 <nonum>    <small>Septbr. 1892.</small></nonum>
-        
 </body>
 </poem>
 
@@ -2474,6 +2624,10 @@ blev ikke en Blomst, men blev til en Mand.
 <head>
     <title>Høst</title>
     <firstline>Duggbrillanter over Græsset tindre</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 102-106.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Duggbrillanter over Græsset tindre,
@@ -2592,7 +2746,6 @@ Haven aander køligt dig i Møde
 ydre Fred, som svarer til den indre.
 
 <nonum>    <small>Septbr. 1892.</small></nonum>
-        
 </body>
 </poem>
 
@@ -2600,6 +2753,10 @@ ydre Fred, som svarer til den indre.
 <head>
     <title>I Observatoriet</title>
     <firstline>Jeg drejer Kuplen med dens Himmelflænge</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 107-108.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg drejer Kuplen med dens Himmelflænge,
@@ -2628,7 +2785,6 @@ at Jordens Børn kan ikke for dig sove?
 og til at drømme Ørknens Karavane ...
 
 <nonum>    <small>23. April 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -2636,6 +2792,10 @@ og til at drømme Ørknens Karavane ...
 <head>
     <title>Morgen</title>
     <firstline>O rene, strømmende Morgenstund</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 109-110.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 O rene, strømmende Morgenstund
@@ -2679,7 +2839,6 @@ Vær hilset, min Evigheds Morgengry,
 du døber med Livets Flamme!
 
 <nonum>    <small>7. Maj 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -2687,6 +2846,10 @@ du døber med Livets Flamme!
 <head>
     <title>Sorte Diamanter</title>
     <firstline>Hvor husker jeg den første Aftentime</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 111.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hvor husker jeg den første Aftentime,
@@ -2710,7 +2873,6 @@ og fyldte Rummet — slukked Lampens Lue,
 men tændte Stjerner dybt i Sjælens Grund.
 
 <nonum>    <small>10. Juni 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -2718,6 +2880,10 @@ men tændte Stjerner dybt i Sjælens Grund.
 <head>
     <title>Scherzo</title>
     <firstline>Jeg har fulgt dine flygtige Spor</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 112-113.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg har fulgt dine flygtige Spor,
@@ -2757,7 +2923,6 @@ Og den allersidste sødeste Akkord
 kyssed jeg fra dine Læber bort.
 
 <nonum>    <small>10. Juni 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -2765,6 +2930,10 @@ kyssed jeg fra dine Læber bort.
 <head>
     <title>I Skoven</title>
     <firstline>Hvor dog de skinne i det grønne Løv</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 114-115.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hvor dog de skinne i det grønne Løv,
@@ -2793,7 +2962,6 @@ al Skovens Lugt de aande mig i Møde,
 af Skovbund dufte selv de fine Sko.
 
 <nonum>    <small>11. Juni 1893</small></nonum>
-        
 </body>
 </poem>
 
@@ -2801,6 +2969,10 @@ af Skovbund dufte selv de fine Sko.
 <head>
     <title>Kilden</title>
     <firstline>Og vore Fødder søgte samme Maal</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 116.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
 <body>
@@ -2830,6 +3002,10 @@ den kyske Vin, som dine Tanker rumme.
 <head>
     <title>Bryllup</title>
     <firstline>Højt mod Zenitsolens Regn af Ild</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 117-119.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Højt mod Zenitsolens Regn af Ild
@@ -2893,7 +3069,6 @@ stige Sjælene — to Fnug af Sne,
 kresende som vilde hvide Duer.
 
 <nonum>    <small>18. Juli 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -2901,6 +3076,10 @@ kresende som vilde hvide Duer.
 <head>
     <title>Bekendelse</title>
     <firstline>Hver Blomst og Frugt, min Haand kan naa</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 120-121.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hver Blomst og Frugt, min Haand kan naa,
@@ -2936,6 +3115,10 @@ min Haand kan ikke skade.
 <head>
     <title>Hvor skulde jeg —</title>
     <firstline>Hvor skulde jeg kunne glemme dig</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 122.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hvor skulde jeg kunne glemme dig,
@@ -2961,6 +3144,10 @@ som Røg fra en Altarbrand.
 <head>
     <title>Drøm</title>
     <firstline>Jeg hørte Vandfald bruse</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 123-126.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg hørte Vandfald bruse
@@ -3044,7 +3231,6 @@ sig tungt mod mine trykke
 og Elskovs bitre Lykke.
 
 <nonum>    <small>23. Juli 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -3052,6 +3238,10 @@ og Elskovs bitre Lykke.
 <head>
     <title>Hvad vil I mig —</title>
     <firstline>Hvad vil I mig, I store stumme Stjerner?</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 127.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
 <body>
@@ -3074,7 +3264,6 @@ en skarp Kritik, som dog min Færd berømmer:
 En Sjæl, som elsker, og som aldrig dømmer.
 
 <nonum>    <small>24. Juli 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -3082,6 +3271,10 @@ En Sjæl, som elsker, og som aldrig dømmer.
 <head>
     <title>Kornmod</title>
     <firstline>Der kipper Kornmod over Himmelhvælvet</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 128-129.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Der kipper Kornmod over Himmelhvælvet
@@ -3120,7 +3313,6 @@ Høsten er nær! — Nu kysser du mig strax
 og favner mig og gætter mine Tanker.
 
 <nonum>    <small>25. Juli 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -3128,6 +3320,10 @@ og favner mig og gætter mine Tanker.
 <head>
     <title>En svovlgul Sommerfugl —</title>
     <firstline>En svovlgul Sommerfugl fra Skoven sværmer</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 130.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
 <body>
@@ -3150,7 +3346,6 @@ Mit Bad er kølnet som af Nordpolsluft,
 og stiger ned i Havets Marmorkumme.
 
 <nonum>    <small>27. Juli 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -3158,6 +3353,10 @@ og stiger ned i Havets Marmorkumme.
 <head>
     <title>Tordenluft</title>
     <firstline>Blade — blinkende Blade</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 131-132.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Blade — blinkende Blade —
@@ -3186,7 +3385,6 @@ højt med en gylden Heroldstav
 skal jeg som Hermes mig svinge.
 
 <nonum>    <small>5. Avg. 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -3194,6 +3392,10 @@ skal jeg som Hermes mig svinge.
 <head>
     <title>Nonne</title>
     <firstline>En Nat — en Nat i Favntag kun</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 133-134.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 En Nat — en Nat i Favntag kun
@@ -3242,7 +3444,6 @@ og stivnes af dit Øje
 Madonna i det Høje!
 
 <nonum>    <small>6. Avg. 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -3250,6 +3451,10 @@ Madonna i det Høje!
 <head>
     <title>Mimosefølsom —</title>
     <firstline>Mimosefølsom, fuglelet jeg ser din Tanke skælve</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 135.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Mimosefølsom, fuglelet jeg ser din Tanke skælve
@@ -3268,7 +3473,6 @@ Jeg selv er intet for mig selv — jeg vil kun Alting være
 — som Sol og Vind og Blomst og Fugl og Græs, der vil dig bære.
 
 <nonum>    <small>7. Avg. 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -3276,6 +3480,10 @@ Jeg selv er intet for mig selv — jeg vil kun Alting være
 <head>
     <title>Solnedgang</title>
     <firstline>Sommersol, der synker brat</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 136-137.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Sommersol, der synker brat
@@ -3304,7 +3512,6 @@ gaa, du røde Sommersol,
 lad mit Liv forsvinde.
 
 <nonum>    <small>7. Avg. 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -3312,6 +3519,10 @@ lad mit Liv forsvinde.
 <head>
     <title>Stjerneskud</title>
     <firstline>Der bygger et Liv i den mørke Nat</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 138-140.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Der bygger et Liv i den mørke Nat
@@ -3387,6 +3598,10 @@ ned til mig, som er ene.
 <head>
     <title>Nu lukker Nøkkerosen —</title>
     <firstline>Nu lukker Nøkkerosen sin Blomst i Aftenstunden</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 141-142.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Nu lukker Nøkkerosen sin Blomst i Aftenstunden,
@@ -3433,6 +3648,10 @@ Jeg staar jo som en Konge for Himlens høje Trone.
 <head>
     <title>Tilegnelse</title>
     <firstline>O denne Sang, som mine Nerver synge</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 143-144.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 O denne Sang, som mine Nerver synge,
@@ -3461,7 +3680,6 @@ de tusind Toner, som fra Hjertet slynge
 sig ud i Livets muntre Melodi.
 
 <nonum>    <small>25. Avg. 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -3470,6 +3688,10 @@ sig ud i Livets muntre Melodi.
     <title>Thanatos</title>
     <subtitle>(Til et græsk Marmorhoved i Glyptoteket.)</subtitle>
     <firstline>Thanatos -</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 145-149.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Thanatos —
@@ -3596,6 +3818,10 @@ med Evighedens haanende Latter.
 <head>
     <title>Skyer</title>
     <firstline>Som kobberrøde Skyer langsomt vælde</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 150.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
 <body>
@@ -3625,6 +3851,10 @@ med Himlens endeløse Melodier.
 <head>
     <title>Jeg elsker —</title>
     <firstline>Jeg elsker Himlens høje Harmoni</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 151.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
 <body>
@@ -3654,6 +3884,10 @@ den Sol, der stiger midt i Aftenrøden,
 <head>
     <title>Jeg beder —</title>
     <firstline>Jeg beder til dit blanke Haar</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 152.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg beder til dit blanke Haar
@@ -3679,6 +3913,10 @@ som Vandfald fra din Læbe.
 <head>
     <title>O Pust af Evighed —</title>
     <firstline>O Pust af Evighed fra hendes Mund</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 153-154.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 O Pust af Evighed fra hendes Mund,
@@ -3727,7 +3965,6 @@ Passat, som suser mod en Palmelund
 paa Evighedens havblaa Drømmestrande!
 
 <nonum>    <small>7. Oktbr. 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -3735,6 +3972,10 @@ paa Evighedens havblaa Drømmestrande!
 <head>
     <title>Urskov</title>
     <firstline>Dit Kys har aabnet mig dit Hjertes Skove</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 155-156.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Dit Kys har aabnet mig dit Hjertes Skove
@@ -3778,7 +4019,6 @@ og græde ud den Synd, som i mig laa,
 din kyske Renhed til mit Indre naa.
 
 <nonum>    <small>12. Oktbr. 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -3786,6 +4026,10 @@ din kyske Renhed til mit Indre naa.
 <head>
     <title>Sorg</title>
     <firstline>O sorte Slør</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 157.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 O sorte Slør
@@ -3809,7 +4053,6 @@ fra Sjælens mørkesvøbte Afgrunds Skød
 en kulsort Lilje gror.
 
 <nonum>    <small>21. Oktbr. 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -3817,6 +4060,10 @@ en kulsort Lilje gror.
 <head>
     <title>Nat</title>
     <firstline>Jeg stirrer i den stille Nat</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 158.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg stirrer i den stille Nat
@@ -3840,7 +4087,6 @@ jeg sidder i den silde Nat
 og hører Hjertet sitre.
 
 <nonum>    <small>25. Oktbr. 1893.</small></nonum>
-        
 </body>
 </poem>
 
@@ -3848,6 +4094,10 @@ og hører Hjertet sitre.
 <head>
     <title>Til —</title>
     <firstline>Kun en Harpe for en Gud, hvem Ingen af os kender</firstline>
+    <notes>
+        <note>Teksten følger <i>Solblomster</i> (1893), s. 159-160.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Kun en Harpe for en Gud, hvem Ingen af os kender,
@@ -3869,7 +4119,6 @@ nu lysner mine Øjne til Smil, som dig vil smykke,
 og jeg er vendt tilbage til min Barndoms lyse Lykke.
 
 <nonum>    <small>27. Oktbr. 1893.</small></nonum>
-        
 </body>
 </poem>
 

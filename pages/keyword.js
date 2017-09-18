@@ -99,13 +99,11 @@ export default class extends React.Component {
             <KalliopeTabs lang={lang} selected="keywords" />
             <SidebarSplit sidebar={sidebar}>
               <div>
-                <SubHeading>
-                  {keyword.title}
-                </SubHeading>
-                {author}
-                <div style={{ lineHeight: 1.6 }}>
-                  {body}
-                </div>
+                <article>
+                  <SubHeading>{keyword.title}</SubHeading>
+                  {author}
+                  <div style={{ lineHeight: 1.6 }}>{body}</div>
+                </article>
               </div>
             </SidebarSplit>
             <LangSelect lang={lang} />
