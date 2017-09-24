@@ -2110,6 +2110,24 @@
   <works>andre</works>
 </person>
 
+<person id="jessen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Juliane Marie</firstname>
+    <lastname>Jessen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1760-02-11</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1832-10-06</date>
+      <place>Frederiksberg</place>
+    </dead>
+  </period>
+  <works>1819</works>
+</person>
+
 <person id="rahbek" country="dk" lang="da" type="poet">
   <name>
     <firstname>Knud Lyne</firstname>
@@ -2707,7 +2725,7 @@
       <date>1840-01-11</date>
     </dead>
   </period>
-  <works>1827,1836,1837,1840</works>
+  <works>1827,1831,1836,1837,1840</works>
 </person>
 
 <person id="hertzh" country="dk" lang="da" type="poet">
