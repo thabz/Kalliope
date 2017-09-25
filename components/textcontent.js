@@ -47,7 +47,7 @@ export default class TextContent extends React.Component {
       .replace(/uu/g, '\u23D6')
       .replace(/u/g, '\u23D1')
       .replace(/-/g, '\u23BC');
-    const parts = unicode.split(/ */).map((x, i) =>
+    const parts = unicode.split(/ */).map((x, i) => (
       <span
         key={i}
         style={{
@@ -57,7 +57,7 @@ export default class TextContent extends React.Component {
         }}>
         {x}
       </span>
-    );
+    ));
     return (
       <span key={this.keySeq++} style={{ fontSize: '1.1em' }}>
         {parts}
@@ -70,45 +70,35 @@ export default class TextContent extends React.Component {
       const poetId = node.getAttribute('person');
       return (
         <Link key={this.keySeq++} route={Links.poetURL(lang, poetId)}>
-          <a>
-            {this.handle_nodes(node.childNodes)}
-          </a>
+          <a>{this.handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('poet')) {
       const poetId = node.getAttribute('poet');
       return (
         <Link key={this.keySeq++} route={Links.poetURL(lang, poetId)}>
-          <a>
-            {this.handle_nodes(node.childNodes)}
-          </a>
+          <a>{this.handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('poem')) {
       const textId = node.getAttribute('poem');
       return (
         <Link key={this.keySeq++} route={Links.textURL(lang, textId)}>
-          <a>
-            {this.handle_nodes(node.childNodes)}
-          </a>
+          <a>{this.handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('keyword')) {
       const keywordId = node.getAttribute('keyword');
       return (
         <Link key={this.keySeq++} route={Links.keywordURL(lang, keywordId)}>
-          <a>
-            {this.handle_nodes(node.childNodes)}
-          </a>
+          <a>{this.handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('dict')) {
       const keywordId = node.getAttribute('dict');
       return (
         <Link key={this.keySeq++} route={Links.dictionaryURL(lang, keywordId)}>
-          <a>
-            {this.handle_nodes(node.childNodes)}
-          </a>
+          <a>{this.handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('work')) {
@@ -117,35 +107,25 @@ export default class TextContent extends React.Component {
       const workId = parts[1];
       return (
         <Link key={this.keySeq++} route={Links.workURL(lang, poetId, workId)}>
-          <a>
-            {this.handle_nodes(node.childNodes)}
-          </a>
+          <a>{this.handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('href')) {
       const href = node.getAttribute('href');
       return (
         <Link key={this.keySeq++} route={href}>
-          <a>
-            {this.handle_nodes(node.childNodes)}
-          </a>
+          <a>{this.handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('bible')) {
       const bibleId = node.getAttribute('bible');
       return (
         <Link key={this.keySeq++} route={Links.bibleURL(lang, bibleId)}>
-          <a>
-            {this.handle_nodes(node.childNodes)}
-          </a>
+          <a>{this.handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else {
-      return (
-        <code>
-          {node.toString()}
-        </code>
-      );
+      return <code>{node.toString()}</code>;
     }
   }
   handle_node(node: any) {
@@ -157,41 +137,19 @@ export default class TextContent extends React.Component {
       case '#comment':
         return null;
       case 'i':
-        return (
-          <i key={this.keySeq++}>
-            {this.handle_nodes(node.childNodes)}
-          </i>
-        );
+        return <i key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</i>;
       case 'b':
-        return (
-          <b key={this.keySeq++}>
-            {this.handle_nodes(node.childNodes)}
-          </b>
-        );
+        return <b key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</b>;
       case 'p':
-        return (
-          <p>
-            {this.handle_nodes(node.childNodes)}
-          </p>
-        );
+        return <p>{this.handle_nodes(node.childNodes)}</p>;
       case 'blockquote':
-        return (
-          <blockquote>
-            {this.handle_nodes(node.childNodes)}
-          </blockquote>
-        );
+        return <blockquote>{this.handle_nodes(node.childNodes)}</blockquote>;
       case 'sup':
         return (
-          <sup key={this.keySeq++}>
-            {this.handle_nodes(node.childNodes)}
-          </sup>
+          <sup key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</sup>
         );
       case 'strike':
-        return (
-          <strike>
-            {this.handle_nodes(node.childNodes)}
-          </strike>
-        );
+        return <strike>{this.handle_nodes(node.childNodes)}</strike>;
       case 'year':
       case 'wrap':
       case 'content':
@@ -289,7 +247,7 @@ export default class TextContent extends React.Component {
         return <Footnote key={this.keySeq++} text={noteContent} />;
       case 'sc':
         return (
-          <span style={{ fontVariant: 'small-caps' }}>
+          <span style={{ fontVariant: 'small-caps', fontSize: '1.2em' }}>
             {this.handle_nodes(node.childNodes)}
           </span>
         );
@@ -297,11 +255,7 @@ export default class TextContent extends React.Component {
         return this.handle_a(node);
       default:
         console.log(`Mærkeligt tag fundet ${node.toString()}`);
-        return (
-          <code>
-            {node.toString()}
-          </code>
-        );
+        return <code>{node.toString()}</code>;
     }
   }
 
@@ -331,9 +285,7 @@ export default class TextContent extends React.Component {
     if (!(contentHtml instanceof Array)) {
       return (
         <div>
-          <pre>
-            {JSON.stringify(contentHtml)}
-          </pre>
+          <pre>{JSON.stringify(contentHtml)}</pre>
         </div>
       );
     }
@@ -402,7 +354,7 @@ export default class TextContent extends React.Component {
         lineInnerClass += ' right-aligned-text';
       }
 
-      if (options.isPoetry) {
+      if (options.isPoetry && !lineOptions.wrap) {
         className += ' poem-line';
         const displayedLineNum =
           lineNum != null && lineNum % 5 === 0 ? lineNum : null;
@@ -412,9 +364,7 @@ export default class TextContent extends React.Component {
             data-num={displayedLineNum}
             key={keyPrefix + i}>
             {anchor}
-            <div className={lineInnerClass}>
-              {rendered}
-            </div>
+            <div className={lineInnerClass}>{rendered}</div>
           </div>
         );
       } else if (options.isBible) {
@@ -462,7 +412,7 @@ export default class TextContent extends React.Component {
             display: inline-block;
             margin-left: -2.5em;
             vertical-align: top;
-            margin-top: 0.25em;            
+            margin-top: 0.25em;
           }
           :global(.bible-line),
           :global(.poem-line) {
@@ -496,7 +446,6 @@ export default class TextContent extends React.Component {
             width: calc(100%-7em);
             margin-left: 7em;
             text-indent: -7em;
-          }
           }
           :global(.right-aligned-text) {
             text-align: right;

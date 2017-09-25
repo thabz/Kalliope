@@ -153,11 +153,7 @@ export default class extends React.Component {
     });
     let renderedNotes = null;
     if (notes.length > 0) {
-      renderedNotes = (
-        <div style={{ marginBottom: '30px' }}>
-          {notes}
-        </div>
-      );
+      renderedNotes = <div style={{ marginBottom: '30px' }}>{notes}</div>;
     }
 
     const renderedPictures = (
@@ -279,7 +275,7 @@ export default class extends React.Component {
             <PoetTabs lang={lang} poet={poet} selected="works" />
             <SidebarSplit sidebar={sidebar}>
               <div>
-                <div className="text-content">
+                <article className="text-content">
                   <TextHeading
                     text={text}
                     lang={lang}
@@ -288,7 +284,7 @@ export default class extends React.Component {
                   {body}
                   <style jsx>{`
                     .text-content {
-                      font-family: "Palatino", "Georgia", serif;
+                      font-family: 'Palatino', 'Georgia', serif;
                       line-height: 1.5;
                       font-size: 1.15em;
                     }
@@ -301,7 +297,7 @@ export default class extends React.Component {
                       line-height: 1.5;
                     }
                   `}</style>
-                </div>
+                </article>
               </div>
             </SidebarSplit>
             <LangSelect lang={lang} />

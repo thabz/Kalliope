@@ -111,6 +111,8 @@ const redirects = [
   },
 ];
 
+const cleanUpRedirectURLRegExp = /[^0-9a-zA-Z\-_\/]/;
+
 app.prepare().then(() => {
   createServer((req, res) => {
     const { pathname, query } = parse(req.url, true);
@@ -132,7 +134,8 @@ app.prepare().then(() => {
             .replace('$2', m[2])
             .replace(/\${(.*)}/g, (m, p1) => {
               return query[p1];
-            });
+            })
+            .replace(cleanUpRedirectURLRegExp, '');
           //console.log('Redirecting to', to, query);
           res.writeHead(301, { Location: to });
           res.end();
@@ -164,7 +167,7 @@ app.prepare().then(() => {
           res.end();
         });
     } else if (worksRedirects[pathname] != null) {
-      const to = worksRedirects[pathname];
+      const to = worksRedirects[pathname].replace(cleanUpRedirectURLRegExp, '');
       //console.log('Redirecting to', to);
       res.writeHead(302, { Location: to });
       res.end();

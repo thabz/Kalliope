@@ -225,9 +225,7 @@ export default class Tabs extends React.Component {
         <div className={className} key={item.url}>
           <Link route={item.url}>
             <a>
-              <h2>
-                {item.title}
-              </h2>
+              <h2>{item.title}</h2>
             </a>
           </Link>
         </div>
@@ -236,13 +234,13 @@ export default class Tabs extends React.Component {
 
     const leftSide = (
       <div className="leftside">
-        <div
+        <nav
           className="tabs"
           style={{
             display: this.state.showSearchField ? 'none' : 'block',
           }}>
           {itemsRendered}
-        </div>
+        </nav>
         <div
           className="searchfield-container"
           style={{

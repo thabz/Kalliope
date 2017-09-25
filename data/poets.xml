@@ -2110,6 +2110,24 @@
   <works>andre</works>
 </person>
 
+<person id="jessen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Juliane Marie</firstname>
+    <lastname>Jessen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1760-02-11</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1832-10-06</date>
+      <place>Frederiksberg</place>
+    </dead>
+  </period>
+  <works>1819</works>
+</person>
+
 <person id="rahbek" country="dk" lang="da" type="poet">
   <name>
     <firstname>Knud Lyne</firstname>
@@ -2271,9 +2289,11 @@
   <period>
     <born>
       <date>1771-03-26</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1852-09-21</date>
+      <place>København</place>
     </dead>
   </period>
   <works>andre</works>
@@ -2626,9 +2646,11 @@
   <period>
     <born>
       <date>1793-04-22</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1874-10-01</date>
+      <place>København</place>
     </dead>
   </period>
   <works>1870,andre</works>
@@ -2703,7 +2725,7 @@
       <date>1840-01-11</date>
     </dead>
   </period>
-  <works>1827,1836,1837,1840</works>
+  <works>1827,1831,1836,1837,1840</works>
 </person>
 
 <person id="hertzh" country="dk" lang="da" type="poet">
@@ -2963,6 +2985,7 @@
     </born>
     <dead>
       <date>1894-10-27</date>
+      <place>København</place>
     </dead>
   </period>
   <works>1854,1861,1869,1883,1895,andre</works>
@@ -3200,12 +3223,14 @@
   <period>
     <born>
       <date>1830-03-09</date>
+      <place>Vallø</place>
     </born>
     <dead>
       <date>1878-08-12</date>
+      <place>Ordrup</place>
     </dead>
   </period>
-  <works></works>
+  <works>1857,1858</works>
 </person>
 
 
@@ -3531,6 +3556,25 @@
   <works>1908,1938,andre</works>
 </person>
 
+<person id="moellern" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Niels</firstname>
+    <lastname>Møller</lastname>
+    <fullname>Niels Laurids Møller</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1859-12-11</date>
+      <place>Svendborg</place>
+    </born>
+    <dead>
+      <date>1941-03-16</date>
+      <place>Frederiksberg</place>
+    </dead>
+  </period>
+  <works>1888,1897,1920,1939</works>
+</person>
+
 <person id="esmann" country="dk" lang="da" type="poet">
   <name>
     <firstname>Gustav</firstname>
@@ -3599,7 +3643,7 @@
       <date>1905-12-06</date>
     </dead>
   </period>
-  <works>1886,1894,1898,1901,1905,1906</works>
+  <works>1886,1894,1898,1901,1905,1906,andre</works>
 </person>
 
 <person id="holstein" country="dk" lang="da" type="poet">
@@ -3653,9 +3697,10 @@
     </born>
     <dead>
       <date>1932-01-28</date>
+      <place>København</place>
     </dead>
   </period>
-  <works>1889,1893,1898,1900,1913,1927,andre</works>
+  <works>1889,1893,1898,1900,1904,1913,1921,andre</works>
 </person>
 
 <person id="dam" country="dk" lang="da" type="poet">
@@ -3692,6 +3737,25 @@
     </dead>
   </period>
   <works>1899,1905,1906,1909,1910,1913,1916,1919,1920,1921,1924,1926,1927,andre</works>
+</person>
+
+<person id="bregendahl" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Marie</firstname>
+    <lastname>Bregendahl</lastname>
+    <christened>Marie Sørensen</christened>
+  </name>
+  <period>
+    <born>
+      <date>1867-11-06</date>
+      <place>Fly Sogn ved Skive</place>
+    </born>
+    <dead>
+      <date>1940-07-22</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1937</works>
 </person>
 
 <person id="hanseno" country="dk" lang="da" type="poet">
@@ -3771,9 +3835,11 @@
   <period>
     <born>
       <date>1872-01-15</date>
+      <place>Viborg</place>
     </born>
     <dead>
       <date>1907-11-25</date>
+      <place>Grønland</place>
     </dead>
   </period>
   <works>1904</works>
@@ -3787,9 +3853,11 @@
   <period>
     <born>
       <date>1874-07-19</date>
+      <place>Frederiksborg Slot</place>
     </born>
     <dead>
       <date>1923-06-29</date>
+      <place>Nykøbing Sjælland</place>
     </dead>
   </period>
   <works>1894</works>
@@ -4382,9 +4450,11 @@
   <period>
     <born>
       <date>1749-08-21</date>
+      <place>Vågå, Norge</place>
     </born>
     <dead>
       <date>1794-09-29</date>
+      <place>København</place>
     </dead>
   </period>
   <works>1782,andre</works>
@@ -6108,6 +6178,7 @@
   <name>
     <firstname>Walt</firstname>
     <lastname>Whitman</lastname>
+    <fullname>Walter Whitman</fullname>
   </name>
   <period>
     <born>
@@ -6120,6 +6191,23 @@
     </dead>
   </period>
   <works>1865,1871,1891</works>
+</person>
+
+<person id="scollard" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Clinton</firstname>
+    <lastname>Scollard</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1860-09-18</date>
+      <place>Fayettefille, New York</place>
+    </born>
+    <dead>
+      <date>1932</date>
+    </dead>
+  </period>
+  <works>andre</works>
 </person>
 
 <person id="rossettid" country="gb" lang="en" type="poet">
