@@ -187,6 +187,9 @@ export default class Nav extends React.Component {
             :global(a) {
               color: black;
             }
+            :global(body) {
+              font-size: 9pt;
+            }
           }
           nav {
             font-weight: lighter;
