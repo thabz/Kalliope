@@ -296,6 +296,9 @@ const build_poets_json = () => {
     while ((has_poems == false || has_prose == false) && workIds.length > 0) {
       const workId = workIds.pop();
       let doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
+      if (doc == null) {
+          throw `fdirs/${poetId}/${workId}.xml kan ikke parses.`;
+      }
       if (!has_poems) {
         has_poems = doc.find('//poem').length > 0;
       }
