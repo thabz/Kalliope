@@ -72,12 +72,18 @@ export class NavPaging extends React.Component {
       return (
         <div style={style} key={i}>
           <Link prefetch route={url}>
-            <a title={title}>{arrow}</a>
+            <a title={title}>
+              {arrow}
+            </a>
           </Link>
         </div>
       );
     });
-    return <div style={{ display: 'flex', padding: '4px 0' }}>{arrows}</div>;
+    return (
+      <div style={{ display: 'flex', padding: '4px 0' }}>
+        {arrows}
+      </div>
+    );
   }
 }
 
@@ -87,12 +93,17 @@ export default class Nav extends React.Component {
     poet?: Poet,
     work?: Work,
     links?: Array<any>,
+    sectionTitles?: Array<string>,
     title?: any,
     rightSide?: any,
   };
 
+  static defaultProps = {
+    sectionTitles: [],
+  };
+
   render() {
-    const { lang, poet, work, title, rightSide } = this.props;
+    const { lang, poet, work, title, sectionTitles, rightSide } = this.props;
     let { links } = this.props;
 
     const isIndexPage =
@@ -122,28 +133,30 @@ export default class Nav extends React.Component {
         }
         poetsURL = (
           <Link prefetch route={Links.poetsURL(lang, 'name', poet.country)}>
-            <a>{poetsLinkText}</a>
+            <a>
+              {poetsLinkText}
+            </a>
           </Link>
         );
       }
-      const poetLink = poet ? (
-        <Link prefetch route={Links.poetURL(lang, poet.id)}>
-          <a>
-            <PoetName poet={poet} />
-          </a>
-        </Link>
-      ) : null;
-      const workLink =
-        work && poet ? (
-          <Link prefetch route={Links.workURL(lang, poet.id, work.id)}>
+      const poetLink = poet
+        ? <Link prefetch route={Links.poetURL(lang, poet.id)}>
             <a>
-              <WorkName work={work} />
+              <PoetName poet={poet} />
             </a>
           </Link>
-        ) : null;
+        : null;
+      const workLink =
+        work && poet
+          ? <Link prefetch route={Links.workURL(lang, poet.id, work.id)}>
+              <a>
+                <WorkName work={work} />
+              </a>
+            </Link>
+          : null;
       links = [poetsURL, poetLink, workLink];
     }
-    links = [rootLink, ...links, title];
+    links = [rootLink, ...links, ...sectionTitles, title];
 
     if (isIndexPage) {
       links = [<span>Kalliope</span>];
@@ -154,7 +167,11 @@ export default class Nav extends React.Component {
       if (i !== 0) {
         joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
       }
-      joinedLinks.push(<div key={'link' + i}>{link}</div>);
+      joinedLinks.push(
+        <div key={'link' + i}>
+          {link}
+        </div>
+      );
     });
 
     let rightSideStyle = null;
@@ -163,8 +180,12 @@ export default class Nav extends React.Component {
     }
     return (
       <div className="nav-container">
-        <nav>{joinedLinks}</nav>
-        <div style={rightSideStyle}>{rightSide}</div>
+        <nav>
+          {joinedLinks}
+        </nav>
+        <div style={rightSideStyle}>
+          {rightSide}
+        </div>
         <style jsx>{`
           :global(body) {
             margin: 0;
