@@ -4,174 +4,35 @@
 <workhead>
    <title>Smaadigte og Reiseminder</title>
    <year>1832</year>
+   <notes>
+      <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun indlysende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+   </notes>
+   <pictures>
+       <picture type="titlepage" src="1832-p1.jpg">Titelbladet til <i>Smaadigte og Reiseminder</i> (1872). ,,Smaadigte / og / Reiseminer // af / B. S. Ingemann. // Kjöbenhavn 1832. / Trykt og forlagt af Andreas Seidelin, / Hof- og Universitets - Bogtrykker.''.</picture>
+   </pictures>
    <quality>korrektur1</quality>
    <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="ingemann1832a0">
+<section>
 <head>
-   <title>Aftensang paa Taget</title>
-   <toctitle>Aftensang paa Taget</toctitle>
-   <indextitle>Aftensang paa Taget</indextitle>
-   <firstline>Over Hav og Bjerg og Flod</firstline>
+   <toctitle>Smaadigte</toctitle>
+</head>
+<content>
+
+<poem id="ingemann2017100401">
+<head>
+   <title>Min gode og onde Engel</title>
+   <firstline></firstline>
    <notes>
-        <note>Skrevet under opholdet på Capri sammen med fru Bürgel og hendes fire halvvoksne døtre i marts 1819.  Melodi af Heise.</note>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
    </notes>
-   <quality>korrektur1,korrektur2</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Over Hav og Bjerg og Flod
-  Kom jeg hid fra Norden;
-Ei hvad Hjertet hist forlod
-  Finder det paa Jorden.
-
-O, men her dog Øiet seer
-  Hvad ved Codans Strømme
-Aldrig uden Veemod meer
-  Sjælen sig kan drømme.
-
-Underfuldt er her at staae;
-  Saligt her at hvile:
-I hver Luftning Engle smaa
-  Vifte og henile.
-
-Stille Nat paa fremmed Tag!
-  Flammebjerg ved Voven!
-Velske Nattegaleslag
-  Fra Lemoneskoven!
-
-Nye Himmel! nye Jord!
-  Nye Tryllestemmer!
-Fryd, jeg drømte om i Nord!
-  Nu jeg dig fornemmer!
-</body>
-</poem>
-
-<poem id="ingemann1832a1">
-<head>
-   <title>Afskeden</title>
-   <subtitle>
-      <line>Ved Ponte Molle</line>
-      <line>(Rom den 21de April 1819)</line>
-   </subtitle>
-   <toctitle>Afskeden</toctitle>
-   <indextitle>Afskeden</indextitle>
-   <firstline>Ved Tiberbroen paa romersk Vei</firstline>
-   <notes>
-      <note>Ingemanns note: »Til Familien <i>Bügel</i>, Moderen og de fire Døtre, i hvis Selskab jeg havde foretaget Reisen fra Rom til Neapel og tilbage til Rom.«</note>
-   </notes>
-   <quality>korrektur1</quality>
-   <keywords>rom</keywords>
-</head>
-<body>
-Ved Tiberbroen paa romersk Vei
-  I vaarfrisk Morgen jeg staaer.
-De velske Blomster fryde mig ei:
-  I Dalen en Støvsky gaaer.
-
-Dernede ruller en Reisekarm;
-  Alt kjender jeg Mulens Gang.
-Vemodigt Hjertet i fulde Barm
-  Sig rører til Afskedssang.
-
-Men Hjertet knuger for tungt mit Bryst;
-  For Sang har Tungen kun Baand.
-I Karmen blinke de Øine lyst;
-  Der vinker nu Slør og Haand.
-
-Hver Haand jeg kjender med Slør, med Ring;
-  Jeg kjender de Øine, de Haar;
-Jeg foer med de Skjønne saa vidt omkring,
-  Farvel de mig hvisked igaar.
-
-Endnu engang jeg dog hilse maa
-  De Sjæle fra Hjemmets Land,
-Maa række dem Afskedsblomster smaa,
-  Om ei jeg dem følge kan.
-
-Farvel, du Moder med livlig Hu!
-  Farvel, du reisende Brud!
-Farvel, du Barn, som leger endnu
-  Og titter af Karmen ud!
-
-Farvel, du høie, nordiske Mø!
-  Farvel, du Søster saa from!
-Tilsammen saae vi lyksalig Ø -
-  Nu vender sig Hjulet om.
-
-De Reisende rulle i Verden hen,
-  Lig Rosenblade i Strøm.
-Det Svundne kommer ei meer igjen;
-  Snart er det en gammel Drøm.
-
-Ved Tiberbroen jeg ene staaer
-  Med Haanden paa trange Barm.
-Paa Bakken med Bjælderne Mulen gaaer -
-  Der flygter den Reisekarm.
-
-Med Slør end vifte de Hænder smaa;
-  Støv skjuler de Skjønne paa Vei:
-En Taare jeg i deres Øine saae -
-  Ak! hvorfor græder ei jeg?
-</body>
-</poem>
-
-<poem id="ingemann2012080801">
-<head>
-   <title>Menneskets Engle</title>
-   <toctitle>Menneskets Engle</toctitle>
-   <indextitle>Menneskets Engle</indextitle>
-   <firstline>To Engle Smaa</firstline>
-   <notes>
-       <note type="credits">Bidrag fra Britte Rahbek.</note>
-       <note>“En gave til religionshistoriker J. Ferdinand Fenger, mens han er på rejse i Grækenland 1831, fra en tyrkisk lærd Mehemet Effendi. Jeg kender 9 melodier fra 1832-1935.”</note>
-   </notes>
-   <quality>korrektur1</quality>
-</head>
-<body>
-   To Engle smaa
-   Os følge, hvor vi gaa:
-Usynlig de paa vore Skuldre hvile.
-   Ved højre Kind
-   Den ene titter ind
-I Sjæl og Øje, naar vi kjærligt smile.
-
-   Hver ærlig Id
-   Han skriver op med Flid;
-Hver Tanke, from og god, han tro bevarer.
-   Hvert Palmeblad
-   Han straks forsegler glad.
-Hver Midnat han til Allah med den farer.
-
-   Med strenge Flid
-   Paa hver uærlig Id
-Og paa hver ufrom Tanke ser den anden.
-   Ved venstre Kind
-   Han ser i Øjet ind
-Og læser Brødens dunkle Skrift paa Panden.
-
-   Hvad Ondt han saa,
-   Han straks opskrive maa,
-Dog tøver han en Stund med Seglets Gjemme.
-  Raab til din Gud!
-  Og Englen sletter ud,
-Hvad angerfuld du bad din Gud forglemme.
-
-   Men vender du
-   Før midnat ej din Hu,
-Og Angerstaaren ej dit Øje væder,
-   Dit Syndebrev
-   Forsegler han, der skrev;
-Men Englen paa din højre Skulder græder.
-</body>
-</poem>
-
-<!--
  
- 
- 
- Min gode og onde Engel.
+ .
 3)ed Livets Port jeg en Lysalf saae; En Svartalf saae jeg ved Siden staae.
 De sang mig ved Vuggen en Spaadomssang; Den Spaadom mindes jeg mangengang:
 "Jeg lover ham Kjarligheds rige Skat "Og sijonne Syner ved Dag ved Nat.
@@ -182,7 +43,7 @@ Da loe den sorte Engel og qvad: . "Lad Skygge og Lys kun solges ad!
 " Men Vaal sial blusse af liden Gisd.
 
  6
-" For hver en Strem af Kjtrrligheds V<rld "Een Draabe fra Hadets det kolde Fjeld!
+" For hver en Strem af Kjtrrligheds Værld "Een Draabe fra Hadets det kolde Fjeld!
 "D e n Draabe skal qvcrle hans Hjerte nieer, "End noget Hie i Verden seer.
 "O g aabnes ham Digternes Paradiis,
 "O g vinder han Hjerternes stjsnne P riis —
@@ -190,10 +51,24 @@ Da loe den sorte Engel og qvad: . "Lad Skygge og Lys kun solges ad!
 Saa sang den Svartalf, ved Vuggen stod. Een Trsst tilfsied hiin Engel god:
 "Dog svulmer end Harmen i krcrnket Sind — "Flyer Freden som Blomstret'i Hvirvelvind —
 " Selv Daalet fra Hjertets Zld rBolgebrud "Skal brcrnde ham Giften af Saaret ud.
-"Tilsidst hver Niddets og Hadets Rest "Skal luttre Sj<rlen i saaret Bryst;
+"Tilsidst hver Niddets og Hadets Rest "Skal luttre Sjærlen i saaret Bryst;
 "Og naar den flyver med Seir fra Zord, "Skal Kjsrlighedsminder betegne dens Spor."
 
- Tordenskjold.
+</body>
+</poem>
+
+<poem id="ingemann2017100402">
+<head>
+   <title>Tordenskjold</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+
+ .
 N u l henover Fjeld og Btrlk, Klrmpesang om Nordens Helt! Sjung med et AarhundredS Nsst Heltens Navn fra Kyst til Kyst!
 Tordenskjold! dit Klrmperye
 Lysner stolt som Lyn i Skye — Navn, som trodser Mulm og Grav Nul som Torden over Hav!
@@ -212,12 +87,24 @@ Favn ham hsit i Himmelflot!
 Ven med Fjende bandt hans Krands Trende Riger saae hans Glands — Navn, som trodser Mulm og Grav!
 Rul som Torden over Hav!
 
- Ode til Aanden.
-e
+</body>
+</poem>
+
+<poem id="ingemann2017100403">
+<head>
+   <title>Ode til Aanden</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+
 — o, slig med hvad Navn Zordlaben navner Dig? Du, somovermigselvlestermedMagtminSjal— Tvinger til Hsiqvad mig, til unavnelig Fryd! —.
 Er Du himmelsse Gnist, sendt fra Lysenes Lys
 Til Dsdsarvingens Mulm, for at smelte hans Sjal, A t i Flammer oplsst, luttret i hellig G lsd,
-Han kan h<rve sin Rest — sjunge i Himlen ind!
+Han kan hæve sin Røst — sjunge i Himlen ind!
 — Det er ikke mig selv — o, det fsler jeg dybt — Det er en magtig Aand, stor — med Guddoms-Natur, Som henriver mig brat, hsit i salige Flugt.
 Himmelindvaaner! — ja, Himmelindvaaner var Ogsaa jeg vist engang — men ei hellig som D u ,
 Du, hvis magtige Arm haver vingelam Sjal
@@ -231,7 +118,7 @@ Han i Mulmgrav mig saae — han mig lofted ved
 Dig —
 Sendte mig Liv i Dod, gav LysrVinger til Flugt. Za til Ham vil jeg flye — knuust er Gravstenens Aag. Sjceloplofter! hav Tak! Aanden sendte Du mig — Himmelforer! hav Tak! Du forlader mig ei.
 Seer jeg ikke din Glands, er dit Aasyn mig skjult.
-Jeg fornemmer din Flugt, horer dit Vingeslag; Salig som Sph<rrers Sang, toner gjennem min Ejtkl, Himmelforer, din Rost. Har Du, for Verden skjult. Kun fornummet af mig, bygt Dig et Skyepaulun
+Jeg fornemmer din Flugt, horer dit Vingeslag; Salig som Sphærrers Sang, toner gjennem min Ejtkl, Himmelforer, din Rost. Har Du, for Verden skjult. Kun fornummet af mig, bygt Dig et Skyepaulun
 I min deemrende Sjtkl, at den, salig som Du, Kan indflutte med D ig G lim t af Aandernes Aand, Give en Verden Rum, selv en Verden ved Dig!
 __Ak hvor svimler du hen? svulmer hovmodig du. Dristige Sjcrl, fordi Herren besogte dig —
 — Kmrl, ydmyg dig og smelt! —
@@ -260,7 +147,19 @@ Her, her, den kalder dig — felg den paa evig Vei! Himmelberuste S ja l! — st
 V
 Herrens Rest!
 
- Friderik Schiller.
+</body>
+</poem>
+
+<poem id="ingemann2017100403">
+<head>
+   <title>Frederik Schiller</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 ^^ekrandset for mig stod et venligt Billed Med Kraft og Hsihed, alvorsfuld og rolig. A f Ungdomslivets Genius fremstillet.
 Og meer og meer med Billedet fortrolig. Jeg lytted stundom, som det vilde tale, Naar Sjalen sysled ene i fin Bolig.
 Da syntes mig en aandig Luft husvale Og som en Engel Vingen skjult udbrede Og over Sjalens Jdrcrtsvtkld neddale.
@@ -298,7 +197,7 @@ Og kaldte Livsrost frem af Gravens Rifter.
  — O, kunde ei din Dybsinds-Rest udtale Hvad kun i store Ahnelser Du stued —
 i
 Dog dit Aarhundred vakte Du af Dvale.
-For Aandens Frihed Du hver Sjeel oplued. S o m fredlss under Frihedstr<ret sukked
+For Aandens Frihed Du hver Sjeel oplued. S o m fredløs under Frihedstræret sukked
 Og for sin egen dede Klogstab grued.
 D u Hjertedybets store Varld oplukked. Gav Tanken Toneliv og Psychevinger, Hvor dybest den i Livets Vtkld neddukked.
 — S ig dit Aarhundreds Genius bortsvinger
@@ -307,6 +206,20 @@ Din Aand til Friheds Land en Skat medbringer:
 Den Livsidee, hvorfor D ig Aanden kroner.
 Hvor Universets store Harpe klinger —
 Skjsnt Tid med Tid og Aand med. Aand forsoner.
+
+</body>
+</poem>
+
+<poem id="ingemann2017100405">
+<head>
+   <title>Vuggesang</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 
  Vuggesang.
 E)yng nu stille i din Vugge! Moder luller dig i Blund. Hos dig sover alt din Dukke; Luk nu de Smaasine kun!
@@ -317,7 +230,7 @@ Bringe de dig Vinger smaae.
 /
 Slotte stal de for dig bygge
 Af det klare Maanefkin,
-Skal med Stjerner Barnet smykke, B<rre i Guds Himmel ind.
+Skal med Stjerner Barnet smykke, Bærre i Guds Himmel ind.
 
  Der de boe, de Engle fromme.
 Der er Alle Bsrn som du; Der M Moder tit dig komme,
@@ -327,6 +240,20 @@ Leger, flyver og heniler
 Med de gyldne Vinger paa.
 Drsm og smiil og leeg i Blunden! Flyv med de Gudsengle smaae!
 O, naar Drsmmen er forsvunden Glem ei Himlen, Barnet saae!
+
+</body>
+</poem>
+
+<poem id="ingemann2017100406">
+<head>
+   <title>Sangtiden</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 
  Sagntiden.
 herlige NordrKampeold, fuldriigt paa Minder og Frasagn!
@@ -341,6 +268,20 @@ Folkeaands-Livet ei dver, hvor alt det i Vuggen har sjunget;
 Slumrer det ogsaa en Stund, synker det ffindsd i Grav —
 Barndomsdrømmenes Sang som Gjenlyd udtoner fra Graven,
 Spranger dog Dødningens Steen — vakker den gjem fsdte Aand.
+
+</body>
+</poem>
+
+<poem id="ingemann2017100407">
+<head>
+   <title>Kong Haddings Eventyr</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 
  20
 Kong Haddings Eventyr i Norge*).
@@ -397,7 +338,7 @@ Som store Skygger de kampe skal
 T il Dag er for dem oprundet."
 
  "Men Stjernen glimter saa mat kun her. De Urter er dunkelrsde. —
-Lad rulle i Strsmmen de brudte Sp<rr! Lad k<rmpe, lad k<rmpe de Dsde!"
+Lad rulle i Strsmmen de brudte Spærr! Lad kærmpe, lad kærmpe de Døde!"
 Nu gange de frem til en Muur, saa stor. Den haver i Verden ei Lige;
 Over den gik aldrig Menneskespor,
 Over den kan Kongen ei stige.
@@ -418,9 +359,23 @@ Smaablomsterne gladed Dronningens S ja l, De blomstred ved Vintertide.
 Kong Hadding smiled heelt trost derved: " J e g saae hvor de Blomster udsprunge;
 Men jeg veed hvor Solen gaaer aldrig ned Og hvor dode Fugle kan jjunge."
 
+
+</body>
+</poem>
+
+<poem id="ingemann2017100408">
+<head>
+   <title>Gjasindas Sang i Norden</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  »
 26 °M-
-Gjasindas Sang i Norden.
+.
 Ak-ver Trækfugl mod Syd, maa jeg sukke: Hvor er du, mit Fædreneland!
 Kommer Englen i Blund mine Hine at lukke. Trækfuglen folge jeg kan.
 Bar mig, o Drsm, paa din vuggende Arm! Barnet lad hvile ved Moderens Barm!
@@ -436,6 +391,20 @@ Hvergang Gudsmoder jeg maled saa glad, Himmelskjsn Engel ved Siden mig sad.
 Og det himmelblaae Bjerg gjennem Guldceblelunden Nu jeg i Drsmme kun seer.
 Veer mig, o Drem, paa din vuggende Arm! Barnet lad blunde ved Moderens Barm!
 
+</body>
+</poem>
+
+<poem id="ingemann2017100409">
+<head>
+   <title>Hans Egede</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+
  Hans Egede.
 E t helligt Kors staaer hsit i Nord, Hvor ingen Sangfugl bygger;
 Z Snee det staaer paa frosne Jord Og langt fra Lovsal r Skygger.
@@ -444,7 +413,7 @@ Hvor Sjal og Hjerte gyser. Fra Bolger Bjerg af evig Zis Henpeger mod Guds Paradi
 Det Kors ved Nat og lyser.
 Med Glands fra Livets Morgenland I Dodens Midnatszone,
 Det viser Vei fra Hvalens Strand T il Palmefkovens Krone;
-Og Hiet, blindt af evig Snee, Kan Livers gronne Tr<r dog see.
+Og Hiet, blindt af evig Snee, Kan Livers gronne Trær dog see.
 Hvorom Guds Engle knerle;
 Og gjennem dybe Grav af Jis Eaae haabfuldt til Guds Paradiis
 Med Tro de frelste Sjcele.
@@ -476,8 +445,22 @@ Hvor iisnet Sjalen gyser: Fra BslgerBjerg af evig Zis Det peger mod Guds Paradii
 Og gjennem Natten lyser.
 30
 
+
+</body>
+</poem>
+
+<poem id="ingemann2017100410">
+<head>
+   <title>Vaarsang</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  Vaarsang.
--Op, sjung og gl<kd dig, Danmarks Sen Vor Sse er blank, vor Skov er grsn.
+-Op, sjung og glækd dig, Danmarks Sen Vor Sse er blank, vor Skov er grsn.
 Og blomsterriig vor Dal.
 Med Mailsvkrands i lyse Haar
 Hun kommen er, den unge Vaar;
@@ -499,11 +482,25 @@ Om Skjoldungirtten bold;
 Her fjunger end den mindste M se Om ZErens Vei paa stolte Sse,
 Om Zuul og Tordenskjold.
 /
-Op, string og gl<rd dig, Danmarks Ssn Ved Hav staaer Kampehsien grsn:
+Op, string og glærd dig, Danmarks Ssn Ved Hav staaer Kampehsien grsn:
 Her Kraftens Aand end boer; Her bruser. Verdens store Vcrld — Z Skyen flyver Bjerg og Fjeld
 Og Sjalen over Zord.
 
- Jomfruen og Gjsgen
+</body>
+</poem>
+
+<poem id="ingemann2017100411">
+<head>
+   <title>Jomfruen og Gjøgen</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+
+ 
 Lunden Gjsgen kukker. Og Bogen den er grsn.
 Den Jomfru gaaer og sukker Og nynner smaat ilsn.
 "D u Spaamand i det Grsnne!
@@ -530,8 +527,22 @@ Hvi grader hun ilsn?
 Vist falske Fugl dog lyver: Zeg er jo femten Aar."
 »
 
+
+</body>
+</poem>
+
+<poem id="ingemann2017100412">
+<head>
+   <title>Den gamle Skippers Sang</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  »
-Den gamle Skippers Sang.
+.
 !^et gaaer i Verden firlsomt til; , Dog vil jeg lystigt sjunge:
 Det gaaer dog som vor Herre vil Med Gamle og med Unge.
 Sin Nede vilde Ssfugl naaer. Hvor vidt omkring han farer;
@@ -568,22 +579,50 @@ Fra Hjem og Havn og Arnekrog Dog end jeg glad mig reiser,
 Naar under gamle Dannebrog Stolt Semand Storstil heiser.
 Een Fart endnu min Hu staaer til Dog vil jeg lystig sjunge:
 Det gaae alt som vor Herre vil Med Gamle og med Unge!
-Men vilde Gud i Dyst paa See M i t Livsbred mig beffj<rre —
+Men vilde Gud i Dyst paa See M i t Livsbred mig beffjærre —
 Med Seierssang jeg vilde dee For gamle Danmarks ZEre.
 
- Den barnlige Konstner.
+
+</body>
+</poem>
+
+<poem id="ingemann2017100413">
+<head>
+   <title>Den barnlige Konstner</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ .
 (Ester et Malene af Du Jardin i den Kongl. Samling).
 >^/ort Bolgen under Stormens Vinger strommer, H s it midt i Havet svommer Vtuslingstallen;
 Der staaer, som nys fra Barnehimlen falden,
 Paa Sæbeboblen glad den lille Drommer.
 Selv tryg, han paa en Farveverden svommer Imellem Dybets Grav og Stjernehallen;
-Han seer med S m iil og henrykt Gl<rdeslallen
+Han seer med S m iil og henrykt Glædeslallen
 De Verdner smaa, som for hans Pust udstrommer. Z tusindfarvet Negnbuglands de spille;
 O g brister een, ei sorger dog den L ille :
 En ny og dobbelt skjsn hans Aande skaber. I Farveglands det drukne Blik sig taber; Og synker Muslingffallen under Foden —
 Flyer Barnesjælen fro med Farvekloden.
 
- Den gamle Dands.
+
+</body>
+</poem>
+
+<poem id="ingemann2017100414">
+<head>
+   <title>Den gamle Dands</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ .
 (Tilegnet Fru Kammcrherinde Roscnsrn, fsd wormstjold, den 29de Januar 1831).
 V a a nydeligt dandse de Ssdskende smaa Glad Moderen sidder og seer derpaa. Hvor Ssnnen hopper og Datteren leer.
 Sig selv som Barn hun i Dandsen seer. — Som Drsm det Svundne gjenfsdes.
@@ -607,7 +646,21 @@ Din Elskede seer dig paa fremmed Kyst. — Forklaret Længslen gjenfodes.
 S a a nydeligt dandse de Sekstende smaa; Rort Moderen sidder og seer derpaa. Hvor Glerden flyede i gamle Dands-
 Husvaler Sjernens evige Glands. — I Klarhed Livet gjenfodes.
 
- Ab sa l o rr.
+
+</body>
+</poem>
+
+<poem id="ingemann2017100415">
+<head>
+   <title>Absalon</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ .
 ^ Danmark toner Kampesang Blandt tusind Kampeheie;
 A f Heltefard paa Hav og Vang Har Dansken Syn for Hie.
 Men giver Stordaad evigt Navn, Og er det stort at stride
@@ -619,8 +672,7 @@ Ei bedre Nsst fra hsie Chor
 S k a l Herrens Fred udsjunge.
 
  -M- 42
-Men <kffer Freden Kamp og Blod, S ig ruster Herrens Kcrmpe:
-'>-
+Men kffer Freden Kamp og Blod, S ig ruster Herrens Kcrmpe:
 -Med Peders Svcerd den Hyrde god E i farer frem med Lempe;
 Med Hellebard og Brynie blaa, P a a Hingsten Bispen skinner.
 Paa blodig Val ei Dansken saae En sterre Seiervinder.
@@ -636,18 +688,46 @@ T il stolte Axelstad forgaser, Hans Navn stal ei udflettes.
 
  Ved Sorse Kirken, hellig, stor, Omhvcrlver Heltegraven;
 End staaer i Steen bag hsie Chor Bisp Absalon med Staven;
-Her stod hans V<rrk, her staaer hans Grav Gid her hans Aand sig svinge
+Her stod hans Værk, her staaer hans Grav Gid her hans Aand sig svinge
 Henover Templet, han os gav. Med lyse Phoenixvinge!
 
- Boldspillet.
+
+</body>
+</poem>
+
+<poem id="ingemann2017100416">
+<head>
+   <title>Boldspillet</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ .
 >^ee, med Tidens gyldne ZEbler Som med trende Bolde spiller Stedse haabfuld og ustadig
 Ungdoms rLivets Genius; Tvende hvirvle hsit t Luften; Eet i Haanden flygtig hviler. Kun for atter at udflyngeS — Intet vil han holde fast.
 Det, han greb, ham mindstfornsier; Det, som daler, vil han redde;
-Det, som stiger, er ham kj<rrest: Tabes det, er Alt ham tabt; Efter det kun Hiet stirrer.
+Det, som stiger, er ham kjærest: Tabes det, er Alt ham tabt; Efter det kun Hiet stirrer.
 Efter det kun Haanden famler— For det atter at borthvirvle,
 N a a r lyksaligst han det greb.
 
- Julenat.
+
+</body>
+</poem>
+
+<poem id="ingemann2017100417">
+<head>
+   <title>Julenat</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ .
 Og der vare Hyrder i den samme Egn, som holdte sig paa Marken og holdte Nattevagt over deres Hjord. Og see! Herrens Engel stod over dem og Herrens Klarhed skinnede om dem.
 Lucas E. 2 C. 8. 9. V.
 ^Ocrr stille. Jorderige!
@@ -680,7 +760,7 @@ Serapher Slsret haeved
 Og saae det stsrste Lys paa Zord
 
  Lad M u lm hvert Lys fordunkle I Himmel og paa Jord!
-Dit Lys, oNat! skalfunkle Saal<rnge Gud i Himlen boer.
+Dit Lys, oNat! skalfunkle Saalænge Gud i Himlen boer.
 Lad dine Stjerne lue
 Med tusind Soles Glands!
 Og lad al Verden skue
@@ -710,39 +790,71 @@ Med Hyrderne vi knale! Guds Engle sjunge hist:
 Frelst' er al Verdens Sjeele — Halleluja! vcrr lovet, Christ!
 ''
 
- Menneskets Engle *).
-<.0 Engle smaa
-Os felge hvor vi gaae: Usynligt de paa vore Skuldre hvile.
-Ved hsire Kind Den Ene ritter ind
-Z SjLl og Hie, naar vi kjarrligt smile.
-Hver crrlig Zid
-Han siriver op med Flid;
+
+</body>
+</poem>
+
+<poem id="ingemann2012080801">
+<head>
+   <title>Menneskets Engle</title>
+   <toctitle>Menneskets Engle</toctitle>
+   <indextitle>Menneskets Engle</indextitle>
+   <firstline>To Engle Smaa</firstline>
+   <notes>
+       <note type="credits">Bidrag fra Britte Rahbek.</note>
+       <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+       <note>“En gave til religionshistoriker J. Ferdinand Fenger, mens han er på rejse i Grækenland 1831, fra en tyrkisk lærd Mehemet Effendi. Jeg kender 9 melodier fra 1832-1935.”</note>
+   </notes>
+   <quality>korrektur1</quality>
+</head>
+<body>
+   To Engle smaa
+   Os følge, hvor vi gaa:
+Usynlig de paa vore Skuldre hvile.
+   Ved højre Kind
+   Den ene titter ind
+I Sjæl og Øje, naar vi kjærligt smile.
+
+   Hver ærlig Id
+   Han skriver op med Flid;
 Hver Tanke, from og god, han tro bevarer.
-Hvert Palmeblad
-Han strax forsegler glad:
-Hver Midnat han til Allah med det farer.
-*) Efter en Muhamedaners mundtlige Fortoelling til en dansk Reisende i Grcekenland (Hr. Licent. Lheologi«
-Ferdinand Fenger).
-(4)
+   Hvert Palmeblad
+   Han straks forsegler glad.
+Hver Midnat han til Allah med den farer.
 
- 50 -G-
-Med strenge Flid Paa hver u<rrlig Zid
-Og paa hver ufrom Tanke seer den Anden. Ved venstre Kind
-Han seer i Hiet ind
-Og l<rser Brsdens dunkle Skrift paa Panden.
-Hvad Ondt han saae
-Han strax opskrive maa;
-Dog tsver. han en Stund med Seglets Gjemme.
-Raab til din Gud!
-Og Englen fletter ud
+   Med strenge Flid
+   Paa hver uærlig Id
+Og paa hver ufrom Tanke ser den anden.
+   Ved venstre Kind
+   Han ser i Øjet ind
+Og læser Brødens dunkle Skrift paa Panden.
+
+   Hvad Ondt han saa,
+   Han straks opskrive maa,
+Dog tøver han en Stund med Seglets Gjemme.
+  Raab til din Gud!
+  Og Englen sletter ud,
 Hvad angerfuld du bad din Gud forglemme.
-*
-Men vender du
-Fer Midnat ei din Hu
-Og Angerstaaren ei dit Hie vtkder — D it Syndebrev
-Forsegler han, der skrev —
-Men — Englen paa din hsire Skulder gmder.
 
+   Men vender du
+   Før midnat ej din Hu,
+Og Angerstaaren ej dit Øje væder,
+   Dit Syndebrev
+   Forsegler han, der skrev;
+Men Englen paa din højre Skulder græder.
+</body>
+</poem>
+
+<poem id="ingemann2017100419">
+<head>
+   <title>Ellefruen</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  E l L e f r u e n.
 (Et sjcellandst Sagn).
 C^>
@@ -756,7 +868,7 @@ Ved Gry hun atter med Ned fuldstor De muntre Hestpiger felger.
 Ved Qvel hun haster i Maanestin Med Angest til Ellestubkrattet.
 Smaabarnet smiler med friste Kind I Liinsvsbet, prent og glattet.
 
- "Tak v<rre dig, Ellefrue saa god! Forvist du pleied min Spade."
+ "Tak være dig, Ellefrue saa god! Forvist du pleied min Spade."
 Hvor seent den Moder ved Busten stod, Ei herte hun Barnet grade.
 Hver Qvel hun kommer igjen en Stund Og vugger ved Brystet den Lille.
 For Efteraarsblasten i ^Krat og Lund A lt Ellestubbladene spille.
@@ -785,10 +897,24 @@ A lt med sin lyttende O-vinde:
 Og der var Bryllup i Bondens Gaard; Dsbt Barnet smiled i Stuen.
 Ved Ellestubkrattet med Lev i Haar S a n g lystelig Ellefruen.
 
- Sorse Academies Indvielse. (1 8 2 6).
+
+</body>
+</poem>
+
+<poem id="ingemann2017100420">
+<head>
+   <title>Sorøe Academies Indvielse</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ . (1 8 2 6).
 ^ s ft dig, vor Hsisang, paa Vinger af Toner! Flyv over Sse, over Skovenes Kroner!
 S v in g dig fra Jordens omskiftende Skygger! Harv dig til ham, som for Evighed bygger!
-H<rv dig til Gud!
+Hæv dig til Gud!
 Du, som lod Verden af Chaos oprinde! Du, som i Luer og stormende Vinde
 Sendte os vsldige Bud!
 Du kun er den, som for Evighed bygger: Menneskeværker i Jorderigs Skygger
@@ -865,7 +991,21 @@ Lad Dage, som svinde,
 Udraabe til dem, som oprinde:
 Vort Lys var et Glimt af Guds Herligheds Glands P riis Herren! al LEre er hans.
 
- Ved Thomas Kingos Grav
+
+</body>
+</poem>
+
+<poem id="ingemann2017100421">
+<head>
+   <title>Ved Thomas Kingos Grav</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ 
 (i Fraugde Kirke i Fyen. Juni 1820).
 ^vtarmormindet staser ved Graven Under Landsbykirkens T ag.
 Englen hist med Bispestaven
@@ -874,7 +1014,7 @@ Med sit Aasyns Kraft og Ro, Gubben i sit djærve Villed, Som en Christi Ktkmpe t
 S tille ved sin Hustrues Side Seer af Marmoret han ud.
 Englene i Klarder hvide
 Bede for hans Sjcel til Gud;
-Og forgj<rves ei de bede:
+Og forgjæves ei de bede:
 Mmke Grav! hvor er din Magt? Under Kirkelem histnede
 Smuldrer kun hans Zordedragt.
 
@@ -916,7 +1056,21 @@ l
 ,
 !
 
- Lys - Englen.
+</body>
+</poem>
+
+<poem id="ingemann2017100422">
+<head>
+   <title>Lys-Englen</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+
+ .
 (Tilegnet min Gudssn Frederik Bernhard Wilstcr).
 H'aa Moders Arm saa sjerleglad Mod Lyset Vårnet sprcrlder.
 Det latter og veed selv ei hvad; Det tusind Ting fortæller.
@@ -936,7 +1090,21 @@ Skal dybt med Stjerneziffre staae Z Sjerlens dunkle Kammer.
 Naar Oldingssiet halvt er lukt Z tause Dsdningstue, Lys-Englen vinker atter smukt
 I regnbufarvet Lue.
 
- Hvidtfeldt.
+
+</body>
+</poem>
+
+<poem id="ingemann2017100423">
+<head>
+   <title>Hvidtfeldt</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ .
 Iranske! seer du hist hvad luer Herligt over Kjsge Bugt?
 Det er Dannebrog, du stuer Flamme hoit i Himmelflugt.
 Korsets himmelfaldne Banner
@@ -963,7 +1131,21 @@ Lys den hsie Aand hist stander. Svinger Dannebrog fra Skye —
 Korsets himmelfaldne Banner
 Kun mod Stjernerne kan flye.
 
- Konstnerens Syner.
+
+</body>
+</poem>
+
+<poem id="ingemann2017100424">
+<head>
+   <title>Konstnerens Syner</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ .
 Konstnersjale kan hvert Syn henrive. Som i Phantasie og Sind indtranger. Enten det med djavelst Blandvark stuffer. Eller det i himmelst Sandhed straaler. Derfor mellem Dyb og Himmel svaver Konstneraanden, som fra Jord sig lofter.
 Mellem hsjest Qval og saligst Glade Veien gaaer til Konstnerparadiset.
 T il Bologna T il bersmte
@@ -976,12 +1158,12 @@ Dem hans Genius gav Liv og Skjsnhed. Tryg ved 9)!esterstabets vundne Krone, Kjak
  Gav den hsie Mester Tanken Billed
 Og hvert Tankebilled Aand og Legem.
 Blandt de Mange, som hans Konst beundred.
-Stod en Dag en Fremmed rans og smilte. Medens han med v<rbnet Forskersie
+Stod en Dag en Fremmed rans og smilte. Medens han med væbnet Forskersie
 Stirred paa hvert Billed koldt og lamge.
 Tækkeligt var ei den Herres Aasyn;
 Liden var hans Vcext, men stolt hans Adstrrd. Fra de dybtindsjunkne Hienhuler > ^
 Syntes Deden i hvert Blik at skele.
-Og i Smilet om spidsfindig L<rbe
+Og i Smilet om spidsfindig Læbe
 Selvtilfreds sig bitter Haan udtaled
 Med Foragt for hvad han saae og herte.
 Alle gik, og hos forbauset Mester
@@ -992,7 +1174,7 @@ Ei dog tykkes mig den kan foragtes."
 Heftig Konstneren det greb og stirred Bleeg og maallss i dets blanke Huulning: For hans Hie dreied sig hvert Billed
 
  Med det hele Værksted strlsomt om ham; Og hvert Konstvark blev et Vramgebilled, S o m med djLvelst Liighed efterabed
-Alle <rdle Former i Naturen,
+Alle ædle Former i Naturen,
 For dem til Uhyrer at forvandle:
 Hvert et Trcrk af Storhed eller Hoihed Blev til svulstig unaturlig Vrangen; Smilet blev til Griin i Qvindens Aasyn,
 Og alt menneskeligt Skjsnt blev dyrisk. Som forstenet, fra sin Himmel falden. Med et opladt Helved for sit Hie,
@@ -1005,7 +1187,7 @@ Med de Ord han gik og var forsvunden;
 M e n det gruelige Ncrdselbilled
 Ei forsvandt — med Speilet det ei knustes
 >
-Som indbrandt det blev i Sj<rl og Hie; Og hvorhen den Konstner Blikket vendte, Saae han sine V<rrker som Uhyrer
+Som indbrandt det blev i Sjæl og Hie; Og hvorhen den Konstner Blikket vendte, Saae han sine Værker som Uhyrer
 
  Stirre ham med Vrangegriin imsde;
 Og hvert Minde om hans Liv og Idrat
@@ -1062,6 +1244,20 @@ Saae han ogsaa hvad af Idealets Himmelglorie han havde grebet.
 Og mcd freidigt Mod, med Haab og Styrke
 Greb paany han den henlagte Meisel, Priste Gud for hver Begejstrings Time Og til sterre Mesterstab sig haved.
 
+
+</body>
+</poem>
+
+<poem id="ingemann2017100425">
+<head>
+   <title>Kirkesange</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  Kirkesange
 (til Indvielsen af den Thorvaldsenske Dsbefont i Brahetrolleborg Kirke 1817).
 ^ 2 ta n d hellig i Guds Helligdom!
@@ -1092,7 +1288,7 @@ Dobt'med hellig Aand og Lue.
 
  >-,
 O ! see, de Spcrdes Engle smaae. Som hisset for Guds Aasyn staae.
-T il Naadens V<rld de kalde Trefoldigt svikve de herned:
+T il Naadens Væld de kalde Trefoldigt svikve de herned:
 Med Haab, med Tro, med Kjarlighed
 Velsigne de os Alle. Kmrler, Christne! og tilbeder!
 Evigheder os er givet:
@@ -1117,6 +1313,20 @@ Som Born vi vandre ved hans Haand D it Rige os tilhore!
 Vor Gjerning i dit Navn lad jkee! Og naar vi Sadens Frugter see —
 D in vare AEren, Herre!
 
+
+</body>
+</poem>
+
+<poem id="ingemann2017100426">
+<head>
+   <title>Nordskjalden</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  N o r d s k j a l d e n.
 -^)immellyren flammer Over Kampehsien;
 G a m le Ege suse
@@ -1166,7 +1376,21 @@ Da, o Skjald! din Rost mod Himlen runger S a lig Livets Seierssang du sjunger.
 Kan du det fremdrage. Kan med rene Hcrnder Korsets Helteskare
 Lofte det mod Skye;
 
- T i l Billedhugger Freund. (Da han reiste til Rom. 1817).
+
+</body>
+</poem>
+
+<poem id="ingemann2017100427">
+<head>
+   <title>Til Billedhugger Freund</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ . (Da han reiste til Rom. 1817).
 ! ^ r a g hen, hvor Skjsnheds Genier dig vinke. Hvor Landet, det sorjattede, dig smiler.
 Hvor Konstens Sphinx paa Oldridsrester hviler Og hoit Udsdeligheds Stjerner blinke!
 Forgjaves sial ei Genien dig vinke:
@@ -1176,7 +1400,21 @@ Og du sial skue det Guddommelige,
 Forherliget i Konstens Tempelbuer,
 Og Herrens Aand sial laane Sjaler, Vinger.
 
- Kratzenstern Stub.
+
+</body>
+</poem>
+
+<poem id="ingemann2017100428">
+<head>
+   <title>Kratzenstein Stub</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ .
 e>>
 7 ) Danmarks Konstnerhave
 Et fjeldene Tin der stod Med sydlig Trylleg'ave
@@ -1198,12 +1436,12 @@ Fra Bladet underfuld;
 De Blade aldrig dode — > Men Trwet sank i Muld.
 En Stund sig Aanden dotger Z Blomstertmets Svob, ! Stroer Guld i. Tidens Belger Men folger ei dens Lob. -
 M o d Frihed Englen stmber
-I ffjonnest Farvedragt; < ^ Kort Blomsterstovet kltrber-
+I ffjonnest Farvedragt;  Kort Blomsterstovet kltrber-
 Ved Vingens' Solverpragt.
 D u tidlig din ridspiled,
 Har Bladguld-Larven tabt;
 Med Psycheflugt du iled:
-T il Flugt din Sj<rl var fkabt.
+T il Flugt din Sjæl var fkabt.
 
  87
 Om Hellas Vaar du drsmte; Den blomstred i din Aand,
@@ -1214,7 +1452,21 @@ Hvor Sol ei skal nedgaae.
 D in Z id du der fuldbringer. A f Himmelluft omsuust,
 Naar Evighedens Vinger Har Tidens Vtrrker knuust.
 
- Den Blindes Sang.
+
+</body>
+</poem>
+
+<poem id="ingemann2017100429">
+<head>
+   <title>Den Blindes Sang</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ .
 >^>aa dunkel er min Gang paa Zord: Ei Verdens Glands jeg skimter;
 Zeg horer kun de skjonne Ord
 Om Lyset, som i Himlen boer
@@ -1253,7 +1505,21 @@ Saalange vare Hiet lukt!
 — Kom, Broder! rak mig Haanden!
 j
 
- Velkomstsang
+</body>
+</poem>
+
+<poem id="ingemann2017100430">
+<head>
+   <title>Velkomstsang</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+
+ 
 (Til mine Venner ^Dr. Estrup og'Dr. Schouw ved deres Hjemkomst fra Ita lie n 1820).
 hilset her, hvor danffe Hjerter banke. Trofaste LEt af gamle Dan!
 Z Laurens Vaar var herligt at omvanke; Men Danmark blev dog Fædreland,
@@ -1277,7 +1543,21 @@ Vcer hilset, Brsdre, hilset og omfavnet . I danske Brodres gamle Lag!
 Hvad Flygtningen i Sydens Vaar har savnet. Ham skjcenker Nordens Vinterdag.
 Du, som dit Nord ei glemme kan, Vcrr hilset i dit Fædreland!
 
- Den lille Hex.
+
+</body>
+</poem>
+
+<poem id="ingemann2017100431">
+<head>
+   <title>Den lille Hex</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ .
 (Et Bysagn).
 ^ Fattigskolen spinde saamange P ig e r smaae;
 Den mindste af dem Alle meest Spas kan finde paa. N a a r Lceremo'er er ude, hun tusind Lsier veed;
@@ -1299,7 +1579,7 @@ Knap Ordet er udflsiet — saa dandser Kjep og Kruus Med Hsvl og Bord og Banke o
 Sands.
 Z Dsren staaer den Lille; heelt lystelig Hun leer: ' Blandt Potter og blandt Gryder hun Svenden rase seer. Den gamle Kone tripper og raaber Ak og Vee! Tilsidst dog Barnet ynkes og holder op at lee.
 
- "Staa stille nu!" hun byder og hvisker lsnligt Ord; Men lige lystigt dandser end Hsvl og Stol ogBord; Med Potter og med Gryder gaaer Dcmdsen end fuldstrrt. (Kun Rokkehjul at standse hak Moster Barnet l<rrt; Vel andre Ting i Verden hun tvinge kan til Hop,
+ "Staa stille nu!" hun byder og hvisker lsnligt Ord; Men lige lystigt dandser end Hsvl og Stol ogBord; Med Potter og med Gryder gaaer Dcmdsen end fuldstrrt. (Kun Rokkehjul at standse hak Moster Barnet lært; Vel andre Ting i Verden hun tvinge kan til Hop,
 Men — nu hun ssrst det mcerker — ei til at holde op).
 Forfærdet selv hun flygter; men Dandsen bliver ved: De Potter med de Gryder ad Trappen dandse ned. Med Saug og Hsvl og Hxe, med Bamk og Stol og
 Bord
@@ -1312,7 +1592,21 @@ Begynder ssrst det D-de paa egne Been at gaae. Det selv-sin Grav maa ssge og sel
 Den lille Hex ret aldrig i Verden hexer meer:
 Naar Rokkehjulet snurrer, ad barnlig Spsg hun leer; Men seer hun sorte Gryde, som Mine gjsr til Hop, Med Gru hun mindes Dandsen — som ei vil holde op.
 
- T il Frederik Schmidt.
+
+</body>
+</poem>
+
+<poem id="ingemann2017100432">
+<head>
+   <title>Til Frederik Schmidt</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ .
 (Den 27de Mai 1830).
 Witter kom med Blomst og Blad Englen i de grsnne Klader,
 Som ved Vuggen for os qvad Om et MairLivs AlferGlader;
@@ -1353,11 +1647,32 @@ Livet, som ei farer hen.
 Veed.dit Hjerte ffjent at gjemme;
 Hos dit Livstrtk Englen staaer, Ungdomsfriss endnu som Vaar; Mangengang paa Lysalfvinge Hun dig Mailevkrandse bringe!
 
- Neiscminder frs Ita lie n .
 
- »«
+
+</body>
+</poem>
+
+</content>
+</section>
+
+<section>
+<head>
+   <toctitle>Reiseminder fra Italien</toctitle>
+</head>
+<content>
+
+    <poem id="ingemann2017100433">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  Sydens Genius.
-Ila n d fra Drsmmenes Verden og Feernes luftige Rige! Regnbuvingede A lf fra Sydens Lyksaligheds-Her! Dv<rl i din glsdende S k y ! nedblink i Aftenens Guld-
+Ila n d fra Drsmmenes Verden og Feernes luftige Rige! Regnbuvingede A lf fra Sydens Lyksaligheds-Her! Dvæl i din glsdende S k y ! nedblink i Aftenens Guld-
 glands!
 End eengang dit Aasyn jeg see, fsr brat du henfarer!
 Barnligt skjsnt er dit S m iil; skalkagtigt dog funkler dit Hie,
@@ -1372,12 +1687,25 @@ bands;
 T er jeg henhvirvle med dig? Er ei du en Engel fra Dybet? Morkt er Fordarverens Bryn: paa Stormern flyer han
 med Latter; Du, mendueretlegendeBarn; medColibrirFjarham Flagrer du hen med Speg i Paradiis-Luftningers Duftr
 strem;
-Feers fortryllede Land og Dremmenes Verden du kjender; D id du henkurrer min svimlende Sj<rl og luller om Under.
+Feers fortryllede Land og Dremmenes Verden du kjender; D id du henkurrer min svimlende Sjæl og luller om Under.
 M idt dog i fkjonneste Drsm du flaaer mig med Vingen og smiler.
 Medens fortumlet og vildt de vexlende Billeder bortfiye. Lunefuld boltrer du atter phanrafliff de brogede Slag-
 fjar —
 O, for du flygter igien — i Sang lad Drommen opleve!
 
+</body>
+</poem>
+
+<poem id="ingemann2017100434">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  Reise fra Rom til Neapel.
 (Med en dansk Familie i Februar og Marts 1619).
 V tille Rom! fra dine Hsie, Dine Templer og Ruiner,
@@ -1483,6 +1811,19 @@ M e d det stjsnne Landstabsbilled: Over fjerne Bjerge hviler Havblaae Taagers Dr
 Under travle Reiseftrrsel
 Fremmed Skjsnne Strengelegen,
 Vel! saa lad i rolig Aften Her i stille Hal den klinge O m ustadig Reiselyst!
+</body>
+</poem>
+
+<poem id="ingemann2017100435">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Aftensang i Herberget
 Reiseliv! Rejselyst!
 Frihed i lette Bryst! Morgen hist! Aften her! Glade fjern! Glade nar!
@@ -1501,6 +1842,19 @@ Hores da rette Signal, muntert besvares det snart. Kort er de Reisendes Rast; fo
 venter.
 Regner det atter idag? fort da mod Solskin og Vaar!
 
+</body>
+</poem>
+
+<poem id="ingemann2017100436">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  De Pontinske Sumper.
 Dedsblund, kom os ei nar! her er de berygtede Sumper;
 Vildt gaae Bejlernes Hjorde paa Gras ved appifte Steenvei.
@@ -1512,6 +1866,19 @@ Aand kun i Luften Bedevelse ud med giftige Laber! Ei den tynger vort Bryst: heel
 * )
 Castellazzio.
 fra Bjerget!
+</body>
+</poem>
+
+<poem id="ingemann2017100437">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Circes LrylLebjerg.
 Hvad lokker, hvad drager
 T il D e t D e t
@@ -1527,6 +1894,19 @@ V il lulle i Drsmme
 «o
 Hvert Hjerte paa Jord.
 Hvo Sangen istemmer I Bjergfeens Favn, Forvandlet forglemmer Al Langsel og Savn.
+</body>
+</poem>
+
+<poem id="ingemann2017100438">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Havmanden.
 (Ved Teracina).
 '?3ogt for Hexen dig hist, og fly Forglemmelsens Rige! Ras nu heller med mig, end glem din Langsel i Dsdssovn! Hist dig forvandler til Plante og Dyr, med tryllende
@@ -1571,6 +1951,19 @@ A f den sjunkne Herlighed.
 Did vi ogsaa maae opstige.
 Der jeg vil til Sagnet lytte; Atter over Hav fra Borgen
 Sang henflyve stal i Storm.
+</body>
+</poem>
+
+<poem id="ingemann2017100439">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Theodoriks Borg ved Teracina.
 Natuglen hyler i Hallen.
 Hvor Kongen Septeret svang; Z Stsv Guldkronen er falden; M e n den har straalet engang.
@@ -1601,6 +1994,19 @@ leeg klinger. Skjsnt som i Pantheon hist, lad her forenede Stemmer
 Hsit Sanctisstma ud i himmelhsit Pantheon sjunge. Hvor nu paa Verdensorglet den store Natur phantaserer! Lsd hiin Sang for min Sands? hvad heller for Sjalen i
 Drsmme? Mindet end drsmmer veemodig om Sang fra Borgen ved
 Stranden.
+</body>
+</poem>
+
+<poem id="ingemann2017100440">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Strand-Borgen.
 4)aa Borg ved Stranden lsd Hymneklang; Der sad tre Ssstre ved O.vel og sang
 Og saae over Hav mod det Fjerne.
@@ -1612,7 +2018,7 @@ i
 O g gamle vorde de Unge.
 Skal atter jeg Borgen ved Stranden see; Dog aldrig mere de Ssstre tre
 Tilsammen ved Qvel der sjunge.
-(§torhavets dampedeRest iBlund mig lulled, og<L>j«len Havfrustemmer fornam, liig hviskende Toner fra Hjemmet. Ferst naar Daglyset blinker, os vakker den troe Berbieri: Nar ved Grandsen paa halvdunkelVei er Roveren dri-
+(§torhavets dampedeRest iBlund mig lulled, ogLj«len Havfrustemmer fornam, liig hviskende Toner fra Hjemmet. Ferst naar Daglyset blinker, os vakker den troe Berbieri: Nar ved Grandsen paa halvdunkelVei er Roveren dri-
 stigst;
 Sikker er selv ved Daglys ei ganske den herlige Strandvei.
 — Kort sig nu strakker paa Zorden, o Noma, dit verdsr lige Septer;
@@ -1643,6 +2049,19 @@ Fra Diavolo den Store
 Her sin Rsverhar udrusted;
 Med hans Slagt end Byen myldrer:
 Vildt med Skule-Bryn forfolger Smudsig Vngel Reisevognen Gridst med halvt damonist Blik.
+</body>
+</poem>
+
+<poem id="ingemann2017100441">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Ciceros Grav.
 A tte r en Alderdomslevning, et Gravsted! — ja, her blev du jordet;
 Her blev du myrdet ilsn, du Rettens og Frihedens Tals  mand!
@@ -1652,6 +2071,19 @@ Som kunde vakke M Liv afDsdsblund slumrende Tids- aand.
  M.122«
 Stille din Gravhsi forbi gaaer reisende Nordbo med Alvor,
 Ternker paa Oldtid og Nutid — og snsker sig lsnlig din Malmrsst.
+</body>
+</poem>
+
+<poem id="ingemann2017100442">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Mols 6i Osels.
 H e it paa Klippen din Gravhsi vi see, Fostmoder Car
 jeta *)!
@@ -1677,6 +2109,19 @@ Her jeg om Nina fortceller, hiint Offer for Kjcrrligheds
 Vanvid;
 Sagnet jeg mindes som, fimpelt og skjsnt, en reisende
 Landsmand *) Hsrte det i hendes Hjem. Endnu vil ei Mindet bortflyve.
+</body>
+</poem>
+
+<poem id="ingemann2017100443">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nina.
 2 Paris sig Folket glceder: Mimisk Konstnerinde herligt
 Ninas Vanvid forestiller; Folket klapper og beundrer.
@@ -1685,7 +2130,7 @@ Ninas Vanvid forestiller; Folket klapper og beundrer.
  Konstnerinden neier ziirligt. Men en fremmed Olding halver Haanden kun til vaade Hie, Sukker: Nina! og bortgaaer.
 N u , ei sandt? hun spiller herligt! Det er Sandhed, det er Ånde! Det er skjen Natur i Konsten! Det er Elskovs stille Vanvid, Som en DigtersjEl det saae!
 Sandt, ja sandt! — den Gamle sukker Saadan har jeg mangen Morgen
-Seet den arme Nina vandre Gjennem Gaden, gjennem Porten T il den kj<rre Steen paa Veien,
+Seet den arme Nina vandre Gjennem Gaden, gjennem Porten T il den kjære Steen paa Veien,
 Hvor i Brudedragt hun vented Diligencen fra Lyon,
 O g hvor Kudsken som stedvanlig Nikked til den blege Pige, Hilsed fra den dsde Brudgom, Sagde: han imorgen kommer!
 Loved Nosen ham at bringe.
@@ -1758,7 +2203,7 @@ Neppe paa dig i sin Fred, du Mand med det knusende Kampblik!
 
  M arius, Heltenes Skrcrk! her var det forladt du dig fslte;
 Her over blodige Lok din Nemesis truende henfoer.
-Horte du ei hendes Varsel? Endnu kunde K<rmpen sig reise;
+Horte du ei hendes Varsel? Endnu kunde Kæmpen sig reise;
 Rysiet af Tordnerens Lyn, du sad her, en flygtende Kamporn:
 Sverrdet mod Brodrenes Isse dig brast; dig Blodstraalen lammed;
 S to r du end strermmed i Faldet, og Morderen veeg for dit Trodsblik.
@@ -1766,7 +2211,7 @@ Hvor er nu, Keempe, din Sleegt? hvor lyner nu saadant et Hie?
 Skal til Carthagos Ruiner jeg gaae, for din Aand at opsoge?
 Staaer du i Natten nu der og forfærder Barbaren paa Kysten?
 Store forvildede Aand! faer hen! jeg fremmaner dig ikke.
-A lt vi S t. Agatha see; riigt blomstre de yppige Marker. Venlige Massicerbjerg! her din Aand mig spogende moder: Listig han skjuler i Druen sin Sj<kl, den letsindige Gnome; Brat, for man ttknker derpaa, han tilhest sig opsvinger
+A lt vi S t. Agatha see; riigt blomstre de yppige Marker. Venlige Massicerbjerg! her din Aand mig spogende moder: Listig han skjuler i Druen sin Sjæl, den letsindige Gnome; Brat, for man ttknker derpaa, han tilhest sig opsvinger
 paa Tungen,
 
  Tumler saa lystig med Sporer af Skjemt den behandige Ganger,
@@ -1776,6 +2221,19 @@ Tause vi see ved det smudsige Bord paa de Fremmedes Adfard.
 Gjerne vi lytte dog til, naar Gubben den blinde indr trader
 Med Mandolinen; han dandser og synger med stingrende Stemme.
 Atter vi hsre Tarantelens Dands med en rast Saltarella; S a rt nu dog sydlige Klang opmuntrer de nordiste Gjester.
+</body>
+</poem>
+
+<poem id="ingemann2017100444">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 TaranL ella.
 Her er Lyst, her er Liv og Glade! Lad rsdsiet Djavel kun grade!
 Selv den Blinde dandser og springer; Mandolinen paa Gravranden klinger.
@@ -1794,6 +2252,19 @@ Der i dit Fodspor jeg vandred idag, stormægtige Tan
 cred!
 Xx XV
 
+</body>
+</poem>
+
+<poem id="ingemann2017100445">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  Fe elande t. «,'.
 End fjernt dit Billed tryller. Du Feers Land paa Zord,
 Som underfuldt i Drvmme stod For Kampens Sjal i Nord!
@@ -1845,6 +2316,19 @@ Svalg; dog rolig du synes nu kun. Naar dig Natten omflsrer.
 Haver du tordnende Rssten mod Sky med den flammende Tunge,
 Slynger mod Stjernerne srak gjennem M ulm de glor dende Stene —
 Stormer med vilde gigantiske Kraft mod Himmelens Porte.
+</body>
+</poem>
+
+<poem id="ingemann2017100446">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Neapel.
 standser os plagende Toldvasens -Trold ? Nei, kun hoflig han krummer
 Haanden, og glad jeg forstaaer hint Sprogs den velta  lende Stumhed.
@@ -1853,11 +2337,24 @@ Haanden, og glad jeg forstaaer hint Sprogs den velta  lende Stumhed.
 mig:
 Myldrende bryder sig, ledig og travl, her Menneske
 strommen.
-Men i sin sydlige glodende Glands, trods Smudset o<
+Men i sin sydlige glodende Glands, trods Smudset og
 Skriget.
 Trindt Macaroni, liig Orme, af Mund Lazaroner om
 dingle —
 E i Pulcinellernes B y er liig Petitmaitrernes Verden.
+</body>
+</poem>
+
+<poem id="ingemann2017100447">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Marionet-Pulcinellen (fra Fja'lleboden).
 -Aeisa! der kommer en stovet Veturin
 Med fremmede Blondiner i Karmens Skrin;
@@ -1928,39 +2425,58 @@ Sveder sig Maanen i Selvflor og seer hvor dog Zorden er deilig.
 Stundom vi freidig paa Naboens Tag over Loggien udstige;
 M ild t klinger Guittarens S tra n g i den stille fortrolige Natluft.
 Sagtelig klirrer et Vindue hist, og med. nysgjerrig Titten Lytter sortsiet Signora i Skjul til de fremmede Sange.
-Aftensang paa Taget. «
-Aver Hav og Bjerg og Flod Kom jeg hid fra Norden;
-Ej hvad Hjertet hist forlod . Finder det paa Zorden.
-.O, men her dog Hiet seer Hvad ved Codans Stremme
+</body>
+</poem>
+
+<poem id="ingemann1832a0">
+<head>
+   <title>Aftensang paa Taget</title>
+   <toctitle>Aftensang paa Taget</toctitle>
+   <indextitle>Aftensang paa Taget</indextitle>
+   <firstline>Over Hav og Bjerg og Flod</firstline>
+   <notes>
+        <note>Skrevet under opholdet på Capri sammen med fru Bürgel og hendes fire halvvoksne døtre i marts 1819.  Melodi af Heise.</note>
+   </notes>
+   <quality>korrektur1,korrektur2</quality>
+</head>
+<body>
+Over Hav og Bjerg og Flod
+  Kom jeg hid fra Norden;
+Ei hvad Hjertet hist forlod
+  Finder det paa Jorden.
+
+O, men her dog Øiet seer
+  Hvad ved Codans Strømme
 Aldrig uden Veemod meer
-S jalen sig kan dremme.
+  Sjælen sig kan drømme.
 
- Underfuldt er her at staae; Saligt her at hvile:
-I hver Luftning Engle smaa Vifte og henile.
-Stille Nat paa fremmed Tag! Flammebjerg ved Voven!
-Velfle Nattergaleflag
-F r a Lemoneskoven!
-Nye Himmel! nye Jord! Nye Tryllestemmer!
-Fryd, jeg drsmte om i Nord! N u jeg dig fornemmer!
-Talsomt er Livet dog her. Naar Daglarmen buldrer omkring os.
-Rulle vi rafl gjennem Svarmen med Lyst og standse ved Konstens
-Haller; deStudier kaldes,ogMegetvarheratstudere. Vilde med ilende B lik vi udtyde hvert AlderdomsrSkrifk
-tegn.
-Hist stander Flora - Colossen; her bjalkestark Hercules
-truer;
+Underfuldt er her at staae;
+  Saligt her at hvile:
+I hver Luftning Engle smaa
+  Vifte og henile.
 
- M. 142 -M:
-Venus Callipyga, listig og fkjalmfk, stt S m iil her ud- sender;
-LEdlere hisset os vinker Correggios hsie Maria; Hellige Billeder Raphaels Aand fra Himmelen hidbar.
-Glad jeg gjenkjender og Eder, du troe Perugini og Lippi!
-Dominichino! hav Tak! her din Skytsengel over os svaver:
-Trolig han skjuler med Skjoldet Damenen for Barnet, som leger —
-Skjul du ham kun for den barnlige Aand, du Sjalenes Vogter!
-Stundom naar Gladen er sterst, naar her under lysere Himmel
-Livet mig tykkes forklaret og Jorden de Saliges He  land,
-Slynger sig Dragen om Livstraers Nod, og fra Dybet det hyler —
-Englen hans Aasyn har skjult; men hans Rest kan al Verden fornemme.
+Stille Nat paa fremmed Tag!
+  Flammebjerg ved Voven!
+Velske Nattegaleslag
+  Fra Lemoneskoven!
 
+Nye Himmel! nye Jord!
+  Nye Tryllestemmer!
+Fryd, jeg drømte om i Nord!
+  Nu jeg dig fornemmer!
+</body>
+</poem>
+
+<poem id="ingemann2017100449">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  L43
 D ce m o n e n.
 ^ v o r Livsfarver spille Fra Himmel og Zord,
@@ -2038,9 +2554,9 @@ See vi forneden den Jord, vi forlod, liig en Paradiisr have.
 — Fort over hedere Vei, gjennem Damp af qvstlende Svovlrsg!
 Hist sig langsomme Flod af glsdende Lave fremvcrlter; Dybt det under os tordner, og over os Stenene flyve. Krateret kom ei for mer! der rase nu Afgrundens
 Flammer.
-N<rr dog staae vi forbauset en Stund ved glsdende Jldflod,
+Nær dog staae vi forbauset en Stund ved glsdende Jldflod,
 Se.e med nysgjerrig Gru, hvor dens Verld sig fremfkyder af Dybets
-Sv<rlg, det rerdsomt fortærende; vildt med Latter opkaste FsrerneJldgrsd af brcrndendeStrsm: "see!"— raabe
+Svælg, det rerdsomt fortærende; vildt med Latter opkaste FsrerneJldgrsd af brcrndendeStrsm: "see!"— raabe
 , de lystig —
 "S lig Makaroni man faaer, naar der Gjestebud feires
 i Helved!"
@@ -2073,7 +2589,7 @@ S tille beskue hiin Afgrundens Kamp — lyksalig oploftet. Skulde ved rcedselstj
 Himlen
 Kjadet, liig Stjernerne hist, der nu rolig i Dybet nedstirre. — Veemvdblandede Fryd! dig har jeg saa ofte forr
 nummet;
-Dybere rorer du mig, end Jordens fuldendteste Gl<rde. — D u , som i Faklernes Glands hist langsomt bag Klippen
+Dybere rorer du mig, end Jordens fuldendteste Glæde. — D u , som i Faklernes Glands hist langsomt bag Klippen
 hensvcever.
 Medens det flagrende S to r dine Lokker i Natten omr vifter.
 Nordens hsihjertede M oe! du savner vist ogsaa et Billed,
@@ -2096,7 +2612,7 @@ fkued —
 Priseligt Helgenens Liv og hans fromme Bedrifter os fryde.
 Som dem med konstnerisk Haand her Dominichino af  bildet).
 Halvfuldendt her end straaler det S y n , hvorfor Konstner ren blegned.
-Da for Misundelsens G ift han segned ved hellige Konstr v<rrk.
+Da for Misundelsens G ift han segned ved hellige Konstr værk.
 Slangen forfærdelig Daad her giftige Nid har i Msrket Skummel udruget. De blodige Spor Catacomberne
 gjemme.
 Dsdningehoveder her fra Hulen i Fakkelskin grine; (Tidt forsvinder i Dsdslabyrinthen urolige Hoved) Mangt Blodoffer i Lsndom her sank for Snigmorder
@@ -2133,7 +2649,7 @@ Oldtids Smaakjsbstedsliv end de gydesmaae Gader os
 viste;
 Brende paa Hjernerne saae vi. Paa Gulvet i Kamrene
 traadte
-Foden paa steerkt Mosaik, som Aartustnders V<rlde har
+Foden paa steerkt Mosaik, som Aartustnders Vælde har
 trodset.
 Billeder, grebne af Livet, paa Verggen end minded om
 Elskovs
@@ -2156,6 +2672,19 @@ Livet forvirrer stg strlsomt: ncrrvcrrende staaer det For  gangne,
 Blander i lystige Hiebliksliv sit dsdblege Gjensirrd; Hedenoldsguder opstaae og i deres Templer sig rsre. Fort i Fortryllclsers Land jeg tumler, og vexelviis drsmmer
 Sjtklen om underfuld Paradiisfryd og omvilde Dirmoner.
 
+</body>
+</poem>
+
+<poem id="ingemann2017100450">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  H j u l s k o e n.
 Muller op- ruller ned Det Hjul uden Fred —
 Sidder for sidder bag Sidder inde i Mag, Eller leber ved Siden
@@ -2179,7 +2708,7 @@ S o m Sireneqvad klang
 M ig dens tryllende Sang — Fra mit Bryst den sig hcrver.
 Som en Sylphe i Luft den bortsvcrver.
 Og mod Afgrunden ned Ruller Karmen afsted;
-S o m en K<rmpe saa stor
+S o m en Kæmpe saa stor
 I de luende Spor
 Og med Tommen af Slanger Styrer Trolden den fnysende Ganger.
 Men om flammende Hjul Flagrer venlige Fugl, Sjunger salig og fro.
@@ -2216,7 +2745,7 @@ Stirred mod Afgrund og Himmel og blegned ei mere for
 Dybet.
 Hoit gjennem kjolige Sky ad Fjeldvæggens Trapper gik
 Veien
-Ned til de kogende V<rld; dog ei vulkaniske Zordbund
+Ned til de kogende Væld; dog ei vulkaniske Zordbund
 Brerndte vor Fod: sex hundrede Aar laae Zldstrommen storknet.
 
  159 ,/
@@ -2228,7 +2757,7 @@ Mcrgtig med underfuld Konst paa herlige Ssiler her bares
 Fisteriig Dam *); ved stolte Ruin af VppighedsrVcerket Msrkt om Tyrannernes Old os minded de hundrede
 B a m re s Rester; men fredeligt M o s nu groer hvor Fcengflerne
 sprcrngtes. Underfuldt samler sig her hvert Villed, Naturen indr
-pr<rged
+præged
 Dybest med evige Trcrk af Skjonhed og Rerdsel, af
 Livslyst,
 Dod og FordsmmelsesrGru i Oldtidens S ja l. Her omr
@@ -2239,7 +2768,7 @@ Har det Elysium seet og det Tartarus, classiste Sangfugl
 
  Bar til de lyttende Sjale paa Jord, mens Aartusinder vexled.
 Hist os henrev elysiriske Mark; der Havet det dsde Standsed vor Fryd; for hver Himmel vi saae, der et Hel 
-ved sig aabned. Bajce hist viser os stolt hvor Guderne boede paa Jorden, Venus Genetrix, og du, Diana, lysbringende Jom fru*)! Varsler endnu du i <Luma fra underfuld Grotte,
+ved sig aabned. Bajce hist viser os stolt hvor Guderne boede paa Jorden, Venus Genetrix, og du, Diana, lysbringende Jom fru*)! Varsler endnu du i Luma fra underfuld Grotte,
 Sybilla! Aldrig jeg fristes vist meer til hist i gravmsrke Grotte
 Tartarus-Veien at see; ei Dybets den rcrdsomme Lsndom Let udforskes i Afgrundens Nat. Fra Hule til Hule Fsrtes vi dybt under Jord; med Fakler i Mulmet bort 
 drog os
@@ -2286,7 +2815,7 @@ Llldrig udtaled hun frygteligt S y n ; men Hulen vi flyede. Neros forpestede Aan
 Livligt bevægede S ja l og om rcrdsomme Modermord hvisker.
 Der kan du Jordlivets Paradiis see; Fra helvedheed Hule Kan med Stormen din Skygge hver Nat til din Villa
 hensuse:
-N<rr er Acherons Bslge og n<rr den averniske Afgrund; Der kan du styrte dig ned og for Daglyset flye, eller hisset.
+Nær er Acherons Bslge og nær den averniske Afgrund; Der kan du styrte dig ned og for Daglyset flye, eller hisset.
 Hvor Solfatara forjager hver Gjest med Svovlgravens G iftlu ft,
 Eller i Grotten, hvor hisset vi Hunden fra Krampedsd frelste,
 Medens forbavset vi saae hvor Zordluften Faklen udr stukked.
@@ -2336,14 +2865,14 @@ mig omtoned;
 From henvandred ad Klosterets Stie graastjcrggede Bror der.
 HsitpaadengrenneRuin sadfremmedeKonstner. Med Klsgt han
 Bilded de herlige Skikkelser af, medens Aasyn og Hie Lyste af Fryd, og Haanden i Skjsdet tidt synkende hvilte. Ja, jeg har stuet det Alt, og dog maa jeg prise din
-Sommer, Degenes saftgrsnne Heland! L<rrken mod Sky sig hist
+Sommer, Degenes saftgrsnne Heland! Lærken mod Sky sig hist
 hvirvler, Qvidrer til Klang af Leen i Eng, mens Rugmarken
 belger;
-H s i sig h<rver ved H e i med Dysser fra Hedenoldstiden; Der staaer lyshaaret Dåne med Fryd og dremmer om
+H s i sig hæver ved H e i med Dysser fra Hedenoldstiden; Der staaer lyshaaret Dåne med Fryd og dremmer om
 Kcrmpens
 Jid, og han mindes de herlige Sagn; over Hav han udstuer.
 Hvor med Sivkrands i sogrenne Lok stumbarmede Havfru Sjunger om Heltenes Ded og om Dannebrogs evige
-H<rder.
+Hæder.
 Lenlig blufærdige Jomfru i Lunden paa Jrristen lytter,
 Sperger vel Gjegen iblandt om hvad hun siet Ingen vil rebe.
 i
@@ -2600,7 +3129,7 @@ Her staaer Almagtens V«rk: ei stoltere Syn har mit Hie
 Seet; ei rigere dufted en Vaar mig paa Jorden imsde. Saa fra Hellenifke Hehav underfuldt Sagn mig afbilded Guddommens skabende Kraft, fremsprungen af Dybet i
 Fjeldform,
 Prydet af Kjirrlighedsenglen med Skjsnhedens evige Krone.
-Frihed! her aander vel du? vist aldrig har K<rmpen,
+Frihed! her aander vel du? vist aldrig har Kæmpen,
 den hsie.
 /
 
@@ -2633,6 +3162,19 @@ Med Barbarossas markvcerdige Navn. Endnu mig omdufter
 Blomsten, hist fremmede Haand i Morgenglands gav os paa Klippen:
 Stille den minded om Gladen, som flyer, om Gladen som bliver.
 
+</body>
+</poem>
+
+<poem id="ingemann2017100451">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  De hvide Iris
 - spaa Capri).
 Paa Fjeld Somaren*) fremffrider Ved Skrsnt over dybe Sve.
@@ -2709,6 +3251,19 @@ Blomstens Fred paa Verdens H)e»
 Ogsaa dig forlod v i hisset: Over Hav, som kjakke Ssfugl, V il du flyve til dit Norden; Der vi see dig glad igjen!
 — Ene dog jeg ei bortdrager: Atter jeg i Fruerkarmen
 Seer de lyse Hine trindt mig; Og i Sjeelen Hjemmets Engel Synger om forjcettet Land.
+</body>
+</poem>
+
+<poem id="ingemann2017100452">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Tilbageblik.
 (Rom i April 1819).
 (8 a a er det virkelig vort stille Noma, Jeg atter seer! Var den en Phantasie
@@ -2746,7 +3301,7 @@ Mens trindt i underfulde Domskapel
 Hvert Lys udstuktes, og kun eet, med Haabets Med Kærlighedens Flamme, svandt bag Altret. Jeg vandred ud som af Alverdens Grav
 Og saae i Korsets store Stjerneglands
 Som Pedersdomen Verdens Gravnat oplyst. Men da Basunen klang: Han er opstanden!
-Og Folket kn<rled, mens Velsignelsen
+Og Folket knæled, mens Velsignelsen
 Med hellig Paaffemorgens Jubeltoner Henover deres frelste Isser svawed - -
 Det var som Aandens Vingestag mig rsrte,
 Skjsndt blandt de Fremmede jeg standed fjernt. Forbandelser, man sagde, flagred hen,
@@ -2760,59 +3315,92 @@ Det stille Nom nu atter, stor og herlig,
 Men de, jeg her mig glcrded med, bortfare Og veemodsfuldt i Rejselivets Fryd
 S ig blander tungt Farvel med Afskedssangen.
 *)
-Afskeden.
-(Rom den 21de April 1819).
-§3ed Tiberbroen *) paa romerst Vei Z vaarfrist Morgen jeg staaer.
-De velste Blomster fryde mig ei: Z Dalen en Stsvsty gaaer.
+</body>
+</poem>
+
+<poem id="ingemann1832a1">
+<head>
+   <title>Afskeden</title>
+   <subtitle>
+      <line>Ved Ponte Molle</line>
+      <line>(Rom den 21de April 1819)</line>
+   </subtitle>
+   <toctitle>Afskeden</toctitle>
+   <indextitle>Afskeden</indextitle>
+   <firstline>Ved Tiberbroen paa romersk Vei</firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+      <note>Ingemanns note: »Til Familien <i>Bügel</i>, Moderen og de fire Døtre, i hvis Selskab jeg havde foretaget Reisen fra Rom til Neapel og tilbage til Rom.«</note>
+   </notes>
+   <quality>korrektur1</quality>
+   <keywords>rom</keywords>
+</head>
+<body>
+Ved Tiberbroen paa romersk Vei
+  I vaarfrisk Morgen jeg staaer.
+De velske Blomster fryde mig ei:
+  I Dalen en Støvsky gaaer.
+
 Dernede ruller en Reisekarm;
-Alt kjender jeg Mulens Gang.
-Veemodigt Hjertet i fulde Barm S ig rsrer til Afskedssang.
-konle NIolle.
+  Alt kjender jeg Mulens Gang.
+Vemodigt Hjertet i fulde Barm
+  Sig rører til Afskedssang.
 
- Men Hjertet knuger for tungt mit Bryst; For Sang har Tungen kun Baand.
-Z Karmen blinke de Hine lyst; Der vinker nu Slsr .og Haand.
-Hver Haand jeg kjender medSlsr, med Ring Zeg kjender de Hine, de Haar;
-Zeg soer med de Skjsnne saa vidt omkring; Farvel de mig hvisked igaar.
-Endnu engang jeg dog hilse maa De Sj<rle fra Hjemmets Land,
-M a a r<rkke dem Afskedsblomster smaa. Om ei jeg dem folge kan.
-Farvel, du Moder med livlig Hu! Farvel, du reisende Brud!
-Farvel, du Barn, som leger endnu Og titter af Karmen ud!
-Farvel, du hsie nordiske M s e ! Farvel, du Svster saa from!
-Tilsammen saae vi lyksalig He — Nu vender sig Hjulet om.
-(13)
+Men Hjertet knuger for tungt mit Bryst;
+  For Sang har Tungen kun Baand.
+I Karmen blinke de Øine lyst;
+  Der vinker nu Slør og Haand.
 
- D e Reisende rulle i Verden hen, Liig Rosenblade i Strsm.
-Det Svundne kommer ei meer igjen; Snart er det en gammel Drem.
+Hver Haand jeg kjender med Slør, med Ring;
+  Jeg kjender de Øine, de Haar;
+Jeg foer med de Skjønne saa vidt omkring,
+  Farvel de mig hvisked igaar.
+
+Endnu engang jeg dog hilse maa
+  De Sjæle fra Hjemmets Land,
+Maa række dem Afskedsblomster smaa,
+  Om ei jeg dem følge kan.
+
+Farvel, du Moder med livlig Hu!
+  Farvel, du reisende Brud!
+Farvel, du Barn, som leger endnu
+  Og titter af Karmen ud!
+
+Farvel, du høie, nordiske Mø!
+  Farvel, du Søster saa from!
+Tilsammen saae vi lyksalig Ø -
+  Nu vender sig Hjulet om.
+
+De Reisende rulle i Verden hen,
+  Lig Rosenblade i Strøm.
+Det Svundne kommer ei meer igjen;
+  Snart er det en gammel Drøm.
+
 Ved Tiberbroen jeg ene staaer
-Med Haanden paa trange Barm.
-Paa Bakken med Djalderne Mulen gaaer — D e r flygter den Reisekarm.
-Med Slsr end vifte de Hamder smaa; Stev stjuler de Skjsnne paa Vei:
-En Taare jeg i deres Hine saae — Ak! hvorfor gmder ei jeg?
-Aorladt af Vennerne fra Norden nu,
-Zeg eensom gaaer, mens fjernt paa adskilt Vei
-De i den vide Verden sig adsprede:
-Vor danste Nordmand*) djarv paa stolte Hav
-N u vrede Havmamd og Delphiner teemmer
-Med Sang fra Dantes Hjem og Tassos Lunde
-*) Provst Frederik Schmidt.
-*
+  Med Haanden paa trange Barm.
+Paa Bakken med Bjælderne Mulen gaaer -
+  Der flygter den Reisekarm.
 
- Vor stille Blomsterven*) staaer hsit og fjernt Ved LEtnas Flammesvalg og veier Bjeegluft Og tanker paa. lyksalig He. Og du.
-Hvis Sjal var hjemme i forsvundne Old**)*! Med kjarligt Blik for Aandens Spor i Tiden, Du i Nordmannens Hjem nu Danmark ssger. — Og Ssstrene, som svandt i Stsvet hist. Dem seer jeg aldrig samlet meer s Verden.
-Ak, stilte fjerne Brudgom dem kun ad!
-Paa Mulen syntes mig <ad, bleeg og kold. Som Veturin den magre Gravens Konge.
-Og drog til fjerne Grave-Dsdens Brudes**). Bort, msrke Ahnelse! hvad vil hu her
-I Vaarens Land? — see! her er Liv og Glade Her stal jeg end et Sydens ,Foraar see;
-Dets Farveglands mig stal til Norden folge.
-*) Botanikeren og Meteorologen D r. Achouw.
-**) Historikeren Dr. Estrup,'som var reist fra Rom til Frankerig.
-***) Een af disse mine Reiscselfkaberinder dsde kort efter i Carlbad, en anden Aarct ester sit Bryllup i Berlin.
-(13 *)
-* E.
+Med Slør end vifte de Hænder smaa;
+  Støv skjuler de Skjønne paa Vei:
+En Taare jeg i deres Øine saae -
+  Ak! hvorfor græder ei jeg?
+</body>
+</poem>
 
- ..
-Afskedsfest >i Stortå.
-(Den 27de April 1819).
+<poem id="ingemann2017100454">
+<head>
+   <title>Afskedsfest >i Storta</title>
+   <subtitle>(Den 27de April 1819)</subtitle>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side 196-199.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+.
+.
 .»
 ^.
 . End er Dansien start i Roma: . skandinaver gaae og komme;
@@ -2846,7 +3434,7 @@ Glassets Klang og Sangens Toner
 Og med gamle danste Hurra Feires nordisk Bacchanal.
 Med Deres Durchl. Hertug C h ris tia n og Prinds F re d rik E m il af Slesvig-Holsteen-Augustenborg.
 
- danske M<rnd i velffe Land! En nordisk Skaal lad klinge!
+ danske Mænd i velffe Land! En nordisk Skaal lad klinge!
 Lad H.rnene fra Danmarks Strand E t hoit Levvel medbringe!
 De hvilet har i Sydens Vaar; De atter Vingen hoit udstaaer- Og rask fra milde Vlomsterland
 Mod Kraftens Hjem sig svinge.
@@ -2864,10 +3452,22 @@ Et Hurra for den Fryd, som svandt! Og eet for den, som bliver!
 Paa Himlen Stjerner, store, smaa. Henrulle rast og glsde;
 Gjensamles de paa hsie G a n g , De suse hen med Zubelklang — Hurra for dem, som fra os gaae!
 Hurra! naar vi dem mvde!
-EensomL Landliv
-( i Frascatl).
+</body>
+</poem>
+
+<poem id="ingemann2017100455">
+<head>
+   <title>Eensomt Landliv</title>
+   <firstline>(i Frascati)</firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side 199-207.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Fjorten Dage gaaer jeg ene
-Her ved Tusculums Ruiner, Aander Foraarsluft paa Bjerget, Plukker Blomster trindt i Dalen,
+Her ved Tusculums Ruiner, 
+Aander Foraarsluft paa Bjerget, Plukker Blomster trindt i Dalen,
 Standser tidt ved Skovkapellet, Hvor Madonnas Billed staaer. Her er Zngen, som mig kjender Her er .Zngen, som mig elsker; Hvem stal jeg de Blomster bringe
 Hvo stal kjarlig dem bevare. Og til hvem stal Eremitten
 Z sit Modersmaal her tale —
@@ -2878,7 +3478,7 @@ Smiled du ei, Himmeldronning!
 Fra dit Billed i Kapellet
 Fromt til Blomst og Sang og Suk?
 Glemte kun ei Catholiken
-Guddomsssnnen for hans Moder, B a rn lig t Sv<rrmerie jeg kunde
+Guddomsssnnen for hans Moder, B a rn lig t Sværmerie jeg kunde
 Her misunde Bsrn og Qvinder, Som hver Morgen og hver Aften Knerle fromt med Blomst og Krandse Ved Madonnas Skovkapel.
 Kjsrlkg selv i hendes Billed
 Seer jeg helligst Qvindehsihed,
@@ -2896,8 +3496,8 @@ Hist ved Stenen gaae til Kilden Skjsnne Tusculanerinder
 Med de blanke Kobber-Vaser Paa de sorte Lokkers Krands; Ei til lidet Vindve see de;
 Men forinden sidder ene Eremitten fra det Fjerne;
 Ingen troer, han er en Kjattter;
-Net catholst er Alting om ham: Paa Huusaltret Glaspr<rcepen Hos S t. Joseph staaer i Krogen Blandt de trende Crucifixer;
-Og paa V<rggen ved mit Leie Hamger Vievandets Kar.
+Net catholst er Alting om ham: Paa Huusaltret Glaspræcepen Hos S t. Joseph staaer i Krogen Blandt de trende Crucifixer;
+Og paa Væggen ved mit Leie Hamger Vievandets Kar.
 Her er venligt, her er stille; Herfra seer jeg Sydens Foraar
 Over Bjerg og Dal hensverve I sit store Blomstersisr.
 Herfra seer jeg Folkelivet,
@@ -2967,9 +3567,22 @@ Gjerne jeg dem efterligner, .. Taler selv med Haand og Miner
 Som en heftig Romer her. Bedst mig lssnes Tungebaandet, Naar hos smilende Signora
 Ord med livlig Tanke kappes;
 
- Trevnere med M<rnd gaaer Talen Overalt i fremmed Land.
+ Trevnere med Mænd gaaer Talen Overalt i fremmed Land.
 ,, ?^1
-Vioolo 8t. I^neia"
+</body>
+</poem>
+
+<poem id="ingemann2017100456">
+<head>
+   <title>''Vicolo di St. Lucia''</title>
+   <indextitle>Vicolo di St. Lucia</indextitle>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side 207-212.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Staaer paa Hjsrnet af mit Strcrder Her den fromme Helgeninde ' - , -
 Som Penat mit Hjem beskytter; Tidt hun mig velsigned for.
 I Neapel!var det hende, >
@@ -3029,7 +3642,7 @@ Stjerner dandse. Sole brernde — Folket snart sin Lyst udskriger. Snart mislykk
 ,
 Hvor herligt her fra Bjerg til Bjerg at ride Paa langsomt Esel, og fra Stad til Stad! Hist lavt Kapel, her hsie Kloster standser Den Fremmede; hver Dsr ham aaben staaer Forinden fromme Billeder paa M uren! Foruden herlig malerist Natur!
 Grotta Ferrata! i din Helligdom)*
-*) I'iiAFi <1rr1 1 u8euIo, N08tr0 enore ! entra il pastore!
+*) I'iiAFi 1rr1 1 u8euIo, N08tr0 enore ! entra il pastore!
 
  St. Nilus*) end besatte Dreng helbreder; Her hedenst Keiser vandrer ham imode. Nedladende i al sin Herlighed,
 Og byder ham en Naade sig udbede;
@@ -3044,7 +3657,20 @@ Af Trylletonerne fra Bjerg og Dal, Bortdromme sit Aarhundreds Liv og Strtrben.
 Blev Sjerlen hjemme her, den flagred hen I Blomsterduft paa Sommerfuglevingen
 O g higed stedse fremmed hid tilbage.
 
- De sidste Dage i Rom og dens Omegn.
+</body>
+</poem>
+
+<poem id="ingemann2017100457">
+<head>
+   <title>De sidste Dage i Rom og dens Omegn</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side 213-215.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+ .
 Aarvel, Marino! og Castel Gondolfo! Albano og Ariccia! farvel!
 Og du, o Tivoli, med dine Grotter, Med dine Vandes underfulde Brusen!
 (End hist de Reisende jeg dandse seer Om Altarfiammen i Sybillas Tempel; Hist Hedenoldets Aand i milde Luftning
@@ -3086,26 +3712,39 @@ Han som en Skygge syntes mig bortsvLve;
 M ig Festens Blomster var hans Dsdningkrands.
 — S n a rt, alle velste Blomster, farer hen! Endnu en venlig Fest — og saa farvel!
 Du stjsnne Festers Land med dine Krandse!
-Blomsterfesten i Gensano.
-T i l Gensano Blomsterfesten, Vidtbersmt, hver Fremmed kalder.
+</body>
+</poem>
+
+<poem id="ingemann2017100458">
+<head>
+   <title>Blomsterfesten i Gensano</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side 215-219.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Til Gensano Blomsterfesten, 
+Vidtberømt, hver Fremmed kalder.
 Glad med Strsmmen jeg henvandrer. Seer paa Festen som de Andre, Glcrder mig ved Folkestimlen,
 Ved de stjsnne Landsbydragter,
 Ved de maleriste Grupper,
 *) Den gamle oervoerdige Pave Pius
 
  Ved det Folkelivets Dilled, Festens Blomsterramme samler. Ved earholske Andagts Farve' Og hvad Protestantens Hie i Fcrngfler i hesperist Land.
-Ved min Side staaer alvorlig From cerv<rrdig Klosterbroder, Folder stille magre Hcrnder
-Over Capuzinerr.B<rltet,
+Ved min Side staaer alvorlig From cerværdig Klosterbroder, Folder stille magre Hcrnder
+Over Capuzinerr.Bæltet,
 Seer paa Gadens Blomsterdynger Med en strlsom Zld i Hiet;
 Og i Oidingsffjcrgget ruller
 Lonlig Andagtstaare ned.
-"Hor mig, fremmedVen!"— hansiger "Og hvor stjsnne Skal du seer kun. S k a l du Livets Kj<rrne see.
+"Hor mig, fremmedVen!"— hansiger "Og hvor stjsnne Skal du seer kun. S k a l du Livets Kjærne see.
 Her du seer kun verdslig Glimmer, Her du seer kun Skuespillet,
 Som d^i i din Sjal foragter. Medens dog nyfigent Hie
 V il forlystes ved dets Glands.
 Ahner du ei dyb Betydning
 Z vor Leeg med Blomst og Billed?
-Troer du, intet Hjerte rsres. Troer du, ingen. Sj<rl opleftes.
+Troer du, intet Hjerte rsres. Troer du, ingen. Sjæl opleftes.
 
  Hvor saa mange Hine blinke. Hvor saa mange Tanker flyve Mellem Herrens Blomsterflamme! Og hans Stjerne-Throne hist? Veed du, hine tusind Hcender Virke Teepp'et uden Lige, Hvorpaa Salighedens Herre Bcrres flal i Seierstog?
 Under helligt Skjeerm han hviler.
@@ -3119,7 +3758,7 @@ Tusind Sole, tusind Stjerner, Himlens Pragt og Jordens Glands. Mangent helligt B
 Seer du selv paa Gaden malet Fromt med Blomster-Mosaik. Last ei Verrket, men forstaa det!
 
  S p o t ei over Konstnerfolket, Som med Blomsterlsv henkaster Kjcrkt i flygtigt Efterbilled
-Raphaelers Vcrrk i Stev! Vinden snart det V<rrk henveirer. Leger snart med flygtigt Omrids; End den skaaner det srbedig: See! vor Himmelgjest er ncrr.
+Raphaelers Vcrrk i Stev! Vinden snart det Værk henveirer. Leger snart med flygtigt Omrids; End den skaaner det srbedig: See! vor Himmelgjest er ncrr.
 Paa hans Vei ffal til et Ttrppe Konsten sine Vcerker sprede,
 Bsie ftomt sig med Naturen, Salig ved for ham — at dse.
 S tille , stille! See, han kommer: I Monstransens gyldne Straaler,
@@ -3135,7 +3774,19 @@ Her, hvor Barn og Olding medes Fromt i Phantasiens Land.
 Kan vi see med barnligt Hie Barnehimlen i dens Billed,
 Skal dens Blomsterduft os folge
 Saligt, til vi see den hist.
-Paa Veien fra Rom.
+</body>
+</poem>
+
+<poem id="ingemann2017100459">
+<head>
+   <title>Paa Veien fra Rom</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side 219-222.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 A^ed dine Blomster folg mig, du fromme Barneaand! Mens Sydens A lf mig lsser af starke Tryllebaand! Alt ruller Neisehjulet af Romerporten ud —
 Lad rulle kun! det gaaer jo mod Fadreland og Brud. Hvo sidder hist saa stille paa hsie Tiberbro?
 Med Afskedsblomster venter der Vennen, brav og tro *); Fast Genien ham lamker til stjsnne Tiberbred;
@@ -3164,7 +3815,7 @@ For Sydens muntre Farver, for Titianers Glands, For Livet i hvert Aasyn han Hie 
 Nonciliones Klipper i Aftenrodens Pragt
 Har over Konstnerblikket ei halv saa megen Magt, Som Silkespinderinden hist med den hvide Haand, Som rynket Kapuziner med Kors og Perlebaand. Fra Fest til Fest gaaer Reisen i rige Helgenland;
 Fast hvert Kapel paa Veien om Under tale kan. Hvor skjulte Dsdsnod truer, en venlig Aand er nerr: Paa Bjerg ved Afgrundspynten vs vugged Karmens
-Fj<rr; Tilbage ruller H ju le t; men Lykken er ei feen:
+Fjær; Tilbage ruller H ju le t; men Lykken er ei feen:
 Ved Dyb mod Skjabne r Hjulet sig stemmer mcrgtig Steen;
 Fra Konstnerhaanden kom den; men.hvo ham Vinket gav
 I lynsnar Redningstanke ved rcedsom Styrtnings-Grav, Det ahned selv han neppe; dcrpaa vi tarnkte ei.
@@ -3178,8 +3829,22 @@ Paa Hjertetavlen stille stg maler Bjergets Steen.
 Snart Lykkehjulet atter gaaer mellem Dal og Sky; Naturens store Under med Konstens Barker flye.
 Sienas gamle Skatte vi ssgte glad og fandt;
 Med Pisas Campo santo og skjave Taarn de svandt. En Qvel jeg nwdig standser: jeg ved en Villa staaer; Der atter Hjemmets Toner i fremmed Land mig naaer.
+</body>
+</poem>
+
+<poem id="ingemann2017100460">
+<head>
+   <title>Cisanello</title>
+   <subtitle>(Juni 1819)</subtitle>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side 222-224.</note>
+      <note>* En Villa ved Pisa, tilhørende den norske kjøbmand Stub i Liverno.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Cisan ell o**).
-(Juni 1819).
 Ned Arnos Vred sig mellem Blomster flynger En venlig S ti, hvor fkjont i Almelunden
 Den grsnne Ranke staaer, guirlandebunden; Lysfuglen glimter og Cicaden synger.
 *) Malt af Raphael i Vaticanet.
@@ -3207,9 +3872,22 @@ Paany med Konstens Under, udfyldte S ja l og Bryst. Liig Universets Kloder, det 
 mel Ven.
 Paa skovrig Apennintop jeg fandt ved Veiens Sand
 Slig Ven fra Barndomshjemmet og Hjertets Drsmr meland.
-SLjerneblomsten
-(paa Apenmncrne).
-Stjerneblomst! du kan mig sige Budskab om min Elskelige,
+</body>
+</poem>
+
+<poem id="ingemann2017100461">
+<head>
+   <title>Stjerneblomsten</title>
+   <subtitle>(Paa Apenninerne)</subtitle>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side 224-226.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Stjerneblomst! du kan mig sige 
+Budskab om min Elskelige,
 Om hun og mig ret har kjar, Om det er af ganske Hjerte —
 Om med Glade — om med Smerte — Om hun fjern mig end er nar.
 
@@ -3232,7 +3910,20 @@ X
 
  Stjernens Glod er end tilbage; Den stal Ordet mig gjentage ' Om den Flamme, reen og tro.
 Som med Blikket fra det Fjerne Hist i Apenniners Stjerne Moder mig med med hellig Ro.
-Paa Veien fra Bologna til Padua og Venedig.
+</body>
+</poem>
+
+<poem id="ingemann2017100462">
+<head>
+   <title>Paa Veien fra Bologna til Padua og Venedig</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side 226-227.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+.
 M e d hvem jeK nu bortfarer, mig snarlig bliver klart:
 ,
 Med Skuespillertrouppen jeg er paa lystig Fart. Paa Veien strax sig rober det KonstnerrCompagnie: Vor Buffo efterligner hver Gjak,.vi soer forbi; Bor vr!mu Dvnnu synger til Figurantens Bas, Med Dandserinden kappes i Parodis Bajaz.
@@ -3253,6 +3944,19 @@ Gled herlige Palladser og Biller os forbi.
 I Morgenrodens Guldglands jeg paa Gondolen glad Zndroede i Venedig, den underfulde Stad.
 (15 *)
 
+</body>
+</poem>
+
+<poem id="ingemann2017100463">
+<head>
+   <title>Venedig</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side 228-233.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
  Venedig.
 J e g Marmorstaden stuer 2lf store Sump opstige
 I Pragt foruden Lige
@@ -3321,6 +4025,19 @@ Blodig Porphyrssilen luer
 Hist, hvor Dogens Blod er rundet.
 
  B o rt nu, bort fra Hertugborgen! Sidste Gang her Loven svinger Over mig de gyldne Vinger — Sarsynsstad! farvel imorgen!
+</body>
+</poem>
+
+<poem id="ingemann2017100464">
+<head>
+   <title>Adria</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side 233-234.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 A d r i a.
 M s e med svanehvid Barm, med himmelblaat Balte! Jomfru med ssgrsnne Lokker!
 Dronning fra Dybet!
@@ -3344,8 +4061,21 @@ Sang om Dybets Pallads af Dsdningeknokler.*
 M ild du til Kysten henstjsd den. Mens du med Stormen
 Flygted i hvirvlende S k y og blinked i Lynglands.
 *»
+</body>
+</poem>
 
- Afsked med Italien.
+<poem id="ingemann2017100465">
+<head>
+   <title>Afsked med Italien</title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side 235-237.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+
+ .
 (Triest den 15de Juli 1819).
 §arvel, du Land med Tryllelufk, Med Palmer og Orangeduft!
 Du Land med store Oldtids Spor, Hvor Lauren ved Ruinen groer!
@@ -3375,9 +4105,27 @@ Min Sjal boer under Nordens Sky.
 Hist seer jeg mine Bjerge blaae. Hvor hsie Nordhavsbslger gaae; Der Dal og Skov og Hav har Rest Med Gjenklang dybt i nordisk Bryst.
 Liig Guldglandsstrem ved fremmed Strand Flyer billedstjsnne Drsmmeland — Afsted, afsted! rul hen, o Strsm! Henfiyv i Sang, du gyldne Drem!
 Rettelser.
-Side 40 Linie is Sjcrnens lcr»s: Stjernens — 54 i Overskriften: 1826 l. 1327
--->
+</body>
+</poem>
 
+<!--
+<poem id="ingemann2017100401">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <notes>
+      <note>Teksten følger <i>Smaadigte og Reiseminder</i> (1832), side .</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+</body>
+</poem>
+
+    -->
+
+</content>
+</section>
 
 
 </workbody>
