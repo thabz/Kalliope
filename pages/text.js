@@ -95,6 +95,7 @@ export default class extends React.Component {
     poet: Poet,
     work: Work,
     text: Text,
+    section_titles: ?Array<string>,
     prev?: PrevNextText,
     next?: PrevNextText,
     error: ?Error,
@@ -114,6 +115,7 @@ export default class extends React.Component {
       prev: json.prev,
       next: json.next,
       text: json.text,
+      section_titles: json.section_titles,
       error: json.error,
     };
   }
@@ -128,7 +130,17 @@ export default class extends React.Component {
   }
 
   render() {
-    const { lang, highlight, poet, work, prev, next, text, error } = this.props;
+    const {
+      lang,
+      highlight,
+      poet,
+      work,
+      prev,
+      next,
+      text,
+      section_titles,
+      error,
+    } = this.props;
 
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt tekst" />;
@@ -153,7 +165,11 @@ export default class extends React.Component {
     });
     let renderedNotes = null;
     if (notes.length > 0) {
-      renderedNotes = <div style={{ marginBottom: '30px' }}>{notes}</div>;
+      renderedNotes = (
+        <div style={{ marginBottom: '30px' }}>
+          {notes}
+        </div>
+      );
     }
 
     const renderedPictures = (
@@ -269,6 +285,7 @@ export default class extends React.Component {
               poet={poet}
               work={work}
               rightSide={rightSide}
+              sectionTitles={section_titles}
               title={<TextName text={text} />}
             />
             <Heading title={title} subtitle="Værker" />
