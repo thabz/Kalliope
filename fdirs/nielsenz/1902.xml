@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1902" author="nielsenz" status="incomplete" type="poetry">
+<kalliopework id="1902" author="nielsenz" status="complete" type="poetry">
 <workhead>
    <title>Klokkespil</title>
    <year>1902</year>
+   <pictures>
+       <picture type="frontpage" src="1902-p1.jpg">Forsiden til <i>Klokkespil</i> (1902).</picture>
+       <picture type="titlepage" src="1902-p2.jpg">Titelbladet til <i>Klokkespil</i> (1902). ,,Zakarias Nielsen / Klokkespil / Sange og Digte // Det Nordiske Forlag / Ernst Bojesen / Kjøbenhavn MCMII''.</picture>
+   </pictures>
 </workhead>
 <workbody>
 
-<!--
+<poem id="nielsenz2017100791">
+<head>
+   <title>Motto</title>
+   <firstline>Som Dreng jeg havde et Klokkespil</firstline>
+   <notes>
+       <note>Teksten følger Zakarias Nielsen: <i>Klokkespil</i> (1902), p. 7.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<i>Som Dreng jeg havde et Klokkespil</i>
+<i>med en ti elleve Klange.</i>
+<i>Skønt mat det kun var, og kejtet jeg slog, </i>
+<i>dog Fryd igennem mit Blod det jog</i>
+<i>ved sine melodiske Sange.</i>
 
- Som Dreng jeg havde et Klokkespil
-med en ti elleve Klange.
-Skønt mat det kun var, og kejtet jeg slog, dog Fryd igennem mit Blod det jog
-ved sine melodiske Sange.
-Jeg ejer endnu et Par Klokker smaa, som ofte min Spillelyst lokker.
-Og nu vil mit Vindu op jeg slaa,
-om nogen derude vil ,,lyde paa“, imens jeg slaar mine Klokker.
- ‘
-)!
-'?i
--->
+<i>Jeg ejer endnu et Par Klokker smaa, </i>
+<i>som ofte min Spillelyst lokker.</i>
+<i>Og nu vil mit Vindu op jeg slaa,</i>
+<i>om nogen derude vil ,,lyde paa“,</i>
+<i>imens jeg slaar mine Klokker.</i>
+</body>
+</poem>
 
 <poem id="nielsenz2017100701">
 <head>
