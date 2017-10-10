@@ -161,6 +161,7 @@ med Roser vi smykkede vor Ransel!
    <notes>
       <note>Teksten følger <i>Vandringer</i> (1905), side .</note>
    </notes>
+   <!-- https://it.wikipedia.org/wiki/Cantoria_di_Luca_della_Robbia -->
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -303,6 +304,7 @@ Rom 1901.
 <poem id="nielsenlc2017100906">
 <head>
    <title>Spartanere</title>
+   <subtitle>(Til en Idrætsaften i Sportsklubben »Sparta«.)</subtitle>
    <firstline></firstline>
    <notes>
       <note>Teksten følger <i>Vandringer</i> (1905), side .</note>
@@ -310,10 +312,7 @@ Rom 1901.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
- SPARTANERE.
-(til en idrætsaften i sportsklubben »sparta«.)
-9
-E t Folk af Styrke, en Slægt af Staal! En rank, urokkelig Ungdomsskare,
+Et Folk af Styrke, en Slægt af Staal! En rank, urokkelig Ungdomsskare,
 saa vant, i Faren at se sit Maal,
 at det ufarlige kun blev Fare;
 saa vant at vove, saa vant at ville,
@@ -550,45 +549,35 @@ frygter, Frostens Haand dens Strube fatter.
 <poem id="nielsenlc2017100912">
 <head>
    <title>Sensommerbarn</title>
-   <firstline></firstline>
+   <firstline>Hun er et Sensommerbarn</firstline>
    <notes>
-      <note>Teksten følger <i>Vandringer</i> (1905), side .</note>
+      <note>Teksten følger <i>Vandringer</i> (1905), side 35-36.</note>
    </notes>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-SENSOM MERBARN.
-H u n er et Sensommerbarn.
-Hun fødtes, da Hegnenes Nødder blev brune og Haserne faldt,
-en Morgen, da alle de lune
-Vinde drev om med Spinderens duggede Garn —
-Hun er et Sensommerbarn!
+Hun er et Sensommerbarn.
+    Hun fødtes, da Hegnenes Nødder blev brune 
+    og Haserne faldt,
+    en Morgen, da alle de lune
+    Vinde drev om med Spinderens duggede Garn —
+        Hun er et Sensommerbarn!
+
 Og dog er hun Foraaret selv.
-En Ager, hvor Kimene briste i Mulde
-og Frøene gro;
-og Øjnenes Skaaler er fulde
-af blinkende Væde fra Længslernes blaanende
-Hun er et Sensommerbarn,
-o g ' dog er hun Foraaret selv !
-Elv —
-o* o
- — SENSOMMERBARN —
+    En Ager, hvor Kimene briste i Mulde
+    og Frøene gro;
+    og Øjnenes Skaaler er fulde
+    af blinkende Væde fra Længslernes blaanende Elv -
+        Hun er et Sensommerbarn,
+        og dog er hun Foraaret selv!
+
 O, du min afsindige Sjæl!
-Snart blusser i Blodet Sensommerens tunge, fortærende Glød;
-snart drager du Foraarets unge,
-duftige Drømme som Agerdamp efter din Hæl
-Kender du Foraar og Høst, o, min afsindige Sjæl!
-;>
- 1
-iVlit Liv vil gaa sin Gang, om jeg græder eller ler; om jeg lever eller dør, er for Verden det samme.
-t
-Om jeg brænder som en Flamme, om jeg smuldrer som et Ler,
-om jeg ler eller græder, der er ingen, det ser!
-Jeg taler med mig selv, naar jeg trænger til et Ord; jeg hører paa de andre, og forstaar ej, hvad de
-siger. Om jeg har en Sjæl, som higer,
-og et Sind, som sagte gror,
-om jeg gror eller visner, hvem vil ofre det et
-Ord!
+    Snart blusser i Blodet Sensommerens tunge, 
+    fortærende Glød;
+    snart drager du Foraarets unge,
+    duftige Drømme som Agerdamp efter din Hæl -
+        Kender du Foraar og Høst, 
+        o, min afsindige Sjæl!
 </body>
 </poem>
 
@@ -605,6 +594,17 @@ Ord!
 SKÆBNE.
 (af romanen: de onde aar.)
  -------- SKÆBNE........... ........ ....
+;>
+ 1
+iVlit Liv vil gaa sin Gang, om jeg græder eller ler; om jeg lever eller dør, er for Verden det samme.
+t
+Om jeg brænder som en Flamme, om jeg smuldrer som et Ler,
+om jeg ler eller græder, der er ingen, det ser!
+Jeg taler med mig selv, naar jeg trænger til et Ord; jeg hører paa de andre, og forstaar ej, hvad de
+siger. Om jeg har en Sjæl, som higer,
+og et Sind, som sagte gror,
+om jeg gror eller visner, hvem vil ofre det et
+Ord!
 Jeg hører Verden suse som en Ager fuld af Sæd, en evig Lyd af Mennesker, som mumler og som
 ■stønner. Om de trøsted sig med Bønner,
 om de trued eller græd,
@@ -1842,7 +1842,6 @@ Tananarive!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
- V ANDRING.
 F r a Sorg jeg gik, til Sorg jeg kom, fra Savn og til Savn jeg vandred;
 men vilde jeg standse og se mig om, jeg saå, der var intet forandret!
 Der steg et Bjærg; der randt en Flod; der faldt nogle Bække, som bruste; men vilde jeg glemme, hvad jeg forlod,
@@ -1850,7 +1849,6 @@ sørgmodigt mit Hjærte suste.
 En Vej løb hen, jeg fulgte den.
 Nu vandrer du Glemsel, i Møde!
 Men Minder maned mig hjem igen; det var som en Mumlen af døde.
- — V ANDRING-------- =
 Fra Mark til Skov, fra Bjærg til Dal, fra Hav og til Hav jeg higed;
 dog aldrig jeg kom fra den vejløse Val, hvor jeg med min Skæbne kriged.
 Fra Vest til Øst, fra Vaar til Høst, i Gry og ved Aftentide,
