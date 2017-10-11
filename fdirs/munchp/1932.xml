@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1932" author="munchp" status="incomplete" type="poetry">
+<kalliopework id="1932" author="munchp" status="complete" type="poetry">
 <workhead>
    <title>det nøgne menneske</title>
    <year>1932</year>
-   <!-- TODO: korrekturlæsning, titelblad -->
 </workhead>
 <workbody>
 
@@ -46,17 +45,16 @@ at alt levende er godt.
     <firstline>tunge, store, vuggende med tynde, frysende frakker</firstline>
 </head>
 <body>
-- tunge, store, vuggende med tynde, frysende frakker
+- tunge, store, vuggende 
+med tynde, frysende frakker
 rokker mødrene ind i mælkeudsalgene,
 viktualieforretningerne,
-konfektionsmagasinernetøjbutikkerne
- -
+konfektionsmagasinerne -
 - hastige blikke i voksdugstasker,
 blanke tasker med mange femører,
 toører,
 femogtyveører -
-sukkende blikke i lette portemonnæer punge
- -
+sukkende blikke i lette portemonnæer -
 forsigtige spørgsmaal:
 om der ikke var noget billigere,
 mindre portioner, der ikke kostede saa meget -
@@ -71,7 +69,7 @@ graa trætte øjne tvinges hen til vækkeuret -
 mænd kommer hjem -
 mænd med haarde arbejdsskridt -
 med stærke arbejdshænder -
-haarde, stærke, sultne ansigter med genert-venlige stemmer-
+haarde, stærke, sultne ansigter med genert-venlige stemmer -
 
 haarde, graadige øjne glider skuffede væk,
 væk fra hængende arme -
@@ -111,8 +109,7 @@ hun hører det rasle af sølv,
 og en rødskægget, hornagtig haand,
 den klemmer og kniber og søger -
 og sværmen ruller langs gulvet
-og brædderne duver bevæger sig op og ned (om skib)
- som dæk. -
+og brædderne duver som dæk. -
 
 - violinerne gnider og piber,
 musikanternes glas, de er tomme,
@@ -399,16 +396,13 @@ der lurer med røde øjne,
 skrumper ind og revner
 i solens brændende, ærlige lys -
 vi hader et liv i lavendelduft
-med sladrespejl gadespejl; spejl hængt op uden for vinduet, så man inde fra stuen bedre kan følge med i, hvad der sker ude på gaden.
- og tre par skørter -
+med sladrespejl og tre par skørter -
 noble herrer med luder om natten
-og hestehov i gamacher klædningsstykker, der dækker det øverste af fodtøjet og det nederste af benet
- -
+og hestehov i gamacher -
 vi vil gennemskinnelig klarhed,
 vi vil se, hvad der er,
 for vi ved,
-at esprit vid, åndrighed
- og etik og jomfrufødsel
+at esprit og etik og jomfrufødsel
 er pikanteri for kastrater -
 vi ved, at eet rum er nok til to,
 petroleumsovn og fedtebrød,
@@ -825,8 +819,7 @@ for at svale vore kvinders hede blod,
 mens vore skridt kryber over steppen -
 
 dette ved vi,
-for vi er mænd med laadne bringer brystet på dyr, især om heste
-, <!-- TODO: Fix -->
+for vi er mænd med laadne bringer,
 blaaskyggede muskler og skarpe smalle øjne,
 mænd med lydløse skridt
 og kolde hjærner
@@ -1279,8 +1272,7 @@ paa min ungdoms urolige hav -
 - mens jeg endnu beruset sover
 mellem dine vuggende lemmer,
 tømmer du legende
-mit kogger beholder til pile
- for pile -
+mit kogger for pile -
 
 - dig vil jeg ikke elske -
 jeg vil se solen gennem brydende søer -
@@ -1454,138 +1446,14 @@ jeg ser den fortvivlede kamp,
 som rev dit eget sind i laser - ,
 
 og jeg tier -
-
-
-              <i>vi er mennesker</i>
-            
-
-              <i>hvorfor bebrejde hinanden,</i>
-            
-
-              <i>at vi ikke er andet -</i>
-            
 </body>
 </poem>
 
-<!-- TODO: Er nedenstående en sektion i samlingen? -->
-<poem id="munchp2017092352">
-<head>
-    <title>
-          digte omkring "det nøgne menneske"
-        </title>
-    <firstline></firstline>
-</head>
-<body>
-</body>
-</poem>
-
-<poem id="munchp2017092353">
-<head>
-    <title>en lykkelig dag</title>
-    <firstline>i dag er det en lykkelig dag</firstline>
-</head>
-<body>
-i dag er det en lykkelig dag -
-jeg har faaet et nyt slips af gud.
-det er rødt og jeg binder det i en stor knude,
-en fugl har skidt paa min nye frakke,
-paa den højre skulder
-paa min grønne frakke,
-ja, det er en lykkelig dag.
-den var sort, før den blev ny og grøn.
-det betyder lykke, saadan noget,
-som det med fuglen og slipset. -
-jeg blir berømt i dag, sikkert;
-det regner, men jeg sidder her
-med sort og stærk kaffe -
-iskoldt vand og pive
-foran mig. -
-en lykkelig dag,
-med fugle, slips og regnvejr
-og kaffe, berømmelse og iskoldt vand,
-ja, det er underligt.
-</body>
-</poem>
-
-<poem id="munchp2017092354">
-<head>
-    <title>underlige farver</title>
-    <firstline>saa underlige farver</firstline>
-</head>
-<body>
-saa underlige farver
-har jorden
-og menneskene -
-min hjærne ligger paa en klar sky -
-men den ser ikke mig
-og min underlige færden -
-der i lyset hviler den
-og smiler
-og forstaar -
-men jeg mærker ikke dens smil
-og ved ikke, hvad den forstaar -
-jeg synes
-jorden har saa underlige farver.
-</body>
-</poem>
-
-<poem id="munchp2017092355">
-<head>
-    <title>jeg har to frakker</title>
-    <firstline>jeg har to frakker</firstline>
-</head>
-<body>
-jeg har to frakker,
-som jeg skifter med -
-af elefanthud er den ene,
-af sommerfuglens skind den anden.
-
-den første er for graavejr,
-og for krigstid;
-i slagsmaal,
-og blandt onde ord
-jeg gaar i elefanthud.
-
-og solskin er det bedste,
-for sommerfuglefrakken -
-naar jeg er blandt venner,
-i tryghed og i ro,
-saa blotter jeg mit indre
-igennem flor og vinger.
-
-kun een fejl har de begge
-ellers saa gode frakker:
-jeg ikke selv bestemmer,
-naar jeg vil skifte dem.
-</body>
-</poem>
-
-<poem id="munchp2017092356">
-<head>
-    <title>en borgers livshymne</title>
-    <firstline>livet</firstline>
-</head>
-<body>
-livet -:
-
-først kommer ungdommen,
-som er vore forældres,
-og som vi bruger vore barneaar
-med at glæde os til -
-
-saa kommer arbejdet,
-som kan være kedeligt,
-men som er sin egen løn
-det er det! -
-
-tilsidst kommer døden,
-som vi har lov til
-at tro alt om,
-hvis vi vil -
-
-tak -
-</body>
-</poem>
+<!-- Efterskrift:
+<i>vi er mennesker</i>
+<i>hvorfor bebrejde hinanden,</i>
+<i>at vi ikke er andet -</i>
+-->
     
 </workbody>    
 </kalliopework>
