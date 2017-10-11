@@ -2083,9 +2083,11 @@
   <period>
     <born>
       <date>1756-11-13</date>
+      <place>Itzehoe</place>
     </born>
     <dead>
       <date>1819-07-29</date>
+      <place>København</place>
     </dead>
   </period>
   <works>andre</works>
@@ -2108,6 +2110,41 @@
     </dead>
   </period>
   <works>andre</works>
+</person>
+
+<person id="samsoe" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Ole Johan</firstname>
+    <lastname>Samsøe</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1759-03-21</date>
+      <place>Næstved</place>
+    </born>
+    <dead>
+      <date>1796-01-24</date>
+    </dead>
+  </period>
+  <works>1796</works>
+</person>
+
+<person id="jessen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Juliane Marie</firstname>
+    <lastname>Jessen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1760-02-11</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1832-10-06</date>
+      <place>Frederiksberg</place>
+    </dead>
+  </period>
+  <works>1819</works>
 </person>
 
 <person id="rahbek" country="dk" lang="da" type="poet">
@@ -2169,9 +2206,11 @@
   <period>
     <born>
       <date>1764-01-20</date>
+      <place>Viborg</place>
     </born>
     <dead>
       <date>1827-05-19</date>
+      <place>København</place>
     </dead>
   </period>
   <works>1793,andre</works>
@@ -2570,6 +2609,7 @@
   <name>
     <firstname>Hanna</firstname>
     <lastname>Irgens</lastname>
+    <fullname>Johanne Christiane Irgens</fullname>
   </name>
   <period>
     <born>
@@ -2664,10 +2704,11 @@
   <period>
     <born>
       <date>1795-12-13</date>
-      <place>Kbh.</place>
+      <place>København</place>
     </born>
     <dead>
       <date>1874-11-09</date>
+      <place>København</place>
     </dead>
   </period>
   <works>1848</works>
@@ -2707,7 +2748,7 @@
       <date>1840-01-11</date>
     </dead>
   </period>
-  <works>1827,1836,1837,1840</works>
+  <works>1827,1831,1836,1837,1840</works>
 </person>
 
 <person id="hertzh" country="dk" lang="da" type="poet">
@@ -2906,13 +2947,16 @@
   <name>
     <firstname>Peter</firstname>
     <lastname>Faber</lastname>
+    <fullname>Peder Christian Frederik Faber</fullname>
   </name>
   <period>
     <born>
       <date>1810-10-07</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1877-04-25</date>
+      <place>København</place>
     </dead>
   </period>
   <works>1877,andre</works>
@@ -3342,17 +3386,20 @@
   <name>
     <firstname>Zakarias</firstname>
     <lastname>Nielsen</lastname>
+    <fullname>Jens Peter Zakarias Nielsen</fullname>
     <note>Døbt Zacarias</note>
   </name>
   <period>
     <born>
       <date>1844-06-05</date>
+      <place>Øster Stillinge ved Slagelse</place>
     </born>
     <dead>
       <date>1922-11-11</date>
+      <place>Charlottenlund</place>
     </dead>
   </period>
-  <works>1871</works>
+  <works>1871,1890,1907</works>
 </person>
 
 <person id="drachmann" country="dk" lang="da" type="poet">
@@ -3778,16 +3825,19 @@
   <name>
     <firstname>L.C.</firstname>
     <lastname>Nielsen</lastname>
+    <fullname>Laurits Christian Nielsen</fullname>
   </name>
   <period>
     <born>
       <date>1871-10-27</date>
+      <place>Holsteinsminde</place>
     </born>
     <dead>
       <date>1930-03-11</date>
+      <place>Rom</place>
     </dead>
   </period>
-  <works>1897,andre</works>
+  <works>1897,1898,1901,1905,andre</works>
 </person>
 
 <person id="mylius" country="dk" lang="da" type="poet">
@@ -4535,6 +4585,7 @@
     </born>
     <dead>
       <date>1880-10-08</date>
+      <place>Kristiania</place>
     </dead>
   </period>
   <works>1856,1861,1863,1907,1917</works>
@@ -5814,9 +5865,11 @@
   <period>
     <born>
       <date>1787-11-21</date>
+      <place>Leeds</place>
     </born>
     <dead>
       <date>1874-10-05</date>
+      <place>London</place>
     </dead>
   </period>
   <works>andre</works>

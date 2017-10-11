@@ -233,6 +233,9 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
       l = l.replace('<wrap>', '').replace('</wrap>', '');
       options.wrap = true;
     }
+    if (l.indexOf('<hr ') > -1) {
+      options.hr = true;
+    }
     // Marker linjer som skal igennem XML parseren client-side.
     if (l.match(/<.*>/)) {
       options.html = true;
