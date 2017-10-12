@@ -354,7 +354,7 @@ export default class TextContent extends React.Component {
         lineInnerClass += ' right-aligned-text';
       }
 
-      if (options.isPoetry && !lineOptions.wrap) {
+      if (options.isPoetry && !lineOptions.wrap && !lineOptions.hr) {
         className += ' poem-line';
         const displayedLineNum =
           lineNum != null && lineNum % 5 === 0 ? lineNum : null;
@@ -372,6 +372,13 @@ export default class TextContent extends React.Component {
         return (
           <div className={className} data-num={lineNum} key={keyPrefix + i}>
             {anchor}
+            {rendered}
+          </div>
+        );
+      } else if (lineOptions.hr) {
+        className += ' poem-line poem-hr';
+        return (
+          <div className={className} key={keyPrefix + i}>
             {rendered}
           </div>
         );
@@ -437,7 +444,10 @@ export default class TextContent extends React.Component {
           :global(.first-highlighted-line) {
             border-top: 1px solid rgb(238, 232, 213);
           }
-
+          :global(.poem-hr) {
+            line-height: 4px !important;
+            padding-bottom: 3px;
+          }
           :global(.last-highlighted-line) {
             border-bottom: 1px solid rgb(238, 232, 213);
           }

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
+  <picture src="p1.jpg">
+  </picture>
+  <picture src="p2.jpg" primary="true" square-src="p2-square.jpg">
+      <i>Magnus Brostrup Landstad</i>, litografi efter maleri af C. Olsen.
+      <!-- https://www.flickr.com/photos/trondheim_byarkiv/7859261690/in/photostream/ -->
   </picture>
 </pictures>
