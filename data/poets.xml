@@ -3895,6 +3895,25 @@
   <works>1895,1904,1905,1907,1912,1914,1920,rubai,1923,1924,1925,1926,1927,andre</works>
 </person>
 
+<person id="munchp" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Gustaf</firstname>
+    <lastname>Munch-Petersen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1912-02-18</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1938-04-02</date>
+      <!-- Dødsdagen ikke verificeret, men 2. april er alm. brugt. -->
+      <place>Spanien</place>
+    </dead>
+  </period>
+  <works>1932,1933,1934,1937,andre</works>
+</person>
+
 <person id="kidde" country="dk" lang="da" type="poet">
   <name>
     <firstname>Harald</firstname>
