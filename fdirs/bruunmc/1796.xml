@@ -6,10 +6,10 @@
    <year>1796</year>
    <notes>
       <note>Den fulde titel er <i>Aristokraternes Catechismus, eller Kort og tydelig Anviisning til den aleene saliggørende politiske Troe. Med et Anhang af aristokratiske Psalmer.</i>.</note>
+      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945.</note>
    </notes>
    <quality>korrektur1</quality>
    <!-- TODO: Korrekturlæsning -->
-   <!-- TODO: Kilde og sideangivelser -->
    <!-- TODO: Titelblad, måske? -->
    <!-- TODO: Værket indeholder flere digte indlejret i prosa-teksterne. Disse i ikke medtaget på Kalliope i første omgang. -->
 </workhead>
@@ -19,6 +19,10 @@
 <head>
     <title>Fortale</title>
     <firstline>Genie var fordum Politiets Plage</firstline>
+    <notes>
+      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 9-12.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 ,,Genie var fordum Politiets Plage,
@@ -121,43 +125,54 @@ Paa Friheds Gruus din Marmorthrone staae!
 <poem id="bruunmc2017101316">
 <head>
     <title>Begyndelses-Sang</title>
-    <toctitle><num>1.</num> Begyndelses-Sang</toctitle>
+    <toctitle><num>1.</num>Begyndelses-Sang</toctitle>
     <firstline>O Kongemagt, vi love dig</firstline>
+    <notes>
+      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 31-32.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <center><nonum><small>Til Melod. O store Gud, vi love dig.</small></nonum></center>
 
-1. O Kongemagt, vi love dig.
+1. 
+O Kongemagt, vi love dig.
 Du skjærmer al vor List og Svig.
 Hvad er vel Aristokratie,
 Naar Du vil det ej stande bi?
 
-2. Beskyt, beskyt dog evig os,
+2.
+Beskyt, beskyt dog evig os,
 Fornufts og Folkets Raab til Trods!
 Lad os, som Engle, om Dig staae,
 Og demokratisk Vold nedslaae!
 
-3. Hør evig vore søde Ord!
+3.
+Hør evig vore søde Ord!
 Lyt evig til vort Jubelchor!
 Du sue Viraksdampen ind,
 Vi ofre Dig med trofast Sind!
 
-4. O da skal Pøblens dumme Skrig
+4.
+O da skal Pøblens dumme Skrig
 Ej meer inkommodere Dig!
 Vi qvæle skal Skribenters Røst,
 Og alt omkring Dig være tyst!
 
-5. Men ogsaa du med runde Haand
+5.
+Men ogsaa du med runde Haand
 Uddeele Nøgler, Stjerner, Baand,
 Ja, tomme Casses Suk til Trods,
 Du gavmild pensjonere os.
 
-6. O Kongemagt, hersk Jorden om!
+6.
+O Kongemagt, hersk Jorden om!
 Knus Mindet af Athen og Rom.
 For alt du undertvinge dig
 Amerika og Frankerig!
 
-7. Ja, sluk hver Gnist af Sandhed ud! -
+7.
+Ja, sluk hver Gnist af Sandhed ud! -
 Da skal Du være Jordens Gud,
 Og Menneskeheden ved Din Haand,
 Skal evig gaae i Børnebaand!
@@ -169,51 +184,60 @@ Skal evig gaae i Børnebaand!
     <title>Daglig Bøn</title>
     <toctitle><num>2.</num>Daglig Bøn</toctitle>
     <firstline>Stjerner og Titler</firstline>
+    <notes>
+      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 32-33..</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <center><nonum><small>Til Melod. Fryd dig ved Livet.</small></nonum></center>
 
-Stjerner og Titler,
-Eder jeg bejler til!
-Eengang I fryde
-Mig med et Smiil!
+    Stjerner og Titler,
+    Eder jeg bejler til!
+    Eengang I fryde
+    Mig med et Smiil!
 Gid al min Vandel tækkes maa
 Min allernaadigste Mæcen!
 Gid jeg min Sjel bevare fri
 Fra demokratisk Meen!
 
-Stjerner og etc.
+    Stjerner og etc.
 Gid jeg fra proppet Forgemak
 Først naadig indladt blive maa!
 Gid jeg paa Hoffets glatte Jis
 Ej falde maa, men staae!
 
-Stjerner og etc.
+    Stjerner og etc.
 Gid Smaafolk krumme ydmyg Ryg,
 Naar min Karosse ruller srem!
 Med bange Blik, med Hat i Haand
 Om mig jeg skue dem!
-Stjerner og Titler
-Eder jeg bejler til!
-Eengang I fryde
-Mig med et Smiil!
+    Stjerner og Titler
+    Eder jeg bejler til!
+    Eengang I fryde
+    Mig med et Smiil!
 </body>
 </poem>
 
 <poem id="bruunmc2017101318">
 <head>
-    <title>Et stille Suk (naar man læser Aviserne)</title>
-    <toctitle><num>3.</num>Et stille Suk (naar man læser Aviserne)</toctitle>
-    <firstline>xx</firstline>
+    <title>Et stille Suk</title>
+    <subtitle>(naar man læser Aviserne)</subtitle>
+    <toctitle><num>3.</num>Et stille Suk</toctitle>
+    <firstline>Gud, lad dog eengang Hævnens Torden vække</firstline>
+    <notes>
+      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 33-34..</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Gud, lad dog eengang Hævnens Torden vække
 Syndfulde Jord! Lad den nedslaae de Frække,
-Som haane Konger - Præster - Dig!
-Send ned fra Himmerig,
+    Som haane Konger - Præster - Dig!
+    Send ned fra Himmerig,
 I tydske Heltes Skikkelse, Serafers
 Udvalgte Hær! Med Trin, som Langulaffers,
-Til Babylon-Paris de nærme sig.
+    Til Babylon-Paris de nærme sig.
 </body>
 </poem>
 
@@ -222,89 +246,94 @@ Til Babylon-Paris de nærme sig.
     <title>Aristokratiske Skaaler</title>
     <toctitle><num>4.</num>Aristokratiske Skaaler</toctitle>
     <firstline>Bort Jacobinskhed fra dette Lag</firstline>
+    <notes>
+      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 34-37.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<center><nonum><small>Til Melod. Jeg synger gjærne om Kongers Magt. (Forandret og forøget.)</small></nonum></center>
+<center><nonum><small>Til Melod. Jeg synger gjærne om Kongers Magt.</small></nonum></center>
+<center><nonum><small>(Forandret og forøget.)</small></nonum></center>
 
 Bort Jacobinskhed fra dette Lag!
-Bort Frihedsskaaler og Frihedsviser!
-Kun Monarkiets den gode Sag
-Vort Hjerte hylder, vor Tunge priser.
+    Bort Frihedsskaaler og Frihedsviser!
+Kun <b>Monarkiets</b> den gode Sag
+    Vort Hjerte hylder, vor Tunge priser.
 Ja, gid Musketter og gid Kanoner
 Maa trygt beskjerme al Jordens Troner!
-Hver Trones Skaal!
+    Hver Trones Skaal!
 
-Næst efter Tronen bør Ad'lens staae,
-Og derpaa først de Gemeene komme;
+Næst efter Tronen bør <b>Ad'lens</b> staae,
+    Og derpaa først de Gemeene komme;
 Thi gammel Orden haandhæves maa,
-Trods alle næsvise, nye Domme.
+    Trods alle næsvise, nye Domme.
 Du Hjørnesteen for al Kongedømme,
 Højbaarne Adel, af Hjertet tømme
-Vi her din Skaal!
+    Vi her din Skaal!
 
-Dig store Tydskland, vi takke bør:
-Du Adelsmænd os i Flokke sender.
+Dig store <b>Tydskland</b>, vi takke bør:
+    Du Adelsmænd os i Flokke sender.
 I Krig du stedse Mirakler gjør,
-Og sejrer altid, naar du ei render.
+    Og sejrer altid, naar du ei render.
 Og havde Fransken kun høflig været,
 Du sikkert var til Paris marcheret!
-Stor-Tydsklands Skaal!
+    Stor-Tydsklands Skaal!
 
-O franske Prindser, jert Navn er stort
-Blant Creditorer, paa Hværverhuse:
+O franske <b>Prindser</b>, jert Navn er stort
+    Blant Creditorer, paa Hværverhuse:
 Vel sandt jert Feldttog kun vared' kort.
-Dog, det foreviged' Schiraks Muse.
+    Dog, det foreviged' Schiraks Muse.
 Cousins jer Kongerne endnu kalde;
 Paa Knæe sor Eder Lakejer falde:
-Skaal derfor, Skaal!
+    Skaal derfor, Skaal!
 
 Prinds York var smidig og rask og snild:
-Men høslig, høflig han var tillige.
+    Men høflig, høflig han var tillige.
 Han Ret ei altid beholde vil,
-Og tit man saae ham sin Plads at vige.
+    Og tit man saae ham sin Plads at vige.
 Til Verdens Lykke paa ny han være
-Anfører for sin Hr.Faders Hære!
-Prinds York, din Skaal!
+Anfører for sin Hr. Faders Hære!
+    Prinds York, din Skaal!
 
-King George er langt fra at være béte
-Og herligt Kortene for ham falde,
-Det er kun Heiberg som nægter det.
-Som tør hans Raadgiver "Satan" kalde,
+<i>King George</i> er langt fra at være béte
+    Og herligt Kortene for ham falde,
+Det er kun <b>Heiberg</b> som nægter det.
+    Som tør hans Raadgiver "Satan" kalde,
 Nei, Viisdom al hans Regjering røber,
 Og det er Løgn, at han Stemmer kjøber.
-King George, din Skaal!
+    <i>King George</i>, din Skaal!
 
 Kan Retten tolkes med større Fynd,
-End naar man tolker den med Kanoner?
+    End naar man tolker den med Kanoner?
 Og tør vel nogen det kalde Synd,
-Hvad Konger gjør for at vinde Troner?
+    Hvad Konger gjør for at vinde Troner?
 I Tree, som deelte nys Polens Rige,
 For Jer al Jordklodens Ønsker stige:
-Gud lønne jer!
+    Gud lønne jer!
 
-O, I som Cramer forjog fra Nord,
-Da fræk han voved' Pethjon at rose! -
+O, I som <b>Cramer</b> forjog fra Nord,
+    Da fræk han voved' Pethjon at rose! -
 Her standser Tungen! her mangle Ord!
-O, gunstigst tager det ej for Skose,
+    O, gunstigst tager det ej for Skose,
 Om, uden mere Introducering,
 Vi drikke, henrykt ved slig Regjering,
-En velmeent Skaal.
+    En velmeent Skaal.
 
 Ja straffet vorde hver Sansculot,
-Som fræk tør gnave paa Kongers Ære!
+    Som fræk tør gnave paa Kongers Ære!
 Man strax maae hævne sig for hans Spot:
-Dertil Fiskaler i Verden ere;
+    Dertil Fiskaler i Verden ere;
 Et nyttigt Embed, hvor sure Miner,
 Mod det end gjøres af Jakobiner!
-Fiskalers Skaal!
+    Fiskalers Skaal!
 
 Men godt gagere man alle dem,
-Som tappert fægte mod Demokrater,
+    Som tappert fægte mod Demokrater,
 Som gaae paa Folkevens-Banen frem,
-At redde Kirker og Potentater.
+    At redde Kirker og Potentater.
 Til Kamp! Til Kamp imod Frihedsslokken!
 Til Kamp! Til Kamp imod Kjætterskokken!
-De Kæmpers Skaal!
+    De Kæmpers Skaal!
 </body>
 </poem>
 
@@ -314,11 +343,21 @@ De Kæmpers Skaal!
    <toctitle><num>5.</num>Aristokratisk Bordpsalme</toctitle>
    <firstline>Hvad bryder jeg om Frihed mig</firstline>
    <notes>
+      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 37-39.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+   <notes>
       <note type="credits">Bidrag fra Sven Sørensen.</note>
    </notes>
    <quality>korrektur1</quality>
 </head>
 <body>
+<center><nonum><small>Til Melod. Hvor saare lidet vil der til.</small></nonum></center>
+
+<right><nonum><small>Der Topf, der Topf ist's Vaterland,</small></nonum></right>
+<right><nonum><small>Das übrige sind - Frazen.</small></nonum></right>
+<right><nonum><small><w>Boss.</w></small></nonum></right>
+
 Hvad bryder jeg om Frihed mig,
    Naar jeg har Mad og Klæde?
 Naar jeg kun vorder feed og rig,
