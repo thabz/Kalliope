@@ -2343,16 +2343,20 @@
   <name>
     <firstname>Malthe Conrad</firstname>
     <lastname>Bruun</lastname>
+    <!-- Internationalt kendt under sit "franske" navn: -->
+    <alternative>Conrad Malte-Brun</alternative> 
   </name>
   <period>
     <born>
       <date>1775-08-12</date>
+      <place>Thisted</place>
     </born>
     <dead>
       <date>1826-12-14</date>
+      <place>Paris</place>
     </dead>
   </period>
-  <works>andre</works>
+  <works>1796,andre</works>
 </person>
 
 <person id="soeborg" country="dk" lang="da" type="poet">
