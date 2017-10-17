@@ -14,14 +14,14 @@ import TextContent from '../components/textcontent.js';
 import SplitWhenSmall from '../components/split-when-small.js';
 import Picture from '../components/picture.js';
 import FormattedDate from '../components/formatteddate.js';
-import type { Lang, NewsItem } from './helpers/types.js';
+import type { Lang, NewsItem, TimelineItem } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 import 'isomorphic-fetch';
 
 class TodaysEvents extends React.Component {
   props: {
     lang: Lang,
-    events: ?Array<TimelineItem>,
+    events: Array<TimelineItem>,
   };
   render() {
     const { lang, events } = this.props;
@@ -39,14 +39,16 @@ class TodaysEvents extends React.Component {
           </div>
         );
         const html = (
-          <TextContent contentHtml={item.content_html} lang={item.lang} />
+          <TextContent
+            contentHtml={item.content_html}
+            contentLang={item.content_lang}
+            lang={lang}
+          />
         );
         return (
           <div className="today-item" key={i}>
             {yearHtml}
-            <div className="today-body">
-              {html}
-            </div>
+            <div className="today-body">{html}</div>
           </div>
         );
       });
@@ -65,9 +67,7 @@ class TodaysEvents extends React.Component {
         );
         return (
           <div className="today-item" key={i}>
-            <div className="today-body">
-              {html}
-            </div>
+            <div className="today-body">{html}</div>
           </div>
         );
       });
@@ -76,12 +76,8 @@ class TodaysEvents extends React.Component {
       <div>
         <SubHeading>Dagen i dag</SubHeading>
         <SplitWhenSmall>
-          <div>
-            {renderedEvents}
-          </div>
-          <div style={{ marginTop: '40px' }}>
-            {pictureItem}
-          </div>
+          <div>{renderedEvents}</div>
+          <div style={{ marginTop: '40px' }}>{pictureItem}</div>
         </SplitWhenSmall>
         <style jsx>{`
           :global(div.today-item) {
@@ -115,9 +111,7 @@ class News extends React.Component {
 
       return (
         <div className="news-item" key={date + i}>
-          <h3>
-            {title}
-          </h3>
+          <h3>{title}</h3>
           <div className="news-body">
             <TextContent
               contentHtml={content_html}
@@ -159,11 +153,7 @@ class News extends React.Component {
       );
     });
 
-    return (
-      <div>
-        {items}
-      </div>
-    );
+    return <div>{items}</div>;
   }
 }
 
@@ -210,12 +200,15 @@ export default class extends React.Component {
         next: `${zeroPad(next.getMonth() + 1)}-${zeroPad(next.getDate())}`,
       };
     }
-    let res = await fetch(createURL(`/static/api/news_${lang}.json`));
-    const news: Array<NewsItem> = await res.json();
-    res = await fetch(
+    const newsPromise = fetch(createURL(`/static/api/news_${lang}.json`));
+    const todayPromise = fetch(
       createURL(`/static/api/today/${lang}/${dayAndMonth}.json`)
     );
-    const todaysEvents: Array<TimelineItem> = await res.json();
+    const todayResponse = await todayPromise;
+    const newsResponse = await newsPromise;
+    const todaysEvents: Array<TimelineItem> = await todayResponse.json();
+    const news: Array<NewsItem> = await newsResponse.json();
+
     return { lang, news, todaysEvents, pagingContext };
   }
 
@@ -237,7 +230,7 @@ export default class extends React.Component {
 
     const renderedNews = <News news={news} lang={lang} />;
 
-    const sidebar = <TodaysEvents events={todaysEvents} />;
+    const sidebar = <TodaysEvents events={todaysEvents} lang={lang} />;
 
     return (
       <div>

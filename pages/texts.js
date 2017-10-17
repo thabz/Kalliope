@@ -65,6 +65,7 @@ export default class extends React.Component {
       if (line.startsWith('Ö')) {
         letter = 'Ø';
       }
+      letter = letter.toUpperCase();
       let array = groups.get(letter) || [];
       array.push(linePair);
       groups.set(letter, array);
@@ -97,7 +98,8 @@ export default class extends React.Component {
         if (isNonUnique != null && alternative != null) {
           renderedAlternative = (
             <span style={{ color: CommonData.lightLinkColor }}>
-              {' '}[{alternative}]
+              {' '}
+              [{alternative}]
             </span>
           );
         }

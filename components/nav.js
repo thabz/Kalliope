@@ -17,17 +17,50 @@ import type {
   URLString,
 } from '../pages/helpers/types.js';
 
+type NavPagingType = {
+  prev: ?{
+    url: URLString,
+    title: string,
+  },
+  next: ?{
+    url: URLString,
+    title: string,
+  },
+};
+
 export class NavPaging extends React.Component {
-  props: {
-    prev: ?{
-      url: URLString,
-      title: string,
-    },
-    next: ?{
-      url: URLString,
-      title: string,
-    },
-  };
+  props: NavPagingType;
+
+  constructor(props: NavPagingType) {
+    super(props);
+    this.onKeyUp = this.onKeyUp.bind(this);
+  }
+
+  componentDidMount() {
+    if (
+      document != null &&
+      document.body != null &&
+      document.body.classList != null
+    ) {
+      // eslint-disable-next-line no-undef
+      document.addEventListener('keyup', this.onKeyUp, false);
+    }
+  }
+
+  componentWillUnmount() {
+    // eslint-disable-next-line no-undef
+    document.removeEventListener('keyup', this.onKeyUp, false);
+  }
+
+  onKeyUp(e: KeyboardEvent) {
+    const { prev, next } = this.props;
+    // TODO: Don't page when in input field
+    if (e.keyCode === 37) {
+      // Left cursor key
+    } else if (e.keyCode === 39) {
+      // Right cursor key
+    }
+  }
 
   render() {
     const { prev, next } = this.props;
@@ -60,12 +93,17 @@ export default class Nav extends React.Component {
     poet?: Poet,
     work?: Work,
     links?: Array<any>,
+    sectionTitles?: Array<string>,
     title?: any,
     rightSide?: any,
   };
 
+  static defaultProps = {
+    sectionTitles: [],
+  };
+
   render() {
-    const { lang, poet, work, title, rightSide } = this.props;
+    const { lang, poet, work, title, sectionTitles, rightSide } = this.props;
     let { links } = this.props;
 
     const isIndexPage =
@@ -118,7 +156,7 @@ export default class Nav extends React.Component {
           : null;
       links = [poetsURL, poetLink, workLink];
     }
-    links = [rootLink, ...links, title];
+    links = [rootLink, ...links, ...sectionTitles, title];
 
     if (isIndexPage) {
       links = [<span>Kalliope</span>];
@@ -151,11 +189,13 @@ export default class Nav extends React.Component {
         <style jsx>{`
           :global(body) {
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-              Helvetica, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+              Avenir Next, Avenir, Helvetica, sans-serif;
             box-sizing: border-box;
             font-size: 14px;
             height: 150px;
+            /* Remove Gray Highlight When Tapping Links in Mobile Safari */
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
           }
           :global(a) {
             color: ${CommonData.linkColor};
@@ -167,6 +207,9 @@ export default class Nav extends React.Component {
           @media print {
             :global(a) {
               color: black;
+            }
+            :global(body) {
+              font-size: 9pt;
             }
           }
           nav {

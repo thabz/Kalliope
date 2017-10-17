@@ -1,7 +1,34 @@
 // @flow
 
 import React from 'react';
-import type { Lang } from './helpers/types.js';
+import type { Lang } from '../pages/helpers/types.js';
+
+export const parseDate = (date: ?string) => {
+  if (date == null) {
+    return null;
+  }
+  let prefix: ?string = null,
+    day: ?number = null,
+    month: ?number = null,
+    year: ?number = null;
+
+  let m: ?Array<string>;
+  if ((m = date.match(/ca/i))) {
+    prefix = 'c.';
+  }
+  if ((m = date.match(/(\d\d\d\d)-(\d\d)-(\d\d)/))) {
+    day = parseInt(m[3]);
+    month = parseInt(m[2]);
+    year = parseInt(m[1]);
+  } else if ((m = date.match(/(\d\d)-(\d\d)-(\d\d\d\d)/))) {
+    day = parseInt(m[1]);
+    month = parseInt(m[2]);
+    year = parseInt(m[3]);
+  } else if ((m = date.match(/(\d\d\d\d)/))) {
+    year = parseInt(m[1]);
+  }
+  return { prefix, year, month, day };
+};
 
 export default class FormattedDate extends React.Component {
   props: {
@@ -16,7 +43,7 @@ export default class FormattedDate extends React.Component {
     let day: ?number = null,
       month: ?number = null,
       year: ?number = null;
-    let prefix = null;
+    let prefix: ?string = null;
     if (date == null) {
       return null;
     } else if ((m = date.match(/(\d\d\d\d)-(\d\d)-(\d\d)/))) {
@@ -24,7 +51,7 @@ export default class FormattedDate extends React.Component {
       month = parseInt(m[2]);
       year = parseInt(m[1]);
     } else if ((m = date.match(/(\d\d)-(\d\d)-(\d\d\d\d)/))) {
-      day = m[1];
+      day = parseInt(m[1]);
       month = parseInt(m[2]);
       year = parseInt(m[3]);
     } else if ((m = date.match(/(\d\d\d\d)/))) {
@@ -44,11 +71,7 @@ export default class FormattedDate extends React.Component {
         </span>
       );
     } else if (year != null) {
-      result = (
-        <span>
-          {year}
-        </span>
-      );
+      result = <span>{year}</span>;
     } else {
       console.log(`Ukendt dato format '${date}'`);
     }
