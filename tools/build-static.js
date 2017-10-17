@@ -210,6 +210,9 @@ const build_portrait_json = (poet, collected) => {
     const primaries = doc.find('//pictures/picture').filter(picture => {
       return safeGetAttr(picture, 'primary') == 'true';
     });
+    if (primaries.length > 1) {
+      throw `fdirs/${poet.id}/portraits.xml har flere primary`;
+    }
     if (primaries.length === 0) {
       throw `fdirs/${poet.id}/portraits.xml mangler primary`;
     }
