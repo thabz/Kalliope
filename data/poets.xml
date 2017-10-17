@@ -2343,16 +2343,20 @@
   <name>
     <firstname>Malthe Conrad</firstname>
     <lastname>Bruun</lastname>
+    <!-- Internationalt kendt under sit "franske" navn: -->
+    <alternative>Conrad Malte-Brun</alternative> 
   </name>
   <period>
     <born>
       <date>1775-08-12</date>
+      <place>Thisted</place>
     </born>
     <dead>
       <date>1826-12-14</date>
+      <place>Paris</place>
     </dead>
   </period>
-  <works>andre</works>
+  <works>1796,andre</works>
 </person>
 
 <person id="soeborg" country="dk" lang="da" type="poet">
@@ -3675,6 +3679,44 @@
   <works>1886,1894,1898,1901,1905,1906,andre</works>
 </person>
 
+<person id="matthison" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Aage</firstname>
+    <lastname>Matthison-Hansen</lastname>
+    <fullname>Hans Aage Joachim Matthison-Hansen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1864-03-20</date>
+      <place>Frederiksberg</place>
+    </born>
+    <dead>
+      <date>1938-05-11</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1891,1893,1894,1896,1897,1900,1903,1907,1922,1929a,1929b</works>
+</person>
+
+<person id="holstein" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Ludvig</firstname>
+    <lastname>Holstein</lastname>
+    <fullname>Greve Ludvig Detlef von Holstein</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1864-12-03</date>
+      <place>Langebækgaard, Kallehave</place>
+    </born>
+    <dead>
+      <date>1943-07-11</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1895,1915,1917,1920,1929,andre</works>
+</person>
+
 <person id="claussen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Sophus</firstname>
@@ -3895,6 +3937,25 @@
   <works>1895,1904,1905,1907,1912,1914,1920,rubai,1923,1924,1925,1926,1927,andre</works>
 </person>
 
+<person id="munchp" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Gustaf</firstname>
+    <lastname>Munch-Petersen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1912-02-18</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1938-04-02</date>
+      <!-- Dødsdagen ikke verificeret, men 2. april er alm. brugt. -->
+      <place>Spanien</place>
+    </dead>
+  </period>
+  <works>1932,1933,1934,1937,andre</works>
+</person>
+
 <person id="kidde" country="dk" lang="da" type="poet">
   <name>
     <firstname>Harald</firstname>
@@ -3910,6 +3971,42 @@
       <place>København</place>
     </dead>
   </period>
+</person>
+
+<person id="luetken" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hulda</firstname>
+    <lastname>Lütken</lastname>
+    <fullname>Hulda Dagny Lütken</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1896-10-05</date>
+      <place>Elling nær Frederikshavn</place>
+    </born>
+    <dead>
+      <date>1946-07-09</date>
+    </dead>
+  </period>
+  <works>1927,1931,1932,1934,1940,1941,1943,1944,1945,1946,andre</works>
+</person>
+
+<person id="munk" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Kaj</firstname>
+    <lastname>Munk</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1898-01-13</date>
+      <place>Lolland</place>
+    </born>
+    <dead>
+      <date>1944-01-04</date>
+      <place>Hørbylunde Bakke ved Silkeborg</place>
+    </dead>
+  </period>
+  <works>andre,1942,1944</works>
 </person>
 
 <person id="villon" country="fr" lang="fr" type="poet">
