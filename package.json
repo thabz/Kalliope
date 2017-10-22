@@ -9,7 +9,8 @@
     "test-ci": "jest",
     "flow": "flow",
     "build-static": "node tools/build-static.js",
-    "build-static-force-reload": "node tools/build-static.js --force-reload"
+    "build-static-force-reload": "node tools/build-static.js --force-reload",
+    "build-facsimiles": "node tools/build-facsimiles.js"
   },
   "dependencies": {
     "global": "^4.3.2",
