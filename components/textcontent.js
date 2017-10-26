@@ -233,7 +233,7 @@ export default class TextContent extends React.Component {
         const src = node.getAttribute('src');
         const alt = node.getAttribute('alt');
         if (width == null || alt == null) {
-          console.log(`Der mangler alt-attribut på inline img.`);
+          //console.log(`Der mangler alt-attribut på inline img.`);
         }
         const style = {
           width: width,
@@ -254,7 +254,7 @@ export default class TextContent extends React.Component {
       case 'a':
         return this.handle_a(node);
       default:
-        console.log(`Mærkeligt tag fundet ${node.toString()}`);
+        //console.log(`Mærkeligt tag fundet ${node.toString()}`);
         return <code>{node.toString()}</code>;
     }
   }
