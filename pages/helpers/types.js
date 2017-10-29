@@ -109,6 +109,7 @@ export type PictureItem = {
 export type Text = {
   id: string,
   title: string,
+  linktitle: string,
   subtitles?: Array<TextContentType>,
   notes: Array<NoteItem>,
   refs: Array<TextContentType>,
