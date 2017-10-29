@@ -29,6 +29,7 @@ def printPoem()
   if @keywords
     puts "    <keywords>#{@keywords}</keywords>"
   end
+  puts "    <quality>korrektur1,kilde,side</quality>"
   puts "</head>"
   puts "<body>"
   puts @body.join("\n").strip
