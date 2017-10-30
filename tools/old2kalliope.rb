@@ -12,6 +12,9 @@ end
 @state = 'NONE'
 @poemcount = 1;
 
+@source = nil
+@poetid = 'POETID'
+
 @firstline = nil
 @title = nil
 @subtitle = nil
@@ -19,13 +22,18 @@ end
 @keywords = nil;
 
 def printPoem()
-  puts "<poem id=\"POETID#{@date}#{'%02d' % @poemcount}\">"
+  puts "<poem id=\"#{@poetid}#{@date}#{'%02d' % @poemcount}\">"
   puts "<head>"
   puts "    <title>#{@title}</title>"
   if @subtitle
     puts "    <subtitle>#{@subtitle}</subtitle>"
   end
   puts "    <firstline>#{@firstline}</firstline>"
+  if @source
+    puts "    <notes>"
+    puts "        <note>#{@source}</note>"
+    puts "    </notes>"
+  end
   if @keywords
     puts "    <keywords>#{@keywords}</keywords>"
   end
@@ -45,6 +53,12 @@ def printPoem()
 end
 
 File.readlines(ARGV[0]).each do |line|
+  if @state == 'NONE' and line =~ /^KILDE:/
+      @source = line[6..-1].strip
+  end
+  if @state == 'NONE' and line =~ /^DIGTER:/
+      @poetid = line[7..-1].strip
+  end
   if @state == 'NONE' and line =~ /^T:/
     @state = 'INHEAD'
   end
