@@ -20,8 +20,13 @@ end
 @subtitle = nil
 @body = []
 @keywords = nil;
+@page = nil;
 
 def printPoem()
+  if @source and not @page
+      puts "FEJL: Digtet »#{@title}« mangler sideangivelse"
+      exit
+  end
   puts "<poem id=\"#{@poetid}#{@date}#{'%02d' % @poemcount}\">"
   puts "<head>"
   puts "    <title>#{@title}</title>"
@@ -29,9 +34,10 @@ def printPoem()
     puts "    <subtitle>#{@subtitle}</subtitle>"
   end
   puts "    <firstline>#{@firstline}</firstline>"
-  if @source
+  if @source && @page
+    pp = @page.include?('-') ? 'pp' : 'p';
     puts "    <notes>"
-    puts "        <note>#{@source}</note>"
+    puts "        <note>#{@source.gsub(/[\. ]*$/,'')}, #{pp}. #{@page}.</note>"
     puts "    </notes>"
   end
   if @keywords
@@ -48,7 +54,8 @@ def printPoem()
   @title = nil
   @subtitle = nil
   @body = []
-  @keywords = nil;
+  @keywords = nil
+  @page = nil
   @poemcount += 1
 end
 
@@ -75,6 +82,8 @@ File.readlines(ARGV[0]).each do |line|
       @subtitle = line[2..-1].strip
     elsif line.start_with?("N:")
       @keywords = line[2..-1].strip
+    elsif line.start_with?("SIDE:")
+      @page = line[5..-1].strip
     elsif line =~ /^.:/
       throw "Unknown header-line: #{line}"
     else
@@ -82,7 +91,8 @@ File.readlines(ARGV[0]).each do |line|
     end
   end
   if @state == 'INBODY'
-    @body.push(line.rstrip)
+      line = line.rstrip.gsub(/_(.+?)_/,'<i>\1</i>')
+    @body.push(line)
   end
 end
 
