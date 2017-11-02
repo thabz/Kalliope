@@ -7,13 +7,13 @@ if ARGV.length != 1
   exit 0
 end
 
-@date = Date.today.strftime("%Y%m%d")
 
 @state = 'NONE'
 @poemcount = 1;
 
 @source = nil
 @poetid = 'POETID'
+@date = Date.today.strftime("%Y%m%d")
 
 @firstline = nil
 @title = nil
@@ -65,6 +65,9 @@ File.readlines(ARGV[0]).each do |line|
   end
   if @state == 'NONE' and line =~ /^DIGTER:/
       @poetid = line[7..-1].strip
+  end
+  if @state == 'NONE' and line =~ /^DATO:/
+      @date = line[5..-1].strip
   end
   if @state == 'NONE' and line =~ /^T:/
     @state = 'INHEAD'
