@@ -21,13 +21,14 @@ end
 @body = []
 @keywords = nil;
 @page = nil;
+@type = 'poem'
 
 def printPoem()
   if @source and not @page
       puts "FEJL: Digtet »#{@title}« mangler sideangivelse"
       exit
   end
-  puts "<poem id=\"#{@poetid}#{@date}#{'%02d' % @poemcount}\">"
+  puts "<#{type} id=\"#{@poetid}#{@date}#{'%02d' % @poemcount}\">"
   puts "<head>"
   puts "    <title>#{@title}</title>"
   if @subtitle
@@ -48,7 +49,7 @@ def printPoem()
   puts "<body>"
   puts @body.join("\n").strip
   puts "</body>"
-  puts "</poem>"
+  puts "</#{type}>"
   puts ""
   @firstline = nil
   @title = nil
@@ -56,6 +57,7 @@ def printPoem()
   @body = []
   @keywords = nil
   @page = nil
+  @type = 'poem'
   @poemcount += 1
 end
 
@@ -87,6 +89,8 @@ File.readlines(ARGV[0]).each do |line|
       @keywords = line[2..-1].strip
     elsif line.start_with?("SIDE:")
       @page = line[5..-1].strip
+    elsif line.start_with?("TYPE:")
+      @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
     elsif line =~ /^.:/
       throw "Unknown header-line: #{line}"
     else
