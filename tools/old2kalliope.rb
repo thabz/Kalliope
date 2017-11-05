@@ -16,7 +16,7 @@ end
 @date = Date.today.strftime("%Y%m%d")
 
 @firstline = nil
-@title = nil
+@title = nil, @toctitle = nil, @linktitle = nil, @indextitle = nil
 @subtitle = nil
 @body = []
 @keywords = nil;
@@ -25,12 +25,23 @@ end
 
 def printPoem()
   if @source and not @page
-      puts "FEJL: Digtet »#{@title}« mangler sideangivelse"
-      exit
+      abort "FEJL: Digtet »#{@title}« mangler sideangivelse"
   end
-  puts "<#{type} id=\"#{@poetid}#{@date}#{'%02d' % @poemcount}\">"
+  puts "<#{@type} id=\"#{@poetid}#{@date}#{'%02d' % @poemcount}\">"
   puts "<head>"
   puts "    <title>#{@title}</title>"
+  if @toctitle
+    puts "    <toctitle>#{@toctitle}</toctitle>"
+  end
+  if @indextitle
+    puts "    <indextitle>#{@indextitle}</indextitle>"
+  end
+  if @linktitle
+    puts "    <linktitle>#{@linktitle}</linktitle>"
+  end
+  if @toctitle
+    puts "    <toctitle>#{@toctitle}</toctitle>"
+  end
   if @subtitle
     puts "    <subtitle>#{@subtitle}</subtitle>"
   end
@@ -49,16 +60,31 @@ def printPoem()
   puts "<body>"
   puts @body.join("\n").strip
   puts "</body>"
-  puts "</#{type}>"
+  puts "</#{@type}>"
   puts ""
   @firstline = nil
-  @title = nil
+  @title = nil, @toctitle = nil, @linktitle = nil, @indextitle = nil
   @subtitle = nil
   @body = []
   @keywords = nil
   @page = nil
   @type = 'poem'
   @poemcount += 1
+end
+
+def printStartSektion(title)
+  puts "<section>"
+  puts "<head>"
+  puts "    <title>#{title}</title>"
+  puts "</head>"
+  puts "<content>"
+  puts ""
+end    
+
+def printEndSection()
+  puts "</content>"
+  puts "</section>"
+  puts ""
 end
 
 File.readlines(ARGV[0]).each do |line|
@@ -78,6 +104,19 @@ File.readlines(ARGV[0]).each do |line|
     printPoem()
     @state = 'INHEAD'
   end
+  if line.start_with?('SEKTION:')
+      if (@state == 'INBODY')
+          printPoem();
+      end
+      sectionTitle = line[8..-1].strip
+      print printStartSektion(sectionTitle)
+      @state = 'NONE'
+  end
+  if line.start_with?('SLUTSEKTION')
+      printPoem();
+      printEndSection();
+      @state = 'NONE'
+  end
   if @state == 'INHEAD'
     if line.start_with?("T:")
       @title = line[2..-1].strip
@@ -87,18 +126,28 @@ File.readlines(ARGV[0]).each do |line|
       @subtitle = line[2..-1].strip
     elsif line.start_with?("N:")
       @keywords = line[2..-1].strip
+    elsif line.start_with?("TOCTITEL:")
+      @toctitle = line[9..-1].strip
+    elsif line.start_with?("INDEXTITEL:")
+      @indextitle = line[11..-1].strip
+    elsif line.start_with?("LINKTITEL:")
+      @linktitle = line[10..-1].strip
     elsif line.start_with?("SIDE:")
       @page = line[5..-1].strip
     elsif line.start_with?("TYPE:")
       @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
     elsif line =~ /^.:/
-      throw "Unknown header-line: #{line}"
+      abort "Unknown header-line: #{line}"
     else
       @state = 'INBODY'
     end
   end
   if @state == 'INBODY'
+      line_before = line
       line = line.rstrip.gsub(/_(.+?)_/,'<i>\1</i>')
+      if (line =~ /_/)
+          abort "FEJL: Linjen »#{line_before.rstrip}« har ulige antal _"
+      end
     @body.push(line)
   end
 end
