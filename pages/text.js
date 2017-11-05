@@ -12,7 +12,10 @@ import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
 import PoetName, { poetNameString } from '../components/poetname.js';
 import { workTitleString } from '../components/workname.js';
-import TextName, { textTitleString } from '../components/textname.js';
+import TextName, {
+  textTitleString,
+  textLinkTitleString,
+} from '../components/textname.js';
 import TextContent from '../components/textcontent.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
@@ -255,11 +258,11 @@ export default class extends React.Component {
     const ogTitle =
       poetNameString(poet, false, false) +
       ': »' +
-      textTitleString(text) +
+      textLinkTitleString(text) +
       '« fra ' +
       workTitleString(work);
     const headTitle =
-      textTitleString(text) +
+      textLinkTitleString(text) +
       ' - ' +
       poetNameString(poet, false, false) +
       ' - Kalliope';
@@ -286,7 +289,7 @@ export default class extends React.Component {
               work={work}
               rightSide={rightSide}
               sectionTitles={section_titles}
-              title={<TextName text={text} />}
+              title={textLinkTitleString(text)}
             />
             <Heading title={title} subtitle="Værker" />
             <PoetTabs lang={lang} poet={poet} selected="works" />

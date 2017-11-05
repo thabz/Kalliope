@@ -73,7 +73,6 @@ class BiggerPicture extends React.Component {
           .join(', ');
       })
       .join(', ');
-    console.log(srcSet);
 
     const alt = picture.content_html
       ? '' //Strings.trimHtml(picture.content_html)

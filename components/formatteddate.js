@@ -73,7 +73,7 @@ export default class FormattedDate extends React.Component {
     } else if (year != null) {
       result = <span>{year}</span>;
     } else {
-      console.log(`Ukendt dato format '${date}'`);
+      //console.log(`Ukendt dato format '${date}'`);
     }
     return (
       <span className={className}>
