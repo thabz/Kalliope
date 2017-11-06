@@ -8,12 +8,15 @@ import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
-import PoetName, { poetNameString } from '../components/poetname.js';
+import PoetName, {
+  poetNameString,
+  poetLastNameString,
+} from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import Picture from '../components/picture.js';
 import TextContent from '../components/textcontent.js';
 import SplitWhenSmall from '../components/split-when-small.js';
-import FormattedDate from '../components/formatteddate.js';
+import FormattedDate, { parseDate } from '../components/formatteddate.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
@@ -33,7 +36,8 @@ import { createURL } from './helpers/client.js';
 
 const dateAndPlace = (
   datePlace: ?DateWithPlace,
-  lang: Lang
+  lang: Lang,
+  age?: ?number
 ): Array<?React$Element<*>> => {
   if (datePlace == null) {
     return 'Ukendt år';
@@ -47,11 +51,10 @@ const dateAndPlace = (
     );
   }
   if (datePlace.place != null) {
-    result.push(
-      <span key="place">
-        {', ' + datePlace.place}
-      </span>
-    );
+    result.push(<span key="place">{', ' + datePlace.place}</span>);
+  }
+  if (age != null) {
+    result.push(<span key="age"> {age}</span>);
   }
   return result;
 };
@@ -77,12 +80,8 @@ class PersonMetaLine extends React.Component {
     };
     return (
       <div style={styles.item}>
-        <div style={styles.key}>
-          {label}
-        </div>
-        <div>
-          {value}
-        </div>
+        <div style={styles.key}>{label}</div>
+        <div>{value}</div>
       </div>
     );
   }
@@ -99,10 +98,52 @@ class PersonMeta extends React.Component {
       return null;
     }
     const name = <PoetName poet={poet} />;
+
+    // Age when dead
+    let age = null;
+    if (
+      poet.period != null &&
+      poet.period.born != null &&
+      poet.period.dead != null &&
+      poet.period.born.date != null &&
+      poet.period.dead.date != null &&
+      poet.period.born.date !== '?' &&
+      poet.period.dead.date !== '?'
+    ) {
+      const lastName = poetLastNameString(poet);
+      let born = parseDate(poet.period.born.date);
+      const dead = parseDate(poet.period.dead.date);
+      born.month = born.month || 0;
+      born.day = born.day || 0;
+      dead.month = dead.month || 0;
+      dead.day = dead.day || 0;
+      if (born != null && dead != null) {
+        let yearDiff = dead.year - born.year;
+        const deadBeforeBirthday =
+          dead.month < born.month ||
+          (born.month == dead.month && dead.day <= born.day);
+        if (deadBeforeBirthday) {
+          yearDiff -= 1;
+        }
+        let ca = '';
+        if (
+          born.prefix != null ||
+          dead.prefix != null ||
+          born.month === 0 ||
+          dead.month === 0 ||
+          born.day === 0 ||
+          dead.day === 0
+        ) {
+          ca = 'ca. ';
+        }
+        age = `(blev ${ca}${yearDiff} år)`;
+      }
+    }
+
     let born =
       poet.period == null ? null : dateAndPlace(poet.period.born, lang);
     let dead =
-      poet.period == null ? null : dateAndPlace(poet.period.dead, lang);
+      poet.period == null ? null : dateAndPlace(poet.period.dead, lang, age);
 
     const christened =
       poet.name.christened == null ? poet.name.realname : poet.name.christened;
@@ -148,12 +189,7 @@ class Timeline extends React.Component {
     let prevYear = null;
     const items = timeline.map((item, i) => {
       const curYear = item.date.substring(0, 4);
-      const year =
-        curYear !== prevYear
-          ? <div>
-              {curYear}
-            </div>
-          : null;
+      const year = curYear !== prevYear ? <div>{curYear}</div> : null;
       prevYear = curYear;
 
       let html = null;
@@ -181,9 +217,7 @@ class Timeline extends React.Component {
 
       return (
         <div key={i} style={{ marginBottom: '10px', breakInside: 'avoid' }}>
-          <div style={{ float: 'left' }}>
-            {year}
-          </div>
+          <div style={{ float: 'left' }}>{year}</div>
           <div
             style={{
               marginLeft: '50px',
@@ -196,9 +230,7 @@ class Timeline extends React.Component {
     });
     return (
       <div className="timeline">
-        <TwoColumns>
-          {items}
-        </TwoColumns>
+        <TwoColumns>{items}</TwoColumns>
       </div>
     );
   }
@@ -276,7 +308,7 @@ export default class extends React.Component {
           <Nav lang={lang} poet={poet} title="Biografi" />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="bio" />
-          <SidebarSplit sidebar={sidebarItems}>
+          <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
             <div style={{ lineHeight: '1.6' }}>
               <TextContent
                 contentHtml={content_html}

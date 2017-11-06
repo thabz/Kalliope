@@ -9,7 +9,17 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handler = routes.getRequestHandler(app);
 const elasticSearchClient = require('./tools/libs/elasticsearch-client.js');
-const rootStaticFiles = ['/sw.js', '/favicon.ico', '/robots.txt'];
+const rootStaticFiles = [
+  '/sw.js',
+  '/favicon.ico',
+  '/robots.txt',
+  '/apple-touch-icon-120x120.png',
+  '/apple-touch-icon-152x152.png',
+  '/apple-touch-icon-180x180.png',
+  '/apple-touch-icon-60x60.png',
+  '/apple-touch-icon-76x76.png',
+  '/apple-touch-icon.png', // 180x180
+];
 
 const worksRedirects = JSON.parse(fs.readFileSync('static/api/redirects.json'));
 const redirects = [
@@ -18,12 +28,48 @@ const redirects = [
     to: '/$1/works/${fhandle}',
   },
   {
+    from: /\/ffront.cgi/,
+    to: '/da/works/${fhandle}',
+  },
+  {
+    from: /\/(..)\/fvaerker.pl/,
+    to: '/$1/works/${fhandle}',
+  },
+  {
+    from: /\/fvaerker.pl/,
+    to: '/da/works/${fhandle}',
+  },
+  {
+    from: /\/(..)\/fpop.pl/,
+    to: '/$1/works/${fhandle}',
+  },
+  {
+    from: /\/fpop.pl/,
+    to: '/da/works/${fhandle}',
+  },
+  {
     from: /\/(..)\/digt.pl/,
     to: '/$1/text/${longdid}',
   },
   {
+    from: /\/digt.pl/,
+    to: '/da/text/${longdid}',
+  },
+  {
     from: /\/(..)\/biografi.cgi/,
     to: '/$1/bio/${fhandle}',
+  },
+  {
+    from: /\/biografi.cgi/,
+    to: '/da/bio/${fhandle}',
+  },
+  {
+    from: /\/(..)\/vaerktoc.pl/,
+    to: '/$1/work/${vid}',
+  },
+  {
+    from: /\/vaerktoc.pl/,
+    to: '/da/work/${vid}',
   },
   {
     // Smid både førsteliner og titler til titler
@@ -31,22 +77,41 @@ const redirects = [
     to: '/$1/texts/${fhandle}/titles',
   },
   {
+    // Smid både førsteliner og titler til titler
+    from: /\/flines.pl/,
+    to: '/da/texts/${fhandle}/titles',
+  },
+  {
     from: /\/(..)\/keyword.cgi/,
     to: '/$1/keyword/${keyword}',
+  },
+  {
+    from: /\/keyword.cgi/,
+    to: '/da/keyword/${keyword}',
   },
   {
     from: /\/(..)\/fsekundaer.pl/,
     to: '/$1/bibliography/${fhandle}',
   },
   {
+    from: /\/fsekundaer.pl/,
+    to: '/da/bibliography/${fhandle}',
+  },
+  {
     from: /\/(..)\/poets.cgi/,
     to: '/$1/poets/dk/name',
+  },
+  {
+    from: /\/poets.cgi/,
+    to: '/da/poets/dk/name',
   },
   {
     from: /\/..\/work\/([^\/]+)\/(.*?)\.xml/,
     to: '/static/api/$1/$2.xml',
   },
 ];
+
+const cleanUpRedirectURLRegExp = /[^0-9a-zA-Z\-_\/]/;
 
 app.prepare().then(() => {
   createServer((req, res) => {
@@ -69,14 +134,19 @@ app.prepare().then(() => {
             .replace('$2', m[2])
             .replace(/\${(.*)}/g, (m, p1) => {
               return query[p1];
-            });
+            })
+            .replace(cleanUpRedirectURLRegExp, '');
           //console.log('Redirecting to', to, query);
           res.writeHead(301, { Location: to });
           res.end();
           done = true;
         }
       });
-    } else if (pathname.indexOf('/search') === 0) {
+      if (done) {
+        return;
+      }
+    }
+    if (pathname.indexOf('/search') === 0) {
       elasticSearchClient
         .search(
           'kalliope',
@@ -97,7 +167,7 @@ app.prepare().then(() => {
           res.end();
         });
     } else if (worksRedirects[pathname] != null) {
-      const to = worksRedirects[pathname];
+      const to = worksRedirects[pathname].replace(cleanUpRedirectURLRegExp, '');
       //console.log('Redirecting to', to);
       res.writeHead(302, { Location: to });
       res.end();

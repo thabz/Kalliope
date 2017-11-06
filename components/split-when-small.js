@@ -15,7 +15,7 @@ export default class SplitWhenSmall extends React.Component {
             display: flex;
             flex-direction: column;
           }
-          @media (max-width: 800px) {
+          @media (max-width: 760px) {
             .horizontal-on-small {
               flex-direction: row;
               justify-content: space-between;

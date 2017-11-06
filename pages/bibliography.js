@@ -10,10 +10,11 @@ import Heading from '../components/heading.js';
 import PoetName, { poetNameString } from '../components/poetname.js';
 import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
+import ErrorPage from './error.js';
 import * as Links from '../components/links';
+import * as Client from './helpers/client.js';
 import type { Lang, Poet, Work, TextContentType } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
-import 'isomorphic-fetch';
 
 export default class extends React.Component {
   props: {
@@ -21,6 +22,7 @@ export default class extends React.Component {
     poet: Poet,
     primary: Array<TextContentType>,
     secondary: Array<TextContentType>,
+    Error: ?Error,
   };
 
   static async getInitialProps({
@@ -28,24 +30,22 @@ export default class extends React.Component {
   }: {
     query: { lang: Lang, poetId: string },
   }) {
-    const res = await fetch(
-      createURL(`/static/api/${poetId}/bibliography.json`)
-    );
-    const json: {
-      poet: Poet,
-      primary: Array<string>,
-      secondary: Array<string>,
-    } = await res.json();
+    const json = await Client.bibliography(poetId);
     return {
       lang,
       poet: json.poet,
       primary: json.primary || [],
       secondary: json.secondary || [],
+      error: json.error,
     };
   }
 
   render() {
-    const { lang, poet, primary, secondary } = this.props;
+    const { lang, poet, primary, secondary, error } = this.props;
+
+    if (error) {
+      return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
+    }
 
     const sections = [primary, secondary]
       .map((list, i) => {

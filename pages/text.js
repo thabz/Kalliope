@@ -12,7 +12,10 @@ import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
 import PoetName, { poetNameString } from '../components/poetname.js';
 import { workTitleString } from '../components/workname.js';
-import TextName, { textTitleString } from '../components/textname.js';
+import TextName, {
+  textTitleString,
+  textLinkTitleString,
+} from '../components/textname.js';
 import TextContent from '../components/textcontent.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
@@ -95,6 +98,7 @@ export default class extends React.Component {
     poet: Poet,
     work: Work,
     text: Text,
+    section_titles: ?Array<string>,
     prev?: PrevNextText,
     next?: PrevNextText,
     error: ?Error,
@@ -114,6 +118,7 @@ export default class extends React.Component {
       prev: json.prev,
       next: json.next,
       text: json.text,
+      section_titles: json.section_titles,
       error: json.error,
     };
   }
@@ -128,7 +133,17 @@ export default class extends React.Component {
   }
 
   render() {
-    const { lang, highlight, poet, work, prev, next, text, error } = this.props;
+    const {
+      lang,
+      highlight,
+      poet,
+      work,
+      prev,
+      next,
+      text,
+      section_titles,
+      error,
+    } = this.props;
 
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt tekst" />;
@@ -243,11 +258,11 @@ export default class extends React.Component {
     const ogTitle =
       poetNameString(poet, false, false) +
       ': »' +
-      textTitleString(text) +
+      textLinkTitleString(text) +
       '« fra ' +
       workTitleString(work);
     const headTitle =
-      textTitleString(text) +
+      textLinkTitleString(text) +
       ' - ' +
       poetNameString(poet, false, false) +
       ' - Kalliope';
@@ -273,13 +288,14 @@ export default class extends React.Component {
               poet={poet}
               work={work}
               rightSide={rightSide}
-              title={<TextName text={text} />}
+              sectionTitles={section_titles}
+              title={textLinkTitleString(text)}
             />
             <Heading title={title} subtitle="Værker" />
             <PoetTabs lang={lang} poet={poet} selected="works" />
             <SidebarSplit sidebar={sidebar}>
               <div>
-                <div className="text-content">
+                <article className="text-content">
                   <TextHeading
                     text={text}
                     lang={lang}
@@ -288,7 +304,7 @@ export default class extends React.Component {
                   {body}
                   <style jsx>{`
                     .text-content {
-                      font-family: "Palatino", "Georgia", serif;
+                      font-family: 'Palatino', 'Georgia', serif;
                       line-height: 1.5;
                       font-size: 1.15em;
                     }
@@ -301,7 +317,7 @@ export default class extends React.Component {
                       line-height: 1.5;
                     }
                   `}</style>
-                </div>
+                </article>
               </div>
             </SidebarSplit>
             <LangSelect lang={lang} />

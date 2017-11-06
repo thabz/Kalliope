@@ -210,6 +210,9 @@ const build_portrait_json = (poet, collected) => {
     const primaries = doc.find('//pictures/picture').filter(picture => {
       return safeGetAttr(picture, 'primary') == 'true';
     });
+    if (primaries.length > 1) {
+      throw `fdirs/${poet.id}/portraits.xml har flere primary`;
+    }
     if (primaries.length === 0) {
       throw `fdirs/${poet.id}/portraits.xml mangler primary`;
     }
@@ -289,6 +292,9 @@ const build_poets_json = () => {
     while ((has_poems == false || has_prose == false) && workIds.length > 0) {
       const workId = workIds.pop();
       let doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
+      if (doc == null) {
+        throw `fdirs/${poetId}/${workId}.xml kan ikke parses.`;
+      }
       if (!has_poems) {
         has_poems = doc.find('//poem').length > 0;
       }
@@ -335,6 +341,9 @@ const build_poets_json = () => {
       }
     }
     const has_square_portrait = square_portrait != null;
+    if (has_portraits && !has_square_portrait) {
+      throw `${id} har portræt men ikke square-portrait`;
+    }
 
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');
@@ -469,7 +478,14 @@ const get_pictures = head => {
   });
 };
 
-const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
+const handle_text = (
+  poetId,
+  workId,
+  text,
+  isPoetry,
+  resolve_prev_next,
+  section_titles
+) => {
   if (
     !isFileModified(`data/poets.xml:${poetId}`, `fdirs/${poetId}/${workId}.xml`)
   ) {
@@ -481,9 +497,12 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
   const textId = text.attr('id').value();
   const head = text.get('head');
   const body = text.get('body');
-  const firstline = head.get('firstline') ? head.get('firstline').text() : null;
-  let title = head.get('title') ? head.get('title').text() : null;
+  const firstline = safeGetText(head, 'firstline');
+  let title = safeGetText(head, 'title');
   title = title || firstline;
+  let linktitle = safeGetText(head, 'linktitle');
+  linktitle = linktitle || title;
+
   const keywords = head.get('keywords');
   const isBible = poetId === 'bibel';
 
@@ -540,9 +559,11 @@ const handle_text = (poetId, workId, text, isPoetry, resolve_prev_next) => {
     work,
     prev: prev_next.prev,
     next: prev_next.next,
+    section_titles,
     text: {
       id: textId,
       title: replaceDashes(title),
+      linktitle: replaceDashes(linktitle),
       subtitles,
       is_prose: text.name() === 'prose',
       has_footnotes,
@@ -564,15 +585,13 @@ const handle_work = work => {
   const workId = work.attr('id').value();
   let lines = [];
 
-  const handle_section = (section, resolve_prev_next) => {
+  const handle_section = (section, resolve_prev_next, section_titles) => {
     let poems = [];
     let proses = [];
     let toc = [];
 
     const extractTocTitle = head => {
-      const firstline = head.get('firstline')
-        ? head.get('firstline').text()
-        : null;
+      const firstline = safeGetText(head, 'firstline');
       let toctitle = head.get('toctitle')
         ? head.get('toctitle').toString()
         : null;
@@ -638,11 +657,21 @@ const handle_work = work => {
           title: toctitle.title,
           prefix: replaceDashes(toctitle.prefix),
         });
-        handle_text(poetId, workId, part, true, resolve_prev_next);
+        handle_text(
+          poetId,
+          workId,
+          part,
+          true,
+          resolve_prev_next,
+          section_titles
+        );
       } else if (partName === 'section') {
         const head = part.get('head');
         const toctitle = extractTocTitle(head);
-        const subtoc = handle_section(part.get('content'), resolve_prev_next);
+        const subtoc = handle_section(part.get('content'), resolve_prev_next, [
+          ...section_titles,
+          toctitle.title[0][0],
+        ]);
         toc.push({
           type: 'section',
           title: toctitle.title,
@@ -662,7 +691,14 @@ const handle_work = work => {
           title: toctitle.title,
           prefix: toctitle.prefix,
         });
-        handle_text(poetId, workId, part, false, resolve_prev_next);
+        handle_text(
+          poetId,
+          workId,
+          part,
+          false,
+          resolve_prev_next,
+          section_titles
+        );
       }
     });
     return toc;
@@ -706,7 +742,7 @@ const handle_work = work => {
     };
   })();
 
-  const toc = handle_section(workbody, resolve_prev_next);
+  const toc = handle_section(workbody, resolve_prev_next, []);
   return { lines, toc, notes, pictures };
 };
 
@@ -750,11 +786,10 @@ const works_first_pass = collected => {
       work.find('//poem|//prose').forEach(part => {
         const textId = part.attr('id').value();
         const head = part.get('head');
-        const title = head.get('title') ? head.get('title').text() : null;
-        const firstline = head.get('firstline')
-          ? head.get('firstline').text()
-          : null;
-        const linkTitle = title || firstline;
+        const title = safeGetText(head, 'title');
+        const firstline = safeGetText(head, 'firstline');
+        const linktitle = safeGetText(head, 'linktitle');
+        const linkTitle = linktitle || title || firstline;
         texts.set(textId, {
           title: replaceDashes(linkTitle),
           type: part.name(),
@@ -1510,7 +1545,7 @@ const build_todays_events_json = collected => {
 
   langs.forEach(lang => {
     const preferredCountries =
-      lang === 'da' ? ['dk', 'de', 'se'] : ['gb', 'us'];
+      lang === 'da' ? ['se', 'de', 'dk'] : ['us', 'gb']; // Større index er større vægt
     for (let m = 1; m <= 12; m++) {
       for (let d = 1; d <= 31; d++) {
         const dd = d < 10 ? '0' + d : d;
@@ -1526,7 +1561,7 @@ const build_todays_events_json = collected => {
               weight += poet.has_portraits ? 12 : 6; // TODO: Find the one with a portrait description
               weight += poet.has_texts ? 10 : 5;
               weight += poet.has_works ? 6 : 3;
-              weight += preferredCountries.indexOf(poet.country) > -1 ? 11 : 6;
+              weight += preferredCountries.indexOf(poet.country);
               weight += event.context.event_type === 'born' ? 3 : 0; // Foretræk fødselsdage
               return {
                 weight,

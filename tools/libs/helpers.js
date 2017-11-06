@@ -60,16 +60,20 @@ const replaceDashes = html => {
   if (html == null) {
     return null;
   }
-  return html
-    .replace(/ -&nbsp;/g, ' —&nbsp;')
-    .replace(/ - /g, ' — ')
-    .replace(/ -/g, ' —')
-    .replace(/^- /gm, '— ')
-    .replace(/>- /g, '>— ')
-    .replace(/&nbsp;- /g, '&nbsp;— ')
-    .replace(/ -&ldquo;/g, ' —&ldquo;')
-    .replace(/ -$/gm, ' —')
-    .replace(/ -([\!;\?\.»«,:\n])/g, / —$1/);
+  return entities.decodeHTML(
+    html
+      .replace(/ -&nbsp;/g, ' —&nbsp;')
+      .replace(/ - /g, ' — ')
+      .replace(/ -/g, ' —')
+      .replace(/^- /gm, '— ')
+      .replace(/>- /g, '>— ')
+      .replace(/,,/g, '&bdquo;')
+      .replace(/''/g, '&ldquo;')
+      .replace(/&nbsp;- /g, '&nbsp;— ')
+      .replace(/ -&ldquo;/g, ' —&ldquo;')
+      .replace(/ -$/gm, ' —')
+      .replace(/ -([\!;\?\.»«,:\n])/g, / —$1/)
+  );
 };
 
 const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
@@ -101,8 +105,6 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
         .replace(/^( +)/gm, (match, p1) => {
           return '&nbsp;'.repeat(p1.length);
         })
-        .replace(/,,/g, '&bdquo;')
-        .replace(/''/g, '&ldquo;')
     )
   );
 
@@ -199,6 +201,7 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
     }
     const hasNonum =
       l.indexOf('<nonum>') > -1 ||
+      l.indexOf('<wrap>') > -1 ||
       l.indexOf('<num>') > -1 ||
       l.match(/^\s*$/) ||
       l.match(/^\s*<hr[^>]*>\s*$/);
@@ -229,6 +232,9 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
     if (l.indexOf('<wrap>') > -1) {
       l = l.replace('<wrap>', '').replace('</wrap>', '');
       options.wrap = true;
+    }
+    if (l.indexOf('<hr ') > -1) {
+      options.hr = true;
     }
     // Marker linjer som skal igennem XML parseren client-side.
     if (l.match(/<.*>/)) {
