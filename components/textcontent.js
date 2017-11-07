@@ -140,6 +140,8 @@ export default class TextContent extends React.Component {
         return <i key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</i>;
       case 'b':
         return <b key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</b>;
+      case 'u':
+        return <u key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</u>;
       case 'p':
         return <p>{this.handle_nodes(node.childNodes)}</p>;
       case 'blockquote':
