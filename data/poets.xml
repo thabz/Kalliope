@@ -6398,6 +6398,25 @@
   <works>1869,1876,1889,1898,andre</works>
 </person>
 
+<person id="swinburne" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Algernon C.</firstname>
+    <lastname>Swinburne</lastname>
+    <fullname>Algernon Charles Swinburne</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1837-04-05</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1909-04-10</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="kipling" country="gb" lang="en" type="poet">
   <name>
     <firstname>Rudyard</firstname>
