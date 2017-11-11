@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1830" author="andersen" status="incomplete" type="poetry">
+<kalliopework id="1830" author="andersen" status="complete" type="poetry">
 <workhead>
    <title>Digte</title>
    <year>1830</year>
    <notes>
+      <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+      <note>Noter med en foranstillet asterisk er Andersens egne.</note>
       <note><a person="molbechsr">C. Molbech</a> skrev en anmeldelse af dette værk i <i>Maanedskrift for Litteratur</i>, som kan <a href="http://www.andersen.sdu.dk/anmeld/index.php?htmlpage=Digte1830.html">læses online</a> på H.C. Andersen-Centrets sider.</note>
+      <!-- Udgivet 2. januar 1830. -->
    </notes>
+   <pictures>
+       <picture type="titlepage" src="1830-p1.jpg">Titelbladet til <i>Digte</i> (1830). ,,Digte / af / H. C. Andersen // "Vergeßne Gedichte sind Neue." / Jean Paul. // Kjöbenhavn. / Trykt, paa Forfatterens Forlag, hos E. H. Robert. / 1830.''</picture>
+   </pictures>
    <quality>korrektur1</quality>
    <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
@@ -17,7 +23,7 @@
     <title>Rime-Djævelen</title>
     <firstline>Før jeg med Blæk Papiret vil bemale</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 1-5.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 1-5.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -175,7 +181,7 @@ Det blive maa med denne Indskrift siret:
    <indextitle>Soldaten</indextitle>
    <firstline>Med dæmpede Hvirvler Trommerne gaae</firstline>
    <notes>
-      <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 6.</note>
+      <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 6.</note>
       <note type="credits">Bidrag fra Sven Sørensen.</note>
    </notes>
    <quality>korrektur1</quality>
@@ -208,7 +214,7 @@ De rysted paa Haanden af Smerte,
     <title>Den rædselsfulde Time</title>
     <firstline>Kom ei Rundetaarn for nær, er det Midnatstide</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 7-9.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 7-9.</note>
         <note>Mottoet er første strofe af Novalis' <xref poem="novalis2005060512,1-4"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
@@ -297,7 +303,7 @@ Læser, gid Du vaagne maa, dersom Du har sovet!
     <subtitle>(Skrevet 1826.)</subtitle>
     <firstline>Nu slumrer Hoben i den store Stad</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 10-11.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 10-11.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -340,7 +346,7 @@ Kun Dødens Iis kan Hjertets Flamme dæmpe! —
     <subtitle>i min egen Maneer</subtitle>
     <firstline>I Himlen sidde Guds Engle smaae</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 12-13.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 12-13.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -386,7 +392,7 @@ Som Børn vi komme i Himmelen.
     <subtitle>En Ode</subtitle>
     <firstline></firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 14-15.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 14-15.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -456,7 +462,7 @@ Jeg kan for Graad ei meer paa Violinen spille,
    <indextitle>Vandrer-Liv</indextitle>
    <firstline>Gaardhunden gjøer - dens Tænder ere saa skarpe</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 16.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 16.</note>
     </notes>
    <quality>korrektur1</quality>
 </head>
@@ -485,7 +491,7 @@ Mens Manden bereder til Vandring.
    <indextitle>Det døende Barn</indextitle>
    <firstline>Moder, jeg er træt, nu vil jeg sove</firstline>
    <notes>
-      <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 17.</note>
+      <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 17.</note>
       <note>Trykt første gang i <i>Kjøbenhavnsposten,</i> 1827 (BFN.#13)</note>
    </notes>
    <quality>korrektur1</quality>
@@ -527,7 +533,7 @@ O, jeg er saa træt! - maa Øiet lukke -
    <indextitle>Graat Veir</indextitle>
    <firstline>Den vaade Taage hænger dorsk over Mark og By</firstline>
    <notes>
-      <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 18.</note>
+      <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 18.</note>
       <note>Trykt i Kjøbenhavns-Posten, 1827.</note>
    </notes>
    <quality>korrektur1</quality>
@@ -551,7 +557,7 @@ Jeg gider ikke læse i mine egne Vers!
     <title>Kunstner-Livet</title>
     <firstline>Rask Rokken snurrede Kanarifuglen sang</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 19-23.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 19-23.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -692,7 +698,7 @@ Som Bautasteen staaer Templet paa hans Grav.
     <subtitle>Et Eventyr paa Havets Bund</subtitle>
     <firstline>Det var i Aaret - - ak! nu kan jeg  Aaret ikke huske</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 24-32.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 24-32.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -907,7 +913,7 @@ Jeg haaber, ingen spiser Fisk, som dette <i>Carmen</i> læser.
     <title>Ved en Tragedies Dødsfald</title>
     <firstline></firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 33.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 33.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -931,7 +937,7 @@ Høit paa din Grav skal blases med Trompeter. Vee, tretten Gange Vee de yngere P
    <toctitle>Aftenlandskab</toctitle>
    <indextitle>Aftenlandskab</indextitle>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 34-35.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 34-35.</note>
     </notes>
    <firstline>See Solen gaaer ned i det deiligste Rødt</firstline>
    <quality>korrektur1</quality>
@@ -985,7 +991,7 @@ O lad dem ha' Ro! -
     <subtitle>Et Sagn</subtitle>
     <firstline>Da Sol stod op, og alle Nattens Terner</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 36-40.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 36-40.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1098,7 +1104,7 @@ Thi see, Cometen den har tvende Haler.
 Besee den i Qvadranter,
 Udregne dens excentriske Ellipser, 
 Men knipser
-**52**Tilsidst hinanden arrigt over Næsen,
+Tilsidst hinanden arrigt over Næsen,
 Thi man er ueens om Cometens Væsen.
 Dens Astronomer
 Beskrive den i flere tykke Tomer;
@@ -1130,7 +1136,7 @@ Ved dette Syn hun raaber høit og græder:
     <title>Sjælen</title>
     <firstline>Kraft, som i vort Indre lever</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 41-43.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 41-43.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1226,7 +1232,7 @@ Hist hvor ingen Storme true.
    <indextitle>Recension</indextitle>
    <firstline>Vel rødmer Land og Hav ret smukt i Aftensolens Flamme</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 44.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 44.</note>
     </notes>
    <quality>korrektur1</quality>
 </head>
@@ -1253,7 +1259,7 @@ Høit skummer Bølgen, men for stærkt, den maa sig moderere -
     <title>Tyveknægten</title>
     <firstline>I Vuggen ligger det spæde Noer</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 45.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 45.</note>
       <note>Skrevet 1829.</note>
       <note>Oversat som <xref poem="chamisso2006071101"/> af Chamisso og sat i musik af Robert Schumann. Den er fra hans ,,Fünf Lieder'', opus 40 (1840), der desuden har 3 andre sange til tekst af Andersen, oversat af Adelbert Chamisso</note>
       <note type="credits">Indtastet af Ejnar Nørager Pedersen.</note>
@@ -1283,7 +1289,7 @@ Og synger bag Ruden sin Vise:
     <title>Ingenting og Noget</title>
     <firstline>Hør nu en Sang om Ingenting!</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 46.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 46.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1320,7 +1326,7 @@ Og her - - ja, fik I <w>Noget</w>?
     <title>Klinkekorset paa Møen</title>
     <firstline>Det er en lys, en deilig Sommernat</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 47-51.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 47-51.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1472,7 +1478,7 @@ Men Duggen staaer som Taare paa Møens hvide Barm.
     <title>Hjerte-Suk til Maanen</title>
     <firstline>Hulde Maane, stiig fra Skyen frem!</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 52-53.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 52-53.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1521,7 +1527,7 @@ Vist jeg spiller <w>Werther</w> Nummer to.
     <title>Skolemesteren</title>
     <firstline>I den lumre Skolestue ville vi nu dvæle lidt</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 54-55.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 54-55.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1568,7 +1574,7 @@ Riset ham af Haanden synker — ak, han spiller aldrig, meer!
     <title>Studenten</title>
     <firstline>Høit under Taget, hvor Svalen boer</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 56-57.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 56-57.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1616,7 +1622,7 @@ Og trækker saa Dynen om Hagen.
     <title>Holger Danske</title>
     <firstline>Det gothisk, gamle Kronborg i Maanelyset staaer</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 58-60.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 58-60.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1702,7 +1708,7 @@ Mens Bølgen stumhvid vælter sig gjennem Øresund.
     <subtitle>(Til Kronprindsesse Caroline).</subtitle>
     <firstline>Da første Gang jeg aabnede mit Øie</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 61-62.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 61-62.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1745,7 +1751,7 @@ For Gud jeg kun kan tolke Ønsket ret:
    <indextitle>Moderen med Barnet</indextitle>
    <firstline>Hist, hvor Veien slaaer en Bugt</firstline>
    <notes>
-      <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 63.</note>
+      <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 63.</note>
       <note>Første gang trykt i Kjøbenhavns-Posten, 1829.</note>
    </notes>
    <quality>korrektur1</quality>
@@ -1786,7 +1792,7 @@ I sin lille pene Vugge.
     <title>Flyttedagen i April</title>
     <firstline>Nu Vintrens gamle Gubbe forlader sit Logi</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 64.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 64.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1809,9 +1815,9 @@ Dog jeg er grumme bange, han løber der April.
 <poem id="andersen2017110727">
 <head>
     <title>Phantasie og Vanvid</title>
-    <firstline></firstline>
+    <firstline>Bag Brombærhækken hist ved Afgrunds Randen</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 65-68.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 65-68.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1838,53 +1844,83 @@ Hiin Side Elven, hvor sig Fjeldet buer,
 En Møe han skuer
 Med Valmue-Krandsen om sit sorte Haar; 
 Hun synger som naar Stormen Bølgen slaaer,
-**78**
- Bleg er hun, vildt det mørke Øie brænder; En Dolk hun holder i de hvide Hconder; Og med bac.cantift Lyst
-Hun ridser Blomster paa stt unge Bryst;
+Bleg er hun, vildt det mørke Øie brænder; 
+En Dolk hun holder i de hvide Hænder; 
+Og med baccantisk Lyst
+Hun ridser Blomster paa sit unge Bryst;
 Halv synes hun at vaage, halv at drømme,
 Og stirrer vildt i Elvens dybe Strømme.
-"Hvo er' de Born?" Den Vandrer sporger. — Stille! Nu nærmer han sig alt den kjære Lille.
-"Hvo er' I Dorn? Hvad gjør I her saa silde? Kom smukke Dreng, lad os ei Tiden spilde!
-Hvor erDit Hjem?Did lad osstroebe.....
-Da afbrod Drengen ham med Smiil paa Læbe.
-"Jeg boer hos Hyrden hist ved Bjergets Fod, Hvor Hjorden græsser dybt i Dalens Skygge; Tidt sidder jeg hos ham ved Dogens Rod, Høit i hvis Top de vilde Duer bygge,
-Naar han paa Floiten tolker Elskovs Lyst, Og Phyllis synker salig til hans Bryst,
-Da staaer jeg hos Dem, blæser Bobler skjonne, Mens Solen synker hist bag Skovens Gronne.
+"Hvo er' de Børn?" Den Vandrer spørger. — Stille! 
+Nu nærmer han sig alt den kjære Lille.
+"Hvo er' I Børn? Hvad gjør I her saa silde? 
+Kom smukke Dreng, lad os ei Tiden spilde!
+<w>Hvor er Dit Hjem?</w> Did lad os stræbe ......"
+Da afbrød Drengen ham med Smiil paa Læbe.
+
+"Jeg boer hos Hyrden hist ved Bjergets Fod,
+Hvor Hjorden græsser dybt i Dalens Skygge; 
+Tidt sidder jeg hos ham ved Bøgens Rod, 
+Høit i hvis Top de vilde Duer bygge,
+Naar han paa Fløiten tolker Elskovs Lyst, 
+Og <w>Phyllis</w> synker salig til hans Bryst,
+Da staaer jeg hos Dem, blæser Bobler skjønne,
+Mens Solen synker hist bag Skovens Grønne.
+
 Jeg boer paa Fjeldet, hist i Ridderborgen,
 I Folkestue og i Kongesal;
 Jeg har mit Hjem hos Glæden og hos Sorgen,
 Paa Bjergets Aas og i den snevre Dal.
 Jeg boer i Skibets Rum bag Plankens Sider;
-Med Fisteren jeg over Dybet glider.
-Jeg trænger gjennem Klostrets stumle Muur, Og gjæster Nonnen i sit Fangebuur.
+Med Fiskeren jeg over Dybet glider.
+Jeg trænger gjennem Klostrets skumle Muur,
+Og gjæster Nonnen i sit Fangebuur.
 
- Snart leger jeg i Fjeldets dybe Grotte;
+Snart leger jeg i Fjeldets dybe Grotte;
 Og jeg kan mane Nattens Aander frem;
 I Syd og Nord staae mine Trylleslotte;
 I Dybet og i Himlen er mit Hjem.
-Paa Kampens Dag staaer jeg for Heltens Øie, Og bringer Seirens Palme fra det H-ie;
-Jeg følger Vandreren i Orknens Sand;
-J e g aabner Skjalden Aandens Drømme-Land.
+Paa Kampens Dag staaer jeg for Heltens Øie, 
+Og bringer Seirens Palme fra det Høie;
+Jeg følger Vandreren i Ørknens Sand;
+Jeg aabner Skjalden Aandens Drømme-Land.
+
 Selv Barn, jeg helst vil lege med de Smaae,
-Min Trylle-Verden De jo bedst kan fatte; I Hytte og i Borg De mig forstaae,
+Min Trylle-Verden De jo bedst kan fatte; 
+I Hytte og i Borg De mig forstaae,
 Jeg bringer med saa underfulde Skatte.
 Vi kjende ikke Livets Kamp og Sorg,
-Os Hyttens Krog blier til en Ridderborg, Ja Stokken er en stolt og modig Ganger, Den lille Svale Borgens Mester-Sanger.
-Da lege vi i Aften-Solens Guld;
-Som Bjerge staae de gyldne Skyers Række; Da toner Træ og Blomst saa underfuld,
-Paa Bækken sekler Sivets lette Snekke.
-En Uveirs-Sky staaer over Bjergets Lund, Regnbuen luer fra den sorte Grund.
-Hist dykker Maagen stg i Bølgens Strømme. O! kan Du glemme Barndoms søde Drpmme?
-Da Du var lille, tit vi leged' sammen, P a a Skammelen vi ved Kaminen sad; D a saae vi Billeder i Glode-Flammen, Og Sjoelen følte stg saa salig glad.
+Os Hyttens Krog blier til en Ridderborg, 
+Ja Stokken er en stolt og modig Ganger, 
+Den lille Svale Borgens Mester-Sanger.
 
- Hvert Eventyr os Sandheds Præget bar, Kun Livet her et Eventyr os var;
-Di saae er blot Cherubers skjenne Vrimmel, Nei, selv Gud Fader i sin hpie Himmel.
-Nu staaer Du her, og grandsker Livets Gaade, Vil følge Herrens fine, skjulte Traade,
+Da lege vi i Aften-Solens Guld;
+Som Bjerge staae de gyldne Skyers Række; 
+Da toner Træ og Blomst saa underfuld,
+Paa Bækken seiler Sivets lette Snekke.
+En Uveirs-Sky staaer over Bjergets Lund, 
+Regnbuen luer fra den sorte Grund.
+Hist dykker Maagen sig i Bølgens Strømme.
+O! kan Du glemme Barndoms søde Drømme?
+
+Da Du var lille, tit vi leged' sammen, 
+Paa Skammelen vi ved Kaminen sad; 
+Da saae vi Billeder i Gløde-Flammen, 
+Og Sjælen følte sig saa salig glad.
+Hvert Eventyr os Sandheds Præget bar,
+Kun Livet her et Eventyr os var;
+Vi saae ei blot Cherubers skjønne Vrimmel, 
+Nei, selv Gud Fader i sin høie Himmel.
+
+Nu staaer Du her, og grandsker Livets Gaade, 
+Vil følge Herrens fine, skjulte Traade,
 Og fatte ham, Din Aand, det Heles Liv —
-— Nu vel! saa fplg mig i min Baad af Siv! Frygt ikke Elvens stumbeklædte Vande!
-Jeg bringer Dig til mine Trylke-Lande.
-Men vogt Dig!— Seer Du Strømmens vikdeKyster? Den blege Pige hist — hun er min Soster;
-J e g aabner for Dig Aanders Salighed; H u n styrter Dig i Dybets Malstrpm ned.
+— Nu vel! saa følg mig i min Baad af Siv!
+Frygt ikke Elvens skumbeklædte Vande!
+Jeg bringer Dig til mine Trylle-Lande.
+Men vogt Dig!— Seer Du Strømmens vilde Kyster? 
+Den blege Pige hist — hun er min Søster;
+<w>Jeg</w> aabner for Dig Aanders Salighed; 
+<w>Hun</w> styrter Dig i Dybets Malstrøm ned.
 </body>
 </poem>
 
@@ -1892,21 +1928,25 @@ J e g aabner for Dig Aanders Salighed; H u n styrter Dig i Dybets Malstrpm ned.
 <head>
     <title>Fastelavn</title>
     <toctitle>Fastelavn, en skizze</toctitle>
-    <toctitle>Fastelavn, en skizze</toctitle>
+    <indextitle>Fastelavn, en skizze</indextitle>
     <subtitle>(En Skizze)</subtitle>
-    <firstline></firstline>
+    <firstline>Fastelavn idyllisk staaer med sin Gaas i Haanden</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 69.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 69.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-oaftelavn idyllifl staaer med sin Gaas i Haanden,*) Og foruden Bollerne faaer man lidt for Aanden. Midt paa Kjobsted-Torvet hist, seer man Tsnden hænge. Byens ædle Borgerftab og de vorne Drenge
-Slaae paa Tondcn stærke Slag saa ihast den knækker, Den som flvg det sidste Slag man en Krone rækker. Inde nu han hsdres ffal høit med Sang og Drikken, Og i Toget tor han gaae lige ved Musikken.
+Fastelavn idyllisk staaer med sin Gaas i Haanden,<note>* Man veed, at det indtil vor Tid har været en Skik paa Landet, at trække Hovedet af en Gaas Fastelavns-Mandag.</note>
+Og foruden Bollerne faaer man lidt for Aanden. 
+Midt paa Kjøbsted-Torvet hist, seer man Tønden hænge.
+Byens ædle Borgerskab og de vorne Drenge
+Slaae paa Tønden stærke Slag saa ihast den knækker,
+Den som slog det sidste Slag man en Krone rækker.
+Inde nu han hædres skal høit med Sang og Drikken, 
+Og i Toget tør han gaae lige ved Musikken.
 Der er baade Violin, Tromme og Skalmeie;
 Mildt han hilser rundtomkring, Byens Damer neie.
-2) Man veed, at det indtil vor Tid har varet en Skik paa
-Landet, at tratte Hovedet af en Gaas Fastelavns-Man, dag.
 </body>
 </poem>
 
@@ -1917,7 +1957,7 @@ Landet, at tratte Hovedet af en Gaas Fastelavns-Man, dag.
    <indextitle>Martsviolerne</indextitle>
    <firstline>Sig Himlen hvælver saa reen og klar</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 70.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 70.</note>
     </notes>
    <quality>korrektur1</quality>
 </head>
@@ -1942,95 +1982,143 @@ Iisblomsten smelter ved Kindens Brand,
 <poem id="andersen2017110730">
 <head>
     <title>Capriccio</title>
-    <firstline></firstline>
+    <firstline>Et Speil er Søens Flade, det er saa smuk en Dag</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 71-72.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 71-72.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Med Grent og Blomsterkranse er Kirken pyntet smukt, Og Altar-Lys der teendes^ som aldrig for er brugt; Den gamle Jomfrue smiler, hun synes saa tilfreds,
-Skjpndt Brudgommen er oeldre, thi hun er knap de Treds.
-Her Degnen synger lifligt ved denne fljonne Pagt.
-Nu kjere De til Hjemmet, De er' saa vel ved Magt;
-Foran med Violiner de Spillemand man seer, Brudgommen længe smiilte, nu kan han ikke meer. Han nikker og han sover, og Bruden seer derpaa, Sedt Turtelduer kurre og næbbes i det Blaae.
-Den glade Brudgom drømmer vist deiligt om fin Brud, Mens Skovens Tmer dufte, og Blomster springe ud.
+Et Speil er Søens Flade, det er saa smuk en Dag,
+Og Skibene er pynted' med alle Deres Flag.
+Hør Damp-Maskinen larmer og lysteligt det gaaer,
+En lang og skumhvid Fure bag efter Skibet staaer. 
+See Røgen hvor den bølger, det er en kulsort Sky, 
+Den skjuler reent os Broen hist ved den store By.
+Saa skumhvid svulmer Søen mod Skibets stærke Bryst,
+Og deiligt for os ligger den grønne Sommerkyst.
+De Fleste passiare paa denne raske Fart,
+Men Andre sidde blege, og har det ei saa rart.
+— Hist seer jeg Baaden komme, nu sættes vi i Land,
+Saa sværmer man i Skoven og drikker Kilde-Vand. 
+Her er saa smukke Damer, saa mange Dyr at see,
+Der synges og der spilles, og alle Godtfolk lee,
+— Men Byens Fugle støie dog fælt bag Skovens Hang,
+Thi gaaer man dybt i Skoven sin egen stille Gang.
+Hist reiser<note>reiser] reisrr</note> sig en Landsby, see Kirken ligger smukt, 
+Fra Søen har man Udsigt hen over Søens Bugt.
+Ved Kirkeporten seer jeg den hele Ungdom staae, 
+De Bonderpiger knixe, de store med de smaae.    
+Med Grønt og Blomsterkranse er Kirken pyntet smukt, 
+Og Altar-Lys der tændes som aldrig før er brugt; 
+Den gamle Jomfrue smiler, hun synes saa tilfreds,
+Skjøndt Brudgommen er ældre, thi hun er knap de Treds.
+Her Degnen synger lifligt ved denne skjønne Pagt.
+Nu kjøre De til Hjemmet, De er' saa vel ved Magt;
+Foran med Violiner de Spillemand man seer, 
+Brudgommen længe smiilte, nu kan han ikke meer. 
+Han nikker og han sover, og Bruden seer derpaa, 
+Sødt Turtelduer kurre og næbbes i det Blaae.
+Den glade Brudgom drømmer vist deiligt om sin Brud,
+Mens Skovens Træer dufte, og Blomster springe ud.
 </body>
 </poem>
 
 <poem id="andersen2017110731">
 <head>
     <title>En fæl Historie</title>
-    <firstline></firstline>
+    <firstline>Barsk sidder Drotten i Skarlagen rødt</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 73-74.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 73-74.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Gn kDl Wistorie. >
-V a r s t sidder Drotten i Skarlagen rødt, Men rundt om paa Slottet er pde og dodt.
-See Vægge og Gulv er beklcodte med Sort; Dorvogterne fljælve og onste sig bort.
-"En Klokke jeg stobte" — hor Hersterens Ord, "Den viftnok skal høres af Alle paa Jord.
-" J a er der et Helved' og Djævle til, "Jeg tænker de ogsaa den høre vil!
-"Og er der en Himmel med Engle smaae, "Jeg tænker den ogsaa til Dem skal naae.
-"Heel lystigt jeg hærgede Fjendens Land; "I Trældom sukker nu Viv og Mand;
-"Men Hovedet tog jeg af Dornene smaae, "Paa Gulvet I see Dem som Klokke staae.
-"Høit vil Den runge som Stormenes Chor, "Og Verden skal grue, og kalde mig stor!"
+Barsk sidder Drotten i Skarlagen rødt, 
+Men rundt om paa Slottet er øde og dødt.
 
- Men hver Mand blegner som Klokken seer; E n eneste kun saa listigt leer,
-Og siger: "ja Alt er smukt og godt! Men Knævlen mangler, min ædle Drot!"
+See Vægge og Gulv er beklædte med Sort; 
+Dørvogterne skjælve og ønske sig bort.
+
+"En Klokke jeg støbte" — hør Herskerens Ord, 
+"Den vistnok skal høres af Alle paa Jord.
+
+"Ja er der et Helved' og Djævle til, 
+"Jeg tænker de ogsaa den høre vil!
+
+"Og er der en Himmel med Engle smaae,
+"Jeg tænker den ogsaa til Dem skal naae.
+
+"Heel lystigt jeg hærgede Fjendens Land;
+"I Trældom sukker nu Viv og Mand;
+
+"Men Hovedet tog jeg af Børnene smaae, 
+"Paa Gulvet I see Dem som Klokke staae.
+
+"Høit vil Den runge som Stormenes Chor,
+"Og Verden skal grue, og kalde mig stor!"
+
+Men hver Mand blegner som Klokken seer; 
+En eneste kun saa listigt leer,
+
+Og siger: "ja Alt er smukt og godt! 
+Men Knævlen mangler, min ædle Drot!"
+
 "Den reent jeg glemte; ja Du har ret!
-Til Knævl vist klæder D it Hoved' net!"
-Den Klokke runger saa sært over Land, Den h-res baade af Qvinde og Mand;
+Til Knævl vist klæder <w>Dit</w> Hoved' net!"
+
+Den Klokke runger saa sært over Land, 
+Den høres baade af Qvinde og Mand;
+
 Men gjennem Taarer hvert Øie leer,
-— Man holder saa meget aSf pietz's Maneer!
+— Man holder saa meget af <w>Spietz</w>'s Maneer!
 </body>
 </poem>
 
 <poem id="andersen2017110732">
 <head>
     <title>Regnveir</title>
-    <firstline></firstline>
+    <firstline>Det regner, vil I bare see! — i Vand staaer hele Gaden</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 75.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 75.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-NeSnveir.
-D et regner,vilJ baresee.'—iVandftaaerheleGaden; Kom sætDin Droske i enBaad, og seeDig om i Staden. I Porte og i Dore staaer nu hele Vandrer-Vrimlen,
-De ryste Vand af Kloderne og flotte saa til Himlen. En graae Morlille fletter vims ved D-ren sine Spande,
-Hun har i Sinde, som man seer, at fange Himlens V ande; Tagrendens N i a g a r a vildt beflytter Steen og Flise,
-Thi Held Enhver med Stpvler paa, med Sko maa man
-forlise.
-I Skybrud styrterRegnen ned, den flytter, pladf-l-e-r--
-— stopper. SkM-Jomfru paa sinTaa-Spids pamt fraPorten hjem
-ad hopper;
-En Offiæer med Sporer smukt i hendes Fodspoer fplger.
-Smaa-Drengene fornoie sig i Rendestenens Bplger; De bygge Skibe af Papir og fylde dem med Blade; SnartseermanatterFolkogF«paaStride ogiGade.
-Nu jagerBlisten Vandet bort ihvor deter forResten, Thi kommer jeg med Verset her og hamger det i Blåsten.
+Det regner, vil I bare see! — i Vand staaer hele Gaden; 
+Kom sæt Din Droske i en Baad, og see Dig om i Staden. 
+I Porte og i Døre staaer nu hele Vandrer-Vrimlen,
+De ryste Vand af Klæderne og skotte saa til Himlen. 
+En graae Morlille sætter vims ved Døren sine Spande,
+Hun har i Sinde, som man seer, at fange Himlens Vande; 
+Tagrendens <w>Niagara</w> vildt beskyller Steen og Flise,
+Thi Held Enhver med Støvler paa, med Sko maa man forlise.
+I Skybrud styrter Regnen ned, den skyller, pladsker - - - stopper.
+Skjøn-Jomfru paa sin Taa-Spids pænt fra Porten hjemad hopper;
+En Officeer med Sporer smukt i hendes Fodspoer følger.
+Smaa-Drengene fornøie sig i Rendestenens Bølger; 
+De bygge Skibe af Papir og fylde dem med Blade; 
+Snart seer man atter Folk og Fæ paa Stræde og i Gade.
+- Nu jager Blæsten Vandet bort ihvor det er for Resten, 
+Thi kommer jeg med Verset her og hænger det i Blæsten.
 </body>
 </poem>
 
 <poem id="andersen1999041408">
 <head>
    <title>Snee-Dronningen</title>
-   <subtitle>
-      <line>Sundets vågor</line>
-      <line>Sofva kring den frosna Kust.</line>
-      <line>        <i>E. Tegnér.</i></line>
-   </subtitle>
-   <toctitle>Snee-Dronningen</toctitle>
-   <indextitle>Snee-Dronningen</indextitle>
    <firstline>Høit ligger paa Marken den hvide Snee</firstline>
    <notes>
-      <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 76-77.</note>
+      <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 76-77.</note>
       <note>Første gang trykt i <i>Kjøbenhavns-Posten</i>, 1829.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+        <nonum><small>Sundets vågor</small></nonum>
+        <nonum><small>Sofva kring den frosna Kust.</small></nonum>
+               <nonum><small><i>E. Tegnér</i>.</small></nonum>
+
 Høit ligger paa Marken den hvide Snee,
 Dog kan man Lyset i Hytten see;
 Der venter Pigen ved Lampens Skjær
@@ -2043,27 +2131,27 @@ Over Iis og Snee.
 
 Han synger omkap med den skarpe Vind,
 Der rødmer saa smukt hans runde Kind.
-<i>Snee-Dronningen</i> rider paa sorten Sky
+<w>Snee-Dronningen</w> rider paa sorten Sky
 Over Mark og By.
 
-»Du er mig saa smuk ved Snee-Lysets Skjær,
-Jeg kaarer Dig til min Hjertenskjær,
-Kom, følg mig høit paa min svømmende Ø,
-Over Bjerg og Sø!«
+"Du er mig saa smuk ved Snee-Lysets Skjær,
+"Jeg kaarer Dig til min Hjertenskjær,
+"Kom, følg mig høit paa min svømmende Ø,
+"Over Bjerg og Sø!"
 
-Snee-Flokkene falde saa tyst, saa tæt.
-»Jeg fanger Dig vist i mit Blomster-Net!
+Snee-Flokkene falde saa tykt, saa tæt.
+"Jeg fanger Dig vist i mit Blomster-Net!
 Hvor Snee-Dyngen reiser sig høit paa Eng,
-Staaer vor Brudeseng!«
+Staaer vor Brudeseng!"
 
 Ei meer kan man Lyset i Hytten see;
 I Ringdands hvirvler den hvide Snee,
-Et Stjerneskud spiller bag Skyen smukt, -
+Et Stjerneskud spiller bag Skyen smukt,
 Nu er det alt slukt.
 
 Klart skinner Solen paa Mark og Eng;
 Han sover saa sødt i sin Brude-Seng.
-Den Pigelil ængtes, til Møllen hun gaaer, -
+Den Pigelil ængtes, til Møllen hun gaaer,
 Men Drivhjulet staaer.
 </body>
 </poem>
@@ -2071,140 +2159,194 @@ Men Drivhjulet staaer.
 <poem id="andersen2017110734">
 <head>
     <title>Mosters Skjærmbræt</title>
-    <firstline></firstline>
+    <firstline>Naar Kulden barsk sig nærmed'</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 78-80.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 78-80.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Mosters SkiErmvrset.
-9 ? a a r Kulden barst sig nsrmcd',
-Naar Vintrens hvide Vier svaermed',
-Var der saa hjemligt og saa lunt i Mosters Stue. P a a Flisekakkelovnen saae man malet smukt, Hvorledes J o n a s blev af Hvalen flugt.
+Naar Kulden barsk sig nærmed',
+Naar Vintrens hvide Bier sværmed',
+Var der saa hjemligt og saa lunt i Mosters Stue.
+Paa Flisekakkelovnen saae man malet smukt,
+Hvorledes <w>Jonas</w> blev af Hvalen slugt.
 Idyllisk gnistred' Ildens røde Lue.
-For Dorene hang Tæpper og et paa Gulvet laat, Og grønne Tasts-Gardiner for Vinduet man saae.
-P a a Væggen var der i forgyldte Ramme,
+For Dørene hang Tæpper og et paa Gulvet laa, 
+Og grønne Tafts-Gardiner for Vinduet man saae.
+Paa Væggen var der i forgyldte Ramme,
 Med Tulipan i Haanden, en Madamme;
 (Saavidt jeg troer,
-V ar det min Moders Bedstemoer).
-Desuden saae man al vor Slægt i Silhuetter. Men hvad der meest behaged' mig og lille Faetter, Det var et Skjærmbræt, nydeligt at stue,
+Var det min Moders Bedstemoer).
+Desuden saae man al vor Slægt i Silhuetter. 
+Men hvad der meest behaged' mig og lille Fætter, 
+Det var et Skjærmbræt, nydeligt at skue,
 Thi Billeder var klinet smukt derpaa,
-Og jeg og Faetter, vi var' den Gang smaae,
+Og jeg og Fætter, vi var' den Gang smaae,
 Og sad paa Skammelen i Mosters Stue.
 Vi saae hvorledes, bort fra Paradiset
-Adam ogEva lob af Frygt for Riset,
-Den Gang de havde gjort den gode Gud imod. Kain flygtede med Mærket i sin Pande. Syndflodens Vande
+<w>Adam</w> og <w>Eva</w> løb af Frygt for Riset,
+Den Gang de havde gjort den gode Gud imod.
+<w>Kain</w> flygtede med Mærket i sin Pande. 
+<w>Syndflodens</w> Vande
+Gik over Skov og Bjerg. I Arken <w>Noa</w> bad,
+Og Duen kom med <w>Haabets</w> Olieblad.
+Ved Ørknens Kilde <w>Hagar</w> sad,
+Og Drengen hvilte bleeg i hendes Skjød, 
+Det fæle <w>Sodom'</w> sank i Flamme-Glød.
+Vi hørte <w>Josephs</w> Klager,
+Saae <w>Pharao</w> med samt Ægyptens Plager.
+Her tog' de Barnet <w>Moses</w> op af Vandet,
+Der førte han, som Mand sit Folk til <w>Canaans</w> Landet.
+Med Spil og Sang drog Jephtas Datter ud.
+Vildt hærged' <w>Samson</w>, her stod <w>Ruth</w> som Brud. 
+Nu saae vi Drotten,
+Den bange <w>Saul</w>, hos Hexen hist i Grotten. 
+Kong <w>David</w> sad med Harpen i sin Haand; 
+Hist førtes Folket bort i Lænker og i Baand.
+Imellem Fædre-Hjems Ruiner 
+Nomade-Skaren gik med Sorgens Miner,
+Da lyste Stjernen for det taare-fyldte Øie,
+Og Engle sang:"<w>Jehova</w> i det Høie."
+<w>De hellige Konger tre</w> ved Krybben stod, 
+Hvor Oxen kyssed' <w>Jesu-Barnets</w> Fod.
 
- Gik over Skov og Bjerg. I Arken N o a bad, Og Duen kom med Haabets Olieblad.
-Ved Brknens KildeHagar sad,
-Og Drengen hvilte bleeg i hendes Skjod, Det falleSodom' sank i Flamme-Glod.
-Vi hørte Josephs Klager,
-Saae PH ara o med samt ^Egyptens Plager.
-Her tog' de BarnetMoses op af Vandet,
-Der forte han, som Mand sit Folk til Ca n aa nsLandct.
-Med Spil og Sang drog Jephtas Datter ud. Vildt hærged'Samson, her stod Ruth som Brud. Nu saae vi Drotten,
-Den bange S a u l , hos Heren hist i Grotten. Kong David sad med Harpen i sin Haand; Hist fortes Folket bort i Leenker og i Baand. Imellem Fordre-Hjems Ruiner Nomade-Skaren gik med Sorgens Miner,
-Da lyste Stjernen for det taare-fyldte Øie, Og Engle sang:"Jehova i det Høie."
-De hellige Konger tre ved Krybben stod, Hvor Oren kyssedJ' esu-Barnets Fod.
 — Saa tidt og gjerne
 Vi saae derpaa, og i vor lille Hjerne
 Fremstod en Verden underfuld og smuk.
 Men ak, en Morgen blev der Graad og Suk;
-Ved Doren holdt en Neisevogn — klart skinned' Solen;
-Den lilleFeettcr skulde langveis bort til Skolen. — Jeg saae ham ei i hele otte Aar.
+Ved Døren holdt en Reisevogn — klart skinned' Solen;
+Den lille <w>Feetter</w> skulde langveis bort til Skolen.
+— Jeg saae ham ei i hele otte Aar.
 
- Men nu igaar
-Fortæller Moster: "lille Fætier kommer
-Endnu iDag, og bli'er her for i Sommer."
+Men nu igaar
+Fortæller <w>Moster</w>: "lille <w>Fætter</w> kommer
+Endnu i Dag, og bli'er her for i Sommer."
 Da blev jeg ret saa glad; hvert Barndoms Minde
 Randt mig isinde;
-Jeg glemte reent, jeg alt var femten Aar. S a a underligt mit Hjerte flaaer,
+Jeg glemte reent, jeg alt var femten Aar. 
+Saa underligt mit Hjerte flaaer,
 Da jeg ham hører komme. Ak, saa bange
-J e g bag det gamle Skjærmbræt skjulte mig.
+Jeg bag det gamle Skjærmbræt skjulte mig.
+
 Han kyssed' Moster, Gud, saa mange Gange,
-Og sagde: "Hvor jeg lamgtes efter Dig!"
-— Han var saa smuk, jeg havde knap ham kjendt, Men nu var han jo ogsaa en Student!
-S n a r t fandt han mig: ak, jeg var næften dod!
-Jeg følte, jeg blev ganske rod.
-Ak, hvor hans Kys dog bramdte, min Kind var lue-heed; Jeg slog mit Øie ned —
+Og sagde: "Hvor jeg længtes efter Dig!"
+— Han var saa smuk, jeg havde knap ham kjendt, 
+Men nu var han jo ogsaa en Student!
+
+Snart fandt han mig: ak, jeg var næsten død!
+Jeg følte, jeg blev ganske rød.
+Ak, hvor hans Kys dog brændte, min Kind var lue-heed; 
+Jeg slog mit Øie ned —
 Da stod en lille Dreng med Kogger og med Pile
-P a a Skjærmen her;
-Ei for vi lagde Mwrke til ham der,
-Nu syntes han saa ondskabsfuld at smile. Thi for, da jeg og Fætter vare smaae,
+Paa Skjærmen her;
+Ei før vi lagde Mærke til ham der,
+Nu syntes han saa ondskabsfuld at smile. 
+Thi før, da jeg og Fætter vare smaae,
 Vi heller paa de andre Stykker saae,
-Nu vil han hævne stg med stne Pile.
+Nu vil han hævne sig med sine Pile.
 </body>
 </poem>
 
 <poem id="andersen2017110735">
 <head>
-    <title>Til min Moder.</title>
-    <subtitle>(Skrevet 182 Z).</subtitle>
-    <firstline></firstline>
+    <title>Til min Moder</title>
+    <subtitle>(Skrevet 1823).</subtitle>
+    <firstline>I Barndoms Kraftløshed paa Moder-Arme</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 81.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 81.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-«>§ Barndoms Kraftlosbed paa Moder-Arme Du bar mig, lærte Læben stamme Gud;
-Jeg fra Dit Bryst indsuged' Liv og Varme, Du lærte mig at kjende Herrens Bud.
+I Barndoms Kraftløshed paa Moder-Arme 
+Du bar mig, lærte Læben stamme Gud;
+Jeg fra Dit Bryst indsuged' Liv og Varme, 
+Du lærte mig at kjende Herrens Bud.
 O, aldrig skal jeg glemme hine Goder,
-Og hvad jeg lærte af min fromme Moder, Men evig, trofast, barnlig elske Dig, Saaledes som Du altid elskte mig.
-Naar Aanden modnet folder ud sin Vinge, Og jeg tor værdigt Digter-Harpen flaae,
+Og hvad jeg lærte af min fromme Moder, 
+Men evig, trofast, barnlig elske Dig, 
+Saaledes som Du altid elskte mig.
+
+Naar Aanden modnet folder ud sin Vinge, 
+Og jeg tør værdigt Digter-Harpen slaae,
 For Gud og Dyd skal da dens Toner klinge,
-Og som en Virak Guddoms Thronen naae; Saa vil Du glædes, Fryd vil Dig forynge,
-Da skal din Son i Aft'nen for Dig synge, Du sang jo for for ham i Barndoms Tid,
-Skjsndt ei saa stærk, men from, enfoldig, blid.
-Jeg veed det Moder, hvad mig Gud forlener, Min hele Lykke ene skyldes Dig,
+Og som en Virak Guddoms Thronen naae; 
+Saa vil Du glædes, Fryd vil Dig forynge,
+Da skal din Søn i Aft'nen for Dig synge, 
+Du sang jo for for ham i Barndoms Tid,
+Skjøndt ei saa stærk, men from, enfoldig, blid.
+
+Jeg veed det Moder, hvad mig Gud forlener,
+Min hele Lykke ene skyldes Dig,
 Thi ikke jeg mit store Held fortjener,
 Nei kun for Din Skyld Herren hører mig.
-I mangen sovnlos Nat Din Bon jo lyder, For mig Din hede Modertaare flyder,
-Du beder varmt til Herren for din Son, Og Godheds Gud opfylder Fromheds Bon!
+I mangen søvnlæs Nat Din Bøn jo lyder, 
+For mig Din hede Modertaare flyder,
+Du beder varmt til Herren for din Søn,
+Og Godheds Gud opfylder Fromheds Bøn!
 </body>
 </poem>
 
 <poem id="andersen2017110736">
 <head>
-    <title>Visens Datter</title>
-    <firstline></firstline>
+    <title>Risens Datter</title>
+    <firstline>Dybt inde under Bjerget en gammel Rise boer</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 82-83.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 82-83.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Nisens Walter.
-^Aybt inde under Bjerget en gammel Rise boer, Hans Dagligstue hvælver stg der saa hoi og stor. Dets gyldne Lofte bæres af Soiler, stolte tre;
-Der fidder Risens Datter, hun er nok vwrd at see.
-En Fjerdingvei er Høiden, maastee en Smule meer, Forresten deilig velstabt, med Smilehul som leer. Hun strikker Bernestrømper til sine Sostre smaae,
-2 hvert et Strømpestasle vist Nunde-Taarn kan staae.
-S i t hele Liv hun leved' i Bjergets snevre Duur, Nu faaer hun Lyst at røre stg lidt i Guds Natur,
-Saa deiligt skinner Solen og Himlen er saa blaa, S o m en Kartoffel-Ager hun synes Skoven staae;
-Og hele Kjobsted-Flækken med Kirken paa en Hok, Er som et Bord paa Marked' med broget Legetok. S a a lystigt hun spadserer hen over By og Eng, Og boltrer stg i Søen, det er saa blod en Seng.
-Af vilde Rosenhække og Hyldebuste net,
-Hun binder i sinUskyld en lille Bryst-Bouquet;
-De store høie Boge hun rykker op med Rod,
-S a a fletter hun sig Krandse, det unge muntre Blod.
->' i
-,z§!
-'.'V.
-z
+Dybt inde under Bjerget en gammel Rise boer, 
+Hans Dagligstue hvælver sig der saa høi og stor. 
+Dets gyldne Lofte bæres af Søiler, stolte tre;
+Der sidder Risens Datter, hun er nok værd at see.
 
- Paa Marken pusler Noget — det synes ret pikant;
-I Forkla-det gjemmer hun strar hvad her hun fandt;
-Og siger til sin Fader: "see, hvad jeg stedte paa, "Lil Legetoi jeg tog det for mine Sostre smaae."
+En Fjerdingvei er Høiden, maaskee en Smule meer, 
+Forresten deilig velskabt, med Smilehul som leer. 
+Hun strikker Børnestrømper til sine Søstre smaae,
+I hvert et Strømpeskafte vist Runde-Taarn kan staae.
+
+Sit hele Liv hun leved' i Bjergets snevre Buur,
+Nu faaer hun Lyst at røre sig lidt i Guds Natur,
+Saa deiligt skinner Solen og Himlen er saa blaa,
+Som en Kartoffel-Ager hun synes Skoven staae;
+
+Og hele Kjøbsted-Flækken med Kirken paa en Høi, 
+Er som et Bord paa Marked' med broget Legetøi.
+Saa lystigt hun spadserer hen over By og Eng,
+Og boltrer sig i Søen, det er saa blød en Seng.
+
+Af vilde Rosenhække og Hyldebuste net,
+Hun binder i sin Uskyld en lille Bryst-Bouquet;
+De store høie Bøge hun rykker op med Rod,
+Saa fletter hun sig Krandse, det unge muntre Blod.
+
+Paa Marken pusler Noget — det synes ret pikant;
+I Forklædet gjemmer hun strax hvad her hun fandt;
+Og siger til sin Fader: "see, hvad jeg stødte paa, 
+"Til Legetøi jeg tog det for mine Søstre smaae."
+
 Den gamle Rise klygtig paa Hittegodset saae,
-Og svarede: "ivjær Datter, lad Du det Smaakravl gaae! "Det synes vel saa spinkelt, men det har stor Forstand, "Det er en Plov med Arne og deres Bondemand!"
-"Han smykker Bjergets Vægge med Ranker ogmedGrpnt, "Nu sorger han for Kornet, der ogsaa pynter kjont. —
-"Din Indsigt i Naturen er ikke just til xr-e, "DuBlumenbachmaalæse, derstaaer omfligeKrco.
-— Imellem Fjeldets Stene, bag Buste og bag Krat, Seer man et Lys nu bramde til over Midenat.
-Thi Jomfruen studerer, jo! jo! jeg siger Tak; Snart kan hun jo paa Namse Linn«Bolgumen
-bach.
-Hun snakker nok saa driftigt om Inkusorlum,
-M a n stulde troe hun daglig kom paa Collegium;
-Men Strikkestrømpen hviler, og hun og Sostre smaae, Med npgne Pusselanker i Bjergets Sale gaae.
+Og svarede: "Kjær Datter, lad Du det Smaakravl gaae! 
+"Det synes vel saa spinkelt, men det har stor Forstand, 
+"Det er en Plov med Arne og deres Bondemand!"
+
+"Han smykker Bjergets Vægge med Ranker og med Grønt,
+"Nu sørger han for Kornet, der ogsaa pynter kjønt. —
+"Din Indsigt i Naturen er ikke just til <i>præ</i>, 
+"Du <w>Blumenbach</w> maa læse, der staaer om slige Kræ.
+
+— Imellem Fjeldets Stene, bag Buske og bag Krat, 
+Seer man et Lys nu brænde til over Midenat.
+Thi Jomfruen studerer, jo! jo! jeg siger Tak;
+Snart kan hun jo paa Ramse <i>Linné</i> og <w>Blumenbach.</w>
+
+Hun snakker nok saa dristigt om <i>Infusorium,</i>
+Man skulde troe hun daglig kom paa Collegium;
+Men Strikkestrømpen hviler, og hun og Søstre smaae,
+Med nøgne Pusselanker i Bjergets Sale gaae.
 </body>
 </poem>
 
@@ -2214,22 +2356,22 @@ Men Strikkestrømpen hviler, og hun og Sostre smaae, Med npgne Pusselanker i Bje
    <title>Aftenen</title>
    <subtitle>
       <line>(Et Træsnit)</line>
-      <line>»Anch'io son pittore!« - Correggio.</line>
+      <line>"Anch'io son pittore!" - Correggio.</line>
    </subtitle>
    <toctitle>Aftenen</toctitle>
    <indextitle>Aftenen</indextitle>
    <firstline>En Aften deilig, som i en Roman!</firstline>
    <notes>
-      <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 84-85.</note>
-      <note>Kjøbenhavns flyvende Post, 1827.</note>
+      <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 84-85.</note>
+      <note>Første gang trykt i <i>Kjøbenhavns flyvende Post</i>, 1827.</note>
    </notes>
    <quality>korrektur1</quality>
 </head>
 <body>
 En Aften deilig, som i en Roman!
-(For Rimets Skyld, som een i <i>Hindostan.)</i>
+(For Rimets Skyld, som een i <w>Hindostan.)</w>
 O Alnaturen til mit Hjerte taler,
-Det maa herud: <i>»Ja, ogsaa jeg er Maler!«</i>
+Det maa herud: <w>"Ja, ogsaa jeg er Maler!"</w>
 See, Solen synker i sit røde Blod,
 Og Aander suse gjennem Skovens Toppe.
 Her slumrer Uskyld sødt ved Bøgens Rod,
@@ -2238,20 +2380,20 @@ Violer dufte fra det unge Græs,
 Og hisset vandre Præstens hvide Gæs.
 
 See hist en gammel Bonde paa sit Øg,
-En Fugleskræmme paa en <i>Rocinante;</i>
+En Fugleskræmme paa en <w>Rocinante!</w>
 Nu holder han hist ved den flakte Bøg,
-Og tæller Penge af en gammel Vante.
+Og tæller Penge af en gammel Vante;
 Endnu engang han ret beseer sin Skat,
 Og griber derpaa atter Tøilen fat;
 Ham Længsel driver mod det elskte Hjem,
 Hvor Hytten staaer imellem Nøddehække.
-Men ikkun langsomt, langsomt gaaer det frem.
-See, hvor han seer mod Skyens Bjergerække;
+Men ikkun langsomt, langsomt gaaer det frem;
+See, hvor han seer mod Skyens Bjergerække.
 Dog Phantasus ham følger i hans Nød,
 Og viser i det Fjerne et Fad Grød.
 
 Hvor malerisk staaer Fiskerhytten der!
-See, Vindvet kneiser med halvtredie Rude!
+See, Vindvet kneiser med halvtredie Rude.
 Hvor gløde dog i Aftensolens Skjær
 De halve tre imellem gamle Klude!
 Og rundt om Hytten Tjørnehække staae,
@@ -2260,10 +2402,10 @@ Og Himlen favner Alt saa klar og blaa,
 Mens Fiskerkonen hjem fra Stranden sjokker.
 
 See, hist paa Skrænten staaer en lang Person
-Med Ansigtet saa blegt, som salig <i>Werther,</i>
+Med Ansigtet saa blegt, som salig <w>Werther,</w>
 Og med en Næse, stor som en Kanon,
 Og Øine bitte smaa, som grønne Ærter.
-Han synger noget Tydsk med et »woher?«
+Han synger noget Tydsk med et "woher?"
 Og stirrer derpaa ud i Vesterlide.
 Hvorfor mon han vel staaer saa længe der?
 Ja Herre Gud! Man kan ei Alting vide;
@@ -2276,35 +2418,56 @@ En Gal, en Elsker, eller en Poet.<note>Allusion til The lunatic, the lover and t
 <poem id="andersen2017110738">
 <head>
     <title>De Danske og deres Konge</title>
-    <firstline></firstline>
+    <subtitle>(En Skizze fra den 11 Februar 1659)</subtitle>
+    <firstline>Alt reiser Vint'ren sit hvide Telt</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 86-87.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 86-87.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-De Danske og veres Mange.
-(En Skizze fra den 11 Februar 165S).
-A lt reiser Vint'ren sit hvide Telt; Med Jis ligger lille og store Belt; Men Danmark stoler paa Herren.
-See Svensken ligger for Kivbenhavn,
-Han stoler saa trygt paa sin Magsti,tNavn, Men Danmark stoler paa Herren.
-I Byen hersker den bittre Npd,
-Saa haardt den alt trues med Hungersdpd;
-Men Danmark stoler paa Herren.
-Den hele Forstad er lagt i Gruus,
-Hpit Flammerne hvirvle fra Herrens Huus. Men Danmark stoler paa Herren.
-Den dansse Konge paa V olden staaer, De gloende Kugler om Helten flaaer,
+Alt reiser Vint'ren sit hvide Telt; 
+Med Iis ligger lille og store Belt; 
 Men Danmark stoler paa Herren.
 
- Alt eier Fjenden den hele A ;
-Men Fredrik svoer: i sin Rede at dpe; Og Danmark stoler paa Herren.
-Enhver vil stride, trods Kjpn og Stand,
-Hver Mand er en Helt, hver Qvinde en Mand, Og Danmark stoler paa Herren.
-Sin Liigsjorte. drager nu Svensken paa; Som Dpdningskarer i Sneen de gaae, Men Danmark stoler paa Herren.
-. De levende Sneemænd storme paa Stand, Men Qvinden dem smelter med sydende Vand, Trygt Danmark stoler paa Herren.
-De Svenske storme med Larm og Skrig, Men synke i Sneen som blodige Liig,
+See Svensken ligger for Kjøbenhavn,
+Han stoler saa trygt paa sin Magt, sit Navn, 
+Men Danmark stoler paa Herren.
+
+I Byen hersker den bittre Npd,
+Saa haardt den alt trues med Hungersdød;
+Men Danmark stoler paa Herren.
+
+Den hele Forstad er lagt i Gruus,
+Høit Flammerne hvirvle fra Herrens Huus. 
+Men Danmark stoler paa Herren.
+
+Den danske Konge paa Volden staaer, 
+De gloende Kugler om Helten flaaer,
+Men Danmark stoler paa Herren.
+
+Alt eier Fjenden den hele Ø;
+Men <w>Fredrik</w> svoer: i sin Rede at døe;
+Og Danmark stoler paa Herren.
+
+Enhver vil stride, trods Kjøn og Stand,
+Hver Mand er en Helt, hver Qvinde en Mand, 
+Og Danmark stoler paa Herren.
+
+Sin Liigskjorte<note>Liigskjorte] Liigsjorte</note> drager nu Svensken paa; 
+Som Dødningskarer i Sneen de gaae,
+Men Danmark stoler paa Herren.
+
+De levende Sneemænd storme paa Stand, 
+Men Qvinden dem smelter med sydende Vand, 
+Trygt Danmark stoler paa Herren.
+
+De Svenske storme med Larm og Skrig, 
+Men synke i Sneen som blodige Liig,
 Thi Danmark stoler paa Herren.
-— Snart toner te ckeum som Hjertets Tolk, Og Kongen knæler med al-sit Folk;
+
+— Snart toner <i>te deum</i> som Hjertets Tolk, 
+Og Kongen knæler med al sit Folk;
 For Seiren takke de Herren.
 </body>
 </poem>
@@ -2312,28 +2475,36 @@ For Seiren takke de Herren.
 <poem id="andersen2017110739">
 <head>
     <title>Dødsøieblikket</title>
-    <firstline></firstline>
+    <firstline>Hvad er det dog som lyser? det luttres for min Sands</firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 88.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 88.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-DiivsoieblikLrt.
-"Wenn die unbekannte Hånd den lehten Pfeil an das HanpL des Menschen sendet, so buck er vorher das Haupt, und der Pfeil hedt blvs die Dvrnenkrone von seinen Munden ab."
-Jean Poul.
-A vad er det dog som lyser? det luttres for min Sands; Jeg føler Øiet briste i denne Straaleglands.
-Mit Hoved mat stg boier for Kraften i min Aand, Og mildt om Hjertet losner stg alle snevre Baand.
-I Dyden faae vi Vinger, det troe vi jo som Smaae, J a Aanden den faaer Vinger, som Tankens overgaae!
-I Stjernernes Systemer i Miden paa vor Jord, Jeg seer en Guddoms Fylde hvortil jeg ei har Ord. En Evighed jeg skuer i Alt, selv i mit Bryst,
+    <nonum><small><wrap>"Wenn die unbekannte Hand den letzten Pfeil an das Haupt des Menschen sendet, so bückt er vorher das Haupt, und der Pfeil hebt blos die Dornenkrone von Seinen Wunden ab."</wrap></small></nonum>
+    <nonum><small><right><w>Jean Paul</w></right></small></nonum>
+
+Hvad er det dog som lyser? det luttres for min Sands; 
+Jeg føler Øiet briste i denne Straaleglands.
+Mit Hoved mat stg bøier for Kraften i min Aand, 
+Og mildt om Hjertet løsner sig alle snevre Baand.
+I Dyden faae vi Vinger, det troe vi jo som Smaae, 
+Ja Aanden den faaer Vinger, som Tankens overgaae!
+
+I Stjernernes Systemer i Miden paa vor Jord, 
+Jeg seer en Guddoms Fylde hvortil jeg ei har Ord.
+En Evighed jeg skuer i Alt, selv i mit Bryst,
 Og alle Taager synke bag Jordens kjendte Kyst.
-I mine Brodres Hjerter nu forst jeg læser ret,
-Vel er' vi alle svage, men ingen ganste flet.
-0 kunde vi herneden saa klart i Andre see, Som i vort eget Indre, vi gjorte Dem ei Vee.
-1 hver jeg mig gjenkjender, i store, som i smaae,
-O skal vi da i Døden hinanden forst forstaae?
+I mine Brødres Hjerter nu først jeg læser ret,
+Vel er' vi alle svage, men ingen ganske slet.
+
+O kunde vi herneden saa klart i Andre see, 
+Som i vort eget Indre, vi gjorte Dem ei Vee.
+I hver jeg mig gjenkjender, i store, som i smaae,
+O skal vi da i Døden hinanden først forstaae?
 Jeg er saa let, saa salig, saa luttret i min Tro,
-Jeg føler Kamp og Stræben, og dog en himmelst No!
+Jeg føler Kamp og Stræben, og dog en himmelsk Ro!
 </body>
 </poem>
 
@@ -2342,7 +2513,7 @@ Jeg føler Kamp og Stræben, og dog en himmelst No!
     <title>Amors Spillekort</title>
     <firstline></firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 89.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 89.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2363,7 +2534,7 @@ S a a spiller han lystigt Livet bort, Og vi maae tjene somHerrekort.
    <indextitle>Oldtids huuslige Liv</indextitle>
    <firstline>Ak, hvor romantisk smiler dog det Bjælkehuus i Dalen!</firstline>
    <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 90.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 90.</note>
       <note>Første gang trykt i <i>Kjøbenhavns-Posten</i>, 1829.</note>
    </notes>
    <quality>korrektur1</quality>
@@ -2391,7 +2562,7 @@ Med Øredask, og andet meer, hun holder dem i Tømme.
     <title>Østergade</title>
     <firstline></firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 91-94.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 91-94.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2453,7 +2624,7 @@ En Mængde Uhre; hvert os minder,
 At Tiden svinder,
 At som vi bedst vil nyde Promenaden, Staae vi ved Enden alt af Gaden. Forstrækket i vort Sind,
 Vi falde strar paa Apotheket ind,
-Bevwrte Sjæl og Krop med Draaber og med Piller,
+Beværte Sjæl og Krop med Draaber og med Piller,
 Kort sagt, man stiller
 Sit Febergys med saadant Slikkeri,
 
@@ -2476,7 +2647,7 @@ Vi grunde------ak! kun kort er her vort Stade; Et Skridt — og saa — Farvel v
     <title>Morgen Lange</title>
     <firstline></firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 95-98.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 95-98.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2508,18 +2679,18 @@ Naturen rundtomkring var kold som":Mathison's Gedichte;"
 Men Helten selv er ganstevarm, han lukkertaus sit Øie; Da seer han ganste tydeligt igjennem Markens Høie, Og der ev megen Lystighed hos Folkene derinde.
 Fem Tommer kun hvert Mandfolk er, og tre en halv hver
 Qvinde.
-Og stjondt det nu er Juletid, hvor Kulden dominerer, I Klæder syed' af Spindelvwv man lysteligt spadserer. De gamle Damer seer man dog for Kulden at betvinge, Har over Skuldrene som Schavl en Flagermuse-Vinge.
+Og stjondt det nu er Juletid, hvor Kulden dominerer, I Klæder syed' af Spindelvæv man lysteligt spadserer. De gamle Damer seer man dog for Kulden at betvinge, Har over Skuldrene som Schavl en Flagermuse-Vinge.
 
  Men hille den! hvad kommer der? Tolv hvide Muusmcd Topper;
 Af Vognen, som en Træskoe er, en deilig Dame hopper. "Gud hstelpemig!Gud hjælpemig!"saasukkerMorten
 Lange;
 "Jeg er iGrunden ei Kujon, menjeg er grumme bange!
-"Desudenveedjegmegetgodt, detkommerkunfraBlodet, Men Blodet lober mig for stwrkt, det lobearfmed Modet!" Saa talte han og fiketStod, der roved' ham Balanæn; Og bort medHest ogKane fløi hverRest afKontenanæn. Han folre ganske tydeligt, det var hans fidste Time, Og da han ret betconkte det, saa maatte han besvime. —Der laae hannudenungeMand, eikundehansigrøre, Men da han havde ligget lidt, hvad fik han da at høre. Det summede og brummede, han var ei længer ene, Een Trold tog ham vedHovedet, een ved hans lange Bene ; S a a bar' De ham i Bjerget ind, de Vægge stinned' røde,
+"Desudenveedjegmegetgodt, detkommerkunfraBlodet, Men Blodet lober mig for stærkt, det lobearfmed Modet!" Saa talte han og fiketStod, der roved' ham Balanæn; Og bort medHest ogKane fløi hverRest afKontenanæn. Han folre ganske tydeligt, det var hans sidste Time, Og da han ret betconkte det, saa maatte han besvime. —Der laae hannudenungeMand, eikundehansigrøre, Men da han havde ligget lidt, hvad fik han da at høre. Det summede og brummede, han var ei længer ene, Een Trold tog ham vedHovedet, een ved hans lange Bene ; S a a bar' De ham i Bjerget ind, de Vægge stinned' røde,
 Da blev hans Helte-Hjerte Jis, han følte, at han Døde. ----- Men da nu Døden var forbi, og Øiet atter skuer,
 Da seer han i det andet Liv den Fare som ham truer. AfRog erLoftets Hvælving sort, der er en grusom Varme: Og rundtomkring der Djævle staae med nogne, laadne
 Arme,
 En har enHammer i sinHaand, han synes barst ar true,
-Og dybt i Ovnen brænder høit den røde Flamme-Lue. Nu vidste Helten hvor han var, og gav sig til at knæle, Men som han ret af Hjertet bad, da loe de Djævle fwle; Men ved hans Side Englen stod med Himlen i sit Øie, Og Lokkerne som Taage flod om Barmens Marmor-
+Og dybt i Ovnen brænder høit den røde Flamme-Lue. Nu vidste Helten hvor han var, og gav sig til at knæle, Men som han ret af Hjertet bad, da loe de Djævle fæle; Men ved hans Side Englen stod med Himlen i sit Øie, Og Lokkerne som Taage flod om Barmens Marmor-
 Høie;
 
  Hun rakte ham sin hvideHaand, og sagd"e:Morten Lange!
@@ -2539,7 +2710,7 @@ Og lille Anesad somBrudvedMortenLangesSide.
     <title>De tre Gaver</title>
     <firstline></firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 99-100.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 99-100.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2568,7 +2739,7 @@ Hvert Dame-Hjerte stod nu i Brand, Hvor det dog er en nydelig Mand. — Om Aande
     <toctitle>Januar, en Skizze</toctitle>
     <firstline></firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, p. 101.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, p. 101.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2592,7 +2763,7 @@ Brpdkonen staaer og fryser, en bleg, en nordisk Mv.'
     <title>Tanker ved en ituslagen Jydepotte</title>
     <firstline></firstline>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 102-104.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 102-104.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2644,7 +2815,7 @@ S n a r t hvile ogsaa vore trætte Bene.
     <subtitle>et fyensk Folke-Eventyr</subtitle>
     <toctitle>Dødningen, et fyensk Folke-Eventyr</toctitle>
     <notes>
-        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, G. H. Robert, Kbh., 1830, pp. 105-136.</note>
+        <note>Teksten følger førsteudgaven af H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830, pp. 105-136.</note>
         <note>Eventyret har forskriften ,,Som Barn var det min største Glæde at høre Eventyr, en stor Deel staae endnu ret levende i min Erindring, og nogle af disse ere kun lidet eller intet bekjendte; jeg har her gjenfortalt et, og dersom jeg seer det optaget med Bifald, vil jeg saaledeS behandle flere, og engang levere en Cyclus af danske Folke-Eventyr. / Forfatteren.''</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
@@ -2679,7 +2850,7 @@ hække vare hans Blomstervaser, og som Vandfad havde han den hele Aae med sit fr
 et Chor af vingede Spillemand vækkede ham den nco- ste Morgen.
 Fra den nære Landsby ringede Klokkerne, det var Ssndag; Folk gik til Kirke og hilsede alle saa venligt den fremmede Vandringsmand med det aabne ærlige
 Ansigt; snart tonede Messesangen, og Lysene brændte paa Altarbordet, men Johannes stod allene paa Kir- kegaarden, saae de mange sjunkne Grave, der vare
-overgroede med hpit Grws, da tænkte han paa sin Fa  ders Grav, der nok ogsaa snart vilde synke saaledes sammen, da han ikkevar og pyntede og lugede den.— Taus sadde han sig ned og rykkede Græsset af een af
+overgroede med hpit Græs, da tænkte han paa sin Fa  ders Grav, der nok ogsaa snart vilde synke saaledes sammen, da han ikkevar og pyntede og lugede den.— Taus sadde han sig ned og rykkede Græsset af een af
 de nærmeste Grave, reifte de sorte Kors der vare faldne om, og lagde Krandsene, som Vinden havde revet bort fra de friste Grave, igjen paa deres Sted, i det han tamkte, at ogsaa en kjærlig Haand vilde tage sig
 af hans Faders Grav, nu da han ikke kunde det..
 
@@ -2749,7 +2920,7 @@ Solen stod allerede høit da de gjorde Rast under et stort Tr«; den Fremmede de
 havde han endnu aldrig smagt; det var ret en fornem Frokost i det Gronne. Skoven hvælvede sig som en Riddersal, og høit oppe i Galleriet, der var betrukket med «gte Grynt der ikke gik af i Vadsten, sang Fug  lene, som de storste Sangere, smukt fra Bladet, og ikke een slog en falst Trille.
 Vore Vandringsmand havde næsten fortoeret de  res Frokost, da der nærmede sig en gammel, af Alde  ren krumtboiet Kone; hun bar paa sin Ryg et Knippe Bromde, som hun havde samlet sig i Skoven, og stot
 tede sig med den ene Haand paa en Krykkestok, men holdt med den anden tre store Niis Bafr e g n e r og
-Vid ier. Langtsomt og stonnende stred hun fremad, men som hun var nærved dem begge sank hun til Jorden og udstedte et smerteligt Skrig; de sprang strar op for at hjwlpe hende, men hun havde i Faldet druk
+Vid ier. Langtsomt og stonnende stred hun fremad, men som hun var nærved dem begge sank hun til Jorden og udstedte et smerteligt Skrig; de sprang strar op for at hjælpe hende, men hun havde i Faldet druk
 ket sit ene Been. Hun jamrede høit af Smerte, og bad dem fore hende til sin Hytte, som kun laae et
 lille Stykke Vei derfra. J o h a n n e s greb hende strar
 i sine Arme, men den Fremmede bad ham ar lade
@@ -2794,7 +2965,7 @@ kunde Marionetspilleren ikke lamger modftaae, han lo  vede den Fremmede, at give
 over deres Hoveder; Fodstien var saa snever, at J o   h a n n e s svimlede og var styrtet ned i den frygtelige Klost under sig, havde ikke den Fremmede underftottet
 ham. Udsigten blev nu friere, Solen stod op og skin  nede med sine røde Straaler paa de hvide Bjergtin  der, men dybt nede laae Dalen i en blaalig Taage, der dunstede bort i Morgensolen. Johannes var hen- sjunken i Beskuelsen a f denne P r a g t ; h a n saae og
 anede kun Gud i den store Uendelighed, da lod der ganske underlige, himmelste Toner over hans Hoved; underligt smeeltede de hen med hans Hjertes Folelser;
-han saae i Veiret, en stor, hvid Svane svawede i Luf  ten, dens Sang hendode i smeltende Harmonier, og som baaren af Vinden, sank Fuglen med boiet Ho  ved ned for hans Fodder og var dod; da greb den
+han saae i Veiret, en stor, hvid Svane svævede i Luf  ten, dens Sang hendode i smeltende Harmonier, og som baaren af Vinden, sank Fuglen med boiet Ho  ved ned for hans Fodder og var dod; da greb den
 Fremmede det store Slagsværd, som han havde faaet af Marionetspilleren, og nu bar ved sin Side, huggede
 i to strrke Slag de store Svanevinger af, og gjemte
 dem under sin Randsel.
@@ -2805,7 +2976,7 @@ Saaledes vandrede de nu fremad mellem Bjer  gene, "hvor Alt er stort og deiligt,
  "hvad mon der ikke være for deilige Lande paa hin Side Bjergene?"
 " D e r ligger P h a n t a s i e n s V e r d e n ! " sagde den Fremmede, "jeg tænkcr at vi neeste Morgen flat kunne see dens glimrende Diamant Bjerge!"
 Da de nu havde reist mange Mile fremad, saae de dybt nede i en Dal mellem Bjergene, en stor Stad
-med mange Taarne der glindseve deiligt i det klare Solskin, og midt i Byen laae der et prægtigt Mar  morflot tækket med Svlv og Guld, og her residerede Kongen. Omtrent en Miil fra Staden laae der et stort Krohuus, og alle vare her i Arbeide med at op  rejse en Æreport, som Pigerne behang med Blomster og Krandfe. Af Verten erfarede vore Vandringsmand, at de var i Hjerterkonges Rige, en fortræffelig Re  gent, og nwr beflægtet medSiloio Ruderkonge, der
+med mange Taarne der glindseve deiligt i det klare Solskin, og midt i Byen laae der et prægtigt Mar  morflot tækket med Svlv og Guld, og her residerede Kongen. Omtrent en Miil fra Staden laae der et stort Krohuus, og alle vare her i Arbeide med at op  rejse en Æreport, som Pigerne behang med Blomster og Krandfe. Af Verten erfarede vore Vandringsmand, at de var i Hjerterkonges Rige, en fortræffelig Re  gent, og nær beflægtet medSiloio Ruderkonge, der
 er noksom bekjendt afCarlo Gozzi's dramatiske Eventyr "de trePommeranzer."
 "Ak!" sagde V erten, "vor allernaadigste Hjerter  konge er en fortræffelig Mand, ret en Hjertens Mand,
 og derfor male de ham ogsaa altid af med to Hjer  ter, men hans Datter — ak! ak!"
