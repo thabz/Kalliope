@@ -214,7 +214,7 @@ export default class TextContent extends React.Component {
         );
       case 'w':
         return (
-          <span key={this.keySeq++} style={{ letterSpacing: '0.2em' }}>
+          <span key={this.keySeq++} style={{ letterSpacing: '0.1em' }}>
             {this.handle_nodes(node.childNodes)}
           </span>
         );
