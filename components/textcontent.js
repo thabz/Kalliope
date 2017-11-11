@@ -214,7 +214,7 @@ export default class TextContent extends React.Component {
         );
       case 'w':
         return (
-          <span key={this.keySeq++} style={{ letterSpacing: '0.2em' }}>
+          <span key={this.keySeq++} style={{ letterSpacing: '0.1em' }}>
             {this.handle_nodes(node.childNodes)}
           </span>
         );
@@ -249,7 +249,7 @@ export default class TextContent extends React.Component {
         return <Footnote key={this.keySeq++} text={noteContent} />;
       case 'sc':
         return (
-          <span style={{ fontVariant: 'small-caps', fontSize: '1.2em' }}>
+          <span style={{ fontVariant: 'small-caps' }}>
             {this.handle_nodes(node.childNodes)}
           </span>
         );
