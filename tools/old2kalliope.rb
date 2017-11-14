@@ -39,9 +39,6 @@ def printPoem()
   if @linktitle
     puts "    <linktitle>#{@linktitle}</linktitle>"
   end
-  if @toctitle
-    puts "    <toctitle>#{@toctitle}</toctitle>"
-  end
   if @subtitle
     puts "    <subtitle>#{@subtitle}</subtitle>"
   end
