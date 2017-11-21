@@ -25,7 +25,7 @@ end
 @type = 'poem'
 
 def printPoem()
-  if @source and not @page
+  if @source and not @page and
       abort "FEJL: Digtet »#{@title}« mangler sideangivelse"
   end
   puts "<#{@type} id=\"#{@poetid}#{@date}#{'%02d' % @poemcount}\">"
@@ -64,7 +64,10 @@ def printPoem()
   puts "</#{@type}>"
   puts ""
   @firstline = nil
-  @title = nil, @toctitle = nil, @linktitle = nil, @indextitle = nil
+  @title = nil 
+  @toctitle = nil
+  @linktitle = nil
+  @indextitle = nil
   @subtitle = nil
   @body = []
   @notes = []
@@ -156,4 +159,6 @@ File.readlines(ARGV[0]).each do |line|
   end
 end
 
-printPoem()
+if @state != 'NONE'
+    printPoem()
+end
