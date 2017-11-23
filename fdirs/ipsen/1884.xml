@@ -4,11 +4,14 @@
 <workhead>
    <title>Sonetter og Sange</title>
    <year>1884</year>
-    <notes>
+   <notes>
         <note>Teksten følger førsteudgaven af Alfred Ipsen: <i>Sonetter og Sange</i>, Gyldendalske Boghandels Forlag, Kbh., 1884.</note>
         <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
         <note>Noter med en foranstillet asterisk er Ipsens egne.</note>
-    </notes>
+   </notes>
+   <pictures>
+       <picture type="titlepage" src="1884-p1.jpg">Titelbladet til <i>Sonetter og Sange</i> (1884). ,,Sonetter og Sange / af / Alfred Ipsen. // København / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn). / Fr. Bagges Bogtrykkeri / 1884.''</picture>
+   </pictures>
    <quality>korrektur1,kilde,side</quality>
 </workhead>
 <workbody>
@@ -2114,8 +2117,10 @@ og Dagen fødes paany.
 
 <poem id="ipsen2017112156">
 <head>
-    <title>I.</title>
+    <title>I</title>
     <linktitle>Af »Vandrebogen«, I</linktitle>
+    <indextitle>Af »Vandrebogen«, I</indextitle>
+    <toctitle><num>I.</num>Og nu vil jeg glemme min Vunde</toctitle>
     <firstline>Og nu vil jeg glemme min Vunde</firstline>
     <notes>
         <note>Teksten følger Alfred Ipsen: <i>Sonetter og Sange</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 70-71.</note>
@@ -2163,8 +2168,10 @@ sende de lyseste Drømme.
 
 <poem id="ipsen2017112157">
 <head>
-    <title>II.</title>
+    <title>II</title>
     <linktitle>Af »Vandrebogen«, II</linktitle>
+    <indextitle>Af »Vandrebogen«, II</indextitle>
+    <toctitle><num>II.</num>Syngende Lærker</toctitle>
     <firstline>Syngende Lærker</firstline>
     <notes>
         <note>Teksten følger Alfred Ipsen: <i>Sonetter og Sange</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 72-73.</note>
@@ -2368,7 +2375,9 @@ saa gyldent tankeløst, saa snart forglemt.
 <poem id="ipsen2017112162">
 <head>
     <title>I</title>
-    <linktitle>Sange, I.</linktitle>
+    <linktitle>Sange, I</linktitle>
+    <indextitle>Sange, I</indextitle>
+    <toctitle><num>I.</num>Det volder den Sang i de grønne Skove</toctitle>
     <firstline>Det volder den Sang i de grønne Skove</firstline>
     <notes>
         <note>Teksten følger Alfred Ipsen: <i>Sonetter og Sange</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 78-79.</note>
@@ -2402,7 +2411,9 @@ hvor Dødens Haand skal min Tinding svale.
 <poem id="ipsen2017112163">
 <head>
     <title>II</title>
-    <linktitle>Sange, II.</linktitle>
+    <linktitle>Sange, II</linktitle>
+    <indextitle>Sange, II</indextitle>
+    <toctitle><num>II.</num>Jeg mærker ikke til Vinter, jeg mærker ikke til Vaar</toctitle>
     <firstline>Jeg mærker ikke til Vinter, jeg mærker ikke til Vaar</firstline>
     <notes>
         <note>Teksten følger Alfred Ipsen: <i>Sonetter og Sange</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 79-81.</note>
@@ -3217,6 +3228,7 @@ træder sin luftige Dans.
     <title>Græske Stemninger</title>
     <firstline>Hjem fra Kampen og Sorgen</firstline>
     <notes>
+        <note>Mottoet stammer fra ,,Am 13. Mai'' i <a poet="goethe">Goethes</a> <i>Die Leiden des Jungen Werthers</i> (1774).</note>
         <note>Teksten følger Alfred Ipsen: <i>Sonetter og Sange</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 110-114.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
