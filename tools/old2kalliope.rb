@@ -19,12 +19,13 @@ end
 @title = nil, @toctitle = nil, @linktitle = nil, @indextitle = nil
 @subtitle = nil
 @body = []
+@notes = []
 @keywords = nil;
 @page = nil;
 @type = 'poem'
 
 def printPoem()
-  if @source and not @page
+  if @source and not @page and
       abort "FEJL: Digtet »#{@title}« mangler sideangivelse"
   end
   puts "<#{@type} id=\"#{@poetid}#{@date}#{'%02d' % @poemcount}\">"
@@ -43,9 +44,12 @@ def printPoem()
     puts "    <subtitle>#{@subtitle}</subtitle>"
   end
   puts "    <firstline>#{@firstline}</firstline>"
-  if @source && @page
+  if (@source && @page) || @notes.length > 0
     pp = @page.include?('-') ? 'pp' : 'p';
     puts "    <notes>"
+    @notes.each { |noteline|
+    puts "        <note>#{noteline}</note>"
+    }
     puts "        <note>#{@source.gsub(/[\. ]*$/,'')}, #{pp}. #{@page}.</note>"
     puts "    </notes>"
   end
@@ -60,9 +64,13 @@ def printPoem()
   puts "</#{@type}>"
   puts ""
   @firstline = nil
-  @title = nil, @toctitle = nil, @linktitle = nil, @indextitle = nil
+  @title = nil 
+  @toctitle = nil
+  @linktitle = nil
+  @indextitle = nil
   @subtitle = nil
   @body = []
+  @notes = []
   @keywords = nil
   @page = nil
   @type = 'poem'
@@ -129,11 +137,13 @@ File.readlines(ARGV[0]).each do |line|
       @indextitle = line[11..-1].strip
     elsif line.start_with?("LINKTITEL:")
       @linktitle = line[10..-1].strip
+    elsif line.start_with?("NOTE:")
+      @notes.push(line[5..-1].strip)
     elsif line.start_with?("SIDE:")
       @page = line[5..-1].strip
     elsif line.start_with?("TYPE:")
       @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
-    elsif line =~ /^.:/
+    elsif line =~ /^[A-Z]*:/
       abort "Unknown header-line: #{line}"
     else
       @state = 'INBODY'
@@ -149,4 +159,6 @@ File.readlines(ARGV[0]).each do |line|
   end
 end
 
-printPoem()
+if @state != 'NONE'
+    printPoem()
+end
