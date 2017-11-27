@@ -155,6 +155,10 @@ File.readlines(ARGV[0]).each do |line|
       if (line =~ /_/)
           abort "FEJL: Linjen »#{line_before.rstrip}« har ulige antal _"
       end
+      line = line.rstrip.gsub(/=(.+?)=/,'<w>\1</w>')
+      if (line =~ /=/)
+          abort "FEJL: Linjen »#{line_before.rstrip}« har ulige antal ="
+      end
     @body.push(line)
   end
 end
