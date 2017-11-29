@@ -497,9 +497,13 @@ const handle_text = (
   const textId = text.attr('id').value();
   const head = text.get('head');
   const body = text.get('body');
-  const firstline = head.get('firstline') ? head.get('firstline').text() : null;
-  let title = head.get('title') ? head.get('title').text() : null;
+  const firstline = safeGetText(head, 'firstline');
+  let title = safeGetText(head, 'title');
   title = title || firstline;
+  let linktitle = safeGetText(head, 'linktitle');
+  let indextitle = safeGetText(head, 'indextitle');
+  linktitle = linktitle || indextitle || title;
+
   const keywords = head.get('keywords');
   const isBible = poetId === 'bibel';
 
@@ -560,6 +564,7 @@ const handle_text = (
     text: {
       id: textId,
       title: replaceDashes(title),
+      linktitle: replaceDashes(linktitle),
       subtitles,
       is_prose: text.name() === 'prose',
       has_footnotes,
@@ -587,9 +592,7 @@ const handle_work = work => {
     let toc = [];
 
     const extractTocTitle = head => {
-      const firstline = head.get('firstline')
-        ? head.get('firstline').text()
-        : null;
+      const firstline = safeGetText(head, 'firstline');
       let toctitle = head.get('toctitle')
         ? head.get('toctitle').toString()
         : null;
@@ -784,11 +787,10 @@ const works_first_pass = collected => {
       work.find('//poem|//prose').forEach(part => {
         const textId = part.attr('id').value();
         const head = part.get('head');
-        const title = head.get('title') ? head.get('title').text() : null;
-        const firstline = head.get('firstline')
-          ? head.get('firstline').text()
-          : null;
-        const linkTitle = title || firstline;
+        const title = safeGetText(head, 'title');
+        const firstline = safeGetText(head, 'firstline');
+        const linktitle = safeGetText(head, 'linktitle');
+        const linkTitle = linktitle || title || firstline;
         texts.set(textId, {
           title: replaceDashes(linkTitle),
           type: part.name(),

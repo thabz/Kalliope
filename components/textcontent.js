@@ -140,6 +140,8 @@ export default class TextContent extends React.Component {
         return <i key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</i>;
       case 'b':
         return <b key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</b>;
+      case 'u':
+        return <u key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</u>;
       case 'p':
         return <p>{this.handle_nodes(node.childNodes)}</p>;
       case 'blockquote':
@@ -211,11 +213,13 @@ export default class TextContent extends React.Component {
           </span>
         );
       case 'w':
-        return (
-          <span key={this.keySeq++} style={{ letterSpacing: '0.2em' }}>
-            {this.handle_nodes(node.childNodes)}
-          </span>
-        );
+        // Render spatieret tekst som kursiv.
+        return <i key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</i>;
+//        return (
+//          <span key={this.keySeq++} style={{ letterSpacing: '0.1em' }}>
+//            {this.handle_nodes(node.childNodes)}
+//          </span>
+//        );
       case 'metrik':
         return this.handle_metrik(node.textContent);
       case 'hr':
@@ -247,7 +251,7 @@ export default class TextContent extends React.Component {
         return <Footnote key={this.keySeq++} text={noteContent} />;
       case 'sc':
         return (
-          <span style={{ fontVariant: 'small-caps', fontSize: '1.2em' }}>
+          <span style={{ fontVariant: 'small-caps' }}>
             {this.handle_nodes(node.childNodes)}
           </span>
         );
