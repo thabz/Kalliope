@@ -501,7 +501,8 @@ const handle_text = (
   let title = safeGetText(head, 'title');
   title = title || firstline;
   let linktitle = safeGetText(head, 'linktitle');
-  linktitle = linktitle || title;
+  let indextitle = safeGetText(head, 'indextitle');
+  linktitle = linktitle || indextitle || title;
 
   const keywords = head.get('keywords');
   const isBible = poetId === 'bibel';
