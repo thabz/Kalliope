@@ -71,11 +71,12 @@ export default class extends React.Component {
       const rows = items.map((item, i) => {
         const { id, title, type, prefix } = item;
         if (type === 'section' && item.content != null) {
+          const className = `level-${item.level || 1}`;
           return (
             <tr key={i}>
               <td />
               <td>
-                <h3>
+                <h3 className={className}>
                   <TextContent contentHtml={title} lang={lang} />
                 </h3>
                 {renderItems(item.content, indent + 1)}
@@ -93,12 +94,8 @@ export default class extends React.Component {
           );
           return (
             <tr key={id}>
-              <td className="num">
-                {prefix}
-              </td>
-              <td>
-                {linkedTitle}
-              </td>
+              <td className="num">{prefix}</td>
+              <td>{linkedTitle}</td>
             </tr>
           );
         }
@@ -106,9 +103,7 @@ export default class extends React.Component {
       const className = `toc ${indent === 0 ? 'outer' : ''}`;
       return (
         <table className={className}>
-          <tbody>
-            {rows}
-          </tbody>
+          <tbody>{rows}</tbody>
         </table>
       );
     };
@@ -125,12 +120,12 @@ export default class extends React.Component {
       />
     );
     const completedStatus =
-      work.status === 'incomplete' && work.id !== 'andre'
-        ? <div>
-            Kalliopes udgave af <WorkName work={work} cursive={true} /> er endnu
-            ikke fuldstændig.
-          </div>
-        : null;
+      work.status === 'incomplete' && work.id !== 'andre' ? (
+        <div>
+          Kalliopes udgave af <WorkName work={work} cursive={true} /> er endnu
+          ikke fuldstændig.
+        </div>
+      ) : null;
     let sidebar = null;
     if (pictures.length > 0 || notes.length > 0 || completedStatus != null) {
       sidebar = (
@@ -142,11 +137,13 @@ export default class extends React.Component {
       );
     }
     const table =
-      toc.length > 0
-        ? renderItems(toc)
-        : <div className="nodata">
-            <i>Kalliope indeholder endnu ingen tekster fra dette værk.</i>
-          </div>;
+      toc.length > 0 ? (
+        renderItems(toc)
+      ) : (
+        <div className="nodata">
+          <i>Kalliope indeholder endnu ingen tekster fra dette værk.</i>
+        </div>
+      );
     const title = <PoetName poet={poet} includePeriod />;
     const ogTitle =
       poetNameString(poet, false, false) + ': ' + workTitleString(work);
@@ -185,12 +182,26 @@ export default class extends React.Component {
                 :global(table.toc.outer) {
                   margin-left: 0;
                 }
-                :global(.toc) :global(h3) {
+                :global(.toc) :global(h3.level-1) {
                   font-weight: lighter;
                   font-size: 18px;
                   padding: 0;
                   margin: 0;
                   margin-top: 10px;
+                }
+                :global(.toc) :global(h3.level-2) {
+                  font-weight: lighter;
+                  font-size: 16px;
+                  padding: 0;
+                  margin: 0;
+                  margin-top: 0px;
+                }
+                :global(.toc) :global(h3.level-3) {
+                  font-weight: lighter;
+                  font-size: 14px;
+                  padding: 0;
+                  margin: 0;
+                  margin-top: 0px;
                 }
                 :global(.toc) :global(td.num) {
                   text-align: right;

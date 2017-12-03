@@ -2544,9 +2544,11 @@
   <period>
     <born>
       <date>1787-11-07</date>
+      <place>Ålsø ved Grenå</place>
     </born>
     <dead>
-      <date>1874-05-30</date>
+      <date>1871-05-30</date>
+      <place>København</place>
     </dead>
   </period>
   <works>andre</works>
@@ -3119,6 +3121,7 @@
       <date>1897-11-13</date>
     </dead>
   </period>
+  <works>1884</works>
 </person>
 
 
@@ -3513,7 +3516,7 @@
       <date>1922-11-20</date>
     </dead>
   </period>
-  <works>1883,andre</works>
+  <works>1883,1884,andre</works>
 </person>
 
 <person id="heibergjly" country="dk" lang="da" type="poet">
@@ -4006,7 +4009,7 @@
       <place>Hørbylunde Bakke ved Silkeborg</place>
     </dead>
   </period>
-  <works>andre,1942,1944</works>
+  <works>andre,1941,1942,1944</works>
 </person>
 
 <person id="nielsenm" country="dk" lang="da" type="poet">
@@ -5487,9 +5490,11 @@
   <period>
     <born>
       <date>1554-11-30</date>
+      <place>Penshurst, Kent</place>
     </born>
     <dead>
       <date>1586-10-17</date>
+      <place>Arnhem, Nederlandene</place>
     </dead>
   </period>
   <works>1591,andre</works>
@@ -6413,6 +6418,25 @@
     </dead>
   </period>
   <works>1869,1876,1889,1898,andre</works>
+</person>
+
+<person id="swinburne" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Algernon C.</firstname>
+    <lastname>Swinburne</lastname>
+    <fullname>Algernon Charles Swinburne</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1837-04-05</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1909-04-10</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>andre</works>
 </person>
 
 <person id="kipling" country="gb" lang="en" type="poet">
