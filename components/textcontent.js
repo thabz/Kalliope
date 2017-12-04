@@ -213,11 +213,13 @@ export default class TextContent extends React.Component {
           </span>
         );
       case 'w':
-        return (
-          <span key={this.keySeq++} style={{ letterSpacing: '0.1em' }}>
-            {this.handle_nodes(node.childNodes)}
-          </span>
-        );
+        // Render spatieret tekst som kursiv.
+        return <i key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</i>;
+//        return (
+//          <span key={this.keySeq++} style={{ letterSpacing: '0.1em' }}>
+//            {this.handle_nodes(node.childNodes)}
+//          </span>
+//        );
       case 'metrik':
         return this.handle_metrik(node.textContent);
       case 'hr':

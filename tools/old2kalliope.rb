@@ -59,7 +59,8 @@ def printPoem()
   puts "    <quality>korrektur1,kilde,side</quality>"
   puts "</head>"
   puts "<body>"
-  puts @body.join("\n").strip
+  first_non_empty_line = @body.find_index { |line| line =~ /[^\s]/ }
+  puts @body[first_non_empty_line,100000].join("\n").rstrip
   puts "</body>"
   puts "</#{@type}>"
   puts ""
@@ -93,6 +94,18 @@ def printEndSection()
 end
 
 File.readlines(ARGV[0]).each do |line|
+  line_before = line
+  while line =~ /^\t/
+      line = line.gsub(/^\t/,'    ')
+  end
+  line = line.rstrip.gsub(/_(.+?)_/,'<i>\1</i>')
+  if (line =~ /_/)
+      STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal _"
+  end
+  line = line.rstrip.gsub(/=(.+?)=/,'<w>\1</w>')
+  if (line =~ /=/)
+      STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal ="
+  end
   if @state == 'NONE' and line =~ /^KILDE:/
       @source = line[6..-1].strip
   end
@@ -150,16 +163,7 @@ File.readlines(ARGV[0]).each do |line|
     end
   end
   if @state == 'INBODY'
-      line_before = line
-      line = line.rstrip.gsub(/_(.+?)_/,'<i>\1</i>')
-      if (line =~ /_/)
-          abort "FEJL: Linjen »#{line_before.rstrip}« har ulige antal _"
-      end
-      line = line.rstrip.gsub(/=(.+?)=/,'<w>\1</w>')
-      if (line =~ /=/)
-          abort "FEJL: Linjen »#{line_before.rstrip}« har ulige antal ="
-      end
-    @body.push(line)
+      @body.push(line)
   end
 end
 
