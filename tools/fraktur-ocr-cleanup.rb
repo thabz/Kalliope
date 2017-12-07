@@ -1,7 +1,10 @@
+s/gron/grøn/
 s/oeg/æg/
 s/hoi/høi/
 s/hpi/høi/
 s/folg/følg/
+s/boie/bøie/
+s/tiende/kiende/
 s/Skjon/Skjøn/
 s/ce/æ/
 s/Sæne/Scene/
@@ -110,7 +113,9 @@ s/Jnd/Ind/
 s/Jf/If/
 s/ZE/Æ/
 s/AZ/Æ/
+s/JE/Æ/
 s/Sial/Siæl/
+s/Hole/Høie/
 s/Dine/Øine/
 s/Onske/Ønske/
 s/Drsm/Drøm/
@@ -124,6 +129,7 @@ s/Boek/Bæk/
 s/Opror/Oprør/
 s/sporg/spørg/
 s/labe/læbe/
+s/laeng/læng/
 s/overste/øverste/
 s/storst/størst/
 s/aldst/ældst/
