@@ -261,6 +261,7 @@
 'Voeld/Væld',
 'fpl/føl',
 'fvl/føl',
+' ferst/ først',
 'fsr/før',
 ' fer/ før',
 'elst/elsk',
