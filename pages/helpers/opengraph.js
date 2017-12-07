@@ -14,6 +14,7 @@ export const trimmedDescription = (
     .map(x => x[0])
     .join(' ')
     .replace(/<num>[^<]*<\/num>/g, '')
+    .replace(/<note>.*?<\/note>/g, '')
     .replace(/^<br\/>/, '')
     .replace(/^\s*/, '')
     .replace(/\s\s/g, ' ');
