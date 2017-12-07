@@ -10,6 +10,10 @@ s/Trsst/Trøst/
 s/Son/Søn/
 s / rod/ rød/
 s/elfl/elsk/
+s/Dore/Døre/
+s/Dor /Dør /
+s/Maastee/Maaskee/
+s/maastee/maaskee/
 s/Drom/Drøm/
 s/drom/drøm/
 s/msrk/mørk/
