@@ -15,16 +15,22 @@ s/drom/drøm/
 s/msrk/mørk/
 s/gjor/gjør/
 s/sial/skal/
+s/forer/fører/
+s/fore /føre /
+s/forend/førend/
 s/Ncer/Nær/
 s/M /M/
 s/scrt/sæt/
 s/ stal/ skal/
 s/stodt/stødt/
+s/stion/skiøn/
 s/storre/større/
+s/sonder/sønder/
 s/Oie/Øie/
 s/bce/bæ/
 s/Son /Søn /
 s/Hoi/Høi/
+s/Sovn/Søvn/
 s/ Dod/ Død/
 s/S a a /Saa /
 s/S a a/Saa/
@@ -33,6 +39,18 @@ s/ sor / for /
 s/hsie/høie/
 s/forst /først /
 s/forste /første /
+s/dn /du /
+s/Mre/Ære/
+s/Wre/Ære/
+s/Æde/Æde/
+s/Tsr/Tsr/
+s/mork/mørk/
+s/falste/falske/
+s/ node/ nøde/
+s/kioe/kiæ/
+s/Mork/Mørk/
+s/Morgenrode/Morgenrøde/
+s/ ode/ øde/
 s/speede/spæde/
 s/Lce/Læ/
 s/troeng/træng/
@@ -73,6 +91,7 @@ s/crs/æs/
 s/Bp/Bø/
 s/Oin/Øin/
 s/skion/skiøn/
+s/Skion/Skiøn/
 s/sierne/fierne/
 s/sorge/sørge/
 s/ sode / søde /
@@ -86,6 +105,7 @@ s/elst/elsk/
 s/Jnd/Ind/
 s/Jf/If/
 s/ZE/Æ/
+s/AZ/Æ/
 s/Sial/Siæl/
 s/Dine/Øine/
 s/Onske/Ønske/
@@ -97,6 +117,7 @@ s/Sporg/Spørg/
 s/Folg/Følg/
 s/Fodsel/Fødsel/
 s/Boek/Bæk/
+s/Opror/Oprør/
 s/sporg/spørg/
 s/labe/læbe/
 s/overste/øverste/
@@ -106,7 +127,7 @@ s/strom/strøm/
 s/hort/hørt/
 s/folt/følt/
 s/flig/slig/
-s/ hore / høre /
+s/hore/høre/
 s/fkab/skab/
 s/beromte/berømte/
 s/ soge / søge /
