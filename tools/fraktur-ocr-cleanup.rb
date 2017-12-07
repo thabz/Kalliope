@@ -79,6 +79,7 @@ s/moel/mæl/
 s/troste/trøste/
 s/troste/trøste/
 s/fpl/føl/
+s/ ferst/ først/
 s/fsr/før/
 s/elst/elsk/
 s/Jnd/Ind/
