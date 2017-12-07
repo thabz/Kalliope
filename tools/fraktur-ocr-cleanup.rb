@@ -1,5 +1,6 @@
 s/oeg/æg/
 s/hoi/høi/
+s/hpi/høi/
 s/folg/følg/
 s/Skjon/Skjøn/
 s/ce/æ/
@@ -100,7 +101,11 @@ s/sporg/spørg/
 s/labe/læbe/
 s/overste/øverste/
 s/storst/størst/
+s/aldst/ældst/
 s/strom/strøm/
+s/hort/hørt/
+s/folt/følt/
+s/flig/slig/
 s/ hore / høre /
 s/fkab/skab/
 s/beromte/berømte/
