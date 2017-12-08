@@ -125,7 +125,9 @@
 'hsie/høie',
 'dn /du ',
 'Æde/Æde',
-'Tsr/Tsr',
+'Tsr/Tør',
+'Fsr/Før',
+'Fls/Flø',
 'mork/mørk',
 'falste/falske',
 ' node/ nøde',
@@ -224,6 +226,7 @@
 'Bp/Bø',
 'Orne/Ørne',
 'Oin/Øin',
+'Hae/Hæ',
 'kiort/kiørt',
 'Kiobe/Kiøbe',
 'stiænk/skiænk',
@@ -285,6 +288,7 @@
 'fsr/før',
 ' fer/ før',
 'elst/elsk',
+'flr/skr',
 'oedle/ædle',
 'Redme/Rødme',
 'Rodme/Rødme',
@@ -797,6 +801,8 @@
 'cct/æt',
 'Qvide/Qvinde',
 'smulte/smiilte',
+'stg/sig',
+'voer/vær',
 ];
 
 @regexps = @rules.map { |rule|
