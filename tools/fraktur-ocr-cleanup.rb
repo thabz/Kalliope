@@ -1,7 +1,9 @@
 s/gron/grøn/
 s/oeg/æg/
 s/hoi/høi/
+s/noie/nøie/
 s/hpi/høi/
+s/floi/fløi/
 s/folg/følg/
 s/boie/bøie/
 s/tiende/kiende/
@@ -33,7 +35,14 @@ s/stodt/stødt/
 s/stion/skiøn/
 s/storre/større/
 s/sonder/sønder/
+s/ soer / foer /
+s/nnd/und/
+s/ nn/ nu/ 
+s/ nn / nu / 
+s/ nn,/ nu,/ 
 s/Oie/Øie/
+s/Skiod/Skiød/
+s/dolge/dølge/
 s/bce/bæ/
 s/Son /Søn /
 s/Hoi/Høi/
@@ -124,7 +133,13 @@ s/JE/Æ/
 s/8E/Æ/
 s/Sial/Siæl/
 s/Hole/Høie/
+s/Nodv/Nødv/
+s/Nodt/Nødt/
+s/Noden/Nøden/
+s/Nod /Nød /
+s/Nod,/Nød,/
 s/Dine/Øine/
+s/Seede/Sæde/    
 s/Onske/Ønske/
 s/Drsm/Drøm/
 s/Bon /Bøn /
@@ -171,6 +186,7 @@ s/ soge / søge /
 s/ soger / søger /
 s/stg/sig/
 s/voer/vær/    
-
+s/oie/øie/
+s/Torst/Tørst/
 
 
