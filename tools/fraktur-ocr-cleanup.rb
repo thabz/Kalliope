@@ -54,6 +54,7 @@ s/sortal/fortæl/
 s/ sor / for /
 s/hsie/høie/
 s/forst /først /
+s/forst,/først,/
 s/forste /første /
 s/dn /du /
 s/Mre/Ære/
