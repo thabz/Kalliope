@@ -50,8 +50,11 @@ s/dn /du /
 s/Mre/Ære/
 s/Wre/Ære/
 s/Æde/Æde/
-s/Tsr/Tsr/
+s/Tsr/Tør/
+s/Fsr/Før/
+s/Fls/Flø/
 s/mork/mørk/
+s/lose/løse/
 s/falste/falske/
 s/ node/ nøde/
 s/kioe/kiæ/
@@ -97,6 +100,7 @@ s/crt/æt/
 s/crs/æs/
 s/Bp/Bø/
 s/Oin/Øin/
+s/Hae/Hæ/
 s/skion/skiøn/
 s/Skion/Skiøn/
 s/sierne/fierne/
@@ -109,6 +113,7 @@ s/fpl/føl/
 s/ ferst/ først/
 s/fsr/før/
 s/elst/elsk/
+s/flr/skr/
 s/Jnd/Ind/
 s/Jf/If/
 s/ZE/Æ/
@@ -142,6 +147,8 @@ s/fkab/skab/
 s/beromte/berømte/
 s/ soge / søge /
 s/ soger / søger /
+s/stg/sig/
+s/voer/vær/    
 
 
 
