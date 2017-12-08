@@ -161,6 +161,7 @@
 'sorst(\W)/først\1',
 'sorste(\W)/første\1',
 'forst(\W)/først\1',
+'forst,/først,',
 'forsi(\W)/først\1',
 'forste(\W)/første\1',
 'forske(\W)/første\1',
