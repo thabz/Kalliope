@@ -108,10 +108,12 @@ s/sorge/sørge/
 s/ sode / søde /
 s/moel/mæl/
 s/troste/trøste/
+s/stott/støtt/
 s/troste/trøste/
 s/fpl/føl/
 s/ ferst/ først/
 s/fsr/før/
+s/rsr/rør/
 s/elst/elsk/
 s/flr/skr/
 s/Jnd/Ind/
@@ -119,6 +121,7 @@ s/Jf/If/
 s/ZE/Æ/
 s/AZ/Æ/
 s/JE/Æ/
+s/8E/Æ/
 s/Sial/Siæl/
 s/Hole/Høie/
 s/Dine/Øine/
@@ -130,17 +133,36 @@ s/Bonder/Bønder/
 s/Sporg/Spørg/
 s/Folg/Følg/
 s/Fodsel/Fødsel/
+s/Menneste/Menneske/
 s/Boek/Bæk/
+s/Moend/Mænd/
+s/Sioel/Siæl/
+s/Kioer/Kiær/
 s/Opror/Oprør/
+s/Bolg/Bølg/
+s/Jis/Iis/
+s/ stue/ skue/
 s/sporg/spørg/
 s/labe/læbe/
+s/toet/tæt/
 s/laeng/læng/
+s/oeb/æb/
 s/overste/øverste/
 s/storst/størst/
 s/aldst/ældst/
 s/strom/strøm/
+s/nogne/nøgne/
+s/boere/bære/
+s/toer/tær/
+s/siue/skue/
+s/staud/stand/
+s/Teend/Tænd/
 s/hort/hørt/
 s/folt/følt/
+s/rort/rørt/
+s/rore/røre/
+s/forte/førte/
+s/flur/flux/
 s/flig/slig/
 s/hore/høre/
 s/fkab/skab/
