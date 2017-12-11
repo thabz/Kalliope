@@ -838,6 +838,7 @@
 'fnl/ful',
 'fnl/ful',
 'siri/skri',
+'siær/skær',
 'stg/sig',
 'voer/vær',
 ];
