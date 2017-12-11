@@ -201,3 +201,4 @@ s/lonn/lønn/
 s/ noer/ nær/
 s/fnl/ful/
 s/fnl/ful/
+s/siri/skri/
