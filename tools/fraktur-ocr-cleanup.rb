@@ -187,7 +187,17 @@ s/ soge / søge /
 s/ soger / søger /
 s/stg/sig/
 s/voer/vær/    
+s/voel/væl/
+s/voek/væk/
 s/oie/øie/
+s/kroev/kræv/
 s/Torst/Tørst/
-
-
+s/Strom/Strøm/
+s/siiæ/skiæ/
+s/Gnd/Gud/
+s/vcd/ved/
+s/styl/skyl/
+s/lonn/lønn/
+s/ noer/ nær/
+s/fnl/ful/
+s/fnl/ful/
