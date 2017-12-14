@@ -106,6 +106,25 @@ File.readlines(ARGV[0]).each do |line|
   if (line =~ /=/)
       STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal ="
   end
+  # Håndter {..}
+  m = /{(.*?):(.*)}/.match(line)
+  if (!m.nil?)
+      l = m[2]
+      if m[1].include? "i"
+          l = "<i>#{l}</i>"
+      end
+      if m[1].include? "c"
+          l = "<center>#{l}</center>"
+      end
+      if m[1].include? "r"
+          l = "<right>#{l}</right>"
+      end
+      if m[1].include? "s"
+          l = "<small>#{l}</small>"
+      end
+      l = "<nonum>#{l}</nonum>"
+      line = l
+  end
   if @state == 'NONE' and line =~ /^KILDE:/
       @source = line[6..-1].strip
   end
