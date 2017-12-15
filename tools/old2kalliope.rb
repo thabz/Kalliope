@@ -95,8 +95,8 @@ end
 
 File.readlines(ARGV[0]).each do |line|
   line_before = line
-  while line =~ /^\t/
-      line = line.gsub(/^\t/,'    ')
+  while line =~ /\t/
+      line = line.gsub(/\t/,'    ')
   end
   line = line.rstrip.gsub(/_(.+?)_/,'<i>\1</i>')
   if (line =~ /_/)
