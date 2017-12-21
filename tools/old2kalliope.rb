@@ -17,7 +17,7 @@ end
 
 @firstline = nil
 @title = nil, @toctitle = nil, @linktitle = nil, @indextitle = nil
-@subtitle = nil
+@subtitles = []
 @body = []
 @notes = []
 @keywords = nil;
@@ -40,8 +40,14 @@ def printPoem()
   if @linktitle
     puts "    <linktitle>#{@linktitle}</linktitle>"
   end
-  if @subtitle
-    puts "    <subtitle>#{@subtitle}</subtitle>"
+  if @subtitles.length == 1
+    puts "    <subtitle>#{@subtitles[0]}</subtitle>"
+  elsif @subtitles.length > 1
+    puts "    <subtitle>"
+    @subtitles.each { |line|
+        puts "        <line>#{line}</line>"
+    }
+    puts "    </subtitle>"
   end
   puts "    <firstline>#{@firstline}</firstline>"
   if (@source && @page) || @notes.length > 0
@@ -69,7 +75,7 @@ def printPoem()
   @toctitle = nil
   @linktitle = nil
   @indextitle = nil
-  @subtitle = nil
+  @subtitles = []
   @body = []
   @notes = []
   @keywords = nil
@@ -160,7 +166,7 @@ File.readlines(ARGV[0]).each do |line|
     elsif line.start_with?("F:")
       @firstline = line[2..-1].strip
     elsif line.start_with?("U:")
-      @subtitle = line[2..-1].strip
+      @subtitles.push(line[2..-1].strip)
     elsif line.start_with?("N:")
       @keywords = line[2..-1].strip
     elsif line.start_with?("TOCTITEL:")
