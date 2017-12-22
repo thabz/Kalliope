@@ -1,48 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1834" author="bagger" status="incomplete" type="poetry">
+<kalliopework id="1834" author="bagger" status="complete" type="poetry">
 <workhead>
    <title>Smaadigte</title>
    <year>1834</year>
    <pictures>
        <picture type="titlepage" src="1834-p1.jpg">Titelbladet til <i>Smaadigte</i> (1834). ,,Smaadigte / af / Carl Bagger // Kjøbenhavn. / Trykt, paa Forfatterens Forlag, hos C. G. Schiellerup. / 1834.''</picture>
    </pictures>
-   <quality>korrektur1</quality>
+   <notes>
+       <note>Teksten følger førsteudgaven af Carl Bagger: <i>Smaadigte</i>, Kbh., 1834.</note>
+       <note>Værket har mottoet ,,- Cerca, diceano, andar, dove conoschi, / Che l'opre tue non restino sepolte! Perchè dietro al periglio e alla fatica / Segua la fama, e il debito ne dica. // Orlando Furioso, Canto IV, Stanza 56.''</note>
+      <note>Noter med en foranstillet asterisk * er Baggers egne.</note>
+       <note>Brugen af citationstegn er i nærværende udgave ensrettet i forhold til originalen.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
 </workhead>
 <workbody>
 
 <poem id="bagger2002121405">
 <head>
    <title>Til Læseren</title>
-   <toctitle>Til Læseren</toctitle>
-   <indextitle>Til Læseren</indextitle>
    <firstline>Medens Christian Winthers milde Haand</firstline>
-   <quality>korrektur1</quality>
+   <notes>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. I-VI.</note>
+   </notes>    
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Medens Christian Winthers milde Haand
 Lyren slaaer om Lammet og om Oxen,
-- (Barnlig selv, han kim til Barnets Aand
+- (Barnlig selv, han kun til Barnets Aand
 Taler her og forbigaaer hver Voxen) -
 Medens Hertz og Andersen mod Syd
 Foer med deres Snekker til Neapel,
 Gaaer fra denne Streng en dæmpet Lyd,
 Løber denne lille Baad af Stabel.
 
-»Skynd Dig,« - nys opmuntred mig en Ven,
-»Hurtigt skriv, at snart Du Bogen ender,
+,,Skynd Dig,'' - nys opmuntred mig en Ven,
+,,Hurtigt skriv, at snart Du Bogen ender,
 Inden Danmark seer sin Hertz igjen,
 Inden Christian fra de Smaa sig vender! -
 Skynd Dig: end man ændser Digt'rens Pen,
 Men ret snart der komme Rigets Stænder;
 Da seer man til Talerstolen hen,
-Uhørt Harpen blier i Skjaldens Hænder!« - -
+Uhørt Harpen blier i Skjaldens Hænder!'' - -
 
 Hvis Du holder af at læse Qvad,
 Digtede til Fyrsters Fødselsdage,
 Vend Dit Øie da fra dette Blad,
 Aldrig denne Bog vil Dig behage.
-<i>Mennesket</i> jeg kun betragte vil,
+<w>Mennesket</w> jeg kun betragte vil,
 - Koften blænder ei som Purpurkaaben -
 Jeg vil tolke Lidenskabers Spil,
 Tolke Hjertets Frygt og Sorg og Haaben.
@@ -54,7 +61,7 @@ Jeg vil see paa Bondens Rug og Havre.
 Dog ifald til Kongeborg engang
 Jeg gaaer vild, fra Marken og fra Haven,
 Ei som Smigrer skriver jeg min Sang:
-Thi den gjelder Konger da - <i>i Graven!</i> -
+Thi den gjelder Konger da - i <w>Graven!</w> -
 
 Kjøb mig ei, hvis i hver Linie Du
 Vil en Skjønhed see, en nyfødt Tanke -
@@ -66,20 +73,20 @@ Men ikkun til enkelt Høitidsfest
 Seer de gyldne Æbler han i Straalen! -
 
 Kjøb ei Bogen, hvis hvert Øieblik
-Du vil høre nævnet <i>»Danmarks«</i> Rige,
+Du vil høre nævnet <w>,,Danmarks''</w> Rige,
 Retsom Danmark kun hvert Gode fik -
 Jeg er ei blandt dem, der evigt sige:
-»Danmark er en Slette, flad vor Strand -
+,,Danmark er en Slette, flad vor Strand -
 Vel, saa er det stygt, at have Bjerge!
 Lidet er vort elskte Fødeland -
-Hvor politiskt dog, at være Dværge!«
+Hvor politiskt dog, at være Dværge!''
 
 Veiet haver jeg den hele Sag,
 Veiet koldt den paa Forstandens Bismer;
 Da kom tydeligen for en Dag
 To forskjellige Patriotismer:
 Mangen hænger ved sit Fødeland
-Kun fordi det <i>fødte</i> Patrioten;
+Kun fordi det <w>fødte</w> Patrioten;
 Usselt, kun instinctviis elsker han,
 Kysser Moderdyret sløvt paa Poten!
 
@@ -117,7 +124,527 @@ Efter den med Held i Busken lede:
 Naar henover Tjørnens lave Krat
 Hvide Maane kaster Sølverskinnet,
 Udfra Busken gaae i stille Nat
-Stundom Toner dog, som røre Sindet
+Stundom Toner dog, som røre Sindet.
+</body>
+</poem>
+
+<poem id="bagger2017102701">
+<head>
+   <title>Paganinis Violin</title>
+   <firstline></firstline>
+   <notes>
+       <note>* I ,,Conversationslexicon der neuesten Zeit'' bemærkes i Artiklen om <w>Nicolo Paganini</w> blandt andet: ,,So war denn das Gerücht auch sogleich geschäftig in den mannichfaltigsten Erfindungen, wodurch man die geheimnißvollen Eigenschaften des Künstlers zu erklären suchte. Eine so ungemeine Höhe der mechanischen Fertigkeit schien auf gewöhnlichem Wege unerrsichbar, und auch die geistige Tiefe der Leistungen mußte, dies empfand man dunkel, durch gewaltsame Kämpfe und Bestrebungen theuer errungen fein. Daher kamen eine Menge Sagen in Umlauf, wodurch man das Wunder zu erklären suchte. Der Künstler sollte im Uebermaß seiner Leidenschaftlichkeit — einem Italiener war dies fast ohne Schmach zuzutrauen — seine junge Gattin ermordet, und dann den Frevel durch schwere Haft im finstern Kerker gebüßt haben. Hier blieb ihm kein anderer Trost als sein Instrument, mit dem er die Wunden seines zerrissenen Herzens zu heilen suchte; die langen Jahre der Abgeschiedenheit gewährten ihm Muße genug, jene erstaunenswürdige Fertigkeit zu erwerben, zu welcher die Lebenszeit eines Andern nicht ausgereicht hätte; endlich erklärte es diese Sage auch mit natürlichem Anschein, wie er, nachdem die drei schwächern Saiten der Geige gesprungen, deren Ersatz ihm der unbarmherzige Kerkermeister versagte, auf der letzten eine so eigenthümliche Gewalt errang, daß er grade dadurch das höchste Staunen erregte und sogleich die Seele mit den geheimnißvollsten Zaubern umspann''. — Nærværende Digt er foranlediget ved en Artikel i ,,New Monthly Magazine,'', October 1833.</note>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 1-20.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+I det rige, stolte Genua
+Med de violette Drueklaser
+Kommer reisende man langveisfra,
+For at see antike Marmorvaser,
+See paa Fieskos, Doriernes Grav 
+Og et udstrakt, vældigt Middelhav. 
+Balbi-Gaden man betragter,
+- Der boer mægtig Adelstand —, 
+Men de snævre Gyder agter
+Lidet kun hver fremmed Mand .
+
+I en snæver Gydes simple Huus
+Sad med krummet Ryg og Tænkerminer 
+En uændset, fattig Musikus
+Med tre, fire gamle Violiner.
+Ved at stemme hvad der var forstemt,
+Pudse hvad der havde ligget glemt,
+(En Bestilling uden Ære, 
+Uden Løn, i Syd, som Nord) 
+Søgte sig han at ernære 
+Samt sin gamle svage Mo'er.
+
+Violiner tømred' kløgtigt han,
+Snildt han gamle Mestre efterligned; 
+Men om end han brugte al Forstand, 
+Var hans Flid dog hidtil ei velsignet: 
+Stræbt at naae han havde uden Held 
+Længe den tartiniske Model.
+Skjøndt sit Værk han tidt forbandet 
+Havde med fortvivlet Hu,
+Var en Ny dog atter dannet,
+Og den skulde prøves nu!
+
+Nøie glattet var den tynde Fjæl, 
+Ængstligt formet Stolen var og Halsen; 
+Jublet havde han med henrykt Sjæl,
+Da hvert Stykke passed godt i Falsen. 
+Eens var begge Violiner nu.
+Til at skjelne skulde kløgtig Hu!
+Ak, men da nu Paganini
+Prøved sin med Kunstnersands, 
+Høit, o høit stod hin Tartini 
+Dog bestandig over hans!
+
+Dette krænked stakkels Nicolo:
+Ved hans Mundvig en dæmonisk Smilen
+Tyded paa den tabte Hjertero,
+Paa er feedløst Sind, berøvet Hvilen.
+Og han grubled over een Idee,
+<w>Den</w> kun virkliggjort han vilde see.
+Vanvid lagde sig om Panden, 
+Syner gik hans Blik forbi — 
+Ængstligt flygted man for Manden
+Med den mørke Phantasie.
+
+Og han gik da med sit Instrument
+Til en genuesisk lærd Professor:
+,,I har læst Saameget dog paa Prent, 
+Og med Meer I dagligt Jer belæsser —
+Løs mig Gaaden, frie mig fra min Qval, 
+Jeg har grublet, sørget, tænkt mig gal. 
+Af de stærke Elementer,
+Som Geniet har igjem.
+Kommer, hvor Du mindst det venter,
+Ak, dets egen Morder frem''.
+  
+,,Naar I seer paa disse Tvende ned,
+Er den ene ganske som den anden! 
+Samme Sangbund, samme gule Ved,
+De er eens og kun forskjellig Manden:
+Denne, stakkels Nicolo. Jer Ven — 
+Mantuaneren Tartini den!
+Dannede paa samme Maade,
+Efter samme Theorie,
+Have de — for mig en Gaade —
+Dog ei samme Harmonis''.
+
+,,Min er ligedan — dog mangelfuld!
+Ydret eens, men Tonen eens ei vorder.
+Lyt og skjælv, Du Mand af Støv og Muld 
+Lyt til disse springende Accorder:
+Hør, her myrdes, hvilket Klageskrig! 
+Her en falden Engel vaander sig. 
+Atter tys: hør Desdemona,
+Hvor hun bønligt for sig be'er,
+Ømt som Julie fra Verona — 
+Tys, hør nu, hvor Jago leer!''
+  
+,,O med <w>den</w> forvist jeg reise kan 
+Rundt blandt de forskelligste Nationer: 
+Uden Kjendskab til hvert enkelt Land
+Vil jeg dog forstaaes ved mine Toner. 
+Hver Nation vil elske <w>dette</w> Sprog,
+Jeg, skjøndt Fremmed, bliver IndfØdt dog. 
+Der er tusind Sprog paa Jorden,
+Hvert forstaaet kun af Faa:
+<w>Dette</w> fatter Syd og Norden,
+Rigmands Slot og Armods Vraa''.
+
+,,Hør nu <w>min</w> — hvor usselt og hvor mat! 
+Den har ikke Røsterne fra oven.
+Ikke Fuglens Skrig i Uveirsnat,
+Ikke Leopardens Hyl i Skoven,
+Ikke Stormens Brum ved Klippestrand, 
+Ikke Sproget fra et bedre Land.
+Ei den glæde kan et Øre,
+Ei den trøste kan et Sind, 
+Ikke Graad til Øiet føre, 
+Ikke Smiil til nogen Kind!''
+
+,,Og hvorfor ei? elsked <w>han</w> maaskee 
+Sin berømte Kunst med mere Varme? 
+Nei, o nei, hvor tidt ei kunde see 
+Man om Natten vaagende mig Arme 
+Sidde eensom med taalmodig Flid
+Og til Kunsten offre Søvnens Tid!
+<w>Hans</w> var ei de brustne Blikke — 
+Paa hans Kind var Blomsterpragt! 
+For sin Kunst har <w>han</w> vist ikke 
+Det til Vanvid næsten bragt!''
+
+,,Muligt — ja, hvad om en Hemlighed 
+Han besad, som jeg endnu ei kjender,
+Vidste Noget, som nu Ingen veed,
+Og begik hvad Nicolo ei nænner?
+Stod i Forbund han med Mørkets Aand, 
+Kjøbte dyrt han sin erfarne Haand?
+Skal jeg dybt til Helvedbunden
+Flytte mine fromme Fjed,
+I en Udaad søge Grunden
+Til hans Overlegenhed?'' - -
+
+Som sin Sorg den stakkels Nicolo
+Til den gamle lærde Mand betroede, 
+Slog han Violinen med sin Kno,
+Sænked mod sit Bryst det blege Ho'de. 
+Men den Gamle hented fra en Krog 
+En latinsk, forslidt og støvet Bog, 
+Rakte den med sære Fagter
+Til sin unge, syge Ven,
+Sagde: ,,hvad Du eftertragter 
+Udfandt her en kløgtig Pen!'' —
+
+Hvad fandt Nicolo paa gule Blad?
+De bekjendte Lydens Theorier?
+Nei, men som han spændt ved Bogen sad,
+Klang for Sjælen dybe Melodier,
+Og en Røst, han før ei havde kjendt,
+Talte fra det mugne Pergament
+Om den skiftende Forandring,
+Som bevæger Form og Stof; 
+Om en selsom <w>Sjælevandring</w> 
+Skrev den gamle Philosoph:
+
+,,Sjælen, den af Gud forskudte,
+Lever mangt forskjelligt Liv, 
+Maa sig snart i Dyr indslutte,
+Snart i Steen, i Træ og Siv.
+Den har ingen stadig Hytte,
+Naaer først silde Paradiis:
+Bolig maa den ofte bytte, 
+Stiger, synker vexelviis''.
+
+,,Op til Mennesket den stiger.
+Daler saa til Planten ned, 
+Gjennemgaaer Naturens Riger, 
+Lider, ak, hvad Ingen veed.
+Som <w>dens Skaber</w> det befaler, 
+Vexler, vandrer, flytter den:
+Snart fra Fuglens Bryst den taler,
+Snart fra Menneskets igjen''.
+
+,,Men selv <w>Mennesket</w> har Evne 
+Til at fængsle Sjælen her!
+Vil Du nogensinde hevne
+Dig paa En, Du ei har kjær,
+Mærk hans Sygdom, giv ham Pleie,
+Tee Dig som en ængstlig Ven: 
+Sæt Dig ved hans Sygeleie,
+Naar hans Aand skal fare hen''.
+
+,,Naar den Syge da sig vaander
+I den kolde Angstens Sved,
+Kald til Hjælp da Mørkets Aander, 
+Offre dem din Salighed!
+Brug da hine Formularer,
+Som før Dig en Faust har brugt:
+Blot dit Koldsind Du bevarer,
+kan Du standse Aandens Flugt''.
+
+,,Du kan tvinge den at blive
+Her paa Jorden i dit Huus,
+Til at følge Dig i Live,
+Som en vagtsom Genius!
+Først naar Dødens Haand Dig rammer,
+Bliver frigjort ogsaa den:
+Du gaaer ned i Dybets Flammer,
+Den til Fred i Himmelen!'' - -
+
+Men fra <w>den</w> Stund end meer tankefuldt 
+Stirred Nicolo, heel sært tilmode:
+Lidet ændsende kun Tørst og Sult,
+Leved han ei meer for denne Klode.
+Af hans Færd man næsten tydligt saae: 
+En Forbrydelse han grunded paa.
+Hvergang Mod'ren vilde spørge,
+Svared haardt han, synligt vred; 
+Syg da blev hun af at sørge, 
+Længst af Livet var hun kjed.
+
+Og hun laae paa Dødens Leie strakt, 
+Leg'met gisped i den sidste Krampe; 
+Taus ved Døren Nicolo holdt Vagt
+Og belyste Stuen med sin Lampe.
+,,Kom, min Søn!'' — saa bad Mathilde mat -
+,,Inden Daggry har jeg Dig forladt:
+Skjøndt Du tidt min Sjæl har saaret, 
+Skjøndt Du aldrig elsked mig —
+Jeg ved Hjertet har Dig baaret, 
+Kom, jeg vil velsigne Dig!''
+
+,,Mindes mig, naar Foraarsblomsten groer 
+Over den, som Dig med Smerte fødte! 
+Da maaskee vil, meer end nu Du troer,
+Du paaskjønne den i Liv Forstødte.
+Som i dette hellige Minut
+Jeg velsigner Dig med Stemmen brudt,
+Skal jeg og for Herrens Throne
+Ene tænke paa dit Held:
+Hist, som her, hvert Suk, hver Tone 
+Gjelde stal mit Afkoms Vel!''
+
+Men den blege Kunstner rysted vildt 
+Hov'det med de tætte, mørke Lokker: 
+,,Ikke gavner det. Du taler mildt,
+Min Beslutning, Moder, ei Du rokker. 
+Her paa Jord hver Sjæl forblive kan, 
+Naar den ikkun lænkes med Forstand.
+Bort med Mildhed, bort med Naaden — 
+Jeg er Kunstner, ikke Søn!
+Qvinde, Du skal løse Gaaden,
+Skaffe Kunstneren sin Løn".
+
+,,See, jeg sprænger hvert et Slægtskabsbaand 
+Og befaler her i Kraft af Helved,
+At paa Jord mig følge skal din Aand,
+Følge mig og dette Værk, jeg hvælved! 
+Først naar jeg i Graven sænkes ned,
+Da først stedes ogsaa Du til Fred. 
+Dette Træ har sukket længe
+Efter et forhøiet Liv;
+Svæv da Du om disse Strenge,
+Lyd mit Magtbud og mit: bliv!'' - -
+
+Og han nærmed sig med faste Skridt 
+Hen til Leiet, hvor den næsten Døde
+Laae med Bryst og Ansigt marmorhvidt,
+Mens de sidste Suk fra Læben brøde! 
+Og i den høitidelige Stund
+Holdt han rolig foran Mod'rens Mund 
+Hen sit Værk, den dyrebare
+Violin, som, fordum mat,
+<w>Nu</w> med stærke Toner klare
+Skulde klinge Dag og Nat!
+
+Vanvid spilled i hans Ansigtstræk,
+Da han taus og spændt stod foran Sengen; 
+Men den Døende af Sorg og Skræk 
+Aanded ud sit sidste Suk mod Strengen.
+Strengen dirred da et Klageraab, 
+Men i Sønnens Øie funkled Haab:
+Ja, hans Værk besad nu Moll'en 
+Af en qvindelig Natur!
+Tys, hvor selsomt: heel og holden 
+Skriger Jagos vilde Dur!
+
+Ja, besjælet er hans Violin,
+Den har Drøm og Sorg og Graad og Stemme 
+Nattevindens Røst i Borgruin,
+Røst, som Pigen, hvem man ei kan glemme.
+Røst, som lille Barn, der græd og bad.,
+Røst for Kærlighed, og Røst for Had! 
+Glædedrukken, ei forfærdet,
+Nicolo paa Liget saae — 
+Kunsten gjøre kan forhærdet, 
+Saa Naturen vige maa!
+
+Silde, silde han i Slummer faldt, 
+Vaagned op da Morgenstraalen spilled; 
+Mærked angst, at Virklighed var Alt,
+Hvad saa gjerne drømt han havde villet. 
+Men i Stuen lød en svag Musik,
+Frem af Violinen Toner gik: 
+Som en klangfuld Memnonsstøtte 
+Hilste den paa Solens Lys —
+<w>Da</w> først Sønnehjertet blødte,
+<w>Da</w> først mærked han et Gys!
+
+Og de stive Modrens Øine skjød 
+Flammeblik, som ei han kunde taale:
+Fra de døde Glaspupiller brød
+En Forbandelsens og Vredens Straale. 
+Ængstlig blev tilmode Sønnen da, 
+Ræd han flygtede fra Genua,
+Gik med Violin paa Ryggen
+Bort med Frygtens rappe Fjed,
+Bortgik for at finde Lykken
+Og sin tabte Sjælefred.
+
+Men et vældigt Rygte spredtes til
+Den ungdommelige Kunstners Ære; 
+Stolte Roma lytted til hans Spil,
+Florents vilde nødig ham undvære.
+Dog, i hver en Stad han var kun kort,
+Indre Utilfredshed drev ham bort:
+Bort han gik fra Sydlandssolen,
+Bort fra muntre Carneval,
+Bort fra Masten og Gondolen 
+— Fjernt til Londons Taagehal.
+
+Og i Bygningen: ,,Ei blot til Lyst''
+Havde han en talrig Kreds forsamlet. 
+For et Øieblik, paa Englands Kyst
+Glemt var Shylock og den mørke Hamlet. 
+Kun paa ham var Alles Øine vendt, 
+Paa hans tonefulde Instrument,
+Denne Glædens, Sorgens Skaber, 
+Hersker over Smiil og Graad, 
+Tolk for alle Lidenskaber,
+Maler af hver grufuld Daad!
+
+Men i Kredsen sad en gammel Mand
+Ængstligt gribende hver enkelt Tone; 
+Pietro hed han, og hans Fædreland 
+Var, som Nicolos, Italiens Zone.
+Og den hvide Olding reiste sig,
+Greb den unge Kunstners Kjoleflig
+Og udbrød, da i en Pause 
+Paganini hvilede
+Og de Alle rundt sad tause
+Halv med Lyst og halv med Vee:
+
+,,Ak, jeg kjender dette Tonefald,
+Det er Stemmen fra Italiens Lunde,
+Og jeg lykkelige Gamle skal
+End paa Jord engang mig fryde kunne!
+Midt i England, langt, langt fra mit Hjem 
+Blomstrer pludselig Italien frem!
+Disse Toner er fra Syden,
+Bringe Hilsen fra hver Ven;
+Meget ligger skjult i Lyden — 
+Tak til Dig, der bragte den!''
+
+,,Disse Melodier hørte jeg.
+Da jeg tumled mig som Dreng i Trøie:
+Hyrden fløited dem paa grønne Vei,
+Naar han Hjorden drev paa Romas Høie.
+Ung jeg sang dem i mit skjønne Land, 
+Nu besøge de den gamle Mand!
+Og de vække gamle Minder
+Om de lyse Ungdomsaar —
+Alt Nærværende forsvinder,
+For mit Blik kun Fortid staaer!''
+
+,,For mit Blik staaer hver en Ungdomsdrøm,
+Der begeistred aarle mig og silde:
+For mit Blik staaer, sværmerisk og øm, 
+Ogsaa hun, min blomstrende Mathilde! 
+Unge Kunstner, i min friske Mai 
+Elskede din skjønne Moder jeg!
+Skjøndt hun anden Betler kaared,
+Var kun kjær dog stedse mig —
+Hun har Dig ved Hjertet baaret,
+Kom, jeg vil velsigne Dig!'' - -
+
+Nicolo med Angst tilbage veeg,
+Disse Ord var saa betydningsfulde! 
+Hurtigt greb han til sit Strengeleeg, 
+For at glemme Qvinden under Mulde. 
+Mon den underlige Gamle kom
+For at kræve Regnskab, holde Dom?
+Rask den blege Kunstner vendte 
+Atter Tanken til sit Spil,
+Og med alle Nerver spændte 
+Tause Mængde lytted til.
+
+Og besjælet klang hin Violin ,
+Ret som leved nu en Aand derinde,
+Der udstødte snart et Smertens Hviin, 
+Sukked snart og lod som Nattevinde;
+Ja, det lød som menneskelig Røst, 
+Som en Fængslet, der var uden Trøst: 
+Om den gule Sangbund svæved
+Toner, som fra En, der leed; 
+Kunstnerhaanden synligt bæved 
+— Var det af Medlidenhed?
+
+Men forbavset atter reiste sig
+Pietro, stirrende med Skræk i Minen: 
+,,Yngling, vil Du ei mig see som Liig
+Styrte ned, saa læg Du Violinen!
+Ei til Rædsel bør Du, kun til Trøst, 
+Efterligne Menneskenes Røst!
+Haarde Søn, hvor kan Du skabe 
+Disse Toner uden Gru? 
+Moderstemmen efterabe,
+Dette, Yngling, nænner Du!''
+
+,,Smerteligt har Du berørt min Sjæl 
+Og i Gisninger jeg mig fortaber:
+Ord Du tvinge kan fra Fyrrens Fjæl -
+Fik Du denne Gave af Din Skaber 
+Eller fik Du den af Mørkets Aand, 
+Kjøbte dyrt Du Din berømte Haand? 
+Skal jeg dybt til Helvedbunden
+Flytte mine fromme Fjed 
+Og i Udaad søge Grunden
+Til Din sjældne Færdighed?''
+
+,,Hvorfor udaf Violinens Bryst 
+Lokke Toner, der tilhøre Graven? 
+Vil Du give Liv til døde Røst,
+Visselig, den takker ei for Gaven.
+Hvorfor denne <w>sørgelige</w> Klang? 
+Min Mathilde elsked <w>munter</w> Sang. 
+Unge, blege Aandemaner,
+Daarlig Søn, skjøndt Kunstens Drot, 
+Siig mig, om maaskee Du aner,
+At hun ikke har det godt?'' - -
+
+Over Mængden hvilte Gravens Ro, 
+Alles Blik til Paganini vandred,
+Men med Høihed svarte Nicolo,
+Pludseligen fattet og forandret: 
+,,Nei, jeg føler, at det kun er Digt,
+Usselt sammensat og latterligt!
+Sjælens Hjem er Himmerige, 
+Men ei Dyreverdenen:
+Kan den end, forandret, <w>stige</w>,
+<w>Synke</w> kan den ei igjen!"
+
+,,Olding, ei forfærdes ved mit Spil,
+Her er ingen sorgfuld Aand, som taler! 
+Stemmen hører ei Mathilde til,
+Jordisk Smerte kun jeg troligt maler. 
+Pietro, her er intet Hexeri,
+Det, som skrækker Dig, er — mit <w>Genie!</w> 
+Overtroen frygtsom gjætter
+Paa Forbrydelser omsonst:
+Kjøbt jeg har i vaagne Nætter
+Kun ved stadig Flid min Kunst.''
+
+,,Vaaren klækker sine Blomster ud
+Hvor Dit Legem hviler, fromme Moder,
+Men forlængst har alt Din Aand hos Gud 
+Seet en bedre Verdens Himmelgoder.
+Ak, de troe, at Du maa følge mig, 
+Fængslet til det usle Jorderig!
+Nei, o nei, men dog Dit Billed
+Tidt sig viser truselfuld:
+Jeg Forvovne har jo <w>villet</w> 
+Vinde Dig til Jordens Muld!''
+
+,,Men fra den Tid mærked stedse jeg 
+I mit Bryst Samvittighedens Pinen -
+Er det Under, at fra <w>den</w> Tid ei 
+Andet klang end Sorg fra Violinen?
+Disse Toner og fortvivlte Skrig
+Var ei hendes, nei, de kom fra mig! 
+Heel naturligt, at min Brøde
+Har besjælt mit Foredrag; 
+Tilgiv mig, Du elskte Døde, 
+Jeg har bødet Nat og Dag.''
+
+,,Men fra nu af skal hint Strengeleeg 
+Aldrig meer mig om min Brøde minde; 
+Lad mit Ry da synke, som det steeg,
+Hurtigt kom det, hurtigt lad det svinde!
+Dig, som jeg oplived, gamle Ven, 
+Dig jeg giver nu til Døden hen! 
+See mit Offer, vrede Moder,
+Selv sig straffer nu Din Søn,
+Knuser hvad af Jordens Goder
+Var hans Trøst og Arbeidsløn!'' — -
+
+Og han slængte da mod Gulvet brat 
+Hen sit Værk, det sjældne, dyrebare 
+Mesterstykke, som ved Dag og Nat
+Havde klinget stærkt med Toner klare. 
+Taarer glimted af hans Øine frem — 
+Hvem mon ikke havde fældet dem?
+Knust, med evigdøde Strenge, 
+Laae hans Værk foruden Lyd,
+Og han stirred stivt og længe 
+Paa sin fordums Sjælefryd.
+
+Mængden maalløs paa hans Idrert saae 
+Og et Suk igjennemsvæved Salen: 
+Ingen af dem mægted at forstaae 
+Handlingen og Ingen fatted Talen.
+Du kun, Læser, den forstod og veed 
+Paganinis hele Hemlighed!
+Men om ,,Vanvid'' talte Rygtet, 
+Sagn der mylred fleer og fleer,
+Der fortælles: bort han flygted,
+Kom til London aldrig meer.
 </body>
 </poem>
 
@@ -128,26 +655,27 @@ Stundom Toner dog, som røre Sindet
    <indextitle>Sophia af Hardenberg</indextitle>
    <firstline>Kong Frederik spored høien Hengst</firstline>
    <notes>
-      <note>Datter af <i>Eiler Hardenberg</i>, der i Malmø var Huushovmester hos <i>Frederik den Anden</i>, som Kronprinds. Den hardenbergske Stammes Ahnherre indkom fra Brunsvig med Christopher af Bayern (1439). Blandt flere betydelige Godser eiede Stammen ogsaa Skovsbo i Fyen; Familiens Vaaben var et hvidt Ulvehoved.  Scenen i dette Digt er tænkt at være forefalden, da Frederik ved Efterretning om sin Faders Død i Jylland, reiste didover igjennem Fyen. - Angaaende Skovsbo findes en interessant Notits i den første af Prof. Vedel Simonsens nationalhistoriske Afhandlinger.</note>
-      <note>Goethecitatet stammer fra <xref poem="goethe2000082928"/>.</note>
+      <note>* Datter af <w>Eiler Hardenberg</w>, der i Malmø var Huushovmester hos <w>Frederik den Anden</w>, som Kronprinds. Den hardenbergske Stammes Ahnherre indkom fra Brunsvig med Christopher af Bayern (1439). Blandt flere betydelige Godser eiede Stammen ogsaa Skovsbo i Fyen; Familiens Vaaben var et hvidt Ulvehoved.  Scenen i dette Digt er tænkt at være forefalden, da Frederik ved Efterretning om sin Faders Død i Jylland, reiste didover igjennem Fyen. - Angaaende Skovsbo findes en interessant Notits i den første af Prof. Vedel Simonsens nationalhistoriske Afhandlinger.</note>
+      <note>Goethecitatet stammer fra <xref poem="goethe2000082928,9-12"/>.</note>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 21-25</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-      <nonum>Was sie gethan, was sie geübt,</nonum>
-      <nonum>Das weisz kein Mensch; dass sie geliebt,</nonum>
-      <nonum>Das wissen wir. Genug gesagt,</nonum>
-      <nonum>Wenn man nach Wamik und Asra fragt.</nonum>
-                                       <nonum><i>Goethe.</i></nonum>
+      <nonum><small>Was sie gethan, was sie geübt,</small></nonum>
+      <nonum><small>Das weisz kein Mensch; dass sie geliebt,</small></nonum>
+      <nonum><small>Das wissen wir. Genug gesagt,</small></nonum>
+      <nonum><small>Wenn man nach Wamik und Asra fragt.</small></nonum>
+      <nonum><right><small><w>Goethe.</w></small></right></nonum>
 
 Kong Frederik spored høien Hengst:
-»Hvorfor vil saalænge Du nøle?
+,,Hvorfor vil saalænge Du nøle?
 I Skovsbo var Du vist alt forlængst:
 Hvis blot Du som jeg kunde føle
 Bruunrødlig glimter den taarnede Borg!
 Ak, al min Glæde, min Angst, min Sorg
 Om hint lille Vindue sig dreier -
-Flyv, Ganger, om Styrke Du eier!«
+Flyv, Ganger, om Styrke Du eier!''
 
 Og der nu Kongen til Porten reed,
 Under de grønne Linde,
@@ -158,7 +686,7 @@ Med Hjertet saa reent, og Panden klar;
 For Kongen, med Taarer i Øiet,
 Den unge Pige sig bøied:
 
-Du kommer til Skovsbo, min Konge from,
+,,Du kommer til Skovsbo, min Konge from,
 Med Sjælen søndret og blodig?
 Din Fader har Herren kaldt for sin Dom,
 Med Skjel staaer Sønnen veemodig!
@@ -174,18 +702,18 @@ Min Fader igaar mig det lærte:
 Graaulven i Ridderens simple Skjold
 Tør ikke lege med Løven bold,
 Og aldrig blier Ridderpige
-Moder for Danmarks Rige!« -
+Moder for Danmarks Rige!'' -
 
 Op Konningen slog med hviden Haand,
 Blank Draaben stod under Brynet:
-Os knytter jo et usynligt Baand,
+,,Os knytter jo et usynligt Baand,
 Tab Kongen og Løven af Synet!
 Og husker Du ei, hvad i Malmø Du
 Mig lovte med barnlig, men kjærlig Hu?
-<i>Kongens</i> Brud kun vilde Du blive
-I Død, som i levende Live!« -
+<w>Kongens</w> Brud kun vilde Du blive
+I Død, som i levende Live!'' -
 
-»Jeg husker det Ord, jeg elsker den Tid,
+,,Jeg husker det Ord, jeg elsker den Tid,
 Som Moderen elsker sit Foster,
 Jeg knytted dertil min Barndoms Iid,
 Men Alt maa nu glemmes i Kloster!
@@ -201,18 +729,18 @@ Korsfæstede man ilive!
 Hans lyse Brynie er Himlen blaa,
 Forziret med alle de Sølvprikker smaa;
 Hans Krone funkler i Solen,
-Alverden er Kongestolen!« -
+Alverden er Kongestolen!'' -
 
 Bedrøvet stod Kongen, med krænket Sind,
 Og stirred hen for sig stille:
-»Ak, Fuglen i Reden, ved Maanens Skin,
+,,Ak, Fuglen i Reden, ved Maanens Skin,
 Slaaer for Hunnen sin muntre Trille!
 Men mægter ei Kongen for Danmarks Land
 At eie, hvad Smaafuglen eie kan,
 Da tag kun hans Scepter og Krone:
-I Skoven staaer stoltere Throne!« -
+I Skoven staaer stoltere Throne!'' -
 
-»Glem Fuglen, Du saae paa den lave Tjørn,
+,,Glem Fuglen, Du saae paa den lave Tjørn,
 Lær tidligt at længes, at savne!
 Husk, Konge, Du er en flagrende Ørn,
 Kan Ørnebrud ikkun favne.
@@ -228,55 +756,58 @@ Som Barn paa Armen Du bære!
 Visk Taaren af dine Øine blaae -
 Troer ei Du, at jeg monne sorgfuld gaae?
 Smaafuglens Toner henklinge,
-Men Ørnen maa ryste sin Vinge!« -
+Men Ørnen maa ryste sin Vinge!'' -
 
 Kong Frederik saae i det klare Blik,
 Han kyssede Pigemunden:
-»Jeg drikker Livets og Dødens Drik,
+,,Jeg drikker Livets og Dødens Drik,
 Sært blandet i Afskedsstunden.
 Det veed i Himlen den rige Christ,
 Hvor gjerne jeg bytted paastand forvist
 Mit Scepter i Høienlofte
-For Ridderens Sværd ved Hofte!« -
+For Ridderens Sværd ved Hofte!'' -
 
 Kong Frederik spored høien Hengst:
-»Hvorfor vil saa længe Du nøle?
+,,Hvorfor vil saa længe Du nøle?
 Fra Skovsbo var Du vist alt forlængst,
 Hvis blot Du, som jeg, kunde føle.
 Guldkringlen tapper Dit ædle Blod?
 Kun rask, min Ganger, far til med Mod,
 Om end Blodstrømme der runde -
-Dankongen har dybere Vunde!« -
+Dankongen har dybere Vunde!'' -
 </body>
 </poem>
 
 <poem id="bagger2002121407">
 <head>
    <title>Ridder Strange</title>
-   <subtitle>(Frit omarbeidet efter de af <i>Rahbek</i> og <i>Nyerup</i> udgivne Kæmpeviser, No. CLVI).</subtitle>
+   <subtitle>(Frit omarbeidet efter de af <w>Rahbek</w> og <w>Nyerup</w> udgivne Kæmpeviser, No. CLVI).</subtitle>
    <toctitle>Ridder Strange</toctitle>
    <indextitle>Ridder Strange</indextitle>
    <firstline>Stat op, Du Ridder Strange</firstline>
-   <quality>korrektur1</quality>
+   <notes>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 26-30.</note>
+   </notes>    
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-»Stat op, Du Ridder Strange,
+,,Stat op, Du Ridder Strange,
 Stryg ned den lille Slaa;
 Fra Hjemmet maa jeg gange,
 Saalangt min Fod kan naae.
 Paa Baalet skal Du brænde,
 - Saa trued min Moder mig -
 Og hænges med stor Elende
-Skal han der elsked Dig!« -
+Skal han der elsked Dig!'' -
 
 De Ord klang ham saa stygge,
 Skjøndt smuk var Pigens Mund. -
-»Paa Herren vil jeg bygge
+,,Paa Herren vil jeg bygge
 I hver en sorgfuld Stund,
 Og dette Sværd ved Siden
 Skal frelse Dig og mig;
 Gaa Du blot, Thora liden,
-Og hent Guldskrinet Dig.« -
+Og hent Guldskrinet Dig.'' -
 
 Da reiste sig Ridder Strange,
 Strøg ned den lille Slaa;
@@ -285,57 +816,57 @@ Sadled sin Abildgraa.
 Han Dæknet ud mon brede,
 Bredte Kappen blaa dertil;
 Og tause bort da rede
-Hr. Strange og Thoralil.
+Hr Strange og Thoralil.
 
 Men da de vare fjerne
 Udi hin Rosenslund,
 Da lysted hun saa gjerne
 At hviles en føie Stund. -
-»Hvi skjælver Du med Gruen?
+,,Hvi skjælver Du med Gruen?
 Blier Veien Dig for lang?
 Hvad heller Saddelbuen,
-Blier den Dig altfor trang?« -
+Blier den Dig altfor trang?'' -
 
 Da svarte med megen Møde
 Qvinden i Fødselsvee:
-»Den næste Morgenrøde
+,,Den næste Morgenrøde
 Faaer ikke jeg at see.
 Jeg skjælver ei med Gruen,
 For Veien er mig lang
 Men vel blier Saddelbuen
-Mit unge Liv for trang.« -
+Mit unge Liv for trang.'' -
 
 Ud slog da Strange Kappen
 Og lagde Thora derpaa:
-»Hvil Hov'det paa Saddelknappen,
+,,Hvil Hov'det paa Saddelknappen,
 Vi har ei Bolstre blaae.
 Tæt under Hestens Manke,
 Der maa Du søge Læ;
 Vi har ei Voxlys blanke,
-Kun Maanen hist i Næ.« -
+Kun Maanen hist i Næ.'' -
 
 Da jamred hun med Taare:
-»Ak, førend her jeg døer,
+,,Ak, førend her jeg døer,
 Jeg ønskede saa saare
 Blot En af mine Møer.
 Langt heller uden Lue
 Isnet i tidlig Død,
 End Manden skulde skue
-Paa Qvindens haarde Nød!« -
+Paa Qvindens haarde Nød!'' -
 
 Men Strange stirred mod Stjerne,
 Han svarte veemodelig:
-»Du haver nu ingen Terne,
+,,Du haver nu ingen Terne,
 Du haver nu ikkun mig.
 Bind Dugen om min Pande,
 Bind for mit Øie med,
 Da skal jeg tro Dig stande
-I Fostermoders Sted.« -
+I Fostermoders Sted.'' -
 
 Om vikled han det Klæde:
-»Hist ligger Din Moders Borg!
+,,Hist ligger Din Moders Borg!
 O, vel maa Pigen græde,
-Naar hun bær Modersorg!«
+Naar hun bær Modersorg!''
 Men Ridderen Hr Strange
 Var Thora huld og tro:
 Til Kilden han mon gange
@@ -345,10 +876,10 @@ Som han i Skoen hældte
 Af Brøndens kolde Vand
 Og bittre Taarer fældte,
 Qvad Fuglen paa Brøndens Rand:
-»Uheld Din Troskab lønner,
+,,Uheld Din Troskab lønner,
 Thi Thoralil er død:
 Der ligger hun med to Sønner
-Udi sit kolde Skjød!«
+Udi sit kolde Skjød!''
 
 Og da han seer hin Banke,
 Hvor græsser Abildgraa,
@@ -374,17 +905,525 @@ Ham tyktes, de smaa Sønner
 Græd under pandsret Fod.
 Ham tyktes, der lød en Klage
 Dybt under sorten Jord:
-»Dine Smaabørns Levedage
-Forkortede Du ved Mord!«
+,,Dine Smaabørns Levedage
+Forkortede Du ved Mord!''
 
 Ei vidste han, at den Støien
 Kom af at Banken var huul
 Og at en Grævling i Høien
 Færdedes i sit Skjul.
 Ham tyktes, hans Børn ham vented,
-Hans Børn og hans Hustru kjaer:
+Hans Børn og hans Hustru kjær:
 Da saae han mod Firmamentet
 Og faldt i sit eget Sværd.
+</body>
+</poem>
+
+<poem id="bagger2017102702">
+<head>
+   <title>Janitscharen</title>
+   <firstline>Zulma, ved Kysten ankre nu Skibe</firstline>
+   <notes>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 31-39.</note>
+   </notes>    
+   <quality>kilde,side,korrektur1</quality>
+</head>
+<body>
+
+<nonum>1.</nonum>
+
+— Zulma, ved Kysten ankre nu Skibe, 
+Ude paa Søen skimter jeg fleer:
+Flaaden forsamles, kan jeg begribe, 
+Afreisen snarligt, frygter jeg, skeer. 
+Græske Matroser, begede Gutter,
+Stirre med Lyst paa det svulmende Blaae — 
+Zulma, kun nogle bange Minutter
+Har jeg tilbage, saa skal jeg gaae!
+
+Fordum paa Landjord bygged Din Tanke, 
+Nu skal paa Dybet den skifte sin Tro, 
+Følge som Søfugl Vimpel og Planke
+Fjernt — til Ægypten, sige de jo.
+Sløret tilbage! vær nu blot munter, 
+Skjøndt Du er deiiig i Taarer at see. 
+Zulma, kun nogle bange Sekunder,
+Saa maa, min Zulma, Skilmissen skee! -
+
+,,Siig mig, er Veien lang over Havet,
+Kan jeg Ægypten see fra mit Slot?
+Mangen Fregat har Søen begravet,
+Ak, er blot Skibet sikkert og godt?
+Vee mig! mangfoldig er dennegang Faren - 
+Ægypterinden er venlig og smuk:
+Amurath, svar mig, vil Zanitscharen 
+Tænke paa Stambul, ændse mit Suk?''
+
+,,Persiske Schawler sendte den snilde 
+Kjøbmand igaar mig, han fra Damask: 
+Ingen af Tøierne klæde mig vilde,
+Farven var stedse for broget og rask. 
+Sort kun, Amurath, vil jeg mig klæde,
+Taus vil jeg gaae i min Faders Gaard, 
+Ikke mig pynte, ikke mig glæde,
+Førend igjen for mit Øie Du staaer.'' —
+
+— Seer Du Cypressen hist, som jeg planted? 
+Liflig den staaer i en malerisk Egn.
+Den paa min Troskab vare Dig Pantet,
+Og paa mit Liv Dig et varslende Tegn:
+Naar den veemodigt med Bladene hænger, 
+Dette betyder, jeg elsker Dig ei!
+Og gaaer den ud, da viid, at ei længer 
+Heller vist lever paa Jorderig jeg!
+
+Men naar mit Træ staaer frodigt i Dalen, 
+Bladene lægges i tykkere Lag,
+Og naar om Aftenen Nattergalen
+Slaaer i dets Top sit fulde Slag:
+Da er det Tegn, at karsk ud af Striden 
+Amurath kom, at han haver det godt.
+Og at han længselsfuldt fra Pyramiden 
+Stirrer mod Stambul og Zulmas Slot! —
+
+,,Amurath, ak selv blomstrer end Træet, 
+Troer Du, at dette kan være mig nok? 
+Mahomeds Maane staaer jo i Næet,
+Varslende Drømme der kommer i Flok:
+Alt jeg din Hest seer, vild uden Rytter 
+Farer den om, for at søge Dig op,
+Finder paa Marken Dig, snøfter og lytter,
+Skraber med Hoven paa livløse Krop!''
+
+,,Bosporus drøner fjendtligt derude, 
+Jordbunden skjælver — nei, det er mig!
+Morgenens Taager Sorrig bebude,
+Sorrig for Fleer end for mig og for Dig: 
+Sultanens Throne, mumler man, ryster, 
+Seire vil Christus, i Syd som i Nord; 
+Riget styrter ved Bosporus's Kyster — 
+Snart vel i Stambul Russeren boer!'' —
+
+
+<nonum>2.</nonum>
+
+Borte var Amurath — Zulma veemodig 
+Vandred hver Aften i Dalens Græs, 
+Glæded sig dog, at fager og frodig
+Trivedes stedse den kjære Cypres.
+Da kom til Landet en brændende Tørke, 
+Glødende Jordbund gispede mat, 
+Planterne savned Skygger og Mørke,
+Sparsomt faldt Duggen paa Græstørv og Krat.
+
+Syg var Cypressen — bladfulde Krone
+Tæredes hen af Mangel paa Regn; 
+Nattergalen med klagende Tone
+Jamred over den døende Egn.
+Bleg stod Zulma, stirred alvorlig
+Hen paa det elskede, syge Træ: 
+,,Sangfuglen sørger, Cypressen er daarlig,
+Amuraths Maane staaer vist i Næ!"
+
+,,Kastet fra Sadlen ligger paa Valen 
+Amurath vist med et dødeligt Saar;
+Zulma kan ikke lindre ham Qvalen, 
+Hos ham ikkun den Fremmede staaer.
+Visnende Træ mig Sandheden siger,
+Bladenes Falmen jeg tydeligt seer,
+Og fra min Amuraths Ansigt viger 
+Livets Rødme nu meer og meer!''
+
+,,Dog — han aander endnu og han sender 
+Mig om sin Sygdom det aftalte Bud; 
+Kraften muligt tilbagevender,
+End er Cypressen jo ei gaaet ud.
+Den og de andre visnende skrante,
+Ak, men dog stedse den lever endnu — 
+Dog fra nu skal den truende Plante 
+Længer ei fylde mit Hjerte med Gru''.
+
+Og hun hentede hurtigt en Slave, 
+Bød ham at hugge Cypressen om! 
+Angst da fløi fra den øde Have
+Sangfuglen, som i Foraaret kom. 
+Klynkende lod en Røst fra Stammen: 
+,,Dråber Du, Zulma, selv din Ven? 
+Amuraths Lampes sidste Flammen 
+Nænner Du grusomt at veire hen?''
+
+Og der stod hun forvildet, bedrøvet, 
+Græd bag det skinnende Sølverslør:
+,,Lig nu paa Jorden, straffet og kløvet,
+Du skal ei varsle, at Amurath døer; 
+Du skal den dræbende Vished ei bringe,
+Du skal ei martre mig Dag og Nat:
+Haabets Sange skal for mig klinge,
+Røsten fra Dig var mig længe forhadt''.
+
+,,Bort med Varselet, bort med Tegnet, 
+Selv vil jeg varsle min Fremtid mig:
+Kun for en Stund er min Yndling segnet,
+Saaret han er, dog end ikke Liig.
+Kun for et Øieblik daled i Vesten 
+Zulmas Sol bag en Sky af Sorg: 
+Amurath atter sidder paa Hesten 
+Stirrende hen mod min Faders Borg''.
+
+,,Ja, der er smukt i Haabets Riger,
+Der vil herefter jeg søge Læ;
+Meer vil jeg troe paa hvad Hjertet siger,
+End hvad der hviskes fra dunkle Træ.
+Klæde jeg vil mig i brogede Tøier, 
+Smykke mit Haar med mangen Blomst,
+Og under Sang og Slavindernes Løier 
+Gladelig vente hans Atterkomst''.
+
+,,Du, som er Drot over Sol og Maane, 
+Drot over Jorderigs seilende Øe,
+Du vil det Skabte visselig skaane — 
+Amurath er for ung til at døe!
+Vend Dig til dem med de hvide Lokker, 
+Vend Dig til ham, der af Livet er kjed,
+Men hvor sig Ungdomskræfterne flokker,
+Der lad ei Dødsenglen dale ned!"
+
+
+<nonum>3.</nonum>
+
+Styrtet fra Hesten Amurath ligger 
+Ventende Døden paa Valpladsens Eng; 
+Sablen var skarp og Haanden var sikker — 
+Snart springer Livets dirrende Streng. 
+Fjenden medlidende bær ham til Teltet, 
+Saaret er dybt og Feberen vild —
+Søvnløs paa Leiet sig Amurath vælted,
+Og paa hans Hjerne det brændte som Ild.
+
+Endelig sænked sig Søvn paa hans Pande, 
+Søvn vel, men afbrudt af Drømmenes Spil;
+Mørke Fantomer fra Løgnens Lande
+Kom og forsvandt og nye kom til.
+Men naar den ængstende Drøm jeg maler,
+Den , som qvalte hans Aandedrag, 
+Trøster Jer ved, naar hans Stjerne daler: 
+Stjernens Forsvinden bebuder — en Dag!
+
+Først ham tyktes, at fjernt i Haven 
+Zulma stod, han fornam hendes Røst: 
+,,Amurath ligger kold og begraven,
+Vælge jeg vil mig en levende Trøst; 
+Sukke jeg vil ei meer for den Døde, 
+Af min Erindring jeg sletter ham ud; 
+Livet tilhvisker mig Ord saa søde,
+Jeg vil ei være Beenradens Brud''.
+
+Og han saae, hvordan hun i Haven 
+Stirred med Had paa Cypressen hen,
+Og han hørte, hun kaldte paa Slaven, 
+Bød ham at splintre og kappe den. 
+Amurath hørte Saugen hvine, <!-- Saugen? -->
+Amurath hørte Øxens Hug;
+Da fortrakkes den Sovendes Mine, 
+Og fra hans Bryst lød klagende Suk:
+
+,,Skræmmer Du Fuglen, Zulma, fra Reden, 
+Den i hvis Sang vi vor Glæde fandt? 
+Dræber Du, Zulma, hvad Kærligheden 
+Plantede som et Troskabspant?
+Hører Du ikke min Røst fra Stammen: 
+Dræber Du, Zulma, selv Din Ven? 
+Amurats Lampes sidste Flammen,
+Nænner Du grusomt at slukke den?'' —
+
+Drømmen forandredes. Zulma for Speilet 
+Ordned sin Dragt — han fornam hendes Ord:
+,,Skulde jeg sørge fordi han seiled?
+Skal jeg gaae sort som den sorte Jord?
+Nei, jeg vil gaae i de brogede Tøier, 
+Blomster skal smykke mit deilige Haar! 
+Dandsen veed jeg min Skjønhed forhøier — 
+Vel! Tambourinen jeg muntert slaaer!''
+
+Da forbandede han sine Qvaler,
+Barsk han reiste fra Bolsteret sig: 
+,,Smykker Du Dig med persiske Schawler,
+Nu da Voxlagnet væves for mig? 
+Sortklædt, Zulma, høitideligt lovte
+Du mig at gaae i Din Faders Gaard — 
+Nu krandser Demantbæltet Din Hofte, 
+Purpurfolden Din Fodsaal naaer!''
+
+,,Og medens Almuraths Livskraft svinder,
+Medens min isnede Barm blier trang, 
+Dandser i Kreds af muntre Slavinder
+Zulma ved Tambourinens Klang!
+Dands paa min Gravhøi, Du som mig daared,
+Styrt saa deri — bliv Beenradens Brud!'' —
+Og han rev heftigt Bindet fra Saaret — 
+Blodet og Livet strømmed da ud.
+</body>
+</poem>
+
+
+<poem id="bagger2017102703">
+<head>
+   <title>Hinduerens Tro</title>
+   <firstline>Lytter Alle til min Tale</firstline>
+   <notes>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 40-45.</note>
+   </notes>    
+   <quality>kilde,side,korrektur1</quality>
+</head>
+<body>
+<nonum><wrap><small>— ,,die merkwürdigen Systeme der Indier, <w>dieser Griechen der Urwelt</w>!"</small></wrap></nonum>
+<nonum><right><small><w>F. Schlegel.</w></small></right></nonum>
+
+Lytter Alle til min Tale,
+Hør min Lære, lyd mit Bud,
+Hvad jeg siger vil husvale,
+Jeg er Brama, Verdens Gud.
+Kom til mig hver den som lider,
+Som har efter Sandhed Tørst; 
+Om de forbigangne Tider
+Jeg belærer Eder først.
+
+Der var Verdner førend denne, 
+(Hvis Du troer paa Røsten min) 
+Fleer end to, ja fleer end trende,
+Der var Slægter førend din!
+I min Bog der staaer det skrevet, 
+Hvad ei aner just Enhver:
+Førend nu din Sjæl har levet,
+Den har levet førend her!
+
+Du har seet en anden Klode,
+Du har havt en bedre Tid;
+Ei da tvivled Du — Du troede! 
+Reen var Sjælen, reen din Iid. 
+Ei fra Himlen hørtes Torden, 
+Lynet slumred i min Haand:
+Frisk og sommergrøn var Jorden,
+Da var lykkelig din Aand!
+  
+Dengang laante Jorden ikke 
+Lyset fra den stolte Sol,
+Nei, den blændte Solens Blikke, 
+Funkled selv fra Pol til Pol;
+Og den lyste stærkt og varmed 
+Hvor den gik sin stolte Gang —
+Ak, men nu er den forarmet.
+Og dens Børn er stædt' i Trang!
+  
+I hin Tid, saa langt tilbage.
+At dens Tilvær knapt Du troer,
+Leved Du alt skjønne Dage
+Paa den gudvelsignte Jord, 
+Lykkelig, til den forvoldte
+Ved sin onde Hu og Daad,
+At jeg slap den længe Holdte
+Og nedslængte den i Graad.
+
+Derfor har ei Jorden Flammer, 
+Mørk er nu den gamle Borg; 
+Derfor vandrer Du i Jammer, 
+Derfor kjender Du til Sorg; 
+Bøiet gaaer Du, tidt bedrøvet,
+Men paa mig ei harmfuld bliv:
+Sorg er Straf for Synd udøvet 
+I de forudgangne Liv! —
+
+Jeg har løftet Taagesløret 
+Fra den dunkle, gamle Tid;
+Hvad jeg hvisker nu i Øret 
+Gjelder =denne= Verdens Iid:
+Faderligt jeg vil formane 
+Mine Børn paa denne Jord; 
+Uden mig de kan ei ane 
+Hvad i dette Jordliv boer.
+
+Vogt Dig for hver listig Qvinde, 
+Bøi forsigtig Blikket ned!
+Husk, hvad Du paa Jord mon binde,
+Bandt Du og for Evighed.
+Atter glæd Dig: fager Pige,
+Som i Sind Du havde kjær,
+Hun er Din i Bramas Rige,
+Hvis Du eied hende her.
+
+Meen ei, Mennesket alene
+Fik af Brama Tankens Gnist! 
+Fuglen paa de grønne Grene, 
+Den har og en Sjæl forvist; 
+I Naturen tusind Aander,
+Tusind Væsner dølge sig:
+Hver, som Du, af Qval sig vaander,
+Hver, som Du, paa Fryd er riig.
+  
+Planten strækker sine Arme
+Opad med veemodig Hu,
+Længes efter Lys og Varme,
+Har en evig Sjæl som Du: 
+Gjennem Skoven, Bølgen, Luften 
+En usynlig Livsaand gaaer,
+Meen ei, =Du= kun har Fornuften — 
+Bramas Godhed =Alle= naaer!
+  
+Og hvert Væsen i Naturen
+Elsker Dig og er din Ven,
+Skjøndt Du tidt bag Fordomsmuren 
+Stirrer spodsk og stolt paa den.
+Først naar Du af dine Lige
+Vorder haanet og forladt,
+Vender til Naturens Rige
+Du dit Blik i Sorgens Nat.
+
+=Da= først til sin sande Moder 
+Tyer en utaknemlig Søn;
+Og hun skjænker ham de Goder, 
+Som han nævner i sin Bøn;
+=Da= først hendes Skjønhed fatter 
+Den forbauste unge Søn:
+Hun var før en vanskabt Datter, 
+Nu blier hun hans Moder skjøn!
+  
+Men, som hun din Vunde heler, 
+Lægekløgtig, moderøm,
+Og som hun din Sorrig deler,
+Lindrer den ved Søvn og Drøm:
+Saa hun harmes, naar hun skuer 
+Atter Dig i Syndefald:
+Udaf Bjerget bryde Luer,
+Udaf Skyen Tordenskrald!
+
+Naar Du staaer ved Kokospalmen, 
+Da hver Gnist af Ondskab qvæl! 
+Seer paa Bladet Du en Falmen, 
+Det er Rødme for din Sjæl! 
+Gaaer Du med urene Tanker
+Der, hvor Ganges vælter sig,
+Og den taarner Bølgebanker — 
+Det er Taarer over Dig!
+
+Hvis din Haand sig her forsynder 
+Mod en Broders nøgne Bryst, 
+Viid, at Vinden det forkynder 
+Samme Dag med hæse Røst! 
+Natlig Udaad paa Altanen
+Sees vel ei af Bramas Sol, 
+Men fortælles af Orkanen
+Til den vide Nordens Pol!
+  
+Vogt Dig: Seeren, den gamle 
+Lurende Samvittighed,
+Grov sig, for din Iid at samle, 
+ Taus i Hjertets Kule ned! 
+Fælles Bjerge, fælles Floder, 
+Fælles Luft og Himmelrum, 
+Fælles har Du med din Broder 
+Efter Døden Dramas Dom.
+</body>
+</poem>
+
+<poem id="bagger2017102704">
+<head>
+   <title>† A. Müller</title>
+   <indextitle>A. Müller</indextitle>
+   <subtitle>(Conferentsraad, Høiesteretsassessor, Com. af Dannebroge)</subtitle>
+   <firstline>Hvi vil I sørge, for I seer et langt</firstline>
+   <notes>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 46-49.</note>
+   </notes>    
+   <quality>kilde,side,korrektur1</quality>
+</head>
+<body>
+,,Hvi vil I sørge, for I seer et langt,
+Et daadfuldt Liv den travle Jordgang endte?
+Siig, havde dette Liv ei naaet hvad mangt 
+Et andet ei at opnaae turde vente?
+Var ei den Dødes Værk, det velbekjendte,
+Et Omfang af hvad Mennesket formaaer?
+Hans Liv! vend Øiet did, det taareblændte,
+Og see! et fuldendt Landskab for Dig staaer,
+Saa smukt, som Du paa Jord at see det faaer,
+Med Sommersø, med Blaaluft og med Vaar''.
+  
+,,Naar Uhret gaaet har den lange Dag
+Og viist Minut, Secund, saa sikkert, troe, 
+Maa det da ikke slaae sit tolvte Slag
+Og pege paa den stille Midnats Ro?
+Hvad vil I meer? vil I fra Himlens Bo 
+Nedkradse ham en Evighed paa Jorden,
+Vil eet Liv I forlænge ud til to?
+See, hver en Daad, som man i Syd og Norden 
+Af een Mand fordre kan, er fuldbragt vorden, 
+Hvi vil I vredes da paa Verdens Orden?'' —
+  
+Saa spørger Philosophen — muligt Flere — 
+O svar dem Du, der græder ved hans Grav:
+Nei Kongen, Staten, Verden kan ei Mere, 
+Kan Meer ei fordre, end hvad Denne gav. 
+De, som i =Frastand=, hist fra Hytten lav,
+Den Døde kjendte, hist fra Stormandssalen,
+De veed, at hvert hans Skridt var maalet af 
+I Tommer efter Retsinds feilfrie Alen;
+Naar Solen skinnet har, de see dens Dalen 
+Med Følesløshed, kjender ei til Qvalen.
+  
+Men vi, som mindre fjernt hans Hjerte vare, 
+Som stirred mere frit ind i hans Sind,
+Den meer fortrolige, den mindre Skare, 
+Hvem Lykken vied til hans Nærhed ind,
+Vi trøstes ei, fordi vi kan forklare 
+Naturens Død af en naturlig Grund:
+Vi saae, hver Levedag var vel en Fare, 
+En grufuld Nærmelse til Dødens Blund; 
+Forstanden saae det, men til sidste Stund
+Var Hjertet blindt, veemodig taus vor Mund.
+
+O Du, hvis Sjæl for Ynglingen stod aaben,
+Hvis Arm mod Oldingen var hjælpsom strakt,
+Du Manges Trost, ei blot i Fløielskaaben,
+Men i din simple borgerlige Dragt
+Trøst for Enhver af Sorgen nær Dig bragt, 
+Du bli'er ei glemt paa een Dag eller tvende,
+Du stirres paa, skjøndt jordet uden Pragt! 
+Ei Sorgen er med Togets Gang tilende,
+Tidt vil vor Tanke, tidt sig til Dig vende,
+Skjøndt ønske Dig tilbage ei vi nænne.
+  
+Patricierne maae nu dit Raad undvære,
+Din Haand har lukt for fattig Borger sig,
+Du, Fader ikke blot for dine Kjære,
+Men Fader for Enhver, som søgte Dig! 
+Og Du, som stedse mild og hjertelig
+I Tale overbar med Ven og Fjende,
+Kun saae det Gode, fjern fra smaalig Krig,
+Dig maatte Herrens Tjener intet Minde
+Ved Kisten sætte, ei han maatte binde
+En Krands, hvor tusind Blomster var at finde!
+  
+Jeg troer paa Christus, ham, som dræbte Døden, 
+Jeg troer, at hæve sig kan hvad der faldt,
+Jeg troer, bag Natten ligger Morgenrøden,
+Jeg troer, at Urnen ikke gjemmer Alt:
+Der er en Verden, har man mig fortalt,
+Hvor vore Haab bli'er Virkligheder sande,
+Hvor evigt Formens Skjønhedslove gjaldt,
+Hvor ei i Taarer dunste Havets Vande, 
+Hvor ingen Fure rynker Englens Pande, 
+Der, Müller, der er Du, i Edens Lande!
+  
+Er der usynligt Vei fra her til hisset, 
+Tør disse simple Stropher vel Dig naae! 
+Vil Ingen her dem elske, dog forvisset 
+Jeg er, at Du dem ikke vil forsmaae; 
+Du vil en dæmpet lønlig Røst forstaae 
+Og stille venligt mine Suk ved Siden
+Af dem, der fra din egen Kreds udgaae.
+Held Den, der kan, som Du, fuldende Striden, 
+Hver Fordring fyldstgjøre, stor og liden,
+For Evigheden leve som for Tiden.
 </body>
 </poem>
 
@@ -394,9 +1433,15 @@ Og faldt i sit eget Sværd.
    <toctitle>Zigeunersken</toctitle>
    <indextitle>Zigeunersken</indextitle>
    <firstline>Herr Greven stod ved Vinduespost</firstline>
-   <quality>korrektur1</quality>
+   <notes>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 50-57.</note>
+   </notes>    
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <!-- Findes ikke i indholdsfortegnelsen. -->
 </head>
 <body>
+    <!-- TODO: Hvor skal dette motto være?
+    -->
 Herr Greven stod ved Vinduespost
 Og stirred ud imod Veien:
 Morsom at see var i blanke Frost
@@ -408,66 +1453,66 @@ Skyder dem alle døde.
 
 Hr. Grevens Søn, en rask lille Dreng,
 Kom løbende til sin Fader:
-»Ude paa Veien et løierligt Slæng
+,,Ude paa Veien et løierligt Slæng
 Sig nærmer med sære Lader.
 En lille Pige, taalelig kjøn,
-En Mand og en Kone jeg øiner!« -
+En Mand og en Kone jeg øiner!'' -
 Hr. Greven svarte sin undrende Søn:
-»Manden er en Zigeuner«.
+,,Manden er en Zigeuner''.
 
 Mand og Kone samt Pigelil,
 De udgjorde hele Horden;
 Den halvvoxne Pige, munter og mild,
 Neiede nede i Gaarden:
-»O maae vi komme paa Slottet op
+,,O maae vi komme paa Slottet op
 Til Moro for Deres Naade?
 Mellem Æg kan jeg med luftige Hop
-Dandse paa kunstig Maade!«
+Dandse paa kunstig Maade!''
 
-»Paa Ryggen har Fader et Bræddebuur,
+,,Paa Ryggen har Fader et Bræddebuur,
 Der sidder en liden Abe!
 Det er det Dyr, efter hvis Natur
 Os Mennesker Gud mon skabe.
 Joli, kom ud, Du maa dandse, hei,
 Lad os see dine morsomme Fagter!
 Dine Lige, Joli, ere Greven og jeg, -
-Vi har kun forskjellige Dragter«.
+Vi har kun forskjellige Dragter''.
 
-»Jeg spreder mine Æg paa den frosne Jord,
+,,Jeg spreder mine Æg paa den frosne Jord,
 Jeg dandser, men tør ikke falde,
 Thi Æggene skulle jo paa vort Bord
 Iaften mætte os Alle.
 Lidet tænkte vist Hønen paa,
 Saa hurtigt at vorde bedrøvet:
 Hun haabed en Kyllingeflok at faae -
-Men til Gryden vi Æggene røved«.
+Men til Gryden vi Æggene røved''.<note>røved''.]røved''</note>
 
-»Hr. Greve, Naturen er vældigt riig,
+,,Hr. Greve, Naturen er vældigt riig,
 Deraf dens uhyre Ødslen!
 Det halve Jordliv den gjør til Liig
 Og dræber det grumt i Fødslen:
 Af Snese Æg blive Kyllinger to,
 Rovfuglen æder den ene,
 Den anden gaaer sulten og uden Ro,
-Søger Korn mellem nøgne Stene!«
+Søger Korn mellem nøgne Stene!''
 
-»Deres Naade, blandt hundrede Mennesker man
+,,Deres Naade, blandt hundrede Mennesker man
 Kun træffer en enkelt Greve;
 De Nioghalvfems maae af Brød og Vand
 Særdeles tarveligt leve.
 Vi sove foruden Væg eller Tag,
 Under Regnens skyllende Vande -
 Den lille Greve gaaer hver en Dag
-Med vandfrie Blik og Pande!«
+Med vandfrie Blik og Pande!''
 
-»Naturen var ikke de Fattiges Ven,
+,,Naturen var ikke de Fattiges Ven,
 Den var os en haardhjertet Amme:
 Deres Naade kan gjøre det godt igjen,
 Gjør De Naturen tilskamme.
 Vi komme som Fugle til Ladegaard,
 Vi søge kun Affald til Føde -
 Vær ikke som han, der i Stalddøren staaer
-Og skyder Armod tildøde!« -
+Og skyder Armod tildøde!'' -
 
 Saa dandsed hun mellem de spredte Æg
 Under Klang af Tambourinen,
@@ -475,8 +1520,8 @@ Og skimted man end den trinde Læg,
 Uskyldig var Holdning og Minen:
 Trohjertig hun dandsede op og ned
 Med Bind for Panden og Øiet:
-»Joli, kom frem, Du maa dandse med,
-Du skal ogsaa være fornøiet!«
+,,Joli, kom frem, Du maa dandse med,
+Du skal ogsaa være fornøiet!''
 
 Der svævede hen det selsomme Par
 Under Kredsens beundrende Tien!
@@ -489,57 +1534,57 @@ Og Joli var - Virkeligheden!
 
 Men Hr. Greven fandt i Dandsen Behag
 Og vendte sig til den Lille:
-»Du skal ei sulte fra denne Dag,
+,,Du skal ei sulte fra denne Dag,
 Ei dandse aarle og silde!
 Jeg Betlersken tager i Datters Sted,
 Jeg vil gamle Fordomme trodse:
 Naar jeg kjører ud, skal Du kjøre med
-I min pyntelige Carosse!«
+I min pyntelige Carosse!''
 
-»Lege Du skal med min lille Dreng,
+,,Lege Du skal med min lille Dreng,
 Gaae ham lidt imellem tilhaande;
 Passe paa naar han løber paa tilfrossen Eng,
 Hans kuldskjære Fingre beaande;
 Efter Middagstaffelet munter og rap
 Læse høit de franske Journaler,
 Gnide mine Been med en ulden Lap,
-Og mildne min Podagras Qvaler!«
+Og mildne min Podagras Qvaler!''
 
-»Men naar jeg til Keiserens Fødselsdag
+,,Men naar jeg til Keiserens Fødselsdag
 Besøger Hovedstaden,
 Og Fiirspandet rask uden Pidskeslag
 Stormer igjennem Gaden,
 Naar Alle med Undren seer op til mig
 Og Skildvagten præsenterer:
 En Deel af Saluten da tilkommer Dig -
-Man seer, jeg Dig protegerer!«
+Man seer, jeg Dig protegerer!''
 
-»I Mode Du kommer om føie Tid -
+,,I Mode Du kommer om føie Tid -
 Ha, jeg seer alt dit Øie slaaer Funker!
 Sin Haand tilbyder i Handske hvid
 Dig hurtigt en Kammerjunker.
 Din Skjønhed vil snarligen op og ned
 Paa Pynt og Coiffure vende:
 Den eneste Dragt, hvoraf Hoffet veed,
-Den blier <i>à la Egyptienne!«</i>
+Den blier <i>à la Egyptienne!</i>''
 
-»Den hele Verden, paa Hofferne nær,
+,,Den hele Verden, paa Hofferne nær,
 Er - meer eller mindre - Canaille:
 Min Pige, derfor taknemlig vær,
 Jer frier Dig kanskee fra en Galge,
 Og fører Dig ind i et gyldent Pallads,
 Hvor man kjender ei Næringssorger,
 Hvor Fyrster og Prindser finde Plads,
-Men ei den stupide Borger«;
+Men ei den stupide Borger'';
 
-»Hvor Himmelens hele Herlighed,
+,,Hvor Himmelens hele Herlighed,
 Dens skinnende Stjerner og Solen
 Kan siges at være dalet ned,
 Saa Folk dem bærer paa Kjolen;
 Hvor Mennesket ei er Menneske meer,
 Men betragtes som store Guder -
 Kort, hvor man det Sorte i Livet ei seer,
-Men Alt er <i>couleur de</i> Ruder!« - -
+Men Alt er <i>couleur de</i> Ruder!'' - -
 
 Den brunladne Pige lyttende stod,
 Saae stundom hen til sin Fader
@@ -550,39 +1595,39 @@ Veemodigt paa Herskerinden;
 Da svarede Pigen med Skjelmeri
 Og Smiilfordybning i Kinden:
 
-»Kan Himmelens hele Herlighed,
+,,Kan Himmelens hele Herlighed,
 Dens skinnende Stjerner og Solen
 End siges at være dalet ned,
 Saa Folk dem bærer paa Kjolen,
 Saa mener jeg dog, at det bedre var
 For Hoffets talrige Vrimmel,
 Om indenfor Kjolen de Alle bar
-- I Hjertet - en Fredens Himmel!«
+- I Hjertet - en Fredens Himmel!''
 
-»Tidt koster Stjernen et slaviskt Buk,
+,,Tidt koster Stjernen et slaviskt Buk,
 Med Titler belønner man Smiger;
 Tidt bærer ved Hofte man Sabel smuk,
 Men derfor er man ei Kriger.
 Langt hellere færdes i fri Natur
 Og løbe til Solen daler,
 End stille sidde bag fornem Muur
-Og lindre - Podagras Qvaler!«
+Og lindre - Podagras Qvaler!''
 
-»Langt hellere dukke Hovedet ned
+,,Langt hellere dukke Hovedet ned
 For at undgaae Sneefald i Øiet,
 End hist, i en hectisk Herlighed,
 For Fyrster at sidde bøiet!
-En <i>Skilling</i> jeg tager taknemlig imod,
-Jeg dvæle vil <i>Øieblikke</i> -
-Din <i>Rigdom</i> sparker jeg til med min Fod,
-Og <i>Livet</i> sælger jeg ikke!«
+En <w>Skilling</w> jeg tager taknemlig imod,
+Jeg dvæle vil <w>Øieblikke</w> -
+Din <w>Rigdom</w> sparker jeg til med min Fod,
+Og <w>Livet</w> sælger jeg ikke!''
 
 Men Greven kunde slet ikke forstaae
 Den Foragt for de høie Sale,
 Men anede dog, at der Ondskab laae
 Formummet i Pigens Tale;
-Han raabte: »Flygt, eller føl min Stok,
-Jeg er kjed af den Dands og den Gjøglen!«
+Han raabte: ,,Flygt, eller føl min Stok,
+Jeg er kjed af den Dands og den Gjøglen!''
 Og derpaa han viste den fattige Flok
 Ryggen og - Kammerherrnøglen!
 </body>
@@ -591,13 +1636,18 @@ Ryggen og - Kammerherrnøglen!
 <poem id="bagger2002121409">
 <head>
    <title>Promenaden om Natten</title>
-   <subtitle>Il faut rire avant que d'ètre heureux, de peur de mourir sans avoir ri. <i>La Bruyére.</i></subtitle>
    <toctitle>Promenaden om Natten</toctitle>
    <indextitle>Promenaden om Natten</indextitle>
    <firstline>Søren, saa kom da nu, Søren, min Ven!</firstline>
-   <quality>korrektur1</quality>
+   <notes>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 58-62.</note>
+   </notes>    
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+    <nonum><wrap><small><i>Il fant rire avant que d'ètre heureux, de peur de mourir sans avoir ri.</i></small></wrap></nonum>    
+    <nonum><right><w>La Bruyère.</w></right></nonum>
+
 Søren, saa kom da nu, Søren, min Ven!
 Søren, nei det var da Fanden til Drikken.
 Kom, lad os slentre ad Gaderne hen -
@@ -636,7 +1686,7 @@ Vi og to Ruse, vi udgjør jo fire.
 Kors, det er svært, saa Du vaklende gaaer,
 Øinene døsigen plire.
 Der staaer Theatret, naa, seer Du det nu?
-»Eengang til Brædderne stod jo Din Hu?«
+,,Eengang til Brædderne stod jo Din Hu?''
 Ja, det var underligt, Søren,
 Kan Du de Griller forstaae?
 Tidt har jeg misundt Acteuren,
@@ -645,7 +1695,7 @@ Naar jeg paa Scenen ham saae.
 Bogen er som et Kapel og en Grav,
 Hvor Dine Haab og Ideer Du jorder;
 Øiet har Fordringer, Sandserne Krav:
-Ciffret ei <i>levende</i> vorder.
+Ciffret ei <w>levende</w> vorder.
 Da blier en fredelig Mægler og Tolk
 Kunstneren midt mellem Digter og Folk.
 Det som var sparsomt beundret
@@ -669,11 +1719,11 @@ Vægtig og trykkende, smeddet om Panden.
 Vægteren sidder i Skuret saa lad -
 Vægter o hør, hvor er Branden?
 Hvad, har han siddet og snivet, min Fa'er?
-»Aa, lille Herre, I er jo en Nar!«
+,,Aa, lille Herre, I er jo en Nar!''
 Hører han ikke den Klemten?
-»Det er jo Meelmandens Kat.« -
+,,Det er jo Meelmandens Kat.'' -
 Ilden er i Nummer femten!
-»Femten har jeg sgu besat.« -
+,,Femten har jeg sgu besat.'' -
 
 Søren, det er som paa Skøiter jeg gik:
 Benene glide, mod Eierens Villie.
@@ -688,13 +1738,13 @@ Blotte det velskabte Been.
 
 Søren, jeg vædder saa høit som Du vil,
 At Du faaer ondt i dit Hoved imorgen.
-»Driller Du atter? Hvad skal det dog til?
+,,Driller Du atter? Hvad skal det dog til?
 Du kjender ikke til Sorgen:
 Ondt i sit Hoved, Du broutende Nar,
-Faaer ikke Du som et Hoved ei har.« -
+Faaer ikke Du som et Hoved ei har.'' -
 Ikke begynd nu at skumle -
 Nei, hvad er det for en Lugt?
-»Hører Du Vognene rumle?«
+,,Hører Du Vognene rumle?''
 Skynd Dig blot, hurtigt paa Flugt!
 
 Søren, i Tiden naar skilte vi gaae,
@@ -713,13 +1763,12 @@ Som vi nu har paa vor Bag.
 <poem id="bagger2002121404">
 <head>
    <title>Bortreisen</title>
-   <toctitle>Bortreisen</toctitle>
-   <indextitle>Bortreisen</indextitle>
    <firstline>Aldrig glemmer jeg den skjønne Nat</firstline>
    <notes>
-      <note>Motivet til dette Digt findes i en Elegie, forfattet af en lærd hinduisk Philosoph og Philolog, <i>Mir Muhammed Husain</i> før hans Reise til Haidarabad med Richard Johnson Esqr. Elegien findes oversat i Prosa i Indledningen til <i>Wests</i> danske Oversættelse af Sacontala, Pag. XX.</note>
+       <note>* <w>Motivet</w> til dette Digt findes i en Elegie, forfattet af en lærd hinduisk Philosoph og Philolog, <w>Mir Muhammed Husain</w> før hans Reise til Haidarabad med Richard Johnson Esqr. Elegien findes oversat i Prosa i Indledningen til <w>Wests</w> danske Oversættelse af Sacontala, Pag. XX.</note>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 63-68.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Aldrig glemmer jeg den skjønne Nat,
@@ -728,29 +1777,29 @@ Stod i Døren skjælvende saa mat,
 Saae sig om saa ængstligt flere Gange;
 
 Sagde til mig disse smukke Ord:
-»Tør jeg ogsaa ind i Teltet træde,
+,,Tør jeg ogsaa ind i Teltet træde,
 Tør jeg troe, at den, der inde boer,
-Ikke myrde vil min Moders Glæde?«
+Ikke myrde vil min Moders Glæde?''
 
-»Vil Du tale med mig rene Ord,
+,,Vil Du tale med mig rene Ord,
 Tale med mig som en kjærlig Broder?
 Er saa barnligt from Du som jeg troer,
-God som Englen i de fjerne Kloder?« -
+God som Englen i de fjerne Kloder?'' -
 
-Da jeg raabte: »kom kun, smukke Barn,
+Da jeg raabte: ,,kom kun, smukke Barn,
 Kom, vær barnligt hilset mange Gange!
 Denne Haand ei fletter listigt Garn,
-I mit Hjerte slumrer ingen Slange.«
+I mit Hjerte slumrer ingen Slange.''
 
-»Vi vil tale som to Søstre smaa,
+,,Vi vil tale som to Søstre smaa,
 Som to Stjerner tale med hinanden,
 Som to Blomster, der ei Synd forstaae -
-Kom, jeg kysser Haanden kun og Panden!«
+Kom, jeg kysser Haanden kun og Panden!''
 
-»Vi vil her i denne stille Vraa
+,,Vi vil her i denne stille Vraa
 Os indbilde, at vi ei er ene,
 Handle som om Mange paa os saae,
-Ønske fromt og have Tanker rene.«
+Ønske fromt og have Tanker rene.''
 
 Og beroliget hun kom mig nær,
 Og jeg saae, hun bleg var og sørgmodig,
@@ -767,65 +1816,65 @@ Og jeg hørte hendes Hjerte banke,
 Og jeg vidste, mig gjaldt hendes Suk -
 Men bestandig reen var dog min Tanke.
 
-»Du vil reise!« - sagde hun saa blødt -
-»Derfor til Dig kommer jeg i Teltet:
+,,Du vil reise!'' - sagde hun saa blødt -
+,,Derfor til Dig kommer jeg i Teltet:
 Dengang Alle hjemme slumred sødt,
-Stod jeg op, tog Sløret paa, tog Beltet.«
+Stod jeg op, tog Sløret paa, tog Beltet.''
 
-»Moder min det ikke vide maa,
+,,Moder min det ikke vide maa,
 Derfor løsned jeg de gyldne Ringe
 Fra min Ankel, da jeg skulde gaae,
-At forrædersk ei de skulde klinge.«
+At forrædersk ei de skulde klinge.''
 
-»Veiens Flintestene skar min Fod,
+,,Veiens Flintestene skar min Fod,
 Thi forsigtigt jeg Sandalen kasted:
 Derfor seer Du her Din Piges Blod,
-Seer dets Stænk paa Veien hvor jeg hasted.«
+Seer dets Stænk paa Veien hvor jeg hasted.''
 
-»Ingen Stjerne skinte for mit Blik,
+,,Ingen Stjerne skinte for mit Blik,
 Skyen drivvaad hang paa Firmamentet;
 Ikkun Lynet lyste hvor jeg gik,
-Saa Dit Telt at finde knap jeg vented.«
+Saa Dit Telt at finde knap jeg vented.''
 
-»Reise vil Du! er paa mig Du vred,
+,,Reise vil Du! er paa mig Du vred,
 Siden Du med Længsel seer mod Stranden?
 Vidste Du, hvad dette Hjerte leed -
-Elsker høiere Du nogen Anden?«
+Elsker høiere Du nogen Anden?''
 
-»Ak, i Søen lever slimet Kryb,
+,,Ak, i Søen lever slimet Kryb,
 Stormens døde Offre boe i Vandet -
 Hvorfor seile over Gravens Dyb,
-Naar Du aande kan i Fødelandet?«
+Naar Du aande kan i Fødelandet?''
 
-»Indiens Sol har Kraft og mægtig Glands,
+,,Indiens Sol har Kraft og mægtig Glands,
 See Dig om, hvor smukt her er i Hjemmet!
 Her er hvad ei findes udenlands,
-Her er Alt jo vort og Intet fremmedt.«
+Her er Alt jo vort og Intet fremmedt.''
 
-»Stakkels Trækfugl flakker evigt om
+,,Stakkels Trækfugl flakker evigt om
 Og fra Fjeld til Fjeld Gazellen springer;
 Fast har Mennesket sin Helligdom,
-Den er der, hvor Modersmaalet klinger.«
+Den er der, hvor Modersmaalet klinger.''
 
-»Troer Du, at Du modner Din Forstand
+,,Troer Du, at Du modner Din Forstand
 Ved at see paa fremmed Jordbunds Træer?
 See blot rigtigt paa vort eget Land,
-Vi har Meer end mangen Europæer.«
+Vi har Meer end mangen Europæer.''
 
 Vil Du tale andre Landes Sprog?
 Ak, det Sprog, Din Pige med Dig talte,
 Sagde tidt Du før, var skjønnest dog,
-Thi med det vor Lykke bedst vi malte.«
+Thi med det vor Lykke bedst vi malte.''
 
-»Derfor, naar Du kommer hjem igjen
+,,Derfor, naar Du kommer hjem igjen
 Og har Sproget lært fra fjerne Zoner,
 Koldere da taler vist min Ven
-Og har glemt de kjære Hjemlandstoner;«
+Og har glemt de kjære Hjemlandstoner;''
 
-»Glemt ei Sproget blot, men og forglemt
+,,Glemt ei Sproget blot, men og forglemt
 Dem der talte det, forglemt os Alle;
 Vender hjemad anderledes stemt,
-Saa at vi Dig selv en Fremmed kalde.« -
+Saa at vi Dig selv en Fremmed kalde.'' -
 
 Og hun kasted ned sig for min Fod,
 Bønfaldt mig, som var jeg Bramaguden,
@@ -839,28 +1888,28 @@ Traadte nu den blonde Europæer.
 
 Og med hellig Gysen pegte han
 Didud, hvor min Elskte flygted bange,
-Raabte: »sandt er da hvad om Dit Land
-Staaer fortalt i Eders gamle Sange!«
+Raabte: ,,sandt er da hvad om Dit Land
+Staaer fortalt i Eders gamle Sange!''
 
-»At besjælet er hver Plante her,
+,,At besjælet er hver Plante her,
 At her endnu synligt Guder vandre,
 Og at Alt har her et helligt Skjær,
-At I Lykken eie fremfor Andre.«
+At I Lykken eie fremfor Andre.''
 
-»Seer Du Skikkelsen bag grønne Løv,
+,,Seer Du Skikkelsen bag grønne Løv,
 Seer Du, Sløret viftes bort af Vinden -
 Nei, hin Ansigt er ei jordiskt Støv,
-Denne Skikkelse er Vaargudinden:«
+Denne Skikkelse er Vaargudinden:''
 
-»Vaargudinden, som i Morgengry
+,,Vaargudinden, som i Morgengry
 Daler ned og venligtsindet spreder
 Sine Gaver over Mark og By -
-Ak, Europa maa misunde Eder!«
+Ak, Europa maa misunde Eder!''
 
-»See, hvert Skridt Gudinden gaaer
+,,See, hvert Skridt Gudinden gaaer
 Springe Roser ud, hvor Foden hvilte!
 Bort nu svandt hun - Skibet taklet staaer -
-Dette Varsel vist os Held tilsmilte!« -
+Dette Varsel vist os Held tilsmilte!'' -
 
 Men jeg saae det vel og grandt:
 Roserne var Blod paa Flintestene -
@@ -869,10 +1918,9 @@ Og min Elskte hjemme gik alene.
 </body>
 </poem>
 
-<section level="2">
+<section level="3">
 <head>
    <toctitle>Herregaarden</toctitle>
-   <!-- TODO: Dette skal være en group i stedet for en section -->
 </head>
 <content>
 
@@ -882,7 +1930,10 @@ Og min Elskte hjemme gik alene.
    <toctitle>1. Foraaret</toctitle>
    <indextitle>Foraaret</indextitle>
    <firstline>Imod Sydvest paa Sjællands friske Strande</firstline>
-   <quality>korrektur1</quality>
+   <notes>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 69-74.</note>
+   </notes>    
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Imod Sydvest paa Sjællands friske Strande
@@ -927,7 +1978,7 @@ Maaskee der ogsaa oppe føres Krig:
 Slaaer Jupiter Giganterne med Torden,
 Fordi de røre Kongekaabens Flig?
 O nei, kom med og see Du her fra Høien:
-Fra <i>Himlen</i> ei, fra <i>Skyen</i> kommer Støien,
+Fra <w>Himlen</w> ei, fra <w>Skyen</w> kommer Støien,
 
 Fra Himlen ei, fra Skyen Lyden kommer,
 Thi Himlen blaaner i et Fredens Skjær:
@@ -938,7 +1989,7 @@ Han sidder ved sin Faders høire Haand;
 Hver elsket Afdød, vakt af Dødens Dvale,
 - Fortælles - vandrer der, en renset Aand:
 Alt findes hist, hvad savnes maa herneden,
-Derfor jeg troer: did flygted ogsaa <i>Freden!</i> -
+Derfor jeg troer: did flygted ogsaa <w>Freden!</w> -
 
 Kom med! o følg mig blot ud i Naturen,
 Det er jo Foraar alt, læg Bogen bort.
@@ -960,7 +2011,7 @@ Sex Koner hugne staae ved Siden af;
 Saa mange Gange brød han Myrthegrenen
 Og hvergang blev den henlagt paa en Grav:
 Med Rette blev ham intet Varigt givet,
-Thi man kun <i>eengang</i> elske kan i Livet.
+Thi man kun <w>eengang</w> elske kan i Livet.
 
 Kun eengang slynges Elskovs Blomst og Ranker
 Om det ungdommelige Hoveds Lok,
@@ -1037,22 +2088,23 @@ Lad ogsaa der Din varme Maisol skinne!
    <indextitle>Et Sendebrev</indextitle>
    <firstline>Det som sig lønligst rører</firstline>
    <notes>
+   </notes>    
+   <notes>
       <note>Mottoet er sidste strofe i Byrons <xref poem="byron2002021401,41-48"/>.</note>
-      <note>Kilde er originaludgaven af Baggers <i>Smaadigte</i> (1834), pp. 75-79.</note>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 75-79.</note>
    </notes>
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<i>     From the wreck of the past, which hath perish'd,</i>
-<i>     Thus much I at least may recall:</i>
-<i>     It hath taught me, that what I most cherish'd</i>
-<i>     Deserved to be dearest of all.</i>
-<i>     In the desert a fountain is springing,</i>
-<i>     In the wide waste there still is a tree,</i>
-<i>     And a bird in the solitude singing,</i>
-<i>     Which speaks to my spirit of <w>thee.</w></i>
-                                  <i>Byron.</i>
-			
+<nonum><i>     From the wreck of the past, which hath perish'd,</i></nonum>
+<nonum><i>     Thus much I at least may recall:</i></nonum>
+<nonum><i>     It hath taught me, that what I most cherish'd</i></nonum>
+<nonum><i>     Deserved to be dearest of all.</i></nonum>
+<nonum><i>     In the desert a fountain is springing,</i></nonum>
+<nonum><i>     In the wide waste there still is a tree,</i></nonum>
+<nonum><i>     And a bird in the solitude singing,</i></nonum>
+<nonum><i>     Which speaks to my spirit of <w>thee.</w></i></nonum>
+<nonum><right><i>Byron.</i></right></nonum>
 
 Det som sig lønligst rører,
 Men som kun hviskes bør;
@@ -1078,7 +2130,7 @@ Eet Væsen udaf Vrimlen,
 Paa hvem jeg sikkert troer:
 Det Haab sig fast indprenter,
 Det skal mig vel staae bi;
-Trods hundred Recensenter
+Trods hundred Reænsenter
 Blier det ei Sværmeri!
 
 Blandt alle skjønne Steder
@@ -1130,10 +2182,10 @@ Da kyssed jeg Din Pande,
 Da klapped jeg Din Kind;
 Da syntes mig forsande
 Som toned Aftnens Vind:
-»Du haver Dig forsyndet
+,,Du haver Dig forsyndet
 Saa meget mod Din Gud,
 Og dog, fra Dommerhyndet,
-Han kaarer Dig en Brud!« -
+Han kaarer Dig en Brud!'' -
 
 Lad denne Lok, ringbunden,
 Et Forbund tolke os,
@@ -1175,27 +2227,494 @@ Tjene til Papillot.
 </content>
 </section>
 
+<poem id="bagger2017102705">
+<head>
+   <title>Finis Poloniæ</title>
+   <firstline>Yngling, o Du, hvis livlige Sands er aaben for Stordaad</firstline>
+   <notes>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 80-85.</note>
+   </notes>    
+   <quality>kilde,side,korrektur1</quality>
+   <!-- Måske indsæt et portræt af polske Kosciuzko --> 
+   <!-- Find Ovid citatet -->
+</head>
+<body>
+  <nonum><small>Hic situs est Phaëton, currus auriga paterni</small></nonum>
+  <nonum><small>Quem si non tenuit, magnis tamen excidit ausis.</small></nonum>
+  <nonum><right><small><w>Ovidus</w></small></right></nonum>
+
+Yngling, o Du, hvis livlige Sands er aaben for Stordaad,
+Hvis ufordærvede Sind føler for Fleer, end Dig selv. 
+Villig o bøi Dit Øre til mig, skjøndt ubekjendt Sanger,
+Følg til hin Grav Du mig hen, Graven bedækker et Folk. 
+Ofte paa Scenen jo rørte Dig Digterens Skildring af Sorgen, 
+Bøi Dig med Ærefrygt her: Clio taler i Sorg. —
+Venlige Glut, som læser ved Lys for Fader og Moder, 
+Spring ei mit Pag'na forbi, læs for de Gamle det høit. 
+Hjælp for det levende Polen, Pige, besad ei Europa,
+Men for det Døde har dog sagtens en Taare vel Du!
+  
+Stor var Landenes Krands, som fordum nævnedes Polen, 
+Over den kraftige Slægt skinte med Glæde Guds Sol;
+Tvedragt splitted dog Sønnernes Kraft, uvedkommende Fyrster
+Deelte med vanhellig Haand Strækningen efter Behag. 
+Vildt efter Død eller Frihed da kasted Du Tærning, Kosciuzko, 
+Intet af begge Du vandt, kun et forsmægtende Liv.
+Længst paa fire Mands Axler Du bares til eensomme Kammer,
+Lykkelig Du som ei seer atter et Tærningekast!
+Sov i Din rolige Seng kun trygt og skjult være Sandhed, 
+Drøm, at Dit Polen er frit, vi ville drømme det med.
+  
+Aarene randt; i Trældom ginge de Tappre; det knuged 
+Polens Sønner; omsonst stirred de efter en Hjælp. 
+Togange stiger Messias ei ned til de ventende Slægter, 
+Judas derimod kom, stod i Polakkernes Flok.
+Hvergang Vaaren i Landet treen med Sangfugl og Grønsvær,
+Sukked af dybe Bryst Manden med Taare paa Kind: 
+,,See paa Naturen, der moderlig vexler med Sommer og Vinter; 
+Kun i det halve Aar dækker den Landet med Snee.
+Weichselen bryder nu op og vælter de mørkeblaae Bølger, 
+Bruser og skummer igjen, springer den fængslende Iis. 
+Ikkun i Mandens Sjæl ei gjelder en skiftende Aarstid, 
+Evig er Vinteren der, bitter Erindring om før. 
+Fremmede Mænd tredeelte vor Konges hellige Kaabe, 
+Brak med forbryderiskt Greb Scepter og Thronen itu.
+Slørede Fremtid, bringer Du aldrig Polen sin Konge? 
+Kun hvad i Fortid vi var sukke vi, bede vi om.'' — 
+Og det rasled' i Løvet, som bønfaldt og nikked Naturen, 
+Som om den venlige Vaar deelte den Sørgendes Qval.
+  
+Men da nu Herskerens Tøile sig overstadigen stramte,
+Kasted det herlige Spand Vognen og Styrer omkuld.
+Fædrenelandet da kaldte med ængstelig Røst sine Sønner, 
+Sønnerne mylred i Flok, Landserne kom for en Dag.
+Rigmanden kom, han rakte heel trolig sin svulmende Rigdom,
+Sølvet, der stod paa hans Bord, smeltedes hurtigt til Mønt.
+Borgeren kom og Qvinden og fattige Bonde med Leen, 
+Ba$$rnet med smilende Kind slæbte paa Gaderne Steen;
+Og Veteranerne kom, de Djærve, som fulgte Napoleon, 
+Alle saa haabed de Seir, Mange saa fandt de kun Død.
+  
+Han, som skred over Balkan og klipped af Mahomeds Maane,
+Med overvældende Magt rykked i Markerne frem.
+Dog — han elsked Sobieskis Folk og tænkte beslægtet,
+Snart beundrede ham — Døden omtaaged hans Blik. 
+Lad den simpleste Gravskrift være hans evige Smykke,
+Rids den i Warschaus Muur, Russer, taknemmelig ind:
+,,Over den Stærkes Liig græd selve hans Fjende, Polakken, —
+Ved Macedonerens Grav jamred Darius's Slægt.''
+Gjerne da vilde Du, livlige Franker, Dig skyndt over Rhinen,
+Mandig den raske Ungar traadte for Keiseren frem,
+Han med det trofaste Bryst, Germanen, oprørtes i Sjælen — 
+Ulige Kamp vil ei godt passe med Ædlingens Hu.
+  
+Siig, hvad lærte vel os hin blodige Valplads i Polen? 
+At der endnu gives Mænd, som i den romerske Old, 
+At i Europas Midte Du finder en Slægt, som formener,
+At det elendige Liv ei er det Bedste paa Jord.<note>* Summun crede nefas vitam præferre pudori<br/>Et propter vitam vivendi perdere causas.</note>
+Hører Du ei, hvor Folkene høit tilraabe hverandre?
+Af en bedøvende Søvn styrte de pludselig op.
+Det var den galliske Hane, der goel med skingrende Stemme,
+Folkene lyttede til, Echoet tusindfold klang;
+Frihedens Morgenrøde besprængtes med blodige Roser, 
+Christus i Himmelen saae sørgende med paa vor Jord. 
+Men siden =den= Tid er der en krigerisk Tummel i Verden, 
+Vinterens Konge vil barsk qvæle den spirende Vaar:
+Det er den syttende Mai, der kæmper med kolde December.
+Ak, men Decemberen vandt, Warschaus Ruiner det saae. —
+  
+Kejserligt, høie Monark i det vældigt svulmende Rusland, 
+Kejserligt handlede Du dengang Du Polen betvang! 
+Det kan jeg godt forstaae, at ikke Dig villig Du fraskrev 
+Eiendomsret til et Folk, som Dine Fædre Dig gav:
+Hermelinskaaben af Drotten maa heel og holden bevares,
+Stor var Din Arv, til Din Søn gaaer den uklippet i Arv; 
+Ham vil Du svare hver Flig, hver Alen af Fædrenes Purpur — 
+Dette Du skylder Din Søn, dette Du skylder Din Slægt. 
+Men mere =christeligt= vist, om end ei lige politiskt.
+Havde =Du= handlet for Gud, Ham der skal domme hver Drot,
+Hvis før den blodige Strid Du havde med Mildhed i Øiet
+Sagt til de Tappre, som, nu hjemløse vandre paa Jord: 
+,,Fremmede Mænd tredeelte den kongelig hellige Kaabe,
+Brak med forbryderiskt Greb Scepter og Thronen itu; 
+Jeg, Nicolaus, bringer nu atter Polen sin Konge, 
+Det hvad i Fortid I var atter I vorde ved mig!
+Hvad ved en Udaad er bleven erhvervet vil ikke jeg arve,
+Men jeg vil det gjøre godt, som Catharina forbrød. 
+See! hvor berømt end Fredrik den Stores Navn er i Verden,
+Paa Katafalken der sees dog en uviskelig Plet.
+Du, min Stammemoder, skal slumre roligt i Kisten, 
+Derfor, o Polen, vær frit, vælg nu Din Konge Du selv!'' -
+
+Venlige Glut, som læser ved Lys for Fader og Moder,
+Spring ei mit Pag'na forbi, læs for de Gamle det høit!
+Hjælp for det levende Polen, Pige, besad ei Europa, 
+Men til det myrdede Folk Digteren vier en Sang.
+</body>
+</poem>
+
+<poem id="bagger2017102706">
+<head>
+   <title>Annas Løfter</title>
+   <subtitle>(Ideen laant af en gaelisk Vise)</subtitle>
+   <firstline>Saa taled Annas Mund iløn</firstline>
+   <notes>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 86-87.</note>
+   </notes>    
+   <quality>kilde,side,korrektur1</quality>
+</head>
+<body>
+Saa taled Annas Mund iløn: 
+,,Jeg vil ei ægte Grevens Søn;
+Selv ei om Dødsot gik om Land, 
+Og ene leved jeg og han!
+For alt det Gods, for alt det Guld, 
+For alt det dyre, grønne Muld,
+Som Sværdet vandt paa Ærens Vei, 
+Jeg ægted Grevens Ætling ei!" -
+  
+,,En Piges Ordø'' — loe Fad'ren mut -
+,,Er snarligt smeddet, snarligt brudt.
+See, rødmende staaer Lyngen hist,
+Smuk i sin korte Sommerfrist; 
+Nordvinden farer voldsom hen —
+Af Blomsten blier ei Spoer igjen!
+Og dog for Lyngens Blomst gaaer ud, 
+Staaer Dn for Altret — Grevens Brud!'' -
+
+Da raabte Pigen: ,,før ved Sky, 
+Som Arn, vil Svanen søge Ly;
+For levnes ei paa tørret Bund 
+Een Bølge meer i Øresund;
+Før flygter feig fra Faren fort
+Den danske Mand til Skjændsel bort -
+Og selv om disse Ting kan skee,
+Mig vil som Grevens Du ei see!'' —
+  
+Vandlillien for de Vindes Spil
+End dækker Svanens Rede til;
+End over sorte Tanggræslund
+Sin Bølge vælter Øresund;
+End flygted ei den danste Mand
+Fra Kampen for sit Fødeland —
+Og dog før Lyngens Blomst gik ud,
+For Gud blev Anna Grevens Brud!
+</body>
+</poem>
+
+<poem id="bagger2017102707">
+<head>
+   <title>William Shakespears Eventyr</title>
+   <firstline>Paa Gulvet gik Fanny op og ned</firstline>
+   <notes>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 88-93.</note>
+   </notes>    
+   <quality>kilde,side,korrektur1</quality>
+</head>
+<body>
+Paa Gulvet gik Fanny op og ned,
+Sin Fætter havde hun drillet:
+,,Han blussede stærkt og bortgik vred,
+Det havde jeg dog ikke villet.
+Min lille Broder, for Søster Du gaaer 
+Didhen, hvor Globustheatret staaer!
+Der under de Marmorpiller
+Han Richard den Tredie spiller.'' —
+  
+Saa hvisked hun Broder i Øret lidt,
+Opmærksom lytted den Lille;
+Hun nævnede Timen og Timen var Eet, 
+Den Time var mørk og stille.
+Og skyndte sig da det vevre Bud, 
+Sit lønlige Ærind at rette ud,
+Og flink er hans Fod, brat er den 
+I Shakspears tordnende Verden.
+
+,,Der staaer jo Fætter med Purpur om,
+Som Konge for Englands Kyster!
+O hor, Fætter Harry, tre Ord, o kom,
+Jeg bringer Dig Bud fra Søster.
+Du har hendes Ord dog ei vrangt udlagt? 
+Hun venter Dig efter femte Akt,
+Men hvad skal Løsenet være
+For Mødet i Tugt og Ære?''
+  
+Herr Harry stirrede snedigt ned 
+Med Straaler i Slangeblikke:
+,,Min Fanny vist i sit Hjerte veed,
+At Spotord jeg gjemmer ikke.
+Et Klap i Haanden, et enkelt Ryk 
+I Gadeklokken med læmpet Tryk:
+Kong Richard! skal Løsenet være 
+For Mødet i Tugt og Ære!'' —
+  
+Der stode de To og taltes ved
+Bag Scenens tause Coulisser,
+Og meente, de var i Eensomhed
+Og sikkre for Lorder og Misser.
+Men Shakspear, som havde skuet til
+Det buldrende store Kæmpespil,
+Han havde med smilende Læbe
+Hørt Drengen som Mægler at stræbe.
+
+Han tænkte: ,,Herr Harry, spil Richard Du her,
+Og jeg vil ham hist nok være!
+Du lefler jo dog med En og Hver
+Og spøger med Alles Ære.
+Saa Mange har jeg paa Scenen rørt, 
+Naar jeg blev gjennem en Anden hørt,
+Og skulde da frygtsom skjælve,
+Naar Ordet jeg fører selve?''
+  
+Og hurtigt han gik fra den brogede Flok, 
+Med Smilet om Tænkermunden
+Og stod heel snart med flagrende Lok 
+Ved Huset, i Stjernestunden.
+Et Klap i Haanden, et enkelt Ryk
+I Gadeklokken, med læmpet Tryk: 
+,,Kong Richard det er, som ringer,
+Sin Krone til Fanny han bringer!'' —
+
+Af høiere Glæde der skjalv et Smiil
+I Fannys livlige Mine,
+Dengang hun meente, med Ynglings Iil
+Ind vilde nu Harry trine;
+Der skjalv et Smiil med rugende Nat, 
+Da Shakspear i Kammeret indtreen brat; 
+Den bølgende Bruunlok ruller
+Ned over hans brede Skulder.
+
+,,Hvo er Du dristige Fremmede, Du, 
+Som Vei gjennem Mulmet finder?
+  Siig, hvorfor<note>hvorfor] haorfor</note> og uden Blue
+Du hvidne vil Pigens Kinder?'' —
+Hun veeg tilbage, snart bleg, snart rød,
+Fra Barmen de klagende Sukke lød,
+Og under de talende Bryne 
+Kom Sjælens Draabe tilsyne.
+  
+,,Du frygte Dig ikke, min vakkre Mø, 
+Jeg skræmmer en giftig Slange.
+At ikke Din rene Aand skulde døe,
+Derfor maatte til Dig jeg gange.
+Min favre Fanny, Du kjender ei mig? 
+Forlængst har den Fremmede dog kjendt Dig:
+Hvor Scenens Kuppler sig høine,
+Stod ofte Du for mine Øine!''
+
+,,Det er Dig, som man har Ophelia kaldt, 
+— Forlængst har jeg kjendt Dig nøie — 
+Jeg saae Dig dengang Julies Gestalt 
+Begeistred mit stirrende Øie!
+I Drømme ofte Du for mig stod, 
+Jeg knælte tilbedende for Din Fod, 
+Dog aldrig kan Shakspears Tale 
+Ei heller en Drøm Dig male!''
+
+,,Men spørger Du om mit Navn, min Stand, 
+Om mit Hjem er i Høiheds Haller —
+Jeg er i London ei ukjendt Mand, 
+En Digter mig Verden kalder.
+Folket ikkun det Glimrende seer,
+Men Du skal i mig see noget Meer. 
+Mildt funkle de Øine klare —
+O hvad vil Din Læbe mig svare?''
+  
+Han var hende længer nu fremmed ei, 
+Han stod som en elsket Frænde;
+Det var som i Sproget der intet Nei
+Til ham der gaves for hende:
+,,Og er Du en Digter, da kjender jeg Dig, 
+Der er jo Ingen som er Dig liig:
+Med kongeligt formede Pande
+Kun Shakspear kan for mig stande!''
+
+Han aandede glad, han aandede frit,
+Som Fuglen, der synger i Lunden; 
+Hun bøied sig til hans Aasyn blidt,
+Med Elskov i Stjernestunden.
+Tys! Klap i Haanden, et enkelt Ryk 
+I Gadeklokken med læmpet Tryk;
+,,Kong Richard!'' hviskede derude
+Herr Harry mod Fannys Rude.
+
+Da lukkede Shakspear Vinduet op, 
+Med Smiil til skuffede Beiler:
+,,Kong Richard er Du? gaa, Richards Krop, 
+Her staaer ei Din Throne; Du feiler!
+For Richard den Tredie, det veed Du, Ven,
+Da hersked William Erobreren.
+Min Ven, hold Skridt dog med Tiden, 
+Først William, saa Richard siden!''
+</body>
+</poem>
+
+<poem id="bagger2017102708">
+<head>
+  <title>Kong Valdemar og Dronning Helvig</title>
+  <firstline></firstline>
+  <notes>
+    <note>* Den Misforstaaelse, som fandt Sted imellem Valdemar den Fjerde og hans Dronning, udledes i Kæmpeviserne af Kongens Skinsyge paa Folkvar Lovmandsøn; ogsaa omtales Folkvars Død (i en Spigertønde). Rasmus Glad, en kjøbenhavnsk Professor under Fredrik den Anden, fortæller virkeligt i et Heltedigt om Margrethes Krig med Kong Albert, at Helvigs Terne, Anna fra Jylland, saaledes som det her er behandlet, tilveiebragte en Art af Forliig mellem allerhøieste Ægtepar.</note>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 94-99.</note>
+  </notes>
+  <quality>kilde,side,korrektur1</quality>
+</head>
+<body>
+Der Jagt paa Gurre hver evige Dag, 
+Thi Jagt er Kong Valdemars Glæde.
+Hvad vil Du Ørn med Dit Vingeslag?
+Nærm ikke Dig Herskerens Sæde. —
+Men, vogtet af Søen og Ringemuur,
+Maa Dronningen boe paa Søborgbuur, 
+Som Fange, den Thronebaarne! 
+Hvergang hun i Bølgen speilte sig,
+Den større sig græd, svam sørgelig 
+Langt bort fra de skumle Taarne.
+
+Da klaged hun tungt for Ternen smaa,
+Som sad ved hendes Side:
+,,Kong Valdemar foer i Silke blaa
+Til Søborg ved Midnatstide;
+Mig hilste han ei, men klappede Dig, 
+Ung Helvig er fattig, men Du er riig,
+Hans Øine for Dig kun brænde!
+Siig, trofaste Terne, veed Du Raad,
+Da standse Du nu Din Dronnings Graad,
+Min Lykke har Du ihænde.'' —
+  
+Heel dristige Raad har Ternen lagt,
+Kun Uskyld kan slige skjænke:
+,,Ha, føler han først Din Skjønheds Magt,
+Da skal han sit Mod nok sænke!
+Og hører han først Dit Sandhedsord,
+Dit Dronningeskjold han rustfrit troer,
+Han kysser Din klare Pande.
+Een Qvinde kan Manden vist knap modstaae,
+Men hvorlunde vil der Kongen gaae,
+Naar tvende med Mod fremstande?''
+  
+Hvo rider saa taus i den bælne Nat
+Tæt ind under Søborgs Linde?
+Kong Valdemar har sit Slot forladt,
+Han søger en — Elskerinde. 
+Graaskimlen han tøiler Broen nær:
+,,Den smukke Terne mig stevned her —
+Ung Helvig, Du rolig drømme!
+Mit favreste Skib paa Bølgen gled,
+Men troløst stak det i Dybet ned —
+Med Baad maa nu Kongen svømme!'' —
+  
+Den gothiske Borg er i Mulm tilslørt, 
+I Stalden kun Svendene vaage,
+Men de have Kongens Gang ei hørt,
+Ei Klappren ved vestre Laage.
+Og Kongen sig sneg med sagte Skridt;
+Fra farvede Ruder, sværmerskblidt,
+Ham lyste kun Maaneskjæret.
+I Gangen han fandt en Haand saa blød,
+I Kamret han kyssed en Læbe sød — 
+Smaaternen det vel har været! —
+  
+Men da nu i Gaarden Hanen goel
+Og Dagen oprandt saa vide,
+Da straalte fra Vinduet stærken Sol — 
+Ung Helvig laae ved hans Side!
+Hun mærked med Lyst og halv med Vee,
+At Kongen til Gulvet ned monne see
+Og taug som i Dødens Dvale;
+Hendes milde Blik da Taarer udgjød,
+Hun reiste sig op og fra Læben flød 
+Den blye, men dog stærke Tale:
+
+,,Min Konge, til Jord Du Øiet slaaer,
+Din Pande Du frit kun reise:
+Ung Helvig med Skjælven for Dig staaer,
+En Hustru tør ikke kneise.
+Kun een Ting ønsked jeg, siig mig blot, 
+Hvorfore Du gav mig Haan og Spot, 
+Skjøndt Du var min Lyst og Ære? 
+Hvi lod Du mig ei ved Slesvigstrand
+Hos Broder i elskte Fædreland,
+Naar kun jeg Dit Had skulde bære?'' -
+  
+,,Hallo, tie stille, min Dronning fiin, 
+Kong Valdemar ei Du daarer:
+I Løndom var Folkvar Boler Din,
+Og nu Du Din Huusbond kaarer!
+Mit favreste Skib paa Bølgen gled,
+Men troløst stak det i Dybet ned — 
+Du sank i de sorte Strømme!
+Siig, skulde jeg  Helvig, elske Den 
+Som kaared en Tjener til sin Ven, 
+Mens Herren i Fred mon drømme?'' -
+  
+Da talte med Sjælesorg hun brat,
+Med Kinden i stammende Rødme:
+,,=Mig= hilste som Brud først denne Nat, 
+=Du= sugede Blomstens Sødme!
+Ung Folkvar slumrer nu hvid og død,
+Uskyldig han ligger i Gravens Skjød,
+Og dog haver jeg det værre!
+I Plader de Mænd om Kongen staaer, 
+Hver haver jeg kjær i Kongens Gaard, 
+Som troligt tjener sin Herre.''
+  
+,,Men høre Du nu Din Hustrus Røst, 
+Hun taler ei nu forgjæves;
+Mit Skjold, der har lidt hin dybe Brøst,
+Seirmærket, det skal gjenhæves.
+Du troer mig nu ei, Kong Valdemar, 
+Der er i Dit Sind et gammelt Ar,
+Over det har Du ikke Din Villie; 
+Men vel kommer sildig Efterslægt,
+Som tager mit Navn i Varetægt
+Og renser mit Vaabens Lillie.''
+  
+,,Thi være det da et Tegn fuldvist
+For Slægterne, dem der komme:
+Hvis Naade mig skjænke Gud og Christ,
+Naar Tiden og Timen er omme,
+Og føder jeg da med Angst og Vee
+Et Foster, som Norden =engang= skal see 
+=Selv større end stærken Fader=, 
+Da vidne de vil, naar jeg er død,
+At Taarerne dog uskyldigt flød — 
+Og Pletten mit Skjold forlader!'' —
+
+Hin unge Dronning var reen og skjær,
+Hun talte det Ord forsande:
+Kong Valdemar stred med Hu og Hær,
+En Løve for Dannemarks Lande,
+Men Datteren med det kloge Blik 
+Et lysere Navn og Mærke fik,
+End Faderen selv hin Bolde.
+=Margrethe= sig fæstede Kroner tre,
+Og saaledes monne det rigtigt skee.
+At blanke blev Moderens Skjolde.
+</body>
+</poem>
+
 <poem id="bagger2001042401">
 <head>
    <title>Den engelske Kapitain</title>
-   <subtitle>Et Billede fra 1807</subtitle>
+   <subtitle>(Et Billede fra 1807)</subtitle>
    <toctitle>Den engelske Kapitain</toctitle>
    <indextitle>Den engelske Kapitain</indextitle>
    <firstline>Fra Kullagunnarstorp de Svenske saae</firstline>
    <notes>
-      <note type="credits">Indtastet af Sven Sørensen.</note>
-      <note>Kilden er Carl Bagger, <i>Smaadigte</i>, 1834, pp. 100-104</note>
+   </notes>    
+   <notes>
+       <note type="credits">Indtastet af Sven Sørensen.</note>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 100-104.</note>
       <note>Mottoet stammer fra Malthe Conrad Bruuns <xref poem="bruunmc2017101319,43-46"/> fra <i>Aristokraternes Catechismus</i> (1796).</note>
-      <note>Textkritisk note - blot til orientering: Digtet er optrykt, efter Baggers død, i hans <i>Samlede Værker</i>, II (1867).  Sidstnævnte text, som jeg kun kender gennem citater i ODS, har næppe større autoritet. - Følgende læsemåder er originale: 'Kapitain' (i overskriften) - 'Kaptain' (i teksten).  'Ordre' (plur.), en form som iflg. ODS kendes bl.a. fra <a person="blicher">Blicher</a>; rettet i 1867 til 'Ordrer'.  'Rheden': stedet citeres af ODS '(m. ordspil paa I.Rede)'; men den danske flåde lå, som det fremgår af digtet, i havnen, ikke på rheden. Det er uklart hvad Bagger mener; 'Freden' rimer bedre på 'Rheden' end på 'Reden'.  Læsningen 'Afmalte' giver dårlig mening: 'Afmale' måske en bedre mening.  Konklusion: Jeg tør ikke rette nogen af de anførte læsemåder. - Sven Sørensen.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<i>   "Kan Retten tolkes med større Fynd,</i>
-<i>    End naar man tolker den med Kanoner?</i>
-<i>    Og tør vel Nogen det kalde Synd,</i>
-<i>    Hvad Fyrster gjør, for at vinde Troner? -"</i>
-
+<nonum><i>   "Kan Retten tolkes med større Fynd,</i></nonum>
+<nonum><i>    End naar man tolker den med Kanoner?</i></nonum>
+<nonum><i>    Og tør vel Nogen det kalde Synd,</i></nonum>
+<nonum><i>    Hvad Fyrster gjør, for at vinde Troner? -"</i></nonum>
 
 Fra Kullagunnarstorp de Svenske saae
 I Kattegattet spredt en engelsk Flaade.
@@ -1218,20 +2737,20 @@ En Ven af Laurbær og de røde Roser.
 Paa Orlogsmanden, hvor det største Flag,
 Storadmiralens, vaied stolt fra Masten,
 Der blev, dengang det gryed blot ad Dag,
-Blandt Officererne saa travl en Hasten.
-De tæt forseglte Ordre skulde nu
+Blandt Offiærerne saa travl en Hasten.
+De tæt forseglte Ordre<note><i>Ordre</i> (plur.), en form som iflg. ODS kendes bl.a. fra <a person="blicher">Blicher</a>; rettet i <i>Samlede Værker</i> (1867) til <i>Ordrer</i>.</note> skulde nu
 Af Chefen brydes - spændt man vented Talen -
 Lord Gambier brød dem med nysgjerrig Hu,
 Og Alle stirred hen paa Admiralen.
 
-"Seil did" - saa lød det barske Kongebud -
-"Hvor Danmark har sin Flaade trygt i Rheden!
+,,Seil did'' - saa lød det barske Kongebud -
+,,Hvor Danmark har sin Flaade trygt i Rheden!<note><i>Rheden</i>: stedet citeres af ODS '(m. ordspil paa Rede)'; men den danske flåde lå, som det fremgår af digtet, i havnen, ikke på rheden. Det er uklart hvad Bagger mener; 'Freden' rimer bedre på 'Rheden' end på 'Reden'.</note>
 Hvad der I see, bring det af Havnen ud,
 Brug Krigen vel, dog tilbyd stedse Freden.
 De Danske tømret har saa fast en Borg,
 Før os en Anden muligt torde komme -
 Grib rask kun til - saa byder Kong Georg -
-Belønning faaes, naar Slaget vel er omme!"
+Belønning faaes, naar Slaget vel er omme!''
 
 Høit lød nu fra det rummelige Dæk
 Det hele Mandskabs vilde Hurraraaben;
@@ -1239,44 +2758,44 @@ I beget Fjæs saaes ikkun glade Træk -
 Til Ry og Plyndring stod jo Alles Haaben.
 Kun Een af alle hine Mænd ombord,
 Kun Een tog ikke Deel i Mængdens Glæde,
-- En ung Kaptain - men bad med jevne Ord
+- En ung Kaptain<note><i>Kaptain</i>: Stavemåde svarer ikke til overskriften; begge forbliver her uændret.</note> - men bad med jevne Ord
 Om Lov, frem for sin Chef at torde træde.
 
-"Hr. Admiral!" - saa tog til Orde han -
-"Jeg var kun Purk, da jeg paa Dybet seiled:
+,,Hr. Admiral!'' - saa tog til Orde han -
+,,Jeg var kun Purk, da jeg paa Dybet seiled:
 Ved Abukir, paa Nelsons Orlogsmand,
 Som Femtenaarig jeg til Æren beiled;
 Hist i Vestindien mangen vild Corsar
 Jeg greb og hang ham lystigt op i Galgen;
 Man ridsed ved Trafalgar mig et Ar -
-Men det er skjult af Ordner og Medaillen!"
+Men det er skjult af Ordner og Medaillen!''
 
-"Hvad England virked mod den franske Stat,
+,,Hvad England virked mod den franske Stat,
 Historien med Stolthed det opskriver;
 Hvad jeg har mod den listige Pirat
 Udøvet, øved jeg med munter Iver;
 Med Lyst jeg raabte: Gud og Kong Georg!
 Hvergang jeg fyred paa Napoleons Brigger -
 Men her jeg næsten græde maa af Sorg:
-Paa Røveri jo nu vor Flaade ligger!"
+Paa Røveri jo nu vor Flaade ligger!''
 
-"Jeg svoer, at følge troligt Englands Flag,
+,,Jeg svoer, at følge troligt Englands Flag,
 Til Dødens Sved omperler denne Pande,
 Men jeg har meent: i aabent, ærligt Slag -
 Ei loved jeg, at ville overmande!
 Falskt viser Politikens Øieglas -
 Matrosen ledes sikkert af Magneten,
 Han bruger Retsinds ærlige Kompas,
-Guds Stjerner vise Længden ham og Breden!"
+Guds Stjerner vise Længden ham og Breden!''
 
-"Dog aldrig skal der siges, at jeg brød
+,,Dog aldrig skal der siges, at jeg brød
 Den Eed jeg svoer, min Vimpel at forsvare:
 Jeg har forsvart den ærligt til min Død -
 Her er for Æren, ei for Flaaden Fare!
 Seil I! jeg lyder ikke Kongens Bud,
 Men gaaer paa andre Æventyr og Reiser -
 Der staaer i Skriften: Du skal lyde Gud,
-Meer selv end Du skal lyde Romas Keiser!" -
+Meer selv end Du skal lyde Romas Keiser!'' -
 
 Og dermed styrted han sig overbord!
 - Kald ham nu Sværmer eller kald ham Drømmer -
@@ -1311,10 +2830,11 @@ Vil bort, vil hjem, vil hist til Steenkulsøen! - -
 <head>
    <title>Ønskerne</title>
    <subtitle>(1826).</subtitle>
-   <toctitle>Ønskerne</toctitle>
-   <indextitle>Ønskerne</indextitle>
    <firstline>En lang, en sygelig Drømmervei</firstline>
-   <quality>korrektur1</quality>
+   <notes>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 105-106.</note>
+   </notes>    
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 En lang, en sygelig Drømmervei,
@@ -1333,7 +2853,7 @@ Hvor herligt der end er i Hjemmets Land,
 Kun Afglands af hisset det være kan.
 
 Den Mund, som svarte min Længsels Raab,
-Lad <i>den</i> og i Døden tilhviske mig Haab;
+Lad <w>den</w> og i Døden tilhviske mig Haab;
 Det Hjerte, som eengang har banket for mig,
 Lad aldrig blot det forandre sig!
 
@@ -1353,19 +2873,21 @@ Og sjunge mit Navn for en yngre Old!
 <head>
    <title>Fragmenter af den spanske Krønike</title>
    <firstline>I kjender Alle den berømte Cid!</firstline>
-   <quality>korrektur1,kilde,side</quality>
    <notes>
-      <note>Efter Carl Bagger: <i>Udvalgte Skrifter</i>, Oskar Schlichtkrull, Holbergselskabet, Kbh., 1928, pp. 213-227.</note>
-   </notes>
+       <note>Teksten følger Carl Bagger: <i>Smaadigte</i>, Kbh., 1834, pp. 107-123.</note>
+       <!-- Første Kalliope-version efter Carl Bagger: <i>Udvalgte Skrifter</i>, Oskar Schlichtkrull, Holbergselskabet, Kbh., 1928, pp. 213-227. -->
+
+   </notes>    
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-I kjender Alle den berømte <i>Cid!</i> -
+I kjender Alle den berømte <w>Cid!</w> -
 Naar Driveren paa Pyrenæerbjerget
 Sit Muuldyr fører nedad Skrænterne,
 Da synger han ei om Napoleon -
 O nei, han synger om Rodrigo Diaz,
-Benævnet Gid; skjøndt Helten leved i
-En længst henrunden Tid, besynges han,
+Benævnet Cid; skjøndt Helten leved i
+En længst henrunden Tid, besynges <w>han</w>,
 Og dog har vor Tid havt en Palafox!
 
 Hvad synges da vel om Rodrigo Diaz?
@@ -1388,7 +2910,7 @@ Og Klingen rasled ei og taus var Kaaben,
 Og Alt var tyst, som dengang Herrens Aand
 Ved Skabelsen hensvæved over Vandet -
 Da glimted Taaren udaf Pigens Øine:
-»Forlænge lader han idag mig vente -
+,,Forlænge lader han idag mig vente -
 Hvad foraarsager vel Rodrigos Stolthed?
 Hans Skjønhed dog vel ei? det er jo kun
 En gammel Egenskab - Narcissus var det.
@@ -1397,23 +2919,23 @@ Hans ædle Herkomst? Alt Achilles stammed
 Fra lutter Konger ned. Hans Tapperhed?
 Hispanien har ingen feige Sønner.
 Alt det, hvorpaa sin Stolthed han begrunder,
-Er gammelt, gammeldags og længst nedarvet!« -
+Er gammelt, gammeldags og længst nedarvet!'' -
 
 End meer hun klaged i sin Eensomhed:
-»To Gange har hans Falk alt slaaet ned
+,,To Gange har hans Falk alt slaaet ned
 I Gaarden paa min Dueflok; idag
 Har med sin Klo den qvalt min Yndlingsfugl -
 Den, som ei styre kan sin egen Falk,
 Fortjener ei de gyldne Riddersporer,
 Ei noget Haandtryk af en trofast Ven,
-Og ei et Kys af nogen Piges Mund!«
+Og ei et Kys af nogen Piges Mund!''
 Men da stod smilende Rodrigo Diaz
 I Døren, som han havde holdt paaklem;
 Han tog Baretten af med hviden Fjerbusk
 Og hviskede med Trods de stolte Ord:
-»Og dog gav Kongen mig den gyldne Spore,
+,,Og dog gav Kongen mig den gyldne Spore,
 Tidt trykked Prindserne dog denne Haand,
-Og ikke sjeldent kyssed mig Ximena!«
+Og ikke sjeldent kyssed mig Ximena!''
 
 Men paa hans Skulder sad den hvide Falk
 Med brune, menneskeligtkloge Øine,
@@ -1426,15 +2948,15 @@ Er skjult af Sneens sølverhvide Lillier
 Og savner ellers alle grønne Urter.
 Han tog den hvide Falk fra Skulderen
 Og knuste den mod Marmorfliserne:
-»Der ligger Falken« - sagde muntert han -
-»Vær nu ei længer vred paa Falkens Eier,
+,,Der ligger Falken'' - sagde muntert han -
+,,Vær nu ei længer vred paa Falkens Eier,
 Nu skal den meer ei jage Dine Duer.
 Du havde mistet jo Din Yndlingsfugl,
 Jeg vilde derfor ogsaa miste min,
-I Stort og Lidet skal vi være eens!« -
+I Stort og Lidet skal vi være eens!'' -
 
-»Dog« - sagde pludselig han alvorsfuld -
-»Pas paa, Ximena, om en føie Tid
+,,Dog'' - sagde pludselig han alvorsfuld -
+,,Pas paa, Ximena, om en føie Tid
 Vil Strid der opstaae mellem vore Fædre.
 Da skal, i Andres Paasyn, ogsaa vi
 See dobbelt koldt og vredent til hinanden;
@@ -1446,7 +2968,7 @@ Og bukke saare dybt; ja stundom skal
 Jeg gaae foruden Hilsen Dig forbi
 Og lade som med Villie jeg det gjorde,
 Og Du skal vende Dig til Infantinden
-Og tale ilde om »den stolte Dreng« -
+Og tale ilde om ,,den stolte Dreng'' -
 Og det skal vare ved den ganske Dag!
 Men hen mod Aften, elskede Ximena,
 Naar Solen synker, er vi meer ei vrede,
@@ -1463,7 +2985,7 @@ Men naar den første Nattens Stjerne kommer
 Og skræmmer bort mig fra Din elskte Nærhed,
 Da skilles vi, da gaae vi Hver til sit -
 Dog det skal ikke vare ved bestandig.
-Snart fører jeg min Brud hjem til min Borg -.«
+Snart fører jeg min Brud hjem til min Borg -.''
 
 Da hørtes Fodtrin udenfor paa Gangen -
 Ximenas Moder vil sin Datter see!
@@ -1486,17 +3008,19 @@ Almoctad klædte som Zigeuner sig,
 Achmed, hans Søn, iførtes samme Dragt;
 Formummede da ginge Søn og Fader,
 Som Speidere paa Veien hen til Burgos.
-Men Achmed tog til Orde: »Herre Fader,
+
+Men Achmed tog til Orde: ,,Herre Fader,
 Profeten byder Aabenhjertighed,
 Men Du gaaer skjult tilværks. Profeten byder:
 Med krumme Sabel, lange Landser søg
 Din Fjende paa den grønne Mark, og da
-Vil selv Profeten føre Dig til Seiren!« -
+Vil selv Profeten føre Dig til Seiren!'' -
 
 Men Faderen var taus og mørk; han lod
 Som om han Sønnens Ord ei havde hørt,
 Og videre paa Veien ginge Begge.
-Men Achmed tog til Orde: »Herre Fader,
+
+Men Achmed tog til Orde: ,,Herre Fader,
 Jeg vorder ræd, thi Veien er saa mørk,
 Kan ei vi vende om? - Ei Mahomed
 Vil hylle sig i List og Nat, den aabne
@@ -1506,7 +3030,7 @@ Ved dette rænkefulde Speidertog
 Har Du Profetens Redlighed fornærmet:
 Hans lyse Maane saaes paa fjerde Nat
 Ei hvor den ellers altid for os lyste -
-See Taagen har sig lagt om Træ'r og Buske.« -
+See Taagen har sig lagt om Træ'r og Buske.'' -
 
 Men Faderen var taus og mørk; han lod
 Som om han Sønnens Ord ei havde hørt,
@@ -1514,7 +3038,7 @@ Og videre paa Veien gik de Tvende.
 
 Men Achmed greb sin Faders Kjortelflig
 Og kasted sig i Støvet for hans Fødder:
-»Kald i Erindringen tilbage Dine
+,,Kald i Erindringen tilbage Dine
 Forgængeres Historie, min Fader!
 Hvor nu Du hersker, herskede Kalifer
 Af den forgudede Ommeiaslægt.
@@ -1542,19 +3066,19 @@ Og gik til Africa, i Ørknen ud,
 Og - Ørknens Løver aad med Hyl hans Liig
 I Sandet. - Fader, o lad ei vor Slægt
 Fortørne Herren, liig Ommeiastammen;
-Lad os ei <i>den</i> Dag leve, at man seer
+Lad os ei <w>den</w> Dag leve, at man seer
 Dig styrte fra Din Throne, at man hører
 Din Achmed raabe: giv mig een Dag Sceptret,
 Og dræb den næste Dag mig, hvis Jer synes,
-Hvad heller giv min Krop til Ørknens Løver!« - -
+Hvad heller giv min Krop til Ørknens Løver!'' - -
 
 Da pegede den gamle Konning op
 Imod den brede, mørktilslørte Himmel,
-Og svarte barsk: »Profeten er ei vred,
+Og svarte barsk: ,,Profeten er ei vred,
 Fordi jeg vil en mægtig Hersker være!
 Nei, Mahomed er ikke vred, han gjemmer
 Ikkun sin Maane, til den høitforbauset
-Skal see Almoctad paa de Christnes Throne!« -
+Skal see Almoctad paa de Christnes Throne!'' -
 
 Men neppe havde Kongen sagt de Ord,
 Før Maanen med sin skjønne, fulde Skive
@@ -1568,7 +3092,7 @@ Bagved en Hyldebusk stod alvorsfuld
 I Fløielskaaben med de gyldne Fryndser
 Rodrigo Diaz, lænet til sit gode Sværd
 Og raabte harmfuld til den gamle Konge:
-»Hvi gaaer som Tigger Du paa Speiderviis?
+,,Hvi gaaer som Tigger Du paa Speiderviis?
 Tør ikke meer Du see os kjækt i Øiet?
 Ha see! skjøndt Du er Mand med Vaar og Vintre,
 Staaer Du tilskamme for en Ungersvend!
@@ -1579,9 +3103,9 @@ Da skal jeg møde Dig i vilden Slag.
 Vi har alt længe ventet Dig: langs Grændsen
 I vore Borge, Dag og Nat, med Bidsler,
 Med Sadler vore muntre Heste stod -
-Gaa skamfuld bort og bedre Dig, o Konge!«« - <!-- «]«« ? -->
+Gaa skamfuld bort og bedre Dig, o Konge!'' -
 
-Da svarte Kongen: »vel jeg kjender Dig,
+Da svarte Kongen: ,,vel jeg kjender Dig,
 Rodrigo Diaz, tæm Dit unge Sind!
 Jeg møder Jer med List, thi listig er
 Hver Christen, skjøndt han gjerne lader from -
@@ -1591,7 +3115,7 @@ Hvor lifligt end dem Krøniken vil sminke:
 Det er ei længe siden, at Kong Sancho 
 Sin skyldfrie Broder, Antolin, lod smedde
 Til Væggen fast og grusomt martred ham
-I <i>nitten</i> Aar! hvert Aar blev Jernene
+I <w>nitten</w> Aar! hvert Aar blev Jernene
 Gjort smallere, for at de kunde passe
 Den meer og meer fortærte Knokkelhaand.
 Men i det tyvende, det sidste Aar,
@@ -1602,21 +3126,21 @@ Med hvad jeg leved, vil jeg ogsaa døe! -
 End i Zamora paa hans Gravsteen staaer
 Udhuggen Antolin den Lænkebundne;
 Da vi Zamora fra Jer tog, vi fandt
-Hint Skjændselsmonument for Broderhadet!« -
+Hint Skjændselsmonument for Broderhadet!'' -
 
 Men dette krænkede Rodrigo Diaz,
-Vredladen svarte han: »nu, Kong Almoctad,
+Vredladen svarte han: ,,nu, Kong Almoctad,
 Hin Liigsteen skal ei meer forarge Dig,
-Med Guds Hjælp faae vi atter nok Zamora!«
+Med Guds Hjælp faae vi atter nok Zamora!''
 
 Da lød med Haan den onde Konges Svar:
-»End faaer Zamora Du, Du faaer dog neppe
+,,End faaer Zamora Du, Du faaer dog neppe
 Zamoras Kirkeklokker med det samme;
 Dem nedtog vi af Kathedralen flux
 Og bored Huller i dem langs ad Randen
 Og fæsted Messinglænker i hvert Hul.
 Omvendte, hænge de i Zaragoza,
-Som Lamper, i den hvælvede Moskee!«
+Som Lamper, i den hvælvede Moskee!''
 
 En Torden lød, et Lyn paa Himlen glimted,
 Regndraaberne paa Skovens Kroner pladsked;
@@ -1630,7 +3154,7 @@ Thi Strid der var imellem begge Fædre.
 
 <nonum>3.</nonum>
 
-»Og var Ximena da saa meget smuk « -
+,,Og var Ximena da saa meget smuk '' -
 
 Ja, Yngling, hun var smuk, saa smuk som Den,
 Du end ei saae med legemlige Øine! -
@@ -1655,13 +3179,12 @@ Du stirrer paa de røde Silkeschawler,
 Hold op, Du stirrer til Dit Øie perler!
 Gaa bort, gaa raskt fra Ballet, Yngling, flygt:
 Hun er ei der, hvor Menneskene færdes!
-
 Kun naar Du eensom gaaer i Natten ud
 Og vandrer udenfor det Huus, hvor Dandsen,
 Hvor Vinen, hvor Musikken sammenblandes,
 Derudenfor, naar Du betragter Stjernen,
 Der kommer deilig atter hun tilsyne
-Og hvisker til Dig: »søg, saa skal Du finde!« -
+Og hvisker til Dig: ,,søg, saa skal Du finde!'' -
 
 Hint Billed, Yngling, veed Du, hvad det er?
 Det er en Skabning, som Gud Amor kogler:
@@ -1679,13 +3202,13 @@ Nu svar mig Du, var ei Ximena smuk?
 <nonum>4.</nonum>
 
 Ximenas Moder treen i Salen ind:
-»Min Datter! dræbt i Tvekamp er Din Fader,
+,,Min Datter! dræbt i Tvekamp er Din Fader,
 Din Faders Morder er Rodrigo Diaz;
 Kom tag et Slør, tag sorte Fløielsklæder,
-Klæd kulsort Dig, thi sort er nu vor Himmel!« -
+Klæd kulsort Dig, thi sort er nu vor Himmel!'' -
 
 Da græd den unge stakkels Elskerinde,
-Hun svared': »tag de sorte Klæder bort!
+Hun svared': ,,tag de sorte Klæder bort!
 Sorg eier ingen fast og enkelt Farve,
 Den værste Sorg desuden kan ei sees.
 Sorg har sig spredt i hele Skabningen, 
@@ -1696,7 +3219,7 @@ Der ei er bundet til den fælles Lov:
 Hver Gjenstand og dens Farve kjender Smerte.
 Derfor kan til min Sorgs Symbol jeg vælge
 Det Blaae, det Hvide eller Røde mig -
-Tag, Moder, kun de sorte Klæder bort!«
+Tag, Moder, kun de sorte Klæder bort!''
 
 <nonum>5.</nonum>
 
@@ -1708,7 +3231,7 @@ Da treen i Kirken ind Rodrigo Diaz,
 Foruden Sværd, foruden Ridderkaabe,
 Foruden Sporer (alting hang derhjemme),
 For Altret knælte han og talte saa:
-»Prælat, som staaer i hviden Messesærk,
+,,Prælat, som staaer i hviden Messesærk,
 Jeg kommer sorgfuld hid til Skriftemaal,
 Thi viid: i Tvekamp dræbte jeg Grev Gormaz.
 Nu er det tyst i Grevens Borg: hans Datter,
@@ -1719,17 +3242,17 @@ I Salene, hvor Munterheden dvælte,
 Der ruger Tungsind, aldrig skinner Solen.
 Istedetfor de muntre Gjæster kommer
 I regelmæssige Besøg kun Lægen -
-Prælat, beed Gud om Naade for Rodrigo!«
+Prælat, beed Gud om Naade for Rodrigo!''
 
-Da svared Herrens Tjener: »skrift, min Søn,
+Da svared Herrens Tjener: ,,skrift, min Søn,
 Men tael oprigtigt! Gormaz er hos Gud 
 Og hører hvert et Ord og melder selv til Herren,
 Naarhelst en usand Lyd din Læbe siger.
 Heel grusomt har Du endt den Sværdeleeg:
-Et Saar var blodig Hevn - hvi dræbte Du -«
+Et Saar var blodig Hevn - hvi dræbte Du -''
 
 Men op mod Himlen hæved da sin Haand
-Rodrigo Diaz, sagde: »Herrens Tjener,
+Rodrigo Diaz, sagde: ,,Herrens Tjener,
 Giv nøie Agt, Rodrigo taler sandt.
 Jeg kom til Kredsen paa Tourneringspladsen,
 Mit Følge holdt i Rader rundt i Kredsen;
@@ -1739,7 +3262,7 @@ Stundom jeg saae min gamle Faders Graad; -
 Stundom Ximena hævede sin Haand
 Og løfted Myrthekrandsen af sit Hoved
 Og gav mig alle Grenene tilbage; -
-Stundom jeg stirred i min egen Grav«,
+Stundom jeg stirred i min egen Grav'',
 Hvidt klædte gamle Qvinder mig, de lagde
 Tilrette for mig i min Katafalk,
 Og herreløs stod mine Fædres Borg.
@@ -1748,8 +3271,8 @@ Paa Kisten laae mit Sværd, ved Kisten sad
 I Sølverslør Ximena, peged paa
 Stamtavlen over Graven, og der stod
 Med rødlig Skrift paa Tavlen nederst ridset:
-»Rodrigo Diaz, sidste mandlig Arving,
-Gud være Stammen naadig, hvor den er!« -
+,,Rodrigo Diaz, sidste mandlig Arving,
+Gud være Stammen naadig, hvor den er!'' -
 Det var en vaagen Drøm - og der kom fleer
 Og værre Syner, da jeg sad paa Hesten:
 Ti Aar var svundne hen, som lette Skyer!
@@ -1773,11 +3296,11 @@ Han smilte haanligt, meente vel, jeg frygted,
 Da stred vi, atter jeg besinded mig,
 Jeg vilde saaret ham i Skuldren - Sværdet
 Løb nedenfor, og han sank baglænds ned -
-Prælat, o beed om Naade for Rodrigo!««
+Prælat, o beed om Naade for Rodrigo!''
 
 Bevæget rakte Herrens Tjener ham
-Sin Haand og atter talte da Rodrigo«.
-»Prælat, som seer med Mildhed paa Rodrigo,
+Sin Haand og atter talte da Rodrigo''.
+,,Prælat, som seer med Mildhed paa Rodrigo,
 Jeg mere skrifte vil, Du skal erfare,
 Hvorledes det ser ud nu i mit Hjerte.
 Mit Øie hvile kan paa hele Jorden,
@@ -1789,7 +3312,7 @@ Hvis ikke Du vil see min Latter druknes
 I Krampegraad, hvis ikke Du vil see
 Min Munterhed til Dødsangst sig forvandle;
 Kun een Ting maa i min Nærværelse 
-Du ikke tale om - det er om <i>hende!</i>
+Du ikke tale om - det er om <w>hende!</w>
 Thi denne Tanke forbeholder jeg
 Mig selv, naar jeg foruden Selskab er.
 Alt andet kan jeg tale om fornuftigt,
@@ -1807,15 +3330,15 @@ Mig som en Ulv, en Bjørn i kulsort Pelts,
 Med Blodinstincter og med hviden Hugtand:
 Min klare Indsigt gaaer fortabt og jeg
 Nedsynker i en lodden Dyreverden -
-Prælat, o beed om Naade for Rodrigo!«
+Prælat, o beed om Naade for Rodrigo!''
 
 Og Herrens Tjener fældte milde Taarer;
 Han havde megen Medynk med Rodrigo,
 Men videre da talede Rodrigo:
-»Prælat, som græder over mine Sorger,
-Giv mig et Raad, hvorledes jeg skal handle.«
+,,Prælat, som græder over mine Sorger,
+Giv mig et Raad, hvorledes jeg skal handle.''
 
-Da sagde Herrens Tjener: »vend Dit Øie
+Da sagde Herrens Tjener: ,,vend Dit Øie
 Fra jordisk Elskov bort en stakket Stund;
 Med Tiden blier Ximena vel Din Brud.
 Stor Sorg er lagt omkring Dit unge Hjerte,
@@ -1826,7 +3349,7 @@ I Zaragoza boer en maurisk Konge,
 Almoctad, fientlig stemt mod alle Christne -
 Erobre Zaragoza, kæmp for Christus,
 Jeg vie skal Dit Sværd og lyse Kirkens
-Velsignelse, Rodrigo, over Hjelmen!« - -
+Velsignelse, Rodrigo, over Hjelmen!'' - -
 
 Den næste Dag Rodrigo sad paa Skimlen -
 Saa lad ham ride da mod Zaragoza! 
