@@ -25,7 +25,7 @@ end
 @type = 'poem'
 
 def printPoem()
-  if @source and not @page and
+  if @source and not @page 
       abort "FEJL: Digtet »#{@title}« mangler sideangivelse"
   end
   puts "<#{@type} id=\"#{@poetid}#{@date}#{'%02d' % @poemcount}\">"
@@ -109,7 +109,7 @@ File.readlines(ARGV[0]).each do |line|
       STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal _"
   end
   line = line.rstrip.gsub(/=(.+?)=/,'<w>\1</w>')
-  if (line =~ /=/)
+  if (line =~ /=[^"]/)
       STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal ="
   end
   # Håndter {..}
@@ -156,7 +156,9 @@ File.readlines(ARGV[0]).each do |line|
       @state = 'NONE'
   end
   if line.start_with?('SLUTSEKTION')
-      printPoem();
+      if @state != 'NONE'
+          printPoem();
+      end
       printEndSection();
       @state = 'NONE'
   end
