@@ -103,7 +103,7 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
         .replace(/^ *(<right>.*)$/gm, '$1')
         .replace(/^ *(<center>.*)$/gm, '$1')
         .replace(/^( +)/gm, (match, p1) => {
-          return '&nbsp;'.repeat(p1.length);
+          return '&nbsp;&nbsp;'.repeat(p1.length);
         })
     )
   );
