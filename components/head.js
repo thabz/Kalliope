@@ -38,7 +38,7 @@ export default class Head extends React.Component {
     }
     return (
       <NextHead>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <title>
           {headTitle || ogTitle || ''}
         </title>
