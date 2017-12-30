@@ -1,3 +1,5 @@
+// @flow
+
 // All our images should have scaled versions with the following widths
 module.exports.availableImageWidths = [
   100,
