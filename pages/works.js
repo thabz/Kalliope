@@ -22,7 +22,7 @@ export default class extends React.Component {
     lang: Lang,
     poet: Poet,
     works: Array<Work>,
-    Error: ?Error,
+    error: ?Error,
   };
 
   static async getInitialProps({
@@ -69,26 +69,28 @@ export default class extends React.Component {
     };
 
     const list =
-      works.length == 0
-        ? <div className="nodata">
-            Kalliope indeholder endnu ingen tekster fra denne digter.
-          </div>
-        : sortWorks(works).map((work, i) => {
-            const workName = <WorkName work={work} />;
-            const url = `/${lang}/work/${poet.id}/${work.id}`;
-            const name = work.has_content
-              ? <Link route={url}>
-                  <a title={work.year}>
-                    {workName}
-                  </a>
-                </Link>
-              : workName;
-            return (
-              <div className="list-section-line" key={i + work.id}>
-                {name}
-              </div>
-            );
-          });
+      works.length == 0 ? (
+        <div className="nodata">
+          Kalliope indeholder endnu ingen tekster fra denne digter.
+        </div>
+      ) : (
+        sortWorks(works).map((work, i) => {
+          const workName = <WorkName work={work} />;
+          const url = `/${lang}/work/${poet.id}/${work.id}`;
+          const name = work.has_content ? (
+            <Link route={url}>
+              <a title={work.year}>{workName}</a>
+            </Link>
+          ) : (
+            workName
+          );
+          return (
+            <div className="list-section-line" key={i + work.id}>
+              {name}
+            </div>
+          );
+        })
+      );
 
     const title = <PoetName poet={poet} includePeriod />;
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
