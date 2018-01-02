@@ -110,6 +110,7 @@
 ' soge / søge ',
 ' soger / søger ',
 'cr/er',
+'kjon/kjøn',
 'nc/ne',
 '„/,,',
 '"/\'\''
