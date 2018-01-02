@@ -1,110 +1,134 @@
-s/oeg/æg/
-s/hoi/høi/
-s/folg/følg/
-s/Skjon/Skjøn/
-s/ce/æ/
-s/Sæne/Scene/
-s/Bolg/Bølg/
-s/Trsst/Trøst/
-s/Son/Søn/
-s / rod/ rød/
-s/elfl/elsk/
-s/Drom/Drøm/
-s/drom/drøm/
-s/msrk/mørk/
-s/gjor/gjør/
-s/sial/skal/
-s/Ncer/Nær/
-s/M /M/
-s/scrt/sæt/
-s/ stal/ skal/
-s/stodt/stødt/
-s/storre/større/
-s/Oie/Øie/
-s/bce/bæ/
-s/Son /Søn /
-s/Hoi/Høi/
-s/ Dod/ Død/
-s/S a a /Saa /
-s/S a a/Saa/
-s/sortal/fortæl/
-s/ sor / for /
-s/hsie/høie/
-s/forst /først /
-s/forste /første /
-s/speede/spæde/
-s/Lce/Læ/
-s/troeng/træng/
-s/rce/ræ/
-s/loft/løft/
-s/giore/giøre/
-s/flut/slut/
-s/ flue/ skue/
-s/ fode / føde /
-s/Hpi/Høi/
-s/fodt/født/
-s/ipn/iøn/
-s/mce/mæ/
-s/cen/æn/
-s/sæne/scene/
-s/Sæne/Scene/
-s/Rost/Røst/
-s/Fce/Fæ/
-s/cel/æl/
-s/ceb/æb/
-s/ced/æd/
-s/cer/ær/
-s/cet/æt/
-s/ceg/æg/
-s/cem/æm/
-s/cev/æv/
-s/crd/æd/
-s/crb/æb/
-s/crm/æm/
-s/crg/æg/
-s/crf/æf/
-s/crv/æv/
-s/crk/æk/
-s/crl/æl/
-s/crn/æn/
-s/crt/æt/
-s/crs/æs/
-s/Bp/Bø/
-s/Oin/Øin/
-s/skion/skiøn/
-s/sierne/fierne/
-s/sorge/sørge/
-s/ sode / søde /
-s/moel/mæl/
-s/troste/trøste/
-s/troste/trøste/
-s/fpl/føl/
-s/fsr/før/
-s/elst/elsk/
-s/Jnd/Ind/
-s/Jf/If/
-s/ZE/Æ/
-s/Sial/Siæl/
-s/Dine/Øine/
-s/Onske/Ønske/
-s/Drsm/Drøm/
-s/Bon /Bøn /
-s/Bonner/Bønner/
-s/Bonder/Bønder/
-s/Sporg/Spørg/
-s/Folg/Følg/
-s/Fodsel/Fødsel/
-s/Boek/Bæk/
-s/sporg/spørg/
-s/labe/læbe/
-s/overste/øverste/
-s/storst/størst/
-s/strom/strøm/
-s/ hore / høre /
-s/fkab/skab/
-s/beromte/berømte/
-s/ soge / søge /
-s/ soger / søger /
+#!/usr/bin/ruby
 
+@rules = [
+'oeg/æg',
+'hoi/høi',
+'folg/følg',
+'Skjon/Skjøn',
+'ce/æ',
+'Sæne/Scene',
+'Bolg/Bølg',
+'Trsst/Trøst',
+'Son/Søn',
+'s / rod/ rød',
+'elfl/elsk',
+'Drom/Drøm',
+'drom/drøm',
+'msrk/mørk',
+'gjor/gjør',
+'sial/skal',
+'Ncer/Nær',
+'M /M',
+'scrt/sæt',
+' stal/ skal',
+'stodt/stødt',
+'storre/større',
+'Oie/Øie',
+'bce/bæ',
+'Son /Søn ',
+'Hoi/Høi',
+' Dod/ Død',
+'S a a /Saa ',
+'S a a/Saa',
+'sortal/fortæl',
+' sor / for ',
+'hsie/høie',
+'forst /først ',
+'forste /første ',
+'speede/spæde',
+'Lce/Læ',
+'troeng/træng',
+'rce/ræ',
+'loft/løft',
+'giore/giøre',
+'flut/slut',
+' flue/ skue',
+' fode / føde ',
+'Hpi/Høi',
+'fodt/født',
+'ipn/iøn',
+'mce/mæ',
+'cen/æn',
+'sæne/scene',
+'Sæne/Scene',
+'Rost/Røst',
+'Fce/Fæ',
+'cel/æl',
+'ceb/æb',
+'ced/æd',
+'cer/ær',
+'cet/æt',
+'ceg/æg',
+'cem/æm',
+'cev/æv',
+'crd/æd',
+'crb/æb',
+'crm/æm',
+'crg/æg',
+'crf/æf',
+'crv/æv',
+'crk/æk',
+'crl/æl',
+'crn/æn',
+'crt/æt',
+'crs/æs',
+'Bp/Bø',
+'Oin/Øin',
+'skion/skiøn',
+'sierne/fierne',
+'sorge/sørge',
+' sode / søde ',
+'moel/mæl',
+'troste/trøste',
+'troste/trøste',
+'fpl/føl',
+'fsr/før',
+'elst/elsk',
+'Jnd/Ind',
+'Jf/If',
+'ZE/Æ',
+'Sial/Siæl',
+'Dine/Øine',
+'Onske/Ønske',
+'Drsm/Drøm',
+'Boge/Bøge',
+'Bon /Bøn ',
+'Bonner/Bønner',
+'Bonder/Bønder',
+'Sporg/Spørg',
+'Folg/Følg',
+'Fodsel/Fødsel',
+'Boek/Bæk',
+'sporg/spørg',
+'labe/læbe',
+'overste/øverste',
+'storst/størst',
+'strom/strøm',
+' hore / høre ',
+'fkab/skab',
+'beromte/berømte',
+' soge / søge ',
+' soger / søger ',
+'cr/er',
+'nc/ne',
+'„/,,',
+'"/\'\''
+];
 
+@regexps = @rules.map { |rule| 
+    m = /(.*)\/(.*)/.match(rule)
+    [Regexp.new(m[1]), m[2]];
+}
+
+if ARGV.length != 1
+  puts "Missing filename (try --help)"
+  exit 0
+end
+
+text = File.open(ARGV[0]).read
+text = text.gsub(/glode/,"gløde")
+@regexps.each { |r| 
+    text = text.gsub(r[0],r[1])
+}
+puts text
 
