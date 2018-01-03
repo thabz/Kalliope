@@ -113,7 +113,6 @@
 ' soge / søge ',
 ' soger / søger ',
 'cr/er',
-'kjon/kjøn',
 'Soster/Søster',
 'Osten/Østen',
 'Kjon/Kjøn',
@@ -140,6 +139,8 @@
 'lonlig/lønlig',
 'svomme/svømme',
 'kjsn/kjøn',
+'kjvn/kjøn',
+'kjon/kjøn',
 'strs/strø',
 'drsm/drøm',
 'lose/løse',
@@ -152,6 +153,10 @@
 ' ban / han ',
 'morke/mørke',
 'Morke/Mørke',
+'Nod/Nød',
+'floi/fløi',
+'Torst/Tørst',
+'Hor /Hør ',
 ];
 
 @regexps = @rules.map { |rule| 
