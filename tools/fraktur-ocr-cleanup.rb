@@ -104,8 +104,10 @@
 'labe/læbe',
 'overste/øverste',
 'storst/størst',
+'Strom/Strøm',
 'strom/strøm',
-' hore / høre ',
+'hore/høre',
+'hort/hørt',
 'fkab/skab',
 'beromte/berømte',
 ' soge / søge ',
@@ -145,6 +147,9 @@
 'Wg/Æg',
 'bun /bun ',
 'eek/æk',
+' ban / han ',
+'morke/mørke',
+'Morke/Mørke',
 ];
 
 @regexps = @rules.map { |rule| 
