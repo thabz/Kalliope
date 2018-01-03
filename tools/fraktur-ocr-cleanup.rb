@@ -133,6 +133,18 @@
 'Nost/Røst',
 'Trost/Trøst',
 'Die/Øie',
+'Dg/Og',
+'lonlig/lønlig',
+'svomme/svømme',
+'kjsn/kjøn',
+'strs/strø',
+'drsm/drøm',
+'lose/løse',
+'jeel/jæl',
+'Mre/Ære',
+'Wg/Æg',
+'bun /bun ',
+'eek/æk',
 ];
 
 @regexps = @rules.map { |rule| 
