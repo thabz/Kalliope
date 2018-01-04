@@ -15,6 +15,7 @@ end
 @poetid = 'POETID'
 @date = Date.today.strftime("%Y%m%d")
 
+@poemid = nil
 @firstline = nil
 @title = nil, @toctitle = nil, @linktitle = nil, @indextitle = nil
 @subtitles = []
@@ -28,7 +29,8 @@ def printPoem()
   if @source and not @page 
       abort "FEJL: Digtet »#{@title}« mangler sideangivelse"
   end
-  puts "<#{@type} id=\"#{@poetid}#{@date}#{'%02d' % @poemcount}\">"
+  poemid = @poemid || "#{@poetid}#{@date}#{'%02d' % @poemcount}"
+  puts "<#{@type} id=\"#{poemid}\">"
   puts "<head>"
   puts "    <title>#{@title}</title>"
   if @toctitle
@@ -54,7 +56,7 @@ def printPoem()
     pp = @page.include?('-') ? 'pp' : 'p';
     puts "    <notes>"
     @notes.each { |noteline|
-    puts "        <note>#{noteline}</note>"
+      puts "        <note>#{noteline}</note>"
     }
     puts "        <note>#{@source.gsub(/[\. ]*$/,'')}, #{pp}. #{@page}.</note>"
     puts "    </notes>"
@@ -70,6 +72,7 @@ def printPoem()
   puts "</body>"
   puts "</#{@type}>"
   puts ""
+  @poemid = nil
   @firstline = nil
   @title = nil 
   @toctitle = nil
@@ -169,6 +172,8 @@ File.readlines(ARGV[0]).each do |line|
       @firstline = line[2..-1].strip
     elsif line.start_with?("U:")
       @subtitles.push(line[2..-1].strip)
+    elsif line.start_with?("ID:")
+      @poemid = line[3..-1].strip
     elsif line.start_with?("N:")
       @keywords = line[2..-1].strip
     elsif line.start_with?("TOCTITEL:")
