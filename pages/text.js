@@ -126,19 +126,18 @@ class TextHeading extends React.Component<TextHeadingProps> {
   }
 }
 
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    highlight: string,
-    poet: Poet,
-    work: Work,
-    text: Text,
-    section_titles: ?Array<string>,
-    prev?: PrevNextText,
-    next?: PrevNextText,
-    error: ?Error,
-  };
-
+type TextComponentProps = {
+  lang: Lang,
+  highlight: string,
+  poet: Poet,
+  work: Work,
+  text: Text,
+  section_titles: ?Array<string>,
+  prev?: PrevNextText,
+  next?: PrevNextText,
+  error: ?Error,
+};
+export default class extends React.Component<TextComponentProps> {
   static async getInitialProps({
     query: { lang, textId, highlight },
   }: {

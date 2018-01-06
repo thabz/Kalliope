@@ -9,15 +9,14 @@ const defaultDescription =
 const defaultOGURL = urlPrefix;
 const defaultOGImage = `${urlPrefix}/static/touch-icon.png`;
 
-export default class Head extends React.Component {
-  props: {
-    headTitle?: string,
-    ogTitle?: string,
-    description?: ?string,
-    url?: string,
-    ogImage?: ?string,
-  };
-
+type HeadProps = {
+  headTitle?: string,
+  ogTitle?: string,
+  description?: ?string,
+  url?: string,
+  ogImage?: ?string,
+};
+export default class Head extends React.Component<HeadProps> {
   render() {
     const { ogTitle, headTitle, description, url, ogImage } = this.props;
 
@@ -39,9 +38,7 @@ export default class Head extends React.Component {
     return (
       <NextHead>
         <meta charSet="UTF-8" />
-        <title>
-          {headTitle || ogTitle || ''}
-        </title>
+        <title>{headTitle || ogTitle || ''}</title>
         <meta name="description" content={description || defaultDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
