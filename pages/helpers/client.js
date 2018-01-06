@@ -111,6 +111,7 @@ type FetchTextResult = Promise<{
   prev: PrevNextText,
   next: PrevNextText,
   text: Text,
+  section_titles: Array<string>,
   error: ?Error,
 }>;
 export const text = async (textId: string): FetchTextResult => {
