@@ -11,11 +11,10 @@ const links = [
   { href: '/en/poets/name', label: 'Engelsk' },
 ];
 
-export default class LangSelect extends React.Component {
-  props: {
-    lang: Lang,
-  };
-
+type LangSelectProps = {
+  lang: Lang,
+};
+export default class LangSelect extends React.Component<LangSelectProps> {
   render() {
     const { lang } = this.props;
     return <div style={{ paddingBottom: '70px' }} />;
