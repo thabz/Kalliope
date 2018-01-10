@@ -106,6 +106,7 @@
 'lobe/løbe',
 'tydste/tydske',
 'rort/rørt',
+'rore/røre',
 'rovet/røvet',
 'prove/prøve',
 'Prove/Prøve',
@@ -116,6 +117,7 @@
 'bonlig/bønlig',
 'danste/danske',
 'Jgjen/Igjen',
+'Jt/It',
 'forte /førte ',
 ' vard/ værd',
 'voerd/værd',
@@ -270,6 +272,7 @@
 'glode/gløde',
 'Glod/Glød',
 'Stov/Støv',
+'Stsv/Støv',
 'Gloede/Glæde',
 'Hander/Hænder',
 ];
