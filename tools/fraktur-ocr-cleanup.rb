@@ -137,6 +137,7 @@
 'Skrak/Skræk',
 'Traer/Træer',
 'Trerer/Træer',
+'Laber/Læber',
 'Langse/Længse',
 'Langsl/Længsl',
 ' langes/ længes',
