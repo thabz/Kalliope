@@ -44,6 +44,8 @@
 ' sor / for ',
 ' soer/ foer',
 'hsie/høie',
+'hole/høie',
+'Krast/Kraft',
 'forst /først ',
 'forste /første ',
 'tankte/tænkte',
@@ -222,7 +224,7 @@
 'Nod/Nød',
 'floi/fløi',
 'Torst/Tørst',
-'Hor /Hør ',
+'Hor(\W)/Hør\1',
 'Aftenrode/Aftenrøde',
 'Morgenrode/Morgenrøde',
 ' rode / røde ',
@@ -276,6 +278,7 @@
 'Stsv/Støv',
 'Gloede/Glæde',
 'Hander/Hænder',
+'Mo(\W)/Mø\1'
 ];
 
 @regexps = @rules.map { |rule| 
