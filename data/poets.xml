@@ -1234,9 +1234,11 @@
   <period>
     <born>
       <date>1634-01-06</date>
+      <place>Bergen</place>
     </born>
     <dead>
       <date>1716-02-19</date>
+      <place>Bergen</place>
     </dead>
   </period>
   <works>1678,1685</works>
@@ -2175,9 +2177,11 @@
   <period>
     <born>
       <date>1760-01-07</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1796-11-26</date>
+      <place>København</place>
     </dead>
   </period>
   <works>andre</works>
@@ -4024,6 +4028,24 @@
     </dead>
   </period>
   <works>andre,1941,1942,1944</works>
+</person>
+
+<person id="rabelais" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>François</firstname>
+    <lastname>Rabelais</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1483 ca.</date>
+      <place>Chinon</place>
+    </born>
+    <dead>
+      <date>1553-04-09</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <works></works>
 </person>
 
 <person id="villon" country="fr" lang="fr" type="poet">
@@ -7169,6 +7191,24 @@
     </born>
     <dead>
       <date>1890-12-21</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
+<person id="oersted" country="dk" lang="da" type="person">
+  <name>
+    <firstname>H.C.</firstname>
+    <lastname>Ørsted</lastname>
+    <fullname>Hans Christian Ørsted</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1777-08-14</date>
+      <place>Rudkøbing</place>
+    </born>
+    <dead>
+      <date>1851-03-09</date>
       <place>København</place>
     </dead>
   </period>

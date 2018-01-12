@@ -8,10 +8,10 @@ import CommonData from '../pages/helpers/commondata.js';
 
 const transitionDuration = '0.2s';
 
-class LoupeSVG extends React.Component {
-  props: {
-    color: string,
-  };
+type LoupeSVGProps = {
+  color: string,
+};
+class LoupeSVG extends React.Component<LoupeSVGProps> {
   render() {
     const { color } = this.props;
     const style = {
@@ -45,10 +45,10 @@ class LoupeSVG extends React.Component {
   }
 }
 
-class CrossSVG extends React.Component {
-  props: {
-    color: string,
-  };
+type CrossSVGProps = {
+  color: string,
+};
+class CrossSVG extends React.Component<CrossSVGProps> {
   render() {
     const { color } = this.props;
     const style = {
@@ -80,23 +80,25 @@ class CrossSVG extends React.Component {
     );
   }
 }
-
-export default class Tabs extends React.Component {
-  props: {
-    items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
-    poet?: Poet,
-    country: Country,
-    lang: Lang,
-    query?: ?string,
-    selected: string,
-  };
+type TabsProps = {
+  items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
+  poet?: Poet,
+  country: Country,
+  lang: Lang,
+  query?: ?string,
+  selected: string,
+};
+type TabsState = {
+  showSearchField: boolean,
+};
+export default class Tabs extends React.Component<TabsProps, TabsState> {
   searchField: HTMLInputElement;
   onLoupeClick: (e: Event) => void;
   onCrossClick: (e: Event) => void;
   onSubmit: (e: Event) => void;
   onKeyDown: (e: KeyboardEvent) => void;
 
-  constructor(props: any) {
+  constructor(props: TabsProps) {
     super(props);
     const { query } = props;
     this.state = { showSearchField: query != null && query.length > 0 };
@@ -431,14 +433,13 @@ export default class Tabs extends React.Component {
   }
 }
 
-export class PoetTabs extends React.Component {
-  props: {
-    poet: Poet,
-    lang: Lang,
-    query?: ?string,
-    selected: 'works' | 'titles' | 'first' | 'bio' | 'bibliography' | 'search',
-  };
-
+type PoetTabsProps = {
+  poet: Poet,
+  lang: Lang,
+  query?: ?string,
+  selected: 'works' | 'titles' | 'first' | 'bio' | 'bibliography' | 'search',
+};
+export class PoetTabs extends React.Component<PoetTabsProps> {
   render() {
     const { lang, poet, selected, query } = this.props;
     const tabs: Array<{
@@ -491,19 +492,13 @@ export class PoetTabs extends React.Component {
   }
 }
 
-export class KalliopeTabs extends React.Component {
-  props: {
-    lang: Lang,
-    country?: Country,
-    query?: ?string,
-    selected:
-      | 'index'
-      | 'poets'
-      | 'keywords'
-      | 'dictionary'
-      | 'about'
-      | 'search',
-  };
+type KalliopeTabsProps = {
+  lang: Lang,
+  country?: Country,
+  query?: ?string,
+  selected: 'index' | 'poets' | 'keywords' | 'dictionary' | 'about' | 'search',
+};
+export class KalliopeTabs extends React.Component<KalliopeTabsProps> {
   render() {
     const { lang, selected, country, query } = this.props;
     const tabs = [
