@@ -3647,6 +3647,22 @@
   </period>
 </person>
 
+<person id="nansen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Peter</firstname>
+    <lastname>Nansen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1861-01-20</date>
+    </born>
+    <dead>
+      <date>1918-07-31</date>
+    </dead>
+  </period>
+</person>
+
+
 <person id="moth" country="dk" lang="da" type="poet">
   <name>
     <firstname>Fr.</firstname>
@@ -3665,19 +3681,23 @@
   <works>andre</works>
 </person>
 
-<person id="nansen" country="dk" lang="da" type="poet">
+<person id="skjoldborg" country="dk" lang="da" type="poet">
   <name>
-    <firstname>Peter</firstname>
-    <lastname>Nansen</lastname>
+    <firstname>Johan</firstname>
+    <lastname>Skjoldborg</lastname>
+    <fullname>Johan Martinus Nielsen Skjoldborg</fullname>
   </name>
   <period>
     <born>
-      <date>1861-01-20</date>
+      <date>1861-04-27</date>
+      <place>Øsløs</place>
     </born>
     <dead>
-      <date>1918-07-31</date>
+      <date>1936-02-22</date>
+      <place>Løgstør</place>
     </dead>
   </period>
+  <works>1915</works>
 </person>
 
 <person id="stuckenberg" country="dk" lang="da" type="poet">
