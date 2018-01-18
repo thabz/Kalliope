@@ -5,6 +5,7 @@
 'hoi/høi',
 'folg/følg',
 'Skjon/Skjøn',
+'stjon/skjøn',
 'ce/æ',
 'Sæne/Scene',
 'Bolg/Bølg',
