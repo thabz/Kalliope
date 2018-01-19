@@ -131,7 +131,7 @@ export default class TextContent extends React.Component {
   handle_node(node: any) {
     switch (node.nodeName) {
       case 'br':
-        return <br />;
+        return <br key={this.keySeq++} />;
       case '#text':
         return replaceHyphens(node.textContent);
       case '#comment':
@@ -242,7 +242,7 @@ export default class TextContent extends React.Component {
         );
       case 'column':
         return (
-          <div style={{ textAlign: 'left' }}>
+          <div style={{ textAlign: 'left' }} key={this.keySeq++}>
             {this.handle_nodes(node.childNodes)}
           </div>
         );
@@ -251,7 +251,7 @@ export default class TextContent extends React.Component {
           display: 'flex',
         };
         return (
-          <div className="text-two-columns" style={styles}>
+          <div className="text-two-columns" style={styles} key={this.keySeq++}>
             {this.handle_nodes(node.childNodes)}
           </div>
         );
