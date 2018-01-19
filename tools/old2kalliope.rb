@@ -15,19 +15,22 @@ end
 @poetid = 'POETID'
 @date = Date.today.strftime("%Y%m%d")
 
+@poemid = nil
 @firstline = nil
 @title = nil, @toctitle = nil, @linktitle = nil, @indextitle = nil
-@subtitle = nil
+@subtitles = []
 @body = []
+@notes = []
 @keywords = nil;
 @page = nil;
 @type = 'poem'
 
 def printPoem()
-  if @source and not @page
+  if @source and not @page 
       abort "FEJL: Digtet »#{@title}« mangler sideangivelse"
   end
-  puts "<#{@type} id=\"#{@poetid}#{@date}#{'%02d' % @poemcount}\">"
+  poemid = @poemid || "#{@poetid}#{@date}#{'%02d' % @poemcount}"
+  puts "<#{@type} id=\"#{poemid}\">"
   puts "<head>"
   puts "    <title>#{@title}</title>"
   if @toctitle
@@ -39,13 +42,22 @@ def printPoem()
   if @linktitle
     puts "    <linktitle>#{@linktitle}</linktitle>"
   end
-  if @subtitle
-    puts "    <subtitle>#{@subtitle}</subtitle>"
+  if @subtitles.length == 1
+    puts "    <subtitle>#{@subtitles[0]}</subtitle>"
+  elsif @subtitles.length > 1
+    puts "    <subtitle>"
+    @subtitles.each { |line|
+        puts "        <line>#{line}</line>"
+    }
+    puts "    </subtitle>"
   end
   puts "    <firstline>#{@firstline}</firstline>"
-  if @source && @page
+  if (@source && @page) || @notes.length > 0
     pp = @page.include?('-') ? 'pp' : 'p';
     puts "    <notes>"
+    @notes.each { |noteline|
+      puts "        <note>#{noteline}</note>"
+    }
     puts "        <note>#{@source.gsub(/[\. ]*$/,'')}, #{pp}. #{@page}.</note>"
     puts "    </notes>"
   end
@@ -55,14 +67,20 @@ def printPoem()
   puts "    <quality>korrektur1,kilde,side</quality>"
   puts "</head>"
   puts "<body>"
-  puts @body.join("\n").strip
+  first_non_empty_line = @body.find_index { |line| line =~ /[^\s]/ }
+  puts @body[first_non_empty_line,100000].join("\n").rstrip
   puts "</body>"
   puts "</#{@type}>"
   puts ""
+  @poemid = nil
   @firstline = nil
-  @title = nil, @toctitle = nil, @linktitle = nil, @indextitle = nil
-  @subtitle = nil
+  @title = nil 
+  @toctitle = nil
+  @linktitle = nil
+  @indextitle = nil
+  @subtitles = []
   @body = []
+  @notes = []
   @keywords = nil
   @page = nil
   @type = 'poem'
@@ -85,6 +103,37 @@ def printEndSection()
 end
 
 File.readlines(ARGV[0]).each do |line|
+  line_before = line
+  while line =~ /^\t/
+      line = line.gsub(/^\t/,'    ')
+  end
+  line = line.rstrip.gsub(/_(.+?)_/,'<i>\1</i>')
+  if (line =~ /_/)
+      STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal _"
+  end
+  line = line.rstrip.gsub(/=(.+?)=/,'<w>\1</w>')
+  if (line =~ /=[^"]/)
+      STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal ="
+  end
+  # Håndter {..}
+  m = /{(.*?):(.*)}/.match(line)
+  if (!m.nil?)
+      l = m[2]
+      if m[1].include? "i"
+          l = "<i>#{l}</i>"
+      end
+      if m[1].include? "c"
+          l = "<center>#{l}</center>"
+      end
+      if m[1].include? "r"
+          l = "<right>#{l}</right>"
+      end
+      if m[1].include? "s"
+          l = "<small>#{l}</small>"
+      end
+      l = "<nonum>#{l}</nonum>"
+      line = l
+  end
   if @state == 'NONE' and line =~ /^KILDE:/
       @source = line[6..-1].strip
   end
@@ -110,7 +159,9 @@ File.readlines(ARGV[0]).each do |line|
       @state = 'NONE'
   end
   if line.start_with?('SLUTSEKTION')
-      printPoem();
+      if @state != 'NONE'
+          printPoem();
+      end
       printEndSection();
       @state = 'NONE'
   end
@@ -120,7 +171,9 @@ File.readlines(ARGV[0]).each do |line|
     elsif line.start_with?("F:")
       @firstline = line[2..-1].strip
     elsif line.start_with?("U:")
-      @subtitle = line[2..-1].strip
+      @subtitles.push(line[2..-1].strip)
+    elsif line.start_with?("ID:")
+      @poemid = line[3..-1].strip
     elsif line.start_with?("N:")
       @keywords = line[2..-1].strip
     elsif line.start_with?("TOCTITEL:")
@@ -129,24 +182,23 @@ File.readlines(ARGV[0]).each do |line|
       @indextitle = line[11..-1].strip
     elsif line.start_with?("LINKTITEL:")
       @linktitle = line[10..-1].strip
+    elsif line.start_with?("NOTE:")
+      @notes.push(line[5..-1].strip)
     elsif line.start_with?("SIDE:")
       @page = line[5..-1].strip
     elsif line.start_with?("TYPE:")
       @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
-    elsif line =~ /^.:/
+    elsif line =~ /^[A-Z]*:/
       abort "Unknown header-line: #{line}"
     else
       @state = 'INBODY'
     end
   end
   if @state == 'INBODY'
-      line_before = line
-      line = line.rstrip.gsub(/_(.+?)_/,'<i>\1</i>')
-      if (line =~ /_/)
-          abort "FEJL: Linjen »#{line_before.rstrip}« har ulige antal _"
-      end
-    @body.push(line)
+      @body.push(line)
   end
 end
 
-printPoem()
+if @state != 'NONE'
+    printPoem()
+end
