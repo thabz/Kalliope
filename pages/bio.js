@@ -22,6 +22,7 @@ import ErrorPage from './error.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
+import _ from '../pages/helpers/translations.js';
 
 import type {
   Lang,
@@ -290,11 +291,15 @@ export default class extends React.Component {
 
     const title = <PoetName poet={poet} includePeriod />;
     const headTitle =
-      'Biografi  - ' + poetNameString(poet, false, false) + ' - Kalliope';
+      _('Biografi', lang) +
+      ' - ' +
+      poetNameString(poet, false, false) +
+      ' - Kalliope';
 
     const ogDescription = OpenGraph.trimmedDescription(content_html);
     const ogImage = OpenGraph.poetImage(poet);
-    const ogTitle = poetNameString(poet, false, false) + ' biografi';
+    const ogTitle =
+      poetNameString(poet, false, false) + ' ' + _('biografi', lang);
 
     return (
       <div>
@@ -305,8 +310,8 @@ export default class extends React.Component {
           description={ogDescription}
         />
         <Main>
-          <Nav lang={lang} poet={poet} title="Biografi" />
-          <Heading title={title} subtitle="Værker" />
+          <Nav lang={lang} poet={poet} title={_('Biografi', lang)} />
+          <Heading title={title} subtitle={_('Biografi', lang)} />
           <PoetTabs lang={lang} poet={poet} selected="bio" />
           <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
             <div style={{ lineHeight: '1.6' }}>

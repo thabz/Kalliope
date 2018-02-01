@@ -8,6 +8,7 @@ import WorkName from './workname';
 import TextName from './textname';
 import TextContent from './textcontent.js';
 import CommonData from '../pages/helpers/commondata.js';
+import _ from '../pages/helpers/translations.js';
 import * as Strings from '../pages/helpers/strings.js';
 import * as Links from './links.js';
 import type {
@@ -122,9 +123,9 @@ export default class Nav extends React.Component {
             return c.code === poet.country;
           })[0];
           poetsLinkText =
-            Strings.toTitleCase(cn.adjective[lang]) + ' ' + ' digtere';
+            Strings.toTitleCase(cn.adjective[lang]) + ' ' + _('digtere', lang);
         } else {
-          poetsLinkText = 'Digtere';
+          poetsLinkText = _('Digtere', lang);
         }
         poetsURL = (
           <Link prefetch route={Links.poetsURL(lang, 'name', poet.country)}>

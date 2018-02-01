@@ -14,6 +14,7 @@ import SectionedList from '../components/sectionedlist.js';
 import * as Sorting from './helpers/sorting.js';
 import type { Lang, Keyword, SectionForRendering } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
+import _ from '../pages/helpers/translations.js';
 
 const groupsByLetter = (keywords: Array<Keyword>) => {
   let groups = new Map();
@@ -67,10 +68,10 @@ export default class extends React.Component {
 
     return (
       <div>
-        <Head headTitle="Nøgleord - Kalliope" />
+        <Head headTitle={_('Nøgleord', lang) + ' - Kalliope'} />
         <Main>
-          <Nav lang={lang} title="Nøgleord" />
-          <Heading title="Nøgleord" />
+          <Nav lang={lang} title={_('Nøgleord', lang)} />
+          <Heading title={_('Nøgleord', lang)} />
           <KalliopeTabs lang={lang} selected="keywords" />
           {renderedGroups}
           <LangSelect lang={lang} />
