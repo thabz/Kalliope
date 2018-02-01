@@ -193,7 +193,9 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
         );
         if (countryData.length > 0) {
           const adjective = countryData[0].adjective[lang];
-          placeholder = `Søg i Kalliopes ${adjective} samling`;
+          placeholder = _('Søg i Kalliopes {adjective} samling', lang, {
+            adjective,
+          });
         } else {
           placeholder = _('Søg i Kalliope', lang);
         }
