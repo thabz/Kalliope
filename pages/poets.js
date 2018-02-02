@@ -1,6 +1,5 @@
 // @flow
 
-import 'isomorphic-fetch';
 import React from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
@@ -15,6 +14,8 @@ import SectionedList from '../components/sectionedlist.js';
 import * as Sorting from './helpers/sorting.js';
 import * as Strings from './helpers/strings.js';
 import CommonData from '../pages/helpers/commondata.js';
+import ErrorPage from './error.js';
+import * as Client from './helpers/client.js';
 import { createURL } from './helpers/client.js';
 import type {
   Lang,
@@ -23,6 +24,7 @@ import type {
   Poet,
   SortReturn,
   SectionForRendering,
+  Error,
 } from './helpers/types.js';
 
 type GroupBy = 'name' | 'year';
@@ -115,17 +117,11 @@ class CountryPicker extends React.Component {
       const url = Links.poetsURL(lang, selectedGroupBy, country.code);
       const adj = country.adjective[lang] + ' ';
       if (country.code === selectedCountry) {
-        return (
-          <b key={country.code}>
-            {adj}
-          </b>
-        );
+        return <b key={country.code}>{adj}</b>;
       } else {
         return (
           <Link route={url} key={country.code}>
-            <a>
-              {adj}
-            </a>
+            <a>{adj}</a>
           </Link>
         );
       }
@@ -133,9 +129,7 @@ class CountryPicker extends React.Component {
     const joinedItems = joinWithCommaAndOr(items, 'eller');
     return (
       <div style={style}>
-        <div>
-          Skift mellem {joinedItems} digtere.
-        </div>
+        <div>Skift mellem {joinedItems} digtere.</div>
       </div>
     );
   }
@@ -147,10 +141,8 @@ export default class extends React.Component {
   }: {
     query: { lang: Lang, country: Country, groupBy: GroupBy },
   }) {
-    const url = `/static/api/poets-${country}.json`;
-    const res = await fetch(createURL(url));
-    const poets: Array<Poet> = await res.json();
-    return { lang, country, groupBy, poets };
+    const json = await Client.poets(country);
+    return { lang, country, groupBy, poets: json.poets, error: json.error };
   }
 
   props: {
@@ -158,10 +150,15 @@ export default class extends React.Component {
     country: Country,
     poets: Array<Poet>,
     groupBy: GroupBy,
+    error: ?Error,
   };
 
   render() {
-    const { lang, country, poets, groupBy } = this.props;
+    const { lang, country, poets, groupBy, error } = this.props;
+
+    if (error) {
+      return <ErrorPage error={error} lang={lang} message="Ukendt land" />;
+    }
 
     const tabs = [
       {
