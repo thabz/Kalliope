@@ -46,6 +46,14 @@ export const poet = async (poetId: ?PoetId): Promise<?Poet> => {
   }
 };
 
+type FetchPoetsResult = Promise<{
+  poets: Array<Poet>,
+  error: ?Error,
+}>;
+export const poets = async (country: Country): FetchPoetsResult => {
+  return fetchJSON(`/static/api/poets-${country}.json`);
+};
+
 export type FetchWorkResult = {
   poet: Poet,
   work: Work,
