@@ -54,6 +54,14 @@ export const poets = async (country: Country): FetchPoetsResult => {
   return fetchJSON(`/static/api/poets-${country}.json`);
 };
 
+type FetchDictItemResult = Promise<{
+  item: DictItem,
+  error: ?Error,
+}>;
+export const dictItem = async (dictItemId: string): FetchDictItemResult => {
+  return fetchJSON(`/static/api/dict/${dictItemId}.json`);
+};
+
 export type FetchWorkResult = {
   poet: Poet,
   work: Work,
