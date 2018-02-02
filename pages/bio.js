@@ -39,13 +39,13 @@ const dateAndPlace = (
   datePlace: ?DateWithPlace,
   lang: Lang,
   age?: ?number
-): Array<?React$Element<*>> => {
+): Array<?React$Element<*> | string> | string => {
   if (datePlace == null) {
-    return 'Ukendt år';
+    return _('Ukendt år', lang);
   }
   let result = [];
   if (datePlace.date === '?') {
-    result.push('Ukendt år');
+    result.push(_('Ukendt år', lang));
   } else {
     result.push(
       <FormattedDate key={datePlace.date} date={datePlace.date} lang={lang} />
@@ -126,7 +126,7 @@ class PersonMeta extends React.Component {
         if (deadBeforeBirthday) {
           yearDiff -= 1;
         }
-        let ca = '';
+        let ca: string = '';
         if (
           born.prefix != null ||
           dead.prefix != null ||
@@ -135,9 +135,12 @@ class PersonMeta extends React.Component {
           born.day === 0 ||
           dead.day === 0
         ) {
-          ca = 'ca. ';
+          ca = _('ca.', lang) + ' ';
         }
-        age = `(blev ${ca}${yearDiff} år)`;
+        age = _(`(blev {ca}{yearDiff} år)`, lang, {
+          ca,
+          yearDiff: yearDiff + '',
+        });
       }
     }
 
@@ -150,12 +153,18 @@ class PersonMeta extends React.Component {
       poet.name.christened == null ? poet.name.realname : poet.name.christened;
     return (
       <div>
-        <PersonMetaLine value={name} label="Navn" />
-        <PersonMetaLine value={poet.name.fullname} label="Fulde navn" />
-        <PersonMetaLine value={christened} label="Døbt" />
-        <PersonMetaLine value={poet.name.pseudonym} label="Pseudonym" />
-        <PersonMetaLine value={born} label="Født" />
-        <PersonMetaLine value={dead} label="Død" />
+        <PersonMetaLine value={name} label={_('Navn', lang)} />
+        <PersonMetaLine
+          value={poet.name.fullname}
+          label={_('Fulde navn', lang)}
+        />
+        <PersonMetaLine value={christened} label={_('Døbt', lang)} />
+        <PersonMetaLine
+          value={poet.name.pseudonym}
+          label={_('Pseudonym', lang)}
+        />
+        <PersonMetaLine value={born} label={_('Født', lang)} />
+        <PersonMetaLine value={dead} label={_('Død', lang)} />
       </div>
     );
   }
