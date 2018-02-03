@@ -16,6 +16,7 @@ import Picture from '../components/picture.js';
 import FormattedDate from '../components/formatteddate.js';
 import type { Lang, NewsItem, TimelineItem } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
+import _ from '../pages/helpers/translations.js';
 import 'isomorphic-fetch';
 
 class TodaysEvents extends React.Component {
@@ -241,7 +242,7 @@ export default class extends React.Component {
           <KalliopeTabs lang={lang} selected="index" />
           <SidebarSplit sidebar={sidebar}>
             <div>
-              <SubHeading>Nyheder</SubHeading>
+              <SubHeading>{_('Nyheder', lang)}</SubHeading>
               {renderedNews}
             </div>
           </SidebarSplit>
