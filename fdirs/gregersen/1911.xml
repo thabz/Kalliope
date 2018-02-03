@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1911" author="gregersen" status="incomplete" type="poetry">
+<kalliopework id="1911" author="gregersen" status="complete" type="poetry">
 <workhead>
    <title>Vintergæk</title>
    <year>1911</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+   <notes>
+        <note>Forlægget er Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911.</note>
+   </notes>
+   <pictures>
+       <picture type="frontpage" src="1911-p2.jpg">Forside til <i>Vintergæk</i> (1911).</picture>
+       <picture type="titlepage" src="1911-p1.jpg">Titelbladet til <i>Vintergæk</i> (1911) lyder ,,Vilhelm Gregersen / Vintergæk / En Samling Digte // København / Nationale Forfatteres Forlag / 1911''.</picture>
+   </pictures>
+   <quality>korrektur1,kilde,side</quality>
 </workhead>
 <workbody>
 
@@ -21,7 +27,7 @@
     <title>Grønne Grene</title>
     <firstline>Grønne Grene har jeg kær!</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 9.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 9.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -58,7 +64,7 @@ for enhver.
     <subtitle>(Musik af J. P. E. Hartmann.)</subtitle>
     <firstline>Verden ligger tavs og træt</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 10.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 10.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -86,7 +92,7 @@ kysser jer af Søvnens Skød.
     <title>Der gaar en Sti i Skoven ind</title>
     <firstline>Der gaar en Sti i Skoven ind</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 11.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 11.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -118,7 +124,7 @@ af Toner — barneblide.
     <title>Vinterblomme</title>
     <firstline>Gyldenhoved, blød og rund</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 12.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 12.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -157,7 +163,7 @@ hold nu, hvad du loved.
     <title>Tøvejr</title>
     <firstline>Det skyller og sprutter</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 13-14.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 13-14.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -207,7 +213,7 @@ har vi Vaar.
     <firstline>Vintergæk, Vintergæk</firstline>
     <notes>
         <note type="credits">Bidrag fra Ejnar Pedersen.</note>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 15.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 15.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -240,7 +246,7 @@ dybt i mit Bryst.
     <title>Den første Lærkesang</title>
     <firstline>Tys, tys!</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 16-17.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 16-17.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -286,7 +292,7 @@ op i det sollyse Blaa!
     <title>Tidligt Foraar i min Have</title>
     <firstline>En Tacet paa en lun og solfyldt Plet</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 18-19.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 18-19.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -349,7 +355,7 @@ ak, hvor gerne jeg dog vilde,
     <firstline>Du blaa Viol, du bly Viol</firstline>
     <notes>
         <note type="credits">Bidrag fra Sven Sørensen.</note>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 20.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 20.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -375,7 +381,7 @@ du Vaarens Morgengave.
     <title>Sorte Stær paa Grene</title>
     <firstline>Sorte Stær paa Grene</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 21-22.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 21-22.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -416,7 +422,7 @@ og i Haabet synge Vaaren ind!''
     <firstline>Anemone, skær og hvid</firstline>
     <notes>
         <note type="credits">Bidrag fra Ejnar Pedersen.</note>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 23.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 23.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -449,7 +455,7 @@ Sneblomst fin paa Sneens Grav.
     <title>Smaat, smaat gik det mod Vaar</title>
     <firstline>Smaat, smaat</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 24-24.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 24-24.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -497,7 +503,7 @@ frejdig med Lærken i Sky!
     <title>Svalekvidder</title>
     <firstline>Du flinke Sejler højt i det Blaa</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 26.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 26.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -529,7 +535,7 @@ paa Hjemmets hellige Arnested.
     <title>Jeg holder af dig, du stolte Gran</title>
     <firstline>Jeg holder af dig, du stolte Gran</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 27.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 27.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -565,7 +571,7 @@ men sige dig Tak til det sidste.''
     <title>Foraarstanker, Foraarsblomster</title>
     <firstline>Foraarstanker, Foraarsblomster</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 28.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 28.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -592,7 +598,7 @@ som vi aldrig mer skal miste.
     <title>Af Knopper som Silke</title>
     <firstline>Af Knopper som Silke</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 29.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 29.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -631,7 +637,7 @@ med jublende Mod!''
     <title>Nu knoppes alt</title>
     <firstline>Nu knoppes alt, nu grønnes alt</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 30-31.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 30-31.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -675,7 +681,7 @@ og holder Ord i Aar.
     <title>Du friske Skov</title>
     <firstline>Du friske Skov, som nys sprang ud</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 32.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 32.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -708,7 +714,7 @@ og Solens gyldne Gave.
     <title>Dejlige Bøgeskov</title>
     <firstline>Dejlige Bøgeskov, nys sprungen ud</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 33.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 33.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -740,7 +746,7 @@ som dit, efter Vinterens Møje. —
     <title>Nu ligger Engen vaad af Dug</title>
     <firstline>Nu ligger Engen vaad af Dug</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 34.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 34.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -772,7 +778,7 @@ med Hilsen fra derhjemme.
     <title>Maanen lister paa Himlen frem</title>
     <firstline>Maanen lister paa Himlen frem</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 35-36.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 35-36.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -814,7 +820,7 @@ hemmelig Kærlighed.
     <title>Remonterende Viol</title>
     <firstline>Jeg har dig kær, du lille blaa Viol</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 37.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 37.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -851,7 +857,7 @@ gør Høst til Vaar og aldrig skal forsvinde.
     <title>Efteraar</title>
     <firstline>Skyerne sejler i store Flager — øster paa</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 38.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 38.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -885,7 +891,7 @@ Skærsommertid? —
     <title>Vinteraften</title>
     <firstline>Sne, kun Sne, saa langt mit Øje naar</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 39-40.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 39-40.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -932,7 +938,7 @@ hvil da først bag Englens hvide Vinger.
     <title>Hver en Blomst af Livet mæt</title>
     <firstline>Hver en Blomst af Livet mæt</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 41.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 41.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -969,7 +975,7 @@ at din Naade gaar for Ret!
     <subtitle>(Musik af Otto Malling og E. Hechmann)</subtitle>
     <firstline>Heden, den brune Hede</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 42.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 42.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -996,7 +1002,7 @@ en Verden af Lærkesang.
     <title>Fra Vestjylland</title>
     <firstline>Ensom ovre paa Brinken</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 43-44.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 43-44.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1038,7 +1044,7 @@ som rødmer i Solens Flamme.''
     <title>Ved Stavning Fjord</title>
     <firstline>Dér ligger du for mig stor og bred</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 45-46.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 45-46.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1077,7 +1083,7 @@ Dejlige, jublende Sang uden Ord!
     <title>Vintergrønt</title>
     <firstline>Du lille Busk af Vintergrønt!</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 47.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 47.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1110,7 +1116,7 @@ naar alt er tomt hernede.
     <title>Vaarsang ved Vintertid</title>
     <firstline>Naar over Præstegaardens lave Tage</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 48-49.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 48-49.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1157,7 +1163,7 @@ saa gaar jeg did, hvor altid det er Vaar.
     <title>Mit Stærehus</title>
     <firstline>Jeg havde lavet et Stærehus</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 50-52.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 50-52.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1238,7 +1244,7 @@ for saa mange jublende Tunger.
     <title>Bygges skal der</title>
     <firstline>Bygges skal der, bygges overalt</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 53-54.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 53-54.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1286,7 +1292,7 @@ og den Slægt, som arver dig derinde.
     <subtitle>comp. af J. D. Bondesen.</subtitle>
     <firstline>Hvor jeg elsker dig, mit lille</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 55-56.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 55-56.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1334,7 +1340,7 @@ Danmarks Minder tro som Guld.
     <title>Jeg véd ej Flag saa skønt som du</title>
     <firstline>Jeg véd ej Flag saa skønt som du</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 57-58.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 57-58.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1382,7 +1388,7 @@ vort kære, gamle Dannebrog.
     <title>Mit Hjemland</title>
     <firstline>Vuggende Vover i funklende Rækker</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 59.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 59.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1422,7 +1428,7 @@ aldrig at glemme og altid at sjunge:
     <subtitle>Mel. af Carl Meyer</subtitle>
     <firstline>Vaj frit vort Flag ved Slot og Hytte!</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 60-61.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 60-61.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1463,7 +1469,7 @@ Velsign, o Gud, vort Fædreland!
     <subtitle>comp. af L. J. Hansen m. fl.</subtitle>
     <firstline>Dejlige Land, hvor den blaanende Vove</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 62-63.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 62-63.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1502,7 +1508,7 @@ dejlige Danmark, i Glæde og Sorg!
     <title>Vort Land</title>
     <firstline>Vort Land, vort Land, vort fagre Hjem</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 64-65.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 64-65.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1555,7 +1561,7 @@ vort Blod!
     <subtitle>Mel. af V. G.</subtitle>
     <firstline>I den solfyldte Dag</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 66-67.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 66-67.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1596,7 +1602,7 @@ om det gælder, vi vove vort Liv.
     <subtitle>Mel. af V. G.</subtitle>
     <firstline>Velsign, o Gud, vort gamle Hjem</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 68-69.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 68-69.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1644,7 +1650,7 @@ til Fattigmandens Søn.
     <subtitle>Comp. af Julius Bechgaard.</subtitle>
     <firstline>Hvad nytter det, vort Land er lagt</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 70-71.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 70-71.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1684,7 +1690,7 @@ og elskes varmt og stort.
     <subtitle>Skrevet til Musik af Aug. Enna.</subtitle>
     <firstline>Jeg elsker dig, Jydernes gamle Land</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 72-73.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 72-73.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1736,7 +1742,7 @@ en Bøn for vor fædrene Jord.
     </subtitle>
     <firstline>Til Hjertets varme Slag og Takt</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 74-75.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 74-75.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1784,7 +1790,7 @@ til Verden skal forgaa! —
     <title>Bækken gaar i Enge</title>
     <firstline>Bækken gaar i Enge Dagen lys og lang</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 76.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 76.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1812,7 +1818,7 @@ dryssed’ jeg saa gerne, hver og en.'' —
     <subtitle>Mel. af N. Mønsted.</subtitle>
     <firstline>O, Nattergal, min egen Fugl</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 77-78.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 77-78.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1851,7 +1857,7 @@ hvad ingen, ingen her paa Jord maa
     <title>Hos dig har mit Hjerte hjemme</title>
     <firstline>Hos dig har mit Hjerte hjemme</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 79.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 79.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1884,7 +1890,7 @@ hvi skal vi dog skilles, vi to? —
     <subtitle>Comp. af J. P. E. Hartmann.</subtitle>
     <firstline>Mine Tanker, de er som Skibe</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 80-81.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 80-81.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1923,7 +1929,7 @@ som Stjerner, Gud selv har sat.
     <title>Risle, lille Rislebæk</title>
     <firstline>Risle, lille Rislebæk</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 82.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 82.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1959,7 +1965,7 @@ alle, alle Tider.
     <title>Der glimrer et sittrende Maaneskær</title>
     <firstline>Der glimrer et sittrende Maaneskær</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 83.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 83.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1992,7 +1998,7 @@ lægger en rødmende Kind sig til min.
     <title>Stille vi glide</title>
     <firstline>Stille vi glide ad vuggende Veje</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 84.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 84.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2033,7 +2039,7 @@ Vejen gaar let, naar du synger dertil.
     <firstline>Saa meget har paa Jord mig frydet</firstline>
     <notes>
         <note>TODO: Oversættelse af http://www.romantische-liebesgedichte.net/emanuel-geibel-minnelied.html</note>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 85-88.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 85-88.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2142,7 +2148,7 @@ min Elskede i denne Sang.
     <title>Naar Havets stolte Bjerge</title>
     <firstline>Naar Havets stolte Bjerge</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 89-92.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 89-92.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2237,7 +2243,7 @@ og Haabets Fuglesang.
     <title>Vort Sprog</title>
     <firstline>Mens end et Barn paa Armen gynges</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 93.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 93.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2270,7 +2276,7 @@ slut Kreds, staa fast trods Haan og Sorg:
     <title>Uforsagt</title>
     <firstline>Uforsagt, om Lykken kvælder</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 94-95.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 94-95.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2318,7 +2324,7 @@ al vor Sorg og Vinternød.
     <title>Helt jævnt vil ad Vejen vi træde</title>
     <firstline>Helt jævnt vil ad Vejen vi træde</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 96-97.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 96-97.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2360,7 +2366,7 @@ til Frihedens herlige Stund.
     <title>Vi har Minder -</title>
     <firstline>Vi har Minder, der er svøbte</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 98.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 98.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2400,7 +2406,7 @@ vældig alle Danskes Sang.
     <subtitle>De danske Kvinder i Sønderjylland tilegnet</subtitle>
     <firstline>Ton blidt min Sang som Aftenklokkens Slag</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 99-100.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 99-100.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2454,7 +2460,7 @@ nu da saa mange, mange Hjerter fryse. —
     <title>Der er et Land der sønder paa -</title>
     <firstline>Der er et Land der sønder paa</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 101-104.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 101-104.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2556,7 +2562,7 @@ hvem Gud vil hjælpe, han maa vinde.
     <title>Sangfuglen</title>
     <firstline>Du Fugl, som kækt dig svinger</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 105-106.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 105-106.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2613,7 +2619,7 @@ gemt paa en fredlyst Plet.
     <title>Hvad hjælper Kulturen</title>
     <firstline>Hvad hjælper Kulturen, hvad hjælper vort Snille</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 107.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 107.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2646,7 +2652,7 @@ og Aander sig bøjed igen for vort Bud!
     <title>Glemt og gemt</title>
     <firstline>Glemt er den Sne, som faldt i Fjor</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 108.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 108.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2680,7 +2686,7 @@ og faldt med Haanden om sit Sværd.''
     <title>Fri og frejdig</title>
     <firstline>Fri og frejdig, djærv og mandig</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 109.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 109.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2720,7 +2726,7 @@ bruge alt, Gud byder til.
     <subtitle>Mel.: Det gaar atter hjemad til den lille By.</subtitle>
     <firstline>Stem nu i i denne lille, jævne Sang</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 110-111.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 110-111.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2762,7 +2768,7 @@ i det store Hjem, i Jesu Navn!
     <title>Stæren</title>
     <firstline>Hvor holder jeg af dig, du kvidrende Stær</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 112.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 112.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2801,7 +2807,7 @@ mit Hjerte skal gøre det samme.
     <title>Nu tændes den første Stjerne</title>
     <firstline>Nu tændes den første Stjerne</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 113.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 113.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2840,7 +2846,7 @@ et Minde, som lyser Fred.
     <title>Mindeaften</title>
     <firstline>Mens den brusende Blæst farer frem paa sit Tog</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 114-115.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 114-115.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2887,7 +2893,7 @@ frisk som Blomsten, der nylig sprang ud.
     <title>Haabet</title>
     <firstline>Tidt tænkte jeg mig Haabet som en Engel</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 116.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 116.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2927,7 +2933,7 @@ med Profetier om den fjerne Sommer.
     <subtitle>til lille Toni.</subtitle>
     <firstline>Hvil nu blødt og sov nu sødt</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 117-118.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 117-118.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2993,7 +2999,7 @@ ikke for alt det bedste her paa Jord.
     <title>Naar Solen gaar i Bjerge</title>
     <firstline>Naar Solen gaar i Bjerge</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 119.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 119.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3025,7 +3031,7 @@ som Morgendug i Gry. -
     <title>Da Solen gik ned</title>
     <firstline>Da Solen gik ned</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 120-121.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 120-121.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3065,7 +3071,7 @@ indlulle den brusende Elv.
     <title>Blikket</title>
     <firstline>Naar Tanken knap kan evne</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 122-123.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 122-123.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3113,7 +3119,7 @@ hinanden de forstaa.
     <title>God Dag og farvel</title>
     <firstline>God Dag er som et Morgengry</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 124.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 124.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3141,7 +3147,7 @@ da vi skal sés igen!
     <subtitle>Comp. af Otto Malling</subtitle>
     <firstline>Foran Hjorden gaar han stille</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 125.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 125.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3186,7 +3192,7 @@ Vejen hjem i Sorg og Glæde:
     <title>Ved vor gamle Konges Død</title>
     <firstline>Vi hejse Flaget halvt paa Stang</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 126-127.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 126-127.</note>
     </notes>
     <keywords>christian9</keywords>
     <quality>korrektur1,kilde,side</quality>
@@ -3248,7 +3254,7 @@ bar Kongekronens Vægt!''
     <subtitle>(Flensborg)</subtitle>
     <firstline>Hvor bløde Bakkers Rande</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 128-130.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 128-130.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3314,7 +3320,7 @@ frit over Taarn og Tag.
     <subtitle>Til J. P. E. Hartmanns Kiste</subtitle>
     <firstline>Af Vintergækker og af blaa Violer</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 131-132.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 131-132.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3352,7 +3358,7 @@ solfyldte Sind, hvoraf et Hjerte gror.
     <subtitle>Ved et Studenterjubilæum</subtitle>
     <firstline>Nu gulnes Løv i Hegn og Lund</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 133-134.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 133-134.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3400,7 +3406,7 @@ men steg i Værd, mens Tider runde.
     <title>Christian Richardt</title>
     <firstline>Rigt og fyndigt har du bøjet</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 135-136.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 135-136.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3444,7 +3450,7 @@ mens det toner varmt herinde:
     <title>Til en Mindefest for Frederik Paludan Müller</title>
     <firstline>Fuldt som Malm i Klokkers Klang</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 137-138.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 137-138.</note>
     </notes>
     <keywords>mueller</keywords>
     <quality>korrektur1,kilde,side</quality>
@@ -3484,7 +3490,7 @@ og det kendes som vort Maal:
     <title>Prof. Dr. Sophus Heegaard</title>
     <firstline>Ad Tankers bratte Veje</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 139-140.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 139-140.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3541,7 +3547,7 @@ og pege trygt i Havn.
     <title>Carl Plough</title>
     <firstline>Han var en Mand, hvis Aand var tidlig vaagen</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 141.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 141.</note>
     </notes>
     <keywords>plough</keywords>
     <quality>korrektur1,kilde,side</quality>
@@ -3581,7 +3587,7 @@ et Skær deraf skal lue om hans Navn.
     <title>Gustav Johannsen</title>
     <firstline>Paragraf fem, den har de faaet slettet</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 142-143.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 142-143.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3633,7 +3639,7 @@ og med: ,,Staa fast'' i Bannerdugen skrevet.
     <subtitle>(Redaktør af ,,Flensborg Avis'')</subtitle>
     <firstline>Flensborg, gamle Fødeby</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 145-146.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 145-146.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3691,7 +3697,7 @@ byg som han paa Haabets Bro.
     <subtitle>Et fortællende Digt.</subtitle>
     <firstline>Det lakker ad Vintertide</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 146-155.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 146-155.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4005,7 +4011,7 @@ faar sit Foraar ligervis.
     <title>En Julevise</title>
     <firstline>Naar i Høstens barske Vinde</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 156-157.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 156-157.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4068,7 +4074,7 @@ Himlens Fred i Jordens Dragt.
     <firstline>Der er noget i Luften</firstline>
     <notes>
         <note type="credits">Bidrag fra Sven Sørensen.</note>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 158-159.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 158-159.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4121,7 +4127,7 @@ naar du følger med.
     <subtitle>Comp. af J. P. E. Hartmann.</subtitle>
     <firstline>Du dejlige Time i Stjernernes Glans</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 160.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, p. 160.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4159,7 +4165,7 @@ til Julen vi holder i Himmerigs Hal!
     <subtitle>Mel. af V. G.</subtitle>
     <firstline>Jul, Jul, du dejlige Jul!</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 161-162.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 161-162.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4199,7 +4205,7 @@ Jul, Jul! Jul, Jul! Velsignede Jul!
     <subtitle>Mel. af V. G.</subtitle>
     <firstline>Velsignede Jul, du har Roser i Haar</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 163-164.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 163-164.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4240,7 +4246,7 @@ saa bring den til ham eller hende.
     <subtitle>Mel. af V. G.</subtitle>
     <firstline>Sne, Sne, dejlige Julesne!</firstline>
     <notes>
-        <note>Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 165-166.</note>
+        <note>Teksten følger Vilhelm Gregersen: <i>Vintergæk</i>, Nationale Forfatteres Forlag, Kbh., 1911, pp. 165-166.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
