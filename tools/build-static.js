@@ -419,7 +419,10 @@ const build_poets_json = () => {
     const sorted = poets.sort((a, b) => {
       return a.id < b.id ? -1 : 1;
     });
-    writeJSON(`static/api/poets-${country}.json`, sorted);
+    const data = {
+      poets: sorted,
+    };
+    writeJSON(`static/api/poets-${country}.json`, data);
     poets.forEach(poet => {
       writeJSON(`static/api/${poet.id}.json`, poet);
     });
@@ -1344,12 +1347,14 @@ const build_dict_second_pass = collected => {
       content_html.indexOf('<footnote') !== -1 ||
       content_html.indexOf('<note') !== -1;
     const data = {
-      id,
-      title,
-      phrase,
-      variants,
-      has_footnotes,
-      content_html,
+      item: {
+        id,
+        title,
+        phrase,
+        variants,
+        has_footnotes,
+        content_html,
+      },
     };
     writeJSON(`static/api/dict/${id}.json`, data);
     const simpleData = {

@@ -1,6 +1,5 @@
 // @flow
 
-import 'isomorphic-fetch';
 import React from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
@@ -16,6 +15,8 @@ import * as Sorting from './helpers/sorting.js';
 import * as Strings from './helpers/strings.js';
 import _ from './helpers/translations.js';
 import CommonData from '../pages/helpers/commondata.js';
+import ErrorPage from './error.js';
+import * as Client from './helpers/client.js';
 import { createURL } from './helpers/client.js';
 import type {
   Lang,
@@ -24,6 +25,7 @@ import type {
   Poet,
   SortReturn,
   SectionForRendering,
+  Error,
 } from './helpers/types.js';
 
 type GroupBy = 'name' | 'year';
@@ -103,13 +105,13 @@ function joinWithCommaAndOr(
   return result;
 }
 
-class CountryPicker extends React.Component {
-  props: {
-    lang: Lang,
-    selectedCountry: Country,
-    selectedGroupBy: GroupBy,
-    style: any,
-  };
+type CountryPickerProps = {
+  lang: Lang,
+  selectedCountry: Country,
+  selectedGroupBy: GroupBy,
+  style: any,
+};
+class CountryPicker extends React.Component<CountryPickerProps> {
   render() {
     const { lang, selectedCountry, selectedGroupBy, style } = this.props;
     const items = CommonData.countries.map(country => {
@@ -137,27 +139,29 @@ class CountryPicker extends React.Component {
   }
 }
 
-export default class extends React.Component {
+type PoetsProps = {
+  lang: Lang,
+  country: Country,
+  poets: Array<Poet>,
+  groupBy: GroupBy,
+  error: ?Error,
+};
+export default class extends React.Component<PoetsProps> {
   static async getInitialProps({
     query: { lang, country, groupBy },
   }: {
     query: { lang: Lang, country: Country, groupBy: GroupBy },
   }) {
-    const url = `/static/api/poets-${country}.json`;
-    const res = await fetch(createURL(url));
-    const poets: Array<Poet> = await res.json();
-    return { lang, country, groupBy, poets };
+    const json = await Client.poets(country);
+    return { lang, country, groupBy, poets: json.poets, error: json.error };
   }
 
-  props: {
-    lang: Lang,
-    country: Country,
-    poets: Array<Poet>,
-    groupBy: GroupBy,
-  };
-
   render() {
-    const { lang, country, poets, groupBy } = this.props;
+    const { lang, country, poets, groupBy, error } = this.props;
+
+    if (error) {
+      return <ErrorPage error={error} lang={lang} message="Ukendt land" />;
+    }
 
     const tabs = [
       {
