@@ -165,7 +165,7 @@ const build_poet_timeline_json = (poet, collected) => {
         type: 'text',
         is_history_item: false,
         content_lang: 'da',
-        content_html: [[`${poet.name.lastname} født${place}`]],
+        content_html: [[`${poet.name.lastname||poet.name.firstname} født${place}`]],
       });
     }
     if (poet.period.dead.date !== '?') {
@@ -178,7 +178,7 @@ const build_poet_timeline_json = (poet, collected) => {
         type: 'text',
         is_history_item: false,
         content_lang: 'da',
-        content_html: [[`${poet.name.lastname} død${place}`]],
+        content_html: [[`${poet.name.lastname||poet.name.firstname} død${place}`]],
       });
     }
     let poet_events = load_timeline(`fdirs/${poet.id}/events.xml`).map(e => {
