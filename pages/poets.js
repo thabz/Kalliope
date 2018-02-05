@@ -1,6 +1,5 @@
 // @flow
 
-import 'isomorphic-fetch';
 import React from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
@@ -14,7 +13,10 @@ import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
 import * as Sorting from './helpers/sorting.js';
 import * as Strings from './helpers/strings.js';
+import _ from './helpers/translations.js';
 import CommonData from '../pages/helpers/commondata.js';
+import ErrorPage from './error.js';
+import * as Client from './helpers/client.js';
 import { createURL } from './helpers/client.js';
 import type {
   Lang,
@@ -23,14 +25,15 @@ import type {
   Poet,
   SortReturn,
   SectionForRendering,
+  Error,
 } from './helpers/types.js';
 
 type GroupBy = 'name' | 'year';
 
-const groupsByLetter = poets => {
+const groupsByLetter = (poets: Array<Poet>, lang: Lang) => {
   let groups = new Map();
   poets.filter(p => p.type !== 'person').forEach(p => {
-    let key = 'Ukendt digter';
+    let key = _('Ukendt digter', lang);
     if (p.name.lastname != null) {
       key = p.name.lastname[0];
     }
@@ -55,10 +58,10 @@ const groupsByLetter = poets => {
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
-const groupsByYear = (poets: Array<Poet>) => {
+const groupsByYear = (poets: Array<Poet>, lang: Lang) => {
   let groups = new Map();
   poets.filter(p => p.type === 'poet').forEach(p => {
-    let key = 'Ukendt fødeår';
+    let key = _('Ukendt fødeår', lang);
     if (
       p.period != null &&
       p.period.born != null &&
@@ -102,82 +105,81 @@ function joinWithCommaAndOr(
   return result;
 }
 
-class CountryPicker extends React.Component {
-  props: {
-    lang: Lang,
-    selectedCountry: Country,
-    selectedGroupBy: GroupBy,
-    style: any,
-  };
+type CountryPickerProps = {
+  lang: Lang,
+  selectedCountry: Country,
+  selectedGroupBy: GroupBy,
+  style: any,
+};
+class CountryPicker extends React.Component<CountryPickerProps> {
   render() {
     const { lang, selectedCountry, selectedGroupBy, style } = this.props;
     const items = CommonData.countries.map(country => {
       const url = Links.poetsURL(lang, selectedGroupBy, country.code);
       const adj = country.adjective[lang] + ' ';
       if (country.code === selectedCountry) {
-        return (
-          <b key={country.code}>
-            {adj}
-          </b>
-        );
+        return <b key={country.code}>{adj}</b>;
       } else {
         return (
           <Link route={url} key={country.code}>
-            <a>
-              {adj}
-            </a>
+            <a>{adj}</a>
           </Link>
         );
       }
     });
-    const joinedItems = joinWithCommaAndOr(items, 'eller');
+    const joinedItems = joinWithCommaAndOr(items, _('eller', lang));
     return (
       <div style={style}>
         <div>
-          Skift mellem {joinedItems} digtere.
+          {_('Skift mellem', lang)} {joinedItems}
+          {_('digtere', lang)}.
         </div>
       </div>
     );
   }
 }
 
-export default class extends React.Component {
+type PoetsProps = {
+  lang: Lang,
+  country: Country,
+  poets: Array<Poet>,
+  groupBy: GroupBy,
+  error: ?Error,
+};
+export default class extends React.Component<PoetsProps> {
   static async getInitialProps({
     query: { lang, country, groupBy },
   }: {
     query: { lang: Lang, country: Country, groupBy: GroupBy },
   }) {
-    const url = `/static/api/poets-${country}.json`;
-    const res = await fetch(createURL(url));
-    const poets: Array<Poet> = await res.json();
-    return { lang, country, groupBy, poets };
+    const json = await Client.poets(country);
+    return { lang, country, groupBy, poets: json.poets, error: json.error };
   }
 
-  props: {
-    lang: Lang,
-    country: Country,
-    poets: Array<Poet>,
-    groupBy: GroupBy,
-  };
-
   render() {
-    const { lang, country, poets, groupBy } = this.props;
+    const { lang, country, poets, groupBy, error } = this.props;
+
+    if (error) {
+      return <ErrorPage error={error} lang={lang} message="Ukendt land" />;
+    }
 
     const tabs = [
       {
         id: 'name',
-        title: 'Efter navn',
+        title: _('Efter navn', lang),
         url: Links.poetsURL(lang, 'name', country),
       },
       {
         id: 'year',
-        title: 'Efter år',
+        title: _('Efter år', lang),
         url: Links.poetsURL(lang, 'year', country),
       },
     ];
     const selectedTabIndex = groupBy === 'name' ? 0 : 1;
     const groups =
-      groupBy === 'name' ? groupsByLetter(poets) : groupsByYear(poets);
+      groupBy === 'name'
+        ? groupsByLetter(poets, lang)
+        : groupsByYear(poets, lang);
 
     let sections: Array<SectionForRendering> = [];
 
@@ -200,13 +202,14 @@ export default class extends React.Component {
       const cn = CommonData.countries.filter(c => {
         return c.code === country;
       })[0];
-      pageTitle = Strings.toTitleCase(cn.adjective[lang]) + ' ' + ' digtere';
+      pageTitle =
+        Strings.toTitleCase(cn.adjective[lang]) + ' ' + _('digtere', lang);
     } else {
-      pageTitle = 'Digtere';
+      pageTitle = _('Digtere', lang);
     }
     return (
       <div>
-        <Head headTitle="Digtere - Kalliope" />
+        <Head headTitle={_('Digtere', lang) + ' - Kalliope'} />
         <Main>
           <Nav lang={lang} title={pageTitle} />
           <Heading title={pageTitle} />

@@ -67,6 +67,7 @@ const replaceDashes = html => {
       .replace(/ -/g, ' —')
       .replace(/^- /gm, '— ')
       .replace(/>- /g, '>— ')
+      .replace(/,,- /g, ',,— ')
       .replace(/,,/g, '&bdquo;')
       .replace(/''/g, '&ldquo;')
       .replace(/'/g, '&rsquo;')
@@ -96,7 +97,7 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
         .replace(/\n *(----*) *\n/g, (match, p1) => {
           return `\n<hr width="${p1.length}"/>\n`;
         })
-        .replace(/^( *[_\*]+ *)/gm, (match, p1) => {
+        .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
           // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
           return `<nonum>${p1}</nonum>`;
         })

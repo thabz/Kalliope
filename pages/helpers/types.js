@@ -85,6 +85,12 @@ export type SectionForRendering = Section<{
   html: any,
 }>;
 
+export type KeywordRef = {
+  id: string,
+  type: 'keyword' | 'poet' | 'subject',
+  title: string,
+};
+
 export type TocItem = {
   id?: string,
   title: string,
@@ -116,6 +122,7 @@ export type Text = {
   pictures: Array<PictureItem>,
   content_html: TextContentType,
   content_lang: TextLang,
+  keywords: Array<KeywordRef>,
   has_footnotes: boolean,
   is_prose: boolean,
 };

@@ -419,7 +419,10 @@ const build_poets_json = () => {
     const sorted = poets.sort((a, b) => {
       return a.id < b.id ? -1 : 1;
     });
-    writeJSON(`static/api/poets-${country}.json`, sorted);
+    const data = {
+      poets: sorted,
+    };
+    writeJSON(`static/api/poets-${country}.json`, data);
     poets.forEach(poet => {
       writeJSON(`static/api/${poet.id}.json`, poet);
     });
@@ -542,9 +545,30 @@ const handle_text = (
       subtitles = [htmlToXml(subtitleString, collected, true)];
     }
   }
-  let keywordsArray = null;
+  let keywordsArray = [];
   if (keywords) {
-    keywordsArray = keywords.text().split(',');
+    keywordsArray = keywords
+      .text()
+      .split(',')
+      .map(k => {
+        let type = null;
+        let title = null;
+        if (collected.poets.get(k) != null) {
+          type = 'poet';
+          title = poetName(collected.poets.get(k));
+        } else if (collected.keywords.get(k) != null) {
+          type = 'keyword';
+          title = collected.keywords.get(k).title;
+        } else {
+          type = 'subject';
+          title = k;
+        }
+        return {
+          id: k,
+          type,
+          title,
+        };
+      });
   }
 
   let refsArray = (collected.textrefs.get(textId) || []).map(id => {
@@ -584,7 +608,7 @@ const handle_text = (
       is_prose: text.name() === 'prose',
       has_footnotes,
       notes: get_notes(head),
-      keywords: keywordsArray,
+      keywords: keywordsArray || [],
       refs: refsArray,
       pictures: get_pictures(head),
       content_lang: poet.lang,
@@ -792,7 +816,9 @@ const works_first_pass = collected => {
       // Sanity check
       if (work.attr('author').value() !== poet.id) {
         throw new Error(
-          `fdirs/${poet.id}/${workId}.xml has wrong author-attribute in <kalliopework>`
+          `fdirs/${
+            poet.id
+          }/${workId}.xml has wrong author-attribute in <kalliopework>`
         );
       }
       works.set(`${poet.id}/${workId}`, {
@@ -1321,12 +1347,14 @@ const build_dict_second_pass = collected => {
       content_html.indexOf('<footnote') !== -1 ||
       content_html.indexOf('<note') !== -1;
     const data = {
-      id,
-      title,
-      phrase,
-      variants,
-      has_footnotes,
-      content_html,
+      item: {
+        id,
+        title,
+        phrase,
+        variants,
+        has_footnotes,
+        content_html,
+      },
     };
     writeJSON(`static/api/dict/${id}.json`, data);
     const simpleData = {
@@ -1502,11 +1530,11 @@ const build_redirects_json = collected => {
 };
 
 const build_todays_events_json = collected => {
-  const portrait_descriptions = Array.from(
-    collected.poets.values()
-  ).map(poet => {
-    return `fdirs/${poet.id}/portraits.xml`;
-  });
+  const portrait_descriptions = Array.from(collected.poets.values()).map(
+    poet => {
+      return `fdirs/${poet.id}/portraits.xml`;
+    }
+  );
   if (!isFileModified(`data/poets.xml`, ...portrait_descriptions)) {
     return;
   }
