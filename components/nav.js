@@ -83,17 +83,16 @@ export class NavPaging extends React.Component {
   }
 }
 
-export default class Nav extends React.Component {
-  props: {
-    lang: Lang,
-    poet?: Poet,
-    work?: Work,
-    links?: Array<any>,
-    sectionTitles?: Array<string>,
-    title?: any,
-    rightSide?: any,
-  };
-
+type NavProps = {
+  lang: Lang,
+  poet?: Poet,
+  work?: Work,
+  links?: Array<any>,
+  sectionTitles?: Array<string>,
+  title?: any,
+  rightSide?: any,
+};
+export default class Nav extends React.Component<NavProps> {
   static defaultProps = {
     sectionTitles: [],
   };
@@ -115,23 +114,30 @@ export default class Nav extends React.Component {
     );
 
     if (!links) {
-      let poetsURL = null;
+      let poetsLink = null;
       if (poet != null) {
         let poetsLinkText = null;
-        if (poet.country !== 'dk') {
-          const cn = CommonData.countries.filter(c => {
-            return c.code === poet.country;
-          })[0];
-          poetsLinkText =
-            Strings.toTitleCase(cn.adjective[lang]) + ' ' + _('digtere', lang);
+        if (poet.type === 'person') {
+          poetsLinkText = _('Personer', lang);
+          poetsLink = <span>{poetsLinkText}</span>;
         } else {
-          poetsLinkText = _('Digtere', lang);
+          if (poet.country !== 'dk') {
+            const cn = CommonData.countries.filter(c => {
+              return c.code === poet.country;
+            })[0];
+            poetsLinkText =
+              Strings.toTitleCase(cn.adjective[lang]) +
+              ' ' +
+              _('digtere', lang);
+          } else {
+            poetsLinkText = _('Digtere', lang);
+          }
+          poetsLink = (
+            <Link prefetch route={Links.poetsURL(lang, 'name', poet.country)}>
+              <a>{poetsLinkText}</a>
+            </Link>
+          );
         }
-        poetsURL = (
-          <Link prefetch route={Links.poetsURL(lang, 'name', poet.country)}>
-            <a>{poetsLinkText}</a>
-          </Link>
-        );
       }
       const poetLink = poet ? (
         <Link prefetch route={Links.poetURL(lang, poet.id)}>
@@ -148,9 +154,9 @@ export default class Nav extends React.Component {
             </a>
           </Link>
         ) : null;
-      links = [poetsURL, poetLink, workLink];
+      links = [poetsLink, poetLink, workLink];
     }
-    let renderedSectionTitles: ?Array<TextContent> = null;
+    let renderedSectionTitles: Array<TextContent> = [];
     if (sectionTitles != null) {
       renderedSectionTitles = sectionTitles.map(t => {
         return (
