@@ -4,6 +4,7 @@ import type { Lang } from './types.js';
 
 const translations: { [string]: string } = {
   'en*Digtere': 'Poets',
+  'en*Personer': 'Persons',
   'en*Nøgleord': 'Keywords',
   'en*Værker': 'Works',
   'en*Digttitler': 'Poem titles',
@@ -29,6 +30,7 @@ const translations: { [string]: string } = {
   'en*Pseudonym': 'Pseudonym',
   'en*Født': 'Born',
   'en*Død': 'Dead',
+  'en*Tiltrådt': 'Accession',
   'en*(blev {ca}{yearDiff} år)': '(age {ca}{yearDiff} years)',
   'en*ca.': 'en*c.',
   'en*Søg i Kalliope': 'Search Kalliope',
