@@ -151,6 +151,14 @@ class PersonMeta extends React.Component {
 
     const christened =
       poet.name.christened == null ? poet.name.realname : poet.name.christened;
+    let coronationMetaLine = null;
+    if (poet.period != null && poet.period.coronation != null) {
+      const coronation =
+        poet.period == null ? null : dateAndPlace(poet.period.coronation, lang);
+      coronationMetaLine = (
+        <PersonMetaLine value={coronation} label={_('Tiltrådt', lang)} />
+      );
+    }
     return (
       <div>
         <PersonMetaLine value={name} label={_('Navn', lang)} />
@@ -164,6 +172,7 @@ class PersonMeta extends React.Component {
           label={_('Pseudonym', lang)}
         />
         <PersonMetaLine value={born} label={_('Født', lang)} />
+        {coronationMetaLine}
         <PersonMetaLine value={dead} label={_('Død', lang)} />
       </div>
     );

@@ -165,7 +165,9 @@ const build_poet_timeline_json = (poet, collected) => {
         type: 'text',
         is_history_item: false,
         content_lang: 'da',
-        content_html: [[`${poet.name.lastname||poet.name.firstname} født${place}`]],
+        content_html: [
+          [`${poet.name.lastname || poet.name.firstname} født${place}`],
+        ],
       });
     }
     if (poet.period.dead.date !== '?') {
@@ -178,7 +180,9 @@ const build_poet_timeline_json = (poet, collected) => {
         type: 'text',
         is_history_item: false,
         content_lang: 'da',
-        content_html: [[`${poet.name.lastname||poet.name.firstname} død${place}`]],
+        content_html: [
+          [`${poet.name.lastname || poet.name.firstname} død${place}`],
+        ],
       });
     }
     let poet_events = load_timeline(`fdirs/${poet.id}/events.xml`).map(e => {
@@ -365,6 +369,7 @@ const build_poets_json = () => {
     if (periodE) {
       const bornE = periodE.get('born');
       const deadE = periodE.get('dead');
+      const coronationE = periodE.get('coronation');
       if (bornE) {
         period.born = {
           date: safeGetText(bornE, 'date'),
@@ -375,6 +380,12 @@ const build_poets_json = () => {
         period.dead = {
           date: safeGetText(deadE, 'date'),
           place: safeGetText(deadE, 'place'),
+        };
+      }
+      if (coronationE) {
+        period.coronation = {
+          date: safeGetText(coronationE, 'date'),
+          place: safeGetText(coronationE, 'place'),
         };
       }
     }
