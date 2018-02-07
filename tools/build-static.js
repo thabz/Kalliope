@@ -1774,7 +1774,10 @@ const update_elasticsearch = collected => {
           const textId = text.attr('id').value();
           const head = text.get('head');
           const body = text.get('body');
-          const title = head.get('title') ? head.get('title').text() : null;
+          const title =
+            safeGetText(head, 'linktitle') ||
+            safeGetText(head, 'title') ||
+            safeGetText(head, 'firstline');
           const keywords = head.get('keywords');
           let subtitles = null;
           const subtitle = head.get('subtitle');
