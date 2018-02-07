@@ -114,7 +114,11 @@ const load_timeline = filename => {
       is_history_item: true,
       content_lang: 'da',
       content_html: htmlToXml(
-        html.toString().replace('<html>', '').replace('</html>', '').trim(),
+        html
+          .toString()
+          .replace('<html>', '')
+          .replace('</html>', '')
+          .trim(),
         collected
       ),
     };
@@ -154,25 +158,31 @@ const build_poet_timeline_json = (poet, collected) => {
     if (poet.period.born.date !== '?') {
       const place = (poet.period.born.place != null
         ? ' i ' + poet.period.born.place + ''
-        : '').replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.
+        : ''
+      ).replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.
       items.push({
         date: poet.period.born.date,
         type: 'text',
         is_history_item: false,
         content_lang: 'da',
-        content_html: [[`${poet.name.lastname} født${place}`]],
+        content_html: [
+          [`${poet.name.lastname || poet.name.firstname} født${place}`],
+        ],
       });
     }
     if (poet.period.dead.date !== '?') {
       const place = (poet.period.dead.place != null
         ? ' i ' + poet.period.dead.place
-        : '').replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.;
+        : ''
+      ).replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.;
       items.push({
         date: poet.period.dead.date,
         type: 'text',
         is_history_item: false,
         content_lang: 'da',
-        content_html: [[`${poet.name.lastname} død${place}`]],
+        content_html: [
+          [`${poet.name.lastname || poet.name.firstname} død${place}`],
+        ],
       });
     }
     let poet_events = load_timeline(`fdirs/${poet.id}/events.xml`).map(e => {
@@ -268,7 +278,10 @@ const build_bio_json = collected => {
         data.author = head.get('author').text();
       }
       data.content_html = htmlToXml(
-        body.toString().replace('<body>', '').replace('</body>', ''),
+        body
+          .toString()
+          .replace('<body>', '')
+          .replace('</body>', ''),
         collected
       );
       data.content_lang = 'da';
@@ -356,6 +369,7 @@ const build_poets_json = () => {
     if (periodE) {
       const bornE = periodE.get('born');
       const deadE = periodE.get('dead');
+      const coronationE = periodE.get('coronation');
       if (bornE) {
         period.born = {
           date: safeGetText(bornE, 'date'),
@@ -366,6 +380,12 @@ const build_poets_json = () => {
         period.dead = {
           date: safeGetText(deadE, 'date'),
           place: safeGetText(deadE, 'place'),
+        };
+      }
+      if (coronationE) {
+        period.coronation = {
+          date: safeGetText(coronationE, 'date'),
+          place: safeGetText(coronationE, 'place'),
         };
       }
     }
@@ -410,7 +430,10 @@ const build_poets_json = () => {
     const sorted = poets.sort((a, b) => {
       return a.id < b.id ? -1 : 1;
     });
-    writeJSON(`static/api/poets-${country}.json`, sorted);
+    const data = {
+      poets: sorted,
+    };
+    writeJSON(`static/api/poets-${country}.json`, data);
     poets.forEach(poet => {
       writeJSON(`static/api/${poet.id}.json`, poet);
     });
@@ -427,7 +450,10 @@ const build_poet_workids = () => {
       const poetId = person.attr('id').value();
       const workIds = person.get('works');
       let items = workIds
-        ? workIds.text().split(',').filter(x => x.length > 0)
+        ? workIds
+            .text()
+            .split(',')
+            .filter(x => x.length > 0)
         : [];
       collected_workids.set(poetId, items);
     });
@@ -501,7 +527,8 @@ const handle_text = (
   let title = safeGetText(head, 'title');
   title = title || firstline;
   let linktitle = safeGetText(head, 'linktitle');
-  linktitle = linktitle || title;
+  let indextitle = safeGetText(head, 'indextitle');
+  linktitle = linktitle || indextitle || title;
 
   const keywords = head.get('keywords');
   const isBible = poetId === 'bibel';
@@ -529,9 +556,30 @@ const handle_text = (
       subtitles = [htmlToXml(subtitleString, collected, true)];
     }
   }
-  let keywordsArray = null;
+  let keywordsArray = [];
   if (keywords) {
-    keywordsArray = keywords.text().split(',');
+    keywordsArray = keywords
+      .text()
+      .split(',')
+      .map(k => {
+        let type = null;
+        let title = null;
+        if (collected.poets.get(k) != null) {
+          type = 'poet';
+          title = poetName(collected.poets.get(k));
+        } else if (collected.keywords.get(k) != null) {
+          type = 'keyword';
+          title = collected.keywords.get(k).title;
+        } else {
+          type = 'subject';
+          title = k;
+        }
+        return {
+          id: k,
+          type,
+          title,
+        };
+      });
   }
 
   let refsArray = (collected.textrefs.get(textId) || []).map(id => {
@@ -549,7 +597,10 @@ const handle_text = (
   const foldername = Paths.textFolder(textId);
   const prev_next = resolve_prev_next(textId);
 
-  const rawBody = body.toString().replace('<body>', '').replace('</body>', '');
+  const rawBody = body
+    .toString()
+    .replace('<body>', '')
+    .replace('</body>', '');
   const content_html = htmlToXml(rawBody, collected, isPoetry, isBible);
   const has_footnotes =
     rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
@@ -568,7 +619,7 @@ const handle_text = (
       is_prose: text.name() === 'prose',
       has_footnotes,
       notes: get_notes(head),
-      keywords: keywordsArray,
+      keywords: keywordsArray || [],
       refs: refsArray,
       pictures: get_pictures(head),
       content_lang: poet.lang,
@@ -667,6 +718,7 @@ const handle_work = work => {
         );
       } else if (partName === 'section') {
         const head = part.get('head');
+        const level = parseInt(safeGetAttr(head, 'level') || '1');
         const toctitle = extractTocTitle(head);
         const subtoc = handle_section(part.get('content'), resolve_prev_next, [
           ...section_titles,
@@ -674,6 +726,7 @@ const handle_work = work => {
         ]);
         toc.push({
           type: 'section',
+          level: level,
           title: toctitle.title,
           content: subtoc,
         });
@@ -774,7 +827,9 @@ const works_first_pass = collected => {
       // Sanity check
       if (work.attr('author').value() !== poet.id) {
         throw new Error(
-          `fdirs/${poet.id}/${workId}.xml has wrong author-attribute in <kalliopework>`
+          `fdirs/${
+            poet.id
+          }/${workId}.xml has wrong author-attribute in <kalliopework>`
         );
       }
       works.set(`${poet.id}/${workId}`, {
@@ -954,9 +1009,11 @@ const build_works_toc = collected => {
         } else if (partName === 'section') {
           const subtoc = handle_section(part.get('content'));
           const head = part.get('head');
+          const level = parseInt(safeGetAttr(part, 'level') || '1');
           const toctitle = extractTocTitle(head);
           toc.push({
             type: 'section',
+            level: level,
             title: htmlToXml(toctitle.title),
             content: subtoc,
           });
@@ -1237,7 +1294,11 @@ const build_news = collected => {
         title,
         content_lang: lang,
         content_html: htmlToXml(
-          body.toString().replace('<body>', '').replace('</body>', '').trim(),
+          body
+            .toString()
+            .replace('<body>', '')
+            .replace('</body>', '')
+            .trim(),
           collected
         ),
       });
@@ -1257,18 +1318,21 @@ const build_dict_first_pass = collected => {
 
   safeMkdir('static/api/dict');
   const doc = loadXMLDoc(path);
-  doc.get('//entries').childNodes().forEach(item => {
-    if (item.name() !== 'entry') {
-      return;
-    }
-    const id = item.attr('id').value();
-    const title = item.get('ord').text();
-    const simpleData = {
-      id,
-      title,
-    };
-    collected.dict.set(id, simpleData);
-  });
+  doc
+    .get('//entries')
+    .childNodes()
+    .forEach(item => {
+      if (item.name() !== 'entry') {
+        return;
+      }
+      const id = item.attr('id').value();
+      const title = item.get('ord').text();
+      const simpleData = {
+        id,
+        title,
+      };
+      collected.dict.set(id, simpleData);
+    });
   writeCachedJSON('collected.dict', Array.from(collected.dict));
 };
 
@@ -1284,19 +1348,24 @@ const build_dict_second_pass = collected => {
 
   const createItem = (id, title, phrase, variants, body, collected) => {
     const content_html = htmlToXml(
-      body.toString().replace('<forkl>', '').replace('</forkl>', ''),
+      body
+        .toString()
+        .replace('<forkl>', '')
+        .replace('</forkl>', ''),
       collected
     );
     const has_footnotes =
       content_html.indexOf('<footnote') !== -1 ||
       content_html.indexOf('<note') !== -1;
     const data = {
-      id,
-      title,
-      phrase,
-      variants,
-      has_footnotes,
-      content_html,
+      item: {
+        id,
+        title,
+        phrase,
+        variants,
+        has_footnotes,
+        content_html,
+      },
     };
     writeJSON(`static/api/dict/${id}.json`, data);
     const simpleData = {
@@ -1307,30 +1376,33 @@ const build_dict_second_pass = collected => {
   };
 
   const doc = loadXMLDoc(path);
-  doc.get('//entries').childNodes().forEach(item => {
-    if (item.name() !== 'entry') {
-      return;
-    }
-    const id = item.attr('id').value();
-    const body = item.get('forkl');
-    const title = item.get('ord').text();
-    let phrase = null;
-    if (item.get('frase')) {
-      phrase = item.get('frase').text();
-    }
-    const variants = item.find('var').map(varItem => varItem.text());
-    variants.forEach(variant => {
-      createItem(
-        variant,
-        variant,
-        null,
-        null,
-        `<b>${variant}</b>: se <a dict="${id}">${title}</a>.`,
-        collected
-      );
+  doc
+    .get('//entries')
+    .childNodes()
+    .forEach(item => {
+      if (item.name() !== 'entry') {
+        return;
+      }
+      const id = item.attr('id').value();
+      const body = item.get('forkl');
+      const title = item.get('ord').text();
+      let phrase = null;
+      if (item.get('frase')) {
+        phrase = item.get('frase').text();
+      }
+      const variants = item.find('var').map(varItem => varItem.text());
+      variants.forEach(variant => {
+        createItem(
+          variant,
+          variant,
+          null,
+          null,
+          `<b>${variant}</b>: se <a dict="${id}">${title}</a>.`,
+          collected
+        );
+      });
+      createItem(id, title, phrase, variants, body, collected);
     });
-    createItem(id, title, phrase, variants, body, collected);
-  });
   writeJSON(`static/api/dict.json`, items);
 };
 
@@ -1354,7 +1426,10 @@ const build_bibliography_json = collected => {
       if (doc != null) {
         data[filename] = doc.find('//items/item').map(line => {
           return htmlToXml(
-            line.toString().replace('<item>', '').replace('</item>', ''),
+            line
+              .toString()
+              .replace('<item>', '')
+              .replace('</item>', ''),
             collected
           );
         });
@@ -1424,7 +1499,10 @@ const build_about_pages = collected => {
         notes,
         content_lang: 'da',
         content_html: htmlToXml(
-          body.toString().replace('<body>', '').replace('</body>', ''),
+          body
+            .toString()
+            .replace('<body>', '')
+            .replace('</body>', ''),
           collected
         ),
       };
@@ -1463,11 +1541,11 @@ const build_redirects_json = collected => {
 };
 
 const build_todays_events_json = collected => {
-  const portrait_descriptions = Array.from(
-    collected.poets.values()
-  ).map(poet => {
-    return `fdirs/${poet.id}/portraits.xml`;
-  });
+  const portrait_descriptions = Array.from(collected.poets.values()).map(
+    poet => {
+      return `fdirs/${poet.id}/portraits.xml`;
+    }
+  );
   if (!isFileModified(`data/poets.xml`, ...portrait_descriptions)) {
     return;
   }
@@ -1701,17 +1779,15 @@ const update_elasticsearch = collected => {
           let subtitles = null;
           const subtitle = head.get('subtitle');
           if (subtitle && subtitle.find('line').length > 0) {
-            subtitles = subtitle
-              .find('line')
-              .map(s =>
-                replaceDashes(
-                  s
-                    .toString()
-                    .replace('<line>', '')
-                    .replace('</line>', '')
-                    .replace('<line/>', '')
-                )
-              );
+            subtitles = subtitle.find('line').map(s =>
+              replaceDashes(
+                s
+                  .toString()
+                  .replace('<line>', '')
+                  .replace('</line>', '')
+                  .replace('<line/>', '')
+              )
+            );
           } else if (subtitle) {
             const subtitleString = subtitle
               .toString()

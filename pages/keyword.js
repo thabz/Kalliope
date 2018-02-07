@@ -18,10 +18,10 @@ import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
 import type { Lang, Keyword } from './helpers/types.js';
-import 'isomorphic-fetch';
 import * as Paths from './helpers/paths.js';
 import * as Client from './helpers/client.js';
 import { createURL } from './helpers/client.js';
+import * as OpenGraph from './helpers/opengraph.js';
 import ErrorPage from './error.js';
 
 export default class extends React.Component {
@@ -64,7 +64,7 @@ export default class extends React.Component {
         sidebar.push(<FootnoteList />);
       }
       if (keyword.pictures.length > 0) {
-        sidebar.push(renderedPictures);
+        sidebar.push(<div key="sidebarpictures">{renderedPictures}</div>);
       }
     }
     const body = (
@@ -89,16 +89,23 @@ export default class extends React.Component {
       );
     }
     const headTitle = `${keyword.title} - Kalliope`;
+    const ogTitle = keyword.title;
+    const ogDescription = OpenGraph.trimmedDescription(keyword.content_html);
+
     return (
       <div>
         <FootnoteContainer>
-          <Head headTitle={headTitle} />
+          <Head
+            headTitle={headTitle}
+            ogTitle={ogTitle}
+            description={ogDescription}
+          />
           <Main>
             <Nav lang={lang} links={navbar} title={keyword.title} />
             <Heading title={title} />
             <KalliopeTabs lang={lang} selected="keywords" />
             <SidebarSplit sidebar={sidebar}>
-              <div>
+              <div key="content">
                 <article>
                   <SubHeading>{keyword.title}</SubHeading>
                   {author}

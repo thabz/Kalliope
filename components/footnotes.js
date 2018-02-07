@@ -2,10 +2,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export class Footnote extends Component {
-  props: {
-    text: *,
-  };
+type FootnoteProps = {
+  text: *,
+};
+export class Footnote extends Component<FootnoteProps> {
   context: {
     footnoteContainer: FootnoteContainer,
   };
@@ -46,13 +46,9 @@ export class FootnoteList extends Component {
       return (
         <div className="footnote" key={i + text}>
           <div className="footnote-num">
-            <a href={anchor}>
-              {i + 1}.
-            </a>
+            <a href={anchor}>{i + 1}.</a>
           </div>
-          <div className="footnote-text">
-            {text}
-          </div>
+          <div className="footnote-text">{text}</div>
         </div>
       );
     });
@@ -92,11 +88,11 @@ FootnoteList.contextTypes = {
   footnoteContainer: PropTypes.object,
 };
 
-export class FootnoteContainer extends Component {
+type FootnoteContainerProps = {
+  children?: *,
+};
+export class FootnoteContainer extends Component<FootnoteContainerProps> {
   _footnotes: Array<Footnote>;
-  props: {
-    children?: *,
-  };
   constructor() {
     super();
     this._footnotes = [];
@@ -124,11 +120,7 @@ export class FootnoteContainer extends Component {
     return this._footnotes.indexOf(footnote) + 1;
   }
   render() {
-    return (
-      <div>
-        {this.props.children}
-      </div>
-    );
+    return <div>{this.props.children}</div>;
   }
 }
 

@@ -16,13 +16,14 @@ import * as Client from './helpers/client.js';
 import ErrorPage from './error.js';
 import CommonData from './helpers/commondata.js';
 import type { Lang, Poet, Work, Error } from './helpers/types.js';
+import _ from '../pages/helpers/translations.js';
 
 export default class extends React.Component {
   props: {
     lang: Lang,
     poet: Poet,
     works: Array<Work>,
-    Error: ?Error,
+    error: ?Error,
   };
 
   static async getInitialProps({
@@ -69,26 +70,28 @@ export default class extends React.Component {
     };
 
     const list =
-      works.length == 0
-        ? <div className="nodata">
-            Kalliope indeholder endnu ingen tekster fra denne digter.
-          </div>
-        : sortWorks(works).map((work, i) => {
-            const workName = <WorkName work={work} />;
-            const url = `/${lang}/work/${poet.id}/${work.id}`;
-            const name = work.has_content
-              ? <Link route={url}>
-                  <a title={work.year}>
-                    {workName}
-                  </a>
-                </Link>
-              : workName;
-            return (
-              <div className="list-section-line" key={i + work.id}>
-                {name}
-              </div>
-            );
-          });
+      works.length == 0 ? (
+        <div className="nodata">
+          Kalliope indeholder endnu ingen tekster fra denne digter.
+        </div>
+      ) : (
+        sortWorks(works).map((work, i) => {
+          const workName = <WorkName work={work} lang={lang} />;
+          const url = `/${lang}/work/${poet.id}/${work.id}`;
+          const name = work.has_content ? (
+            <Link route={url}>
+              <a title={work.year}>{workName}</a>
+            </Link>
+          ) : (
+            workName
+          );
+          return (
+            <div className="list-section-line" key={i + work.id}>
+              {name}
+            </div>
+          );
+        })
+      );
 
     const title = <PoetName poet={poet} includePeriod />;
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
@@ -96,8 +99,8 @@ export default class extends React.Component {
       <div>
         <Head headTitle={headTitle} />
         <Main>
-          <Nav lang={lang} poet={poet} title="Værker" />
-          <Heading title={title} subtitle="Værker" />
+          <Nav lang={lang} poet={poet} title={_('Værker', lang)} />
+          <Heading title={title} subtitle={_('Værker', lang)} />
           <PoetTabs lang={lang} poet={poet} selected="works" />
           <div className="two-columns" style={{ lineHeight: 1.7 }}>
             {list}

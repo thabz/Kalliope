@@ -30,12 +30,11 @@ export const parseDate = (date: ?string) => {
   return { prefix, year, month, day };
 };
 
-export default class FormattedDate extends React.Component {
-  props: {
-    lang: Lang,
-    date: ?string,
-  };
-
+type FormattedDateProps = {
+  lang: Lang,
+  date: ?string,
+};
+export default class FormattedDate extends React.Component<FormattedDateProps> {
   render() {
     const { lang, date } = this.props;
 
