@@ -143,7 +143,7 @@ export type Keyword = {
   has_footnotes: boolean,
 };
 
-export type AboutPage = {
+export type AboutItem = {
   id: string,
   title: string,
   is_draft: boolean,
