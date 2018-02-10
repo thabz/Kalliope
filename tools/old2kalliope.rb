@@ -143,10 +143,10 @@ File.readlines(ARGV[0]).each do |line|
   if @state == 'NONE' and line =~ /^DATO:/
       @date = line[5..-1].strip
   end
-  if @state == 'NONE' and line =~ /^T:/
+  if @state == 'NONE' and (line =~ /^T:/ or line =~ /^ID:/)
     @state = 'INHEAD'
   end
-  if @state == 'INBODY' and line.start_with?("T:")
+  if @state == 'INBODY' and (line.start_with?("T:") or line.start_with?("ID:"))
     printPoem()
     @state = 'INHEAD'
   end

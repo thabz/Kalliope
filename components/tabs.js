@@ -3,6 +3,7 @@ import React from 'react';
 import { Link, Router } from '../routes';
 import * as Links from './links.js';
 import { poetGenetiveLastName } from './poetname.js';
+import _ from '../pages/helpers/translations.js';
 import type { Lang, Poet, Country } from '../pages/helpers/types.js';
 import CommonData from '../pages/helpers/commondata.js';
 
@@ -180,19 +181,23 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
     let placeholder = null;
     if (poet != null && poet.has_texts) {
       const genetiveLastName = poetGenetiveLastName(poet, lang);
-      placeholder = `Søg i ${genetiveLastName} værker`;
+      placeholder = _('Søg i {genetiveLastName} værker', lang, {
+        genetiveLastName,
+      });
     } else {
       if (country === 'dk') {
-        placeholder = `Søg i Kalliope`;
+        placeholder = _('Søg i Kalliope', lang);
       } else {
         const countryData = CommonData.countries.filter(
           x => x.code === country
         );
         if (countryData.length > 0) {
           const adjective = countryData[0].adjective[lang];
-          placeholder = `Søg i Kalliopes ${adjective} samling`;
+          placeholder = _('Søg i Kalliopes {adjective} samling', lang, {
+            adjective,
+          });
         } else {
-          placeholder = `Søg i Kalliope`;
+          placeholder = _('Søg i Kalliope', lang);
         }
       }
     }
@@ -450,31 +455,31 @@ export class PoetTabs extends React.Component<PoetTabsProps> {
     }> = [
       {
         id: 'works',
-        title: 'Værker',
+        title: _('Værker', lang),
         hide: !poet.has_works,
         url: Links.worksURL(lang, poet.id),
       },
       {
         id: 'titles',
-        title: 'Digttitler',
+        title: _('Digttitler', lang),
         hide: !poet.has_poems,
         url: Links.textsURL(lang, poet.id, 'titles'),
       },
       {
         id: 'first',
-        title: 'Førstelinjer',
+        title: _('Førstelinjer', lang),
         hide: !poet.has_poems,
         url: Links.textsURL(lang, poet.id, 'first'),
       },
       {
         id: 'bibliography',
-        title: 'Bibliografi',
+        title: _('Bibliografi', lang),
         hide: !poet.has_bibliography,
         url: Links.bibliographyURL(lang, poet.id),
       },
       {
         id: 'bio',
-        title: 'Biografi',
+        title: _('Biografi', lang),
         hide: !poet.has_biography,
         url: Links.bioURL(lang, poet.id),
       },
@@ -503,10 +508,22 @@ export class KalliopeTabs extends React.Component<KalliopeTabsProps> {
     const { lang, selected, country, query } = this.props;
     const tabs = [
       { id: 'index', title: 'Kalliope', url: Links.frontPageURL(lang) },
-      { id: 'poets', title: 'Digtere', url: Links.poetsURL(lang, 'name') },
-      { id: 'keywords', title: 'Nøgleord', url: Links.keywordsURL(lang) },
+      {
+        id: 'poets',
+        title: _('Digtere', lang),
+        url: Links.poetsURL(lang, 'name'),
+      },
+      {
+        id: 'keywords',
+        title: _('Nøgleord', lang),
+        url: Links.keywordsURL(lang),
+      },
       //{ id: 'dictionary', title: 'Ordbog', url: Links.dictionaryURL(lang) },
-      { id: 'about', title: 'Om', url: Links.aboutURL(lang, 'kalliope') },
+      {
+        id: 'about',
+        title: _('Om', lang),
+        url: Links.aboutURL(lang, 'kalliope'),
+      },
     ];
     return (
       <Tabs

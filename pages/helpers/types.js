@@ -40,7 +40,11 @@ export type Poet = {
     christened?: string,
     realname?: string,
   },
-  period: ?{ born?: DateWithPlace, dead?: DateWithPlace },
+  period: ?{
+    born?: DateWithPlace,
+    dead?: DateWithPlace,
+    coronation?: DateWithPlace,
+  },
   has_bibliography: boolean,
   has_biography: boolean,
   has_works: boolean,
