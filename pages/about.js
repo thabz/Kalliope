@@ -21,7 +21,7 @@ import type {
   Lang,
   NewsItem,
   TextContentType,
-  Keyword,
+  AboutItem,
 } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 
@@ -29,7 +29,7 @@ import { createURL } from './helpers/client.js';
 
 type AboutProps = {
   lang: Lang,
-  keyword: Keyword,
+  keyword: AboutItem,
   aboutItemId: string,
   error: ?Error,
 };
@@ -62,6 +62,7 @@ export default class extends React.Component<AboutProps> {
 
     const renderedPictures = (
       <SidebarPictures
+        key="pictures"
         lang={lang}
         pictures={keyword.pictures}
         showDropShadow={aboutItemId !== 'kalliope'}

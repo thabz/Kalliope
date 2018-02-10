@@ -143,6 +143,18 @@ export type Keyword = {
   has_footnotes: boolean,
 };
 
+export type AboutPage = {
+  id: string,
+  title: string,
+  is_draft: boolean,
+  author?: string,
+  notes: Array<NoteItem>,
+  pictures: Array<PictureItem>,
+  content_html: TextContentType,
+  content_lang: TextLang,
+  has_footnotes: boolean,
+};
+
 export type DictItem = {
   id: string,
   title: string,

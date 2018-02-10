@@ -48,7 +48,14 @@ export default class Head extends React.Component<HeadProps> {
       hreflangs = ['da', 'en'].map(lang => {
         const alternatePath = requestPath.replace(/^\/../, '/' + lang);
         const alternateURL = urlPrefix + alternatePath;
-        return <link rel="alternate" hreflang={lang} href={alternateURL} />;
+        return (
+          <link
+            rel="alternate"
+            hreflang={lang}
+            href={alternateURL}
+            key={lang}
+          />
+        );
       });
     }
     return (
