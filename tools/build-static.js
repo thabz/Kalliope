@@ -135,6 +135,18 @@ const build_global_timeline = collected => {
 };
 
 const build_poet_timeline_json = (poet, collected) => {
+  const inonToString = (inon, lang) => {
+    const translations = {
+      'da*in': 'i',
+      'da*on': 'på',
+      'da*by': 'ved',
+      'en*in': 'in',
+      'en*on': 'on',
+      'en*by': 'by',
+    };
+    return translations[lang + '*' + inon];
+  };
+
   let items = [];
   if (poet.type !== 'collection') {
     collected.workids.get(poet.id).forEach(workId => {
@@ -157,7 +169,11 @@ const build_poet_timeline_json = (poet, collected) => {
     });
     if (poet.period.born.date !== '?') {
       const place = (poet.period.born.place != null
-        ? ' i ' + poet.period.born.place + ''
+        ? '  ' +
+          inonToString(poet.period.born.inon, 'da') +
+          ' ' +
+          poet.period.born.place +
+          ''
         : ''
       ).replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.
       items.push({
@@ -172,7 +188,10 @@ const build_poet_timeline_json = (poet, collected) => {
     }
     if (poet.period.dead.date !== '?') {
       const place = (poet.period.dead.place != null
-        ? ' i ' + poet.period.dead.place
+        ? ' ' +
+          inonToString(poet.period.dead.inon, 'da') +
+          ' ' +
+          poet.period.dead.place
         : ''
       ).replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.;
       items.push({
@@ -374,18 +393,21 @@ const build_poets_json = () => {
         period.born = {
           date: safeGetText(bornE, 'date'),
           place: safeGetText(bornE, 'place'),
+          inon: safeGetAttr(bornE.get('place'), 'inon') || 'in',
         };
       }
       if (deadE) {
         period.dead = {
           date: safeGetText(deadE, 'date'),
           place: safeGetText(deadE, 'place'),
+          inon: safeGetAttr(deadE.get('place'), 'inon') || 'in',
         };
       }
       if (coronationE) {
         period.coronation = {
           date: safeGetText(coronationE, 'date'),
           place: safeGetText(coronationE, 'place'),
+          inon: safeGetAttr(coronationE.get('place'), 'inon') || 'in',
         };
       }
     }
@@ -1774,7 +1796,10 @@ const update_elasticsearch = collected => {
           const textId = text.attr('id').value();
           const head = text.get('head');
           const body = text.get('body');
-          const title = head.get('title') ? head.get('title').text() : null;
+          const title =
+            safeGetText(head, 'linktitle') ||
+            safeGetText(head, 'title') ||
+            safeGetText(head, 'firstline');
           const keywords = head.get('keywords');
           let subtitles = null;
           const subtitle = head.get('subtitle');
