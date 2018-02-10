@@ -23,6 +23,7 @@ import * as Client from './helpers/client.js';
 import { createURL } from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
 import ErrorPage from './error.js';
+import _ from '../pages/helpers/translations.js';
 
 export default class extends React.Component {
   props: {
@@ -50,6 +51,7 @@ export default class extends React.Component {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
     }
+    const requestPath = `/${lang}/keyword/${keyword.id}`;
 
     const renderedPictures = (
       <SidebarPictures
@@ -76,7 +78,7 @@ export default class extends React.Component {
     );
     const navbar = [
       <Link route={Links.keywordsURL(lang)}>
-        <a>Nøgleord</a>
+        <a>{_('Nøgleord', lang)}</a>
       </Link>,
     ];
     const title = keyword.title;
@@ -99,6 +101,7 @@ export default class extends React.Component {
             headTitle={headTitle}
             ogTitle={ogTitle}
             description={ogDescription}
+            requestPath={requestPath}
           />
           <Main>
             <Nav lang={lang} links={navbar} title={keyword.title} />
@@ -113,7 +116,7 @@ export default class extends React.Component {
                 </article>
               </div>
             </SidebarSplit>
-            <LangSelect lang={lang} />
+            <LangSelect lang={lang} path={requestPath} />
           </Main>
         </FootnoteContainer>
       </div>

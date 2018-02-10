@@ -27,14 +27,13 @@ import { createURL } from './helpers/client.js';
 
 // Koden er stort set identisk med keyword
 
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    keyword: Keyword,
-    aboutItemId: string,
-    error: ?Error,
-  };
-
+type AboutProps = {
+  lang: Lang,
+  keyword: Keyword,
+  aboutItemId: string,
+  error: ?Error,
+};
+export default class extends React.Component<AboutProps> {
   static async getInitialProps({
     query: { lang, aboutItemId },
   }: {
@@ -59,6 +58,7 @@ export default class extends React.Component {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
     }
+    const requestPath = `/${lang}/about/${aboutItemId}`;
 
     const renderedPictures = (
       <SidebarPictures
@@ -106,12 +106,8 @@ export default class extends React.Component {
     if (aboutItemId === 'thanks') {
       pageBody = (
         <div className="thanks-list">
-          <SubHeading>
-            {keyword.title}
-          </SubHeading>
-          <TwoColumns>
-            {body}
-          </TwoColumns>
+          <SubHeading>{keyword.title}</SubHeading>
+          <TwoColumns>{body}</TwoColumns>
           <style jsx>{`
             .thanks-list {
               line-height: 1.7;
@@ -123,13 +119,9 @@ export default class extends React.Component {
       pageBody = (
         <SidebarSplit sidebar={sidebar}>
           <div>
-            <SubHeading>
-              {keyword.title}
-            </SubHeading>
+            <SubHeading>{keyword.title}</SubHeading>
             {author}
-            <div className="about-body">
-              {body}
-            </div>
+            <div className="about-body">{body}</div>
             <style jsx>{`
               .about-body {
                 line-height: 1.6;
@@ -143,13 +135,13 @@ export default class extends React.Component {
 
     return (
       <div>
-        <Head headTitle="Kalliope" />
+        <Head headTitle="Kalliope" requestPath={requestPath} />
         <Main>
           <Nav lang="da" links={navbar} title={keyword.title} />
           <Heading title="Kalliope" />
           <KalliopeTabs lang={lang} selected="about" />
           {pageBody}
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

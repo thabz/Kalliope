@@ -42,6 +42,7 @@ export default class extends React.Component {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt digter" />;
     }
+    const requestPath = `/${lang}/works/${poet.id}`;
 
     if (works.length === 0) {
       const bioURL = Links.bioURL(lang, poet.id);
@@ -97,7 +98,7 @@ export default class extends React.Component {
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
     return (
       <div>
-        <Head headTitle={headTitle} />
+        <Head headTitle={headTitle} requestPath={requestPath} />
         <Main>
           <Nav lang={lang} poet={poet} title={_('Værker', lang)} />
           <Heading title={title} subtitle={_('Værker', lang)} />
@@ -111,7 +112,7 @@ export default class extends React.Component {
               }
             `}</style>
           </div>
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

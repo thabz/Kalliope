@@ -17,15 +17,14 @@ import * as Client from './helpers/client.js';
 import type { Lang, Poet, Work, TextContentType } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    poet: Poet,
-    primary: Array<TextContentType>,
-    secondary: Array<TextContentType>,
-    Error: ?Error,
-  };
-
+type BibliographyProps = {
+  lang: Lang,
+  poet: Poet,
+  primary: Array<TextContentType>,
+  secondary: Array<TextContentType>,
+  error: ?Error,
+};
+export default class extends React.Component<BibliographyProps> {
   static async getInitialProps({
     query: { lang, poetId },
   }: {
@@ -47,6 +46,7 @@ export default class extends React.Component {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
     }
+    const requestPath = `/${lang}/bibliography/${poet.id}`;
 
     const sections = [primary, secondary]
       .map((list, i) => {
@@ -96,13 +96,13 @@ export default class extends React.Component {
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
     return (
       <div>
-        <Head headTitle={headTitle} />
+        <Head headTitle={headTitle} requestPath={requestPath} />
         <Main>
           <Nav lang={lang} poet={poet} title={_('Bibliografi', lang)} />
           <Heading title={title} subtitle={_('Bibliografi', lang)} />
           <PoetTabs lang={lang} poet={poet} selected="bibliography" />
           <TwoColumns>{sections}</TwoColumns>
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );
