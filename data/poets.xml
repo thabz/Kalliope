@@ -5956,7 +5956,7 @@
       <place>East Dereham, Norfolk</place>
     </dead>
   </period>
-  <works>1779</works>
+  <works>1779,andre</works>
 </person>
 
 <person id="macpherson" country="gb" lang="en" type="poet">
@@ -6491,6 +6491,26 @@
   </period>
   <works>andre</works>
 </person>
+
+<person id="eliot" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>George</firstname>
+    <lastname>Eliot</lastname>
+    <fullname>Mary Anne Evans</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1819-11-22</date>
+      <place>Nuneaton, Warwickshire</place>
+    </born>
+    <dead>
+      <date>1880-12-22</date>
+      <place>Chelsea, Middlesex</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 
 <person id="rossettid" country="gb" lang="en" type="poet">
   <name>
