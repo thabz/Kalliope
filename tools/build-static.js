@@ -1831,10 +1831,10 @@ const build_sitemap_xml = collected => {
       return `https://kalliope.org/static/sitemaps/${poet.id}.xml`;
     })
     .map(url => {
-      return `  <url><loc>${url}</loc></url>`;
+      return `  <sitemap><loc>${url}</loc></sitemap>`;
     });
   sitemaps_urls_xml.push(
-    `  <url><loc>https://kalliope.org/static/sitemaps/global.xml</loc></url>`
+    `  <sitemap><loc>https://kalliope.org/static/sitemaps/global.xml</loc></sitemap>`
   );
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml +=
