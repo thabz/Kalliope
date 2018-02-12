@@ -1782,7 +1782,7 @@ const build_sitemap_xml = collected => {
     collected.poets.forEach((poet, poetId) => {
       urls.push(`https://kalliope.org/${lang}/bio/${poetId}`);
       if (poet.has_bibliography) {
-        urls.push(`https://kalliope.org/${lang}/bibliography/${poetId}/`);
+        urls.push(`https://kalliope.org/${lang}/bibliography/${poetId}`);
       }
     });
   });
