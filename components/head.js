@@ -51,7 +51,7 @@ export default class Head extends React.Component<HeadProps> {
         return (
           <link
             rel="alternate"
-            hreflang={lang}
+            hrefLang={lang}
             href={alternateURL}
             key={lang}
           />
