@@ -18,6 +18,7 @@ const {
   fileExists,
   safeMkdir,
   writeJSON,
+  writeText,
   loadXMLDoc,
   htmlToXml,
   replaceDashes,
@@ -1759,6 +1760,38 @@ const build_image_thumbnails = () => {
   handleDirRecursive('static/kunst');
 };
 
+const build_sitemap_xml = collected => {
+  let urls = [];
+  ['da', 'en'].forEach(lang => {
+    urls.push(`https://kalliope.org/${lang}/`);
+    urls.push(`https://kalliope.org/${lang}/keywords`);
+    collected.poets.forEach((poet, poetId) => {
+      urls.push(`https://kalliope.org/${lang}/bio/${poetId}`);
+      if (poet.has_poems) {
+        urls.push(`https://kalliope.org/${lang}/texts/${poetId}/titles`);
+        urls.push(`https://kalliope.org/${lang}/texts/${poetId}/first`);
+      }
+      if (poet.has_bibliography) {
+        urls.push(`https://kalliope.org/${lang}/bibliography/${poetId}/`);
+      }
+      if (poet.has_works) {
+        urls.push(`https://kalliope.org/${lang}/works/${poetId}`);
+        collected.workids.get(poetId).forEach(workId => {
+          urls.push(`https://kalliope.org/${lang}/work/${poetId}/${workId}`);
+        });
+      }
+    });
+  });
+  let xmlUrls = urls.map(url => {
+    return `  <url><loc>${url}</loc></url>`;
+  });
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+  xml += xmlUrls.join('\n');
+  xml += '\n</urlset>\n';
+  writeText('static/sitemap.xml', xml);
+};
+
 const update_elasticsearch = collected => {
   const inner_update_elasticsearch = () => {
     collected.poets.forEach((poet, poetId) => {
@@ -1894,6 +1927,8 @@ b('build_about_pages', build_about_pages, collected);
 b('build_dict_second_pass', build_dict_second_pass, collected);
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
+b('build_sitemap_xml', build_sitemap_xml, collected);
+
 b('build_image_thumbnails', build_image_thumbnails);
 b('update_elasticsearch', update_elasticsearch, collected);
 
