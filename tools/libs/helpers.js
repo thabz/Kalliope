@@ -43,6 +43,10 @@ const writeJSON = (filename, data) => {
   fs.writeFileSync(filename, json);
 };
 
+const writeText = (filename, text) => {
+  fs.writeFileSync(filename, text);
+};
+
 const loadXMLDoc = filename => {
   const data = loadFile(filename);
   if (data == null) {
@@ -258,6 +262,7 @@ module.exports = {
   loadJSON,
   loadFile,
   writeJSON,
+  writeText,
   loadXMLDoc,
   htmlToXml,
   replaceDashes,

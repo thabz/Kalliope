@@ -25,6 +25,10 @@ caches
 # Generated JSON files
 static/api
 
+# Generated XML sitemap
+static/sitemap.xml    
+static/sitemaps/*.xml
+
 # Generated thumbnails
 static/**/*-w????.jpg
 static/**/*-w???.jpg

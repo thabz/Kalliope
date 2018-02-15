@@ -46,6 +46,7 @@ export default class extends React.Component {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt ord" />;
     }
+    const requestPath = `/${lang}/dict/${item.id}`;
 
     const sidebar = item.has_footnotes ? (
       <div>
@@ -71,7 +72,7 @@ export default class extends React.Component {
       );
     }
     const navbar = [
-      <Link href={Links.dictionaryURL(lang)}>
+      <Link route={Links.dictionaryURL(lang)}>
         <a>Ordbog</a>
       </Link>,
     ];
@@ -80,7 +81,7 @@ export default class extends React.Component {
     return (
       <div>
         <FootnoteContainer>
-          <Head headTitle={headTitle} />
+          <Head headTitle={headTitle} requestPath={requestPath} />
           <Main>
             <Nav lang={lang} links={navbar} title={item.title} />
             <Heading title={title} />
@@ -93,7 +94,7 @@ export default class extends React.Component {
                 <div style={{ lineHeight: 1.6 }}>{body}</div>
               </div>
             </SidebarSplit>
-            <LangSelect lang={lang} />
+            <LangSelect lang={lang} path={requestPath} />
           </Main>
         </FootnoteContainer>
       </div>

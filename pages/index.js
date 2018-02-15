@@ -215,6 +215,7 @@ export default class extends React.Component {
 
   render() {
     const { lang, news, todaysEvents, pagingContext } = this.props;
+    const requestPath = `/${lang}/`;
 
     let navPaging = null;
     if (pagingContext != null) {
@@ -235,7 +236,7 @@ export default class extends React.Component {
 
     return (
       <div>
-        <Head headTitle="Kalliope" />
+        <Head headTitle="Kalliope" requestPath={requestPath} />
         <Main>
           <Nav lang="da" rightSide={navPaging} />
           <Heading title="Kalliope" />
@@ -246,7 +247,7 @@ export default class extends React.Component {
               {renderedNews}
             </div>
           </SidebarSplit>
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

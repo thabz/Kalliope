@@ -1,9 +1,9 @@
 // @flow
+
 import React from 'react';
 import NextHead from 'next/head';
-import { string } from 'prop-types';
 
-const urlPrefix = 'https://kalliope.org';
+const urlPrefix: string = 'https://kalliope.org';
 const defaultDescription =
   'Kalliope er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning.';
 const defaultOGURL = urlPrefix;
@@ -15,10 +15,18 @@ type HeadProps = {
   description?: ?string,
   url?: string,
   ogImage?: ?string,
+  requestPath?: string,
 };
 export default class Head extends React.Component<HeadProps> {
   render() {
-    const { ogTitle, headTitle, description, url, ogImage } = this.props;
+    const {
+      ogTitle,
+      headTitle,
+      description,
+      url,
+      ogImage,
+      requestPath,
+    } = this.props;
 
     const appleTouchIcons = [180, 152, 120, 76, 60].map(s => {
       const x = `${s}x${s}`;
@@ -35,6 +43,21 @@ export default class Head extends React.Component<HeadProps> {
     if (!ogImageAbsolute.startsWith('http')) {
       ogImageAbsolute = `${urlPrefix}${ogImageAbsolute}`;
     }
+    let hreflangs = [];
+    if (requestPath != null) {
+      hreflangs = ['da', 'en'].map(lang => {
+        const alternatePath = requestPath.replace(/^\/../, '/' + lang);
+        const alternateURL = urlPrefix + alternatePath;
+        return (
+          <link
+            rel="alternate"
+            hrefLang={lang}
+            href={alternateURL}
+            key={lang}
+          />
+        );
+      });
+    }
     return (
       <NextHead>
         <meta charSet="UTF-8" />
@@ -47,6 +70,7 @@ export default class Head extends React.Component<HeadProps> {
         <link rel="mask-icon" href="/static/favicon-mask.svg" color="black" />
         <link rel="icon" href="/static/favicon.ico" />
         <link rel="manifest" href="/static/manifest.json" />
+        {hreflangs}
         <meta name="theme-color" content="rgb(139, 56, 65)" />
         <meta property="og:site_name" content="www.kalliope.org" />
         {/*<meta property="og:url" content={url || defaultOGURL} />*/}

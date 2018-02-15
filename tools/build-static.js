@@ -18,6 +18,7 @@ const {
   fileExists,
   safeMkdir,
   writeJSON,
+  writeText,
   loadXMLDoc,
   htmlToXml,
   replaceDashes,
@@ -135,6 +136,18 @@ const build_global_timeline = collected => {
 };
 
 const build_poet_timeline_json = (poet, collected) => {
+  const inonToString = (inon, lang) => {
+    const translations = {
+      'da*in': 'i',
+      'da*on': 'på',
+      'da*by': 'ved',
+      'en*in': 'in',
+      'en*on': 'on',
+      'en*by': 'by',
+    };
+    return translations[lang + '*' + inon];
+  };
+
   let items = [];
   if (poet.type !== 'collection') {
     collected.workids.get(poet.id).forEach(workId => {
@@ -157,7 +170,11 @@ const build_poet_timeline_json = (poet, collected) => {
     });
     if (poet.period.born.date !== '?') {
       const place = (poet.period.born.place != null
-        ? ' i ' + poet.period.born.place + ''
+        ? '  ' +
+          inonToString(poet.period.born.inon, 'da') +
+          ' ' +
+          poet.period.born.place +
+          ''
         : ''
       ).replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.
       items.push({
@@ -172,7 +189,10 @@ const build_poet_timeline_json = (poet, collected) => {
     }
     if (poet.period.dead.date !== '?') {
       const place = (poet.period.dead.place != null
-        ? ' i ' + poet.period.dead.place
+        ? ' ' +
+          inonToString(poet.period.dead.inon, 'da') +
+          ' ' +
+          poet.period.dead.place
         : ''
       ).replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.;
       items.push({
@@ -374,18 +394,21 @@ const build_poets_json = () => {
         period.born = {
           date: safeGetText(bornE, 'date'),
           place: safeGetText(bornE, 'place'),
+          inon: safeGetAttr(bornE.get('place'), 'inon') || 'in',
         };
       }
       if (deadE) {
         period.dead = {
           date: safeGetText(deadE, 'date'),
           place: safeGetText(deadE, 'place'),
+          inon: safeGetAttr(deadE.get('place'), 'inon') || 'in',
         };
       }
       if (coronationE) {
         period.coronation = {
           date: safeGetText(coronationE, 'date'),
           place: safeGetText(coronationE, 'place'),
+          inon: safeGetAttr(coronationE.get('place'), 'inon') || 'in',
         };
       }
     }
@@ -1737,6 +1760,90 @@ const build_image_thumbnails = () => {
   handleDirRecursive('static/kunst');
 };
 
+const build_sitemap_xml = collected => {
+  safeMkdir(`static/sitemaps`);
+
+  const write_sitemap = (filename, urls) => {
+    let xmlUrls = urls.map(url => {
+      return `  <url><loc>${url}</loc></url>`;
+    });
+    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+    xml += xmlUrls.join('\n');
+    xml += '\n</urlset>\n';
+    writeText(filename, xml);
+  };
+
+  let urls = [];
+  ['da', 'en'].forEach(lang => {
+    urls.push(`https://kalliope.org/${lang}/`);
+    urls.push(`https://kalliope.org/${lang}/keywords`);
+    collected.keywords.forEach((keyword, keywordId) => {
+      urls.push(`https://kalliope.org/${lang}/keyword/${keywordId}`);
+    });
+    collected.poets.forEach((poet, poetId) => {
+      urls.push(`https://kalliope.org/${lang}/bio/${poetId}`);
+      if (poet.has_poems) {
+        urls.push(`https://kalliope.org/${lang}/texts/${poetId}/titles`);
+        urls.push(`https://kalliope.org/${lang}/texts/${poetId}/first`);
+      }
+      if (poet.has_bibliography) {
+        urls.push(`https://kalliope.org/${lang}/bibliography/${poetId}/`);
+      }
+      if (poet.has_works) {
+        urls.push(`https://kalliope.org/${lang}/works/${poetId}`);
+        collected.workids.get(poetId).forEach(workId => {});
+      }
+    });
+  });
+  write_sitemap('static/sitemaps/global.xml', urls);
+
+  collected.poets.forEach((poet, poetId) => {
+    const filenames = collected.workids
+      .get(poetId)
+      .map(workId => `fdirs/${poetId}/${workId}.xml`);
+    if (!isFileModified(...filenames)) {
+      return;
+    }
+    const poet_text_urls = [];
+    ['da', 'en'].forEach(lang => {
+      collected.workids.get(poetId).forEach(workId => {
+        poet_text_urls.push(
+          `https://kalliope.org/${lang}/work/${poetId}/${workId}`
+        );
+        const filename = `fdirs/${poetId}/${workId}.xml`;
+        let doc = loadXMLDoc(filename);
+        if (doc == null) {
+          console.log("Couldn't load", filename);
+        }
+        doc.find('//poem').forEach(part => {
+          const textId = part.attr('id').value();
+          poet_text_urls.push(`https://kalliope.org/${lang}/text/${textId}`);
+        });
+      });
+    });
+    write_sitemap(`static/sitemaps/${poetId}.xml`, poet_text_urls);
+  });
+
+  const sitemaps_urls_xml = Array.from(collected.poets.values())
+    .filter(poet => poet.has_works)
+    .map(poet => {
+      return `https://kalliope.org/static/sitemaps/${poet.id}.xml`;
+    })
+    .map(url => {
+      return `  <sitemap><loc>${url}</loc></sitemap>`;
+    });
+  sitemaps_urls_xml.push(
+    `  <sitemap><loc>https://kalliope.org/static/sitemaps/global.xml</loc></sitemap>`
+  );
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml +=
+    '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">>\n';
+  xml += sitemaps_urls_xml.join('\n');
+  xml += '\n</sitemapindex>\n';
+  writeText('static/sitemap.xml', xml);
+};
+
 const update_elasticsearch = collected => {
   const inner_update_elasticsearch = () => {
     collected.poets.forEach((poet, poetId) => {
@@ -1872,6 +1979,8 @@ b('build_about_pages', build_about_pages, collected);
 b('build_dict_second_pass', build_dict_second_pass, collected);
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
+b('build_sitemap_xml', build_sitemap_xml, collected);
+
 b('build_image_thumbnails', build_image_thumbnails);
 b('update_elasticsearch', update_elasticsearch, collected);
 

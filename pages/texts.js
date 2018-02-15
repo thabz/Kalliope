@@ -83,6 +83,7 @@ export default class extends React.Component {
 
   render() {
     const { lang, poet, type, lines } = this.props;
+    const requestPath = `/${lang}/texts/${poet.id}/${type}`;
 
     const groups = this.groupLines(lines);
     let sections: Array<SectionForRendering> = [];
@@ -123,7 +124,11 @@ export default class extends React.Component {
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
     return (
       <div>
-        <Head headTitle={headTitle} ogTitle={headTitle} />
+        <Head
+          headTitle={headTitle}
+          ogTitle={headTitle}
+          requestPath={requestPath}
+        />
         <Main>
           <Nav
             lang={lang}
@@ -135,7 +140,7 @@ export default class extends React.Component {
           <Heading title={title} />
           <PoetTabs lang={lang} poet={poet} selected={type} />
           {renderedGroups}
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

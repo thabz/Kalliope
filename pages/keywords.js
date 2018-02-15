@@ -49,6 +49,8 @@ export default class extends React.Component {
   render() {
     const { lang, keywords } = this.props;
 
+    const requestPath = `/${lang}/keywords`;
+
     const nonDrafts = keywords.filter(k => !k.is_draft);
     const groups = groupsByLetter(nonDrafts);
     let sections: Array<SectionForRendering> = [];
@@ -68,13 +70,16 @@ export default class extends React.Component {
 
     return (
       <div>
-        <Head headTitle={_('Nøgleord', lang) + ' - Kalliope'} />
+        <Head
+          headTitle={_('Nøgleord', lang) + ' - Kalliope'}
+          requestPath={requestPath}
+        />
         <Main>
           <Nav lang={lang} title={_('Nøgleord', lang)} />
           <Heading title={_('Nøgleord', lang)} />
           <KalliopeTabs lang={lang} selected="keywords" />
           {renderedGroups}
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );
