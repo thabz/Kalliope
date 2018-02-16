@@ -89,6 +89,8 @@ export default class Head extends React.Component<HeadProps> {
         <meta name="twitter:image" content={ogImageAbsolute} />
         <meta property="og:image" content={ogImageAbsolute} />
         <meta property="og:image:width" content="600" />
+        <meta property="og:site_name" content="Kalliope" />
+        <meta property="og:type" content="website" />
       </NextHead>
     );
   }
