@@ -310,7 +310,7 @@
      <html>Det andet guldhorn findes ved Gallehus, Tønder.</html>
    </entry>
    <entry date="1746" type="text">
-     <html>Frederik V (1723-1766) udråbes til konge.</html>
+     <html><a person="frederik5">Frederik V</a> (1723-1766) udråbes til konge.</html>
    </entry>
    <entry date="1748" type="text">
      <html>Det Kongelige Teater åbner på Kongens Nytorv.</html>
@@ -325,13 +325,13 @@
      <html>Aalborg Stifttidende udkommer første gang.</html>
    </entry>
    <entry date="1766" type="text">
-     <html>Christian VII (1749-1808) udråbt til konge.</html>
+     <html><a person="christian7">Christian VII</a> (1749-1808) udråbt til konge.</html>
    </entry>
    <entry date="1767-09-08" type="text">
      <html>August Wilhelm Schlegel født i Hannover.</html>
    </entry>
    <entry date="1771" type="text">
-     <html>Struensee ved magten.</html>
+     <html><a person="struensee">Struensee</a> ved magten.</html>
    </entry>
    <entry date="1771" type="image">
      <src>kunst/juel-struensee-oval.jpg</src>
@@ -399,7 +399,7 @@
      <!-- Ovenstående er Farvelagt stik af G.L. Lahde efter akvarel af C.W. Eckersberg -->
    </entry>
    <entry date="1808" type="text">
-     <html>Christian VII død. Frederik VI (1768-1839) som har haft regeringsmagten siden 1784, udråbes til konge.</html>
+     <html><a person="christian7">Christian VII</a> død. <a person="frederik6">Frederik VI</a> (1768-1839) som har haft regeringsmagten siden 1784, udråbes til konge.</html>
    </entry>
    <entry date="1808-2-20" type="text">
      <html>Danmark erklærer Sverige krig.</html>
@@ -455,13 +455,13 @@
    </entry>
    <entry date="1837" type="image">
      <src>kunst/hansen_et_selskab_af_danske_kunstnere_i_rom.jpg</src>
-     <html>Constantin Hansen: <i>Et Selskab af danske Kunstnere i Rom</i>, 1837, 62x74cm, Statens Museum for Kunst.</html>
+     <html>Constantin Hansen: <i>Et Selskab af danske Kunstnere i Rom</i>, 1837, 62×74cm, Statens Museum for Kunst.</html>
    </entry>
    <entry date="1838-9-17" type="text">
      <html>Thorvaldsen ankommer til København.</html>
    </entry>
    <entry date="1839" type="text">
-     <html>Christian VIII (1786-1848) udråbes til konge.</html>
+     <html><a person="christian8">Christian VIII</a> (1786-1848) udråbes til konge.</html>
    </entry>
    <entry date="1843-02-20" type="text">
        <html>Søren Kierkegaard udgiver <i>Enten - Eller</i>.</html>
@@ -481,11 +481,15 @@
    <entry date="1847-10-21" type="text">
      <html>Edvard Brandes født.</html>
    </entry>
-   <entry date="1848-1-20" type="text">
-     <html>Christian VIII dør, og Frederik VII (1808-1863) udråbes til konge.</html>
+   <entry date="1848-01-20" type="text">
+     <html><a person="christian8">Christian VIII</a> dør, og <a person="frederik7">Frederik VII</a> (1808-1863) udråbes til konge.</html>
    </entry>
    <entry date="1848" type="text">
      <html>Karl Marx udgiver <i>Det kom&#173;munis&#173;tiske Manifest</i>.</html>
+   </entry>
+   <entry date="1848-10-23" type="image">
+     <src>kunst/hansen_grundlovgivende_rigsforsamling.jpg</src>
+     <html>Constantin Hansen: <i>Den Grundlovgivende Rigsforsamling</i>, 1861-65, 338×500cm. Det Nationalhistoriske Museum på Frederiksborg Slot.</html>
    </entry>
    <entry date="1849-6-5" type="text">
      <html>Grundloven underskrives og træder i kraft.</html>
@@ -515,7 +519,7 @@
      <html>Den amerikanske borgerkrig bryder ud.</html>
    </entry>
    <entry date="1863" type="text">
-     <html>Christian IX (1818-1906) udråbes til konge.</html>
+     <html><a person="christian9">Christian IX</a> (1818-1906) udråbes til konge.</html>
    </entry>
    <entry date="1864" type="text">
      <html>Dansk nederlag ved Dybbøl til Preussen/Østrig.</html>
@@ -562,13 +566,13 @@
      <html>Dagbladet Politiken udkommer første gang.</html>
    </entry>
    <entry date="1890-12-21" type="text">
-     <html>Johanne Luise Heiberg død.</html>
+     <html><a person="heibergjohanne">Johanne Luise Heiberg</a> død.</html>
    </entry>
    <entry date="1893-08-04" type="text">
      <html>Tom Kristensen født.</html>
    </entry>
    <entry date="1898-01-13" type="text">
-     <html>Kaj Munk født.</html>
+     <html><a person="munk">Kaj Munk</a> født.</html>
    </entry>
    <entry date="1901" type="text">
      <html>Systemskiftet. Venstre overtager magten i Danmark efter at have været i flertal i folketinget siden 1872.</html>
@@ -592,7 +596,7 @@
      <html>Ellehammer flyver.</html>
    </entry>
    <entry date="1906" type="text">
-     <html>Frederik VIII (1843-1912) udråbes til konge.</html>
+     <html><a person="frederik8">Frederik VIII</a> (1843-1912) udråbes til konge.</html>
    </entry>
    <entry date="1906" type="text">
      <html>Nordisk Film grundlægges.</html>
@@ -655,7 +659,7 @@
      <html>Verdensbanken oprettet.</html>
    </entry>
    <entry date="1944-01-04" type="text">
-     <html>Kaj Munk død.</html>
+     <html><a poet="munk">Kaj Munk</a> død.</html>
    </entry>
    <entry date="1945-10-24" type="text">
      <html>De Forenede Nationer stiftes.</html>
