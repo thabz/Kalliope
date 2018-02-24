@@ -230,6 +230,7 @@
 'floi/fløi',
 'Torst/Tørst',
 'Hor(\W)/Hør\1',
+'Ovi[^d]/Qvi\1', # Qvinde, Quist
 'Aftenrode/Aftenrøde',
 'Morgenrode/Morgenrøde',
 ' rode / røde ',
@@ -247,6 +248,7 @@
 'Lon/Løn',
 'Lovet/Løvet',
 'Ilv/Hv',
+'Jis/Iis',
 'Elstov/Elskov',
 'Elste/Elske',
 'Elflov/Elskov',
