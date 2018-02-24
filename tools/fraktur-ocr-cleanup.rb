@@ -228,6 +228,7 @@
 'Morkt/Mørkt',
 'Nod/Nød',
 'floi/fløi',
+'Floi/Fløi',
 'Torst/Tørst',
 'Hor(\W)/Hør\1',
 'Ovi[^d]/Qvi\1', # Qvinde, Quist
