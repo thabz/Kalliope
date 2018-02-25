@@ -4,7 +4,14 @@
 <workhead>
    <title>Pil og Plekter</title>
    <year>1910</year>
-   <quality>korrektur1</quality>
+    <notes>
+        <note>Kilde er P. A. Rosenberg: <i>Pil og Plekter</i>, Nationale Forfatteres Forlag, Kbh., 1910.</note>
+    </notes>
+   <pictures>
+       <picture type="frontpage" src="1910-p1.jpg">Forsiden til <i>Pil og Plekter</i>.</picture>
+       <picture type="titlepage" src="1910-p2.jpg">Titelbladet til <i>Pil og Plekter</i> (1910) lyder ,,Pil og Plekter / Digte / af / P. A. Rosenberg // København / Nationale Forfatteres Forlag / 1910''</picture>
+   </pictures>
+   <quality>korrektur1,kilde,side</quality>
 </workhead>
 <workbody>
 
@@ -2167,7 +2174,7 @@ Derfor rask! Vi holder sammen. Op til gamle Danmarks Held!
 </body>
 </poem>
 
-<section>
+<section level="3">
 <head>
     <title>Profiler</title>
 </head>
@@ -2813,7 +2820,7 @@ Fjernt til de evige Lande.
     <subtitle>(Til et Maleri af Fritz Berger.)</subtitle>
     <firstline>Trommerne brummer. Der skrider et Tog</firstline>
     <notes>
-        <note>TODO:Find maleriet</note>
+        <!-- TODO: Find maleriet -->
         <note>Teksten følger P. A. Rosenberg: <i>Pil og Plekter</i>, Nationale Forfatteres Forlag, Kbh., 1910, pp. 139-142.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
@@ -2899,7 +2906,7 @@ Laa Fyrsteringen henslængt i Støvet.
     <subtitle>Fra Hussiterkrigenes Tid. Til et Maleri af Georg Knorr.</subtitle>
     <firstline>Jeg fører Eder til en sælsom Tid</firstline>
     <notes>
-        <note>TODO:Find maleriet</note>
+        <!-- TODO: Find maleriet -->
         <note>Teksten følger P. A. Rosenberg: <i>Pil og Plekter</i>, Nationale Forfatteres Forlag, Kbh., 1910, pp. 143-159.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
@@ -4018,12 +4025,13 @@ Og værne om hans Navn.
 
 <poem id="rosenbergpa2018022576">
 <head>
-    <title>Walk Whitman</title>
+    <title>Walt Whitman</title>
     <subtitle>(1884)</subtitle>
     <firstline>Mægtige Seer!</firstline>
     <notes>
         <note>Teksten følger P. A. Rosenberg: <i>Pil og Plekter</i>, Nationale Forfatteres Forlag, Kbh., 1910, pp. 197-202.</note>
     </notes>
+    <keywords>whitman</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5391,7 +5399,7 @@ Og Frihedens Børn rider Sommer i By.
     <toctitle><num>I.</num>XXVII</toctitle>
     <firstline>Ensom og tankefuld de øde Egne</firstline>
     <notes>
-        <note>Gendigtning af Petrarchs sonet <xret poem="petrarca2018021002"/>.</note>
+        <note>Gendigtning af Petrarchs sonet <xref poem="petrarca2018021002"/>.</note>
         <note>Teksten følger P. A. Rosenberg: <i>Pil og Plekter</i>, Nationale Forfatteres Forlag, Kbh., 1910, p. 257.</note>
     </notes>
     <keywords>sonnet,petrarcha</keywords>
@@ -5424,7 +5432,7 @@ Saa længe til min Sjæl, til den maa svare.
     <toctitle><num>II.</num>XVI</toctitle>
     <firstline>Der gives Dyr, hvis Øjne ere slige</firstline>
     <notes>
-        <note>Gendigtning af Petrarchs sonet <xret poem="petrarca2018021001"/>.</note>
+        <note>Gendigtning af Petrarchs sonet <xref poem="petrarca2018021001"/>.</note>
         <note>Teksten følger P. A. Rosenberg: <i>Pil og Plekter</i>, Nationale Forfatteres Forlag, Kbh., 1910, p. 258.</note>
     </notes>
     <keywords>sonnet,petrarcha</keywords>
@@ -5726,7 +5734,7 @@ brød Mig altid nær, som var du aldrig død.
     <toctitle><num>I.</num>Under Indtrykket af en stærk Angst</toctitle>
     <firstline>Du Almagts Aand, dit Væsens Dyb</firstline>
     <notes>
-        <note>Gendigtning af Robert Burns: <xret poem="burns2018021101"/>.</note>
+        <note>Gendigtning af Robert Burns: <xref poem="burns2018021101"/>.</note>
         <note>Teksten følger P. A. Rosenberg: <i>Pil og Plekter</i>, Nationale Forfatteres Forlag, Kbh., 1910, pp. 269-27.</note>
     </notes>
     <keywords>burns</keywords>
@@ -5761,7 +5769,7 @@ Med Taalsomhed og Mod!
     <toctitle><num>II.</num>Bøn ved Dødens Komme</toctitle>
     <firstline>Ukjendte store Almagtsgrund</firstline>
     <notes>
-        <note>Gendigtning af Robert Burns: <xret poem="burns2018021102"/>.</note>
+        <note>Gendigtning af Robert Burns: <xref poem="burns2018021102"/>.</note>
         <note>Teksten følger P. A. Rosenberg: <i>Pil og Plekter</i>, Nationale Forfatteres Forlag, Kbh., 1910, pp. 270-271.</note>
     </notes>
     <keywords>burns</keywords>
@@ -6936,6 +6944,7 @@ Med Sving i venstre eller højre Spand.
     <notes>
         <note>Teksten følger P. A. Rosenberg: <i>Pil og Plekter</i>, Nationale Forfatteres Forlag, Kbh., 1910, p. 324.</note>
     </notes>
+    <keywords>schiller</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
