@@ -31,6 +31,7 @@ import type {
   PictureItem,
   TimelineItem,
   TextContentType,
+  TextLang,
   Error,
 } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
@@ -60,11 +61,11 @@ const dateAndPlace = (
   return result;
 };
 
-class PersonMetaLine extends React.Component {
-  props: {
-    label: string,
-    value: string | ?React$Element<*> | Array<?React$Element<*>>,
-  };
+type PersonMetaLineProps = {
+  label: string,
+  value: ?string | ?React$Element<*> | ?Array<?React$Element<*> | string>,
+};
+class PersonMetaLine extends React.Component<PersonMetaLineProps> {
   render() {
     const { label, value } = this.props;
     if (value == null) {
@@ -88,11 +89,11 @@ class PersonMetaLine extends React.Component {
   }
 }
 
-class PersonMeta extends React.Component {
-  props: {
-    poet: Poet,
-    lang: Lang,
-  };
+type PersonMetaProps = {
+  poet: Poet,
+  lang: Lang,
+};
+class PersonMeta extends React.Component<PersonMetaProps> {
   render() {
     const { poet, lang } = this.props;
     if (poet.type === 'collection') {
@@ -179,12 +180,12 @@ class PersonMeta extends React.Component {
   }
 }
 
-class PersonPortrait extends React.Component {
-  props: {
-    poet: Poet,
-    lang: Lang,
-    portrait?: PictureItem,
-  };
+type PersonPortraitProps = {
+  poet: Poet,
+  lang: Lang,
+  portrait?: PictureItem,
+};
+class PersonPortrait extends React.Component<PersonPortraitProps> {
   render() {
     const { portrait, poet, lang } = this.props;
     if (!poet.has_portraits || portrait == null) {
@@ -194,12 +195,11 @@ class PersonPortrait extends React.Component {
     return <Picture picture={portrait} srcPrefix={srcPrefix} lang={lang} />;
   }
 }
-
-class Timeline extends React.Component {
-  props: {
-    timeline: Array<TimelineItem>,
-    lang: Lang,
-  };
+type TimelineProps = {
+  timeline: Array<TimelineItem>,
+  lang: Lang,
+};
+class Timeline extends React.Component<TimelineProps> {
   render() {
     const { timeline, lang } = this.props;
     if (timeline.length === 0) {
@@ -254,18 +254,16 @@ class Timeline extends React.Component {
     );
   }
 }
-
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    portrait?: PictureItem,
-    poet: Poet,
-    timeline: Array<TimelineItem>,
-    content_html: TextContentType,
-    content_lang: TextLang,
-    Error: ?Error,
-  };
-
+type BioProps = {
+  lang: Lang,
+  portrait?: PictureItem,
+  poet: Poet,
+  timeline: Array<TimelineItem>,
+  content_html: TextContentType,
+  content_lang: TextLang,
+  error: ?Error,
+};
+export default class extends React.Component<BioProps> {
   static async getInitialProps({
     query: { lang, poetId },
   }: {
@@ -297,6 +295,7 @@ export default class extends React.Component {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
     }
+    const requestPath = `/${lang}/bio/${poet.id}`;
 
     const sidebarItems = (
       <SplitWhenSmall key="first-and-on">
@@ -326,6 +325,7 @@ export default class extends React.Component {
           ogTitle={ogTitle}
           ogImage={ogImage}
           description={ogDescription}
+          requestPath={requestPath}
         />
         <Main>
           <Nav lang={lang} poet={poet} title={_('Biografi', lang)} />
@@ -351,7 +351,7 @@ export default class extends React.Component {
               `}</style>
             </div>
           </SidebarSplit>
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

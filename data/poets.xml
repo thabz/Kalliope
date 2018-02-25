@@ -3058,7 +3058,7 @@
       <place>Sotteville-lés-Rouen</place>
     </dead>
   </period>
-  <works>1840,1847,1855,andre</works>
+  <works>1840,1847,1855</works>
 </person>
 
 <person id="lembcke" country="dk" lang="da" type="poet">
@@ -3346,7 +3346,7 @@
       <place>København</place>
     </dead>
   </period>
-  <works>1887,andre</works>
+  <works>1872,1887,andre</works>
 </person>
 
 <person id="schandorph" country="dk" lang="da" type="poet">
@@ -5975,7 +5975,7 @@
       <place>East Dereham, Norfolk</place>
     </dead>
   </period>
-  <works>1779</works>
+  <works>1779,andre</works>
 </person>
 
 <person id="macpherson" country="gb" lang="en" type="poet">
@@ -6510,6 +6510,26 @@
   </period>
   <works>andre</works>
 </person>
+
+<person id="eliot" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>George</firstname>
+    <lastname>Eliot</lastname>
+    <fullname>Mary Anne Evans</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1819-11-22</date>
+      <place>Nuneaton, Warwickshire</place>
+    </born>
+    <dead>
+      <date>1880-12-22</date>
+      <place>Chelsea, Middlesex</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 
 <person id="rossettid" country="gb" lang="en" type="poet">
   <name>

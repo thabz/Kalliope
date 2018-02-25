@@ -18,6 +18,7 @@ const {
   fileExists,
   safeMkdir,
   writeJSON,
+  writeText,
   loadXMLDoc,
   htmlToXml,
   replaceDashes,
@@ -229,6 +230,30 @@ const build_poet_timeline_json = (poet, collected) => {
   return items;
 };
 
+const build_museum_link = picture => {
+  const invNr = safeGetAttr(picture, 'invnr');
+  const objId = safeGetAttr(picture, 'objid');
+  const museum = safeGetAttr(picture, 'museum');
+  if (museum != null && (invNr != null || objId != null)) {
+    let url = null;
+    switch (museum) {
+      case 'thorvaldsens':
+        url = `http://thorvaldsensmuseum.dk/samlingerne/vaerk/${invNr}`;
+        break;
+      case 'smk':
+        url = `http://collection.smk.dk/#/detail/${invNr}`;
+        break;
+      case 'smb':
+        url = `http://www.smb-digital.de/eMuseumPlus?objectId=${objId}`;
+        break;
+      case 'npg':
+        url = `https://www.npg.org.uk/collections/search/portrait/${objId}`;
+        break;
+    }
+    return url == null ? null : ` <a href="${url}">⌘</a>`;
+  }
+};
+
 const build_portrait_json = (poet, collected) => {
   if (!poet.has_portraits) {
     return null;
@@ -246,6 +271,7 @@ const build_portrait_json = (poet, collected) => {
       throw `fdirs/${poet.id}/portraits.xml mangler primary`;
     }
     const primary = primaries[0];
+    const museumLink = build_museum_link(primary) || '';
     data = {
       lang: poet.lang,
       src: primary.attr('src').value(),
@@ -255,7 +281,7 @@ const build_portrait_json = (poet, collected) => {
           .toString()
           .replace(/<picture[^>]*?>/, '')
           .replace('</picture>', '')
-          .trim(),
+          .trim() + museumLink,
         collected
       ),
     };
@@ -511,6 +537,9 @@ const get_pictures = head => {
     const src = picture.attr('src').value();
     const lang = picture.attr('lang') ? picture.attr('lang').value() : 'da';
     const type = picture.attr('type') ? picture.attr('type').value() : null;
+    const invnr = safeGetAttr(picture, 'invnr');
+    const museumLink = build_museum_link(picture) || '';
+
     return {
       src,
       type,
@@ -519,7 +548,7 @@ const get_pictures = head => {
         picture
           .toString()
           .replace(/<picture[^>]*>/, '')
-          .replace('</picture>', ''),
+          .replace('</picture>', '') + museumLink,
         collected
       ),
     };
@@ -1759,6 +1788,96 @@ const build_image_thumbnails = () => {
   handleDirRecursive('static/kunst');
 };
 
+const build_sitemap_xml = collected => {
+  safeMkdir(`static/sitemaps`);
+
+  const write_sitemap = (filename, urls) => {
+    let xmlUrls = urls.map(url => {
+      return `  <url><loc>${url}</loc></url>`;
+    });
+    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+    xml += xmlUrls.join('\n');
+    xml += '\n</urlset>\n';
+    writeText(filename, xml);
+  };
+
+  let urls = [];
+  ['da', 'en'].forEach(lang => {
+    urls.push(`https://kalliope.org/${lang}/`);
+    urls.push(`https://kalliope.org/${lang}/keywords`);
+    collected.keywords.forEach((keyword, keywordId) => {
+      urls.push(`https://kalliope.org/${lang}/keyword/${keywordId}`);
+    });
+    collected.poets.forEach((poet, poetId) => {
+      urls.push(`https://kalliope.org/${lang}/bio/${poetId}`);
+      if (poet.has_bibliography) {
+        urls.push(`https://kalliope.org/${lang}/bibliography/${poetId}`);
+      }
+    });
+  });
+  write_sitemap('static/sitemaps/global.xml', urls);
+
+  collected.poets.forEach((poet, poetId) => {
+    const filenames = collected.workids
+      .get(poetId)
+      .map(workId => `fdirs/${poetId}/${workId}.xml`);
+    if (!isFileModified(...filenames)) {
+      return;
+    }
+    const poet_text_urls = [];
+    ['da', 'en'].forEach(lang => {
+      if (poet.has_works) {
+        poet_text_urls.push(`https://kalliope.org/${lang}/works/${poetId}`);
+      }
+      if (poet.has_poems) {
+        poet_text_urls.push(
+          `https://kalliope.org/${lang}/texts/${poetId}/titles`
+        );
+        poet_text_urls.push(
+          `https://kalliope.org/${lang}/texts/${poetId}/first`
+        );
+      }
+      collected.workids.get(poetId).forEach(workId => {
+        const work = collected.works.get(`${poetId}/${workId}`);
+        if (work.has_content) {
+          poet_text_urls.push(
+            `https://kalliope.org/${lang}/work/${poetId}/${workId}`
+          );
+          const filename = `fdirs/${poetId}/${workId}.xml`;
+          let doc = loadXMLDoc(filename);
+          if (doc == null) {
+            console.log("Couldn't load", filename);
+          }
+          doc.find('//poem|//prose').forEach(part => {
+            const textId = part.attr('id').value();
+            poet_text_urls.push(`https://kalliope.org/${lang}/text/${textId}`);
+          });
+        }
+      });
+    });
+    write_sitemap(`static/sitemaps/${poetId}.xml`, poet_text_urls);
+  });
+
+  const sitemaps_urls_xml = Array.from(collected.poets.values())
+    .filter(poet => poet.has_works)
+    .map(poet => {
+      return `https://kalliope.org/static/sitemaps/${poet.id}.xml`;
+    })
+    .map(url => {
+      return `  <sitemap><loc>${url}</loc></sitemap>`;
+    });
+  sitemaps_urls_xml.push(
+    `  <sitemap><loc>https://kalliope.org/static/sitemaps/global.xml</loc></sitemap>`
+  );
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml +=
+    '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">>\n';
+  xml += sitemaps_urls_xml.join('\n');
+  xml += '\n</sitemapindex>\n';
+  writeText('static/sitemap.xml', xml);
+};
+
 const update_elasticsearch = collected => {
   const inner_update_elasticsearch = () => {
     collected.poets.forEach((poet, poetId) => {
@@ -1894,6 +2013,8 @@ b('build_about_pages', build_about_pages, collected);
 b('build_dict_second_pass', build_dict_second_pass, collected);
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
+b('build_sitemap_xml', build_sitemap_xml, collected);
+
 b('build_image_thumbnails', build_image_thumbnails);
 b('update_elasticsearch', update_elasticsearch, collected);
 

@@ -3,3 +3,8 @@ Disallow: /
 
 User-agent: AhrefsBot
 Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+Sitemap: https://kalliope.org/sitemap.xml

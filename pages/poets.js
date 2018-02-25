@@ -162,6 +162,7 @@ export default class extends React.Component<PoetsProps> {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt land" />;
     }
+    const requestPath = `/${lang}/poets`;
 
     const tabs = [
       {
@@ -209,7 +210,10 @@ export default class extends React.Component<PoetsProps> {
     }
     return (
       <div>
-        <Head headTitle={_('Digtere', lang) + ' - Kalliope'} />
+        <Head
+          headTitle={_('Digtere', lang) + ' - Kalliope'}
+          requestPath={requestPath}
+        />
         <Main>
           <Nav lang={lang} title={pageTitle} />
           <Heading title={pageTitle} />
@@ -221,7 +225,7 @@ export default class extends React.Component<PoetsProps> {
             selectedCountry={country}
             selectedGroupBy={groupBy}
           />
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );
