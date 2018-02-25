@@ -220,11 +220,11 @@ export default class extends React.Component {
     let navPaging = null;
     if (pagingContext != null) {
       let prevURL = {
-        url: `/${lang}?date=${pagingContext.prev}`,
+        url: `/${lang}/?date=${pagingContext.prev}`,
         title: 'En dag tilbage',
       };
       let nextURL = {
-        url: `/${lang}?date=${pagingContext.next}`,
+        url: `/${lang}/?date=${pagingContext.next}`,
         title: 'En dag frem',
       };
       navPaging = <NavPaging prev={prevURL} next={nextURL} />;
