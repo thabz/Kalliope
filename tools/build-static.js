@@ -230,6 +230,30 @@ const build_poet_timeline_json = (poet, collected) => {
   return items;
 };
 
+const build_museum_link = picture => {
+  const invNr = safeGetAttr(picture, 'invnr');
+  const objId = safeGetAttr(picture, 'objid');
+  const museum = safeGetAttr(picture, 'museum');
+  if (museum != null && (invNr != null || objId != null)) {
+    let url = null;
+    switch (museum) {
+      case 'thorvaldsens':
+        url = `http://thorvaldsensmuseum.dk/samlingerne/vaerk/${invNr}`;
+        break;
+      case 'smk':
+        url = `http://collection.smk.dk/#/detail/${invNr}`;
+        break;
+      case 'smb':
+        url = `http://www.smb-digital.de/eMuseumPlus?objectId=${objId}`;
+        break;
+      case 'npg':
+        url = `https://www.npg.org.uk/collections/search/portrait/${objId}`;
+        break;
+    }
+    return url == null ? null : ` <a href="${url}">⌘</a>`;
+  }
+};
+
 const build_portrait_json = (poet, collected) => {
   if (!poet.has_portraits) {
     return null;
@@ -247,6 +271,7 @@ const build_portrait_json = (poet, collected) => {
       throw `fdirs/${poet.id}/portraits.xml mangler primary`;
     }
     const primary = primaries[0];
+    const museumLink = build_museum_link(primary) || '';
     data = {
       lang: poet.lang,
       src: primary.attr('src').value(),
@@ -256,7 +281,7 @@ const build_portrait_json = (poet, collected) => {
           .toString()
           .replace(/<picture[^>]*?>/, '')
           .replace('</picture>', '')
-          .trim(),
+          .trim() + museumLink,
         collected
       ),
     };
@@ -512,6 +537,9 @@ const get_pictures = head => {
     const src = picture.attr('src').value();
     const lang = picture.attr('lang') ? picture.attr('lang').value() : 'da';
     const type = picture.attr('type') ? picture.attr('type').value() : null;
+    const invnr = safeGetAttr(picture, 'invnr');
+    const museumLink = build_museum_link(picture) || '';
+
     return {
       src,
       type,
@@ -520,7 +548,7 @@ const get_pictures = head => {
         picture
           .toString()
           .replace(/<picture[^>]*>/, '')
-          .replace('</picture>', ''),
+          .replace('</picture>', '') + museumLink,
         collected
       ),
     };
@@ -850,7 +878,9 @@ const works_first_pass = collected => {
       // Sanity check
       if (work.attr('author').value() !== poet.id) {
         throw new Error(
-          `fdirs/${poet.id}/${workId}.xml has wrong author-attribute in <kalliopework>`
+          `fdirs/${
+            poet.id
+          }/${workId}.xml has wrong author-attribute in <kalliopework>`
         );
       }
       works.set(`${poet.id}/${workId}`, {
@@ -1562,11 +1592,11 @@ const build_redirects_json = collected => {
 };
 
 const build_todays_events_json = collected => {
-  const portrait_descriptions = Array.from(
-    collected.poets.values()
-  ).map(poet => {
-    return `fdirs/${poet.id}/portraits.xml`;
-  });
+  const portrait_descriptions = Array.from(collected.poets.values()).map(
+    poet => {
+      return `fdirs/${poet.id}/portraits.xml`;
+    }
+  );
   if (!isFileModified(`data/poets.xml`, ...portrait_descriptions)) {
     return;
   }
