@@ -7,15 +7,16 @@ import TextContent from './textcontent.js';
 import CommonData from '../pages/helpers/commondata.js';
 import * as Strings from '../pages/helpers/strings.js';
 
-export default class Picture extends React.Component {
-  props: {
-    picture: PictureItem,
-    lang: Lang,
-    srcPrefix?: string,
-    showDropShadow?: boolean,
-    clickToZoom?: boolean,
-    contentLang: TextLang,
-  };
+type PictureProps = {
+  picture: PictureItem,
+  lang: Lang,
+  srcPrefix?: string,
+  showDropShadow?: boolean,
+  clickToZoom?: boolean,
+  contentLang: TextLang,
+};
+
+export default class Picture extends React.Component<PictureProps> {
   static contextTypes = {
     showPictureOverlay: PropTypes.func,
   };
