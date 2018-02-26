@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1873" author="holst" status="incomplete" type="poetry">
+<kalliopework id="1873" author="holst" status="complete" type="poetry">
 <workhead>
    <title>Fra min Ungdom</title>
    <year>1873</year>
+   <notes>
+       <note>Samvittighedsfuldt gengivet efter førsteudgaven af H. P. Holst: <i>Fra min Ungdom</i>, C. A. Reitzels Forlag, Kbh., 1873.</note>
+       <note>Noter med en foranstillet asterisk er Holsts egne.</note>
+   </notes>
+   <pictures>
+       <picture type="titlepage" src="1873-p1.jpg">Titelbladet til <i>Fra min Ungdom</i> (1873) lyder ,,Fra min Ungdom. / Fortællinger paa Vers / af / H. P. Holst // Med Forfatterens Portrait, / tegnet af V. Marstrand i München 1840. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1873.''</picture>
+      <picture type="frontpage" src="1873-p2.jpg">Forsiden</picture>
+      <picture src="1873-p3.jpg">Forfatterens portræt som tegnet af Vilhelm Marstrand i München.</picture>
+   </pictures>
 </workhead>
 <workbody>
 
@@ -687,7 +696,7 @@ Ogsaa jeg har engang været ,,Løve''.
 Frederik den Sjette var gaaet til Ro,
 Og den Sorg, der greb hele Folket,
 I et lille, simpelt og kunstløst Vers
-Havde simpelt og kunstløst jeg tolket.<!-- Sørgetale Fr.6. i Digte, 2. saml., 1850. -->
+Havde simpelt og kunstløst jeg tolket.<!-- TODO: Link til Sørgetale Fr.6. i Digte, 2. saml., 1850. -->
 
 Jeg anede mindst, at det var en Bedrift,
 Og forundret var jeg ei bleven,
@@ -711,7 +720,7 @@ Og i endnu flere umulige;
 
 Af Weyse blev det sat i Musik,
 Og Studenterne firstemmig sang det;
-Mit Portrait kom ud med Stropher af Hertz, <!-- Hvilke strofer? -->
+Mit Portrait kom ud med Stropher af Hertz, <!-- TODO: Hvilke strofer? -->
 Og i Stuer og Glasskabe hang det;
 
 Der var kun eet Løsen: ,,O Fædreland!''
@@ -2516,7 +2525,7 @@ Fremlyste klart som Dagen;
 
 Men havde jeg ogsaa skildret hans Aand,
 Hans luttrede Smag, hans rige
-For Natur og Kunst begeistrede Sjæl? --
+For Natur og Kunst begeistrede Sjæl? -
 Det vidste jeg ikke saa lige;
 
 Og derover grubled jeg just, da der blev
