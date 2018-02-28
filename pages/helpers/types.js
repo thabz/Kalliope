@@ -40,7 +40,11 @@ export type Poet = {
     christened?: string,
     realname?: string,
   },
-  period: ?{ born?: DateWithPlace, dead?: DateWithPlace },
+  period: ?{
+    born?: DateWithPlace,
+    dead?: DateWithPlace,
+    coronation?: DateWithPlace,
+  },
   has_bibliography: boolean,
   has_biography: boolean,
   has_works: boolean,
@@ -133,6 +137,18 @@ export type Keyword = {
   is_draft: boolean,
   author?: string,
   notes?: Array<NoteItem>,
+  pictures: Array<PictureItem>,
+  content_html: TextContentType,
+  content_lang: TextLang,
+  has_footnotes: boolean,
+};
+
+export type AboutItem = {
+  id: string,
+  title: string,
+  is_draft: boolean,
+  author?: string,
+  notes: Array<NoteItem>,
   pictures: Array<PictureItem>,
   content_html: TextContentType,
   content_lang: TextLang,

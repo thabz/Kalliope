@@ -182,6 +182,7 @@ export default class extends React.Component<TextComponentProps> {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt tekst" />;
     }
+    const requestPath = `/${lang}/text/${text.id}`;
 
     const rightSideItems = [prev, next].map((t, i) => {
       if (t == null) {
@@ -322,6 +323,7 @@ export default class extends React.Component<TextComponentProps> {
             ogTitle={ogTitle}
             ogImage={ogImage}
             description={ogDescription}
+            requestPath={requestPath}
           />
           <Main>
             <Nav
@@ -361,7 +363,7 @@ export default class extends React.Component<TextComponentProps> {
                 </article>
               </div>
             </SidebarSplit>
-            <LangSelect lang={lang} />
+            <LangSelect lang={lang} path={requestPath} />
           </Main>
         </FootnoteContainer>
       </div>

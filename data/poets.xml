@@ -401,7 +401,7 @@
   <period>
     <born>
       <date>1781-01-30</date>
-      <place>Slottet Boncourt, Champagne</place>
+      <place inon="on">slottet Boncourt, Champagne</place>
     </born>
     <dead>
       <date>1838-08-21</date>
@@ -823,7 +823,7 @@
   <period>
     <born>
       <date>1587-01-02</date>
-      <place>Ærø</place>
+      <place inon="on">Ærø</place>
     </born>
     <dead>
       <date>1637-03-12</date>
@@ -1715,7 +1715,7 @@
     </born>
     <dead>
       <date>1756</date>
-      <place>Skibsforlis på vej hjem fra Kina</place>
+      <place inon="by">skibsforlis på vej hjem fra Kina</place>
     </dead>
   </period>
   <works>1751</works>
@@ -2077,7 +2077,7 @@
     </born>
     <dead>
       <date>1821-11-25</date>
-      <place>Skt. Thomas, Dansk Vestindien</place>
+      <place inon="on">Skt. Thomas, Dansk Vestindien</place>
     </dead>
   </period>
   <works>andre</works>
@@ -2151,7 +2151,7 @@
     </born>
     <dead>
       <date>1832-10-06</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </dead>
   </period>
   <works>1819</works>
@@ -2169,7 +2169,7 @@
     </born>
     <dead>
       <date>1830-04-22</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </dead>
   </period>
   <works>1794,1802,andre</works>
@@ -2805,7 +2805,7 @@
     </born>
     <dead>
         <date>1879-03-31</date>
-        <place>Frederiksberg</place>
+        <place inon="on">Frederiksberg</place>
     </dead>
   </period>
   <works>andre</works>
@@ -2815,6 +2815,7 @@
   <name>
     <firstname>Nikolaj</firstname>
     <lastname>Krossing</lastname>
+    <fullname>Nikolaj Ulrik Krossing</fullname>
   </name>
   <period>
     <born>
@@ -3019,7 +3020,7 @@
       <place>Kbh.</place>
     </dead>
   </period>
-  <works>andre,1843,1874,1884</works>
+  <works>1832,1833,1840,1843,1849,1850,1874,1884,andre</works>
 </person>
 
 <person id="plough" country="dk" lang="da" type="poet">
@@ -3057,7 +3058,7 @@
       <place>Sotteville-lés-Rouen</place>
     </dead>
   </period>
-  <works>1840,1847,1855,andre</works>
+  <works>1840,1847,1855</works>
 </person>
 
 <person id="lembcke" country="dk" lang="da" type="poet">
@@ -3267,7 +3268,7 @@
     </born>
     <dead>
       <date>1885-12-03</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </dead>
   </period>
   <works>andre</works>
@@ -3345,7 +3346,7 @@
       <place>København</place>
     </dead>
   </period>
-  <works>1887,andre</works>
+  <works>1872,1887,andre</works>
 </person>
 
 <person id="schandorph" country="dk" lang="da" type="poet">
@@ -3634,7 +3635,7 @@
     </born>
     <dead>
       <date>1941-03-16</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </dead>
   </period>
   <works>1888,1897,1920,1939</works>
@@ -3688,7 +3689,7 @@
     </born>
     <dead>
       <date>1930-10-16</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </dead>
   </period>
   <works>andre</works>
@@ -3742,7 +3743,7 @@
   <period>
     <born>
       <date>1864-03-20</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </born>
     <dead>
       <date>1938-05-11</date>
@@ -3895,7 +3896,7 @@
     </born>
     <dead>
       <date>1932-03-23</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </dead>
   </period>
   <works>1892,1896,1907,1914,1922,1928,1931</works>
@@ -3948,7 +3949,7 @@
     </born>
     <dead>
       <date>1907-11-25</date>
-      <place>Grønland</place>
+      <place inon="on">Grønland</place>
     </dead>
   </period>
   <works>1904</works>
@@ -3962,7 +3963,7 @@
   <period>
     <born>
       <date>1874-07-19</date>
-      <place>Frederiksborg Slot</place>
+      <place inon="on">Frederiksborg Slot</place>
     </born>
     <dead>
       <date>1923-06-29</date>
@@ -4070,11 +4071,11 @@
   <period>
     <born>
       <date>1898-01-13</date>
-      <place>Lolland</place>
+      <place inon="on">Lolland</place>
     </born>
     <dead>
       <date>1944-01-04</date>
-      <place>Hørbylunde Bakke ved Silkeborg</place>
+      <place inon="on">Hørbylunde Bakke ved Silkeborg</place>
     </dead>
   </period>
   <works>andre,1936,1941,1942,1944</works>
@@ -5052,9 +5053,11 @@
   <period>
     <born>
       <date>1870-09-11</date>
+      <place>Holmestrand, Norge</place>
     </born>
     <dead>
       <date>1924-02-09</date>
+      <place>Son i Vestby, Norge</place>
     </dead>
   </period>
 </person>
@@ -5953,7 +5956,7 @@
       <place>East Dereham, Norfolk</place>
     </dead>
   </period>
-  <works>1779</works>
+  <works>1779,andre</works>
 </person>
 
 <person id="macpherson" country="gb" lang="en" type="poet">
@@ -6489,6 +6492,26 @@
   <works>andre</works>
 </person>
 
+<person id="eliot" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>George</firstname>
+    <lastname>Eliot</lastname>
+    <fullname>Mary Anne Evans</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1819-11-22</date>
+      <place>Nuneaton, Warwickshire</place>
+    </born>
+    <dead>
+      <date>1880-12-22</date>
+      <place>Chelsea, Middlesex</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
+
 <person id="rossettid" country="gb" lang="en" type="poet">
   <name>
     <firstname>Dante Gabriel</firstname>
@@ -6723,7 +6746,7 @@
     </born>
     <dead>
       <date>1915-04-23</date>
-      <place>Skyros, Grækenland</place>
+      <place inon="on">Skyros, Grækenland</place>
     </dead>
   </period>
   <works>1911,1915n,1915,1918</works>
@@ -7241,7 +7264,7 @@
   <period>
     <born>
       <date>1778-02-06</date>
-      <place>Øen Zakynthos, Grækenland</place>
+      <place inon="on">øen Zakynthos, Grækenland</place>
     </born>
     <dead>
       <date>1827-09-10</date>
@@ -7366,9 +7389,11 @@
   <period>
     <born>
       <date>1770-11-19</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1844-03-24</date>
+      <place>København</place>
     </dead>
   </period>
 </person>
@@ -7423,7 +7448,7 @@
     </born>
     <dead>
       <date>1829-01-21</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </dead>
   </period>
 </person>
@@ -7480,5 +7505,433 @@
     </dead>
   </period>
 </person>
+
+<!-- Den danske kongerække -->
+
+<person id="christian1" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 1.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1426</date>
+    </born>
+    <coronation>
+      <date>1448-09-01</date>
+    </coronation>
+    <dead>
+      <date>1481-05-21</date>
+      <place inon="on">København Slot</place>
+    </dead>
+  </period>
+</person>
+
+<person id="hans" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Hans</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1455-02-02</date>
+      <place inon="on">Aalborghus Slot</place>
+    </born>
+    <coronation>
+      <date>1481-05-21</date>
+    </coronation>
+    <dead>
+      <date>1513-02-20</date>
+      <place inon="on">Aalborghus Slot</place>
+    </dead>
+  </period>
+</person>
+
+<person id="christian2" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 2.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1481-07-01</date>
+      <place inon="on">Nyborg Slot</place>
+    </born>
+    <coronation>
+      <date>1513-02-20</date>
+    </coronation>
+    <!-- Afsat og forvist 1523-04-13. Fængslet på Kalundborg Slot. -->
+    <dead>
+      <date>1559-01-25</date>
+      <place inon="on">Kalundborg Slot</place>
+    </dead>
+  </period>
+</person>
+
+<person id="frederik1" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 1.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1471-10-07</date>
+      <place>Haderslevhus</place>
+    </born>
+    <coronation>
+      <date>1523-04-13</date>
+    </coronation>
+    <dead>
+      <date>1533-04-10</date>
+      <place inon="on">Gottorp Slot</place>
+    </dead>
+  </period>
+</person>
+
+<person id="christian3" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 3.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1503-08-12</date>
+      <place inon="on">Gottorp Slot</place>
+    </born>
+    <coronation>
+      <date>1534-07-04</date>
+    </coronation>
+    <dead>
+      <date>1559-01-01</date>
+      <place>Koldinghus</place>
+    </dead>
+  </period>
+</person>
+
+<person id="frederik2" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 2.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1534-07-01</date>
+      <place>Haderslevhus</place>
+    </born>
+    <coronation>
+      <date>1559-01-01</date>
+    </coronation>
+    <dead>
+      <date>1588-04-04</date>
+      <place>Antvorskov Kloster</place>
+    </dead>
+  </period>
+</person>
+
+<person id="christian4" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 4.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1577-04-12</date>
+      <place inon="on">Frederiksborg Slot</place>
+    </born>
+    <coronation>
+      <date>1588-04-04</date>
+    </coronation>
+    <dead>
+      <date>1648-02-28</date>
+      <place inon="on">Rosenborg Slot</place>
+    </dead>
+  </period>
+</person>
+
+<person id="frederik3" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 3.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1609-03-18</date>
+      <place>Haderslevhus</place>
+    </born>
+    <coronation>
+      <date>1648-07-06</date>
+    </coronation>
+    <dead>
+      <date>1670-02-09</date>
+      <place inon="on">Københavns Slot</place>
+    </dead>
+  </period>
+</person>
+
+<person id="christian5" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 5.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1646-04-15</date>
+      <place inon="on">Duborg Slot, Flensborg</place>
+    </born>
+    <coronation>
+      <date>1670-02-09</date>
+    </coronation>
+    <dead>
+      <date>1699-08-25</date>
+      <place inon="on">Københavns Slot</place>
+    </dead>
+  </period>
+</person>
+
+<person id="frederik4" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 4.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1671-10-11</date>
+      <place inon="on">Københavns Slot</place>
+    </born>
+    <coronation>
+      <date>1699-08-25</date>
+    </coronation>
+    <dead>
+      <date>1730-10-12</date>
+      <place inon="on">Odense Slot</place>
+    </dead>
+  </period>
+</person>
+
+<person id="christian6" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 6.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1699-11-30</date>
+      <place inon="on">Københavns Slot</place>
+    </born>
+    <coronation>
+      <date>1730-10-12</date>
+    </coronation>
+    <dead>
+      <date>1746-08-06</date>
+      <place inon="on">Hirschholm Slot</place>
+    </dead>
+  </period>
+</person>
+
+<person id="frederik5" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 5.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1723-03-31</date>
+      <place inon="on">Københavns Slot</place>
+    </born>
+    <coronation>
+      <date>1746-08-06</date>
+    </coronation>
+    <dead>
+      <date>1766-01-14</date>
+      <place inon="on">Christianborg Slot</place>
+    </dead>
+  </period>
+</person>
+
+<person id="christian7" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 7.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1749-01-29</date>
+      <place inon="on">Christianborg Slot</place>
+    </born>
+    <coronation>
+      <date>1766-01-14</date>
+    </coronation>
+    <dead>
+      <date>1808-03-13</date>
+      <place>Rendsborg</place>
+    </dead>
+  </period>
+</person>
+
+<person id="frederik6" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 6.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1768-01-28</date>
+      <place inon="on">Christianborg Slot</place>
+    </born>
+    <!-- Regent 1784-04-13 pga. Christian 7.s sygdom. -->
+    <coronation>
+      <date>1808-03-13</date>
+    </coronation>
+    <dead>
+      <date>1839-12-03</date>
+      <place inon="on">Amalienborg</place>
+    </dead>
+  </period>
+</person>
+
+<person id="christian8" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 8.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1786-09-18</date>
+      <place inon="on">Christianborg Slot</place>
+    </born>
+    <coronation>
+      <date>1839-12-03</date>
+    </coronation>
+    <dead>
+      <date>1848-01-20</date>
+      <place inon="on">Amalienborg</place>
+    </dead>
+  </period>
+</person>
+
+<person id="frederik7" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 7.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1808-10-06</date>
+      <place inon="on">Amalienborg</place>
+    </born>
+    <coronation>
+      <date>1848-01-20</date>
+    </coronation>
+    <dead>
+      <date>1863-11-15</date>
+      <place>Glücksburg</place>
+    </dead>
+  </period>
+</person>
+
+<person id="christian9" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 9.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1818-04-08</date>
+      <place inon="on">Gottorp Slot</place>
+    </born>
+    <coronation>
+      <date>1863-11-15</date>
+    </coronation>
+    <dead>
+      <date>1906-01-29</date>
+      <place inon="on">Amalienborg Slot</place>
+    </dead>
+  </period>
+</person>
+
+
+
+<person id="frederik8" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 8.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1843-06-03</date>
+      <place>Det Gule Palæ, Kbh.</place>
+    </born>
+    <coronation>
+      <date>1906-01-29</date>
+    </coronation>
+    <dead>
+      <date>1912-05-14</date>
+      <place>Hamborg</place>
+    </dead>
+  </period>
+</person>
+
+<person id="christian10" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 10.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1870-09-26</date>
+      <place inon="on">Charlottenlund Slot</place>
+    </born>
+    <coronation>
+      <date>1912-05-14</date>
+    </coronation>
+    <dead>
+      <date>1947-04-20</date>
+      <place inon="on">Amalienborg Slot</place>
+    </dead>
+  </period>
+</person>
+
+<person id="frederik9" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 9.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1899-03-11</date>
+      <place inon="on">Sorgenfri Slot</place>
+    </born>
+    <coronation>
+      <date>1947-04-20</date>
+    </coronation>
+    <dead>
+      <date>1972-01-14</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
+<!--
+<person id="margrethe2" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Margrethe 2.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1940-04-16</date>
+      <place>Amalienborg</place>
+    </born>
+    <coronation>
+      <date>1972-01-14</date>
+    </coronation>
+    <dead>
+      <date></date>
+      <place></place>
+    </dead>
+  </period>
+</person>
+-->
+<!--
+<person id="" country="dk" lang="da" type="person">
+  <name>
+    <firstname></firstname>
+    <lastname></lastname>
+  </name>
+  <period>
+    <born>
+      <date></date>
+      <place></place>
+    </born>
+    <coronation>
+      <date></date>
+      <place></place>
+    </coronation>
+    <dead>
+      <date></date>
+      <place></place>
+    </dead>
+  </period>
+</person>
+-->
 
 </persons>

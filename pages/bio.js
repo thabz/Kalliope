@@ -22,6 +22,7 @@ import ErrorPage from './error.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
+import _ from '../pages/helpers/translations.js';
 
 import type {
   Lang,
@@ -30,6 +31,7 @@ import type {
   PictureItem,
   TimelineItem,
   TextContentType,
+  TextLang,
   Error,
 } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
@@ -38,13 +40,13 @@ const dateAndPlace = (
   datePlace: ?DateWithPlace,
   lang: Lang,
   age?: ?number
-): Array<?React$Element<*>> => {
+): Array<?React$Element<*> | string> | string => {
   if (datePlace == null) {
-    return 'Ukendt år';
+    return _('Ukendt år', lang);
   }
   let result = [];
   if (datePlace.date === '?') {
-    result.push('Ukendt år');
+    result.push(_('Ukendt år', lang));
   } else {
     result.push(
       <FormattedDate key={datePlace.date} date={datePlace.date} lang={lang} />
@@ -59,11 +61,11 @@ const dateAndPlace = (
   return result;
 };
 
-class PersonMetaLine extends React.Component {
-  props: {
-    label: string,
-    value: string | ?React$Element<*> | Array<?React$Element<*>>,
-  };
+type PersonMetaLineProps = {
+  label: string,
+  value: ?string | ?React$Element<*> | ?Array<?React$Element<*> | string>,
+};
+class PersonMetaLine extends React.Component<PersonMetaLineProps> {
   render() {
     const { label, value } = this.props;
     if (value == null) {
@@ -87,11 +89,11 @@ class PersonMetaLine extends React.Component {
   }
 }
 
-class PersonMeta extends React.Component {
-  props: {
-    poet: Poet,
-    lang: Lang,
-  };
+type PersonMetaProps = {
+  poet: Poet,
+  lang: Lang,
+};
+class PersonMeta extends React.Component<PersonMetaProps> {
   render() {
     const { poet, lang } = this.props;
     if (poet.type === 'collection') {
@@ -125,7 +127,7 @@ class PersonMeta extends React.Component {
         if (deadBeforeBirthday) {
           yearDiff -= 1;
         }
-        let ca = '';
+        let ca: string = '';
         if (
           born.prefix != null ||
           dead.prefix != null ||
@@ -134,9 +136,12 @@ class PersonMeta extends React.Component {
           born.day === 0 ||
           dead.day === 0
         ) {
-          ca = 'ca. ';
+          ca = _('ca.', lang) + ' ';
         }
-        age = `(blev ${ca}${yearDiff} år)`;
+        age = _(`(blev {ca}{yearDiff} år)`, lang, {
+          ca,
+          yearDiff: yearDiff + '',
+        });
       }
     }
 
@@ -147,25 +152,40 @@ class PersonMeta extends React.Component {
 
     const christened =
       poet.name.christened == null ? poet.name.realname : poet.name.christened;
+    let coronationMetaLine = null;
+    if (poet.period != null && poet.period.coronation != null) {
+      const coronation =
+        poet.period == null ? null : dateAndPlace(poet.period.coronation, lang);
+      coronationMetaLine = (
+        <PersonMetaLine value={coronation} label={_('Tiltrådt', lang)} />
+      );
+    }
     return (
       <div>
-        <PersonMetaLine value={name} label="Navn" />
-        <PersonMetaLine value={poet.name.fullname} label="Fulde navn" />
-        <PersonMetaLine value={christened} label="Døbt" />
-        <PersonMetaLine value={poet.name.pseudonym} label="Pseudonym" />
-        <PersonMetaLine value={born} label="Født" />
-        <PersonMetaLine value={dead} label="Død" />
+        <PersonMetaLine value={name} label={_('Navn', lang)} />
+        <PersonMetaLine
+          value={poet.name.fullname}
+          label={_('Fulde navn', lang)}
+        />
+        <PersonMetaLine value={christened} label={_('Døbt', lang)} />
+        <PersonMetaLine
+          value={poet.name.pseudonym}
+          label={_('Pseudonym', lang)}
+        />
+        <PersonMetaLine value={born} label={_('Født', lang)} />
+        {coronationMetaLine}
+        <PersonMetaLine value={dead} label={_('Død', lang)} />
       </div>
     );
   }
 }
 
-class PersonPortrait extends React.Component {
-  props: {
-    poet: Poet,
-    lang: Lang,
-    portrait?: PictureItem,
-  };
+type PersonPortraitProps = {
+  poet: Poet,
+  lang: Lang,
+  portrait?: PictureItem,
+};
+class PersonPortrait extends React.Component<PersonPortraitProps> {
   render() {
     const { portrait, poet, lang } = this.props;
     if (!poet.has_portraits || portrait == null) {
@@ -175,12 +195,11 @@ class PersonPortrait extends React.Component {
     return <Picture picture={portrait} srcPrefix={srcPrefix} lang={lang} />;
   }
 }
-
-class Timeline extends React.Component {
-  props: {
-    timeline: Array<TimelineItem>,
-    lang: Lang,
-  };
+type TimelineProps = {
+  timeline: Array<TimelineItem>,
+  lang: Lang,
+};
+class Timeline extends React.Component<TimelineProps> {
   render() {
     const { timeline, lang } = this.props;
     if (timeline.length === 0) {
@@ -235,18 +254,16 @@ class Timeline extends React.Component {
     );
   }
 }
-
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    portrait?: PictureItem,
-    poet: Poet,
-    timeline: Array<TimelineItem>,
-    content_html: TextContentType,
-    content_lang: TextLang,
-    Error: ?Error,
-  };
-
+type BioProps = {
+  lang: Lang,
+  portrait?: PictureItem,
+  poet: Poet,
+  timeline: Array<TimelineItem>,
+  content_html: TextContentType,
+  content_lang: TextLang,
+  error: ?Error,
+};
+export default class extends React.Component<BioProps> {
   static async getInitialProps({
     query: { lang, poetId },
   }: {
@@ -278,6 +295,7 @@ export default class extends React.Component {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
     }
+    const requestPath = `/${lang}/bio/${poet.id}`;
 
     const sidebarItems = (
       <SplitWhenSmall key="first-and-on">
@@ -290,11 +308,15 @@ export default class extends React.Component {
 
     const title = <PoetName poet={poet} includePeriod />;
     const headTitle =
-      'Biografi  - ' + poetNameString(poet, false, false) + ' - Kalliope';
+      _('Biografi', lang) +
+      ' - ' +
+      poetNameString(poet, false, false) +
+      ' - Kalliope';
 
     const ogDescription = OpenGraph.trimmedDescription(content_html);
     const ogImage = OpenGraph.poetImage(poet);
-    const ogTitle = poetNameString(poet, false, false) + ' biografi';
+    const ogTitle =
+      poetNameString(poet, false, false) + ' ' + _('biografi', lang);
 
     return (
       <div>
@@ -303,10 +325,11 @@ export default class extends React.Component {
           ogTitle={ogTitle}
           ogImage={ogImage}
           description={ogDescription}
+          requestPath={requestPath}
         />
         <Main>
-          <Nav lang={lang} poet={poet} title="Biografi" />
-          <Heading title={title} subtitle="Værker" />
+          <Nav lang={lang} poet={poet} title={_('Biografi', lang)} />
+          <Heading title={title} subtitle={_('Biografi', lang)} />
           <PoetTabs lang={lang} poet={poet} selected="bio" />
           <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
             <div style={{ lineHeight: '1.6' }}>
@@ -328,7 +351,7 @@ export default class extends React.Component {
               `}</style>
             </div>
           </SidebarSplit>
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

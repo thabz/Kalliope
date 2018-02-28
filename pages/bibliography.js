@@ -4,6 +4,7 @@ import React from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
 import Nav from '../components/nav';
+import _ from '../pages/helpers/translations.js';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
@@ -16,15 +17,14 @@ import * as Client from './helpers/client.js';
 import type { Lang, Poet, Work, TextContentType } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    poet: Poet,
-    primary: Array<TextContentType>,
-    secondary: Array<TextContentType>,
-    Error: ?Error,
-  };
-
+type BibliographyProps = {
+  lang: Lang,
+  poet: Poet,
+  primary: Array<TextContentType>,
+  secondary: Array<TextContentType>,
+  error: ?Error,
+};
+export default class extends React.Component<BibliographyProps> {
   static async getInitialProps({
     query: { lang, poetId },
   }: {
@@ -46,11 +46,15 @@ export default class extends React.Component {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
     }
+    const requestPath = `/${lang}/bibliography/${poet.id}`;
 
     const sections = [primary, secondary]
       .map((list, i) => {
         return {
-          title: i === 0 ? 'Primær litteratur' : 'Sekundær litteratur',
+          title:
+            i === 0
+              ? _('Primær litteratur', lang)
+              : _('Sekundær litteratur', lang),
           items: list.map((line, j) => {
             return (
               <div
@@ -75,9 +79,7 @@ export default class extends React.Component {
             key={g.title}
             className="list-section"
             style={{ marginBottom: '20px' }}>
-            <h3 style={{ columnSpan: 'all' }}>
-              {g.title}
-            </h3>
+            <h3 style={{ columnSpan: 'all' }}>{g.title}</h3>
             {g.items}
             <style jsx>{`
               h3 {
@@ -94,15 +96,13 @@ export default class extends React.Component {
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
     return (
       <div>
-        <Head headTitle={headTitle} />
+        <Head headTitle={headTitle} requestPath={requestPath} />
         <Main>
-          <Nav lang={lang} poet={poet} title="Bibliografi" />
-          <Heading title={title} subtitle="Bibliografi" />
+          <Nav lang={lang} poet={poet} title={_('Bibliografi', lang)} />
+          <Heading title={title} subtitle={_('Bibliografi', lang)} />
           <PoetTabs lang={lang} poet={poet} selected="bibliography" />
-          <TwoColumns>
-            {sections}
-          </TwoColumns>
-          <LangSelect lang={lang} />
+          <TwoColumns>{sections}</TwoColumns>
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

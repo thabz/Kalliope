@@ -20,6 +20,7 @@ import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
 import CommonData from './helpers/commondata.js';
+import { request } from 'http';
 import type {
   Lang,
   Poet,
@@ -66,6 +67,7 @@ export default class extends React.Component {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt værk" />;
     }
+    const requestPath = `/${lang}/work/${poet.id}/${work.id}`;
 
     const renderItems = (items: Array<TocItem>, indent: number = 0) => {
       const rows = items.map((item, i) => {
@@ -155,6 +157,7 @@ export default class extends React.Component {
     return (
       <div>
         <Head
+          requestPath={requestPath}
           headTitle={headTitle}
           ogTitle={ogTitle}
           ogImage={ogImage}
@@ -221,7 +224,7 @@ export default class extends React.Component {
               `}</style>
             </div>
           </SidebarSplit>
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );
