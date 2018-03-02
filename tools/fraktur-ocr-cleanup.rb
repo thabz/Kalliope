@@ -204,6 +204,8 @@
 'Dsd/Død',
 'dsd/død',
 'rvm/røm',
+'flige/slige',
+'fligt/sligt',
 'bolge/bølge',
 'bolge/bølge',
 'boie/bøie',
