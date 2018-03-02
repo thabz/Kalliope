@@ -103,8 +103,7 @@
 'sierne/fierne',
 'sorge/sørge',
 'rodme/rødme',
-' sode / søde ',
-'sodt/sødt',
+' sod/ sød',
 'Sodme/Sødme',
 'moel/mæl',
 'troste/trøste',
@@ -182,6 +181,7 @@
 'voere/være',
 'fkab/skab',
 '(\w)stab/\1skab'
+'(\w)strar(\w)/\1strax\2',
 'beromte/berømte',
 ' soge / søge ',
 ' soger / søger ',
