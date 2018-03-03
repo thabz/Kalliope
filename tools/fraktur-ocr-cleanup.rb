@@ -65,6 +65,7 @@
 ' flue/ skue',
 ' fode / føde ',
 'Hpi/Høi',
+'Hsi/Høi',
 'fodt/født',
 'nogn/nøgn',
 'ipn/iøn',
