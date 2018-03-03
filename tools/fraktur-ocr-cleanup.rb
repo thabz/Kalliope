@@ -8,6 +8,7 @@
 'skjon/skjøn',
 'sijon/skjøn',
 'stjon/skjøn',
+'doem/dæm',
 'ce/æ',
 'dfk/dsk',
 'fkj/skj',
@@ -63,6 +64,10 @@
 'toend/tænd',
 'voel/væl',
 'svoev/svæv',
+'svsm/svøm',
+'Svsm/Svøm',
+'Svsb/Svøb',
+'svsb/svøb',
 'foerd/færd',
 'stanke/stærke',
 'speede/spæde',
@@ -113,13 +118,17 @@
 'Bp/Bø',
 'Oin/Øin',
 'skion/skiøn',
+'Groes/Græs',
 'Skion/Skiøn',
 'sierne/fierne',
 'sorge/sørge',
+'solvblaa/sølvblaa',
 'rodme/rødme',
 ' sode / søde ',
 'sodt/sødt',
+'Sodt/Sødt',
 'Sodme/Sødme',
+'smoekre/smækre',
 'moel/mæl',
 'troste/trøste',
 'troste/trøste',
@@ -275,7 +284,10 @@
 'gian/glan',
 'Gian/Glan',
 'Lon/Løn',
+'Lofter/Løfter',
+'Lofted/Løfted',
 'Lovet/Løvet',
+'Voekke/Vække',
 'Ilv/Hv',
 'Jis/Iis',
 'Elstov/Elskov',
@@ -326,9 +338,20 @@
 'roend/rænd',
 'hoev/hæv',
 'roeder/ræder',
+'Troeer/Træer',
+'Oval/Qval',
+'Hoede/Hæde',
+'koemp/kæmp',
+'stjælv/skjælv',
 'Mo(\W)/Mø\1'
+'So(\W)/Sø\1'
 'Bie(\W)/Øie\1'
+'fore(\W)/føre\1'
+'Host(\W)/Høst\1'
+'Hosten/Høsten'
 '(\W)noer/\1nær'
+'(\W)Ost/\1Øst'
+'(\W)voer/\1vær'
 '(\W)stue/\1skue'
 ];
 
