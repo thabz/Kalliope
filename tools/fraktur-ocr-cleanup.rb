@@ -9,6 +9,9 @@
 'sijon/skjøn',
 'stjon/skjøn',
 'ce/æ',
+'dfk/dsk',
+'fkj/skj',
+'oenk/ænk',
 'Sæne/Scene',
 'Bolg/Bølg',
 'Hoi/Høi',
@@ -26,6 +29,8 @@
 'Msrk/Mørk',
 'Mvrk/Mørk',
 'Vlad/Blad',
+'Bloes/Blæs',
+'Gjog/Gjøg',
 'modte/mødte',
 'gjor/gjør',
 'sial/skal',
@@ -56,8 +61,9 @@
 'tankte/tænkte',
 'toenkt/tænkt',
 'toend/tænd',
-'svoelg/svælg',
+'voel/væl',
 'svoev/svæv',
+'foerd/færd',
 'stanke/stærke',
 'speede/spæde',
 'Lce/Læ',
@@ -152,6 +158,9 @@
 'Sial/Siæl',
 'Sjal/Sjæl',
 'Sjoel/Sjæl',
+'Loer/Lær',
+'loer/lær',
+'flukt/slukt',
 'Skrak/Skræk',
 'Traer/Træer',
 'Trerer/Træer',
@@ -286,6 +295,7 @@
 'Gron/Grøn',
 'Fodder/Fødder',
 'kjar/kjær',
+'kjoer/kjær',
 'Kjerr/Kjær',
 'Kjoer/Kjær',
 ' sra/ fra',
@@ -293,6 +303,7 @@
 ' bun/ hun',
 'krob/krøb',
 'sterrk/stærk',
+'stoerk/stærk',
 'ftraa/straa',
 'Sæpt/Scept',
 'Sæne/Scene',
@@ -309,8 +320,16 @@
 'Stsv/Støv',
 'Gloede/Glæde',
 'Doemr/Dæmr',
+'oeng/æng',
+'sproel/spræl',
 'Hander/Hænder',
+'roend/rænd',
+'hoev/hæv',
+'roeder/ræder',
 'Mo(\W)/Mø\1'
+'Bie(\W)/Øie\1'
+'(\W)noer/\1nær'
+'(\W)stue/\1skue'
 ];
 
 @regexps = @rules.map { |rule| 
