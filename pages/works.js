@@ -16,6 +16,7 @@ import * as Client from './helpers/client.js';
 import ErrorPage from './error.js';
 import CommonData from './helpers/commondata.js';
 import type { Lang, Poet, Work, Error } from './helpers/types.js';
+import _ from '../pages/helpers/translations.js';
 
 export default class extends React.Component {
   props: {
@@ -41,6 +42,7 @@ export default class extends React.Component {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt digter" />;
     }
+    const requestPath = `/${lang}/works/${poet.id}`;
 
     if (works.length === 0) {
       const bioURL = Links.bioURL(lang, poet.id);
@@ -75,7 +77,7 @@ export default class extends React.Component {
         </div>
       ) : (
         sortWorks(works).map((work, i) => {
-          const workName = <WorkName work={work} />;
+          const workName = <WorkName work={work} lang={lang} />;
           const url = `/${lang}/work/${poet.id}/${work.id}`;
           const name = work.has_content ? (
             <Link route={url}>
@@ -96,10 +98,10 @@ export default class extends React.Component {
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
     return (
       <div>
-        <Head headTitle={headTitle} />
+        <Head headTitle={headTitle} requestPath={requestPath} />
         <Main>
-          <Nav lang={lang} poet={poet} title="Værker" />
-          <Heading title={title} subtitle="Værker" />
+          <Nav lang={lang} poet={poet} title={_('Værker', lang)} />
+          <Heading title={title} subtitle={_('Værker', lang)} />
           <PoetTabs lang={lang} poet={poet} selected="works" />
           <div className="two-columns" style={{ lineHeight: 1.7 }}>
             {list}
@@ -110,7 +112,7 @@ export default class extends React.Component {
               }
             `}</style>
           </div>
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

@@ -43,6 +43,10 @@ const writeJSON = (filename, data) => {
   fs.writeFileSync(filename, json);
 };
 
+const writeText = (filename, text) => {
+  fs.writeFileSync(filename, text);
+};
+
 const loadXMLDoc = filename => {
   const data = loadFile(filename);
   if (data == null) {
@@ -105,7 +109,7 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
         .replace(/^ *(<right>.*)$/gm, '$1')
         .replace(/^ *(<center>.*)$/gm, '$1')
         .replace(/^( +)/gm, (match, p1) => {
-          return '&nbsp;'.repeat(p1.length);
+          return '&nbsp;'.repeat(2 * p1.length);
         })
     )
   );
@@ -258,6 +262,7 @@ module.exports = {
   loadJSON,
   loadFile,
   writeJSON,
+  writeText,
   loadXMLDoc,
   htmlToXml,
   replaceDashes,
