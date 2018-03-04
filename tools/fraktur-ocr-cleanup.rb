@@ -7,6 +7,7 @@
 'oeg/æg',
 'hoi/høi',
 'folg/følg',
+'fslge/følge',
 'Skjod/Skjød',
 'Skjon/Skjøn',
 'skjon/skjøn',
@@ -16,6 +17,7 @@
 'ce/æ',
 'dfk/dsk',
 'fkj/skj',
+'fke/ske',
 'oenk/ænk',
 'Sæne/Scene',
 'Bolg/Bølg',
@@ -59,6 +61,7 @@
 ' soer/ foer',
 'hsie/høie',
 'hsit/høit',
+'hvit/høit',
 'hole/høie',
 'Krast/Kraft',
 'Kroeft/Kræft',
@@ -87,6 +90,8 @@
 ' flue/ skue',
 ' fode / føde ',
 'fodt/født',
+'fsdt/født',
+'fsde/føde',
 'nogn/nøgn',
 'ipn/iøn',
 'mce/mæ',
@@ -97,6 +102,7 @@
 'sæne/scene',
 'Sæne/Scene',
 'Rost/Røst',
+'Rsst/Røst',
 'Gled/Glød',
 'grod/grød',
 'Grod/Grød',
@@ -210,7 +216,9 @@
 'Strem/Strøm',
 'strom/strøm',
 'hore/høre',
+'hsre/høre',
 'hort/hørt',
+'hsrt/hørt',
 'voere/være',
 'Voer/Vær',
 'soenk/sænk',
@@ -241,6 +249,7 @@
 'bolge/bølge',
 'bolge/bølge',
 'boie/bøie',
+'bsie/bøie',
 'Iord/Jord',
 'Nost/Røst',
 'Trost/Trøst',
@@ -293,6 +302,7 @@
 'gian/glan',
 'Gian/Glan',
 'Lon/Løn',
+'Lsn/Løn',
 'Lofter/Løfter',
 'Lofted/Løfted',
 'Lovet/Løvet',
@@ -351,18 +361,24 @@
 'Troeer/Træer',
 'Oval/Qval',
 'Hoede/Hæde',
+'Ssrge/Sørge',
 'koemp/kæmp',
 'stjælv/skjælv',
-'Mo(\W)/Mø\1'
-'So(\W)/Sø\1'
-'Bie(\W)/Øie\1'
-'fore(\W)/føre\1'
-'Host(\W)/Høst\1'
-'Hosten/Høsten'
-'(\W)noer/\1nær'
-'(\W)Ost/\1Øst'
-'(\W)voer/\1vær'
-'(\W)stue/\1skue'
+'stjæn/skjæn',
+'(\W)as(\W)/\1af\2',
+'Mo(\W)/Mø\1',
+'So(\W)/Sø\1',
+'Bie(\W)/Øie\1',
+'fore(\W)/føre\1',
+'Host(\W)/Høst\1',
+'Hosten/Høsten',
+'(\W)noer/\1nær',
+'(\W)Ost/\1Øst',
+'(\W)voer/\1vær',
+'(\W)stue/\1skue',
+'fvæv/svæv',
+'sonder/sønder',
+'Logn/Løgn',
 ];
 
 @regexps = @rules.map { |rule| 
