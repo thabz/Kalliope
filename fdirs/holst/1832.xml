@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1832" author="holst" status="incomplete" type="poetry">
+<kalliopework id="1832" author="holst" status="complete" type="poetry">
 <workhead>
    <title>Fædrenelandske Romancer</title>
    <year>1832</year>
    <notes>
         <note>Forlægget er H. P. Holst: <i>Fædrenelandske Romancer</i>, Kbh., 1832.</note>
+        <note>Noter med foranstillet asterisk er Holsts egne.</note>
    </notes>
    <pictures>
        <picture type="titlepage" src="1832-p1.jpg">Titelbladet til <i>Fædrenelandske Romancer</i> (1832) lyder ,,Fædrenelandske / Romancer / af / H. P. Holst, / Studios. theol. // Kannst Du nicht Allen gefallen durch Deine That und Dein Kunstwerk, / Mach'es Weningen recht; Vielen gefallen, ist schlimm. / Schiller // Kjöbenhavn / Trykt i det Christensenske Officin ved J. D. Qvist, / Østergade Nr. 52. / 1832.''.</picture>
@@ -21,12 +22,12 @@
     <notes>
         <note>Teksten følger H. P. Holst: <i>Fædrenelandske Romancer</i>, Kbh., 1832, pp. 5-15.</note>
     </notes>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <nonum><small><right>Det danske Piger var, som Danmarks Konning Svend</right></small></nonum>
 <nonum><small><right>Tveskjæg Frihed gav.</right></small></nonum>
-<nonum><small><right>J. L. Heiberg.</right></small></nonum>
+<nonum><small><right><w>J. L. Heiberg.</w></right></small></nonum>
 
 Hvor Sundet bredt sig belter
 Om Sjellands Blomsterkyst,
@@ -37,7 +38,7 @@ Sig nærmer under Øe,
 Hvor Kongeborgen speiler
 Sig i den blanke Søe.
 
-Fra Borgen Luren gjalder.
+Fra Borgen Luren gjalder,
 Der toner Strengespil,
 Kong Svend i Borgens Haller
 Et Gilde seire vil;
@@ -106,15 +107,15 @@ Jeg kan min Tvivl ei dæmpe,
 Thi hør mig denne Gang!
 Paa Sviig kun Sigvald tænker
 Og ei paa ærlig Færd;
-Jeg frygter for hans Ranker,
+Jeg frygter for hans Rænker,
 Ei for hans dragne Sværd.« —
 
 »Ja falsk som Skum paa Bølge
 Er Vikingjarlens Hu,
-Derfor Du ei ham følge!»
+Derfor Du ei ham følge!«
 Lød trindt i Hallen nu.
 Af Harm Kong Svend da lued',
-Han frem i Hallen gik.
+Han frem i Hallen gik,
 Og stolt omkring sig skued'
 Med vrede Herskerblik.
 
@@ -132,7 +133,7 @@ Til Stranden gaaer han ned.
 Han ahner ingen Fare,
 Saa trygt er hvert hans Fjed.
 Over den blanke Bølge
-Paa Baaden føres han.
+Paa Baaden føres han,
 Kun Hirdmænd ti ham følge,
 Ei Fleer der rummes kan.
 
@@ -140,13 +141,13 @@ Saa piilsnart Baaden glider
 Mod Vikingsnekken hen.
 »Nu siig, hvor Jarlen lider?
 Jeg gjæster ham som Ven.«
-Paa Bolstre Sigvald hviler.
+Paa Bolstre Sigvald hviler,
 Karsk iler han nu hid
 Og lumsk i Skjægget smiler,
 Men skjuler det med Flid.
 
 »Ha, Sigvald! vilst Du svige
-Din Herre og Din Drot?» —
+Din Herre og Din Drot?« —
 »Vist ei! fra Danmarks Rige
 Vi gaae til Jomsborg blot!« —
 Af Balgen Svend rev Sværdet,
@@ -155,7 +156,7 @@ Men Jarlen uforfærdet
 Med haanligt Smiil udbrød:
 
 »Hvordan, min Drot! Du agter
-Dit Liv saa saare slet.
+Dit Liv saa saare slet,
 At Du for Alvor tragter
 Med <w>Staal</w> at kjøbe det?
 Sliig Priis var altfor ringe,
@@ -163,7 +164,7 @@ Ja, uhørt fast paa Jord,
 En Drot bør ikke tinge,
 Thi sværger jeg ved Thor:
 
-»Hvis ei af Guld Du eier
+»Hvis ei af <w>Guld</w> Du eier
 Saameget i Dit Land,
 At dermed Du opveier
 Dit Legeme paastand,
@@ -237,7 +238,7 @@ Men Guld, det fattes han.
 
 Tak være Danmarks Qvinder,
 De guldhaarfagre Møer!
-For Danmarks Navn forsvinder
+Før Danmarks Navn forsvinder
 Ei deres Roes uddøer!
 De hengav gyldne Spange
 Og Armbaand, Hovedguld,
@@ -259,7 +260,7 @@ Den altid bringer Smykker
 Med til de danske Møer,
 Fra Sydens Blomsterhave
 En deilig Sommerflor,
-For dem, som de bortgave.
+For dem, som de bortgave,
 De Piger i vort Nord! —
 </body>
 </poem>
@@ -267,21 +268,21 @@ De Piger i vort Nord! —
 <poem id="holst2018030702">
 <head>
     <title>Njörrunga-Slaget</title>
+    <!-- TODO: Jeg kan ikke gennemskue titlens fraktur. Mjö eller Njö eller ...? -->
     <toctitle><num>II.</num>Njörrunga-Slaget</toctitle>
     <firstline>Mens Soel i Østerlide alt farver Himlen rød</firstline>
     <notes>
+        <note>Mottoet stammer fra Oehlenschlägers <xref poem="oehlen2000032701,1-4"/> fra <i>Nordens Guder</i> (1819).</note>
         <note>Teksten følger H. P. Holst: <i>Fædrenelandske Romancer</i>, Kbh., 1832, pp. 16-24.</note>
     </notes>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<!-- TODO: Jeg kan ikke gennemskue titlens fraktur. Mjö eller Njö eller ...? -->
-
 <nonum><small><right>Et Sagn, fuldt værd at høre</right></small></nonum>
 <nonum><small><right>Med gamle Runer staaer;</right></small></nonum>
 <nonum><small><right>Laaner mig Eders Øre,</right></small></nonum>
 <nonum><small><right>Mens jeg Guldharpen slaaer.</right></small></nonum>
-<nonum><small><right>A. Oehlenschläger.</right></small></nonum>
+<nonum><small><right><w>A. Oehlenschläger.</w></right></small></nonum>
 
 Mens Soel i Østerlide alt farver Himlen rød,
 Fremdukke Vikingsnekker af Issefjordens Skjød,
@@ -319,7 +320,7 @@ Ei <w>trende</w> Vintre dertil, men <w>een</w> jeg bruger blot,
 Saasandt mig Aukthor hjælpe, den høie Thrudvangs Drot!«
 
 Ved dette Løfte Sigvald saa stolt omkring sig seer,
-Mens Vagn og Vue Digre og Bjørn og mange Fleer
+Mens Vagn og Bue Digre og Bjørn og mange Fleer
 Gjentage samme Løfte og love samme Færd, —
 Men <w>Svend</w> sig stille glæder, thi skarpt er Nordmands Sværd.
 
@@ -333,7 +334,7 @@ At aldrig end dens Lige tilforn er seet i Nord;
 Did styrer Sigvald sine, knapt eet der er mod tre,
 Da monne han vel glemme hovmodigt sig at tee.
 
-I <w>Hjørringviig</w> de mødes. Saasnart det gryer ad Dag;
+I <w>Hjørringviig</w> de mødes. Saasnart det gryer ad Dag
 Alt Gjallerhornet lyder, der kalder dem til Slag;
 I dunkle Vover Maagen neddukker ængstelig.
 Mens Ravn omflyver Masten med hæse Varselsskrig.
@@ -378,7 +379,7 @@ Til Helheims onde Magter, og offrer dem sin Søn.
 Vildt suste det i Grannen, og Fossen larmed' vred,
 Men alle de smaae Blomster de blegnede derved.
 
-I tætte Slær indhylles den klare Foraarsdag,
+I tætte Sløer indhylles den klare Foraarsdag,
 Og Aukthors Kiler knittre med vældigt Tordenbrag;
 Ran Havets Dyb oprører og venter paa sit Rov,
 Mens Stormens Hviin adsplitter den tætte Masteskov.
@@ -420,7 +421,7 @@ En Lindorm har seet ruge i Aftensolens Skjær<note>* See Bjarnes Jomsvikinga-Dra
 
 Nu Vagn var kun tilbage, saa mandeligt han slog
 Med sine treti Kjæmper og mangen Helt han vog,
-Dog mod den vilde Soegang ei Dæmning holder Stand,
+Dog mod den vilde Søegang ei Dæmning holder Stand,
 Med Skjoldene de klemmes og bringes saa iland.
 
 Tæt bundne til hverandre de vente deres Død
@@ -459,7 +460,7 @@ Og sove hos Din Datter, den væne Ingeborg,
 At ei jeg det kan holde, det fylder mig med Sorg.«
 
 Hen mod ham Thorkil styrter. Nu mærkte Vagn, det gjaldt.
-Foran ham han sig kaster, til Jorden Thorkil faldt.
+Foran ham han sig kaster, til Jorden Thorkil faldt,
 Og med hans egen Øxe da Vagn ham hugged ned.
 »Nu har jeg dog fuldbyrdet det Halve af min Eed!«
 
@@ -478,15 +479,15 @@ Mens blot et Glimt i Norden af Oldtids Kraft er til.«
     <notes>
         <note>Teksten følger H. P. Holst: <i>Fædrenelandske Romancer</i>, Kbh., 1832, pp. 25-31.</note>
     </notes>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <nonum><small><right>Hvad Tidens er, det maa forgaae,</right></small></nonum>
 <nonum><small><right>Hvad Livets er maa leve.</right></small></nonum>
-<nonum><small><right>Chr. Wilster.</right></small></nonum>
+<nonum><small><right><w>Chr. Wilster.</w></right></small></nonum>
 
 Der risler en Kilde i Haraldstedskov
-    Blandt Roser, saa dunkle, saa rødem
+    Blandt Roser, saa dunkle, saa røde,
 Vel Vinteren kommer og henter sit Rov,
     Men Vaaren paany seer dem gløde;
 I Secler gaaer Kilden sin eensomme Gang,
@@ -523,7 +524,7 @@ Der dræbte Knud Lavard for Stimandsløn,
 
 Saa rider han bort paa sin Abildgraa,
     En Ungersvend red ved hans Side.
-»Vist neppe for Midnat tilbage vi naae,
+»Vist neppe før Midnat tilbage vi naae,
     Alt rødmer jo Vesterlide!« —
 Den Ungersvend sukker saa stille, tyst:
 »Ak, bandt mig ei Eden, jeg letted' mit Bryst!
@@ -540,13 +541,13 @@ Nu siig da, hvad Hjertesorg trykker vel Dig?« —
     Hvad Under da vel, at jeg sørger!«
 
 »Forblommet Du taler. Jeg ei dig forstaaer,
-    Ei heller din Flugt kan jeg følge.
+    Ei heller din Flugt kan jeg følge,
 Men seer Du, hvor deiligt hist Solen nedgaaer
     Og flukkes i kjølige Bølge.
 Du est jo en Sanger, har Sands jo for Sligt,
 Saa glæd Dig og see dog hvor yndeligt
     End Glandsen i Vesten mon gløde,
-    Liig Mindet, der følge: den Døde.« —
+    Liig Mindet, der følger den Døde.« —
 
 »Men naar den forsvinder, paa Mark og Vang,
     Da lægger sig Natten øde.« -
@@ -561,7 +562,7 @@ Knud Lavard henrider saa tankefuld,
     Alt under de nøgne Linde.
 »Nu syng os en Vise, rør Strengenes Guld,
     Maaskee da de Tanker forsvinde!« —
-»Jeg kan ei! Mon aldrig om Vaaren I saae,
+»Jeg <w>kan</w> ei! Mon aldrig om Vaaren I saae,
 En Nattefrost dræbte de Blomster smaae,
     Saaledes et Giftpust fortærte
     Hver Spire til Sang i mit Hjerte.« —
@@ -576,7 +577,7 @@ Og om hendes Brødres blodige Liig<note>* Den bekjendte Fortælling om Fru Grimh
     Men aldrig den voldte mig Glæde!
 
 »Alt Fuldmaanen hist over Skoven staaer,
-    Den Skov, den maa jeg vel kjende.
+    Den Skov, den maa jeg vel kjende,
 Den minder mig om mine Barndomsaar, —
     Men hist seer jeg Magnus, min Frende,« -
 — »Saa har han den skuet for sidste Gang,
@@ -630,12 +631,12 @@ Af Skov og af Kilde udslettes hvert Spoer,
     <notes>
         <note>Teksten følger H. P. Holst: <i>Fædrenelandske Romancer</i>, Kbh., 1832, pp. 32-36.</note>
     </notes>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <nonum><small><right>Vort Fødeland var altid rigt</right></small></nonum>
 <nonum><small><right>Paa raske Orlogshelte.</right></small></nonum>
-<nonum><small><right>K. L. Rahbek.</right></small></nonum>
+<nonum><small><right><w>K. L. Rahbek.</w></right></small></nonum>
 
 Med tvende Skibe stikker
 Herr <w>Otto Rud</w> i aaben Søe,
@@ -673,7 +674,7 @@ Mens Skibet bag ham brænder,
 Til Sverrig føres han.
 
 I Riddersalen sidder
-Kong Erik strunk paa gyldne Stoel,
+Kong <w>Erik</w> strunk paa gyldne Stoel,
 Rundtom staaer Hirdmand, Ridder,
 Som Straaler om en Soel.
 
