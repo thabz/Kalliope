@@ -489,6 +489,8 @@
 'Stoien/Støien',
 'stoied/støied',
 'Stoi(\W)/Støi\1',
+'nnt/unt',
+'tnr/tur',
 ];
 
 @regexps = @rules.map { |rule| 
