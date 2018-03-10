@@ -16,6 +16,7 @@ import Picture from '../components/picture.js';
 import FormattedDate from '../components/formatteddate.js';
 import type { Lang, NewsItem, TimelineItem } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
+import _ from '../pages/helpers/translations.js';
 import 'isomorphic-fetch';
 
 class TodaysEvents extends React.Component {
@@ -214,15 +215,16 @@ export default class extends React.Component {
 
   render() {
     const { lang, news, todaysEvents, pagingContext } = this.props;
+    const requestPath = `/${lang}/`;
 
     let navPaging = null;
     if (pagingContext != null) {
       let prevURL = {
-        url: `/${lang}?date=${pagingContext.prev}`,
+        url: `/${lang}/?date=${pagingContext.prev}`,
         title: 'En dag tilbage',
       };
       let nextURL = {
-        url: `/${lang}?date=${pagingContext.next}`,
+        url: `/${lang}/?date=${pagingContext.next}`,
         title: 'En dag frem',
       };
       navPaging = <NavPaging prev={prevURL} next={nextURL} />;
@@ -234,18 +236,18 @@ export default class extends React.Component {
 
     return (
       <div>
-        <Head headTitle="Kalliope" />
+        <Head headTitle="Kalliope" requestPath={requestPath} />
         <Main>
           <Nav lang="da" rightSide={navPaging} />
           <Heading title="Kalliope" />
           <KalliopeTabs lang={lang} selected="index" />
           <SidebarSplit sidebar={sidebar}>
             <div>
-              <SubHeading>Nyheder</SubHeading>
+              <SubHeading>{_('Nyheder', lang)}</SubHeading>
               {renderedNews}
             </div>
           </SidebarSplit>
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

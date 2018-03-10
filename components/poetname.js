@@ -59,12 +59,12 @@ const parts = (
   return [namePart, periodPart];
 };
 
-export default class PoetName extends React.Component {
-  props: {
-    poet: Poet,
-    lastNameFirst?: boolean,
-    includePeriod?: boolean,
-  };
+type PoetNameProps = {
+  poet: Poet,
+  lastNameFirst?: boolean,
+  includePeriod?: boolean,
+};
+export default class PoetName extends React.Component<PoetNameProps> {
   render() {
     const { poet, lastNameFirst, includePeriod } = this.props;
     let pp = null;

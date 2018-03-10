@@ -43,6 +43,10 @@ const writeJSON = (filename, data) => {
   fs.writeFileSync(filename, json);
 };
 
+const writeText = (filename, text) => {
+  fs.writeFileSync(filename, text);
+};
+
 const loadXMLDoc = filename => {
   const data = loadFile(filename);
   if (data == null) {
@@ -67,8 +71,10 @@ const replaceDashes = html => {
       .replace(/ -/g, ' —')
       .replace(/^- /gm, '— ')
       .replace(/>- /g, '>— ')
+      .replace(/,,- /g, ',,— ')
       .replace(/,,/g, '&bdquo;')
       .replace(/''/g, '&ldquo;')
+      .replace(/'/g, '&rsquo;')
       .replace(/&nbsp;- /g, '&nbsp;— ')
       .replace(/ -&ldquo;/g, ' —&ldquo;')
       .replace(/ -$/gm, ' —')
@@ -95,7 +101,7 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
         .replace(/\n *(----*) *\n/g, (match, p1) => {
           return `\n<hr width="${p1.length}"/>\n`;
         })
-        .replace(/^( *[_\*]+ *)/gm, (match, p1) => {
+        .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
           // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
           return `<nonum>${p1}</nonum>`;
         })
@@ -103,7 +109,7 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
         .replace(/^ *(<right>.*)$/gm, '$1')
         .replace(/^ *(<center>.*)$/gm, '$1')
         .replace(/^( +)/gm, (match, p1) => {
-          return '&nbsp;'.repeat(p1.length);
+          return '&nbsp;'.repeat(2 * p1.length);
         })
     )
   );
@@ -256,6 +262,7 @@ module.exports = {
   loadJSON,
   loadFile,
   writeJSON,
+  writeText,
   loadXMLDoc,
   htmlToXml,
   replaceDashes,
