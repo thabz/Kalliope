@@ -10,5 +10,6 @@ const regexps = [
     /lll/,
     /aaa/,
     /sss/,
+    / ,[^,]/,
 ];
 // TODO: Hver regel kunne have nogle white-list regexps, som angiver undtagelser. F.eks. reglen /aaa/ kunne undtagelsen /Smaaalfer/
