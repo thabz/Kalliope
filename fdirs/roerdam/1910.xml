@@ -1,38 +1,59 @@
-KILDE:Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910.
-DIGTER:roerdam
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="1910" author="roerdam" status="complete" type="poetry">
+<workhead>
+   <title>Luft og Land</title>
+   <year>1910</year>
+   <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910.</note>
+      <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+   </notes>
+   <pictures>
+       <picture type="titlepage" src="1910-p1.jpg">Titelbladet til <i>Land og Luft</i> (1910) siger ,,Valdemar Rørdam / Luft og Land // Gyldendalske Boghandel / Nordisk Forlag // MDCCCCX''.</picture>
+   </pictures>
+   <quality>korrektur1,kilde,side</quality>
+</workhead>
+<workbody>
 
+<section>
+<head>
+    <title>Fra det gamle Sjælland</title>
+</head>
+<content>
 
-SEKTION:Fra det gamle Sjælland
-
-
-
-T:Ondløse
-F:Når var det, hvor var det, den brast?
-SIDE:11-34
-
+<poem id="roerdam2018031101">
+<head>
+    <title>Ondløse</title>
+    <firstline>Når var det, hvor var det, den brast?</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 11-34.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I
 
-Når var det, hvor var det, den brast? 
+Når var det, hvor var det, den brast?
 En Stræng i min Sjæl kun Brusten.
-Et Svinghjul som rendte sig fast; 
+Et Svinghjul som rendte sig fast;
 nu æder Rusten.
 
 Giv Glemsel, o Solskin og Blæst
 og glitrende Bølger!
-Det blæser med Vår af Sydvest, 
+Det blæser med Vår af Sydvest,
 og jeg følger.
 
-Jeg genkender Svinget af Vejen 
+Jeg genkender Svinget af Vejen
 og Gårdenes Klynger;
-de ligger som Linned på Blegen 
+de ligger som Linned på Blegen
 og Lærkerne synger.
 
 Nej, Åmosen er det som toner:
 En milebred Harpe,
-spændt ud mellem Asernes Kroner, 
+spændt ud mellem Asernes Kroner,
 de skovblå skarpe.
 
-Spændt ud med de strømblå Strænge 
+Spændt ud med de strømblå Strænge
 der sitrer i Blæsten.
 De lokker Ens Hjerte så længe ...
 Jeg glemte dem næsten.
@@ -42,7 +63,7 @@ II
 
 Her gik jeg den modsatte Retning
 en Sommer for tyve År siden
-og tvandt på den Tankernes Fletning 
+og tvandt på den Tankernes Fletning
 der bandt mig til Tiden,
 
 Min Fjende, og gjorde mig ene,
@@ -50,17 +71,17 @@ til Kampen endes,
 og bød mig det Brød, som er Stene.
 Dog mangt kan hændes.
 
-Ja, selve den mægtige Tid 
+Ja, selve den mægtige Tid
 kan blive den lille.
-Som død kan jeg vinde min Strid; 
+Som død kan jeg vinde min Strid;
 det er ikke for silde.
 
 
 III
 
-Nu vandrer jeg Længslernes Led, 
+Nu vandrer jeg Længslernes Led,
 ikke frem, men tilbage.
-Et Sår skaller af for hvert Fjed 
+Et Sår skaller af for hvert Fjed
 mod min Ungdoms Dage.
 
 De glattes, de glødende Ar,
@@ -68,52 +89,52 @@ i den lægende Vår,
 og min Hud blev frisk som den var.
 Jeg er glad hvor jeg går.
 
-Hver Pil ved de vandfyldte Grøfter, 
+Hver Pil ved de vandfyldte Grøfter,
 hvert soltørret Dige,
 hvor Følfodblomsterne løfter
 de gule Flige,
 
 Gør lønlige Tegn til den Vandrer
 som var deres Ven:
-Vi kendes endnu ved hverandre, 
+Vi kendes endnu ved hverandre,
 vel mødt her igen!
 
-Og de legende Unger som ligger 
+Og de legende Unger som ligger
 ved Husmandens Dør,
-de nikker igen, når jeg nikker, 
+de nikker igen, når jeg nikker,
 som såe de mig før.
 
-De såe mig — såsandt deres Fædre 
+De såe mig — såsandt deres Fædre
 og Mødre engang
-har leget med mig. Det er bedre 
+har leget med mig. Det er bedre
 end mangen en Sang.
 
-Og selv fra de altfor friske 
+Og selv fra de altfor friske
 og spraglede Huse
-hører jeg Minderne hviske, 
+hører jeg Minderne hviske,
 som Siv kan suse.
 
-Jeg ser jo de klinede Hytter, 
+Jeg ser jo de klinede Hytter,
 som Borte nu gemmer,
-og genkender, når jeg lytter, 
+og genkender, når jeg lytter,
 de Dødes Stemmer.
 
 
 IV
 
-Dog er jeg mer end de Dødes 
+Dog er jeg mer end de Dødes
 drømvandrende Gæst.
-Her står jeg hvor Vejene mødes 
+Her står jeg hvor Vejene mødes
 i Vårsol og Blæst,
 
 Og knejser dristigt og tror mig
 en guldkrushåret Student —
-så bugnende bærer den Jord mig, 
+så bugnende bærer den Jord mig,
 så kært og kendt.
 
 Butiken og Kirkegårdsmuren
 og Enkesædet:
-Her hviles mit Hjerte fra Turen; 
+Her hviles mit Hjerte fra Turen;
 ja, her er Stedet.
 
 Eet er dog Sjælens af alle
@@ -123,15 +144,15 @@ ser langsomme Vogne.
 
 Der tales derinde. De synger.
 Elsket og savnet ...
-Så skilles de sortklædte Klynger; 
+Så skilles de sortklædte Klynger;
 jeg hører Navnet.
 
-Et Barn er begravet, en Datter 
-af en der med mig var Dreng. 
-Da hulker med halvkvalt Latter 
+Et Barn er begravet, en Datter
+af en der med mig var Dreng.
+Da hulker med halvkvalt Latter
 Erindringens rustne Stræng.
 
-Hvor blev han af nu, Studenten, 
+Hvor blev han af nu, Studenten,
 den ranke, med Krøller?
 Det skrider, gør Leret i Skrænten,
 og Strømmene skyller.
@@ -139,65 +160,65 @@ og Strømmene skyller.
 
 V
 
-Hvad fabler jeg? Klokkerne tier 
+Hvad fabler jeg? Klokkerne tier
 og Vognene kørte ...
 Var alt kun en Drøms Melodier,
 som Drømmeren hørte?
 
-Her står jeg og taler med Smeden. 
+Her står jeg og taler med Smeden.
 Ja, Tiden går.
-Det, der kun synes forleden, 
+Det, der kun synes forleden,
 er tredve År.
 
 Men Smeden er stadig den samme:
 Det sorte buskede Skæg
-og det kraftige Blik — Jern, Flamme 
+og det kraftige Blik — Jern, Flamme
 og sodet Væg.
 
-End ser jeg bag Ruderne skinne 
+End ser jeg bag Ruderne skinne
 en rød Balsamine.
-Dær spilled jeg Sorteper inde 
+Dær spilled jeg Sorteper inde
 med Smedens Kirstine.
 
-I Trods mod Alverden jeg fægted; 
-hun smelted mit syvårs Hjerte, 
-det blussende Barn — jeg smægted 
+I Trods mod Alverden jeg fægted;
+hun smelted mit syvårs Hjerte,
+det blussende Barn — jeg smægted
 og lod mig sværte.
 
-Nu sidder hun Enke med Gården 
+Nu sidder hun Enke med Gården
 derovre i Tviden —
-gør Smedens Kirstine fra Våren 
+gør Smedens Kirstine fra Våren
 for tredve År siden!
 
 
 VI
 
-Det er som en Flod jeg fornemmer 
+Det er som en Flod jeg fornemmer
 evindeligt bruse
 bag alle de venlige Stemmer
 fra lave små Huse.
 
-Jeg hører et Vandfald true 
+Jeg hører et Vandfald true
 fra tordnende Bredder
 i Sognefogedens Stue,
 hvor tyst jeg sidder,
 
-Og ser, bag hans rynkede fine 
+Og ser, bag hans rynkede fine
 forstandige Træk
 og hans Smil og hans rørte Mine,
 en Dreng smutte væk.
 
-En Dreng som løber og leder 
+En Dreng som løber og leder
 i Kongsdal Enge
 med Far efter Fuglereder,
 to raske Drenge,
 
 Der lægger snedige Planer
 mod Lotte, min Faster,
-om Baghold i grønne små Graner ... 
+om Baghold i grønne små Graner ...
 som længst blev Master.
 
-Jeg hører de gamle Børns Røster, 
+Jeg hører de gamle Børns Røster,
 og Græshopper synger
 fra sjunkne Sommeres Kyster,
 så Gulvet gynger.
@@ -205,152 +226,152 @@ så Gulvet gynger.
 
 VII
 
-Så lister jeg ud for at skjule 
+Så lister jeg ud for at skjule
 mit sitrende Sind
 i Kirketårnet hos Fugle
 og Vær og Vind.
 
-Jeg bolter bag mig den gamle 
+Jeg bolter bag mig den gamle
 groft jernbeslagne Låge
 og finder uden at famle
 de kendte Kroge.
 
-Jeg kravler ad ormædte Trapper 
+Jeg kravler ad ormædte Trapper
 og stejle Stiger
 imellem Luger der klapper
 og Råger der skriger.
 
 Jeg rører det rustne Anker
 i den Kampestens Mur
-og går på de vældige Planker 
+og går på de vældige Planker
 i Klokkernes Bur.
 
-De hænger så tyst i den skumle 
+De hænger så tyst i den skumle
 men luftige Hal;
 kun hundredårs Indskrifter mumle:
 Vi kender vort Kald.
 
-Jeg læser og lytter — og rører 
+Jeg læser og lytter — og rører
 de tunge Kroner.
-Da ryster mit Hjerte. Jeg hører 
+Da ryster mit Hjerte. Jeg hører
 hvor Malmet toner.
 
 Far, Farfar og Farfars Far
-har vel kendt Klokkernes Klang, 
-og vidst hvor den knuged og bar 
+har vel kendt Klokkernes Klang,
+og vidst hvor den knuged og bar
 Guds Tjeneres Gang.
 
-De har talt i det smykkede Kor 
+De har talt i det smykkede Kor
 over kransede Lokker
 og talt over tre Skovle Jord
 med disse Klokker.
 
-Og deres Bønner og Klage 
+Og deres Bønner og Klage
 og knuste Håb
-har stormet i Krigens Dage 
+har stormet i Krigens Dage
 med Klokkernes Råb. —
 
-Farfar i tætknappet Kofte 
+Farfar i tætknappet Kofte
 med buskede Bryn.
-Jeg såe ham ikke ret ofte, 
+Jeg såe ham ikke ret ofte,
 men husker det Syn.
 
-Og den opslagne Bibel på Bordet: 
+Og den opslagne Bibel på Bordet:
 ,,Læs her, min Dreng!''
 Han lytted alvorlig til Ordet,
 dybt mild og stræng.
 
-Lad briste! Der gives de Bånd 
+Lad briste! Der gives de Bånd
 som aldrig forgår;
-Han velsignede mig med sin Hånd 
+Han velsignede mig med sin Hånd
 på mit gule Hår. —
 
-Og Farmor, en fin gammel Kvinde 
+Og Farmor, en fin gammel Kvinde
 med drømblå Øjne.
-Det er så mægtigt et Minde, 
+Det er så mægtigt et Minde,
 skønt År er fløjne.
 
 Hun hvilede hvid og spæd
 i alt det hvide,
-dødtræt; og jeg tror jeg græd 
+dødtræt; og jeg tror jeg græd
 ved hendes Side.
 
-Da rejste hun sig i Sengen 
+Da rejste hun sig i Sengen
 med hulkende Røst
-og greb og knugede Drengen 
+og greb og knugede Drengen
 ind til sit Bryst.
 
-Det Bryst, hvis Mælk en Gang 
+Det Bryst, hvis Mælk en Gang
 min Far havde drukket.
-Der brast som en jublende Sang 
+Der brast som en jublende Sang
 i Smertesukket.
 
-Og under en Regn af Tårer 
+Og under en Regn af Tårer
 trykkede hun
-som rejst fra sin egen Båre 
+som rejst fra sin egen Båre
 et Kys på min Mund.
 
-Jeg såe hende aldrig mer - 
+Jeg såe hende aldrig mer -
 kun en Blomsterdynge,
-der sank i det kolde Ler 
+der sank i det kolde Ler
 med så liden Tynge.
 
-Men Klokkens klingende Krone 
+Men Klokkens klingende Krone
 i tusmørk Ro
 har tryllet frem i een Tone
 dem begge to.
 
-Thi under de Toners Bue 
+Thi under de Toners Bue
 bar trofast i to Snese År
-den stilfærdige Præst og hans Frue 
+den stilfærdige Præst og hans Frue
 Livs Kamp og Sår.
 
-Og da de med udslidte Våben 
+Og da de med udslidte Våben
 tilsidst måtte vige,
-slog Klokkerne Porten åben 
+slog Klokkerne Porten åben
 til Himmerige.
 
-Og ringer endnu hver Kvæld 
+Og ringer endnu hver Kvæld
 over Støvets Rede.
-Jeg åbner en Glug på Hæld: 
+Jeg åbner en Glug på Hæld:
 Dær ligger de nede.
 
-I Duft af Hylde og Hægge 
-fra Præstegårdshaven 
-grønnes med Vedbenddække 
+I Duft af Hylde og Hægge
+fra Præstegårdshaven
+grønnes med Vedbenddække
 Dobbeltgraven.
 
 
 VIII
 
-Jeg lukker den Glug. For silde! 
+Jeg lukker den Glug. For silde!
 Det er allerede sket:
 Alt hvad jeg nødigst vilde
 har jeg set.
 
-Bag Bedsteforældrenes Grave 
+Bag Bedsteforældrenes Grave
 Barndomshjemmet,
-tre Slægtleds Hus og Have, 
+tre Slægtleds Hus og Have,
 nu stængt og fremmed.
 
-Jeg ser det her hvor jeg hænger, 
+Jeg ser det her hvor jeg hænger,
 som før jeg såe:
 De hundredårige Længer
 med Tag af Strå.
 
 Og Storkereden på Stalden.
 Det Røverkastel:
-Hvor var der en Knevren og Skralden 
+Hvor var der en Knevren og Skralden
 hver Sommerkvæld!
 
-Af Hjørneskorstenen stiger 
+Af Hjørneskorstenen stiger
 en blålig Røg;
-jeg hører pludrende Piger 
+jeg hører pludrende Piger
 og Køkkenstøj.
 
 Jeg hører Ringene klirre
 fra det gamle Komfur.
-Så underlig det forvirrer ... 
+Så underlig det forvirrer ...
 Nu slår der et Ur.
 
 Syv Slag. Så bliver der smækket
@@ -358,9 +379,9 @@ et Vindu op. Ja, naturligvis,
 nu kaldes der: Bordet er dækket —
 Kom ind, Børn, og spis!
 
-Jeg selv er nær ved at svare 
+Jeg selv er nær ved at svare
 fra Tårnets Tind,
-men kender ikke den Skare, 
+men kender ikke den Skare,
 der stormer ind ...
 
 
@@ -368,151 +389,151 @@ IX
 
 Her sidder jeg skjult og bange;
 men Haven dær
-med dens grønne Plæner, dens Gange 
+med dens grønne Plæner, dens Gange
 og gamle Trær
 
-Er uforandret den samme, 
+Er uforandret den samme,
 som da jeg såe
-min lønlige Ungdoms-Flamme 
+min lønlige Ungdoms-Flamme
 med Florentinerhat på
 
 Sidde ved Elmetræet
-i Aftensols guldrøde Strømme 
-med Hænderne foldet om Knæet 
+i Aftensols guldrøde Strømme
+med Hænderne foldet om Knæet
 og stille drømme
 
-I Sommerens søde Lejde 
+I Sommerens søde Lejde
 hos Blomsterduften
-uden at ane hvad Fejde 
+uden at ane hvad Fejde
 jeg førte fra Luften.
 
 
 X
 
-Dær kupler nu Elm og Linde 
+Dær kupler nu Elm og Linde
 de nøgne Grene,
 og nu er de andre inde
 og Haven ene.
 
-Farvel, Klokker! — I tier? — 
+Farvel, Klokker! — I tier? —
 Jeg går bedrøvet;
 det blir ikke Jer som vier
 mit Støv til Støvet.
 
-Jeg er en fremmed som træder 
+Jeg er en fremmed som træder
 med frygtsomt Fjed
 på Mindets hellige Steder
 og skælver derved.
 
-Det skræmmer alt, og det lokker 
+Det skræmmer alt, og det lokker
 med lønlig Tvang.
-Da ringer de gamle Klokker 
+Da ringer de gamle Klokker
 til Solnedgang.
 
-Og Tonerne fylder med Fred 
+Og Tonerne fylder med Fred
 den tusmørke Gård.
-Jeg bliver så tryg derved, 
+Jeg bliver så tryg derved,
 hvor træt jeg står.
 
 Jeg ser i gladere Tanker
 nu end før
-hin Dør mellem Rosenranker 
+hin Dør mellem Rosenranker
 som Fremmedes Dør.
 
-Det Lys bag de lave Ruder 
+Det Lys bag de lave Ruder
 er tændt for andre,
-men hilser fra gamle Guder 
+men hilser fra gamle Guder
 en ensom Vandrer.
 
 
 XI
 
-Jeg skimter i Lampeskæret 
+Jeg skimter i Lampeskæret
 en Række Profiler —
-en Kande der løftes iværet — 
+en Kande der løftes iværet —
 en Pige der smiler —
 
-Så går jeg ud af den skumrende 
+Så går jeg ud af den skumrende
 Baggårdsgyde
-og lytter til Staldens humrende 
+og lytter til Staldens humrende
 Dyrelyde.
 
-Her ligger nu Haven ene med 
+Her ligger nu Haven ene med
 glasgul Himmel
-bag sorte Kviste og Grene, 
+bag sorte Kviste og Grene,
 vårligt svimmel.
 
-Erindringen smutter og jubler 
+Erindringen smutter og jubler
 — en hjemvendt Fugl —
-i alle de Kroner og Kupler 
+i alle de Kroner og Kupler
 og Lysthusskjul.
 
-Det lyser langs dunkle Hækker 
+Det lyser langs dunkle Hækker
 og skumrende Skrænter
 af stille Vintergækker
 der står og venter.
 
 De skinner langs Dam og Dige
 i hvide Klynger
-som Børn af et hemmeligt Rige; 
+som Børn af et hemmeligt Rige;
 de står og synger.
 
-Jeg bøjer mig mod deres Kroner: 
+Jeg bøjer mig mod deres Kroner:
 Hvem venter I på? —
 De spæde nynnende Toner
 kan ingen forstå.
 
-Men over Kastanjen er Himlen 
+Men over Kastanjen er Himlen
 begyndt at blåne.
-Dær hænger i Grenevrimlen 
+Dær hænger i Grenevrimlen
 den gule Måne.
 
-Og som jeg nu går og finder 
+Og som jeg nu går og finder
 de gamle Stammer
-med deres Navne og Minder 
+med deres Navne og Minder
 i Månens Flammer,
 
-Og sporer på Duften de Buske 
-hvormed Rabatten er kantet. 
+Og sporer på Duften de Buske
+hvormed Rabatten er kantet.
 Violer som jeg kan huske
 jeg selv har plantet,
 
-Får også de andre Ting Stemmer, 
+Får også de andre Ting Stemmer,
 Stene og Jord.
-De nynner om noget de gemmer 
+De nynner om noget de gemmer
 og noget der gror.
 
-Et Kvidder, en Rislen, et Sus ... 
+Et Kvidder, en Rislen, et Sus ...
 Jeg ser kun det lave
-langstrakte hvidkalkede Hus 
+langstrakte hvidkalkede Hus
 i en månelys Have.
 
-Usynligt er det som fortryller, 
+Usynligt er det som fortryller,
 og svært at tyde.
-Dog skelnes i Tonernes Mylder 
+Dog skelnes i Tonernes Mylder
 nu enkelte Lyde.
 
-,,Vent!'' hvisker en Vinterasters 
+,,Vent!'' hvisker en Vinterasters
 mig dæmpet imøde.
-Jeg veed at den Røst er min Fasters — 
+Jeg veed at den Røst er min Fasters —
 jeg blev født da hun døde.
 
-Og Maidenblush-Buskene kalder: 
+Og Maidenblush-Buskene kalder:
 ,,Kom her og dans!'' —
-Hvem saae vel sin Far i den Alder? 
+Hvem saae vel sin Far i den Alder?
 Dog Stemmen er hans.
 
-Og ud fra Kastanjerne stammer 
+Og ud fra Kastanjerne stammer
 to barnlige Røster:
-,,Se, her har vi vores Kammer!'' 
+,,Se, her har vi vores Kammer!''
 — Min Bror og min Søster.
 
-Jeg lytter. Hvad mer skal jeg gøre? 
+Jeg lytter. Hvad mer skal jeg gøre?
 Men Sangen og Suset
 pibler af Ruder og Døre
 i selve Huset:
 
-,,Hvad er det, som her gør dig fremmed? 
+,,Hvad er det, som her gør dig fremmed?
 Dit snævre Sind.
 Luk ikke dit Hjerte for Hjemmet —
 Kom du kun ind!''
@@ -520,49 +541,49 @@ Kom du kun ind!''
 
 XII
 
-Så finder jeg Gangdøren åben, 
-og åbne Hænder og Blikke. 
-Min Rustning og mine Våben 
+Så finder jeg Gangdøren åben,
+og åbne Hænder og Blikke.
+Min Rustning og mine Våben
 behøves ikke.
 
-Det er ikke alt som flyttes, 
+Det er ikke alt som flyttes,
 når Slægterne vandre.
-Vi, som aldrig før mødtes, 
+Vi, som aldrig før mødtes,
 vi kender hverandre.
 
-Her sidder en grånet Fader 
+Her sidder en grånet Fader
 og falmet Moder
-og ser på de glidende Flader 
+og ser på de glidende Flader
 af Livets Floder,
 
-Mens knejsende Sønner, Knægte 
+Mens knejsende Sønner, Knægte
 og voksne Svende
-forlanger sig ud at fægte 
+forlanger sig ud at fægte
 til Verdens Ende,
 
 Og mørke strålende Piger
 med røde Munde
-går drømmende rundt og higer 
+går drømmende rundt og higer
 mod Havsens Bunde.
 
-O, vist er vi Fremmede Frænder 
+O, vist er vi Fremmede Frænder
 af samme Rod,
 og Hjemmet i Slægtens Hænder
 kun videre groet!
 
-Jeg hører af deres Tale, 
+Jeg hører af deres Tale,
 og da de synger,
-af Tonernes Bjerge og Dale, 
+af Tonernes Bjerge og Dale,
 hvor Hjerterne gynger.
 
 Forældrene synger. Det svulmer
 af kæmpende Dage,
-det bryder, og brister, og dulmer: 
+det bryder, og brister, og dulmer:
 Nu ser vi tilbage.
 
 Så stiger i skælvende Stråler
 en Ungpigerøst.
-Det er Himlens Højde den måler 
+Det er Himlens Højde den måler
 med ængstelig Lyst.
 
 Vel er det knap til at tåle
@@ -575,57 +596,57 @@ af andre Struber.
 Når tror man, en Sang er forstummet
 i Støvets Gruber?
 
-Den veed sig i Træernes Kroner 
+Den veed sig i Træernes Kroner
 hos Vinden at fjæle.
-Og Blomsterne hvisker og toner 
+Og Blomsterne hvisker og toner
 af henfarne Sjæle.
 
-De Dødes — og vore egne, 
+De Dødes — og vore egne,
 som vi har mistet!
-Vi finder dem allevegne, 
+Vi finder dem allevegne,
 når Sløret er bristet.
 
-Og kommer der Folk som træder 
+Og kommer der Folk som træder
 uden Sange,
 lig Dyr, på de hellige Steder,
 så flygter de bange.
 
-Så skjuler de sig. Men de er der. 
+Så skjuler de sig. Men de er der.
 Det lever, det døde,
 og ånder syngende Hjerter
 med Sang imøde.
 
-Selv vi, selv vi, der os vånder 
+Selv vi, selv vi, der os vånder
 i Kødets Glæder,
 kan leve i Løn som Ånder
 på andre Steder.
 
 Legemet kan man flytte,
 men Sjælen er tro:
-Hvor den een Gang blomstred og blødte, 
+Hvor den een Gang blomstred og blødte,
 dær vil den bo.
 
-Forladt af sin Sjæl må man vandre 
+Forladt af sin Sjæl må man vandre
 så tung som Bly
 og låne sig frem hos andre,
 til man får sig en ny.
 
-Den første er blevet tilbage, 
+Den første er blevet tilbage,
 har gjort sig fri
-til evigt Liv i de Dage, 
+til evigt Liv i de Dage,
 som blev forbi.
 
-Og andre, måske kun hin ene 
+Og andre, måske kun hin ene
 kan møde den dær
 og tale med den i Stene
 og Blomster og Trær.
 
-Da mærker man undertiden 
+Da mærker man undertiden
 i dulgte Skælv
-af underlig Lyst og Liden 
+af underlig Lyst og Liden
 sit mistede Selv.
 
-Hvorfor da så ængsteligt fritte 
+Hvorfor da så ængsteligt fritte
 tilbage og frem?
 Vi lever i altings Midte,
 går altid hjem.
@@ -633,113 +654,120 @@ går altid hjem.
 
 XIII
 
-Farvel, I knejsende Svende 
+Farvel, I knejsende Svende
 og trodsige Knægte!
 Vi ses ved Verdens Ende,
 dær skal vi fægte.
 
-I mørke, I strålende Piger, 
+I mørke, I strålende Piger,
 Farvel, Farvel!
-Vi mødes vel dær hvor I higer 
+Vi mødes vel dær hvor I higer
 en månelys Kvæld.
 
-Og I, som råder herinde 
+Og I, som råder herinde
 og undte Gæsten
-sin levende Lod at finde 
+sin levende Lod at finde
 af Påskefesten —
 
 Jeg søgte Jer her som fremmed,
 og hilser nu da jeg går:
-På Gensyn! På Gensyn i Hjemmet 
+På Gensyn! På Gensyn i Hjemmet
 om hundrede År!
 
-Forgængeligheden truer; 
+Forgængeligheden truer;
 måske er det gamle Hus
-med de bjælkeloftede Stuer 
+med de bjælkeloftede Stuer
 da lagt i Grus.
 
-Men selv bag styrtede Vægge 
+Men selv bag styrtede Vægge
 og ildædt Strå og Stok
 skal vi såvist finde Dække
 og Lunhed nok.
 
-En Evighedssang skal vi suse 
+En Evighedssang skal vi suse
 med Blæsten her
-igennem de sjunkne Huse 
+igennem de sjunkne Huse
 og smuldrede Trær.
 
-I Klokkerne skal vi gynge, 
+I Klokkerne skal vi gynge,
 når Malmet runger,
-og lære Luften at synge 
+og lære Luften at synge
 med salige Tunger.
 
-Da veed vi, at Vinteren gækker. 
-Langs Glemselens dunkle Dige 
+Da veed vi, at Vinteren gækker.
+Langs Glemselens dunkle Dige
 skal vore lysende Rækker
 en Vårnat stige.
 
-Og langs de skumrende Skrænter s
-kal atter en Vandrer gå
-og undrende spørge: ,,Hvem venter 
+Og langs de skumrende Skrænter 
+skal atter en Vandrer gå
+og undrende spørge: ,,Hvem venter
 I Blomster på?''
+</body>
+</poem>
 
-
-T:Anders ved Fugleå
-F:Gamle Anders ved Fugleå
-SIDE:35-38
-
+<poem id="roerdam2018031102">
+<head>
+    <title>Anders ved Fugleå</title>
+    <firstline>Gamle Anders ved Fugleå</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 35-38.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Gamle Anders ved Fugleå
 er glad for en Snaps og en sovset Skrå.
-    Ved Stolk var han med som Dragon, 
-    blev Kusk hos den salig Hr. Greve, 
+    Ved Stolk var han med som Dragon,
+    blev Kusk hos den salig Hr. Greve,
 og har nu et hundrede Kroners Pension
-    og nådigst Lov til at leve — 
+    og nådigst Lov til at leve —
 i Halvsult, Snavs og Useldom,
     til Hytten en Dag blæser om.
 
 Gamle Anders ved Fugleå
 er plaget af Gigt, kan dårlig gå.
-    Hver Dag kommer Naboens Kvind 
+    Hver Dag kommer Naboens Kvind
     og hjælper ham op tilsæde;
-hun har syv Børn og et Satans Sind 
+hun har syv Børn og et Satans Sind
     og får ham tit til at græde.
-Så går hun hjem og gir Ungerne Klaps, 
+Så går hun hjem og gir Ungerne Klaps,
     og han tar sig en Skrå og en Snaps.
 
-Dær sidder Anders ved Fugleå, 
+Dær sidder Anders ved Fugleå,
 krumbenet, tyndbenet, snavset og grå.
-    Hans Armstol er flettet med Halm, 
+    Hans Armstol er flettet med Halm,
     tykt Vadmelstøj stritter om Kroppen,
-Stuen er enten kold eller kvalm, 
+Stuen er enten kold eller kvalm,
     og bide gør Lusen og Loppen.
-Så skutter han sig med et Hiv og et Suk — 
+Så skutter han sig med et Hiv og et Suk —
     og tar sig et godt lille Kluk.
 
-Der er alfar Vej over Fugleå. 
+Der er alfar Vej over Fugleå.
 Med Trøjeærmet kan Anders nå
-    at viske Vinduets Glar. 
+    at viske Vinduets Glar.
     Han kender fra fire Sogne
-hver Bonde og skelner hvad Ærend de har 
+hver Bonde og skelner hvad Ærend de har
     af deres Bæster og Vogne.
-Til Mølle, til Bys, jo, Anders er med — 
+Til Mølle, til Bys, jo, Anders er med —
     og får sig en Dram hvert Sted.
 
 Gæstfri er Anders ved Fugleå,
 han byder dig strax en Snaps og en Skrå
-    og famler med rystende Hånd 
+    og famler med rystende Hånd
     i Skuffen og hitter Medaljen
-og gnider dens Malm og glatter dens Bånd: 
+og gnider dens Malm og glatter dens Bånd:
     Mars mars! gik det lukt i Bataljen,
-Bæster og Folk i een Klump. Han slap 
+Bæster og Folk i een Klump. Han slap
     med en Rift og en bortskudt Knap.
 
-To Gange om Året står Storvask på 
+To Gange om Året står Storvask på
 for Stuen og Anders ved Fugleå.
-    Han sidder med vandkæmmet Hår, 
+    Han sidder med vandkæmmet Hår,
     fint raget, og venter på Præsten;
-han hverken snapser den Dag eller skråer, 
+han hverken snapser den Dag eller skråer,
     han staver Salmen og Læsten.
-Beredt skal man gå til Nådens Bord 
+Beredt skal man gå til Nådens Bord
     og annamme Guds hellige Ord.
 
 Men Dagen derefter ved Fugleå
@@ -747,339 +775,354 @@ tar Anders trøstig en to Tommers Skrå
     og spytter i saftige Strip,
     frigjort for Synden og Skammen.
 Ud gennem hans røde Næsetip
-    siver blinkende Dråber af Drammen. 
+    siver blinkende Dråber af Drammen.
 Selv en knejsende Kusk på en grevelig Buk
     ser han uden et Suk.
 
 Det blæser og regner ved Fugleå
 gennem Væggen af Ler, gennem Taget af Strå,
-    men dø, Godtfolk? Nej Tak! 
+    men dø, Godtfolk? Nej Tak!
     Er Livet da kuns for Grever?
-Den kloge Kones ny Plaster trak 
+Den kloge Kones ny Plaster trak
     det onde fra Anderses Lever
-ud af en Byld på hans Tommeltot. 
+ud af en Byld på hans Tommeltot.
     Nu har han det rigtig godt.
 
 Den fattige Anders ved Fugleå,
 så længe han har kun en Snaps og en Skrå
     er Livet ham til Behag.
 Han har kun een Bøn til Vorherre:
-At han må gå bort på en ædru Dag. 
+At han må gå bort på en ædru Dag.
     Det skal vel knibe, desværre —
-Dog kan det ske, at der gives Pardon 
+Dog kan det ske, at der gives Pardon
     endda til en gammel Dragon.
+</body>
+</poem>
 
-T:Karen og Klokkerne
-F:Vist ingen, som har hørt dem, glemmer
-SIDE:39-47
-
-Vist ingen, som har hørt dem, glemmer 
+<poem id="roerdam2018031103">
+<head>
+    <title>Karen og Klokkerne</title>
+    <firstline>Vist ingen, som har hørt dem, glemmer</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 39-47.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Vist ingen, som har hørt dem, glemmer
 de gamle Klokkers dybe Stemmer.
     De ringer Solen op og ned
         bag Skov og grønne Banker;
-    de ringer Tid og Evighed 
+    de ringer Tid og Evighed
         og underlige Tanker.
-    De ringer Året ind og ud; 
+    De ringer Året ind og ud;
     de ringer for den unge Brud
-        og for den åbne Grav. 
+        og for den åbne Grav.
     I Julesne og Pinsemaj
-    vidt lyder over Mark og Vej 
+    vidt lyder over Mark og Vej
         med evig Længsels Krav
     i Klagesuk og Jubelsang
     de gamle Klokkers dybe Klang.
 
-Landsbyer, Gårde, Mosehytter, 
+Landsbyer, Gårde, Mosehytter,
 de lukker alle op og lytter.
-    I Vinterslud, i Sommerdug, 
+    I Vinterslud, i Sommerdug,
         det kalder og det tvinger;
-    man kigger op til Tårnets Glug, 
+    man kigger op til Tårnets Glug,
         så længe Klokken svinger.
-    Den tav; dær tav syv hundred År ... 
+    Den tav; dær tav syv hundred År ...
     Sligt er der få kun som forstår;
-        men denne Toneregn 
-    befrugter dog de stumme Sind 
+        men denne Toneregn
+    befrugter dog de stumme Sind
     i Broderskab med Sol og Vind
         og Stjernehimlens Tegn
-    og andre Ting, som er fra Gud 
+    og andre Ting, som er fra Gud
     og vælder evigt på hans Bud.
 
-Sært nok, at dette Malm, der toner, 
+Sært nok, at dette Malm, der toner,
 er støbt som Ovne og Kanoner,
     og såre møjsomt hejset op
         og hængt ved stærke Kroge
-    på Bjælkerne i Tårnets Top 
+    på Bjælkerne i Tårnets Top
         hos Ugle og hos Råge.
-    Og hversomhelst kan med et Greb 
+    Og hversomhelst kan med et Greb
     om Knuden af et snavset Reb
-        straks vække Malmets Ånd. 
+        straks vække Malmets Ånd.
     De høje Klokkers Tonevagt
     for Himlens Port er ikke lagt
         i nogen Engels Hånd;
     de tjenes og de styres blot
     helt jordisk, ja, selv jordisk småt.
 
-Bredskuldret, knoklet, gigtkrum bøjet, 
+Bredskuldret, knoklet, gigtkrum bøjet,
 og med et fjendtligt Glimt i Øjet,
-    går Karen dær. Hun skridter af 
+    går Karen dær. Hun skridter af
         som Karl i Kvindeklæder
-    med knudret Hånd om knortet Stav 
+    med knudret Hånd om knortet Stav
         til Støtte hvor hun træder.
-    Om Hagen stritter Stubbe grå; 
+    Om Hagen stritter Stubbe grå;
     hun gumler iltert på sin Skrå
         og mumler ved sig selv,
-    mens tungt, som tusend Gange før, 
+    mens tungt, som tusend Gange før,
     hun kravler indad Tårnets Dør
-        op langs det tykke Hvælv 
-    ad Trappetrin og Bjælkebro 
+        op langs det tykke Hvælv
+    ad Trappetrin og Bjælkebro
     og griber Tovet med sin Klo.
 
-Vægtstangen vipper, Klokken svinger, 
+Vægtstangen vipper, Klokken svinger,
 og Knevlen slår, og Malmet klinger.
-    Slag følger Slag, og Klang mod Klang 
+    Slag følger Slag, og Klang mod Klang
         slår rungende tilbage,
-    det dunkle Rum er fyldt med Sang 
+    det dunkle Rum er fyldt med Sang
         og Suk og Råb og Klage.
-    I Øst og Vest, i Syd og Nord, 
+    I Øst og Vest, i Syd og Nord,
     højt op i Sky, lavt ned mod Jord
-        flyer Klangen Gry og Kvæld; 
-    men Karen tykkes, halvt i Drøm, 
+        flyer Klangen Gry og Kvæld;
+    men Karen tykkes, halvt i Drøm,
     at alt går ud kun som en Strøm
         af hendes Hjertes Væld
-    og alt kun opad, op til Gud, 
+    og alt kun opad, op til Gud,
     med lønligt Håb og bønligt Bud.
 
-Så synker da de sidste Toner 
+Så synker da de sidste Toner
 i Præstegårdens Lindekroner,
-    og Karen kommer, svedt og træt, 
+    og Karen kommer, svedt og træt,
         men mindre hård i Synet;
-    man kunde tro, hun havde grædt, 
+    man kunde tro, hun havde grædt,
         endskønt hun rynker Brynet.
-    Hun skridter bred og buklet bort, 
+    Hun skridter bred og buklet bort,
     men nikker nu til Gensvar kort
-        og gir ,,Gudhjælp!'' igen; 
-    går Præstegårdens Stald forbi, 
+        og gir ,,Gudhjælp!'' igen;
+    går Præstegårdens Stald forbi,
     ud over Marken, ad en Sti
-        halvhundred Alen hen, 
+        halvhundred Alen hen,
     imod den lave Flagredør
     i Hytten som hun kom fra før.
 
-At ældes arm og smertestunget 
+At ældes arm og smertestunget
 var ej for Karens Vugge sunget.
-    De Folk som er i Karens År 
-        kan mindes hendes Latter 
+    De Folk som er i Karens År
+        kan mindes hendes Latter
     og hendes lyse Ungdoms Vår
-        som Lavs i Ulstrups Datter. 
-    Hun kunde gøre Forkarls Værk, 
+        som Lavs i Ulstrups Datter.
+    Hun kunde gøre Forkarls Værk,
     hun var så køn, som hun var stærk,
         og Farens Øjesten.
-    Og der var Jord og Penge nok, 
+    Og der var Jord og Penge nok,
     og Frierne, de kom i Flok,
-        og gik med Nej, hver en, 
-    indtil hun tog den svenske Pjalt 
+        og gik med Nej, hver en,
+    indtil hun tog den svenske Pjalt
     og mistede for hans Skyld alt.
 
-Ham svenske Jonas kunde synge 
+Ham svenske Jonas kunde synge
 så Hjertet sad som i en Gynge,
-    fløj dybt og højt med Tonen ud 
+    fløj dybt og højt med Tonen ud
         i sød og farlig Svimlen.
-    Og Karen fløj. Hun blev hans Brud 
+    Og Karen fløj. Hun blev hans Brud
         i Løn, for Gud i Himlen —
     og vågned op, gjort arveløs,
     før ,,hjärtavän'', nu ,,jävels tös'',
         der narred sig til Mand.
     Gift blev de, skønt med Ve og Ak,
-    men Jonas drev, og Jonas drak, 
+    men Jonas drev, og Jonas drak,
         som kun en Svensker kan,
-    og alt hans Fusk og Brændvinsfyld 
+    og alt hans Fusk og Brændvinsfyld
     var Karens Skam og Karens Skyld.
 
-Men Karen ypped ingen Trætte, 
-hun tog det som fortjent med Rette, 
+Men Karen ypped ingen Trætte,
+hun tog det som fortjent med Rette,
     gik ud på Vask fra Sted til Sted,
-        sled hårdt, med Flid og Nemme, 
+        sled hårdt, med Flid og Nemme,
     ja, strøg tit Mandens Teglsten med,
-        mens han lå fuld derhjemme — 
+        mens han lå fuld derhjemme —
     til han en Dag beruset kom,
     hvor Drengen i sin Leg krøb om,
         og sparked til den Små:
-    Da sprang hun op og slog sin Mand, 
+    Da sprang hun op og slog sin Mand,
     slog vildt, som rent fra sin Forstand,
-        bød ham med Bandsord ,,Gå!'' — 
+        bød ham med Bandsord ,,Gå!'' —
     Og Jonas gik. Han gik og lo.
     De fandt ham hængt bag Ulstrup Kro
 
-Men Barnet, det blev sygt og døde. 
+Men Barnet, det blev sygt og døde.
 Og da gav Lavs i Ulstrup Møde.
-    Den lille Grav var kastet til; 
+    Den lille Grav var kastet til;
         så tren han hen til Karen.
-    Han græd: ,,Kom hjem den Dag du vil!'' 
+    Han græd: ,,Kom hjem den Dag du vil!''
         Hun vendte sig mod Faren,
     hun rystede af fjendsk Foragt:
     ,,Det var lidt sent, du fik det sagt!'' —
         Så gik hun hjem til sit,
-    sin Ensomhed, sin Fattigdom, 
+    sin Ensomhed, sin Fattigdom,
     sit Nag. Hun såe sig ikke om,
-        gik tungt, med lange Skridt, 
-    og stængte bag sig. Døgn gik hen, 
+        gik tungt, med lange Skridt,
+    og stængte bag sig. Døgn gik hen,
     før Døren åbnedes igen.
 
-En Præst må gå, hvor Guds Ord kræves, 
+En Præst må gå, hvor Guds Ord kræves,
 men her gik Præsten selv forgæves.
-    Først da med Biblen i sin Favn 
+    Først da med Biblen i sin Favn
         han kom for tredje Sinde
-    og bød: ,,Luk op, i Herrens Navn! 
+    og bød: ,,Luk op, i Herrens Navn!
         Han kalder på dig, Kvinde.''
-    Først da, først da kom Karen ud, 
+    Først da, først da kom Karen ud,
     med uredt Hår og gusten Hud
         som fra en Fængselsgrav,
-    og stod dær kold og stod dær stum 
+    og stod dær kold og stod dær stum
     trods Lov og Evangelium;
         hun rysted alting af:
-    ,,Den Lille bliver frelst, måske; 
+    ,,Den Lille bliver frelst, måske;
     fordømte er vi andre tre.''
 
-,,Vist er det, I har vakt Guds Vrede; 
+,,Vist er det, I har vakt Guds Vrede;
 men derfor er det du skal bede.''
-    ,,Det kan jeg ikke.'' ,,Så skal jeg.'' 
+    ,,Det kan jeg ikke.'' ,,Så skal jeg.''
         ,,Det er ej Ham det gælder!
-    Om selve Bispen bad for mig, 
+    Om selve Bispen bad for mig,
         så hjalp det ikke heller.
-    Ens bedste Bøn nåer sjældent ind 
+    Ens bedste Bøn nåer sjældent ind
     så nær som i det næste Sind,
         men op til Gud er langt.
     Mit Råb nåer aldrig Nådens Port;
     og bad jeg, bad jeg nok for stort ...''
-        Hun ånded træt og trangt. 
+        Hun ånded træt og trangt.
     Da runged over By og Vang
     de gamle Klokkers dybe Klang.
 
-Og Karen skjalv og skjulte Blikket. 
+Og Karen skjalv og skjulte Blikket.
 Men Præsten rejste sig; han nikked:
-    ,,Ja, Karen, når vi selv i Trods 
+    ,,Ja, Karen, når vi selv i Trods
         vil for vor Skæbne råde,
     da råber Klokkerne for os
         til Himlen om Guds Nåde.
-    For dem er ingen Bøn for stor. 
+    For dem er ingen Bøn for stor.
     De beder for den faldne Jord,
-        og det skal nok nå frem. 
+        og det skal nok nå frem.
     Giv du nu Klokkerne din Bøn.
-    De råber højt, og dog i Løn. — 
+    De råber højt, og dog i Løn. —
         Godnat!'' — Så gik han hjem.
-    Men Karen sad i Tvivl og Håb 
+    Men Karen sad i Tvivl og Håb
     og lytted til de Klokkers Råb.
 
-Fra den Dag rysted hendes Hjerte, 
+Fra den Dag rysted hendes Hjerte,
 kun halvt forstenet i sin Smerte,
-    hvergang hun, Aften eller Gry, 
+    hvergang hun, Aften eller Gry,
         og ude eller hjemme,
-    fornam i Klokkens Klang påny 
+    fornam i Klokkens Klang påny
         sin egen kvalte Stemme.
-    Den gamle Ringer blev for svag; 
+    Den gamle Ringer blev for svag;
     så stod hun selv en skønne Dag
         og trak det tunge Tov;
     og lønligt Suk og bønligt Bud
     fik Lyd, steg udløst op til Gud ...
-        Å Gud, at hun fik Lov! — 
-    Forstod hun ej hvad Bønnen gjaldt, 
+        Å Gud, at hun fik Lov! —
+    Forstod hun ej hvad Bønnen gjaldt,
     hun følte dog, hun bad om Alt.
 
-Og mens hun ringer, mens hun kimer, 
+Og mens hun ringer, mens hun kimer,
 går tredve År som tredve Timer.
-    Det trækker ind ad Glug og Tag 
+    Det trækker ind ad Glug og Tag
         igennem Klokkerummet;
-    hun står der drivsvedt Dag for Dag, 
+    hun står der drivsvedt Dag for Dag,
         af Gigt er Kroppen krummet,
     så hun med sine stive Kløer
     vel rækker Jorden, før hun døer.
-        En grimme gammel Kvind, 
-    med Hagens Stub og Hårets Tjavs 
+        En grimme gammel Kvind,
+    med Hagens Stub og Hårets Tjavs
     og alle Furer fyldt med Snavs
         på Pande og på Kind.
     Skræmt flygter Byens Børn i Flok
     for Karen Ringers Knortestok.
 
-Men Karen ringer så det runger, 
+Men Karen ringer så det runger,
 det råber som af tusend Tunger.
-    Hun ringer for sit Barn, sin Far, 
+    Hun ringer for sit Barn, sin Far,
         hun ringer for den Hængte,
-    for alt hvad ondt hun i sig har, 
+    for alt hvad ondt hun i sig har,
         og gjorde før og tænkte.
-    Hun ringer Fred, har ringet Krig, 
+    Hun ringer Fred, har ringet Krig,
     hun ringer Brudefærd og Lig,
         og mener Et med Alt —
-    mer end hun selv og Mængden veed: 
+    mer end hun selv og Mængden veed:
     Alvisdom, Albarmhjertighed,
-        af evig Længsel kaldt. 
-    Måske de høje Klokkers Vagt 
+        af evig Længsel kaldt.
+    Måske de høje Klokkers Vagt
     er i de rette Hænder lagt.
+</body>
+</poem>
 
-T:Knud og Trine
-F:Laden smækker med rappe Smæld
-SIDE:48-55
-
-
-    Laden smækker med rappe Smæld, 
-og Skamlen knirker, og Skytten slår. 
+<poem id="roerdam2018031104">
+<head>
+    <title>Knud og Trine</title>
+    <firstline>Laden smækker med rappe Smæld</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 48-55.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+    Laden smækker med rappe Smæld,
+og Skamlen knirker, og Skytten slår.
 Sol er der både ved Gry og Kvæld
 i den lave Stue, hvor Væven står.
-Til Morgen skinner den klart hos Trine 
+Til Morgen skinner den klart hos Trine
 ind gennem Kaktus og Balsamine,
-til Aften gyldner den Støvets Svæven 
+til Aften gyldner den Støvets Svæven
 og gløder Spindet om gamle Knud.
-Han stanser Væven 
+Han stanser Væven
 og kigger ud.
 
-    Tænke gør han nok helst i Smug, 
+    Tænke gør han nok helst i Smug,
 den lille Knud med det hvide Hår;
-stilfærdig lægger han Dug til Dug, 
-mens Skamlen knirker og Skytten slår. 
+stilfærdig lægger han Dug til Dug,
+mens Skamlen knirker og Skytten slår.
 Men Trine har en velsignet Tunge,
 hun veed om Faren til Elses Unge,
-og hvad Niels Nilen vil ha for Møllen, 
+og hvad Niels Nilen vil ha for Møllen,
 og når Pe’ Pæsen går bankerut —
-Knap stanser Skyllen 
+Knap stanser Skyllen
 et halvt Minut.
 
-    ,,Gud dov, Knud, hvor du dov er dom!'' 
+    ,,Gud dov, Knud, hvor du dov er dom!''
 Han smiler stille, mens Væven går,
 og Trine snakker og tripper om
 og ler til Knud med det hvide Hår.
-Men stanser Væven, og Trine tier, 
+Men stanser Væven, og Trine tier,
 er alt eet syngende Surr af Bier,
-og ind ad Vinduets Åbning strømmer 
-sød Duft af Blomster i Bunkevis — 
+og ind ad Vinduets Åbning strømmer
+sød Duft af Blomster i Bunkevis —
 Man står og drømmer
 om Paradis.
 
-    Bommen drejer, og Skytten slår, 
-Knud strammer kyndig det gode Garn: 
+    Bommen drejer, og Skytten slår,
+Knud strammer kyndig det gode Garn:
 Eet Slægtled slider ej denslags Vår,
 de Lagen arver Ens Barnebarn.
 Mor Trine prikler og såer og poder,
 hun er den ømmeste Blomstermoder,
-går Haven gennem, trods Værk og Trykken, 
+går Haven gennem, trods Værk og Trykken,
 med Lugekniv og med Plantepind —
 og retter Ryggen og snakker ind.
 
-    Før var Haven det bare Sand. 
+    Før var Haven det bare Sand.
 Føl nu, ren Pottemuld, Drivhusjord!
-Slid har det kostet, men når man _kan_ ... 
-,,Den blev smænd osse præmért ifjor.'' 
+Slid har det kostet, men når man <i>kan</i> ...
+,,Den blev smænd osse præmért ifjor.''
 Diplomet hænger, svært fint beseglet,
 i Glas og Ramme dær under Spejlet
 hos Olietrykket af Himmelbruden
-og Jesu Hjerte med åbne Sår 
+og Jesu Hjerte med åbne Sår
 og Navnekluden
 fra Herrens År.
 
-    ,,Movsomt er det at se på Tryk 
+    ,,Movsomt er det at se på Tryk
 med Sovn og By og Ens fulde Navn.
 Strast var det liså det gav et Ryk — <!-- "Strast" er god nok -->
-men jeg begreb jo, det var til Gavn.'' 
-Og Trine maser med Flid en Måler, 
-mens hun af hemmelig Stolthed stråler, 
+men jeg begreb jo, det var til Gavn.''
+Og Trine maser med Flid en Måler,
+mens hun af hemmelig Stolthed stråler,
 de brune Øjne slår Vifterynker
-af Smil i Kindernes Æbleskind — 
+af Smil i Kindernes Æbleskind —
 mens halvt hun klynker
 af ydmygt Sind.
 
@@ -1087,65 +1130,65 @@ af ydmygt Sind.
 med grønne Vægge af Trær på Tråd,
 en fodsbred Gangsti med harpet Grus,
 fint jordbærkantet og vandingsvåd,
-og en etbrædts Bænk ved en halmtagt Kube 
+og en etbrædts Bænk ved en halmtagt Kube
 med Bisurr gennem den sorte Strube.
-Dær kan man sidde, når Solen svider, 
+Dær kan man sidde, når Solen svider,
 i Skyggeskjul af en Hyldebusk,
 imens man gnider
 sin Ambradusk.
 
-    Inde knirker og banker Knud, 
+    Inde knirker og banker Knud,
 og her står Blomster i Sol og gror.
 En spættet Nellik er sprunget ud,
 og Slørblomstbuskene står i Flor,
 og Bier kravler og Bier dumper
-i Tøffelblomsternes gule Klumper. 
-Pralbønnen spreder de røde Vinger 
-mod Sommerfuglenes lette Flugt — 
+i Tøffelblomsternes gule Klumper.
+Pralbønnen spreder de røde Vinger
+mod Sommerfuglenes lette Flugt —
 Alt ler og klinger
 og sætter Frugt.
 
-    Avlen bliver vist god iår, 
+    Avlen bliver vist god iår,
 om da fremdeles Vorherre vil!
 Fersknen dunes af fine Hår,
 og ,,de grønne Kloder'' gror dygtig til.
 Hun går og kigger og tar og tæller:
-de er der alle. — Og Dagen hælder. 
-Knud stanser Væven derinde, kommer 
+de er der alle. — Og Dagen hælder.
+Knud stanser Væven derinde, kommer
 fra Køkkendøren med Piben tændt.
-,,Se Knud, _de_ Blommer
+,,Se Knud, <i>de</i> Blommer
 er man bekendt!''
 
     Lørdag Aften i hjemlig Ro,
 og Søndag Morgen på Kirkefærd:
-Stift skridter Knud i de Fedtlærs Sko 
-og de tykke sorteblå Vadmels Klæer; 
-den uldne Halsdug op over Frakken, 
+Stift skridter Knud i de Fedtlærs Sko
+og de tykke sorteblå Vadmels Klæer;
+den uldne Halsdug op over Frakken,
 den høje flossede Hat i Nakken.
-Han bider Piben med Husbond-Mine; 
-bagefter tripper med rappe Skridt 
+Han bider Piben med Husbond-Mine;
+bagefter tripper med rappe Skridt
 andægtig Trine
 i Sort og Hvidt.
 
-    Lommetørkle og Salmebog, 
+    Lommetørkle og Salmebog,
 dertil en duftende Ambradusk,
 så sidder man i sin Kirkekrog
 som i Haven under sin Hyldebusk.
-Ja, _den_ Mils Kirkevej, ok, den falder
-så kort, mens Klokkerne venligt kalder. 
-Nu svinger Lågen, nu knirker Gruset, 
+Ja, <i>den</i> Mils Kirkevej, ok, den falder
+så kort, mens Klokkerne venligt kalder.
+Nu svinger Lågen, nu knirker Gruset,
 Bekendte nikker, man mylrer glad
 i Våbenhuset —
 og skilles ad.
 
-    Mand og Kone til hver sin Stol; 
-det var så Sæd under Slægters Gang. 
+    Mand og Kone til hver sin Stol;
+det var så Sæd under Slægters Gang.
 De fritter ikke, hvem sligt befoel,
 de trodser ikke, veed ej af Tvang.
 De synger. Salmen og hører Ordet,
 og Solen skinner så kønt i Koret,
 og Salmen løfter dem atter sammen,
-de gamle Hjerter, mod Livets Gud ... 
+de gamle Hjerter, mod Livets Gud ...
 Med Korstegn Amen,
 og langsomt ud.
 
@@ -1153,120 +1196,132 @@ og langsomt ud.
 man dukker ind ad dens lave Dør,
 Småfolk og Bønder, til festlig Fred
 som Ens Forældre et Slægtled før.
-Glad skæmter Præsten, mildt snakker Fruen, 
+Glad skæmter Præsten, mildt snakker Fruen,
 mens Kaffen dufter i Havestuen;
 så går man rundt i de revne Gange
-og snuser Roser og holder Snak — 
+og snuser Roser og holder Snak —
 Klokken er mange,
 Farvel og Tak!
 
-    Trine stjal sig en Stikling med; 
+    Trine stjal sig en Stikling med;
 man må jo lære lidt udenlands.
 Og da de kom så betids afsted,
 fik de Følge af Præstens Hans.
-Med ham kan Trine så dejlig snakke 
-om ,,Cyprianus'' og ,,Trold i Bakke'', 
+Med ham kan Trine så dejlig snakke
+om ,,Cyprianus'' og ,,Trold i Bakke'',
 om Tørvepriser og Honningbier
-og franske Roser, det går galant. 
+og franske Roser, det går galant.
 Knud går og tier
 som han er vant.
 
-    Præstens Hans er en Knop endda! 
+    Præstens Hans er en Knop endda!
 Han læser højt, som det stod på Prent,
 et Brev fra Niels i Amerika
 og nævner Jowa velbekendt.
 Bagefter værdiges han at smage
 det sure Øl og en Sigtekage
-med tykt Lag Smør, ved den røde Skive 
+med tykt Lag Smør, ved den røde Skive
 imellem Vindu og Himmelseng.
 To, skal det knive —
 ,,den rare Dreng!''
 
-    Klar er Kindernes røde Hud, 
-hans Guldhår kruset og Blikket blåt. 
+    Klar er Kindernes røde Hud,
+hans Guldhår kruset og Blikket blåt.
 Og Trine smelter. Hun mindes Knud,
-da de gik til Præsten. Hun led ham godt. 
+da de gik til Præsten. Hun led ham godt.
 Men Knud var blu. Det var ikke heller
-_hans_ Skyld, det blev da. Og hun fortæller 
-om Høst- og Skovballer; Knud han _såe_ kun, 
-med _dybe_ Øjne, sa ikke et Muk.
-I Sengen lå hun 
+<i>hans</i> Skyld, det blev da. Og hun fortæller
+om Høst- og Skovballer; Knud han <i>såe</i> kun,
+med <i>dybe</i> Øjne, sa ikke et Muk.
+I Sengen lå hun
 med Sorg og Suk.
 
-    Så kom Knud jo til Bjergbygård, 
-og — her må Trine med Tårer le — 
-hun tænkte: Kort er vor Ungdoms Vår, 
-og nu til Pinsedag _skal_ det ske!
-Hun gik derop og kom ind bag Stalden, 
-og dær stod Knud jo som himmelfalden. 
+    Så kom Knud jo til Bjergbygård,
+og — her må Trine med Tårer le —
+hun tænkte: Kort er vor Ungdoms Vår,
+og nu til Pinsedag <i>skal</i> det ske!
+Hun gik derop og kom ind bag Stalden,
+og dær stod Knud jo som himmelfalden.
 Men Trine drat ham badovs om Halsen:
-,,Knud, vil du ha mig?'' — Hun græd, han lo. 
+,,Knud, vil du ha mig?'' — Hun græd, han lo.
 Og så gik Valsen
 i Bjergby Kro. - -
 
-    Trine rødmer, det gamle Skind, 
-men Knud han sætter sig stille hen 
+    Trine rødmer, det gamle Skind,
+men Knud han sætter sig stille hen
 og lister Næven i hendes ind
 og snyder Næsen og går igen.
-Drengen holder sit Blik ved Bænken; 
-så rejser han sig, med Tak for Skænken. 
+Drengen holder sit Blik ved Bænken;
+så rejser han sig, med Tak for Skænken.
 Men Trine skynder sig ud og plukker
 en Knaphulsblomst og en Håndfuld Bær.
-    Han går, de sukker: 
-    Hvor _Niels_ nu er? ...
+    Han går, de sukker:
+    Hvor <i>Niels</i> nu er? ...
 
-    Tråden knyttes, og Væven står, 
+    Tråden knyttes, og Væven står,
 en Dug er færdig og løftes af.
-Det blev jo Knud med det hvide Hår, 
+Det blev jo Knud med det hvide Hår,
 som først helt stille gik i sin Grav.
 Da glemte Trine omtrent at snakke,
 og det gik rivende ned ad Bakke.
-De ny har Hønsegård nu i Haven ... 
-Men Digtet her blev en Blomsterkrans, 
+De ny har Hønsegård nu i Haven ...
+Men Digtet her blev en Blomsterkrans,
 lagt ud på Graven
 af Præstens Hans.
+</body>
+</poem>
 
-SLUTSEKTION
+</content>
+</section>
 
-SEKTION:Blandede Digte
+<section>
+<head>
+    <title>Blandede Digte</title>
+</head>
+<content>
 
-
-T:Nytårsvers i Almanakken
-F:Vist er det en underlig Verden her
-SIDE:59-61
-
-Vist er det en underlig Verden her, 
-en Fart, som man næppe tør følge! 
+<poem id="roerdam2018031105">
+<head>
+    <title>Nytårsvers i Almanakken</title>
+    <firstline>Vist er det en underlig Verden her</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 59-61.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Vist er det en underlig Verden her,
+en Fart, som man næppe tør følge!
 Før agedes bedst,
 når man ejed en Hest,
 og Skib skulde bæres af Bølge.
-Nu — knipser man kun til en Knap ved en Tråd: 
+Nu — knipser man kun til en Knap ved en Tråd:
 så går gennem Dybet den pansrede Båd,
 som en Gedde den dykker og stiger.
-Og hele Jorden er snart kun eet Sogn: 
-Hujende farer en hesteløs Vogn 
-gennem Kongers og Kejseres Riger. 
+Og hele Jorden er snart kun eet Sogn:
+Hujende farer en hesteløs Vogn
+gennem Kongers og Kejseres Riger.
 Grænserne viger.
-Hvert År er en undrende Vandring 
+Hvert År er en undrende Vandring
 fra Forandring til større Forandring.
 
-Det var os det vildeste Æventyr. 
+Det var os det vildeste Æventyr.
 Nu ser vi det: Fartøjer letter
 og kreser og flyr
 med sikkert Styr
 hen højt over Huse og Sletter —
-de vingede Bæster med Horn og Skjold 
+de vingede Bæster med Horn og Skjold
 genskabte fra Skjulet i Tidernes Old
-til Værktøj for Menneskesnille! 
-Sejladsen i Luften beruser vort Sind, 
-snart flyver vi daglig hos Skyer og Vind, 
+til Værktøj for Menneskesnille!
+Sejladsen i Luften beruser vort Sind,
+snart flyver vi daglig hos Skyer og Vind,
 har nået hvad Tusendår vilde.
 Jorden er lille.
-Der jager ny Anelsers Skygger 
+Der jager ny Anelsers Skygger
 hen over os her hvor vi bygger.
 
-Dog, stiger vi end på Lyn og Stål, 
-hvem steg til den nærmeste Måne? 
+Dog, stiger vi end på Lyn og Stål,
+hvem steg til den nærmeste Måne?
 Lang Tid har vi brugt
 om en Småfugls Flugt,
 stor Grund er der ej til at dåne.
@@ -1275,32 +1330,39 @@ det er af dens Grøde vi Mennesker gror,
 drøj Ave kræver dens Ager.
 Vi trøster os til de gamles Tro:
 Bedst brænder Ilden i eget Bo,
-hvor højt og hvor langt man end jager. 
+hvor højt og hvor langt man end jager.
 Flugten er fager —
 Vi flyr dog ej Jorden, det gælder;
 vort Hjerte, det flyr vi ej heller.
 
-Så lad os rolig da nytte det ny 
-og mindes vor Menneskelykke: 
+Så lad os rolig da nytte det ny
+og mindes vor Menneskelykke:
 Vi klager vor Nød
 for det hele Brød,
-får stundom alt nok i et Stykke. 
+får stundom alt nok i et Stykke.
 Og Jorden omfløjet fra Pol til Pol,
 så var der dog langt til den yderste Sol,
 og længer endnu til vor Længsel.
 Enfoldigen mindes da Kvinde og Mand:
 Ren Mund, tro Hånd går langt gennem Land,
-mens Året drejer sit Hængsel. 
+mens Året drejer sit Hængsel.
 Trøst eller Trængsel?
-Vi aner, hvad Tiden har inde, 
+Vi aner, hvad Tiden har inde,
 men veed, hvad vi selv har isinde.
+</body>
+</poem>
 
-
-T:Vintergæk
-F:Du hvide slanke Vintergæk
-SIDE:62
-
-Du hvide slanke Vintergæk, 
+<poem id="roerdam2018031106">
+<head>
+    <title>Vintergæk</title>
+    <firstline>Du hvide slanke Vintergæk</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, p. 62.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Du hvide slanke Vintergæk,
 der står så kønt
 med Guld og Grønt
 i Kalken
@@ -1309,52 +1371,66 @@ Vingeslag
 ved Nat og Dag
 af Droslen og af Falken —
 
-Ja, lyt kun du! Men jeg forstår, 
+Ja, lyt kun du! Men jeg forstår,
 at Sus og Fløjt
 af lavt og højt,
 som længes,
-har ikke mer og større Vår 
+har ikke mer og større Vår
 end du selv,
 dit Blomsterhvælv,
 der dufter, så det sprænges.
+</body>
+</poem>
 
-
-T:Den gamle Jæger
-F:Jeg selv har engang
-SIDE:63
-
-Jeg selv har engang 
-med syngende Blod 
-og Hjertet i Tvang 
+<poem id="roerdam2018031107">
+<head>
+    <title>Den gamle Jæger</title>
+    <firstline>Jeg selv har engang</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, p. 63.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Jeg selv har engang
+med syngende Blod
+og Hjertet i Tvang
 fulgt Jomfru-Fod.
 
-Nu følger jeg Fod 
-af Sneppe og Mår, 
+Nu følger jeg Fod
+af Sneppe og Mår,
 af visnet og groet,
 af Måned og År.
 
-Hvem husker de Kys, 
-de Drømme, den Rus, 
+Hvem husker de Kys,
+de Drømme, den Rus,
 i Bladenes Drys
 og Blæstens Brus?
+</body>
+</poem>
 
-
-T:Prinsesse Marie
-F:Den franske Prinsesse Marie
-SIDE:64-66
-
-Den franske Prinsesse Marie — 
+<poem id="roerdam2018031108">
+<head>
+    <title>Prinsesse Marie</title>
+    <firstline>Den franske Prinsesse Marie</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 64-66.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Den franske Prinsesse Marie —
     Vist var hun Frankrigs Datter!
-det kendtes af hendes frie 
+det kendtes af hendes frie
     Rank-Rejsning og lystige Latter.
-    Vist var hun Frankrigs Datter, 
+    Vist var hun Frankrigs Datter,
 hvad Tanker end her måtte tie.
 
-Hun lod sig til Danmark vie 
+Hun lod sig til Danmark vie
     og stod under Danebroge
-som den, der for Danmarks frie 
+som den, der for Danmarks frie
     Korsflag vidste at våge.
-    _Vor_ blev hun, den tapre og kloge, 
+    <i>Vor</i> blev hun, den tapre og kloge,
 den danske Prinsesse Marie.
 
 Opfostret fransk Borgerinde,
@@ -1364,54 +1440,62 @@ og Kronen omstråltes af hende
 Hun følte som kongelig Kvinde
     og handled med borgerligt Mod.
 
-Hun kunde vel selv ha båret 
+Hun kunde vel selv ha båret
     en Krone i disse Tider,
-da mangen Krone blev skåret, 
-    og andre knuger og svider - 
+da mangen Krone blev skåret,
+    og andre knuger og svider -
     og båret den stolt. Nu glider
 kun Diademet af Håret ...
 
 Og hendes Blomstersmykke
     som ædel Hustru og Moder.
-Men hun går bort med Lykke: 
+Men hun går bort med Lykke:
     Langs Dødens dunkle Floder
-    vil Værfter og Pakhusboder 
+    vil Værfter og Pakhusboder
 lyse fra Danmarks Brygge.
 
 Og fjernt under Ceylons Kyster
     vil hendes Husbond og Sønner
-fornemme den Tak, som trøster, 
-    hvor tungt end Hjertet stønner, 
+fornemme den Tak, som trøster,
+    hvor tungt end Hjertet stønner,
     Sø plasker, og Damperen dønner,
 tyst hvisker dog tusende Røster —
 
-Om hende, der aldrig var bange 
+Om hende, der aldrig var bange
     for trofast at vove sit Skind:
 Hun bar i Fattigfolks Gange
     sin kærlige Hjælpsomhed ind,
-og lånte sit Navn til de mange 
+og lånte sit Navn til de mange
     med fyrstelig gavmildt Sind.
 
 Tilhest og i Kunstnerkittel,
     i Atlask med funklende Bånd,
-hendes Højhed var mer end en Titel, 
+hendes Højhed var mer end en Titel,
     den var af Vilje og Ånd:
     Den varme, den frie Prinsesse Marie
 går bort ved Kong Christians Hånd.
+</body>
+</poem>
 
-T:Ved Bjørnsons Død
-F:Danmark vågner af Drømme
-SIDE:67-68
-N:bjoernson
-
-Danmark vågner af Drømme: 
+<poem id="roerdam2018031109">
+<head>
+    <title>Ved Bjørnsons Død</title>
+    <firstline>Danmark vågner af Drømme</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 67-68.</note>
+    </notes>
+    <keywords>bjoernson</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Danmark vågner af Drømme:
 Hvi bruser alle mine Strømme
-så underlig brat i Kvæld? 
+så underlig brat i Kvæld?
 Faldt der i Havet et Fjæld?
 
-Danmark våger; Mulmet 
-derude er pludselig svulmet. 
-Det kom som med et Kast: 
+Danmark våger; Mulmet
+derude er pludselig svulmet.
+Det kom som med et Kast:
 Var det en Stjerne der brast?
 
 Ja, der brast en Stjerne;
@@ -1420,174 +1504,198 @@ Thi Bjørnstjerne Bjørnson er død.
 Hejmdals-Hornet lød.
 
 Fjælde såe vi falde.
-Men Bjørnson har båret os alle. 
-Og Stjerner. _Hans_ strålende Sind 
+Men Bjørnson har båret os alle.
+Og Stjerner. <i>Hans</i> strålende Sind
 lyste så stort herind.
 
 Hejmdal kalder og kalder.
 Det mørkner i Nordens Haller.
-Nu er det ved Sveriges Bål, 
+Nu er det ved Sveriges Bål,
 Ydun løfter sin Skål.
 
-Bjørnstjerne Bjørnson fra Norge 
-går bort mod de evige Borge 
-med Bud til Brødre, dær boer: 
+Bjørnstjerne Bjørnson fra Norge
+går bort mod de evige Borge
+med Bud til Brødre, dær boer:
 End grønnes Asken i Nord.
+</body>
+</poem>
 
-
-T:Fru Anna Bloch
-U:som Hedvig i ,,Vildanden''
-TOCTITEL:Fru Anna Bloch som Hedvig
-F:I en Verden af støjende Gylp og Grin
-SIDE:69-70
-
+<poem id="roerdam2018031110">
+<head>
+    <title>Fru Anna Bloch</title>
+    <toctitle>Fru Anna Bloch som Hedvig</toctitle>
+    <subtitle>som Hedvig i ,,Vildanden''</subtitle>
+    <firstline>I en Verden af støjende Gylp og Grin</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 69-70.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I en Verden af støjende Gylp og Grin,
-grov Vellyst, fed Vinding og sjofel Ruin 
-stod der et Barn. Og den Verden blev tavs, 
+grov Vellyst, fed Vinding og sjofel Ruin
+stod der et Barn. Og den Verden blev tavs,
 og bange, og bluedes ved sit Snavs.
 
 I en Stue, hvor Ånd blev klingende Ord
-og Mandsmod mæt ved et Smørrebrødsbord 
+og Mandsmod mæt ved et Smørrebrødsbord
 dær talte et Barn og såe sig om,
 forundret. Det var Sandhedens Dom.
 
-Og da Livsfallenten skreg sit: Betal! 
+Og da Livsfallenten skreg sit: Betal!
 (Vexlen var falsk, men ideal)
-gik, voxen i et eneste Skælv, 
-_hun_ hen og betalte, med sig selv.
+gik, voxen i et eneste Skælv,
+<i>hun</i> hen og betalte, med sig selv.
 
-Hvor kunde det lyse så lyst af en grå 
+Hvor kunde det lyse så lyst af en grå
 lille hverdags Pige med Kludesko på?
 Hvor kom de Toner af sejrrig Trøst
 og udødeligt Mod i så spinkelt et Bryst?
 
 Så frygtsom — og ubetvingelig stærk.
-Helt Menneske, hel, mellem halvgjort Værk. 
+Helt Menneske, hel, mellem halvgjort Værk.
 Barn, Kvinde, Virkelighed og Drøm —
 så klar og dog så dyb en Strøm!
 
-Den Stue er vor, og den Verden vor. 
+Den Stue er vor, og den Verden vor.
 Vi ser af det Barn, hvad vi er her for.
-Bag vort bristende Værk, bag vor Grublens Fallit 
-hvisker _Livet_ sin Vilje, enfoldigt og blidt.
+Bag vort bristende Værk, bag vor Grublens Fallit
+hvisker <i>Livet</i> sin Vilje, enfoldigt og blidt.
+</body>
+</poem>
 
-
-T:Frederik Paludan-Müller
-F:Vi elsker Ild. Og det er skønt at skue
-SIDE:71-74
-N:mueller
-
+<poem id="roerdam2018031111">
+<head>
+    <title>Frederik Paludan-Müller</title>
+    <firstline>Vi elsker Ild. Og det er skønt at skue</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 71-74.</note>
+    </notes>
+    <keywords>mueller</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Vi elsker Ild. Og det er skønt at skue
-den Ungdomsild, som over Støvets År 
+den Ungdomsild, som over Støvets År
 syvfarvet hvælver sig en Strålebue
-af Lyst og Længsel — før den just forgår! 
-Blodets, og Hjertets, purpurrøde Lue, 
-sælsom og pragtfuld under hvide Hår, 
+af Lyst og Længsel — før den just forgår!
+Blodets, og Hjertets, purpurrøde Lue,
+sælsom og pragtfuld under hvide Hår,
 glatter dog ej de runkne Øjenkroge;
 og nærved set er Regnbubroen Tåge.
 
-Vi elsker Sang. Sang er en Ild, som toner. 
+Vi elsker Sang. Sang er en Ild, som toner.
 Hvem har ej følt i Tonerne den Brand?
-Den styrker, svækker, hidser og forsoner, 
+Den styrker, svækker, hidser og forsoner,
 tit har en Sang kvalt eller rejst et Land!
-Den samler eller sprænger Folk og Kroner, 
-_hvis_ den, der synger, Skjalden, er en Mand;
-og hvis hans Kvad får Ørenlyd i Hallen. 
+Den samler eller sprænger Folk og Kroner,
+<i>hvis</i> den, der synger, Skjalden, er en Mand;
+og hvis hans Kvad får Ørenlyd i Hallen.
 Det kommer an på Folket som på Skjalden.
 
-Mand var den Skjald, hvis Mindefest vi fejrer. 
-Mand groede han. Vild Yngling var han først, 
+Mand var den Skjald, hvis Mindefest vi fejrer.
+Mand groede han. Vild Yngling var han først,
 leged og dansed gennem alle Lejre
-til Kys og Favntag. Men hans Væsens Tørst 
+til Kys og Favntag. Men hans Væsens Tørst
 var ikke stillet ved de lette Sejre —
 det følte han, mens Jubelen var størst.
 Dybt i hans Hu stod adelige Kræfter
 og kræved Kamp. Det Kampråb gik han efter.
 
-Gik bort fra Festen og den Bølgebårne, 
-rev Hjertet blodigt løs fra hendes Favn 
+Gik bort fra Festen og den Bølgebårne,
+rev Hjertet blodigt løs fra hendes Favn
 for i Urania-Templets kolde Tårne
 at indvi sig ved Ensomhed og Savn
-til Strid med Ånder, i den Størstes Navn. 
+til Strid med Ånder, i den Størstes Navn.
 En kostbar Lod at høre til de kårne!
-Lyt til hans Sang, så lydiggjort i Formen, 
+Lyt til hans Sang, så lydiggjort i Formen,
 den røber dirrende dog Smertestormen.
 
 Det er med Adam i sig selv han slås,
-når Adam flyver højt (hvergang han taler) 
+når Adam flyver højt (hvergang han taler)
 og tager sit Parti med ædel Trods
-(for Stads og Vellyst og den blanke Daler); 
-det er sig selv han tugter med de Kvaler; 
+(for Stads og Vellyst og den blanke Daler);
+det er sig selv han tugter med de Kvaler;
 just derfor svider Svøbeslaget os —
-os, i hvem Adam stadig er den samme 
+os, i hvem Adam stadig er den samme
 storpralende Soldat, så let at ramme.
 
-Hans Hånsord mod den unge Danserinde, 
+Hans Hånsord mod den unge Danserinde,
 så nylig elsket — og den skarpe Dom,
 han fælder over Venus i hver Kvinde,
-som uden Bølgens Brus måske var tom — 
-ak, selv Dryaden til en Tøs gjort om — 
-hver uretfærdig Hårdhed vi kan finde: 
+som uden Bølgens Brus måske var tom —
+ak, selv Dryaden til en Tøs gjort om —
+hver uretfærdig Hårdhed vi kan finde:
 Det er sin Ungdoms Kød han snitter i,
 sin Manddoms Ånd han smerteligt gør fri.
 
-Aner i Tithon endnu vi en Klage — 
+Aner i Tithon endnu vi en Klage —
 svøbt med Kalanus i hans Lutrings-Bål
-lod han sin Svaghed askebrændt tilbage — 
-lod sorgfuldt gennem Døgnets Grin og Skrål 
+lod han sin Svaghed askebrændt tilbage —
+lod sorgfuldt gennem Døgnets Grin og Skrål
 i Ahasverus Domsbasunen brage —
 steg så med Benedikt imod sit Mål,
-Forsagelsernes Fjæld, hvor Liv udspringer 
+Forsagelsernes Fjæld, hvor Liv udspringer
 af Dødens Port i Skyggen af Guds Vinger.
 
-Hans Moder, Danmark, såe ham end en Gang. 
+Hans Moder, Danmark, såe ham end en Gang.
 Genrejsning kvad han ved det Smertensleje,
 hvor brudt hun lå — før med sin Svanesang,
 Adonis, han tog Afsked fra de Veje,
 hvis Blomster visner. — Vil du rigtig eje
 hans Billed rent: Se over natlig Vang
-hvidklædt Uranias Præst på Templets Tinder, 
+hvidklædt Uranias Præst på Templets Tinder,
 hvor hans mod Hvalvets Stjernesang udrinder. -
 
-En blodløs Sang. Han ofred jo sit Blod. 
-Og Blodet er og blir en kostbar Væske. 
-Men Ånd er sjældnere. Kun Ånd kan læske 
+En blodløs Sang. Han ofred jo sit Blod.
+Og Blodet er og blir en kostbar Væske.
+Men Ånd er sjældnere. Kun Ånd kan læske
 den Længsel, vi, blandt alt af jordisk Rod,
 er ene om. Ved Ånd kun tør vi æske
 vor Plads i Livets Råd for Kraftens Fod. —
-Hil Blodets Ild! Skønt blomstrer det af Gløden ... 
+Hil Blodets Ild! Skønt blomstrer det af Gløden ...
 Men Lys af Ånd kan gennemtrænge Døden.
 
-Han købte Ånd for Blod, klart Lys for Brand. 
-Hans Sang blev Stjernen over Jordens Fakler. 
+Han købte Ånd for Blod, klart Lys for Brand.
+Hans Sang blev Stjernen over Jordens Fakler.
 Er det for højt at spejde for os Stakler?
 Nu vel, Et ser vi dog, ham selv, en Mand,
-det Mod, den Viljekraft, som ikke vakler, 
+det Mod, den Viljekraft, som ikke vakler,
 men tør og gør det ypperste de kan. —
-Hans Sang, han selv, hvad de er værd i Hallen? 
+Hans Sang, han selv, hvad de er værd i Hallen?
 Ja, det beror på Folket som på Skjalden.
+</body>
+</poem>
 
+</content>
+</section>
 
-SLUTSEKTION
+<section>
+<head>
+    <title>Glimt på Farten</title>
+</head>
+<content>
 
-SEKTION:Glimt på Farten
-
-
-
-T:Kimito
-U:Til Fru * * *
-F:Årene går. Alt bliver længe siden
-SIDE:77-
-
-Årene går. Alt bliver længe siden. 
+<poem id="roerdam2018031112">
+<head>
+    <title>Kimito</title>
+    <subtitle>Til Fru * * *</subtitle>
+    <firstline>Årene går. Alt bliver længe siden</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 77-.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Årene går. Alt bliver længe siden.
 Dagene jager. Man er travl og træt —
-strides halvdruknet med den Malstrøm, Tiden, 
-for Livet — ja, som man har tabt i Striden! 
+strides halvdruknet med den Malstrøm, Tiden,
+for Livet — ja, som man har tabt i Striden!
 Kun sjælden drager man et Åndedræt
-i Fred og mindes — Minder, Håb og Drøm. 
+i Fred og mindes — Minder, Håb og Drøm.
 Ens tabte Guldskat i den stride Strøm.
 
-Men når en Vildgåsflugt i vidtspredt Kile 
+Men når en Vildgåsflugt i vidtspredt Kile
 eller et Nattefløjt af Fugletræk
 eller et Bølgeskvulp af tusend Mile
 vækker min Sjæl en sjælden Gang til Hvile —
@@ -1595,57 +1703,57 @@ da sker det dog jeg mindes, halvt i Skræk
 og halvt som Trøst, fjernt, fjernt bag Fjæld og Sø,
 bag Tid og Tanker, Eders finske Ø.
 
-Jeg gik med Månen på de brune Heder, 
-jeg stod hos Stormen mellem Hav og Klit, 
+Jeg gik med Månen på de brune Heder,
+jeg stod hos Stormen mellem Hav og Klit,
 jeg sad i Skyggen af San Marcos Ceder —
-men aldrig glemte jeg den Fred hos Eder: 
+men aldrig glemte jeg den Fred hos Eder:
 Natten på Kimito, når tyst og blidt,
 som Dønning ude sank og skvulped til,
 Sø klang mod Fjæld, tyst, blidt, lig Harpespil.
 
-Regndråbernes Musik mod Klippehvælvet — 
+Regndråbernes Musik mod Klippehvælvet —
 i kulsort Nat Stormskovens Jættebrus,
-hvorunder Huset på sin Stengrund skælved — 
+hvorunder Huset på sin Stengrund skælved —
 Alt fremmed, og fortroligt dog for Selvet,
 fra Længsels Alfelok og Stormsinds Rus.
-Dybt Sind, dulgt Sind blev draget frem derved, 
+Dybt Sind, dulgt Sind blev draget frem derved,
 fandt Byrd og Navn, blev frigjort og fandt Fred.
 
 Og så at opstå til den stille Stue
-med trefold Fred af Sø og Skov og Fjæld 
+med trefold Fred af Sø og Skov og Fjæld
 om de to Unge og den stolte Frue.
 En menneskelig Treklangs Tonebue
 steg lønligt, sank iløn, fra Gry til Kvæld.
-Er jeg for dristig nu? Hvor Sangsind boer, 
+Er jeg for dristig nu? Hvor Sangsind boer,
 dær må jeg lytte, og til mer end Ord.
 
-Festlige Måltid! Mælk, Saft, friske Rødder 
+Festlige Måltid! Mælk, Saft, friske Rødder
 og frisk vild Frugt på hjemmevævet Dug.
 En hvid finsk Pige, let, på nøgne Fødder,
 gik ud og ind. Vi lo, vi knækked Nødder,
 gik Tur, kom hjem, holdt Mørkningsdrøm i Smug
-langs Bjælkevæg i røde Luekast, 
+langs Bjælkevæg i røde Luekast,
 mens Birkebrændet knitrede og brast.
 
-Og næste Dag, på Kunstnerparrets Kammer, 
-fløj Penslen flinkt i ,,Vida vägar''s Takt; 
-Smykker af Sølv sang for den lette Hammer 
+Og næste Dag, på Kunstnerparrets Kammer,
+fløj Penslen flinkt i ,,Vida vägar''s Takt;
+Smykker af Sølv sang for den lette Hammer
 til Lampelys faldt ud på sorte Stammer,
-hvor svundne Slægters Skygger stod på Vagt. 
+hvor svundne Slægters Skygger stod på Vagt.
 En smuldret Skønheds Perlestrømpebånd
 gled glimtende af Sagn fra Hånd til Hånd.
 
 Bag alt, i alt hin Treklang — Ordet glipper.
-Der lød en Stemme, som i Løv og Strå 
-små Fugle smutter og små Fugle vipper, 
-den lød som Bølgeklunket mod de Klipper, 
-et Dyb derunder — anet, når jeg såe 
+Der lød en Stemme, som i Løv og Strå
+små Fugle smutter og små Fugle vipper,
+den lød som Bølgeklunket mod de Klipper,
+et Dyb derunder — anet, når jeg såe
 Ungfruens hemmelige mørke Smil
 imod min Vens fint lysende Profil.
 
 Bag ham hint Billed: Over dunkle Strømme
 en slank ung Dejlighed i Svanebåd;
-hans Kunstnerdrøm. Ak, Dagen vil ej drømme. 
+hans Kunstnerdrøm. Ak, Dagen vil ej drømme.
 Alt sænked han sit Lysbryn for at tømme
 dens bitre Skål af Skuffelser og Gråd —
 men se, to Hjerters Livskraft var gydt i :
@@ -1655,116 +1763,144 @@ Ja, Søn. Den eneste. Til Verden båret
 af mægtig Elskov; levende opholdt
 ved Kærlighed, af Dødssværd gennemskåret,
 men levende, fuldt levende, trods Såret.
-Et Moderhjerte, stormfuldt, varmt og stolt, 
+Et Moderhjerte, stormfuldt, varmt og stolt,
 som daglig gentog, under grånet Hår,
 sin Ungdoms Valg: Livs Salighed — og Sår!
 
-Fjernt lød en vild, sødt smertefuld Kantele, 
+Fjernt lød en vild, sødt smertefuld Kantele,
 Skovskjulet svared, med et Sølvhorns Klang.
-Tonernes Favntag lod sig ikke dele, 
-men større favne til et større Hele, 
-favne af Cellostrænges dybe Sang — 
+Tonernes Favntag lod sig ikke dele,
+men større favne til et større Hele,
+favne af Cellostrænges dybe Sang —
 Således hørte jeg en ordknap Kvæld
 i Tavsheds Brus tre Sjæles Tonevæld.
 
 Såe andre Syner, hørte andre Sange,
-tav med de fleste. — Talte jeg om Fred? 
+tav med de fleste. — Talte jeg om Fred?
 Var dette Fred? Fred er os dyr at fange.
-Fred venter os engang bag alle Gange. 
+Fred venter os engang bag alle Gange.
 Liv var det! Gæsten læsked sig derved.
 Tak, alle tre! Jeg strides med min Strøm —
 men hils
         Kimitos Fred, min tabte Drøm!
+</body>
+</poem>
 
-
-T:Det røde Tag
-F:I min gammelkendte Sofakrog
-SIDE:81-82
-
+<poem id="roerdam2018031113">
+<head>
+    <title>Det røde Tag</title>
+    <firstline>I min gammelkendte Sofakrog</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 81-82.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I min gammelkendte Sofakrog
 sad jeg længe med Cigar og Bog:
-    Bogen lukket og Cigaren slukket, 
+    Bogen lukket og Cigaren slukket,
     tyst af lykkelige Drømme vugget.
 
-Dog, det var ej Længsel eller Drøm, 
+Dog, det var ej Længsel eller Drøm,
 var ej Vilje- eller Tankestrøm:
-    Åndedraget var det, Hjerteslaget, 
+    Åndedraget var det, Hjerteslaget,
     og det røde Lys fra Genbotaget.
 
-Solens Ildblod på de røde Tegl, 
+Solens Ildblod på de røde Tegl,
 Beltet irisblåt og som et Spejl ...
-    Nok: Jeg hviler lykkelig og smiler, 
+    Nok: Jeg hviler lykkelig og smiler,
     mens Minutter og mens Timer iler.
 
-Tegl af Tegl blødt hulet skyder ud, 
+Tegl af Tegl blødt hulet skyder ud,
 Cellevæv som i en Blomsterhud:
     Hundred bløde Farver, alle røde,
     i hver Hulning skiftes til at gløde.
 
-Lys og Liv og Farvers milde Magt, 
+Lys og Liv og Farvers milde Magt,
 Lys kun, over Sten og Bølger lagt:
     Alt attrået attråløst opnået
     i det røde Lys mod Bølgeblået.
 
-Stille hviler da min Sjæl en Stund, 
+Stille hviler da min Sjæl en Stund,
 dulgt som på en Roses røde Bund:
-    Alle Vande hvalt bag Rosens Rande 
+    Alle Vande hvalt bag Rosens Rande
     lig en Dråbe Dug imod min Pande.
+</body>
+</poem>
 
-
-T:Udfærd
-F:Du vågner en Morgen med bølgende Sind
-SIDE:83
-
-    Du vågner en Morgen med bølgende Sind: 
+<poem id="roerdam2018031114">
+<head>
+    <title>Udfærd</title>
+    <firstline>Du vågner en Morgen med bølgende Sind</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, p. 83.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+    Du vågner en Morgen med bølgende Sind:
     Hav og Vind - Hav og Vind —
 
-    Du ranker dig Lungerne brede: 
+    Du ranker dig Lungerne brede:
 Den skønneste Bog ad Helvede til!
     Selv Rosen volder dig Vrede,
         for Strømmen og Suset du vil ...
         Vil, vil! — Havfru-Spil ...
 
-    Dær strømmer de skiftende Tider 
+    Dær strømmer de skiftende Tider
 i Mulm og i Lys dine Ruder forbi.
     Giv slip, min Ven, og du glider,
-        du selv hører med i den Strøms Melodi: 
+        du selv hører med i den Strøms Melodi:
         Hus forbi — fuglefri ...
 
-    Fjernt vandrer de kendte Kyster. 
+    Fjernt vandrer de kendte Kyster.
 Dær sank i den solblå Sø dit Hus —
-    Men Damperen stamper og ryster, 
+    Men Damperen stamper og ryster,
         du fyldes af Sejlerens Rus:
         Luft, Sus — Bølgers Brus ...
+</body>
+</poem>
 
-
-T:Min Ungdoms Plads
-F:Så nyder jeg Cigaren, og fornemmer
-SIDE:84
-N:sonnet
-
-Så nyder jeg Cigaren, og fornemmer ... 
+<poem id="roerdam2018031115">
+<head>
+    <title>Min Ungdoms Plads</title>
+    <firstline>Så nyder jeg Cigaren, og fornemmer</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, p. 84.</note>
+    </notes>
+    <keywords>sonnet</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Så nyder jeg Cigaren, og fornemmer ...
 Ud af det åbne Vindu blåner Røgen,
-ind blinker Sejl og Sø, og summer 
+ind blinker Sejl og Sø, og summer
 Støjen af mange Fodtrin og af muntre Stemmer.
 
 En solbrændt Pige smiler op; forfløjen
 slår Lærredskjolen om de slanke Lemmer.
-Hun sænker Blikket ... Luftigt blåner Røgen. 
+Hun sænker Blikket ... Luftigt blåner Røgen.
 Liv glider, Drømme glimter, og jeg glemmer ...
 
 Jeg glemmer — på min Ungdoms gamle Plads -
 indtil en blisset ældre Herre vender
-sig halvt og hilser, med et Blik som Glas, 
+sig halvt og hilser, med et Blik som Glas,
 hilser på mig, fortroligt, og jeg kender
 med Rædsel en af mine Ungdomsvenner —
 og ser mig selv — her på min Ungdoms Plads.
+</body>
+</poem>
 
-
-T:København
-F:Er det dig, København? Du min Ungdoms By
-SIDE:85-86
-
+<poem id="roerdam2018031116">
+<head>
+    <title>København</title>
+    <firstline>Er det dig, København? Du min Ungdoms By</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 85-86.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Er det dig, København? Du min Ungdoms By -
 så vemodig bekendt, så fortryllende ny,
 i en rigere Dragt, og med rundere Fang,
@@ -1772,22 +1908,22 @@ i en rigere Dragt, og med rundere Fang,
     Men jeg kender dit Blik, og din Gang
         som er dristig og sky.
 
-Det var dig, København — det var virkelig dig 
+Det var dig, København — det var virkelig dig
 som iaftes i Tivoli smilte til mig.
 Men du kendte mig ikke. Du smilte fordi
-    jeg var fremmed og gik forbi. 
+    jeg var fremmed og gik forbi.
     Der var slet ikke mere deri;
         derfor sukkede jeg.
 
-Og idag, på det ny Langelinje — du står 
-med det skylette viftende Slør om dit Hår 
+Og idag, på det ny Langelinje — du står
+med det skylette viftende Slør om dit Hår
 og den bølgeblå Silkedragt blæsende dær,
     altfor strålende, altfor nær,
     thi du ser kun Bølger og Vær —
         du der smilte igår!
 
 Og beundrende går jeg forbi dig igen
-som fremmed :— jeg, der engang var din Ven. 
+som fremmed :— jeg, der engang var din Ven.
 Jeg rører dig ikke. Dog kunde jeg let,
     for jeg mindes hver lønlig Plet,
     hvor min Ungdom har let — ja, og grædt.
@@ -1799,122 +1935,143 @@ står du dær, København. Og nu piber min Båd,
     og Flugt er det bedste Råd.
     Man gør sig til Grin ved sin Gråd.
         Fra sig selv skal man fly!
+</body>
+</poem>
 
-
-T:Østersø
-F:Højt bærer de brede Bølger os
-SIDE:87-88
-
+<poem id="roerdam2018031117">
+<head>
+    <title>Østersø</title>
+    <firstline>Højt bærer de brede Bølger os</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 87-88.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Højt bærer de brede Bølger os,
 vi stiger og daler i Brus og Larm,
-stærkt stamper vort Skib som en Dreng i Trods 
+stærkt stamper vort Skib som en Dreng i Trods
 klemt fast mellem Moders Bryst og Arm.
 Vist er den væltende Østersø
     endnu en Vikingemoder,
     og Damperen Dragens Broder:
-        Når Bølgen slår op under Ø, 
+        Når Bølgen slår op under Ø,
         må en Nordbo tilsøs eller dø.
 
-Og gynger der Dyb som tyngre slår 
+Og gynger der Dyb som tyngre slår
 end Østersø eller Vesterhav:
-Her foer vort Folk to tusend År, 
-end sejler vi her i Fædres Lav. 
+Her foer vort Folk to tusend År,
+end sejler vi her i Fædres Lav.
 Sølv glimter i Syd og Guld i Nord,
-    tungt plasker de natlige Bølger. 
+    tungt plasker de natlige Bølger.
     Hærskriget og Drønet følger:
         Vi farer hvor Fædrene foer,
         vi har Fortid og Fremtid ombord.
 
-Hvi skælver det Skib af Stål og Jern? 
-Hvad har det for stønnende Hjerteslag? 
+Hvi skælver det Skib af Stål og Jern?
+Hvad har det for stønnende Hjerteslag?
 Det kvier sig under den Grottekværn
-som vrider det frem og tilsidst i Vrag. 
+som vrider det frem og tilsidst i Vrag.
 Guld maler den Kværn for Mel og Salt,
-    vildt kvæder de kværnende Jætter 
+    vildt kvæder de kværnende Jætter
     her midt i de lyse Nætter.
-        Selv glemte vi nok hvad det gjaldt, 
+        Selv glemte vi nok hvad det gjaldt,
         og i Dybet er Plads for alt.
 
-Dog, endnu kvalte vel Kværnens Larm 
+Dog, endnu kvalte vel Kværnens Larm
 ej ganske de bærende Bølgers Råb;
-end løfter det Hav som en Moders Arm, 
-end svulmer i Hjertet et nordisk Håb, 
+end løfter det Hav som en Moders Arm,
+end svulmer i Hjertet et nordisk Håb,
 det syder op af den væltende Sø.
-    Og kom vi til Sejr for silde, 
+    Og kom vi til Sejr for silde,
     vi vil som Fædrene vilde:
-        Hvor Bølgen slår op under Ø, 
+        Hvor Bølgen slår op under Ø,
         skal vi syngende kæmpe og dø.
+</body>
+</poem>
 
-
-T:Sommernat i Stockholm
-F:Tyst! Nu er det Nat, og endnu er det lyst
-SIDE:89-90
-
+<poem id="roerdam2018031118">
+<head>
+    <title>Sommernat i Stockholm</title>
+    <firstline>Tyst! Nu er det Nat, og endnu er det lyst</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 89-90.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
     Tyst!
 Nu er det Nat, og endnu er det lyst,
-og du sejler, du sejler tilbage langs 
-Söderns Tårne og Tage, 
-der vandre efter hverandre 
+og du sejler, du sejler tilbage langs
+Söderns Tårne og Tage,
+der vandre efter hverandre
 forbi den glødende Måne.
 Lig Fjælde ser du dem blåne.
 
     Stans!
-Stanset er Stjernernes himmelske Dans: 
+Stanset er Stjernernes himmelske Dans:
 De funkler som Havfrusmykker
 langs bølgeskvulpende Brygger,
-de kaster fra glidende Master 
+de kaster fra glidende Master
 smaragdgrønne Gnister mod røde
 og flyver hverandre imøde.
 
 
     Stum
-stiger en Borg i det blånende Rum. 
+stiger en Borg i det blånende Rum.
 Dog, hemmeligt lyser dens rene
 fint rosenfarvede Stene.
-Der tindrer en Drøm fra dens Indre. 
-Bag Sølvglans af tusende Ruder 
+Der tindrer en Drøm fra dens Indre.
+Bag Sølvglans af tusende Ruder
 fester vel Feer og Guder.
 
     Nej —
 se hvor den lyser, den stensatte Kaj!
-Langt borte i Klipper og Mure 
+Langt borte i Klipper og Mure
 ses hver Knold og hver Fure.
-Alt skinner af Længsler og Minder. 
+Alt skinner af Længsler og Minder.
 Det hulker og ler som i Drømme
 fra Broernes hvirvlende Strømme ...
+</body>
+</poem>
 
-
-T:,,Skansen''
-LINKTITEL:Skansen
-INDEXTITEL:Skansen
-F:Og trænger du til at hvile
-SIDE:91-93
-
-    Og trænger du til at hvile 
+<poem id="roerdam2018031119">
+<head>
+    <title>,,Skansen''</title>
+    <indextitle>Skansen</indextitle>
+    <linktitle>Skansen</linktitle>
+    <firstline>Og trænger du til at hvile</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 91-93.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+    Og trænger du til at hvile
         og blive rolig og glad,
     det er ikke mange Mile,
         det er midt i den dampende Stad.
     Højt op over Støjen og Støvet
 af Strømmene stiger et Stilhedens Fjæld,
-    hvor det suser og suser i Løvet 
+    hvor det suser og suser i Løvet
         og risler af rene Væld:
             På Skansen
     går Elverspillet og Dansen.
 
     De gamle Klokketårne,
         de ringer, så stille de står,
-    lig skællede Kogler skårne; 
+    lig skællede Kogler skårne;
         de ringer af tusend År.
     Og den som er levende fatter
 bag Solstøvets Nyn gennem Glug og Dør
     i Rygåstuen fjern Latter
-        og Gråd som var nærmere før. 
+        og Gråd som var nærmere før.
             Det smerter
     og kvæger de udslidte Hjerter.
 
-    Hvor gør det dig genskabt sikker, 
+    Hvor gør det dig genskabt sikker,
         hvor stilner de Nerver der skjalv:
-    Her står en Elgko og slikker 
+    Her står en Elgko og slikker
         troværdig sin nyfødte Kalv.
     Og Lossen med sine Unger
 har slængt sig hen over en solbagt Sten;
@@ -1923,90 +2080,104 @@ har slængt sig hen over en solbagt Sten;
             Stå stille!
     Fjernt hører du Iriskens Trille.
 
-    Og Spillemænd stryger Fiolen, 
+    Og Spillemænd stryger Fiolen,
         det klinger af Hø-Le og Rok,
     mens Børnene danser i Solen,
         en sommerfuglflagrende Flok.
     De milde, de lystige Øjne,
 den brogede Dragt og den blussende Kind
     Ak, nu er de fløjne,
-        slet ingen fik _du_ fanget ind.
+        slet ingen fik <i>du</i> fanget ind.
             Kun Mindet,
     som leger og ler gennem Sindet.
 
-    Her mindes Fabriken og Gaden 
+    Her mindes Fabriken og Gaden
         det ensomme Vildmarkshus,
     her favnes Bruset af Staden
         med Løvets og Kildernes Brus,
-    og Barnet hos Planten og Dyret, 
+    og Barnet hos Planten og Dyret,
 de lever, de lever, som Livet er til —
     Er ikke det Æventyret,
         og virkeligt, når vi vil?
             Storm Skansen,
     fang Elverspillet og Dansen!
 
-    Der går gennem Bygder og Stæder 
+    Der går gennem Bygder og Stæder
         i hele Sveriges Land,
-    hvor Småbørn jubler og græder 
+    hvor Småbørn jubler og græder
         og Kvinde møder Mand,
     et Spil af de henfarne Tider,
 en Dans af den ukuet friske Natur ...
-    Man slås vel, og man slider, 
+    Man slås vel, og man slider,
         men synger dertil i Dur!
             Vi andre
     må lytte og længes og vandre.
+</body>
+</poem>
 
-
-T:Oude Reijn
-U:Kongen i Leyden
-F:Den Flod har jeg mødt før iaften
-SIDE:94-95
-
-Den Flod har jeg mødt før iaften. 
-Hvem kender vel Flodernes Væld? 
-Men flyvende kom den fra Fjældet, 
-Schaffhausen, en Måneskinskvæld. 
+<poem id="roerdam2018031120">
+<head>
+    <title>Oude Reijn</title>
+    <subtitle>Kongen i Leyden</subtitle>
+    <firstline>Den Flod har jeg mødt før iaften</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 94-95.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Den Flod har jeg mødt før iaften.
+Hvem kender vel Flodernes Væld?
+Men flyvende kom den fra Fjældet,
+Schaffhausen, en Måneskinskvæld.
 Et Sølvfog, med Toner, og Tårer,
 i mig og den styrtende Flod.
-Er det den, som nu snavset og snæver 
+Er det den, som nu snavset og snæver
 træt sniger sig hen for min Fod?
 
-Jeg kendte den bedre, hvor Landet 
-lå grønt om den skinnende Strøm 
+Jeg kendte den bedre, hvor Landet
+lå grønt om den skinnende Strøm
 med Byer og Marker, alt båret
 af Vandfaldets vældige Drøm.
-Bredt glinsende gled den i Dagen, 
+Bredt glinsende gled den i Dagen,
 den voxne, dybt hvirvlende Rhin.
-Dær hilste jeg den, og den kendtes 
+Dær hilste jeg den, og den kendtes
 helt vel ved den Flod, som var min.
 
-Jeg tænkte, den Flod vilde flyde 
-som Hav imod Havet — og her, 
-her står den og rådner i Stilhed 
-blandt Mursten og mørknende Trær. 
-En Rendesten. Lygterne spejles, 
+Jeg tænkte, den Flod vilde flyde
+som Hav imod Havet — og her,
+her står den og rådner i Stilhed
+blandt Mursten og mørknende Trær.
+En Rendesten. Lygterne spejles,
 hvor Borgerne kommer og går.
-Selv sidder jeg stum. Tør ej spørge. 
+Selv sidder jeg stum. Tør ej spørge.
 Min Mund er som lukket af Sår.
+</body>
+</poem>
 
-
-T:Berlin
-F:Storstaden Berlin!
-SIDE:96-97
-
-Storstaden Berlin! 
+<poem id="roerdam2018031121">
+<head>
+    <title>Berlin</title>
+    <firstline>Storstaden Berlin!</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 96-97.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Storstaden Berlin!
 Drøn — Hvin —
 Millionernes Brus!
-Mellem Gaderne sitrer min Gavl af et Hus 
+Mellem Gaderne sitrer min Gavl af et Hus
 som Damperens Stævn
 i Stormhavets Rædsel og Rus —
 fra Kælder til Tag,
 Nat og Dag.
 
 Palads ved Palads
-langs Gader af Glas. 
+langs Gader af Glas.
 Automobilerne borer
-sig lynsnart ind gennem Vrimlen 
+sig lynsnart ind gennem Vrimlen
 lig sværmende Meteorer
 i overmodig Svimlen,
 truttende, skrigende.
@@ -2014,7 +2185,7 @@ Lys, Larm, Flugt,
 synkende, stigende ...
 
 Smukt
-spejler i Asfaltens blankslidte Strømme 
+spejler i Asfaltens blankslidte Strømme
 de elektriske Flammer
 deres djævelske Drømme
 ind under Lindenes rolige Stammer.
@@ -2024,40 +2195,47 @@ Alt larmer, alt skælver, alt flammer!
 Alléer og Parker
 med Blomstermarker.
 Langs blinkende Baner
-breder de blodrøde Tulipaner 
+breder de blodrøde Tulipaner
 fyrsteligt festlige Tæpper ud
 i den lysende Nat, i den skinnende:
 
 Ve dig, Vår, du ventede Brud,
 som vandrer den Vej under Lindene!
+</body>
+</poem>
 
-
-T:Enzian
-U:Til Leon Dolkowski
-F:Tak, fjerne Ven, for Deres Afskedsgave!
-SIDE:98-99
-
+<poem id="roerdam2018031122">
+<head>
+    <title>Enzian</title>
+    <subtitle>Til Leon Dolkowski</subtitle>
+    <firstline>Tak, fjerne Ven, for Deres Afskedsgave!</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 98-99.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Tak, fjerne Ven, for Deres Afskedsgave!
 Af Enzianens dybe Blomsterbæger
 drak Eva Morgendug i Edens Have.
 Nu drikker jeg, en Drøm, der kvalfuldt kvæger.
 
 Vi såes et Øjeblik af Evigheden.
-Og disse Blomsterkalke dølger Drømme, 
-så dybt ind blå, som dem jeg såe forleden 
+Og disse Blomsterkalke dølger Drømme,
+så dybt ind blå, som dem jeg såe forleden
 og såe forlængst i Deres Øjne strømme.
 
-Halvfyldte kun med jordisk Dug en Morgen 
-og aldrig tømte saligt som de drømte ... 
-Dybt blåner Tungsind, bittert ånder Sorgen 
+Halvfyldte kun med jordisk Dug en Morgen
+og aldrig tømte saligt som de drømte ...
+Dybt blåner Tungsind, bittert ånder Sorgen
 af disse Blomsterbægre, aldrig tømte.
 
 Det blæser isnende fra Snefjældstind;
-mens Bjerg og Dal bag Togets Ruder dirrer, 
+mens Bjerg og Dal bag Togets Ruder dirrer,
 stirrer jeg dybt i disse Blomster ind.
 Og Sind mod Sind må sitre, mens jeg stirrer.
 
-Jeg vil ej se de blå blå Blomster blegne. 
+Jeg vil ej se de blå blå Blomster blegne.
 Én lønlig Broderhilsen vil jeg hviske:
 Vi blomstrer evigtblå og allevegne!
 Så kysser jeg, så kaster jeg dem — friske.
@@ -2067,71 +2245,85 @@ som kogende af Liv og kold af Død
 strømmer fra Kvindeskød til Kvindeskød,
 med Styrt og Fald, hvor Mandsfjæld står imod.
 
-Nej, til den Flod, som renser alle Stoffer. 
+Nej, til den Flod, som renser alle Stoffer.
 I Alnaturens Fald fra Snefjældstinder
-mod Havets Afgrund kaster jeg mit Offer. 
+mod Havets Afgrund kaster jeg mit Offer.
 Ikke det første. — Frem på glatte Skinner
 rasler mit Tog, mens Blomst og Flod forsvinder.
 
-Min Broder og min Ven, ak, altfor fjerne, 
+Min Broder og min Ven, ak, altfor fjerne,
 fjern Fortids Ven, og atter fjern i Rum!
-Vi såes med Glæde, og vi genses gerne: 
+Vi såes med Glæde, og vi genses gerne:
 Vi to er Brøker af den samme Sum,
 og vi skal samles — på den næste Stjerne.
+</body>
+</poem>
 
-
-T:Ildfluerne
-F:At Porten gik op, var en Gave
-SIDE:100-101
-
-At Porten gik op, var en Gave ... 
+<poem id="roerdam2018031123">
+<head>
+    <title>Ildfluerne</title>
+    <firstline>At Porten gik op, var en Gave</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 100-101.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+At Porten gik op, var en Gave ...
     Blidt mødte med dunblød Luft
-fra hele den lukkede Have 
+fra hele den lukkede Have
     usynlige Rosers Duft.
-Usynlige? Nej, man skimted, 
+Usynlige? Nej, man skimted,
     hvergang en Ildflue steg,
-en dugperlet Rose i Glimtet — 
+en dugperlet Rose i Glimtet —
 den dunkle dobbelt fordunklet,
     den blege helt blændende bleg
 i det korte Sekund, mens det funkled.
 
-Dybt nede lød Flodens Brusen. 
-    Her, højt i den dunkelblå Nat 
+Dybt nede lød Flodens Brusen.
+    Her, højt i den dunkelblå Nat
 fløj fler og fler Ildfluer — tusend,
-    brat lysende, sortnende brat. 
+    brat lysende, sortnende brat.
 En krøb som en Orm i Støvet —
-    en lå i en hvid Hånds Karm 
+    en lå i en hvid Hånds Karm
 og vred sine Luer bedøvet —
 en tredje fortumlede Synet
     med Glimt af en gyngende Barm,
 hvergang den blåt og hvidt lyned.
 
-Den yngste af de tre Kvinder 
+Den yngste af de tre Kvinder
     bar Ildfluen på sit Bryst.
 Hun spurgte sine Veninder
     og spurgte med usikker Røst:
-Men sig mig, hvori kan det ligge? 
+Men sig mig, hvori kan det ligge?
     Hvad tænder og slukker de Lys?
-Barn, veed du det virkelig ikke? — 
+Barn, veed du det virkelig ikke? —
 med Ynk fra den ene kom Svaret.
-    Den anden gav sit med et Gys: 
+    Den anden gav sit med et Gys:
 Barn, det får du tidsnok erfaret!
+</body>
+</poem>
 
-
-T:Krøblingen
-F:Klokkerne klang. Af Solskin sitrede Luften
-SIDE:102-105
-
+<poem id="roerdam2018031124">
+<head>
+    <title>Krøblingen</title>
+    <firstline>Klokkerne klang. Af Solskin sitrede Luften</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 102-105.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I
 
-Klokkerne klang. Af Solskin sitrede Luften, 
+Klokkerne klang. Af Solskin sitrede Luften,
 sitred og sang igennem de dybe Gader,
-hvor Mængden mylrede, berust af Duften 
+hvor Mængden mylrede, berust af Duften
 fra Blomstertorvets Trin og Søjlerader.
 
-_Mercato Nuovos_ gamle stengrå Hal 
-bugned af duftblå Heliotropkaskader, 
-mens dugfrisk purpurrøde Rosenfald 
+<i>Mercato Nuovos</i> gamle stengrå Hal
+bugned af duftblå Heliotropkaskader,
+mens dugfrisk purpurrøde Rosenfald
 vælted sig ud imod de hede Gader.
 
 Klokkerne klang, og der var høje Råb:
@@ -2140,47 +2332,47 @@ Et Blik blot for en Blomst! Blus højt, mit Håb
 O, Rose, Rose, veed du hvad du gjorde? —
 
 Kurve med Roser. Trængsel, Puf og Stød.
-Vogne med Roser. Voxgul mat _Niel_
-i fornemme Damers hvide Kniplingsskød 
-hos bleg _la France_, der dufter sig selv ihjel.
+Vogne med Roser. Voxgul mat <i>Niel</i>
+i fornemme Damers hvide Kniplingsskød
+hos bleg <i>la France</i>, der dufter sig selv ihjel.
 
 
 II
 
 En Rullestol gled lavt igennem Mylret,
-En skrumpen gammel grå Morlil, sortsjalet, 
-med Hånden på dens Håndtag gik og pylred. 
+En skrumpen gammel grå Morlil, sortsjalet,
+med Hånden på dens Håndtag gik og pylred.
 Klokkerne klang. Duft steg, og Toner daled.
 
 En purung Pige lænede sig i Stolen;
-ej skiftede Farven på den fine Kind, 
-men om de mørke Lokker vævede Solen 
+ej skiftede Farven på den fine Kind,
+men om de mørke Lokker vævede Solen
 ildsitrende et sælsomt Gloriespind.
 
-Hun sad dær statuestiv, forstenet stum, 
+Hun sad dær statuestiv, forstenet stum,
 med sextenårigt søde røde Læber.
 Et stort brunt Blik ud i det øde Rum,
 hvor Sol er Sorg og Rosenlængsel dræber.
 
-Jeg stansede. Jeg stod og såe dem komme. 
+Jeg stansede. Jeg stod og såe dem komme.
 Jeg vilde fange disse fjerne Blikke - -
-Fra Sædet ned hang Skørt og Tæppe tomme 
+Fra Sædet ned hang Skørt og Tæppe tomme
 - - Frygtelig tomt! Og Pigen såe mig ikke.
 
 
 III
 
 Men i mit Hjerte bruste der en Flamme.
-Af Smerte? Af Medlidenhed? Nej, nej! 
-Jeg greb et stort Bundt Roser i det samme, 
+Af Smerte? Af Medlidenhed? Nej, nej!
+Jeg greb et stort Bundt Roser i det samme,
 højrøde Roser, og dem kyssede jeg,
 
 Og la dem smilende i Pigens Hænder.
 En hed Blodbølge steg i hendes Kind,
-hun blinkede som et Barn, hvem Lyset blænder, 
+hun blinkede som et Barn, hvem Lyset blænder,
 søgte mit Blik, såe spejdende dybt ind,
 
-Og smilte langsomt selv — og måtte dølge 
+Og smilte langsomt selv — og måtte dølge
 sit Smil i Roserne. Så fjernt fra faldt
 en sød Forundring, med lyksaligt Følge
 af Håb og Tillid: Altså dog — Trods alt!
@@ -2189,18 +2381,18 @@ af Håb og Tillid: Altså dog — Trods alt!
 IV
 
 Så var hun borte. Ingen havde set
-blandt Råb og Latter denne stumme Scene. 
-Klokkerne klang. Og der var intet sket. 
+blandt Råb og Latter denne stumme Scene.
+Klokkerne klang. Og der var intet sket.
 Roserne duftede. Jeg stod alene.
 
-Udstrakt på Fliserne lå Broncesvinet, 
-halvskjult af Blomster. Mod dets hårde Flanke 
+Udstrakt på Fliserne lå Broncesvinet,
+halvskjult af Blomster. Mod dets hårde Flanke
 læned jeg Ryggen, siddende på Trinet,
 og talte uset med min egen Tanke:
 
-En Krøbling, ja. En enkelt af de mange. 
+En Krøbling, ja. En enkelt af de mange.
 Et hverdags Møde for de sløve Sanser.
-Lemlæstet grusomt, eller født til Fange, 
+Lemlæstet grusomt, eller født til Fange,
 sidder hun hjælpeløs, mens andre danser.
 
 Tilfældig truffet, og tilfældig trøstet;
@@ -2210,76 +2402,90 @@ hel, herlig, Menneske — blot ingen Ben.
 
 De Ben man løber med og danser med —
 de lette Fødder, der så lystigt bærer
-fra Blomst til Blomst, fra Sted til Mødested - 
+fra Blomst til Blomst, fra Sted til Mødested -
 de runde Knæ til Kys — Hvor er de, kære?
 
-Var det din Dejlighed der brød mit Hjerte, 
-din brustne Dejlighed? Jeg Mand, du Kvinde. 
-Brast der en håbløs Elskov i min Smerte? — 
+Var det din Dejlighed der brød mit Hjerte,
+din brustne Dejlighed? Jeg Mand, du Kvinde.
+Brast der en håbløs Elskov i min Smerte? —
 Sitred mit Sind mon ikke dybere inde?
 
 I Duft af Roser og i Larm af Røster,
-i Solskin og Malmklang af en fremmed Stad, 
-mødte min Sjæl dit Legem som en Søster, 
+i Solskin og Malmklang af en fremmed Stad,
+mødte min Sjæl dit Legem som en Søster,
 med hvem et Øjeblik den fulgtes ad.
 
 Ung sidder Sjælen i min slidte Krop;
-en vild ung Digtersjæl med Krøblingelemmer, 
+en vild ung Digtersjæl med Krøblingelemmer,
 lemlæstet, og får aldrig rejst sig op,
 får aldrig givet hvad den inderst gemmer ...
 
-Roserne falmer nu i Middagsflammen. 
+Roserne falmer nu i Middagsflammen.
 Fliserne brænder. Tavse blev alle Klokker.
 — Min Søster, hvorfor blev vi ikke sammen?
 Der sitred et Slør af Ild om dine Lokker.
+</body>
+</poem>
 
-
-T:Under Cedertræet
-F:Jeg kom fra den solhede syngende Stad
-SIDE:106-107
-
-Jeg kom fra den solhede syngende Stad 
+<poem id="roerdam2018031125">
+<head>
+    <title>Under Cedertræet</title>
+    <firstline>Jeg kom fra den solhede syngende Stad</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 106-107.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Jeg kom fra den solhede syngende Stad
     med dens larmende stenlagte Sletter,
-hvor fremmede mødtes og fulgtes ad 
+hvor fremmede mødtes og fulgtes ad
     til Vinrus og Ildflue-Nætter. •
-En fremmed idag, og en fremmed igår, 
+En fremmed idag, og en fremmed igår,
     selv fremmed, og altid alene:
-Da fandt jeg det Kloster, hvor Cederen står, 
+Da fandt jeg det Kloster, hvor Cederen står,
     det suste igennem dets Grene.
 
-Mit Hjerte var jaget af Vrede og Nag, 
+Mit Hjerte var jaget af Vrede og Nag,
     jeg vilde forgifte og myrde.
-Nu havde jeg båret i År og Dag 
+Nu havde jeg båret i År og Dag
     forgæves mit Arbejdes Byrde.
-Min Udgang ifjor var min Hjemgang iår, 
+Min Udgang ifjor var min Hjemgang iår,
     alt brast i en skurrende Tone:
-Da stod jeg i Klosterets kølige Gård, 
+Da stod jeg i Klosterets kølige Gård,
     det suste i Cederens Krone.
 
-Min Gerning var dømt, og min Sjæls Sjæl død, 
+Min Gerning var dømt, og min Sjæls Sjæl død,
     tilbage stod Svindlen og Svigen.
-Da fandt jeg i Asken een udslukt Glød, 
+Da fandt jeg i Asken een udslukt Glød,
     een hellig, een uudtalt Higen,
 og knælede ydmygt og løftede frit
     mod Himlen den frelsende Flamme:
-Dog, Cederen suste kun, stille og blidt, 
+Dog, Cederen suste kun, stille og blidt,
     og Aske og Ild blev det samme.
 
-Sig, suste du, Ceder, i Libanons Dal 
+Sig, suste du, Ceder, i Libanons Dal
     og hang på Himalayas Tinder?
 Hvi sukker din Krone af Kristi Kval
     og mumler om Buddhaens Minder?
 Min Verden henvejres, jeg mister mig selv -
     Velan da, så tag mig, Befrier:
-En Skygge mer, skjult i dit lysende Hvælv, 
+En Skygge mer, skjult i dit lysende Hvælv,
     et Sus til, i Suset der tier ...
+</body>
+</poem>
 
-
-T:Eiffeltårnet
-F:Jeg foer med det hvinende Hejseværk
-SIDE:108-109
-
-Jeg foer med det hvinende Hejseværk 
+<poem id="roerdam2018031126">
+<head>
+    <title>Eiffeltårnet</title>
+    <firstline>Jeg foer med det hvinende Hejseværk</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 108-109.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Jeg foer med det hvinende Hejseværk
             Stålbjælkernes Luftvej op.
 Hvor løfter det svævende dristigt,
             det Tårn, sin speidende Top!
@@ -2288,9 +2494,9 @@ Nihundrede Fod over Floden
 såe jeg ned ad Montmartre
             den Tordensky svulmende vælte.
 
-Nu var der kun stribet og lynsprængt Mulm, 
+Nu var der kun stribet og lynsprængt Mulm,
             jeg hørte det knitre og brage —
-hvert Skrald med skrattende Genskrald op 
+hvert Skrald med skrattende Genskrald op
             fra tusend usynlige Tage.
 Så slæbte det bugnende Skyhæng bort
             ad en milefjern Skrænt allerede;
@@ -2305,15 +2511,22 @@ Langt ude fra Notredames Hvalv
             steg dunkeltbrogede Toner,
 Ståltårnet klang som en Stemmegaffel
             af kommende Revolutioner ...
+</body>
+</poem>
 
-
-T:Musik i Luxembourg-Haven
-F:Nøgne Nymfer af Marmor strækker
-SIDE:110
-
+<poem id="roerdam2018031127">
+<head>
+    <title>Musik i Luxembourg-Haven</title>
+    <firstline>Nøgne Nymfer af Marmor strækker</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, p. 110.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nøgne Nymfer af Marmor strækker
         i Solskin de smidige Lemmer
-ved spejlende Damme, hvor Springvand plasker, 
+ved spejlende Damme, hvor Springvand plasker,
         og Stilheden sitrer af Stemmer,
 mens Børnene spytter i Vandet,
         og gamle Folk sidder og glemmer.
@@ -2322,19 +2535,26 @@ I Pavserne Latter af Piger
         og Småbørns Gråd når de falder.
 Stenheltene står med Våben i Hånd
         og lytter bag Glemsel og Alder
-hver Gang de krigerske Hornråb 
+hver Gang de krigerske Hornråb
         igennem Alléerne gjalder ...
+</body>
+</poem>
 
-
-T:Boulevard St. Michel
-F:Sommeraftenens Mørkning
-SIDE:111-112
-
+<poem id="roerdam2018031128">
+<head>
+    <title>Boulevard St. Michel</title>
+    <firstline>Sommeraftenens Mørkning</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 111-112.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Sommeraftenens Mørkning
         sænker sig på Boulevarden,
-Automobilerne bruser forbi; 
+Automobilerne bruser forbi;
         Sporvogne gnistrer i Farten.
-Lygter lyser i Lindenes Løv, 
+Lygter lyser i Lindenes Løv,
         ensomme Skikkelser venter.
 Ene slentrer du langsomt
         mellem de unge Studenter.
@@ -2344,75 +2564,82 @@ Blåskægsdunede Kinder,
 blide og ildfulde Blikke:
         Se, det er Syden her drager
 Digter og drømmer de alle
-        morildsfunklende Drømme? 
+        morildsfunklende Drømme?
 Hils med et Blik og et Smil kun,
         og lad Ungdommen strømme
 
-Blik og Smil får du gengældt 
+Blik og Smil får du gengældt
         mildt af deres Veninder
 disse letfodet vandrende
         slanke langhalsede Kvinder,
-dulgt i hvis søde tungsindige 
+dulgt i hvis søde tungsindige
         natsorte Øjne en Flamme
 røber at de med Smerte
         lærte at drømme det samme.
 
 To står stille, Hånd i Hånd,
         foran et Bord som hælder
-her mellem Linden og Lygten, 
+her mellem Linden og Lygten,
         dækket med Akvareller.
 De hvisker sammen og vælger
         og forsvinder i Vrimlen.
-Fortovskaféerne pludrer og ler. 
+Fortovskaféerne pludrer og ler.
         Stjernerne vandrer på Himlen.
+</body>
+</poem>
 
-
-T:Arlette
-F:Hver Aften en Kvart før otte, når Métropolitain’en
-SIDE:113-118
-
-Hver Aften en Kvart før otte, når Métropolitain’en 
-stryger henad Skinnerne, som Buen over Strængen, 
+<poem id="roerdam2018031129">
+<head>
+    <title>Arlette</title>
+    <firstline>Hver Aften en Kvart før otte, når Métropolitain’en</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 113-118.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Hver Aften en Kvart før otte, når Métropolitain’en
+stryger henad Skinnerne, som Buen over Strængen,
 og lysende elektrisk frem for Perronen duver
 op opspyer Passagererne på Pladsen foran Louvre,
 
-løber sortklædt Arlette gennem Stimlen op ad Trappen. 
+løber sortklædt Arlette gennem Stimlen op ad Trappen.
 I Automobilers Duren og Hestehoves Klappen
 glider hun over Gaden og ind ad de smalle Porte.
 Kun Hatteskyggens Knipling vifter hvid i alt det Sorte.
 
-Langs Floden under Kastanjerne, hvor hvide, røde og gule 
-de unge Kvinder flokkes lig flagrende Sommerfugle, 
+Langs Floden under Kastanjerne, hvor hvide, røde og gule
+de unge Kvinder flokkes lig flagrende Sommerfugle,
 iler hun atter hastig og ene som en der flyer —
 en spinkel Månesfråle, indhyllet i sorte Skyer.
 
-Først midt på den buede Bro står Pigen pludselig stille. 
-Det hvirvler og bruser dybt nede om Broens fedtgrønskende <note>fedtgrønskende]fedt grønskende</note> Pille. 
+Først midt på den buede Bro står Pigen pludselig stille.
+Det hvirvler og bruser dybt nede om Broens fedtgrønskende <note>fedtgrønskende]fedt grønskende</note> Pille.
 De spidse Albuer støtter hun ned imod Gråstenskarmen
 og hviler i Hænderne Hagen; dybt åndende stiger Barmen.
 
 Den spæde helt barnlige Barm, som næppe nok anes derinde.
-Kun Øjnenes modne Alvor viser at Barnet er Kvinde. 
-Den sorte Kjole vifter om magre men spændige Lemmer; 
+Kun Øjnenes modne Alvor viser at Barnet er Kvinde.
+Den sorte Kjole vifter om magre men spændige Lemmer;
 bleg stirrer hun ud over Floden; hun hviler og hun glemmer.
 
 En elvetimers Arbejdsdag, trang Luft og trættende Timer,
 hvor Talerørene hvisler og Telefonerne kimer,
-hvor Dørene svinger og Hisserne går, og Kunderne vrøvler og vrager, 
+hvor Dørene svinger og Hisserne går, og Kunderne vrøvler og vrager,
 og hun står dær med Ansvar for hundrede kostbare Sager.
 
-Står op i elve Timer. En halv Times Tid til at spise; 
+Står op i elve Timer. En halv Times Tid til at spise;
 lidt Brød til en varm Kop Kaffe er nok for en Ekspeditrice.
 Altid rank og rolig og mild, kan svare smidigt og smile.
 Men nu gør det godt i Tavshed at krumme sin Ryg til Hvile.
 
-Den eneste ,,artige Pige'' i hele Stormagasinet, 
+Den eneste ,,artige Pige'' i hele Stormagasinet,
 spotsk mønstret af alle de andre, fint drillet og groft begrinet.
-Og så hver Aften Moderens Klynk og fattige Klage hjemme ... 
+Og så hver Aften Moderens Klynk og fattige Klage hjemme ...
 Dær glider og glimter nu Floden, og det gør godt at glemme.
 
 Nu har hun tjent sin Dagløn, to Franc halvtreds — kan drømme
-de ti Minutter hos Floden. Her kommer de blanke Strømme 
+de ti Minutter hos Floden. Her kommer de blanke Strømme
 ude fra Eiffeltaarnet og Trocadéropaladset
 hvirvlende som Cigaretrøg blæst ind mod Vinduglasset.
 
@@ -2423,32 +2650,32 @@ går der vel Sejl over solblå Sø, man hører Bølgerne bruse.
 
 Hun løfter i Drømme den slanke Hals, hun løfter den som en Svane.
 Den brusende Flod gennem Staden får En til at længes og ane —
-ane mer end eet åbent Land og mer end eet Storhavs Kyster ... 
+ane mer end eet åbent Land og mer end eet Storhavs Kyster ...
 De hulker og ler under Broen, de gurglende Havfruerøster ...
 
-Og kommer der En og kigger fortroligt op under Hatten, 
+Og kommer der En og kigger fortroligt op under Hatten,
 han ser i det blege Åsyn to Øjne sorte som Natten,
-dog, det som funkler derinde er ikke Gadens Lygter; 
+dog, det som funkler derinde er ikke Gadens Lygter;
 stolte forstandige Stjerner er det, og Gadejægeren flygter.
 
 Men er det en Stjerne-Elsker, måske fra fremmede Lande,
-da studser han vel og stanser for denne lysende Pande, 
-og det kan ske hun svarer på venligt spørgende Blikke. 
+da studser han vel og stanser for denne lysende Pande,
+og det kan ske hun svarer på venligt spørgende Blikke.
 Hun har de fem Minutter endnu, og Frygt kender hun ikke.
 
-Nej, det var ikke hende som tabte disse Konvaller. 
+Nej, det var ikke hende som tabte disse Konvaller.
 Men Tak, min Herre. Hun smiler. En Stjerne funkler og falder.
 Hun løfter de duftende Blomster i sine spinkle Hænder
 og ånder ud i at tale til En hun ikke kender.
 
-Aldrig vilde hun tale på Gaden til en Pariser. 
-Pariseren, hvis Galanteri Alverden beundrende priser, 
+Aldrig vilde hun tale på Gaden til en Pariser.
+Pariseren, hvis Galanteri Alverden beundrende priser,
 rækker han En Ens Handske, så venter han uden Forhaling
 Alt — at man skal elske ham, øjeblikkelig, som Betaling.
 
 Man drømmer, ja. Men gir man sig til en Mand af sin egen Klasse,
 Penge forlanger han, Penge! Og helst af Forretningens Kasse.
-Og stjæler man ikke de Penge, vil han ufravigelig vredes 
+Og stjæler man ikke de Penge, vil han ufravigelig vredes
 og slå En, hvis man nægter at — tjene dem anderledes!
 
 Så er der de fornemme Herrer. Vi syer for deres Veninder:
@@ -2456,51 +2683,58 @@ Automobiler, Orkideer, og Smykker, og sminkede Kinder,
 Champagne, og frysende Hjerter i fremmed Attrås Flamme,
 en Måned eller et År måske. Så kommer for dem — det samme!
 
-Et Hjem — Ja, siger Arlette, med en alvorlig lille Latter, 
-min Mor er kirkelig viet, hun var en rig Mands Datter, 
+Et Hjem — Ja, siger Arlette, med en alvorlig lille Latter,
+min Mor er kirkelig viet, hun var en rig Mands Datter,
 fik Medgift, Penge, Hus og Vogn. Alt brugte Far, og mere;
 så rejste han med en anden. Nu lever hun af at brodere.
 
-Lad hvem der kan det gifte sig og hvem der vil det feste! 
+Lad hvem der kan det gifte sig og hvem der vil det feste!
 Jeg mener — siger Arlette — at Arbejdet er det bedste.
-Fra Dag til Dag at slide og bruge sine Kræfter 
+Fra Dag til Dag at slide og bruge sine Kræfter
 gir rolig Søvn hver Nat, og ingen Anger efter.
 
-Træt går jeg hjem hver Aften her. Et År er som en Uge. 
+Træt går jeg hjem hver Aften her. Et År er som en Uge.
 Jeg tjener ikke stort, nej, men tjener hvad jeg skal bruge.
 Alt, Kjoler, Hatte, syer jeg selv. Det sidder ikke så dårligt,
 gør det vel? — Hun smiler, halvt skælmsk og halvt alvorligt.
 
-Det er min Kunst, forstår De. Men dermed går så Tiden. 
+Det er min Kunst, forstår De. Men dermed går så Tiden.
 Jeg vilde så gerne læse og lære lidt ved Siden.
 Jeg læser også, Tidsskrifter, Bøger, helst de sande,
 om Kvinders Kamp og Tænkning rundt om i andre Lande.
 
-Det gør mig mindre ene. Jeg hører de kloge Røster 
+Det gør mig mindre ene. Jeg hører de kloge Røster
 tale fortroligt til mig, og mildt, som til en Søster.
-Men Mor kan ikke lide at jeg læser når hun sover. 
+Men Mor kan ikke lide at jeg læser når hun sover.
 Heller ikke at jeg hviler mig her på Vejen over.
 
-Jeg har dog her i Verden kun disse to små Glæder. 
+Jeg har dog her i Verden kun disse to små Glæder.
 Og altid skal det ende med at Mor går og græder.
 Jeg selv græder aldrig. Det gør kun alting værre —
 men jeg ønsker undertiden, jeg var min egen Herre.
 
-Jeg skulde få det hyggeligt. Mit lune lille Kammer 
-med Bøger på Reolen og Billeder i Rammer, 
-kunde læse hele Natten, få Tankerne i Rede — 
+Jeg skulde få det hyggeligt. Mit lune lille Kammer
+med Bøger på Reolen og Billeder i Rammer,
+kunde læse hele Natten, få Tankerne i Rede —
 og stundom stå og drømme i Timevis hernede.
 
-Men aldrig altfor længe. Farvel! — Af smalle Fingre 
+Men aldrig altfor længe. Farvel! — Af smalle Fingre
 et kammeratligt Tryk. En Sporvognsklokke skingrer.
 Og noget blegt og spinkelt med sorte Vinger flygter
 — ja, flygter henad Broen under de nylig tændte Lygter.
+</body>
+</poem>
 
-
-T:Med Autobus til Montmartre
-F:Jeg tilstår at jeg stundom
-SIDE:119-121
-
+<poem id="roerdam2018031130">
+<head>
+    <title>Med Autobus til Montmartre</title>
+    <firstline>Jeg tilstår at jeg stundom</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 119-121.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Jeg tilstår at jeg stundom
         med Velbehag har smilet
 til de friske Orkidéer
@@ -2511,12 +2745,12 @@ hvis bredt gyngende Rytme
 mine Strofer med en dejlig
         og excentrisk Hertuginde.
 
-Helt anderledes festlig 
+Helt anderledes festlig
         finder jeg dog Farten
 på Taget af en Autobus:
         Her myldrer Boulevarden.
 
-Så flimrer Flodens Hvirvler. 
+Så flimrer Flodens Hvirvler.
         Så blænder Avenuen:
 Man jager højt tilværs
         som en Stormvind gennem Byen.
@@ -2541,7 +2775,7 @@ Bag Kirken ligger Kaféen,
 Dær nyder man sit pikante
         Glas blandet Frugt i Champagne.
 
-Man ser ikke den stejle Skrænt, 
+Man ser ikke den stejle Skrænt,
         man mærker det kun lufte
 dybt nede fra med Løvsus
         og mange Slags Blomsterdufte.
@@ -2551,13 +2785,13 @@ Og bag det dunkle Luftrum,
 ser man lysende Exprestog
         som Sankthansorme krybe.
 
-Dær duver i Mørket den strålende Stad, 
+Dær duver i Mørket den strålende Stad,
         Paris, den bølgebårne,
 med Boulevardernes Lysbånd,
         med Ildhjul og tindrende Tårne.
 
 Duver som et Kæmpeskib
-        af Oceanet omsvulmet; 
+        af Oceanet omsvulmet;
 det morildsgnistrende Kølvand
         syder efter i Mulmet.
 
@@ -2565,226 +2799,259 @@ Selv sejler man højt hen over
         i Ballonen, ensomt stille,
 men ser det funkle dernede
         og hører Orkesteret spille.
+</body>
+</poem>
 
-
-T:I Tuilerihaven
-F:Højt syngende svinger den stolte Flod
-SIDE:122
-
-Højt syngende svinger den stolte Flod 
+<poem id="roerdam2018031131">
+<head>
+    <title>I Tuilerihaven</title>
+    <firstline>Højt syngende svinger den stolte Flod</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, p. 122.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Højt syngende svinger den stolte Flod
       sin Dans mellem Dale og Høje.
-Dær ligger med tusende Lygters Blus 
+Dær ligger med tusende Lygters Blus
       en Dal for dit undrende Øje,
-med Statuer og med Vandspring 
+med Statuer og med Vandspring
       og blomsterlysende Krat,
 med åbent buet Triumfport
       langt ud mod den lønlige Nat.
 
-Hvem holder vel her sit Indtog 
+Hvem holder vel her sit Indtog
       hver dunkel duftende Nat
-mellem hemmeligt hviskende Vandspring 
+mellem hemmeligt hviskende Vandspring
       og blomsterlysende Krat?
-Jeg spejded og skjalv; jeg skimtede den 
+Jeg spejded og skjalv; jeg skimtede den
       som bar og den som styred:
-Hen over mig red den dræbende Drøm, 
+Hen over mig red den dræbende Drøm,
       red Dejligheden og Dyret.
+</body>
+</poem>
 
-
-T:Belgien
-F:Gråsorte Bakker af Aske og Slagger
-SIDE:123
-
+<poem id="roerdam2018031132">
+<head>
+    <title>Belgien</title>
+    <firstline>Gråsorte Bakker af Aske og Slagger</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, p. 123.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Gråsorte Bakker
 af Aske og Slagger,
 vældige Skorstene, hvirvlende Røg -
 og midt i det Snavs og den Støj
-    en stor bred stille grøn Banke, 
+    en stor bred stille grøn Banke,
 hvor fem høje Popler kom frem:
-    Fem Søstre, jomfrueligt slanke, 
+    Fem Søstre, jomfrueligt slanke,
 med susende Skørter skred frem.
-    Jeg forelskede mig i dem. alle — 
+    Jeg forelskede mig i dem. alle —
 en luftig og grøn Melodi!
-    Så hørte jeg Skinnerne skralde, 
+    Så hørte jeg Skinnerne skralde,
 og Toget var tordnet forbi.
+</body>
+</poem>
 
-
-T:Holland
-F:Holland! Der er vidunderligt her
-SIDE:124-125
-
+<poem id="roerdam2018031133">
+<head>
+    <title>Holland</title>
+    <firstline>Holland! Der er vidunderligt her</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 124-125.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Holland! Der er vidunderligt her,
 ikke blot for det Blæst- og det Solskinsvær
     men Luften: Luften af Havet !
 Jeg rejser mig op, og jeg ånder igen ...
     Jeg var levende længe begravet.
 
-Vildt hvirvled over mig Storstaden hen, 
+Vildt hvirvled over mig Storstaden hen,
 jeg var halvkvalt af Fastlandets Pres ...
 Her blomstrer Enge, her duver Græs,
 og Bølgerne vasker hver sid grøn Strand,
     alt bobler og plasker af Vand.
 
-Jeg tumler fra Korridor til Kupé, 
+Jeg tumler fra Korridor til Kupé,
 Rotterdam! Dortrecht! Alt må jeg se:
     Spidsgavle og Tårnfløje haster,
 og Tegltage vender sig, Ryg efter Ryg,
     bag Bolværkers vuggende Master.
 
-Tilhavs gennem Engenes græsgrønne Felt 
+Tilhavs gennem Engenes græsgrønne Felt
     svinger Vandveje, blæsende blå.
 Her dufter af Fjord, og lufter af Belt —
 Her lærte Niels Juel Tromps tordnende Spøg,
     og Tordenskjold førte Konvoy!
 
-Jeg sejler med Skib mellem græssende Kvæg 
+Jeg sejler med Skib mellem græssende Kvæg
 under Høje med Hyld og langs Grøfter med Flæg,
-    og i Havbrisen vifter Ranunkler 
+    og i Havbrisen vifter Ranunkler
 med tusende bittesmå Skåler af Guld,
     der skælvende skinner og funkler.
 
-Jeg ruller med Tog i den salte Sø 
+Jeg ruller med Tog i den salte Sø
 igennem sommerlig Duft af Hø
-    hen over de høje Diger, 
+    hen over de høje Diger,
 hvor Vildand, Vibe og Bekkasin
     omkring Kupéerne skriger.
 
-Dybt ånder jeg ud, frit favner jeg frem. 
-    Jeg var levende længe begravet — 
+Dybt ånder jeg ud, frit favner jeg frem.
+    Jeg var levende længe begravet —
     men Holland er Landet og Havet,
         det fører mig genfødt hjem.
+</body>
+</poem>
 
-SLUTSEKTION
+</content>
+</section>
 
-SEKTION:Hjemme
+<section>
+<head>
+    <title>Hjemme</title>
+</head>
+<content>
 
-
-T:Rimbrev til Aage Westenholz
-F:Udlændige Landsmand, tag Tusenders Tak!
-SIDE:129-141
-
+<poem id="roerdam2018031134">
+<head>
+    <title>Rimbrev til Aage Westenholz</title>
+    <firstline>Udlændige Landsmand, tag Tusenders Tak!</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 129-141.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I
 
-Udlændige Landsmand, tag Tusenders Tak! 
+Udlændige Landsmand, tag Tusenders Tak!
    De selv gjorde Gerningers Gavn,
-holdt Arbejdsvagt i en fjern Bivuak 
+holdt Arbejdsvagt i en fjern Bivuak
       for Danmarks Navn.
-Skønt ene derude, De mindedes Målet 
+Skønt ene derude, De mindedes Målet
       og skurede Stålet
-      med Guld så det klang. 
+      med Guld så det klang.
    Nu kalder De os til en vågen
-og folkelig væbnet Fremtidsgang  
+og folkelig væbnet Fremtidsgang
    med Vilje og Vej gennem Tågen.
 
-Og vi som herhjemme fortvivlet har søgt 
+Og vi som herhjemme fortvivlet har søgt
    i Nutidens Natrusk og Regn
-hvad før vi ejed, bag Kunst og Kløgt 
+hvad før vi ejed, bag Kunst og Kløgt
       et større Tegn —
-men fandt det hos Danskere: Bønder, Matroser 
+men fandt det hos Danskere: Bønder, Matroser
       Storkøbmænd og Lodser
       langt udenlands,
    og hørte dets Ild og dets Brusen
-fra Magersfontein, hvor for Hæderens Krans 
+fra Magersfontein, hvor for Hæderens Krans
    halvtreds Mand stred imod tusend —
 
-Vi kender ingen mer kostelig Løn 
+Vi kender ingen mer kostelig Løn
    for det Bud og de Byrder vi bar,
-end blot en Stump af en søsterlig Bøn, 
+end blot en Stump af en søsterlig Bøn,
       et broderligt Svar,
-der skikker tilbage os Hærbudspilen 
+der skikker tilbage os Hærbudspilen
       fra Kongo, fra Nilen
       og Michigan-Sø
    eller Asiens vældige Strande
-med Hilsen: Vi lever — og vi vil dø 
+med Hilsen: Vi lever — og vi vil dø
    for Kronen om Danmarks Pande.
 
-Når De, undervejs mod Asiens Port, 
+Når De, undervejs mod Asiens Port,
    nu sender mig Bud og Brev
-om Skade De mener at jeg har gjort 
+om Skade De mener at jeg har gjort
       med det jeg skrev —
-om Digt som lokker og Sang der frister, 
+om Digt som lokker og Sang der frister,
       om Bånd der brister
       som ikke må —
    om Drifternes Troldeskare,
-der øder det Land vi bygger på: 
+der øder det Land vi bygger på:
    Nuvel, så har jeg at svare.
 
 
 II
 
-Og gladelig står jeg til Ansvar 
+Og gladelig står jeg til Ansvar
    her for min Sang til Elskovens Pris.
-Den sang jeg under begge de Trær 
+Den sang jeg under begge de Trær
       fra Paradis,
-der strakte sig ud over Muren og Flammen 
+der strakte sig ud over Muren og Flammen
       og voxede sammen
       al Jorden rundt —
    og doblede Sangens Tone,
-så Gråd under Træet på Godt og Ondt 
+så Gråd under Træet på Godt og Ondt
    blev Jubel i Livstræets Krone.
 
-Jeg lovsang ikke den syge Lyst, 
+Jeg lovsang ikke den syge Lyst,
    og spotted ej hvad jeg nød.
-Ejheller glemte jeg Blik og Røst 
+Ejheller glemte jeg Blik og Røst
       for Barm og Skød.
-Men Elskovs hele Vidunder-Rige 
+Men Elskovs hele Vidunder-Rige
       for mine Lige
       jeg priste kækt
    og lyste så langt jeg råder —
 Thi Lys er bedst for en søgende Slægt,
    og Livet har nok af Gåder.
 
-Jeg spurgte ikke om Kirkens Bånd. 
+Jeg spurgte ikke om Kirkens Bånd.
    Den vied med Kerter og Kar
-de tusende Gange i Navn af Ånd 
+de tusende Gange i Navn af Ånd
       hvad Voldtægt var.
-Jeg spurgte om Viljen, der ene kan binde 
+Jeg spurgte om Viljen, der ene kan binde
       en Mand til en Kvinde
       og Kvinde til Mand
    i Kampens Lyst og Vånde,
-så fast, at begge får stærkere Stand, 
+så fast, at begge får stærkere Stand,
    så frit, at de begge kan ånde.
 
-Lige fjernt fra en lysræd Tid 
+Lige fjernt fra en lysræd Tid
    og fra den som i Satyrdans
-for Solens Øjne besudler med Flid 
+for Solens Øjne besudler med Flid
       ung Uskylds Krans,
-med fjendtlig Front imod begge Klynger 
+med fjendtlig Front imod begge Klynger
       min Sang jeg synger
-      — når Sangtid er — 
+      — når Sangtid er —
    for Stjernen i Barnets Øje,
-for Ungdoms Blomster og søde Bær 
+for Ungdoms Blomster og søde Bær
    og for Manddoms dyrkede Høje.
 
-Og er der i Drifterne Trold ved Trold, 
+Og er der i Drifterne Trold ved Trold,
    så mener jeg: Trold må der til!
-Ellers visner vor Verden, kold 
+Ellers visner vor Verden, kold
       som et Skyggespil.
-Som Brødre står Ærens og Elskovens Drifter 
+Som Brødre står Ærens og Elskovens Drifter
       i tusend Års Skrifter
       om Stordåd og Ry.
    Det gælder kun Styret at holde:
-Så rejser de skinnende Borge mod Sky 
+Så rejser de skinnende Borge mod Sky
    og bygger os Landet — de Trolde.
 
 
 III
 
-Dog må jeg sænke mit Blik til Svar. 
+Dog må jeg sænke mit Blik til Svar.
    Det er min, og de andres, Dom -
-ej det vi talte, men det vi bar 
+ej det vi talte, men det vi bar
       kun Tavshed om:
-At Liv kan leves i større Former 
+At Liv kan leves i større Former
       end det der stormer
       for Lyst og Nød
    og på den Enkeltes Vegne —
-at selve den Enkeltes Liv og Død 
+at selve den Enkeltes Liv og Død
    er kun for lidet at regne —
 
-En Gnist i Mulmet, et bortblæst Råb 
+En Gnist i Mulmet, et bortblæst Råb
    i Evigheds brusende Skov,
-hvis ikke han lyder med højere Håb 
+hvis ikke han lyder med højere Håb
       en større Lov,
-der knytter alt hvad han er og mægter 
+der knytter alt hvad han er og mægter
       til Kæden af Slægter
       som levende Led
    i Samfund frem og tilbage,
@@ -2794,254 +3061,261 @@ støttet af Døde hvert eneste Fjed
 
 IV
 
-Vi elsker og priser med fuldgod Grund 
+Vi elsker og priser med fuldgod Grund
    Lys, Luft og Bølgernes Brus
-og den frugtbare Muld og den blomstrende Mund 
+og den frugtbare Muld og den blomstrende Mund
       og Hjertets Rus.
-Vi deles gerne med Planten og Dyret 
+Vi deles gerne med Planten og Dyret
       om Æventyret
       hvoraf vi gror.
    Men aldrig var det ved dette,
-vi rejste os fra den mylrende Jord 
+vi rejste os fra den mylrende Jord
    og blev dens Fyrster med Rette.
 
-Nej, Mindet var det, vort Seer-Syn 
+Nej, Mindet var det, vort Seer-Syn
    for Slægternes Kræfter og Kår,
-for levende Blik under Gravens Bryn 
+for levende Blik under Gravens Bryn
       bag tusend År.
-Og Tanken var det, som gennemtrængte 
+Og Tanken var det, som gennemtrængte
       den filtrede Mængde,
       vort Urskovs-Liv,
    i Kamp med Slange og Tiger,
-og skar sig Sti med sin skarpe Kniv 
+og skar sig Sti med sin skarpe Kniv
    for at samle vidt skilte Riger.
 
-Og Viljen var det, der stærk og stræng 
+Og Viljen var det, der stærk og stræng
 under Tankens og Mindernes Hvælv
-som Led af den hellige Sammenhæng 
+som Led af den hellige Sammenhæng
 hengav sig selv
-og bragte alt hvad de Drifter begære, 
+og bragte alt hvad de Drifter begære,
 Mønt, Elskov og Ære,
-ja Liv og Blod, 
+ja Liv og Blod,
 Døgnlivets dyreste Stoffer,
-bragte det alt med brændende Mod 
+bragte det alt med brændende Mod
 for Alteret hen som Offer.
 
-Med uens Navne blev det vel kaldt, 
+Med uens Navne blev det vel kaldt,
    men inderst inde, dær veed
-og vidste vi altid hvad Offeret gjaldt: 
+og vidste vi altid hvad Offeret gjaldt:
       En Evighed —
-Et Liv der ikke ved Døden stanser - 
+Et Liv der ikke ved Døden stanser -
       for vore Sanser
       en Drøm, et Digt,
    for Tanken en Tåge der glider;
 og dog den ypperste Ret og Pligt,
    for hvilken vi Mennesker strider.
 
-For Sandhed, Frihed, Troskab, Tro 
+For Sandhed, Frihed, Troskab, Tro
    under hver sit viede Flag,
-i Forbund med Slægter der siden skal gro 
+i Forbund med Slægter der siden skal gro
       og var før idag,
-at kæmpe af sine yderste Kræfter 
+at kæmpe af sine yderste Kræfter
       og længes efter
       at dø derfor —
    det er større end Dyret og Planten,
-det er Menneskets Adel, den Krone er vor, 
+det er Menneskets Adel, den Krone er vor,
    det var vore Fædre der vandt den.
 
 
 V
 
-Dog hver som ud over Hus og Hegn 
+Dog hver som ud over Hus og Hegn
    med Adhu lytter og ser,
-må fyldes af Angst ved Tidernes Tegn: 
+må fyldes af Angst ved Tidernes Tegn:
       Hvad er det der sker?
-I Stormagt voxer de hvide Stammer; 
+I Stormagt voxer de hvide Stammer;
       elektrisk flammer
       den halve Jord;
    vi sejler i Søslangens Hule,
-vi gjorde os vældige Vinger og foer 
+vi gjorde os vældige Vinger og foer
    over Bølger og Bjerge som Fugle.
 
-Vi ser ved lønlige Straalers Lys 
+Vi ser ved lønlige Straalers Lys
    hvad aldrig en Slægt før såe,
-ser levende skjult i Svulm og Gys 
+ser levende skjult i Svulm og Gys
       vort Hjerte slå.
-Igennem de spædeste Livsvæv spejder 
+Igennem de spædeste Livsvæv spejder
       vi Kræfternes Fejder
       og byder Trods
    til dem vi ikke vil dyrke.
-De Vises Sten er fundet af os 
+De Vises Sten er fundet af os
    og tjener os med sin Styrke.
 
-Men dunkelt forvildes vort inderste Liv, 
+Men dunkelt forvildes vort inderste Liv,
    vi glemmer den Visdom og Magt,
-som glimted af Præstens løftede Kniv 
+som glimted af Præstens løftede Kniv
       i den gamle Pagt
-og talte ved Tegn fra det ældste Ægypten 
+og talte ved Tegn fra det ældste Ægypten
       til Korset og Krypten
       i Viborg og Lund.
    Den Visdom, der smiler ad Smerter,
-som Kvindér kan smile i Fødslens Stund 
+som Kvindér kan smile i Fødslens Stund
    og Stridsmænd med bristende Hjerter
 
-Den Sandhed at Offer af Velfærd og Lyst 
+Den Sandhed at Offer af Velfærd og Lyst
    og Offer af Liv og Blod
-er det som fylder et dødeligt Bryst 
+er det som fylder et dødeligt Bryst
       med udødeligt Mod
-og fylker Folket og styrker Stammen 
+og fylker Folket og styrker Stammen
       med Helligflammen
       af Evighed —
    den Sandhed er skubbet til Siden,
-den Visdom smiler vi hånligt ned. 
+den Visdom smiler vi hånligt ned.
    Og det vil mærkes i Striden.
 
-Det mærkes alt. Fra Port Arthurs Lig 
+Det mærkes alt. Fra Port Arthurs Lig
    og fra Sletternes blodsprængte Ler
-steg det og stiger det. Rædselsskrig: 
+steg det og stiger det. Rædselsskrig:
       Se, se hvad der sker!
-Hvad vi gennem et Årtusende rakte 
+Hvad vi gennem et Årtusende rakte
       af stort at magte
       med Gnist og Hjul,
    tog de på en Menneskealder
-og gav til den Ånd, vi nægtede Skjul; 
+og gav til den Ånd, vi nægtede Skjul;
    det er for den, vi falder. —
 
 
 VI
 
-For Sandhed, Frihed, Troskab, Tro — 
+For Sandhed, Frihed, Troskab, Tro —
    mit Hverv som det Helliges Tolk
-var en Hejmdalsvagt ved en Skæbnebro 
+var en Hejmdalsvagt ved en Skæbnebro
       for et enkelt Folk.
-Endskønt jeg skimter de større Riger, 
+Endskønt jeg skimter de større Riger,
       her synker, her stiger
       mit Evighedshåb,
    som Kræfterne døer eller dønner.
-Her fanged mit Horn Æt-Fædrenes Råb 
+Her fanged mit Horn Æt-Fædrenes Råb
    og sang det for vore Sønner. .
 
-Her kan jeg vandre i Øst og Vest 
+Her kan jeg vandre i Øst og Vest
    ud og ind gennem Evigheds Dør
-og møde i Kriger og Bonde og Præst 
+og møde i Kriger og Bonde og Præst
       mig selv fra før.
-Her bæres jeg på de brede Skuldre 
+Her bæres jeg på de brede Skuldre
       af dem der smuldrer
       ved Kirkens Fod
    og i de hedenske Dysser.
 Mit Støv har næret Gyvelens Rod
    og det Løv som i Lundene drysser.
 
-Her, her er mit Hjem, og her mit Sprog, 
+Her, her er mit Hjem, og her mit Sprog,
    hvis rene dybtrindende Elv
-vidunderligt fylder hver lønlig Krog 
+vidunderligt fylder hver lønlig Krog
       af mit fattige Selv
-med lysende Tanker og dunkle Drømme 
+med lysende Tanker og dunkle Drømme
       og med den ømme
       og dristige Sang
    af Mænd og af elskende Kvinder
-som foran mig over Stierne sprang, 
+som foran mig over Stierne sprang,
    men efterlod deres Minder.
 
-Så skylder jeg da mit Fædreland 
+Så skylder jeg da mit Fædreland
    lidt mer end Fyld til en Grav;
-alt hvad jeg er, og alt hvad jeg kan, 
+alt hvad jeg er, og alt hvad jeg kan,
       for alt hvad det gav.
-Så blev jeg en af de vågne Røster, 
+Så blev jeg en af de vågne Røster,
       der vækker Søster
       og væbner Bror:
    Her ser I Fjenden— og Værget!
-Hvem vover at svigte sin gamle Mor, 
+Hvem vover at svigte sin gamle Mor,
    så herlig og så hærget? —
 
 
 VII
 
-Drøvtyggerne gumler den sejge Text, 
+Drøvtyggerne gumler den sejge Text,
    hvor små og hvor svage vi er —
-Vid, Danmarks Vælde og Danmarks Væxt 
+Vid, Danmarks Vælde og Danmarks Væxt
       beror på Jer.
-Her findes Ager, og Ånd, at dyrke 
+Her findes Ager, og Ånd, at dyrke
       for alt hvad Styrke
       vi har og veed.
    Hvi skræmmes I af de Skranker,
-med Plads for en grænseløs Kærlighed 
+med Plads for en grænseløs Kærlighed
    og Mål for de tapreste Tanker.
 
-I Skarnet med den som døer af Skræk! 
+I Skarnet med den som døer af Skræk!
    Af Vilje er Verden skabt,
-og den der møder sin Skæbne kæk 
+og den der møder sin Skæbne kæk
       har aldrig tabt.
-Den Vished tør ingen Løgn forvanske: 
+Den Vished tør ingen Løgn forvanske:
       Hvis alle Danske
       for Alvor vil,
    skal dette plyndrede Rige
 med alt det Tabte og mere til
    stå en Dag som de Vældiges Lige.
 
-I mindes det vel, skønt nærmere Mål 
+I mindes det vel, skønt nærmere Mål
    er sat i den kommende Kamp.
-Hør Gnisternes Hvislen og Vagternes Vrål 
+Hør Gnisternes Hvislen og Vagternes Vrål
       og Troppernes Tramp!
-Der venter en Vej, og det varer de Vintre, 
+Der venter en Vej, og det varer de Vintre,
       men intet kan hindre
       den varslede Dag,
    da vi fra Syden og Norden
-må samle os til et Ragnarokslag 
+må samle os til et Ragnarokslag
    for Herredømmet på Jorden.
 
 I dette Millionernes Tog
    af Abels Æt imod Kain,
-de hvide Stammer med hver sit Sprog 
+de hvide Stammer med hver sit Sprog
       og hver sit Tegn,
-skal midt mellem Brødre fra Sverig og Norge 
+skal midt mellem Brødre fra Sverig og Norge
       vi Danske borge
       for Navn og Arv,
    og ingen skal gøre det bedre,
-såsandt vi endnu har Most og Marv 
+såsandt vi endnu har Most og Marv
    af vore fejdende Fædre.
 
-Vi, Sønner af Anglernes sindige Trods 
+Vi, Sønner af Anglernes sindige Trods
    og af Cimbrernes sejrrige Fald,
-vær rolig, Verden har Brug for os, 
+vær rolig, Verden har Brug for os,
       og vi kan det vi skal.
-Bag Ragnarok skimter jeg Gry som de Gamles, 
+Bag Ragnarok skimter jeg Gry som de Gamles,
       hvor Ætterne samles
       med Guldtavl i Hånd,
    og Vejen dertil er den samme.
-Af Offer og Kamp kommer genfødt Ånd: 
+Af Offer og Kamp kommer genfødt Ånd:
    Frem, Dannebrogs flyvende Flamme!
 
 
 VIII
 
-Jeg kunde vel videre spejde og spå 
+Jeg kunde vel videre spejde og spå
    som Tule ved Tidernes Strøm,
-men nu har jeg sagt Dem min Angst og min Trå, 
+men nu har jeg sagt Dem min Angst og min Trå,
       så vej da, og døm!
-Mig ruser ej Rosen, mig fælder ej Dommen, 
+Mig ruser ej Rosen, mig fælder ej Dommen,
       før Dagen er kommen
-      til Tankernes Høst — 
+      til Tankernes Høst —
    hvis ikke selv jeg svigter
-og bryder den dulgte Lov i mit Bryst 
+og bryder den dulgte Lov i mit Bryst
    som lærte mig Sangerens Pligter.
 
-Og blæste jeg Hornet i Danmarks Navn 
+Og blæste jeg Hornet i Danmarks Navn
    igennem Dagenes Dån
-kun få af det levende Folk til Gavn 
+kun få af det levende Folk til Gavn
       og mig selv til Hån —
-Å jo, det svider. Men andre svarer, 
+Å jo, det svider. Men andre svarer,
       de skinnende Skarer
       af Folket der faldt
    og Folket der skal fødes.
-For dem har jeg sunget, på dem har jeg kaldt. 
+For dem har jeg sunget, på dem har jeg kaldt.
    Jeg veed det, de veed det: Vi mødes!
+</body>
+</poem>
 
-
-T:Bovbjerg
-F:Der skinner Sol på Bovbjerg!
-SIDE:142-146
-
+<poem id="roerdam2018031135">
+<head>
+    <title>Bovbjerg</title>
+    <firstline>Der skinner Sol på Bovbjerg!</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 142-146.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Der skinner Sol på Bovbjerg!
             Hvor skinner vel Sol som dær?
 Hvor er der så langt i Luften,
@@ -3049,9 +3323,9 @@ Hvor er der så langt i Luften,
 
 Jeg stod ved det hvide Brystværn
             af Tårnet på Bovbjerghus,
-løftet i Sol og svøbt i Blæst, 
+løftet i Sol og svøbt i Blæst,
             omsydet af lønligt Sus:
-Dybt under mig bruser og durer og skurer 
+Dybt under mig bruser og durer og skurer
             de Bølger i Forstrandens Grus
 De Bølger der kommer fra England
             og slår op under Bovbjerghus.
@@ -3060,39 +3334,39 @@ Jeg står ved Tårnets Brystværn,
             veed ikke hvor længe jeg stod
 og stirrede ud på de Veje
             som jeg har trådt med min Fod:
-Den langstrakt buede Forstrand, 
+Den langstrakt buede Forstrand,
             gråt, grønt og hvidt,
             af Dige og Klit,
 smalt op mellem Fjorden og Havet
-            til Gabet ved _Thyborøn_ — 
+            til Gabet ved <i>Thyborøn</i> —
 Dær løb jeg en skinnende Stormdag
-            i Skumflodd og Vandbjerges Døn. 
+            i Skumflodd og Vandbjerges Døn.
 Hvad er det de travende Bølger dernede
             nu mumler i Trusel og Bøn?
 
 Jeg står på Tårnet i Solskin.
-            Blåt blinker _Ferring Fjord_
-og fjernt over _Hygum Enge_
-            selve _Limfjordens_ Bredning i Nord.
-Den Vej har jeg stavret i Regnstorms Pres, 
-det skummede hvidt om de sivgroede Næs, 
+            Blåt blinker <i>Ferring Fjord</i>
+og fjernt over <i>Hygum Enge</i>
+            selve <i>Limfjordens</i> Bredning i Nord.
+Den Vej har jeg stavret i Regnstorms Pres,
+det skummede hvidt om de sivgroede Næs,
 det tordned forude fra Havet,
-            og Fjorden gav brusende Svar ... 
+            og Fjorden gav brusende Svar ...
 Blidt suser nu Sø og blinker Fjord;
-            men gennem Luftens Glar 
+            men gennem Luftens Glar
 går sitrende Bud på Bud:
             Min Søster, du holder dig klar!
 
 Jeg står på den hvide Tårntind.
             Højt svinger et frugtbart Land
-sine Huse og Gårde med bølgende Rug 
+sine Huse og Gårde med bølgende Rug
             mod Himlens blændende Rand.
-Bag Bjerget veed jeg i diset Glans 
-_Dybe_ Kirke og _Fjaltring_ og _Trans_ 
-og _Bøvling Klit_ med Engene - -
-            Det var Skyer af Fugle, der fløj. 
+Bag Bjerget veed jeg i diset Glans
+<i>Dybe</i> Kirke og <i>Fjaltring</i> og <i>Trans</i>
+og <i>Bøvling Klit</i> med Engene - -
+            Det var Skyer af Fugle, der fløj.
 Vi lå på det skumplende Hølæs
-            og lyttede til deres Støj, 
+            og lyttede til deres Støj,
 i to, eller tusende, Stunder —
 til Æventyret gik under
             i Havgusens isnende Røg.
@@ -3105,11 +3379,11 @@ Sært blandes de blomstrende Markers
             og Havdybets vældige Duft ...
 Men hvorfor løber den Vej dær
             lukt ud i den tomme Luft?
-Og hvorfor hænger den Græsmark 
+Og hvorfor hænger den Græsmark
             med gabende Svælg af Ler,
-sprængt, hundrede Fod under Brinken? 
+sprængt, hundrede Fod under Brinken?
 Og dær, over Bølgernes Blinken
-            langt ude, hvad er det jeg ser? 
+            langt ude, hvad er det jeg ser?
 Svævende Skygger af Marker og Gårde,
             som var der, men er der ej mer ...
 
@@ -3122,13 +3396,13 @@ Og dær hvor Brændingen kaster
 løb Kildernes Årer lønligt
             i Markjords mægtige Lag ...
 
-Sol skinner på Bølger og Kyster, 
+Sol skinner på Bølger og Kyster,
             og Blæsten er blid idag.
 Dog synes jeg, Tårnet ryster.
 
 Så står jeg da nede på Stranden
             og klæder mig nøgen til Bad.
-Hvad er det der sker med Bovbjerg? 
+Hvad er det der sker med Bovbjerg?
             Nu fritter jeg Havet ad.
 Ankeret ud, og Rebet om!
             Hav tør man aldrig tro.
@@ -3136,9 +3410,9 @@ Første og anden grå Bølge
             slog over mig tungt i Ro.
 Den tredje kom venlig og stille,
             den steg, og jeg vidste det knap,
-før jeg hvirvledes ud, og jeg knugedes ned ... 
+før jeg hvirvledes ud, og jeg knugedes ned ...
             et Ryk, og Malstrømmen slap.
-Men Rebet stod stramt som en dirrende Stræng, 
+Men Rebet stod stramt som en dirrende Stræng,
             og mit Hjerte, det slår, klap klap.
 
 Nuvel, dær har jeg da Svaret.
@@ -3151,11 +3425,11 @@ som for en vågen Vagtmand
             til Bauta rejstes op;
 derfor skriger de Fugle
             som ruger i Enge og Kær:
-            De veed, den Dag er nær, 
+            De veed, den Dag er nær,
 da Fjord og Hav i tordnende Trav
             slår sammen om Bjærget her.
 
-Tilgiv! Man spiser og drikker godt 
+Tilgiv! Man spiser og drikker godt
             i Salen på Bovbjerghus
 blandt Blomster og Malerier.
             Skål, Bror, på en grundig Rus!
@@ -3167,30 +3441,39 @@ Kom nu, vi tænder Cigaren
             i Tårnets lysende Sus
 og hører dem dure dernede
             og skure mod Forstrandens Grus,
-de Bølger fra Tyskland og England — 
+de Bølger fra Tyskland og England —
             her op under Bovbjerghus!
+</body>
+</poem>
 
-
-T:Gymnastiksang
-U:Skrevet til de danske Gymnasters London-Færd
-U:_Mel. af Carl Nielsen_
-F:Vi fri Folk fra Norden
-SIDE:147-148
-
-Vi fri Folk fra Norden 
+<poem id="roerdam2018031136">
+<head>
+    <title>Gymnastiksang</title>
+    <subtitle>
+        <line>Skrevet til de danske Gymnasters London-Færd</line>
+        <line><i>Mel. af Carl Nielsen</i></line>
+    </subtitle>
+    <firstline>Vi fri Folk fra Norden</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 147-148.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Vi fri Folk fra Norden
 vandrer hjemligt over Jorden.
-Over Landmark, over Vandmark 
-Ungdom går for gamle Danmark 
+Over Landmark, over Vandmark
+Ungdom går for gamle Danmark
 til et Tag for Navn og Gavn.
-    Fra Skæbnen går ingen. 
+    Fra Skæbnen går ingen.
 Rask og rank at møde den,
     det er Tingen,
     det er Mål for Mænd.
 
-Vi små Folk fra Norden 
+Vi små Folk fra Norden
 fylder ikke stort på Jorden.
-Ingen, om han ej er galen, 
-lægger til sin Væxt en Alen — 
+Ingen, om han ej er galen,
+lægger til sin Væxt en Alen —
 dog, en Tomme kan gå an!
     Det rækker den ranke,
 den som trodser Tryk og Tvang.
@@ -3198,39 +3481,46 @@ den som trodser Tryk og Tvang.
     styr da du vor Gang!
 
 Vi fri Folk fra Norden
-fylder nok vor Plads på Jorden. 
-Over Landmark, over Vandmark 
-Ungdom går for gamle Danmark 
+fylder nok vor Plads på Jorden.
+Over Landmark, over Vandmark
+Ungdom går for gamle Danmark
 mod Alverdens Magt i Takt!
     Snart Sveden, snart Blodet -
 giv kun alt så godt du kan!
     Ene Modet
     gør den frie Mand.
+</body>
+</poem>
 
-
-T:Drog jer over dybe Floder
-U:Sang til Danskerne derudefra ved deres Møde i Danmark 1909
-F:Drog Jer over dybe Floder
-SIDE:149-150
-
-Drog Jer over dybe Floder 
+<poem id="roerdam2018031137">
+<head>
+    <title>Drog jer over dybe Floder</title>
+    <subtitle>Sang til Danskerne derudefra ved deres Møde i Danmark 1909</subtitle>
+    <firstline>Drog Jer over dybe Floder</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 149-150.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Drog Jer over dybe Floder
 kærligt Sønnesind
-hjem til Jeres gamle Moder, 
+hjem til Jeres gamle Moder,
 kom så helt herind!
-Hvil Jer, hvor I lå som Drenge, 
+Hvil Jer, hvor I lå som Drenge,
 hvil ved Danmarks Bryst.
-I har været borte længe — 
+I har været borte længe —
 husker I min Røst?
-Borte var I, langt og længe, 
+Borte var I, langt og længe,
 men I husker nok min Røst.
 
-Andre Børn ved Øret beder. 
+Andre Børn ved Øret beder.
 Hvis jeg glemte Jer,
-veed dog vistnok mine Heder 
+veed dog vistnok mine Heder
 hvem og hvor I er.
-Og de Våben ingen bærer 
+Og de Våben ingen bærer
 hvisker Navn for Navn —
-Dog, jeg veed, Jert Plovjern skærer 
+Dog, jeg veed, Jert Plovjern skærer
 større Land til Gavn,
 og en fremmed Verden ærer
 i Jert Frimandsmod mit Navn.
@@ -3239,59 +3529,68 @@ Og, om I af øget Styrke
 og af større Mål
 fra det Land, I fik at dyrke
 frit med Sved og Stål,
-stundom blev lidt storhedsblinde 
+stundom blev lidt storhedsblinde
 for ,,den gamle Krog'' —
-o, jeg veed, I vil genfinde 
+o, jeg veed, I vil genfinde
 Hjertets Hjem og Sprog
-i en Sangstump, en Kærminde 
+i en Sangstump, en Kærminde
 og et Glimt af Dannebrog.
 
-Tie vil jeg da med Savnet, 
+Tie vil jeg da med Savnet,
 som I godt forstår,
-signe Jer med Sønnenavnet 
+signe Jer med Sønnenavnet
 selv i fremmed Gård.
-Bro fra Broder ud til Broder 
+Bro fra Broder ud til Broder
 bygger Blod og Sind
-ubrudt over Skæbnefloder, 
+ubrudt over Skæbnefloder,
 fast mod Hvirvelvind.
-I kom hjem til Jeres Moder, 
+I kom hjem til Jeres Moder,
 kom så helt, kom helt herind!
+</body>
+</poem>
 
-
-T:Stormens Mindesang
-U:1659 — 11. Febr. — 1909
-U:_Mel. af Jul. Bechgaard
-F:Tør vi uden Omsvøb mindes
-SIDE:151-153
-
-Tør vi uden Omsvøb mindes 
-hvad der skete i de År? 
+<poem id="roerdam2018031138">
+<head>
+    <title>Stormens Mindesang</title>
+    <subtitle>
+        <line>1659 — 11. Febr. — 1909</line>
+        <line><i>Mel. af Jul. Bechgaard</i></line>
+    </subtitle>
+    <firstline>Tør vi uden Omsvøb mindes</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 151-153.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Tør vi uden Omsvøb mindes
+hvad der skete i de År?
 Sejren blev vor Fjendes,
 og vort Skjold fik Skår.
-Det var ondt, om her blev løjet. 
-Skæbnen skal man se i Øjet: 
+Det var ondt, om her blev løjet.
+Skæbnen skal man se i Øjet:
 Derved rejser sig en bøjet
 og kan bøde sine Sår.
 
-Daglig bringer Sol og Måne 
+Daglig bringer Sol og Måne
 Bud fra Sundets østre Bred,
-fra vort gamle Skåne, 
+fra vort gamle Skåne,
 som vi skiltes ved.
-Er end lukte disse Vunder, 
+Er end lukte disse Vunder,
 endnu smerter det derunder:
-Danmarks værste Vanheld bunder 
+Danmarks værste Vanheld bunder
 i den dyre Roskild-Fred.
 
-Det var Freden uden Ære, 
-Fejgheds Fred i Huj og Hast. 
+Det var Freden uden Ære,
+Fejgheds Fred i Huj og Hast.
 Bølgen måtte bære,
 ak, mens Landet brast.
-Men han brød sit Ord, Karl Gustav, 
-kom igen med Skyts og Roslav, 
+Men han brød sit Ord, Karl Gustav,
+kom igen med Skyts og Roslav,
 vilde bryde Danmarks Bostav:
 
 Da stod Danmark bedre fast.
-Der var ofret nok på Freden, 
+Der var ofret nok på Freden,
 festet nok i fedtet Balg.
 Jeg vil dø i Reden,
 var Kong Fredriks Valg.
@@ -3301,70 +3600,80 @@ nu for Frihed og for Ære!
 Det var hans og Folkets Valg.
 
 Dag og Nat Musik af Spaden,
-Bøssen og det skarpe Stål, 
-styrket Vold om Staden, 
+Bøssen og det skarpe Stål,
+styrket Vold om Staden,
 Vagt af vågne Bål.
-Drot og Dronning såe man ride 
-ved den simple Krigers Side, 
+Drot og Dronning såe man ride
+ved den simple Krigers Side,
 såe Student og Kræmmer stride -
 de blev Mænd, da de fik Mål.
 
-Rød blev Svenskens hvide Skjorte, 
-brudt sank Stormens bratte Flod, 
+Rød blev Svenskens hvide Skjorte,
+brudt sank Stormens bratte Flod,
 thi for Byens Porte
 Byens Borger stod.
-Det var Skjoldets Skamplet fjernet, 
+Det var Skjoldets Skamplet fjernet,
 det var Rigets Livsrod værnet,
 det var Hjerteslag med Jernet:
 Frihed blomstred af det Blod.
 
-Flammer end i Sagas Haller 
-højt Karl Gustavs Heltenavn, 
+Flammer end i Sagas Haller
+højt Karl Gustavs Heltenavn,
 Hovmod står og falder,
 Svig gør stakket Gavn,
-og hvor Hjem og Jord forbinder 
+og hvor Hjem og Jord forbinder
 Frihed, Ære, Fremtid, Minder,
-strider Mænd, ja strider Kvinder, 
+strider Mænd, ja strider Kvinder,
 som de stred for København.
 
-Midt i Nutids Nat af Sorger 
-Mindets Fest med Sang og Spil! 
+Midt i Nutids Nat af Sorger
+Mindets Fest med Sang og Spil!
 Konge, Bonde, Borger —
 har vi Ret dertil?
-Samme Friheds Arv at vare, 
-samme Folk, i samme Fare! 
-Kun ved Gerning kan vi svare: 
-Vi har Ret, så sandt vi _vil!_
+Samme Friheds Arv at vare,
+samme Folk, i samme Fare!
+Kun ved Gerning kan vi svare:
+Vi har Ret, så sandt vi <i>vil!</i>
+</body>
+</poem>
 
-T:Her kommer vi Drenge -
-U:Sang for de Frivillige Drengeforbund
-U:_Mel. Det finske Rytteris Marsj_
-F:Her kommer vi Drenge, vi hilser med Sang
-SIDE:154-155
-
+<poem id="roerdam2018031139">
+<head>
+    <title>Her kommer vi Drenge -</title>
+    <subtitle>
+        <line>Sang for de Frivillige Drengeforbund</line>
+        <line><i>Mel. Det finske Rytteris Marsj</i></line>
+    </subtitle>
+    <firstline>Her kommer vi Drenge, vi hilser med Sang</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 154-155.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Her kommer vi Drenge, vi hilser med Sang
-hver dampende Skorsten og hver duftende Vang. 
-Her kommer vi Drenge med Trommer og Horn, 
+hver dampende Skorsten og hver duftende Vang.
+Her kommer vi Drenge med Trommer og Horn,
 vi tramper os tværs gennem Tykning og Torn,
 vi ryster os i Regnskyl og vi blæser ad Blæst
 og skinner i Solskin uden Trøje og Vest.
-Som en susende Vind, som en skinnende Sky 
+Som en susende Vind, som en skinnende Sky
 går Toget i Takt gennem Landsby og By.
 Det er lystigt at gå på den levende Jord,
-hvor Ens Bryst ånder frit, og hvor Kræfterne gror. 
+hvor Ens Bryst ånder frit, og hvor Kræfterne gror.
 Under Vandringen vinder vi Muskler af Stål,
 og bag Synsranden venter vor Vandrings Mål.
 
-Her kommer vi Drenge, vi tramper i Trit 
-i Sten og i Støv, gennem Pløre og Skidt. 
-Her kommer vi Drenge, vi træder i Takt, 
+Her kommer vi Drenge, vi tramper i Trit
+i Sten og i Støv, gennem Pløre og Skidt.
+Her kommer vi Drenge, vi træder i Takt,
 vi mærker, den taktfaste Marsj giver Magt.
 Men Takten som vi tramper hedder rask ikke rå,
 og Magten er Modet til at slås for de Små,
-for en Dreng har den selvsamme Ret som en Mand, 
+for en Dreng har den selvsamme Ret som en Mand,
 når dristig han vover og fast holder Stand:
 Han har Ret til at værne sin Søster og Mor,
-hver en Kvinde, hvert Barn på den rullende Jord. 
+hver en Kvinde, hvert Barn på den rullende Jord.
 Det er derfor vi knejser så kækt på vor Gang:
 Vi er Drenge, vi synger vor Vandringssang.
 
@@ -3372,134 +3681,158 @@ Så går vi vor Gang i den danske Dag
 med klingende Sange og med flyvende Flag.
 Et skønnere Flag er i Verden ej mødt
 end Dannebrog snehvidt og flammende rødt.
-Hvor Bakken over Bølgen skyder græsgroet frem 
+Hvor Bakken over Bølgen skyder græsgroet frem
 dær løftes det lysfyldt af de tusende Hjem,
-og hvor Korsene står, og hvor Kæmperne stod, 
+og hvor Korsene står, og hvor Kæmperne stod,
 dær vajer det badet i Tårer og Blod.
-Det er Samling af Splid, det er Rejsning af Fald, 
+Det er Samling af Splid, det er Rejsning af Fald,
 det er alt hvad vi ejer og alt hvad vi skal,
 det er det vi skal leve og dø for engang:
 Vi er Drenge, vi synger vor Vandringssang.
+</body>
+</poem>
 
-T:Tanker ved Juletræet
-U:1908
-F:Sort lå Bjerget under de frostklare Stjerner
-SIDE:156-157
-
-Sort lå Bjerget under de frostklare Stjerner. 
+<poem id="roerdam2018031140">
+<head>
+    <title>Tanker ved Juletræet</title>
+    <subtitle>1908</subtitle>
+    <firstline>Sort lå Bjerget under de frostklare Stjerner</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 156-157.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Sort lå Bjerget under de frostklare Stjerner.
 Vinden suste deroppe
 i Granernes Toppe.
 Lunt var der i Kløften. De sad
-på mosgroede Tuer og Stene, 
+på mosgroede Tuer og Stene,
 Mænd, Kvinder og Børn, og bad.
-En Stund talte Præsten alene; 
+En Stund talte Præsten alene;
 så sang alle de hellige Kvad. —
-Kun Granernes hængende Grene 
+Kun Granernes hængende Grene
 gav Kætterne Kirkehvalv
 og bar deres fattige Kerter.
 De klare små Luer skjalv
 af Højtid som deres Hjerter.
 
-Troskamp, Retskamp, Fredløses Læ 
+Troskamp, Retskamp, Fredløses Læ
 gjorde Granen til Juletræ.
 
-Mørkt lå Danmark i Århundreders Kampe, 
+Mørkt lå Danmark i Århundreders Kampe,
 snart for Rigdom og Ære,
 snart kun for at være.
 Trods Skæbnens mulmende Brus
-og midt i Ulykkens Vintre 
+og midt i Ulykkens Vintre
 såes festligt fra Hus til Hus
 de nytændte Julelys tindre.
 Ej kunde da Kort og Krus
 al Længsel i Hjerterne lindre.
-Med Kampens Fred stod frem 
+Med Kampens Fred stod frem
 hint Træ fra de evige Skove;
-højt lyste dets Lue: Vort Hjem, 
+højt lyste dets Lue: Vort Hjem,
 for dig vil vi lide og vove!
 
-Livets og Dødens Gud var Gæst 
+Livets og Dødens Gud var Gæst
 fordum ved Julens alvorlige Fest.
 
-Hundred tusende Trær står tændt iaften, 
+Hundred tusende Trær står tændt iaften,
 tindrende fint for Festen.
 Men hvem er Gæsten?
 Hvor hædres en Helligdom her?
-Hvor strider vi troende sammen? 
+Hvor strider vi troende sammen?
 Hjem har vi. Er vi det værd?
 Her skinner så lyst — på Skammen!
-Sluk, Brødre, de strålende Trær, 
+Sluk, Brødre, de strålende Trær,
 og tænd i Hjerterne Flammen!
-Dær var det vi trængte til Lys 
+Dær var det vi trængte til Lys
 — o Træ fra de evige Skove! —
-Se Flammernes flakkende Gys: 
+Se Flammernes flakkende Gys:
 Hvor turde den Fest vi vove?
 
 Vidste da ingen hvem Gæsten var,
 og hvad han skrev for Kong Belzazar?
+</body>
+</poem>
 
-T:Gefion Sang -
-U:Til Nordslesvigs Fællessangforening
-F:Gefion sang, og Ploven fured
-SIDE:158-159
-
-Gefion sang, og Ploven fured 
+<poem id="roerdam2018031141">
+<head>
+    <title>Gefion Sang -</title>
+    <subtitle>Til Nordslesvigs Fællessangforening</subtitle>
+    <firstline>Gefion sang, og Ploven fured</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 158-159.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Gefion sang, og Ploven fured
 Danmark Sjælland til.
-Regnar sang i Ormeburet — 
+Regnar sang i Ormeburet —
 Se, hvad Sangen vil!
 Brystet svulmer, Tonen stiger,
 Tanken stiger med,
-gennem andre, større Riger, 
+gennem andre, større Riger,
 større Kamp og Fred.
-Hvor de stærke Toner stiger, 
+Hvor de stærke Toner stiger,
 stiger Hu og Handling med.
 
-Sangen, der usynligt svinder, 
+Sangen, der usynligt svinder,
 snor sin Skæbnetraad
 gennem hundred Ætleds Minder
 til den yngste Dåd.
-Ensom går en Svend og synger, 
+Ensom går en Svend og synger,
 hvor en Pige boer;
 to går frem, det blir til Klynger,
 blir et Sangerkor,
-blir et Folk som går og synger, 
+blir et Folk som går og synger,
 hvor dets Liv og Fremtid boer.
 
-Vi fra Flensborg Fjord til Åen 
+Vi fra Flensborg Fjord til Åen
 veed hvad Sang er værd:
 Hug af Hælen, klip af Tåen,
 hele står vi her,
-synger Pligt og Plovgang helget, 
+synger Pligt og Plovgang helget,
 synger Regnars Sang.
-Knevl os Tungen fast i Svælget, 
+Knevl os Tungen fast i Svælget,
 lyt så nok en Gang:
-Af vort Hjerte, blodigt helget, 
+Af vort Hjerte, blodigt helget,
 strømmer sejrrigt samme Sang!
+</body>
+</poem>
 
-T:Stormnat ved Beltet
-U:Nytår 1909
-F:Stormkrogen klirrer mod de blanke Ruder
-SIDE:160-164
-
-Stormkrogen klirrer mod de blanke Ruder; 
+<poem id="roerdam2018031142">
+<head>
+    <title>Stormnat ved Beltet</title>
+    <subtitle>Nytår 1909</subtitle>
+    <firstline>Stormkrogen klirrer mod de blanke Ruder</firstline>
+    <notes>
+        <note>Teksten følger Valdemar Rørdam: <i>Luft og Land</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910, pp. 160-164.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Stormkrogen klirrer mod de blanke Ruder;
 selv Gulvet i mit lune Loftsrum ryster,
 så Hunden rejser sig fra sine Puder
-og piber angst. Mig styrker og mig trøster 
+og piber angst. Mig styrker og mig trøster
 Gensynet med min Æts ældgamle Guder,
-den Storm, det Hav. Imellem lave Kyster 
-vælter et sølvsort Vandsvulm gennem Beltet, 
+den Storm, det Hav. Imellem lave Kyster
+vælter et sølvsort Vandsvulm gennem Beltet,
 som det mod tusend Måner før har væltet.
 
 Bag Jord og Måne skimtes Tågetider,
-hvor Jordens Børn knap drister sig i Drømme. 
+hvor Jordens Børn knap drister sig i Drømme.
 Dog, åbent Hav her ud til alle Sider
-er vågent Syn; så langt nåer Tankens Tømme. 
-Isfjæld ved Isfjæld grustungt langsomt glider, 
-og smelter langsomt i de smyge Strømme. 
+er vågent Syn; så langt nåer Tankens Tømme.
+Isfjæld ved Isfjæld grustungt langsomt glider,
+og smelter langsomt i de smyge Strømme.
 Havdybet lukkes, og en ny Nats Måne
 ser Landbro lagt fra Skotland og til Skåne.
 
-Og Broen breder sig. Land gror i tusend, 
-titusend År — til stigende det stængte 
+Og Broen breder sig. Land gror i tusend,
+titusend År — til stigende det stængte
 Østhav histinde løfter sig mod Slusen
 en Stormnat, fyldt af sine Floders Mængde,
 og sprænger den. Et Syd, et Drøn, en Brusen
@@ -3507,27 +3840,27 @@ af tunge Vandes Hvirvlen i det sprængte:
 Ved Springflod-Nattens måneklare Storm
 blev Danmark skabt, fik Skæbne født med Form.
 
-Den Flod, hvis brustne Brændingsbid vi sporer 
+Den Flod, hvis brustne Brændingsbid vi sporer
 højt på hver flinthård Klint, hver græsgrøn Hage,
-pløjed den Belt og Sund og dybe Fjorde, 
+pløjed den Belt og Sund og dybe Fjorde,
 hvi veg den da ved Jernveds Rand tilbage?
 Hvi slugte Slien ej de bløde Jorder
 langt vesterud? — Hør hundred Ætled klage:
-Her burde strid fra Hav til Hav udrundet 
+Her burde strid fra Hav til Hav udrundet
 den Strøm der går i Belterne og Sundet!
 
-Nu har vi selv en Strømseng måttet fure 
+Nu har vi selv en Strømseng måttet fure
 og fylde den af vore egne Årer.
-Langs Haraids Vold og Volmers røde Mure 
-går Strømmen blandet tungt af Blod og Tårer. 
+Langs Haraids Vold og Volmers røde Mure
+går Strømmen blandet tungt af Blod og Tårer.
 Ve! — Fjenderne sprang over ved dens Kure! -
-Men Guders Gerning dømmer kun en Dåre; 
-thi Vagten sov. Vi havde glemt at væbne. 
+Men Guders Gerning dømmer kun en Dåre;
+thi Vagten sov. Vi havde glemt at væbne.
 Hvert Folk står selv til Ansvar for sin Skæbne - -
 
-Det blinker stålblankt af de sorte Bølger: 
-Hjælmblink og Spydblink — Valdemarers Flåder 
-Det lysner som af Lyn, fjern Torden følger: 
+Det blinker stålblankt af de sorte Bølger:
+Hjælmblink og Spydblink — Valdemarers Flåder
+Det lysner som af Lyn, fjern Torden følger:
 Visby er dansk, og Rud i Åbo råder!
 Det syder og det hvisler; Dybet dølger
 en Ild der snor sig i de hvide Fråder:
@@ -3535,69 +3868,74 @@ Rød Ild af ham der på sin Skæbnes Dag
 sank sprængt og brændt, men ikke strøg sit Flag!
 
 O, hvilke stærke Trylleruner rister
-en Stormnats Måne langs de danske Strande 
-— imens den blinde Søvn her inde lister! 
+en Stormnats Måne langs de danske Strande
+— imens den blinde Søvn her inde lister!
 Men jeg vil vågen signe og forbande:
-Løft, store Storm, til evig Trods min Pande, 
-fyld, dybe Hav, mit Bryst indtil det brister! 
-Hav, Storm, Æt-Fylgjer, hør en Dansker kalde, 
+Løft, store Storm, til evig Trods min Pande,
+fyld, dybe Hav, mit Bryst indtil det brister!
+Hav, Storm, Æt-Fylgjer, hør en Dansker kalde,
 og, for min Bøns Skyld, fyld og før os alle!
 
 Har Nordens Folkeslag, til eet udkårne,
 i Seklers Afsind ikkun vidst at famle
-hin Krone bort, hvis Ring, den sønderskårne, 
-det var vort Sønnehverv i Kraft at samle — 
+hin Krone bort, hvis Ring, den sønderskårne,
+det var vort Sønnehverv i Kraft at samle —
 Sank dybt i Tåge Synets høje Tårne,
 til Grin for Unge og til Gråd for Gamle —
-Blev vi de små: Hvem selvforsmår sig slapt? 
+Blev vi de små: Hvem selvforsmår sig slapt?
 Een Stordåd er der, for de små kun skabt:
 
 At være større end sig selv og Lykken!
 Den Vilje der just voxer med sin Vånde,
 den Kærlighed der gennemstråler Skyggen
 og gir hvert Døgnværk evig Ildhus Ånde,
-den Trods der selv med Sværdsod ud af Ryggen 
+den Trods der selv med Sværdsod ud af Ryggen
 vrister hovmodig Voldsmagt Sejr af Hånde:
-Den Kærlighed, den Vilje og den Trods 
+Den Kærlighed, den Vilje og den Trods
 rummer en Storhed som er til for os.
 
 Hvis vi kun vilde. Ja, hvis kun vi vilde.
-Der gives dem som vil og dog er danske. 
+Der gives dem som vil og dog er danske.
 Af Dybbøl Bjerg udgyder sig en Kilde,
-dens Dråber smelter stålstøbt Sværd og Hanske. 
+dens Dråber smelter stålstøbt Sværd og Hanske.
 Måske den Kildes Kraft var værd at granske.
 Måske vi lærer Sønderjysk for silde.
-Liv kræver Viljens, kræver Blodets Offer — 
+Liv kræver Viljens, kræver Blodets Offer —
 det er ej gjort med Døgnets Affaldsstoffer.
 
-Men du, o Stormvind fra de ældste Dage, 
+Men du, o Stormvind fra de ældste Dage,
 og du, o Hav her udenfor mit Hus:
-Før Danmarks Folk af alt kun har tilbage 
+Før Danmarks Folk af alt kun har tilbage
 sin Uges Arbejd og sin Søndags Rus,
-ja, før det bøjer sig med kraftløs Klage, 
-plyndret og lænket på sin Hjemgårds Grus, 
+ja, før det bøjer sig med kraftløs Klage,
+plyndret og lænket på sin Hjemgårds Grus,
 som Byrdebærer for en bedre Stamme —
 Før opriv, bortskyl, knus det med det samme!
 
-Styrt, Storm, de Stæder, bag hvis Glitter-Buer 
-Mands Mod og Blod er til et Mundsvær blegnet! 
-Slug, Hav, de Marker, blandt hvis Gødning-Tuer 
+Styrt, Storm, de Stæder, bag hvis Glitter-Buer
+Mands Mod og Blod er til et Mundsvær blegnet!
+Slug, Hav, de Marker, blandt hvis Gødning-Tuer
 Ånd blev et Avindsbjæf mod Nabohegnet!
 Lad drukne og lad drive — Malstrøms-tegnet
 i kolde Måneblink de sjunkne Stuer —
-Min først! Kvæl først _mit_ Hjertes Afgrundsråb, 
+Min først! Kvæl først <i>mit</i> Hjertes Afgrundsråb,
 fordi jeg vantro elsked uden Håb!
 
 - - -
 
-Hvad vil den Stjerne dær på Stormens Pande? 
-Hvad synger bag det Brus af oprørt Sø? — 
+Hvad vil den Stjerne dær på Stormens Pande?
+Hvad synger bag det Brus af oprørt Sø? —
 Lytter mon Søstre langs de mørke Strande?
 Våger i Angst fler Brødre under Ø ? —
 Ak, tiest var de værste Varsler sande,
 og tyngre Dom kan tænkes end at dø.
-Af dette Stormhavs Dyb steg Danmarks Land ... 
+Af dette Stormhavs Dyb steg Danmarks Land ...
 Å, skynd dig, Stjerne, sig det, hvis du kan!
+</body>
+</poem>
 
+</content>
+</section>
 
-SLUTSEKTION
+</workbody>
+</kalliopework>
