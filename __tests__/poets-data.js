@@ -1,22 +1,21 @@
-const fs = require('fs');
-const xml2js = require('xml2js');
+const libxml = require('libxmljs');
+const { loadXMLDoc } = require('../tools/libs/helpers.js');
 
-describe('Ingen digtere har samme id', () => {
-  const data = fs.readFileSync('data/poets.xml');
-  const parser = new xml2js.Parser({ explicitArray: false });
+describe('Check poets.xml', () => {
+  let doc = loadXMLDoc('data/poets.xml');
   let counts = new Map();
-  parser.parseString(data, (err, result) => {
-    const persons = { result };
-    result.persons.person.forEach(p => {
-      const { id, country, lang, type } = p.$;
-      let count = counts.get(id) || 0;
-      count++;
-      counts.set(id, count);
-    });
+  const persons = doc.find('//person');
+  persons.forEach(p => {
+    const id = p.attr('id').value();
+    let count = counts.get(id) || 0;
+    count++;
+    counts.set(id, count);
   });
-  counts.forEach((count, id) => {
-    it(`Kun en digter har id "${id}"`, () => {
-      expect(count).toBe(1);
+  it(`Alle digtere har forskellige id`, () => {
+    counts.forEach((count, id) => {
+      expect(`Antal digtere med id '${id}' er ${count}`).toBe(
+        `Antal digtere med id '${id}' er 1`
+      );
     });
   });
 });

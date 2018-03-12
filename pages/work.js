@@ -33,17 +33,16 @@ import type {
   Error,
 } from './helpers/types.js';
 
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    poet: Poet,
-    work: Work,
-    toc: Array<TocItem>,
-    notes: Array<NoteItem>,
-    pictures: Array<PictureItem>,
-    error: ?Error,
-  };
-
+type WorkProps = {
+  lang: Lang,
+  poet: Poet,
+  work: Work,
+  toc: Array<TocItem>,
+  notes: Array<NoteItem>,
+  pictures: Array<PictureItem>,
+  error: ?Error,
+};
+export default class extends React.Component<WorkProps> {
   static async getInitialProps({
     query: { lang, poetId, workId },
   }: {
