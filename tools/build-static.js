@@ -21,6 +21,8 @@ const {
   writeText,
   loadXMLDoc,
   htmlToXml,
+  safeGetText,
+  safeGetAttr,
   replaceDashes,
 } = require('./libs/helpers.js');
 
@@ -58,26 +60,6 @@ const workName = work => {
     yearPart = ` (${year})`;
   }
   return title + yearPart;
-};
-
-const safeGetText = (element, child) => {
-  if (element) {
-    const childElement = element.get(child);
-    if (childElement) {
-      return childElement.text();
-    }
-  }
-  return null;
-};
-
-const safeGetAttr = (element, attrName) => {
-  if (element) {
-    const attrElement = element.attr(attrName);
-    if (attrElement) {
-      return attrElement.value();
-    }
-  }
-  return null;
 };
 
 // Ready after second pass
@@ -230,6 +212,33 @@ const build_poet_timeline_json = (poet, collected) => {
   return items;
 };
 
+const build_museum_link = picture => {
+  const invNr = safeGetAttr(picture, 'invnr');
+  const objId = safeGetAttr(picture, 'objid');
+  const museum = safeGetAttr(picture, 'museum');
+  if (museum != null && (invNr != null || objId != null)) {
+    let url = null;
+    switch (museum) {
+      case 'thorvaldsens':
+        url = `http://thorvaldsensmuseum.dk/samlingerne/vaerk/${invNr}`;
+        break;
+      case 'nivaagaard':
+        url = `http://www.nivaagaard.dk/samling-da/${objId}`;
+        break;
+      case 'smk':
+        url = `http://collection.smk.dk/#/detail/${invNr}`;
+        break;
+      case 'smb':
+        url = `http://www.smb-digital.de/eMuseumPlus?objectId=${objId}`;
+        break;
+      case 'npg':
+        url = `https://www.npg.org.uk/collections/search/portrait/${objId}`;
+        break;
+    }
+    return url == null ? null : ` <a href="${url}">⌘</a>`;
+  }
+};
+
 const build_portrait_json = (poet, collected) => {
   if (!poet.has_portraits) {
     return null;
@@ -247,6 +256,7 @@ const build_portrait_json = (poet, collected) => {
       throw `fdirs/${poet.id}/portraits.xml mangler primary`;
     }
     const primary = primaries[0];
+    const museumLink = build_museum_link(primary) || '';
     data = {
       lang: poet.lang,
       src: primary.attr('src').value(),
@@ -256,7 +266,7 @@ const build_portrait_json = (poet, collected) => {
           .toString()
           .replace(/<picture[^>]*?>/, '')
           .replace('</picture>', '')
-          .trim(),
+          .trim() + museumLink,
         collected
       ),
     };
@@ -512,6 +522,9 @@ const get_pictures = head => {
     const src = picture.attr('src').value();
     const lang = picture.attr('lang') ? picture.attr('lang').value() : 'da';
     const type = picture.attr('type') ? picture.attr('type').value() : null;
+    const invnr = safeGetAttr(picture, 'invnr');
+    const museumLink = build_museum_link(picture) || '';
+
     return {
       src,
       type,
@@ -520,7 +533,7 @@ const get_pictures = head => {
         picture
           .toString()
           .replace(/<picture[^>]*>/, '')
-          .replace('</picture>', ''),
+          .replace('</picture>', '') + museumLink,
         collected
       ),
     };
@@ -1783,16 +1796,8 @@ const build_sitemap_xml = collected => {
     });
     collected.poets.forEach((poet, poetId) => {
       urls.push(`https://kalliope.org/${lang}/bio/${poetId}`);
-      if (poet.has_poems) {
-        urls.push(`https://kalliope.org/${lang}/texts/${poetId}/titles`);
-        urls.push(`https://kalliope.org/${lang}/texts/${poetId}/first`);
-      }
       if (poet.has_bibliography) {
-        urls.push(`https://kalliope.org/${lang}/bibliography/${poetId}/`);
-      }
-      if (poet.has_works) {
-        urls.push(`https://kalliope.org/${lang}/works/${poetId}`);
-        collected.workids.get(poetId).forEach(workId => {});
+        urls.push(`https://kalliope.org/${lang}/bibliography/${poetId}`);
       }
     });
   });
@@ -1807,19 +1812,33 @@ const build_sitemap_xml = collected => {
     }
     const poet_text_urls = [];
     ['da', 'en'].forEach(lang => {
-      collected.workids.get(poetId).forEach(workId => {
+      if (poet.has_works) {
+        poet_text_urls.push(`https://kalliope.org/${lang}/works/${poetId}`);
+      }
+      if (poet.has_poems) {
         poet_text_urls.push(
-          `https://kalliope.org/${lang}/work/${poetId}/${workId}`
+          `https://kalliope.org/${lang}/texts/${poetId}/titles`
         );
-        const filename = `fdirs/${poetId}/${workId}.xml`;
-        let doc = loadXMLDoc(filename);
-        if (doc == null) {
-          console.log("Couldn't load", filename);
+        poet_text_urls.push(
+          `https://kalliope.org/${lang}/texts/${poetId}/first`
+        );
+      }
+      collected.workids.get(poetId).forEach(workId => {
+        const work = collected.works.get(`${poetId}/${workId}`);
+        if (work.has_content) {
+          poet_text_urls.push(
+            `https://kalliope.org/${lang}/work/${poetId}/${workId}`
+          );
+          const filename = `fdirs/${poetId}/${workId}.xml`;
+          let doc = loadXMLDoc(filename);
+          if (doc == null) {
+            console.log("Couldn't load", filename);
+          }
+          doc.find('//poem|//prose').forEach(part => {
+            const textId = part.attr('id').value();
+            poet_text_urls.push(`https://kalliope.org/${lang}/text/${textId}`);
+          });
         }
-        doc.find('//poem').forEach(part => {
-          const textId = part.attr('id').value();
-          poet_text_urls.push(`https://kalliope.org/${lang}/text/${textId}`);
-        });
       });
     });
     write_sitemap(`static/sitemaps/${poetId}.xml`, poet_text_urls);

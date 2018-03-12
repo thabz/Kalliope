@@ -58,6 +58,10 @@ export default class Head extends React.Component<HeadProps> {
         );
       });
     }
+    let canonical = null;
+    if (requestPath != null) {
+      canonical = <link rel="canonical" href={urlPrefix + requestPath} />;
+    }
     return (
       <NextHead>
         <meta charSet="UTF-8" />
@@ -71,6 +75,7 @@ export default class Head extends React.Component<HeadProps> {
         <link rel="icon" href="/static/favicon.ico" />
         <link rel="manifest" href="/static/manifest.json" />
         {hreflangs}
+        {canonical}
         <meta name="theme-color" content="rgb(139, 56, 65)" />
         <meta property="og:site_name" content="www.kalliope.org" />
         {/*<meta property="og:url" content={url || defaultOGURL} />*/}
@@ -84,6 +89,8 @@ export default class Head extends React.Component<HeadProps> {
         <meta name="twitter:image" content={ogImageAbsolute} />
         <meta property="og:image" content={ogImageAbsolute} />
         <meta property="og:image:width" content="600" />
+        <meta property="og:site_name" content="Kalliope" />
+        <meta property="og:type" content="website" />
       </NextHead>
     );
   }
