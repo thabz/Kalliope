@@ -46,6 +46,22 @@ export const poet = async (poetId: ?PoetId): Promise<?Poet> => {
   }
 };
 
+type FetchPoetsResult = Promise<{
+  poets: Array<Poet>,
+  error: ?Error,
+}>;
+export const poets = async (country: Country): FetchPoetsResult => {
+  return fetchJSON(`/static/api/poets-${country}.json`);
+};
+
+type FetchDictItemResult = Promise<{
+  item: DictItem,
+  error: ?Error,
+}>;
+export const dictItem = async (dictItemId: string): FetchDictItemResult => {
+  return fetchJSON(`/static/api/dict/${dictItemId}.json`);
+};
+
 export type FetchWorkResult = {
   poet: Poet,
   work: Work,
@@ -111,6 +127,7 @@ type FetchTextResult = Promise<{
   prev: PrevNextText,
   next: PrevNextText,
   text: Text,
+  section_titles: Array<string>,
   error: ?Error,
 }>;
 export const text = async (textId: string): FetchTextResult => {

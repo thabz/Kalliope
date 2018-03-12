@@ -20,6 +20,7 @@ import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
 import CommonData from './helpers/commondata.js';
+import { request } from 'http';
 import type {
   Lang,
   Poet,
@@ -32,17 +33,16 @@ import type {
   Error,
 } from './helpers/types.js';
 
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    poet: Poet,
-    work: Work,
-    toc: Array<TocItem>,
-    notes: Array<NoteItem>,
-    pictures: Array<PictureItem>,
-    error: ?Error,
-  };
-
+type WorkProps = {
+  lang: Lang,
+  poet: Poet,
+  work: Work,
+  toc: Array<TocItem>,
+  notes: Array<NoteItem>,
+  pictures: Array<PictureItem>,
+  error: ?Error,
+};
+export default class extends React.Component<WorkProps> {
   static async getInitialProps({
     query: { lang, poetId, workId },
   }: {
@@ -66,6 +66,7 @@ export default class extends React.Component {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt værk" />;
     }
+    const requestPath = `/${lang}/work/${poet.id}/${work.id}`;
 
     const renderItems = (items: Array<TocItem>, indent: number = 0) => {
       const rows = items.map((item, i) => {
@@ -155,6 +156,7 @@ export default class extends React.Component {
     return (
       <div>
         <Head
+          requestPath={requestPath}
           headTitle={headTitle}
           ogTitle={ogTitle}
           ogImage={ogImage}
@@ -221,7 +223,7 @@ export default class extends React.Component {
               `}</style>
             </div>
           </SidebarSplit>
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );
