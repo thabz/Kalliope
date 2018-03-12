@@ -14,16 +14,21 @@ import TextContent from '../components/textcontent.js';
 import SplitWhenSmall from '../components/split-when-small.js';
 import Picture from '../components/picture.js';
 import FormattedDate from '../components/formatteddate.js';
-import type { Lang, NewsItem, TimelineItem } from './helpers/types.js';
+import type {
+  Lang,
+  NewsItem,
+  TimelineItem,
+  PictureItem,
+} from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 import _ from '../pages/helpers/translations.js';
 import 'isomorphic-fetch';
 
-class TodaysEvents extends React.Component {
-  props: {
-    lang: Lang,
-    events: Array<TimelineItem>,
-  };
+type TodaysEventsProps = {
+  lang: Lang,
+  events: Array<TimelineItem>,
+};
+class TodaysEvents extends React.Component<TodaysEventsProps> {
   render() {
     const { lang, events } = this.props;
     if (events == null || events.length == 0) {
@@ -57,13 +62,18 @@ class TodaysEvents extends React.Component {
       .filter(item => item.type === 'image' && item.src != null)
       .map((item, i) => {
         const picture: PictureItem = {
-          src: item.src,
-          lang: item.lang,
+          src: item.src || '',
+          lang: item.content_lang,
           content_html: item.content_html,
         };
         const html = (
           <div className="picture-item">
-            <Picture picture={picture} lang={item.lang} srcPrefix="/static" />
+            <Picture
+              picture={picture}
+              lang={lang}
+              contentLang={item.content_lang}
+              srcPrefix="/static"
+            />
           </div>
         );
         return (
@@ -98,12 +108,11 @@ class TodaysEvents extends React.Component {
   }
 }
 
-class News extends React.Component {
-  props: {
-    news: Array<NewsItem>,
-    lang: Lang,
-  };
-
+type NewsProps = {
+  news: Array<NewsItem>,
+  lang: Lang,
+};
+class News extends React.Component<NewsProps> {
   render() {
     const { lang, news } = this.props;
 
@@ -162,17 +171,16 @@ const zeroPad = n => {
   return n < 10 ? `0${n}` : n;
 };
 
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    news: Array<NewsItem>,
-    todaysEvents: Array<TimelineItem>,
-    pagingContext: ?{
-      prev: string, // mm-dd
-      next: string, // mm-dd
-    },
-  };
-
+type IndexProps = {
+  lang: Lang,
+  news: Array<NewsItem>,
+  todaysEvents: Array<TimelineItem>,
+  pagingContext: ?{
+    prev: string, // mm-dd
+    next: string, // mm-dd
+  },
+};
+export default class extends React.Component<IndexProps> {
   static async getInitialProps({
     query: { lang, date },
   }: {
@@ -192,8 +200,10 @@ export default class extends React.Component {
       // For debugging we accept an URL-param date with the format 'MM-DD'.
       // When that exists we enable the paging arrow on the top of the page.
       const parts = dayAndMonth.split('-');
+      const month = parseInt(parts[0]) - 1;
+      const day = parseInt(parts[1]);
       const date = new Date();
-      date.setFullYear(new Date().getFullYear(), parts[0] - 1, parts[1]);
+      date.setFullYear(new Date().getFullYear(), month, day);
       const prev = new Date(date.getTime() - 24 * 60 * 60 * 1000);
       const next = new Date(date.getTime() + 24 * 60 * 60 * 1000);
       pagingContext = {
@@ -220,11 +230,11 @@ export default class extends React.Component {
     let navPaging = null;
     if (pagingContext != null) {
       let prevURL = {
-        url: `/${lang}?date=${pagingContext.prev}`,
+        url: `/${lang}/?date=${pagingContext.prev}`,
         title: 'En dag tilbage',
       };
       let nextURL = {
-        url: `/${lang}?date=${pagingContext.next}`,
+        url: `/${lang}/?date=${pagingContext.next}`,
         title: 'En dag frem',
       };
       navPaging = <NavPaging prev={prevURL} next={nextURL} />;
