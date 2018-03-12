@@ -26,6 +26,13 @@ const fileModifiedTime = filename => {
   }
 };
 
+const loadText = filename => {
+  if (!fileExists(filename)) {
+    return null;
+  }
+  return fs.readFileSync(filename, { encoding: 'UTF-8' });
+};
+
 const loadFile = filename => {
   if (!fileExists(filename)) {
     return null;
@@ -58,6 +65,26 @@ const loadXMLDoc = filename => {
     console.log(`Problem with ${filename}`);
     throw err;
   }
+};
+
+const safeGetText = (element, child) => {
+  if (element) {
+    const childElement = element.get(child);
+    if (childElement) {
+      return childElement.text();
+    }
+  }
+  return null;
+};
+
+const safeGetAttr = (element, attrName) => {
+  if (element) {
+    const attrElement = element.attr(attrName);
+    if (attrElement) {
+      return attrElement.value();
+    }
+  }
+  return null;
 };
 
 const replaceDashes = html => {
@@ -260,10 +287,13 @@ module.exports = {
   fileExists,
   fileModifiedTime,
   loadJSON,
+  loadText,
   loadFile,
   writeJSON,
   writeText,
   loadXMLDoc,
   htmlToXml,
+  safeGetText,
+  safeGetAttr,
   replaceDashes,
 };
