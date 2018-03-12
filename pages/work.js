@@ -33,7 +33,7 @@ import type {
   Error,
 } from './helpers/types.js';
 
-const WorkProps = {
+type WorkProps = {
   lang: Lang,
   poet: Poet,
   work: Work,
