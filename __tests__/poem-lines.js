@@ -9,17 +9,24 @@ function flatten(arr) {
   return [].concat(...arr);
 }
 // Regulære expressions som fanger typiske fejl i vores XML.
+// Disse kan enten være et regexp direkte eller et regexp med en whitelist.
 const regexps = [
   /^,[a-zæøåA-ZÆØÅ]/,
   /^\s[-a-zæøåA-ZÆØÅ]/,
   /^\.[a-zæøåA-ZÆØÅ]/,
   /^-[a-zæøåA-ZÆØÅ]/,
-  /mmm/,
+  { regexp: /mmm/, whitelist: [/<note>.*\]/] },
   ///iii/, // Problematisk da den rammer lowercase romertal. Fiks fejlere og drop reglen.
   /lll/,
-  /aaa/,
+  {
+    regexp: /aaa/,
+    whitelist: [/[Ss]maaalfer/, /Smaaarbeider/, /<note>.*\]/],
+  },
   /sss/,
-  / ,[^,]/,
+  {
+    regexp: / ,[^,]/,
+    whitelist: [/<metrik>/],
+  },
 ];
 // TODO: Hver regel kunne have nogle white-list regexps, som angiver undtagelser. F.eks. reglen /aaa/ kunne undtagelsen /Smaaalfer/
 
@@ -47,13 +54,31 @@ describe('Check workfiles', () => {
     it(`Workfile ${filename} is fine`, () => {
       expect(fileExists(fullpath)).toBeTruthy;
       expect(data.length > 0);
-      regexps.forEach(regexp => {
+      regexps.forEach(rule => {
+        let regexp;
+        let whitelist;
+        if (rule.regexp && rule.whitelist) {
+          regexp = rule.regexp;
+          whitelist = rule.whitelist;
+        } else {
+          regexp = rule;
+          whitelist = [];
+        }
+        if (!regexp) {
+          console.log('Regexp is missing from rule');
+        }
+
         if (regexp.test(data)) {
-          const matches = data.match(regexp);
-          const m = matches[0].replace('\n', '');
-          console.log(matches[0]);
-          //fail(`'${matches[0]}' found in xml`);
-          fail(`'${regexp.toString()}' found in xml`);
+          data.split('\n').forEach(line => {
+            if (
+              regexp.test(line) &&
+              !whitelist.find(w => {
+                return w.test(line);
+              })
+            ) {
+              fail(`'${regexp.toString()}' found in xml [${line}]`);
+            }
+          });
         }
       });
     });
