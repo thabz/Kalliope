@@ -88,7 +88,7 @@ type NavProps = {
   poet?: Poet,
   work?: Work,
   links?: Array<any>,
-  sectionTitles?: Array<string>,
+  sectionTitles: ?Array<string>,
   title?: any,
   rightSide?: any,
 };

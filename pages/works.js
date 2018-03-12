@@ -18,14 +18,13 @@ import CommonData from './helpers/commondata.js';
 import type { Lang, Poet, Work, Error } from './helpers/types.js';
 import _ from '../pages/helpers/translations.js';
 
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    poet: Poet,
-    works: Array<Work>,
-    error: ?Error,
-  };
-
+type WorksProps = {
+  lang: Lang,
+  poet: Poet,
+  works: Array<Work>,
+  error: ?Error,
+};
+export default class extends React.Component<WorksProps> {
   static async getInitialProps({
     query: { lang, poetId },
   }: {
