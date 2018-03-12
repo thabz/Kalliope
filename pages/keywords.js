@@ -34,17 +34,16 @@ const groupsByLetter = (keywords: Array<Keyword>) => {
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
-export default class extends React.Component {
+type KeywordsProps = {
+  lang: Lang,
+  keywords: Array<Keyword>,
+};
+export default class extends React.Component<KeywordsProps> {
   static async getInitialProps({ query: { lang } }: { query: { lang: Lang } }) {
     const res = await fetch(createURL('/static/api/keywords.json'));
     const keywords: Array<Keyword> = await res.json();
     return { lang, keywords };
   }
-
-  props: {
-    lang: Lang,
-    keywords: Array<Keyword>,
-  };
 
   render() {
     const { lang, keywords } = this.props;
