@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "NODE_ENV=production LOCALE=da_DK.UTF_8 node server.js",
     "test": "jest --watch",
-    "test-ci": "jest",
+    "test-ci": "NODE_ICU_DATA=./node_modules/full-icu jest",
     "flow": "flow",
     "build-static": "node tools/build-static.js",
     "build-static-force-reload": "node tools/build-static.js --force-reload"
@@ -22,6 +22,7 @@
     "xmldom": "^0.1.27"
   },
   "devDependencies": {
+    "full-icu": "^1.2.1",
     "async": "^2.5.0",
     "babel-eslint": "^7.1.1",
     "babel-plugin-transform-flow-strip-types": "^6.21.0",

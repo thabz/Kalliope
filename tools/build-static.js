@@ -21,6 +21,8 @@ const {
   writeText,
   loadXMLDoc,
   htmlToXml,
+  safeGetText,
+  safeGetAttr,
   replaceDashes,
 } = require('./libs/helpers.js');
 
@@ -58,26 +60,6 @@ const workName = work => {
     yearPart = ` (${year})`;
   }
   return title + yearPart;
-};
-
-const safeGetText = (element, child) => {
-  if (element) {
-    const childElement = element.get(child);
-    if (childElement) {
-      return childElement.text();
-    }
-  }
-  return null;
-};
-
-const safeGetAttr = (element, attrName) => {
-  if (element) {
-    const attrElement = element.attr(attrName);
-    if (attrElement) {
-      return attrElement.value();
-    }
-  }
-  return null;
 };
 
 // Ready after second pass
