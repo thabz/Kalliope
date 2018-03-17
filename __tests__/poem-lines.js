@@ -20,7 +20,7 @@ const regexps = [
   /lll/,
   {
     regexp: /aaa/,
-    whitelist: [/[Ss]maaalfer/, /Smaaarbeider/, /<note>.*\]/],
+    whitelist: [/[Ss]maaalfer/, /Smaaarbeider/, /<note>.*\]/,/upaaagtet/],
   },
   /sss/,
   {
