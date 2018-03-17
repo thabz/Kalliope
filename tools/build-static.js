@@ -34,6 +34,7 @@ let collected = {
   poets: new Map(),
   dict: new Map(),
   timeline: new Array(),
+  person_or_keyword_reference: new Map(),
 };
 
 // Use poetname.js:poetNameString instead when node.js uses modules
@@ -965,6 +966,65 @@ const build_textrefs = collected => {
     writeCachedJSON('collected.textrefs', Array.from(textrefs));
   }
   return textrefs;
+};
+
+const build_person_or_keyword_refs = collected => {
+  let person_or_keyword_refs = new Map(
+    loadCachedJSON('collected.person_or_keyword_refs') || []
+  );
+  const force_reload = person_or_keyword_refs.size == 0;
+  let found_changes = false;
+  const regexps = [
+    /xref poem="([^"]*)"/g,
+    /a poem="([^"]*)"/g,
+    /xref bibel="([^",]*)/g,
+  ];
+  // toKey is a poet id or a keyword id
+  const register = (toKey, fromPoemId, type) => {
+    const array = person_or_keyword_refs.get(toKey) || [];
+    if (array.indexOf(fromPoemId) === -1) {
+      array.push(fromPoemId);
+    }
+    person_or_keyword_refs.set(toKey, array);
+  };
+  collected.poets.forEach((poet, poetId) => {
+    collected.workids.get(poetId).forEach(workId => {
+      const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!force_reload && !isFileModified(filename)) {
+        return;
+      } else {
+        found_changes = true;
+      }
+      let doc = loadXMLDoc(filename);
+      const texts = doc.find('//poem|//prose');
+      texts.forEach(text => {
+        const fromId = text.attr('id').value();
+        const notes = text.find('head/notes/note|body//footnote|body//note');
+        notes.forEach(note => {
+          regexps.forEach(regexp => {
+            while ((match = regexp.exec(note.toString())) != null) {
+              const toPoemId = match[1];
+              const toPoetId = collected.texts.get(toPoemId).poetId;
+              register(toPoetId, fromId, 'mention');
+            }
+          });
+        });
+        const head = text.get('head');
+        const keywords = safeGetText(head, 'keywords') || '';
+        if (keywords.trim().length > 0) {
+          keywords.split(',').forEach(keyword => {
+            register(keyword, fromId, 'mention');
+          });
+        }
+      });
+    });
+  });
+  if (found_changes) {
+    writeCachedJSON(
+      'collected.person_or_keyword_refs',
+      Array.from(person_or_keyword_refs)
+    );
+  }
 };
 
 const build_works_toc = collected => {
@@ -1995,6 +2055,7 @@ collected.timeline = build_global_timeline(collected);
 b('build_bio_json', build_bio_json, collected);
 b('build_news', build_news, collected);
 b('build_about_pages', build_about_pages, collected);
+b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 b('build_dict_second_pass', build_dict_second_pass, collected);
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
