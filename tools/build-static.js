@@ -975,17 +975,37 @@ const build_person_or_keyword_refs = collected => {
   const force_reload = person_or_keyword_refs.size == 0;
   let found_changes = false;
   const regexps = [
-    /xref poem="([^"]*)"/g,
-    /a poem="([^"]*)"/g,
-    /xref bibel="([^",]*)/g,
+    /xref ()poem="([^"]*)"/g,
+    /a ()poem="([^"]*)"/g,
+    /xref type="([^"]*)" poem="([^"]*)"/g,
+    /a type="([^"]*)" poem="([^"]*)"/g,
+    /xref ()bibel="([^",]*)/g,
   ];
   // toKey is a poet id or a keyword id
-  const register = (toKey, fromPoemId, type) => {
-    const array = person_or_keyword_refs.get(toKey) || [];
-    if (array.indexOf(fromPoemId) === -1) {
-      array.push(fromPoemId);
+  const register = (filename, toKey, fromPoemId, type) => {
+    const collection = person_or_keyword_refs.get(toKey) || {
+      mention: [],
+      translation: [],
+    };
+    if (type === 'mention') {
+      if (
+        collection.mention.indexOf(fromPoemId) === -1 &&
+        collection.translation.indexOf(fromPoemId) === -1
+      ) {
+        collection.mention.push(fromPoemId);
+      }
+    } else if (type === 'translation') {
+      const mentionIndex = collection.mention.indexOf(fromPoemId);
+      if (mentionIndex > -1) {
+        collection.mention.splice(mentionIndex, 1);
+      }
+      if (collection.translation.indexOf(fromPoemId) === -1) {
+        collection.translation.push(fromPoemId);
+      }
+    } else {
+      throw new Error(`${filename} has xref with unknown type ${type}`);
     }
-    person_or_keyword_refs.set(toKey, array);
+    person_or_keyword_refs.set(toKey, collection);
   };
   collected.poets.forEach((poet, poetId) => {
     collected.workids.get(poetId).forEach(workId => {
@@ -1003,9 +1023,17 @@ const build_person_or_keyword_refs = collected => {
         notes.forEach(note => {
           regexps.forEach(regexp => {
             while ((match = regexp.exec(note.toString())) != null) {
-              const toPoemId = match[1];
-              const toPoetId = collected.texts.get(toPoemId).poetId;
-              register(toPoetId, fromId, 'mention');
+              const refType = match[1] || 'mention';
+              const toPoemId = match[2].replace(/,.*$/, '');
+              const toText = collected.texts.get(toPoemId);
+              if (toText != null) {
+                const toPoetId = toText.poetId;
+                register(filename, toPoetId, fromId, refType);
+              } else {
+                throw new Error(
+                  `${filename} points to unknown text ${toPoemId}`
+                );
+              }
             }
           });
         });
@@ -1013,7 +1041,7 @@ const build_person_or_keyword_refs = collected => {
         const keywords = safeGetText(head, 'keywords') || '';
         if (keywords.trim().length > 0) {
           keywords.split(',').forEach(keyword => {
-            register(keyword, fromId, 'mention');
+            register(filename, keyword, fromId, 'mention');
           });
         }
       });
