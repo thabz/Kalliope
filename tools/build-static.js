@@ -1026,7 +1026,10 @@ const build_person_or_keyword_refs = collected => {
               const toText = collected.texts.get(toPoemId);
               if (toText != null) {
                 const toPoetId = toText.poetId;
-                register(filename, toPoetId, fromId, refType);
+                if (toPoetId !== poetId) {
+                  // Skip self-refs
+                  register(filename, toPoetId, fromId, refType);
+                }
               } else {
                 throw new Error(
                   `${filename} points to unknown text ${toPoemId}`
