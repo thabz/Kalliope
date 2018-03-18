@@ -442,7 +442,14 @@ type PoetTabsProps = {
   poet: Poet,
   lang: Lang,
   query?: ?string,
-  selected: 'works' | 'titles' | 'first' | 'bio' | 'bibliography' | 'search',
+  selected:
+    | 'works'
+    | 'titles'
+    | 'first'
+    | 'bio'
+    | 'bibliography'
+    | 'search'
+    | 'mentions',
 };
 export class PoetTabs extends React.Component<PoetTabsProps> {
   render() {
@@ -470,6 +477,12 @@ export class PoetTabs extends React.Component<PoetTabsProps> {
         title: _('Førstelinjer', lang),
         hide: !poet.has_poems,
         url: Links.textsURL(lang, poet.id, 'first'),
+      },
+      {
+        id: 'mentions',
+        title: _('Henvisninger', lang),
+        hide: !poet.has_mentions,
+        url: Links.mentionsURL(lang, poet.id),
       },
       {
         id: 'bibliography',

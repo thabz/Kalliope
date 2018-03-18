@@ -109,6 +109,16 @@ export const bibliography = async (poetId: PoetId): FetchBibliographuResult => {
   return fetchJSON(`/static/api/${poetId}/bibliography.json`);
 };
 
+type FetchMentionsResult = Promise<{
+  poet: Poet,
+  mentions: Array<TextContentType>,
+  translations: Array<TextContentType>,
+  error: ?Error,
+}>;
+export const mentions = async (poetId: PoetId): FetchMentionsResult => {
+  return fetchJSON(`/static/api/${poetId}/mentions.json`);
+};
+
 type FetchKeywordResult = Promise<Keyword>;
 export const keyword = async (keywordId: string): FetchKeywordResult => {
   return fetchJSON(`/static/api/keywords/${keywordId}.json`);
