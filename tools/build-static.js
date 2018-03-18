@@ -843,9 +843,9 @@ const works_first_pass = collected => {
   let works = new Map(loadCachedJSON('collected.works') || []);
   let found_changes = false;
   const force_reload = texts.size === 0 || works.size === 0;
-  collected.poets.forEach(poet => {
-    collected.workids.get(poet.id).forEach(workId => {
-      const workFilename = `fdirs/${poet.id}/${workId}.xml`;
+  collected.workids.forEach((workIds, poetId) => {
+    workIds.forEach(workId => {
+      const workFilename = `fdirs/${poetId}/${workId}.xml`;
       if (!force_reload && !isFileModified(workFilename)) {
         return;
       } else {
@@ -862,14 +862,12 @@ const works_first_pass = collected => {
       const title = head.get('title').text();
       const year = head.get('year').text();
       // Sanity check
-      if (work.attr('author').value() !== poet.id) {
+      if (work.attr('author').value() !== poetId) {
         throw new Error(
-          `fdirs/${
-            poet.id
-          }/${workId}.xml has wrong author-attribute in <kalliopework>`
+          `fdirs/${poetId}/${workId}.xml has wrong author-attribute in <kalliopework>`
         );
       }
-      works.set(`${poet.id}/${workId}`, {
+      works.set(`${poetId}/${workId}`, {
         title: replaceDashes(title),
         year: year,
         has_content: work.find('//poem|//prose').length > 0,
@@ -885,7 +883,7 @@ const works_first_pass = collected => {
         texts.set(textId, {
           title: replaceDashes(linkTitle),
           type: part.name(),
-          poetId: poet.id,
+          poetId: poetId,
           workId: workId,
         });
       });
@@ -1007,8 +1005,8 @@ const build_person_or_keyword_refs = collected => {
     }
     person_or_keyword_refs.set(toKey, collection);
   };
-  collected.poets.forEach((poet, poetId) => {
-    collected.workids.get(poetId).forEach(workId => {
+  collected.workids.forEach((workIds, poetId) => {
+    workIds.forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!force_reload && !isFileModified(filename)) {
         return;
@@ -2068,11 +2066,12 @@ const update_elasticsearch = collected => {
 
 safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);
+// Build collected.works and collected.texts
+Object.assign(collected, b('works_first_pass', works_first_pass, collected));
+b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 collected.poets = b('build_poets_json', build_poets_json);
 b('build_bibliography_json', build_bibliography_json, collected);
 collected.textrefs = b('build_textrefs', build_textrefs, collected);
-// Build collected.works and collected.texts
-Object.assign(collected, b('works_first_pass', works_first_pass, collected));
 build_dict_first_pass(collected);
 collected.keywords = b('build_keywords', build_keywords);
 b('build_poet_lines_json', build_poet_lines_json, collected);
@@ -2083,7 +2082,6 @@ collected.timeline = build_global_timeline(collected);
 b('build_bio_json', build_bio_json, collected);
 b('build_news', build_news, collected);
 b('build_about_pages', build_about_pages, collected);
-b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 b('build_dict_second_pass', build_dict_second_pass, collected);
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
