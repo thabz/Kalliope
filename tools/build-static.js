@@ -389,6 +389,11 @@ const build_poets_json = () => {
       throw `${id} har portræt men ikke square-portrait`;
     }
 
+    const mentions = collected.person_or_keyword_refs.get(id);
+    const has_mentions =
+      mentions != null &&
+      (mentions.mention.length > 0 || mentions.translation.length > 0);
+
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');
     const fullname = safeGetText(nameE, 'fullname');
@@ -440,6 +445,7 @@ const build_poets_json = () => {
       period,
       has_portraits,
       has_square_portrait,
+      has_mentions,
       has_works: has.has_works,
       has_poems: has.has_poems,
       has_prose: has.has_prose,
@@ -1054,6 +1060,7 @@ const build_person_or_keyword_refs = collected => {
       Array.from(person_or_keyword_refs)
     );
   }
+  collected.person_or_keyword_refs = person_or_keyword_refs;
 };
 
 const build_works_toc = collected => {
@@ -1529,6 +1536,33 @@ const build_dict_second_pass = collected => {
       createItem(id, title, phrase, variants, body, collected);
     });
   writeJSON(`static/api/dict.json`, items);
+};
+
+const build_mentions_json = collected => {
+  const build_html = poemId => {
+    const meta = collected.texts.get(poemId);
+    const poet = poetName(collected.poets.get(meta.poetId));
+    const work = workName(collected.works.get(meta.poetId + '/' + meta.workId));
+    return [
+      [
+        `${poet}: <a poem="${poemId}">»${meta.title}«</a> – ${work}`,
+        { html: true },
+      ],
+    ];
+  };
+  collected.poets.forEach((poet, poetId) => {
+    if (!poet.has_mentions) {
+      return;
+    }
+    safeMkdir(`static/api/${poet.id}`);
+    let data = { poet, mentions: [], translations: [] };
+    const refs = collected.person_or_keyword_refs.get(poetId);
+    data.mentions = refs.mention.map(build_html);
+    data.translations = refs.translation.map(build_html);
+    const outFilename = `static/api/${poet.id}/mentions.json`;
+    console.log(outFilename);
+    writeJSON(outFilename, data);
+  });
 };
 
 const build_bibliography_json = collected => {
@@ -2073,6 +2107,7 @@ collected.workids = b('build_poet_workids', build_poet_workids);
 Object.assign(collected, b('works_first_pass', works_first_pass, collected));
 b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 collected.poets = b('build_poets_json', build_poets_json);
+b('build_mentions_json', build_mentions_json, collected);
 b('build_bibliography_json', build_bibliography_json, collected);
 collected.textrefs = b('build_textrefs', build_textrefs, collected);
 build_dict_first_pass(collected);
