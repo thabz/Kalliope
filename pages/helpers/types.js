@@ -47,6 +47,7 @@ export type Poet = {
   },
   has_bibliography: boolean,
   has_biography: boolean,
+  has_mentions: boolean,
   has_works: boolean,
   has_texts: boolean,
   has_poems: boolean,
