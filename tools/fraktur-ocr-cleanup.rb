@@ -494,6 +494,7 @@
 'Stoi(\W)/Støi\1',
 'nnt/unt',
 'tnr/tur',
+'iff/isk',
 ];
 
 @regexps = @rules.map { |rule| 
