@@ -17,23 +17,27 @@ import * as Client from './helpers/client.js';
 import type { Lang, Poet, Work, TextContentType } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 
-type BibliographyProps = {
+type MentionsProps = {
   lang: Lang,
   poet: Poet,
+  mentions: Array<TextContentType>,
+  translations: Array<TextContentType>,
   primary: Array<TextContentType>,
   secondary: Array<TextContentType>,
   error: ?Error,
 };
-export default class extends React.Component<BibliographyProps> {
+export default class extends React.Component<MentionsProps> {
   static async getInitialProps({
     query: { lang, poetId },
   }: {
     query: { lang: Lang, poetId: string },
   }) {
-    const json = await Client.bibliography(poetId);
+    const json = await Client.mentions(poetId);
     return {
       lang,
       poet: json.poet,
+      mentions: json.mentions || [],
+      translations: json.translations || [],
       primary: json.primary || [],
       secondary: json.secondary || [],
       error: json.error,
@@ -41,21 +45,31 @@ export default class extends React.Component<BibliographyProps> {
   }
 
   render() {
-    const { lang, poet, primary, secondary, error } = this.props;
+    const {
+      lang,
+      poet,
+      mentions,
+      translations,
+      primary,
+      secondary,
+      error,
+    } = this.props;
 
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
     }
-    const requestPath = `/${lang}/bibliography/${poet.id}`;
-
-    const sections = [primary, secondary]
-      .map((list, i) => {
+    const requestPath = `/${lang}/mentions/${poet.id}`;
+    const titles = {
+      mentions: _('Henvisninger', lang),
+      translations: _('Oversættelser', lang),
+      primary: _('Primær litteratur', lang),
+      secondary: _('Sekundær litteratur', lang),
+    };
+    const sections = ['mentions', 'translations', 'primary', 'secondary']
+      .map((section, i) => {
         return {
-          title:
-            i === 0
-              ? _('Primær litteratur', lang)
-              : _('Sekundær litteratur', lang),
-          items: list.map((line, j) => {
+          title: titles[section],
+          items: this.props[section].map((line, j) => {
             return (
               <div
                 key={j}
@@ -98,9 +112,9 @@ export default class extends React.Component<BibliographyProps> {
       <div>
         <Head headTitle={headTitle} requestPath={requestPath} />
         <Main>
-          <Nav lang={lang} poet={poet} title={_('Bibliografi', lang)} />
-          <Heading title={title} subtitle={_('Bibliografi', lang)} />
-          <PoetTabs lang={lang} poet={poet} selected="bibliography" />
+          <Nav lang={lang} poet={poet} title={_('Henvisninger', lang)} />
+          <Heading title={title} subtitle={_('Henvisninger', lang)} />
+          <PoetTabs lang={lang} poet={poet} selected="mentions" />
           <TwoColumns>{sections}</TwoColumns>
           <LangSelect lang={lang} path={requestPath} />
         </Main>
