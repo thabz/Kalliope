@@ -979,12 +979,15 @@ const build_person_or_keyword_refs = collected => {
   const force_reload = person_or_keyword_refs.size == 0;
   let found_changes = false;
   const regexps = [
-    /xref ()poem="([^"]*)"/g,
-    /a ()poem="([^"]*)"/g,
-    /xref type="([^"]*)" poem="([^"]*)"/g,
-    /a type="([^"]*)" poem="([^"]*)"/g,
-    /xref ()bibel="([^",]*)/g,
+    { regexp: /xref ()poem="([^"]*)"/g, type: 'text' },
+    { regexp: /a ()poem="([^"]*)"/g, type: 'text' },
+    { regexp: /xref type="([^"]*)" poem="([^"]*)"/g, type: 'text' },
+    { regexp: /a type="([^"]*)" poem="([^"]*)"/g, type: 'text' },
+    { regexp: /xref ()bibel="([^",]*)/g, type: 'text' },
+    { regexp: /a ()person="([^"]*)"/g, type: 'person' },
+    { regexp: /a ()poet="([^"]*)"/g, type: 'person' },
   ];
+  // TODO: Led også efter <a person="">xxx</a> og <a poet="">xxxx</a>
   // toKey is a poet id or a keyword id
   const register = (filename, toKey, fromPoemId, type) => {
     const collection = person_or_keyword_refs.get(toKey) || {
@@ -1025,21 +1028,26 @@ const build_person_or_keyword_refs = collected => {
         const fromId = text.attr('id').value();
         const notes = text.find('head/notes/note|body//footnote|body//note');
         notes.forEach(note => {
-          regexps.forEach(regexp => {
-            while ((match = regexp.exec(note.toString())) != null) {
+          regexps.forEach(rule => {
+            while ((match = rule.regexp.exec(note.toString())) != null) {
               const refType = match[1] || 'mention';
-              const toPoemId = match[2].replace(/,.*$/, '');
-              const toText = collected.texts.get(toPoemId);
-              if (toText != null) {
-                const toPoetId = toText.poetId;
-                if (toPoetId !== poetId) {
-                  // Skip self-refs
-                  register(filename, toPoetId, fromId, refType);
+              if (rule.type === 'text') {
+                const toPoemId = match[2].replace(/,.*$/, '');
+                const toText = collected.texts.get(toPoemId);
+                if (toText != null) {
+                  const toPoetId = toText.poetId;
+                  if (toPoetId !== poetId) {
+                    // Skip self-refs
+                    register(filename, toPoetId, fromId, refType);
+                  }
+                } else {
+                  throw new Error(
+                    `${filename} points to unknown text ${toPoemId}`
+                  );
                 }
-              } else {
-                throw new Error(
-                  `${filename} points to unknown text ${toPoemId}`
-                );
+              } else if (rule.type === 'person') {
+                const toPoetId = match[2];
+                register(filename, toPoetId, fromId, 'mention');
               }
             }
           });
