@@ -24,6 +24,7 @@
 'fke/ske',
 'oenk/ænk',
 'Sæne/Scene',
+'Oæan/Ocean',
 'Bolg/Bølg',
 'Hoi/Høi',
 'Hsi/Høi',
