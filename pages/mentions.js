@@ -22,6 +22,8 @@ type MentionsProps = {
   poet: Poet,
   mentions: Array<TextContentType>,
   translations: Array<TextContentType>,
+  primary: Array<TextContentType>,
+  secondary: Array<TextContentType>,
   error: ?Error,
 };
 export default class extends React.Component<MentionsProps> {
@@ -36,23 +38,38 @@ export default class extends React.Component<MentionsProps> {
       poet: json.poet,
       mentions: json.mentions || [],
       translations: json.translations || [],
+      primary: json.primary || [],
+      secondary: json.secondary || [],
       error: json.error,
     };
   }
 
   render() {
-    const { lang, poet, mentions, translations, error } = this.props;
+    const {
+      lang,
+      poet,
+      mentions,
+      translations,
+      primary,
+      secondary,
+      error,
+    } = this.props;
 
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
     }
     const requestPath = `/${lang}/mentions/${poet.id}`;
-
-    const sections = [mentions, translations]
-      .map((list, i) => {
+    const titles = {
+      mentions: _('Henvisninger', lang),
+      translations: _('Oversættelser', lang),
+      primary: _('Primær litteratur', lang),
+      secondary: _('Sekundær litteratur', lang),
+    };
+    const sections = ['mentions', 'translations', 'primary', 'secondary']
+      .map((section, i) => {
         return {
-          title: i === 0 ? _('Henvisninger', lang) : _('Oversættelser', lang),
-          items: list.map((line, j) => {
+          title: titles[section],
+          items: this.props[section].map((line, j) => {
             return (
               <div
                 key={j}

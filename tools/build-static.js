@@ -392,7 +392,10 @@ const build_poets_json = () => {
     const mentions = collected.person_or_keyword_refs.get(id);
     const has_mentions =
       mentions != null &&
-      (mentions.mention.length > 0 || mentions.translation.length > 0);
+      (mentions.mention.length > 0 ||
+        mentions.translation.length > 0 ||
+        mentions.primary.length > 0 ||
+        mentions.secondary.length > 0);
 
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');
@@ -450,9 +453,6 @@ const build_poets_json = () => {
       has_poems: has.has_poems,
       has_prose: has.has_prose,
       has_texts: has.has_texts,
-      has_bibliography:
-        fs.existsSync(`fdirs/${id}/bibliography-primary.xml`) ||
-        fs.existsSync(`fdirs/${id}/bibliography-secondary.xml`),
       has_biography:
         fs.existsSync(`fdirs/${id}/bio.xml`) ||
         fs.existsSync(`fdirs/${id}/events.xml`) ||
@@ -1563,33 +1563,20 @@ const build_mentions_json = collected => {
       return;
     }
     safeMkdir(`static/api/${poet.id}`);
-    let data = { poet, mentions: [], translations: [] };
+    let data = {
+      poet,
+      mentions: [],
+      translations: [],
+      primary: [],
+      secondary: [],
+    };
     const refs = collected.person_or_keyword_refs.get(poetId);
     data.mentions = refs.mention.map(build_html);
     data.translations = refs.translation.map(build_html);
-    const outFilename = `static/api/${poet.id}/mentions.json`;
-    console.log(outFilename);
-    writeJSON(outFilename, data);
-  });
-};
 
-const build_bibliography_json = collected => {
-  collected.poets.forEach((poet, poetId) => {
-    if (
-      !isFileModified(
-        `data/poets.xml:${poet.id}`,
-        `fdirs/${poet.id}/bibliography-primary.xml`,
-        `fdirs/${poet.id}/bibliography-secondary.xml`
-      )
-    ) {
-      return;
-    }
-
-    safeMkdir(`static/api/${poet.id}`);
-    let data = { poet, primary: [], secondary: [] };
     ['primary', 'secondary'].forEach(filename => {
-      const bioXmlPath = `fdirs/${poet.id}/bibliography-${filename}.xml`;
-      const doc = loadXMLDoc(bioXmlPath);
+      const biblioXmlPath = `fdirs/${poet.id}/bibliography-${filename}.xml`;
+      const doc = loadXMLDoc(biblioXmlPath);
       if (doc != null) {
         data[filename] = doc.find('//items/item').map(line => {
           return htmlToXml(
@@ -1600,9 +1587,12 @@ const build_bibliography_json = collected => {
             collected
           );
         });
+      } else {
+        data[filename] = [];
       }
     });
-    const outFilename = `static/api/${poet.id}/bibliography.json`;
+
+    const outFilename = `static/api/${poet.id}/mentions.json`;
     console.log(outFilename);
     writeJSON(outFilename, data);
   });
@@ -1927,8 +1917,8 @@ const build_sitemap_xml = collected => {
     });
     collected.poets.forEach((poet, poetId) => {
       urls.push(`https://kalliope.org/${lang}/bio/${poetId}`);
-      if (poet.has_bibliography) {
-        urls.push(`https://kalliope.org/${lang}/bibliography/${poetId}`);
+      if (poet.has_mentions) {
+        urls.push(`https://kalliope.org/${lang}/mentions/${poetId}`);
       }
     });
   });
@@ -2116,7 +2106,6 @@ Object.assign(collected, b('works_first_pass', works_first_pass, collected));
 b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 collected.poets = b('build_poets_json', build_poets_json);
 b('build_mentions_json', build_mentions_json, collected);
-b('build_bibliography_json', build_bibliography_json, collected);
 collected.textrefs = b('build_textrefs', build_textrefs, collected);
 build_dict_first_pass(collected);
 collected.keywords = b('build_keywords', build_keywords);
