@@ -51,7 +51,7 @@ describe('Check workfiles', () => {
   filenames.forEach(filename => {
     const fullpath = `fdirs/${filename}`;
     const data = loadText(fullpath);
-    it(`Workfile ${filename} is fine`, () => {
+    it(`Workfile fdirs/${filename} is fine`, () => {
       expect(fileExists(fullpath)).toBeTruthy;
       expect(data.length > 0);
       regexps.forEach(rule => {
