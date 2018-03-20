@@ -484,6 +484,7 @@
 'Dst/Øst',
 'Offiæ/Office',
 'Froken/Frøken',
+'Nand/Aand',
 'moend(\W)/mænd\1',
 'ramg/ræng',
 'ramd/rænd',
