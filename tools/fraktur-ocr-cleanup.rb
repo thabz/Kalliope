@@ -14,6 +14,8 @@
 'Skjod/Skjød',
 'Skjon/Skjøn',
 'skjon/skjøn',
+'ffjon/skjøn',
+'ssjon/skjøn',
 'sijon/skjøn',
 'stjon/skjøn',
 'kjobe/kjøbe',
