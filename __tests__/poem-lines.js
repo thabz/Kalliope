@@ -12,9 +12,10 @@ function flatten(arr) {
 // Disse kan enten være et regexp direkte eller et regexp med en whitelist.
 const regexps = [
   /^,[a-zæøåA-ZÆØÅ]/m,  // Enkelt komma først på linjen
-  /^\s[-a-zæøåA-ZÆØÅ]/, // Enkelt mellemrum først på linjen
+  /^\s[-a-zæøåA-ZÆØÅ]/m, // Enkelt mellemrum først på linjen
   /^\.[a-zæøåA-ZÆØÅ]/m, // Enkelt punktum ...
   /^-[a-zæøåA-ZÆØÅ]/m,   // Enkelt bindestreg ...
+  /<firstline><\/firstline>/,   // Tom <firstline> ...
   { regexp: /mmm/, whitelist: [/<note>.*\]/] },
   ///iii/, // Problematisk da den rammer lowercase romertal. Fiks fejlere og drop reglen.
   /lll/,
