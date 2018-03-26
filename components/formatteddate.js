@@ -30,12 +30,11 @@ export const parseDate = (date: ?string) => {
   return { prefix, year, month, day };
 };
 
-export default class FormattedDate extends React.Component {
-  props: {
-    lang: Lang,
-    date: ?string,
-  };
-
+type FormattedDateProps = {
+  lang: Lang,
+  date: ?string,
+};
+export default class FormattedDate extends React.Component<FormattedDateProps> {
   render() {
     const { lang, date } = this.props;
 
@@ -73,7 +72,7 @@ export default class FormattedDate extends React.Component {
     } else if (year != null) {
       result = <span>{year}</span>;
     } else {
-      console.log(`Ukendt dato format '${date}'`);
+      //console.log(`Ukendt dato format '${date}'`);
     }
     return (
       <span className={className}>

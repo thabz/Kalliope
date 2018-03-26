@@ -5,39 +5,76 @@
    <title>Sange ved Havet - Venezia</title>
    <year>1877</year>
    <notes>
-      <note>Gengivet efter Holger Drachmann: <i>Poetiske Skrifter</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1927, bd. I, pp. 52-98.</note>
+        <note>Gengivet efter førsteudgaven af Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877.</note>
+        <note type="credits">Tilføjet af Henrik Nielsen.</note>
    </notes>
-   <quality>korrektur1,kilde</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+   <pictures>
+       <picture type="frontpage" src="1877-p1.jpg">Forsiden til <i>Sange ved Havet</i> (1877).</picture>
+       <picture type="titlepage" src="1877-p2.jpg">Titelbladet til <i>Sange ved Havet</i> (1877) siger ,,Sange ved Havet. - Venezia. / Nye Digte / af / Holger Drachmann. // København / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn). / Thieles Bogtrykkeri. / 1877.''.</picture>
+   </pictures>
+   <quality>korrektur1,korrektur2,kilde</quality>
 </workhead>
 <workbody>
 
-<section level="1">
+
+<poem id="drachmann2018021601">
 <head>
-   <toctitle>Sange ved Havet</toctitle>
+    <title>Til min Fader!</title>
+    <subtitle>Professor A. G. Drachmann</subtitle>
+    <firstline>Skilt i Ungdommens brusende Dage</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, p. iii.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<nonum><small><right>Dr. M. R. pp.</right></small></nonum>
+
+Skilt i Ungdommens brusende Dage,
+Mødt i Manddommens støtte Aar,
+Gi'er vi Haandslag, og ser os tilbage.
+Vi har vunden, begge, med Tiden.
+Og drysser nu Sneen i Dine Haar,
+Og trækker Du snart Dig tilbage fra Striden,
+Og flytter jeg Slægtens Mærke frem :
+Saa siger jeg Tak fra da jeg var liden,
+Tak fra mig selv og fra alle dem,
+For hvem Du var Lægen og Fader og Ven.
+<w>Din</w> Kunst er Livets, og min er den,
+At kalde det Døde tillive igen.
+
+<nonum><small><i>Paris i Efteraaret 1877.</i></small></nonum>
+<nonum><right>H. D.</right></nonum>
+</body>
+</poem>
+
+<section>
+<head>
+    <title>Sange ved Havet</title>
 </head>
 <content>
 
 <poem id="drachmann1999052201">
 <head>
-   <title>Før Solopgang</title>
-   <toctitle>Før Solopgang</toctitle>
-   <indextitle>Før Solopgang</indextitle>
-   <firstline>De drive, de store, de blaagraa Skyer</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Før Solopgang</title>
+    <firstline>De drive, de store, de blaagraa Skyer</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 3-6.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 De drive, de store, de blaagraa Skyer
 Paa dugvaade Vinger ud over Havet,
-Det fjerne ligger i Taager begravet,
+Det Fjerne ligger i Taager begravet,
 Og Stranden er kold, saa trøstesløs kold,
 Og Taagen staar som en lodret Vold,
 Og vil ikke vige, og vil ikke væk,
-Trods Søernes Slag og Vindenes Træk.
+Trods Søernes Slag, og Vindenes Træk.
 
 Saa ligger i Daggry mit stakkels Land,
 Kan ikke faa Bugt med de klamme Taager;
-Det lider, det længes, det strider, det vaager,
+Det lider, det længes, det strider, det vaager.
 Det klipper med Øjnenes anstrengte Rand;
 Det vilde derud, det vilde derover,
 Men Lejet var haardt, og Musklerne sover,
@@ -45,26 +82,26 @@ Det rejser sig op, det tumler tilbage,
 Og blander med Bølgernes Brusen sin Klage.
 
 Det fik amputeret sin ene Fod;
-Det sved i dets inderste Hjerterod.
-Det humped omkring ved Stok og ved Krykke
+Det sved i dets inderste Hjærterod.
+Det humped omkring ved Stok og ved Krykke.
 Og drejed paa Lirekassen et Stykke.
 Det drejed for lutter døve Ører;
 Herrerne hører
 Fra Arilds Tid
 Saa nødigt paa den, som de selv har skamferet
-Og slagtet til Invalid.
+Og slaget til Invalid.
 
 Saa satte det Liren i Krogen hen,
 Og vented og vented og vented igen.
 Men Ventens Tid er kun lidet god,
 Og Tvivl og Tvedragt har slaget sin Rod
-I Hjerterne, selv hos de bedste.
+I Hjærterne, selv hos de Bedste.
 Og Luften skifted endog Humør,
-Sommeren vaad og Vintren tør.
+Sommeren vaad, og Vintren tør.
 Naar Krybben er tom, saa bides
-De allermedgørligste Heste.
+De aller medgørligste Heste.
 
-De spurgte om Skylden. Ja, hvem bar Skylden?
+De spurgte om Skylden. Ja hvem har Skylden?
 Du, og jeg selv, og han;
 Oppe og nede, det ganske Land,
 Men hvem har den rette Lægeforstand,
@@ -73,34 +110,35 @@ Den Taage, som her over Stranden staar,
 Den hæmmer saa mangen en spirende Vaar
 Og slaar saa mangen en Vunde,
 Og ingen kan hele de gnavende Saar,
-Og ingen kan sige »hvorlunde«. -
+Og ingen kan sige »hvorlunde«. —
 
 Der kommer dog vel en forfriskende Blæst
 Og Solbrud i Skyen, en rask Nordvest,
 Som fejer til Side den sidste Rest
 Af Tvivlen og Striden og Taagen.
 Og saa maa man helst være vaagen.
-Og saa maa man se at holde sig klar,
+Og saa maa man se, at holde sig klar,
 Naar Vinden begynder at friske,
 Til at røgte sin Dont i den Baad, man har,
 Til at tage paa Dybet og fiske.
 
 Og staar end Taagen endnu som en Mur
 Og skygger for hele Guds fri Natur
-Og trykker paa Hjerte og Hjerne:
-Det gælder trode Taagen at tro paa sin Kraft,
-<i>Den</i>, som man har, og <i>den</i>, man har haft, -
+Og trykker paa Hjærte og Hjerne:
+Det gælder, trods Taagen, at tro paa sin Kraft,
+<w>Den</w>, som man har, og <w>den</w>, man har haft, —
 Saa kommer vel Sol fra det Fjerne.
 </body>
 </poem>
 
 <poem id="drachmann1999052202">
 <head>
-   <title>Frisk Morgen</title>
-   <toctitle>Frisk Morgen</toctitle>
-   <indextitle>Frisk Morgen</indextitle>
-   <firstline>Vinden er saa føjelig</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Frisk Morgen</title>
+    <firstline>Vinden er saa føjelig</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 7-8.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Vinden er saa føjelig
@@ -116,18 +154,18 @@ At Klitterne kan være saa nøgne.
 
 Søen gør saa sære Sving,
 Er sorgløs og kaad,
-Den slaar i Stykker mange Ting,
+Den slaar istykker mange Ting,
 Men dertil har den Raad.
 Søen er en Jungmand kæk,
 Han hiver al sin Hyre væk,
 Han har ej lært at spare;
-Hans Liv er op og ned i Træk,
-Hvorfor da stuve under Dæk,
+Hans Liv er op og ned itræk,
+Hvorfor da stuve under Dæk
 Hvad der dog ej evindelig kan vare?
 
 Hop da sorgløs, gode Baad,
 Ad Søvejen hen;
-Bliver Næsen ogsaa vaad,
+Bliver Næsen ogsaa vaad.
 Den tørres nok igen.
 Bølgen krummer nu sin Krop
 Og løfter paa sin Skulder op
@@ -138,121 +176,326 @@ Og løber saa - Godmorgen! - ud paa Havet.
 </body>
 </poem>
 
-<poem id="drachmann1999052203">
+<poem id="drachmann2018021604">
 <head>
-   <title>Bølgernes Sang</title>
-   <toctitle>Bølgernes Sang</toctitle>
-   <indextitle>Bølgernes Sang</indextitle>
-   <firstline>Evigt fremad</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>I Ro</title>
+    <firstline>Jeg var saa hed af det hastige Løb</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 9-10.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-    Evigt fremad,
-    Hen over Havet,
-    Ud imod Grænsen,
-    Som stedse viger;
-    Ud mod de flygtende
-    Æventyr-Riger,
-    Hvor Solen aldrig
-    Gaar ned.
+Jeg var saa hed af det hastige Løb;
+Jeg havde saa længe løbet;
+I Skridt gik de andre, jeg fortned min Fart,
+Jeg kunde saa gerne mit Hastværk spart
+Og Saalerne ovenikøbet.
+Jeg hasted og hasted; tilsidst jeg fandt
+Ene mig selv paa Klittens Kant;
+Hvor var de Andre henne?
+Formodenlig stoppet i Skoven,
+Og stod og taksered Brænde.
+
+Jeg lod dem blive; jeg lagde mig ned,
+Drak Havets forfriskende Aande;
+Saa gik jeg langsomt til Strandens Bred,
+Hvor Skummet flagred og Saltet bed
+Og Voven gik Vinden tilhaande;
+De kølte begge det hidsige Mod,
+De regulerte det hastige Blod,
+De gjorde mig sund og munter; —
+Man kan ved den megen Jagen
+Lettelig komme herunter.
+
+Og her vil jeg blive, og slaa mig til Ro
+Og sætte mit Livsmod paa Renter.
+Den rastløse Tumlen, det skiftende Spil,
+Jeg overlader med Glæde til
+Kommende Descendenter.
+Lad Ungdommen tumle — ifald den kan -
+Jeg slaar mig herned som en stille Mand;
+Livet i Frastand jeg følger. —
+Og synger saa mine Sange,
+Kølig, som Havets Bølger.
+</body>
+</poem>
+
+<poem id="drachmann1999052203">
+<head>
+    <title>Bølgernes Sang</title>
+    <firstline>Evigt fremad</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 11-12.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+        Evigt fremad,
+        hen over Havet,
+        ud imod Grænsen,
+        som stedse viger;
+        Ud mod de flygtende
+        Æventyr-Riger,
+        hvor Solen aldrig
+        gaar ned.
 
 Der skal sidde en Mand paa den hvide Bred,
-Som aldrig har løjet, ej mindste Kende,
-Hans Ansigt lyser, hans Øjne brænde,
-Han slog dem aldrig for nogen ned.
+som aldrig har løjet, ej mindste Kende,
+hans Ansigt lyser, hans Øjne brænde,
+han slog dem aldrig for Nogen ned.
 Han stjal ej af andres, han kunde nøjes
-Med lidet, selv i de trange Dage,
-Han kendte ej Alder, han kunde ej bøjes,
-Han faldt ej for Smiger, han stod ej af Trods,
-Han higed bestandig, gik aldrig tilbage. -
+med lidet, selv i de trange Dage,
+han kendte ej Alder, han kunde ej bøjes,
+han faldt ej for Smiger, han stod ej af Trods,
+han higed bestandig, gik aldrig tilbage. —
 Vi aned, vi øjned hans Slægt med os.
 
-    Vi prajed en Fisker,
-    Som drev for Vejret;
-    Hej, Fisker, sig os,
-    hvor <i>ham</i> vi finder!
-    Fiskeren tørred
-    de skumvaade Kinder:
-    Véd ej, var aldrig
-    saa langt!
+        Vi prajed en Fisker,
+        som drev for Vejret;
+        Hej, Fisker, sig os
+        hvor <w>ham</w> vi finder!
+        Fiskeren tørred
+        de skumvaade Kinder:
+        Véd ej, var aldrig
+        saa langt!
+</body>
+</poem>
+
+<poem id="drachmann2018021606">
+<head>
+    <title>Efterdønning</title>
+    <firstline>I Vredens Stunder, i Stormens Stunder</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, p. 13.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+I Vredens Stunder, i Stormens Stunder,
+Naar Skyerne flagre, naar Grenene knækkes,
+Saa knejser min Nakke, og Vingerne vokse,
+Som skulde de aldrig stækkes.
+Saa hvælves mit Bryst for hver sejrrig Tanke,
+Jeg hører mit Hjærte Triumftakten banke,
+Og jeg gaar ombord paa den flyvende Planke,
+At erobre den nye Verden.
+
+Men Bølgen falder. I Stilhedens Stunder,
+Naar Læben er presset om Bitterhedssukket,
+Saa kommer min Musa, og bringer tilbage
+De Kranse, som ikke blev plukket.
+Og er der end Torne blandt Kransenes Blade:
+Hendes Øjne skinner saa ærlige, glade,
+Og hun vogter min Sjæl for at mistro og hade:
+Og jeg selv er den nye Verden.
+</body>
+</poem>
+
+<poem id="drachmann2018021607">
+<head>
+    <title>I Havn</title>
+    <firstline>Jeg stod, hvor Molerne strækker</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 14-15.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Jeg stod, hvor Molerne strækker
+Fra Stranden i Havet frem
+To krummede, favnende Rækker,
+Som Bølgen med Skum bedækker,
+To Arme, som vinker: <w>hjem!</w>
+
+Derude stod Havet i Fraade,
+Og Skyerne havde Hast,
+Og Skibe saavel som Baade
+De slæbte sig Kludene vaade
+Og slingred med Spryd og Mast.
+
+Fra Fartens tusinde Farer,
+Fra Skibbrud frelst og fra Læk,
+Kom Skibenes flygtige Skarer
+Og laa nu med Skrog og med Varer
+Fortøjet for Anker og Dræg.
+
+De vugged bag Molernes Arme.
+Og Skipperne trak deres Vejr:
+Ja nu kunde Bølgerne larme!
+De pusted sig Fingrene varme
+Og smed deres Olieklæ'r. —
+
+Saa kom der en Sejler om Hjørnet;
+Den drejed for akavet rundt.
+I Bougen en Planke var skørnet,
+Med Bougen mod Molen den tørned,
+Og sank i samme Sekund. ....
+
+Betryggelsen aabnede Favnen.
+Det Hele hang i et Haar.
+En raadden Planke i Stavnen,
+Og saa lide Skibbrud i Havnen —
+Ja, saadan i Verden det gaar.
 </body>
 </poem>
 
 <poem id="drachmann1999052204">
 <head>
-   <title>Rav</title>
-   <toctitle>Rav</toctitle>
-   <indextitle>Rav</indextitle>
-   <firstline>De gik langs det legende Hav</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Rav</title>
+    <firstline>De gik langs det legende Hav</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 16-17.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 De gik langs det legende Hav,
 Og Bølgerne dansed saa lette
 Med Skum ad den gyngende Slette;
 De vandrede langsomt Fod for Fod,
-Standsed og bukked sig, hvor de stod;
+Stansed, og bukked sig hvor de stod;
 De søgte sig Rav.
 
-<i>Hun</i> fik, hvad af Havet han tog;
-Skønt blev det slebet, i Form af et Hjerte,
+<w>Hun</w> fik hvad af Havet han tog;
+Skønt blev det slebet, i Form af et Hjærte,
 Det skinned saa klart som den klareste Kærte,
-<i>Hun</i> bar det paa Barmen, hun kyssed det tidt,
-<i>Hun</i> gav ham til Gengæld <i>sit</i>;
-Men det var et Hjerte, som slog.
+<w>Hun</w> bar det paa Barmen, hun kyssed det tidt,
+<w>Hun</w> gav ham til Gengæld <w>sit</w>;
+Men det var et Hjærte, som slog.
 
-Han fo'r paa det gyngende Hav;
-<i>Hun</i> mødte ham ingensinde.
-<i>Hun</i> bar paa hans Hjerte derinde,
+Han fór paa det gyngende Hav;
+<w>Hun</w> mødte ham ingensinde.
+<w>Hun</w> bar paa hans Hjærte derinde,
 Bar det hos sit, bedrøvet og glad,
-<i>Hun</i> vidste slet ikke at skille dem ad; -
-Og <i>hans</i> var kun Rav.
+<w>Hun</w> vidste slet ikke at skille dem ad; -
+Og <w>hans</w> var kun Rav.
+</body>
+</poem>
+
+<poem id="drachmann2018021609">
+<head>
+    <title>Forgrunds Studie</title>
+    <firstline>Ankret ligger i Sandet fast</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, p. 18.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Ankret ligger i Sandet fast,
+Strækker mod Solen sin rustrøde Flig;
+Splintret ligger Storstang og Mast —
+Skuden har været i Krig.
+
+Skuden har været med Søen i Krig.
+Søen var stærk, og Skuden var svag;
+Skuden den blev paa Bunden,
+Masten drev op og blev funden,
+Ankret kom ogsaa for Dag.
+
+Skuden gik tabt, men Kaptajnen han blev.
+Kaptajnen — det er en afgjort Sag —
+Er det Vigtigste.
+Han sidder derude paa Bænken
+Og venter. Det er det rigtigste.
+Han venter, og smiler til Søen hen.
+Han faar sig jo nok en Skude igen.
+</body>
+</poem>
+
+<poem id="drachmann2018021610">
+<head>
+    <title>Makrel</title>
+    <firstline>Det skal være slemt at falde</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 19-20.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Det skal være slemt at falde
+Blandt en Stime af Makrel.
+Man blir nappet, bidt og flænget,
+Man blir revet rent ihjel.
+
+Jeg var ung og uforsigtig,
+Sprang i Vandet. Ak, jeg saa'
+Ikke disse sorte Fiske-
+Rygge, som i Stimer staa.
+
+Først de fór til alle Kanter,
+Skræmmet ved den stærke Plumpen,
+Saa kom en, og flere hid,
+Snused lidt, og tog en Bid;
+
+Stedse flere Aspiranter,
+Spidse Snuder, blanke Skæl.
+O det er en rigtig lumpen
+Yngel, denne Fisk Makrel.
+
+Og de bed mig, og de sled mig,
+Nogle for, de fleste bag.
+Men tilsidst jeg blev dog bjærget
+Ved et ærligt Sømandstag.
+
+Nu, nu sidder jeg paa Stranden,
+Og den gamle Fisker lærer
+Mig, hvordan man snor og skærer,
+Slaar og kaster, knytter, tjærer
+Traaden til et kunstigt Garn,
+Hvori jeg — ja ved min Sjæl! —
+Selv kan fange mig Makrel.
 </body>
 </poem>
 
 <poem id="drachmann1999052205">
 <head>
-   <title>Kan du forklare mig, Hav?</title>
-   <toctitle>Kan du forklare mig, Hav?</toctitle>
-   <indextitle>Kan du forklare mig, Hav?</indextitle>
-   <firstline>Kan du forklare mig, Hav</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Kan Du forklare mig, Hav</title>
+    <firstline>Kan Du forklare mig, Hav</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 21-23.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Kan Du forklare mig, Hav: -
+Kan Du forklare mig, Hav: —
 Hvorfor i al Verden jeg strider og stræber,
 Sætter mig hos Dig med bævende Læber,
 Glemmer hvert Maaltid, ja næsten glemmer
 Mine egne vaade, forfrosne Lemmer,
 Stirrende paa Dig, som næppe Du véd,
-For at opfange hele din Vældighed,
-For at forme din egen Stormmelodi
+For at opfange hele Din Vældighed,
+For at forme Din egen Stormmelodi
 Til Toner, som gælder i min Poesi!
 
 Ak, om jeg formed det skønneste Spil,
-Hvor mange er der, som lytter dertil?
-Hvor mange, som ret af Hjertet mener,
-- Halve Venner og hele Mæcener -
+Hvormange er der, som lytter dertil?
+Hvormange, som ret af Hjærtet mener,
+— Halve Venner og hele Mæcener —
 At jeg har gavnet og glædet mit Land,
-Fordi jeg har gjort mig til Spillemand? . . .
-»Du spørger! Hvad skal man vel svare paa sligt?
-Jeg forstaar mig kuns lidt paa Sang og Digt,
-Men om Du for Resten vil vide min Mening:
-Nuvel, hvorfor strider og stræber vel <i>jeg</i>
-- Vinden og jeg i Forening? -
-Vi vandrer bestandig vor støtte Vej
+Fordi jeg har gjort mig til Spillemand? ....
 
+»Du spørger! Hvad skal man vel svare paa sligt?
+Jeg forstaar mig kuns lidet paa Sang og Digt,
+Har aldrig taget et Kursus deri,
+Er helst for al Spekuleren fri.
+Men, om Du forresten vil vide min Mening:
+Nuvel, hvorfor strider og stræber vel <w>jeg</w>
+— Vinden og jeg i Forening? —
+
+Vi vandrer bestandig vor støtte Vej
 Og summer og brummer og gør Spektakel,
 Og vilde vist holde det for et Mirakel,
-Om en kommanderte: hold op!
+Om En kommanderte: hold op!
 Jeg synger min Sang, og jeg strækker min Krop,
-Er oftest paa Farten og sjælden i Havn;
-Vi ligger paa Rejse, og blæser ad Landet
+Er oftest paa Farten, og sjelden i Havn;
+Vi ligger paa Rejse, og blæser ad Landet,
 Og spørger aldrig om »Gavn«.
 
 Jeg kunde vel være en Mølledam
 Og male for Folk paa Kværne;
-Ja, kunde jeg, skulde jeg gerne.
+Ja, <w>kunde</w> jeg, skulde jeg gerne.
 Men jeg er nu engang ikke saa tam;
 Man kan gerne skælde paa Vandet:
 Jeg er Hav. Jeg kan ikke andet.«
@@ -261,28 +504,29 @@ Jeg er Hav. Jeg kan ikke andet.«
 
 <poem id="drachmann1999052206">
 <head>
-   <title>Bøn</title>
-   <toctitle>Bøn</toctitle>
-   <indextitle>Bøn</indextitle>
-   <firstline>Lær mig at blive en Mand</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Bøn</title>
+    <firstline>Lær mig at blive en Mand</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 24-25.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Lær mig at blive en Mand,
 Haardt prøvede Hav!
-Jeg hviler mig her ved din Strand,
-Lyttende til dine Sange.
+Jeg hviler mig her ved Din Strand,
+Lyttende til Dine Sange.
 Vel har jeg hidtil holdt Stand,
 Og ingen tør kalde mig bange;
 Dog var jeg svag nok ibland'.
-Luft Du nu ud mine Sange; -
+Luft Du nu ud mine Sange; —
 Lær mig at blive en Mand.
 
-Lær mig at kæmpe, utrættet som Du -
+Lær mig at kæmpe, utrættet som Du —
 Men ikke med altfor meget Bulder.
-Hver Gang med opspilet Mund Du ruller
-Og truer og raaber: nu kommer jeg, nu!
-Saa trækker jeg tavs paa min Skulder.
+Hvergang med opspilet Mund Du ruller
+Og truer og raaber: nu kommer jeg. nu!
+Saa trækker jeg tavst paa min Skulder.
 Din evige Ungdom, din evige Styrke,
 Den vil jeg hædre og den vil jeg dyrke;
 Men Braget, hvormed Du i Striden bryder,
@@ -291,22 +535,123 @@ Tillad mig, o Hav, som Svaghed jeg tyder.
 Lær mig at blive Dig lig,
 Dybtrullende Hav!
 Stedse med Lavhed i Krig,
-Lyttende til dine Sange.
+Lyttende til Dine Sange.
 Løft mig for Storhed en Flig,
-Lad, om end glimtvis, mig fange
+Lad, om end glimtvis mig fange
 Udsigten, straalende rig,
-Bort mod de evige Sange; -
+Bort mod de evige Sange; —
 Lær mig at blive Dig lig!
+</body>
+</poem>
+
+<poem id="drachmann2018021613">
+<head>
+    <title>Jeg drømte</title>
+    <firstline>Jeg drømte, jeg sank til Havets Bund</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 26-29.</note>
+    </notes>
+    <keywords>kuplet</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Jeg drømte, jeg sank til Havets Bund.
+Det sortned for Øjet, det slog om min Mund.
+
+Det larmed som sydende Damp for mit Øre,
+Jeg kunde mit eget Angstraab ej høre.
+
+Saa tav det aldeles, blev ganske tyst;
+Det skinned omkring mig dæmpet lyst.
+
+Jeg følte mig for; paa Bunden jeg laa.
+Jeg tænkte paa dem, som var ovenpaa.
+
+
+Den kære Sol, og Himmelens Blaa,
+Og Menneskebørnene store og smaa;
+
+Bøndernes Marker, og Fiskernes By,
+Kirken den gamle, og Kroen den ny;
+
+Hele det brogede Menneskespil
+Af Folk, som handler, og Folk, som ser til:
+
+Jeg fik en saa sugende Længsel mod Alt.
+Jeg vilde derop igen med Gevalt.
+
+
+Jeg syntes, der var saa dejligt paa Jorden. —
+Saa svømmede Fiskene frem i Orden.
+
+Først kom Torsken, og saa kom en Flynder,
+Og saa kom Hajen, den gamle Synder.
+
+Fisk efter Fisk forbi mig hen.
+Jeg kendte dem oppe fra Jorden igen.
+
+Torsken er Torsk, ihvor den gaar.
+Og Jordens Dejlighed led et Skaar.
+
+
+Jeg bøjed mit Hoved, jeg drog et Suk.
+Og Vandet bobled med klagende Kluk.
+
+Da strøg der en Haand hen over min Pande:
+Velkommen til mine Riger og Vande!
+
+Haanden var blød, og Stemmen var blød.
+En Kvinde hælded sig op mod mit Skød.
+
+Med Øjne saa trofaste, glade og graa
+Smilende gennem min Sjæl hun saa'.
+
+
+Du frygter? talede Blikket blidt.
+Du har dog længtes herned saa tidt;
+
+Naar Solen sank bag den blaanende Strand,
+Jeg saa' Dig saa ofte, Du hjemløse Mand.
+
+I høstklare Nætter, naar Stjerneskud faldt,
+Længselsfuld har Du ved Navn mig kaldt.
+
+Saa sank Du selv, som et Stjerneskud.
+Sluk nu Din Længsel hos Havfruen ud!
+
+
+Saa førte hun mig i sit Muslingeslot,
+Og tog mig i Favn som Vandenes Drot.
+
+Hun havde kun læst en eneste Bog,
+Det var A. B. Cen i Kærligheds Sprog.
+
+Den havde hun fundet engang i et Vrag,
+Hvor Skipperen drukned, sin Bryllupsdag.
+
+Vi læste den sammen; jeg blev saa klog,
+Jeg kunde tale Havfruens Sprog.
+
+
+Jeg glemte Jorden og Himmelens Hvælv;
+Jeg var jo hos hende; jeg glemte mig selv.
+
+Og Dage blev Aar i den dybe Strøm.
+Det var som i Drømme — — — — — —
+— — — — — — — — — — — — — — — — — —
+— — — — — — — — — — — — — — — — — —
+— — — — — — Det var kun en Drøm.
 </body>
 </poem>
 
 <poem id="drachmann1999052207">
 <head>
-   <title>Stormfuld Aften</title>
-   <toctitle>Stormfuld Aften</toctitle>
-   <indextitle>Stormfuld Aften</indextitle>
-   <firstline>Solen gaar ned. Et sydende Hav</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Stormfuld Aften</title>
+    <firstline>Solen gaar ned. Et sydende Hav</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 30-31.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Solen gaar ned. Et sydende Hav
@@ -317,113 +662,154 @@ Skyerne væltende svømme.
 
 De sprænges til Side, de haste
 Bort mod det nordlige, kølige Strøg;
-Mod Himlen skinner en glødende Røg;
+Mod Himlen skinner en glødende Røg:
 Skumsøjler, som Hvalerne kaste.
+
 Og Fladen er fejet af Stormen ren.
 Ikkun et Vragstykke driver derude,
 En afbladet, knækket, forkullet Gren;
 Den tegner sig af
-Mod min duggede Vinduesrude. -
+Mod min duggede Vinduesrude. —
+
 Du vilde Billed, som Stormen gav!
 Hvi fylder Du stedse med stigende Lyst
 Mit eget urolige, stormfulde Bryst?
 Hvi kan jeg ej lære dem Kunsten af
 At slaa mig til Taals med Idyller?
 
-Et fredeligt Landskab - en fredelig Sjæl -
-En Aftenrøde bag straatækte Hytter -
-En Vandrer foruden Achilleshæl -
+Et fredeligt Landskab — en fredelig Sjæl —
+En Aftenrøde bag straatækte Hytter —
+En Vandrer foruden Achilleshæl —
 En strikkende Pige, som sidder og lytter
-Til Tonen fra Klokkernes dæmpede Klang; -
+Til Tonen fra Klokkernes dæmpede Klang;
 Ja, kunde jeg, skrev jeg en saadan Sang.
-Men Havet om Smaapluk ej skøtter,
-Stormen mit Hjerte fylder.
+Men Havet om Smaakluk ej skytter.
+Stormen mit Hjærte fylder.
 </body>
 </poem>
 
 <poem id="drachmann1999052208">
 <head>
-   <title>Saa lagde jeg ud</title>
-   <toctitle>Saa lagde jeg ud</toctitle>
-   <indextitle>Saa lagde jeg ud</indextitle>
-   <firstline>Saa lagde jeg ud, da Stormen faldt</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Saa lagde jeg ud</title>
+    <firstline>Saa lagde jeg ud, da Stormen faldt</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 32-33.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Saa lagde jeg ud, da Stormen faldt
 Og Vinden fik Blund over Øjet.
-Det var, som ude fra Dybet blev kaldt,
+Det var, som om ude fra Dybet blev kaldt;
 Og jeg lyttede foroverbøjet.
 
 Hult gik Søen, af Tværfurer krus't,
 Bølgen var brudt i Stykker;
-Hvor Skummet før havde sydet og brust,
+Hvor Skummet før havde sydet og brust
 Laa Himlen i tavlede Smykker.
 
 I hver en Smaadal, bag hver en Høj,
 Smiled en tindrende Stjerne;
 Og Landvinden løfted sin Vinge og fløj
-Vildt mod det lysende Fjerne.
+Vidt mod det lysende Fjerne.
 
 Jeg lytted og spejded fra Baadens Stavn.
 Hvert Blink var et Blik, som mig nævned
-Med trofast, inderlig Ømhed ved Navn -
+Med trofast, inderlig Ømhed ved Navn —
 Over Havet stille jeg stævned.
 </body>
 </poem>
 
 <poem id="drachmann1999052209">
 <head>
-   <title>Fjerne Toner</title>
-   <toctitle>Fjerne Toner</toctitle>
-   <indextitle>Fjerne Toner</indextitle>
-   <firstline>Dig vil jeg bære</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Fjerne Toner</title>
+    <firstline>Dig vil jeg bære</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 34-35.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Dig vil jeg bære
-Paa mine Sange,
-Som Bølgerne bære
+paa mine Sange,
+som Bølgerne bære
 Fiskerens Jolle;
-Lempelig vugges den
-Frem og tilbage,
-Og Takten fløjtes,
-Af Aaretolle.
+lempelig vugges den
+frem og tilbage,
+og Takten fløjtes
+af Aaretolle.
 
 Og Fiskergutten,
-Som ligger ved Roret
-Og drømmer vaagen
-Om hende, han ved nok,
-Han lytter til Sangen
-Og synes, at Baaden
-For alle hans Tanker
-Ikke er bred nok.
+som ligger ved Roret
+og drømmer vaagen
+om hende, han véd nok,
+han lytter til Sangen
+og synes, at Baaden
+for alle hans Tanker
+ikke er bred nok.
 
 Jeg lærer ham Tonen.
-Naar atter han sidder
-Sent paa Stranden
-Og Tanke-Garn fletter,
-Saa taber jeg Traaden:
-Der lyder fra Havet
+Naar atter jeg sidder
+sent paa Stranden
+og Tanke-Garn fletter
+saa taber jeg Traaden:
+der lyder fra Havet
 Sang i de maane-
-Lysende Nætter.
+lysende Nætter.
+</body>
+</poem>
+
+<poem id="drachmann2018021617">
+<head>
+    <title>Spejlinger</title>
+    <firstline>Der stiger frem paa Nattens dybe Grund</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 36-37.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Der stiger frem paa Nattens dybe Grund
+Et Billed fra de sommerlyse Dage.
+En Sø. Den hvisker med sin Bølgemund:
+Erindrer Du mit Kys den Aftenstund?
+Og Breddens Ekko hvisker »Kys« tilbage.
+
+Jeg ser et Træ; det hælder sig til Drøm
+Med Grenen sænket mod den blanke Strøm;
+Dets Rod er løsnet, snart det nedad glider.
+Hvad bryder Kronen sig om Roden vel,
+Hvad spørger Hjærtet, hvordan Foden lider?
+
+Bestandig stirrende mod samme Plet,
+Det ligner, spændt, med stanset Aandedræt,
+En Elsker, bøjet bævende hen over
+Det Leje, hvor i Nattens Gensynstund
+Med Smil om Mund hans Længslers Afgud sover. -
+
+Jeg lukker Øjet, føler, at en Mund
+Min Læbe strejfer, føler det i Drømme;
+Jeg synker sagte, som i saligt Blund,
+I Dybder, hvor ej Foden finder Bund,
+Hvor varme Kilder over Hjærtet strømme.
 </body>
 </poem>
 
 <poem id="drachmann1999052210">
 <head>
-   <title>Sang i Baaden</title>
-   <toctitle>Sang i Baaden</toctitle>
-   <indextitle>Sang i Baaden</indextitle>
-   <firstline>Der skinner Sølvglans over Havets Vove</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Sang i Baaden</title>
+    <firstline>Der skinner Sølvglans over Havets Vove</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 38-39.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Der skinner Sølvglans over Havets Vove;
 Hvor Dagen slap, ta'r Dagen atter fat,
 Og Skyen staar som violette Skove;
 Hvem kunde sove
-Om Bord, paa Søen, saadan Julinat!
+Ombord, paa Søen, saadan Julinat!
 
 Ved Roret sidder jeg, og Baaden glider
 Søvngængersikkert over Bølgens Tag;
@@ -431,24 +817,25 @@ Vidt flygter Grænsen bort til alle Sider,
 Alt sig udvider,
 Nat bliver Gry, og Gryet bliver Dag.
 
-En saadan Nat - hvem skænked ikke gerne
+En saadan Nat — hvem skænked ikke gerne
 Den blege Død to Snese Oldingaar!
 Et ungdomsfyrigt Blik ud mod det Fjerne
-- <i>Dig</i> traf det gerne -
-Og saa en Baad, som rapt mod Maalet gaar! -
+— <w>Dig</w> traf det gerne —
+Og saa en Baad, som rapt mod Maalet gaar! —
 </body>
 </poem>
 
 <poem id="drachmann1999052211">
 <head>
-   <title>Hvi skal det være saa spejlglat alt?</title>
-   <toctitle>Hvi skal det være saa spejlglat alt?</toctitle>
-   <indextitle>Hvi skal det være saa spejlglat alt?</indextitle>
-   <firstline>Hvi skal det være saa spejlglat alt?</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Hvi skal det være saa spejlglat Alt?</title>
+    <firstline>Hvi skal det være saa spejlglat Alt?</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 40-41.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Hvi skal det være saa spejlglat alt?
+Hvi skal det være saa spejlglat Alt?
 En Digter er Søen lig;
 Han ligger med sine Luner
 Bestandig i aaben Krig.
@@ -460,28 +847,31 @@ Og danser en strygende Reel.
 
 Og ønsker Du Dig en rygende Storm,
 Saa skifter Søen sit Trit,
-Og slentrer af Sted over Revlen
+Og slentrer afsted over Revlen
 Med ganske dagligdags Skridt.
 
 Den veksler som Skyen, farvet af Sol
 Den veksler som Vejr og Vind,
-Den voksler som Digterene eget
+Den veksler som Digterens eget
 Lunefuldt vekslende Sind.
 </body>
 </poem>
 
 <poem id="drachmann1999052212">
 <head>
-   <title>Sildig, I</title>
-   <toctitle>Sildig, I</toctitle>
-   <indextitle>Sildig, I</indextitle>
-   <firstline>Nu, da de alle sover</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Sildig</title>
+    <firstline>Nu, da de Alle sover</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 42-45.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Nu, da de alle sover,
+<nonum><center>I.</center></nonum>
+
+Nu, da de Alle sover,
 Og Fiskerlejet er tyst,
-Og Vinden er vendt og staar over
+Og Vinden er vendt, og staar over
 Imod den fremmede Kyst;
 Nu, da de trællende Vover
 Har Ro, til det atter blir lyst,
@@ -501,21 +891,21 @@ Du sover, Du gamle Kending.
 Jeg tør ej paa Freden tro;
 Du rejser Dig som en Brænding,
 Om og Du gik tam til Ro.
-Et eneste Kast, <i>en</i> Vending.
-Af Vinden: Du viser din Klo.
-Jeg lytter. Det var som Havet
-I Drømme dernede lo.-
+Et eneste Kast, en Vending
+Af Vinden: Du viser Din Klo.
+Jeg lytter. Det var, som Havet
+I Drømme dernede lo. —
 
 Ak, Elskede, Du som sover
 Langt borte paa Puden tyst,
 Og aner ej, hvilke Vover
 Der slumrer paa denne Kyst,
 Du rækker i Drømme over,
-Vil hælde Dig op til mit Bryst, -
-Du véd ej, at Freden er borte,
+Vil hælde Dig op til mit Bryst, —
+Du véd ej, at Freden er borte
 Saa saare det atter blir lyst.
 
-Thi jeg og Havet derude
+Thi jeg, og Havet derude.
 Er født af den samme Stok,
 Og kender saa godt til en Skude
 Med Nødflag under sin Nok.
@@ -523,23 +913,15 @@ Vi sover paa samme Pude,
 Følges i samme Flok,
 Og spinder den samme Ende
 Paa den snurrende Kæmperok.
-</body>
-</poem>
 
-<poem id="drachmann1999052213">
-<head>
-   <title>Sildig, II</title>
-   <toctitle>Sildig, II</toctitle>
-   <indextitle>Sildig, II</indextitle>
-   <firstline>Kun af den sagtnende Dønning</firstline>
-   <quality>korrektur1,kilde</quality>
-</head>
-<body>
+<nonum><center>II.</center></nonum>
+
 Kun af den sagtnende Dønning
 En Lyd, som paa enkelte dybtstemte Strenge,
-Et døende Spil. Det varer ej længe,
-Saa tier det altsammen stille;
-Natvinden standser sin Trille,
+Et døende Spil.
+Det varer ej længe,
+Saa tier det Altsammen stille;
+Natvinden stanser sin Trille,
 Stjernen ser til.
 
 Op fra de skumrende Strande,
@@ -547,26 +929,27 @@ Fra Søen, som sover saa dybt, som den Sunde
 Ene formaar,
 Der stiger i Blunde
 Tanker til Gengæld for Lyde,
-Syner, som <i>jeg</i> kun kan tyde,
-<i>Du</i> kun forstaar.
+Syner, som jeg kun kan tyde,
+<w>Du</w> kun forstaar.
 </body>
 </poem>
 
 <poem id="drachmann1999052214">
 <head>
-   <title>Solnedgang</title>
-   <toctitle>Solnedgang</toctitle>
-   <indextitle>Solnedgang</indextitle>
-   <firstline>Den store Stjerne sænker sig mod Havet</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Solnedgang</title>
+    <firstline>Den store Stjerne sænker sig mod Havet</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 46-48.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Den store Stjerne sænker sig mod Havet.
-Og - som en Trøst for alt, hvad Dagens Klarhed
+Og — som en Trøst for Alt, hvad Dagens Klarhed
 Med skarpe Straaler ætsed ind i Tavlen,
 Hvorpaa som Børn vi tvinges til at læse
 Om to Gange to, om det, som kaldes Sandhed
-Saa længe, til en større blir doceret -
+Saa længe, til en større blir doceret —
 De bløde Aftenskyer dæmpet male
 Et Landskab: Katalogens »ideale«.
 
@@ -579,10 +962,10 @@ Violblaa Klipper, isprængt Lavafurer,
 Snekranste Bjerge, hvorpaa Solen hviler
 For sidste Gang, mens sit Farvel den smiler
 Højtblussende; en sky og frygtsom Kvinde,
-Der ved Farvellet glemte alt og lod
-Et Kys tilbage - fra en Elskerinde.
+Der ved Farvellet glemte Alt og lod
+Et Kys tilbage — fra en Elskerinde.
 
-Og under Bjerget, Tinde bag ved Tinde,
+Og under Bjerget, Tinde bagved Tinde,
 En By med Mure, Taarne, slanke Spir,
 Cypresser lig, der staar i tavse Rader;
 En By med Søndagsfred og stille Gader,
@@ -592,16 +975,15 @@ Gaar Haand i Haand og parvis Byens Ungdom.
 Snart gemmer Skoven dem i sine Skygger;
 De vandrer Arm i Arm, Kind imod Kind,
 I Ensomhedens Verden langsomt ind.
-
 Og Skovens kaade Guder spidser Ører,
 Men Smilet svinder snart om Bukkeskæget;
 Skovguden lister skamfuld sig sin Vej.
 Dryaden følger med sit Daadyrøje
-Igennem Løvets Slyngenet de to
+Igennem Løvets Slyngenæt de To
 En Stund, og bøjer Hovedet og sukker
-Saadan, som ene Skoven sukke kan.
+Saadan som ene Skoven sukke kan.
 
-De stiger opad, imod Fjældets Rand.
+De stiger opad, imod Fjeldets Rand.
 Her skinner Solen, her hvor Skoven slipper;
 En Hule aabner sig imellem Klipper,
 Og vilde Ranker danner halvt derover
@@ -611,112 +993,178 @@ Stumt talende, i Øjets dybe Vande,
 Hvor Verdner bygges paa den blanke Flod.
 
 Og Søvnen kommer paa sin bløde Fod,
-I Klædning som en faldende Kaskade.
+I Klædning som en faldende Kaskade,
 Og samler med sin Haand de spredte Blade
 Af Ranken, trykker Døren sagte til,
-Og trækker baglæns, lydløst sig tilbage
-Med Smil om Munden, Fingren over Læben,
+Og trækker baglæns, lydløst sig tilbage,
+Med Smil om Munden, Fingren over Læben.
 Et Nik til Aftenvinden: Vug dem ind!
+</body>
+</poem>
+
+<poem id="drachmann2018021622">
+<head>
+    <title>En Skypumpe</title>
+    <firstline>Den sejled i Luften. Ah, det var dejligt</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 49-51.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Den sejled i Luften. Ah, det var dejligt
+Saadan at vugges af Ætherens Strømme,
+Ligge paa Ryggen og misse mod Solen,
+Gynge, dovne og drømme.
+
+Den var en Sky som en anden Sky;
+Stod op ved Gry
+Før Fanden fik Sko paa,
+Og havde slet ikke andet at gøre
+End aabne hver Morgen Fru Solens Døre
+Til Tak blev den ogsaa klædt af Solen:
+En flunkende ny
+Kjole; og var i det Hele en Sky,
+Som det ret var en Lyst at glo paa.
+
+Men saa fik den Nykker. Imedens den sejled
+Doven deroppe, og smilende spejled
+I Søen dernede sit Liberi,
+Og var med sig selv saa inderlig glad,
+Saa syntes den dog, der var noget som fej led;
+Den vidste ej hvad,
+Men den skiftede Mine
+Og raabte paa engang: Dødogpine,
+Jeg tror jeg vil være Geni!
+
+Jeg smider Kjolen,
+Som jeg har haft,
+Jeg vil ikke her som en Tjener rende
+I Hælene bag efter Solen.
+Jeg vil være noget ved egen Kraft:
+Jeg vil opfinde Skruen uden Ende!
+
+Den kasted de dejlige Klæder bort,
+Og klædte sig som en Vandmester sort,
+Der roder bestandig i Sumpe;
+Den strakte og rakte sin dovne Krop,
+Drejed sig rundt som en Rebslagersnor,
+Som en snurrende Top,
+Og brugte sin store Taa som et Bor,
+Og begyndte i Søen at pumpe.
+
+Saa kom den susende Nordenvind:
+Hvad bilder den dumme Sky sig ind?
+Og Søen kogte af Raseri:
+Maa vi blot være fri
+For saadanne Experimenter!
+Og Søen rev den,
+Og Vinden drev den,
+Det blev til en Skrue af egen Art,
+Regnskabet blev gjort op i en Fart
+Med Renter og Rentesrenter.
+Skyen faldt ned over Bondens Land,
+Det stakkels Geni blev det bare Vand.
 </body>
 </poem>
 
 <poem id="drachmann1999052215">
 <head>
-   <title>Den sidste Parade</title>
-   <toctitle>Den sidste Parade</toctitle>
-   <indextitle>Den sidste Parade</indextitle>
-   <firstline>De sad - hvad Søfolk har Lov til at gøre</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Den sidste Parade</title>
+    <firstline>De sad - hvad Søfolk har Lov til at gøre</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 52-57.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-De sad - hvad Søfolk har Lov til at gøre,
-Naar Farten er endt og Faren er omme -
+De sad — hvad Søfolk har Lov til at gøre,
+Naar Farten er endt og Faren er omme —
 Og snakkede lunt inden Døre.
 De havde Krusene tomme.
 De var nok røget lidt uklar sammen,
 Var bleven lidt ivrig og hed i Kammen;
-De havde - helt sjældent blandt <i>de</i> Kammerater -
+De havde — helt sjeldent blandt de Kammerater
 Haft en Disput om Soldater.
 
 »Og nu vil jeg sige det sidste Ord,
-For jeg, skal I vide, var med om Bord,
+For jeg, skal I vide, var med ombord,
 Da hele Transporten forliste
 Og Damperen blev deres Kiste.
-Jeg husker det, ganske som det var i Dag,
+Jeg husker det, ganske som det var idag,
 De sank under Storbritanniens Flag
 Med Ransel paa Ryggen og Tasker bag
 Og Bøsser og Apparater.
 Der var nok en Fjende, men intet Krudt,
 De faldt imod Fjenden, men ingen blev skudt,
 Havet gav dem en Gravsalut;
-De døde en Død som Sodater!
+De døde en Død som Soldater!
 
 I Dagningen var det, og Søen var hul,
 Og Damperen slog sine tunge Hjul
 I Havet, som sort sig rejste;
 I Dagvagten var det, og Søen var svær,
 Og Luften saa' ud til et Herrens Vejr,
-Og vi havde strøget Stænger og Spær,
+Og vi havde strøget Stænger og Spær
 Og vor Bredfok paa Bakken vi hejste;
 Den skulde jo gøre for Slingringen Gavn,
 Thi forude laa, fra Maskine til Stavn,
 Soldaterne oppe og nede.
 De var nok af Søturen kede.
-
 Med Ransel og Taske, Stads og Gevær,
-To Hundred Mand, en formelig Hær,
+To hundred Mand, en formelig Hær,
 I Bunker som sammensyede,
-De laa der med deres dresserte Krop
-Og letted en Gang mellem sig op.
+De laa dér med deres dresserte Krop
+Og letted engang imellem sig op,
 Naar Damperen gjorde for svære Hop,
 Og saa' paa hinanden og spyede.
 
 Den kulsorte Damper hugged sig frem
-Og slog sine Skovle med Fynd og Klem
+Og slog sine Skovler med Fynd og Klem
 I Søen ved hver sin Side;
 Dens Hjulkasser lyste saa hvide.
-
-Jeg saa' imod Østen, og tænkte straks:
+Jeg saa' imod Østen, og tænkte strax:
 Her har vi en Dag af den slemme Slags,
 Hvor Solen i Dynerne ligger;
-Den vil ikke op, mod Himlen den ser.
-Imedens drysser dens Sengefjer
+Den vil ikke op, mod Himlen den sér,
+Imedens drysser dens Sengefjær
 Langs Havet i skinnende Prikker;
 Kaptajnen han mæler ikke et Muk,
 Men tørrer bestandig Glassenes Dug,
-Og Skyerne flagre til Vejrs som Fnug;
+Og Skyerne flagre tilvejrs som Fnug;
 Fra Broen han kigger og kigger.
 
 Og Damperen hugged sig frem med Besvær,
-Og Skovlene slog, snart oppe, snart nede,
+Og Skovlerne slog, snart oppe, snart nede,
 Og Himlen blev mørk, og vi fik et Vejr,
 Hvorefter man længe skal lede.
 Og Søen slog Lønning og Luger ind,
 Og vaade vi blev til det bare Skind,
-Maskinrummet fyldtes og Kedlen blev kold,
+Maskinrummet fyldtes, og Kedlen blev kold,
 Og Skibet trak Vand som et Sold.
 
-»Til Pumperne, Manne«. Det hjalp ikke meget;
-Stærkt blev der pumpet og stærkere skreget:
-Det vokser i Rummet, Fod for Fod!
+»Til Pamperne, Manne«. Det hjalp ikke meget
+Stærkt blev der pumpet, og stærkere skreget:
+Det vokser i Rummet, Fod for Fod! —
 Da tabte saa mangen en Gut sit Mod.
-Der laa vi og flød som et hjælpeløst Vrag,
-Da var det forbi med Kommando paa Dækket.
+
+Der laa vi og flød som et hjælpeløst Vrag.
+Da var det forbi med Kommando paa Dækket,
 Thi det er jo saadan en gammel Sag,
 Naar Faren er løs, saa er Vildskaben vækket.
 Soldater og Søfolk i blandet Flok
 Styrted til Baadene, hver paa sin Side,
-En tog sin Sabel og en tog en Blok,
-Hug blev der givet, og Svar blev der sendt. -
-Vorherre maa naadigt vide
-Hvorledes det Hele var endt!
+En tog sin Sabel og En tog en Blok,
+Hag blev der givet, og Svar blev der sendt. —
+Vorherre maa naadigt vide,
+Hvorledes det hele var endt!
 
 Men bedst, som de sloges og rev og bed
 Og brøled som vilde Dyr og sled,
 Og alle vilde i Baadene ned,
 Saa holdt Soldaterne inde;
 De hørte en Stemme, de kendte den nok,
-Der stod blandt den hele fortvivlede Flok,
+Der stod blandt den hele fortvivlede Elok,
 Høj og slank som en Kvinde,
 Pyntet og strunk paa Soldatermaner,
 Deres Oberst, en ung Officer:
@@ -724,70 +1172,167 @@ Deres Oberst, en ung Officer:
 »Ret Jer, Karle!« De lystred og gik
 Tilbage fra Baadene for hans Blik.
 »Sablerne ind; Geværet ved Fod!«
-De lystred og slingred, men stod, hvor de stod.
+De lystred og slingred, men stod hvor de stod.
 »Nuvel, Soldater, Haabet er ude;
-Vi skylder - det ved I - Vorherre en Død,
-Og vor skal vi møde paa denne Skude.
+Vi skylder — det véd I — Vorherre en Død,
+Og <w>vor</w> skal vi møde paa denne Skude.
 Baadene rummer knap halvhundred Mand;
-Det er Skibets Besætning, kan <i>den</i> naa' i Land,
-Saa har vi gjort, hvad vi kunde.
+Det er Skibets Besætning, kan den naa' Land,
+Saa har vi gjort hvad vi kunde.
 Arrier'garden holder saa længe Stand,
-Som den kan, og gaar saa til Grunde!« . . .
+Som den kan, og gaar saa til Grunde!« ....
 
 Saa fik vi Søfolk med megen Besvær
 Baadene ud, og vi klarede Vraget.
 Obersten stod med sin Kaarde draget,
 Vinked Farvel, da vi roede væk.
 Da brød fra Skyen det første Skær
-Af Solen, og over det vaade Dæk.
+Af Solen, og over det vaade Dæk,
 Langs ad den tavse Rade,
-Raabte han højt: »Præsenter Gevær!«
+Raabte han højt: Præsenter Gevær!
 
-Det var den sidste Parade.«
+Det var deres sidste Parade.«
+</body>
+</poem>
+
+<poem id="drachmann2018021624">
+<head>
+    <title>Alene paa Dækket</title>
+    <firstline>Over Nordhavet kommer en Skude i Storm</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 58-62.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Over Nordhavet kommer en Skude i Storm,
+Saa tungt gennem Søerne den ruller;
+Vandet vasker Bougen, men vasker ogsaa ind
+I Lasten ad Lækkernes Huller.
+De Varer derinde bli'r vaade, kan jeg tro; —
+Fanden tage Varerne, naar bare man fik Ro
+For den evige Hiven i Pumperne!
+Kaptajnen har slaget i Rattet sin Klo,
+Og Skuden hun lænser for Stumperne.
+
+De vinder kun fremad med maadelig Fart;
+Rummet er fuldt af Vand.
+Mod Dæksbjælken slaar det i Lasten snart,
+Der er langt til Land;
+Saa hiv nu alle Mand,
+Hiv væk! det gi'r Varme om Fingrene! —
+»Han snakker, den Gamle, som skulde man tro,
+At Alt var i Orden og Rattet i Ro
+Og som vi ej her nu i Dage to
+Maatte gnave Beskøjt saa haard som en Kno,
+Og ikke faa Sul mellem Tænderne,
+Og pumpe, til Blodet stod af Hænderne!«
+
+Og Stormen bruste, og Søen brød,
+Og Horisonten blev kobberrød
+Og spaaede ilde for Natten. —
+»Kammerater, den to Dages Tørn var haard,
+Enhver kan nu se, hvad der forestaar,
+Vi synker med hele Klatten.
+Der kommer en Fisker dér til Luvart;
+Jeg mener, at vi til den Gamle gaar;
+Og vil han ikke med, faar han blive hvor han staar,
+Og agere Matros og Kok og Steward!« —
+
+De prajede Smakken. Den drejede bi; —
+»Kaptajn, vi kan ikke andet:
+Der er ingen fornuftig Mening i
+At holde en Skude paa Vandet,
+Som er saa skør og saa gammel.
+Nu pakker vi ind vort Skrammel,
+Og gaar med Forlov eller uden Forlov;
+Tak skal De ha' for det Pumpesjov,
+Vor Fart skal faa andre Gænger;
+Som den er, saa gaar den ej længer!« —
+
+De saa', hvor Kaptajnen med Ordene stred;
+Han trykked Sydvesten i Panden ned,
+Og sendte et Hug dem med Øjet;
+Det gik gennem Olietøjet:
+
+I gaar! Naa, Lykke paa Rejsen da,
+Siden I kan ikke andet;
+Men spørger en Bonde Jer inde fra Landet,
+Saa husk at sige, I rendte fra
+Jer Kaptajn herude paa Vandet.
+I siger, at Skuden er gammel. Javist,
+Den fødtes med mig, og vi døbtes tilsammen,
+Jeg har sejlet med den i Nød og i Gammen,
+Og vi ender vel ogsaa sammen tilsidst.
+Vi to er et, det forstaar I nok ej,
+I sejler jo kun for Hyre;
+Skuden og jeg gaar den samme Vej,
+Nu skal jeg alene den styre! —
+
+Saa tog de Kister og andet Kram,
+Og bar det ned i den norske Pram,
+Som vager saa godt paa Vandet;
+Og saa' fra Smakken, som slingrede væk,
+Over mod ham paa det øde Dæk; —
+Da var deres Tanker lidt blanded'.
+
+Han kommer vel efter! Der tog de fejl.
+De saa', hvor han krøb i den susende Rig,
+Han kapped Beslag og gjorde Sejl,
+Intet Mandskab, men sikkert Bestik,
+Ene han klared det hele.
+Og Søen bruste og Stormen lød,
+Og Vandet dernede i Lasten brød,
+Som skilte sig Skibets Dele.
+Med Næven klemt om det knagende Rat
+Han styred sin Kurs i den vilde Nat;
+Hans Skude var simpel, han selv var skabt
+Af det Tømmer, som ej i en Storm gaar tabt.
 </body>
 </poem>
 
 <poem id="drachmann1999052216">
 <head>
-   <title>Ligprædiken</title>
-   <toctitle>Ligprædiken</toctitle>
-   <indextitle>Ligprædiken</indextitle>
-   <firstline>Jeg hører, at Ole</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Ligprædiken</title>
+    <firstline>Jeg hører, at Ole</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 63-68.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg hører, at Ole
 Pihl er ej mere.
-Han blev vel derude? . . .
-
-                »Naturligt; hvad andet?
-Den, som bestandig har plasket <i>paa</i> Søen,
-Han ender begribeligvis i Vandet.
-De var ude med Baaden, han og flere,
-Det var Jævndøgnstider, og Søen brød,
+Han blev vel derude? ....
+               »Naturligt; hvad andet?
+Den, som bestandig har plasket paa Søen,
+Han ender begribeligvis <i>i</i> Vandet.
+De var ude med Baaden, han og Flere,
+Det var Jevndøgnstider, og Søen brød,
 Jollen smak over; de laa og flød
 En Stund i Vandet, et Par Timers Frist.
-Saa drukned de alle, suksomsive,
-Og <i>han</i> til sidst, De kom vel i Land, men ingen i Live.
+Saa drukned de Alle, suksomsive<note>suksomsive] sucsomsive</note>,
+Og <w>han</w> tilsidst.
+De kom vel iland, men ingen ilive.
 
 Ole er død.
 
-Han var den første paa hele Lejet,
+Han var den Første paa hele Lejet
 Fra han blev fød'.
-Hvor meget han orked, hvor meget han vejed,
+Hvor meget han aarked, hvor meget han vej ed,
 Det vil jeg slet ikke føre paa Tale.
-Jeg siger bare: <i>han</i> kunde hale.
+Jeg siger bare: <w>han</w> kunde hale.
 Naar Baadene skulde trækkes paa Stranden,
 Og Slidet var haardt, saa var Ole Manden.
 Jeg siger det her, og vil ikke lyve,
 Ole han haled for hele tyve.
 
-Ja, han var først paa det hele Leje,
+Ja, han var Først paa det hele Leje
 Fra han blev fød'.
-Lidt sær; - ja han gik sine egne Veje,
+Lidt sær; — ja han gik sine egne Veje,
 Men da han var kendt som en godmodig Sjæl
 Af Smaa og Store, hvorhen han gik,
-Saa lod man ham gaa efter <i>sit</i> Bestik:
+Saa lod man ham gaa efter <w>sit</w> Bestik;
 Og Oles Navigation var reel.
 
 Han har kun en eneste Gang skamferet
@@ -796,34 +1341,33 @@ For Ole han gik en Gang med en Byld
 Paa Foden og humpede om ved en Krykke;
 Saa kom der en Mand; han var nok fuld,
 Han sparkede Oles Nødmast omkuld,
-Og det var en ren Guds Lykke,
+Og det var en ren Guds Lykke
 At Ole ikke faldt med.
 
-Ole fik samlet sit Rundholt op
+Ole fik samlet sit Rundholt op,
 Og gnubbed sig over det daarlige Sted,
-Men da der intet var gaaet itu,
-Saa retted han bare i Vejret sin Krop,
+Men, da der intet var gaaet itu,
+Saa retted han bare i vej ret sin Krop,
 Og sa'e til Manden ganske sindig:
-Hør nu, Du
+Hør nu, Du,
 Ikke saa gesvindig!
 
-Den anden blev rigtig grov som en Stud.
+Den Anden blev rigtig grov som en Stud.
 Saa langede Ole til ham ud;
 En eneste Gang blot; men det var nok.
-Manden han daskede ned som en Stok;
+Manden han daskede ned som en Sok;
 Saa bar de ham til Barberen hen.
 
-Jeg undred mig paa, at han vaagned igen.
+Jeg undrer mig paa, at han vaagned igen.
 
 Som sagt, det var kun den eneste Gang;
-For Resten var Ole saa hjertensgod,
+Forresten var Ole saa hjertensgod,
 Som Dagen var lang.
 Han sagde saa tidt, at han ikke forstod,
 Hvorledes man nænned at pine Dyr.
 Han havde en Gris, en gemytlig Fyr,
 Med Proptrækkerhale og Plet paa sin Tryne.
-<i>Ham</i>gav Ole sin Underdyne
-
+<w>Ham</w> gav Ole sin Underdyne
 En Vinter, da Kulden var lovlig stram.
 Mutter hun sa'e, det var en Skam
 At gi' til Grisen og ta' fra ham;
@@ -831,61 +1375,63 @@ Men Ole svared sin gamle Tøs,
 At Grisen frøs!
 
 Ole han redded Folk fra Forlis
-I Massevis.
-Naar Bjærgerne trykked sig for at gaa ud
+I massevis.
+Naar Bjergerne trykked sig for at gaa ud
 Og svor, der var intet Lovsted til,
 Som bød dem at sætte Livet paa Spil,
-Saa svared Ole, han kendte <i>et</i> Bud,
+Saa svared Ole, han kendte et Bud,
 Og det var Pligten.
 Trods Stormen og Vejret og Kulden og Gigten
 Saa maatte han ud.
 
 Han fortjente Medaljen; men se om han fik den.
 
-Det var en Gang i et Herrens Vejr,
+
+Det var engang, i et Herrens Vejr,
 Saa kom der en Tremaster Revlen for nær.
 Hele Lejet var nede paa Stranden,
 Der stod de i Klumper og saa' paa hinanden;
-Himmel og Jord stod mesten i et,
+Himmel og Jord stod mesten i Et,
 De syntes, det var dog lovlig hedt;
-Imidlertid skreg de ude fra Skuden
+Imidlertid skreg de ude fra Skuden —
 Hjælpe mig Gud,
 De Skrig de skar gennem Stormens Tuden.
-Men ingen vilde vove sig ud.
-De hørte dem skrige, saa' Masterne falde -
+Men Ingen vilde vove sig ud.
+De hørte dem skrige, saa' Masterne falde —
 
-Ole gik ud, og bjærged dem alle.
+Ole gik ud, og bjerged dem alle.
+
 
 Se saadan en Mand var Ole Pihl,
 Og nu har han taget sit sidste Hvil,
 Og vaagner vel næppe saa snart igen.
 Han var den stærkeste Gut, som fandtes,
-
 Fra han blev fød',
 Han var den flinkeste Fisker, som spiste
 Sit daglige Brød.
 Han var min Ven,
 
-Og <i>nu</i> er han død!«
+Og nu er han død!«
 </body>
 </poem>
 
 <poem id="drachmann1999052217">
 <head>
-   <title>Gallion</title>
-   <toctitle>Gallion</toctitle>
-   <indextitle>Gallion</indextitle>
-   <firstline>Naturligt! - De ønsked saa gerne</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Gallion</title>
+    <firstline>Naturligt! - De ønsked saa gerne</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 69-70.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Naturligt! - De ønsked saa gerne,
+Naturligt! — De ønsked saa gerne
 At Farten blev Skipperen god;
 Med Tørklæder fra det Fjerne
 De vinkede, hvor de stod.
 Naar Skibet i Søerne duved,
 Naar krængende kækt det luved,
-Saa streg de: Min Gud, han synker' -
+Saa skreg de: Min Gud, han synker! -
 Og var dog saa glade derved.
 
 Thi staar man selv paa den faste Bred,
@@ -897,33 +1443,108 @@ Det lider man alle saa gerne;
 Selv i Behold,
 Saa pirrer det Sansen
 At følge i Dansen
-Ham, som er Pokker i Vold. -
+Ham, som er Pokker i Vold. —
 
 Han lod dem alle tilbage,
 Store saa vel som Smaa;
-Han fløj paa sit gode Drage.
-Skib hen over Bølgen graa.
+Han fløj paa sit gode Drage-
+Skib henover Bølgen graa.
 Han havde sig skaaret i Breddens Skov
 Af Eg en Gud til eget Behov.
-<i>Storm</i> var hans Navn,
+<w>Storm</w> var hans Navn,
 Han stod i hans Stavn,
 Pegede frem over Bølgens Vej;
 Haanden var stiv, den drejed sig ej.
 </body>
 </poem>
 
+<poem id="drachmann2018021627">
+<head>
+    <title>Og da jeg sejled Dit Hus forbi</title>
+    <firstline>Og da jeg sejled Dit Hus forbi</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 71-72.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Og da jeg sej led Dit Hus forbi,
+Da kunde jeg næppe fatte,
+At det var Dig, som gemtes deri,
+Den dyreste af mine Skatte.
+
+Jeg saa' kun Dit Tag. I Aftenens Stund,
+Mod Solens synkende Lue,
+Det tegnede mørkt mod den glødende Grund
+En Kæmpehøjs blaanende Bue.
+
+Naar Solen den sørgende Jord har forladt
+Og slukt under Sø sine Flammer,
+Saa ligger Du stille, min dyre Skat,
+Gemt i det stensatte Kammer.
+
+Du venter. Højt paa den vilde Sø
+Din Viking tumler med Skuden.
+Han har endnu ikke lært sig at dø,
+Maa sejle sin Sø Dig foruden.
+</body>
+</poem>
+
+<poem id="drachmann2018021628">
+<head>
+    <title>Viking</title>
+    <firstline>Saa kom han iland paa den gamle Kyst</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 73-74.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Saa kom han iland paa den gamle Kyst,
+Var Viking, da han drog ud,
+Og ynded at blotte for Vinden sit Bryst,
+At hugge med Øxe, at stinge med Spjud;
+Skjoldet han slængte paa Ryggen helst
+Og glemte saa tidt at parere —
+Han glemmer det ikke mere.
+
+Han er bleven skrællet, og Brynjen er væk;
+Hvad skal man med den, hvor der stænkes med Blæk?
+Hjælmen er et Blækhus; han dypper deri
+Med Spydet, og rister en Rune-Melodi;
+Han har følt sig lille
+Mod Himmelens Hvælv,
+Ingen har ham skræmmet,
+Undtagen han selv;
+Han er bleven kæmmet,
+Dog ikke à la Paaskelam,
+Han er bleven tæmmet,
+Men ikke bleven tam.
+
+Han kom iland paa den gamle Kyst,
+Er Viking den Dag idag,
+Saa sandt som Intet i Verden
+Ændrer en afgjort Sag.
+Han brød vel Broerne bag sig af,
+Men ej ved sin bedste Skudes Brand;
+Han giver det Bedste sit Folk og sit Land.
+Gør ham det efter — om I kan.
+</body>
+</poem>
+
 <poem id="drachmann1999052218">
 <head>
-   <title>Paa Havstokken</title>
-   <toctitle>Paa Havstokken</toctitle>
-   <indextitle>Paa Havstokken</indextitle>
-   <firstline>Mine Tanker er min Verden</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Paa Havstokken</title>
+    <firstline>Mine Tanker er min Verden</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 75-76.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Mine Tanker er min Verden;
 Den er stor, naar de er store,
-Snæver, hvis de bliver smaa.
+Snever, hvis de bliver smaa.
 Hvorfor da paa Rejser gaa?
 
 Her jeg bliver, her paa Stranden;
@@ -937,7 +1558,7 @@ Og det bedste, hist jeg lærte,
 Var at længes mod min Strand.
 
 Her jeg jordes vil i Sandet,
-Under Havets aabne Red;
+Under Havets aabne Rhed;
 Bølgens Brusen vil mig holde
 Vaagen i al Evighed.
 
@@ -950,11 +1571,12 @@ Havet føder dem igen.
 
 <poem id="drachmann1999052219">
 <head>
-   <title>Fugleperspektiv</title>
-   <toctitle>Fugleperspektiv</toctitle>
-   <indextitle>Fugleperspektiv</indextitle>
-   <firstline>O ja, jeg elsker dette Land</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Fugleperspektiv</title>
+    <firstline>O ja, jeg elsker dette Land</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 77-79.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 O ja, jeg elsker dette Land,
@@ -963,11 +1585,11 @@ Hvor hver en Dont, hver virkende Mand
 Bestandig har Udsigt til Søen.
 Det gør baade Tanke og Tag saa let,
 Og det er saa sundt for hvert Aandedræt,
-Og det gi'er Sangeren godt Gehør, -
-Mærkværdigt, saa faa der har tænkt det før.
+Og det gi'er Sangeren godt Gehør, —
+Mærkværdigt, saa Faa der har tænkt det før.
 
-Her ligger nu Fjord og Sund og Bælt;
-Og Solen ser paa det brogede Felt
+Her ligger nu Fjord og Sund og Belt;
+Og Solen ser paa det brogede Felt,
 Og skinner med synligt Velbehag
 Paa det danske Arkipelag.
 De blomstrende Øer har fostret en Flok
@@ -977,54 +1599,58 @@ Besunget har de det meste,
 Som var i Landet at nævne.
 Men Havet glemte de fleste.
 
-Jeg elsker dig, Land, for dette dit Hav;
+Jeg elsker Dig, Land, for dette Dit Hav;
 Bestandig Du drog mig tilbage,
 Hvor langt jeg end maatte drage.
 Og fejded jeg end, vore Fædre lig,
-En Gang imellem paa dine Kyster,
+Engang imellem paa Dine Kyster,
 Nuvel, jeg elsked, som Havet, Krig;
 Der er Stridssang i Bølgernes Røster.
 Jeg voved i ærlig Kamp min Krop;
-<i>Du</i> gav mig Slaget tilbage,
-Men det var i Ungdommens Dage; -
+<w>Du</w> gav mig Slaget tilbage,
+Men det var i Ungdommens Dage; —
 Jeg tænker, vort Regnskab gaar op.
 
 Thi har jeg end sagt Dig drøje Ting:
-Det var i dit eget Sprog.
+Det var i Dit eget Sprog.
 Og Sprogets bølgende, bløde Klang
-Har jeg hamret og filet og passet i Sang,
+Har jeg hamret og lilet og passet i Sang,
 Slaaet i Sving og nittet i Ring,
 Til det toned af Bølgernes Malm.
 Endt er nu Kiv og Kvalm.
 Jeg kunde vel læspet mig lettere ind
-I mangen et følsomt Hjerte
+I mangen et følsomt Hjærte
 Med fagre Ord og med Bønner:
 Jeg lærte min Sang hos den stærke Vind,
-Greb Bølgernes Glader og Smerte; -
+Greb Bølgernes Glæder og Smærte; —
 Jeg elsker mit Land, jeg skriver mig ind
 Blandt dets gode, dets ægte Sønner.
 </body>
 </poem>
+
 </content>
 </section>
 
-<section level="1">
+<section level="2">
 <head>
-   <toctitle>Intermezzo</toctitle>
+    <title>Intermezzo</title>
 </head>
 <content>
 
 <poem id="drachmann1999052220">
 <head>
-   <title>Italia!</title>
-   <toctitle>Italia!</toctitle>
-   <indextitle>Italia!</indextitle>
-   <firstline>Jeg hilser Dig atter, Italiens Land</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Italia!</title>
+    <firstline>Jeg hisler Dig atter, Italiens Land</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 80-81.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<nonum><small><right>Roveredo. Febr.</right></small></nonum>
+
 Jeg hilser Dig atter, Italiens Land,
-Dine Bjerge skalver i Solens Brand,
+Dine Bjerge skælver i Solens Brand,
 Dine Vinhaver synes at sove.
 Under et Tæppe af flimrende Duft
 Drømmer de stille om kommende Druer,
@@ -1033,78 +1659,80 @@ Om Blade og Frugt
 Efter Vintrens Tugt,
 Om Guld og om grønne Skove.
 
-Jeg drikker i dvælende Drag din Luft.
+Jeg drikker i dvælende Drag Din Luft.
 O den gør godt i de nordiske Lunger;
-Det var, som min Mund fik tusinde Tunger,
+Det var, som min Mund fik tusinde Tunger
 Og hver en Tunge fik Sangens Gave
 Til at kvidre i denne herlige Have,
 Til at slaa en uendelig, jublende Trille,
 Stedse synge, aldrig tie stille.
 
 Jeg hilser Dig atter, Foryngelsens Land,
-Jeg digter et Drapa Dig her paa din Grænse.
+Jeg digter et Drapa Dig her paa Din Grænse
 At Kulden satte for Tungen Tand
-Saa længe, det vil vi ej længer ænse.
-Hos Dig vil jeg glemme, hvad hist jeg led,
+Saalænge, det vil vi ej længer ændse.
+Hos Dig vil jeg glemme hvad hist jeg led,
 Glemme, hvad oppe i Norden bed
 Som en Orm sig under min Side.
 Her er ej Stedet at mindes sin Kvide,
-Her skal med friske øjne der ses,
-Her skal der les,
+Her skal med friske Øjne der sés,
+Her skal der lés,
 Her skal med Blomster Naturen bekranses, -
-<i>Her er Rhodus, her skal der danses!</i>
+<w>Her er Rhodus, her skal der danses!</w>
 </body>
 </poem>
 
 <poem id="drachmann1999052221">
 <head>
-   <title>Foraar i de euganeiske Bjerge</title>
-   <toctitle>Foraar i de euganeiske Bjerge</toctitle>
-   <indextitle>Foraar i de euganeiske Bjerge</indextitle>
-   <firstline>Om nogen vil vide, hvad Foraar er</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Foraar i de euganeiske Bjerge</title>
+    <firstline>Om Nogen vil vide, hvad Foraar er</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 82-88.</note>
+    </notes>
+    <keywords>petrarca</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Om nogen vil vide, hvad Foraar er,
+Om Nogen vil vide, hvad Foraar er,
    Hvad Knopper, som sprænges,
    Hvad Blomster, som slænges
-I rundhaandet Grams over Fjældsiden ned,
-   Om nogen vil vide, hvor Solen er hed,
+I rundhaandet Grams over Fjeldsiden ned,
+   Om Nogen vil vide, hvor Solen er hed,
    Hvor Skyggen er svanger
    Med svalende Duft,
    Hvor Fjerskyen pranger
    Som blændende Silke i atlaskes Luft;
-Om nogen vil vide, hvad Foraar er:
+Om Nogen vil vide, hvad Foraar er:
    Saa komme han med og bruge sit Øje.
-   Han vil ikke fortryde, at Vejen han gik;
+   Han vil ikke fortryde at Vejen han gik;
    Jeg er Fører, og kender til Punkt og Prik
       De euganeiske Høje.
 
-Om nogen har Øre for fin Musik,
+Om Nogen har Øre for fin Musik,
    For Kilder, som risle,
    For Buske, som hvisle
-Med sylepidse Blade i svageste Pust:
+Med sylspidse Blade i svageste Pust:
    Saa véd jeg et Sted, hvor man sidder berust
    Af bølgende Strømmes
-   Melodiske Klang
+   Melodiske Klang,
    Af tonende Drømmes
    Forvirrede Slyngninger, opløst i Sang.
-Om nogen har Øre for slig Musik:
+Om Nogen har Øre for slig Musik:
    Saa lover jeg ham, han skal sig fornøje.
-   Det er ret som et Strengevæv udspændt, ihvor
+   Der er ret som et Strengevæv udspændt ihvor
    Han hviler, han færdes, staar eller gaar
       I de euganeiske Høje.
 
-Om nogen derhjemme har Længselssaar
+Om Nogen derhjemme har Længselssaar
    Og sukker mod Syden
    Og drages af Lyden,
 Der klinger fra disse hesperiske Rim:
-   Saa spræng blot hver Hylster som spirende Kim!
+   Saa spræng blot hvert Hylster som spirende Kim
    I Norden forpuppes
    Hver Længsel saa let,
-   Kom hid, hvor der knoppes,
+   Kom hid hvor der knoppes
    Og Knoppen bli'r Blomst i et eneste Sæt.
-Om nogen derhjemme har Længselssaar:
+Om Nogen derhjemme har Længselssaar:
    Saa lade han ej under Trykket sig bøje.
    Han vil føle sig løftet og styrket og sund,
    Og glemme sin Sorg i en eneste Stund
@@ -1113,7 +1741,7 @@ Om nogen derhjemme har Længselssaar:
 Se, Morgenen er der med Smil om Mund,
    Og Vindene vifte.
    Hver Spalte og Rifte
-Af Fjældet er fyldt som med smeltet Metal,
+Af Fjeldet er fyldt som med smeltet Metal,
    Og Æsler og Gederne drives af Stald,
    Og Frugttræet drysser
    Langs Stien sin Sne,
@@ -1121,21 +1749,21 @@ Af Fjældet er fyldt som med smeltet Metal,
    Sin solbrændte Glut, som har aldrig kendt Ble.
 Ja, Morgenen er der med Smil om Mund,
    Og Bonden slænger paa Ryg sin Trøje
-   Og springer om Kap med Gederne op
+   Og springer omkap med Gederne op
    For at røgte sin Vin paa den kullede Top
       Af de euganeiske Høje.
 
 Vi springer med Bonden. Det gaar i Galop.
    Den Kejtede snubler,
-   Den Kyndige jubler,
+   Den Kyndige jubler
 Naar Foden for Alvor kan følge sit Kald.
-   Her standser forstenet en Bæk i Krystal.
-   Den saa' nok den Slanke:
+   Her stanser forstenet en Bæk i Krystal.
+   Den saa' nok den Slanke;
    Hun bøjed sig ned
    Og opbandt en Ranke,
-Mens Brystdugen bort ved Bevægelsen gled.
-   Avanti, avanti! hej op i Galop!
-   Ej alt tør en Vandrer betragte for nøje,
+   Mens Brystdugen bort ved Bevægelsen gled.
+Avanti, avanti! hej op i Galop!
+   Ej Alt tør en Vandrer betragte for nøje,
    Det kunde da hændes, han hængende blev,
    Og i altfor hesperiske Versemaal skrev
       Om de euganeiske Høje.
@@ -1146,10 +1774,10 @@ Her krydser os Hjorden, som Hyrden drev.
 Af Oksernes Brøl og af Gedernes Bræg.
    Vi stopper og staar ved en mosgroet Væg:
    I Landsbyen Arqua
-   Kom Døden paa tværs
+   Kom Døden paatvers
    Francesco Petrarca
-   Aar Tusind, tre Hundred og fir' og halvfjerds.
-Vi standses af Hjorden, som Hyrden drev,
+   Aar Tusind, trehundred og fir' og halvfjerds.
+Vi stanses af Hjorden, som Hyrden drev,
    Og nytter vor Tid til at kaste et Øje
    Paa Huset, som nu er en indviet Plet,
    Og som stirrer saa stift som en snørklet Sonet
@@ -1158,9 +1786,9 @@ Vi standses af Hjorden, som Hyrden drev,
 En Loggia øverst paa Trappens Sæt,
    Derinde en Række
    Af Rum, som kan skrække
-Begejstringen selv fra at opslaa sin Bo. -
+Begejstringen selv fra at opslaa sin Bo. —
    Vi lader Petrarca og Huset i Ro;
-   <i>Den</i> Laura, han hylled
+   <w>Den</w> Laura, han hylled
    I himmelske Lin,
    Har mulig fortryllet
    En Tid, som har duftet af Klosterlatin.
@@ -1175,21 +1803,21 @@ Ja bort fra Poeten. Al den Stund
    Vi selv har Pligter,
 Og Pligten os raaber sit: længere frem!
    Alt ligger i Dalen Poetens Hjem,
-   Og vi er deroppe,
+   Og vi er der oppe,
    Hvor Vindene gaa
-   Over Bjergenes Toppe,
-   Og synge de Sange, som <i>vi</i> kan forstaa.
+   Over Bjergenes Toppe
+   Og synge de Sange, som vi kan forstaa.
 Vi glemmer Petrarca i denne Stund,
    Vi glemmer hans Laura, og det med Føje:
    Her aabnes en Udsigt for Vandrerens Blik,
-   Og vi synger med Næbet, med det, som vi fik,
+   Og vi synger med Næbet, med det som vi fik,
       Om de euganeiske Høje.
 
 Vi mønstrer de Stier, som nys vi gik;
    De synes saa bratte,
    At knap man kan fatte,
-   Hvorfra man fik Bentøj til saadan en Tur.
-Men Vaaren gi'r Kraft, og den store Natur;
+Hvorfra man fik Bentøj til saadan en Tur.
+   Men Vaaren gi'r Kraft, og den store Natur;
    I den vil vi bade
    Vort bølgende Bryst,
    I den vil vi lade
@@ -1202,37 +1830,40 @@ Vi glemmer de Stier, som nys vi gik,
 
 Lad Verden male i Møllen sig Gryn,
    Lad Tiderne være
-   Saadan, som de ere,
+   Saadan som de ere,
 Et Slagsmaal i Dalen for Dagens Gevinst:
-   Det ser ingen Fjældbo og Digteren mindst.
-   Kan <i>det</i> dem fornøje,
+   Det ser ingen Fjeldbo, og Digteren mindst.
+   Kan <w>det</w> dem fornøje,
    Saa lad dem kun slaas
    Og kives og støje;
    Vi hører det ikke, det rører ej os.
 Lad Verden dernede kun male sig Gryn,
    Lad Skælmerne rapse, lad Skraalerne støje:
    Der er altid en Dal og altid en Top,
-   Og enhver kan gaa, naar han lyster, op
+   Og Enhver kan gaa, naar han lyster, op
       I de euganeiske Høje.
 </body>
 </poem>
 
 <poem id="drachmann1999052222">
 <head>
-   <title>Notturno</title>
-   <toctitle>Notturno</toctitle>
-   <indextitle>Notturno</indextitle>
-   <firstline>I Kæmpesøvn, under Aandedræt tungt</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Notturno</title>
+    <firstline>I Kæmpesøvn, under Aandedræt tungt</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 89-90.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<nonum><small><right>Arqua.</right></small></nonum>
+
 I Kæmpesøvn, under Aandedræt tungt,
 Bjergmøens Bryster dirrer,
 Og koldt, fra et og det samme Punkt,
 Maanens Glasøje stirrer;
 Der er ikke en Ven,
-Hverken fjern eller nær
-Med Hjerte for alt, hvad der rører sig her,
+Hverken fjern eller nær,
+Med Hjærte for Alt hvad der rører sig her,
 Et Bryst, jeg tør kalde for mit.
 Bag de duftende Træer
 Ej et eneste Skridt,
@@ -1258,7 +1889,7 @@ Og rundt fra den fængslede, kolde Natur
 Vil hundrede Hænder mig rækkes.
 Der er ikke en Ven,
 Hverken fjern eller nær,
-Med Hjerte for alt, hvad der rører sig her,
+Med Hjærte for Alt, hvad der rører sig her,
 Som ikke vil Luren forstaa.
 Bag de duftende Træer,
 Fra det fjerne Blaa,
@@ -1269,11 +1900,12 @@ Med Trøst for min Sjæls Begær.
 
 <poem id="drachmann1999052223">
 <head>
-   <title>De grov en Venusstøtte op</title>
-   <toctitle>De grov en Venusstøtte op</toctitle>
-   <indextitle>De grov en Venusstøtte op</indextitle>
-   <firstline>De grov en Venusstøtte op</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>De grov en Venusstøtte op</title>
+    <firstline>De grov en Venusstøtte op</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 91-92.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 De grov en Venusstøtte op;
@@ -1303,43 +1935,77 @@ Hvor ømt dens Mage gav sig hen.
 O Marietta, Elskte, Du
 Er ømmere end den!
 
-Et Krater flammed i mig op.
+Et Krater flammed i mig op
 Imens jeg saa' derpaa.
 Din mælkehvide Marmorkrop
 Jeg syntes for mig laa.
 Din varme Aande følte jeg,
-En Blændværkeverden drog mig hen -
+En Blændværksverden drog mig hen. -
 Ak Marietta, Elskte, Du
 Er skuffende som den!
 </body>
 </poem>
+
+<poem id="drachmann2018021635">
+<head>
+    <title>I Jægerhytten</title>
+    <firstline>Jeg sad i det store Køkken</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 93-94.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Jeg sad i det store Køkken
+Foran det flammende Baal;
+I Vinduet skinnede Maanen
+Blank, som et anløbet Staal.
+
+De knitrende Kviste brændte.
+Jeg bøjed mit Hoved, og saa'
+Tankefuld Gløderne falde
+I Asken ned og forgaa.
+
+Jeg tænkte paa gamle Gløder,
+Som ulmer i Asken end,
+Paa Ilden, som flammer og knitrer
+Og véd ej hvor den vil hen.
+
+Tilsidst var Kvistene udbrændt,
+Den flammende Ild var død.
+En bævende Stribe af Maanen
+Hen over Arnen sig skød.
+</body>
+</poem>
+
 </content>
 </section>
 
-<section level="1">
+<section>
 <head>
-   <toctitle>Venezia</toctitle>
+    <title>Venezia</title>
 </head>
 <content>
 
 <poem id="drachmann1999032224">
 <head>
-   <title>Præludium</title>
-   <toctitle>Præludium</toctitle>
-   <indextitle>Præludium</indextitle>
-   <firstline>Dagen har været saa trykkende hed</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Præludium</title>
+    <firstline>Dagen har været saa trykkende hed</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 97-100.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Dagen har været saa trykkende hed;
-- Gondolierer, ro væk!
-Den store Kanal er en Flod saa bred,
+— Gondolierer, ro væk!
+Den store Canal er en Flod saa bred,
 Et Moderleje; did skynder sig ned
 Fra Staden hver rislende Bæk.
 Gerne de Fængslet mod Friheden bytter,
-Længe blandt fjældhøje Mure de flød,
+Længe blandt fjeldhøje Mure de flød,
 Børnene tyer til Moderens Skød,
-Kanalen Kanalerne samler.
+Canalen Canalerne samler.
 Moderen synger for sine Smaa.
 De lytter
 Langs Marmortrappernes Skamler.
@@ -1354,44 +2020,44 @@ Hun leger med Blomster, en ørkesløs Leg,
 Kaster dem over Balkonens Rand
 Ned i det langsomt glidende Vand;
 Og smiler
-Sørgmodigt, medens de flyder.
+Sørgmodigt medens de flyder.
 
 Men tændes den store Stjerne hist
 Med skinnende Glar i sin Rude,
 Og rejser sig Brisen, som Solen sidst
 Forlod paa Strandbreddens Pude,
 Saa hentes de ældgamle Smykker frem
-Fra smuldrende Sales forborgne Gem,
+Fra smulrende Sales forborgne Gem,
 Og klædt i dem
-Foran de straalende Spejle
-Venezia træder som Brud fra sit Hjem
+Foran de straalende Spejle,
+Venezia træder som Brud fra sit Hjem,
 Og begiver sig ud at sejle.
 
-Saa sejler den hele fortryllede By.
+Saa sejler den hele, fortryllede By.
 Kirker, Paladser svømmer,
 Og Maanen véd ej bag Luftens Sky,
 Om den vaagen er eller drømmer.
 Den følger med rystende Hoved det Syn;
 I Vandet dernede slaar Funkerne Lyn,
-Guld i Kanalerne strømmer.
+Guld i Canalerne strømmer.
 Og Guldet formørkes af Baadenes Spor;
 Dæmpede Plask af dem, der ror,
-Et Aandekor
-Af smeltende bløde Stemmer. -
-Saa tier det Hele, Sang og Spil;
-Maanen slog Skodden for Lygten til;
+Et Aandechor
+Af smæltende bløde Stemmer. —
+Saa tier det hele, Sang og Spil;
+Maanen slog Skodden for Løgten til;
 Bag Skygger sig Skyggerne gemmer.
 
 Dagen har været saa trykkende hed.
-- Gondolierer, ro til!
+— Gondolierer, ro til!
 Havbrisen vifter fra Lidoens Bred;
-Gondolierer, saa ved I Besked;
+Gondolierer, saa véd I Besked;
 Mod Havet vi stævne vil.
 Sløret for Fortidens Skygger faldt,
-Aander er slet ingen Omgang for os;
+Aander er slet ingen Omgang for <w>os;</w>
 Jeg hilser Jer, Adrias Bølger!
-Og skumler I ogsaa: jeg byder Jer Trods;
-Vi kendes dog, fra vi var ganske smaa;
+Og skummer I ogsaa: jeg byder Jer Trods;
+Vi kendes dog, fra vi var ganske Smaa;
 I har kaldt:
 Og Bølgernes Stemme jeg følger.
 </body>
@@ -1399,24 +2065,25 @@ Og Bølgernes Stemme jeg følger.
 
 <poem id="drachmann1999032225">
 <head>
-   <title>Venezia</title>
-   <toctitle>Venezia</toctitle>
-   <indextitle>Venezia</indextitle>
-   <firstline>Det blaaner over de flade</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Venezia</title>
+    <firstline>Det blaaner over de flade</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 101-102.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Det blaaner over de flade,
 Bevægelige Laguner;
 I Sandet skriver de tavse
-Strømme sælsomme Runer.
+Strømme selsomme Runer.
 
-Hvor Alarik maatte standse,
-Og Attila ikke kom over,
+Hvor Alarik maatte stanse,
+Og Attila ikke kom over.
 Befarer nu Lokomotivet
 De sagte mumlende Vover.
 
-Vandgræsset ligger dernede
+Vandgræsset ligger dernede,
 Som en Fisk med uhyre Finne;
 Og dovner og skvulper og drager
 Fortiden sig i Minde;
@@ -1429,10 +2096,10 @@ Under Hunnernes Hestehove.
 Det blaaner over de flade,
 Bevægelige Laguner,
 Fastland og Strandvand veksler
-I sælsomt skiftende Luner.
+I selsomt skiftende Luner.
 
 Er det en Ø derovre
-Og Mastetræeer, man øjner?
+Og Mastetræer, man øjner?
 Er det Bygninger, Mure og Taarne,
 Som af Havet mod Himlen sig højner? -
 
@@ -1445,23 +2112,24 @@ I Drømme fra Havets Mund.
 
 <poem id="drachmann1999052226">
 <head>
-   <title>Jeg hører i ensomme Stunder</title>
-   <toctitle>Jeg hører i ensomme Stunder</toctitle>
-   <indextitle>Jeg hører i ensomme Stunder</indextitle>
-   <firstline>Jeg hører i ensomme Stunder</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Jeg hører i ensomme Stunder</title>
+    <firstline>Jeg hører i ensomme Stunder</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 103-104.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg hører i ensomme Stunder
-Kanalens rislende Strøm;
+Canalens rislende Strøm;
 Den blander sig, medens jeg blunder,
 Ind i min vaagne Drøm.
-Af ingen hastende Hovslag brudt
+Af ingen hastende Hovslag brudt,
 Slynger sig Dagenes Kæde;
-Kanalen risler dernede,
-Jeg hører den hvert Minut.
+Canalen risler dernede,
+Jeg hører den hver Minut.
 
-Det er som en vandrende Sanger,
+Det er, som en vandrende Sanger,
 Der staar for den stængede Dør,
 Og spænder sit Net, og fanger
 I Strengene Fangens Gehør.
@@ -1471,93 +2139,237 @@ Hos Fangen derinde bløder
 I Brystet de gamle Saar.
 
 Han ser gennem Gluggen, hvor Skyen
-Sænker sig blussende ned,
+Sænker sig blusserfde ned,
 Som vilde den hviske til Byen
 Sin navnløse Kærlighed.
-O vidste Du, Sanger, hvad nu jeg ser.
-Hvad aldrig mit Øje forglemmer!
+O vidste Du, Sanger, hvad nu jeg ser,
+Hvad aldrig mit Øje forglemmer! —
 Betro mig kun Synet; jeg gemmer
 Paa det, som paa meget mer'!
 </body>
 </poem>
 
+<poem id="drachmann2018021639">
+<head>
+    <title>Laguna morta</title>
+    <firstline>Canalvandet skvulper og spiller</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 105-106.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Canalvandet skvulper og spiller
+I Venezia ud og ind
+Og fløjter Kanzoner med Triller
+I Takt til den legende Vind.
+
+Men bag ved Murano sig strækker,
+Under en Klagelyd dump,
+Lig Feberpatienter i Rækker,
+De »døde Laguners« Sump.
+
+Her ror ingen Barke, her sejler
+Mistænksom Felukken forbi;
+Venezias Taarne spejler
+Paa Hovedet sig deri.
+
+Venezias Taarne og Tinder
+Og Broer og røde Sejl
+Og døde, forvitrede Minder
+I den »døde Lagunes« Spejl.
+</body>
+</poem>
+
+<poem id="drachmann2018021640">
+<head>
+    <title>Karnevalet</title>
+    <firstline>Saa faldt til Vesperklokkernes Slag</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 107-109.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Saa faldt til Vesperklokkernes Slag
+— Ding Dang, Ding Dang —
+Dørene i for den drævende Dag
+— Ding, Ding, Dang! —
+Hver Smaasky oppe i Luften løb
+Hastelig ned over Himlens Bro,
+Nedunder Havet i Skjul de krøb,
+Og lagde sig smukt tilro.
+Dagen var omme, Dagen var endt,
+S. Marcus fik sig sin Løgte tændt,
+Mens Dogens Vinduer dugged.
+Saa kom der en Hilsen, fra Vagtskibet sendt,
+Et Skud — og Havnen var lukket.
+
+Havnen er lukket, Lidoens Port,
+Venezia indestængt;
+Det Fangenskab siger dog ikke stort,
+S. Marcus' Løgte, den klare, er hængt
+Ud for at lyse i Fængslet;
+Pokker er løs i Piazzaens Gaard,
+Kaadhedens Døre paa vid Gab staar,
+Man river dem næsten af Hængslet.
+
+En Leg er den hele sorgløse By,
+En tre Nætters flygtig Spas,
+En Brodering med Stikning og Stikning
+Et broget, uendeligt Kanevas,
+Hvor Naalen ej bliver sparet.
+Halvdøvet af alt dette Virvar og Skraal,
+Du føler et Prik af det flyvende Staal,
+O Nordbo, glem ikke Svaret!
+
+Nej slaa, til Vesperklokkernes Slag,
+— Ding Dang, Ding Dang —
+Dørene i for hver Alvorssag
+— Ding, Ding, Dang! —
+Lad fare Tanker paa Dit og Dat,
+Spred Dig blandt Mængden og le med <w>den</w>,
+Vinker en Haand Dig, saa følg, tag fat
+Og slip den ikke igen.
+Her er for Grubleren ingen Plads,
+Procurazierne er et Justitspalads,
+Hvor Glæden er lovbefalet.
+Piazzaen bølger; et Hav af Gas.
+Spring ud — ud i Karnevalet!
+</body>
+</poem>
+
 <poem id="drachmann1999052227">
 <head>
-   <title>En Maske</title>
-   <toctitle>En Maske</toctitle>
-   <indextitle>En Maske</indextitle>
-   <firstline>En Stump af et Skørt; en Slags Trøje</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>En Maske</title>
+    <firstline>En Stump af et Skørt; en Slags Trøje</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 110-111.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 En Stump af et Skørt; en Slags Trøje,
    Nedskaaret dybt over Skuldren, saa Barmen
-   Titter og smiler dit Øje i Møde;
+   Titter og smiler Dit Øje imøde;
    Hun tager det ikke saa nøje,
    Om Du dvæler lidt længe derved.
 
 Er først Samtalen kommen paa Gled,
-   Saa løfter hun Skuldren og ivrer med Armen,
+   Saa løfter hun Skuldren og ivrer med Armen.
    Haandfladen svinger i Bugtninger bløde
    Fremad og opad og ind imod Kjolen.
    Det er Barnet fra Byen, hvis Vogn er Gondolen.
 
-Og hun bugter sig ind gennem Karnevalsmængden,
+Og hun bugter sig ind gennem Karnevalsmængden.
    Som dreves hun frem ved den lydløse Aare,
    Og Øjet spiller og Haanden ror;
-   Giv et Vink: hun vil standse, saa saare
-   Hun ser, Du er i hendes Spor.
+   Giv et Vink: hun vil stanse, saa saare
+   Hun sér, Du er i hendes Spor.
 
 Hun vil vugge Dig bort i et Blund
    Med Syner, som ingen Tizian maler.
    I vil glide ad tavse Kanaler
    Med Øje i Øje og Mund ved Mund.
-   Aldrig din Læbe om Farten taler,
+   Aldrig Din Læbe om Farten taler,
    Du er stum fra den samme Stund.
+</body>
+</poem>
+
+<poem id="drachmann2018021642">
+<head>
+    <title>Adelina drømmer</title>
+    <firstline>Der har været En ved min Dør inat</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 112-113.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Der har været En ved min Dør inat.
+Jeg havde dog Krogen i Øskenen sat,
+Havde lukket forsvarligt og stænget mig inde,
+Man véd ej hvad Knøsene kan faa isinde.
+Krogen er af og Øskenen brudt,
+Mine Sko ved Døren tilside skudt.
+
+Der har været En ved mit Bord inat.
+I Orden havde jeg Alt forladt;
+Viften og Shalet er kastet tilside,
+Der er Klat paa Papiret, det blændende hvide.
+Man har taget sig Frihed med Blæk og med Pen,
+Og skrevet: »Jeg kommer imorgen igen«.
+
+Der har været En i min Drøm inat.
+Jeg syntes, jeg havde ham Stævne sat,
+Syntes, han bøjed sig over min Pude
+Og hvisked: Det blæser saa koldt derude!
+Han frøs, den Stakkel, han bad saa ømt.
+Madonna! hvor har jeg dog selsomt drømt!
+</body>
+</poem>
+
+<poem id="drachmann2018021643">
+<head>
+    <title>Maanereflexer</title>
+    <firstline>I Maanestraalerne funkler</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, p. 114.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+I Maanestraalerne funkler
+Markuskirkens Portal.
+Saa kommer en Sky og fordunkler
+Paa Himlen den gyldne Oval.
+
+En Skønhed. <w>Hun</w> har Dig til Bedste.
+Nu svinder Kirke og Plads.
+Til Gengæld viser det næste
+Maaneglimt Dogens Palads.
+
+En Donna med tusindfold Ynde,
+Sejersbevidst og koket.
+Hun slipper kun for at begynde
+Paany sit hildende Næt.
 </body>
 </poem>
 
 <poem id="drachmann1999052228">
 <head>
-   <title>St. Elena, I</title>
-   <toctitle>St. Elena, I</toctitle>
-   <indextitle>St. Elena, I</indextitle>
-   <firstline>Vi læste jo alle, dengang vi var smaa</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>St. Élena</title>
+    <firstline>Vi læste jo alle, den Gang vi var smaa</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 115-118.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Vi læste jo alle, dengang vi var smaa,
+<nonum><center>I.</center></nonum>
+
+Vi læste jo alle, den Gang vi var smaa,
 Om det Land i det lokkende Fjerne.
-Det flød som en Ø i det duftsvangre Blaa
+Det flød som en Ø i det duftsvangre Blaa,
 Med Kirker, Paladser og Skove paa,
-Men aldrig kunde vi Øen naa,
+Men aldrig kunde vi Øen naae,
 Og vilde dog alle saa gerne.
-
 Naar med bugnende Sejl i den høje Mast
-Vi styred mod det, som vi tro'de stod fast,
-Hist i det lokkende Fjerne;
-Saa var det en Bobbel og Bobbelen brast;
+Vi styred mod Det, som vi tro'de stod fast,
+Hist i det lokkende Fjerne,
+Saa var det en Bobbel, og Bobbelen brast;
 Det forsvandt som en dalende Stjerne.
-</body>
-</poem>
 
-<poem id="drachmann1999052229">
-<head>
-   <title>St. Elena, II</title>
-   <toctitle>St. Elena, II</toctitle>
-   <indextitle>St. Elena, II</indextitle>
-   <firstline>Til Aftenklokkernes dæmpede Klang</firstline>
-   <quality>korrektur1,kilde</quality>
-</head>
-<body>
+<nonum><center>II.</center></nonum>
+
 Til Aftenklokkernes dæmpede Klang
    Tændes nu Stjerne ved Stjerne.
    Der ligger en Ø i det Fjerne;
-   Der var jeg saa mangen en Gang.
+   Dér var jeg saamangen en Gang.
 
 Dér sad jeg ved mørke Cypressers Fod,
    Under drømmende Pinier laa jeg,
-   Mod Solen, den vigende, saa' jeg,
+   Mod Solen,- den vigende, saa' jeg,
    Til Synet mig helt forlod.
 
 Da følte mit blændede Øjepar,
@@ -1573,59 +2385,172 @@ En Skønhed, bleg, paa en øde Ø,
 Hun aander næppe, hun sidder saa stum,
    Ej Øjelaagene dirre,
    Som Glas Pupillerne stirre
-   Ud i det uhyre Rum. -
+   Ud i det uhyre Rum. —
 
 Til Aftenklokkernes dæmpede Klang
    Tændes nu Stjerne ved Stjerne.
    Der ligger en Ø i det Fjerne;
    Dér var jeg for sidste Gang.
-</body>
-</poem>
 
-<poem id="drachmann1999052230">
-<head>
-   <title>St. Elena, III</title>
-   <toctitle>St. Elena, III</toctitle>
-   <indextitle>St. Elena, III</indextitle>
-   <firstline>Disse Blomster, jeg fik af det syge Barn</firstline>
-   <quality>korrektur1,kilde</quality>
-</head>
-<body>
+<nonum><center>III.</center></nonum>
+
 Disse Blomster, jeg fik af det syge Barn,
 Bærer jeg nu paa mit Bryst.
 Oleander, Violer og Laurbær.
 Og Blomsterne væver og fletter et Garn,
-
 Jeg mærker det ikke, det gaar saa tyst;
 Men i Maskerne snart er jeg hildet.
-Mit Hoved synker; hvor vil Du, min Fod?
+Mit Hoved synker; hvor vil Du min Fod? —
 Tilbage til Øen, hvor Barnet stod
 Og plukked og gav af sin Overflod:
 Oleander, Violer og Laurbær.
-
 Det lægger sig sødligt om hver en Sans,
 Stjernerne straaler med dobbelt Glans,
 Mens ene langs Stranden jeg vanker.
 Duftende Kys og en Laurbærkrans;
-Bort, urolige Tanker; -
-Det er farlige Blomster, de sætter Frugt.
+Bort, urolige Tanker! —
+Det er farlige Blomster; de sætter Frugt.
 Ak, Barnet var voksent og Barnet var smukt.
+</body>
+</poem>
+
+<poem id="drachmann2018021645">
+<head>
+    <title>I Gondolen</title>
+    <firstline>De bar mig i stille Timer</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 119-122.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<nonum><center>I.</center></nonum>
+
+De bar mig i stille Timer
+S. Giorgios Kirke forbi;
+Bærerne det var Bølger,
+De sang en Choralmelodi.
+
+Natten var vellugtsvanger.
+Mit bævende Øje saa1
+Op mod det straalende, store
+Stjernebestrøede Blaa.
+
+Jeg følte Bygninger glide
+Forbi mig, store og smaa;
+Jeg stirred bestandig ivejret
+Fra Baadens Bund, hvor jeg laa.
+
+Jeg vidste, hver Sten i Muren
+Var plettet af Tidernes Skrift,
+Jeg vidste, hver straalende Tinde
+Var revnet med Slægternes Rift.
+
+Jeg vidste, jeg selv var en saadan
+Enkelt, løsreven Sten,
+Mine Venner kalkede Grave
+Over skrøbelige Ben.
+
+<nonum><center>II.</center></nonum>
+
+Og medens jeg saaledes drømte,
+Saa knuged jeg hæftig min Haand,
+Som vilde jeg rive isønder
+Saa mangt et usynligt Baand.
+
+Der blev mig med et saa snevert
+I Baadens hulede Bul,
+Jeg følte Lyst til at sparke
+De kalkede Grave omkuld.
+
+Men Stjernerne stirred alvorlig,
+Hovedrystende ned:
+Den kluntede Menneskemurbrok',
+Som ovenikøbet er vred!
+
+Saa tog de hinanden ved Haanden
+Og gik i et mægtigt Chor,
+Og sang, som der aldrig synges
+Paa denne ustadige Jord. —
+
+Jeg bares i stille Timer
+S. Giorgios Kirke forbi.
+De sang deroppe. Det kaldes
+Sfærernes Harmoni.
+</body>
+</poem>
+
+<poem id="drachmann2018021646">
+<head>
+    <title>Lagunedrømme</title>
+    <firstline>Naar Natten er helliget Farter</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 123-125.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Naar Natten er helliget Farter
+Ved Maaneskin i Gondol,
+Saa taaler man ikke rigtigt
+Om Dagen den kære Sol.
+
+Jeg ligger paa Lidoens Strande
+Og skærmer mod Solen mit Blik,
+Og dysses isøvn og drømmer
+Til Bølgernes sagte Musik.
+
+Jeg drømmer, at Tiden er stanset,
+At Viseren paa dens Uhr
+Har gjort i Cirkler tilbage
+En lang og møjsommelig Tur.
+
+Til Højbords sidder jeg bænket
+Med Venner i festlig Sal,
+Og ved min Side en Kvinde
+Kredenser den gyldne Pokal.
+
+Og Vennerne ere saa glade,
+De synger en flerstemmig Sang.
+Jeg følger med Smil dens Strofer;
+Jeg digted den selv engang.
+
+Jeg digted den Sang til hende,
+Som nu kredenser min Vin;
+Og Stroferne bæres paa Toner
+Af Cither og Violin.
+
+Musik, og en Kvinde ved Siden,
+Og Venner om Bordet i Krans! —
+Saa griber jeg selv Violinen,
+Og stryger en Dissonans. —
+
+Der raader bestandig i Drømme
+En egen skadefro Magt.
+For Søvn ved den syge Lagune
+Man tage sig vel iagt.
+
+Jeg vaagner, og ryster af Kulde;
+Jeg ligger paa Lidoens Strand.
+Jeg kigger paa Uhret. Det løber
+Omkap med Lagunernes Vand.
 </body>
 </poem>
 
 <poem id="drachmann1999052231">
 <head>
-   <title>Solnedgang</title>
-   <toctitle>Solnedgang</toctitle>
-   <indextitle>Solnedgang</indextitle>
-   <firstline>Ved Santa Maria della Salute</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Solnedgang</title>
+    <firstline>Ved Santa Maria della Salute</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 126-128.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ved Santa Maria della Salute,
 Under den høje Portal,
 Langs Trappen, som sænker sit Amphiteater
-Ned i den store Kanal,
+Ned i den store Canal,
 Dér hviled i Dagens døende Skær,
 Lejret i Grupper hist og her,
 Arme og Benene bare,
@@ -1633,30 +2558,30 @@ Kroppe som Bronce, Laser til Klæ'er,
 En ubevægelig Skare.
 
 Det var, som en Maler fra Republikens
-Storhed, med Opbud af alt,
+Storhed, med Opbud af Alt,
 Flid og Begejstring, hvad Sekler rummer,
 Havde stillet hver enkelt Gestalt.
-Her trængte et tiziansk Hoved sig frem,
+Her trængte et tiziansk Hoved sig frem.
 Her vred sig et stort, tintorettosk Lem,
 En Paolo viste Profilen;
 En Fyr i Forkortning havde en Rem
 Af Huden fra Tiepolo-Stilen.
 
-Og alt saa højtideligt, ret som Døden,
-Den greske, den venlige Død,
-Havde standset sin Gang paa Trappen med omvendt
-Fakkel og traadt paa dens Glød.
-Dér hviled de alle og stirred imod
-Den store Kanal, der flød som en Flod
+Og Alt saa højtideligt, ret som om Døden,
+Den græske, den venlige Død,
+Havde stanset sin Gang paa Trappen med omvendt
+Fakkel, og traadt paa dens Glød.
+Dér hviled de alle, og stirred imod
+Den store Canal, der flød som en Flod
 Med Skyggerids over sin Flade;
 Fattige Rids fra en Overflod
 Af Paladser med Guldfaçade.
 
 Venezias Sønner. Den sidste Balanca<note>I Folkesproget: 10 Centesimi.</note>
-I Barken ved Aaren var tjent.
+I Barken, ved Aaren var tjent.
 Pokker skulde da slide længer,
 Med Dagen var Donten endt.
-Hist sank et Hoved, men ganske tyst,
+Hist sank et Hoved, men ganske tyst
 Ned paa det blottede, brune Bryst;
 En Dreng begyndte at synge.
 En underlig dæmpet, hendøende Røst, -
@@ -1666,21 +2591,22 @@ Musik til den malede Klynge.
 
 <poem id="drachmann1999052232">
 <head>
-   <title>Ved Sukkenes Bro</title>
-   <toctitle>Ved Sukkenes Bro</toctitle>
-   <indextitle>Ved Sukkenes Bro</indextitle>
-   <firstline>Maanen skinner fra skyfri Luft</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Ved ,,Sukkenes Bro''</title>
+    <firstline>Maanen skinner fra skyfri Luft</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 129-132.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Maanen skinner fra skyfri Luft
 Paa Marmorbroerne ned,
-Skinner for Resten paa hele Byen
-Saa klart, som ingen i Norden ved,
+Skinner forresten paa hele Byen
+Saa klart som Ingen i Norden véd,
 Tænder en Glød i hvert fængeligt Bryst,
 Vækker en Lyst
-Saa overvættes
-Som ingen kan standse, af intet kan mættes.
+Saa overvættes,
+Som Ingen kan stanse, af Intet kan mættes.
 
 Fuldmaanen skinner paa Byen.
 
@@ -1690,12 +2616,12 @@ Det lokker, det vinker omkring mig. O Gud!
 At jeg ikke kan omfavne Staden!
 At jeg ikke kan knuge disse Former til mit Bryst,
 Segne med et Marmorkys paa Læben!
-Sovende By, med din fristende Røst,
+Sovende By, med Din fristende Røst,
 Den Fremmede søgte sig Hvile og Trøst,
-Og du hidser hans umættelige Stræben!
+Og Du hidser hans umættelige Stræben!
 
 Her ligger Byen
-Ved den blanke Kanal,
+Ved den blanke Canal,
 Oplyst af Maanen
 Som en glimrende Sal,
 Hvor Gæsterne alle er som hjemme;
@@ -1703,73 +2629,74 @@ Her ligger Byen, hvor det lumpneste Pak
 Er Husbond i Herrernes Festgemak,
 Og hvor Tiggeren, som paa Piazzaen spanker,
 Har Borgerret og Stemme
-I et Skønheds Rige uden Skranker. -
+I et Skønheds Rige uden Skranker. —
 
 En Skønhed, viet og kaldet til Lyst,
 Hæver nu Byen det blændende Bryst,
-Lægger sin Finger paa Læben tyst
+Lægger sin Finger paa Læben tyst,
 Og vinker.
-Hun har Smykker paa Panden og Guld om Arm,
+Hun har Smykker om Panden og Guld om Arm,
 Fra tusinde Stene om Hals og Barm
 Det blinker.
-Hvor var nu en saadan, som stod imod,
+Hvor var nu en Saadan, som stod imod,
 Og kasted sig ej for den Skønnes Fod,
 Hun, som bestandig saa blændende stod
-Og saa' de mange i Støvet? -
-Jeg kommer, jeg giver mig i din Vold,
-Bedende rækker jeg efter dit Skød.
-Men hvi er din Haand saa isnende kold?
+Og saa' de Mange i Støvet? —
+Jeg kommer, jeg giver mig i Din Vold,
+Bedende rækker jeg efter Dit Skød.
+Men hvi er Din Haand saa isnende kold?
 
 Du er død, Venezia, død!
 
-Og bag mig, over den mørke Kanal,
+Og bag mig, over den mørke Canal,
 Som aldrig varmes af Solens Lue,
 Aldrig er Spejl for Maanens Oval,
 Svæver i Luften en Bue.
 Den krummer sig ud som en Kæmpearm,
 Den bærer, som i en hængende Karm,
 Fra Dogens Vindu til Fængslets Tag,
-Hvad er det? - En Sarkofag?
+Hvad er det? — En Sarkofag?
 
-Døden nær Dogen! Jeg tvivler ej mer.
+Døden nær Dogen! Jeg tvivler ei mer.
 Det er »Sukkenes Bro«, jeg ser.
 </body>
 </poem>
 
 <poem id="drachmann1999052233">
 <head>
-   <title>Jeg hører i Natten den vuggende</title>
-   <toctitle>Jeg hører i Natten den vuggende</toctitle>
-   <indextitle>Jeg hører i Natten den vuggende</indextitle>
-   <firstline>Jeg hører i Natten den vuggende</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Jeg hører i Natten den vuggende</title>
+    <firstline>Jeg hører i Natten den vuggende</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 133-135.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg hører i Natten den vuggende
-Lyd fra Venezias Vand;
+Lyd af Venezias Vand;
 Det kommer hid over
 Med klagende Vover,
 Som nærme sig, langsomt dukkende
-Under den buede Bro,
+Under den buede Bro.
 De komme som smaabitte Dværge
 Fra Marmorpaladsernes Bjerge
-I Rader paa to og to.
+I Rader paa To og To.
 De bære en Byrde, de synge en Sang,
 En Ligbegængelse er deres Gang;
-Stemmerne slaa mig i Møde:
+Stemmerne slaa mig imøde:
    Snehvide, Snehvide, Du døde!
 
 Jeg øjner i Natten det blændende
-Syn af et hvidklædt Barn
+Syn af et hvidklædt Barn,
 Med voksblege Kinder,
 Som drager, som minder,
 Som gør, at min Pande bli'r brændende,
-Gør, at mit Hjerte bli'r Is.
+Gør, at mit Hjærte bli'r Is.
 Det rolige Strøg over Øjet,
 Og Hænderne sammenføjet
 Om Brystet paa barnlig Vis.
 Fra Barmen, som højner sig kysk og ren,
-Nedglider en grøn Oleandergren; -
+Nedglider en grøn Oleandergren; —
 Hvi var det, Stemmerne løde:
    Snehvide, Snehvide, Du døde!
 
@@ -1782,40 +2709,94 @@ Ud, hvad de tegnede før.
 De drage, de smaabitte Dværge,
 Tilbage til deres Bjerge
 Ind gennem Morgnens Dør.
-Jeg sidder paa Tærkslen forstandig og klog.
+Jeg sidder paa Tærsklen forstandig og klog.
 Men hvi kan et Syn i en Æventyrbog
-Saadan om Natten os møde - ?
+Saadan om Natten os møde —?
    Snehvide, Snehvide, Du døde!
+</body>
+</poem>
+
+<poem id="drachmann2018021650">
+<head>
+    <title>Vino Conegliano</title>
+    <firstline>Hvi sidder Du Fremmede tavs og tvær</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 136-138.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Hvi sidder Du Fremmede tavs og tvær
+Bag Bordet henne i Krogen?
+Du sukker kanske for en Hjertenskær,
+Eller søger Du nogen?
+Flyt Dig herhid paa de Glades Bænke,
+Del vore Løjer og lyt til vor Sang,
+Madonna hun sørger for Verdens Gang,
+Du kom ej herhid for at tænke.
+Der er Piger, hvorhen Du i Verden gaar,
+Du kan finde dem her, eller i Murano.
+Vinen læger de dybeste Saar:
+Kammerat, drik vino conegliano!
+
+Ej sandt, Du tik dog et aabent Blik
+Af skælmske Guder paa Vuggen
+For alt, hvad som ler i den liflige Drik
+Og som klukker i Krukken!
+Fik Du tillige et aabent Øje,
+Blik for det Flitter, som Verden bær':
+Nuvel, saa træk imod Verden fra Læ'r,
+Din Iver skal os fornøje.
+Du kan slaa her i Bordet saa meget Du vil,
+Slaa som en republikansk Capitano;
+Værten han lægger Bordplade til:
+Kammerat, drik vino conegliano! ....
+
+I fejler! Thi sørger og søger jeg end,
+Og fik jeg end Gaver paa Vuggen,
+Saa rykker jeg ej blandt de Glade hen
+Ved Bordet om Krukken.
+Sprudler en Kilde, som Tørsten køler,
+Saa har dens Udspring et højere Væld,
+Med Bukkespring slaar man ej Sorgen ihjel,
+Deres Fod gennem Slaget man føler.
+Lad os mødes paa Tinderne, dersom I kan,
+— Mens sana, véd I, in corpore sano —
+Dér er min Kilde, og jeg Eders Mand.
+Behold Eders vino conegliano!
 </body>
 </poem>
 
 <poem id="drachmann1999052234">
 <head>
-   <title>Adria</title>
-   <subtitle>Farvel fra Lido</subtitle>
-   <toctitle>Adria</toctitle>
-   <indextitle>Adria</indextitle>
-   <firstline>Farvel Du Hav, som Horats besang</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Adria!</title>
+    <firstline>Farvel Du Hav, som Horats besang</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 139-141.</note>
+    </notes>
+    <keywords>horats</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<nonum><small><right><i>Farvel fra Lido.</i></right></small></nonum>
+
 Farvel Du Hav, som Horats besang,
-Og kaldte saa grusom, barbarisk og andet -
+Og kaldte saa grusom, barbarisk og andet; —
 Den smidige, romerske Spytslikkerskjald,
 Som kunde paa Fingrene Føddernes Fald,
 Var som Katten bange for Vandet.
 
 Paa Villaen sad han, skaldet og fed,
 Og væved den snusfornuftigste Lære,
-Om hvordan man vasker sin Stilebog ren,
-Og hvordan man tækkes Hs. Højhed Mæcen
+Om, hvordan man vasker sin Stilebog ren,
+Og, hvordan man tækkes Hs. Højhed Mæcen
 Ikke mindre end Frøken Hetære.
 
 O Adria, gab med en vældig Hiat
 Og stænk over Stranden en Række Vokaler,
 Og blæs en Fanfare, en Ryttersang,
-Og send dine Strømme, at rense en Gang
-Alle Flaccers sabiniske Kastaler!
+Og send Dine Strømme, at rense engang
+Alle Flaccers sabinske Kastaler!
 
 Vi trænger, vor Tid, til en Renselsesfest
 For alle de Stillevands sivende Pytter;
@@ -1826,50 +2807,52 @@ Til en rask galopperende Rytter.
 Vi trænger, vor Tid, til et dygtigt Choc,
 Som kaster i Støvet de ældgamle Byrder,
 Til saadan en rigtig forvoven Ulan,
-Der viser sig hui, som den gamle Pan,
-Og forfærder de fløjtende Hyrder. -
+Der viser sig, hui, som den gamle Pan,
+Og forfærder de fløjtende Hyrder. —
 
-Farvel. Du blaagrønne Ærens Mark,
+Farvel, Du blaagrønne Ærens Mark,
 Hvor Tusinder venezianske Galejer,
-Som prustende Heste, med Vinden om Kap,
-Med raslende Staal over Sadelknap,
+Som prustende Heste, med Vinden omkap,
+Med raslende Staal over Saddelknap,
 Løb ud hvert Foraar til Sejer.
 
-Du svulmer i Dag adriatiske Hav,
-Som vogted Du over din gamle Ære,
+Du svulmer idag, adriatiske Hav,
+Som vogted Du over Din gamle Ære,
 Som følte Du selv Dig en saadan Kaptajn,
 Med Brystet mod Stormen og Kuglernes Regn,
 Den vældigste Condottiere.
 
 Erindrer Du Lønnen, som Byen Dig gav?
-Erindrer Du <i>det</i>, som din Hu da besjæled?
-De rakte en Ring Dig, den hang paa dit Bryst,
+Erindrer Du det, som Din Hu da besjæled?
+De rakte en Ring Dig, den hang paa Dit Bryst,
 Da bæved Du, Hav, af den højeste Lyst:
 Med Venezia blev Du formælet!
 
-Jeg tager min Sang fra dit blaagrønne Dyb,
-Jeg tager mit Maal fra din knejsende Bølge;
+Jeg tager min Sang fra Dit blaagrønne Dyb,
+Jeg tager mit Maal fra Din knejsende Bølge;
 Jeg tager den Ring, som Du selv har tabt,
 Jeg tager den Lykke, jeg selv har mig skabt,
-<i>Din</i> Brud skal til Norden mig følge.
+<w>Din</w> Brud skal til Norden mig følge.
 </body>
 </poem>
+
 </content>
 </section>
 
-<section level="1">
+<section level="2">
 <head>
-   <toctitle>Epilog</toctitle>
+    <title>Epilog</title>
 </head>
 <content>
 
 <poem id="drachmann1999032235">
 <head>
-   <title>Broget Løv</title>
-   <toctitle>Broget Løv</toctitle>
-   <indextitle>Broget Løv</indextitle>
-   <firstline>Se, jeg rækker Dig en Krans</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Broget Løv</title>
+    <firstline>Se, jeg rækker Dig en Krans</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 142-144.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Se, jeg rækker Dig en Krans
@@ -1883,25 +2866,24 @@ Farvespillet dobbelt skønt,
 Dobbelt fint forgrenet Aaren,
 Mere kunstnerisk den hele
 Slyngning i dens mindste Dele,
-End en Krans, som jeg i Vaaren
+End den Krans, som jeg i Vaaren
 Slynged let af Lysegrønt.
-
 Har jeg saaret Dig maaske?
 Vil om Vaaren ej Du mindes?
-Lad mig i dit Øje se,
+Lad mig i Dit Øje se,
 Om Tilgivelse der findes!
 
 Dette Blik, ja det var mit,
 Mit i hine Foraarsdage,
 Hvormed nu kun Høstens Klage
-Holder som en saaret Ganger,
+Holder, som en saaret Ganger.
 Som en mødig Vandrer Trit.
 Dengang red jeg lystigt Ridt,
 Prinseridt i Fløjelskappen,
-Med min Glut paa Sadelknappen,
+Med min Glut paa Saddelknappen
 Over Verden milevidt.
 Og jeg bøjed mig forover,
-Og jeg drak dit lyse Smil;
+Og jeg drak Dit lyse Smil;
 Barmen steg i fulde Vover,
 Og jeg slynged om Dig Armen,
 Kyssed Øjet, krysted Barmen,
@@ -1912,23 +2894,22 @@ Nu er jeg en Spillemand.
 Jeg har lukket Prinsen ude,
 Jeg er bleven angst og bange
 For den høje Herskerstand.
-
 Jeg har vandret paa min Fod,
 Hvor de stejle Dybder lude;
-Men er altid sikrest, hvor
+Man er altid sikrest, hvor
 Kun paa to Ben Rejsen gaar.
-Hvor de andre sad til Hest,
-Har jeg gaaet, drømt og spillet,
+Hvor de Andre sad til Hest,
+Har jeg gaaet, drømt, og spillet,
 Set dem smile, gaaet sindig,
-Øvet mig og glemt al Verden,
+Øvet mig, og glemt al Verden,
 Til en Dag en Verden lukked
-Porten op og bad: Træd ind!
+Porten op, og bad: Træd ind!
 
-Her er Blomster fra mit Hjerte,
+Her er Blomster fra mit Hjærte,
 Her er Frugter fra mit Sind,
 Modne Frugter; vær ej bange;
 Her er alt mit Gods og Land.
-Tag mod Gaven, glem dens Giver:
+Tag mod Gaven, glem dens Giver;
 Husk: jeg er en Spillemand;
 Tag mod mine Sange!
 </body>
@@ -1936,27 +2917,28 @@ Tag mod mine Sange!
 
 <poem id="drachmann1999032236">
 <head>
-   <title>I Havestuen</title>
-   <toctitle>I Havestuen</toctitle>
-   <indextitle>I Havestuen</indextitle>
-   <firstline>Ak, gode Kære, sæt Dem hen og syng mig en Sang</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>I Havestuen</title>
+    <firstline>Ak, gode Kære, sæt Dem hen og syng mig en Sang</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 145-146.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ak, gode Kære, sæt Dem hen og syng mig en Sang,
-De andre er i Haven, vi er ene.
+De Andre er i Haven, vi er ene.
 Paa dette Blad, som egner sig
 For Pennen særlig, tegner jeg
 Imidlertid et Rids af Lindens Grene.
 
 En Pennetegning. Det var ret; slaa Tonarten an!
-Den klinger - ja jeg véd ej - saa forgangen.
-Nej vend Dem ej saa hyppig om
-At se paa mig, hvor langt jeg kom,
+Den klinger — ja jeg véd ej — saa forgangen.
+Nej vend Dem ej saa hyppig om,
+At se paa mig, hvor langt jeg kom;
 Jeg passer Lindetræet, pas De Sangen!
 
-Erindrer De, det var en Aften - hør blot en Gang,
-Og afbryd hverken Spillet eller Sangen -
+Erindrer De, det var en Aften — hør blot en Gang,
+Og afbryd hverken Spillet eller Sangen —
 Da Maanen stod saa rød og rund,
 En dejlig Sommeraftenstund,
 Saa gik vi hen til Linden, langs ad Gangen.
@@ -1964,73 +2946,74 @@ Saa gik vi hen til Linden, langs ad Gangen.
 Der stod en Bænk; De var lidt træt, og saa tog vi Plads,
 Vi sad saa tavse, Side om Side;
 De nynned, Melodien kun;
-Hvad Teksten var, til denne Stund
+Hvad Texten var, til denne Stund
 De røbed ej, og jeg fik ej at vide.
 
-Men nu, ja hør, nu synger De den selvsamme Sang,
-Og Ordene sig dybt i Hjertet trænger:
+Men nu, ja hør, nu synger De den selv samme Sang,
+Og Ordene sig dybt i Hjærtet trænger:
 »Ak, tal dog til mig, røb det kun;
 »Du skal faa Svar med Blik, med Mund;
-»Jeg el....« Men hvorfor synger De ej længer?
+»Jeg el ....« Men hvorfor synger De ej længer?
 </body>
 </poem>
 
 <poem id="drachmann1999032237">
 <head>
-   <title>Afsked i Høst</title>
-   <toctitle>Afsked i Høst</toctitle>
-   <indextitle>Afsked i Høst</indextitle>
-   <firstline>Jeg lytted til Stormens manende Røst</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Afsked i Høst</title>
+    <firstline>Jeg lytted til Stormens manende Røst</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 147-149.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg lytted til Stormens manende Røst,
-Da jeg laa ved dit Bryst.
-Du fatted mit Hoved i kærlige Hænder
+Da jeg laa ved Dit Bryst.
+Du fatted mit Hoved i kærlige Hænder,
 Og nynned mit Øre den Vise for,
 Som har tusinde Vers, og som aldrig, som aldrig ender.
 
 Det var Visen om Kvindens trofaste, ømme,
-Evige Elskov - og Mandens ustadig Drømme.
+Evige Elskov — og Mandens ustadige Drømme.
 
 Jeg lytted til Stormens susende Røst
 Derude i Høst.
-Mit ene Øre laa tæt til dit Hjerte,
+Mit ene Øre laa tæt til Dit Hjærte,
 Det suged de milde Bebrejdelser ind,
 Og de faldt paa mit Sind
-Med Sandhedens Vægt og dens Smerte.
+Med Sandhedens Vægt og dens Smærte.
 
 Mit andet Øre laa aabent for
 Den manende Vind,
-Som strøg over Land,
+Som strøg over Land
 Og som kaldte i Vaaben mit rullende Blod,
 Alle vore Venner, mit unge Mod,
-Og din Fjende, den graa Forstand.
+Og Din Fjende, den graa Forstand.
 
-Jeg hørte Stormen, jeg laa ved dit Bryst,
+Jeg hørte Stormen, jeg laa ved Dit Bryst,
 Jeg lytted, delt, til den dobbelte Røst.
 Jeg var en Mand.
 
 Og nu er Dagen for Afsked kommen.
 Hej op, I Svende, læg Gjord om Hest,
 Min Ransel paa Sadlen, og glem ikke Kappen,
-Pistoler i Hylstret, og Sværd over Knappen,
+Pistoler i Hylstret, og Sværd over Knappen;
 Nu ville vi ride af Gaarde i Fred,
-Men kommer der en os i Vejen,
+Men kommer der En os i Vejen,
 Vi rider ham ned!
 
 Og Træerne vare saa gule
-Langs ad den dybe Allé,
+Langs ad den dybe Allee,
 Bag Skyerne ikke en Smule
 Solskin at se:
 Saa ville vi lysne vor Vej med en Sang;
 Syng mig den Vise, som var min Fryd,
 Stem op, I Svende, til Gigernes Lyd:
-»Vi kommer, mit Hjerte, tilbage engang!«
+»Vi kommer, mit Hjærte, tilbage engang!«
 
-Og naar jeg standser derude i Slaget
+Og naar jeg stanser derude i Slaget,
 Og hviler mig ensom fra Tumlen og Braget,
-Saa vil jeg blotte mit Hoved og lytte
+Saa vil jeg blotte mit Hoved, og lytte
 Og høre en Vise, jeg lærte engang,
 Som har mange Vers, og som aldrig ender:
 Den stille Ventendes Sang!
@@ -2039,39 +3022,38 @@ Den stille Ventendes Sang!
 
 <poem id="drachmann1999032238">
 <head>
-   <title>Den sidste Svale</title>
-   <toctitle>Den sidste Svale</toctitle>
-   <indextitle>Den sidste Svale</indextitle>
-   <firstline>Jeg stirred op i den blegnende Luft</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Den sidste Svale</title>
+    <firstline>Jeg stirrede op i den blegnende Luft</firstline>
+    <notes>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 150-153.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Jeg stirred op i den blegnende Luft,
-Hvor Guldstriber svømmed som Sildestimer;
+Jeg stirrede op i den blegnende Luft,
+Hvor Guldstriber svømmed, som Sildestimer;
 Jordvinden slog imod Skyen en Duft
 Af gærende sød, oversanselig Klage,
 Af al den Rædsel, der viger tilbage
 For Vintrens Iskys, og al den Jubel,
 Der klynger sig fast, med Feberkys fast
-Til Sommerens sidste, lyksalige svindende Timer.
+Til Sommerens sidste, lyksalige, svindende Timer.
 
-Mit modige Hjerte skjalv som et Løv,
-Der hvirvles af Sted over vinkende Skove:
+Mit modige Hjærte skjalv som et Løv,
+Der hvirvles afsted over vinkende Skove:
 »Du hastige Flyver for Vinden, tøv,
-Tag os med paa din Flugt gennem Luftens vigende Vove!«
-
+Tag os med paa Din Flugt gennem Luftens vigende Vove!«
 Sørgmodig jeg saa' mod de gule Hænder,
 Der vifted Farvel med en pjusket Barret.
-
 Nu er vi fattige alle,
 Aaret er sygt og træt,
 Sommeren ender,
 Skyen har Istaarer grædt!
 
 Vi sad, hvor Ranken har slynget
-I Lindenes Grene sit lukkende Net,
+I Lindenes Grene sit lukkende Næt,
 Tæt til hinanden klynget,
-Tavse, til Afsked beredt, paa vort Mødesteds hellige Plet.
+Tavse, til Afsked beredt, paa vort Mødesteds hellige Plet
 Vi skulde vel sige det sidste Ord,
 Vi havde ej Mod til at tale;
 Jeg stirred mod Guldstribens svindende Spor,
@@ -2079,22 +3061,24 @@ Jeg øjned i Luften, mod Syden paa Flugt,
 En ensom flyvende Svale.
 
 Det var den sidste. Dens Vingespids
-Skar som et Knivsblad i Æthervunden;
+Skar, som et Knivsblad, i Æthervunden;
 Saaret lukked sig lynsnart til;
 Og saa var Svalen forsvunden.
 
 Jeg fulgte dens Kurs. Saa greb jeg den Haand,
 Som søgte saa ængstlig min at bevare:
-Kæreste Hjertensven, Jeg maa gaa; lad mig fare!
+Vi skulde vel sige det sidste Ord
+Kæreste Hjærtensven,
+Jeg maa gaa; lad mig fare!
 Saa' Du den Hilsen, jeg fik:
 Hvorfor da Tiden forhale?
-Jeg ser paa dit Blik,
+Jeg ser paa Dit Blik,
 Du forstaar, jeg maa gaa; jeg er Svale!
 
 Jeg hilser med Kvidren min egen Natur,
 Naar Middelhavsvoven jeg atter skuer;
 Der toner en Sang i den gladeste Dur
-Derop fra Landet, hvor Røgstøtten truer,
+Derop fra Landet, hvor Røgstøtten truer
 Og Solen smiler og kysser de rødmende Druer.
 
 Den Sol, som hist er en fyrig Viv,
@@ -2102,8 +3086,7 @@ Med Smil og Kærtegn som Elskerinden,
 Er her en Husmoder streng og kold,
 Som ligger hveranden Dag i Kiv
 Med Regnen og Vinden;
-
-<i>Hun</i> hænger paa Loftet sin Parasol
+Hun hænger paa Loftet sin Parasol
 De tre Fjerdingaar eller mere,
 At Regnen den ej skal spolere;
 Og Stormen synger sin evige Mol,
@@ -2116,20 +3099,171 @@ De putter i Revner og Sprækker sig ind,
 De slaar sig igennem, som de kan bedst,
 Og tager Midlerne ikke saa nøje;
 De fik en hjemmegjort Trøje,
-Som skærmer mod Regn og mod Blæst .....
+Som skærmer mod Regn og mod Blæst. ....
 
 Men kommer Vaaren med solrige Dage,
-Med blinkende Skyer som Sildestimer,
+Med blinkende Skyer, som Sildestimer,
 Og korte Nætter, som rækker Lyset
-En Haand over Dagningens dæmrende Timer:
+En Haand over Dagningens dæmrende Timer
 Saa kommer Svalen tilbage.
-Saa fanger Du glad din Flyver ind,
-Saa tændes der Blus paa din blege Kind;
+Saa fanger Du glad Din Flyver ind,
+Saa tændes der Blus paa Din blege Kind;
 Ej mer' skal vi Afskeden friste:
 Saa bliver Rejsen den sidste!
 </body>
 </poem>
+
+<poem id="drachmann2018021656">
+<head>
+    <title>Ved Skarritsøen</title>
+    <firstline>Jeg ser ivejret fra de hvide Blade</firstline>
+    <notes>
+        <note>Citatet stammer Goethes <xref poem="goethe2001061618"/> fra <i>Faust</i> (1808).</note>
+        <note>Teksten følger Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877, pp. 154-160.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<nonum><right><small><i>Margerete:</i> Versprich mir, Heinrich!</small></right></nonum>
+<nonum><right><small><i>Faust:</i> Was ich kann!</small></right></nonum>
+<nonum><right><small><i>Margerete:</i> Nun sag, wie hast Du's mit der Religion?</small></right></nonum>
+
+Jeg ser ivejret fra de hvide Blade;
+Min Haand, min Tanke stanser undervejs
+Paa Rejsen mod min stolte Higens Maal,
+Mod hine tidt besungne, fagre Lande,
+Mod Ærens Riger, Hædrens Fødeby,
+Der vinker, som en gylden Sommersky,
+Fjernt over Horisontens duftblaa Rande.
+
+Jeg stanser ved hin Spørgen i Dit Øje;
+Det hvilte klart og graat og dybt i mit.
+Det laa, som Søen, aaben for mit Blik,
+Og Høstens Smil gled skælvende derover.
+Oktobersolen har en selsom Art
+At smile paa. Den klipper med sit Øje.
+Og vi var To, som skulde skilles snart,
+Og vi var mødt ved Skarritsøens Vover.
+
+En Afsked ridser dybt i Sjælens Tavle
+Med Kunstnerhaandens Naal hvert lille Træk.
+I Gensynsmødet dufter Nuet væk;
+Man er saa rig, naar Savnet ligger bagved.
+Men den, som skilles, er en fattig Mand,
+Han samler hver en Skærv til Tærepenning
+Paa Rejsen, hvor ej Posten altid kan
+Fra Hjemmet bringe ham fornyet Sending.
+
+Jeg tegner ned paa disse hvide Blade:
+Den lille Skov af Siv med visne Snerler,
+Der deltes og veg Pladsen for en Bro
+Med smale Fjæle, og kun Plads for To;
+Den større Skov hang brunrød ud derover,
+Træt, som det syntes, af at bære Løvet,
+Og saa' med sænket Hoved og bedrøvet
+Sin Afmagts Billed dybt i Skarritsøens
+Forstenet kolde, blanke Spejlglasvover.
+
+Du stod med Skuldren hældet mod mit Bryst.
+Dér var jo, mente Du, Din rette Støtte;
+Og Dine lyse Lokker slynged sig
+Som Romerkvindens Blomsteroffers Kranse,
+I Gave fra det store, fulde Hjærte,
+Med Duft hen over Gudestøttens Arm.
+Du holdt min Haand — <w>Din</w> var saa blød og varm
+Jeg peged ud paa Søens stille Flade,
+Hvor Toppen af de dybe, skjulte Rør,
+Lig Smældet af en Ridepisk fremtitted,
+Og skildred, træt, af Høstens Stemning smittet
+Hvor sødt det var, at hvile nu derude,
+Vi to, i Favntag kærlig tæt forenet,
+I Evighedens Marmorsøvn forstenet,
+I salig Søvn paa Bundens Søgræspude!
+
+Vi gik tilbage fra den smale Bro;
+Da saa' Du paa mig, saadan, med <w>det</w> Blik,
+Og hvisked ganske sagte, mens vi gik:
+Hvad mener Du? Fortæl mig dog Din Tro!
+Jeg slog det hen, jeg spøgte og jeg lo:
+Det er ej saadan ment; det maa Du tro! —
+Jeg <w>vilde</w>, at det Indtryk skulde svinde.
+Og Du? Hvor findes vel paa Jord den Kvinde,
+Som ej til Øjeblikket Lid vil fæste,
+For — at fremmane Tvivlen i det næste.
+
+Og <w>nu</w>, nu rinder mig det Blik i Minde,
+Og Skarritsøens mørke Poesi
+Er mig en Bom, en Stopper paa min Rejse.
+Nuvel, for Bommen vil jeg mig befri:
+Jeg sprænger den; jeg mælder mig til Skrifte.
+
+Tilgiv en Svaghed i et Øjeblik!
+Det er min Skyld, om nu Du gaar og grunder
+I Tvivl, med Braadden i Dit lyse Sind,
+Og famler Dig i mørke Verdner ind,
+Hvor der er klamt af Svaghed, trangt af Brist
+Paa Manddoms stærke Glød og klare Gnist,
+Paa Haab og Higen efter Kærlighed.
+Saadan som den fra stolte Slægters Grene
+Er arvet til vor spinkle Stikling ned.
+
+Vær uden Frygt; jeg skriver aldrig under,
+Hvad ny' Apostlers trætte Hjærnespind
+Har fundet ud som Maal for vore Rejser:
+»En Sten, man kaster i den dybe Flod;
+Hvad vil en Sten; hvad haaber den, hvad vinder
+Den ved at være? Plump! og den forsvinder.«
+Nej, dybere i Livets Jord jeg bunder,
+End til at ruskes op med Trevl og Rod
+Og kastes hen i Grøften ved et Lune.
+Saa længe Hjærtet banker, stolt jeg knejser
+Som Vaabendrager ved det store Hof,
+Hvor ingen bleg, trangbrystet Filosof
+Dikterer Love, som min Fod skal lyde.
+Er jeg ej god, jeg er dog altfor god
+Til Drivetømmer hen ad Livets Flod,
+Som synker eller svømmer ovenpaa
+Tilfældigt ved et rent paa Maa og Faa.
+Lad og ved Magt »Tilfældigheden« staa:
+Jeg vil nok synke, men <w>først</w> vil jeg flyde!
+
+I Aaren bruser højt mit kække Blod;
+Det kalder paa mig; er dets Kalden ej
+En Førers, som er værd at vise Vej ?
+Skal slap og viljeløs jeg mig forbløde,
+Fordi der raabes paa mig fra de Døde,
+Fordi en overlæsset Lærds Forstand
+Har glemt, hvad ej hans Moder mægted glemme,
+Dengang hun tog hans Fader til sin Mand?
+Vi lytter til en sprukken, klangløs Stemme,
+Vi kryber for en krank Melankoli,
+Vi gaar omkring og snuser efter Døde;
+Skøndt der er knapt paa Sol, vi Skyggen søger,
+Vi slaar os selv ihjel i vore Bøger,
+Og lægger langsomt os i Livet øde: —
+Vi trænger til en <w>Livets</w> Poesi.
+Den vil jeg plante ud i Blomst paa Blomst
+Med kraftig Duft og Myldren langs Din Sti,
+Og give hver en Larve sin Bekomst,
+Som suger af dens Saft sin Ormeføde.
+
+Og jeg vil lytte til Dit Hjærtes Stemme,
+Og leve med Dig glad paa denne Jord,
+Hvor hvert elastisk Skridt, hvert Fodens Spor
+Indprenter dybt den Lære: <w>her</w> Du bor,
+Her laa Din Kim, og her Din Stamme gror,
+Her har Din Kjærlighed, Din Livskamp hjemme,
+Indtil, som hist ved Skarritsøens Bred,
+En gul Oktober ryster Blade ned,
+Og stæder os, to Blade, under Jord
+Til evig Hvile i sit lune Gemme .....
+
+Herpaa jeg lever, og — paa <w>det</w> jeg tror.
+</body>
+</poem>
+
 </content>
 </section>
+
 </workbody>
 </kalliopework>

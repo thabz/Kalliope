@@ -13,6 +13,8 @@ const rootStaticFiles = [
   '/sw.js',
   '/favicon.ico',
   '/robots.txt',
+  '/sitemap.xml',
+  '/google88bff7f4fb67a7b5.html',
   '/apple-touch-icon-120x120.png',
   '/apple-touch-icon-152x152.png',
   '/apple-touch-icon-180x180.png',
@@ -77,6 +79,10 @@ const redirects = [
     to: '/$1/texts/${fhandle}/titles',
   },
   {
+    from: /\/(..)\/bibliography\/(.*)/,
+    to: '/$1/mentions/$2',
+  },
+  {
     // Smid både førsteliner og titler til titler
     from: /\/flines.pl/,
     to: '/da/texts/${fhandle}/titles',
@@ -123,6 +129,7 @@ app.prepare().then(() => {
     } else if (
       pathname.indexOf('.cgi') > -1 ||
       pathname.indexOf('.pl') > -1 ||
+      pathname.indexOf('/bibliography/') > -1 ||
       (pathname.indexOf('.xml') > -1 && pathname.indexOf('/work/') > -1)
     ) {
       let done = false;

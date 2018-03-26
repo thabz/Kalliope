@@ -73,7 +73,6 @@ class BiggerPicture extends React.Component {
           .join(', ');
       })
       .join(', ');
-    console.log(srcSet);
 
     const alt = picture.content_html
       ? '' //Strings.trimHtml(picture.content_html)
@@ -207,12 +206,18 @@ export default class PictureOverlay extends React.Component {
           .overlay-background .overlay-container :global(.overlay-figure) {
           }
 
-          .overlay-background .overlay-container :global(.overlay-figure) :global(img) {
+          .overlay-background
+            .overlay-container
+            :global(.overlay-figure)
+            :global(img) {
             max-width: 80vw;
             max-height: 80vh;
           }
 
-          .overlay-background .overlay-container :global(.overlay-figure) :global(figcaption) {
+          .overlay-background
+            .overlay-container
+            :global(.overlay-figure)
+            :global(figcaption) {
             min-width: 100%;
             width: 100px;
           }

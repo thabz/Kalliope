@@ -47,6 +47,7 @@ export default class extends React.Component {
 
   render() {
     const { lang, dictItems } = this.props;
+    const requestPath = `/${lang}/dict`;
 
     const groups = groupsByLetter(dictItems);
     let sections: Array<SectionForRendering> = [];
@@ -66,13 +67,13 @@ export default class extends React.Component {
 
     return (
       <div>
-        <Head headTitle="Ordbog - Kalliope" />
+        <Head headTitle="Ordbog - Kalliope" requestPath={requestPath} />
         <Main>
           <Nav lang={lang} title="Ordbog" />
           <Heading title="Ordbog" />
           <KalliopeTabs lang={lang} selected="dictionary" />
           {renderedGroups}
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

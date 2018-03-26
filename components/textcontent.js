@@ -131,7 +131,7 @@ export default class TextContent extends React.Component {
   handle_node(node: any) {
     switch (node.nodeName) {
       case 'br':
-        return <br />;
+        return <br key={this.keySeq++} />;
       case '#text':
         return replaceHyphens(node.textContent);
       case '#comment':
@@ -140,6 +140,8 @@ export default class TextContent extends React.Component {
         return <i key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</i>;
       case 'b':
         return <b key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</b>;
+      case 'u':
+        return <u key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</u>;
       case 'p':
         return <p>{this.handle_nodes(node.childNodes)}</p>;
       case 'blockquote':
@@ -156,6 +158,14 @@ export default class TextContent extends React.Component {
       case 'nonum':
       case 'resetnum':
         return this.handle_nodes(node.childNodes);
+      case 'block-center':
+        return (
+          <center
+            key={this.keySeq++}
+            style={{ display: 'block', width: '100%' }}>
+            {this.handle_nodes(node.childNodes)}
+          </center>
+        );
       case 'center':
         // <center> er et block element og for at undgå dobbelt
         // linjeskift efter (vi laver jo \n til <br/>) renderer
@@ -211,11 +221,13 @@ export default class TextContent extends React.Component {
           </span>
         );
       case 'w':
-        return (
-          <span key={this.keySeq++} style={{ letterSpacing: '0.2em' }}>
-            {this.handle_nodes(node.childNodes)}
-          </span>
-        );
+        // Render spatieret tekst som kursiv.
+        return <i key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</i>;
+      //        return (
+      //          <span key={this.keySeq++} style={{ letterSpacing: '0.1em' }}>
+      //            {this.handle_nodes(node.childNodes)}
+      //          </span>
+      //        );
       case 'metrik':
         return this.handle_metrik(node.textContent);
       case 'hr':
@@ -228,12 +240,27 @@ export default class TextContent extends React.Component {
             style={{ color: 'black', width: `${width}%` }}
           />
         );
+      case 'column':
+        return (
+          <div style={{ textAlign: 'left' }} key={this.keySeq++}>
+            {this.handle_nodes(node.childNodes)}
+          </div>
+        );
+      case 'two-columns':
+        const styles = {
+          display: 'flex',
+        };
+        return (
+          <div className="text-two-columns" style={styles} key={this.keySeq++}>
+            {this.handle_nodes(node.childNodes)}
+          </div>
+        );
       case 'img': {
         const width = node.getAttribute('width');
         const src = node.getAttribute('src');
         const alt = node.getAttribute('alt');
         if (width == null || alt == null) {
-          console.log(`Der mangler alt-attribut på inline img.`);
+          //console.log(`Der mangler alt-attribut på inline img.`);
         }
         const style = {
           width: width,
@@ -247,14 +274,14 @@ export default class TextContent extends React.Component {
         return <Footnote key={this.keySeq++} text={noteContent} />;
       case 'sc':
         return (
-          <span style={{ fontVariant: 'small-caps', fontSize: '1.2em' }}>
+          <span style={{ fontVariant: 'small-caps' }}>
             {this.handle_nodes(node.childNodes)}
           </span>
         );
       case 'a':
         return this.handle_a(node);
       default:
-        console.log(`Mærkeligt tag fundet ${node.toString()}`);
+        //console.log(`Mærkeligt tag fundet ${node.toString()}`);
         return <code>{node.toString()}</code>;
     }
   }
@@ -477,6 +504,13 @@ export default class TextContent extends React.Component {
           }
           :global(.half-height-blank) {
             line-height: 0.8;
+          }
+          :global(.text-two-columns) :global(div:first-child) {
+            border-right: 1px solid black;
+            padding-right: 10px;
+          }
+          :global(.text-two-columns) :global(div:last-child) {
+            padding-left: 10px;
           }
         `}</style>
       </div>

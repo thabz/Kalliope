@@ -1,3 +1,5 @@
+// @flow
+
 // All our images should have scaled versions with the following widths
 module.exports.availableImageWidths = [
   100,
@@ -76,5 +78,6 @@ module.exports.countries = [
   },
 ];
 
+module.exports.backgroundLinkColor = 'hsla(353, 20%, 85%, 1)';
 module.exports.lightLinkColor = 'hsla(353, 20%, 65%, 1)';
 module.exports.linkColor = 'hsla(353, 43%, 38%, 1)';

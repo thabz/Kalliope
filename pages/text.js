@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Link } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
@@ -12,7 +12,10 @@ import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
 import PoetName, { poetNameString } from '../components/poetname.js';
 import { workTitleString } from '../components/workname.js';
-import TextName, { textTitleString } from '../components/textname.js';
+import TextName, {
+  textTitleString,
+  textLinkTitleString,
+} from '../components/textname.js';
 import TextContent from '../components/textcontent.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
@@ -21,19 +24,54 @@ import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
 import ErrorPage from './error.js';
-
 import type {
   Lang,
   Poet,
   Work,
   Text,
+  KeywordRef,
   PrevNextText,
   Error,
 } from './helpers/types.js';
-import 'isomorphic-fetch';
 
-class TextHeading extends React.Component {
-  props: { text: Text, lang: Lang, isProse: boolean };
+type KeywordLinkProps = { keyword: KeywordRef, lang: Lang };
+class KeywordLink extends React.Component<KeywordLinkProps> {
+  render() {
+    const { keyword, lang } = this.props;
+    let url = null;
+    switch (keyword.type) {
+      case 'keyword':
+        url = Links.keywordURL(lang, keyword.id);
+        break;
+      case 'poet':
+        url = Links.poetURL(lang, keyword.id);
+        break;
+      case 'subject':
+        return null;
+    }
+    return (
+      <Fragment>
+        <Link route={url}>
+          <a className="keyword-link" title={keyword.title}>
+            {keyword.title}
+          </a>
+        </Link>
+        <style jsx>{`
+          :global(a.keyword-link) {
+            display: inline-block;
+            background-color: hsla(353, 43%, 95%, 1);
+            padding: 1px 5px;
+            border-radius: 4px;
+            margin: 0 4px 2px 0;
+          }
+        `}</style>
+      </Fragment>
+    );
+  }
+}
+
+type TextHeadingProps = { text: Text, lang: Lang, isProse: boolean };
+class TextHeading extends React.Component<TextHeadingProps> {
   render() {
     const { text, lang, isProse } = this.props;
 
@@ -88,19 +126,18 @@ class TextHeading extends React.Component {
   }
 }
 
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    highlight: string,
-    poet: Poet,
-    work: Work,
-    text: Text,
-    section_titles: ?Array<string>,
-    prev?: PrevNextText,
-    next?: PrevNextText,
-    error: ?Error,
-  };
-
+type TextComponentProps = {
+  lang: Lang,
+  highlight: string,
+  poet: Poet,
+  work: Work,
+  text: Text,
+  section_titles: ?Array<string>,
+  prev?: PrevNextText,
+  next?: PrevNextText,
+  error: ?Error,
+};
+export default class extends React.Component<TextComponentProps> {
   static async getInitialProps({
     query: { lang, textId, highlight },
   }: {
@@ -145,6 +182,7 @@ export default class extends React.Component {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt tekst" />;
     }
+    const requestPath = `/${lang}/text/${text.id}`;
 
     const rightSideItems = [prev, next].map((t, i) => {
       if (t == null) {
@@ -165,11 +203,7 @@ export default class extends React.Component {
     });
     let renderedNotes = null;
     if (notes.length > 0) {
-      renderedNotes = (
-        <div style={{ marginBottom: '30px' }}>
-          {notes}
-        </div>
-      );
+      renderedNotes = <div style={{ marginBottom: '30px' }}>{notes}</div>;
     }
 
     const renderedPictures = (
@@ -186,6 +220,15 @@ export default class extends React.Component {
         </div>
       );
     });
+
+    let renderedKeywords = null;
+    if (text.keywords.length > 0) {
+      const list = text.keywords.map(k => {
+        return <KeywordLink keyword={k} lang={lang} key={k.id} />;
+      });
+      renderedKeywords = <div style={{ marginTop: '30px' }}>{list}</div>;
+    }
+
     let renderedRefs = null;
     if (refs.length > 0) {
       renderedRefs = (
@@ -208,7 +251,8 @@ export default class extends React.Component {
       refs.length > 0 ||
       text.has_footnotes ||
       text.pictures.length > 0 ||
-      text.notes.length > 0
+      text.notes.length > 0 ||
+      text.keywords.length > 0
     ) {
       sidebar = (
         <div>
@@ -216,6 +260,7 @@ export default class extends React.Component {
           {renderedPictures}
           <FootnoteList />
           {renderedRefs}
+          {renderedKeywords}
         </div>
       );
     }
@@ -255,11 +300,11 @@ export default class extends React.Component {
     const ogTitle =
       poetNameString(poet, false, false) +
       ': »' +
-      textTitleString(text) +
+      textLinkTitleString(text) +
       '« fra ' +
       workTitleString(work);
     const headTitle =
-      textTitleString(text) +
+      textLinkTitleString(text) +
       ' - ' +
       poetNameString(poet, false, false) +
       ' - Kalliope';
@@ -278,6 +323,7 @@ export default class extends React.Component {
             ogTitle={ogTitle}
             ogImage={ogImage}
             description={ogDescription}
+            requestPath={requestPath}
           />
           <Main>
             <Nav
@@ -286,7 +332,7 @@ export default class extends React.Component {
               work={work}
               rightSide={rightSide}
               sectionTitles={section_titles}
-              title={<TextName text={text} />}
+              title={textLinkTitleString(text)}
             />
             <Heading title={title} subtitle="Værker" />
             <PoetTabs lang={lang} poet={poet} selected="works" />
@@ -317,7 +363,7 @@ export default class extends React.Component {
                 </article>
               </div>
             </SidebarSplit>
-            <LangSelect lang={lang} />
+            <LangSelect lang={lang} path={requestPath} />
           </Main>
         </FootnoteContainer>
       </div>

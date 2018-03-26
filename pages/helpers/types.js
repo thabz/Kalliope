@@ -40,9 +40,14 @@ export type Poet = {
     christened?: string,
     realname?: string,
   },
-  period: ?{ born?: DateWithPlace, dead?: DateWithPlace },
+  period: ?{
+    born?: DateWithPlace,
+    dead?: DateWithPlace,
+    coronation?: DateWithPlace,
+  },
   has_bibliography: boolean,
   has_biography: boolean,
+  has_mentions: boolean,
   has_works: boolean,
   has_texts: boolean,
   has_poems: boolean,
@@ -85,6 +90,12 @@ export type SectionForRendering = Section<{
   html: any,
 }>;
 
+export type KeywordRef = {
+  id: string,
+  type: 'keyword' | 'poet' | 'subject',
+  title: string,
+};
+
 export type TocItem = {
   id?: string,
   title: string,
@@ -109,12 +120,14 @@ export type PictureItem = {
 export type Text = {
   id: string,
   title: string,
+  linktitle: string,
   subtitles?: Array<TextContentType>,
   notes: Array<NoteItem>,
   refs: Array<TextContentType>,
   pictures: Array<PictureItem>,
   content_html: TextContentType,
   content_lang: TextLang,
+  keywords: Array<KeywordRef>,
   has_footnotes: boolean,
   is_prose: boolean,
 };
@@ -125,6 +138,18 @@ export type Keyword = {
   is_draft: boolean,
   author?: string,
   notes?: Array<NoteItem>,
+  pictures: Array<PictureItem>,
+  content_html: TextContentType,
+  content_lang: TextLang,
+  has_footnotes: boolean,
+};
+
+export type AboutItem = {
+  id: string,
+  title: string,
+  is_draft: boolean,
+  author?: string,
+  notes: Array<NoteItem>,
   pictures: Array<PictureItem>,
   content_html: TextContentType,
   content_lang: TextLang,

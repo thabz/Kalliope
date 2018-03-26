@@ -9,10 +9,18 @@ export default class TextName extends React.Component {
   render() {
     const { text } = this.props;
     const { title } = text;
-    return <span className="textname">{title}</span>;
+    return (
+      <span className="textname">
+        {title}
+      </span>
+    );
   }
 }
 
 export function textTitleString(text: Text): string {
   return text.title;
+}
+
+export function textLinkTitleString(text: Text): string {
+  return text.linktitle;
 }
