@@ -4,41 +4,16 @@
 <workhead>
    <title>Morgensange for Børn</title>
    <year>1837</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <notes>
+       <note>Teksten følger førsteudgaven af B. S. Ingemann: <i>Morgensange for Børn</i>, Andreas Seidelin, Kbh., 1837.</note>
+      <note>Noter med foranstillet * er forfatterens egne.</note>
+   </notes>
+   <pictures>
+       <picture type="titlepage" src="1837-p1.jpg">Titelbladet lyder ,,Morgensange for Børn / af / B. S. Ingemann. // Kjöbenhavn 1837. / Trykt hos Andreas Seidelin, / Hof- og Universitets-Bogtrykker.''</picture>
+   </pictures>
 </workhead>
 <workbody>
-
-<poem id="ingemann1837a0">
-<head>
-   <title>Foraarssang</title>
-   <toctitle>Foraarssang</toctitle>
-   <indextitle>Foraarssang</indextitle>
-   <firstline>Storken sidder paa Bondens Tag</firstline>
-   <quality>korrektur1</quality>
-</head>
-<body>
-Storken sidder paa Bondens Tag;
-Han seer over Mark og Enge.
-Det bliver saa deilig en Foraarsdag;
-Nu kommer den favre Tid, jeg vented saalænge.
-
-Storken klapprer paa Bondens Tag,
-Og Gjøgen kukker i Skoven.
-Med Mailøv nu kommer skjøn Valborgs Dag;
-Nu stiger der Pindseglands med Sol over Voven.
-
-Storken flyver fra Bondens Tag;
-Han spanker i grønne Enge.
-Han kommer som Gjest til skjøn Valborgs Dag;
-Han bringer den favre Tid, jeg vented saalænge.
-
-Storken flyver til Høsten bort;
-Han kommer igjen ad Aare.
-Du Sommerens Gjest! dvæl ikke for kort!
-Velkommen du favre Tid, jeg elsker saa saare!
-</body>
-</poem>
 
 <section level="1">
 <head>
@@ -50,55 +25,61 @@ Velkommen du favre Tid, jeg elsker saa saare!
 <poem id="ingemann1837b0">
 <head>
    <title>Nu ringer alle Klokker mod Sky</title>
-   <toctitle>Nu ringer alle Klokker mod Sky</toctitle>
+   <toctitle><num>1.</num>Nu ringer alle Klokker mod Sky</toctitle>
    <indextitle>Nu ringer alle Klokker mod Sky</indextitle>
    <firstline>Nu ringer alle Klokker mod Sky</firstline>
-   <quality>korrektur1</quality>
+   <notes>
+       <note>Teksten følger B. S. Ingemann: <i>Morgensange for Børn</i>, Andreas Seidelin, Kbh., 1837, pp. 3-4.</note>
+   </notes>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nu ringer alle Klokker mod Sky:
-  Det kimer i fjerne Riger.
+    Det kimer i fjerne Riger.
 Hver Søndag Morgen høit paany
-  Stor Glæde mod Himlen stiger.
+    Stor Glæde mod Himlen stiger.
 
 Det toner med Lov og Priis og Bøn
-  Fra Jord mod Paradiishaven:
+    Fra Jord mod Paradiishaven:
 Det var en Søndag Morgen skjøn
-  Vor Frelser stod op af Graven.
+    Vor Frelser stod op af Graven.
 
 For os han vandred i Gruben ned;
-  Han gik til de Dødes Rige.
+    Han gik til de Dødes Rige.
 Til Livet med stor Herlighed
-  Han vilde for os opstige.
+    Han vilde for os opstige.
 
 Al Verdens Glæde begravet laae;
-  Nu frydes vi alle Dage:
+    Nu frydes vi alle Dage:
 Den Glæde, Søndagssolen saae,
-  Den har i Verden ei Mage.
+    Den har i Verden ei Mage.
 
 Der sad en Engel paa Gravens Steen
-  Blandt Lillier i Urtehaven;
+    Blandt Lillier i Urtehaven;
 Han peged med sin Palmegreen
-  Hvor Jesus stod op af Graven.
+    Hvor Jesus stod op af Graven.
 
 Og der blev Glæde paa Jorderig,
-  Liig Glæden i Engles Himmel:
+    Liig Glæden i Engles Himmel:
 Livskongen løfter op med sig
-  Til Livet sin Børnevrimmel.
+    Til Livet sin Børnevrimmel.
 
 Guds Børn skal holde med Engle Bøn
-  Med Jubel i Paradiishaven:
+    Med Jubel i Paradiishaven:
 Det var en Søndag Morgen skjøn
-  Vor Frelser stod op af Graven.
+    Vor Frelser stod op af Graven.
 </body>
 </poem>
 
 <poem id="ingemann1837b1">
 <head>
    <title>Lysets Engel gaaer med Glands</title>
-   <toctitle>Lysets Engel gaaer med Glands</toctitle>
+   <toctitle><num>2.</num>Lysets Engel gaaer med Glands</toctitle>
    <indextitle>Lysets Engel gaaer med Glands</indextitle>
    <firstline>Lysets Engel gaaer med Glands</firstline>
+   <notes>
+       <note>Teksten følger B. S. Ingemann: <i>Morgensange for Børn</i>, Andreas Seidelin, Kbh., 1837, pp. 5-6.</note>
+   </notes>
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
@@ -137,9 +118,12 @@ Og vor glade Morgensang fornemmer.
 <poem id="ingemann1837b2">
 <head>
    <title>Nu vaagne alle Guds Fugle smaa</title>
-   <toctitle>Nu vaagne alle Guds Fugle smaa</toctitle>
+   <toctitle><num>3.</num>Nu vaagne alle Guds Fugle smaa</toctitle>
    <indextitle>Nu vaagne alle Guds Fugle smaa</indextitle>
    <firstline>Nu vaagne alle Guds Fugle smaa</firstline>
+   <notes>
+       <note>Teksten følger B. S. Ingemann: <i>Morgensange for Børn</i>, Andreas Seidelin, Kbh., 1837, p. 7.</note>
+   </notes>
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
@@ -168,13 +152,16 @@ Du hører Smaabørnenes Priis i din jublende Vrimmel.
 <poem id="ingemann1837b3">
 <head>
    <title>I Østen stiger Solen op</title>
-   <toctitle>I Østen stiger Solen op</toctitle>
+   <toctitle><num>4.</num>I Østen stiger Solen op</toctitle>
    <indextitle>I Østen stiger Solen op</indextitle>
    <firstline>I Østen stiger Solen op</firstline>
-   <quality>korrektur1</quality>
+   <notes>
+       <note>Teksten følger B. S. Ingemann: <i>Morgensange for Børn</i>, Andreas Seidelin, Kbh., 1837, pp. 8-9.</note>
+   </notes>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-I Østen stiger Solen op
+I Østen stiger Solen op:
 Den spreder Guld paa Sky,
 Gaaer over Hav og Bjergetop,
 Gaaer over Land og By.
@@ -214,52 +201,56 @@ Og fra dit Paradiis!
 <poem id="ingemann1837b4">
 <head>
    <title>Gud skee Tak og Lov</title>
-   <toctitle>Gud skee Tak og Lov</toctitle>
+   <toctitle><num>5.</num>Gud skee Tak og Lov</toctitle>
    <indextitle>Gud skee Tak og Lov</indextitle>
    <firstline>Gud skee Tak og Lov!</firstline>
-   <quality>korrektur1</quality>
+   <notes>
+       <note>* Med særeget Hensyn til Børnene i Asylerne.</note>
+       <note>Teksten følger B. S. Ingemann: <i>Morgensange for Børn</i>, Andreas Seidelin, Kbh., 1837, pp. 10-11.</note>
+   </notes>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-  Gud skee Tak og Lov!
-  Vi saa deiligt sov:
+      Gud skee Tak og Lov!
+      Vi saa deiligt sov:
 Barnet laae med varme Kind paa Puden.
-  Nu som Fuglen frisk!
-  Rask som Havets Fisk!
+      Nu som Fuglen frisk!
+      Rask som Havets Fisk!
 Morgensolen titter gjennem Ruden.
 
-  Med hiin Glands fra Sky
-  Kom der Lys i By,
+      Med hiin Glands fra Sky
+      Kom der Lys i By,
 Kom der Glimt af Sol i alle Sjæle.
-  Alle Haner goel,
-  Hilsed glad Guds Sol,
+      Alle Haner goel,
+      Hilsed glad Guds Sol,
 Alle vævre Tunger smaa fik Mæle.
 
-  Fattig Mand fuldstærk
-  Gaaer nu til sit Værk;
+      Fattig Mand fuldstærk
+      Gaaer nu til sit Værk;
 Rask hver Haand sig rører nu med Glæde.
-  Fattig Kone maa
-  Til sin Dont udgaae,
+      Fattig Kone maa
+      Til sin Dont udgaae,
 At de Smaa skal ei for Brødet græde.
 
-  Fader gik sin Vei;
-  Moder see vi ei;
+      Fader gik sin Vei;
+      Moder see vi ei;
 Dog i Nød vi sidde ei tilbage.
-  Arnens Ild er slukt;
-  Hjemmets Dør er lukt;
+      Arnens Ild er slukt;
+      Hjemmets Dør er lukt;
 Gud dog sørger for os alle Dage.
 
-  Ei den mindste Muus
-  Savner Tag og Huus;
+      Ei den mindste Muus
+      Savner Tag og Huus;
 Fattigst Spurveunge har sin Rede.
-  Ei den mindste Fugl
-  Savner Ly og Skjul;
+      Ei den mindste Fugl
+      Savner Ly og Skjul;
 Vi skal heller ei om Fristed lede.
 
-  Lystig Hanen goel,
-  Hilsed glad Guds Sol;
+      Lystig Hanen goel,
+      Hilsed glad Guds Sol;
 For hver Sjæl er Lys og Lyst oprundet.
-  Nu, som Fuglen frisk!
-  Rask, som Havets Fisk!
+      Nu, som Fuglen frisk!
+      Rask, som Havets Fisk!
 Vi har Kjærligheds-Asylet fundet.
 </body>
 </poem>
@@ -267,10 +258,13 @@ Vi har Kjærligheds-Asylet fundet.
 <poem id="ingemann1837b5">
 <head>
    <title>Morgenstund har Guld i Mund</title>
-   <toctitle>Morgenstund har Guld i Mund</toctitle>
+   <toctitle><num>6.</num>Morgenstund har Guld i Mund</toctitle>
    <indextitle>Morgenstund har Guld i Mund</indextitle>
    <firstline>Morgenstund har Guld i Mund</firstline>
-   <quality>korrektur1</quality>
+   <notes>
+       <note>Teksten følger B. S. Ingemann: <i>Morgensange for Børn</i>, Andreas Seidelin, Kbh., 1837, p. 12.</note>
+   </notes>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Morgenstund har Guld i Mund:
@@ -293,10 +287,11 @@ Med Guds rige Herlighed for Øie.
 <poem id="ingemann1837b6">
 <head>
    <title>Nu titte til hinanden de favre Blomster smaa</title>
-   <toctitle>Nu titte til hinanden de favre Blomster smaa</toctitle>
-   <indextitle>Nu titte til hinanden de favre Blomster smaa</indextitle>
-   <firstline>Nu titte til hinanden de favre Blomster smaa</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <toctitle><num>7.</num>Nu titte til hinanden de favre Blomster smaa</toctitle>
+   <notes>
+       <note>Teksten følger B. S. Ingemann: <i>Morgensange for Børn</i>, Andreas Seidelin, Kbh., 1837, pp. 13-14.</note>
+   </notes>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nu titte til hinanden de favre Blomster smaa;
@@ -327,5 +322,38 @@ Evindelig være Du lovpriset!
 </poem>
 </content>
 </section>
+
+<poem id="ingemann1837a0">
+<head>
+   <title>Foraarssang</title>
+   <firstline>Storken sidder paa Bondens Tag</firstline>
+   <notes>
+       <note>Teksten følger B. S. Ingemann: <i>Morgensange for Børn</i>, Andreas Seidelin, Kbh., 1837, p. 15.</note>
+   </notes>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Storken sidder paa Bondens Tag;
+Han seer over Mark og Enge.
+Det bliver saa deilig en Foraarsdag;
+Nu kommer den favre Tid, jeg vented saalænge.
+
+Storken klapprer paa Bondens Tag,
+Og Gjøgen kukker i Skoven.
+Med Mailøv nu kommer skjøn Valborgs Dag<note>* ↄ: d. 1ste Mai.</note>;
+Nu stiger der Pindseglands med Sol over Voven.
+
+Storken flyver fra Bondens Tag;
+Han spanker i grønne Enge.
+Han kommer som Gjest til skjøn Valborgs Dag;
+Han bringer den favre Tid, jeg vented saalænge.
+
+Storken flyver til Høsten bort;
+Han kommer igjen ad Aare.
+Du Sommerens Gjest! dvæl ikke for kort!
+Velkommen du favre Tid, jeg elsker saa saare!
+</body>
+</poem>
+
 </workbody>
 </kalliopework>
