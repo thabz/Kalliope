@@ -110,7 +110,7 @@ const replaceDashes = html => {
 };
 
 const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
-  const regexp = /<xref\s+(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
+  const regexp = /<xref.*?(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
   if (isPoetry && !isBible) {
     // Marker strofe numre
     html = html
