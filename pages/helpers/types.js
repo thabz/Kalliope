@@ -22,6 +22,7 @@ export type TextContentType = Array<TextContentLine>;
 
 export type TextContentOptions = {
   isBible?: boolean,
+  isFolkevise?: boolean,
   highlightBibleVerses?: ?{ from: number, to: number },
   isPoetry?: boolean,
 };
