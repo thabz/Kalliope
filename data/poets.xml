@@ -337,6 +337,25 @@
   <works>andre</works>
 </person>
 
+<person id="salis" country="de" lang="de" type="poet">
+  <!-- Ikke tysk, men schweizisk digter -->
+  <name>
+    <firstname>Johann Gaudenz von</firstname>
+    <lastname>Salis-Seewis</lastname>
+    <fullname>Johann Gaudenz Freiherr von Salis-Seewis</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1762-12-26</date>
+      <place>Schloss Bothmar, Malans, Schweiz</place>
+    </born>
+    <dead>
+      <date>1834-01-29</date>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="hoelderlin" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich</firstname>
@@ -6244,7 +6263,7 @@
       <place>Cambridge, Mass., USA</place>
     </dead>
   </period>
-  <works>1839,1842,1847,1855,1858,1863,1865,andre</works>
+  <works>1839,1842,1847,1855,1858,1863,1865</works>
 </person>
 
 <person id="poe" country="us" lang="en" type="poet"> 
