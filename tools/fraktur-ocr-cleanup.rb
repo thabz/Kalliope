@@ -499,6 +499,7 @@
 '(\W)Gjoest/\1Gjæst',
 'Dxe/Øxe',
 'Dst/Øst',
+'moend(\W)/mænd\1',
 'Offiæ/Office',
 'Froken/Frøken',
 'moend(\W)/mænd\1',
