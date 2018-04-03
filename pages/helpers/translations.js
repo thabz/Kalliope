@@ -12,6 +12,7 @@ const translations: { [string]: string } = {
   'en*Førstelinjer': 'First lines',
   'en*Oversættelser': 'Translations',
   'en*Henvisninger': 'References',
+  'en*Omtaler': 'Mentions',
   'en*Biografi': 'Biography',
   'en*Om': 'About',
   'en*Nyheder': 'News',
