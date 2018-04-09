@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1811" author="ingemann" status="incomplete" type="poetry">
+<kalliopework id="1811" author="ingemann" status="complete" type="poetry">
 <workhead>
-   <title>Digte</title>
+   <title>Digte. Første Deel</title>
    <year>1811</year>
     <notes>
         <note>Teksten følger B. S. Ingemann: <i>Digte</i>, Første Deel, Forfatterens Forlag, Kbh., 1811.</note>
+      <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun indlysende fejl er rettet og i alle tilfælde med originalens ordlyd citeret i digtnoten, så læseren selv kan vurdere berretigelsen af en emendation.</note>
+      <note>Noter med en foranstillet asterisk er Ingemanns egne.</note>
     </notes>
+   <pictures>
+       <picture type="titlepage" src="1811-p1.jpg">Titelbladet lyder ,,Digte / af / B. S. Ingemann. // Anden Deel. // Kjøbenhavn 1812. / Trykt paa Forfatterens Forlag / hos Boas Brünnich.''.</picture>
+   </pictures>
 </workhead>
 <workbody>
 
@@ -3468,6 +3473,7 @@ Til Taageluften fra din Himmel gaae.
     <subtitle>[Parabel.]</subtitle>
     <firstline>En Snekke jeg skuer paa gyngende Vande</firstline>
     <notes>
+        <note>Mottoet er første strofe af Novalis' <xref poem="novalis2005060512,1-4"/>.</note>
         <note>Teksten følger B. S. Ingemann: <i>Digte</i>, Første Deel, Forfatterens Forlag, Kbh., 1811, pp. 163-166.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
@@ -4593,16 +4599,16 @@ Thi atter lønlig for hans Øye lød
 Hiin velbekjendte, qvindelige Stemme,
 Paa ny den sang, saa blidelig, saa sød:
 
-"Lykkens Søn! du veed det ikke
-Men de største Skatte ligge
-Hvor du ingen leder om.
-Den som her til Verden kom
-Under milde Stjerners Blikke,
-Ham vil Stjernen Fryd tilskikke,
-Naar han sover sødelig.
-Lykkens Søn! du veed det ikke,
-Men de største Skatte ligge,
-Hvor du ingen venter dig."
+    "Lykkens Søn! du veed det ikke
+    Men de største Skatte ligge
+    Hvor du ingen leder om.
+    Den som her til Verden kom
+    Under milde Stjerners Blikke,
+    Ham vil Stjernen Fryd tilskikke,
+    Naar han sover sødelig.
+    Lykkens Søn! du veed det ikke,
+    Men de største Skatte ligge,
+    Hvor du ingen venter dig."
 </body>
 </poem>
 
@@ -4751,7 +4757,7 @@ Og Ridderen just Øynene opslog;
 Og da han saae den himmelskskjønne Pige,
 Han troede vist han var i Himmerige,
 Hvor under helligt Palmetræe han laae,
-Og paradisisk Huris<note>*) Huris ere de Rettroendes Selskaberinder i Paradiis.</note> saae.
+Og paradisisk Huris<note>* Huris ere de Rettroendes Selskaberinder i Paradiis.</note> saae.
 
 Med lignende forundringblandet Glæde
 Vist Adam i sit Eden vaagnede,
