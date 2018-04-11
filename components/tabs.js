@@ -442,7 +442,7 @@ type PoetTabsProps = {
   poet: Poet,
   lang: Lang,
   query?: ?string,
-  selected: 'works' | 'titles' | 'first' | 'bio' | 'bibliography' | 'search',
+  selected: 'works' | 'titles' | 'first' | 'bio' | 'search' | 'mentions',
 };
 export class PoetTabs extends React.Component<PoetTabsProps> {
   render() {
@@ -472,10 +472,10 @@ export class PoetTabs extends React.Component<PoetTabsProps> {
         url: Links.textsURL(lang, poet.id, 'first'),
       },
       {
-        id: 'bibliography',
-        title: _('Bibliografi', lang),
-        hide: !poet.has_bibliography,
-        url: Links.bibliographyURL(lang, poet.id),
+        id: 'mentions',
+        title: _('Henvisninger', lang),
+        hide: !poet.has_mentions,
+        url: Links.mentionsURL(lang, poet.id),
       },
       {
         id: 'bio',

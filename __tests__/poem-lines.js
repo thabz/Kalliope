@@ -11,10 +11,13 @@ function flatten(arr) {
 // Regulære expressions som fanger typiske fejl i vores XML.
 // Disse kan enten være et regexp direkte eller et regexp med en whitelist.
 const regexps = [
-  /^,[a-zæøåA-ZÆØÅ]/,
-  /^\s[-a-zæøåA-ZÆØÅ]/,
-  /^\.[a-zæøåA-ZÆØÅ]/,
-  /^-[a-zæøåA-ZÆØÅ]/,
+  /^,[a-zæøåA-ZÆØÅ]/m,  // Enkelt komma først på linjen
+  /^\s[-a-zæøåA-ZÆØÅ]/m, // Enkelt mellemrum først på linjen
+  /^\.[a-zæøåA-ZÆØÅ]/m, // Enkelt punktum ...
+  /^-[a-zæøåA-ZÆØÅ]/m,   // Enkelt bindestreg ...
+  /<firstline><\/firstline>/,   // Tom <firstline> ...
+  {regexp: /[a-zæøå],[a-zæøå]/,
+  whitelist: [/<keywords>/,/<quality>/]},
   { regexp: /mmm/, whitelist: [/<note>.*\]/] },
   ///iii/, // Problematisk da den rammer lowercase romertal. Fiks fejlere og drop reglen.
   /lll/,
@@ -51,7 +54,7 @@ describe('Check workfiles', () => {
   filenames.forEach(filename => {
     const fullpath = `fdirs/${filename}`;
     const data = loadText(fullpath);
-    it(`Workfile ${filename} is fine`, () => {
+    it(`Workfile fdirs/${filename} is fine`, () => {
       expect(fileExists(fullpath)).toBeTruthy;
       expect(data.length > 0);
       regexps.forEach(rule => {

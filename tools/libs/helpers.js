@@ -109,9 +109,15 @@ const replaceDashes = html => {
   );
 };
 
-const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
-  const regexp = /<xref\s+(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
-  if (isPoetry && !isBible) {
+const htmlToXml = (
+  html,
+  collected,
+  isPoetry = false,
+  isBible = false,
+  isFolkevise = false
+) => {
+  const regexp = /<xref.*?(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
+  if (isPoetry && !isBible && !isFolkevise) {
     // Marker strofe numre
     html = html
       .replace(/^(\d+\.?)\s*$/gm, '<num>$1</num>')
@@ -223,6 +229,23 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
     });
     collectedLines.push(curLine);
     decoded = collectedLines.join('\n');
+  } else if (isFolkevise) {
+    // Flyt strofe-nummer fra egen linje ind i starten af strofens første linje.
+    let foundNum = '';
+    const collectedLines = [];
+    decoded.split(/\n/).forEach(line => {
+      const match = line.match(/^\s*(\d+)\.?\s*/);
+      if (match) {
+        // Linjen er et strofe-nummer, så gem det.
+        foundNum = match[1];
+        return;
+      } else {
+        const curLine = foundNum + line;
+        collectedLines.push(curLine);
+        foundNum = '';
+      }
+    });
+    decoded = collectedLines.join('\n');
   }
 
   let lineNum = 1;
@@ -239,7 +262,7 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
       l.match(/^\s*$/) ||
       l.match(/^\s*<hr[^>]*>\s*$/);
     if (!hasNonum) {
-      if (isPoetry) {
+      if (isPoetry && !isFolkevise) {
         options.num = lineNum;
       }
       lineNum += 1;
@@ -252,6 +275,14 @@ const htmlToXml = (html, collected, isPoetry = false, isBible = false) => {
         options.num = match[1];
         options.bible = true;
         l = l.replace(/^\s*\d+,?\d*\.\s*/, '');
+      }
+    }
+    if (isFolkevise) {
+      const match = l.match(/^\s*(\d+)\.?\s*/);
+      if (match) {
+        options.num = match[1];
+        options.folkevise = true;
+        l = l.replace(/^\s*\d+\.?\s*/, '');
       }
     }
     if (l.indexOf('<center>') > -1) {
