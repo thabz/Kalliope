@@ -21,6 +21,11 @@ const regexps = [
   { regexp: /mmm/, whitelist: [/<note>.*\]/] },
   ///iii/, // Problematisk da den rammer lowercase romertal. Fiks fejlere og drop reglen.
   /lll/,
+  /,;/,
+  {
+    regexp: /;,/,
+    whitelist: [/&/],
+  },
   {
     regexp: /aaa/,
     whitelist: [/[Ss]maaalfer/, /Smaaarbeider/, /<note>.*\]/],
