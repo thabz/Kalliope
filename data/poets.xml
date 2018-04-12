@@ -1093,18 +1093,20 @@
   <works>1627,1631</works>
 </person>
 
-<!-- TODO: Find døds/fødselsår -->
 <person id="aagaard" country="dk" lang="da" type="poet">
   <name>
-    <firstname>Christian</firstname>
+    <firstname>Christen</firstname>
     <lastname>Aagaard</lastname>
   </name>
   <period>
     <born>
-      <date>?</date>
+      <date>1616-01-27</date>
+      <note>eller 1616-01-28</note>
+      <place>Viborg</place>
     </born>
     <dead>
-      <date>?</date>
+      <date>1664-02-05</date>
+      <place>Ribe</place>
     </dead>
   </period>
 </person>
