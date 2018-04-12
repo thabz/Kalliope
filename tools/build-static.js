@@ -941,8 +941,8 @@ const build_textrefs = collected => {
   const force_reload = textrefs.size == 0;
   let found_changes = false;
   const regexps = [
-    /xref\s.*?poem="([^"]*)"/g,
-    /a\s.*?poem="([^"]*)"/g,
+    /xref\s.*?poem="([^",]*)/g,
+    /a\s.*?poem="([^",]*)/g,
     /xref bibel="([^",]*)/g,
   ];
   collected.poets.forEach((poet, poetId) => {
