@@ -232,6 +232,9 @@ const build_museum_link = picture => {
       case 'smb':
         url = `http://www.smb-digital.de/eMuseumPlus?objectId=${objId}`;
         break;
+      case 'md':
+        url = `https://www.museum-digital.de/nat/index.php?t=objekt&oges=${objId}`;
+        break;
       case 'npg':
         url = `https://www.npg.org.uk/collections/search/portrait/${objId}`;
         break;
