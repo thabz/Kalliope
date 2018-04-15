@@ -1055,18 +1055,20 @@
   <works>1627,1631</works>
 </person>
 
-<!-- TODO: Find døds/fødselsår -->
 <person id="aagaard" country="dk" lang="da" type="poet">
   <name>
-    <firstname>Christian</firstname>
+    <firstname>Christen</firstname>
     <lastname>Aagaard</lastname>
   </name>
   <period>
     <born>
-      <date>?</date>
+      <date>1616-01-27</date>
+      <note>eller 1616-01-28</note>
+      <place>Viborg</place>
     </born>
     <dead>
-      <date>?</date>
+      <date>1664-02-05</date>
+      <place>Ribe</place>
     </dead>
   </period>
 </person>
@@ -2588,7 +2590,7 @@
       <place>Sorø</place>
     </dead>
   </period>
-  <works>1811,1812,1813,1820,1821,1822,1824,1825,1831,1832,1833,1837,1837h,1838,1839,1842,1842S,1855,andre</works>
+  <works>1811,1812,1813,1820,1821,1823,1824,1825,1831,1832,1833,1837,1837h,1838,1839,1842,1842S,1855,andre</works>
 </person>
 
 <person id="hauch" country="dk" lang="da" type="poet">
@@ -2897,7 +2899,7 @@
       <place>København</place>
     </dead>
   </period>
-  <works>1830,1831,1832,1833,1833S,1838,1847,1849,1851,1854,1863,1867,1879,andre</works>
+  <works>1830,1831,1832,1833,1833S,1838,1847,1849,1851,1854,1863,1867,1879,eventyr,andre</works>
 </person>
 
 <person id="bagger" country="dk" lang="da" type="poet">
@@ -3020,7 +3022,7 @@
       <place>Kbh.</place>
     </dead>
   </period>
-  <works>1832,1833,1840,1843,1849,1850,1874,1884,andre</works>
+  <works>1832,1833,1840,1843,1849,1850,1873,1884,andre</works>
 </person>
 
 <person id="plough" country="dk" lang="da" type="poet">
@@ -3953,6 +3955,23 @@
     </dead>
   </period>
   <works>1904</works>
+</person>
+
+<person id="roerdam" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Valdemar</firstname>
+    <lastname>Rørdam</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1872-09-23</date>
+      <place>Dalby</place>
+    </born>
+    <dead>
+      <date>1946-07-13</date>
+    </dead>
+  </period>
+  <works>1895,1897,1910</works>
 </person>
 
 <person id="ewaldt" country="dk" lang="da" type="poet">
