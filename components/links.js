@@ -42,6 +42,10 @@ export const bibliographyURL = (lang: string = 'da', poetId: PoetId) => {
   return `/${lang}/bibliography/${poetId}`;
 };
 
+export const mentionsURL = (lang: string = 'da', poetId: PoetId) => {
+  return `/${lang}/mentions/${poetId}`;
+};
+
 export const textURL = (lang: string = 'da', textId: string) => {
   const highlight = textId.match(/,(.*)$/);
   if (highlight != null) {

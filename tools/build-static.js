@@ -34,6 +34,7 @@ let collected = {
   poets: new Map(),
   dict: new Map(),
   timeline: new Array(),
+  person_or_keyword_reference: new Map(),
 };
 
 // Use poetname.js:poetNameString instead when node.js uses modules
@@ -388,6 +389,14 @@ const build_poets_json = () => {
       throw `${id} har portræt men ikke square-portrait`;
     }
 
+    const mentions = collected.person_or_keyword_refs.get(id);
+    const has_mentions =
+      mentions != null &&
+      (mentions.mention.length > 0 ||
+        mentions.translation.length > 0 ||
+        mentions.primary.length > 0 ||
+        mentions.secondary.length > 0);
+
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');
     const fullname = safeGetText(nameE, 'fullname');
@@ -439,13 +448,11 @@ const build_poets_json = () => {
       period,
       has_portraits,
       has_square_portrait,
+      has_mentions,
       has_works: has.has_works,
       has_poems: has.has_poems,
       has_prose: has.has_prose,
       has_texts: has.has_texts,
-      has_bibliography:
-        fs.existsSync(`fdirs/${id}/bibliography-primary.xml`) ||
-        fs.existsSync(`fdirs/${id}/bibliography-secondary.xml`),
       has_biography:
         fs.existsSync(`fdirs/${id}/bio.xml`) ||
         fs.existsSync(`fdirs/${id}/events.xml`) ||
@@ -568,6 +575,7 @@ const handle_text = (
 
   const keywords = head.get('keywords');
   const isBible = poetId === 'bibel';
+  const isFolkevise = poetId === 'folkeviser';
 
   let subtitles = null;
   const subtitle = head.get('subtitle');
@@ -637,7 +645,13 @@ const handle_text = (
     .toString()
     .replace('<body>', '')
     .replace('</body>', '');
-  const content_html = htmlToXml(rawBody, collected, isPoetry, isBible);
+  const content_html = htmlToXml(
+    rawBody,
+    collected,
+    isPoetry,
+    isBible,
+    isFolkevise
+  );
   const has_footnotes =
     rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
   mkdirp.sync(foldername);
@@ -842,9 +856,9 @@ const works_first_pass = collected => {
   let works = new Map(loadCachedJSON('collected.works') || []);
   let found_changes = false;
   const force_reload = texts.size === 0 || works.size === 0;
-  collected.poets.forEach(poet => {
-    collected.workids.get(poet.id).forEach(workId => {
-      const workFilename = `fdirs/${poet.id}/${workId}.xml`;
+  collected.workids.forEach((workIds, poetId) => {
+    workIds.forEach(workId => {
+      const workFilename = `fdirs/${poetId}/${workId}.xml`;
       if (!force_reload && !isFileModified(workFilename)) {
         return;
       } else {
@@ -861,14 +875,12 @@ const works_first_pass = collected => {
       const title = head.get('title').text();
       const year = head.get('year').text();
       // Sanity check
-      if (work.attr('author').value() !== poet.id) {
+      if (work.attr('author').value() !== poetId) {
         throw new Error(
-          `fdirs/${
-            poet.id
-          }/${workId}.xml has wrong author-attribute in <kalliopework>`
+          `fdirs/${poetId}/${workId}.xml has wrong author-attribute in <kalliopework>`
         );
       }
-      works.set(`${poet.id}/${workId}`, {
+      works.set(`${poetId}/${workId}`, {
         title: replaceDashes(title),
         year: year,
         has_content: work.find('//poem|//prose').length > 0,
@@ -884,7 +896,7 @@ const works_first_pass = collected => {
         texts.set(textId, {
           title: replaceDashes(linkTitle),
           type: part.name(),
-          poetId: poet.id,
+          poetId: poetId,
           workId: workId,
         });
       });
@@ -929,8 +941,8 @@ const build_textrefs = collected => {
   const force_reload = textrefs.size == 0;
   let found_changes = false;
   const regexps = [
-    /xref poem="([^"]*)"/g,
-    /a poem="([^"]*)"/g,
+    /xref\s.*?poem="([^",]*)/g,
+    /a\s.*?poem="([^",]*)/g,
     /xref bibel="([^",]*)/g,
   ];
   collected.poets.forEach((poet, poetId) => {
@@ -965,6 +977,105 @@ const build_textrefs = collected => {
     writeCachedJSON('collected.textrefs', Array.from(textrefs));
   }
   return textrefs;
+};
+
+const build_person_or_keyword_refs = collected => {
+  let person_or_keyword_refs = new Map(
+    loadCachedJSON('collected.person_or_keyword_refs') || []
+  );
+  const force_reload = person_or_keyword_refs.size == 0;
+  let found_changes = false;
+  const regexps = [
+    { regexp: /xref ()poem="([^"]*)"/g, type: 'text' },
+    { regexp: /a ()poem="([^"]*)"/g, type: 'text' },
+    { regexp: /xref type="([^"]*)" poem="([^"]*)"/g, type: 'text' },
+    { regexp: /a type="([^"]*)" poem="([^"]*)"/g, type: 'text' },
+    { regexp: /xref ()bibel="([^",]*)/g, type: 'text' },
+    { regexp: /a ()person="([^"]*)"/g, type: 'person' },
+    { regexp: /a ()poet="([^"]*)"/g, type: 'person' },
+  ];
+  // TODO: Led også efter <a person="">xxx</a> og <a poet="">xxxx</a>
+  // toKey is a poet id or a keyword id
+  const register = (filename, toKey, fromPoemId, type) => {
+    const collection = person_or_keyword_refs.get(toKey) || {
+      mention: [],
+      translation: [],
+    };
+    if (type === 'mention') {
+      if (
+        collection.mention.indexOf(fromPoemId) === -1 &&
+        collection.translation.indexOf(fromPoemId) === -1
+      ) {
+        collection.mention.push(fromPoemId);
+      }
+    } else if (type === 'translation') {
+      const mentionIndex = collection.mention.indexOf(fromPoemId);
+      if (mentionIndex > -1) {
+        collection.mention.splice(mentionIndex, 1);
+      }
+      if (collection.translation.indexOf(fromPoemId) === -1) {
+        collection.translation.push(fromPoemId);
+      }
+    } else {
+      throw new Error(`${filename} has xref with unknown type ${type}`);
+    }
+    person_or_keyword_refs.set(toKey, collection);
+  };
+  collected.workids.forEach((workIds, poetId) => {
+    workIds.forEach(workId => {
+      const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!force_reload && !isFileModified(filename)) {
+        return;
+      } else {
+        found_changes = true;
+      }
+      let doc = loadXMLDoc(filename);
+      const texts = doc.find('//poem|//prose');
+      texts.forEach(text => {
+        const fromId = text.attr('id').value();
+        const notes = text.find('head/notes/note|body//footnote|body//note');
+        notes.forEach(note => {
+          regexps.forEach(rule => {
+            while ((match = rule.regexp.exec(note.toString())) != null) {
+              const refType = match[1] || 'mention';
+              if (rule.type === 'text') {
+                const toPoemId = match[2].replace(/,.*$/, '');
+                const toText = collected.texts.get(toPoemId);
+                if (toText != null) {
+                  const toPoetId = toText.poetId;
+                  if (toPoetId !== poetId) {
+                    // Skip self-refs
+                    register(filename, toPoetId, fromId, refType);
+                  }
+                } else {
+                  throw new Error(
+                    `${filename} points to unknown text ${toPoemId}`
+                  );
+                }
+              } else if (rule.type === 'person') {
+                const toPoetId = match[2];
+                register(filename, toPoetId, fromId, 'mention');
+              }
+            }
+          });
+        });
+        const head = text.get('head');
+        const keywords = safeGetText(head, 'keywords') || '';
+        if (keywords.trim().length > 0) {
+          keywords.split(',').forEach(keyword => {
+            register(filename, keyword, fromId, 'mention');
+          });
+        }
+      });
+    });
+  });
+  if (found_changes) {
+    writeCachedJSON(
+      'collected.person_or_keyword_refs',
+      Array.from(person_or_keyword_refs)
+    );
+  }
+  collected.person_or_keyword_refs = person_or_keyword_refs;
 };
 
 const build_works_toc = collected => {
@@ -1442,23 +1553,37 @@ const build_dict_second_pass = collected => {
   writeJSON(`static/api/dict.json`, items);
 };
 
-const build_bibliography_json = collected => {
+const build_mentions_json = collected => {
+  const build_html = poemId => {
+    const meta = collected.texts.get(poemId);
+    const poet = poetName(collected.poets.get(meta.poetId));
+    const work = workName(collected.works.get(meta.poetId + '/' + meta.workId));
+    return [
+      [
+        `${poet}: <a poem="${poemId}">»${meta.title}«</a> – ${work}`,
+        { html: true },
+      ],
+    ];
+  };
   collected.poets.forEach((poet, poetId) => {
-    if (
-      !isFileModified(
-        `data/poets.xml:${poet.id}`,
-        `fdirs/${poet.id}/bibliography-primary.xml`,
-        `fdirs/${poet.id}/bibliography-secondary.xml`
-      )
-    ) {
+    if (!poet.has_mentions) {
       return;
     }
-
     safeMkdir(`static/api/${poet.id}`);
-    let data = { poet, primary: [], secondary: [] };
+    let data = {
+      poet,
+      mentions: [],
+      translations: [],
+      primary: [],
+      secondary: [],
+    };
+    const refs = collected.person_or_keyword_refs.get(poetId);
+    data.mentions = refs.mention.map(build_html);
+    data.translations = refs.translation.map(build_html);
+
     ['primary', 'secondary'].forEach(filename => {
-      const bioXmlPath = `fdirs/${poet.id}/bibliography-${filename}.xml`;
-      const doc = loadXMLDoc(bioXmlPath);
+      const biblioXmlPath = `fdirs/${poet.id}/bibliography-${filename}.xml`;
+      const doc = loadXMLDoc(biblioXmlPath);
       if (doc != null) {
         data[filename] = doc.find('//items/item').map(line => {
           return htmlToXml(
@@ -1469,9 +1594,12 @@ const build_bibliography_json = collected => {
             collected
           );
         });
+      } else {
+        data[filename] = [];
       }
     });
-    const outFilename = `static/api/${poet.id}/bibliography.json`;
+
+    const outFilename = `static/api/${poet.id}/mentions.json`;
     console.log(outFilename);
     writeJSON(outFilename, data);
   });
@@ -1796,8 +1924,8 @@ const build_sitemap_xml = collected => {
     });
     collected.poets.forEach((poet, poetId) => {
       urls.push(`https://kalliope.org/${lang}/bio/${poetId}`);
-      if (poet.has_bibliography) {
-        urls.push(`https://kalliope.org/${lang}/bibliography/${poetId}`);
+      if (poet.has_mentions) {
+        urls.push(`https://kalliope.org/${lang}/mentions/${poetId}`);
       }
     });
   });
@@ -1980,11 +2108,12 @@ const update_elasticsearch = collected => {
 
 safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);
-collected.poets = b('build_poets_json', build_poets_json);
-b('build_bibliography_json', build_bibliography_json, collected);
-collected.textrefs = b('build_textrefs', build_textrefs, collected);
 // Build collected.works and collected.texts
 Object.assign(collected, b('works_first_pass', works_first_pass, collected));
+b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
+collected.poets = b('build_poets_json', build_poets_json);
+b('build_mentions_json', build_mentions_json, collected);
+collected.textrefs = b('build_textrefs', build_textrefs, collected);
 build_dict_first_pass(collected);
 collected.keywords = b('build_keywords', build_keywords);
 b('build_poet_lines_json', build_poet_lines_json, collected);
