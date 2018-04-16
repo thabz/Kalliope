@@ -350,6 +350,7 @@ export default class extends React.Component<TextComponentProps> {
                       font-family: 'Palatino', 'Georgia', serif;
                       line-height: 1.5;
                       font-size: 1.15em;
+                      display: inline-block;
                     }
                     .text-content sc {
                       font-variant: small-caps;
