@@ -122,6 +122,9 @@ File.readlines(ARGV[0]).each do |line|
       if m[1].include? "i"
           l = "<i>#{l}</i>"
       end
+      if m[1].include? "w"
+          l = "<w>#{l}</w>"
+      end
       if m[1].include? "c"
           l = "<center>#{l}</center>"
       end
