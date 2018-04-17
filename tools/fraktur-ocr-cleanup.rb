@@ -353,6 +353,7 @@
 '(\W)mork(\W)/\1mørk\2',
 '(\W)mode(\W)/\1møde\2',
 '(\W)hor(\W)/\1hør\2',
+'imsde/imøde',
 'Morke/Mørke',
 'Morkt/Mørkt',
 'Nod/Nød',
