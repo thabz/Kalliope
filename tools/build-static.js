@@ -575,6 +575,7 @@ const handle_text = (
 
   const keywords = head.get('keywords');
   const isBible = poetId === 'bibel';
+  const isFolkevise = poetId === 'folkeviser';
 
   let subtitles = null;
   const subtitle = head.get('subtitle');
@@ -644,7 +645,13 @@ const handle_text = (
     .toString()
     .replace('<body>', '')
     .replace('</body>', '');
-  const content_html = htmlToXml(rawBody, collected, isPoetry, isBible);
+  const content_html = htmlToXml(
+    rawBody,
+    collected,
+    isPoetry,
+    isBible,
+    isFolkevise
+  );
   const has_footnotes =
     rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
   mkdirp.sync(foldername);
@@ -934,8 +941,8 @@ const build_textrefs = collected => {
   const force_reload = textrefs.size == 0;
   let found_changes = false;
   const regexps = [
-    /xref\s.*?poem="([^"]*)"/g,
-    /a\s.*?poem="([^"]*)"/g,
+    /xref\s.*?poem="([^",]*)/g,
+    /a\s.*?poem="([^",]*)/g,
     /xref bibel="([^",]*)/g,
   ];
   collected.poets.forEach((poet, poetId) => {

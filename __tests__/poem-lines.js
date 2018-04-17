@@ -16,9 +16,16 @@ const regexps = [
   /^\.[a-zæøåA-ZÆØÅ]/m, // Enkelt punktum ...
   /^-[a-zæøåA-ZÆØÅ]/m,   // Enkelt bindestreg ...
   /<firstline><\/firstline>/,   // Tom <firstline> ...
+  {regexp: /[a-zæøå],[a-zæøå]/,
+  whitelist: [/<keywords>/,/<quality>/]},
   { regexp: /mmm/, whitelist: [/<note>.*\]/] },
   ///iii/, // Problematisk da den rammer lowercase romertal. Fiks fejlere og drop reglen.
   /lll/,
+  /,;/,
+  {
+    regexp: /;,/,
+    whitelist: [/&/],
+  },
   {
     regexp: /aaa/,
     whitelist: [/[Ss]maaalfer/, /Smaaarbeider/, /<note>.*\]/],

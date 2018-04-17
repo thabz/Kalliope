@@ -1055,18 +1055,20 @@
   <works>1627,1631</works>
 </person>
 
-<!-- TODO: Find døds/fødselsår -->
 <person id="aagaard" country="dk" lang="da" type="poet">
   <name>
-    <firstname>Christian</firstname>
+    <firstname>Christen</firstname>
     <lastname>Aagaard</lastname>
   </name>
   <period>
     <born>
-      <date>?</date>
+      <date>1616-01-27</date>
+      <note>eller 1616-01-28</note>
+      <place>Viborg</place>
     </born>
     <dead>
-      <date>?</date>
+      <date>1664-02-05</date>
+      <place>Ribe</place>
     </dead>
   </period>
 </person>
@@ -2588,7 +2590,7 @@
       <place>Sorø</place>
     </dead>
   </period>
-  <works>1811,1812,1813,1820,1821,1822,1824,1825,1831,1832,1833,1837,1837h,1838,1839,1842,1842S,1855,andre</works>
+  <works>1811,1812,1813,1820,1821,1823,1824,1825,1831,1832,1833,1837,1837h,1838,1839,1842,1842S,1855,andre</works>
 </person>
 
 <person id="hauch" country="dk" lang="da" type="poet">
