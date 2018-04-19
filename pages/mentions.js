@@ -60,7 +60,7 @@ export default class extends React.Component<MentionsProps> {
     }
     const requestPath = `/${lang}/mentions/${poet.id}`;
     const titles = {
-      mentions: _('Henvisninger', lang),
+      mentions: _('Omtaler', lang),
       translations: _('Oversættelser', lang),
       primary: _('Primær litteratur', lang),
       secondary: _('Sekundær litteratur', lang),

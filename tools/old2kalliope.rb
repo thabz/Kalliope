@@ -119,14 +119,23 @@ File.readlines(ARGV[0]).each do |line|
   m = /{(.*?):(.*)}/.match(line)
   if (!m.nil?)
       l = m[2]
+      if m[1].include? "b"
+          l = "<b>#{l}</b>"
+      end
       if m[1].include? "i"
           l = "<i>#{l}</i>"
+      end
+      if m[1].include? "w"
+          l = "<w>#{l}</w>"
       end
       if m[1].include? "c"
           l = "<center>#{l}</center>"
       end
       if m[1].include? "r"
           l = "<right>#{l}</right>"
+      end
+      if m[1].include? "p"
+          l = "<wrap>#{l}</wrap>"
       end
       if m[1].include? "s"
           l = "<small>#{l}</small>"

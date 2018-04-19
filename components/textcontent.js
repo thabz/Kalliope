@@ -383,8 +383,12 @@ export default class TextContent extends React.Component {
 
       if (options.isPoetry && !lineOptions.wrap && !lineOptions.hr) {
         className += ' poem-line';
-        const displayedLineNum =
-          lineNum != null && lineNum % 5 === 0 ? lineNum : null;
+        let displayedLineNum = null;
+        if (lineOptions.folkevise && lineNum != null) {
+          displayedLineNum = lineNum + '.';
+        } else if (lineNum != null && lineNum % 5 === 0) {
+          displayedLineNum = lineNum;
+        }
         return (
           <div
             className={className}
