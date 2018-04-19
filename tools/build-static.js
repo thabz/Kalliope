@@ -641,6 +641,46 @@ const handle_text = (
   const foldername = Paths.textFolder(textId);
   const prev_next = resolve_prev_next(textId);
 
+  const sourceNode = head.get('source');
+  let source = null;
+  if (sourceNode != null) {
+    let pages = null;
+    const pagesAttr = safeGetAttr(sourceNode, 'pages');
+    let sourceBookRef = work.source ? work.source.source : null;
+    if (sourceNode.text().trim().length > 0) {
+      sourceBookRef = sourceNode.toString().replace(/<source[^>]*>/,'').replace(/<\/source>/,'');
+    }
+    const facsimile =
+      safeGetAttr(sourceNode, 'facsimile') ||
+      (work.source ? work.source.facsimile : null);
+    let facsimilePages = safeGetAttr(sourceNode, 'facsimile-pages');
+    if (
+      facsimilePages == null &&
+      work.source != null &&
+      work.source.facsimilePagesOffset != null &&
+      pagesAttr != null
+    ) {
+      // Deduce facsimilePages from pages and facsimilePagesOffset.
+      if (pagesAttr.indexOf('-') > -1) {
+        // Interval
+        const pagesParts = pagesAttr.split(/-/);
+        pFrom = parseInt(pagesParts[0]) + work.source.facsimilePagesOffset;
+        pTo = parseInt(pagesParts[1]) + work.source.facsimilePagesOffset;
+        facsimilePages = `${pFrom}-${pTo}`;
+      } else {
+        // Single page
+        facsimilePages =
+          parseInt(pagesAttr.trim()) + work.source.facsimilePagesOffset;
+      }
+    }
+    source = {
+      source: sourceBookRef,
+      pages: pagesAttr,
+      facsimile,
+      facsimilePages,
+    };
+  }
+
   const rawBody = body
     .toString()
     .replace('<body>', '')
@@ -669,6 +709,7 @@ const handle_text = (
       is_prose: text.name() === 'prose',
       has_footnotes,
       notes: get_notes(head),
+      source,
       keywords: keywordsArray || [],
       refs: refsArray,
       pictures: get_pictures(head),
@@ -926,6 +967,26 @@ const works_second_pass = collected => {
       const title = head.get('title').text();
       const year = head.get('year').text();
       const data = { id: workId, title, year, status, type };
+      const sourceNode = head.get('source');
+      if (sourceNode != null) {
+        let source = null;
+        if (sourceNode.text().trim().length > 0) {
+          source = sourceNode.toString().replace(/<source[^>]*>/,'').replace(/<\/source>/,'');
+        };
+        const facsimile = safeGetAttr(sourceNode, 'facsimile');
+        let facsimilePagesOffset = safeGetAttr(
+          sourceNode,
+          'facsimile-pages-offset'
+        );
+        if (facsimilePagesOffset != null) {
+          facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
+        }
+        data.source = {
+          source,
+          facsimile,
+          facsimilePagesOffset,
+        };
+      }
       collected_works.set(poetId + '-' + workId, data);
 
       // TODO: Make handle_work non-recursive by using a simple XPath
@@ -1557,10 +1618,18 @@ const build_mentions_json = collected => {
   const build_html = poemId => {
     const meta = collected.texts.get(poemId);
     const poet = poetName(collected.poets.get(meta.poetId));
-    const work = workName(collected.works.get(meta.poetId + '/' + meta.workId));
+    const work = collected.works.get(meta.poetId + '/' + meta.workId);
+    if (work == null) {
+      throw `${poemId} references unknown work ${meta.poetId +
+        '/' +
+        meta.workId}`;
+    }
+    const workNameFormattet = workName(work);
     return [
       [
-        `${poet}: <a poem="${poemId}">»${meta.title}«</a> – ${work}`,
+        `${poet}: <a poem="${poemId}">»${
+          meta.title
+        }«</a> – ${workNameFormattet}`,
         { html: true },
       ],
     ];
