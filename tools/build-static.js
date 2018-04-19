@@ -679,7 +679,6 @@ const handle_text = (
       facsimile,
       facsimilePages,
     };
-    console.log(`${title}: facsimilePages=${facsimilePages}`);
   }
 
   const rawBody = body
