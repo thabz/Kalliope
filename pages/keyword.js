@@ -25,13 +25,12 @@ import * as OpenGraph from './helpers/opengraph.js';
 import ErrorPage from './error.js';
 import _ from '../pages/helpers/translations.js';
 
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    keyword: Keyword,
-    error: ?Error,
-  };
-
+type KeywordComponentProps = {
+  lang: Lang,
+  keyword: Keyword,
+  error: ?Error,
+};
+export default class extends React.Component<KeywordComponentProps> {
   static async getInitialProps({
     query: { lang, keywordId },
   }: {
