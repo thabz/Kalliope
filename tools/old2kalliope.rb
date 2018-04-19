@@ -52,14 +52,15 @@ def printPoem()
     puts "    </subtitle>"
   end
   puts "    <firstline>#{@firstline}</firstline>"
-  if (@source && @page) || @notes.length > 0
-    pp = @page.include?('-') ? 'pp' : 'p';
+  if @notes.length > 0
     puts "    <notes>"
     @notes.each { |noteline|
       puts "        <note>#{noteline}</note>"
     }
-    puts "        <note>#{@source.gsub(/[\. ]*$/,'')}, #{pp}. #{@page}.</note>"
     puts "    </notes>"
+  end
+  if @source and @page
+    puts "    <source pages=\"#{@page}\"/>"
   end
   if @keywords
     puts "    <keywords>#{@keywords}</keywords>"
@@ -145,6 +146,8 @@ File.readlines(ARGV[0]).each do |line|
   end
   if @state == 'NONE' and line =~ /^KILDE:/
       @source = line[6..-1].strip
+      puts "<source facsimile=\"XXXXXX_color.pdf\" facsimile-pages-offset=\"YYY\">#{@source}</source>"
+      puts ""
   end
   if @state == 'NONE' and line =~ /^DIGTER:/
       @poetid = line[7..-1].strip
