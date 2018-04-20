@@ -201,6 +201,23 @@ export default class extends React.Component<TextComponentProps> {
     const notes = text.notes.map((note, i) => {
       return <Note key={i} note={note} lang={lang} />;
     });
+    if (text.source != null) {
+      let sourceText = 'Teksten følger ';
+      sourceText += text.source.source.replace(/\.?$/, ', ');
+      if (text.source.pages.indexOf('-') > -1) {
+        sourceText += 'pp. ';
+      } else {
+        sourceText += 'p. ';
+      }
+      sourceText += text.source.pages + '.';
+      const note = {
+        lang,
+        type: 'source',
+        content_html: [[sourceText, { html: true }]],
+        content_lang: 'da',
+      };
+      notes.push(<Note key="source" note={note} lang={lang} />);
+    }
     let renderedNotes = null;
     if (notes.length > 0) {
       renderedNotes = <div style={{ marginBottom: '30px' }}>{notes}</div>;
@@ -251,7 +268,7 @@ export default class extends React.Component<TextComponentProps> {
       refs.length > 0 ||
       text.has_footnotes ||
       text.pictures.length > 0 ||
-      text.notes.length > 0 ||
+      notes.length > 0 ||
       text.keywords.length > 0
     ) {
       sidebar = (

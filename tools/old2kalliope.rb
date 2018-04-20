@@ -52,14 +52,15 @@ def printPoem()
     puts "    </subtitle>"
   end
   puts "    <firstline>#{@firstline}</firstline>"
-  if (@source && @page) || @notes.length > 0
-    pp = @page.include?('-') ? 'pp' : 'p';
+  if @notes.length > 0
     puts "    <notes>"
     @notes.each { |noteline|
       puts "        <note>#{noteline}</note>"
     }
-    puts "        <note>#{@source.gsub(/[\. ]*$/,'')}, #{pp}. #{@page}.</note>"
     puts "    </notes>"
+  end
+  if @source and @page
+    puts "    <source pages=\"#{@page}\"/>"
   end
   if @keywords
     puts "    <keywords>#{@keywords}</keywords>"
@@ -119,6 +120,9 @@ File.readlines(ARGV[0]).each do |line|
   m = /{(.*?):(.*)}/.match(line)
   if (!m.nil?)
       l = m[2]
+      if m[1].include? "b"
+          l = "<b>#{l}</b>"
+      end
       if m[1].include? "i"
           l = "<i>#{l}</i>"
       end
@@ -131,6 +135,9 @@ File.readlines(ARGV[0]).each do |line|
       if m[1].include? "r"
           l = "<right>#{l}</right>"
       end
+      if m[1].include? "p"
+          l = "<wrap>#{l}</wrap>"
+      end
       if m[1].include? "s"
           l = "<small>#{l}</small>"
       end
@@ -139,6 +146,8 @@ File.readlines(ARGV[0]).each do |line|
   end
   if @state == 'NONE' and line =~ /^KILDE:/
       @source = line[6..-1].strip
+      puts "<source facsimile=\"XXXXXX_color.pdf\" facsimile-pages-offset=\"YYY\">#{@source}</source>"
+      puts ""
   end
   if @state == 'NONE' and line =~ /^DIGTER:/
       @poetid = line[7..-1].strip
