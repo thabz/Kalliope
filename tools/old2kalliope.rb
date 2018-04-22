@@ -206,7 +206,7 @@ File.readlines(ARGV[0]).each do |line|
     elsif line.start_with?("SIDE:")
       @page = line[5..-1].strip
     elsif line.start_with?("SKREVET:")
-      @written = line[7..-1].strip
+      @written = line[8..-1].strip
     elsif line.start_with?("TYPE:")
       @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
     elsif line =~ /^[A-Z]*:/
