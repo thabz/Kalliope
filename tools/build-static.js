@@ -235,6 +235,9 @@ const build_museum_link = picture => {
       case 'npg':
         url = `https://www.npg.org.uk/collections/search/portrait/${objId}`;
         break;
+      case 'natmus.se':
+        url = `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${objId}&viewType=detailView`;
+        break;
     }
     return url == null ? null : ` <a href="${url}">⌘</a>`;
   }
