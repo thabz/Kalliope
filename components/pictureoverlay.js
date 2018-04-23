@@ -5,11 +5,117 @@ import CommonData from '../pages/helpers/commondata.js';
 import TextContent from './textcontent.js';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
 
+class LeftArrow extends React.Component {
+  render() {
+    return (
+      <svg width="30" height="30">
+        <circle
+          className="icon-background"
+          cx="15"
+          cy="15"
+          r="14"
+          fill="white"
+          stroke="black"
+          strokeWidth="1"
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          x1="8"
+          y1="15"
+          x2="22"
+          y2="15"
+          strokeWidth="1"
+          stroke="black"
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          x1="15"
+          y1="9"
+          x2="8"
+          y2="15"
+          strokeWidth="1"
+          stroke="black"
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          x1="15"
+          y1="21"
+          x2="8"
+          y2="15"
+          strokeWidth="1"
+          stroke="black"
+          vectorEffect="non-scaling-stroke"
+        />
+        <circle
+          className="button-overlay"
+          cx="15"
+          cy="15"
+          r="14"
+          fill="transparent"
+        />
+      </svg>
+    );
+  }
+}
+class RightArrow extends React.Component {
+  render() {
+    return (
+      <svg width="30" height="30">
+        <circle
+          className="icon-background"
+          cx="15"
+          cy="15"
+          r="14"
+          fill="white"
+          stroke="black"
+          strokeWidth="1"
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          x1="8"
+          y1="15"
+          x2="22"
+          y2="15"
+          strokeWidth="1"
+          stroke="black"
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          x1="15"
+          y1="9"
+          x2="22"
+          y2="15"
+          strokeWidth="1"
+          stroke="black"
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          x1="15"
+          y1="21"
+          x2="22"
+          y2="15"
+          strokeWidth="1"
+          stroke="black"
+          vectorEffect="non-scaling-stroke"
+        />
+        <circle
+          className="button-overlay"
+          cx="15"
+          cy="15"
+          r="14"
+          fill="transparent"
+        />
+      </svg>
+    );
+  }
+}
+
 class CloseButton extends React.Component {
   render() {
     return (
       <svg width="30" height="30">
         <circle
+          className="icon-background"
           cx="15"
           cy="15"
           r="14"
@@ -181,6 +287,8 @@ export default class PictureOverlay extends React.Component {
         <div className="overlay-container" onClick={this.eatClick}>
           <div className="overlay-close" onClick={this.hideOverlay}>
             <CloseButton />
+            <RightArrow />
+            <LeftArrow />
           </div>
           <BiggerPicture picture={picture} srcPrefix={srcPrefix} lang={lang} />
         </div>
@@ -235,8 +343,8 @@ export default class PictureOverlay extends React.Component {
             display: block;
           }
 
-          .overlay-container .overlay-close svg .button-overlay:hover {
-            fill: rgba(0, 0, 0, 0.05);
+          :global(.overlay-close svg:hover .icon-background) {
+            fill: #eee;
           }
 
           :global(.noscroll) {
