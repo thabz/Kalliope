@@ -9,7 +9,7 @@ import * as Strings from '../pages/helpers/strings.js';
 
 type PictureProps = {
   pictures: Array<PictureItem>,
-  startIndex: 0,
+  startIndex: number,
   lang: Lang,
   srcPrefix?: string,
   showDropShadow?: boolean,
@@ -69,7 +69,7 @@ export default class Picture extends React.Component<PictureProps> {
     }
     const onClick = e => {
       if (clickToZoom == true) {
-        this.context.showPictureOverlay(picture, srcPrefix);
+        this.context.showPictureOverlay(pictures, srcPrefix, 'da', 0);
       }
     };
     if (clickToZoom == true) {

@@ -26,10 +26,11 @@ export default class SidebarPictures extends React.Component {
       return (
         <Picture
           key={'picture' + i}
-          picture={picture}
+          pictures={[picture]}
           srcPrefix={srcPrefix}
           clickToZoom={clickToZoom}
           showDropShadow={showDropShadow}
+          contentLang={picture.content_lang || 'da'}
           lang={lang}
         />
       );
