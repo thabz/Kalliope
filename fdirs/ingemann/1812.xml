@@ -1674,9 +1674,7 @@ Jeg græd ei meer; thi Himmelen
     <title>Hymne</title>
     <subtitle>(Efter David)</subtitle>
     <firstline>Hæv dig, min Sjæl! en Stund fra Støvets Kjæder</firstline>
-    <notes>
-        <note>TODO:Er dette en David-salme fra biblen, som vi kan linke til?</note>
-    </notes>
+    <!-- TODO: Er dette en David-salme fra biblen, som vi kan linke til? -->
     <source pages="77-81"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1974,13 +1972,15 @@ Jeg kunde være som jeg <w>er</w> - hos dig.
 <head>
     <title>Ode til Svada</title>
     <firstline>Vær hilset, Sandheds varme Tolkerinde!</firstline>
+    <notes>
+        <note>Mottoet stammer fra <i>Iliaden</i>, I, 249, som i Wilsters <a poem="wilster2005050801,249">oversættelse</a> lyder ,,Ham flød Stemmen fra Læben saa sød som den liflige Honning.'' </note>
+    </notes>
     <source pages="91-95"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<nonum><small><right>Ἀτὸ γλώσσϰς μὲλιτος γλυϰίων ρέεν αὐδϰ.</right></small></nonum>
+<nonum><small><right>- - Ἀπὸ γλώσσης μέλιτος γλυκίων ῥέεν αὐδή.</right></small></nonum>
 <nonum><right><w>Homer.</w></right></nonum>
-<!-- TODO: Ikke perfekt transkriberet. Find det korrekt citat på nettet. -->
 
 Vær hilset, Sandheds varme Tolkerinde!
 Vær hilset i det kolde Nord!
