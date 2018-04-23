@@ -54,6 +54,7 @@
 'gjvr/gjør',
 'gjsr/gjør',
 'gjørt/gjort',
+'gjørde/gjorde',
 'sial/skal',
 'Ncer/Nær',
 'M /M',
