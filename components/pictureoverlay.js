@@ -5,7 +5,7 @@ import CommonData from '../pages/helpers/commondata.js';
 import TextContent from './textcontent.js';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
 
-class LeftArrow extends React.Component {
+class LeftArrow extends React.Component<*> {
   render() {
     return (
       <svg width="30" height="30">
@@ -57,7 +57,7 @@ class LeftArrow extends React.Component {
     );
   }
 }
-class RightArrow extends React.Component {
+class RightArrow extends React.Component<*> {
   render() {
     return (
       <svg width="30" height="30">
@@ -110,7 +110,7 @@ class RightArrow extends React.Component {
   }
 }
 
-class CloseButton extends React.Component {
+class CloseButton extends React.Component<*> {
   render() {
     return (
       <svg width="30" height="30">
@@ -154,7 +154,7 @@ class CloseButton extends React.Component {
   }
 }
 
-class BiggerPicture extends React.Component {
+class BiggerPicture extends React.Component<*> {
   props: {
     picture: PictureItem,
     srcPrefix: ?string,
@@ -220,14 +220,21 @@ class BiggerPicture extends React.Component {
 }
 
 type PictureOverlayPropType = {
-  picture: PictureItem,
+  pictures: Array<PictureItem>,
+  startIndex: number,
   srcPrefix?: string,
   lang: Lang,
   closeCallback: Function,
 };
 
-export default class PictureOverlay extends React.Component {
-  props: PictureOverlayPropType;
+type PictureOverlayStateType = {
+  currentIndex: number,
+};
+
+export default class PictureOverlay extends React.Component<
+  PictureOverlayPropType,
+  PictureOverlayStateType
+> {
   onKeyUp: Function;
   hideOverlay: Function;
 
@@ -240,6 +247,7 @@ export default class PictureOverlay extends React.Component {
     super(props);
     this.onKeyUp = this.onKeyUp.bind(this);
     this.hideOverlay = this.hideOverlay.bind(this);
+    this.state = { currentIndex: props.startIndex };
   }
 
   componentDidMount() {
@@ -280,8 +288,9 @@ export default class PictureOverlay extends React.Component {
   }
 
   render() {
-    const { picture, srcPrefix, lang } = this.props;
+    const { pictures, srcPrefix, lang } = this.props;
 
+    const picture = pictures[this.state.currentIndex];
     return (
       <div className="overlay-background" onClick={this.hideOverlay}>
         <div className="overlay-container" onClick={this.eatClick}>

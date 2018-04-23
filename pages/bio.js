@@ -192,7 +192,16 @@ class PersonPortrait extends React.Component<PersonPortraitProps> {
       return null;
     }
     const srcPrefix = `/static/images/${poet.id}`;
-    return <Picture picture={portrait} srcPrefix={srcPrefix} lang={lang} />;
+    const pictures = [portrait];
+    return (
+      <Picture
+        pictures={pictures}
+        startIndex={0}
+        srcPrefix={srcPrefix}
+        lang={lang}
+        contentLang={portrait.content_lang || 'da'}
+      />
+    );
   }
 }
 type TimelineProps = {
@@ -221,7 +230,12 @@ class Timeline extends React.Component<TimelineProps> {
         };
         html = (
           <div style={{ paddingTop: '0.37em' }}>
-            <Picture picture={picture} srcPrefix="/static" lang={lang} />
+            <Picture
+              pictures={[picture]}
+              srcPrefix="/static"
+              lang={lang}
+              contentLang={picture.content_lang || 'da'}
+            />
           </div>
         );
       } else {

@@ -8,7 +8,8 @@ import CommonData from '../pages/helpers/commondata.js';
 import * as Strings from '../pages/helpers/strings.js';
 
 type PictureProps = {
-  picture: PictureItem,
+  pictures: Array<PictureItem>,
+  startIndex: 0,
   lang: Lang,
   srcPrefix?: string,
   showDropShadow?: boolean,
@@ -24,17 +25,19 @@ export default class Picture extends React.Component<PictureProps> {
   static defaultProps = {
     showDropShadow: true,
     clickToZoom: true,
+    startIndex: 0,
   };
   render() {
     const {
-      picture,
+      pictures,
+      startIndex,
       lang,
       contentLang,
       srcPrefix,
       showDropShadow,
       clickToZoom,
     } = this.props;
-
+    const picture = pictures[startIndex];
     const src: string = (srcPrefix || '') + '/' + picture.src;
     const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
       return '/t/' + p1 + CommonData.fallbackImagePostfix;
@@ -61,15 +64,15 @@ export default class Picture extends React.Component<PictureProps> {
     if (picture.src.indexOf('-oval.jpg') > -1) {
       pictureClassName += 'oval-mask';
     }
-    if (showDropShadow) {
+    if (showDropShadow == true) {
       pictureClassName += ' with-drop-shadow';
     }
     const onClick = e => {
-      if (clickToZoom) {
+      if (clickToZoom == true) {
         this.context.showPictureOverlay(picture, srcPrefix);
       }
     };
-    if (clickToZoom) {
+    if (clickToZoom == true) {
       pictureClassName += ' clickable';
     }
     return (
