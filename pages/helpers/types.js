@@ -33,6 +33,7 @@ export type Poet = {
   lang: Lang,
   country: Country,
   portrait: string,
+  square_portrait: string,
   name: {
     lastname?: string,
     firstname: string,
@@ -54,6 +55,7 @@ export type Poet = {
   has_poems: boolean,
   has_prose: boolean,
   has_portraits: boolean,
+  has_square_portrait: boolean,
 };
 
 export type Work = {
