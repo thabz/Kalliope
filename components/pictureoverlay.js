@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import PropTypes from 'prop-types';
 import CommonData from '../pages/helpers/commondata.js';
 import TextContent from './textcontent.js';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
@@ -246,8 +245,10 @@ export default class PictureOverlay extends React.Component<
   PictureOverlayPropType,
   PictureOverlayStateType
 > {
-  onKeyUp: Function;
-  hideOverlay: Function;
+  onKeyUp: KeyboardEvent => void;
+  hideOverlay: Event => void;
+  onRightClick: MouseEvent => void;
+  onLeftClick: MouseEvent => void;
 
   static contextTypes = {
     showPictureOverlay: PropTypes.func,
@@ -264,15 +265,13 @@ export default class PictureOverlay extends React.Component<
   }
 
   componentDidMount() {
-    if (
-      document != null &&
-      document.body != null &&
-      document.body.classList != null
-    ) {
+    if (document != null) {
       // eslint-disable-next-line no-undef
       document.addEventListener('keyup', this.onKeyUp, false);
-      // eslint-disable-next-line no-undef
-      document.body.classList.add('noscroll');
+      if (document.body != null && document.body.classList != null) {
+        // eslint-disable-next-line no-undef
+        document.body.classList.add('noscroll');
+      }
     }
   }
 

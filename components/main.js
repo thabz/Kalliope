@@ -20,13 +20,13 @@ export default class Main extends React.Component<*, MainStateTypes> {
     hidePictureOverlay: PropTypes.func,
   };
 
-  hidePictureOverlay() {
-    this.setState({ overlayPictures: null });
-  }
+  hidePictureOverlay: () => void;
+  showPictureOverlay: () => void;
 
-  constructor(props: any) {
+  constructor(props: *) {
     super(props);
     this.hidePictureOverlay = this.hidePictureOverlay.bind(this);
+    this.showPictureOverlay = this.showPictureOverlay.bind(this);
     this.state = {
       overlayPictures: null,
     };
@@ -48,6 +48,9 @@ export default class Main extends React.Component<*, MainStateTypes> {
     this.setState({
       overlayPictures: { pictures, srcPrefix, lang, startIndex },
     });
+  }
+  hidePictureOverlay() {
+    this.setState({ overlayPictures: null });
   }
 
   render() {
