@@ -69,7 +69,7 @@ class TodaysEvents extends React.Component<TodaysEventsProps> {
         const html = (
           <div className="picture-item">
             <Picture
-              picture={picture}
+              pictures={[picture]}
               lang={lang}
               contentLang={item.content_lang}
               srcPrefix="/static"

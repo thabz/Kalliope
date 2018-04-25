@@ -2,6 +2,7 @@ const { exec } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
+const async = require('async');
 const { safeMkdir } = require('./libs/helpers.js');
 const dirname = 'static/facsimiles';
 
@@ -18,7 +19,11 @@ const folderToJpeg = imagesDir => {
     .filter(f => f.endsWith('.pbm') || f.endsWith('.ppm'))
     .forEach(srcFilename => {
       const srcPath = path.join(imagesDir, srcFilename);
-      const destPath = srcPath.replace(/.pbm/, '.jpg').replace(/.ppm/, '.jpg');
+      const destPath = srcPath
+        .replace(/.pbm/, '.jpg')
+        .replace(/.ppm/, '.jpg')
+        .replace(/.*?-(\d*)\.jpg/, imagesDir + '/$1.jpg');
+      console.log(destPath);
       exec(`convert "${srcPath}" "${destPath}"`, () => {
         fs.unlinkSync(srcPath);
       });

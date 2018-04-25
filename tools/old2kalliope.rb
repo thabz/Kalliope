@@ -24,6 +24,7 @@ end
 @keywords = nil;
 @page = nil;
 @written = nil;
+@performed = nil;
 @type = 'poem'
 
 def printPoem()
@@ -63,9 +64,14 @@ def printPoem()
   if @source and @page
     puts "    <source pages=\"#{@page}\"/>"
   end
-  if @written
+  if @written or @performed
     puts "    <dates>"
-    puts "        <written>#{@written}</written>"
+    if @written
+      puts "        <written>#{@written}</written>"
+    end
+    if @performed
+      puts "        <performed>#{@performed}</performed>"
+    end
     puts "    </dates>"
   end
   if @keywords
@@ -91,6 +97,7 @@ def printPoem()
   @keywords = nil
   @page = nil
   @written = nil
+  @performed = nil
   @type = 'poem'
   @poemcount += 1
 end
@@ -207,6 +214,8 @@ File.readlines(ARGV[0]).each do |line|
       @page = line[5..-1].strip
     elsif line.start_with?("SKREVET:")
       @written = line[8..-1].strip
+    elsif line.start_with?("FREMFØRT:")
+      @written = line[9..-1].strip
     elsif line.start_with?("TYPE:")
       @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
     elsif line =~ /^[A-Z]*:/

@@ -4,18 +4,31 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PictureOverlay from './pictureoverlay.js';
 import { Link, Router } from '../routes';
+import type { PictureItem, Lang } from '../pages/helpers/types.js';
 
-export default class Main extends React.Component {
+type MainStateTypes = {
+  overlayPictures: {
+    pictures: Array<PictureItem>,
+    startIndex: number,
+    srcPrefix: string,
+    lang: Lang,
+  } | null,
+};
+export default class Main extends React.Component<*, MainStateTypes> {
   static childContextTypes = {
     showPictureOverlay: PropTypes.func,
     hidePictureOverlay: PropTypes.func,
   };
 
-  constructor(props: any) {
+  hidePictureOverlay: () => void;
+  showPictureOverlay: () => void;
+
+  constructor(props: *) {
     super(props);
     this.hidePictureOverlay = this.hidePictureOverlay.bind(this);
+    this.showPictureOverlay = this.showPictureOverlay.bind(this);
     this.state = {
-      overlayPicture: null,
+      overlayPictures: null,
     };
   }
 
@@ -26,23 +39,30 @@ export default class Main extends React.Component {
     };
   }
 
-  showPictureOverlay(picture, srcPrefix, lang) {
-    this.setState({ overlayPicture: { picture, srcPrefix, lang } });
+  showPictureOverlay(
+    pictures: Array<PictureItem>,
+    srcPrefix: string,
+    lang: Lang,
+    startIndex: number = 0
+  ) {
+    this.setState({
+      overlayPictures: { pictures, srcPrefix, lang, startIndex },
+    });
   }
-
   hidePictureOverlay() {
-    this.setState({ overlayPicture: null });
+    this.setState({ overlayPictures: null });
   }
 
   render() {
-    const { overlayPicture } = this.state;
+    const { overlayPictures } = this.state;
 
     let overlay = null;
-    if (overlayPicture != null) {
-      const { picture, lang, srcPrefix } = overlayPicture;
+    if (overlayPictures != null) {
+      const { pictures, startIndex, lang, srcPrefix } = overlayPictures;
       overlay = (
         <PictureOverlay
-          picture={picture}
+          pictures={pictures}
+          startIndex={startIndex}
           srcPrefix={srcPrefix}
           lang={lang}
           clickToZoom={false}
