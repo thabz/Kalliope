@@ -693,6 +693,7 @@ const handle_text = (
     source = {
       source: sourceBookRef,
       pages: pagesAttr,
+      facsimilePageCount: work.source.facsimilePageCount,
       facsimile,
       facsimilePages,
     };
@@ -993,7 +994,7 @@ const works_second_pass = collected => {
             .replace(/<source[^>]*>/, '')
             .replace(/<\/source>/, '');
         }
-        const facsimile = safeGetAttr(sourceNode, 'facsimile');
+        const facsimile = safeGetAttr(sourceNode, 'facsimile').replace(/.pdf$/,'');
         let facsimilePagesOffset = safeGetAttr(
           sourceNode,
           'facsimile-pages-offset'
@@ -1001,9 +1002,15 @@ const works_second_pass = collected => {
         if (facsimilePagesOffset != null) {
           facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
         }
+        // Find max-page
+        const facsimilePageCount = fs
+        .readdirSync(`static/facsimiles/${poetId}/${facsimile}`)
+        .filter(x => x.endsWith('.jpg')).length;
+    
         data.source = {
           source,
           facsimile,
+          facsimilePageCount,
           facsimilePagesOffset,
         };
       }
