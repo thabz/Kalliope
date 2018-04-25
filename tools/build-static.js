@@ -3,6 +3,7 @@ const path = require('path');
 const sharp = require('sharp');
 const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
+const async = require('async');
 const Paths = require('../pages/helpers/paths.js');
 const entities = require('entities');
 const elasticSearchClient = require('./libs/elasticsearch-client.js');
@@ -1954,18 +1955,20 @@ const build_todays_events_json = collected => {
 };
 
 const build_image_thumbnails = () => {
-  const resize = (inputfile, outputfile, maxWidth) => {
-    sharp(inputfile)
-      .resize(maxWidth, 10000)
+
+  let resizeImageQueue = async.queue((task, callback) => {
+    sharp(task.inputfile)
+      .resize(task.maxWidth, 10000)
       .max()
       .withoutEnlargement()
-      .toFile(outputfile, function(err) {
+      .toFile(task.outputfile, function(err) {
         if (err != null) {
           console.log(err);
         }
-        console.log(outputfile);
+        console.log(task.outputfile);
+        callback();
       });
-  };
+  }, 2);
 
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
@@ -1988,7 +1991,7 @@ const build_image_thumbnails = () => {
               .replace(/\/([^\/]+)$/, '/t/$1');
             safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
             if (isFileModified(fullFilename) || !fileExists(outputfile)) {
-              resize(fullFilename, outputfile, width);
+              resizeImageQueue.push({inputfile:fullFilename, outputfile, maxWith:width});
             }
           });
         });
