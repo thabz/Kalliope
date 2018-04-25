@@ -117,6 +117,7 @@ export type NoteItem = {
 export type PictureItem = {
   content_lang?: TextLang,
   content_html?: TextContentType,
+  primary?: boolean,
   src: string,
 };
 
