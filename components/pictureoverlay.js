@@ -5,10 +5,17 @@ import CommonData from '../pages/helpers/commondata.js';
 import TextContent from './textcontent.js';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
 
-class LeftArrow extends React.Component<*> {
+type SVGProps = {
+  onClick: MouseEvent => void,
+  inactive?: boolean,
+};
+class LeftArrow extends React.Component<SVGProps> {
   render() {
+    const { onClick, inactive } = this.props;
+    const strokeColor = inactive == true ? '#888' : 'black';
+    const className = inactive == true ? 'inactive' : 'active';
     return (
-      <svg width="30" height="30">
+      <svg width="30" height="30" onClick={onClick} className={className}>
         <circle
           className="icon-background"
           cx="15"
@@ -25,7 +32,7 @@ class LeftArrow extends React.Component<*> {
           x2="22"
           y2="15"
           strokeWidth="1"
-          stroke="black"
+          stroke={strokeColor}
           vectorEffect="non-scaling-stroke"
         />
         <line
@@ -34,7 +41,7 @@ class LeftArrow extends React.Component<*> {
           x2="8"
           y2="15"
           strokeWidth="1"
-          stroke="black"
+          stroke={strokeColor}
           vectorEffect="non-scaling-stroke"
         />
         <line
@@ -43,7 +50,7 @@ class LeftArrow extends React.Component<*> {
           x2="8"
           y2="15"
           strokeWidth="1"
-          stroke="black"
+          stroke={strokeColor}
           vectorEffect="non-scaling-stroke"
         />
         <circle
@@ -57,10 +64,13 @@ class LeftArrow extends React.Component<*> {
     );
   }
 }
-class RightArrow extends React.Component<*> {
+class RightArrow extends React.Component<SVGProps> {
   render() {
+    const { onClick, inactive } = this.props;
+    const strokeColor = inactive == true ? '#888' : 'black';
+    const className = inactive == true ? 'inactive' : 'active';
     return (
-      <svg width="30" height="30">
+      <svg width="30" height="30" onClick={onClick} className={className}>
         <circle
           className="icon-background"
           cx="15"
@@ -77,7 +87,7 @@ class RightArrow extends React.Component<*> {
           x2="22"
           y2="15"
           strokeWidth="1"
-          stroke="black"
+          stroke={strokeColor}
           vectorEffect="non-scaling-stroke"
         />
         <line
@@ -86,7 +96,7 @@ class RightArrow extends React.Component<*> {
           x2="22"
           y2="15"
           strokeWidth="1"
-          stroke="black"
+          stroke={strokeColor}
           vectorEffect="non-scaling-stroke"
         />
         <line
@@ -95,7 +105,7 @@ class RightArrow extends React.Component<*> {
           x2="22"
           y2="15"
           strokeWidth="1"
-          stroke="black"
+          stroke={strokeColor}
           vectorEffect="non-scaling-stroke"
         />
         <circle
@@ -110,10 +120,11 @@ class RightArrow extends React.Component<*> {
   }
 }
 
-class CloseButton extends React.Component<*> {
+class CloseButton extends React.Component<SVGProps> {
   render() {
+    const { onClick } = this.props;
     return (
-      <svg width="30" height="30">
+      <svg width="30" height="30" onClick={onClick} className="active">
         <circle
           className="icon-background"
           cx="15"
@@ -247,6 +258,8 @@ export default class PictureOverlay extends React.Component<
     super(props);
     this.onKeyUp = this.onKeyUp.bind(this);
     this.hideOverlay = this.hideOverlay.bind(this);
+    this.onRightClick = this.onRightClick.bind(this);
+    this.onLeftClick = this.onLeftClick.bind(this);
     this.state = { currentIndex: props.startIndex };
   }
 
@@ -287,6 +300,20 @@ export default class PictureOverlay extends React.Component<
     e.stopPropagation();
   }
 
+  onRightClick(e: MouseEvent) {
+    if (this.state.currentIndex < this.props.pictures.length - 1) {
+      this.setState({ currentIndex: this.state.currentIndex + 1 });
+    }
+    e.stopPropagation();
+  }
+
+  onLeftClick(e: MouseEvent) {
+    if (this.state.currentIndex > 0) {
+      this.setState({ currentIndex: this.state.currentIndex - 1 });
+    }
+    e.stopPropagation();
+  }
+
   render() {
     const { pictures, srcPrefix, lang } = this.props;
 
@@ -294,10 +321,18 @@ export default class PictureOverlay extends React.Component<
     return (
       <div className="overlay-background" onClick={this.hideOverlay}>
         <div className="overlay-container" onClick={this.eatClick}>
-          <div className="overlay-close" onClick={this.hideOverlay}>
-            <CloseButton />
-            <RightArrow />
-            <LeftArrow />
+          <div className="overlay-icon">
+            <CloseButton onClick={this.hideOverlay} />
+            <RightArrow
+              onClick={this.onRightClick}
+              inactive={
+                this.state.currentIndex === this.props.pictures.length - 1
+              }
+            />
+            <LeftArrow
+              onClick={this.onLeftClick}
+              inactive={this.state.currentIndex === 0}
+            />
           </div>
           <BiggerPicture picture={picture} srcPrefix={srcPrefix} lang={lang} />
         </div>
@@ -339,21 +374,23 @@ export default class PictureOverlay extends React.Component<
             width: 100px;
           }
 
-          .overlay-container .overlay-close {
+          .overlay-container .overlay-icon {
             width: 30px;
             height: 30px;
-            cursor: pointer;
             position: absolute;
             right: -15px;
             top: -15px;
           }
 
-          .overlay-container .overlay-close svg {
+          .overlay-container .overlay-icon svg {
             display: block;
           }
 
-          :global(.overlay-close svg:hover .icon-background) {
+          :global(.overlay-icon svg.active:hover .icon-background) {
             fill: #eee;
+          }
+          :global(.overlay-icon svg.active) {
+            cursor: pointer;
           }
 
           :global(.noscroll) {
