@@ -1998,6 +1998,7 @@ const build_image_thumbnails = () => {
 
   handleDirRecursive('static/images');
   handleDirRecursive('static/kunst');
+  handleDirRecursive('static/facsimiles');
 };
 
 const build_sitemap_xml = collected => {
