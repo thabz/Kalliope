@@ -4,12 +4,12 @@ import type { Work, Lang } from '../pages/helpers/types.js';
 import CommonData from '../pages/helpers/commondata.js';
 import _ from '../pages/helpers/translations.js';
 
-export default class WorkName extends React.Component {
-  props: {
-    work: Work,
-    cursive?: boolean,
-    lang: Lang,
-  };
+type WorkNameProps = {
+  work: Work,
+  cursive?: boolean,
+  lang: Lang,
+};
+export default class WorkName extends React.Component<WorkNameProps> {
   render() {
     const { work, cursive, lang } = this.props;
     const { title, year } = work;

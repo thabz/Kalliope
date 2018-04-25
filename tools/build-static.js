@@ -214,6 +214,9 @@ const build_poet_timeline_json = (poet, collected) => {
 };
 
 const build_museum_link = picture => {
+  if (picture == null) {
+    return null;
+  }
   const invNr = safeGetAttr(picture, 'invnr');
   const objId = safeGetAttr(picture, 'objid');
   const museum = safeGetAttr(picture, 'museum');
@@ -243,39 +246,47 @@ const build_museum_link = picture => {
   }
 };
 
-const build_portrait_json = (poet, collected) => {
+const build_portraits_json = (poet, collected) => {
+  let result = [];
   if (!poet.has_portraits) {
-    return null;
+    return result;
   }
-  let data = null;
   const doc = loadXMLDoc(`fdirs/${poet.id}/portraits.xml`);
   if (doc != null) {
-    const primaries = doc.find('//pictures/picture').filter(picture => {
-      return safeGetAttr(picture, 'primary') == 'true';
+    let primariesCount = 0;
+    result = doc.find('//pictures/picture').map(picture => {
+      const primary = safeGetAttr(picture, 'primary') == 'true';
+      if (primary) {
+        primariesCount += 1;  
+      }
+      const src = safeGetAttr(picture, 'src');
+      if (src == null) {
+        throw `fdirs/${poet.id}/portraits.xml har et billede uden src-attribut.`;
+      }
+      const museumLink = build_museum_link(picture) || '';
+      return {
+        lang: poet.lang,
+        src,
+        content_lang: 'da',
+        primary,
+        content_html: htmlToXml(
+          picture
+            .toString()
+            .replace(/<picture[^>]*?>/, '')
+            .replace('</picture>', '')
+            .trim() + museumLink,
+          collected
+        ),
+      };
     });
-    if (primaries.length > 1) {
+    if (primariesCount > 1) {
       throw `fdirs/${poet.id}/portraits.xml har flere primary`;
     }
-    if (primaries.length === 0) {
+    if (primariesCount == 0) {
       throw `fdirs/${poet.id}/portraits.xml mangler primary`;
     }
-    const primary = primaries[0];
-    const museumLink = build_museum_link(primary) || '';
-    data = {
-      lang: poet.lang,
-      src: primary.attr('src').value(),
-      content_lang: 'da',
-      content_html: htmlToXml(
-        primary
-          .toString()
-          .replace(/<picture[^>]*?>/, '')
-          .replace('</picture>', '')
-          .trim() + museumLink,
-        collected
-      ),
-    };
   }
-  return data;
+  return result;
 };
 
 const build_bio_json = collected => {
@@ -321,7 +332,7 @@ const build_bio_json = collected => {
       data.content_lang = 'da';
     }
     data.timeline = build_poet_timeline_json(poet, collected);
-    data.portrait = build_portrait_json(poet, collected);
+    data.portraits = build_portraits_json(poet, collected);
     const destFilename = `static/api/${poet.id}/bio.json`;
     console.log(destFilename);
     writeJSON(destFilename, data);
@@ -651,7 +662,10 @@ const handle_text = (
     const pagesAttr = safeGetAttr(sourceNode, 'pages');
     let sourceBookRef = work.source ? work.source.source : null;
     if (sourceNode.text().trim().length > 0) {
-      sourceBookRef = sourceNode.toString().replace(/<source[^>]*>/,'').replace(/<\/source>/,'');
+      sourceBookRef = sourceNode
+        .toString()
+        .replace(/<source[^>]*>/, '')
+        .replace(/<\/source>/, '');
     }
     const facsimile =
       safeGetAttr(sourceNode, 'facsimile') ||
@@ -974,8 +988,11 @@ const works_second_pass = collected => {
       if (sourceNode != null) {
         let source = null;
         if (sourceNode.text().trim().length > 0) {
-          source = sourceNode.toString().replace(/<source[^>]*>/,'').replace(/<\/source>/,'');
-        };
+          source = sourceNode
+            .toString()
+            .replace(/<source[^>]*>/, '')
+            .replace(/<\/source>/, '');
+        }
         const facsimile = safeGetAttr(sourceNode, 'facsimile');
         let facsimilePagesOffset = safeGetAttr(
           sourceNode,
@@ -1887,7 +1904,10 @@ const build_todays_events_json = collected => {
             const event = weighted[0].event;
             const poet = event.context.poet;
             let content_html = null;
-            const primary_portrait = build_portrait_json(poet, collected);
+            const primary_portrait = build_portraits_json(
+              poet,
+              collected
+            ).filter(p => p.primary)[0];            
             if (
               primary_portrait != null &&
               primary_portrait.content_html[0][0].length > 0
