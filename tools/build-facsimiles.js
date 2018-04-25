@@ -11,6 +11,19 @@ const dirname = 'static/facsimiles';
 // containing jpg-files for each page in the pdf-file, named <workid>-<pagenumber>.jpg
 // where <pagenumber> is 000, 001, 002, etc.
 
+// Queue for converting image with concurrency 2.
+let convertImageQueue = async.queue((task, callback) => {
+  const destPath = task.srcPath
+    .replace(/.pbm/, '.jpg')
+    .replace(/.ppm/, '.jpg')
+    .replace(/.*?-(\d*)\.jpg/, task.imagesDir + '/$1.jpg');
+  console.log(destPath);
+  exec(`convert "${task.srcPath}" "${destPath}"`, () => {
+    fs.unlinkSync(task.srcPath);
+    callback();
+  });
+}, 2);
+
 // Convert all ppm- and pbm-files in a folder to jpg
 const folderToJpeg = imagesDir => {
   console.log(`Converting ${imagesDir} to jpeg`);
@@ -19,18 +32,16 @@ const folderToJpeg = imagesDir => {
     .filter(f => f.endsWith('.pbm') || f.endsWith('.ppm'))
     .forEach(srcFilename => {
       const srcPath = path.join(imagesDir, srcFilename);
-      const destPath = srcPath
-        .replace(/.pbm/, '.jpg')
-        .replace(/.ppm/, '.jpg')
-        .replace(/.*?-(\d*)\.jpg/, imagesDir + '/$1.jpg');
-      console.log(destPath);
-      exec(`convert "${srcPath}" "${destPath}"`, () => {
-        fs.unlinkSync(srcPath);
-      });
+      convertImageQueue.push({ srcPath, imagesDir });
     });
 };
 
-//exec(`convert -density 300 ${pdfFilename} 1852-%03d.jpg`);
+let extractPdfImagesQueue = async.queue((task, callback) => {
+  console.log(`Extracting from ${task.fullFilename}`);
+  exec(`pdfimages -jp2 ${task.fullFilename} ${task.imagesPrefix}`, () => {
+    callback();
+  });
+}, 2);
 
 const poetDirs = fs
   .readdirSync(dirname)
@@ -51,11 +62,17 @@ poetDirs.forEach(poetDir => {
       if (!fs.existsSync(imagesDir)) {
         safeMkdir(imagesDir);
         const imagesPrefix = path.join(imagesDir, workId);
-        console.log(`Extracting from ${fullFilename}`);
         // Extract ppm-files
-        exec(`pdfimages -jp2 ${fullFilename} ${imagesPrefix}`, () => {
+        extractPdfImagesQueue.push({ fullFilename, imagesPrefix }, () => {
           folderToJpeg(imagesDir);
         });
       }
     });
 });
+
+extractPdfImagesQueue.drain = function() {
+  console.log('All PDF images are extracted.');
+};
+convertImageQueue.drain = function() {
+  console.log('All image files are converted to jpeg');
+};
