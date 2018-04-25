@@ -3,14 +3,16 @@ import React from 'react';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
 import Picture from './picture.js';
 
-export default class SidebarPictures extends React.Component {
-  props: {
-    pictures: Array<PictureItem>,
-    srcPrefix?: string,
-    showDropShadow?: boolean,
-    clickToZoom?: boolean,
-    lang: Lang,
-  };
+type SidebarPicturesProps = {
+  pictures: Array<PictureItem>,
+  srcPrefix?: string,
+  showDropShadow?: boolean,
+  clickToZoom?: boolean,
+  lang: Lang,
+};
+export default class SidebarPictures extends React.Component<
+  SidebarPicturesProps
+> {
   static defaultProps = {
     showDropShadow: true,
   };

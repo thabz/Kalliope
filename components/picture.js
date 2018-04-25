@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import PropTypes from 'prop-types';
 import type { PictureItem, Lang, TextLang } from '../pages/helpers/types.js';
 import { Link, Router } from '../routes';
 import TextContent from './textcontent.js';
@@ -19,7 +18,7 @@ type PictureProps = {
 
 export default class Picture extends React.Component<PictureProps> {
   static contextTypes = {
-    showPictureOverlay: PropTypes.func,
+    showPictureOverlay: Function,
   };
 
   static defaultProps = {
