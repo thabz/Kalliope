@@ -2278,9 +2278,8 @@ b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
 b('build_sitemap_xml', build_sitemap_xml, collected);
 b('build_anniversairies_ical', build_anniversairies_ical, collected);
-
-//b('build_image_thumbnails', build_image_thumbnails);
-//b('update_elasticsearch', update_elasticsearch, collected);
+b('build_image_thumbnails', build_image_thumbnails);
+b('update_elasticsearch', update_elasticsearch, collected);
 
 refreshFilesModifiedCache();
 print_benchmarking_results();
