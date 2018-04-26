@@ -3,7 +3,8 @@ const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
 const async = require('async');
-const { safeMkdir } = require('./libs/helpers.js');
+const { safeMkdir, buildThumbnails } = require('./libs/helpers.js');
+
 const dirname = 'static/facsimiles';
 
 // Place pdf-files in static/facsimiles/<poetname>/<workid>.pdf
@@ -75,4 +76,10 @@ extractPdfImagesQueue.drain = function() {
 };
 convertImageQueue.drain = function() {
   console.log('All image files are converted to jpeg');
+  buildThumbnails('static/facsimiles');
+  exec(
+    'rsync -rva static/facsimiles/* 10.0.0.5:Sites/kalliope/static/facsimiles'
+  );
 };
+
+// rsync -rva static/facsimiles/* 10.0.0.5:Sites/kalliope/static/facsimiles

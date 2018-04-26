@@ -1,9 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-const sharp = require('sharp');
 const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
-const async = require('async');
 const Paths = require('../pages/helpers/paths.js');
 const entities = require('entities');
 const elasticSearchClient = require('./libs/elasticsearch-client.js');
@@ -26,6 +24,7 @@ const {
   safeGetText,
   safeGetAttr,
   replaceDashes,
+  buildThumbnails,
 } = require('./libs/helpers.js');
 
 let collected = {
@@ -684,7 +683,7 @@ const handle_text = (
       // Deduce facsimilePages from pages and facsimilePagesOffset.
       const pagesParts = pagesAttr.split(/-/).map(n => parseInt(n));
       const pFrom = pagesParts[0] + work.source.facsimilePagesOffset;
-      const pTo = (pagesParts[1]  || pFrom) + work.source.facsimilePagesOffset;
+      const pTo = (pagesParts[1] || pFrom) + work.source.facsimilePagesOffset;
       facsimilePages = [pFrom, pFrom];
     }
     source = {
@@ -1002,15 +1001,20 @@ const works_second_pass = collected => {
         if (facsimilePagesOffset != null) {
           facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
         }
-        // Find max-page
-        const facsimilePageCount = fs
-          .readdirSync(`static/facsimiles/${poetId}/${facsimile}`)
-          .filter(x => x.endsWith('.jpg')).length;
 
+        const facsimilePageCount = safeGetAttr(
+          sourceNode,
+          'facsimile-pages-num'
+        );
+        if (facsimilePageCount == null) {
+          throw new Error(
+            `fdirs/${poetId}/${workId}.xml is missing facsimile-pages-num in source.`
+          );
+        }
         data.source = {
           source,
           facsimile,
-          facsimilePageCount,
+          facsimilePageCount: parseInt(facsimilePageCount, 10),
           facsimilePagesOffset,
         };
       }
@@ -1954,60 +1958,8 @@ const build_todays_events_json = collected => {
 };
 
 const build_image_thumbnails = () => {
-  let resizeImageQueue = async.queue((task, callback) => {
-    sharp(task.inputfile)
-      .resize(task.maxWidth, 10000)
-      .max()
-      .withoutEnlargement()
-      .toFile(task.outputfile, function(err) {
-        if (err != null) {
-          console.log(err);
-        }
-        console.log(task.outputfile);
-        callback();
-      });
-  }, 2);
-
-  const pipeJoinedExts = CommonData.availableImageFormats.join('|');
-  const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
-
-  const handleDirRecursive = dirname => {
-    if (!fs.existsSync(dirname)) {
-      console.log(`${dirname} mangler, så genererer ingen thumbs deri.`);
-      return;
-    }
-    fs.readdirSync(dirname).forEach(filename => {
-      const fullFilename = path.join(dirname, filename);
-      const stats = fs.statSync(fullFilename);
-      if (stats.isDirectory()) {
-        handleDirRecursive(fullFilename);
-      } else if (
-        stats.isFile() &&
-        filename.endsWith('.jpg') &&
-        !skipRegExps.test(filename)
-      ) {
-        CommonData.availableImageFormats.forEach((ext, i) => {
-          CommonData.availableImageWidths.forEach(width => {
-            const outputfile = fullFilename
-              .replace(/\.jpg$/, `-w${width}.${ext}`)
-              .replace(/\/([^\/]+)$/, '/t/$1');
-            safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-            if (isFileModified(fullFilename) || !fileExists(outputfile)) {
-              resizeImageQueue.push({
-                inputfile: fullFilename,
-                outputfile,
-                maxWith: width,
-              });
-            }
-          });
-        });
-      }
-    });
-  };
-
-  handleDirRecursive('static/images');
-  handleDirRecursive('static/kunst');
-  handleDirRecursive('static/facsimiles');
+  buildThumbnails('static/images', isFileModified);
+  buildThumbnails('static/kunst', isFileModified);
 };
 
 const build_sitemap_xml = collected => {
