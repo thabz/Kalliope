@@ -693,6 +693,8 @@ const handle_text = (
       facsimile,
       facsimilePages,
     };
+  } else if (work.source != null) {
+    console.log(`fdirs/${poetId}/${workId}: teksten ${id} mangler source.`);
   }
 
   const rawBody = body
