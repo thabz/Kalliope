@@ -8,6 +8,7 @@ const Paths = require('../pages/helpers/paths.js');
 const entities = require('entities');
 const elasticSearchClient = require('./libs/elasticsearch-client.js');
 const CommonData = require('../pages/helpers/commondata.js');
+const ics = require('ics');
 
 const {
   isFileModified,
@@ -2209,6 +2210,51 @@ const update_elasticsearch = collected => {
     });
 };
 
+const build_anniversairies_ical = collected => {
+  let events = [];  
+  let [nowYear, nowMonth, nowDay] = new Date().toISOString().split('T')[0].split('-').map(s => parseInt(s,10));
+  
+  const handleDate = (poet,eventType,date) => {    
+    var [year, month, day] = date.split('-').map(s => parseInt(s,10));
+    if (month == null || day == null || year == null) {
+      // Ignorer datoer som ikke er fulde datoer, såsom "1300?" og "1240 ca."
+      return;
+    }    
+    for(let eventYear = nowYear-1; eventYear < nowYear+3; eventYear++) {
+      let eventDate = new Date();
+      eventDate.setDate(day);
+      eventDate.setMonth(month-1);
+      eventDate.setYear(eventYear);
+      if ((eventYear-year) % 100 === 0) {
+        const eventTitle = eventType === 'born' ? 'født' : 'død';
+        events.push({
+          start: [eventYear, month, day],
+          duration: {days:1},
+          title: `${poetName(poet)} ${eventTitle} for ${eventYear-year} år siden`,
+          description: `${poetName(poet)} ${eventTitle} ${parseInt(day,10)}/${parseInt(month,10)} ${year}.`,
+          url: `https://kalliope.org/da/bio/${poet.id}`,
+          uid: `${poet.id}-${eventType}-${eventYear}@kalliope.org`
+        });
+        }
+    }
+  };
+  collected.poets.forEach((poet, poetId) => {
+    
+    if (poet.period != null && poet.period.born != null && poet.period.born.date !== '?') {
+      handleDate(poet,'born',poet.period.born.date);
+    }
+    if (poet.period != null && poet.period.dead != null && poet.period.dead.date !== '?') {
+      handleDate(poet,'dead',poet.period.dead.date);
+    }
+  });
+  const { error, value } = ics.createEvents(events);
+  if (error != null) {
+    throw error;
+  }
+  writeText('static/Kalliope.ics', value);
+}
+
+
 safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);
 // Build collected.works and collected.texts
@@ -2231,9 +2277,10 @@ b('build_dict_second_pass', build_dict_second_pass, collected);
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
 b('build_sitemap_xml', build_sitemap_xml, collected);
+b('build_anniversairies_ical', build_anniversairies_ical, collected);
 
-b('build_image_thumbnails', build_image_thumbnails);
-b('update_elasticsearch', update_elasticsearch, collected);
+//b('build_image_thumbnails', build_image_thumbnails);
+//b('update_elasticsearch', update_elasticsearch, collected);
 
 refreshFilesModifiedCache();
 print_benchmarking_results();
