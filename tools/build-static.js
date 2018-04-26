@@ -1975,6 +1975,10 @@ const build_image_thumbnails = () => {
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
 
   const handleDirRecursive = dirname => {
+    if (!fs.existsSync(dirname)) {
+      console.log(`${dirname} mangler, så genererer ingen thumbs deri.`);
+      return;
+    }
     fs.readdirSync(dirname).forEach(filename => {
       const fullFilename = path.join(dirname, filename);
       const stats = fs.statSync(fullFilename);
