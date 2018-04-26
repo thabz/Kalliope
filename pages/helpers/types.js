@@ -121,6 +121,14 @@ export type PictureItem = {
   src: string,
 };
 
+export type TextSource = {
+  pages: string,
+  source: string,
+  facsimile: string,
+  facsimilePages: Array<number>,
+  facsimilePageCount: number,
+};
+
 export type Text = {
   id: string,
   title: string,
@@ -134,6 +142,7 @@ export type Text = {
   keywords: Array<KeywordRef>,
   has_footnotes: boolean,
   is_prose: boolean,
+  source?: TextSource,
 };
 
 export type Keyword = {

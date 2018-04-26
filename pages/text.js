@@ -30,6 +30,8 @@ import type {
   Poet,
   Work,
   Text,
+  TextSource,
+  PictureItem,
   KeywordRef,
   PrevNextText,
   Error,
@@ -202,15 +204,17 @@ export default class extends React.Component<TextComponentProps> {
     const notes = text.notes.map((note, i) => {
       return <Note key={i} note={note} lang={lang} />;
     });
+
     if (text.source != null) {
+      const source: TextSource = text.source;
       let sourceText = 'Teksten følger ';
-      sourceText += text.source.source.replace(/\.?$/, ', ');
-      if (text.source.pages.indexOf('-') > -1) {
+      sourceText += source.source.replace(/\.?$/, ', ');
+      if (source.pages.indexOf('-') > -1) {
         sourceText += 'pp. ';
       } else {
         sourceText += 'p. ';
       }
-      sourceText += text.source.pages + '.';
+      sourceText += source.pages + '.';
       const note = {
         lang,
         type: 'source',
@@ -271,9 +275,7 @@ export default class extends React.Component<TextComponentProps> {
         while (s.length < size) s = '0' + s;
         return s;
       }
-      const [firstPageNumber] = text.source.facsimilePages
-        .split('-')
-        .map(n => parseInt(n, 10));
+      const firstPageNumber = text.source.facsimilePages[0];
       let facsimilePictures: Array<PictureItem> = [];
       for (let i = 0; i < text.source.facsimilePageCount; i++) {
         facsimilePictures.push({
