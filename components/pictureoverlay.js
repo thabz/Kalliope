@@ -316,23 +316,26 @@ export default class PictureOverlay extends React.Component<
 
   render() {
     const { pictures, srcPrefix, lang } = this.props;
-
+    let arrows = null;
+    if (pictures.length > 1) {
+      arrows = [
+        <RightArrow
+          onClick={this.onRightClick}
+          inactive={this.state.currentIndex === this.props.pictures.length - 1}
+        />,
+        <LeftArrow
+          onClick={this.onLeftClick}
+          inactive={this.state.currentIndex === 0}
+        />,
+      ];
+    }
     const picture = pictures[this.state.currentIndex];
     return (
       <div className="overlay-background" onClick={this.hideOverlay}>
         <div className="overlay-container" onClick={this.eatClick}>
           <div className="overlay-icon">
             <CloseButton onClick={this.hideOverlay} />
-            <RightArrow
-              onClick={this.onRightClick}
-              inactive={
-                this.state.currentIndex === this.props.pictures.length - 1
-              }
-            />
-            <LeftArrow
-              onClick={this.onLeftClick}
-              inactive={this.state.currentIndex === 0}
-            />
+            {arrows}
           </div>
           <BiggerPicture picture={picture} srcPrefix={srcPrefix} lang={lang} />
         </div>
