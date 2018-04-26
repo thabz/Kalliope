@@ -280,11 +280,11 @@ export default class extends React.Component<TextComponentProps> {
       for (let i = 0; i < text.source.facsimilePageCount; i++) {
         facsimilePictures.push({
           src: pad(i, 3) + '.jpg',
-          content_html: [['Facsimile af kilden.']],
-          content_lang: 'da',
+          //content_html: [['Facsimile af kilden.']],
+          //content_lang: 'da',
         });
       }
-      const srcPrefix = `/static/facsimiles/${poet.id}/${
+      const srcPrefix = `https://kalliope.org/static/facsimiles/${poet.id}/${
         text.source.facsimile
       }`;
       renderedFacsimile = (
