@@ -20,6 +20,7 @@ import TextContent from '../components/textcontent.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import SidebarPictures from '../components/sidebarpictures.js';
+import Picture from '../components/picture.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
@@ -263,13 +264,48 @@ export default class extends React.Component<TextComponentProps> {
       );
     }
 
+    let renderedFacsimile = null;
+    if (text.source != null && text.source.facsimilePages != null) {
+      function pad(num, size) {
+        var s = num + '';
+        while (s.length < size) s = '0' + s;
+        return s;
+      }
+      const [firstPageNumber] = text.source.facsimilePages
+        .split('-')
+        .map(n => parseInt(n, 10));
+      let facsimilePictures: Array<PictureItem> = [];
+      for (let i = 0; i < text.source.facsimilePageCount; i++) {
+        facsimilePictures.push({
+          src: pad(i, 3) + '.jpg',
+          content_html: [['Facsimile af kilden.']],
+          content_lang: 'da',
+        });
+      }
+      const srcPrefix = `/static/facsimiles/${poet.id}/${
+        text.source.facsimile
+      }`;
+      renderedFacsimile = (
+        <div style={{ marginTop: '20px' }} key={'facsimile' + firstPageNumber}>
+          <Picture
+            pictures={facsimilePictures}
+            startIndex={firstPageNumber - 1}
+            lang="da"
+            contentLang="da"
+            srcPrefix={srcPrefix}
+          />
+        </div>
+      );
+    }
+
     let sidebar = null;
     if (
       refs.length > 0 ||
       text.has_footnotes ||
       text.pictures.length > 0 ||
       notes.length > 0 ||
-      text.keywords.length > 0
+      text.keywords.length > 0 ||
+      renderedFacsimile != null
     ) {
       sidebar = (
         <div>
@@ -278,6 +314,7 @@ export default class extends React.Component<TextComponentProps> {
           <FootnoteList />
           {renderedRefs}
           {renderedKeywords}
+          {renderedFacsimile}
         </div>
       );
     }
