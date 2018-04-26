@@ -2225,7 +2225,7 @@ const build_anniversairies_ical = collected => {
       eventDate.setDate(day);
       eventDate.setMonth(month-1);
       eventDate.setYear(eventYear);
-      if ((eventYear-year) % 100 === 0) {
+      if ((eventYear-year) % 100 === 0 || (eventYear-year) % 250 === 0 ) {
         const eventTitle = eventType === 'born' ? 'født' : 'død';
         events.push({
           start: [eventYear, month, day],
