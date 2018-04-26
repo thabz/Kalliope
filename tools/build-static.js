@@ -694,6 +694,7 @@ const handle_text = (
       facsimilePages,
     };
   } else if (work.source != null) {
+    // Dette er ikke nødvendigvis en fejl.
     console.log(`fdirs/${poetId}/${workId}: teksten ${id} mangler source.`);
   }
 
