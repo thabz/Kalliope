@@ -17,6 +17,7 @@ let convertImageQueue = async.queue((task, callback) => {
   const destPath = task.srcPath
     .replace(/.pbm/, '.jpg')
     .replace(/.ppm/, '.jpg')
+    .replace(/.ppm/, '.jp2')
     .replace(/.*?-(\d*)\.jpg/, task.imagesDir + '/$1.jpg');
   console.log(destPath);
   exec(`convert "${task.srcPath}" "${destPath}"`, () => {
@@ -30,7 +31,7 @@ const folderToJpeg = imagesDir => {
   console.log(`Converting ${imagesDir} to jpeg`);
   fs
     .readdirSync(imagesDir)
-    .filter(f => f.endsWith('.pbm') || f.endsWith('.ppm'))
+    .filter(f => f.endsWith('.pbm') || f.endsWith('.ppm') || f.endsWith('.jp2'))
     .forEach(srcFilename => {
       const srcPath = path.join(imagesDir, srcFilename);
       convertImageQueue.push({ srcPath, imagesDir });
