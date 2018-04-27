@@ -695,7 +695,7 @@ const handle_text = (
     };
   } else if (work.source != null) {
     // Dette er ikke nødvendigvis en fejl.
-    console.log(`fdirs/${poetId}/${workId}: teksten ${id} mangler source.`);
+    console.log(`fdirs/${poetId}/${workId}: teksten ${textId} mangler source.`);
   }
 
   const rawBody = body
