@@ -993,33 +993,39 @@ const works_second_pass = collected => {
             .replace(/<source[^>]*>/, '')
             .replace(/<\/source>/, '');
         }
-        const facsimile = safeGetAttr(sourceNode, 'facsimile').replace(
-          /.pdf$/,
-          ''
-        );
-        let facsimilePagesOffset = safeGetAttr(
-          sourceNode,
-          'facsimile-pages-offset'
-        );
-        if (facsimilePagesOffset != null) {
-          facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
-        }
-
-        const facsimilePageCount = safeGetAttr(
-          sourceNode,
-          'facsimile-pages-num'
-        );
-        if (facsimilePageCount == null) {
-          throw new Error(
-            `fdirs/${poetId}/${workId}.xml is missing facsimile-pages-num in source.`
-          );
-        }
         data.source = {
           source,
-          facsimile,
-          facsimilePageCount: parseInt(facsimilePageCount, 10),
-          facsimilePagesOffset,
-        };
+        }
+        let facsimile = safeGetAttr(sourceNode, 'facsimile');
+        if (facsimile != null) {
+          facsimile = facsimile.replace(
+            /.pdf$/,
+            ''
+          );
+          let facsimilePagesOffset = safeGetAttr(
+            sourceNode,
+            'facsimile-pages-offset'
+          );
+          if (facsimilePagesOffset != null) {
+            facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
+          }
+  
+          const facsimilePageCount = safeGetAttr(
+            sourceNode,
+            'facsimile-pages-num'
+          );
+          if (facsimilePageCount == null) {
+            throw new Error(
+              `fdirs/${poetId}/${workId}.xml is missing facsimile-pages-num in source.`
+            );
+          }
+          data.source = {
+            ...data.source,
+            facsimile,
+            facsimilePageCount: parseInt(facsimilePageCount, 10),
+            facsimilePagesOffset,  
+          }
+        }
       }
       collected_works.set(poetId + '-' + workId, data);
 
