@@ -17,7 +17,7 @@ import SidebarPictures from '../components/sidebarpictures.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
-import type { Lang, Keyword } from './helpers/types.js';
+import type { Lang, Keyword, Error } from './helpers/types.js';
 import * as Paths from './helpers/paths.js';
 import * as Client from './helpers/client.js';
 import { createURL } from './helpers/client.js';
@@ -47,17 +47,13 @@ export default class extends React.Component<KeywordComponentProps> {
   render() {
     const { lang, keyword, error } = this.props;
 
-    if (error) {
+    if (error != null) {
       return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
     }
     const requestPath = `/${lang}/keyword/${keyword.id}`;
 
     const renderedPictures = (
-      <SidebarPictures
-        lang={lang}
-        pictures={keyword.pictures}
-        srcPrefix={'/static/images/keywords'}
-      />
+      <SidebarPictures lang={lang} pictures={keyword.pictures} />
     );
     let sidebar = [];
     if (keyword.has_footnotes || keyword.pictures.length > 0) {

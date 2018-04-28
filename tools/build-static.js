@@ -541,14 +541,16 @@ const get_notes = (head, context = {}) => {
     };
   });
 };
-const get_pictures = head => {
+const get_pictures = (head, srcPrefix) => {
   return head.find('pictures/picture').map(picture => {
-    const src = picture.attr('src').value();
+    let src = picture.attr('src').value();
     const lang = picture.attr('lang') ? picture.attr('lang').value() : 'da';
     const type = picture.attr('type') ? picture.attr('type').value() : null;
     const invnr = safeGetAttr(picture, 'invnr');
     const museumLink = build_museum_link(picture) || '';
-
+    if (src.charAt(0) !== '/') {
+      src = srcPrefix + '/' + src;
+    }
     return {
       src,
       type,
@@ -729,7 +731,7 @@ const handle_text = (
       source,
       keywords: keywordsArray || [],
       refs: refsArray,
-      pictures: get_pictures(head),
+      pictures: get_pictures(head, `/static/images/${poetId}`),
       content_lang: poet.lang,
       content_html,
     },
@@ -867,7 +869,7 @@ const handle_work = work => {
 
   const workhead = work.get('workhead');
   const notes = get_notes(workhead);
-  const pictures = get_pictures(workhead);
+  const pictures = get_pictures(workhead, `/static/images/${poetId}`);
 
   const workbody = work.get('workbody');
   if (workbody == null) {
@@ -1285,7 +1287,7 @@ const build_works_toc = collected => {
 
     const workhead = work.get('workhead');
     const notes = get_notes(workhead);
-    const pictures = get_pictures(workhead);
+    const pictures = get_pictures(workhead, `/static/images/${poetId}`);
 
     const workbody = work.get('workbody');
     if (workbody == null) {
@@ -1484,7 +1486,7 @@ const build_keywords = () => {
           ? keyword.attr('draft').value() === 'true'
           : false;
       const title = head.get('title').text();
-      const pictures = get_pictures(head);
+      const pictures = get_pictures(head, '/static/images/keywords');
       const author = safeGetText(head, 'author');
       const rawBody = body
         .toString()
@@ -1748,7 +1750,7 @@ const build_about_pages = collected => {
       const head = about.get('head');
       const body = about.get('body');
       const title = head.get('title').text();
-      const pictures = get_pictures(head);
+      const pictures = get_pictures(head,'/static/images/about');
       const author = safeGetText(head, 'author');
       const poemsNum = Array.from(collected.texts.values())
         .map(t => (t.type === 'poem' ? 1 : 0))

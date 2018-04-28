@@ -67,7 +67,6 @@ export default class extends React.Component<AboutProps> {
         pictures={keyword.pictures}
         showDropShadow={aboutItemId !== 'kalliope'}
         clickToZoom={aboutItemId !== 'kalliope'}
-        srcPrefix={'/static/images/about'}
       />
     );
     const renderedNotes = keyword.notes.map((note, i) => {

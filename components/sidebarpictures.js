@@ -5,7 +5,6 @@ import Picture from './picture.js';
 
 type SidebarPicturesProps = {
   pictures: Array<PictureItem>,
-  srcPrefix?: string,
   showDropShadow?: boolean,
   clickToZoom?: boolean,
   lang: Lang,
@@ -17,19 +16,12 @@ export default class SidebarPictures extends React.Component<
     showDropShadow: true,
   };
   render() {
-    const {
-      pictures,
-      lang,
-      srcPrefix,
-      showDropShadow,
-      clickToZoom,
-    } = this.props;
+    const { pictures, lang, showDropShadow, clickToZoom } = this.props;
     const renderedPictures = pictures.map((picture, i) => {
       return (
         <Picture
           key={'picture' + i}
           pictures={[picture]}
-          srcPrefix={srcPrefix}
           clickToZoom={clickToZoom}
           showDropShadow={showDropShadow}
           contentLang={picture.content_lang || 'da'}

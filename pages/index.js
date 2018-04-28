@@ -62,7 +62,7 @@ class TodaysEvents extends React.Component<TodaysEventsProps> {
       .filter(item => item.type === 'image' && item.src != null)
       .map((item, i) => {
         const picture: PictureItem = {
-          src: item.src || '',
+          src: '/static/' + (item.src || ''),
           lang: item.content_lang,
           content_html: item.content_html,
         };
@@ -72,7 +72,6 @@ class TodaysEvents extends React.Component<TodaysEventsProps> {
               pictures={[picture]}
               lang={lang}
               contentLang={item.content_lang}
-              srcPrefix="/static"
             />
           </div>
         );

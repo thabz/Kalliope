@@ -168,13 +168,12 @@ class CloseButton extends React.Component<SVGProps> {
 class BiggerPicture extends React.Component<*> {
   props: {
     picture: PictureItem,
-    srcPrefix: ?string,
     lang: Lang,
   };
 
   render() {
-    const { srcPrefix, picture, lang } = this.props;
-    const src: string = (srcPrefix || '') + '/' + picture.src;
+    const { picture, lang } = this.props;
+    const src = picture.src;
     const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
       return '/t/' + p1 + CommonData.fallbackImagePostfix;
     });
