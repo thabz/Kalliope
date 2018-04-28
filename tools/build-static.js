@@ -108,7 +108,7 @@ const load_timeline = filename => {
       ),
     };
     if (type === 'image') {
-      data.src = event.get('src').text();
+      data.src = '/static/'+event.get('src').text();
     }
     return data;
   });
@@ -269,7 +269,7 @@ const build_portraits_json = (poet, collected) => {
       const museumLink = build_museum_link(picture) || '';
       return {
         lang: poet.lang,
-        src,
+        src: `/static/images/${poet.id}/${src}`,
         content_lang: 'da',
         primary,
         content_html: htmlToXml(

@@ -66,7 +66,6 @@ export default class Picture extends React.Component<PictureProps> {
     }
     const onClick = e => {
       if (clickToZoom == true) {
-        console.log('Will show picture overlay at index', startIndex);
         this.context.showPictureOverlay(pictures, 'da', startIndex);
       }
     };

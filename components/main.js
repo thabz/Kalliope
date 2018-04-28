@@ -1,7 +1,6 @@
 // @flow
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import PictureOverlay from './pictureoverlay.js';
 import { Link, Router } from '../routes';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
@@ -15,8 +14,8 @@ type MainStateTypes = {
 };
 export default class Main extends React.Component<*, MainStateTypes> {
   static childContextTypes = {
-    showPictureOverlay: PropTypes.func,
-    hidePictureOverlay: PropTypes.func,
+    showPictureOverlay: Function,
+    hidePictureOverlay: Function,
   };
 
   hidePictureOverlay: () => void;

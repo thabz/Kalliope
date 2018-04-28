@@ -262,7 +262,6 @@ export default class PictureOverlay extends React.Component<
     this.onRightClick = this.onRightClick.bind(this);
     this.onLeftClick = this.onLeftClick.bind(this);
     this.state = { currentIndex: props.startIndex };
-    console.log('currentIndex', this.state.currentIndex, this.props.startIndex);
   }
 
   componentDidMount() {
