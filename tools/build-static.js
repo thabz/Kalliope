@@ -686,7 +686,12 @@ const handle_text = (
       const pagesParts = pagesAttr.split(/-/).map(n => parseInt(n));
       const pFrom = pagesParts[0] + work.source.facsimilePagesOffset;
       const pTo = (pagesParts[1] || pFrom) + work.source.facsimilePagesOffset;
-      facsimilePages = [pFrom, pFrom];
+      facsimilePages = [pFrom, pTo];
+    } else if (facsimilePages != null) {
+      const pagesParts = facsimilePages.split(/-/).map(n => parseInt(n));
+      const pFrom = pagesParts[0];
+      const pTo = pagesParts[1] || pFrom;
+      facsimilePages = [pFrom, pTo];
     }
     source = {
       source: sourceBookRef,
