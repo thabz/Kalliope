@@ -262,6 +262,7 @@ export default class PictureOverlay extends React.Component<
     this.onRightClick = this.onRightClick.bind(this);
     this.onLeftClick = this.onLeftClick.bind(this);
     this.state = { currentIndex: props.startIndex };
+    console.log('currentIndex', this.state.currentIndex, this.props.startIndex);
   }
 
   componentDidMount() {
@@ -314,15 +315,17 @@ export default class PictureOverlay extends React.Component<
   }
 
   render() {
-    const { pictures, srcPrefix, lang } = this.props;
+    const { pictures, lang } = this.props;
     let arrows = null;
     if (pictures.length > 1) {
       arrows = [
         <RightArrow
+          key={'right'}
           onClick={this.onRightClick}
           inactive={this.state.currentIndex === this.props.pictures.length - 1}
         />,
         <LeftArrow
+          key={'left'}
           onClick={this.onLeftClick}
           inactive={this.state.currentIndex === 0}
         />,
@@ -336,7 +339,7 @@ export default class PictureOverlay extends React.Component<
             <CloseButton onClick={this.hideOverlay} />
             {arrows}
           </div>
-          <BiggerPicture picture={picture} srcPrefix={srcPrefix} lang={lang} />
+          <BiggerPicture picture={picture} lang={lang} />
         </div>
         <style jsx>{`
           .overlay-background {

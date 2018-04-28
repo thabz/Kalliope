@@ -104,6 +104,7 @@ export type TocItem = {
   title: string,
   prefix?: string,
   type: 'section' | 'text',
+  level?: number,
   content?: Array<TocItem>,
 };
 

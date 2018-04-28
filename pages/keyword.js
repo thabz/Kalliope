@@ -14,6 +14,7 @@ import PoetName from '../components/poetname.js';
 import TextName from '../components/textname.js';
 import TextContent from '../components/textcontent.js';
 import SidebarPictures from '../components/sidebarpictures.js';
+import Picture from '../components/picture.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
@@ -52,9 +53,16 @@ export default class extends React.Component<KeywordComponentProps> {
     }
     const requestPath = `/${lang}/keyword/${keyword.id}`;
 
-    const renderedPictures = (
-      <SidebarPictures lang={lang} pictures={keyword.pictures} />
-    );
+    const pictures = keyword.pictures.map(p => {
+      return (
+        <Picture
+          pictures={[p]}
+          contentLang={p.content_lang || 'da'}
+          lang={lang}
+        />
+      );
+    });
+    const renderedPictures = <SidebarPictures>{pictures}</SidebarPictures>;
     let sidebar = [];
     if (keyword.has_footnotes || keyword.pictures.length > 0) {
       if (keyword.has_footnotes) {

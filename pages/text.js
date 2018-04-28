@@ -228,11 +228,47 @@ export default class extends React.Component<TextComponentProps> {
       renderedNotes = <div style={{ marginBottom: '30px' }}>{notes}</div>;
     }
 
-    let sidebarPictures = text.pictures;
+    let textPictures = text.pictures.map((p, i) => {
+      return (
+        <Picture
+          key={'textpicture' + i}
+          pictures={[p]}
+          contentLang={p.content_lang || 'da'}
+          lang={lang}
+        />
+      );
+    });
+    if (text.source != null && text.source.facsimilePages != null) {
+      function pad(num, size) {
+        var s = num + '';
+        while (s.length < size) s = '0' + s;
+        return s;
+      }
+      const firstPageNumber = text.source.facsimilePages[0];
+      let facsimilePictures: Array<PictureItem> = [];
+      const srcPrefix = `https://kalliope.org/static/facsimiles/${poet.id}/${
+        text.source.facsimile
+      }`;
+      for (let i = 0; i < text.source.facsimilePageCount; i++) {
+        facsimilePictures.push({
+          src: srcPrefix + '/' + pad(i, 3) + '.jpg',
+          content_html: [['Facsimile af kilden, side ' + firstPageNumber]],
+          content_lang: 'da',
+        });
+      }
+      textPictures.push(
+        <Picture
+          key={'facsimile' + firstPageNumber}
+          pictures={facsimilePictures}
+          startIndex={firstPageNumber - 1}
+          lang="da"
+          contentLang="da"
+        />
+      );
+    }
 
-    const renderedPictures = (
-      <SidebarPictures lang={lang} pictures={text.pictures} />
-    );
+    const renderedPictures = <SidebarPictures>{textPictures}</SidebarPictures>;
+
     const refs = text.refs.map((ref, i) => {
       return (
         <div key={i} style={{ marginBottom: '10px' }}>
@@ -266,37 +302,6 @@ export default class extends React.Component<TextComponentProps> {
       );
     }
 
-    let renderedFacsimile = null;
-    if (text.source != null && text.source.facsimilePages != null) {
-      function pad(num, size) {
-        var s = num + '';
-        while (s.length < size) s = '0' + s;
-        return s;
-      }
-      const firstPageNumber = text.source.facsimilePages[0];
-      let facsimilePictures: Array<PictureItem> = [];
-      const srcPrefix = `https://kalliope.org/static/facsimiles/${poet.id}/${
-        text.source.facsimile
-      }`;
-      for (let i = 0; i < text.source.facsimilePageCount; i++) {
-        facsimilePictures.push({
-          src: srcPrefix + '/' + pad(i, 3) + '.jpg',
-          //content_html: [['Facsimile af kilden.']],
-          //content_lang: 'da',
-        });
-      }
-      renderedFacsimile = (
-        <div style={{ marginTop: '20px' }} key={'facsimile' + firstPageNumber}>
-          <Picture
-            pictures={facsimilePictures}
-            startIndex={firstPageNumber - 1}
-            lang="da"
-            contentLang="da"
-          />
-        </div>
-      );
-    }
-
     let sidebar = null;
     if (
       refs.length > 0 ||
@@ -304,7 +309,7 @@ export default class extends React.Component<TextComponentProps> {
       text.pictures.length > 0 ||
       notes.length > 0 ||
       text.keywords.length > 0 ||
-      renderedFacsimile != null
+      textPictures.length > 0
     ) {
       sidebar = (
         <div>
@@ -313,7 +318,6 @@ export default class extends React.Component<TextComponentProps> {
           <FootnoteList />
           {renderedRefs}
           {renderedKeywords}
-          {renderedFacsimile}
         </div>
       );
     }
