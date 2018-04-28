@@ -205,9 +205,10 @@ export default class extends React.Component<TextComponentProps> {
       return <Note key={i} note={note} lang={lang} />;
     });
 
+    let sourceText = '';
     if (text.source != null) {
       const source: TextSource = text.source;
-      let sourceText = 'Teksten følger ';
+      sourceText = 'Teksten følger ';
       sourceText += source.source.replace(/\.?$/, ', ');
       if (source.pages.indexOf('-') > -1) {
         sourceText += 'pp. ';
@@ -221,7 +222,9 @@ export default class extends React.Component<TextComponentProps> {
         content_html: [[sourceText, { html: true }]],
         content_lang: 'da',
       };
-      notes.push(<Note key="source" note={note} lang={lang} />);
+      notes.push(
+        <Note className="print-only" key="source" note={note} lang={lang} />
+      );
     }
     let renderedNotes = null;
     if (notes.length > 0) {
@@ -252,7 +255,7 @@ export default class extends React.Component<TextComponentProps> {
       for (let i = 0; i < text.source.facsimilePageCount; i++) {
         facsimilePictures.push({
           src: srcPrefix + '/' + pad(i, 3) + '.jpg',
-          content_html: [['Facsimile af kilden, side ' + firstPageNumber]],
+          content_html: [[sourceText, { html: true }]],
           content_lang: 'da',
         });
       }
@@ -267,7 +270,11 @@ export default class extends React.Component<TextComponentProps> {
       );
     }
 
-    const renderedPictures = <SidebarPictures>{textPictures}</SidebarPictures>;
+    const renderedPictures = (
+      <div style={{ marginTop: '30px' }}>
+        <SidebarPictures>{textPictures}</SidebarPictures>
+      </div>
+    );
 
     const refs = text.refs.map((ref, i) => {
       return (
@@ -314,10 +321,10 @@ export default class extends React.Component<TextComponentProps> {
       sidebar = (
         <div>
           {renderedNotes}
-          {renderedPictures}
           <FootnoteList />
           {renderedRefs}
           {renderedKeywords}
+          {renderedPictures}
         </div>
       );
     }
