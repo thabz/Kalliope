@@ -33,17 +33,16 @@ const groupsByLetter = (dictItems: Array<DictItem>) => {
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
-export default class extends React.Component {
+type DictProps = {
+  lang: Lang,
+  dictItems: Array<DictItem>,
+};
+export default class extends React.Component<DictProps> {
   static async getInitialProps({ query: { lang } }: { query: { lang: Lang } }) {
     const res = await fetch(createURL('/static/api/dict.json'));
     const dictItems: Array<DictItem> = await res.json();
     return { lang, dictItems };
   }
-
-  props: {
-    lang: Lang,
-    dictItems: Array<DictItem>,
-  };
 
   render() {
     const { lang, dictItems } = this.props;

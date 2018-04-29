@@ -22,63 +22,37 @@ import ErrorPage from './error.js';
 import * as Client from './helpers/client.js';
 import type { Lang, Country, Poet, PoetId, Error } from './helpers/types.js';
 
-export default class extends React.Component {
+type SearchProps = {
+  lang: Lang,
+  poet: ?Poet,
+  country: Country,
+  query: string,
+  result: any,
+  error: ?Error,
+};
+export default class extends React.Component<SearchProps> {
   resultPage: number;
   hits: Array<any>;
-  props: {
-    lang: Lang,
-    poet: ?Poet,
-    country: Country,
-    query: string,
-    result: any,
-    error: ?Error,
-  };
-  appendItems: Function;
-  scrollListener: Function;
-  enableInfiniteScrolling: Function;
-  disableInfiniteScrolling: Function;
   isAppending: boolean;
 
-  constructor(props: any) {
-    super(props);
-    this.appendItems = this.appendItems.bind(this);
-    this.scrollListener = this.scrollListener.bind(this);
-    this.enableInfiniteScrolling = this.enableInfiniteScrolling.bind(this);
-    this.disableInfiniteScrolling = this.disableInfiniteScrolling.bind(this);
-    this.hits = [];
-    this.isAppending = false;
-    this.resultPage = 0;
-  }
-
-  static async getInitialProps({
-    query: { lang, country, poetId, query },
-  }: {
-    query: { lang: Lang, country: Country, poetId?: PoetId, query: string },
-  }) {
-    const result = await Client.search(poetId, country, query);
-    const poet = await Client.poet(poetId);
-    return {
-      lang,
+  async appendItems() {
+    const { poet, country, query } = this.props;
+    this.isAppending = true;
+    const result = await Client.search(
+      poet != null ? poet.id : '',
       country,
       query,
-      result,
-      poet,
-      error: result.error,
-    };
-  }
-
-  enableInfiniteScrolling() {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', this.scrollListener);
-      window.addEventListener('resize', this.scrollListener);
+      this.resultPage + 1
+    );
+    this.resultPage += 1;
+    if (result.hits.total > 0 && result.hits.hits.length > 0) {
+      this.hits = this.hits.concat(result.hits.hits);
     }
-  }
-
-  disableInfiniteScrolling() {
-    if (typeof window !== 'undefined') {
-      window.removeEventListener('scroll', this.scrollListener);
-      window.removeEventListener('resize', this.scrollListener);
+    if (this.hits.length === this.props.result.hits.total) {
+      this.disableInfiniteScrolling();
     }
+    this.isAppending = false;
+    this.forceUpdate();
   }
 
   scrollListener() {
@@ -103,24 +77,44 @@ export default class extends React.Component {
     }
   }
 
-  async appendItems() {
-    const { poet, country, query } = this.props;
-    this.isAppending = true;
-    const result = await Client.search(
-      poet != null ? poet.id : '',
+  enableInfiniteScrolling() {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', this.scrollListener);
+      window.addEventListener('resize', this.scrollListener);
+    }
+  }
+
+  disableInfiniteScrolling() {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('scroll', this.scrollListener);
+      window.removeEventListener('resize', this.scrollListener);
+    }
+  }
+
+  constructor(props: any) {
+    super(props);
+    this.appendItems = this.appendItems.bind(this);
+    this.scrollListener = this.scrollListener.bind(this);
+    this.hits = [];
+    this.isAppending = false;
+    this.resultPage = 0;
+  }
+
+  static async getInitialProps({
+    query: { lang, country, poetId, query },
+  }: {
+    query: { lang: Lang, country: Country, poetId?: PoetId, query: string },
+  }) {
+    const result = await Client.search(poetId, country, query);
+    const poet = await Client.poet(poetId);
+    return {
+      lang,
       country,
       query,
-      this.resultPage + 1
-    );
-    this.resultPage += 1;
-    if (result.hits.total > 0 && result.hits.hits.length > 0) {
-      this.hits = this.hits.concat(result.hits.hits);
-    }
-    if (this.hits.length === this.props.result.hits.total) {
-      this.disableInfiniteScrolling();
-    }
-    this.isAppending = false;
-    this.forceUpdate();
+      result,
+      poet,
+      error: result.error,
+    };
   }
 
   // Clientside refresh
@@ -184,7 +178,7 @@ export default class extends React.Component {
               <div>
                 <Link route={workURL}>
                   <a>
-                    <WorkName work={work} />
+                    <WorkName work={work} lang={lang} />
                   </a>
                 </Link>
               </div>
@@ -205,16 +199,8 @@ export default class extends React.Component {
                 .replace(/^[\s,.!:;?\d"“„]+/, '')
                 .replace(/[\s,.!:;?\d"“„]+$/, '')
                 .split(/<\/?em>/);
-              parts[1] = (
-                <em key={i}>
-                  {parts[1]}
-                </em>
-              );
-              return (
-                <div key={i}>
-                  {parts}
-                </div>
-              );
+              parts[1] = <em key={i}>{parts[1]}</em>;
+              return <div key={i}>{parts}</div>;
             });
           }
           item = (
@@ -226,11 +212,9 @@ export default class extends React.Component {
                   </a>
                 </Link>
               </div>
-              <div className="hightlights">
-                {renderedHighlight}
-              </div>
+              <div className="hightlights">{renderedHighlight}</div>
               <div className="poet-and-work">
-                <PoetName poet={poet} />: <WorkName work={work} />
+                <PoetName poet={poet} />: <WorkName work={work} lang={lang} />
               </div>
               <style jsx>{`
                 .title {

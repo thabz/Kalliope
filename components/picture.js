@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import PropTypes from 'prop-types';
 import type { PictureItem, Lang, TextLang } from '../pages/helpers/types.js';
 import { Link, Router } from '../routes';
 import TextContent from './textcontent.js';
@@ -8,7 +7,8 @@ import CommonData from '../pages/helpers/commondata.js';
 import * as Strings from '../pages/helpers/strings.js';
 
 type PictureProps = {
-  picture: PictureItem,
+  pictures: Array<PictureItem>,
+  startIndex: number,
   lang: Lang,
   srcPrefix?: string,
   showDropShadow?: boolean,
@@ -18,23 +18,25 @@ type PictureProps = {
 
 export default class Picture extends React.Component<PictureProps> {
   static contextTypes = {
-    showPictureOverlay: PropTypes.func,
+    showPictureOverlay: Function,
   };
 
   static defaultProps = {
     showDropShadow: true,
     clickToZoom: true,
+    startIndex: 0,
   };
   render() {
     const {
-      picture,
+      pictures,
+      startIndex,
       lang,
       contentLang,
       srcPrefix,
       showDropShadow,
       clickToZoom,
     } = this.props;
-
+    const picture = pictures[startIndex];
     const src: string = (srcPrefix || '') + '/' + picture.src;
     const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
       return '/t/' + p1 + CommonData.fallbackImagePostfix;
@@ -61,15 +63,15 @@ export default class Picture extends React.Component<PictureProps> {
     if (picture.src.indexOf('-oval.jpg') > -1) {
       pictureClassName += 'oval-mask';
     }
-    if (showDropShadow) {
+    if (showDropShadow == true) {
       pictureClassName += ' with-drop-shadow';
     }
     const onClick = e => {
-      if (clickToZoom) {
-        this.context.showPictureOverlay(picture, srcPrefix);
+      if (clickToZoom == true) {
+        this.context.showPictureOverlay(pictures, srcPrefix, 'da', startIndex);
       }
     };
-    if (clickToZoom) {
+    if (clickToZoom == true) {
       pictureClassName += ' clickable';
     }
     return (

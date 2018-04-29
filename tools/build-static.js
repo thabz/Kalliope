@@ -3,10 +3,12 @@ const path = require('path');
 const sharp = require('sharp');
 const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
+const async = require('async');
 const Paths = require('../pages/helpers/paths.js');
 const entities = require('entities');
 const elasticSearchClient = require('./libs/elasticsearch-client.js');
 const CommonData = require('../pages/helpers/commondata.js');
+const ics = require('ics');
 
 const {
   isFileModified,
@@ -214,6 +216,9 @@ const build_poet_timeline_json = (poet, collected) => {
 };
 
 const build_museum_link = picture => {
+  if (picture == null) {
+    return null;
+  }
   const invNr = safeGetAttr(picture, 'invnr');
   const objId = safeGetAttr(picture, 'objid');
   const museum = safeGetAttr(picture, 'museum');
@@ -235,44 +240,55 @@ const build_museum_link = picture => {
       case 'npg':
         url = `https://www.npg.org.uk/collections/search/portrait/${objId}`;
         break;
+      case 'natmus.se':
+        url = `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${objId}&viewType=detailView`;
+        break;
     }
     return url == null ? null : ` <a href="${url}">⌘</a>`;
   }
 };
 
-const build_portrait_json = (poet, collected) => {
+const build_portraits_json = (poet, collected) => {
+  let result = [];
   if (!poet.has_portraits) {
-    return null;
+    return result;
   }
-  let data = null;
   const doc = loadXMLDoc(`fdirs/${poet.id}/portraits.xml`);
   if (doc != null) {
-    const primaries = doc.find('//pictures/picture').filter(picture => {
-      return safeGetAttr(picture, 'primary') == 'true';
+    let primariesCount = 0;
+    result = doc.find('//pictures/picture').map(picture => {
+      const primary = safeGetAttr(picture, 'primary') == 'true';
+      if (primary) {
+        primariesCount += 1;  
+      }
+      const src = safeGetAttr(picture, 'src');
+      if (src == null) {
+        throw `fdirs/${poet.id}/portraits.xml har et billede uden src-attribut.`;
+      }
+      const museumLink = build_museum_link(picture) || '';
+      return {
+        lang: poet.lang,
+        src,
+        content_lang: 'da',
+        primary,
+        content_html: htmlToXml(
+          picture
+            .toString()
+            .replace(/<picture[^>]*?>/, '')
+            .replace('</picture>', '')
+            .trim() + museumLink,
+          collected
+        ),
+      };
     });
-    if (primaries.length > 1) {
+    if (primariesCount > 1) {
       throw `fdirs/${poet.id}/portraits.xml har flere primary`;
     }
-    if (primaries.length === 0) {
+    if (primariesCount == 0) {
       throw `fdirs/${poet.id}/portraits.xml mangler primary`;
     }
-    const primary = primaries[0];
-    const museumLink = build_museum_link(primary) || '';
-    data = {
-      lang: poet.lang,
-      src: primary.attr('src').value(),
-      content_lang: 'da',
-      content_html: htmlToXml(
-        primary
-          .toString()
-          .replace(/<picture[^>]*?>/, '')
-          .replace('</picture>', '')
-          .trim() + museumLink,
-        collected
-      ),
-    };
   }
-  return data;
+  return result;
 };
 
 const build_bio_json = collected => {
@@ -318,7 +334,7 @@ const build_bio_json = collected => {
       data.content_lang = 'da';
     }
     data.timeline = build_poet_timeline_json(poet, collected);
-    data.portrait = build_portrait_json(poet, collected);
+    data.portraits = build_portraits_json(poet, collected);
     const destFilename = `static/api/${poet.id}/bio.json`;
     console.log(destFilename);
     writeJSON(destFilename, data);
@@ -575,6 +591,7 @@ const handle_text = (
 
   const keywords = head.get('keywords');
   const isBible = poetId === 'bibel';
+  const isFolkevise = poetId === 'folkeviser';
 
   let subtitles = null;
   const subtitle = head.get('subtitle');
@@ -640,11 +657,61 @@ const handle_text = (
   const foldername = Paths.textFolder(textId);
   const prev_next = resolve_prev_next(textId);
 
+  const sourceNode = head.get('source');
+  let source = null;
+  if (sourceNode != null) {
+    let pages = null;
+    const pagesAttr = safeGetAttr(sourceNode, 'pages');
+    let sourceBookRef = work.source ? work.source.source : null;
+    if (sourceNode.text().trim().length > 0) {
+      sourceBookRef = sourceNode
+        .toString()
+        .replace(/<source[^>]*>/, '')
+        .replace(/<\/source>/, '');
+    }
+    const facsimile =
+      safeGetAttr(sourceNode, 'facsimile') ||
+      (work.source ? work.source.facsimile : null);
+    let facsimilePages = safeGetAttr(sourceNode, 'facsimile-pages');
+    if (
+      facsimilePages == null &&
+      work.source != null &&
+      work.source.facsimilePagesOffset != null &&
+      pagesAttr != null
+    ) {
+      // Deduce facsimilePages from pages and facsimilePagesOffset.
+      if (pagesAttr.indexOf('-') > -1) {
+        // Interval
+        const pagesParts = pagesAttr.split(/-/);
+        pFrom = parseInt(pagesParts[0]) + work.source.facsimilePagesOffset;
+        pTo = parseInt(pagesParts[1]) + work.source.facsimilePagesOffset;
+        facsimilePages = `${pFrom}-${pTo}`;
+      } else {
+        // Single page
+        facsimilePages =
+          parseInt(pagesAttr.trim()) + work.source.facsimilePagesOffset;
+      }
+    }
+    source = {
+      source: sourceBookRef,
+      pages: pagesAttr,
+      facsimilePageCount: work.source.facsimilePageCount,
+      facsimile,
+      facsimilePages,
+    };
+  }
+
   const rawBody = body
     .toString()
     .replace('<body>', '')
     .replace('</body>', '');
-  const content_html = htmlToXml(rawBody, collected, isPoetry, isBible);
+  const content_html = htmlToXml(
+    rawBody,
+    collected,
+    isPoetry,
+    isBible,
+    isFolkevise
+  );
   const has_footnotes =
     rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
   mkdirp.sync(foldername);
@@ -662,6 +729,7 @@ const handle_text = (
       is_prose: text.name() === 'prose',
       has_footnotes,
       notes: get_notes(head),
+      source,
       keywords: keywordsArray || [],
       refs: refsArray,
       pictures: get_pictures(head),
@@ -919,6 +987,35 @@ const works_second_pass = collected => {
       const title = head.get('title').text();
       const year = head.get('year').text();
       const data = { id: workId, title, year, status, type };
+      const sourceNode = head.get('source');
+      if (sourceNode != null) {
+        let source = null;
+        if (sourceNode.text().trim().length > 0) {
+          source = sourceNode
+            .toString()
+            .replace(/<source[^>]*>/, '')
+            .replace(/<\/source>/, '');
+        }
+        const facsimile = safeGetAttr(sourceNode, 'facsimile').replace(/.pdf$/,'');
+        let facsimilePagesOffset = safeGetAttr(
+          sourceNode,
+          'facsimile-pages-offset'
+        );
+        if (facsimilePagesOffset != null) {
+          facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
+        }
+        // Find max-page
+        const facsimilePageCount = fs
+        .readdirSync(`static/facsimiles/${poetId}/${facsimile}`)
+        .filter(x => x.endsWith('.jpg')).length;
+    
+        data.source = {
+          source,
+          facsimile,
+          facsimilePageCount,
+          facsimilePagesOffset,
+        };
+      }
       collected_works.set(poetId + '-' + workId, data);
 
       // TODO: Make handle_work non-recursive by using a simple XPath
@@ -934,8 +1031,8 @@ const build_textrefs = collected => {
   const force_reload = textrefs.size == 0;
   let found_changes = false;
   const regexps = [
-    /xref\s.*?poem="([^"]*)"/g,
-    /a\s.*?poem="([^"]*)"/g,
+    /xref\s.*?poem="([^",]*)/g,
+    /a\s.*?poem="([^",]*)/g,
     /xref bibel="([^",]*)/g,
   ];
   collected.poets.forEach((poet, poetId) => {
@@ -1550,10 +1647,18 @@ const build_mentions_json = collected => {
   const build_html = poemId => {
     const meta = collected.texts.get(poemId);
     const poet = poetName(collected.poets.get(meta.poetId));
-    const work = workName(collected.works.get(meta.poetId + '/' + meta.workId));
+    const work = collected.works.get(meta.poetId + '/' + meta.workId);
+    if (work == null) {
+      throw `${poemId} references unknown work ${meta.poetId +
+        '/' +
+        meta.workId}`;
+    }
+    const workNameFormattet = workName(work);
     return [
       [
-        `${poet}: <a poem="${poemId}">»${meta.title}«</a> – ${work}`,
+        `${poet}: <a poem="${poemId}">»${
+          meta.title
+        }«</a> – ${workNameFormattet}`,
         { html: true },
       ],
     ];
@@ -1808,7 +1913,10 @@ const build_todays_events_json = collected => {
             const event = weighted[0].event;
             const poet = event.context.poet;
             let content_html = null;
-            const primary_portrait = build_portrait_json(poet, collected);
+            const primary_portrait = build_portraits_json(
+              poet,
+              collected
+            ).filter(p => p.primary)[0];            
             if (
               primary_portrait != null &&
               primary_portrait.content_html[0][0].length > 0
@@ -1848,23 +1956,29 @@ const build_todays_events_json = collected => {
 };
 
 const build_image_thumbnails = () => {
-  const resize = (inputfile, outputfile, maxWidth) => {
-    sharp(inputfile)
-      .resize(maxWidth, 10000)
+
+  let resizeImageQueue = async.queue((task, callback) => {
+    sharp(task.inputfile)
+      .resize(task.maxWidth, 10000)
       .max()
       .withoutEnlargement()
-      .toFile(outputfile, function(err) {
+      .toFile(task.outputfile, function(err) {
         if (err != null) {
           console.log(err);
         }
-        console.log(outputfile);
+        console.log(task.outputfile);
+        callback();
       });
-  };
+  }, 2);
 
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
 
   const handleDirRecursive = dirname => {
+    if (!fs.existsSync(dirname)) {
+      console.log(`${dirname} mangler, så genererer ingen thumbs deri.`);
+      return;
+    }
     fs.readdirSync(dirname).forEach(filename => {
       const fullFilename = path.join(dirname, filename);
       const stats = fs.statSync(fullFilename);
@@ -1882,7 +1996,7 @@ const build_image_thumbnails = () => {
               .replace(/\/([^\/]+)$/, '/t/$1');
             safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
             if (isFileModified(fullFilename) || !fileExists(outputfile)) {
-              resize(fullFilename, outputfile, width);
+              resizeImageQueue.push({inputfile:fullFilename, outputfile, maxWith:width});
             }
           });
         });
@@ -1892,6 +2006,7 @@ const build_image_thumbnails = () => {
 
   handleDirRecursive('static/images');
   handleDirRecursive('static/kunst');
+  handleDirRecursive('static/facsimiles');
 };
 
 const build_sitemap_xml = collected => {
@@ -2099,6 +2214,51 @@ const update_elasticsearch = collected => {
     });
 };
 
+const build_anniversairies_ical = collected => {
+  let events = [];  
+  let [nowYear, nowMonth, nowDay] = new Date().toISOString().split('T')[0].split('-').map(s => parseInt(s,10));
+  
+  const handleDate = (poet,eventType,date) => {    
+    var [year, month, day] = date.split('-').map(s => parseInt(s,10));
+    if (month == null || day == null || year == null) {
+      // Ignorer datoer som ikke er fulde datoer, såsom "1300?" og "1240 ca."
+      return;
+    }    
+    for(let eventYear = nowYear-1; eventYear < nowYear+3; eventYear++) {
+      let eventDate = new Date();
+      eventDate.setDate(day);
+      eventDate.setMonth(month-1);
+      eventDate.setYear(eventYear);
+      if ((eventYear-year) % 100 === 0 || (eventYear-year) % 250 === 0 ) {
+        const eventTitle = eventType === 'born' ? 'født' : 'død';
+        events.push({
+          start: [eventYear, month, day],
+          duration: {days:1},
+          title: `${poetName(poet)} ${eventTitle} for ${eventYear-year} år siden`,
+          description: `${poetName(poet)} ${eventTitle} ${parseInt(day,10)}/${parseInt(month,10)} ${year}.`,
+          url: `https://kalliope.org/da/bio/${poet.id}`,
+          uid: `${poet.id}-${eventType}-${eventYear}@kalliope.org`
+        });
+        }
+    }
+  };
+  collected.poets.forEach((poet, poetId) => {
+    
+    if (poet.period != null && poet.period.born != null && poet.period.born.date !== '?') {
+      handleDate(poet,'born',poet.period.born.date);
+    }
+    if (poet.period != null && poet.period.dead != null && poet.period.dead.date !== '?') {
+      handleDate(poet,'dead',poet.period.dead.date);
+    }
+  });
+  const { error, value } = ics.createEvents(events);
+  if (error != null) {
+    throw error;
+  }
+  writeText('static/Kalliope.ics', value);
+}
+
+
 safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);
 // Build collected.works and collected.texts
@@ -2121,7 +2281,7 @@ b('build_dict_second_pass', build_dict_second_pass, collected);
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
 b('build_sitemap_xml', build_sitemap_xml, collected);
-
+b('build_anniversairies_ical', build_anniversairies_ical, collected);
 b('build_image_thumbnails', build_image_thumbnails);
 b('update_elasticsearch', update_elasticsearch, collected);
 
