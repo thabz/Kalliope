@@ -62,7 +62,7 @@ class TodaysEvents extends React.Component<TodaysEventsProps> {
       .filter(item => item.type === 'image' && item.src != null)
       .map((item, i) => {
         const picture: PictureItem = {
-          src: '/static/' + (item.src || ''),
+          src: item.src || '',
           lang: item.content_lang,
           content_html: item.content_html,
         };

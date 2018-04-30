@@ -1946,7 +1946,7 @@ const build_todays_events_json = collected => {
             if (primary_portrait != null) {
               const data = {
                 type: 'image',
-                src: `images/${poet.id}/${primary_portrait.src}`,
+                src: primary_portrait.src,
                 content_html,
                 content_lang: lang,
                 date: event.date,
