@@ -1,9 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-const sharp = require('sharp');
 const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
-const async = require('async');
 const Paths = require('../pages/helpers/paths.js');
 const entities = require('entities');
 const elasticSearchClient = require('./libs/elasticsearch-client.js');
@@ -26,6 +24,7 @@ const {
   safeGetText,
   safeGetAttr,
   replaceDashes,
+  buildThumbnails,
 } = require('./libs/helpers.js');
 
 let collected = {
@@ -109,7 +108,7 @@ const load_timeline = filename => {
       ),
     };
     if (type === 'image') {
-      data.src = event.get('src').text();
+      data.src = '/static/'+event.get('src').text();
     }
     return data;
   });
@@ -259,16 +258,18 @@ const build_portraits_json = (poet, collected) => {
     result = doc.find('//pictures/picture').map(picture => {
       const primary = safeGetAttr(picture, 'primary') == 'true';
       if (primary) {
-        primariesCount += 1;  
+        primariesCount += 1;
       }
       const src = safeGetAttr(picture, 'src');
       if (src == null) {
-        throw `fdirs/${poet.id}/portraits.xml har et billede uden src-attribut.`;
+        throw `fdirs/${
+          poet.id
+        }/portraits.xml har et billede uden src-attribut.`;
       }
       const museumLink = build_museum_link(picture) || '';
       return {
         lang: poet.lang,
-        src,
+        src: `/static/images/${poet.id}/${src}`,
         content_lang: 'da',
         primary,
         content_html: htmlToXml(
@@ -540,14 +541,16 @@ const get_notes = (head, context = {}) => {
     };
   });
 };
-const get_pictures = head => {
+const get_pictures = (head, srcPrefix) => {
   return head.find('pictures/picture').map(picture => {
-    const src = picture.attr('src').value();
+    let src = picture.attr('src').value();
     const lang = picture.attr('lang') ? picture.attr('lang').value() : 'da';
     const type = picture.attr('type') ? picture.attr('type').value() : null;
     const invnr = safeGetAttr(picture, 'invnr');
     const museumLink = build_museum_link(picture) || '';
-
+    if (src.charAt(0) !== '/') {
+      src = srcPrefix + '/' + src;
+    }
     return {
       src,
       type,
@@ -680,17 +683,15 @@ const handle_text = (
       pagesAttr != null
     ) {
       // Deduce facsimilePages from pages and facsimilePagesOffset.
-      if (pagesAttr.indexOf('-') > -1) {
-        // Interval
-        const pagesParts = pagesAttr.split(/-/);
-        pFrom = parseInt(pagesParts[0]) + work.source.facsimilePagesOffset;
-        pTo = parseInt(pagesParts[1]) + work.source.facsimilePagesOffset;
-        facsimilePages = `${pFrom}-${pTo}`;
-      } else {
-        // Single page
-        facsimilePages =
-          parseInt(pagesAttr.trim()) + work.source.facsimilePagesOffset;
-      }
+      const pagesParts = pagesAttr.split(/-/).map(n => parseInt(n));
+      const pFrom = pagesParts[0] + work.source.facsimilePagesOffset;
+      const pTo = (pagesParts[1] || pFrom) + work.source.facsimilePagesOffset;
+      facsimilePages = [pFrom, pTo];
+    } else if (facsimilePages != null) {
+      const pagesParts = facsimilePages.split(/-/).map(n => parseInt(n));
+      const pFrom = pagesParts[0];
+      const pTo = pagesParts[1] || pFrom;
+      facsimilePages = [pFrom, pTo];
     }
     source = {
       source: sourceBookRef,
@@ -699,6 +700,9 @@ const handle_text = (
       facsimile,
       facsimilePages,
     };
+  } else if (work.source != null) {
+    // Dette er ikke nødvendigvis en fejl.
+    console.log(`fdirs/${poetId}/${workId}: teksten ${textId} mangler source.`);
   }
 
   const rawBody = body
@@ -732,7 +736,7 @@ const handle_text = (
       source,
       keywords: keywordsArray || [],
       refs: refsArray,
-      pictures: get_pictures(head),
+      pictures: get_pictures(head, `/static/images/${poetId}`),
       content_lang: poet.lang,
       content_html,
     },
@@ -870,7 +874,7 @@ const handle_work = work => {
 
   const workhead = work.get('workhead');
   const notes = get_notes(workhead);
-  const pictures = get_pictures(workhead);
+  const pictures = get_pictures(workhead, `/static/images/${poetId}`);
 
   const workbody = work.get('workbody');
   if (workbody == null) {
@@ -996,25 +1000,39 @@ const works_second_pass = collected => {
             .replace(/<source[^>]*>/, '')
             .replace(/<\/source>/, '');
         }
-        const facsimile = safeGetAttr(sourceNode, 'facsimile').replace(/.pdf$/,'');
-        let facsimilePagesOffset = safeGetAttr(
-          sourceNode,
-          'facsimile-pages-offset'
-        );
-        if (facsimilePagesOffset != null) {
-          facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
-        }
-        // Find max-page
-        const facsimilePageCount = fs
-        .readdirSync(`static/facsimiles/${poetId}/${facsimile}`)
-        .filter(x => x.endsWith('.jpg')).length;
-    
         data.source = {
           source,
-          facsimile,
-          facsimilePageCount,
-          facsimilePagesOffset,
-        };
+        }
+        let facsimile = safeGetAttr(sourceNode, 'facsimile');
+        if (facsimile != null) {
+          facsimile = facsimile.replace(
+            /.pdf$/,
+            ''
+          );
+          let facsimilePagesOffset = safeGetAttr(
+            sourceNode,
+            'facsimile-pages-offset'
+          );
+          if (facsimilePagesOffset != null) {
+            facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
+          }
+  
+          const facsimilePageCount = safeGetAttr(
+            sourceNode,
+            'facsimile-pages-num'
+          );
+          if (facsimilePageCount == null) {
+            throw new Error(
+              `fdirs/${poetId}/${workId}.xml is missing facsimile-pages-num in source.`
+            );
+          }
+          data.source = {
+            ...data.source,
+            facsimile,
+            facsimilePageCount: parseInt(facsimilePageCount, 10),
+            facsimilePagesOffset,  
+          }
+        }
       }
       collected_works.set(poetId + '-' + workId, data);
 
@@ -1274,7 +1292,7 @@ const build_works_toc = collected => {
 
     const workhead = work.get('workhead');
     const notes = get_notes(workhead);
-    const pictures = get_pictures(workhead);
+    const pictures = get_pictures(workhead, `/static/images/${poetId}`);
 
     const workbody = work.get('workbody');
     if (workbody == null) {
@@ -1473,7 +1491,7 @@ const build_keywords = () => {
           ? keyword.attr('draft').value() === 'true'
           : false;
       const title = head.get('title').text();
-      const pictures = get_pictures(head);
+      const pictures = get_pictures(head, '/static/images/keywords');
       const author = safeGetText(head, 'author');
       const rawBody = body
         .toString()
@@ -1737,7 +1755,7 @@ const build_about_pages = collected => {
       const head = about.get('head');
       const body = about.get('body');
       const title = head.get('title').text();
-      const pictures = get_pictures(head);
+      const pictures = get_pictures(head,'/static/images/about');
       const author = safeGetText(head, 'author');
       const poemsNum = Array.from(collected.texts.values())
         .map(t => (t.type === 'poem' ? 1 : 0))
@@ -1916,7 +1934,7 @@ const build_todays_events_json = collected => {
             const primary_portrait = build_portraits_json(
               poet,
               collected
-            ).filter(p => p.primary)[0];            
+            ).filter(p => p.primary)[0];
             if (
               primary_portrait != null &&
               primary_portrait.content_html[0][0].length > 0
@@ -1928,7 +1946,7 @@ const build_todays_events_json = collected => {
             if (primary_portrait != null) {
               const data = {
                 type: 'image',
-                src: `images/${poet.id}/${primary_portrait.src}`,
+                src: primary_portrait.src,
                 content_html,
                 content_lang: lang,
                 date: event.date,
@@ -1956,57 +1974,8 @@ const build_todays_events_json = collected => {
 };
 
 const build_image_thumbnails = () => {
-
-  let resizeImageQueue = async.queue((task, callback) => {
-    sharp(task.inputfile)
-      .resize(task.maxWidth, 10000)
-      .max()
-      .withoutEnlargement()
-      .toFile(task.outputfile, function(err) {
-        if (err != null) {
-          console.log(err);
-        }
-        console.log(task.outputfile);
-        callback();
-      });
-  }, 2);
-
-  const pipeJoinedExts = CommonData.availableImageFormats.join('|');
-  const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
-
-  const handleDirRecursive = dirname => {
-    if (!fs.existsSync(dirname)) {
-      console.log(`${dirname} mangler, så genererer ingen thumbs deri.`);
-      return;
-    }
-    fs.readdirSync(dirname).forEach(filename => {
-      const fullFilename = path.join(dirname, filename);
-      const stats = fs.statSync(fullFilename);
-      if (stats.isDirectory()) {
-        handleDirRecursive(fullFilename);
-      } else if (
-        stats.isFile() &&
-        filename.endsWith('.jpg') &&
-        !skipRegExps.test(filename)
-      ) {
-        CommonData.availableImageFormats.forEach((ext, i) => {
-          CommonData.availableImageWidths.forEach(width => {
-            const outputfile = fullFilename
-              .replace(/\.jpg$/, `-w${width}.${ext}`)
-              .replace(/\/([^\/]+)$/, '/t/$1');
-            safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-            if (isFileModified(fullFilename) || !fileExists(outputfile)) {
-              resizeImageQueue.push({inputfile:fullFilename, outputfile, maxWith:width});
-            }
-          });
-        });
-      }
-    });
-  };
-
-  handleDirRecursive('static/images');
-  handleDirRecursive('static/kunst');
-  handleDirRecursive('static/facsimiles');
+  buildThumbnails('static/images', isFileModified);
+  buildThumbnails('static/kunst', isFileModified);
 };
 
 const build_sitemap_xml = collected => {
@@ -2215,40 +2184,55 @@ const update_elasticsearch = collected => {
 };
 
 const build_anniversairies_ical = collected => {
-  let events = [];  
-  let [nowYear, nowMonth, nowDay] = new Date().toISOString().split('T')[0].split('-').map(s => parseInt(s,10));
-  
-  const handleDate = (poet,eventType,date) => {    
-    var [year, month, day] = date.split('-').map(s => parseInt(s,10));
+  let events = [];
+  let [nowYear, nowMonth, nowDay] = new Date()
+    .toISOString()
+    .split('T')[0]
+    .split('-')
+    .map(s => parseInt(s, 10));
+
+  const handleDate = (poet, eventType, date) => {
+    var [year, month, day] = date.split('-').map(s => parseInt(s, 10));
     if (month == null || day == null || year == null) {
       // Ignorer datoer som ikke er fulde datoer, såsom "1300?" og "1240 ca."
       return;
-    }    
-    for(let eventYear = nowYear-1; eventYear < nowYear+3; eventYear++) {
+    }
+    for (let eventYear = nowYear - 1; eventYear < nowYear + 3; eventYear++) {
       let eventDate = new Date();
       eventDate.setDate(day);
-      eventDate.setMonth(month-1);
+      eventDate.setMonth(month - 1);
       eventDate.setYear(eventYear);
-      if ((eventYear-year) % 100 === 0 || (eventYear-year) % 250 === 0 ) {
+      if ((eventYear - year) % 100 === 0 || (eventYear - year) % 250 === 0) {
         const eventTitle = eventType === 'born' ? 'født' : 'død';
         events.push({
           start: [eventYear, month, day],
-          duration: {days:1},
-          title: `${poetName(poet)} ${eventTitle} for ${eventYear-year} år siden`,
-          description: `${poetName(poet)} ${eventTitle} ${parseInt(day,10)}/${parseInt(month,10)} ${year}.`,
+          duration: { days: 1 },
+          title: `${poetName(poet)} ${eventTitle} for ${eventYear -
+            year} år siden`,
+          description: `${poetName(poet)} ${eventTitle} ${parseInt(
+            day,
+            10
+          )}/${parseInt(month, 10)} ${year}.`,
           url: `https://kalliope.org/da/bio/${poet.id}`,
-          uid: `${poet.id}-${eventType}-${eventYear}@kalliope.org`
+          uid: `${poet.id}-${eventType}-${eventYear}@kalliope.org`,
         });
-        }
+      }
     }
   };
   collected.poets.forEach((poet, poetId) => {
-    
-    if (poet.period != null && poet.period.born != null && poet.period.born.date !== '?') {
-      handleDate(poet,'born',poet.period.born.date);
+    if (
+      poet.period != null &&
+      poet.period.born != null &&
+      poet.period.born.date !== '?'
+    ) {
+      handleDate(poet, 'born', poet.period.born.date);
     }
-    if (poet.period != null && poet.period.dead != null && poet.period.dead.date !== '?') {
-      handleDate(poet,'dead',poet.period.dead.date);
+    if (
+      poet.period != null &&
+      poet.period.dead != null &&
+      poet.period.dead.date !== '?'
+    ) {
+      handleDate(poet, 'dead', poet.period.dead.date);
     }
   });
   const { error, value } = ics.createEvents(events);
@@ -2256,8 +2240,7 @@ const build_anniversairies_ical = collected => {
     throw error;
   }
   writeText('static/Kalliope.ics', value);
-}
-
+};
 
 safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);

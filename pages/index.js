@@ -72,7 +72,6 @@ class TodaysEvents extends React.Component<TodaysEventsProps> {
               pictures={[picture]}
               lang={lang}
               contentLang={item.content_lang}
-              srcPrefix="/static"
             />
           </div>
         );

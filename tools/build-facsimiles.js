@@ -3,7 +3,8 @@ const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
 const async = require('async');
-const { safeMkdir } = require('./libs/helpers.js');
+const { safeMkdir, buildThumbnails } = require('./libs/helpers.js');
+
 const dirname = 'static/facsimiles';
 
 // Place pdf-files in static/facsimiles/<poetname>/<workid>.pdf
@@ -16,6 +17,7 @@ let convertImageQueue = async.queue((task, callback) => {
   const destPath = task.srcPath
     .replace(/.pbm/, '.jpg')
     .replace(/.ppm/, '.jpg')
+    .replace(/.png/, '.jpg')
     .replace(/.*?-(\d*)\.jpg/, task.imagesDir + '/$1.jpg');
   console.log(destPath);
   exec(`convert "${task.srcPath}" "${destPath}"`, () => {
@@ -29,7 +31,7 @@ const folderToJpeg = imagesDir => {
   console.log(`Converting ${imagesDir} to jpeg`);
   fs
     .readdirSync(imagesDir)
-    .filter(f => f.endsWith('.pbm') || f.endsWith('.ppm'))
+    .filter(f => f.endsWith('.pbm') || f.endsWith('.ppm') || f.endsWith('.png'))
     .forEach(srcFilename => {
       const srcPath = path.join(imagesDir, srcFilename);
       convertImageQueue.push({ srcPath, imagesDir });
@@ -38,7 +40,7 @@ const folderToJpeg = imagesDir => {
 
 let extractPdfImagesQueue = async.queue((task, callback) => {
   console.log(`Extracting from ${task.fullFilename}`);
-  exec(`pdfimages -jp2 ${task.fullFilename} ${task.imagesPrefix}`, () => {
+  exec(`pdfimages  ${task.fullFilename} ${task.imagesPrefix}`, () => {
     callback();
   });
 }, 2);
@@ -75,4 +77,10 @@ extractPdfImagesQueue.drain = function() {
 };
 convertImageQueue.drain = function() {
   console.log('All image files are converted to jpeg');
+  buildThumbnails('static/facsimiles');
+  exec(
+    'rsync -rva static/facsimiles/* 10.0.0.5:Sites/kalliope/static/facsimiles'
+  );
 };
+
+// rsync -rva static/facsimiles/* 10.0.0.5:Sites/kalliope/static/facsimiles
