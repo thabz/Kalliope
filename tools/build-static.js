@@ -2183,7 +2183,7 @@ const update_elasticsearch = collected => {
     });
 };
 
-const build_anniversairies_ical = collected => {
+const build_anniversaries_ical = collected => {
   let events = [];
   let [nowYear, nowMonth, nowDay] = new Date()
     .toISOString()
@@ -2264,7 +2264,7 @@ b('build_dict_second_pass', build_dict_second_pass, collected);
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
 b('build_sitemap_xml', build_sitemap_xml, collected);
-b('build_anniversairies_ical', build_anniversairies_ical, collected);
+b('build_anniversaries_ical', build_anniversaries_ical, collected);
 b('build_image_thumbnails', build_image_thumbnails);
 b('update_elasticsearch', update_elasticsearch, collected);
 
