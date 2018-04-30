@@ -7,9 +7,10 @@
         <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862.</note>
         <note>Noter med foranstillet asterisk er forfatterens egne.</note>
     </notes>
-   <pictures>
-       <picture type="titlepage" src="1862a-p1.jpg">Titelbladet har ordlyden ,,Digte / fra / forskjellige Perioder / af / Henrik Hertz. // Tredie Deel. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1862.''</picture>
-   </pictures>
+    <pictures>
+        <picture type="titlepage" src="1862a-p1.jpg">Titelbladet har ordlyden ,,Digte / fra / forskjellige Perioder / af / Henrik Hertz. // Tredie Deel. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1862.''</picture>
+    </pictures>
+    <source facsimile="115308062508_color" facsimile-pages-num="565" facsimile-pages-offset="12">Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862.</source>
 </workhead>
 <workbody>
 
@@ -23,9 +24,7 @@
 <head>
     <title>Musernes Vinter-Leir</title>
     <firstline>Engene dufted', beskylled' af Voven</firstline>
-    <notes>
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 5-8.</note>
-    </notes>
+    <source pages="5-8"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -81,9 +80,7 @@ Vække ham atter til Liv, naar han falder.
     <title>Retouren fra Paradis</title>
     <subtitle>Riimbrev-Convolut fra Knud Sjællandsfar til Prof. J. L. Heiberg.</subtitle>
     <firstline>Endskjøndt Du sikkert undres over</firstline>
-    <notes>
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 11-25.</note>
-    </notes>
+    <source pages="11-25"/>
     <keywords>heibergjl,baggesen,wessel,ewald</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -464,9 +461,7 @@ At Dig med Posten Breve sendes,
         <line>(Riimbrev fra Knud Sjællandsfar til Prof. J. L. Heiberg.)</line>
     </subtitle>
     <firstline>Hvad der bevæger mig til at forlade</firstline>
-    <notes>
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 26-44.</note>
-    </notes>
+    <source pages="26-44"/>
     <keywords>heibergjl,hauch,liunge</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -934,9 +929,7 @@ Der mylrer nu af hujende Corsarer!
         <line>(Riimbrev fra Knud Sjællandsfar til Prof. J. L. Heiberg)</line>
     </subtitle>
     <firstline>Lidt træt, lidt mat, en Smule grebet an</firstline>
-    <notes>
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 45-66.</note>
-    </notes>
+    <source pages="45-66"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1489,9 +1482,7 @@ Citeres. Denne lyder da som saa:
         <line>dets syvende Artikel.</line>
     </subtitle>
     <firstline>Ved denne sidste Vilje sætter</firstline>
-    <notes>
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 67-80.</note>
-    </notes>
+    <source pages="67-80"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1848,9 +1839,7 @@ Og for Din Samtid staae som et Exempel!
         <line>(Riimbrev fra Knud Sjællandsfar til Prof. C. Hauch.)</line>
     </subtitle>
     <firstline>Du har vel ei, min hjerte Svoger, ganske</firstline>
-    <notes>
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 81-97.</note>
-    </notes>
+    <source pages="81-97"/>
     <keywords>hauch</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2270,9 +2259,7 @@ I Vandringen paa Kunstens smalle Sti.
         <line>(Riimbrev fra Knud Sjællandsfar til Prof. C. Hauch.)</line>
     </subtitle>
     <firstline>Jeg vilde netop, kjære Svoger, lukke</firstline>
-    <notes>
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 98-107.</note>
-    </notes>
+    <source pages="98-107"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2479,8 +2466,8 @@ Dit Væerk vil vorde læst af Eftertiden.
     <notes>
         <note>* Dette Riimbrev er foranlediget af et, den simpleste Velanstændighed ved sin Form ligesaameget krænkende, som baade ved Indhold og Form lige latterligt, betydnings- og meningsløst, endogsaa underkjøbenhavnspostisk Avertissement, der med <w>store Bogstaver</w> findes ,,forlangt'' indrykket i Pumpens Nr. 63, 1830, og lyder saaledes: ,,<w>Johan Ludvig Heiberg! Husk paa hvad Ende det tog med Jens Immanuel Baggesen! Vend om!</w> Det er endnu god Tid: men det kan snart blive for sildigt for Dig. Lad ikke Danmark sørge over Dine Gjerninger saa dybt, som Du maatte ønske, at det skulde sørge ved Din Baare''. -
     En langt vittigere <i>Commentarius perpetuus</i> end dette Salimatias fortjener, kan læses i flyv. Post Nr. 34. 1830.</note>
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 107-119.</note>
     </notes>
+    <source pages="107-119"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2792,11 +2779,11 @@ Der tramper paa Din Sangers Grav!
 <poem id="hertz2018022012">
 <head>
     <title>I</title>
+    <indextitle>Saa svigtede mig ei det Haab, der søgte</indextitle>
+    <linktitle>Saa svigtede mig ei det Haab, der søgte</linktitle>
     <toctitle><num>I.</num>Saa svigtede mig ei det Haab, der søgte</toctitle>
     <firstline>Saa svigtede mig ei det Haab, der søgte</firstline>
-    <notes>
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 123-140.</note>
-    </notes>
+    <source pages="123-140"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3229,12 +3216,12 @@ Det kan, det vil, det bør jeg ikke taale.
 
 <poem id="hertz2018022013">
 <head>
-    <title>Hvo gider gjerne været En saa lig</title>
-    <toctitle><num>II.</num>Hvo gider gjerne været En saa lig</toctitle>
+    <title>II</title>
+    <indextitle>Der ligger noget høist behageligt</indextitle>
+    <linktitle>Der ligger noget høist behageligt</linktitle>
+    <toctitle><num>II.</num>Der ligger noget høist behageligt</toctitle>
     <firstline>Der ligger noget høist behageligt</firstline>
-    <notes>
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 141-150.</note>
-    </notes>
+    <source pages="141-150"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3493,12 +3480,12 @@ Er hævet over Døden, over Tiden.
 
 <poem id="hertz2018022014">
 <head>
-    <title>I mindes, elskte Venner! jeg er glædet</title>
+    <title>III</title>
+    <indextitle>I mindes, elskte Venner! jeg er glædet</indextitle>
+    <linktitle>I mindes, elskte Venner! jeg er glædet</linktitle>
     <toctitle><num>III.</num>I mindes, elskte Venner! jeg er glædet</toctitle>
     <firstline>I mindes, elskte Venner! jeg er glædet</firstline>
-    <notes>
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 151-163.</note>
-    </notes>
+    <source pages="151-163"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3820,12 +3807,12 @@ Man træffer Smag og Tact og Melodie.
 
 <poem id="hertz2018022015">
 <head>
-    <title>Hvert andet Øieblik en Engel kikker</title>
+    <title>IV</title>
+    <indextitle>Hvert andet Øieblik en Engel kikker</indextitle>
+    <linktitle>Hvert andet Øieblik en Engel kikker</linktitle>
     <toctitle><num>IV.</num>Hvert andet Øieblik en Engel kikker</toctitle>
     <firstline>Hvert andet Øieblik en Engel kikker</firstline>
-    <notes>
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 164-175.</note>
-    </notes>
+    <source pages="164-175"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4148,9 +4135,7 @@ Mod indre Splid, mod fjendtlig Overlast!
 <head>
     <title>Første Afdeling</title>
     <firstline>Det var en deilig Sommeraften</firstline>
-    <notes>
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 179-203.</note>
-    </notes>
+    <source pages="179-203"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4783,11 +4768,9 @@ Snart bryder Tordenen med Magt fra Sky paa Sky.
 <head>
     <title>Anden Afdeling</title>
     <firstline>Den næste Aften traf jeg min Veninde</firstline>
-    <notes>
-        <!-- TODO: Eckersberg-maleriet hedder "Fiskerne fra Hornbæk". Jeg kan kun finde forstudier på SMK. Maleriet er ikke at finde. -->
-        <!-- TODO: Find maleriet "Mater pulcræ dilectionis" -->
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 207-235.</note>
-    </notes>
+    <!-- TODO: Eckersberg-maleriet hedder "Fiskerne fra Hornbæk". Jeg kan kun finde forstudier på SMK. Maleriet er ikke at finde. -->
+    <!-- TODO: Find maleriet "Mater pulcræ dilectionis" -->
+    <source pages="207-235"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5517,9 +5500,7 @@ Og peger mod et evigt Morgenrøde.
 <prose id="hertz2018022018">
 <head>
     <title>Om Gjenganger-Brevene</title>
-    <notes>
-        <note>Teksten følger Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel III, C. A. Reitzel, Kbh., 1862, pp. 239-268.</note>
-    </notes>
+    <source pages="239-268"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
