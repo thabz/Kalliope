@@ -191,7 +191,6 @@ class PersonPortrait extends React.Component<PersonPortraitProps> {
     if (!poet.has_portraits || portraits == null) {
       return null;
     }
-    const srcPrefix = `/static/images/${poet.id}`;
     let primaryIndex = 0;
     const primary = portraits.filter((p, i) => {
       if (p.primary == true) {
@@ -203,7 +202,6 @@ class PersonPortrait extends React.Component<PersonPortraitProps> {
       <Picture
         pictures={portraits}
         startIndex={primaryIndex}
-        srcPrefix={srcPrefix}
         lang={lang}
         contentLang={primary.content_lang || 'da'}
       />
@@ -238,7 +236,6 @@ class Timeline extends React.Component<TimelineProps> {
           <div style={{ paddingTop: '0.37em' }}>
             <Picture
               pictures={[picture]}
-              srcPrefix="/static"
               lang={lang}
               contentLang={picture.content_lang || 'da'}
             />

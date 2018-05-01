@@ -10,7 +10,6 @@ type PictureProps = {
   pictures: Array<PictureItem>,
   startIndex: number,
   lang: Lang,
-  srcPrefix?: string,
   showDropShadow?: boolean,
   clickToZoom?: boolean,
   contentLang: TextLang,
@@ -32,12 +31,11 @@ export default class Picture extends React.Component<PictureProps> {
       startIndex,
       lang,
       contentLang,
-      srcPrefix,
       showDropShadow,
       clickToZoom,
     } = this.props;
     const picture = pictures[startIndex];
-    const src: string = (srcPrefix || '') + '/' + picture.src;
+    const src = picture.src;
     const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
       return '/t/' + p1 + CommonData.fallbackImagePostfix;
     });
@@ -68,7 +66,7 @@ export default class Picture extends React.Component<PictureProps> {
     }
     const onClick = e => {
       if (clickToZoom == true) {
-        this.context.showPictureOverlay(pictures, srcPrefix, 'da', startIndex);
+        this.context.showPictureOverlay(pictures, 'da', startIndex);
       }
     };
     if (clickToZoom == true) {

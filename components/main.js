@@ -1,7 +1,6 @@
 // @flow
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import PictureOverlay from './pictureoverlay.js';
 import { Link, Router } from '../routes';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
@@ -10,14 +9,13 @@ type MainStateTypes = {
   overlayPictures: {
     pictures: Array<PictureItem>,
     startIndex: number,
-    srcPrefix: string,
     lang: Lang,
   } | null,
 };
 export default class Main extends React.Component<*, MainStateTypes> {
   static childContextTypes = {
-    showPictureOverlay: PropTypes.func,
-    hidePictureOverlay: PropTypes.func,
+    showPictureOverlay: Function,
+    hidePictureOverlay: Function,
   };
 
   hidePictureOverlay: () => void;
@@ -41,12 +39,11 @@ export default class Main extends React.Component<*, MainStateTypes> {
 
   showPictureOverlay(
     pictures: Array<PictureItem>,
-    srcPrefix: string,
     lang: Lang,
     startIndex: number = 0
   ) {
     this.setState({
-      overlayPictures: { pictures, srcPrefix, lang, startIndex },
+      overlayPictures: { pictures, lang, startIndex },
     });
   }
   hidePictureOverlay() {
@@ -58,12 +55,11 @@ export default class Main extends React.Component<*, MainStateTypes> {
 
     let overlay = null;
     if (overlayPictures != null) {
-      const { pictures, startIndex, lang, srcPrefix } = overlayPictures;
+      const { pictures, startIndex, lang } = overlayPictures;
       overlay = (
         <PictureOverlay
           pictures={pictures}
           startIndex={startIndex}
-          srcPrefix={srcPrefix}
           lang={lang}
           clickToZoom={false}
           closeCallback={this.hidePictureOverlay}

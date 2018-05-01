@@ -168,13 +168,12 @@ class CloseButton extends React.Component<SVGProps> {
 class BiggerPicture extends React.Component<*> {
   props: {
     picture: PictureItem,
-    srcPrefix: ?string,
     lang: Lang,
   };
 
   render() {
-    const { srcPrefix, picture, lang } = this.props;
-    const src: string = (srcPrefix || '') + '/' + picture.src;
+    const { picture, lang } = this.props;
+    const src = picture.src;
     const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
       return '/t/' + p1 + CommonData.fallbackImagePostfix;
     });
@@ -315,15 +314,17 @@ export default class PictureOverlay extends React.Component<
   }
 
   render() {
-    const { pictures, srcPrefix, lang } = this.props;
+    const { pictures, lang } = this.props;
     let arrows = null;
     if (pictures.length > 1) {
       arrows = [
         <RightArrow
+          key={'right'}
           onClick={this.onRightClick}
           inactive={this.state.currentIndex === this.props.pictures.length - 1}
         />,
         <LeftArrow
+          key={'left'}
           onClick={this.onLeftClick}
           inactive={this.state.currentIndex === 0}
         />,
@@ -337,7 +338,7 @@ export default class PictureOverlay extends React.Component<
             <CloseButton onClick={this.hideOverlay} />
             {arrows}
           </div>
-          <BiggerPicture picture={picture} srcPrefix={srcPrefix} lang={lang} />
+          <BiggerPicture picture={picture} lang={lang} />
         </div>
         <style jsx>{`
           .overlay-background {
