@@ -2,18 +2,14 @@
 import React from 'react';
 import type { Text } from '../pages/helpers/types.js';
 
-export default class TextName extends React.Component {
-  props: {
-    text: Text,
-  };
+type TextNameProps = {
+  text: Text,
+};
+export default class TextName extends React.Component<TextNameProps> {
   render() {
     const { text } = this.props;
     const { title } = text;
-    return (
-      <span className="textname">
-        {title}
-      </span>
-    );
+    return <span className="textname">{title}</span>;
   }
 }
 

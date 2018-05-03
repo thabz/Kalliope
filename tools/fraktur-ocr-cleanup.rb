@@ -258,7 +258,7 @@
 'hore/høre',
 'hsre/høre',
 'hort/hørt',
-'hor(\W)/hør\1'
+'hor(\W)/hør\1',
 'hsrt/hørt',
 'hvrt/hørt',
 'hsire/høire',
@@ -266,7 +266,7 @@
 'Voer/Vær',
 'soenk/sænk',
 'fkab/skab',
-'(\w)stab/\1skab'
+'(\w)stab/\1skab',
 '(\w)strar(\w)/\1strax\2',
 'beromte/berømte',
 ' soge / søge ',

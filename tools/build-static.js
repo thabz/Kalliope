@@ -1,12 +1,12 @@
 const fs = require('fs');
 const path = require('path');
-const sharp = require('sharp');
 const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
 const Paths = require('../pages/helpers/paths.js');
 const entities = require('entities');
 const elasticSearchClient = require('./libs/elasticsearch-client.js');
 const CommonData = require('../pages/helpers/commondata.js');
+const ics = require('ics');
 
 const {
   isFileModified,
@@ -24,6 +24,7 @@ const {
   safeGetText,
   safeGetAttr,
   replaceDashes,
+  buildThumbnails,
 } = require('./libs/helpers.js');
 
 let collected = {
@@ -107,7 +108,7 @@ const load_timeline = filename => {
       ),
     };
     if (type === 'image') {
-      data.src = event.get('src').text();
+      data.src = '/static/'+event.get('src').text();
     }
     return data;
   });
@@ -214,6 +215,9 @@ const build_poet_timeline_json = (poet, collected) => {
 };
 
 const build_museum_link = picture => {
+  if (picture == null) {
+    return null;
+  }
   const invNr = safeGetAttr(picture, 'invnr');
   const objId = safeGetAttr(picture, 'objid');
   const museum = safeGetAttr(picture, 'museum');
@@ -243,39 +247,49 @@ const build_museum_link = picture => {
   }
 };
 
-const build_portrait_json = (poet, collected) => {
+const build_portraits_json = (poet, collected) => {
+  let result = [];
   if (!poet.has_portraits) {
-    return null;
+    return result;
   }
-  let data = null;
   const doc = loadXMLDoc(`fdirs/${poet.id}/portraits.xml`);
   if (doc != null) {
-    const primaries = doc.find('//pictures/picture').filter(picture => {
-      return safeGetAttr(picture, 'primary') == 'true';
+    let primariesCount = 0;
+    result = doc.find('//pictures/picture').map(picture => {
+      const primary = safeGetAttr(picture, 'primary') == 'true';
+      if (primary) {
+        primariesCount += 1;
+      }
+      const src = safeGetAttr(picture, 'src');
+      if (src == null) {
+        throw `fdirs/${
+          poet.id
+        }/portraits.xml har et billede uden src-attribut.`;
+      }
+      const museumLink = build_museum_link(picture) || '';
+      return {
+        lang: poet.lang,
+        src: `/static/images/${poet.id}/${src}`,
+        content_lang: 'da',
+        primary,
+        content_html: htmlToXml(
+          picture
+            .toString()
+            .replace(/<picture[^>]*?>/, '')
+            .replace('</picture>', '')
+            .trim() + museumLink,
+          collected
+        ),
+      };
     });
-    if (primaries.length > 1) {
+    if (primariesCount > 1) {
       throw `fdirs/${poet.id}/portraits.xml har flere primary`;
     }
-    if (primaries.length === 0) {
+    if (primariesCount == 0) {
       throw `fdirs/${poet.id}/portraits.xml mangler primary`;
     }
-    const primary = primaries[0];
-    const museumLink = build_museum_link(primary) || '';
-    data = {
-      lang: poet.lang,
-      src: primary.attr('src').value(),
-      content_lang: 'da',
-      content_html: htmlToXml(
-        primary
-          .toString()
-          .replace(/<picture[^>]*?>/, '')
-          .replace('</picture>', '')
-          .trim() + museumLink,
-        collected
-      ),
-    };
   }
-  return data;
+  return result;
 };
 
 const build_bio_json = collected => {
@@ -321,7 +335,7 @@ const build_bio_json = collected => {
       data.content_lang = 'da';
     }
     data.timeline = build_poet_timeline_json(poet, collected);
-    data.portrait = build_portrait_json(poet, collected);
+    data.portraits = build_portraits_json(poet, collected);
     const destFilename = `static/api/${poet.id}/bio.json`;
     console.log(destFilename);
     writeJSON(destFilename, data);
@@ -527,14 +541,16 @@ const get_notes = (head, context = {}) => {
     };
   });
 };
-const get_pictures = head => {
+const get_pictures = (head, srcPrefix) => {
   return head.find('pictures/picture').map(picture => {
-    const src = picture.attr('src').value();
+    let src = picture.attr('src').value();
     const lang = picture.attr('lang') ? picture.attr('lang').value() : 'da';
     const type = picture.attr('type') ? picture.attr('type').value() : null;
     const invnr = safeGetAttr(picture, 'invnr');
     const museumLink = build_museum_link(picture) || '';
-
+    if (src.charAt(0) !== '/') {
+      src = srcPrefix + '/' + src;
+    }
     return {
       src,
       type,
@@ -651,7 +667,10 @@ const handle_text = (
     const pagesAttr = safeGetAttr(sourceNode, 'pages');
     let sourceBookRef = work.source ? work.source.source : null;
     if (sourceNode.text().trim().length > 0) {
-      sourceBookRef = sourceNode.toString().replace(/<source[^>]*>/,'').replace(/<\/source>/,'');
+      sourceBookRef = sourceNode
+        .toString()
+        .replace(/<source[^>]*>/, '')
+        .replace(/<\/source>/, '');
     }
     const facsimile =
       safeGetAttr(sourceNode, 'facsimile') ||
@@ -664,24 +683,26 @@ const handle_text = (
       pagesAttr != null
     ) {
       // Deduce facsimilePages from pages and facsimilePagesOffset.
-      if (pagesAttr.indexOf('-') > -1) {
-        // Interval
-        const pagesParts = pagesAttr.split(/-/);
-        pFrom = parseInt(pagesParts[0]) + work.source.facsimilePagesOffset;
-        pTo = parseInt(pagesParts[1]) + work.source.facsimilePagesOffset;
-        facsimilePages = `${pFrom}-${pTo}`;
-      } else {
-        // Single page
-        facsimilePages =
-          parseInt(pagesAttr.trim()) + work.source.facsimilePagesOffset;
-      }
+      const pagesParts = pagesAttr.split(/-/).map(n => parseInt(n));
+      const pFrom = pagesParts[0] + work.source.facsimilePagesOffset;
+      const pTo = (pagesParts[1] || pFrom) + work.source.facsimilePagesOffset;
+      facsimilePages = [pFrom, pTo];
+    } else if (facsimilePages != null) {
+      const pagesParts = facsimilePages.split(/-/).map(n => parseInt(n));
+      const pFrom = pagesParts[0];
+      const pTo = pagesParts[1] || pFrom;
+      facsimilePages = [pFrom, pTo];
     }
     source = {
       source: sourceBookRef,
       pages: pagesAttr,
+      facsimilePageCount: work.source.facsimilePageCount,
       facsimile,
       facsimilePages,
     };
+  } else if (work.source != null) {
+    // Dette er ikke nødvendigvis en fejl.
+    console.log(`fdirs/${poetId}/${workId}: teksten ${textId} mangler source.`);
   }
 
   const rawBody = body
@@ -715,7 +736,7 @@ const handle_text = (
       source,
       keywords: keywordsArray || [],
       refs: refsArray,
-      pictures: get_pictures(head),
+      pictures: get_pictures(head, `/static/images/${poetId}`),
       content_lang: poet.lang,
       content_html,
     },
@@ -853,7 +874,7 @@ const handle_work = work => {
 
   const workhead = work.get('workhead');
   const notes = get_notes(workhead);
-  const pictures = get_pictures(workhead);
+  const pictures = get_pictures(workhead, `/static/images/${poetId}`);
 
   const workbody = work.get('workbody');
   if (workbody == null) {
@@ -974,21 +995,44 @@ const works_second_pass = collected => {
       if (sourceNode != null) {
         let source = null;
         if (sourceNode.text().trim().length > 0) {
-          source = sourceNode.toString().replace(/<source[^>]*>/,'').replace(/<\/source>/,'');
-        };
-        const facsimile = safeGetAttr(sourceNode, 'facsimile');
-        let facsimilePagesOffset = safeGetAttr(
-          sourceNode,
-          'facsimile-pages-offset'
-        );
-        if (facsimilePagesOffset != null) {
-          facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
+          source = sourceNode
+            .toString()
+            .replace(/<source[^>]*>/, '')
+            .replace(/<\/source>/, '');
         }
         data.source = {
           source,
-          facsimile,
-          facsimilePagesOffset,
-        };
+        }
+        let facsimile = safeGetAttr(sourceNode, 'facsimile');
+        if (facsimile != null) {
+          facsimile = facsimile.replace(
+            /.pdf$/,
+            ''
+          );
+          let facsimilePagesOffset = safeGetAttr(
+            sourceNode,
+            'facsimile-pages-offset'
+          );
+          if (facsimilePagesOffset != null) {
+            facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
+          }
+  
+          const facsimilePageCount = safeGetAttr(
+            sourceNode,
+            'facsimile-pages-num'
+          );
+          if (facsimilePageCount == null) {
+            throw new Error(
+              `fdirs/${poetId}/${workId}.xml is missing facsimile-pages-num in source.`
+            );
+          }
+          data.source = {
+            ...data.source,
+            facsimile,
+            facsimilePageCount: parseInt(facsimilePageCount, 10),
+            facsimilePagesOffset,  
+          }
+        }
       }
       collected_works.set(poetId + '-' + workId, data);
 
@@ -1248,7 +1292,7 @@ const build_works_toc = collected => {
 
     const workhead = work.get('workhead');
     const notes = get_notes(workhead);
-    const pictures = get_pictures(workhead);
+    const pictures = get_pictures(workhead, `/static/images/${poetId}`);
 
     const workbody = work.get('workbody');
     if (workbody == null) {
@@ -1447,7 +1491,7 @@ const build_keywords = () => {
           ? keyword.attr('draft').value() === 'true'
           : false;
       const title = head.get('title').text();
-      const pictures = get_pictures(head);
+      const pictures = get_pictures(head, '/static/images/keywords');
       const author = safeGetText(head, 'author');
       const rawBody = body
         .toString()
@@ -1711,7 +1755,7 @@ const build_about_pages = collected => {
       const head = about.get('head');
       const body = about.get('body');
       const title = head.get('title').text();
-      const pictures = get_pictures(head);
+      const pictures = get_pictures(head,'/static/images/about');
       const author = safeGetText(head, 'author');
       const poemsNum = Array.from(collected.texts.values())
         .map(t => (t.type === 'poem' ? 1 : 0))
@@ -1887,7 +1931,10 @@ const build_todays_events_json = collected => {
             const event = weighted[0].event;
             const poet = event.context.poet;
             let content_html = null;
-            const primary_portrait = build_portrait_json(poet, collected);
+            const primary_portrait = build_portraits_json(
+              poet,
+              collected
+            ).filter(p => p.primary)[0];
             if (
               primary_portrait != null &&
               primary_portrait.content_html[0][0].length > 0
@@ -1899,7 +1946,7 @@ const build_todays_events_json = collected => {
             if (primary_portrait != null) {
               const data = {
                 type: 'image',
-                src: `images/${poet.id}/${primary_portrait.src}`,
+                src: primary_portrait.src,
                 content_html,
                 content_lang: lang,
                 date: event.date,
@@ -1927,50 +1974,8 @@ const build_todays_events_json = collected => {
 };
 
 const build_image_thumbnails = () => {
-  const resize = (inputfile, outputfile, maxWidth) => {
-    sharp(inputfile)
-      .resize(maxWidth, 10000)
-      .max()
-      .withoutEnlargement()
-      .toFile(outputfile, function(err) {
-        if (err != null) {
-          console.log(err);
-        }
-        console.log(outputfile);
-      });
-  };
-
-  const pipeJoinedExts = CommonData.availableImageFormats.join('|');
-  const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
-
-  const handleDirRecursive = dirname => {
-    fs.readdirSync(dirname).forEach(filename => {
-      const fullFilename = path.join(dirname, filename);
-      const stats = fs.statSync(fullFilename);
-      if (stats.isDirectory()) {
-        handleDirRecursive(fullFilename);
-      } else if (
-        stats.isFile() &&
-        filename.endsWith('.jpg') &&
-        !skipRegExps.test(filename)
-      ) {
-        CommonData.availableImageFormats.forEach((ext, i) => {
-          CommonData.availableImageWidths.forEach(width => {
-            const outputfile = fullFilename
-              .replace(/\.jpg$/, `-w${width}.${ext}`)
-              .replace(/\/([^\/]+)$/, '/t/$1');
-            safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-            if (isFileModified(fullFilename) || !fileExists(outputfile)) {
-              resize(fullFilename, outputfile, width);
-            }
-          });
-        });
-      }
-    });
-  };
-
-  handleDirRecursive('static/images');
-  handleDirRecursive('static/kunst');
+  buildThumbnails('static/images', isFileModified);
+  buildThumbnails('static/kunst', isFileModified);
 };
 
 const build_sitemap_xml = collected => {
@@ -2178,6 +2183,65 @@ const update_elasticsearch = collected => {
     });
 };
 
+const build_anniversaries_ical = collected => {
+  let events = [];
+  let [nowYear, nowMonth, nowDay] = new Date()
+    .toISOString()
+    .split('T')[0]
+    .split('-')
+    .map(s => parseInt(s, 10));
+
+  const handleDate = (poet, eventType, date) => {
+    var [year, month, day] = date.split('-').map(s => parseInt(s, 10));
+    if (month == null || day == null || year == null) {
+      // Ignorer datoer som ikke er fulde datoer, såsom "1300?" og "1240 ca."
+      return;
+    }
+    for (let eventYear = nowYear - 1; eventYear < nowYear + 3; eventYear++) {
+      let eventDate = new Date();
+      eventDate.setDate(day);
+      eventDate.setMonth(month - 1);
+      eventDate.setYear(eventYear);
+      if ((eventYear - year) % 100 === 0 || (eventYear - year) % 250 === 0) {
+        const eventTitle = eventType === 'born' ? 'født' : 'død';
+        events.push({
+          start: [eventYear, month, day],
+          duration: { days: 1 },
+          title: `${poetName(poet)} ${eventTitle} for ${eventYear -
+            year} år siden`,
+          description: `${poetName(poet)} ${eventTitle} ${parseInt(
+            day,
+            10
+          )}/${parseInt(month, 10)} ${year}.`,
+          url: `https://kalliope.org/da/bio/${poet.id}`,
+          uid: `${poet.id}-${eventType}-${eventYear}@kalliope.org`,
+        });
+      }
+    }
+  };
+  collected.poets.forEach((poet, poetId) => {
+    if (
+      poet.period != null &&
+      poet.period.born != null &&
+      poet.period.born.date !== '?'
+    ) {
+      handleDate(poet, 'born', poet.period.born.date);
+    }
+    if (
+      poet.period != null &&
+      poet.period.dead != null &&
+      poet.period.dead.date !== '?'
+    ) {
+      handleDate(poet, 'dead', poet.period.dead.date);
+    }
+  });
+  const { error, value } = ics.createEvents(events);
+  if (error != null) {
+    throw error;
+  }
+  writeText('static/Kalliope.ics', value);
+};
+
 safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);
 // Build collected.works and collected.texts
@@ -2200,7 +2264,7 @@ b('build_dict_second_pass', build_dict_second_pass, collected);
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
 b('build_sitemap_xml', build_sitemap_xml, collected);
-
+b('build_anniversaries_ical', build_anniversaries_ical, collected);
 b('build_image_thumbnails', build_image_thumbnails);
 b('update_elasticsearch', update_elasticsearch, collected);
 
