@@ -12,6 +12,7 @@
    <pictures>
        <picture type="titlepage" src="1894-p1.jpg">Titelbladet til <i>Gjennem farvet Glas</i> (1894). ,,Gjennem farvet Glas / Smaating paa Vers / af / Thor Lange // Kjøbenhavn / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn) / Fr. Bagges Bogtrykkeri / 1894''</picture>
    </pictures>
+   <source facsimile="11530807434E_color" facsimile-pages-num="146" facsimile-pages-offset="16">Thor Lange: <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894.</source>
 </workhead>
 <workbody>
 
@@ -20,9 +21,7 @@
 <head>
    <title>Clair Obscur</title>
    <firstline>Du friske Nat, som kysser ungt og ømt</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 1.</note>
-   </notes>
+   <source pages="1"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -47,9 +46,7 @@ paa Rosenvinger gjennem Dæmring glide!
 <head>
    <title>Nocturne</title>
    <firstline>Ud om Søen slaar sig Nattens Rosenslør</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 2.</note>
-   </notes>
+   <source pages="2"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -83,9 +80,7 @@ ufravendt to mørke Øjne paa mig stirre.
    <toctitle><num>I.</num>Paa det dybe Vand, det dunkle</toctitle>
    <linktitle>Paa det dybe Vand, det dunkle</linktitle>
    <firstline>Paa det dybe Vand, det dunkle</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 3.</note>
-   </notes>
+   <source pages="3"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -113,9 +108,7 @@ i et stille Fadervor.
    <toctitle><num>II.</num>Vilde Skov af mørke Graner</toctitle>
    <linktitle>Vilde Skov af mørke Graner</linktitle>
    <firstline>Vilde Skov af mørke Graner</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 4.</note>
-   </notes>
+   <source pages="4"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -148,9 +141,7 @@ al din Sorg, den redningsløse.
    <toctitle><num>III.</num>Dvæl paa mig, Du dunkle øje</toctitle>
    <linktitle>Dvæl paa mig, Du dunkle øje</linktitle>
    <firstline>Dvæl paa mig, Du dunkle øje</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 5.</note>
-   </notes>
+   <source pages="5"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -173,9 +164,7 @@ vidt omkring mig tyst og tæt!
 <head>
    <title>Rondeau</title>
    <firstline>Det suser mig for øret af gamle Melodier</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 6-7.</note>
-   </notes>
+   <source pages="6-7"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -209,9 +198,7 @@ Det suser mig for øret af gamle Melodier.
 <head>
    <title>Folkevise</title>
    <firstline>Var jeg en Lærke graa</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 8.</note>
-   </notes>
+   <source pages="8"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -244,9 +231,7 @@ Alt, jeg af Elskov veed,
    <title>Blomster i Sne</title>
    <subtitle>(Russisk Folkevisemotiv)</subtitle>
    <firstline>Kjære lille Moder, se, hvad Ingen aner</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 9.</note>
-   </notes>
+   <source pages="9"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -267,10 +252,8 @@ derfor ser Du Blomster mellem Is og Sne.
    <title>Kvindesorg</title>
    <subtitle>(Efter Elisa v. P.)</subtitle>
    <firstline>Den udslagne Dag maa med Andre jeg le</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 10-11.</note>
-      <!-- TODO: Hvem er Elisa v. P.? -->
-   </notes>
+   <!-- TODO: Hvem er Elisa v. P.? -->
+   <source pages="10-11"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -305,10 +288,8 @@ Du Hjerte, som sprænges af indestængt Nød,
    <title>Ariettes Oubliées</title>
    <subtitle>(Efter Paul Verlaine)</subtitle>
    <firstline>Mellem sorte Træer paa den hvide Sti</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 12-13.</note>
-      <!-- TODO: Find originalerne -->
-   </notes>
+   <!-- TODO: Find originalerne -->
+   <source pages="12-13"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -359,9 +340,7 @@ mig i Klangrus og Farverus gynge.
 <head>
    <title>Nocturne</title>
    <firstline>Jeg gik en Aften sent langs den øde, krumme Strand</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 14.</note>
-   </notes>
+   <source pages="14"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -387,9 +366,7 @@ og Stranden gav til Svar: ,,Jeg veed det ikke.''
    <title>Russisk Romance</title>
    <subtitle>(Musiktext)</subtitle>
    <firstline>Stille sødt og Hjertet svalende</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 15.</note>
-   </notes>
+   <source pages="15"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -415,9 +392,7 @@ Ungdomsdrøm og Haab var spildt.
 <head>
    <title>Mosetaage</title>
    <firstline>Hvad drager mig i Taagen til</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 16.</note>
-   </notes>
+   <source pages="16"/>
    <quality>korrektur1,kilde,side</quality>
    <!-- Korrekturen nedenfor er håndskrevet -->
 </head>
@@ -443,9 +418,7 @@ Hjælp, Gud, hvad jeg forbrød!
 <head>
    <title>Fantasibillede</title>
    <firstline>En dunkel Kyst, hvis Bjerge blaaligt gløde</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 17.</note>
-   </notes>
+   <source pages="17"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -470,9 +443,7 @@ staar Stjernen foran stille, stor og rød.
 <head>
    <title>Gammel fransk Romance</title>
    <firstline>Kongen lader paa Tromme slaa</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 18.</note>
-   </notes>
+   <source pages="18"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -503,9 +474,7 @@ daanede Damen til Jord og døde.
    <title>Vilanelle du soir</title>
    <subtitle>(Gammelfranske Kunstrim)</subtitle>
    <firstline>Gjennem Slotshavens Gange</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 19-20.</note>
-   </notes>
+   <source pages="19-20"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -555,9 +524,7 @@ falde Skyggerne lange.
    <toctitle><num>I.</num>Frembrydende Nat</toctitle>
    <linktitle>Frembrydende Nat</linktitle>
    <firstline>Lyd af en Hund, der glammer</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 21.</note>
-   </notes>
+   <source pages="21"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -589,9 +556,7 @@ stiger et Suk, et Spørgsmaal at raade,
    <toctitle><num>II.</num>Damen i Hvidt</toctitle>
    <linktitle>Damen i Hvidt</linktitle>
    <firstline>Det er den evige Dame i Hvidt</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 22.</note>
-   </notes>
+   <source pages="22"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -620,9 +585,7 @@ Det er den evige Dame i Hvidt.
    <toctitle><num>III.</num>Efterhøst</toctitle>
    <linktitle>Efterhøst</linktitle>
    <firstline>Sin Sjæl aander ud den bedaarende Bregne</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 22-23.</note>
-   </notes>
+   <source pages="22-23"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -651,9 +614,7 @@ sin Sjæl aander ud den bedaarende Bregne.
    <toctitle><num>IV.</num>Uro</toctitle>
    <linktitle>Uro</linktitle>
    <firstline>Den lyver ikke, den indre Stemme</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 23-24.</note>
-   </notes>
+   <source pages="23-24"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -682,9 +643,7 @@ da flammer Brøden bevidst, bevidst!
 <head>
    <title>Efter Solnedgang</title>
    <firstline>Himlen ulmer svagt i Flammerødt</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 25.</note>
-   </notes>
+   <source pages="25"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -709,9 +668,7 @@ tvangløst i din dybe Smerte hvilende!
 <head>
    <title>Gammel Melodi</title>
    <firstline>O ve for Lys og Lue, der gjør mig ør og vild</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 26.</note>
-   </notes>
+   <source pages="26"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -736,9 +693,7 @@ en Stjerne bliv paa Himlen, og vent mig, vent mig der!
 <head>
    <title>Nocturne</title>
    <firstline>Paa Mosen langs den tavse Lunds</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 27.</note>
-   </notes>
+   <source pages="27"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -774,9 +729,9 @@ og Nattens Syner om mig stige.
    <firstline>Se, som Skygger hen ad Himlen trække</firstline>
    <notes>
       <note>Gendigtning efter Aleksis Tolstoy.</note>
-      <note>Teksten følger førsteudgaven <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 28.</note>
       <note type="credits">Bidrag fra Iwan Bonnén.</note>
    </notes>
+   <source pages="28"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -807,9 +762,9 @@ noget jordisk Foraar mer behov.
    <firstline>En Rand af diset Hede mod Aftenhimlen bæver</firstline>
    <notes>
       <note>Gendigtning efter Aleksis Tolstoy.</note>
-      <note>Teksten følger førsteudgaven <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 29.</note>
       <note type="credits">Bidrag fra Iwan Bonnén.</note>
    </notes>
+   <source pages="29"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -835,9 +790,9 @@ i dine milde Øjne i det milde Maaneskin.
    <firstline>Mit lys er slukt, min Solskinstid er omme</firstline>
    <notes>
       <note>Gendigtning efter Aleksis Tolstoy.</note>
-      <note>Teksten følger førsteudgaven <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 29-30.</note>
       <note type="credits">Bidrag fra Iwan Bonnén.</note>
    </notes>
+   <source pages="29-30"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -868,9 +823,9 @@ for Slaget frem i hellig, frigjort Ild!
    <firstline>Ingens Frelse staar paa spil</firstline>
    <notes>
       <note>Gendigtning efter Aleksis Tolstoy.</note>
-      <note>Teksten følger førsteudgaven <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, 30.</note>
       <note type="credits">Bidrag fra Iwan Bonnén.</note>
    </notes>
+   <source pages="30"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -904,9 +859,9 @@ vi skal ogsaa finde Gud!
    <firstline>Dybt i Skumring kølig, violet</firstline>
    <notes>
       <note>Gendigtning efter Aleksis Tolstoy.</note>
-      <note>Teksten følger førsteudgaven <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p.31.</note>
       <note type="credits">Bidrag fra Iwan Bonnén.</note>
    </notes>
+   <source pages="31"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -937,9 +892,9 @@ Sov i Skjæret af den fromme Lampe!
    <firstline>Hej, mit Hjem, mit Fædrehjem</firstline>
    <notes>
       <note>Gendigtning efter Aleksis Tolstoy.</note>
-      <note>Teksten følger førsteudgaven <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 31-32.</note>
       <note type="credits">Bidrag fra Iwan Bonnén.</note>
    </notes>
+   <source pages="31-32"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -962,9 +917,7 @@ Steppe, Storm og Mørke!
    <toctitle><num>VII.</num>Sansebedrag</toctitle>
    <linktitle>Sansebedrag</linktitle>
    <firstline>Hvor Vandet til Broslusen strømmer</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 32-33.</note>
-   </notes>
+   <source pages="32-33"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1012,9 +965,7 @@ kun mindes jeg ikke, hvornaar.
    <toctitle><num>VIII.</num>Hertug Knud</toctitle>
    <linktitle>Hertug Knud</linktitle>
    <firstline>To Tidender ginge til Haand Hertug Knud</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 33-40.</note>
-   </notes>
+   <source pages="33-40"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1207,9 +1158,7 @@ og Skyerne male sig røde.
    <toctitle><num>IX.</num>Rugewit</toctitle>
    <linktitle>Rugewit</linktitle>
    <firstline>Hvor lyse Bøge dristigt frem sig bøje</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 41-43.</note>
-   </notes>
+   <source pages="41-43"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1283,9 +1232,7 @@ Du faldne Rugewit, flyd bort, flyd bort!
    <toctitle><num>X.</num>Pannychiden</toctitle>
    <linktitle>Pannychiden</linktitle>
    <firstline>Hvo har paa Jord en Glæde smagt</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 43-46.</note>
-   </notes>
+   <source pages="43-46"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1383,9 +1330,7 @@ i Lys til Dig blandt Helgen alle!
    <toctitle><num>XI.</num>Den sidste Olie</toctitle>
    <linktitle>Den sidste Olie</linktitle>
    <firstline>Efter Skriftemaalets Trøst</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 47.</note>
-   </notes>
+   <source pages="47"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1417,9 +1362,7 @@ tag din Tjener bort i Fred!
 <head>
    <title>Melodi</title>
    <firstline>Naar de sidste røde Sømme</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 48.</note>
-   </notes>
+   <source pages="48"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1441,9 +1384,7 @@ fra hvis Himmel jeg er falden.
 <head>
    <title>Nocturne</title>
    <firstline>Det skumrer; Jord og Himmel i Graat tilsammen flød</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 49.</note>
-   </notes>
+   <source pages="49"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1467,9 +1408,7 @@ og som jeg vidste nok jeg maatte møde.
 <head>
    <title>For sent</title>
    <firstline>Jeg sluges af Drømmenes rivende Flod</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 50.</note>
-   </notes>
+   <source pages="50"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1499,9 +1438,7 @@ en Fortids fantastiske Liv, af hvis Pragt
    <toctitle><num>I.</num>Piletræet bøjer sig</toctitle>
    <linktitle>Piletræet bøjer sig</linktitle>
    <firstline>Piletræet bøjer sig</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 51-52.</note>
-   </notes>
+   <source pages="51-52"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1534,9 +1471,7 @@ kan intetsteds I finde.
    <toctitle><num>II.</num>Blæsten hvirvler det tørre Blad</toctitle>
    <linktitle>Blæsten hvirvler det tørre Blad</linktitle>
    <firstline>Blæsten hvirvler det tørre Blad i Kredse paa Marken rundt</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 52-53.</note>
-   </notes>
+   <source pages="52-53"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1549,7 +1484,7 @@ gjerne rakte jeg ud min Haand, om Nogen tog den imod.
 Høste maa jeg for fremmed Folk foruden Tarv eller Tak,
 altid faar jeg det mindste Neg og sætter den mindste Stak.
 
- Mange Stakke paa Marken staar, og Floden løber forbi.
+Mange Stakke paa Marken staar, og Floden løber forbi.
 Længe ser jeg paa Floden først, saa springer jeg ud deri.
 
 — Gjør det ikke, Du kristne Mand, lad ikke din Sjæl forgaa;
@@ -1564,9 +1499,7 @@ er i Verden Du vorden født, i Verden leve Du. maa.
 <head>
    <title>Vinternat</title>
    <firstline>Spinkle Stjernestraaler trænge</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 54.</note>
-   </notes>
+   <source pages="54"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1592,9 +1525,7 @@ i de blanke Strenges Guld.
    <title>Nocturne</title>
    <subtitle>(Gammel Melodi)</subtitle>
    <firstline>Jeg tør Ingen betro, hvor jeg elsker Dig ømt</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 55.</note>
-   </notes>
+   <source pages="55"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1619,9 +1550,7 @@ af sin Saligheds Overmaal briste.
 <head>
    <title>Folkevise</title>
    <firstline>Der sang en fager Fugl, og jeg lyttede derpaa</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 56-57.</note>
-   </notes>
+   <source pages="56-57"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1665,9 +1594,7 @@ de tænke paa den Sommer, der sammen os saae.
    <toctitle><num>I.</num>Nocturne</toctitle>
    <linktitle>Nocturne</linktitle>
    <firstline>Om Himlens Rand har Natten lagt et Belte</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 58.</note>
-   </notes>
+   <source pages="58"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1695,9 +1622,7 @@ O, drag mig med ad morgenrøde Veje
    <toctitle><num>II.</num>Paa Steppen</toctitle>
    <linktitle>Paa Steppen</linktitle>
    <firstline>Der blinker højtoppe to Stjerner, to blide</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 59.</note>
-   </notes>
+   <source pages="59"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1725,9 +1650,7 @@ min Ungdom og Elskov, som vender tilbage! —
    <toctitle><num>III.</num>Hviletid</toctitle>
    <linktitle>Hviletid</linktitle>
    <firstline>Hvor dødstræt Alt ser ud! Hvor Himlens Lød er mat!</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 59-60.</note>
-   </notes>
+   <source pages="59-60"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1750,9 +1673,7 @@ en gammel søvnløs Sorg, der sukker efter Hvile!
    <toctitle><num>IV.</num>Et Navn</toctitle>
    <linktitle>Et Navn</linktitle>
    <firstline>Hver signet Stund, naar frit og uden Hindring</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 60.</note>
-   </notes>
+   <source pages="60"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1780,9 +1701,7 @@ paa Navnets underfulde Klang.
 <head>
    <title>Ungdomsmelodi</title>
    <firstline>Paa Havens hvide Grus og hvide Birke stirred</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 61.</note>
-   </notes>
+   <source pages="61"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1808,9 +1727,7 @@ og nu staar Verden tom, thi ene jeg var til.''
 <head>
    <title>Efter Solnedgang</title>
    <firstline>Højt og flammet Aftenskjæret staar</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 62.</note>
-   </notes>
+   <source pages="62"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1836,9 +1753,7 @@ klare Klokke, viede, velsignede!
    <title>To Kvindesange</title>
    <subtitle>Efter Anne Lwowa</subtitle>
    <firstline>Det er ensomt, og sagtelig rindende</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 63-64.</note>
-   </notes>
+   <source pages="63-64"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1879,9 +1794,7 @@ flygter til Himlen min Kjærlighed.
    <title>Et Syn</title>
    <subtitle>(Efter Fyrst Schach Aziz)</subtitle>
    <firstline>Min Sjæl var syg, min Tanke lagt i Dvale</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 65-66.</note>
-   </notes>
+   <source pages="65-66"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1916,9 +1829,7 @@ det Liv, hvis Fred er ingen jordisk Drøm.
    <title>Folkevise</title>
    <subtitle>(Efter Taras Schewtjenko)</subtitle>
    <firstline>Ak, rind op, rind op</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 67.</note>
-   </notes>
+   <source pages="67"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1952,9 +1863,7 @@ knug mig ind ustandseligt mig kyssende!
    <toctitle><num>I.</num>Derude og herinde</toctitle>
    <linktitle>Derude og herinde</linktitle>
    <firstline>Derude Støj og Tummel og Støv</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 68.</note>
-   </notes>
+   <source pages="68"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1977,9 +1886,7 @@ af Syner for mig alene.
    <toctitle><num>II.</num>Ved Søbredden</toctitle>
    <linktitle>Ved Søbredden</linktitle>
    <firstline>Den straalende Stjernenat blinker</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 68-69.</note>
-   </notes>
+   <source pages="68-69"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2007,9 +1914,7 @@ min elskende Sjæl maa forgaa.
    <toctitle><num>III.</num>Tidlig Vaar</toctitle>
    <linktitle>Tidlig Vaar</linktitle>
    <firstline>Langs med Aaen de gulnede fjorgamle Rør</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 69-70.</note>
-   </notes>
+   <source pages="69-70"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2042,9 +1947,7 @@ hvor min Drøms Fantasiblomster gro.
    <toctitle><num>IV.</num>Eftersommer</toctitle>
    <linktitle>Eftersommer</linktitle>
    <firstline>Lidt vissent Løv er strøet paa Vejen, hvor vi træde</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 70-71.</note>
-   </notes>
+   <source pages="70-71"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2072,9 +1975,7 @@ endnu en Gang, en Gang endnu!
    <toctitle><num>V.</num>Der svæver et Smil omkring din Mund</toctitle>
    <linktitle>Der svæver et Smil omkring din Mund</linktitle>
    <firstline>Der svæver et Smil omkring din Mund</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 71.</note>
-   </notes>
+   <source pages="71"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2097,9 +1998,7 @@ har lagt mine Tanker øde.
    <toctitle><num>VI.</num>Den Sang, jeg tror bag din Læbe gjemt</toctitle>
    <linktitle>Den Sang, jeg tror bag din Læbe gjemt</linktitle>
    <firstline>Den Sang, jeg tror bag din Læbe gjemt</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 71-72.</note>
-   </notes>
+   <source pages="71-72"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2122,9 +2021,7 @@ for den, der hildes deri.
    <toctitle><num>VII.</num>Jeg veed i Skoven et lønligt Slot</toctitle>
    <linktitle>Jeg veed i Skoven et lønligt Slot</linktitle>
    <firstline>Jeg veed i Skoven et lønligt Slot</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 72-73.</note>
-   </notes>
+   <source pages="72-73"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2145,7 +2042,7 @@ og kysse Statuens Mund.
 
 ,,Vaagn op,'' de bede den ,,bryd din Døs,
 ,,vaagn op, der elsker dig En,
-,vaagn op!''
+,,vaagn op!''
              Men dødbleg, følelsesløs
 og stum staar Støtten af Sten.
 </body>
@@ -2158,9 +2055,7 @@ og stum staar Støtten af Sten.
 <head>
    <title>Nocturne</title>
    <firstline>Højt gjennem Ætheren sejler den sølvblanke Maane</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 74.</note>
-   </notes>
+   <source pages="74"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2186,9 +2081,7 @@ hen over Enge, hvor Duggen i Dæmringen skinner!
    <title>Gjenkjendt</title>
    <subtitle>(Motiv fra Ragusa)</subtitle>
    <firstline>Det klemter bag skumrende Pinier</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 75.</note>
-   </notes>
+   <source pages="75"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2222,9 +2115,7 @@ med Slør af Skam og af Skyld.
    <toctitle><num>I.</num>Tusmørkefantasi</toctitle>
    <linktitle>Tusmørkefantasi</linktitle>
    <firstline>Det var i den triste Tvelysstund</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 76-77.</note>
-   </notes>
+   <source pages="76-77"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2265,8 +2156,9 @@ og Skumringen bliver til Nat.
    <linktitle>Elverskud</linktitle>
    <firstline>Strømmende Sølv fra oven</firstline>
    <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 77.</note>
+      <note>Se folkevisen <xref poem="folke2001042101"/>.</note>
    </notes>
+   <source pages="77"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2289,9 +2181,7 @@ danset ihjel og dødt!
    <toctitle><num>III.</num>Dryade</toctitle>
    <linktitle>Dryade</linktitle>
    <firstline>Menneskers Ord falde tungt og tæt</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 78.</note>
-   </notes>
+   <source pages="78"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2316,9 +2206,7 @@ svulmende, dulmende, dragende
    <toctitle><num>IV.</num>Aftenrøde</toctitle>
    <linktitle>Aftenrøde</linktitle>
    <firstline>Far vel, min Rose, rød og prud</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 78-79.</note>
-   </notes>
+   <source pages="78-79"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2332,7 +2220,7 @@ min Krans ved Dag jeg bandt,
 men ingen Blomst var blid og bly
 som den, min Aften fandt.
 
- Lad nu kun falme Skov og Vang
+Lad nu kun falme Skov og Vang
 i Mulm, hvor Skyggen faldt;
 min Flammeblomst, min Solnedgang
 var bedst, var bedst af Alt.
@@ -2351,9 +2239,7 @@ min Rose rød og prud!
    <toctitle><num>V.</num>Bølgeskum</toctitle>
    <linktitle>Bølgeskum</linktitle>
    <firstline>Et Skjær blandt øde Vover</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 79-80.</note>
-   </notes>
+   <source pages="79-80"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2387,9 +2273,7 @@ med hvide Svanedun.
    <title>Under Isen</title>
    <subtitle>(Efter Gottfried Keller)</subtitle>
    <firstline>Intet Vingeslag i Mark og Skov</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 81.</note>
-   </notes>
+   <source pages="81"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2420,10 +2304,9 @@ aldrig Angsten, som i øjet laa.
    <title>Skyggekys</title>
    <subtitle>(Efter et Motiv af Heine)</subtitle>
    <firstline>Skyggekys paa Skyggemunde</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 82.</note>
-      <!-- TODO: Find Heines "Motiv" -->
-   </notes>
+   <!-- TODO: Find Heines "Motiv" -->
+   <source pages="82"/>
+   <keywords>heine</keywords>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2444,10 +2327,9 @@ deres øjne lukkes i.
    <title>Maaneflimren</title>
    <subtitle>(Sangtext efter Motiv af Heine)</subtitle>
    <firstline>Gaar jeg sent ved Aftentide</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 83.</note>
-      <!-- TODO: Find Heines "Motiv" -->
-   </notes>
+   <!-- TODO: Find Heines "Motiv" -->
+   <source pages="83"/>
+   <keywords>heine</keywords>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2481,9 +2363,7 @@ for mig Du, min Kjærlighed?
    <toctitle><num>I.</num>Paa min Bænk jeg sidder</toctitle>
    <linktitle>Paa min Bænk jeg sidder</linktitle>
    <firstline>Paa min Bænk jeg sidder</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 84-85.</note>
-   </notes>
+   <source pages="84-85"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2518,9 +2398,7 @@ ved det store Grantræ.
    <toctitle><num>II.</num>Hvor skal jeg Pige løbe bort fra Sorgen?</toctitle>
    <linktitle>Hvor skal jeg Pige løbe bort fra Sorgen?</linktitle>
    <firstline>Hvor skal jeg Pige løbe bort fra Sorgen?</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 85.</note>
-   </notes>
+   <source pages="85"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2551,9 +2429,7 @@ Nu har jeg faaet Pigen lagt i Jorden!
    <toctitle><num>III.</num>Sus ej saa højt, min Moder, Du grønne Skov</toctitle>
    <linktitle>Sus ej saa højt, min Moder, Du grønne Skov</linktitle>
    <firstline>Sus ej saa højt, min Moder, Du grønne Skov</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 86.</note>
-   </notes>
+   <source pages="86"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2589,9 +2465,7 @@ to lige Bjælker opad og en paa tværs.
    <toctitle><num>IV.</num>De tre Ulve</toctitle>
    <linktitle>De tre Ulve</linktitle>
    <firstline>Ak, min Stjerne, Du min Stjerne klar</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 87.</note>
-   </notes>
+   <source pages="87"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2631,9 +2505,7 @@ slaa Du ned paa Jord, knus min Svigermor!
    <toctitle><num>V.</num>Vifter, Vejr og vilde Vind</toctitle>
    <linktitle>Vifter, Vejr og vilde Vind</linktitle>
    <firstline>Vifter, Vejr og vilde Vind</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. .</note>
-   </notes>
+   <source pages="88"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2662,9 +2534,7 @@ har Intet mer tilbage.
    <toctitle><num>VI.</num>Ak, Du dybe Møllesluse</toctitle>
    <linktitle>Ak, Du dybe Møllesluse</linktitle>
    <firstline>Ak, Du dybe Møllesluse</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 89.</note>
-   </notes>
+   <source pages="89"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2693,9 +2563,7 @@ ingen Steder hjemme.
    <toctitle><num>VII.</num>Rusalka</toctitle>
    <linktitle>Rusalka</linktitle>
    <firstline>Hen over Glimmersand og skarpe Stene</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 90.</note>
-   </notes>
+   <source pages="90"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2719,9 +2587,7 @@ og spørger: ,,Sig, min Guldfisk, sig, min Søster,
 <head>
    <title>Gammel russisk Choral</title>
    <firstline>Du Zions Konge, Herre, vort Haab</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 91.</note>
-   </notes>
+   <source pages="91"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2753,10 +2619,8 @@ til Dig og lyse Helgen fromme!
    <title>Gammel Julehymne</title>
    <subtitle>(Geoffrey Chaucer)</subtitle>
    <firstline>Du Mø og Moder, Datter af din Søn</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 92-93.</note>
-      <!-- TODO: Find original -->
-   </notes>
+   <!-- TODO: Find original -->
+   <source pages="92-93"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2790,9 +2654,7 @@ jeg kvæde Christ og Dig en Julesang.
 <head>
    <title>Folkevise</title>
    <firstline>Jeg plukker tre frosne Kviste</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 94.</note>
-   </notes>
+   <source pages="94"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2817,9 +2679,7 @@ ham giver jeg nu min Tro.
 <head>
    <title>Uforstyrret</title>
    <firstline>Der staar et gammelt Kors af Sten</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 95.</note>
-   </notes>
+   <source pages="95"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2850,9 +2710,7 @@ for hele Verdens Herlighed
    <title>Skytsenglen</title>
    <subtitle>(Efter det Polske)</subtitle>
    <firstline>Engel fra Edens Have</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 96-97.</note>
-   </notes>
+   <source pages="96-97"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2898,9 +2756,7 @@ sonende Kjærlighed!
    <toctitle><num>I.</num>Nat paa Steppen</toctitle>
    <linktitle>Nat paa Steppen</linktitle>
    <firstline>Dybe Nat, som Jordens Hvile værner</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 98-99.</note>
-   </notes>
+   <source pages="98-99"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2938,9 +2794,7 @@ hvide, bløde Blomster drysse ned.
    <toctitle><num>II.</num>Guldfisken synger i Bækken</toctitle>
    <linktitle>Guldfisken synger i Bækken</linktitle>
    <firstline>Kom, Kjærlighed, jeg glædes ved</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 99-100.</note>
-   </notes>
+   <source pages="99-100"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2975,9 +2829,9 @@ og Vandet friskt og frit!
    <subtitle>(Efter Alfred Tennyson)</subtitle>
    <firstline>To Søstre var vi af gammel Rod</firstline>
    <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 101-102.</note>
-      <note>Oversættelse af Tennyson: <xref poem="tennyson2017101901"/>.</note>
+      <note>Oversættelse af Tennyson: <xref type="translation" poem="tennyson2017101901"/>.</note>
    </notes>
+   <source pages="101-102"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3031,9 +2885,7 @@ og Vandet friskt og frit!
    <toctitle><num>I.</num>Alt mangen Gang i Skovens Indre</toctitle>
    <linktitle>Alt mangen Gang i Skovens Indre</linktitle>
    <firstline>Alt mangen Gang i Skovens Indre</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 103.</note>
-   </notes>
+   <source pages="103"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3066,9 +2918,7 @@ jeg selv har skabt af Stemmens Klang?
    <toctitle><num>II.</num>Langt inde mellem Fyr og El</toctitle>
    <linktitle>Langt inde mellem Fyr og El</linktitle>
    <firstline>Langt inde mellem Fyr og El</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 104-105.</note>
-   </notes>
+   <source pages="104-105"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3110,9 +2960,7 @@ er selv jeg tavs og ikke tryg.
    <toctitle><num>III.</num>Himmelhøjt sig Bølgen vælter</toctitle>
    <linktitle>Himmelhøjt sig Bølgen vælter</linktitle>
    <firstline>Himmelhøjt sig Bølgen vælter</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 105.</note>
-   </notes>
+   <source pages="105"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3143,9 +2991,7 @@ op til Dig og hente Dig.
    <toctitle><num>I.</num>Der grønnes en Grav paa lønlig Sti</toctitle>
    <linktitle>Der grønnes en Grav paa lønlig Sti</linktitle>
    <firstline>Der grønnes en Grav paa lønlig Sti</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. .</note>
-   </notes>
+   <source pages="106"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3173,9 +3019,7 @@ før vi turde frem for Guds Aasyn staa.
    <toctitle><num>II.</num>Din Strid er endt, men jeg har min at friste</toctitle>
    <linktitle>Din Strid er endt, men jeg har min at friste</linktitle>
    <firstline>Din Strid er endt, men jeg har min at friste</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 107.</note>
-   </notes>
+   <source pages="107"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3203,9 +3047,7 @@ derhen, hvor Du nu er, derhen, derhen!
    <toctitle><num>III.</num>Blændværk</toctitle>
    <linktitle>Blændværk</linktitle>
    <firstline>Luk Dig, Du dragende, stirrende</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 107-107.</note>
-   </notes>
+   <source pages="107-107"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3232,9 +3074,7 @@ Mulm, hvor i Lag over Lag
    <toctitle><num>IV.</num>Vær hilset mildt igjen, ung Varja, min Veninde</toctitle>
    <linktitle>Vær hilset mildt igjen, ung Varja, min Veninde</linktitle>
    <firstline>Vær hilset mildt igjen, ung Varja, min Veninde</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 108.</note>
-   </notes>
+   <source pages="108"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3262,9 +3102,7 @@ forbarm af Naade Dig, forbarm!
    <toctitle><num>V.</num>Gralskonge</toctitle>
    <linktitle>Gralskonge</linktitle>
    <firstline>Hellige Christ i Himmelens Sal</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 109.</note>
-   </notes>
+   <source pages="109"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3287,9 +3125,7 @@ Du, som vor Trang til at se Dig har skabt!
 <head>
    <title>Fiat voluntas tua!</title>
    <firstline>Jeg drømte om en hellig, himmelsk Lund</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 110.</note>
-   </notes>
+   <source pages="110"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3319,9 +3155,7 @@ kun din, alene din, alene din!
 <head>
    <title>Qvia tu solus Dominus</title>
    <firstline>Hil Dig, Gud, som lod Dig føde</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 111-112.</note>
-   </notes>
+   <source pages="111-112"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3360,9 +3194,7 @@ i din Favn — thi Du er Gud!
    <title>Legende</title>
    <subtitle>(Russisk Motiv)</subtitle>
    <firstline>Barn Jesus lod en Have gro</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 113.</note>
-   </notes>
+   <source pages="113"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3393,9 +3225,7 @@ ham levnet blev af Israels Børn.
    <title>Ave Maris Stella</title>
    <subtitle>(Gammel latinsk Psalme)</subtitle>
    <firstline>Hil Dig, Havets Stjerne</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 114-115.</note>
-   </notes>
+   <source pages="114-115"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3427,9 +3257,7 @@ Gud og Frelser!
 <head>
    <title>Bøn</title>
    <firstline>Før min Sjæl for Solskin lukkes</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 116.</note>
-   </notes>
+   <source pages="116"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3449,9 +3277,7 @@ som Sanct Georg over Dragen!
 <head>
    <title>Ave verum corpus</title>
    <firstline>Hil Dig, Herrens Legem, baaret</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 117.</note>
-   </notes>
+   <source pages="117"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3475,10 +3301,8 @@ ind i Himlens Herlighed.
 <head>
    <title>Gralsridderen</title>
    <firstline>Mit Sværdslag kløver Staal paa tværs</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 118-119.</note>
-      <!-- Håndskrevet note siger vistnok "[Sar Marodack-Peladan]" -->
-   </notes>
+   <!-- Håndskrevet note siger vistnok "[Sar Marodack-Peladan]" -->
+   <source pages="118-119"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3513,9 +3337,7 @@ Hans gyldne Kalk, Sanct Gral!''
 <head>
    <title>Sanct Gral</title>
    <firstline>Lov, Pris og evig Ære være Gud</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, p. 120.</note>
-   </notes>
+   <source pages="120"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3545,9 +3367,9 @@ lad frelst mig dog tilsidst dit Aasyn se!
    <subtitle>(Efter Alfred Tennyson)</subtitle>
    <firstline>Den hvide Sne paa Taarnets Top</firstline>
    <notes>
-      <note>Teksten følger førsteudgaven af <i>Gjennem farvet Glas</i>, Gyldendalske Boghandels Forlag, Kjøbenhavn, 1894, pp. 121-122.</note>
-      <note>Oversættelse af Tennyson: <xref poem="tennyson2017101902"/>.</note>
+      <note>Oversættelse af Tennyson: <xref type="translation" poem="tennyson2017101902"/>.</note>
    </notes>
+   <source pages="121-122"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

@@ -2,19 +2,19 @@
 
 import React from 'react';
 
-export default class SidebarSplit extends React.Component {
-  props: {
-    sidebar: React$Element<*> | string | Array<React$Element<*>> | null,
-    children?: *,
-    sidebarOnTopWhenSplit?: boolean,
-  };
+type SidebarSplitProps = {
+  sidebar: React$Element<*> | string | Array<React$Element<*>> | null,
+  children?: *,
+  sidebarOnTopWhenSplit?: boolean,
+};
+export default class SidebarSplit extends React.Component<SidebarSplitProps> {
   render() {
     const { sidebar, sidebarOnTopWhenSplit } = this.props;
     let className =
       sidebar == null || sidebar.length == 0
         ? 'sidebar-spl empty'
         : 'sidebar-spl';
-    className += sidebarOnTopWhenSplit ? ' reverse-split' : '';
+    className += sidebarOnTopWhenSplit != null ? ' reverse-split' : '';
     const renderedSidebar = <aside>{sidebar}</aside>;
     return (
       <div className={className}>

@@ -2,10 +2,7 @@
 
 import React from 'react';
 
-export default class SplitWhenSmall extends React.Component {
-  props: {
-    children?: *,
-  };
+export default class SplitWhenSmall extends React.Component<*> {
   render() {
     return (
       <div className="horizontal-on-small">
