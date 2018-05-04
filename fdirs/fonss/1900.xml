@@ -1877,7 +1877,7 @@ Vi er fælles om Riget som og om vort Væld,
     <title>Det danske Landbrug</title>
     <firstline>I fordums Old, da Egeskovens Tykning</firstline>
     <source pages="78-80"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 I fordums Old, da Egeskovens Tykning
@@ -1937,7 +1937,7 @@ for det, Du gav, og det, Du vil os give.
       han styrke os at værne
       og virke for vor Mo’r.
 Drot og Folk, Store, Smaa i Fællig —
-<w>Danmarks</w> Sag være Alle hellig
+<w>Danmarks</w> Sag være <w>Alle</w> hellig
           — Danmarks Sag!
 </body>
 </poem>
@@ -1947,7 +1947,7 @@ Drot og Folk, Store, Smaa i Fællig —
     <title>Tilegnelse</title>
     <firstline>Som et Hav, der roligt hviler</firstline>
     <source pages="81"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 Som et Hav, der roligt hviler,
@@ -1967,7 +1967,7 @@ vil de i Din Sjæl sig gyde!
     <title>Stjerneskud</title>
     <firstline>Husker Du en Sommeraften</firstline>
     <source pages="82-84"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 Husker Du en Sommeraften,
@@ -2037,7 +2037,7 @@ der en Regn af Stjerneskud.
     <title>Spor</title>
     <firstline>Et Dryss af nattefalden Sne</firstline>
     <source pages="85"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 Et Dryss af nattefalden Sne
@@ -2057,7 +2057,7 @@ hos den det dybe Spor af <w>min?</w>
     <title>Elvervise</title>
     <firstline>En Drøm jeg havde ved Midienat</firstline>
     <source pages="86-87"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 En Drøm jeg havde ved Midienat,
@@ -2107,7 +2107,7 @@ hvor sælsomt haver jeg drømt!
     <title>Afsked</title>
     <firstline>Bladfalds blinkende Dukater</firstline>
     <source pages="88-91"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 Bladfalds blinkende Dukater
@@ -2178,7 +2178,7 @@ Elskov selv har ingen Alder;
 er et Dække kun, der luner
 over Hjertets skjulte Kime,
 hvoraf Lykken, dobbelt frodig,
-spire vil i Yaarens Time!
+spire vil i Vaarens Time!
 </body>
 </poem>
 
@@ -2187,7 +2187,7 @@ spire vil i Yaarens Time!
     <title>Forbi</title>
     <firstline>Mindes Du hin Kvæld i Høsten</firstline>
     <source pages="92-93"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 Mindes Du hin Kvæld i Høsten,
@@ -2217,12 +2217,11 @@ arm og ussel som en Tigger — -
     <title>Fredericia-Slaget</title>
     <subtitle>(Til Sonnes Billede paa Raadhuset i Fredericia)</subtitle>
     <firstline>Saa sorte vare de Skyer</firstline>
+    <!-- TODO: Find maleriet -->
     <source pages="94-99"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
-<!-- TODO: Find maleriet -->
-
 Saa sorte vare de Skyer,
 paa Danmarks Himmel steg:
 Bud om Vanheld og Bud om Tab,
@@ -2307,7 +2306,7 @@ Og Raabet besvares fra Vejen i Nord:
 Der kommer de danske »Jenser«!
 
 I Storm det gaar over Grøft og Hegn,
-de ænser ej Bly eller Jæm.
+de ænser ej Bly eller Jærn.
 Fjenden har pustet og bider sig fast
 bag Artilleriparkens Værn.
 Men »Jens« gaar paa efter Jydernes Skik,
@@ -2334,7 +2333,7 @@ Er Noget for godt til de Tapre vel,
 som kommer fra Sejersstævnet!
 
 Og Solen stiger paa Himlens Blaa
-og lyser om Bælt og Bugt — —
+og lyser om Bælt og Bugt — — -
 Du dejlige Sjette-Julisol,
 Din Glans har ej Tiden end slukt!
 Og trues vi atter, og mørknes vor Hu
@@ -2349,7 +2348,7 @@ og lys os til Sejr paa ny!
     <title>Lundingsstøtten</title>
     <firstline>Store dunkle Frasagn melde</firstline>
     <source pages="100-103"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 I.
@@ -2438,7 +2437,7 @@ heller Liv end Ære miste,
     <subtitle>(Til min Hustru)</subtitle>
     <firstline>Hvor Løvet kuples over Voldens Stier</firstline>
     <source pages="104-107"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 Hvor Løvet kuples over Voldens Stier,
@@ -2488,12 +2487,12 @@ holdt lille Laura sig dog lige tapper.
     til Orde tog <w>Apollo</w>,
     den høje Sangens Gud:
 »Kære Børn! Lader mig kun raade.
-Ene jeg Kvindehjertets Gaade
+Ene <w>jeg</w> Kvindehjertets Gaade
         løse kan!«
 
 Og tryg som den, der rammer, hvor han sigter,
 til hendes Straf udsender han en <w>Digter</w> —
-    en Digter af de store,
+    en Digter af de <w>store</w>,
     om ej ved sine Vers,
     saa dog fordi han maaler
     af Tommer godt halvfjerds.
@@ -2528,7 +2527,7 @@ Lykken bo, hvor Du er til Huse,
     <title>Min lille Pige</title>
     <firstline>Men Musse! Hvad gaar der dog af Dig, Du Smaa</firstline>
     <source pages="108-112"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 <nonum><center>I.</center></nonum>
@@ -2550,7 +2549,7 @@ Til Skrivetøj har hun en Tændstikæske
 — hun veed, til at skrive behøves der Blæk -
 og dypper nu Pennen stadig væk
 i den — heldigvis — imaginære Vædske,
-imens hun bemaier paa Kryds og tværs
+imens hun bemaler paa Kryds og tværs
 med Streger og Kruseduller sære
 Convoluttens ubeskrevne Revers.
 
@@ -2597,6 +2596,7 @@ og huske, Du er i Vorherres Hus.
 
 »Maa man synge »Ride Ranke« i Kirken?
 For det er den eneste Salme, jeg kan.«
+
 Nej, Musse; det gaar skam ikke an,
 — den bruger de vistnok ikke derhenne.
 Men der er jo andre, Du maa kende —
@@ -2643,7 +2643,7 @@ som Englene lider at høre.
     <title>Paa Havet</title>
     <firstline>I vort Kølvands brede Stribe</firstline>
     <source pages="113-114"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 I vort Kølvands brede Stribe
@@ -2688,11 +2688,11 @@ briste maa i Dagens Straaler.
     <title>Nye Verdener</title>
     <firstline>Paa den silde Høstnats sortblaa Bue</firstline>
     <source pages="115-116"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 Paa den silde Høstnats sortblaa Bue
-dæmrer bag de klare Stjæmer — saare
+dæmrer bag de klare Stjærner — saare
 saare fjernt i aldrig maalte Dybder —
 Mælkevejens matte Sølveraare;
 
@@ -2718,7 +2718,7 @@ at de nye Verdenstanker slumre?
     <title>Legende</title>
     <firstline>Endt var Herrens Straffetale</firstline>
     <source pages="117-120"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 Endt var Herrens Straffetale,
@@ -2798,7 +2798,7 @@ bringe Trøst i Hytter trange -
     <title>Pleiaderne</title>
     <firstline>Histude, lavt over Lindens Top</firstline>
     <source pages="121-122"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 Histude, lavt over Lindens Top,
@@ -2838,7 +2838,7 @@ som flyr for Gryet i Østen!
     <title>Champignoner</title>
     <firstline>Nu staar Bøgen med Bronceløv</firstline>
     <source pages="123-126"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 Nu staar Bøgen med Bronceløv,
@@ -2920,13 +2920,13 @@ Velan! saa følger vi samme Kald
     <title>Stilhed</title>
     <firstline>Det aabner sig deroppe højt over Mark og Skov</firstline>
     <source pages="127"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 Det aabner sig deroppe højt over Mark og Skov,
 den store Stilheds Rige med de lysende Stjærner.
 <w>Her</w> stiger Kval og Uro fra feberhede Hjærner,
-men hist er Fred. Dèr hersker kun den evige Lov.
+men <w>hist</w> er Fred. Dèr hersker kun den evige Lov.
 
 — O, stakkels syge Hjærne, som aldrig finder Rist,
 som jager efter Lykken i rastløs Tvivl og Tænken,
@@ -2936,7 +2936,7 @@ før Dødens Mulm har slukket Din sidste Tankegnist!
 Ak! Det er ikke Frihed, men Fred, vi har behov.
 Den vindes ej ved Grublen af febersyge Hjærner;
 den findes kun deroppe blandt de himmelske Stjærner,.
-hvor <w>Lidenskab</w> ej kendes, men kun en evig Lov.
+hvor <w>Lidenskab</w> ej kendes, men kun en evig <w>Lov</w>.
 </body>
 </poem>
 
@@ -2945,7 +2945,7 @@ hvor <w>Lidenskab</w> ej kendes, men kun en evig Lov.
     <title>Havild</title>
     <firstline>Jord og Himmel, Skov og Skrænter</firstline>
     <source pages="128-130"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 Jord og Himmel, Skov og Skrænter -
@@ -3000,7 +3000,7 @@ Vaadesang om Dybets Alter?
     <title>Valfart</title>
     <firstline>Og se! Der stod en Fremmed i min Stue</firstline>
     <source pages="131-135"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
 Og se! Der stod en Fremmed i min Stue.
