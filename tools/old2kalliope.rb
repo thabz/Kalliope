@@ -23,6 +23,8 @@ end
 @notes = []
 @keywords = nil;
 @page = nil;
+@written = nil;
+@performed = nil;
 @type = 'poem'
 
 def printPoem()
@@ -52,14 +54,25 @@ def printPoem()
     puts "    </subtitle>"
   end
   puts "    <firstline>#{@firstline}</firstline>"
-  if (@source && @page) || @notes.length > 0
-    pp = @page.include?('-') ? 'pp' : 'p';
+  if @notes.length > 0
     puts "    <notes>"
     @notes.each { |noteline|
       puts "        <note>#{noteline}</note>"
     }
-    puts "        <note>#{@source.gsub(/[\. ]*$/,'')}, #{pp}. #{@page}.</note>"
     puts "    </notes>"
+  end
+  if @source and @page
+    puts "    <source pages=\"#{@page}\"/>"
+  end
+  if @written or @performed
+    puts "    <dates>"
+    if @written
+      puts "        <written>#{@written}</written>"
+    end
+    if @performed
+      puts "        <performed>#{@performed}</performed>"
+    end
+    puts "    </dates>"
   end
   if @keywords
     puts "    <keywords>#{@keywords}</keywords>"
@@ -83,6 +96,8 @@ def printPoem()
   @notes = []
   @keywords = nil
   @page = nil
+  @written = nil
+  @performed = nil
   @type = 'poem'
   @poemcount += 1
 end
@@ -104,8 +119,8 @@ end
 
 File.readlines(ARGV[0]).each do |line|
   line_before = line
-  while line =~ /^\t/
-      line = line.gsub(/^\t/,'    ')
+  while line =~ /\t/
+      line = line.gsub(/\t/,'    ')
   end
   line = line.rstrip.gsub(/_(.+?)_/,'<i>\1</i>')
   if (line =~ /_/)
@@ -119,14 +134,23 @@ File.readlines(ARGV[0]).each do |line|
   m = /{(.*?):(.*)}/.match(line)
   if (!m.nil?)
       l = m[2]
+      if m[1].include? "b"
+          l = "<b>#{l}</b>"
+      end
       if m[1].include? "i"
           l = "<i>#{l}</i>"
+      end
+      if m[1].include? "w"
+          l = "<w>#{l}</w>"
       end
       if m[1].include? "c"
           l = "<center>#{l}</center>"
       end
       if m[1].include? "r"
           l = "<right>#{l}</right>"
+      end
+      if m[1].include? "p"
+          l = "<wrap>#{l}</wrap>"
       end
       if m[1].include? "s"
           l = "<small>#{l}</small>"
@@ -136,6 +160,8 @@ File.readlines(ARGV[0]).each do |line|
   end
   if @state == 'NONE' and line =~ /^KILDE:/
       @source = line[6..-1].strip
+      puts "<source facsimile=\"XXXXXX_color.pdf\" facsimile-pages-offset=\"YYY\">#{@source}</source>"
+      puts ""
   end
   if @state == 'NONE' and line =~ /^DIGTER:/
       @poetid = line[7..-1].strip
@@ -186,6 +212,10 @@ File.readlines(ARGV[0]).each do |line|
       @notes.push(line[5..-1].strip)
     elsif line.start_with?("SIDE:")
       @page = line[5..-1].strip
+    elsif line.start_with?("SKREVET:")
+      @written = line[8..-1].strip
+    elsif line.start_with?("FREMFØRT:")
+      @written = line[9..-1].strip
     elsif line.start_with?("TYPE:")
       @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
     elsif line =~ /^[A-Z]*:/

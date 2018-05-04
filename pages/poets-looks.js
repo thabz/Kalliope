@@ -23,6 +23,7 @@ import type {
   Poet,
   SortReturn,
   SectionForRendering,
+  PictureItem,
 } from './helpers/types.js';
 
 type GroupBy = 'name' | 'year';
@@ -47,30 +48,24 @@ function joinWithCommaAndOr(
   return result;
 }
 
-class CountryPicker extends React.Component {
-  props: {
-    lang: Lang,
-    selectedCountry: Country,
-    selectedGroupBy: GroupBy,
-    style: any,
-  };
+type CountryPickerProps = {
+  lang: Lang,
+  selectedCountry: Country,
+  selectedGroupBy: GroupBy,
+  style: any,
+};
+class CountryPicker extends React.Component<CountryPickerProps> {
   render() {
     const { lang, selectedCountry, selectedGroupBy, style } = this.props;
     const items = CommonData.countries.map(country => {
       const url = Links.poetsURL(lang, selectedGroupBy, country.code);
       const adj = country.adjective[lang] + ' ';
       if (country.code === selectedCountry) {
-        return (
-          <b key={country.code}>
-            {adj}
-          </b>
-        );
+        return <b key={country.code}>{adj}</b>;
       } else {
         return (
           <Link route={url} key={country.code}>
-            <a>
-              {adj}
-            </a>
+            <a>{adj}</a>
           </Link>
         );
       }
@@ -78,19 +73,17 @@ class CountryPicker extends React.Component {
     const joinedItems = joinWithCommaAndOr(items, 'eller');
     return (
       <div style={style}>
-        <div>
-          Skift mellem {joinedItems} digtere.
-        </div>
+        <div>Skift mellem {joinedItems} digtere.</div>
       </div>
     );
   }
 }
 
-class MissingPortrait extends React.Component {
-  props: {
-    poet: Poet,
-    lang: Lang,
-  };
+type MissingPortraitProps = {
+  poet: Poet,
+  lang: Lang,
+};
+class MissingPortrait extends React.Component<MissingPortraitProps> {
   render() {
     const { lang, poet } = this.props;
     const style = {
@@ -111,7 +104,13 @@ class MissingPortrait extends React.Component {
   }
 }
 
-export default class extends React.Component {
+type PoetLooksProps = {
+  lang: Lang,
+  country: Country,
+  poets: Array<Poet>,
+  groupBy: GroupBy,
+};
+export default class extends React.Component<PoetLooksProps> {
   static async getInitialProps({
     query: { lang, country, groupBy },
   }: {
@@ -122,13 +121,6 @@ export default class extends React.Component {
     const poets: Array<Poet> = await res.json();
     return { lang, country, groupBy, poets };
   }
-
-  props: {
-    lang: Lang,
-    country: Country,
-    poets: Array<Poet>,
-    groupBy: GroupBy,
-  };
 
   render() {
     const { lang, country, poets, groupBy } = this.props;
@@ -155,6 +147,7 @@ export default class extends React.Component {
       if (poet.type === 'collection') {
         return null;
       }
+      const url = Links.bioURL(lang, poet.id);
       let item = null;
       if (poet.portrait != null) {
         const name = `<a href="/${lang}/bio/${poet.id}">${poetNameString(
@@ -162,12 +155,20 @@ export default class extends React.Component {
           false,
           true
         )}</a>`;
-        const picture = {
+        const picture: PictureItem = {
           src: poet.portrait,
           content_html: [[name, { html: true }]],
+          content_lang: 'da',
         };
         const srcPrefix = `/static/images/${poet.id}`;
-        item = <Picture picture={picture} lang={lang} srcPrefix={srcPrefix} />;
+        item = (
+          <Picture
+            pictures={[picture]}
+            lang={lang}
+            srcPrefix={srcPrefix}
+            contentLang={'da'}
+          />
+        );
       } else {
         item = (
           <Link key={poet.id} route={url}>
@@ -177,7 +178,6 @@ export default class extends React.Component {
           </Link>
         );
       }
-      const url = Links.bioURL(lang, poet.id);
       const q = poetNameString(poet).replace(/ /g, '+');
       //const searchURL = `https://duckduckgo.com/?q=${q}&t=osx&ia=images&iax=1`;
       const searchURL = `https://www.google.dk/search?tbm=isch&q=${q}&tbs=imgo:1&gws_rd=c`;
@@ -192,6 +192,7 @@ export default class extends React.Component {
     });
 
     let pageTitle = null;
+    const requestPath = `/${lang}/poets-looks}`;
 
     if (country !== 'dk') {
       const cn = CommonData.countries.filter(c => {
@@ -208,16 +209,14 @@ export default class extends React.Component {
           <Nav lang={lang} title={pageTitle} />
           <Heading title={pageTitle} />
           <Tabs items={tabs} selected="looks" country={country} lang={lang} />
-          <div className="picture-container">
-            {renderedPortraits}
-          </div>
+          <div className="picture-container">{renderedPortraits}</div>
           <CountryPicker
             style={{ marginTop: '40px' }}
             lang={lang}
             selectedCountry={country}
             selectedGroupBy={groupBy}
           />
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
           <style jsx>{`
             .picture-container {
               display: flex;
