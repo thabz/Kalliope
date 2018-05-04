@@ -5,11 +5,12 @@
    <title>Dæmring</title>
    <year>1852</year>
    <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852.</note>
+       <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852.</note>
    </notes>
    <pictures>
        <picture type="titlepage" src="1852-p1.jpg">Titelbladet til <i>Dæmring</i> (1805). ,,Dæmring // Lyriske Digte / af / Chr. K. F. Molbech. // Kiøbenhavn. / Forlagt af C. C. Lose &amp; Delbanco. / Thieles Bogtrykkeri. / 1852.''</picture>
    </pictures>
+   <source facsimile="11530807896A_color" facsimile-pages-num="190" facsimile-pages-offset="12"> Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852.</source>
    <quality>korrektur1,kilde,side</quality>
 </workhead>
 <workbody>
@@ -18,9 +19,7 @@
 <head>
    <title>Til en Ven</title>
    <firstline>Hvad er vort Liv? En Skov, af Torne flettet</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852.</note>
-   </notes>
+   <source pages="iii" facsimile-pages="7"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
@@ -49,9 +48,7 @@ Viist Dig et Glimt af Stiernerne, de blide.
 <head>
    <title>Dæmring</title>
    <firstline>Med Stav i Haand, i Morgendæmringsstunden</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 1-2.</note>
-   </notes>
+   <source pages="1-2"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -115,9 +112,7 @@ Den føre nu til Sorrig eller Glæde.
 <head>
    <title>Maalet</title>
    <firstline>Min Genius, hvor gaaer din Vei?</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 3-4.</note>
-   </notes>
+   <source pages="3-4"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -154,9 +149,7 @@ Gik Veien førend du.
 <head>
    <title>Sang ved et Guldbryllup</title>
    <firstline>I, som har vandret sammen</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 5-6.</note>
-   </notes>
+   <source pages="5-6"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -212,9 +205,7 @@ Med dybe Stierneblik!
    <title>Der er en Gud</title>
    <subtitle>1848</subtitle>
    <firstline>Der er en Gud, som over Danmark vaager!</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 7-10.</note>
-   </notes>
+   <source pages="7-10"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -324,9 +315,10 @@ Der er en Gud, som over Danmark vaager.
    <title>Mindets Bæger</title>
    <subtitle>Den 13de Januar 1849</subtitle>
    <firstline>Vender Tanken en Stund fra det festlige Lag</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 11-13.</note>
-   </notes>
+   <source pages="11-13"/>
+   <dates>
+       <written>1849-01-13</written>
+   </dates>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -401,9 +393,7 @@ Nu er Mindernes Drapa forbi.
 <head>
    <title>Oehlenschläger</title>
    <firstline>Høibarmet Danmarks Gyldensnekke glider</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 14-18.</note>
-   </notes>
+   <source pages="14-18"/>
    <keywords>oehlenschlaeger</keywords>
    <quality>korrektur1,kilde,side</quality>
 </head>
@@ -537,9 +527,7 @@ Høibarmet glider Danmarks Gyldensnekke!
    <title>Naturaanderne</title>
    <subtitle>Ved H. C. Ørsteds Død</subtitle>
    <firstline>I Jordens Midtpunkt dybest inde</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 19-27.</note>
-   </notes>
+   <source pages="19-27"/>
    <keywords>oersted</keywords>
    <quality>korrektur1,kilde,side</quality>
 </head>
@@ -783,10 +771,8 @@ Saa er det Verdens sidste Dag.
 <poem id="molbech2017102008">
 <head>
    <title>General Rye</title>
-   <firstline></firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 28-32.</note>
-   </notes>
+   <firstline>Det mylred over Kongeaa</firstline>
+   <source pages="28-32"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -913,9 +899,7 @@ Sprang Olaf Rye af Staalet.
 <head>
    <title>De to Soldater</title>
    <firstline>Tilbage! lød Trompetens Skrald</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 33-39.</note>
-   </notes>
+   <source pages="33-39"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1096,9 +1080,7 @@ Og holdt den Andens Haand.
 <head>
    <title>Den Forfulgte</title>
    <firstline>Rask igiennem dunkle Lunde</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 40-44.</note>
-   </notes>
+   <source pages="40-44"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1225,9 +1207,7 @@ Hesten veiløs giennem Land.
 <head>
    <title>Fangen</title>
    <firstline>Det var en Vinternat; hvorhen jeg saae</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 45-49.</note>
-   </notes>
+   <source pages="45-49"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1355,30 +1335,28 @@ Afsted, afsted! naar faaer min Jammer Ende?
    <toctitle><num>I.</num>Der var en Tid, nu er den længst forsvunden</toctitle>
    <firstline>Der var en Tid, nu er den længst forsvunden</firstline>
    <indextitle>Der var en Tid, nu er den længst forsvunden</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 50.</note>
-   </notes>
+   <source pages="50"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Der var en Tid, nu er den længst forsvunden,
-Da Elskov sad i Siælens stille Kammer,
-Og sysled, som en Brud ved Lampens Flammer,
-Med at faae Sangens Bryllupsklædning spunden.
+    Da Elskov sad i Siælens stille Kammer,
+    Og sysled, som en Brud ved Lampens Flammer,
+    Med at faae Sangens Bryllupsklædning spunden.
 
 Der var en Tid, nu er den længst udrunden,
-Da i min Siæl der blev stor Sorg og Jammer,
-Som i et Huus, hvis Datter Døden rammer,
-Da var det, disse Sanges Traad blev tvunden.
+    Da i min Siæl der blev stor Sorg og Jammer,
+    Som i et Huus, hvis Datter Døden rammer,
+    Da var det, disse Sanges Traad blev tvunden.
 
 Da væved jeg af dem, med mangen Taare,
-Imens min Elskov lagdes bleg paa Baare,
-For Brudedragten, ak! et Dødningklæde.
+    Imens min Elskov lagdes bleg paa Baare,
+    For Brudedragten, ak! et Dødningklæde.
 
 Men nu er det saa længe, længe siden,
-At der paa Graven Blomster groer, og Tiden
-Har til mit Øie sagt: hold op at græde.
+    At der paa Graven Blomster groer, og Tiden
+    Har til mit Øie sagt: hold op at græde.
 </body>
 </poem>
 
@@ -1388,30 +1366,28 @@ Har til mit Øie sagt: hold op at græde.
    <toctitle><num>II.</num>I Syden saae jeg Mænd og Kvinder bære</toctitle>
    <firstline>I Syden saae jeg Mænd og Kvinder bære</firstline>
    <indextitle>I Syden saae jeg Mænd og Kvinder bære</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 51.</note>
-   </notes>
+   <source pages="51"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 I Syden saae jeg Mænd og Kvinder bære
-Udsprungne Blomster giennem Kirkens Gange,
-Og lægge dem med Bøn og fromme Sange
-Paa Alterdisken til Guds Moders Ære;
+    Udsprungne Blomster giennem Kirkens Gange,
+    Og lægge dem med Bøn og fromme Sange
+    Paa Alterdisken til Guds Moders Ære;
 
 Og knæle ned og bedet Naadig være
-Du os, Velsignede! viis vore bange,
-Vildfarne Siæle Himlens Vei, den trange!
-Da tænkte jeg paa dig, min Hiertenskiære!
+    Du os, Velsignede! viis vore bange,
+    Vildfarne Siæle Himlens Vei, den trange!
+    Da tænkte jeg paa dig, min Hiertenskiære!
 
 Mit Liv er jo en dunkel Kirkebue,
-Hvor kun dit Billed lyser i det Fierne
-Høit over Altret, som en enlig Stierne.
+    Hvor kun dit Billed lyser i det Fierne
+    Høit over Altret, som en enlig Stierne.
 
 Madonna! disse Blomster af mit Hierte
-Jeg bringer dig; led du i Fryd og Smerte
-Min Siæl, til hist jeg faaer dig selv at skue!
+    Jeg bringer dig; led du i Fryd og Smerte
+    Min Siæl, til hist jeg faaer dig selv at skue!
 </body>
 </poem>
 
@@ -1421,30 +1397,28 @@ Min Siæl, til hist jeg faaer dig selv at skue!
    <toctitle><num>III.</num>I Skoven boer hun, Sang af Nattergale</toctitle>
    <firstline>I Skoven boer hun, Sang af Nattergale</firstline>
    <indextitle>I Skoven boer hun, Sang af Nattergale</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 52.</note>
-   </notes>
+   <source pages="52"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 I Skoven boer hun, Sang af Nattergale
-En Gienklang er af hendes Røst, den bløde,
-Og hendes Blik er Stiernerne, som gløde,
-Og hendes Trin er Hiortens Gang i Dale.
+    En Gienklang er af hendes Røst, den bløde,
+    Og hendes Blik er Stiernerne, som gløde,
+    Og hendes Trin er Hiortens Gang i Dale.
 
 Hun sidder i mit Kammer, Skialdens Tale
-Er hendes Siæl, der gaaer min Siæl imøde,
-Og hendes Flammekys, de længselsøde,
-Er Tankelyn, der vække mig af Dvale.
+    Er hendes Siæl, der gaaer min Siæl imøde,
+    Og hendes Flammekys, de længselsøde,
+    Er Tankelyn, der vække mig af Dvale.
 
 Hun tørrer Graaden bort af mine Kinder,
-Og svaler mig naar Tornekrandsen faarer,
-Hun svæver foran mig, høit over Vrimlen;
+    Og svaler mig naar Tornekrandsen faarer,
+    Hun svæver foran mig, høit over Vrimlen;
 
 Men Vil jeg gribe hende, bort hun svinder,
-Og siger, mens hun smiler giennem Taarer:
-Naar du er død, vi mødes skal i Himlen.
+    Og siger, mens hun smiler giennem Taarer:
+    Naar du er død, vi mødes skal i Himlen.
 </body>
 </poem>
 
@@ -1454,30 +1428,28 @@ Naar du er død, vi mødes skal i Himlen.
    <toctitle><num>IV.</num>Fra Veiens Bred jeg skued Lykken drage</toctitle>
    <firstline>Fra Veiens Bred jeg skued Lykken drage</firstline>
    <indextitle>Fra Veiens Bred jeg skued Lykken drage</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 53.</note>
-   </notes>
+   <source pages="53"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Fra Veiens Bred jeg skued Lykken drage
-Forbi mig, den ustadige Gudinde;
-I hendes Fied, som Løv for Sommervinde,
-Saae jeg en Flok af Mænd og Kvinder jage,
+    Forbi mig, den ustadige Gudinde;
+    I hendes Fied, som Løv for Sommervinde,
+    Saae jeg en Flok af Mænd og Kvinder jage,
 
 Og deres Raab og Suk og Bøn og Klage
-Jeg hørte som en Storm i Luften svinde:
-Hun vinked mig, men mellem Skovens Linde
-Jeg vandred ind, og saae mig ei tilbage.
+    Jeg hørte som en Storm i Luften svinde:
+    Hun vinked mig, men mellem Skovens Linde
+    Jeg vandred ind, og saae mig ei tilbage.
 
 Da smilte hun og tænkte: ham alene
-Jeg skienke vil min Gunst af hele Flokken;
-Og i den stille Nat, bag Lundens Grene,
+    Jeg skienke vil min Gunst af hele Flokken;
+    Og i den stille Nat, bag Lundens Grene,
 
 Hun nærmed sig, med Stierneglands om Lokken;
-Letsvævende hun Fyldehornet rysted,
-Da faldt en Elskovsrose mig paa Brystet.
+    Letsvævende hun Fyldehornet rysted,
+    Da faldt en Elskovsrose mig paa Brystet.
 </body>
 </poem>
 
@@ -1487,30 +1459,28 @@ Da faldt en Elskovsrose mig paa Brystet.
    <toctitle><num>V.</num>Henover Scenen svæver Digtets Aand</toctitle>
    <firstline>Henover Scenen svæver Digtets Aand</firstline>
    <indextitle>Henover Scenen svæver Digtets Aand</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 54.</note>
-   </notes>
+   <source pages="54"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Henover Scenen svæver Digtets Aand
-Paa store Vinger, som en sneehvid Svane,
-Fra Himlen skinne Stierner paa dens Bane,
-Fra Jorden stiger Duft af Rosenvaand.
+    Paa store Vinger, som en sneehvid Svane,
+    Fra Himlen skinne Stierner paa dens Bane,
+    Fra Jorden stiger Duft af Rosenvaand.
 
 Hun skotter Kinden tankefuld til Haand,
-Imens hun lytter til de Ord, der mane
-Hver Fryd og Smerte, som en Siæl kan ane,
-Liig Skygger, frem ved Sangens Tryllebaand.
+    Imens hun lytter til de Ord, der mane
+    Hver Fryd og Smerte, som en Siæl kan ane,
+    Liig Skygger, frem ved Sangens Tryllebaand.
 
 Jeg tænker, mens mit Blik paa hende hviler:
-Du Elskovsdigt, hvis Længsel stille smiler,
-Tungsindigt giennem Øiet som en Fange,
+    Du Elskovsdigt, hvis Længsel stille smiler,
+    Tungsindigt giennem Øiet som en Fange,
 
 Du Elskovsdigt, med dine lyse Lokker,
-Din søde Mund, din Stemmes Sølverklokker,
-Du er dog skiønnest af dit Hiemlands Sange.
+    Din søde Mund, din Stemmes Sølverklokker,
+    Du er dog skiønnest af dit Hiemlands Sange.
 </body>
 </poem>
 
@@ -1520,30 +1490,28 @@ Du er dog skiønnest af dit Hiemlands Sange.
    <toctitle><num>VI.</num>Min Ungdoms Hiem, det straabedækte, lille</toctitle>
    <firstline>Min Ungdoms Hiem, det straabedækte, lille</firstline>
    <indextitle>Min Ungdoms Hiem, det straabedækte, lille</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 55.</note>
-   </notes>
+   <source pages="55"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Min Ungdoms Hiem, det straabedækte, lille,
-Hvor Nøisomhedens Urt i Vinduet groede,
-Hvor Fromheds Lilier dugbesprængte stode,
-Og Glædens Fugl sang tidligen og silde,
+    Hvor Nøisomhedens Urt i Vinduet groede,
+    Hvor Fromheds Lilier dugbesprængte stode,
+    Og Glædens Fugl sang tidligen og silde,
 
 Forlod jeg, og i Skovens Dyb, det vilde,
-Jeg vanked, fredløs som de Dyr, der boede;
-Jeg gik i Mulm, hvor ingen Sti sig snoede,
-Og aldrig saae jeg Stiernerne, de milde.
+    Jeg vanked, fredløs som de Dyr, der boede;
+    Jeg gik i Mulm, hvor ingen Sti sig snoede,
+    Og aldrig saae jeg Stiernerne, de milde.
 
 Fortvivlet sank jeg om, og i min Kummer
-Bad jeg tilsidst om Dødens dybe Slummer —
-Da lod en Kvindes Røst for mine Øren.
+    Bad jeg tilsidst om Dødens dybe Slummer —
+    Da lod en Kvindes Røst for mine Øren.
 
 Jeg aabned Øiet, see, da var jeg hiemme!
-Den Røst, jeg havde hørt, det var din Stemme,
-Og du stod ung og smilende i Døren.
+    Den Røst, jeg havde hørt, det var din Stemme,
+    Og du stod ung og smilende i Døren.
 </body>
 </poem>
 
@@ -1553,30 +1521,28 @@ Og du stod ung og smilende i Døren.
    <toctitle><num>VII.</num>Som naar en Gartner, lidt før Sol sig tænder</toctitle>
    <firstline>Som naar en Gartner, lidt før Sol sig tænder</firstline>
    <indextitle>Som naar en Gartner, lidt før Sol sig tænder</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 56.</note>
-   </notes>
+   <source pages="56"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Som naar en Gartner, lidt før Sol sig tænder,
-Mens halvt endnu ham Drømmens Billed lænker,
-Paa Blomsterne i Vinduet seer og tænker:
-Nu aabner Rosen sig, snart Natten ender;
+    Mens halvt endnu ham Drømmens Billed lænker,
+    Paa Blomsterne i Vinduet seer og tænker:
+    Nu aabner Rosen sig, snart Natten ender;
 
 Saa speider jeg, mens Længsels Nat mig sender
-Sit Stiernelys og sine Drømme skienker;
-Dybt i dit fromme Blik mit Blik jeg sænker,
-Til Morgenbøn jeg folder mine Hander —
+    Sit Stiernelys og sine Drømme skienker;
+    Dybt i dit fromme Blik mit Blik jeg sænker,
+    Til Morgenbøn jeg folder mine Hander —
 
 Men endnu er din Elskovs Rose lukket,
-Og Nattens Drømmeslør end hviler over Den Blomst,
-hvori min Lykkes Engel sover.
+    Og Nattens Drømmeslør end hviler over Den Blomst,
+    hvori min Lykkes Engel sover.
 
 Flyv du, min Sang! let baaren hen af Sukket!
-Du veed, hvor hun bag Skoven boer, forborgen,
-Skynd dig derhen og spørg: naar er det Morgen?
+    Du veed, hvor hun bag Skoven boer, forborgen,
+    Skynd dig derhen og spørg: naar er det Morgen?
 </body>
 </poem>
 
@@ -1586,30 +1552,28 @@ Skynd dig derhen og spørg: naar er det Morgen?
    <toctitle><num>VIII.</num>En Billedstøttes Tanke hviler stille</toctitle>
    <firstline>En Billedstøttes Tanke hviler stille</firstline>
    <indextitle>En Billedstøttes Tanke hviler stille</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 57.</note>
-   </notes>
+   <source pages="57"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 En Billedstøttes Tanke hviler stille
-I Marmorblokkens Indre, uopdaget,
-Og over den sig hvælver Klippetaget,
-Hvor Skoven groer og Kildens Bølger trille.
+    I Marmorblokkens Indre, uopdaget,
+    Og over den sig hvælver Klippetaget,
+    Hvor Skoven groer og Kildens Bølger trille.
 
 Der hviler den til Stenene sig stille,
-Til Klippen briste maa for Hammerslaget,
-Og Elskovs Gud, af Marmorkisten draget,
-Med Piil og Bue stiger paa sin Pille.
+    Til Klippen briste maa for Hammerslaget,
+    Og Elskovs Gud, af Marmorkisten draget,
+    Med Piil og Bue stiger paa sin Pille.
 
 Min Kiærlighed til dig laae som en Tanke
-Fra evig Tid i Siælens Marmorgiemme;
-Da kom du, for paa Gravens Dør at banke.
+    Fra evig Tid i Siælens Marmorgiemme;
+    Da kom du, for paa Gravens Dør at banke.
 
 Let Stenen brast ved Lyden af din Stemme,
-Og Elskovs Gud, af ingen Byrde tynget,
-Steg frem for Lyset, seirende, forynget.
+    Og Elskovs Gud, af ingen Byrde tynget,
+    Steg frem for Lyset, seirende, forynget.
 </body>
 </poem>
 
@@ -1619,30 +1583,28 @@ Steg frem for Lyset, seirende, forynget.
    <toctitle><num>IX.</num>Fra Skyens lysblaa Telt, hvor Solen luer</toctitle>
    <firstline>Fra Skyens lysblaa Telt, hvor Solen luer</firstline>
    <indextitle>Fra Skyens lysblaa Telt, hvor Solen luer</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 58.</note>
-   </notes>
+   <source pages="58"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Fra Skyens lysblaa Telt, hvor Solen luer,
-Fra Havets endeløse Bølgehaller,
-Fra Biergets Slot med straalende Krystaller,
-Fra Lundens dunkelgrønne, svale Buer,
+    Fra Havets endeløse Bølgehaller,
+    Fra Biergets Slot med straalende Krystaller,
+    Fra Lundens dunkelgrønne, svale Buer,
 
 Guds Faderøie dybt i Siælen skuer,
-Liig Glimt af Lys, der ind i Mørket falder;
-Paa Hver, som farer vild, hans Stemme kalder
-Snart lyder den som Bøn og snart den truer.
+    Liig Glimt af Lys, der ind i Mørket falder;
+    Paa Hver, som farer vild, hans Stemme kalder
+    Snart lyder den som Bøn og snart den truer.
 
 Een kalder han med Røst, som Bladet suser,
-Som Kilden risler og som Fugle siunge:
-Een kalder han med Tordenskyens Tunge,
+    Som Kilden risler og som Fugle siunge:
+    Een kalder han med Tordenskyens Tunge,
 
 Med Havets Brøl, naar vildest Brænding bruser;
-Mig kaldte han en Sommeraften silde
-Med Lyden af din Røst, den klare, milde.
+    Mig kaldte han en Sommeraften silde
+    Med Lyden af din Røst, den klare, milde.
 </body>
 </poem>
 
@@ -1652,30 +1614,28 @@ Med Lyden af din Røst, den klare, milde.
    <toctitle><num>X.</num>Madonna, vil en selsom Drøm du høre?</toctitle>
    <firstline>Madonna, vil en selsom Drøm du høre?</firstline>
    <indextitle>Madonna, vil en selsom Drøm du høre?</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 59.</note>
-   </notes>
+   <source pages="59"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Madonna, vil en selsom Drøm du høre?
-Ved Himlens Dør jeg stod, sorgfuld i Sinde;
-Jeg skimted Herlighedens Glands derinde,
-Og Sang af Engle naaede svagt mit Øre.
+    Ved Himlens Dør jeg stod, sorgfuld i Sinde;
+    Jeg skimted Herlighedens Glands derinde,
+    Og Sang af Engle naaede svagt mit Øre.
 
 Luk op, Sanct Peder! bad jeg, lad dig røre!
-Da lød en Røst fra Morgenskyens Tinde:
-Vend om og føg dig først en Elskerinde;
-Thi kun for To jeg aabner Himlens Døre.
+    Da lød en Røst fra Morgenskyens Tinde:
+    Vend om og føg dig først en Elskerinde;
+    Thi kun for To jeg aabner Himlens Døre.
 
 Det var Gud Amor selv, der til mig mæled;
-Han Portner var, og Nøglerne de tvende
-Af Guld og Sølv, saae jeg, han holdt ihænde.
+    Han Portner var, og Nøglerne de tvende
+    Af Guld og Sølv, saae jeg, han holdt ihænde.
 
 Flyv, lette Sang! af Haab og Frygt besiælet,
-Hen hvor min Rose staaer i Blomstervrimlen,
-Og hvisk: Madonna, hielp ham ind i Himlen!
+    Hen hvor min Rose staaer i Blomstervrimlen,
+    Og hvisk: Madonna, hielp ham ind i Himlen!
 </body>
 </poem>
 
@@ -1685,30 +1645,28 @@ Og hvisk: Madonna, hielp ham ind i Himlen!
    <toctitle><num>XI.</num>Ifald du er mig huld, da vil du siden</toctitle>
    <firstline>Ifald du er mig huld, da vil du siden</firstline>
    <indextitle>Ifald du er mig huld, da vil du siden</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 60.</note>
-   </notes>
+   <source pages="60"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Ifald du er mig huld, da vil du siden
-Forundret sige vist, engang ad Aare:
-"Hvi led du slig en Angst og Tvivl, du Daare?
-Jeg elsked dig jo lønligt hele Tiden."
+    Forundret sige vist, engang ad Aare:
+    "Hvi led du slig en Angst og Tvivl, du Daare?
+    Jeg elsked dig jo lønligt hele Tiden."
 
 Vaar spirer kun igiennem Vinterstriden;
-Den gamle Jord maa døe, før Himlens Taare
-Kan vække nye Roser af dens Baare;
-Alt Skiønt og Herligt fødes giennem Liden:
+    Den gamle Jord maa døe, før Himlens Taare
+    Kan vække nye Roser af dens Baare;
+    Alt Skiønt og Herligt fødes giennem Liden:
 
 Og skiønt og herligt er det Barn af Smerte,
-Min Siæl har født, Guldbarnet af mit Hierte,
-Der mod dig rækker sine Hænder spæde.
+    Min Siæl har født, Guldbarnet af mit Hierte,
+    Der mod dig rækker sine Hænder spæde.
 
 Min Sorg og Angst har luttret det for Brøde,
-Og jeg har kiøbt dets Smiil ved selv at bøde;
-Tag det, og lad det voxe til din Glæde!
+    Og jeg har kiøbt dets Smiil ved selv at bøde;
+    Tag det, og lad det voxe til din Glæde!
 </body>
 </poem>
 
@@ -1718,30 +1676,28 @@ Tag det, og lad det voxe til din Glæde!
    <toctitle><num>XII.</num>Naar Foraarssolen mildt, med Hænder blide</toctitle>
    <firstline>Naar Foraarssolen mildt, med Hænder blide</firstline>
    <indextitle>Naar Foraarssolen mildt, med Hænder blide</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 61.</note>
-   </notes>
+   <source pages="61"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Naar Foraarssolen mildt, med Hænder blide,
-Har løftet Sneens Lin, naar Havens Gange
-Gienlyde høit af klare Fuglesange,
-Staaer Æbletræet smykt med Blomster hvide.
+    Har løftet Sneens Lin, naar Havens Gange
+    Gienlyde høit af klare Fuglesange,
+    Staaer Æbletræet smykt med Blomster hvide.
 
 Men Blomsten falder af ved Sommertide,
-Og bittert giennem Aarerne de trange
-Gaae Livets Safter, Grenen skiælver bange —
-Da bryde gyldne Frugter af dens Side.
+    Og bittert giennem Aarerne de trange
+    Gaae Livets Safter, Grenen skiælver bange —
+    Da bryde gyldne Frugter af dens Side.
 
 Min Elskovs Træ stod først i Foraarsstunden
-Med Blomster smykket, duftende i Lunden,
-Og Fuglesange høit fra Kronen lode.
+    Med Blomster smykket, duftende i Lunden,
+    Og Fuglesange høit fra Kronen lode.
 
 Men Blomsterne faldt af, og Træets Aarer
-Høit svulme nu med skiulte, bittre Taarer:
-Naar kommer Frugten vel, den gyldne, søde?
+    Høit svulme nu med skiulte, bittre Taarer:
+    Naar kommer Frugten vel, den gyldne, søde?
 </body>
 </poem>
 
@@ -1751,30 +1707,28 @@ Naar kommer Frugten vel, den gyldne, søde?
    <toctitle><num>XIII.</num>Bag Jordens Bryst, i Klippehiertets Kamre</toctitle>
    <firstline>Bag Jordens Bryst, i Klippehiertets Kamre</firstline>
    <indextitle>Bag Jordens Bryst, i Klippehiertets Kamre</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 62.</note>
-   </notes>
+   <source pages="62"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Bag Jordens Bryst, i Klippehiertets Kamre,
-Hvor Mørkets Edderkop sit Garn udspænder,
-Ad enlig Sti, som Foden ikke kiender,
-En Biergmand gaaer, hvor Dybets Vandfald jamre.
+    Hvor Mørkets Edderkop sit Garn udspænder,
+    Ad enlig Sti, som Foden ikke kiender,
+    En Biergmand gaaer, hvor Dybets Vandfald jamre.
 
 De golde Steen, liig onde Tanker, klamre
-Sig om Krystallerne med stærke Hænder;
-Da hugger han, mens Lampen stille brænder,
-Det ædle Guld af Klippen ud med Hamre.
+    Sig om Krystallerne med stærke Hænder;
+    Da hugger han, mens Lampen stille brænder,
+    Det ædle Guld af Klippen ud med Hamre.
 
 Jeg steg som han ned i mit Hiertes Kløfter,
-Og Sorgens tunge Hammer skal jeg svinge
-Til jeg det rene Guld for Dag kan bringe.
+    Og Sorgens tunge Hammer skal jeg svinge
+    Til jeg det rene Guld for Dag kan bringe.
 
 Det ligger dybt, og langsomt jeg det løfter;
-Men midt i dybest Nat, blandt Taagedampe,
-Din Kiærlighed, Madonna! er min Lampe.
+    Men midt i dybest Nat, blandt Taagedampe,
+    Din Kiærlighed, Madonna! er min Lampe.
 </body>
 </poem>
 
@@ -1784,30 +1738,28 @@ Din Kiærlighed, Madonna! er min Lampe.
    <toctitle><num>XIV.</num>Som Oldtids Spaamand, der fra Høiens Tinde</toctitle>
    <firstline>Som Oldtids Spaamand, der fra Høiens Tinde</firstline>
    <indextitle>Som Oldtids Spaamand, der fra Høiens Tinde</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 63.</note>
-   </notes>
+   <source pages="63"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Som Oldtids Spaamand, der fra Høiens Tinde,
-Ved Stierneskiær, med ufravendte Blikke
-Paa Himlen stirred, for at see, om ikke
-Naar Fugle fløi, han kunde Varsel finde:
+    Ved Stierneskiær, med ufravendte Blikke
+    Paa Himlen stirred, for at see, om ikke
+    Naar Fugle fløi, han kunde Varsel finde:
 
 Saadan jeg ensom staaer, min Elskerinde!
-Og venter, du skal Varselsordet skikke.
-Dybt under mig jeg lader Jorden ligge,
-Dens blege Lys udslukkes og forsvinde,
+    Og venter, du skal Varselsordet skikke.
+    Dybt under mig jeg lader Jorden ligge,
+    Dens blege Lys udslukkes og forsvinde,
 
 Naar over mig jeg skuer i det Fierne
-Dit Øies milde, drømmerige Stierne,
-Og bader Siælen i de rene Luer.
+    Dit Øies milde, drømmerige Stierne,
+    Og bader Siælen i de rene Luer.
 
 Trofast jeg staaer til Nattevagten ender;
-O, var blot Ordets Fugle, som du sender,
-Ei sorte Ravne da, men hvide Duer!
+    O, var blot Ordets Fugle, som du sender,
+    Ei sorte Ravne da, men hvide Duer!
 </body>
 </poem>
 
@@ -1817,30 +1769,28 @@ Ei sorte Ravne da, men hvide Duer!
    <toctitle><num>XV.</num>Ensom jeg sidder i det stille Kammer</toctitle>
    <firstline>Ensom jeg sidder i det stille Kammer</firstline>
    <indextitle>Ensom jeg sidder i det stille Kammer</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 64.</note>
-   </notes>
+   <source pages="64"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Ensom jeg sidder i det stille Kammer,
-Hvor Mindet kun besøger mine Tanker;
-Taus Natten er, ikkun mit Hierte banker
-Med tunge Slag, mens døsigt dampen flammer.
+    Hvor Mindet kun besøger mine Tanker;
+    Taus Natten er, ikkun mit Hierte banker
+    Med tunge Slag, mens døsigt dampen flammer.
 
 Jeg tænker paa min Elskovs Fryd og Jammer,
-Og mens i Mindets Urtegaard jeg vanker,
-Hvert Smiil og Ord og Blik af dig jeg sanker,
-Som var det Blomster mellem Lundens Stammer.
+    Og mens i Mindets Urtegaard jeg vanker,
+    Hvert Smiil og Ord og Blik af dig jeg sanker,
+    Som var det Blomster mellem Lundens Stammer.
 
 Og mens jeg Smilets Rosenknopper blander
-Med Ordets duftende Viol, og vikler
-Imellem dem dit dunkle Bliks Aurikler,
+    Med Ordets duftende Viol, og vikler
+    Imellem dem dit dunkle Bliks Aurikler,
 
 Og Blomsterne med Længsels Taare vander,
-Jeg tænker: Krands! maaskee du kun skal smile
-Paa Graven, hvor mit Haab er lagt til Hvile.
+    Jeg tænker: Krands! maaskee du kun skal smile
+    Paa Graven, hvor mit Haab er lagt til Hvile.
 </body>
 </poem>
 
@@ -1850,30 +1800,28 @@ Paa Graven, hvor mit Haab er lagt til Hvile.
    <toctitle><num>XVI.</num>Forunderlige Træ, som dybt herinde</toctitle>
    <firstline>Forunderlige Træ, som dybt herinde</firstline>
    <indextitle>Forunderlige Træ, som dybt herinde</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 65.</note>
-   </notes>
+   <source pages="65"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Forunderlige Træ, som dybt herinde
-Har slaaet Rødder i mit Hiertes Kammer!
-Snart gløber du som Guld i Solens Flammer,
-Snart stille Sølverstierner paa dig skinne.
+    Har slaaet Rødder i mit Hiertes Kammer!
+    Snart gløber du som Guld i Solens Flammer,
+    Snart stille Sølverstierner paa dig skinne.
 
 Snart gyser alt dit Lov for kolde Vinde,
-Og visner hen og falder af med Jammer;
-Snart staaer du atter skiøn som Skovens Stammer
-Naar lysest Foraarskrands de om sig binde.
+    Og visner hen og falder af med Jammer;
+    Snart staaer du atter skiøn som Skovens Stammer
+    Naar lysest Foraarskrands de om sig binde.
 
 Om Skyen sortner, eller Stierner spille,
-Ved Dag og Nat du voxer langsomt, stille,
-Og strækker imod Himlen dine Grene.
+    Ved Dag og Nat du voxer langsomt, stille,
+    Og strækker imod Himlen dine Grene.
 
 Jeg sidder i din Skygge taus og ene,
-Indtil engang mit Hoved ned jeg lægger,
-Og du min Grav med dine Blade dækker.
+    Indtil engang mit Hoved ned jeg lægger,
+    Og du min Grav med dine Blade dækker.
 </body>
 </poem>
 
@@ -1883,30 +1831,28 @@ Og du min Grav med dine Blade dækker.
    <toctitle><num>XVII.</num>Før Havets blege Mø sit Bytte kræver</toctitle>
    <firstline>Før Havets blege Mø sit Bytte kræver</firstline>
    <indextitle>Før Havets blege Mø sit Bytte kræver</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 66.</note>
-   </notes>
+   <source pages="66"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Før Havets blege Mø sit Bytte kræver,
-Før dybt hun drage kan en modig Svømmer
-Ned til den Søvn, hvori man aldrig drømmer,
-Tre Gange først han sig af Bølgen hæver.
+    Før dybt hun drage kan en modig Svømmer
+    Ned til den Søvn, hvori man aldrig drømmer,
+    Tre Gange først han sig af Bølgen hæver.
 
 Tre Gange for hans Øie Stiernen bæver;
-Fordi tredie Gang den salte Skaal han tømmer,
-Og medens Havets Skum Liigklædet sømmer,
-Hans Legem langsomt imod Dybet svæver.
+    Fordi tredie Gang den salte Skaal han tømmer,
+    Og medens Havets Skum Liigklædet sømmer,
+    Hans Legem langsomt imod Dybet svæver.
 
 To Gange var min Kiærlighed begravet;
-Nu løfter den sig tredie Gang af Havet
-Og aander, tungt, og Øiet mod dig vender.
+    Nu løfter den sig tredie Gang af Havet
+    Og aander, tungt, og Øiet mod dig vender.
 
 Alt aabner Dybets Havfru for sit sorte,
-Ensomme Slot de store Bølgeporte —
-Frels mig, Madonna, ræk mig dine Hænder!
+    Ensomme Slot de store Bølgeporte —
+    Frels mig, Madonna, ræk mig dine Hænder!
 </body>
 </poem>
 
@@ -1916,30 +1862,28 @@ Frels mig, Madonna, ræk mig dine Hænder!
    <toctitle><num>XVIII.</num>Høit lyder Pauken, klart Trompeten skralder</toctitle>
    <firstline>Høit lyder Pauken, klart Trompeten skralder</firstline>
    <indextitle>Høit lyder Pauken, klart Trompeten skralder</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 67.</note>
-   </notes>
+   <source pages="67"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Høit lyder Pauken, klart Trompeten skralder;
-Stig op, mit Hiertes Dame, paa Altanen!
-Der kæmpes skal, høit flagrer Elskovsfanen;
-Hør! Pandserpladen rasler, Skioldet gialder.
+    Stig op, mit Hiertes Dame, paa Altanen!
+    Der kæmpes skal, høit flagrer Elskovsfanen;
+    Hør! Pandserpladen rasler, Skioldet gialder.
 
 To Riddere til Kamp Trompeten kalder;
-Een sidder paa en Ganger, hvid som Svanen,
-Den Andens Hest er sort, vildt bølger Manen,
-Og som et Sørgeflor Skabraket falder.
+    Een sidder paa en Ganger, hvid som Svanen,
+    Den Andens Hest er sort, vildt bølger Manen,
+    Og som et Sørgeflor Skabraket falder.
 
 De flyve frem med Spyd i stærke Hænder,
-Solglimt og Tordensky hinanden møde,
-En af dem seire skal, og En skal bløde.
+    Solglimt og Tordensky hinanden møde,
+    En af dem seire skal, og En skal bløde.
 
 Hil dig, mit Hiertes Dame! du dem kiender,
-De tvende Kæmper, det er Fryd og Smerte,
-Og Kredsen, hvor der strides er mit Hierte.'
+    De tvende Kæmper, det er Fryd og Smerte,
+    Og Kredsen, hvor der strides er mit Hierte.'
 </body>
 </poem>
 
@@ -1949,30 +1893,28 @@ Og Kredsen, hvor der strides er mit Hierte.'
    <toctitle><num>XIX.</num>Som Barnet, der sit Øielaag har lukket</toctitle>
    <firstline>Som Barnet, der sit Øielaag har lukket</firstline>
    <indextitle>Som Barnet, der sit Øielaag har lukket</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 68.</note>
-   </notes>
+   <source pages="68"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Som Barnet, der sit Øielaag har lukket,
-Træt af at græde vel, men ikke trøstet,
-O g hvilende sin Kind til Moderbrystet,
-Er slumret ind omsider, sagte vugget:
+    Træt af at græde vel, men ikke trøstet,
+    O g hvilende sin Kind til Moderbrystet,
+    Er slumret ind omsider, sagte vugget:
 
 Saa har min Elskov troet sit Hoved bukket,
-Og hviler paa de Torne, den har høstet;
-Udover den har Søvn sin Vinge rystet,
-Og standset er dens Graad, og endt er Sukket.
+    Og hviler paa de Torne, den har høstet;
+    Udover den har Søvn sin Vinge rystet,
+    Og standset er dens Graad, og endt er Sukket.
 
 Men som en Moder from, med milde Blikke,
-En venlig Drøm ved Leiet staaer og smiler,
-Hvor det forgrædte Barn i Slummer hviler.
+    En venlig Drøm ved Leiet staaer og smiler,
+    Hvor det forgrædte Barn i Slummer hviler.
 
 O du, hvis Stemmes Klang har Magt at drage
-Til vaagen Sorg min Kiærlighed tilbage,
-Tal sagte, o Madonna! væk den ikke!
+    Til vaagen Sorg min Kiærlighed tilbage,
+    Tal sagte, o Madonna! væk den ikke!
 </body>
 </poem>
 
@@ -1982,30 +1924,28 @@ Tal sagte, o Madonna! væk den ikke!
    <toctitle><num>XX.</num>Kald mig kun kold, du skal ei see den Kvide</toctitle>
    <firstline>Kald mig kun kold, du skal ei see den Kvide</firstline>
    <indextitle>Kald mig kun kold, du skal ei see den Kvide</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 69.</note>
-   </notes>
+   <source pages="69"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Kald mig kun kold, du skal ei see den Kvide,
-Der som en Kniv mig stinger under Belte
-Dybt i mit Hierte Længsels Bølger vælte
-Med Brusen sig, de skumbedækte, hvide.
+    Der som en Kniv mig stinger under Belte
+    Dybt i mit Hierte Længsels Bølger vælte
+    Med Brusen sig, de skumbedækte, hvide.
 
 Som Floden styrter vild fra Klippens Side,
-Naar Sneelaviner høit i Solen smelte,
-Saadan, af Siælens fulde Skaaler hældte,
-Ufødte Taarevæld herinde stride.
+    Naar Sneelaviner høit i Solen smelte,
+    Saadan, af Siælens fulde Skaaler hældte,
+    Ufødte Taarevæld herinde stride.
 
 Men Strømmen, der i Biergets mørke Kløfter
-Utæmmet, brølende, sin Stemme løfter,
-Gaaer siden blomstersmykket over Vange:
+    Utæmmet, brølende, sin Stemme løfter,
+    Gaaer siden blomstersmykket over Vange:
 
 Flyd da, min Sorg! du, som i Hiertets Kamre
-Maa bruse høit og vaande dig og jamre,
-Flyd fra min Læbe sødt, som milde Sange!
+    Maa bruse høit og vaande dig og jamre,
+    Flyd fra min Læbe sødt, som milde Sange!
 </body>
 </poem>
 
@@ -2015,30 +1955,28 @@ Flyd fra min Læbe sødt, som milde Sange!
    <toctitle><num>XXI.</num>Naar sødt du hviler mellem Bolstre hvide</toctitle>
    <firstline>Naar sødt du hviler mellem Bolstre hvide</firstline>
    <indextitle>Naar sødt du hviler mellem Bolstre hvide</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 70.</note>
-   </notes>
+   <source pages="70"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Naar sødt du hviler mellem Bolstre hvide,
-Med Øiet lukt og Drømmesmiil om Kinden,
-Mens, Toner liig, der bæres hen af Vinden,
-Midnattens Aander let forbi dig stride:
+    Med Øiet lukt og Drømmesmiil om Kinden,
+    Mens, Toner liig, der bæres hen af Vinden,
+    Midnattens Aander let forbi dig stride:
 
 Har jeg, hvor Skovens skiulte Kilder glide,
-Hver Nat et Vaabenstævne under Linden;
-Forskrækket flygter Hiort afsted med Hinden,
-Og Ingen uden Stiernen seer mig stride.
+    Hver Nat et Vaabenstævne under Linden;
+    Forskrækket flygter Hiort afsted med Hinden,
+    Og Ingen uden Stiernen seer mig stride.
 
 Veed du med hvem? Med Elskovs Gud jeg brydes;
-Til Jord med Magt jeg den Forhadte tynger,
-Men nye Kræfter i hans Legem gydes,
+    Til Jord med Magt jeg den Forhadte tynger,
+    Men nye Kræfter i hans Legem gydes,
 
 Thi Jorden er hans Moder; harmfuld slynger
-Jeg ham i Luft, mod Himlens Stiernerader,
-Det hielper ei, thi Himlen er hans Fader.
+    Jeg ham i Luft, mod Himlens Stiernerader,
+    Det hielper ei, thi Himlen er hans Fader.
 </body>
 </poem>
 
@@ -2048,30 +1986,28 @@ Det hielper ei, thi Himlen er hans Fader.
    <toctitle><num>XXII.</num>Som denne Lund, hvor, liig en grønlig Slange</toctitle>
    <firstline>Som denne Lund, hvor, liig en grønlig Slange</firstline>
    <indextitle>Som denne Lund, hvor, liig en grønlig Slange</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 71.</note>
-   </notes>
+   <source pages="71"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Som denne Lund, hvor, liig en grønlig Slange,
-Sig Stien bugter paa en selsom Maade,
-Hvor hundred matbelyste Slyngegange
-Hinanden krydse, som et Net af Traade;
+    Sig Stien bugter paa en selsom Maade,
+    Hvor hundred matbelyste Slyngegange
+    Hinanden krydse, som et Net af Traade;
 
 Hvor dybest inde, mellem Fuglesange
-Og Rosers Duft, hvorhen fast Ingen naaede,
-Gudinden hviler, liig en deilig Fange,
-Med Marmorkinderne af Duggen vaade:
+    Og Rosers Duft, hvorhen fast Ingen naaede,
+    Gudinden hviler, liig en deilig Fange,
+    Med Marmorkinderne af Duggen vaade:
 
 Som denne Lund snoer sig mit Liv i dunkle,
-Vildsomme Gange, der bestandig føre
-Mig ud til Gravens vidtoplukte Døre.
+    Vildsomme Gange, der bestandig føre
+    Mig ud til Gravens vidtoplukte Døre.
 
 Men hver Gang jeg paa Tærsklen staaer forvoven,
-Seer jeg de hvide Marmorlemmer funkle,
-Og atter styrter jeg mig ind i Skoven.
+    Seer jeg de hvide Marmorlemmer funkle,
+    Og atter styrter jeg mig ind i Skoven.
 </body>
 </poem>
 
@@ -2081,30 +2017,28 @@ Og atter styrter jeg mig ind i Skoven.
    <toctitle><num>XXIII.</num>Misund mig ei min Latter og min Glæde!</toctitle>
    <firstline>Misund mig ei min Latter og min Glæde!</firstline>
    <indextitle>Misund mig ei min Latter og min Glæde!</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 72.</note>
-   </notes>
+   <source pages="72"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Misund mig ei min Latter og min Glæde!
-Min Siæl er Søen, paa hvis blanke Flade
-Sivblomsten svømmer mellem grønne Blade,
-Mens dybt paa Bunden skiulte Kilder græde.
+    Min Siæl er Søen, paa hvis blanke Flade
+    Sivblomsten svømmer mellem grønne Blade,
+    Mens dybt paa Bunden skiulte Kilder græde.
 
 Vil du en stille Nat til Bredden træde,
-Da seer du fiernt en drømmende Najade
-Ensom og haabløs sig i Bølgen bade:
-Det er min Elskov, svøbt i Sangens Klæde.
+    Da seer du fiernt en drømmende Najade
+    Ensom og haabløs sig i Bølgen bade:
+    Det er min Elskov, svøbt i Sangens Klæde.
 
 Naar Søvnens Stilhed hviler over Landet,
-Naar ingen Fugl, men kun den hvide Stierne
-Sees langsomt giennem Himmelrummet drage,
+    Naar ingen Fugl, men kun den hvide Stierne
+    Sees langsomt giennem Himmelrummet drage,
 
 Da løfter hun sit Hoved op af Vandet,
-Og rækker Armen mod dig i det Fierne,
-Og synker sukkende igien tilbage.
+    Og rækker Armen mod dig i det Fierne,
+    Og synker sukkende igien tilbage.
 </body>
 </poem>
 
@@ -2114,30 +2048,28 @@ Og synker sukkende igien tilbage.
    <toctitle><num>XXIV.</num>Ved Foraarstid, naar Solens Guldfugl svinger</toctitle>
    <firstline>Ved Foraarstid, naar Solens Guldfugl svinger</firstline>
    <indextitle>Ved Foraarstid, naar Solens Guldfugl svinger</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 73.</note>
-   </notes>
+   <source pages="73"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Ved Foraarstid, naar Solens Guldfugl svinger
-Sig ung og straalende mod Himlens Bue,
-Maa liden Trækfugl sidde paa sin Tue
-Og plukke Fiædrene af sine Vinger.
+    Sig ung og straalende mod Himlens Bue,
+    Maa liden Trækfugl sidde paa sin Tue
+    Og plukke Fiædrene af sine Vinger.
 
 Men imod Høst, naar Kuldens Magt betvinger
-Den matte Sol og slukker ud dens Lue,
-Da voxer Vingen paa den vilde Due,
-Og høit dens Afstedskvad i Luften klinger.
+    Den matte Sol og slukker ud dens Lue,
+    Da voxer Vingen paa den vilde Due,
+    Og høit dens Afstedskvad i Luften klinger.
 
 Trøst dig, mit Haab! du Fugl, der som en Fange
-I Livets Foraar dine Vinger tabte,
-Og træt og sorgfuld flagrer mellem Vrimlen;
+    I Livets Foraar dine Vinger tabte,
+    Og træt og sorgfuld flagrer mellem Vrimlen;
 
 Trøst dig, mit Haab, og syng kun dine Sange!
-Engang, naar dine nye Fiær er skabte,
-Naar Høsten kommer, flyver du til Himlen.
+    Engang, naar dine nye Fiær er skabte,
+    Naar Høsten kommer, flyver du til Himlen.
 </body>
 </poem>
 
@@ -2147,30 +2079,28 @@ Naar Høsten kommer, flyver du til Himlen.
    <toctitle><num>XXV.</num>Lyd sidste Gang, sorgtunge Sang!</toctitle>
    <firstline>Lyd sidste Gang, sorgtunge Sang!</firstline>
    <indextitle>Lyd sidste Gang, sorgtunge Sang! om hende</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 74.</note>
-   </notes>
+   <source pages="74"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 Lyd sidste Gang, sorgtunge Sang! om hende,
-Der stod paa Tærskelen til Fredens Lande,
-I Glands af Evighedens Lys derinde,
-Med hvide Roser om sin rene Pande.
+    Der stod paa Tærskelen til Fredens Lande,
+    I Glands af Evighedens Lys derinde,
+    Med hvide Roser om sin rene Pande.
 
 Jeg saae et Solglimt komme og forsvinde,
-Jeg hørte Engles Røst fra fierne Strande,
-En Luftning, som af varme Foraarsvinde,
-Kom mig imøde paa de kolde Vande.
+    Jeg hørte Engles Røst fra fierne Strande,
+    En Luftning, som af varme Foraarsvinde,
+    Kom mig imøde paa de kolde Vande.
 
 Men før jeg knælende ved Sømmen rørte
-Af hendes Slør, faldt Natten paa, den sorte,
-Da lukked sig de malmbeslagne Porte.
+    Af hendes Slør, faldt Natten paa, den sorte,
+    Da lukked sig de malmbeslagne Porte.
 
 Og giennem Mørket hendes Røst jeg hørte:
-"Gaa bort og kæmp indtil din Sol opstiger!
-Kun giennem Kamp gaaer Vei til Fredens Riger."
+    "Gaa bort og kæmp indtil din Sol opstiger!
+    Kun giennem Kamp gaaer Vei til Fredens Riger."
 </body>
 </poem>
 
@@ -2180,30 +2110,28 @@ Kun giennem Kamp gaaer Vei til Fredens Riger."
    <toctitle><num>XXVI.</num>See Navnet hist, i Barken dybt indskaaret!</toctitle>
    <firstline>See Navnet hist, i Barken dybt indskaaret!</firstline>
    <indextitle>See Navnet hist, i Barken dybt indskaaret!</indextitle>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, p. 75.</note>
-   </notes>
+   <source pages="75"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
 See Navnet hist, i Barken dybt indskaaret!
-Her, mellem disse skyggefulde Linde,
-En Ungersvend har vandret, og til Minde
-Om En, han elsked, dette Træ sig kaaret.
+    Her, mellem disse skyggefulde Linde,
+    En Ungersvend har vandret, og til Minde
+    Om En, han elsked, dette Træ sig kaaret.
 
 Vel voxer Barken knudret over Saaret,
-Og Navnet synes langsomt at forsvinde;
-Men midt i Stammen vil man det gienfinde,
-Naar fældet den til Baalet bliver baaret.
+    Og Navnet synes langsomt at forsvinde;
+    Men midt i Stammen vil man det gienfinde,
+    Naar fældet den til Baalet bliver baaret.
 
 Saadan, Madonna! lader jeg med Smerte
-Dit Navn forsvinde nu af mine Sange,
-Som Skrifttegn, der af Tidens Haand udflettes.
+    Dit Navn forsvinde nu af mine Sange,
+    Som Skrifttegn, der af Tidens Haand udflettes.
 
 Men tro dog derfor ei, at det forgiettes:
-Det voxer, giennem Tankens skiulte Gange,
-Dybt, skiøndt usynligt, indad i mit Hierte.
+    Det voxer, giennem Tankens skiulte Gange,
+    Dybt, skiøndt usynligt, indad i mit Hierte.
 </body>
 </poem>
 
@@ -2214,9 +2142,7 @@ Dybt, skiøndt usynligt, indad i mit Hierte.
 <head>
    <title>Freias Stierne</title>
    <firstline>Kun een er Freias Stierne</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 76-77.</note>
-   </notes>
+   <source pages="76-77"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2262,9 +2188,7 @@ Igien et Minde.
 <head>
    <title>Længsel</title>
    <firstline>Den brune Hiort i Lunden springer</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 78-79.</note>
-   </notes>
+   <source pages="78-79"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2301,9 +2225,7 @@ Og skienke Hvile mig engang?
 <head>
    <title>Ved Solnedgang</title>
    <firstline>Naar Dagen er træt og vil gange til Ro</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 80-81.</note>
-   </notes>
+   <source pages="80-81"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2340,9 +2262,7 @@ Hen, hvor Solen gaaer ned, til din Lykke.
 <head>
    <title>Alene</title>
    <firstline>Du brune Hiort ved Træets Rod</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 82-83.</note>
-   </notes>
+   <source pages="82-83"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2391,10 +2311,8 @@ Maa altid gaae min dunkle Vei alene.
 <poem id="molbech2017102017">
 <head>
    <title>Fred</title>
-   <firstline></firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 84-86.</note>
-   </notes>
+   <firstline>Hvad fattes dig, min Datter kiær!</firstline>
+   <source pages="84-86"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2458,9 +2376,7 @@ Saa faaer dit Hierte Fred."
 <head>
    <title>Kiærligheds Land</title>
    <firstline>Før dig jeg elsked, var jeg som en Mand</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 87-91.</note>
-   </notes>
+   <source pages="87-91"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2570,9 +2486,7 @@ Skal jeg ved dig en bedre Verden vinde.
 <head>
    <title>Fremmed</title>
    <firstline>Naar du sidder i din Faders Stue</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 92-93.</note>
-   </notes>
+   <source pages="92-93"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2610,9 +2524,7 @@ Blomstre i det ubekiendte Land.
 <head>
    <title>Sov sødt!</title>
    <firstline>Sov sødt, min Elskede, sov sødt!</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 94-95.</note>
-   </notes>
+   <source pages="94-95"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2658,9 +2570,7 @@ Ind i dit Hiertes Kammer!
 <head>
    <title>Lad os flye!</title>
    <firstline>Kom, kom! lad os flye</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 96-97.</note>
-   </notes>
+   <source pages="96-97"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2715,9 +2625,7 @@ Som til Salighed leder.
 <head>
    <title>Sommer om Vinteren</title>
    <firstline>Hvor er det sødt, ved Vintertide</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 98-99.</note>
-   </notes>
+   <source pages="98-99"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2762,9 +2670,7 @@ Forrraader os, hvad den skal dølge.
 <head>
    <title>Veed du, hvorfor?</title>
    <firstline>Veed du, hvorfor dit Billed speiler</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 100-102.</note>
-   </notes>
+   <source pages="100-102"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2828,9 +2734,7 @@ Thi jeg har glemt vor Barndoms Sprog.
 <head>
    <title>Bøn</title>
    <firstline>Jeg beder ei om Guldets Glød</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 103-104.</note>
-   </notes>
+   <source pages="103-104"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2860,9 +2764,7 @@ Og om een Elskovssommer.
 <head>
    <title>Hvad hielper det?</title>
    <firstline>Hvad hielper det, din Kind er rød</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 105-106.</note>
-   </notes>
+   <source pages="105-106"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2908,9 +2810,7 @@ At du er død for mig?
 <head>
    <title>Uforglemmelig</title>
    <firstline>Som over Havets øde Bryst</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 107-108.</note>
-   </notes>
+   <source pages="107-108"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2965,9 +2865,7 @@ Og dette Navn er dit.
 <head>
    <title>Fremad!</title>
    <firstline>Farvel! Nu brast det sidste Baand</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 109-111.</note>
-   </notes>
+   <source pages="109-111"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3031,9 +2929,7 @@ Et bedre Land af Voven.
 <head>
    <title>En Drøm</title>
    <firstline>En Nattergal sad udenfor mit Vindue</firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 112-126.</note>
-   </notes>
+   <source pages="112-126"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3425,10 +3321,8 @@ Der sad og sang blandt Slaaentornens Blomster.
 <poem id="molbech2017102029">
 <head>
    <title>Den Ensomme</title>
-   <firstline></firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. 127-171.</note>
-   </notes>
+   <firstline>Hans Haar er hvidt, ei Vintersnee</firstline>
+   <source pages="127-171"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4581,24 +4475,6 @@ Og favner dig med trofast Sind,
 Og bærer dig i Himlen ind.
 </body>
 </poem>
-
-<!--
-</body>
-</poem>
-
-<poem id="molbech2017102001">
-<head>
-   <title></title>
-   <firstline></firstline>
-   <notes>
-      <note>Teksten følger førsteudgaven af Chr. K. F. Molbech: <i>Dæmring</i>, C. C. Lose &amp; Delbanco, Kbh., 1852, pp. .</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
--->
-
-
 
 </workbody>
 </kalliopework>

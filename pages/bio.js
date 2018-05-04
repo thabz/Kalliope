@@ -183,16 +183,29 @@ class PersonMeta extends React.Component<PersonMetaProps> {
 type PersonPortraitProps = {
   poet: Poet,
   lang: Lang,
-  portrait?: PictureItem,
+  portraits?: Array<PictureItem>,
 };
 class PersonPortrait extends React.Component<PersonPortraitProps> {
   render() {
-    const { portrait, poet, lang } = this.props;
-    if (!poet.has_portraits || portrait == null) {
+    const { portraits, poet, lang } = this.props;
+    if (!poet.has_portraits || portraits == null) {
       return null;
     }
-    const srcPrefix = `/static/images/${poet.id}`;
-    return <Picture picture={portrait} srcPrefix={srcPrefix} lang={lang} />;
+    let primaryIndex = 0;
+    const primary = portraits.filter((p, i) => {
+      if (p.primary == true) {
+        primaryIndex = i;
+      }
+      return p.primary;
+    })[0];
+    return (
+      <Picture
+        pictures={portraits}
+        startIndex={primaryIndex}
+        lang={lang}
+        contentLang={primary.content_lang || 'da'}
+      />
+    );
   }
 }
 type TimelineProps = {
@@ -221,7 +234,11 @@ class Timeline extends React.Component<TimelineProps> {
         };
         html = (
           <div style={{ paddingTop: '0.37em' }}>
-            <Picture picture={picture} srcPrefix="/static" lang={lang} />
+            <Picture
+              pictures={[picture]}
+              lang={lang}
+              contentLang={picture.content_lang || 'da'}
+            />
           </div>
         );
       } else {
@@ -256,7 +273,7 @@ class Timeline extends React.Component<TimelineProps> {
 }
 type BioProps = {
   lang: Lang,
-  portrait?: PictureItem,
+  portraits?: Array<PictureItem>,
   poet: Poet,
   timeline: Array<TimelineItem>,
   content_html: TextContentType,
@@ -272,7 +289,7 @@ export default class extends React.Component<BioProps> {
     const json = await Client.bio(poetId);
     return {
       lang,
-      portrait: json.portrait,
+      portraits: json.portraits,
       poet: json.poet,
       content_html: json.content_html,
       content_lang: json.content_lang,
@@ -285,7 +302,7 @@ export default class extends React.Component<BioProps> {
     const {
       lang,
       poet,
-      portrait,
+      portraits,
       content_html,
       content_lang,
       timeline,
@@ -301,7 +318,7 @@ export default class extends React.Component<BioProps> {
       <SplitWhenSmall key="first-and-on">
         <PersonMeta poet={poet} lang={lang} />
         <div style={{ width: '100%', marginTop: '40px' }}>
-          <PersonPortrait poet={poet} portrait={portrait} lang={lang} />
+          <PersonPortrait poet={poet} portraits={portraits} lang={lang} />
         </div>
       </SplitWhenSmall>
     );

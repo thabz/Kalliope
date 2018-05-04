@@ -99,14 +99,16 @@ export const bio = async (poetId: PoetId): FetchBioResult => {
   return fetchJSON(`/static/api/${poetId}/bio.json`);
 };
 
-type FetchBibliographuResult = Promise<{
+type FetchMentionsResult = Promise<{
   poet: Poet,
+  mentions: Array<TextContentType>,
+  translations: Array<TextContentType>,
   primary: Array<TextContentType>,
   secondary: Array<TextContentType>,
   error: ?Error,
 }>;
-export const bibliography = async (poetId: PoetId): FetchBibliographuResult => {
-  return fetchJSON(`/static/api/${poetId}/bibliography.json`);
+export const mentions = async (poetId: PoetId): FetchMentionsResult => {
+  return fetchJSON(`/static/api/${poetId}/mentions.json`);
 };
 
 type FetchKeywordResult = Promise<Keyword>;

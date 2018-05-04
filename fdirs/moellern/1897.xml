@@ -11,6 +11,7 @@
    <pictures>
        <picture type="titlepage" src="1897-p1.jpg">Titelbladet til <i>Røster</i> (1897). ,,Niels Møller / Røster / Digte // København / Det Nordiske Forlag / Bogforlaget / Ernst Bojesen / 1897''.</picture>
    </pictures>
+   <source facsimile="11530808145B" facsimile-pages-num="118" facsimile-pages-offset="12">Niels Møller: <i>Røster</i>, Det nordiske Forlag, Kbh., 1897.</source>
 </workhead>
 <workbody>
 
@@ -18,9 +19,7 @@
   <head>
     <title>Annabella</title>
     <firstline>Al min sans er fuld af sommer, solberust i sene høst</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 1-4.</note>
-    </notes>
+    <source pages="1-4"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -90,9 +89,7 @@ når jeg vandrer myg og ene i min faders urtegård.
   <head>
     <title>Havrøster</title>
     <firstline>Gennem det rugende mørke, hvor aldrig et ildøje våger</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 5-11.</note>
-    </notes>
+    <source pages="5-11"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -201,9 +198,7 @@ døver du havets røster, der steder din sjæl i våde,
   <head>
     <title>September</title>
     <firstline>Jeg løfter blikket fra min fod</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 12-14.</note>
-    </notes>
+    <source pages="12-14"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -276,9 +271,7 @@ får livet rigest værd.
   <head>
     <title>Nytårsdigt</title>
     <firstline>Hvem gætter vel den næste dag?</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 15-17.</note>
-    </notes>
+    <source pages="15-17"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -350,10 +343,8 @@ og tiden tiden hævner.
 <poem id="moellern2017091905">
   <head>
     <title>Sommermorgen</title>
-    <firstline></firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 18.</note>
-    </notes>
+    <firstline>Vindskyggen drager dunkel på det blanke</firstline>
+    <source pages="18"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
     <keywords>sonnet</keywords>
   </head>
@@ -382,9 +373,7 @@ O, sjæl, hvor al din sorg er længst forsvunden!
   <head>
     <title>Serenitas</title>
     <firstline>Hjærtets længsel flagrer slagen som en fangen fugl i bur</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s.19-23.</note>
-    </notes>
+    <source pages="19-23"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -465,9 +454,7 @@ og den frie fugl i lunden fløjter bag det lette løv.
   <head>
     <title>Sonetter</title>
     <firstline>Her er det gode gamle, som vi kender</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 24-25.</note>
-    </notes>
+    <source pages="24-25"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
     <keywords>sonnet</keywords>
   </head>
@@ -523,9 +510,9 @@ og søge Miltons kongelige vers.
         <line>Af Clinton Scollard</line>
     </subtitle>
     <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 26-28.</note>
-        <note>Gendigtning af Clinton Scollards <xref poem="scollard2017091901"/>.</note>
+        <note>Gendigtning af Clinton Scollards <xref type="translation" poem="scollard2017091901"/>.</note>
     </notes>
+    <source pages="26-28"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -585,9 +572,7 @@ til et ræddeligt råb om en grufuld gæst.
   <head>
     <title>Sonet</title>
     <firstline>Den tyste nat i vide ringe rundes</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 29.</note>
-    </notes>
+    <source pages="29"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
     <keywords>sonnet</keywords>
   </head>
@@ -616,10 +601,8 @@ og har nu snart så meget, vi kan føre.
   <head>
     <title>Ørnen og skarnbassen</title>
     <subtitle>(Efter en Aisopisk fabel)</subtitle>
-    <firstline></firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 30-36.</note>
-    </notes>
+    <firstline>Haren ræd over marken sprang</firstline>
+    <source pages="30-36"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -772,11 +755,11 @@ så højt, som selv ikke Zevs kan nå. —
 <poem id="moellern2017091911">
   <head>
     <title>Kalypsos ø</title>
-    <firstline></firstline>
+    <firstline>Om os regnens røster mangelunde</firstline>
     <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 37-46.</note>
         <note>I indholdsfortegnelsen angives titlen som ,,Kalypsos ø'', men over digtet skrives titlen med apostrof ,,KALYPSO'S Ø''.</note>
     </notes>
+    <source pages="37-46"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1008,9 +991,8 @@ favnet blødt af fulde, hvide arme. -
   <head>
     <title>Holger Drachmann</title>
     <firstline>Den mand, hvis sange atter bringer vår</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 47-53.</note>
-    </notes>
+    <source pages="47-53"/>
+    <keywords>drachmann</keywords>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1189,9 +1171,7 @@ til selve Danmarks tunge evig tier.
   <head>
     <title>Den gamle bog</title>
     <firstline>Decemberdagens sejge nat</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 54-58.</note>
-    </notes>
+    <source pages="54-58"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1314,9 +1294,7 @@ den gamle herres frie tanker.
   <head>
     <title>Den umyndiges røst</title>
     <firstline>Lille pige, fem år gammel</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 59-60.</note>
-    </notes>
+    <source pages="59-60"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1369,9 +1347,7 @@ så langt har jeg ikke lært.«
   <head>
     <title>Profil</title>
     <firstline>Hvor tindred kløgten lutret i hans blik!</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 61.</note>
-    </notes>
+    <source pages="61"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1391,10 +1367,8 @@ hans sjæl blev stiv og stansed, før han vel var atten år.
 <poem id="moellern2017091916">
   <head>
     <title>Kragerige</title>
-    <firstline></firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 62.</note>
-    </notes>
+    <firstline>De bløde drossel-fløjt fordrives snart af lunden</firstline>
+    <source pages="62"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1415,9 +1389,7 @@ Vi véd, at mad er livets mål og skoven kun er kæppe!
   <head>
     <title>Bygmestre</title>
     <firstline>Der sidder én og øder guld som sand</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 63.</note>
-    </notes>
+    <source pages="63"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1437,10 +1409,8 @@ De bygger svært forsigtig, men på is, som ej er tryg.
 <poem id="moellern2017091918">
   <head>
     <title>Verdens Konge</title>
-    <firstline></firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 64.</note>
-    </notes>
+    <firstline>Jeg så' dit billed dækt af guld og glitter</firstline>
+    <source pages="64"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1461,9 +1431,7 @@ min gud, min gud, hvorfor har du forladt mig!
   <head>
     <title>Måneskyer</title>
     <firstline>Bag byens skarpe skyggerids</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 65-67.</note>
-    </notes>
+    <source pages="65-67"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1534,9 +1502,7 @@ sig banker trygt til ro.
     <title>Min rigdom er mit spyd og sværd</title>
     <subtitle>(Græse vise)</subtitle>
     <firstline>Min rigdom er mit spyd og sværd </firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 68.</note>
-    </notes>
+    <source pages="68"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1560,9 +1526,7 @@ og mig sin konge kalde.
   <head>
     <title>Afholdssang</title>
     <firstline>Fremad, o mø og mand, gå frem!</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 69-71.</note>
-    </notes>
+    <source pages="69-71"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1622,9 +1586,7 @@ om af kommende kvide de trues.
   <head>
     <title>Judas</title>
     <firstline>Jeg fulgte ham en stund med ung troskyldig varme</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 72.</note>
-    </notes>
+    <source pages="72"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1646,9 +1608,9 @@ At disse nu fornægter mig, det er min største tort.
     <title>Vreden</title>
     <firstline>Jeg blev vred på min bror</firstline>
     <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 73-74.</note>
-        <note>Gendigtning af William Blakes <xref poem="blake1999041330"/> fra <i>Songs of Innocence and of Experience</i> (1794).</note>
+        <note>Gendigtning af William Blakes <xref type="translation" poem="blake1999041330"/> fra <i>Songs of Innocence and of Experience</i> (1794).</note>
     </notes>
+    <source pages="73-74"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1681,9 +1643,9 @@ min fjende død ved træet lå.
     <title>Elskovs lund</title>
     <firstline>Jeg lagde mig i dalens skød</firstline>
     <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 75-76.</note>
-        <note>Gendigtning af William Blakes <xref poem="blake1999041338"/> fra <i>Songs of Innocence and of Experience</i> (1794).</note>
+        <note>Gendigtning af William Blakes <xref type="translation" poem="blake1999041338"/> fra <i>Songs of Innocence and of Experience</i> (1794).</note>
     </notes>
+    <source pages="75-76"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1719,9 +1681,7 @@ med tjørne min længsel og lykke.
   <head>
     <title>Love and Death</title>
     <firstline>Høj og hvid den strænge Død mod huset skrider</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 77.</note>
-    </notes>
+    <source pages="77"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1742,9 +1702,7 @@ dybt den sorte matadors stål i nakken stødes.
   <head>
     <title>Rondeau</title>
     <firstline>Kom til mig, når sorgen gyder</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 78.</note>
-    </notes>
+    <source pages="78"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1768,9 +1726,7 @@ kald! jeg møder, når det lyder:
   <head>
     <title>Samfundsstøtte</title>
     <firstline>Vi er et jævnt og sundt og sindigt folk, som træder</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 79.</note>
-    </notes>
+    <source pages="79"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1791,9 +1747,7 @@ Ja dyden har sin egen løn og synd sin straf! (En soda!)
   <head>
     <title>Forår</title>
     <firstline>De store skyer farer</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 80-83.</note>
-    </notes>
+    <source pages="80-83"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -1893,9 +1847,7 @@ vor fader, vor frelser, vor hersker, vor gud,
   <head>
     <title>Konge uden land</title>
     <firstline>Nu er lykken vundet</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 84-91.</note>
-    </notes>
+    <source pages="84-91"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -2067,9 +2019,7 @@ mænd, hvad mand er værd.
   <head>
     <title>Grænsevagt</title>
     <firstline>Der er vel dag til suk og gråd</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 92-94.</note>
-    </notes>
+    <source pages="92-94"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -2126,10 +2076,8 @@ stærk til at møde striden uforsagt.
 <poem id="moellern2017091931">
   <head>
     <title>Dampskibet</title>
-    <firstline></firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 95-101.</note>
-    </notes>
+    <firstline>Jeg er slimet og grå</firstline>
+    <source pages="95-101"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>
@@ -2315,9 +2263,7 @@ og et tog
     <title>De to ravne</title>
     <subtitle>Skotsk folkevise</subtitle>
     <firstline>Mens jeg alene gik min vej</firstline>
-    <notes>
-        <note>Teksten følger <i>Røster</i> (1897), s. 102.</note>
-    </notes>
+    <source pages="102"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
   </head>
   <body>

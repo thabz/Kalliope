@@ -11,6 +11,7 @@ import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import TwoColumns from '../components/twocolumns.js';
 import SidebarPictures from '../components/sidebarpictures.js';
+import Picture from '../components/picture.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
@@ -22,6 +23,7 @@ import type {
   NewsItem,
   TextContentType,
   AboutItem,
+  Error,
 } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 
@@ -33,7 +35,7 @@ type AboutProps = {
   aboutItemId: string,
   error: ?Error,
 };
-export default class extends React.Component<AboutProps> {
+export default class About extends React.Component<AboutProps> {
   static async getInitialProps({
     query: { lang, aboutItemId },
   }: {
@@ -59,17 +61,18 @@ export default class extends React.Component<AboutProps> {
       return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
     }
     const requestPath = `/${lang}/about/${aboutItemId}`;
-
-    const renderedPictures = (
-      <SidebarPictures
-        key="pictures"
-        lang={lang}
-        pictures={keyword.pictures}
-        showDropShadow={aboutItemId !== 'kalliope'}
-        clickToZoom={aboutItemId !== 'kalliope'}
-        srcPrefix={'/static/images/about'}
-      />
-    );
+    const pictures = keyword.pictures.map(p => {
+      return (
+        <Picture
+          pictures={[p]}
+          contentLang={p.content_lang || 'da'}
+          showDropShadow={aboutItemId !== 'kalliope'}
+          clickToZoom={aboutItemId !== 'kalliope'}
+          lang={lang}
+        />
+      );
+    });
+    const renderedPictures = <SidebarPictures>{pictures}</SidebarPictures>;
     const renderedNotes = keyword.notes.map((note, i) => {
       return <Note key={i} note={note} lang={lang} />;
     });
