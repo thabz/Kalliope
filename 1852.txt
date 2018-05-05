@@ -2,9 +2,8 @@ KILDE:C. Hostrup: <i>Viser og Vers</i>, F. H. Eibe, Kbh., 1852.
 DIGTER:hostrup
 
 
-
 T:Til Læseren
-F:
+F:Hvis du vil af Længsler ømme
 SIDE:1-3
 
 Hvis du vil af Længsler ømme 
@@ -452,6 +451,7 @@ T:Livet paa Vandet
 U:Paa Hjemrejsen fra Upsala 1843
 F:Nys fløj vi over Skyen et evigt Sekund
 SIDE:27-29
+NOTE:* Paa Upsalarejsen blev holdt Maaltid i forskjellige Hold (Sectioner), og et Par Medlemmer af Bestyrelsen holdt Orden ved Døren til Spisesalen.
 
 Nys fløj vi over Skyen et evigt Sekund, 
 nu dale vi atter mod Landet,
@@ -681,6 +681,7 @@ T:Til Vennerne i Lund
 U:Efter Besøget i Lund 1851
 F:Rejsen er forbi, jeg staaer paa Hjemmets Vang
 SIDE:37-39
+NOTE:* Ved Indvielsen af Studenterforenings-Bygningen i Lund sammenlignede en Taler den med ,,det sköna slottet östan om solen och nordan om jorden'', som omtales i de svenske Folkeeventyr.
 
 Rejsen er forbi, jeg staaer paa Hjemmets Vang,
 ikke dog jeg føler mig hjemme,
@@ -888,7 +889,7 @@ prise fro vort stolte Nord.
 
 T:Velkommen til Upsalenserne 
 U:I Kjøbenhavn 1852
-F:
+F:Hil dig i Bøgens Ly!
 SIDE:48-49
 
     Hil dig i Bøgens Ly! 
@@ -1169,6 +1170,7 @@ T:Efter Kampen ved Ekkernførde
 U:Foraar 1849
 F:Det var en Skjærtorsdag, Kongedyb bar
 SIDE:63-65
+NOTE:* =Kampen ved Ekkernforde= og =Slaget ved Isted= ere begge skrevne til Forestillinger, som gaves til Fordeel for Invaliderne.
 
 Det var en Skjærtorsdag, Kongedyb bar 
 to kæmpende Flaader, og Kampen var svar. 
@@ -1319,6 +1321,7 @@ U:25 Juli 1851
 F:Et Aar randt hen — ja kun et Aar
 SIDE:68-73
 EVENT:1851-07-25
+NOTE:* =Kampen ved Ekkernforde= og =Slaget ved Isted= ere begge skrevne til Forestillinger, som gaves til Fordeel for Invaliderne.
 
 Et Aar randt hen — ja kun et Aar, 
 og roligt alt vor Hjerte slaaer,
@@ -1418,6 +1421,7 @@ SEKTION:Blandede Viser og Digte
 T:Studentersang
 F:Eensom og mørk og snæver er vor Bolig
 SIDE:77
+NOTE:* Studentersang findes i ,,En Spurv i Tranedands.'' Forf. har troet ikke at burde berøve denne lille Samling og dem, som kjøbe den uden at eje hans øvrige Arbejder, de faa selvstændige Viser, der findes i hans Komedier, saameget mere som flere af disse høre til de meest bekjendte Studentersange.
 
 Eensom og mørk og snæver er vor Bolig
 Tummel og Spræl,
@@ -1774,6 +1778,7 @@ T:Til en Natteravn
 TOCTITEL:<num>1.</num>Til en Natteravn
 F:Kjære Ven! ifald du noksom
 SIDE:94-95
+NOTE:* Det vilde (efter Forf.s Mening) kun lidet gavne denne Samling, om han med ærbar Alvorlighed vilde befrie den for alle Narrestreger; den vilde dog ikke vinde nogen ,,værdig Holdning,,, og den vilde tabe en stor Deel af den Ungdommelighed, som er dens Særkjende. For den som ikke kan taale disse Par Blade, vil formodentlig hele Samlingen alligevel være til Forargelse.
 
 Kjære Ven! ifald du noksom 
 skjønner paa den lille Skok, som 
@@ -1971,21 +1976,25 @@ F:
 SIDE:103-
 
 
-Regisseurenkommerhastigt. StortSkjænderiudenforScenen.
-Regisseuren.
-Hojsterrede Publikum! ganske betuttet,
-forknyt, flukoret De her mig seer;
-(Skiænderiet tiltager.)
-dog knap jeg behover at sige meer,
-De faaer det, at vide paa Minuttet.
-(standser et Ojeblik.)
-Nu bliver det stille! tør jeg da tale,
-tor jeg da regne paa Skaansel hos Dem,
-naar jeg fortæller Dem ligefrem,
-hvorfor De derinde er bleven saa gale? , Det hele — stille! kommer der nogen?
-det hele drejer sig om Prologen.
-De veed, en Prolog var averteret, og nu skulde just den til at gaae;
+{sc:Regisseuren kommer hastigt. Stort Skjænderi udenfor Scenen.}
 
+{c:Regisseuren.}
+
+Højstærede Publikum! ganske betuttet,
+forknyt, slukøret De her mig seer;
+{rs:(Skjænderiet tiltager.)}
+dog knap jeg behøver at sige meer,
+De faaer det, at vide paa Minuttet.
+{rs:(standser et Øjeblik.)}
+Nu bliver det stille! tør jeg da tale,
+tør jeg da regne paa Skaansel hos Dem,
+naar jeg fortæller Dem ligefrem,
+hvorfor De derinde er bleven saa gale? 
+Det hele — stille! kommer der nogen?
+det hele drejer sig om Prologen.
+De veed, en Prolog var averteret, 
+og nu skulde just den til at gaae;
+===SIDE 104===
 
 Aktoren, som havde den indstuderet,
 stod pyntet i Sort fra Top til Taa,
@@ -2750,246 +2759,341 @@ og prise den Vaar, som har os forladt,
 og hilse den, som skal komme!
 
 
-T:
-F:
-SIDE:
+SEKTION:Paa Hendes Fødselsdag
 
-P a a Hendes Fødselsdag.
-i.
-Sving dig kun lystig, du vilde Vind! henover de falmede Blade!
-der grønnes et Foraar i mit Sind, som ej du mægter at stade.
-Stig ned, du sorte Nat, og hent hvert Glimt, som end blev tilbage; nu i min Sjæl et Lys er tændt, hvis Glands du ikke kan tage.
-Jeg sandt jo et Hjerte stærkt og blidt, som fast sig til mit vil trykke,
-jeg fandt jo et Dje, som i mit vil læse sin Fryd og-Lykke,
-en Haand, der vil gjennem Storm og Slud mig lede til Dødens Strande,
-og undervejs glatte Furen ud, som Kampen skjær i min Pande.
-.-
+T:Sving dig kun lystig, du vilde Vind!
+TOCTITEL:<num>1.</num>Sving dig kun lystig, du vilde Vind!
+F:Sving dig kun lystig, du vilde Vind!
+SIDE:144-145
 
-Min elskede Pige! med frejdigt Mod vi solges ad i det Fjerne,
-dit Sje skal lyse for min Fod,
-min Arm om din Fred skal verrne; hver Perle, jeg huser i Hjertets Gjem, skal til din Rigdom jeg foje,
-og hver din Taare, som perler frem, den kysser jeg bort af dit §)je.
-Naar vi to solges, hvad hindrer vort Held? sig Livet maa efter os rette;
+Sving dig kun lystig, du vilde Vind! 
+henover de falmede Blade!
+der grønnes et Foraar i mit Sind, 
+som ej du mægter at stade.
+Stig ned, du sorte Nat, og hent 
+hvert Glimt, som end blev tilbage; 
+nu i min Sjæl et Lys er tændt, 
+hvis Glands du ikke kan tage.
+
+Jeg fandt jo et Hjerte stærkt og blidt, 
+som fast sig til mit vil trykke,
+jeg fandt jo et Øje, som i mit 
+vil læse sin Fryd og Lykke,
+en Haand, der vil gjennem Storm og Slud 
+mig lede til Dødens Strande,
+og undervejs glatte Furen ud, 
+som Kampen skjær i min Pande.
+
+Min elskede Pige! med frejdigt Mod 
+vi følges ad i det Fjerne,
+dit Øje skal lyse for min Fod,
+min Arm om din Fred skal værne; 
+hver Perle, jeg huser i Hjertets Gjem, 
+skal til din Rigdom jeg føje,
+og hver din Taare, som perler frem, 
+den kysser jeg bort af dit Øje.
+
+Naar vi to følges, hvad hindrer vort Held? 
+sig Livet maa efter os rette;
 er Verden kommen af Lave? vel!
 vi skal den i Lave sætte.
-Fremad, om Vejret er mildt og vredt! kun fremad, uden at standse!
-hver Stund, vi aande, skal være et Skridt mod Sejrens Evighedskrandse.
+Fremad, om Vejret er mildt og vredt! 
+kun fremad, uden at standse!
+hver Stund, vi aande, skal være et Skridt 
+mod Sejrens Evighedskrandse.
 
-t
-Aaret henrandt. Gik det opad, eller gik det ned ad Bakke? har vi hostet, hvad vi vented? skal jeg klage eller takke?
-Jeg vil takke; thi af Glædens fulde Skaal du lod mig drikke, og du gav mig bløde Haandtryk,
-sode Kys og omme Blikke.
+
+T:Aaret henrandt. Gik det opad
+TOCTITEL:<num>2.</num>Aaret henrandt. Gik det opad
+F:Aaret henrandt. Gik det opad
+SIDE:146
+
+Aaret henrandt. Gik det opad, 
+eller gik det ned ad Bakke? 
+har vi høstet, hvad vi vented? 
+skal jeg klage eller takke?
+
+Jeg vil takke; thi af Glædens 
+fulde Skaal du lod mig drikke, 
+og du gav mig bløde Haandtryk,
+søde Kys og ømme Blikke.
+
 I dit dybe, rene Hjerte
-har du ladt mig see til Bunden, og vor Himmel blaa sig hvælver, og hver Taage er forsvunden.
-Og jeg føler, jeg kan bære Livets Aag med oprejst Nakke, thi jeg veed, at du mig elsker omt og saft — og jeg vil takke.
+har du ladt mig see til Bunden, 
+og vor Himmel blaa sig hvælver, 
+og hver Taage er forsvunden.
 
+Og jeg føler, jeg kan bære 
+Livets Aag med oprejst Nakke, 
+thi jeg veed, at du mig elsker 
+ømt og fast — og jeg vil takke.
 
-T:
-F:
-SIDE:
+SLUTSEKTION
 
-Til en ung Musiker,
-hvem Forf. havde lovet et Digt til at sætte i Musik.
-Eil min Dommer
-angst jeg kommer,
-Loftet gav jeg dig saa kjæk;
-jeg har brudt det og fortrudt det,
+T:Til en ung Musiker,
+U:hvem Forf. havde lovet et Digt til at sætte i Musik.
+LINKTITEL:Til en ung Musiker
+TOCTITEL:Til en ung Musiker
+INDEXTITEL:Til en ung Musiker
+F:Til min Dommer angst jeg kommer
+SIDE:147-149
+
+    Til min Dommer
+    angst jeg kommer,
+Løftet gav jeg dig saa kjæk;
+    jeg har brudt det 
+    og fortrudt det,
 og nu lister jeg mig væk.
-Send mig ikke
-strenge Blikke!
-Ak, min Synd er ej saa ftor.
-Lad min lamme Tunge stamme
+
+    Send mig ikke
+    strenge Blikke!
+Ak, min Synd er ej saa stor.
+    Lad min lamme 
+    Tunge stamme
 frem et lille Forsvarsord!
 
-Ingen Muse la'r fig huse
-i et saldefærdigt Skuur; hun vil finde
-det derinde
+    Ingen Muse 
+    la'r fig huse
+i et faldefærdigt Skuur; 
+    hun vil finde
+    det derinde
 smykket som et Jomfrubuur.
-Hun vil have alt i Lave,
-ingen Træk og ingen Brost,
-hoje Bure, faste Mure,
+
+    Hun vil have 
+    alt i Lave,
+ingen Træk og ingen Brøst,
+    høje Bure, 
+    faste Mure,
 som kan bære hendes Røst.
-i
-Men forfalden
-er nu Hallen,
+
+    Men forfalden
+    er nu Hallen,
 som hun havde bygt sig her;
-Vinden trækker
-gjennem Sprækker, Moerker fra et Tordenvejr.
-Og den Slemme la'r sig skroemme,
-nu jeg aldrig hende seer; hvad jeg beder,
-hvad jeg leder. Musen kommer ikke meer.
+    Vinden trækker
+    gjennem Sprækker, 
+Mærker fra et Tordenvejr.
 
-Lad mig rejse, lille Heise!
-lad mig gaae til Fjeldets Land! Der alene
-faaer jeg Stene, som paa Huset bode kan.
-Hvis en Sommer atter kommer
-til mit kuldesyge Sind, tro mig, Kjære!
-da med ALre
-stal mit Ord jeg løse ind.
+    Og den Slemme 
+    la'r sig skræmme,
+nu jeg aldrig hende seer; 
+    hvad jeg beder,
+    hvad jeg leder,
+Musen kommer ikke meer.
+
+    Lad mig rejse, 
+    lille Heise!
+lad mig gaae til Fjeldets Land! 
+    Der alene
+    faaer jeg Stene, 
+som paa Huset bøde kan.
+
+    Hvis en Sommer 
+    atter kommer
+til mit kuldesyge Sind, 
+    tro mig, Kjære!
+    da med Ære
+skal mit Ord jeg løse ind.
 
 
-T:
-F:
-SIDE:
+T:Den norske Kvinde 
+U:I Norge 1849
+F:Man priser bestandig det norske Fjeld
+SIDE:150-151
 
-/
-Den norstre Kvinde. I Norye 1849.
-Mlan priser bestandig det norske Fjeld, og det er vel verrdt at ære;
+Man priser bestandig det norske Fjeld, 
+og det er vel værdt at ære;
 men Steen er Steen alligevel,
-hvor ftor den end mon være.
+hvor stor den end mon være.
 Ret gjerne jeg stiger med lystigt Mod
 til Fjeldets øverste Tinde,
-men heller jeg dvæler dog ved dets Fod, thi der er den norste Kvinde.
-Og det er min Tro, at alt hvad Smukt et Lands Natur har igjemme,
+men heller jeg dvæler dog ved dets Fod, 
+thi der er den norske Kvinde.
+
+Og det er min Tro, at alt hvad Smukt 
+et Lands Natur har igjemme,
 det bærer i Folkets Hjerte Frugt,
 det klinger i Folkets Stemme.
 I kraftige Træk, men spredt og vildt,
 hos Mændene man det finder,
-men samlet i Krands, harmonist og mildt,
+men samlet i Krands, harmonisk og mildt,
 hos Landets ypperste Kvinder.
-,
 
-Og derfor fljondt kjær er mig Granens Duft og Skyggen af Birkens Kroner,
-skjøndt gjerne jeg indsuger Fjeldtoppens Luft og lytter til Fossens Toner,
-saa vil jeg dog heller paa Eventyr gaae, hvor alt er famlet at finde,
-og.granske det Norge i det Smaa, som boer i ven norske Kvinde.
-Livstræt og modig herop jeg trem
+Og derfor skjøndt kjær er mig Granens Duft 
+og Skyggen af Birkens Kroner,
+skjøndt gjerne jeg indsuger Fjeldtoppens Luft 
+og lytter til Fossens Toner,
+saa vil jeg dog heller paa Eventyr gaae, 
+hvor alt er samlet at finde,
+og granske det Norge i det Smaa, 
+som boer i den norske Kvinde.
+
+Livstræt og modig herop jeg treen
 at kvæges i Norges Sommer;
 jeg Lægedom søgte hos Fjeldets Steen,
 og fandt den hos Dalens Blommer.
-Og Glæden, jeg nod paa denne Plet,
+Og Glæden, jeg nød paa denne Plet,
 det Hjem, De her lod mig finde,
 har gjort mig det kjært, har gjort mig det let
-at prise den norste Kvinde.
+at prise den norske Kvinde.
 
 
-T:
-F:
-SIDE:
+T:Oehlenschlægers Mindefest i Studenterforeningen 
+U:Paa Skydebanen d. 3. Juni 1850
+F:Frosten knugede Jorden
+SIDE:152-160
+BEGIVENHED:1850-06-03
+N:oehlenschlaeger
 
-Oehlenschlirgers Mindefest i Studenterforeningen. Paa Skydebanen d. 3. Juni 1850.
-I.
-frosten knugede Jorden,
+
+{c:1.}
+
+Frosten knugede Jorden,
 og Vinterstormen sang,
-toned da lydt et Sergekvad
-op fra den danske Vang; Sorgen foer over Bølgen blaa,
-den gjennem Fjeldet brod: trende Folk i Norden begræd en Faders Død.
-Mulm var bredt over Net, som klart i Mulmet saae, hunden var nu hiin stærke Røst,
+toned da lydt et Sørgekvad
+op fra den danske Vang; 
+Sorgen foer over Bølgen blaa,
+den gjennem Fjeldet brød: 
+trende Folk i Norden 
+begræd en Faders Død.
+
+Mulm var bredt over Øjet, 
+som klart i Mulmet saae, 
+hunden var nu hiin stærke Røst,
 der klang til Hjertets Vraa.
 Gud ham havde for Nordens Folk
 til Ledestjerne sat,
-nu var Stjernen flukket
+nu var Stjernen slukket
 en dunkel Vinternat.
 
-Sorgen lod over Engen,
+Sorgen lød over Engen,
 og Fjeldet sukked Svar;
-aldrig var født en Mand i Nord som meer for Norden var.
-Aldrig Sangen i Bøgens Loe
+aldrig var født en Mand i Nord, 
+som meer for Norden var.
+Aldrig Sangen i Bøgens Læ
 vil gaae til Folkets Bryst,
 Klang den jo vil bære
-af Mesterstjaldens Røst.
+af Mesterskjaldens Røst.
 
 
-T:
-F:
-SIDE:
+{c:2.}
 
-2.
-Sorgen, i Vinterens Hjerte baaren, mildt med Vinteren døer,
-over den sorte Grav har Vaaren bredt sit blommede Stor,
-op fra de dunkle Cypressers Ly stiger Lærken med Jubel i Sky.
+Sorgen, i Vinterens Hjerte baaren, 
+mildt med Vinteren døer,
+over den sorte Grav har Vaaren 
+bredt sit blommede Slør,
+op fra de dunkle Cypressers Ly 
+stiger Lærken med Jubel i Sky.
+
 Elskede Sanger! med trøstet Hu
 mindes vi nu hvad for os smerted,
 og vi tolke med Fryd i Hjertet,
 hvad du var og er os endnu.
-Her, hvor din sidste Sang du os gav, toet ved din Vugge, nær din Grav,
-her, hvor frist fra dit vaarlige Hjem Mindets Duft os imøde vifter,
+Her, hvor din sidste Sang du os gav, 
+tæt ved din Vugge, nær din Grav,
+her, hvor frisk fra dit vaarlige Hjem 
+Mindets Duft os imøde vifter,
 træder vor Tak og Beundring frem
 i et Kvad om din Manddoms Bedrifter.
 
 
-T:
-F:
-SIDE:
+{c:3.}
 
-3.
-Da gjennem Dampen Skjærtorsdagskampen
-med Vælde klang, og Malmet dundred
-det nye Aarhundred en Morgensang,
-da lod fra Vraget et mægtigt Knald, da vakte Braget den store Skjald.
-Han Nornen kjendte, i Barm ham brændte en Flamme stærk,
-og Djet smiilte, og Foden iilte til Kæmpeværk;
+Da gjennem Dampen 
+Skjærtorsdagskampen
+med Vælde klang, 
+og Malmet dundred
+det nye Aarhundred 
+en Morgensang,
+da lød fra Vraget 
+et mægtigt Knald, 
+da vakte Braget 
+den store Skjald.
 
-Med Guddomsvælde han Vej sig brod .
+Han Nornen kjendte, 
+i Barm ham brændte 
+en Flamme stærk,
+og Øjet smiilte, 
+og Foden iilte 
+til Kæmpeværk;
+Med Guddomsvælde 
+han Vej sig brød 
 igjennem Fjelde
-til Suttungs Mjod.
-Da foer han vide i Norrelide,
+til Suttungs Mjød.
+
+Da foer han vide 
+i Nørrelide,
 i Øst og Syd,
-og Norden studsed, og Saga blussed af Moderfryd.
-I Finnens Hytte, paa Libanon,
-han gjorde Bytte for Nordens Aand.
+og Norden studsed, 
+og Saga blussed 
+af Moderfryd.
+I Finnens Hytte, 
+paa Libanon,
+han gjorde Bytte 
+for Nordens Aand.
+
 De Somre ginge,
-ej Tiden tvinge ham kan i Knæ; sig Vintren nærmed, end Løvet stjærmed det ftoerke Troe;
+ej Tiden tvinge 
+ham kan i Knæ; 
+sig Vintren nærmed, 
+end Løvet skjærmed 
+det stærke Træ;
 og Frugter fandtes
 i Overflod,
-og Saften blandtes med Folkets Blod.
+og Saften blandtes 
+med Folkets Blod.
 
-J a Kæmpekraften
-i Norvens Aften paany fik Røst,
-og Danmarks Love
-stod kjækt sin Prøve paa Jyllands Kyst. Da saae den Hoje sin Udsæd groe,
-da Skjaldens Dje sig lukked fro.
+Ja Kæmpekraften
+i Nordens Aften 
+paany fik Røst,
+og Danmarks Løve
+stod kjækt sin Prøve 
+paa Jyllands Kyst. 
+Da saae den Høje 
+sin Udsæd groe,
+da Skjaldens Øje 
+sig lukked fro.
 
 
-T:
-F:
-SIDE:
+{c:4.}
 
-4.
 Fredriksberg, vær uden Frygt,
-naar den barske Vinter kommer! Skjalden har dig kjærligt smykt med uvisnelige Blommer.
+naar den barske Vinter kommer! 
+Skjalden har dig kjærligt smykt 
+med uvisnelige Blommer.
 Knejs, o Slot, med blanke Tinder!
-Hoje Stammer, groer i Sky! Fædrelandets bedste Minder gjemmes jo i eders Ly.
-Du som gaaer bag Havens Trerer, hust, en Helligdom er Stedet! Skjaldens Aand end dvæler der, hvor han levet har og kvædet.
-Lyt til Trillerne, som stige fra det lysegrønne Blad! det er Gjenlyd af det rige Barnehjertes friste Kvad.
+Høje Stammer, groer i Sky! 
+Fædrelandets bedste Minder 
+gjemmes jo i eders Ly.
 
-Angling, i hvis varme Bryst hojl ve stærke Toner klinge,
-der fornemmer du med Lyst som en Susen af hans Vinge;
-og i Glands af Mindets Stjerner gaaer du mangen Aften seen
-did, hvor Landsbykirken værner over Skjaldens Mindesteen.
+Du som gaaer bag Havens Træer, 
+husk, en Helligdom er Stedet! 
+Skjaldens Aand end dvæler der, 
+hvor han levet har og kvædet.
+Lyt til Trillerne, som stige 
+fra det lysegrønne Blad! 
+det er Gjenlyd af det rige 
+Barnehjertes friske Kvad.
+
+Yngling, i hvis varme Bryst 
+højt de stærke Toner klinge,
+der fornemmer du med Lyst 
+som en Susen af hans Vinge;
+og i Glands af Mindets Stjerner 
+gaaer du mangen Aften seen
+did, hvor Landsbykirken værner 
+over Skjaldens Mindesteen.
 
 
-T:
-F:
-SIDE:
+{c:5.}
 
-5.
-Ja vi, o Fader, hvem Nerring du gav med Blod af din egen Aare,
-vi ofre paa din hellige Grav Beundringens hedeste Taare.
-Den Skat, du den Unge gav i Arv, skal han i sit Hjerte pleje,
+Ja vi, o Fader, hvem Næring du gav 
+med Blod af din egen Aare,
+vi ofre paa din hellige Grav 
+Beundringens hedeste Taare.
+Den Skat, du den Unge gav i Arv, 
+skal han i sit Hjerte pleje,
 og den skal give ham Mod og Marv
 til Vandring paa dine Veje,
 til Daad, som kan lyse fra Strand til Strand
-og hoedre dig og dit Fædreland.
-
-
-T:
-F:
-SIDE:
-
-Anmærkninger.
-Livet -aa Vandet. Paa Upsalarejsen blev holdt Maaltid i forfljellige Hold (Sectioner), og et Par Medlemmer af Bestyrelsen holdt Orden ved Døren til Spisesalen.
-Til Vennerne i Lund. Ved Indvielsen af Studenterforenings- Bygningen i Lund sammenlignede en Taler den med
-,,det skona slottet ostan om solen och nordan om jorden'', som omtales i de svenske Folkeeventyr.
-Kampen ved Ekkernforde og Slaget ved Jsted ere begge skrevne til Forestillinger, som gaves til Fordeel for Invaliderne.
-Studentersang findes i ,,En Spurv i Tranedands.'' Forf. har troet ikke at burde berove denne lille Samling og dem, som kjøbe den uden at eje hans ovrige Arbejder, de faa selvstændige Viser, der findesi hans Komedier, saameget
-mere som flere af disse høre til de meest bekjendte Studentersange.
-Lsjer. Det vilde (efter Forf.s Mening) kun lidet gavne denne Samling, om han med oerbar Alvorlighed vilde bcfrie
-den for alle Narrestreger; den vilte dog ikke vinde nogen ,,verrdig Holdning,,, og den vilde tabe en stor Deel af den Ungdommelighed. som er dens Særkjende. For den
-som ikke kan taale disse Par Blade, vil formodentlig hele Samlingen alligevel være til Forargelse.
-
-
-
-
-
+og hædre dig og dit Fædreland.
 
