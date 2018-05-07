@@ -24,6 +24,7 @@ import Picture from '../components/picture.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
+import _ from '../pages/helpers/translations.js';
 import ErrorPage from './error.js';
 import type {
   Lang,
@@ -361,12 +362,18 @@ export default class extends React.Component<TextComponentProps> {
     );
 
     const title = <PoetName poet={poet} includePeriod />;
-    const ogTitle =
-      poetNameString(poet, false, false) +
-      ': »' +
-      textLinkTitleString(text) +
-      '« fra ' +
-      workTitleString(work);
+
+    const ogTitle = _(`{poetName}: »{poemTitle}« fra {workTitle}`, lang, {
+      poetName: poetNameString(poet, false, false),
+      poemTitle: textLinkTitleString(text),
+      workTitle: workTitleString(work),
+    });
+    // const ogTitle =
+    //   poetNameString(poet, false, false) +
+    //   ': »' +
+    //   textLinkTitleString(text) +
+    //   '« fra ' +
+    //   workTitleString(work);
     const headTitle =
       textLinkTitleString(text) +
       ' - ' +
