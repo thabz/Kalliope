@@ -961,7 +961,8 @@ const build_global_lines_json = collected => {
         });
       }
     });
-
+// TODO: Vi skriver kun for den ændrede digter, ikke alle digtere i landet
+// TODO: firstletters som er tal, skal gruperes i sin egen sektion "Andre".
     // Write the json files
     collected_lines.forEach((per_country, country) => {
       per_country.forEach((per_linetype, linetype) => {
