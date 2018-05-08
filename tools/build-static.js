@@ -108,7 +108,7 @@ const load_timeline = filename => {
       ),
     };
     if (type === 'image') {
-      data.src = '/static/'+event.get('src').text();
+      data.src = '/static/' + event.get('src').text();
     }
     return data;
   });
@@ -914,11 +914,79 @@ const handle_work = work => {
   return { lines, toc, notes, pictures };
 };
 
+const build_global_lines_json = collected => {
+  let changed_langs = {};
+  let found_changes = false;
+  collected.workids.forEach((workIds, poetId) => {
+    workIds.forEach(workId => {
+      const workFilename = `fdirs/${poetId}/${workId}.xml`;
+      if (!isFileModified(workFilename)) {
+        return;
+      } else {
+        const poet = collected.poets.get(poetId);
+        changed_langs[poet.country] = true;
+        found_changes = true;
+      }
+    });
+  });
+  if (found_changes) {
+    // Collect the lines for the changed countries
+    // collected_lines[country][titles|first][letter] is an array of lines
+    let collected_lines = new Map(); 
+    collected.texts.forEach((textMeta, textId) => {
+      const poet = collected.poets.get(textMeta.poetId);
+      if (changed_langs[poet.country]) {
+        let per_country = collected_lines.get(poet.country) || new Map();
+        collected_lines.set(poet.country, per_country);
+        ['titles', 'first'].forEach(linetype => {
+          let per_linetype = per_country.get(linetype) || new Map();
+          per_country.set(linetype, per_linetype);
+          let line =
+            linetype == 'titles' ? textMeta.linkTitle : textMeta.firstline;
+          if (line != null) {
+            // firstline is null for prose texts
+            const indexableLine = line.replace(/^Aa/,"Å");
+            const firstletter = indexableLine[0];
+            let per_letter = per_linetype.get(firstletter) || [];
+            per_letter.push({
+              poet: {
+                id: textMeta.poetId,
+                name: poetName(poet),
+              },
+              line,
+              textId,
+            });
+            per_linetype.set(firstletter, per_letter);
+          }
+        });
+      }
+    });
+
+    // Write the json files
+    collected_lines.forEach((per_country, country) => {
+      per_country.forEach((per_linetype, linetype) => {
+        const letters = Array.from(per_linetype.keys()).sort((a,b) => a.localeCompare(b, 'da-DK')); 
+        per_linetype.forEach((lines, letter) => {
+          const data = {
+            letters,
+            lines,
+          };
+          const filename = `static/api/${country}-${linetype}-${letter}.json`;
+          console.log(filename);
+          writeJSON(filename, data);
+        });
+      });
+    });
+  }
+};
+
 // Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
 const works_first_pass = collected => {
   let texts = new Map(loadCachedJSON('collected.texts') || []);
   let works = new Map(loadCachedJSON('collected.works') || []);
+  let lines = new Map(loadCachedJSON('collected.lines') || []);
+
   let found_changes = false;
   const force_reload = texts.size === 0 || works.size === 0;
   collected.workids.forEach((workIds, poetId) => {
@@ -960,6 +1028,8 @@ const works_first_pass = collected => {
         const linkTitle = linktitle || title || firstline;
         texts.set(textId, {
           title: replaceDashes(linkTitle),
+          firstline: replaceDashes(firstline),
+          linkTitle: replaceDashes(linkTitle),
           type: part.name(),
           poetId: poetId,
           workId: workId,
@@ -1002,13 +1072,10 @@ const works_second_pass = collected => {
         }
         data.source = {
           source,
-        }
+        };
         let facsimile = safeGetAttr(sourceNode, 'facsimile');
         if (facsimile != null) {
-          facsimile = facsimile.replace(
-            /.pdf$/,
-            ''
-          );
+          facsimile = facsimile.replace(/.pdf$/, '');
           let facsimilePagesOffset = safeGetAttr(
             sourceNode,
             'facsimile-pages-offset'
@@ -1016,7 +1083,7 @@ const works_second_pass = collected => {
           if (facsimilePagesOffset != null) {
             facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
           }
-  
+
           const facsimilePageCount = safeGetAttr(
             sourceNode,
             'facsimile-pages-num'
@@ -1030,8 +1097,8 @@ const works_second_pass = collected => {
             ...data.source,
             facsimile,
             facsimilePageCount: parseInt(facsimilePageCount, 10),
-            facsimilePagesOffset,  
-          }
+            facsimilePagesOffset,
+          };
         }
       }
       collected_works.set(poetId + '-' + workId, data);
@@ -1755,7 +1822,7 @@ const build_about_pages = collected => {
       const head = about.get('head');
       const body = about.get('body');
       const title = head.get('title').text();
-      const pictures = get_pictures(head,'/static/images/about');
+      const pictures = get_pictures(head, '/static/images/about');
       const author = safeGetText(head, 'author');
       const poemsNum = Array.from(collected.texts.values())
         .map(t => (t.type === 'poem' ? 1 : 0))
@@ -2253,6 +2320,7 @@ collected.textrefs = b('build_textrefs', build_textrefs, collected);
 build_dict_first_pass(collected);
 collected.keywords = b('build_keywords', build_keywords);
 b('build_poet_lines_json', build_poet_lines_json, collected);
+b('build_global_lines_json', build_global_lines_json, collected);
 b('build_poet_works_json', build_poet_works_json, collected);
 b('works_second_pass', works_second_pass, collected);
 b('build_works_toc', build_works_toc, collected);
