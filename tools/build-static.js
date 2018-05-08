@@ -945,7 +945,7 @@ const build_global_lines_json = collected => {
             linetype == 'titles' ? textMeta.linkTitle : textMeta.firstline;
           if (line != null) {
             // firstline is null for prose texts
-            const indexableLine = line.replace(/^Aa/,"Å");
+            const indexableLine = line.replace(/^Aa/,"Å").toUpperCase().replace(/^Ö/,'Ø').replace(/^\[/,'');
             const firstletter = indexableLine[0];
             let per_letter = per_linetype.get(firstletter) || [];
             per_letter.push({
@@ -961,8 +961,8 @@ const build_global_lines_json = collected => {
         });
       }
     });
-// TODO: Vi skriver kun for den ændrede digter, ikke alle digtere i landet
 // TODO: firstletters som er tal, skal gruperes i sin egen sektion "Andre".
+// Hvad med franske Á eller tyske Ä og Ü. Hvordan grupperer tyskerne sine ordbøger?
     // Write the json files
     collected_lines.forEach((per_country, country) => {
       per_country.forEach((per_linetype, linetype) => {
@@ -986,7 +986,6 @@ const build_global_lines_json = collected => {
 const works_first_pass = collected => {
   let texts = new Map(loadCachedJSON('collected.texts') || []);
   let works = new Map(loadCachedJSON('collected.works') || []);
-  let lines = new Map(loadCachedJSON('collected.lines') || []);
 
   let found_changes = false;
   const force_reload = texts.size === 0 || works.size === 0;
