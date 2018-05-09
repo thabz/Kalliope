@@ -54,6 +54,16 @@ export const poets = async (country: Country): FetchPoetsResult => {
   return fetchJSON(`/static/api/poets-${country}.json`);
 };
 
+type FetchGlobalLinesResult = Promise<{
+  lines: Array<any>,
+  letters: Array<string>
+  error: ?Error,
+}>;
+export const globalLines = async (country: Country, type: LinesType, letter:string): FetchGlobalLinesResult => {
+  return fetchJSON(`/static/api/${country}-${type}-${letter}.json`);
+};
+
+
 type FetchDictItemResult = Promise<{
   item: DictItem,
   error: ?Error,

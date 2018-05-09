@@ -7,7 +7,6 @@ import { Link } from '../routes';
 import * as Links from '../components/links';
 import Nav from '../components/nav';
 import LangSelect from '../components/langselect.js';
-import CountryPicker from '../components/countrypicker.js';
 import Tabs from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
@@ -24,87 +23,35 @@ import type {
   Country,
   Section,
   Poet,
-  SortReturn,
-  SectionForRendering,
+  LinesType,
   Error,
 } from './helpers/types.js';
 
-type GroupBy = 'name' | 'year';
-
-const groupsByLetter = (poets: Array<Poet>, lang: Lang) => {
-  let groups = new Map();
-  poets.filter(p => p.type !== 'person').forEach(p => {
-    let key = _('Ukendt digter', lang);
-    if (p.name.lastname != null) {
-      key = p.name.lastname[0];
-    }
-    if (
-      key === 'A' &&
-      p.name.lastname != null &&
-      p.name.lastname.indexOf('Aa') === 0
-    ) {
-      key = 'Å';
-    }
-    let group = groups.get(key) || [];
-    group.push(p);
-    groups.set(key, group);
-  });
-  let sortedGroups = [];
-  groups.forEach((group, key) => {
-    sortedGroups.push({
-      title: key,
-      items: group.sort(Sorting.poetsByLastname),
-    });
-  });
-  return sortedGroups.sort(Sorting.sectionsByTitle);
-};
-
-const groupsByYear = (poets: Array<Poet>, lang: Lang) => {
-  let groups = new Map();
-  poets.filter(p => p.type === 'poet').forEach(p => {
-    let key = _('Ukendt fødeår', lang);
-    if (
-      p.period != null &&
-      p.period.born != null &&
-      p.period.born.date !== '?'
-    ) {
-      const year = parseInt(p.period.born.date.substring(0, 4), 10);
-      const intervalStart = year - year % 25;
-      key = `${intervalStart} - ${intervalStart + 24}`;
-    }
-    let group = groups.get(key) || [];
-    group.push(p);
-    groups.set(key, group);
-  });
-  let sortedGroups = [];
-  groups.forEach((group, key) => {
-    sortedGroups.push({
-      title: key,
-      items: group.sort(Sorting.poetsByBirthDate),
-    });
-  });
-  return sortedGroups.sort(Sorting.sectionsByTitle);
-};
-
-type PoetsProps = {
+type LinesGlobalProps = {
   lang: Lang,
   country: Country,
-  poets: Array<Poet>,
-  groupBy: GroupBy,
-  error: ?Error,
+  letter: String,
+  type: LinesType,
 };
-export default class extends React.Component<PoetsProps> {
+export default class extends React.Component<LinesGlobalProps> {
   static async getInitialProps({
     query: { lang, country, groupBy },
   }: {
-    query: { lang: Lang, country: Country, groupBy: GroupBy },
+    query: { lang: Lang, country: Country, type: LinesType },
   }) {
-    const json = await Client.poets(country);
-    return { lang, country, groupBy, poets: json.poets, error: json.error };
+    const json = await Client.globalLines(country, type, letter);
+    return {
+      lang,
+      country,
+      type,
+      lines: json.lines,
+      letters: json.letters,
+      error: json.error,
+    };
   }
 
   render() {
-    const { lang, country, poets, groupBy, error } = this.props;
+    const { lang, country, lines, letters, error } = this.props;
 
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt land" />;
@@ -155,10 +102,6 @@ export default class extends React.Component<PoetsProps> {
     } else {
       pageTitle = _('Digtere', lang);
     }
-
-    const countryCodeToURL = (code: Country) => {
-      return Links.poetsURL(lang, groupBy, code);
-    };
     return (
       <div>
         <Head
@@ -173,8 +116,8 @@ export default class extends React.Component<PoetsProps> {
           <CountryPicker
             style={{ marginTop: '40px' }}
             lang={lang}
-            countryToURL={countryCodeToURL}
             selectedCountry={country}
+            selectedGroupBy={groupBy}
           />
           <LangSelect lang={lang} path={requestPath} />
         </Main>

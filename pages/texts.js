@@ -22,10 +22,10 @@ import type {
   Poet,
   Work,
   SectionForRendering,
+  LinesType,
 } from './helpers/types.js';
 import 'isomorphic-fetch';
 
-type LinesType = 'first' | 'titles';
 type TextsProps = {
   lang: Lang,
   poet: Poet,

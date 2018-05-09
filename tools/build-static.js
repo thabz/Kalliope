@@ -942,11 +942,17 @@ const build_global_lines_json = collected => {
           let per_linetype = per_country.get(linetype) || new Map();
           per_country.set(linetype, per_linetype);
           let line =
-            linetype == 'titles' ? textMeta.linkTitle : textMeta.firstline;
+            linetype == 'titles' ? textMeta.indexTitle : textMeta.firstline;
           if (line != null) {
             // firstline is null for prose texts
-            const indexableLine = line.replace(/^Aa/,"Å").toUpperCase().replace(/^Ö/,'Ø').replace(/^\[/,'');
-            const firstletter = indexableLine[0];
+            let indexableLine = line.replace(/^Aa/,"Å").replace(/^\[/,'').replace(/^\(/,'').toUpperCase().replace(/^À/,'A');
+            if (poet.country === 'dk') {
+              indexableLine = indexableLine.replace(/^Ö/,'Ø');              
+            }
+            let firstletter = indexableLine[0];
+            if (firstletter >= '0' && firstletter <= '9') {
+              firstletter = '_'; // Vises som "Tegn"
+            }
             let per_letter = per_linetype.get(firstletter) || [];
             per_letter.push({
               poet: {
@@ -961,16 +967,18 @@ const build_global_lines_json = collected => {
         });
       }
     });
-// TODO: firstletters som er tal, skal gruperes i sin egen sektion "Andre".
-// Hvad med franske Á eller tyske Ä og Ü. Hvordan grupperer tyskerne sine ordbøger?
     // Write the json files
+    const compareLocales = {'dk': 'da-DK', 
+    'de': 'de', 'fr': 'fr-FR', 'gb': 'en-GB', 'us': 'en-US', 'it': 'it-IT', 'se':'se', 
+    'no':'da-DK' /* no-NO locale virker ikke, men sortering er ligesom 'da-DK' */};
     collected_lines.forEach((per_country, country) => {
       per_country.forEach((per_linetype, linetype) => {
-        const letters = Array.from(per_linetype.keys()).sort((a,b) => a.localeCompare(b, 'da-DK')); 
+        const locale = compareLocales[country] || 'da-DK';
+        const letters = Array.from(per_linetype.keys()).sort((a,b) => a.localeCompare(b, locale)); 
         per_linetype.forEach((lines, letter) => {
           const data = {
             letters,
-            lines,
+            lines: lines.sort((a,b) => a.line.localeCompare(b.line)),
           };
           const filename = `static/api/${country}-${linetype}-${letter}.json`;
           console.log(filename);
@@ -1025,11 +1033,14 @@ const works_first_pass = collected => {
         const title = safeGetText(head, 'title');
         const firstline = safeGetText(head, 'firstline');
         const linktitle = safeGetText(head, 'linktitle');
+        const indextitle = safeGetText(head, 'indextitle');
         const linkTitle = linktitle || title || firstline;
+        const indexTitle = indextitle || title || firstline;
+
         texts.set(textId, {
           title: replaceDashes(linkTitle),
           firstline: replaceDashes(firstline),
-          linkTitle: replaceDashes(linkTitle),
+          indexTitle: replaceDashes(indexTitle),
           type: part.name(),
           poetId: poetId,
           workId: workId,
