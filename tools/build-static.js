@@ -988,9 +988,9 @@ const build_global_lines_json = collected => {
             letters,
             lines: lines.sort((a,b) => {
               if (a.line === b.line) {
-                return a.poet.name.localeCompare(b.poet.name);
+                return a.poet.name.localeCompare(b.poet.name, locale);
               } else {
-                return a.line.localeCompare(b.line)
+                return a.line.localeCompare(b.line, locale)
               }
             })
           };          
