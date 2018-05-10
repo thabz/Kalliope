@@ -77,6 +77,8 @@ export type PrevNextText = {
   title: string,
 };
 
+export type LinesType = 'first' | 'titles';
+
 export type LinesPair = {
   id: string,
   title: string,
