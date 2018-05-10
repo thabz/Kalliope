@@ -946,11 +946,11 @@ const build_global_lines_json = collected => {
             linetype == 'titles' ? textMeta.indexTitle : textMeta.firstline;
           if (line != null) {
             // firstline is null for prose texts
-            let indexableLine = line.replace(/^Aa/,"Å").replace(/^\[/,'')
+            let indexableLine = line.replace(/^\[/,'')
             .replace(/^\(/,'').toUpperCase().replace(/^À/,'A').replace(/^É/,'E')
             .replace(/^Ô/,'O');
             if (poet.country === 'dk') {
-              indexableLine = indexableLine.replace(/^Ö/,'Ø');              
+              indexableLine = indexableLine.replace(/^Ö/,'Ø').replace(/^AA/,"Å");              
             }
             let firstletter = indexableLine[0];
             if (firstletter >= '0' && firstletter <= '9') {
