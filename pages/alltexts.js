@@ -112,7 +112,7 @@ export default class extends React.Component<AllTextsProps> {
       })
       .map(line => {
         const url = Links.textURL(lang, line.textId);
-        const postfix = `- ${line.poet.name}: ${line.work.title}`;
+        const postfix = ` - ${line.poet.name}: ${line.work.title}`;
         return (
           <div key={line.textId} className="line">
             <Link to={url}>
