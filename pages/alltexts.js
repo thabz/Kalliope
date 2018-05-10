@@ -92,18 +92,22 @@ export default class extends React.Component<AllTextsProps> {
 
     const renderedLines = lines.map(line => {
       const url = Links.textURL(lang, line.textId);
+      const postfix = `- ${line.poet.name}: ${line.work.title}`;
       return (
-        <div
-          key={line.textId}
-          style={{
-            marginBottom: '5px',
-            marginLeft: '30px',
-            textIndent: '-30px',
-            breakInside: 'avoid',
-            lineHeight: 1.5,
-          }}>
-          <Link to={url}>{line.line}</Link> - {line.poet.name}:{' '}
-          {line.work.title}
+        <div key={line.textId} className="line">
+          <Link to={url}>
+            <a>{line.line}</a>
+          </Link>
+          {postfix}
+          <style jsx>{`
+            div.line {
+              margin-bottom: 5px;
+              margin-left: 30px;
+              text-indent: -30px;
+              break-inside: avoid;
+              line-height: 1.5;
+            }
+          `}</style>
         </div>
       );
     });
@@ -116,8 +120,18 @@ export default class extends React.Component<AllTextsProps> {
         fontWeight: l === letter ? 'bold' : 'normal',
       };
       const link =
-        l === letter ? shownLetter : <Link to={url}>{shownLetter}</Link>;
-      return <span style={style}>{link}</span>;
+        l === letter ? (
+          shownLetter
+        ) : (
+          <Link to={url}>
+            <a>{shownLetter}</a>
+          </Link>
+        );
+      return (
+        <span key={l} style={style}>
+          {link}
+        </span>
+      );
     });
 
     let pageTitle = null;
