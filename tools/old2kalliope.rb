@@ -31,6 +31,9 @@ def printPoem()
   if @source and not @page 
       abort "FEJL: Digtet »#{@title}« mangler sideangivelse"
   end
+  if @source and @page =~ /\d-$/
+      abort "FEJL: Digtet »#{@title}« har kun halv sideangivelse: #{@page}"
+  end
   poemid = @poemid || "#{@poetid}#{@date}#{'%02d' % @poemcount}"
   puts "<#{@type} id=\"#{poemid}\">"
   puts "<head>"
