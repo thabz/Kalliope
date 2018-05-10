@@ -65,7 +65,11 @@ def printPoem()
     puts "    </notes>"
   end
   if @source and @page
-    puts "    <source pages=\"#{@page}\"/>"
+      if (@page =~ /[ivx]*/) 
+        puts "    <source pages=\"#{@page}\" facsimile-pages=\"10\" />"
+      else 
+        puts "    <source pages=\"#{@page}\"/>"
+      endif
   end
   if @written or @performed
     puts "    <dates>"
@@ -163,7 +167,7 @@ File.readlines(ARGV[0]).each do |line|
   end
   if @state == 'NONE' and line =~ /^KILDE:/
       @source = line[6..-1].strip
-      puts "<source facsimile=\"XXXXXX_color.pdf\" facsimile-pages-offset=\"YYY\">#{@source}</source>"
+      puts "<source facsimile=\"XXXXXX_color.pdf\" facsimile-pages-num=\"150\" facsimile-pages-offset=\"10\">#{@source}</source>"
       puts ""
   end
   if @state == 'NONE' and line =~ /^DIGTER:/

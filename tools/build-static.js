@@ -40,6 +40,9 @@ let collected = {
 
 // Use poetname.js:poetNameString instead when node.js uses modules
 const poetName = poet => {
+  if (poet == null) {
+    throw "poetName called with null poet";
+  }
   const { name } = poet;
   const { firstname, lastname } = name;
   if (lastname) {
@@ -1758,7 +1761,14 @@ const build_dict_second_pass = collected => {
 const build_mentions_json = collected => {
   const build_html = poemId => {
     const meta = collected.texts.get(poemId);
-    const poet = poetName(collected.poets.get(meta.poetId));
+    if (meta == null) {
+      throw `Unknown poem ${poemId}`;
+    }
+    const poetObj = collected.poets.get(meta.poetId);
+    if (poetObj == null) {
+      throw `Unknown poet ${meta.poetId}`;
+    }
+    const poet = poetName(poetObj);
     const work = collected.works.get(meta.poetId + '/' + meta.workId);
     if (work == null) {
       throw `${poemId} references unknown work ${meta.poetId +
