@@ -89,50 +89,72 @@ export default class extends React.Component<AllTextsProps> {
         url: Links.allTextsURL(lang, country, 'first', 'A'),
       },
     ];
+    const compareLocales = {
+      dk: 'da-DK',
+      de: 'de',
+      fr: 'fr-FR',
+      gb: 'en-GB',
+      us: 'en-US',
+      it: 'it-IT',
+      se: 'se',
+      no:
+        'da-DK' /* no-NO locale virker ikke, men sortering er ligesom 'da-DK' */,
+    };
+    const locale = compareLocales[country] || 'da-DK';
 
-    const renderedLines = lines.map(line => {
-      const url = Links.textURL(lang, line.textId);
-      const postfix = `- ${line.poet.name}: ${line.work.title}`;
-      return (
-        <div key={line.textId} className="line">
-          <Link to={url}>
-            <a>{line.line}</a>
-          </Link>
-          {postfix}
-          <style jsx>{`
-            div.line {
-              margin-bottom: 5px;
-              margin-left: 30px;
-              text-indent: -30px;
-              break-inside: avoid;
-              line-height: 1.5;
-            }
-          `}</style>
-        </div>
-      );
-    });
-
-    const letterPicker = letters.map(l => {
-      const url = Links.allTextsURL(lang, country, type, l);
-      const shownLetter = l === '_' ? 'Tegn' : l;
-      const style = {
-        marginRight: '5px',
-        fontWeight: l === letter ? 'bold' : 'normal',
-      };
-      const link =
-        l === letter ? (
-          shownLetter
-        ) : (
-          <Link to={url}>
-            <a>{shownLetter}</a>
-          </Link>
+    const renderedLines = lines
+      .sort((a, b) => {
+        if (a.line === b.line) {
+          return a.poet.name.localeCompare(b.poet.name, locale);
+        } else {
+          return a.line.localeCompare(b.line, locale);
+        }
+      })
+      .map(line => {
+        const url = Links.textURL(lang, line.textId);
+        const postfix = `- ${line.poet.name}: ${line.work.title}`;
+        return (
+          <div key={line.textId} className="line">
+            <Link to={url}>
+              <a>{line.line}</a>
+            </Link>
+            {postfix}
+            <style jsx>{`
+              div.line {
+                margin-bottom: 5px;
+                margin-left: 30px;
+                text-indent: -30px;
+                break-inside: avoid;
+                line-height: 1.5;
+              }
+            `}</style>
+          </div>
         );
-      return (
-        <span key={l} style={style}>
-          {link}
-        </span>
-      );
-    });
+      });
+
+    const letterPicker = letters
+      .sort((a, b) => a.localeCompare(b, locale))
+      .map(l => {
+        const url = Links.allTextsURL(lang, country, type, l);
+        const shownLetter = l === '_' ? 'Tegn' : l;
+        const style = {
+          marginRight: '5px',
+          fontWeight: l === letter ? 'bold' : 'normal',
+        };
+        const link =
+          l === letter ? (
+            shownLetter
+          ) : (
+            <Link to={url}>
+              <a>{shownLetter}</a>
+            </Link>
+          );
+        return (
+          <span key={l} style={style}>
+            {link}
+          </span>
+        );
+      });
 
     let pageTitle = null;
     if (country !== 'dk') {
