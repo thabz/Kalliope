@@ -915,6 +915,7 @@ const handle_work = work => {
 };
 
 const build_global_lines_json = collected => {
+  safeMkdir('static/api/alltexts');
   let changed_langs = {};
   let found_changes = false;
   collected.workids.forEach((workIds, poetId) => {
@@ -945,7 +946,9 @@ const build_global_lines_json = collected => {
             linetype == 'titles' ? textMeta.indexTitle : textMeta.firstline;
           if (line != null) {
             // firstline is null for prose texts
-            let indexableLine = line.replace(/^Aa/,"Å").replace(/^\[/,'').replace(/^\(/,'').toUpperCase().replace(/^À/,'A');
+            let indexableLine = line.replace(/^Aa/,"Å").replace(/^\[/,'')
+            .replace(/^\(/,'').toUpperCase().replace(/^À/,'A').replace(/^É/,'E')
+            .replace(/^Ô/,'O');
             if (poet.country === 'dk') {
               indexableLine = indexableLine.replace(/^Ö/,'Ø');              
             }
@@ -953,11 +956,16 @@ const build_global_lines_json = collected => {
             if (firstletter >= '0' && firstletter <= '9') {
               firstletter = '_'; // Vises som "Tegn"
             }
+            const work = collected.works.get(textMeta.poetId + '/' + textMeta.workId);
             let per_letter = per_linetype.get(firstletter) || [];
             per_letter.push({
               poet: {
                 id: textMeta.poetId,
                 name: poetName(poet),
+              },
+              work: {
+                id: work.id,
+                title: workName(work)
               },
               line,
               textId,
@@ -978,9 +986,15 @@ const build_global_lines_json = collected => {
         per_linetype.forEach((lines, letter) => {
           const data = {
             letters,
-            lines: lines.sort((a,b) => a.line.localeCompare(b.line)),
-          };
-          const filename = `static/api/${country}-${linetype}-${letter}.json`;
+            lines: lines.sort((a,b) => {
+              if (a.line === b.line) {
+                return a.poet.name.localeCompare(b.poet.name);
+              } else {
+                return a.line.localeCompare(b.line)
+              }
+            })
+          };          
+          const filename = `static/api/alltexts/${country}-${linetype}-${letter}.json`;
           console.log(filename);
           writeJSON(filename, data);
         });
