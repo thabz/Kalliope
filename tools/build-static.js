@@ -982,17 +982,19 @@ const build_global_lines_json = collected => {
     collected_lines.forEach((per_country, country) => {
       per_country.forEach((per_linetype, linetype) => {
         const locale = compareLocales[country] || 'da-DK';
-        const letters = Array.from(per_linetype.keys()).sort((a,b) => a.localeCompare(b, locale)); 
+        const linesComparator = (a,b) => {
+          if (a.line === b.line) {
+            return a.poet.name.localeCompare(b.poet.name, locale);
+          } else {
+            return a.line.localeCompare(b.line, locale)
+          }
+        };
+        const lettersComparator = (a,b) => a.localeCompare(b, locale);
+        const letters = Array.from(per_linetype.keys()).sort(lettersComparator); 
         per_linetype.forEach((lines, letter) => {
           const data = {
             letters,
-            lines: lines.sort((a,b) => {
-              if (a.line === b.line) {
-                return a.poet.name.localeCompare(b.poet.name, locale);
-              } else {
-                return a.line.localeCompare(b.line, locale)
-              }
-            })
+            lines: lines.sort(linesComparator)
           };          
           const filename = `static/api/alltexts/${country}-${linetype}-${letter}.json`;
           console.log(filename);
