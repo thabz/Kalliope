@@ -69,7 +69,7 @@ def printPoem()
         puts "    <source pages=\"#{@page}\" facsimile-pages=\"10\" />"
       else 
         puts "    <source pages=\"#{@page}\"/>"
-      endif
+      end
   end
   if @written or @performed
     puts "    <dates>"
