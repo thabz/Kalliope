@@ -11,6 +11,7 @@
    <pictures>
        <picture type="titlepage" src="1912-p1.jpg">Titelbladet til <i>Mens Sommeren lider</i> (1912). ,,Olaf Hansen / Mens Sommeren lider / Digte / (Sjette Samling) // København / Forlagt af V. Pios Boghandel / (Povl Branner) / 1912''.</picture>
    </pictures>
+   <source facsimile="115308059611_color" facsimile-pages-num="94" facsimile-pages-offset="6">Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912.</source>
    <quality>korrektur1,kilde,side</quality>
 </workhead>
 <workbody>
@@ -25,9 +26,7 @@
 <head>
     <title>Barnet</title>
     <firstline>Velkommen paa Foraarets svangre Jord</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 9-12</note>
-    </notes>
+    <source pages="9-12"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -117,9 +116,7 @@ og alting lo saa vide.
 <head>
     <title>Offerrøg</title>
     <firstline>Det er Morgnens rene Time</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 13-18.</note>
-    </notes>
+    <source pages="13-18"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -272,9 +269,7 @@ Jeg er rede. Kom kun! Kom!
 <head>
     <title>Vintermorgen</title>
     <firstline>Den høje Stjærne paa Himlen staar</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 19-21.</note>
-    </notes>
+    <source pages="19-21"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -334,9 +329,7 @@ bag Skyernes straalende Riger.
 <head>
     <title>Foraarstegn</title>
     <firstline>Du drak saa frit i den grønne Skov</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 22-23.</note>
-    </notes>
+    <source pages="22-23"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -381,9 +374,7 @@ jeg bøjer mig dybt for at høre.
 <head>
     <title>Genganger</title>
     <firstline>Jeg møder ham endnu en enkelt Gang</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 24-26.</note>
-    </notes>
+    <source pages="24-26"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -409,7 +400,7 @@ viser, hvor Tiden er vandret.
 
 Han fulgte sin Længsel, dengang den fløj,
 og tænkte mod Lykken at ride.
-Han hvilte sig ude ved Elverhøj —
+Han hvilte sig ude ved Elverhøj<note>Se folkevisen <xref poem="folke2000012901"/>.</note> —
 det var ved Sensommertide.
 
 Dér saa han to Øjne grønlig-graa
@@ -452,9 +443,7 @@ er han og hans Haand kun en Skygge.
 <head>
     <title>Maskerne</title>
     <firstline>Jeg staar og ser paa Maskerne, jeg bar</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, p. 29.</note>
-    </notes>
+    <source pages="29"/>
     <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
@@ -483,9 +472,7 @@ Passed mon nogen nu, tog du den paa?
 <head>
     <title>Simeon</title>
     <firstline>Han ser sin Længsels Gud, den gamle Mand</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, p. 30.</note>
-    </notes>
+    <source pages="30"/>
     <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
@@ -514,9 +501,7 @@ hvor Saven surrede og Øksen sang.
 <head>
     <title>Drømmersker</title>
     <firstline>Der svømmer sorte Baade over Floden</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, p. 31.</note>
-    </notes>
+    <source pages="31"/>
     <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
@@ -545,9 +530,7 @@ De tomme Baade synker under Lide.
 <head>
     <title>Sidste Rejse</title>
     <firstline>Vi gik ad smalle, gasbelyste Gader</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, p. 32.</note>
-    </notes>
+    <source pages="32"/>
     <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
@@ -576,9 +559,7 @@ Dengang jeg famled bort, var Lyset slukt.
 <head>
     <title>Skrinet</title>
     <firstline>Har kastet mer end Perler nok for Svin</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 33.</note>
-    </notes>
+    <source pages="33"/>
     <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
@@ -607,9 +588,7 @@ hvi skaber du? Hvi lader du os finde?
 <head>
     <title>Brynhild</title>
     <firstline>Nu flammer Himlen atter herligt op</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, p. 34.</note>
-    </notes>
+    <source pages="34"/>
     <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
@@ -638,9 +617,7 @@ Vi sover ud i Nat paa Hindarfjæld.
 <head>
     <title>Anadyomene</title>
     <firstline>Det er en Stund i Verdens første Vaar</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, p. 35.</note>
-    </notes>
+    <source pages="35"/>
     <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
@@ -672,9 +649,7 @@ og alle bly Violer springer ud.
     <indextitle>In memoriam</indextitle>
     <linktitle>In memoriam</linktitle>
     <firstline>Den unge Kvinde kyssede Catull</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, p. 36.</note>
-    </notes>
+    <source pages="36"/>
     <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
@@ -703,9 +678,7 @@ en Asterskrans, som Dugg i Nat har vædet.
 <head>
     <title>Sonetten</title>
     <firstline>Jeg savner Sangens Flugt i disse Ord</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, p. 37.</note>
-    </notes>
+    <source pages="37"/>
     <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
@@ -752,9 +725,7 @@ Vi stiger atter opad, naar det sker.
     <indextitle>Under Foraarets Maane</indextitle>
     <linktitle>Under Foraarets Maane</linktitle>
     <firstline>Nu er der baade mørkt og lyst i Lunden</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, p. 41.</note>
-    </notes>
+    <source pages="41"/>
     <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
@@ -786,9 +757,7 @@ Du kogler ud i Dybet af mit Sind.
     <indextitle>Sommer i By</indextitle>
     <linktitle>Sommer i By</linktitle>
     <firstline>Det store Rosentræ er sprunget ud</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, p. 42.</note>
-    </notes>
+    <source pages="42"/>
     <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
@@ -820,9 +789,7 @@ og vaagner til et varmt og tidligt Gry.
     <indextitle>Løvfaldsstunder</indextitle>
     <linktitle>Løvfaldsstunder</linktitle>
     <firstline>Saa kom jeg hid paany — nu rødmer Rønnen</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, p. 43.</note>
-    </notes>
+    <source pages="43"/>
     <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
@@ -854,9 +821,7 @@ Hver Gren i Skoven bruser Højtid ind.
     <indextitle>Vinterskumring</indextitle>
     <linktitle>Vinterskumring</linktitle>
     <firstline>Jeg standses af en Gran, der faldt omkuld</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. .</note>
-    </notes>
+    <source pages="44"/>
     <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>
@@ -888,9 +853,7 @@ og store Fnug der falder paa min Pande.
 <head>
     <title>Ved Kupévinduet</title>
     <firstline>Du lysende Maane, du lyser saa langt</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, p. 45.</note>
-    </notes>
+    <source pages="45"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -915,9 +878,7 @@ flyver mig selv i Møde.
 <head>
     <title>Ud gennem Fjorden</title>
     <firstline>Trælholm og Barnholm</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 46-47.</note>
-    </notes>
+    <source pages="46-47"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -972,9 +933,7 @@ mit Digtningens Land.
 <head>
     <title>Skyggebilleder</title>
     <firstline>Foraarsbløder! Bondejord!</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 48-49.</note>
-    </notes>
+    <source pages="48-49"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1020,9 +979,7 @@ Stille hjem ad jer jeg vandrer.
 <head>
     <title>Regnbuen</title>
     <firstline>Det lod, som var Solskinnets Timer talt</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 50-51.</note>
-    </notes>
+    <source pages="50-51"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1062,9 +1019,7 @@ fra Pytter og knækkede Straa.
 <head>
     <title>En Solnedgang</title>
     <firstline>Det lider alt mod Aften. Du Sommerdag, farvel!</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 52-53.</note>
-    </notes>
+    <source pages="52-53"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1106,9 +1061,7 @@ men Bøgen bliver brun om det gamle »Fredrikshøj«.
 <head>
     <title>Paa Torsmøllebakke</title>
     <firstline>Nu flammer de røde Svampe</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 54-56.</note>
-    </notes>
+    <source pages="54-56"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1174,9 +1127,7 @@ og Stien broncebrun.
 <head>
     <title>Lyset</title>
     <firstline>Hist bag de yderste Stjærner</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 57-63.</note>
-    </notes>
+    <source pages="57-63"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1378,9 +1329,7 @@ langt ude i Lysets Hav.
 <head>
     <title>Benjamin Pedersen</title>
     <firstline>Den krumme Maane staar nyfødt-blank</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 67-69.</note>
-    </notes>
+    <source pages="67-69"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1445,9 +1394,7 @@ min Efeukrans paa hans Kiste.
 <head>
     <title>En Drapa</title>
     <firstline>Blandt alle dem i den stolte Rad</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 70-71.</note>
-    </notes>
+    <source pages="70-71"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1493,9 +1440,7 @@ Guldtraaden paa Nornens Ten.
 <head>
     <title>Ved Frödings Død</title>
     <firstline>Atter staar Skyggernes Mistel grøn</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 72-73.</note>
-    </notes>
+    <source pages="72-73"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1547,9 +1492,7 @@ skal du være!
 <head>
     <title>Normannerblod</title>
     <firstline>Einar sidder paa Orkenø</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, pp. 74-76.</note>
-    </notes>
+    <source pages="74-76"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1577,8 +1520,10 @@ men Byttets Øm med blodig Klo
 sit Rov til Hjemmet bringer.
 Og Vinteren gennem i snekoldt Land
 i Hallen Høvdinger troner,
-til V aaren kommer med aabent 
-Vand og de første, blaa Anemoner.
+til Vaaren kommer med aabent Vand 
+og de første, blaa Anemoner.
+
+---
 
 Men dengang de atter skød Snækkerne ud 
 til Sang paa den danske Tunge,
@@ -1614,9 +1559,7 @@ stirrer den Vaaren i Møde.
     <title>Steingrímur Thorsteinsson</title>
     <subtitle>i Anledning af hans firsindstyvende Fødselsdag.</subtitle>
     <firstline>Nu hil dig, Sanger i det høje Nord!</firstline>
-    <notes>
-        <note>Teksten følger førsteudgaven af Olaf Hansen: <i>Mens Sommeren lider</i>, V. Pios Boghandel., Kbh., 1912, p. 77.</note>
-    </notes>
+    <source pages="77"/>
     <quality>korrektur1,kilde,side</quality>
     <keywords>sonnet</keywords>
 </head>

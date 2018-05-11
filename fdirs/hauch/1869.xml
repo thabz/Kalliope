@@ -13,6 +13,7 @@
     <pictures>
         <picture type="titlepage" src="1869-p1.jpg">Titelbladet til <i>Nye Digtninger</i> (1869) lyder ,,.Nye Digtninger, / af / C. Hauch. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1869.''</picture>
     </pictures>
+   <source facsimile="115208030438_color" facsimile-pages-num="324" facsimile-pages-offset="14">Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869.</source>
 </workhead>
 <workbody>
 
@@ -21,9 +22,7 @@
 <head>
     <title>Til Dronning Caroline Amalie</title>
     <firstline>Min sidste Digterkrands paa Jordens Kyst</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, p. ii.</note>
-    </notes>
+    <source pages="ii" facsimile-pages="9"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -46,9 +45,7 @@ Du ædle Dronning, som blev Landets Trøst.
     <title>Dronning Caroline Amalie</title>
     <subtitle>(med et Uhr, der blev hende givet, halvtredsindstyve Aar efter hendes første Ankomst til Sorgenfri)</subtitle>
     <firstline>Et Uhr kun viser Timerne og hvert Minut, der gaaer</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 3-5.</note>
-    </notes>
+    <source pages="3-5"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -99,9 +96,7 @@ For Alt, hvad Du har været, og hvad endnu Du er.
     <title>Ved Afsløringen af Oehlenschlägers Statue</title>
     <subtitle>den 21de October 1861</subtitle>
     <firstline>Mens Sekterne svinde, mens Tiderne gaae</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 6-7.</note>
-    </notes>
+    <source pages="6-7"/>
     <keywords>oehlenschlaeger</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -143,9 +138,7 @@ Mens Oldtidens Aander omsvæved Dit Øie.
 <head>
     <title>Bernhard Severin Ingemann</title>
     <firstline>Reen uskyldig kun Du leved for Dit ædle Digterkald</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 8-9.</note>
-    </notes>
+    <source pages="8-9"/>
     <keywords>ingemann</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -178,16 +171,15 @@ At Du Dannmarks Hjerte smelted ved Din Harpes milde Klang.
     <firstline>Du var en dyb og ædel</firstline>
     <notes>
         <note>Michael Wiehe (1820-1864), kongelig skuespiller.</note>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 10-11.</note>
     </notes>
     <pictures>
         <picture src="hauch2018030705-p1.jpg">Harald Paetz (fotograf): <i>Michael Wiehe som Chevalieren i Ninon</i>. Det kongelige Bibliotek.</picture>
         <!-- http://www.kb.dk/images/billed/2010/okt/billeder/object6056/da/-->
     </pictures>
+    <source pages="10-11"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<!-- TODO: Portræt på http://www.kb.dk/images/billed/2010/okt/billeder/object6056/da/ -->
 Du var en dyb og ædel,
 En ægte Ridderaand,
 Du brød Dig selv Din Bane
@@ -235,9 +227,7 @@ Kun med en Dødningkrands.
     <title>Til Digteren H. C. Andersen</title>
     <subtitle>den 6te September 1869.</subtitle>
     <firstline>Du var et fattigt Barn af Lykken forladt</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, p. 12.</note>
-    </notes>
+    <source pages="12"/>
     <keywords>andersen</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -264,9 +254,10 @@ Der svandt den kolde Vinter, der blev det Vaar paany.
     <title>Det Reitzelske Firmas Jubilæum</title>
     <subtitle>den 1ste Mai 1869</subtitle>
     <firstline>Der staaer et Huns ved Sjællands grønne Strande</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 13-14.</note>
-    </notes>
+    <dates>
+        <performed>1869-05-01</performed>
+    </dates>
+    <source pages="13-14"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -313,9 +304,10 @@ Endnu i hundred Aar og hundred til.
     <title>Ved Soraner-Festen</title>
     <subtitle>den 13de December 1862</subtitle>
     <firstline>Vi veed et deiligt Sted</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 15-16.</note>
-    </notes>
+    <dates>
+        <performed>1862-12-13</performed>
+    </dates>
+    <source pages="15-16"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -369,8 +361,8 @@ Ved Sorøs gamle By.
     <firstline>Atter stride Polens Sønner paa den vante Viis</firstline>
     <notes>
         <note>* Det første af disse to Digte er skrevet under den sidste polske Kamp, det andet er skrevet efter vor egen ulykkelige Krig.</note>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 17-20.</note>
     </notes>
+    <source pages="17-20"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -449,9 +441,7 @@ Er længst i Graven lagt.
 <head>
     <title>Sange ved Universitetets Sørgefest over Kong Frederik VII</title>
     <firstline>Nys førtes Kongen bort paa sorten Baare</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 21-23.</note>
-    </notes>
+    <source pages="21-23"/>
     <keywords>frederik7</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -521,9 +511,7 @@ Og aldrig skal Fjenden den troede med Fod;
 <head>
     <title>Fædrelandssang</title>
     <firstline>Saa er forstummet nu den stolte Tale</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 24-26.</note>
-    </notes>
+    <source pages="24-26"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -596,9 +584,10 @@ Vi vandt kun det bittre Minde.
 <head>
     <title>Branden i Drammen d. 14de Juli 1866</title>
     <firstline>Hvilke Rædsler, hvilke Tider</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 27-32.</note>
-    </notes>
+    <dates>
+        <event>1866-07-14</event>
+    </dates>
+    <source pages="27-32"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -754,9 +743,7 @@ Saa viis det nu med Handling, ei med Ord.
     <title>Sang til Danmark</title>
     <subtitle>(Da Slesvigerne gjæstede Kjøbenhavn)</subtitle>
     <firstline>Vort Danmark var et herligt Land</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 33-35.</note>
-    </notes>
+    <source pages="33-35"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -816,9 +803,7 @@ Og før vor Tro vi svigte, vil
 <head>
     <title>For Upsalenserne</title>
     <firstline>Bag græsklædte Høie der ligger en By</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 36-37.</note>
-    </notes>
+    <source pages="36-37"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -868,9 +853,8 @@ Vi hilse den med Gammen og Glæde.
 <head>
     <title>Sang i Rosenborghave i Anledning af Kronprindsens Formæling</title>
     <firstline>Vort Land, vort elskte Fædreland!</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 38-40.</note>
-    </notes>
+    <source pages="38-40"/>
+    <keywords>frederik7</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -930,9 +914,8 @@ Omsnoer den danske Strand.
     <title>Sang i Anledning af Kronprindsens Formæling</title>
     <subtitle>Afsungen hos Enkedronningen</subtitle>
     <firstline>Hellige Forbund, der nys blev begrundet</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 41-43.</note>
-    </notes>
+    <source pages="41-43"/>
+    <keywords>frederik7</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -998,9 +981,7 @@ Det er Jert fagreste Smykke.
 <head>
     <title>Ved Carl den Femtendes Besøg i Kjøbenhavn 1862</title>
     <firstline>Der boer en Kongeslægt med Glands</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 44-45.</note>
-    </notes>
+    <source pages="44-45"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1041,9 +1022,10 @@ Vi frygter ei den hele Jord
     <title>Til Sølvbryllupsfesten</title>
     <subtitle>den 26de Mai 1887.</subtitle>
     <firstline>Nu hæver Nattergalen høit sin Stemme</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 46-50.</note>
-    </notes>
+    <dates>
+        <performed>1887-05-26</performed>
+    </dates>
+    <source pages="46-50"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1159,9 +1141,7 @@ Og Fred og Frihed blomstre ved dens Fod.
     <title>Til Prindsesse Dagmar</title>
     <subtitle>(Ved hendes Afrejse)</subtitle>
     <firstline>Nei Du vil, Du kan det aldrig glemme</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 51-52.</note>
-    </notes>
+    <source pages="51-52"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1208,8 +1188,8 @@ Skjøndt det vandrer paa en fremmed Kyst.
     <firstline>Fortæl mig det ei, Du blege Tænker</firstline>
     <notes>
         <note>Gendigtning af Longfellows <xref poem="longfellow1999063003"/>.</note>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 55-57.</note>
     </notes>
+    <source pages="55-57"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1264,9 +1244,7 @@ Lær at vente til Høstens Dag!
 <head>
     <title>En stor Samtidig</title>
     <firstline>Jeg har en mægtig Ven</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 58-59.</note>
-    </notes>
+    <source pages="58-59"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1325,9 +1303,7 @@ Og hører De Beviset, da troer De selv derpaa.
 <head>
     <title>En ung Piges Klage</title>
     <firstline>Ja Stjernerne var Skyld deri</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 60-61.</note>
-    </notes>
+    <source pages="60-61"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1362,9 +1338,7 @@ Da modstaae Elskovs Magt.
 <head>
     <title>Da jeg var syg</title>
     <firstline>Naar Nattens Børn sig hæve</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 62-63.</note>
-    </notes>
+    <source pages="62-63"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1409,9 +1383,7 @@ Paa Evighedens Hav.
 <head>
     <title>Et astrologisk Syn</title>
     <firstline>I høie Stjerner, der paa Nattens Sti</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 64-66.</note>
-    </notes>
+    <source pages="64-66"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1482,9 +1454,7 @@ Kun speiled sig i Dit Indre, liig Solblink i Vand.
 <head>
     <title>Vinteren</title>
     <firstline>Titan af de blege Vover</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, p. 67.</note>
-    </notes>
+    <source pages="67"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1514,9 +1484,7 @@ Vækker ei det bundne Liv.
 <head>
     <title>Det vaagnende Foraar</title>
     <firstline>Taagen splittes, Isen brister, Solen høit paa Himlen staaer</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 68-70.</note>
-    </notes>
+    <source pages="68-70"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1556,9 +1524,7 @@ Hvor den favnes af den milde, den aurikelkrandste Vaar.
 <head>
     <title>Bøn</title>
     <firstline>Hellige Gud</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 71-72.</note>
-    </notes>
+    <source pages="71-72"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1597,9 +1563,7 @@ Stilleste Øieblik.
 <head>
     <title>Den vilde Rose</title>
     <firstline>Lykkelige Skovens Datter</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 73-75.</note>
-    </notes>
+    <source pages="73-75"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1664,9 +1628,7 @@ Let den kun Din Isse rører.
 <head>
     <title>Planternes Liv</title>
     <firstline>Lykkelige Lysets Børn</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 76-78.</note>
-    </notes>
+    <source pages="76-78"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1741,9 +1703,7 @@ Jer tause Billedskrift.
     <title>En Oldings Afsked</title>
     <subtitle>Et pantheistisk Livsbillede; frit omarbeidet efter L. Schefer</subtitle>
     <firstline>Jeg løser Eder nu</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 79-81.</note>
-    </notes>
+    <source pages="79-81"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1807,9 +1767,7 @@ Uden min egen Skygge
 <head>
     <title>Den indiske Kriger</title>
     <firstline>Dybt indviklet i Tankernes selsomtslyngede Retgang</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 82-86.</note>
-    </notes>
+    <source pages="82-86"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1874,9 +1832,7 @@ Aand om sit Folk og erhverved en uforgængelig Hæder.
 <head>
     <title>Det ubekjendte Land</title>
     <firstline>Der leved engang en Sanger</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 87-91.</note>
-    </notes>
+    <source pages="87-91"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2001,9 +1957,7 @@ Fra Paradisets Land.''
 <head>
     <title>Tidernes Omskiftning</title>
     <firstline>Der høres en gammel Klage</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 92-94.</note>
-    </notes>
+    <source pages="92-94"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2085,9 +2039,7 @@ Kun Muldet og Mørkets Magter
 <head>
     <title>Tidernes Fremgang</title>
     <firstline>En gammel Stamme har i Danmark levet</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 95-101.</note>
-    </notes>
+    <source pages="95-101"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2250,9 +2202,7 @@ At dog vi ginge fremad, skjøndt ei det syntes saa.
 <head>
     <title>Ledas Sønner</title>
     <firstline>Orion glimter i sin Midnatsglands</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 102-109.</note>
-    </notes>
+    <source pages="102-109"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2391,9 +2341,7 @@ Kastor og den høie Pollux glimted med det vante Skjær.
 <head>
     <title>Den Lykkeligste</title>
     <firstline>Hvo var den Lykkeligste her paa Jord?</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 110-115.</note>
-    </notes>
+    <source pages="110-115"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2550,9 +2498,7 @@ Til den hun elsked og til Lysets Rige.
     <title>Den christne Slavinde</title>
     <subtitle>et Digt i to Romancer</subtitle>
     <firstline>Den gamle Kong Astolf sukker</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 116-129.</note>
-    </notes>
+    <source pages="116-129"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2891,9 +2837,7 @@ Nu i mit hele Land.''
 <head>
     <title>Et Kongesyn</title>
     <firstline>Før Gustav Adolf, Sverigs Konge god</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 130-139.</note>
-    </notes>
+    <source pages="130-139"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3076,9 +3020,7 @@ En Helt og en Martyr, der søger om sin Lige.
     <title>Gangen til Sætteren</title>
     <toctitle><num>1.</num>Gangen til Sætteren</toctitle>
     <firstline>Sneen smelter, Kulden svinder</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, p. 143.</note>
-    </notes>
+    <source pages="143"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3109,9 +3051,7 @@ Naar jeg boer paa Fjeldets Sti.
     <title>Pigerne paa Malkepladsen</title>
     <toctitle><num>2.</num>Pigerne paa Malkepladsen</toctitle>
     <firstline>Kald paa den brune, den kullede Ko!</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 144-145.</note>
-    </notes>
+    <source pages="144-145"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3154,9 +3094,7 @@ Kom nu, alle mine Køer paa Fjeldet!
     <title>Pigerne ved Fjeldsøen</title>
     <toctitle><num>3.</num>Pigerne ved Fjeldsøen</toctitle>
     <firstline>Hører I Nøkken og Huldren</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 146-148.</note>
-    </notes>
+    <source pages="146-148"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3227,9 +3165,7 @@ Og spærrer saa Døren til!
     <title>En Sæterpiges Afsked med sin Kjæreste</title>
     <toctitle><num>4.</num>En Sæterpiges Afsked med sin Kjæreste</toctitle>
     <firstline>Og nu farvel da, min Hjertens Ven!</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 149-150.</note>
-    </notes>
+    <source pages="149-150"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3273,9 +3209,7 @@ Med Sorg jeg vender tilbage.
     <title>Den Bjergtagne</title>
     <toctitle><num>5.</num>Den Bjergtagne</toctitle>
     <firstline>I Bjerget der er et underligt Land</firstline>
-    <notes>
-        <note>Teksten følger Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869, pp. 151-152.</note>
-    </notes>
+    <source pages="151-152"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

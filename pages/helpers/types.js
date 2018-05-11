@@ -22,6 +22,7 @@ export type TextContentType = Array<TextContentLine>;
 
 export type TextContentOptions = {
   isBible?: boolean,
+  isFolkevise?: boolean,
   highlightBibleVerses?: ?{ from: number, to: number },
   isPoetry?: boolean,
 };
@@ -32,6 +33,7 @@ export type Poet = {
   lang: Lang,
   country: Country,
   portrait: string,
+  square_portrait: string,
   name: {
     lastname?: string,
     firstname: string,
@@ -53,6 +55,7 @@ export type Poet = {
   has_poems: boolean,
   has_prose: boolean,
   has_portraits: boolean,
+  has_square_portrait: boolean,
 };
 
 export type Work = {
@@ -73,6 +76,8 @@ export type PrevNextText = {
   id: string,
   title: string,
 };
+
+export type LinesType = 'first' | 'titles';
 
 export type LinesPair = {
   id: string,
@@ -101,6 +106,7 @@ export type TocItem = {
   title: string,
   prefix?: string,
   type: 'section' | 'text',
+  level?: number,
   content?: Array<TocItem>,
 };
 
@@ -114,7 +120,16 @@ export type NoteItem = {
 export type PictureItem = {
   content_lang?: TextLang,
   content_html?: TextContentType,
+  primary?: boolean,
   src: string,
+};
+
+export type TextSource = {
+  pages: string,
+  source: string,
+  facsimile: string,
+  facsimilePages: Array<number>,
+  facsimilePageCount: number,
 };
 
 export type Text = {
@@ -130,6 +145,7 @@ export type Text = {
   keywords: Array<KeywordRef>,
   has_footnotes: boolean,
   is_prose: boolean,
+  source?: TextSource,
 };
 
 export type Keyword = {
