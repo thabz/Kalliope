@@ -135,6 +135,7 @@ export type TextSource = {
 export type Text = {
   id: string,
   title: string,
+  title_prefix?: string,
   linktitle: string,
   subtitles?: Array<TextContentType>,
   notes: Array<NoteItem>,

@@ -65,7 +65,7 @@ def printPoem()
     puts "    </notes>"
   end
   if @source and @page
-      if (@page =~ /[ivx]*/) 
+      if (@page =~ /[ivx]+/i) 
         puts "    <source pages=\"#{@page}\" facsimile-pages=\"10\" />"
       else 
         puts "    <source pages=\"#{@page}\"/>"
@@ -201,6 +201,12 @@ File.readlines(ARGV[0]).each do |line|
   if @state == 'INHEAD'
     if line.start_with?("T:")
       @title = line[2..-1].strip
+      if @title =~ /<num>/
+          @stripped = @title.gsub(/<num>.*<\/num>/,'')
+          @toctitle = @title
+          @linktitle = @stripped
+          @indextitle = @stripped
+      end
     elsif line.start_with?("F:")
       @firstline = line[2..-1].strip
     elsif line.start_with?("U:")

@@ -41,7 +41,7 @@ let collected = {
 // Use poetname.js:poetNameString instead when node.js uses modules
 const poetName = poet => {
   if (poet == null) {
-    throw "poetName called with null poet";
+    throw 'poetName called with null poet';
   }
   const { name } = poet;
   const { firstname, lastname } = name;
@@ -589,11 +589,10 @@ const handle_text = (
   const head = text.get('head');
   const body = text.get('body');
   const firstline = safeGetText(head, 'firstline');
-  let title = safeGetText(head, 'title');
-  title = title || firstline;
+  let title = extractTitle(head); // {title: xxx, prefix: xxx}
   let linktitle = safeGetText(head, 'linktitle');
   let indextitle = safeGetText(head, 'indextitle');
-  linktitle = linktitle || indextitle || title;
+  linktitle = linktitle || indextitle || title.title;
 
   const keywords = head.get('keywords');
   const isBible = poetId === 'bibel';
@@ -730,7 +729,8 @@ const handle_text = (
     section_titles,
     text: {
       id: textId,
-      title: replaceDashes(title),
+      title: replaceDashes(title.title),
+      title_prefix: title.prefix,
       linktitle: replaceDashes(linktitle),
       subtitles,
       is_prose: text.name() === 'prose',
@@ -746,6 +746,25 @@ const handle_text = (
   };
   console.log(Paths.textPath(textId));
   writeJSON(Paths.textPath(textId), text_data);
+};
+
+const extractTitle = head => {
+  const firstline = safeGetText(head, 'firstline');
+  let title = head.get('title') ? head.get('title').toString() : null;
+  let titleToUse = title || firstline;
+  titleToUse = entities
+    .decodeHTML(titleToUse)
+    .replace('<title>', '')
+    .replace('</title>', '');
+  const parts = titleToUse.match(/<num>([^<]*)<\/num>(.*)$/);
+  if (parts != null) {
+    return {
+      prefix: parts[1],
+      title: parts[2],
+    };
+  } else {
+    return { title: titleToUse };
+  }
 };
 
 const handle_work = work => {
@@ -936,7 +955,7 @@ const build_global_lines_json = collected => {
   if (found_changes) {
     // Collect the lines for the changed countries
     // collected_lines[country][titles|first][letter] is an array of lines
-    let collected_lines = new Map(); 
+    let collected_lines = new Map();
     collected.texts.forEach((textMeta, textId) => {
       const poet = collected.poets.get(textMeta.poetId);
       if (changed_langs[poet.country]) {
@@ -949,17 +968,25 @@ const build_global_lines_json = collected => {
             linetype == 'titles' ? textMeta.indexTitle : textMeta.firstline;
           if (line != null) {
             // firstline is null for prose texts
-            let indexableLine = line.replace(/^\[/,'')
-            .replace(/^\(/,'').toUpperCase().replace(/^À/,'A').replace(/^É/,'E')
-            .replace(/^Ô/,'O');
+            let indexableLine = line
+              .replace(/^\[/, '')
+              .replace(/^\(/, '')
+              .toUpperCase()
+              .replace(/^À/, 'A')
+              .replace(/^É/, 'E')
+              .replace(/^Ô/, 'O');
             if (poet.country === 'dk') {
-              indexableLine = indexableLine.replace(/^Ö/,'Ø').replace(/^AA/,"Å");              
+              indexableLine = indexableLine
+                .replace(/^Ö/, 'Ø')
+                .replace(/^AA/, 'Å');
             }
             let firstletter = indexableLine[0];
             if (firstletter >= '0' && firstletter <= '9') {
               firstletter = '_'; // Vises som "Tegn"
             }
-            const work = collected.works.get(textMeta.poetId + '/' + textMeta.workId);
+            const work = collected.works.get(
+              textMeta.poetId + '/' + textMeta.workId
+            );
             let per_letter = per_linetype.get(firstletter) || [];
             per_letter.push({
               poet: {
@@ -968,7 +995,7 @@ const build_global_lines_json = collected => {
               },
               work: {
                 id: work.id,
-                title: workName(work)
+                title: workName(work),
               },
               line,
               textId,
@@ -979,26 +1006,34 @@ const build_global_lines_json = collected => {
       }
     });
     // Write the json files
-    const compareLocales = {'dk': 'da-DK', 
-    'de': 'de', 'fr': 'fr-FR', 'gb': 'en-GB', 'us': 'en-US', 'it': 'it-IT', 'se':'se', 
-    'no':'da-DK' /* no-NO locale virker ikke, men sortering er ligesom 'da-DK' */};
+    const compareLocales = {
+      dk: 'da-DK',
+      de: 'de',
+      fr: 'fr-FR',
+      gb: 'en-GB',
+      us: 'en-US',
+      it: 'it-IT',
+      se: 'se',
+      no:
+        'da-DK' /* no-NO locale virker ikke, men sortering er ligesom 'da-DK' */,
+    };
     collected_lines.forEach((per_country, country) => {
       per_country.forEach((per_linetype, linetype) => {
         const locale = compareLocales[country] || 'da-DK';
-        const linesComparator = (a,b) => {
+        const linesComparator = (a, b) => {
           if (a.line === b.line) {
             return a.poet.name.localeCompare(b.poet.name, locale);
           } else {
-            return a.line.localeCompare(b.line, locale)
+            return a.line.localeCompare(b.line, locale);
           }
         };
-        const lettersComparator = (a,b) => a.localeCompare(b, locale);
-        const letters = Array.from(per_linetype.keys()).sort(lettersComparator); 
+        const lettersComparator = (a, b) => a.localeCompare(b, locale);
+        const letters = Array.from(per_linetype.keys()).sort(lettersComparator);
         per_linetype.forEach((lines, letter) => {
           const data = {
             letters,
-            lines: lines.sort(linesComparator)
-          };          
+            lines: lines.sort(linesComparator),
+          };
           const filename = `static/api/alltexts/${country}-${linetype}-${letter}.json`;
           console.log(filename);
           writeJSON(filename, data);
