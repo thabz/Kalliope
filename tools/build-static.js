@@ -40,6 +40,9 @@ let collected = {
 
 // Use poetname.js:poetNameString instead when node.js uses modules
 const poetName = poet => {
+  if (poet == null) {
+    throw "poetName called with null poet";
+  }
   const { name } = poet;
   const { firstname, lastname } = name;
   if (lastname) {
@@ -1758,7 +1761,14 @@ const build_dict_second_pass = collected => {
 const build_mentions_json = collected => {
   const build_html = poemId => {
     const meta = collected.texts.get(poemId);
-    const poet = poetName(collected.poets.get(meta.poetId));
+    if (meta == null) {
+      throw `Unknown poem ${poemId}`;
+    }
+    const poetObj = collected.poets.get(meta.poetId);
+    if (poetObj == null) {
+      throw `Unknown poet ${meta.poetId}`;
+    }
+    const poet = poetName(poetObj);
     const work = collected.works.get(meta.poetId + '/' + meta.workId);
     if (work == null) {
       throw `${poemId} references unknown work ${meta.poetId +
@@ -2347,7 +2357,6 @@ collected.textrefs = b('build_textrefs', build_textrefs, collected);
 build_dict_first_pass(collected);
 collected.keywords = b('build_keywords', build_keywords);
 b('build_poet_lines_json', build_poet_lines_json, collected);
-b('build_global_lines_json', build_global_lines_json, collected);
 b('build_poet_works_json', build_poet_works_json, collected);
 b('works_second_pass', works_second_pass, collected);
 b('build_works_toc', build_works_toc, collected);
@@ -2355,6 +2364,7 @@ collected.timeline = build_global_timeline(collected);
 b('build_bio_json', build_bio_json, collected);
 b('build_news', build_news, collected);
 b('build_about_pages', build_about_pages, collected);
+b('build_global_lines_json', build_global_lines_json, collected);
 b('build_dict_second_pass', build_dict_second_pass, collected);
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
