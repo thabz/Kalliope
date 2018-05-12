@@ -1059,17 +1059,18 @@ const works_first_pass = collected => {
       work.find('//poem|//prose').forEach(part => {
         const textId = part.attr('id').value();
         const head = part.get('head');
-        const title = safeGetText(head, 'title');
-        const firstline = safeGetText(head, 'firstline');
-        const linktitle = safeGetText(head, 'linktitle');
-        const indextitle = safeGetText(head, 'indextitle');
+        const title = extractTitle(head, 'title');
+        const firstline = extractTitle(head, 'firstline');
+        const linktitle = extractTitle(head, 'linktitle');
+        const indextitle = extractTitle(head, 'indextitle');
+
         const linkTitle = linktitle || title || firstline;
         const indexTitle = indextitle || title || firstline;
 
         texts.set(textId, {
-          title: replaceDashes(linkTitle),
-          firstline: replaceDashes(firstline),
-          indexTitle: replaceDashes(indexTitle),
+          title: replaceDashes(linkTitle.title),
+          firstline: replaceDashes(firstline == null ? null : firstline.title),
+          indexTitle: replaceDashes(indexTitle.title),
           type: part.name(),
           poetId: poetId,
           workId: workId,
