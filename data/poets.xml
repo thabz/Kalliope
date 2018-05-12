@@ -2830,7 +2830,7 @@
       <place>Kbh.</place>
     </dead>
   </period>
-  <works>1830,1836,1837,1841,1848,1854,andre</works>
+  <works>1830,1836,1837,1841,1848,1851a,1851b,1854,1862a,1862b</works>
 </person>
 
 <person id="liunge" country="dk" lang="da" type="poet">
@@ -3129,9 +3129,11 @@
   <period>
     <born>
       <date>1818-05-20</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1892-11-21</date>
+      <place>Frederiksberg</place>
     </dead>
   </period>
   <works>1852,1865,1872,1884,1893,andre</works>
@@ -3643,6 +3645,25 @@
   <works>1889,p1879,p1890</works>
 </person>
 
+<person id="rosenbergpa" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>P.A.</firstname>
+    <lastname>Rosenberg</lastname>
+    <fullname>Peter Andreas Plum Rosenberg</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1858-07-28</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1935-05-17</date>
+      <place>Gentofte</place>
+    </dead>
+  </period>
+  <works>1910</works>
+</person>
+
 <person id="knudsen" country="dk" lang="da" type="poet">
   <name>
     <firstname>Jakob</firstname>
@@ -4009,7 +4030,7 @@
       <date>1946-07-13</date>
     </dead>
   </period>
-  <works>1895,1897,1910</works>
+  <works>1895,1897,1908,1910</works>
 </person>
 
 <person id="ewaldt" country="dk" lang="da" type="poet">

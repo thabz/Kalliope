@@ -20,15 +20,19 @@ import TextContent from '../components/textcontent.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import SidebarPictures from '../components/sidebarpictures.js';
+import Picture from '../components/picture.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
+import _ from '../pages/helpers/translations.js';
 import ErrorPage from './error.js';
 import type {
   Lang,
   Poet,
   Work,
   Text,
+  TextSource,
+  PictureItem,
   KeywordRef,
   PrevNextText,
   Error,
@@ -201,18 +205,78 @@ export default class extends React.Component<TextComponentProps> {
     const notes = text.notes.map((note, i) => {
       return <Note key={i} note={note} lang={lang} />;
     });
+
+    let sourceText = '';
+    if (text.source != null) {
+      const source: TextSource = text.source;
+      sourceText = 'Teksten følger ';
+      sourceText += source.source.replace(/\.?$/, ', ');
+      if (source.pages.indexOf('-') > -1) {
+        sourceText += 'pp. ';
+      } else {
+        sourceText += 'p. ';
+      }
+      sourceText += source.pages + '.';
+      const note = {
+        lang,
+        type: 'source',
+        content_html: [[sourceText, { html: true }]],
+        content_lang: 'da',
+      };
+      notes.push(
+        <Note className="print-only" key="source" note={note} lang={lang} />
+      );
+    }
     let renderedNotes = null;
     if (notes.length > 0) {
       renderedNotes = <div style={{ marginBottom: '30px' }}>{notes}</div>;
     }
 
+    let textPictures = text.pictures.map((p, i) => {
+      return (
+        <Picture
+          key={'textpicture' + i}
+          pictures={[p]}
+          contentLang={p.content_lang || 'da'}
+          lang={lang}
+        />
+      );
+    });
+    if (text.source != null && text.source.facsimilePages != null) {
+      function pad(num, size) {
+        var s = num + '';
+        while (s.length < size) s = '0' + s;
+        return s;
+      }
+      const firstPageNumber = text.source.facsimilePages[0];
+      let facsimilePictures: Array<PictureItem> = [];
+      const srcPrefix = `https://kalliope.org/static/facsimiles/${poet.id}/${
+        text.source.facsimile
+      }`;
+      for (let i = 0; i < text.source.facsimilePageCount; i++) {
+        facsimilePictures.push({
+          src: srcPrefix + '/' + pad(i, 3) + '.jpg',
+          content_html: [[sourceText, { html: true }]],
+          content_lang: 'da',
+        });
+      }
+      textPictures.push(
+        <Picture
+          key={'facsimile' + firstPageNumber}
+          pictures={facsimilePictures}
+          startIndex={firstPageNumber - 1}
+          lang="da"
+          contentLang="da"
+        />
+      );
+    }
+
     const renderedPictures = (
-      <SidebarPictures
-        lang={lang}
-        pictures={text.pictures}
-        srcPrefix={`/static/images/${poet.id}`}
-      />
+      <div style={{ marginTop: '30px' }}>
+        <SidebarPictures>{textPictures}</SidebarPictures>
+      </div>
     );
+
     const refs = text.refs.map((ref, i) => {
       return (
         <div key={i} style={{ marginBottom: '10px' }}>
@@ -251,16 +315,17 @@ export default class extends React.Component<TextComponentProps> {
       refs.length > 0 ||
       text.has_footnotes ||
       text.pictures.length > 0 ||
-      text.notes.length > 0 ||
-      text.keywords.length > 0
+      notes.length > 0 ||
+      text.keywords.length > 0 ||
+      textPictures.length > 0
     ) {
       sidebar = (
         <div>
           {renderedNotes}
-          {renderedPictures}
           <FootnoteList />
           {renderedRefs}
           {renderedKeywords}
+          {renderedPictures}
         </div>
       );
     }
@@ -297,12 +362,18 @@ export default class extends React.Component<TextComponentProps> {
     );
 
     const title = <PoetName poet={poet} includePeriod />;
-    const ogTitle =
-      poetNameString(poet, false, false) +
-      ': »' +
-      textLinkTitleString(text) +
-      '« fra ' +
-      workTitleString(work);
+
+    const ogTitle = _(`{poetName}: »{poemTitle}« fra {workTitle}`, lang, {
+      poetName: poetNameString(poet, false, false),
+      poemTitle: textLinkTitleString(text),
+      workTitle: workTitleString(work),
+    });
+    // const ogTitle =
+    //   poetNameString(poet, false, false) +
+    //   ': »' +
+    //   textLinkTitleString(text) +
+    //   '« fra ' +
+    //   workTitleString(work);
     const headTitle =
       textLinkTitleString(text) +
       ' - ' +

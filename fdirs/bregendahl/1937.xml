@@ -4,10 +4,14 @@
 <workhead>
    <title>Filtret Høst</title>
    <year>1937</year>
+   <notes>
+       <note>Teksten følger Marie Bregendahl: <i>Filtret Høst</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1937.</note>
+   </notes>
    <pictures>
        <picture type="frontpage" src="1937-p1.jpg">Forsiden til <i>Filtret Høst</i> (1937).</picture>
        <picture type="titlepage" src="1937-p2.jpg">Titelbladet til <i>Filtret Høst</i> (1937).<br/>,,Marie Bregendahl / Filtret Høst / Spredte Stemninger / og Udbrud // København / Gyldendalske Boghandel / Nordisk Forlag / 1937''</picture>
    </pictures>
+   <source facsimile="11530804687C_color" facsimile-pages-num="88" facsimile-pages-offset="10">Marie Bregendahl: <i>Filtret Høst</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1937.</source>
    <quality>korrektur1,kilde,side</quality>
 </workhead>
 <workbody>
@@ -15,9 +19,7 @@
 <prose id="bregendahl2017091501">
 <head>
    <title>Forord</title>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 5.</note>
-   </notes>
+   <source pages="5"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -39,9 +41,7 @@ København, 1937.
 <head>
    <title>Vinterstemning</title>
    <firstline>Det er svært saa det fryser om Dagene, nu</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 11-12.</note>
-   </notes>
+   <source pages="11-12"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -83,9 +83,7 @@ Vi ved jo, der savnes baade Brød og Bo,
 <head>
    <title>Martsvinter</title>
    <firstline>Oh, Moder Jord</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 13-15.</note>
-   </notes>
+   <source pages="13-15"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -161,9 +159,7 @@ Hør vor ømme Bøn!
 <head>
    <title>Aprilsvejr</title>
    <firstline>Jeg vaagner op en Morgenstund</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 16-18.</note>
-   </notes>
+   <source pages="16-18"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -237,9 +233,7 @@ for Solens varme Smil.
 <head>
    <title>Vaar paany</title>
    <firstline>Nu synker Væden i Damme og Sig</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 19-20.</note>
-   </notes>
+   <source pages="19-20"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -281,9 +275,7 @@ det er Vaar, det er Vaar paany!
 <head>
    <title>Midsommervise</title>
    <firstline>Nu bølger Rugen</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 21.</note>
-   </notes>
+   <source pages="21"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -314,9 +306,7 @@ her midt i Sommerens Lykkevæld?
 <head>
    <title>Sommeraften</title>
    <firstline>Nu glider Solen saa langsomt ned</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 22.</note>
-   </notes>
+   <source pages="22"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -348,8 +338,8 @@ saa slumrer Store og Smaa.
    <firstline>Der er saa kvalmt i den store By</firstline>
    <notes>
        <note>*) Brynde, Sommerbrynde, Julibrynde er paa min Hjemegn et hverdagsligt Udtryk for brændende Sommervarme, ulidelig Hede.</note>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 23-24.</note>
    </notes>
+    <source pages="23-24"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -387,9 +377,7 @@ og i et Blik over Somrens Land,
 <head>
    <title>Høstaftner</title>
    <firstline>Naar Solen nu er dalet</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 25-28.</note>
-   </notes>
+   <source pages="25-28"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -490,9 +478,7 @@ og nyder deres dunkle Drøm og deres Duftes Fest.
 <head>
    <title>I Efteraarsstormen</title>
    <firstline>Der staar en strid Storm ind over Landet</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 29-36.</note>
-   </notes>
+   <source pages="29-36"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -681,7 +667,7 @@ og jeg ynkes over dens Taalsomhed
 og pines af dens langmodige Ro,
 — thi <i>det</i> kan jeg. Men glædes —
 — nej, <i>glædes</i>,
-det kan jeg ikke.    
+det kan jeg ikke.
 </body>
 </poem>
 
@@ -689,9 +675,7 @@ det kan jeg ikke.
 <head>
    <title>Decembernætter</title>
    <firstline>Vinterens Mørke har sænket sig over</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 36.</note>
-   </notes>
+   <source pages="36"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -734,9 +718,7 @@ og alle Vunder er aabne.
 <head>
    <title>Morgenstemning</title>
    <firstline>Det var Ferietid</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 39-41.</note>
-   </notes>
+   <source pages="39-41"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -827,9 +809,7 @@ og Solskin, og Solskin og Sol!
 <head>
    <title>Hvad er Kvinders Længsel?</title>
    <firstline>Ja, hvad er Kvinders Længsel</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 42-43.</note>
-   </notes>
+   <source pages="42-43"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -875,10 +855,8 @@ end for ung Karen selv?
 <head>
    <title>Jeg kunde ikke sove -</title>
    <firstline>Saa svandt den da, den Nat saa lang</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 44-45.</note>
-       <!-- Man skulle tro at første strofe skulle indrykkes som de resterende, men sådan er forlægget ikke. -->
-   </notes>
+   <!-- Man skulle tro at første strofe skulle indrykkes som de resterende, men sådan er forlægget ikke. -->
+   <source pages="44-45"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -914,7 +892,7 @@ I Uvejrshyl, i Tordenbrag,
    — endda saa kan jeg sove.
 Men ved jeg, at <i>du</i> ligger syg 
 og pint i din Alkove,
-   <i>da</i> kan jeg ikke sove.    
+   <i>da</i> kan jeg ikke sove.
 </body>
 </poem>
 
@@ -922,9 +900,7 @@ og pint i din Alkove,
 <head>
    <title>En lille Sang</title>
    <firstline>Du er saa vakker, Du</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 46.</note>
-   </notes>
+   <source pages="46"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -958,9 +934,7 @@ Jeg følger, — for jeg kan jo ikke andet.
 <head>
    <title>Navnet</title>
    <firstline>Jeg er saa sært bevæget</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 47-48.</note>
-   </notes>
+   <source pages="47-48"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1020,9 +994,7 @@ i Sjælen prentet ind.
 <head>
    <title>Adskilte</title>
    <firstline>Du skulde komme herhjem til mig</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 49-50.</note>
-   </notes>
+   <source pages="49-50"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1064,9 +1036,7 @@ de vandrer dog tro til dig.
 <head>
    <title>Mor og Barn</title>
    <firstline>Ja, du er mit Barn, du lille Dreng</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s.53-54.</note>
-   </notes>
+   <source pages="53-54"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1112,9 +1082,7 @@ saa er du <i>min</i> Søn, og jeg <i>din</i> Mor!
 <head>
    <title>Forladte Mor</title>
    <firstline>Aa, mit eget søde Pus</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 55-56.</note>
-   </notes>
+   <source pages="55-56"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1171,9 +1139,7 @@ og din Mor forgaar i Graad.
 <head>
    <title>Fra Mor til Søn</title>
    <firstline>Nu maa vi leve skilte Du og jeg</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 57-58.</note>
-   </notes>
+   <source pages="57-58"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1222,9 +1188,7 @@ af Mod og Arbejdslyst og Glæde rig,
 <head>
    <title>Udbrud</title>
    <firstline>Har man traadt paa vore dyre</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 61-64.</note>
-   </notes>
+   <source pages="61-64"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1242,7 +1206,7 @@ Følelser, — ja, <i>trampet</i> dem,
     uskyldsrene — himmelblaa!
 
 
-II.    
+II.
 
 I hulkende Smerte og Graad, 
 saa min Pude blev vaad,
@@ -1303,9 +1267,7 @@ For min Livsvilje <i>er</i> som en Fjeder af Staal,
 <head>
    <title>Ved Slægtens Grav</title>
    <firstline>Vi var engang en Sødskendflok</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 67-70.</note>
-   </notes>
+   <source pages="67-70"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1407,9 +1369,7 @@ Og om en Stund saa hviler ogsaa
 <head>
    <title>Sædemandens Sang</title>
    <firstline>Den Sædemand gaar ud at saa</firstline>
-   <notes>
-       <note>Teksten følger <i>Filtret Høst</i> (1937), s. 71-72.</note>
-   </notes>
+   <source pages="71-72"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

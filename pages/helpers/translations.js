@@ -37,6 +37,8 @@ const translations: { [string]: string } = {
   'en*ca.': 'en*c.',
   'en*Søg i Kalliope': 'Search Kalliope',
   'en*Søg i {genetiveLastName} værker': 'Search {genetiveLastName} works',
+  'en*{poetName}: »{poemTitle}« fra {workTitle}':
+    '{poetName}: “{poemTitle}” from {workTitle}',
   'en*Søg i Kalliopes {adjective} samling':
     "Search Kalliope's {adjective} collection",
 };

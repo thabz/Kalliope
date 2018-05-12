@@ -22,18 +22,17 @@ import type {
   Poet,
   Work,
   SectionForRendering,
+  LinesType,
 } from './helpers/types.js';
 import 'isomorphic-fetch';
 
-type LinesType = 'first' | 'titles';
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    poet: Poet,
-    lines: Array<LinesPair>,
-    type: LinesType,
-  };
-
+type TextsProps = {
+  lang: Lang,
+  poet: Poet,
+  lines: Array<LinesPair>,
+  type: LinesType,
+};
+export default class Texts extends React.Component<TextsProps> {
   static async getInitialProps({
     query: { lang, poetId, type },
   }: {

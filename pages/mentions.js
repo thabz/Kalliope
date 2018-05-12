@@ -14,7 +14,13 @@ import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
-import type { Lang, Poet, Work, TextContentType } from './helpers/types.js';
+import type {
+  Lang,
+  Poet,
+  Work,
+  TextContentType,
+  Error,
+} from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 
 type MentionsProps = {
@@ -55,7 +61,7 @@ export default class extends React.Component<MentionsProps> {
       error,
     } = this.props;
 
-    if (error) {
+    if (error != null) {
       return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
     }
     const requestPath = `/${lang}/mentions/${poet.id}`;
