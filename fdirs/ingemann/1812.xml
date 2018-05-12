@@ -11,8 +11,8 @@
    <pictures>
        <picture type="titlepage" src="1812-p1.jpg">Titelbladet lyder ,,Digte / af / B. S. Ingemann. // Anden Deel. // Kjøbenhavn 1812. / Trykt paa Forfatterens Forlag / hos Boas Brünnich.''.</picture>
    </pictures>
-    <source facsimile="115308068517_color.pdf" facsimile-pages-offset="314">B. S. Ingemann: <i>Digte</i>, Anden Deel, Forfatterens Forlag, Kbh., 1812.</source>
-   <quality>korrektur1,kilde,side</quality>
+    <source facsimile="115308068517_color.pdf" facsimile-pages-num="694" facsimile-pages-offset="314">B. S. Ingemann: <i>Digte</i>, Anden Deel, Forfatterens Forlag, Kbh., 1812.</source>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </workhead>
 <workbody>
 
@@ -26,7 +26,7 @@
        <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <source pages="1-3"/>
-   <quality>korrrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Med Fryd jeg atter Luthen stemmer;
@@ -77,7 +77,10 @@ Et Glimt af høy're Glæde i sin Sorg!!
        <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <source pages="4-7"/>
-   <quality>korrrektur1,kilde,side</quality>
+   <dates>
+       <event>1811-12-11</event>
+   </dates>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Lyt til Jubelsang fra Herthas Strand!
@@ -159,7 +162,7 @@ Dania din elskte Tvillingsøster.
        <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <source pages="8-11"/>
-   <quality>korrrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Naar Stormen hviner ved Midnatstid,
@@ -247,16 +250,15 @@ Og hyler og slynger en gnistrende Brand,
 
 <poem id="ingemann2002092304">
 <head>
-   <title>Torqvato Tasso*)</title>
-   <toctitle>Torqvato Tasso</toctitle>
-   <indextitle>Torqvato Tasso</indextitle>
+   <title>Torqvato Tasso</title>
    <firstline>Kom Tasso! - bød Hesperien med Fryd</firstline>
    <notes>
+       <note>* ,,Tasso, dieser liebenswürdige, aber fast sein ganßes Leben hindurch unglückliche Dichter, als er erschöpft an Kräften in Rom ankam, um auf dem Capitolium gekrönt zu werden, ließ sich in das Kloster St. Onofrio bringen, wo er, indeß alle Anstalten zur Feierlichkeit gemacht waren, den Tag vor seiner Krönung sanft entschlief. Er liegt mit Barklai und dem Dichter Guidi in der Kirche St. Onofrio unter einem Steine begraben; zu einem Denkmal ist kein Raum da. Man zeiget sein Brustbild und die dem Gesichte des Todten entnommene Larve.'' - <i>Herder.</i></note>
        <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <source pages="12-14"/>
    <keywords>tasso</keywords>
-   <quality>korrrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 ,,Kom Tasso! - bød Hesperien med Fryd -
@@ -300,7 +302,7 @@ Han vandre fordringsløs sin Pilgrimsgang!
 Hist vente Palmerne, de eviggrønne.''
 
 
-<wrap><small>*) ,,Tasso, dieser liebenswürdige, aber fast sein ganßes Leben hindurch unglückliche Dichter, als er erschöpft an Kräften in Rom ankam, um auf dem Capitolium gekrönt zu werden, ließ sich in das Kloster St. Onofrio bringen, wo er, indeß alle Anstalten zur Feierlichkeit gemacht waren, den Tag vor seiner Krönung sanft entschlief. Er liegt mit Barklai und dem Dichter Guidi in der Kirche St. Onofrio unter einem Steine begraben; zu einem Denkmal ist kein Raum da. Man zeiget sein Brustbild und die dem Gesichte des Todten entnommene Larve.''</small></wrap>
+<wrap><small>*) </small></wrap>
                                                                        <nonum><small><i>Herder</i></small></nonum>
 </body>
 </poem>
@@ -314,7 +316,7 @@ Hist vente Palmerne, de eviggrønne.''
        <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <source pages="15-20"/>
-   <quality>korrrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <nonum><center><i>Elskeren</i></center></nonum>
@@ -454,7 +456,7 @@ Sig, at vi leved, og elsked hverandre!
        <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <source pages="21-22"/>
-   <quality>korrrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Gid jeg var en Morgenvind!
@@ -499,7 +501,7 @@ I det skjønt-harmonisk Eene.
        <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <source pages="23-26"/>
-   <quality>korrrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Marsk Stig havde blodige Daad fuldbragt,
@@ -632,7 +634,7 @@ En Stund de svæve paa Bølgen blaa,
        <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <source pages="29"/>
-   <quality>korrrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
@@ -663,7 +665,7 @@ Kilden til min Længsel, og min Smerte.
        <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <source pages="30-31"/>
-   <quality>korrrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hvad er det, o! Pige, jeg hos dig tilbeder?
@@ -706,7 +708,7 @@ En Guddom tilbeder jeg udi din Aand.
        <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <source pages="32-34"/>
-   <quality>korrrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Foster af den gamle Evighed!
@@ -769,7 +771,7 @@ Som henover dig bevinget stræber.
        <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <source pages="35-36"/>
-   <quality>korrrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Fuglen i Luften saa gladelig sjunger
@@ -812,7 +814,7 @@ Kysser Smaapiger! o! kysser mig lidt!
        <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <source pages="37-38"/>
-   <quality>korrrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Blandt Myrther sad den evig unge Gud
@@ -846,7 +848,7 @@ Der Sjælen skal opsøge dig igjen.
        <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <source pages="39"/>
-   <quality>korrrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Gjækked hun mig i elskværdigt Lune,
@@ -873,7 +875,7 @@ For eet Øjeblik at elskes saa.
    <notes>
        <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
-   <quality>korrrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <source pages="40-45"/>
    <keywords>oehlenschlaeger</keywords>
 </head>
