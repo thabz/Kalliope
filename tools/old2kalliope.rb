@@ -24,11 +24,15 @@ end
 @keywords = nil;
 @page = nil;
 @written = nil;
+@performed = nil;
 @type = 'poem'
 
 def printPoem()
   if @source and not @page 
       abort "FEJL: Digtet »#{@title}« mangler sideangivelse"
+  end
+  if @source and @page =~ /\d-$/
+      abort "FEJL: Digtet »#{@title}« har kun halv sideangivelse: #{@page}"
   end
   poemid = @poemid || "#{@poetid}#{@date}#{'%02d' % @poemcount}"
   puts "<#{@type} id=\"#{poemid}\">"
@@ -61,11 +65,20 @@ def printPoem()
     puts "    </notes>"
   end
   if @source and @page
-    puts "    <source pages=\"#{@page}\"/>"
+      if (@page =~ /[ivx]+/i) 
+        puts "    <source pages=\"#{@page}\" facsimile-pages=\"10\" />"
+      else 
+        puts "    <source pages=\"#{@page}\"/>"
+      end
   end
-  if @written
+  if @written or @performed
     puts "    <dates>"
-    puts "        <written>#{@written}</written>"
+    if @written
+      puts "        <written>#{@written}</written>"
+    end
+    if @performed
+      puts "        <performed>#{@performed}</performed>"
+    end
     puts "    </dates>"
   end
   if @keywords
@@ -91,6 +104,7 @@ def printPoem()
   @keywords = nil
   @page = nil
   @written = nil
+  @performed = nil
   @type = 'poem'
   @poemcount += 1
 end
@@ -153,7 +167,7 @@ File.readlines(ARGV[0]).each do |line|
   end
   if @state == 'NONE' and line =~ /^KILDE:/
       @source = line[6..-1].strip
-      puts "<source facsimile=\"XXXXXX_color.pdf\" facsimile-pages-offset=\"YYY\">#{@source}</source>"
+      puts "<source facsimile=\"XXXXXX_color.pdf\" facsimile-pages-num=\"150\" facsimile-pages-offset=\"10\">#{@source}</source>"
       puts ""
   end
   if @state == 'NONE' and line =~ /^DIGTER:/
@@ -187,6 +201,12 @@ File.readlines(ARGV[0]).each do |line|
   if @state == 'INHEAD'
     if line.start_with?("T:")
       @title = line[2..-1].strip
+      if @title =~ /<num>/
+          @stripped = @title.gsub(/<num>.*<\/num>/,'')
+          @toctitle = @title
+          @linktitle = @stripped
+          @indextitle = @stripped
+      end
     elsif line.start_with?("F:")
       @firstline = line[2..-1].strip
     elsif line.start_with?("U:")
@@ -207,6 +227,8 @@ File.readlines(ARGV[0]).each do |line|
       @page = line[5..-1].strip
     elsif line.start_with?("SKREVET:")
       @written = line[8..-1].strip
+    elsif line.start_with?("FREMFØRT:")
+      @written = line[9..-1].strip
     elsif line.start_with?("TYPE:")
       @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
     elsif line =~ /^[A-Z]*:/

@@ -2,6 +2,10 @@ const fs = require('fs');
 const entities = require('entities');
 const libxml = require('libxmljs');
 const bible = require('./bible-abbr.js');
+const async = require('async');
+const path = require('path');
+const sharp = require('sharp');
+const CommonData = require('../../pages/helpers/commondata.js');
 
 const safeMkdir = dirname => {
   try {
@@ -100,7 +104,8 @@ const replaceDashes = html => {
       .replace(/>- /g, '>— ')
       .replace(/,,- /g, ',,— ')
       .replace(/,,/g, '&bdquo;')
-      .replace(/''/g, '&ldquo;')
+      .replace(/''/g, '&rdquo;')
+      .replace(/``/g, '&ldquo;')
       .replace(/'/g, '&rsquo;')
       .replace(/&nbsp;- /g, '&nbsp;— ')
       .replace(/ -&ldquo;/g, ' —&ldquo;')
@@ -313,6 +318,64 @@ const htmlToXml = (
   return lines;
 };
 
+const buildThumbnails = (topFolder, isFileModified) => {
+  let resizeImageQueue = async.queue((task, callback) => {
+    sharp(task.inputfile)
+      .resize(task.maxWidth, 10000)
+      .max()
+      .withoutEnlargement()
+      .toFile(task.outputfile, function(err) {
+        if (err != null) {
+          console.log(err);
+        }
+        console.log(task.outputfile);
+        callback();
+      });
+  }, 2);
+
+  const pipeJoinedExts = CommonData.availableImageFormats.join('|');
+  const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
+
+  const handleDirRecursive = dirname => {
+    if (!fs.existsSync(dirname)) {
+      console.log(`${dirname} mangler, så genererer ingen thumbs deri.`);
+      return;
+    }
+    fs.readdirSync(dirname).forEach(filename => {
+      const fullFilename = path.join(dirname, filename);
+      const stats = fs.statSync(fullFilename);
+      if (stats.isDirectory()) {
+        handleDirRecursive(fullFilename);
+      } else if (
+        stats.isFile() &&
+        filename.endsWith('.jpg') &&
+        !skipRegExps.test(filename)
+      ) {
+        CommonData.availableImageFormats.forEach((ext, i) => {
+          CommonData.availableImageWidths.forEach(width => {
+            const outputfile = fullFilename
+              .replace(/\.jpg$/, `-w${width}.${ext}`)
+              .replace(/\/([^\/]+)$/, '/t/$1');
+            safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
+            if (
+              (isFileModified != null && isFileModified(fullFilename)) ||
+              !fileExists(outputfile)
+            ) {
+              resizeImageQueue.push({
+                inputfile: fullFilename,
+                outputfile,
+                maxWith: width,
+              });
+            }
+          });
+        });
+      }
+    });
+  };
+
+  handleDirRecursive(topFolder);
+};
+
 module.exports = {
   safeMkdir,
   fileExists,
@@ -327,4 +390,5 @@ module.exports = {
   safeGetText,
   safeGetAttr,
   replaceDashes,
+  buildThumbnails,
 };
