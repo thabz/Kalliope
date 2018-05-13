@@ -71,13 +71,16 @@ def printPoem()
         puts "    <source pages=\"#{@page}\"/>"
       end
   end
-  if @written or @performed
+  if @written or @performed or @event
     puts "    <dates>"
     if @written
       puts "        <written>#{@written}</written>"
     end
     if @performed
       puts "        <performed>#{@performed}</performed>"
+    end
+    if @event
+      puts "        <event>#{@event}</event>"
     end
     puts "    </dates>"
   end
@@ -229,6 +232,8 @@ File.readlines(ARGV[0]).each do |line|
       @written = line[8..-1].strip
     elsif line.start_with?("FREMFØRT:")
       @written = line[9..-1].strip
+    elsif line.start_with?("BEGIVENHED:")
+      @event = line.gsub("BEGIVENHED:",'').strip
     elsif line.start_with?("TYPE:")
       @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
     elsif line =~ /^[A-Z]*:/
