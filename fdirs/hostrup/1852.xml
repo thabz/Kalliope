@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1852" author="hostrup" status="incomplete" type="poetry">
+<kalliopework id="1852" author="hostrup" status="complete" type="poetry">
 <workhead>
-   <title>Viser og Vers, nogle Minder fra et Studenterliv</title>
+   <title>Viser og Vers</title>
    <year>1852</year>
-   <source facsimile="11530806609E_color" facsimile-pages-num="176" facsimile-pages-offset="10">Christian Hostrup: <i>Viser og Vers</i>, F. H. Eibe, Kbh., 1852.</source>
+   <notes>
+       <note>Teksten følger Christian Hostrup: <i>Viser og Vers</i>, F. H. Eibe, Kbh., 1852.</note>
+       <note>Noter med en foranstillet asterisk er Hostrups egne.</note>
+   </notes>
+   <pictures>
+       <picture type="titlepage" src="1852-p1.jpg">Titelbladet til <i>Viser og Vers</i> (1852) lyder ,,Viser og Vers, / nogle Minder fra et Studenterliv, / af / C. Hostrup. // Kjøbenhavn. / Forlagt af Bog- og Papirhandler F. H. Eibe. / Trykt hos Louis Klein. / 1852.''</picture>
+   </pictures>
+   <source facsimile="11530806609E_color" facsimile-pages-num="176" facsimile-pages-offset="8">Christian Hostrup: <i>Viser og Vers</i>, F. H. Eibe, Kbh., 1852.</source>
 </workhead>
 <workbody>
 
@@ -360,7 +367,7 @@ og derfor en Skaal til hans Ære!
 </body>
 </poem>
 
-<section>
+<section level="3">
 <head>
     <title>Til Kontubernalen</title>
 </head>
@@ -456,7 +463,7 @@ idag min Begejstrings Flamme.
 </poem>
 
 </content>
-</section>
+</section> <!-- Til Kontubernalen -->
 
 <poem id="hostrup2018051308">
 <head>
@@ -501,7 +508,7 @@ i Drøm og Daad forbinder.
 </poem>
 
 </content>
-</section>
+</section> <!-- Regensliv -->
 
 <section>
 <head>
@@ -1129,7 +1136,7 @@ vort store Fædreland!
 </poem>
 
 </content>
-</section>
+</section> <!-- Studentertogene -->
 
 <section>
 <head>
@@ -1426,12 +1433,9 @@ vor Tak af Hjertets Fylde.
 <poem id="hostrup2018051325">
 <head>
     <title>Til vore Saarede</title>
-    <subtitle>184S</subtitle>
+    <subtitle>1849</subtitle>
     <firstline>Det danske Heltenavn var fast</firstline>
     <source pages="66-67"/>
-    <dates>
-        <event>1845-06-23</event>
-    </dates>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1535,7 +1539,7 @@ og kom som Studenter herhjem igjen!
     <notes>
         <note>* <w>Kampen ved Ekkernforde</w> og <w>Slaget ved Isted</w> ere begge skrevne til Forestillinger, som gaves til Fordeel for Invaliderne.</note>
     </notes>
-    <source pages="68-73"/>
+    <source pages="70-73"/>
     <dates>
         <event>1851-07-25</event>
     </dates>
@@ -1635,7 +1639,7 @@ som aldrig vi kan betale.
 </poem>
 
 </content>
-</section>
+</section> <!-- Krigen -->
 
 <section>
 <head>
@@ -1677,7 +1681,7 @@ Musernes Dands.
 </body>
 </poem>
 
-<section>
+<section level="2">
 <head>
     <title>Drikkeviser</title>
 </head>
@@ -1799,7 +1803,7 @@ en Skaal for ham, der først dem naaer!
 </poem>
 
 </content>
-</section>
+</section> <!-- Drikkeviser -->
 
 <poem id="hostrup2018051332">
 <head>
@@ -2078,7 +2082,7 @@ mild er Værtinden, og Værten er glad
 </body>
 </poem>
 
-<section>
+<section level="2">
 <head>
     <title>Løjer</title>
 </head>
@@ -2247,6 +2251,9 @@ hvor han sig gifted med en Frøken Brandis
 og driver Handel nu med Sukkerkandis.
 </body>
 </poem>
+
+</content>
+</section> <!-- Løjer -->
 
 <poem id="hostrup2018051340">
 <head>
@@ -3517,7 +3524,7 @@ og hilse den, som skal komme!
 </body>
 </poem>
 
-<section>
+<section level="3">
 <head>
     <title>Paa Hendes Fødselsdag</title>
 </head>
@@ -3525,7 +3532,8 @@ og hilse den, som skal komme!
 
 <poem id="hostrup2018051355">
 <head>
-    <title><num>1.</num>Sving dig kun lystig, du vilde Vind!</title>
+    <title>Sving dig kun lystig, du vilde Vind!</title>
+    <toctitle><num>1.</num>Sving dig kun lystig, du vilde Vind!</toctitle>
     <firstline>Sving dig kun lystig, du vilde Vind!</firstline>
     <source pages="144-145"/>
     <dates>
@@ -3574,7 +3582,7 @@ mod Sejrens Evighedskrandse.
 
 <poem id="hostrup2018051356">
 <head>
-    <title><num>2.</num>Aaret henrandt. Gik det opad</title>
+    <title>Aaret henrandt. Gik det opad</title>
     <toctitle><num>2.</num>Aaret henrandt. Gik det opad</toctitle>
     <firstline>Aaret henrandt. Gik det opad</firstline>
     <source pages="146"/>
@@ -3607,7 +3615,7 @@ thi jeg veed, at du mig elsker
 </poem>
 
 </content>
-</section>
+</section> <!-- Paa hendes fødselsdag -->
 
 <poem id="hostrup2018051357">
 <head>
@@ -3898,6 +3906,9 @@ til Daad, som kan lyse fra Strand til Strand
 og hædre dig og dit Fædreland.
 </body>
 </poem>
+
+</content>
+</section> <!-- Blandede Viser og Digte -->
 
 </workbody>
 </kalliopework>
