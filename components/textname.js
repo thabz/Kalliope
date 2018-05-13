@@ -8,8 +8,17 @@ type TextNameProps = {
 export default class TextName extends React.Component<TextNameProps> {
   render() {
     const { text } = this.props;
-    const { title } = text;
-    return <span className="textname">{title}</span>;
+    const { title, title_prefix } = text;
+    let renderedPrefix = null;
+    if (title_prefix != null) {
+      renderedPrefix = <span style={{ color: '#888' }}>{title_prefix} </span>;
+    }
+    return (
+      <span className="textname">
+        {renderedPrefix}
+        {title}
+      </span>
+    );
   }
 }
 

@@ -77,6 +77,8 @@ export type PrevNextText = {
   title: string,
 };
 
+export type LinesType = 'first' | 'titles';
+
 export type LinesPair = {
   id: string,
   title: string,
@@ -133,6 +135,7 @@ export type TextSource = {
 export type Text = {
   id: string,
   title: string,
+  title_prefix?: string,
   linktitle: string,
   subtitles?: Array<TextContentType>,
   notes: Array<NoteItem>,
