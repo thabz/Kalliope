@@ -149,6 +149,7 @@
 'crt/æt',
 'crs/æs',
 'Bp/Bø',
+'Orne/Ørne',
 'Oin/Øin',
 'skion/skiøn',
 'Groes/Græs',
