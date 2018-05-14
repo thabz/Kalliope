@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export default class TwoColumns extends React.Component {
+export default class TwoColumns extends React.Component<*> {
   render() {
     return (
       <div className="two-columns">

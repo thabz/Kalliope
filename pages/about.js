@@ -11,6 +11,7 @@ import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import TwoColumns from '../components/twocolumns.js';
 import SidebarPictures from '../components/sidebarpictures.js';
+import Picture from '../components/picture.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
@@ -21,20 +22,20 @@ import type {
   Lang,
   NewsItem,
   TextContentType,
-  Keyword,
+  AboutItem,
+  Error,
 } from './helpers/types.js';
 import { createURL } from './helpers/client.js';
 
 // Koden er stort set identisk med keyword
 
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    keyword: Keyword,
-    aboutItemId: string,
-    error: ?Error,
-  };
-
+type AboutProps = {
+  lang: Lang,
+  keyword: AboutItem,
+  aboutItemId: string,
+  error: ?Error,
+};
+export default class About extends React.Component<AboutProps> {
   static async getInitialProps({
     query: { lang, aboutItemId },
   }: {
@@ -59,16 +60,19 @@ export default class extends React.Component {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
     }
-
-    const renderedPictures = (
-      <SidebarPictures
-        lang={lang}
-        pictures={keyword.pictures}
-        showDropShadow={aboutItemId !== 'kalliope'}
-        clickToZoom={aboutItemId !== 'kalliope'}
-        srcPrefix={'/static/images/about'}
-      />
-    );
+    const requestPath = `/${lang}/about/${aboutItemId}`;
+    const pictures = keyword.pictures.map(p => {
+      return (
+        <Picture
+          pictures={[p]}
+          contentLang={p.content_lang || 'da'}
+          showDropShadow={aboutItemId !== 'kalliope'}
+          clickToZoom={aboutItemId !== 'kalliope'}
+          lang={lang}
+        />
+      );
+    });
+    const renderedPictures = <SidebarPictures>{pictures}</SidebarPictures>;
     const renderedNotes = keyword.notes.map((note, i) => {
       return <Note key={i} note={note} lang={lang} />;
     });
@@ -106,12 +110,8 @@ export default class extends React.Component {
     if (aboutItemId === 'thanks') {
       pageBody = (
         <div className="thanks-list">
-          <SubHeading>
-            {keyword.title}
-          </SubHeading>
-          <TwoColumns>
-            {body}
-          </TwoColumns>
+          <SubHeading>{keyword.title}</SubHeading>
+          <TwoColumns>{body}</TwoColumns>
           <style jsx>{`
             .thanks-list {
               line-height: 1.7;
@@ -123,13 +123,9 @@ export default class extends React.Component {
       pageBody = (
         <SidebarSplit sidebar={sidebar}>
           <div>
-            <SubHeading>
-              {keyword.title}
-            </SubHeading>
+            <SubHeading>{keyword.title}</SubHeading>
             {author}
-            <div className="about-body">
-              {body}
-            </div>
+            <div className="about-body">{body}</div>
             <style jsx>{`
               .about-body {
                 line-height: 1.6;
@@ -143,13 +139,13 @@ export default class extends React.Component {
 
     return (
       <div>
-        <Head headTitle="Kalliope" />
+        <Head headTitle="Kalliope" requestPath={requestPath} />
         <Main>
           <Nav lang="da" links={navbar} title={keyword.title} />
           <Heading title="Kalliope" />
           <KalliopeTabs lang={lang} selected="about" />
           {pageBody}
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

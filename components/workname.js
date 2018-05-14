@@ -1,28 +1,26 @@
 // @flow
 import React from 'react';
-import type { Work } from '../pages/helpers/types.js';
+import type { Work, Lang } from '../pages/helpers/types.js';
 import CommonData from '../pages/helpers/commondata.js';
+import _ from '../pages/helpers/translations.js';
 
-export default class WorkName extends React.Component {
-  props: {
-    work: Work,
-    cursive?: boolean,
-  };
+type WorkNameProps = {
+  work: Work,
+  cursive?: boolean,
+  lang: Lang,
+};
+export default class WorkName extends React.Component<WorkNameProps> {
   render() {
-    const { work, cursive } = this.props;
+    const { work, cursive, lang } = this.props;
     const { title, year } = work;
-    let titlePart = (
-      <span>
-        {title}
-      </span>
-    );
+    var titleTranslated = title;
+    if (work.id == 'andre') {
+      titleTranslated = _('Andre digte', lang);
+    }
+    let titlePart = <span>{titleTranslated}</span>;
     let yearPart = null;
     if (year != null && year !== '?') {
-      yearPart = (
-        <span>
-          ({year})
-        </span>
-      );
+      yearPart = <span>({year})</span>;
     }
 
     const parts = [titlePart, yearPart].map((p, i) => {
@@ -30,11 +28,11 @@ export default class WorkName extends React.Component {
       if (cursive === true && i === 0) {
         className += ' cursive';
       }
-      return p
-        ? <span key={i} className={className}>
-            {p}{' '}
-          </span>
-        : null;
+      return p ? (
+        <span key={i} className={className}>
+          {p}{' '}
+        </span>
+      ) : null;
     });
     return (
       <span className="workname">

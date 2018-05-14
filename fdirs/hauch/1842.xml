@@ -96,7 +96,7 @@ Og de syngende Væld gled ham med Giøglen forbi.
    <indextitle>Aftensang</indextitle>
    <firstline>Intet Blad sig i Skoven rører</firstline>
    <notes>
-      <note>Gendigtning af Goethes <xref poem="goethe2002103001"/>.</note>
+      <note>Gendigtning af Goethes <xref type="translation" poem="goethe2002103001"/>.</note>
       <note>Indtastet efter Carsten Hauch: <i>Udvalgte Skrifter</i>, I-III, Poul Schjærf (red.), Holbergselskabet, Kbh., 1926-29, bd. III, pp. 194-195.</note>
    </notes>
    <quality>korrektur1,kilde,side</quality>
@@ -174,6 +174,50 @@ Og alle de Taarer, jeg fældte for dig,
 For dit Kys bortflye.
 </body>
 </poem>
+
+<poem id="hauch2018011201">
+<head>
+   <title>Piletræet</title>
+   <subtitle>(Af den polske Familie.)</subtitle>
+   <firstline>O Piil! har Vinden hentet dig</firstline>
+   <notes>
+       <note>Teksten følger Carsten Hauch: <i>Lyriske Digte</i>, C. Steens Forlag, Kbh., 1842, pp. 40-41.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+,,O Piil! har Vinden hentet dig,
+Har Himlens Fugl dig bragt?''
+Hvad eller kom du af dig selv, 
+Liig Kiærlighedens Magt?''
+
+,,Nei af mig selv jeg ikke kom, 
+Liig Kiærlighedens Magt;
+Mig hented Foraarsvinden ei,
+Mig ingen Fugl har bragt.
+
+En Jomfru stod ved Bækkens Rand,
+Og brød, som Qvist, mig af,
+Og planted mig med hviden Haand 
+Paa faldne Beilers Grav.
+
+Og hver Gang Morgenhanen gol,
+Hun iled til mig hen,
+Og først naar Dagen gik til Ro, 
+Hun vandred bort igien.
+
+Og hendes bittre Taarestrøm 
+Blev mig en Regn saa lind,
+Og hendes vilde Klagesang 
+Blev mig en Foraarsvind.
+
+Og hendes Suk opvarmed mig,
+Det var som Solens Stik,
+Og til en kølig Maane sig 
+Forvandled hendes Blik.''
+</body>
+</poem>
+
 
 <poem id="hauch2002092903">
 <head>
@@ -584,7 +628,7 @@ Han kan Døden vel foragte.
    <indextitle>Aftensang</indextitle>
    <firstline>Sig Maanen langsomt hæver</firstline>
    <notes>
-      <note>På grundlag af Claudius' <xref poem="claudius2001091301"/>.</note>
+      <note>På grundlag af Claudius' <xref type="translation" poem="claudius2001091301"/>.</note>
       <note>Sidste strofe findes også som »Koldt Nattens Vinde sukke, / mit Øje vil sig lukke, / Giv mig, o Gud, din Fred! / See naadig til min Slummer, / Og trøst mig i min Kummer, / Og trøst min syge Nabo med!«.</note>
    </notes>
    <quality>korrektur1</quality>
@@ -1589,7 +1633,7 @@ Ikke lyse for Jorden, men over den.
    <subtitle></subtitle>
    <toctitle></toctitle>
    <indextitle></indextitle>
-   <firstline></firstline>
+   <firstline> </firstline>
    <notes>
       <note>Indtastet efter Carsten Hauch: <i>Udvalgte Skrifter</i>, I-III, Poul Schjærf (red.), Holbergselskabet, Kbh., 1926-29, bd. III, pp. 194-195.</note>
    </notes>

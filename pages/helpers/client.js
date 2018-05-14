@@ -16,6 +16,8 @@ import type {
   NoteItem,
   PictureItem,
   TextLang,
+  Error,
+  LinesType,
 } from './types.js';
 
 export const createURL = (path: string): string => {
@@ -52,6 +54,19 @@ type FetchPoetsResult = Promise<{
 }>;
 export const poets = async (country: Country): FetchPoetsResult => {
   return fetchJSON(`/static/api/poets-${country}.json`);
+};
+
+type FetchAllTextsResult = Promise<{
+  lines: Array<any>,
+  letters: Array<string>,
+  error: ?Error,
+}>;
+export const allTexts = async (
+  country: Country,
+  type: LinesType,
+  letter: string
+): FetchAllTextsResult => {
+  return fetchJSON(`/static/api/alltexts/${country}-${type}-${letter}.json`);
 };
 
 type FetchDictItemResult = Promise<{
@@ -99,14 +114,16 @@ export const bio = async (poetId: PoetId): FetchBioResult => {
   return fetchJSON(`/static/api/${poetId}/bio.json`);
 };
 
-type FetchBibliographuResult = Promise<{
+type FetchMentionsResult = Promise<{
   poet: Poet,
+  mentions: Array<TextContentType>,
+  translations: Array<TextContentType>,
   primary: Array<TextContentType>,
   secondary: Array<TextContentType>,
   error: ?Error,
 }>;
-export const bibliography = async (poetId: PoetId): FetchBibliographuResult => {
-  return fetchJSON(`/static/api/${poetId}/bibliography.json`);
+export const mentions = async (poetId: PoetId): FetchMentionsResult => {
+  return fetchJSON(`/static/api/${poetId}/mentions.json`);
 };
 
 type FetchKeywordResult = Promise<Keyword>;

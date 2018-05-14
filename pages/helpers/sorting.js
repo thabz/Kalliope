@@ -62,9 +62,9 @@ export const dictItemsByTitle = (a: DictItem, b: DictItem): SortReturn => {
 };
 
 export function sectionsByTitle<T>(a: Section<T>, b: Section<T>): SortReturn {
-  if (a.title.startsWith('Ukendt')) {
+  if (a.title.startsWith('Ukendt') || a.title.startsWith('Unknown')) {
     return 1;
-  } else if (b.title.startsWith('Ukendt')) {
+  } else if (b.title.startsWith('Ukendt') || b.title.startsWith('Unknown')) {
     return -1;
   } else {
     return a.title.localeCompare(b.title, daDK);

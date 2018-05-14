@@ -15,11 +15,13 @@ import WorkName, { workTitleString } from '../components/workname.js';
 import Note from '../components/note.js';
 import TextContent from '../components/textcontent.js';
 import SidebarPictures from '../components/sidebarpictures.js';
+import Picture from '../components/picture.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
 import CommonData from './helpers/commondata.js';
+import { request } from 'http';
 import type {
   Lang,
   Poet,
@@ -32,17 +34,16 @@ import type {
   Error,
 } from './helpers/types.js';
 
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    poet: Poet,
-    work: Work,
-    toc: Array<TocItem>,
-    notes: Array<NoteItem>,
-    pictures: Array<PictureItem>,
-    error: ?Error,
-  };
-
+type WorkProps = {
+  lang: Lang,
+  poet: Poet,
+  work: Work,
+  toc: Array<TocItem>,
+  notes: Array<NoteItem>,
+  pictures: Array<PictureItem>,
+  error: ?Error,
+};
+export default class extends React.Component<WorkProps> {
   static async getInitialProps({
     query: { lang, poetId, workId },
   }: {
@@ -66,12 +67,13 @@ export default class extends React.Component {
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt værk" />;
     }
+    const requestPath = `/${lang}/work/${poet.id}/${work.id}`;
 
     const renderItems = (items: Array<TocItem>, indent: number = 0) => {
       const rows = items.map((item, i) => {
-        const { id, title, type, prefix } = item;
+        const { id, title, type, prefix, level } = item;
         if (type === 'section' && item.content != null) {
-          const className = `level-${item.level || 1}`;
+          const className = `level-${item.level == null ? 1 : item.level}`;
           return (
             <tr key={i}>
               <td />
@@ -112,18 +114,22 @@ export default class extends React.Component {
       return <Note key={'note' + i} note={note} lang={lang} />;
     });
 
-    const renderedPictures = (
-      <SidebarPictures
-        lang={lang}
-        pictures={pictures}
-        srcPrefix={`/static/images/${poet.id}`}
-      />
-    );
+    const workPictures = pictures.map(p => {
+      return (
+        <Picture
+          pictures={[p]}
+          contentLang={p.content_lang || 'da'}
+          lang={lang}
+        />
+      );
+    });
+    const renderedPictures = <SidebarPictures>{workPictures}</SidebarPictures>;
     const completedStatus =
       work.status === 'incomplete' && work.id !== 'andre' ? (
         <div>
-          Kalliopes udgave af <WorkName work={work} cursive={true} /> er endnu
-          ikke fuldstændig.
+          Kalliopes udgave af{' '}
+          <WorkName work={work} cursive={true} lang={lang} /> er endnu ikke
+          fuldstændig.
         </div>
       ) : null;
     let sidebar = null;
@@ -155,6 +161,7 @@ export default class extends React.Component {
     return (
       <div>
         <Head
+          requestPath={requestPath}
           headTitle={headTitle}
           ogTitle={ogTitle}
           ogImage={ogImage}
@@ -162,13 +169,17 @@ export default class extends React.Component {
         />
 
         <Main>
-          <Nav lang={lang} poet={poet} title={<WorkName work={work} />} />
+          <Nav
+            lang={lang}
+            poet={poet}
+            title={<WorkName work={work} lang={lang} />}
+          />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="works" />
           <SidebarSplit sidebar={sidebar}>
             <div>
               <SubHeading>
-                <WorkName work={work} />
+                <WorkName work={work} lang={lang} />
               </SubHeading>
               {table}
               <style jsx>{`
@@ -221,7 +232,7 @@ export default class extends React.Component {
               `}</style>
             </div>
           </SidebarSplit>
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

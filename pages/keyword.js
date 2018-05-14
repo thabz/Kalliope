@@ -14,23 +14,24 @@ import PoetName from '../components/poetname.js';
 import TextName from '../components/textname.js';
 import TextContent from '../components/textcontent.js';
 import SidebarPictures from '../components/sidebarpictures.js';
+import Picture from '../components/picture.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
-import type { Lang, Keyword } from './helpers/types.js';
-import 'isomorphic-fetch';
+import type { Lang, Keyword, Error } from './helpers/types.js';
 import * as Paths from './helpers/paths.js';
 import * as Client from './helpers/client.js';
 import { createURL } from './helpers/client.js';
+import * as OpenGraph from './helpers/opengraph.js';
 import ErrorPage from './error.js';
+import _ from '../pages/helpers/translations.js';
 
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    keyword: Keyword,
-    error: ?Error,
-  };
-
+type KeywordComponentProps = {
+  lang: Lang,
+  keyword: Keyword,
+  error: ?Error,
+};
+export default class extends React.Component<KeywordComponentProps> {
   static async getInitialProps({
     query: { lang, keywordId },
   }: {
@@ -47,24 +48,28 @@ export default class extends React.Component {
   render() {
     const { lang, keyword, error } = this.props;
 
-    if (error) {
+    if (error != null) {
       return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
     }
+    const requestPath = `/${lang}/keyword/${keyword.id}`;
 
-    const renderedPictures = (
-      <SidebarPictures
-        lang={lang}
-        pictures={keyword.pictures}
-        srcPrefix={'/static/images/keywords'}
-      />
-    );
+    const pictures = keyword.pictures.map(p => {
+      return (
+        <Picture
+          pictures={[p]}
+          contentLang={p.content_lang || 'da'}
+          lang={lang}
+        />
+      );
+    });
+    const renderedPictures = <SidebarPictures>{pictures}</SidebarPictures>;
     let sidebar = [];
     if (keyword.has_footnotes || keyword.pictures.length > 0) {
       if (keyword.has_footnotes) {
         sidebar.push(<FootnoteList />);
       }
       if (keyword.pictures.length > 0) {
-        sidebar.push(renderedPictures);
+        sidebar.push(<div key="sidebarpictures">{renderedPictures}</div>);
       }
     }
     const body = (
@@ -76,7 +81,7 @@ export default class extends React.Component {
     );
     const navbar = [
       <Link route={Links.keywordsURL(lang)}>
-        <a>Nøgleord</a>
+        <a>{_('Nøgleord', lang)}</a>
       </Link>,
     ];
     const title = keyword.title;
@@ -89,16 +94,24 @@ export default class extends React.Component {
       );
     }
     const headTitle = `${keyword.title} - Kalliope`;
+    const ogTitle = keyword.title;
+    const ogDescription = OpenGraph.trimmedDescription(keyword.content_html);
+
     return (
       <div>
         <FootnoteContainer>
-          <Head headTitle={headTitle} />
+          <Head
+            headTitle={headTitle}
+            ogTitle={ogTitle}
+            description={ogDescription}
+            requestPath={requestPath}
+          />
           <Main>
             <Nav lang={lang} links={navbar} title={keyword.title} />
             <Heading title={title} />
             <KalliopeTabs lang={lang} selected="keywords" />
             <SidebarSplit sidebar={sidebar}>
-              <div>
+              <div key="content">
                 <article>
                   <SubHeading>{keyword.title}</SubHeading>
                   {author}
@@ -106,7 +119,7 @@ export default class extends React.Component {
                 </article>
               </div>
             </SidebarSplit>
-            <LangSelect lang={lang} />
+            <LangSelect lang={lang} path={requestPath} />
           </Main>
         </FootnoteContainer>
       </div>

@@ -6,10 +6,11 @@
     "build": "next build",
     "start": "NODE_ENV=production LOCALE=da_DK.UTF_8 node server.js",
     "test": "jest --watch",
-    "test-ci": "jest",
+    "test-ci": "NODE_ICU_DATA=./node_modules/full-icu jest",
     "flow": "flow",
     "build-static": "node tools/build-static.js",
-    "build-static-force-reload": "node tools/build-static.js --force-reload"
+    "build-static-force-reload": "node tools/build-static.js --force-reload",
+    "build-facsimiles": "node tools/build-facsimiles.js"
   },
   "dependencies": {
     "global": "^4.3.2",
@@ -30,6 +31,8 @@
     "entities": "^1.1.1",
     "enzyme": "^3.0",
     "flow-bin": "^0.52.0",
+    "full-icu": "^1.2.1",
+    "ics": "^2.4.1",
     "jest": "^20.0.0",
     "libxmljs": "^0.18.4",
     "mkdirp": "^0.5.1",

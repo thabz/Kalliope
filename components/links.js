@@ -1,6 +1,11 @@
 // @flow
 
-import type { Lang, PoetId } from '../pages/helpers/types.js';
+import type {
+  Lang,
+  PoetId,
+  LinesType,
+  Country,
+} from '../pages/helpers/types.js';
 
 export const frontPageURL = (lang: string = 'da') => {
   return `/${lang}/`;
@@ -10,8 +15,16 @@ export const workURL = (lang: Lang = 'da', poetId: string, workId: string) => {
   return `/${lang}/work/${poetId}/${workId}`;
 };
 
+export const allTextsURL = (
+  lang: Lang,
+  country: Country,
+  type: LinesType,
+  letter: string = 'A'
+) => {
+  return `/${lang}/texts/${country}/${type}/${letter}`;
+};
 export const poetsURL = (
-  lang: string = 'da',
+  lang: Lang = 'da',
   groupBy: 'name' | 'year' | 'looks' = 'name',
   country: string = 'dk'
 ) => {
@@ -23,26 +36,30 @@ export const poetURL = (lang: string = 'da', poetId: string) => {
 };
 
 export const textsURL = (
-  lang: string = 'da',
+  lang: Lang = 'da',
   poetId: string,
-  type: 'first' | 'titles'
+  type: LinesType // 'first' | 'titles'
 ) => {
   return `/${lang}/texts/${poetId}/${type}`;
 };
 
-export const worksURL = (lang: string = 'da', poetId: string) => {
+export const worksURL = (lang: Lang = 'da', poetId: PoetId) => {
   return `/${lang}/works/${poetId}`;
 };
 
-export const bioURL = (lang: string = 'da', poetId: string) => {
+export const bioURL = (lang: Lang = 'da', poetId: PoetId) => {
   return `/${lang}/bio/${poetId}`;
 };
 
-export const bibliographyURL = (lang: string = 'da', poetId: PoetId) => {
+export const bibliographyURL = (lang: Lang = 'da', poetId: PoetId) => {
   return `/${lang}/bibliography/${poetId}`;
 };
 
-export const textURL = (lang: string = 'da', textId: string) => {
+export const mentionsURL = (lang: Lang = 'da', poetId: PoetId) => {
+  return `/${lang}/mentions/${poetId}`;
+};
+
+export const textURL = (lang: Lang = 'da', textId: string) => {
   const highlight = textId.match(/,(.*)$/);
   if (highlight != null) {
     textId = textId.replace(',' + highlight[1], '');
@@ -55,7 +72,7 @@ export const textURL = (lang: string = 'da', textId: string) => {
   }
 };
 
-export const bibleURL = (lang: string = 'da', bibleId: string) => {
+export const bibleURL = (lang: Lang = 'da', bibleId: string) => {
   const verses = bibleId.match(/,(.*)$/);
   if (verses != null) {
     bibleId = bibleId.replace(',' + verses[1], '');
@@ -67,11 +84,11 @@ export const bibleURL = (lang: string = 'da', bibleId: string) => {
   }
 };
 
-export const keywordsURL = (lang: string = 'da') => {
+export const keywordsURL = (lang: Lang = 'da') => {
   return `/${lang}/keywords`;
 };
 
-export const dictionaryURL = (lang: string = 'da', id?: string) => {
+export const dictionaryURL = (lang: Lang = 'da', id?: string) => {
   if (id != null) {
     return `/${lang}/dict/${id}`;
   } else {
@@ -79,18 +96,18 @@ export const dictionaryURL = (lang: string = 'da', id?: string) => {
   }
 };
 
-export const keywordURL = (lang: string = 'da', keywordId: string) => {
+export const keywordURL = (lang: Lang = 'da', keywordId: string) => {
   return `/${lang}/keyword/${keywordId}`;
 };
 
-export const aboutURL = (lang: string = 'da', aboutText: string) => {
+export const aboutURL = (lang: Lang = 'da', aboutText: string) => {
   return `/${lang}/about/${aboutText}`;
 };
 
 export const searchURL = (
-  lang: string,
+  lang: Lang,
   query: string,
-  country: string,
+  country: Country,
   poetId: ?PoetId = null
 ) => {
   const escapedQuery = encodeURIComponent(query).replace(/%20/g, '+');

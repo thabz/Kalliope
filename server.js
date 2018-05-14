@@ -13,6 +13,7 @@ const rootStaticFiles = [
   '/sw.js',
   '/favicon.ico',
   '/robots.txt',
+  '/sitemap.xml',
   '/google88bff7f4fb67a7b5.html',
   '/apple-touch-icon-120x120.png',
   '/apple-touch-icon-152x152.png',
@@ -66,6 +67,14 @@ const redirects = [
   },
   {
     from: /\/(..)\/vaerktoc.pl/,
+    to: '/$1/work/${fhandle}/${vhandle}',
+  },
+  {
+    from: /\/vaerktoc.pl/,
+    to: '/da/work/${fhandle}/${vhandle}',
+  },
+  {
+    from: /\/(..)\/vaerktoc.pl/,
     to: '/$1/work/${vid}',
   },
   {
@@ -76,6 +85,10 @@ const redirects = [
     // Smid både førsteliner og titler til titler
     from: /\/(..)\/flines.pl/,
     to: '/$1/texts/${fhandle}/titles',
+  },
+  {
+    from: /\/(..)\/bibliography\/(.*)/,
+    to: '/$1/mentions/$2',
   },
   {
     // Smid både førsteliner og titler til titler
@@ -124,23 +137,29 @@ app.prepare().then(() => {
     } else if (
       pathname.indexOf('.cgi') > -1 ||
       pathname.indexOf('.pl') > -1 ||
+      pathname.indexOf('/bibliography/') > -1 ||
       (pathname.indexOf('.xml') > -1 && pathname.indexOf('/work/') > -1)
     ) {
       let done = false;
       redirects.forEach(descr => {
         const m = descr.from.exec(pathname);
         if (!done && m != null) {
+          let missingParams = false;
           const to = descr.to
             .replace('$1', m[1])
             .replace('$2', m[2])
-            .replace(/\${(.*)}/g, (m, p1) => {
+            .replace(/\${(.*?)}/g, (m, p1) => {
+              if (query[p1] == null) {
+                missingParams = true;
+              }
               return query[p1];
             })
             .replace(cleanUpRedirectURLRegExp, '');
-          //console.log('Redirecting to', to, query);
-          res.writeHead(301, { Location: to });
-          res.end();
-          done = true;
+          if (!missingParams) {
+            res.writeHead(301, { Location: to });
+            res.end();
+            done = true;
+          }
         }
       });
       if (done) {
