@@ -297,6 +297,9 @@ File.readlines(ARGV[0]).each do |line|
       @keywords = line[2..-1].strip
     elsif line.start_with?("TOCTITEL:")
       @toctitle = line[9..-1].strip
+      if @toctitle =~ /<num>.*?<\/num>$/ 
+        abort "FEJL: Digtet »#{@title}« mangler titel i TOCTITEL:"
+      end
     elsif line.start_with?("INDEXTITEL:")
       @indextitle = line[11..-1].strip
     elsif line.start_with?("LINKTITEL:")
