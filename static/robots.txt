@@ -1,3 +1,9 @@
+User-agent: *
+Disallow: /static/facsimiles/
+Disallow: /static/images/*/t/
+Disallow: /static/kunst/*/t/
+Disallow: /static/gfx/
+
 User-agent: SemrushBot
 Disallow: /
 
@@ -6,5 +12,6 @@ Disallow: /
 
 User-agent: dotbot
 Disallow: /
+
 
 Sitemap: https://kalliope.org/sitemap.xml
