@@ -9,6 +9,8 @@
 'E /E',    
 'oeg/æg',
 'hoi/høi',
+'hoj/høj',
+'hsj/høj',
 'folg/følg',
 'fslge/følge',
 'Skjod/Skjød',
@@ -26,6 +28,7 @@
 'Sæne/Scene',
 'Bolg/Bølg',
 'Hoi/Høi',
+'Hoj/Høj',
 'Hsi/Høi',
 'Hpi/Høi',
 'Slor/Slør',
@@ -60,6 +63,7 @@
 'storre/større',
 'ftaae/staae',
 'Oie/Øie',
+'Oje/Øje',
 'bce/bæ',
 'Son /Søn ',
 'Doren/Døren',
@@ -518,6 +522,7 @@
 'Stoi(\W)/Støi\1',
 'nnt/unt',
 'tnr/tur',
+'Chør/Chor'
 ];
 
 @regexps = @rules.map { |rule| 
