@@ -48,6 +48,7 @@ end
 @page = nil;
 @written = nil;
 @performed = nil;
+@event = nil
 @type = 'poem'
 
 def printHeader()
@@ -66,18 +67,18 @@ def printHeader()
 
     puts %Q|<?xml version="1.0" encoding="UTF-8"?>|
     puts %Q|<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">|
-    puts %Q|<kalliopework id="#{year}" author="#{poetid}" status="complete" type="poetry">|
+    puts %Q|<kalliopework id="#{year}" author="#{@poetid}" status="complete" type="poetry">|
     puts %Q|<workhead>|
     puts %Q|    <title>#{title}</title>|
-    puts %Q|    <year>#{work}</year>|
+    puts %Q|    <year>#{year}</year>|
     puts %Q|    <notes>|
     @worknotes.each { |noteline|
       puts "        <note>#{noteline}</note>"
     }
-    puts %Q|        <note>Teksten følger #{source}.</note>|
+    puts %Q|        <note>Teksten følger #{@source}</note>|
     puts %Q|    </notes>|
     puts %Q|    <pictures>|
-    puts %Q|        <picture src="#{year}-p1.jpg">Titelbladet til <i>#{title}</i> (#{year} lyder ,,''.|
+    puts %Q|        <picture src="#{year}-p1.jpg">Titelbladet til <i>#{title}</i> (#{year}) lyder ,,''.</picture>|
     puts %Q|    </pictures>|
     puts %Q|    <source facsimile="#{@facsimile}" facsimile-pages-num="#{@facsimile_pages_num}" facsimile-pages-offset="10">#{@source}</source>|
     puts %Q|</workhead>|
@@ -87,8 +88,8 @@ def printHeader()
 end
 
 def printFooter()
-    puts "<workbody>"
-    puts "<kalliopework>"
+    puts "</workbody>"
+    puts "</kalliopework>"
 end
 
 def printPoem()
@@ -136,13 +137,16 @@ def printPoem()
         puts "    <source pages=\"#{@page}\"/>"
       end
   end
-  if @written or @performed
+  if @written or @performed or @event
     puts "    <dates>"
     if @written
       puts "        <written>#{@written}</written>"
     end
     if @performed
       puts "        <performed>#{@performed}</performed>"
+    end
+    if @event
+      puts "        <event>#{@event}</event>"
     end
     puts "    </dates>"
   end
@@ -170,6 +174,7 @@ def printPoem()
   @page = nil
   @written = nil
   @performed = nil
+  @event = nil
   @type = 'poem'
   @poemcount += 1
 end
@@ -195,9 +200,11 @@ File.readlines(ARGV[0]).each do |line|
   while line =~ /\t/
       line = line.gsub(/\t/,'    ')
   end
-  line = line.rstrip.gsub(/_(.+?)_/,'<i>\1</i>')
-  if (line =~ /_/)
-      STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal _"
+  if not line =~ /^FACSIMILE:/ and not line =~ /http/
+      line = line.rstrip.gsub(/_(.+?)_/,'<i>\1</i>')
+      if (line =~ /_/)
+          STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal _"
+      end
   end
   line = line.rstrip.gsub(/=(.+?)=/,'<w>\1</w>')
   if (line =~ /=[^"]/)
@@ -302,6 +309,8 @@ File.readlines(ARGV[0]).each do |line|
       @written = line[8..-1].strip
     elsif line.start_with?("FREMFØRT:")
       @written = line[9..-1].strip
+    elsif line.start_with?("BEGIVENHED:")
+      @event = line.gsub(/^BEGIVENHED:/,'').strip
     elsif line.start_with?("TYPE:")
       @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
     elsif line =~ /^[A-Z]*:/
