@@ -2,19 +2,42 @@
 
 require 'date'
 
+# TODO: Fang hvis vores noter indeholder ementationer som 'xxx] yyy' og skriv en automatisk værknote.
+# TODO: Fang hvis noterne indeholder en indledende asterisk "* xxxx" og skriv en automatisk værknote.
+
+def printTemplate() 
+    puts "KILDE:"
+    puts "DIGTER:"
+    puts "FACSIMILE:"
+    puts "FACSIMILE-SIDER:"
+    puts ""
+    puts "SEKTION:"
+    puts ""
+    puts "T:"
+    puts "F:"
+    puts "SIDE:"
+    puts ""
+    puts "SLUTSEKTION"
+end
+
 if ARGV.length != 1
-  puts "Missing filename (try --help)"
+  printTemplate()
   exit 0
 end
 
-
 @state = 'NONE'
 @poemcount = 1;
+@header_printed = false
 
-@source = nil
+# Work data
 @poetid = 'POETID'
 @date = Date.today.strftime("%Y%m%d")
+@source = nil
+@facsimile = 'XXXXXX_color.pdf'
+@facsimile_pages_num = 150
+@worknotes = []
 
+# Poem data
 @poemid = nil
 @firstline = nil
 @title = nil, @toctitle = nil, @linktitle = nil, @indextitle = nil
@@ -25,9 +48,52 @@ end
 @page = nil;
 @written = nil;
 @performed = nil;
+@event = nil
 @type = 'poem'
 
+def printHeader()
+    if @header_printed
+        return
+    end
+    year = "ÅR"
+    title = "TITEL"
+    if @source 
+        m = @source.match(/<i>(.*?)<\/i>.*(\d\d\d\d)[\s\.]*$/)
+        if m 
+            title = m[1]
+            year = m[2]
+        end
+    end
+
+    puts %Q|<?xml version="1.0" encoding="UTF-8"?>|
+    puts %Q|<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">|
+    puts %Q|<kalliopework id="#{year}" author="#{@poetid}" status="complete" type="poetry">|
+    puts %Q|<workhead>|
+    puts %Q|    <title>#{title}</title>|
+    puts %Q|    <year>#{year}</year>|
+    puts %Q|    <notes>|
+    @worknotes.each { |noteline|
+      puts "        <note>#{noteline}</note>"
+    }
+    puts %Q|        <note>Teksten følger #{@source}</note>|
+    puts %Q|    </notes>|
+    puts %Q|    <pictures>|
+    puts %Q|        <picture src="#{year}-p1.jpg">Titelbladet til <i>#{title}</i> (#{year}) lyder ,,''.</picture>|
+    puts %Q|    </pictures>|
+    puts %Q|    <source facsimile="#{@facsimile}" facsimile-pages-num="#{@facsimile_pages_num}" facsimile-pages-offset="10">#{@source}</source>|
+    puts %Q|</workhead>|
+    puts %Q|<workbody>|
+    puts ""
+    @header_printed = true
+end
+
+def printFooter()
+    puts "</workbody>"
+    puts "</kalliopework>"
+end
+
 def printPoem()
+  printHeader()
   if @source and not @page 
       abort "FEJL: Digtet »#{@title}« mangler sideangivelse"
   end
@@ -71,13 +137,16 @@ def printPoem()
         puts "    <source pages=\"#{@page}\"/>"
       end
   end
-  if @written or @performed
+  if @written or @performed or @event
     puts "    <dates>"
     if @written
       puts "        <written>#{@written}</written>"
     end
     if @performed
       puts "        <performed>#{@performed}</performed>"
+    end
+    if @event
+      puts "        <event>#{@event}</event>"
     end
     puts "    </dates>"
   end
@@ -105,11 +174,13 @@ def printPoem()
   @page = nil
   @written = nil
   @performed = nil
+  @event = nil
   @type = 'poem'
   @poemcount += 1
 end
 
 def printStartSektion(title)
+  printHeader()
   puts "<section>"
   puts "<head>"
   puts "    <title>#{title}</title>"
@@ -129,9 +200,11 @@ File.readlines(ARGV[0]).each do |line|
   while line =~ /\t/
       line = line.gsub(/\t/,'    ')
   end
-  line = line.rstrip.gsub(/_(.+?)_/,'<i>\1</i>')
-  if (line =~ /_/)
-      STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal _"
+  if not line =~ /^FACSIMILE:/ and not line =~ /http/
+      line = line.rstrip.gsub(/_(.+?)_/,'<i>\1</i>')
+      if (line =~ /_/)
+          STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal _"
+      end
   end
   line = line.rstrip.gsub(/=(.+?)=/,'<w>\1</w>')
   if (line =~ /=[^"]/)
@@ -167,8 +240,15 @@ File.readlines(ARGV[0]).each do |line|
   end
   if @state == 'NONE' and line =~ /^KILDE:/
       @source = line[6..-1].strip
-      puts "<source facsimile=\"XXXXXX_color.pdf\" facsimile-pages-num=\"150\" facsimile-pages-offset=\"10\">#{@source}</source>"
-      puts ""
+  end
+  if @state == 'NONE' and line =~ /^FACSIMILE:/
+      @facsimile = line.gsub(/^FACSIMILE:/,'').strip
+  end
+  if @state == 'NONE' and line =~ /^FACSIMILE-SIDER:/
+      @facsimile_pages_num = line.gsub(/^FACSIMILE-SIDER:/,'').strip
+  end
+  if @state == 'NONE' and line =~ /^VÆRKNOTE:/
+      @worknotes.push(line.gsub(/^VÆRKNOTE:/,'').strip)
   end
   if @state == 'NONE' and line =~ /^DIGTER:/
       @poetid = line[7..-1].strip
@@ -217,6 +297,9 @@ File.readlines(ARGV[0]).each do |line|
       @keywords = line[2..-1].strip
     elsif line.start_with?("TOCTITEL:")
       @toctitle = line[9..-1].strip
+      if @toctitle =~ /<num>.*?<\/num>$/ 
+        abort "FEJL: Digtet »#{@title}« mangler titel i TOCTITEL:"
+      end
     elsif line.start_with?("INDEXTITEL:")
       @indextitle = line[11..-1].strip
     elsif line.start_with?("LINKTITEL:")
@@ -229,6 +312,8 @@ File.readlines(ARGV[0]).each do |line|
       @written = line[8..-1].strip
     elsif line.start_with?("FREMFØRT:")
       @written = line[9..-1].strip
+    elsif line.start_with?("BEGIVENHED:")
+      @event = line.gsub(/^BEGIVENHED:/,'').strip
     elsif line.start_with?("TYPE:")
       @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
     elsif line =~ /^[A-Z]*:/
@@ -245,3 +330,6 @@ end
 if @state != 'NONE'
     printPoem()
 end
+
+printFooter()
+
