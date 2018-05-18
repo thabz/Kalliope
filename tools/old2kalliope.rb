@@ -288,6 +288,9 @@ File.readlines(ARGV[0]).each do |line|
           @indextitle = @stripped
       end
     elsif line.start_with?("F:")
+      unless @firstline.nil?
+          abort "FEJL: Digtet »#{@title}« har mere end én F:"
+      end
       @firstline = line[2..-1].strip
     elsif line.start_with?("U:")
       @subtitles.push(line[2..-1].strip)
