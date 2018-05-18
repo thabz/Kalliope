@@ -2,9 +2,6 @@
 
 require 'date'
 
-# TODO: Fang hvis vores noter indeholder ementationer som 'xxx] yyy' og skriv en automatisk værknote.
-# TODO: Fang hvis noterne indeholder en indledende asterisk "* xxxx" og skriv en automatisk værknote.
-
 def printTemplate() 
     puts "KILDE:"
     puts "DIGTER:"
@@ -36,6 +33,8 @@ end
 @facsimile = 'XXXXXX_color.pdf'
 @facsimile_pages_num = 150
 @worknotes = []
+@found_corrections = false
+@found_poet_notes = false
 
 # Poem data
 @poemid = nil
@@ -76,6 +75,12 @@ def printHeader()
       puts "        <note>#{noteline}</note>"
     }
     puts %Q|        <note>Teksten følger #{@source}</note>|
+    if @found_corrections      
+        puts %Q|        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>|
+    end
+    if @found_poet_notes
+        puts %Q|        <note>Noter med en foranstillet asterisk er digterens egne.</note>|
+    end
     puts %Q|    </notes>|
     puts %Q|    <pictures>|
     puts %Q|        <picture src="#{year}-p1.jpg">Titelbladet til <i>#{title}</i> (#{year}) lyder ,,''.</picture>|
@@ -99,6 +104,9 @@ def printPoem()
   end
   if @source and @page =~ /\d-$/
       abort "FEJL: Digtet »#{@title}« har kun halv sideangivelse: #{@page}"
+  end
+  if @type == 'poem' and (@firstline.nil? || @firstline.strip.length == 0)
+      abort "FEJL: Digtet »#{@title}« mangler førstelinje"
   end
   poemid = @poemid || "#{@poetid}#{@date}#{'%02d' % @poemcount}"
   puts "<#{@type} id=\"#{poemid}\">"
@@ -327,6 +335,12 @@ File.readlines(ARGV[0]).each do |line|
   end
   if @state == 'INBODY'
       @body.push(line)
+      if line =~ /<note>.*\] .*<\/note>/
+          @found_corrections = true
+      end
+      if line =~ /<note>\* .*<\/note>/
+          @found_poet_notes = true
+      end
   end
 end
 
