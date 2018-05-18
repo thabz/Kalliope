@@ -1,30 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1872" author="hostrup" status="incomplete" type="poetry">
-<workhead>
-    <title>Sange og Digte fra tredive År</title>
-    <year>1872</year>
-    <notes>
-        <note>Teksten følger C. Hostrup: <i>Sange og Digte fra tredive År</i>, F. H. Eibes Forlag, Kbh., 1872.</note>
-        <note>Dog er kun digte som ikke findes i tidligere samlinger er medtaget. Brugen af ø og ö er ensrettet overalt.</note>
-    </notes>
-    <pictures>
-        <picture src="1872-p1.jpg">Titelbladet til <i>Sange og Digte fra tredive År</i> (1872) lyder ,,Sang og Digte / fra tredive År / af / C. Hostrup. // København. / F. H. Eibes Forlag. / Louise Kleins Bogtrykkeri. / 1872.''</picture>
-    </pictures>
-    <source facsimile="115308066108_color" facsimile-pages-num="430" facsimile-pages-offset="52">C. Hostrup: <i>Sange og Digte fra tredive År</i>, F. H. Eibes Forlag, Kbh., 1872.</source>
-    <!-- pdf'en har fejlagtigt et antal sider gentaget i begyndelse, derfor det høje offset ovenfor. -->
-</workhead>
-<workbody>
+KILDE:C. Hostrup: <i>Sange og Digte fra tredive År</i>, F. H. Eibes Forlag, Kbh., 1872.
+DIGTER:hostrup
+FACSIMILE:115308066108_color
+FACSIMILE-SIDER:430
+VÆRKNOTE:Brugen af ø og ö er ensrettet overalt.
+VÆRKNOTE:Kun digte som ikke findes i tidligere samlinger er medtaget.
+DATO:20180517
 
-<poem id="hostrup2018051701">
-<head>
-    <title>Sang af ,,Genboerne''</title>
-    <subtitle>Til musik af ,,Lumpacivagabundus''</subtitle>
-    <firstline>Op, I gæve sønner</firstline>
-    <source pages="34-36"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+<!-- 1: Som Jøderne vi sad ved Nilens strande. hostrup2018051329 -->
+
+<!-- 2: Nu er det stille; han har os forladt. hostrup1999031801 -->
+
+<!-- 4: Drikkevise i høst. hostrup2018051343 -->
+
+<!-- 5: Hilsen til det ny år. hostrup2018051304 -->
+
+<!-- 8: Til kontubernalen. hostrup2018051306 -->
+
+<!-- 10: Om morgenen ser jeg dit skrædergeni, hostrup2018051307 -->
+
+<!-- 11. Sangen i regensgården. hostrup2018051308 -->
+
+<!-- 13: Regensvise. hostrup2018051302 -->
+
+<!-- 15: Til lærken i høst. hostrup2018051354 -->
+
+<!-- 18: Den danske student. hostrup1999031802 -->
+
+<!-- 21: Det gamle år. hostrup2018051305 -->
+
+<!-- 24: Politisk fastelavnsvise. hostrup2018051332 -->
+
+<!-- 27: Livet på vandet. hostrup2018051309 -->
+
+<!-- 30. En sommerdag i Regensgården. hostrup2018051303 -->
+
+T:Sang af ,,Genboerne''
+U:Til musik af ,,Lumpacivagabundus''
+F:Op, I gæve sønner
+SIDE:34-36
+
 Op, I gæve sønner
   af den rode gård!
   glædens klokke slår,
@@ -75,8 +89,6 @@ Lars Mattisen vænter
   med sin glædes skat,
   vi skal den i nat
     gribe fat!
-</body>
-</poem>
 
 <!-- 37: Til en natteravn. hostrup2018051338 -->
 
@@ -100,15 +112,11 @@ Lars Mattisen vænter
 
 <!-- 58: Drikkevise. hostrup2018051330 -->
 
-<poem id="hostrup2018051702">
-<head>
-    <title>Kejseren og katten</title>
-    <subtitle>Som: Da bonden han vilde ad skoven gå</subtitle>
-    <firstline>Og kejseren bor på det høje slot</firstline>
-    <source pages="59-60"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Kejseren og katten
+U:Som: Da bonden han vilde ad skoven gå
+F:Og kejseren bor på det høje slot
+SIDE:59-60
+
 Og kejseren bor på det høje slot -
     Tralalera, faldera, falderira!
 hans højrøde kjole den klæ’r ham så godt.
@@ -146,25 +154,17 @@ Og sådan fik hele landet da prygl -
 og det var nu blot for plamasens skyld.
     Tralalera, faldera, tralera!
 
-</body>
-</poem>
 
 <!-- 61: En sommeraften. hostrup2018051335 -->
 
 <!-- 63: Rejsesang. hostrup1999031803 -->
 
-<poem id="hostrup2018051703">
-<head>
-    <title>Sang for Lyceum</title>
-    <subtitle>Som: Fredm. ep. 77.</subtitle>
-    <firstline>Omnia rite peracta!</firstline>
-    <notes>
-        <note>Melodi som  Bellmans <xref poem="bellman2001061377"/>.</note>
-    </notes>
-    <source pages="66-67"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Sang for Lyceum
+U:Som: Fredm. ep. 77.
+F:Omnia rite peracta!
+NOTE:Melodi som  Bellmans <ref poem="bellman2001061377"/>.
+SIDE:66-67
+
 »Omnia rite peracta!« således
 talte moderator med stor gravitet;
 og alle vi, som forbitrede stredes,
@@ -191,8 +191,6 @@ Ungdommen frem skal af hjærternes skjul,
 om vi endog skal den drage ved håret:
 glæden iblandt os skal herske: ti jul
 har vi kun én gang om året.
-</body>
-</poem>
 
 <!-- 68: Rejs dig, o kæmpe - hostrup2018051320 -->
 
@@ -200,15 +198,11 @@ har vi kun én gang om året.
 
 <!-- 71: Athene og regensprovsten. hostrup2018051348 -->
 
-<poem id="hostrup2018051704">
-<head>
-    <title>Tyvens sang</title>
-    <subtitle>af ,,Æventyr på fodrejsen''</subtitle>
-    <firstline>Når aldrig en frysende hånd sig et læ</firstline>
-    <source pages="74-75"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Tyvens sang
+U:af ,,Æventyr på fodrejsen''
+F:Når aldrig en frysende hånd sig et læ
+SIDE:74-75
+
 Når aldrig en frysende hånd sig et læ
 søger i naboens lomme,
 gemmer vel ingen sit liggendefæ
@@ -241,20 +235,14 @@ smedene slutter os bøjlen om fod
 med roligt blod.
 Derfor vil jeg allerhelst være fri
 for den industri.
-</body>
-</poem>
 
 <!-- 76: Fodrejsen. hostrup2001122801 -->
 
-<poem id="hostrup2018051705">
-<head>
-    <title>Bondevise.</title>
-    <subtitle>Som: Vermlandsvisen</subtitle>
-    <firstline>Og jeg vil ha’ en hjærtenskær, det første som jeg kan</firstline>
-    <source pages="78-79"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Bondevise.
+U:Som: Vermlandsvisen
+F:Og jeg vil ha’ en hjærtenskær, det første som jeg kan
+SIDE:78-79
+
 Og jeg vil ha’ en hjærtenskær, det første som jeg kan,
 men sådan en er ikke god at finde,
 for hun skal have kinder som den røde tulipan,
@@ -278,8 +266,6 @@ og de skal få så meget de kan æde;
 og der skal være dans og spil tre hele dag i rad,
 ti kærlighedens lykke den gør dog hjærtet glad,
 så kan man sagtens lidt derpå spendere.
-</body>
-</poem>
 
 <!-- 80: Tilbageblik. hostrup2018051344 -->
 
@@ -299,19 +285,14 @@ så kan man sagtens lidt derpå spendere.
 
 <!-- 99: En vise om hr. Peder. hostrup2018051345 -->
 
-<poem id="hostrup2001041801">
-<head>
-    <title>Soldaten i kvartér</title>
-    <subtitle>Til musik af E. Horneman</subtitle>
-    <firstline>Så bister som den vrede bjørn</firstline>
-    <notes>
-        <note>Fra hans »Soldaterløjer«.</note>
-        <note type="credits">Bidrag fra Sven Sørensen.</note>
-    </notes>
-    <source pages="102-103"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Soldaten i kvartér
+U:Til musik af E. Horneman
+F:Så bister som den vrede bjørn
+SIDE:102-103
+ID:hostrup2001041801
+NOTE:Bidrag fra Sven Sørensen.
+NOTE:Fra hans »Soldaterløjer«.
+
 Så bister som den vrede bjørn
 soldaten går mod fjenders flok,
 men og for landets egne børn
@@ -347,21 +328,13 @@ du styrker kun din fjendes mod.
   men før du ser, man ad dig ler;
   soldaten forstår at stride,
   selv når han er i kvartér.
-</body>
-</poem>
 
-<poem id="hostrup2018051707">
-<head>
-    <title>Gulliks sang</title>
-    <subtitle>
-        <line>af ,,Eu nat mellem fjældene''</line>
-        <line>Sat i musik af P. Heise og af E. Hartmann</line>
-    </subtitle>
-    <firstline>Når dalen os bliver for lummer</firstline>
-    <source pages="104-105"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Gulliks sang
+U:af ,,Eu nat mellem fjældene''
+U:Sat i musik af P. Heise og af E. Hartmann
+F:Når dalen os bliver for lummer
+SIDE:104-105
+
 Når dalen os bliver for lummer,
 da se vi mod fjældets top,
 og fossen, som nedad skummer,
@@ -385,21 +358,13 @@ til dalens skød, hvor os jenten
 møder med blussende kind.
       Eja!
 hvad bytte gøre vi da!
-</body>
-</poem>
 
-<poem id="hostrup2018051708">
-<head>
-    <title>Nøkkens sang om elven</title>
-    <subtitle>
-        <line>af ,,En nat mellem fjældene''</line>
-        <line>Sat i musik af P. Heise og af E. Hartmann.</line>
-    </subtitle>
-    <firstline>Sommernattens fred har bedækket fjældets fod</firstline>
-    <source pages="106-107"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Nøkkens sang om elven
+U:af ,,En nat mellem fjældene''
+U:Sat i musik af P. Heise og af E. Hartmann.
+F:Sommernattens fred har bedækket fjældets fod
+SIDE:106-107
+
 Sommernattens fred har bedækket fjældets fod,
 trindt omkring er livet gå’t til hvile:
 elven våger evig, den er dalens hjærteblod,
@@ -423,21 +388,13 @@ sidste gang da rosen vil smile.
     Derfor uden rast
     strømmer den i hast,
 aldrig får den lov til at hvile.
-</body>
-</poem>
 
-<poem id="hostrup2018051709">
-<head>
-    <title>Thorstens sang</title>
-    <subtitle>
-        <line>af ,,En nat mellem fjældene''</line>
-        <line>Sat i musik af P. Heise</line>
-    </subtitle>
-    <firstline>Arme hjærte, er du træt</firstline>
-    <source pages="108"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Thorstens sang
+U:af ,,En nat mellem fjældene''
+U:Sat i musik af P. Heise
+F:Arme hjærte, er du træt
+SIDE:108
+
 Arme hjærte, er du træt,
 er du segnet under sorgen,
 i den lyse sommermorgen
@@ -453,10 +410,8 @@ giften i dit syge sind:
 o men solen skal så fage
 kalde roserne tilbage
     på din kind.
-</body>
-</poem>
 
-<!-- 109: Epilog til Ulysses von Ithacia. hostrup2018051340 -->
+<!-- 109: Epilog til Ulysses von Ithacia. hostrup2018051340 --> 
 
 <!-- 112: Øhlenschlægers mindefest i studenterforeningen. hostrup2018051359 -->
 
@@ -480,18 +435,13 @@ kalde roserne tilbage
 
 <!-- 142: Den nordiske højtid. hostrup2018051317 -->
 
-<poem id="hostrup2018051710">
-<head>
-    <title>Thereses sang i skoven</title>
-    <subtitle>
-        <line>af ,,Mester og lærling''</line>
-        <line>Som: Sola gæng bak åsen ne.</line>
-    </subtitle>
-    <firstline>Lys og skygge fly på stand</firstline>
-    <source pages="144-145"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Thereses sang i skoven
+U:af ,,Mester og lærling''
+U:Som: Sola gæng bak åsen ne.
+F:Lys og skygge fly på stand
+SIDE:144-145
+
+
 Lys og skygge fly på stand,
 dagens farver gråne,
 svagt kun bleges højens rand
@@ -512,21 +462,13 @@ hver en plet mig hilsen bær
 fra de år, som svunde;
 her min barndoms bedste drøm
 dukker op af mindets strøm.
-</body>
-</poem>
 
-<poem id="hostrup2018051711">
-<head>
-    <title>Poetens klagesang</title>
-    <subtitle>
-        <line>af ,,Mester og lærling''</line>
-        <line>Som en sang af ,,Dragedukken''</line>
-    </subtitle>
-    <firstline>Fra morgen til middag på gaden jeg render</firstline>
-    <source pages="146-147"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Poetens klagesang
+U:af ,,Mester og lærling''
+U:Som en sang af ,,Dragedukken''
+F:Fra morgen til middag på gaden jeg render
+SIDE:146-147
+
 Fra morgen til middag på gaden jeg render,
 jeg møder i Tivoli, når klokken er seks;
 jeg fængsles af lokker, af fødder og hænder,
@@ -548,21 +490,13 @@ er billedet her da kun afsind og tant?
     O, kækt som en svane
     på ætherens bane
 min ånd skulde hæve sig, om hende jeg fandt.
-</body>
-</poem>
 
-<poem id="hostrup2018051712">
-<head>
-    <title>Åges sang i højen</title>
-    <subtitle>
-        <line>af ,,Mester og lærling''</line>
-        <line>Som: Til Myklegård og Spanieland</line>
-    </subtitle>
-    <firstline>Til dagens liv og solens skin</firstline>
-    <source pages="148-149"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Åges sang i højen
+U:af ,,Mester og lærling''
+U:Som: Til Myklegård og Spanieland
+F:Til dagens liv og solens skin
+SIDE:148-149
+
 Til dagens liv og solens skin
 mig drager en lønlig stemme;
 hvor natten bor med blegen kind
@@ -578,7 +512,7 @@ der havde mit hjærte hjemme.
 Ja bort mig drog en vældig trang
 fra graven, så mørk og øde,
 til lys og dåd, til kæmpegang
-og de fagre roser røde.
+og de fagre roser røde. 
 Mit hjem, mit hjem, min længsels bo,
 hvor livet farvet strømmer
 og aldrig mat sig slår til ro,
@@ -598,21 +532,13 @@ Kun du min længsel fatter;
     du fatter - ja du fatter:
 at dagens liv og solens skin
 mig kalder med magt tilbage.
-</body>
-</poem>
 
-<poem id="hostrup2018051713">
-<head>
-    <title>Åges sang på jorden</title>
-    <subtitle>
-        <line>af ,,Mester og lærling''</line>
-        <line>Til musik af E. Bruun</line>
-    </subtitle>
-    <firstline>O min lykke kan jeg næppe fatte</firstline>
-    <source pages="150"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Åges sang på jorden
+U:af ,,Mester og lærling''
+U:Til musik af E. Bruun
+F:O min lykke kan jeg næppe fatte
+SIDE:150
+
 O min lykke kan jeg næppe fatte,
 jordens rige, underfulde skatte
 nu på én gang den til mig betror.
@@ -626,162 +552,147 @@ o men kærlig dog din søn modtag!
 Lad dit 'je huldt min vej beskinne,
 lad min fejre ungdomstid henrinde
 som en lys og liflig sommerdag!
-</body>
-</poem>
 
-<poem id="hostrup2018051714">
-<head>
-    <title>Glæde til køreturen</title>
-    <subtitle>
-        <line>af ,,Mester og lærling''</line>
-        <line>Til musik af P. Heise</line>
-    </subtitle>
-    <firstline>Lystig vi fare</firstline>
-    <source pages="151-154"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
-<nonum><center><w>Hun.</w></center></nonum>
+
+T:Glæde til køreturen
+U:af ,,Mester og lærling''
+U:Til musik af P. Heise
+F:Lystig vi fare
+SIDE:151-154
+
+{cw:Hun.}
 
         Lystig vi fare
         med vognen den snare,
 og ind gennem skovene ruller den flink.
 
 
-<nonum><center><w>Han.</w></center></nonum>
+{cw:Han.}
 
         Fremad haster
     i skyggen vi spøgende.
 
 
-<nonum><center><w>Hun.</w></center></nonum>
+{cw:Hun.}
 
         Solen kaster
     sit guld gennem bøgene.
 
 
-<nonum><center><w>Han.</w></center></nonum>
+{cw:Han.}
 
 o jeg skal fange hvert evige blink.
 
 
-<nonum><center><w>Hun.</w></center></nonum>
+{cw:Hun.}
         Hist i de svale,
         de løvtakte sale
 fra vognen vi vandrer i tykningen ind.
 
 
-<nonum><center><w>Han.</w></center></nonum>
+{cw:Han.}
         Ja i moser
     og krat skal jeg dølge mig.
 
 
-<nonum><center><w>Hun.</w></center></nonum>
+{cw:Hun.}
 
         Jeg Dem lodser,
     i fald De vil følge mig.
 
 
-<nonum><center><w>Han.</w></center></nonum>
+{cw:Han.}
 
 Lydig jeg agter på hvert Deres trin.
 
 
 
-<nonum><center><w>Han.</w></center></nonum>
+{cw:Han.}
 
         Rundt jeg i skoven
         mig trænger forvoven.
 
 
-<nonum><center><w>Hun.</w></center></nonum>
+{cw:Hun.}
 
 Vi løber omkaps med den flygtende hjort.
 
 
-<nonum><center><w>Han.</w></center></nonum>
+{cw:Han.}
 
         Kækt jeg iler,
     hvor blot er fremkommeligt.
 
 
-<nonum><center><w>Hun.</w></center></nonum>
+{cw:Hun.}
 
         Og man hviler
     ved kilden guddommeligt.
 
 
-<nonum><center><w>Han.</w></center></nonum>
+{cw:Han.}
 
 Hvor er et sæde da lifligt som vort?
 
 
-<nonum><center><w>Hun.</w></center></nonum>
+{cw:Hun.}
 
         Men når omsider
         mod aften det lider,
 ad vejen ved stranden da køre vi hjem.
 
 
-<nonum><center><w>Han.</w></center></nonum>
+{cw:Han.}
 
         Tågen svæver
     da let gennem lundene.
 
 
-<nonum><center><w>Hun.</w></center></nonum>
+{cw:Hun.}
 
         Sagte hæver
     sig havet, det blundende.
 
 
-<nonum><center><w>Han.</w></center></nonum>
+{cw:Han.}
 
 Og jeg skal drømme ved siden af Dem.
 
 
-<nonum><center><w>Han.</w></center></nonum>
+{cw:Han.}
 
         Ja lad os fare
         med hestene snare!
 
 
-<nonum><center><w>Hun.</w></center></nonum>
+{cw:Hun.}
 
 Nu stampe de alt på den stenede bro.
 
 
 
-<nonum><center><w>Han.</w></center></nonum>
+{cw:Han.}
 
         Solen blinker
     så venligt og varmende.
 
 
-<nonum><center><w>Hun.</w></center></nonum>
+{cw:Hun.}
 
         Bøgen vinker
     og vifter med armene.
 
 
-<nonum><center><w>Bægge.</w></center></nonum>
+{cw:Bægge.}
 
 Ja vi til skoven skal køre så fro.
-</body>
-</poem>
 
-<poem id="hostrup2018051715">
-<head>
-    <title>Poeten holder garn</title>
-    <subtitle>
-        <line>af ,,Mester og lærling''</line>
-        <line>Som: Visselulle, lille barn</line>
-    </subtitle>
-    <firstline>Vinde, vinde nøgle garn!</firstline>
-    <source pages="155-156"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Poeten holder garn
+U:af ,,Mester og lærling''
+U:Som: Visselulle, lille barn
+F:Vinde, vinde nøgle garn!
+SIDE:155-156
+
 »Vinde, vinde nøgle garn!«
 jeg skal sidde som et artigt barn.
 Vind kun tråden af min arm,
@@ -802,18 +713,13 @@ Se, hvor tråden, blød og fin,
 knytter deres hånd til min;
 men er den lidt skør endnu,
 o vind da forsigtigt, at den ikke går itu!
-</body>
-</poem>
 
-<poem id="hostrup2018051716">
-<head>
-    <title>Redaktørens bekendelse</title>
-    <subtitle>af ,,Mester og lærling''</subtitle>
-    <firstline>For at studere folkets smag</firstline>
-    <source pages="157-158"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+
+T:Redaktørens bekendelse
+U:af ,,Mester og lærling''
+F:For at studere folkets smag
+SIDE:157-158
+
     For at studere folkets smag,
     ti den er så forskellig,
     jeg gik i klubber hver en dag
@@ -841,28 +747,20 @@ skulde jeg - skulde jeg da forstyrre den?
     ved bynyt og - skandale,
     og de hulde mø’r bedåred straks
 en roman - en roman af den franske slags.
-</body>
-</poem>
 
-<poem id="hostrup2018051717">
-<head>
-    <title>Hendes skål</title>
-    <subtitle>
-        <line>af ,,Mester og lærling''</line>
-        <line>Som:  Ça ça geschmauset</line>
-    </subtitle>
-    <firstline>Fugle på grene!</firstline>
-    <source pages="159-160"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Hendes skål
+U:af ,,Mester og lærling''
+U:Som:  Ça ça geschmauset
+F:
+SIDE:159-160
+
       Fugle på grene!
 vågn kun, I små, og lytter til!
       Hende, den ene,
       besynge jeg vil.
 
 
-<nonum><small><center><w>Kor.</w></center></small></nonum>
+{cws:Kor.}
 
       Brødre, med gammen
       stød glassene sammen!
@@ -874,7 +772,7 @@ mulmet hun jaget har på flugt;
       til livet er slukt.
 
 
-<nonum><small><center><w>Kor.</w></center></small></nonum>
+{cws:Kor.}
 
       Brødre, med gammen
       stød glassene sammen!
@@ -886,26 +784,19 @@ fra hendes øjne jeg dig stjal,
       min fryd og - min kval.
 
 
-<nonum><small><center><w>Kor.</w></center></small></nonum>
+{cws:Kor.}
 
       Brødre, med gammen
       stød glassene sammen!
 hjærtet vil brænde - gyd olie i flammen!
-</body>
-</poem>
 
-<poem id="hostrup2018051718">
-<head>
-    <title>Thereses sang i vinduet</title>
-    <subtitle>
-        <line>af ,,Mester og lærling''</line>
-        <line>Sat i musik af C. J. Hansen</line>
-    </subtitle>
-    <firstline>Alt er svundet, stormens magt</firstline>
-    <source pages="161"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+
+T:Thereses sang i vinduet
+U:af ,,Mester og lærling''
+U:Sat i musik af C. J. Hansen
+F:Alt er svundet, stormens magt
+SIDE:161
+
 Alt er svundet, stormens magt
 har fluks hver drøm henvejret,
 over glædens farvepragt
@@ -923,8 +814,6 @@ Lad mit øje styrkes ved
 din glimmerløse skygge!
 lad igen din milde fred
 i dette hjærte bygge!
-</body>
-</poem>
 
 <!-- 162: Velkommen til Upsalenserne. hostrup2018051318 -->
 
@@ -956,18 +845,12 @@ i dette hjærte bygge!
 
 <!-- 191: Ungdommen. hostrup2018051612 -->
 
-<poem id="hostrup2018051719">
-<head>
-    <title>Drikkevise</title>
-    <subtitle>
-        <line>af ,,Drøm og dåd''</line>
-        <line>Sat i musik af P. Heise</line>
-    </subtitle>
-    <firstline>En fisk jeg lokked på min krog</firstline>
-    <source pages="193-194"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Drikkevise
+U:af ,,Drøm og dåd''
+U:Sat i musik af P. Heise
+F:En fisk jeg lokked på min krog
+SIDE:193-194
+
 En fisk jeg lokked på min krog,
 da klaged den sin harm:
 »Hvorfor er manden dog så klog,
@@ -997,18 +880,12 @@ skøn jomfru, du nipped jo kun;
     men manden forstod,
     at kraft og mod
 først nås på bægerets bund.
-</body>
-</poem>
 
-<poem id="hostrup2018051720">
-<head>
-    <title>Idas sang for Dukken</title>
-    <subtitle>af ,,En børnekomedie''</subtitle>
-    <firstline>Visselulle, lille barn!</firstline>
-    <source pages="195-196"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Idas sang for Dukken
+U:af ,,En børnekomedie''
+F:Visselulle, lille barn!
+SIDE:195-196
+
 Visselulle, lille barn!
 moder sidder og vinder garn,
 fader går på Langebro,
@@ -1029,8 +906,6 @@ så kommer fa’r med sin store stok,
 den gør ondt, det véd du nok.
 Men du må ligge som en artig én,
 og du må la’ være nu at sprælle med dine ben.
-</body>
-</poem>
 
 <!-- 197: Ved et sølvbryllup. hostrup2018051613 -->
 
@@ -1042,18 +917,12 @@ og du må la’ være nu at sprælle med dine ben.
 
 <!-- 206: Til C. Ploug. hostrup2018051616 -->
 
-<poem id="hostrup2018051721">
-<head>
-    <title>Professorens rejse</title>
-    <subtitle>
-        <line>af ,,Feriegæsterne”</line>
-        <line>Som: Hr. Adelbrand han rider</line>
-    </subtitle>
-    <firstline>Til alle verdens kanter</firstline>
-    <source pages="209-210"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Professorens rejse
+U:af ,,Feriegæsterne”
+U:Som: Hr. Adelbrand han rider
+F:Til alle verdens kanter
+SIDE:209-210
+
 Til alle verdens kanter
 han dristig sig begav,
 han red på elefanter -
@@ -1093,21 +962,13 @@ som floskelmagersvend.
 Han pakked sine bylter
 og kom så hjem på stylter
 til Danmark igen.
-</body>
-</poem>
 
-<poem id="hostrup2018051722">
-<head>
-    <title>Småborgerliv</title>
-    <subtitle>
-        <line>af ,,Familietvist''</line>
-        <line>Som en sang af ,,En søndag på Amager''</line>
-    </subtitle>
-    <firstline>Vid, vi bo i samme gård</firstline>
-    <source pages="211-212"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Småborgerliv
+U:af ,,Familietvist''
+U:Som en sang af ,,En søndag på Amager''
+F:Vid, vi bo i samme gård
+SIDE:211-212
+
 Vid, vi bo i samme gård
 og i stuen bægge,
 kun en gang - De nok forstår -
@@ -1143,8 +1004,6 @@ Siger De, hvi båndet brast -
 ak, hvor kan De spørge?
 hvor er det, som kan stå fast
 anno ott’ og fyrge?
-</body>
-</poem>
 
 <!-- 213: Præsten i Sejling. hostrup2018051624 -->
 
@@ -1190,11 +1049,11 @@ anno ott’ og fyrge?
 
 <!-- 271: Danmarks frihed. hostrup2005042802 -->
 
-<!-- 274: Ved indvielsen af Frederiksborg slotskirke. hostrup2018051642 -->
+<!-- 274: Ved indvielsen af Frederiksborg slotskirke. hostrup2018051642 
 
 <!-- 275: Ovenstående har i denne udgave en ekstra del: 
 
-<nonum><center>2</center></nonum>
+{c:2}
 
 En kongelig bal, i sølv og guld,
 den står som i fordums dage,
@@ -1236,19 +1095,12 @@ og op til din trones tinde!
 
 <!-- 292: Sønderjydernes besøg. hostrup2018051644 -->
 
-<poem id="hostrup2018051723">
-<head>
-    <title>Til N. F. S. Grundtvig</title>
-    <subtitle>Den 8de September 1865</subtitle>
-    <firstline>Herren, han har besøgt sit folk</firstline>
-    <source pages="295-297"/>
-    <dates>
-        <event>1865-11-08</event>
-    </dates>
-    <keywords>grundtvig</keywords>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Til N. F. S. Grundtvig
+U:Den 8de September 1865
+F:Herren, han har besøgt sit folk
+BEGIVENHED:1865-11-08
+SIDE:295-297
+
 »Herren, han har besøgt sit folk,
 »natten, hun blev til morgen,
 »menneskens søn, Gud-Faders tolk,
@@ -1293,18 +1145,12 @@ Takke vor Fader rig og rund,
 ham, som dig gav os så længe
 bede, at end en liflig stund
 vi ved din mund må hænge!
-</body>
-</poem>
 
-<poem id="hostrup2018051724">
-<head>
-    <title>Etatsrådens morgensang</title>
-    <subtitle>1866</subtitle>
-    <firstline>Hestgarden vil man ha’ bort</firstline>
-    <source pages="298-301"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Etatsrådens morgensang
+U:1866
+F:Hestgarden vil man ha’ bort
+SIDE:298-301
+
 Hestgarden vil man ha’ bort,
 det er en evig skam og tort.
   Man siger, til kampen
@@ -1344,7 +1190,7 @@ så bliver Danmarks liv kun kort.
   men dets sønner
   vil rejse vor lykke.
   Ja de skal virke,
-  som <w>de</w> kun mægter,
+  som =de= kun mægter,
   for de seneste slægter
   i teater og kirke,
   ved hoffet og hæren
@@ -1384,18 +1230,12 @@ til atter sin glans det kan samle.
   Op, forsvar den,
   ellers de tar den!
 Danmarks ædle, flok jer om garden
-</body>
-</poem>
 
-<poem id="hostrup2018051725">
-<head>
-    <title>Sønderjyllands tab</title>
-    <subtitle>Som: Så kæmped de helte af anden April</subtitle>
-    <firstline>Mon Tyskland nu strækker til Kolding sin krop</firstline>
-    <source pages="302-304"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Sønderjyllands tab
+U:Som: Så kæmped de helte af anden April
+F:Mon Tyskland nu strækker til Kolding sin krop
+SIDE:302-304
+
 Mon Tyskland nu strækker til Kolding sin krop,
   så Danmark krøb ind med det samme?
 mon grenen, hvor ørnen sin rede slog op,
@@ -1440,18 +1280,12 @@ Endnu ikke Danmark er blevet et vrag,
   det trodser de stridige strømme;
 Vorherre os snart lade hilse den dag,
   da Tysken af landet må rømme!
-</body>
-</poem>
 
-<poem id="hostrup2018051726">
-<head>
-    <title>Frem, bondemand, frem!</title>
-    <subtitle>Som: Sig, husker du ikke den lystige tid</subtitle>
-    <firstline>Hel tungt han efter sig foden drog</firstline>
-    <source pages="305-307"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Frem, bondemand, frem!
+U:Som: Sig, husker du ikke den lystige tid
+F:Hel tungt han efter sig foden drog
+SIDE:305-307
+
 Hel tungt han efter sig foden drog,
     som før var så rap;
 højt lærken over hans hoved slog,
@@ -1496,17 +1330,11 @@ Din moders hus er blevet et skur,
     der inde trækken er slem,
 det gælder at rejse den sjunkne mur -
     frem, bondemand, frem!
-</body>
-</poem>
 
-<poem id="hostrup2018051727">
-<head>
-    <title>Lærken</title>
-    <firstline>Hvad synger du om</firstline>
-    <source pages="308-311"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Lærken
+F:Hvad synger du om
+SIDE:308-311
+
 Hvad synger du om
 så højt i det blå?
 hvem gælder din vise?
@@ -1576,17 +1404,11 @@ det guld, de bær?
 »med stordåd og sang,
 »om sol og skærsommer
 »i Danevang.«
-</body>
-</poem>
 
-<poem id="hostrup2018051728">
-<head>
-    <title>Risbøgen</title>
-    <firstline>Der er så lyst i skovens hal</firstline>
-    <source pages="312-315"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Risbøgen
+F:Der er så lyst i skovens hal
+SIDE:312-315
+
 Der er så lyst i skovens hal,
   ti taget ligger nede;
 den klare dag ej længer skal
@@ -1656,17 +1478,11 @@ Ja slip dem ej for dognets glans,
   hvad dværgene så hviske,
 før under mindets brune krans
   du bærer sejrens friske!
-</body>
-</poem>
 
-<poem id="hostrup2018051729">
-<head>
-    <title>Taterfamilien</title>
-    <firstline>Vil man vide, hvor vi bor</firstline>
-    <source pages="316-317"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Taterfamilien
+F:Vil man vide, hvor vi bor
+SIDE:316-317
+
 Vil man vide, hvor vi bor -
 ikke på månen, men her på jord;
 spørger man, i hvad land og sogn -
@@ -1694,18 +1510,12 @@ spørger man, hvad vi egentlig vil -
 leve, så længe det kan slå til,
 slikke sol efter bedste ævne,
 nyde alting og ingenting lævne.
-</body>
-</poem>
 
-<poem id="hostrup2018051730">
-<head>
-    <title>Til den danske Sønderjyde</title>
-    <subtitle>Sat i musik af Joseph Glæser</subtitle>
-    <firstline>Dig timedes de strænge kår</firstline>
-    <source pages="318-320"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Til den danske Sønderjyde
+U:Sat i musik af Joseph Glæser
+F:Dig timedes de strænge kår
+SIDE:318-320
+
 Dig timedes de strænge kår,
 skønt dansk var sind og kjole,
 at måtte gennem hundredår
@@ -1750,18 +1560,12 @@ Det fødes i en vinternat,
 det vokser under isen;
 når bøgen får sin grønne hat,
 da henter det sig prisen.
-</body>
-</poem>
 
-<poem id="hostrup2018051731">
-<head>
-    <title>Folkehøjskolen</title>
-    <subtitle>Som: At slyngler hæves til ærens top</subtitle>
-    <firstline>Er skolen for andre end pilt og pog</firstline>
-    <source pages="321-323"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Folkehøjskolen
+U:Som: At slyngler hæves til ærens top
+F:Er skolen for andre end pilt og pog
+SIDE:321-323
+
 Er skolen for andre end pilt og pog,
   og hvi skal karle dens bænke slide?
 skal de atter spændes i pebling-åg,
@@ -1806,25 +1610,17 @@ så gid den må huse det jævne ord,
       med sang i munden,
   til Danmarks ære, til gavn for bonden
       den vokse frem!
-</body>
-</poem>
 
-<poem id="hostrup2018051732">
-<head>
-    <title>Til Danmark</title>
-    <subtitle>
-        <line>1868</line>
-        <line>Som: Vintern rasat o. s. v.</line>
-    </subtitle>
-    <firstline>Var selv dig for hård den hårde skole?</firstline>
-    <source pages="324-325"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Til Danmark 
+U:1868
+U:Som: Vintern rasat o. s. v.
+F:Var selv dig for hård den hårde skole?
+SIDE:324-325
+
 Var selv dig for hård den hårde skole?
 blev da, gamle, endelig du træt?
 fire gange bøgen skifted kjole,
-din dog bærer end den samme plet.
+din dog bærer end den samme plet. 
 Har du glemt, hvem du skal fri og hævne,
 eller har du selv dig dømt som vrag?
 Nej, du samler kraft til end et stævne,
@@ -1856,18 +1652,12 @@ Hele folket med og vakt af døsen,
 hver en hånd i brug og løst hver fod,
 Sønderjylland frelst - det er vort løsen,
 dermed gå vi kampens dag imod.
-</body>
-</poem>
 
-<poem id="hostrup2018051733">
-<head>
-    <title>Modersmålet</title>
-    <subtitle>Som : Danmarks rige i Højnorden</subtitle>
-    <firstline>Danmark, delt ved hav for inden</firstline>
-    <source pages="326-327"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Modersmålet
+U:Som : Danmarks rige i Højnorden
+F:Danmark, delt ved hav for inden
+SIDE:326-327
+
 Danmark, delt ved hav for inden,
 kløvet nu til sidst af fjenden!
         om du plyndres,
@@ -1909,21 +1699,13 @@ hjemmets bud fra jord og himmel!
         flyv, du kække,
         bring fra bægge
   danske hjærter håb og trøst!
-</body>
-</poem>
 
-<poem id="hostrup2018051734">
-<head>
-    <title>Den favre tid</title>
-    <subtitle>
-        <line>Bryllupsvise</line>
-        <line>Som: Storken sidder på bondens tag</line>
-    </subtitle>
-    <firstline>Storken sejled til taget hen</firstline>
-    <source pages="328-329"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Den favre tid
+U:Bryllupsvise
+U:Som: Storken sidder på bondens tag
+F:Storken sejled til taget hen
+SIDE:328-329
+
 Storken sejled til taget hen,
 han løfted igen sin vinge:
 »jeg gider ej bo hos en pebersvend,
@@ -1963,18 +1745,12 @@ Storken fløj over bølgen blå,
 han kommer først med ad åre,
 men trindt det nu klinger fra hver en vrå:
 »velkommen, du favre tid, vi savned så såre!«
-</body>
-</poem>
 
-<poem id="hostrup2018051735">
-<head>
-    <title>Til minde om præsten G. C. Scheller</title>
-    <subtitle>I Bloustrød kirke 1869</subtitle>
-    <firstline>Gennem tyve år har lydt</firstline>
-    <source pages="330-332"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Til minde om præsten G. C. Scheller
+U:I Bloustrød kirke 1869
+F:Gennem tyve år har lydt
+SIDE:330-332
+
 Gennem tyve år har lydt
   røsten klar her inde,
 den, der bragte, som et nyt,
@@ -2019,18 +1795,12 @@ lad det vække fjærnt og nær
   alt, hvad døden tvinger!
 lad det samle lysets hær
   under nådens vinger!
-</body>
-</poem>
 
-<poem id="hostrup2018051736">
-<head>
-    <title>Høje Nord</title>
-    <subtitle>Sat i musik af Joseph Glæser</subtitle>
-    <firstline>Høje Nord, friheds hjem!</firstline>
-    <source pages="333-334"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Høje Nord
+U:Sat i musik af Joseph Glæser
+F:Høje Nord, friheds hjem!
+SIDE:333-334
+
 Høje Nord, friheds hjem!
 ej for mørket til at true,
 men for solen til at lue
@@ -2066,18 +1836,12 @@ Kald på heltene, der blunde!
 saml i ét de skilte råd!
 og i munde
 læg os ordet, som er dåd!
-</body>
-</poem>
 
-<poem id="hostrup2018051737">
-<head>
-    <title>De Danskes sang på Ringerige</title>
-    <subtitle>Sat i musik af P. Heise</subtitle>
-    <firstline>Norges fjælde!</firstline>
-    <source pages="335-336"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:De Danskes sang på Ringerige
+U:Sat i musik af P. Heise
+F:Norges fjælde!
+SIDE:335-336
+
         Norges fjælde!
         truer kun trælle!
         os gør I fro,
@@ -2113,18 +1877,12 @@ bringer I bud os fra fædrejord.
         fri og strag,
 kender i dølen sit blod på stand,
 sender ham hilsen fra bøgens land.
-</body>
-</poem>
 
-<poem id="hostrup2018051738">
-<head>
-    <title>En lærers jubilæum</title>
-    <subtitle>Som: Ved vintertid, når skoven står</subtitle>
-    <firstline>Hvor rolig er den lille by</firstline>
-    <source pages="337-338"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:En lærers jubilæum
+U:Som: Ved vintertid, når skoven står
+F:Hvor rolig er den lille by
+SIDE:337-338
+
 Hvor rolig er den lille by,
 hvor gemt for kastevinde kåde!
 den får kun døn af stormens gny,
@@ -2160,21 +1918,13 @@ Så blive din da smuk og lang,
 mens tro du vogter på din gang
 din frihed under vanens tvang
 og holder ung dig blandt de unge!
-</body>
-</poem>
 
-<poem id="hostrup2018051739">
-<head>
-    <title>Kronprinsens bryllupsdag</title>
-    <subtitle>
-        <line>Ved festen i Frederiksborg</line>
-        <line>Som: Du gamla, du friska, du fjällhöga nord</line>
-    </subtitle>
-    <firstline>Hvor Mälarens vand</firstline>
-    <source pages="339-341"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Kronprinsens bryllupsdag
+U:Ved festen i Frederiksborg
+U:Som: Du gamla, du friska, du fjällhöga nord
+F:Hvor Mälarens vand
+SIDE:339-341
+
       Hvor Mälarens vand
       kysser Saltsøens strand,
 og kongsgården knejser over spejlet,
@@ -2212,10 +1962,10 @@ må se det lægt og trøstet for sin møde!
 
       Ti smerte som lyst
       dybt i Dannemænds bryst
-fra <w>deres</w> vil ej sig lade rykke,
+fra =deres= vil ej sig lade rykke,
       og håbet, som gror
       hos de tre folk i Nord,
-vil nu sig knytte fast til <w>deres</w> lykke.
+vil nu sig knytte fast til =deres= lykke.
 
       Så fejre som bedst
       hele Norden sin fest
@@ -2223,17 +1973,11 @@ i solguld og rosenduft og varme!
       og mødes i dag
       det til fryd uden nag,
 det skilles aldrig mer i vintrens harme
-</body>
-</poem>
 
-<poem id="hostrup2018051740">
-<head>
-    <title>Julestemning</title>
-    <firstline>Det var en nat i min ungdomsvår</firstline>
-    <source pages="342-344"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Julestemning
+F:
+SIDE:342-344
+
 Det var en nat i min ungdomsvår,
 end jeg husker den som i går,
 Tindsøen lå i skummet hvid,
@@ -2286,25 +2030,19 @@ fjælde stængte for synet frit.
 
 Men over fjældet har lys jeg kendt,
 set, at der oppe var stormen endt.
-følt, at freden dalede ned,
+følt, at freden dalede ned, 
 glattende spejlet, hvorpå jeg gled.
 
 Og medens bølgerne trindt på sø
 sorte sig rejser og skummende dø,
 medens det brager i stavn og ror,
 nynner jeg trøstig om »fred på jord«.
-</body>
-</poem>
 
-<poem id="hostrup2018051741">
-<head>
-    <title>F. H. Eibes boghandlerjubilæum</title>
-    <subtitle>Som: Der var engang en tapper mand.</subtitle>
-    <firstline>Da ung han i de unges ring</firstline>
-    <source pages="345-347"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:F. H. Eibes boghandlerjubilæum
+U:Som: Der var engang en tapper mand.
+F:Da ung han i de unges ring
+SIDE:345-347
+
 Da ung han i de unges ring
   fandt ly bag Rundekirke,
 han med det spørgsmål gik omkring,
@@ -2349,17 +2087,11 @@ Hil ham, der aldrig søgte ro
   på et af glædens lejer,
 men altid travl og altid tro
   gav sit til lysets sejer!
-</body>
-</poem>
 
-<poem id="hostrup2018051742">
-<head>
-    <title>Vintersæden</title>
-    <firstline>Det var ved sankt Mortens tide</firstline>
-    <source pages="348-352"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Vintersæden
+F:Det var ved sankt Mortens tide
+SIDE:348-352
+
 Det var ved sankt Mortens tide,
 grå var himlen, marken kullet,
 hist og her kun stod den grønne
@@ -2420,7 +2152,7 @@ gift på jord har plettet glæden,
 må vi selv, hvor højst vi række,
 dele kår med vintersæden;
 
-Nå ej her, som hjærtet kræver,
+Nå ej her, som hjærtet kræver, 
 livets fylde, sommertrøsten,
 men må nøjes med en grålig
 stakket vår i efterhøsten;
@@ -2449,22 +2181,14 @@ Ti så bær den det, som segner,
 gemmer tro, hvad her må falme,
 indtil vinterstormens ligsang
 ender i en påskesalme.
-</body>
-</poem>
 
-<poem id="hostrup2018051743">
-<head>
-    <title>Til N. F. S. Grundtvig</title>
-    <subtitle>
-        <line>på hans 60 års jubelfest</line>
-        <line>Som: Ser til fuglene i luften</line>
-    </subtitle>
-    <firstline>Sent i efterhøst du stander</firstline>
-    <source pages="353-354"/>
-    <keywords>grundtvig</keywords>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Til N. F. S. Grundtvig
+U:på hans 60 års jubelfest
+U:Som: Ser til fuglene i luften
+F:Sent i efterhøst du stander
+SIDE:353-354
+N:grundtvig
+
 Sent i efterhøst du stander,
 er det da blandt vissent løv?
 ligger nu din ungdoms banner
@@ -2477,7 +2201,7 @@ medens marken hel var hvid,
 våren, som med sine kræfter
 rusted dig til ynglingsstrid,
 lånte i din manddoms dage
-<w>din</w> røst for her ind at drage.
+=din= røst for her ind at drage.
 
 Folkelivets vår i Norden,
 genfødt efter vinter død,
@@ -2499,18 +2223,12 @@ at det standser ej og ødes,
 men i lys og kraft skal gro,
 Ham, af hvem din røst blev båren,
 takke vi for dig i våren.
-</body>
-</poem>
 
-<poem id="hostrup2018051744">
-<head>
-    <title>Sølvbryllupssang</title>
-    <subtitle>Som: Ja, vi elsker dette landet</subtitle>
-    <firstline>Kærlighed i ungdomstiden</firstline>
-    <source pages="355-357"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Sølvbryllupssang
+U:Som: Ja, vi elsker dette landet
+F:Kærlighed i ungdomstiden
+SIDE:355-357
+
 Kærlighed i ungdomstiden
   er dens himmerig,
 gløder da som aldrig siden,
@@ -2555,17 +2273,11 @@ Han, som vogtede her inde
   luen nat og dag,
 lade længe klart den skinne
   under eders tag!
-</body>
-</poem>
 
-<poem id="hostrup2018051745">
-<head>
-    <title>Alvor og gammen</title>
-    <firstline>Alvor og gammen</firstline>
-    <source pages="358-360"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Alvor og gammen
+F:Alvor og gammen
+SIDE:358-360
+
           Alvor og gammen
           bedst kunne sammen,
 sådan lød ordet fra fædrenes tid,
@@ -2619,17 +2331,11 @@ samle til hær, hvem de stævne til fest,
           støvbunden mand,
           puste den ulmende
           glød i brand.
-</body>
-</poem>
 
-<poem id="hostrup2018051746">
-<head>
-    <title>Til fjenden</title>
-    <firstline>Kan du binde munden på mindet selv</firstline>
-    <source pages="361-363"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Til fjenden
+F:Kan du binde munden på mindet selv
+SIDE:361-363
+
 Kan du binde munden på mindet selv
 og i højen mane det ned?
 kan du hindre løvet i skovens hvælv
@@ -2681,17 +2387,12 @@ så kan du vel kro dig af døgnets kår
 og af sejren, det har dig skabt,
 men du fører en kamp imod tusendår
 og i den har du visselig tabt.
-</body>
-</poem>
 
-<poem id="hostrup2018051747">
-<head>
-    <title>En naturforskers stamtavle</title>
-    <firstline>Min fader var en abekat</firstline>
-    <source pages="364-366"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+
+T:En naturforskers stamtavle
+F:Min fader var en abekat
+SIDE:364-366
+
 Min fader var en abekat
 med hale naturligviis,
 med fire hænder, som godt tog fat
@@ -2736,18 +2437,12 @@ Så må jeg da lade det være
 og kun holde hullet i ære,
 ti hele min visdom har
 jeg fra min tip-tip-oldefar.
-</body>
-</poem>
 
-<poem id="hostrup2018051748">
-<head>
-    <title>Kor af ægtefolk.</title>
-    <subtitle>Bryllupssang</subtitle>
-    <firstline>I nygifte, hører, hvad vi har at sjunge</firstline>
-    <source pages="367-368"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Kor af ægtefolk.
+U:Bryllupssang
+F:I nygifte, hører, hvad vi har at sjunge
+SIDE:367-368
+
 I nygifte, hører, hvad vi har at sjunge,
 for vi har erfaring, og I er de unge,
 ja tager til vejledning for eders stræben
@@ -2787,17 +2482,11 @@ Så fæst da kun bolig i kærligheds tempel
 og husk vor formaning og følg vort eksempel
 og fægt for hinanden med ord og med næver
 og kives ej mere, end enighed kræver!
-</body>
-</poem>
 
-<poem id="hostrup2018051749">
-<head>
-    <title>Rejsen</title>
-    <firstline>Det var i den milde</firstline>
-    <source pages="369-371"/>
-    <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
+T:Rejsen
+F:Det var i den milde
+SIDE:369-371
+
 Det var i den milde
 morgenstund,
 han stødte sin lille
@@ -2852,8 +2541,5 @@ Hans hu stod ej til
 morgenens lyst,
 nu gik hans vej til
 den anden kyst.
-</body>
-</poem>
 
-</workbody>
-</kalliopework>
+
