@@ -244,7 +244,9 @@ const build_museum_link = picture => {
         break;
       case 'natmus.se':
         url = `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${objId}&viewType=detailView`;
-        break;
+      case 'digitalmuseum.no':
+        url = `https://digitaltmuseum.no/${objId}/maleri`;
+      break;
     }
     return url == null ? null : ` <a href="${url}">⌘</a>`;
   }
