@@ -233,6 +233,9 @@ const build_museum_link = picture => {
       case 'nivaagaard':
         url = `http://www.nivaagaard.dk/samling-da/${objId}`;
         break;
+      case 'kb':
+        url = `http://www.kb.dk/images/billed/2010/okt/billeder/object${objId}/da/`;
+        break;
       case 'smk':
         url = `http://collection.smk.dk/#/detail/${invNr}`;
         break;
