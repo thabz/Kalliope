@@ -7,14 +7,18 @@
    <quality>korrektur1,kilde,side</quality>
    <notes>
        <note>Teksten følger Andreas Dolleris: <i>Den lyse Dag</i>, Gyldendalske Boghandels Forlag, Kbh., 1894.</note>
-   </note>
-   <source facsimile="115308051496_color.pdf" facsimile-pages-offset="8">Andreas Dolleris: <i>Den lyse Dag</i>, Gyldendalske Boghandels Forlag, Kbh., 1894.</source>
+   </notes>
+   <pictures>
+       <picture type="titlepage" src="1894-p1.jpg">Titelbladet til <i>Den lyde Dag</i> (1894) lyder ,,Den lyse Dag. // En ny Samling Digte / af / Andreas Dolleris // Kjøbenhavn / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn). / 1894.''</picture>
+   </pictures>
+   <source facsimile="115308051496_color.pdf" facsimile-pages-num="166" facsimile-pages-offset="8">Andreas Dolleris: <i>Den lyse Dag</i>, Gyldendalske Boghandels Forlag, Kbh., 1894.</source>
 </workhead>
 <workbody>
 
 <poem id="dolleris2018042801">
 <head>
     <title>[Indledning]</title>
+    <indextitle>Indledning</indextitle>
     <firstline>Du straalende Dag</firstline>
     <source pages="3-6"/>
     <quality>korrektur1,kilde,side</quality>
@@ -22,7 +26,7 @@
 <body>
 Du straalende Dag,
                 livsalig i Fylde,
-med din Solkuppels Gled
+med din Solkuppels Glød
                 over Skabningen tændt;
 du indviende Dag,
                 med din mægtige Vinge
@@ -44,14 +48,14 @@ jeg vil ære den Almagt,
                 som mig Timerne gav,
 og synge et Drapa
                 om Lyset paa Jorden,
-skjendt det Lys, det bestraaler
+skjøndt det Lys, det bestraaler
                 baade Dødning og Grav.
 
 Jeg vil takke for det rullende
                 Blod i min Aare,
 for Nervernes Fibre
                 og Musklernes Kraft,
-og beje mit Hoved
+og bøje mit Hoved
                 for hin Enevoldshersker,
 der ved kongelig Bestalling
                 gav mig Næver paa Skaft.
@@ -74,7 +78,7 @@ skjøndt den væltes af sit Leje,
 og den slynges i Atomer
                 paa den yderste Dag.
 
-Jeg herer det suse
+Jeg hører det suse
                 i Bøgen foroven —
 det er Sommerdagens Højsang
                 i usigelige Ord,
@@ -115,8 +119,12 @@ og vies til din Tjener,
     <subtitle>Hundredaarsdagen for hans Fødsel, 22. April 1893</subtitle>
     <firstline>Helt sjelden spilled Solen i din Rude</firstline>
     <notes>
-        <note>Mottoet stammer fra Carl Plougs <xref poem="plough2018042401,33-40"/>.</note></note>
+        <note>Mottoet stammer fra Carl Plougs <xref poem="plough2018042401,33-40"/>.</note>
     </notes>
+    <dates>
+        <event>1893-04-22</event>
+    </dates>
+    <keywords>boedtcher,winter</keywords>
     <source pages="11-14"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -173,7 +181,7 @@ mens Mangt forældedes og gik paa Hæld.
 g fandt en Tumleplads som Arbejdsbi, —
             din Poesi
 jeg elsker dobbelt i min lave Sfære:
-den blev mig »Honning fra Hymettus’ Fjeld«.
+den blev mig »Honning fra Hymettus’ Fjeld«<note>Se Bødchers <xref poem="boedtcher1870a31,18"/>.</note>.
 
 ---
 Den blinde Eros flagred i din Stue,
@@ -269,7 +277,7 @@ mens Dyret udmarves Dag for Dag
 og segner tilsidst, naar det orker ej mer!
 - - - - - - - - - - -
 
-Men gaar du en aarie Morgenstund
+Men gaar du en aarle Morgenstund
 opover Dalens fredlyste Spor —
 imens den stigende Solkugles Rund
 lægger Guldglands paa Vejle Fjord, —
@@ -368,11 +376,11 @@ skal bære det Skabtes Lov!
     <indextitle>Christian Richardt</indextitle>
     <firstline>Ak, hvor Sangens Trækfuglskare har forladt os inden kort</firstline>
     <source pages="23-35"/>
+    <!-- TODO: Find alle Richardt referencerne -->
+    <keywords>richardt</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<!-- TODO: Find alle Richardt referencerne -->
-
 »Ak, hvor Sangens Trækfuglskare har forladt os inden kort« —
 Folkets Sanger under Snefog fløj med Foraarslærken bort:
 Lærkelil, der kvad »ved Løvspring« med al Vaarens Fryd i Pagt,
@@ -418,7 +426,7 @@ Paa den uhyre Valplads,
       hvor Slægternes Hære
       har kæmpet og lidt
               og har fundet sin Død,
-dér gik dine Veje,
+dèr gik dine Veje,
       Du Ridder af Ære!
       Du kyndige Hjælper
               for Menneskers Nød!
@@ -433,7 +441,7 @@ hvor Sotens og Lidelsens
               tyvstjæler vort Mod.
 
 Paa hin Smerternes Valplads
-      dér saa’ man Dig bøjet,
+      dèr saa’ man Dig bøjet,
       men lige ufortrøden,
               og skaansom, og god;
 skjøndt de snigende Magter
@@ -577,7 +585,7 @@ Hvor er nu alle Somrens henrivende Dage?
 
 Træerne brune
 tegner mod Himlen en underlig, tungsindig Skrift:
-Rune ved Rune 1
+Rune ved Rune!
 Læs deres Stave,
 du, hvis Asyl bli’er en Grav mellem tusinde Grave,
                 trods al din Bedrift!
@@ -620,7 +628,7 @@ Om paa Morgenvagten vi fandtes,
         Om vor Gjerning prægede Tiden,
     indtil Daglysets Straaler, de sank?
 Om vi, medens Livstraaden vandtes
-    af Aarenes rullende. Ten,
+    af Aarenes rullende Ten,
         holdt Sjælene unge i Striden
     og holdt Fanen hellig og ren?
 
@@ -942,7 +950,7 @@ maa Hammerslaget give Rhytmen Klang!
 </body>
 </poem>
 
-<section>
+<section level="2">
 <head>
     <title>Triterner</title>
 </head>
@@ -950,8 +958,7 @@ maa Hammerslaget give Rhytmen Klang!
 
 <poem id="dolleris2018042816">
 <head>
-    <title>Efter Livets Storme -</title>
-    <toctitle><num>I.</num>Efter Livets Storme -</toctitle>
+    <title><num>I.</num>Efter Livets Storme -</title>
     <firstline>Efter Livets Storme, naar en</firstline>
     <source pages="49"/>
     <quality>korrektur1,kilde,side</quality>
@@ -976,8 +983,7 @@ af Forraadnelsen dit Navn.
 
 <poem id="dolleris2018042817">
 <head>
-    <title>Se, de flokkes</title>
-    <toctitle><num>II.</num>Se, de flokkes</toctitle>
+    <title><num>II.</num>Se, de flokkes</title>
     <firstline>Se, de flokkes, Skovens travle</firstline>
     <source pages="50"/>
     <quality>korrektur1,kilde,side</quality>
@@ -1002,8 +1008,7 @@ Nat er evig — Dag et Nu!
 
 <poem id="dolleris2018042818">
 <head>
-    <title>Nattens Vaaning</title>
-    <toctitle><num>III.</num>Nattens Vaaning</toctitle>
+    <title><num>III.</num>Nattens Vaaning</title>
     <firstline>Nattens Vaaning til Facade</firstline>
     <source pages="51"/>
     <quality>korrektur1,kilde,side</quality>
@@ -1028,8 +1033,7 @@ Livets store Æresskrift!
 
 <poem id="dolleris2018042819">
 <head>
-    <title>Op fra Skræntens brune Flade -</title>
-    <toctitle><num>IV.</num>Op fra Skræntens brune Flade -</toctitle>
+    <title><num>IV.</num>Op fra Skræntens brune Flade -</title>
     <firstline>Op fra Skræntens brune Flade</firstline>
     <source pages="52"/>
     <quality>korrektur1,kilde,side</quality>
@@ -1053,7 +1057,7 @@ gjennemtoner alt mit Sind.
 </poem>
 
 </content>
-</section>
+</section> <!-- Triterner -->
 
 <poem id="dolleris2018042820">
 <head>
@@ -1168,13 +1172,12 @@ for al Skabningens Sol i Fortæreisens Brand!
     <title>Der findes en gammel Vise</title>
     <subtitle>[Skrevet til Digteren Ernst v. d. Recke, medens han arbejdede paa sin store Metrik.]</subtitle>
     <firstline>Der findes en gammel Vise</firstline>
+    <!-- TODO: Find folkevisen »Det haver saa nyligen regnet«. -->
     <source pages="58-60"/>
     <keywords>reckee</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<!-- TODO: Find folkevisen »Det haver saa nyligen regnet«. -->
-
 Der findes en gammel Vise,
 jeg kjender saa godt, som Du:
 »Det haver saa nyligen regnet,
@@ -1322,17 +1325,18 @@ da fatter du og elsker
 <poem id="dolleris2018042824">
 <head>
     <title>»Ved Havelaagen«</title>
+    <indextitle>Ved Havelaagen</indextitle>
+    <linktitle>Ved Havelaagen</linktitle>
     <subtitle>[Med et Billede af Carl Thomsen.]</subtitle>
     <firstline>Paa den ene Side af Laagen</firstline>
     <notes>
-        <note>Hjælp Kalliope! Har du en digitial kopi af Carl Thomsens billede »Ved Havelaagen«? Mail <a href="mailto:jesper@kalliope.org">jesper@kalliope.org</a> hvis du kan hjælpe.</note></note>
+        <note>Hjælp Kalliope! Har du en digitial kopi af Carl Thomsens billede »Ved Havelaagen«? Mail <a href="mailto:jesper@kalliope.org">jesper@kalliope.org</a> hvis du kan hjælpe.</note>
     </notes>
+    <!-- TODO: Find Carl Thomsens billede. -->
     <source pages="65"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<!-- TODO: Find Carl Thomsens billede. -->
-
 Paa den ene Side af Laagen, dér blusser en Rosengaard,
 der skjærmes den lyse Ungdom indtil de tyve Aar!
 
@@ -1353,7 +1357,7 @@ Saa flytter hun varsomt Foden fra Havens Rosenpark.
 <head>
     <title>Ved Jernbaneledet</title>
     <firstline>Saa tidt har jeg staaet ved et Jernbaneled</firstline>
-    <source pages="68-67"/>
+    <source pages="66-67"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1498,7 +1502,7 @@ Naturens rige Gunst;
 det fik i Vuggegave
 en Oldtids store Kunst.
 
-Jeg hilser Dig, <sc>Ferrara!<sc>
+Jeg hilser Dig, <sc>Ferrara!</sc>
 hvis stolte Fortidssage
 med Lysglands naaer tilbage
 i Hundreder af Aar:
@@ -1640,7 +1644,7 @@ velkommen i min Dagligstue!
 </poem>
 
 </content>
-</section>
+</section> <!-- I. Dagen og Døden -->
 
 <section>
 <head>
@@ -1655,14 +1659,13 @@ velkommen i min Dagligstue!
     <firstline>Fra et Vidunder-Land, med et straalende Slot</firstline>
     <source pages="81-83"/>
     <dates>
-        <written>1893-02-18</written>
+        <event>1893-02-18</event>
     </dates>
+    <!-- TODO: Find mottoet. Er det et digt af Hostrup? -->
     <keywords>hostrup</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<!-- TODO: Find mottoet. Er det et digt af Hostrup? -->
-
 <nonum><small><right>Hans Saga naaer fra Studentens Bord </right></small></nonum>
 <nonum><small><right>til Bondens Stue paa Hedens Jord; </right></small></nonum>
 <nonum><small><right>fra et Bedehus ved en Kæmpehøj</right></small></nonum>
@@ -1806,7 +1809,7 @@ har vi forenet det, som skiltes ad, —
     det Mindets dufterige Rosenblad!
 
 Og lad en Fremtid af den Fortid bæres,
-som Hundreds Kraft os gav til Fundament1
+som Hundreds Kraft os gav til Fundament!
     Er Maalet fjernt — skal end der Meget læres:
     tilsidst vi, stykkevis, det faar erkjendt.
 Og er det rigt, det Værk, som vi skal øve,
@@ -1821,7 +1824,7 @@ vi her fik Tjenerskikkelse og Kaar;
 Dér skal vi søge med et Spejder-Øje,
 og, Fod for Fod, vi skal erobre Land!
     Og lære Kunsten: Lyngens Svær at pløje —
-    har først en aandig Gnist den sat i Brand 1
+    har først en aandig Gnist den sat i Brand!
 
 Den Dag, som viger, ligner Kjolens Stribe:
 den viskes ud af nye Bølgers Trav.
@@ -2255,7 +2258,7 @@ er størst hendes Tale i »Lieder ohne Wort«, —
 hun har al Veltalenheds Stemme.
 
 Og ligner end hun Stæren paa Husfløjens Gavl,
-— er den Stræbsomme aarie og silde, —
+— er den Stræbsomme aarle og silde, —
 ret aldrig hun hverves saa tjenestetravl,
 hun bli’er dog Foryngelsens Kilde.
 
@@ -2469,7 +2472,7 @@ for vort Møde paa den lyse Jord!
 </poem>
 
 </content>
-</section>
+</section> <!-- II. Dagen og Døden -->
 
 <section>
 <head>
@@ -2477,7 +2480,7 @@ for vort Møde paa den lyse Jord!
 </head>
 <content>
 
-<section>
+<section level="2">
 <head>
     <title>Sonetter</title>
 </head>
@@ -2706,9 +2709,7 @@ ja, højere idag end nogensinde!«
     <toctitle><num>VIII.</num>Fattigbørns Veninde</toctitle>
     <subtitle>[Med Per Hasselbergs Statuette »Sneklockan«.]</subtitle>
     <firstline>Naar Luften bølger under Lærkesange</firstline>
-    <notes>
-        <note>TODO:Indsæt statuen fra https://en.wikipedia.org/wiki/Per<i>Hasselberg#/media/File:Svöklockan</i>2010.jpg</note>
-    </notes>
+    <!-- https://en.wikipedia.org/wiki/PerHasselberg#/media/File:Svöklockan2010.jpg -->
     <source pages="130"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2758,7 +2759,7 @@ tilfældigt, hvor min Grav jeg faar i Verden?
 
 Med aabent Mod jeg hæve vil min Pande:
 Jeg <w>véd</w>, at Stjernen gaar i Ledebaand!
-Jeg <w>tror</w>, der er en Lov for Slægtens Færden1
+Jeg <w>tror</w>, der er en Lov for Slægtens Færden!
 </body>
 </poem>
 
@@ -2795,7 +2796,7 @@ paa Fjeldet — paa det store Ocean!
 </poem>
 
 </content>
-</section>
+</section> <!-- Sonetter -->
 
 <poem id="dolleris2018042851">
 <head>
@@ -3223,7 +3224,7 @@ ser jeg nu fremad, — tænker jeg tilbage!
 </poem>
 
 </content>
-</section>
+</section> <!-- III. Italienske Strofer -->
 
 </workbody>
 </kalliopework>
