@@ -233,6 +233,9 @@ const build_museum_link = picture => {
       case 'nivaagaard':
         url = `http://www.nivaagaard.dk/samling-da/${objId}`;
         break;
+      case 'kb':
+        url = `http://www.kb.dk/images/billed/2010/okt/billeder/object${objId}/da/`;
+        break;
       case 'smk':
         url = `http://collection.smk.dk/#/detail/${invNr}`;
         break;
@@ -244,7 +247,9 @@ const build_museum_link = picture => {
         break;
       case 'natmus.se':
         url = `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${objId}&viewType=detailView`;
-        break;
+      case 'digitalmuseum.no':
+        url = `https://digitaltmuseum.no/${objId}/maleri`;
+      break;
     }
     return url == null ? null : ` <a href="${url}">⌘</a>`;
   }
@@ -412,10 +417,9 @@ const build_poets_json = () => {
     const mentions = collected.person_or_keyword_refs.get(id);
     const has_mentions =
       (mentions != null &&
-      (mentions.mention.length > 0 ||
-        mentions.translation.length > 0)) ||
-        fileExists(`fdirs/${id}/bibliography-primary.xml`) ||
-        fileExists(`fdirs/${id}/bibliography-secondary.xml`);
+        (mentions.mention.length > 0 || mentions.translation.length > 0)) ||
+      fileExists(`fdirs/${id}/bibliography-primary.xml`) ||
+      fileExists(`fdirs/${id}/bibliography-secondary.xml`);
 
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');
@@ -663,10 +667,18 @@ const handle_text = (
 
   const sourceNode = head.get('source');
   let source = null;
+  let workSource = null;
   if (sourceNode != null) {
+    const sourceId = safeGetAttr(sourceNode, 'in') || 'default';
+    workSource = work.sources[sourceId];
+    if (workSource == null) {
+      throw new Error(
+        `fdirs/${poetId}/${workId}.xml ${textId} references undefined source.`
+      );
+    }
     let pages = null;
     const pagesAttr = safeGetAttr(sourceNode, 'pages');
-    let sourceBookRef = work.source ? work.source.source : null;
+    let sourceBookRef = workSource ? workSource.source : null;
     if (sourceNode.text().trim().length > 0) {
       sourceBookRef = sourceNode
         .toString()
@@ -675,18 +687,18 @@ const handle_text = (
     }
     const facsimile =
       safeGetAttr(sourceNode, 'facsimile') ||
-      (work.source ? work.source.facsimile : null);
+      (workSource ? workSource.facsimile : null);
     let facsimilePages = safeGetAttr(sourceNode, 'facsimile-pages');
     if (
       facsimilePages == null &&
-      work.source != null &&
-      work.source.facsimilePagesOffset != null &&
+      workSource != null &&
+      workSource.facsimilePagesOffset != null &&
       pagesAttr != null
     ) {
       // Deduce facsimilePages from pages and facsimilePagesOffset.
       const pagesParts = pagesAttr.split(/-/).map(n => parseInt(n));
-      const pFrom = pagesParts[0] + work.source.facsimilePagesOffset;
-      const pTo = (pagesParts[1] || pFrom) + work.source.facsimilePagesOffset;
+      const pFrom = pagesParts[0] + workSource.facsimilePagesOffset;
+      const pTo = (pagesParts[1] || pFrom) + workSource.facsimilePagesOffset;
       facsimilePages = [pFrom, pTo];
     } else if (facsimilePages != null) {
       const pagesParts = facsimilePages.split(/-/).map(n => parseInt(n));
@@ -697,11 +709,11 @@ const handle_text = (
     source = {
       source: sourceBookRef,
       pages: pagesAttr,
-      facsimilePageCount: work.source.facsimilePageCount,
+      facsimilePageCount: workSource.facsimilePageCount,
       facsimile,
       facsimilePages,
     };
-  } else if (work.source != null) {
+  } else if (workSource != null) {
     // Dette er ikke nødvendigvis en fejl.
     console.log(`fdirs/${poetId}/${workId}: teksten ${textId} mangler source.`);
   }
@@ -1102,18 +1114,22 @@ const works_second_pass = collected => {
       const title = head.get('title').text();
       const year = head.get('year').text();
       const data = { id: workId, title, year, status, type };
-      const sourceNode = head.get('source');
-      if (sourceNode != null) {
+      let sources = {};
+      head.find('source').forEach(sourceNode => {
         let source = null;
         if (sourceNode.text().trim().length > 0) {
-          source = sourceNode
+          const title = sourceNode
             .toString()
             .replace(/<source[^>]*>/, '')
             .replace(/<\/source>/, '');
+          source = { source: title };
         }
-        data.source = {
-          source,
-        };
+        const sourceId = safeGetAttr(sourceNode, 'id') || 'default';
+        if (source == null || source.source == null) {
+          throw new Error(
+            `fdirs/${poetId}/${workId}.xml has source with no title.`
+          );
+        }
         let facsimile = safeGetAttr(sourceNode, 'facsimile');
         if (facsimile != null) {
           facsimile = facsimile.replace(/.pdf$/, '');
@@ -1134,14 +1150,16 @@ const works_second_pass = collected => {
               `fdirs/${poetId}/${workId}.xml is missing facsimile-pages-num in source.`
             );
           }
-          data.source = {
-            ...data.source,
+          source = {
+            ...source,
             facsimile,
             facsimilePageCount: parseInt(facsimilePageCount, 10),
             facsimilePagesOffset,
           };
         }
-      }
+        sources[sourceId] = source;
+      });
+      data.sources = sources;
       collected_works.set(poetId + '-' + workId, data);
 
       // TODO: Make handle_work non-recursive by using a simple XPath
