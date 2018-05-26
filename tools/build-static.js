@@ -960,7 +960,9 @@ const build_global_lines_json = collected => {
               .replace(/^\(/, '')
               .toUpperCase()
               .replace(/^À/, 'A')
+              .replace(/^Á/, 'A')
               .replace(/^É/, 'E')
+              .replace(/^È/, 'E')
               .replace(/^Ô/, 'O');
             if (poet.country === 'dk') {
               indexableLine = indexableLine
