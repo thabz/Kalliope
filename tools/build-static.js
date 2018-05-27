@@ -10,6 +10,7 @@ const ics = require('ics');
 
 const {
   isFileModified,
+  markFileDirty,
   refreshFilesModifiedCache,
   loadCachedJSON,
   writeCachedJSON,
@@ -293,7 +294,7 @@ const build_portraits_json = (poet, collected) => {
             poet.id
           }/portraits.xml har en ref "${ref}" som ikke matcher noget kendt billede.`;
         }
-        const artist = collected.poets.get(artwork.artist);
+        const artist = collected.poets.get(artwork.artistId);
         const description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
           artwork.content_raw
         }`;
@@ -371,7 +372,7 @@ const build_bio_json = collected => {
 };
 
 // TODO: Speed this up by caching.
-const build_poets_json = () => {
+const build_poets_json = (collected) => {
   // Returns {has_poems: bool, has_prose: bool,
   //  has_texts: bool, has_works: bool}
   const hasTexts = (poetId, workIds) => {
@@ -2364,7 +2365,7 @@ const build_artwork = collected => {
       if (artworksDoc != null) {
         artworksDoc.find('//pictures/picture').forEach(picture => {
           const pictureId = safeGetAttr(picture, 'id');
-          const subjectId = safeGetAttr(picture, 'sbuject');
+          const subjectId = safeGetAttr(picture, 'subject');
           if (pictureId == null) {
             throw `fdirs/${personId}/artwork.xml har et billede uden id-attribut.`;
           }
@@ -2382,10 +2383,9 @@ const build_artwork = collected => {
               .trim() + museumLink;
           const artworkJson = {
             artistId: personId,
-            lang: poet.lang,
+            lang: person.lang,
             src: `/static/images/${personId}/${pictureId}.jpg`,
             content_lang: 'da',
-            primary,
             content_raw,
             content_html: htmlToXml(content_raw, collected),
           };
@@ -2395,17 +2395,17 @@ const build_artwork = collected => {
     }
   });
   writeCachedJSON('collected.artwork', Array.from(collected_artwork));
-  return collected_workids;
+  return collected_artwork;
 };
 
 safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);
-collected.arkwork = b('build_artwork', build_artwork, collected);
+collected.artwork = b('build_artwork', build_artwork, collected);
 // Build collected.works and collected.texts
 Object.assign(collected, b('works_first_pass', works_first_pass, collected));
-collected.poets = b('build_poets_json', build_poets_json);
-b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 b('build_mentions_json', build_mentions_json, collected);
+b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
+collected.poets = b('build_poets_json', build_poets_json, collected);
 collected.textrefs = b('build_textrefs', build_textrefs, collected);
 build_dict_first_pass(collected);
 collected.keywords = b('build_keywords', build_keywords);
