@@ -2354,7 +2354,6 @@ const build_anniversaries_ical = collected => {
 
 const build_artwork = collected => {
   let collected_artwork = new Map(loadCachedJSON('collected.artwork') || []);
-  collected_artwork = new Map();
   const doc = loadXMLDoc('data/poets.xml');
   doc.find('/persons/person').forEach(person => {
     const personId = person.attr('id').value();
@@ -2403,9 +2402,9 @@ collected.workids = b('build_poet_workids', build_poet_workids);
 collected.artwork = b('build_artwork', build_artwork, collected);
 // Build collected.works and collected.texts
 Object.assign(collected, b('works_first_pass', works_first_pass, collected));
-b('build_mentions_json', build_mentions_json, collected);
 b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 collected.poets = b('build_poets_json', build_poets_json, collected);
+b('build_mentions_json', build_mentions_json, collected);
 collected.textrefs = b('build_textrefs', build_textrefs, collected);
 build_dict_first_pass(collected);
 collected.keywords = b('build_keywords', build_keywords);
