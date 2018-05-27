@@ -26,6 +26,14 @@ if (force_reload) {
   }
 }
 
+const markFileDirty = (...filenames) => {
+  for (let i = 0; i < filenames.length; i++) {
+    if (filenames[i] != null) {
+      delete old_sha[filenames[i]];
+    }
+  }
+};
+
 const isFileModified = (...filenames) => {
   const _isFileModified = filename => {
     // For now remove the :id part of the filename
@@ -104,6 +112,7 @@ const writeCachedJSON = (key, data) => {
 
 module.exports = {
   isFileModified,
+  markFileDirty,
   refreshFilesModifiedCache,
   loadCachedJSON,
   writeCachedJSON,

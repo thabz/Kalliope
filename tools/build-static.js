@@ -249,7 +249,7 @@ const build_museum_link = picture => {
         url = `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${objId}&viewType=detailView`;
       case 'digitalmuseum.no':
         url = `https://digitaltmuseum.no/${objId}/maleri`;
-      break;
+        break;
     }
     return url == null ? null : ` <a href="${url}">⌘</a>`;
   }
@@ -269,26 +269,46 @@ const build_portraits_json = (poet, collected) => {
         primariesCount += 1;
       }
       const src = safeGetAttr(picture, 'src');
-      if (src == null) {
+      const ref = safeGetAttr(picture, 'ref');
+      const museumLink = build_museum_link(picture) || '';
+      if (src != null) {
+        return {
+          lang: poet.lang,
+          src: `/static/images/${poet.id}/${src}`,
+          content_lang: 'da',
+          content_html: htmlToXml(
+            picture
+              .toString()
+              .replace(/<picture[^>]*?>/, '')
+              .replace('</picture>', '')
+              .trim() + museumLink,
+            collected
+          ),
+          primary,
+        };
+      } else if (ref != null) {
+        const artwork = collected.artwork.get(ref);
+        if (artwork == null) {
+          throw `fdirs/${
+            poet.id
+          }/portraits.xml har en ref "${ref}" som ikke matcher noget kendt billede.`;
+        }
+        const artist = collected.poets.get(artwork.artist);
+        const description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
+          artwork.content_raw
+        }`;
+        return {
+          lang: artwork.lang,
+          src: artwork.src,
+          content_lang: artwork.content_lang,
+          content_html: htmlToXml(description, collected),
+          primary,
+        };
+      } else {
         throw `fdirs/${
           poet.id
-        }/portraits.xml har et billede uden src-attribut.`;
+        }/portraits.xml har et billede uden src- eller ref-attribut.`;
       }
-      const museumLink = build_museum_link(picture) || '';
-      return {
-        lang: poet.lang,
-        src: `/static/images/${poet.id}/${src}`,
-        content_lang: 'da',
-        primary,
-        content_html: htmlToXml(
-          picture
-            .toString()
-            .replace(/<picture[^>]*?>/, '')
-            .replace('</picture>', '')
-            .trim() + museumLink,
-          collected
-        ),
-      };
     });
     if (primariesCount > 1) {
       throw `fdirs/${poet.id}/portraits.xml har flere primary`;
@@ -2331,12 +2351,60 @@ const build_anniversaries_ical = collected => {
   writeText('static/Kalliope.ics', value);
 };
 
+const build_artwork = collected => {
+  let collected_artwork = new Map(loadCachedJSON('collected.artwork') || []);
+  collected_artwork = new Map();
+  const doc = loadXMLDoc('data/poets.xml');
+  doc.find('/persons/person').forEach(person => {
+    const personId = person.attr('id').value();
+    const personType = person.attr('type').value();
+    const artworkFilename = `fdirs/${personId}/artwork.xml`;
+    if (personType === 'artist' && isFileModified(artworkFilename)) {
+      const artworksDoc = loadXMLDoc(artworkFilename);
+      if (artworksDoc != null) {
+        artworksDoc.find('//pictures/picture').forEach(picture => {
+          const pictureId = safeGetAttr(picture, 'id');
+          const subjectId = safeGetAttr(picture, 'sbuject');
+          if (pictureId == null) {
+            throw `fdirs/${personId}/artwork.xml har et billede uden id-attribut.`;
+          }
+          if (subjectId != null) {
+            // Make sure we rebuild the affected bio page.
+            markFileDirty(`fdirs/${subjectId}/portraits.xml`);
+          }
+          const museumLink = build_museum_link(picture) || '';
+          const artworkId = `${personId}/${pictureId}`;
+          const content_raw =
+            picture
+              .toString()
+              .replace(/<picture[^>]*?>/, '')
+              .replace('</picture>', '')
+              .trim() + museumLink;
+          const artworkJson = {
+            artistId: personId,
+            lang: poet.lang,
+            src: `/static/images/${personId}/${pictureId}.jpg`,
+            content_lang: 'da',
+            primary,
+            content_raw,
+            content_html: htmlToXml(content_raw, collected),
+          };
+          collected_artwork.set(artworkId, artworkJson);
+        });
+      }
+    }
+  });
+  writeCachedJSON('collected.artwork', Array.from(collected_artwork));
+  return collected_workids;
+};
+
 safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);
+collected.arkwork = b('build_artwork', build_artwork, collected);
 // Build collected.works and collected.texts
 Object.assign(collected, b('works_first_pass', works_first_pass, collected));
-b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 collected.poets = b('build_poets_json', build_poets_json);
+b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 b('build_mentions_json', build_mentions_json, collected);
 collected.textrefs = b('build_textrefs', build_textrefs, collected);
 build_dict_first_pass(collected);

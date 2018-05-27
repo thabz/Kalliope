@@ -3517,7 +3517,6 @@
   <works>1875,1911,andre</works>
 </person>
 
-
 <person id="lange" country="dk" lang="da" type="poet">
   <name>
     <firstname>Thor</firstname>
@@ -3535,6 +3534,24 @@
     </dead>
   </period>
   <works>1878,1894,1902,1906,1915</works>
+</person>
+
+<person id="kroyer" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>P.S.</firstname>
+    <lastname>Krøyer</lastname>
+    <fullname>Peder Severin Krøyer</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1851-07-23</date>
+      <place>Stavanger</place>
+    </born>
+    <dead>
+      <date>1909-11-21</date>
+      <place>Skagen</place>
+    </dead>
+  </period>
 </person>
 
 <person id="ipsen" country="dk" lang="da" type="poet">
