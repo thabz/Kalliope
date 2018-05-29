@@ -16,8 +16,5 @@
   </picture>
   <picture src="p8.jpg">
   </picture>
-  <picture src="p9.jpg" primary="true" square-src="p9-square.jpg">
-      Wilhelm Marstrand: <i>B.S. Ingemann</i>, 1860, olie på lærred. Sorø Akademi.
-      <!-- Ingemanns venner hyrede Marstrand til at portrættere den gamle digter i 1860. / Wikimedia -->
-  </picture>
+  <picture ref="marstrand/ingemann-1860" primary="true" square-src="p9-square.jpg" />
 </pictures>
