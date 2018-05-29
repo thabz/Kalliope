@@ -11,12 +11,8 @@
   </picture>
   <picture src="p5.jpg">
   </picture>
-  <picture src="p6.jpg" primary="true" square-src="p6-square.jpg">
-    Constantin Hansen: <i>N.F.S. Grundtvig</i>, 1847.
-  </picture>
+  <picture ref="hansenc/grundtvig-1847" primary="true" square-src="p6-square.jpg" />
   <picture src="p7.jpg">Frimærke fra 1983 udgivet i 200-året for Grundvigs fødsel baseret på Constantin Hansens portræt fra 1862.
   </picture>
-  <picture src="p8.jpg">
-    Constantin Hansen: <i>N.F.S. Grundtvig</i>, 1862. Det Nationalhistoriske Museum, Frederiksborg Slot.
-  </picture>
+  <picture ref="hansenc/grundtvig-1862"/>
 </pictures>
