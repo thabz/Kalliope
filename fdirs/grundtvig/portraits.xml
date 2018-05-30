@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p2.jpg">
-      C.A. Jensen (1792-1870): <i>N.F.S. Grundtvig</i>, 1831, olie på lærred, 23x18 cm. Ny Carlsberg Glyptotek. <!-- Portrættet er antagelig udført på bestilling af Grundtvigtilhængeren, baron Henrik Stampe, Nysø, og det blev på dennes dødsboauktion i 1876 erhvervet af Carl Jacobsen. // Kunstindex Danmark -->
-  </picture>
-  <picture src="p3.jpg">
-    C.A. Jensen (1792-1870): <i>N.F.S. Grundtvig</i>, 1843, olie på lærred. 66,7x53 cm. Den Hirschsprungske Samling.
-  </picture>
+  <picture ref="jensenca/grundtvig-1831" />
+  <picture ref="jensenca/grundtvig-1843" />
   <picture src="p4.jpg">
     H. W. Bissen: <i>N.F.S. Grundtvig</i>, 1847-48.
   </picture>
