@@ -103,7 +103,6 @@ class ArtworkList extends React.Component<ArtworkListProps> {
           :global(.artwork-container) {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
           }
           :global(.artwork-container > div) {
             flex-basis: 25%;
