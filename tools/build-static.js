@@ -521,6 +521,7 @@ const build_poets_json = (collected) => {
       has_poems: has.has_poems,
       has_prose: has.has_prose,
       has_texts: has.has_texts,
+      has_artwork: fs.existsSync(`fdirs/${id}/artwork.xml`),
       has_biography:
         fs.existsSync(`fdirs/${id}/bio.xml`) ||
         fs.existsSync(`fdirs/${id}/events.xml`) ||
@@ -1458,14 +1459,14 @@ const build_poet_works_json = collected => {
   collected.poets.forEach((poet, poetId) => {
     safeMkdir(`static/api/${poetId}`);
 
-    const filenames = collected.workids
+    const workFilenames = collected.workids
       .get(poetId)
       .map(workId => `fdirs/${poetId}/${workId}.xml`);
-    if (!isFileModified(`data/poets.xml:${poetId}`, ...filenames)) {
+    if (!isFileModified(`data/poets.xml:${poetId}`, `fdirs/${poetId}/artwork.xml`, ...workFilenames)) {
       return;
     }
 
-    let collectedHeaders = [];
+    let works = [];
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
 
@@ -1485,12 +1486,27 @@ const build_poet_works_json = collected => {
         status: work.attr('status').value(),
         type: work.attr('type').value(),
       };
-      collectedHeaders.push(data);
+      works.push(data);
     });
 
+    let artwork = [];
+    if (poet.has_artwork) {
+      artwork = Array.from(collected.artwork.values()).filter(a => a.artistId === poetId).map(picture => {
+        return {
+          lang: picture.lang,
+          src: picture.src,
+          content_lang: picture.content_lang,
+          content_html: picture.content_html,
+          subjects: picture.subjects,
+          year: picture.year        
+        }
+      });
+    }
+
     const objectToWrite = {
-      poet: poet,
-      works: collectedHeaders,
+      poet,
+      works,
+      artwork
     };
     const worksOutFilename = `static/api/${poetId}/works.json`;
     console.log(worksOutFilename);
@@ -1930,7 +1946,7 @@ const build_redirects_json = collected => {
   }
   let redirects = {};
   collected.poets.forEach((poet, poetId) => {
-    if (!poet.has_works) {
+    if (!poet.has_works && !poet.has_artwork) {
       redirects[`/en/works/${poetId}`] = `/en/bio/${poetId}`;
       redirects[`/da/works/${poetId}`] = `/da/bio/${poetId}`;
     }
@@ -2135,7 +2151,7 @@ const build_sitemap_xml = collected => {
     }
     const poet_text_urls = [];
     ['da', 'en'].forEach(lang => {
-      if (poet.has_works) {
+      if (poet.has_works || poet.has_artwork) {
         poet_text_urls.push(`https://kalliope.org/${lang}/works/${poetId}`);
       }
       if (poet.has_poems) {
@@ -2168,7 +2184,7 @@ const build_sitemap_xml = collected => {
   });
 
   const sitemaps_urls_xml = Array.from(collected.poets.values())
-    .filter(poet => poet.has_works)
+    .filter(poet => poet.has_works || poet.has_artwork)
     .map(poet => {
       return `https://kalliope.org/static/sitemaps/${poet.id}.xml`;
     })
@@ -2362,24 +2378,29 @@ const build_anniversaries_ical = collected => {
 
 const build_artwork = collected => {
   let collected_artwork = new Map(loadCachedJSON('collected.artwork') || []);
+  const force_reload = collected_artwork.size == 0;
+
   const doc = loadXMLDoc('data/poets.xml');
   doc.find('/persons/person').forEach(person => {
     const personId = person.attr('id').value();
     const personType = person.attr('type').value();
     const artworkFilename = `fdirs/${personId}/artwork.xml`;
-    if (personType === 'artist' && isFileModified(artworkFilename)) {
+    if (personType === 'artist' && (force_reload || isFileModified(artworkFilename))) {
       const artworksDoc = loadXMLDoc(artworkFilename);
       if (artworksDoc != null) {
         artworksDoc.find('//pictures/picture').forEach(picture => {
           const pictureId = safeGetAttr(picture, 'id');
-          const subjectId = safeGetAttr(picture, 'subject');
+          const subjectAttr = safeGetAttr(picture, 'subject');
+          let subjects = subjectAttr != null ? subjectAttr.split(',') : [];
+          const year = safeGetAttr(picture, 'year');          
           if (pictureId == null) {
             throw `fdirs/${personId}/artwork.xml har et billede uden id-attribut.`;
           }
-          if (subjectId != null) {
+          subjects.forEach(subjectId => {
             // Make sure we rebuild the affected bio page.
             markFileDirty(`fdirs/${subjectId}/portraits.xml`);
-          }
+          });
+
           const museumLink = build_museum_link(picture) || '';
           const artworkId = `${personId}/${pictureId}`;
           const content_raw =
@@ -2389,10 +2410,13 @@ const build_artwork = collected => {
               .replace('</picture>', '')
               .trim() + museumLink;
           const artworkJson = {
+            id: `${personId}/${pictureId}`,
             artistId: personId,
             lang: person.lang,
             src: `/static/images/${personId}/${pictureId}.jpg`,
             content_lang: 'da',
+            subjects,
+            year,
             content_raw,
             content_html: htmlToXml(content_raw, collected),
           };

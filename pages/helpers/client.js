@@ -96,6 +96,7 @@ export const work = async (
 type FetchWorksResult = Promise<{
   poet: Poet,
   works: Array<Work>,
+  artwork: Array<PictureItem>,
   error: ?Error,
 }>;
 export const works = async (poetId: PoetId): FetchWorksResult => {
