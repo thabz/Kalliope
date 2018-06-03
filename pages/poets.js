@@ -33,22 +33,25 @@ type GroupBy = 'name' | 'year';
 
 const groupsByLetter = (poets: Array<Poet>, lang: Lang) => {
   let groups = new Map();
-  poets.filter(p => p.type !== 'person').forEach(p => {
-    let key = _('Ukendt digter', lang);
-    if (p.name.lastname != null) {
-      key = p.name.lastname[0];
-    }
-    if (
-      key === 'A' &&
-      p.name.lastname != null &&
-      p.name.lastname.indexOf('Aa') === 0
-    ) {
-      key = 'Å';
-    }
-    let group = groups.get(key) || [];
-    group.push(p);
-    groups.set(key, group);
-  });
+  poets
+    .filter(p => p.type !== 'person')
+    .filter(p => p.type !== 'artist')
+    .forEach(p => {
+      let key = _('Ukendt digter', lang);
+      if (p.name.lastname != null) {
+        key = p.name.lastname[0];
+      }
+      if (
+        key === 'A' &&
+        p.name.lastname != null &&
+        p.name.lastname.indexOf('Aa') === 0
+      ) {
+        key = 'Å';
+      }
+      let group = groups.get(key) || [];
+      group.push(p);
+      groups.set(key, group);
+    });
   let sortedGroups = [];
   groups.forEach((group, key) => {
     sortedGroups.push({

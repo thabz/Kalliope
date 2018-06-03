@@ -45,8 +45,9 @@
      <html>Erik Klipping myrdes i Finderup Lade.</html>
    </entry>
    <entry date="1286-11-22" type="image">
-     <src>kunst/otto-bache-de-sammensvorne.jpg</src>
-     <html>Otto Bache: <i>De sammensvorne rider fra Finderup efter mordet på Erik Klipping Skt. Cæcilienat 1286</i>, olie på lærred, 1882. Det Nationalhistoriske Museum på Frederiksborg Slot.</html>
+       <picture src="kunst/otto-bache-de-sammensvorne.jpg">
+           Otto Bache: <i>De sammensvorne rider fra Finderup efter mordet på Erik Klipping Skt. Cæcilienat 1286</i>, olie på lærred, 1882. Det Nationalhistoriske Museum på Frederiksborg Slot.
+       </picture>
    </entry>
    <entry date="1337" type="text">
      <html>Hundredeårskrigen mellem Frankrig og England (1337-1453) bryder ud.</html>
@@ -159,8 +160,9 @@
        <html><a poet="shakespeare">Shakespeares</a> teater The Globe Playhouse åbner i London.</html>
    </entry>
    <entry date="1599" type="image">
-       <src>kunst/the-globe.jpg</src>
-     <html><i>Globe Theatre</i>, stik fra 1612. Yale Center for British Art.</html>
+       <picture src="kunst/the-globe.jpg">
+          <i>Globe Theatre</i>, stik fra 1612. Yale Center for British Art.
+       </picture>
    </entry>
    <entry date="1613" type="text">
      <html>Første tobakdyrkning i Englands nordamerikanske kolonier.</html>
@@ -214,8 +216,7 @@
      <html>Enevælde i Danmark-Norge indføres med Kongeloven.</html>
    </entry>
    <entry date="1660" type="image">
-     <src>kunst/eckersberg_frederik_iii_kongeloven.jpg</src>
-     <html>C. W. Eckersberg: <i>Frederik III, som lader udfærdige kongeloven ved Peder Schumacher sidenhen bekjendt under navnet <a poet="griffenfeld">Griffenfeldt</a></i>, 1824. Skitse til de store billeder malet til trongemakket på Christiansborg Slot.</html>
+       <picture ref="eckersberg/frederik3-kongeloven-1824" />
    </entry>
    <entry date="1665" type="text">
      <html>Sorø Akademi nedlægges.</html>
@@ -230,8 +231,9 @@
      <html>Brand i London.</html>
    </entry>
    <entry date="1666-09-04" type="image">
-     <src>kunst/great-fire-london.jpg</src>
-     <html>Anonymous: <i>The Great Fire of London</i>.</html>
+       <picture src="kunst/great-fire-london.jpg">
+         Anonymous: <i>The Great Fire of London</i>.
+       </picture>
    </entry>
    <entry date="1670" type="text">
      <html><a person="christian5">Christian V</a> (1646-1699) udråbes til konge.</html>
@@ -273,8 +275,9 @@
      <html>Danmark går over til den gregorianske kalender.</html>
    </entry>
    <entry date="1702" type="image">
-     <src>kunst/kneller_newton.jpg</src>
-     <html>Sir Godfrey Kneller: Portræt af Sir Isaac Newton, malet i år 1702.</html>
+       <picture src="kunst/kneller_newton.jpg">
+           Sir Godfrey Kneller: Portræt af Sir Isaac Newton, malet i år 1702.
+       </picture>
    </entry>
    <entry date="1711" type="text">
      <html>Byldepesten hærger hele Danmark og dræber bla. en trediedel af Københavns indbyggere.</html>
@@ -334,8 +337,7 @@
      <html><a person="struensee">Struensee</a> ved magten.</html>
    </entry>
    <entry date="1771" type="image">
-     <src>kunst/juel-struensee-oval.jpg</src>
-     <html>Jens Juel: <i>Johann Friedrich Struensee</i>, 1771. Schloss Celle.</html>
+       <picture ref="juel/struensee-1771-oval" />
    </entry>
    <entry date="1770-09-14" type="text">
      <html>Trykkefrihed indføres indtil censurens genindførelse 20/10 1773.</html>
@@ -359,8 +361,9 @@
      <html>Ophævelse af stavnsbåndet.</html>
    </entry>
    <entry date="1789-07-14" type="image">
-     <src>kunst/bastille.jpg</src>
-     <html>Jean-Pierre Houel: <i>Vue du siège et prise de la Bastille</i>.</html>
+       <picture src="kunst/bastille.jpg">
+         Jean-Pierre Houel: <i>Vue du siège et prise de la Bastille</i>.
+       </picture>
    </entry>
    <entry date="1789" type="text">
      <html>Den franske revolution (1789-1801).</html>
@@ -381,8 +384,9 @@
      <html><a poet="heibergpa">P. A. Heiberg</a> idømmes landsforvisning pga. artiklerne »Politisk Dispache« og »Sprog-Granskning«.</html>
    </entry>
    <entry date="1801-4-2" type="image">
-     <src>kunst/lorentzen_slaget_paa_rheden.jpg</src>
-     <html>C. A. Lorentzen: <i>Slaget paa Rheden 2. april 1801</i>, 1802, Frederiksborg Museum.</html>
+       <picture src="kunst/lorentzen_slaget_paa_rheden.jpg">
+         C. A. Lorentzen: <i>Slaget paa Rheden 2. april 1801</i>, 1802, Frederiksborg Museum.
+       </picture>
    </entry>
    <entry date="1802-12-15" type="text">
      <html>Oehlenschlägers <a work="oehlenschlaeger/1803">Digte</a> (1803) udkommer.</html>
@@ -394,9 +398,7 @@
      <html>København bombarderes af englænderne.</html>
    </entry>
    <entry date="1807-09-02" type="image">
-     <src>kunst/eckersberg-koebenhavn-i-brand.jpg</src>
-     <html>C.W. Eckersberg: <i>Københavns Bombardement</i>, 1807. Københavns Bymuseum.</html>
-     <!-- Ovenstående er Farvelagt stik af G.L. Lahde efter akvarel af C.W. Eckersberg -->
+       <picture ref="eckersberg/koebenhavns-bombardement-1807" />
    </entry>
    <entry date="1808" type="text">
      <html><a person="christian7">Christian VII</a> død. <a person="frederik6">Frederik VI</a> (1768-1839) som har haft regeringsmagten siden 1784, udråbes til konge.</html>
@@ -441,8 +443,7 @@
      <html>Friedrich Schlegel død i Dresden.</html>
    </entry>
    <entry date="1834" type="image">
-     <src>kunst/hansen_kronborg_slot_1834.jpg</src>
-     <html>Constantin Hansen: <i>Kronborg Slot</i>, 1834, Statens Museum for Kunst.</html>
+       <picture ref="hansenc/slottet-kronborg-1834" />
    </entry>
    <entry date="1837" type="text">
      <html>Morse perfektionerer telegrafen</html>
@@ -451,8 +452,7 @@
      <html>Victoria udråbes til dronning af England.</html>
    </entry>
    <entry date="1837" type="image">
-     <src>kunst/hansen_et_selskab_af_danske_kunstnere_i_rom.jpg</src>
-     <html>Constantin Hansen: <i>Et Selskab af danske Kunstnere i Rom</i>, 1837, 62×74cm, Statens Museum for Kunst.</html>
+       <picture ref="hansenc/et-selskab-af-danske-kunstnere-i-rom-1837" />
    </entry>
    <entry date="1838-9-17" type="text">
      <html>Thorvaldsen ankommer til København.</html>
@@ -485,8 +485,7 @@
      <html>Karl Marx udgiver <i>Det kom&#173;munis&#173;tiske Manifest</i>.</html>
    </entry>
    <entry date="1848-10-23" type="image">
-     <src>kunst/hansen_grundlovgivende_rigsforsamling.jpg</src>
-     <html>Constantin Hansen: <i>Den Grundlovgivende Rigsforsamling</i>, 1861-65, 338×500cm. Det Nationalhistoriske Museum på Frederiksborg Slot.</html>
+       <picture ref="hansenc/den-grundlovgivende-rigsforsamling-1861" />
    </entry>
    <entry date="1849-6-5" type="text">
      <html>Grundloven underskrives og træder i kraft.</html>
@@ -538,8 +537,9 @@
    </entry>
    <entry date="1871-11-04" type="image">
        <!-- Året er korrekt, men måned-dag er sat, så dette billede vises efter begivenheden om forelæsningerne -->
-     <src>kunst/slott-moeller-brandes.jpg</src>
-     <html>Harald Slott-Møller: <i>Georg Brandes på Universitetets talerstol</i>, 1889-90.</html>
+       <picture src="kunst/slott-moeller-brandes.jpg">
+          Harald Slott-Møller: <i>Georg Brandes på Universitetets talerstol</i>, 1889-90.
+       </picture>
    </entry>
    <entry date="1872-12-16" type="text">
      <html>Frederik Christian Sibbern død.</html>

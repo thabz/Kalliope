@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
-    Wilhelm Marstrand: <i>Portræt af Johanne Louise Heiberg</i>, 1859, olie på lærred, 196x102cm. Det Nationalhistoriske Museum, Frederiksborg Slot.
-  </picture>
+    <picture ref="marstrand/heibergjohanne-1859" primary="true" square-src="p1-square.jpg" /> 
 </pictures>
 
