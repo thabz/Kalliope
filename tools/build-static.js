@@ -256,6 +256,49 @@ const build_museum_link = picture => {
   }
 };
 
+const get_picture = (picture, srcPrefix, collected, onError) => {
+  const primary = safeGetAttr(picture, 'primary') == 'true';
+  let src = safeGetAttr(picture, 'src');
+  const ref = safeGetAttr(picture, 'ref');
+  const museumLink = build_museum_link(picture) || '';
+  if (src != null) {
+    const lang = safeGetAttr(picture, 'lang') || 'da';
+    if (src.charAt(0) !== '/') {
+      src = srcPrefix + '/' + src;
+    }
+    return {
+      lang,
+      src,
+      content_lang: 'da',
+      content_html: htmlToXml(
+        picture
+          .toString()
+          .replace(/<picture[^>]*?>/, '')
+          .replace('</picture>', '')
+          .trim() + museumLink,
+        collected
+      ),
+      primary,
+    };
+  } else if (ref != null) {
+    const artwork = collected.artwork.get(ref);
+    if (artwork == null) {
+      onError(`fandt en ref "${ref}" som ikke matcher noget kendt billede.`);
+    }
+    const artist = collected.poets.get(artwork.artistId);
+    const description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
+      artwork.content_raw
+    }`;
+    return {
+      lang: artwork.lang,
+      src: artwork.src,
+      content_lang: artwork.content_lang,
+      content_html: htmlToXml(description, collected),
+      primary,
+    };
+  }
+}
+
 const build_portraits_json = (poet, collected) => {
   let result = [];
   if (!poet.has_portraits) {
@@ -263,59 +306,24 @@ const build_portraits_json = (poet, collected) => {
   }
   const doc = loadXMLDoc(`fdirs/${poet.id}/portraits.xml`);
   if (doc != null) {
-    let primariesCount = 0;
-    result = doc.find('//pictures/picture').map(picture => {
-      const primary = safeGetAttr(picture, 'primary') == 'true';
-      if (primary) {
-        primariesCount += 1;
-      }
-      const src = safeGetAttr(picture, 'src');
-      const ref = safeGetAttr(picture, 'ref');
-      const museumLink = build_museum_link(picture) || '';
-      if (src != null) {
-        return {
-          lang: poet.lang,
-          src: `/static/images/${poet.id}/${src}`,
-          content_lang: 'da',
-          content_html: htmlToXml(
-            picture
-              .toString()
-              .replace(/<picture[^>]*?>/, '')
-              .replace('</picture>', '')
-              .trim() + museumLink,
-            collected
-          ),
-          primary,
-        };
-      } else if (ref != null) {
-        const artwork = collected.artwork.get(ref);
-        if (artwork == null) {
-          throw `fdirs/${
-            poet.id
-          }/portraits.xml har en ref "${ref}" som ikke matcher noget kendt billede.`;
-        }
-        const artist = collected.poets.get(artwork.artistId);
-        const description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
-          artwork.content_raw
-        }`;
-        return {
-          lang: artwork.lang,
-          src: artwork.src,
-          content_lang: artwork.content_lang,
-          content_html: htmlToXml(description, collected),
-          primary,
-        };
-      } else {
-        throw `fdirs/${
-          poet.id
-        }/portraits.xml har et billede uden src- eller ref-attribut.`;
-      }
-    });
-    if (primariesCount > 1) {
-      throw `fdirs/${poet.id}/portraits.xml har flere primary`;
+    onError = message => {
+      throw `fdirs/${
+        poet.id
+      }/portraits.xml: ${message}`;
     }
-    if (primariesCount == 0) {
-      throw `fdirs/${poet.id}/portraits.xml mangler primary`;
+    result = doc.find('//pictures/picture').map(picture => {
+      picture = get_picture(picture, `/static/images/${poet.id}`, collected, onError);
+      if (picture == null) {
+        onError("har et billede uden src- eller ref-attribut.");
+      }
+      return picture;
+    });
+    const primaries = result.filter(p => p.primary);
+    if (primaries.length > 1) {
+      onError("har flere primary");
+    }
+    if (primaries.length == 0) {
+      onError("mangler primary");
     }
   }
   return result;
@@ -569,28 +577,13 @@ const get_notes = (head, context = {}) => {
     };
   });
 };
-const get_pictures = (head, srcPrefix) => {
-  return head.find('pictures/picture').map(picture => {
-    let src = picture.attr('src').value();
-    const lang = picture.attr('lang') ? picture.attr('lang').value() : 'da';
-    const type = picture.attr('type') ? picture.attr('type').value() : null;
-    const invnr = safeGetAttr(picture, 'invnr');
-    const museumLink = build_museum_link(picture) || '';
-    if (src.charAt(0) !== '/') {
-      src = srcPrefix + '/' + src;
-    }
-    return {
-      src,
-      type,
-      content_lang: lang,
-      content_html: htmlToXml(
-        picture
-          .toString()
-          .replace(/<picture[^>]*>/, '')
-          .replace('</picture>', '') + museumLink,
-        collected
-      ),
-    };
+
+const get_pictures = (head, srcPrefix, xmlFilename, collected) => {
+  const onError = message => {
+    throw `${xmlFilename}: ${message}`;
+  };
+  return head.find('pictures/picture').map(p => {
+    return get_picture(p, srcPrefix, collected, onError);
   });
 };
 
@@ -771,7 +764,7 @@ const handle_text = (
       source,
       keywords: keywordsArray || [],
       refs: refsArray,
-      pictures: get_pictures(head, `/static/images/${poetId}`),
+      pictures: get_pictures(head, `/static/images/${poetId}`, `fdirs/${poetId}/${workId}.xml:${textId}`, collected),
       content_lang: poet.lang,
       content_html,
     },
@@ -904,7 +897,7 @@ const handle_work = work => {
 
   const workhead = work.get('workhead');
   const notes = get_notes(workhead);
-  const pictures = get_pictures(workhead, `/static/images/${poetId}`);
+  const pictures = get_pictures(workhead, `/static/images/${poetId}`, `fdirs/${poetId}/${workId}`, collected);
 
   const workbody = work.get('workbody');
   if (workbody == null) {
@@ -1393,7 +1386,7 @@ const build_works_toc = collected => {
 
     const workhead = work.get('workhead');
     const notes = get_notes(workhead);
-    const pictures = get_pictures(workhead, `/static/images/${poetId}`);
+    const pictures = get_pictures(workhead, `/static/images/${poetId}`, `fdirs/${poetId}/${workId}`, collected);
 
     const workbody = work.get('workbody');
     if (workbody == null) {
@@ -1592,7 +1585,7 @@ const build_keywords = () => {
           ? keyword.attr('draft').value() === 'true'
           : false;
       const title = head.get('title').text();
-      const pictures = get_pictures(head, '/static/images/keywords');
+      const pictures = get_pictures(head, '/static/images/keywords', path, collected);
       const author = safeGetText(head, 'author');
       const rawBody = body
         .toString()
@@ -1865,7 +1858,7 @@ const build_about_pages = collected => {
       const head = about.get('head');
       const body = about.get('body');
       const title = head.get('title').text();
-      const pictures = get_pictures(head, '/static/images/about');
+      const pictures = get_pictures(head, '/static/images/about', paths.xml, collected);
       const author = safeGetText(head, 'author');
       const poemsNum = Array.from(collected.texts.values())
         .map(t => (t.type === 'poem' ? 1 : 0))
