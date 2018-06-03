@@ -18,6 +18,7 @@ import ErrorPage from './error.js';
 import CommonData from './helpers/commondata.js';
 import type { Lang, Poet, Work, PictureItem, Error } from './helpers/types.js';
 import _ from '../pages/helpers/translations.js';
+import * as OpenGraph from './helpers/opengraph.js';
 
 type WorksListProps = {
   lang: Lang,
@@ -166,11 +167,23 @@ export default class extends React.Component<WorksProps> {
       return null;
     }
 
-    const title = <PoetName poet={poet} includePeriod />;
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
+
+    const ogDescription = 'Værker';
+    const ogImage = OpenGraph.poetImage(poet);
+    const ogTitle = poetNameString(poet, false, false);
+
+    const title = <PoetName poet={poet} includePeriod />;
+
     return (
       <div>
-        <Head headTitle={headTitle} requestPath={requestPath} />
+        <Head
+          headTitle={headTitle}
+          ogTitle={ogTitle}
+          ogImage={ogImage}
+          description={ogDescription}
+          requestPath={requestPath}
+        />
         <Main>
           <Nav lang={lang} poet={poet} title={_('Værker', lang)} />
           <Heading title={title} subtitle={_('Værker', lang)} />
