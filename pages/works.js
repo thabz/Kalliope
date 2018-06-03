@@ -78,18 +78,17 @@ class ArtworkList extends React.Component<ArtworkListProps> {
 
     const sortArtworks = artwork => {
       return artwork.sort((a, b) => {
-        if (a.year === b.year) {
-          return 0;
-        }
-        return a.year > b.year ? 1 : -1;
+        const aKey = a.year + a.src;
+        const bKey = b.year + b.src;
+        return aKey > bKey ? 1 : -1;
       });
     };
 
     const renderedList = sortArtworks(artwork).map((picture, i) => {
       return (
-        <div key={picture.src}>
+        <div key={'container-' + picture.src}>
           <Picture
-            key={'p' + picture.src}
+            key={'picture-' + picture.src}
             pictures={[picture]}
             contentLang={picture.content_lang || 'da'}
             lang={lang}

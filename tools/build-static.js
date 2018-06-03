@@ -2386,6 +2386,11 @@ const build_artwork = collected => {
     const personType = person.attr('type').value();
     const artworkFilename = `fdirs/${personId}/artwork.xml`;
     if (personType === 'artist' && (force_reload || isFileModified(artworkFilename))) {
+      // Fjern eksisterende fra cache (i tilfælde af id er slettet)
+      Array.from(collected_artwork.keys()).filter(k => k.indexOf(`${personId}/`) === 0).forEach(k => {
+        collected_artwork.delete(k);
+      });
+
       const artworksDoc = loadXMLDoc(artworkFilename);
       if (artworksDoc != null) {
         artworksDoc.find('//pictures/picture').forEach(picture => {
