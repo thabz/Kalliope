@@ -2,9 +2,7 @@
 <pictures>
   <picture src="p1.jpg">
   </picture>
-  <picture src="p2.jpg">
-    Albert Küchler: <i>H.C. Andersen</i>, Rom, januar 1834.
-  </picture>
+  <picture ref="kuchler/andersen-1834" />
   <picture ref="jensenca/andersen-1836" primary="true" square-src="p4-square.jpg" />
   <picture src="p5.jpg">
       Thora Hallager (1821-1884) (fotograf): <i>Hans Christian Andersen</i>, okt. 1869.
