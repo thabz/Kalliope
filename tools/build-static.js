@@ -95,24 +95,36 @@ const load_timeline = filename => {
   return doc.find('//events/entry').map(event => {
     const type = event.attr('type').value();
     const date = event.attr('date').value();
-    const html = event.get('html');
     let data = {
       date,
       type,
-      lang: 'da',
       is_history_item: true,
-      content_lang: 'da',
-      content_html: htmlToXml(
+    };
+    if (type === 'image') {
+      const onError = (message) => {
+        throw `${filename}: ${message}`;
+      }
+      const pictureNode = event.get('picture');
+      if (pictureNode == null) {
+        onError('indeholder event med type image uden <picture>')
+      }
+      const picture = get_picture(pictureNode, '/static', collected, onError);
+      data.src = picture.src;
+      data.content_lang = picture.content_lang;
+      data.lang = picture.lang;
+      data.content_html = picture.content_html;
+    } else {
+      data.content_lang = 'da';
+      data.lang = 'da';
+      const html = event.get('html');
+      data.content_html = htmlToXml(
         html
           .toString()
           .replace('<html>', '')
           .replace('</html>', '')
           .trim(),
         collected
-      ),
-    };
-    if (type === 'image') {
-      data.src = '/static/' + event.get('src').text();
+      );
     }
     return data;
   });
@@ -281,9 +293,12 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
       primary,
     };
   } else if (ref != null) {
+    if (ref.indexOf("/") === -1) {
+      onError(`fandt en ulovlig ref "${ref}" uden mappe-angivelse`);
+    }
     const artwork = collected.artwork.get(ref);
     if (artwork == null) {
-      onError(`fandt en ref "${ref}" som ikke matcher noget kendt billede.`);
+        onError(`fandt en ref "${ref}" som ikke matcher noget kendt billede.`);
     }
     const artist = collected.poets.get(artwork.artistId);
     const description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
