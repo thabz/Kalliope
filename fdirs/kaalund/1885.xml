@@ -1,33 +1,54 @@
-KILDE:H.V. Kaalund: <i>Efterladte Digte</i>, Otto Borchsenius (red.), Gyldendalske Boghandels Forlag, Kbh., 1885.
-DIGTER:kaalund
-FACSIMILE:11530807127D_color
-FACSIMILE-SIDER:182
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="1885" author="kaalund" status="complete" type="poetry">
+<workhead>
+    <title>Efterladte Digte</title>
+    <year>1885</year>
+    <notes>
+        <note>Teksten følger H.V. Kaalund: <i>Efterladte Digte</i>, Otto Borchsenius (red.), Gyldendalske Boghandels Forlag, Kbh., 1885.</note>
+    </notes>
+    <pictures>
+        <picture src="1885-p1.jpg">Titelbladet til <i>Efterladte Digte</i> (1885) lyder ,,H. V. Kaalund. / Efterladte Digte. / udgivne af / Otto Borchsenius. // Kjøbenhavn. / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn). / Fr. Bagges Bogtrykkeri. / 1885.''</picture>
+    </pictures>
+    <source facsimile="11530807127D_color" facsimile-pages-num="182" facsimile-pages-offset="14">H.V. Kaalund: <i>Efterladte Digte</i>, Otto Borchsenius (red.), Gyldendalske Boghandels Forlag, Kbh., 1885.</source>
+</workhead>
+<workbody>
 
-T:I Grevinde Dannemands Stambog
-F:Endskjøndt min Aand har et sværmerisk Sving
-SIDE:v
-
+<poem id="kaalund2018060401">
+<head>
+    <title>I Grevinde Dannemands Stambog</title>
+    <firstline>Endskjøndt min Aand har et sværmerisk Sving</firstline>
+    <source pages="v" facsimile-pages="13" />
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Endskjøndt min Aand har et sværmerisk Sving
 gjør mit Lune dog lystige Bukkespring. -
 Her ser De et Billed, min ædle Grevinde,
 af Englens og Satyrens Leg derinde.
+</body>
+</poem>
 
+<poem id="kaalund2003050401">
+<head>
+    <title>En aaben Hilsen til Holger Drachmann</title>
+    <firstline>Fra Mastetoppen de raabte: Land</firstline>
+    <notes>
+        <note>Mottoet er fra Drachmanns <xref poem="drachmann1999052206,12-18"/>.</note>
+    </notes>
+    <source pages="1-14"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+                       <nonum><small>,,Hvergang med opspilet Mund Du ruller</small></nonum>
+                       <nonum><small>Og truer og raaber: nu kommer jeg, nu!</small></nonum>
+                       <nonum><small>Saa trækker jeg tavst paa min Skulder.</small></nonum>
 
-T:En aaben Hilsen til Holger Drachmann
-F:Fra Mastetoppen de raabte: Land
-SIDE:1-14
-NOTE:Mottoet er fra Drachmanns <xref poem="drachmann1999052206,12-18"/>.
-ID:kaalund2003050401
-
-                       <small>,,Hvergang med opspilet Mund Du ruller</small>
-                       <small>Og truer og raaber: nu kommer jeg, nu!</small>
-                       <small>Saa trækker jeg tavst paa min Skulder.</small>
-
-                       <small>Din evige Ungdom, din evige Styrke,</small>
-                       <small>Den vil jeg hædre og den vil jeg dyrke;</small>
-                       <small>Men Braget, hvormed Du i Striden bryder,</small>
-                       <small>Tillad mig, o Hav, som Svaghed jeg tyder!''</small>
-                       <small>    <sc>Holger Drachmann</sc>: ,,Sange ved Havet''.</small>
+                       <nonum><small>Din evige Ungdom, din evige Styrke,</small></nonum>
+                       <nonum><small>Den vil jeg hædre og den vil jeg dyrke;</small></nonum>
+                       <nonum><small>Men Braget, hvormed Du i Striden bryder,</small></nonum>
+                       <nonum><small>Tillad mig, o Hav, som Svaghed jeg tyder!''</small></nonum>
+                       <nonum><small>    <sc>Holger Drachmann</sc>: ,,Sange ved Havet''.</small></nonum>
 
 Fra Mastetoppen de raabte: <i>Land,</i>
 <i>Den nye Verden!</i> - Ja vist: der laa den
@@ -231,7 +252,7 @@ da voxer Du selv og din Ære!
 En Spillemand er jeg ligesom Du,
 graanet, men ung i min Sjæl endnu;
         - om jeg er en Fusker i Faget,
-		skal kjendes paa Harpeslaget.
+        skal kjendes paa Harpeslaget.
 Har jeg saaret din Stolthed, min stærke Ven,
 saa er Du jo Mand for at slaa igjen -
         jeg under Dig Overtaget!
@@ -241,24 +262,29 @@ som om mine Støvler var Mocassiner,
 fordret en Verden for min Person;
 men Livet lærte mig Resignation.
         Dog hørte Du ikke mig klynke,
-		selv, naar jeg var nær ved at synke.
+        selv, naar jeg var nær ved at synke.
 Gud ské Lov: jeg fandt i mig selv en Bund!
 Er den lille, den er dog min egen Grund.
 Er Du en Havørn og jeg kun Bien,
 gaar din Bane vældig i Periferien:
         <i>Et</i> har for Dig jeg dog forud haft
-		og det er den midtpunktsøgende Kraft -
-		i Livet som i Poesien!
+        og det er den midtpunktsøgende Kraft -
+        i Livet som i Poesien!
 
                    <small><w>Vridsløselille</w>, den 22de Februar 1878.</small>
+</body>
+</poem>
 
-
-T:Brændende Spørgsmål
-U:(Marts 1879)
-F:Lakker det mod Nedgang? Ganger det paa Hæld?
-SIDE:15-31
-N:byron,shelley,shakespeare
-ID:kaalund2001061301a
+<poem id="kaalund2001061301a">
+<head>
+    <title>Brændende Spørgsmål</title>
+    <subtitle>(Marts 1879)</subtitle>
+    <firstline>Lakker det mod Nedgang? Ganger det paa Hæld?</firstline>
+    <source pages="15-31"/>
+    <keywords>byron,shelley,shakespeare</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 <!-- Mottoet stammer tilsyneladende fra en alternativ udgave af brorson1765a17 -->
 
       ,,Høsttiden endtes, her maa da ventes,
@@ -555,22 +581,31 @@ Gjennem Strid kun gaar Vejen til Maalet!
 TOCTITEL:Foreløbigt Gjensvar til Digteren S. Schandorph
 INDEXTITEL:Foreløbigt Gjensvar til Digteren S. Schandorph
 LINKTITEL:Foreløbigt Gjensvar til Digteren S. Schandorph
-T:Foreløbigt Gjensvar
-U:til min Ven
-U:Digteren S. Schandorph
-U:(Marts 1879)
-F:Fyndigt, men kjærligt har Du svaret mig, Ven
-SIDE:32-37
-N:schandorph
+</body>
+</poem>
 
+<poem id="kaalund2018060404">
+<head>
+    <title>Foreløbigt Gjensvar</title>
+    <subtitle>
+        <line>til min Ven</line>
+        <line>Digteren S. Schandorph</line>
+        <line>(Marts 1879)</line>
+    </subtitle>
+    <firstline>Fyndigt, men kjærligt har Du svaret mig, Ven</firstline>
+    <source pages="32-37"/>
+    <keywords>schandorph</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Fyndigt, men kjærligt har Du svaret mig, Ven;
 stærke Strænge i mit Indre har du bragt til at dirre!
 Haandtrykket giver jeg varmt Dig igjen!
-- _Dig_ kunde altsaa min Barskhed ej tirre:
+- <i>Dig</i> kunde altsaa min Barskhed ej tirre:
 sjelden sidder Hjertet saa højt nu hos Mænd!
 Tak for hvert dygtigt Ord, Du har mig sagt, -
 for dit Haab: at aldrig min Fortid jeg svigter -
-- _mest_ dog for den Hyldest, Du har Mennesket bragt!
+- <i>mest</i> dog for den Hyldest, Du har Mennesket bragt!
 - jeg er Menneske mer, end jeg er Digter!
 
 Sandheden søge vi jo Begge at naa. -
@@ -595,7 +630,7 @@ den Gladeste mellem de Glade.
 hørte Kjærnerne rasle saa forjættende derinde,
 mens jeg bøjed mig modig for Erfaringens Tugt -
 er jeg bleven tilbage for min Tid paa dens Flugt?
-- _Bleven Fremskridtets - Ungdommens Fjende?_
+- <i>Bleven Fremskridtets - Ungdommens Fjende?</i>
 
 Ve mig! - ja ve mig, ifald det var saa!
 Da var jeg i Kampen, jeg har rejst nu, den Lille.
@@ -633,7 +668,7 @@ fordrer her i Livet noget Andet og Mér
 deres fattige Skjærv til Fremtidens Tempel.
 Arbejdet er saa forunderligt fordelt.
 Oversaa vi Livet fra Højderne helt,
-_da_ fandt vel hver Enkelt sit Modlod i Vægten
+<i>da</i> fandt vel hver Enkelt sit Modlod i Vægten
 til Held for Balancen i Menneskeslægten.
 
     Er jeg dit Modlod og vippes jeg op,
@@ -646,16 +681,24 @@ haardt har jeg sat alt dit Venskab paa Prøve, -
 prægtigt Du bestod den, - Du stred som en Løve!
                 Sligt kan vi behøve
 nu i denne tunge, ufordragelige Tid!
+</body>
+</poem>
 
-T:Idealitet og Realitet
-U:Redegjørelse og slutteligt Gjensvar
-U:til
-U:Digteren Dr. phil. S. Schandorph
-U:(Maj 1879)
-F:Har jeg tøvet forlænge? Kommer jeg forsilde?
-SIDE:38-54
-N:schandorph,holberg,byron,shakespeare
-
+<poem id="kaalund2018060405">
+<head>
+    <title>Idealitet og Realitet</title>
+    <subtitle>
+        <line>Redegjørelse og slutteligt Gjensvar</line>
+        <line>til</line>
+        <line>Digteren Dr. phil. S. Schandorph</line>
+        <line>(Maj 1879)</line>
+    </subtitle>
+    <firstline>Har jeg tøvet forlænge? Kommer jeg forsilde?</firstline>
+    <source pages="38-54"/>
+    <keywords>schandorph,holberg,byron,shakespeare</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Har jeg tøvet forlænge? Kommer jeg forsilde?
 Troede man mig vaklende - muligvis slagen?
 Husk: jeg er Andet end Stridsmand for Smagen,
@@ -681,22 +724,22 @@ Nej: højere tilvejrs vil jeg prøve Dig at svinge!
 Endnu har jo ej Du tvunget mig i Knæ!
 
 Tappert har du søgt at parere det Slag,
-som jeg slog Realismens _Fantaster_ i Planeten:
-_Dem_, som mangler Syn for det Kaos, der er bag.
+som jeg slog Realismens <i>Fantaster</i> i Planeten:
+<i>Dem</i>, som mangler Syn for det Kaos, der er bag.
 Paa den selv, som Du véd, har jeg aldrig kastet Vrag.
-- Verdenskampens Alvor! - _naar har jeg belét den?_
+- Verdenskampens Alvor! - <i>naar har jeg belét den?</i>
 Jeg har rejst kun paany den ældgamle Sag:
-    _Idealet contra Realiteten!_
+    <i>Idealet contra Realiteten!</i>
 
 Dommen i højeste, sidste Instans -
 ak, Gud hjælpe os! Længe skal der grubles og drømmes,
 og kæmpes og lides, før der sluttelig dømmes,
 før Sandheden viser sig i hele sin Glans!
 - Vi er Digtere kun, - vi følge vor Mission:
-Vi vil _overbevise_, - lad de Andre bevise
+Vi vil <i>overbevise</i>, - lad de Andre bevise
 og synge deres evige prosaiske Vise:
 »Hvad nytter Eders Blomster? Vi kan dem ikke spise.«
-Vi holde os oppe i _vor_ Region;
+Vi holde os oppe i <i>vor</i> Region;
 kappes om, hvor langt vore Stemmer kan række;
 tale til vor Tid af vor fulde Person
 og lytte til det Ekko, vi vække!
@@ -712,7 +755,7 @@ omfatter Smagen - Livssynet - Bunden -
 peger op imod Himlen og ned imod Jord.
 Ikke sandt? Vi maa tage den fra Grunden!
 
-Hvad forstaar Du nu først ved _Realitet?_
+Hvad forstaar Du nu først ved <i>Realitet?</i>
 Hold dette mit Digt mod Tippen af din Næse,
 saa skeler dine Øjne - Du kan slet Intet læse.
 - Saa gaar det jo i Livet, min kjære Poet,
@@ -721,7 +764,7 @@ Alle vil de dø paa, deres Syn er det rigtige;
 Ingen er saa sikre som de Selvkloge - Vigtige.
 Hvad, der gjælder om Regnbuen gjælder om Mér:
 det Sete beror paa Øjet, der ser.
-_Tingen er Tingen_, - men Standpunktet - Smagen
+<i>Tingen er Tingen</i>, - men Standpunktet - Smagen
 Stemningen - Kundskaben ændrer dog Sagen.
 Virkeligheden, som synes saa klar,
 holder dog de klogeste Høns tidt for Nar;
@@ -730,8 +773,8 @@ maa den opfattes dog og spejle sig i Aanden.
 - Hvad En har beundret, har en Anden belét!
 
 Alt, hvad Du sanser, er jo Led kun og Dele:
-_Brøker_, som skal stemme i din Sjæl med et Hele!
-_Samler dit Aands spejl? - eller viser det spredt?_
+<i>Brøker</i>, som skal stemme i din Sjæl med et Hele!
+<i>Samler dit Aands spejl? - eller viser det spredt?</i>
 Faar det os Andre maaske til at skele?
 Eller giver det kun, almindeligt fladt,
 en sjælløs Reflex som Spejlet i din Stue
@@ -748,7 +791,7 @@ naar Virkeligheden som den ægte Poesi
 og hvad Herligt de har frembragt tilskamme!
 
 Det mener du ej! jeg véd det jo godt:
-Du er _virkelig_ Digter, - ej _Virkeligheds’_ blot!
+Du er <i>virkelig</i> Digter, - ej <i>Virkeligheds’</i> blot!
 Du vil frem med din Tid; Du føler dens Gjæring,
     har ingen Ro
 til at sidde og visne af aandelig Tæring;
@@ -774,8 +817,8 @@ synes mig at smage af lidt Affektation.
 Ak nej! Du kjender mit, Du har set jo dets Mur,
     Bag dets smedede Gitter
 ligger der en mærkelig Verden paa Lur.
-_Jeg_ kan ogsaa tale med om Menneskenatur,
-  om »Ordens«- og - _Uordens_banditter!
+<i>Jeg</i> kan ogsaa tale med om Menneskenatur,
+  om »Ordens«- og - <i>Uordens</i>banditter!
 
 Øs kun af Livets evige Væld!
 Der er nok til os og de ufødte Slægter.
@@ -794,10 +837,10 @@ Prøve sig selv er det Første, der bør gjøres!
 - Spørgsmaalet viser baade udad og ind;
 Verden, den ydre, og den i vort Sind
 er to Magter, som begge maa høres.
-Den _ydre_ er stærkest, mod den er vi smaa;
+Den <i>ydre</i> er stærkest, mod den er vi smaa;
 den er til uden os - det føle vi Alle;
-_dog_ holde vi paa den, som skulde den falde!
-Det er _den_, som de Fleste forløfte sig paa!
+<i>dog</i> holde vi paa den, som skulde den falde!
+Det er <i>den</i>, som de Fleste forløfte sig paa!
 Nogle bli’er Krøblinge - Andre bli’er trætte -
 Peer bli’er Filister og Povel Fantast. -
     Finde det Rette,
@@ -814,19 +857,19 @@ for Modens Triumfvogn eller spænde som Du
 mig som Stanghest for det, de kalde Fremtidspoesien,
 før jeg véd, hvilken Aand der er i’en!
 
-    _Er den god eller slet?_
+    <i>Er den god eller slet?</i>
 Dette »brændende Spørgsmaal« har Du taget for let.
-,,Hvor Livet er, er Retten!'' - Skal _det_ være Svaret?
+,,Hvor Livet er, er Retten!'' - Skal <i>det</i> være Svaret?
 Hvad strides vi da om? - Saa er Alt jo forklaret;
-_saa_ har jo de «bismarckske Kanoner» havt Ret!
+<i>saa</i> har jo de «bismarckske Kanoner» havt Ret!
     Mongoler og Vandaler
 og alt det Barbari, der har plaget vor Jord
 og spyttet og trampet paa Moral og Idealer,
 har det smukkeste Valgsprog i disse dine Ord!
 Under dem kan jo Ukrudtet brede sig mægtigt,
 - under dem er vi fortabt og kan strax række Hals!
-_Hvor Livet er, er Retten!_ hvor tordnedes det vægtigt
-ved _Sveaborg, Sadowa_, ved _Dybbøl_ og _Als!!_
+<i>Hvor Livet er, er Retten!</i> hvor tordnedes det vægtigt
+ved <i>Sveaborg, Sadowa</i>, ved <i>Dybbøl</i> og <i>Als!!</i>
 
 Synes Dig Kulturen et fortsat Sejerstog
 stadig op ad Bakke mod Frihed og Lykke?
@@ -839,8 +882,8 @@ Har du Øre alene for Befrielsens Sang?
 Har du aldrig selv følt Skoen at trykke?
 
   Regn ej med Mennesker, som de var Tal!
-Det er «Menneskers dyre Liv», det just gjælder! 
-Aldrig har jeg talt, som om Verden stod for Fald; 
+Det er «Menneskers dyre Liv», det just gjælder!
+Aldrig har jeg talt, som om Verden stod for Fald;
 jeg har spurgt kun: om Dagen ej hælder?
 Sol vil atter lyse! - men lang er mangen Nat,
 Vinter i Naturen følger efter Sommer;
@@ -852,7 +895,7 @@ Mit Haab om Lysets Sejr er ej mindre end dit.
 Om Maalet, jeg tror, er vi enige i Grunden;
 - om Midlerne? Nej! Jeg siger det frit:
 I sætte Basunerne for ofte til Munden.
-Ouverturen selv til _Faust_ kan man høre for tidt!
+Ouverturen selv til <i>Faust</i> kan man høre for tidt!
 
   Jeg har vovet at dømme paa menneskelig Vis,
 maaske noget vel »kategorisk og fyndigt«;
@@ -863,8 +906,8 @@ i Kulturlivets Centrum: det glimrende Paris.
 Mit eneste Mandat og Fuldmagtsbevis
 til at tale, er det, jeg præstered.
 Er det sandt: jeg har Vinger paa Hat og paa Hæl,
-saa takker jeg ham, der har skjærmet min Sjæl 
-og indblæst sin Aande i Leret! 
+saa takker jeg ham, der har skjærmet min Sjæl
+og indblæst sin Aande i Leret!
 
   Saalænge jeg ejer af Digterild en Gnist,
 vil jeg værge Idealet af min yderste Evne.
@@ -885,18 +928,18 @@ hvor straaler den ej høj bag Aristophanes’ Spot!
 og vendte mig vred mod «det, jeg fandt raat».
 
 Om Byron har jeg sagt jo det samme som Du.-
-Der var _Trods_ i hans Sange, der var _Tvivl_, der var <b>Gru</b>;
+Der var <i>Trods</i> i hans Sange, der var <i>Tvivl</i>, der var <b>Gru</b>;
 men Du glemte hvad jeg skrev om hans Smerte.
 Jeg har læst hans Don Juan, hans Manfred og Kajn,
-men _over_ dem lyste Poesiens Himmeltegn,
-og _i_ dem hans store, stolte Hjerte!
+men <i>over</i> dem lyste Poesiens Himmeltegn,
+og <i>i</i> dem hans store, stolte Hjerte!
 
-Husk vel: Det var under ,,_den evige Fred_'',
+Husk vel: Det var under ,,<i>den evige Fred</i>'',
 at han: Philhelleneren - Frihedsmanden -
-_Aristokrat_ til hver Tomme og Led,
-skjød Britaniens ,,_cant_'' sine Pile i Panden.
+<i>Aristokrat</i> til hver Tomme og Led,
+skjød Britaniens ,,<i>cant</i>'' sine Pile i Panden.
 Regn Du ham kun til hans Tids Realister:
-_Digter_ var han først, <b>Romantiker</b> med!
+<i>Digter</i> var han først, <b>Romantiker</b> med!
 - Hvis Logik mon det er nu, som brister?
 
 Han beviser just, Ven, hvad Shakspeare end mer
@@ -908,13 +951,13 @@ Intet er for simpelt, Intet for raat,
 Alvor og Spøg og Sværmeri og Spot
     tumler sig i Dansen!
 Stort bliver større og Intet for smaat!
-_William Shakspeare, Dig tilkommer Kransen!_
+<i>William Shakspeare, Dig tilkommer Kransen!</i>
 
 Du tror «paa Naturens uendelige Kraft»!
 Som de gamle Ægyptere troede paa Nilen!
-(De tilbad jo ogsaa engang Krokodillen.) 
-Nej, kjæreste Ven, paa _det_ Kosteskaft
-vil jeg ikke ride med! - Jeg gaar til _Kilden!_
+(De tilbad jo ogsaa engang Krokodillen.)
+Nej, kjæreste Ven, paa <i>det</i> Kosteskaft
+vil jeg ikke ride med! - Jeg gaar til <i>Kilden!</i>
 
   Aldrig har jeg gjort Naturen til min Gud.
 Jeg har drømt, jeg har anet en højere Orden,
@@ -922,32 +965,38 @@ Jeg har drømt, jeg har anet en højere Orden,
 krymped sig i Smerte, mig minded om dens Brud! /
 - Den moderlige Isis med de tusinde Bryster
 og den yppige Lotusblomst i sin Haand
-    har _Forraadnelsen_ til Søster,
+    har <i>Forraadnelsen</i> til Søster,
       giver ej vor Aand
 det Svar, som frelser og trøster!
 Skarabæen, der ruller mellem sine Ben
 Solkuglen, - ja selv den store Osiris:
 Solguden selv er saa kold som en Sten.
-Kun _han_, der har givet vort Øje en Iris,
-der trækker sig sammen for _altformeget_ Lys,
+Kun <i>han</i>, der har givet vort Øje en Iris,
+der trækker sig sammen for <i>altformeget</i> Lys,
 kan løse os Gaaden og frelse fra det Gys,
     der gaar gjennem Livet
 og sukker gjennem os, som gjennem Sivet!
 Du spørger, hvad jeg tror paa? Nu vel! det maa ud:
-_paa Frihedens Sejr, men gjennem Personen_, -
-_paa den_ <b>største</b>, som vandtes igjennem Tornekronen, -
-    _paa de ti Mosebud_, -
-_og paa_ <b>ham</b>, _som kun kan læge denne Verdens dybe Brud:_
+<i>paa Frihedens Sejr, men gjennem Personen</i>, -
+<i>paa den</i> <b>største</b>, som vandtes igjennem Tornekronen, -
+    <i>paa de ti Mosebud</i>, -
+<i>og paa</i> <b>ham</b>, <i>som kun kan læge denne Verdens dybe Brud:</i>
     <b>Den almægtige Gud</b>,
 som hverken Prometheus, Dr. Faust ellei Fanden,
     endsige nogen Anden
 ved Hjælp af den Praas, man kalder Menneskeforstanden,
     har stødt eller støder fra Thronen!
+</body>
+</poem>
 
-T:Til den yngre Slægt
-F:Hvad er det, jeg hører? Der lyder jo Raab
-SIDE:55-58
-
+<poem id="kaalund2018060406">
+<head>
+    <title>Til den yngre Slægt</title>
+    <firstline>Hvad er det, jeg hører? Der lyder jo Raab</firstline>
+    <source pages="55-58"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hvad er det, jeg hører? Der lyder jo Raab
    som med «Levende Rejer!»
 Er det Foraar? Nej! det er «Danmarks Haab»,
@@ -977,7 +1026,7 @@ Husk: Rovdyret ligger bag os paa Lur
 
 De Gode sørger, de Kaade lér;
    selv prøvede Venner
-har ondt ved at række hinanden mer 
+har ondt ved at række hinanden mer
    de frelsende Hænder,
 Had koger op nu og afføder Had,
    de Stærkeste famle.
@@ -998,9 +1047,9 @@ Ja nu vil her blive Dyrtid paa Mænd,
 hvis Arme har Kraft til at holde igjen
    paa løbske Heste.
 I Unge, der rives af Farten hen -
-   _Vár Jer, I Bedste!_
+   <i>Vár Jer, I Bedste!</i>
 Jeg har levet min Tid, men er Ungdommens Ven -
-   _Vár Jer, - for Skridtet - det næste!_
+   <i>Vár Jer, - for Skridtet - det næste!</i>
 
 ----
 
@@ -1013,12 +1062,19 @@ Der er Lavtryk i Luften - farlige Tegn
 da Fler end vi Gamle skal fejes afvejen.
    Husk - Fremtiden! - Dommen!
 
-     {s:Nytaarsaften 1879.}
+<nonum><small>Nytaarsaften 1879.</small></nonum>
+</body>
+</poem>
 
-T:Fantasien
-F:Skjønne Fantasi
-SIDE:59-60
-
+<poem id="kaalund2018060407">
+<head>
+    <title>Fantasien</title>
+    <subtitle>(November 1880)</subtitle>
+    <firstline>Skjønne Fantasi</firstline>
+    <source pages="59-60"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
    Skjønne Fantasi,
 forgylder Du ej længer den Fattiges Hytte?
    Er din Tryllemagt forbi?
@@ -1036,15 +1092,21 @@ Oplad for det Skjønne i Verden vort Syn!
 Lær os at elske, saa Øjnene lyse!
    Tænd med dit Lyn
 en Flamme i de Sjæle, som fryse!
+</body>
+</poem>
 
-T:Ved Aarsskiftet 1880-1881
-F:Snart rinder Aarets sidste Time ud
-SIDE:61-65
-
+<poem id="kaalund2018060408">
+<head>
+    <title>Ved Aarsskiftet 1880-1881</title>
+    <firstline>Snart rinder Aarets sidste Time ud</firstline>
+    <source pages="61-65"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Snart rinder Aarets sidste Time ud;
 atter skal de lyde, af Vindene baarne,
 de gamle Koraler med det festlige Bud:
-_Et Nytaar er oprundet! Pris være Gud!_
+<i>Et Nytaar er oprundet! Pris være Gud!</i>
 Basunerne skal hilse det fra vore Taarne.
 Vi Ældre, vi gribes saa sært af det Ny -
 Livet er saa kort; dog lad Aarene ile:
@@ -1087,7 +1149,7 @@ Stærk i min Tro paa Sandhedens Sejr,
 trodser jeg Meningers skiftende Vejr:
 Livet maa fremad paa sin knudrede Bane!
 Mægtige Ting i min Tid er der skét; -
-_nu_, af mit Slægtled som En af de Sidste,
+<i>nu</i>, af mit Slægtled som En af de Sidste,
 staar jeg med Tak for, hvad Stort jeg har sét.
     Ogsaaa jeg er Profet:
 Baandet mellem Jord og Himmel skal ej briste!
@@ -1105,8 +1167,8 @@ til dens hellige Modermælk vi trænger!
 Følg mig, I Gamle, saa Mange som I kan!
 Udvid ej Kløften! forøg ikke Hadet!
 Det er Ungdommens Kraft, som skal frelse vort Land,
-_den_ er Fremtidens Marv; skal i Nød holde Stand;
-_den_ skal vende i vor Krønike Bladet!
+<i>den</i> er Fremtidens Marv; skal i Nød holde Stand;
+<i>den</i> skal vende i vor Krønike Bladet!
 Ogsaa vi har jo gjæret og sydet engang
 og styret, som der altid var Medbør i Sejlet.
 Det er Livsmod og Marv, hvortil vi har Trang,
@@ -1117,19 +1179,25 @@ Mod da, min Sjæl! Du har fulgt din Mission,
 selv om din Gjerning var ydmyg og lille.
 Brød jeg ingen Bane, blev jeg Epigon -
 hvad bekymrer det mig: Jeg har frelst min Person,
-- til Sangens Vaar, _dér_ kom jeg forsilde.
+- til Sangens Vaar, <i>dér</i> kom jeg forsilde.
 Jeg sang dog om det Liv, der ej skal forgaa,
 saa frejdig som Lærken, før Vinteren er omme;
     bygged med i det Smaa
 paa den skjønnere Verden, som skal komme!
 
-    {s:Den 21 December 1880.}
+<nonum><small>Den 21 December 1880.</small></nonum>
+</body>
+</poem>
 
-T:Et Smæk
-U:(1881)
-F:De te sig som Gale
-SIDE:66-67
-
+<poem id="kaalund2018060409">
+<head>
+    <title>Et Smæk</title>
+    <subtitle>(1881)</subtitle>
+    <firstline>De te sig som Gale</firstline>
+    <source pages="66-67"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 De te sig som Gale
 for at overgaa hinanden
 og blive originale -
@@ -1147,12 +1215,18 @@ Notabene: hos Næsten.
 Gud naade ham for Kuren!
 - Jeg er ellers forresten
 godmodig af Naturen.
+</body>
+</poem>
 
-T:En lille Udladning
-U:(Oktober 1881)
-F:Endskjøndt jeg er bleven maaské lidt for sat
-SIDE:68-69
-
+<poem id="kaalund2018060410">
+<head>
+    <title>En lille Udladning</title>
+    <subtitle>(Oktober 1881)</subtitle>
+    <firstline>Endskjøndt jeg er bleven maaské lidt for sat</firstline>
+    <source pages="68-69"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Endskjøndt jeg er bleven maaské lidt for sat
     med Aarene
 og lader mig stryge, tam som en Kat,
@@ -1170,12 +1244,18 @@ Jeg vil klappe og slaa, være Skjælm og Profet
     til jeg brændes til Aske.
 Jeg er ladet endnu med Elektricitet
     som en Leydnerflaske.
+</body>
+</poem>
 
-T:En Tidssol har jeg sét -
-U:(December 1881)
-F:En Tidssol har jeg sét i Nedgangen gløde
-SIDE:70-71
-
+<poem id="kaalund2018060411">
+<head>
+    <title>En Tidssol har jeg sét -</title>
+    <subtitle>(December 1881)</subtitle>
+    <firstline>En Tidssol har jeg sét i Nedgangen gløde</firstline>
+    <source pages="70-71"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En Tidssol har jeg sét i Nedgangen gløde,
 sét en Verdensboble glimre - og briste!
 - Feerne er døde - Englene døde -
@@ -1185,7 +1265,7 @@ Vingerne faldne af den sidste!
 
 
 Og den voxer omkring os den manende Skygge
-med isnende Mistvivl og Længsel. 
+med isnende Mistvivl og Længsel.
 Der er Skrig omkring os efter Menneskelykke,
 der er Kiv og rasende Trængsel.
 
@@ -1214,17 +1294,22 @@ thi jeg skimter den Bred, hvor de Frelste skal lande
 hinsides de knusende Domme,
 
 og det, som nu gjør Hjerterne tomme!
+</body>
+</poem>
 
-
-T:Du Menneskebarn, som bryster Dig stolt -
-U:(Oktober 1878).
-F:Du Menneskebarn, som bryster Dig stolt
-SIDE:72-73
-
+<poem id="kaalund2018060412">
+<head>
+    <title>Du Menneskebarn, som bryster Dig stolt -</title>
+    <subtitle>(Oktober 1878).</subtitle>
+    <firstline>Du Menneskebarn, som bryster Dig stolt</firstline>
+    <source pages="72-73"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du Menneskebarn, som bryster Dig stolt
 af din kløgtige Aand, din oprejste Gang,
 er dit Hjerte for Dyrenes Lidelser koldt,
-har Du selv dem sløv eller grusom forvoldt, 
+har Du selv dem sløv eller grusom forvoldt,
 da fortjener Du ikke din Menneskerang,
 da har Du ej Del i det Adelsbrev,
 som ved Slægtens Vugge din Skaber skrev;
@@ -1246,12 +1331,18 @@ da har vi annammet den store Lære,
 der fast skal staa, medens Tiderne gaa:
 Hvad Godt Du gjør mod de Ringe og Smaa,
 det skal Frugter i Tusendfold bære.]
+</body>
+</poem>
 
-T:Til Otto Haslunds Billeder af Hestens Liv
-U:(I «Ude og Hjemme» Januar 1879)
-F:Gav Du paa Livet Agt
-SIDE:74-79
-
+<poem id="kaalund2018060413">
+<head>
+    <title>Til Otto Haslunds Billeder af Hestens Liv</title>
+    <subtitle>(I «Ude og Hjemme» Januar 1879)</subtitle>
+    <firstline>Gav Du paa Livet Agt</firstline>
+    <source pages="74-79"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Gav Du paa Livet Agt
 ej blot i Selskabssale,
 kan i sin simple Dragt
@@ -1351,13 +1442,18 @@ Mon det skal føres op
 til Verdens sidste Tider,
 indtil der siges Stop
 og Ingen mere lider?
+</body>
+</poem>
 
-T:En Synd
-U:(Januar 1881)
-F:Blandt meget Andet, jeg har fortrudt
-SIDE:80-82
-ID:kaalund2000092301
-
+<poem id="kaalund2000092301">
+<head>
+    <title>En Synd</title>
+    <subtitle>(Januar 1881)</subtitle>
+    <firstline>Blandt meget Andet, jeg har fortrudt</firstline>
+    <source pages="80-82"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Blandt meget Andet, jeg har fortrudt,
 som kommer igjen, naar jeg sidder alene,
 er det: at jeg har paa en Sælhund skudt,
@@ -1402,13 +1498,21 @@ Blandt alt hvad Andet jeg har forskyldt,
 som angrende jeg har forsøgt at sone,
 keg bærer den med i den Rejsebylt,
 hvormed jeg skal staae for Guds Throne!
+</body>
+</poem>
 
-T:Til Kongen
-U:(Ved Universitetsfesten i Juni 1879)
-U:(Melodi: ,,Svend Tveskjæg havde sig en Mand.'')
-F:Hil Dig, Du Rigets første Mand
-SIDE:83-87
-
+<poem id="kaalund2018060415">
+<head>
+    <title>Til Kongen</title>
+    <subtitle>
+        <line>(Ved Universitetsfesten i Juni 1879)</line>
+        <line>(Melodi: ,,Svend Tveskjæg havde sig en Mand.'')</line>
+    </subtitle>
+    <firstline>Hil Dig, Du Rigets første Mand</firstline>
+    <source pages="83-87"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hil Dig, Du Rigets første Mand,
     vor gode Drot!
 Dog det er ej din Kongestand,
@@ -1453,10 +1557,10 @@ At Kunst og Lærdom her fandt Læ
     og voxte smukt
 og blev et kraftigt Livsens Træ
     med Blomst og Frugt,
-_det_ er i Danmarks Kongers Krans
+<i>det</i> er i Danmarks Kongers Krans
     et Hædersblad, -
-_det_ kaster end i Dag sin Glans
-    paa Axelstad - 
+<i>det</i> kaster end i Dag sin Glans
+    paa Axelstad -
 og spiller med Lys om din Krone!
 
 Kan højest Rang end ej vi naa
@@ -1478,13 +1582,21 @@ en Herskerslægt, - et Rosenflor
 som glemmer ej den danske Jord,
     hvor Vuggen stod.
 Gud signe Dig, Drot, og din Stamme!
+</body>
+</poem>
 
-T:Sang for Fædrelandet
-U:Ved de danske Skytte- og Gymnastikforeningers store Fællesmøde den 10ende og 11te Juli 1881
-U:(Mel: Der er et Land, dets Sted er højt mod Norden)
-F:Bryd vældig frem, - luft ud i alle Kroge
-SIDE:88-90
-
+<poem id="kaalund2018060416">
+<head>
+    <title>Sang for Fædrelandet</title>
+    <subtitle>
+        <line>Ved de danske Skytte- og Gymnastikforeningers store Fællesmøde den 10ende og 11te Juli 1881</line>
+        <line>(Mel: Der er et Land, dets Sted er højt mod Norden)</line>
+    </subtitle>
+    <firstline>Bryd vældig frem, - luft ud i alle Kroge</firstline>
+    <source pages="88-90"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Bryd vældig frem, - luft ud i alle Kroge,
 vor Jubelsang, til Fædrelandets Pris!
 Riv Alle med, ja, selv de smaalig Kloge,
@@ -1492,7 +1604,7 @@ og smelt de Hjerter, Tvivlen frøs til Is!
 Bryd som en Storm fra tusind unge Munde!
 Gjenlyd fra Vesterhav til Østresalt:
 Et Folk som vort skal ikke gaa tilgrunde!
-For Fædrelandet Liv og Blod og Alt! 
+For Fædrelandet Liv og Blod og Alt!
 
 Ja, Alt - saa vist, som det er største Ære
 at dø som Helt i Forsvar for sit Land!
@@ -1529,13 +1641,21 @@ Forlænge drev vort Land for Vind og Vove. -
 Men vi vil staa som vore Fædre stod!
 Hør det, I Vaagne! Hør det, I, som sove!
 Hør det i Oldtidsgraven, Dannebod!
+</body>
+</poem>
 
-T:Mit Portræt
-U:malet af mig selv
-NOTE:Dette Digt meddeles her som en Kuriositet. Det er et af mine tidligste, skrevet til en Ven ved hans Afrejse til Sydhavet, hvor han bosatte sig paa Øen Havaii. =H. V. Kaalund= (i «Ude og Hjemme» Maj 1881).
-F:Med Penslen vil det ej lykkes ret
-SIDE:91-94
-
+<poem id="kaalund2018060417">
+<head>
+    <title>Mit Portræt</title>
+    <subtitle>malet af mig selv</subtitle>
+    <firstline>Med Penslen vil det ej lykkes ret</firstline>
+    <notes>
+        <note>Dette Digt meddeles her som en Kuriositet. Det er et af mine tidligste, skrevet til en Ven ved hans Afrejse til Sydhavet, hvor han bosatte sig paa Øen Havaii. <w>H. V. Kaalund</w> (i «Ude og Hjemme» Maj 1881).</note>
+    </notes>
+    <source pages="91-94"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Med Penslen vil det ej lykkes ret -
 nu vel! saa griber jeg Pennen
 og maler paa Vers Dig mit Portræt
@@ -1564,9 +1684,9 @@ de rødmed med Grund derude.
 Øjnene de er det Bedste dog,
 - men Selvros klinger jo ild e ;
 der sidder en Skalk i hver Øjenkrog
-- en Gavtyv - en ganske lille! 
+- en Gavtyv - en ganske lille!
 
-Alvorlig er jeg, naar Verden vil, 
+Alvorlig er jeg, naar Verden vil,
 men Himlen véd, jeg kan vrøvle!
 Munden er næsten for lattermild,
 og - tys! jeg skjæver min Støvle.
@@ -1577,7 +1697,7 @@ Til Penneslikker jeg lidet du’r,
 jeg hader i Grunden Blækket.
 
 Til Æventyr staar som din min Hu,
-men _jeg_ har en Klods ved Foden.
+men <i>jeg</i> har en Klods ved Foden.
 O, kunde jeg flyve, min Ven, som Du
 til den anden Side af Kloden! -
 
@@ -1590,12 +1710,17 @@ Og sætter en Stork paa Masten sig
 i hine brændende Egne,
 da tænk for Løjer, at det er mig:
 Poeter er allevegne!
+</body>
+</poem>
 
-
-T:I en Stambog 1845
-F:Du har kun kjendt mig som en lystig Fætter
-SIDE:95-96
-
+<poem id="kaalund2018060418">
+<head>
+    <title>I en Stambog 1845</title>
+    <firstline>Du har kun kjendt mig som en lystig Fætter</firstline>
+    <source pages="95-96"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du har kun kjendt mig som en lystig Fætter,
 ej sandt, Kusine? Maler og Poet;
 men Maalet, som jeg mig alvorlig sætter
@@ -1610,12 +1735,18 @@ Vil Du da Spøgefuglen nu erindre!
 Han skjænked Dig saa gjerne et Portræt
 et aandigt Billed af sit eget Indre;
 men har kun denne simple Silhuet.
+</body>
+</poem>
 
-T:Det Grænseløse
-U:(Et Ungdomsdigt)
-F:Naar som Barn jeg from, uskyldig saa'
-SIDE:97-99
-
+<poem id="kaalund2018060419">
+<head>
+    <title>Det Grænseløse</title>
+    <subtitle>(Et Ungdomsdigt)</subtitle>
+    <firstline>Naar som Barn jeg from, uskyldig saa'</firstline>
+    <source pages="97-99"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Naar som Barn jeg from, uskyldig saa’
 op mod Solen eller Stjernevrimlen,
 tænkte jeg: Deroppe i det Blaa
@@ -1646,7 +1777,7 @@ Paa et Støvgran, som man kalder Jord,
 i det aldrig maalte Rum jeg boer,
 og min Tanke sig i Svælget taber.
 
-Er det Frugten af mit Hovedbrud? 
+Er det Frugten af mit Hovedbrud?
 denne Tvivl, som griber mig med Svimmel,
 dette Svælg, som skiller mig fra Gud?
 - Kom da, Glemsel, fyld mig Svælget ud!
@@ -1656,13 +1787,19 @@ Ryk mig atter Verdens Grændser nær!
 Lad som Barn mig nøjes med det Mindre;
 og naar op mod Stjernerne jeg ser,
 lad som før dem om Guds Throne der
-ned til mig som Engleøjne tindre. 
+ned til mig som Engleøjne tindre.
+</body>
+</poem>
 
-T:Oberst Irminger
-U:Død d. 30. Januar 1854.
-F:Hvi skulde Døden Dig i Slaget fly
-SIDE:100-101
-
+<poem id="kaalund2018060420">
+<head>
+    <title>Oberst Irminger</title>
+    <subtitle>Død d. 30. Januar 1854.</subtitle>
+    <firstline>Hvi skulde Døden Dig i Slaget fly</firstline>
+    <source pages="100-101"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hvi skulde Døden Dig i Slaget fly,
 for grumt at ende saa din Hædersbane!
 Hvi faldt Du ej som Helten Olaf Rye,
@@ -1682,32 +1819,44 @@ Det blev din Skjæbne - arme Martyr, Du!
 Med Taushed nu din Troskab man belønner
 men længe Danmark mindes skal endnu,
 at Du var en af hendes bedste Sønner!
+</body>
+</poem>
 
-T:En Forklaring
-U:(1869)
-F:Om jeg, der steg engang i lyrisk Flugt
-SIDE:102-103
-
+<poem id="kaalund2018060421">
+<head>
+    <title>En Forklaring</title>
+    <subtitle>(1869)</subtitle>
+    <firstline>Om jeg, der steg engang i lyrisk Flugt</firstline>
+    <source pages="102-103"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Om jeg, der steg engang i lyrisk Flugt,
 er bleven nu saa arm paa Stof til Sange,
 at jeg kun byde kan min Fortids Frugt,
 saa spørger ej blot Du, men Mange - Mange.
 
-Ak, Ven! Paa Verden har jeg mig forslugt; 
+Ak, Ven! Paa Verden har jeg mig forslugt;
 det gaar mig som den store Kvælerslange:
-med smaa Kaniner kan jeg let faa Bugt, 
+med smaa Kaniner kan jeg let faa Bugt,
 men tænk Dig: med en Oxe, som kan stange!
 
 Paa Verdensoxen har jeg mig forslugt
 og faaet den i Halsen - i den vrange;
 til at fordøje har alt Aar jeg brugt.
 - Den Mundfuld var for vældig, er jeg bange!
+</body>
+</poem>
 
-T:Spørgsmaal - Svar
-F:Du høje Sandhed, sig, hvi taaler
-SIDE:104
-
-{c:Spørgsmaal:}
+<poem id="kaalund2018060422">
+<head>
+    <title>Spørgsmaal - Svar</title>
+    <firstline>Du høje Sandhed, sig, hvi taaler</firstline>
+    <source pages="104"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><center>Spørgsmaal:</center></nonum>
 
 Du høje Sandhed, sig, hvi taaler
 du Krybet, avlet af hvert Døgn:
@@ -1715,17 +1864,23 @@ den blinde Hob, som Hurra skraaler
 for hver en udbasunet Løgn?
 
 
-{c:Svar:}
+<nonum><center>Svar:</center></nonum>
 
-Udødelig jeg er og bliver; 
+Udødelig jeg er og bliver;
 men Nat maa vexle jo med Dag:
 den store Hob, som overdriver,
 den kæmper netop for min Sag!
+</body>
+</poem>
 
-T:I triste Timer
-F:Hav Tak, min Ven, for det lystige Brev
-SIDE:105-108
-
+<poem id="kaalund2018060423">
+<head>
+    <title>I triste Timer</title>
+    <firstline>Hav Tak, min Ven, for det lystige Brev</firstline>
+    <source pages="105-108"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hav Tak, min Ven, for det lystige Brev,
 som Du mig hernede fra Syden skrev!
 De flotte Vers, de vingede Ord
@@ -1772,7 +1927,7 @@ Jeg troede knapt mine Øjne:
 Jo, paa min Sjæl! det var Dig, der skrev
 i Vers overgivne, forfløjne,
 Rhythmer med lange og korte Ben
-rev mig afsted som i Galopade; 
+rev mig afsted som i Galopade;
 da faldt mig fra Hjertet den tunge Sten:
 jeg var igjen paa den grønne Gren,
 trods Sludvejr og ormstukne Blade!
@@ -1787,14 +1942,21 @@ jeg fornemmer det stundom ved Fængslet her
 som de første Spor af de Vingefjer,
 der skal voxe en Gang mig af Ryggen.
 
-    {s:Novbr. 1872.}
+<nonum><small>Novbr. 1872.</small></nonum>
+</body>
+</poem>
 
-
-T:Til min Hustru
-F:De sige, at for meget
-SIDE:109-110
-FREMFØRT:1877-12-24
-
+<poem id="kaalund2018060424">
+<head>
+    <title>Til min Hustru</title>
+    <firstline>De sige, at for meget</firstline>
+    <source pages="109-110"/>
+    <dates>
+        <written>1877-12-24</written>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 De sige, at for meget
 til Jorden jeg mig holdt,
 men det er netop deraf,
@@ -1812,14 +1974,19 @@ et frejdigt «Snik og Snak»,
 og derfor Dig jeg skylder,
 næst Gud, min bedste Tak!
 
-{s:Juleaften 1877.}
+<nonum><small>Juleaften 1877.</small></nonum>
+</body>
+</poem>
 
-
-T:I en bortrejsende Dames Stambog
-U:(Skjærtorsdag 1880)
-F:For Dem straaler Lykken, min unge Frue
-SIDE:111-114
-
+<poem id="kaalund2018060425">
+<head>
+    <title>I en bortrejsende Dames Stambog</title>
+    <subtitle>(Skjærtorsdag 1880)</subtitle>
+    <firstline>For Dem straaler Lykken, min unge Frue</firstline>
+    <source pages="111-114"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 For Dem straaler Lykken, min unge Frue.
 Jeg sidder i Skyggen som en halvdød Flue,
 har Gigt i Ryggen og plages af Snue,
@@ -1869,11 +2036,17 @@ Hils Raphaels Engle - Oldtidsruinerne -
 hils Fru Jerichau, hils Apenninerne -
 St. Peders Kuppel og Titus’ Bue,
 som jeg aldrig har sét - og aldrig faar skue!
+</body>
+</poem>
 
-T:Hilsen til de Lykkelige paa Skovgaard
-F:Paa den dejlige Skovgaard i Ordrup Krat
-SIDE:115-117
-
+<poem id="kaalund2018060426">
+<head>
+    <title>Hilsen til de Lykkelige paa Skovgaard</title>
+    <firstline>Paa den dejlige Skovgaard i Ordrup Krat</firstline>
+    <source pages="115-117"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Paa den dejlige Skovgaard i Ordrup Krat
     ligger den unge Frue
     saa fin og yndig at skue.
@@ -1919,30 +2092,41 @@ Velsignelse over den lille Dreng,
 som snart skal springe * paa Mark og Eng
 i «smaabitte Sko og Hoser».
 
-    {s:Vridsløselille, den 3dje August 1880.}
+<nonum><small>Vridsløselille, den 3dje August 1880.</small></nonum>
+</body>
+</poem>
 
-
-T:Paa en Vifte
-F:At skrive en flot lille Aandrighed
-SIDE:118
-
+<poem id="kaalund2018060427">
+<head>
+    <title>Paa en Vifte</title>
+    <firstline>At skrive en flot lille Aandrighed</firstline>
+    <source pages="118"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 At skrive en flot lille Aandrighed
 paa en Damevifte behændig ned,
 det er som at danse med Myggeben
 en Alfedans paa en Blomstergren.
 
-  {s:11te Maj 1882.}
+<nonum><small>11te Maj 1882.</small></nonum>
+</body>
+</poem>
 
-T:Til kgl. Kammersanger Schram
-U:(Foran i et Exemplar af «Fulvia»)
-F:Du vilde, sagde vittigt Du, betegnes
-SIDE:119-120
-
+<poem id="kaalund2018060428">
+<head>
+    <title>Til kgl. Kammersanger Schram</title>
+    <subtitle>(Foran i et Exemplar af «Fulvia»)</subtitle>
+    <firstline>Du vilde, sagde vittigt Du, betegnes</firstline>
+    <source pages="119-120"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du vilde, sagde vittigt Du, betegnes
 som Danmarks Riges største Skraalehals!
 Nej, Peter Schram! i Kunsten skal Du regnes
 blandt dem, som ej paa Torvet er tilfals!
-Geniets Ungdom, Liv og Lyst 
+Geniets Ungdom, Liv og Lyst
 har paatrykt Dig sit ægte Stempel,
 mægtige Toner runge fra dit Bryst,
 og ildfuld staar Du end i Kunstens Tempel.
@@ -1952,12 +2136,18 @@ Du: «Leporello» - med den muntre Latter,
 har rørt som «Rocchus»
                     «Fulvia»s Forfatter.
 
-  {s:Maj 1881.}
+<nonum><small>Maj 1881.</small></nonum>
+</body>
+</poem>
 
-T:Af Hvedebrød og Sukker -
-F:Af Hvedebrød og Sukker
-SIDE:121-122
-
+<poem id="kaalund2018060429">
+<head>
+    <title>Af Hvedebrød og Sukker -</title>
+    <firstline>Af Hvedebrød og Sukker</firstline>
+    <source pages="121-122"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Af Hvedebrød og Sukker
 man formed Hjerter før.
 Med Hjerter selv man pryded
@@ -1984,11 +2174,17 @@ Med al for megen Kulde
 er Ingen af os tjent.
 Hvad mener I, om lidt vi
 blev Hjertet bekjendt?
+</body>
+</poem>
 
-T:Havet
-F:Det truer med Storm - det er sent i Høst
-SIDE:123-125
-
+<poem id="kaalund2018060430">
+<head>
+    <title>Havet</title>
+    <firstline>Det truer med Storm - det er sent i Høst</firstline>
+    <source pages="123-125"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Det truer med Storm - det er sent i Høst.
 Foran mig ligger - dækket med Stene -
 i Brandbelysning den øde Kyst
@@ -2027,12 +2223,17 @@ helst paa en Dag, naar Vejret er raat,
 at lufte sig ud for det, som er smaat,
 som Sjælen forkvakler og Sindet forstemmer,
 og lytte til Bølgernes vilde Spot.
+</body>
+</poem>
 
-
-T:Det sukker efter Regn -
-F:Det sukker efter Regn
-SIDE:126-127
-
+<poem id="kaalund2018060431">
+<head>
+    <title>Det sukker efter Regn -</title>
+    <firstline>Det sukker efter Regn</firstline>
+    <source pages="126-127"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Det sukker efter Regn
 og har alt sukket længe,
 men endnu intet Tegn -
@@ -2050,11 +2251,17 @@ er mangt et Bryst hernede.
 Lad ved dit Almagtsbud
 Regnskyen briste, Gud,
 og den Beklemte græde!
+</body>
+</poem>
 
-T:Kirkegaarden
-F:Jeg mindes tydelig, jeg stod som lille
-SIDE:128-131
-
+<poem id="kaalund2018060432">
+<head>
+    <title>Kirkegaarden</title>
+    <firstline>Jeg mindes tydelig, jeg stod som lille</firstline>
+    <source pages="128-131"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Jeg mindes tydelig, jeg stod som lille
 paa vor Altan en Sommeraften silde.
 Det var ved Kirkegaarden, hvor vi boede,
@@ -2104,11 +2311,17 @@ Og Maanen skjulte sig bag Stammer sorte,
 saa gled den frem, saa blev den atter borte.
 Det var, som Skygger underlige lange
 sig rørte ovre i de tavse Gange.
+</body>
+</poem>
 
-T:Sæt Dig ned, min gamle Ven -
-F:Sæt Dig ned, min gamle Ven!
-SIDE:132-135
-
+<poem id="kaalund2018060433">
+<head>
+    <title>Sæt Dig ned, min gamle Ven -</title>
+    <firstline>Sæt Dig ned, min gamle Ven!</firstline>
+    <source pages="132-135"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Sæt Dig ned, min gamle Ven!
 Ude suser høstlig Løvet.
 Lad os sladre Aftnen hen.
@@ -2162,11 +2375,17 @@ gaar det rask nu op ad Bakke.
 Vi har Ar af Livets Saar,
 Ordner ja saagar paa Frakke,
 ak, men begge hvide Haar.
+</body>
+</poem>
 
-T:Nu slukkes Tidens store Lys -
-F:Nu slukkes Tidens store Lys
-SIDE:136-137
-
+<poem id="kaalund2018060434">
+<head>
+    <title>Nu slukkes Tidens store Lys -</title>
+    <firstline>Nu slukkes Tidens store Lys</firstline>
+    <source pages="136-137"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nu slukkes Tidens store Lys
   og Prisen stiger paa de smaa.
 Det er, som om et Isbads Gys
@@ -2181,12 +2400,17 @@ Jeg ængstes ej, jeg klager ej,
   men sætter fuldt min Tillid til,
 at Livet gaar den rette Vej
   som Gud den styre vil.
+</body>
+</poem>
 
-
-T:Du harmes ved Livets Blændværk og Skin -
-F:Du harmes ved Livets Blændværk og Skin
-SIDE:138
-
+<poem id="kaalund2018060435">
+<head>
+    <title>Du harmes ved Livets Blændværk og Skin -</title>
+    <firstline>Du harmes ved Livets Blændværk og Skin</firstline>
+    <source pages="138"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du harmes ved Livets Blændværk og Skin,
   foragter dets Sminke.
 Kan Du se Dig selv i Øjnene ind
@@ -2197,14 +2421,22 @@ For Menneskeslægtens store Sag
 Men hvad duer Du selv, hvad ligger der bag?
 blev Sejren din i det store Slag
   mod Dig selv i dit eget Indre?
+</body>
+</poem>
 
-T:Bekjendelse
-F:Hvor meget ondt, hvor meget dumt
-SIDE:139-143
-NOTE:Mottoet stammer fra Wessels <xref poem="wessel2002092206,93"/>.
-
-{sr:«Hade Fejl, men ej Personer.»}
-{sri:Wessel.}
+<poem id="kaalund2018060436">
+<head>
+    <title>Bekjendelse</title>
+    <firstline>Hvor meget ondt, hvor meget dumt</firstline>
+    <notes>
+        <note>Mottoet stammer fra Wessels <xref poem="wessel2002092206,93"/>.</note>
+    </notes>
+    <source pages="139-143"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><small><right>«Hade Fejl, men ej Personer.»</right></small></nonum>
+<nonum><small><right><i>Wessel.</i></right></small></nonum>
 
 Hvor meget ondt, hvor meget dumt,
 - og dog, hvor meget skjønt paa Jord!
@@ -2241,7 +2473,7 @@ til, før mit Jordliv er forbi,
 at aande ud endnu i Sang
 mit Væsens Harmoni.
 
-Ja, før med mangt et indre Syn 
+Ja, før med mangt et indre Syn
 min Aand gaar hjem herfra til Gud,
 lad mig endnu et Tankelyn
 i Verden kaste ud!
@@ -2276,6 +2508,9 @@ saa mangen Sjæl forvilder sig -
 Tak for, Du gav mig en, som rørt
 kan ydmyg takke Dig!
 
-  {s:Oktober 1884.}
+<nonum><small>Oktober 1884.</small></nonum>
+</body>
+</poem>
 
-
+</workbody>
+</kalliopework>
