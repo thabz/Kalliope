@@ -10,6 +10,7 @@ routes.add('poets', '/:lang(da|en)/poets/:country/:groupBy(name|year)');
 routes.add('poets-looks', '/:lang(da|en)/poets/:country/:groupBy(looks)');
 routes.add('works', '/:lang(da|en)/works/:poetId');
 routes.add('texts', '/:lang(da|en)/texts/:poetId/:type');
+routes.add('alltexts', '/:lang(da|en)/texts/:country/:type/:letter');
 routes.add('bio', '/:lang(da|en)/bio/:poetId');
 routes.add('bibliography', '/:lang(da|en)/bibliography/:poetId');
 routes.add('mentions', '/:lang(da|en)/mentions/:poetId');

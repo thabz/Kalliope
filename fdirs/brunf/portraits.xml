@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
-    C.W. Eckersberg: <i>Friederike Brun</i>, ca. 1816.
-  </picture>
+    <picture ref="eckersberg/brunf-1816" primary="true" square-src="p1-square.jpg" />
 </pictures>

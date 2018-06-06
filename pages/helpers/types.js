@@ -47,6 +47,7 @@ export type Poet = {
     dead?: DateWithPlace,
     coronation?: DateWithPlace,
   },
+  has_artwork: boolean,
   has_bibliography: boolean,
   has_biography: boolean,
   has_mentions: boolean,
@@ -76,6 +77,8 @@ export type PrevNextText = {
   id: string,
   title: string,
 };
+
+export type LinesType = 'first' | 'titles';
 
 export type LinesPair = {
   id: string,
@@ -133,6 +136,7 @@ export type TextSource = {
 export type Text = {
   id: string,
   title: string,
+  title_prefix?: string,
   linktitle: string,
   subtitles?: Array<TextContentType>,
   notes: Array<NoteItem>,

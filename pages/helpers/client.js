@@ -16,6 +16,8 @@ import type {
   NoteItem,
   PictureItem,
   TextLang,
+  Error,
+  LinesType,
 } from './types.js';
 
 export const createURL = (path: string): string => {
@@ -54,6 +56,19 @@ export const poets = async (country: Country): FetchPoetsResult => {
   return fetchJSON(`/static/api/poets-${country}.json`);
 };
 
+type FetchAllTextsResult = Promise<{
+  lines: Array<any>,
+  letters: Array<string>,
+  error: ?Error,
+}>;
+export const allTexts = async (
+  country: Country,
+  type: LinesType,
+  letter: string
+): FetchAllTextsResult => {
+  return fetchJSON(`/static/api/alltexts/${country}-${type}-${letter}.json`);
+};
+
 type FetchDictItemResult = Promise<{
   item: DictItem,
   error: ?Error,
@@ -81,6 +96,7 @@ export const work = async (
 type FetchWorksResult = Promise<{
   poet: Poet,
   works: Array<Work>,
+  artwork: Array<PictureItem>,
   error: ?Error,
 }>;
 export const works = async (poetId: PoetId): FetchWorksResult => {

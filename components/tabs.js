@@ -456,7 +456,7 @@ export class PoetTabs extends React.Component<PoetTabsProps> {
       {
         id: 'works',
         title: _('Værker', lang),
-        hide: !poet.has_works,
+        hide: !poet.has_works && !poet.has_artwork,
         url: Links.worksURL(lang, poet.id),
       },
       {
@@ -513,6 +513,13 @@ export class KalliopeTabs extends React.Component<KalliopeTabsProps> {
         title: _('Digtere', lang),
         url: Links.poetsURL(lang, 'name'),
       },
+      /*
+      {
+        id: 'poems',
+        title: _('Digte', lang),
+        url: Links.allTextsURL(lang, 'dk', 'titles', 'A'),
+      },
+      */
       {
         id: 'keywords',
         title: _('Nøgleord', lang),
