@@ -130,7 +130,9 @@ def printPoem()
     }
     puts "    </subtitle>"
   end
-  puts "    <firstline>#{@firstline}</firstline>"
+  if (@type != 'prose')
+    puts "    <firstline>#{@firstline}</firstline>"
+  end
   if @notes.length > 0
     puts "    <notes>"
     @notes.each { |noteline|
@@ -218,7 +220,7 @@ File.readlines(ARGV[0]).each do |line|
   if (line =~ /=[^"]/)
       STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal ="
   end
-  # Håndter {..}
+  # Håndter {..} TODO: Fang manglende }
   m = /{(.*?):(.*)}/.match(line)
   if (!m.nil?)
       l = m[2]
