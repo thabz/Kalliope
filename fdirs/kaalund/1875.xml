@@ -1,9 +1,3933 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1875" author="kaalund" status="incomplete" type="poetry">
+<kalliopework id="1875" author="kaalund" status="complete" type="poetry">
 <workhead>
-   <title>Fulvia</title>
-   <year>1875</year>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+    <title>Fulvia</title>
+    <year>1875</year>
+    <notes>
+        <note>Teksten følger H.V. Kaalund: <i>Fulvia</i>, Gyldendalske Boghandel, Kbh., 1875.</note>
+    </notes>
+    <pictures>
+        <picture src="1875-p1.jpg">Titelbladet til <i>Fulvia</i> (1875) lyder ,,Fulvia. / Lyrisk Drama i fire Akter / af / H. V. Kaalund. / Kjøbenhavn. / Forlagt af Den Gyldendalske Boghandel (F. Hegel). // Trykt hos J. Jørgensen &amp; Co. / 1875.''</picture>
+    </pictures>
+    <source facsimile="130012828900_color" facsimile-pages-num="150" facsimile-pages-offset="8">H.V. Kaalund: <i>Fulvia</i>, Gyldendalske Boghandel, Kbh., 1875.</source>
 </workhead>
+<workbody>
+
+<prose id="kaalund2018060601">
+<head>
+    <title>[Forord]</title>
+    <firstline></firstline>
+    <source pages="3"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Nærværende Drama, hvortil en Munkelegende, som jeg i det Væsenlige har fulgt, har afgivet Stoffet, blev af mig i Foraaret indsendt til det kongelige Theaters Bestyrelse, men er af denne blevet mig tilbagesendt med officiel Tilkjendegivelse af, at det ikke fyldestgjør de sceniske Fordringer og derfor ikke i dets foreliggende Form kan bringes til Opførelse.
+    Dette Resultat er ikke kommet mig uventet, idet jeg
+allerede før Stykkets Indlevering har forudseet, at dets altfor
+hyppige Sceneforandringer og i det Hele altfor store Fordringer
+til den dekorative Udstyrelse vilde vanskeliggjøre dets Antagelse.
+    Den kongelige Theaterdirektion har imidlertid været saa opmærksom skriftlig at tilkjendegive mig, at den vilde ansee det for »højst ønskeligt, om jeg maatte finde Føje til at underkaste Stykket en Bearbejdelse, hvorved det kunde blive muligt at bringe det paa Scenen«.
+    Jeg haaber ikke at afskjære mig denne Mulighed ved herved at forelægge dette mit første dramatiske Arbejde for Publikum, for efter den Dom, der fældes om dets poetiske Værd, at afgjøre, om jeg bør imødekomme det af Theaterbestyrelsen udtalte Ønske eller ikke.
+
+Oktober 1875.
+<nonum><right>Forfatteren.</right></nonum>
+</body>
+</prose>
+
+<prose id="kaalund2018060602">
+<head>
+    <title>Personerne</title>
+    <firstline></firstline>
+    <source pages="5"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<w>Aqvilinus</w>, Prokonsul.
+<w>Servius</w>, romersk Patricier.
+<w>Fulvia</w>, hans Datter.
+<w>Lysias</w>, græsk Billedhugger.
+<w>Narkissos, Hyazinthos</w>, Tvillingbrødre, Sønner af en Frigiven.
+<w>Malchus, Josephus, Rocchus, Lucas</w>, Medlemmer af et kristent Broderskab, der lever i Fællesskab paa Ørken grændsen.
+<w>Første Avgur.</w>
+<w>Anden Avgur.</w>
+<w>Kritas, Diogenes</w>, Filosofer.
+<w>En romersk Krigshøvding.</w>
+<w>Phryne</w>, en ung Enke.
+<w>Første Slave.</w>
+<w>Anden Slave.</w>
+<w>Tredie Slave.</w>
+<w>En Herold.</w>
+<w>Første Borger.</w>
+<w>Anden Borger.</w>
+<w>Tredie Borger.</w>
+<w>Filosofer, romerske Krigshøvdinge, Liktorer, Mænd og Kvinder af Folket, Slaver og Slavinder.</w>
+
+<nonum><small><center>(Handlingen foregaar i og ved Alexandria i det tredie Aarhundrede efter Kristi Fødsel. Mellem anden og tredie Akt ligger et Tidsrum af 1 Aar).</center></small></nonum>
+</body>
+</prose>
+
+<section>
+<head>
+    <title>Første Akt</title>
+</head>
+<content>
+
+<prose id="kaalund2018060603">
+<head>
+    <title>Første Scene</title>
+    <firstline></firstline>
+    <source pages="7-18"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><small><center>(En højt liggende Plads i Alexandria. Til Højre udmunde et Par Gader,til Venstre tænkes Udsigten fri over en lavereliggende Del af Staden).</center></small></nonum>
+<nonum><small><center>(Tre af <w>Servius’s</w> Husslaver komme fra Højre, den ene holdende sig noget bag efter de to andre, fortabt, som det synes, i sine egne Betragtninger).</center></small></nonum>
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Ha! ha! ha!
+
+<nonum><center><w>Anden Slave.</w></center></nonum>
+    Hvad leer Du af?
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Aa! — af hele den forrykte Verden, men især af den Gamle derhjemme.
+
+<nonum><center><w>Anden Slave.</w></center></nonum>
+    Er det vor naadige Herre, den ædle Servius, Du taler om?
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    — Ja, Du maa ikke blive vred; men en forfængeligere gammel Nar findes der ikke i hele vor Stad; det er nu min Mening. Man skulde jo tro, at det var ham og ikke hans Datter, som i Dag skal tilkjendes Lavrbærkrandsen for Visdom, saadan som han kror sig af denne Begivenhed.  Det mangler bare, at han selv skal spænde sig for hendes Triumfvogn og indbyde de Snyltegjæster, han har slæbt hjem med sig til Frokosten efter Morgenbadet, til at tage en Haand i med — for det er jo afgjort, at hun skal trækkes i Triumf herhjem fra Templet?
+
+<nonum><center><w>Anden Slave.</w></center></nonum>
+    Afgjort? Ja hvad ellers? Tror Du, at vi er sendt herned for at staa og gabe hen i Vejret efter Ingenting!
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Nej, for at holde Udkig — Tre paa én Gang — jeg synes En kunde være nok til det Stykke Arbejde. — Naa, jo galere jo bedre! Havde jeg blot et Bæger her af den gamle syriske Vin, som han lader springe derhjemme, saa skulde jeg ikke beklage mig, for frisk Luft har man her: Søvinden blæser i Dag stik herind, og Solen brænder jo ikke hedere paa denne velsignede Aarstid, end at det ordenlig er en Fornøjelse at bage sig i dens Straaler. — Det vil vel ellers vare en god Stund endnu, inden det aftalte Tegn viser sig.
+
+<nonum><center><w>Anden Slave.</w></center></nonum>
+    Hun kan først nu være midt i sin store Tale, og Signalet fra Museion, hvis Tag vi kan see herfra, vil ikke blive givet, førend Toget har sat sig i Bevægelse. I samme Øjeblik, det kommer til Syne ved Hjørnet derhenne, maa vi ile hjem og melde ham det.
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Ja, ellers sker vi en Ulykke! Sæt han vil holde en Tale, naar Toget har naaet Indgangen til Huset, saa maa han jo have Tid til først at besinde sig lidt; han kan da ikke styrte derud lige fra Frokosten med Maden i Munden.
+
+<nonum><center><w>Anden Slave.</w></center></nonum>
+    Tæm din Tunge, den trænger stærkt dertil!
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Men Du kan dog ikke nægte, at det er uhyre naragtigt, at saadant et ungt Pigebarn sætter sin Ære og Fornøjelse i at staa frem og holde Taler i en Forsamling af lutter langskjæggede Filosofer og lærde Skaldepander. Skal det kaldes Visdom? Ha! ha! ha! Jeg kalder det for Galskab.
+
+<nonum><center><w>Anden Slave.</w></center></nonum>
+    Vogt Dig for hvad Du siger! Hun er en ædel Jomfru, ren som Solen!
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Guderne forbyde, at jeg skulde mene Andet!
+
+<nonum><center><w>Anden Slave.</w></center></nonum>
+    Man skal søge længe, inden man finder hendes Mage!
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Ja, i den Forstand, som Du tager det, men ellers vil det da ikke falde saa svært at finde en Mage til hende. Bejlere er her i det Mindste nok af, og Du vil da ikke indbilde mig, at hun har i Sinde at leve og dø som Jomfru.
+
+<nonum><center><w>Anden Slave.</w></center></nonum>
+    Tiden vil vise det. — Hun er ikke som andre Kvinder.
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Nej, det har Du Ret i; undertiden, naar det falder hende ind, klæder hun sig jo som et Mandfolk, for i dette Stykke som i alle andre følger hun kun sit eget Hoved. Den Gamle kan hun vikle om sin Finger. Men læg Mærke til hvad jeg siger: Her er Noget i Gjære i Dag.  Tror Du, at det er for Intet, at vor Prokonsul i denne Formiddag for første Gang har aflagt vor naadige Herre et Besøg og haft en Samtale med ham i Enrum? Saae Du, hvorledes den Gamle straalede, da han fulgte ham til Dørs, og hvor haanlig den Anden maalte Lapsene, som har budt sig til Gjæst derhjemme?
+
+<nonum><center><w>Anden Slave.</w></center></nonum>
+    Ja, det er lette Varer! Hundrede saadanne Fyre opvejer ikke en Mand som vor Prokonsul!
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Nej, det er vist! — Jeg siger endnu en Gang: Pas paa, her er Noget i Gjære!
+
+<nonum><center><w>Anden Slave.</w></center></nonum>
+Nu, om saa er: Ingen Mand, om han end staar nok saa højt, er for god til at bejle til hende. — Men der falder mig Noget ind: Du havde dog Ret i, hvad Du før sagde: Tre behøver vi ikke at holde Udkig her. I To kan jo nok besørge det, uden at jeg, som er den ældste og som har Andet at passe, behøver at gjøre Jer Selskab. Hav blot Øjnene med Jer, og glem ikke hvad I staar her for: Jeg løber nu hjem for at see, hvorvidt de er komne med Maaltidet. <small>(gaar).</small>
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+<nonum><small><center>(med en Grimace efter den Bortgaaende).</center></small></nonum>
+    Og for at smage paa Levningerne, mens vi staar her med tørre Munde. Ja — fiffig er han og gammel i Huset — han veed, hvordan man skal sno sig!
+<nonum><small><center>(Vender sig til den tredie Slave, som uden Deltagelse for de Andres Samtale har holdt sig afsides).</center></small></nonum>
+    Halløj Kammerat! Du staar jo der saa fordybet i dine egne Betragtninger, som om her ikke var vigtige Ting at tage Vare paa.
+
+<nonum><center><w>Tredie Slave.</w></center></nonum>
+    Du har Ret. Jeg glemte for en Stund, at jeg er Slave.
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Det kan man se paa Dig! Er det Svalernes Flugt, Du studerer?
+
+Tredie Slave.
+    Nej! — jeg betragter Byen — jeg kom jo først hertil i Gaar, nedstuvet mellem andre Slaver i et Skibsrum. Din Herre kjøbte mig. Alt er mig endnu saa fremmed her.
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Ja, det er sandt: Du er jo først i Dag bleven optaget blandt os Husslaver, hvilket Du kan takke dit nette Udvortes for, thi vi hører Alle til de Udsøgte, skal jeg sige Dig; men her er saa mange af os, at vi ikke lægger videre Mærke til En til eller fra. — Naa, til Lykke!  Her er min Haand paa godt Kammeratskab.  Er her Noget, Du vil vide Besked om, saa er jeg til din Tjeneste. Spørg kun væk!
+
+<nonum><center><w>Tredie Slave.</w></center></nonum>
+<nonum><small><center>(pegende mod Himmelbuen).</center></small></nonum>
+    Staar ikke Solen op i det Himmelhjørne?
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Jo — i Øst; — det plejer den i det Mindste, men om den vil gjøre det i Morgen eller i Overmorgen, tør jeg ikke svare for, thi hvorfor skulde ikke ogsaa den faa Nykker og skeje ud lige som andre store Herrer. — Er Du maaske Soltilbeder?
+
+<nonum><center><w>Tredie Slave.</w></center></nonum>
+Nej, jeg vilde kun vide i hvilken Retning Landet ligger, hvor jeg er født: Grækenland.
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Naa, — saadan at forstaa. Du er en Græker.  Ja, nu er vi Alle Landsmænd: Romere, Grækere, Ægyptere, Syrere og Barbarer. — Jeg havde nær sagt Jøder og Kristne med <small>(spytter foragtelig).</small> Jeg spurgte Dig ellers kun, fordi jeg troede, at Du vilde være paa Moden. —
+
+<nonum><center><w>Tredie Slave.</w></center></nonum>
+    Jeg forstaar Dig ikke.
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Jo, seer Du: Siden vor højmægtige Kejser Heliogabalus, der, som Du jo nok véd, har været syrisk Solpræst, er kommen til Magten, har vi til alle vore øvrige Galskaber ogsaa faaet den at dyrke Solen.
+
+<nonum><center><w>Tredie Slave.</w></center></nonum>
+    Helios?
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+Nej, det er en gammel Historie. Hvad jeg taler om, er noget ganske Andet; det er en sort Sten, som skal forestille Solen. Flere af vore Templer er allerede paa kejserlig Befaling blevne omkalfatrede og indviede til denne nye Guddom.
+
+<nonum><center><w>Tredie Slave.</w></center></nonum>
+<nonum><small><center>(seende ud over Byen).</center></small></nonum>
+    Hvilken Vrimmel!
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Af Guddomme? Ja, her er saa mange, at man næsten har ondt ved at hitte Rede imellem dem; men hjælper ikke den Ene, saa kan man jo forsøge det med en Anden.
+
+<nonum><center><w>Tredie Slave.</w></center></nonum>
+Nej, jeg mente af Templer. Aldrig før har jeg seet en prægtigere Stad.
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+Det maa Du nok sige. Den giver heller ikke Rom eller det gamle Babylon meget efter.  Har Du Penge, saa kan Du her faa Alt, hvad Dit Hjerte begjærer: Silke, Diamanter, Purpur, Perler, kostelige Kryderier, friske Østers og bedærvede Mennesker. Tørster Du efter Lærdom, saa har vi her hele Pakhuse fulde; vi plages af Vismænd som af Fluer og kan næppe spytte for Poeter. Dyder har vi kun faa af, men hvad Laster og Daarskaber angaar, er vi saa vel forsynede, at vi kan lyksaliggjøre hele den øvrige Verden dermed.
+
+<nonum><center><w>Tredie Slave.</w></center></nonum>
+    Det summer histude som i en Bikube — og see: Rækker af svært belæssede Pukkeldyr bevæge sig frem imellem Menneskevrimlen. —
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Ja, i den Retning — gjennem Solporten — det er Handelskaravanerne, som drager herind fra den libyske Ørken og Landene hinsides den hellige Nil.
+
+<nonum><center><w>Tredie Slave.</w></center></nonum>
+    — Og hist Havnen — og Havet, det udstrakte Hav.
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+Ja, Guderne skee Tak! Der er da ikke mere Snavs her i Verden, end der i Nødstilfælde er Vand til at skylle det af med!
+
+<nonum><center><w>Tredie Slave.</w></center></nonum>
+    Det er for mig, som om hvert Vindpust derfra bringer en Hilsen med fra mit Hjem — fra Athens Violer.
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Violer? Ha! ha! ha! Det er Pomade, Du lugter. Kommer Du for Skade, Kammerat, at løbe vild i Smaagaderne dernede, saa kan Du aldrig tage fejl af Vejen herhjem, for her i vort fine Kvarter dufter det altid som i en Pomadekrukke.  Vi bestiller ikke Andet her, skal jeg sige Dig, end salve os og begaa Dumheder. — Men, ved mit Skjæg! der har vi det! See! See!  <small>(peger ud til Venstre).</small>
+
+<nonum><center><w>Tredie Slave.</w></center></nonum>
+    Hvad mener Du?
+
+<nonum><center><w>Første Slave.</w></center></nonum>
+    Ih! Signalet, Menneske! Triumftoget! — Nu første Mand hjem til den Gamle. Vejen og Trapperne i fire Spring! <small>(Løber ud til Højre, fulgt af den Anden).</small>
+
+<nonum><small><center>(Efter en kort Pavse, under hvilken enkelte Grupper af Nysgjerrige samle sig paa Skuepladsen, forkynder en dæmpet Musik, blandet med Jubelraab, at Triumftoget nærmer sig. <w>Fulvia</w>, staaende pa en Triumfvogn, der trækkes af hendes Beundrere, kommer fra venstre Side Hun er iført en snehvid Dragt og bærer en Lavrbærkrands paa Hovedet. Foran Toget sees Tvillingbrødrene <w>Narkissos</w> og <w>Hyazinthos</w>, den første i en rød, den anden i en blaa Dragt, bærende gyldne Tavler med Indskrifter til hendes Ære).</center></small></nonum>
+<nonum><small><center>(Raab fra Folkestimlen, som omgiver hende: ,,<w>Hil Fulvia; Athenes Yndling, den vise Fulvia! Hil! Hil!</w>'')</center></small></nonum>
+<nonum><small><center>(Romerske Liktorer komme fra Højre og standse Toget, da det er midt paå Skuepladsen).</center></small></nonum>
+
+<nonum><center><w>Første Liktor.</w></center></nonum>
+    Plads for Alexandrias Prokonsul Aqvilinus!
+
+<nonum><center><w>Anden Liktor.</w></center></nonum>
+Plads for ham, der hersker i Cæsars Navn!
+
+<nonum><small><center>(<w>Aqvilinus</w>, iført Toga med bred Purpurbræmme, træder frem fra samme Side og gaar rask hen foran Toget, idet han giver Liktorerne et bydende Vink om at gaa til Side.)</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+For Dig jeg viger, skjønne Fulvia.
+Men skil min Hyldest vel fra disse Raab —
+den gjælder ej din Visdom, men Dig selv,
+din Ungdom og din Ynde!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+            Ufrivillig
+jeg spærrer her Dig Vejen, høje Herre;
+og, hvis det staar til mig at vælge her:
+jeg viger Pladsen.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+            Nej, ved Jupiter,
+den Mægtige, til hvem jeg gaar at ofre
+i denne Stund! jeg hilser dette Møde
+som heldigt Varsel. Sagnet, veed Du, siger:
+naar man før Middag paa sin Tempelvej
+møder en snehvid Due, skal det Ønske,
+som man vil bære frem for Gudens Alter,
+krones med Sejer. — Hil Dig, skjønne Jomfru!
+Vær Du mit gode Varsels hvide Due!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Jeg ynder ikke Duen, høje Herre;
+af kjælne Hyrder helliget til Venus,
+den kjeder mig med sin forelskte Kurren.
+Min Smag er mere streng — jeg foretrækker
+Pallas Athenes Ugle: Visdomsfuglen!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Men den er ogsaa Nattens — Dødens Fugl —
+og passer ilde til din fagre Ungdom.
+— Du hører Lyset til!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+            I Natten tindre
+de evige Stjerner; først naar Dagens Lys
+ei meer os blænder, tale de til Sjælen
+om Livets Gaader.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+            Ingen Dødelig
+formaar at løse dem!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+            Men dertil stræber
+dog Hver, som søger Visdom!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+            Leve viist
+er bedre end at gruble Livet bort;
+selv til en Strid herom er det for kort!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Nu vel! Saa skilles vi, min høje Herre.
+- Gid aldrig meer jeg maa Dig Vejen spærre!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(idet han viger til Siden).</center></small></nonum>
+Hvor er en Mand saa stolt, han hilser ej
+med Glæde slig en Hindring paa sin Vej!
+<nonum><small><center>(Han gaar, fulgt af Liktorerne, ud til Venstre, medens Triumftoget under fortsatte Hyldestraab fjerner sig i modsat Retning).</center></small></nonum>
+</body>
+</prose>
+
+<prose id="kaalund2018060604">
+<head>
+    <title>Anden Scene</title>
+    <firstline></firstline>
+    <source pages="18-25"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><small><center>(<w>Fulvias</w> Studereværelse, rig t udstyret i antik Smag. Buster af Platon, Sokrates og flere Oldtidsvise ere opstillede paa passende Steder).</center></small></nonum>
+<nonum><small><center>(<w>Fulvia</w>, som endnu bærer Lavrbærkrandsen, træder ind, fulgt af <w>Servius</w>, <w>Narkissos</w> og <w>Hyazinthos</w>).</center></small></nonum>
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(til Tvillingbrødrene).</center></small></nonum>
+Jeg takker Eder, mine kjære Venner,
+I gode Tvillingbrødre, som engang
+har delt min Barneleg, og nu som Voxne
+fornægte Eder selv i Et og Alt
+for mig at tjene!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+<nonum><small><center>(ærbødig).</center></small></nonum>
+            Ingen større Lykke
+vi kjende end at ofre Dig vor Tid.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(idet hun venlig rækker en Haand til hver).</center></small></nonum>
+I kappes begge med mig —
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+        — Kun i Flid;
+Du er vor Sol, — vi er din Dobbeltskygge.
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Som Guld vi veje Ordet fra din Mund!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Jeg trænger til at samle mig en Stund —
+— tilgiv mig!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+        Nødig vi fra Dig os fjerne.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(opmuntrende).</center></small></nonum>
+Jeg kalder snart!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+        Vi komme altfor gjerne!
+<nonum><small><right>(De gaa).</right></small></nonum>
+
+<nonum><small><center>(Fulvia tager Lavrbærkrandsen af sit Hoved og sætter den paa Platons).</center></small></nonum>
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Til Dig jeg vier her, som det sig sømmer,
+min vundne Lavrbærkrands, Du høje Drømmer,
+Du Verdens største Tænker — største Seer
+
+<nonum><center><w>Servius.</w></center></nonum>
+Ja, Seer! Det er just det rette Ord.
+Den gode Platon, han var grumme stor;
+men han forvandled Alting til Ideer.
+Det synes mig — jeg siger ej: for galt
+men, hvad man kalder lidt for idealt -
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(afbrydende).</center></small></nonum>
+Ja, derom Fader har vi ofte talt;
+hver Fugl maa flyve med sin egen Vinge.
+— Hav Tak, fordi Du ej har stækket min!
+Tro mig, jeg føler det, den er kun ringe!
+
+<nonum><center><w>Servius.</w></center></nonum>
+Dog er jeg stolt, min Datter, meget stolt
+af den Triumf, som Du i Dag har fejret,
+jeg deler den med Dig, thi, rent ud sagt,
+Du har ej faaet dit Geni til Arv
+fra Spindesiden, — det er mig, Du ligner,
+Du har mit gode Hoved, kjære Barn!
+- Dit Ydre har Du fra din græske Moder,
+som døde, da Du laa endnu i Svøbet,
+og som naturligvis Du ej kan mindes;
+din Næse, Gang og Holdning, det er hendes,
+men Ho’det, og hvad der er indeni,
+det Væsenlige — Aanden — dit Geni,
+det har Du arvet efter mig, din Fader.
+Vel flyver ej min Kløgt saa højt som din,
+men den er mere praktisk, mere fin!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Du overbar med alle mine Luner —
+
+<nonum><center><w>Servius.</w></center></nonum>
+Ja Du er voxet op foruden Tvang —
+forstaar sig, som det sømmer sig din Rang
+— i Overflod, som en Patricierdatter.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Af fuldest Hjerte jeg din Godhed skatter!
+
+<nonum><center><w>Servius.</w></center></nonum>
+Jeg selv er Filosof paa min Maneer:
+Halvt Stoiker og halvt Epikuræ’r;
+jeg svinger, saa at sige, mellem begge
+og vilde mulig Stoa foretrække,
+hvis ej dens Lære faldt mig lidt for tør.
+Mit Valgsprog er: Nyd, mens Du er i Live,
+og kniber det, hold dine Øren stive —
+med andre Ord: Tag Livet med Humør!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Det har Du, kjære Fader, sagt mig før.
+
+<nonum><center><w>Servius.</w></center></nonum>
+Ja, ja; — hvad Under, at jeg er lidt ør
+af alt det Meget, som jeg har at passe:
+Mit store Hus, min Mønstergaard paa Landet
+og mine Slaver og saa meget Andet —
+jeg gad nok see, om selve Sokrates
+og Platon, hvis de leved, kunde trække
+som jeg med Anstand for et saadant Læs!
+- Dog stiller jeg mig ej med dem i Række,
+jeg tager Sagen praktisk kun, som sagt,
+og holder ikke af at disputere,
+men Andres Visdom holder jeg i Ære —
+helst din, min Datter.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Ak! — jeg har kun smagt
+en Draabe af den rene Visdomskilde;
+men i mit Indre er en Higen lagt,
+som driver mig til Tørsten helt at stille!
+
+<nonum><center><w>Servius.</w></center></nonum>
+Jeg aned det alt den Gang, Du var lille,
+at Du var ikke af sædvanlig Slags.
+Avguren, som til Raads jeg spurgte strax,
+da Du var født, mig viste selv paa Himlen
+din Fødselsstjerne, — klar den stod blandt Vrimlen
+og lyste med en egen stille Glands,
+som fast fordunkled Ariadnes Krands.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Nu smigrer Du mig, Fader, — Herligheden,
+som jeg har skimtet kun, gjør mig beskeden.
+
+<nonum><center><w>Servius.</w></center></nonum>
+Ja, man kan ogsaa tage Sligt for luftig —
+tilgiv mig, Barn! Du har for liden Sands
+for Verden her. — Nu taler jeg fornuftig,
+som det en Fader sømmer. — Større Ære,
+end den Triumf, Du fejret har i Dag,
+Dig venter. Vid da: Aqvilinus selv,
+Prokonsul Aqvilinus, — tænk Dig, Barn! —
+har været her, imens Du holdt Din Tale
+hist i Museion; — Cæsars Stedfortræder
+i denne skjønne Del af Romerriget
+har gjæstet mig i denne Formiddag
+og anholdt om din Haand!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(koldt).</center></small></nonum>
+        Den Sag mig synes
+af ringe Vigtighed. — Du svared Nej, —
+naturligvis — og lod ham gaa sin Vej.
+
+<nonum><center><w>Servius.</w></center></nonum>
+Nej, derfor alle Guder mig bevare!
+Jeg staar paa Naale, Barn; hvad skal jeg svare?
+Som romersk Borger efter gammel Lov
+jeg er jo i min gode Ret som Fader,
+naar jeg befaler her.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Men Sligt Du hader. -
+Jeg veed det -
+
+<nonum><center><w>Servius.</w></center></nonum>
+        Men han pukked selv derpaa.
+Som det er Skik og Brug, hos mig han bejled
+og kunde ej min Vaklen ret forstaa.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Hvor plumpt! Han mener vel, at strax for Spejlet
+jeg staar med Rødmen som en ydmyg Brud
+og pynter paa min strenge Faders Bud
+mit Haar med Roser for at tækkes ham,
+som jeg skal ofres til!
+
+<nonum><center><w>Servius.</w></center></nonum>
+<nonum><small><center>(indsmigrende).</center></small></nonum>
+        Tro mig, mit Lam,
+Du vil beherske ham og tæmme Løven!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Men jeg har ikke Lyst at gjøre Prøven!
+
+<nonum><center><w>Servius.</w></center></nonum>
+Tænk, han kan svinge sig paa Cæsars Thronel
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(spottende).</center></small></nonum>
+Og nu, den Stakkel, mangler han en Kone!
+
+<nonum><center><w>Servius.</w></center></nonum>
+Forsmaa en saadan Mand! En saadan Ære!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Jeg kan ej hjælpe ham, han faar det bære,
+om han var selve Kejseren i Rom!
+
+<nonum><center><w>Servius.</w></center></nonum>
+Jeg bad ham tale med Dig selv derom;
+han svared Ja — saasnart han kom tilbage
+fra Templet, vilde her han atter møde.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Han fordrer altsaa Svar endnu i Dag —
+hovmodig som han er, — vis i sin Sag.
+Ja, lad ham komme! — Mine Kinder gløde
+af Harme, men mit Sind skal være koldt
+og selvbehersket.
+
+<nonum><center><w>Servius.</w></center></nonum>
+        Husk, at han er stolt!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Ja, det er ogsaa jeg, endskjøndt en Kvinde!
+
+<nonum><center><w>Servius.</w></center></nonum>
+Betænk - i Fald Du gjør ham til min Fjende!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Vær rolig, Fader, det har ingen Fare!
+Som det din Datter sømmer, skal jeg svare.
+
+<nonum><center><w>Servius.</w></center></nonum>
+I Fald jeg vidste, at Du svared Ja,
+da gik jeg mere glad end nu herfra!
+
+<nonum><small><right>(De gaa).</right></small></nonum>
+</body>
+</prose>
+
+<prose id="kaalund2018060605">
+<head>
+    <title>Tredie Scene</title>
+    <firstline></firstline>
+    <source pages="25-31"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><small><center>(Billedhuggeren <w>Lysias’s</w> Værksted. Mellem paabegyndte Arbejder i Leer og forskjellige Brudstykker af Figurer i Gribs sees en Billedstøtte, udført i naturlig Størrelse i Leer, forestillende en staaende draperet kvindelig Figur).</center></small></nonum>
+<nonum><small><center>(<w>Lysias</w> træder ind ad Døren i Baggrunden, fulgt af <w>to Avgurer</w>).</center></small></nonum>
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+Ah! — Du har næsten taget Vejret fra os,
+min gode Lysias, thi skjøndt vi haled
+bag efter Dig det Bedste, som vi kunde,
+og kaldte Dig ved Navn, vi naa’de Dig
+dog først ved Døren her.
+
+<nonum><center><w>Lysias.</w></center></nonum>
+<nonum><small><center>(mut).</center></small></nonum>
+        Jeg gik i Tanker.
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+See, see! I Tanker! — Ja et Kunstnerhoved
+er, saa at sige, altid i en Tilstand
+af Barselnød.
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+        Forund os blot at kigge
+ind i dit Værksted her — et Øjeblik.
+Men mulig komme vi Dig ubelejlig?
+Er Aanden over Dig? — Din Mine røber
+just ej Begejstring. — Eller venter Du
+maaskee i denne Stund paa en Model
+— en kvindelig, hvis altfor nøgne Skjønhed
+Du frygter for skal stikke Ild i Blodet
+paa fromme Mænd som os?
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+        Ved Fader Pan!
+Han rødmer —
+
+<nonum><center><w>Lysias.</w></center></nonum>
+<nonum><small><center>(uvillig).</center></small></nonum>
+        Ja, paa Eders Fromheds Vegne!
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+Nej, vil man see den Hykler! Ha—ha—ha—!
+Han er vor Mester i den skjønne Kunst
+at spille ærbar!
+
+<nonum><center><w>Lysias.</w></center></nonum>
+        I forstaa mig ej!
+For mig er Kunsten, som jeg dyrker, hellig;
+jeg taaler ej, den spottes.
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+        Ih, bevares!
+Det gjør jo Ingen af os — aabenlyst;
+vi allermindst, vi hellige Avgurer,
+som sørge for, at dine Billedstøtter
+faa Plads paa Tempelaltre og tilbedes
+i Virakskyer. — Men her er vi alene —
+hvorfor da bære Maske for hverandre!
+Du er jo paa en Maade En af Vore,
+og vi er gode Kunder — ikke sandt?
+De bedste, som Du har? Hvor kan Du nænne
+at tage os vor Smule Lystighed
+saa ilde op?
+
+<nonum><center><w>Lysias.</w></center></nonum>
+        Jeg er ej oplagt nu
+til den Slags Lystighed!
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+        Nu, lad saa være!
+Vi komme egenlig, kun for at see
+dit sidste Værk; det kolossale Billed
+af Jupiter, bestilt i parisk Marmor
+til Ammonstemplet.
+
+<nonum><center><w>Lysias.</w></center></nonum>
+        Hvis I vil behage
+at gaa til Højre gjennem denne Dør —
+der finder I mit store Marmorværksted;
+her i det mindre former jeg kun Udkast.
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+Saa det er her, det Allerhelligste,
+hvori vi staa — her føder Du Ideer,
+undfanger Fostrene og svøber dem
+i vaade Klude!
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+        Lykkelige Mand, Du skaber Guder!
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+        Og Gudinder med,
+saa jordiske, at Alle kjende dem.
+Ja, nægt det, Lysias, i Fald Du kan!
+Vi saae jo nys med vore egne Øjne,
+hvordan Du trak for Fulvias Triumfvogn.
+Afsides stod vi To og gotted os
+ved Synet af din Iver. Rygtet siger,
+Du modellerer paa den Skjønnes Billed.
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+<nonum><small><center>(idet han faar Øje paa den kvindelige Statue).</center></small></nonum>
+Aha! hvad seer jeg! Ja, der har vi hende -
+halvfærdig alt i Leer, forklædt som Musa,
+vor Bys Aspasia — den ny’ Athene —
+Vidunderet af Visdom!
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+        Ja, Du har Ret,
+saa sandt jeg lever! det er Fulvia,
+den højtbeundrede, lavrbærbekrandste,
+som tror paa Platon og paa Sokrates
+meer end paa Guderne.
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+        Hun, som vil kalde
+den store Tid tilbage!
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+        Dydspræstinden
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+Den rene Jomfru!
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+        Som foragter os
+og tordner løs mod vore slette Sæder!
+
+<nonum><center><w>Lysias.</w></center></nonum>
+<nonum><small><center>(forlegen).</center></small></nonum>
+I tage fejl! Det er ej Fulvia,
+men kun et Foster af min Fantasi:
+Begejstringens og Heltedigtets Musa
+Kalliope.
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+        Ej, ej, Kalliope —
+
+<nonum><center><w>Lysias.</w></center></nonum>
+Jeg nægter ej, der er en Smule Lighed
+imellem Fulvia og dette Billed —
+et eller andet Træk, som jeg maaskee
+har laant fra hendes Ansigt.
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+        Virkelig?
+Nej vil man see! det ligner dog mærkværdigt
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+Hvem har bestilt det?
+
+<nonum><center><w>Lysias.</w></center></nonum>
+<nonum><small><center>(kort).</center></small></nonum>
+        Ingen.
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+        Er det muligt!
+
+<nonum><center><w>Lysias.</w></center></nonum>
+Tror I, en Kunstner skaber blot for Vinding?
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+<nonum><small><center>(sledsk).</center></small></nonum>
+Godt Ord igjen! Du bliver strax saa hidsig.
+Vi kan jo tale nu om andre Ting. —
+Det var din kolossale Jupiter,
+vi skulde see.
+
+<nonum><center><w>Lysias.</w></center></nonum>
+<nonum><small><center>(gnaven).</center></small></nonum>
+        Ja vist, den staar histinde —
+til denne Side — jeg skal vise Vejen.
+Kom, følg mig!
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+<nonum><small><center>(idet han nærmer sig Døren).</center></small></nonum>
+        Hør, jeg har en god Idee:
+Hvad om Du magede det saa, at Guden
+— jeg mener den, Du hugget har i Sten —
+fik Evne til at tale? Tiden trænger
+til noget Nyt; den store dumme Mængde
+maa styrkes i sin Tro; thi disse Kristne —
+— Forbandet være de! Gid Ild og Pest
+fortære dem og deres usle Lære! —
+de voxe op omkring os nu som Ukrudt
+og tage Brødet snart af Munden paa os.
+Seer Du, i Fald Du var lidt meer medgjørlig
+og vilde lytte kun et Øjeblik
+med Rolighed til hvad jeg har at sige —
+
+<nonum><center><w>Lysias.</w></center></nonum>
+<nonum><small><center>(heftig).</center></small></nonum>
+Kom! kom!
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+<nonum><small><center>(ærgerlig).</center></small></nonum>
+        Jeg taler nok for døve Øren!
+
+<nonum><center><w>Lysias.</w></center></nonum>
+Undskyld! min Tid er knap. — See her er Døren.
+<nonum><small><right>(De gaa).</right></small></nonum>
+</body>
+</prose>
+
+<prose id="kaalund2018060606">
+<head>
+    <title>Fjerde Scene</title>
+    <firstline></firstline>
+    <source pages="31-42"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+FJERDE SCENE.
+<nonum><small><center><w>Fulvias</w> Studereværelse (samme Dekoration som i anden Scene).</center></small></nonum>
+<nonum><small><center>(<w>Fulvia</w> kommer med <w>Narkissos</w> og <w>Hyazinthos</w>, fulgt af nogle <w>Slaver</w> og <w>Slavinder</w>, som i ærbødig Stilhed holde sig tilbage i Salens Baggrund).</center></small></nonum>
+
+En Slave.
+<nonum><small><center>(træder ind og melder):</center></small></nonum>
+Prokonsul Aqvilinus!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Byd ham komme!
+<nonum><small><right>(Slaven gaar).</right></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(træder ind ad Hoveddøren).</center></small></nonum>
+For anden Gang i Dag jeg bringer Dig
+min Hyldest, Fulvia!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(ironisk).</center></small></nonum>
+        For megen Ære,
+min høje Herre, Du beviser mig!
+— Behag at tage Plads, i Fald Du vil;
+hvis jeg har Valget, ønsker jeg at staa.
+Jeg er jo ung og kjender ikke Tonen,
+— men Du er Hofmand — Du staar nær ved Thronen.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Min Højhed har jeg vundet med mit Sværd,
+med oprejst Hoved steg jeg paa min Bane.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Og er det — Duen nu, du søger her:
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(smilende).</center></small></nonum>
+Nej — ikke Duen — men den stolte Svane!
+— Men dine Slaver, seer jeg, er til Stede;
+jeg beder, send dem bort, thi kun for Dig
+er det bestemt, hvad her jeg har at sige.
+
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(med en bydende Haandbevægelse).</center></small></nonum>
+Fjern Eder, Slaver!
+<nonum><small><center>(spottende).</center></small></nonum>
+        Vee, hvis Nogen lurer!
+<nonum><small><right>(Slaverne gaa).</right></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(pegende paa Tvillingbrødrene).</center></small></nonum>
+Men disse To?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(smilende).</center></small></nonum>
+        Ah, mine Dioskurer!
+Nej undskyld, Herre! De er mine Venner,
+vi Tre studere sammen; jeg har Intet
+at skjule for de To.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+        En sælsom Omgang
+for Dig — en Kvinde: tvende unge Mænd!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Ja, hvis til Raads jeg spurgte Den og Den,
+og hørte efter, hvad de Mange mene —
+men jeg har Mod at danne mig alene
+mit Syn paa Verden.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+        Dristig er din Smag!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(med kvindelig Selvfølelse).</center></small></nonum>
+Men Alt er rent — Du veed jo — for den Rene
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Var det ej saa, jeg stod ej her i Dag!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(koldt).</center></small></nonum>
+Dit Ærind, Herre?
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+        — Frydes ved din Skjønhed
+og sige mandig Dig, foruden Omsvøb:
+Jeg har Dig kjær!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(undvigende).</center></small></nonum>
+        Hvis jeg besidder Skjønhed,
+som Du og Fler behage det at sige,
+da — tro mig — selv jeg skatter den kun lidt;
+den er forgjængelig, men Aanden lever,
+kun den besejrer Tiden, kjender ej
+til Alder eller Kjøn!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+        Du glemmer der,
+at selv blandt de udødelige Guder
+gjør Kjønnet Forskjel mellem Mand og Kvinde;
+den høje Tordner Zevs har sin Gudinde.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Ja han har mange flere, vil man sige,
+og har, som vel Du veed, sin store Plage,
+thi Hera skal jo være meget skinsyg
+og ofte kives med sin Ægtemage.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Spøg ej med den guddommelige Ild,
+men husk, at Eros’ Rige Alt omfatter:
+Himmel og Jord!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Ja, han gjør Mænd til Latter
+og driver selv med Guderne sit Spil!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Den, som kan trodse ham, er ikke til!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Dog veed jeg En, som stolt og skudfast smiler
+ad Eros Pile: selve Jovis Datter,
+Visdomsgudinden med sit blanke Skjold.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(med Lidenskab).</center></small></nonum>
+Du ligner ikke hende; hun er kold,
+men Du er ung og varm, og Livets Roser
+blomstre jo paa dit Aasyn.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Rosen visner,
+og Elskov blusser kort som Ild i Straa. —
+Der er et Ord — et lille — men som isner
+igjennem Marv og Ben: Du skal forgaa!
+Forsvinde som et Bølgeslag i Havet!
+— Det Ord, det har min Ungdomslyst begravet;
+see, derfor kan Du ikke mig forstaa.
+— Søg, Aqvilinus, søg, hvad let Du finder;
+der er paa Jorden Tusinder af Kvinder,
+langt skjønnere, end jeg. — Bliv ikke vred!
+Du vil kun drage mig til Jorden ned —
+jeg higer opad mod de lyse Tinder!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Det lyder smukt; men det er Sværmeri!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Ja, ikke sandt! for Dig slet ikke Andet!
+Du seer jo klart — Du er jo verdensdannet,
+en ægte Romer, stolt af din Forstand
+paa denne Verdens Ting —
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(stolt).</center></small></nonum>
+        Jeg er en Mand;
+jeg bygger ej min Lykkes Hus paa Sand!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Men Hellas’ høje Visdom — Skjønhedsdrømmen —
+forstaar Du ej!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+        Jeg flyder ej med Strømmen;
+og drømme vaagen, det er ej min Sag!
+Tro mig, Du hildes i et Selvbedrag!
+Skjøndt halvt et Barn endnu, Du vil dog raade
+Alskabningens ufattelige Gaade,
+og løfte Evighedens Tindingbind.
+— See i dit eget unge Hjerte ind;
+det er ej dødt; Du føler Blodet rulle,
+og denne Kind forraader ingen Kulde.
+— Dugdraaben paa et Edderkoppespind,
+og Blomsterne, som sig uskyldig sole,
+forkynde Meer end Eders lærde Skole!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Saa taler Den, der ej har Visdom søgt!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Saa taler Den, der har paa Livet Kløgt!
+Jeg elsker Lyset, men dets Flammestraale
+igjennem Rummet kan jeg ikke maale;
+jeg føler den — jeg fordrer ikke meer,
+dens fulde Glands kan intet Øje taale:
+Den, som paa Solen stirrer, Intet seer!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Hvis jeg af denne Verdens Sol blev blindet,
+da vandt maaskee jeg Aandens Lys for Skinnet
+blind var jo Oedipos og blind Homér!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Du præker Oprør mod Naturens Orden —
+betænk Dig, Fulvia, — fornægt ej Jorden,
+men kast Dig i den store Moders Favn,
+at Du kan vinde selv et Modernavn!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(heftig).</center></small></nonum>
+Det var at tabe kun, men ej at vinde!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(bevæget).</center></small></nonum>
+For Alvor, Fulvia: Modtag min Haand!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(vigende tilbage).</center></small></nonum>
+Det var at lægge mig i Slavebaand —
+før vier jeg mig ind til Vestalinde!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+O Daarskab! Du vil vrage Livets Lyst!
+Du kjender ej Dig selv, Du svage Kvinde.
+Et Hav af Længsler hviler i dit Bryst,
+det er Naturen kun i Dig, som sover;
+men ogsaa Du fornemme skal dens Røst.
+— Støt Dig til mig, min Arm har Manddomsstyrke,
+fast planter jeg min Fod paa denne Jord;
+som Du jeg paa de evige Guder tror;
+Pallas Athene maa Du gjerne dyrke,
+naar Eros’ Roser Du om Panden snor!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Før vil jeg flette Tidsler mig i Haaret!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(streng).</center></small></nonum>
+Du er forfængelig!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Nej; uden Sands
+for Verdens Flitter og dens falske Glands!
+— Kald mig et Barn: jeg har dog Lavren baaret!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(med stolt Haan).</center></small></nonum>
+Ja, den er bleven billig her til Lands!
+Jeg selv har baaret en — det var som Kriger,
+og den blev vunden, seer Du, med mit Blod.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Ej blot i Slaget kan man vise Mod!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(beherskende sig).</center></small></nonum>
+Du er forkjælet og forvænt ved Smiger,
+skjøn — men barnagtig midt i al din Trods!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(lidenskabelig).</center></small></nonum>
+En Afgrund ligger der imellem os!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(mørk).</center></small></nonum>
+Er det dit sidste Ord?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Mit allersidste!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Nu vel — jeg skal Dig ikke mere friste!
+<nonum><small><right>(gaar).</right></small></nonum>
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(i stærk Bevægelse).</center></small></nonum>
+Ja, lad ham gaa! Jeg frygter ej hans Vrede,
+jeg trodser den!
+<nonum><small><center>(Vender sig mod Tvillingbrødrene, som under det Foregaaende have holdt sig afsides, tilsyneladende sysselsatte med at læse i nogle Pergamentsruller).</center></small></nonum>
+        Ah, I er her til Stede —
+og har vel Alting hørt?
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+<nonum><small><center>(beskeden).</center></small></nonum>
+        Du bød os blive —
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Ja; det er sandt, — men jeg er nu forstemt
+og træt —
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+        Dit Øje som i Feber brænder!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(utaalmodig).</center></small></nonum>
+Saa gaa da — <small>(venligere)</small> Lad mig ene, mine Venner!
+<nonum><small><right>(De gaa).</right></small></nonum>
+
+<nonum><center><w>Servius.</w></center></nonum>
+<nonum><small><center>(træder hurtig ind).</center></small></nonum>
+Ved Herkules! Du har fornærmet ham!
+Det stod at læse i hans mørke Miner;
+den store Aare paa hans brede Pande
+sig takked som et Lyn, naar det slaar ned;
+han skred forbi mig som en vred Achilles
+og agted ikke mig en Hilsen værd.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Det glæder mig!
+
+<nonum><center><w>Servius.</w></center></nonum>
+        Hvad siger Du, min Datter!
+Det glæder Dig?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Ja, at saa stolt en Mand,
+saa helstøbt, broncehaard som denne Romer,
+der pukker paa at staa saa fast paa Jorden,
+kan tabe Ligevægten i en Kamp
+mod mig — mig, som han kaldte for et Barn!
+
+<nonum><center><w>Servius.</w></center></nonum>
+O, gid Du var et Barn! Men Du er voxen
+og giftefærdig — og har givet ham
+et trodsigt Nej!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Ja, derfor var han vred!
+
+<nonum><center><w>Servius.</w></center></nonum>
+<nonum><small><center>(hidsig).</center></small></nonum>
+Men det er ogsaa jeg, — og jeg har Magten,
+thi jeg er Herre i mit Hus og raader
+som Fader over Dig! — Endnu kan Alt
+vel gjøres godt igjen. Du er en Pige,
+og Du skal lystre mig, naar jeg Dig byder
+at tage ham til Husbond! hører Du!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(oprørt).</center></small></nonum>
+Jeg drikker heller Saften af Skarntyder!
+
+<nonum><center><w>Servius.</w></center></nonum>
+Det gjør Du ej! — Farvel! — Betænk Dig nu.
+<nonum><small><right>(gaar).</right></small></nonum>
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(staar et Øjeblik hensunken i sig selv, gaar derpaa pludselig hen mod Sokrates’s Buste og kaster sig paa Knæ foran den med udbredte Arme):</center></small></nonum>
+Herlige Sokrates! Du, som, grimmest blandt alle de Vise,
+magted den højeste Kunst, som nogen Dødelig øved,
+som Praxiteles ej, hvor skjønt han Marmoret formed,
+og ej Phidias, han, som neddrog Guder til Jorden,
+evned at hæve sig til: den Kunst at besejre sig selv
+og i guddommelig Ro udforme sig selv, som af Blokken
+Kunstneren mejsler et Billede frem, der straaler af Skjønhed;
+— Stygge Silenos, Du, med det skaldede knudrede Hoved,
+i hvis mægtige Hvælving Eros — den Store, den Ægte,
+førstfødte Søn af Chaos — har skjult sig bag Satyrens Maske,
+ydmyg jeg knæler for Dig og paakalder din Aand, hvor den er nu:
+lær mig at finde mig selv i min indre hellige Urgrund.
+See, jeg er ung endnu — et Barn i Aar og Erfaring —
+frels mig fra Malstrømmens Hvirvler, lad mig ej synke
+ned i det oprørte Hav, af hvis Bølger Menneskepøblen
+skylles magtløs omkring som Mollusker og Slimdyr i Dybet!
+— »Viden er Alt«, har Du sagt. Ak, hvad veed jeg? Intet! — Selv Du dog
+tilstod i dybest Forstand: »Viden er Intet paa Jord!«
+Intet at vide og Alt? O Gaade! Hvo kan det forene ?
+Hæv mig, o Sokrates, Du, til dit Syn paa det evige Ene!
+
+<nonum><small><center>(Tæppet falder).</center></small></nonum>
+</body>
+</prose>
+
+</content>
+</section>
+
+<section>
+<head>
+    <title>Anden Akt</title>
+</head>
+<content>
+
+<prose id="kaalund2018060607">
+<head>
+    <title>Første Scene</title>
+    <firstline></firstline>
+    <source pages="43-57"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><small><center>(Sal paa Servius’s Landgods i Nærheden af Alexandria. Mellem den aabne Søjlerække, der danner Salens Indgang, seer man ud i en Have, prydet med Statuer og beskygget af sydlandske Væxter).</center></small></nonum>
+<nonum><small><center>(<w>Narkissos</w> og <w>Hyazinthos</w>, klædte som i første Akt).</center></small></nonum>
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Hvad fattes mon vor kjære Fulvia?
+Hun skyr i Dag vort Selskab; ene vandrer
+i Havens Skygger hun i dybe Tanker
+og svarer kort og vrantent paa hvert Spørgsmaal!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Saaledes saae jeg hende aldrig før.
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Jeg ikke heller. — Jeg forstaar det ej;
+hun higed dog i Gaar herud paa Landet.
+Og var i Aftes, da ved Solens Nedgang
+vi kom hertil, meer end sædvanlig oprømt,
+hvor sprudled hun af Liv — hvor lo hun glad,
+da Gaardens store Hunde sprang i Lænken
+og hilste os velkommen!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+        Skulde hun
+fortryde alt det Nej, hun gav i Gaar —
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Det gjør hun ej, før falder Himlen ned!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Jeg elsker hende som en ædel Søster!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Ja, ogsaa jeg — Ak, gid hun var vor Søster,
+da vilde vi for hende ene leve!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Det vil vi ogsaa nu —
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+        Men vi er Mænd,
+og maa vel skille os tilsidst fra hende —
+jeg frygter det.
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+        Ej nogen anden Kvinde
+jeg fandt saa skjøn!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+<nonum><small><center>(henreven).</center></small></nonum>
+        Ja, hun er vor Gudinde!
+Hvis hun af Marmor paa et Alter stod,
+da turde vi omfavne hendes Fod!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+<nonum><small><center>(med et pludseligt Udbrud, men dæmpet).</center></small></nonum>
+Vi elske hende begge!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+<nonum><small><center>(ligeledes).</center></small></nonum>
+        Jeg, som Du!
+For første Gang har Læben sagt det nu!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+<nonum><small><center>(idet han lægger sin Arm om Broderens Hals).</center></small></nonum>
+Et Tvillingpar vi blev til Verden bragt
+som af den samme Frugt to Mandelkjerner.
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Der er kun Forskjel paa vor ydre Dragt.
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Hun kalder os for sine Dobbeltstjerner.
+Ak! — samme Afstand os fra hende fjerner!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+I Fald hun kjendte Kjærlighedens Magt
+og — tænk Dig — foretrak af os den ene?
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Tys, Broder! Tys! — Det kan Du ikke mene
+hun maatte slutte da os begge To
+i samme Favntag —
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+        Taabelige Tro!
+Hun kan ej fatte Elskov — hun, den Rene!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Tys, tys! Lad ikke Luften selv det høre;
+den kunde bringe hen til hendes Øre
+den Løndom, som vi To maa gjemme paa!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Ja, ja — saalænge vore Hjerter slaa!
+
+<nonum><small><center>(<w>Fulvia</w>, klædt i en mandlig Dragt af samme Snit som Tvillingbrødrenes, men af hvid Farve, kommer fra Haven. Efter et Øjeblik at have staaet tankefuld mellem Søjlerne, gaar hun langsomt hen til et Bord, hvorpaa der staar en Vase med Blomster).</center></small></nonum>
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Hvem har med Blomster denne Vase fyldt?
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+For at behage Dig, vi plukked dem
+i denne Morgenstund, da deres Blade
+glimred af Dug —
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+        Det var de skjønneste,
+vi kunde finde —
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(forstemt).</center></small></nonum>
+        Tag dem! Kast dem bort!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+<nonum><small><center>(tøvende).</center></small></nonum>
+I Fald Du ønsker det —
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Gjør, som jeg siger!
+
+<nonum><small><center>(<w>Hyazinthos</w> tager Blomsterne og kaster dem ud i Haven).</center></small></nonum>
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Saa fuldendt i sig selv, saa ædelt formet,
+behøver denne Vase ej at borge .
+sin Pryd af de forgjængelige Blomster,
+skjøndt den er dannet kun af simpelt Leer.
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Var den af Guld, Du skatted den ej meer!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(som talende med sig selv).</center></small></nonum>
+— Promethevs, siger Sagnet, har os skabt
+af samme simple Stof, men Guddomsgnisten
+stjal han, den mægtige Titan, fra Himlen.
+Ham skylder vi den Smule Aand, vi fik,
+og ikke de misundelige Guder,
+som hævned Ranet!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+        Frygtelig var Hævnen!
+Titanen lænked de til Kavkasos,
+hvor Kjæmpegribben hakker i hans Lever.
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Naar Jorden bæver under vore Fødder,
+da er der dem, som mene, det er ham,
+der vildt i Smerte ryster sine Lænker.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Ja, den kan rystes, denne faste Jord,
+hvorpaa de Dumme tro at staa saa sikkert
+Jeg kunde ønske mig Titanens Kraft
+for ret at ryste dem og deres Fasthed!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+<nonum><small><center>(lyttende).</center></small></nonum>
+Der kommer Nogen!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(fortrædelig).</center></small></nonum>
+        See, hvem det kan være.
+Jeg har jo sagt, at jeg vil være ene!
+
+<nonum><small><center>(Billedhuggeren <w>Lysias</w> træder ind fra Haven, men tøver ved Indgangen, idet han ærbødig hilser <w>Fulvia</w>).</center></small></nonum>
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(studsende).</center></small></nonum>
+Hvad? Lysias! — Du her!
+
+<nonum><center><w>Lysias.</w></center></nonum>
+        Jeg kommer umeldt —
+tilgiv min Dristighed!. — Jeg fik at vide,
+at Du var rejst i Gaar herud paa Landet;
+hvornaar Du kom tilbage, vidste Ingen -
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+I Sandhed, Ven, Du overrasker mig!
+Veed Du, jeg fristes næsten til at tro:
+Det er din Dobbeltgjænger, ej Dig selv,
+som her mig gjæster —
+
+<nonum><center><w>Lysias.</w></center></nonum>
+        Aldrig strømmed Blodet
+mig mere varmt til Hjertet, Fulvia,
+end just i denne Stund; først her hos Dig
+er jeg mig selv saa helt, som jeg kan være!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Men hvilket Ærind har Dig ført herud,
+saa langt fra Staden? Kommer Du maaskee,
+opfyldt som altid af din Kunstneriver
+— en anden Phidias — for at studere
+mit stakkels Hoveds Form, mit Ansigts Træk?
+— Ja, ja, — det ligner Dig! Anstil Dig ej,
+som om Du kommer for at lytte til
+min Visdom, Lysias; — Du er for god
+til Omsvøb; mere ærlig end de Fleste;
+— Det er Modellen til det Musabilled,
+Du modellerer paa, som her Du søger.
+Hvis det er saa — nu vel! saa see Dig mæt!
+Er der et Blik — et Smil, som Du vil fange,
+saa skynd Dig, skynd Dig, — gjør mig Pinen let!
+— Dit Billed, synes jeg, bli’r aldrig færdigt!
+
+<nonum><center><w>Lysias.</w></center></nonum>
+Hvis det skal blive Idealet værdigt,
+da, skjønne Fulvia, da har Du Ret!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Hvem naa’r paa Jorden her sit Ideal!
+Hvem har vel fuldbragt helt, hvad han har villet!
+
+<nonum><center><w>Lysias.</w></center></nonum>
+Det føler daglig jeg foran dit Billed —
+selv har Du nævnet der min Kunstnerkval!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(undvigende).</center></small></nonum>
+See, Lysias: her er Modellen stillet —
+vælg Lyset selv; — hvorledes skal jeg staa?
+
+<nonum><center><w>Lysias.</w></center></nonum>
+<nonum><small><center>(spændt).</center></small></nonum>
+Nej! Jeg maa tale med Dig!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+<nonum><small><center>(til Fulvia).</center></small></nonum>
+        Skal vi gaa?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Ja, vent derude!
+<nonum><small><center>(Tvillingbrødrene fjerne sig).</center></small></nonum>
+        — Nu, saa lad mig høre,
+hvad der har ført Dig hid den lange Vej!
+
+<nonum><center><w>Lysias.</w></center></nonum>
+Et Rygte, Fulvia, har naaet mit Øre —
+O, give Guderne, det lyver ej!
+Det er min egen Lykke, som det gjælder!
+— Sig, har Du svaret Aqvilinus Nej —
+afviist den Stolte?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(forundret).</center></small></nonum>
+        Ja, hvad Rygtet melder
+er Sandhed, Lysias -
+
+<nonum><center><w>Lysias.</w></center></nonum>
+        - Og Du er fri!
+Pris være Guderne — jeg aander atter!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Tilgiv mig, Ven; — endnu jeg ikke fatter,
+hvorfor Du spørger mig derom —
+
+<nonum><center><w>Lysias.</w></center></nonum>
+<nonum><small><center>(med Lidenskab).</center></small></nonum>
+        Fordi
+jeg meer end Alt, end Livet selv Dig skatter.
+I Dig jeg seer en Afglands her paa Jord
+af alt det Herligste, hvorpaa jeg tror:
+Mit Ideal —
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(ironisk).</center></small></nonum>
+        — Jeg veed det — ja! Din Muse,
+en himmelsk Skabning uden Kjød og Blod,
+som er for denne Verden altfor god —
+hvis Skjønhed kun er til for at beruse
+og hugges ud af Dig i Marmorsten;
+— men jeg vil ej beundres og tilbedes, —
+mit Sind er trodsigt, seer Du, jeg kan vredes
+— og jeg vil staa paa mine egne Ben!
+Veed Du, at der er dem, som kjækt mig siger:
+Jeg er forkjælet og forvænt ved Smiger —
+og, at jeg meer end halvvejs selv det' tror?
+
+<nonum><center><w>Lysias.</w></center></nonum>
+Jeg veed, min Lykke kun paa Dig beror!
+— O, vend Dig ikke bort! rynk ikke Panden!
+Jeg elsker Dig som ingen — ingen Anden —
+langt meer end jeg kan sige det med Ord.
+— Er det maaske for højt jeg Blikket fæster,
+naar her jeg dristig bejler til din Haand?
+Selv har Da kaldt mig i min Kunst en Mester —
+jeg er Dig værdig; ogsaa jeg har Aand —
+mit Maal er højt som dit — vi passe sammen,
+i mig som Dig er der en Gnist af Flammen,
+der straaler med Udødeligheds Glands
+fra Hellas’ Gudebjerge! — Ved den Krands,
+Du vandt i Gaar! — Ved ham, som Solen styrer:
+Phøbus Apollon! — Ved hans hellige Lyre,
+hvorom Horaer flokke sig i Dands —
+ved os skal Aanden fra de store Dage
+fornyes igjen! —
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(bedrøvet).</center></small></nonum>
+        Nej, nej, min stakkels Ven!
+Du skuffer Dig; den vender ej tilbage!
+
+<nonum><center><w>Lysias.</w></center></nonum>
+Saa lad os puste op den sidste Glød!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(med dyb Bevægelse).</center></small></nonum>
+Nej, Lysias: Den store Pan er død —
+og rundtom lyder nu Naturens Klage
+fra Bjerg og Dal og fra den vilde Elv; —
+det er for mig, som om den slaar tilbage
+med tusindfoldigt Ekko fra mig selv!
+— Gaa! gaa! — Indbild Dig ej, at Du er Manden,
+der støtte kan en Sjæl i Tvivlens Nød —
+en Sjæl, der hungrer efter Livets Brød —
+nej, Lysias, Du er mig alt for blød!
+Mit Maal er ikke dit; min Vej en anden;
+den Lavrbærkrands, jeg bar i Gaar om Panden,
+jeg agter neppe mere end det Støv,
+jeg træder paa. For Smiger er jeg døv,
+døv for den Kjærlighed, hvorom Du taler,
+med hele Verden og mig selv i Strid!
+— Glæd Dig, Du lever i den svundne Tid
+med dine Drømme, — dine Idealer;
+for Dig er Livet endnu rigt paa Trøst!
+
+<nonum><center><w>Lysias.</w></center></nonum>
+Ak nej, for mig har Livet tabt sin Lyst —
+nu falder over mig dets Natteskygge!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(udstrækkende Haanden imod ham).</center></small></nonum>
+Jeg veed, Du sætter paa mit Venskab Pris,
+lad mig din Haand til venlig Afsked trykke!
+
+<nonum><center><w>Lysias.</w></center></nonum>
+<nonum><small><center>(med bortvendt Ansigt).</center></small></nonum>
+Dit Venskab? Vee mig! det er koldt som Is!
+<nonum><small><right>(iler ud).</right></small></nonum>
+
+<nonum><small><center>(<w>Fulvia</w> gaar med højet Hoved hen og sætter sig paa en Stol. Hende Stilling røber dyb Modfaldenhed).</center></small></nonum>
+<nonum><small><center>(Tvillingbrødrene træde ind fra Haven og nærme sig hende).</center></small></nonum>
+<nonum><small><center>(Pavse).</center></small></nonum>
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Du er bedrøvet?
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+        Skal vi læse for Dig?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(adspredt).</center></small></nonum>
+Gjør som I synes.
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+        Vil Du, vi skal vælge
+et Stykke af Homér?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Nej! disse Helte,
+som slagte og som slagtes, kjede mig.
+— Her ligger et beskrevet Pergament —
+hvad indeholder det?
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+<nonum><small><center>(tager Pergamentsrullen fra Bordet og kaster et Blik deri).</center></small></nonum>
+        Et Skrift om Landbrug
+fra Kejser Neros Tid af Columella;
+din Fader har forglemt det her paa Bordet;
+det er hans Yndlingslæsning.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(fremdeles adspredt).</center></small></nonum>
+Lad mig høre!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+<nonum><small><center>(læser).</center></small></nonum>
+»Om Biavl«.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Spring det over!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+<nonum><small><center>(læser).</center></small></nonum>
+        »Om at fodre
+og fede Høns«.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(haanlig).</center></small></nonum>
+        Det er for Lækkermunde
+og for Avgurer!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Her er Vers!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Saa læs!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+<nonum><small><center>(Læser).</center></small></nonum>
+»See, nu har Jord, nu har Hav, nu har hele den udstrakte Verden
+smilende Foraar paa Ny, som vækker Livet til Elskov;
+først kun en ulmende Gnist den hviler i hellige Løndom,
+men den voxer til Ild, den flammer i Blodet og  Marven,
+indtil med Frugtbarheds Kraft Aphrodite Alting har opfyldt,
+bragt utallige Afkom frem og atter og atter
+Jorden med Slægter fornyet, at ej tom en Gang den skal vorde -«
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(springer heftig op).</center></small></nonum>
+Hold op! Jeg har alt faaet nok heraf!
+— Bestandig denne dumme Snak om Elskov,
+som om vort Liv ej havde større Maal,
+end det at bringe Afkom frem paa Jorden!
+— I trætter mig! Jeg trænger ej til Selskab,
+men til Bevægelse — til Luft og Frihed!
+Jeg kvæles her imellem disse Mure —
+jeg maa derud, hvor Synet taber sig
+i det uhyre Fjerne! ud hvor Ørknen
+omhvælves kun af Himlens Kæmpekuppel!
+<nonum><small><center>(bydende).</center></small></nonum>
+Lad spænde for min Vogn! — Selv vil jeg styre
+det kaade Spand!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+        Hvis det tog Magten fra Dig!
+Betænk! Din Kvindearm er ej saa øvet
+som vore —
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+<nonum><small><center>(bønligt).</center></small></nonum>
+        Lad os styre Vognen for Dig!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(koldt).</center></small></nonum>
+Jeg kjører ene!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+        Tag dog i det Mindste
+en trofast Slave med!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Behøves ej —
+det er ej første Gang, jeg fører Tøjlen.
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Men ene — uden mandlig Hjælp — betænk!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Jeg trænger ej dertil. — Gjør som jeg siger
+jeg taaler ingen Modstand!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+        Harmes ej —
+for Dig vi ofre villigt Liv og Blod!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(utaalmodig).</center></small></nonum>
+Hvi staa I da mit Forsæt nu imod
+og tirre mig til Vrede!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+        Som Du vil —
+vi lyde Dig i Alt!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Ha, disse Mænd
+see ned paa os som Svage og behandle
+os Kvinder, som vi kun var Legetøj
+De skrive Love — vi skal lystre dem;
+vi passe ej i Raadet, ej paa Forum,
+men kun i Hjemmet eller Ammestuen.
+For dem staar Verden aaben; alt som Drenge
+de kappes i at brydes, tæmme Heste
+og styre Spandet. — Men sig selv at styre —
+tøjle de stærke Lidenskabers Spand,
+det mægte de fast mindre end vi Kvinder!
+Vel an! kan denne Arm sig ikke maale
+i Styrke med en Mands — stærk er min Villiel
+Lad kun de vilde Heste fare frem,
+jeg skal dog vise, jeg kan tøjle dem!
+<nonum><small><right>(gaar).</right></small></nonum>
+</body>
+</prose>
+
+<prose id="kaalund2018060608">
+<head>
+    <title>Anden Scene</title>
+    <firstline></firstline>
+    <source pages="57-66"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><small><center>(Sal i Prokonsulens Palads i Alexandria. <w>Aqvilinus</w> kommer fra en Sideindgang og gaar en Stund med heftige Skridt frem og tilbage, standser derpaa pludselig og stryger sig med Haanden over Panden:)</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Dumt — dumt! Jeg vil ej tænke meer herpaa.
+Jeg er jo ingen Dreng, som første Gang
+med vaagnet Elskovstrang har seet mig svimmel
+i et Par Kvindeøjne. Kvæle vil jeg
+Erindringen om denne Drømmerske,
+som har fortryllet mig, men stødt med Haan
+mit Hjerte bort! — Hvad skal en Mand med Hjerte?
+Det gjør ham maanesyg ved højlys Dag,
+uskikket til at bære, som det bør sig,
+sit Hoved højt i denne haarde Verden.
+Nu vel! — alene vil min Vej jeg gaa. —
+Det var min Lykkes Blomst, hun traadte paa,
+jeg føler det. — Men hævne mig paa hende?
+Nej, ved mit Sværd! dertil er jeg for god;
+Rovdyret skal ej vinde Magt herinde —
+til Hadets Ulv jeg sparker med min Fod!
+Lad Saaret bløde — Ingen skal det mærke.
+I denne Verden trives kun de Stærke!
+<nonum><small><center>(Han vender sig mod Indgangen i Baggrunden og slaar et Slag paa et Metalskjold, som er ophængt der).</center></small></nonum>
+
+<nonum><small><center>(En Slave kommer).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(barsk).</center></small></nonum>
+Hvad er det for en Larm her udenfor?
+
+<nonum><center><w>Slaven.</w></center></nonum>
+<nonum><small><center>(ærbødig).</center></small></nonum>
+Et Slagsmaal, Herre!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+        Her — i mit Palads —
+i selve Lovens Hus! Hvem vover her
+at trodse Dommersværdet?
+
+<nonum><center><w>Slaven.</w></center></nonum>
+        Nogle Vismænd,
+som mødtes nys i Atriet derude
+og gik i Søjlegangen op og ned,
+mens Munden løb paa dem som Kjæp i Hjul,
+er kommen op at slaas. De værste To
+har Vagten grebet. De forlange højt
+at stedes for dit Aasyn, strenge Herre.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Vel! Sig til Vagten, de skal føres hid.
+
+<nonum><small><right>(Slaven gaar).</right></small></nonum>
+<nonum><small><center>(<w>Kritas</w> og <w>Diogenes</w> føres ind af to Drabanter; deres Klæder ere forrevne og den Førstes Hoved forbundet).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(foragtelig).</center></small></nonum>
+To smukke Karle af det samme Stof!
+— Og I kan ej forliges med hinanden:
+<nonum><small><center>(til Kritas).</center></small></nonum>
+Hvad hedder Du med Bindet der om Panden?
+
+<nonum><center><w>Kritas.</w></center></nonum>
+Jeg hedder Kritas. — Jeg er Filosof.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(til den Anden).</center></small></nonum>
+Og Du?
+
+<nonum><center><w>Diogenes.</w></center></nonum>
+        Diogenes.
+
+<nonum><center><w>Kritas.</w></center></nonum>
+                — Han nægter Alt!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(med Humor).</center></small></nonum>
+Dog ikke Pryglene, som han har faaet;
+det lader til, at han har følt sig slaaet —
+hans Næse bløder —
+
+<nonum><center><w>Diogenes.</w></center></nonum>
+        Ja han overfaldt
+mig som en Rasende!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Hvem ypped Striden?
+
+<nonum><center><w>Kritas.</w></center></nonum>
+Det gjorde han.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+        Og hvad var det den gjaldt?
+
+<nonum><center><w>Kritas.</w></center></nonum>
+Om Troens Forhold til den rene Viden.
+
+<nonum><center><w>Diogenes.</w></center></nonum>
+Den rene Viden, ja, den glemte han.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Og derom sloges I som gale Hunde?
+
+<nonum><center><w>Kritas.</w></center></nonum>
+Ja, Herre, han forhaaner mine Grunde.
+
+<nonum><center><w>Diogenes.</w></center></nonum>
+Han mener dem, han henter fra den sunde
+— saakaldte sunde — Menneskeforstand;
+dem kalder han Beviser. Prøv ham bare,
+forsøg det selv. — Lad ham en Gang forsvare
+hvad han forstaar ved Liv og Existens,
+saa skal Du mærke strax hvor tankelæns
+at Fyren er.
+
+<nonum><center><w>Kritas.</w></center></nonum>
+<nonum><small><center>(appellerende til Prokonsulen).</center></small></nonum>
+        Han vil, jeg skal forklare,
+at jeg er levende — at jeg er til!
+
+<nonum><center><w>Diogenes.</w></center></nonum>
+Ja ganske rigtigt, det er det jeg vil;
+bevis, Du lever — jeg benægter Livet!
+
+<nonum><center><w>Kritas.</w></center></nonum>
+Jeg forudsætter det som noget Givet.
+
+<nonum><center><w>Diogenes.</w></center></nonum>
+<nonum><small><center>(triumferende).</center></small></nonum>
+Det er en Paastand kun, men intet Svar.
+Kom med Beviserne! forklar! forklar!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(stamper i Gulvet).</center></small></nonum>
+Hold Munden, Slyngel!
+
+<nonum><center><w>Kritas.</w></center></nonum>
+        Ja; lad mig nu tale
+et Øjeblik —
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(barsk).</center></small></nonum>
+        Ti!
+
+<nonum><center><w>Kritas.</w></center></nonum>
+<nonum><small><center>(forbløffet).</center></small></nonum>
+            Du har at befale!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+I gjør jo Vismandsnavnet kun til Spot!
+
+<nonum><center><w>Kritas.</w></center></nonum>
+<nonum><small><center>(undskyldende).</center></small></nonum>
+Han sparked mig!
+
+<nonum><center><w>Diogenes.</w></center></nonum>
+<nonum><small><center>(ligeledes).</center></small></nonum>
+        Han slog mit Øje blaat!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Jeg vil bevise, at I existere;
+jeg haaber, <small>(til Diogenes)</small> Du skal ikke tvivle mere.
+
+<nonum><center><w>Diogenes.</w></center></nonum>
+Nej, naar Beviset føres med Logik —
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Mit er kun praktisk, men det holder Stik!
+<nonum><small><center>(til Vagten).</center></small></nonum>
+Grib disse To og stop mig deres Munde!
+Knebl dem! De er en Haan for deres Stand!
+
+<nonum><center><w>Diogenes.</w></center></nonum>
+Beviset, Herre? — Hvorpaa vil Du grunde
+en slig Fordømmelse?
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(med stolt Foragt).</center></small></nonum>
+        Kun paa den sunde —
+saakaldte sunde Menneskeforstand!
+<nonum><small><center>(til Drabanterne, idet de føre Kritas og Diogenes ud).</center></small></nonum>
+Sig til min Livvagtshøvding, at jeg venter.
+
+<nonum><small><center>(Han gaar et Øjeblik utaalmodig frem og tilbage. Livvagtshøvdingen træder ind).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Jeg er beredt at høre, hvad Du har
+at melde mig i Dag, men fat Dig kort,
+spring alle Smaating over!
+
+<nonum><center><w>Høvdingen.</w></center></nonum>
+            Offerpræsten
+ved Mithrastemplet spørger ved sit Bud,
+om Du i Dag vil overvære Festen —
+den store Offerfest for Templets Gud?.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(utaalmodig).</center></small></nonum>
+Ja vist, ja vist! saa gaar det Slag i Slag. —
+Mens Verden staar for Fald og Troen vakler,
+maa Pøblen underholdes med Mirakler —
+— med Skuespil — og hellige Bedrag!
+<nonum><small><center>(højt).</center></small></nonum>
+Er der ej Nyt fra Østen eller Vesten? —
+Ej noget Oprør? — intet Bud fra Rom?
+
+<nonum><center><w>Høvdingen.</w></center></nonum>
+Nej, Herre, intet!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+        Hvad, er Verden tom?
+— Mig huer ikke denne døde Stilhed.
+
+<nonum><center><w>Høvdingen.</w></center></nonum>
+Vel, Herre! Da Du taler selv derom,
+jeg vil ej længer tie: Folket knurrer —
+det kjeder sig!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(mørk).</center></small></nonum>
+Det veed ej, hvad det vil,
+fordærvet, som det er, og overmættet
+ved Syn af Blod.
+
+<nonum><center><w>Høvdingen.</w></center></nonum>
+<nonum><small><center>(dæmpet).</center></small></nonum>
+        En Mand det trænger till
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(studsende).</center></small></nonum>
+Hvad mener Du?
+
+<nonum><center><w>Høvdingen.</w></center></nonum>
+        Har Du det ikke gjættet?
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(farer op).</center></small></nonum>
+Vogt Dig! Dit Hoved sætter Du paa Spil!
+
+<nonum><center><w>Høvdingen.</w></center></nonum>
+<nonum><small><center>(dristig).</center></small></nonum>
+Jeg siger jo kun højt, hvad Alle tænke:
+Grib dristig Øjeblikket! Spræng vor Lænke!
+Du har Augustus’ Kløgt og Titus Sjæl,
+i Dig vi see en anden Marc Aurel!
+Et Vink — og Legionerne sig rejser!
+Grib dristig til, og Du er Romas Kejser!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(haanlig).</center></small></nonum>
+Og hvad forlanger Du saa for din Del
+og Legionerne?
+
+<nonum><center><w>Høvdingen.</w></center></nonum>
+<nonum><small><center>(med Værdighed).</center></small></nonum>
+        En Mand — en hel!
+Ej noget skummelt, purpurklædt Uhyre,
+ej nogen Dreng, som han der raser nu;
+— en Mand med Herskeraand — en Mand som Du
+hvis stærke Haand kan Verdenstømmen styre.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(med Højhed).</center></small></nonum>
+Forvovne! Hvis der skete Dig din Ret,
+Du kom ej levende fra denne Plet!
+Vel Dig, at ingen Andre her Dig høre!
+— Du tror, jeg fiske vil i Tidens Røre?
+Nej, ved mit Hoved! — tusind Gange Nej!
+Som Dukke lader jeg mig ikke føre,
+jeg gaar min egen, lyse, lige Vej!
+
+<nonum><small><center>(Flere Krigshøvdinger træde ilsomt ind; derefter en Herold).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(farer heftig mod de indtrædende Høvdinger).</center></small></nonum>
+Tilbage der! Hvor tør I vove ukaldt
+at trænge ind til mig?
+
+<nonum><center><w>En af Høvdingerne.</w></center></nonum>
+<nonum><small><center>(ærbødigt).</center></small></nonum>
+        Undskyld os, Herre!
+Vi bringe en Herold, som nys er stegen
+i Land i Havnen. Han er sendt fra Rom
+med vigtigt Budskab : Heliogabal
+er myrdet og Alexius Severus
+udraabt til Kejser!
+
+<nonum><center><w>Herolden.</w></center></nonum>
+<nonum><small><center>(træder frem).</center></small></nonum>
+Ja, saa er det, Herre!
+Skibsfolkene, der førte mig fra Rom,
+har raabt det ud i Havnen — ikke jeg,
+som har Befaling til at overrække
+Dig dette Brevskab med Senatets Segl.
+<nonum><small><center>(Overrækker <w>Agvilinus</w> et forseglet Brev, som denne hastigt aabner og gjennemlæser).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(i stærk Bevæ gelse).</center></small></nonum>
+Ja! ja! her staar det: Rom har skiftet Kejser,
+— saa glæd dig, glæd dig, du forpinte Verden,
+nu dæmrer der for dig en bedre Tid!
+<nonum><small><center>(vendende sig til Høvdingerne).</center></small></nonum>
+Hil Cæsar! Hil Alexius Severus!
+
+<nonum><center><w>Alle Høvdingerne.</w></center></nonum>
+Ja, hil vor nye Cæsar! Hil ham! Hil!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Det høre Guderne! Han vil ej svigte
+hvad han som Yngling lover! Hil ham! Hil!
+— Afsted! Til Forum vil jeg nu mig skynde,
+for Folket højt det Budskab at forkynde!
+<nonum><small><right>(Iler ud, fulgt af de Andre).</right></small></nonum>
+</body>
+</prose>
+
+<prose id="kaalund2018060609">
+<head>
+    <title>Tredie Scene</title>
+    <firstline></firstline>
+    <source pages="66-76"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><small><center>(Klippeegn med enkelte Palmer og Kaktusplanter. I Forgrunden til Højre sees Ydermuren af et kristent ,,Claustrumu'', opført i raa Stil med en enkelt lav Indgang).</center></small></nonum>
+
+<nonum><small><center>(<w>Rocchus</w> og <w>Josephus</w>, iførte grove, lange, mørkfarvede Kutter med Hætter, ere i Færd med at ophakke Grunden ved Foden af en Kalkklippe).</center></small></nonum>
+
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+<nonum><small><center>(idet kan standser med sit Arbejde).</center></small></nonum>
+Ah! jeg maa puste lidt. — Jeg bliver gammel,
+mærker jeg — Kræfterne svigter mig.
+
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+<nonum><small><center>(sætter Hakken fra sig).</center></small></nonum>
+    Du er ogsaa for streng imod Dig selv og spæger Dig mere end nødvendigt. Vor Ordensregel tilsteder os jo at spise Kjød hver tredie Dag, undtagen paa de store Højtidsdage; Du lever kun af Vand og Urter.
+
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Jeg har ogsaa Mere at afsone end I Andre.
+
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Kom, Broder! lad os hvile lidt i Skyggen paa Stenbænken her! Jeg har saa ofte bedet Dig om at fortælle mig lidt om dit tidligere Liv; opfyld nu min Bøn. - Vor gamle Abbed derinde har jo selv sagt mig, at jeg kunde have godt af at høre af din egen Mund, hvad Du har prøvet og lidt.
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Ja, til Skræk og Advarsel for din unge Sjæl!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Ræk mig din Haand, at jeg kan lede Dig — i denne Retning.
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+<nonum><small><center>(idet han famlende med langsomme Skridt nærmer sig Stenbænken).</center></small></nonum>
+    Tak! nu veed jeg Vejen.
+<nonum><small><center>(De sætte sig).</center></small></nonum>
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Du har oplevet Meget?
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Ja, Meget!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Ikke sandt? Du har jo været romersk Soldat — Prætorianer? — Været med i Germanien og Gallien og tjent under flere Kejsere?
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Under fire — <small>(efter en Pavse)</small> og været med at myrde de to!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+<nonum><small><center>(farer tilbage og korser sig).</center></small></nonum>
+    Herre Jesus! — hvilke?
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+<nonum><small><center>(langsomt).</center></small></nonum>
+    Først Commodus —
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+Uhyret! Athleten! Han, der som Kejser
+kjæmpede med paa Arena og pralede af, at han
+med Kølleslag havde knust Hovederne paa over
+700 Gladiatorer! I Helved brænder nu hans
+sorte Sjæl hos Neros og Caligulas! Hvem
+var den Anden?
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+<nonum><small><center>(med et dybt Suk).</center></small></nonum>
+    Pertinax —
+
+<nonum><center><w>Josephus.</w></center></nonum>
+    Ak, Pertinax! den Retfærdige? Ham, som med Ære bar sit hvide Haar.
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Ja, ogsaa ham!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+<nonum><small><center>(spændt).</center></small></nonum>
+    Og siden?
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Saa gik det op og ned. Jeg høsted Løn som forskyldt — blev foset som en Hund, men jeg bed fra mig og kom i Krig med hele Verden.
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Du blev Røver?
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Ja!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Og dog er Du havnet her og bleven Kristen?
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Et Under aabnede mine øjne i samme Stund, det lukkede dem.
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Fortæl! fortæl!
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Det var en Uvejrsdag. Jeg laa paa Lur ved Vejen nærved Cæsarea, beredt til at nedstøde den Første den Bedste, som kom forbi.  — Det lynede. Jeg hørte Fodtrin. Der kom en enlig Mand, en Kristen; — Korset, som han holdt i sin Haand, og som han trykkede til sine Læber, forraadte det. — Med opløftet Daggert styrtede jeg frem mod ham. Han var forsvarsløs, men røbede ingen Frygt. Det undrede mig.  Jeg spurgte ham, hvorfra han fik sit Mod. »Fra den Korsfæstede,« svarede han, »fra Frelseren, i hvis Ærinde jeg er paa Vejen til en Døende.  Du har ikke Magt til at standse mig, naar ikke Gud vil det.« — Jeg lo og vilde støde til, da — i samme Øjeblik — faldt jeg som knust til Jorden.
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+<nonum><small><center>(spændt).</center></small></nonum>
+    Himlens Lyn havde ramt Dig —
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Ja!
+
+<nonum><center><w>Josephus.</w></center></nonum>
+    Og da Du atter vaagnede til Bevidsthed?
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Laa jeg i Armene paa ham, jeg vilde myrde. — Det var sort Nat omkring mig — og i mig!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Du havde mistet Synet?
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    For første Gang saae jeg ind i min egen Sjæl!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Et Guds Mirakel!
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Ja! Jeg vilde Blodhund blev rystet vældigt af Guds stærke Haand! Jeg vred mig som en Orm — græd som et Barn!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Saa blev Du Kristen! — Men Manden, som Du vilde myrde — Hvor blev han af? — Hvem var han?
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Vor Abbed derinde!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Hvad siger Du? Vor Abbed? Den fromme Olding, der slutter hver en Bøn, han beder, med de samme Ord, som St. Johannes bad, da han blev gammel: »Børnlille, O elsker hverandre!«
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Ham var det! Han har frelst min arme Sjæl fra Helvedes Afgrund! Paa Dommens Dag .  vil han tage mig ved Haanden og føre mig frem for Guds Throne, og gaa i Borgen for, at jeg har angret!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Skrækkeligt har Du forsyndet Dig! Men Du var jo Hedning og gik i Blinde.
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Nu seer jeg!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Ak! gid mit indre Syn var opladt som dit. — Jeg længes efter at komme ud i Verden.
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Du har ikke prøvet den. Som et lille Barn kom Du jo hertil.
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Selv kan jeg ikke huske det, men vor Abbed har fortalt mig, at han bar mig hertil paa sine Arme, da mine Forældre, som var Kristne, havde lidt Døden i et Pøbelopløb derinde i Staden.  Som en kjærlig Fader har han vaaget over mig og kjender alle mine Tanker. Velsignet være han!
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Og dog sukker Du? Du synes vel, at det er haardt, at han sætter Dig til at arbejde sammen med mig, som af alle Brødrene her er den, der er mest mæt af Livet!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Det er til min Sjæls Frelse, han gjør det — jeg veed det. Men forlang ikke, at jeg som Du bestandig skal tænke kun paa Døden! Dette Arbejde, hvormed jeg hjælper Dig her, er saa sørgeligt.
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Ja — for Dig, stakkels Barn, ikke for mig; det er mit sidste Leje, jeg reder her i den haarde Kalkklippe. Trøst Dig, det vil snart være færdigt!
+<nonum><small><center>(Lyden af en Klokke høres inde fra Bygningen).</center></small></nonum>
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+<nonum><small><center>(idet han rejser sig og griber den Andens Haand).</center></small></nonum>
+    Klokken kalder os til Bøn! Kom, lad mig lede Dig.
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+Bed for mig, Josephus! Bed for mig!
+<nonum><small><center>(De gaa ind i Klosteret).</center></small></nonum>
+
+<nonum><small><center>(<w>Fulvia</w> kommer fra den modsatte Side. Hendes Gang og hele Udseende røber Træthed og Forvirring. Over den hvide Dragt, hun bar i denne Akts første Scene, bærer hun en mørkfarvet Overklædning. Hun vakler hen til Stenbænken og sætter sig der paa).</center></small></nonum>
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Hvor jeg er træt! — Lad mig besinde mig
+hvad er der sket? Maaske er det. en Drøm,
+en tung, afskyelig Drøm — O gid saa var!
+Men jeg er vaagen. — Ja, her sidder jeg
+med knækket Stolthed, fremmed for mig selv,
+en stakkels Skabning, som for første Gang
+har stirret ind med Skræk i Dødens Øjne,
+de rædselsfulde, tomme! Vee mig, Taabe!
+Jeg vilde hæve mig til Guderne —
+nu har de slængt mig med Foragt i Støvet!
+Forgjæves har jeg anraabt dem, de hørte ej!
+Den høje Helios saae ned fra Himlen,
+som haaned han min Nød. — Ja det er Straffen,
+fordi jeg vilde efterligne ham,
+som styrer Solens Straalespand deroppe
+evigt i samme Spor! — Kastet af Vognen,
+hvis vilde Heste, skumbedækte, sky,
+foer over Stok og Sten, slængtes jeg hen
+ved Randen af en Afgrund; da jeg vaagned,
+var jeg alene — kun to Aadselgribbe
+i Luften svæved over mig med Skrig;
+de grimme Fugle holdt mig for et Lig! —
+Langt er jeg vandret, uden Maal og Tanke.
+Hvor er jeg nu? — Jeg har ej været før
+i denne Egn. — Der ligger jo en Bolig.
+Ugjæstfri seer den ud; dens Mur er skummel
+og lav dens Dør; dog vil jeg banke paa
+som ydmyg Tigger. — Jager man mig bort,
+da vil jeg kalde Gribbene tilbage,
+og vente Dødens Komme uden Klage!
+
+<nonum><small><center>(Idet hun nærmer sig Klosterdøren, lyder et højtideligt Chor af Mandsstemmer derinde fra).</center></small></nonum>
+
+<nonum><center><w>Chor af Mandsstemmer i Klosteret.</w></center></nonum>
+        Staar i Verden Du forladt?
+        Kom herind! kom herind!
+        Vakler Du i Tvivlens Nat?1
+        Kom herind! kom herind!
+        Her er Vej til Morgenrøden!
+        Her er Sejer over Døden!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(som i den højeste Spænding har lyttet til Sangen, gjentager langsomt de to sidste Strofer).</center></small></nonum>
+Ha, sælsomt! sælsomt! Mægtigt rystes jeg
+i denne Ensomhed af disse Ord!
+
+<nonum><center><w>Recitativ .</w></center></nonum>
+<nonum><small><center>(En dyb Mandsstemme i Klosteret).</center></small></nonum>
+    »Mit Hjerte sukker efter Herren som Hjorten efter frisk Vand; min Sjæl tørster efter den levende Gud!«
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(gjentager langsomt den sidste Sætning).</center></small></nonum>
+Den levende? Der er jo flere Guder!
+Er de da døde? — Hvem er denne Ene,
+de synge om? Er det de Kristnes Gud:
+Ja, ja! nu mindes jeg, at jeg har hørt,
+at han er Gud for Hver, som er bedrøvet;
+- de andre Guder træde os i Støvet!
+
+<nonum><center><w>Choret i Klosteret.</w></center></nonum>
+        Bange Sjæl, han har Dig kjær!
+        Overalt han er Dig nær.
+        Kommer Du med Barnets Sind,
+        lukkes Du i Himlen ind.
+        Hvor de Vise gaa i Blinde,
+        kan de Fromme Vejen finde!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(gjentager de to sidste Strofer).</center></small></nonum>
+
+<nonum><center><w>Recitativ.</w></center></nonum>
+    »Før Bjergene bleve til og Du dannede Jorden, ja fra Evighed og til Evighed er Du Gud!«
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(gjentager i dyb Bevægelse):</center></small></nonum>
+    Fra Evighed og til Evighed er Du Gud!
+
+<nonum><center><w>Recitativ.</w></center></nonum>
+    »Der er ingen andre Guder foruden Dig!«
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+    »Der er ingen andre Guder foruden Digi«
+
+<nonum><center><w>Recitativ.</w></center></nonum>
+    »Farer jeg op til Himlen, da er Du der, reder jeg mit Leje i Afgrunden, da er Du der, vilde jeg tage Morgenrødens Vinger og tøve ved det yderste Hav, da skulde ogsaa der din Haand føre mig og din Højre holde mig fast!«
+
+<nonum><center><w>Chor i Klosteret.</w></center></nonum>
+        Flyv Du store Jubelbud,
+        flyv til alle Slægter ud,
+        til hver Sjæl, som staar forladt:
+        Endt er Tvivlens lange Nat,
+        Himlen har sig aabenbaret!
+        — Her er Vejen! Her er Svaret?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(iler hen mod Klosterdøren).</center></small></nonum>
+Ja, ja! her kommer jeg. Mit Hjerte tørster
+efter den levende Gud! Ham vil jeg kjende!
+Luk op? luk op! Lad mig ej ude staa!
+Det er en husvild Sjæl, som banker paa,
+en Sjæl, som har i Ørknen sig forvildet,
+en Sjæl, hvis Tørst endnu blev aldrig stillet!
+Luk op og sluk min Tørst og stil mit Savn!
+Luk op i hans, den Ubekjendtes Navn!
+<nonum><small><center>(banker paa og synker knælende ned foran Indgangen).</center></small></nonum>
+
+<nonum><small><center>Tæppet falder.</center></small></nonum>
+</body>
+</prose>
+
+</content>
+</section>
+
+<section>
+<head>
+    <title>Tredie Akt</title>
+</head>
+<content>
+
+<prose id="kaalund2018060610">
+<head>
+    <title>Første Scene</title>
+    <firstline></firstline>
+    <source pages="77-81"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><small><center>(Offenlig Plads i Alexandria. Samme Dekoration som i første Akts første Scene).</center></small></nonum>
+<nonum><small><center>(Stjerneklar Aften).</center></small></nonum>
+<nonum><small><center>(Tre Borgere, omringede af nogle Nysgjerrige, staa midt paa Pladsen i Færd med at betragte Stjernehimlen).</center></small></nonum>
+
+<nonum><center><w>Første Borger.</w></center></nonum>
+<nonum><small><center>(pegende opad).</center></small></nonum>
+    See, der sidder den — lige der, hvor jeg nu peger.
+
+<nonum><center><w>Anden Borger.</w></center></nonum>
+    Det er jo Venus, Aftenstjernen —
+
+<nonum><center><w>Første Borger.</w></center></nonum>
+    Snak! Har Du nogensinde seet Venus sidde lige over dit Hoved paa Kanten af Mælkevejen?  Denne Stjerne der har ikke været seet, siger jeg Dig, førend hun forsvandt, og det er nu akkurat et Aar siden.
+
+<nonum><center><w>Tredie Borger.</w></center></nonum>
+    Ja, Jeg husker det saa tydeligt, som om. det var i Gaar. Det var i Fjor Foraar. Mine Faar havde netop læmmet, og mine Bier begyndt at sværme, da jeg første Gang fik Øje paa den. Folk var jo i Begyndelsen som gale for den Sags Skyld. — Den halve By tilbragte Nætterne paa Tagene for at betragte Underet.
+
+<nonum><center><w>Første Borger.</w></center></nonum>
+    Der kan Du høre, at det er sandt, hvad jeg siger; Denne Stjerne er Fulvias, sat der af Guderne, for at vi kan vide, hvor hun er bleven af.
+
+<nonum><center><w>De Omkringstaaende.</w></center></nonum>
+    Ja! ja! Det er Fulvias Stjerne! — Den kjender hvert Barn her i Byen!
+
+<nonum><center><w>Anden Borger.</w></center></nonum>
+    Hvad veed jeg herom, jeg, som nu i to Aar har været borte fra Landet og først i Dag er kommen tilbage hertil, <small>(grundende)</small> Fulvia, siger Du — en Datter af den gamle rige Nar: Servius?
+
+<nonum><center><w>Første Borger.</w></center></nonum>
+    Netop! Men hun slægtede ikke sin Fader paa, for hun var visere, paastaar man, end alle vore Vismænd til Hobe.
+
+<nonum><center><w>Anden Borger.</w></center></nonum>
+    Ih! saa har jeg jo kjendt hende og mere end en Gang taget Maal af hendes lille Fod; for jeg syede hendes Sandaler, maa I vide. Nej, er det muligt! Fortæl mig — hvorledes gik det til? Forsvandt hun virkelig?
+
+<nonum><center><w>Tredie Borger.</w></center></nonum>
+    Ja, som om hun var blæst bort. Der var ikke Spor at finde af hende. Hun kjørte ud alene — og væk var hun — faret til Himmels —
+
+<nonum><center><w>Anden Borger.</w></center></nonum>
+    Med Heste og Vogn?
+
+<nonum><center><w>Tredie Borger.</w></center></nonum>
+    Nej — Hestene kom hjem igjen samme Nat, bedækkede med Skum fra øverst til nederst. Ingen kunde siden den Tid styre dem; naar man vilde spænde dem for, teede de sig som rasende.
+
+<nonum><center><w>Anden Borger.</w></center></nonum>
+    Men hun var vel styrtet af Vognen og havde knækket Halsen, eller — hun var jo ung og kjøn — En eller Anden har vel bortført hende — maaske er hun selv løbet væk med en Kjæreste —
+
+<nonum><center><w>Første Borger.</w></center></nonum>
+    Ja, saadan snakkede de Fleste den Gang, da vi ikke vidste bedre Besked; men saa rejste den Gamle — hendes Fader — selv sporenstregs til Delphi, til Oraklet der, og saa kom Sandheden for Dagen.
+
+<nonum><center><w>Anden Borger.</w></center></nonum>
+    Hvad svarede da Oraklet? Forblommet vel som sædvanlig?
+
+<nonum><center><w>Første Borger.</w></center></nonum>
+    Nej! rent ud af Posen: At hun var røvet af selve Guderne, optaget i Himlen i levende Live!
+
+<nonum><center><w>Anden Borger.</w></center></nonum>
+    Røvet af Guderne, i levende Live! Og det i vor Tid! Sligt er jo sket i gamle Dage — men i vor Tid!
+
+<nonum><center><w>Tredie Borger.</w></center></nonum>
+    Ja, er det ikke mærkværdigt! Den gamle Servius er først for nylig vendt tilbage med Orakelsvaret. Det er ham, som har udvirket, at hendes Billedstøtte skal oprejses foran Minervatemplet. I Morgen skal Stadsen gaa for sig, saa Du er netop kommen tidsnok, hvis Du vil see den.
+
+<nonum><center><w>Anden Borger.</w></center></nonum>
+    Om jeg vil? heller end gjerne! Vi følges ad derhen — ikke sandt?
+
+<nonum><center><w>Første Borger.</w></center></nonum>
+    Forstaar sig! Det er en Fest, som vi aldrig har oplevet Mage til.
+
+<nonum><center><w>Anden Borger.</w></center></nonum>
+    Ja, nu kan jeg begribe, hvad I har fortalt mig om den nye Stjerne deroppe! — Røvet af Guderne i levende Live!
+
+<nonum><center><w>Tredie Borger.</w></center></nonum>
+Altsaa i Morgen sees vi igjen! Nu er det Tid, at vi gaar til Ro. God Nat, Kammerater! God Nat!
+
+<nonum><center><w>De Andre.</w></center></nonum>
+    God Nat! god Nat!
+
+<nonum><small><center>(De gaa til forskjellige Sider).</center></small></nonum>
+</body>
+</prose>
+
+<prose id="kaalund2018060611">
+<head>
+    <title>Anden Scene</title>
+    <firstline></firstline>
+    <source pages="81-97"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><small><center>(Hal i det kristne Kloster).</center></small></nonum>
+<nonum><small><center>(Broder <w>Malchus</w> kommer i Samtale med Broder <w>Josephus</w>).</center></small></nonum>
+
+<nonum><center><w>Malchus.</w></center></nonum>
+<nonum><small><center>(velnæret og selvtilfreds).</center></small></nonum>
+    Det gaar ikke! Det gaar ikke! Jeg sagde det jo strax den Gang vor gamle Abbed valgte Broder Eugenius til sin Efterfølger — Det gaar ikke! Han er for ung til at være Hyrde for denne vor Hjord.
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Origenes var jo ikke mere end 18 Aar gammel, da han valgtes til Menighedsforstander.
+
+<nonum><center><w>Malchus.</w></center></nonum>
+    Ja vist, ja vist! Det veed jeg ligesaa godt som Du. Men jeg siger alligevel: Det gaar ikke med Broder Eugenius! Vor gamle Abbed — Gud glæde ham i sin Himmel! — gik jo halvt i Barndom paa det Sidste. Jeg siger halvt, laeg vel Mærke dertil, thi det være langt fra mig at ville paastaa, at han ikke var ved sin fulde Samling, indtil han salig hensov i Herren, men svækket var han dog, og det ikke saa lidt, ellers havde han naturligvis ikke forbigaaet os Ældre, men valgt til sin Eftermand En af os, som har Erfaring og Modenhed.
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    For Exempel Dig!
+
+<nonum><center><w>Malchus.</w></center></nonum>
+    Ja, hvorfor ikke? Mener Du maaske, at jeg ikke duer til Andet, end at slide mig op her som Skaffer og Kjøgemester for Jer Andre?
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Beklag Dig ikke, Malchus! Du har det jo mageligst af os Alle her. Du har ingen Vabler i Hænderne af at bruge Spade og Hakke; Du sendes ikke ud for at omvende eller for at pleje Pestsyge og Spedalske.
+
+<nonum><center><w>Malchus.</w></center></nonum>
+    Det gjør Du jo heller ikke!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+<nonum><small><center>(ivrig).</center></small></nonum>
+    Men det er mit brændende Ønske at blive betroet den Slags Gjerning, og netop i Dag har jeg besluttet at bede vor Abbed om at udsende mig blandt Hedningerne. Selv om jeg vidste, at Martyrdøden ventede mig der, skulde det dog ikke holde mig tilbage!
+
+<nonum><center><w>Malchus.</w></center></nonum>
+    Naa! Saa Du tragter efter at blive Martyr? Nej, saa vidt gaar min Iver ikke. At blive stenet ihjel som en gal Hund, eller maaske blive levende stegt paa en gloende Rist — Hu, ha! — Sveden sprækker ud af mig ved den blotte Tanke!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Ja, tilstaa det: Du befinder Dig netop her paa din rette Hylde; i det Mindste er Du den, der trives bedst af os Alle.
+
+<nonum><center><w>Malchus.</w></center></nonum>
+    Jeg har Anlæg til Fedme, mener Du. Ja, hvad beviser det? Er jeg maaske derfor mindre from? Jeg kan rigtignok ligesaa lidt som en Kamel gaa igjennem et Naaleøje og har ikke saa let ved at falde paa mine Knæ som I Andre; men jeg beder dog ligefuldt mine foreskrevne Bønner og velsigner hver Dag Maden, jeg laver til Jer, for at der kan blive Forslag i den, thi overdaadig er den ikke. De Fleste af Jer har jo neppe Fugleføde paa Kroppen; men deraf skal I da ikke hovmode Jer!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Det gjør vi jo heller ikke; jeg mener kun, at vi ikke Alle har Kald og Anlæg til det Samme. Medens Du sørger for vore Legemer, sørger vor unge Abbed for vore Sjæle. Kan Du nægte, at han viser Iver og Nidkjærhed i sit betroede Kald? Hans Ry for Hellighed er jo allerede trængt udenfor disse Mure.
+
+<nonum><center><w>Malchus.</w></center></nonum>
+    Ja, paa Alt hvad der angaar Himlen er han klog nok.
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Selv vor gamle Abbed kunde ikke bedre end han tyde de hellige Bøger for os; og har Du ikke selv mangen Gang fundet ham altfor streng i at overholde Bøn og Faste og opholdt Dig over, at han mere end nødvendigt hengiver sig til Ensomhed og Bodsøvelser i sin Celle, som ingen Andre end han faar Lov at betræde?
+
+<nonum><center><w>Malchus.</w></center></nonum>
+Ja, det er netop Sagen! Han overdriver saa paa een Maade, saa paa en anden; snart er han for streng, snart er han for mild. Mellem os sagt, er jeg sommetider nærved at tro, at det.  ikke er rigtig fat hos ham her <small>(peger paa panden)</small>.  Har Du ikke bemærket, hvor underlig forvirret han tidt seer ud? Blodet farer ham jo til Hovedet, som om han var et Pigebarn, og bedst som han sidder og stirrer hen for sig, kan han jo flyve op, naar man taler til ham, som om han blev stukket af en Bremse.
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Nu, ja, det er da ikke saa besynderligt -
+
+<nonum><center><w>Malchus.</w></center></nonum>
+    Heller ikke, at han om Natten gaar omkring som en Søvngjænger og snakker højt med sig selv eller med Stjernerne, som om de var levende Væsener?
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Det er Kampen mellem Sjæl og Legeme, der opfylder ham med Uro. Djævlen, veed Du, frister mest de Fromme; dem, som leve i Kjødet, behøver han ikke at gjøre sig saa megen Ulejlighed for.
+
+<nonum><center><w>Malchus.</w></center></nonum>
+    Er det mig, Du sigter til.
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Nej, jeg taler kun om den menneskelige Skrøbelighed i Almindelighed. Jeg selv er for ung til at være Dommer over Andre.
+
+<nonum><center><w>Malchus.</w></center></nonum>
+<nonum><small><center>(med et bodfærdigt Suk).</center></small></nonum>
+    Ak, ja! Vi er alle Syndere! Vorherre bevare os for Djævlen og alt, hvad ondt er!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+<nonum><small><center>(vender sig om).</center></small></nonum>
+    Der er han!
+
+<nonum><center><w>Malchus.</w></center></nonum>
+<nonum><small><center>(farer forskrækket op).</center></small></nonum>
+    Hvem?
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+<nonum><small><center>(hurtigt).</center></small></nonum>
+    Vor Abbed!
+
+<nonum><center><w>Malchus.</w></center></nonum>
+Naa — ja, saa er det nok bedst, at jeg skynder mig bort, for det er ikke værd, at han seer, at vi staar her og sladrer.
+<nonum><small><center>(skynder sig ud gjennem en Sidegang).</center></small></nonum>
+
+<nonum><small><center>(<w>Eugenius</w> (Fulvia), klædt som de andre Klosterbrødre i en mørkfarvet Kutte, hvis Hætte til Dels bedækker hendes Hoved, kommer tankefuld og langsomt fra den modsatte Side).</center></small></nonum>
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+<nonum><small><center>(idet hun pludselig bliver <w>Josephus</w> vaer).</center></small></nonum>
+    Har Du Intet at bestille Josephus, siden Du staar ledig paa denne Tid af Dagen? — Eller vil Du maaske tale med mig?
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Ja!
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Hvad har Du paa dit Hjerte?
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    En Byrde, som længe har tynget det!
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Betro mig den!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Det er et Skriftemaal, jeg har at aflægge!
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Har Du forsyndet Dig mod vor Ordens Regler, da maa jeg være streng og strafle Dig med Bod!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Mit hele Liv er gaaet hen i Bod og Forsagelse!
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Jeg veed det! Du har jo altid været from og lydig. — Er Du maaske syg i Sindet?  Lider Du? da vil jeg bede for os begge; thi ogsaa jeg lider og har Lægedom behov.
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Den Lægedom, jeg behøver, er Frihed.  Send mig ud i Hedningeverdenen, hvorhen Du vil! kun ud, hvor der er Kamp og Fare; hvor jeg kan sætte Livet ind for min Tro! Jeg er jo nu voxen og føler Kraft og Mod til at optage Kampen.
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Ja Mod — Hvem har ikke det, naar man er ung!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+<nonum><small><center>(dristig).</center></small></nonum>
+    Du selv er ung!
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Og dog har jeg vendt Verden Ryggen.
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Ja, men af eget Valg; Du havde dog kæmpet først og kom som Sejrherre hertil fra Slaget.
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+<nonum><small><center>(afsides med et tungt Suk).</center></small></nonum>
+    Gud hjælpe mig, jeg kom fra Nederlaget!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Du var ikke mæt af Livet, som de Fleste her.
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Og hvoraf veed Du det?
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Dit Ydre røber det.
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+<nonum><small><center>(studsende).</center></small></nonum>
+    Mit Ydre -?
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Ja! Vel er din Kind bleg, og sørgmodig seer Du ud, men ungdomsrank staar Du dog imellem de Andre her, som Alle, mig undtagen, bærer Mærker af Livets Kampe.
+    Da Du kom hertil, var det for mig, som om Du bragte en Straale med herind af Dagens skjønne Lys. Jeg saae det strax — vi Alle saae det: Du var af ædel Herkomst, vant til at befale; — din Haand var fin, din Stemme blød; — i Aand og Lærdom naaede Dig Ingen her!
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+<nonum><small><center>(forvirret, men beherskende sig).</center></small></nonum>
+    Du glemmer, at det er Dig, som skal skrifte for mig, og ikke omvendt!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    Du har Ret; jeg glemte mig selv! Tilgiv mig — og gaa ikke fra mig, før Du har bønhørt mig! Prøv mig — send mig ud i Verden! Det er ikke syndig Længsel efter den, som driver mig, men Trang til Daad og større Virksomhed. Jeg forgaar i denne Ensomhed.
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Vel an! Saa lad det ske! Jeg vil ikke længere holde Dig tilbage. Men husk, jeg staar til Ansvar for din Sjæl! — Bered Dig til Rejsen; i Morgen skal Du drage bort herfra, men først vil vi tales nærmere ved herom.
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+    O, alt i Morgen! Gud ske Pris og Tak!
+<nonum><small><center>(iler ud).</center></small></nonum>
+
+<nonum><small><center>(<w>Rocchus</w> kommer. Hans Udseende er forvildet. Han famler sigfrem langs Muren).</center></small></nonum>
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Skaf mig fat paa Abbeden! Hvor er han?
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Her.
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Du lyver! Det er Abbeden, jeg søger. Jeg vil have en Ende paa det. Tror I, at jeg vil rave om til evig Tid i dette Bælmørke?
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Stakkels Rocchus! Du taler i Vildelse; vend tilbage til dit Leje — Du er syg paa Sjæl og Legeme.
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Ja, men indbild Dig ikke, at Du kan hjælpe mig. — Har Du maaske Mod til at stikke dine Arme ned lige til Skuldrene i Helvedes Pøl, for at fiske en Synder som mig op deraf? Nej, nej, det tør Du ikke! Du lyver!
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+<nonum><small><center>(med tilkjæmpet Fatning).</center></small></nonum>
+    Kjender Du mig ikke?
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Jo, de kalder Dig Eugenius, men hvad har jeg med Dig at skaffe? Du har kun taget Abbedens Kutte paa for at indbilde mig, at Du er ham.
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+<nonum><small><center>(forvirret).</center></small></nonum>
+    Du veed ikke, hvad Du siger.
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Er Du mæt af Livet? — Hader Du Verden?  Forbander Du dit eget Kjød? Vrider Du Dig ved Tanken om dine Synder som en traadt Orm?  — Nu, hvorfor svarer Du ikke? — Ha! Der fangede jeg Dig! Jeg vidste det jo nok: Du hænger endnu ved denne elendige Verden.
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Jeg har sørget med Dig, vaaget over Dig og bedt for Dig!
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Ja, det har ogsaa Josephus gjort. Han og Du passer sammen. Hvor gammel er Du?
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Ung imod Dig — altfor ung, frygter jeg, til at bære den Vægt, som jeg har taget paa mine svage Skuldre! — Lige overfor Dig, Rocchus, or jeg nær ved at segne under Vægten deraf.
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Og Du vil trøste mig! Ha! h a ! ha! — Seer Du Mærket paa min Pande: Kainsmærket?  Jeg har gnedet og gnedet derpaa i Aar og Dage; men det vil ikke gaa bort. — Abels Blod skriger til Himlen om Hævn over mig!
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Du har angret og vil finde Tilgivelse, som Røveren paa Korset!
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Det sagde ogsaa den gamle Abbed, og ham troede jeg; men det er saa længe siden jeg har talt med ham. Hvorfor skjuler I ham for mig? Hvor er han?
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Gaaet forud for at berede din arme Sjæl Vej til Fred og Frelse! Men Du forstaar mig ikke. — Kom! kom!
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Hvor vil Du føre mig hen?
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Til dit Leje.
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    — Min Grav, mener Du? Ikke sandt? — den, som jeg selv har udhulet med disse mine Hænder i Kalkklippen herudenfor? Ja, ja, nu husker jeg det: Vi var To, som skulde hvile der Side om Side — Abbeden og jeg — Rummet der var kun trangt, men to Benrade tager jo ikke megen Plads op. Hvorfor kunde han ikke vente, til jeg fulgte ham derned?
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Vær taalmodig. Du vil snart finde Hvile ved hans Side.
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Jeg vil hellere strax krybe ned til ham; saa kan I jo vælte Stenen over mig.
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+    Du maa vente, stakkels Rocchus, til Gud kalder Dig. Det vil ikke vare længe! Kom!
+
+<nonum><center><w>Rocchus.</w></center></nonum>
+    Vente! bestandig vente! Jeg er saa træt, saa træt!
+
+<nonum><center><w>Lucas.</w></center></nonum>
+(træder ind og melder:)
+    To unge Vandringsmænd staar herudenfor og beder om at indlades: De ønsker at tale med Dig, Eugenius,
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+Luk dem herind og lad mig være ene med
+dem; men bring først den stakkels Syge her
+tilbage til sin Celle og sørg for, at der vaages
+omhyggeligt over ham.
+<nonum><small><center>(<w>Lucas</w> gaar, førende <w>Rocchus</w> ud med sig).</center></small></nonum>
+
+<nonum><small><center>(Efter et kort Ophold, hvori <w>Eugenius</w> knæler ned foran et Krucifix, der tilligemed et Dødningehoved er henstillet paa et lille Alter i et Hjørne af Hallen, træde <w>Narkissos</w> og <w>Hyazinthos</w> ind, rejseklædte med Vandringsstave i Hænderne).</center></small></nonum>
+<nonum><small><center>(Idet <w>Fulvia</w> rejser sig og faar Øje paa dem, farer hun sammen og røber en Skræk, som hun forgjæves søger at skjule).</center></small></nonum>
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Hvis i din Andagt vi forstyrre Dig,
+da sig det, fromme Fader; vi kan vente —
+Du vakler! — Er Du syg? Skal vi Dig støtte
+<nonum><small><right>(iler hen mod ham).</right></small></nonum>
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+Nej, — rør mig ikke! — Bryd Jer ej derom!
+Det var et Anfald kun af Svimmelhed,
+som greb mig, netop da I traadte ind —
+— nu er jeg bedre alt — Sig eders Ærind.
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Vi komme hid fra Staden, vi er Brødre,
+født i den samme Stund af samme Moder;
+Narkissos hedder han, jeg Hyazinthos;
+fribaarne, men foruden Slægt og Venner;
+vi bære paa en fælles Sorg og drives
+af samme Længsel.
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+        Os er Verden øde!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+For Livets Glæder er vi begge døde!
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+<nonum><small><center>(bevæget).</center></small></nonum>
+Og hvilken Storm har slaaet Jer til Vrag?
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Det var et Vindpust paa en Solskinsdag,
+som, mens det sused gjennem Foraarsløvet,
+af vore Vinger vifted Farvestøvet!
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+<nonum><small><center>(urolig).</center></small></nonum>
+I søge her maaske et gjæstfrit Tag;
+I har jo vandret langt og er vel trætte?
+Naar I har hvilet ud og spist Jer mætte,
+saa gribe atter I til Vandringsstaven?
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Vi søge Lyset over Frelsergraven —
+Stjernen fra Bethlehem har ført os hid!
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+Saa er I Kristne alt?
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+        Endnu ej døbte.
+Men i det sidste Aar vi plejed Syge
+og bragte Trøst, hvor der var Sorg at bære
+vi hørte tale om den nye Lære,
+om Korsets Underværk — den store Tro,
+som fører Sjælen over Dødens Bro
+til alle Sjæles Fader hist i Himlen.
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Døb os, saa gaa vi atter ud i Vrimlen.
+Og saa?
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+        — Vi drage Haand i Haand til Rom
+til Korsets Sejer eller Martyrdom.
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+Det staar ej i min Magt!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+        Og hvorfor ej?
+Døb os, Eugenius!
+
+<nonum><center><w>Eugenius.</w></center></nonum>
+<nonum><small><center>(efter et Øjebliks Kamp med sig selv).</center></small></nonum>
+        Umuligt! Nej! —
+Veed I, hvem denne Kutte slutter inde!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+<nonum><small><center>(forfærdet).</center></small></nonum>
+Jeg kjender denne Røst!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+<nonum><small><center>(ligeledes).</center></small></nonum>
+Ja, det er hendes!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Det er umuligt! — Dog — det er en Kvindes!
+
+<nonum><small><center>(<w>Fulvia</w> kaster Hætten tilbage).</center></small></nonum>
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+<nonum><small><center>(farer tilbage).</center></small></nonum>
+O Himmel: Fulvia! Er det Bedrag?
+Staa nu de Døde op ved højlys Dag!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+<nonum><small><center>(ligeledes).</center></small></nonum>
+Er Du en Dæmon, sendt for os at friste?
+En Engel eller Djævel?
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+        Vee! det Sidste —
+— kun i det Ydre som en Engel skabt!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Nej — jeg er den, I troede død og tabt!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Men her, — i denne Dragt? O hvilken Gaade!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Tilfældigt kom jeg hid, forklædt som Mand;
+— hvor kunde jeg blandt Mænd mit Kjøn forraade?
+Ikkun min Dragt er falsk; — min Tro er sand;
+og jeg har tryglet Gud hver Dag om Naade!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Veed Du, at Mængden hist i Staden tror,
+at Guderne har røvet Dig fra Jorden
+og sat som Tegn for dødelige Slægter
+en Stjerne til dit Minde højt paa Himlen?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Ja Mængden! ja, hvad tror den ikke paa!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Din Fader selv har faaet det bekræftet
+i Delphi af Præstindens egen Mund;
+og just i Dag — netop i denne Stund —
+afslører man dit eget Marmorbilled,
+rejst paa et Alter ved Athenes Tempel.
+— Selv Aqvilinus, som har tvivlet længst,
+er med at hylde Dig som Halvgudinde.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(afsides, idet hun knuger Haanden mod Hjertet).</center></small></nonum>
+O, sid han var udslettet af mit Minde!
+<nonum><small><center>(højt).</center></small></nonum>
+Nok! nok! Hvad jeg skal gjøre, nu jeg veed:
+Selv vil jeg knuse Billedstøttens Hoved,
+— styrte mit eget Afgudsbilled ned!
+— I Nat det skal alt ske! Nu er det lovet!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+I Fald Du røbes, koster det dit Liv!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Nu vel! saa soner jeg min Hedningbrøde
+og lider Straffen for det Selvbedrag,
+hvoraf I To har vækket mig i Dag!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Men vi da? — Vil Du atter os forstøde?
+Følg med os, Fulvia? følg os til Rom!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(besluttet).</center></small></nonum>
+I Morgen kan vi tales ved derom.
+Hvad jeg har sagt, staar fast; lad mig kun bøde!
+— Nu trænge I til Hvile. — Følg mig — kom!
+<nonum><small><right>(gaar, fulgt af Brødrene).</right></small></nonum>
+</body>
+</prose>
+
+<prose id="kaalund2018060612">
+<head>
+    <title>Tredie Scene</title>
+    <firstline></firstline>
+    <source pages="97-106"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><small><center>(Plads i Alexandria. Samme Dekoration som i første Akts første Scene).</center></small></nonum>
+<nonum><small><center>(<w>Servius</w>, festlig klædt med en Lavrbærkrands om Hovedet, kommer i Samtale med de <w>to Avgurer</w>. Følget, som ledsager ham, holder sig ærbødig tilbage).</center></small></nonum>
+
+<nonum><center><w>Servius.</w></center></nonum>
+    Ja, det maa jeg tilstaa: Den gode Lysias har skilt sig som en sand Mester ved dette Billede. Det er min Fulvia op ad Dage, aldeles, som hun gik og stod!
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+    Aldeles! Aldeles!
+
+<nonum><center><w>Servius.</w></center></nonum>
+    Jo mere jeg betragter det, jo mere forekommer det mig, som om hun er lyslevende.
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+    Hun er jo heller ikke død, men optaget i Elysium blandt Guderne!
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+    Stjernen, som de har tændt til Minde om dette deres hellige Ran, vidner det!
+
+<nonum><center><w>Servius.</w></center></nonum>
+    Ja, ikke sandt? Jeg var jo selv den Første, som begreb det Hele. Alle tvivlede de og rystede paa Hovedet, da jeg sagde: Guderne har røvet hende! Lysias og I var de Eneste, som gav mig Medhold.
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+    Ja, vi stod paa din Side, ubetinget!
+
+<nonum><center><w>Servius.</w></center></nonum>
+    Men husker I, hvordan vor Prokonsul tog det? Han kaldte min Forklaring for Afsind og foer op, som om han var besat, da jeg erklærede ham, at jeg var saa vis i min Sag, at jeg ikke længer agtede at søge hende her paa Jorden? Først, da jeg bragte Orakelsvaret hjem fra Delphi, fik jeg stoppet Munden paa ham.
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+    Ja, hvem kan nu tvivle længer!
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+    Men denne Dag har dog sat Kronen paa din Lykke, ædle Servius: At see din Datters Billedstøtte rejst paa et indviet Alter ved Athenetemplets Indgang — sandelig! en slig Ære er kun falden i faa Dødeliges Lod!
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+    I Trængslen nys, da Billedet blev afsløret, og Alles øjne hvilede paa det og paa Dig, som indtog Hæderspladsen, var det os umuligt at naa hen til Dig for at lykønske Dig og trykke dine Hænder. Tillad os nu at indhente det Forsømte.
+
+<nonum><center><w>Servius.</w></center></nonum>
+<nonum><small><center>(med naadig Mine, idet han rækker en Haand til hver af dem).</center></small></nonum>
+    Jeg takker Eder! Jeg takker Eder!
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+    Du er jo nu paa en Maade i Slægtskab med de udødelige Guder.
+
+<nonum><center><w>Servius.</w></center></nonum>
+<nonum><small><center>(brystende sig).</center></small></nonum>
+    Paa en Maade! — Ja, ganske vist. Jeg er kommen dem betydeligt nærmere, betydeligt!
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+    Dit Udseende vidner derom: Du er ligesom bleven yngre efter denne Begivenhed.
+
+<nonum><center><w>Servius.</w></center></nonum>
+    Synes I? Hm! — ja, jeg tror det selv.  Der er ligesom blæst nyt Liv i mig — <small>(griber sig til Benet)</small> Av!
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+    Du ømmer Dig?
+
+<nonum><center><w>Servius.</w></center></nonum>
+    Aa, det er kun Benene — Benene, som er blevne lidt svage. Denne Rejse til Delphi har været noget anstrengende. Jeg besteg, som I jo veed, Parnassos og begav mig muttersene, efter først at have taget mig en Dukkert i Hippokrene, op til Pythias Hule, for at høre Svaret af hendes egen Mund. Jeg maatte jo gjøre Alt, hvad der stod i min Magt for at skaffe Lys i Sagen.
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+Ja vist! ja vist!
+
+<nonum><center><w>Servius.</w></center></nonum>
+    Hun var mit eneste Barn, Arving til al min Rigdom. — Det var et haardt Stød at miste hende — saa pludselig, uden al Forberedelse.
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+    Tal ikke saaledes, Du Misundelsesværdige!
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+Guderne vil forlænge dit Liv til Belønning, fordi de har taget hende fra Dig!
+
+<nonum><center><w>Servius.</w></center></nonum>
+<nonum><small><center>(med et andægtigt Blik mod oven).</center></small></nonum>
+    Vi vil haabe detl Vi vil haabe det!
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+    Vær aldeles vis derpaa, ædle Servius! Men glem blot ikke, at det nu er dem, som skal tage Arv efter Dig, naar Du en Gang — gid det ske sent! — forlader Jorden.
+
+<nonum><center><w>Servius.</w></center></nonum>
+    Ja derpaa kan vi jo altid tænke. Den Tid den Sorg!
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+    Nej! nej! Saaledes bør Du ikke slaa det hen. Det faar jo Udseende af, at Du betænker Dig paa at yde Guderne frivillig et Offer, som Du skylder dem, og som jo dog er mindre, end det, Du allerede har bragt dem. I dit Sted vilde jeg endnu i Dag aflægge Løftet om, at Alt, hvad jeg ejede og havde, skulde være deres.
+
+<nonum><center><w>Servius.</w></center></nonum>
+<nonum><small><center>(betænkelig).</center></small></nonum>
+Det vil sige: testamenteres til Templerne. —
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+Naturligvis!
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+    Dit Navn vil da blive indhugget med gyldne Bogstaver i de hellige Mure. Tænk Dig, naar Du selv kaster dit Blik derpaa og læser: »Servius, den Gavmilde, Faderen til den vise Fulvia, som i levende Live blev optaget i det himmelske Elysium, skjænkede Guderne Alt: først sit eneste Barn, dernæst sin hele Rigdom.«
+
+<nonum><center><w>Servius.</w></center></nonum>
+    Men jeg vil dog helst selv raade over den, indtil jeg døer.
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+    Forstaar sig! Det er kun Løftet, som Du i Dag bør afgive. Du vil endnu leve længe.
+
+<nonum><center><w>Servius.</w></center></nonum>
+    Naar jeg en Gang gaar bort, skal der sættes et prægtigt Monument over mig, og den samme Indskrift, som I nylig nævnede, skal staa at læse derpaa, kort og fyndigt, med gyldne Bogstaver.
+
+<nonum><center><w>Første Avgur.</w></center></nonum>
+    Ethvert af dine Ønsker skal være os helligt.  Vi vil, om Du synes saa, strax følge med Dig for uden Tøven at bringe denne Sag i Orden.
+
+<nonum><center><w>Servius.</w></center></nonum>
+    Lad gaa! Men saa længe jeg lever, vil jeg selv raade over, hvad der er Mit. Guderne maa finde sig i at vente saa længe.
+
+<nonum><center><w>Anden Avgur.</w></center></nonum>
+Ja vist, ja vist! De vil til Tak forlænge dit Liv!
+<nonum><small><center>(<w>Servius</w>, <w>Avgurerne</w> og <w>Følget</w> gaar bort til Højre).</center></small></nonum>
+
+<nonum><small><center>(<w>Aqvilinus</w> kommer fra den modsatte Side i Samtale med <w>Lysias</w>. Følget, som ledsager Prokonsulen, trækker sig tilbage, da han standser).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Nej, Lysias; Du slipper ej saa let —
+vi To maa ikke misforstaa hinanden.
+— Hør mig: Jeg tilstaar Dig, det var med Forsæt,
+jeg fulgte Dig, da nys Du vendte Ryggen
+til Trængslen om dit mesterlige Billed.
+Din Stolthed slog mig; — jeg forstod saa godt:
+Du havde faaet nok af Mængdens Hyldest.
+— Forsmaar Du ogsaa min? Var det maaske
+just den, Du vilde undgaa, da Du søgte
+saa ilsomt bort, at jeg fik neppe Tid
+at standse Dig og komme Dig i Tale?
+Svar mig oprigtig, hvorfor sky’r Du mig?
+
+<nonum><center><w>Lysias.</w></center></nonum>
+<nonum><small><center>(undvigende).</center></small></nonum>
+Vi To har ej det samme Syn paa Livet.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Nu vel! Du er en Græker, jeg en Romer,
+det gjør jo alt en Forskjel. Du er Kunstner
+og lever i din egen Billedverden,
+jeg i den virkelige; — denne Forskjel
+er vel saa stor som hin. Og begge To
+har vi vor Stolthed, men til Trods for Alt,
+som skiller os, vi agte dog hinanden. —
+Og — ikke sandt? — da Folkesværmen trængte
+nys om dit Billed, følte Du som jeg
+— tilstaa det ærligt: — at det Bedste mangled
+i denne Fest — Begejstringen og Troen?
+
+<nonum><center><w>Lysias.</w></center></nonum>
+Det overrasker mig, min høje Herre,
+at høre Dig beklage denne Mangel;
+man paastaar, at Du selv kun højst unødig
+var med til denne Fest.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+        Ja, højst unødig. —
+Dog har dit Billed rørt mig, Lysias!
+
+<nonum><center><w>Lysias.</w></center></nonum>
+Som Kunstværk, ja! — Du var jo selv saa naadig
+at ville kjøbe det til Prydelse
+for dit Palads, men undte det ej Æren,
+at blive stillet op i Folkets Paasyn
+paa Tempelaltret. — Ingen meer end Du
+har tvivlet om det Under, som er sket!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Du tror derpaa?
+
+<nonum><center><w>Lysias.</w></center></nonum>
+        Og derom kan Du spørge!
+Selv om den delphiske Præstindes Svar
+var gaaet os imod — jeg tvivled ej:
+Orakelsvaret har jeg i mig selv!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Dit Billed vidner, at Du taler Sandhed,
+og Ingen kan beundre meer end jeg
+den stumme Højhed, Du har lagt deri.
+For Dig var Fulvia alt mens hun leved
+— jeg mener, da hun færdedes iblandt os —
+et Væsen af en højere Natur;
+hvormeget mere maa hun være det
+nu, da saa gaadefuldt hun er forsvunden!
+Men sæt, vi finde dog den Tabtes Spor!
+Sæt, at det viser sig, hun er i Live!
+Hvad da? Hvorledes skal vi da forsvare
+hvad her er sket i Dag?
+
+<nonum><center><w>Lysias.</w></center></nonum>
+<nonum><small><center>(heftig).</center></small></nonum>
+        Da maa Du flytte
+fra Tempelaltret ned min Billedstøtte
+og give den, i Fald Du vil, en Plads
+i en af Krogene paa dit Palads!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Jeg tager Dig paa Ordet, Lysias!
+— For Dig er Fulvia nu kun en Mythe!
+
+<nonum><center><w>Lysias.</w></center></nonum>
+Ja søg Du kun i Støvet hendes Spor!
+Selv om jeg kunde, vilde jeg ej drage
+den skjønne Sjæl herned til denne Jord
+fra Lysets Herlighed, hvori hun bor;
+— jeg ønsker hende ikke meer tilbage.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Jeg deler ej din lykkelige Tro
+og kan ej finde Lys i denne Gaade.
+
+<nonum><center><w>Lysias.</w></center></nonum>
+Ja, der er Forskjel, seer Du, paa os To.
+Vi tage Livet paa forskjellig Maade!
+<nonum><small><right>(De gaa).</right></small></nonum>
+</body>
+</prose>
+
+<prose id="kaalund2018060613">
+<head>
+    <title>Fjerde Scene</title>
+    <firstline></firstline>
+    <source pages="106-109"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><small><center>(Tempelplads i Alexandria. Til Venstre i Mellemgrunden Athenes Tempel, mellem hvis Søjler <w>Fulvias</w> Marmorbillede i naturlig Størrelse sees staaende paa et Alter, belyst af Maanen, der af og til formørkes af Drivskyer. En bred Marmortrappe fører op dertil).</center></small></nonum>
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(klædt som Broder <w>Eugenius</w>, kommer spejdende til alle Sider. Skuepladsen formørkes).</center></small></nonum>
+Det gjælder Livet! — Hvis man traf mig her,
+man vilde sønderrive mig paa Stedet.
+— Men nej! her lurer Ingen. — Jeg er ene —
+hvorfor da skjælve? Alt er stille nu
+i denne Del af Staden; disse Templer,
+med deres Hedningguder, trænge ej
+til at bevogtes. Overtroens Rædsel
+staar her paa Vagt. Mig skal den ikke skræmme.
+Jeg er jo ingen Tyv, vil Ingen myrde,
+kun sønderslaa mit eget Marmorbilled
+med denne Hammer. — Skjul Dig, lyse Maane,
+indhyl Dig i dit Slør! — Jeg kjender Vejen!
+<nonum><small><center>(Idet bun sætter Foden paa Tempeltrappen, træder Maanen frem og kaster sit fulde Lys paa Billedstøtten).</center></small></nonum>
+O, alle Himlens Engle, staa mig bi!
+Der er mit Billed! — Ja det er mig selv,
+men skjønnere — forherliget — forklaret —
+et Mesterværk af Kunst — min Sjæl i Sten!
+Jeg selv af Kjød og Blod er kun dets Skygge.
+— Vel maa jeg rødme i min Kuttes Skjul:
+jeg Larve til saa skjøn en Sommerfugl!
+Det er, som Marmorpsychen der sig skammer
+ved Siden af den Orm, hvorfra den stammer,
+og smiler haant ad Ofret, jeg har bragt!
+— Vee mig! jeg føler Kvindehjertet banke:
+— et Gjenfærd af mig selv, i denne Dragt —
+jeg gribes af en syndig Hedningtanke
+ved dette Syn — ved denne Skjønhedspragt
+i disse Templer — disse Søjler ranke!
+Kom mig til Hjælp, o Himmel! gjør mig stærk!
+Er denne Herlighed kun Djævlens Værk?
+Hvi har, o Gud, saa skjøn Du Verden dannet,
+naar Skjønhedsglæden er af Dig forbandet!
+— Naturen sig fornyer Vaar paa Vaar,
+og Nattens Stjerner højt paa Himlen funkle,
+som de har funklet gjennem tusind Aar —
+skal Dødens Skygge nu det Alt fordunkle?
+Er Alt, hvad Hellas høje Aand har skabt,
+kun Tant og Blændværk? Skal det Alt gaa tabt?
+— Er der paa Jorden Intet meer tilbage
+for dem, som tro paa Dig, end at forsage?
+— Forsage! ja det er det strenge Bud!
+Styrk mig i Kampen! styrk mig store Gud! —
+Men tys: jeg hører Skridt! der kommer Nogen!
+— En Mand! jeg kjender denne Skikkelse:
+Ha, Aqvilinus! Himmel, det er ham —
+ham, som jeg sidst i Verden vilde møde!
+<nonum><small><center>(Hun skjuler sig hurtigt bag en Søjle ved et af de Templer, der staa paa den modsatte Side af Athenetemplet).</center></small></nonum>
+
+<nonum><small><center>(<w>Aqvilinus</w>, indhyllet i sin Toga, kommer fra Højre. Efter at have kastet et Blik omkring sig, for at overtyde sig om, at han er ene, standser han foran Tempeltrappen, der fører op til <w>Fulvias</w> Billedstøtte, og staar et Øjeblik med korslagte Arme fortabt i Beskuelsen deraf).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Du tavse Nat, alene her for Dig
+forraader jeg min Sorg. — Vær Du mit Vidne:
+Hun var den Eneste, jeg havde kjær!
+<nonum><small><center>(stiger op ad Trappen og slaar sine Arme om Billedstøtten).</center></small></nonum>
+Paa Marmorlæben maa et Kys jeg trykke!
+<nonum><small><center>(idet han, efter at have kys set Billedets Mund, stiger ned og ved Foden af Trappen endnu en Gang vender sig om mod det).</center></small></nonum>
+Og saa Farvel igjen, min døde Lykke!
+<nonum><small><right>(gaar).</right></small></nonum>
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(træder frem fra sit Skjul).</center></small></nonum>
+O, jeg forgaar af Skræk! Hvad har jeg seet!
+Hvad har jeg hørt! Han dristed sig at kysse
+mit Billed — ja, han elsker mig endnu!
+Held mig, at jeg stod skjult bag Søjlens Mørke. -
+Hvi blev, mit Billed, ej Du rød som Blod!
+Selv blusser jeg fra Isse og til Fod —
+men denne Afgud skal ej meer han dyrke!
+— Nu er det Tid! ja, ja! nu skal det skee.
+<nonum><small><center>(stiger med opløftet Hammer op til Billedstøtten).</center></small></nonum>
+Jeg lukker Øjnene for ej at see —
+Styr, Du, o Gud, min Arm! — Fald tung, min Hammer!
+— Det er mit eget Hjerte, Slaget rammer!
+<nonum><small><center>(Idet hun vil slaa til, slipper hun forvirret Hammeren, kaster sig om Billedstøttens Hals og trykker et Kys paa dens Mund. Forfærdet over sin egen Dristighed og bedækkende sit Ansigt med sine Hænder, stiger hun hurtig ned).</center></small></nonum>
+Jeg er fortabt! Hvor skjuler jeg min Skam!
+Vee mig, Usalige, — jeg elsker ham!
+
+<nonum><small><center>(Tæppet falder.)</center></small></nonum>
+</body>
+</prose>
+
+</content>
+</section>
+
+<section>
+<head>
+    <title>Fjerde Akt</title>
+</head>
+<content>
+
+<prose id="kaalund2018060614">
+<head>
+    <title>Første Scene</title>
+    <firstline></firstline>
+    <source pages="110-119"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><small><center>(Forstad ved Alexandria. Til Højre i Mellemgrunden et Hus, til hvis lukkede Indgang, som dækkes af et Bislag, nogle Trin føre op. Til Venstre, hen imod Baggrunden, et simpelt Herberge).</center></small></nonum>
+
+<nonum><small><center>(Paa en Bænk ved dette sees <w>Fulvia</w>, klædt som Broder <w>Eugenius</w>, siddende alene, halvt skjult bag en fremspringende Pille, med Hovede t foroverbøjet, hvilende paa Armene, som hun støtter paa et foranstaaende Bord).</center></small></nonum>
+
+<nonum><small><center>(Et Tog af blomstersmykkede Ynglinger og Piger kommer fra Venstre og drager syngende og dandsende over Skuepladsen).</center></small></nonum>
+
+<nonum><center><w>Forsangeren.</w></center></nonum>
+Hil Dig, o Eros, Dig priser vor Sang!
+
+<nonum><center><w>Choret.</w></center></nonum>
+        Priser vor Sang!
+
+<nonum><center><w>Forsangeren.</w></center></nonum>
+Mindste blandt Guder, dog ypperst i Rang!
+
+<nonum><center><w>Choret.</w></center></nonum>
+        Ypperst i Rang.
+Paa Olympen er ikke din Lige!
+
+<nonum><center><w>Forsangeren.</w></center></nonum>
+Hil Dig bevingede, herlige Gud!
+
+<nonum><center><w>Choret.</w></center></nonum>
+        Herlige Gud!
+
+<nonum><center><w>Forsangeren.</w></center></nonum>
+Alt hvad der aander maa lystre dit Bud.
+
+<nonum><center><w>Choret.</w></center></nonum>
+        Lystre dit Bud.
+Selv til Tartaros naa dine Pile!
+
+<nonum><center><w>Forsangeren.</w></center></nonum>
+Skjøn er en Rus i den fyrige Vin.
+
+<nonum><center><w>Choret.</w></center></nonum>
+        Fyrige Vin.
+
+<nonum><center><w>Forsangeren.</w></center></nonum>
+Tusindfold, Eros, dog skjønnere din!
+
+<nonum><center><w>Choret.</w></center></nonum>
+        Skjønnere din!
+Det er dejligt at leve og elske!
+
+<nonum><center><w>Forsangeren.</w></center></nonum>
+Stemmer i! stemmer i! lad os juble i Chor:
+Det er dejligt at leve og elske paa Jord!
+
+<nonum><center><w>Choret.</w></center></nonum>
+Det er dejligt at leve og elske paa Jord!
+
+{cs:(Idet Toget under fortsat Sang og Dands fjerner sig til Højre, komme <w>Malchus</w>, <w>Josephus</w>, <w>Lucas</w> og <w>flere Klosterbrødre</w>, tilligemed <w>Narkissos</w> og <w>Hyazinthos</w> fra den modsatte Side).
+
+<nonum><center><w>Malchus.</w></center></nonum>
+Saa sagte! sagte! Lad os give Tid,
+til de er borte. — Jeg har ikke Lyst,
+saa tyk, jeg er, at blive reven med
+i Dandsen af de kaade Hedningtøse,
+— og I vel heller ikke —
+
+<nonum><center><w>Lucas.</w></center></nonum>
+        Himlen fri os!
+Hvem tænker nu paa Sligt!
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+        Her er jo Stedet
+hvor han har sat os Stævne!
+
+<nonum><center><w>Malchus.</w></center></nonum>
+        Stille! — Tys!
+Han er alt kommen. — See, der sidder han,
+og tager sig fornuftigvis en Lur!
+Naa, Herre Gud! Han kan nok være træt;
+han har vel tilbragt Natten med at vaage
+og bede hos en stakkels syndig Sjæl;
+thi andet Ærind, kan jeg ikke tro,
+har drevet ham herind.
+
+<nonum><center><w>Lucas.</w></center></nonum>
+        Jeg ikke heller;
+han plejer ellers aldrig nogen Nat
+at være borte fra vort stille Kloster.
+
+<nonum><center><w>Malchus.</w></center></nonum>
+Men dette Stævne, som han nu har sat os,
+hvad skal det sige?
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+        Tys! han rører sig
+og taler med sig selv som halvt i Drømme.
+
+<nonum><center><w>Malchus.</w></center></nonum>
+Bedst at vi vække ham; — jeg vil mig rømme.
+<nonum><small><center>(rømrner sig).</center></small></nonum>
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(som, idet hun bemærker dem, springer op fra sit Sæde og iler hen mod dem).</center></small></nonum>
+O, Gud ske Tak, at endelig I kom!
+Jeg veed ej selv, hvorlænge jeg har siddet
+i denne Afkrog her og ventet Eder.
+
+<nonum><center><w>Lucas.</w></center></nonum>
+Hvad er der sket? Har Noget skrækket Dig?
+Meer end sædvanligt synes Du bevæget.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(søgende at beherske sig).</center></small></nonum>
+Spørg ikke, Brødre, hvad der er mig hændet
+i denne Nat. — Jeg har kun lidt at sige,
+kun et Par Ord — Jeg stævned Eder hid
+at søge mig ved Stadens Udkant, her
+ved dette Herberg — for at tage Afsked
+med Eder Alle!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+<nonum><small><center>(hurtig).</center></small></nonum>
+        Ja, med disse her —
+men ej med os; — vi dele Skjæbne sammen,
+ej sandt?
+
+<nonum><center><w>Jopsephus.</w></center></nonum>
+<nonum><small><center>(bønlig).</center></small></nonum>
+        Hvis det er saa, da tag mig med!
+Selv har Du, fromme Fader, givet mig
+min Frihed.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(adspredt).</center></small></nonum>
+        Dunkelt jeg det mindes —
+Du bad mig selv derom?
+
+<nonum><center><w>Josephus.</w></center></nonum>
+        Det var i Gaar,
+før Du forlod os.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(med et tungt Suk).</center></small></nonum>
+        Ja, i Gaar — i Gaar,
+men denne ene Nat har dynget Aar
+paa min Erindring!
+
+<nonum><center><w>Malchus.</w></center></nonum>
+<nonum><small><center>(afsides).</center></small></nonum>
+        Han er fra Forstanden!
+
+<nonum><center><w>Lucas.</w></center></nonum>
+<nonum><small><center>(slaaende Hænderne sammen).</center></small></nonum>
+Du vil forlade os? Du, vor Abbed?
+Umuligt!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(fast).</center></small></nonum>
+        I maa vælge Jer en Anden!
+
+<nonum><center><w>Malchus.</w></center></nonum>
+<nonum><small><center>(afsides).</center></small></nonum>
+Jeg sagde nok: det kunde ikke gaa.
+Han var for ung og mangled Ben i Panden.
+— Hvo veed, hvem Valget nu kan falde paa!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+<nonum><small><center>(til Fulvia).</center></small></nonum>
+Du følger altsaa os?
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Nej! Rejs med Gud
+jeg bliver her —
+
+<nonum><center><w>Lucas.</w></center></nonum>
+        I Staden? midt i Vrimlen?
+Har Verden Dig bedaaret med sin Lyst?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(heftig).</center></small></nonum>
+Nej, den har dynget Bjerge paa mit Bryst
+og knyttet mig end fastere til Himlen!
+
+<nonum><center><w>Lucas.</w></center></nonum>
+<nonum><small><center>(bønlig).</center></small></nonum>
+Kom! vend tilbage med os — hør vor Bøn!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(vendende sig bort).</center></small></nonum>
+Jeg kan det ej! — Jeg høster nu min Løn —
+— jeg er ej den, I trori — Vælg Jer en Anden!
+
+<nonum><center><w>Malchus.</w></center></nonum>
+<nonum><small><center>(afsides).</center></small></nonum>
+Hvem er han da? — Er han besat af Fanden?
+Hvad gaar der af ham?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Spild ej Eders Ord!
+Mit Valg staar fast: Jeg gaar som Enebo’r
+i Ørknen ud; der findes vel en Hule
+et eller andet Sted, som kan mig skjule
+for Dagens Lys —
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+        Hvor Du er, vil vi være!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(bevæget, men bestemt).</center></small></nonum>
+Nej I Korset skal I ud i Verderl bære!
+Følg Eders Kald! Velsignet være I!
+— Og Dig, Josephus, staa Guds Engle b i!
+Gaa med de To. — Mig maa I helst forglemme!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+Nej, nej! — Dit Minde vil vi evigt gjemme!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Saa mind mig da som En, der alt er død!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Din Kind benægter det; den blusser rød,
+og der er Kraft og Ungdom i din Stemme!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(idet hun fortvivlet vender sig bort).</center></small></nonum>
+Ja, det er Kvalen just, at jeg er ung,
+at Livets Uro banker i mit Hjerte!
+Alene maa jeg kjæmpe med min Smerte —
+— gjør mig ej Afskedsstunden mere tung!
+
+<nonum><center><w>Narkissos.</w></center></nonum>
+<nonum><small><center>(dæmpet, idet han bøjer sig hen imod hende).</center></small></nonum>
+Hvad er der sket? O løs os denne Gaade,
+hvisk den i Øret lønligt paa os To!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(fortvivlet).</center></small></nonum>
+Hvor kan til Mennesker jeg det forraade,
+hvad neppe Himlen selv jeg tør betro!
+— Endnu en Gang, Farvel! — det er mit sidste!
+
+<nonum><center><w>Hyazinthos.</w></center></nonum>
+Saa skal vi aldrig sees i Livet meer?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Det veed kun Han, som raader for hvad sker,
+— som samler os, naar alle Grave bristel
+<nonum><small><center>(Hun vender sig bort fra dem og bedækker sit Ansigt med sine Hænder. Tvillingbrødrene og <w>Josephus</w> tage Afsked med Klosterbrødrene, hvoraf nogle ledsage dem ud til Højre, medens <w>Malchus</w> og nogle af de andre, som nøjes med at vinke Farvel til de Bortdragende, blive tilbage og stikke Hovederne sammen i ivrig Samtale).</center></small></nonum>
+
+<nonum><small><center>(En forvirret Støj, blandet med Sang og Latter, børes nærmere og nærmere udenfor Skuepladsen).</center></small></nonum>
+
+<nonum><center><w>Lucas.</w></center></nonum>
+See saa! der har vi alt den anden Flok —
+hør, hvor de støje!
+
+<nonum><center><w>Malchus.</w></center></nonum>
+        Ja — Ungdommen raser!
+
+<nonum><center><w>Lucas.</w></center></nonum>
+Afsted herfra! Jeg har alt faaet nok!
+
+<nonum><center><w>Malchus.</w></center></nonum>
+Ja vist! nu gjælder det at smøre Haser!
+<nonum><small><center>(Iler ud til Højre med de Andre, undtagen <w>Fulvia</w>, som bliver staaende fortabt i Grublen, indtil Larmen er kommen saa nær, at hun skræmmes op, men kun faar Tid til at ile ben til den modsatte Side).</center></small></nonum>
+
+{cs:(En ny Flok af unge Kvinder med flagrende Haar og af et vildere Udseende end de første, kommer, fulgt af en Flok skjæggede Mænd, jagende i baccbantisk Jubel ind fra Venstre).
+
+<nonum><center><w>Chor af Mændene.</w></center></nonum>
+Skjønne Mænader med udslagne Haar!
+Stands dog, o stands dog, og lad Eder fange!
+
+<nonum><center><w>Chor af Kvinderne.</w></center></nonum>
+Fang os! ja fang os, i Fald I formaar!
+Skjæggede Fauner, vi er ikke bange.
+
+<nonum><center><w>Chor af Mændene.</w></center></nonum>
+Livet er kort; lad os gribe dets Lyst!
+Kom lad os favnes og kysses og dandse!
+
+<nonum><center><w>Chor af Kvinderne.</w></center></nonum>
+Snart skal vi lande paa Skyggernes Kyst;
+Tiden har Vinger — vi kan den ej standse!
+
+<nonum><center><w>Chor af Mændene.</w></center></nonum>
+Hjælp os, o hjælp os at holde den fast!
+Skjænk os den Fryd, som en Kvindefavn rummer!
+
+<nonum><center><w>Chor af Kvinderne.</w></center></nonum>
+Ja lad os favnes; thi Livet har Hast!
+Vinen maa nydes, imedens den skummer!
+
+<nonum><small><center>(<w>Fulvia</w>, som under det Foregaaende er flygtet hen til Huset, der ligger til Højre, og har trykket sig tæt op til dets Indgang, bliver opdaget af dem).</center></small></nonum>
+
+<nonum><center><w>En Mand af Flokken</w></center></nonum>
+<nonum><small><center>(idet han med vilde Fagter nærmer sig hende).</center></small></nonum>
+Ha! ha! ha! See der: hvad er det for en Fugl?
+Ved Eros og Bacchos: En Ugle! en Ugle!
+Er Du bange for os! Kom frem af dit Skjul!
+Vi er Verdens lystigste Fugle.
+Tør Du vise dit Ansigt i Solens Glands?
+Er maaske Du en Kristen eller en Jøde?
+I hvem Du saa er: Du skal med i vor Dands
+eller stenes paa Stedet til Døde!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(bankende paa Døren).</center></small></nonum>
+Frels mig derinde! Frels mig! luk mig ind!
+
+<nonum><small><center>(Idet Nogle af Mængden søge at gribe fat i <w>Fulvia</w>, forsvinder hun gjennem Døren, som hurtig lukkes bag hende).</center></small></nonum>
+
+<nonum><center><w>Manden af Flokken.</w></center></nonum>
+Ha! ha! ha! han forsvandt som en Snegl i sit Hus.
+Hvad saa meer! hvad saa meer! lad os nyde vor Rus,
+til vi stige derned, hvor der lyser ej Sol,
+for at tilkaste Charon vor sidste Obol!
+<nonum><small><right>(De tumle støjende og jublende ud).</right></small></nonum>
+</body>
+</prose>
+
+<prose id="kaalund2018060615">
+<head>
+    <title>Anden Scene</title>
+    <firstline></firstline>
+    <source pages="119-124"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><small><center>(Værelse i Enken <w>Phrynes</w> Hus).</center></small></nonum>
+
+<nonum><center><w>(Phryne, koket, med Blomster i Haaret, kommer med <w>Eugenius</w> (Fulvia).</w></center></nonum>
+
+Phryne
+<nonum><small><center>(sledsk).</center></small></nonum>
+    Kom! kom! Her er Du sikker. Hvil Dig paa disse bløde Hynder. — Du er dog vel ikke bange for at være ene med en ung Kvinde!  Ønsker Du Vin til at styrke Dig paa, skal jeg selv række Dig et Bæger af den bedste, jeg har, og slynge Blomster derom, for at vise Dig, at Du er mig velkommen!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(sky).</center></small></nonum>
+    Nej Tak! Jeg trænger kun til at fatte mig lidt.
+
+<nonum><center><w>Phryne.</w></center></nonum>
+    De har jo næsten skræmt Livet af Dig!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+    Paa Livet ligger der mig ingen Magt! Det var kun min Afsky for den frække Hobs Lystighed, som jog mig herind.
+
+<nonum><center><w>Phryne.</w></center></nonum>
+    Ja, i Dag er det ikke godt for Folk af din Tro og i den Dragt, Du bærer, at færdes paa Gader og Stræder. Næst Bacchosfesten og Saturnalierne, er denne for Eros den galeste i hele Aaret. — Havde jeg blot vidst, at det var Dig, der bankede paa, saa havde jeg ikke nølet med at lukke Dig ind; — men en ung Enke maa jo vogte vel paa sit gode Rygte, allermest i Dag, da enhver Mand, som lukkes ind af en Kvinde, tør give hende et Kys.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(urolig).</center></small></nonum>
+    Jeg skal ikke misbruge din Godhed. Lad mig heller strax gaa.
+
+<nonum><center><w>Phryne.</w></center></nonum>
+    Nej, nej! Du er altfor bly. Tænk dog ikke paa at forlade mig saaledes. Jeg har givet mine Slavinder Befaling til at stænge Døren dernede, og her vover Ingen at forstyrre os. Men saa sæt Dig dog! sæt Dig! og lad mig tage Plads ved dine Fødder; jeg har Meget at tale med Dig om.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(studsende).</center></small></nonum>
+    Du?
+
+<nonum><center><w>Phryne.</w></center></nonum>
+    Ja! see kun rigtig paa mig; kjender Du mig ikke? Hvorfor anstiller Du Dig saa fremmed?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+    Jeg har oplevet saa meget, at jeg næsten har tabt Evnen til at skjælne Drøm fra Virkelighed.
+
+<nonum><center><w>Phryne.</w></center></nonum>
+    I Folk af den nye Tro tage ogsaa Livet altfor tungt!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+    Hvis Du havde prøvet megen Modgang, vilde Du forstaa det.
+
+<nonum><center><w>Phryne.</w></center></nonum>
+    Modgang? — Veed Du ikke, at jeg er Enke for anden Gang? Det er jo neppe et halvt Aar siden, at Du selv beredte min sidste Mand til Døden. — See Dig om: det var her, netop i dette Hus. Har Du glemt det? Han var af samme Tro som Du, men en fejg Stakkel.  Frygten for Forfølgelse bragte ham til at fornægte sin Tro; selv for mig skjulte han den, lige til han laa paa sit Yderste.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(besindende sig).</center></small></nonum>
+    Det var altsaa Dig, som, da jeg stod her udenfor i Samtale med nogle Trosfæller, kom hen til mig og bad mig træde herind til den Syge?
+
+<nonum><center><w>Phryne.</w></center></nonum>
+    Ja! — og som sad ligesom nu ved dine Fødder, da Du indgjød ham Mod til at dø! — Han var gammel — Naturen krævede sin Ret!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(farer op).</center></small></nonum>
+    Jesus! Jeg mindes det! — Han mistænkte Dig —
+
+<nonum><center><w>Phryne.</w></center></nonum>
+<nonum><small><center>(afbrydende).</center></small></nonum>
+    For at have fremskyndt hans Død ved Gift — Ja, men Du tror dog vel ikke derpaa? — Det var jo i Vildelse, han talede — naturligvis.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(sky).</center></small></nonum>
+    Og nu smykker Du Dig med Blomster og farver din Kind med Sminke!
+
+<nonum><center><w>Phryne.</w></center></nonum>
+<nonum><small><center>(leende).</center></small></nonum>
+    Ja, hvorfor skulde jeg ikke smykke mig? Jeg er jo ung endnu, og paa Bejlere har det ikke manglet mig. — Men jeg vil betro Dig en Hemmelighed, hvis Du ikke alt har gjættet den: Det er Dig, jeg har ventet paa!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(overvældet af Forvirring).</center></small></nonum>
+    Mig?
+
+<nonum><center><w>Phryne.</w></center></nonum>
+    Ja, stir dog ikke saa forbavset paa mig. Fra den Stund, jeg første Gang saae Dig, har jeg længtes efter Dig og søgt Dig — søgt Dig overalt her i Staden, men forgjæves —
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+    Du bedrager Dig selv, eller det er Afsind. Jeg maa bort herfra, strax!
+
+<nonum><center><w>Phryne.</w></center></nonum>
+    Nej! Bliv! jeg slipper Dig ikke! Du er ung som jeg og af Kjød og Blod som jeg. Den Ild, der luer i dine Øjne, forraader, at Du er i Stand til at elske. Ved Eros! ja, Du bliver rød, og din Forvirring taler et andet Sprog end dine Ord!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(stødende hende med Afsky fra sig).</center></small></nonum>
+    Vig fra mig, Bolerske! Rør mig ikke! Heller vil jeg ty til en Giftslanges Hule end tøve her hos Dig!
+
+<nonum><center><w>Phryne.</w></center></nonum>
+<nonum><small><center>(med vild Forbitrelse).</center></small></nonum>
+    Værre end en Giftslange! Det skal Du faa at mærke. Veed Du hvad en forsmaaet Kvinde er i Stand til?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+    Er Du rasende? Hvad vil Du gjøre mig?
+
+<nonum><center><w>Phryne.</w></center></nonum>
+    Det skal jeg vise Dig!
+(iler hen til Døren, river den op og raaber:)
+    Til Hjælp! Til Hjælp!
+<nonum><small><center>(Flere Slaver og Slavinder af hendes Husstand træde ilsomt ind).</center></small></nonum>
+
+<nonum><center><w>Phryne.</w></center></nonum>
+    Grib ham! — Denne Formastelige har villet krænke mig her i mit eget Hus. Selv vil jeg anklage ham for Dommeren. Afsted med ham!  I skal vidne, at jeg, den svage Kvinde, har maattet kalde Eder til Hjælp mod hans Frækhed.
+
+<nonum><center><w>Slaverne.</w></center></nonum>
+<nonum><small><center>(der have grebet fat i <w>Fulvia</w>).</center></small></nonum>
+    Ja! ja! Det skal vi!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(idet de føre hende ud).</center></small></nonum>
+Gud tilgive Dig, Du veed ikke hvad Du gjør!
+<nonum><small><center>(Alle gaa).</center></small></nonum>
+</body>
+</prose>
+
+<prose id="kaalund2018060616">
+<head>
+    <title>Tredie Scene</title>
+    <firstline></firstline>
+    <source pages="124-134"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><small><center>(Retssal i Prokonsulens Palads. Til Højre en ophøjet Thronstol for Dommeren, ved Siden deraf nogle lavere Sæder).</center></small></nonum>
+
+<nonum><small><center>(Gjennem Hovedindgangen i Salens Baggrund strømmer en broget Folkehob ind, i Spidsen for hvilken sees Enken <w>Phryne</w>, fulgt af <w>Fulvia</w>, der fastholdes af et Par Mænd. <w>Fulvia</w> har kastet Hætten over sit Hoved, saaledes at den til Dels skjuler hendes Ansigt. Nærved hende sees Broder <w>Malchus</w>, som kun modstræbende synes at være til Stede).</center></small></nonum>
+
+<nonum><small><center>(<w>Skrivere</w> med Haandtavler komme og tage Plads ved Thronstolen).</center></small></nonum>
+
+<nonum><small><center>(<w>Aqvilinus</w>, fulgt af <w>Lictorer</w>, træder ind fra en Sidegang og hestiger Dommersædet).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Skjøndt det er Skik paa Aarets store Fester
+og altsaa ogsaa paa en Dag, som denne,
+at holde Døren lukt for Rettens Sal,
+jeg har besluttet dog at aabne den;
+thi Enkers og de Værgeløses Klager
+gaar frem for Alt; og ikke skal det siges:
+Retfærdigheden sover, naar de Svage
+paakalde den. Jeg vil bevise her,
+at den er vaagen! — Hvor er Klagerinden!
+Hun træde frem! Jeg er beredt at høre!
+<nonum><small><center>(<w>Phryne</w> træder frem og kaster sig paa Knæ foran Dommersædet).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Rejs Dig! Hvad er dit Navn?
+
+<nonum><center><w>Phryne.</w></center></nonum>
+<nonum><small><center>(med paatagen Ydmyghed).</center></small></nonum>
+        Jeg hedder Phryne.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Og Du er Enke?
+
+<nonum><center><w>Phryne.</w></center></nonum>
+        Ja, en sorgfuld Enke —
+jeg lever ensomt i mit stille Hus
+og stænger strengt min Dør for Mænds Besøg;
+men denne Galilæ’r, som hist Du seer,
+skreg højt om Hjælp som En, der var forfulgt,
+og bad saa bønligt om et Tilflugtsted,
+at jeg forbarmed mig og lod ham ind.
+Men han bedrog mig, det var kun en List,
+hvormed han vilde lokke mig i Fælden:
+Det var min Kydskhed, som han vilde krænke,
+og kun ved Skrig, som kaldte Folk til Hjælp,
+jeg frelste mig fra Skjændslen, som mig trued.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Og hvad beviser, at Du taler Sandhed?
+
+<nonum><center><w>Slaverne</w></center></nonum>
+<nonum><small><center>(i Phrynes Tjeneste).</center></small></nonum>
+Vi kan bevidne det!
+
+<nonum><center><w>Mænd af Hoben.</w></center></nonum>
+        Ja alle vi,
+som greb ham!
+
+<nonum><center><w>En Stemme.</w></center></nonum>
+        Han fortjener Døden!
+
+<nonum><center><w>En anden Stemme.</w></center></nonum>
+Til Baalet med ham!
+
+<nonum><center><w>En tredie Stemme.</w></center></nonum>
+        Lad ham sønderrives
+af vilde Dyr!
+
+<nonum><center><w>Flere Stemmer.</w></center></nonum>
+        Ja, ja send ham til Circus,
+vi har ej længe nydt en saadan Spas.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(bydende).</center></small></nonum>
+Jeg fordrer Stilhed her! <small>(til Lictoreme)</small> Ud med det Pak,
+som glemmer fræk for hvem og hvor det staar!
+<nonum><small><center>(<w>Lictorerne</w> drive Fredsforstyrrerne ud).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Før Manden frem! Han skal ej dømmes uhørt.
+<nonum><small><center>(<w>Fulvia</w>, bedækkende sit Ansigt med Hænderne og nærved at segne, stødes frem for Dommersædet).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Hvis ikke Dragten, som Du bærer, lyver,
+er Du en Kristen?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(sagte).</center></small></nonum>
+        Ja!
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+            Nu vel, forsvar Dig!
+Du tier — Har Du ej et Ord at sige
+til mig, din Dommer?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(sagte).</center></small></nonum>
+        Nej!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(strengt).</center></small></nonum>
+            Vee Dig, Du Hykler!
+Du Ulv i Faaredragt; tifold strafværdig,
+hvis Du er skyldig i den frække Gjerning,
+som her Du sigtes for; thi Eders Tro,
+den, som I paastaa nu skal frelse Verden,
+er en Forsagelsens og Sorgens Tro,
+der sætter alle Sjæles Maal saa højt,
+at Tanken svimler. — »Himmel eller Helved« —
+det er jo Valget, som I give Andre;
+— I kjende ingen Middelvej! — Nu vel!
+Hvad har Du valgt? Er Du et Mørkets Barn,
+en uren Aand, som, iklædt Kjød og Blod,
+udfordrer Straffen alt paa Jorden her?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(sagte, idet hun synes at opbyde al sin Kraft for at holde sig oprejst).</center></small></nonum>
+Jeg er uskyldig!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+        Og dog dækker Du
+dit Ansigt til — elendig, sønderknust —
+et Billede af Skræk —
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Forbarm Dig, Himmel!
+Hvad skal jeg svare —
+<nonum><small><center>(synker sammen foran Dommersædet).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+        Er her Ingen,
+som kjender ham?
+
+<nonum><center><w>En Lictor.</w></center></nonum>
+        Her staar en Galilæ’r,
+som nikked til ham, da han gik herind;
+han veed Besked, hvis han vil ud med Sproget.
+
+<nonum><small><center>(Broder <w>Malchus</w>, som røber stor Befippelse, stødes frem i Salen).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Tal uden frygt. — Du kjender denne Synder?
+
+<nonum><center><w>Malchus.</w></center></nonum>
+<nonum><small><center>(tørrende Sveden af sin Pande).</center></small></nonum>
+Ja, Gud forlade mig min slemme Synd:
+Jeg kjender ham. Et Aar er det nu siden,
+han blev Abbed for samme Broderskab,
+hvortil jeg hører.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(studsende).</center></small></nonum>
+        I saa ung en Alder —
+Abbed? Besynderligt!
+
+<nonum><center><w>Malchus.</w></center></nonum>
+        Ja, ikke sandt?
+Han har endnu ej mere Spor af Skjæg,
+end jeg paa Bagen af min Haand.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(utaalmodig).</center></small></nonum>
+        Bliv ved —
+Hold Dig til Sagen!
+
+<nonum><center><w>Malchus.</w></center></nonum>
+        Da den Gamle døde —
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(afbrydende).</center></small></nonum>
+Den Gamle? hvilken Gamle?
+
+<nonum><center><w>Malchus.</w></center></nonum>
+        Ih, bevares:
+Vor forrige Abbed, den gamle Mand,
+som gik i Barndom. Det var ham, der valgte
+ham her til Eftermand. Jeg sagde strax,
+det kunde ikke gaa — Hvem denne var,
+hvorfra han stammed, vidste Ingen af os.
+Han kom, som han var falden ned fra Maanen,
+men Lærdom havde han meer end vi Andre
+og foregik os med et fromt Exempel,
+ja, det ved Gud han gjorde — men han fasted
+til Overmaal —
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+        Dit Omfang vidner:
+Du tog det ej saa strengt — Men skynd Dig! skynd Dig!
+
+<nonum><center><w>Malchus.</w></center></nonum>
+Ja, for at fatte mig i Korthed, Herre:
+I Nat forlod han os, og da vi mødtes
+igjen i Morges, tog han Afsked med os
+og teede sig, som han var bleven gal,
+og det er netop det, jeg tror han er,
+hvis ikke Fanden selv er faret i ham!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(som under det Foregaaende har røbet stigende Spænding og Utaalmodighed).</center></small></nonum>
+Nok! nok! Jeg vil ej høre meer din Sladder!
+<nonum><small><center>(Til <w>Lictorerne</w>, idet han rejser sig og stiger ned fra Dommersædet).</center></small></nonum>
+Røm Salen her, og lad mig være ene
+med denne Synder! Vent derudenfor,
+indtil jeg kalder!
+<nonum><small><center>(De Tilstedeværende, med Undtagelse af <w>Aqvilinus</w> og <w>Fulvia</w> forlade Retssalen).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(efter at have overtydet sig om, at Dørene ere lukkede).</center></small></nonum>
+        Nu er vi alene.
+Rejs Dig, Du Gaadefulde! Sig, hvem er Du?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(løftende Hovedet).</center></small></nonum>
+En Kvinde —
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(i den højeste Bevægelse).</center></small></nonum>
+        Fulvia!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+            Ja, saadan hed jeg.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(beherskende sig, med forstilt Kulde).</center></small></nonum>
+Umuligt! — Kun en rent tilfældig Lighed
+imellem Dig og den, hvis Navn jeg nævned,
+har skufifed mig, men kun et Øjeblik.
+— Hvor kunde Fulvia, den rene Kvinde,
+hvis sværmeriske Sjæl alt higed her
+fra Jorden op mod Lysets Straalehav,
+hun, som har vundet Plads blandt Himlens Stjerner,
+— hvor kunde hun fornedre sig til Sligt!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(knælende).</center></small></nonum>
+O hør mig! det var Længsel efter Lyset,
+som drev mig bort fra Alt: Jeg søgte Gud!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(strengt).</center></small></nonum>
+Som Mand Du levet har imellem Mænd —
+— og hvor er Lavrbærkrandsen, som Du vandt,
+da i Triumf de drog Dig hjem fra Templet?
+— Nu er det Pøblen, som har slæbt Dig hid!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+For hvad jeg fejled, har jeg strengt gjort Bod,
+men, tro mig, intet Slet har jeg forøvet!
+Som jaget Dyr jeg ligger for din Fod —
+dræb mig — men træd mig ej med Haan i Støvet!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Jeg tror Dig ikkel Nej! — Hvor var Du henne
+i denne Nat? Hvorfor forlod Du Klostret
+paa slig en Tid? Du hørte selv jo nylig
+hvad Vidnet sagde: »Først i Morges mødtes
+Du med de Andre«. —
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Gjaldt det Livet kun,
+da tav jeg! — Men jeg nødes til at tale —
+nu vel, saa briste da det sidste Segl,
+som lukker for min Mund! — Hvor var Du selv
+i denne Nat, Prokonsul Aqvilinus?
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(forvirret).</center></small></nonum>
+Hvad skal det sige? hvilket sælsomt Spørgsmaal!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Var det et Stævnemøde, som Du havde
+med Marmorstøtten, som skal forestille
+den døde Fulvia? — Hvi kyssed Du
+dens kolde Mund? — Den levende, som ligger
+i Støvet for Dig, stod bag Tempelsøjlen
+og saae det Alt, og hun blev rød som Blod;
+for første Gang hun der sig selv forstod
+og følte, hvad der slumrede herinde —
+og alle Stjernerne sig sammensvor —
+— den hele Himmel og den hele Jord —
+med Dig — og lærte mig, at jeg er Kvinde!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(aabnende sin Favn).</center></small></nonum>
+Og nu forsmaar Du ikke meer min Haand?
+— Afgrunden mellem os — er den nu jevnet?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Ja, Aqvilinus! ja! nu er Du hævnet:
+Jeg elsker Dig!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(med Humor).</center></small></nonum>
+        Vent! vent! Her er en Aand,
+en gaadefuld, som for min Dom er stævnet;
+en syndig Kristenmunk, af Ingen kjendt,
+beskyldt for Vold - ham, som de fordred brændt! —
+Hvad gjør jeg nu med ham ? — Rask maa her handles!
+Til Kvinde maa Du helt fra Mand forvandles! —
+Giv mig den grimme Kutte, Du har paa,
+og skjul Dig hurtigt — her til denne Side —
+— hvad her er sket, maa Du og jeg kun vide!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(idet hun kaster Kutten, under hvilken hun er iført samme Dragt, som i anden Akts fjerde Scene).</center></small></nonum>
+Hvad vil Du?
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(som har modtaget Kutten).</center></small></nonum>
+        Mane denne Synder bort.
+Gaa! skjul Dig! skjul Dig! Fristen er kun kort.
+I denne Stund maa al Betænkning vige —
+— selv skal Du sande, hvad jeg nu vil sige!
+<nonum><small><center>(Han fører hende hen til Venstre, hvor hun skjuler sig bag Thronstolen; derpaa iler han hen i Salens Baggrund og aabner rask Hovedindgangen, foran hvilken han stiller sig, holdende Kutten højt i Vejret).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(til de Udenforstaaende).</center></small></nonum>
+Jeg nødes til at hæve denne Sag;
+højst gaadefuld — vidunderlig er Grunden:
+Et Underværk er sket ved højlys Dag —
+see — her er Kappen Manden er forsvunden!
+<nonum><small><center>(Kaster Kutten ud til de Udenforstaaende, som svare med en forvirret Mumlen, medens han atter hurtigt tillukker Døren).</center></small></nonum>
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(for sig selv).</center></small></nonum>
+Det var mit sidste Hedningebedrag!
+<nonum><small><center>(til <w>Fulvia</w>, der ængstlig træder frem fra sit Skjul, idet han udbreder Armene mod hende).</center></small></nonum>
+Kom, Fulvia, nu skilles ej vi To!
+En Krands af Tidsler har dit Hoved baaret,
+nu vil jeg flette Roser Dig i Haaret!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(vigende tilbage).</center></small></nonum>
+Men Du og jeg er af forskjellig Tro!
+— Du er jo Afgudsdyrker — jeg Kristinde!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+<nonum><small><center>(med Inderlighed).</center></small></nonum>
+Saa led mig Du, i Fald jeg gaar i Blinde;
+opbyg mig til dit Paradis en Bro
+og vis mig Lyset — hvis det er at finde!
+Men husk: paa Jorden skal Du fæste Bo;
+din Plads paa Himlen har Du tabt som Stjerne;
+som Hustru skal Du hvile ved mit Bryst!
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+<nonum><small><center>(klyngende sig til ham).</center></small></nonum>
+Du stolte Mand, jeg bytter altfor gjerne.
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Og dog Du skjælver midt i al din Lyst?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Mit Marmorbillede!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+        Det skal jeg fjerne.
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+Min Fader!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+        Rolig! Tiden bringer Raad!
+See dette Brev - <small>(han tager et Brev frem fra sit Bryst)</small>
+        det kalder mig til Daad;
+det modtog jeg i Morges fra vor Kejser:
+Til Lilleasien er jeg forsat,
+jeg bryder op herfra i denne Nat —
+og Du?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Jeg følger Dig, hvorhen Du rejser,
+langt over Havet — gjennem Ørknens Sand,
+hvorhen Du vil — til Verdens sidste Rand!
+Helt er jeg din, og Intet uden Kvinde!
+
+<nonum><center><w>Aqvilinus.</w></center></nonum>
+Er det at tabe?
+
+<nonum><center><w>Fulvia.</w></center></nonum>
+        Nej! det er at vinde!
+
+<nonum><small><center>(Tæppet falder).</center></small></nonum>
+</body>
+</prose>
+
+</content>
+</section>
+
+</workbody>
 </kalliopework>
