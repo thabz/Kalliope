@@ -459,6 +459,7 @@
 'Stov/Støv',
 'Stvv/Støv',
 'Stsv/Støv',
+'Stevet/Støvet',
 'Gloede/Glæde',
 'Doemr/Dæmr',
 'oeng/æng',
