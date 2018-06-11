@@ -235,7 +235,7 @@
 '(\W)langes/\1længes',
 '(\W)ftr/\1str',
 '(\W)fpr/\1spr',
-'Dine/Øine',
+# 'Dine/Øine', # Volder mange fejl, så udkommenteret
 'loeng/læng',
 'Onske/Ønske',
 '(\W)onste/\1ønske',
@@ -520,6 +520,7 @@
 '(\W)stue/\1skue',
 '(\W)fiue/\1skue',
 '(\W)oerlig/\1ærlig',
+'(\W)kjole/\1kjøle',
 'fvæv/svæv',
 'sonder/sønder',
 'ssnder/sønner',
