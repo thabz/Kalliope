@@ -293,6 +293,7 @@
 'Sostre/Søstre',
 'Sostre/Søstre',
 'Osten/Østen',
+'Øft/Øst',
 'Kjon/Kjøn',
 'nc/ne',
 'gcn/gen',
