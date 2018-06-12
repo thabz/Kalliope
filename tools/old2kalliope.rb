@@ -206,6 +206,15 @@ def printEndSection()
 end
 
 File.readlines(ARGV[0]).each do |line|
+  if line =~ /<note>.*\] .*<\/note>/
+    @found_corrections = true
+  end
+  if line =~ /<note>\* .*<\/note>/
+    @found_poet_notes = true
+  end
+end
+
+File.readlines(ARGV[0]).each do |line|
   line_before = line
   while line =~ /\t/
       line = line.gsub(/\t/,'    ')
