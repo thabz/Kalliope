@@ -382,6 +382,7 @@
 'Morke/Mørke',
 'Morkt/Mørkt',
 'Nod/Nød',
+'Nsd/Nød',
 'floi/fløi',
 'Floi/Fløi',
 'Torst/Tørst',
