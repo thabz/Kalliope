@@ -509,6 +509,7 @@
 '(\W)In tet(\W)/\1Intet\2',
 '(\W)J il(\W)/\1Iil\2',
 '(\W)Jil(\W)/\1Iil\2',
+'(\W)Sm iil(\W)/\1Smiil\2',
 '(\W)Oer(\W)/\1Øer\2',
 'Mo(\W)/Mø\1',
 'Mø\'er/Mo\'er',
@@ -575,6 +576,8 @@
 'Stoi(\W)/Støi\1',
 'nnt/unt',
 'tnr/tur',
+'ssrg/sørg',
+'kjsbe/kjøbe',
 'Chør/Chor'
 ];
 
