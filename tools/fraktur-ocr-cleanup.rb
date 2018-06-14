@@ -588,6 +588,7 @@
 'ssrg/sørg',
 'kjsbe/kjøbe',
 'Chør/Chor'
+'Sø l/Sol'
 ];
 
 @regexps = @rules.map { |rule| 
