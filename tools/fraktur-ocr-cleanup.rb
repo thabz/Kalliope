@@ -516,6 +516,8 @@
 '(\W)J a(\W)/\1Ja\2',
 '(\W)v il(\W)/\1vil\2',
 '(\W)t il(\W)/\1til\2',
+'(\W)t il(\W)/\1til\2',
+'(\W)Ti l(\W)/\1Til\2',
 '(\W)t i l(\W)/\1til\2',
 '(\W)Sj al(\W)/\1Sjæl\2',
 '(\W)Sn a rt(\W)/\1Snart\2',

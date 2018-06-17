@@ -2,63 +2,34 @@
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1877" author="kaalund" status="complete" type="poetry">
 <workhead>
-   <title>En Eftervaar</title>
-   <year>1877</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+    <title>En Eftervaar</title>
+    <year>1877</year>
+    <notes>
+        <note>Teksten følger H.V. Kaalund: <i>En Eftervaar</i>, Gyldendalske Boghandels Forlag, Kbh., 1877.</note>
+        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+        <note>Bidrag fra Henrik Nielsen.</note>
+    </notes>
+    <pictures>
+        <picture src="1877-p1.jpg">Forsiden til <i>En Eftervaar</i> (1877).</picture>
+        <picture src="1877-p2.jpg">Titelbladet lyder ,,En Eftervaar. // Digte / af / H. V. Kaalund. // Kjøbenhavn. / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn). / Trykt hos Nielsen &amp; Lydiche. / 1877.''</picture>
+    </pictures>
+    <source facsimile="115308071178_color" facsimile-pages-num="160" facsimile-pages-offset="8">H.V. Kaalund: <i>En Eftervaar</i>, Gyldendalske Boghandels Forlag, Kbh., 1877.</source>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </workhead>
 <workbody>
-
-<poem id="kaalund2001061301">
-<head>
-   <title>Til min Hustru!</title>
-   <subtitle>Vridsløselille i Julen 1877.</subtitle>
-   <toctitle>Til min Hustru!</toctitle>
-   <indextitle>Til min Hustru!</indextitle>
-   <firstline>Hvis jeg har endnu tilbage</firstline>
-   <notes>
-      <note>Det omtalte digt <xref poem="kaalund2001061303"/> findes i <a work="kaalund/1858"><i>Et Foraar</i></a>.</note>
-   </notes>
-   <quality>korrektur1</quality>
-</head>
-<body>
-Hvis jeg har endnu tilbage
-fra de friske Foraarsdage
-i mit Efteraar et Spor,
-hvis endnu jeg ejer Evne
-til at sætte Himlen Stævne
-,,paa det Jevne, paa det Jevne'',
-ikke blot i skjønne Ord,
-da skal Du, min Hustru kjære,
-nu, da jeg gaar ned ad Bakken
-med den tredje Snes paa Nakken,
-have Æren, have Takken;
-Du, til hvem som ung jeg digted
-Sangen sværmerisk ,,Til Hende'',
-Du, der stod som en Heltinde,
-naar min Kraft og Modet svigted,
-naar jeg vaanded mig i Smerte,
-Dig tilhører helt mit Hjerte,
-Dig tilhører helt mit Liv,
-min beskedne, stille Viv!
-
-                    H. V. K.
-</body>
-</poem>
 
 <poem id="kaalund2001081501">
 <head>
    <title>Stæren</title>
-   <toctitle>Stæren</toctitle>
-   <indextitle>Stæren</indextitle>
    <firstline>Ved Tøbrudstid fløjter Stæren sin Sang</firstline>
-   <quality>korrektur1</quality>
+   <source pages="7-8"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ved Tøbrudstid fløjter Stæren sin Sang
 og synger til midt i Skjærsommer;
 da faar den saa travlt hele Dagen lang
-og tier, til Løvfaldet kommer.
+og tier til Løvfaldet kommer.
 
 Først da, naar Kornet er bragt under Tag,
 og Nødden i Hylstret er moden,
@@ -75,7 +46,7 @@ som den har jeg meget at passe.
 Paa Vridsløselilles Fængselsmur,
 dér hænger i Skyggen min Kasse.
 
-Den stigende Sol ej skinner derind,
+Den stigende Sol ej skinner derind;
 om Muren hvirvler sig Blæsten;
 men hviler om Aftnen jeg paa min Pind,
 jeg faar dog et Solglimt fra Vesten.
@@ -90,7 +61,7 @@ og Nattetaagerne stige,
 jeg taber dog ikke mit gode Mod -
 lad Fængselskragerne skrige!
 
-Jeg véd jo, det dages hver Morgen i Øst
+Jeg veed jo, det dages hver Morgen i Øst
 endnu som i Adams Dage,
 og haaber, der kommer en Dag vel i Høst,
 da jeg faar min Stemme tilbage!
@@ -100,16 +71,15 @@ da jeg faar min Stemme tilbage!
 <poem id="kaalund1999030801">
 <head>
    <title>Til Virkeligheden</title>
-   <toctitle>Til Virkeligheden</toctitle>
-   <indextitle>Til Virkeligheden</indextitle>
    <firstline>Min Tugtemester, min store Lærer</firstline>
-   <quality>korrektur1</quality>
+   <source pages="9-15"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-I.
+<nonum><center>I.</center></nonum>
 
 Min Tugtemester, min store Lærer,
-Min Hyldest jeg dig i Sang frembærer!
+min Hyldest jeg dig i Sang frembærer!
 
 Alt dengang jeg blev fra Brystet vænt,
 jeg tror, mit Forhold til dig var spændt.
@@ -118,15 +88,15 @@ Du tog min Kjæphest, min Top og Trille.
 Jeg maatte jo taale det! Jeg var den Lille.
 
 Der vanked Buler, der vanked Stød,
-og Du var saa haard og jeg saa blød.
+og du var saa haard og jeg saa blød.
 
 Og alle de Huse af Kort, jeg rejste,
-de faldt over overende, som bedst de knejste;
+de faldt overende, som bedst de knejste;
 
-Det var Dig, det var Dig, som rev dem omkuld!
-Hvor kunde Du være saa ondskabsfuld?
+det var dig, det var dig, som rev dem omkuld!
+Hvor kunde du være saa ondskabsfuld?
 
-Jeg havde drømt Dig foruden Skygge,
+Jeg havde drømt dig foruden Skygge,
 en straalende Verden af Lys og Lykke.
 
 Jo mere jeg voxed, jo mere jeg saae,
@@ -135,17 +105,17 @@ du var ikke rigtig at stole paa.
 Jeg vilde lege og juble i Solen;
 men de trak mig fra Legen af Sted til Skolen.
 
-Dér satte de mig paa den haarde Bænk
+Der satte de mig paa den haarde Bænk
 og sagde: ,,Bryd nu dit Hoved og tænk!''
 
 Og jeg tænkte og svedte og pinte min Hjerne
 for at finde blandt Skallerne Kundskabens Kjerne.
 
 Men det Meste var Skaller og Avner, jeg fandt.
-Jeg syntes, jeg tabte langt mér, end jeg vandt.
+Jeg syntes, jeg tabte langt meer, end jeg vandt.
 
 Derude - derude slog Fuglen sin Trille,
-dér sprudled jo Livsglædens herlige Kilde!
+der sprudled jo Livsglædens herlige Kilde!
 
 Jeg maatte derud for at prøve mit Mod -
 der var Ungdom og luende Ild i mit Blod.
@@ -157,34 +127,34 @@ men jeg mærked det snart, jeg var kun dens Gjæk:
 naar jeg kom, hvor den sad, da var altid den væk.
 
 Af Roser, af Roser vel tusind jeg plukked;
-men til Blods blev jeg revet, til Blods blev jeg stukket.
+men tilblods blev jeg revet, tilblods blev jeg stukket.
 
 Det var Fald for min Fod, der var Sten paa min Sti,
 og Nøden i Pjalter mig humped forbi.
 
 
-II.
+<nonum><center>II.</center></nonum>
 
 Og jeg skulde trælle og være din Slave
 i saadan en Verden, bedækket med Grave!
 
-Nej aldrig! aldrig! - Jeg bød Dig Trods!
+Nej aldrig! aldrig! - Jeg bød dig Trods!
 Hvem var den Stærkeste vel af os?
 
 - Saa toge vi to To et Tag med hinanden,
 om hvem af os der var Overmanden.
 
-Det var mig, der vakled, og Dig, der stod;
+Det var mig, der vakled, og dig, der stod;
 jeg kunde ej rokke din faste Fod.
 
-Jeg vilde Dig i mine Arme hæve,
+Jeg vilde dig i mine Arme hæve,
 men følte i Afmagt mit Knæled bæve.
 
 Jeg søgte i Luften et Støttepunkt,
 men Arbejdet blev mig dog altfor tungt.
 
 
-III.
+<nonum><center>III.</center></nonum>
 
 Din blev da Sejren - jeg maatte vige -
 men Hersker jeg var i mit eget Rige!
@@ -193,15 +163,15 @@ Jeg var jo født med et Scepter i Haand:
 en Evighedsarving, en fribaaren Aand,
 
 og ejed det stolteste Kongedømme,
-som nogen Fantast har sét i Drømme,
+som nogen Fantast har seet i Drømme,
 
 en Verden - ikke som din af Muld,
 men straalende lys og underfuld.
 
-Dér flygted jeg ind og lukked hver Sprække,
+Der flygted jeg ind og lukked hver Sprække,
 dér skulde ikke din Arm mig række!
 
-- Men som en Kreditor, barsk og raa,
+- Men som en Kreditor barsk og raa,
 Du stod derude og bankede paa.
 
 Det hjalp kun lidt, at jeg stopped mit Øre,
@@ -211,9 +181,9 @@ jeg kunde din Kalden derude høre:
 og giv mig dit luftige Hjernespind!''
 
 
-IV.
+<nonum><center>IV.</center></nonum>
 
-Og jeg gav Dig alt! Jeg bad ej om Naade,
+Og jeg gav Dig Alt! Jeg bad ej om Naade,
 men aabnede Porten saa højt, jeg formaaede!
 
 Og det var, som faldt fra mit Øje et Bind -
@@ -231,7 +201,7 @@ og drømmer imellem om Paradiset,
 og kan ikke rime det Alt, hvad sker,
 med mine Ønsker og mine Ideer -
 
-jeg tænker, jeg faar det vel nok til at passe,
+Jeg tænker, jeg faar det vel nok til at passe,
 naar jeg rykker op i en højere Klasse!
 </body>
 </poem>
@@ -239,10 +209,9 @@ naar jeg rykker op i en højere Klasse!
 <poem id="kaalund2001081502">
 <head>
    <title>I en Solskinskrog</title>
-   <toctitle>I en Solskinskrog</toctitle>
-   <indextitle>I en Solskinskrog</indextitle>
    <firstline>Bestraalet af den milde Foraarssol</firstline>
-   <quality>korrektur1</quality>
+   <source pages="16-18"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Bestraalet af den milde Foraarssol,
@@ -255,17 +224,17 @@ for En, der producerer sig som Sanger -
 en Digterthrone er den, mig tilpas,
 og aldrig nogen bedre jeg forlanger.
 
-Det var en slig, Du valgte Dig, Æsop,
+Det var en slig, du valgte Dig, Æsop,
 naar Du i Hønsegaarden sad alene
 og lo ad Verdens store travle Hob,
 med slig en lille Verden til din Scene.
 
-Vel er jeg ikke dyb som Du og vis;
+Vel er jeg ikke dyb som Du og viis;
 min store Svaghed ærlig jeg bekjender -
 men glad jeg sætter paa Naturen Pris,
 og i min Smag er jeg en Nederlænder.
 
-Mig fryder det at sé paa Bondens Gris,
+Mig fryder det at see paa Bondens Gris,
 og mellem disse Duer, Høns og Ænder
 som midt i Billedbiblens Paradis
 jeg føler mig som mellem gamle Venner.
@@ -290,10 +259,9 @@ for hvad der ellers Smaabørn kun fortryller!
 <poem id="kaalund2001081503">
 <head>
    <title>Løven i Slippen</title>
-   <toctitle>Løven i Slippen</toctitle>
-   <indextitle>Løven i Slippen</indextitle>
    <firstline>En Gang - ja, det er nu langt tilbage</firstline>
-   <quality>korrektur1</quality>
+   <source pages="19-24"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 En Gang - ja, det er nu langt tilbage,
@@ -305,14 +273,20 @@ i Slippen i Brændehandlerens Skur.
 Man kom derind gjennem Plankeværket,
 skraas for Posten ved Landemærket.
 
+Jeg husker det, som det var i Gaar;
+jeg havde kun fyldt mit attende Aar;
+
 Folk var i den Tid mindre forvænte;
 zoologiske Haver ubekjendte.
 
-En sludfuld Dag jeg gik der forbi
-og læste paa Skiltet: Menageri.
+En sludfuld Dag der forbi jeg gik,
+da faldt paa det pralende Skilt mit Blik.
 
-I brogede Farver der saas at prange
-en Vild i Kamp med en Boaslange.
+I brogede Farver der saaes at prange
+en Vild i Kamp med en Boaslange;
+
+en glubende Løve i Forgrunden stod,
+fra Tungen drypped det røde Blod.
 
 - Det var Efteraarsvejr; det regned og blæste;
 derinde i Skuret det brummed og hvæste.
@@ -333,19 +307,19 @@ I Forstuen saae jeg en Ara glo
 med et Næb som en drabelig Hummerklo.
 
 Tæppet blev løftet - jeg stod i Skuret,
-dér laa Kong Nobel og sov i Buret.
+der laa Kong Nobel og sov i Buret.
 
 Dyrenes Konge - den stolte Monark,
-i en ussel Bod at sé for en Mark!
+i en ussel Bod at see for en Mark!
 
 For Børn det kostede kun det Halve. -
-Der var ogsaa at sé to vanskabte Kalve
+Der var ogsaa at see to vanskabte Kalve
 
 og en Tigerkat i Bur med et Lam;
 men jeg ænsed dem ikke - jeg saae kun paa ham,
 
 det prægtige Dyr med de vældige Lemmer,
-købt af en Gjøgler - en ,,Dyretæmmer''!
+kjøbt af en Gjøgler - en ,,Dyretæmmer''!
 
 Det syntes mig Verden paa Hovedet sat:
 Her havde Musen bjældet en Kat!
@@ -353,7 +327,7 @@ Her havde Musen bjældet en Kat!
 - Den var fanget i Fælde, fortalte Manden,
 hinsides Atlas ved Ørkenranden.
 
-Dér havde den spejdet fra Klippens Blok,
+Der havde den spejdet fra Klippens Blok,
 jaget de stribede Zebraers Flok.
 
 Fulgt med et Hyl af Ørkenschakalen,
@@ -366,7 +340,7 @@ og med et Brøl, der rulled som Torden,
 snappet sit Bytte: en Oxe af Hjorden.
 
 Hundrede Mand med Bøsser og Spær
-havde ej vovet at standse den dér!
+havde ej vovet at standse den der!
 
 - Nu laa den fangen i Brædeskuret:
 Bajazet, ,,Lynet'', lig i Buret!
@@ -377,17 +351,17 @@ Hvis den sprængte sit Bur og gjorde sig fri!
 Hej! hvilket Jav da i hele Staden!
 Tænk - hvis den mødtes med Vagtparaden!
 
-Frygtelig selv at sé i sin Ro,
+Frygtelig selv at see i sin Ro,
 med den buskede Manke, den slappe Klo,
 
-hviled den dér, som om den foragted
+laa den nu der, som om den foragted
 det Menneskepak, der fejgt den betragted.
 
 I egen tragiske Majestæt
 den havde paa Gulvet sit Leje redt.
 
-Dér laa den og rynked i Søvne Panden.
-- Ved Siden to Aber lysked hinanden.
+Der laa den og rynked i Søvne Panden.
+- Ved Siden lysked to Aber hinanden.
 
 Et vigtigt Arbejde - skulde man tro;
 de bleve fornærmede, da jeg lo!
@@ -398,7 +372,7 @@ Stakkels Samson blandt Abefilistre!
 Reversen, de viste, var ikke smuk!
 - Da rørte sig Løven og drog et Suk.
 
-Det var i Søvne - i <i>Løvedrømme</i>!
+Det var i Søvne - i <w>Løvedrømme!</w>
 - Udenfor hørte jeg Regnen strømme.
 
 Blæstens Hvin om det lurvede Hus
@@ -412,13 +386,12 @@ den stakkels sovende Løve i Slippen!
 <poem id="kaalund2001081504">
 <head>
    <title>Vinteraften paa Landet</title>
-   <toctitle>Vinteraften paa Landet</toctitle>
-   <indextitle>Vinteraften paa Landet</indextitle>
    <firstline>Nu skal alt Skodden lukkes</firstline>
-   <quality>korrektur1</quality>
+   <source pages="25-28"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Nu skal alt Skodden lukkes
+Nu skal alt Skodden lukkes,
 nu skal alt Porten stænges -
 jeg maa derud paa Toften
 i Skumringen og længes.
@@ -451,10 +424,10 @@ og gyse ved dens Vildhed.
 Det er mig, som jeg drages
 til et hemmeligt Møde
 med dem, jeg har elsket:
-De Levende og Døde.
+De Levende - og Døde.
 
-- Saa staar jeg her paa Toften
-og længes og lytter,
+- Jeg staar ved Bondegaarden
+paa Toften og lytter,
 mens Lysene tændes
 i Fiskerlejets Hytter.
 
@@ -468,7 +441,7 @@ af Isen bedækket;
 fra fjerne Vover hører
 jeg Vildandetrækket -
 
-og Skrigen af Graagjæs
+og Skrigen af Graagæs
 og Sang af vilde Svaner,
 som drage i Stjernelys
 paa vildsomme Baner.
@@ -503,29 +476,28 @@ hvor Lysene blænde!
 <poem id="kaalund2001081701">
 <head>
    <title>Paa Grænsen mellem Stad og Land</title>
-   <toctitle>Paa Grænsen mellem Stad og Land</toctitle>
-   <indextitle>Paa Grænsen mellem Stad og Land</indextitle>
    <firstline>Paa Grænsen mellem Stad og Land</firstline>
-   <quality>korrektur1</quality>
+   <source pages="29-31"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Paa Grænsen mellem Stad og Land,
-dér saae jeg Livets første Vaar,
-dér stod mit Hjem ved Søens Rand,
+der saae jeg Livets første Vaar,
+der stod mit Hjem ved Søens Rand,
 hvor nu de høje Huse staar.
 
 Da var der mere fri Natur
 og ingen Gader, ingen Gas.
 Bag Haven ved det gamle Skur,
-dér havde jeg min Legeplads.
+der havde jeg min Legeplads.
 
-Dér satte jeg min Drage op,
-dér sendte jeg min Boldt mod Sky
+Der satte jeg min Drage op,
+der sendte jeg min Boldt mod Sky
 og saae den fjerne Kirketop
 i Taagen af den store By.
 
 Saa mangen dejlig Sommerkvæld
-jeg lytted dér som lille Dreng,
+jeg lytted der som lille Dreng,
 naar Hornet blæstes til Appel -
 da var det Tid at gaa i Seng.
 
@@ -541,10 +513,10 @@ de landlig stille Havers Duft!
 
 - Saa Meget er nu vejret hen
 og gjemt og glemt i Tidens Strøm;
-men glad jeg sér det Sted igjen,
+men glad jeg seer det Sted igjen,
 hvor jeg har drømt min Barndomsdrøm.
 
-Vel kjender jeg det neppe mér,
+Vel kjender jeg det neppe meer,
 og Tiden er ej nu som før -
 dog elsker jeg at vandre her
 paa Stien ved de stille Søer.
@@ -564,14 +536,13 @@ paa Grænsen mellem Land og By!
 <poem id="kaalund2001081702">
 <head>
    <title>Ensomt Liv</title>
-   <toctitle>Ensomt Liv</toctitle>
-   <indextitle>Ensomt Liv</indextitle>
    <firstline>Jeg sad alene paa en øde Gaard</firstline>
-   <quality>korrektur1</quality>
+   <source pages="32-36"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg sad alene paa en øde Gaard,
-hvor høje Skrænter lude ned mod Havet:
+hvor høje Skrænter lude ned mod Havet;
 kun stakkels Fiskerfolk i usle Kaar
 var al min Omgang trindt i Nabolavet.
 
@@ -594,6 +565,11 @@ saa vældigt suste Stormen omkring Muren.
 ,,Hvi vil Du spænde saa Dig selv i Bøjlen?
 Flyv ud og sving Dig paa den høje Hest;
 giv Lysten og giv Lidenskaben Tøjlen!''
+
+,,Flyv ud, flyv ud!'' - saa peb den hæse Vind,
+og gjennem alle Sprækker lød dens Hvinen -
+,,sno dig i Slangebugter ud og ind;
+ræk Tunge af det Alt, som hist Kaminen!''
 
 ,,Du lever kun et Nu, Du stakkels Orm,
 vil Du for Livets Lyst Dig selv bedrage?
@@ -620,14 +596,14 @@ det vilde ogsaa snakke med i Laget.
 Mens Vinden stemte op i Moll og Dur,
 hvor frejdigt, taktfast lød da Pendelslaget.
 
-I Krogen stod det dér saa gammeldags,
+I Krogen stod det der saa gammeldags,
 det førte ej Bevis, det gav ej Grunde.
 Men klar var Texten! - jeg forstod den strax -
 den var for syge Sjæle som for sunde.
 
-Med roligt <i>Snik</i> og <i>Snak</i> og <i>Snik</i> og <i>Snak</i>,
+Med roligt <w>Snik</w> og <w>Snak</w> og <w>Snik</w> og <w>Snak</w>,
 det lød igjennem Pausens dybe Stilhed,
-og altid lige frejdigt: <i>Snik</i> og <i>Snak</i> -
+og altid lige frejdigt: <w>Snik</w> og <w>Snak</w> -
 om Huset skjalv og Vejret steg i Vildhed.
 
 - Og jeg og Uhret slog os paa Parti!
@@ -641,9 +617,9 @@ og Luften selv mig synes kvalm af Løgn,
 og Tvivlens Dæmon mig til Mismod frister,
 
 da er det, som fra Dybet af mit Bryst
-et frejdigt <i>Snik</i> og <i>Snak</i> jeg hører klinge
+et frejdigt <w>Snik</w> og <w>Snak</w> jeg hører klinge
 - en kjæk Protest mod Tidens falske Røst -
-og sér den skjulte Verdenspendel svinge.
+og seer den skjulte Verdenspendel svinge.
 </body>
 </poem>
 
@@ -651,13 +627,9 @@ og sér den skjulte Verdenspendel svinge.
 <head>
    <title>Til Nordens Folk</title>
    <subtitle>(I December 1863.)</subtitle>
-   <toctitle>Til Nordens Folk</toctitle>
-   <indextitle>Til Nordens Folk</indextitle>
    <firstline>Vil ingen nævne et vækkende Ord!</firstline>
-   <notes>
-      <note>N:Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 267-271.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+   <source pages="37-42"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Vil ingen nævne et vækkende Ord!
@@ -665,7 +637,7 @@ Vil ingen gribe i Normannaharpen -
 sende et Kampskrig ud over Nord,
 der kan ramme som Sværdet med Skarpen!
 Ja, som Sværdet med Skarpen; thi nu er ej Tid
-til at lefle og lege med Ord: <i>Her skal der handles!</i>
+til at lefle og lege med Ord: <w>Her skal der handles!</w>
 Hvad ved Gilder vi svor, skal nu prøves i Strid
 og til dødeligt Alvor forvandles!
 
@@ -689,7 +661,7 @@ ham har Døden jo bortrevet nys fra vor Midte -
 
 Kvalmt er det, kvalmt, dette taagede Døgn.
 - Denne brogede Tid, saa forrost, saa beundret!
-Skal den tabe sig nu i den frækkeste Løgn,
+skal den tabe sig nu i den frækkeste Løgn,
 synke ned til et Skjændsels Aarhundred?
 Uden Marv, uden Tro, i Opløsning og Splid
 den i sælsomme Veer sig vrider og vaander,
@@ -709,19 +681,19 @@ Hist ved Ejderens Strand paa den hellige Jord,
 paa den ældgamle Vold, som fra Godefreds Dage
 gjennem Seklerne stod som en Dæmning for Nord
 mod Germaniens slugende Drage,
-dér er Stævnet nu sat, dér skal Verden nu sé,
+dér er Stævnet nu sat, dér skal Verden nu see,
 om det herlige Syn, vi har skuet i Drømme:
-om det enige Nord er en dødfødt Idé,
+om det enige Nord er en dødfødt Idee,
 - dér skal Daaden nu Løfterne dømme!
 
 Loddet er kastet. Nu gjælder det os!
 Ikke vi trygle om Hjælp eller klynke. -
 Tydskland i Pagt med hin Østens Kolos,
-- <i>Ve Dig, o Nord, hvis vi synke!</i>
-Ve Dig, ifald Du skal skue den Dag,
+- <w>Ve Dig, o Nord, hvis vi synke!</w>
+Vee Dig, ifald Du skal skue den Dag,
 da vi slænges som Vrag paa de vendiske Kyster!
 Ve for hvert Kys, som forraadte vor Sag!
-- <i>Det skal straffes af Magten fra Øster!</i>
+- <w>Det skal straffes af Magten fra Øster!</w>
 
 Frænder i Norden, hvad siger I nu?
 Norriges Gutter og I hist bag Sundet!
@@ -732,7 +704,7 @@ mangen en Haand er vist knyttet og hævet -
 ak, men af Statskunstens kløgtige Spind
 har et Næt man omkring eder vævet.
 
-Spørg ham - ja, spørg ham, som staar ved Jert Ror,
+Spørg ham - ja, spørg ham, som staar ved Jert Roer,
 om han tør svigte det Storværk, han vilde.
 Er han Mand for at træde i Carlernes Spor?
 Skal vi kalde ham stor eller lille?
@@ -743,7 +715,7 @@ bliver tomt og forfængeligt Skvalder!
 
 Lad det gaa, som det vil, lad det svigte kun Alt -
 ikke vor bliver Skjændslen og Skammen!
-Hvert et Haar paa vort Hoved, vi véd jo, er talt,
+Hvert et Haar paa vort Hoved, vi veed jo, er talt,
 er vi Faa, vi vil kjækt holde sammen!
 Hvis vi segne i Kamp for vor Fædrenejord,
 hvis forgjæves, o Brødre, vi paa Eder kalde,
@@ -755,30 +727,26 @@ vil med uplettet Hæder vi falde!
 <poem id="kaalund2002122803">
 <head>
    <title>I Farens Stund</title>
-   <subtitle>(Januar 1864).</subtitle>
-   <toctitle>I Farens Stund</toctitle>
-   <indextitle>I Farens Stund</indextitle>
+   <subtitle>(Januar 1864)</subtitle>
    <firstline>Varsler denne sære Stilhed</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 271-275.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+   <source pages="43-47"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Varsler denne sære Stilhed,
 denne tunge, døde Ro,
 om den dulgte Harmes Vildhed,
 eller om en knækket Tro?
-- Har, mit ædle Folk, man brudt
+- Har mit ædle Folk man brudt
 Led for Led din sunde Styrke?
 Skyder Du forladt i Mørke
 Nødskud med dit sidste Krudt?
 
 - Altid, altid lige nær!
-Land og Led kun mér af Lave -
+Land og Led kun meer af Lave -
 Løvet fra de visne Træer
 rasler paa de Faldnes Grave.
-Løven tør ej mer sig rejse;
+Løven tør ej meer sig rejse;
 som dens Billed hist af Sten
 maa den kun som Minde knejse
 over døde Heltes Ben!
@@ -795,42 +763,42 @@ gjør nu for din Tillid Bod,
 græm Dig stille - glem din Vælde!
 
 Er det saa? O Harm og Gru!
-<i>Nej!</i> - trods Rygtets Ugletuden -
+<w>Nej!</w> - trods Rygtets Ugletuden -
 lad dem kjøbslaa kun om Huden,
-der er Liv i os endnu?
-Danmarks Folk er sejgt i Nøden!
+der er Liv i os endnu!
+Danmarks Folk er sejgt i Nøden;
 førend Skjændsel heller Døden!
 Slukt er ej dets gamle Ild.
 - Om vi pusted nu til Gløden,
-saa dets Stemme lød: <i>Jeg vil!</i>
+saa dets Stemme lød: <w>Jeg vil!</w>
 
-,,Folkets Stemme? - kun en Frase!''
-ikke sandt? slet ikke mér?
-,,Kun et Skilt til Brug for Hver!
-Folket selv - en blandet Race, -
+,,Folkets Stemme? - kun en Frase!
+ikke sandt? slet ikke meer?
+Kun et Skilt til Brug for Hver!
+Folket selv - en blandet Race, 
 Nogle i Partiers Sold -
-lunken En, en Anden kold,
-spredt og splittet trindt i Ladet,
+lunken En, en Anden kold;
+spredt og splittet trindt i Landet,
 uden indre Sammenhold -
-farveløst - et Spejl som Vandet.''
+farveløst - et Spejl som Vandet.
 
 Ja, som Vandet: klart en Stund,
 stille - men saa dybt til Bunden.
-- <i>Hvis</i> det rørtes op fra Grunden;
-<i>hvis</i> det vaagned af sit Blund,
-<i>hvis</i> det svulmede som Havet
+- <w>Hvis</w> det rørtes op fra Grunden;
+<w>hvis</w> det vaagned af sit Blund,
+<w>hvis</w> det svulmede som Havet
 vældigt for Orkanens Kast -
 mon ej let det Bolværk brast,
 som dets skjulte Kraft har avet?
 
-Give Gud, det ej maa ské!
+Give Gud, det ej maa skee!
 Gid fra Oven snart det klares!
-- Ak! men Lys er ej at sé,
+- Ak! men Lys er ej at see,
 naar der spørges, ej der svares;
 - Land og Hæder staar paa Spil,
 Grunden vakler, Baunen brænder,
 og med sammenbidte Tænder
-staa vi bundne og sé til.
+staa vi bundne og see til.
 
 Vi forstaa ej Politik. -
 Dermed slaar man os paa Munden.
@@ -839,9 +807,9 @@ med det rette Statsmandsblik. -
 O, men Et vi dog forstaa,
 Et, som ej er bygt paa Sandet,
 Et, som aldrig skal forgaa:
-<i>Kjærlighed til Fædrelandet!</i>
+<w>Kjærlighed til Fædrelandet!</w>
 
-Ja, den <i>sande</i> Politik -
+Ja, den <w>sande</w> Politik -
 den, som, naar det Hele vakler,
 og de ,,Store'' staa som Stakler,
 og den fine Kløgt slaar Klik,
@@ -869,13 +837,9 @@ og fra Tvivlens fule Pest!
 <poem id="kaalund2002052501">
 <head>
    <title>Kaalormen</title>
-   <toctitle>Kaalormen</toctitle>
-   <indextitle>Kaalormen</indextitle>
    <firstline>Om Landsbyhaverne Kampen stod</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 275-277.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+   <source pages="48-50"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Om Landsbyhaverne Kampen stod;
@@ -911,7 +875,7 @@ og vented Forvandlingens Gaade.
 Den skulde forvandles til Sommerfugl,
 som Puppe skulde den hænge:
 - et Ormelig under Bladets Skjul -
-den vidste ikke hvor længe.
+den vidste ikke hvorlænge.
 
 Den gav sig tryg til sin Skaber hen,
 af Slagets Rædsel omringet:
@@ -933,13 +897,9 @@ mod Opstandelses-Morgenrøden!
 <poem id="kaalund2002122804">
 <head>
    <title>Et Fugleskjul</title>
-   <toctitle>Et Fugleskjul</toctitle>
-   <indextitle>Et Fugleskjul</indextitle>
    <firstline>Blandt Kugler og Kanoner</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 277-280.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+   <source pages="51-55"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Blandt Kugler og Kanoner
@@ -973,7 +933,7 @@ Det er, som han kan huske
 en Drøm fra sine unge Aar,
 som om fra Rosenbuske
 en Duft imod ham slaar.
--- Sligt er ham ikke længe hændt.
+- Sligt er ham ikke længe hændt.
 - Men føle! - fy, for Fanden!
 Hvor kan han være det bekjendt!
 Han stryger sig om Panden.
@@ -1000,33 +960,33 @@ den slaar sin glade Trille.
 dens Smuthul maa vel findes dog!''
 - Hvor Bombestablen ligger,
 han nærmer sig en Krog.
-Med Et man sér ham stille staa
+Med Et man seer ham stille staa
 og derpaa frem at trippe:
 Han hører mellem grønne Straa
 smaa Fugleunger pippe.
 
 ,,Hvor Djæv'len kan de være?
 - Jo vist, jo, jeg har rigtig hørt:
-I <i>Bomben</i> - paa min Ære!''
+I <w>Bomben</w> - paa min Ære!''
 Den Gamle studser rørt.
-Thi sé: I Bomben stor og hul,
+Thi see: I Bomben stor og hul,
 paa Bunden dybest nede,
-dér finder han et Fugleskjul,
+der finder han et Fugleskjul,
 en dunbedækket Rede.
 
 Og paa den bløde Vugge
 den lille Moder, skjær og fin,
-han sér sig angst at dukke
+han seer sig angst at dukke
 - han mindes dunkelt sin! -
 Hun dækker ømt de nøgne Smaa,
 som nys krøb ud af Ægget -
-han kan ej sé sig mæt derpaa!
+han kan ej see sig mæt derpaa!
 han brummer rørt i Skjægget:
 
 ,,Den Bombe skulde dræbe -
 nej, dertil er den nu for god!
 Gid aldrig der maa klæbe
-ved den en Draabe Blod!
+ved dén en Draabe Blod!
 Den er en lille Helligdom;
 ja vist, den bør forgyldes!
 Gid alle Bomber rundt herom
@@ -1037,13 +997,9 @@ som denne maatte fyldes!''
 <poem id="kaalund2002122805">
 <head>
    <title>Rejsetummel</title>
-   <toctitle>Rejsetummel</toctitle>
-   <indextitle>Rejsetummel</indextitle>
    <firstline>Jeg har rejst! - Jeg har været i fremmede Byer!</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 281-285.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+   <source pages="56-63"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg har rejst! - Jeg har været i fremmede Byer!
@@ -1118,7 +1074,7 @@ i den rygende Storm over Vestervovvov!
 
 Jeg har rejst - jeg har rejst paa min egen Maner,
 har ej gaaet paa Jagt efter store Ideer.
-Jeg har sét paa det Alt, paa hver Gren og hver Pyt
+Jeg har seet paa det Alt, paa hver Gren og hver Pyt
 med mit eget Humør, med mit eget Gemyt!
 Jeg har taget det Alt som en ypperlig Kur,
 som et Menneskebad i Vorherres Natur.
@@ -1133,7 +1089,7 @@ mit Hjems det velsignede daglige Brød.
 Hvad jeg lærte og vandt, mens jeg tumled omkring,
 om min Aand fik derude et højere Sving,
 om jeg øved mit Skarpsind og modned min Dom?
-Ikke véd jeg det selv. Men jeg véd: hvor jeg kom,
+Ikke veed jeg det selv. Men jeg veed: hvor jeg kom,
 hvor jeg gik, hvor jeg stod ved den fremmede Strand
 fløj min Hu til mit Land, til mit elskede Land!
 
@@ -1146,23 +1102,19 @@ o da brændte min Kind! o da svulmed mit Bryst!
 
 - O mit Land! o mit Land! saa forladt og forraadt!
 saa skuffet for Alt, hvad din Fortid har spaaet!
-For den Nød, Du har lidt, fast jeg elsker Dig mér,
-og med luende Haab jeg mod Fremtiden sér,
+For den Nød, Du har lidt, fast jeg elsker Dig meer,
+og med luende Haab jeg mod Fremtiden seer,
 mod den Dag, der skal gry over Norden engang,
-da Du atter gjenfødes i Daad og i Sang!
+da du atter gjenfødes i Daad og i Sang!
 </body>
 </poem>
 
 <poem id="kaalund2002052502">
 <head>
    <title>Hvorledes man kan narre et Æsel</title>
-   <toctitle>Hvorledes man kan narre et Æsel</toctitle>
-   <indextitle>Hvorledes man kan narre et Æsel</indextitle>
    <firstline>Omdanset af de lette Myg</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 285-287.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+   <source pages="64-66"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Omdanset af de lette Myg,
@@ -1180,15 +1132,15 @@ træsk over alt Begreb.
 - Jeg aned som en fiffig Fyr,
 det lured paa et Kneb.
 
-Jeg kunde paa dets Øren sé
+Jeg kunde paa dets Øren see
 et Tegn, som jeg forstod:
-Det havde faaet en Idé
+Det havde faaet en Idee
 og mente, den var god.
 
 Jeg vidste godt, hvoraf det lo,
 hvad lunt det grunded paa:
 Hvor Vejen delte sig i to,
-dér skulde Slaget staa!
+der skulde Slaget staa!
 
 - Og ganske rigtig; da vi kom
 til Stedet, Æslet stod.
@@ -1203,7 +1155,7 @@ min Plan var det for fin!
 Jeg bandte, mens jeg sled min Pisk,
 saa den gik halvt itu;
 men Æslet grinede polisk
-og tænkte: slaa kun Du!
+og tænkte: slaa kun du!
 
 Og skjøndt det gik som i en Vals,
 af Pletten ej vi kom.
@@ -1213,7 +1165,7 @@ end faa det højre om.
 Saa gav paa Skrømt jeg Ævret op -
 men aldrig har jeg leet,
 som da det satte i Galop!
-Man skulde blot os sét!
+Man skulde blot os seet!
 
 Vi fløj afsted, imens jeg lo,
 saa mine Taarer randt.
@@ -1230,14 +1182,12 @@ saa Skovens Ekko klang!
 <poem id="kaalund2002052503">
 <head>
    <title>Ved et Kunstnerpars Sølvbryllup</title>
-   <toctitle>Ved et Kunstnerpars Sølvbryllup</toctitle>
-   <indextitle>Ved et Kunstnerpars Sølvbryllup</indextitle>
    <firstline>Nær ved Lillebælts Strand stod hans Vugge paa Fyen</firstline>
    <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 288-289.</note>
       <note>Kunstnerparret var billedhuggeren Jens Adolf Jerichau (1816-83) og den polskfødte malerinde Elisabeth Jerichau-Baumann (1819-81). De blev gift i 1846, og digtet er altså fra 1871.</note>
    </notes>
-   <quality>korrektur1,kilde,side</quality>
+   <source pages="67-69"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>rom</keywords>
 </head>
 <body>
@@ -1281,13 +1231,9 @@ og hvad Livet har skjønnest og bedst!
 <poem id="kaalund2002122802">
 <head>
    <title>I Sommernatten</title>
-   <toctitle>I Sommernatten</toctitle>
-   <indextitle>I Sommernatten</indextitle>
    <firstline>Ved Vindvet Poplen sukker</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 289-291.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+   <source pages="70-72"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ved Vindvet Poplen sukker
@@ -1305,12 +1251,12 @@ og Stjernen staar paa Vagt,
 og Havets vilde Vover
 har sig til Hvile lagt -
 
-i Sommernatten silde
+I Sommernatten silde
 ført af et Vindpust hid,
 den kommer mild og stille
 og spørger: ,,Har Du Tid?
 
-Hvor gnaver Dig din Lænke?
+,,Hvor gnaver Dig din Lænke?
 Hvor bløde dine Saar?
 Tør Du en Stund mig skjænke
 som i de unge Aar?
@@ -1320,7 +1266,7 @@ det Bedste, som blev glemt;
 den Bøn, Du bad som Lille!
 Alt har jeg trofast gjemt.
 
-Jeg tør jo ej mig nærme
+,,Jeg tør jo ej mig nærme
 til Dig ved højlys Dag;
 har Du nu Mod at sværme
 en Stund og være svag?''
@@ -1340,38 +1286,34 @@ til saa at være svag!
 <poem id="kaalund2002122806">
 <head>
    <title>Ved en Vens Afrejse til Udlandet</title>
-   <subtitle>1872.</subtitle>
-   <toctitle>Ved en Vens Afrejse til Udlandet</toctitle>
-   <indextitle>Ved en Vens Afrejse til Udlandet</indextitle>
+   <subtitle>1872</subtitle>
    <firstline>At udbringe Skaaler er ej mit Fag</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 291-293</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+   <source pages="73-75"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 At udbringe Skaaler er ej mit Fag,
 jeg kryber før under Bordet.
 Men i Aften - det er en anden Sag -
-mine Herrer, jeg beder om Ordet!
+Mine Herrer, jeg beder om Ordet!
 Jeg er nok den Ældste i denne Kreds;
-endnu har jeg ingen Maane -
+Endnu har jeg ingen Maane -
 men jeg nærmer mig stærkt den tredie Snes,
 mit Haar begynder at graane.
 
 Hvad jeg siger her, er ej sagt i Rus!
 Vel er jeg en Smule Sanger,
-men De véd det: i et Forbedringshus
+men, De veed det: i et Forbedringshus
 jeg færdes daglig blandt Fanger.
 Det svaler - det giver et eget Blik
 for Livet og Realiteten;
-hvad jeg siger her, er mér end Lyrik;
+hvad jeg siger her, er meer end Lyrik;
 thi Manden staar bagved Poeten.
 
 Nu vel: før vi drikke din Afskedsskaal,
 min Ven, saa laan mig dit Øre!
 Jeg vil tale til Dig i Skjaldenes Maal,
-jeg véd, Du forstaar at høre:
+jeg veed, Du forstaar at høre:
 Du selv er Poet - jeg kjender din Smag,
 Du elsker de dæmpede Strenge.
 Den Hyldest, jeg bringer Dig her i Dag,
@@ -1395,7 +1337,7 @@ i den lille venlige Stue,
 og ikke følt sig saa inderlig vel
 og varmet sig ved din Lue!
 
-Vi véd det, som kjender din lyse Aand:
+Vi veed det, som kjender din lyse Aand:
 paa den Fane, som Du har hævet,
 som fra ung Du kjæk har holdt i din Haand,
 der staar ,,Excelsior'' skrevet:
@@ -1409,13 +1351,9 @@ over Døgnets Taage og Skraalet!
 <poem id="kaalund2002122807">
 <head>
    <title>Ved Stranden</title>
-   <toctitle>Ved Stranden</toctitle>
-   <indextitle>Ved Stranden</indextitle>
    <firstline>Ensom i Aftenens dæmrende Stund</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 294-296.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+   <source pages="76-79"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ensom i Aftenens dæmrende Stund
@@ -1423,12 +1361,12 @@ hviler jeg her paa Skrænten ved Skoven;
 under min Fod det dejlige Sund,
 og den reneste Himmel foroven;
 Dampskibet glider derude forbi -
-i det hvilende Hav pløjer Kjolen sin Stribe;
+i det hvilende Hav pløjer Kjølen sin Stribe;
 Hveen og Skaane sig spejle deri
 og en Vrimmel af talløse Skibe.
 
 Aldrig saa yndig en Aften jeg saae,
-Luften saa mild og vidunderlig stille,
+Luften saa mild, saa vidunderlig stille,
 neppe sig rører det rankeste Straa,
 og saa sagte Smaabølgerne trille.
 Styrket af Badet, hvor aander jeg let,
@@ -1486,12 +1424,8 @@ som min Sjæl har i Nuet fornummet!
 <poem id="kaalund2002122808">
 <head>
    <title>Det sidste Følge</title>
-   <toctitle>Det sidste Følge</toctitle>
-   <indextitle>Det sidste Følge</indextitle>
    <firstline>De skulde bære den Døde bort</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 296-299.</note>
-   </notes>
+   <source pages="80-"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
