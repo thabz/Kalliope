@@ -49,6 +49,7 @@ end
 @performed = nil;
 @event = nil
 @type = 'poem'
+@variant = nil
 
 def printHeader()
     if @header_printed
@@ -160,6 +161,9 @@ def printPoem()
     end
     puts "    </dates>"
   end
+  if @variant
+    puts "    <variant>#{@variant}</variant>"
+  end
   if @keywords
     puts "    <keywords>#{@keywords}</keywords>"
   end
@@ -186,6 +190,7 @@ def printPoem()
   @performed = nil
   @event = nil
   @type = 'poem'
+  @variant = nil
   @poemcount += 1
 end
 
@@ -336,6 +341,8 @@ File.readlines(ARGV[0]).each do |line|
       @written = line[9..-1].strip
     elsif line.start_with?("BEGIVENHED:")
       @event = line.gsub(/^BEGIVENHED:/,'').strip
+    elsif line.start_with?("VARIANT:")
+      @variant = line[8..-1].strip
     elsif line.start_with?("TYPE:")
       @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
     elsif line =~ /^[A-Z]*:/
