@@ -1299,7 +1299,7 @@ const build_person_or_keyword_refs = collected => {
       const texts = doc.find('//poem|//prose');
       texts.forEach(text => {
         const fromId = text.attr('id').value();
-        const notes = text.find('head/notes/note|body//footnote|body//note');
+        const notes = text.find('head/notes/note|body//footnote|body//note|body');
         notes.forEach(note => {
           regexps.forEach(rule => {
             while ((match = rule.regexp.exec(note.toString())) != null) {
