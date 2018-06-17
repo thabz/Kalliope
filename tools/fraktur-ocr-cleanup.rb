@@ -297,7 +297,9 @@
 'beromte/berømte',
 '(\W)ssgt/\1søgt',
 '(\W)spog/\1spøg',
+'(\W)spsg/\1spøg',
 '(\W)Spog/\1Spøg',
+'(\W)Spsg/\1Spøg',
 'cr/er',
 'Soster/Søster',
 'Sostre/Søstre',
@@ -567,6 +569,7 @@
 '(\W)Fs/\1Fø',
 '(\W)fk/\1sk',
 '(\W)Forste/\1Første',
+'(\W)Proest/\1Præst',
 '(\W)noest/\1næst',
 '(\W)voebne/\1væbne',
 '(\W)gjoest/\1gjæst',
@@ -591,7 +594,7 @@
 'tnr/tur',
 'ssrg/sørg',
 'kjsbe/kjøbe',
-'Chør/Chor'
+'Chør/Chor',
 'Sø l/Sol'
 ];
 
