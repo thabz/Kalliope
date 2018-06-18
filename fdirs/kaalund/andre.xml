@@ -5,6 +5,7 @@
    <title>Andre digte</title>
    <year>?</year>
    <quality>korrektur1</quality>
+   <source id="1898" facsimile="130023270839_color" facsimile-pages-num="462" facsimile-pages-offset="16">H. V. Kaalund: <i>Samlede Digte</i>, Otto Borchsenius (red.), Gyldendalske Boghandels Forlag, Kbh., 1898.</source>
    <!-- Digtene heri, er første gang udgivet med Samlede Digte (1898), så når denne tilføjes, kan andre.xml nedlægges. Husk dog, at overføre id'er. -->
 </workhead>
 <workbody>
@@ -13,11 +14,9 @@
 <head>
    <title>Eventyret</title>
    <subtitle>Til en Radering af Retsch: Pigen med Hexemasken</subtitle>
-   <toctitle>Eventyret</toctitle>
-   <indextitle>Eventyret</indextitle>
    <firstline>Lig en gammel tandløs Krykkemo'er</firstline>
-   <!-- Teksten følger Samlede Digte (1898) -->
-   <quality>korrektur1,kilde</quality>
+   <source in="1898" pages="49-50"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Lig en gammel tandløs Krykkemo'er
@@ -77,11 +76,9 @@ rige Skjønhed Ansigt tæt til Ansigt.
 <poem id="kaalund2001062508">
 <head>
    <title>Tag denne farvede Devise</title>
-   <toctitle>Tag denne farvede Devise</toctitle>
-   <indextitle>Tag denne farvede Devise</indextitle>
    <firstline>Tag denne farvede Devise</firstline>
-   <!-- Teksten følger Samlede Digte (1898) -->
-   <quality>korrektur1,kilde</quality>
+   <source in="1898" pages="92"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Tag denne farvede Devise,
@@ -98,8 +95,8 @@ og saa, saa ligger Tanken indeni.
    <toctitle>I Staden og paa Landet</toctitle>
    <indextitle>I Staden og paa Landet</indextitle>
    <firstline>Prægtigt det er dog at bo i Staden</firstline>
-   <!-- Teksten følger Samlede Digte (1898) -->
-   <quality>korrektur1,kilde</quality>
+   <source in="1898" pages="83-85"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Prægtigt det er dog at bo i Staden!
@@ -177,11 +174,9 @@ fik jeg en Mark og en straatækt Hytte
 <poem id="kaalund2001062601">
 <head>
    <title>St. Johannes</title>
-   <toctitle>St. Johannes</toctitle>
-   <indextitle>St. Johannes</indextitle>
    <firstline>St. Johannes, Jesu fromme Ven</firstline>
-   <!-- Teksten følger Samlede Digte (1898) -->
-   <quality>korrektur1,kilde</quality>
+   <source in="1898" pages="109"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 St. Johannes, Jesu fromme Ven,
@@ -218,12 +213,10 @@ for hans Storhed i det lille Kryb.''
 <head>
    <title>Til Kong Frederik den Syvende</title>
    <subtitle>Ved hans Thronbestigelse</subtitle>
-   <toctitle>Til Kong Frederik den Syvende</toctitle>
-   <indextitle>Til Kong Frederik den Syvende</indextitle>
    <firstline>Du Drot, som nu throner i høje Sale</firstline>
-   <!-- Teksten følger Samlede Digte (1898) -->
+   <source in="1898" pages="165-172"/>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>frederik7</keywords>
-   <quality>korrektur1,kilde</quality>
 </head>
 <body>
 Du Drot, som nu throner i høje Sale,
@@ -425,37 +418,38 @@ Ja, Herre Konge, det ske! det ske!
 <head>
    <title>Til min Hustru!</title>
    <subtitle>Vridsløselille i Julen 1877.</subtitle>
-   <toctitle>Til min Hustru!</toctitle>
-   <indextitle>Til min Hustru!</indextitle>
    <firstline>Hvis jeg har endnu tilbage</firstline>
    <!-- Teksten følger Samlede Digte (1898), hvor den er indsat som indledning til _Et Efteraar_. Måske dette fra en senere udgave af sidstnævnte. -->
+   <source in="1898" pages="245"/>
    <notes>
       <note>Det omtalte digt <xref poem="kaalund2001061303"/> findes i <a work="kaalund/1858"><i>Et Foraar</i></a>.</note>
    </notes>
    <quality>korrektur1</quality>
 </head>
 <body>
-Hvis jeg har endnu tilbage
-fra de friske Foraarsdage
-i mit Efteraar et Spor,
-hvis endnu jeg ejer Evne
-til at sætte Himlen Stævne
-,,paa det Jevne, paa det Jevne'',
-ikke blot i skjønne Ord,
-da skal Du, min Hustru kjære,
-nu, da jeg gaar ned ad Bakken
-med den tredje Snes paa Nakken,
-have Æren, have Takken;
-Du, til hvem som ung jeg digted
-Sangen sværmerisk ,,Til Hende'',
-Du, der stod som en Heltinde,
-naar min Kraft og Modet svigted,
-naar jeg vaanded mig i Smerte,
-Dig tilhører helt mit Hjerte,
-Dig tilhører helt mit Liv,
-min beskedne, stille Viv!
+    Hvis jeg har endnu tilbage
+    fra de friske Foraarsdage
+    i mit Efteraar et Spor,
+    hvis endnu jeg ejer Evne
+    til at sætte Himlen Stævne
+    ,,paa det Jevne, paa det Jevne'',
+    ikke blot i skjønne Ord,
+    da skal Du, min Hustru kjære,
+    nu, da jeg gaar ned ad Bakken
+    med den tredje Snes paa Nakken,
+    have Æren, have Takken;
+    Du, til hvem som ung jeg digted
+    Sangen sværmerisk ,,Til Hende'',
+    Du, der stod som en Heltinde,
+    naar min Kraft og Modet svigted,
+    naar jeg vaanded mig i Smerte,
+    Dig tilhører helt mit Hjerte,
+    Dig tilhører helt mit Liv,
+    min beskedne, stille Viv!
 
-                    H. V. K.
+<nonum><i>Vridsløselille i Julen 1877.</i></nonum>    
+
+<nonum><right><b>H. V. K.</b></right></nonum>
 </body>
 </poem>
 
