@@ -1,3 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="andre" author="kaalund" status="incomplete" type="poetry">
+<workhead>
+   <title>Andre digte</title>
+   <year>?</year>
+   <quality>korrektur1</quality>
+   <!-- Digtene heri, er første gang udgivet med Samlede Digte (1898), så når denne tilføjes, kan andre.xml nedlægges. Husk dog, at overføre id'er. -->
+</workhead>
+<workbody>
 
 <poem id="kaalund2001061702">
 <head>
@@ -442,3 +452,6 @@ min beskedne, stille Viv!
                     H. V. K.
 </body>
 </poem>
+
+</workbody>
+</kalliopework>
