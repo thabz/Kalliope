@@ -7,6 +7,7 @@
    <quality>korrektur1</quality>
    <keywords>folkevise</keywords>
    <source id="g1882" facsimile="115308004385" facsimile-pages-num="524" facsimile-pages-offset="16"><i>Danmarks Folkeviser i Udvalg</i>, Svend Grundtvig (red.), P. G. Philipsens Forlag, Kbh., 1882.</source>
+   <source id="o1918" facsimile="11530800444D_color" facsimile-pages-num="286" facsimile-pages-offset="10"><i>Danske Folkeviser i Udvalg</i>, Axel Olrik, Ida Falbe-Hansen (red.), 1. samling, 4. udgave, Gyldendalske Boghandel, Kbh., 1918.</source>
 </workhead>
 <workbody>
 
@@ -2476,8 +2477,7 @@ den Løve han tjener ham.
     <toctitle><num>DgF. 10</num>Ulv van Jærn</toctitle>
     <firstline>Det var ungen Ulv van Jærn</firstline>
     <notes>
-        <note>Kong Didriks Frænde, <w>Ulv van Jærn</w>, er egentlig den tyske Sagnhelt, Didriks Søstersøn Wolffhart von Garten (ↄ: Garda i Norditalien); og skjønt ingen bevaret tysk Sagnkilde kjender noget til vor Vises Æmne: hans Hærtog for at hævne sin Faders Fald, saa maa det dog antages, at denne danske Vise er grundet paa en nu forgaaet nedertysk. Vor Vises Hovedperson er imidlertid <w>Vidrik Verlandssøn</w>, der af Folket opfattedes som en gammel dansk Kæmpe, hjemmehørende i Skaane; og denne Vise (DgF. 10) med sin ejendommelige vilde Kampglæde er i hvert Fald en ægte gammeldansk Folkevise, som sikkert har frydet Krigerne i de to første Valdemares Følge, og som derfor ogsaa blev tagen til Forbillede, da man Aar 1208 vilde besynge den svenske Kong Sverker, som med sin Frænde Kong Valdemar Sejers bedste Kæmper stræbte at gjenvinde den svenske Trone (DgF. 136).<br/>&nbsp;&nbsp;&nbsp;&nbsp;Visen er os bevaret i fem danske Opskrifter fra 16de og én fra 17de Aarhundrede, og den synges endnu i Jylland. Desuden haves tre svenske Opskrifter fra 17de Aarh. og to mærkelige færøske fra 19de, ligesom der foreligger Beviser for, at Visen i ejendommelige Former har været sungen i Norge, endog helt op i Midnatssolens Egne.</note>
-        <!-- TODO: Link til DgF. 136 når vi får den lagt ind. -->
+        <note>Kong Didriks Frænde, <w>Ulv van Jærn</w>, er egentlig den tyske Sagnhelt, Didriks Søstersøn Wolffhart von Garten (ↄ: Garda i Norditalien); og skjønt ingen bevaret tysk Sagnkilde kjender noget til vor Vises Æmne: hans Hærtog for at hævne sin Faders Fald, saa maa det dog antages, at denne danske Vise er grundet paa en nu forgaaet nedertysk. Vor Vises Hovedperson er imidlertid <w>Vidrik Verlandssøn</w>, der af Folket opfattedes som en gammel dansk Kæmpe, hjemmehørende i Skaane; og denne Vise (DgF. 10) med sin ejendommelige vilde Kampglæde er i hvert Fald en ægte gammeldansk Folkevise, som sikkert har frydet Krigerne i de to første Valdemares Følge, og som derfor ogsaa blev tagen til Forbillede, da man Aar 1208 vilde besynge den svenske Kong Sverker, som med sin Frænde Kong Valdemar Sejers bedste Kæmper stræbte at gjenvinde den svenske Trone (<a poem="folkeviser20180526">DgF. 136</a>).<br/>&nbsp;&nbsp;&nbsp;&nbsp;Visen er os bevaret i fem danske Opskrifter fra 16de og én fra 17de Aarhundrede, og den synges endnu i Jylland. Desuden haves tre svenske Opskrifter fra 17de Aarh. og to mærkelige færøske fra 19de, ligesom der foreligger Beviser for, at Visen i ejendommelige Former har været sungen i Norge, endog helt op i Midnatssolens Egne.</note>
     </notes>
     <source in="g1882" pages="134-143"/>
     <quality>korrektur1,kilde,side</quality>
@@ -16327,6 +16327,85 @@ jeg maa ikke længer dvæle:
 dèr sidde Guds Engle i Himmerig,
 mig længes hen til de Sjæle.«
 <i>Udi Ringsted hviles Dronning Dagmar.</i>
+</body>
+</poem>
+
+
+<poem id="folkeviser20180526">
+<head>
+    <title>Slaget ved Lena</title>
+    <toctitle><num>DgF. 136</num>Slaget ved Lena</toctitle>
+    <subtitle>(1208)</subtitle>
+    <firstline>Det var ungen Sverker</firstline>
+    <notes>
+        <note>DgF. 136, Visens oprindelige Tekst saa vidt muligt genbragt efter gamle danske og svenske Opskrifter.</note>
+        <note>Indl. S. 44; DgF. III Bd. Nr. 136. — 6 <w>Vestergylland</w>, Vestergøtland. — 8 <w>trøsser fem</w>, tre Gange fem; man havde endnu i Middelalderen en Forkærlighed for at bruge Femtalsystemet i Stedet for Titalsystemet (at tælle efter een Haands Fingre i Stedet for efter begge Hænders Fingre). — 9 <w>gælle</w>, skrige. — <w>det græder</w>, det bringer til Graad (oldn. grœta; ikke oldn. gráta, at græde).</note>
+    </notes>
+    <source in="o1918" pages="164-165"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+1.    
+Det var ungen Sverker,
+ganger for Kongen at stande: 
+,,Herre, I laane mig af eders Mænd, 
+min Faders Død at hævne.''
+Ud føre de Riddere deres Skjolde, det græder saa mangen.
+
+2. 
+,,Jeg vil laane dig af mine Mænd, 
+baade Sællandsfar og Jyde;
+det er de bedste Slagsmænd,
+de kan baade spænde og skyde.''
+
+3. 
+Det var om en hellig Søndag 
+(Messen var god at høre): 
+Sverker drager til Øresund, 
+han lader sit Folk overføre.
+
+4. 
+Sverker stander i Fremmerstavn, 
+og ser han ud i Sund:
+,,Gud lader os Sejer vinde
+eller synke neder til Bund!'' -
+
+5. 
+Tilsammen rede de ædelige Herrer, 
+det var saa ynkelig en Leg;
+det var saa ondt i Strid at stande, 
+hvor Sønnen Faderen sveg.
+
+6. 
+Frem red unge Engelbret 
+med sit forgyldene Horn;
+han vog udaf de Vestergyllands Mænd, 
+som Bønder de mejer Korn.
+
+7. 
+De danske vunde saa stor en Pris, 
+de strede i stærkest Nød;
+det var saa stort et Mandemord, 
+saa mangen Mand blev der død.    
+
+8. 
+Der de droge af Danmark,
+de var vel Tusinde Mænd; 
+der kom ikke tilbage af dem 
+uden tre og trosser fem.
+
+9. 
+Imellem Bjærg og Dale
+der gæller baade Ugle og Ørn; 
+det græder saa mangen Enke
+og halv flere faderløse Børn.
+
+10. 
+De Fruer stander i Højeloft,
+de venter deres Herrers Komme; 
+Hestene de kom blodige hjem,
+og Sadlerne de var tomme.
+Ud føre de Riddere deres Skjolde; det græder saa mangen.
 </body>
 </poem>
 

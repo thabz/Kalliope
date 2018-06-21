@@ -120,6 +120,9 @@ export default class Nav extends React.Component<NavProps> {
         if (poet.type === 'person') {
           poetsLinkText = _('Personer', lang);
           poetsLink = <span>{poetsLinkText}</span>;
+        } else if (poet.type === 'artist') {
+          poetsLinkText = _('Kunstnere', lang);
+          poetsLink = <span>{poetsLinkText}</span>;
         } else {
           if (poet.country !== 'dk') {
             const cn = CommonData.countries.filter(c => {
