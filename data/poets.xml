@@ -280,6 +280,24 @@
   <works>1778,1778v,1779,andre</works>
 </person>
 
+<person id="gotter" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich Wilhelm</firstname>
+    <lastname>Gotter</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1746-09-03</date>
+      <place>Gotha</place>
+    </born>
+    <dead>
+      <date>1797-03-18</date>
+      <place>Gotha</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="holty" country="de" lang="de" type="poet">
   <name>
     <firstname>L.H.C.</firstname>
