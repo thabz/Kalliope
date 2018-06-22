@@ -30,7 +30,7 @@ end
 @poetid = 'POETID'
 @date = Date.today.strftime("%Y%m%d")
 @source = nil
-@facsimile = 'XXXXXX_color.pdf'
+@facsimile = nil
 @facsimile_pages_num = 150
 @worknotes = []
 @found_corrections = false
@@ -100,10 +100,10 @@ end
 
 def printPoem()
   printHeader()
-  if @source and not @page 
+  if @facsimile and not @page 
       abort "FEJL: Digtet »#{@title}« mangler sideangivelse"
   end
-  if @source and @page =~ /\d-$/
+  if @facsimile and @page =~ /\d-$/
       abort "FEJL: Digtet »#{@title}« har kun halv sideangivelse: #{@page}"
   end
   if @type == 'poem' and (@firstline.nil? || @firstline.strip.length == 0)
