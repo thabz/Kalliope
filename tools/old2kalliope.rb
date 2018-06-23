@@ -35,6 +35,7 @@ end
 @worknotes = []
 @found_corrections = false
 @found_poet_notes = false
+@done = false
 
 # Poem data
 @poemid = nil
@@ -220,6 +221,12 @@ File.readlines(ARGV[0]).each do |line|
 end
 
 File.readlines(ARGV[0]).each do |line|
+  next if @done;
+  if line.start_with?('SLUT')
+    @done = true
+    @state = 'INBODY'
+    next
+  end
   line_before = line
   while line =~ /\t/
       line = line.gsub(/\t/,'    ')
@@ -230,7 +237,7 @@ File.readlines(ARGV[0]).each do |line|
           STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal _"
       end
   end
-  line = line.rstrip.gsub(/=(.+?)=/,'<w>\1</w>')
+  line = line.rstrip.gsub(/=([^"].+?)=/,'<w>\1</w>')
   if (line =~ /=[^"]/)
       STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal ="
   end
