@@ -51,6 +51,7 @@ end
 @event = nil
 @type = 'poem'
 @variant = nil
+@facsimile_page = nil
 
 def printHeader()
     if @header_printed
@@ -143,9 +144,11 @@ def printPoem()
     puts "    </notes>"
   end
   if @source and @page
-      if (@page =~ /[ivx]+/i) 
+      if @facsimile_page 
+        puts "    <source pages=\"#{@page}\" facsimile-pages=\"#{@facsimile_page}\" />"
+      elsif @page =~ /[ivx]+/i 
         puts "    <source pages=\"#{@page}\" facsimile-pages=\"10\" />"
-      else 
+      else  
         puts "    <source pages=\"#{@page}\"/>"
       end
   end
@@ -192,6 +195,7 @@ def printPoem()
   @event = nil
   @type = 'poem'
   @variant = nil
+  @facsimile_page = nil
   @poemcount += 1
 end
 
@@ -342,6 +346,8 @@ File.readlines(ARGV[0]).each do |line|
       @notes.push(line[5..-1].strip)
     elsif line.start_with?("SIDE:")
       @page = line[5..-1].strip
+    elsif line.start_with?("FACSIMILE-SIDE:")
+      @facsimile_page = line.gsub(/^FACSIMILE-SIDE:/,'').strip
     elsif line.start_with?("SKREVET:")
       @written = line[8..-1].strip
     elsif line.start_with?("FREMFØRT:")
