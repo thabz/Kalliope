@@ -263,6 +263,9 @@ const build_museum_link = picture => {
       case 'digitalmuseum.no':
         url = `https://digitaltmuseum.no/${objId}/maleri`;
         break;
+      case 'digitalmuseum.se':
+        url = `https://digitaltmuseum.se/${objId}/maleri`;
+        break;
     }
     return url == null ? null : ` <a href="${url}">⌘</a>`;
   }
