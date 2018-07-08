@@ -1344,7 +1344,7 @@ O, sødt, som Dands og Leeg, vil dette Syn dig glæde.
     </subtitle>
     <firstline>Hun bruger hver en Konst, som vittig Skjønhed ejer</firstline>
     <notes>
-        <note>Oversættelse af Tasso: <xref poem="tasso2018062204" /> fra <i>Gerusalemme liberata</i> (1581). <!-- TODO: Marker stroferne i linket. --></note>
+        <note>Oversættelse af Tasso: <xref type="translation" poem="tasso2018062204" /> fra <i>Gerusalemme liberata</i> (1581). <!-- TODO: Marker stroferne i linket. --></note>
     </notes>
     <source pages="65-69"/>
     <keywords>tasso</keywords>
@@ -1983,7 +1983,7 @@ Og døe i elsket Qval! .........
     <subtitle>frit oversat</subtitle>
     <firstline>Jeg evig elsket har, jeg endnu elsker Eder</firstline>
     <notes>
-        <note>Gendigtning af Petrarcas <xref poem="petrarca2018062301"/>.</note>
+        <note>Gendigtning af Petrarcas <xref type="translation" poem="petrarca2018062301"/>.</note>
     </notes>
     <source pages="100-101"/>
     <quality>korrektur1,kilde,side</quality>
@@ -2777,7 +2777,7 @@ Du, o Sandhed, kroner din tro Tilbeders
     </subtitle>
     <firstline>Du, som det rullende Aar med guddommelig Aande besjæler!</firstline>
     <notes>
-        <note>Gendigtning af James Thomson: <xref poem="thomson2018070101"/>.</note>
+        <note>Gendigtning af James Thomson: <xref type="translation" poem="thomson2018070101"/>.</note>
     </notes>
     <source pages="138-147" facsimile-pages="150-159" />
     <quality>korrektur1,kilde,side</quality>
@@ -3871,12 +3871,13 @@ Du fælde Taarer paa min Grav.
     <title>Naturens tre Riger</title>
     <subtitle>Efter Lessing</subtitle>
     <firstline>Saa godt, som nogen Doktor, skal jeg lære</firstline>
+    <notes>
+        <note>Gendigtning af Lessings <xref type="translation" poem="lessing2002080156"/>.</note>
+    </notes>
     <source pages="197-198"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<!-- TODO: Find Lessings original. -->
-
 Saa godt, som nogen Doktor, skal jeg lære
 Dig, hvi Naturens Riger ere tre;
 Thi ved en Flaske Viin, jeg paa min Ære,
@@ -3973,6 +3974,544 @@ Saa, Bacchus! lyder og vor Sang;
 for dig den høit mod Loftet runge:
 vær Konge her ved dette Bord!
 vær Konge for den hele Jord!
+</body>
+</poem>
+
+<poem id="bruunmc2018062378">
+<head>
+    <title>Travestation</title>
+    <subtitle>Af Horatses 2 B. 14 Ode</subtitle>
+    <firstline>Snart iile, Hr. Orgon, de vingede Dage</firstline>
+    <source pages="202-204"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Snart iile, Hr. Orgon, de vingede Dage;
+Ei Psalmer, ei Kirkegang mere formaaer,
+At kalde i Dagenes Vinter tilbage
+    Vor Ungdoms henflygtede Vaar.
+
+Du ofre Dukater og Sedler og Pjaster.
+Hr. Mors ubevæget vil have sin Ret.
+Du kjøre med Sex, eller gaa, han dog haster
+    I Hælen, og bliver ej træt.
+
+Den Grobian kjender ei Mores, han skjønner,
+Ei som Fru <w>Justitsen</w>, paa Ahner og Guld.
+Selv Hofdame, Hofjunker, Hofskjøgens Sønner
+    For ham er, som Pøbelen, Muld.
+
+Og ligesaa lidt, som ved Baand eller Stjerne,
+Han røres ved Pigers sødtsmeltende Røst,
+Ved straalende Øje (<w>Amorers</w> Caserne)
+    Ved fuldeste bølgende Bryst.
+
+Forgjeves vi skye de fortærende Krige;
+Forgjeves vi undflye det rasende Hav;
+Forgjeves vi modstaae den lokkende Pige;
+    Os bier dog sikkert en Grav.
+
+Omsonst kun du sparer paa Viin og paa Caffe,
+Og drikker for Sundhed og Sparsomhed Vand.
+Selv om, som Blanchard, vi os Vinger anskaffe;
+    Vi Døden ei undløbe kan.
+
+Vi maae jo dog eengang, hvormegct vi grue,
+For Gjenfærd og Spøgelser, rejse derned.
+Vi maae jo dog eengang de Løjer beskue
+    Ved stygiske  Nendesteens Bred.
+
+Du maae dog forlade din jernslagne Kiste
+Og den deri fængslede, sukkende Skat.
+Du maae dine skjønne Dukater dog miste,
+    Naar Creditor <w>Mors</w> faaer dig fat.
+
+Forgjeves bag hundrede Laaser forvarer
+Du kostbare Vine fra Ungarn og Rhin.
+Din Arving dem bedre fortjener; ei sparer
+    Han klog paa Dukater og Viin.
+
+See, herligt hans Lystgaard ved Strandvejen stiger;
+Hver Springfyr fra Staden er velkommen der.
+Der soires, der dandses. Med Venner og Piger
+    Han skifter, mens noget der er.
+</body>
+</poem>
+
+<poem id="bruunmc2018062379">
+<head>
+    <title>Opmuntring til Glæde</title>
+    <subtitle>Af Hölty. Oversat</subtitle>
+    <firstline>Hvorfor med Griller Sindet plage</firstline>
+    <notes>
+        <note>Gendigtning af Ludwig Hölty: <xref type="translation" poem="holty2018070701"/></note>
+    </notes>
+    <source pages="205-206"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Hvorfor med Griller Sindet plage
+    I Ungdoms fejre Blomstervaar?
+Hvi Rynker over Panden drage,
+    Mens Livets Rose rød end staaer?
+
+See, Glæden paa hver Bane smiler,
+    Vi gjennem Pilgrimslivet gaae.
+End med sin Krands hun mod os iiler,
+    Naar vi paa Skilsmis-Steder staae.
+
+End surrer Egnens klare Kilde;
+    End Lunden grøn og kjølig er;
+End Maanens fromme Straaler spille
+    Saa klart, som mellem Adams Træ'r.
+
+End Purpurdruens Saft ombylter
+    Til Fryd-Minut hver sorgfuld Stund.
+I Aftenglands ia Rosenhytter,
+    End tryller Kys af elsket Mund.
+
+End Nattergalens Røst indgyder
+    I Ynglings Hjerte Salighed.
+End strømmer, naar dens Højsang lyder,
+    Selv i den Barm, der bløder, Fred.
+
+O herlig, herlig er Guds Klode
+    Og værd at være glad paa den.
+Thi vil jeg nyde fro dens Gode,
+    Til jeg i Graven muldner hen.
+</body>
+</poem>
+
+<poem id="bruunmc2018062380">
+<head>
+    <title>Selskabs-Sang</title>
+    <subtitle>Melodie. Nu bort med Alskens Politik</subtitle>
+    <firstline>Her handles ei om Politik</firstline>
+    <notes>
+        <note>Hjælp Kalliope. Første ord i fjerde linjes er ulæseligt i nærværende kilde. Kender nogen en bedre kilde?</note>
+    </notes>
+    <source pages="207-209"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Her handles ei om Politik,
+Thi sligt fordærver Mad og Drik;
+Beviis derfor jeg tager fra
+??? Statsmands Podagra.
+Desuden, Politik gi'r Striid,
+Og dertil har vi ingen Tiid;
+Thi snart, o snart fra Bords vi maae
+Til Dandsen atter gaae.
+
+    Om hvad Avisen bragte med,
+Man her ei give skal Beskeev;
+O, thi Viinbiergenes Ruin
+Bedrøver kun vort Sind.
+Ei sluttes Vaabenstilstand her!
+End Liv i vore Flasker er;
+O, standser ikke, før de lov
+Den sidste Draabe Blod!
+
+    Og bort med Snak om Tiid og Rum,
+Om Kant og Repertorium;
+Blandt Viin og Piger er selv Kant
+Jo munter og galant?
+Ja, var selv Repertøren her,
+Og vi ham bød et Glas og fleer;
+Jeg haaber ydmygst, at han dog
+Os ei paa Galgen slog.
+
+    Ei heller, Brødre, kiævles vi
+Om ægte Troe og Kiætterie;
+Kun eet Symbol vi alle har:
+''Gud Glædens Skaber var!''
+Det troer den, som med Sandheds Fynd
+Udrydder gammel Arvesynd;
+Det troer den, som i Landsbyekrog
+Forbander Bastholms Bog.
+
+    Ja evigt Glædens Kirke staae,
+Til Jord og Himmel skal forgaae!
+Foruden Censor og Fiskal
+Den evig herske skal.
+Ja, Moder Kirke! i dit Skiød
+Vil vi bekiende til vor Død
+Den ægte, reene, gamle Troe:
+''Vær viiseligen fro.''
+
+    Høit lyde vor forrente Sang!
+Og Beggre mødes Klang i Klang!
+Een Skaal vi alle drikke maae,
+Og denne lyder saa:
+''Gid hver, som med iblandt os sad,
+''Som andre glæded', selv var glad,
+''Maa ofte mindes denne Dag
+''I lige muntert Lag!''
+</body>
+</poem>
+
+<poem id="bruunmc2018062381">
+<head>
+    <title>Selskabssang</title>
+    <subtitle>Til Melodien: Fryd dig ved Livet.</subtitle>
+    <firstline>Venskab og Glæde</firstline>
+    <source pages="210-212"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><center><i>Chor</i></center></nonum>
+
+        Venskab og Glæde,
+        Eder tilbede vi!
+        Signer vor Kreds og
+        Dens Harmvnie!
+
+
+<nonum><center><i>Enkelte Stemmer.</i></center></nonum>
+
+Hvad skiærmer vel mod Sorgens Magt?
+Ei Guld! Ei Kongers Sabelvagt!
+Kun, Venskab, Venskab, ved Din Barm
+Er Lye for Livets Harm.
+
+
+<nonum><center><i>Chor</i></center></nonum>
+
+        Venskab og Glæde etc.
+
+
+<nonum><center><i>Enkelte Stemmer.</i></center></nonum>
+
+Men, siig os, Venskab, hvor du boer?
+Der, hvor kun Rang giør viis og stor?
+Hvor Nid og Frækhed bryste sig?
+Mon der man kiender dig?
+
+
+<nonum><center><i>Chor</i></center></nonum>
+
+        Venskab og Glæde etc.
+
+
+<nonum><center><i>Den eneste Stemme.</i></center></nonum>
+
+''Jeg boer i Uskylds Rosenlund:
+''Mig kiende Dydens Venner kun.
+''Min Søster Glæden følger mig
+''Saa uadskillelig.
+''Vi kom fra Godheds Fader ned,
+''At lette Støvets tunge Fied.
+''Om Godes Kreds med kierlig Haand
+''Vi slynge fælleds Baand.
+
+
+<nonum><center><i>Chor</i></center></nonum>
+
+        Venskab og Glæde!
+        Døttre af Godheds Gud!
+        Trofast adlyde
+        Vi Eders Bud.
+
+
+<nonum><center><i>Enkelte Stemmer.</i></center></nonum>
+
+<w>Syng</w> med, enhver i Kredsen her,
+Enhver, som skiønner Venskabs Værd,
+Enhver, som lukker ei sit Bryst
+For ædel skyldfri Lyst.
+
+
+<nonum><center><i>Chor</i></center></nonum>
+
+        Venskab og Glæde!
+        I skiænke bredfuldt Maal.
+        Eders o Søstre,
+        Er denne Skaal.
+</body>
+</poem>
+
+<poem id="bruunmc2018062382">
+<head>
+    <title>Vise</title>
+    <subtitle>
+        <line>i Anledning af Fiskalens Paastand, at Vækkeren <w>misundte</w> Kongen hans Værdighed</line>
+        <line>Melodie. En Glut brunøiet</line>
+    </subtitle>
+    <firstline>Ja, Venner, ja, jeg troer det vel</firstline>
+    <source pages="213-215"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Ja, Venner, ja, jeg troer det vel;
+De Demokrater skrige,
+Kun for at blive Konger selv,
+Og styre Land og Rige.
+Jo, jo, man sige hvad man vil!
+Dalderi, daldera, den Kronelild
+Staae deres Tanker til.
+
+Jeg selv min Svaghed maa tilstaae;
+Den stak mig nys i Øjet.
+''En saadan Ting jeg have maa,
+Før bli'r jeg ei fornøiet.''
+Jeg ærlig det bekiende vil:
+Dalderi, daldera, den Kronelild
+Stod al min Tanke til.
+
+Tokajerviin jeg drak hver Dag;
+Jeg kunde Penge giøre.
+Min Krigshær vinde manget Slag,
+Og jeg Tedeum høre.
+Jo, jo, man sige hvad man vil:
+Dalderi, daldera, den Kronelild
+Staaer klog Mands Tanke til.
+
+Men! som i Baand jeg skulde gaae
+Mig Sabler rundt omgive,
+Ei Pigen, som jeg mig udsaae,
+Min Kone kunde blive.
+Nei, nei, jeg skyldigst takke vil,
+Dalderi, daldera, den Kronelild
+Staaer ei min Tanke til.
+
+Nej, hulde Laura, naar du mig
+En Krands af Myrther giver:
+Ej nogen Konge, stor og riig .
+Af mig misundet bliver.
+Ræk mig din Krands med kiærligt Smiil!
+Dalderi, daldera, slig Kronelild
+Staaer al min Tanke til.
+</body>
+</poem>
+
+<poem id="bruunmc2018062383">
+<head>
+    <title>Paradiserne</title>
+    <firstline>I Valhava de drikke Øl og Miød</firstline>
+    <source pages="216-217"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+I Valhava de drikke Øl og Miød,
+Og sig med Slagsmaal divertere.
+Hvad Øl og Miød angaaer, der kunde vel til Nød
+Passere.
+Men Slagsmaal! fy. I Paradiis man maa
+Foruden Sabler kunne gaae. -
+De gode Grækere ret nydelig afmalte
+- Hvad var ei nydeligt hos dem? -
+En Rosenlund, et stille Glædeshjem,
+Som i et Purpurlys med evigt Foraar pralte.
+Men Skade kun, at de tillige talte
+Om denne Letheflod, om dette Glemsels Vand.
+Jeg skulde Lauras Smil og Lauras Stemme
+Og alle mine søde Drømme glemme?
+Nei, sligt et Paradiis jeg ikke lide kan. -
+Sjeur Mahomets halvfjersindstyve Glutter
+Kan for en Sultan være godt;
+Jeg mere nøjsom er, og frygter blot
+At der behøvedes .... en Sluttr;
+Thi ellers, inden man sig foresaae,
+Den gode Pande kunde Svide faae. -
+Sanct Poul, Sankt Peer og flere gode Mænd
+Fortælle os, vi skal et Chor opføre
+Og paa Guds Ansigt see og Englers Harper høre.
+Det vist det Sande er. Det staaer i Bibelen.
+Men mon Concert os kan i Længden <w>more?</w>
+Ifald jeg slutte skal fra <w>vore</w>,
+Saa sove vi nok atter salig hen.
+
+    Nei, Laura, lad os elske, lad os kysse,
+Lad os med venlig Trøst hver lille Kummer dysse.
+Med trofast Enighed modtage Skiebnens Slag.
+Da hvert et Paradiis jeg giver en god Dag.
+Men ak! Skal det bestandig blive Drømme?
+Vil du af Naade dog ei saliggiøre mig?
+O Hulde, kan du vel, de christne Præster liig,
+Til evig Tid fordømme?
+</body>
+</poem>
+
+<poem id="bruunmc2018062384">
+<head>
+    <title>Oversættelse</title>
+    <toctitle>Oversættelse af Petrarchas: Chiare, freshe e dolci acque</toctitle>
+    <indextitle>Oversættelse af Petrarchas: Chiare, freshe e dolci acque</indextitle>
+    <subtitle>
+        <line>af</line>
+        <line>Petrarchas: <i>Chiare, freshe e dolci acque</i></line>
+    </subtitle>
+    <firstline>Klare, kjølige, liflige Kilde</firstline>
+    <notes>
+        <note>Oversættelse af <xref type="translation" poem="petrarca2018051201"/></note>
+    </notes>
+    <source pages="218-221"/>
+    <keywords>petrarca</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Klare, kjølige, liflige Kilde,
+Ved hvis Vred hun hvilte sig.
+Hun, for hvem jeg Døden lide vilde,
+Hun, som eene, eene behersker mig!
+Du Træe, mod hvilket hun sin spæde Side lænte!
+Lyksalige Blomster, som døde med Lyst,
+Da hende til Throne I tjente!
+Hellige Luft, som hendes Barm har kyst,
+Du, som aander Elskov i mit Bryst!
+For sidste Gang modtager
+Mine matte Suk, mine døende Klager.
+
+    Mon da Himlen mig udkaarer
+Til et Maal for endløs Jammer?
+Skal da Kjerlighed i Taarer
+Slukke disse Øjnes Flammer?
+O, saa vorde mig forundet
+Denne eene Naade, at jeg maa,
+Naar i Dødens kolde Favn jeg er henblundet,
+Her min sidste Hvile faae!
+
+Paa intet Sted min matte Krop skal hvile
+Saa sødt, saa vel.
+Til ingen Gravhøj skal min støvfri Siel
+Fra Himmelen saa frydfuldt smile.
+
+    O søde Haab! Et Morgenlys du spreder
+Paa Dødens natomspændte Baner hen.
+Maaskee hun eengang mindre grusom træder
+Til dette mindefulde Sted igien.
+Maaskee med ømme Blik hun efter mig vil søge
+Her, hvor vi førstegang hinanden saae.
+O, lange hendes Blik omsonst vil søge!
+Min Gravsteen det tilsidst skal hvile paa.
+Da skal paa Rosenkind en Taare bæve, -
+Tungt fra urolig Barm et Suk sig hæve;
+Og med et Blik, hvor Veemod tolker sig,
+Og tørrende med Sløret vaade Øie,
+Hun over Graven skal sig langsom bøje
+Og stamme disse Ord: Du elsske mig!
+Fred, Himlens Fred med dig.
+
+Erindring, smertelig og sød!
+Her sad hun! Friske Blomster dryssed'
+Fra mildtbevægte Green paa hendes Skjød!
+Eet i sin Flygt de hulde Læber kyssed';
+De brune Lokker hang et andet ved.
+Hiint ved den Skjønnes Fødder henrykt hviilte,
+Og dette hen paa muntre Bølger iilte.
+Det lykkeligste sank paa Svanebarmen ned,
+Og sagde stolt: Her throner Kjerlighed.
+
+    Søde Øjeblik!
+Glimt af Himlen, der saa snart forgik!,
+Aldrig, aldrig jeg dig forgjetter!
+Aldrig, aldrig du kommer igjen!
+Til hvilke Elysiske Sletter,
+Til hvilke Himle hvirvledes jeg hen?
+Hvor kom jeg hid? - Paa Jorden er jeg ikke! -
+Mig smiled' en Gudinde' til.
+Jeg drak Udød'lighed af hendes Blikke.
+I mine Aarer strømmer Guddoms-Ild -
+Ak, hvad er alle Jordens Glæder
+For den, der smagte Himlens Saligheder?
+O, fra den Dag paa intet andet Sted
+Mit Hierte finder Fred.
+</body>
+</poem>
+
+<poem id="bruunmc2018062385">
+<head>
+    <title>Mit Vaucluse</title>
+    <subtitle>Sonnet</subtitle>
+    <firstline>Hvad Guddomsmagt usynligen mig binder?</firstline>
+    <source pages="222"/>
+    <keywords>sonnet</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Hvad Guddomsmagt usynligen mig binder?
+  Hvo slynger om min Fod de stærke Kjæder?
+  Hvi dvæler jeg paa disse Veemodssteder,
+Hvor alting om et skuffet Haab mig minder?
+
+Her smilte hun til mig! Paa hendes Kinder
+  Jeg Morgenrøden saae til Himlens Glæder.
+  Her trykte hun min Haand! Ak, bange træder
+Jeg til det Træe, hvor hendes Navn man finder!
+
+Ak, alt forgaaer. See Bølgen Bølgen jager,
+  En Dag den anden! Og vor Drøm er svunden!
+Som flygtig Dug for Morgensoel henrunden!
+
+Kun aldrig du, som dette Hjerte plager!
+Nei aldrig Kjerlighed! nei aldrig Grunden
+Til disse dybe Suk og stille Klager.
+</body>
+</poem>
+
+<poem id="bruunmc2018062386">
+<head>
+    <title>Til Amor</title>
+    <subtitle>En Ode</subtitle>
+    <firstline>Du Guders Salighed, du Verdners Baand</firstline>
+    <source pages="223-225"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Du Guders Salighed, du Verdners Baand,
+O Amor, Himmelens og Jordens Konge,
+Jeg saae dig! Lovsang bæved' paa min Tunge,
+        Og Harpen zittred' i min Haand.
+
+Du med usynlig Magt mig til dig drog.
+Du gavst mig blid din Guddoms-Glands at skue,
+Og fra dit Tempels milde Alterlue
+        En Æthergnist jeg dristig tog.
+
+O, mellem tusind Verdners Frydeskrig
+Jeg blande vil de jubeldrukne Toner.
+Ja, mellem Skabningernes Millioner
+        Jeg knæler ned at hylde Dig.
+
+Alt var en endløs Grav. Ei Spor af Liv!
+Ei Glimt af Lys! Men see, din Aande svæved'
+Paa Chaos' dunkle Dyb, og frydfuldt hæved'
+        Sig Verdenvrimlen ved dit Bliv .
+
+Hvo har de jublende Hærskarer talt?
+Kun Du paa hver har sat dit Guddoms-Stempel.
+Din Lovsang Livet er. Dit skjønne Tempel
+        Er det umaalelige Alt.
+
+Dog Mandens og Mandindens ømme Barm
+Du til dit Allerhelligste indvier,
+Maar, dragne sødt af milde Sympathier,
+        De synke i hinandens Arm.
+
+Saa sank Du selv i <w>Psyches</w> Arme ned;
+Sødt i usynlig Elskers Favn hun bæved';
+Hvor hendes Barm jomfrueligt sig hæved'!
+        Hvor skjalv hun i sin Salighed!
+
+O, nu for dig Olymp er meer var til;
+I af hinandens Læber Guddom drikke.
+Hvad sød Forvildelse i Eders Blikke!
+        I Eders Kysse hvilken Ild!
+
+I Vellyst-Tummel sank hver Klode ned;
+I Højtidsdandse alle Stjerner iilte;
+Da smilende paa Psyches Arme hvilte
+        Det spade Noer, <w>Lyksalighed.</w>
+
+O, er' I flygted' til Olymp igjen.
+Guddommelige Fader, Moder, Datter?
+Har Guldtørst, Hovmod, Vildskabs ublu Latter
+        Fra Jorden skræmmet Eder Hen? -
+
+Til hvilke Himle løftes jeg? Hvis er
+Den milde Purpurglands? Og dette Øje,
+Som lyner Guddom? Disse Rosenhøie? -
+        Er det ei Eders Tempel her?
 </body>
 </poem>
 
