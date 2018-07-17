@@ -32,6 +32,7 @@
 'Hoj/Høj',
 'Hsi/Høi',
 'Hpi/Høi',
+'Hoj/Høj',
 'Slor/Slør',
 'Udlob/Udløb',
 'Trsst/Trøst',

@@ -252,6 +252,9 @@ const build_museum_link = picture => {
       case 'smk':
         url = `http://collection.smk.dk/#/detail/${invNr}`;
         break;
+      case 'ribe':
+        url = `https://ribekunstmuseum.dk/samling/${invNr}`;
+        break;
       case 'smb':
         url = `http://www.smb-digital.de/eMuseumPlus?objectId=${objId}`;
         break;
