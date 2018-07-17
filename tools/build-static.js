@@ -411,11 +411,11 @@ const build_poets_json = () => {
 
     const mentions = collected.person_or_keyword_refs.get(id);
     const has_mentions =
-      mentions != null &&
+      (mentions != null &&
       (mentions.mention.length > 0 ||
-        mentions.translation.length > 0 ||
-        mentions.primary.length > 0 ||
-        mentions.secondary.length > 0);
+        mentions.translation.length > 0)) ||
+        fileExists(`fdirs/${id}/bibliography-primary.xml`) ||
+        fileExists(`fdirs/${id}/bibliography-secondary.xml`);
 
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');
@@ -1763,8 +1763,10 @@ const build_mentions_json = collected => {
       secondary: [],
     };
     const refs = collected.person_or_keyword_refs.get(poetId);
-    data.mentions = refs.mention.map(build_html);
-    data.translations = refs.translation.map(build_html);
+    if (refs != null) {
+      data.mentions = refs.mention.map(build_html);
+      data.translations = refs.translation.map(build_html);
+    }
 
     ['primary', 'secondary'].forEach(filename => {
       const biblioXmlPath = `fdirs/${poet.id}/bibliography-${filename}.xml`;
