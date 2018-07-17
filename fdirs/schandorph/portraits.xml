@@ -2,10 +2,6 @@
 <pictures>
   <picture src="p1.jpg">
   </picture>
-  <picture src="p2.jpg">
-    P. S. Krøyer: <i>Forfatteren Sophus Schandorph</i>, 1895. Skitse til maleri tilhørende Statens Museum for Kunst. Hirschsprungske Samling.
-  </picture>
-  <picture src="p3.jpg" primary="true" square-src="p3-square.jpg" invnr="KMS6858" museum="smk">
-    P. S. Krøyer: <i>Sophus Schandorph</i>, 1895. Statens Museum for Kunst.
-  </picture>
+  <picture ref="kroyer/schandorph-2" />
+  <picture ref="kroyer/schandorph-3" primary="true" square-src="p3-square.jpg" />
 </pictures>
