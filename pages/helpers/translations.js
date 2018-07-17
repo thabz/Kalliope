@@ -5,6 +5,7 @@ import type { Lang } from './types.js';
 const translations: { [string]: string } = {
   'en*Digtere': 'Poets',
   'en*Personer': 'Persons',
+  'en*Kunstnere': 'Artists',
   'en*Nøgleord': 'Keywords',
   'en*Værker': 'Works',
   'en*Digttitler': 'Poem titles',

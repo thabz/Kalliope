@@ -2,7 +2,5 @@
 <pictures>
   <picture src="p1.jpg">
   </picture>
-  <picture src="p2.jpg" primary="true" square-src="p2-square.jpg">
-      Jens Juel: <i>Forfatteren Peter Andreas Heiberg</i>, ca. 1790-1799, olie på lærred. Det Nationalhistoriske Museum på Frederiksborg Slot. <!--Inv. nr. A 553 -->
-  </picture>
+  <picture ref="juel/heibergpa" primary="true" square-src="p2-square.jpg" />
 </pictures>

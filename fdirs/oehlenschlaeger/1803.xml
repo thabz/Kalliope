@@ -13,7 +13,7 @@
       <picture type="titlepage" src="1803-p1.jpg">Titelbladet til <i>Digte</i> (1803).<br/>Digte / af / Adam Øhlenslæger / Was ich irrte, was ich strebte / was ich litt und was ich lebte - / sind hier Blumen nur im Strau&#383;s! / Göthe / Kiöbenhavn / Trykt paa Universitetsboghandler Fr: Brummers / Forlag hos Andreas Seidelin. / 1803</picture>
    </pictures>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+   <source facsimile="115408017294" facsimile-pages-num="320" facsimile-pages-offset="12">Adam Oehlenschläger: <i>Digte</i>, Fr. Brummers Forlag, Kbh., 1803.</source>
 </workhead>
 <workbody>
 
@@ -22,6 +22,7 @@
    <title>Forerindring</title>
    <toctitle>Forerindring</toctitle>
    <indextitle>Forerindring</indextitle>
+   <source facsimile-pages="9-10" pages="ii-iii"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -29,7 +30,7 @@ Otte Stykker, af denne Samling, have tilforn været trykte; en Stierne betegner 
 
     Dette anmærker jeg for at man ikke skal troe denne Bog er en Samling af mine adspredte Smaae-Ubetydeligheder, hvilke Ingen kan sætte ringere Priis paa end jeg. Det er et Bind <i>nye Digte</i>, som alle, paa de faa anförte nær, have deres Udspring af senere Forsög, og som her see Lyset förste Gang.
 
-                                                                                             Adam Öhlenslæger
+<right>Adam Öhlenslæger</right>
 </body>
 </prose>
 
@@ -45,9 +46,7 @@ Otte Stykker, af denne Samling, have tilforn været trykte; en Stierne betegner 
    <toctitle>Biergtrolden</toctitle>
    <indextitle>Biergtrolden</indextitle>
    <firstline>See Nordlys lue</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 3-15.</note>
-   </notes>
+   <source pages="3-15"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance</keywords>
 </head>
@@ -355,9 +354,7 @@ Hytte ile.
    <toctitle>Hakon Jarls Död</toctitle>
    <indextitle>Hakon Jarls Död</indextitle>
    <firstline>De Nætter ruge saa lange og sorte</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 16-22.</note>
-   </notes>
+   <source pages="16-22"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance</keywords>
 </head>
@@ -502,9 +499,7 @@ som minder om Oldtidens slukte Luer.
    <toctitle>Sivald og Thora*</toctitle>
    <indextitle>Sivald og Thora</indextitle>
    <firstline>Fra Thoras ömme elskovsfulde Bryst</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 23-27.</note>
-   </notes>
+   <source pages="23-27"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance</keywords>
 </head>
@@ -627,9 +622,7 @@ fælt minder Morderen om Hevnens Time.
    <toctitle>Skattegraveren</toctitle>
    <indextitle>Skattegraveren</indextitle>
    <firstline>Mens Vintersneen fyger</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 28-32.</note>
-   </notes>
+   <source pages="28-32"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance</keywords>
 </head>
@@ -751,9 +744,9 @@ han smilte og var död!
    <indextitle>Löveridderen</indextitle>
    <firstline>Mildt boltre sig de lune Sommervinde</firstline>
    <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 33-42.</note>
       <note>Bygger på folkevisen <xref poem="folke2018040501"/><!--,,Løwen og Kong Tiderichs Kamp imod Lind-Ormen''-->.</note>
    </notes>
+   <source pages="33-42"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>folkevise,romance,ottavarima</keywords>
 </head>
@@ -982,9 +975,7 @@ den tiener Kongen alle sine Dage!
    <toctitle>Fuglefængeren</toctitle>
    <indextitle>Fuglefængeren</indextitle>
    <firstline>Svagt suser Bækken hist</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 43-47.</note>
-   </notes>
+   <source pages="43-47"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance</keywords>
 </head>
@@ -1094,9 +1085,9 @@ Han troede ei sit Syn.
    <indextitle>Fiskeren</indextitle>
    <firstline>Dybt Bölgen sank, höit Bölgen foer</firstline>
    <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 48-49.</note>
       <note>Oversættelse af Goethes <xref type="translation" poem="goethe2000010801"/>.</note>
    </notes>
+   <source pages="48-49"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance</keywords>
 </head>
@@ -1147,9 +1138,9 @@ Man saae ham aldrig meer.
    <indextitle>Kongen i Leire</indextitle>
    <firstline>Der var en Konning i Leire</firstline>
    <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 50-51.</note>
-      <note>Oversættelse af Margaretes sang i Goethes <i>Faust. Der Tragödie erster Teil</i>, <xref type="translation" poem="goethe2001061610"/>.</note>
+      <note>Oversættelse af Margaretes sang i Goethes <i>Faust. Der Tragödie erster Teil</i>, <xref type="translation" poem="goethe2001061610,92-115"/>.</note>
    </notes>
+   <source pages="50-51"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance</keywords>
 </head>
@@ -1192,9 +1183,7 @@ Drak ei en Draabe meer!
    <toctitle>Harald i Offerlunden</toctitle>
    <indextitle>Harald i Offerlunden</indextitle>
    <firstline>Klar er Nattens Stiernehvælving</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 52-55.</note>
-   </notes>
+   <source pages="52-55"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance</keywords>
 </head>
@@ -1298,9 +1287,9 @@ Harald gyser ved sin Dröm -
    <indextitle>Ellehöien</indextitle>
    <firstline>Paa hede Dag den svale Aften fulgte</firstline>
    <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 56-60.</note>
       <note>Bygger på folkevisen <xref poem="folke2000012901"/>. Skrevet på terziner.</note>
    </notes>
+   <source pages="56-60"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>folkevise,romance,terziner</keywords>
 </head>
@@ -1417,9 +1406,7 @@ og Trolden suger Blodet af dit Öie.
    <toctitle>Spilleren</toctitle>
    <indextitle>Spilleren</indextitle>
    <firstline>Skarp Stormen foer ved Midnatstid</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 61-64.</note>
-   </notes>
+   <source pages="61-64"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance</keywords>
 </head>
@@ -1512,9 +1499,7 @@ med Haanden paa sit Bryst.
    <toctitle>Jura-Bierget</toctitle>
    <indextitle>Jura-Bierget</indextitle>
    <firstline>I Juras skiönne Egne</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 65-68.</note>
-   </notes>
+   <source pages="65-68"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance</keywords>
 </head>
@@ -1602,9 +1587,7 @@ den er besprængt med Blod.
    <toctitle>Fridleif og Helga</toctitle>
    <indextitle>Fridleif og Helga</indextitle>
    <firstline>Alt Skoven saa prud udi Blomster staaer</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 69-74.</note>
-   </notes>
+   <source pages="69-74"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance</keywords>
 </head>
@@ -1749,19 +1732,7 @@ Herr Erik faldt ned i en Askehob.
    <toctitle>Guldhornene</toctitle>
    <indextitle>Guldhornene</indextitle>
    <firstline>De higer og söger</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 75-82.</note>
-   </notes>
-   <pictures>
-      <picture src="g1.jpg"><i>Guldhornene</i> som det tager sig ud i førsteudgaven fra 1803 (side 1/8).</picture>
-      <picture src="g2.jpg">Side 2/8</picture>
-      <picture src="g3.jpg">Side 3/8</picture>
-      <picture src="g4.jpg">Side 4/8</picture>
-      <picture src="g5.jpg">Side 5/8</picture>
-      <picture src="g6.jpg">Side 6/8</picture>
-      <picture src="g7.jpg">Side 7/8</picture>
-      <picture src="g8.jpg">Side 8/8</picture>
-   </pictures>
+   <source pages="75-82"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance</keywords>
    <!-- Rettelser af Sören Mogensen, 15-8-2000, Sven Sörensen, 10-4-2001 og Brian Bentsen, 26-5-2001. -->
@@ -1961,9 +1932,7 @@ Evig bortsvandt Helligdommen.
    <toctitle>Violsamleren</toctitle>
    <indextitle>Violsamleren</indextitle>
    <firstline>Nattens blege Gienfærd lyste</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 83-87.</note>
-   </notes>
+   <source pages="83-87"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance</keywords>
 </head>
@@ -2077,9 +2046,9 @@ vinke mig til evig Glæde.
    <indextitle>Valravnen</indextitle>
    <firstline>De gule Silkeseil, som Vinden fylder</firstline>
    <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 88-107.</note>
       <note>Bygger frit på folkevisen om <xref poem="folke2000012904"/>.</note>
    </notes>
+   <source pages="88-107"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>folkevise,romance,ottavarima</keywords>
 </head>
@@ -2524,9 +2493,7 @@ Hun synker ei, hun sig til Himlen hæver!
    <toctitle>Harpespilleren ved Posthuset</toctitle>
    <indextitle>Harpespilleren ved Posthuset</indextitle>
    <firstline>Her vil jeg sidde og Harpen slaae</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 108-14.</note>
-   </notes>
+   <source pages="108-114"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance</keywords>
 </head>
@@ -2694,8 +2661,8 @@ skal Solen staae frem af sin Grav!
    <firstline>Konning Uller er sig i Hu saa mod</firstline>
    <notes>
       <note>Bygger på folkevisen <xref poem="folkeviser2018041030"/>.</note>
-      <note>Teksten følger <i>Digte</i> (1803), s. 115-30.</note>
    </notes>
+   <source pages="115-130"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <keywords>romance,ottavarima</keywords>
 </head>
@@ -3083,9 +3050,7 @@ Alt synes dem en Dröm, som er forsvunden.
    <toctitle>Natur-Temperamenter</toctitle>
    <indextitle>Natur-Temperamenter</indextitle>
    <firstline>Östens lange, blege Strimmel</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 133-39.</note>
-   </notes>
+   <source pages="133-139"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -3264,9 +3229,9 @@ blidelig os samle!
    <indextitle>Den frembrydende Vaar</indextitle>
    <firstline>Engene grönnes og Skovenes Kroner</firstline>
    <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 140-44.</note>
       <note>Digteren som hyldes i de sidste to strofer er <a person="ewald">Johannes Ewald</a>.</note>
    </notes>
+   <source pages="140-144"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -3368,9 +3333,7 @@ da skal jeg tolke hvad nu kun jeg skuer!
    <toctitle>Den Forladte*</toctitle>
    <indextitle>Den Forladte</indextitle>
    <firstline>Naar Solen röd og langsom daler</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 145-47.</note>
-   </notes>
+   <source pages="145-147"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -3446,9 +3409,8 @@ Snart synker jeg i Eders Favn!
    <toctitle>Den Tillidsfulde</toctitle>
    <indextitle>Den Tillidsfulde</indextitle>
    <firstline>Den som er uden Synd og Last</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 148-50.</note>
-   </notes>
+   <source pages="148-150"/>
+   <keywords>horats</keywords>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -3523,9 +3485,7 @@ og med den söde Röst!
    <toctitle>Den brustne Harpe</toctitle>
    <indextitle>Den brustne Harpe</indextitle>
    <firstline>Du, som blandt Skovens Kroner</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 151.</note>
-   </notes>
+   <source pages="151"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -3557,9 +3517,7 @@ taust og brustent Harpe, som du!
    <toctitle>Himmel-Lysene</toctitle>
    <indextitle>Himmel-Lysene</indextitle>
    <firstline>Jeg skued Stella, hun var saa mild</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 152-53.</note>
-   </notes>
+   <source pages="152-153"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -3604,9 +3562,7 @@ Hvad tryller mig Livet saa södt som hun?
    <toctitle>Wilhelm og Blomsterne*</toctitle>
    <indextitle>Wilhelm og Blomsterne</indextitle>
    <firstline>God Morgen I Skiönne!</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 154-57.</note>
-   </notes>
+   <source pages="154-157"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -3705,9 +3661,7 @@ men mere endnu med din Poesie!
    <toctitle>Drömmene</toctitle>
    <indextitle>Drömmene</indextitle>
    <firstline>Jeg drömte jeg var en Demant og sad</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 158-60.</note>
-   </notes>
+   <source pages="158-160"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -3785,9 +3739,9 @@ fordi jeg eengang har drömt om Dagen!
    <indextitle>Til Rimer</indextitle>
    <firstline>Rimer! du maa takke mig</firstline>
    <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 161-62.</note>
       <note><xref poem="oehlen2000010509"/>, en senere udgave af dette digt, findes under andre digte.</note>
    </notes>
+   <source pages="161-162"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -3830,9 +3784,9 @@ Du fikst <i>Genialitet!</i>
    <indextitle>Oldingen ved Werthers Grav</indextitle>
    <firstline>Aftenröden farver din Grav!</firstline>
    <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 163-66.</note>
       <note>Henviser til <a person="goethe">Goethes</a> roman <i>Die Leiden des jungen Werthers</i> (1775, da.: <i>Den unge Werthers lidelser</i>)</note>
    </notes>
+   <source pages="163-166"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -3927,9 +3881,7 @@ Du eller jeg?
    <toctitle>Rosen</toctitle>
    <indextitle>Rosen</indextitle>
    <firstline>Ved gamle Borg</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 167-68.</note>
-   </notes>
+   <source pages="167-168"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -3978,9 +3930,9 @@ som her mig holde.
    <indextitle>Til Apol</indextitle>
    <firstline>Du lange, laurbærkrandste Dreng!</firstline>
    <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 169-74.</note>
       <note><xref poem="oehlen2000010508"/>, en senere udgave af dette digt, findes under andre digte.</note>
    </notes>
+   <source pages="169-174"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -4137,9 +4089,7 @@ hvis Lyren du ei sönderriver!
    <toctitle>Anelsen</toctitle>
    <indextitle>Anelsen</indextitle>
    <firstline>Kammerat! Kammerat! afsted, afsted!</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 175-81.</note>
-   </notes>
+   <source pages="175-181"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -4318,9 +4268,7 @@ Hvorfor risler I med Maaneblod?
    <toctitle>Digteren i Leire-Lunden</toctitle>
    <indextitle>Digteren i Leire-Lunden</indextitle>
    <firstline>Phantasie! hvi river du mig</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 182-84.</note>
-   </notes>
+   <source pages="182-184"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -4390,9 +4338,9 @@ vil jeg synge og blusse og blegne og döe!
    <firstline>Det er Danmarks Höitidsdag!</firstline>
    <notes>
       <note>Den ,,simple, dierve Sang'' som Almindeligt Chor giver sig til at synge er af <a person="abrahamson">W.H.F. Abrahamson</a>.</note>
-      <note>Teksten følger <i>Digte</i> (1803), s. 185-92.</note>
    </notes>
    <keywords>abrahamson</keywords>
+   <source pages="185-192"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -4572,9 +4520,7 @@ Fred være med Eder Halleluja!
    <toctitle>Den elskende Bondeknös*</toctitle>
    <indextitle>Den elskende Bondeknös</indextitle>
    <firstline>För var jeg saa froe</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 193-97.</note>
-   </notes>
+   <source pages="193-197"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -4686,9 +4632,7 @@ og mit Hierte skrækkeligt banker!
    <toctitle>Födselsdagen</toctitle>
    <indextitle>Födselsdagen</indextitle>
    <firstline>Jeg vaagnede ved Nattergalens Slag</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 198-200.</note>
-   </notes>
+   <source pages="198-200"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -4752,9 +4696,9 @@ og takked Gud, fordi jeg var saa stum!
    <indextitle>Biergmands-Liv</indextitle>
    <firstline>Den over Jorden byder</firstline>
    <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 201-03.</note>
       <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2005060502"/>.</note>
    </notes>
+   <source pages="201-203"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -4823,9 +4767,9 @@ den glade Jordens Drot!
    <indextitle>Hædersqvad</indextitle>
    <firstline>Vildt skingre vor Röst over breden Bord</firstline>
    <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 204-07.</note>
       <note>Hyldesten gælder <a person="tode">Johan Clemens Tode (1736-1806)</a>, læge og forfatter.</note>
    </notes>
+   <source pages="204-207"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -4907,9 +4851,7 @@ skal drikke Herr Clemenz til Gammen!
    <toctitle>Aarstiderne*</toctitle>
    <indextitle>Aarstiderne</indextitle>
    <firstline>Du aldrig vil elske? Til Stella jeg taled</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 208-09.</note>
-   </notes>
+   <source pages="208-209"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -4957,9 +4899,7 @@ Hun sank til mit Bryst.
    <toctitle>Sköitelöberen</toctitle>
    <indextitle>Sköitelöberen</indextitle>
    <firstline>Fra Træet Rimens Blade</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 210-12.</note>
-   </notes>
+   <source pages="210-212"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -5030,9 +4970,7 @@ en Skye for Maanen staaer!
    <toctitle>Prologer</toctitle>
    <indextitle>Prologer</indextitle>
    <firstline>Velkommen! i den röde Morgenstund</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 215-21.</note>
-   </notes>
+   <source pages="215-221"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -5209,9 +5147,7 @@ for ei at forstyrre Illusionen.
    <toctitle>Manden og hans Kone</toctitle>
    <indextitle>Manden og hans Kone</indextitle>
    <firstline>Det er i Dag et deiligt Væ'r</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 222-24.</note>
-   </notes>
+   <source pages="222-224"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -5280,8 +5216,8 @@ Mine Sager imens jeg ordne vil.
    <firstline>Dybt Skoven bruser og Skyen gaaer</firstline>
    <notes>
       <note>Første to strofer er efter Schillers <xref type="translation" poem="schiller2001123101"/>.</note>
-      <note>Teksten følger <i>Digte</i> (1803), s. 224-28.</note>
    </notes>
+   <source pages="224-228"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -5408,9 +5344,7 @@ Det morer dog altid en stakkels Pige.
    <toctitle>Marias Canzone</toctitle>
    <indextitle>Marias Canzone</indextitle>
    <firstline>Da jeg imorges aabnede mit Öie</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 228-29.</note>
-   </notes>
+   <source pages="228-229"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -5476,9 +5410,7 @@ skal taust i Lunden tvende Hierter bæve.
    <toctitle>De Kiörende</toctitle>
    <indextitle>De Kiörende</indextitle>
    <firstline>Fra qvalmfulde Mure</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 230-31.</note>
-   </notes>
+   <source pages="230-231"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -5546,9 +5478,7 @@ vi ile til Latter og Spög.
    <toctitle>Mödende Chor af alt</toctitle>
    <indextitle>Mödende Chor af alt</indextitle>
    <firstline>Allons! Allons! Courage! Courage! Courage!</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 232-33.</note>
-   </notes>
+   <source pages="232-233"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -5594,9 +5524,7 @@ Allons! Allons! Courage! Courage! Courage!
    <toctitle>Spadseregang</toctitle>
    <indextitle>Spadseregang</indextitle>
    <firstline>Ih hillemænd, skal vi træffes her?</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 233-35.</note>
-   </notes>
+   <source pages="233-235"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -5688,9 +5616,7 @@ Den Fornöielse er mere solid.
    <toctitle>Dandseren paa Voltigerlinien</toctitle>
    <indextitle>Dandseren paa Voltigerlinien</indextitle>
    <firstline>I Cirkelbue</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 236-38.</note>
-   </notes>
+   <source pages="236-238"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -5771,9 +5697,7 @@ Nu begynder nok deres Comedier.
    <toctitle>En Jödedreng</toctitle>
    <indextitle>En Jödedreng</indextitle>
    <firstline>Deilige Pidskebaand! röde og blaae</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 238-41.</note>
-   </notes>
+   <source pages="238-241"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -5857,9 +5781,7 @@ Forkiöl Dem ikke, De er saa varm!
    <toctitle>Marionetspillet</toctitle>
    <indextitle>Marionetspillet</indextitle>
    <firstline>Höistærede Publikum! her vil</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 241-55.</note>
-   </notes>
+   <source pages="241-255"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -6273,9 +6195,7 @@ maa I kiöre omsonst.
    <toctitle>Manden ved Kilden</toctitle>
    <indextitle>Manden ved Kilden</indextitle>
    <firstline>Det er saa lummert og saa tungt</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 255-60.</note>
-   </notes>
+   <source pages="255-260"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -6414,9 +6334,7 @@ Du vil nok narre mig!
    <toctitle>Jöderne under Træet</toctitle>
    <indextitle>Jöderne under Træet</indextitle>
    <firstline>Es war ein alter Mann</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 260-62.</note>
-   </notes>
+   <source pages="260-262"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -6476,9 +6394,7 @@ Du vil nok narre mig!
    <toctitle>Harlekin og Poppe</toctitle>
    <indextitle>Harlekin og Poppe</indextitle>
    <firstline>Mens Pöbelen hisset vildt sig fryder</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 262-69.</note>
-   </notes>
+   <source pages="262-269"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -6670,6 +6586,7 @@ og anvender Jer Forædling i det praktiske Liv.
    <notes>
       <note>Teksten følger <i>Digte</i> (1803), s. 269-73 (men bemærk: side 270-71 er oversprunget i originalens nummerering)</note>
    </notes>
+   <source pages="269-273"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -6731,9 +6648,7 @@ Det kommer af det hun er saa smuk!
    <toctitle>Den Blinde</toctitle>
    <indextitle>Den Blinde</indextitle>
    <firstline>Hist sidder en gammel Mand, som er blind</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 273-75.</note>
-   </notes>
+   <source pages="273-275" facsimile-pages="283-285"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -6797,9 +6712,7 @@ Mod den gamle Mand er vi lykkelige!
    <toctitle>Sang fra Teltet</toctitle>
    <indextitle>Sang fra Teltet</indextitle>
    <firstline>See hvor Folk staaer hist om Teltet i Klynger</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 275-78.</note>
-   </notes>
+   <source pages="275-278" facsimile-pages="285-288"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -6895,9 +6808,7 @@ og af det jeg har drukket for meget i Aften!
    <toctitle>En gammel Mand med en Perspektivkasse</toctitle>
    <indextitle>En gammel Mand med en Perspektivkasse</indextitle>
    <firstline>I kiere Venner! kommer hid</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 278-84.</note>
-   </notes>
+   <source pages="278-284" facsimile-pages="288-294"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -7060,9 +6971,7 @@ kun <i>Anelser</i> om dunkle Tid.
    <toctitle>Gyngesang</toctitle>
    <indextitle>Gyngesang</indextitle>
    <firstline>Op og ned!</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 285-87.</note>
-   </notes>
+   <source pages="285-287" facsimile-pages="295-297"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -7133,9 +7042,7 @@ kun <i>Anelser</i> om dunkle Tid.
    <toctitle>Idyl</toctitle>
    <indextitle>Idyl</indextitle>
    <firstline>Her, under Egenes Lye, hvor Vinden vifter saa kiöligt</firstline>
-   <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 287-91.</note>
-   </notes>
+   <source pages="287-291" facsimile-pages="297-301"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -7241,9 +7148,9 @@ Sluk Lysene ud og Dören luk!
    <indextitle>Natur-Mysterie</indextitle>
    <firstline>Den vilde Stöi nu lyder ikke længer</firstline>
    <notes>
-      <note>Teksten følger <i>Digte</i> (1803), s. 292-94.</note>
       <note>Titlen ,,Natur-Mysterie'' er redaktionel.</note>
    </notes>
+   <source pages="292-294" facsimile-pages="302-304"/>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
