@@ -49,6 +49,7 @@ end
 @performed = nil;
 @event = nil
 @type = 'poem'
+@variant = nil
 
 def printHeader()
     if @header_printed
@@ -130,7 +131,9 @@ def printPoem()
     }
     puts "    </subtitle>"
   end
-  puts "    <firstline>#{@firstline}</firstline>"
+  if (@type != 'prose')
+    puts "    <firstline>#{@firstline}</firstline>"
+  end
   if @notes.length > 0
     puts "    <notes>"
     @notes.each { |noteline|
@@ -158,6 +161,9 @@ def printPoem()
     end
     puts "    </dates>"
   end
+  if @variant
+    puts "    <variant>#{@variant}</variant>"
+  end
   if @keywords
     puts "    <keywords>#{@keywords}</keywords>"
   end
@@ -184,6 +190,7 @@ def printPoem()
   @performed = nil
   @event = nil
   @type = 'poem'
+  @variant = nil
   @poemcount += 1
 end
 
@@ -204,6 +211,15 @@ def printEndSection()
 end
 
 File.readlines(ARGV[0]).each do |line|
+  if line =~ /<note>.*\] .*<\/note>/
+    @found_corrections = true
+  end
+  if line =~ /<note>\* .*<\/note>/
+    @found_poet_notes = true
+  end
+end
+
+File.readlines(ARGV[0]).each do |line|
   line_before = line
   while line =~ /\t/
       line = line.gsub(/\t/,'    ')
@@ -218,7 +234,7 @@ File.readlines(ARGV[0]).each do |line|
   if (line =~ /=[^"]/)
       STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal ="
   end
-  # Håndter {..}
+  # Håndter {..} TODO: Fang manglende }
   m = /{(.*?):(.*)}/.match(line)
   if (!m.nil?)
       l = m[2]
@@ -325,6 +341,8 @@ File.readlines(ARGV[0]).each do |line|
       @written = line[9..-1].strip
     elsif line.start_with?("BEGIVENHED:")
       @event = line.gsub(/^BEGIVENHED:/,'').strip
+    elsif line.start_with?("VARIANT:")
+      @variant = line[8..-1].strip
     elsif line.start_with?("TYPE:")
       @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
     elsif line =~ /^[A-Z]*:/

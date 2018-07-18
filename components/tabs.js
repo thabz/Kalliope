@@ -456,7 +456,7 @@ export class PoetTabs extends React.Component<PoetTabsProps> {
       {
         id: 'works',
         title: _('Værker', lang),
-        hide: !poet.has_works,
+        hide: !poet.has_works && !poet.has_artwork,
         url: Links.worksURL(lang, poet.id),
       },
       {
