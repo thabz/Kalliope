@@ -11,9 +11,9 @@
       <picture type="titlepage" src="1831-p1.jpg">Titelbladet til <i>Phantasier og Skizzer</i> (1831).<br/>Phantasier og Skizzer. // Af / H. C. Andersen. // Kjöbenhavn. / Paa Forfatterens Forlag. / 1831.</picture>
       <picture src="1831-p2.jpg">Tilegnelsesblad:<br/>Høi- og Velbaarne Hr. Etatsraad / H. C. Ørsted, / Ridder af Dannebrogen og Dannebrogsmand, Professor ved Kjøbenhavns Universitet etc. / af den inderligste Taknemmelighed for hans hjertelige Opmuntring og faderlige Raad, / med Hengivenhed og Høiagtelse / helliget / af / Forfatteren.</picture>
    </pictures>
+   <source facsimile="11530803945C_color" facsimile-pages-num="154" facsimile-pages-offset="10">H. C. Andersen: <i>Phantasier og Skizzer</i>, Forfatterens Forlag, Kbh., 1831.</source>
    <quality>korrektur1,kilde,side</quality>
    <keywords>oersted</keywords>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
@@ -24,10 +24,10 @@
    <indextitle>Til Læserne</indextitle>
    <nofirstline/>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side ii.</note>
       <note>Citerer, ligesom mottoet til Oehlenschlägers <i>Digte</i> (1803), <xref poem="goethe2001032801"/>.</note>
    </notes>
    <keywords>oehlenschlaeger</keywords>
+   <source pages="ii" facsimile-pages="10"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -45,9 +45,9 @@ Lob und Tadel muß ja seyn.
    <indextitle>Til Recensenterne</indextitle>
    <nofirstline/>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side ii.</note>
       <note><i>Gjenganger-Breve</i> blev udgivet anonymt i 1830 af <a poet="hertzh">Henrik Hertz</a>, der heri gør godt og grundigt grin med H.C. Andersen. Citatet stammer fra <xref poem="hertz201802208,67-79"/>.</note>
    </notes>
+   <source pages="ii" facsimile-pages="10"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -75,9 +75,7 @@ Og frelse hvad der bli'er tilbage.''
    <toctitle>Hvad jeg elsker</toctitle>
    <indextitle>Hvad jeg elsker</indextitle>
    <firstline>Jeg elsker Havet, naar det stormer vildt!</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 1-2.</note>
-   </notes>
+   <source pages="1-2"/>
    <keywords>oehlenschlaeger</keywords>
    <quality>korrektur1,kilde,side</quality>
 </head>
@@ -122,12 +120,10 @@ Og Tanken om den store Evighed! -
    <indextitle>Havblik</indextitle>
    <firstline>Har Du seet Havet i en klar og stille Nat</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 3-4.</note>
       <note>Anakreon-mottoet betyder ,,Se, hvor havets bølge skal opløses ved havblik.''</note>
+      <!-- TODO: Indtast den græske tekst. -->
    </notes>
-   <pictures>
-      <picture src="andersen2002110704.jpg">Faksimile af digtets første side, med det oldgræske motto.</picture>
-   </pictures>
+   <source pages="3-4"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -174,9 +170,9 @@ Hiint store Faderbillede, vor Gud!
    <indextitle>Avis aux lectrices</indextitle>
    <firstline>Jeg savner noget! - skal jeg Navnet sige?</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 5-6.</note>
       <note>Mottoets "Vers'" er rettet fra "Verse'".</note>
    </notes>
+   <source pages="5-6"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -221,9 +217,7 @@ Thi jeg slaaer op, saa snart Du glemmer det!
    <toctitle>Den fremmede Fugl</toctitle>
    <indextitle>Den fremmede Fugl</indextitle>
    <firstline>Seer Du Huset med de røde Bjelker i den hvide Muur?</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 7-13.</note>
-   </notes>
+   <source pages="7-13"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -340,15 +334,15 @@ Og de store, hvide Vinger voxne er' fra Skuldren frem.
    <indextitle>Bruden i Rørvig Kirke</indextitle>
    <firstline>Klart skinner Maanen paa den nøgne Kyst</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 14-19.</note>
       <note>Mottoet er en (ret tam) oversættelse af Romeos ,,Some consequence yet hanging in the stars / Shall bitterly begin his fearful date / With this night's revels'' (1.4.107-09), sandsynligvis via tysk.</note>
    </notes>
+   <source pages="14-19"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-        <nonum><small>- - - en Skjæbne, som end hænger</small></nonum>
-        <nonum><small>I Stjernerne, begynde skal i Nat.</small></nonum>
-                                                  <nonum><i>Shakspear's</i> Romeo og Julie</nonum>
+<nonum><right><small>- - - en Skjæbne, som end hænger</small></right></nonum>
+<nonum><right><small>I Stjernerne, begynde skal i Nat.</small></right></nonum>
+<nonum><right><i>Shakspear's</i> Romeo og Julie</right></nonum>
 
 <nonum><center><b>I</b></center></nonum>
 Klart skinner Maanen paa den nøgne Kyst.
@@ -487,9 +481,9 @@ Og roligt skinner Maanen henad den hvide Strand.
    <indextitle>Taaren</indextitle>
    <firstline>Mit Hjerte er en Himmel graae</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 20.</note>
       <note>Guldberg] Guldber .</note>
    </notes>
+   <source pages="20"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -524,9 +518,7 @@ At han en <i>Verden</i> glemme vil?
    <toctitle>Havfruen ved Samsøe (et Sagn)</toctitle>
    <indextitle>Havfruen ved Samsøe</indextitle>
    <firstline>Det er sildigt alt paa Aft'nen, Stormen stiger meer og meer</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 21-25.</note>
-   </notes>
+   <source pages="21-25"/>
    <keywords>christian4</keywords>
    <quality>korrektur1,kilde,side</quality>
 </head>
@@ -617,9 +609,9 @@ Men Skum der sees paa Bølgen og paa det brune Tang.
    <indextitle>Luftaanden</indextitle>
    <firstline>Mellem det Dybe og Høie</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 26-27.</note>
       <note>Mottoet er fra Goethes <xref poem="goethe2000082938"/>.</note>
    </notes>
+   <source pages="26-27"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -667,9 +659,9 @@ Da svulmede hans Bryst, og i Toner det klang.
    <toctitle>Den skjønne Grammatica, eller Badens latinske Grammatik (Capriccio)</toctitle>
    <indextitle>Den skjønne Grammatica, eller: Badens latinske Grammatik</indextitle>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 28-39.</note>
       <note>Ord i fed er sat med fed antikva i orig.; noten med foranstillet asterisk er forfatterens egen.</note>
    </notes>
+   <source pages="28-39"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -745,9 +737,9 @@ men hun sang, som sin Svanesang, hele den romerske Almanak, bad endnu et lille <
    <indextitle>Jylland</indextitle>
    <firstline>Da Oltid kun var nyfødt Skum paa Tidens stolte Vove</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 40-43.</note>
       <note>Mottoet citerer <i>Sven Grathe</i> (1825) af C.J. Boye; se dennes <xref poem="boyecj2002010101"/>; dette digt citeres ofte i lidt afvigende former.</note>
    </notes>
+   <source pages="40-43"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -803,9 +795,9 @@ Mens Fredens Blomster voxe smukt om Heltens Bautastene.
    <indextitle>Hjertetyven</indextitle>
    <firstline>Bekjendt er Amor jo, det slemme Skarn!</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 44-47.</note>
       <note>Mottoet er fra <i>Kierlighed uden Strømper</i>, <a poem="1999022104,115-116">Femte Optog, Fierde Optrin</a>.</note>
    </notes>
+   <source pages="44-47"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -900,9 +892,7 @@ Thi hjerteløs, det kan jeg ikke være!
    <toctitle>Spillemanden</toctitle>
    <indextitle>Spillemanden</indextitle>
    <firstline>I Landsbyen gaaer det saa lystigt til</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 48-49.</note>
-   </notes>
+   <source pages="48-49"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -945,9 +935,7 @@ Jeg selv er en fattig Spillemand.
    <toctitle>Aftendæmring</toctitle>
    <indextitle>Aftendæmring</indextitle>
    <firstline>See, Aftnen er saa stille, og Himlen er saa blaae!</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 50.</note>
-   </notes>
+   <source pages="50"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -978,9 +966,7 @@ I Hjertet er der stille, og <i>der</i> er Himlen blaae!
    <toctitle>Bøgetræet</toctitle>
    <indextitle>Bøgetræet</indextitle>
    <firstline>Hist staaer et Bøgetræ paa Høien ene</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 51-52.</note>
-   </notes>
+   <source pages="51-52"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1021,9 +1007,9 @@ Hør kun! - forstod' vi bare Sproget!
    <indextitle>Børnene og den graa Morlille</indextitle>
    <firstline>I Hjertet sidder en lille Person</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 53-55.</note>
       <note>Andersen eller trykkeren har været lidt sløset med versaliseringen i dette digt, det er ikke rettet.</note>
    </notes>
+   <source pages="53-55"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1109,9 +1095,7 @@ Nei ung og blomstrende hæver hun sig
    <toctitle>Phantasiebillede</toctitle>
    <indextitle>Phantasiebillede</indextitle>
    <firstline>Uden Græs og Blomster, uden høie Fjelde</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 56-57.</note>
-   </notes>
+   <source pages="56-57"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1162,9 +1146,7 @@ Den stiger - og brister nu bort.
    <toctitle>Den nye Sprøite</toctitle>
    <indextitle>Den nye Sprøite</indextitle>
    <firstline>En Sprøite har vi faaet nu</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 58-59.</note>
-   </notes>
+   <source pages="58-59"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1207,9 +1189,9 @@ Thi al min Tanke er i Sprøiten!
    <indextitle>Hytten</indextitle>
    <firstline>Hvor Bølgen høit mod Kysten slaaer</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 60.</note>
       <note>Mottet er <xref poem="baggesen2002100709"/> fra digtkredsen <i>Balders Igjenkomst, eller Digte til Nanna</i>, trykt i Baggesens tidsskrift <i>Danfana</i>. Andersen har sandsynligvis læst det lille digt i tredje bind af Baggesens <i>Danske Værker</i>, der udkom i 1828. Samme digters <xref poem="baggesen2002031204"/> (også fra tredje bind af <i>Danske Værker</i>) kan meget vel have inspireret Andersen.</note>
    </notes>
+   <source pages="60"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1244,10 +1226,10 @@ Her svulmer Hjerte kun mod Hjerte.
    <indextitle>Skildvagten</indextitle>
    <firstline>Aft'nen er taaget - døsigt Lygterne brænde</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 61-65.</note>
       <note>HCA rettede siden mottoattributionen til ,,Victor Hugo''.</note>
       <note>* Skrevet i Foraaret 1830.</note>
    </notes>
+  <source pages="61-65"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1378,9 +1360,9 @@ Husk, gamle Graaskjæg, Du skal presentere!''<note>presentere!''] presentere! - 
    <indextitle>Hjemvee</indextitle>
    <firstline>Om Aft'nen i det lille, snevre Kammer</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 66-67.</note>
       <note>,,Jean Poul'', læs: ,,Jean Paul''.</note>
    </notes>
+   <source pages="66-67"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1416,9 +1398,7 @@ Et Hjem, hvis Navn jeg ei kan stamme frem.
    <toctitle>Den jydske Hede i Regnveir</toctitle>
    <indextitle>Den jydske Hede i Regnveir</indextitle>
    <firstline>Ak, Himlen staaer med Graat i Graat!</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 68-69.</note>
-   </notes>
+   <source pages="68-69"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1469,9 +1449,7 @@ Mon hun er alt i Hullet sat?
    <toctitle>Hvile paa Heden</toctitle>
    <indextitle>Hvile paa Heden</indextitle>
    <firstline>Sørgende, stor ligger foran os</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 70-72.</note>
-   </notes>
+   <source pages="70-72"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>grundtvig</keywords>
 </head>
@@ -1556,9 +1534,7 @@ Og viser os Marmor paa Heden.
    <toctitle>Drengen og Moderen paa Heden</toctitle>
    <indextitle>Drengen og Moderen paa Heden</indextitle>
    <firstline>O siig mig dog, kjær Moder, hvad aldrig Du har sagt</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 73-74.</note>
-   </notes>
+   <source pages="73-74"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1602,9 +1578,7 @@ Nu, bliv ei bleg om Kinden! - Nu! - vil Du bare gaae!
    <toctitle>Længsel med Potterne</toctitle>
    <indextitle>Længsel med Potterne</indextitle>
    <firstline>Hist hvor man kun seer Lyngen groe</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 75-76.</note>
-   </notes>
+   <source pages="75-76"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1642,9 +1616,9 @@ Og Alt, hvad han kun saae i Drømme.
    <indextitle>Phantasie ved Vesterhavet</indextitle>
    <firstline>Er disse høie, sorte Masser Fjelde?</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 77-78.</note>
       <note>Et originalmanuskript til dette digt er bevaret, med otte ekstra linjer som altså ikke kom med i den endelige udgave, se <xref poem="andersen1831a0"/>.</note>
    </notes>
+   <source pages="77-78"/>
    <keywords>ingemann</keywords>
    <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1701,9 +1675,9 @@ Med Dig og Stormen, jeg min Gud vil love!
    <indextitle>Malerie fra Jyllands Vestkyst</indextitle>
    <firstline>Man seer ei Træ, ei Busk, selv Lyngen vil ei groe</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 79-81.</note>
       <note>Mottoet har i originalen ,,stàr'' for ,,står'', hvad udelukkende skyldes typografisk afmagt over for det dengang udanske bogstav å.</note>
    </notes>
+   <source pages="79-81"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1784,9 +1758,9 @@ Da ligger Stranden broget med Vare og med Stads,
    <indextitle>Digterskibet</indextitle>
    <firstline>Midt i det Uendelige</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 82-85.</note>
       <note>,,Jean Poul'', læs ,,Jean Paul''.</note>
    </notes>
+   <source pages="82-85"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1883,9 +1857,7 @@ Men fra Himlen funkler Stjernen
    <toctitle>Manden fra Paradiis (En komisk Fortælling)</toctitle>
    <indextitle>Manden fra Paradiis.</indextitle>
    <firstline>Der var engang en Enke</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 86-92.</note>
-   </notes>
+   <source pages="86-92"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2071,9 +2043,7 @@ Men, <i>de kan bedre tie stille!</i>
    <toctitle>Stormen</toctitle>
    <indextitle>Stormen</indextitle>
    <firstline>Som i en Søvn ligger Luften og Havet</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 93-97.</note>
-   </notes>
+   <source pages="93-97"/>
    <keywords>oehlenschlaeger</keywords>
    <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2188,9 +2158,9 @@ Hvad Hjertets Brændinger tone?
    <indextitle>Cometen 1834</indextitle>
    <firstline>Lad Verden tee sig nok saa lærd, foruden som forinden</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 98-102.</note>
       <note>* Fremsagt af Jfr. <i>Jorgensen</i> paa Hr. og Mad. <i>Winsløws</i> Aften-Underholdning, paa det Kgl. Theater, den 7de Marts 1830.</note>
    </notes>
+   <source pages="98-102"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2320,9 +2290,9 @@ O lader os alle Cometen prise!
    <indextitle>Lille Lise ved Brønden</indextitle>
    <firstline>Tæt ved Huset Brønden staaer</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 103-04.</note>
       <note>,,Jean Poul'', læs ,,Jean Paul''.</note>
    </notes>
+  <source pages="103-104"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2371,9 +2341,9 @@ End min dumme Dukke her!''
    <indextitle>Poetisk Note til Digtet: Erindringblad fra Hovedstaden</indextitle>
    <firstline>Alverden mig belærer, man mener det saa godt!</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 105-06.</note>
       <note>* Da Digtet selv allerede er mere bekjendt og læst, end denne ubetydelighed fortjener, vil jeg ikke her byde Læseren det anden Gang.</note>
    </notes>
+   <source pages="105-106"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2414,9 +2384,7 @@ Snart skal jeg dem benytte, og det ei blot af Pligt!
    <toctitle>Reise-Capriccio</toctitle>
    <indextitle>Reise-Capriccio</indextitle>
    <firstline>Farvel, du stolte Hav med al din Vælde!</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 107.</note>
-   </notes>
+   <source pages="107"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2449,9 +2417,7 @@ Piger, som ingen Digter kan tegne,
    <toctitle>Fyen</toctitle>
    <indextitle>Fyen</indextitle>
    <firstline>Ved Tanken om min Føde-Ø</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 108.</note>
-   </notes>
+   <source pages="108"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2476,9 +2442,7 @@ Thi ellers havde Øen to,
    <toctitle>Kjærlighed</toctitle>
    <indextitle>Kjærlighed</indextitle>
    <firstline>See Solen blusser saa elskovsrød!</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 109-10.</note>
-   </notes>
+   <source pages="109-110"/>
    <keywords>oehlenschlaeger</keywords>
    <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2516,9 +2480,7 @@ Og Hjertet troer paa sin Skaber.
    <toctitle>Digteren og Amor</toctitle>
    <indextitle>Digteren og Amor</indextitle>
    <firstline>Jeg min Kjærlighed maa dølge</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 111-12.</note>
-   </notes>
+   <source pages="111-112"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2573,9 +2535,9 @@ Der skal jeg nok være Tolk.
    <indextitle>Hjertets Melodier</indextitle>
    <firstline>To brune Øine jeg nyelig saae</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 113-17.</note>
       <note><b>III</b>, l. 1: ,,lege'', læs ,,læge''.</note>
    </notes>
+   <source pages="113-117"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2682,9 +2644,7 @@ Og Perlen koste vil sin Skabning Livet.
    <toctitle>Det Første og det Sidste</toctitle>
    <indextitle>Det Første og det Sidste</indextitle>
    <firstline>Et Syn jeg saae paa Tankens stærke Strøm</firstline>
-   <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 118-20.</note>
-   </notes>
+   <source pages="118-120"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2764,9 +2724,9 @@ Og Himlen sang: ,,<i>Halleluja, vor Fader!</i>''
    <indextitle>Pauli 1. Cor. 15, 42-44</indextitle>
    <firstline>Naar Jordelarven brister</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 121-23.</note>
       <note>Titlen og mottoet henviser til <xref bibel="bibel1korint15,42-44"/>.</note>
    </notes>
+   <source pages="121-123"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2828,9 +2788,9 @@ Jeg lærte det af hende,
    <indextitle>Studier efter Naturen</indextitle>
    <firstline>Solen skinner i Naboens Gaard, Husene ere saa lave</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 124-28.</note>
       <note>De tre mottoer er fra hhv. Goethes <xref poem="goethe2017082101,7-10"/>, Chamissos <xref poem="chamisso2017082101,1-2"/> og Christian Winthers <xref poem="winter1999070504,75-76"/>.</note>
    </notes>
+   <source pages="124-128"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2951,9 +2911,9 @@ Hvor ingen Blomster voxe for deres Kjærlighed.
    <indextitle>Livet en Drøm</indextitle>
    <firstline>Du kjender Grunden til min dybe Smerte</firstline>
    <notes>
-      <note>Teksten følger <i>Phantasier og Skizzer</i> (1831), side 129-34.</note>
       <note>Mottoets attribution har ved en fejl ,,bon'' for ,,von''.</note>
    </notes>
+   <source pages="129-134"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

@@ -125,7 +125,7 @@ const redirects = [
   },
 ];
 
-const cleanUpRedirectURLRegExp = /[^0-9a-zA-Z\-_\/]/;
+const cleanUpRedirectURLRegExp = /[^0-9a-zA-Z\-_\/]/g;
 
 app.prepare().then(() => {
   createServer((req, res) => {
