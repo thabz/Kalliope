@@ -6,6 +6,7 @@ const async = require('async');
 const path = require('path');
 const sharp = require('sharp');
 const CommonData = require('../../pages/helpers/commondata.js');
+const deasync = require('deasync');
 
 const safeMkdir = dirname => {
   try {
@@ -318,6 +319,16 @@ const htmlToXml = (
   return lines;
 };
 
+const imageSizeAsync = (filename, callback) => {
+  sharp(filename)
+    .metadata()
+    .then(metadata => {
+      callback(null, { width: metadata.width, height: metadata.height });
+    });
+};
+
+const imageSizeSync = deasync(imageSizeAsync);
+
 const buildThumbnails = (topFolder, isFileModified) => {
   let resizeImageQueue = async.queue((task, callback) => {
     sharp(task.inputfile)
@@ -390,5 +401,6 @@ module.exports = {
   safeGetText,
   safeGetAttr,
   replaceDashes,
+  imageSizeSync,
   buildThumbnails,
 };
