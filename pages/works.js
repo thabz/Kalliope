@@ -85,46 +85,83 @@ class ArtworkList extends React.Component<ArtworkListProps> {
       });
     };
 
-    const renderedList = sortArtworks(artwork).map((picture, i) => {
+    const sortedArtworks = sortArtworks(artwork);
+
+    const maxHeight = 30; // Percentage of width
+    const viewportWidth = 100; // Max width (percentage)
+    const rows = [];
+    let row = [];
+    let currentWidth = 0;
+    sortedArtworks.forEach(picture => {
+      const width = (maxHeight / picture.size.height) * picture.size.width;
+      row.push({ picture, width });
+      currentWidth += width;
+      if (currentWidth >= viewportWidth) {
+        // Scale widths in row down, so that the sum is 100.
+        const overflow = (currentWidth - viewportWidth) / row.length;
+        const factor = viewportWidth / currentWidth;
+        row.forEach(item => {
+          item.width *= factor;
+        });
+        rows.push(row);
+        row = [];
+        currentWidth = 0;
+      }
+    });
+    row.length && rows.push(row);
+
+    const renderedRows = rows.map(row => {
+      let rowWidth = 0;
+      row.forEach(item => {
+        rowWidth += item.width;
+      });
+      const renderedList = row.map((item, i) => {
+        const picture = item.picture;
+        const width = item.width;
+        return (
+          <div
+            key={'container-' + picture.src}
+            style={{ flexBasis: width + '%' }}>
+            <Picture
+              key={'picture-' + picture.src}
+              pictures={[picture]}
+              contentLang={picture.content_lang || 'da'}
+              lang={lang}
+            />
+          </div>
+        );
+      });
       return (
-        <div key={'container-' + picture.src}>
-          <Picture
-            key={'picture-' + picture.src}
-            pictures={[picture]}
-            contentLang={picture.content_lang || 'da'}
-            lang={lang}
-          />
+        <div>
+          <div className="artwork-container">
+            {renderedList}
+            <style jsx>{`
+              :global(.artwork-container) {
+                display: flex;
+              }
+              :global(.artwork-container > div) {
+                flex-basis: 25%;
+              }
+              :global(.artwork-container > div > *) {
+                padding-bottom: 40px;
+              }
+              @media (max-width: 800px) {
+                :global(.artwork-container > div) {
+                  flex-basis: 33.333333%;
+                }
+              }
+              @media (max-width: 600px) {
+                :global(.artwork-container > div) {
+                  flex-basis: 50%;
+                }
+              }
+            `}</style>
+          </div>
+          <div>Row width: {rowWidth}</div>
         </div>
       );
     });
-    return (
-      <div className="artwork-container">
-        {renderedList}
-        <style jsx>{`
-          :global(.artwork-container) {
-            display: flex;
-            flex-wrap: wrap;
-          }
-          :global(.artwork-container > div) {
-            flex-basis: 25%;
-          }
-          :global(.artwork-container > div > *) {
-            margin-right: 30px;
-            padding-bottom: 40px;
-          }
-          @media (max-width: 800px) {
-            :global(.artwork-container > div) {
-              flex-basis: 33.333333%;
-            }
-          }
-          @media (max-width: 600px) {
-            :global(.artwork-container > div) {
-              flex-basis: 50%;
-            }
-          }
-        `}</style>
-      </div>
-    );
+    return renderedRows;
   }
 }
 type WorksProps = {
