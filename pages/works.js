@@ -85,14 +85,38 @@ class ArtworkList extends React.Component<ArtworkListProps> {
       });
     };
 
+    const rowWidth = items => {
+      let width = 0;
+      items.forEach(item => {
+        width += item.width;
+      });
+      return width;
+    };
+
+    const rowHeight = items => {
+      let height = 0;
+      items.forEach(item => {
+        if (item.picture != null) {
+          height =
+            (item.picture.size.height / item.picture.size.width) * item.width;
+        }
+      });
+      return height;
+    };
+
     const sortedArtworks = sortArtworks(artwork);
 
-    const maxHeight = 30; // Percentage of width
+    const maxHeight = 33; // Percentage of width
+    const gutterWidth = maxHeight / 10;
     const viewportWidth = 100; // Max width (percentage)
     const rows = [];
     let row = [];
     let currentWidth = 0;
-    sortedArtworks.forEach(picture => {
+    sortedArtworks.forEach((picture, i) => {
+      if (row.length > 0) {
+        row.push({ width: gutterWidth });
+        currentWidth += gutterWidth;
+      }
       const width = (maxHeight / picture.size.height) * picture.size.width;
       row.push({ picture, width });
       currentWidth += width;
@@ -103,31 +127,52 @@ class ArtworkList extends React.Component<ArtworkListProps> {
         row.forEach(item => {
           item.width *= factor;
         });
-        rows.push(row);
+        rows.push({ items: row, width: rowWidth(row), height: rowHeight(row) });
         row = [];
         currentWidth = 0;
       }
     });
-    row.length && rows.push(row);
+    row.length &&
+      rows.push({ items: row, width: rowWidth(row), height: rowHeight(row) });
+
+    // Sidste række er præcis 33 høj hvis den ikke er fyldt ud. Juster dens widths
+    // så højden matcher gennemsnittet af de andre rækker - af æstetiske hensyn.
+    if (rows.length > 1 && rows[rows.length - 1].width < 99) {
+      let avgHeight = 0;
+      let num = 0;
+      rows.forEach((row, i) => {
+        if (i < rows.length - 1) {
+          avgHeight += row.height;
+          num += 1;
+        }
+      });
+      avgHeight /= num;
+      const factor = avgHeight / maxHeight;
+      const lastRow = rows[rows.length - 1];
+      lastRow.items.forEach(item => {
+        item.width *= factor;
+      });
+      lastRow.height = rowHeight(lastRow.items);
+    }
 
     const renderedRows = rows.map(row => {
-      let rowWidth = 0;
-      row.forEach(item => {
-        rowWidth += item.width;
-      });
-      const renderedList = row.map((item, i) => {
+      const renderedList = row.items.map((item, i) => {
         const picture = item.picture;
         const width = item.width;
-        return (
-          <div
-            key={'container-' + picture.src}
-            style={{ flexBasis: width + '%' }}>
+        let pictureRendered = null;
+        if (picture != null) {
+          pictureRendered = (
             <Picture
               key={'picture-' + picture.src}
               pictures={[picture]}
               contentLang={picture.content_lang || 'da'}
               lang={lang}
             />
+          );
+        }
+        return (
+          <div key={'container-' + i} style={{ flexBasis: width + '%' }}>
+            {pictureRendered}
           </div>
         );
       });
@@ -157,7 +202,6 @@ class ArtworkList extends React.Component<ArtworkListProps> {
               }
             `}</style>
           </div>
-          <div>Row width: {rowWidth}</div>
         </div>
       );
     });
