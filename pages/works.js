@@ -159,7 +159,7 @@ class ArtworkList extends React.Component<ArtworkListProps> {
         lastRow.height = rowHeight(lastRow.items);
       }
 
-      const renderedRows = rows.map(row => {
+      const renderedRows = rows.map((row, j) => {
         const renderedList = row.items.map((item, i) => {
           const picture = item.picture;
           const width = item.width;
@@ -182,7 +182,7 @@ class ArtworkList extends React.Component<ArtworkListProps> {
         });
         const className = 'artwork-container artwork-container-' + maxHeight;
         return (
-          <div>
+          <div key={j + className}>
             <div className={className}>{renderedList}</div>
           </div>
         );
@@ -192,9 +192,9 @@ class ArtworkList extends React.Component<ArtworkListProps> {
 
     return (
       <div>
-        {renderWithMaxHeight(33)}
-        {renderWithMaxHeight(50)}
-        {renderWithMaxHeight(75)}
+        <div>{renderWithMaxHeight(33)}</div>
+        <div>{renderWithMaxHeight(50)}</div>
+        <div>{renderWithMaxHeight(75)}</div>
         <style jsx>{`
           :global(.artwork-container) {
             display: flex;
