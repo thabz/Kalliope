@@ -117,10 +117,10 @@ class News extends React.Component<NewsProps> {
 
     const items = news.filter((_, i) => i < 5).map((item, i) => {
       const { date, content_html, content_lang, title } = item;
-
+      const renderedTitle = title == null ? null : <h3>{title}</h3>;
       return (
         <div className="news-item" key={date + i}>
-          <h3>{title}</h3>
+          {renderedTitle}
           <div className="news-body">
             <TextContent
               contentHtml={content_html}
