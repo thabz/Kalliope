@@ -141,7 +141,7 @@ class News extends React.Component<NewsProps> {
               margin-bottom: 50px;
             }
 
-            div.news-item h3 {
+            :global(div.news-item h3) {
               font-weight: lighter;
               font-size: 1.3em;
               margin: 0 0 20px 0;
