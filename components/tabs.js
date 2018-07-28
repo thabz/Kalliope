@@ -209,6 +209,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
               ref={domElement => {
                 this.searchField = domElement;
               }}
+              title={placeholder}
               defaultValue={query}
               className="search-field"
               placeholder={placeholder}

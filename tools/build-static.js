@@ -25,6 +25,7 @@ const {
   safeGetText,
   safeGetAttr,
   replaceDashes,
+  imageSizeSync,
   buildThumbnails,
 } = require('./libs/helpers.js');
 
@@ -101,12 +102,12 @@ const load_timeline = filename => {
       is_history_item: true,
     };
     if (type === 'image') {
-      const onError = (message) => {
+      const onError = message => {
         throw `${filename}: ${message}`;
-      }
+      };
       const pictureNode = event.get('picture');
       if (pictureNode == null) {
-        onError('indeholder event med type image uden <picture>')
+        onError('indeholder event med type image uden <picture>');
       }
       const picture = get_picture(pictureNode, '/static', collected, onError);
       data.src = picture.src;
@@ -302,12 +303,12 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
       primary,
     };
   } else if (ref != null) {
-    if (ref.indexOf("/") === -1) {
+    if (ref.indexOf('/') === -1) {
       onError(`fandt en ulovlig ref "${ref}" uden mappe-angivelse`);
     }
     const artwork = collected.artwork.get(ref);
     if (artwork == null) {
-        onError(`fandt en ref "${ref}" som ikke matcher noget kendt billede.`);
+      onError(`fandt en ref "${ref}" som ikke matcher noget kendt billede.`);
     }
     const artist = collected.poets.get(artwork.artistId);
     const description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
@@ -321,7 +322,7 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
       primary,
     };
   }
-}
+};
 
 const build_portraits_json = (poet, collected) => {
   let result = [];
@@ -331,23 +332,26 @@ const build_portraits_json = (poet, collected) => {
   const doc = loadXMLDoc(`fdirs/${poet.id}/portraits.xml`);
   if (doc != null) {
     onError = message => {
-      throw `fdirs/${
-        poet.id
-      }/portraits.xml: ${message}`;
-    }
+      throw `fdirs/${poet.id}/portraits.xml: ${message}`;
+    };
     result = doc.find('//pictures/picture').map(picture => {
-      picture = get_picture(picture, `/static/images/${poet.id}`, collected, onError);
+      picture = get_picture(
+        picture,
+        `/static/images/${poet.id}`,
+        collected,
+        onError
+      );
       if (picture == null) {
-        onError("har et billede uden src- eller ref-attribut.");
+        onError('har et billede uden src- eller ref-attribut.');
       }
       return picture;
     });
     const primaries = result.filter(p => p.primary);
     if (primaries.length > 1) {
-      onError("har flere primary");
+      onError('har flere primary');
     }
     if (primaries.length == 0) {
-      onError("mangler primary");
+      onError('mangler primary');
     }
   }
   return result;
@@ -404,7 +408,7 @@ const build_bio_json = collected => {
 };
 
 // TODO: Speed this up by caching.
-const build_poets_json = (collected) => {
+const build_poets_json = collected => {
   // Returns {has_poems: bool, has_prose: bool,
   //  has_texts: bool, has_works: bool}
   const hasTexts = (poetId, workIds) => {
@@ -789,7 +793,12 @@ const handle_text = (
       source,
       keywords: keywordsArray || [],
       refs: refsArray,
-      pictures: get_pictures(head, `/static/images/${poetId}`, `fdirs/${poetId}/${workId}.xml:${textId}`, collected),
+      pictures: get_pictures(
+        head,
+        `/static/images/${poetId}`,
+        `fdirs/${poetId}/${workId}.xml:${textId}`,
+        collected
+      ),
       content_lang: poet.lang,
       content_html,
     },
@@ -922,7 +931,12 @@ const handle_work = work => {
 
   const workhead = work.get('workhead');
   const notes = get_notes(workhead);
-  const pictures = get_pictures(workhead, `/static/images/${poetId}`, `fdirs/${poetId}/${workId}`, collected);
+  const pictures = get_pictures(
+    workhead,
+    `/static/images/${poetId}`,
+    `fdirs/${poetId}/${workId}`,
+    collected
+  );
 
   const workbody = work.get('workbody');
   if (workbody == null) {
@@ -1308,7 +1322,9 @@ const build_person_or_keyword_refs = collected => {
       const texts = doc.find('//poem|//prose');
       texts.forEach(text => {
         const fromId = text.attr('id').value();
-        const notes = text.find('head/notes/note|body//footnote|body//note|body');
+        const notes = text.find(
+          'head/notes/note|body//footnote|body//note|body'
+        );
         notes.forEach(note => {
           regexps.forEach(rule => {
             while ((match = rule.regexp.exec(note.toString())) != null) {
@@ -1413,7 +1429,12 @@ const build_works_toc = collected => {
 
     const workhead = work.get('workhead');
     const notes = get_notes(workhead);
-    const pictures = get_pictures(workhead, `/static/images/${poetId}`, `fdirs/${poetId}/${workId}`, collected);
+    const pictures = get_pictures(
+      workhead,
+      `/static/images/${poetId}`,
+      `fdirs/${poetId}/${workId}`,
+      collected
+    );
 
     const workbody = work.get('workbody');
     if (workbody == null) {
@@ -1473,7 +1494,13 @@ const build_poet_works_json = collected => {
     const workFilenames = collected.workids
       .get(poetId)
       .map(workId => `fdirs/${poetId}/${workId}.xml`);
-    if (!isFileModified(`data/poets.xml:${poetId}`, `fdirs/${poetId}/artwork.xml`, ...workFilenames)) {
+    if (
+      !isFileModified(
+        `data/poets.xml:${poetId}`,
+        `fdirs/${poetId}/artwork.xml`,
+        ...workFilenames
+      )
+    ) {
       return;
     }
 
@@ -1482,9 +1509,9 @@ const build_poet_works_json = collected => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
 
       // Copy the xml-file into static to allow for xml download.
-      fs
-        .createReadStream(filename)
-        .pipe(fs.createWriteStream(`static/api/${poetId}/${workId}.xml`));
+      fs.createReadStream(filename).pipe(
+        fs.createWriteStream(`static/api/${poetId}/${workId}.xml`)
+      );
       let doc = loadXMLDoc(filename);
       const work = doc.get('//kalliopework');
       const head = work.get('workhead');
@@ -1502,22 +1529,25 @@ const build_poet_works_json = collected => {
 
     let artwork = [];
     if (poet.has_artwork) {
-      artwork = Array.from(collected.artwork.values()).filter(a => a.artistId === poetId).map(picture => {
-        return {
-          lang: picture.lang,
-          src: picture.src,
-          content_lang: picture.content_lang,
-          content_html: picture.content_html,
-          subjects: picture.subjects,
-          year: picture.year        
-        }
-      });
+      artwork = Array.from(collected.artwork.values())
+        .filter(a => a.artistId === poetId)
+        .map(picture => {
+          return {
+            lang: picture.lang,
+            src: picture.src,
+            size: picture.size,
+            content_lang: picture.content_lang,
+            content_html: picture.content_html,
+            subjects: picture.subjects,
+            year: picture.year,
+          };
+        });
     }
 
     const objectToWrite = {
       poet,
       works,
-      artwork
+      artwork,
     };
     const worksOutFilename = `static/api/${poetId}/works.json`;
     console.log(worksOutFilename);
@@ -1627,7 +1657,12 @@ const build_keywords = () => {
           ? keyword.attr('draft').value() === 'true'
           : false;
       const title = head.get('title').text();
-      const pictures = get_pictures(head, '/static/images/keywords', path, collected);
+      const pictures = get_pictures(
+        head,
+        '/static/images/keywords',
+        path,
+        collected
+      );
       const author = safeGetText(head, 'author');
       const rawBody = body
         .toString()
@@ -1900,7 +1935,12 @@ const build_about_pages = collected => {
       const head = about.get('head');
       const body = about.get('body');
       const title = head.get('title').text();
-      const pictures = get_pictures(head, '/static/images/about', paths.xml, collected);
+      const pictures = get_pictures(
+        head,
+        '/static/images/about',
+        paths.xml,
+        collected
+      );
       const author = safeGetText(head, 'author');
       const poemsNum = Array.from(collected.texts.values())
         .map(t => (t.type === 'poem' ? 1 : 0))
@@ -2396,11 +2436,16 @@ const build_artwork = collected => {
     const personId = person.attr('id').value();
     const personType = person.attr('type').value();
     const artworkFilename = `fdirs/${personId}/artwork.xml`;
-    if (personType === 'artist' && (force_reload || isFileModified(artworkFilename))) {
+    if (
+      personType === 'artist' &&
+      (force_reload || isFileModified(artworkFilename))
+    ) {
       // Fjern eksisterende fra cache (i tilfælde af id er slettet)
-      Array.from(collected_artwork.keys()).filter(k => k.indexOf(`${personId}/`) === 0).forEach(k => {
-        collected_artwork.delete(k);
-      });
+      Array.from(collected_artwork.keys())
+        .filter(k => k.indexOf(`${personId}/`) === 0)
+        .forEach(k => {
+          collected_artwork.delete(k);
+        });
 
       const artworksDoc = loadXMLDoc(artworkFilename);
       if (artworksDoc != null) {
@@ -2408,7 +2453,7 @@ const build_artwork = collected => {
           const pictureId = safeGetAttr(picture, 'id');
           const subjectAttr = safeGetAttr(picture, 'subject');
           let subjects = subjectAttr != null ? subjectAttr.split(',') : [];
-          const year = safeGetAttr(picture, 'year');          
+          const year = safeGetAttr(picture, 'year');
           if (pictureId == null) {
             throw `fdirs/${personId}/artwork.xml har et billede uden id-attribut.`;
           }
@@ -2417,6 +2462,8 @@ const build_artwork = collected => {
             markFileDirty(`fdirs/${subjectId}/portraits.xml`);
           });
 
+          const src = `/static/images/${personId}/${pictureId}.jpg`;
+          const size = imageSizeSync(src.replace(/^\//, ''));
           const museumLink = build_museum_link(picture) || '';
           const artworkId = `${personId}/${pictureId}`;
           const content_raw =
@@ -2429,7 +2476,8 @@ const build_artwork = collected => {
             id: `${personId}/${pictureId}`,
             artistId: personId,
             lang: person.lang,
-            src: `/static/images/${personId}/${pictureId}.jpg`,
+            src,
+            size,
             content_lang: 'da',
             subjects,
             year,
