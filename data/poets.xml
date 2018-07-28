@@ -355,7 +355,6 @@
   <works>andre</works>
 </person>
 
-
 <person id="schiller" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich von</firstname>
@@ -370,6 +369,24 @@
     <dead>
       <date>1805-05-09</date>
       <place>Weimar</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
+<person id="matthisson" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich von</firstname>
+    <lastname>Matthisson</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1761-01-23</date>
+      <place>Hohendodeleben, Magdeburg</place>
+    </born>
+    <dead>
+      <date>1831-03-12</date>
+      <place>Wörlitz, Dessau</place>
     </dead>
   </period>
   <works>andre</works>
