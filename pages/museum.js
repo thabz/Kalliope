@@ -72,7 +72,7 @@ export default class extends React.Component<MuseumProps> {
           requestPath={requestPath}
         />
         <Main>
-          <Nav lang={lang} title={_('Værker', lang)} />
+          <Nav lang={lang} title={museum.name} links={['Museer']} />
           <Heading title={title} subtitle={_('Værker', lang)} />
           <KalliopeTabs lang={lang} selected="museum" />
           <div className="two-columns" style={{ lineHeight: 1.7 }}>
