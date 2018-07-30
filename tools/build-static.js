@@ -312,6 +312,7 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
   const primary = safeGetAttr(picture, 'primary') == 'true';
   let src = safeGetAttr(picture, 'src');
   const ref = safeGetAttr(picture, 'ref');
+  const year = safeGetAttr(picture, 'year');
   const museumId = safeGetAttr(picture, 'museum');
   const remoteUrl = build_museum_url(picture);
   const museumLink = build_museum_link(picture) || '';
@@ -323,6 +324,7 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
     return {      
       lang,
       src,
+      year,
       size: imageSizeSync(src.replace(/^\//, '')),
       remoteUrl,
       museum: get_museum_json(museumId),
@@ -355,6 +357,7 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
       artist,
       lang: artwork.lang,
       src: artwork.src,
+      year,
       size: imageSizeSync(artwork.src.replace(/^\//, '')),
       remoteUrl,
       museum: get_museum_json(museumId),
