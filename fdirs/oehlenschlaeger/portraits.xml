@@ -3,9 +3,7 @@
   <picture src="p6.jpg">
       <i>Adam Oehlenschläger</i>. Bakkehusmuseet.
   </picture>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
-    Johann Ludewig Gebhard Lund: <i>Adam Oehlenschläger</i>, 1809, olie på lærred. Det Nationalhistoriske Museum, Frederiksborg Slot.
-  </picture>
+  <picture ref="lund/1809-oehlenschlaeger" primary="true" square-src="p1-square.jpg" />
   <picture ref="jensenca/oehlenschlaeger-1832" />
   <picture ref="jensenca/oehlenschlaeger-1834" />
   <picture src="p3.jpg">
