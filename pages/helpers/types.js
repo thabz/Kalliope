@@ -47,6 +47,7 @@ export type Poet = {
     dead?: DateWithPlace,
     coronation?: DateWithPlace,
   },
+  has_artwork: boolean,
   has_bibliography: boolean,
   has_biography: boolean,
   has_mentions: boolean,

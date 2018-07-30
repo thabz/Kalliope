@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
-    C. W. Eckersberg: <i>Bertel Thorvaldsen</i>, 1814, 90x74 cm, Kunstakademiet.
-  </picture>
+    <picture ref="eckersberg/thorvaldsen-1814" primary="true" square-src="p1-square.jpg" />
+    <picture ref="eckersberg/1820-thorvaldsen" />
+    <picture ref="jensenca/1839-thorvaldsen" />
 </pictures>

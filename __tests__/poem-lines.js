@@ -28,7 +28,7 @@ const regexps = [
   },
   {
     regexp: /aaa/,
-    whitelist: [/[Ss]maaalfer/, /Smaaarbeider/, /<note>.*\]/,/upaaagtet/],
+    whitelist: [/[Ss]maaalfer/, /Smaaarbeider/, /<note>.*\]/, /upaaagtet/, /Koleraaar/],
   },
   /sss/,
   {
@@ -36,7 +36,6 @@ const regexps = [
     whitelist: [/<metrik>/],
   },
 ];
-// TODO: Hver regel kunne have nogle white-list regexps, som angiver undtagelser. F.eks. reglen /aaa/ kunne undtagelsen /Smaaalfer/
 
 describe('Check workfiles', () => {
   const doc = loadXMLDoc('data/poets.xml');
