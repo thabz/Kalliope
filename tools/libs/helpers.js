@@ -320,6 +320,10 @@ const htmlToXml = (
 };
 
 const imageSizeAsync = (filename, callback) => {
+  if (!fileExists(filename)) {
+    const error = `image size failed for file: ${filename}`;
+    throw error;
+  }
   sharp(filename)
     .metadata()
     .then(metadata => {

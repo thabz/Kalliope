@@ -273,6 +273,17 @@ const museums = {
   },
 };
 
+const get_museum_json = museumId => {
+  if (museumId != null && museums[museumId] != null) {
+    return {
+      id: museumId,
+      name: museums[museumId].name
+    }
+  } else {
+    return null;
+  }
+}
+
 const build_museum_url = picture => {
   if (picture == null) {
     return null;
@@ -301,15 +312,20 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
   const primary = safeGetAttr(picture, 'primary') == 'true';
   let src = safeGetAttr(picture, 'src');
   const ref = safeGetAttr(picture, 'ref');
+  const museumId = safeGetAttr(picture, 'museum');
+  const remoteUrl = build_museum_url(picture);
   const museumLink = build_museum_link(picture) || '';
   if (src != null) {
     const lang = safeGetAttr(picture, 'lang') || 'da';
     if (src.charAt(0) !== '/') {
       src = srcPrefix + '/' + src;
     }
-    return {
+    return {      
       lang,
       src,
+      size: imageSizeSync(src.replace(/^\//, '')),
+      remoteUrl,
+      museum: get_museum_json(museumId),
       content_lang: 'da',
       content_html: htmlToXml(
         picture
@@ -330,12 +346,18 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
       onError(`fandt en ref "${ref}" som ikke matcher noget kendt billede.`);
     }
     const artist = collected.poets.get(artwork.artistId);
+    const museumId = safeGetAttr(picture, 'museum');
+    const remoteUrl = build_museum_url(picture);  
     const description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
       artwork.content_raw
     }`;
     return {
+      artist,
       lang: artwork.lang,
       src: artwork.src,
+      size: imageSizeSync(artwork.src.replace(/^\//, '')),
+      remoteUrl,
+      museum: get_museum_json(museumId),
       content_lang: artwork.content_lang,
       content_html: htmlToXml(description, collected),
       primary,
@@ -2498,7 +2520,7 @@ const build_artwork = collected => {
             id: `${personId}/${pictureId}`,
             artistId: personId,
             artist,
-            museumId,
+            museum: get_museum_json(museumId),
             remoteUrl,
             lang: person.lang,
             src,
@@ -2521,14 +2543,56 @@ const build_artwork = collected => {
 const build_museums = collected => {
   safeMkdir('static/api/museums');
 
+  let found_changes = false;
+
+  collected.poets.forEach((poet, poetId) => {
+    const portraitsFile = `fdirs/${poet.id}/portraits.xml`;
+    if (isFileModified(portraitsFile)) {
+      found_changes = true;
+    }
+    const artworkFile = `fdirs/${poet.id}/artwork.xml`;
+    if (poet.has_artwork) {
+      found_changes |= isFileModified(artworkFile);
+    }
+  });
+  if (!found_changes) {
+    return;
+  }
+
+  let allArtwork = Array.from(collected.artwork.values());
+  // Find portrætter som ikke har en ref og dermed inkluderet i collected.artwork      
+  collected.poets.forEach((poet, poetId) => {
+    const doc = loadXMLDoc(`fdirs/${poetId}/portraits.xml`);
+    if (doc != null) {
+      onError = message => {
+        throw `fdirs/${poet.id}/portraits.xml: ${message}`;
+      };
+      const portraitsWithoutRef = doc.find('//pictures/picture').filter(picture => {
+        return safeGetAttr(picture, 'ref') == null;
+     }).map(picture => {
+        picture = get_picture(
+          picture,
+          `/static/images/${poet.id}`,
+          collected,
+          onError
+        );
+        if (picture == null) {
+          onError('har et billede uden src- eller ref-attribut.');
+        }
+        return picture;
+      });          
+      allArtwork = allArtwork.concat(portraitsWithoutRef);
+    }
+  });
   Object.keys(museums).forEach(museumId => {
     const museum = museums[museumId];
     if (museum.name == null) {
       // Vi tager kun museer med navne
       return;
     }
-    const artwork = Array.from(collected.artwork.values())
-      .filter(a => a.museumId === museumId)
+
+    const artwork = allArtwork
+      .filter(a => a.museum != null && a.museum.id === museumId)
       .map(picture => {
         return {
           artist: picture.artist,
@@ -2542,8 +2606,12 @@ const build_museums = collected => {
           year: picture.year,
         };
       });
+
       const json = {
-        museumName: museum.name,
+        museum: {
+          id: museumId,
+          name: museum.name
+        },
         artwork
       }
       const path = `static/api/museums/${museumId}.json`;
