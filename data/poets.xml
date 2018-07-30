@@ -137,7 +137,7 @@
   <works>1634,1642,1643,1651</works>
 </person>
 
-<person id="hegedorn" country="de" lang="de" type="poet">
+<person id="hagedorn" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich von</firstname>
     <lastname>Hagedorn</lastname>
@@ -152,6 +152,7 @@
       <place>Hamburg</place>
     </dead>
   </period>
+  <works>andre</works>
 </person>
 
 <person id="gellert" country="de" lang="de" type="poet">
@@ -280,6 +281,24 @@
   <works>1778,1778v,1779,andre</works>
 </person>
 
+<person id="burger" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Gottfried August</firstname>
+    <lastname>Bürger</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1747-12-31</date>
+      <place>Molmerswende</place>
+    </born>
+    <dead>
+      <date>1794-06-08</date>
+      <place>Göttingen</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="holty" country="de" lang="de" type="poet">
   <name>
     <firstname>L.H.C.</firstname>
@@ -317,6 +336,25 @@
   </period>
   <works>1808,1819,1832,romi,andre</works>
 </person>
+
+<person id="stolbergf" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich Leopold zu</firstname>
+    <lastname>Stolberg-Stolberg</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1750-11-07</date>
+      <place>Bramstedt, Holstein</place>
+    </born>
+    <dead>
+      <date>1819-12-05</date>
+      <place>Gut Sondermühlen bei Osnabrück</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 
 <person id="schiller" country="de" lang="de" type="poet">
   <name>
