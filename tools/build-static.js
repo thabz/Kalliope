@@ -231,7 +231,49 @@ const build_poet_timeline_json = (poet, collected) => {
   return items;
 };
 
-const build_museum_link = picture => {
+const museums = {
+  thorvaldsens: {
+    url: 'http://thorvaldsensmuseum.dk/samlingerne/vaerk/$invNr',
+    name: "Thorvaldsens Museum"
+  },
+  nivaagaard: {
+    url: 'http://www.nivaagaard.dk/samling-da/$objId',
+    name: "Nivaagaard"
+  },
+  kb: {
+    url: 'http://www.kb.dk/images/billed/2010/okt/billeder/object$objId/da/',
+    name: "Det kongelige Bibliotek"
+  },
+  smk: {
+    url: 'http://collection.smk.dk/#/detail/$invNr',
+    name: 'Statens Museum for Kunst',
+  },
+  ribe: {
+    url: `https://ribekunstmuseum.dk/samling/$invNr`,
+    name: 'Ribe Kunstmuseum',
+  },
+  smb: {
+    url: `http://www.smb-digital.de/eMuseumPlus?objectId=$objId`,
+  },
+  md: {
+    url: `https://www.museum-digital.de/nat/index.php?t=objekt&oges=$objId`,
+  },
+  npg: {
+    url: `https://www.npg.org.uk/collections/search/portrait/$objId`,
+    name: 'National Portrait Gallery, London',
+  },
+  'natmus.se': {
+    url: `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=$objId&viewType=detailView`,
+  },
+  'digitalmuseum.no': {
+    url: `https://digitaltmuseum.no/$objId/maleri`,
+  },
+  'digitalmuseum.se': {
+    url: `https://digitaltmuseum.se/$objId/maleri`,
+  },
+};
+
+const build_museum_url = picture => {
   if (picture == null) {
     return null;
   }
@@ -239,43 +281,20 @@ const build_museum_link = picture => {
   const objId = safeGetAttr(picture, 'objid');
   const museum = safeGetAttr(picture, 'museum');
   if (museum != null && (invNr != null || objId != null)) {
-    let url = null;
-    switch (museum) {
-      case 'thorvaldsens':
-        url = `http://thorvaldsensmuseum.dk/samlingerne/vaerk/${invNr}`;
-        break;
-      case 'nivaagaard':
-        url = `http://www.nivaagaard.dk/samling-da/${objId}`;
-        break;
-      case 'kb':
-        url = `http://www.kb.dk/images/billed/2010/okt/billeder/object${objId}/da/`;
-        break;
-      case 'smk':
-        url = `http://collection.smk.dk/#/detail/${invNr}`;
-        break;
-      case 'ribe':
-        url = `https://ribekunstmuseum.dk/samling/${invNr}`;
-        break;
-      case 'smb':
-        url = `http://www.smb-digital.de/eMuseumPlus?objectId=${objId}`;
-        break;
-      case 'md':
-        url = `https://www.museum-digital.de/nat/index.php?t=objekt&oges=${objId}`;
-        break;
-      case 'npg':
-        url = `https://www.npg.org.uk/collections/search/portrait/${objId}`;
-        break;
-      case 'natmus.se':
-        url = `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${objId}&viewType=detailView`;
-      case 'digitalmuseum.no':
-        url = `https://digitaltmuseum.no/${objId}/maleri`;
-        break;
-      case 'digitalmuseum.se':
-        url = `https://digitaltmuseum.se/${objId}/maleri`;
-        break;
+    const museumObject = museums[museum];
+    if (museumObject != null && museumObject.url != null) {
+      return museumObject.url
+        .replace('$objId', objId)
+        .replace('$invNr', invNr);
     }
-    return url == null ? null : ` <a href="${url}">⌘</a>`;
   }
+  return null;
+};
+
+
+const build_museum_link = picture => {
+  const url = build_museum_url(picture);
+  return url == null ? null : ` <a href="${url}">⌘</a>`;
 };
 
 const get_picture = (picture, srcPrefix, collected, onError) => {
@@ -2464,8 +2483,11 @@ const build_artwork = collected => {
 
           const src = `/static/images/${personId}/${pictureId}.jpg`;
           const size = imageSizeSync(src.replace(/^\//, ''));
+          const remoteUrl = build_museum_url(picture);
           const museumLink = build_museum_link(picture) || '';
+          const museumId = safeGetAttr(picture, 'museum')
           const artworkId = `${personId}/${pictureId}`;
+          const artist = collected.poets.get(personId);
           const content_raw =
             picture
               .toString()
@@ -2475,9 +2497,12 @@ const build_artwork = collected => {
           const artworkJson = {
             id: `${personId}/${pictureId}`,
             artistId: personId,
+            artist,
+            museumId,
+            remoteUrl,
             lang: person.lang,
             src,
-            size,
+            size,            
             content_lang: 'da',
             subjects,
             year,
@@ -2493,13 +2518,48 @@ const build_artwork = collected => {
   return collected_artwork;
 };
 
+const build_museums = collected => {
+  safeMkdir('static/api/museums');
+
+  Object.keys(museums).forEach(museumId => {
+    const museum = museums[museumId];
+    if (museum.name == null) {
+      // Vi tager kun museer med navne
+      return;
+    }
+    const artwork = Array.from(collected.artwork.values())
+      .filter(a => a.museumId === museumId)
+      .map(picture => {
+        return {
+          artist: picture.artist,
+          lang: picture.lang,
+          src: picture.src,
+          size: picture.size,
+          remoteUrl: picture.remoteUrl,
+          content_lang: picture.content_lang,
+          content_html: picture.content_html,
+          subjects: picture.subjects,
+          year: picture.year,
+        };
+      });
+      const json = {
+        museumName: museum.name,
+        artwork
+      }
+      const path = `static/api/museums/${museumId}.json`;
+      console.log(path);
+      writeJSON(path, json);
+  });
+};
+
 safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);
-collected.artwork = b('build_artwork', build_artwork, collected);
 // Build collected.works and collected.texts
 Object.assign(collected, b('works_first_pass', works_first_pass, collected));
 b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 collected.poets = b('build_poets_json', build_poets_json, collected);
+collected.artwork = b('build_artwork', build_artwork, collected);
+b('build_museums', build_museums, collected);
 b('build_mentions_json', build_mentions_json, collected);
 collected.textrefs = b('build_textrefs', build_textrefs, collected);
 build_dict_first_pass(collected);
