@@ -232,13 +232,19 @@ const build_poet_timeline_json = (poet, collected) => {
 };
 
 const museums = {
+  hirschsprungske: {
+    name: "Den Hirschsprungske Samling"
+  },
+  skagen: {
+    name: "Skagens Museum"
+  },
   thorvaldsens: {
     url: 'http://thorvaldsensmuseum.dk/samlingerne/vaerk/$invNr',
     name: "Thorvaldsens Museum"
   },
   nivaagaard: {
     url: 'http://www.nivaagaard.dk/samling-da/$objId',
-    name: "Nivaagaard"
+    name: "Nivaagaards Malerisamling"
   },
   kb: {
     url: 'http://www.kb.dk/images/billed/2010/okt/billeder/object$objId/da/',
@@ -2480,6 +2486,8 @@ const build_artwork = collected => {
     const personId = person.attr('id').value();
     const personType = person.attr('type').value();
     const artworkFilename = `fdirs/${personId}/artwork.xml`;
+    const portraitsFile = `fdirs/${personId}/portraits.xml`;
+
     if (
       personType === 'artist' &&
       (force_reload || isFileModified(artworkFilename))
@@ -2510,7 +2518,7 @@ const build_artwork = collected => {
           const size = imageSizeSync(src.replace(/^\//, ''));
           const remoteUrl = build_museum_url(picture);
           const museumLink = build_museum_link(picture) || '';
-          const museumId = safeGetAttr(picture, 'museum')
+          const museumId = safeGetAttr(picture, 'museum');
           const artworkId = `${personId}/${pictureId}`;
           const artist = collected.poets.get(personId);
           const content_raw =
@@ -2538,6 +2546,74 @@ const build_artwork = collected => {
         });
       }
     }
+    if (force_reload || isFileModified(portraitsFile)) {
+      // Fjern eksisterende portraits fra cache (i tilfælde af id er slettet)
+      Array.from(collected_artwork.keys())
+          .filter(k => k.indexOf(`portrait/${personId}/`) === 0)
+          .forEach(k => {
+            collected_artwork.delete(k);
+          });
+  
+      // From portraits.xml
+      const doc = loadXMLDoc(`fdirs/${personId}/portraits.xml`);
+      if (doc != null) {
+        onError = message => {
+          throw `fdirs/${personId}/portraits.xml: ${message}`;
+        };
+        doc.find('//pictures/picture').filter(picture => {
+          return safeGetAttr(picture, 'ref') == null;
+        }).forEach(pictureNode => {
+          const src = safeGetAttr(pictureNode, 'src');
+          const picture = get_picture(
+            pictureNode,
+            `/static/images/${personId}`,
+            collected,
+            onError
+          );
+          if (picture == null) {
+            onError('har et billede uden src- eller ref-attribut.');
+          }
+          const key = `portrait/${personId}/${src}`;
+          collected_artwork.set(key, picture);
+        });
+      }
+    }
+
+    // From works
+    collected.workids.get(personId).forEach(workId => {
+      const workFilename = `fdirs/${personId}/${workId}.xml`;
+      if (force_reload || isFileModified(workFilename)) {
+        // Fjern eksisterende work pictures fra cache
+        Array.from(collected_artwork.keys())
+        .filter(k => k.indexOf(`work/${personId}/${workId}`) === 0)
+        .forEach(k => {
+          collected_artwork.delete(k);
+        });
+
+        const doc = loadXMLDoc(workFilename);      
+        if (doc != null) {
+          onError = message => {
+            throw `${workFilename}: ${message}`;
+          };            
+          doc.find('//pictures/picture').filter(picture => {
+            return safeGetAttr(picture, 'ref') == null;
+          }).forEach(pictureNode => {
+            const src = safeGetAttr(pictureNode, 'src');
+            const picture = get_picture(
+              pictureNode,
+              `/static/images/${personId}`,
+              collected,
+              onError
+            );
+            if (picture == null) {
+              onError('har et billede uden src- eller ref-attribut.');
+            }
+            const key = `work/${personId}/${workId}/${src}`;
+            collected_artwork.set(key, picture);
+          });  
+        }
+      }
+    }); 
   });
   writeCachedJSON('collected.artwork', Array.from(collected_artwork));
   return collected_artwork;
@@ -2557,6 +2633,10 @@ const build_museums = collected => {
     if (poet.has_artwork) {
       found_changes |= isFileModified(artworkFile);
     }
+    collected.workids.get(poet.id).forEach(workId => {
+      const workFilename = `fdirs/${poetId}/${workId}.xml`;
+       found_changes |= isFileModified(workFilename);
+    });
   });
   if (!found_changes) {
     return;
@@ -2565,27 +2645,10 @@ const build_museums = collected => {
   let allArtwork = Array.from(collected.artwork.values());
   // Find portrætter som ikke har en ref og dermed inkluderet i collected.artwork      
   collected.poets.forEach((poet, poetId) => {
-    const doc = loadXMLDoc(`fdirs/${poetId}/portraits.xml`);
-    if (doc != null) {
-      onError = message => {
-        throw `fdirs/${poet.id}/portraits.xml: ${message}`;
-      };
-      const portraitsWithoutRef = doc.find('//pictures/picture').filter(picture => {
-        return safeGetAttr(picture, 'ref') == null;
-     }).map(picture => {
-        picture = get_picture(
-          picture,
-          `/static/images/${poet.id}`,
-          collected,
-          onError
-        );
-        if (picture == null) {
-          onError('har et billede uden src- eller ref-attribut.');
-        }
-        return picture;
-      });          
-      allArtwork = allArtwork.concat(portraitsWithoutRef);
-    }
+      // From works
+      collected.workids.get(poet.id).forEach(workId => {
+        const doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
+      }); 
   });
   Object.keys(museums).forEach(museumId => {
     const museum = museums[museumId];
