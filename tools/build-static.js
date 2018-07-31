@@ -25,6 +25,7 @@ const {
   safeGetText,
   safeGetAttr,
   replaceDashes,
+  imageSizeSync,
   buildThumbnails,
 } = require('./libs/helpers.js');
 
@@ -101,12 +102,12 @@ const load_timeline = filename => {
       is_history_item: true,
     };
     if (type === 'image') {
-      const onError = (message) => {
+      const onError = message => {
         throw `${filename}: ${message}`;
-      }
+      };
       const pictureNode = event.get('picture');
       if (pictureNode == null) {
-        onError('indeholder event med type image uden <picture>')
+        onError('indeholder event med type image uden <picture>');
       }
       const picture = get_picture(pictureNode, '/static', collected, onError);
       data.src = picture.src;
@@ -230,7 +231,66 @@ const build_poet_timeline_json = (poet, collected) => {
   return items;
 };
 
-const build_museum_link = picture => {
+const museums = {
+  hirschsprungske: {
+    name: "Den Hirschsprungske Samling"
+  },
+  skagen: {
+    name: "Skagens Museum"
+  },
+  thorvaldsens: {
+    url: 'http://thorvaldsensmuseum.dk/samlingerne/vaerk/$invNr',
+    name: "Thorvaldsens Museum"
+  },
+  nivaagaard: {
+    url: 'http://www.nivaagaard.dk/samling-da/$objId',
+    name: "Nivaagaards Malerisamling"
+  },
+  kb: {
+    url: 'http://www.kb.dk/images/billed/2010/okt/billeder/object$objId/da/',
+    name: "Det kongelige Bibliotek"
+  },
+  smk: {
+    url: 'http://collection.smk.dk/#/detail/$invNr',
+    name: 'Statens Museum for Kunst',
+  },
+  ribe: {
+    url: `https://ribekunstmuseum.dk/samling/$invNr`,
+    name: 'Ribe Kunstmuseum',
+  },
+  smb: {
+    url: `http://www.smb-digital.de/eMuseumPlus?objectId=$objId`,
+  },
+  md: {
+    url: `https://www.museum-digital.de/nat/index.php?t=objekt&oges=$objId`,
+  },
+  npg: {
+    url: `https://www.npg.org.uk/collections/search/portrait/$objId`,
+    name: 'National Portrait Gallery, London',
+  },
+  'natmus.se': {
+    url: `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=$objId&viewType=detailView`,
+  },
+  'digitalmuseum.no': {
+    url: `https://digitaltmuseum.no/$objId/maleri`,
+  },
+  'digitalmuseum.se': {
+    url: `https://digitaltmuseum.se/$objId/maleri`,
+  },
+};
+
+const get_museum_json = museumId => {
+  if (museumId != null && museums[museumId] != null) {
+    return {
+      id: museumId,
+      name: museums[museumId].name
+    }
+  } else {
+    return null;
+  }
+}
+
+const build_museum_url = picture => {
   if (picture == null) {
     return null;
   }
@@ -238,55 +298,42 @@ const build_museum_link = picture => {
   const objId = safeGetAttr(picture, 'objid');
   const museum = safeGetAttr(picture, 'museum');
   if (museum != null && (invNr != null || objId != null)) {
-    let url = null;
-    switch (museum) {
-      case 'thorvaldsens':
-        url = `http://thorvaldsensmuseum.dk/samlingerne/vaerk/${invNr}`;
-        break;
-      case 'nivaagaard':
-        url = `http://www.nivaagaard.dk/samling-da/${objId}`;
-        break;
-      case 'kb':
-        url = `http://www.kb.dk/images/billed/2010/okt/billeder/object${objId}/da/`;
-        break;
-      case 'smk':
-        url = `http://collection.smk.dk/#/detail/${invNr}`;
-        break;
-      case 'ribe':
-        url = `https://ribekunstmuseum.dk/samling/${invNr}`;
-        break;
-      case 'smb':
-        url = `http://www.smb-digital.de/eMuseumPlus?objectId=${objId}`;
-        break;
-      case 'npg':
-        url = `https://www.npg.org.uk/collections/search/portrait/${objId}`;
-        break;
-      case 'natmus.se':
-        url = `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${objId}&viewType=detailView`;
-      case 'digitalmuseum.no':
-        url = `https://digitaltmuseum.no/${objId}/maleri`;
-        break;
-      case 'digitalmuseum.se':
-        url = `https://digitaltmuseum.se/${objId}/maleri`;
-        break;
+    const museumObject = museums[museum];
+    if (museumObject != null && museumObject.url != null) {
+      return museumObject.url
+        .replace('$objId', objId)
+        .replace('$invNr', invNr);
     }
-    return url == null ? null : ` <a href="${url}">⌘</a>`;
   }
+  return null;
+};
+
+
+const build_museum_link = picture => {
+  const url = build_museum_url(picture);
+  return url == null ? null : ` <a href="${url}">⌘</a>`;
 };
 
 const get_picture = (picture, srcPrefix, collected, onError) => {
   const primary = safeGetAttr(picture, 'primary') == 'true';
   let src = safeGetAttr(picture, 'src');
   const ref = safeGetAttr(picture, 'ref');
+  const year = safeGetAttr(picture, 'year');
+  const museumId = safeGetAttr(picture, 'museum');
+  const remoteUrl = build_museum_url(picture);
   const museumLink = build_museum_link(picture) || '';
   if (src != null) {
     const lang = safeGetAttr(picture, 'lang') || 'da';
     if (src.charAt(0) !== '/') {
       src = srcPrefix + '/' + src;
     }
-    return {
+    return {      
       lang,
       src,
+      year,
+      size: imageSizeSync(src.replace(/^\//, '')),
+      remoteUrl,
+      museum: get_museum_json(museumId),
       content_lang: 'da',
       content_html: htmlToXml(
         picture
@@ -299,26 +346,33 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
       primary,
     };
   } else if (ref != null) {
-    if (ref.indexOf("/") === -1) {
+    if (ref.indexOf('/') === -1) {
       onError(`fandt en ulovlig ref "${ref}" uden mappe-angivelse`);
     }
     const artwork = collected.artwork.get(ref);
     if (artwork == null) {
-        onError(`fandt en ref "${ref}" som ikke matcher noget kendt billede.`);
+      onError(`fandt en ref "${ref}" som ikke matcher noget kendt billede.`);
     }
     const artist = collected.poets.get(artwork.artistId);
+    const museumId = safeGetAttr(picture, 'museum');
+    const remoteUrl = build_museum_url(picture);  
     const description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
       artwork.content_raw
     }`;
     return {
+      artist,
       lang: artwork.lang,
       src: artwork.src,
+      year,
+      size: imageSizeSync(artwork.src.replace(/^\//, '')),
+      remoteUrl,
+      museum: get_museum_json(museumId),
       content_lang: artwork.content_lang,
       content_html: htmlToXml(description, collected),
       primary,
     };
   }
-}
+};
 
 const build_portraits_json = (poet, collected) => {
   let result = [];
@@ -328,23 +382,26 @@ const build_portraits_json = (poet, collected) => {
   const doc = loadXMLDoc(`fdirs/${poet.id}/portraits.xml`);
   if (doc != null) {
     onError = message => {
-      throw `fdirs/${
-        poet.id
-      }/portraits.xml: ${message}`;
-    }
+      throw `fdirs/${poet.id}/portraits.xml: ${message}`;
+    };
     result = doc.find('//pictures/picture').map(picture => {
-      picture = get_picture(picture, `/static/images/${poet.id}`, collected, onError);
+      picture = get_picture(
+        picture,
+        `/static/images/${poet.id}`,
+        collected,
+        onError
+      );
       if (picture == null) {
-        onError("har et billede uden src- eller ref-attribut.");
+        onError('har et billede uden src- eller ref-attribut.');
       }
       return picture;
     });
     const primaries = result.filter(p => p.primary);
     if (primaries.length > 1) {
-      onError("har flere primary");
+      onError('har flere primary');
     }
     if (primaries.length == 0) {
-      onError("mangler primary");
+      onError('mangler primary');
     }
   }
   return result;
@@ -401,7 +458,7 @@ const build_bio_json = collected => {
 };
 
 // TODO: Speed this up by caching.
-const build_poets_json = (collected) => {
+const build_poets_json = collected => {
   // Returns {has_poems: bool, has_prose: bool,
   //  has_texts: bool, has_works: bool}
   const hasTexts = (poetId, workIds) => {
@@ -786,7 +843,12 @@ const handle_text = (
       source,
       keywords: keywordsArray || [],
       refs: refsArray,
-      pictures: get_pictures(head, `/static/images/${poetId}`, `fdirs/${poetId}/${workId}.xml:${textId}`, collected),
+      pictures: get_pictures(
+        head,
+        `/static/images/${poetId}`,
+        `fdirs/${poetId}/${workId}.xml:${textId}`,
+        collected
+      ),
       content_lang: poet.lang,
       content_html,
     },
@@ -919,7 +981,12 @@ const handle_work = work => {
 
   const workhead = work.get('workhead');
   const notes = get_notes(workhead);
-  const pictures = get_pictures(workhead, `/static/images/${poetId}`, `fdirs/${poetId}/${workId}`, collected);
+  const pictures = get_pictures(
+    workhead,
+    `/static/images/${poetId}`,
+    `fdirs/${poetId}/${workId}`,
+    collected
+  );
 
   const workbody = work.get('workbody');
   if (workbody == null) {
@@ -1305,7 +1372,9 @@ const build_person_or_keyword_refs = collected => {
       const texts = doc.find('//poem|//prose');
       texts.forEach(text => {
         const fromId = text.attr('id').value();
-        const notes = text.find('head/notes/note|body//footnote|body//note|body');
+        const notes = text.find(
+          'head/notes/note|body//footnote|body//note|body'
+        );
         notes.forEach(note => {
           regexps.forEach(rule => {
             while ((match = rule.regexp.exec(note.toString())) != null) {
@@ -1410,7 +1479,12 @@ const build_works_toc = collected => {
 
     const workhead = work.get('workhead');
     const notes = get_notes(workhead);
-    const pictures = get_pictures(workhead, `/static/images/${poetId}`, `fdirs/${poetId}/${workId}`, collected);
+    const pictures = get_pictures(
+      workhead,
+      `/static/images/${poetId}`,
+      `fdirs/${poetId}/${workId}`,
+      collected
+    );
 
     const workbody = work.get('workbody');
     if (workbody == null) {
@@ -1470,7 +1544,13 @@ const build_poet_works_json = collected => {
     const workFilenames = collected.workids
       .get(poetId)
       .map(workId => `fdirs/${poetId}/${workId}.xml`);
-    if (!isFileModified(`data/poets.xml:${poetId}`, `fdirs/${poetId}/artwork.xml`, ...workFilenames)) {
+    if (
+      !isFileModified(
+        `data/poets.xml:${poetId}`,
+        `fdirs/${poetId}/artwork.xml`,
+        ...workFilenames
+      )
+    ) {
       return;
     }
 
@@ -1479,9 +1559,9 @@ const build_poet_works_json = collected => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
 
       // Copy the xml-file into static to allow for xml download.
-      fs
-        .createReadStream(filename)
-        .pipe(fs.createWriteStream(`static/api/${poetId}/${workId}.xml`));
+      fs.createReadStream(filename).pipe(
+        fs.createWriteStream(`static/api/${poetId}/${workId}.xml`)
+      );
       let doc = loadXMLDoc(filename);
       const work = doc.get('//kalliopework');
       const head = work.get('workhead');
@@ -1499,22 +1579,25 @@ const build_poet_works_json = collected => {
 
     let artwork = [];
     if (poet.has_artwork) {
-      artwork = Array.from(collected.artwork.values()).filter(a => a.artistId === poetId).map(picture => {
-        return {
-          lang: picture.lang,
-          src: picture.src,
-          content_lang: picture.content_lang,
-          content_html: picture.content_html,
-          subjects: picture.subjects,
-          year: picture.year        
-        }
-      });
+      artwork = Array.from(collected.artwork.values())
+        .filter(a => a.artistId === poetId)
+        .map(picture => {
+          return {
+            lang: picture.lang,
+            src: picture.src,
+            size: picture.size,
+            content_lang: picture.content_lang,
+            content_html: picture.content_html,
+            subjects: picture.subjects,
+            year: picture.year,
+          };
+        });
     }
 
     const objectToWrite = {
       poet,
       works,
-      artwork
+      artwork,
     };
     const worksOutFilename = `static/api/${poetId}/works.json`;
     console.log(worksOutFilename);
@@ -1624,7 +1707,12 @@ const build_keywords = () => {
           ? keyword.attr('draft').value() === 'true'
           : false;
       const title = head.get('title').text();
-      const pictures = get_pictures(head, '/static/images/keywords', path, collected);
+      const pictures = get_pictures(
+        head,
+        '/static/images/keywords',
+        path,
+        collected
+      );
       const author = safeGetText(head, 'author');
       const rawBody = body
         .toString()
@@ -1897,7 +1985,12 @@ const build_about_pages = collected => {
       const head = about.get('head');
       const body = about.get('body');
       const title = head.get('title').text();
-      const pictures = get_pictures(head, '/static/images/about', paths.xml, collected);
+      const pictures = get_pictures(
+        head,
+        '/static/images/about',
+        paths.xml,
+        collected
+      );
       const author = safeGetText(head, 'author');
       const poemsNum = Array.from(collected.texts.values())
         .map(t => (t.type === 'poem' ? 1 : 0))
@@ -2393,11 +2486,18 @@ const build_artwork = collected => {
     const personId = person.attr('id').value();
     const personType = person.attr('type').value();
     const artworkFilename = `fdirs/${personId}/artwork.xml`;
-    if (personType === 'artist' && (force_reload || isFileModified(artworkFilename))) {
+    const portraitsFile = `fdirs/${personId}/portraits.xml`;
+
+    if (
+      personType === 'artist' &&
+      (force_reload || isFileModified(artworkFilename))
+    ) {
       // Fjern eksisterende fra cache (i tilfælde af id er slettet)
-      Array.from(collected_artwork.keys()).filter(k => k.indexOf(`${personId}/`) === 0).forEach(k => {
-        collected_artwork.delete(k);
-      });
+      Array.from(collected_artwork.keys())
+        .filter(k => k.indexOf(`${personId}/`) === 0)
+        .forEach(k => {
+          collected_artwork.delete(k);
+        });
 
       const artworksDoc = loadXMLDoc(artworkFilename);
       if (artworksDoc != null) {
@@ -2405,7 +2505,7 @@ const build_artwork = collected => {
           const pictureId = safeGetAttr(picture, 'id');
           const subjectAttr = safeGetAttr(picture, 'subject');
           let subjects = subjectAttr != null ? subjectAttr.split(',') : [];
-          const year = safeGetAttr(picture, 'year');          
+          const year = safeGetAttr(picture, 'year');
           if (pictureId == null) {
             throw `fdirs/${personId}/artwork.xml har et billede uden id-attribut.`;
           }
@@ -2414,8 +2514,13 @@ const build_artwork = collected => {
             markFileDirty(`fdirs/${subjectId}/portraits.xml`);
           });
 
+          const src = `/static/images/${personId}/${pictureId}.jpg`;
+          const size = imageSizeSync(src.replace(/^\//, ''));
+          const remoteUrl = build_museum_url(picture);
           const museumLink = build_museum_link(picture) || '';
+          const museumId = safeGetAttr(picture, 'museum');
           const artworkId = `${personId}/${pictureId}`;
+          const artist = collected.poets.get(personId);
           const content_raw =
             picture
               .toString()
@@ -2425,8 +2530,12 @@ const build_artwork = collected => {
           const artworkJson = {
             id: `${personId}/${pictureId}`,
             artistId: personId,
+            artist,
+            museum: get_museum_json(museumId),
+            remoteUrl,
             lang: person.lang,
-            src: `/static/images/${personId}/${pictureId}.jpg`,
+            src,
+            size,            
             content_lang: 'da',
             subjects,
             year,
@@ -2437,18 +2546,154 @@ const build_artwork = collected => {
         });
       }
     }
+    if (force_reload || isFileModified(portraitsFile)) {
+      // Fjern eksisterende portraits fra cache (i tilfælde af id er slettet)
+      Array.from(collected_artwork.keys())
+          .filter(k => k.indexOf(`portrait/${personId}/`) === 0)
+          .forEach(k => {
+            collected_artwork.delete(k);
+          });
+  
+      // From portraits.xml
+      const doc = loadXMLDoc(`fdirs/${personId}/portraits.xml`);
+      if (doc != null) {
+        onError = message => {
+          throw `fdirs/${personId}/portraits.xml: ${message}`;
+        };
+        doc.find('//pictures/picture').filter(picture => {
+          return safeGetAttr(picture, 'ref') == null;
+        }).forEach(pictureNode => {
+          const src = safeGetAttr(pictureNode, 'src');
+          const picture = get_picture(
+            pictureNode,
+            `/static/images/${personId}`,
+            collected,
+            onError
+          );
+          if (picture == null) {
+            onError('har et billede uden src- eller ref-attribut.');
+          }
+          const key = `portrait/${personId}/${src}`;
+          collected_artwork.set(key, picture);
+        });
+      }
+    }
+
+    // From works
+    collected.workids.get(personId).forEach(workId => {
+      const workFilename = `fdirs/${personId}/${workId}.xml`;
+      if (force_reload || isFileModified(workFilename)) {
+        // Fjern eksisterende work pictures fra cache
+        Array.from(collected_artwork.keys())
+        .filter(k => k.indexOf(`work/${personId}/${workId}`) === 0)
+        .forEach(k => {
+          collected_artwork.delete(k);
+        });
+
+        const doc = loadXMLDoc(workFilename);      
+        if (doc != null) {
+          onError = message => {
+            throw `${workFilename}: ${message}`;
+          };            
+          doc.find('//pictures/picture').filter(picture => {
+            return safeGetAttr(picture, 'ref') == null;
+          }).forEach(pictureNode => {
+            const src = safeGetAttr(pictureNode, 'src');
+            const picture = get_picture(
+              pictureNode,
+              `/static/images/${personId}`,
+              collected,
+              onError
+            );
+            if (picture == null) {
+              onError('har et billede uden src- eller ref-attribut.');
+            }
+            const key = `work/${personId}/${workId}/${src}`;
+            collected_artwork.set(key, picture);
+          });  
+        }
+      }
+    }); 
   });
   writeCachedJSON('collected.artwork', Array.from(collected_artwork));
   return collected_artwork;
 };
 
+const build_museums = collected => {
+  safeMkdir('static/api/museums');
+
+  let found_changes = false;
+
+  collected.poets.forEach((poet, poetId) => {
+    const portraitsFile = `fdirs/${poet.id}/portraits.xml`;
+    if (isFileModified(portraitsFile)) {
+      found_changes = true;
+    }
+    const artworkFile = `fdirs/${poet.id}/artwork.xml`;
+    if (poet.has_artwork) {
+      found_changes |= isFileModified(artworkFile);
+    }
+    collected.workids.get(poet.id).forEach(workId => {
+      const workFilename = `fdirs/${poetId}/${workId}.xml`;
+       found_changes |= isFileModified(workFilename);
+    });
+  });
+  if (!found_changes) {
+    return;
+  }
+
+  let allArtwork = Array.from(collected.artwork.values());
+  // Find portrætter som ikke har en ref og dermed inkluderet i collected.artwork      
+  collected.poets.forEach((poet, poetId) => {
+      // From works
+      collected.workids.get(poet.id).forEach(workId => {
+        const doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
+      }); 
+  });
+  Object.keys(museums).forEach(museumId => {
+    const museum = museums[museumId];
+    if (museum.name == null) {
+      // Vi tager kun museer med navne
+      return;
+    }
+
+    const artwork = allArtwork
+      .filter(a => a.museum != null && a.museum.id === museumId)
+      .map(picture => {
+        return {
+          artist: picture.artist,
+          lang: picture.lang,
+          src: picture.src,
+          size: picture.size,
+          remoteUrl: picture.remoteUrl,
+          content_lang: picture.content_lang,
+          content_html: picture.content_html,
+          subjects: picture.subjects,
+          year: picture.year,
+        };
+      });
+
+      const json = {
+        museum: {
+          id: museumId,
+          name: museum.name
+        },
+        artwork
+      }
+      const path = `static/api/museums/${museumId}.json`;
+      console.log(path);
+      writeJSON(path, json);
+  });
+};
+
 safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);
-collected.artwork = b('build_artwork', build_artwork, collected);
 // Build collected.works and collected.texts
 Object.assign(collected, b('works_first_pass', works_first_pass, collected));
 b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 collected.poets = b('build_poets_json', build_poets_json, collected);
+collected.artwork = b('build_artwork', build_artwork, collected);
+b('build_museums', build_museums, collected);
 b('build_mentions_json', build_mentions_json, collected);
 collected.textrefs = b('build_textrefs', build_textrefs, collected);
 build_dict_first_pass(collected);

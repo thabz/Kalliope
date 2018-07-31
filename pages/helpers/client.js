@@ -6,6 +6,8 @@ import type {
   Country,
   Poet,
   PoetId,
+  Museum,
+  MuseumId,
   Work,
   WorkId,
   Text,
@@ -90,6 +92,17 @@ export const work = async (
   error: ?Error
 ): Promise<FetchWorkResult> => {
   const path = `/static/api/${poetId}/${workId}-toc.json`;
+  return fetchJSON(path);
+};
+
+export type FetchMuseumResult = {
+  museum: Museum,
+  artwork: Array<PictureItem>,
+};
+export const museum = async (
+  museumId: MuseumId
+): Promise<FetchMuseumResult> => {
+  const path = `/static/api/museums/${museumId}.json`;
   return fetchJSON(path);
 };
 
