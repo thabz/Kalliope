@@ -13,11 +13,13 @@ import type {
 type ArtworkListProps = {
   lang: Lang,
   poet?: Poet,
+  hideArtist?: boolean,
+  hideMuseum?: boolean,
   artwork: Array<PictureItem>,
 };
 export default class PicturesGrid extends React.Component<ArtworkListProps> {
   render() {
-    const { lang, poet, artwork } = this.props;
+    const { lang, poet, artwork, hideArtist, hideMuseum } = this.props;
 
     const sortArtworks = artwork => {
       return artwork.sort((a, b) => {
@@ -104,6 +106,7 @@ export default class PicturesGrid extends React.Component<ArtworkListProps> {
       const renderedRows = rows.map((row, j) => {
         const renderedList = row.items.map((item, i) => {
           const picture = item.picture;
+
           const width = item.width;
           let pictureRendered = null;
           if (picture != null) {

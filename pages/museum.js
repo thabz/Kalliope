@@ -76,7 +76,7 @@ export default class extends React.Component<MuseumProps> {
           <Heading title={title} subtitle={_('Værker', lang)} />
           <KalliopeTabs lang={lang} selected="museum" />
           <div className="two-columns" style={{ lineHeight: 1.7 }}>
-            <PicturesGrid lang={lang} artwork={artwork} />
+            <PicturesGrid lang={lang} artwork={artwork} hideMuseum={true} />
           </div>
           <LangSelect lang={lang} path={requestPath} />
         </Main>

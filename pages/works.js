@@ -302,7 +302,12 @@ export default class extends React.Component<WorksProps> {
           <PoetTabs lang={lang} poet={poet} selected="works" />
           <div className="two-columns" style={{ lineHeight: 1.7 }}>
             <WorksList lang={lang} poet={poet} works={works} />
-            <PicturesGrid lang={lang} poet={poet} artwork={artwork} />
+            <PicturesGrid
+              lang={lang}
+              poet={poet}
+              artwork={artwork}
+              hideArtist={true}
+            />
             <style jsx>{`
               :global(.nodata) {
                 padding: 30px 0;
