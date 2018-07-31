@@ -281,7 +281,6 @@
   <works>1778,1778v,1779,andre</works>
 </person>
 
-<<<<<<< HEAD
 <person id="gotter" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich Wilhelm</firstname>
@@ -295,7 +294,11 @@
     <dead>
       <date>1797-03-18</date>
       <place>Gotha</place>
-=======
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="burger" country="de" lang="de" type="poet">
   <name>
     <firstname>Gottfried August</firstname>
@@ -309,7 +312,6 @@
     <dead>
       <date>1794-06-08</date>
       <place>Göttingen</place>
->>>>>>> master
     </dead>
   </period>
   <works>andre</works>
@@ -5619,7 +5621,6 @@
   <works>1760,1790,1791</works>
 </person>
 
-<<<<<<< HEAD
 <person id="kellgren" country="se" lang="sv" type="poet">
   <name>
     <firstname>Johan Henric</firstname>
@@ -5633,7 +5634,10 @@
     <dead>
       <date>1795-04-20</date>
       <place>Stockholm</place>
-=======
+    </dead>
+  </period>
+</person>
+
 <person id="tegner" country="se" lang="sv" type="poet">
   <name>
     <firstname>Esaias</firstname>
@@ -5647,13 +5651,9 @@
     <dead>
       <date>1846-11-02</date>
       <place>Växjö</place>
->>>>>>> master
     </dead>
   </period>
 </person>
-
-<<<<<<< HEAD
-=======
 
 >>>>>>> master
 <person id="stagnelius" country="se" lang="sv" type="poet">
