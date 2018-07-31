@@ -137,7 +137,7 @@
   <works>1634,1642,1643,1651</works>
 </person>
 
-<person id="hegedorn" country="de" lang="de" type="poet">
+<person id="hagedorn" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich von</firstname>
     <lastname>Hagedorn</lastname>
@@ -152,6 +152,7 @@
       <place>Hamburg</place>
     </dead>
   </period>
+  <works>andre</works>
 </person>
 
 <person id="gellert" country="de" lang="de" type="poet">
@@ -280,6 +281,7 @@
   <works>1778,1778v,1779,andre</works>
 </person>
 
+<<<<<<< HEAD
 <person id="gotter" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich Wilhelm</firstname>
@@ -293,6 +295,21 @@
     <dead>
       <date>1797-03-18</date>
       <place>Gotha</place>
+=======
+<person id="burger" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Gottfried August</firstname>
+    <lastname>Bürger</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1747-12-31</date>
+      <place>Molmerswende</place>
+    </born>
+    <dead>
+      <date>1794-06-08</date>
+      <place>Göttingen</place>
+>>>>>>> master
     </dead>
   </period>
   <works>andre</works>
@@ -368,6 +385,24 @@
     <dead>
       <date>1805-05-09</date>
       <place>Weimar</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
+<person id="matthisson" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich von</firstname>
+    <lastname>Matthisson</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1761-01-23</date>
+      <place>Hohendodeleben, Magdeburg</place>
+    </born>
+    <dead>
+      <date>1831-03-12</date>
+      <place>Wörlitz, Dessau</place>
     </dead>
   </period>
   <works>andre</works>
@@ -1157,6 +1192,7 @@
     </born>
     <dead>
       <date>1677-05-24</date>
+      <place>Kbh.</place>
     </dead>
   </period>
   <works>andre</works>
@@ -3355,6 +3391,23 @@
   <works>1857,1858</works>
 </person>
 
+<person id="daugaard" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Christine</firstname>
+    <lastname>Daugaard</lastname>
+    <fullname>Christine Margaretha Daugaard </fullname>
+    <pseudonym>Erica</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1831-01-30</date>
+    </born>
+    <dead>
+      <date>1917-12-18</date>
+    </dead>
+  </period>
+  <works>1856,1861,1865</works>
+</person>
 
 <person id="richardt" country="dk" lang="da" type="poet">
   <name>
@@ -3570,6 +3623,25 @@
     </dead>
   </period>
   <works>1875,1911,andre</works>
+</person>
+
+<person id="dolleris" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Andreas</firstname>
+    <lastname>Dolleris</lastname>
+    <fullname>Jørgen Andreas Dolleris</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1850-10-16</date>
+      <place>Skyum, Thy</place>
+    </born>
+    <dead>
+      <date>1925-08-27</date>
+      <place>Vejle</place>
+    </dead>
+  </period>
+  <works>1892,1894,1904</works>
 </person>
 
 <person id="lange" country="dk" lang="da" type="poet">
@@ -4326,6 +4398,24 @@
   </period>
 </person>
 
+<person id="scarron" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Paul</firstname>
+    <lastname>Scarron</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1610-07-01 ca.</date>
+      <note>Døbt 04-07-1610</note>
+      <place>Paris</place>
+    </born>
+    <dead>
+      <date>1660-10-06</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+</person>
+
 <person id="corneille" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Pierre</firstname>
@@ -4737,9 +4827,11 @@
   <period>
     <born>
       <date>1728-09-06</date>
+      <place>Christiania</place>
     </born>
     <dead>
       <date>1765-01-21</date>
+      <place>Christiania</place>
     </dead>
   </period>
   <works>andre</works>
@@ -5527,6 +5619,7 @@
   <works>1760,1790,1791</works>
 </person>
 
+<<<<<<< HEAD
 <person id="kellgren" country="se" lang="sv" type="poet">
   <name>
     <firstname>Johan Henric</firstname>
@@ -5540,10 +5633,29 @@
     <dead>
       <date>1795-04-20</date>
       <place>Stockholm</place>
+=======
+<person id="tegner" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Esaias</firstname>
+    <lastname>Tegnér</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1782-11-13</date>
+      <place>Värmland</place>
+    </born>
+    <dead>
+      <date>1846-11-02</date>
+      <place>Växjö</place>
+>>>>>>> master
     </dead>
   </period>
 </person>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 <person id="stagnelius" country="se" lang="sv" type="poet">
   <name>
     <firstname>Erik Johan</firstname>
@@ -6289,7 +6401,7 @@
       <place>Missolonghi, Grækenland</place>
     </dead>
   </period>
-  <works>1812,1813,1813a,1814,1814a,1814b,1815,1816,1816a,1817,1817a,1818,1819,1821,1821a,1821b,andre</works>
+  <works>1812,1812c,1813,1813a,1814,1814a,1814b,1815,1816,1816a,1817,1817a,1818,1819,1821,1821a,1821b,andre</works>
 </person>
 
 <person id="shelley" country="gb" lang="en" type="poet">
@@ -7518,6 +7630,24 @@
   </period>
 </person>
 
+<person id="lorentzen" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>C. A.</firstname>
+    <lastname>Lorentzen</lastname>
+    <fullname>Christian August Lorentzen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1749-08-01</date>
+      <place>Sønderborg</place>
+    </born>
+    <dead>
+      <date>1828-05-08</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
 <person id="gierlew" country="dk" lang="da" type="person">
   <name>
     <firstname>Andreas Chr.</firstname>
@@ -7552,6 +7682,25 @@
     </dead>
   </period>
 </person>
+
+<person id="lund" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>J.L.</firstname>
+    <lastname>Lund</lastname>
+    <fullname>Johann Ludewig Gebhard Lund</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1777-10-16</date>
+      <place>Kiel</place>
+    </born>
+    <dead>
+      <date>1867-03-03</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
 
 <person id="jensenca" country="dk" lang="da" type="artist">
   <name>
@@ -7661,6 +7810,25 @@
     </dead>
   </period>
 </person>
+
+<person id="koebke" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>Christen</firstname>
+    <lastname>Købke</lastname>
+    <fullname>Christen Schiellerup Købke</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1810-05-26</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1848-02-07</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
 
 <person id="marstrand" country="dk" lang="da" type="artist">
   <name>

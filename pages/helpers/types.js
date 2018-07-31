@@ -11,6 +11,7 @@ export type Country = 'dk' | 'gb' | 'de' | 'fr' | 'se' | 'no' | 'it' | 'us';
 
 export type PoetId = string;
 export type WorkId = string;
+export type MuseumId = string;
 
 export type Error = { statusCode: number };
 
@@ -57,6 +58,11 @@ export type Poet = {
   has_prose: boolean,
   has_portraits: boolean,
   has_square_portrait: boolean,
+};
+
+export type Museum = {
+  id: MuseumId,
+  name: string,
 };
 
 export type Work = {
