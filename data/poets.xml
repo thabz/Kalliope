@@ -192,7 +192,6 @@
   <works>andre</works>
 </person>
 
-
 <person id="klopstock" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich Gottlieb</firstname>
@@ -209,6 +208,23 @@
     </dead>
   </period>
   <works>1749,1758,1769,1771,1784,1787,andre</works>
+</person>
+
+<person id="ramler" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Karl Wilhelm</firstname>
+    <lastname>Ramler</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1725-02-25</date>
+      <place>Kolberg</place>
+    </born>
+    <dead>
+      <date>1798-04-11</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
 </person>
 
 <person id="lessing" country="de" lang="de" type="poet">
