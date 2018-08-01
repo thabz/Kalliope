@@ -254,6 +254,10 @@ const museums = {
     url: 'http://collection.smk.dk/#/detail/$invNr',
     name: 'Statens Museum for Kunst',
   },
+  gleimhaus: {
+    url: 'https://www.museum-digital.de/nat/index.php?t=objekt&oges=$objId',
+    name: 'Gleimhaus, Halberstadt',
+  },
   ribe: {
     url: `https://ribekunstmuseum.dk/samling/$invNr`,
     name: 'Ribe Kunstmuseum',
