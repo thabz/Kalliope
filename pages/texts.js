@@ -65,6 +65,9 @@ export default class Texts extends React.Component<TextsProps> {
       if (line.startsWith('Ö')) {
         letter = 'Ø';
       }
+      if (line.startsWith('È')) {
+        letter = 'E';
+      }
       letter = letter.toUpperCase();
       let array = groups.get(letter) || [];
       array.push(linePair);

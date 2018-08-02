@@ -114,10 +114,11 @@ export default class extends React.Component<WorkProps> {
       return <Note key={'note' + i} note={note} lang={lang} />;
     });
 
-    const workPictures = pictures.map(p => {
+    const workPictures = pictures.map((p, i) => {
       return (
         <Picture
           pictures={[p]}
+          key={'picture'+i}
           contentLang={p.content_lang || 'da'}
           lang={lang}
         />

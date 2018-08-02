@@ -137,7 +137,7 @@
   <works>1634,1642,1643,1651</works>
 </person>
 
-<person id="hegedorn" country="de" lang="de" type="poet">
+<person id="hagedorn" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich von</firstname>
     <lastname>Hagedorn</lastname>
@@ -152,6 +152,7 @@
       <place>Hamburg</place>
     </dead>
   </period>
+  <works>andre</works>
 </person>
 
 <person id="gellert" country="de" lang="de" type="poet">
@@ -280,6 +281,24 @@
   <works>1778,1778v,1779,andre</works>
 </person>
 
+<person id="burger" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Gottfried August</firstname>
+    <lastname>Bürger</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1747-12-31</date>
+      <place>Molmerswende</place>
+    </born>
+    <dead>
+      <date>1794-06-08</date>
+      <place>Göttingen</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="holty" country="de" lang="de" type="poet">
   <name>
     <firstname>L.H.C.</firstname>
@@ -318,6 +337,24 @@
   <works>1808,1819,1832,romi,andre</works>
 </person>
 
+<person id="stolbergf" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich Leopold zu</firstname>
+    <lastname>Stolberg-Stolberg</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1750-11-07</date>
+      <place>Bramstedt, Holstein</place>
+    </born>
+    <dead>
+      <date>1819-12-05</date>
+      <place>Gut Sondermühlen bei Osnabrück</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="schiller" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich von</firstname>
@@ -332,6 +369,24 @@
     <dead>
       <date>1805-05-09</date>
       <place>Weimar</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
+<person id="matthisson" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich von</firstname>
+    <lastname>Matthisson</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1761-01-23</date>
+      <place>Hohendodeleben, Magdeburg</place>
+    </born>
+    <dead>
+      <date>1831-03-12</date>
+      <place>Wörlitz, Dessau</place>
     </dead>
   </period>
   <works>andre</works>
@@ -616,6 +671,8 @@
   <name>
     <firstname>Per</firstname>
     <lastname>Ræv Lille</lastname>
+    <alternative>Peder Reff</alternative>
+    <alternative>Per Reff Lyllæ</alternative>
   </name>
   <period>
     <born>
@@ -1119,6 +1176,7 @@
     </born>
     <dead>
       <date>1677-05-24</date>
+      <place>Kbh.</place>
     </dead>
   </period>
   <works>andre</works>
@@ -1982,6 +2040,24 @@
   </period>
   <works>1772,1772a,1786,1791,1793,andre</works>
 </person>
+
+<person id="juel" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>Jens</firstname>
+    <lastname>Juel</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1745-05-12</date>
+      <place>Balslev, Fyn</place>
+    </born>
+    <dead>
+      <date>1802-12-27</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
 
 <person id="obelitz" country="dk" lang="da" type="poet">
   <name>
@@ -3109,12 +3185,13 @@
   <period>
     <born>
       <date>1818-06-23</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1885-04-27</date>
     </dead>
   </period>
-  <works>1840s,1840k,1845,1858,1875,1877,efterladte</works>
+  <works>1840s,1840k,1842,1844,1845,1858,1875,1877,1885,andre</works>
 </person>
 
 <person id="recke" country="dk" lang="da" type="poet">
@@ -3298,6 +3375,23 @@
   <works>1857,1858</works>
 </person>
 
+<person id="daugaard" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Christine</firstname>
+    <lastname>Daugaard</lastname>
+    <fullname>Christine Margaretha Daugaard </fullname>
+    <pseudonym>Erica</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1831-01-30</date>
+    </born>
+    <dead>
+      <date>1917-12-18</date>
+    </dead>
+  </period>
+  <works>1856,1861,1865</works>
+</person>
 
 <person id="richardt" country="dk" lang="da" type="poet">
   <name>
@@ -3515,6 +3609,24 @@
   <works>1875,1911,andre</works>
 </person>
 
+<person id="dolleris" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Andreas</firstname>
+    <lastname>Dolleris</lastname>
+    <fullname>Jørgen Andreas Dolleris</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1850-10-16</date>
+      <place>Skyum, Thy</place>
+    </born>
+    <dead>
+      <date>1925-08-27</date>
+      <place>Vejle</place>
+    </dead>
+  </period>
+  <works>1892,1894,1904</works>
+</person>
 
 <person id="lange" country="dk" lang="da" type="poet">
   <name>
@@ -3533,6 +3645,24 @@
     </dead>
   </period>
   <works>1878,1894,1902,1906,1915</works>
+</person>
+
+<person id="kroyer" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>P.S.</firstname>
+    <lastname>Krøyer</lastname>
+    <fullname>Peder Severin Krøyer</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1851-07-23</date>
+      <place>Stavanger</place>
+    </born>
+    <dead>
+      <date>1909-11-21</date>
+      <place>Skagen</place>
+    </dead>
+  </period>
 </person>
 
 <person id="ipsen" country="dk" lang="da" type="poet">
@@ -3813,6 +3943,26 @@
     </dead>
   </period>
   <works>1895,1915,1917,1920,1929,andre</works>
+</person>
+
+<person id="blicherclausen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Jenny</firstname>
+    <lastname>Blicher-Clausen</lastname>
+    <fullname>Jenny Frederikke Blicher-Clausen</fullname>
+    <pseudonym>John Bentsen</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1865-07-29</date>
+      <place>Durup Sogn</place>
+    </born>
+    <dead>
+      <date>1907-02-04</date>
+      <place>Frederiksberg</place>
+    </dead>
+  </period>
+  <works>1885,1888,1890,1895,1900,1901,1903,1907</works>
 </person>
 
 <person id="claussen" country="dk" lang="da" type="poet">
@@ -4252,6 +4402,24 @@
   </period>
 </person>
 
+<person id="scarron" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Paul</firstname>
+    <lastname>Scarron</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1610-07-01 ca.</date>
+      <note>Døbt 04-07-1610</note>
+      <place>Paris</place>
+    </born>
+    <dead>
+      <date>1660-10-06</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+</person>
+
 <person id="corneille" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Pierre</firstname>
@@ -4663,9 +4831,11 @@
   <period>
     <born>
       <date>1728-09-06</date>
+      <place>Christiania</place>
     </born>
     <dead>
       <date>1765-01-21</date>
+      <place>Christiania</place>
     </dead>
   </period>
   <works>andre</works>
@@ -5453,6 +5623,24 @@
   <works>1760,1790,1791</works>
 </person>
 
+<person id="tegner" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Esaias</firstname>
+    <lastname>Tegnér</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1782-11-13</date>
+      <place>Värmland</place>
+    </born>
+    <dead>
+      <date>1846-11-02</date>
+      <place>Växjö</place>
+    </dead>
+  </period>
+</person>
+
+
 <person id="stagnelius" country="se" lang="sv" type="poet">
   <name>
     <firstname>Erik Johan</firstname>
@@ -6198,7 +6386,7 @@
       <place>Missolonghi, Grækenland</place>
     </dead>
   </period>
-  <works>1812,1813,1813a,1814,1814a,1814b,1815,1816,1816a,1817,1817a,1818,1819,1821,1821a,1821b,andre</works>
+  <works>1812,1812c,1813,1813a,1814,1814a,1814b,1815,1816,1816a,1817,1817a,1818,1819,1821,1821a,1821b,andre</works>
 </person>
 
 <person id="shelley" country="gb" lang="en" type="poet">
@@ -7424,6 +7612,24 @@
   </period>
 </person>
 
+<person id="lorentzen" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>C. A.</firstname>
+    <lastname>Lorentzen</lastname>
+    <fullname>Christian August Lorentzen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1749-08-01</date>
+      <place>Sønderborg</place>
+    </born>
+    <dead>
+      <date>1828-05-08</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
 <person id="gierlew" country="dk" lang="da" type="person">
   <name>
     <firstname>Andreas Chr.</firstname>
@@ -7432,15 +7638,16 @@
   <period>
     <born>
       <date>1774-08-25</date>
+      <place>Roskilde</place>
     </born>
     <dead>
       <date>1845-09-02</date>
+      <place>Kristiania</place>
     </dead>
-    <!-- Detaljer fra https://www.geni.com/people/Andreas-Christian-Gierlew/6000000016206700091 -->
   </period>
 </person>
 
-<person id="thorvaldsen" country="dk" lang="da" type="person">
+<person id="thorvaldsen" country="dk" lang="da" type="artist">
   <name>
     <firstname>Bertel</firstname>
     <lastname>Thorvaldsen</lastname>
@@ -7458,7 +7665,45 @@
   </period>
 </person>
 
-<person id="eckersberg" country="dk" lang="da" type="person">
+<person id="lund" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>J.L.</firstname>
+    <lastname>Lund</lastname>
+    <fullname>Johann Ludewig Gebhard Lund</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1777-10-16</date>
+      <place>Kiel</place>
+    </born>
+    <dead>
+      <date>1867-03-03</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
+
+<person id="jensenca" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>C.A.</firstname>
+    <lastname>Jensen</lastname>
+    <fullname>Christian Albrecht Jensen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1782-06-26</date>
+      <place>Bredsted</place>
+    </born>
+    <dead>
+      <date>1870-07-13</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
+
+<person id="eckersberg" country="dk" lang="da" type="artist">
   <name>
     <firstname>C.W.</firstname>
     <lastname>Eckersberg</lastname>
@@ -7472,6 +7717,114 @@
     </born>
     <dead>
       <date>1853-07-22</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
+<person id="bissen" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>H.W.</firstname>
+    <lastname>Bissen</lastname>
+    <fullname>Hermann Wilhelm Bissen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1798-10-13</date>
+      <place>Slesvig by</place>
+    </born>
+    <dead>
+      <date>1868-03-10</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
+<person id="kuchler" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>Albert</firstname>
+    <lastname>Küchler</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1803-05-02</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1886-02-16</date>
+      <place>Rom</place>
+    </dead>
+  </period>
+</person>
+
+<person id="hansenc" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>Constantin</firstname>
+    <lastname>Hansen</lastname>
+    <fullname>Carl Christian Constantin Hansen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1804-11-03</date>
+      <place>Rom</place>
+    </born>
+    <dead>
+      <date>1880-03-29</date>
+      <place>Frederiksberg</place>
+    </dead>
+  </period>
+</person>
+
+<person id="roed" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>Jørgen</firstname>
+    <lastname>Roed</lastname>
+    <fullname>Jørgen Pedersen Roed</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1808-01-13</date>
+      <place>Ringsted</place>
+    </born>
+    <dead>
+      <date>1888-08-08</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
+<person id="koebke" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>Christen</firstname>
+    <lastname>Købke</lastname>
+    <fullname>Christen Schiellerup Købke</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1810-05-26</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1848-02-07</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
+
+<person id="marstrand" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>Wilhelm</firstname>
+    <lastname>Marstrand</lastname>
+    <fullname>Nicolai Wilhelm Marstrand</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1810-12-24</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1873-03-25</date>
       <place>København</place>
     </dead>
   </period>

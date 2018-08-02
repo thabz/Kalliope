@@ -209,6 +209,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
               ref={domElement => {
                 this.searchField = domElement;
               }}
+              title={placeholder}
               defaultValue={query}
               className="search-field"
               placeholder={placeholder}
@@ -456,7 +457,7 @@ export class PoetTabs extends React.Component<PoetTabsProps> {
       {
         id: 'works',
         title: _('Værker', lang),
-        hide: !poet.has_works,
+        hide: !poet.has_works && !poet.has_artwork,
         url: Links.worksURL(lang, poet.id),
       },
       {
@@ -501,7 +502,14 @@ type KalliopeTabsProps = {
   lang: Lang,
   country?: Country,
   query?: ?string,
-  selected: 'index' | 'poets' | 'keywords' | 'dictionary' | 'about' | 'search',
+  selected:
+    | 'index'
+    | 'poets'
+    | 'keywords'
+    | 'dictionary'
+    | 'about'
+    | 'search'
+    | 'museum',
 };
 export class KalliopeTabs extends React.Component<KalliopeTabsProps> {
   render() {
