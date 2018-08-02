@@ -23,6 +23,7 @@
     "xmldom": "^0.1.27"
   },
   "devDependencies": {
+    "deasync": "^0.1.13",
     "async": "^2.5.0",
     "babel-eslint": "^7.1.1",
     "babel-plugin-transform-flow-strip-types": "^6.21.0",
