@@ -164,7 +164,7 @@ export default class extends React.Component<TextComponentProps> {
   componentDidUpdate() {
     if (typeof location !== undefined) {
       const hash = location.hash;
-      if (hash != null) {
+      if (hash != null && hash.length > 0) {
         location.href = hash;
       }
     }
