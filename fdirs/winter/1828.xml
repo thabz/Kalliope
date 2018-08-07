@@ -1,120 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1828" author="winter" status="incomplete" type="poetry">
+<kalliopework id="1828" author="winter" status="complete" type="poetry">
 <workhead>
    <title>Digte</title>
    <year>1828</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+   <notes>
+       <note>Teksten følger Christian Winther: <i>Digte</i>, C. A. Reitzel, Kbh., 1828.</note>
+       <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun indlysende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+   </notes>
+   <pictures>
+       <picture type="titlepage" src="1828-p1.jpg">Titelbladet til <i>Digte</i> (1828) lyder ,,Digte, / af / Christian Winther. //  Kjöbenhavn. / Forlagt paa C. A. Reitzels Forlag / i Sabritius de Tengnagels Bogtrykkeri / 1828.</picture>
+   </pictures>
+   <source facsimile="115408015124_color" facsimile-pages-num="168" facsimile-pages-offset="8">Christian Winther: <i>Digte</i>, C. A. Reitzel, Kbh., 1828.</source>
 </workhead>
 <workbody>
-
-<poem id="winter1999032204">
-<head>
-   <title>Mismod</title>
-   <toctitle>Mismod</toctitle>
-   <indextitle>Mismod</indextitle>
-   <firstline>Hvor tomt mit Hjerte! ak, hvor øde!</firstline>
-   <quality>korrektur1</quality>
-   <!-- TODO: Dig eller dig samt du eller Du? -->
-</head>
-<body>
-Hvor tomt mit Hjerte! ak, hvor øde!
-Min Himmel er saa dunkelgraa,
-Ei Nattergalens Toner søde
-Kan mere mig til Sjælen gaae.
-Hvor mat og ussel selv min Klage!
-Der er ei Gnist af Kraft tilbage,
-O! gid jeg under Mulden laae!
-
-Jeg har ei Fryd, jeg har ei Smerte,
-Jeg kan ei Blomstens Duft forstaae,
-Og Tornen stikker ei mit Hjerte,
-Thi det har reent forglemt at slaae;
-Mig Livets stærke Vexelsange
-Gjør hverken freidig eller bange,
-Den indre Stræng de ikke naae.
-
-Naar mine vakkre Venners Glæde
-Mig lokker fra min stille Vraa,
-Maa Rankens purpurgyldne Væde
-Som Vand mig over Tungen gaae,
-Og deres Haandtryk, deres Blikke,
-Saa ærlige, dem kan jeg ikke
-Som fordum ærligt svare paa.
-
-Der var engang en herlig Pige,
-Som kjærligt mig i Øiet saae;
-Det Blik var da mit Himmerige,
-Thi Himlen selv var ei saa blaa!
-Nu kan i hendes Børnegruppe
-Den usle, kolde, unge Gubbe
-Med slukt Erindring roligt staae.
-
-Ei Alvor, Skjemt, det Bittre, Søde,
-Ei Dag, ei Nat med Stjerner smaa,
-Ei freidigt Liv, og ei det Døde
-Kan bringe Hjertet til at slaae;
-Hvor mat og ussel selv min Klage!
-Der er ei Gnist af Kraft tilbage, -
-O! gid jeg under Mulden laae!
-</body>
-</poem>
 
 <poem id="winter1999070501">
 <head>
    <title>Studentervise</title>
-   <toctitle>Studentervise</toctitle>
-   <indextitle>Studentervise</indextitle>
    <firstline>Her under Nathimlens rolige Skygge</firstline>
-   <quality>korrektur1</quality>
+   <source pages="3-4"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Her under Nathimlens rolige Skygge
 Vil vi, o! Frihed, dit Tempel opbygge,
 Glædernes milde Pauluner opslaae;
-   Trofaste Brødre! Hymnen skal stige,
-   Stjernen skal vidne, at Ingen vil svige,
+      Trofaste Brødre! Hymnen skal stige,
+      Stjernen skal vidne, at Ingen vil svige,
 Herrer vi ere i Aandernes Rige,
 Vi er den Stamme, som evigt skal staae!
 
-Chor.
+<nonum><center><w>Chor.</w></center></nonum>
 Herrer vi ere i Aandernes Rige,
 Vi er den Stamme, som evigt skal staae!
 
 Vi ere Værn om den helligste Have,
 Der skal vi kraftigen pløie og grave,
 Der skal vi fredeligt vande og saae;
-   Enige Brødre! i Sorg og i Gammen
-   Knytter de mægtige Vaaben tilsammen,
+      Enige Brødre! i Sorg og i Gammen
+      Knytter de mægtige Vaaben tilsammen,
 Haven vil trives, og evigt skal Stammen
 Herligen grønnes, og aldrig forgaae!
 
-Chor.
+<nonum><center><w>Chor.</w></center></nonum>
 Haven vil trives, og evigt skal Stammen
 Herligen grønnes, og aldrig forgaae!
 
 Bonde og Sømand og Kriger med Sværdet,
 Roret og Plougen, de staae uforfærdet,
 Bygge paa Dannemarks Gjærde og Vold;
-   Høiskolens Sønner staae ikke tilbage,
-   Ogsaa vi kjæmpe de Nætter og Dage,
+      Høiskolens Sønner staae ikke tilbage,
+      Ogsaa vi kjæmpe de Nætter og Dage,
 Dristigt vi Bogen og Pennen vil tage,
 Det er de Mærker, vi føre i Skjold.
 
-Chor.
+<nonum><center><w>Chor.</w></center></nonum>
 Dristigt vi Bogen og Pennen vil tage,
 Det er de Mærker, vi føre i Skjold.
 
 Giv mig dit Haandtag, min Ven og min Broder,
 Sværg mig at elske vor kjærlige Moder,
 Blusser din Kind ei ved Dannemarks Navn?
-   Naar hendes Bud du vil øve og ære,
-   Den hendes Datter, dit Sind mon begjære, <!-- Da] Den ? -->
+      Naar hendes Bud du vil øve og ære,
+      Den hendes Datter, dit Sind mon begjære,
 Skal for din Troskab Belønningen være,
 Den skal Du høste i Kjærligheds Favn.
 
-Chor.
+<nonum><center><w>Chor.</w></center></nonum>
 Troskab vi sværge, og Lønnen skal være
 Troskab beredt udi Kjærligheds Favn!
 
@@ -126,11 +79,13 @@ Selv udi Graven ei Flammen udgaae!
 Herrer vi ere i Aandernes Rige,
 Vi er den Stamme, som evigt skal staae!
 
-Chor.
+<nonum><center><w>Chor.</w></center></nonum>
 Herrer vi ere i Aandernes Rige,
 Vi er den Stamme, som evigt skal staae!
 </body>
 </poem>
+
+<!-- TODO: Skiønheds Magt -->
 
 <poem id="winter1999070502">
 <head>
@@ -143,6 +98,7 @@ Vi er den Stamme, som evigt skal staae!
       <note>Digtets melodi, metrik og refræn er baseret på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
    </notes>
    <keywords>moellerpm</keywords>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -235,6 +191,7 @@ Thi lad os være Børn i Aften!
    <indextitle>Indskrivter paa min Søsters Rokkebrev</indextitle>
    <firstline>Da Adam kom fra Paradiis</firstline>
    <keywords>shakespeare</keywords>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -524,12 +481,69 @@ Og saa er mit Levnetsløb til Ende.
 </body>
 </poem>
 
+<!-- TODO: Ellinors Sværmerie -->
+
+<poem id="winter1999032204">
+<head>
+   <title>Mismod</title>
+   <toctitle>Mismod</toctitle>
+   <indextitle>Mismod</indextitle>
+   <firstline>Hvor tomt mit Hjerte! ak, hvor øde!</firstline>
+   <source pages=""/>
+   <quality>korrektur1</quality>
+   <!-- TODO: Dig eller dig samt du eller Du? -->
+</head>
+<body>
+Hvor tomt mit Hjerte! ak, hvor øde!
+Min Himmel er saa dunkelgraa,
+Ei Nattergalens Toner søde
+Kan mere mig til Sjælen gaae.
+Hvor mat og ussel selv min Klage!
+Der er ei Gnist af Kraft tilbage,
+O! gid jeg under Mulden laae!
+
+Jeg har ei Fryd, jeg har ei Smerte,
+Jeg kan ei Blomstens Duft forstaae,
+Og Tornen stikker ei mit Hjerte,
+Thi det har reent forglemt at slaae;
+Mig Livets stærke Vexelsange
+Gjør hverken freidig eller bange,
+Den indre Stræng de ikke naae.
+
+Naar mine vakkre Venners Glæde
+Mig lokker fra min stille Vraa,
+Maa Rankens purpurgyldne Væde
+Som Vand mig over Tungen gaae,
+Og deres Haandtryk, deres Blikke,
+Saa ærlige, dem kan jeg ikke
+Som fordum ærligt svare paa.
+
+Der var engang en herlig Pige,
+Som kjærligt mig i Øiet saae;
+Det Blik var da mit Himmerige,
+Thi Himlen selv var ei saa blaa!
+Nu kan i hendes Børnegruppe
+Den usle, kolde, unge Gubbe
+Med slukt Erindring roligt staae.
+
+Ei Alvor, Skjemt, det Bittre, Søde,
+Ei Dag, ei Nat med Stjerner smaa,
+Ei freidigt Liv, og ei det Døde
+Kan bringe Hjertet til at slaae;
+Hvor mat og ussel selv min Klage!
+Der er ei Gnist af Kraft tilbage, -
+O! gid jeg under Mulden laae!
+</body>
+</poem>
+
+
 <poem id="winter1999070504">
 <head>
    <title>Vinterlandskab</title>
    <toctitle>Vinterlandskab</toctitle>
    <indextitle>Vinterlandskab</indextitle>
    <firstline>Sneen dækker Mark og Mose</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -636,6 +650,7 @@ Tegned jeg med Blæk og Pen.
    <toctitle>Phantasie</toctitle>
    <indextitle>Phantasie</indextitle>
    <firstline>Hil dig, deilige Møe! du stolte Datter af Jutland</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
    <keywords>heksameter</keywords>
 </head>
@@ -731,10 +746,9 @@ Dybt sig bøier i Støv din Tjener, cimbriske Skjoldmøe!
 
 <poem id="winter1999070506">
 <head>
-   <title>Naar kommer Høsten</title>
-   <toctitle>Naar kommer Høsten</toctitle>
-   <indextitle>Naar kommer Høsten</indextitle>
+   <title>Naar kommer Høsten?</title>
    <firstline>Naar Pidsken den knalder</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -802,6 +816,7 @@ Mit søde, lille Hjerte! skal være min Deel!
    <toctitle>Hilsen</toctitle>
    <indextitle>Hilsen</indextitle>
    <firstline>Ak! du sidder fjernt derude</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -848,6 +863,7 @@ Mig det vorder Vinter først.
    <toctitle>Flyv, Fugl! Flyv</toctitle>
    <indextitle>Flyv, Fugl! Flyv</indextitle>
    <firstline>Flyv, Fugl! flyv over Furresøens Vove!</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -904,6 +920,7 @@ Siig det, du veed det jo nok.
    <toctitle>Haandværkssvenden synger</toctitle>
    <indextitle>Haandværkssvenden synger</indextitle>
    <firstline>Lille Cathrine!</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -978,6 +995,7 @@ Da skal jeg lystig og let
    <toctitle>O! var jeg!</toctitle>
    <indextitle>O! var jeg!</indextitle>
    <firstline>O! var jeg Kammen i dit Haar!</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -1018,12 +1036,15 @@ Jeg er Dig mindre end din Hund!
 </body>
 </poem>
 
+<!-- TODO: Afskeed, p. 47ff -->
+
 <poem id="winter1999032203">
 <head>
    <title>Sonet</title>
    <toctitle>Sonet</toctitle>
    <indextitle>Sonet</indextitle>
    <firstline>Som naar en Draabe, født i Morgenrøden</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
    <keywords>sonnet</keywords>
 </head>
@@ -1048,12 +1069,19 @@ Indtil den strækker mig paa Gravens Leie!
 </body>
 </poem>
 
+<!-- TODO: Sonet, p. 43 -->
+
+<!-- TODO: Sonet, p. 54 -->
+
+<!-- TODO: Sonet, p. 55 -->
+
+<!-- TODO: Sonet, p. 56 -->
+
 <poem id="winter1999070510">
 <head>
    <title>Hvordan hun er?</title>
-   <toctitle>Hvordan hun er?</toctitle>
-   <indextitle>Hvordan hun er?</indextitle>
    <firstline>Hun skildres ei med Pen og Blæk</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -1179,12 +1207,15 @@ Som ingen Tunge kan udsige.
 </body>
 </poem>
 
+<!-- TODO: Bjergmænd -->
+
 <poem id="winter1999070511">
 <head>
    <title>Rankens Datter</title>
    <toctitle>Rankens Datter</toctitle>
    <indextitle>Rankens Datter</indextitle>
    <firstline>Naar Druens smækkre Moder</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -1250,6 +1281,7 @@ Ved hendes Altars Fod!
    <toctitle>Amor Jesuita</toctitle>
    <indextitle>Amor Jesuita</indextitle>
    <firstline>Jeg laae i Græsset nys</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -1396,6 +1428,7 @@ De smaa Jesuiter.
    <toctitle>Jeg elskte Fogdens Datter</toctitle>
    <indextitle>Jeg elskte Fogdens Datter</indextitle>
    <firstline>Jeg elskte Fogdens Datter</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -1446,12 +1479,15 @@ Men Helved i mit Bryst.
 </body>
 </poem>
 
+<!-- TODO: Sangeren søger sin Elskte -->
+
 <poem id="winter1999070514">
 <head>
    <title>Ridder Kalv</title>
    <toctitle>Ridder Kalv</toctitle>
    <indextitle>Ridder Kalv</indextitle>
    <firstline>Kong Wolmer stod i Halle</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -1574,6 +1610,8 @@ Med stærke Kalve to.«
 </body>
 </poem>
 
+<!-- TODO: Romanze -->
+
 <section level="1">
 <head>
    <toctitle>Træsnit</toctitle>
@@ -1586,6 +1624,7 @@ Med stærke Kalve to.«
    <toctitle>Motto</toctitle>
    <indextitle>Motto</indextitle>
    <firstline>Wo sich vier Arme, geschliessen in ein</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -1604,6 +1643,7 @@ Laub war nie so dünne, dess Statt man funde da.
    <toctitle>Vignet</toctitle>
    <indextitle>Vignet</indextitle>
    <firstline>Troer ei, at Elskovs Gud kun boer</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -1730,6 +1770,7 @@ Af Kjærlighed paa Landet.
    <toctitle>Hans og Grethe</toctitle>
    <indextitle>Hans og Grethe</indextitle>
    <firstline>Naar Kukkeren den sover, og Nattergalen slaaer</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -1796,6 +1837,7 @@ Da traadte frem af Busken vor gamle Herremand.
    <toctitle>Steffen og Anne</toctitle>
    <indextitle>Steffen og Anne</indextitle>
    <firstline>Lidt uden for vor By ved det røde Vangeled</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -1952,6 +1994,7 @@ Og Anne? - ja hun sørger vel endnu en lille Stund.
    <toctitle>Henrik og Else</toctitle>
    <indextitle>Henrik og Else</indextitle>
    <firstline>Nei, nei min ædle Herre! I tro mig om I kan!</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -2098,6 +2141,7 @@ Thi dem er der, Gud skee Lov, dog endnu mange af!
    <toctitle>Jørgen og Trine</toctitle>
    <indextitle>Jørgen og Trine</indextitle>
    <firstline>I græsbegroede Enge, tæt ved Østersøens Bugt</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -2219,6 +2263,7 @@ Mon hun vel ogsaa volder hans Hjerte saadan Meen?
    <toctitle>Johan og Lise</toctitle>
    <indextitle>Johan og Lise</indextitle>
    <firstline>Jeg sad i vores Hauge med Naalen i min Haand</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -2350,6 +2395,7 @@ Og nynner denne Vise til; - den er kun saa som saa!
    <toctitle>Christen og Lene</toctitle>
    <indextitle>Christen og Lene</indextitle>
    <firstline>I Kroen er der lystigt med Spil og med Sang</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -2536,6 +2582,7 @@ Nyhugget, malet, som ingen i vort Sogn!«
    <toctitle>Svend og Inger</toctitle>
    <indextitle>Svend og Inger</indextitle>
    <firstline>Dybt nede mellem Banker retsom i en Tragt</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -2755,6 +2802,7 @@ Med Hjertet fuldt af Vemod og trofast Kjærlighed.
    <notes>
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -2949,6 +2997,7 @@ Ak! det er Asbjørn Bonde og Thora, hans Brud!
    <notes>
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -3080,6 +3129,7 @@ Men da de saae de blege Træk, da raabte de brat:
    <toctitle>Erik og Ellen</toctitle>
    <indextitle>Erik og Ellen</indextitle>
    <firstline>Jeg havde fast besluttet det, men vidste ei, hvordan</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -3235,6 +3285,8 @@ Og kyssed mig, og sagde saa venlig disse Ord:
 </body>
 </poem>
 
+<!-- TODO: Nedenstående to ekstra træsnit må være fra en senere udgivelse i Svend Andersens besiddelse. Disse skal flyttes til andre.xml med en passende kommentar. -->
+
 <poem id="winther2002072003">
 <head>
    <title>Rudolf og Bertha</title>
@@ -3244,6 +3296,7 @@ Og kyssed mig, og sagde saa venlig disse Ord:
    <notes>
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -3415,6 +3468,7 @@ Thi - dødfrossen stod han, men - trofast paa sin Vagt.
    <toctitle>Jacob og Lone</toctitle>
    <indextitle>Jacob og Lone</indextitle>
    <firstline>Hvor Landeveien løber midt i Tersingeby</firstline>
+   <source pages=""/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -3644,7 +3698,23 @@ Den Anden ham regjerer, - thi Kjærlighed er stærk,
 Og begge Tøffelhæle var ak! hans eget Værk!
 </body>
 </poem>
+-->
 </content>
 </section>
+
+<!--
+
+<poem id="winther2018">
+<head>
+   <title></title>
+   <firstline></firstline>
+   <source pages=""/>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+</body>
+</poem>
+
+-->
 </workbody>
 </kalliopework>
