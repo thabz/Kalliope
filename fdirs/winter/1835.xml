@@ -10,7 +10,7 @@
         <note>Noter med foranstillet asterisk er forfatterens egne.</note>
     </notes>
     <pictures>
-        <picture src="1835-p1.jpg">Titelbladet til <i>Nogle Digte</i> (1835) lyder ,,Nogle Digte / af / Christian Winther. // Non è figlia del Sol la Musa mia, / Ne ha cetra d'oro o d'ebano contesta: / È rozza villanuella, e si trastulla / Cantando a aria, conforme le frulla. / Niccolò Forteguerri. // Kjøbenhavn. / Forlagt af Universitets-Boghandler C. A. Reitzel. / Trykt hos Bianco Luno &amp; Schneider.''</picture>
+        <picture src="1835-p1.jpg">Titelbladet til <i>Nogle Digte</i> (1835) lyder ,,Nogle Digte / af / Christian Winther. // Non è figlia del Sol la Musa mia, / Ne ha cetra d'oro o d'ebano contesta: / È rozza villanuella, e si trastulla / Cantando a aria, conforme le frulla. / Niccolò Forteguerri. // Kjøbenhavn. / Forlagt af Universitets-Boghandler C. A. Reitzel. / Trykt hos Bianco Luno &amp; Schneider. / 1835.''</picture>
     </pictures>
     <source facsimile="115408015221_color" facsimile-pages-num="266" facsimile-pages-offset="14">Christian Winther: <i>Nogle Digte</i>, C.A. Reitzel, Kbh., 1835.</source>
 </workhead>
@@ -541,10 +541,12 @@ I Salighed foreente af din Haand.
     <toctitle><num>I.</num>Guldalderen</toctitle>
     <firstline>Guldalderen er ei forsvundet</firstline>
     <notes>
-        <note>TODO:Find Rückerts original</note>
         <note>* Guldalderen og Faunen, af samme Forfatter, hvis østerlandske Parabel om <i>Manden med Kamelen</i> findes oversat i min tidligere Samling 1832.</note>
+        <!-- TODO:Find Rückerts original -->
+        <!-- TODO: Link til »Manden med Kamelen« når vi får den tilføjet. -->
     </notes>
     <source pages="22-23"/>
+    <keywords>ruckert</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -581,10 +583,12 @@ Enhver sin egen gyldne Tid.
     <toctitle><num>II.</num>Faunen</toctitle>
     <firstline>Til Faun mig Himlen skabde</firstline>
     <notes>
-        <note>TODO:Find Rückerts original</note>
         <note>* Guldalderen og Faunen, af samme Forfatter, hvis østerlandske Parabel om <i>Manden med Kamelen</i> findes oversat i min tidligere Samling 1832.</note>
+        <!-- TODO:Find Rückerts original -->
+        <!-- TODO: Link til »Manden med Kamelen« når vi får den tilføjet. -->
     </notes>
     <source pages="23-24"/>
+    <keywords>ruckert</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3820,7 +3824,6 @@ Stig Hvides Been har lagt.
        <note>* Gant, Ørn, Bjørn, Mormand, Rosenkrands o.s. v. Allusioner til danske Adelsslægter og deres Skjoldmærker. - ,,Det Abild vil jeg skudde kjæk'' etc. See Hvidtfeldt Pag. 643.</note>
        <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
-   <!-- TODO: Tjek indrykning -->
     <source pages="157-188"/>
    <quality>korrektur1,kilde</quality>
 </head>
@@ -3908,7 +3911,7 @@ Og hendes Himmel reen og klar,
 Men Dronningen sin Taushed brød,
 Og strax en Sky paa Himlen skjød.
 
-,,Jeg tænker paa, du unge Skud!
+   ,,Jeg tænker paa, du unge Skud!
 Hvor rank du voxet er og prud;
 Jeg tænker paa, du unge Blod,
 Hvor du er tidligt blevet moed;
@@ -3942,7 +3945,7 @@ Der, let i fine Kruser lagt,
 Først mumler venligt om sin Magt,
 Men snart, af Stormen hulet ud,
 Fremtordner barsk sin Vældes Bud.
-,,Den Fæstmand skal du aldrig faae!
+,,<w>Den</w> Fæstmand skal du aldrig faae!
 Et lige Spænd i Aag bør gaae.
 Du blusser end i grønne Vaar,
 Men Sneen plettet har hans Haar.
@@ -3952,10 +3955,10 @@ Du pukker paa dit Adelsblod?
 Jep Muus er Ridder, gjæv og god;
 Han har alt i min Faders Vold
 Faa't Gods og Guld og Hjelm og Skjold.
-Jeg veed det nok, at Ulv og Ørn
-Kun parres vil med Galt og Bjørn,
-At Mormand kun sit Hoveds Glands
-Omvinde vil med Rosenkrands;
+Jeg veed det nok, at <w>Ulv</w> og <w>Ørn</w>
+Kun parres vil med <w>Galt</w> og <w>Bjørn</w>,
+At <w>Mormand</w> kun sit Hoveds Glands
+Omvinde vil med <w>Rosenkrands;</w>
 De trodse mig, min Kongestav,
 Og Magten, som mig Himlen gav.
 Men Magten vorde skal et Baand,
@@ -3968,11 +3971,11 @@ Snart faaer man kun ved rette Træk
 Med Lempe Æg i Humlesæk;
 Og snart, hvad ei sig bøier smukt,
 Maa knækkes ved en mægtig Tugt!
-Saa vil jeg og den store Tot
+Saa vil jeg og den store <w>Tot</w>
 Udspinde snart saa fiint og smaat,
-Det Abild vil jeg skudde kjæk,
+Det <w>Abild</w> vil jeg skudde kjæk,
 Og stemme for den vilde Bæk,
-Og Bægret knuser jeg engang,
+Og <w>Bægret</w> knuser jeg engang,
 Saa staar jeg fast i Dannevang!
 Du skal! - i disse tvende Ord
 Er større Trolddom, end du troer,
@@ -3996,7 +3999,7 @@ Og ei et Ord, en Lyd, et Blik,
 Du ei af mig indprentet fik,
 Forraade maa den frække Trods,
 Hvormed du her har talt til Os!
-Du skal!'' og vred hun Hesten gav
+<w>Du skal!</w>'' og vred hun Hesten gav
 Et Rap, saa snart i strakte Trav
 Hun naaede hurtigt til sin Borg
 Med Kirstin Thott og hendes Sorg.
@@ -4111,7 +4114,7 @@ Kun Munden aabned hun paa Klem,
 Og lod sin Tale liste frem:
 ,,Hr. Ridder!'' - ak, ved dette Ord
 En Gysen ham i Barmen foer,
-Alt blev ham klart, just ham især,
+<w>Alt</w> blev ham klart, just ham især,
 Hvem før hun kaldte Hjertenskjær.
 ,,Hr. Ridder! I er vel saa snild,
 At give Eders Minde til,
@@ -4150,7 +4153,7 @@ Alene til sin Fædreborg.
 
 <nonum><center>4.</center></nonum>
 
-      Hun fik Jep Muus. - Saa koldt og stivt
+   Hun fik Jep Muus. - Saa koldt og stivt
 Paa guult Papir, med snørklet Skrift
 I gamle Slægtebog det staaer
 Blandt Navne fra henrundne Aar.
@@ -4180,7 +4183,7 @@ Saaledes udstafferet smukt
 Med kroget Knæ og Ryg i Bugt
 Han seiled ind foruden Støi,
 Saa Qvast og Baand som Vimpler fløi.
-Det store S han ligned grant,
+Det store <w>S</w> han ligned grant,
 Som Munkens Skrivekunst opfandt,
 Smukt malet, siret rundtomkring
 Med røde, blaae og gyldne Sving.
@@ -4239,7 +4242,7 @@ Sig Aarets Hjul om Axen svang,
 Da var paa Stammen Frugt igjen,
 Men Mulden gjemte ogsaa den.
 Jep Muus sig græmmede som før, -
-Al hendes Sorg var Snip og Slør.
+Al <w>hendes</w> Sorg var Snip og Slør.
 Thi hendes Sind blev koldt og stivt,
 Hun hadede som Pest og Gift
 Den væmmelige, tvungne Pagt;
@@ -4263,7 +4266,7 @@ Han vakte hendes Sjæl til Flor,
 Der end i Vaarens Blomsterskjød
 Sin ubevidste Slummer nød,
 Saa den fik Blomst og Frugt og Blad
-I Livets Sommerstraalebad;
+I Livets Sommerstraalebad; -
 Miskjendt af ham, hvis stærke Aand
 Holdt hendes fast ved tusind Baand,
 Ved hvem den steget var fra Jord
@@ -4282,7 +4285,7 @@ Blev dagligt dækket dig paa Disk,
 Hvor Mistro lurer paa dit Fjed,
 Og Nar kun troer paa Trofasthed;
 Hvis du vil skye den vamle Færd,
-Saa fjæl dig dybt bag Skov og Træer,
+Saa fjæl dig dybt bag Skov og Træ'r,
 Gjør Egen, Bøgen til din Ven,
 Elsk Blomsten, der omdufter den;
 En mosgroet Steen, den grønne Eng
@@ -4344,7 +4347,7 @@ Om Aftnen ved sin Arnes Ild,
 Om Morgnen eensom lænet til
 Den hugne Sandsteens Ørneflygt,
 Hvormed hans Borgs Altan var smykt,
-Eet Minde kun hans Tanke bandt,
+<w>Eet</w> Minde kun hans Tanke bandt,
 Saa den ei Ro, ei Hvile fandt.
 Han flyede det, men kun paa Skrømt;
 Hiin Salighed, han havde drømt,
@@ -4363,7 +4366,7 @@ Den var ei Mand, som ei blev vred;
 Med følsom Ædelmodighed
 En sund Natur veed slet Besked: -
 
-     ,,Mit Suk er Synd! - Har Himlen ei
+   ,,Mit Suk er <w>Synd!</w> - Har Himlen ei
 Velsignet fuldeligt min Vei?
 Den undte mig i vaagen Drøm
 At seile riig paa Haabets Strøm,
@@ -4398,7 +4401,7 @@ Der over hendes Læber klang,
 Som skulde lokke ud min Sjæl
 Paa Sorgens Hav? - hvad var det vel?''
 
-     Men Tvivlen voxte i hans Bryst,
+   Men Tvivlen voxte i hans Bryst,
 Ham Ringen snart var Qval, snart Trøst.
 Han saae ei hendes sidste Blik,
 Da haant han vendte sig, og gik;
@@ -4409,7 +4412,7 @@ End tolkes kan med Ordets Lyd; -
 Ak, i dets blanke Taaredaab
 Laae alle Elskovshimles Haab!
 
-     Men Ringen med sin Indskrift blev
+   Men Ringen med sin Indskrift blev
 Enhver hans Tankes Hjul og Drev;
 En Tryllekreds, der slutted tæt
 Omkring hans Aand, et Jægernet,
@@ -4439,7 +4442,7 @@ Og frelses, - eller vorde knuust!
 
 <nonum><center>6.</center></nonum>
 
-     Til Lise for sin syge Sjæl
+   Til Lise for sin syge Sjæl
 Slog Holger Munk Jep Muus ihjel.
 Hans Paaskud?  Veed jeg det?  Hvad Lag
 Mon ligger paa saa simpel Sag?
@@ -4457,7 +4460,7 @@ En skjæv Mund huer ham ei godt,
 Han troer, det myntet er paa ham,
 I Blod han tvætte vil den Skam.
 
-     Ved Solens Lys, i Vaabendyst
+   Ved Solens Lys, i Vaabendyst
 Med Blik mod Blik og Bryst mod Bryst,
 I ærlig Kamp, i Ridderfærd
 De maalte deres lange Sværd.
@@ -4486,7 +4489,7 @@ Hvad vil en Muus i Bjørnens Hi?
 Du Kobbernagle! art dig smukt,
 I Guld du ligger indelukt!''
 
-     Hans Arme sank; hans Øie saae
+   Hans Arme sank; hans Øie saae
 Med Smertens Ynk paa ham, der laae;
 Han faldt paa Knæ, han bad til Gud, -
 Saa stod han taus, saa brød han ud:
@@ -4497,7 +4500,7 @@ Kan du jo takke Gud, jeg kom!''
 
 <nonum><center>7.</center></nonum>
 
-     Det Aften var; Høstsolen alt
+   Det Aften var; Høstsolen alt
 Bag Nattens brune Teppe faldt;
 Tykt Mørke dækked Skov og Slot,
 Rigt guldbrodeert var Himlens Blaat.<!-- Rigt] Riigt iflg. errataen -->
@@ -4568,7 +4571,7 @@ Det var de Tvendes Brudenat!
 
 <section level="3">
 <head>
-   <toctitle>Anette</toctitle>
+   <toctitle>Annette</toctitle>
 </head>
 <content>
 
@@ -4776,7 +4779,7 @@ Og hvisked, mens jeg bar dig
 Saa hemmeligt og tyst:
 
 ,,De maa nu være færdig
-At troe - hvad De vil,
+<w>At troe</w> - hvad De vil,
 Men saa inderlig elskværdig
 Som De, er Ingen til!
 
@@ -4842,7 +4845,7 @@ Sig hvælver over dunkle Gang,
 Hvor dæmpet blidt af Løvets Raslen
 Kun fjernt man hører Fuglens Sang.
 See, Spor jeg øiner her i Sandet,
-Saa nydelige, smaa de er; -
+Saa nydelige, smaa de er'; -
 Ved Gud! det kan ei være andet,
 Hun selv har nylig gaaet her.
 
@@ -4933,7 +4936,7 @@ Som os vort Pas paategner.
 Vi slippe for Stads og Compliment,
 For Tanter og Cousiner,
 For lange Viser, Sang og Klang,
-For Gallabord, mauvais plaisants,
+For Gallabord, <i>mauvais plaisants,</i>
 Og for andægtige Miner.
 
 Ei sandt? vi reise, før Himlens Tind
@@ -5040,7 +5043,7 @@ Veemodigt Smiil om Munden. -
 
 Anette græd og Peer og Hans, -
 Jeg selv blev lidt bevæget:
-Fra Ordets rige Perlekrands
+Fra <w>Ordets</w> rige Perlekrands
 Han havde laant sin Tales Glands,
 Og fra sin Mester Præget.
 
@@ -5118,7 +5121,7 @@ Og styrter mig til Jorden!''
 
 ,,Og derfor,'' blev han ved, ,,jeg vil
 Mig reise, før jeg falder.
-Encore un coup! - eet Ønske til:
+<i>Encore un coup!</i> - eet Ønske til:
 Staaer fast i Livets Vexelspil,
 Til Aftenklokken kalder!''
 
@@ -5131,8 +5134,8 @@ Og viftede med Haanden:
 ,,Farvel! og glem nu ei jer Præst,
 Naar smukt I vandre sammen;
 Glem ei den Text, jeg jer har læst,
-Reis saa med Herren! - missa est,
-Et pax vobiscum, amen!''
+Reis saa med Herren! - <i>missa est,</i>
+<i>Et pax vobiscum, amen!</i>''
 
 Han travede rask i Skoven ind,
 Og vi forlode Pletten;
@@ -5491,7 +5494,7 @@ Dette Søens stramme Lagn;
 Har du hørt det?
 Her fortæller man et Sagn.
 
-Hist paa Høi, hvor Uglen sidder,
+  Hist paa Høi, hvor Uglen sidder,
 Hvor det skjæve Trækors staaer,
 Sad i fordums Tid en Ridder
 I sin taarnesmykte Gaard;
