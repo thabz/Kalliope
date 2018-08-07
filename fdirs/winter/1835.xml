@@ -80,7 +80,7 @@ Hvis Fjederham har tusinde Couleurer,
 Hvis Stemme klinger jublende og klar,
 Og tidt et morderligt Spektakel fører,
 Der chagrinerer slemt den satte Ugle; -
-Og disse kaldes - kan De ,tænke! - <w>Spøgefugle!</w>
+Og disse kaldes - kan De tænke! - <w>Spøgefugle!</w>
 - Af dem er sanket her i dette Buur
 En Sværm, som kjæk og fuld af Løier
 Tør efterligne hiin fortryllende Natur,
@@ -349,14 +349,15 @@ Hans herlige Vidunder!
     <subtitle>I det romerske Gilde, 8de Marts 1834</subtitle>
     <firstline>Lytter ei til Nordens Stemme!</firstline>
     <notes>
-        <note>* Paa den Dag, der helligholdes som Thorwaldsens Fødselsdag, da han første Gang satte Foden paa ,,Byens'' Grund, samles de, der engang vare saa lykkelige at see den ,,evige Stad,'' og søge med Sang og et <i>italiæsnk</i> Maaltid, saa godt det her lader sig gjøre, at gjenkalde sig i Erindringen den Rigdom af Skjønhed i Kunst og Natur, hvoraf de engang i hiint vidunderlige Land selv i Livets lavere Momenter vare omgivne.</note>
+        <note>* Paa den Dag, der helligholdes som <a person="thorvaldsen">Thorwaldsens</a> Fødselsdag, da han første Gang satte Foden paa ,,Byens'' Grund, samles de, der engang vare saa lykkelige at see den ,,evige Stad,'' og søge med Sang og et <i>italiæsnk</i> Maaltid, saa godt det her lader sig gjøre, at gjenkalde sig i Erindringen den Rigdom af Skjønhed i Kunst og Natur, hvoraf de engang i hiint vidunderlige Land selv i Livets lavere Momenter vare omgivne.</note>
     </notes>
+    <pictures>
+        <picture ref="kuchler/1831-italienerinde"/>
+    </pictures>
     <source pages="14-17"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<!-- TODO: Indsæt billedet kuchler/1831-italienerinde -->
-
 Lytter ei til Nordens Stemme!
 Sadler Phantasiens Hest!
 Storm og Slud vi maae forglemme,
@@ -447,7 +448,7 @@ Og - et Hjertes Helligdom.
     <firstline>Egen staaer saa kold og bar</firstline>
     <notes>
         <note>Jens Wilken Hornemann (1770-1841), botaniker, professor i botanik, direktør for Botanisk Have, udgiver af Flora Danica og også etatsråd fra 1829.</note>
-        <note>TODO: Malet af Constantin Hansen i 1830, men kan kun finde en s/h gengivelse. https://commons.m.wikimedia.org/wiki/File:Jens_Wilken_Hornemann.jpg#mw-jump-to-license</note>
+        <!-- Malet af Constantin Hansen i 1830, men kan kun finde en s/h gengivelse. https://commons.m.wikimedia.org/wiki/File:Jens_Wilken_Hornemann.jpg og http://www.kb.dk/images/billed/2010/okt/billeder/object149554/da/ -->
     </notes>
     <source pages="18-19"/>
     <quality>korrektur1,kilde,side</quality>
@@ -1139,7 +1140,9 @@ Over mig og min Seng!
     <firstline>Hvorfor nu Maanen gaaer paa Himlen</firstline>
     <notes>
         <note>* Ideen er laant af Johannes Falks ,,Grotesken''; Digtet blev paa en Aftenunderholdning fremsagt ved nu afdøde kongl. Skuespiller Hr. Carl Winsløv.</note>
+        <note>Johannes Daniel Falk (1768-1826), tysk udgiver og digter.</note>
         <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+        <!-- TODO: Find Johannes Daniel Falks digte ,,Grotesken''. -->
     </notes>
     <source pages="47-51"/>
     <quality>korrektur1,kilde,side</quality>
@@ -3813,10 +3816,12 @@ Stig Hvides Been har lagt.
    <title>Ringens Indskrivt</title>
    <firstline>Hvo rider gjennem Skoven der</firstline>
    <notes>
-       <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
        <note>* See Mnskpt. Nr. 782 paa det store kongelige Bibliothek, =Holger Parsbergs= Slægtebog 1671. ,,Hr. Peder Axelsøns (Thotts) Daatter, som hedde Fru =Kristine=, hun var tvende Gange gift, for hendes første Giftermaal da var der megen Klammeri: thi hun var Hr. Holger Munk trolovet af hendes Slægt og Venner, men Kongen og Dronningen tog hende med Magt fra hendes Villie, og nøde hende til at have Een, hedde Jep Muus, hvilken var ikke af saa høi Stamme. Efter hende er kommen det Ordsprog, man siger: ,,Arte dig Kobbernagle, du ligger udi Guld lagt:'' Thi hun gav ham en Guldring, laae en Kobbernagle udi fæst. Med denne Jep Muus fik hun to Børn; de døde strax, og det var hende kjært. Siden slog Hr. Holger Munk ham ihjel, og fik Fru Kirstine, o. s. v.''</note>
        <note>* Gant, Ørn, Bjørn, Mormand, Rosenkrands o.s. v. Allusioner til danske Adelsslægter og deres Skjoldmærker. - ,,Det Abild vil jeg skudde kjæk'' etc. See Hvidtfeldt Pag. 643.</note>
+       <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+   <!-- TODO: Tjek indrykning -->
+    <source pages="157-188"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -4576,6 +4581,7 @@ Det var de Tvendes Brudenat!
    <notes>
        <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+    <source pages="191-199"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -4800,6 +4806,7 @@ Hvad faaer jeg nu for min Sang?
    <notes>
        <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+    <source pages="200-204"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -4913,6 +4920,7 @@ Med salig Frihed til min Barm.
    <notes>
        <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+    <source pages="205-214"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5155,6 +5163,7 @@ Og Balder, Pudelhunden.
    <notes>
        <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+    <source pages="215-218"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5241,6 +5250,7 @@ Min Elsktes Læber kysset har.
    <notes>
        <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+    <source pages="219-221"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5315,6 +5325,7 @@ Her boer en - Kurvemager.
    <notes>
        <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+    <source pages="222-234"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5617,6 +5628,7 @@ Ak, hvad er det for et Brev?''
    <notes>
        <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+    <source pages="235-238"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
