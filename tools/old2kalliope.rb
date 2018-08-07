@@ -226,7 +226,7 @@ end
 
 File.readlines(ARGV[0]).each do |line|
   next if @done;
-  if line.start_with?('SLUT')
+  if line.start_with?('SLUT') and not line.start_with?('SLUTSEKTION') 
     @done = true
     @state = 'INBODY'
     next
