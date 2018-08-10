@@ -914,6 +914,9 @@ const handle_work = work => {
         if (firstline != null && firstline.title.indexOf('<') > -1) {
           throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
         }
+        if (firstline != null && firstline.title.trim().length === 0) {
+          throw `${textId} har blank førstelinje i ${poetId}/${workId}.xml`;
+        }
         if (indextitle.title.indexOf('>') > -1) {
           throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
         }
