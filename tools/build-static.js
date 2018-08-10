@@ -1066,6 +1066,8 @@ const build_global_lines_json = collected => {
           if (line != null) {
             // firstline is null for prose texts
             let indexableLine = line
+              .replace(',','')
+              .replace('!','')
               .replace(/^\[/, '')
               .replace(/^\(/, '')
               .toUpperCase()

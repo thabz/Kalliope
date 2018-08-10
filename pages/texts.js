@@ -57,6 +57,7 @@ export default class Texts extends React.Component<TextsProps> {
       if (line == null || line.length == 0) {
         return;
       }
+      line = line.replace(',','').replace('!','');
       linePair['sortBy'] = line + ' [' + alternative + '[' + linePair.id;
       let letter: string = line[0];
       if (line.startsWith('Aa')) {
