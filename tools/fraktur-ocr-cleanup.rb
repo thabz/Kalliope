@@ -455,6 +455,7 @@
 'Elsie/Elske',
 'Elfl/Elsk',
 'elsie/elske',
+'flaaer/slaaer',
 'dolge/dølge',
 'los /løs ',
 'lost/løst',
