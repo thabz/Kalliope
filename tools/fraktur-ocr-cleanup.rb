@@ -467,6 +467,7 @@
 'blodt/blødt',
 'gron/grøn',
 'grsn/grøn',
+'grvn/grøn',
 'Gron/Grøn',
 'Grsn/Grøn',
 'Fodder/Fødder',
