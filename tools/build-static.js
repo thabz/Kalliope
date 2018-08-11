@@ -914,6 +914,9 @@ const handle_work = work => {
         if (firstline != null && firstline.title.indexOf('<') > -1) {
           throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
         }
+        if (firstline != null && firstline.title.trim().length === 0) {
+          throw `${textId} har blank førstelinje i ${poetId}/${workId}.xml`;
+        }
         if (indextitle.title.indexOf('>') > -1) {
           throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
         }
@@ -1063,6 +1066,8 @@ const build_global_lines_json = collected => {
           if (line != null) {
             // firstline is null for prose texts
             let indexableLine = line
+              .replace(',','')
+              .replace('!','')
               .replace(/^\[/, '')
               .replace(/^\(/, '')
               .toUpperCase()
