@@ -2693,13 +2693,13 @@ Den store Elskovs-Vunde.
 <poem id="winther2002062326">
 <head>
    <title>Fjeldvandring ved Badet</title>
+   <subtitle>Et Digt</subtitle>
    <toctitle>Fjeldvandring ved Badet. Et Digt</toctitle>
-   <indextitle>Fjeldvandring ved Badet</indextitle>
    <firstline>Kom sæt dig her! Saa syg og mat</firstline>
    <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
+      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+    <source pages="151-188"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -3354,12 +3354,11 @@ Din Tante og Gemalen.
 <poem id="winther2002113010">
 <head>
    <title>Uden Haab</title>
-   <toctitle>Uden Haab</toctitle>
-   <indextitle>Uden Haab</indextitle>
    <firstline>Solen alt synker, Bølgerne gaae</firstline>
    <notes>
       <note>Se <xref poem="stagnelius2001051004"/>.</note>
    </notes>
+    <source pages="191-192"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -3401,6 +3400,7 @@ Dybet kun hørte hans bittre Graad.
    <toctitle>Forvandling</toctitle>
    <indextitle>Forvandling</indextitle>
    <firstline>Den Ungersvend, den Jomfru</firstline>
+    <source pages="193-194"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -3435,7 +3435,7 @@ I deres Barm de fandt.
 
 <poem id="winther2018081124">
 <head>
-    <title>Gaston de Gode</title>
+    <title>Gaston den Gode</title>
     <subtitle>Greve af Bearn</subtitle>
     <toctitle>Gaston den Gode, Greve af Bearn</toctitle>
     <firstline>Bearn har nu sin Fyrste mist</firstline>
@@ -3443,7 +3443,6 @@ I deres Barm de fandt.
     <quality>korrektur1,kilde,side</quality>    
 </head>
 <body>
-<!-- TODO -->
 Bearn har nu sin Fyrste mist,
 Han slumrer i Capellet hist
 Bag hvide Marmorstene -
@@ -3452,42 +3451,46 @@ Hans Hund har taget sig Forlov,
 Hans Ganger skraber med sin Hov,
 Den føler sig alene.
 
-Thi med den ædle D ro t gik ud
+Thi med den ædle Drot gik ud
 Den gamle Stammes lige Skud, -
 Hvor skal de Manden finde,
 Som bærer Kronens gyldne Baand
-Samt Sværd og Sp iir, at from i Aand
+Samt Sværd og Spiir, at from i Aand
 Han være kan den Svage Haand
-Og Vie for den Blinde?
+Og Øie for den Blinde?
+
 Alt samled sig i Tusindtal
-Det stærke Folk fra Meld og Da l,
+Det stærke Folk fra Fjeld og Dal,
 De stimled hid til Thinge;
-Paa Steen den gamle Biflop siod,
+Paa Steen den gamle Biskop stod,
 Hvor Mængden trængtes Fod ved Fod,
 Mens Sands og Hjerte de oplod
 For Trøsten, han vil bringe.
+
 Han løfted høit sin gyldne Stav,
 Saa tyst der blev som i en Grav,
-Da lod hans stærke Stemme:
-''Vo r D ro t til Paradiset gik,
-Han tomte Evighedens Drik,
-Og Palmens Green til Scepter sik,
-Ham bor v i ei forglemme.
-Men hvo skal sidde paa hans Sto l?
-Og hvo, som han en Retfeerdssol,
+Da lød hans stærke Stemme:
+''Vor Drot til Paradiset gik,
+Han tømte Evighedens Drik,
+Og Palmens Green til Scepter fik, -
+Ham bor vi ei forglemme.
+
+Men hvo skal sidde paa hans Stol?
+Og hvo, som han en Retfærdssol,
 Skal over Landet lyse?
 En Hersker, som er Ære værd,
-Hvis Mildhed gssr ham hsertensksær,
+Hvis Mildhed gjør ham hjertenskjær,
 Der svinge vil med Kraft sit Sværd
 Og ei for Faren gyse?
+
 Vi kjende Alle grant og godt
-Frn Agnes, Søster til vor D ro t,
+Fru <w>Agnes</w>, Søster til vor Drot,
 Den ædle Enkefrue;
 Hun bragte hist i fjerne Hjem
 Et Tvillingpar til Verden frem, -
 Lad os optugte Een af dem
-Til D ro t, som vi ham hue!''
-i
+Til Drot, som vi ham hue!''
+
 Og Folket glad hans Ord fornam,
 Med Bifaldsraab omringed ham,
 Mens lydt paa Skjold de sloge;
@@ -3495,63 +3498,70 @@ En Ridder, Bondemand og Klerk,
 Med Adel, Fromhed, Manddom stærk.
 Blev valgte til det store Værk,
 Og flux af Landet droge.
-Fru Agnes sidder paa sin Borg,
+
+Fru <w>Agnes</w> sidder paa sin Borg,
 Hel tankefuld og bleg af Sorg,
 I sorte Enkeklæder;
 Hun seer paa sine Gutter smaa,
 Der slumrende i Vuggen laae, -
 Da høres snelle Fjed at gaae,
 En Svend i Salen træder: -
-''H il sidde Du, min Frue! - Her
+
+''Hil sidde Du, min Frue! - Her
 Med Hyrdestav, med Kors og Sværd
-Tre Mccnd for Porten vente;
-Raymond, Antonius, Jzarn, -
+Tre Mænd for Porten vente;
+Raymond, Antonius, Izarn, -
 Udsendt fra Folket i Bearn,
 Vil her hos Dig et Fyrstebarn
-Som deres D ro t sig hente!''
-Fru Agnes løfter op sit Slo r, st
-Og seer ved Salens hvalte D s r
+Som deres Drot sig hente!''
+
+Fru Agnes løfter op sit Slør,
+Og seer ved Salens hvalte Dør
 De Trende dybt sig neie;
-Hun drager Silkepuden glat, ''
+Hun drager Silkepuden glat,
 Fra Vuggen bort, mens sorrigmat
 Hun peger paa den bedste Skat,
 Endnu hun har i Eie.
-Den Ene, sort af Haar og bleg,
-i
-Med knyt tet Haand, sig krum mod
+
+Den <w>Ene</w>, sort af Haar og bleg,
+Med knyttet Haand, sig krum mod Væg
 Og mut og trodsig vender;
-Men Een, guldlokket, f r i og frank.
+Men <w>Een</w>, guldlokket, fri og frank.
 Som Æblet trind, som Druen blank,
 Mens Brystet kraftigt steg og sank,
-Laae der - med aabne Hænder.
+Laae der - med <w>aabne</w> Hænder.
+
 De tause Tre ved Vuggen staae,
 Og tankefuldt de stirre paa
-De stærke Leveringer;
+De stærke Løveunger;
 Og det blev klart, til Valget vist
 Forlangte de ei nogen Frist,
-Thi alle Tre udbrod tilstdst
+Thi alle Tre udbrød tilsidst
 Med jubelglade Tunger:
-,,D e r ligger han med aaben Haand,
-Med aåbent Hjerte, freidig Aand,
+
+,,<w>Der</w> ligger han med <w>aaben</w> Haand,
+Med <w>aåbent</w> Hjerte, freidig Aand,
 Som skal vor Hersker blive!
-Naar han har endt stn Ungdoms Tugt,
-Vi ham i Purpur svobe smukt,
-Og Fprste-Æblets rige Frugt
-Udi hans Haand v i give!''
+Naar han har endt sin Ungdoms Tugt,
+Vi ham i Purpur svøbe smukt,
+Og Fyrste-Æblets rige Frugt
+Udi hans Haand vi give!''
+
 Og alle Tre med hellig Lyst
-Bersre sagte Drengens Bryst
+Berøre sagte Drengens Bryst
 Med Sværd, med Kors, med Staven;
 Og sværge høit, den Herre bold
 At værne kjækt mod Vee og Vold,
 I Fredens Ly, bag Kampens Skjold
 Ham trofast indtil Graven.
+
 Og han blev stor, blev from og stærk,
 Og Herredommets tunge Værk
 De trygt hans Haand betroede;
-Han forte, som en ærlig D ro t,
+Han førte, som en ærlig Drot,
 Sit Sværd og Scepter lige godt;
-Derfor i Hytte som i Slo t
-Hed han Gas to n den Gode.
+Derfor i Hytte som i Slot
+Hed han <w>Gaston den Gode</w>.
 </body>
 </poem>
 
@@ -3562,15 +3572,13 @@ Hed han Gas to n den Gode.
    <indextitle>Jægerens Brud</indextitle>
    <firstline>Liden Karen hun sidder</firstline>
    <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
+      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+   <source pages="203-221"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
-<!-- TODO: Fiks layout af afsnitsnumrene. -->
-
-                  I.
+<nonum><center>1.</center></nonum>
 
 Liden Karen hun sidder
 Saa trøstigt ved sit Spind;
@@ -3607,10 +3615,9 @@ For Gudsmoder i Løn,
 Hun voved ei at løfte
 Sit Blik til hendes Søn.
 
-          ______
+---
 
-
-              II.
+<nonum><center>2.</center></nonum>
 
 Liden Karen sin Kaabe
 Over Skulderen slaaer,
@@ -3647,10 +3654,9 @@ Da lokked det saa lifligt:
 Nu klang det vildt og bittert
 Som et evigt Farvel!
 
-         ______
+---
 
-
-             III.
+<nonum><center>3.</center></nonum>
 
 Saa var det ved St. Huberts
 Den grønne Jægerfest;
@@ -3707,10 +3713,9 @@ Med Hest og Hund og Falk; -
 Der var vel ærlige Svende,
 Men ogsaa mangen Skalk.
 
-          ________
+---
 
-
-                IV.
+<nonum><center>4.</center></nonum>
 
 Da klang der et Jagthorn
 Alt ud fra Skovens Træer;
@@ -3752,10 +3757,9 @@ En Trolddoms dybe Hjem;
 De Skjønneste, de Bedste
 Bedaare sig ved dem!
 
-         _______
+---
 
-
-              V.
+<nonum><center>5.</center></nonum>
 
 Men støttet paa sit Jagtspyd,
 Fulgt af sin store Hund,
@@ -3837,10 +3841,9 @@ I den Gravhøi med Magt, -
 Den tause Sværm omkring ham
 Heel ængstelig gav Agt.
 
-         ________
+---
 
-
-              VI.
+<nonum><center>6.</center></nonum>
 
 Da glimted der et Lyn
 Over Himlens sorte Tjeld,
@@ -3887,10 +3890,9 @@ Med Fraaden om sin Mund;
 Saa sprang han op og svandt
 I den dæmrende Lund.
 
-          ________
+---
 
-
-              VII.
+<nonum><center>7.</center></nonum>
 
 Det var saa mørkt og stille,
 Alt Solen var i Seng,
@@ -3957,7 +3959,6 @@ Over den dybe Dal.
     <quality>korrektur1,kilde,side</quality>    
 </head>
 <body>
-<!-- TODO -->
 I Marmorhal, ved Lamper klare,
 Paa Hynderne langs breden Bord
 Laae leiret et bekrandset Chor
@@ -3965,120 +3966,138 @@ Af Ynglinge, mens rundt en Skare
 Hetærer dem den Gud frembære,
 I hvem al Sorgens Glemsel boer.
 
-Hvor stærkt de sorte Arne straaler!
-En Du ft igjennem Hallen gaaer
+Hvor stærkt de sorte Øine straaler!
+En Duft igjennem Hallen gaaer
 Fra Roserne om blanke Haar
 Og fra de druefyldte Skaaler,
 Hvori en yndig Haand tilmaaler
-Hir'n Lægedom for Hjertets Saar.
+Hiin Lægedom for Hjertets Saar.
+
 Sødt Fløiter tone, Strænge bæve,
 Og, hyllet let i flygtigt Flor,
 En Række Dandserinder snoer
 Sig ind i Salen, mens de svæve
 Med Sangens Flugt og siirligt hæve
 En fyldig, broget Blomstersnor!
-Mid t i Symposiets den hulde,
+
+Midt i Symposiets den hulde,
 Begeistret høie Jubellarm,
 Der hviler taus, men glad og varm,
-Sim o n i d e s med tankefulde,
+<w>Simonides</w> med tankefulde,
 Med dybe Blik, som flux han skulde
 Til Lyren strække hen sin Arm.
-Han ryster Lokkerne) de rige,
+
+Han ryster Lokkerne, de rige,
 Fra Panden, mens i Hjertets Grund
 Med smilende, forklaret Mund
 De Billeder, som trindt fremstige,
-Han gjemmer snildt, og tommer lige
+Han gjemmer snildt, og tømmer lige
 Sin Patera til klaren Bund.
+
 Men snart Begejstrings vilde Ranke
 Kan til sin Skjønheds Grændse naae;
 Din søde Flamme, Bacchus! maa
 Formæles med en ædel Tanke;
 Hvis ei, den bryder Gratiens Skranke,
 Formastelig og fræk og raa.
+
 I Festens Hal de kaade Svende
 Har alt den lave Bærme smagt,
-Hvori den skumle G ift er lagt.
-De stamme, - deres Dine brænde, -
+Hvori den skumle Gift er lagt.
+De stamme, - deres Øine brænde, -
 Forsmædelige Raab de sende
 Imod Olympens høie Magt.
+
 Den rige Sol, den rene Maane,
 Hver Magt, som Guddoms Navn har havt,
-Ja, Himlens Lyn, selv Rankens Sa ft,
+Ja, Himlens Lyn, selv Rankens Saft,
 Og Jorden, Bølgerne, som blaane,
 Afsindigt deres Tunger haane,
 Hovmodende paa egen Kraft.
+
 Da hæver sig den skjønne Sanger,
 Han harmfuld griber sig om Skjæg,
 Tilside slaaer han Kappens Læg
 Og kneiser som en ædel Ganger,
-Id e t med nogen Arm han langer
+Idet med nøgen Arm han langer
 Sin gyldne Lyra ned fra Væg.
-Med I ld han frem for Bordet træder,
+
+Med Ild han frem for Bordet træder,
 Og ret af Hjertets dybe Trang
 Til Melodiens kjække Gang
 En prægtig Hymne høit han qvæder; -
 Til Guders og Gudinders Hæder
-Frem stremmede hans rige Sang!
+Frem strømmede hans rige Sang!
+
 De milde, evigglade Guder
 I værdig Glands han stiller frem;
 Men ubarmhjertig, bitter Dem,
 Der haane Himlen, han bebuver,
 Hvor Hunden ved Cocytus tuder,
-Et evigt, rædsomt DødenSHjem.
+Et evigt, rædsomt Dødens Hjem.
+
 Lig stumme, strenge Offerpræster,
 Der, dybt begeistred' af en Gud,
 Staae lyttende til Varslets Bud,
 Hans klare, stærke Øine fæster
 Sig paa de trodsig tause Gjester,
-Hvis frække I ld ei slukkes ud.
-De lee: ,,Ei! see, hvor han kan stegte!
+Hvis frække Ild ei slukkes ud.
+
+De lee: ,,Ei! see, hvor han kan fægte!
 Vil Ingen hjelpe ham i Kamp?
 Herakles ei, den svære Tamp?
-Hans Kolleslag er jo saa ægte!
+Hans Kølleslag er jo saa ægte!
 Ei Ledas Børn, de tappre Knegte?
-Nei - Alle kun er Dunst og D am p!''
-Da nærmer sig en Troel og vækker
-Med Budstab ham, at tvende Mænd
+Nei - Alle kun er Dunst og Dmp!''
+
+Da nærmer sig en Træl og vækker
+Med Budskab ham, at tvende Mænd
 Ved Døren vente deres Ven.
 Sandalen Sangeren han rækker
 Og den Hensjunkne sagte trækker
 Ved Kappen til Portalet hen.
+
 Han træder ud. Med lange Landser
-To Ing lin g e paa Torvet staae;
+To Ynglinge paa Torvet staae;
 Og som han nærmer sig, de gaae
-Fremad i solverhvide Pandser; -
+Fremad i sølverhvide Pandser; -
 Knap troer han sine egne Sandser,
-Og soler Hjertet ængsiligt siaae.
+Og føler Hjertet ængstligt slaae.
+
 Han dvæler, - deres Fjed de sinke, -
 Han iler, - hvilken selsom Færd!
 Naar han sig troer dem ganske nær,
 Saa staae de atter fjernt og vinke,
 Mens over deres Hjelme blinke
 To Stjerner med et hvidligt Skjær.
+
 Med Eet de vende sig og sænke
 De blanke Spyd med Odden did,
 Hvorfra de Skrig end trænge hid,
-Som Guders GlandSog Hæder krænke
+Som Guders Glands og Hæder krænke
 Og mere snelt, end man kan tænke,
 De svinde som en Taage hvid!
-Og som han da sit Aie hefter
+
+Og som han da sit Øie hefter
 Paa Huset, hvor i vilde Lag
-Han nys har fort en hellig Sag,
-Han seer, dets P ille r give efter,
+Han nys har ført en hellig Sag,
+Han seer, dets Piller give efter,
 De vige for useete Kræfter -
-Og Taget synker med et Bra g!
+Og Taget synker med et Brag!
+
 Med Skræk og Rædsel maa han skue,
-At ei een Ssel undsluppet var.
+At ei een Sjel undsluppet var.
 Sin Tak han inderligt frembar
 For Himlen, paa hvis dunkle Bue
-Stod D i o s c u r e r s Tvillinalue
+Stod <w>Dioscurers</w> Tvillinglue
 Og smilte dobbelt reen og klar!
+
 - Den Sanger Guderne beskytter,
 Der from sit Offer dem faaer bragt,
 Og ved sin Stemmes stærke Magt
 Det Jordiske til Himlen knytter;
 I Sjelens inderste Adyter
-En Guddomssiamme staaer som Vagt.
+En Guddomsflamme staaer som Vagt.
 </body>
 </poem>
 
@@ -4086,9 +4105,10 @@ En Guddomssiamme staaer som Vagt.
 <head>
    <title>Helene</title>
    <subtitle>Et Sagn</subtitle>
-   <toctitle>Helene. Et Sang</toctitle>
+   <toctitle>Helene. Et Sagn</toctitle>
    <firstline>Der ligger en Borg paa skovgroet Hald</firstline>
-   <quality>korrektur1</quality>
+    <source pages="228-240"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Der ligger en Borg paa skovgroet Hald,
@@ -4359,11 +4379,10 @@ Fra Linden flagred det duftende Blad.
 
 <poem id="winther2002113012">
 <head>
-   <title>Tre Beilere</title>
-   <toctitle>Tre Beilere</toctitle>
-   <indextitle>Tre Beilere</indextitle>
-   <firstline>Histnede ved Bækken</firstline>
-   <quality>korrektur1</quality>
+    <title>Tre Beilere</title>
+    <firstline>Histnede ved Bækken</firstline>
+    <source pages="241-248"/>
+    <quality>korrektur1</quality>
 </head>
 <body>
 Histnede ved Bækken,
@@ -4500,21 +4519,20 @@ De dandser endnu!
 <poem id="winther2002062327">
 <head>
    <title>I et romersk Osterie</title>
-   <subtitle>
-      <line>,,O, bella Italia! Quanto son dolci</line>
-      <line>le tue rimembranze!''</line>
-   </subtitle>
+   <subtitle>En Skizze</subtitle>
    <toctitle>I et romersk Osterie. En Skizze</toctitle>
-   <indextitle>I et romersk Osterie</indextitle>
    <firstline>Snart Natten var forbi; forvildet</firstline>
    <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
+      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+   <source pages="249-274"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
-                           I.
+<nonum><right><small>''O, bella Italia! quanto son <i>dolci</i></small></right></nonum>
+<nonum><right><small>le tue rimembranze!,,</small></right></nonum>
+
+<nonum><center>1.</center></nonum>
 
 Snart Natten var forbi; forvildet
 Jeg længe havde strippet om,
@@ -4599,7 +4617,7 @@ Og mens den sure Viin jeg nød,
 Jeg hørte Brittens triste Fortælling:
 
 
-                       II.
+<nonum><center>2.</center></nonum>
 
 ,,Som sagt, jeg havde Bølgen pløiet,
 Svar Kummer lidt og Smerte døiet;
@@ -4835,7 +4853,7 @@ Og mens han gav sin Smerte Rum,
 Sir John fik Tid at sige: ,,Hm!''
 
 
-                   III.
+<nonum><center>3.</center></nonum>
 
 Af den lange Snak, af Røgen ør,
 Jeg traadte ud af Tavernens Dør.
@@ -4970,13 +4988,11 @@ Mens det i Tankerne løb mig om:
 <poem id="winther2002062311">
 <head>
    <title>Paa Herregaarden</title>
-   <toctitle>Paa Herregaarden</toctitle>
-   <indextitle>Paa Herregaarden</indextitle>
    <firstline>Hvi sørger dog saa saare</firstline>
    <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
+      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+   <source pages="277-282"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5084,21 +5100,17 @@ Da smykkes vil din Sommer
 Med Blomster og Fuglesang -
 Men tyst! see hist - han kommer
 Op ad den lange Gang!''
-
-            _______
 </body>
 </poem>
 
 <poem id="winther2002062312">
 <head>
    <title>Elskovstrolddom</title>
-   <toctitle>Elskovstrolddom</toctitle>
-   <indextitle>Elskovstrolddom</indextitle>
    <firstline>Med lette Fjed han hasted</firstline>
    <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
+      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+   <source pages="283-289"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5216,21 +5228,17 @@ Og Tanken tilbage vendte,
 Og Hjerterne kom til Ro,
 Og Blikket rundt de sendte, -
 Da var de alene To.
-
-        ________
 </body>
 </poem>
 
 <poem id="winther2002062313">
 <head>
    <title>Langsom Vandring</title>
-   <toctitle>Langsom Vandring</toctitle>
-   <indextitle>Langsom Vandring</indextitle>
    <firstline>I Parkens krumme Gange</firstline>
    <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
+      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+   <source pages="290-295"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5336,13 +5344,11 @@ Bag Bøgeskoven ned.
 <poem id="winther2002062314">
 <head>
    <title>I Byen</title>
-   <toctitle>I Byen</toctitle>
-   <indextitle>I Byen</indextitle>
    <firstline>Vildt Tø-Sneen tumler</firstline>
    <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
+      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+   <source pages="296-301"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5455,21 +5461,17 @@ Men som just hun er i Varmen,
 Han paa sin Qval gjør Vold;
 Med Smiil han byder Armen, -
 Hun tager den - pludselig kold!
-
-          __________
 </body>
 </poem>
 
 <poem id="winther2002062315">
 <head>
    <title>Ved Bordet</title>
-   <toctitle>Ved Bordet</toctitle>
-   <indextitle>Ved Bordet</indextitle>
    <firstline>Min Ven! hør, siig mig ærlig</firstline>
    <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
+      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+   <source pages="302-306"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5547,8 +5549,6 @@ Saa udenfor hans Dør!''
 Med al sit Hjertes Vee;
 Hans Qval, den indre, vilde,
 Kuns hun kunde see.
-
-        _________
 </body>
 </poem>
 
@@ -5556,13 +5556,11 @@ Kuns hun kunde see.
 <head>
    <title>Nattetanker</title>
    <subtitle>Hendes</subtitle>
-   <toctitle>Nattetanker</toctitle>
-   <indextitle>Nattetanker</indextitle>
    <firstline>Han maa slet ikke tænke</firstline>
    <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
+      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+   <source pages="307-309"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5612,13 +5610,11 @@ Til det sødeste Blund.
 <head>
    <title>Nattetanker</title>
    <subtitle>Hans</subtitle>
-   <toctitle>Nattetanker</toctitle>
-   <indextitle>Nattetanker</indextitle>
    <firstline>Trods hendes kolde Blikke</firstline>
    <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
+      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+   <source pages="310-312"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5667,13 +5663,11 @@ Med Haanden under Kind.
 <poem id="winther2002062318">
 <head>
    <title>Et Malerværksted</title>
-   <toctitle>Et Malerværksted</toctitle>
-   <indextitle>Et Malerværksted</indextitle>
    <firstline>Der var saa luunt og hyggeligt</firstline>
    <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
+      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+   <source pages="313-317"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5757,13 +5751,11 @@ Da endelig hun kom.
 <poem id="winther2002062319">
 <head>
    <title>Paa Reisen</title>
-   <toctitle>Paa Reisen</toctitle>
-   <indextitle>Paa Reisen</indextitle>
    <firstline>Her bruser Eisacks Vande</firstline>
    <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
+      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+   <source pages="318-325"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5912,13 +5904,11 @@ Fandt de hans sidste Spor.
 <poem id="winther2002062320">
 <head>
    <title>Paa Herregaarden</title>
-   <toctitle>Paa Herregaarden</toctitle>
-   <indextitle>Paa Herregaarden</indextitle>
    <firstline>Ned rasled de visne Blade</firstline>
    <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
+      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+   <source pages="326-328"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
