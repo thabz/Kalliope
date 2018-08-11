@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1843" author="winter" status="incomplete" type="poetry">
+<kalliopework id="1843" author="winter" status="complete" type="poetry">
 <workhead>
    <title>Digtninger</title>
    <year>1843</year>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
+   <notes>
+       <note>Teksten følger Christian Winther: <i>Digtninger</i>, C. A. Reitzel, Kbh., 1843.</note>
+   </notes>
    <pictures>
        <picture type="titlepage" src="1843-p1.jpg">Titelbladet til <i>Digtninger</i> (1843).<br/>Digtninger // Christian Winther // Kjøbenhavn, 1843. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt i Bianco Lunos Bogtrykkeri.</picture>
    </pictures>
@@ -18,6 +21,27 @@
    <toctitle>Til Een</toctitle>
 </head>
 <content>
+
+<poem id="winther2002021700">
+<head>
+    <title>[Motto]</title>
+    <toctitle>[Motto]</toctitle>
+    <indextitle>Motto</indextitle>
+    <linktitle>Motto</linktitle>
+    <nofirstline/>
+    <source pages="1"/>
+    <notes>
+       <note>Mottoet er fra Petrarcas <xref poem="petrarca2018021002,12-14"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>    
+</head>
+<body>
+,,Ma pur si aspre vie, ne si selvaggie
+Cercar non so, ch'amor non venga sempre
+Ragionando con meco, ed io con lui.''
+<right>Petrarca</right>
+</body>
+</poem>
 
 <poem id="winther2002021701">
 <head>
@@ -109,7 +133,7 @@ Har lidt og maa lide!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="7-8"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Saa Havets Brusen, den vældige Vind
@@ -142,7 +166,7 @@ For dig hvert Suk, hver Sorg og hver Smerte!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="9-13"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Du veed ei, hvor jeg er?
@@ -228,7 +252,7 @@ Og kalder mig tilbage.
    </notes>
    <source pages="14-16"/>
    <keywords>goethe</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hvis du, o Goethe! hendes Tanker
@@ -277,7 +301,7 @@ Trods al din Storhed og din Sang.
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="17-22"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 
@@ -386,7 +410,7 @@ Hold saa en Cigar parat!''
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="23-25"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <nonum><right><small>Bei Ihr, bei Ihr ist Seligkeit,</small></right></nonum>
@@ -453,7 +477,7 @@ Og siger: ,,Gak da begge ind!''
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="26-28"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Naar jeg skal døe, jeg mit Farvel
@@ -508,7 +532,7 @@ Jeg seer dig fra den anden træde!
       <note type="credits">Bidrag fra Brian Bentsen</note>
    </notes>
    <source pages="29-31"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Ud over Havets Mark, den øde,
@@ -553,7 +577,7 @@ Taushed er alt - - -
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="32-38"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Ved en Fuglekræmmers levende,
@@ -683,7 +707,7 @@ Som en frifunden Sjæl.
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="39-40"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Kunde jeg Roser male
@@ -723,7 +747,7 @@ De allersødeste Ord!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="41-47"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Lad os reise, lad os vandre,
@@ -856,7 +880,7 @@ Ak, men Reisen - er kun drømt!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="48-50"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Bøgen skyder alt sit Blad,
@@ -905,7 +929,7 @@ Under al dit Livs Forandring!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="51-52"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 ,,Mennesket har og et Bryst,
@@ -939,7 +963,7 @@ Som I!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="53-56"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Ved Veien paa en Steen jeg sad, og Brystet
@@ -1021,7 +1045,7 @@ Men ak, min Smerte vilde ikke svinde.
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="57-58"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg gik mig i Skoven saa eensom en Gang,
@@ -1062,7 +1086,7 @@ Og min inderlige Smerte til hende!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="59-60"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Mod! - Er det ei et Tordenbrag,
@@ -1090,7 +1114,7 @@ Formaaer at tolke eller tyde.
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="61-63"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Fuld af hede Sommerdrømme
@@ -1138,7 +1162,7 @@ Og, som Nattergalens, døer!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="64-65"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 O, var du her i denne By,
@@ -1181,7 +1205,7 @@ Jeg taus og trofast Svaret gjemmer.
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="66-69"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Dreng! - du med de brune Lokker,
@@ -1260,7 +1284,7 @@ Troer jeg - maa du ikke see!
       <note type="credits">Bidrag fra Brian Bentsen</note>
    </notes>
    <source pages="70-71"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Tilgiv - tilgiv! jeg kan ei andet!
@@ -1296,7 +1320,7 @@ Tilgiv - tilgiv! Jeg <i>kan</i> ei andet!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="72-74"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hvor Mangen søger ei med Qval
@@ -1344,7 +1368,7 @@ En Midler mellem Her og Hist.
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="75-76"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Og var du bleg, som Nattens Stjerne,
@@ -1375,7 +1399,7 @@ Der guddomsstærkt mig holde fast.
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="77-79"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hensjunken i mit Hjertes Drøm -
@@ -1435,7 +1459,7 @@ Liig hans, ei straaler mig for Øiet.
    <title>Serenade ved Strandbredden</title>
    <firstline>Hytten er lukket, Natten er stille!</firstline>
    <source pages="83-85"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <nonum><i>Sangeren.</i></nonum>
@@ -1628,7 +1652,7 @@ Poeterne - de daane.
    <title>En Situation</title>
    <firstline>Jeg lader Baaden glide frem</firstline>
     <source pages="93-94"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg lader Baaden glide frem
@@ -1668,7 +1692,7 @@ Jeg synge vil min Klage.
     <title>Bolero</title>
     <firstline>Hør, hvor Fløiter og Strængene</firstline>
     <source pages="95-99"/>
-    <quality>korrektur1</quality>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hør, hvor Fløiter og Strængene
@@ -2701,7 +2725,7 @@ Den store Elskovs-Vunde.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
     <source pages="151-188"/>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Kom sæt dig her! Saa syg og mat
@@ -3360,7 +3384,7 @@ Din Tante og Gemalen.
       <note>Se <xref poem="stagnelius2001051004"/>.</note>
    </notes>
     <source pages="191-192"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Solen alt synker, Bølgerne gaae,
@@ -3402,7 +3426,7 @@ Dybet kun hørte hans bittre Graad.
    <indextitle>Forvandling</indextitle>
    <firstline>Den Ungersvend, den Jomfru</firstline>
     <source pages="193-194"/>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den Ungersvend, den Jomfru
@@ -3576,7 +3600,7 @@ Hed han <w>Gaston den Gode</w>.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="203-221"/>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <nonum><center>1.</center></nonum>
@@ -4383,7 +4407,7 @@ Fra Linden flagred det duftende Blad.
     <title>Tre Beilere</title>
     <firstline>Histnede ved Bækken</firstline>
     <source pages="241-248"/>
-    <quality>korrektur1</quality>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Histnede ved Bækken,
@@ -4527,7 +4551,7 @@ De dandser endnu!
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="249-274"/>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <nonum><right><small>''O, bella Italia! quanto son <i>dolci</i></small></right></nonum>
@@ -4994,7 +5018,7 @@ Mens det i Tankerne løb mig om:
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="277-282"/>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 ,,Hvi sørger dog saa saare
@@ -5112,7 +5136,7 @@ Op ad den lange Gang!''
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="283-289"/>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Med lette Fjed han hasted
@@ -5240,7 +5264,7 @@ Da var de alene To.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="290-295"/>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 I Parkens krumme Gange
@@ -5350,7 +5374,7 @@ Bag Bøgeskoven ned.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="296-301"/>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Vildt Tø-Sneen tumler
@@ -5473,7 +5497,7 @@ Hun tager den - pludselig kold!
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="302-306"/>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 ,,Min Ven! hør, siig mig ærlig,
@@ -5562,7 +5586,7 @@ Kuns hun kunde see.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="307-309"/>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 ,,Han maa slet ikke tænke,
@@ -5616,7 +5640,7 @@ Til det sødeste Blund.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="310-312"/>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 ,,Trods hendes kolde Blikke,
@@ -5669,7 +5693,7 @@ Med Haanden under Kind.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="313-317"/>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Der var saa luunt og hyggeligt,
@@ -5757,7 +5781,7 @@ Da endelig hun kom.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="318-325"/>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Her bruser Eisacks Vande
@@ -5910,7 +5934,7 @@ Fandt de hans sidste Spor.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="326-328"/>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Ned rasled de visne Blade,
