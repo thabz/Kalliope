@@ -615,7 +615,9 @@
 'ssrg/sørg',
 'kjsbe/kjøbe',
 'Chør/Chor',
-'Sø l/Sol'
+'Sø l/Sol',
+'(\W)blod(\W)/\1blød\2',
+'(\W)skjod(\W)/\1skjød\2',
 ];
 
 @regexps = @rules.map { |rule| 
