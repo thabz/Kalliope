@@ -1,499 +1,614 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1851" author="winter" status="incomplete" type="poetry">
+<kalliopework id="1851" author="winter" status="complete" type="poetry">
 <workhead>
-   <title>Nye Digte</title>
-   <year>1851</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+    <title>Nye Digte</title>
+    <year>1851</year>
+    <notes>
+        <note>Teksten følger Christian Winther: <i>Nye Digte</i>, C.A. Reitzel, Kbh., 1851.</note>
+    </notes>
+    <pictures>
+        <picture src="1851-p1.jpg">Titelbladet til <i>Nye Digte</i> (1851) lyder ,,''.</picture>
+    </pictures>
+    <source facsimile="115408015327" facsimile-pages-num="124" facsimile-pages-offset="10">Christian Winther: <i>Nye Digte</i>, C.A. Reitzel, Kbh., 1851.</source>
 </workhead>
 <workbody>
 
-<poem id="winther2002112601">
+<poem id="winter2018081201">
 <head>
-   <title>Kong Wolmer paa Reisen</title>
-   <toctitle>Kong Wolmer paa Reisen</toctitle>
-   <indextitle>Kong Wolmer paa Reisen</indextitle>
-   <firstline>Mig tykkes alt fra min høie Hest</firstline>
-   <quality>korrektur1</quality>
+    <title>Det gamle Aar</title>
+    <firstline>Det gamle Aar har snart faa't Nok</firstline>
+    <source pages="5-7"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Mig tykkes alt fra min høie Hest
-At høre min Due kurre;
-O, Deiligste! snart er jeg Din Gjæst
-I Din Rede, det grønne Gurre.
-Alt som jeg farer i Skovene frem,
-Gjennem Moser og dunkle Dale,
-Synes mig høre omkring Dit Hjem
-De fløitende Nattergale.
+Det gamle Aar har snart faa't Nok
+Af Slid og Slseb og Vandring;
+Det ryster alt sin hvide Lok,
+Mens krum og støttet til sin Stok
+Det stunder til Forandring.
 
-Mit Øie iler saa langt foran
-Mine rappe, hvæsende Rakker;
-Mig lokker ei bag det stille Vand
-Hjorten med kneisende Takker.
-Men Dig, som kan seile i Luften blaa,
-Misunder jeg vel Din Vinge,
-Du liden Sanger! fremad lad staae,
-Min første Hilsen at bringe.
+Og det er intet Under, om
+Det var langt meer affældigt
+End Brødrene, der foran kom,
+Thi Faa af disse var der, som
+Har stridt saa snildt og vældigt.
 
-Hvo skulde dog tænkt, o, Tovelil!
-At Din Fletnings guulbrune Slange
-Skulde vorde en Snare, stærk og snild,
-Dannerkongen at fange?
-O, Tovelil! hvo skulde troe,
-Mens Livets Brændinger larme,
-Mig vilde skjænke sød Havn og Ro
-Saa gudsvelsignede Arme.
+Det var omleiret overalt
+Af Storm, af Lyn og Torden;
+Og der blev fægtet, skrevet, talt, -
+En Hagl af Ord og Kugler faldt
+I Syden og i Norden.
 
-Nu dæmrer Dag; de Fugle smaa
-Alt vaagne i Krattets Bure;
-Klart spejlende sig i Søens Blaae
-Jeg skimter de røde Mure.
-Mig tykkes alt fra min høie Hest
-At høre min Due kurre.
-O, Deiligste! snart er jeg Din Gjæst
-I Din Rede, det grønne Gurre!
+Det kjækt og høit sin Pande bar
+Og saae med roligt Øie
+Paa skumle Løgn, paa Sandhed klar,
+Paa dem, som gjorde sig til Nar,
+Og lod det Hele støie.
+
+Det hjalp vort lille Fædreland
+I al dets Id og Gjerning;
+Med Stolthed vi forkynde kan:
+Hvor Dansken spilled Mand mod Mand,
+Os faldt den bedste Terning.
+
+Farvel da nu, Du gamle Aar!
+Dit Minde vil vi hædre;
+Vor Takkesang skal lyde, naar
+Med svage Rest af Liv Du gaaer
+Til Ro hos dine Fædre.
+
+Mens alle Himlens Engle smaa
+Med Sorgens hvide Lilie
+Din sidste, korte Vei besaae,
+Min Urtekost jeg kaster paa
+Dit Mausoleums Tillie!
 </body>
 </poem>
 
-<poem id="winther2002062323">
+<poem id="winther2002021794">
 <head>
-   <title>En Lykkelig</title>
-   <toctitle>En Lykkelig</toctitle>
-   <indextitle>En Lykkelig</indextitle>
-   <firstline>Det var en Julinat, hvis Duft</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>I Havn</title>
+    <firstline>Mig Himlen var saa vild og graa</firstline>
+    <notes>
+        <note>Bidrag fra Svend Andersen</note>
+    </notes>
+    <source pages="8-10"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                   I.
+Mig Himlen var saa vild og graa,
+Der var ei Stjernelys derpaa;
 
-Det var en Julinat, hvis Duft
-Og Varme fyldte Jord og Luft.
-Veemodig alle Stjerner saae
-Til Blomsterne, som stille laae
-I Blund ved Jordens Moderbryst
-Og drømte sødt om Dagens Lyst.
-Guldsolen stod i Løvens Tegn,
-Som hersked i den Himlens Egn,
-Hvor rige Stjerner denne Nat
-Sig festligt havde Stævne sat,
-For hemmeligt, i enig Pagt
-At øve deres sjeldne Magt.
-Ved Sundets Bred hver Bølge sov;
-Den brune Hjort i dunkle Skov
-Med sine Takker henad Ryg
-I Græsset laae hos Hinden tryg.
-Selv i den store, lumre By
-Indslumret var alt Brag og Gny;
-Den Syges Lys, halv Ild, halv Damp,
-Med Livet streed den sidste Kamp.
-Men i et snevert Stræde hist,
-Høit under Taget, paa en Qvist,
-I et forfaldent, gammelt Huus,
-Der tindred end et rødligt Blus,
-Mens af og til fra Vindvet sneeg
-Sig let en blaalig Røg, der steeg
-Og svandt, som Tanken svinder, naar
-Det første Aftenblund man faaer.
+Men Stormen gik, og Bølgen slog;
+Mit Skib hen over Havet jog.
 
+Ledsaget kun af Sorg og Savn,
+Jeg saae ei Haab, jeg fandt ei Havn.
 
-                      II.
+Jeg saae ei Land med Skoves Ly,
+Ei Kyst, hvorhen jeg turde tye.
 
-Der oppe i det snevre Rum
-En Olding sad nedbøiet, krum,
-Huulbrystet, mager, bleeg og stum.
-Hans tynde Haar var hvidt som Snee;
-Paa Munden var det let at see,
-Den aldrig havde lært at lee.
-I Pandens dybe Runeskrift
-Ei læstes nogen stor Bedrift;
-Men - var det Længsel, høi og kjæk?
-Var det en Attraa, fuul og fræk,
-Der pløied disse sære Træk?
-Det saaes ei klart; thi som et Slør
-Var vævet for hans Aasyns Dør.
-Dybt Øiet laae bag Brynets Krands,
-Men tindred der med mægtig Glands;
-Man af dets Flamme, skarp og stærk,
-Vel aned det uhyre Værk,
-Der som en Ixionisk Ring
-Fik sat hans indre Liv i Sving.
-Paa Gulvet stod med Ild og Kul
-En lille Ovn, foran hvis Hul
-Han sad med Pusteren, og lod
-Den Digel, som paa Ilden stod,
-I Heden glødes rød som Blod,
-Ja, hvid som Iis, imens han snart
-Med Tangen snapped i en Fart
-Saa hist, saa her en Ting og smeed
-I Diglens slugne Gab den ned;
-Og snart fra Hylden hist i Krog
-Sig hented mangen støvet Bog.
-Paa Tal, paa sære Tegn og Skrift
-Han Øie stirrede saa stivt,
-Saa længselsfuldt, som hist i Sand
-Kamelen speider efter Vand,
-Som Synden efter Naadens Drik,
-Som Manden efter Qvindens Blik.
-Paa Stolen sank han atter ned,
-Men rastløs midt i stille Fred
-Han saae paa Diglens hede Skaal
-Med jernfast Villie og Taal,
-Som vented evigt han et Maal.
+Høit Vinden peeb - som Haan det klang, -
+Det var en bitter Dødesang.
 
+Jeg var saa mat, og i min Sjæl
+Bevæged sig en Drøm saa fæl.
 
-                  III.
+Den lokked mig - jeg slap mit Roer, -
+Nær var jeg styrtet overbord! -
 
-Hvad var han før? - Saa reen og smuk
-En Yngling, hvem en Moders Suk
-Og Faderstoltheds Smiil fik sendt
-Fra Hjemmet i det Element,
-Som kaldes Livet, der at faae
-Fuldendt, hvad de begyndte paa.
-Han var saa livlig, kjæk og from,
-Og hvor hans Fod saa sværmed om,
-Var venligt Haandtryk, yndigt Blik
-Og Smiil den Velkomst, som han fik.
-Som Verden aaben for ham stod,
-Saa hver en Sjæl sig ham oplod;
-Og Rosens Duft og Druens Glød
-Blev budet ham som dagligt Brød.
-Til ædelt Liv blev vakt hans Aand,
-Hans Blik blev klaret, Kunstens Haand
-Ham førte mod en Hæderskrands,
-Der huldt ham vinked med sin Glands.
-Og det, det mest af Alt formaaer,
-Saalænge Verdens Grundvold staaer,
-At binde fast til Gud og Pligt,
-At gjøre Livet til et Digt,
-Saa rigt som reent, saa skjønt som sandt, -
-En Qvindes Kjærlighed han vandt.
-Skjøndt ingen sluttet Pagt ham bandt,
-Han var i Tanken dog ei fri,
-Men fandt sin Salighed deri.
-Og det var netop paa det Punkt,
-Da Elskovs Blomster, frisk og ungt,
-Fra Himlen fik det første Bud
-Og var just ved at springe ud,
-Da - - dog endnu et Blik derpaa -
-Et venligt Billed end - og saa -
+Da lød din Røst, - den var saa øm,
+Den vækked mig af Dødens Drøm.
 
+Den kaldte mig, - jeg tog ei feil!
+Sig Havet jævned til et Speil.
 
-                  IV.
+Skydækket i det Fjerne sank,
+Og Himlen vinked, klar og blank.
 
-Høit stod en Skov paa Søens Bred,
-Paa Skrænten laae et landligt Sted.
-De slanke Piller Taget bar,
-Og med de store, blanke Glar
-Det skued over Sø og Mark,
-Omduftet af en Blomsterpark.
-Let Taagen over Søen laae
-Og Morgenhimlen dæmred graa;
-Men Lysekronens røde Blus
-End straaled fra det muntre Huus,
-Hvor der til lystig Sommerdands
-Var samlet just en yndig Krands
-At Ungdom, Skjønhed, som ei let
-Af Jubel og af Dands blev mæt.
-Det raske Buestrøg end klang,
-Sødt blandet med Hoboens Sang,
-Og Paukens dumpe, faste Takt
-Udøved end sin Tryllemagt,
-Saa midt i Klang og munter Støi
-End Par og Par i Salen fløi;
-End perled Druens varme Blod,
-Og Gaarden fuld af Vogne stod.
-Men ude paa Balconen sad,
-Beskygget af Orangens Blad
-Og Laurens fyldig-brede Qvist,
-Der stod i Vaser her og hist,
-En Dame, ung og rank og veeg,
-Med Kinden som Jasminen bleeg.
-Til Stolens Bolster læned hun
-Sin Nakkes Fletning, dunkelbruun,
-Mens Cachemirens bløde Spind
-Den spæde Skabning hylled ind!
-Og under Kjolens klare Bræm
-Hun strakte ud og viste frem
-Et yndigt Tvillingpar, de to
-Smaabitte, atlaskhvide Sko.
-Hun i en Rosenknops Carmin
-Taus bladed med sin Finger fiin,
-Som læste hun deri. Foran
-Stod med sin Hat i Haanden han.
-Til Pillen støttet, roligt, koldt
-Med hendes Blik han Øie holdt.
-De havde talt; nu Begge taug,
-Men deres Tanker paa et Hav
-Af Følelser omsværmed frit,
-Og skiltes ad og mødtes tidt,
-Som hid og did paa Dammen to
-Libeller fare uden Ro.
-De havde talt; men skjøndt hvert Ord
-Henflagrede som Dandsens Chor,
-Der med sin Rhythme, med sin Klang
-Ledsagede dets lette Gang,
-Det faldt dog tungt paa Guldets Viis,
-Og haardt som Jern og koldt som Iis.
-Det var en Afsked - uden Grund!
-Det var maaskee et Lune kun?
-En Grille, som det havde voldt?
-Det klang ret spøgefuldt, men koldt.
-Han var bestemt, han talte kort:
-Han vilde bort, han maatte bort!
-For evig? Nei, han kom igjen,
-Naar Tiden havde veiret hen
-Saa hiint, saa dette fra hans Vei, -
-Om Tingen selv han ymted ei.
-Det lod, som han med sorgløs Aand
-Gav slip paa dette fine Baand,
-Som her ham holdt. Et raat Maaskee
-Han gav til Lindring for den Vee,
-Som vel han vidste, nu var vakt
-I Qvindehjertets rige Schacht.
-Han fjerned sig med høfligt Buk;
-Men ingen Smerte, intet Suk
-Lod ane, at i Haabets Blomst
-Ham Spiren laae til Atterkomst.
-Han sprang i Vognen, vugged blødt
-Og drømte om en Fremtid sødt.
-,,Hvad mægter ei en Villie stærk?''
-Han tænkte: ,,med fuldbyrdet Værk
-At sige - hvilken salig Fryd! -
-Til hende og mig selv: Nu nyd!''
-Og dog forbi hans Øie gik
-Hiint smertefulde Afskedsblik;
-Og dog gjentoned i hans Bryst
-Hiin sittrende og sagte Røst,
-Hvormed hun hvisked sit Levvel!
-Og levende stod for hans Sjæl,
-Hvor nu paa Knæ hun havde lagt
-Sig for sin Seng, i hviden Dragt,
-Og der sin Kind i Puden dulgt
-Af Hjertens Angst og Qval forfulgt,
-At søge, ene der med Gud,
-I Sukket Trøst og græde ud!
-Hans Tanke roligt saae derpaa,
-Og trøstigt lod han Hjertet slaae.
-Han troede sig bevidst, at ei
-Ham Letsind førte denne Vei.
-Han stoled paa ved kraftig Taal
-Engang at naae sit høie Maal.
-Da skulde Sorg og Savn og Alt
-Med Renter vorde rigt betalt;
-Da kunde han - o, søde Fryd! -
-Tilraabe hende: Kom og nyd!
-Den Tanke var det varme Lys,
-Som dæmped Hjertets Febergys
-Og fæsted Freden i hans Sind, -
-Og sødeligt han slumred ind.
+Du kendte Stjernen, som var sat
+Til Leder os i Livets Nat.
 
+Du sad hos mig paa Skibets Stavn,
+Du vidste Vei til Kyst og Havn.
 
-                   V.
+Du peged paa en stille Bo,
+Og hvisked: ,,Der vi finde Ro!''
 
-Hvo Eensomhed sig kaare vil,
-Ham hjælper Verden snart dertil.
-Som Taage svinder Verdens Flok,
-Enhver har i sit Eget nok;
-Og Attraction og Sympathie
-Er Baand med liden Holdning i.
-Her listed han sig bort, og brat
-Han saae sin Plads igjen besat;
-Hist, hvor man saae ham gjerne før,
-Man aabned selv hans Flugt en Dør.
-Han blev som Iis, og Vennens Fod
-For evig kold hans Bo forlod;
-Og snart han var saa ene der,
-Som strandet Sømand paa et Skjær.
-Det lykkedes! Han gjorde meer;
-I Hjertets mest forborgne Krog,
-Hvor Blodets bedste Aare slog,
-Han fjæled hvert et Mindeblad,
-Den lange, rige Perlerad
-Af Dages, Timers Sorg og Fryd,
-Sin Tankes Skat, sin Vandrings Pryd,
-For dem engang at drage frem
-Af deres stille Nattegjem.
-Han laased for sit Mindes Grav
-Og slængte Nøglen fjernt i Hav;
-Og hvergang Tanken kom forbi
-Hiin Dør, hermetisk lukket i,
-Den flygted, skamfuld og beklemt,
-Til Alt i Glemsels Dyb var gjemt.
-Han var alene; men hans Aand
-Var ikke fri! Ved magisk Baand
-Den lænket fandt sig til eet Punkt,
-Hvori dens Liv var evigt ungt.
-For Verden, som han havde tabt,
-Han havde sig en anden skabt.
-Naar Skjønhed, Tanke, Poesie
-Ham vinked med sit Trylleri;
-Naar Kunstens Børn, naar Harpens Stræng,
-Naar Luft og Hav og Skov og Eng
-Ham lokkede med venligt Blik,
-Med yndig Røst, hans Tanke gik
-Til Hiint: ,,Engang - o, hvilken Fryd! -
-Jeg sige tør: ,,Nu hviil og nyd!'' -
-Han var alene. Villiestærk
-Af rastløs Iver for sit Værk
-Han hørte ikke Livets Kald,
-Ei Tidens tunge Hammers Fald.
-I Nattens Hvælving stod den Skrift,
-Hvorpa hans Øie stirred stivt,
-Og gamle Bøgers mugne Duft
-Forfrisked ham som Vaarens Luft;
-Og Smelte-Essens Lue heed
-Var Solen, han sig varmed ved.
-Tung var hans Id, men Styrkens Ord
-Oplivende ham gjennemfoer:
-,,Snart - snart min Idræt er forbi,
-Da er jeg mægtig, riig og fri!'' -
-Naar Nytaars Morgenklokken slog,
-Og Tusinder til Templet drog,
-At sende Gud fra rørte Bryst
-For Livet Tak og hente Trøst,
-Hans Tanke var: ,,Ak, ja! engang
-Jeg aabner og min Celle trang,
-Og blander da min Jubelsang
-Med disse Chor, som hisset lød,
-Og priser Gud, indtil min Død!'' -
-Som Fjeld, med snebedækte Top,
-Af Sol forgyldte dukke op
-Fra Skyers dunkle Hav, og brat
-Forsvinde i den sorte Nat,
-Saa glimted Haab tidt frem og svandt,
-Men i eet Ord nyt Mod han vandt:
-,,Maaskee i Nat! maaskee i Dag!''
-Og dobbelt slog hans Hjertes Slag.
-Men denne Nat og Dag blev Aar,
-Der meied bort hans Ungdoms Haar,
-Der sendte Snee paa Issen ned,
-Saa Kinden blegedes derved.
-Hans Ryg blev krum, hans Blod blev koldt,
-Med stivnet Haand han Tangen holdt
-Og Pusteren; kun Øiets Ild
-Gav Aanden evigt Tønder til.
-En Slægt var voxet op og død,
-En anden Slægt igjen var fød,
-Han saae det ei; hans Blik var lukt
-Og blindt for Livet og dets Flugt.
-Saa stod han, som paa Klippetop,
-Hvor ingen Lyd kan svæve op
-Og ingen Duft fra Dalens Flor,
-Men Taushed kun og Tomhed boer.
-Sit eget Billed her han saae
-Uhyre stort afspeilet paa
-Den nære Sky. Med rædsom Lyst
-Han i en Skygge fandt sin Trøst,
-Til Dagens Stjerne sank, og Alt
-Igjen i Nattens Mulm henfaldt.
-Det var et Gjøglespil, en Dunst!
-Som Sandhed straaled kun hans Kunst.
+Og Haand i Haand, og Kind ved Kind
+Vi vandred sagteligt derind.
 
+Imod os kom den lune Luft,
+Heelt fyldt af Elskovsrosens Duft.
 
-                 VI.
+Og Fredens stille Engel gik
+Imøde os med milde Blik.
 
-Det var en Julinat, hvis Duft
-Og Varme fyldte Jord og Luft.
-Guldsolen stod i Løvens Tegn,
-Som hersked i den Himlens Egn,
-Hvor rige Stjerner denne Nat
-Sig havde festligt Stævne sat,
-For hemmeligt, i enig Pagt
-At øve deres sjeldne Magt.
-Paa Hvalvet stod hans Stjerne rød,
-Det var den Stund, da han blev fød.
-Som Løvens Barn paa denne Jord
-Han var udseet til Lykke stor.
-Ved Tal, ved Tegn, ved Ildens Magt
-Heel tidt han havde Grunden lagt
-Til mangen Bygning, der var reist
-Og havde stolt mod Himlen kneist;
-Men kun et Pust - og Alt var Dunst!
-Thi hver dybsindig Kløgt og Kunst,
-Al snild Beregning var dog tom,
-Han som i Blinde famled om,
-Saa hver en Bygning fandtes huul.
-Eet var der end, som laae i Skjul,
-Som ei blev lært i nogen Bog,
-Ei i Naturens Hjertekrog,
-I Ord, i Urter eller Steen,
-I Jorden mørk, i Luften reen,
-I røden Ild, i tunge Hav, -
-Eet, som kun Lykken ene gav!
-Eet, som den reiste Bygning bandt
-Og fastned, saa den brat ei svandt,
-Men herligt til sin Mesters Priis
-Stod som et evigt Paradis,
-Der bød ham ind til al den Lyst,
-Som fryde kan et jordisk Bryst! - -
-Her Lykken var sin Beiler tro;
-Alt stod den ved hans stille Bo.
-Den hemmelige Stund var nær,
-Da han for alt sit Livs Besvær,
-Erkjendt som Løvens ægte Søn,
-Af Lykken skulde faae sin Løn. -
-Ved Ovnen paa sin Stol han sad,
-Hvor i halvhundred Aar i Rad
-Urokket Lid han Dag og Nat
-Til et Maaskee nu havde sat.
-I Stolen mat tilbagelagt
-Paa Diglen gav han nøie Agt;
-Med Pusteren han af og til
-Gjød Liv i Ovnens røde Ild,
-Mens stundom Øiets Længselsblik
-Ud af det aabne Vindve gik
-Mod Himlens Hvælving, hvor han saae
-I det uendelige Blaae
-Sin Stjerne tindre klar og smuk.
-Dybt Nattens Hjerte drog et Suk,
-Og gjennem Luften dæmpet svang
-Sig Midnatsklokkens første Klang.
-Da sluktes Ovnens Flamme brat,
-Tæt favned ham den stille Nat,
-Og som dens sorte Teppe faldt,
-Sig aabenbared en Gestalt.
-Let hæved sig den spæde Krop
-Af Diglens hede Munding op.
-Med gyldne Lokkers kruste Pragt
-Om Pande, Barm og Skuldre lagt,
-Med Øiets Stjerne sapphirklar,
-Med purpurlyse Vingepar,
-Iført et skinnende Gevandt
-Hun svæved - smiled - og forsvandt!
-Det Chrysaliden var! - Kun eet
-Secund hun dvæled; men i det
-Var al den Salighed udtømt,
-Som nogen Tanke sig fik drømt.
-Hans Værk var endt! - Hans Sorg og Harm
-Var veiret bort fra trætte Barm;
-En Sum af Livets fulde Lyst
-Var strømmet til hans aabne Bryst.
-Hans Længsel stillet var, hvert Haab
-Var signet i den gyldne Daab -
-Ved hendes søde Øiekast.
-Det var hans Liv! - Hans Øine brast,
-Mens Panden segned, og hans Blod
-Blev koldt, og Hjertet stille stod.
-     Men Dagens første Dæmring saae
-Ham kold og stiv at sidde paa
-Den gamle Stol. Den slidte Tang
-End løst i visne Fingre hang.
-Let Morgenvinden listed ind
-Og vifted om hans blege Kind;
-Ret som en Trøsterinde blid
-Den leged med hans Lok saa hvid.
-En Spurv, nyfigen, qvik og glad
-Paa Ovnens kolde Hjørne sad.
-Da man saae til, var Diglen fuld
-Af puurt, uskjæmmet Jomfruguld;
-Men Kunstens hemmelige Ord
-Blev lagt med Mesteren i Jord.
+Hver Lænke brast, som Sjælen bandt;
+Hvert Smertens Mindeblad forsvandt.
+
+Hver Glæde vaagned, der var glemt,
+Og Livets Harpe fandt vi stemt.
+
+Og den skal klinge, mens vi glad
+Den lange Vandring følges ad.
+
+Og den skal klinge, naar vi To
+Indtræde i den sidste Bo.
 </body>
 </poem>
+
+<poem id="winther2002021795">
+<head>
+    <title>Contance et fidélité</title>
+    <firstline>Ifald i Hjertet, dybt derinde</firstline>
+    <notes>
+        <note>Bidrag fra Svend Andersen</note>
+    </notes>
+    <source pages="11"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Ifald i Hjertet, dybt derinde
+Med Sjælens Blik du kunde see,
+Da vilde du mit Valgsprog finde:
+<i>Constance et fidélité.</i>
+
+Thi skal med Kraft jeg Vaaben bære
+I Kamp med Livet og dets Vee,
+Da maa min Kjækheds Feltraab være
+<i>Constance et fidélité.</i>
+
+Frygt ei, at Verden skal mig lokke
+Med Rosers Ild, med Liliers Snee;
+Nei, Intet i mit Bryst kan rokke
+<i>Constance et fidélité.</i>
+
+O, skal vi bygge os et Eden
+Paa Jorden her, da maae der Tre
+Os styrke, nemlig: Kjærligheden,
+<i>Constance et fidélité.</i>
+</body>
+</poem>
+
+<poem id="winther2002021796">
+<head>
+    <title>Til J.</title>
+    <firstline>Jeg længes efter dig min Ven!</firstline>
+    <notes>
+        <note>Bidrag fra Svend Andersen.</note>
+    </notes>
+    <source pages="12"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Jeg længes efter dig min Ven!
+Og kommer du ei snart igjen,
+Saa maa jeg plat forsage;
+Mit Liv har mistet al sin Duft,
+Det trykker som en Tordenluft,
+Og Sangen bliver Klage.
+
+Vort Huus er mig saa luunt og godt
+Som Tommelidens Tommeltot,
+Naar du kuns er derinde;
+Men er du borte, uden Ro
+Min Tanke flagrer fra sin Bo
+For alle fire Vinde.
+
+Jeg længes, ak! saa inderlig,
+Dig, faur og fiin og elskelig,
+Tæt til mit Bryst at trykke;
+Du dufterige Blomsterskud,
+Mit sikkre Leidebrev hos Gud,
+Mit Livs, min Tankes Smykke!
+</body>
+</poem>
+
+<poem id="winther2002021797">
+<head>
+    <title>Med en Psalmebog</title>
+    <firstline>Naar dine bedste Tanker følge</firstline>
+    <notes>
+        <note>Bidrag fra Svend Andersen.</note>
+    </notes>
+    <source pages="13"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Naar dine bedste Tanker følge
+Med Kirke-Hymnens Himmel-Gang;
+Naar i den stærke Tone-Bølge
+Du blander fromt dit Hjertes Sang;
+Naar du paa Bønnens Vinger hæver
+Til Fred og Frihed høit dit Sind,
+Og over Jordens Mulm du svæver
+Og skuer glad i Lyset ind; -
+O, kast da og dit Blik tilbage,
+Og væk mit Minde i dit Bryst,
+Og lad mit Billed med dig drage
+Til Kilden, hvor du øser Trøst!
+Der, hvor dit Hjerte selv du tvætter,
+Saa Tanken bliver stærk og reen,
+Jeg veed, du ikke mig forgjetter,
+Men vor Fortrøstning vorder een!
+</body>
+</poem>
+
+<poem id="winther2002021798">
+<head>
+    <title>Til hendes Gudsøn</title>
+    <firstline>Du lykkelige, spæde Dreng!</firstline>
+    <notes>
+        <note>Bidrag fra Svend Andersen.</note>
+    </notes>
+    <source pages="14-15"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Du lykkelige, spæde Dreng!
+Tilgiv, ifald jeg dig misunder.
+Idag hun træder til din Seng,
+Hvor ubevidst endnu du blunder.
+
+Hun bøier sig saa kjærligt ned,
+Og lader dine Øine drikke
+Velsignelse og himmelsk Fred
+Af de usigelige Blikke.
+
+Hun smiler, og hun løfter blødt
+Dig paa de svanehvide Arme,
+Hvor du saa inderligt, saa sødt
+Tør ane hendes Hjertes Varme.
+
+Hun bærer ømt dig i sin Favn
+Til Hallen hist, til Frelsens Kilde,
+Og nævner første Gang ved Navn
+Dig med sin Røst, den rene, milde.
+
+Mig har hun og velsignet kjært
+Og aabnet mig sit Øies Himmel,
+En Tro saa fast har hun mig lært
+Udaf sit Hjertes Tankevrimmel.
+
+Hun og har hævet mig i Favn
+Fra Mørket op til Morgenrøden;
+Hun og har opkaldt mig ved Navn,
+Der revet har min Sjæl fra Døden.
+</body>
+</poem>
+
+<poem id="winther2002021799">
+<head>
+    <title>Natten var mild og kjær</title>
+    <firstline>Natten var mild og kjær</firstline>
+    <notes>
+        <note>Bidrag fra Svend Andersen.</note>
+    </notes>
+    <source pages="16-17"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Natten var mild og kjær,
+Stille og dunkel,
+Skjult var bag Skyen hver
+Stjernes Karfunkel.
+Vi var saa ene!
+Lindenes Grene
+Sagteligt svæved vort Vindve forbi -
+Alt var en sød Melodie.
+
+Vi var saa ene med
+Os og vort Hjerte;
+Urørt forbi os gled
+Mindet om Smerte,
+Mindet om Storme;
+Nagende Orme
+Glemselindhylled' i Dvale jo laae -
+Der var kun Eet, som vi saae.
+
+Smeltet til Eet var jo
+Livsfyldens Kerter,
+Eet vare begge to
+Bævende Hjerter;
+Fletted' som Ranker
+Eet vore Tanker;
+Eet var vor Himmel, vor Tro og vort Haab,
+Eet, som vor Kjærligheds Daab.
+
+Drømmende vugged vi
+Som over Havet,
+Vækkende Sukket, i
+Længsel begravet;
+Hilste vor Stjerne,
+Som fra den fjerne
+Evighed havde formælet vort Navn, -
+Salige, Favn udi Favn!
+</body>
+</poem>
+
+<poem id="winther20020217100">
+<head>
+    <title>Du er som Brød</title>
+    <firstline>Du er som Brød, det grove - fine</firstline>
+    <notes>
+        <note>Bidrag fra Svend Andersen.</note>
+    </notes>
+    <source pages="18-19"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Du er som Brød, det grove - fine,
+Hvoraf man aldrig bliver kjed;
+Du er som rene, gamle Vine,
+Hvorved man aldrig vorder leed.
+
+O, din Gestalt, saa ædel, kraftig,
+Saa egen og saa yndefuld!
+Din Aand, en Drue stærk og saftig,
+Begeistrende og riig som Guld!
+
+Jeg elsker dig, til Døden meier
+Engang med skarpen Lee mit Siv,
+Du Eneste, mit Hjerte eier,
+Min Styrke, Næring og mit Liv!
+
+Jeg hader hver, som blot i Tanken
+Paa Veien til dit Hjerte gik;
+Som med den mindste Hjertebanken
+Sig soled i et flygtigt Blik.
+
+Jeg hader hver, som blot har vovet
+At troe, dit Smiil var ham bestemt!
+Med Fryd jeg saae hver saadant Hoved
+I Dybets evige Mørke gjemt.
+</body>
+</poem>
+
+<poem id="winther20020217101">
+<head>
+    <title>Du er deilig</title>
+    <firstline>Du er deilig! O, det nytter ikke</firstline>
+    <notes>
+        <note>Bidrag fra Svend Andersen.</note>
+    </notes>
+    <source pages="20-22"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Du er deilig! O, det nytter ikke,
+Du tilkaster mig straffende Blikke -
+Du er deilig, som Ingen paa Jord!
+Som de unge Engle i Himlen,
+Som Vaaren i Blomstervrimlen, -
+Og paa din Deilighed jeg troer.
+
+Var jeg kunstfærdig, var jeg Maler,
+Du skulde see dig, naar du taler,
+Du skulde see dig, naar du leer;
+Din Alvor kjæk jeg vilde tegne,
+Min Pensel skulde stolt opregne
+Alt, hvad mit Øie henrykt seer.
+
+Jeg seer hver snerpet Dame og Herre
+Forbavset Øinene at opspærre
+Og Munden, saa høit som de kan;
+Ja, de er færdige at tabe Veiret;
+Mit Billed er godt, jeg har seiret!
+Jeg har malet frit, - som en Mand.
+
+Naar jeg hedt til mit Bryst dig trykker,
+Og med Roser din Kind jeg smykker,
+Troer du da ikke, jeg seer klart?
+Mit indre Syn mig ei svigter,
+Hvert Suk, hvert Kys er en Digter,
+Hvem din Skjønhed er aabenbart.
+
+Vi er Støv! Det er vist, vi skal svinde!
+Men veed du ei, du min Veninde!
+Udødelig er den skjønne Form.
+Den bestaaer, skjøndt Stoffet henfalder,
+I en evig, ungtblomstrende Alder
+Som en høi, guddommelig Norm.
+
+Dine Skuldres sødt smægtende Hvidhed,
+Dine Lokkers blonde, rørende Blidhed,
+Ak, det er ei det, som bestaaer;
+Men Mindet, som evigt kan nyde
+Alt, hvad de Hieroglypher betyde, -
+Mindet - det tæller ei Aar.
+
+Tanken er stærk, men Livsminuttet
+Ville vi bruge, før det har sluttet
+Sig til den lange Række, som svandt;
+Timen, som vore Længsler fødte,
+Mens Taarerne randt og Hjerterne blødte,
+Timen, som vore Sjæle forbandt.
+
+Timen, som mine Arme lukked
+Om dig, og min Luetørst slukked
+Og tændte den kraftigt igjen;
+Timen, som kaldte vort Liv tillive,
+Skal til en Evighed blive,
+Og vi vorde evige ved den.
+
+I dig en Rigdom mig drømmer,
+En Yndigheds Fylde udstrømmer,
+En Skjønheds utømmede Væld!
+O, vend dog dit Hoved, jeg beer dig!
+Ak, fra hvad Side jeg seer dig,
+Vidunderligt tryller du min Sjæl.
+
+Du er deilig! O, det nytter dig ikke,
+Du tilkaster mig de straffende Blikke -
+Du er deilig, som Ingen paa Jord!
+Som de unge Engle i Himlen,
+Som Vaaren i Blomstervrimlen, -
+Og paa din Deilighed jeg troer.
+</body>
+</poem>
+
+<poem id="winther20020217102">
+<head>
+    <title>Hvor Skoven mest var øde</title>
+    <firstline>Hvor Skoven meest var øde</firstline>
+    <notes>
+        <note>Bidrag fra Svend Andersen.</note>
+    </notes>
+    <source pages="23-24"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Hvor Skoven meest var øde
+I Skyggen dunkelgrøn,
+Der sad jeg med min Elskte -
+Med min Elskte i Løn.
+
+Der stod ei blaae Violer
+Og ingen Rose rød,
+Der pranged ingen Lilie
+Alt udi Skovens Skjød.
+
+Dog saae mit Øie Lilien,
+Og Rosen rød det saae,
+Dog qvæged sig mit Hjerte
+Sødt ved Violens Blaae.
+
+Der sang vel ingen Smaafugl, <!-- ADL siger Sangfugl -->
+Men Alt var tyst og dødt;
+Dog klang det for mit Øre
+Saa usigeligt sødt.
+
+- Og blev Alverden øde
+Og misted Liv og Lyst,
+Hun ved min Side skabte
+Alverden i mit Bryst.
+</body>
+</poem>
+
+<poem id="winther20020217103">
+<head>
+    <title>Nattetanker</title>
+    <firstline>Mens sorgfuld jeg mig her har sat</firstline>
+    <notes>
+        <note>Bidrag fra Svend Andersen.</note>
+    </notes>
+    <source pages="25-27"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Mens sorgfuld jeg mig her har sat
+I Ly af Lindens Kroner,
+Kling, Cithar! i den tause Nat
+De allersødeste Toner.
+
+O, Cithar! Væk din milde Klang,
+Mens Nattens Stjerne smiler,
+Og send en sagte Vuggesang
+Did, hvor en Moder hviler.
+
+Og det uroligt ømme Sind
+I søden Søvn du vugge;
+Aand Taaren bort fra hendes Kind
+Og stands de bittre Sukke.
+
+Er hun end taus, er Øiet lukt,
+Jeg veed dog, Hjertet vaager;
+Jeg veed, hvorhen dets milde Flugt
+Gaaer gjennem Livets Taager.
+
+Det vandrer over Mark og Eng,
+Hen over Havets Vover,
+Did, hvor den lille, kjære Dreng
+I Nattens Favntag sover.
+
+Og som hans Engel kjærligt hun
+I Slummer ham maa dysse,
+Mens paa hans Øine, Kind og Mund
+Hun trykker søde Kysse.
+
+Hun sidder ved hans Leiested
+Og pleier tro, med Smerte
+Den Sæd, som selv hun lagde ned
+I Drengens spæde Hjerte.
+
+Hun vogter hver en Plante ømt,
+Hvis Frø hun ham har givet,
+Saa hvad han mener, kun var drømt,
+Skal bære Frugt i Livet.
+
+Saa trykker hun ham til sit Bryst
+Med Veemod og med Glæde,
+Og skjenker ham saa sød en Trøst,
+Ifald han vilde græde! -
+
+Et Baand, et helligt, er der lagt
+Imellem ham og hende;
+Ei Verdens Bud, ei Himlens Magt
+Kan skille disse Tvende.
+
+Paa hiint usynligt stærke Baand,
+Som Engle trygt bevare,
+Gaae Tankerne fra Aand til Aand
+Liig Demantperler klare.
+
+Men dybt vil præges i hans Barm
+Hvert Ord, og hendes Stemme
+Har tændt hans Sjæl en Fakkel varm,
+Som aldrig han vil glemme.
+
+Og Gud bevare vil den Skrift,
+Den hellige Kertes Lue,
+Og naadigt svække hver en Gift,
+Som vilde hans Hjerte true! -
+
+Nu har jeg sjunget! - sorrigmat
+Mit Strængespil jeg slænger;
+Ustandset i den tause Nat
+Min Taares Væld fremtrænger.
+</body>
+</poem>
+
+<poem id="winther20020217104">
+<head>
+    <title>Til Solen</title>
+    <firstline>Jeg hader dem, de lange Dage</firstline>
+    <notes>
+        <note>Bidrag fra Svend Andersen.</note>
+    </notes>
+    <source pages="28-29"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Jeg hader dem, de lange Dage,
+Med deres tusind Speiderblik;
+See, Solens Heste træge drage,
+Som det til Liigparade gik;
+See, Alting vaager, Alt sig rører
+I en forvirret Assemblee,
+Mens alle spændte Øren hører
+Og alle skarpe Øine see.
+
+Jeg elsker dem, de lange Nætter
+I deres sorte Himmeltelt,
+Hvor Mulmet sig paa Thronen sætter
+Med Stjerner i sit Vaabenfelt;
+Som hver forundret Øre lukke,
+Hvert Øie hylle tæt i Slør,
+Som rede Trygheds bløde Vugge
+Og laase Sikkerhedens Dør.
+
+O, Sangens Gud, du, Solens Herre!
+Driv rask med Svøben paa dit Spand,
+Og skynd dig med din gyldne Kærre
+Langt bort fra dette lille Land!
+Din Søn skal ei din Naade glemme,
+Men prise yndeligt dit Navn,
+Og nævne dig med henrykt Stemme,
+Tryg i en sød og sikker Havn.
+</body>
+</poem>
+
 </workbody>
 </kalliopework>
