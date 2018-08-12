@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1865" author="winter" status="incomplete" type="poetry">
+<kalliopework id="1865" author="winter" status="complete" type="poetry">
 <workhead>
    <title>Brogede Blade</title>
    <year>1865</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+    <notes>
+        <note>Teksten følger Christian Winther: <i>Brogede Blade</i>, C.A. Reitzels Forlag, Kbh., 1865.</note>
+    </notes>
+    <pictures>
+        <picture src="1865-p1.jpg">Titelbladet til <i>Brogede Blade</i> (1865) lyder ,,''.</picture>
+    </pictures>
+    <source facsimile="11540801570F_color.pdf" facsimile-pages-num="372" facsimile-pages-offset="12">Christian Winther: <i>Brogede Blade</i>, C.A. Reitzels Forlag, Kbh., 1865.</source>
 </workhead>
 <workbody>
 
@@ -1332,8 +1337,9 @@ Mens dine Genier end vaage.
    <title>Fra Ludvig Bødtcher</title>
    <toctitle>Fra Ludvig Bødtcher</toctitle>
    <indextitle>Fra Ludvig Bødtcher</indextitle>
-   <firstline>Mens Sneen dryssed sit kolde Bad</firstline>
+   <nofirstline />
    <notes>
+      <note>* Aftrykt her med Forfatterens Tilladelse.</note>
       <note>Dette digt er skrevet af Ludvig Bøtcher, men blev trykt i nærværende bog. Digtet findes også i Kalliope under Bødtcher som <xref poem="boedther2002120101"/>.</note>
       <note>Efter Chr. Winther: <i>Samlede Digtninger</i>, Chr. Winther og F. L. Liebenberg (red.), bd. 1-11, 1860-72.</note>
       <note type="credits">Bidrag fra Margit Ammentorp.</note>
@@ -2998,6 +3004,7 @@ Saa maa jeg med! Drag frem min gode Ganger!
    <firstline>Paa volden hist saa kjæk og fast</firstline>
    <quality>korrektur1,kilde</quality>
    <notes>
+      <note>* Skrevet i Foraaret 1865. - Hunden, ,,<w>Piil</w>'', tilhører en høit agtet Officier i Hæren.</note>
       <note>Efter Chr. Winther: <i>Samlede Digtninger</i>, Chr. Winther og F. L. Liebenberg (red.), bd. 1-11, 1860-72.</note>
       <note type="credits">Bidrag fra Margit Ammentorp.</note>
    </notes>
@@ -3175,8 +3182,9 @@ Og tal med Fynd for Land og Folk!
 <poem id="winter1999070716">
 <head>
    <title>Henrik Pingel</title>
-   <toctitle>Henrik Pingel</toctitle>
-   <indextitle>Henrik Pingel</indextitle>
+   <notes>
+       <note>* Henrik Pingel, født d. 3die Januar 1838 i Kjøbenhavn, faldt d. 29de Juni 1864 i en Træfning ved Arnkilsøre paa Als.</note>
+   </notes>
    <firstline>Magtens Herre! Klar mit Blik</firstline>
    <quality>korrektur1</quality>
 </head>
@@ -3347,7 +3355,7 @@ Om Deres Arnes Lue!
 </body>
 </poem>
 
-<section>
+<section level="3">
 <head>
    <toctitle>Fra to Husvenner til Fruen</toctitle>
    <indextitle>Fra to Husvenner til Fruen</indextitle>
@@ -3458,26 +3466,2710 @@ Min Tankes bedste Lyst!
 </content>
 </section> <!-- Slut på "Fra to Husvenner til Fruen" -->
 
-<!-- Mangler:
-Verner. Et Digt i syv Romanzer
-Genrebilleder
-Nissens Juleaften
--->
 </content>
 </section> <!-- Slut på "Blandede Digte" -->
 
+<poem id="winter2018081301">
+<head>
+    <title>Verner</title>
+    <subtitle>Et Digt i syv Romanzer</subtitle>
+    <toctitle>Verner. Et Digt i syv Romanzer</toctitle>
+    <firstline>Ung Verner gaaer i grønne Lund</firstline>
+    <notes>
+        <note>* Til sjette Romanze er et Motiv laant fra en Folkevise. See Nyerup og Rahbek: Udvalgte danske Viser, 4de Bind, Pag. 43-45.</note>
+        <note>Den omtalte folkevise er hos Nyerup og Rahbek benævnt »Hr. Verner og Fru Ingeborg.« Denne betegnes senere som DgF. 383 <xref poem="folke2018081101"/>.</note>
+    </notes>
+    <source pages="135-174"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><center>1.</center></nonum>
 
+Ung Verner gaaer i grønne Lund,
+Med Falk paa Haand, med Horn og Hund
+Han har sin Hjertensglæde;
+Han fløiter med sin friske Mund
+For alle Fugle spæde.
+
+Med Ferskenduun omkring sin Kind
+Han springer let som Slettens Hind, -
+Han veed jo ei af Sorgen,
+Og lige freidigt er hans Sind
+Hver Aften og hver Morgen.
+
+I Borgesal, i Skoven hist
+Han sorgløs var som Fugl paa Qvist,
+Der pudser sine Fjedre;
+Hans Lyst var Frihed først og sidst, -
+Han kjendte intet Bedre.
+
+Han spilte Langleeg nok saa smukt,
+Saa Fugl og Dyr, der var i Flugt,
+De standsede i Klynge;
+Men for hans Stemme var der lukt,
+Han kunde ikke synge.
+
+Og der, hvor Sang og Spil og Dands
+Fik samlet ret en Yndig Krands,
+En broget Jomfruskare,
+Der gik han fast fra Vid og Sands
+Og bad sig Gud bevare.
+
+Han kun forstod de ømme Blik ,
+Som fra hans Moders Øine gik,
+Af hendes Kys alene
+Hans Læber Purpurfarve fik, -
+De kjærlige, de rene.
+
+Vel saae han mangen Jomfru sød,
+Som, naar han kom, blev bleeg, blev rød,
+Med Smiil om Mund og Øie;
+Men aned ei, hvad Sligt betød, -
+Han tog det ei saa nøie.
+
+Medlidende Kjærminden saae
+Paa ham med sine Øine blaae,
+Og tænkte: ,,Det er Skade!
+Han lader mig og Rosen staae
+Med vore faure Blade!''
+
+Den vevre Stær, den vidste nok,
+Hvor kold han var som Steen og Stok,
+Og spydigt den sig gotted;
+Og Spurven i sin Qvindeflok
+Evindeligt ham spotted. -
+
+Det led mod Nat og Solen var
+Indslumret, og alt Himlen bar
+Nymaanens krumme Stribe:
+Hen over Engen rendte snar
+Med Skrig den lette Vibe.
+
+Ung Verner vandred ene der,
+Hvor Stien lønligt snoer sig, nær
+To kratbegroete Høie;
+Da pludselig en sælsom Færd
+Sig stiller for hans Øie.
+
+En knæhøi Dverg det var, som med
+En spraglet Orm sig vandt og vreed
+I grønne Græs ved Veien;
+Den sølle Pusling nær var ved
+At give tabt i Legen.
+
+Snart laae han underst, snart han laae
+Paa Krybet, i sin Kofte graae
+Og stønnede og hvæste;
+Snart syntes Ormen opret staae,
+Mens giftig Damp den blæste.
+
+Da skreg den Dverg fra Græssets Skjød:
+,,Du Ungersvend saa frisk og rød!
+Frels mig af denne Qvide!
+Maaskee jeg hjælper Dig i Nød, -
+Det kan Du aldrig vide.
+
+Der komme kan engang den Tid,
+Som er Dig haard og lidet blid,
+Da jeg Dig Trøst kan yde;
+Hvis til mit Ord Du vil slaae Lid,
+Det skal Dig ei fortryde.''
+
+Ung Verner drog sin blanke Kniv,
+Han ændsed ei sit unge Liv,
+Og ei, hvad Dvergen loved;
+Som Toppen af et Blomstersiv
+Afhug han Ormens Hoved.
+
+Den ringlede sin svaie Krop
+Paa Græsset hen med Sving og Hop
+I Edderblod det gule;
+Mens Dvergen med sin røde Top
+Rask smutted i sin Hule.
+
+Saa let i Sind ung Verner saae
+I Skoven ind, hvor Sletten laae
+Med Duggens Perler klare;
+Han aned ei, for Dør at staae
+En anden sælsom Fare.
+
+Som der han stod i Nattens Hal,
+Fra Høien lød i Tonefald
+Indsmigrende med Blødhed:
+,,Dig meget Bittert times skal,
+Men endnu mere Sødhed!
+
+Dit Hjerte, dybt i Dvale lagt,
+Til himmelsk Liv skal vorde vakt,
+Din Tanke skal faae Vinge;
+Din Stemme ved en ukjendt Magt
+Dig Fryd og Frelse bringe!''
+
+
+<nonum><center>2.</center></nonum>
+
+See, Morgensolen stander paa Luur,
+Den stirrer ind i Fru Ingeborgs Buur,
+Og hvad den der faaer at skue,
+Det er saa deiligt! - man skulde troe,
+Den gav paa sin Vandring sig mere Ro
+Og fik mere Kraft i sin Lue.
+
+Fru Ingeborg reder sit kulsorte Haar:
+,,Er jeg ikke deilig som Sol og Vaar,
+Der parres med Jubel og Gammen?''
+Hun blotter for Speilet sin fulde Barm:
+,,Er jeg ikke liflig og hvid og varm
+Som Lilier og Roser tilsammen?''
+
+Hun sætter paa Bolster sin lille Fod:
+,,Kan vel nogen Ungersvend have imod
+At træde i Dandsen med denne?''
+Hun lukker sine Øine, hun aabner dem brat
+,,Kan Stjernerne vel i en Sommernat
+Da sødere funkle og brænde?''
+
+Hun kaster sig hen i sin Løibænks Skjød,
+Om nøgne Skuldre de Fletninger flød
+Og Taarerne paa hendes Kinder;
+Hun knytter sin Haand liig en Bold af Snee
+,,Han vil ikke høre, han vil ikke see, -
+Ak, aldrig Lise jeg finder!
+
+Min gamle Huusbond er lagt i Muld,
+Hans Død mig gav baade Gods og Guld,
+Men hvad kan alt dette mig baade?
+Han vil ikke høre, han vil ikke see,
+Han lader mig døe i min bittre Vee, -
+Ak, hvem vil mig hjælpe og raade?
+
+End er jeg ung og frisk og smuk,
+Mit Jomfruhjerte saa fuldt af Suk,
+Af Anelser, Længsler og Drømme!''
+Det hvisked hun sagte, som til sig selv,
+Med Haand paa Brystet, hvor liig en Elv
+Ildblodet skjød sine Strømme.
+
+Fru Ingeborg kalder paa Frøken Malin:
+,,Og hør Du, min Frøken! faur og fiin,
+Hist vandrer Hr. Verner i Lunde;
+Han lokker for Drossel, han lokker for Stær,
+Selv var han en Fugl, som nok var værd
+At lokke, ifald man kunde.
+
+Drag paa dine Fødder de sølvspændte Skoe,
+Gak ud i Lunden, - o, vær mig tro! -
+Og faae ham mit Lønbrev tilhænde.
+Og tal og siig ham - o, siig ham Alt!''
+Her taug hendes Stemme, af Smerten qvalt,
+Mod Væggen hun monne sig vende.
+
+Med Brevet i Haand den Frøken stod,
+Snart strømmed til Barmen alt hendes Blod,
+Og snart det blussed paa Kinden;
+Med hemmeligt Smiil om den skjelmske Mund
+Hun ilede ned i den grønne Lund
+Saa let som Dunet for Vinden.
+
+Fra Leiet Fru Ingeborg foer saa bleeg:
+,,Hun smiilte!'' hvisked hun sagte og steeg
+Ad Løngangen ned fra sin Stue.
+Ei Falken har Øie saa skarpt og fiint
+Som Qvinden, hvis Hjerte usaligt er piint
+Af Skinsygens Helvedeslue.
+
+
+<nonum><center>3.</center></nonum>
+
+Hun var saa ung og Foden let
+Og Øiet blaat som Voven,
+Naar den en Sommermorgen ret
+Faaer Farvespil fraoven;
+Sødt smiled hendes friske Mund
+Imens hun iled gjennem Lund, -
+Og Kuk! sagde Gjøgen i Skoven.
+
+Hvad hendes Hjerte tænkte paa,
+Stod malet klart paa Kinden;
+Det Brev hun rev i Stumper smaa
+Og spredte dem for Vinden.
+,,Jeg træder helst den lige Vei;
+Vil han ei beile, saa vil jeg!''
+Og Kuk! sagde Gjøgen i Linden.
+
+,,Jeg beiler ei med faure Ord,
+Jeg beiler ei med Klage;
+Stilfærdig Rosenknoppen groer
+I Vaarens unge Dage.
+Ind i hans Hjertes Bo som bedst
+Jeg byder Kjærlighed til Gjæst!''
+Og Kuk! sagde Gjøgen saa fage.
+
+Ung Verner under Egen laae
+Paa Mossets bløde Flade;
+Der hørte han den Bogsink slaae
+Bag Bøgens klare Blade.
+Han lured paa, til Tidsfordriv,
+Hvad Stæren sladdred med sin Viv,
+Og Kuk! sagde Gjøgen den glade.
+
+Da kom hun smilende og varm,
+Og lagde, uden Snakken,
+Saa blødeligt sin hvide Arm
+Den Ungersvend om Nakken;
+Og mens hun baade græd og loe,
+Hun gav ham først eet Kys, saa to -
+Og Kuk! sagde Gjøgen bag Bakken.
+
+Fortryllet løfted han sit Bryn,
+Og lænket var hans Tale;
+I Hjertet skjød det som et Lyn
+Og vakte det af Dvale.
+De Kys - hvor blev han kry ved dem!
+Kjækt tog han selv tre - fire - fem,
+Og Kuk! sagde Gjøgen i Dale.
+
+Da holdt hun Haanden for hans Bryst:
+,,Vær høvisk nu og stille!
+Vi har kun Vaar, men faae vi Høst,
+Vi atter kysses ville.
+I dine Hænder nu er lagt
+Mit Liv - vær Du dets Værn og Vagt!''
+Og Kuk! sagde Gjøgen den snilde.
+
+Fra Egens Rod, fra Mossets Seng
+Han i et Spring sig reiste.
+Han laae som en blødagtig Dreng,
+Nu som en Mand han kneiste.
+Den fine Jomfruhaand han tog
+Og ydmygt den til Læben drog,
+Og Kuk! sagde Gjøgen den feiste.
+
+,,Saasandt der er en Gud, hvis Magt
+Har tændt os Dagens Stjerne,
+Jeg trofast være vil din Vagt
+Og mandigt om Dig værne.
+Og Du - saa liflig som Du er, -
+Bliv mig en trofast Hjertenskjær!''
+Og Kuk! sagde Gjøgen den fjerne.
+
+Dog næppe fik han Ordet ud,
+Og stod endnu bedøvet,
+For bort hun fløi, den unge Brud,
+Og gjemte sig bag Løvet.
+Hun øined Faren, som var nær,
+Og svandt imellem Skovens Træer,
+Og Kuk! sagde Gjøgen bedrøvet.
+
+De Mænd, Fru Ingeborg lod gaae
+Fra Borgen ud at søge,
+De fandt ung Verner ene staae
+Alt under grønne Bøge.
+De greb ham, bandt hans Arm med Bast,
+I Borgetaarnet blev han kast, -
+Da taug alle Drosler og Gjøge!
+
+
+{4.}
+
+Hjem drager Hr. Asmund i sin Borg,
+Ham freidige Svende følge;
+Kun han alene maa dølge
+Bag blanke Pandser en gammel Sorg;
+Thi er man end kjæk som Sanct Georg,
+Man møder i Livet Magter,
+Som lidet paa Kjækhed agter.
+
+Han satte sin Ganger i Stald til Foer
+Og selv i Salen indtræder.
+Med Viin han sin Læbe væder;
+Han samler de Svende ved Davrebord
+Men hverken Viin eller Gammensord
+Kunde bringe til Ro hans Tanke
+Eller faae Øinene blanke.
+
+Dog var han en Herre, streng og bold,
+Jernstærke vare hans Hænder,
+Og gjorded han sine Lænder
+Med Sværd og skjød paa Arm sit Skjold
+Og rynked sit Bryn, - da Gud i Vold
+Sig maatte vel de befale,
+Som havde med hannem at tale.
+
+Kun Een der var, som fordum engang
+Ret mægted hans Villie at bøie,
+Hvis Smiil og hvis straalende Øie
+Kunde styre den Stærkes Tankegang,
+Og vække i Hjertets Dyb ham en Sang,
+Der begyndte med Toner blide,
+Men endte med Suk og Qvide.
+
+Selv eied han Guld og Gods og Fæ
+Og ældgammelt Navn tillige.
+Han søgte den faure Pige;
+Da mødtes de ene i Haugens Loe
+Under det duftende Æbletræ,
+Og der fik de Begge forklaret,
+Hvad Hjertet i Løndom bevared.
+
+Da meldte sig - vissen som Høstens Blad -
+Den rige Claus Urne som Frier.
+Forgjæves hun græder og tier.
+Hendes Fader slog, hendes Moder bad,
+Forgrædt hun som Brud i Vognen sad
+Og maatte til Kirken age
+Og komme som Hustru tilbage.
+
+Hr. Asmund sleb da sit gode Sværd,
+De gjæveste Svende han hyred,
+Med dem fra Landet han styred.
+I Kampen var ham den Plads meest kjær,
+Hvor Luren kaldte til vildest Færd,
+Men aldrig kunde han glemme
+Sin Sorg og hendes derhjemme.
+
+Nu sad han her atter med Haand paa Kind,
+Da rask i Salen indtræder
+Med revne Sko og Klæder
+Hans yngste Søster, den lille Malin:
+,,O, vær velkommen, kjær Broder min!
+Nu Sorgen ei mere mig tvinger,
+Jeg seer, min Lykke har Vinger.
+
+Her hjem Du stævned i rette Stund
+At være din yngste Søster
+En rigtig Broder og Trøster.
+Ung Verner er min! I den grønne Lund
+Jeg minded ham for hans røde Mund;
+Nu holder en fornemme Frue
+Ham spærret i Taarnets Stue.
+
+Men havde hun mig, jeg veed forvist,
+Den Frue hun dyede sig ikke,
+Hun aldrig lod Hævnen ligge.
+Mig vilde hun lade stege paa Rist,
+Og ham - ham lod hun hænge paa Qvist!'' -
+Da smiled Hr. Asmund: ,, Ilde
+Det hende bekomme vilde.
+
+Saa nævn mig den Frue!'' - ,,Ja, hendes Navn -
+Det er jo sagtens paatide;
+Thi faaer Du det først at vide,
+Saa øiner Du strax en Fredens Havn.
+Hun var jo dit Hjertes Sorg og Savn,
+Nu er hun udløst af sin Lænke
+Og hedder Claus Urnes Enke!''
+
+Hr. Asmund han knytted sin Haand mod Barm,
+I Tvivl han høinede Brynet,
+Og begge hans Øine lyned.
+Hans Læbe sittred, hans Kind blev varm,
+Saa slog han om Søsterens Liv sin Arm:
+,,Her hjælper ei Stang eller Staalet,
+Med Lempe vi komme til Maalet!''
+
+Ved første Hanegal samme Nat
+De tømmede op deres Heste,
+Den Frue vilde de gjæste.
+I Sobelkofte, med Buxer og Hat
+Malin paa en melkehvid Hoppe blev sat.
+Gjennem Morgentaagerne brøde
+De Solen og Haabet imøde.
+
+
+<nonum><center>5.</center></nonum>
+
+Liig Skovens vilde Fugl i Buur,
+Der flagrer i sit Fængsel,
+Og længes mod den frie Natur
+Og tier i sin Længsel;
+
+Liig Bjørnen, som i snevre Skuur
+Sig utaalmodigt vender,
+I Taarnet nu fra Muur til Muur
+Ung Verner rastløs render.
+
+Fra Himlen ei et Blink han faaer,
+Ei Glimt fra Sol og Maane;
+Den Hvælving stolt og rolig staaer
+Og synes ham at haane.
+
+Dog passer han paa Haan og Spot
+Kun saare lidt; thi inde
+I Hjertet har han det saa godt,
+Der lever jo et Minde.
+
+Et Minde om en yndig Stund,
+Da hist i grønne Sale
+To Øine og en Rosenmund
+Fik vakt ham af hans Dvale.
+
+Naar Duggen falder mild og sød
+Og Solen venligt lokker,
+Da vaagner op af Vintrens Skjød
+De tusind Blomsterklokker.
+
+Saa spire nu hans Tanker frem,
+De stimes og de trænges,
+Saa Hjertet knap kan rumme dem,
+Men truer med at sprænges.
+
+Som Druemost bag Stav og Svik,
+I Fadet nylig krystet,
+Saa gjærer nu hiin Lægedrik
+Den Ungersvend i Brystet.
+
+Han svimler - Hjerteblodet ham
+I Blus til Panden stiger;
+En Febergysen kold og klam,
+Sig gjennem Barmen sniger.
+
+Det glimter for hans Øielaag,
+Hans Muskler sittre, bæve, -
+Da rasler det i mørke Krog,
+Sig Gulvets Fliser hæve,
+
+Og liig en Valmu, skyder op,
+Heel lystelig at skue,
+Skovhøiens Dverg sin lille Krop,
+Graaklædt, med røden Hue.
+
+Et Grubelys i Haand og om
+Sin Hals en Langleeg har han;
+En fyldig Dust Violer som
+En Fjer paa Huen bar han.
+
+Dybt neier sig den liden Svend
+Og træder til ung Verner,
+Mens smilende han rækker hen
+De duftende, blaa Stjerner:
+
+,,Af Nød og Qvide frelste Du
+Mig nys i Skovens Sale;
+Du seer, jeg ærlig er, thi nu
+Vil jeg min Gjæld betale.
+
+Tag disse Blomster som et Kys
+Fra Skoven, din Veninde;
+De groede alle der, hvor nys
+Du sad saa luunt med Hende.
+
+At jeg Dig bringer Hjælp og Trøst,
+Det vil Du snart fornemme;
+Læg denne Langleeg til dit Bryst,
+Da vaagner klar din Stemme.
+
+Af Søvnens tætte Slør hvert Sind
+Dens Strænges Klang kan drage;
+Og dysse hvert et Hjerte ind
+Fra Kummer og fra Klage.
+
+Den bringer Frihed for Dig selv
+Og Lægedom til Andre;
+En Andens vilde Hjerte-Elv
+Vil brat sit Løb forandre!''
+
+Ydmygt den lille Mand mod Jord
+Sig neied, Lampen sluttes,
+Som Bjergmand ned han atter foer,
+Og Gulvet atter luktes.
+
+Alene sad ung Verner bleeg,
+Hans Hjerte heftigt banked;
+Men som man binder op et Neeg,
+Han sine Tanker sanked.
+
+Og ret af Hjertets stærke Trang
+Han slog Langlegens Strænge,
+Og jublende hans Stemme klang
+Som Lærkens over Enge:
+
+,,Hvad gaaer der af mit Hjerte? Mon
+Jeg drømmer eller vaager?
+Før drev jeg om iblinde, <w>Hun</w>
+Har spredt de tunge Taager. '
+
+At vandre ene var min Lyst
+I Skov og stille Dale,
+Og hvile mig ved Blomstens Bryst
+Og lære Fuglens Tale.
+
+Min Tanke foer vel mangen Vei,
+Men Hjertet laae saa stille,
+Uvidende og dumt, at ei
+Det vidste, hvad det vilde
+
+Da kom den Stund saa underfuld,
+Der hende til mig førte,
+Da hun med sine Lokkers Guld
+Min kolde Kind berørte.
+
+Hvor fik hun vel den Tryllemagt?
+Livsaligt her det brænder,
+Hvor nys hun fik den ene lagt
+Af sine søde Hænder!
+
+Og hendes Øine! Hvert et Blik
+Forjog det indre Mørke,
+Saa nyfødt Liv min Tanke fik
+Og følte ny sin Styrke.
+
+Ak ja! naar op hun Øiet slog,
+Et Hjerteskud det ligned;
+Men, Gud bevare mig, hvor dog
+Det smertede velsignet!
+
+Dog ei Alverdens Balsam vist
+Et Hjertes Vunde læger
+Igjen, som den, hun skjænked hist
+Mig af sin Læbes Bæger.
+
+Ihvor nu hendes Fod mon gaae
+Vildsom paa fjerne Steder,
+Misunder jeg hver Steen, hvert Straa,
+Som ligger, hvor hun træder!''
+
+Saa sang han med veemodig Lyst
+Og meget meer end dette;
+De Længselssukke fra hans Bryst
+Fik Vinger og blev lette.
+
+De klang i Sangen fra hans Mund
+Liig Fugletriller blide,
+Naar i den lyse Morgenstund
+De dirre over Lide.
+
+Som Urterne i Sommerluft
+Stærkt kryddre Skov og Dale,
+Saa fyldte han med Sangens Duft
+Nu alle Borgens Sale.
+
+
+<nonum><center>6.</center></nonum>
+
+Paa Borgen ruged Natten,
+Der laae den Frue fiin,
+Og vendte mat, urolig sig
+Paa Bolster, mellem Liin,
+Mens i den hede Slummer
+Hun hvisked sære Ord,
+Der røbed Alt, hvad lønligt
+I Hjertets Kammer boer.
+
+Paa hendes Hovedhynde
+Der sad to Engle smaa,
+Med deres buttede Hænder
+De monne Luthen slaae;
+Den Enes Røst alvorlig,
+Den Andens lystig klang;
+Og det var Nattedrømmene,
+Som sad der og sang.
+
+De sang for det forgrædte,
+Ulykkelige Barn,
+For Hjertet, som sig hilded
+Liig Fugl i Jægergarn.
+De viste hende Billeder,
+Ret som man viser Smaa
+En broget, malet Verden
+For dem til Ro at faae.
+
+Hun saae ung Verner vandre
+I Haugen med Malin;
+Der plukkede de Roser,
+Og hver havde sin.
+De smiled og betragted Hver
+Sin blomstrende Green;
+De holdt dem mod hinanden,
+Og saa blev de til Een.
+
+Om hendes Barm der snoede
+Sig som en glødende Traad;
+Med sit skinsyge Hjerte
+Hun gik da paa Raad:
+,,Javist, jeg ham har fanget,
+Han hænge maa paa Qvist,
+Og hun - ja, hun skal steges
+Paa den gloende Rist!''
+
+Da hørte hun en Stemme,
+Saa gammelkjendt og kjær!
+Hun vendte sig - der stod han
+Bag de blomstrende Træer.
+Der stod han, den Elskede,
+Fast forgjæt og forglemt.
+Hvor banked hendes Barm da
+Henrykt og dog beklemt.
+
+Ei talte han, men smiled kun,
+Og hvert hans Smiil og Blik
+Det naaede hendes Hjerte
+Som Sang og sød Musik.
+Ret som naar Vaarens Vinde
+Slette Regnskyen ud,
+Bebuded det Forsoning
+Med ham og med Gud.
+
+Hun vaagnede, hun lytted,
+Hendes Aandedræt var kort,
+Let begge Drømmens Engle
+Vare flagrede bort;
+Men endnu fra det Fjerne
+Den smeltende Sang
+Til hendes Hjerte strømmed
+Sin velsignede Klang.
+
+Hun reiste sig, hun kaldte
+Med ængstelig Hu:
+,,Og hør, Du gode Terne!
+Du sige mig nu,
+Hvem er det blandt Jer alle,
+Som har qvædet saa ømt,
+Og frydet saa mit Hjerte,
+Imens jeg fik drømt?''
+
+,,Ak, Ingen af os alle
+Har sjunget her i Nat,
+Det er den unge Junker,
+Som i Taarnet er sat!
+Med Strængeleg og Stemmen
+Saa yndefuld og reen
+Har han os vakt af Slummer
+Hver evige een.''
+
+Op sprang hun, ud af Sengen,
+Med Søvn det var forbi.
+De guldbrodeerte Tøfler
+Stak hun Fødderne i;
+Slog Hermelinskaaben
+Omkring sin skjønne Krop,
+Og snoede de sorte Lokker
+Under Guldnettet op.
+
+,,Gak hen og kald mig sammen
+Nu alle mine Møer!
+Tag her den tunge Nøgle,
+Som aabner Taarnets Dør.
+Saa føre Du ung Verner
+Ind i den store Hal;
+Til Morgenrøden tændes,
+For os han sjunge skal!''
+
+Alt sad den skjønne Frue
+Midt i sin Jomfruflor;
+En straalende Lampe stod der
+Paa blanke Egebord.
+Ind traadte da Hr. Verner
+Med listigt Smiil og Blik;
+Heel høvisk han sig bøied
+Og frem i Hallen gik.
+
+,,Syng!'' mæled da den Frue,
+Hun var saa stolt en Viv ,
+,,Maaskee mit Sind formildes,
+Saa jeg sparer dit Liv!''
+Da stemte Verner Strængen,
+Men tænkte i sit Bryst:
+,,Jeg synger, saa jeg haaber,
+Du faaer styret din Lyst!''
+
+Først sang han da om Vaaben,
+Om kjæmpestærke Mænd,
+Om høien Berner Rise,<note>Folkevisen <xref poem="folkeviser2018041011"/>.</note>
+Om Sivard Snarensvend;<note>Folkevisen <xref poem="folkeviser2018041003"/>.</note>
+Om Brødrene paa Dovre,
+Om Signelil<note>Folkevisen <xref poem="folkeviser2018041012"/></note>, som glad
+Sin Beiler monne følge
+Gjennem Luernes Bad.
+
+Da bævede Fru Ingeborg,
+Hun slog sit Øie ned,
+Ved Sagnets Ord at høre
+Om Signes Trofasthed.
+Klart Asmund stod for hende,
+Hun gysed og blev bleeg,
+Og hvert et andet Billed
+Fra hendes Hjerte veeg.
+
+I dets rensede Tempel
+Fornyed hun sin Pagt,
+Hun følte atter Længselens
+Vidunderlige Magt;
+Undseelsens stille Taare
+Frem sneg sig luevarm,
+Liig Offer paa et Alter
+Den sank i hendes Barm.
+
+Da skifted brat hans Røst, den
+Blev smeltende og blød
+Som Aftenvind, der aander
+Hen over Engens Skjød,
+Naar Urterne skal lukke
+De tusind Øine til;
+Kun lempeligt han rørte
+Og let sit Strengespil.
+
+,,Lyt nu til mine Strenge
+Til min vaagnede Sang,
+Der slumred altfor længe
+I Barmen taus og trang!
+Den standse kan hver Smerte,
+Hver Sorgens stride Elv,
+Og bringe, sødt et Hjerte
+Til Hvile i sig selv.
+
+Den svæver let som Vinde
+I lune Sommernat,
+Som Kildens Vover rinde
+Hen under dunkle Krat;
+Liig Nattergalens Klukke,
+Liig Aftenbakkens Flugt,
+Liig Svendens Veemodssukke,
+Naar Hendes Dør er lukt.
+
+Den lærer Hjertet banke
+Besindigt, og den snoer
+Om hver urolig Tanke
+Sig som det Silkeflor,
+En Moder breder over
+Sit Vuggenoer, der græd,
+Saa trygt og sødt det sover
+Fra Taarer og Fortræd.
+
+Sov bort fra Livets Kummer,
+Forglem al Verdens Vee,
+Og i den blide Slummer
+Kun blide Syner see!
+O, luk nu for de søde,
+De klare Øines Pragt,
+De unge Lemmer bløde
+Faae blødt til Hvile lagt!''
+
+Men Sangen, som Hr. Verner
+Sang til sit Strengespil,
+Taus lyttede Fru Ingeborg'
+Og hendes Møer til.
+Den som en Luftning svaled
+Hver Kind, som var for varm
+Snart deres Hoveder daled
+Ud over deres Barm.
+
+Som Himlens Stjerner aarle
+Een efter een maae flye,
+Saa gled nu Alles Øine
+Bag Øielaagets Sky.
+Langs Hallens tjeldede Vægge,
+Paa Stol, i Løibænk blød
+Hensjunkne laae med Hovedet
+De paa hinandens Skjød.
+
+Ung Verners Øine tindred,
+Han strøg sig om sin Kind:
+,,Stod jeg her Aar og Dage.
+Jeg saae mig dog ikke blind.
+I ere vel Alle faure,
+Men Ingen deilig som Hun,
+Der har mig kaldt tillive
+Ved sit Øie og sin Mund.''
+
+Af Fruens Belte løste han
+De Nøgler, store, smaa;
+Eia! hvor sprang da lystigt
+For ham hver Laas og Slaa!
+Han søgte ned i Stalden,
+Fik Sadel paa Ganger graae,
+Saa reed han ud for Borgeport
+Og glad tilbage saae.
+
+Han kjæk og vel tilmode
+Slog op med Haanden hvid:
+,,Til Løsning at betale,
+Har jeg nu ikke Tid!''
+I Barmen loe hans Hjerte,
+Op vipped han med sin Hat:
+,,Nu ønsker jeg Fru Ingeborg
+Vel tusinde Godnat!''
+
+Rask traved over Broen
+Han hen mod grønne Skov;
+Den gamle Vægter vaagned
+Paa Taarnet, hvor han sov.
+Han saae i Spring ham ride
+Og svinge med sin Hat,
+Han hørte den kaade Latter
+Gjennem den tause Nat.
+
+
+<nonum><center>7.</center></nonum>
+
+Han reed gjennem Skov, over Mark og Eng,
+Gjennem Bækkenes Seng,
+Han reed over Dale og Høie;
+Mens Lærken sig freidig mod Himlen svang
+Og forkyndte, med Sang,
+At Dagen nu aabned sit Øie.
+
+Da spurgte hans Længsel hver Stub og hver Steen,
+Hver løvfuld Green,
+Hver Fugl paa de vippende Qviste,
+Hver lille Løvfrøe, hver vever Kanin:
+,,Hvor lider Malin?''
+De svared, det ikke de vidste.
+
+Halv drømmende drog han den korteste Vei,
+Han ændsed slet ei
+Hverken Krat eller tjørneklædt Banke;
+Ved hvert et Sæt, som hans Ganger sprang,
+Ham Langlegen klang
+Paa Skuldren og vakte hans Tanke.
+
+Da mødte ung Verner en liden Pilt;
+Forvoven og snildt
+Han sad paa sin Skimmel, den blanke;
+Den dandsede under ham som en Hind,
+Mens i Morgenens Vind
+Frisk flagred dens Hale og Manke.
+
+,,Og hør mig, Du Smaadreng, høvisk og fiin!
+Har Du seet Malin?
+Af Længsel mit Hjerte mon brænde!''
+Bort strøg den Pilt da sin blonde Lok,
+Og et Smiil var nok, -
+Da var hun saa let jo at kjende!
+
+,,Malin! o, min Brud! saa har jeg Dig da!
+Hvor kommer Du fra?''
+- ,,Lige fra min Broder jeg kommer.
+Hjem er han nu draget fra fremmede Land,
+Og mig tyktes, at han
+Som Svalen mig spaaede min Sommer.
+
+Saa fage jeg klaged, han sadled sin Hest,
+Og vi rede som bedst
+At træffe Fru Ingeborg hjemme.
+Men da vi faa kom til det grønklædte Bjerg,
+Ud traadte en Dverg
+Og qvad med sin skingrende Stemme:
+
+, Til Venstre, Hr. Asmund! drage Du,
+Dig blomstrer nu
+Kun Fryd i Fru Ingeborgs Sale;
+Hun ligger og stammer i Drømme dit Navn,
+Tag hende i Favn
+Og løs hendes Hjerte af Dvale.
+
+Til Høire, min deilige Frøken! Jer vend,
+Der I mødes med den,
+Eders smægtende Øine begjære.
+Jeg aabned ham Buret, afsted han fløi
+Over Dal og Høi
+For at søge sin Hjertenskjære.''
+
+Her har Du mig da! Nu er jeg din,
+Og Du er min, -
+I Fred tør vi sammen bygge.
+Min Broder vel ogsaa naaer et Hjem,
+Nu iler han frem
+Paa Vei til sin nyfødte Lykke.
+
+Han reed til den deilige Enkes Gaard,
+Nu sagtens han staaer
+Og taler sin Sag paa det Bedste.
+Med nedslagne Øine, men henrykt i Aand,
+Hun rækker ham Haand, -
+Saa bliver vel Bryllup det Næste!''
+
+Da smiled ung Verner med megen List:
+,,Hør, seer Du hist
+Ved Byen, bag Linde og Birke
+Der kneiser et Taarn med sit røde Tag,
+Imorgen den Dag
+Vi følges der ad til Kirke.
+
+Og seer Du derhenne ei Borgen paa Høi,
+Med Spiir og med Fløi?
+Der vented min Moder os længe.
+Jeg veed, vore Senge der opredt staaer,
+Og til næste Vaar
+En lille paa gyngende Gjænge!''
+
+Da løfted Malin en truende Haand
+Og gav med sin Vaand
+Et Svip ham over hans Herder;
+Hun rødmende fik sin Ganger i Spring,
+Og som ingen Ting
+Hun satte over Grøfter og Gjerder.
+
+Ung Verner bagefter! - og som en Vind
+Snart hented han ind
+Sin flygtige Fugl under Lide.
+I Lunden, som tæt omkring Borgen stod,
+Gik det Fod for Fod,
+Der rede de Side om Side.
+
+Her under de ældgamle Lindetræer
+De holdt sig nær -
+Hinanden saa nær, som de kunde;
+Fra Gangeren om hendes Liv sin Arm
+Han slyngede varm, -
+Da mødtes to blussende Munde!
+</body>
+</poem>
 
 <poem id="winter1999070717">
 <head>
-   <title>Sange fra »Genrebilleder«</title>
-   <toctitle>Sange fra »Genrebilleder«</toctitle>
-   <indextitle>Sange fra »Genrebilleder«</indextitle>
-   <firstline>Hvilende</firstline>
-   <quality>korrektur1</quality>
+    <title>Genrebilleder</title>
+    <firstline>Den Nat var varm og liflig</firstline>
+    <source pages="175-288"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Hvilende,
+<!-- TODO: Indryk ikke-sange. -->
+<!-- TODO: === Foran hvert kapitel. -->
+<!-- TODO: Strenge eller Strænge? -->
+
+Den Nat var varm og liflig,
+Og Himlen mørkegraae;
+Ei Maane eller Stjerner
+Man øinede derpaa.
+I Præstegaardens Hauge
+Ei rørte sig en Qvist;
+Men Liv og Glands der straaled
+Fra Haugestuen hist.
+
+De Lilier og de Roser
+I dyben Slummer laae,
+Hyacintherne de nikked
+Med Duggens Taarer paa;
+Den Eneste, som vaaged,
+Var Natviolen, som
+Sit søde Suk udaanded i
+Hver Luftning, der kom.
+
+De sildigvaagne Fugle
+Sad lyttende, mens Klang
+Af Violin og Fløite
+Sig ud i Mørket svang;
+Fra Stuen kom de Toner,
+Hvor Mø med Ungersvend
+I Ecossaisen<note>Skotsk dans i ¾-takt.</note> lystigt
+Og let svæved hen.
+
+Men Een der var i Sværmen,
+Den deiligste var hun,
+Med en fyldig Guldfletning
+Og en sød lille Mund;
+Og det var Præstens Datter,
+Hendes unge Jomfrubarm
+Bag Silketøiet bølged
+Som Lilien bly og varm.
+
+Men i de søde Øine
+Var ingen Fred og Ro,
+En Ængstelse der dæmred i
+De himmelblaae To;
+En sky, en stille Længsel
+Omslørede dem,
+Og Smilet som en Stjerne
+Kun sjeldent glimted frem.
+
+Snart sneeg hun ubemærket
+Fra Dandsen sig let,
+Om hvide Skuldre svøbte
+Hun sin Mantille tæt; -
+Ad Løvgange mørke,
+Langs Hækker og Bed
+Hun iled gjennem Haugen
+Til Marklaagen ned.
+
+Her fire gamle Linde
+Bredt hvælved deres Tag,
+Hvor Nattergalen boede
+Og sang ved Nat og Dag;
+Over Grøften, den tørre,
+Hvor brede Skræpper groe,
+Var lagt en lille, buet
+Og hvidmalet Bro.
+
+Men lænet op til Linden
+Der stod en Ungersvend,
+Hans skarpe Øie stirred
+I Buegangen hen;
+Med korslagte Arme
+Han som en Støtte staaer,
+Kaskjetten ligger let
+Paa det krøllede Haar.
+
+Som naar i Drøm man ligger
+Og lever i eet Qvarteer,
+Hvad ikke kan opleves
+I Snese Aar og fleer,
+Saa foer ham gjennem Tanken
+Som Lyn en gammel Sang,
+Han hørte af sin Moder
+Saa mangen god Gang:
+
+---
+
+,,Hans Kind var rød, og sort hans Haar,
+Da han forlod sin Faders Gaard.
+
+I Øiet straaled Ungdoms Lue,
+Da han forlod sin Moders Stue.
+
+Han styrted ud, slet ei han saae
+Til Hunden, som ved Porten laae.
+
+Forgjæves qviddred Svalen blødt:
+,,Bliv hjemme, Du, her er saa sødt!''
+
+Hans Fod gik over Haugens Bed
+Og traadte alle Blomster ned.
+
+Han over Agren tog sin Vei
+Og spæden Vaarsæd agted ei.
+
+En Tørst, en Længsel vildt ham jog
+Fra Hjemmets stille Arnekrog.
+
+I grønne Skov han iled ind,
+Der vifted Kjøling om hans Kind.
+
+Ustandselig han stormed frem
+Mod Anelsen - fjernt fra sit Hjem.
+
+I Krattets Dyb der sprang en Kilde
+Omskygget huldt af Roser vilde.
+
+En deilig Jomfru der han saae,
+Med dunkle Lokker, Øine blaae.
+
+Hun sad der fyldig, rank og blød,
+En Cithar laae paa hendes Skjød.
+
+Rundtom der myldred Blomster frem,
+Den Skjønneste var hun blandt dem.
+
+Med fneehvid Haand, med søde Blikke
+Hun vinkede ham hid at drikke.
+
+Hen under Kildens Perlefald
+Hun holdt et Bæger af Krystal.
+
+Hun bød ham det, - han drak i Hast, -
+Da var det, som en Lænke brast.
+
+Som løsnedes det tunge Baand,
+Der havde lænkeholdt hans Aand.
+
+Den skjønne Jomfru smiled huldt, -
+Hvor blev hans Hjerte stort og fuldt!
+
+Som til sin Længsels sikkre Havn
+Han segned hen mod hendes Favn.
+
+Da veeg hun, - ak, men yndigt vinked,
+Som Stjerner hendes Øine blinked.
+
+Snart vinked hun og snart sig dulgte,
+Og villieløs han efter fulgte.
+
+Fra Øiet faldt ham som et Flor, -
+Hvor straaled Himmel da og Jord!
+
+Hver Blomst, der op af Jorden skjød,
+Blev dobbelt hvid og blaa og rød.
+
+Og hvert et Blad og Ax og Straa
+Der hængte sig en Perle paa.
+
+Hver Vind der sused ham forbi,
+Blev til en himmelsk Melodie.
+
+Hvad Nattergalen, Droslen sagde,
+Sig lifligt ved hans Hjerte lagde.
+
+Langt klarere i Nattens Dunkle
+Nu syntes Stjernerne ham funkle.
+
+En Skjønheds Rigdom i hans Bryst
+Sig samled, liig en gylden Høst.
+
+Dens Perler sanked han, dens Guld,
+Af Skatte blev hans Haand saa fuld.
+
+Og hvor han gik og hvor han kom,
+Han deelte sine Skatte om.
+
+Og hvor han kom og hvor han gik,
+Ham mødte Tak og venligt Blik.
+
+Alt som han høsted, blev han ved
+At følge hendes lette Fjed.
+
+Mens hendes Citharstrænge bæved,
+Hun for ham som i Drømme svæved.
+
+Vidt over Land, vidt over Sø,
+Han fulgte blindt den skjønne Mø.
+
+Og gjennem Verdens travle Trængsel
+Hans Ledestjerne var hans Længsel.
+
+Da tyktes det ham mangen Gang,
+Han fatted hendes Strænges Klang.
+
+Men vilde Tonerne han sanke,
+Svandt de forvirret for hans Tanke.
+
+Med Ild han stræbte frem at naae
+Det Billed, som saa fjernt han saae.
+
+Men kom han nær, da kold og bleg
+Hun længer i det Fjerne veeg.
+
+Tilsidst hun svandt saa let og brat
+Som Stjerneskud i Sommernat.
+
+Da stod han som for Dødens Dom;
+Med bittert Sind han vendte om.
+
+Han gik den lange Vei tilbage,
+Han vilde for sin Moder klage.
+
+Han vandred hjem med bitter Graad,
+At hente hos sin Fader Raad.
+
+Hans Skatte - ak, de var forsvundne,
+Hans Tankes Vinger atter bundne.
+
+Den unge Slægt paa Vei ham gik
+Forbi med ligegyldigt Blik.
+
+Ham sagde Agrens grønne Skrift:
+,,See her - her var en stolt Bedrift!''
+
+Træt gjennem Haugen gik hans Fod,
+Mat var hans Blik og slukt hans Mod.
+
+Og alle Haugens Roser røde
+Dem havde selv han jo lagt øde.
+
+Og Svalen qvad: ,,Hvi drog Du, Kjære
+Herfra? her var saa godt at være!''
+
+Med blegen Kind, med graanet Haar
+Han naaede til sin Faders Gaard.
+
+Udbrændt var Øiets Morgenlue,
+Da han kom til sin Moders Stue.
+
+Her Alt var tomt! - Thi Han og Hun
+Forlængst laae dybt i Dødens Blund.
+
+Kun til en Drøm hans Liv var skabt, -
+Nu var han vaagen - og fortabt.
+
+Der stod han fattig og forladt
+Paa Grændsen mellem Dag og Nat.''
+
+
+<nonum><center>2.</center></nonum>
+
+Han venter ikke længe,
+Da rasler det bag Green,
+Den hvide Silke hvisler
+Om to ilende Been,
+Og Pigebarnet kommer
+Heel aandelss og varm,
+Og kaster sig saa trøstigt
+I hans favnende Arm.
+
+Det var just denne Nat
+I den hellige Stund,
+Da Morgen byder Aften
+Sin jomfruelige Mund,
+At deres Læber saligt
+Formæledes, mens bly
+Natluften holdt sin Aande
+For at lytte paany.
+
+I Nattens Stilhed Lærken
+Ei kunde have Ro,
+Den maatte jo dog hilse
+Paa de Elskende To;
+Og fjernt fra Haugestuen
+Klang en svævende Vals,
+Mens ved hans Bryst hun hviled,
+Med sin Arm om hans Hals.
+
+,,Her har Du mig,'' hun hvisked,
+,,Du kjære, vilde Knegt!
+Jeg følger Dig, - Du være skal
+Mit Hjem og min Slægt!''
+,,Du vil?'' - saa toned henrykt
+Hans mandige Røst,
+Mens hendes fine Hænder
+Han trykked til sit Bryst.
+
+,,Du vil mig villig følge
+Nu ad den steile Vei?
+At føre Dig til Maalet
+Saa lykkelig er jeg!
+O, alle ni Gudinder
+Vil flokkes om dit Fjed,
+Og Gratierne - Elskte!
+Dem bringer selv Du med!
+
+Kald mig kun vild! - her brænder
+En Lue stærk og reen,
+I Armen har jeg Kræfter
+Til at løfte hver Steen,
+Der hæmme vil min Vandring
+Paa Veien til vort Maal, -
+Og saa har jeg en Villie
+Ubøielig som Staal!''
+
+,,Jeg følger Dig!'' hun vedblev
+,,Tryg ved din Haand, min Ven!''
+Og tog ham om hans Hoved
+Og kyssed ham igjen.
+,,I Marken har jeg gaaet
+Og flittigt declameert,
+Koerne paa mig gloede,
+De troede, jeg var forkeert.
+
+Den lystige Maske vil
+Just klæde mig godt;
+Jeg bøie kan min Stemme
+Til Skjelmeri og Spot;
+Og Dolken vil jeg føre,
+Jeg gyser ei for Blod!''
+Han loe: ,,Nei, vil man see dog
+Det sextenaars Mod!''
+
+Hør nu: I Nestved vente
+Os alt de andre Fem;
+Til Kunstens Tempelforgaard
+Jeg nys fik lokket dem.
+Den ene drev Begeistring,
+En Anden Hjertesorg;
+Vor første Alterlue
+Vi teende i Vordingborg.
+
+To lystige Studenter,
+Og en halvgammel Fyr,
+Der gjerne traurigt synger
+Sit Hjertes Eventyr,
+En Frue med sin Datter,
+Der dandser ganske smukt, -
+Og Vi - see, det er Stammen,
+Som nok skal bære Frugt!
+
+Langt meer, end Du det aner,
+Den Frue staaer os nær,
+Og hendes vakkre Datter
+Vist vil blive Dig kjær.
+Nei, Du maa ikke spørge,
+Jeg siger Dig ei meer,
+Men Gaaden vil sig løse,
+Saasnart Du dem seer.
+
+Dit Navn maa Du forandre;
+Kristine har ingen Klang;
+Babet - see det vil klinge
+I Poesie og Sang.
+Jeg kalder selv mig Philo,
+Thi Jørgen er saa plat, -
+Det tager sig ei ud paa
+Den trykte Placat!''
+
+Hun nikkede og loe: ,,Ja ,
+Endnu i denne Nat
+Din Frakke og de Buxer,
+Som Du har efterladt,
+Jeg bytter med mit Silkeskjørt;
+I din sorte Barett
+Jeg skjule kan min Fletning
+Jo nok saa peent og net.
+
+Nu snart om et Par Timer,
+Naar Dandsen er forbi,
+Og alle Øine slumre,
+Vil jeg mig gjøre fri.
+Min egen lille Norbagg
+Jeg lægger Sadel paa,
+Og rider saa til Nestved
+Saa rask, som det vil gaae!''
+
+Saa trykked hun ham atter
+Tæt til sit unge Bryst;
+Saa hele to Minuter
+De stode taus og tyst.
+Og let som en Taage,
+Og hvid som en Snee
+Hun svæved bort og svandt
+I den mørke Allee.
+
+Der stod han da alene
+Med Hjertet heelt opfyldt
+Af Kjærlighed, med Tanken
+Af Hjertets Sol forgyldt.
+Han efter hende stirred
+Og vendte sig og gik.
+Fra Haugestuen toned end
+Den lystige Musik.
+
+
+{3.}
+
+Da rasled det i Grøften,
+Og under Broen op
+Der kravlede besværlig
+En trind, velnæret Krop.
+Den strakte sine Arme,
+Tog af sin runde Hat,
+Og sukked høit og gabed
+I stille Sommernat.
+
+Saa krøb han op paa Broen
+Og satte sig der
+Paa Rækket, saa det knaged,
+Under de grønne Træ'r.
+Af Lommen op et Klæde
+Og en Daase han drog,
+Trakterede sin Næse
+Og holdt en Monolog:
+
+,,At blunde her en Smule
+Jeg havde troet og tænkt,
+Derhjemme gjorde Mutter
+Mig Alt for hedt og strengt.
+Men Herregud! jeg gjorde
+Min Regning uden Vert;
+Til Vederlag for Søvnen
+Fik jeg en heel Deel lært.
+
+Det var en høist behagelig,
+En peen Conversation!
+See, see! Det var da Fætteren,
+Den flygtige Person.
+Han er jo lidt forvildet,
+Men brav og hjertensgod;
+Adstadig er han ikke, nei!
+Men han har meget Mod.
+
+Hende jeg saae i Vuggen,
+Da nys hun var svøbt;
+Jeg sang og sagde Amen
+Dengang, da hun blev døbt;
+Og baade ham og hende
+Jeg ind i Lærdoms Land
+Har ført og henad Veien
+Til Dyd og god Forstand.
+
+Hvad var det dog, de sagde?
+De talte, som det lod,
+Om Master og om Dragter,
+Om Dolkestød og Blod?
+Om hemmelige Navne,
+Og om et heelt Complot,
+Om Hest og Flugt og Kunster, -
+Jeg hørte Alting godt.
+
+Hvad meente han, den Knegt, vel?
+Og hendes Sladder? aa!''
+Her gled han ned fra Rækket
+Paa Jorden og laae
+Og holdt sig paa sin Mave
+Og grinte: ,,Ja, saasandt
+Gud hjælpe mig! nu Jørgen
+Er blevet Comoediant!
+
+Derfor løb han fra Farbroer
+Og den græske Grammatik!
+Langtid man ikke hørte,
+Hvordan det ham gik.
+Nu har han og bedaaret
+Den lille søde Glut,
+Aa Herregud! Actrice vil
+Hun være absolut!
+
+Det ligger til Familien;
+Javist, det feiler ei;
+See, Præstens unge Søster
+Jo gik den samme Vei.
+Den italienske Sanger
+Fik hende jo paa Gled;
+Det var jo ham og Kunsten,
+Hun giftede sig med.
+
+Men Hillemænd! - en Tanke!
+Jeg kan jo vandre med!
+Jeg lader Mutter skjænde
+Og følger deres Fjed.
+Snart Høsten er for Døren,
+Hver Skolebænk staaer tom;
+Hvor jeg er støiet og fløiet,
+Det spørge Faa kun om.
+
+Dybt i mit Bryst jeg føler
+Begejstring og Talent!
+Nu vaagne de, kun Skade,
+Jeg seent det har erkjendt.
+Hvor banked ei mit Hjerte
+Tidt hist paa Hallandsaas;
+Nu først hiin Hjertebanken
+Kan rigtigt forstaaes.
+
+I Viinhøsten saae jeg
+Hr. Knudsen træde op;
+Var det ei, som jeg staaer her
+Med Sjæl og med Krop?
+Jeronymus og Stødvel
+Peer Degn og Jeppe og Saft,
+See, det var netop Roller
+Skabt for mit Lunes Kraft!
+
+Men hvad vil Præsten sige? Aa,
+Var han ei vor Pastor,
+Han fulgte gjerne med os,
+Og spilled selv Franz Moor!
+Madamen? Ja, i hende,
+Det veed jeg paa en Prik,
+En prægtig Magdelone
+Og Fru Claudia vi fik.
+
+Velan da! i Apollos
+Og andre Guders Navn
+Jeg hovedkulds mig kaster
+Nu i Thalias Favn.
+En Norbagg har jeg ikke,
+Kun Been med Støvler paa,
+Med dem kan man vel ogsaa
+Til Kunstens Tempel naae.
+
+Han følte til sin Lomme;
+Jo, jo! der var lidt Mynt.
+,,Man maa forsynet være,
+Til Gagen faaer begyndt.
+En Faldsmaal, Arv og Falstaf
+Betaler man vist brav!''
+Saa drev han ned ad Gyden
+I muntert Luntetrav.
+
+Med een Haand i Lommen,
+Den anden i sin Barm
+Gik han afsted saa inderlig
+Hjertelet og varm.
+Og alt imens han vandred,
+Han hørte Lærkerne slaae;
+Han nynned med og syntes,
+Han kunde dem forstaae:
+
+---
+
+,,Vi Lærker under Himlens Blaae,
+I grønne Græs paa Vangen,
+Laer Verden gaae, som den vil gaae
+Og leve kun for Sangen.
+
+Kun fra vort Hjertes frie Natur
+Vort Thema vi os henter,
+Og pynter det med Fioritur,
+Med Triller og Mordenter.
+
+Vort Contrapunkt er Glædens Magt,
+Den Partituren laver,
+Og har kun saare liden Agt
+Paa Qvinter og Octaver.
+
+Vi sætte kjækt vor Harmonie
+Her i vort høie Stade;
+Er der end ringe Mening i,
+Er vi dog lige glade.
+
+Saa dale vi fra høien Slot
+Til grønne Vang dernede,
+Hvor mellem Blomster luunt og godt
+Vi bygget har vor Rede.
+
+Der er saa hyggeligt og Plads
+Til Store og til Spæde,
+Der er jo ikke megen Stads,
+Men desto mere Glæde.
+
+Der har vi jo vor lille Flok,
+Dem vi saa kjærligt made;
+Og er det ogsaa fattigt nok,
+Er vi dog lige glade.
+
+Thi som det sømmer sig, har vi
+Jo stadigt havt for Øie
+At være glade baade i
+Det Lave og det Høie!
+
+
+{4.}
+
+Tre aabne Vogne førte
+Det samlede Compagnie
+Fra Nestveds lumre Gader
+Og ud i det Frie.
+Hos Fruen med sin Datter
+Sad Philo og Babet;
+De andre Herrer rulled i
+En rask Kabriolet.
+
+Paa tredie Vogn var læsset
+En Verden i det Smaa:
+To Stuer, et Par Bjerge,
+Et Bondehuus der laae;
+En skummel Fængselhvælving,
+En yndig Egn fik Lov
+At enes med en Gade,
+Nogle Skyer og en Skov.
+
+Dem Himlen smilte venligt
+Med sit sødeste Blaae,
+Og Solens klare Øie
+Brændende til dem saae;
+Fra Mark og Lund og Enge,
+Der i Brudedragt stod,
+Dem vinked Haabets Farve
+Og spaaede Lykke god.
+
+Thi Haabet var den Guddom,
+Der fyldte deres Bryst
+Og skabte Sang og Latter
+Og den livligste Lyst;
+Paa Livets Troe er Haabet
+En Blomst, som pynter smukt,
+Men ak! der ofte falder
+Uden at sætte Frugt!
+
+I Luften var der Stilhed,
+Ei rørte sig en Vind,
+Det Sommerlandskab straaled
+Som de unge Pigers Kind;
+Men bag de fjerne Skove
+Liig Fjelde der laae
+En Række tunge Skyer,
+Guulfarvede og graae.
+
+Lidt efter lidt det lufted,
+Og Skyerne steg,
+Saa Himlens Hvælving falmed
+Og Solens Kind blev bleg;
+Støvskyerne sig reiste
+Bag de rullende Hjul,
+De bange Fugle piled
+Alt hjem til deres Skjul.
+
+Saa faldt der et Par Draaber,
+Og saa igjen to, tre,
+Af Blaat der snart ei mere
+Paa Himlen var at see;
+Langt borte alt det brummed
+Som dybt fra Jordens Bryst,
+Som blandt Afrikas Palmer
+Skovkongens hule Røst.
+
+Et rosenfarvet Lynglimt
+Sig over Himlen svang;
+Ned pidskede saa Regnen
+Hen over Vei og Vang.
+Det rulled, brøled, dundred,
+Det skralded og slog Smæld,
+Som tusind tomme Tønder
+Nedvælted fra et Fjeld.
+
+Det øste som med Spande
+Fra den kulsorte Sky,
+Her hjalp ei Kapper, Kyser,
+Ei Teppe og Paraply;
+I Skræk de Heste steiled
+Og toge voldsom Fart,
+De tradsked hen ad Veien
+Og kom til Skoven snart.
+
+Her, hvor de gamle Bøge
+Forundrede stod
+Og deres rige Kroner
+I Stormen svaie lod,
+Det vaade Selskab naaede
+Til den eensomme Kro,
+Og var ganske himmelglad
+Ved at slaae sig til Ro.
+
+
+<nonum><center>5.</center></nonum>
+
+Ret gunstig var dem Lykken,
+Thi Kroen den var tom;
+Hver fik et lille Hummer,
+Hvor de klædte sig om.
+Mens de tre unge Fyre
+Sørged for Kruus og Fad,
+Hos Damerne alene
+Den gamle Herre sad.
+
+Mens Uveiret rased
+I al sin vilde Pragt,
+Taus hviled han ved Vinvet
+I sin luvslidte Dragt;
+Med askegraae Kinder
+Og Næsetippen rød,
+I siirlig Nonchalance,
+Med en Cithar paa sit Skjød.
+
+Den venstre Haand han bøied
+Om Cithrens Hals coquet,
+Og lod den høire glide
+Over Strængene let;
+I Følge med Accorderne,
+Som sagtelig han slog,
+Dybt inde fra hans Hjerte
+En Tankerække drog:
+
+---
+
+,,En Sanger er som Fugl paa Qvist,
+Der vipper uden Ro og Rist,
+Og altid savner Noget;
+Bag Ord han dølger ei sit Savn,
+Han nævner ei sin Fryd ved Navn,
+Men Tonerne er Sproget.
+
+De flyve let i Verden hen,
+Men Verden aldrig aner den
+Usigelige Jammer,
+Der tidt er Moder til hans Sang
+Og huusvant har sin stille Gang
+Ind i hans Hjertekammer.
+
+De bedste Toner fra mit Bryst
+Var aldrig Blomst af Liv og Lyst,
+Men spired frem af Smerte;
+Dem Sukket gav den lette Dands,
+De havde deres Farveglands
+Fra Blodet i mit Hjerte.''
+
+---
+
+I Sophaens Hjørne
+Hos de unge Piger to
+Der ruged Madame Sappi
+Og hvisked og loe;
+Hr. Limmer hun forfulgte
+Med sit Øies hvasse Sting;
+Men han lod ganske hildet
+I sine Tankers Ring.
+
+Han stirrede mod Gulvet
+Veemodig, fortabt,
+Som søgte han en Tanke,
+Halvdød, før den blev skabt.
+Han klimprede paa Strængen
+Og nynnede saa smaat,
+Slog Øiet op, og troede,
+Det klædte ham godt.
+
+Da raabte Madame Sappi
+Fra Krogen, hvor hun sad:
+,,Aa, syng os eet, Hr. Limmer!
+Af deres skjønne Qvad!
+De digter saa guddommligt,
+Det Rørende især!''
+Da reiste han sig langsomt,
+Dybt drog han sit Veir.
+
+Han stemte sin Guitarre
+Og greb rask de tre
+Præluderende Accorder,
+Naturligviis i <i>D;</i>
+Og sagde: ,,Naar De befaler,
+Jeg synger, som jeg kan,
+Dem her et Par Capitler
+Af min Vandrings Roman.''
+
+Han i en Attitude,
+En peen Positur,
+Sig stillede med Ryggen
+Imod Caminens Muur,
+Og sang saa med en Stemme,
+Som fordum vel var smuk,
+Men nu den svage Gjenklang
+Af et Hjertes Ungdomssuk:
+
+---
+
+,,Den første Gang jeg Hende saae,
+Og hørte hendes blide Tale,
+Det var en Vaardag klar og blaa,
+I Skoven hørtes Gjøgen gale.
+
+Der skilte kun en lille Grav
+De Huses Haver, hvor vi boede,
+Og Hæk og Hegn, ved Siden af
+Hinanden ret fortroligt groede.
+
+Paa hendes Moders Hyttegavl
+Stod Storken med de røde Hoser,
+Men selv i Hangen stod hun travl
+Blandt Lilieconval og Roser.
+
+Jeg sprang derind saa ung og glad;
+Hun blev ei vred, men tilgav Synden,
+Og rakte mig en Spand og bad
+Mig hente hende Vand fra Brønden.
+
+Saa blev det Sommer, og jeg saae,
+Mens Kirsebærret fik sin Rødme,
+At der i hendes Hjerte laae
+En Skat, uendelig, af Sødme.
+
+Da Hvedens gyldengule Top
+For Leens hvasse Hug var veget,
+Vi hjalp at binde Sæden op,
+Og hvilte siden os paa Neget.
+
+Og da Cavillen saa blev rød,
+Den rige Frugt vi plukked sammen,
+Det første Æble hun mig bød,
+Jeg løfted hende ned af Stammen.
+
+Da voved jeg det første Kys;
+Hun blev saa bleg, den hulde Pige,
+Og hvisked ængstlig til mig: ,,Tys!
+Nu maa vi det til Moder sige!''
+
+Jeg villig did mig føre lod,
+Hvor Vedbend Husets Dør omhvælved,
+Ei langt derfra en Poppel stod,
+Som jeg forventningsfuld, og skjælved.
+
+Knap fik jeg talt, saa svared rørt
+Hun uden fleer Omstændigheder:
+,,Jeg Alt forlængst har seet og hørt
+Og, kjære Børn! velsigner Eder!''
+
+---
+
+Fra Fred og Fryd, fra Hende
+Mit Fjed jeg maatte vende
+Til Byen som Student.
+Halvdrømmende i Staden
+Jeg vandred om paa Gaden
+Med hver en Nerve spændt.
+
+Jeg fik ei Tid at sukke
+For alt det Nye og Smukke,
+Der tog mig fast i Favn;
+Som Seileren paa Bølge
+Jeg maatte Strømmen følge
+Langt fra min Lykkes Havn.
+
+I Hvirvelen, i Vrimlen,
+I Rusen og i Svimlen
+Jeg tvende Qvinder saae;
+Hvor var de begge skjønne!
+Min Trofasthed at lønne
+De gav mig Løfte paa.
+
+I Eensomhed besøgte
+Den Ene mig, hun spøgte
+Og sang og favned ømt;
+De Greb i Lyrens Strænge
+Hun lærte mig, som længe
+Jeg selv kun havde drømt.
+
+Undseelig, bly og bange
+Jeg aanded ud i Sange
+Mit Hjertes Sorg og Lyst;
+Men ak! det Ingen rørte,
+Og hun, som mig forførte,
+Nu lod mig uden Trøst.
+
+Den Anden saae jeg stedse
+I smaa og større Kredse,
+Omringet af en Flok
+Tilbedere, som travle
+Jeg saae at gaae og kravle
+Stolt paa Cothurn og Sok.
+
+Jeg voved selv at nærme
+Mig til de malte Skjærme,
+Hvorfra lød hendes Kald;
+Men ak! Kronions Datter
+Mig gav til Rov for Latter
+Midt i sin Tempelhal.
+
+For disse rige Tvende
+Jeg glemte ganske hende,
+Den fattige Lilievaand;
+Jeg nedbrød alle Skranker,
+Jeg døved alle Tanker,
+Jeg løste hvert et Baand.
+
+Bort kasted jeg som Muldet,
+Der troes at gjemme Guldet,
+Min faure Ungdomstid;
+Min Vandrings Fjed blev svag
+Jeg monne feig forsage
+Hver mandig Dont og Iid.
+
+Og Timer var henrundne,
+Og mange Aar forsvundne,
+Før ret jeg vaagned op;
+End hørte jeg til Krybet,
+Mens Andre jeg fra Dybet
+Saae høit paa Ærens Top.
+
+Da for at leve, drog jeg,
+Hvor Skjebnens Vinde jog mig
+Hen over Livets Strøm;
+Og paa Gudindens Alter
+Jeg offrede kun Pjalter
+Af Kunstens Billeddrøm.
+
+Paa hendes Thespis-Karre,
+Tidt mellem Fjog og Narre,
+Som paa en Bøddelvogn,
+Langt fra min Længsels Kilde
+Lod jeg mig taalig trille,
+Selv Nar, fra Sogn til Sogn.
+
+Ak, hvor mit Hjerte blødte,
+Da seent jeg Hende mødte, -
+Hun bar et fremmed Navn;
+Men Glæden var bortveget
+Og Kindens Rose bleget,
+Og Livet kun et Savn! -
+
+---
+
+Da sidste Gang jeg Hende saae,
+Var selv jeg fuld af Vee og Smerte
+Min Haand hun tog og trykked paa
+Sit eget sorgbeklemte Hjerte.
+
+Hun sagde mig, at hun var glad
+Ved Alt, hvad end jeg havde digtet,
+Og at mig selv paa intet Blad
+Jeg havde skjæmmet eller svigtet; -
+
+At i den lange - lange Tid,
+Vi ikke havde seet hinanden,
+Hun havde kun havt Sorg og Slid
+For Børnene og Ægtemanden; -
+
+Men at, hvad hende opreist holdt,
+Var Minderne fra svundne Dage,
+Men lagde til, bestemt og koldt:
+,,Dem ønsker jeg dog ei tilbage!''
+
+Dog pludselig sin Haand hun rev
+Fra min og brast i vilde Taarer
+Og iled bort, - jeg ene blev
+Med Dødens Iis i alle Aarer.
+
+Bag Muren under Linden hist
+Har hun nu fundet Fred og Lise;
+Smaafugle, vippende paa Qvist,
+Der synge hendes Vuggevise! -
+
+Min Nat er Qval, min Dag er riig
+Paa Anger, Suk og Taarestrømme;
+Og føler jeg mig lykkelig,
+Da er det kun i Feberdrømme.''
+
+---
+
+,,Jeg laae i Feberlue,
+Man troede, jeg var nær min Død;
+Men i den lumre Stue
+Var min Tilværelse dog sød;
+Mig syntes, Nattergale sang
+Og fjerne Aftenklokker klang.
+
+Ved Nedgang stod just Solen,
+Og klar var Luften, mild og blid;
+En Duft fra Natviolen
+Den svale Luftning førte hid,
+I Krattet Nattergalen sang
+Og fjernt de Aftenklokker klang.
+
+Hen over Himlen seiled
+En lille, rosenfarvet Ø,
+Hvis Billed klart gjenspeiled
+Sig i den mørkegrønne Sø,
+Mens Nattergalen yndigt sang
+Og fjerne Aftenklokker klang.
+
+Jeg syntes grant fornemme
+En Tale og en Sang saa blid;
+Jeg kjendte denne Stemme,
+Saa kjær - saa kjær i fordums Tid,
+Som Nattergalens søde Sang
+Og fjerne Aftenklokkers Klang.
+
+Jeg iled gjennem Haven
+Saa ung, saa varm, faa sorgløs glad;
+Let sprang jeg over Graven,
+Som stilte vore Haver ad,
+Mens yndigt Nattergalen sang
+Og fjerne Aftenklokker klang.
+
+Langs Hækken hun mig fulgte,
+De grønne Buste stod som før;
+Løvhytten snart os dulgte,
+Som hvælved over Husets Dør,
+Did naaede Nattergalens Sang
+Og fjerne Aftenklokkers Klang.
+
+Vi til hinanden nikked,
+Thi Alt jo ved det Gamle stod;
+Mama sad end og strikked,
+Den lodne Hund laae ved vor Fod,
+Og sødt de Nattergale sang
+Og fjerne Aftenklokker klang.
+
+Da sagde hun alvorlig:
+,,Da Du tilsidst os reent forlod,
+Blev jeg saa syg og daarlig
+Og tabte alt mit muntre Mod,
+Jeg brød mig ei om Fuglens Sang
+Og hørte trist paa Klokkens Klang.
+
+Dog jeg Dig ikke hader!
+Han - Contoiristen blev min Mand.
+Først han, og saa min Fader
+Bortvandred til hiint bedre Land,
+Hvor al Naturens Jubelklang
+Formæler sig med Engles Sang.
+
+Min Broder gjemmer Havet, -
+Saa døde Moder da tilsidst, -
+Jeg selv er jo begravet,
+Bag hvide Muur, ved Kirken hist,
+Hvor høit i Linden Fuglens Sang
+Sig blander bly med Klokkens Klang.
+
+Du seer paa mig forlegen?
+Men seer Du ej, hvor jeg er bleg?
+Du selv er alderstegen,
+Din kjække Freidighed bortveg;
+Din Røst har ei sin friske Klang,
+Mat er dit Øie, tung din Gang!''
+
+- Op foer jeg da bedøvet,
+Jeg i min Smertes Favn mig fandt!
+Alt - Alt var mig berøvet,
+Og mens min bittre Taare randt,
+Forstummed Fuglens lette Sang
+Og Aftenklokkens Alvorsklang.
+
+Med tillidsfulde Blikke
+Man hvisked til mig: ,,Du er frelst!''
+Ak, men de vidste ikke,
+Hvad inderligt jeg ønsked helst!
+Mit Bryst var tungt, min Aande trang,
+Og <w>for</w> mig Veien mørk og lang!''
+
+---
+
+Her satte han Guitarren
+Mod Væggen og gik ud.
+Da sagde Madame Sappi:
+,,Nu græder han, ved Gud!
+Javist er han forskruet,
+Men dette Alt tiltrods
+Er han dog bag Lamperne
+Den Dygtigste blandt os.
+
+Det er mig ingen Gaade,
+Hvorfor de lod ham gaae;
+Kun hvad der halvveis duer,
+Det helst de holde paa.
+Jeg selv - ja, den Regjering
+I Huset paa Hallandsaas
+Ret kroer sig som en Svane,
+Men kjækker som en Gaas.
+
+I tænke Jer ham vel tragisk?
+Nei, Børn! I tage feil;
+For alt det Latterlige
+Er han et trofast Speil.
+Man troer, naar man paa Scenen
+Ham blot eengang fik see,
+Ham selv som født og baaren
+Alene til at lee!''
+
+
+<nonum><center>6.</center></nonum>
+
+Fra Stegerset nu hørtes
+En Stimlen og en Støi,
+En jublende Latter,
+Op Dørene fløi!
+Ind bar de fire Herrer
+Det dækkede Bord.
+<i>Marlborough s'en va-t-en guerre</i>
+De sang i høien Chor.
+
+Dem fulgte Kromadamen.
+Med tre Piger paa Rad.
+Med Lys og Glas og Flasker,
+Med Skaal og med Fad.
+Høist siirligt at tranchere
+Hr. Limmer godt forstod;
+Han var vel ei af Adel,
+Men havde desmere Mod.
+
+Han havde - hvad jo ofte
+Er gamle Herrers Skik -
+Taget den yngste Dame,
+Dengang tilbords de gik.
+Hr. Ramm sad hos Madamen,
+Hos Philo sad Babet;
+Saa Blunt var reent tilovers, -
+Det fandt han, var ei Ret.
+
+Krokonen, den unge,
+Han fik fra Kjøknet ind,
+Med sit sneehvide Forklæd,
+Saa blussende og trind.
+Hun lod sig villig nøde,
+Hun satte sig og loe:
+,,Saa kom jeg jo til Gilde
+Her i min egen Kro!''
+
+De røde Propper svupped,
+Og Druens Perler skjalv;
+I Viingudens Følge
+Kom Sorgløshedens Alf.
+Hver Kind blev rød, hver Pande
+Blev klaret op og fri,
+Ja, selv Hr. Limmers Hjerte
+Blev til et <i>Sans-souci</i>.
+
+Da løfted Madame Sappi
+Sit Glas og Taushed bød:
+,,Hr. Limmer har tracteret os
+Med Sang saa bittersød.
+Jeg veed, Hr. Blundt! at Mester
+De er i Strængespil;
+Fortæl om deres Hjerte os,
+Hvordan det ret staaer til!''
+
+,,Min bedste Madame Sappi!''
+Han svared med et Smiil,
+,,Det blev mig for besværligt
+At tælle hver en Piil,
+Hvormed han mig har saaret,
+Den overgivne Gud,
+Thi som en Naalepude
+Seer vist mit Hjerte ud.
+
+Jeg har ført Bog derover
+Og det i Riim udsat;
+Til Lærdom og Advarsel
+Er mig nu denne Skat.
+Det er en Række Kurve,
+En rigtig Tornekrands,
+Om ikke just saa syndig
+Og riig som Don Juans.
+
+Hver Morgenstund jeg læser
+Et Blad i denne Bog;
+Men ak! hvor lidt det frugter!
+Aldrig jeg bliver klog.
+Dog, hvis De det tillader,
+Jeg synger Dem Nr. 1.
+Saa kan De næsten sige,
+De har det Hele seet.''
+
+Saa hented han Guitarren,
+Der taus stod i en Vraa;
+Et Glimt af List og Lune
+Man i hans Øie saae.
+Han strøg sig let om Munden,
+Og kjækt til Strængens Klang,
+Der leged under hans Fingre,
+Heel gracieust han sang:
+
+---
+
+,,Jeg gik i den sorte Skole,
+Var voxen, vælig og qvik,
+Jeg bar baade Halsbind og Kjole
+Og havde et Uhr, som gik.
+
+Borgmesterens Dorthe, den smukke,
+Der sang og dandsed saa rart,
+Hun lod mig ei længe sukke,
+Men vi blev Kjærester snart.
+
+Hun havde to Øine milde
+Og saadan en deilig Fod;
+Hun vilde Alt, hvad jeg vilde,
+Og sagde mig aldrig imod.
+
+Med Eet dog fik hun den Vane
+At være mig vrippen og mut;
+Da tog jeg mig for at formane
+Den søde velsignede Glut:
+
+,,Min elskede, lille Pige!
+Gud veed, om jeg ret Dig forstaaer!
+Idag er dit Kys ei lige
+Saa brændende som igaar.
+
+Mig synes at dine Øine
+Er slørede af en Sky,
+Siden de røde, forfløine
+Dragoner kom til vor By.
+
+Du svøber Dig tæt i Kaaben,
+Som havde Du for mig Skræk;
+Jeg har dog ei andre Vaaben
+End Bøger og Pen og Bloek.
+
+Er Du da nu mere bange
+For mig paa min Skrivestol,
+End for de skjæggede, lange
+Dragoner med Sværd og Pistol?
+
+Saa vil jeg da, søde Dorthe!
+Helst vente med roligt Blod,
+Til de Dragoner er borte, -
+Saa faaer Du vel atter Mod.
+
+Omkring hendes Læber fine
+Et høist besynderligt Træk
+Sig drog, en løierlig Mine,
+Der kunde tydes: ,,Vent væk!''
+
+Dragonerne blæste den vilde
+Appel, og traved afsted;
+Men da jeg saae op til den Lille,
+Var hun saamænd travet med.
+
+At sige, figurligt hun traved,
+Hun fulgte sin gamle Dragon,
+Blandt Udstyrsæsker begravet
+I den deiligste Phaeton.
+
+En Oberst i Cavalleriet
+Med Gods og et Hammerværk,
+Det Vigtigste ved Partiet,
+Var hendes Fader for stærk.
+
+Jeg hørte Tanterne sige, -
+Jeg troer der var hele fem -
+De misundte den solgte Pige, -
+Hvi fik han ei een af dem!
+
+Til Flasken jeg ikke slog mig,
+Jeg greb ei til Dolk og Gevær;
+Lidt flau jeg blev, men tog mig
+Det dog ikke videre nær!''
+
+---
+
+Saa sang han; men i Stemmen
+Og den skurrile Sang
+En Bitterhed, en Veemod
+Fra hans Indre dog klang;
+De unge Piger smiled,
+Saa knap det kunde sees,
+Fru Sappi saae alvorlig
+Om i den hele Kreds.
+
+,,Ret saa!'' tog Ramm tilords,
+Han var just <i>à son aise,</i>
+<i>Accommodare se rebus</i>
+<i>At non sibi res,</i>
+Det lærte mig min Rector,
+Og den Philosophie
+Har, hvor min Fod saa vandred,
+Mig troligt staaet bi.
+
+,,Var dette'', spurgte hans Dame,
+,,Arabisk eller Spansk?
+Saa vær saa snild at tyde det
+Paa bredt og ærligt Dansk!''
+,,Med Glæde!'' han gjensvared,
+,,Lad mig Guitarren faae!
+Den hjælpe skal at give
+Forklaring derpaa.
+
+Jeg lokke vil af Strængen
+De Toner, som boer
+Her i mit glade Hjerte,
+Og tolke dem ved Ord.
+Hvordan saa Skjebnen støder,
+Jeg aldrig bliver stødt;
+Jeg er tilfreds med Verden,
+Thi Livet er saa sødt:
+
+---
+
+,,Ja Livet er et Gilde!
+En rigtig lystig Fest!
+For tidligt eller silde
+Ei kommer nogen Gjæst.
+Jeg iler til Banketten,
+Der vinker paa min Vei;
+Og sad vi der end Tretten,
+Saa skræmmer det mig ei.
+
+Hvad har I vel mod Jorden,
+Som vi til Festhal fik?
+Alt gaaer jo i sin Orden
+Og sømmeligste Skik.
+Har vi ei Lys paa Himlen,
+Som kan gaae op og ned?
+Og Nattelampevrimlen
+Og Maanens Lygte med?
+
+Jeg sætter mig til Bordet
+Med Hjertet, fyldt af Tak;
+Og laer dem have Ordet,
+Som holde meest af Snak.
+Jeg bruger kun min Stemme
+Til Sang, og lade vil
+Complet, som jeg var hjemme,
+Og holder kjækt mig til!
+
+Er her ei grønne Tillier?
+Et Telt af Himlen bygt?
+Med hvide Frøkenlilier
+Og Jomfruroser smykt?
+Dem plukked vi jo gjerne, -
+Men maae vi nøies blot
+Med Anemonens Stjerne,
+Saa er det ogsaa godt.
+
+Men hvis mig Vaaren nægter
+Et Blad af sin Triumph,
+Veed jeg et Løv, som mægter
+At sige Rosen Trumf!
+Det er de rige Blade
+Paa Rankens svaie Vaand,
+Der skjærmer om de glade
+Gulddruer med sin Haand.
+
+Vi følge gamle Skikke:
+For Enden af vort Bord
+Musiken mangler ikke,
+Nei, der er hele Chor.
+Der er jo Sang i Skoven
+I Dal, paa Eng, ved Kyst,
+Der er jo Sang paa Voven,
+Og Sang i hvert et Bryst.
+
+Ja, Livet er et Gilde,
+En altfor yndig Fest,
+Jeg kommer ei forsilde,
+Thi jeg er ung som Gjæst.
+Selv naar engang jeg graaner,
+Slaaer jeg mig ei til Ro;
+Mig Phantasus da laaner
+En Vinge eller to!''
+
+---
+
+Her tømte han sit Bæger,
+Hans Kind var blevet varm;
+Med Smiil han lagde Cithren
+Nu hen i Philos Arm;
+Da gik der som en Lysning
+Om dennes ædle Træk,
+Hans Øie glimred, Panden
+Han hæved fri og kjæk.
+
+Og mens han med Harpeggier
+Præluderede sin Sang,
+Henrykt hans Blik ved Babets
+Guldlokkede Hoved hang.
+Det var ei sødlig Smægten,
+Ei kjælent Sværmeri,
+Nei, der var Kraft og Alvor
+Og Sandhed deri!
+
+Da løfted Pigebarnet
+Just Hovedet op og saae
+Paa ham med disse Øine,
+Der var saa himmelblaae,
+Som var de rene Engles
+Og Kjærlighedens Hjem, -
+Det slog! - og Sangens Kilde
+Sprang fra hans Hjerte frem:
+
+---
+
+,,Jeg elsker Dig, o skjønne Jord!
+Hvor Rosen blusser, Ranken groer
+Med sine stærke Druer;
+Jeg hilser Dig i Vaar og Høst
+Med lige Fryd, - mit Liv, min Lyst
+Ei Vintrens Barskhed kuer.
+
+Jeg elsker Dig især, o Nord!
+Hvor vore Stammefædre boer
+I deres stille Grave;
+Hvor Ætten trives stærk og ny
+Paa Engen og i Bøgens Ly,
+Som Blomster i en Have.
+
+Jeg elsker Dig, Du danske Mark!
+Hvor Egen med sin runkne Bark
+Omværned stærke Planker,
+Der ofte bar, som Skib og Stavn,
+Fra Kyst til Kyst dit stolte Navn,
+Der vækker stolte Tanker.
+
+Jeg elsker Dig, grønklædte Ø!
+Der hviler som en smykket Mø
+I Havets Kjæmpe-Arme;
+Hvor i min Moders Favn jeg laae,
+Hvor Tankens første Glimt jeg saae,
+Og Hjertet fik sin Varme.
+
+Jeg elsker selv mit sidste Hjem,
+Som engang i sit skumle Gjem
+Min Haandfuld Aske rummer,
+Hvor efter Fartens Fryd og Savn
+Jeg lander i en sikker Havn
+Til dyb og evig Slummer.
+
+Men - til jeg er af Vandring træt,
+Mit Liv skal være dit, Babet!
+Og Kunsten Livet smykke;
+Ved Zeus! jeg gad dog gjerne see,
+Om der endnu vel findes Tre,
+Som sligt et Tempel bygge!
+
+Og der jeg være vil dit Skjold,
+Og værne, som en Ridder bold,
+Om Dig, mit Hjertes Dronning!
+Vi slibe Livets Diamant
+Og dele trofast saa - ei sandt?
+Dets Malurt og dets Honning!''
+
+---
+
+Han reiste sig fra Bordet
+Og kjærligt til Babet saae,
+Greb hendes Haand den kjære,
+Der som en Lilie laae
+Paa Dugen, og saa sagte
+Mod Kinden trykked den,
+Og lod den lønligt glide
+Mod Læberne hen.
+
+Da hvisked Madame Sappi
+Til Ramm: ,,See, hvor galant,
+Hvor ridderligt og nobelt, -
+Naar bare det er sandt!
+Hvor kjærligt og ærbødigt. -
+Naar bare det forstaaes -''
+Her slog et Blik fra Philo
+For hendes Læber Laas,
+
+Babet, den lille, glade,
+Hun hørte ei et Muk,
+Hun saae kun op til Philo
+Med et Smiil og et Suk,
+Der endte med en Latter
+Saa klingende og klar,
+Mens til de røde Læber
+Det blanke Glas hun bar!
+
+Hun skjød sin Stol tilbage,
+Tog Citharen i Haand
+Og slynged om sin Nakke
+Dens brede Silkebaand,
+Og vilde just begynde
+Et lille, muntert Qvad, -
+Da standsed hun forfærdet
+Og ganske bleg hun sad.
+
+
+<nonum><center>7.</center></nonum>
+
+Det hele lille Selskab
+Tabte Mæle og Maal;
+Igjennem Stormens Susen
+Der hørtes et Skraal;
+De studsede, de lytted -
+Og atter det lød,
+Som var en Sjæl bestedt
+I den yderste Nød.
+
+Ud sprang de to Studenter
+Og Philo efter dem,
+Rask gjennem Regn og Mørke
+De lyttede sig frem;
+Men snart de kom tilbage
+Med Latter og med Larm
+Og stormed ind i Stuen
+Med Degnen Arm i Arm.
+
+Babet blev lidt betutted ved
+At see sin gamle Ven,
+Dog vared det ei længe,
+For hun fik Mod igjen;
+Thi før sig Bertel satte
+Tilbords, som man ham bød,
+Han traadte frem og talte,
+Og saa hans Tale lod:
+
+,,Høistærede! Jeg beder
+Modtag mig først som Gjæst,
+Naar de mig Plads forunde
+Ved Kunstens rige Fest!
+Jeg føler det,'' han raabte
+Med Haanden lagt paa Bryst,
+,,Her boer Genie, forenet
+Med Mod og med Lyst!
+
+Min Dands er ei saa tosset,
+Nu skal De bare see!''
+Saa feied han henad Gulvet
+En snurrig <i>passe-peids;</i>
+,,Hvad Sangen anbelanger,
+Veed Jomfru Kristine vist,
+Blandt Sydsjælland Degne
+Rangerer jeg ei sidst!''
+
+Man gjorde Plads ved Bordet,
+Og han satte sig da ned;
+Med Glas og Kniv og Gaffel
+Han gjorde god Besked;
+Sin Mund han dog ei brugte
+Alene til sin Mad,
+Nei, han var høist veltalende
+Og stolt og sjæleglad.
+
+Men Kromadamen hvisked
+Til Blunt: ,,Endnu en Rest
+Jeg har af lange Flasker,
+Fra sidst her var Fest.
+Dem henter jeg tillige
+Med langlivede Glas;
+Jeg troer, til Gildets Punktum
+Kan de komme tilpas.''
+
+,,De er jo dog en Engel,
+Min deiligste Madame!''
+Udraabte Blunt, - hun trued,
+Men smiled dog til ham,
+Og smutted ud og bragte
+Snart paa en Bakke fiin
+De lange slebne Bægre
+Og den skummende Viin.
+
+Ved dette Syn Hr. Bertel
+Sprang henrykt fra sin Stol;
+Han pilled af behændigt
+Den blanke Stanniol,
+Han lod saa Proppen flyve
+Og knalde høit, og gik
+Fra Stol til Stol og skjenked
+Den olympiske Drik.
+
+Nu Jublens Thermometer
+Steeg mange Grader til;
+I alle Hjerter tændtes
+Den guddommelige Ild;
+Den strenge Madame Sappi
+Blev vennehuld og sød, -
+Og ak! Hr. Limmers Næse
+Den glimted som en Glød.
+
+Begejstret som en Satyr
+Slog Degnen for sit Bryst:
+,,Men hvad er uden Sang vel
+Alverdens Fryd og Lyst?
+Den er jo Livets Blomster!
+Lad os synge da en Sang,
+Jeg lærte paa Regentsen
+Nummer tre, i anden Gang!
+
+De Herrer den vist kjende?
+Det Bedste er, jeg troer,
+Vi slynge vore Stemmer
+Til en fiirdobbelt Snor!
+Kom an!'' - De Mellemstemmer
+Var Ramm og Blun t tilpas,
+Primo Tenor sang Philo,
+Og Bertel anden Bas:
+
+---
+
+,,Trætter Dig Livets Strøm?
+Vaagn da fra Døs og Drøm,
+Hører Du Propperne knalde?
+See, som velsignet Regn
+Over en solbrændt Egn,
+Perlende Dugdraaber falde.
+
+Yndige Farvespil,
+Modnende Sommer-Ild
+Straaler fra svulmende Ranker;
+Druernes Gud er stor,
+Rigt i hans Tempel boer
+Jubel og glimrende Tanker.
+
+Drik, som Du skal og bør,
+Klag, om Du kan og tør,
+Saa over Jordlivets Trængsler;
+Sorgen gaaer strax til Ro,
+Hjertet sig vugger jo
+Huldt i livsalige Længsler.
+
+Ud fra sit stille Hjem
+Strømmer saa Sangen frem,
+Vaarfriske Blade og Blommer;
+Hver en Stund klar og ny!
+Ja, under Rankens Ly
+Smiler en evig Skjærsommer!
+
+Staa ei der stum, men tal:
+Er i en Jammerdal
+Saa dine Timer henfløine?
+Her, hvor os vinker sødt
+Himmelblaat, Rosenrødt -
+Læber og tindrende Øine!''
+
+---
+
+Med Haandklap og med Bravo
+Blev lønnet deres Qvad,
+Og alle Glas blev tømte
+I munter Bunterad;
+Høirøstet blev nu Talen
+Og Ordet mere frit,
+Ret Ingen vilde høre,
+Men hver fortalte Sit.
+
+Og der var ingen Tunge,
+Som jo dygtigt fik sig rørt;
+Madamen declameerte, kun
+Af Krokonen hørt.
+De unge Pigers Stemmer
+I Choret Gjenlød gav;
+De loe som Morgenlærker,
+Og vidste knap hvoraf!
+
+Nu meldtes dem fra Stalden,
+At Alt i Orden var,
+Natstormen lagt til Hvile
+Og Himlen reen og klar,
+At nu det var paatide,
+Da det gryede ad Dag; -
+Tilvogns de steg da Alle
+Og satte sig i Mag.
+
+Krokonen den unge,
+Fik mangt et venligt Nik,
+Men Blunt med Fingren sendte
+Et Kys - og saa et Blik!
+Da smeldede de Pidske,
+Porthunden gjøede, sprang, -
+Snart dulgtes Karavanen
+Af Krattets Bladehang.
+
+Fra Busk og Græs dem mødte -
+Den sødeste Sommerduft,
+Om deres Kinder svøbte sig
+Den stille Morgenluft;
+Kun Skoven endnu mumled
+Om Nattens Storm og Støi,
+Fra Mosen op, nær Veien,
+De vilde Ænder fløi.
+
+Men treven var den Kjørsel
+Paa den opblødte Vei,
+Søvndyssende, og længe
+Det vared heller ei,
+For alle Øine blunded.
+Ingen hørte eller saae
+Smaalærkerne at qviddre
+Eller Solen opstaae.
+
+
+<nonum><center>8</center></nonum>
+
+Herr Obersten, den gamle,
+Den Herre til Væringgaard,
+Var fredeligt henslumret
+Og lagt paa sorten Baar,
+Med Støvler og med Sporer,
+I ædel krigersk Pragt,
+Af sine troe Dragoner
+Længst til Capellet bragt.
+
+Han havde mange Penge,
+Men endnu fleer af Aar;
+To Aar er kun forløbne,
+Da han med graanet Haar
+Til Væringgaard hjemførte
+Et Barn som Fæstemø;
+Men bort fra al den Glæde
+I Vaar han maatte døe.
+
+Eensom den unge Enke
+Nu sad, som det sig bør,
+Det sorte Haar omvundet
+Af hviden Crepe og Slør.
+Et Barn hun var som Hustru,
+Nu saae hun næsten ud,
+Som en faderløs Ungmø,
+En forsvunden Sømands Brud.
+
+Den Morgen var saa stille
+Efter Nattens Storm og Strid,
+Og Solen stod paa Himlen
+Huldt smilende og blid;
+Da gik den unge Frue
+I Havens lune Gang,
+Mens alle Blomster dufted,
+Og alle Fugle sang.
+
+Hvad Fuglene sødt qviddred,
+Som de var lært og vant,
+I hendes unge Hjerte
+Et villigt Echo fandt;
+Og Blomsterduften strømmed
+Som et Sundhedskildevæld,
+Og søde Minder vaagned,
+Som styrked hendes Sjæl.
+
+Ind vandred hun i Skyggen
+Paa gruusbelagte Gang;
+I hendes Tanker nynned
+Et Minde, som en Sang.
+Hun satte sig paa Bænken
+Ved stille, blanke Aa;
+De hvide Svaner fornemt
+Paa deres Frue saae.
+
+I hendes Tanke nynned
+Et Minde, som en Sang;
+Det var en Blomst, en lille,
+Fra hendes Foraarsvang;
+En Blomst, der aldrig mister
+Sit Liv, sit Farvespil,
+Men sødt livsaligt dufter,
+Saasnart kun Hjertet vil:
+
+---
+
+,,Hvilende,
 Lukkende
 Tæt Dig i Favn,
 Smilende,
@@ -3501,11 +6193,176 @@ Smægtende
 Længseler da,
 Nødes de
 Nægtende
-Blik til et Ja!
+Blik til et Ja!''
 
 ---
 
-See, Lamperne blinke
+Blødt som et Net sig slynged
+Den søde Melodie,
+Om Ordene og bare
+Et Billed frem deri,
+Der som Maanen bag Skyen
+Snart svandt og snart kom, -
+Da vaagned hun af Drømmen
+Og saae sig hurtigt om.
+
+En Klang af Sølverbjælder
+Det var, og i Galop
+Den lille Hund kom logrende
+Og sprang paa Bænken op.
+Saa hørtes tunge Fodtrin,
+Og frem hun ile saae
+Huusholdersken, den trinde,
+Saa rask, det vilde gaae.
+
+Heel aandeløs, forpustet
+Hun meldte da strax:
+,,En Gjæst vi nu har faaet,
+Men af et eget Slags.
+Paa Veien hist var væltet
+En Vogn med Herrer tre,
+Og Een var saa forslaaet,
+Det var en Gru at see.
+
+Jeg stod just da paa Blegen;
+To Herrer og deres Kudsk
+Ham bare ind fra Veien
+Og lagde ham ved en Busk.
+Der laae han, hvid som Linet,
+Man hørte ei et Suk,
+Mens Blodet randt fra Panden, -
+Men, Gud! hvor var han smuk!
+
+Jeg skyndte mig da til dem,
+Og bad dem strax paastand,
+At bære op paa Gaarden
+Den stakkels unge Mand.
+Det grønne Kammer oppe
+Jeg hurtigt ordne lod;
+Jeg vidste jo saa sikkert,
+Det var Dem ei imod.
+
+Den syge Mand paa Sengen
+Endnu bevidstløs laae,
+Da han blev let forbundet
+Saa godt, det vilde gaae;
+Den yngre Herre klipped
+Hans Haar og lagde Baand
+Om Saaret, som det syntes,
+Med meget øvet Haand.
+
+Saa vaagned han af Dvalen,
+Et Suk, et dybt, han drog,
+Og mumled et Par Ord og
+Sit Øielaag opslog.
+Men, Jesus! hvilke Øine!
+Nu har jeg mange seet,
+Men, sandt for Gud, kun sjelden
+Af saadan Qvalitet!
+
+Med Hamborgervognen
+Har jeg sendt Lars afsted
+At hente Doctor Jensen
+Og bringe strax ham med.
+Og gamle Karen sidder med
+Sit Sytøi udenfor
+Hans Dør, som Vaagekone,
+I den lange Corridor.
+
+Nu er de Andre reiste,
+Kun knap var deres Tid;
+Den Ældre loved venligt dog
+At komme snart herhid.
+Hvad det dog er for Fyre,
+Jeg gjerne vide gad;
+Jeg havde ei ret Hjerte til
+At spørge dem ad!'' -
+
+
+<nonum><center>9.</center></nonum>
+
+- Alt Roserne var falmed',
+Men i deres rige Dragt
+Stode de høie Malver
+Rank som en prægtig Vagt
+Til Høire og til Venstre
+Omkring den Bowlingreen,
+Der foran Haugestuen
+Laae fløiesblød og fiin.
+
+Blank stod paa Himlen Solen
+I stille Sommerdag,
+Fra fjerne Landsbykirke
+Man hørte Timens Slag;
+Sangfuglene sad tause,
+Og kun en flittig Bi
+Gav Lyd, naar paa sin Hjemvei
+Den iilsomt drog forbi.
+
+I Husets andet Stok man
+Et Vindve aabnet saae,
+Hvor nu saa mange Dage
+Den fremmede Syge laae;
+Han havde taalmodig holdt sig,
+Som Lægens Alvor bød,
+Der ham besindigt varsled,
+Det gjældte Liv og Død.
+
+Først nu det var forundt ham
+At hæve Hovedet lidt,
+At sidde paa en Sopha
+Og vandre et Par Skridt;
+At livne sine Tanker
+Ved et friere Blik,
+At qvæge sit matte Hjerte
+Ved Luftens Balsamdrik.
+
+Men nede i Verandaen
+Huusfruen ene sad,
+Omskygget tæt af Vedbend,
+Jasmin og Gedeblad;
+Taus tankefuld og bøiet
+Over sit Sytøi ned,
+Hun kunde deroppe høre
+Den Syges sagte Fjed.
+
+Hun hørte, hvor han stemte
+Guitarrens Stræng og hvor
+I alle Tonearter
+Han følte sig for.
+Først nynned han kun sagte
+Til Strengelegens Klang,
+Men snart med Eet sig hæved
+Hans Stemme til Sang:
+
+,,See, Lamperne blinke
+I Skoven og vinke
+Til Droslens og Bogfinkens pyntede Hjem,
+Der Strængene klinger
+Og Sværmen sig svinger, -
+Min Kjærest og jeg, vi er ogsaa blandt dem.''
+
+Da kasted hun sit Sytøi
+Og heftig op hun stod,
+Den friske Foraarsrose
+Hendes Kinder forlod.
+Men atter sank tilbage hun
+I Lænestolens Skjød,
+Mens fra de søde Øine
+En Taarestrøm frembrød.
+
+Der var kun Een i Verden,
+Som kunde denne Sang!
+Kun Een, hvis Stemme eied
+Saa vidunderlig Klang!
+Hun skjulte sine Øine,
+Hun ganske stille sad,
+Med Hjertets Slag hun fulgte
+Det idylliske Qvad:
+
+---
+
+,,See, Lamperne blinke
 I Skoven og vinke
 Til Droslens og Bogfinkens pyntede Hjem,
 Der Strængene klinger
@@ -3531,11 +6388,130 @@ Coraller mon glide
 Let gjennem din Fletnings sortglindsende Pragt,
 Saa sees nu, saa dølges,
 Saa slynges, saa følges
-Vort Liv og vor Tanke i Kjærligheds Pagt.
+Vort Liv og vor Tanke i Kjærligheds Pagt.''
 
 ---
 
-Ak, mindes Du, vi kom fra Dands
+Og da de sidste Toner
+Svandt som en Morgendug,
+Hun reiste bly sit Hoved
+Fra Bordet med et Suk;
+Hun tørred sine Taarers
+Mildt dulmende Strøm,
+Og saae nd over Haven
+Som vaagnet af en Drøm.
+
+Der stod den gamle Doctor,
+Han bøied sig just ned
+Og plukkede en Neglik
+I det rige Blomsterbed.
+Han nærmed sig Verandaen,
+Han traadte ind, og hun
+Modtog ham med et Haandtryk
+Oa en smilende Mund.
+
+Han satte sig og sagde: ,,Har
+De hørt vor Patient?
+Hvad synes De, min Frue!
+At min Kunst har fortjent?
+Jeg uden Pral tør glæde mig
+Ved dette nye ,,Bliv''!
+Jeg troer i ham er sparet
+Et ædelt, frodigt Liv.
+
+Jeg har ham givet Haab om
+Imorgen - eller saa -
+At stedes for Deres Aasyn
+Og ud i Hangen gaae.
+Jeg syntes, det virked bedre
+End noget Roborans;
+Jeg sjelden saae en sundere
+Natur end hans.
+
+I Deres Sorg, min Frue!
+Vi volde Dem Besvær.
+Men en Kjærlighedsgjerning
+Var Dem jo altid kjær.
+Snart kan han dog forlade
+Dette stille Paradiis!'' -
+Han tang og af Gulddaasen
+Tog sig hurtigt en Priis.
+
+Han ordned sig til Afsked,
+Han trykked Fruens Haand.
+Hun vilde talt - hun dvæled,
+Som fraværende i Aand.
+Hun vilde ham forsigtigt -
+Udspørge, ak, men før
+Hun Ordet fik paa Læben,
+Han svandt bag Salens Dør.
+
+Den Nat var uden Slummer,
+Den Dag var uden Fred,
+Det syntes hende, Timerne
+Bar Bly paa deres Fjed.
+Og end en Nat, og end en Dag
+Ei Ro blev hende undt;
+Da kom den gamle Tjener
+Og meldte - ,,Hr. Blunt!''
+
+Paa Tjenerens Skuldre støttet
+Han traadte langsomt ind;
+Omkring de krusede Lokker
+Laae end det hvide Bind.
+Ind gjennem Vindruløvet
+Just Sommersolen loe;
+Den gamle Tjener fjerned sig,
+Og de blev ene To.
+
+Der hørtes intet Udraab,
+Der saaes ei Comediespil;
+Gjensynet gik saa trøstigt
+Og heelt naturligt til.
+Men tavse stod de Begge,
+De gjemte i deres Bryst
+En sød, en ængstlig Glæde,
+En smerteblandet Lyst.
+
+I Begges Sjæle dæmred
+Den samme Tanke frem,
+Et Baand med Eet den fletted,
+Der gjenforened dem;
+Et Stjerneskud den ligned
+Der just tilsammen faldt
+Med det lønlige Ønske,
+Og lovede dem Alt. -
+
+Der sad nu paa Divanen
+Det unge skjønne Par.
+Hans Øie speided rundtom
+I Salen, hvor de var.
+Da hvisked han: ,,Dorthea!
+Jeg er hos Dig? - men hvor?''
+Hun taug; med Rødmen peged
+Hun paa sit Sørgeflor.
+
+Der foer et Glimt af Glæde
+I Barmens dunkle Bo,
+Og paa hans ædle Aasyn
+Der leired sig en Ro,
+En Ro, som den kun eier,
+Der haaber og troer:
+Men fra hans glade Læber
+Ei voved sig et Ord.
+
+Men hendes Øine hviled
+I hans, og det var klart,
+At eet og samme Billed
+Blev Begge aabenbart.
+Da brød han ud: ,,Dorthea!
+Ak, husker Du dengang?''
+Han aabnede Claveret
+Og satte sig og sang:
+
+---
+
+,,Ak, mindes Du, vi kom fra Dands
 Og vandred gjennem Byen;
 Nathimlens rige Fakkelkrands
 Var slukt af Taageskyen.
@@ -3547,7 +6523,7 @@ Den Vandring klart i Mindet staaer,
 Og aldrig har jeg glemt den;
 Jeg var kun sytten, atten Aar,
 Og Du kun fjorten, femten.
-Dybsindig ei vor Tanke var.
+Dybsindig ei vor Tanke var,
 Men Tungen frit fra Hjertet bar
 God Lystighed og Skjemten.
 
@@ -3563,7 +6539,7 @@ Vi kom til Torvet; som en Elv
 Det flød med sorte Vover.
 Du standsed her og bad mig selv
 At bære Dig derover.
-Jeg vandrer end saa tidt, saa tidt
+Jeg vandrer end saa tidt, saa lidt
 De hundred, lykkelige Skridt
 I Drømme, naar jeg sover.
 
@@ -3591,17 +6567,2268 @@ Vi glemte Alt omkring os, Alt,
 Vi hørte ei de Dryp, der faldt,
 Paa Silkeskjermen larme.
 
-O. dette lange - lange Kys,
+O, dette lange - lange Kys, .
 Vor første Blomst i Vaaren,
 Det lever end, som var det nys
 For os til Verden baaren.
 Det lever som min bedste Skat
 I Glædens Solskin, Sorgens Nat,
-I Smilet og i Taaren.
+I Smilet og i Taaren.''
+
+---
+
+Han reiste sig, han stod da
+Med et Spørgsmaal i sit Blik,
+Der klart fra hans Hjerte
+Til hendes Hjerte gik:
+,,Siig, Elskte! tør jeg bære
+Et Fremtidshaab herfra?''
+Og hendes Blik ham svared
+Huldsaligt med et ,,Ja!''
+
+To Timer derefter
+Glad, gjenfødt og ny,
+Han rulled hen ad Veien
+Til Kong Valdemars By.
+Da tænkte han paa Limmer,
+Og høit af Glæde loe:
+,,Nu kan jeg bringe Fyren
+I hans Alderdom til Ro!''
+
+Et Billed af en Fremtid
+Med blaa og skyfri Luft,
+Hvor alle Livets Blomster
+Ham loved deres Duft,
+Drog som et Panorama
+Hans indre Blik forbi.
+Den lille Fru Dorthea
+Var Solen deri.
+
+---
+
+<nonum><center>10</center></nonum>
+
+I Gjæstgivergaarden
+I Atterdags By,
+Med Udsigt just til Taarnet,
+Som kneised høit i Sky,
+Der sad Hr. Ramm alvorlig
+Ved Vindvet i en Krog,
+Og lod, som han læste
+En Comoediebog.
+
+Han ændsed ikke Himlen,
+Der var saa sommerblaa,
+Han saae ei til Ruinen,
+Der for hans Øie laae.
+Hvi skulde han og fængsles
+Af den gamle, døde Muur,
+Naar Blikket turde drukne
+I en deilig, ung Natur?
+
+Men paa hans kloge Pande
+En Alvor der var,
+Om indre Kraft og Fasthed
+Den Vidnesbyrd bar.
+Hans Øie var vel venligt,
+Men dog kjækt og bestemt.
+Et Træk om Munden røbed
+Baade Lune og Skjemt.
+
+Der sad hun, Nina Sappi,
+Saa rank og fiin og let,
+Ved Salens anden Side
+Paa en lav Tabouret;
+Fra Flygelets Tangenter,
+Som saa færdigt hun slog,
+For sin Tanke hun hented
+Et klart og fyndigt Sprog.
+
+Som i en Vaarvind vugges
+Det saftgrønne Siv ,
+Saa fik her hendes Skjønhed
+Som et forhøiet Liv,
+Midien den myge Blødhed,
+Det brune Haar sin Pragt,
+Nakken den fine Bøining,
+Ved Tonernes Magt.
+
+Og som to Duer følges
+Paa sommerlig Flugt,
+Snart fjernes, snart mødes,
+Saa svævede smukt
+Den unge Piges Hænder,
+Som i en Alfedands,
+Og flettede af Toner
+Den rigeste Krands.
+
+Hun slutted Phantasien,
+Et lille Suk hun drog,
+Hun vendte et Par Blade
+I en opslaaet Bog.
+Og efter en ret dristig
+Accordfølges Gang,
+I et roligt Andante
+Sødt smeltende hun sang:
+
+---
+
+,,Giv mig, til Tegn at Du din Villie
+Vil bøie efter min, en Lilie!''
+Hun lagde Haanden blødt om Stilken
+Og saae paa ham og spurgte: ,,Hvilken?''
+,,Jeg valgte helst'', han sagde, ,,Knuppen;
+Liig Sommerfuglen, svøbt i Puppen,
+Den lover, men den holder ofte
+Langt mere, end fra først den lovte.''
+Hun sagde: ,,Revet løs fra Stammen,
+Som Barnet, fjernet langt fra Ammen,
+Den vil sit unge Hoved bøie,
+Og aldrig aabne Dig sit Øie!''
+,,Men jeg'', han svared, ,,jeg vil nære
+Den med mit Hjerte og min Ære!''
+,,Ja da'', hun svared, ,,vil den Fagre
+Dig liig en Engel huldt omflagre,
+I Himlens Fryd, i Jordlivs Smerte,
+Og døe af Glæde ved dit Hjerte!''
+Vaarsolen smiled, Vinden lufted,
+Sig Knuppen aabned huldt og dufted.
+De vandred langsomt ned i Dalen,
+Fromt hilsede af Nattergalen.
+Langs Veien straaled Rosens Kerter,
+Der var en Fred i Begges Hjerter.''
+
+---
+
+Da reiste Ramm sig ivrigt
+Fra sin Stol og sin Krog,
+Og kastede paa Gulvet
+Den uskyldige Bog:
+Med hastige Skridt han
+Til Pigebarnet gik;
+Hun vendte sig og smiled
+Med lidt forundret Blik.
+
+,,Tilgiv mig, Signorina!
+Maaskee min Dom er gal, -
+Men var de Vers ei matte,
+Og Elskeren fatal?
+Thi hele Trylleriet
+Det lagde selv De til
+Ved Deres søde Stemme
+Og Deres Hjertes Ild!
+
+Jeg kan ei rigtig døie
+Det altfor fine Spind,
+Mig er det Djerve, Drøie
+Meer efter mit Sind.
+Som Theerosens Bæger
+Maa Tankens Blomster fiint
+Udfolde sig naturligt
+Og ikke forpiint.
+
+Og den Musik, den velske,
+Mig huer heller ei,
+Den knuger paa mit Hjerte
+Saa slæbende og seig.
+Det evige <i>sostenuto,</i>
+Som ved en Lænkes Tugt,
+Jo lammer Phantasien
+Hver Vinge til Flugt.
+
+Hvis Riimsmeden vidste
+Sit eget sande Gavn,
+Han nævned altid Tingen
+Strax ved sit simple Navn;
+Saa skrued han ei Strængen
+Saa høi og saa stram,
+At ofte den maa briste
+Til evig Spot og Skam.
+
+Jeg mindes fra min Barndom
+En lille Elskovssang,
+Som mig en gammel Tante
+Har sunget mangen Gang;
+Og altid, naar jeg hørte den,
+Stod levende for min Hu,
+Den, som jeg tidligt elskte,
+Og jeg elsker endnu.
+
+Kun svag var Tantes Stemme,
+Det var, som i en Drøm
+Om Fortids søde Minder
+Den blev saa blød og øm.
+Hvergang hun havde sunget
+Var hendes Øie vaadt;
+Det gjaldt hendes Hjerte,
+Det anede jeg godt.
+
+Min Elskte var en lille Een,
+Da først jeg hende saae
+Hen over Scenen svæve
+Med Psychevinger paa.
+Og som en Fortids Ridder
+Jeg svoer ved Elskovs Gud
+Den Rosenknup at plukke,
+Naar den var foldet ud
+
+Hun voxte op, blev deilig,
+Selv holdt jeg trofast ved
+Min Tantes Qvad og Haabet, at
+Min første Kjærlighed
+Den sidste skulde blive!
+Jeg vil, hvis De har Lyst,
+Dem synge disse Toner
+Mig selv til Ro og Trøst.''
+
+Han satte sig ved Flygelet,
+Han dvæled et Minut,
+Som den, der staaer og venter
+Den sidste Skranke brudt.
+Rask hæved han sit Hoved, -
+Og til sindrig Harmonie
+Med dæmpet Stemme sang han
+Den simple Melodie:
+
+---
+
+,,Han vidste mange faure Ord,
+En Tankevæv han kunde flette,
+Hvis Islæt var en Rosenflor, -
+Om Alt, hvad i et Hjerte boer,
+Han kunde yndefuldt berette.
+
+Hun sad og saae paa ham saa tyst,
+Med Undren i det søde Øie,
+En aldrig forhen anet Lyst
+Fik Liv i hendes unge Bryst
+Og hæved Barmens Liliehøie.
+
+Men da huu ret fik aabent Syn
+For dette Skjønhedsliv, der lued
+Med Kraft ud fra hans dunkle Bryn,
+Opklaret ved et Tankelyn,
+Som i et Speil <w>sig selv</w> hun skued.
+
+Med henrykt Skræk hun saae i Løn
+Ham der i Billedet at knæle,
+Saa elskelig, saa varm, saa skjøn,
+I hver hans Mine bad en Bøn,
+Der gjældte Begges unge Sjæle:
+
+,,Bønhør! - hvis ei, maa jeg herfra!
+Da svinder brat, hvad nys jeg malte!''
+Hans <w>sidste</w> Ord var dette <w>Da</w>, -
+Men hendes første var et <w>Ja!</w> -
+- Den Stund de ikke mere talte!''
+
+---
+
+Han endte Ritornellen
+Med skjødesløs Fart
+Og loe: ,,Nei, dette Billed
+Har heller ingen Art!
+Det er en daarlig Beiler,
+Som trænger til mange Ord,
+Naar blot en lille Kjende
+Han haaber og troer.
+
+Saa er jeg mere dristig,
+Jeg veed, hvordan? og hvad?
+Jeg trykker Kyssets Rose
+Paa Haandens Lilieblad,
+Og spørger Pigebarnet
+Saa freidig og glad:
+Skal vi paa Livets Vandring
+Ei følges kjærligt ad?''
+
+Som sagt, saa gjort! Hun rødmed,
+Hun smilede sødt,
+Den skjønne Pande segned
+Hen mod hans Skulder blødt.
+Han løfted hendes Hoved,
+Han kyssed hendes Mund, -
+Og saa var de forloved
+I den selvsamme Stund.
+
+Som tvende Dugdraaber
+Paa eet og samme Blad
+Med Eet kan flyde sammen
+Og aldrig skilles ad,
+Saaledes deres Sjæle
+I det salige Nu
+Formædled sig og skabte
+Det fortrolige Du!
+
+,,Nu er Du min, Ninetta!''
+Blev Ramm alvorlig ved;
+,,Du er, som sagt, min første,
+Min eneste Kjærlighed!
+Hvergang jeg atter saae Dig,
+Hvor Du var blevet stor,
+Fik Hjertets Blomster Solskin
+Og stod i bedre Flor.
+
+Ak, ja! Du har da dandset,
+Men vist paa Torne tidt,
+Mens Dine Øine smiled,
+Har Hjertet ofte lidt.
+Kom trygt nu ved min Side,
+Med al min Kraft, mit Mod,
+For Snoge og for Torne
+Jeg vogte skal din Fod.
+
+At blive Skuespiller
+Det har jeg aldrig drømt,
+Thalia, Melpomene
+Jeg har kun tjent paa Skrømt
+Den skjønne Kunst jeg voved
+At laane, for her
+Naturligt, uden Opsigt
+At komme min Elskte nær.
+
+For Kunsten og for Standen
+Al Ære og Respect!
+Men mig en anden Gudinde
+Tog i sin Varetægt.
+Hun til Emblem har Slangen,
+Og i kraftige Ord,
+I Urter og i Stene<note>* I stærke Ord, i Urter og i Stene, - <i>in verbis herbis et lapidibus omne medicamen.</i></note>
+Al hendes Viisdom boer.
+
+Hun tænde skal vor Arne,
+Hælde Guld i vort Skriin,
+Og presse i vort Bæger
+Den klare, søde Viin.
+Men Du vil Huset smykke
+Med Ynde, Liv og Lyst,
+Og værne huldt om Sæden
+For Evighedens Høst!
+
+Kom nu, <i>Ninetta mia!</i>
+Tag Hat og Kaabe paa;
+Lad Arm i Arm os sammen
+Til Pakhuset gaae,
+Hvor begge de Gudinder
+Med Maske og med Dolk
+Har deres Tempel aabnet
+For et mysgjerrigt Folk.
+
+Nu Prøven vist er færdig.
+Bered Dig nu til
+At see paa vore Brædder
+Et selsomt Skuespil.
+Jeg skulde meget feile,
+Hvis ikke der jeg fandt
+Med Myndighed og Iver
+En kraftig Bundsforvandt.''
+
+
+<nonum><center>11.</center></nonum>
+
+Paa Scenen, som forestilled
+Et Huus i landlig Egn,
+Der stode nu forsamlede
+Hr. Limmer, Bertel Degn,
+Fru Sappi og Hr. Philo
+Og den lille Babet; -
+De var just ved at prøve
+,,Kong Pharaos Portrait.''
+
+Af Klipfisk, Tran og Tjære,
+Af Sild og Hamp og Sprit,
+Var der en Atmosphære,
+Der dog mildnedes lidt
+Ved Luftninger, der gjennem
+To aabne Luger fik
+En fri Entree, og viftende
+Igjennem Templet gik.
+
+De skarpe, skraae Solstraaler
+Og Sommerhimlens Blaae
+Med ironiske Blikke
+Til Scenens Landskab saae.
+I Lugerne sad Spurve,
+De qviddrede saa froe,
+Grandgiveligt det lød,
+Som de spottede og loe.
+
+Man var ved sidste Scene,
+Og Limmer nok saa net
+Med Værdighed forenede
+Ung Philo og Babet;
+Da lød en kraftig Stemme
+Fra Salens Baggrund: ,,Slet!
+I spille Begge usselt!
+Saa havde jeg dog ret!''
+
+Da blev der brat en Stilhed.
+Babet hun hvisked blot:
+,,Ved Gud! der har vi Fader!
+Nu gaaer det aldrig godt!''
+Men Madame Sappi blegned,
+Og Bertel, heel confuus,
+Trak baglænds sig og væltede
+Fast Aagerkarlens Huus.
+
+Da traadte frem for Dagen
+Den Præstemand god,
+Bredskuldret, høi og mægtig;
+Med lange Skridt sin Fod
+Hen over Bønkerækkerne
+Han løftede, og lod
+Sig ikke standse, før han
+Paa Scenens Brædder stod.
+
+Han stilled sig i Midten,
+Mens som en spidset Piil
+Til Høire og til Venstre
+Han sendte et Smiil.
+Han hilste rundt i Kredsen
+Med overlegen Ro,
+Men lod sit Blik dog dvale
+Ret kjærligt paa de To.
+
+Han hævede sin Stemme;
+Den klang som reent Metal,
+Og fulgte Tanken sikkert
+Med saadant Tonefald,
+At man sig følte tryg for,
+At den forfeiled ei.
+Med rette Vægt og Fylde
+At gaae den rette Vei:
+
+,,Jeg meer end nok har skuet
+Af dette Skuespil!
+Saa det var, gode Jørgen!
+Alt, hvad Du kan og vil?
+Og Du, min lille Stine!
+Det var da saa omtrent,
+Hvad din Begejstring mægted?
+Det var ei stort bevendt!
+
+Naar nu jeg bryder Staven
+Og fælder Dom, - ei sandt? -
+Er jeg en grum <i>tiranno,</i>
+Eller ogsaa en Pedant,
+Hvis Hjerte er for Kunsten
+Som et tilsløret Speil?
+Det kunde dog nok hænde,
+I tog en Smule feil!
+
+Ei støtter jeg fortvivlet
+Min Pande imod Væg;
+Ei tørrer jeg mit Øie,
+Rørt ved mit eget Præk;
+Ei Blikket tragisk hæver
+Jeg mod Soffittens Blaae; -
+Jeg siger tørt og myndigt:
+See, <w>her</w> skal Skabet staae!''
+
+Her vendte sig nu Degnen
+Og mumled ved sig selv:
+,,Den Tale er et Stigbord
+For Begeistringens Elv.
+Nu gad jeg seet, om Jørgen
+Har i sin Næse Been,
+Om ,,Staalet'' i hans Villie
+Kan vælte denne Steen!''
+
+,,Som sagt'', saa vedblev Præsten,
+,,I feile, hvis I troer,
+At i mit Bryst for Kunsten
+Ingen Kjærlighed boer.
+Nei, jeg har just for Kunsten
+Den rette Respect, -
+Bønhaser kun jeg hader
+Og deres hele Slægt!''
+
+Her hurtigt han med Haanden
+Hen over Panden foer:
+,,Jeg sad engang til Middag
+Ved en Skuespillers Bord.
+Han, jeg, hans Søn og Datter
+Var det hele Compagnie, -
+Samtalens Blomst udfolded
+Sig broget, kjæk og fri.
+
+De Unge var Elever,
+Men deres Kald kun svagt.
+Det smertede den Gamle,
+Der stadigt tog i Agt
+At aabne deres Øine,
+Og i Samtalens Gang
+Han af og til saalunde
+Røbed sit Hjertes Trang:''
+
+---
+
+,,Er Kunsten lang og Livet kort,
+Saa bør vi vel itide ændse
+At faae en selvskabt Flor paa vort
+Tilmaalte Rum, med Skjel og Grændse.
+
+Skal Floren trives, maae vi først
+Faae Kundskabs Kilde til Udvikling,
+Hvis ei hver Blomst skal døe af Tørst
+Og staae kun som en vissen Stikling.
+
+Træd ikke med forvoven Hu
+Til nogen Kunstens Helligdomme;
+Med Hjertet tomt og knust vil Du
+Fortvivlet snart tilbage komme.
+
+Grib ikke med vanhellig Haand
+Den strenge Dolk, den muntre Maske;
+Dig brænder let, liig Fyrrespaan,
+Gudindens Alterild til Aske.
+
+Men har Du Kræfter, har Du Kald,
+Og klar Bevidsthed om din Evne,
+Træd sindig da i Kunstens Hal,
+Men vær beredt paa Kampens Stævne.
+
+Thi Kamp Dig venter, heed og haard,
+Med tusind Blændværk, tusind Smerter,
+Og Seiren tidt er uvis, naar
+Alt sluknes Jordelivets Kerter.
+
+Den, som vil høste Laurens Blad
+Ved Banens Meta, uden Anger,
+Maa være vaagen med sit Had
+Til Smigers Gift og Avinds Slanger.
+
+Naturen er den første Norm,
+Den er en Kunstners rette Amme;
+Har Kunsten naaet Naturens Form,
+Er begge To Eet og det Samme.
+
+Det Kunstige er Kunst dog ei,
+Men kun gjenfødt ved Idealet
+Det skuffe kan, liig Contrafei
+Af Mesterpenslen skabt og malet.
+
+Saa Sandhed som en Lov bør staae
+Og holde hver en Kunstner Stangen:
+Paa Retten Livet skues maa,
+Og ikke vise sig paa Vrangen.
+
+Den tredie Lov vel Anstand er,
+En Gratie, der huldt udbreder
+Sin Glands paa hvert et Punkt og hver
+En Vei, som Kunstens yndling træder.
+
+En Sjouer selv - en Trappetøs
+Kan jo med Gratie fremstilles,
+<w>Jens Olsen</w> vorde gracieus,
+Naar blot ved Lunets Magt de spilles.
+
+Thi Lunet er som Guldet, lagt
+Til Pryd om Perler og Demanter,
+Det hæver Viddets rige Pragt,
+Og skjuler alle stygge Kanter.
+
+Før man vil declamere, maa
+Man lære rigtig redt at tale;
+Og lære taaleligt at gaae,
+For man betræder høie Sale! -
+
+<w>Det</w> er omtrent det Apparat,
+Hvormed man tør til Templet stige.
+Er det istand hos Dig, Krabat?
+Er det paa rede Haand, min Pige?
+
+Nei! - Du, min Søn! - jeg seer det nok
+Trak ei Talentets Lod af Urnen,
+Din Fod ei passer til en Sok,
+Og heller ikke til Cothurnen.
+
+Gaaer Du med Kaarde og Barett
+Og troer Dig ret en vakker Ridder,
+Seer vi fast Jeppes, Arvs Portrait
+Kun, hvor Du gaaer og staaer og sidder.
+
+Og omvendt: naar Du os engang
+Vil male Bondeklods-Maneren,
+Saa kjeder Du, gjør Tiden lang,
+Thi altid skimtes Cavalieren.
+
+Du bærer kun et ydre Skjær,
+Men uden <w>indenfra</w> at lære
+At <w>ikke</w> være den, Du <w>er,</w>
+Men være den, Du <w>skulde være!</w> -
+
+Min Datter! Du gaaer ikke fri
+For min Kritik! - Er i din Tanke
+Du Dyveke og Eboli, -
+Jeg seer dog kun en lille Janke.
+
+Gjør Du Dig yndig, fiin, naiv,
+Og troer, det er Dig selv, Du spiller,
+Saa er det værre! - Uden Liv
+Du maler Metter og Perniller!
+
+I mægte ei at naae den Krands,
+Der smykker de gudsendte Præster;
+Vær glade, hvis med aaben Sands
+Ved Festen I kan staae som Gjæster!
+
+Dødsynd mod Kunsten er det, naar
+Man uden Kald, med laante Pjalter
+Dumdristig til dens Tempel gaaer
+Og skjæmmer Offret paa dets Alter!''
+
+---
+
+Her mumled Bertel: ,,Fatter
+Er en Hund paa en Fiol!
+Det var en deilig Præken!
+Og hvilken Prækestol!''
+De Unge stod forlegne,
+Med Smiil Madamen saae
+Til Limmer; men Pastoren
+Ei agtede derpaa:
+
+,,Nu siig mig, passer dette?
+Man skulde næsten troe,
+Det Hele kun var møntet
+Paa Eder begge To.
+Jeg aned længe Faren;
+Men jeg lod Sagen, gaae
+Sin skjæve Gang, indtil jeg
+Fik Grund til ret at slaae.
+
+Ei sandt, I selv maae føle,
+I har gjort galt Bestik?
+Beruste - ei begeistred -
+Ved den olympiske Drik?'' -
+Her Jørgen og Kristine hen
+I Fadrens Favntag gik;
+Den Ene fik et Haandtryk,
+Et Kys den Anden fik.
+
+,,Spil da for Folk i Aften, -
+Men, saasandt jeg er Præst,
+Nu har idag I Begge
+Eders sidste Rolle læst.
+I giftes skal - forstaaer sig -
+Og det om føie Tid;
+Kun ei, som her, saa løseligt,
+Men lidt mere solid.
+
+Et Hverv jeg byder Jørgen,
+Som just han passer til:
+Du synger godt og færdig
+Du er i Orgelspil.
+Og Dig, min lille Stine!
+Vil det nok være kjært
+At lære Smaaglutter Alt,
+Hvad selv Du har lært!
+
+,,Min Søster!'' vedblev Præsten
+Til Madame Sappi vendt,
+,,Har Du forglemt mig ganske?
+Og har jeg det fortjent?
+I langsommelige Tider
+Du ei en Tøddel skrev,
+Din Huusbonds Død - det Budskab
+Bragte dit sidste Brev.
+
+Tilgiv! en Stræng jeg rører,
+Som ei man burde slaae!
+End smerteligt den bæver, -
+Jeg tvivler ei derpaa.
+Bag disse malte Skjerme dog
+Du Trøst og Lise fandt -
+Og vistnok ogsaa Hæder!''
+Tilføied han galant.
+
+,,Men see! en <w>Vis</w> histoppe,
+Hvis ringe, svage Tolk
+Jeg er, og til Formynder
+Sig gjør for visse Folk,
+Et mægtigt Baand har tvundet,
+Der, som jeg haaber, nok
+Vil drage Dig fra Vandring
+Til Hjemmets Spinderok.
+
+Ja, det er nu en Gaade,
+Hvis Løsning jeg kun veed.
+En ret alvorlig Glæde
+Er dit Hjerte bered.
+Det undred mig slet ikke,
+Jeg feiled ikke, om
+Paa dette lille Stikord
+Selv Gaadens Løsning kom.''
+
+Knap havde Præsten udtalt,
+Før fra Coulissen ind
+Treen Doctor Ramm og Nina
+Med sin blussende Kind.
+Nu Moderen, lyksalig, blev
+Med Kjærtegn overøst; -
+Og der blev ret en Jubel,
+Da Gaaden saa var løst.
+
+,,Jeg har,'' tog Præsten Ordet,
+,,Nu snart vort Dagværk endt;
+Intriguen og dens Løsning vel
+Jeg være kan bekjendt.
+Eet staaer endnu tilbage,''
+Han sagde med et Blik,
+Der ikke just saa lempeligt
+Til Degnens Hjerte gik.
+
+,,Vort Regnskab, min Hr. Bertel!
+Opgjøres hjemme bedst.
+De følger os imorgen
+Paa Stines lille Hest.
+Endnu det er paatide
+I Glemsel Alt at slaae, -
+Fik Provsten Sligt at vide,
+Min gode Ven! hvad saa?''
+
+Han bød sin Søster Armen
+Og ilede afsted;
+Og Doctor Ramm og Nina
+De fulgte ogsaa med;
+I Jørgens Arm fik Stine lagt
+Sin Haand saa blød som Dunn;
+Bagefter listed Degnen,
+Slukøret, men luun. -
+
+- Som den eensomme Bauta
+Paa øde, stille Val,
+Nu paa den tomme Scene
+Og for den tomme Sal
+Stod Limmer her alene,
+Ubevægelig og tyst;
+Saa stred han ned til Lamperne
+Med Haanden paa sit Bryst.
+
+Med høicomisk Pathos
+Tre dybe Suk han drog
+Og declameerte Wallensteins<note>Fra <a poet="schiller">Schillers</a> drama <i>Wallenstein</i> (1800).</note>
+Berømte Monolog:
+,,Som en afløvet Stamme
+Jeg staaer nu her!'' - da brat
+Han følte, at to Hænder
+Ham greb om Skuldren fat.
+
+Og det var Blunt, den unge,
+Den lykkelige Svend.
+Han raabte: ,,Slæng nu Masten
+Og disse Pjalter hen!
+Tro ei, at her jeg taler
+Kaadmundet og i Ruus:
+Jeg et Asyl Dig byder
+I mit Hjerte og mit Huus!''
 </body>
 </poem>
 
+<poem id="winter2018081303">
+<head>
+    <title>Nissens Juleaften</title>
+    <firstline>Paa Mark, paa Eng og Bolig</firstline>
+    <source pages="289-352"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><center>1.</center></nonum>
 
+Paa Mark, paa Eng og Bolig
+Sneeteppet festligt laae,
+Som Stjernen kasted rolig
+Sit klare Øie paa.
+
+Saa vidt som Blikket naaede,
+Var iisklædt Havets Bryst;
+De trætte Fiskerbaade
+Laae slumrende paa Kyst.
+
+Paa Gaarden, hvor med Gammen
+Man holdt den glade Juul,
+Sad tvende Nisser sammen
+Ved deres Brød og Suul.
+
+Med røde, spidse Huer,
+Med lange, hvide Skjæg,
+Sad de ved Lampens Luer
+Bag lune Kjeldervæg.
+
+Den Ene, <w>Top</w>, var Gjæsten
+Men <w>Kop</w> var Vertens Navn;
+De vare Venner næsten
+Fra deres Fødestavn.
+
+Dog mens de sad ved Borde
+Og kjækt i Sulet beed,
+Tog Verten, <w>Kop</w>, tilorde,
+Og han var meget vred:
+
+,,Jeg bød Dig hid, min Broder
+Som jeg saa gjerne gjør;
+Men see de nye Moder, -
+Min Grød er uden Smør!
+
+Slet ikke vil jeg være
+Nu meer i dette Huus,
+Hvor knap saamegen Ære
+Jeg nyder, som en Muus.
+
+Da dette Huus sig reiste
+Med Tinde, Muur og Taarn,
+Og stolt fra Klinten kneiste,
+Hvor Intet saaes tilforn;
+
+Da Haven her blev dyrket,
+Fik Duft og Fuglesang,
+Af Grønt i Skov ommørket
+Det lette Raadyr sprang;
+
+Da var det mig en Glæde
+At see hiin Vikingæt
+Her stolt at tage Sæde
+Til fredelig Idroet.
+
+Jeg kom til denne Bolig,
+Som endnu her den staaer,
+Og vogtede den trolig
+I fire hundred Aar.
+
+Jeg skjærmede den baade
+For Røver, Tyv og Trold,
+Jeg vogted den for Vaade
+Af Ild og Fiendevold.
+
+Men nu - jeg troer jeg hader
+Nu baade Slægt og Huus;
+Jeg veed, naar jeg forlader
+Det, synker Alt i Gruus.
+
+Man har, det tør jeg sige,
+Mig haanet altfor slemt,
+Især den Kokkepige,
+Som Smørret har forglemt.
+
+Hun selv dog kunde trænge
+Til mig paa Livets Vei;
+Men hun kan vente længe
+Paa Hjælp, den kommer ei.
+
+Den Kokketøs! den Taske!
+Hvad bilder hun sig ind?
+Avlskarlen, Jens, den raske,
+Hun rækker tidt sin Kind.
+
+Hvor tidt har jeg da tysset
+Gaardhundens stærke Vov,
+Saasnart jeg hørte Kysset
+Og saae, Jomfruen sov!
+
+Nu kan hun længe sukke -
+Nu er jeg ond og vred;
+Nu kan hun Ilden slukke
+Paa Hjertets Arnested.
+
+For sidste Gang herinde
+Vi holde da vor Juul;
+Saa gaaer jeg bort at finde
+Et andet, bedre Skjul.
+
+Fra Stegerset mig bar jeg
+Med List et Julefad,
+Godt Øl i Kanden har jeg,
+Saa vi kan dog faae Mad.
+
+Men naar vi saa er mætte
+Og sidde ved vort Kruus,
+Jeg vil Dig lidt berette
+Om dette gamle Huus.
+
+Fra Spirets Knap og Fløie
+Til Kjeldrens mindste Vraa
+Jeg kjender Alting nøie, -
+Det kan Du vel forstaae.
+
+Jeg saae sig Huset hæve
+Og voxe som en Lind,
+De første Skyer svæve
+Hen over Taarn og Tind.
+
+Og Alt, hvad her paa Borgen
+I svunden Tid er skeet,
+I Glæden og i Sorgen,
+Det har mit Øie seet.
+
+Heel underligt det falder,
+At vandre Fjed for Fjed
+Igjennem mangen Alder
+Til Øieblikket ned.
+
+Men Tanken har jo Vinger,
+Dens Skridt er let og ungt,
+Som Lynet den sig svinger
+Fra fjerne Punkt til Punkt.
+
+Jeg kan Dig Alting melde,
+Snild er jeg som en Snog,
+Jeg kan Dig Alt fortælle
+Som læst op af en Bog.
+
+Følg med! jeg kunde male
+Af Billeder en Rad,
+Til Morgnens Haner gale,
+Og vi maae skilles ad;
+
+Men jeg vil ikke friste
+Din Taalmod altfor slemt;
+Det Første og det Sidste
+Du høre skal bestemt.''.
+
+Saa tog af Tudekanden
+En Slurk den lille Kop,
+Og skjød sig lidt fra Panden
+Den røde Hue op.
+
+---
+
+<nonum><center>2.</center></nonum>
+
+Da nys den stolte Frue,
+Margreth, fra Pragt og Magt
+Bag Roskilds Kirkebue
+Til evig Ro var bragt;
+
+Og han, den taabelige
+Erik fra Pommerland,
+Forspildte Folk og Rige
+Som en uvittig Mand;
+
+Sad Ridder Haek og raaded
+For Borgen her; men lidt
+Hans Guld og Gods ham baaded,
+Som det nu gaaer saa tidt.
+
+Man kaldte ham den Onde,
+Forhadt og flyet var han
+Af Herremand og Bonde, -
+Han var en ufæl Mand.
+
+Dog var ei ondt hans Hjerte,
+Men han var tung i Sind,
+Ham voldte næsten Smerte
+Hvert Aandedrag, hvert Trin.
+
+Hans Lader vare skumle
+Og altid vildt hans Blik;
+Man ofte hørte mumle
+Om Udaad, han begik.
+
+Mod Fattige og Rige
+Var han dog lige god,
+Og Ingen kunde sige,
+Hvori hans Synd bestod.
+
+Hvad ham dog bittrest krænked,
+Var, at hans unge Viv
+En Datter ham kun skjenked
+Og lod derved sit Liv,
+
+Saae han den spæde Unge
+I Vuggen qvik og glad,
+Hans Tanker, skumle, tunge,
+Sig nærmed fast til Had.
+
+Men jeg stod tidt og kigged
+Og vogted Barnets Fred,
+Naar Ammen sov og nikked,
+Og Lyset var brændt ned.
+
+Hun blev en deilig Pige,
+Blaaøiet, hvid og rød,
+Og saa var hun tillige
+Som Melken mild og sød.
+
+Hun kunde sagtens smile
+Som Vaaren klar og varm,
+Thi der var Fred og Hvile
+I Gydas unge Barm.
+
+Hun trøstigt lod den banke,
+Thi intet Øies Magt
+End havde hendes Tanke
+Af Barndoms Slummer vakt.
+
+Ved Vintertid med Silke
+Hun i sin Væv mon slaae
+De Blomster, Blade, Stilke,
+Dem hun om Somren saae.
+
+Hun syede og i Ramme
+Og sang saa yndigt, at
+Smaafuglene blev tamme
+I Havens Blomsterkrat.
+
+De ikke skye sig dulgte,
+Men fløi i Kamret ind;
+Og trofast hende fulgte
+Den tamme, hvide Hind.
+
+I Vaar og Sommer rygted
+Hun tro sit Urtebed;
+Og Dagene de flygted
+I stille Fryd og Fred.
+
+Men hendes Fader ikke
+Forstyrred hendes Ro;
+Kun mørknedes hans Blikke,
+Naar ret hun sang og loe.
+
+Da hun var blevet voxen,
+Han redte til en Fest;
+Han slagted Lammet, Oxen
+Og indbød mangen Gjæst.
+
+Der baget blev og brygget
+Og tappet Viin og Most,
+Og Riddersalen smykket
+Med Tjeld og Urtekost.
+
+Og Slægtens Unge, Gamle,
+Mand, Qvinde, Svend og Mø,
+Man saae sig her at samle
+Rundtom fra Land og Ø.
+
+Hr. Haek dem bød velkommen
+Med sølverblanke Kruus,
+Med Fløiten og med Trommen
+Blev de ført ind i Huus.
+
+Han dem ved Skiven bænked,
+Som det var ret tilpas,
+Men dog sin Datter skjenked
+Den første Hædersplads,
+
+Der sad de stolt og kneiste,
+Og Alt var Liv og Fryd;
+Da Ridder Haek sig reiste
+Og saa slog han til Lyd;
+
+Han sagde: ,,Venner kjære!
+Og al min gode Slægt!
+Jeg vil et Ord frembære,
+Som, haaber jeg, har Vægt.
+
+En Søn mig arver ikke,
+En Datter Gud kun gav;
+Engang mit Skjold skal ligge
+Uændset paa min Grav.
+
+At mildne Himlens Vrede,
+At rydde Syndens Rod,
+Skal hun nu for mig bede
+Og være mig til Bod.
+
+Imorgen hun indklædes
+Skal i en hellig Stand,
+Og hendes Pande vædes
+Med Reenheds Vievand.
+
+Jeg vil, at hun forsager
+Nu Skov og Eng og Mark,
+Og reen som Duen drager
+Til Klostrets sikkre Ark.
+
+Idag hun under Krandsen
+Med lystig Sang og Klang
+Tør træde end i Dandsen
+For allersidste Gang!''
+
+Den Faders strenge Villie
+Af Alle Bifald fik;
+Mens hun, den Offerlilie,
+Lod segne bly sit Blik.
+
+Men da hun atter nødte
+Sit Øie op med Tvang,
+Et andet Øie mødte
+Det paa sin stille Gang.
+
+Det Øie var vel dristigt,
+Mandhaftigt, klart og blaat,
+Og at det lindred listigt
+Jo klædte det saa godt.
+
+Dybt hendes Hjerte bæved,
+Men da hun Øiet bly
+Igjen fra Skjulet hæved,
+Det mødte hans paany.
+
+Et Smiil om Læben drog han,
+Og taus han sad en Stund;
+En Frugt fra Fadet tog han,
+Men ikke for sin Mund.
+
+Han ridsed med sin Daggert
+I Æblets røde Kind
+Saa listeligt og vakkert
+De stærke Runer ind.
+
+Og mens ved Gallabordet
+Der toned Sang og Spil,
+Og Alle førte Ordet,
+Men Ingen hørte til,
+
+Han over Dugen trilled
+Den Abild rund og rød,
+Just som han havde villet,
+Sank den i Gydas Skjød.
+
+Paa hendes Kind i Lue
+Stod tvende Roser da,
+Og det var let at skue,
+Hvor deres Ild kom fra.
+
+Ei længer Blikket trængte
+Sig frem som Øiekast;
+Nu ved hans Aasyn hængte
+Det inderligt og fast.
+
+Ud stormed Ungdomssværmen,
+Til Dands de fulgtes ad,
+Mens endnu trygt ved Bærmen
+De gamle Herrer sad.
+
+Og yndigt hvirvled Dandsen
+Til Fløite og Cymbal,
+Og broget snoedes Krandsen
+I Fakkelsmykte Sal.
+
+Snildt Ridder Rolf hin unge
+I Dands ved Gydas Haand
+Med Øie og med Tunge
+Fast knyttede sit Baand.
+
+Da svandt af hendes Tanke,
+At hun var Offerlam,
+Ømt som en Vedbendranke
+Den klynged sig til ham.
+
+Snart var de Timer svundne,
+Hver Fod, hvert Øie træt,
+Og snart laae Alle bundne
+I Blund og Drømmens Net.
+
+Da Solen næste Morgen
+Nattaagerne forjog,
+Drog langsomt ud fra Borgen
+Til Klosteret et Tog.
+
+Det Kloster laae bag Skoven,
+Hvor nu i Høst og Vaar
+Bag Harven og bag Ploven
+Den travle Bonde gaaer.
+
+Did red da Gyda liden
+Paa festligt smykte Hest;
+Og hende nær ved Siden
+Sig holdt den skjønne Gjæst.
+
+Fra aabne Kirkeporte
+Det Tog imøde gik
+De Klosterfruer sorte
+Med dybt nedslagne Blik.
+
+De ledte frem for Alter
+Den blege Brud, mens Klang
+Af Tuba, Harpe, Psalter
+Liig Virak op sig svang.
+
+Og mens de Kirkeklokker
+Som til Gravlægning slaaer,
+De klipped hendes Lokker,
+De raged hendes Haar.
+
+Og da hun saa var dækket
+Af Slør og Kofte sort,
+Da iled, som forstrækket,
+Den Venneskare bort,
+
+Liig vevre Fugl i Bure,
+Der vil af Længsel døe,
+Bag skumle Fængselsmure
+Sad nu den faure Mø.
+
+En sælsom Ild der brændte
+I hendes unge Bryst,
+At aldrig før hun kjendte
+Saa smertefuld en Lyst.
+
+Dog i den grimme Hule,
+Hvor nu hun var hensat,
+Hun maatte ængstlig skjule
+Sit Hjertes dyre Skat.
+
+Men hendes snevre Celle,
+Den eensomt stille Nat,
+De kunde nok fortælle,
+Hvordan det vel var fat.
+
+Een Villiekraft kun leved,
+Eet Billed klart, kun stod;
+Alt andet var oprevet
+Som Blomst med Top og Rod.
+
+Og ingen Hvile lagde
+Paa hendes Barm sin Haand,
+Og ingen Tanke sagde
+Et ,,Fred''! til hendes Aand.
+
+Saa gik der tvende Nætter,
+Saa gik der Dage to;
+Den tredie Nat hun sætter
+Sig for at fange Ro.
+
+Hun sneg sig ned i Haven.
+I Muren var en Dør,
+Som førte ud til Graven,
+Der vel var dyb, men tør.
+
+Hun gyste ei, og Mørket
+Ei voldte hende Skræk;
+Af Elskovslængsel styrket
+Hun kom til striden Bæk.
+
+Den sorte Nonnekofte
+Hun kiltred op ihast,
+Om trinde, hvide Hofte
+Hun knyttede den fast.
+
+Høit hendes Lænder baded
+Den dybe, stille Strøm,
+Men hun saa sikkert vaded,
+Som var det i en Drøm.
+
+Let gjennem Skov hun iled
+Og tænkte ei paa Sorg,
+Glad hendes Hjerte smiled,
+Da nær hun stod hans Borg.
+
+Her standser hun og vakler;
+Thi fra en Huulvei frem
+Kom der et Tog med Fakler
+Og Ridder Rolf med dem.
+
+Han sig i Bøilen hæved
+Og svang sig af sin Hest,
+Og mens hans Hjerte bæved,
+Han knæled for sin Gjæst.
+
+,,Det var min Agt og Villie
+Just nu at udfrie Dig;
+Og Du, min søde Lilie!
+Du kommer selv til mig?''
+
+Det sagde han med Liste,
+Det Halve kun var sandt;
+Thi altfor vel han vidste.
+Hvordan hun Veien fandt.
+
+Han i sin Arm opfanger
+Den blege Rosenknop,
+Og paa en vælig Ganger
+Han løfter hende op.
+
+Til Borgen ikke drog de,
+Den Ungersvend og Mø;
+Paa rappe Hove jog de
+Ned til den salte Sø.
+
+Her vented dem en Skude,
+Og endnu samme Nat
+De pløied Bølgen ude
+Mod Nord i Kattegat.
+
+Til Sydens fjerne Lande
+Han styrede sin Stavn,
+Ved Velsklands rige Strande
+Han satte ind i Havn.
+
+De hørte Romas Klokker
+Og stod ved Naadens Dør;
+Og da var Gydas Lokker
+Saa bølgende som for.
+
+Og her hun blev befriet
+For Løftets strenge Baand,
+Og deres Pagt indviet
+Nu ved en hellig Haand.
+
+Paa Sikilø han landed
+Og vandt sig Gods og Fæ,
+Og planted der blandt andet
+Sit ædle Stammetræ.
+
+Det groede og forgrened
+Sig stolt og stod ved Magt,
+Og Nordens Kraft forened
+Med Sydens Skjønhedspragt! -
+
+De troede sig saa snilde
+Og priste deres Mod;
+Men mig det var, der vilde,
+At Lykken blev dem god.
+
+Jeg aabned hende Døren,
+Jeg styred hendes Fod,
+Jeg døved alle Øren,
+Da Fængslet hun forlod.
+
+Jeg Ridderen desuden
+I Drøm gav Raad og Vink,
+Jeg hjalp at ruste Skuden -
+Jo, jeg var saare flink!
+
+Og jeg - jeg knytted Knuden
+I Pigens Reiseslør,
+Der Fristelsen holdt uden-
+for Hjertets aabne Dør! -
+
+Hiint Slag paa Fædrens Hjerte
+Faldt ikke meget tungt;
+Det glemte snart sin Smerte
+Og blev fast atter ungt.
+
+Han beiled og hjemførte
+En anden Hustru skjøn,
+Og Himlen ham bønhørte, -
+Hun fødte ham en Søn.
+
+---
+
+<nonum><center>3.</center></nonum>
+
+,,Nu springer jeg et Stykke,
+Et dygtigt Skridt v  taer;
+Ei sandt, det er en Lykke,
+At Tanken Vinger har?
+
+Det er til vore Dage'',
+Blev Verten Kop da ved,
+Og lod sig Øllet smage,
+,,Vi flytte nu vort Fjed.
+
+End staaer det gamle Huus, som
+Det stod fast første Dag;
+End hvisker Skovens Snus om
+Dets Gavle og dets Tag.
+
+End sees paa alle Sider
+Snørkler og Billedsiir,
+End Sommerskyen glider
+Hen over Borgens Spiir.
+
+Udvendig er den gammel,
+Forinden er den ny;
+Alt Huusgeraad og Skrammel
+Fra Fortid maatte flye.
+
+Af Hvælvinger og Buer
+Der findes nu kun faa;
+Nu har vi flere Stuer,
+Men de er ogsaa smaa.
+
+Een af de store Sale
+Staaer dog endnu ved Magt;
+En Mand, som godt kan male
+Har nu gjenfødt dens Pragt.
+
+Hvor før paa Sandsteensfliser
+Sig Støvlesaalen sled,
+Nu Brysslerteppet<note>En tæppe fra Bruxelles.</note> viser
+Et broget Blomsterbed.
+
+Alt noget Nyt bebuder!
+Solstraalen trænger frem
+Nu gjennem blanke Ruder,
+Hvor før kun var en Lem.
+
+Den, Gaarden nu tilhører,
+Er ei af Adelsslægt;
+Han i sit Skjold kun fører
+En Alen og en Vægt.
+
+Men han har mange Penge,
+Dertil en god Forstand,
+Derfor han ei kan trænge
+Til Sligt, den brave Mand.
+
+Naa, den, som nu regjerer,
+Er af sin Profession
+En Kjøbmand, en Grosserer,
+En moersom, sær Patron.
+
+Vist har han Nok af Penge,
+Og fleer endnu at faae
+Behøver han ei længe
+At speculere paa.
+
+De strømme til hans Kasse,
+Som Duer til et Slag,
+Naar Høg og Glente passe
+Paa dem fra Himlens Tag.
+
+Ei paa sin Skat han ruger,
+Nei, han er god og from,
+Hvor Sorg og Armod knuger,
+Til Trøst han ofte kom.
+
+En Hustru, tidligt mistet,
+Er ham et evigt Savn,
+Og aldrig var han fristet,
+At glemme hendes Navn.
+
+Til Trøst har han en Datter,
+En herlig Søn dertil,
+Dem begge han omfatter
+Med al sit Hjertes Ild.
+
+Af Indfald, underlige,
+Han ofte mange fik,
+Som lod hans Færd afvige
+Fra Verdens tamme Skik.
+
+Hans Datter, ung og deilig,
+Fik snart en Fæstemand;
+Det skeete saa beleilig,
+Som det vel tænkes kan.
+
+Engang af Theemaskinen
+Hun skoldet fik sit Bryst;
+En Doctor lindred Pinen
+Ved Balsam og ved Trøst.
+
+Da hendes Saar var læget,
+Og Smerten svundet hen,
+Han hende bad bevæget
+At lindre hans igjen.
+
+Hun fandt det ganske billigt,
+Og da saa Begge gik
+Til Faderen, velvilligt
+Af ham et Ja de fik.
+
+Men nu var Freden ude,
+For Sønnen, stakkels Fyr;
+Alt syntes ham bebude
+Et sælsomt Eventyr.
+
+Han holdt meest af at drukne
+Sig i et Lærdoms Hav;
+De Bøger gamle, mugne,
+Hans Tanke Næring gav.
+
+Dog var han ingen Stakkel;
+Nei tverimod, en Svend
+Med Kraft i Øiets Fakkel,
+I Arm, i Fod, i Lænd.
+
+Han kunde fægte, ride;
+I sidste Krig han gik
+Med Portepee ved Side
+Og holdt sig nok saa qvik;
+
+Saa da han Værget slængte,
+Var ham Kong Fredrik blid,
+Og i hans Knaphul hængte
+Et gyldent Hid-og-did.<note>* ,,Hid-og-did'' d. e. Kors, hvilket Ord Nissen ikke tør udtale.</note>
+
+Til sine tause Venner
+Paa Hylderne, for hvem
+Hans Længsel altid brænder,
+Han iled atter hjem.
+
+Dog var der og en anden
+Magnet, der drev ham saa;
+Men Hjertet meer end Panden
+Dens Kræfter virked paa.
+
+Det var to Øine milde,
+Det var et rigt Guldhaar,
+Der tidligt ham og silde
+Gjenkaldte Barndoms Vaar;
+
+Da han og hun de leged
+I Engens Blomsterfavn,
+Og dybt gjensidig præged
+I Hjertet hver sit Navn.
+
+Den søde Tanke groede,
+Som Rosenstokken groer,
+Men aldrig end betroede
+Han den til klare Ord.
+
+Saa Ingen han fortrolig
+Meddeelte, hvem hun var;
+Trofast i Hjertets Bolig
+Han hendes Billed bar.
+
+Thi han, som hist ved Isted
+Imod Kanoner gik,
+Fast al Courage misted
+For Fadrens Alvorsblik.
+
+Hvo kan hans Skræk nu male,
+Da ham engang i Løn
+Hans Fader holdt den Tale
+Høitideligt: ,,Min Søn!
+
+Din Søster er forlovet -
+Høist glædeligt! - Nu jeg
+Har sat mig i mit Hoved,
+At Du skal samme Vei.
+
+Du higer og Du søger,
+Som der i Digtet<note>Oehlenschlägers <xref poem="oehlenschlaeger1803a0,1-2"/>.</note> staaer,
+I nye og gamle Bøger
+Med Flid saa mange Aar.
+
+Men Livet er Dig lukket,
+Og det er dog en Bog,
+Hvis Frugt, tilbørligt plukket,
+Kan ogsaa gjøre klog.
+
+Og aldrig kan der vækkes
+I os en bedre Aand,
+End naar hiin Frugt os rækkes
+Af ædel Qvindehaand.
+
+Hør nu: I denne Sommer
+Fra Landet og fra Byen,
+En Sværm af Frøkner kommer,
+Saa kan Du holde Syn.
+
+Har Du saa seet og seiret
+Og vundet Seirens Krands,
+Skal her jeg snart faae feiret
+En Doppel-Allians.
+
+Jeg vil, at I skal vies
+Paa een og samme Dag;
+Dog ønsker jeg, der ties
+Endnu med denne Sag.
+
+Nu haaber jeg, Du lader
+Ei Lykken fra Dig gaae!''
+Her bukkede hans Fader
+Og gik og lod ham staae.
+
+Der stod han heelt betuttet;
+Thi ak! sit Nei, sit Ja,
+Naar det var fast besluttet,
+Veeg ei hans Fader fra.
+
+Men da nu Gjøgen kukked
+Til Nattergalens Slag,
+Stod næsten aldrig lukket
+Vor Port ved Nat og Dag.
+
+For hvem der komme vilde,
+Var Sagen nu saa let;
+Thi Mennisken er snilde,
+Naar Viddet bruges ret.
+
+De har nu mange Kunster,
+Som de har hittet paa,
+Med Kræfter og med Dunster,
+Som dem tilhaande gaae.
+
+Et Brev nu bliver skrevet
+Og sendt med Lynets Fart;
+Knap har man skikket Brevet,
+Saa faaer man det besvart.
+
+Knap nogen Vognhest stamper,
+Nu har de noget Nyt;
+Locomotivet damper
+Og flyver fyt-fyt-fyt!
+
+Nu spørger ingen Skipper
+Meer efter Veir og Vind,
+Trods Vind og Veir han slipper
+Ved Damp i Havnen ind.
+
+Saa kom en Flok da sammen
+Saavel tillands som -vands,
+For her blandt anden Gammen
+Maaskee at faae en Krands.
+
+Af Søstrens troe Veninder
+Fra Bal og Institut
+Paa Gaarden sig indfinder
+Heel mangen yndig Glut.
+
+Vel Fadrens Planer kjender
+De ei, men tidt i Løn
+Den stille Tanke vender
+Sig til hans vakkre Søn.
+
+Der saaes to Baronesser,
+Tre Frøkner fra et Stift,
+To fattige Comtesser,
+Som gjerne saae sig gift.
+
+De eied stort ei mere
+End Skjold med Ulv og Ørn!
+Saa var der ogsaa flere
+Guldfagre Kjøbmandsbørn.
+
+Grossereren, den gamle,
+Var ganske fiin og snu;
+Af Herrer lod han samle
+Kun faa Udsøgte nu.
+
+To Fættre og et lille
+Partie af Gubber saae
+Han nok; thi de ei vilde
+Hans Plan i Veien gaae.
+
+Han vidste, de ei nærmed
+Sig til hans Blomsterflor;
+For Agerhøns de sværmed,
+For Viin og L'hombrebord.
+
+Og det var dog forskrækkeligt.
+Saa heldigt Alting faldt;
+For Morskab var der klækkeligt
+Jo sørget overalt.
+
+Smaafuglene sødt lokked
+Dem ud hver Morgenstund,
+Spadserende de flokked
+Sig rundt i grønne Lund.
+
+Der Snepper var at lange
+Med Hagl i Skov og Mark,
+Og Fiske nok at fange
+I Strand, i Bæk, i Park.
+
+Saa læste man en Digter,
+Saa gjorde man tilhest
+Udflugter til Udsigter,
+Og tegned dem sombedst.
+
+Med alskens Mundgodt læsset
+De lange Borde var;
+Liig Grullers Sang i Græsset
+Gik da den Passiar.
+
+Der blev og musiceret,
+Der blev gjort deiligt Spil
+Paa Fløiter og Claveret,
+Imens de sang dertil.
+
+Var det en kjølig Aften,
+Fik man en lille Vals;
+Med Knald da Druesaften
+Sprang af Bouteillens Hals.
+
+Ved Intet Sønnen mangled,
+Han var jo ingen Nar;
+Han reed, han sang, han angled,
+Han spilte selv Billard.
+
+Han dandsed, han spadseerte,
+Han Gyngesnoren trak
+Og livligt converseerte, -
+Hvad vi vil kalde Snak.
+
+Men seent, naar Alle iilte
+Afsted: Sovvel! Godnat!
+Han qvæged sig og hvilte
+Ved Lærdoms rige Skat.
+
+Han havde just et Værelse,
+Hvor Ingen vilde boe,
+Saa til sin Aands Belærelse
+Han havde Fred og Ro.
+
+Hans Fader gik og speided
+Dag ud, Dag ind, og jeg
+Usynlig ham geleided
+Paa hver hans Sti og Vei;
+
+Men af Forliebthed intet,
+Slet intet Spor vi saae.
+Den Gamle skjemted, finted,
+Men fik ei Svar derpaa.
+
+Men hos de søde Piger
+Kom just Symptomet frem.
+Du leer nok, naar jeg siger,
+Jeg havde ondt af dem.
+
+Vel vare Nogle kolde,
+Og Andre stolte var,
+Som kunde Minen holde
+Bestandig lys og klar.
+
+Jeg, som var allevegne
+Og Alt forstaaer saa godt,
+Saae Andre rødme, blegne
+Med Øielaaget vaadt.
+
+Tidt, før den søde Slummer
+Dem slynged i sin Arm,
+Udgjød de deres Kummer
+I Kammerpigens Barm.
+
+Og før de Øiet lukked
+Og sank i Pudens Favn,
+Jeg hørte, hvor de sukked
+Eet og det samme Navn! -
+
+Alt Somren var paa Vandring
+Hen mod den travle Høst; -
+Ei sporedes Forandring
+I Ungersvendens Bryst.
+
+Da lod hans Fader hente
+Ham til sit Cabinet,
+Og disse Ord henvendte
+Til ham: ,,Nu er jeg træt!
+
+Her gaaer Du nu, omstraalet
+Af Skjønhed og Talent,
+Og lige langt fra Maalet. -
+Har man dog Mage kjendt?
+
+Tag ikke som en Daare
+Paa denne lette Sag!
+Nu vil jeg, Du skal kaare
+En Brud Dig næste Dag!
+
+Du kan, naar blot Du vilde!
+Faa Alt nu vel betænkt,
+Hvis ei,'' - Her taug han stille
+Og gloede grumme strengt.
+
+Naar disse Jordens Herrer
+Saa vigtige sig tee,
+Og Øinene opspærrer,
+Maa ret mit Hjerte lee;
+
+De troe, ved saadant Væsen
+At byde Alting Trods,
+Og tages dog ved Næsen
+Af Skjebnen og af os!
+
+Den unge Mand ved Bordet
+Stod paa sin vante Viis
+Og søgte efter Ordet,
+Mens Fædren tog en Priis.
+
+En Fasthed, ham ei egen,
+Jeg syntes dog at see;
+Han bukked, ei forlegen,
+Og sagde: ,,Det skal skee!''
+
+Han var ved Aftensbordet
+Fast overgiven vild,
+Drak Viin og førte Ordet
+Med usædvanlig Ild.
+
+Saa blev det Nat. Hver Kerte
+Var slukt og Alt i Ro;
+Kuns han og saa hans Smerte
+Sad vaagne Beggeto.
+
+Med Haanden under Kinden
+Saa tankefuld i Sind
+Han sad, mens Nattevinden
+I Kamret listed ind.
+
+Den Stue Ingen yndte,
+Der nødigt op man kom,
+Ved Aftentid man skyndte
+Sig helst derudenom.
+
+Thi fra det skumle Kammer
+I Taarnet hist mod Nord,
+Paastaaer man, høres Jammer,
+Som skeete der et Mord.
+
+Det kommer, som de sige,
+Deraf, at netop der
+To Brødre for en Pige
+Faldt i hinandens Sværd.
+
+Nu søger hele Nætter
+Hun der med Kost og Klud
+At faae de mørke Pletter
+Af Gulvet tvættet ud.
+
+Han havde aldrig seet det,
+Naar der ved Nat han sad,
+Og ofte nok beleet det,
+Naar man ham vared ad.
+
+Hans Tanke ikke trængte
+Sig om det skumle Punkt,
+Det Billed, som han tænkte,
+Var solklart, sundt, og ungt.
+
+Han ændsed ei det Mørke, -
+Nei, <w>det</w> var yndigt lyst,
+Hvad al hans Villies Styrke
+Nu samled i hans Bryst.
+
+Som naar en natlig Skipper
+Staaer taus ved Roer og Styr,
+Og ei af Øie t slipper
+Det fjerne Frelsens Fyr, -
+
+Som naar en Gransker stiger
+Til Tankens Dybde ned,
+Og ei et Haarsbred viger
+Fra rette Vei hans Fjed;
+
+Saa fast hans Sind omslynged
+Sin Længsel og sit Savn,
+Saa fast hans Hjerte klynged
+Sig til det ene Navn.
+
+Der klang det som den reneste
+Gudskabte Harmonie,
+Og dette Navn, det eneste,
+Var Text og Melodie.
+
+Da aabned ganske stille,
+Som ved en Luftnings Bør,
+I Væggen sig en lille,
+Tapetbedækket Dør.
+
+Man sjelden kun den rørte,
+Og den stod altid lukt,
+Til Vindeltrappen førte
+Den, som blev sjelden brugt.
+
+Der traadte - nei, der svæved
+En yndig Skabning ind.
+Ha, hvor hans Hjerte bæved!
+Hvor blegned ei hans Kind!
+
+Det var en deilig Qvinde,
+En Jomfru skjær og sød, -
+Ak ja, det var jo Hende, -
+Hans Alt i Liv og Død!
+
+Hun gik - nei, jeg maa sige,
+Hun svæved rank og let,
+Det blonde Haar, det rige,
+Knap fængslet af et Net.
+
+Den lange, folderige
+Natdragt, saa hvid som Snee,
+Var fæstet op kun lige,
+Saa Foden var at see.
+
+Fra Halsen over Barmen
+De brede Folder laae,
+Og Ærmet dækked Armen
+Ned til de Hænder smaa.
+
+De aabne Øine skued
+Ei ud, men indad vendt,
+Den Glands, hvormed de lued
+Kun for det Indre tændt.
+
+Han voved ei at røre
+Sit Øielaag, sin Mund;
+Han voved blot at høre, -
+At see han voved kun.
+
+Den unge Pige flytted
+Saa sagte frem sin Fod;
+Da var det, som hun lytted,
+Og saa hun stille stod.
+
+Han holdt sin Læbe lukket,
+Ei Lyd han aanded frem,
+Men hendes Navn han sukked
+Dybt i sit Hjertes Gjem.
+
+Hun lytted! - Med en Stemme
+Saa inderlig, saa kjær,
+Hun mæled, som ei hjemme
+Paa Jord hun havde meer:
+
+,,Han kaldte! - o, mit Hjerte
+Fornam hans kjære Røst!
+Nu al min Tvivl og Smerte
+Er vendt til Haab og Trøst.
+
+Nys var det i det Fjerne, -
+Nu klang det ganske nær!,
+Jeg <w>maatte</w> - o, hvor gjerne
+Jeg fulgte Kaldet her!''
+
+End voved ei at flytte
+Sin Fod den unge Mand;
+Fast stod han som hin Støtte
+Paa Borgebroens Rand,
+
+Og mens hans Tanke svimled,
+En Strøm af Elskovsord
+Frem i hans Hjerte vrimled
+Til riig og fyldig Flor.
+
+Da lytted hun, - om Kinden
+En Purpurlue flød;
+Og mildt som Nattevinden
+Hun hvisked: ,,Han er sød!
+
+Naar Sol staaer over Skove,
+Og skuer rundtomkring,
+Han vil med mig trolove
+Sig ved sin Moders Ring!''
+
+Paa Bordets Hjørne lagde
+Hun hen sin lille Haand; -
+Han gjorde, som hun sagde,
+Halv ubevidst, i Aand.
+
+I hendes Aasyn tegned
+Undseelse sig og Skræk,
+Og som et Slør der segned
+Om Pigens skjønne Træk.
+
+Et Skridt hun tog, hun dvæled,
+Som kyst, hun sammen foer,
+Saa smiled hun og mæled
+Et uforstaaeligt Ord.
+
+Den Haand, som Ringen smykked,
+Hun hæved langsomt kun,
+Og den mod Barmen trykked
+Med Smiil og til sin Mund.
+
+Men nu - som Gulvet brændte
+Hedt under hendes Fod, -
+Hun hurtigt bort sig vendte
+Og Kammeret forlod.
+
+Men han stod henrykt, svimmel,
+I salig Fryd fortabt;
+Han vidste, nu en Himmel
+Var for hans Fremtid skabt! -
+
+Den næste Morgen vækked
+Den unge Mand saa smaat
+Sin Fader, der forskrækket
+Betragted ham: ,,Hvad godt?''
+
+,,Jeg uden meer Forhaling
+Adlyde vil dit Bud;
+Idag paa din Befaling
+Jeg vælger mig en Brud;
+
+Ei blot for Himlens Aasyn
+I Hemmeligheds Gjem,
+Nei, i Alverdens Paasyn,
+Jeg drager hende frem.
+
+Jeg vil Dig derfor bede
+Til denne Festlighed
+At holde Alting rede,
+Som Du bedst kan og veed.
+
+See, alle dem, som bleve
+Herhid af Skjebnen ført,
+Og alle dem, her leve,
+Der bære Særk og Skjørt;
+
+Hver Qvinde her paa Stedet,
+Med tom, med spækket Pung,
+Unødt, uforberedet,
+Smuk, hæslig, gammel, ung, -
+
+Dem maa idag Du samle
+Mig i den store Sal!''
+Da smidskede den Gamle:
+,,Den Plan er ei saa gal!''
+
+Det er ei let at sige,
+Hvor ret i denne Sag
+Det Overordentlige
+Var i den Herres Smag.
+
+Og gjerne, naar han turde,
+Som nu ved dette her,
+Det Sære, det Absurde
+Han blanded i sin Færd.
+
+Ja, i det Mindste bar han
+Sig tidt heel sælsomt til;
+Det syntes fast som var han
+Skabt til Comoediespil.
+
+Nu hurtigt sammenkalde
+Ved Bud, han fik at gaae,
+Lod han i Salen Alle,
+Som gik med Skjorter paa.
+
+Fra Damerne, de pene,
+Til Kokkepigen rød,
+Til den idyllske Scene,
+En Malkeplads frembød;
+
+Paa hele Klassestigen
+Blev der slet Ingen glemt;
+Der kom selv Hønsepigen,
+Forundret og beklemt.
+
+Hvad her afhandles skulde,
+De aned vistnok ei;
+Jeg ellers troer, de Hulde
+Var løbet hver sin Vei.
+
+Den unge Mand i Salen
+Skarpt speidende stod der,
+Som Høvdingen paa Valen
+Foran en samlet Hær,
+
+Men, naar man rigtig nøie
+Saae til, man Vished vandt,
+Han søgte med sit Øie
+Een, som han ikke fandt.
+
+Hans Fader, høist urolig,
+Sig bøied nu i Løn
+Hen mod ham, og fortrolig
+Han hviskede: ,,Min Søn!
+
+Du ængstes, som det lader;
+Fat Mod! hvi dvæler Du?''
+Han fik til Svar: ,,Min Fader!
+Her mangler Een endnu!
+
+Dog nei, der seer jeg hende
+Hist i den lysblaae Dragt,
+Hun er den, jeg vil vinde, -
+Nu er Dig Alting sagt.''
+
+Med Tillids Smiil i Øiet,
+Med Haabet i sit Bryst,
+Forbindtligt fremad bøiet
+Han hævede sin Røst:
+
+,,Et Ønske af min Fader,
+Som mig Befaling er,
+Gjør, at jeg klart oplader
+Mit Hjertes Løndom her.
+
+Du skal en Brud Dig finde,
+Saa lød hans Alvorsord,
+En huld Ledsagerinde
+Paa denne dunkle Jord;
+
+Livsalig for dit Øie ,
+Et Lys for dine Fjed,
+En Trøst i Livets Møie,
+Ved trofast Kjærlighed.
+
+Han lod Dem sammenkalde;
+Og til mit Lykkespil
+I kjære Venner alle
+Nu Vidner være vil:
+
+Til den, hos hvem jeg finder
+Min salig Moders Ring.
+For evigt jeg mig binder,
+For dette Retterthing!''
+
+En ængstlig Stilhed hviled
+I hver en Vraa og Krog;
+Mens Nogle haanligt smiled,
+Hos Andre Hjertet slog.
+
+Da traadte Een af Stimlen
+Liig Stjernen af en Sky,
+Som midt i Urtevrimlen
+Violen frisk og bly.
+
+Og saa - jeg vil ei bande -
+Et Raab der hørtes: ,,<w>Hun!</w>
+Forpagterens Johanne?''
+Lød det fra Alles Mund.
+
+Hun gik saa sær forlegen
+Med Rosenblus paa Kind,
+Saa lempeligt, som Veien
+Gik op ad Fjeldetind.
+
+Hun nærmed bly og sagte
+Sig til sin Barndoms Ven,
+Undseelig da hun rakte
+Sin lille Haand ham hen:
+
+,,Imorges paa min Finger
+Det Smykke her jeg saae;
+Jeg kan - hvordan den Ring er
+Mig bragt - slet ei forstaae.
+
+Som Barn jeg saae jo ofte
+Dens glødende Rubin;
+Jeg husker nok, Du lovte,
+Den skulde vorde min.
+
+Og nu -'' Her Kinden blegned,
+Som før var luevarm,
+Afmægtig fast hun segned,
+Men i en trofast Arm.
+
+,,Du, som har Ringen baaret,
+Dig vier jeg mit Liv;
+Dig har jeg mig udkaaret, -
+Siig, vorder Du min Viv?''
+
+Hun svared ei, men lagde
+Sin Høire taus i hans;
+Et Ja ham henrykt sagde
+Jo hendes Øines Glands.
+
+Nu Fadren proklameerte
+Den Pagt for god og ret;
+Man Parret gratuleerte
+Omringende dem tæt.
+
+Den Gamle fra sit Sæde
+Paa Scenen skued ned;
+Fast ellevild af Glæde
+Han sine Hænder gned.
+
+Saa skiltes Sværmen atter;
+Men da Hver kom til Sit,
+En hidtil kuet Latter
+Udtømte sig jo frit.
+
+Dog var det ikke Alle,
+Der tog sig for at lee;
+Hos Nogle var der Galde,
+Hos Andre Sorg at see;
+
+Her Smerte - hisset Kulde
+Var over Hjertet bragt.
+At trøste dem, de Hulde,
+Stod ei dog i min Magt.
+
+Men snart de dog kom stikkende
+Med Bud fra deres Hjem:
+,,Mama var sengeliggende, -
+Og Fatters Hoste slem; -
+
+Saa det var høist nødvendigt
+At de kom hjem igjen, -
+Saa var de bedt indstændigt
+Besøge Den og Den; -
+
+De maatte see at komme
+Somsnarest nu afsted!'' -
+Snart Salene var tomme
+Og de smaa Kamre med!
+
+Men nu ved Aarets Ende
+Fik begge unge Par
+Først rigtig lært at kjende,
+Hvor god dem Himlen var.
+
+Ei mindre Fryd var Fatters,
+Han gik som i en Dands
+Ved Sønnens og sin Datters
+Qvadrupelallians.
+
+Og det maa jeg vel sande,
+At lystigt til det gik,
+Da han fik sin Johanne
+Og hun sin Doctor fik.
+
+Vor Gaard blev stærkt beleiret
+Af Gjæster uden Tal,
+Og her et Bryllup feiret,
+Som længe spørges skal.
+
+Slet Ingen aned rigtig
+Den sære Handels Spind;
+Jeg kunde gjort mig vigtig,
+Men holdt mig dog i Skind.
+
+Der er jo mange Traade,
+Som man ei røre tør,
+Der er jo mangen Gaade,
+Som man ei løse bør!''
+
+---
+
+<nonum><center>4.</center></nonum>
+
+,,Kom med, min Ven! fra Taget
+Vi skue kan derned,
+Hvor lystigt Julelaget
+Er leiret nu i Fred.
+
+Men derfor skulde ikke -
+Det mener Du vel med? -
+De glemme gamle Skikke
+Og gammel Trofasthed.
+
+De juble der og qvæde,
+Men snart, som Du skal see,
+Vil mange Øine græde,
+Der tindre nu og lee.
+
+Ad denne Vindeltrappe
+I Pillen'', vedblev <w>Kop</w>,
+,,Paa vore Fødder rappe
+Vi snart kan naae derop.
+
+Men knuse Fadet vil jeg,
+Som Varsel her det staae!
+Jeg helmer ikke, til jeg
+En bedre Hævn kan faae.''
+
+Han sparked det med Foden,
+Da brast den fede Grød,
+Af gule Smør da Floden
+Ud over Fadet flød. '
+
+<w>Kop</w> slog de bitte Hænder
+Forbavset mod sit Bryst,
+Og raabte: ,,Ak, nu ender
+Dog Alt med Fryd og Lyst!
+
+Den lille Kokkepige
+Har Smørret ikke glemt;
+Jeg seer, at det sig lige
+Paa Bunden havde gjemt.
+
+Det var ei for at drille
+Mig, eller drive Spot,
+Dit fromme Sind, Du Lille!
+Betaler jeg Dig godt.
+
+Huusjomfruen skal sove
+Og Caro holde Mund,
+Naar Du og Jens vil vove
+At tales ved en Stund.
+
+Huusherrens Skrin og Punge
+Skal aldrig blive lænds;
+Og hun, den stakkels Unge,
+Skal saamæn faae sin Jens!''
+</body>
+</poem>
 
 </workbody>
 </kalliopework>
