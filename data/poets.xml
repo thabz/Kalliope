@@ -596,12 +596,12 @@
   <name>
     <firstname>Nikolaus</firstname>
     <lastname>Lenau</lastname>
-    <fullname>Nikolaus Franz Niembsch, Edler von Strehlenau</fullname>
+    <fullname>Nikolaus Franz Niembsch Edler von Strehlenau</fullname>
   </name>
   <period>
     <born>
       <date>1802-08-13</date>
-      <place>Csatád, Ungarn</place>
+      <place>Csatád, Ungarn (nu Lenauheim, Rumænien)</place>
     </born>
     <dead>
       <date>1850-08-22</date>
@@ -703,6 +703,12 @@
   <works>1899,1902,1904,1905,1906,1907,1908,1909,1910,1912,1923,1923s,andre</works>
 </person>
 
+<person id="folkeviserno" country="no" lang="no" type="collection">
+  <name>
+    <firstname>Folkeviser</firstname>
+  </name>
+  <works>folke</works>
+</person>
 
 <!-- Danskere -->
 
@@ -3509,12 +3515,14 @@
   <period>
     <born>
       <date>1836-05-08</date>
+      <place>Ringsted</place>
     </born>
     <dead>
       <date>1901-01-01</date>
+      <place>København</place>
     </dead>
   </period>
-  <works>1875,1879,1882,1898,andre</works>
+  <works>1863,1868,1875,1879,1882,1886,1898,andre</works>
 </person>
 
 <person id="schmidt" country="dk" lang="da" type="poet">
@@ -3735,6 +3743,26 @@
   </period>
   <works>1883,1884,1892,andre</works>
 </person>
+
+<person id="fonss" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Otto</firstname>
+    <lastname>Fønss</lastname>
+    <fullname>Otto Carl Christian Fønss</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1854-09-28</date>
+      <place>Middelfart</place>
+    </born>
+    <dead>
+      <date>1922-12-22</date>
+      <place>Odense</place>
+    </dead>
+  </period>
+  <works>1885,1894,1900</works>
+</person>
+
 
 <person id="heibergjly" country="dk" lang="da" type="poet">
   <name>

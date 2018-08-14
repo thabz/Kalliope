@@ -164,7 +164,7 @@ export default class extends React.Component<TextComponentProps> {
   componentDidUpdate() {
     if (typeof location !== undefined) {
       const hash = location.hash;
-      if (hash != null) {
+      if (hash != null && hash.length > 0) {
         location.href = hash;
       }
     }
@@ -388,7 +388,7 @@ export default class extends React.Component<TextComponentProps> {
 
     return (
       <div>
-        <FootnoteContainer>
+        <FootnoteContainer key={text.id}>
           <Head
             headTitle={headTitle}
             ogTitle={ogTitle}
@@ -415,6 +415,7 @@ export default class extends React.Component<TextComponentProps> {
                     lang={lang}
                     isProse={text.is_prose}
                   />
+
                   {body}
                   <style jsx>{`
                     .text-content {
