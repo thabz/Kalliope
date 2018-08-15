@@ -231,13 +231,19 @@ export default class TextContent extends React.Component {
       case 'metrik':
         return this.handle_metrik(node.textContent);
       case 'hr':
+        const double = node.getAttribute('class') || 'solid';
         const width = Math.min(node.getAttribute('width') * 10, 100);
+        const borderTop =
+          double === 'double' ? '3px double black' : '1px solid black';
         return (
           <hr
             key={this.keySeq++}
-            size="1"
-            color="black"
-            style={{ color: 'black', width: `${width}%` }}
+            style={{
+              border: 0,
+              borderTop,
+              color: 'black',
+              width: `${width}%`,
+            }}
           />
         );
       case 'column':
