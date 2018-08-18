@@ -45,18 +45,17 @@ export class NavPaging extends React.Component<NavPagingType> {
       document.body.classList != null
     ) {
       // eslint-disable-next-line no-undef
-      document.addEventListener('keyup', this.onKeyUp, true);
+      document.addEventListener('keyup', this.onKeyUp);
     }
   }
 
   componentWillUnmount() {
     // eslint-disable-next-line no-undef
-    document.removeEventListener('keyup', this.onKeyUp, true);
+    document.removeEventListener('keyup', this.onKeyUp);
   }
 
   onKeyUp(e: KeyboardEvent) {
     const { prev, next } = this.props;
-    // TODO: Don't page when in input field
     if (e.keyCode === 37) {
       // Left cursor key
       if (prev != null && window && !window.searchFieldHasFocus) {
