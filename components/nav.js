@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Head from './head';
-import { Link } from '../routes';
+import { Link, Router } from '../routes';
 import PoetName from './poetname';
 import WorkName from './workname';
 import TextName from './textname';
@@ -30,8 +30,8 @@ type NavPagingType = {
   },
 };
 
-export class NavPaging extends React.Component {
-  props: NavPagingType;
+export class NavPaging extends React.Component<NavPagingType> {
+  onKeyUp: KeyboardEvent => void;
 
   constructor(props: NavPagingType) {
     super(props);
@@ -45,13 +45,13 @@ export class NavPaging extends React.Component {
       document.body.classList != null
     ) {
       // eslint-disable-next-line no-undef
-      document.addEventListener('keyup', this.onKeyUp, false);
+      document.addEventListener('keyup', this.onKeyUp, true);
     }
   }
 
   componentWillUnmount() {
     // eslint-disable-next-line no-undef
-    document.removeEventListener('keyup', this.onKeyUp, false);
+    document.removeEventListener('keyup', this.onKeyUp, true);
   }
 
   onKeyUp(e: KeyboardEvent) {
@@ -59,8 +59,16 @@ export class NavPaging extends React.Component {
     // TODO: Don't page when in input field
     if (e.keyCode === 37) {
       // Left cursor key
+      if (prev != null && window && !window.searchFieldHasFocus) {
+        Router.pushRoute(prev.url);
+        e.preventDefault();
+      }
     } else if (e.keyCode === 39) {
       // Right cursor key
+      if (next != null && window && !window.searchFieldHasFocus) {
+        Router.pushRoute(next.url);
+        e.preventDefault();
+      }
     }
   }
 
