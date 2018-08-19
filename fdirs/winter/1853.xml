@@ -11,7 +11,7 @@
     <pictures>
         <picture src="1853-p1.jpg">Titelbladet til <i>Nye Digtninger</i> (1853) lyder ,,Nye Digtninger, / af / Christian Winther. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt i Bianco Lunos Bogtrykkeri. / 1853.''</picture>
     </pictures>
-    <source facsimile="115408015352_color" facsimile-pages-num="318" facsimile-pages-offset="10">Christian Winther: <i>Nye Digtninger</i>, C.A. Reitzel, Kbh., 1853.</source>
+    <source facsimile="115408015352_color" facsimile-pages-num="318" facsimile-pages-offset="16">Christian Winther: <i>Nye Digtninger</i>, C.A. Reitzel, Kbh., 1853.</source>
 </workhead>
 <workbody>
 
@@ -105,6 +105,7 @@ Er Hjertesuk og Smil og Sange!
    <notes>
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
+   <source pages="6-7"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -147,6 +148,7 @@ Naar bankende min Tinding brænder.
    <toctitle>En Hytte</toctitle>
    <indextitle>En Hytte</indextitle>
    <firstline>Her gad jeg boe og bygge</firstline>
+   <source pages="8-10"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -203,6 +205,7 @@ Let svæve fra min Barm.
    <toctitle>Til Storken</toctitle>
    <indextitle>Til Storken</indextitle>
    <firstline>Saa drager du ad fremmed Land</firstline>
+   <source pages="11-13"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -277,6 +280,7 @@ Du har Guds Fred i Følge!
    <toctitle>Vaaren</toctitle>
    <indextitle>Vaaren</indextitle>
    <firstline>Nu har sit lyse Banner</firstline>
+   <source pages="14-16"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -330,9 +334,8 @@ Hvis det kan Hvile faae.
 <poem id="winther2002120105">
 <head>
    <title>Til en Snegl</title>
-   <toctitle>Til en Snegl</toctitle>
-   <indextitle>Til en Snegl</indextitle>
    <firstline>Du være vil min Læremester</firstline>
+   <source pages="17-18"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -424,6 +427,7 @@ Der klinger Hornet - Afsted!
    <toctitle>Et Genre-Billede</toctitle>
    <indextitle>Et Genre-Billede</indextitle>
    <firstline>Det sused i Lindenes glindsende Blad</firstline>
+    <source pages="21-23"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -601,11 +605,10 @@ Kun med en Landsoldat.
 
 <poem id="winther2002120107">
 <head>
-   <title>Den hvide Hind</title>
-   <toctitle>Den hvide Hind</toctitle>
-   <indextitle>Den hvide Hind</indextitle>
-   <firstline>Skjøn Jomfru vinked med Haanden hvid</firstline>
-   <quality>korrektur1</quality>
+    <title>Den hvide Hind</title>
+    <firstline>Skjøn Jomfru vinked med Haanden hvid</firstline>
+    <source pages="29-32"/>
+    <quality>korrektur1</quality>
 </head>
 <body>
 Skjøn Jomfru vinked med Haanden hvid,
@@ -913,6 +916,7 @@ I Evigheden smelted sammen.
    <toctitle>Dandsen ved Glumsø</toctitle>
    <indextitle>Dandsen ved Glumsø</indextitle>
    <firstline>Hver Aftenstund, naar Faar og Ko</firstline>
+    <source pages="42-48"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -1199,6 +1203,7 @@ Det skjærmes huldt af en Faders Hænder!
    <toctitle>Tre om Een</toctitle>
    <indextitle>Tre om Een</indextitle>
    <firstline>Der roede tre Matroser fra Skib imod Strand</firstline>
+    <source pages="54-56"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -1584,6 +1589,7 @@ Arve skal i Dag <w>min</w> Søn!''
    <notes>
       <note>Motivet som er taget fra folkesagnene findes også i Winthers <xref poem="winther2002021791"/> og Oehlenschlägers <xref poem="oehlenschlaeger2001052803"/>.</note>
    </notes>
+    <source pages="69-78"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -1824,9 +1830,9 @@ I Mangel af den anden!''
    <title>Den rige Frøken</title>
    <firstline>Det var just en St. Hansdag</firstline>
    <notes>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-      <note>Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.</note>
+      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
+    <source pages="79-96"/>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -2281,76 +2287,76 @@ Afbrød ham Hiin, ,,begynder jo
 Bagfra?'' - ,,Det er nu saa min Viis!''
 Loe <w>Reinke</w> fiint og tog en Priis.
 ,,Det var da Nøglen: seer du vel,
-------
-En Tjener bor med al sin Sjæl
+En Tjener bør med al sin Sjæl
 Udspeide hver sin Herres Lyst,
 For deraf selv at tage Høst.
 Heel snart det heller ei undgik
-Mit ovede, mit skarpe Blik,
-At der var mangen P o rt og Dør,
-Der voldte Ro b e l ondt Humeur,
+Mit øvede, mit skarpe Blik,
+At der var mangen Port og Dør,
+Der voldte =Nobel= ondt Humeur,
 Fordi hver Laas var stærk og god
 Og ikke let sig dirke lod.
-Da tog jeg Hammer, Tang og Ful
+Da tog jeg Hammer, Tang og Fiil
 Og smedede med List og Iil
-En Nogle, du! som passed godt
+En Nøgle, du! som passed godt
 Til Kiste, Kasse, Huus og Slot.
-Jeg gav ham den ei selv, - jo P y t!
-Den bleo bestandig noget Nyt.
+Jeg gav ham den ei selv, - jo Pyt!
+Den blev bestandig noget Nyt.
 Jeg førte ham da rundt til hver
-En Sk a t, som vakte hans Begjerr;
+En Skat, som vakte hans Begrær;
 Jeg lukked op for mangt et Hul
 Og fyldte Posen ham med Guld.
-Da jeg dernæst heel oste saae
+Da jeg dernæst heel ofte saae
 Min gode Herre staae og gaae
 Med Suk og høist forelsket Blik,
 Hvor Tigerinden stod og gik;
 Og da jeg vidste paa en Prik,
-N aar hendes Mand, den raae Krabat,
-Just stoved om i Skov og K rat;
-Fik jeg ad hendes Løndor smukt
+Naar hendes Mand, den raae Krabat,
+Just støved om i Skov og Krat;
+Fik jeg ad hendes Løndør smukt
 Min gode Nobel indelukt;
-Og han, den Stakkel! mærked ei.
+Og han, den Stakkel! mærked ei,
 Han vandred paa en alfar Vei! -
-Min snilde Nogle tidt jeg stak
+Min snilde Nøgle tidt jeg stak
 I Døren til det Løngemak,
 Hvor selv de alterstørste Mænd
 Paa deres Fod maa vandre hen.
 Da stod jeg hos, mens han var paa,
 Og korted Tiden ham som saa
 Med mangen Witz og snurrig Snak,
-Saa fast hans Vug af Latter sprak.
-Ved mine Loker, ved min San g
-Alt havde sin foronflte Gang.
-Slig t er saa vigtigt, veed du vel,
+Saa fast hans Bug af Latter sprak.
+Ved mine Løier, ved min Sang
+Alt havde sin forønskte Gang.
+Sligt er saa vigtigt, veed du vel,
 For Folkets Lykke, Statens Held!
 Da var det, at den Herre god
-En gylden Nogle smede lod
-Og selv heistegenhændig der
+En gylden Nøgle smede lod
+Og selv høistegenhændig der
 Den fæsted, hvor du nu den seer.
-Den er jo ret beqvem, den Sag ,
+Den er jo ret beqvem, den Sag,
 Thi naar jeg vender Een min Bag,
 Kan han dog see den med Behag! -
-- Det første K o rs, min Bringes P ryd,
+- Det første Kors, min Bringes Pryd,
 Det skylder jeg en anden Dyd.
-Du veed, at Ro b e l gjør sig til
-Af stor Forstand paa Dands og Sp il.
-Forvist! det rober ædel San d s!
+Du veed, at =Nobel= gjør sig til
+Af stor Forstand paa Dands og Spil.
+Forvist! det røber ædel Sands!
 Blandt alle Kunster, troer jeg, Dands
-Tilkjendes bor den første Krands.
+Tilkjendes bør den første Krands.
 Hvad er vel Tankens, Tonens Kunst?
 Ak, idel Snak og Taagedunst!
-N u, Meiselhug? og Pensleri?
-Alt det der intet Liv er i!
-N ei, D ands, det veed m an, hvad det er,
+Nu, Meiselhug? og Pensleri?
+Alt =det= der intet Liv er i!
+Nei, Dands, det veed man, hvad det er,
 Den lever dog, det seer Enhver.
 Den kommer og den gaaer sin Vei,
 Og staaer ei som et Einerlei!
-D e r tales klart med Skulder, Arm,
+=Der= tales klart med Skulder, Arm,
 Med Albu, Nakke, Bag og Barm,
-Med R y g, med Mave, Laar og Knæ,
+Med Ryg, med Mave, Laar og Knæ,
 Saa det forstaaes af hvert et Fæ!
 Vor Dandsemester, Bukken, kan
+=== 104 ===
 Nok kaldes Landets største Mand,
 Maaskee selv'paa den hele Jord.
 Han har os Dandsen bragt i Flor!
@@ -2583,8 +2589,11 @@ Men G r i m b a r t rystede sit Skind
 Og vandred, tankefuld i Sind,
 Hjemad, hvor han med megen Iil
 Fik sat det Horte udi Stiil.
-Andet Fragment.
-,, ^ o r, '' sagde GrimbarL, da igjen
+
+
+<nonum><center><b>Andet Fragment.</b></center></nonum>
+
+,,Hør,'' sagde Grimbart, da igjen
 Han sad en Aften hos sin Ven
 Om Vintren i den lune Vraa,
 Mens R e in e k e paa Ryggen laae
