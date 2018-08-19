@@ -98,6 +98,8 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   onCrossClick: (e: Event) => void;
   onSubmit: (e: Event) => void;
   onKeyDown: (e: KeyboardEvent) => void;
+  onFocus: () => void;
+  onBlur: () => void;
 
   constructor(props: TabsProps) {
     super(props);
@@ -107,12 +109,14 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
     this.onCrossClick = this.onCrossClick.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     this.onKeyDown = this.onKeyDown.bind(this);
+    this.onBlur = this.onBlur.bind(this);
+    this.onFocus = this.onFocus.bind(this);
   }
 
   hideSearchField() {
     this.searchField.value = '';
     if (window) {
-      window.removeEventListener('keydown', this.onKeyDown);
+      window.removeEventListener('keydown', this.onKeyDown, false);
     }
     this.setState({ showSearchField: false });
   }
@@ -120,7 +124,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   componentDidUpdate() {
     if (this.state.showSearchField) {
       if (window) {
-        window.addEventListener('keydown', this.onKeyDown);
+        window.addEventListener('keydown', this.onKeyDown, false);
       }
       if (document && document.activeElement !== this.searchField) {
         this.searchField.focus();
@@ -169,9 +173,18 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
     e.preventDefault();
   }
 
+  onFocus() {
+    window && (window.searchFieldHasFocus = true);
+  }
+
+  onBlur() {
+    window && (window.searchFieldHasFocus = false);
+  }
+
   onKeyDown(e: KeyboardEvent) {
     if (e.keyCode === 27) {
       this.hideSearchField();
+      this.onBlur();
       e.preventDefault();
     }
   }
@@ -209,6 +222,8 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
               ref={domElement => {
                 this.searchField = domElement;
               }}
+              onFocus={this.onFocus}
+              onBlur={this.onBlur}
               title={placeholder}
               defaultValue={query}
               className="search-field"
