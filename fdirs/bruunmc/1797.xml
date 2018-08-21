@@ -922,7 +922,7 @@ Ana»
     <subtitle>Efterlignet</subtitle>
     <firstline>Du om franske Krigen skriver</firstline>
     <source pages="45-46"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Du om franske Krigen skriver,
@@ -954,7 +954,7 @@ Og taalmodig Lænken bær.
     <!-- Til Majus] Til Mains iflg. errata --> 
     <firstline>Hvo er du, som hvis stjerneklare Øje</firstline>
     <source pages="47"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hvo er du, hvis stjerneklare Øje<!-- hvis] som hvis iflg errata -->
@@ -965,12 +965,12 @@ Fra hvis friske Kinders Hvælving straaler
 Gratiernes Vaar?
 I din Haand krystalne Ambraskaaler?
 Roser om dit Lokkehaar? -
-Ha, jeg kjender dig, o <w>Mai!</w> du svæved'
+Ha, jeg kjender dig, <w>o Mai!</w> du svæved'
 Mild til Kloden ned.
 Harpens Strænge ved din Aande bæved',
 Skjaldens Aand blev Salighed.
 Dog - tilgiv mig - ingen Hymner stige,
-Aarers yngste Søn!
+Aarets yngste Søn!
 O, thi seer jeg ikke hist min Pige,
 Bliid, som du, men dobbelt skiøn?
 </body>
@@ -985,7 +985,7 @@ Bliid, som du, men dobbelt skiøn?
     </subtitle>
     <firstline>Roser alt krandse den skyggende Hække</firstline>
     <source pages="48-49"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Roser alt krandse den skyggende Hække;
@@ -1030,12 +1030,13 @@ Alkjærlige Moder, vi drikke din Skaal.
         <note>Cf. <xref bibel="bibelhoej02,8-14"/> og <xref bibel="bibelhoej08,1-3"/>.</note>
     </notes>
     <source pages="50-53"/>
-    <quality>korrektur1,kilde,side</quality>
+    <keywords>herder</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Det var hans Røst, som klang!
 Jeg seer ham deroppe
-Paa Bjerget at hoppe.
+Paa Bjerget at hoppe,
 Over Højenes Toppe,
 Med Raadyrets lette Gang.
 Rask som den flyvende Hjort
@@ -1065,7 +1066,7 @@ O, kom, min fromme Due,
 Fra Klipperedet ned!
 O kom, min Due,
 Og lad dig skue
-I al din Yndighed. . .
+I al din Yndighed.
 Som Davids Harpeklang, din Røst sig hæve!
 Din Barm, lig Sarons spæde Rose, bæve!
 Som Morgenrøden deilig, frem du svæve!
@@ -1151,7 +1152,7 @@ Held mig, at jeg en Pige er!
     <subtitle>(Ikke oversat)</subtitle>
     <firstline>Før saa let mit Hjerte slog</firstline>
     <source pages="56-57"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Før saa let mit Hjerte slog
@@ -1163,7 +1164,7 @@ Aldrig faaer jeg den igjen.
 
 Nu, halv sørgende, halv glad
 Jeg omkring urolig vanker,
-Ømsker mig, og veed ej hvad,
+Ønsker mig, og veed ej hvad,
 Svarer ofte hen i Tanker.
 Bror og Syster spørge mig:
 Beste, men hvad fattes dig?
@@ -1190,7 +1191,8 @@ Og hvad vil du have meer?
     <subtitle>Frit efter Gotter</subtitle>
     <firstline>Jeg kiendte ei fordum til Kjerligheds Magt</firstline>
     <source pages="58"/>
-    <quality>korrektur1,kilde,side</quality>
+    <!-- TODO: Find Gotters original. -->
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg kiendte ei fordum til Kjerligheds Magt:
@@ -1201,22 +1203,22 @@ I Laura og blev dog ei Kjerligheds Træl.
 Hun sagde mig spøgfuldt: Du vove kun ei,
 At følge mig hist paa min eensomme Vei.
 Jeg voved' det dog, og hun optog det vel.
-    Da dæmrede <w>Morgenen</w> frem i min Sjæl.
+    Da dæmrede <w>Morgenen</w> frem i min Sjel.
 
 Blant skyggende Hækker hun vankede nys;
 Jeg mødte den Hulde; jeg bad om et Kys:
 Hun hang i mit Favntag; o Held mig, o Held!
-    Nu straaler først <w>Dag</w> i min vaagnede Sjæl.
+    Nu straaler først <w>Dag</w> i min vaagnede Sjel.
 </body>
 </poem>
 
 <poem id="bruunmc2018062326">
 <head>
     <title>Vise</title>
-    <subtitle>Til Mel. Hvor herligt, Drødre gik det til</subtitle>
+    <subtitle>Til Mel. Hvor herligt, Brødre gik det til</subtitle>
     <firstline>Hvor prægtigt dog ei alting gik</firstline>
     <source pages="59"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hvor prægtigt dog ei alting gik,
@@ -1227,7 +1229,7 @@ Og Gjeld og Gigt og Kjerlighed
 Og Krig og Jura kom derved
 Til vores stakkels Klode.
 
-At faae Regres, for sildigt er;
+At saae Regres, for sildigt er;
 Trods Stævning vilde hun ei her
 For Hof- og Stads-Ret møde.
 Men Evadøttre, troer mig kun,
@@ -1243,7 +1245,7 @@ Undgjelde hendes Brøde.
     <subtitle>Theokrits tredie Idylle, oversat</subtitle>
     <firstline>Omvanker her paa Bjerget, mine Gjeder</firstline>
     <source pages="60-64"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Omvanker her paa Bjerget, mine Gjeder,
@@ -1263,14 +1265,14 @@ See dog, ti Æbler bringer jeg dig her,
 Just af det Trae, hvoraf du bød mig plukke.
 I Morgen skal jeg bringe mange fleer. -
 O, see dog hid, o, hør dog mine Sukke!
-O, see, hvor haabløs Kummer nager mig! -,
+O, see, hvor haabløs Kummer nager mig! -
 Ak kunde jeg kun til en liden Bie mig gjøre:
 Snart, Amaryllis, skulde du mig høre
 At surre glad i Grotten ind til dig,
 Fremsmuttende blant høje Bregner
 Og Epheuløv, hvis Skygge dig omhegner.
 Nu først jeg kjender Amor! Den Barbar!
-Han vist Løvindebryster diet har.
+Han vist Løvindebryster diet har,
 Og skumlest Lund hans Barndomsvugge var.
 Den Grusomme! Hans Ild min Kraft fortærer! -
 O du, som tryller henrykt Syn!
@@ -1294,13 +1296,13 @@ At ses min Qval, thi, grusomme Hyrdinde,
 Du hader, o, du hader mig.
 Ej vilde Valmu'bladet lyde;
 Paa huule Haand det taust ugunstigt faldt.<note>* Man tog et Blad, lagde det paa Haanden og slog derpaa. Gav Bladet Skrald, saa troede man sig lykkelig i sin Kjerlighed.</note>
-Og hun, som af et Sold kan Skjebner tyde.
+Og hun, som af et Sold kan Skjebner tyde,
 <w>Agræo</w> sagde mig jo alt;
 ''Din varme Kjerlighed jeg seer,
 ''Men og, at kold din Elskte dig beleer.,, -
 En hvidlig Gjed jeg end til dig bevarer;
 To favre Dæggekid ved Siden gaae.
-Bruunøjet Galathea ikke sparer
+Bruunøjet <w>Galathea</w> ikke sparer
 Paa Kjertegn for af mig den Gjed at faae;
 Og siden du min Ømhed kun besvarer
 Med kold ufølsom Spot, hun skal den faae. -
@@ -1348,7 +1350,7 @@ O, sødt, som Dands og Leeg, vil dette Syn dig glæde.
     </notes>
     <source pages="65-69"/>
     <keywords>tasso</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <nonum><center><w>87de Stanze.</w></center></nonum>
@@ -1466,7 +1468,7 @@ Og har af Syne tabt forfulgte Daadyrs Spor.
     <subtitle>Bions anden Idylle, af det Græske</subtitle>
     <firstline>En Dag i skyggefulde Lund</firstline>
     <source pages="70-71"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 En Dag i skyggefulde Lund
@@ -1504,10 +1506,10 @@ Og sagdes ''Knøs, lad du kun af
     <subtitle>Bions tredie Idylle, af det Græske</subtitle>
     <firstline>Nys jeg i Drømme Venus saae</firstline>
     <source pages="72-73"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Nys jeg i Drømme Venus saae
+Nys jeg i Drømme <w>Venus</w> saae
 I Guddomsynde for mig staae;
 Hun ved sin skjønne Haand <w>Cupido</w> førte;
 Skalkagtig slog han sine Øjne ned.
@@ -1522,7 +1524,7 @@ Han vilde noget lært af mig,
 De Hyrdeviiser, jeg at synge plejer,
 Hvorledes <w>Pan</w> opfundet Fløjten har,
 <w>Minerva</w> Hyrdernes Skalmejer,
-<w>Apoll</w> den kjelentonende Kirhar.
+<w>Apoll</w> den kjelentonende Kithar.
 Om dette alt jeg trolig underviser
 Den skjælmske Dreng, dog ikke synderlig
 Han hørte efter mig,
