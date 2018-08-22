@@ -31,6 +31,7 @@ const markFileDirty = (...filenames) => {
     if (filenames[i] != null) {
       //console.log('Marking file dirty: ' + filenames[i]);
       delete old_sha[filenames[i]];
+      unmodified_files.delete(filenames[i]);
     }
   }
 };
