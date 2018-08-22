@@ -29,6 +29,7 @@ if (force_reload) {
 const markFileDirty = (...filenames) => {
   for (let i = 0; i < filenames.length; i++) {
     if (filenames[i] != null) {
+      console.log('Marking file dirty: ' + filenames[i]);
       delete old_sha[filenames[i]];
     }
   }

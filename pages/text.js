@@ -285,6 +285,14 @@ export default class extends React.Component<TextComponentProps> {
       );
     });
 
+    const variants = text.variants.map((ref, i) => {
+      return (
+        <div key={i} style={{ marginBottom: '10px' }}>
+          <TextContent contentHtml={ref} lang={lang} />
+        </div>
+      );
+    });
+
     let renderedKeywords = null;
     if (text.keywords.length > 0) {
       const list = text.keywords.map(k => {
@@ -310,9 +318,27 @@ export default class extends React.Component<TextComponentProps> {
       );
     }
 
+    let renderedVariants = null;
+    if (variants.length > 0) {
+      renderedVariants = (
+        <div className="variants">
+          <p>Varianter af dette digt:</p>
+          {variants}
+          <style jsx>{`
+            @media print {
+              .variants {
+                display: none;
+              }
+            }
+          `}</style>
+        </div>
+      );
+    }
+
     let sidebar = null;
     if (
       refs.length > 0 ||
+      variants.length > 0 ||
       text.has_footnotes ||
       text.pictures.length > 0 ||
       notes.length > 0 ||
@@ -324,6 +350,7 @@ export default class extends React.Component<TextComponentProps> {
           {renderedNotes}
           <FootnoteList />
           {renderedRefs}
+          {renderedVariants}
           {renderedKeywords}
           {renderedPictures}
         </div>
