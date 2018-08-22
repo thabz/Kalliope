@@ -673,6 +673,11 @@ const resolve_variants = poemId => {
   if (variantIds == null || variantIds.length == 0) {
     return null;
   }
+  let result = resolve_variants_cache[poemId];
+  if (result != null) {
+    return result;
+  }
+
   // Deep dive through variants-graph
   let seen_variants = new Set();
   const recurse = variantId => {
@@ -687,11 +692,9 @@ const resolve_variants = poemId => {
     }
   };
   recurse(poemId);
-  // Delete self
-  seen_variants.delete(poemId);
 
   // Cache and return sorted poemIds
-  const result = Array.from(seen_variants).sort((a, b) => {
+  result = Array.from(seen_variants).sort((a, b) => {
     const metaA = collected.texts.get(a);
     const metaB = collected.texts.get(b);
     const workA = collected.works.get(metaA.poetId + '/' + metaA.workId);
@@ -791,7 +794,10 @@ const handle_text = (
     ];
   });
 
-  const variantsArray = (resolve_variants(textId) || []).map(id => {
+  const variantsArray = (resolve_variants(textId) || []).filter(id => {
+    // Skip self
+    return id !== textId;
+  }).map(id => {
     const meta = collected.texts.get(id);
     const poet = poetName(collected.poets.get(meta.poetId));
     const work = workName(
@@ -804,8 +810,6 @@ const handle_text = (
       ],
     ];
   });
-  
-
 
   const foldername = Paths.textFolder(textId);
   const prev_next = resolve_prev_next(textId);
@@ -1678,6 +1682,12 @@ const build_poet_lines_json = collected => {
       }
       doc.find('//poem').forEach(part => {
         const textId = part.attr('id').value();
+        // Skip digte som ikke er ældste variant
+        const variants = resolve_variants(textId);
+        if (variants != null && variants.length > 0 && variants[0] != textId) {
+          return;
+        }
+
         const head = part.get('head');
         const firstline = extractTitle(head, 'firstline');
         const title = extractTitle(head, 'title') || firstline;
