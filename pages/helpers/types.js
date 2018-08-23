@@ -147,6 +147,7 @@ export type Text = {
   subtitles?: Array<TextContentType>,
   notes: Array<NoteItem>,
   refs: Array<TextContentType>,
+  variants: Array<TextContentType>,
   pictures: Array<PictureItem>,
   content_html: TextContentType,
   content_lang: TextLang,
