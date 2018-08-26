@@ -16,6 +16,7 @@
 'folg/følg',
 'fslge/følge',
 'ststt/støtt',
+'forstjellig/forskjellig',
 'Skjod/Skjød',
 'Skjon/Skjøn',
 'skjon/skjøn',
