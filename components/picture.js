@@ -98,6 +98,9 @@ export default class Picture extends React.Component<PictureProps> {
           }
           figure {
             margin: 0;
+            filter: drop-shadow(3px 3px 6px #888);
+          }
+          picture {
           }
           figcaption {
             margin-top: 8px;
@@ -108,9 +111,19 @@ export default class Picture extends React.Component<PictureProps> {
           }
           img {
             border: 0;
+            clip-path: polygon(
+              20% 0%,
+              80% 0%,
+              100% 20%,
+              100% 80%,
+              80% 100%,
+              20% 100%,
+              0% 80%,
+              0% 20%
+            );
           }
           img.with-drop-shadow {
-            box-shadow: 4px 4px 12px #888;
+            /*box-shadow: 4px 4px 12px #888;*/
           }
           img.clickable {
             cursor: pointer;
