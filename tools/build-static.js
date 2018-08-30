@@ -794,22 +794,24 @@ const handle_text = (
     ];
   });
 
-  const variantsArray = (resolve_variants(textId) || []).filter(id => {
-    // Skip self
-    return id !== textId;
-  }).map(id => {
-    const meta = collected.texts.get(id);
-    const poet = poetName(collected.poets.get(meta.poetId));
-    const work = workName(
-      collected.works.get(meta.poetId + '/' + meta.workId)
-    );
-    return [
-      [
-        `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`,
-        { html: true },
-      ],
-    ];
-  });
+  const variantsArray = (resolve_variants(textId) || [])
+    .filter(id => {
+      // Skip self
+      return id !== textId;
+    })
+    .map(id => {
+      const meta = collected.texts.get(id);
+      const poet = poetName(collected.poets.get(meta.poetId));
+      const work = workName(
+        collected.works.get(meta.poetId + '/' + meta.workId)
+      );
+      return [
+        [
+          `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`,
+          { html: true },
+        ],
+      ];
+    });
 
   const foldername = Paths.textFolder(textId);
   const prev_next = resolve_prev_next(textId);
@@ -1476,6 +1478,60 @@ const build_person_or_keyword_refs = collected => {
   collected.person_or_keyword_refs = person_or_keyword_refs;
 };
 
+// Rekursiv function som bruges til at bygge værkers indholdsfortegnelse,
+// men også del-indholdstegnelser til de linkbare sektioner som har en id.
+const build_section_toc = section => {
+  let poems = [];
+  let proses = [];
+  let toc = [];
+
+  section.childNodes().forEach(part => {
+    const partName = part.name();
+    if (partName === 'poem') {
+      const textId = part.attr('id').value();
+      const head = part.get('head');
+      const firstline = extractTitle(head, 'firstline');
+      const title = extractTitle(head, 'title') || firstline;
+      const toctitle = extractTitle(head, 'toctitle') || title;
+      toc.push({
+        type: 'text',
+        id: textId,
+        title: htmlToXml(toctitle.title),
+        prefix: replaceDashes(toctitle.prefix),
+      });
+    } else if (partName === 'section') {
+      const subtoc = build_section_toc(part.get('content'));
+      const head = part.get('head');
+      const level = parseInt(safeGetAttr(part, 'level') || '1');
+      const sectionId = safeGetAttr(part, 'id');
+      const title = extractTitle(head, 'title');
+      const toctitle = extractTitle(head, 'toctitle') || title;
+      toc.push({
+        type: 'section',
+        id: sectionId,
+        level: level,
+        title: htmlToXml(toctitle.title),
+        content: subtoc,
+      });
+    } else if (partName === 'prose') {
+      const textId = part.attr('id').value();
+      const head = part.get('head');
+      const title = extractTitle(head, 'title');
+      const toctitle = extractTitle(head, 'toctitle') || title;
+      if (toctitle == null) {
+        throw `${textId} mangler title og toctitle i ${poetId}/${workId}.xml`;
+      }
+      toc.push({
+        type: 'text',
+        id: textId,
+        title: htmlToXml(toctitle.title),
+        prefix: toctitle.prefix,
+      });
+    }
+  });
+  return toc;
+};
+
 const build_works_toc = collected => {
   // Returns {toc, notes, pictures}
   const extract_work_data = work => {
@@ -1483,56 +1539,6 @@ const build_works_toc = collected => {
     const poetId = work.attr('author').value();
     const workId = work.attr('id').value();
     let lines = [];
-
-    const handle_section = section => {
-      let poems = [];
-      let proses = [];
-      let toc = [];
-
-      section.childNodes().forEach(part => {
-        const partName = part.name();
-        if (partName === 'poem') {
-          const textId = part.attr('id').value();
-          const head = part.get('head');
-          const firstline = extractTitle(head, 'firstline');
-          const title = extractTitle(head, 'title') || firstline;
-          const toctitle = extractTitle(head, 'toctitle') || title;
-          toc.push({
-            type: 'text',
-            id: textId,
-            title: htmlToXml(toctitle.title),
-            prefix: replaceDashes(toctitle.prefix),
-          });
-        } else if (partName === 'section') {
-          const subtoc = handle_section(part.get('content'));
-          const head = part.get('head');
-          const level = parseInt(safeGetAttr(part, 'level') || '1');
-          const title = extractTitle(head, 'title');
-          const toctitle = extractTitle(head, 'toctitle') || title;
-          toc.push({
-            type: 'section',
-            level: level,
-            title: htmlToXml(toctitle.title),
-            content: subtoc,
-          });
-        } else if (partName === 'prose') {
-          const textId = part.attr('id').value();
-          const head = part.get('head');
-          const title = extractTitle(head, 'title');
-          const toctitle = extractTitle(head, 'toctitle') || title;
-          if (toctitle == null) {
-            throw `${textId} mangler title og toctitle i ${poetId}/${workId}.xml`;
-          }
-          toc.push({
-            type: 'text',
-            id: textId,
-            title: htmlToXml(toctitle.title),
-            prefix: toctitle.prefix,
-          });
-        }
-      });
-      return toc;
-    };
 
     const workhead = work.get('workhead');
     const notes = get_notes(workhead);
@@ -1553,7 +1559,7 @@ const build_works_toc = collected => {
       };
     }
 
-    const toc = handle_section(workbody);
+    const toc = build_section_toc(workbody);
     return { lines, toc, notes, pictures };
   };
 
