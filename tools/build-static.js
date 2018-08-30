@@ -709,7 +709,7 @@ const handle_text = (
   poetId,
   workId,
   text,
-  isPoetry,
+  textType, // poem, prose, section
   resolve_prev_next,
   section_titles
 ) => {
@@ -723,7 +723,6 @@ const handle_text = (
 
   const textId = text.attr('id').value();
   const head = text.get('head');
-  const body = text.get('body');
   const firstline = extractTitle(head, 'firstline');
   let title = extractTitle(head, 'title') || firstline; // {title: xxx, prefix: xxx}
   let indextitle = extractTitle(head, 'indextitle') || title;
@@ -868,20 +867,33 @@ const handle_text = (
     // Dette er ikke nødvendigvis en fejl.
     console.log(`fdirs/${poetId}/${workId}: teksten ${textId} mangler source.`);
   }
-
-  const rawBody = body
-    .toString()
-    .replace('<body>', '')
-    .replace('</body>', '');
-  const content_html = htmlToXml(
-    rawBody,
-    collected,
-    isPoetry,
-    isBible,
-    isFolkevise
-  );
-  const has_footnotes =
-    rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
+  let content_html = null;
+  let has_footnotes = false;
+  let toc = null;
+  if (textType === 'section') {
+    // A linkable section with id
+    if (title == null) {
+      throw `fdirs/${poetId}/${workId}: section ${textId} mangler title.`;
+    }
+    const content = text.get('content');
+    toc = build_section_toc(content);
+  } else {
+    // prose or poem
+    const body = text.get('body');
+    const rawBody = body
+      .toString()
+      .replace('<body>', '')
+      .replace('</body>', '');
+    content_html = htmlToXml(
+      rawBody,
+      collected,
+      textType === 'poem',
+      isBible,
+      isFolkevise
+    );
+    has_footnotes =
+      rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
+  }
   mkdirp.sync(foldername);
   const text_data = {
     poet,
@@ -896,6 +908,7 @@ const handle_text = (
       linktitle: replaceDashes(linktitle.title),
       subtitles,
       is_prose: text.name() === 'prose',
+      text_type: textType,
       has_footnotes,
       notes: get_notes(head),
       source,
@@ -910,6 +923,7 @@ const handle_text = (
       ),
       content_lang: poet.lang,
       content_html,
+      toc,
     },
   };
   console.log(Paths.textPath(textId));
@@ -992,13 +1006,14 @@ const handle_work = work => {
           poetId,
           workId,
           part,
-          true,
+          partName,
           resolve_prev_next,
           section_titles
         );
       } else if (partName === 'section') {
         const head = part.get('head');
         const level = parseInt(safeGetAttr(head, 'level') || '1');
+        const sectionId = safeGetAttr(part, 'id');
         const toctitle =
           extractTitle(head, 'toctitle') || extractTitle(head, 'title');
         const subtoc = handle_section(part.get('content'), resolve_prev_next, [
@@ -1007,10 +1022,21 @@ const handle_work = work => {
         ]);
         toc.push({
           type: 'section',
+          id: sectionId,
           level: level,
           title: htmlToXml(toctitle.title),
           content: subtoc,
         });
+        if (sectionId != null) {
+          handle_text(
+            poetId,
+            workId,
+            part,
+            partName,
+            resolve_prev_next,
+            section_titles
+          );
+        }
       } else if (partName === 'prose') {
         const textId = part.attr('id').value();
         const head = part.get('head');
@@ -1029,7 +1055,7 @@ const handle_work = work => {
           poetId,
           workId,
           part,
-          false,
+          partName,
           resolve_prev_next,
           section_titles
         );
