@@ -70,6 +70,7 @@ export type Work = {
   title: string,
   year?: string,
   has_content: boolean,
+  status: 'complete' | 'incomplete',
 };
 
 export type SortReturn = number; //1 | 0 | -1;
@@ -144,6 +145,8 @@ export type Text = {
   title: string,
   title_prefix?: string,
   linktitle: string,
+  text_type: 'prose' | 'poem' | 'section',
+  toc?: Array<TocItem>,
   subtitles?: Array<TextContentType>,
   notes: Array<NoteItem>,
   refs: Array<TextContentType>,

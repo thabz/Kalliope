@@ -21,6 +21,7 @@ import type {
 type TocProps = {
   toc: Array<TocItem>,
   lang: Lang,
+  indent?: number,
 };
 export default class extends React.Component<TocProps> {
   render() {
@@ -75,13 +76,13 @@ export default class extends React.Component<TocProps> {
       );
     };
 
-    const { toc, lang } = this.props;
+    const { toc, lang, indent } = this.props;
     if (toc == null || toc.length === 0) {
       return null;
     } else {
       return (
         <div>
-          {renderItems(toc)}
+          {renderItems(toc, indent || 0)}
           <style jsx>{`
             :global(table.toc) {
               margin-left: 30px;

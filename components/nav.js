@@ -60,14 +60,14 @@ export class NavPaging extends React.Component<NavPagingType> {
       // Left cursor key
       if (prev != null && window && !window.searchFieldHasFocus) {
         Router.pushRoute(prev.url);
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
         e.preventDefault();
       }
     } else if (e.keyCode === 39) {
       // Right cursor key
       if (next != null && window && !window.searchFieldHasFocus) {
         Router.pushRoute(next.url);
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
         e.preventDefault();
       }
     }
