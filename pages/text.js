@@ -358,8 +358,8 @@ export default class extends React.Component<TextComponentProps> {
       );
     }
     let body = null;
-    if (text.text_type === 'section') {
-      body = <TOC toc={text.toc} />;
+    if (text.text_type === 'section' && text.toc != null) {
+      body = <TOC toc={text.toc} lang={lang} indent={1} />;
     } else {
       let highlightInterval: { from: number, to: number };
       if (highlight != null) {
@@ -384,13 +384,15 @@ export default class extends React.Component<TextComponentProps> {
         highlight: highlightInterval,
       };
       body = (
-        <TextContent
-          contentHtml={text.content_html}
-          contentLang={text.content_lang}
-          lang={lang}
-          options={options}
-          keyPrefix={text.id}
-        />
+        <div className="text-content">
+          <TextContent
+            contentHtml={text.content_html}
+            contentLang={text.content_lang}
+            lang={lang}
+            options={options}
+            keyPrefix={text.id}
+          />
+        </div>
       );
     }
 
@@ -442,21 +444,23 @@ export default class extends React.Component<TextComponentProps> {
             <PoetTabs lang={lang} poet={poet} selected="works" />
             <SidebarSplit sidebar={sidebar}>
               <div>
-                <article className="text-content">
-                  <TextHeading
-                    text={text}
-                    lang={lang}
-                    isProse={text.is_prose}
-                  />
-                  {body}
+                <article>
+                  <div className="text-content">
+                    <TextHeading
+                      text={text}
+                      lang={lang}
+                      isProse={text.is_prose}
+                    />
+                  </div>
+                  <div>{body}</div>
                   <style jsx>{`
-                    .text-content {
+                    :global(.text-content) {
                       font-family: 'Palatino', 'Georgia', serif;
                       line-height: 1.5;
                       font-size: 1.15em;
                       display: inline-block;
                     }
-                    .text-content sc {
+                    :global(.text-content) :global(sc) {
                       font-variant: small-caps;
                     }
 

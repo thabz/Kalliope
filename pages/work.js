@@ -105,7 +105,7 @@ export default class extends React.Component<WorkProps> {
     }
     const table =
       toc.length > 0 ? (
-        <TOC toc={toc} />
+        <TOC toc={toc} lang={lang} />
       ) : (
         <div className="nodata">
           <i>Kalliope indeholder endnu ingen tekster fra dette værk.</i>
@@ -144,48 +144,6 @@ export default class extends React.Component<WorkProps> {
               </SubHeading>
               {table}
               <style jsx>{`
-                :global(table.toc) {
-                  margin-left: 30px;
-                  margin-bottom: 10px;
-                  cell-spacing: 0;
-                  cell-padding: 0;
-                  border-collapse: collapse;
-                }
-                :global(table.toc.outer) {
-                  margin-left: 0;
-                }
-                :global(.toc) :global(h3.level-1) {
-                  font-weight: lighter;
-                  font-size: 18px;
-                  padding: 0;
-                  margin: 0;
-                  margin-top: 10px;
-                }
-                :global(.toc) :global(h3.level-2) {
-                  font-weight: lighter;
-                  font-size: 16px;
-                  padding: 0;
-                  margin: 0;
-                  margin-top: 0px;
-                }
-                :global(.toc) :global(h3.level-3) {
-                  font-weight: lighter;
-                  font-size: 14px;
-                  padding: 0;
-                  margin: 0;
-                  margin-top: 0px;
-                }
-                :global(.toc) :global(td.num) {
-                  text-align: right;
-                  color: ${CommonData.lightLinkColor};
-                  white-space: nowrap;
-                  padding-right: 5px;
-                  vertical-align: top;
-                }
-                :global(.toc) :global(td) {
-                  line-height: 1.7;
-                  padding: 0;
-                }
                 :global(.nodata) {
                   padding: 30px 0;
                   font-weight: lighter;
