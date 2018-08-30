@@ -10,6 +10,7 @@ import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
+import TOC from '../components/toc.js';
 import PoetName, { poetNameString } from '../components/poetname.js';
 import { workTitleString } from '../components/workname.js';
 import TextName, {
@@ -356,37 +357,42 @@ export default class extends React.Component<TextComponentProps> {
         </div>
       );
     }
-    let highlightInterval: { from: number, to: number };
-    if (highlight != null) {
-      let m = null;
-      let from: number = -1,
-        to: number = -1;
-      if ((m = highlight.match(/(\d+)-(\d+)/))) {
-        from = parseInt(m[1]);
-        to = parseInt(m[2]);
-      } else if ((m = highlight.match(/(\d+)ff/))) {
-        from = parseInt(m[1]);
-        to = Number.MAX_VALUE;
-      } else if ((m = highlight.match(/(\d+)/))) {
-        from = parseInt(m[1]);
-        to = parseInt(m[1]);
+    let body = null;
+    if (text.text_type === 'section') {
+      body = <TOC toc={text.toc} />;
+    } else {
+      let highlightInterval: { from: number, to: number };
+      if (highlight != null) {
+        let m = null;
+        let from: number = -1,
+          to: number = -1;
+        if ((m = highlight.match(/(\d+)-(\d+)/))) {
+          from = parseInt(m[1]);
+          to = parseInt(m[2]);
+        } else if ((m = highlight.match(/(\d+)ff/))) {
+          from = parseInt(m[1]);
+          to = Number.MAX_VALUE;
+        } else if ((m = highlight.match(/(\d+)/))) {
+          from = parseInt(m[1]);
+          to = parseInt(m[1]);
+        }
+        highlightInterval = { from, to };
       }
-      highlightInterval = { from, to };
+      const options = {
+        isBible: poet.id === 'bibel',
+        isPoetry: poet.id !== 'bibel' && !text.is_prose,
+        highlight: highlightInterval,
+      };
+      body = (
+        <TextContent
+          contentHtml={text.content_html}
+          contentLang={text.content_lang}
+          lang={lang}
+          options={options}
+          keyPrefix={text.id}
+        />
+      );
     }
-    const options = {
-      isBible: poet.id === 'bibel',
-      isPoetry: poet.id !== 'bibel' && !text.is_prose,
-      highlight: highlightInterval,
-    };
-    const body = (
-      <TextContent
-        contentHtml={text.content_html}
-        contentLang={text.content_lang}
-        lang={lang}
-        options={options}
-        keyPrefix={text.id}
-      />
-    );
 
     const title = <PoetName poet={poet} includePeriod />;
 
@@ -442,7 +448,6 @@ export default class extends React.Component<TextComponentProps> {
                     lang={lang}
                     isProse={text.is_prose}
                   />
-
                   {body}
                   <style jsx>{`
                     .text-content {
