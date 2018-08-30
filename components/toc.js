@@ -27,10 +27,10 @@ export default class extends React.Component<TocProps> {
     const renderItems = (items: Array<TocItem>, indent: number = 0) => {
       const rows = items.map((item, i) => {
         const { id, title, type, prefix, level } = item;
-        if (type === 'section' && item.content != null) {
+        if (type === 'section') {
           const renderedTitle = <TextContent contentHtml={title} lang={lang} />;
           let shownTitle = null;
-          if (id != null) {
+          if (id == null) {
             shownTitle = renderedTitle;
           } else {
             const url = Links.textURL(lang, id);
@@ -43,9 +43,9 @@ export default class extends React.Component<TocProps> {
           const className = `level-${item.level == null ? 1 : item.level}`;
           return (
             <tr key={i}>
-              <td>{shownTitle}</td>
+              <td />
               <td>
-                <h3 className={className} />
+                <h3 className={className}>{shownTitle}</h3>
                 {renderItems(item.content, indent + 1)}
               </td>
             </tr>
