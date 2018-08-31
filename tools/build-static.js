@@ -1014,11 +1014,13 @@ const handle_work = work => {
         const head = part.get('head');
         const level = parseInt(safeGetAttr(head, 'level') || '1');
         const sectionId = safeGetAttr(part, 'id');
-        const toctitle =
-          extractTitle(head, 'toctitle') || extractTitle(head, 'title');
+        const title = extractTitle(head, 'title');
+        const toctitle = extractTitle(head, 'toctitle') || title;
+        const linktitle = extractTitle(head, 'linktitle') || toctitle || title;
+        const breadcrumb = { title: linktitle.title, id: sectionId };
         const subtoc = handle_section(part.get('content'), resolve_prev_next, [
           ...section_titles,
-          toctitle.title,
+          breadcrumb,
         ]);
         toc.push({
           type: 'section',
@@ -1085,7 +1087,7 @@ const handle_work = work => {
 
   // Create function to resolve prev/next links in texts
   const resolve_prev_next = (function() {
-    const items = workbody.find('//poem|//prose').map(part => {
+    const items = workbody.find('//poem|//prose|//section[@id]').map(part => {
       const textId = part.attr('id').value();
       const head = part.get('head');
       const title = head.get('title') ? head.get('title').text() : null;
