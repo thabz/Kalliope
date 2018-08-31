@@ -2428,7 +2428,7 @@ const build_variants = collected => {
       }
       let doc = loadXMLDoc(filename);
       doc
-        .find('//poem[@variant]|//prose[@variant]//@section[@variant]')
+        .find('//poem[@variant]|//prose[@variant]|//section[@variant]')
         .forEach(text => {
           const textId = safeGetAttr(text, 'id');
           const variantId = safeGetAttr(text, 'variant');
