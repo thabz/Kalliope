@@ -137,7 +137,7 @@ type TextComponentProps = {
   poet: Poet,
   work: Work,
   text: Text,
-  section_titles: ?Array<string>,
+  section_titles: ?Array<{ title: string, id: ?string }>,
   prev?: PrevNextText,
   next?: PrevNextText,
   error: ?Error,
