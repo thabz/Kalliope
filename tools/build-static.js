@@ -1258,7 +1258,7 @@ const works_first_pass = collected => {
         has_content: work.find('//poem|//prose').length > 0,
       });
 
-      work.find('//poem|//prose').forEach(part => {
+      work.find('//poem|//prose|//section[@id]').forEach(part => {
         const textId = part.attr('id').value();
         const head = part.get('head');
         const title = extractTitle(head, 'title');
