@@ -60,14 +60,14 @@ export class NavPaging extends React.Component<NavPagingType> {
       // Left cursor key
       if (prev != null && window && !window.searchFieldHasFocus) {
         Router.pushRoute(prev.url);
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
         e.preventDefault();
       }
     } else if (e.keyCode === 39) {
       // Right cursor key
       if (next != null && window && !window.searchFieldHasFocus) {
         Router.pushRoute(next.url);
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
         e.preventDefault();
       }
     }
@@ -97,7 +97,7 @@ type NavProps = {
   poet?: Poet,
   work?: Work,
   links?: Array<any>,
-  sectionTitles: ?Array<string>,
+  sectionTitles?: Array<{ id: ?string, title: string }>,
   title?: any,
   rightSide?: any,
 };
@@ -170,14 +170,23 @@ export default class Nav extends React.Component<NavProps> {
     }
     let renderedSectionTitles: Array<TextContent> = [];
     if (sectionTitles != null) {
+      console.log(sectionTitles);
       renderedSectionTitles = sectionTitles.map(t => {
-        return (
+        let text = (
           <TextContent
-            contentHtml={[[t, { html: true }]]}
+            contentHtml={[[t.title, { html: true }]]}
             lang={lang}
             contentLang={lang}
           />
         );
+        if (t.id != null) {
+          text = (
+            <Link route={Links.textURL(lang, t.id)}>
+              <a>{text}</a>
+            </Link>
+          );
+        }
+        return text;
       });
     }
 
