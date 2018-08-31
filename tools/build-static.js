@@ -1712,7 +1712,7 @@ const build_poet_lines_json = collected => {
       if (doc == null) {
         console.log("Couldn't load", filename);
       }
-      doc.find('//poem').forEach(part => {
+      doc.find('//poem|//prose|//section[@id]').forEach(part => {
         const textId = part.attr('id').value();
         // Skip digte som ikke er ældste variant
         const variants = resolve_variants(textId);
@@ -1729,7 +1729,11 @@ const build_poet_lines_json = collected => {
         }
         // Vi tillader manglende firstline, men så skal det markeres med et <nofirstline/> tag.
         // Dette bruges f.eks. til mottoer af andre forfattere.
-        if (firstline == null && head.get('nofirstline') == null) {
+        if (
+          part.name() === 'poem' &&
+          firstline == null &&
+          head.get('nofirstline') == null
+        ) {
           throw `${textId} mangler firstline i ${poetId}/${workId}.xml`;
         }
         if (firstline != null && firstline.title.indexOf('<') > -1) {
@@ -2416,19 +2420,21 @@ const build_variants = collected => {
         return;
       }
       let doc = loadXMLDoc(filename);
-      doc.find('//poem[@variant]|//prose[@variant]').forEach(text => {
-        const textId = safeGetAttr(text, 'id');
-        const variantId = safeGetAttr(text, 'variant');
-        register_variant(textId, variantId);
-        register_variant(variantId, textId);
-        // Mark work containing variantId dirty
-        const variantData = collected.texts.get(variantId);
-        if (variantData != null) {
-          markFileDirty(
-            `fdirs/${variantData.poetId}/${variantData.workId}.xml`
-          );
-        }
-      });
+      doc
+        .find('//poem[@variant]|//prose[@variant]//@section[@variant]')
+        .forEach(text => {
+          const textId = safeGetAttr(text, 'id');
+          const variantId = safeGetAttr(text, 'variant');
+          register_variant(textId, variantId);
+          register_variant(variantId, textId);
+          // Mark work containing variantId dirty
+          const variantData = collected.texts.get(variantId);
+          if (variantData != null) {
+            markFileDirty(
+              `fdirs/${variantData.poetId}/${variantData.workId}.xml`
+            );
+          }
+        });
     });
   });
   writeCachedJSON('collected.variants', Array.from(variants_map));
