@@ -1714,7 +1714,7 @@ const build_poet_lines_json = collected => {
       if (doc == null) {
         console.log("Couldn't load", filename);
       }
-      doc.find('//poem|//prose|//section[@id]').forEach(part => {
+      doc.find('//poem|//section[@id]').forEach(part => {
         const textId = part.attr('id').value();
         // Skip digte som ikke er ældste variant
         const variants = resolve_variants(textId);
