@@ -136,6 +136,8 @@ export default class TextContent extends React.Component {
         return replaceHyphens(node.textContent);
       case '#comment':
         return null;
+      case 'pb':
+        return null;
       case 'i':
         return <i key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</i>;
       case 'b':
