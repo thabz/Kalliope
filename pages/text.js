@@ -321,9 +321,17 @@ export default class extends React.Component<TextComponentProps> {
 
     let renderedVariants = null;
     if (variants.length > 0) {
+      let heading = null;
+      if (text.text_type === 'section') {
+          heading = 'Varianter af denne samling:';
+      } else if (text.text_type === 'poem') {
+          heading = 'Varianter af dette digt:';
+      } else if (text.text_type === 'prose') {
+          heading = 'Varianter af denne tekst:';
+      }
       renderedVariants = (
         <div className="variants">
-          <p>Varianter af dette digt:</p>
+          <p>{heading}</p>
           {variants}
           <style jsx>{`
             @media print {
