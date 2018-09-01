@@ -10,6 +10,7 @@ import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
+import TOC from '../components/toc.js';
 import PoetName, { poetNameString } from '../components/poetname.js';
 import { workTitleString } from '../components/workname.js';
 import TextName, {
@@ -136,7 +137,7 @@ type TextComponentProps = {
   poet: Poet,
   work: Work,
   text: Text,
-  section_titles: ?Array<string>,
+  section_titles: ?Array<{ title: string, id: ?string }>,
   prev?: PrevNextText,
   next?: PrevNextText,
   error: ?Error,
@@ -356,37 +357,44 @@ export default class extends React.Component<TextComponentProps> {
         </div>
       );
     }
-    let highlightInterval: { from: number, to: number };
-    if (highlight != null) {
-      let m = null;
-      let from: number = -1,
-        to: number = -1;
-      if ((m = highlight.match(/(\d+)-(\d+)/))) {
-        from = parseInt(m[1]);
-        to = parseInt(m[2]);
-      } else if ((m = highlight.match(/(\d+)ff/))) {
-        from = parseInt(m[1]);
-        to = Number.MAX_VALUE;
-      } else if ((m = highlight.match(/(\d+)/))) {
-        from = parseInt(m[1]);
-        to = parseInt(m[1]);
+    let body = null;
+    if (text.text_type === 'section' && text.toc != null) {
+      body = <TOC toc={text.toc} lang={lang} indent={1} />;
+    } else {
+      let highlightInterval: { from: number, to: number };
+      if (highlight != null) {
+        let m = null;
+        let from: number = -1,
+          to: number = -1;
+        if ((m = highlight.match(/(\d+)-(\d+)/))) {
+          from = parseInt(m[1]);
+          to = parseInt(m[2]);
+        } else if ((m = highlight.match(/(\d+)ff/))) {
+          from = parseInt(m[1]);
+          to = Number.MAX_VALUE;
+        } else if ((m = highlight.match(/(\d+)/))) {
+          from = parseInt(m[1]);
+          to = parseInt(m[1]);
+        }
+        highlightInterval = { from, to };
       }
-      highlightInterval = { from, to };
+      const options = {
+        isBible: poet.id === 'bibel',
+        isPoetry: poet.id !== 'bibel' && !text.is_prose,
+        highlight: highlightInterval,
+      };
+      body = (
+        <div className="text-content">
+          <TextContent
+            contentHtml={text.content_html}
+            contentLang={text.content_lang}
+            lang={lang}
+            options={options}
+            keyPrefix={text.id}
+          />
+        </div>
+      );
     }
-    const options = {
-      isBible: poet.id === 'bibel',
-      isPoetry: poet.id !== 'bibel' && !text.is_prose,
-      highlight: highlightInterval,
-    };
-    const body = (
-      <TextContent
-        contentHtml={text.content_html}
-        contentLang={text.content_lang}
-        lang={lang}
-        options={options}
-        keyPrefix={text.id}
-      />
-    );
 
     const title = <PoetName poet={poet} includePeriod />;
 
@@ -436,22 +444,23 @@ export default class extends React.Component<TextComponentProps> {
             <PoetTabs lang={lang} poet={poet} selected="works" />
             <SidebarSplit sidebar={sidebar}>
               <div>
-                <article className="text-content">
-                  <TextHeading
-                    text={text}
-                    lang={lang}
-                    isProse={text.is_prose}
-                  />
-
-                  {body}
+                <article>
+                  <div className="text-content">
+                    <TextHeading
+                      text={text}
+                      lang={lang}
+                      isProse={text.is_prose}
+                    />
+                  </div>
+                  <div>{body}</div>
                   <style jsx>{`
-                    .text-content {
+                    :global(.text-content) {
                       font-family: 'Palatino', 'Georgia', serif;
                       line-height: 1.5;
                       font-size: 1.15em;
                       display: inline-block;
                     }
-                    .text-content sc {
+                    :global(.text-content) :global(sc) {
                       font-variant: small-caps;
                     }
 
