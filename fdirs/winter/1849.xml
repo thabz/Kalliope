@@ -3853,10 +3853,11 @@ Mod Recensenter og Hveranden.
    <title>Natten</title>
    <subtitle>(Thorvaldsens Basrelief)</subtitle>
    <firstline>End er det Nat! - i underlige Drømme</firstline>
-    <source pages="153-154"/>
+   <source pages="153-154"/>
    <pictures>
        <picture ref="thorvaldsen/1815-natten" /> 
    </pictures>
+   <keywords>thorvaldsen</keywords>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -4437,7 +4438,10 @@ Hvis Stammer staae, hvis Løv skal aldrig falme!
 <poem id="winther2017100272">
 <head>
    <title>En ny og lystelig Vise</title>
-   <subtitle>for Søfolk paa Kongens Skibe</subtitle>
+   <subtitle>
+       <line>for</line>
+       <line>Søfolk paa Kongens Skibe</line>
+   </subtitle>
    <firstline>Saa Mange, som I er ombord</firstline>
     <source pages="176-178"/>
    <keywords>frederik7</keywords>
@@ -5175,9 +5179,18 @@ En evig Kjærligbeds Skærsommer!
 
 <poem id="winther2017100264">
 <head>
-   <title>Farvel til D. G. Monrad</title>
+   <title>Farvel</title>
+   <subtitle>
+       <line>til D. G. Monrad</line>
+   </subtitle>
+   <toctitle>Farvel til D. G. Monrad</toctitle>
+   <indextitle>Farvel til D. G. Monrad</indextitle>
+   <linktitle>Farvel til D. G. Monrad</linktitle>
    <firstline>Saa Du vil drage fra vor gamle Stad</firstline>
-    <source pages="206-207"/>
+   <source pages="206-207"/>
+   <pictures>
+       <picture ref="hansenc/monrad-1846" /> 
+   </pictures>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

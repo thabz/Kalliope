@@ -318,8 +318,7 @@ Som havde vi drømt.
 <poem id="winther2018090305" variant="winter2003030501">
 <head>
    <title>Forord</title>
-   <toctitle>Forord</toctitle>
-   <indextitle>Forord</indextitle>
+   <subtitle>(1848)</subtitle>
    <firstline>Alt længe disse Blade laae</firstline>
     <source pages="14-16"/>
    <quality>korrektur1,kilde,side</quality>
@@ -670,6 +669,7 @@ Mod Recensenter og Hveranden.
        <picture ref="thorvaldsen/1815-natten" /> 
    </pictures>
    <source pages="27-28"/>
+   <keywords>thorvaldsen</keywords>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -762,7 +762,6 @@ Det Samme <i>der</i>, som jeg.
 <poem id="winther2018090310" variant="winther2017100277">
 <head>
    <title>Duetto</title>
-   <subtitle>(Componeret af Ravnkilde).</subtitle>
    <firstline>Luften suser alt i Skoven</firstline>
     <source pages="31-33"/>
    <quality>korrektur1,kilde,side</quality>
@@ -771,7 +770,7 @@ Det Samme <i>der</i>, som jeg.
 <nonum><center><i>Afsked</i></center></nonum>
 
 Luften suser alt i Skoven,
-Hvisker gjennem Busk og Træ'r;
+Hvisker gjennem Busk og Træer;
 Svagt, som Sølverstænk paa Voven,
 Glimter Dagens første Skjær;
 Vi maae, sra hinanden fjerne,
@@ -1224,7 +1223,10 @@ Hvis Stammer staae, hvis Løv skal aldrig falme!
 <poem id="winther2018090316" variant="winther2017100272">
 <head>
    <title>En ny og lystelig Vise</title>
-   <subtitle>for Søfolk paa Kongens Skibe</subtitle>
+   <subtitle>
+       <line>for</line>
+       <line>Søfolk paa Kongens Skibe</line>
+   </subtitle>
    <firstline>Saa Mange, som I er ombord</firstline>
     <source pages="49-51"/>
    <keywords>frederik7</keywords>
@@ -1697,9 +1699,19 @@ En evig Kjærligbeds Skærsommer!
 
 <poem id="winther2018090324" variant="winther2017100264">
 <head>
-   <title>Farvel til D. G. Monrad</title>
+   <title>Farvel</title>
+   <subtitle>
+       <line>til</line>
+       <line>D. G. Monrad</line>
+   </subtitle>
+   <toctitle>Farvel til D. G. Monrad</toctitle>
+   <indextitle>Farvel til D. G. Monrad</indextitle>
+   <linktitle>Farvel til D. G. Monrad</linktitle>
    <firstline>Saa Du vil drage fra vor gamle Stad</firstline>
-    <source pages="68-69"/>
+   <source pages="68-69"/>
+   <pictures>
+       <picture ref="hansenc/monrad-1846" /> 
+   </pictures>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1748,7 +1760,7 @@ Til Aftenstjernen mildt oprinder!
 <poem id="winther2018090325" variant="winther2017100263">
 <head>
    <title>Til Kronprinsen</title>
-   <subtitle>1847</subtitle>
+   <subtitle>(1847)</subtitle>
    <firstline>Naar sig ved Bægret leired ret</firstline>
     <source pages="70-71"/>
    <quality>korrektur1,kilde,side</quality>
@@ -1891,6 +1903,7 @@ Og stemmer altid med min Sjæl.
 <poem id="winther2018090328" variant="winter2018081201">
 <head>
     <title>Det gamle Aar</title>
+    <subtitle>(1850)</subtitle>
     <firstline>Det gamle Aar har snart faa't Nok</firstline>
     <source pages="84-85"/>
     <quality>korrektur1,kilde,side</quality>
@@ -2447,6 +2460,7 @@ Skal trygt Dig lyse til et Hjem.
 <poem id="winther2018090341" variant="winter2018081231">
 <head>
     <title>Det nye Aar</title>
+    <subtitle>(1851)</subtitle>
     <firstline>Hvo kommer der saa let og glad</firstline>
     <source pages="106-107"/>
     <quality>korrektur1,kilde,side</quality>
@@ -2784,7 +2798,6 @@ I Tide! - Nu det er forsiide! -
     <firstline>En Dag, da Reinke laae og sov</firstline>
     <source pages="119-145"/>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Indeholder denne også 3. fragment? -->
 </head>
 <body>
 <nonum><center><b>Første Fragment.</b></center></nonum>
@@ -3587,10 +3600,7 @@ Som du paa Gravens Bred kan sanke.
     <title>Guldalderen</title>
     <toctitle><num>I.</num>Guldalderen</toctitle>
     <firstline>Guldalderen er ei forsvundet</firstline>
-    <notes>
-        <note>* Guldalderen og Faunen, af samme Forfatter, hvis østerlandske Parabel om <a poem="winter2018081807"><i>Manden med Kamelen</i></a> findes oversat i min tidligere Samling 1832.</note>
-        <!-- TODO:Find Rückerts original -->
-    </notes>
+    <!-- TODO:Find Rückerts original -->
     <source pages="211-212"/>
     <keywords>rueckert</keywords>
     <quality>korrektur1,kilde,side</quality>
@@ -3628,10 +3638,7 @@ Enhver sin egen gyldne Tid.
     <title>Faunen</title>
     <toctitle><num>II.</num>Faunen</toctitle>
     <firstline>Til Faun mig Himlen skabde</firstline>
-    <notes>
-        <note>* Guldalderen og Faunen, af samme Forfatter, hvis østerlandske Parabel om <a poem="winter2018081807"><i>Manden med Kamelen</i></a> findes oversat i min tidligere Samling 1832.</note>
-        <!-- TODO:Find Rückerts original -->
-    </notes>
+    <!-- TODO:Find Rückerts original -->
     <source pages="212-213"/>
     <keywords>rueckert</keywords>
     <quality>korrektur1,kilde,side</quality>
@@ -3987,7 +3994,7 @@ Et ærligt Hjerte, og min hulde, kloge Pige,
 <head>
     <title>Hankattens Frieri</title>
     <toctitle>Hankattens Frieri (oversat)</toctitle>
-    <subtitle>Efter Fr. Rückert</subtitle>
+    <subtitle>Efter Rückert</subtitle>
     <firstline>Hør nu, hvordan Hankatten, ført ved Rævens List</firstline>
     <notes>
         <note>* af ,,Brahmanische Erzählungen'' [af Fr. Rückert.]</note>
@@ -4056,7 +4063,7 @@ Er altsaa dog, at jeg maa Kattens Datter fæste.
 <poem id="winther2018090355" variant="winther2018081122">
 <head>
     <title>Hun til Ham, paa Reisen</title>
-    <subtitle>(Efter Stollberg)</subtitle>
+    <subtitle>Efter Stollberg</subtitle>
     <firstline>See, Natten gryer</firstline>
     <notes>
         <note>Oversættelse af Friedrich Leopold Graf zu Stolberg: <xref type="translation" poem="stolbergf2018081001"/>.</note>
