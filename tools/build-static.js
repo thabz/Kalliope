@@ -951,6 +951,7 @@ const extractTitle = (head, type) => {
   title = entities
     .decodeHTML(title)
     .replace('<' + type + '>', '')
+    .replace('<' + type + ' force-index="true">', '')
     .replace('</' + type + '>', '')
     .replace('<' + type + '/>', '');
   if (title.length == 0) {
