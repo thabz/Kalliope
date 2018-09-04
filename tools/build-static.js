@@ -697,6 +697,16 @@ const resolve_variants = poemId => {
   result = Array.from(seen_variants).sort((a, b) => {
     const metaA = collected.texts.get(a);
     const metaB = collected.texts.get(b);
+    if (metaA == null) {
+      throw new Error(
+        `The unknown text ${a} is listed as a variant of ${poemId}.`
+      );
+    }
+    if (metaB == null) {
+      throw new Error(
+        `The unknown text ${b} is listed as a variant ${poemId}.`
+      );
+    }
     const workA = collected.works.get(metaA.poetId + '/' + metaA.workId);
     const workB = collected.works.get(metaB.poetId + '/' + metaB.workId);
     return workA.year > workB.year ? 1 : -1;
