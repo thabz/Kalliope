@@ -12,42 +12,27 @@
        <picture type="titlepage" src="1843-p1.jpg">Titelbladet til <i>Digtninger</i> (1843).<br/>Digtninger // Christian Winther // Kjøbenhavn, 1843. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt i Bianco Lunos Bogtrykkeri.</picture>
    </pictures>
    <source facsimile="11540801529F_color" facsimile-pages-num="356" facsimile-pages-offset="16">Christian Winther: <i>Digtninger</i>, C. A. Reitzel, Kbh., 1843.</source>
-   <!-- TODO: Alle tekster med en dato før 2018 skal rettes ordentligt ind efter facsimile-kilden. Teksterne fra Svend Andersen mangler især kursivering, men også du/Du og dig/Dig varierer. -->
 </workhead>
 <workbody>
 
-<section level="2">
+<section level="2" id="winther2002021700">
 <head>
-   <toctitle>Til Een</toctitle>
+    <title>Til Een</title>
+    <notes>
+        <note>Mottoet ,,Ma pur si aspre vie, ne si selvaggie / Cercar non so, ch'amor non venga sempre / Ragionando con meco, ed io con lui.'' er fra Petrarcas <xref poem="petrarca2018021002,12-14"/>.</note>
+    </notes>
+    <source pages="1"/>
 </head>
 <content>
-
-<poem id="winther2002021700">
-<head>
-    <title>[Motto]</title>
-    <toctitle>[Motto]</toctitle>
-    <indextitle>Motto</indextitle>
-    <linktitle>Motto</linktitle>
-    <nofirstline/>
-    <source pages="1"/>
-    <notes>
-       <note>Mottoet er fra Petrarcas <xref poem="petrarca2018021002,12-14"/>.</note>
-    </notes>
-    <quality>korrektur1,korrektur2,kilde,side</quality>    
-</head>
-<body>
-,,Ma pur si aspre vie, ne si selvaggie
-Cercar non so, ch'amor non venga sempre
-Ragionando con meco, ed io con lui.''
-<right>Petrarca</right>
-</body>
-</poem>
 
 <poem id="winther2002021701">
 <head>
     <title>Tilegnelse</title>
     <firstline>Hverken Verden eller Du</firstline>
     <source pages="3-6"/>
+    <notes>
+        <note>,,Forf. til en Hverdagshistorie'' var i mange år <a poet="gyllembourg">Thomasine Gyllembourgs</a> nom de plume.</note>
+    </notes>
     <quality>korrektur1,korrektur2,kilde,side</quality>    
 </head>
 <body>
@@ -95,7 +80,7 @@ At kun Du skulde være
 Fra nu til Evighed
 Mit Hjertes Hjertenskære;
 Men at aldrig enten Du
-Eller Verden skulde vide.
+Eller Verden skulde vide,
 Hvad af Længsel før og nu
 Jeg leed og maa lide!
 Og Dine Taarer blev
@@ -111,11 +96,11 @@ Mig klynged som en Ranke,
 Saa at alle mine Qvad
 Var som tænkte med Din Tanke.
 O, modtag da i Din Favn
-<i>Vore</i> Børn, jeg vil udsende,
+<w>Vore</w> Børn, jeg vil udsende,
 Skjøndt de bære ei Dit Navn,
 Vil Du dem nok gjenkjende!
 Men Dit Navn jeg nævner ei,
-Thi Det er Helligdommen,
+Thi det er Helligdommen,
 Hvori, dybt indviet, jeg
 Til Livets Lys er kommen;
 Og jeg svoer jo: hverken Du
@@ -749,7 +734,7 @@ De allersødeste Ord!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="41-47"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Lad os reise, lad os vandre,
@@ -794,7 +779,7 @@ Og i Schweizerbondens Hytte
 Mødes vi med Gemsens Skytte
 Og paa Stien følges ad.
 
-Borgens sjunkne Taarn vi gjæster,
+Borgens sjunkne Taarn vi gjester,
 Stige over Grav og Vold;
 Præke os de smuldne Rester
 Ei, som alvorsfulde Præster,
@@ -808,7 +793,7 @@ Drikke af det klare Væld!
 
 Paa Venedigs Gader glide
 I Canalgondolen vi;
-See med Veemod, hvor de hvide
+See med Vemod, hvor de hvide
 Pragtpaladser langsomt skride
 Tomt og dødt vort Blik forbi.
 
@@ -821,7 +806,7 @@ I St. Peters Helligdom.
 I den milde Aftenrøde
 Ved Neapels krumme Strand
 See vi, under Rankens bløde
-Gitter hist et Stævnemøde -
+Gitter hist et Stevnemøde -
 Unge, skjønne - hun og han.
 
 See, hvor sprudler her ei Saften
@@ -831,7 +816,7 @@ Lystigt i den klare Aften
 Dandses der en Tarantell.
 
 Lad os reise! lad os vandre!
-Lad os fjernt i Verden gaae;
+Lad os fjernt i Verden gaae!
 Lad os, enige med hverandre,
 Evigt Stedet kun forandre,
 Hvor vor Elskovsblomst tør staae.
@@ -862,7 +847,7 @@ Huldt hinanden, Bryst mod Bryst.
 
 O, saa kom, min Elskerinde!
 Kom og glem Dit Hjertes Qval.
-Vil du? - trofast skal Du finde
+Vil Du? - trofast skal Du finde
 Mig paa Fjeldets stolte Tinde,
 Som i stille Skyggedal.
 
@@ -870,7 +855,7 @@ Trofast? - ak, Du veed det, Hulde!
 At mit Hjerte, varmt og ømt,
 I sin Elskovs rige, fulde
 Verden kjender ei til Kulde -
-Ak, men Reisen - er kun drømt!
+Ak, men <w>Reisen</w> - er kun drømt!
 </body>
 </poem>
 
@@ -882,7 +867,7 @@ Ak, men Reisen - er kun drømt!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="48-50"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Bøgen skyder alt sit Blad,
@@ -931,10 +916,10 @@ Under al Dit Livs Forandring!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="51-52"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-,,Mennesket har og et Bryst,
+Mennesket har og et Bryst,
 Og et Hjerte kan han eie,
 Synge tør han Sorg og Lyst
 Paa sin snevre Vandrings Veie;
@@ -946,14 +931,14 @@ Tungt hans Fod og Tanke hæmmes!
 Mens vor Flugt har intet Spor -
 Let vi svæve, synge, glemmes!
 Svæv og hæv Dig kjæk og fri
-Som vi!''
+Som vi!
 
-Flytter sig min Fod end tungt
+,,Fløtter sig min Fod end tungt
 Og mit Hoved, naar det tænker,
 Er dog Hjertet varmt og ungt,
 Og i evig stærke Lænker
 Føler jeg mig salig fri,
-Som I!
+Som I!''
 </body>
 </poem>
 
@@ -965,12 +950,12 @@ Som I!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="53-56"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ved Veien paa en Steen jeg sad, og Brystet
 Sig hæved tungt; mens trende Nattergale
-Forgjæves søgte smukt at faae mig trøstet.
+Forgjeves søgte smukt at faae mig trøstet.
 
 <nonum><center>1.</center></nonum>
 ,,Her rundt om mig skal Grenene sig lukke,
@@ -990,7 +975,7 @@ Alene kan udtale sig i Toner.''
 <nonum><center>4.</center></nonum>
 ,,Luk op for Hjertet, lad det Aande drage
 I denne Strøm af klare Melodier,
-Og lær med Mod Din syge Tvivl forjage.''
+Og lær med Mod din syge Tvivl forjage.''
 
 <nonum><center>5.</center></nonum>
 ,,Er Elskov død for os paa disse Strande,
@@ -1010,7 +995,7 @@ Ak, Elskov lever just i denne Blødhed!''
 <nonum><center>8.</center></nonum>
 ,,Bag Bladets lysegrønne, klare Rude,
 Tæt ved min lille Viv i bløde Rede,
-Mit Hjerte slaaer og glemmer Alt derude.''
+Mit Hjerte slaaer og glemmer Alt <w>derude</w>.''
 
 <nonum><center>9.</center></nonum>
 ,,Hvor prægtig skinner hist den grønne Bille!
@@ -1030,8 +1015,8 @@ Thi klar og varm vor Brudefakkel lyste.''
 
 <nonum><center>12.</center></nonum>
 ,,Hvorfor vil Du Din <w>tunge</w> Længsel nære?
-Jeg elsker Øieblikket! - om min Smerte
-Jeg tænker let: det kan ei andet være!''
+Jeg elsker Øieblikket! - Om min Smerte
+Jeg tænker <w>let:</w> det kan ei andet være!''
 
 - Med Veemod jeg dem hørte. Morgenvinde
 De dunkle Skyer bort fra Himlen førte,
@@ -1047,24 +1032,24 @@ Men ak, min Smerte vilde ikke svinde.
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="57-58"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg gik mig i Skoven saa eensom en Gang,
 Alle de smaa Fugle saa yndeligt sang,
 De havde ei andet at bestille;
-Der qvad Stillids, og der qvad Gjøg,
-Der slog høit i den hvislende Bøg
+<w>Der</w> qvad Stillids, og <w>der</w> qvad Gjøg,
+<w>Der</w> slog høit i den hvislende Bøg
 En Irisk sin sittrende Trille.
 
-Da tænkte jeg paa hende, som er ikke her,
-Da tænkte jeg paa hende, mit Hjerte har kjær,
+Da tænkte jeg paa Hende, som er ikke her,
+Da tænkte jeg paa Hende, mit Hjerte har kjær,
 Og jeg tænkte, det bedste jeg kunde;
 Og Alting omkring mig det tænkte som jeg,
 Den gamle Eeg og Granen, der brystede sig,
 Og alle smaa Fugle i Lunde.
 
-Og Alt vilde trøste mit længselsfulde Sind;
+Og <w>Alt</w> vilde trøste mit længselsfulde Sind;
 Fortroligt mig hvisked den letsindige Vind
 De luneste Ting i mit Øre;
 Og Stæren mig sagde saa meget - meget Smukt, -
@@ -1076,23 +1061,27 @@ Saa vil jeg da sværme med alle Fugle smaa,
 Og sukke med de svævende Vinde;
 Saa vil jeg da vandre min eensomme Gang,
 Saa vil jeg indvie hvert Suk og hver Sang
-Og min inderlige Smerte til hende!
+Og min inderlige Smerte til Hende!
 </body>
 </poem>
 
 <poem id="winther2002021716">
 <head>
    <title>Mod! - Mod!</title>
-   <firstline>Mod! - Er det ei et Tordenbrag</firstline>
+   <firstline>Det drøner som et Tordenbrag</firstline>
    <notes>
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="59-60"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <!-- Svend Andersens kilde har følgende vers 1 og 2:
+    Mod! - Er det ei et Tordenbrag,
+    Saa dybt sig Usselhed maa bøie?
+    -->
 </head>
 <body>
-Mod! - Er det ei et Tordenbrag,
-Saa dybt sig Usselhed maa bøie?
+Det drøner som et Tordenbrag,
+Saa dybt sig Usselhed maa bøie;
 Det glimter som et Lynildslag,
 Og Feighed blinker med sit Øie.
 
@@ -1101,10 +1090,10 @@ Der lokker Skarerne til Fanen;
 Det raaber høit: er Du beredt?
 Og Kjækhed fast gaaer frem paa Banen.
 
-Mig har det nu en anden Klang,
-Som evigt for min Sands skal lyde.
+<w>Mig</w> har det nu en anden Klang,
+Som evigt for min Sands skal lyde,
 Den ingen Digters Mestersang
-Formaaer at tolke eller tyde.
+Formaaer at tolke eller tyde!
 </body>
 </poem>
 
@@ -1116,7 +1105,7 @@ Formaaer at tolke eller tyde.
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="61-63"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Fuld af hede Sommerdrømme
@@ -1164,7 +1153,7 @@ Og, som Nattergalens, døer!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="64-65"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 O, var Du her i denne By,
@@ -1185,14 +1174,14 @@ Du er vel lige from og blid?
 Og mindes knap den lange Tid,
 Som Du paa mørke Tanker spildte?
 
-Det blev mit Sind en Sæd! Min Høst
-Med hvert et Pulsslag sig fordobler;
+Det blev <w>mit</w> Sind en Sæd! Min Høst
+Med hvert et Pulsslag sig fordobbler;
 Den endte Kamp, den svundne Lyst
 Fremlokker Blomster af mit Bryst,
 Hvor, som i en Vulkan, det bobler.
 
 Jeg agter føie Verdens Dom
-Ved mine Udbruds røde Emmer;
+Ved mine Udbruds røde Æmmer;
 Og spørges der, hvorfra de kom?
 Og hvem de Funker sværmer om? -
 Jeg taus og trofast Svaret gjemmer.
@@ -1207,7 +1196,7 @@ Jeg taus og trofast Svaret gjemmer.
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="66-69"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Dreng! - Du med de brune Lokker,
@@ -1225,7 +1214,7 @@ Hendes fine, røde Læbe,
 Hendes lilieskjære Kind,
 Hendes Hjerte, uden Hinder
 Let og lønligt Veien finder,
-Og - at hun Dig lukker ind! -
+Og - at Hun Dig lukker ind! -
 Ak, tilgiv! - Den vilde Tanke
 Maa Dig ikke skræmme bort!
 Tro mit Hjerte ei saa sort!
@@ -1234,45 +1223,45 @@ Byde Skjebnens Grumhed Trods,
 Jeg vil tysse paa min Længsel,
 Jeg vil holde fast i Fængsel
 Hvert et Fiendskab mellem os.
-<i>Vi</i> maae være gode Venner,
+<w>Vi</w> maae være gode Venner,
 Lille, kjære, bløde Dreng!
-Gjerne selv til hendes Seng
+Gjerne selv til Hendes Seng
 Jeg Dig jo med Budskab sender! -
 Seer Du Sorgers vilde Flok
-Gridsk om hendes Leie dvæle,
+Gridsk om Hendes Leie dvæle,
 Jag dem bort - de skumle, fæle -
-<i>Hun</i> har sukket meer end nok!
+<w>Hun</w> har sukket meer end nok!
 Kjæk er Du, men de er feige -
-Hvor <i>du</i> hviler ved et Bryst
+Hvor <w>du</w> hviler ved et Bryst
 Med Din milde, blide Trøst,
 Flygte de ad tusind Veie.
 Nærm Dig sagtelig og luk
-Venligt hendes Øielaage
+Venligt Hendes Øielaage
 Med Din underfulde Taage,
 Med Din Slummers svale Dug.
-Tryk et Kys paa hendes Hjerte,
+Tryk et Kys paa Hendes Hjerte,
 At det ei for fast skal slaae,
 Da vil Drømmens Engel gaae
 Let derind og uden Smerte.
 Snoe Dig øm og vennehuld
 Tæt om disse skjønne Lemmer,
 Som en Sjæl, en himmelsk, gjemmer,
-Lig en Ædelsteen i Guld.
+Liig en Ædelsteen i Guld.
 Dæk med Glemsel Qval og Jammer!
 Og lad Sundhed, stærk og mild
 Som en Svane, svømme til
 Hendes stille Hjertekammer,
-At hun ret, naar hun skal pleie
+At Hun ret, naar Hun skal pleie
 Ømt sit Hjertes Blomsterskud,
 Kraftig - glad kan holde ud
 I sin Kamp paa Livets Veie! -
-Har Du føiet <i>saa</i> min Villie,
-Aander hun i søden Blund,
-Smiler hendes Kind og Mund
+Har Du føiet <w>saa</w> min Villie,
+Aander Hun i søden Blund,
+Smiler Hendes Kind og Mund
 Som en Rose, som en Lilie
 Med sit Purpur, med sin Snee:
 Saa afsted! - som det sig sømmer;
-Thi - <i>Alt</i>, hvad min Hulde drømmer -
+Thi - <w>Alt</w>, hvad min Hulde drømmer -
 Troer jeg - maa Du ikke see!
 </body>
 </poem>
@@ -1286,12 +1275,12 @@ Troer jeg - maa Du ikke see!
       <note type="credits">Bidrag fra Brian Bentsen</note>
    </notes>
    <source pages="70-71"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Tilgiv - tilgiv! jeg kan ei andet!
-<i>Min</i> Sjæl saa heelt med <i>Din</i> er blandet,
-<i>Du</i> flettet er i mine Tanker
+<w>Min</w> Sjæl saa heelt med <w>Din</w> er blandet,
+<w>Du</w> flettet er i mine Tanker
 Saa inderligt, som Druens Ranker
 I Almens løvbedækte Grene,
 Saa fast som Havcorallens Stene
@@ -1310,7 +1299,7 @@ Kun ved Dit Blik min Aand oplives,
 Som Blomstens Kalk i Morgenrøden -
 Og uden Dig, jeg veed, til Døden,
 Til evig Qval jeg er forbandet -
-Tilgiv - tilgiv! Jeg <i>kan</i> ei andet!
+Tilgiv - tilgiv! Jeg <w>kan</w> ei andet!
 </body>
 </poem>
 
@@ -1322,22 +1311,22 @@ Tilgiv - tilgiv! Jeg <i>kan</i> ei andet!
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="72-74"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Hvor Mangen søger ei med Qval
+Hvor Mangen <w>søger</w> ei med Qval
 Paa Bjergets Top, i dyben Dal
 En sjelden Blomst - paa Sti og Vei -
-Og ak, hans Øie finder ei!
+Og ak! hans Øie finder ei!
 
-Men jeg! der gik i Drømme hen,
+Men <w>jeg!</w> der gik i Drømme hen,
 Den blinde Lykkes kaarne Ven,
 Jeg naaede did paa flygtig Fod,
 Hvor Blomsten i sin Ynde stod.
 
 Nu som en Gartner, trofast, from
 Tilbeder jeg den Helligdom,
-Hvori mig Himlen har nedlagt
+Hvori <w>mig</w> Himlen har nedlagt
 Den hele Blomsterverdens Pragt.
 
 Ved Solens Lys, i Dagens Luft
@@ -1345,7 +1334,7 @@ Den staaer mig fjern, fast uden Duft,
 Med lukket Bæger, sky og kold,
 Som skjult i Pandser og bag Skjold.
 
-Men i den bittersøde Nat
+Men - i den bittersøde Nat
 Den aabner huldt sit Bæger brat
 Og strømmer i mit Hjerte ned
 Sin Duft og sin Livsalighed.
@@ -1370,14 +1359,14 @@ En Midler mellem Her og Hist.
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="75-76"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Og var Du bleg, som Nattens Stjerne,
 Der paa det dunkle Firmament,
 Hvor Dagens Fakkel er udbrændt
 Sig hæver langsomt i det Fjerne;
-Og var Du bleg, som Sne, der kold
+Og var Du bleg, som Snee, der kold
 Sig over Eng og Marker lægger
 Og hver en livlig Farve dækker
 Tæt med sit Teppes hvide Fold:
@@ -1401,10 +1390,10 @@ Der guddomsstærkt mig holde fast.
       <note type="credits">Bidrag fra Svend Andersen.</note>
    </notes>
    <source pages="77-79"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Hensjunken i mit Hjertes Drøm -
+Hensjunken i mit Hjertes <w>Drøm</w> -
 Thi ak! det er jo intet andet! -
 Jeg sidder, som ved Havets Strøm,
 Og kaster Blomster ud i Vandet.
@@ -1416,7 +1405,7 @@ Skal Gaadens rette Løsning finde.
 
 Min Tanke hæver sig med Magt
 Paa Hjertets Vinger, liig en Svane;
-Men hun, som har til Liv den vakt,
+Men Hun, som har til Liv den vakt,
 Tør sit Mirakel aldrig ane.
 
 Som man tilbeder Solens Glands,
@@ -1424,7 +1413,7 @@ Som man, af Længsel, i det Fjerne
 Udkaarer sig af Himlens Krands
 En enkelt, kjært beslægtet Stjerne;
 
-Saaledes jeg tilbeder Een
+Saaledes jeg tilbeder <w>Een</w>
 Med al mit Hjertes Ild og Styrke;
 Men Stjernens Glimmer, klar og reen,
 Skal mine Taager ei formørke.
@@ -1432,14 +1421,14 @@ Skal mine Taager ei formørke.
 Som Sol og Luft i milde Vaar
 For Rosen, ubevidst, tør kjæle,
 Sig Sangen, som fra Hjertet gaaer,
-Fordulgt kun tør til hendes stjæle.
+<w>Fordulgt</w> kun tør til Hendes stjæle.
 
 Og jeg maa bære i mit Bryst
 Mysteriet, - trofast og prøvet -
 Min Verden, fuld af Qval og Lyst,
 Skjøndt ak! den knuger mig i Støvet.
 
-Som Kjæmpen Atlas maa jeg staae;
+Som Kjæmpen <w>Atlas</w> maa jeg staae;
 Mit Blik mod Jord, min Nakke bøiet,
 Mens Himlen, som jeg bærer paa,
 Liig hans, ei straaler mig for Øiet.
@@ -1461,7 +1450,7 @@ Liig hans, ei straaler mig for Øiet.
    <title>Serenade ved Strandbredden</title>
    <firstline>Hytten er lukket, Natten er stille!</firstline>
    <source pages="83-85"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <nonum><i>Sangeren.</i></nonum>
@@ -1473,12 +1462,14 @@ Ak, om I vilde
 Synge og spille?
 Tonerne til hendes Hjerte I bar.
 
+
 <nonum><i>Bølgerne.</i></nonum>
 
 Sagtelig glidende hen over Strand,
 Langsomt strømmende
 Vil vi det drømmende
 Hjerte indlulle saa sødt, som vi kan.
+
 
 <nonum><i>Sangeren.</i></nonum>
 
@@ -1489,12 +1480,14 @@ Smerter og Kummer
 Flyer og forstummer, -
 Liflige Billeder skaber min Sang.
 
+
 <nonum><i>Bølgerne.</i></nonum>
 
 Evigt omskiftende Rhythmer og Gang,
 Let og spøgende,
 Billedforøgende,
 Vælte vi klart mod den duftende Vang.
+
 
 <nonum><i>Sangeren.</i></nonum>
 
@@ -1503,7 +1496,8 @@ Flettes i bævende Toner til Krands.
 Huldt gjennem Drømmenes Rige de drage
 Frem og tilbage,
 Kjærligt forjage
-Taagen, som dølger Dig Stjernernes Glands.
+Taagen, som dølger dig Stjernernes Glands.
+
 
 <nonum><i>Bølgerne.</i></nonum>
 
@@ -1558,7 +1552,7 @@ De bedste Livets Frugter skal frembære.
     <title>En Vise om Vaaren</title>
     <firstline>Nu lakker det ad Tiden smaat</firstline>
     <source pages="88-92"/>
-    <quality>korrektur1,kilde,side</quality>    
+    <quality>korrektur1,korrektur2,kilde,side</quality>    
 </head>
 <body>
 Nu lakker det ad Tiden smaat,
@@ -1601,7 +1595,7 @@ At være hendes Tjener.
 
 Og vil hun bruge ham til Speil,
 Da er han saa fornøiet,
-Skjøndt stundom, - det slaaer aldrig feil
+Skjøndt stundom, - det slaaer aldrig feil -
 Han Taarer faaer i Øiet.
 
 Men altfor snart de unge To
@@ -1654,7 +1648,7 @@ Poeterne - de daane.
    <title>En Situation</title>
    <firstline>Jeg lader Baaden glide frem</firstline>
     <source pages="93-94"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg lader Baaden glide frem
@@ -1682,7 +1676,7 @@ Mod mine vaade Blikke!
 O, vil Du ei mit Suk forstaae?
 Du kan, men vil det ikke! - -
 
-Her er Dit Hjem, - stiig nu i Land, -
+Her er Dit Hjem, - stig nu i Land, -
 Jeg ene roer tilbage,
 Og for den stille Skov og Strand
 Jeg synge vil min Klage.
@@ -1694,7 +1688,7 @@ Jeg synge vil min Klage.
     <title>Bolero</title>
     <firstline>Hør, hvor Fløiter og Strængene</firstline>
     <source pages="95-99"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hør, hvor Fløiter og Strængene
@@ -1730,7 +1724,7 @@ Snart saa sky som en Hind.
 Stolt, skjøndt elskovssittrende
 Døbt i Tonernes Daab;
 Smilende - men forbittrende
-Flux <i>hans</i> spirende Haab.
+Flux <w>hans</w> spirende Haab.
 
 Angst dog seer Du ham flygtende,
 Øiet omtaager sin Glands;
@@ -2495,7 +2489,7 @@ Som havde vi drømt.
     <notes>
         <note>Oversættelse af Friedrich Leopold Graf zu Stolberg: <xref type="translation" poem="stolbergf2018081001"/>.</note>
     </notes>
-    <source pages="  140-141"/>
+    <source pages="140-141"/>
     <quality>korrektur1,kilde,side</quality>    
 </head>
 <body>
@@ -2724,12 +2718,18 @@ Den store Elskovs-Vunde.
    <toctitle>Fjeldvandring ved Badet. Et Digt</toctitle>
    <firstline>Kom sæt Dig her! Saa syg og mat</firstline>
    <notes>
+       <note>Mottoet er de første vers i Goethes <xref poem="goethe2001061601a,1-3"/> fra <i>Faust. Der Tragödie Erster Teil</i> (1808).</note>
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
     <source pages="151-188"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<nonum><right><small>Ihr nach euch wieder, schwankende Gestalten!</small></right></nonum>
+<nonum><right><small>Die früh sich inst dem trüben Blick geziegt.</small></right></nonum>
+<nonum><right><small>Besuch' ich wohl euch diesmal fest zu halten?</small></right></nonum>
+<nonum><right><small><w>Goethe</w></small></right></nonum>
+    
 Kom sæt Dig her! Saa syg og mat
 Kan Du ei længer vinde.
 Fjeldstien var Dig altfor brat,
@@ -2749,10 +2749,10 @@ Din Ven vil henrykt sidde hos
 I stille, sød Fortabning.
 
 Vær rolig kun! jeg har jo sagt:
-Forelsket er jeg ikke;
+<w>Forelsket</w> er jeg ikke;
 Det er en ganske anden Magt,
 Som fængsler mine Blikke.
-Mit Hjerte, koldt - ei sandt? - som dit,
+Mit Hjerte, koldt - ei sandt? - som Dit,
 Maa gyse for Din Vrede;
 Men kan da ogsaa mere frit
 Din Herlighed tilbede.
@@ -2802,7 +2802,7 @@ En Riimsmed saa forsynder
 At sætte det i Spil og Sang  -
 Lad gaae! - nu jeg begynder:
 
-       Dybt inde i den dunkle,
+    Dybt inde i den dunkle,
 Den sommergrønne Skov,
 Hvor Hjorten strøifer Græsset
 Med sin vingelette Klov,
@@ -2857,7 +2857,7 @@ Hans sorte Øie lyner
 Til Pigebarnet hen.
 
 Han knuger fast sin Riffel,
-Hans Læbe er bleeg,
+Hans Læbe er bleg,
 Et Smiil, et haanligt, ligger
 Om det kulsorte Skjæg;
 Han nærmer sig til Pigen
@@ -2878,10 +2878,10 @@ Mellem Qvinde og Mand!
 Den Taare paa Din Kind
 Ei meer end det usle Fnug,
 Som hvirvles op af Vind!
-Du hader mig, Regisse!
+Du hader mig, <w>Regisse!</w>
 Saa hader jeg igjen -
 Mig seer Du aldrig meer,
-Men ei heller Din Ven.
+Men eiheller Din Ven.
 
 Jeg bød Dig som Offer
 Mit Hjerte, Sjæl og Blod, -
@@ -2908,13 +2908,13 @@ Saa bønlige Blik!
 Thi mig det gjælder ikke -
 Men han skal aldrig naae
 At drukne sine Øine
-I denne Himmels Blaae.
+I denne Himmels Blaa.
 
 Idag skal han vandre
 Med mig den samme Vei,
 Dødbitter for os begge -
 Først han og saa jeg!
-Regisse! Dine Blikke,
+<w>Regisse!</w> Dine Blikke,
 Den Taare paa Din Kind
 Jeg agter som det usle Fnug,
 Der hvirvles op af Vind.
@@ -2923,7 +2923,7 @@ Du hader mig, jeg veed det,
 Nu hader jeg igjen!
 Trøst dig! mig seer Du aldrig,
 Men ei heller Din Ven,
-Saa sandt Gud mig hjælpe!
+Saa sandt Gud mig hjelpe!
 Jeg sværger, som jeg svoer -
 Hans egen Hund skal støve
 Og finde mig hans Spor!''
@@ -2974,7 +2974,7 @@ Ret som han vilde spørge:
 ,,Hvad feiler Dig dog?''
 
 Hans Øie, sært veemodigt
-Og  glandsfuldt og stort,
+Og glandsfuldt og stort,
 Fast hvilede i hendes:
 ,,Hvad har man Dig gjort?''
 Da foer der en Rødme
@@ -2994,7 +2994,7 @@ I Hast et lille Blad:
 ,,Dit Liv er i Fare,
 Og derfor jeg nu
 Ei længer kan fortie:
-Min Eneste er du!
+Min Eneste er Du!
 Hvad ikke for Alverden
 Jeg ellers vilde sagt,
 Det lægger paa min Tunge
@@ -3003,8 +3003,8 @@ En guddommelig Magt!
 Bevar Dit Liv, Du Elskte!
 For Dig og Din Brud,
 Før lumsk Dig indhenter
-Hans lurende Skud.
-Jeg sender Dig Murad,
+<w>Hans</w> lurende Skud.
+Jeg sender Dig <w>Murad</w>,
 Mit eneste Bud, -
 O, maatte han Dig finde, -
 Velsigne Dig Gud!''
@@ -3043,7 +3043,7 @@ Stirrer ad Veien hen;
 Med een Haand paa Bøssen,
 Den anden paa sit Bryst,
 I Længsel han lytter
-Til Hævnens søde Røst.
+Til Hevnens søde Røst.
 
 Som Kalk er hans Ansigt,
 Hver Muskel er spændt,
@@ -3108,7 +3108,7 @@ Før han sendte sit Skud, -
 I lange Drag han vilde
 Tømme Bægeret ud.
 
-Nu - nu det ham tykkes,
+Nu - <w>nu</w> det ham tykkes,
 Ei Meer var deri -
 Men hurtigt som en Tanke
 Var Faren forbi! -
@@ -3122,9 +3122,9 @@ Mod den grønklædte Jord, -
 Det morderiske Skud
 Mod Himmelen foer!
 Han vreed sig, han snoede sig,
-Han kjæmped og han skreeg, -
+Han kjæmped og han skreg, -
 Da fløitede Junkeren,
-Og Hunden fra ham veeg.
+Og Hunden fra ham veg.
 
 Men et Blik, et fortvivlet,
 Hvori der samlet laae
@@ -3142,7 +3142,7 @@ Frelser, sin Hund.
 Hans Hjerte ret saa voldsomt,
 Saa varslende slog,
 En Strøm af hellig Glæde
-Ham gjennem Sjælen drog.
+Ham gjennem Sjelen drog.
 
 Han kasted sig med Taarer
 Paa sit Ansigt og bad;
@@ -3171,7 +3171,7 @@ Kun en liflig Nattergal
 Udstrømmede sin Veemod
 I den lyttende Dal.
 
-I Haugen sad Regisse
+I Haugen sad <w>Regisse</w>
 Og flettede en Krands;
 En bitter Taare dæmred
 Hendes Øies klare Glands.
@@ -3198,14 +3198,14 @@ Som i Verden er til,
 Den slettes ud af Hjertet,
 Naar Kjærlighed kun vil!
 
-,,Jeg veed det - ak, hun sover!
+,,Jeg veed det - ak, <w>hun</w> sover!
 Du Elskede min!
 Men jeg har og en Moder,
-Hun er jo ogsaa din.
+Hun er jo ogsaa Din.
 Og jeg har et Hjerte
 Ret ærligt og frit, -
 O, Du min Frelserinde!
-Det, veed Du, er jo dit!''
+Det, veed Du, er jo Dit!''
 
 Sødt toned Aftenklokkens
 Smertedulmende Klang,
@@ -3216,8 +3216,8 @@ Om hans Hals, om hans Kind,
 Og saae med sine Øine
 Til hans Hjertekammer ind.
 
-Men han sad henrykt stille,
-Saa taus veemodig hun, -
+Men <w>han</w> sad henrykt stille,
+Saa taus veemodig <w>hun</w>, -
 Da søgte til hans Læber
 Hendes blussende Mund.
 Det Forgangne, det Kommende
@@ -3225,7 +3225,7 @@ Forsvandt dem af Hu,
 Og deres Hjerter slog kun
 For det salige Nu! -
 
-Men foran dem sad Murad
+Men foran dem sad <w>Murad</w>
 Den trofaste Vagt,
 Med sit ærlige Øie
 Han holdt dem i Agt;
@@ -3281,7 +3281,7 @@ Paa een af Skræntens Stene.
 
 Foran sig har hun tændt et Baal,
 Rødt farves hendes Kinder;
-Hvor glimrer ei den Bævernaal,
+Hvor glimrer ei den Zitternaal, <!-- Svends kilde har Bævernaal -->
 Som hendes Fletning binder!
 Og saa den store, lodne Hund,
 Hvor vagtsomt, spidst dens Øre -
@@ -3298,10 +3298,10 @@ Saa sang de begge To en Sang,
 Den sørgeligt i Skoven klang.
 
 Den Første sang: ,,Min Hjertenskjær!
-Farvel, saa sees vi aldrig meer!''
+Farvel! saa sees vi aldrig meer!'' <!-- Svends kilde afviger her -->
 
 Den Anden sang: ,,Min Hjertensven!
-Farvel, vi sees ei meer igjen!''
+Farvel! vi sees ei meer igjen!'' <!-- Svends kilde afviger her -->
 
 Den Første sang: ,,Paa fjerne Vei
 Min Hjertenskjær jeg glemmer ei!''
@@ -3338,7 +3338,7 @@ Jeg aldrig turde haabe;
 Den sendte til min Smerte hen
 En kraftig Balsamdraabe!
 Og, er vor Afsked evig nu -
-Mig helliggjort er Livet;
+<w>Mig</w> helliggjort er Livet;
 En sød, en fast Fortrøstning du
 Min Evighed har givet.
 
@@ -3355,14 +3355,14 @@ O! siig mig end i samme Sprog,
 Som nys mig sødt henrykked,
 Veltalende og varmt, og dog
 Med Simpelhed kun smykket,
-At Du er min! - at i mit Savn
+At Du er <w>min!</w> - at i mit Savn
 Du mig ei reent vil glemme!
-At naar vi mødes hist, mit Navn
+At naar vi mødes <w>hist</w>, mit Navn
 Jeg hører fra Din Stemme! -
 
 Farvel! o, fat dig! - see, endnu
 Gaae Folk paa Promenaden.
-Musik fra Dandsesalen, du!
+Musik fra Dandsesalen, Du!
 Smukt bruser gjennem Gaden.
 Dit Øie søger? hisset jo
 De komme ud fra Salen,
@@ -3386,7 +3386,7 @@ Din Tante og Gemalen.
       <note>Se <xref poem="stagnelius2001051004"/>.</note>
    </notes>
     <source pages="191-192"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Solen alt synker, Bølgerne gaae,
@@ -3409,12 +3409,12 @@ Foden, fortryllet, ei mægter at gaae;
 Brat dog hun presser sin Haand mod Bryst,
 Heftigt, med Suk hun hæver sin Røst:
 
-»Havmand! skjøn Havmand! Din Sang er sød,
+,,Havmand! skjøn Havmand! Din Sang er sød,
 Deiligt den tidt for mit Øre lød;
 Havmand, skjøn Havmand! kom vel ihu:
-<i>Salig</i> vorder dog aldrig Du!«
+<w>Salig</w> vorder dog aldrig Du!''
 
-<i>Aldrig</i> - gjentoned fra Skov og Vang,
+<w>Aldrig</w> - gjentoned fra Skov og Vang,
 Flux forstummed den venlige Sang;
 Stille han sank i sin Vugge vaad,
 Dybet kun hørte hans bittre Graad.
@@ -3428,7 +3428,7 @@ Dybet kun hørte hans bittre Graad.
    <indextitle>Forvandling</indextitle>
    <firstline>Den Ungersvend, den Jomfru</firstline>
     <source pages="193-194"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Den Ungersvend, den Jomfru
@@ -3602,17 +3602,17 @@ Hed han <w>Gaston den Gode</w>.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="203-221"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <nonum><center>1.</center></nonum>
 
-Liden Karen hun sidder
+Liden <w>Karen</w> hun sidder
 Saa trøstigt ved sit Spind;
 Men Mairosen pranger
 Ei meer paa hendes Kind.
 
-Der stander nu en Lilie,
+<w>Der</w> stander nu en Lilie,
 Men i Hjertet Rosens Braad;
 Hver Morgen og hver Aften
 Hun vander dem med Graad.
@@ -3646,7 +3646,7 @@ Sit Blik til hendes Søn.
 
 <nonum><center>2.</center></nonum>
 
-Liden Karen sin Kaabe
+Liden <w>Karen</w> sin Kaabe
 Over Skulderen slaaer,
 Hun binder Silkeklædet
 Omkring de blonde Haar.
@@ -3674,10 +3674,10 @@ Det kjære Jægerhorn.
 Hvor ofte har hun hørt det
 Lysvaagen i sin Seng;
 Da sittred hun, da bæved
-I Hjertet hver en Streng.
+I Hjertet hver en Stræng.
 
-Da lokked det saa lifligt:
-,,O, kom! mit Hjertes Sjæl!''
+<w>Da</w> lokked det saa lifligt:
+,,O, kom! mit Hjertes Sjel!''
 Nu klang det vildt og bittert
 Som et evigt Farvel!
 
@@ -3688,7 +3688,7 @@ Som et evigt Farvel!
 Saa var det ved St. Huberts
 Den grønne Jægerfest;
 I Skoven ved Capellet
-De samled sig til Gjæst.
+De samled sig til Gjest.
 
 Rundt om den lille Kirke
 Der var et Sovested,
@@ -3718,14 +3718,14 @@ Da skulde signe dem.
 Frem bar han Piil og Armbrøst
 Og blanke Spyd og Kniv,
 Og Munkens fromme Bønner
-Da gjældte Hjortens Liv.
+Da gjeldte Hjortens Liv.
 
 Først maatte han dog sværge
 Ved Helgen, Horn og Hund,
 At ingen Falsk og Ondskab
 Han førte i sin Mund;
 
-At ingen Mørkets Kunster
+At ingen Mørkets Konster
 Han øved paa sin Jagt,
 At han aldrig havde sveget
 Sit Hjertes Troskabspagt.
@@ -3764,7 +3764,7 @@ Om den kraftige Læg;
 Hans Skuldre vare brede,
 Men graasprængt hans Skjæg.
 
-Mørk skreed han hen ad Veien
+Mørk skred han hen ad Veien
 Med fast og langsomt Fjed,
 Ret liig det skumle Skybjerg,
 Der just op bag Skoven gleed.
@@ -3803,7 +3803,7 @@ Alt knælede ned,
 Han løfted alt sin Haand
 Til den hellige Eed:
 
-At ingen Mørkets Kunster
+At ingen Mørkets Konster
 Han øved paa sin Jagt,
 At han aldrig havde sveget
 Sit Hjertes Troskabspagt.
@@ -3825,7 +3825,7 @@ Og Læben sittred, hvid.
 
 ,,Forstød mig, om Du vil da!
 Jeg skjenker Dig Dit Ord;
-Men frels Din dyre Sjæl,
+Men frels Din dyre Sjel,
 Mens Du vandrer end paa Jord!
 
 Forstød mig, om Du vil da!
@@ -3883,7 +3883,7 @@ De sorte Skovens Ravne
 Fra Rederne fløi.
 
 Og ved Varselets Stemme
-Fra den strenge Hævnens Tolk
+Fra den strenge Hevnens Tolk
 Ned styrted paa sit Ansigt
 Det forfærdede Folk.
 
@@ -3927,7 +3927,7 @@ Da vandred der et Liigtog
 Gjennem Skov, over Eng.
 
 Af løvfulde Grene
-En Baare var bygt;
+En Baar de havde bygt; <!-- Svends kilde afviger her -->
 Leiet var redt af Kløver
 Og med Markblomster smykt.
 
@@ -3951,12 +3951,12 @@ En sagte Vuggesang;
 Alt under Skovens Hvælving
 Sorgdyssende den klang:
 
-,,Sov sødt og hviil, Du trætte Barn!
+,,Sov sødt og hvil, du trætte Barn!
 Du slumred ind i Vaar;
 Snart hisset som en Rose
 Du herligt opstaaer.
 
-Sov sødt og hviil, Du trætte Barn!
+Sov sødt og hvil, Du stakkels Barn! <!-- Svends kilde afviger her -->
 Alt i Din grønne Bo;
 Dit sorrigfulde Hjerte
 Har nu slaget sig til Ro.
@@ -4135,7 +4135,7 @@ En Guddomsflamme staaer som Vagt.
    <toctitle>Helene. Et Sagn</toctitle>
    <firstline>Der ligger en Borg paa skovgroet Hald</firstline>
     <source pages="228-240"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Der ligger en Borg paa skovgroet Hald,
@@ -4148,9 +4148,9 @@ I Luften dirrer Lærkens Qvad,
 Fra Linden synker det duftende Blad.
 
 Paa Borgens Altan, med Haand paa Kind,
-Der sidder <i>Helene</i> med tankefuldt Sind.
+Der sidder <w>Helene</w> med tankefuldt Sind.
 
-Der sidder <i>Helene</i>, det Lilieskud,
+Der sidder <w>Helene</w>, det Lilieskud,
 Og stirrer med Længsel i Dalen ud.
 
 Hvad buldrer vel hist i grønne Dal?
@@ -4166,7 +4166,7 @@ De Staalplader rasled og Hestene sprang,
 Saa mægtigt skingred Trompetens Klang.
 
 Den Vægter blæste, den Vindebro sank,
-Dybt neied <i>Helene</i>, som Vidien rank.
+Dybt neied <w>Helene</w>, som Vidien rank.
 
 I Salen stande de stærke Tolv,
 I blankt Staalharnisk, med breden Skjold.
@@ -4175,22 +4175,22 @@ Som Støtter af Malm de stande tyst,
 Knap sittrer den gyldne Kjede paa Bryst.
 
 Da springer den Fløidør svævende op,
-Ind træder <i>Helene</i> med Terners Trop.
+Ind træder <w>Helene</w> med Terners Trop.
 
 Hun neier sig væn for Hver især:
-»Velkommen, velkommen, o, Broder kjær!«
+,,Velkommen, velkommen, o, Broder kjær!''
 
 Hun rækker en duftende Krands til Hver:
-»Velkommen, I Brødre! fra Ledingsfærd!«
+,,Velkommen, I Brødre! fra Ledingsfærd!''
 
 Hun fylder dem Hver en gylden Pokal:
-»Velkommen, I Brødre! til Fædres Hal!«
+,,Velkommen, I Brødre! til Fædres Hal!''
 
-»Velkommen, I Brødre! og siger nu frem:
-Hvad bringer I mig fra Kampen hjem?«
+,,Velkommen, I Brødre! og siger nu frem:
+Hvad bringer I mig fra Kampen hjem?''
 
 Da mæled den Ældste hel alvorsfuld:
-»Vi bringe Dig intet Smykke af Guld.«
+,,Vi bringe Dig intet Smykke af Guld.''
 
 Vi bringe Dig intet Perlebaand; -
 Vi bringe tolv Beilere til Din Haand!
@@ -4223,7 +4223,7 @@ Og Hver har svoren os Hevn og Had,
 Hvis ei Du skjenked, hvad Een Dig bad.
 
 Og Alle har lovet os Lykken slem,
-Hvis ei Du bønhørte Een af dem!«
+Hvis ei Du bønhørte Een af dem!''
 
 Den Jomfru neied sig dybt for hver,
 Hun skifted sit favre Rosenskjær.
@@ -4231,7 +4231,7 @@ Hun skifted sit favre Rosenskjær.
 Mod Barm hun pressed sin Haand med Vee,
 Og Taaren randt over Kindens Snee,
 
-»O, Broder kjære! barmhjertig vær!
+,,O, Broder kjære! barmhjertig vær!
 Og lad mig dvæle hos Eder her.
 
 Jeg vil ei bytte mit Jomfrunavn
@@ -4247,7 +4247,7 @@ Nei, her vil jeg smykke min Faders Gaard,
 Og her vil jeg læge hver Sot og Saar;
 
 Og muntre Jert Sind med Sang og Spil,
-Og lukke tilsidst <i>mit</i> Øie til!
+Og lukke tilsidst <w>mit</w> Øie til!
 
 Jeg spørger Jer nu, ved Christi Blod,
 Har jeg ei været Jer Søster god?
@@ -4256,7 +4256,7 @@ Og har jeg været Jer Søster god,
 Saa tigger jeg her for Eders Fod:
 
 O, sværger mig helligt ved Korset til,
-At aldrig I mig forstøde vil!«
+At aldrig I mig forstøde vil!''
 
 Frem treen de Brødre, - og mild og blid
 Hver kyssed den Jomfrukind saa hvid.
@@ -4264,14 +4264,14 @@ Hver kyssed den Jomfrukind saa hvid.
 Og alle Sværde af Skeden foer,
 Og Alle som Een paa Korset svoer:
 
-»Du var os en Søster, god og from,
+,,Du var os en Søster, god og from,
 Du var os vor helligste Helligdom;
 
 Saa sværger jeg Dig paa Korset til,
 At aldrig jeg Dig forstøde vil;
 
 Men kjæmpe for Dig og døe, - saavist
-Mig hjelpe Gud og den hellige Christi« -
+Mig hjelpe Gud og den hellige Christi'' -
 
 - Tre Dage svandt; den Vægter sang
 Sit Midnatsvers paa Taarnets Gang.
@@ -4289,7 +4289,7 @@ Hvad bruser ud fra den grønne Skov?
 En Gangerskare med jernlagt Hov!
 
 Den Vægter sætter sit Horn for Mund,
-Saa- blæser han ud over Dal og Lund.
+Saa blæser han ud over Dal og Lund.
 
 Det gjalder saa frisk som Hanegal, -
 Tolv Horn ham svare fra dunkle Dal.
@@ -4297,14 +4297,14 @@ Tolv Horn ham svare fra dunkle Dal.
 Tolv Horn, med Gabet mod Borgen vendt,
 De Stemmer er ham saa vel bekjendt.
 
-»Herud, I Brødre! med Sværd og Skjold,
+,,Herud, I Brødre! med Sværd og Skjold,
 De Beilere rende mod Muur og Vold!
 
 Herop, I Svende! ved Fakkelglands
 I træde saa lystig en Vaabendands.
 
 Herop! herud! baade Ridder og Pilt,
-Det gjelder at svinge sig kjækt og snildt!«
+Det gjelder at svinge sig kjækt og snildt!''
 
 De Beegpander blussed fra Borgetind,
 Og Svendene strømmed der ud og ind.
@@ -4325,7 +4325,7 @@ Hvor Køllen drøned, en Pande brast,
 Hvor Øxen sænktes, der sad den fast.
 
 Vildt Hornene skingred, Kampraabet lød:
-»<i>Helene!</i> <i>Helene!</i> Seir eller Død!«
+,,<w>Helene!</w> <w>Helene!</w> Seir eller Død!''
 
 Saa Mand mod Mand i det slibrige Blod,
 Med Haand imod Haand og Fod ved Fod.
@@ -4333,10 +4333,10 @@ Med Haand imod Haand og Fod ved Fod.
 Mens Sværdene hvined og Pladerne sprang,
 De Landser rasled og Kjæmperne sang.
 
-Eet Kamp vers sang baade Fjende og Ven:
-»<i>Helene!</i> og Seier! - <i>Helene</i> igjen!«
+Eet Kampvers sang baade Fiende og Ven:
+,,<w>Helene!</w> og Seier! - <w>Helene</w> igjen!''
 
-Paa Trapper og Gange paa Murens Krands
+Paa Trapper og Gange, paa Murens Krands
 Der stod den vildeste Dødedands.
 
 Ned vælted et Taarn med Damp og Qvalm,
@@ -4370,13 +4370,13 @@ Og Blodet strømmer! - men fast i Fod
 Hver Broder falder just, hvor han stod! -
 
 - De Beilere stønne af mødigt Bryst:
-»Nu har vi da endt den blodige Høst!«
+,,Nu har vi da endt den blodige Høst!''
 
 De Beilere støtte sig trætte til Sværd:
-»Hvor er nu den Løn, som er Kampen værd?«
+,,Hvor er nu den Løn, som er Kampen værd?''
 
-»Hvor er nu Prisen, vi vandt tilsidst?
-Hvor er den yndige Rosenqvist?«
+,,Hvor er nu Prisen, vi vandt tilsidst?
+Hvor er den yndige Rosenqvist?''
 
 De løfte det Skjoldtag sagtelig væk:
 Da blegned hver Beiler af Vee og Skræk.
@@ -4394,7 +4394,7 @@ Men øde stod Borgen paa høien Hald,
 Ved Foden skummed det hvide Fald.
 
 I Gaarden vifted den grønne Lind,
-Der laae <i>Helene</i> med hviden Kind;
+Der laae <w>Helene</w> med hviden Kind;
 
 Hvor rundt om hende en Sørgevagt
 Af trofaste Brødre sig havde lagt.
@@ -4409,7 +4409,7 @@ Fra Linden flagred det duftende Blad.
     <title>Tre Beilere</title>
     <firstline>Histnede ved Bækken</firstline>
     <source pages="241-248"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Histnede ved Bækken,
@@ -4419,12 +4419,12 @@ Og fletter sit Haar;
 Og Fugle med Fiske
 Saa listigt i Løn
 De qviddre, de hviske:
-»Hvor Hun dog er kjøn!«
+,,Hvor Hun dog er kjøn!''
 
 Høit Bølgerne buldre
 Ved Møllen forbi:
-»De sneehvide Skuldre,
-Dem favnede vi!«
+,,De sneehvide Skuldre,
+Dem favnede vi!''
 Mens ivrigt de strømme
 Med Hjulet omkring,
 Den Møller maa drømme
@@ -4461,34 +4461,34 @@ Sig Junkeren nærmer,
 Duunskjægget om Mund,
 Med guldstukne Ærmer,
 Med Horn og med Hund:
-»O, vil Du ei være
+,,O, vil Du ei være
 Kjær Huusfruen min?
 Du Fløiel skal bære,
-Og blødt Hermelin!«
+Og blødt Hermelin!''
 
 Den Præstemand stønner
 I sorten Talar,
 De ydmygste Bønner
 Hans Hjerte frembar:
-»Jeg var, for Exempel,
+,,Jeg var, for Exempel,
 En Huusbond for Dig!
 Det yndigste Tempel
-Da blev Du for mig!«
+Da blev Du for mig!''
 
 Den Møller, den hvide,
 Sig lister derind,
 Han staaer ved en Side
 Med blussende Kind:
-»Ak, end dog min Nød, Du!
+,,Ak, end dog min Nød, Du!
 Ved Kjærligheds Magt, -
 Saa kraftigt et Brød Du
-Vist aldrig faaer smagt!«
+Vist aldrig faaer smagt!''
 
-Men rask hun sig rejser,
+Men rask hun sig reiser,
 Saa stolt og saa rank,
 Og Hovedet kneiser
 Med Fletningen blank:
-»Jeg ikke mig sælger
+,,Jeg ikke mig sælger
 For Guld og for Glands;
 I Elskov jeg vælger
 Og mister min Krands.
@@ -4527,7 +4527,7 @@ Godmorgen! Godnat!
 Jeg spored i alle
 De Viser, han qvad,
 Som de nu kan falde,
-Om Elskov han bad!«
+Om Elskov han bad!''
 
 - Saa vied da Præsten
 Den hellige Krands;
@@ -4551,9 +4551,10 @@ De dandser endnu!
    <firstline>Snart Natten var forbi; forvildet</firstline>
    <notes>
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+      <!-- TODO: Hvor stammer mottoet fra? -->
    </notes>
    <source pages="249-274"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <nonum><right><small>''O, bella Italia! quanto son <i>dolci</i></small></right></nonum>
@@ -4621,13 +4622,13 @@ En velbestøvlet, skjægget Jæger
 I grøn Collet og drak sit Bæger,
 Mens Hunden ved hans Fødder laae.
 I Baggrund Bord og Bænke stode;
-Der Britten sad i sin sorte Frak,
+<w>Der</w> Britten sad i sin sorte Frak,
 Omstimlet af det lurvede Pak
 Af Børn og Mænd, som paa ham gloede
 Med Griin, paatrængende som Fluer
 Om Aftenlampens røde Luer.
-Men han sad alvorsfuld og bleeg,
-Den sindige Ro ei fra ham veeg.
+Men <w>han</w> sad alvorsfuld og bleeg,
+Den sindige Ro ei fra ham veg.
 Hans ene Been var stærkt banderet,
 Den venstre Arm han bar i Bind,
 Paa et Øie var han næsten blind,
@@ -4663,22 +4664,22 @@ Som Hjertets hede Længsel svaled,
 De milde Stjerner, som neddaled
 Og skabte Himlen i mit Bryst.
 Ei større Salighed jeg veed,
-Sir John, end en Qvindes Kjærlighed -
+Sir <w>John!</w> end en Qvindes Kjærlighed -
 Det er jo i en samlet Sum
 Det hele Paradis i Grunden!''
 
-   Sir John tog sin Cigar af Munden
+    Sir John tog sin Cigar af Munden
 Og spyttede og sagde: ,,Hm!''
 
-   ,,Kan jeg beskrive Dig den Engel?
-Britannia! Du, mit stolte Land,
+    ,,Kan jeg beskrive Dig den Engel?
+Britannia! Du mit stolte Land,
 Troer jeg, alene fostre kan
 En saadan ædel Blomsterstængel!
 Saa livlig og god! saa kraftig sund!
 Saa kløgtig, at fra hendes Mund
 Var hvert et Ord mig et Orakel;
-Og at hun vandred blandt os om,
-Som min - mit Hjertes Eiendom,
+Og at <w>hun</w> vandred blandt os om,
+Som min - <w>mit</w> Hjertes Eiendom,
 Mig et ufatteligt Mirakel!
 Jeg, efter et stærkt bevæget Liv,
 En vild Omtumlen, nød min Ro
@@ -4690,7 +4691,7 @@ Jeg tænkte mig det Secund saa skjønt,
 Naar jeg kom hjem i Slottets Sale
 Og trykkede hende til mit Bryst,
 Og fandt min rigeste, bedste Lyst
-I hendes Smiil og snilde Tale!
+I hendes Smil og snilde Tale!
 Men ak! en selsom, sygelig Længsel
 Snart hendes hele Sind betog.
 Det lignede en voldsom Trængsel,
@@ -4707,7 +4708,7 @@ I eet ustillet Ønske smægted, -
 At veemodig hendes Taare randt!
 Det smerted mig - og, det er sandt,
 Det smerted dybt - og dog jeg nægted!
-Thi saadan er vi - just saadan!
+Thi saadan er vi - just <w>saadan!</w>
 I Egenkjærligheds kolde Pandser
 Staaer ubevægelig en Mand;
 Naar paa et Offer det kommer an,
@@ -4716,7 +4717,7 @@ Mens Qvinden, stærkere end han,
 Kan Savn og Sorg med Kraft bekjæmpe,
 Ja, selv den Taare skjule kan,
 Som vilde smelte, dulme, dæmpe!
-Dog - gutta cavat lapidem!
+Dog - <i>gutta cavat lapidem!</i>
 Den Mand jeg dog gad skue, hvem
 En saadan Engels Sorg ei rørte!
 Hun taug, - men hendes Øie førte
@@ -4729,10 +4730,10 @@ Og lagde min Villie for hendes Fod!
 Nu - kald mig svag og kald mig dum,
 Kort, hvad Du vil - nok sagt, vi reiste!''
 
-   Sir John tog Hatten af og kneiste
+    Sir John tog Hatten af og kneiste
 Og glatted sit Haar og sagde ,,Hm!''
 
-   ,,Vi reiste. Det var en bitter Stund,
+    ,,Vi reiste. Det var en bitter Stund,
 Jeg sagde Farvel til Park og Lund,
 Til Hjorten i mine Egeskove,
 Til hver en Blomst og til min Hund
@@ -4779,7 +4780,7 @@ Og trods den skjæggede Kunstnerhær
 Med Avind, Kritik og anden Besvær,
 Fandt jeg mig hjemlig og fortrolig.
 Den uvant tidlige, skjønne Vaar
-Os lokkede tidt fra de skumle Vraaer,
+Os lokkede tidt fra de skumle Vraa'r,
 Fra Stank og Smuds og fugtig Skimmel,
 Ud fra den Sol-ophedede Muur
 Til Bjergenes frie, svale Natur
@@ -4827,7 +4828,7 @@ Ved Fødderne og med Spark og Stød
 Styrtet tilligemed Kudskens Liig
 Ned i den sorte Afgrunds Skjød.
 Det Sidste, jeg hørte, var et Skrig -
-Et hvinende - min Emmy's Stemme!
+Et hvinende - min <w>Emmy's</w> Stemme!
 Saa skjærende det i Mindet staaer,
 At om jeg saa leved tusind Aar,
 Det Skrig gik aldrig mig i Glemme! -
@@ -4853,17 +4854,17 @@ Af lumske Rænker og krumme Veie
 Med Møie fik det bragt saa vidt,
 At de fik Lov, for Guld at handle
 Om Fred med en fredløs Bandit.
-Saa Sted og Tid kan Alt forvandle!
-Thi Ret og Skjel - see det er Tingen -
+<w>Saa</w> Sted og Tid kan alt forvandle!
+Thi Ret og Skjel - see det er Tingen,
 Tilmaales her, saa knapt det kan,
-Fast som en Gunst til Landets Mand,
+Fast som en Gunst til <w>Landets</w> Mand,
 Men er Du Fremmed - har Du slet ingen!
 Man skulde troe, at uden Saar
 Og uden Fare de vilde hæle
 Og dele de Koster, de lade stjæle, -
 Saa lempeligt tilværks man gaaer
 Med hine faldne Christensjæle! -
-Kort sagt: vi brugte min sorte Jack,
+Kort sagt: vi brugte min sorte <w>Jack</w>,
 Der sluppet var med Hug og Skræk,
 Som vor Gesandt til ,,Bjergets Fyrste'',
 Og bragte seent, ved Bud paa Bud,
@@ -4874,10 +4875,10 @@ Min elskte Viv igjen modtage;
 Thi, efter given Leide, han
 Vil bringe hende selv tilbage.''
 
-   Her Britten taug, forover bøiet,
+    Her Britten taug, forover bøiet,
 Med høire Haand han dækked Øiet,
 Og mens han gav sin Smerte Rum,
-Sir John fik Tid at sige: ,,Hm!''
+Sir <w>John</w> fik Tid at sige: ,,Hm!''
 
 
 <nonum><center>3.</center></nonum>
@@ -4889,7 +4890,7 @@ Som mig credentsede Vinen før,
 Og stirrede ned ad Veiens Helding.
 Hun holdt over Øiet sin brune Arm
 Og skygged for Morgensolen varm,
-Der spredte paa Sletten riig Forgylding,
+Der spredte paa Sletten rig Forgylding,
 Mens tusind Vagtler fjern og nær
 Med Sang den bragte deres Hylding.
 Da peged hun og skreeg: ,,See der!
@@ -4905,7 +4906,7 @@ Og styrede med den spidse Stang
 De to uhyre Oxekroppe.
 Og i hans Stemme var en Klang,
 En underlig, bevæget Svæven,
-Der trænger dybt i Sjælen ind
+Der trænger dybt i Sjelen ind
 Og vækker en hysterisk Bæven,
 Som perser Taaren frem paa Kind!
 I Vognens brede Bund der laae
@@ -4925,7 +4926,7 @@ Han tegned af alle Livsens Kræfter.
 I kold og stolt og værdig Ro
 Sig holdt de engelske Lorder to.
 Nu Vognen standsed, og med et Sæt
-Han sprang til Jorden, kjæk, adrait;
+Han sprang til Jorden, kjæk, adroit;
 Og med Panden hævet, frank og frit,
 Frem treen den spraglede Bandit!
 Med Dolk i Belte, med spidse Hat,
@@ -4948,7 +4949,7 @@ Indfattet i forgyldte Rammer
 At smykke mangt yndigt Sovekammer
 Blandt Thorvaldsen, Rossi, Goethe og Worm! <note>Bærentsen grundlagde i 1837 en litografisk anstalt, hvorfra der bl.a. udsendtes portrætter af kendte personer. Tenoren Pietro <i>Rossi</i> var en af de italienske sangere som fra 1841 optrådte på Hofteatret (Christiansborg). Den unge Petri <i>Worm</i> blev i 1837 henrettet for et sensationelt rovmord. Hans kønne ansigt skaffede ham et stort damepublikum (se W. Schorn, <i>Da Voldene stod,</i> 1905, side 23).</note>
 
-   Til Vognen han sig atter vendte,
+    Til Vognen han sig atter vendte,
 Hvor Oxerne af Aag man spændte,
 Og med Haanden, fuld af Rov og Mord,
 Han løfted den Lilieblomst fra Nord,
@@ -4959,14 +4960,14 @@ Og - var det en Hændelse? - hun sank,
 Idet til Jord han hende satte,
 Med sit imod hans Ansigt ned
 Og strøifed med sin silkeglatte,
-Sin blege Kind hans Mund, der heed
+<pb n="272"/>Sin blege Kind hans Mund, der heed
 En blussende Rødme efterlod;
 Den kort kun som et Lynblink stod
-Og med fordoblet Blegnen streed,
-Mens smidig hun af hans Arme gleed!
-Den hele K reds stod spændt og stum, -
-Sir John og jeg med aabne Munde, -
-Vort Øie mødtes, og nu han kunde
+Og med fordoblet Blegnen stred,
+Mens smidig hun af hans Arme gled!
+Den hele Kreds stod spændt og stum, -
+Sir <w>John</w> og jeg med aabne Munde, -
+Vort Øie mødtes, og <w>nu</w> han kunde
 Ei længer styre et sagte ,,Hm!''
 Mens han nu, paa Landets Skik og Viis,
 Banditen rigeligt betalte
@@ -4978,14 +4979,14 @@ Hvor hun med rolige, matte Blikke
 Lyttede til hans Rednings Under.
 Jeg saae ham smile og venligt nikke,
 Og pege paa sine mange Vunder,
-Men - det dybeste Saar - det saae han ikke!
+<pb n="273"/>Men - det dybeste Saar - det saae han ikke!
 Og da hun nu rank i Vognen stod,
 Eet Blik hun sagte glide lod
-Hen mod de fjerne Bjerges Blaae,
+Hen mod de fjerne Bjerges Blaa,
 Der drog sig som en fyldig Aare
 Langs Himlens Rand, - veemodigt, kort!
 Og derpaa drog hun atter bort
-De søde Øine, hvori jeg saae
+De søde Øine, hvori <w>jeg</w> saae
 En Løndom dyb, - men ingen Taare!
 Med Sløret om sin hvide Kind
 Tæt svøbte hun sig i sin Kaabe,
@@ -4998,7 +4999,7 @@ I Barmen begge de stærke Hænder,
 Banditen stod, og i sorte Skjæg
 Han loe med skinnende hvide Tænder.
 
-   Da Vognen nu svandt for mine Blikke,
+    Da Vognen nu svandt for mine Blikke,
 Jeg vendte min Fod igjen mod Rom,
 Mens det i Tankerne løb mig om:
 ,,Det dybeste Saar - det saae han ikke!''
@@ -5006,9 +5007,12 @@ Mens det i Tankerne løb mig om:
 </poem>
 
 
-<section level="2">
+<section level="3" id="winther2018090103">
 <head>
-   <toctitle>Bægeret. En Hverdagshistorie</toctitle>
+    <title>Bægeret</title>
+    <toctitle>Bægeret. En Hverdagshistorie</toctitle>
+    <subtitle>En Hverdagshistorie</subtitle>
+    <source pages="275-328"/>
 </head>
 <content>
 
@@ -5020,7 +5024,7 @@ Mens det i Tankerne løb mig om:
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="277-282"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 ,,Hvi sørger dog saa saare
@@ -5033,9 +5037,9 @@ Du er jo riig og smuk!
 Hvad Kummer kan Du da bære?
 Forklar mig dog Dit Suk!''
 
-Undseelig hun skjulte Øiet
+Undseelig <w>Hun</w> skjulte Øiet
 Dybt i sin Moders Barm;
-Krampagtigt, fast hun føied
+Krampagtigt, fast <w>Hun</w> føied
 Om hendes Hals sin Arm;
 
 Og mens den klare Kilde
@@ -5051,11 +5055,11 @@ I Almens Favntag kjæk;
 Mens Moderens Øre vented
 Og lytted med stille Taal, -
 I Suk fra Dybet hented
-Hun Hjertets Skriftemaal.
+<w>Hun</w> Hjertets Skriftemaal.
 
-Med sagte Røst hun mæled
+Med sagte Røst <w>Hun</w> mæled
 Et lille Ord - et Navn,
-Og sky hun atter fjæled
+Og sky <w>Hun</w> atter fjæled
 Sig i sin Moders Favn.
 
 De blonde Lokker slængte
@@ -5063,7 +5067,7 @@ Sig over den hvide Arm;
 Som Skumbølger trængte
 Sig frem den unge Barm.
 
-Da tog om hendes Kinder
+Da tog om <w>Hendes</w> Kinder
 Den moderlige Haand,
 Som naar man varlig opbinder
 En fyldig Rosenvaand.
@@ -5071,25 +5075,25 @@ En fyldig Rosenvaand.
 Et Veemods-Smiil hun sendte
 Som svalende Trøst didind,
 Hvor Længsel og Smerte brændte, -
-Og kyssed hendes Kind.
+Og kyssed <w>Hendes</w> Kind.
 
-,,Saa han har dræbt Dit unge,
+,,Saa <w>Han</w> har dræbt Dit unge,
 Dit lystige Hjertes Fred?
-Og aldrig end hans Tunge
+Og aldrig end <w>Hans</w> Tunge
 Har sagt Dig et Ord derved?
 
 Saa det var kun ved Øiet,
 Du blev af Slummer kaldt?
 Dit venlige Sind sig bøied
-Kun for hans skjønne Gestalt?
+Kun for <w>Hans</w> skjønne Gestalt?
 
-Du aner, han maa gjemme
+Du aner, <w>Han</w> maa gjemme
 En Hemmelighed stor,
 Der lever uden Stemme,
 Der aander uden Ord?
 
 Du kjende vil de Tanker,
-Der slumre i hans Bryst?
+Der slumre i <w>Hans</w> Bryst?
 Nu vel! - bag de tause Ranker
 Lyt til Din Moders Røst!
 
@@ -5104,16 +5108,16 @@ Som her, min yngste Datter!
 Jeg hemmeligt Dig betroer.
 
 Dit Øie det afslører
-For hans Hjertes mørke Grund;
+For <w>Hans</w> Hjertes mørke Grund;
 Hvisk det, imens Du fører
-Et Bæger for hans Mund.
+Et Bæger for <w>Hans</w> Mund.
 
-Lad ham det Halve drikke,
-Det Halve drikke du;
+Lad <w>Ham</w> det Halve drikke,
+Det Halve drikke Du;
 Men da - o, glem det ikke! -
 Bryd Bægeret itu.
 
-Thi sætter han sine Læber
+Thi sætter <w>Han</w> sine Læber
 Til det samme Bægers Rand
 Endnu en Gang, det dræber
 Din Lykkes Liv paa Stand.
@@ -5121,7 +5125,7 @@ Din Lykkes Liv paa Stand.
 Men, hvis Du snildt, forsigtigt
 Mit Varsel ret har fulgt,
 Da læser Du klart og rigtigt,
-Hvad i hans Sind er dulgt!
+Hvad i <w>Hans</w> Sind er dulgt!
 
 Da smykkes vil Din Sommer
 Med Blomster og Fuglesang -
@@ -5138,12 +5142,12 @@ Op ad den lange Gang!''
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="283-289"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Med lette Fjed han hasted
 Ind i det lune Krat;
-Høit i en Busk han kasted
+Høit i en Busk <w>Han</w> kasted
 Sin gule Panama-Hat.
 
 Med sin Foulard han visked
@@ -5171,7 +5175,7 @@ Og her er man tilpas!
 Fru Moder! og Frøken Datter!
 Gud give, her var et Glas!
 
-En Ild - en Ild her brænder!
+En Ild - en Ild <w>her</w> brænder!
 Min Frøken! et Bæger, smukt
 Credentset af Deres Hænder,
 Snart vilde faae den slukt.
@@ -5181,13 +5185,13 @@ Nu perle mig her omsonst;
 Det nytter ei, jeg haaber
 Paa saadan en Hebes Gunst!''
 
-Det sagde han med Latter,
+Det sagde <w>Han</w> med Latter,
 I overgivent Mod,
 Og vendte saa bort sig atter
 Paa sin flygtige Fod.
 
 Men fra bløde Mos paa Stolen
-Hun reiste sig taus og rank;
+<w>Hun</w> reiste sig taus og rank;
 Siirligt rasled i Kjolen
 Hver Fold af Silke blank.
 
@@ -5203,48 +5207,48 @@ Hun danned et Bæger i Hast;
 
 Mens, sittrende i Skaalen,
 Meer kostbar end pruden Guld,
-Hun lod forsigtigt Straalen
+<w>Hun</w> lod forsigtigt Straalen
 Risle, til den var fuld.
 
 Et Øieblik hun dvæled!
-Men han - snart bleg, snart rød -
+Men <w>Han</w> - snart bleg, snart rød -
 Med pludselig Alvor knæled,
-Da Skaalen hun ham bød.
+Da Skaalen <w>Hun</w> ham bød.
 
-Med Vellyst suged hans Læber
+Med Vellyst suged <w>Hans</w> Læber
 Den klare Nektar sød:
-,,Ei meer!'' - hun bad - ,,det dræber!
+,,Ei meer!'' - <w>Hun</w> bad - ,,det dræber!
 De blusser jo som en Glød!''
 
-Men selv hun tømte Resten, -
+Men selv <w>Hun</w> tømte Resten, -
 Og skilte saa Skaalen ad;
 Og saa var Alt jo næsten
 Gaaet som Moderen bad.
 
-Der stod hun, bleg, forvirret,
-Som havde hun drukket Gift;
+Der stod <w>Hun</w>, bleg, forvirret,
+Som havde <w>Hun</w> drukket Gift;
 Men fast dog Øiet stirred
-Og læste hans Ansigts Skrift.
+Og læste <w>Hans</w> Ansigts Skrift.
 
-Det sused for hendes Øre
+Det sused for <w>Hendes</w> Øre
 Og Hjertet voldsomt slog.
-Da var det, som kunde hun høre:
-,,Saa elsker hun mig dog!''
+Da var det, som kunde <w>Hun</w> høre:
+,,Saa elsker <w>Hun</w> mig dog!''
 
-Da var det, som kunde hun skue
-Dybt inde i hans Bryst
+Da var det, som kunde <w>Hun</w> skue
+Dybt inde i <w>Hans</w> Bryst
 Og see den søde Lue,
-Der straalede hende Trøst.
+Der straalede <w>Hende</w> Trøst.
 
-Han syntes hende at tale:
+<w>Han</w> syntes <w>Hende</w> at tale:
 ,,O, siig mig, er det sandt?
 At jeg i Jordens Dale
 En saadan Himmel vandt!''
 
-Hun vakled, som i Svimmel,
+<w>Hun</w> vakled, som i Svimmel,
 Og yndig, fiin og rank,
 Forglemmende Jord og Himmel
-Hun til hans Hjerte sank:
+<w>Hun</w> til <w>Hans</w> Hjerte sank:
 
 De hviled, med tause Munde,
 Tæt ved hinandens Barm; -
@@ -5266,7 +5270,7 @@ Da var de alene To.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="290-295"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 I Parkens krumme Gange
@@ -5299,18 +5303,18 @@ En Blomst saa hist, saa her,
 Saa dvæled deres Tanker
 Ved mangen Erindring kjær.
 
-Han sagde: ,,Jeg blinde Taabe
-Saa længe har elsket dig;
+<w>Han</w> sagde: ,,Jeg blinde Taabe
+Saa længe har elsket Dig;
 Men aldrig turde jeg haabe,
 Du var saa kjær mod mig!''
 
-Hun hvisked: ,,Hvor tidt jeg sendte
-,,Min Tanke dig, mit Blik!
-,,Ak, hvor mit Hjerte brændte,
-,,At intet Svar jeg fik!''
+<w>Hun</w> hvisked: ,,Hvor tidt jeg sendte
+,,Min Tanke Dig, mit Blik!
+Ak, hvor mit Hjerte brændte,
+At intet Svar jeg fik!''
 
-Og han: ,,Jeg sad paa Stolen
-Ved Speilet, - der stod just du;
+Og <w>Han:</w> ,,Jeg sad paa Stolen
+Ved Speilet, - der stod just Du;
 Et Haar faldt paa Consolen,
 Det gjemmer jeg endnu;
 
@@ -5319,52 +5323,50 @@ O, jeg husker det nok!
 Imens Du siirligt støbte
 I Ringe Din blonde Lok.''
 
-Og hun: ,,Hvor tidt ei plukked
+Og <w>Hun:</w> ,,Hvor tidt ei plukked
 Hiin Blomsterstjerne jeg;
 Men bitterligt jeg sukked,
 Naar Oraklet svarte: Nei!
 
 Jeg gjemmer som det Bedste,
 Jeg eier, det lille Brev,
-Som, før Du vilde os gjæste,
+Som, før Du vilde os gjeste,
 Til min Moder Du skrev.''
 
-Og han: ,,Ei blot Du lænked
+Og <w>Han</w>: ,,Ei blot Du lænked
 Mig med Dit Ord og Blik;
 Af Din Haand Du mig skjenked
 En evig Elskovsdrik.
 
-Mit er nu dette Bæger,
+<w>Mit</w> er nu dette Bæger,
 Og jeg det slipper ei!
 Jeg haaber, det mig qvæger
-End tidt paa Livets Vei ?''
+End tidt paa Livets Vei?''
 
 Med Smiil, med fiffigt Øie,
 Dog lidt beklemt i Løn,
-Hun svared: ,,Jeg kan ei føie
+<w>Hun</w> svared: ,,Jeg kan ei føie
 Min Ven i denne Bøn.
 
 Af dette Bæger drikke
-Skal Ingen - selv ei du!
+Skal Ingen - selv ei <w>Du!</w>
 Og saae Du, Elskte! ikke,
 Det blev jo brudt itu?
 
 Hvis nogen Anden rører
 Ved min Haand med sin Mund,
-Da mere jeg ham tilhører
+Da <w>mere</w> jeg ham tilhører
 End Dig i denne Stund.
 
 Nei, Ingen skal Bægret tømme,
 Og Ingen skal røre mig!
 Jeg vaagen og i Drømme
-Vil ene tilhøre dig!'' -
+Vil ene tilhøre Dig!'' -
 
 Mens saa de sagte talede,
 Sødt hviskede Luften med;
 De mærked ei, Solen dalede
 Bag Bøgeskoven ned.
-
-       _________
 </body>
 </poem>
 
@@ -5376,7 +5378,7 @@ Bag Bøgeskoven ned.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="296-301"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Vildt Tø-Sneen tumler
@@ -5405,21 +5407,21 @@ Høres der snaddre og qvække
 Ved den duftende Thee.
 
 Men støttet mod Vindvets Pille
-Staaer Han, saa stum og mørk,
+Staaer <w>Han</w>, saa stum og mørk,
 Saa tankefuld og stille,
-Som stod han i en Ørk.
+Som stod <w>Han</w> i en Ørk.
 
-Hans kjække Mod er skyllet
+<w>Hans</w> kjække Mod er skyllet
 Bort i en bitter Strøm;
-Han aander i en fortryllet
+<w>Han</w> aander i en fortryllet
 Sphære, som i en Drøm.
 
-Foran ham Een, som snuser,
+Foran <w>Ham</w> Een, som snuser,
 Tykmavet, puddret og dum,
 Aabner sin Viisdoms Sluser
 Og gjør sig lækker og krum.
 
-Han svarer ham kun sparsomt
+<w>Han</w> svarer ham kun sparsomt
 Med Ja og Nei og Nik;
 Og undgaaer snu og varsomt
 Den Gamles hurtige Blik.
@@ -5427,15 +5429,15 @@ Den Gamles hurtige Blik.
 Men bag den puddrede Skulder
 Hans Øie Maalet fandt;
 Gjennem Sladder, Støi og Bulder
-Hører hans Øre grant.
+Hører <w>Hans</w> Øre grant.
 
-Men hvad hans Øre hører,
-Og hvad hans Øie seer,
-En Snog om hans Hjerte snører,
+Men hvad <w>Hans</w> Øre hører,
+Og hvad <w>Hans</w> Øie seer,
+En Snog om <w>Hans</w> Hjerte snører,
 At knap det aander meer.
 
 Havde man kunnet skue
-Ind i hans Hjertes Dyb,
+Ind i <w>Hans</w> Hjertes Dyb,
 Man vilde i Helveds Lue
 Øinet det giftige Kryb;
 
@@ -5447,22 +5449,22 @@ Sig til et trofast Bryst! -
 Ved Kaminen, hist henne,
 Omringet af en Krands
 Af muntre Ungersvende
-Hun straaler i Skjønheds Glands.
+<w>Hun</w> straaler i Skjønheds Glands.
 
 Hun straaler vel for dem Alle -
 Men for Een dog især;
-Paa ham hendes Blikke falde
+Paa ham <w>Hendes</w> Blikke falde
 Som smilende Morgenskjær.
 
-Hendes høie Latter og Tale
+<w>Hendes</w> høie Latter og Tale
 Og den blussende Kind
-Den varme Begeistring male,
-Som bevæger hendes Sind.
+Den varme <w>Begeistring</w> male,
+Som bevæger <w>Hendes</w> Sind.
 
-Til ham hun kun henvender
+Til ham <w>Hun</w> kun henvender
 Sin Røst saa livlig, mild;
 Kun for hans Tale brænder
-Hendes mørkblaae Øies Ild!
+<w>Hendes</w> mørkblaae Øies Ild!
 
 Det var den franske Maler,
 Saa vidtbereist en Fyr;
@@ -5472,7 +5474,7 @@ Om Kunst og Eventyr.
 Hans ædle Blik, det Faste,
 Det Sikkre i hans Røst,
 Det Fremmede synes at kaste
-Funker i hendes Bryst! -
+Funker i <w>Hendes</w> Bryst! -
 
 Man larmer, man sig reiser,
 Og Stolene gjør Støi;
@@ -5484,10 +5486,10 @@ Hvad om dem foregik;
 En Lovsang Begge opføre
 Paa italiænsk Musik.
 
-Men som just hun er i Varmen,
-Han paa sin Qval gjør Vold;
-Med Smiil han byder Armen, -
-Hun tager den - pludselig kold!
+Men som just <w>Hun</w> er i Varmen,
+<w>Han</w> paa sin Qval gjør Vold;
+Med Smiil <w>Han</w> byder Armen, -
+<w>Hun</w> tager den - pludselig kold!
 </body>
 </poem>
 
@@ -5499,12 +5501,12 @@ Hun tager den - pludselig kold!
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="302-306"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 ,,Min Ven! hør, siig mig ærlig,
 Hvorfor saa mørk og stum?
-Jeg morer mig saa herlig,
+<w>Jeg</w> morer mig saa herlig,
 Og giver min Glæde Rum.
 
 Saa bleg! med mørknet Øie!
@@ -5512,19 +5514,19 @@ Med sammenknebet Mund!
 Jeg seer det grant og nøie,
 Du lider i Hjertets Grund.''
 
-Det sagde hun med Latter,
+Det sagde <w>Hun</w> med Latter,
 Det klang som grusom Spot;
 Og gjentog det atter,
-Som det gjorde hende godt.
+Som det gjorde <w>Hende</w> godt.
 
 ,,Hvi morer Du Dig ikke?
-Med Ingen taler du!
+Med Ingen taler Du!
 Vildt stirre Dine Blikke,
 At det ret er en Gru!
 
 Hvor elskeligt han kan snakke
 Den franske Maler der!
-Den Glæde kan jeg takke
+<w>Den</w> Glæde kan jeg takke
 Min lille Moder kjær.
 
 Hun tog mig med forleden
@@ -5542,7 +5544,7 @@ Sig trængte Smerte og Lyst;
 Og disse søde Taarer
 Mildt qvægede mit Bryst.
 
-Mod hver, som saa mig qvæger
+Mod hver, som <w>saa</w> mig qvæger
 Og har en Fryd mig voldt,
 Mit Hjerte sig bevæger -
 Det kan ei blive koldt!
@@ -5572,10 +5574,10 @@ Som let sig hør og bør,
 Men ei for seent! - og vent mig
 Saa udenfor hans Dør!''
 
-- Men Han sad stum og stille
+- Men <w>Han</w> sad stum og stille
 Med al sit Hjertes Vee;
-Hans Qval, den indre, vilde,
-Kuns hun kunde see.
+<w>Hans</w> Qval, den indre, vilde,
+Kuns <w>Hun</w> kunde see.
 </body>
 </poem>
 
@@ -5588,26 +5590,26 @@ Kuns hun kunde see.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="307-309"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 ,,Han maa slet ikke tænke,
-Jeg ændser hans Jalousie!
+Jeg ændser <w>Hans</w> Jalousie!
 Min Frihed skal ei lænke,
 Hvad intet Ondt er i.
 
-Jeg elsker ham - det veed han -
-Saa maa han være glad.
-Gav nu jeg efter, saa leed han,
+Jeg elsker <w>Ham</w> - det veed <w>Han</w> -
+Saa maa <w>Han</w> være glad.
+Gav nu jeg efter, saa leed <w>Han</w>,
 Hvordan jeg saa bar mig ad! -
 
 Høit hæves man jo og stiger
-I Pagt med slig en Aand;
+I Pagt med <w>slig</w> en Aand;
 Hvad Folk og Verden siger,
 Jeg agter ei for et Baand;
 
 Begeistring løser Baandet,
-Den maa sig tale ud!
+<w>Den</w> maa sig tale ud!
 Jeg er som gjennemaandet,
 Som greben af en Gud!
 
@@ -5621,7 +5623,7 @@ Saa dybt, saa rigt, saa ømt!
 Det rummer en Verdens Smerte
 Og har en Himmel drømt.
 
-Og han - han vil mig male!
+Og <w>han</w> - han vil mig male!
 Det har han lovet jo?
 Og vi kan sammen tale
 Alene og i Ro!''
@@ -5642,47 +5644,47 @@ Til det sødeste Blund.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="310-312"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-,,Trods hendes kolde Blikke,
-Trods hendes bittre Ord,
-Jeg hende forlader ikke,
+,,Trods <w>Hendes</w> kolde Blikke,
+Trods <w>Hendes</w> bittre Ord,
+Jeg <w>hende</w> forlader ikke,
 Mens jeg vandrer paa Jord.
 
 Jeg Alt - ja, Alt vil taale!
 Jeg bøier mig, skjøndt knust;
-Hendes Øies stærke Straale
-For evig mig har beruust.
+<w>Hendes</w> Øies stærke Straale
+For evig mig har berust.
 
-Hun noget for mig skjuler, -
-Og var det nok saa reent,
+<w>Hun</w> noget for mig skjuler, -
+Og var <w>det</w> nok saa reent,
 Det under os Veien huler -
 Tidligt eller seent.
 
-Ak, hende alt Skjønt og Herligt
+Ak, <w>Hende</w> alt Skjønt og Herligt
 Drager kun bort fra mig;
-Hendes egen Ynde kjærligt
+<w>Hendes</w> egen Ynde kjærligt
 Maa jo lokke det til sig.
 
-Jeg seer, hun mig foragter,
+Jeg seer, <w>Hun</w> mig foragter,
 Det myrder mit Hjertes Ro;
 Men ved Himlens evige Magter!
-Dog bliver jeg hende tro!
+<w>Dog</w> bliver jeg <w>Hende</w> tro!
 
-Vil hun mig end forstøde
+Vil <w>Hun</w> mig end forstøde
 Med Kulde fra sin Fod,
 Saa lader jeg Hjertet bløde,
 Til det er uden Blod!'' -
 
 - Som man i Mørke vanker
 I Kreds den samme Gang,
-Gjentog ham de trætte Tanker
+Gjentog <w>Ham</w> de trætte Tanker
 Den samme Sørgesang.
 
 Da Dæmringen gjennem Taagen
 Fik trængt i Kamret ind,
-Den saae ham ved Bordet, vaagen,
+Den saae <w>Ham</w> ved Bordet, vaagen,
 Med Haanden under Kind.
 </body>
 </poem>
@@ -5695,7 +5697,7 @@ Med Haanden under Kind.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="313-317"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Der var saa luunt og hyggeligt,
@@ -5734,12 +5736,12 @@ Smukt Lokkerne sig kruse
 Om Pandens ædle Træk.
 
 I Stolen, paa en Forhøining,
-Let henslængt, hviler Hun,
+Let henslængt, hviler <w>Hun</w>,
 Med blød og smidig Bøining,
 Med Smiil paa Kind og Mund.
 
 Og det dristige Maler-Øie
-Sig drukned i hendes Blik,
+Sig drukned i <w>Hendes</w> Blik,
 Det fulgte skarpt og nøie,
 Hvor Skjønheds-Linien gik.
 
@@ -5761,17 +5763,17 @@ Og standsed paa sin Gang.
 Sig Tanken henrykt svinged,
 Mens ei de tænkte paa,
 At Tiden var bevinget,
-Og, at hun skulde gaae! -
+Og, at <w>Hun</w> skulde gaae! -
 
 Men hist paa Gadens Stene
-Gik han med langsomt Fjed
+Gik <w>Han</w> med langsomt Fjed
 Frem og tilbage - alene
 Med sig og sin Kjærlighed.
 
 Det mørkned - begyndte at regne,
-Mens længe han vandred om;
-Hendes Øine var lidt forlegne,
-Da endelig hun kom.
+Mens længe <w>Han</w> vandred om;
+<w>Hendes</w> Øine var lidt forlegne,
+Da endelig <w>Hun</w> kom.
 </body>
 </poem>
 
@@ -5783,7 +5785,7 @@ Da endelig hun kom.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="318-325"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Her bruser Eisacks Vande
@@ -5813,7 +5815,7 @@ Hæver sig hist en Kro.
 
 Der stige just de Trende
 Fra Reisevognen ned;
-Og det var Ham og Hende
+Og det var <w>Ham</w> og <w>Hende</w>
 Og den unge Maler med.
 
 De vandre jævnt og fryde
@@ -5821,63 +5823,63 @@ Sig ved den rige Natur,
 Mens Hestene Havren nyde
 Under det lave Skuur.
 
-Han foran gaaer og taler
+<w>Han</w> foran gaaer og taler
 Med sig og med sin Sorg;
-Hun og den unge Maler
+<w>Hun</w> og den unge Maler
 Betragte den stolte Borg.
 
-Med Eet Han lytter, standser,
+Med Eet <w>Han</w> lytter, standser,
 Som vakt ved Kildens Kald,
 Der ud fra Graniten dandser
 Liig det klareste Krystal.
 
 Veemodigt stemt og blidere,
 Om Hjertet øm og blød,
-Han sætter Foden videre
+<w>Han</w> sætter Foden videre
 Og stirrer i Dalens Skjød.
 
-Han vender sig, - da skuer
-Han i Morgensolens Ild
+<w>Han</w> vender sig, - da skuer
+<w>Han</w> i Morgensolens Ild
 Under Fjeldvæggens Buer
 Det yndigste Skuespil!
 
 Af begge Hænders blide,
 Blegrøde Alabast
-Havde Hun - Side ved Side -
+Havde <w>Hun</w> - Side ved Side -
 Dannet et Bæger i Hast;
 
 Og smilende, i Skaalen,
 Meer kostbar end pruden Guld,
-Hun lod forsigtigt Straalen
+<w>Hun</w> lod forsigtigt Straalen
 Risle, til den var fuld.
 
 Den unge Kunstner ligger
 Paa Knæ, paa mosklædt Steen;
-Og af hendes Hænder drikker
+Og af <w>Hendes</w> Hænder drikker
 Bjergkildens Nektar reen.
 
-Og ømt hun sig mon bøie
+Og ømt <w>Hun</w> sig mon bøie
 Over den skjønne Mand;
-I hendes svømmende Øie
+I <w>Hendes</w> svømmende Øie
 Henrykt stirrede han!
 
-Da træder Han til og raaber:
+Da træder <w>Han</w> til og raaber:
 ,,Var det mig reent omsonst,
 Om ogsaa jeg nu haaber
 En saadan Hebes Gunst?''
 
-Men hun sig hurtigt fatter!
+Men <w>Hun</w> sig hurtigt fatter!
 ,,See, jeg har et Bæger kjøbt,''
-Hun svarede ham med Latter,
+<w>Hun</w> svarede <w>Ham</w> med Latter,
 ,,Just som det gamle støbt!''
 
-Et Øieblik han dvæled,
-Utaalmodig vented hun;
-Han hvisked, idet han knæled,
+Et Øieblik <w>Han</w> dvæled,
+Utaalmodig vented <w>Hun</w>;
+<w>Han</w> hvisked, idet <w>Han</w> knæled,
 Med bleg og skjælvende Mund:
 
 ,,Af dette Bæger drikke
-Skal Ingen - selv ei du!
+Skal Ingen - selv ei Du!
 Og saae Du, Elskte! ikke,
 Det blev jo brudt itu?
 
@@ -5889,14 +5891,14 @@ End Dig i denne Stund.
 Nei, Ingen skal Bægret tømme,
 Og Ingen skal røre mig!
 Jeg vaagen og i Drømme
-Vil ene tilhøre dig!''
+Vil ene tilhøre Dig!''
 
-Men hun: ,,Min Ven! Du spadser!
-Jeg Dig - kun Dig har kjær!
+Men <w>Hun</w>: ,,Min Ven! Du spadser!
+Jeg Dig - kun <w>Dig</w> har kjær!
 Glem dog de fade Phraser,
 Og tøm mit Bæger her!''
 
-Med Vellyst suged Hans Læber,
+Med Vellyst suged <w>Hans</w> Læber,
 Og Stemmen sagte lød:
 ,,Jeg veed det nu, det dræber,
 Men Lykken er i min Død!''
@@ -5906,17 +5908,17 @@ Vandfaldet bør vi see!
 Det skyder sig brat fra Issen
 Ned fra Gletschernes Snee!''
 
-Foran dem snelt han iled,
-Som berust  han svang sin Hat;
+Foran dem snelt <w>Han</w> iled,
+Som berust <w>Han</w> svang sin Hat;
 De To medlidende smiled
 Og fulgte til Fjeldets Krat.
 
 Men da didop de naaede,
 Hvor Øiet ustandset seer,
 Da var det dem en Gaade -
-Han var der ikke meer!
+<w>Han</w> var der ikke meer!
 
-De troede først han spøgte,
+De troede først <w>Han</w> spøgte,
 Skjult i en Hules Gjem,
 De raabte, loe og søgte -
 Men Echo kun svarede dem.
@@ -5924,7 +5926,7 @@ Men Echo kun svarede dem.
 Hvor Faldets melkehvide
 Fraade i Dybet foer,
 Paa Skræntens slibrige Side
-Fandt de hans sidste Spor.
+Fandt de <w>Hans</w> sidste Spor.
 </body>
 </poem>
 
@@ -5936,7 +5938,7 @@ Fandt de hans sidste Spor.
       <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
    </notes>
    <source pages="326-328"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ned rasled de visne Blade,
@@ -5979,15 +5981,15 @@ Der lige vever og glad
 Lod sin Perlestraale trille
 Nu over det visne Blad;
 
-Der stod de, og eet Billed
+Der stod de, og <w>eet</w> Billed
 Sig maled for Begges Sind;
 Som nylig her opstillet,
 Det traadte i Tanken ind.
 
 ,,Her var det!'' sukked den Gamle;
-Men Hun til Panden bar
+Men <w>Hun</w> til Panden bar
 Sin Haand, for Mindet at samle:
-,,Ja - her - ja, her det var!''
+,,Ja - her - ja, <w>her</w> det var!''
 </body>
 </poem>
 </content>
