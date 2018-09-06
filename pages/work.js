@@ -23,6 +23,7 @@ import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
 import CommonData from './helpers/commondata.js';
 import { request } from 'http';
+import WorksList from '../components/workslist';
 import type {
   Lang,
   Poet,
@@ -40,6 +41,7 @@ type WorkProps = {
   poet: Poet,
   work: Work,
   toc: Array<TocItem>,
+  subworks: Array<Work>,
   notes: Array<NoteItem>,
   pictures: Array<PictureItem>,
   error: ?Error,
@@ -56,6 +58,7 @@ export default class extends React.Component<WorkProps> {
       poet: json.poet,
       work: json.work,
       toc: json.toc,
+      subworks: json.subworks,
       notes: json.notes,
       pictures: json.pictures,
       error: json.error,
@@ -63,7 +66,16 @@ export default class extends React.Component<WorkProps> {
   }
 
   render() {
-    const { lang, poet, work, notes, pictures, toc, error } = this.props;
+    const {
+      lang,
+      poet,
+      work,
+      notes,
+      pictures,
+      toc,
+      subworks,
+      error,
+    } = this.props;
 
     if (error) {
       return <ErrorPage error={error} lang={lang} message="Ukendt værk" />;
@@ -103,14 +115,18 @@ export default class extends React.Component<WorkProps> {
         </div>
       );
     }
-    const table =
-      toc.length > 0 ? (
-        <TOC toc={toc} lang={lang} />
-      ) : (
+    let table = null;
+    if (toc != null && toc.length > 0) {
+      table = <TOC toc={toc} lang={lang} />;
+    } else if (subworks != null && subworks.length > 0) {
+      table = <WorksList lang={lang} poet={poet} works={subworks} />;
+    } else {
+      table = (
         <div className="nodata">
           <i>Kalliope indeholder endnu ingen tekster fra dette værk.</i>
         </div>
       );
+    }
     const title = <PoetName poet={poet} includePeriod />;
     const ogTitle =
       poetNameString(poet, false, false) + ': ' + workTitleString(work);
@@ -118,7 +134,15 @@ export default class extends React.Component<WorkProps> {
       poet
     )} - Kalliope`;
     const ogImage = OpenGraph.poetImage(poet);
-    const ogDescription = toc.map(part => part.title).join(', ');
+    let ogDescription = null;
+    if (toc != null && toc.length > 0) {
+      ogDescription = toc.map(part => part.title).join(', ');
+    } else if (subworks != null && subworks.length > 0) {
+      ogDescription = subworks.map(part => part.toctitle).join(', ');
+    }
+
+    let sectionTitles = null;
+
     return (
       <div>
         <Head

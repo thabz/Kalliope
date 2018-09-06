@@ -162,15 +162,28 @@ export default class Nav extends React.Component<NavProps> {
         work && poet ? (
           <Link prefetch route={Links.workURL(lang, poet.id, work.id)}>
             <a>
-              <WorkName work={work} />
+              <WorkName lang={lang} work={work} useTitle="breadcrumbtitle" />
             </a>
           </Link>
         ) : null;
-      links = [poetsLink, poetLink, workLink];
+      let parentLink = null;
+      if (work && poet && work.parent != null) {
+        parentLink = (
+          <Link prefetch route={Links.workURL(lang, poet.id, work.parent.id)}>
+            <a>
+              <WorkName
+                lang={lang}
+                work={work.parent}
+                useTitle="breadcrumbtitle"
+              />
+            </a>
+          </Link>
+        );
+      }
+      links = [poetsLink, poetLink, parentLink, workLink];
     }
     let renderedSectionTitles: Array<TextContent> = [];
     if (sectionTitles != null) {
-      console.log(sectionTitles);
       renderedSectionTitles = sectionTitles.map(t => {
         let text = (
           <TextContent

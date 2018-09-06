@@ -68,9 +68,14 @@ export type Museum = {
 export type Work = {
   id: WorkId,
   title: string,
+  toctitle: string,
+  linktitle: string,
+  breadcrumbtitle: string,
+  subtitles: ?TextContentType,
   year?: string,
   has_content: boolean,
   status: 'complete' | 'incomplete',
+  parent: ?Work,
 };
 
 export type SortReturn = number; //1 | 0 | -1;

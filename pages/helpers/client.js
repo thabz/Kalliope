@@ -84,6 +84,7 @@ export type FetchWorkResult = {
   work: Work,
   toc: Array<TocItem>,
   notes: Array<NoteItem>,
+  subworks: ?Array<Work>,
   pictures: Array<PictureItem>,
 };
 export const work = async (

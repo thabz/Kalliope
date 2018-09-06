@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1860-1" author="winter" status="complete" type="poetry">
+<kalliopework id="1860-1" author="winter" status="complete" type="poetry" parent="1860">
 <workhead>
-    <title>Samlede Digtninger, 1. Bind</title>
+    <title>Samlede Digtninger</title>
     <subtitle>
         <line>Første Bind</line>
         <line>Blandede Digte. I</line>
     </subtitle>
+    <linktitle>Samlede Digtninger, 1. Bind</linktitle>
+    <toctitle>Første Bind - Blandede Digte. I</toctitle>
+    <breadcrumbtitle>Bd. 1</breadcrumbtitle>
     <year>1860</year>
     <notes>
         <note>Teksten følger Christian Winther: <i>Samlede Digtninger</i>, bd. 1, C.A. Reitzels Forlag, Kbh., 1860.</note>
