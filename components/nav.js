@@ -1,6 +1,7 @@
 // @flow
 
 import React from 'react';
+import type { Node } from 'react';
 import Head from './head';
 import { Link, Router } from '../routes';
 import PoetName from './poetname';
@@ -18,6 +19,11 @@ import type {
   Text,
   URLString,
 } from '../pages/helpers/types.js';
+
+type BreadcrumbItem = {
+  url: URLString,
+  title: Node,
+};
 
 type NavPagingType = {
   prev: ?{
@@ -91,6 +97,74 @@ export class NavPaging extends React.Component<NavPagingType> {
     return <div style={{ display: 'flex', padding: '4px 0' }}>{arrows}</div>;
   }
 }
+
+export const kalliopeCrumbs = (lang: Lang) => {
+  return [
+    {
+      url: Links.frontPageURL(lang),
+      title: 'Kalliope',
+    },
+  ];
+};
+
+export const poetsCrumbs = (lang: Lang, poet: Poet) => {
+  let poetsLinkText: string;
+  if (poet.type === 'person') {
+    poetsLinkText = _('Personer', lang);
+  } else if (poet.type === 'artist') {
+    poetsLinkText = _('Kunstnere', lang);
+  } else {
+    if (poet.country !== 'dk') {
+      const cn = CommonData.countries.filter(c => {
+        return c.code === poet.country;
+      })[0];
+      poetsLinkText =
+        Strings.toTitleCase(cn.adjective[lang]) + ' ' + _('digtere', lang);
+    } else {
+      poetsLinkText = _('Digtere', lang);
+    }
+  }
+  Links.poetURL(lang, poet.id);
+  return [
+    ...kalliopeCrumbs(lang),
+    {
+      title: poetsLinkText,
+      url: Links.poetsURL(lang, 'name', poet.country),
+    },
+  ];
+};
+
+export const poetCrumbs = (lang: Lang, poet: Poet) => {
+  return [
+    ...poetsCrumbs(lang, poet),
+    {
+      url: Links.poetURL(lang, poet.id),
+      title: <PoetName poet={poet} />,
+    },
+  ];
+};
+
+export const workCrumbs = (lang: Lang, poet: Poet, work: Work) => {
+  const workLink = {
+    title: <WorkName lang={lang} work={work} useTitle="breadcrumbtitle" />,
+    url: Links.workURL(lang, poet.id, work.id),
+  };
+  let parentLink: ?BreadcrumbItem;
+  if (work.parent != null) {
+    parentLink = {
+      title: (
+        <WorkName lang={lang} work={work.parent} useTitle="breadcrumbtitle" />
+      ),
+      url: Links.workURL(lang, poet.id, work.parent.id),
+    };
+  }
+
+  return [...poetCrumbs(lang, poet), parentLink, workLink].filter(
+    (n: ?BreadcrumbItem) => {
+      return n != null;
+    }
+  );
+};
 
 type NavProps = {
   lang: Lang,
