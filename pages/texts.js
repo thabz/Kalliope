@@ -3,7 +3,7 @@
 import React from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
-import Nav from '../components/nav';
+import Nav, { poetCrumbsWithTitle } from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import Heading from '../components/heading.js';
 import PoetName, { poetNameString } from '../components/poetname.js';
@@ -57,7 +57,7 @@ export default class Texts extends React.Component<TextsProps> {
       if (line == null || line.length == 0) {
         return;
       }
-      line = line.replace(',','').replace('!','');
+      line = line.replace(',', '').replace('!', '');
       linePair['sortBy'] = line + ' [' + alternative + '[' + linePair.id;
       let letter: string = line[0];
       if (line.startsWith('Aa')) {
@@ -124,6 +124,8 @@ export default class Texts extends React.Component<TextsProps> {
     let renderedGroups = <SectionedList sections={sections} />;
 
     const title = <PoetName poet={poet} includePeriod />;
+    const lastCrumbTitle =
+      type === 'titles' ? _('Titler', lang) : _('Førstelinjer', lang);
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
     return (
       <div>
@@ -135,10 +137,7 @@ export default class Texts extends React.Component<TextsProps> {
         <Main>
           <Nav
             lang={lang}
-            poet={poet}
-            title={
-              type === 'titles' ? _('Titler', lang) : _('Førstelinjer', lang)
-            }
+            crumbs={poetCrumbsWithTitle(lang, poet, lastCrumbTitle)}
           />
           <Heading title={title} />
           <PoetTabs lang={lang} poet={poet} selected={type} />

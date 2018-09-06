@@ -5,7 +5,7 @@ import 'isomorphic-fetch';
 import { Link, Router } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
-import Nav from '../components/nav';
+import Nav, { kalliopeCrumbs } from '../components/nav';
 import LangSelect from '../components/langselect';
 import { KalliopeTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
@@ -72,7 +72,14 @@ export default class extends React.Component<MuseumProps> {
           requestPath={requestPath}
         />
         <Main>
-          <Nav lang={lang} title={museum.name} links={['Museer']} />
+          <Nav
+            lang={lang}
+            crumbs={[
+              ...kalliopeCrumbs(lang),
+              { title: 'Museer' },
+              { title: museum.name },
+            ]}
+          />
           <Heading title={title} subtitle={_('Værker', lang)} />
           <KalliopeTabs lang={lang} selected="museum" />
           <div className="two-columns" style={{ lineHeight: 1.7 }}>

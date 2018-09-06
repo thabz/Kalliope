@@ -4,7 +4,7 @@ import React, { Fragment } from 'react';
 import { Link } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
-import Nav, { NavPaging } from '../components/nav';
+import Nav, { NavPaging, textCrumbs } from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
@@ -323,11 +323,11 @@ export default class extends React.Component<TextComponentProps> {
     if (variants.length > 0) {
       let heading = null;
       if (text.text_type === 'section') {
-          heading = 'Varianter af denne samling:';
+        heading = 'Varianter af denne samling:';
       } else if (text.text_type === 'poem') {
-          heading = 'Varianter af dette digt:';
+        heading = 'Varianter af dette digt:';
       } else if (text.text_type === 'prose') {
-          heading = 'Varianter af denne tekst:';
+        heading = 'Varianter af denne tekst:';
       }
       renderedVariants = (
         <div className="variants">
@@ -442,11 +442,7 @@ export default class extends React.Component<TextComponentProps> {
           <Main>
             <Nav
               lang={lang}
-              poet={poet}
-              work={work}
-              rightSide={rightSide}
-              sectionTitles={section_titles}
-              title={textLinkTitleString(text)}
+              crumbs={textCrumbs(lang, poet, work, section_titles || [], text)}
             />
             <Heading title={title} subtitle="Værker" />
             <PoetTabs lang={lang} poet={poet} selected="works" />

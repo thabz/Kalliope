@@ -5,7 +5,7 @@ import Head from '../components/head';
 import Main from '../components/main.js';
 import { Link } from '../routes';
 import * as Links from '../components/links';
-import Nav from '../components/nav';
+import Nav, { kalliopeCrumbs } from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import CountryPicker from '../components/countrypicker.js';
 import Tabs from '../components/tabs.js';
@@ -178,7 +178,10 @@ export default class extends React.Component<AllTextsProps> {
           requestPath={requestPath}
         />
         <Main>
-          <Nav lang={lang} title={pageTitle} />
+          <Nav
+            lang={lang}
+            crumbs={[...kalliopeCrumbs(lang), { title: pageTitle }]}
+          />
           <Heading title={pageTitle} />
           <Tabs items={tabs} selected={type} country={country} lang={lang} />
           <div style={{ lineHeight: 1.5 }}>

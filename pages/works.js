@@ -5,7 +5,7 @@ import 'isomorphic-fetch';
 import { Link, Router } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
-import Nav from '../components/nav';
+import Nav, { worksCrumbs } from '../components/nav';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
@@ -249,7 +249,7 @@ export default class extends React.Component<WorksProps> {
           requestPath={requestPath}
         />
         <Main>
-          <Nav lang={lang} poet={poet} title={_('Værker', lang)} />
+          <Nav lang={lang} crumbs={worksCrumbs(lang, poet)} />
           <Heading title={title} subtitle={_('Værker', lang)} />
           <PoetTabs lang={lang} poet={poet} selected="works" />
           <div className="two-columns">

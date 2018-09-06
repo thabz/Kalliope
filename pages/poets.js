@@ -5,7 +5,7 @@ import Head from '../components/head';
 import Main from '../components/main.js';
 import { Link } from '../routes';
 import * as Links from '../components/links';
-import Nav from '../components/nav';
+import Nav, { kalliopeCrumbs } from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import CountryPicker from '../components/countrypicker.js';
 import Tabs from '../components/tabs.js';
@@ -72,7 +72,7 @@ const groupsByYear = (poets: Array<Poet>, lang: Lang) => {
       p.period.born.date !== '?'
     ) {
       const year = parseInt(p.period.born.date.substring(0, 4), 10);
-      const intervalStart = year - year % 25;
+      const intervalStart = year - (year % 25);
       key = `${intervalStart} - ${intervalStart + 24}`;
     }
     let group = groups.get(key) || [];
@@ -169,7 +169,10 @@ export default class extends React.Component<PoetsProps> {
           requestPath={requestPath}
         />
         <Main>
-          <Nav lang={lang} title={pageTitle} />
+          <Nav
+            lang={lang}
+            crumbs={[...kalliopeCrumbs(lang), { title: pageTitle }]}
+          />
           <Heading title={pageTitle} />
           <Tabs items={tabs} selected={groupBy} country={country} lang={lang} />
           {renderedGroups}

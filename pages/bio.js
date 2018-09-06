@@ -3,7 +3,7 @@
 import React from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
-import Nav from '../components/nav';
+import Nav, { poetCrumbsWithTitle } from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
@@ -345,7 +345,10 @@ export default class extends React.Component<BioProps> {
           requestPath={requestPath}
         />
         <Main>
-          <Nav lang={lang} poet={poet} title={_('Biografi', lang)} />
+          <Nav
+            lang={lang}
+            crumbs={poetCrumbsWithTitle(lang, poet, _('Biografi', lang))}
+          />
           <Heading title={title} subtitle={_('Biografi', lang)} />
           <PoetTabs lang={lang} poet={poet} selected="bio" />
           <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>

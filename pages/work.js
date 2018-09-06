@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
-import Nav from '../components/nav';
+import Nav, { workCrumbs } from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect.js';
 import { PoetTabs } from '../components/tabs.js';
@@ -154,11 +154,7 @@ export default class extends React.Component<WorkProps> {
         />
 
         <Main>
-          <Nav
-            lang={lang}
-            poet={poet}
-            title={<WorkName work={work} lang={lang} />}
-          />
+          <Nav lang={lang} crumbs={workCrumbs(lang, poet, work)} />
           <Heading title={title} subtitle="Værker" />
           <PoetTabs lang={lang} poet={poet} selected="works" />
           <SidebarSplit sidebar={sidebar}>
