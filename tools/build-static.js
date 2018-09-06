@@ -69,6 +69,15 @@ const workName = work => {
   return title + yearPart;
 };
 
+const workLinkName = work => {
+  const { linktitle, year } = work;
+  let yearPart = '';
+  if (year && year !== '?') {
+    yearPart = ` (${year})`;
+  }
+  return linktitle + yearPart;
+};
+
 // Ready after second pass
 let collected_works = new Map();
 
@@ -800,7 +809,7 @@ const handle_text = (
   let refsArray = (collected.textrefs.get(textId) || []).map(id => {
     const meta = collected.texts.get(id);
     const poet = poetName(collected.poets.get(meta.poetId));
-    const work = workName(collected.works.get(meta.poetId + '/' + meta.workId));
+    const work = workLinkName(collected.works.get(meta.poetId + '/' + meta.workId));
     return [
       [
         `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`,
@@ -817,7 +826,7 @@ const handle_text = (
     .map(id => {
       const meta = collected.texts.get(id);
       const poet = poetName(collected.poets.get(meta.poetId));
-      const work = workName(
+      const work = workLinkName(
         collected.works.get(meta.poetId + '/' + meta.workId)
       );
       return [
@@ -2079,7 +2088,7 @@ const build_mentions_json = collected => {
         '/' +
         meta.workId}`;
     }
-    const workNameFormattet = workName(work);
+    const workNameFormattet = workLinkName(work);
     return [
       [
         `${poet}: <a poem="${poemId}">»${

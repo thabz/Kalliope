@@ -443,6 +443,7 @@ export default class extends React.Component<TextComponentProps> {
             <Nav
               lang={lang}
               crumbs={textCrumbs(lang, poet, work, section_titles || [], text)}
+              rightSide={rightSide}
             />
             <Heading title={title} subtitle="Værker" />
             <PoetTabs lang={lang} poet={poet} selected="works" />

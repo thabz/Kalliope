@@ -12,6 +12,7 @@ import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
 import PoetName, { poetNameString } from '../components/poetname.js';
 import WorkName, { workTitleString } from '../components/workname.js';
+import WorkSubtitles from '../components/worksubtitles.js';
 import Note from '../components/note.js';
 import TOC from '../components/toc.js';
 import TextContent from '../components/textcontent.js';
@@ -161,6 +162,7 @@ export default class extends React.Component<WorkProps> {
             <div>
               <SubHeading>
                 <WorkName work={work} lang={lang} />
+                <WorkSubtitles work={work} lang={lang} />
               </SubHeading>
               {table}
               <style jsx>{`
