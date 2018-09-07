@@ -1,9 +1,9 @@
 // @flow
 import React from 'react';
-
+import type { Node } from 'react';
 export default class SubHeading extends React.Component<*> {
   props: {
-    children?: *,
+    children?: Node,
   };
   render() {
     const { children } = this.props;
