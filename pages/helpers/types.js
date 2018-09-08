@@ -1,5 +1,7 @@
 // @flow
 
+import type { Node } from 'react';
+
 export type DateWithPlace = {
   date: string, // Kan være '?'
   place: ?string,
@@ -11,6 +13,7 @@ export type Country = 'dk' | 'gb' | 'de' | 'fr' | 'se' | 'no' | 'it' | 'us';
 
 export type PoetId = string;
 export type WorkId = string;
+export type TextId = string;
 export type MuseumId = string;
 
 export type Error = { statusCode: number };
@@ -105,7 +108,7 @@ export type LinesPair = {
 export type SectionForRendering = Section<{
   id: string,
   url: string,
-  html: any,
+  html: Node,
 }>;
 
 export type KeywordRef = {
@@ -134,6 +137,7 @@ export type PictureItem = {
   content_lang?: TextLang,
   content_html?: TextContentType,
   primary?: boolean,
+  size: ?{ width: number, height: number },
   src: string,
 };
 

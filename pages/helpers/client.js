@@ -18,8 +18,11 @@ import type {
   NoteItem,
   PictureItem,
   TextLang,
+  DictItem,
   Error,
   LinesType,
+  TextContentType,
+  TimelineItem,
 } from './types.js';
 
 export const createURL = (path: string): string => {
@@ -55,6 +58,7 @@ type FetchPoetsResult = Promise<{
   error: ?Error,
 }>;
 export const poets = async (country: Country): FetchPoetsResult => {
+  // flow-disable-next-line
   return fetchJSON(`/static/api/poets-${country}.json`);
 };
 
@@ -119,7 +123,7 @@ export const works = async (poetId: PoetId): FetchWorksResult => {
 
 type FetchBioResult = Promise<{
   poet: Poet,
-  portrait?: PictureItem,
+  portraits?: Array<PictureItem>,
   timeline: Array<TimelineItem>,
   content_html: TextContentType,
   content_lang: TextLang,
