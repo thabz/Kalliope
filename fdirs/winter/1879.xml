@@ -16,7 +16,7 @@
 </workhead>
 <workbody>
 
-<poem id="winter2018090901">
+<poem id="winter2018090901" lang="de">
 <head>
     <title>Et tydsk Digt ved Rector S. N. J. Blochs Sølvbryllup</title>
     <toctitle>Et tydsk Digt ved Rector S. N. J. Blochs Sølvbryllup. Nov. 1819</toctitle>
@@ -759,7 +759,7 @@ Har jeg mit Kjæreste paa Jorden!
 <nonum><center><b>I Hjemmet</b></center></nonum>
 
 <nonum><center><i>,,Sie weinte, und keine Zunge spricht die Gewalt dieser Thränen aus.''</i></center></nonum>
-<nonum><center>(Goethe, Wilh. Meister.</center></nonum>
+<nonum><center>(Goethe, Wilh. Meister.)</center></nonum>
 
 Taarer har jeg seet at rinde,<note>* Under Manuskriptet til dette sidste Afsnit af den lille Cyclus læses fra Christian Winthers Haand: ,,Skrevet 1851, reenskrevet 1ste August 1871, efter Modtagelsen af et elskeligt Brev fra <w>Hende</w> - den <w>Eneste!</w> Hvis <w>Hun</w> blot forstaaer min Brøde ret, saa vil jeg dog have, at Hun skal vide, <w>hvor</w> længe og <w>hvordan</w> jeg har fortrudt og lidt ved min egen Skyld''.</note>
 Smertefulde, ak! men blide,
@@ -1197,11 +1197,10 @@ Som inderligt holde af Dig!
 </body>
 </poem>
 
-<!-- TODO: Indsæt manglende toctitles herunder -->
-
 <poem id="winter2018090929">
 <head>
     <title>Til Rector B. Borgen</title>
+    <toctitle>Til B. Borgen. Mai 1868</toctitle>
     <subtitle>
         <line>hvis Hustru var jordet Dagen i Forveien</line>
         <line>Den 10de Mai 1868</line>
@@ -1266,6 +1265,7 @@ En Drøm med Billeder i Taage, -
 <poem id="winter2018090931">
 <head>
     <title>Til en Bortreisende</title>
+    <toctitle>Til en Bortreisende. 1868</toctitle>
     <subtitle>Paris 1868</subtitle>
     <firstline>De har Dem skabt et venligt Minde</firstline>
     <source pages="54"/>
@@ -1282,6 +1282,7 @@ Ublegnet det i Live finde.
 <poem id="winter2018090932">
 <head>
     <title>Til Constantin Hansen</title>
+    <toctitle>Til Const. Hansen. Nov. 1868</toctitle>
     <subtitle>
         <line>Paris</line>
         <line>Den 3die Novbr. 1868</line>
@@ -1310,6 +1311,7 @@ Dit ædle Hjerte og din rige Tanke.
 <poem id="winter2018090933">
 <head>
     <title>Til Ida</title>
+    <toctitle>Til Ida. Marts 1869</toctitle>
     <subtitle>Paris, den 21de Marts 1869</subtitle>
     <firstline>See, idag begynder Vaaren!</firstline>
     <notes>
@@ -1366,7 +1368,7 @@ Som det Svundnes Lod opveier!
 <poem id="winter2018090934">
 <head>
     <title>Til Julie</title>
-    <title>Til Julie. 1870</title>
+    <toctitle>Til Julie. 1870</toctitle>
     <subtitle>1870</subtitle>
     <firstline>Jeg kan ikke rigtig finde</firstline>
     <source pages="58"/>
@@ -1388,7 +1390,7 @@ Blive strømmende til een?
 <poem id="winter2018090935">
 <head>
     <title>Til Julie</title>
-    <title>Til Samme. 1870</title>
+    <toctitle>Til Samme. 1870</toctitle>
     <subtitle>
         <line>1870</line>
         <line>†</line>
@@ -1412,7 +1414,7 @@ En tifold Høst os give.
 <poem id="winter2018090936">
 <head>
     <title>Til Julie</title>
-    <title>Til Samme</title>
+    <toctitle>Til Samme</toctitle>
     <firstline>Jeg holder af Dig - Dig alene</firstline>
     <source pages="60-61"/>
     <quality>korrektur1,kilde,side</quality>
@@ -1449,6 +1451,7 @@ I Selvforagtens stride Elv, -
 <poem id="winter2018090937">
 <head>
     <title>Til Constantin Hansen</title>
+    <toctitle>Til Const. Hansen. Nov. 1870</toctitle>
     <subtitle>Den 3die Novbr. 1870</subtitle>
     <firstline>Min kjære Constantin Hansen!</firstline>
     <source pages="62-64"/>
@@ -1508,6 +1511,7 @@ Du veed, vi sende Dig de <w>bedste!</w>
 <poem id="winter2018090938">
 <head>
     <title>Til Ida</title>
+    <toctitle>Til Ida. Foraaret 1871</toctitle>
     <subtitle>Foraaret 1871</subtitle>
     <firstline>Kast din Sorg paa fremmed Strand</firstline>
     <source pages="65"/>
@@ -1537,6 +1541,7 @@ Gud Dig skjenke klare Dage!
 <poem id="winter2018090939">
 <head>
     <title>To Stemninger</title>
+    <toctitle>To Stemninger. Til Julie. Apr. 1871</toctitle>
     <subtitle>
         <line>Til Julie</line>
         <line>Den 4de April, Aften, 1871</line>
@@ -1602,6 +1607,7 @@ For os i Evighed og Tid!
 <poem id="winter2018090940">
 <head>
     <title>Til Oluf Bang</title>
+    <toctitle>Til Oluf Bang. Juni 1871</toctitle>
     <subtitle>Den 2den Juni 1871</subtitle>
     <firstline>Der var en lille Pige</firstline>
     <source pages="69-71"/>
@@ -1665,6 +1671,7 @@ Den dufter sødt - og <w>groer!</w>
 <poem id="winter2018090941">
 <head>
     <title>Hun alene</title>
+    <toctitle>Hun alene. Dec. 1871</toctitle>
     <subtitle>Paris, den 7de Decbr. 1871</subtitle>
     <firstline>Den første Gang, jeg Hende saae</firstline>
     <notes>
@@ -1844,6 +1851,7 @@ Af mine Blomsterqvad.
 <poem id="winter2018090945">
 <head>
     <title>Til P. Schram</title>
+    <toctitle>Til P. Schram (i hans Album). Oct. 1872</toctitle>
     <subtitle>
         <line>(i hans Album)</line>
         <line>Octbr. 1872</line>
@@ -2004,6 +2012,7 @@ At Støvets Haab og Trøst er gjemt!
 <poem id="winter2018090949">
 <head>
     <title>Hilsen til mig selv</title>
+    <toctitle>Hilsen til mig selv. Febr. 1873</toctitle>
     <subtitle>Den 21de Febr. 1873</subtitle>
     <firstline>Vær glad, at Himlen Dig saa naadigt sendte</firstline>
     <notes>
@@ -2074,6 +2083,7 @@ Bekjendelsen jeg har ved Haanden:
 <poem id="winter2018090951">
 <head>
     <title>Til Ida</title>
+    <toctitle>Til Ida, da hendes Hund var død. Mai 1873</toctitle>
     <subtitle>
         <line>da hendes Hund var død</line>
         <line>Den 16de Mai 1873</line>
@@ -2234,6 +2244,7 @@ Den synger slet, som mistet har sin Stemme.
 <poem id="winter2018090955">
 <head>
     <title>Undskyldning</title>
+    <toctitle>Undskyldning. Juleaften 1873</toctitle>
     <subtitle>Den 24de Decbr. 1873</subtitle>
     <firstline>For vist og sandt mit Hjertes Grund er dækket</firstline>
     <source pages="95-96"/>
@@ -2316,6 +2327,7 @@ Dit Liv, din Tauke og dit Hjerte!
 <poem id="winter2018090957">
 <head>
     <title>Min Tanke</title>
+    <toctitle>Min Tanke. Til Julie. Apr. 1874</toctitle>
     <subtitle>
         <line>Til Julie</line>
         <line>Den 4de April 1874</line>
@@ -2399,6 +2411,7 @@ Tidt taug og tilgav og fældte ei Dom!
 <poem id="winter2018090959">
 <head>
     <title>Til Julie</title>
+    <toctitle>Til Samme ved hendes Hjemkomst. Aug. 1874</toctitle>
     <subtitle>
         <line>ved hendes Hjemkomst fra en lille Reise</line>
         <line>(I Datterens og i Digterens eget Navn)</line>
@@ -2437,6 +2450,7 @@ Hav Tak, at Du i kjærlighed
 <poem id="winter2018090960">
 <head>
     <title>Til Julie</title>
+    <toctitle>Til Samme med en Bouquet Blomster. Dec. 1874</toctitle>
     <subtitle>
         <line>Med en Bouquet Blomster</line>
         <line>Den 7de Decbr. 1874</line>
@@ -2473,6 +2487,7 @@ Er <w>mine</w> Blomsterqvad nu meer ei kjække,
 <poem id="winter2018090961">
 <head>
     <title>Til Julie</title>
+    <toctitle>Til Samme med Eau de Verveine. Dec. 1874</toctitle>
     <subtitle>
         <line>Med Eau de Verveine</line>
         <line>Den 24de Decbr. 1874</line>
@@ -2513,6 +2528,7 @@ Ak! jeg er alvorlig - og Du er det mere!
 <poem id="winter2018090962">
 <head>
     <title>Til Julie</title>
+    <toctitle>Til Samme ved Aarskiftet. Jan 1875</toctitle>
     <subtitle>
         <line>Ved Aarskiftet</line>
         <line>Den 1ste Jan. 1875</line>
@@ -2575,6 +2591,7 @@ Saa Synet blev <w>ret</w>.
 <poem id="winter2018090963">
 <head>
     <title>Med Moders Portrait til Ida</title>
+    <toctitle>Med Moders Portrait til Ida. Marts 1875</toctitle>
     <subtitle>Den 21de Marts 1875</subtitle>
     <firstline>Modtag et Skyggerids af Den</firstline>
     <source pages="111"/>
@@ -2600,6 +2617,7 @@ At naadigt den bevarer Hende!
 <poem id="winter2018090964">
 <head>
     <title>Til Julie</title>
+    <toctitle>Til Julie. Juni 1875</toctitle>
     <subtitle>Den 14de Jun. 1875</subtitle>
     <firstline>Du veed det ei, Du troer det ikke heller</firstline>
     <source pages="112"/>
@@ -2645,6 +2663,7 @@ Men selv jeg har mig ødelagt!
 <poem id="winter2018090966">
 <head>
     <title>Til Julie</title>
+    <toctitle>Til Julie. Dec. 1875</toctitle>
     <subtitle>Paris, den 7de Decbr. 1875</subtitle>
     <firstline>Tilgiv, at jeg som fattig Gjæst</firstline>
     <source pages="114-115"/>
@@ -2689,6 +2708,7 @@ Ak, al min Rigdom er jo <w>Du!</w>
 <poem id="winter2018090967">
 <head>
     <title>Til Julie</title>
+    <toctitle>Til Samme. Juleaften 1875</toctitle>
     <subtitle>Paris, Juleaften 1875</subtitle>
     <firstline>Saalænge jeg har Livet døiet</firstline>
     <source pages="116-117"/>
@@ -2724,6 +2744,7 @@ Med Hjertet tro til Gravens Gru!
 <poem id="winter2018090968">
 <head>
     <title>Nytaarsgave til Julie</title>
+    <toctitle>Nytaarsvers til Julie. 1876</toctitle>
     <subtitle>Paris, 1876</subtitle>
     <firstline>Gid Du maa sove sødt hver Nat</firstline>
     <source pages="118-119"/>
@@ -2756,6 +2777,7 @@ At <w>Nat</w> paa Døren banker!
 <poem id="winter2018090969">
 <head>
     <title>Til Julie</title>
+    <toctitle>Til Julie. Jan. 1876</toctitle>
     <subtitle>Paris, i Januar 1876</subtitle>
     <firstline>Skjøndt Vintren længst har meiet bort mit Haar</firstline>
     <source pages="120"/>
@@ -2776,6 +2798,7 @@ Men det er ogsaa Alt, hvad den formaaer.
 <poem id="winter2018090970">
 <head>
     <title>Til Julie</title>
+    <toctitle>Til Samme. Jan. 1876</toctitle>
     <subtitle>Paris, den 16de Jan. 1876</subtitle>
     <firstline>Til Svar paa det Ord, Du mig sagde til Trøst</firstline>
     <source pages="121-123"/>
@@ -2869,6 +2892,7 @@ Jeg selv blev ei Peer Tott!
 <poem id="winter2018090972">
 <head>
     <title>Til Een</title>
+    <toctitle>Til Een med Omslag for Øiet. Marts 1876</toctitle>
     <subtitle>
         <line>med Omslag for Øiet</line>
         <line>Paris, den 12te Marts 1876</line>
@@ -2908,6 +2932,7 @@ Er mig skjult i skyfuld Nat!
 <poem id="winter2018090973">
 <head>
     <title>Dompapen og Jeg</title>
+    <toctitle>Dompapen og Jeg. Apr. 1876</toctitle>
     <subtitle>Paris, den 8de April 1876</subtitle>
     <firstline>Hvis Du kan med dine Toner</firstline>
     <source pages="127-128"/>
@@ -2960,6 +2985,7 @@ Er der <w>aldrig</w> Tale meer.
 <poem id="winter2018090974">
 <head>
     <title>Til Julie</title>
+    <toctitle>Til Julie. Apr. 1876</toctitle>
     <subtitle>Paris, den 12te April 1876</subtitle>
     <firstline>Du maa ikke døe før jeg!</firstline>
     <source pages="129"/>
@@ -2987,6 +3013,7 @@ Og Du bør jo ikke klage,
 <poem id="winter2018090975">
 <head>
     <title>Til Julie</title>
+    <toctitle>Til Samme. Juni 1876</toctitle>
     <subtitle>Paris, den 27de Juni 1876</subtitle>
     <firstline>Jeg har, vel sandt, een Musa kun</firstline>
     <source pages="130"/>
@@ -3017,6 +3044,7 @@ Ved Ottetallet og et Nul?
 <poem id="winter2018090976">
 <head>
     <title>Til Julie</title>
+    <toctitle>Til Samme. Juli 1876</toctitle>
     <subtitle>Paris, den 1ste Juli 1876</subtitle>
     <firstline>En Reseda mit Hjerte altid vinder!</firstline>
     <source pages="131"/>
@@ -3044,6 +3072,7 @@ Vel visnede, men kjære, maa Du troe!
 <poem id="winter2018090977">
 <head>
     <title>Til Oluf Bang</title>
+    <toctitle>Til Oluf Bang. Juli 1876</toctitle>
     <subtitle>Paris, den 5te Juli 1876</subtitle>
     <firstline>Jeg vilde være himmelglad, ifald</firstline>
     <source pages="132-133"/>
@@ -3104,7 +3133,8 @@ Mig snart som vissent Blad vil plukke af.
 
 <poem id="winter2018090979">
 <head>
-    <title>TIl Ada Frederiksen</title>
+    <title>Til Ada Frederiksen</title>
+    <toctitle>Til Ada Frederiksen. Aug. 1876</toctitle>
     <subtitle>
         <line>født Monrad</line>
         <line>Paris, den 16de Aug. 1876</line>
@@ -3144,6 +3174,7 @@ Maae fjerne Dig fra Sorg og Klage!
 <poem id="winter2018090980">
 <head>
     <title>Til Louise Dorothea Monrad</title>
+    <toctitle>Til Louise Dorothea Monrad. Aug 1876</toctitle>
     <subtitle>Paris, den 28de Aug. 1876</subtitle>
     <firstline>Saa Du vil seile over salten Vand</firstline>
     <notes>
@@ -3191,6 +3222,7 @@ Medfølger her fra Ida og fra Julie.
 <poem id="winter2018090981">
 <head>
     <title>Til Julie</title>
+    <toctitle>Til Julie. Dec. 1876</toctitle>
     <subtitle>Paris, den 7de Decbr. 1876</subtitle>
     <firstline>Din Himmel er kun skummel, graa</firstline>
     <source pages="139-140"/>
@@ -3247,6 +3279,7 @@ Min Bøn for Hende: ,,Tænk Dig om,
 <poem id="winter2018090982">
 <head>
     <title>Smaa Riim</title>
+    <toctitle>Smaa Riim. 1876</toctitle>
     <subtitle>Paris, 1876</subtitle>
     <firstline>En Knark, som tager Alt paa Kant</firstline>
     <source pages="141-152"/>
