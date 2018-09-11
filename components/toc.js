@@ -25,7 +25,11 @@ type TocProps = {
 };
 export default class extends React.Component<TocProps> {
   render() {
-    const renderItems = (items: Array<TocItem>, indent: number = 0) => {
+    const renderItems = (
+      items: Array<TocItem>,
+      indent: number = 0,
+      level = 1
+    ) => {
       const rows = items.map((item, i) => {
         const { id, title, type, prefix, level } = item;
         if (type === 'section') {
@@ -47,7 +51,11 @@ export default class extends React.Component<TocProps> {
               <td />
               <td>
                 <h3 className={className}>{shownTitle}</h3>
-                {renderItems(item.content, indent + 1)}
+                {renderItems(
+                  item.content,
+                  indent + 1,
+                  item.level == null ? 1 : item.level
+                )}
               </td>
             </tr>
           );
@@ -68,7 +76,7 @@ export default class extends React.Component<TocProps> {
           );
         }
       });
-      const className = `toc ${indent === 0 ? 'outer' : ''}`;
+      const className = `toc level-${level} ${indent === 0 ? 'outer' : ''}`;
       return (
         <table className={className}>
           <tbody>{rows}</tbody>
@@ -82,7 +90,7 @@ export default class extends React.Component<TocProps> {
     } else {
       return (
         <div>
-          {renderItems(toc, indent || 0)}
+          {renderItems(toc, indent || 0, 1)}
           <style jsx>{`
             :global(table.toc) {
               margin-left: 30px;
@@ -90,6 +98,9 @@ export default class extends React.Component<TocProps> {
               cell-spacing: 0;
               cell-padding: 0;
               border-collapse: collapse;
+            }
+            :global(table.toc.level-3) {
+              margin-bottom: 0;
             }
             :global(table.toc.outer) {
               margin-left: 0;
@@ -101,7 +112,7 @@ export default class extends React.Component<TocProps> {
               margin: 0;
               margin-top: 10px;
             }
-            :global(.toc) :global(h3.level-2) {
+            :global(.toc.level-2) :global(h3) {
               font-weight: lighter;
               font-size: 16px;
               padding: 0;
@@ -113,7 +124,6 @@ export default class extends React.Component<TocProps> {
               font-size: 14px;
               padding: 0;
               margin: 0;
-              margin-top: 0px;
             }
             :global(.toc) :global(td.num) {
               text-align: right;

@@ -1,6 +1,7 @@
 // @flow
 
 import React from 'react';
+import type { Node } from 'react';
 import Head from './head';
 import { Link, Router } from '../routes';
 import PoetName from './poetname';
@@ -168,7 +169,7 @@ export default class Nav extends React.Component<NavProps> {
         ) : null;
       links = [poetsLink, poetLink, workLink];
     }
-    let renderedSectionTitles: Array<TextContent> = [];
+    let renderedSectionTitles: Array<Node> = [];
     if (sectionTitles != null) {
       console.log(sectionTitles);
       renderedSectionTitles = sectionTitles.map(t => {

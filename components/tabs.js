@@ -220,7 +220,9 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
           <form onSubmit={this.onSubmit}>
             <input
               ref={domElement => {
-                this.searchField = domElement;
+                if (domElement != null) {
+                  this.searchField = domElement;
+                }
               }}
               onFocus={this.onFocus}
               onBlur={this.onBlur}
