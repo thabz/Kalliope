@@ -730,7 +730,7 @@ const handle_text = (
 
   const keywords = head.get('keywords');
   const isBible = poetId === 'bibel';
-  const isFolkevise = poetId === 'folkeviser';
+  const isFolkevise = poetId === 'folkeviser' || (poetId === 'tasso' && workId === '1581');
 
   let subtitles = null;
   const subtitle = head.get('subtitle');

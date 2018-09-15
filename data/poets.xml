@@ -174,6 +174,24 @@
   <works>1746</works>
 </person>
 
+<person id="kleiste" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Ewald Christian von</firstname>
+    <lastname>Kleist</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1715-03-07</date>
+      <place>Godset Zeblin ved Köslin i Pommern</place>
+    </born>
+    <dead>
+      <date>1759-08-24</date>
+      <place>Frankfurt an der Oder</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="klopstock" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich Gottlieb</firstname>
@@ -190,6 +208,23 @@
     </dead>
   </period>
   <works>1749,1758,1769,1771,1784,1787,andre</works>
+</person>
+
+<person id="ramler" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Karl Wilhelm</firstname>
+    <lastname>Ramler</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1725-02-25</date>
+      <place>Kolberg</place>
+    </born>
+    <dead>
+      <date>1798-04-11</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
 </person>
 
 <person id="lessing" country="de" lang="de" type="poet">
@@ -281,6 +316,24 @@
   <works>1778,1778v,1779,andre</works>
 </person>
 
+<person id="gotter" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich Wilhelm</firstname>
+    <lastname>Gotter</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1746-09-03</date>
+      <place>Gotha</place>
+    </born>
+    <dead>
+      <date>1797-03-18</date>
+      <place>Gotha</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="burger" country="de" lang="de" type="poet">
   <name>
     <firstname>Gottfried August</firstname>
@@ -339,17 +392,17 @@
 
 <person id="stolbergf" country="de" lang="de" type="poet">
   <name>
-    <firstname>Friedrich Leopold zu</firstname>
-    <lastname>Stolberg-Stolberg</lastname>
+    <firstname>Friedrich Leopold Graf zu</firstname>
+    <lastname>Stolberg</lastname>
   </name>
   <period>
     <born>
       <date>1750-11-07</date>
-      <place>Bramstedt, Holstein</place>
+      <place>Bramstedt, Holstein, (tidl. Danmark)</place>
     </born>
     <dead>
       <date>1819-12-05</date>
-      <place>Gut Sondermühlen bei Osnabrück</place>
+      <place>Schloß Sondermühlen, Osnabrück</place>
     </dead>
   </period>
   <works>andre</works>
@@ -2454,7 +2507,7 @@
       <place>Paris</place>
     </dead>
   </period>
-  <works>1796,andre</works>
+  <works>1796,1797,andre</works>
 </person>
 
 <person id="soeborg" country="dk" lang="da" type="poet">
@@ -4610,6 +4663,25 @@
   <works>andre</works>
 </person>
 
+<person id="chenier" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Marie-Joseph</firstname>
+    <lastname>Chénier</lastname>
+    <fullname>Marie-Joseph Blaise de Chénier</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1764-02-11</date>
+      <place>Konstantinopel</place>
+    </born>
+    <dead>
+      <date>1811-01-10</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="vigny" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Alfred de</firstname>
@@ -5631,6 +5703,24 @@
   <works>1760,1790,1791</works>
 </person>
 
+<person id="kellgren" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Johan Henric</firstname>
+    <lastname>Kellgren</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1751-12-01</date>
+      <place>Vestergötland</place>
+    </born>
+    <dead>
+      <date>1795-04-20</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="tegner" country="se" lang="sv" type="poet">
   <name>
     <firstname>Esaias</firstname>
@@ -5648,7 +5738,7 @@
   </period>
 </person>
 
-
+>>>>>>> master
 <person id="stagnelius" country="se" lang="sv" type="poet">
   <name>
     <firstname>Erik Johan</firstname>
@@ -7070,10 +7160,12 @@
   </name>
   <period>
     <born>
-      <date>1304</date>
+      <date>1304-07-20</date>
+      <place>Arezzo</place>
     </born>
     <dead>
-      <date>1374</date>
+      <date>1374-07-19</date>
+      <place>Arquà</place>
     </dead>
   </period>
   <works>1360</works>
@@ -7240,6 +7332,7 @@
       <place>Rom</place>
     </dead>
   </period>
+  <works>1581</works>
 </person>
 
 <person id="fiorentini" country="it" lang="it" type="poet">
