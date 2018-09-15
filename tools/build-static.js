@@ -1,15 +1,16 @@
 const fs = require('fs');
 const path = require('path');
-const sharp = require('sharp');
 const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
 const Paths = require('../pages/helpers/paths.js');
 const entities = require('entities');
 const elasticSearchClient = require('./libs/elasticsearch-client.js');
 const CommonData = require('../pages/helpers/commondata.js');
+const ics = require('ics');
 
 const {
   isFileModified,
+  markFileDirty,
   refreshFilesModifiedCache,
   loadCachedJSON,
   writeCachedJSON,
@@ -24,6 +25,8 @@ const {
   safeGetText,
   safeGetAttr,
   replaceDashes,
+  imageSizeSync,
+  buildThumbnails,
 } = require('./libs/helpers.js');
 
 let collected = {
@@ -39,6 +42,9 @@ let collected = {
 
 // Use poetname.js:poetNameString instead when node.js uses modules
 const poetName = poet => {
+  if (poet == null) {
+    throw 'poetName called with null poet';
+  }
   const { name } = poet;
   const { firstname, lastname } = name;
   if (lastname) {
@@ -90,24 +96,36 @@ const load_timeline = filename => {
   return doc.find('//events/entry').map(event => {
     const type = event.attr('type').value();
     const date = event.attr('date').value();
-    const html = event.get('html');
     let data = {
       date,
       type,
-      lang: 'da',
       is_history_item: true,
-      content_lang: 'da',
-      content_html: htmlToXml(
+    };
+    if (type === 'image') {
+      const onError = message => {
+        throw `${filename}: ${message}`;
+      };
+      const pictureNode = event.get('picture');
+      if (pictureNode == null) {
+        onError('indeholder event med type image uden <picture>');
+      }
+      const picture = get_picture(pictureNode, '/static', collected, onError);
+      data.src = picture.src;
+      data.content_lang = picture.content_lang;
+      data.lang = picture.lang;
+      data.content_html = picture.content_html;
+    } else {
+      data.content_lang = 'da';
+      data.lang = 'da';
+      const html = event.get('html');
+      data.content_html = htmlToXml(
         html
           .toString()
           .replace('<html>', '')
           .replace('</html>', '')
           .trim(),
         collected
-      ),
-    };
-    if (type === 'image') {
-      data.src = event.get('src').text();
+      );
     }
     return data;
   });
@@ -213,66 +231,181 @@ const build_poet_timeline_json = (poet, collected) => {
   return items;
 };
 
-const build_museum_link = picture => {
+const museums = {
+  hirschsprungske: {
+    name: 'Den Hirschsprungske Samling',
+  },
+  skagen: {
+    name: 'Skagens Museum',
+  },
+  thorvaldsens: {
+    url: 'http://thorvaldsensmuseum.dk/samlingerne/vaerk/$invNr',
+    name: 'Thorvaldsens Museum',
+  },
+  nivaagaard: {
+    url: 'http://www.nivaagaard.dk/samling-da/$objId',
+    name: 'Nivaagaards Malerisamling',
+  },
+  kb: {
+    url: 'http://www.kb.dk/images/billed/2010/okt/billeder/object$objId/da/',
+    name: 'Det kongelige Bibliotek',
+  },
+  smk: {
+    url: 'http://collection.smk.dk/#/detail/$invNr',
+    name: 'Statens Museum for Kunst',
+  },
+  gleimhaus: {
+    url: 'https://www.museum-digital.de/nat/index.php?t=objekt&oges=$objId',
+    name: 'Gleimhaus, Halberstadt',
+  },
+  ribe: {
+    url: `https://ribekunstmuseum.dk/samling/$invNr`,
+    name: 'Ribe Kunstmuseum',
+  },
+  smb: {
+    url: `http://www.smb-digital.de/eMuseumPlus?objectId=$objId`,
+  },
+  md: {
+    url: `https://www.museum-digital.de/nat/index.php?t=objekt&oges=$objId`,
+  },
+  npg: {
+    url: `https://www.npg.org.uk/collections/search/portrait/$objId`,
+    name: 'National Portrait Gallery, London',
+  },
+  'natmus.se': {
+    url: `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=$objId&viewType=detailView`,
+  },
+  'digitalmuseum.no': {
+    url: `https://digitaltmuseum.no/$objId/maleri`,
+  },
+  'digitalmuseum.se': {
+    url: `https://digitaltmuseum.se/$objId/maleri`,
+  },
+};
+
+const get_museum_json = museumId => {
+  if (museumId != null && museums[museumId] != null) {
+    return {
+      id: museumId,
+      name: museums[museumId].name,
+    };
+  } else {
+    return null;
+  }
+};
+
+const build_museum_url = picture => {
+  if (picture == null) {
+    return null;
+  }
   const invNr = safeGetAttr(picture, 'invnr');
   const objId = safeGetAttr(picture, 'objid');
   const museum = safeGetAttr(picture, 'museum');
   if (museum != null && (invNr != null || objId != null)) {
-    let url = null;
-    switch (museum) {
-      case 'thorvaldsens':
-        url = `http://thorvaldsensmuseum.dk/samlingerne/vaerk/${invNr}`;
-        break;
-      case 'nivaagaard':
-        url = `http://www.nivaagaard.dk/samling-da/${objId}`;
-        break;
-      case 'smk':
-        url = `http://collection.smk.dk/#/detail/${invNr}`;
-        break;
-      case 'smb':
-        url = `http://www.smb-digital.de/eMuseumPlus?objectId=${objId}`;
-        break;
-      case 'npg':
-        url = `https://www.npg.org.uk/collections/search/portrait/${objId}`;
-        break;
+    const museumObject = museums[museum];
+    if (museumObject != null && museumObject.url != null) {
+      return museumObject.url.replace('$objId', objId).replace('$invNr', invNr);
     }
-    return url == null ? null : ` <a href="${url}">⌘</a>`;
   }
+  return null;
 };
 
-const build_portrait_json = (poet, collected) => {
-  if (!poet.has_portraits) {
-    return null;
-  }
-  let data = null;
-  const doc = loadXMLDoc(`fdirs/${poet.id}/portraits.xml`);
-  if (doc != null) {
-    const primaries = doc.find('//pictures/picture').filter(picture => {
-      return safeGetAttr(picture, 'primary') == 'true';
-    });
-    if (primaries.length > 1) {
-      throw `fdirs/${poet.id}/portraits.xml har flere primary`;
+const build_museum_link = picture => {
+  const url = build_museum_url(picture);
+  return url == null ? null : ` <a href="${url}">⌘</a>`;
+};
+
+const get_picture = (picture, srcPrefix, collected, onError) => {
+  const primary = safeGetAttr(picture, 'primary') == 'true';
+  let src = safeGetAttr(picture, 'src');
+  const ref = safeGetAttr(picture, 'ref');
+  const year = safeGetAttr(picture, 'year');
+  const museumId = safeGetAttr(picture, 'museum');
+  const remoteUrl = build_museum_url(picture);
+  const museumLink = build_museum_link(picture) || '';
+  if (src != null) {
+    const lang = safeGetAttr(picture, 'lang') || 'da';
+    if (src.charAt(0) !== '/') {
+      src = srcPrefix + '/' + src;
     }
-    if (primaries.length === 0) {
-      throw `fdirs/${poet.id}/portraits.xml mangler primary`;
-    }
-    const primary = primaries[0];
-    const museumLink = build_museum_link(primary) || '';
-    data = {
-      lang: poet.lang,
-      src: primary.attr('src').value(),
+    return {
+      lang,
+      src,
+      year,
+      size: imageSizeSync(src.replace(/^\//, '')),
+      remoteUrl,
+      museum: get_museum_json(museumId),
       content_lang: 'da',
       content_html: htmlToXml(
-        primary
+        picture
           .toString()
           .replace(/<picture[^>]*?>/, '')
           .replace('</picture>', '')
           .trim() + museumLink,
         collected
       ),
+      primary,
+    };
+  } else if (ref != null) {
+    if (ref.indexOf('/') === -1) {
+      onError(`fandt en ulovlig ref "${ref}" uden mappe-angivelse`);
+    }
+    const artwork = collected.artwork.get(ref);
+    if (artwork == null) {
+      onError(`fandt en ref "${ref}" som ikke matcher noget kendt billede.`);
+    }
+    const artist = collected.poets.get(artwork.artistId);
+    const museumId = safeGetAttr(picture, 'museum');
+    const remoteUrl = build_museum_url(picture);
+    const description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
+      artwork.content_raw
+    }`;
+    return {
+      artist,
+      lang: artwork.lang,
+      src: artwork.src,
+      year,
+      size: imageSizeSync(artwork.src.replace(/^\//, '')),
+      remoteUrl,
+      museum: get_museum_json(museumId),
+      content_lang: artwork.content_lang,
+      content_html: htmlToXml(description, collected),
+      primary,
     };
   }
-  return data;
+};
+
+const build_portraits_json = (poet, collected) => {
+  let result = [];
+  if (!poet.has_portraits) {
+    return result;
+  }
+  const doc = loadXMLDoc(`fdirs/${poet.id}/portraits.xml`);
+  if (doc != null) {
+    onError = message => {
+      throw `fdirs/${poet.id}/portraits.xml: ${message}`;
+    };
+    result = doc.find('//pictures/picture').map(picture => {
+      picture = get_picture(
+        picture,
+        `/static/images/${poet.id}`,
+        collected,
+        onError
+      );
+      if (picture == null) {
+        onError('har et billede uden src- eller ref-attribut.');
+      }
+      return picture;
+    });
+    const primaries = result.filter(p => p.primary);
+    if (primaries.length > 1) {
+      onError('har flere primary');
+    }
+    if (primaries.length == 0) {
+      onError('mangler primary');
+    }
+  }
+  return result;
 };
 
 const build_bio_json = collected => {
@@ -318,7 +451,7 @@ const build_bio_json = collected => {
       data.content_lang = 'da';
     }
     data.timeline = build_poet_timeline_json(poet, collected);
-    data.portrait = build_portrait_json(poet, collected);
+    data.portraits = build_portraits_json(poet, collected);
     const destFilename = `static/api/${poet.id}/bio.json`;
     console.log(destFilename);
     writeJSON(destFilename, data);
@@ -326,7 +459,7 @@ const build_bio_json = collected => {
 };
 
 // TODO: Speed this up by caching.
-const build_poets_json = () => {
+const build_poets_json = collected => {
   // Returns {has_poems: bool, has_prose: bool,
   //  has_texts: bool, has_works: bool}
   const hasTexts = (poetId, workIds) => {
@@ -391,11 +524,10 @@ const build_poets_json = () => {
 
     const mentions = collected.person_or_keyword_refs.get(id);
     const has_mentions =
-      mentions != null &&
-      (mentions.mention.length > 0 ||
-        mentions.translation.length > 0 ||
-        mentions.primary.length > 0 ||
-        mentions.secondary.length > 0);
+      (mentions != null &&
+        (mentions.mention.length > 0 || mentions.translation.length > 0)) ||
+      fileExists(`fdirs/${id}/bibliography-primary.xml`) ||
+      fileExists(`fdirs/${id}/bibliography-secondary.xml`);
 
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');
@@ -453,6 +585,7 @@ const build_poets_json = () => {
       has_poems: has.has_poems,
       has_prose: has.has_prose,
       has_texts: has.has_texts,
+      has_artwork: fs.existsSync(`fdirs/${id}/artwork.xml`),
       has_biography:
         fs.existsSync(`fdirs/${id}/bio.xml`) ||
         fs.existsSync(`fdirs/${id}/events.xml`) ||
@@ -524,34 +657,59 @@ const get_notes = (head, context = {}) => {
     };
   });
 };
-const get_pictures = head => {
-  return head.find('pictures/picture').map(picture => {
-    const src = picture.attr('src').value();
-    const lang = picture.attr('lang') ? picture.attr('lang').value() : 'da';
-    const type = picture.attr('type') ? picture.attr('type').value() : null;
-    const invnr = safeGetAttr(picture, 'invnr');
-    const museumLink = build_museum_link(picture) || '';
 
-    return {
-      src,
-      type,
-      content_lang: lang,
-      content_html: htmlToXml(
-        picture
-          .toString()
-          .replace(/<picture[^>]*>/, '')
-          .replace('</picture>', '') + museumLink,
-        collected
-      ),
-    };
+const get_pictures = (head, srcPrefix, xmlFilename, collected) => {
+  const onError = message => {
+    throw `${xmlFilename}: ${message}`;
+  };
+  return head.find('pictures/picture').map(p => {
+    return get_picture(p, srcPrefix, collected, onError);
   });
+};
+
+const resolve_variants_cache = {};
+const resolve_variants = poemId => {
+  const variantIds = collected.variants.get(poemId);
+  if (variantIds == null || variantIds.length == 0) {
+    return null;
+  }
+  let result = resolve_variants_cache[poemId];
+  if (result != null) {
+    return result;
+  }
+
+  // Deep dive through variants-graph
+  let seen_variants = new Set();
+  const recurse = variantId => {
+    if (seen_variants.has(variantId)) {
+      return;
+    } else {
+      seen_variants.add(variantId);
+      const variantIds = collected.variants.get(variantId);
+      variantIds.forEach(variantId => {
+        recurse(variantId);
+      });
+    }
+  };
+  recurse(poemId);
+
+  // Cache and return sorted poemIds
+  result = Array.from(seen_variants).sort((a, b) => {
+    const metaA = collected.texts.get(a);
+    const metaB = collected.texts.get(b);
+    const workA = collected.works.get(metaA.poetId + '/' + metaA.workId);
+    const workB = collected.works.get(metaB.poetId + '/' + metaB.workId);
+    return workA.year > workB.year ? 1 : -1;
+  });
+  resolve_variants_cache[poemId] = result;
+  return result;
 };
 
 const handle_text = (
   poetId,
   workId,
   text,
-  isPoetry,
+  textType, // poem, prose, section
   resolve_prev_next,
   section_titles
 ) => {
@@ -565,13 +723,10 @@ const handle_text = (
 
   const textId = text.attr('id').value();
   const head = text.get('head');
-  const body = text.get('body');
-  const firstline = safeGetText(head, 'firstline');
-  let title = safeGetText(head, 'title');
-  title = title || firstline;
-  let linktitle = safeGetText(head, 'linktitle');
-  let indextitle = safeGetText(head, 'indextitle');
-  linktitle = linktitle || indextitle || title;
+  const firstline = extractTitle(head, 'firstline');
+  let title = extractTitle(head, 'title') || firstline; // {title: xxx, prefix: xxx}
+  let indextitle = extractTitle(head, 'indextitle') || title;
+  let linktitle = extractTitle(head, 'linktitle') || indextitle || title;
 
   const keywords = head.get('keywords');
   const isBible = poetId === 'bibel';
@@ -638,22 +793,107 @@ const handle_text = (
     ];
   });
 
+  const variantsArray = (resolve_variants(textId) || [])
+    .filter(id => {
+      // Skip self
+      return id !== textId;
+    })
+    .map(id => {
+      const meta = collected.texts.get(id);
+      const poet = poetName(collected.poets.get(meta.poetId));
+      const work = workName(
+        collected.works.get(meta.poetId + '/' + meta.workId)
+      );
+      return [
+        [
+          `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`,
+          { html: true },
+        ],
+      ];
+    });
+
   const foldername = Paths.textFolder(textId);
   const prev_next = resolve_prev_next(textId);
 
-  const rawBody = body
-    .toString()
-    .replace('<body>', '')
-    .replace('</body>', '');
-  const content_html = htmlToXml(
-    rawBody,
-    collected,
-    isPoetry,
-    isBible,
-    isFolkevise
-  );
-  const has_footnotes =
-    rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
+  const sourceNode = head.get('source');
+  let source = null;
+  let workSource = null;
+  if (sourceNode != null) {
+    const sourceId = safeGetAttr(sourceNode, 'in') || 'default';
+    workSource = work.sources[sourceId];
+    if (workSource == null) {
+      throw new Error(
+        `fdirs/${poetId}/${workId}.xml ${textId} references undefined source.`
+      );
+    }
+    let pages = null;
+    const pagesAttr = safeGetAttr(sourceNode, 'pages');
+    let sourceBookRef = workSource ? workSource.source : null;
+    if (sourceNode.text().trim().length > 0) {
+      sourceBookRef = sourceNode
+        .toString()
+        .replace(/<source[^>]*>/, '')
+        .replace(/<\/source>/, '');
+    }
+    const facsimile =
+      safeGetAttr(sourceNode, 'facsimile') ||
+      (workSource ? workSource.facsimile : null);
+    let facsimilePages = safeGetAttr(sourceNode, 'facsimile-pages');
+    if (
+      facsimilePages == null &&
+      workSource != null &&
+      workSource.facsimilePagesOffset != null &&
+      pagesAttr != null
+    ) {
+      // Deduce facsimilePages from pages and facsimilePagesOffset.
+      const pagesParts = pagesAttr.split(/-/).map(n => parseInt(n));
+      const pFrom = pagesParts[0] + workSource.facsimilePagesOffset;
+      const pTo = (pagesParts[1] || pFrom) + workSource.facsimilePagesOffset;
+      facsimilePages = [pFrom, pTo];
+    } else if (facsimilePages != null) {
+      const pagesParts = facsimilePages.split(/-/).map(n => parseInt(n));
+      const pFrom = pagesParts[0];
+      const pTo = pagesParts[1] || pFrom;
+      facsimilePages = [pFrom, pTo];
+    }
+    source = {
+      source: sourceBookRef,
+      pages: pagesAttr,
+      facsimilePageCount: workSource.facsimilePageCount,
+      facsimile,
+      facsimilePages,
+    };
+  } else if (workSource != null) {
+    // Dette er ikke nødvendigvis en fejl.
+    console.log(`fdirs/${poetId}/${workId}: teksten ${textId} mangler source.`);
+  }
+  let content_html = null;
+  let has_footnotes = false;
+  let toc = null;
+  if (textType === 'section') {
+    // A linkable section with id
+    if (title == null) {
+      throw `fdirs/${poetId}/${workId}: section ${textId} mangler title.`;
+    }
+    const content = text.get('content');
+    toc = build_section_toc(content);
+  } else {
+    // prose or poem
+    const body = text.get('body');
+    const rawBody = body
+      .toString()
+      .replace('<body>', '')
+      .replace('</body>', '');
+    content_html = htmlToXml(
+      rawBody,
+      collected,
+      textType === 'poem',
+      isBible,
+      isFolkevise
+    );
+    has_footnotes =
+      rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
+  }
   mkdirp.sync(foldername);
   const text_data = {
     poet,
@@ -663,21 +903,58 @@ const handle_text = (
     section_titles,
     text: {
       id: textId,
-      title: replaceDashes(title),
-      linktitle: replaceDashes(linktitle),
+      title: replaceDashes(title.title),
+      title_prefix: title.prefix,
+      linktitle: replaceDashes(linktitle.title),
       subtitles,
       is_prose: text.name() === 'prose',
+      text_type: textType,
       has_footnotes,
       notes: get_notes(head),
+      source,
       keywords: keywordsArray || [],
       refs: refsArray,
-      pictures: get_pictures(head),
+      variants: variantsArray,
+      pictures: get_pictures(
+        head,
+        `/static/images/${poetId}`,
+        `fdirs/${poetId}/${workId}.xml:${textId}`,
+        collected
+      ),
       content_lang: poet.lang,
       content_html,
+      toc,
     },
   };
   console.log(Paths.textPath(textId));
   writeJSON(Paths.textPath(textId), text_data);
+};
+
+// Returns raw {title: string, prefix?: string}
+// Both can be converted to xml using htmlToXml(...)
+const extractTitle = (head, type) => {
+  const element = head.get(type);
+  if (element == null) {
+    return null;
+  }
+  let title = element.toString();
+  title = entities
+    .decodeHTML(title)
+    .replace('<' + type + '>', '')
+    .replace('</' + type + '>', '')
+    .replace('<' + type + '/>', '');
+  if (title.length == 0) {
+    return null;
+  }
+  const parts = title.match(/<num>([^<]*)<\/num>(.*)$/);
+  if (parts != null) {
+    return {
+      prefix: parts[1],
+      title: parts[2],
+    };
+  } else {
+    return { title: title };
+  }
 };
 
 const handle_work = work => {
@@ -691,57 +968,24 @@ const handle_work = work => {
     let proses = [];
     let toc = [];
 
-    const extractTocTitle = head => {
-      const firstline = safeGetText(head, 'firstline');
-      let toctitle = head.get('toctitle')
-        ? head.get('toctitle').toString()
-        : null;
-      if (toctitle === '<toctitle/>') {
-        console.log(
-          `${poetId}/${workId}.xml has superfluous empty <toctitle/>`
-        );
-        toctitle = null;
-      }
-      const title = head.get('title') ? head.get('title').text() : null;
-      let titleToUse = toctitle || title || firstline;
-      titleToUse = entities
-        .decodeHTML(titleToUse)
-        .replace('<toctitle>', '')
-        .replace('</toctitle>', '');
-      const parts = titleToUse.match(/<num>([^<]*)<\/num>(.*)$/);
-      if (parts != null) {
-        return {
-          prefix: parts[1],
-          title: htmlToXml(parts[2]),
-        };
-      } else {
-        return { title: htmlToXml(titleToUse) };
-      }
-    };
-
     section.childNodes().forEach(part => {
       const partName = part.name();
       if (partName === 'poem') {
         const textId = part.attr('id').value();
         const head = part.get('head');
-        const title = head.get('title') ? head.get('title').text() : null;
-        const indextitle = head.get('indextitle')
-          ? head.get('indextitle').text()
-          : null;
-        const firstline = head.get('firstline')
-          ? head.get('firstline').text()
-          : null;
-        const indexTitleToUse = indextitle || title || firstline;
-        if (indexTitleToUse == null) {
+        const firstline = extractTitle(head, 'firstline');
+        const title = extractTitle(head, 'title') || firstline;
+        const indextitle = extractTitle(head, 'indextitle') || title;
+        const toctitle = extractTitle(head, 'toctitle') || title;
+        if (indextitle == null) {
           throw `${textId} mangler førstelinje, indextitle og title i ${poetId}/${workId}.xml`;
         }
-        if (firstline != null && typeof firstline !== 'string') {
+        if (firstline != null && firstline.title.indexOf('<') > -1) {
           throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
         }
-        if (typeof indexTitleToUse !== 'string') {
+        if (indextitle.title.indexOf('>') > -1) {
           throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
         }
-        const toctitle = extractTocTitle(head);
         if (toctitle == null) {
           throw `${textId} mangler toctitle, firstline og title i ${poetId}/${workId}.xml`;
         }
@@ -749,56 +993,71 @@ const handle_work = work => {
           id: textId,
           work_id: workId,
           lang: collected.poets.get(poetId).lang,
-          title: replaceDashes(indexTitleToUse),
-          firstline: replaceDashes(firstline),
+          title: replaceDashes(indextitle.title),
+          firstline: firstline == null ? null : replaceDashes(firstline.title),
         });
         toc.push({
           type: 'text',
           id: textId,
-          title: toctitle.title,
+          title: htmlToXml(toctitle.title),
           prefix: replaceDashes(toctitle.prefix),
         });
         handle_text(
           poetId,
           workId,
           part,
-          true,
+          partName,
           resolve_prev_next,
           section_titles
         );
       } else if (partName === 'section') {
         const head = part.get('head');
         const level = parseInt(safeGetAttr(head, 'level') || '1');
-        const toctitle = extractTocTitle(head);
+        const sectionId = safeGetAttr(part, 'id');
+        const title = extractTitle(head, 'title');
+        const toctitle = extractTitle(head, 'toctitle') || title;
+        const linktitle = extractTitle(head, 'linktitle') || toctitle || title;
+        const breadcrumb = { title: linktitle.title, id: sectionId };
         const subtoc = handle_section(part.get('content'), resolve_prev_next, [
           ...section_titles,
-          toctitle.title[0][0],
+          breadcrumb,
         ]);
         toc.push({
           type: 'section',
+          id: sectionId,
           level: level,
-          title: toctitle.title,
+          title: htmlToXml(toctitle.title),
           content: subtoc,
         });
+        if (sectionId != null) {
+          handle_text(
+            poetId,
+            workId,
+            part,
+            partName,
+            resolve_prev_next,
+            section_titles
+          );
+        }
       } else if (partName === 'prose') {
         const textId = part.attr('id').value();
         const head = part.get('head');
-        const title = head.get('title') ? head.get('title').text() : null;
-        const toctitle = extractTocTitle(head, textId);
+        const title = extractTitle(head, 'title');
+        const toctitle = extractTitle(head, 'toctitle') || title;
         if (toctitle == null) {
           throw `${textId} mangler title og toctitle i ${poetId}/${workId}.xml`;
         }
         toc.push({
           type: 'text',
           id: textId,
-          title: toctitle.title,
+          title: htmlToXml(toctitle.title),
           prefix: toctitle.prefix,
         });
         handle_text(
           poetId,
           workId,
           part,
-          false,
+          partName,
           resolve_prev_next,
           section_titles
         );
@@ -809,7 +1068,12 @@ const handle_work = work => {
 
   const workhead = work.get('workhead');
   const notes = get_notes(workhead);
-  const pictures = get_pictures(workhead);
+  const pictures = get_pictures(
+    workhead,
+    `/static/images/${poetId}`,
+    `fdirs/${poetId}/${workId}`,
+    collected
+  );
 
   const workbody = work.get('workbody');
   if (workbody == null) {
@@ -823,7 +1087,7 @@ const handle_work = work => {
 
   // Create function to resolve prev/next links in texts
   const resolve_prev_next = (function() {
-    const items = workbody.find('//poem|//prose').map(part => {
+    const items = workbody.find('//poem|//prose|//section[@id]').map(part => {
       const textId = part.attr('id').value();
       const head = part.get('head');
       const title = head.get('title') ? head.get('title').text() : null;
@@ -849,11 +1113,121 @@ const handle_work = work => {
   return { lines, toc, notes, pictures };
 };
 
+const build_global_lines_json = collected => {
+  safeMkdir('static/api/alltexts');
+  let changed_langs = {};
+  let found_changes = false;
+  collected.workids.forEach((workIds, poetId) => {
+    workIds.forEach(workId => {
+      const workFilename = `fdirs/${poetId}/${workId}.xml`;
+      if (!isFileModified(workFilename)) {
+        return;
+      } else {
+        const poet = collected.poets.get(poetId);
+        changed_langs[poet.country] = true;
+        found_changes = true;
+      }
+    });
+  });
+  if (found_changes) {
+    // Collect the lines for the changed countries
+    // collected_lines[country][titles|first][letter] is an array of lines
+    let collected_lines = new Map();
+    collected.texts.forEach((textMeta, textId) => {
+      const poet = collected.poets.get(textMeta.poetId);
+      if (changed_langs[poet.country]) {
+        let per_country = collected_lines.get(poet.country) || new Map();
+        collected_lines.set(poet.country, per_country);
+        ['titles', 'first'].forEach(linetype => {
+          let per_linetype = per_country.get(linetype) || new Map();
+          per_country.set(linetype, per_linetype);
+          let line =
+            linetype == 'titles' ? textMeta.indexTitle : textMeta.firstline;
+          if (line != null) {
+            // firstline is null for prose texts
+            let indexableLine = line
+              .replace(/^\[/, '')
+              .replace(/^\(/, '')
+              .toUpperCase()
+              .replace(/^À/, 'A')
+              .replace(/^Á/, 'A')
+              .replace(/^É/, 'E')
+              .replace(/^È/, 'E')
+              .replace(/^Ô/, 'O');
+            if (poet.country === 'dk') {
+              indexableLine = indexableLine
+                .replace(/^Ö/, 'Ø')
+                .replace(/^AA/, 'Å');
+            }
+            let firstletter = indexableLine[0];
+            if (firstletter >= '0' && firstletter <= '9') {
+              firstletter = '_'; // Vises som "Tegn"
+            }
+            const work = collected.works.get(
+              textMeta.poetId + '/' + textMeta.workId
+            );
+            let per_letter = per_linetype.get(firstletter) || [];
+            per_letter.push({
+              poet: {
+                id: textMeta.poetId,
+                name: poetName(poet),
+              },
+              work: {
+                id: work.id,
+                title: workName(work),
+              },
+              line,
+              textId,
+            });
+            per_linetype.set(firstletter, per_letter);
+          }
+        });
+      }
+    });
+    // Write the json files
+    const compareLocales = {
+      dk: 'da-DK',
+      de: 'de',
+      fr: 'fr-FR',
+      gb: 'en-GB',
+      us: 'en-US',
+      it: 'it-IT',
+      se: 'se',
+      no:
+        'da-DK' /* no-NO locale virker ikke, men sortering er ligesom 'da-DK' */,
+    };
+    collected_lines.forEach((per_country, country) => {
+      per_country.forEach((per_linetype, linetype) => {
+        const locale = compareLocales[country] || 'da-DK';
+        const linesComparator = (a, b) => {
+          if (a.line === b.line) {
+            return a.poet.name.localeCompare(b.poet.name, locale);
+          } else {
+            return a.line.localeCompare(b.line, locale);
+          }
+        };
+        const lettersComparator = (a, b) => a.localeCompare(b, locale);
+        const letters = Array.from(per_linetype.keys()).sort(lettersComparator);
+        per_linetype.forEach((lines, letter) => {
+          const data = {
+            letters,
+            lines: lines.sort(linesComparator),
+          };
+          const filename = `static/api/alltexts/${country}-${linetype}-${letter}.json`;
+          console.log(filename);
+          writeJSON(filename, data);
+        });
+      });
+    });
+  }
+};
+
 // Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
 const works_first_pass = collected => {
   let texts = new Map(loadCachedJSON('collected.texts') || []);
   let works = new Map(loadCachedJSON('collected.works') || []);
+
   let found_changes = false;
   const force_reload = texts.size === 0 || works.size === 0;
   collected.workids.forEach((workIds, poetId) => {
@@ -886,15 +1260,21 @@ const works_first_pass = collected => {
         has_content: work.find('//poem|//prose').length > 0,
       });
 
-      work.find('//poem|//prose').forEach(part => {
+      work.find('//poem|//prose|//section[@id]').forEach(part => {
         const textId = part.attr('id').value();
         const head = part.get('head');
-        const title = safeGetText(head, 'title');
-        const firstline = safeGetText(head, 'firstline');
-        const linktitle = safeGetText(head, 'linktitle');
+        const title = extractTitle(head, 'title');
+        const firstline = extractTitle(head, 'firstline');
+        const linktitle = extractTitle(head, 'linktitle');
+        const indextitle = extractTitle(head, 'indextitle');
+
         const linkTitle = linktitle || title || firstline;
+        const indexTitle = indextitle || title || firstline;
+
         texts.set(textId, {
-          title: replaceDashes(linkTitle),
+          title: replaceDashes(linkTitle.title),
+          firstline: replaceDashes(firstline == null ? null : firstline.title),
+          indexTitle: replaceDashes(indexTitle.title),
           type: part.name(),
           poetId: poetId,
           workId: workId,
@@ -926,6 +1306,52 @@ const works_second_pass = collected => {
       const title = head.get('title').text();
       const year = head.get('year').text();
       const data = { id: workId, title, year, status, type };
+      let sources = {};
+      head.find('source').forEach(sourceNode => {
+        let source = null;
+        if (sourceNode.text().trim().length > 0) {
+          const title = sourceNode
+            .toString()
+            .replace(/<source[^>]*>/, '')
+            .replace(/<\/source>/, '');
+          source = { source: title };
+        }
+        const sourceId = safeGetAttr(sourceNode, 'id') || 'default';
+        if (source == null || source.source == null) {
+          throw new Error(
+            `fdirs/${poetId}/${workId}.xml has source with no title.`
+          );
+        }
+        let facsimile = safeGetAttr(sourceNode, 'facsimile');
+        if (facsimile != null) {
+          facsimile = facsimile.replace(/.pdf$/, '');
+          let facsimilePagesOffset = safeGetAttr(
+            sourceNode,
+            'facsimile-pages-offset'
+          );
+          if (facsimilePagesOffset != null) {
+            facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
+          }
+
+          const facsimilePageCount = safeGetAttr(
+            sourceNode,
+            'facsimile-pages-num'
+          );
+          if (facsimilePageCount == null) {
+            throw new Error(
+              `fdirs/${poetId}/${workId}.xml is missing facsimile-pages-num in source.`
+            );
+          }
+          source = {
+            ...source,
+            facsimile,
+            facsimilePageCount: parseInt(facsimilePageCount, 10),
+            facsimilePagesOffset,
+          };
+        }
+        sources[sourceId] = source;
+      });
+      data.sources = sources;
       collected_works.set(poetId + '-' + workId, data);
 
       // TODO: Make handle_work non-recursive by using a simple XPath
@@ -1033,7 +1459,9 @@ const build_person_or_keyword_refs = collected => {
       const texts = doc.find('//poem|//prose');
       texts.forEach(text => {
         const fromId = text.attr('id').value();
-        const notes = text.find('head/notes/note|body//footnote|body//note');
+        const notes = text.find(
+          'head/notes/note|body//footnote|body//note|body'
+        );
         notes.forEach(note => {
           regexps.forEach(rule => {
             while ((match = rule.regexp.exec(note.toString())) != null) {
@@ -1078,6 +1506,60 @@ const build_person_or_keyword_refs = collected => {
   collected.person_or_keyword_refs = person_or_keyword_refs;
 };
 
+// Rekursiv function som bruges til at bygge værkers indholdsfortegnelse,
+// men også del-indholdstegnelser til de linkbare sektioner som har en id.
+const build_section_toc = section => {
+  let poems = [];
+  let proses = [];
+  let toc = [];
+
+  section.childNodes().forEach(part => {
+    const partName = part.name();
+    if (partName === 'poem') {
+      const textId = part.attr('id').value();
+      const head = part.get('head');
+      const firstline = extractTitle(head, 'firstline');
+      const title = extractTitle(head, 'title') || firstline;
+      const toctitle = extractTitle(head, 'toctitle') || title;
+      toc.push({
+        type: 'text',
+        id: textId,
+        title: htmlToXml(toctitle.title),
+        prefix: replaceDashes(toctitle.prefix),
+      });
+    } else if (partName === 'section') {
+      const subtoc = build_section_toc(part.get('content'));
+      const head = part.get('head');
+      const level = parseInt(safeGetAttr(part, 'level') || '1');
+      const sectionId = safeGetAttr(part, 'id');
+      const title = extractTitle(head, 'title');
+      const toctitle = extractTitle(head, 'toctitle') || title;
+      toc.push({
+        type: 'section',
+        id: sectionId,
+        level: level,
+        title: htmlToXml(toctitle.title),
+        content: subtoc,
+      });
+    } else if (partName === 'prose') {
+      const textId = part.attr('id').value();
+      const head = part.get('head');
+      const title = extractTitle(head, 'title');
+      const toctitle = extractTitle(head, 'toctitle') || title;
+      if (toctitle == null) {
+        throw `${textId} mangler title og toctitle i ${poetId}/${workId}.xml`;
+      }
+      toc.push({
+        type: 'text',
+        id: textId,
+        title: htmlToXml(toctitle.title),
+        prefix: toctitle.prefix,
+      });
+    }
+  });
+  return toc;
+};
+
 const build_works_toc = collected => {
   // Returns {toc, notes, pictures}
   const extract_work_data = work => {
@@ -1086,105 +1568,14 @@ const build_works_toc = collected => {
     const workId = work.attr('id').value();
     let lines = [];
 
-    const handle_section = section => {
-      let poems = [];
-      let proses = [];
-      let toc = [];
-
-      const extractTocTitle = head => {
-        const firstline = head.get('firstline')
-          ? head.get('firstline').text()
-          : null;
-        let toctitle = head.get('toctitle')
-          ? head.get('toctitle').toString()
-          : null;
-        if (toctitle === '<toctitle/>') {
-          console.log(
-            `${poetId}/${workId}.xml has superfluous empty <toctitle/>`
-          );
-          toctitle = null;
-        }
-        const title = head.get('title') ? head.get('title').text() : null;
-        let titleToUse = toctitle || title || firstline;
-        titleToUse = entities
-          .decodeHTML(titleToUse)
-          .replace('<toctitle>', '')
-          .replace('</toctitle>', '');
-        const parts = titleToUse.match(/<num>([^<]*)<\/num>(.*)$/);
-        if (parts != null) {
-          return {
-            prefix: parts[1],
-            title: parts[2],
-          };
-        } else {
-          return { title: titleToUse };
-        }
-      };
-
-      section.childNodes().forEach(part => {
-        const partName = part.name();
-        if (partName === 'poem') {
-          const textId = part.attr('id').value();
-          const head = part.get('head');
-          const title = head.get('title') ? head.get('title').text() : null;
-          const indextitle = head.get('indextitle')
-            ? head.get('indextitle').text()
-            : null;
-          const firstline = head.get('firstline')
-            ? head.get('firstline').text()
-            : null;
-          const indexTitleToUse = indextitle || title || firstline;
-          if (indexTitleToUse == null) {
-            throw `${textId} mangler førstelinje, indextitle og title i ${poetId}/${workId}.xml`;
-          }
-          if (firstline != null && typeof firstline !== 'string') {
-            throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
-          }
-          if (typeof indexTitleToUse !== 'string') {
-            throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
-          }
-          const toctitle = extractTocTitle(head);
-          if (toctitle == null) {
-            throw `${textId} mangler toctitle, firstline og title i ${poetId}/${workId}.xml`;
-          }
-          toc.push({
-            type: 'text',
-            id: textId,
-            title: htmlToXml(toctitle.title),
-            prefix: replaceDashes(toctitle.prefix),
-          });
-        } else if (partName === 'section') {
-          const subtoc = handle_section(part.get('content'));
-          const head = part.get('head');
-          const level = parseInt(safeGetAttr(part, 'level') || '1');
-          const toctitle = extractTocTitle(head);
-          toc.push({
-            type: 'section',
-            level: level,
-            title: htmlToXml(toctitle.title),
-            content: subtoc,
-          });
-        } else if (partName === 'prose') {
-          const textId = part.attr('id').value();
-          const head = part.get('head');
-          const toctitle = extractTocTitle(head);
-          if (toctitle == null) {
-            throw `${textId} mangler title og toctitle i ${poetId}/${workId}.xml`;
-          }
-          toc.push({
-            type: 'text',
-            id: textId,
-            title: htmlToXml(toctitle.title),
-            prefix: toctitle.prefix,
-          });
-        }
-      });
-      return toc;
-    };
-
     const workhead = work.get('workhead');
     const notes = get_notes(workhead);
-    const pictures = get_pictures(workhead);
+    const pictures = get_pictures(
+      workhead,
+      `/static/images/${poetId}`,
+      `fdirs/${poetId}/${workId}`,
+      collected
+    );
 
     const workbody = work.get('workbody');
     if (workbody == null) {
@@ -1196,7 +1587,7 @@ const build_works_toc = collected => {
       };
     }
 
-    const toc = handle_section(workbody);
+    const toc = build_section_toc(workbody);
     return { lines, toc, notes, pictures };
   };
 
@@ -1241,21 +1632,27 @@ const build_poet_works_json = collected => {
   collected.poets.forEach((poet, poetId) => {
     safeMkdir(`static/api/${poetId}`);
 
-    const filenames = collected.workids
+    const workFilenames = collected.workids
       .get(poetId)
       .map(workId => `fdirs/${poetId}/${workId}.xml`);
-    if (!isFileModified(`data/poets.xml:${poetId}`, ...filenames)) {
+    if (
+      !isFileModified(
+        `data/poets.xml:${poetId}`,
+        `fdirs/${poetId}/artwork.xml`,
+        ...workFilenames
+      )
+    ) {
       return;
     }
 
-    let collectedHeaders = [];
+    let works = [];
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
 
       // Copy the xml-file into static to allow for xml download.
-      fs
-        .createReadStream(filename)
-        .pipe(fs.createWriteStream(`static/api/${poetId}/${workId}.xml`));
+      fs.createReadStream(filename).pipe(
+        fs.createWriteStream(`static/api/${poetId}/${workId}.xml`)
+      );
       let doc = loadXMLDoc(filename);
       const work = doc.get('//kalliopework');
       const head = work.get('workhead');
@@ -1268,12 +1665,30 @@ const build_poet_works_json = collected => {
         status: work.attr('status').value(),
         type: work.attr('type').value(),
       };
-      collectedHeaders.push(data);
+      works.push(data);
     });
 
+    let artwork = [];
+    if (poet.has_artwork) {
+      artwork = Array.from(collected.artwork.values())
+        .filter(a => a.artistId === poetId)
+        .map(picture => {
+          return {
+            lang: picture.lang,
+            src: picture.src,
+            size: picture.size,
+            content_lang: picture.content_lang,
+            content_html: picture.content_html,
+            subjects: picture.subjects,
+            year: picture.year,
+          };
+        });
+    }
+
     const objectToWrite = {
-      poet: poet,
-      works: collectedHeaders,
+      poet,
+      works,
+      artwork,
     };
     const worksOutFilename = `static/api/${poetId}/works.json`;
     console.log(worksOutFilename);
@@ -1299,32 +1714,42 @@ const build_poet_lines_json = collected => {
       if (doc == null) {
         console.log("Couldn't load", filename);
       }
-      doc.find('//poem').forEach(part => {
+      doc.find('//poem|//section[@id]').forEach(part => {
         const textId = part.attr('id').value();
+        // Skip digte som ikke er ældste variant
+        const variants = resolve_variants(textId);
+        if (variants != null && variants.length > 0 && variants[0] != textId) {
+          return;
+        }
+
         const head = part.get('head');
-        const title = head.get('title') ? head.get('title').text() : null;
-        const indextitle = head.get('indextitle')
-          ? head.get('indextitle').text()
-          : null;
-        const firstline = head.get('firstline')
-          ? head.get('firstline').text()
-          : null;
-        const indexTitleToUse = indextitle || title || firstline;
-        if (indexTitleToUse == null) {
+        const firstline = extractTitle(head, 'firstline');
+        const title = extractTitle(head, 'title') || firstline;
+        const indextitle = extractTitle(head, 'indextitle') || title;
+        if (indextitle == null) {
           throw `${textId} mangler førstelinje, indextitle og title i ${poetId}/${workId}.xml`;
         }
-        if (firstline != null && typeof firstline !== 'string') {
+        // Vi tillader manglende firstline, men så skal det markeres med et <nofirstline/> tag.
+        // Dette bruges f.eks. til mottoer af andre forfattere.
+        if (
+          part.name() === 'poem' &&
+          firstline == null &&
+          head.get('nofirstline') == null
+        ) {
+          throw `${textId} mangler firstline i ${poetId}/${workId}.xml`;
+        }
+        if (firstline != null && firstline.title.indexOf('<') > -1) {
           throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
         }
-        if (typeof indexTitleToUse !== 'string') {
+        if (indextitle.title.indexOf('>') > -1) {
           throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
         }
         collectedLines.push({
           id: textId,
           work_id: workId,
           lang: poet.lang,
-          title: replaceDashes(indexTitleToUse),
-          firstline: replaceDashes(firstline),
+          title: replaceDashes(indextitle.title),
+          firstline: firstline == null ? null : replaceDashes(firstline.title),
         });
       });
     });
@@ -1383,7 +1808,12 @@ const build_keywords = () => {
           ? keyword.attr('draft').value() === 'true'
           : false;
       const title = head.get('title').text();
-      const pictures = get_pictures(head);
+      const pictures = get_pictures(
+        head,
+        '/static/images/keywords',
+        path,
+        collected
+      );
       const author = safeGetText(head, 'author');
       const rawBody = body
         .toString()
@@ -1556,11 +1986,26 @@ const build_dict_second_pass = collected => {
 const build_mentions_json = collected => {
   const build_html = poemId => {
     const meta = collected.texts.get(poemId);
-    const poet = poetName(collected.poets.get(meta.poetId));
-    const work = workName(collected.works.get(meta.poetId + '/' + meta.workId));
+    if (meta == null) {
+      throw `Unknown poem ${poemId}`;
+    }
+    const poetObj = collected.poets.get(meta.poetId);
+    if (poetObj == null) {
+      throw `Unknown poet ${meta.poetId}`;
+    }
+    const poet = poetName(poetObj);
+    const work = collected.works.get(meta.poetId + '/' + meta.workId);
+    if (work == null) {
+      throw `${poemId} references unknown work ${meta.poetId +
+        '/' +
+        meta.workId}`;
+    }
+    const workNameFormattet = workName(work);
     return [
       [
-        `${poet}: <a poem="${poemId}">»${meta.title}«</a> – ${work}`,
+        `${poet}: <a poem="${poemId}">»${
+          meta.title
+        }«</a> – ${workNameFormattet}`,
         { html: true },
       ],
     ];
@@ -1578,8 +2023,10 @@ const build_mentions_json = collected => {
       secondary: [],
     };
     const refs = collected.person_or_keyword_refs.get(poetId);
-    data.mentions = refs.mention.map(build_html);
-    data.translations = refs.translation.map(build_html);
+    if (refs != null) {
+      data.mentions = refs.mention.map(build_html);
+      data.translations = refs.translation.map(build_html);
+    }
 
     ['primary', 'secondary'].forEach(filename => {
       const biblioXmlPath = `fdirs/${poet.id}/bibliography-${filename}.xml`;
@@ -1639,7 +2086,12 @@ const build_about_pages = collected => {
       const head = about.get('head');
       const body = about.get('body');
       const title = head.get('title').text();
-      const pictures = get_pictures(head);
+      const pictures = get_pictures(
+        head,
+        '/static/images/about',
+        paths.xml,
+        collected
+      );
       const author = safeGetText(head, 'author');
       const poemsNum = Array.from(collected.texts.values())
         .map(t => (t.type === 'poem' ? 1 : 0))
@@ -1696,7 +2148,7 @@ const build_redirects_json = collected => {
   }
   let redirects = {};
   collected.poets.forEach((poet, poetId) => {
-    if (!poet.has_works) {
+    if (!poet.has_works && !poet.has_artwork) {
       redirects[`/en/works/${poetId}`] = `/en/bio/${poetId}`;
       redirects[`/da/works/${poetId}`] = `/da/bio/${poetId}`;
     }
@@ -1815,7 +2267,10 @@ const build_todays_events_json = collected => {
             const event = weighted[0].event;
             const poet = event.context.poet;
             let content_html = null;
-            const primary_portrait = build_portrait_json(poet, collected);
+            const primary_portrait = build_portraits_json(
+              poet,
+              collected
+            ).filter(p => p.primary)[0];
             if (
               primary_portrait != null &&
               primary_portrait.content_html[0][0].length > 0
@@ -1827,7 +2282,7 @@ const build_todays_events_json = collected => {
             if (primary_portrait != null) {
               const data = {
                 type: 'image',
-                src: `images/${poet.id}/${primary_portrait.src}`,
+                src: primary_portrait.src,
                 content_html,
                 content_lang: lang,
                 date: event.date,
@@ -1855,50 +2310,8 @@ const build_todays_events_json = collected => {
 };
 
 const build_image_thumbnails = () => {
-  const resize = (inputfile, outputfile, maxWidth) => {
-    sharp(inputfile)
-      .resize(maxWidth, 10000)
-      .max()
-      .withoutEnlargement()
-      .toFile(outputfile, function(err) {
-        if (err != null) {
-          console.log(err);
-        }
-        console.log(outputfile);
-      });
-  };
-
-  const pipeJoinedExts = CommonData.availableImageFormats.join('|');
-  const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
-
-  const handleDirRecursive = dirname => {
-    fs.readdirSync(dirname).forEach(filename => {
-      const fullFilename = path.join(dirname, filename);
-      const stats = fs.statSync(fullFilename);
-      if (stats.isDirectory()) {
-        handleDirRecursive(fullFilename);
-      } else if (
-        stats.isFile() &&
-        filename.endsWith('.jpg') &&
-        !skipRegExps.test(filename)
-      ) {
-        CommonData.availableImageFormats.forEach((ext, i) => {
-          CommonData.availableImageWidths.forEach(width => {
-            const outputfile = fullFilename
-              .replace(/\.jpg$/, `-w${width}.${ext}`)
-              .replace(/\/([^\/]+)$/, '/t/$1');
-            safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-            if (isFileModified(fullFilename) || !fileExists(outputfile)) {
-              resize(fullFilename, outputfile, width);
-            }
-          });
-        });
-      }
-    });
-  };
-
-  handleDirRecursive('static/images');
-  handleDirRecursive('static/kunst');
+  buildThumbnails('static/images', isFileModified);
+  buildThumbnails('static/kunst', isFileModified);
 };
 
 const build_sitemap_xml = collected => {
@@ -1940,7 +2353,7 @@ const build_sitemap_xml = collected => {
     }
     const poet_text_urls = [];
     ['da', 'en'].forEach(lang => {
-      if (poet.has_works) {
+      if (poet.has_works || poet.has_artwork) {
         poet_text_urls.push(`https://kalliope.org/${lang}/works/${poetId}`);
       }
       if (poet.has_poems) {
@@ -1973,7 +2386,7 @@ const build_sitemap_xml = collected => {
   });
 
   const sitemaps_urls_xml = Array.from(collected.poets.values())
-    .filter(poet => poet.has_works)
+    .filter(poet => poet.has_works || poet.has_artwork)
     .map(poet => {
       return `https://kalliope.org/static/sitemaps/${poet.id}.xml`;
     })
@@ -1989,6 +2402,45 @@ const build_sitemap_xml = collected => {
   xml += sitemaps_urls_xml.join('\n');
   xml += '\n</sitemapindex>\n';
   writeText('static/sitemap.xml', xml);
+};
+
+const build_variants = collected => {
+  let variants_map = new Map(loadCachedJSON('collected.variants') || []);
+
+  register_variant = (from, to) => {
+    let array = variants_map.get(from) || [];
+    if (array.indexOf(to) === -1) {
+      array.push(to);
+    }
+    variants_map.set(from, array);
+  };
+
+  collected.poets.forEach((poet, poetId) => {
+    collected.workids.get(poetId).forEach(workId => {
+      const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!isFileModified(filename)) {
+        return;
+      }
+      let doc = loadXMLDoc(filename);
+      doc
+        .find('//poem[@variant]|//prose[@variant]//@section[@variant]')
+        .forEach(text => {
+          const textId = safeGetAttr(text, 'id');
+          const variantId = safeGetAttr(text, 'variant');
+          register_variant(textId, variantId);
+          register_variant(variantId, textId);
+          // Mark work containing variantId dirty
+          const variantData = collected.texts.get(variantId);
+          if (variantData != null) {
+            markFileDirty(
+              `fdirs/${variantData.poetId}/${variantData.workId}.xml`
+            );
+          }
+        });
+    });
+  });
+  writeCachedJSON('collected.variants', Array.from(variants_map));
+  return variants_map;
 };
 
 const update_elasticsearch = collected => {
@@ -2106,14 +2558,291 @@ const update_elasticsearch = collected => {
     });
 };
 
+const build_anniversaries_ical = collected => {
+  let events = [];
+  let [nowYear, nowMonth, nowDay] = new Date()
+    .toISOString()
+    .split('T')[0]
+    .split('-')
+    .map(s => parseInt(s, 10));
+
+  const handleDate = (poet, eventType, date) => {
+    var [year, month, day] = date.split('-').map(s => parseInt(s, 10));
+    if (month == null || day == null || year == null) {
+      // Ignorer datoer som ikke er fulde datoer, såsom "1300?" og "1240 ca."
+      return;
+    }
+    for (let eventYear = nowYear - 1; eventYear < nowYear + 3; eventYear++) {
+      let eventDate = new Date();
+      eventDate.setDate(day);
+      eventDate.setMonth(month - 1);
+      eventDate.setYear(eventYear);
+      if ((eventYear - year) % 100 === 0 || (eventYear - year) % 250 === 0) {
+        const eventTitle = eventType === 'born' ? 'født' : 'død';
+        events.push({
+          start: [eventYear, month, day],
+          duration: { days: 1 },
+          title: `${poetName(poet)} ${eventTitle} for ${eventYear -
+            year} år siden`,
+          description: `${poetName(poet)} ${eventTitle} ${parseInt(
+            day,
+            10
+          )}/${parseInt(month, 10)} ${year}.`,
+          url: `https://kalliope.org/da/bio/${poet.id}`,
+          uid: `${poet.id}-${eventType}-${eventYear}@kalliope.org`,
+        });
+      }
+    }
+  };
+  collected.poets.forEach((poet, poetId) => {
+    if (
+      poet.period != null &&
+      poet.period.born != null &&
+      poet.period.born.date !== '?'
+    ) {
+      handleDate(poet, 'born', poet.period.born.date);
+    }
+    if (
+      poet.period != null &&
+      poet.period.dead != null &&
+      poet.period.dead.date !== '?'
+    ) {
+      handleDate(poet, 'dead', poet.period.dead.date);
+    }
+  });
+  const { error, value } = ics.createEvents(events);
+  if (error != null) {
+    throw error;
+  }
+  writeText('static/Kalliope.ics', value);
+};
+
+const build_artwork = collected => {
+  let collected_artwork = new Map(loadCachedJSON('collected.artwork') || []);
+  const force_reload = collected_artwork.size == 0;
+
+  const doc = loadXMLDoc('data/poets.xml');
+  doc.find('/persons/person').forEach(person => {
+    const personId = person.attr('id').value();
+    const personType = person.attr('type').value();
+    const artworkFilename = `fdirs/${personId}/artwork.xml`;
+    const portraitsFile = `fdirs/${personId}/portraits.xml`;
+
+    if (
+      personType === 'artist' &&
+      (force_reload || isFileModified(artworkFilename))
+    ) {
+      // Fjern eksisterende fra cache (i tilfælde af id er slettet)
+      Array.from(collected_artwork.keys())
+        .filter(k => k.indexOf(`${personId}/`) === 0)
+        .forEach(k => {
+          collected_artwork.delete(k);
+        });
+
+      const artworksDoc = loadXMLDoc(artworkFilename);
+      if (artworksDoc != null) {
+        artworksDoc.find('//pictures/picture').forEach(picture => {
+          const pictureId = safeGetAttr(picture, 'id');
+          const subjectAttr = safeGetAttr(picture, 'subject');
+          let subjects = subjectAttr != null ? subjectAttr.split(',') : [];
+          const year = safeGetAttr(picture, 'year');
+          if (pictureId == null) {
+            throw `fdirs/${personId}/artwork.xml har et billede uden id-attribut.`;
+          }
+          subjects.forEach(subjectId => {
+            // Make sure we rebuild the affected bio page.
+            markFileDirty(`fdirs/${subjectId}/portraits.xml`);
+          });
+
+          const src = `/static/images/${personId}/${pictureId}.jpg`;
+          const size = imageSizeSync(src.replace(/^\//, ''));
+          const remoteUrl = build_museum_url(picture);
+          const museumLink = build_museum_link(picture) || '';
+          const museumId = safeGetAttr(picture, 'museum');
+          const artworkId = `${personId}/${pictureId}`;
+          const artist = collected.poets.get(personId);
+          const content_raw =
+            picture
+              .toString()
+              .replace(/<picture[^>]*?>/, '')
+              .replace('</picture>', '')
+              .trim() + museumLink;
+          const artworkJson = {
+            id: `${personId}/${pictureId}`,
+            artistId: personId,
+            artist,
+            museum: get_museum_json(museumId),
+            remoteUrl,
+            lang: person.lang,
+            src,
+            size,
+            content_lang: 'da',
+            subjects,
+            year,
+            content_raw,
+            content_html: htmlToXml(content_raw, collected),
+          };
+          collected_artwork.set(artworkId, artworkJson);
+        });
+      }
+    }
+    if (force_reload || isFileModified(portraitsFile)) {
+      // Fjern eksisterende portraits fra cache (i tilfælde af id er slettet)
+      Array.from(collected_artwork.keys())
+        .filter(k => k.indexOf(`portrait/${personId}/`) === 0)
+        .forEach(k => {
+          collected_artwork.delete(k);
+        });
+
+      // From portraits.xml
+      const doc = loadXMLDoc(`fdirs/${personId}/portraits.xml`);
+      if (doc != null) {
+        onError = message => {
+          throw `fdirs/${personId}/portraits.xml: ${message}`;
+        };
+        doc
+          .find('//pictures/picture')
+          .filter(picture => {
+            return safeGetAttr(picture, 'ref') == null;
+          })
+          .forEach(pictureNode => {
+            const src = safeGetAttr(pictureNode, 'src');
+            const picture = get_picture(
+              pictureNode,
+              `/static/images/${personId}`,
+              collected,
+              onError
+            );
+            if (picture == null) {
+              onError('har et billede uden src- eller ref-attribut.');
+            }
+            const key = `portrait/${personId}/${src}`;
+            collected_artwork.set(key, picture);
+          });
+      }
+    }
+
+    // From works
+    collected.workids.get(personId).forEach(workId => {
+      const workFilename = `fdirs/${personId}/${workId}.xml`;
+      if (force_reload || isFileModified(workFilename)) {
+        // Fjern eksisterende work pictures fra cache
+        Array.from(collected_artwork.keys())
+          .filter(k => k.indexOf(`work/${personId}/${workId}`) === 0)
+          .forEach(k => {
+            collected_artwork.delete(k);
+          });
+
+        const doc = loadXMLDoc(workFilename);
+        if (doc != null) {
+          onError = message => {
+            throw `${workFilename}: ${message}`;
+          };
+          doc
+            .find('//pictures/picture')
+            .filter(picture => {
+              return safeGetAttr(picture, 'ref') == null;
+            })
+            .forEach(pictureNode => {
+              const src = safeGetAttr(pictureNode, 'src');
+              const picture = get_picture(
+                pictureNode,
+                `/static/images/${personId}`,
+                collected,
+                onError
+              );
+              if (picture == null) {
+                onError('har et billede uden src- eller ref-attribut.');
+              }
+              const key = `work/${personId}/${workId}/${src}`;
+              collected_artwork.set(key, picture);
+            });
+        }
+      }
+    });
+  });
+  writeCachedJSON('collected.artwork', Array.from(collected_artwork));
+  return collected_artwork;
+};
+
+const build_museums = collected => {
+  safeMkdir('static/api/museums');
+
+  let found_changes = false;
+
+  collected.poets.forEach((poet, poetId) => {
+    const portraitsFile = `fdirs/${poet.id}/portraits.xml`;
+    if (isFileModified(portraitsFile)) {
+      found_changes = true;
+    }
+    const artworkFile = `fdirs/${poet.id}/artwork.xml`;
+    if (poet.has_artwork) {
+      found_changes |= isFileModified(artworkFile);
+    }
+    collected.workids.get(poet.id).forEach(workId => {
+      const workFilename = `fdirs/${poetId}/${workId}.xml`;
+      found_changes |= isFileModified(workFilename);
+    });
+  });
+  if (!found_changes) {
+    return;
+  }
+
+  let allArtwork = Array.from(collected.artwork.values());
+  // Find portrætter som ikke har en ref og dermed inkluderet i collected.artwork
+  collected.poets.forEach((poet, poetId) => {
+    // From works
+    collected.workids.get(poet.id).forEach(workId => {
+      const doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
+    });
+  });
+  Object.keys(museums).forEach(museumId => {
+    const museum = museums[museumId];
+    if (museum.name == null) {
+      // Vi tager kun museer med navne
+      return;
+    }
+
+    const artwork = allArtwork
+      .filter(a => a.museum != null && a.museum.id === museumId)
+      .map(picture => {
+        return {
+          artist: picture.artist,
+          lang: picture.lang,
+          src: picture.src,
+          size: picture.size,
+          remoteUrl: picture.remoteUrl,
+          content_lang: picture.content_lang,
+          content_html: picture.content_html,
+          subjects: picture.subjects,
+          year: picture.year,
+        };
+      });
+
+    const json = {
+      museum: {
+        id: museumId,
+        name: museum.name,
+      },
+      artwork,
+    };
+    const path = `static/api/museums/${museumId}.json`;
+    console.log(path);
+    writeJSON(path, json);
+  });
+};
+
 safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);
 // Build collected.works and collected.texts
 Object.assign(collected, b('works_first_pass', works_first_pass, collected));
 b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
-collected.poets = b('build_poets_json', build_poets_json);
+collected.poets = b('build_poets_json', build_poets_json, collected);
+collected.artwork = b('build_artwork', build_artwork, collected);
+b('build_museums', build_museums, collected);
 b('build_mentions_json', build_mentions_json, collected);
 collected.textrefs = b('build_textrefs', build_textrefs, collected);
+collected.variants = b('build_variants', build_variants, collected);
 build_dict_first_pass(collected);
 collected.keywords = b('build_keywords', build_keywords);
 b('build_poet_lines_json', build_poet_lines_json, collected);
@@ -2124,11 +2853,12 @@ collected.timeline = build_global_timeline(collected);
 b('build_bio_json', build_bio_json, collected);
 b('build_news', build_news, collected);
 b('build_about_pages', build_about_pages, collected);
+b('build_global_lines_json', build_global_lines_json, collected);
 b('build_dict_second_pass', build_dict_second_pass, collected);
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
 b('build_sitemap_xml', build_sitemap_xml, collected);
-
+b('build_anniversaries_ical', build_anniversaries_ical, collected);
 b('build_image_thumbnails', build_image_thumbnails);
 b('update_elasticsearch', update_elasticsearch, collected);
 

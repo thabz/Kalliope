@@ -1,17 +1,15 @@
 // @flow
 import React from 'react';
-
-export default class SubHeading extends React.Component {
+import type { Node } from 'react';
+export default class SubHeading extends React.Component<*> {
   props: {
-    children?: *,
+    children?: Node,
   };
   render() {
     const { children } = this.props;
     return (
       <div className="subheading">
-        <h2>
-          {children}
-        </h2>
+        <h2>{children}</h2>
         <style jsx>{`
           h2 {
             width: 100%;

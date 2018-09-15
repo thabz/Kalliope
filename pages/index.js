@@ -69,10 +69,9 @@ class TodaysEvents extends React.Component<TodaysEventsProps> {
         const html = (
           <div className="picture-item">
             <Picture
-              picture={picture}
+              pictures={[picture]}
               lang={lang}
               contentLang={item.content_lang}
-              srcPrefix="/static"
             />
           </div>
         );
@@ -118,10 +117,10 @@ class News extends React.Component<NewsProps> {
 
     const items = news.filter((_, i) => i < 5).map((item, i) => {
       const { date, content_html, content_lang, title } = item;
-
+      const renderedTitle = title == null ? null : <h3>{title}</h3>;
       return (
         <div className="news-item" key={date + i}>
-          <h3>{title}</h3>
+          {renderedTitle}
           <div className="news-body">
             <TextContent
               contentHtml={content_html}
@@ -142,7 +141,7 @@ class News extends React.Component<NewsProps> {
               margin-bottom: 50px;
             }
 
-            div.news-item h3 {
+            :global(div.news-item h3) {
               font-weight: lighter;
               font-size: 1.3em;
               margin: 0 0 20px 0;

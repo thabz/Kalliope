@@ -5,11 +5,128 @@ import CommonData from '../pages/helpers/commondata.js';
 import TextContent from './textcontent.js';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
 
-class CloseButton extends React.Component {
+type SVGProps = {
+  onClick: MouseEvent => void,
+  inactive?: boolean,
+};
+class LeftArrow extends React.Component<SVGProps> {
   render() {
+    const { onClick, inactive } = this.props;
+    const strokeColor = inactive == true ? '#888' : 'black';
+    const className = inactive == true ? 'inactive' : 'active';
     return (
-      <svg width="30" height="30">
+      <svg width="30" height="30" onClick={onClick} className={className}>
         <circle
+          className="icon-background"
+          cx="15"
+          cy="15"
+          r="14"
+          fill="white"
+          stroke="black"
+          strokeWidth="1"
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          x1="8"
+          y1="15"
+          x2="22"
+          y2="15"
+          strokeWidth="1"
+          stroke={strokeColor}
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          x1="15"
+          y1="9"
+          x2="8"
+          y2="15"
+          strokeWidth="1"
+          stroke={strokeColor}
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          x1="15"
+          y1="21"
+          x2="8"
+          y2="15"
+          strokeWidth="1"
+          stroke={strokeColor}
+          vectorEffect="non-scaling-stroke"
+        />
+        <circle
+          className="button-overlay"
+          cx="15"
+          cy="15"
+          r="14"
+          fill="transparent"
+        />
+      </svg>
+    );
+  }
+}
+class RightArrow extends React.Component<SVGProps> {
+  render() {
+    const { onClick, inactive } = this.props;
+    const strokeColor = inactive == true ? '#888' : 'black';
+    const className = inactive == true ? 'inactive' : 'active';
+    return (
+      <svg width="30" height="30" onClick={onClick} className={className}>
+        <circle
+          className="icon-background"
+          cx="15"
+          cy="15"
+          r="14"
+          fill="white"
+          stroke="black"
+          strokeWidth="1"
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          x1="8"
+          y1="15"
+          x2="22"
+          y2="15"
+          strokeWidth="1"
+          stroke={strokeColor}
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          x1="15"
+          y1="9"
+          x2="22"
+          y2="15"
+          strokeWidth="1"
+          stroke={strokeColor}
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          x1="15"
+          y1="21"
+          x2="22"
+          y2="15"
+          strokeWidth="1"
+          stroke={strokeColor}
+          vectorEffect="non-scaling-stroke"
+        />
+        <circle
+          className="button-overlay"
+          cx="15"
+          cy="15"
+          r="14"
+          fill="transparent"
+        />
+      </svg>
+    );
+  }
+}
+
+class CloseButton extends React.Component<SVGProps> {
+  render() {
+    const { onClick } = this.props;
+    return (
+      <svg width="30" height="30" onClick={onClick} className="active">
+        <circle
+          className="icon-background"
           cx="15"
           cy="15"
           r="14"
@@ -48,16 +165,15 @@ class CloseButton extends React.Component {
   }
 }
 
-class BiggerPicture extends React.Component {
+class BiggerPicture extends React.Component<*> {
   props: {
     picture: PictureItem,
-    srcPrefix: ?string,
     lang: Lang,
   };
 
   render() {
-    const { srcPrefix, picture, lang } = this.props;
-    const src: string = (srcPrefix || '') + '/' + picture.src;
+    const { picture, lang } = this.props;
+    const src = picture.src;
     const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
       return '/t/' + p1 + CommonData.fallbackImagePostfix;
     });
@@ -114,16 +230,25 @@ class BiggerPicture extends React.Component {
 }
 
 type PictureOverlayPropType = {
-  picture: PictureItem,
+  pictures: Array<PictureItem>,
+  startIndex: number,
   srcPrefix?: string,
   lang: Lang,
   closeCallback: Function,
 };
 
-export default class PictureOverlay extends React.Component {
-  props: PictureOverlayPropType;
-  onKeyUp: Function;
-  hideOverlay: Function;
+type PictureOverlayStateType = {
+  currentIndex: number,
+};
+
+export default class PictureOverlay extends React.Component<
+  PictureOverlayPropType,
+  PictureOverlayStateType
+> {
+  onKeyUp: KeyboardEvent => void;
+  hideOverlay: Event => void;
+  onRightClick: Event => void;
+  onLeftClick: Event => void;
 
   static contextTypes = {
     showPictureOverlay: PropTypes.func,
@@ -134,24 +259,25 @@ export default class PictureOverlay extends React.Component {
     super(props);
     this.onKeyUp = this.onKeyUp.bind(this);
     this.hideOverlay = this.hideOverlay.bind(this);
+    this.onRightClick = this.onRightClick.bind(this);
+    this.onLeftClick = this.onLeftClick.bind(this);
+    this.state = { currentIndex: props.startIndex };
   }
 
   componentDidMount() {
-    if (
-      document != null &&
-      document.body != null &&
-      document.body.classList != null
-    ) {
+    if (document != null) {
       // eslint-disable-next-line no-undef
-      document.addEventListener('keyup', this.onKeyUp, false);
-      // eslint-disable-next-line no-undef
-      document.body.classList.add('noscroll');
+      document.addEventListener('keyup', this.onKeyUp, true);
+      if (document.body != null && document.body.classList != null) {
+        // eslint-disable-next-line no-undef
+        document.body.classList.add('noscroll');
+      }
     }
   }
 
   componentWillUnmount() {
     // eslint-disable-next-line no-undef
-    document.removeEventListener('keyup', this.onKeyUp, false);
+    document.removeEventListener('keyup', this.onKeyUp, true);
     // eslint-disable-next-line no-undef
     if (document.body != null) {
       document.body.classList.remove('noscroll');
@@ -161,6 +287,12 @@ export default class PictureOverlay extends React.Component {
   onKeyUp(e: KeyboardEvent) {
     if (e.keyCode === 27) {
       this.hideOverlay(e);
+    } else if (e.keyCode === 37) {
+      // Left cursor key
+      this.onLeftClick(e);
+    } else if (e.keyCode === 39) {
+      // Right cursor key
+      this.onRightClick(e);
     }
   }
 
@@ -173,16 +305,46 @@ export default class PictureOverlay extends React.Component {
     e.stopPropagation();
   }
 
-  render() {
-    const { picture, srcPrefix, lang } = this.props;
+  onRightClick(e: Event) {
+    if (this.state.currentIndex < this.props.pictures.length - 1) {
+      this.setState({ currentIndex: this.state.currentIndex + 1 });
+    }
+    e.stopPropagation();
+  }
 
+  onLeftClick(e: Event) {
+    if (this.state.currentIndex > 0) {
+      this.setState({ currentIndex: this.state.currentIndex - 1 });
+    }
+    e.stopPropagation();
+  }
+
+  render() {
+    const { pictures, lang } = this.props;
+    let arrows = null;
+    if (pictures.length > 1) {
+      arrows = [
+        <RightArrow
+          key={'right'}
+          onClick={this.onRightClick}
+          inactive={this.state.currentIndex === this.props.pictures.length - 1}
+        />,
+        <LeftArrow
+          key={'left'}
+          onClick={this.onLeftClick}
+          inactive={this.state.currentIndex === 0}
+        />,
+      ];
+    }
+    const picture = pictures[this.state.currentIndex];
     return (
       <div className="overlay-background" onClick={this.hideOverlay}>
         <div className="overlay-container" onClick={this.eatClick}>
-          <div className="overlay-close" onClick={this.hideOverlay}>
-            <CloseButton />
+          <div className="overlay-icon">
+            <CloseButton onClick={this.hideOverlay} />
+            {arrows}
           </div>
-          <BiggerPicture picture={picture} srcPrefix={srcPrefix} lang={lang} />
+          <BiggerPicture picture={picture} lang={lang} />
         </div>
         <style jsx>{`
           .overlay-background {
@@ -222,21 +384,23 @@ export default class PictureOverlay extends React.Component {
             width: 100px;
           }
 
-          .overlay-container .overlay-close {
+          .overlay-container .overlay-icon {
             width: 30px;
             height: 30px;
-            cursor: pointer;
             position: absolute;
             right: -15px;
             top: -15px;
           }
 
-          .overlay-container .overlay-close svg {
+          .overlay-container .overlay-icon svg {
             display: block;
           }
 
-          .overlay-container .overlay-close svg .button-overlay:hover {
-            fill: rgba(0, 0, 0, 0.05);
+          :global(.overlay-icon svg.active:hover .icon-background) {
+            fill: #eee;
+          }
+          :global(.overlay-icon svg.active) {
+            cursor: pointer;
           }
 
           :global(.noscroll) {

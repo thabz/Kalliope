@@ -1,42 +1,21 @@
 // @flow
 import React from 'react';
-import type { PictureItem, Lang } from '../pages/helpers/types.js';
-import Picture from './picture.js';
+import type { Node } from 'react';
 
-export default class SidebarPictures extends React.Component {
-  props: {
-    pictures: Array<PictureItem>,
-    srcPrefix?: string,
-    showDropShadow?: boolean,
-    clickToZoom?: boolean,
-    lang: Lang,
-  };
+type SidebarPicturesProps = {
+  children: Node,
+  showDropShadow: boolean,
+};
+export default class SidebarPictures extends React.Component<
+  SidebarPicturesProps
+> {
   static defaultProps = {
     showDropShadow: true,
   };
   render() {
-    const {
-      pictures,
-      lang,
-      srcPrefix,
-      showDropShadow,
-      clickToZoom,
-    } = this.props;
-    const renderedPictures = pictures.map((picture, i) => {
-      return (
-        <Picture
-          key={'picture' + i}
-          picture={picture}
-          srcPrefix={srcPrefix}
-          clickToZoom={clickToZoom}
-          showDropShadow={showDropShadow}
-          lang={lang}
-        />
-      );
-    });
     return (
       <div className="sidebar-pictures">
-        {renderedPictures}
+        {this.props.children}
         <style jsx>{`
           div.sidebar-pictures {
             display: flex;

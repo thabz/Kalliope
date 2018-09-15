@@ -3,7 +3,13 @@
 import React from 'react';
 import type { Lang } from '../pages/helpers/types.js';
 
-export const parseDate = (date: ?string) => {
+type parseDateReturnType = {
+  day: ?number,
+  month: ?number,
+  year: ?number,
+  prefix: ?string,
+};
+export const parseDate = (date: ?string): ?parseDateReturnType => {
   if (date == null) {
     return null;
   }

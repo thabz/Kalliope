@@ -5,18 +5,23 @@ import { Link } from '../routes';
 import type { SectionForRendering } from '../pages/helpers/types.js';
 import TwoColumns from './twocolumns.js';
 
-export default class SectionedList extends React.Component {
-  props: {
-    sections: Array<SectionForRendering>,
-  };
+type SectionedListProps = {
+  sections: Array<SectionForRendering>,
+};
+export default class SectionedList extends React.Component<SectionedListProps> {
   render() {
     const { sections } = this.props;
     let renderedGroups = sections.map((group, i) => {
       const { title, items } = group;
       const list = items.map(item => {
-        const content = item.url != null
-          ? <Link route={item.url}><a>{item.html}</a></Link>
-          : item.html;
+        const content =
+          item.url != null ? (
+            <Link route={item.url}>
+              <a>{item.html}</a>
+            </Link>
+          ) : (
+            item.html
+          );
         return <div key={item.id}>{content}</div>;
       });
       return (
@@ -33,7 +38,8 @@ export default class SectionedList extends React.Component {
           :global(.list-section) {
             break-inside: avoid;
           }
-          :global(.list-section), :global(.list-section-line) {
+          :global(.list-section),
+          :global(.list-section-line) {
             line-height: 1.7;
           } /* Fix vertical aligment layout problem in Safari and Chrome */
           :global(.list-section:before) {

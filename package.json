@@ -9,7 +9,8 @@
     "test-ci": "NODE_ICU_DATA=./node_modules/full-icu jest",
     "flow": "flow",
     "build-static": "node tools/build-static.js",
-    "build-static-force-reload": "node tools/build-static.js --force-reload"
+    "build-static-force-reload": "node tools/build-static.js --force-reload",
+    "build-facsimiles": "node tools/build-facsimiles.js"
   },
   "dependencies": {
     "global": "^4.3.2",
@@ -22,7 +23,7 @@
     "xmldom": "^0.1.27"
   },
   "devDependencies": {
-    "full-icu": "^1.2.1",
+    "deasync": "^0.1.13",
     "async": "^2.5.0",
     "babel-eslint": "^7.1.1",
     "babel-plugin-transform-flow-strip-types": "^6.21.0",
@@ -31,11 +32,13 @@
     "entities": "^1.1.1",
     "enzyme": "^3.0",
     "flow-bin": "^0.52.0",
+    "full-icu": "^1.2.1",
+    "ics": "^2.4.1",
     "jest": "^20.0.0",
-    "libxmljs": "^0.18.4",
+    "libxmljs": "^0.18.7",
     "mkdirp": "^0.5.1",
     "node-fetch": "^1.7.1",
-    "node-gyp": "^3.6.1",
+    "node-gyp": "^3.6.2",
     "sharp": "^0.18.1"
   },
   "author": "Jesper Christensen",

@@ -1,8 +1,12 @@
 // @flow
 
 import React from 'react';
+import type { Node } from 'react';
 
-export default class TwoColumns extends React.Component {
+type TwoColumnsProps = {
+  children: Node,
+};
+export default class TwoColumns extends React.Component<TwoColumnsProps> {
   render() {
     return (
       <div className="two-columns">

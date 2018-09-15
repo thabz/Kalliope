@@ -10,20 +10,20 @@
    <pictures>
        <picture type="titlepage" src="1897-p1.jpg">Titelbladet til <i>Tre Strænge</i> (1897). ,,Valdemar Rørdam / Tre Strænge / Digte // København / Det Nordiske Forlag / Bogforlaget: Ernst Bojesen / 1897''.</picture>
    </pictures>
-   <quality>korrektur1,,kilde,side</quality>
+   <source facsimile="11540800372E_color" facsimile-pages-num="124" facsimile-pages-offset="16">Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897.</source>
+   <quality>korrektur1,kilde,side</quality>
 </workhead>
 <workbody>
 
 <prose id="roerdam2017112701">
 <head>
     <title>[Reckes forord]</title>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, p. i.</note>
-    </notes>
+    <source pages="i" facsimile-pages="11"/>
     <quality>korrektur1,kilde,side</quality>
+    <keywords>reckee</keywords>
 </head>
 <body>
-Da man har anmodet mig om at ledsage denne Digtsamling med et Forord, undlader jeg ikke herved at efterkomme Ønsket som en sørgelig Pligt, — en sørgelig, forsaavidt det ansees for nødvendigt, at en Fremmed skal tale for Noget, der burde tale tilstrækkeligt for sig selv. Jeg skal da indskrænke mig til at give Samlingen min var  meste Anbefaling, idet jeg ikke betænker mig paa at erklære: dette er Lyrik, udsprungen af en virkelig Digterbegavelse, — den meest utvivlsomme, der til Dato har viist sig i den yngre Generation. Trods en Del metrisk Ufuldkommenhed have disse Digte gjennemgaaende den ægte Oprindelig- heds Helstøbthed og Formfuldendthed i dette Ords dybere Forstand. Et Digt som «01e Hou med det røde Skæg» vil ikke nogen Digter behøve at skamme sig ved: det er, rent kunstnerisk seet, et Stykke Førsterangsarbeide. Og selv i det Mangelfulde er overalt Friskhed og personlig Eiendommelighed tilstede.
+Da man har anmodet mig om at ledsage denne Digtsamling med et Forord, undlader jeg ikke herved at efterkomme Ønsket som en sørgelig Pligt, — en sørgelig, forsaavidt det ansees for nødvendigt, at en Fremmed skal tale for Noget, der burde tale tilstrækkeligt for sig selv. Jeg skal da indskrænke mig til at give Samlingen min var  meste Anbefaling, idet jeg ikke betænker mig paa at erklære: dette er Lyrik, udsprungen af en virkelig Digterbegavelse, — den meest utvivlsomme, der til Dato har viist sig i den yngre Generation. Trods en Del metrisk Ufuldkommenhed have disse Digte gjennemgaaende den ægte Oprindelig- heds Helstøbthed og Formfuldendthed i dette Ords dybere Forstand. Et Digt som «Ole Hou med det røde Skæg» vil ikke nogen Digter behøve at skamme sig ved: det er, rent kunstnerisk seet, et Stykke Førsterangsarbeide. Og selv i det Mangelfulde er overalt Friskhed og personlig Eiendommelighed tilstede.
 
 28/4 97.
 <right><sc>Ernst v. d. Recke.</sc></right>
@@ -34,9 +34,7 @@ Da man har anmodet mig om at ledsage denne Digtsamling med et Forord, undlader j
 <head>
     <title>Forspil</title>
     <firstline>Paa Landevejen hitted jeg en gammel Violin</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, p. iii.</note>
-    </notes>
+    <source pages="iii" facsimile-pages="13"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -67,9 +65,7 @@ Men Skælmen gi’r, hvad ej han har. Jeg stryger mine tre!
 <head>
     <title>Der gaar en Mand</title>
     <firstline>Der gaar en Mand og pløjer sin Vaarsæds Vang</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 1-2.</note>
-    </notes>
+    <source pages="1-2"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -99,9 +95,7 @@ Svært at pløje, hvis aldrig en Lærke sang!
 <head>
     <title>Aa se -!</title>
     <firstline>Aa se mod Plankeværkets Tjærebrædder</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 3-4.</note>
-    </notes>
+    <source pages="3-4"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -131,9 +125,7 @@ mod Solen løfter jeg de hede Kinder.
 <head>
     <title>Stemning</title>
     <firstline>Luften er blød og regnfaldslun</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, p. 5.</note>
-    </notes>
+    <source pages="5"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -153,9 +145,7 @@ langt skal i Mørket jeg ensom gaa.
 <head>
     <title>Min Baad</title>
     <firstline>Septemberaften paa Vesterhav</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 6-7.</note>
-    </notes>
+    <source pages="6-7"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -210,9 +200,7 @@ over Havdybets Afgrund mig føre!»
 <head>
     <title>En lystig Blæst -</title>
     <firstline>En lystig Blæst, en frisk Nordvest</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, p. 8.</note>
-    </notes>
+    <source pages="8"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -240,9 +228,7 @@ og Løvfaldstid i Lande.
 <head>
     <title>Den fløj forbi -</title>
     <firstline>Den fløj forbi, Anemonernes Vaar</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, p. 9.</note>
-    </notes>
+    <source pages="9"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -270,9 +256,7 @@ hvor har du gjort af min Glæde?
 <head>
     <title>Oktoberskov</title>
     <firstline>Jeg elsker denne Lyd af visne Blade</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 10-11.</note>
-    </notes>
+    <source pages="10-11"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -317,9 +301,7 @@ og det er ikke dig, som er min Mester!
 <head>
     <title>Tjørnen er nøgen -</title>
     <firstline>Tjørnen er nøgen, dens visnede Blade</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 12-13.</note>
-    </notes>
+    <source pages="12-13"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -369,9 +351,7 @@ For mig skal din Dør dog ej stænges?»
 <head>
     <title>Havbrus</title>
     <firstline>Saa gaar jeg her</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 14-15.</note>
-    </notes>
+    <source pages="14-15"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -419,9 +399,7 @@ min Sjæl er syg af Lede.
 <head>
     <title>En vindstille, vinterlig Nat -</title>
     <firstline>En vindstille, vinterlig Nat</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 16-17.</note>
-    </notes>
+    <source pages="16-17"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -468,9 +446,7 @@ som Klokker fra Himmerigs Tind - -
 <head>
     <title>Nattegang</title>
     <firstline>Det er den sorte Vinternat</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 18-19.</note>
-    </notes>
+    <source pages="18-19"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -508,9 +484,7 @@ for Evighedens Skranke.
 <head>
     <title>Paa Heden</title>
     <firstline>Skal det ske</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 20-22.</note>
-    </notes>
+    <source pages="20-22"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -599,9 +573,7 @@ men hvile jeg vil paa Heden.
 <head>
     <title>Vaarnat</title>
     <firstline>Jeg vandrer ud ved Nattetide silde</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 25-27.</note>
-    </notes>
+    <source pages="25-27"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -663,9 +635,7 @@ for bort mod andre Verdener at fare!
 <head>
     <title>I Lindeduft</title>
     <firstline>En Lindeduft! — Helt op igennem Gaden</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 28-30.</note>
-    </notes>
+    <source pages="28-30"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -725,9 +695,7 @@ Hvis ikke det var for de blomsterduftende Linde — —
 <head>
     <title>Her ved Stadens Grænserande -</title>
     <firstline>Her ved Stadens Grænserande</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 31-32.</note>
-    </notes>
+    <source pages="31-32"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -762,9 +730,7 @@ Haabet fremad mod Imorgen.
 <head>
     <title>Septemberaften i Alleen</title>
     <firstline>Saa klar og fin som Æblevin</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 33-34.</note>
-    </notes>
+    <source pages="33-34"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -801,9 +767,7 @@ og nu er Suk for silde.
 <head>
     <title>Paa Banegaarden</title>
     <firstline>Under en køligstjærnet, høstlig Himmel</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 35-36.</note>
-    </notes>
+    <source pages="35-36"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -841,9 +805,7 @@ og da jeg saa mig om, var han forsvunden.
 <head>
     <title>I Snevejr</title>
     <firstline>En Nat med klirrende Lygter og hvirvlende Sne</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 37-39.</note>
-    </notes>
+    <source pages="37-39"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -913,9 +875,7 @@ Jeg vandred hjemad, men ikke saa let som før.
 <head>
     <title>Aften i Februar</title>
     <firstline>Perlegraaning i den snævre Gade</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, p. 40.</note>
-    </notes>
+    <source pages="40"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -946,9 +906,7 @@ som i Nat vil skygge for mit Leje.
 <head>
     <title>Hjemve</title>
     <firstline>En køligt lysende Solfaldshimmel</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 41-42.</note>
-    </notes>
+    <source pages="41-42"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -993,9 +951,7 @@ dem aldrig Mørket for evig tvinger.
 <head>
     <title>Villaen</title>
     <firstline>Her har jeg Aften efter Aften vanket</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, p. 43.</note>
-    </notes>
+    <source pages="43"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1021,9 +977,7 @@ Men i Havens Mørke Hvisken og lønlig Latter.
 <head>
     <title>Iaften hører jeg -</title>
     <firstline>Iaften hører jeg første Gang</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 44-45.</note>
-    </notes>
+    <source pages="44-45"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1062,9 +1016,7 @@ som Violens svulmende Hjærteblad.
 <head>
     <title>Eva Virgo</title>
     <firstline>Højt i den hvide Birk</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 49-55.</note>
-    </notes>
+    <source pages="49-55"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1223,9 +1175,7 @@ der aldrig var sagt.
 <head>
     <title>Til en Mand</title>
     <firstline>Jeg ser ved Sommertid kun Træets Blade</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, p. 56.</note>
-    </notes>
+    <source pages="56"/>
     <keywords>sonnet</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1254,9 +1204,7 @@ naar Stormen tvang din Smerte til at tone.
 <head>
     <title>Hos Bedstemor</title>
     <firstline>Roser klatrer op ad Muren</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 57-59.</note>
-    </notes>
+    <source pages="57-59"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1315,9 +1263,7 @@ rank af Sind trods Alders Vægt!
 <head>
     <title>La France</title>
     <firstline>La France, du Rosernes Rose, svulmende fast</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 60-61.</note>
-    </notes>
+    <source pages="60-61"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1359,9 +1305,7 @@ saa har du levet dit Liv, som Roser skal.
 <head>
     <title>Stjærner</title>
     <firstline>Derfor elsker jeg dem de straalende Stjærner</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 62-63.</note>
-    </notes>
+    <source pages="62-63"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1408,9 +1352,7 @@ til lysende Liv efter Liv, som jeg skal eje.
 <head>
     <title>Min Ungdoms Drøm</title>
     <firstline>Ingen véd, hvor du var dejlig</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 64-66.</note>
-    </notes>
+    <source pages="64-66"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1493,9 +1435,7 @@ mens jeg lytter paa.
     <title>Ole Hou med det røde Skæg</title>
     <subtitle>(Motiv fra Souvestres bretagniske Æventyr.)</subtitle>
     <firstline>Det er den hellige Paaskenat</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 67-82.</note>
-    </notes>
+    <source pages="67-82"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1857,9 +1797,7 @@ af min Ven, den farende Blæst.
 <head>
     <title>Det hvide Ansigt</title>
     <firstline>Hvile! Hvile! Jeg vented længe</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 83-85.</note>
-    </notes>
+    <source pages="83-85"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1913,9 +1851,7 @@ træt i Synet og tungt af Sorg.»
 <head>
     <title>En Svend var stævnet</title>
     <firstline>En Svend var stævnet for Døden</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, p. 86.</note>
-    </notes>
+    <source pages="86"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1941,9 +1877,7 @@ kom til og slog ham ned.
     <title>I Skoven</title>
     <subtitle>(Til Rigmor Rørdam.)</subtitle>
     <firstline>Vindene blunder. Skoven er hvid</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 87-100.</note>
-    </notes>
+    <source pages="87-100"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2275,9 +2209,7 @@ hvid af Vinter som før.
 <head>
     <title>Hyazinthen</title>
     <firstline>O Fryd og Lærkesang! Den frostblaa Vinter</firstline>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897, pp. 101-102.</note>
-    </notes>
+    <source pages="101-102"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

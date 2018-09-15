@@ -1,8 +1,9 @@
 // @flow
 
 import React from 'react';
+import type { Node } from 'react';
 import Head from './head';
-import { Link } from '../routes';
+import { Link, Router } from '../routes';
 import PoetName from './poetname';
 import WorkName from './workname';
 import TextName from './textname';
@@ -30,8 +31,8 @@ type NavPagingType = {
   },
 };
 
-export class NavPaging extends React.Component {
-  props: NavPagingType;
+export class NavPaging extends React.Component<NavPagingType> {
+  onKeyUp: KeyboardEvent => void;
 
   constructor(props: NavPagingType) {
     super(props);
@@ -45,22 +46,31 @@ export class NavPaging extends React.Component {
       document.body.classList != null
     ) {
       // eslint-disable-next-line no-undef
-      document.addEventListener('keyup', this.onKeyUp, false);
+      document.addEventListener('keyup', this.onKeyUp);
     }
   }
 
   componentWillUnmount() {
     // eslint-disable-next-line no-undef
-    document.removeEventListener('keyup', this.onKeyUp, false);
+    document.removeEventListener('keyup', this.onKeyUp);
   }
 
   onKeyUp(e: KeyboardEvent) {
     const { prev, next } = this.props;
-    // TODO: Don't page when in input field
     if (e.keyCode === 37) {
       // Left cursor key
+      if (prev != null && window && !window.searchFieldHasFocus) {
+        Router.pushRoute(prev.url);
+        window.scrollTo(0, 0);
+        e.preventDefault();
+      }
     } else if (e.keyCode === 39) {
       // Right cursor key
+      if (next != null && window && !window.searchFieldHasFocus) {
+        Router.pushRoute(next.url);
+        window.scrollTo(0, 0);
+        e.preventDefault();
+      }
     }
   }
 
@@ -88,7 +98,7 @@ type NavProps = {
   poet?: Poet,
   work?: Work,
   links?: Array<any>,
-  sectionTitles: ?Array<string>,
+  sectionTitles?: Array<{ id: ?string, title: string }>,
   title?: any,
   rightSide?: any,
 };
@@ -119,6 +129,9 @@ export default class Nav extends React.Component<NavProps> {
         let poetsLinkText = null;
         if (poet.type === 'person') {
           poetsLinkText = _('Personer', lang);
+          poetsLink = <span>{poetsLinkText}</span>;
+        } else if (poet.type === 'artist') {
+          poetsLinkText = _('Kunstnere', lang);
           poetsLink = <span>{poetsLinkText}</span>;
         } else {
           if (poet.country !== 'dk') {
@@ -156,16 +169,25 @@ export default class Nav extends React.Component<NavProps> {
         ) : null;
       links = [poetsLink, poetLink, workLink];
     }
-    let renderedSectionTitles: Array<TextContent> = [];
+    let renderedSectionTitles: Array<Node> = [];
     if (sectionTitles != null) {
+      console.log(sectionTitles);
       renderedSectionTitles = sectionTitles.map(t => {
-        return (
+        let text = (
           <TextContent
-            contentHtml={[[t, { html: true }]]}
+            contentHtml={[[t.title, { html: true }]]}
             lang={lang}
             contentLang={lang}
           />
         );
+        if (t.id != null) {
+          text = (
+            <Link route={Links.textURL(lang, t.id)}>
+              <a>{text}</a>
+            </Link>
+          );
+        }
+        return text;
       });
     }
 
