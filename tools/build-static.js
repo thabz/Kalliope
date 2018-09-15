@@ -360,6 +360,14 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
     const description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
       artwork.content_raw
     }`;
+    const extraDescription = picture
+      .toString()
+      .replace(/<picture[^>]*?>/, '')
+      .replace('</picture>', '')
+      .trim();
+    if (extraDescription.length > 0) {
+      description = extraDescription + '\n\n' + description;
+    }
     return {
       artist,
       lang: artwork.lang,
