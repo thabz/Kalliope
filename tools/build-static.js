@@ -366,9 +366,17 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
     const artist = collected.poets.get(artwork.artistId);
     const museumId = safeGetAttr(picture, 'museum');
     const remoteUrl = build_museum_url(picture);
-    const description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
+    let description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
       artwork.content_raw
     }`;
+    const extraDescription = picture
+      .toString()
+      .replace(/<picture[^>]*?>/, '')
+      .replace('</picture>', '')
+      .trim();
+    if (extraDescription.length > 0) {
+      description = extraDescription + '\n\n' + description;
+    }
     return {
       artist,
       lang: artwork.lang,
@@ -776,7 +784,7 @@ const handle_text = (
 
   const keywords = head.get('keywords');
   const isBible = poetId === 'bibel';
-  const isFolkevise = poetId === 'folkeviser';
+  const isFolkevise = poetId === 'folkeviser' || (poetId === 'tasso' && workId === '1581');
 
   let subtitles = extract_subtitles(head);
 
