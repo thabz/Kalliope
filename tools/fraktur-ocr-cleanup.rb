@@ -547,6 +547,8 @@
 'Host(\W)/Høst\1',
 'Hsst(\W)/Høst\1',
 'Rog(\W)/Røg\1',
+'hcd/hed', 
+'dcn/den', 
 'mcd(\W)/med\1', 
 'mcd(\W)/med\1', 
 'tcs(\W)/tes\1', 

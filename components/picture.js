@@ -64,7 +64,7 @@ export default class Picture extends React.Component<PictureProps> {
     if (showDropShadow == true) {
       pictureClassName += ' with-drop-shadow';
     }
-    const onClick = e => {
+    const onClick = (e: SyntheticMouseEvent<HTMLPictureElement>) => {
       if (clickToZoom == true) {
         this.context.showPictureOverlay(pictures, 'da', startIndex);
       }
