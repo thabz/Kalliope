@@ -45,6 +45,17 @@ const fetchJSON = async (path: string): Promise<*> => {
   }
 };
 
+const fetchText = async (path: string): Promise<*> => {
+  const res = await fetch(createURL(path));
+  if (res.status > 200) {
+    return Promise.resolve({ error: { statusCode: res.status } });
+  } else {
+    return {
+      xml: await res.text(),
+    };
+  }
+};
+
 export const poet = async (poetId: ?PoetId): Promise<?Poet> => {
   if (poetId == null) {
     return Promise.resolve(null);
@@ -169,6 +180,16 @@ export const text = async (textId: string): FetchTextResult => {
   const path: string = Paths.textPath(textId);
   const json: FetchTextResult = fetchJSON(`/${path}`);
   return json;
+};
+
+type TextXmlResult = Promise<{
+  xml: string,
+  error?: Error,
+}>;
+export const textXml = async (textId: string): TextXmlResult => {
+  const path: string = Paths.textPath(textId).replace(/\.json$/, '.xml');
+  const xml: TextXmlResult = fetchText(`/${path}`);
+  return xml;
 };
 
 type FetchSearchResult = Promise<{
