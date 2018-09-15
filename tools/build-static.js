@@ -357,7 +357,7 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
     const artist = collected.poets.get(artwork.artistId);
     const museumId = safeGetAttr(picture, 'museum');
     const remoteUrl = build_museum_url(picture);
-    const description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
+    let description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
       artwork.content_raw
     }`;
     const extraDescription = picture
