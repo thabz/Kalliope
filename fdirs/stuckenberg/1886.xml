@@ -2,74 +2,79 @@
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1886" author="stuckenberg" status="complete" type="poetry">
 <workhead>
-   <title>Digte</title>
-   <year>1886</year>
-   <pictures>
+    <title>Digte</title>
+    <year>1886</year>
+    <pictures>
        <picture type="titlepage" src="1886-p1.jpg">Titelbladet til <i>Digte</i> (1886). ,,Digte / af / Viggo Stuckenberg // Kjøbenhavn. / P. G. Philipsens Forlag. / Thieles Bogtrykkeri. / 1886.''</picture>
-   </pictures>
-   <quality>korrektur1</quality>
+    </pictures>
+    <notes>
+        <note>Teksten følger førsteudgaven af <i>Digte</i>, P. G. Philipsens Forlag, Kbh., 1886.</note>
+      <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+      <note>Noter med en foranstillet asterisk er Stuckenbergs egne.</note>
+    </notes>
+    <source facsimile="130021446931_color" facsimile-pages-num="154" facsimile-pages-offset="10">Viggo Stuckenberg: <i>Digte</i>, P.G. Philipsens Forlag, Kbh., 1886.</source>
 </workhead>
 <workbody>
 
 <section level="1">
 <head>
-   <toctitle>1884</toctitle>
+    <toctitle>1884</toctitle>
 </head>
 <content>
 
 <poem id="stuckenberg200101081">
 <head>
-   <title>Nytaar 1884</title>
-   <toctitle>Nytaar 1884</toctitle>
-   <indextitle>Nytaar 1884</indextitle>
-   <firstline>Mellem skillende Skyr</firstline>
-   <quality>korrektur1</quality>
+    <title>Nytaar</title>
+    <firstline>Mellem skillende Skyr</firstline>
+    <source pages="3-4"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-   Mellem skillende Skyr
-   gaar det graanende Gry,
+          Mellem skillende Skyr
+          gaar det graanende Gry,
 nu er Natten forbi, og det dages;
-   har der staaet en Storm,
-   har der raset et Vejr, -
+          har der staaet en Storm,
+          har der raset et Vejr, -
 vi har Solen igen og kan se, hvordan Sagen skal tages.
 
-   Vi har Nytaar igen,
-   Vi gaar Foraar imod;
+          Vi har Nytaar igen,
+          Vi gaar Foraar imod;
 vi har grødetung Vaarluft i Vente;
-   har vi veget vor Vej
-   for de Snefog, der kom,
+          har vi veget vor Vej
+          for de Snefog, der kom,
 det bærer mod Dagen, da atter vi Kræfter skal hente.
 
-   De stryger til Vejrs
-   i brusende Flok,
+          De stryger til Vejrs
+          i brusende Flok,
 de Haab, som fik Vingerne stækket;
-   de mylrer igen
-   fra Breddernes Siv,
+          de mylrer igen
+          fra Breddernes Siv,
 hvor de laa for at dø, og de skyder som Svaner i Trækket.
 
-   Og driver der Is
-   paa et vintersort Vand,
+          Og driver der Is
+          paa et vintersort Vand,
 og ligger der Sne over Gærdet, -
-   det Mod, der ifjor
-   blev knægtet og stængt,
+          det Mod, der ifjor
+          blev knægtet og stængt,
 det bryder sig Vej, af sit Nederlags Frostleje hærdet.
 
-   Vi har Nytaar igen; -
-   det maa ud, hvert et Gran
+          Vi har Nytaar igen; -
+          det maa ud, hvert et Gran
 af det fjorgamle Støv, vi har inde! -
-   sæt dit Vindu paa Stang
-   og let Dørklinken af!
+          sæt dit Vindu paa Stang
+          og let Dørklinken af!
 vi gaar Soltid imod - Soltid med vejrende Vinde!
 </body>
 </poem>
 
 <poem id="stuckenberg200101082">
 <head>
-   <title>Munken</title>
-   <toctitle>Munken</toctitle>
-   <indextitle>Munken</indextitle>
-   <firstline>Det blæser strengt i Nat, og her er koldt</firstline>
-   <quality>korrektur1</quality>
+    <title>Munken</title>
+    <toctitle>Munken</toctitle>
+    <indextitle>Munken</indextitle>
+    <firstline>Det blæser strengt i Nat, og her er koldt</firstline>
+    <source pages="5-7"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Det blæser strengt i Nat, og her er koldt
@@ -78,7 +83,7 @@ min Tanke spiller med et Minde Bold,
 mens Gigten piner Mindets glemte Ridder.
 - Aa Krist! Madonna! Gud! bed for mig! bed!
 hjælp mig at holde Mindets Djævel Stangen!
-jeg kan ej mer! - Er, Kirke, det din Fred?
+jeg kan ej mer! - Er, Kirke, det din Fred? -
 - Hvor dumpt det tuder gennem Klostergangen!
 
 Saa blæs da Storm! her staar jeg stærk og strunk!
@@ -86,7 +91,7 @@ skrig det kun ud i Verden, hvor du kommer,
 at du har set et Kloster, hvor en Munk
 tog Tag med Djævlen om en svunden Sommer!
 Kom, sæt dit Ansigt mod min Rude, Nat!
-at ogsaa "du" i Morgen kan fortælle
+at ogsaa <w>du</w> i Morgen kan fortælle
 om Munken, du har set, der om en Skat
 med Djævlen selv slog Tærning i sin Celle!
 
@@ -111,7 +116,7 @@ et Digt til mig fra Verdens bedste Kvinde!
 Vig bort, du Klosternat, for Livets Lys!
 og tag din Bibel med dig i din Kiste!
 min Læbe brænder af det sidste Kys,
-det hede, vilde, taarevaade, sidste -
+det hede, vilde, taarevaade, sidste - -
 - Aa Herre! kom min Svaghed mildt i Hu!
 vær naadig, Kristus! tæm din Vredes Vælde!
 tilgiv mig Gud! - jeg elsker jo endnu!
@@ -121,11 +126,12 @@ tilgiv mig Gud! - jeg elsker jo endnu!
 
 <poem id="stuckenberg200101083">
 <head>
-   <title>En moderne Petrus</title>
-   <toctitle>En moderne Petrus</toctitle>
-   <indextitle>En moderne Petrus</indextitle>
-   <firstline>Jeg sad imellem Damer</firstline>
-   <quality>korrektur1</quality>
+    <title>En moderne Petrus</title>
+    <toctitle>En moderne Petrus</toctitle>
+    <indextitle>En moderne Petrus</indextitle>
+    <firstline>Jeg sad imellem Damer</firstline>
+    <source pages="8-9"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg sad imellem Damer
@@ -143,7 +149,7 @@ og Damerne de smisked
 og lo: vi forstaar!
 men jeg - ja, Kære! jeg lo med,
 og jeg fornægted dig, -
-jeg følte, jeg blev rød derved, -
+jeg følte, jeg blev rød derved, - -
 - Kan du tilgive mig?
 
 Tre Gange jeg fornægted
@@ -152,18 +158,19 @@ tre Gange Damerne smisked,
 tre Gange blev jeg rød;
 saa tabte jeg tilsidst min Ro,
 og som Sankt Peter jeg
-gik udenfor og - ja, jeg lo!
+gik udenfor og - - ja, jeg lo!
 - Kan du tilgive mig?
 </body>
 </poem>
 
 <poem id="stuckenberg200101084">
 <head>
-   <title>Paa Aaen</title>
-   <toctitle>Paa Aaen</toctitle>
-   <indextitle>Paa Aaen</indextitle>
-   <firstline>Jeg har lagt mig lidt til Ro i Baaden</firstline>
-   <quality>korrektur1</quality>
+    <title>Paa Aaen</title>
+    <toctitle>Paa Aaen</toctitle>
+    <indextitle>Paa Aaen</indextitle>
+    <firstline>Jeg har lagt mig lidt til Ro i Baaden</firstline>
+    <source pages="10-12"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg har lagt mig lidt til Ro i Baaden.
@@ -176,18 +183,18 @@ ud fra Engen gennem Rift paa Rift
 i det tætte Sivkrat langs med Aaen.
 
 Sivet nejer, hæver sig paa Taaen,
-bøjer Nakken, spejler sig og vifter,
+bøjer Nakken, spejler sig og vifter, -
 Stilling efter Stilling Sivet skifter,
 endnu aldrig et Sekund tilfreds.
 
 Baaden driver, trækkende et Rids
 gennem Vandet, men et Rids, der svinder
-sporløst som en Drøm, foruden Minder,
+sporløst som en Drøm, foruden Minder, -
 og min Tanke ligner Ridset lidt.
 
 Jeg har stirret længe ned i Vandet,
 som det glider, solblankt, blaalig-hvidt,
-tænkt paa et og havnet i et andet -
+tænkt paa et og havnet i et andet - -
 
 Jeg har set dernede under Vandet
 kaade Smil og kælne Kvindeblikke,
@@ -195,7 +202,7 @@ mange, mange ... og iblandt dem dit!
 
 Jeg maa stirre, blive ved at ligge
 her i Baaden, blive ved at se, -
-de forsvinder for mig, disse Blikke -
+de forsvinder for mig, disse Blikke - -
 nu er dit tilbage, dit alene ...
 
 Spørger det? - hvad er det, det vil vide? -
@@ -206,7 +213,7 @@ Hvorfor bliver Baaden ved at glide? -
 hvor det drømmer, naar en Skygge kommer!
 hvor det græder, hver Gang koldt det vinder!
 ler og græder, drømmer, lyser, svinder,
-evig skiftet, evig dog saa mildt! -
+evig skiftet, evig dog saa mildt! - - -
 
 Om jeg her bestandig kunde drømme!
 stirre død mig paa de vandblaa Strømme?
@@ -218,11 +225,12 @@ Bølgen skifter, Strømmene har Hast!
 
 <poem id="stuckenberg200101085">
 <head>
-   <title>Sommerglimt</title>
-   <toctitle>Sommerglimt</toctitle>
-   <indextitle>Sommerglimt</indextitle>
-   <firstline>Vi sad og fletted Kranse</firstline>
-   <quality>korrektur1</quality>
+    <title>Sommerglimt</title>
+    <toctitle>Sommerglimt</toctitle>
+    <indextitle>Sommerglimt</indextitle>
+    <firstline>Vi sad og fletted Kranse</firstline>
+    <source pages="13"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Vi sad og fletted Kranse,
@@ -232,38 +240,39 @@ jeg var kun en Begynder.
 
 Vi bytted vore Kranse,
 hvor Bækken dæmpet risler, -
-din var af bløde Roser,
-min af de stive Tidsler.
+<w>din</w> var af bløde Roser,
+<w>min</w> af de stive Tidsler.
 </body>
 </poem>
 
 <poem id="stuckenberg200101086">
 <head>
-   <title>Aaliv</title>
-   <toctitle>Aaliv</toctitle>
-   <indextitle>Aaliv</indextitle>
-   <firstline>Se Sivene nejer</firstline>
-   <quality>korrektur1</quality>
+    <title>Aaliv</title>
+    <toctitle>Aaliv</toctitle>
+    <indextitle>Aaliv</indextitle>
+    <firstline>Se Sivene nejer</firstline>
+    <source pages="14-15"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Se Sivene nejer
-for Vinden og svejer
-med Toppen koket,
-og Bølgerne danser
-i Aakandepanser
-en stiv Menuet.
+          Se Sivene nejer
+          for Vinden og svejer
+          med Toppen koket,
+          og Bølgerne danser
+          i Aakandepanser
+          en stiv Menuet.
 
 Saa kommer en Guldsmed der inde fra Landet,
 staalblaa og gylden og flot i sin Flugt,
 skødesløst stryger den tæt over Vandet,
 oppe og nede, ret frem og i Bugt.
 
-Og Aakanden blinker
-duggperlet og vinker
-til Guldsmeden blødt:
-du spraglede Flyver!
-hvis Øjet ej lyver,
-saa kysser du sødt!
+          Og Aakanden blinker
+          duggperlet og vinker
+          til Guldsmeden blødt:
+          du spraglede Flyver!
+          hvis Øjet ej lyver,
+          saa kysser du sødt!
 
 Og Guldsmeden klipper med Vingen i Solen,
 staalblaa og gylden og øm i sit Blik,
@@ -274,11 +283,12 @@ henrykt, betagen af Kysset, den fik.
 
 <poem id="stuckenberg200101087">
 <head>
-   <title>Bækken</title>
-   <toctitle>Bækken</toctitle>
-   <indextitle>Bækken</indextitle>
-   <firstline>Bækken sprang</firstline>
-   <quality>korrektur1</quality>
+    <title>Bækken</title>
+    <toctitle>Bækken</toctitle>
+    <indextitle>Bækken</indextitle>
+    <firstline>Bækken sprang</firstline>
+    <source pages="16"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Bækken sprang
@@ -304,11 +314,12 @@ Bækken kom aldrig til kort.
 
 <poem id="stuckenberg200101088">
 <head>
-   <title>I Juni</title>
-   <toctitle>I Juni</toctitle>
-   <indextitle>I Juni</indextitle>
-   <firstline>Den lune Solluft dirrer</firstline>
-   <quality>korrektur1</quality>
+    <title>I Juni</title>
+    <toctitle>I Juni</toctitle>
+    <indextitle>I Juni</indextitle>
+    <firstline>Den lune Solluft dirrer</firstline>
+    <source pages="17-18"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Den lune Solluft dirrer
@@ -335,11 +346,10 @@ saa junifrisk og sommerblød.
 
 <poem id="stuckenberg200101089">
 <head>
-   <title>Sommeraften</title>
-   <toctitle>Sommeraften</toctitle>
-   <indextitle>Sommeraften</indextitle>
-   <firstline>Nu er Solen nede</firstline>
-   <quality>korrektur1</quality>
+    <title>Sommeraften</title>
+    <firstline>Nu er Solen nede</firstline>
+    <source pages="19-20"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nu er Solen nede;
@@ -366,75 +376,74 @@ køligt om din Smerte.
 
 <poem id="stuckenberg2001010810">
 <head>
-   <title>Et Vinterdigt</title>
-   <toctitle>Et Vinterdigt</toctitle>
-   <indextitle>Et Vinterdigt</indextitle>
-   <firstline>Glemslen kommer med iskold Blæst</firstline>
-   <quality>korrektur1</quality>
+    <title>Et Vinterdigt</title>
+    <firstline>Glemslen kommer med iskold Blæst</firstline>
+    <source pages="21"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Glemslen kommer med iskold Blæst
 i Frosttaage-Kappe og Snebyge-Vest,
-   sviende kold!
+                sviende kold!
 og dundrer mod Hjærtet sin Istap-Kno:
 Luk op! jeg skaffer til Løn dig Ro
 og dækker med afgrundsdyb Is, hvad der smerted, -
-Glemslen lufter os Hjærtet,
-   isnende kold!
+        Glemslen lufter os Hjærtet,
+            isnende kold!
 
 Vel Glemsel! bred da din Is om mit!
 lad Taaren som Isperle slutte sit
-   sviende Løb!
-frys til hver en nagende, skuffet Drøm! -
-du brister! du kan ej! "den" Understrøm
+                sviende Løb!
+frys til hver en nagende, skuffet Drøm! - -
+du brister! du kan ej! <w>den</w> Understrøm
 faar du lade sive og draabevis brede
-sit kogende, dybe, glohede,
-   evige Løb!
+        sit kogende, dybe, glohede,
+            evige Løb!
 </body>
 </poem>
 
 <poem id="stuckenberg2001010811">
 <head>
-   <title>Serenade</title>
-   <toctitle>Serenade</toctitle>
-   <indextitle>Serenade</indextitle>
-   <firstline>Der skinner ej Sol, det er Graat i Graat</firstline>
-   <quality>korrektur1</quality>
+    <title>Serenade</title>
+    <toctitle>Serenade</toctitle>
+    <indextitle>Serenade</indextitle>
+    <firstline>Der skinner ej Sol, det er Graat i Graat</firstline>
+    <source pages="22-23"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Der skinner ej Sol, det er Graat i Graat,
 det øser fra Skyen i Spande,
 alting paa Gaden er drivende vaadt,
 det regner med styrtende Vande! -
-   Kæreste du!
-   kommer du nu,
+           Kæreste du!
+           kommer du nu,
 nu Regnen har kølet din Elsker?
 
 Det blæser saa koldt, det hyler saa vildt,
 i Gaslygten Glassene klirrer,
 klaprende danser paa Krogen et Skilt,
 og Vejrhanen pibende svirrer! -
-   Kæreste du!
-   kommer du nu,
+          Kæreste du!
+          kommer du nu,
 nu Blæsten har bøjet din Elsker?
 
 Hører du Stormkrogens raslende Larm
 og Regnskyllets Slag mod din Rude?
 hører du ham, der har drømt i din Arm,
 staa dyngvaad og kalde herude?
-   Kæreste du!
-   nægter du nu
+          Kæreste du!
+          nægter du nu
 de Kys, der kan varme din Elsker?
 </body>
 </poem>
 
 <poem id="stuckenberg2001010812">
 <head>
-   <title>Ja, Du! Ifald ..</title>
-   <toctitle>Ja, Du! Ifald ..</toctitle>
-   <indextitle>Ja, Du! Ifald ..</indextitle>
-   <firstline>Ja, du! ifald jeg kunde dykke ned</firstline>
-   <quality>korrektur1</quality>
+    <title>Ja, du! ifald ...</title>
+    <firstline>Ja, du! ifald jeg kunde dykke ned</firstline>
+    <source pages="24-25"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Ja, du! ifald jeg kunde dykke ned
@@ -452,7 +461,7 @@ hver skal jo sit til Verdensskatten bøde,
 og flest er de, der til Betaling møde
 med Taarer, som i vaagne Nætter randt.
 
-Og naar "vi to" en Gang - i Dag - ad Aare -
+Og naar <w>vi to</w> en Gang - i Dag - ad Aare -
 skal møde frem og ofre, hvad vi skylder
 det Liv, der sig med laante Smil forgylder
 og redte vore Drømme deres Baare -
@@ -465,11 +474,12 @@ der falder lige tunge, lige hede.
 
 <poem id="stuckenberg2001010813">
 <head>
-   <title>Efteraarsblæst</title>
-   <toctitle>Efteraarsblæst</toctitle>
-   <indextitle>Efteraarsblæst</indextitle>
-   <firstline>Blæsten har travlt, det er Rengøringstid</firstline>
-   <quality>korrektur1</quality>
+    <title>Efteraarsblæst</title>
+    <toctitle>Efteraarsblæst</toctitle>
+    <indextitle>Efteraarsblæst</indextitle>
+    <firstline>Blæsten har travlt, det er Rengøringstid</firstline>
+    <source pages="26-28"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Blæsten har travlt, det er Rengøringstid,
@@ -521,14 +531,15 @@ den sidste Stump Bladstilk er faldet!
 
 <poem id="stuckenberg2001010814">
 <head>
-   <title>Slotsbrand</title>
-   <toctitle>Slotsbrand</toctitle>
-   <indextitle>Slotsbrand</indextitle>
-   <firstline>Fest blev der meldt, en Begravelsesfest</firstline>
-   <notes>
+    <title>Slotsbrand</title>
+    <toctitle>Slotsbrand</toctitle>
+    <indextitle>Slotsbrand</indextitle>
+    <firstline>Fest blev der meldt, en Begravelsesfest</firstline>
+    <source pages="29-30"/>
+    <notes>
       <note>Christianborg Slots brand i 1884.</note>
-   </notes>
-   <quality>korrektur1</quality>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Fest blev der meldt, en Begravelsesfest,
@@ -575,13 +586,20 @@ og Liget et Slot.
 </body>
 </poem>
 
+<section level="3" id="stuckenberg2018091701">
+<head>
+    <title>Resultater</title>
+    <source pages="31-34"/>
+</head>
+<content>
+
+
 <poem id="stuckenberg2001010815a">
 <head>
-   <title>Resultater (1)</title>
-   <toctitle>Resultater (1)</toctitle>
-   <indextitle>Resultater (1)</indextitle>
-   <firstline>Nej! ingen Famlen efter Hjærnens Guder</firstline>
-   <quality>korrektur1</quality>
+    <title><num>I.</num>Nej! ingen Famlen efter Hjærnens Guder</title>
+    <firstline>Nej! ingen Famlen efter Hjærnens Guder</firstline>
+    <source pages="31-32"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Nej! ingen Famlen efter Hjærnens Guder
@@ -613,11 +631,10 @@ og Livet og dets Pulsslag er min Gud!
 
 <poem id="stuckenberg2001010815b">
 <head>
-   <title>Resultater (2)</title>
-   <toctitle>Resultater (2)</toctitle>
-   <indextitle>Resultater (2)</indextitle>
-   <firstline>Kom ud! du, der sidder i Kirken og tror</firstline>
-   <quality>korrektur1</quality>
+    <title><num>II.</num>Kom ud! du, der sidder i Kirken og tror</title>
+    <firstline>Kom ud! du, der sidder i Kirken og tror</firstline>
+    <source pages="33"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Kom ud! du, der sidder i Kirken og tror
@@ -634,22 +651,27 @@ i din Arm, i din Røst, i dit knejsende Mod,
 og Gud i dit kaadeste Blik!
 </body>
 </poem>
+
+</content>
+</section> <!-- Resultater -->
+
 </content>
 </section>
 
-<section level="1">
+<section level="1" id="stuckenberg2018091702">
 <head>
-   <toctitle>1885</toctitle>
+    <title>Vølunds Ed</title>
+    <subtitle>1885</subtitle>
+    <source pages="35-45"/>
 </head>
 <content>
 
 <poem id="stuckenberg2001010816a">
 <head>
-   <title>Vølunds Ed (1)</title>
-   <toctitle>Vølunds Ed (1)</toctitle>
-   <indextitle>Vølunds Ed (1)</indextitle>
-   <firstline>Aserne lo</firstline>
-   <quality>korrektur1</quality>
+    <title><num>I.</num>Aserne lo</title>
+    <firstline>Aserne lo</firstline>
+    <source pages="37-39"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Aserne lo,
@@ -709,11 +731,10 @@ de vældige Guder!
 
 <poem id="stuckenberg2001010816b">
 <head>
-   <title>Vølunds Ed (2)</title>
-   <toctitle>Vølunds Ed (2)</toctitle>
-   <indextitle>Vølunds Ed (2)</indextitle>
-   <firstline>Der skinnede Sol over Asgaard</firstline>
-   <quality>korrektur1</quality>
+    <title><num>II.</num>Der skinnede Sol over Asgaard</title>
+    <firstline>Der skinnede Sol over Asgaard</firstline>
+    <source pages="40-44"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Der skinnede Sol over Asgaard,
@@ -827,11 +848,10 @@ Vølunds Ed.
 
 <poem id="stuckenberg2001010816c">
 <head>
-   <title>Vølunds Ed (3)</title>
-   <toctitle>Vølunds Ed (3)</toctitle>
-   <indextitle>Vølunds Ed (3)</indextitle>
-   <firstline>Den rinder tungt og stille</firstline>
-   <quality>korrektur1</quality>
+    <title><num>III.</num>Den rinder tungt og stille</title>
+    <firstline>Den rinder tungt og stille</firstline>
+    <source pages="45-49"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den rinder tungt og stille
@@ -950,11 +970,10 @@ dér sidder Mimer stum.
 
 <poem id="stuckenberg2001010816d">
 <head>
-   <title>Vølunds Ed (4)</title>
-   <toctitle>Vølunds Ed (4)</toctitle>
-   <indextitle>Vølunds Ed (4)</indextitle>
-   <firstline>Verden laa der</firstline>
-   <quality>korrektur1</quality>
+    <title><num>IV.</num>Verden laa der</title>
+    <firstline>Verden laa der</firstline>
+    <source pages="50-52"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Verden laa der,
@@ -1021,11 +1040,10 @@ de vældige Guder!
 
 <poem id="stuckenberg2001010816e">
 <head>
-   <title>Vølunds Ed (5)</title>
-   <toctitle>Vølunds Ed (5)</toctitle>
-   <indextitle>Vølunds Ed (5)</indextitle>
-   <firstline>Fimbulvinteren svandt</firstline>
-   <quality>korrektur1</quality>
+    <title><num>V.</num>Fimbulvinteren svandt</title>
+    <firstline>Fimbulvinteren svandt</firstline>
+    <source pages="53-54"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Fimbulvinteren svandt;
@@ -1052,22 +1070,24 @@ den sidste, døende Rest af
 Vølunds Ed.
 </body>
 </poem>
+
 </content>
-</section>
+</section> <!-- Vølunds Ed -->
 
 <section level="1">
 <head>
-   <toctitle>1885-86</toctitle>
+    <toctitle>1885-86</toctitle>
 </head>
 <content>
 
 <poem id="stuckenberg2001010817">
 <head>
-   <title>Maj</title>
-   <toctitle>Maj</toctitle>
-   <indextitle>Maj</indextitle>
-   <firstline>Anemoner og Solskin og Knopper</firstline>
-   <quality>korrektur1</quality>
+    <title>Maj</title>
+    <toctitle>Maj</toctitle>
+    <indextitle>Maj</indextitle>
+    <firstline>Anemoner og Solskin og Knopper</firstline>
+    <source pages="57-58"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Anemoner og Solskin og Knopper
@@ -1099,11 +1119,12 @@ tungt over Skovbunden hen.
 
 <poem id="stuckenberg2001010818">
 <head>
-   <title>Vaarstemning</title>
-   <toctitle>Vaarstemning</toctitle>
-   <indextitle>Vaarstemning</indextitle>
-   <firstline>Nu er det Foraar. Digterne har travlt</firstline>
-   <quality>korrektur1</quality>
+    <title>Vaarstemning</title>
+    <toctitle>Vaarstemning</toctitle>
+    <indextitle>Vaarstemning</indextitle>
+    <firstline>Nu er det Foraar. Digterne har travlt</firstline>
+    <source pages="59-60"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Nu er det Foraar. Digterne har travlt
@@ -1130,11 +1151,10 @@ Ordkunstens foraarsgale Døgenigter!
 
 <poem id="stuckenberg2001010819">
 <head>
-   <title>Opholdsvejr</title>
-   <toctitle>Opholdsvejr</toctitle>
-   <indextitle>Opholdsvejr</indextitle>
-   <firstline>Det havde været en Regnvejrsdag</firstline>
-   <quality>korrektur1</quality>
+    <title>Opholdsvejr</title>
+    <firstline>Det havde været en Regnvejrsdag</firstline>
+    <source pages="61-62"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Det havde været en Regnvejrsdag
@@ -1171,12 +1191,13 @@ og dem, dens Flitter fik lokket.
 
 <poem id="stuckenberg2001010820">
 <head>
-   <title>Strandsol</title>
-   <subtitle>(Tekst til et Billede forestillende en ung Pige, lænende sig til en Badebros Rækværk)</subtitle>
-   <toctitle>Strandsol</toctitle>
-   <indextitle>Strandsol</indextitle>
-   <firstline>Sol i blinkende</firstline>
-   <quality>korrektur1</quality>
+    <title>Strandsol</title>
+    <notes>
+        <note>* Tekst til et Billede forestillende en ung Pige, lænende sig til en Badebros Rækværk.</note>
+    </notes>
+    <firstline>Sol i blinkende</firstline>
+    <source pages="63-65"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Sol i blinkende
@@ -1235,13 +1256,19 @@ Kaproningsbaade!
 </body>
 </poem>
 
+<section level="3" id="stuckenberg2018091704">
+<head>
+    <title>Høststemninger</title>
+    <source pages="66-67"/>
+</head>
+<content>
+
 <poem id="stuckenberg2001010821a">
 <head>
-   <title>Høststemninger (1)</title>
-   <toctitle>Høststemninger (1)</toctitle>
-   <indextitle>Høststemninger (1)</indextitle>
-   <firstline>Havens Blomster har smykket sig ud</firstline>
-   <quality>korrektur1</quality>
+    <title><num>I.</num>Havens Blomster har smykket sig ud</title>
+    <firstline>Havens Blomster har smykket sig ud</firstline>
+    <source pages="66"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Havens Blomster har smykket sig ud
@@ -1263,11 +1290,10 @@ Græder du, falmede Skønne?
 
 <poem id="stuckenberg2001010821b">
 <head>
-   <title>Høststemninger (2)</title>
-   <toctitle>Høststemninger (2)</toctitle>
-   <indextitle>Høststemninger (2)</indextitle>
-   <firstline>Det falder, det krøllede, pjuskede Løv</firstline>
-   <quality>korrektur1</quality>
+    <title><num>II.</num>Det falder, det krøllede, pjuskede Løv</title>
+    <firstline>Det falder, det krøllede, pjuskede Løv</firstline>
+    <source pages="67"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Det falder, det krøllede, pjuskede Løv
@@ -1287,13 +1313,17 @@ Vindpustet svulmer og slæber sig hen,
 </body>
 </poem>
 
+</content>
+</section>
+
 <poem id="stuckenberg2001010822">
 <head>
-   <title>Frostnat</title>
-   <toctitle>Frostnat</toctitle>
-   <indextitle>Frostnat</indextitle>
-   <firstline>Den kolde Natteluft i Huden stikker</firstline>
-   <quality>korrektur1</quality>
+    <title>Frostnat</title>
+    <toctitle>Frostnat</toctitle>
+    <indextitle>Frostnat</indextitle>
+    <firstline>Den kolde Natteluft i Huden stikker</firstline>
+    <source pages="68-69"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den kolde Natteluft i Huden stikker,
@@ -1325,11 +1355,12 @@ en frostgold Vej i snehvid Fattigdom.
 
 <poem id="stuckenberg2001010823">
 <head>
-   <title>Snefald</title>
-   <toctitle>Snefald</toctitle>
-   <indextitle>Snefald</indextitle>
-   <firstline>Der er Snefald over Skoven</firstline>
-   <quality>korrektur1</quality>
+    <title>Snefald</title>
+    <toctitle>Snefald</toctitle>
+    <indextitle>Snefald</indextitle>
+    <firstline>Der er Snefald over Skoven</firstline>
+    <source pages="70-71"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Der er Snefald over Skoven,
@@ -1361,11 +1392,12 @@ dette blundende Sne-Stille,
 
 <poem id="stuckenberg2001010824">
 <head>
-   <title>Isblomster</title>
-   <toctitle>Isblomster</toctitle>
-   <indextitle>Isblomster</indextitle>
-   <firstline>Isen har lagt sig derude</firstline>
-   <quality>korrektur1</quality>
+    <title>Isblomster</title>
+    <toctitle>Isblomster</toctitle>
+    <indextitle>Isblomster</indextitle>
+    <firstline>Isen har lagt sig derude</firstline>
+    <source pages="72-73"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Isen har lagt sig derude,
@@ -1402,11 +1434,12 @@ dens snekolde Ro, dens isnende Død.
 
 <poem id="stuckenberg2001010825">
 <head>
-   <title>Snestorm</title>
-   <toctitle>Snestorm</toctitle>
-   <indextitle>Snestorm</indextitle>
-   <firstline>Det blæser en Snestorm derude!</firstline>
-   <quality>korrektur1</quality>
+    <title>Snestorm</title>
+    <toctitle>Snestorm</toctitle>
+    <indextitle>Snestorm</indextitle>
+    <firstline>Det blæser en Snestorm derude!</firstline>
+    <source pages="74-76"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Det blæser en Snestorm derude!
@@ -1455,7 +1488,6 @@ synker den blødt i den voksende Sne
 og lader hvert Vindstød sin Spottesang tude
 og glatte hver Fold
 i Snelagets dvælende Pude.
-
 Og medens den gisper og fryser ihjel
 og Stormen hviner et hæst Farvel,
 falder Natten paa
@@ -1467,11 +1499,12 @@ Det blæser en Snestorm derude!
 
 <poem id="stuckenberg2001010826">
 <head>
-   <title>Snefnug</title>
-   <toctitle>Snefnug</toctitle>
-   <indextitle>Snefnug</indextitle>
-   <firstline>De falder som pjuskede Stumper</firstline>
-   <quality>korrektur1</quality>
+    <title>Snefnug</title>
+    <toctitle>Snefnug</toctitle>
+    <indextitle>Snefnug</indextitle>
+    <firstline>De falder som pjuskede Stumper</firstline>
+    <source pages="77"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 De falder som pjuskede Stumper
@@ -1492,11 +1525,12 @@ iskolde, spottende Kys.
 
 <poem id="stuckenberg2001010827">
 <head>
-   <title>Stormflod</title>
-   <toctitle>Stormflod</toctitle>
-   <indextitle>Stormflod</indextitle>
-   <firstline>Solen synker</firstline>
-   <quality>korrektur1</quality>
+    <title>Stormflod</title>
+    <toctitle>Stormflod</toctitle>
+    <indextitle>Stormflod</indextitle>
+    <firstline>Solen synker</firstline>
+    <source pages="78-81"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Solen synker;
@@ -1540,7 +1574,7 @@ Raklerne skælver, Duggperlerne bæver,
 og medens Maanen sig højere hæver,
 Dryaden sukker.
 
----
+<nonum><center>* * *</center></nonum>
 
 Frem mellem Taagernes Folder,
 der Skovbrynet dækker,
@@ -1596,11 +1630,12 @@ Dryadens dejlige Lig.
 
 <poem id="stuckenberg2001010828">
 <head>
-   <title>Et Sommerdigt</title>
-   <toctitle>Et Sommerdigt</toctitle>
-   <indextitle>Et Sommerdigt</indextitle>
-   <firstline>Du store Spotter, kolde Efteraar!</firstline>
-   <quality>korrektur1</quality>
+    <title>Et Sommerdigt</title>
+    <toctitle>Et Sommerdigt</toctitle>
+    <indextitle>Et Sommerdigt</indextitle>
+    <firstline>Du store Spotter, kolde Efteraar!</firstline>
+    <source pages="82-83"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Du store Spotter, kolde Efteraar!
@@ -1636,11 +1671,12 @@ din sanddru Spot, din ægte, kolde Død!
 
 <poem id="stuckenberg2001010829">
 <head>
-   <title>Paa Molen</title>
-   <toctitle>Paa Molen</toctitle>
-   <indextitle>Paa Molen</indextitle>
-   <firstline>Damperen lettede. Yderst paa Molen</firstline>
-   <quality>korrektur1</quality>
+    <title>Paa Molen</title>
+    <toctitle>Paa Molen</toctitle>
+    <indextitle>Paa Molen</indextitle>
+    <firstline>Damperen lettede. Yderst paa Molen</firstline>
+    <source pages="84-85"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Damperen lettede. Yderst paa Molen
@@ -1672,11 +1708,12 @@ rakte imod mig sin hullede Hat.
 
 <poem id="stuckenberg2001010830">
 <head>
-   <title>Ved Stranden</title>
-   <toctitle>Ved Stranden</toctitle>
-   <indextitle>Ved Stranden</indextitle>
-   <firstline>Jeg valgte mit Stade hernede ved Stranden</firstline>
-   <quality>korrektur1</quality>
+    <title>Ved Stranden</title>
+    <toctitle>Ved Stranden</toctitle>
+    <indextitle>Ved Stranden</indextitle>
+    <firstline>Jeg valgte mit Stade hernede ved Stranden</firstline>
+    <source pages="86-87"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg valgte mit Stade hernede ved Stranden,
@@ -1703,11 +1740,12 @@ det saa mellem Taager forsvinde.
 
 <poem id="stuckenberg2001010831">
 <head>
-   <title>Grave</title>
-   <toctitle>Grave</toctitle>
-   <indextitle>Grave</indextitle>
-   <firstline>Grave paa begge Sider</firstline>
-   <quality>korrektur1</quality>
+    <title>Grave</title>
+    <toctitle>Grave</toctitle>
+    <indextitle>Grave</indextitle>
+    <firstline>Grave paa begge Sider</firstline>
+    <source pages="88-89"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Grave paa begge Sider,
@@ -1734,11 +1772,12 @@ Graverens Spadestik.
 
 <poem id="stuckenberg2001010832">
 <head>
-   <title>Elskov</title>
-   <toctitle>Elskov</toctitle>
-   <indextitle>Elskov</indextitle>
-   <firstline>De har digtet i kælne</firstline>
-   <quality>korrektur1</quality>
+    <title>Elskov</title>
+    <toctitle>Elskov</toctitle>
+    <indextitle>Elskov</indextitle>
+    <firstline>De har digtet i kælne</firstline>
+    <source pages="90-92"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 De har digtet i kælne
@@ -1790,11 +1829,12 @@ en Ørkensols Ild.
 
 <poem id="stuckenberg2001010833">
 <head>
-   <title>Fjældskov</title>
-   <toctitle>Fjældskov</toctitle>
-   <indextitle>Fjældskov</indextitle>
-   <firstline>Kløften lukker sig, og Stien slipper...</firstline>
-   <quality>korrektur1</quality>
+    <title>Fjældskov</title>
+    <toctitle>Fjældskov</toctitle>
+    <indextitle>Fjældskov</indextitle>
+    <firstline>Kløften lukker sig, og Stien slipper...</firstline>
+    <source pages="93-96"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Kløften lukker sig, og Stien slipper...
@@ -1869,11 +1909,12 @@ evigt aandende Elskov.
 
 <poem id="stuckenberg2001010834">
 <head>
-   <title>Halvmørke</title>
-   <toctitle>Halvmørke</toctitle>
-   <indextitle>Halvmørke</indextitle>
-   <firstline>Jeg kommer fra Kulden derude</firstline>
-   <quality>korrektur1</quality>
+    <title>Halvmørke</title>
+    <toctitle>Halvmørke</toctitle>
+    <indextitle>Halvmørke</indextitle>
+    <firstline>Jeg kommer fra Kulden derude</firstline>
+    <source pages="97-99"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg kommer fra Kulden derude,
@@ -1925,11 +1966,10 @@ saa koldt og saa tæt.
 
 <poem id="stuckenberg2001010835">
 <head>
-   <title>Klaverstykke</title>
-   <toctitle>Klaverstykke</toctitle>
-   <indextitle>Klaverstykke</indextitle>
-   <firstline>Vi sidder alene herinde</firstline>
-   <quality>korrektur1</quality>
+    <title>Klaverstykke</title>
+    <firstline>Vi sidder alene herinde</firstline>
+    <source pages="100-102"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Vi sidder alene herinde,
@@ -1952,7 +1992,7 @@ Jeg vidste jo nok, at De vilde,
 saadan, nu sidder jeg stille
 og steder min Skepsis til Ro.
 
----
+<nonum><center>* * *</center></nonum>
 
 Som Barn har jeg sværmet, som Barn har jeg drømt
 saa lødige Drømme som nogen,
@@ -1998,11 +2038,12 @@ Ja saa! vi er ikke alene. -
 
 <poem id="stuckenberg2001010836">
 <head>
-   <title>Midnatssolen</title>
-   <toctitle>Midnatssolen</toctitle>
-   <indextitle>Midnatssolen</indextitle>
-   <firstline>To Slaver tjente hos den store Herre</firstline>
-   <quality>korrektur1</quality>
+    <title>Midnatssolen</title>
+    <toctitle>Midnatssolen</toctitle>
+    <indextitle>Midnatssolen</indextitle>
+    <firstline>To Slaver tjente hos den store Herre</firstline>
+    <source pages="103-105"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 To Slaver tjente hos den store Herre,
@@ -2051,11 +2092,12 @@ og farver Steppen med sit stille Lys.
 
 <poem id="stuckenberg2001010837">
 <head>
-   <title>Nytaar 1885</title>
-   <toctitle>Nytaar 1885</toctitle>
-   <indextitle>Nytaar 1885</indextitle>
-   <firstline>De staar der og venter, i trekantet Hat</firstline>
-   <quality>korrektur1</quality>
+    <title>Nytaar 1885</title>
+    <toctitle>Nytaar 1885</toctitle>
+    <indextitle>Nytaar 1885</indextitle>
+    <firstline>De staar der og venter, i trekantet Hat</firstline>
+    <source pages="106-109"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 De staar der og venter, i trekantet Hat,
@@ -2125,11 +2167,12 @@ og sniger sig bukkende efter.
 
 <poem id="stuckenberg2001010838">
 <head>
-   <title>April 1885</title>
-   <toctitle>April 1885</toctitle>
-   <indextitle>April 1885</indextitle>
-   <firstline>Foraaret er kommet, iblandt os det staar</firstline>
-   <quality>korrektur1</quality>
+    <title>April 1885</title>
+    <toctitle>April 1885</toctitle>
+    <indextitle>April 1885</indextitle>
+    <firstline>Foraaret er kommet, iblandt os det staar</firstline>
+    <source pages="110-113"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Foraaret er kommet, iblandt os det staar
@@ -2199,11 +2242,10 @@ de Liljer, der gror, hvor det træder!
 
 <poem id="stuckenberg2001010839">
 <head>
-   <title>Den tredje Oktober 1885</title>
-   <toctitle>Den tredje Oktober 1885</toctitle>
-   <indextitle>Den tredje Oktober 1885</indextitle>
-   <firstline>Det knitred frem, det blussed op derude</firstline>
-   <quality>korrektur1</quality>
+    <title>Den 3dje Oktober 1885</title>
+    <firstline>Det knitred frem, det blussed op derude</firstline>
+    <source pages="114-116"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Det knitred frem, det blussed op derude,
@@ -2255,11 +2297,12 @@ et Sprog, et samlet Folk, et Flag, et Land?
 
 <poem id="stuckenberg2001010840">
 <head>
-   <title>Spring ud! Du lille Danmark</title>
-   <toctitle>Spring ud! Du lille Danmark</toctitle>
-   <indextitle>Spring ud! Du lille Danmark</indextitle>
-   <firstline>Spring ud! du lille Danmark!</firstline>
-   <quality>korrektur1</quality>
+    <title>Spring ud! Du lille Danmark</title>
+    <toctitle>Spring ud! Du lille Danmark</toctitle>
+    <indextitle>Spring ud! Du lille Danmark</indextitle>
+    <firstline>Spring ud! du lille Danmark!</firstline>
+    <source pages="117-119"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Spring ud! du lille Danmark!
@@ -2310,11 +2353,12 @@ Spring ud! du lille Danmark!
 
 <poem id="stuckenberg2001010841">
 <head>
-   <title>November 1885</title>
-   <toctitle>November 1885</toctitle>
-   <indextitle>November 1885</indextitle>
-   <firstline>Der bliver saa vigende stille</firstline>
-   <quality>korrektur1</quality>
+    <title>November 1885</title>
+    <toctitle>November 1885</toctitle>
+    <indextitle>November 1885</indextitle>
+    <firstline>Der bliver saa vigende stille</firstline>
+    <source pages="120-122"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Der bliver saa vigende stille,
@@ -2375,11 +2419,12 @@ kun slaar i en fredhegnet Vaar!
 
 <poem id="stuckenberg2001010842">
 <head>
-   <title>Bethlehemsstjærnen</title>
-   <toctitle>Bethlehemsstjærnen</toctitle>
-   <indextitle>Bethlehemsstjærnen</indextitle>
-   <firstline>Med fornem Blinken, aandssløv Plirren staar</firstline>
-   <quality>korrektur1</quality>
+    <title>Bethlehemsstjærnen</title>
+    <toctitle>Bethlehemsstjærnen</toctitle>
+    <indextitle>Bethlehemsstjærnen</indextitle>
+    <firstline>Med fornem Blinken, aandssløv Plirren staar</firstline>
+    <source pages="123-127"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Med fornem Blinken, aandssløv Plirren staar
@@ -2400,7 +2445,7 @@ for Blæstens Spot ad al dens Mug og Skimmel,
 blind for de nye Væksters Spirevrimmel
 dybt under Lag af faldet, raadnet Løv.
 
----
+<nonum><center>* * *</center></nonum>
 
 Højt op til Stjærnerne og frem blandt dem
 gaar Tanken kækt paa nye Plyndringstogter,
@@ -2447,7 +2492,7 @@ og synker langsomt mellem Tidens Bølger,
 som dybt paa Bunden det i Dyndet dølger
 og bruser over, hvad der sank der bag.
 
----
+<nonum><center>* * *</center></nonum>
 
 Men Tidens Hav har ingen stensat Bred
 og ingen Havn, hvor Skibet ind kan slippe,
@@ -2489,11 +2534,12 @@ og peger mod det nye Bethlehem.
 
 <poem id="stuckenberg2001010843">
 <head>
-   <title>Søvnløs</title>
-   <toctitle>Søvnløs</toctitle>
-   <indextitle>Søvnløs</indextitle>
-   <firstline>Det lyder for mig tit, som om der bæver</firstline>
-   <quality>korrektur1</quality>
+    <title>Søvnløs</title>
+    <toctitle>Søvnløs</toctitle>
+    <indextitle>Søvnløs</indextitle>
+    <firstline>Det lyder for mig tit, som om der bæver</firstline>
+    <source pages="128-129"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Det lyder for mig tit, som om der bæver
@@ -2530,11 +2576,12 @@ eller et Bud om nye Slægters Nød?
 
 <poem id="stuckenberg2001010844">
 <head>
-   <title>Sic Transit</title>
-   <toctitle>Sic Transit</toctitle>
-   <indextitle>Sic Transit</indextitle>
-   <firstline>I laa paa Knæ og kyssed</firstline>
-   <quality>korrektur1</quality>
+    <title>Sic Transit</title>
+    <toctitle>Sic Transit</toctitle>
+    <indextitle>Sic Transit</indextitle>
+    <firstline>I laa paa Knæ og kyssed</firstline>
+    <source pages="130"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 I laa paa Knæ og kyssed
@@ -2556,11 +2603,12 @@ og tygger Drøv paa Hadet.
 
 <poem id="stuckenberg2001010845">
 <head>
-   <title>Vig fra mig, Satanas!</title>
-   <toctitle>Vig fra mig, Satanas!</toctitle>
-   <indextitle>Vig fra mig, Satanas!</indextitle>
-   <firstline>Kristus! du døde! staa af din Grav!</firstline>
-   <quality>korrektur1</quality>
+    <title>Vig fra mig, Satanas!</title>
+    <toctitle>Vig fra mig, Satanas!</toctitle>
+    <indextitle>Vig fra mig, Satanas!</indextitle>
+    <firstline>Kristus! du døde! staa af din Grav!</firstline>
+    <source pages="131"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Kristus! du døde! staa af din Grav!
@@ -2584,11 +2632,12 @@ Kristus! du døde! du tier!
 
 <poem id="stuckenberg2001010846">
 <head>
-   <title>Paaskesalme</title>
-   <toctitle>Paaskesalme</toctitle>
-   <indextitle>Paaskesalme</indextitle>
-   <firstline>Paasken er inde, Naaden er nær</firstline>
-   <quality>korrektur1</quality>
+    <title>Paaskesalme</title>
+    <toctitle>Paaskesalme</toctitle>
+    <indextitle>Paaskesalme</indextitle>
+    <firstline>Paasken er inde, Naaden er nær</firstline>
+    <source pages="132-134"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Paasken er inde, Naaden er nær,
@@ -2603,7 +2652,7 @@ Kvinden tør atter velsigne sit Skød,
 nu er der Hvile, nu er der Brød!
 Pris være Himlenes Herre!
 
----
+<nonum><center>* * *</center></nonum>
 
 Du tvivlende Verden! du smiler saa smaat! -
 skrig Hosianna! saa Stjærnerne falder
@@ -2617,7 +2666,7 @@ Vover du Kampen? erklærer du Krig
 Lugter din Frelser for meget af Lig
 og Naaden af Gravkammerdunster?
 
----
+<nonum><center>* * *</center></nonum>
 
 Du tvivlende Verden! jeg elsker din Spot
 ad Paaskens prangende Skimmel,
@@ -2647,11 +2696,12 @@ hvor Paaskesol staar over Tiden.
 
 <poem id="stuckenberg2001010847">
 <head>
-   <title>Mefisto</title>
-   <toctitle>Mefisto</toctitle>
-   <indextitle>Mefisto</indextitle>
-   <firstline>Mefisto! Mefisto! er du død?</firstline>
-   <quality>korrektur1</quality>
+    <title>Mefisto</title>
+    <toctitle>Mefisto</toctitle>
+    <indextitle>Mefisto</indextitle>
+    <firstline>Mefisto! Mefisto! er du død?</firstline>
+    <source pages="135-137"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Mefisto! Mefisto!
