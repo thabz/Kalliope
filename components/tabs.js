@@ -218,7 +218,9 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
       <div style={{ display: 'flex' }}>
         <div style={{ flexGrow: 1 }}>
           <form onSubmit={this.onSubmit}>
+            <label htmlFor="search-field-id" style={{display:'none'}}>Søg</label>
             <input
+              id="search-field-id"
               ref={domElement => {
                 if (domElement != null) {
                   this.searchField = domElement;
