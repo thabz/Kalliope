@@ -218,7 +218,9 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
       <div style={{ display: 'flex' }}>
         <div style={{ flexGrow: 1 }}>
           <form onSubmit={this.onSubmit}>
-            <label htmlFor="search-field-id" style={{display:'none'}}>Søg</label>
+            <label htmlFor="search-field-id" style={{ display: 'none' }}>
+              Søg
+            </label>
             <input
               id="search-field-id"
               ref={domElement => {
@@ -247,14 +249,20 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
     );
 
     const itemsRendered = items.filter(item => !item.hide).map((item, i) => {
-      const className = item.id === selected ? 'tab selected' : 'tab';
+      let className = 'tab';
+      let content = <h2>{item.title}</h2>;
+      if (item.id === selected) {
+        className += ' selected';
+      } else {
+        content = (
+          <Link route={item.url}>
+            <a>{content}</a>
+          </Link>
+        );
+      }
       return (
         <div className={className} key={item.url}>
-          <Link route={item.url}>
-            <a>
-              <h2>{item.title}</h2>
-            </a>
-          </Link>
+          {content}
         </div>
       );
     });
@@ -342,6 +350,11 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
           :global(.tabs) > :global(.tab.selected) {
             border-bottom: 2px solid black;
           }
+          /*
+          :global(.tabs) > :global(.tab:hover) {
+            border-bottom: 2px solid #888;
+          }
+          */
           :global(.tabs) :global(.tab.selected a) {
             color: black;
           }
