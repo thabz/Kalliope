@@ -12,6 +12,7 @@ import type {
 } from '../pages/helpers/types.js';
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
+import CommonData from '../pages/helpers/commondata.js';
 
 // Fiks bindestreger mellem årstal, sidetal osv.
 const replaceHyphens = s => {
@@ -23,12 +24,11 @@ type TextContentPropsType = {
   contentLang: TextLang,
   lang: Lang,
   options?: TextContentOptions,
-  style?: ?Object,
+  style?: Object,
   className?: ?string,
   keyPrefix?: string, // Ved bladring hopper linjenumrene hvis alle digtes linjer har samme key.
 };
-export default class TextContent extends React.Component {
-  props: TextContentPropsType;
+export default class TextContent extends React.Component<TextContentPropsType> {
   static defaultProps = {
     keyPrefix: 'linje-',
   };
@@ -192,7 +192,9 @@ export default class TextContent extends React.Component {
         );
       case 'biblio':
         return (
-          <span key={this.keySeq++} style={{ color: '#767676' }}>
+          <span
+            key={this.keySeq++}
+            style={{ color: CommonData.lightTextColor }}>
             [{this.handle_nodes(node.childNodes)}]
           </span>
         );
@@ -214,7 +216,7 @@ export default class TextContent extends React.Component {
             key={this.keySeq++}
             style={{
               display: 'inline',
-              color: '#767676',
+              color: CommonData.lightTextColor,
               pageBreakAfter: 'avoid', // Not working.
             }}>
             {this.handle_nodes(node.childNodes)}
@@ -442,7 +444,7 @@ export default class TextContent extends React.Component {
           :global(.poem-line::before),
           :global(.bible-line::before) {
             content: attr(data-num);
-            color: #888;
+            color: ${CommonData.lightTextColor};
             margin-right: 1em;
             width: 1.5em;
             font-size: 0.8em;

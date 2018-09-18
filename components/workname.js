@@ -43,7 +43,7 @@ export default class WorkName extends React.Component<WorkNameProps> {
           }
 
           :global(.workname) :global(.lighter) {
-            color: #767676 !important;
+            color: ${CommonData.lightTextColor} !important;
           }
 
           :global(a) :global(.workname) :global(.lighter) {

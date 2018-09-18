@@ -80,4 +80,5 @@ module.exports.countries = [
 
 module.exports.backgroundLinkColor = 'hsla(353, 20%, 85%, 1)';
 module.exports.lightLinkColor = '#9C686C';
+module.exports.lightTextColor = '#767676';
 module.exports.linkColor = 'hsla(353, 43%, 38%, 1)';
