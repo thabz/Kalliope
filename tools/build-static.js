@@ -27,6 +27,7 @@ const {
   replaceDashes,
   imageSizeSync,
   buildThumbnails,
+  resizeImage,
 } = require('./libs/helpers.js');
 
 let collected = {
@@ -416,6 +417,17 @@ const build_portraits_json = (poet, collected) => {
   return result;
 };
 
+const create_poet_square_thumb = (poetId, square_path) => {
+  const path = `static/images/${poetId}/${square_path}`;
+  const destFolder = `static/images/${poetId}/social`;
+  const destPath = `${destFolder}/${poetId}.jpg`;
+  if (isFileModified(path) || !fileExists(destPath)) {
+    safeMkdir(destFolder);
+    resizeImage(path, destPath, 600);
+  }
+  return `social/${poetId}.jpg`;
+};
+
 const build_bio_json = collected => {
   collected.poets.forEach((poet, poetId) => {
     // Skip if all of the participating xml files aren't modified
@@ -522,7 +534,7 @@ const build_poets_json = collected => {
         .map(p => safeGetAttr(p, 'square-src'))
         .filter(s => s != null);
       if (squares.length > 0) {
-        square_portrait = squares[0];
+        square_portrait = create_poet_square_thumb(id, squares[0]);
       }
     }
     const has_square_portrait = square_portrait != null;
@@ -738,7 +750,8 @@ const handle_text = (
 
   const keywords = head.get('keywords');
   const isBible = poetId === 'bibel';
-  const isFolkevise = poetId === 'folkeviser' || (poetId === 'tasso' && workId === '1581');
+  const isFolkevise =
+    poetId === 'folkeviser' || (poetId === 'tasso' && workId === '1581');
 
   let subtitles = null;
   const subtitle = head.get('subtitle');
