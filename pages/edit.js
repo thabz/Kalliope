@@ -26,6 +26,8 @@ import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
 import _ from '../pages/helpers/translations.js';
+import { Input, TextArea, Button } from '../components/inputs.js';
+
 import ErrorPage from './error.js';
 import type {
   Lang,
@@ -46,18 +48,31 @@ class Editor extends React.Component<EditorProps> {
   render() {
     const { xml } = this.props;
     return (
-      <div className="text-editor">
-        <textarea value={xml} />
+      <div className="text-editor-container">
+        <TextArea className="text-editor" value={xml} wrap="off" />
+        <div className="buttons-holder">
+          <Button>Fortryd</Button>
+          <Button>Indsend</Button>
+        </div>
         <style jsx>{`
-          .text-editor {
+          :global(.text-editor-container) :global(.buttons-holder) {
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+          }
+          :global(.text-editor-container) {
             height: 100%;
           }
-          .text-editor textarea {
+          :global(.text-editor) {
             width: 100%;
             border: 1px solid black;
             height: 100%;
             padding: 10px;
+            box-sizing: border-box;
             font-size: 14px;
+            white-space: pre;
+            overflow-wrap: normal;
+            overflow-x: scroll;
           }
         `}</style>
       </div>
@@ -81,7 +96,6 @@ export default class extends React.Component<EditComponentProps> {
   }) {
     const json = await Client.text(textId);
     const xml = await Client.textXml(textId);
-    console.log(xml);
 
     return {
       lang,
