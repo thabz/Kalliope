@@ -5,7 +5,7 @@ type InputProps = {
   value: string,
   style?: Object,
   className?: string,
-  onChange?: () => void,
+  onChange?: (e: SyntheticInputEvent<HTMLInputElement>) => void,
 };
 export class Input extends React.Component<InputProps> {
   defaultProps = {
@@ -34,6 +34,8 @@ export class Input extends React.Component<InputProps> {
 
 type TextAreaProps = {
   ...InputProps,
+  onChange?: (e: SyntheticInputEvent<HTMLTextAreaElement>) => void,
+  rows?: number,
   wrap?: 'hard' | 'soft' | 'off',
 };
 export class TextArea extends React.Component<TextAreaProps> {
@@ -42,14 +44,18 @@ export class TextArea extends React.Component<TextAreaProps> {
     onChange: () => {},
   };
   render() {
-    const { value, style, className, wrap, onChange } = this.props;
+    const { value, style, className, wrap, onChange, rows } = this.props;
     return (
       <textarea
         style={style}
+        rows={rows}
         className={className}
         value={value}
         wrap={wrap}
         onChange={onChange}
+        spellCheck={false}
+        autoComplete={false}
+        autoCapitalize={false}
       />
     );
   }
@@ -57,13 +63,14 @@ export class TextArea extends React.Component<TextAreaProps> {
 
 type ButtonProps = {
   children: React.Node,
+  onClick?: (e: SyntheticInputEvent<HTMLButtonElement>) => void,
 };
 export class Button extends React.Component<ButtonProps> {
   render() {
-    const { children } = this.props;
+    const { children, onClick } = this.props;
     return (
       <React.Fragment>
-        <button>{children}</button>
+        <button onClick={onClick}>{children}</button>
         <style jsx>{`
           button {
             color: white;

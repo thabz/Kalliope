@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Fragment } from 'react';
-import { Link } from '../routes';
+import { Link, Router } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
 import Nav, { NavPaging } from '../components/nav';
@@ -44,16 +44,34 @@ import type {
 type EditorProps = {
   xml: string,
 };
-class Editor extends React.Component<EditorProps> {
+type EditorState = {
+  xml: string,
+};
+class Editor extends React.Component<EditorProps, EditorState> {
+  onChange: (e: SyntheticInputEvent<HTMLTextAreaElement>) => void;
+
+  constructor(props) {
+    super(props);
+    this.state = { xml: props.xml };
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onChange(e) {
+    this.setState({ xml: e.target.value });
+  }
+
   render() {
-    const { xml } = this.props;
+    const { xml } = this.state;
+    const rows = xml.split(/\n/).length;
     return (
       <div className="text-editor-container">
-        <TextArea className="text-editor" value={xml} wrap="off" />
-        <div className="buttons-holder">
-          <Button>Fortryd</Button>
-          <Button>Indsend</Button>
-        </div>
+        <TextArea
+          className="text-editor"
+          value={xml}
+          wrap="off"
+          rows={rows}
+          onChange={this.onChange}
+        />
         <style jsx>{`
           :global(.text-editor-container) :global(.buttons-holder) {
             width: 100%;
@@ -61,12 +79,10 @@ class Editor extends React.Component<EditorProps> {
             display: flex;
           }
           :global(.text-editor-container) {
-            height: 100%;
           }
           :global(.text-editor) {
             width: 100%;
             border: 1px solid black;
-            height: 100%;
             padding: 10px;
             box-sizing: border-box;
             font-size: 14px;
@@ -89,6 +105,15 @@ type EditComponentProps = {
   error: ?Error,
 };
 export default class extends React.Component<EditComponentProps> {
+  onCancelClick: (e: SyntheticInputEvent<HTMLButtonElement>) => void;
+  onSubmitClick: (e: SyntheticInputEvent<HTMLButtonElement>) => void;
+
+  constructor(props: EditComponentProps) {
+    super(props);
+    this.onCancelClick = this.onCancelClick.bind(this);
+    this.onSubmitClick = this.onSubmitClick.bind(this);
+  }
+
   static async getInitialProps({
     query: { lang, textId, highlight },
   }: {
@@ -115,6 +140,13 @@ export default class extends React.Component<EditComponentProps> {
       }
     }
   }
+
+  onCancelClick() {
+    const { lang, text } = this.props;
+    Router.pushRoute(Links.textURL(lang, text.id));
+  }
+
+  onSubmitClick() {}
 
   render() {
     const { lang, poet, work, text, xml, error } = this.props;
@@ -220,7 +252,15 @@ export default class extends React.Component<EditComponentProps> {
                 <div>{textPictures}</div>
                 <div className="spacer" />
                 <div>
+                  <div className="buttons-holder">
+                    <Button>Fortryd</Button>
+                    <Button>Indsend</Button>
+                  </div>
                   <Editor xml={xml} />
+                  <div className="buttons-holder">
+                    <Button onClick={this.onCancelClick}>Fortryd</Button>
+                    <Button onSubmitClick={this.onSubmitClick}>Indsend</Button>
+                  </div>
                 </div>
               </div>
               <style jsx>{`
