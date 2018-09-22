@@ -10,6 +10,7 @@ import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
+import TextHeading from '../components/textheading.js';
 import TOC from '../components/toc.js';
 import PoetName, { poetNameString } from '../components/poetname.js';
 import { workTitleString } from '../components/workname.js';
@@ -71,62 +72,6 @@ class KeywordLink extends React.Component<KeywordLinkProps> {
           }
         `}</style>
       </Fragment>
-    );
-  }
-}
-
-type TextHeadingProps = { text: Text, lang: Lang, isProse: boolean };
-class TextHeading extends React.Component<TextHeadingProps> {
-  render() {
-    const { text, lang, isProse } = this.props;
-
-    let className = 'text-heading';
-    if (isProse) {
-      className += ' prose';
-    } else {
-      className += ' poem';
-    }
-
-    let subtitles = null;
-    if (text.subtitles != null) {
-      subtitles = text.subtitles.map((t, i) => {
-        return (
-          <h4 key={i} style={{ lineHeight: '1.6' }}>
-            <TextContent contentHtml={t} lang={lang} />
-          </h4>
-        );
-      });
-    }
-    return (
-      <div className={className}>
-        <h2>
-          <TextName text={text} />
-        </h2>
-        {subtitles}
-        <style jsx>{`
-          .text-heading :global(h2) {
-            line-height: 1.4em;
-            font-size: 1.4em;
-            font-weight: normal;
-            margin: 0 0 15px 0;
-            font-style: italic;
-            padding: 0;
-          }
-          .text-heading :global(h4) {
-            font-size: 1.05em;
-            line-height: 1.05em;
-            font-weight: normal;
-            margin: 0 0 0px 0;
-            padding: 0;
-          }
-          .text-heading {
-            margin-bottom: 60px;
-          }
-          .text-heading.poem {
-            margin-left: 1.5em;
-          }
-        `}</style>
-      </div>
     );
   }
 }
@@ -228,6 +173,7 @@ export default class extends React.Component<TextComponentProps> {
         <Note className="print-only" key="source" note={note} lang={lang} />
       );
     }
+
     let renderedNotes = null;
     if (notes.length > 0) {
       renderedNotes = <div style={{ marginBottom: '30px' }}>{notes}</div>;
@@ -336,6 +282,21 @@ export default class extends React.Component<TextComponentProps> {
       );
     }
 
+    let renderedContactLink = null;
+    if (text.source != null && text.source.facsimilePages != null) {
+      renderedContactLink = (
+        <div className="contact-link">
+          <p>
+            Fandt du en fejl i teksten, kan du hjælpe ved at{' '}
+            <Link to={Links.editURL(lang, text.id)}>
+              <a>indsende en rettelse</a>
+            </Link>
+            .
+          </p>
+        </div>
+      );
+    }
+
     let sidebar = null;
     if (
       refs.length > 0 ||
@@ -344,7 +305,8 @@ export default class extends React.Component<TextComponentProps> {
       text.pictures.length > 0 ||
       notes.length > 0 ||
       text.keywords.length > 0 ||
-      textPictures.length > 0
+      textPictures.length > 0 ||
+      renderedContactLink != null
     ) {
       sidebar = (
         <div>
@@ -354,6 +316,7 @@ export default class extends React.Component<TextComponentProps> {
           {renderedVariants}
           {renderedKeywords}
           {renderedPictures}
+          {renderedContactLink}
         </div>
       );
     }

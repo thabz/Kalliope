@@ -80,6 +80,10 @@ export const textURL = (lang: Lang = 'da', textId: string): URLString => {
   }
 };
 
+export const editURL = (lang: Lang = 'da', textId: string): URLString => {
+  return `/${lang}/edit/${textId}`;
+};
+
 export const bibleURL = (lang: Lang = 'da', bibleId: string): URLString => {
   const verses = bibleId.match(/,(.*)$/);
   if (verses != null) {

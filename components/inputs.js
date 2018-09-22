@@ -8,7 +8,7 @@ type InputProps = {
   onChange?: (e: SyntheticInputEvent<HTMLInputElement>) => void,
 };
 export class Input extends React.Component<InputProps> {
-  defaultProps = {
+  static defaultProps = {
     onChange: () => {},
   };
   render() {
@@ -39,7 +39,7 @@ type TextAreaProps = {
   wrap?: 'hard' | 'soft' | 'off',
 };
 export class TextArea extends React.Component<TextAreaProps> {
-  defaultProps = {
+  static defaultProps = {
     wrap: 'soft',
     onChange: () => {},
   };
@@ -53,9 +53,9 @@ export class TextArea extends React.Component<TextAreaProps> {
         value={value}
         wrap={wrap}
         onChange={onChange}
-        spellCheck={false}
-        autoComplete={false}
-        autoCapitalize={false}
+        spellCheck="false"
+        autoComplete="false"
+        autoCapitalize="false"
       />
     );
   }

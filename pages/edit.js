@@ -9,6 +9,7 @@ import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
+import TextHeading from '../components/textheading.js';
 import SubHeading from '../components/subheading.js';
 import TOC from '../components/toc.js';
 import PoetName, { poetNameString } from '../components/poetname.js';
@@ -52,7 +53,7 @@ class Editor extends React.Component<EditorProps, EditorState> {
 
   constructor(props) {
     super(props);
-    this.state = { xml: props.xml };
+    this.state = { xml: props.xml.trim() };
     this.onChange = this.onChange.bind(this);
   }
 
@@ -82,10 +83,12 @@ class Editor extends React.Component<EditorProps, EditorState> {
           }
           :global(.text-editor) {
             width: 100%;
+            font-family: 'Palatino', 'Georgia', serif;
             border: 1px solid black;
             padding: 10px;
             box-sizing: border-box;
-            font-size: 14px;
+            font-size: 1.15em;
+            line-height: 1.5;
             white-space: pre;
             overflow-wrap: normal;
             overflow-x: scroll;
@@ -143,7 +146,8 @@ export default class extends React.Component<EditComponentProps> {
 
   onCancelClick() {
     const { lang, text } = this.props;
-    Router.pushRoute(Links.textURL(lang, text.id));
+    const backURL = Links.textURL(lang, text.id);
+    Router.pushRoute(backURL);
   }
 
   onSubmitClick() {}
@@ -249,12 +253,13 @@ export default class extends React.Component<EditComponentProps> {
             <PoetTabs lang={lang} poet={poet} selected="works" />
             <article>
               <div className="middle-split">
-                <div>{textPictures}</div>
-                <div className="spacer" />
                 <div>
-                  <div className="buttons-holder">
-                    <Button>Fortryd</Button>
-                    <Button>Indsend</Button>
+                  <div className="text-content">
+                    <TextHeading
+                      text={text}
+                      lang={lang}
+                      isProse={text.is_prose}
+                    />
                   </div>
                   <Editor xml={xml} />
                   <div className="buttons-holder">
@@ -262,6 +267,8 @@ export default class extends React.Component<EditComponentProps> {
                     <Button onSubmitClick={this.onSubmitClick}>Indsend</Button>
                   </div>
                 </div>
+                <div className="spacer" />
+                <div>{textPictures}</div>
               </div>
               <style jsx>{`
                 :global(.middle-split) {
