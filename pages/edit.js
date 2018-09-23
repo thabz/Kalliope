@@ -53,11 +53,17 @@ class Editor extends React.Component<EditorProps, EditorState> {
 
   constructor(props) {
     super(props);
+    let editableText = props.xml.trim().replace(/^ */gm, m => {
+      return '\u2002'.repeat(m.length);
+    });
     this.state = { xml: props.xml.trim() };
     this.onChange = this.onChange.bind(this);
   }
 
   onChange(e) {
+    // let xml = e.target.value.replace(/^[ \u2002]*/gm, m => {
+    //   return '\u2002'.repeat(m.length);
+    // });
     this.setState({ xml: e.target.value });
   }
 
@@ -83,7 +89,7 @@ class Editor extends React.Component<EditorProps, EditorState> {
           }
           :global(.text-editor) {
             width: 100%;
-            font-family: 'Palatino', 'Georgia', serif;
+            font-family: monospace; /*'Palatino', 'Georgia', serif;*/
             border: 1px solid black;
             padding: 10px;
             box-sizing: border-box;
