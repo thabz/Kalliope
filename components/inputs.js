@@ -1,8 +1,42 @@
 // @flow
 import * as React from 'react';
 
+var genUniqueId = (function() {
+  var count = 0;
+  return function() {
+    return 'id' + count++;
+  };
+})();
+
+type LabelProps = {
+  children: React.Node,
+  htmlFor: string,
+};
+class Label extends React.Component<LabelProps> {
+  render() {
+    const { htmlFor, children } = this.props;
+    if (children == null) {
+      return null;
+    } else {
+      return (
+        <label htmlFor={htmlFor}>
+          {children}
+          <style jsx>{`
+            label {
+              width: 100%;
+              font-size: 0.8rem;
+              color: #757575;
+            }
+          `}</style>
+        </label>
+      );
+    }
+  }
+}
+
 type InputProps = {
   value: string,
+  label?: string,
   style?: Object,
   className?: string,
   onChange?: (e: SyntheticInputEvent<HTMLInputElement>) => void,
@@ -10,24 +44,35 @@ type InputProps = {
 export class Input extends React.Component<InputProps> {
   static defaultProps = {
     onChange: () => {},
+    className: '',
   };
   render() {
-    const { value, className, style, onChange } = this.props;
+    const { value, className, style, onChange, label } = this.props;
+    let finalClassName = 'text-input';
+    if (className != null) {
+      finalClassName += ' ' + className;
+    }
+
+    const htmlId = genUniqueId();
+
     return (
-      <React.Fragment>
+      <div style={style}>
+        <Label htmlFor={htmlId}>{label}</Label>
         <input
+          id={htmlId}
           value={value}
-          className={className}
+          className={finalClassName}
           style={style}
           onChange={onChange}
         />
         <style jsx>{`
-          .input {
+          input.text-input {
             width: 100%;
-            font-size: 14px;
+            font-size: 1.1em;
+            padding: 5px;
           }
         `}</style>
-      </React.Fragment>
+      </div>
     );
   }
 }
@@ -44,19 +89,25 @@ export class TextArea extends React.Component<TextAreaProps> {
     onChange: () => {},
   };
   render() {
-    const { value, style, className, wrap, onChange, rows } = this.props;
+    const { value, style, className, wrap, onChange, rows, label } = this.props;
+    const htmlId = genUniqueId();
+
     return (
-      <textarea
-        style={style}
-        rows={rows}
-        className={className}
-        value={value}
-        wrap={wrap}
-        onChange={onChange}
-        spellCheck="false"
-        autoComplete="false"
-        autoCapitalize="false"
-      />
+      <div>
+        <Label htmlFor={htmlId}>{label}</Label>
+        <textarea
+          id={htmlId}
+          style={style}
+          rows={rows}
+          className={className}
+          value={value}
+          wrap={wrap}
+          onChange={onChange}
+          spellCheck="false"
+          autoComplete="false"
+          autoCapitalize="false"
+        />
+      </div>
     );
   }
 }

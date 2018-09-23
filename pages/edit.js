@@ -99,6 +99,62 @@ class Editor extends React.Component<EditorProps, EditorState> {
   }
 }
 
+type EditoAuthorDetailsProps = {};
+type AuthorDetailsState = {
+  name: string,
+  email: string,
+};
+class AuthorDetails extends React.Component<
+  EditoAuthorDetailsProps,
+  AuthorDetailsState
+> {
+  onNameChange: (e: SyntheticInputEvent<HTMLInputElement>) => void;
+  onEmailChange: (e: SyntheticInputEvent<HTMLInputElement>) => void;
+
+  constructor(props) {
+    super(props);
+    // TODO: Copy into browser local storage
+    this.state = { name: '', email: '' };
+    this.onNameChange = this.onNameChange.bind(this);
+    this.onEmailChange = this.onEmailChange.bind(this);
+  }
+
+  onNameChange(e) {
+    this.setState({ name: e.target.value });
+  }
+
+  onEmailChange(e) {
+    // TODO: Copy into browser local storage
+    this.setState({ email: e.target.value });
+  }
+
+  render() {
+    const { name, email } = this.state;
+    return (
+      <div className="author-details-container">
+        <Input
+          value={name}
+          onChange={this.onNameChange}
+          label="Dit navn (valgfrit)"
+        />
+        <div style={{ width: '20px' }} />
+        <Input
+          value={email}
+          onChange={this.onEmailChange}
+          label="Din email-adresse (valgfrit)"
+        />
+        <style jsx>{`
+          :global(.author-details-container) {
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+          }
+        `}</style>
+      </div>
+    );
+  }
+}
+
 type EditComponentProps = {
   lang: Lang,
   poet: Poet,
@@ -253,7 +309,7 @@ export default class extends React.Component<EditComponentProps> {
             <PoetTabs lang={lang} poet={poet} selected="works" />
             <article>
               <div className="middle-split">
-                <div>
+                <div className="editing-controls">
                   <div className="text-content">
                     <TextHeading
                       text={text}
@@ -262,6 +318,7 @@ export default class extends React.Component<EditComponentProps> {
                     />
                   </div>
                   <Editor xml={xml} />
+                  <AuthorDetails />
                   <div className="buttons-holder">
                     <Button onClick={this.onCancelClick}>Fortryd</Button>
                     <Button onSubmitClick={this.onSubmitClick}>Indsend</Button>
@@ -271,6 +328,9 @@ export default class extends React.Component<EditComponentProps> {
                 <div>{textPictures}</div>
               </div>
               <style jsx>{`
+                :global(.editing-controls > *) {
+                  margin-bottom: 30px;
+                }
                 :global(.middle-split) {
                   display: flex;
                   width: 100%;
