@@ -675,7 +675,7 @@ Saa friskt, de blaae med de røde,
 Som var det malet ifjor —
 
 De Faner, den Kobberrustning,
-De Grave, som Klopstock besang,
+De Grave, som Klopstock<note><a poet="klopstock">F. G. Klopstock (1724-1803)</a>.</note> besang,
 Den Kirke, det Loft og de Taarne,
 Den hellige Kirkegaardsvang,
 
@@ -704,7 +704,7 @@ Fra Bistrup mit unge Sind,
 Thi hvad der ei var det saae jeg,
 Og for hvad der var blev jeg blind.
 
-E n Demosthenes, meente jeg, var jeg,
+En Demosthenes, meente jeg, var jeg,
 En vordende Mirabeau,
 Der eengang skulde forandre
 Verdens Vandel og Tro,
@@ -1981,10 +1981,7 @@ Men ingen Aand, som Evigheden aner!
 
 <poem id="bagger2017120425">
 <head>
-    <title>I. Prolog</title>
-    <toctitle><num>I.</num>Prolog</toctitle>
-    <indextitle>Prolog</indextitle>
-    <linktitle>Prolog</linktitle>
+    <title><num>I.</num>Prolog</title>
     <subtitle>(Fremsagt af Jfr. <w>Sønderskou</w>.)</subtitle>
     <firstline>Tænk Dem en Orlogsbrig paa Havet</firstline>
     <source pages="150-151"/>
@@ -2031,10 +2028,7 @@ Thi, ak! det Hele var jo lagt i — <w>Rollen</w>!''
 
 <poem id="bagger2017120426">
 <head>
-    <title>II. Prolog</title>
-    <toctitle><num>II.</num>Prolog</toctitle>
-    <indextitle>Prolog</indextitle>
-    <linktitle>Prolog</linktitle>
+    <title><num>II.</num>Prolog</title>
     <subtitle>(Fremsagt af Hr. <w>Printzlau</w>.)</subtitle>
     <firstline>Mange Stjerner sees paa Himlen staae</firstline>
     <source pages="150-151"/>
@@ -2083,10 +2077,7 @@ Jeg har <w>Joseph</w> kjær trods ældre Brødre!''
 
 <poem id="bagger2017120427">
 <head>
-    <title>III. Afskedsepilog</title>
-    <toctitle><num>III.</num>Afskedsepilog</toctitle>
-    <indextitle>Afskedsepilog</indextitle>
-    <linktitle>Afskedsepilog</linktitle>
+    <title><num>III.</num>Afskedsepilog</title>
     <subtitle>(Fremsagt af Hr. <w>Lange</w>.)</subtitle>
     <firstline>Det er nu en Vane, det er nu en Skik</firstline>
     <source pages="154-155"/>
@@ -2144,10 +2135,7 @@ Gid den maatte os <w>her</w> gjenfinde!''
 
 <poem id="bagger2017120428">
 <head>
-    <title>IV. Prolog</title>
-    <toctitle><num>IV.</num>Prolog</toctitle>
-    <indextitle>Prolog</indextitle>
-    <linktitle>Prolog</linktitle>
+    <title><num>IV.</num>Prolog</title>
     <subtitle>(Fremsagt af Madame <w>Werligh</w>.)</subtitle>
     <firstline>Hvor hurtigt flyver ikke Tiden!</firstline>
     <source pages="156-158"/>
@@ -2219,9 +2207,7 @@ Derfor bedøm med Strænghed ei vort Spil!
 
 <poem id="bagger2017120429">
 <head>
-    <title>V. Epilog</title>
-    <toctitle><num>V.</num>Epilog</toctitle>
-    <indextitle>Epilog</indextitle>
+    <title><num>V.</num>Epilog</title>
     <subtitle>(Fremsagt af Mad. <w>Werligh</w>.)</subtitle>
     <firstline>O! der er smukt her i det fyenske Land</firstline>
     <source pages="159-160"/>
@@ -2663,6 +2649,9 @@ Jeg hader Dig, o Menneske!
     <notes>
         <note>* Forf. modtog i 1838 af en Stænderdeputeret en Opfordring til at skrive en Sang i Anledning af at de Deputerede i Roeskilde vilde feire <w>Ørsteds</w> Fødselsdag den 21 December.  <i>Aura populanis!</i> Man sammenligne Stemningen 1838 og 1845! (Sangen blev forresten aldrig afsjunget.)</note>
     </notes>
+   <pictures>
+       <picture ref="eckersberg/as-oersted-1821" />
+   </pictures>
     <source pages="177-178"/>
     <quality>korrektur1,kilde,side</quality>
 </head>

@@ -30,8 +30,7 @@
 
 <poem id="plough2018031401">
 <head>
-    <title>Aarene skride, Ungdomskraften svinder</title>
-    <toctitle><num>1.</num>Aarene skride, Ungdomskraften svinder</toctitle>
+    <title><num>1.</num>Aarene skride, Ungdomskraften svinder</title>
     <firstline>Aarene skride, Ungdomskraften svinder</firstline>
     <source pages="3-4"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -77,8 +76,7 @@ Engang den drager sammen Land og Hav,
 
 <poem id="plough2018031402">
 <head>
-    <title>Hel ofte Haabets Hymner klang</title>
-    <toctitle><num>2.</num>Hel ofte Haabets Hymner klang</toctitle>
+    <title><num>2.</num>Hel ofte Haabets Hymner klang</title>
     <firstline>Hel ofte Haabets Hymner klang</firstline>
     <source pages="5-6"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -133,8 +131,7 @@ Vi Nordens Enhed bygge.
 
 <poem id="plough2018031403">
 <head>
-    <title>Lad Fanen brede ud sin Dug</title>
-    <toctitle><num>3.</num>Lad Fanen brede ud sin Dug</toctitle>
+    <title><num>3.</num>Lad Fanen brede ud sin Dug</title>
     <firstline>Lad Fanen brede ud sin Dug</firstline>
     <source pages="7-8"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -184,8 +181,7 @@ Trods alle Mørkets Magter.
 
 <poem id="plough2018031404">
 <head>
-    <title>Lad Syden iklæde sig Farvernes Glands</title>
-    <toctitle><num>4.</num>Lad Syden iklæde sig Farvernes Glands</toctitle>
+    <title><num>4.</num>Lad Syden iklæde sig Farvernes Glands</title>
     <firstline>Lad Syden iklæde sig Farvernes Glands</firstline>
     <source pages="8-9"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1314,6 +1310,15 @@ At han syngende i Døden gaaer!
     <title>Ved ,,Landsoldatens'' Afdækning</title>
     <firstline>Det var i Nattens mørke Time</firstline>
     <source pages="46-49"/>
+    <notes>
+        <note>H.W. Bissens statue <i>Den danske Landsoldat</i> blev afsløret 6/7 1858 på pladsen ved Prinsens Port i Fredericia. Plougs sange blev afsunget i den anledning.<!-- http://www.fredericiashistorie.dk/html/fredericia/artikler/Landsoldaten.html --></note>
+    </notes>
+    <pictures>
+        <picture ref="bissen/landsoldat-1850" />
+    </pictures>
+    <dates>
+        <event>1858-07-06</event>
+    </dates>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2921,7 +2926,7 @@ Høilovet Hans Navn skal være!''
         <note type="credits">Indtastet af Sven Sørensen.</note>
     </notes>
     <pictures>
-       <picture src="plough2002121901-p1.jpg" museum="smk" invnr="KMS8660">Carl Løffler: <i>Skuespilleren Anna Nielsen</i>, ca. 1835. Statens Museum for Kunst.</picture>
+       <picture src="plough2002121901-p1.jpg" museum="smk" invnr="KMS8660" year="1835">Carl Løffler: <i>Skuespilleren Anna Nielsen</i>, ca. 1835. Statens Museum for Kunst.</picture>
     </pictures>
     <source pages="102-103"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>

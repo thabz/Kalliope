@@ -1,5 +1,7 @@
 // @flow
 
+import type { Node } from 'react';
+
 export type DateWithPlace = {
   date: string, // Kan være '?'
   place: ?string,
@@ -11,6 +13,8 @@ export type Country = 'dk' | 'gb' | 'de' | 'fr' | 'se' | 'no' | 'it' | 'us';
 
 export type PoetId = string;
 export type WorkId = string;
+export type TextId = string;
+export type MuseumId = string;
 
 export type Error = { statusCode: number };
 
@@ -47,6 +51,7 @@ export type Poet = {
     dead?: DateWithPlace,
     coronation?: DateWithPlace,
   },
+  has_artwork: boolean,
   has_bibliography: boolean,
   has_biography: boolean,
   has_mentions: boolean,
@@ -58,11 +63,17 @@ export type Poet = {
   has_square_portrait: boolean,
 };
 
+export type Museum = {
+  id: MuseumId,
+  name: string,
+};
+
 export type Work = {
   id: WorkId,
   title: string,
   year?: string,
   has_content: boolean,
+  status: 'complete' | 'incomplete',
 };
 
 export type SortReturn = number; //1 | 0 | -1;
@@ -77,6 +88,8 @@ export type PrevNextText = {
   title: string,
 };
 
+export type LinesType = 'first' | 'titles';
+
 export type LinesPair = {
   id: string,
   title: string,
@@ -90,7 +103,7 @@ export type LinesPair = {
 export type SectionForRendering = Section<{
   id: string,
   url: string,
-  html: any,
+  html: Node,
 }>;
 
 export type KeywordRef = {
@@ -119,6 +132,7 @@ export type PictureItem = {
   content_lang?: TextLang,
   content_html?: TextContentType,
   primary?: boolean,
+  size: ?{ width: number, height: number },
   src: string,
 };
 
@@ -133,10 +147,14 @@ export type TextSource = {
 export type Text = {
   id: string,
   title: string,
+  title_prefix?: string,
   linktitle: string,
+  text_type: 'prose' | 'poem' | 'section',
+  toc?: Array<TocItem>,
   subtitles?: Array<TextContentType>,
   notes: Array<NoteItem>,
   refs: Array<TextContentType>,
+  variants: Array<TextContentType>,
   pictures: Array<PictureItem>,
   content_html: TextContentType,
   content_lang: TextLang,

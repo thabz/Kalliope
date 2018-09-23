@@ -98,6 +98,8 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   onCrossClick: (e: Event) => void;
   onSubmit: (e: Event) => void;
   onKeyDown: (e: KeyboardEvent) => void;
+  onFocus: () => void;
+  onBlur: () => void;
 
   constructor(props: TabsProps) {
     super(props);
@@ -107,12 +109,14 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
     this.onCrossClick = this.onCrossClick.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     this.onKeyDown = this.onKeyDown.bind(this);
+    this.onBlur = this.onBlur.bind(this);
+    this.onFocus = this.onFocus.bind(this);
   }
 
   hideSearchField() {
     this.searchField.value = '';
     if (window) {
-      window.removeEventListener('keydown', this.onKeyDown);
+      window.removeEventListener('keydown', this.onKeyDown, false);
     }
     this.setState({ showSearchField: false });
   }
@@ -120,7 +124,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   componentDidUpdate() {
     if (this.state.showSearchField) {
       if (window) {
-        window.addEventListener('keydown', this.onKeyDown);
+        window.addEventListener('keydown', this.onKeyDown, false);
       }
       if (document && document.activeElement !== this.searchField) {
         this.searchField.focus();
@@ -169,9 +173,18 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
     e.preventDefault();
   }
 
+  onFocus() {
+    window && (window.searchFieldHasFocus = true);
+  }
+
+  onBlur() {
+    window && (window.searchFieldHasFocus = false);
+  }
+
   onKeyDown(e: KeyboardEvent) {
     if (e.keyCode === 27) {
       this.hideSearchField();
+      this.onBlur();
       e.preventDefault();
     }
   }
@@ -205,10 +218,19 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
       <div style={{ display: 'flex' }}>
         <div style={{ flexGrow: 1 }}>
           <form onSubmit={this.onSubmit}>
+            <label htmlFor="search-field-id" style={{ display: 'none' }}>
+              Søg
+            </label>
             <input
+              id="search-field-id"
               ref={domElement => {
-                this.searchField = domElement;
+                if (domElement != null) {
+                  this.searchField = domElement;
+                }
               }}
+              onFocus={this.onFocus}
+              onBlur={this.onBlur}
+              title={placeholder}
               defaultValue={query}
               className="search-field"
               placeholder={placeholder}
@@ -227,14 +249,20 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
     );
 
     const itemsRendered = items.filter(item => !item.hide).map((item, i) => {
-      const className = item.id === selected ? 'tab selected' : 'tab';
+      let className = 'tab';
+      let content = <h2>{item.title}</h2>;
+      if (item.id === selected) {
+        className += ' selected';
+      } else {
+        content = (
+          <Link route={item.url}>
+            <a>{content}</a>
+          </Link>
+        );
+      }
       return (
         <div className={className} key={item.url}>
-          <Link route={item.url}>
-            <a>
-              <h2>{item.title}</h2>
-            </a>
-          </Link>
+          {content}
         </div>
       );
     });
@@ -322,6 +350,11 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
           :global(.tabs) > :global(.tab.selected) {
             border-bottom: 2px solid black;
           }
+          /*
+          :global(.tabs) > :global(.tab:hover) {
+            border-bottom: 2px solid #888;
+          }
+          */
           :global(.tabs) :global(.tab.selected a) {
             color: black;
           }
@@ -456,7 +489,7 @@ export class PoetTabs extends React.Component<PoetTabsProps> {
       {
         id: 'works',
         title: _('Værker', lang),
-        hide: !poet.has_works,
+        hide: !poet.has_works && !poet.has_artwork,
         url: Links.worksURL(lang, poet.id),
       },
       {
@@ -501,7 +534,14 @@ type KalliopeTabsProps = {
   lang: Lang,
   country?: Country,
   query?: ?string,
-  selected: 'index' | 'poets' | 'keywords' | 'dictionary' | 'about' | 'search',
+  selected:
+    | 'index'
+    | 'poets'
+    | 'keywords'
+    | 'dictionary'
+    | 'about'
+    | 'search'
+    | 'museum',
 };
 export class KalliopeTabs extends React.Component<KalliopeTabsProps> {
   render() {
@@ -513,6 +553,13 @@ export class KalliopeTabs extends React.Component<KalliopeTabsProps> {
         title: _('Digtere', lang),
         url: Links.poetsURL(lang, 'name'),
       },
+      /*
+      {
+        id: 'poems',
+        title: _('Digte', lang),
+        url: Links.allTextsURL(lang, 'dk', 'titles', 'A'),
+      },
+      */
       {
         id: 'keywords',
         title: _('Nøgleord', lang),

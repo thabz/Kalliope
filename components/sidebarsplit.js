@@ -1,10 +1,11 @@
 // @flow
 
 import React from 'react';
+import type { Node } from 'react';
 
 type SidebarSplitProps = {
-  sidebar: React$Element<*> | string | Array<React$Element<*>> | null,
-  children?: *,
+  sidebar: Node | Array<Node> | null,
+  children?: Node,
   sidebarOnTopWhenSplit?: boolean,
 };
 export default class SidebarSplit extends React.Component<SidebarSplitProps> {

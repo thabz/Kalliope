@@ -67,6 +67,14 @@ const redirects = [
   },
   {
     from: /\/(..)\/vaerktoc.pl/,
+    to: '/$1/work/${fhandle}/${vhandle}',
+  },
+  {
+    from: /\/vaerktoc.pl/,
+    to: '/da/work/${fhandle}/${vhandle}',
+  },
+  {
+    from: /\/(..)\/vaerktoc.pl/,
     to: '/$1/work/${vid}',
   },
   {
@@ -117,7 +125,7 @@ const redirects = [
   },
 ];
 
-const cleanUpRedirectURLRegExp = /[^0-9a-zA-Z\-_\/]/;
+const cleanUpRedirectURLRegExp = /[^0-9a-zA-Z\-_\/]/g;
 
 app.prepare().then(() => {
   createServer((req, res) => {
@@ -126,6 +134,7 @@ app.prepare().then(() => {
     if (rootStaticFiles.indexOf(pathname) > -1) {
       const path = join(__dirname, 'static', pathname);
       app.serveStatic(req, res, path);
+      return;
     } else if (
       pathname.indexOf('.cgi') > -1 ||
       pathname.indexOf('.pl') > -1 ||
@@ -136,17 +145,22 @@ app.prepare().then(() => {
       redirects.forEach(descr => {
         const m = descr.from.exec(pathname);
         if (!done && m != null) {
+          let missingParams = false;
           const to = descr.to
             .replace('$1', m[1])
             .replace('$2', m[2])
-            .replace(/\${(.*)}/g, (m, p1) => {
+            .replace(/\${(.*?)}/g, (m, p1) => {
+              if (query[p1] == null) {
+                missingParams = true;
+              }
               return query[p1];
             })
             .replace(cleanUpRedirectURLRegExp, '');
-          //console.log('Redirecting to', to, query);
-          res.writeHead(301, { Location: to });
-          res.end();
-          done = true;
+          if (!missingParams) {
+            res.writeHead(301, { Location: to });
+            res.end();
+            done = true;
+          }
         }
       });
       if (done) {

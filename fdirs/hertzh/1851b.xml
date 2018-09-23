@@ -804,8 +804,8 @@ For hun er saa ung og saa yndig seer hun ud.''
     <firstline>Den svæver gjennem Rummet</firstline>
     <source pages="31-36"/>
     <pictures>
-        <picture src="hertz2018021916-p1.jpg" invnr="A901" museum="thorvaldsens">Bertel Thorvaldsen: <i>Natten</i>, 1815, marmor, ⌀ 80,5 cm. Thorvaldsens Museum.</picture><!-- A901 -->
-        <picture src="hertz2018021916-p2.jpg" invnr="A902" museum="thorvaldsens">Bertel Thorvaldsen: <i>Dagen</i>, 1815, marmor, ⌀ 80 cm. Thorvaldsens Museum.</picture><!-- A902 -->
+        <picture ref="thorvaldsen/1815-natten" />
+        <picture ref="thorvaldsen/1815-dagen" />
     </pictures>
     <quality>korrektur1,kilde,side</quality>
     <keywords>thorvaldsen</keywords>
@@ -883,7 +883,6 @@ Allerede vandrer Natten
 Med blegere Gestalt.
 En Lysning, en Klarhed
 I Øst sig viser alt.
-
 Det er Morgenrødens Guddom,
 Der op af Havet dukker,
 Og med et Slag af Vingen
@@ -911,7 +910,6 @@ Han løser sig fra Skuldren;
 Nu iler han forud -
 Og overalt hans Fakkel
 Bebuder Dagens Gud.
-
 Fra Horizontens Strimer
 Er Purpursømmen dragen,
 Og Morgenrødens Billed
@@ -939,7 +937,6 @@ Med sagte Greb i Strengen,
 Og med en dæmpet Klang,
 Hun fulgte Morgenrødens,
 Hun fulgte Nattens Gang.
-
 Ak han, der disse Billeder
 Har skabt, er Dødens Bytte,
 Og vi maae selv fortolke
@@ -2411,6 +2408,9 @@ Vi seile og vi roe! :,:
     <toctitle><num>III.</num>Ligevægten</toctitle>
     <firstline>Vi sidde sammen som vi kan bedst</firstline>
     <source pages="98-101"/>
+    <notes>
+        <note>Digtets melodi, metrik og refræn baserer sig på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5976,7 +5976,7 @@ Der mit imøde banker.
     <firstline>Min yndige, min unge Hustru, tag</firstline>
     <source pages="256-257"/>
     <pictures>
-        <picture src="hertz2018021977-p1.jpg" invnr="A33" museum="thorvaldsens">Bertel Thorvaldsen: <i>Amor med Lyren</i>, 1836, marmor, 58,6 cm. Thorvaldsens Museum.</picture>
+        <picture ref="thorvaldsen/1836-amor-med-lyren" />
     </pictures>
     <keywords>thorvaldsen</keywords>
     <quality>korrektur1,kilde,side</quality>

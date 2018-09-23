@@ -25,7 +25,7 @@ export default class Heading extends React.Component<HeadingProps> {
             transition: font-size 0.2s;
           }
           .heading :global(h1):global(.lighter) {
-            color: #999;
+            color: #757575;
           }
 
           @media (max-width: 850px) {

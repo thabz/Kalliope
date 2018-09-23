@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
-      Wilhelm Marstrand: <i>Portræt af Just Mathias Thiele</i>, ukendt år, olie på lærred, 87,3x70,5 cm. Thorvaldsens Museum. <!-- Inv. nr. B421 -->
-  </picture>
+    <picture ref="marstrand/thiele" primary="true" square-src="p1-square.jpg" />
+    <picture ref="lund/1832-thiele" />
 </pictures>

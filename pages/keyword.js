@@ -99,7 +99,7 @@ export default class extends React.Component<KeywordComponentProps> {
 
     return (
       <div>
-        <FootnoteContainer>
+        <FootnoteContainer key={keyword.id}>
           <Head
             headTitle={headTitle}
             ogTitle={ogTitle}

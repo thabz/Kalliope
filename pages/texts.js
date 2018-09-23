@@ -22,10 +22,10 @@ import type {
   Poet,
   Work,
   SectionForRendering,
+  LinesType,
 } from './helpers/types.js';
 import 'isomorphic-fetch';
 
-type LinesType = 'first' | 'titles';
 type TextsProps = {
   lang: Lang,
   poet: Poet,
@@ -64,6 +64,9 @@ export default class Texts extends React.Component<TextsProps> {
       }
       if (line.startsWith('Ö')) {
         letter = 'Ø';
+      }
+      if (line.startsWith('È')) {
+        letter = 'E';
       }
       letter = letter.toUpperCase();
       let array = groups.get(letter) || [];
