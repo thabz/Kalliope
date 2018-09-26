@@ -221,7 +221,7 @@ export default class extends React.Component<SearchProps> {
                   font-size: 1.15em;
                 }
                 .hightlights {
-                  color: #888;
+                  color: ${CommonData.lightTextColor};
                   font-weight: lighter;
                 }
                 .poet-and-work {

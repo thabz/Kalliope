@@ -336,27 +336,34 @@ const imageSizeAsync = (filename, callback) => {
 
 const imageSizeSync = deasync(imageSizeAsync);
 
-const buildThumbnails = (topFolder, isFileModified) => {
-  let resizeImageQueue = async.queue((task, callback) => {
-    sharp(task.inputfile)
-      .resize(task.maxWidth, 10000)
-      .max()
-      .withoutEnlargement()
-      .toFile(task.outputfile, function(err) {
-        if (err != null) {
-          console.log(err);
-        }
-        console.log(task.outputfile);
-        callback();
-      });
-  }, 2);
+let resizeImageQueue = async.queue((task, callback) => {
+  sharp(task.inputfile)
+    .resize(task.maxWidth, 10000)
+    .max()
+    .withoutEnlargement()
+    .toFile(task.outputfile, function(err) {
+      if (err != null) {
+        console.log(err);
+      }
+      console.log(task.outputfile);
+      callback();
+    });
+}, 2);
 
+const resizeImage = (inputfile, outputfile, maxWidth) => {
+  resizeImageQueue.push({ inputfile, outputfile, maxWidth });
+};
+
+const buildThumbnails = (topFolder, isFileModified) => {
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
 
   const handleDirRecursive = dirname => {
     if (!fs.existsSync(dirname)) {
       console.log(`${dirname} mangler, så genererer ingen thumbs deri.`);
+      return;
+    }
+    if (dirname.match(/\/social$/)) {
       return;
     }
     fs.readdirSync(dirname).forEach(filename => {
@@ -379,11 +386,7 @@ const buildThumbnails = (topFolder, isFileModified) => {
               (isFileModified != null && isFileModified(fullFilename)) ||
               !fileExists(outputfile)
             ) {
-              resizeImageQueue.push({
-                inputfile: fullFilename,
-                outputfile,
-                maxWith: width,
-              });
+              resizeImage(fullFilename, outputfile, width);
             }
           });
         });
@@ -410,4 +413,5 @@ module.exports = {
   replaceDashes,
   imageSizeSync,
   buildThumbnails,
+  resizeImage,
 };
