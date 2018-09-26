@@ -27,6 +27,7 @@ const {
   replaceDashes,
   imageSizeSync,
   buildThumbnails,
+  resizeImage,
 } = require('./libs/helpers.js');
 
 let collected = {
@@ -357,9 +358,17 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
     const artist = collected.poets.get(artwork.artistId);
     const museumId = safeGetAttr(picture, 'museum');
     const remoteUrl = build_museum_url(picture);
-    const description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
+    let description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
       artwork.content_raw
     }`;
+    const extraDescription = picture
+      .toString()
+      .replace(/<picture[^>]*?>/, '')
+      .replace('</picture>', '')
+      .trim();
+    if (extraDescription.length > 0) {
+      description = extraDescription + '\n\n' + description;
+    }
     return {
       artist,
       lang: artwork.lang,
@@ -406,6 +415,17 @@ const build_portraits_json = (poet, collected) => {
     }
   }
   return result;
+};
+
+const create_poet_square_thumb = (poetId, square_path) => {
+  const path = `static/images/${poetId}/${square_path}`;
+  const destFolder = `static/images/${poetId}/social`;
+  const destPath = `${destFolder}/${poetId}.jpg`;
+  if (isFileModified(path) || !fileExists(destPath)) {
+    safeMkdir(destFolder);
+    resizeImage(path, destPath, 600);
+  }
+  return `social/${poetId}.jpg`;
 };
 
 const build_bio_json = collected => {
@@ -514,7 +534,7 @@ const build_poets_json = collected => {
         .map(p => safeGetAttr(p, 'square-src'))
         .filter(s => s != null);
       if (squares.length > 0) {
-        square_portrait = squares[0];
+        square_portrait = create_poet_square_thumb(id, squares[0]);
       }
     }
     const has_square_portrait = square_portrait != null;
@@ -730,7 +750,8 @@ const handle_text = (
 
   const keywords = head.get('keywords');
   const isBible = poetId === 'bibel';
-  const isFolkevise = poetId === 'folkeviser';
+  const isFolkevise =
+    poetId === 'folkeviser' || (poetId === 'tasso' && workId === '1581');
 
   let subtitles = null;
   const subtitle = head.get('subtitle');

@@ -112,7 +112,12 @@ def printPoem()
       abort "FEJL: Digtet »#{@title}« mangler førstelinje"
   end
   poemid = @poemid || "#{@poetid}#{@date}#{'%02d' % @poemcount}"
-  puts "<#{@type} id=\"#{poemid}\">"
+  variant = ''
+  if @variant
+      variant = " variant=\"#{@variant}\""
+  end
+
+  puts "<#{@type} id=\"#{poemid}\"#{variant}>"
   puts "<head>"
   puts "    <title>#{@title}</title>"
   if @toctitle
@@ -164,9 +169,6 @@ def printPoem()
       puts "        <event>#{@event}</event>"
     end
     puts "    </dates>"
-  end
-  if @variant
-    puts "    <variant>#{@variant}</variant>"
   end
   if @keywords
     puts "    <keywords>#{@keywords}</keywords>"

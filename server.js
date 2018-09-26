@@ -134,6 +134,7 @@ app.prepare().then(() => {
     if (rootStaticFiles.indexOf(pathname) > -1) {
       const path = join(__dirname, 'static', pathname);
       app.serveStatic(req, res, path);
+      return;
     } else if (
       pathname.indexOf('.cgi') > -1 ||
       pathname.indexOf('.pl') > -1 ||

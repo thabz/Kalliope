@@ -2,43 +2,29 @@
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1889" author="bang" status="complete" type="poetry">
 <workhead>
-   <title>Digte</title>
-   <year>1889</year>
-   <notes>
-      <note> Alle sidehenvisninger er til førsteudgaven af Bangs eneste digtsamling <i>Digte</i>, som udkom i 1889 på J.H. Schubothes Boghandel.</note>
-   </notes>
-   <pictures>
-      <picture src="1889-p1.jpg"></picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+    <title>Digte</title>
+    <year>1889</year>
+    <notes>
+      <note>Teksten følger førsteudgaven af Bangs eneste digtsamling <i>Digte</i>, som udkom i 1889 på J.H. Schubothes Boghandel.</note>
+      <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+      <note>Titelbladet efterfølges af mottoet ,,Og de talte om disse to: Kærligheden og Døden.''</note>
+    </notes>
+    <pictures>
+        <picture type="titlepage" src="1889-p1.jpg">Titelbladet til <i>Digte</i> (1889) lyder ,,Digte. / af / Herman Bang. // København. / Forlagt af J. H. Schubothes Boghandel. / Trykt hos Nielsen &amp; Lydiche. / 1889.''</picture>
+    </pictures>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <source facsimile="130023297850_color" facsimile-pages-num="138" facsimile-pages-offset="10">Herman Bang: <i>Digte</i>, J.H. Schubothes Boghandel, Kbh., 1889.</source>
 </workhead>
 <workbody>
 
-<prose id="bang2002090701">
-<head>
-   <title>[Motto]</title>
-   <indextitle>Motto</indextitle>
-   <notes>
-      <note>s. 1.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-,,Og de talte om disse to: Kærligheden og Døden.''
-</body>
-</prose>
-
 <poem id="bang2001082206">
 <head>
-   <title>Nyaar 1887</title>
-   <toctitle>Nyaar 1887</toctitle>
-   <indextitle>Nyaar 1887</indextitle>
-   <firstline>Aar - du Hersker, som kommer tyst</firstline>
-   <notes>
-      <note>Side 3-7.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Nyaar 1887</title>
+    <toctitle>Nyaar 1887</toctitle>
+    <indextitle>Nyaar 1887</indextitle>
+    <firstline>Aar - du Hersker, som kommer tyst</firstline>
+    <source pages="3-7"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Aar - du Hersker, som kommer tyst,
@@ -127,20 +113,23 @@ tavs bliver din Nat.
 
 <section level="1">
 <head>
-   <toctitle>Kærlighed</toctitle>
+    <toctitle>Kærlighed</toctitle>
 </head>
 <content>
 
+<section level="3" id="bang2018091703">
+<head>
+    <title>Kærligheds Guder</title>
+</head>
+<content>
+
+
 <poem id="bang2001082901">
 <head>
-   <title>Kærligheds Guder I</title>
-   <toctitle>Kærligheds Guder I</toctitle>
-   <indextitle>Kærligheds Guder I</indextitle>
-   <firstline>Amor</firstline>
-   <notes>
-      <note>S. 11-13.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title><num>I.</num>Amor - glade Dreng med dit velforsynede Kogger</title>
+    <firstline>Amor - glade Dreng med dit velforsynede Kogger</firstline>
+    <source pages="11-13"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Amor -
@@ -171,14 +160,10 @@ skænked medlidende du.
 
 <poem id="bang2001082902">
 <head>
-   <title>Kærligheds Guder II</title>
-   <toctitle>Kærligheds Guder II</toctitle>
-   <indextitle>Kærligheds Guder II</indextitle>
-   <firstline>Venus</firstline>
-   <notes>
-      <note>S. 14-16.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title><num>II.</num>Venus - Skamløse Kvind</title>
+    <firstline>Venus - Skamløse Kvind</firstline>
+    <source pages="14-16"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Venus -
@@ -224,14 +209,10 @@ paa Tronen, Menneskets Drift.
 
 <poem id="bang2001082903">
 <head>
-   <title>Kærligheds Guder III</title>
-   <toctitle>Kærligheds Guder III</toctitle>
-   <indextitle>Kærligheds Guder III</indextitle>
-   <firstline>Men Eros</firstline>
-   <notes>
-      <note>S. 17-19.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title><num>III.</num>Men Eros - du Hersker og Gud</title>
+    <firstline>Men Eros - du Hersker og Gud</firstline>
+    <source pages="17-19"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Men Eros -
@@ -273,17 +254,26 @@ foran to saliges Dør.
 </body>
 </poem>
 
+</content>
+</section> <!-- Kærligheds Guder -->
+
+<section level="3" id="bang2018091704">
+<head>
+    <title>Kærlighed - Aagrerske du er</title>
+</head>
+
+<content>
 <poem id="bang2001090901">
 <head>
-   <title>Kærlighed - Aagrerske du er, I</title>
-   <toctitle>Kærlighed - Aagrerske du er, I</toctitle>
-   <indextitle>Kærlighed - Aagrerske du er, I</indextitle>
-   <firstline>Kærlighed, Aagrerske du er</firstline>
-   <notes>
+    <title><num>I.</num>Kærlighed - Aagrerske du er</title>
+    <indextitle>Kærlighed - Aagrerske du er, I</indextitle>
+    <linktitle>Kærlighed - Aagrerske du er, I</linktitle>
+    <firstline>Kærlighed, Aagrerske du er</firstline>
+    <notes>
       <note><i>Schylock</i> er den hævngerrige jødiske ågerkarl i Shakespeares <i>The Merchant of Venice</i> (på dansk: Købmanden i Venedig) som forlanger "Et Skaalpund Kød" (a pound of flesh) fra skyldneres egen krop som erstatning for et lån der ikke blev betalt til tiden. Portia er en anden aktør i samme stykke.</note>
-      <note>S. 20-22.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    </notes>
+    <source pages="20-22"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Kærlighed, Aagrerske du er,
@@ -324,14 +314,12 @@ der raader for Død eller Liv.
 
 <poem id="bang2001090902">
 <head>
-   <title>Kærlighed - Aagrerske du er, II</title>
-   <toctitle>Kærlighed - Aagrerske du er, II</toctitle>
-   <indextitle>Kærlighed - Aagrerske du er, II</indextitle>
-   <firstline>Kærlighed</firstline>
-   <notes>
-      <note>S. 23-25.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title><num>II.</num>Kærlighed - Aagrerske du er</title>
+    <indextitle>Kærlighed - Aagrerske du er, II</indextitle>
+    <linktitle>Kærlighed - Aagrerske du er, II</linktitle>
+    <firstline>Kærlighed, Aagrerske du er</firstline>
+    <source pages="23-25"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Kærlighed -
@@ -383,14 +371,12 @@ og Elskov Ligegyldighed.
 
 <poem id="bang2001090903">
 <head>
-   <title>Kærlighed - Aagrerske du er, III</title>
-   <toctitle>Kærlighed - Aagrerske du er, III</toctitle>
-   <indextitle>Kærlighed - Aagrerske du er, III</indextitle>
-   <firstline>Kærlighed</firstline>
-   <notes>
-      <note>S. 26-28.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title><num>III.</num>Kærlighed - Aagrerske du er</title>
+    <indextitle>Kærlighed - Aagrerske du er, III</indextitle>
+    <linktitle>Kærlighed - Aagrerske du er, III</linktitle>
+    <firstline>Kærlighed, Aagrerske du er</firstline>
+    <source pages="26-28"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Kærlighed -
@@ -438,17 +424,20 @@ Skyggen efter Livet, som gik.
 </body>
 </poem>
 
+</content>
+</section> <!-- Kærlighed - Aagrerske du er -->
+
 <poem id="bang2001052601">
 <head>
-   <title>Otello - Mohr</title>
-   <toctitle>Otello - Mohr</toctitle>
-   <indextitle>Otello - Mohr</indextitle>
-   <firstline>Otello - Mohr</firstline>
-   <notes>
-      <note>S. 29-31.</note>
+    <title>Otello - Mohr</title>
+    <toctitle>Otello - Mohr</toctitle>
+    <indextitle>Otello - Mohr</indextitle>
+    <firstline>Otello - Mohr</firstline>
+    <notes>
       <note>Endnu en Shakespeare-reference, denne gang til den berømte tragedie <i>Othello</i>, hvori titelpersonen drives til jalousiens vanvid og kvæler den elskede Desdemona.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    </notes>
+    <source pages="29-31"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Otello - Mohr,
@@ -493,14 +482,12 @@ uden den kolde Jord.
 
 <poem id="bang1999061301">
 <head>
-   <title>Den Dag</title>
-   <toctitle>Den Dag</toctitle>
-   <indextitle>Den Dag</indextitle>
-   <firstline>De Dage</firstline>
-   <notes>
-      <note>S. 32-33.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Den Dag</title>
+    <toctitle>Den Dag</toctitle>
+    <indextitle>Den Dag</indextitle>
+    <firstline>De Dage</firstline>
+    <source pages="32-33"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 De Dage
@@ -527,14 +514,12 @@ det store Intet sér
 
 <poem id="bang1999061302">
 <head>
-   <title>Nat</title>
-   <toctitle>Nat</toctitle>
-   <indextitle>Nat</indextitle>
-   <firstline>Nætter</firstline>
-   <notes>
-      <note>S. 34-36.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Nat</title>
+    <toctitle>Nat</toctitle>
+    <indextitle>Nat</indextitle>
+    <firstline>Nætter</firstline>
+    <source pages="34-36"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nætter -
@@ -578,20 +563,18 @@ den Glemte til Jammer.
 
 <section level="1">
 <head>
-   <toctitle>Sorg</toctitle>
+    <toctitle>Sorg</toctitle>
 </head>
 <content>
 
 <poem id="bang1999061303">
 <head>
-   <title>Der vaagnede den Morgen -</title>
-   <toctitle>Der vaagnede den Morgen -</toctitle>
-   <indextitle>Der vaagnede den Morgen -</indextitle>
-   <firstline>Der vaagnede den Morgen et Lig</firstline>
-   <notes>
-      <note>S. 39.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Der vaagnede den Morgen -</title>
+    <toctitle>Der vaagnede den Morgen -</toctitle>
+    <indextitle>Der vaagnede den Morgen -</indextitle>
+    <firstline>Der vaagnede den Morgen et Lig</firstline>
+    <source pages="39"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Der vaagnede den Morgen et Lig,
@@ -610,14 +593,12 @@ Liget vaager.
 
 <poem id="bang2001082205">
 <head>
-   <title>Natur, jeg elskede dig -</title>
-   <toctitle>Natur, jeg elskede dig -</toctitle>
-   <indextitle>Natur, jeg elskede dig -</indextitle>
-   <firstline>Natur</firstline>
-   <notes>
-      <note>S. 40-44.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Natur, jeg elskede dig -</title>
+    <toctitle>Natur, jeg elskede dig -</toctitle>
+    <indextitle>Natur, jeg elskede dig -</indextitle>
+    <firstline>Natur</firstline>
+    <source pages="40-44"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Natur -
@@ -658,7 +639,7 @@ som Søstres Kærtegn
 om hver bange Stemning
 med ømme Tonefald
 ret som en hjælpsom Vens -
-mit Sprog, jeg elsked dig.
+mit Sprog, jeg elskede<note>elskede] elsked</note> dig.
 
 Kvinderne elskede jeg
 som skønne Blomster i Solen,
@@ -691,14 +672,12 @@ paa det store Tomme.
 
 <poem id="bang2001082204">
 <head>
-   <title>Dagene</title>
-   <toctitle>Dagene</toctitle>
-   <indextitle>Dagene</indextitle>
-   <firstline>Blege</firstline>
-   <notes>
-      <note>S. 45-46.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Dagene</title>
+    <toctitle>Dagene</toctitle>
+    <indextitle>Dagene</indextitle>
+    <firstline>Blege</firstline>
+    <source pages="45-46"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Blege,
@@ -722,14 +701,12 @@ og kan det ej.
 
 <poem id="bang1999061306">
 <head>
-   <title>Min Moder</title>
-   <toctitle>Min Moder</toctitle>
-   <indextitle>Min Moder</indextitle>
-   <firstline>Hvorfor sér jeg bestandig</firstline>
-   <notes>
-      <note>S. 47-49.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Min Moder</title>
+    <toctitle>Min Moder</toctitle>
+    <indextitle>Min Moder</indextitle>
+    <firstline>Hvorfor sér jeg bestandig</firstline>
+    <source pages="47-49"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hvorfor sér jeg bestandig
@@ -766,14 +743,12 @@ forplanted din Nød.
 
 <poem id="bang1999061305">
 <head>
-   <title>Tomhed</title>
-   <toctitle>Tomhed</toctitle>
-   <indextitle>Tomhed</indextitle>
-   <firstline>Der gives Dage</firstline>
-   <notes>
-      <note>S. 50.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Tomhed</title>
+    <toctitle>Tomhed</toctitle>
+    <indextitle>Tomhed</indextitle>
+    <firstline>Der gives Dage</firstline>
+    <source pages="50"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Der gives Dage,
@@ -788,14 +763,12 @@ Edderkoppen lig
 
 <poem id="bang2001090904">
 <head>
-   <title>Aldrig mér</title>
-   <toctitle>Aldrig mér</toctitle>
-   <indextitle>Aldrig mér</indextitle>
-   <firstline>Een Strøm det var</firstline>
-   <notes>
-      <note>S. 51-55.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Aldrig mér</title>
+    <toctitle>Aldrig mér</toctitle>
+    <indextitle>Aldrig mér</indextitle>
+    <firstline>Een Strøm det var</firstline>
+    <source pages="51-55"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Een Strøm det var,
@@ -876,20 +849,18 @@ glide ud i det store Hav.
 
 <section level="1">
 <head>
-   <toctitle>Billeder</toctitle>
+    <toctitle>Billeder</toctitle>
 </head>
 <content>
 
 <poem id="bang2001082103">
 <head>
-   <title>Vinterdag</title>
-   <toctitle>Vinterdag</toctitle>
-   <indextitle>Vinterdag</indextitle>
-   <firstline>De stod op og gik ud</firstline>
-   <notes>
-      <note>S. 59-60.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Vinterdag</title>
+    <toctitle>Vinterdag</toctitle>
+    <indextitle>Vinterdag</indextitle>
+    <firstline>De stod op og gik ud</firstline>
+    <source pages="59-60"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 De stod op og gik ud
@@ -919,14 +890,12 @@ og selv Byportens gamle Taarn.
 
 <poem id="bang2001082104">
 <head>
-   <title>To Vantros Hjerter</title>
-   <toctitle>To Vantros Hjerter</toctitle>
-   <indextitle>To Vantros Hjerter</indextitle>
-   <firstline>Hun tyssende kaldte</firstline>
-   <notes>
-      <note>S. 61-63.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>To Vantros Hjerter</title>
+    <toctitle>To Vantros Hjerter</toctitle>
+    <indextitle>To Vantros Hjerter</indextitle>
+    <firstline>Hun tyssende kaldte</firstline>
+    <source pages="61-63"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hun tyssende kaldte,
@@ -962,14 +931,12 @@ for Lykken ej at vække.
 
 <poem id="bang1999061304">
 <head>
-   <title>Nat</title>
-   <toctitle>Nat</toctitle>
-   <indextitle>Nat</indextitle>
-   <firstline>Det var Nat allerede</firstline>
-   <notes>
-      <note>S. 64-65.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Nat</title>
+    <toctitle>Nat</toctitle>
+    <indextitle>Nat</indextitle>
+    <firstline>Det var Nat allerede</firstline>
+    <source pages="64-65"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Det var Nat allerede
@@ -996,14 +963,12 @@ Hvor vi <w>elsker</w>, hvidskede hun;
 
 <poem id="bang2001091604">
 <head>
-   <title>Sommerdag</title>
-   <toctitle>Sommerdag</toctitle>
-   <indextitle>Sommerdag</indextitle>
-   <firstline>Det var en Sommerdag</firstline>
-   <notes>
-      <note>S. 66-68.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Sommerdag</title>
+    <toctitle>Sommerdag</toctitle>
+    <indextitle>Sommerdag</indextitle>
+    <firstline>Det var en Sommerdag</firstline>
+    <source pages="66-68"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Det var en Sommerdag,
@@ -1053,14 +1018,12 @@ hvidskes under Nepomuks Mænd
 
 <poem id="bang2001091605">
 <head>
-   <title>Søndag</title>
-   <toctitle>Søndag</toctitle>
-   <indextitle>Søndag</indextitle>
-   <firstline>Det var Søndag</firstline>
-   <notes>
-      <note>S. 69-70.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Søndag</title>
+    <toctitle>Søndag</toctitle>
+    <indextitle>Søndag</indextitle>
+    <firstline>Det var Søndag</firstline>
+    <source pages="69-70"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Det var Søndag
@@ -1087,25 +1050,23 @@ og Skoven,
 Skoven du véd.
 </body>
 </poem>
+
 </content>
 </section>
 
-<section level="1">
+<section level="1" id="bang2018091701">
 <head>
-   <toctitle>Brahminen</toctitle>
+    <title>Brahminen</title>
+    <source pages="71"/>
 </head>
 <content>
 
 <poem id="bang2001091601">
 <head>
-   <title>Brahminen I</title>
-   <toctitle>Brahminen I</toctitle>
-   <indextitle>Brahminen I</indextitle>
-   <firstline>Hvorfor, Bajadere, frister du hin Brahmin</firstline>
-   <notes>
-      <note>S. 73-74.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title><num>I</num>Hvorfor, Bajadere, frister du hin Brahmin</title>
+    <firstline>Hvorfor, Bajadere, frister du hin Brahmin</firstline>
+    <source pages="73-74"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hvorfor, Bajadere, frister du hin Brahmin
@@ -1129,14 +1090,10 @@ Indiens Gud - <w>tog</w> jo hans Liv.
 
 <poem id="bang2001091602">
 <head>
-   <title>Brahminen II</title>
-   <toctitle>Brahminen II</toctitle>
-   <indextitle>Brahminen II</indextitle>
-   <firstline>Kom og lad mig flette</firstline>
-   <notes>
-      <note>S. 75-77.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title><num>II.</num>Kom og lad mig flette</title>
+    <firstline>Kom og lad mig flette</firstline>
+    <source pages="75-77"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Kom og lad mig flette
@@ -1189,14 +1146,10 @@ Man han, ak, Brahmas Søn,
 
 <poem id="bang2001091603">
 <head>
-   <title>Brahminen III</title>
-   <toctitle>Brahminen III</toctitle>
-   <indextitle>Brahminen III</indextitle>
-   <firstline>Jeg søgte ham, Brahminen</firstline>
-   <notes>
-      <note>S. 78-79.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title><num>III.</num>Jeg søgte ham, Brahminen</title>
+    <firstline>Jeg søgte ham, Brahminen</firstline>
+    <source pages="78-79"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg søgte ham, Brahminen,
@@ -1220,20 +1173,18 @@ mens Stjernerne tændtes.
 
 <section level="1">
 <head>
-   <toctitle>Minder</toctitle>
+    <toctitle>Minder</toctitle>
 </head>
 <content>
 
 <poem id="bang2001091606">
 <head>
-   <title>Chopins Ballade</title>
-   <toctitle>Chopins Ballade</toctitle>
-   <indextitle>Chopins Ballade</indextitle>
-   <firstline>Geni, du Gave til Elendighed</firstline>
-   <notes>
-      <note>S. 83-88.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Chopins Ballade</title>
+    <toctitle>Chopins Ballade</toctitle>
+    <indextitle>Chopins Ballade</indextitle>
+    <firstline>Geni, du Gave til Elendighed</firstline>
+    <source pages="83-88"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Geni, du Gave til Elendighed,
@@ -1329,14 +1280,12 @@ Geni - du Gave til Elendighed.
 
 <poem id="bang2001082201">
 <head>
-   <title>I Theatret</title>
-   <toctitle>I Theatret</toctitle>
-   <indextitle>I Theatret</indextitle>
-   <firstline>I Theatret</firstline>
-   <notes>
-      <note>S. 89-91.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>I Theatret</title>
+    <toctitle>I Theatret</toctitle>
+    <indextitle>I Theatret</indextitle>
+    <firstline>I Theatret</firstline>
+    <source pages="89-91"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 I Theatret
@@ -1378,16 +1327,18 @@ fra sin Laurbær.
 </body>
 </poem>
 
+<section level="3" id="bang2018091702">
+<head>
+    <title>Til en Veninde</title>
+</head>
+<content>
+
 <poem id="bang2001082202">
 <head>
-   <title>Til en Veninde I</title>
-   <toctitle>Til en Veninde I</toctitle>
-   <indextitle>Til en Veninde I</indextitle>
-   <firstline>Det var ej Dagen</firstline>
-   <notes>
-      <note>S. 92-93.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title><num>I.</num>Det var ej Dagen</title>
+    <firstline>Det var ej Dagen</firstline>
+    <source pages="92-93"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Det var ej Dagen,
@@ -1420,14 +1371,10 @@ som var den <w>Dagen</w>.
 
 <poem id="bang2001082203">
 <head>
-   <title>Til en Veninde II</title>
-   <toctitle>Til en Veninde II</toctitle>
-   <indextitle>Til en Veninde II</indextitle>
-   <firstline>Husker De Billedet end</firstline>
-   <notes>
-      <note>S. 94-95.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title><num>II.</num>Husker De Billedet end</title>
+    <firstline>Husker De Billedet end</firstline>
+    <source pages="94-95"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Husker De Billedet end,
@@ -1452,16 +1399,18 @@ Ungdommens Dag, som var vor.
 </body>
 </poem>
 
+</content>
+</section>
+
 <poem id="bang2001082102">
 <head>
-   <title>Blomsterne tilhører dig</title>
-   <toctitle>&bdquo;Blomsterne tilhører dig&ldquo; -</toctitle>
-   <indextitle>Blomsterne tilhører dig</indextitle>
-   <firstline>Koncerten er sluttet</firstline>
-   <notes>
-      <note>S. 96-98.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>„Blomsterne tilhører dig“ -</title>
+    <toctitle>„Blomsterne tilhører dig“ -</toctitle>
+    <indextitle>Blomsterne tilhører dig</indextitle>
+    <linktitle>Blomsterne tilhører dig</linktitle>
+    <firstline>Koncerten er sluttet</firstline>
+    <source pages="96-98"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Koncerten er sluttet,
@@ -1503,14 +1452,13 @@ til dig de ene var.
 
 <poem id="bang2001082101">
 <head>
-   <title>Prinzess' Udaschkine</title>
-   <toctitle>&bdquo;Prinzess' Udaschkine&ldquo;</toctitle>
-   <indextitle>Prinzess' Udaschkine</indextitle>
-   <firstline>Da først jeg dig saa'</firstline>
-   <notes>
-      <note>S. 99-100.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>„Prinzess' Udaschkine“</title>
+    <toctitle>„Prinzess' Udaschkine“</toctitle>
+    <indextitle>Prinzess' Udaschkine</indextitle>
+    <linktitle>Prinzess' Udaschkine</linktitle>
+    <firstline>Da først jeg dig saa'</firstline>
+    <source pages="99-100"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Da først jeg dig saa',
@@ -1538,20 +1486,18 @@ Skæbnen for to.
 
 <section level="1">
 <head>
-   <toctitle>Forskellige Digte</toctitle>
+    <toctitle>Forskellige Digte</toctitle>
 </head>
 <content>
 
 <poem id="bang2001052602">
 <head>
-   <title>Sommer</title>
-   <toctitle>Sommer</toctitle>
-   <indextitle>Sommer</indextitle>
-   <firstline>Du, Sommer</firstline>
-   <notes>
-      <note>S. 103-06.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Sommer</title>
+    <toctitle>Sommer</toctitle>
+    <indextitle>Sommer</indextitle>
+    <firstline>Du, Sommer</firstline>
+    <source pages="103-06"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Du, Sommer,
@@ -1611,14 +1557,12 @@ smykker, Mænade, dit Haar.
 
 <poem id="bang1999061307">
 <head>
-   <title>Alting slukkes og døer</title>
-   <toctitle>Alting slukkes og døer</toctitle>
-   <indextitle>Alting slukkes og døer</indextitle>
-   <firstline>Alting slukkes og døer</firstline>
-   <notes>
-      <note>S. 107-08.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Alting slukkes og døer</title>
+    <toctitle>Alting slukkes og døer</toctitle>
+    <indextitle>Alting slukkes og døer</indextitle>
+    <firstline>Alting slukkes og døer</firstline>
+    <source pages="107-08"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Alting slukkes og døer:
@@ -1645,14 +1589,12 @@ Den Dag sluktes vort Liv.
 
 <poem id="bang1999061308">
 <head>
-   <title>Død, du, som altid -</title>
-   <toctitle>Død, du, som altid -</toctitle>
-   <indextitle>Død, du, som altid -</indextitle>
-   <firstline>Død</firstline>
-   <notes>
-      <note>S. 109-10.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Død, du, som altid -</title>
+    <toctitle>Død, du, som altid -</toctitle>
+    <indextitle>Død, du, som altid -</indextitle>
+    <firstline>Død</firstline>
+    <source pages="109-10"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Død,
@@ -1678,17 +1620,12 @@ som jeg levede:
 
 <poem id="bang1999061309">
 <head>
-   <title>Giv mig -</title>
-   <toctitle>Giv mig -</toctitle>
-   <indextitle>Giv mig -</indextitle>
-   <firstline>Giv mig, Du døde Gud</firstline>
-   <notes>
-      <note>S. 111.</note>
-   </notes>
-   <pictures>
-      <picture src="bang1999061309-p1.jpg">Faksimile af "Giv Mig" fra Bangs <i>Digte</i>, 1889.</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Giv mig -</title>
+    <toctitle>Giv mig -</toctitle>
+    <indextitle>Giv mig -</indextitle>
+    <firstline>Giv mig, Du døde Gud</firstline>
+    <source pages="111"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Giv mig, du døde Gud,
@@ -1701,14 +1638,12 @@ i Elskov elsket.
 
 <poem id="bang1999061310">
 <head>
-   <title>Var der en Gud -</title>
-   <toctitle>Var der en Gud -</toctitle>
-   <indextitle>Var der en Gud -</indextitle>
-   <firstline>Var der en Gud</firstline>
-   <notes>
-      <note>S. 112-14</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Var der en Gud -</title>
+    <toctitle>Var der en Gud -</toctitle>
+    <indextitle>Var der en Gud -</indextitle>
+    <firstline>Var der en Gud</firstline>
+    <source pages="112-114"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Var der en Gud,
@@ -1745,14 +1680,12 @@ mens Stjerne som brustne Øjne saa'
 
 <poem id="bang1999061311">
 <head>
-   <title>Du store Intet -</title>
-   <toctitle>Du store Intet -</toctitle>
-   <indextitle>Du store Intet -</indextitle>
-   <firstline>Du, store Intet</firstline>
-   <notes>
-      <note>S. 115-16.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Du store Intet -</title>
+    <toctitle>Du store Intet -</toctitle>
+    <indextitle>Du store Intet -</indextitle>
+    <firstline>Du, store Intet</firstline>
+    <source pages="115-16"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Du, store Intet,
@@ -1773,14 +1706,12 @@ men med Hovedet oprejst
 
 <poem id="bang1999061312">
 <head>
-   <title>Fædreland -</title>
-   <toctitle>Fædreland -</toctitle>
-   <indextitle>Fædreland -</indextitle>
-   <firstline>Fædreland</firstline>
-   <notes>
-      <note>S. 117-18.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <title>Fædreland -</title>
+    <toctitle>Fædreland -</toctitle>
+    <indextitle>Fædreland -</indextitle>
+    <firstline>Fædreland</firstline>
+    <source pages="117-18"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Fædreland,

@@ -137,7 +137,7 @@ class News extends React.Component<NewsProps> {
             }
             div.news-item:first-child {
               padding-bottom: 40px;
-              border-bottom: 1px solid #777;
+              border-bottom: 1px solid #757575;
               margin-bottom: 50px;
             }
 
@@ -155,7 +155,7 @@ class News extends React.Component<NewsProps> {
               margin-top: 5px;
               font-weight: lighter;
               font-size: 0.8em;
-              color: #777;
+              color: #757575;
             }
           `}</style>
         </div>

@@ -171,7 +171,6 @@ export default class Nav extends React.Component<NavProps> {
     }
     let renderedSectionTitles: Array<Node> = [];
     if (sectionTitles != null) {
-      console.log(sectionTitles);
       renderedSectionTitles = sectionTitles.map(t => {
         let text = (
           <TextContent
