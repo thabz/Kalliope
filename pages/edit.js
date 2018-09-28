@@ -74,6 +74,7 @@ class Editor extends React.Component<EditorProps, EditorState> {
       <div className="text-editor-container">
         <TextArea
           className="text-editor"
+          label="Tekst"
           value={xml}
           wrap="off"
           rows={rows}
@@ -143,7 +144,7 @@ class AuthorDetails extends React.Component<
           onChange={this.onNameChange}
           label="Dit navn (valgfrit)"
         />
-        <div style={{ width: '20px' }} />
+        <div style={{ flexBasis: '20px' }} />
         <Input
           value={email}
           onChange={this.onEmailChange}

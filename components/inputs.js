@@ -70,6 +70,7 @@ export class Input extends React.Component<InputProps> {
             width: 100%;
             font-size: 1.1em;
             padding: 5px;
+            box-sizing: border-box;
           }
         `}</style>
       </div>
