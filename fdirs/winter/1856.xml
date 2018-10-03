@@ -1,94 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1855" author="winter" status="complete" type="poetry">
+<kalliopework id="1856" author="winter" status="complete" type="poetry">
 <workhead>
    <title>Hjortens Flugt</title>
-   <year>1855</year>
+   <year>1856</year>
    <notes>
-      <note>Kilde er Christian Winther: <i>Hjortens Flugt</i>, 15. opl., Verner Dahlerup (udg.), 1912.</note>
+      <note><i>Hjortens Flugt</i> udkom 28. november 1855, men titelbladet lyder 1856, hvilket var almindelig praksis for årets sidste udgivelser.</note>
       <note>Teksten er redigeret af Sven Sørensen, Henrik Nielsen og Jesper Christensen i samarbejde - med udgangspunkt i en etext af Erik Rosekamp.</note>
    </notes>
    <dates>
        <published>1855-11-28</published>
    </dates>
+   <pictures>
+       <picture type="titlepage" src="1856-p1.jpg">Titelbladet til <i>Hjortens Flugt</i> (1855) lyder ,,Hjortens Flugt // Et Digt / af / Christian Winther. // Kjøbenhavn. / Forlagt af C. A. Reitzels Bo og Arvinger. / Bianco Lunos Bogtrykkeri. / 1856.''</picture>
+   </pictures>
+   <source facsimile="130022888340_color" facsimile-pages-num="358" facsimile-pages-offset="8">Christian Winther: <i>Hjortens Flugt</i>, C. A. Reitzel, Kbh., 1856.</source>
 </workhead>
 <workbody>
 
 <poem id="winter2001081905">
 <head>
    <title>Forspil</title>
-   <toctitle>Forspil</toctitle>
-   <indextitle>Forspil</indextitle>
    <firstline>Paa denne Kildemarkedsplads</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="5-8"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<i>Paa denne Kildemarkedsplads,</i>
-<i>Her mellem Boder, Skuur og Telte,</i>
-<i>Med gammelt Kram og Modestads;</i>
-<i>Hvor vise Mænd og store Helte,</i>
-<i>Med Næserne af sminket Vox,</i>
-<i>Saadan, som end de var i Live,</i>
-<i>Sig for en videlysten Floks</i>
-<i>Nysgjerrigt aabne Blik hengive;</i>
-<i>Hvor ret en udsøgt Assemblee</i>
-<i>Af Hunde og af Aber svandser,</i>
-<i>Hvor Papegøier snakke, lee,</i>
-<i>Og Bamsen gravitetisk dandser;</i>
-<i>Hvor der falbydes Faar og Sviin,</i>
-<i>Gaas, Hest og Ko samt Kalv i Skare,</i>
-<i>Hvor der er baade Vand og Viin</i>
-<i>Og andre drikkelige Vare;</i>
-<i>Hvor her Salat kan faaes og Kaal,</i>
-<i>Hist Lilier, Tusindfryd og Roser,</i>
-<i>Her Sølv og Guld, hist Jern og Staal,</i>
-<i>Her Kniplingsslør, hist uldne Hoser;</i>
-<i>Hvor der er flot med Fisk og Kjød,</i>
-<i>Kapuner, Harer, Torsk og Karper,</i>
-<i>Og Sangen klinger sød og blød</i>
-<i>Til Lire, Hakkebræt og Harper;</i>
-<i>Mens Himlen hvælver klar og blaa</i>
-<i>Sig over Skovens grønne Kupler,</i>
-<i>Hvor, gjemt bag Løv og Green, de smaa</i>
-<i>Frimestre dybt i Kunsten grubler:</i>
-<i>Her har jeg sindig, bondeklog</i>
-<i>Med Løv og Krandse net afspærret</i>
-<i>Afsides mig en rolig Krog,</i>
-<i>Hvor jeg nu ruller op mit Lærred.</i>
-<i>Her af og til den hele Dag</i>
-<i>Jeg sang og dreiede min Lire;</i>
-<i>Var ei saa kort mit Aandedrag,</i>
-<i>Jeg havde sagtens sunget tiere.</i>
-<i>Vel var det kun en lille Kreds,</i>
-<i>Der standsede og hørte paa mig;</i>
-<i>Men jeg var meer end vel tilfreds,</i>
-<i>Jeg saae, den vilde nok forstaae mig.</i>
-<i>See, jeg har af Historier</i>
-<i>Afskildret her en lille Række;</i>
-<i>Ifald det kunde more Jer,</i>
-<i>Jeg Billederne vil afdække;</i>
-<i>Skjøndt jeg - paa det Lav! - ikke kan</i>
-<i>Med sligt Mirakel og Spetakel,</i>
-<i>Som hist den indianske Mand</i>
-<i>Og min Collega, Mester Jakel! -</i>
-<i>Det lider jævnt mod Aftenstund,</i>
-<i>Alt Skoven staaer heel taus og dunkel,</i>
-<i>Snart gjemmer sig paa Havets Bund</i>
-<i>Dagmoders glimrende Karfunkel.</i>
-<i>O, kommer da og lytter lidt</i>
-<i>Til mine Sagn og Lirens Triller,</i>
-<i>Før Alle vandre - Hver til Sit -</i>
-<i>Før Nattens sorte Slør os skiller.</i>
+Paa denne Kildemarkedsplads,
+Her mellem Boder, Skuur og Telte,
+Med gammelt Kram og Modestads;
+Hvor vise Mænd og store Helte,
+Med Næserne af sminket Vox,
+Saadan, som end de var i Live,
+Sig for en videlysten Floks
+Nysgjerrigt aabne Blik hengive;
+Hvor ret en udsøgt Assemblee
+Af Hunde og af Aber svandser,
+Hvor Papegøier snakke, lee
+Og Bamsen gravitetisk dandser;
+Hvor der falbydes Faar og Sviin,
+Gaas, Hest og Ko samt Kalv i Skare,
+Hvor der er baade Vand og Viin
+Og andre drikkelige Vare;
+Hvor her Salat kan faaes og Kaal,
+Hist Lilier, Tusindfryd og Roser,
+Her Sølv og Guld, hist Jern og Staal,
+Her Kniplingsslør, hist uldne Hoser;
+Hvor der er flot med Fisk og Kjød,
+Kapuner, Harer, Torsk og Karper,
+Og Sangen klinger sød og blød
+Til Lire, Hakkebræt og Harper;
+Mens Himlen hvælver klar og blaa
+Sig over Skovens grønne Kupler,
+Hvor, gjemt bag Løv og Green, de smaa
+Frimestre dybt i Kunsten grubler:
+Her har jeg sindig, bondeklog
+Med Løv og Krandse net afspærret
+Afsides mig en rolig Krog,
+Hvor jeg nu ruller op mit Lærred.
+Her af og til den hele Dag
+Jeg sang og dreiede min Lire;
+Var ei saa kort mit Aandedrag,
+Jeg havde sagtens sunget tiere.
+Vel var det kun en lille Kreds,
+Der standsede og hørte paa mig;
+Men jeg var meer end vel tilfreds,
+Jeg saae, den vilde nok forstaae mig.
+See, jeg har af Historier
+Afskildret her en lille Række;
+Ifald det kunde more Jer,
+Jeg Billederne vil afdække;
+Skjøndt jeg - paa det Lav! - ikke kan
+Med sligt Mirakel og Spetakel,
+Som hist den indianske Mand
+Og min Collega, Mester Jakel! -
+Det lider jævnt mod Aftenstund,
+Alt Skoven staaer heel taus og dunkel,
+Snart gjemmer sig paa Havets Bund
+Dagmoders glimrende Karfunkel.
+O, kommer da og lytter lidt
+Til mine Sagn og Lirens Triller,
+Før Alle vandre - Hver til Sit -
+Før Nattens sorte Slør os skiller.
 </body>
 </poem>
 
 <poem id="winter1999091701">
 <head>
    <title>Flugten</title>
-   <toctitle>Flugten</toctitle>
-   <indextitle>Flugten</indextitle>
    <firstline>End dækked Nattens Teppe</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="11-27"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 End dækked Nattens Teppe
@@ -114,9 +116,9 @@ Der var ængsteligt tyst,
 Som gjemte den en Rædsel,
 En sælsom, i sit Bryst;
 Septemberløvet sittred
-Paa den knudrede Eeg.
+Paa den knudrede Eeg,
 Og Voverne, de rislende,
-Langs Kysten sank og steeg
+Langs Kysten sank og steg.
 
 Men hist, hvor Hyldebusken
 Nær Murens Steen var groet,
@@ -174,7 +176,7 @@ Med stærke Hampereb.
 
 Saa lagde de ham baglænds,
 Alt under bitter Spot,
-Paa Dyrets Ryg, -de sagde,
+Paa Dyrets Ryg, - de sagde,
 Der laae han blødt og godt!
 Fast snøred de hans Hænder
 Og hans Fødder igjen
@@ -182,11 +184,11 @@ Til Hjortens ranke Hals,
 Til dens Blad og dens Lænd,
 
 ,,Her skal Du ikke længer
-Saa stolt og siirlig gaae;
+Saa stolt og sirlig gaae;
 Nei, langt af Led Du fare
 Med Kongens Ærind maa.
 Den Ganger, som Du rider
-Den gjør Dig Reisen let,
+Den gjør Dig Veien let, <!-- NB: senere Reisen] Veien -->
 Du tør ei ved paa Veien
 At vorde mødig og træt
 
@@ -209,7 +211,7 @@ Hvor hist og her i Skyggen
 Hofsinders Huse laae.
 
 Men ved det sidste Huus,
-Som var saa siirligt bygt,
+Som var saa sirligt bygt,
 Halv dulgt bag Rosenhækker
 Og med Billeder smykt,
 Der aabned sig et Vindve
@@ -221,14 +223,14 @@ Det var en vidtskingrende,
 En knivskarp Qvinderøst,
 Som kom den fra et haabløst,
 Forpiint, fortvivlet Bryst;
-Som steeg den op fra Dybet,
+Som steg den op fra Dybet,
 Fra den flammende Dal,
 Hvor Sjælen sig krymper
 I den evige Qval:
 
 ,,Nu Lykke da paa Reisen,
 Allerdeiligste Svend!
-O, vend din rappe Ganger
+O, vend Din rappe Ganger
 Ret snart her hjem igjen.
 Dvæl ikke altfor længe,
 Ak, din udvalgte Mø,
@@ -364,7 +366,7 @@ Og livnet hans Mod.
 Men næppe op af Badet
 Den kaade Ganger steeg,
 Før atter Haab og Lise
-Bort fra hans Hjerte veeg.
+Bort fra hans Hjerte veg.
 Naar han de spændte Snore
 Blot lindt og sagte drog,
 Da var det som en Spore,
@@ -485,7 +487,7 @@ Som den fornam saa tidt.
 Det lod ret, som den sukked
 Og atter laae den ned.
 Tungt aanded Ungersvenden
-Og blev saa atter ved.
+Og blev saa atter ved:
 
 ,,Hver Nat er jo vor Sommer,
 Dens Blomster ere vi;
@@ -494,7 +496,7 @@ Er vor Sommer forbi.
 O, yndigste Kjærminde!
 O, Elskovsrose rød!
 I Mulm jeg kan Dig finde,
-For din Duft er stærk og sød!''
+For Din Duft er stærk og sød!''
 
 Saa nynned han og løste
 Med den vaersomste Haand
@@ -546,10 +548,9 @@ Og glemte al sin Nød.
 <poem id="winter2001081901">
 <head>
    <title>I Møllen</title>
-   <toctitle>I Møllen</toctitle>
-   <indextitle>I Møllen</indextitle>
    <firstline>Hvor klare Skovbæk risler</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="28-39"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hvor klare Skovbæk risler
@@ -559,7 +560,7 @@ Sine brusende Hjul;
 Den ligger dybt og dulgt,
 Og Huulveien snoer
 Sig nær forbi Huset
-Og ned mod Bolefjord<note>Bolefjord: gammelt navn på Præstø Fjord.</note>.
+Og ned mod Bolefjord<note>Bolefjord: gammelt navn på Præstø Fjord i det sydøstlige Sjælland.</note>.
 
 Den lille Hauge breder sig
 Saa hyggelig og peen
@@ -581,7 +582,7 @@ Til det lange, smalle Fedd.
 
 Der tjener nu i Møllen
 En vakker Ungersvend;
-Det er ei længe, siden
+Det er ei længe siden
 Han kommet var derhen.
 Den gamle Møller fandt ham,
 Da halvdød han laae
@@ -589,13 +590,13 @@ I Skov, med nøgne Fødder
 Og med linned Kofte paa.
 
 Han pleiet blev og qvæget,
-Men det vared kun kort.
+Men det vared kun kort,
 Saa kom han brav til Kræfter.
 Han kaldte sig Hjort,
 Og sagde saa til Mølleren:
 ,,Du seer, at jeg er stærk;
 Det er vel ei saa farligt svært
-At lære dit Værk?
+At lære Dit Værk?
 
 Saa kan jeg ogsaa plante
 Og ympe og saae,
@@ -643,12 +644,12 @@ Der laae jeg mellem Øgler
 Og Tudser og Kryb.
 
 Det hued mig just ikke
-- At dvæle længe der;
+At dvæle længe der;
 Den klare Luft og Skovens Duft
 Jeg havde mere kjær.
 Saa fandt jeg paa med Liste
 At bryde mig en Vei.
-Gud kjende maa min Brøde
+Gud kjende maa min Brøde -
 Jeg kjender den ei!''
 
 Men Mølleren, den gamle,
@@ -664,7 +665,7 @@ Dog - Bonde eller Ridder -
 Det har mig lige Magt;
 Det være nu og blive,
 Som din Mund mig har sagt.
-Saa bliv, og pas min Hauge,
+Saa bliv, og pas min Have,
 Bær Vand, hug Ved og kjern
 For Tøsen der; og vaag saa
 For mig ved min Qværn!''
@@ -696,7 +697,7 @@ Med Grønt og med Hvidt,
 Til Anna en Garnkurv,
 Hun havde ønsket tidt.
 
-- Han øved tusind Kunster,
+Han øved tusind Kunster,
 Og Intet faldt ham svært,
 Og Alt, hvormed han sysled,
 Blev dem Begge saa kjært.
@@ -764,7 +765,7 @@ Som Himlen er i Vaar,
 Hvor Solen snart smiler,
 Snart Regnskyen staaer.
 Snart var hun bly og bange,
-Snart var hun kjæk og fri;
+Snart var hun kjæk og fri,
 Blik sendte hun ham mange,
 Men ak! de gik forbi.
 
@@ -784,12 +785,12 @@ I Møllen havde lagt.
 Med brune Haar om Panden
 Han i det dybe Blund
 Laae der og smilte venligt
-Med den friske, røde Mund.
+Med den friske røde Mund.
 
 Foran ham dvæled Anna;
 Hun skulde sagt: ,,Kom ind!''
 Brat standsed hendes Aandedræt,
-Og bleeg blev hendes Kind.
+Og bleg blev hendes Kind.
 Men Kjækheds Rose atter
 Fremblomstred rød og sund
 Hun bøied sig, hun smiled,
@@ -807,7 +808,7 @@ Favntag og Læber nær
 Op sprang han fra sit Leie,
 Han kneisede stolt,
 Ned sank hans Blik paa Pigen,
-Forundret og koldt
+Forundret og koldt.
 Hun segned fast i Knæer,
 Som paa en Vægt hun bar,
 Han syntes hende dobbelt
@@ -834,8 +835,8 @@ Selv hendes røde Ko.
 Og naar hun skulde sige
 Til Hjort: ,,Kom hid og hør!''
 Da gik det ei fra Læben
-Saa freidigt, som før
-- Og gik de hjem fra Engen,
+Saa freidigt, som før.
+Og gik de hjem fra Engen,
 Hvor Køerne var,
 Hun bad ham ei at bære
 Det fulde Melkekar.
@@ -863,10 +864,9 @@ En Fader kunde see.
 <poem id="winter1999091702">
 <head>
    <title>Rhitra</title>
-   <toctitle>Rhitra</toctitle>
-   <indextitle>Rhitra</indextitle>
    <firstline>Den Møller stod paa Høien</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="40-54"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den Møller stod paa Høien
@@ -1270,10 +1270,9 @@ Kjøkkenrøg opsteeg.
 <poem id="winter1999091703">
 <head>
    <title>Den vandrende Sanger</title>
-   <toctitle>Den vandrende Sanger</toctitle>
-   <indextitle>Den vandrende Sanger</indextitle>
    <firstline>Storken, den kloge Fugl</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="55-61"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Storken, den kloge Fugl,
@@ -1443,10 +1442,9 @@ I Krogen, som han sad.
 <poem id="winter1999091704">
 <head>
    <title>I Kongsgaarden</title>
-   <toctitle>I Kongsgaarden</toctitle>
-   <indextitle>I Kongsgaarden</indextitle>
    <firstline>Kong Erik sad paa Gurve</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="62-82"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 ,,Kong Erik<note>Kong Erik: Erik af Pommern</note> sad paa Gurve
@@ -2003,10 +2001,9 @@ Og hans flagrende Baand.
 <poem id="winther2001081903">
 <head>
    <title>Gulitza</title>
-   <toctitle>Gulitza</toctitle>
-   <indextitle>Gulitza</indextitle>
    <firstline>Novemberstormen havde sig</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="83-104"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Novemberstormen havde sig
@@ -2581,10 +2578,9 @@ Saa vide Veie gaae.
 <poem id="winther2001081904">
 <head>
    <title>Jørgen og Anna</title>
-   <toctitle>Jørgen og Anna</toctitle>
-   <indextitle>Jørgen og Anna</indextitle>
    <firstline>Naar Bækken risler lystig</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="105-118"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Naar Bækken risler lystig
@@ -2943,10 +2939,9 @@ Hvor Eensomheden boer.
 <poem id="winter1999091706">
 <head>
    <title>Skovbroderen</title>
-   <toctitle>Skovbroderen</toctitle>
-   <indextitle>Skovbroderen</indextitle>
    <firstline>Den korte, lyse Mainat</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="119-128"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den korte, lyse Mainat
@@ -3206,10 +3201,9 @@ Og Droslerne sang.
 <poem id="winter1999091707">
 <head>
    <title>Hr. Peder Jernskjæg</title>
-   <toctitle>Hr. Peder Jernskjæg</toctitle>
-   <indextitle>Hr. Peder Jernskjæg</indextitle>
    <firstline>Den Eftermiddags Luft</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="129-159"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den Eftermiddags Luft
@@ -4036,10 +4030,9 @@ Hen over Skov og Dal.
 <poem id="winter1999091709">
 <head>
    <title>Paa Herreborgen</title>
-   <toctitle>Paa Herreborgen</toctitle>
-   <indextitle>Paa Herreborgen</indextitle>
    <firstline>Og det var de Bønder</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="160-176"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Og det var de Bønder
@@ -4497,13 +4490,12 @@ Forfriskning og Ro.
 <poem id="winter1999091710">
 <head>
    <title>Eselet</title>
-   <toctitle>Eselet</toctitle>
-   <indextitle>Eselet</indextitle>
    <firstline>Under Bislag, ved Huset</firstline>
    <notes>
       <note>Tak til Sven Sørensen for at have udfyldt et større stykke af teksten, som var udfaldet.</note>
    </notes>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="177-200"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Under Bislag, ved Huset
@@ -5150,10 +5142,9 @@ Som en broget Urtekrands.
 <poem id="winter1999091711">
 <head>
    <title>I Jægerhuset</title>
-   <toctitle>I Jægerhuset</toctitle>
-   <indextitle>I Jægerhuset</indextitle>
    <firstline>En Rast fra Kongeborgen</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="201-216"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 En Rast fra Kongeborgen
@@ -5584,10 +5575,9 @@ Den Tredie slumred ind.
 <poem id="winter1999091712">
 <head>
    <title>St. Hans Aften</title>
-   <toctitle>St. Hans Aften</toctitle>
-   <indextitle>St. Hans Aften</indextitle>
    <firstline>I Skoven tæt ved Gurve</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="217-225"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 I Skoven tæt ved Gurve,
@@ -5811,10 +5801,9 @@ I Drottens høie Sal.
 <poem id="winter1999091713">
 <head>
    <title>Uglens Hjerte</title>
-   <toctitle>Uglens Hjerte</toctitle>
-   <indextitle>Uglens Hjerte</indextitle>
    <firstline>Den morgenglade Lærke</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="226-237"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den morgenglade Lærke
@@ -6137,10 +6126,9 @@ Hr. Folmers Pudel sprang.
 <poem id="winter1999091714">
 <head>
    <title>Befrielsen</title>
-   <toctitle>Befrielsen</toctitle>
-   <indextitle>Befrielsen</indextitle>
    <firstline>Høit paa en nøgen Banke</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="238-259"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Høit paa en nøgen Banke,
@@ -6715,10 +6703,9 @@ Med hende, kan kuns jeg!''
 <poem id="winter1999091715">
 <head>
    <title>I Riddersalen</title>
-   <toctitle>I Riddersalen</toctitle>
-   <indextitle>I Riddersalen</indextitle>
    <firstline>Naar blygraae Skyer skjule</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="260-278"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Naar blygraae Skyer skjule
@@ -7221,10 +7208,9 @@ Fik sagt: ,,Vi sees!'' - ,,Vi sees!''
 <poem id="winter1999091716">
 <head>
    <title>I Fruerburet</title>
-   <toctitle>I Fruerburet</toctitle>
-   <indextitle>I Fruerburet</indextitle>
    <firstline>I stille Lønkammer</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="279-288"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 I stille Lønkammer,
@@ -7484,10 +7470,9 @@ Som paa Havet en Storm.
 <poem id="winter1999091717">
 <head>
    <title>Moder og Datter</title>
-   <toctitle>Moder og Datter</toctitle>
-   <indextitle>Moder og Datter</indextitle>
    <firstline>Det Huus i Lindegyden</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="289-298"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Det Huus i Lindegyden,
@@ -7756,10 +7741,9 @@ Tilsidst hun drog af Led.
 <poem id="winter1999091718">
 <head>
    <title>Korset</title>
-   <toctitle>Korset</toctitle>
-   <indextitle>Korset</indextitle>
    <firstline>Det var en Morgen tidlig</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="299-311"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Det var en Morgen tidlig
@@ -8109,10 +8093,9 @@ Til Jægerens Bo.
 <poem id="winter2001081902">
 <head>
    <title>Tvekampen</title>
-   <toctitle>Tvekampen</toctitle>
-   <indextitle>Tvekampen</indextitle>
    <firstline>Han havde seet sin Haarlok</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="312-319"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Han havde seet sin Haarlok,
@@ -8309,10 +8292,9 @@ Han venter Dommens Dag.
 <poem id="winter1999091720">
 <head>
    <title>Et Farvel</title>
-   <toctitle>Et Farvel</toctitle>
-   <indextitle>Et Farvel</indextitle>
    <firstline>Saa gik der da en Vinter</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+   <source pages="320-333"/>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Saa gik der da en Vinter,
