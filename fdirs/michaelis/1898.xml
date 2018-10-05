@@ -1613,7 +1613,9 @@ bag en isnende Foragt.
     <subtitle>Af Edgar Allan Poe</subtitle>
     <firstline>Jeg saa en Gang dig, kun en Gang, for Aar tilbage</firstline>
     <source pages="67-69"/>
-    <!-- TODO: Find originalen. Der findes to "To Helen", men de er begge meget kortere. https://en.wikipedia.org/wiki/To_Helen -->
+    <notes>
+        <note>Gendigtning af Poes <xref type="translation" poem="poe2018100501"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
