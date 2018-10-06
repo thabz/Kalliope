@@ -82,11 +82,19 @@ const workLinkName = work => {
 // Ready after second pass
 let collected_works = new Map();
 
+// Accepterer YYYY, YYYY-MM, YYYY-MM-DD og returnerer altid YYYY-MM-DD
 const normalize_timeline_date = date => {
-  if (date.length !== 4 + 1 + 2 + 1 + 2) {
-    return `${date.substring(0, 4)}-01-01`;
-  } else {
+  if (date.length === 4 + 1 + 2 + 1 + 2) {
     return date;
+  } else {
+    const parts = date.split('-');
+    if (parts.length === 1) {
+      parts.push('01');
+    }
+    if (parts.length === 2) {
+      parts.push('01');
+    }
+    return `${parts[0]}-${parts[1]}-${parts[2]}`;
   }
 };
 
@@ -169,7 +177,7 @@ const build_poet_timeline_json = (poet, collected) => {
           ? `<a work="${poet.id}/${workId}">${work.title}</a>`
           : work.title;
         items.push({
-          date: work.year,
+          date: work.published,
           type: 'text',
           content_lang: 'da',
           is_history_item: false,
@@ -1163,6 +1171,16 @@ const handle_work = work => {
   return { lines, toc, notes, pictures };
 };
 
+const extractDates = head => {
+  const dates = head.get('dates');
+  const result = {};
+  if (dates != null) {
+    result.published = safeGetText(dates, 'published');
+    result.event = safeGetText(dates, 'event');
+    result.written = safeGetText(dates, 'written');
+  }
+  return result;
+}
 const build_global_lines_json = collected => {
   safeMkdir('static/api/alltexts');
   let changed_langs = {};
@@ -1310,7 +1328,7 @@ const works_first_pass = collected => {
       const status = work.attr('status').value();
       const type = work.attr('type').value();
       const subtitles = extract_subtitles(head);
-
+      const dates = extractDates(head);
       // Sanity check
       if (work.attr('author').value() !== poetId) {
         throw new Error(
@@ -1329,6 +1347,8 @@ const works_first_pass = collected => {
         status,
         type,
         has_content: work.find('//poem|//prose|//subwork').length > 0,
+        published: dates.published || year,
+        has_content: work.find('//poem|//prose').length > 0,
       });
 
       if (parentId != null) {
