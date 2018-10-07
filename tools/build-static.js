@@ -1348,7 +1348,6 @@ const works_first_pass = collected => {
         type,
         has_content: work.find('//poem|//prose|//subwork').length > 0,
         published: dates.published || year,
-        has_content: work.find('//poem|//prose').length > 0,
       });
 
       if (parentId != null) {
