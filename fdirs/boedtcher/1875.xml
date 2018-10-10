@@ -38,7 +38,7 @@ Det er nu et Aar, siden <w>Ludvig Bødtcher</w> endte sit stille, ensomme Liv, o
    <title>Den Gamles Bøn</title>
    <firstline>Send, Ungdom! mig de lyse Minder</firstline>
    <source pages="1"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Send, Ungdom! mig de lyse Minder,
@@ -60,12 +60,12 @@ Som før i Nattens blege Flamme!
 
 <poem id="boedtcher2018100903" variant="boedtcher2003010337">
 <head>
-   <title>Til en gammel Ven</title>
+   <title>Til en gammel Ven!</title>
    <toctitle>Til en gammel Ven</toctitle>
-   <indextitle>Til en gammel Ven</indextitle>
    <firstline>Nu voxe Aftenskyggerne, du Kjære!</firstline>
    <source pages="2-4"/>
-   <quality>korrektur1,kilde,side</quality>
+   <keywords>rahbek</keywords>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nu voxe Aftenskyggerne, du Kjære! -
@@ -74,29 +74,29 @@ Og Ilden svales i det trætte Blod
 Ved Luftning fra en anden Atmosfære.
 
 Og Tidens Haand, hvor snildt den om os leger!
-Den reber Seilene med hver en Stund
+Den reber Sejlene med hver en Stund
 Og bringer altid nærmere vor Mund
 Hen til Forsagelsernes bittre Bæger;
 
-Det er ei lysteligt, naar Vaaren binder
+Det er ej lysteligt, naar Vaaren binder
 Sin brogetfriske Krands af Blomst og Blad
 Og stænker den i Morgenduggens Bad,
 At sætte Løvspring kun ved - gamle Minder!
 
-Og dog - hvor gylden var vor Ungdomsscene!
+Og dog, hvor gylden var vor Ungdomsscene!
 De ranke Stammer Sundheds Lykke fik
 Og Haabets Grønt bestandig for sit Blik,
 Og Livets Fuglesang i sine Grene;
 
-Sødt fløited, Eros! dine Nattergale,
-Men mægted ei at gjøre Sjælen kold
+Sødt fløjted, Eros! dine Nattergale,
+Men mægted ej at gjøre Sjælen kold
 For Uglen i Minervas blanke Skjold,
 Som bragte aandig Kamp i Danmarks Dale.
 
 Og hvilke Skjønhedskilder til at lædske,
 Da Skjalden aabned Romantikens Land
-Og seirrig førte Nordens Guder an,
-Mens Thorvaldsen fremtryllede de græske;
+Og sejrrig førte Nordens Guder an,
+Mens Thorvaldsen fremtryllede de græske.
 
 Guldharpen lød fra Digterkongens Sæde -
 Hin Klang, der jevned Bølgen af et Had,
@@ -133,7 +133,7 @@ Gid Haanden klappe maa, naar Tæppet falder!
    <indextitle>Englen Israfil</indextitle>
    <firstline>Da Herren vendte bort sit Aasyns Straaler</firstline>
    <source pages="5-7"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Da Herren vendte bort sit Aasyns Straaler
@@ -155,13 +155,14 @@ Den hviskede: ,,Vend bort Dig fra det Slette,
 Og vogt Dig for at gaa med Gud i Rette!''
 Og brat han kasted sig for Herrens Fod,
 Og, da Guds milde Faderblik ham traf,
-Han tryglede om Naade og om Straf. -
+Han tryglede om Naade og om Straf.
 ,,Saa være da din Straf,'' lød Herrens Røst,
 ,,At hente Sjælene til Himlens Glæde -
-Du <i>taus</i> skal see de Dødelige græde,
+Du <w>taus</w> skal see de Dødelige græde,
 Mens blot et Ord af Dig var salig Trøst,
-Og, skjøndt Du fører Sjælene til <i>Livet,</i>
-Er Dig dog Navnet <i>Dødens</i> Engel givet!''
+Og, skjøndt Du fører Sjælene til <w>Livet,</w>
+Er Dig dog Navnet <w>Dødens</w> Engel givet!''
+
 Usynlig staaer ved Smertens Hovedgjærde
 Nu Englen Israfil i Sorgens Bo,
 For som i jordisk Ild sit Sværd at hærde
@@ -185,34 +186,34 @@ Og bringer taus til Himmerig den Lille.
 
 <poem id="boedtcher2018100905" variant="boedtcher2003010308">
 <head>
-   <title>Et 50 aarigt Studenterjubilæum</title>
-   <subtitle>Den 23de Oct. 1862</subtitle>
+   <title>Ved et 50 aarigt Studenterjubilæum</title>
+   <!-- Anderledes toctitle? -->
    <firstline>Nu foldes festligt med Jubel ud</firstline>
    <dates>
        <event>1862-10-23</event>
    </dates>
    <source pages="8-10"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nu foldes festligt med Jubel ud
-Den seirrigste blandt Jordens Faner!
+Den sejrrigste blandt Jordens Faner!
 Pallas Athene har sendt sit Bud,
 Vil mynstre sine Veteraner:
 Ak! Kindens Roser har Tiden pluk't,
 Og Vingen savner sin Ungdomsflugt!
-Falken med Ørn,
-Fortidens Børn,
+    Falken med Ørn,
+    Fortidens Børn,
 Kun flyve hid som hvide Svaner!
 
 De gamle Minder, som dybest boer,
 Vil atter under Asken ulme:
-,,Kan Du erindre'' - er Trylleord,
+,,Kan Du erindre'' - et Trylleord,
 Som bringe Hjertet til at svulme:
 Den vundne Hæder har ædel Glands,
 Men husk paa Ungdommens friske Krands,
-Sorgløse Smil,
-Hellige Ild
+    Sorgløse Smil,
+    Hellige Ild
 Og Eros' allerførste Møde!
 
 Ja sødt vi mindes, hvad den har bragt,
@@ -220,29 +221,29 @@ Men Vaar for Sommeren bør vige,
 Og selv i Høstens den sidste Akt
 Vi saae et Syn foruden Lige:
 Vi saae den svinde, den dunkle Sky,
-Og Friheds deilige Morgengry
-Bredte sin Arm
-Kraftig og varm
+Og Friheds dejlige Morgengry
+    Bredte sin Arm
+    Kraftig og varm
 Henover gamle Danmarks Rige!
 
 Det var som Luften gav Styrke ind,
-Just nu, da Øieblikket gjeldte,
+Just nu, da Øjeblikket gjeldte,
 Det var som Thor havde, vred i Sind,
-Spændt strammere sit Danmarks Belte,
+Spændt strammere sit Danmarks Belte;
 Og bag sin Kofte lod Bonden see
 En Damascener, trods Skedens Træ,
-Vældigt den beed!
-Hvor den sank ned
+    Vældigt den beed!
+    Hvor den sank ned
 Den blege Undergang sig meldte.
 
-Saa vær da signed du nye Tid
-Og gjør den gamle kun Tilskamme!
+Saa vær da signet, du nye Tid
+Og gjør den gamle kun tilskamme!
 Blandt os er Ingen saa invalid,
 At han jo gribes af din Flamme:
 Vort Janushoved har dobbelt Hjem,
 Det seer tilbage, men ogsaa frem,
-Seer: som en Arv
-Oldtidens Marv
+    Seer: som en Arv
+    Oldtidens Marv
 Du bringer atter Nordens Stamme!
 </body>
 </poem>
@@ -255,34 +256,35 @@ Du bringer atter Nordens Stamme!
    <toctitle>Guldbryllupsbrev, i April 1869</toctitle>
    <firstline>Kan vel en Blind om Farver tale?</firstline>
    <source pages="11-12"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2, kilde,side</quality>
 </head>
 <body>
 Kan vel en Blind om Farver tale?
 Og tør en gammel ugift Svend,
 Hvis hele Liv svandt ensomt hen
-Sig nærme Hymens Høitidssale?
-Dog - Den maa være aandig blind,
+Sig nærme Hymens Højtidssale?
+
+Dog - den maa være aandig blind,
 Hvem Synet af det Skjønne, Ideale
-Ei rører dybt i Sjæl og Sind! -
+Ej rører dybt i Sjæl og Sind! -
 Det lysner stundom frem i Livet,
-Her i Forkrænklighedens Bo,
+Her i Forkrænk'lighedens Bo,
 Og spreder da sin milde Ro
-Liig Aftnens Guld, selv over Sivet!
+Lig Aftnens Guld, selv over Støvet!
 
 I gamle elskelige To!
 Hvorhen idag I festligt trine,
 Har Eders Blik den sjeldne Dyd
 At plante Blomsten Tusindfryd
 I Alles Bryst og Alles Mine;
-Og Hver, som trykker Eders Hænder
+Og han, som trykker Eders Hænder
 Med Smil idag og vennehuld,
 Berører Ringens ægte Guld,
 Det ægteste, som Livet kjender!
 
 Halvhundred Aar i Fryd og Vee
 Som i en dunkel dyb Allee
-I vandred ømt og trofast sammen,
+I vandred ømt og trofast sammen;
 Og Ringens Aand gav Eder Mod,
 Og lyste klart for Eders Fod,
 Naar ikke ret I kunde see,
@@ -302,7 +304,7 @@ I Kjærlighedens Flamme!
    <title>En Tyv i Rom</title>
    <firstline>Endt var Osteriets Gilde</firstline>
    <source pages="13-19"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Endt var Osteriets Gilde, -
@@ -338,7 +340,7 @@ Bæved som af Minder ømme.
 Nu mig hilste, næsten hjemme,
 Susende Tritonens Stemme,
 Som med Lunger af Granit
-Sprøited Straalen himmelvidt,
+Sprøjted Straalen himmelvidt,
 Naar den først slap ud af Klemme.
 
 Midt paa Pladsen holdt jeg stille
@@ -351,7 +353,7 @@ Der var Fleer end jeg dog vaagen -
 Dybt i Skyggen, skjult i Krogen,
 Knuget tæt til Husets Muur
 Stod Bevæbnede paa Luur,
-Og de speided efter Nogen.
+Og de spejded efter Nogen.
 
 Og jeg sukked: ,,Nat, Du blide,
 Ogsaa Du har Angst og Kvide
@@ -363,13 +365,13 @@ En af Hine ved min Side.
 Vi skal fange her en Rotte,''
 Hviskede hans Bas med Liv;
 ,,De forstyrrer os, tilgiv,
-Derfor gaa, <i>felice notte!''</i> -
+Derfor gaa, felice notte!'' -
 
 Mandens Ord var let at tyde,
 Blindt jeg havde her at lyde,
 Skjøndt det er mod min Natur,
 Og i Bøn jeg bad Merkur
-Stymperen sin Hjælp at yde. -
+Stymperen sin Hjælp at yde.
 
 Glad jeg atter saae min Stue,
 Tændte Romerlampens Lue,
@@ -383,9 +385,9 @@ Sneg sig med sit blege Skin
 Lig en natlig Elsker ind
 Gjennem Vinduernes Ramme.
 
-Ihvor høit mit Hjerte sætter
+Ihvor højt mit Hjerte sætter
 Sydens mageløse Nætter,
-Har dog Leiets milde Ro,
+Har dog Lejets milde Ro,
 Helst naar Klokken gaaer til To,
 Ogsaa sine Skjønhedspletter.
 
@@ -409,7 +411,7 @@ Snart som liflig Sang fra Syden.
 
 Men med Et veg Drømmetaagen -
 Pludselig min Sjæl blev vaagen;
-Som en Fugl fløi Søvnen væk,
+Som en Fugl fløj Søvnen væk,
 Og jeg anede med Skræk:
 I min Stue var der Nogen.
 
@@ -417,7 +419,7 @@ Og jeg lyttede forfærdet -
 Ganske tæt ved Hovedgjærdet
 Pusled det paa dæmpet Viis -
 Ja, jeg følte Angstens Iis -
-Ei mod Sligt mit Mod var hærdet.
+Ej mod Sligt mit Mod var hærdet.
 
 Og med Gru kom mig i Sinde
 Hvad nu klart sig lod forbinde -
@@ -429,7 +431,7 @@ Værgeløs mig Himlen sendte
 Tanken, ganske tyst at vente,
 Lade som om trygt jeg sov:
 ,,Lad saa Tyven ta'e sit Rov,
-Meget er her ei at hente.''
+Meget er her ej at hente.''
 
 Af og til mig bragte Tiden
 Samme Lyd, men svag og liden: -
@@ -443,7 +445,7 @@ Faldt med al sin milde Fred
 Hen paa mig og - Tyven med,
 Ak, thi jeg var ikke ene;
 
-Høit paa Lampens ydre Bredde,
+Højt paa Lampens ydre Bredde,
 Klirrende med Lampens Kjæde,
 Sad i Ro en lille Muus,
 Fik sig der en rigtig Ruus
@@ -451,7 +453,7 @@ Af min Olie den fede.
 
 Og den nød i Mag sin Hvile,
 Tænkte langtfra paa at ile.
-Nei den drak af Hjertensgrund,
+Nej den drak af Hjertensgrund,
 Slikkede sig om sin Mund,
 Saa selv Maanen maatte smile;
 
@@ -459,12 +461,12 @@ Og som flink Matros i Rangen
 Fired den sig ned af Stangen,
 Da den havde nydt sin Drik -
 Og forsvandt, den lille Strik!
-Og blev ikke dengang fangen. - -
+Og blev ikke dengang fangen.
 
 Mig Apollo mildt beskytted,
 Nattens Kogleri var flyttet -
-Vel blev Rotten kun en <i>,,mus''</i>
-Og dertil <i>,,ridiculus''</i>,
+Vel blev Rotten kun en ,,mus''
+Og dertil ,,ridiculus'',
 Men jeg var dog glad ved Byttet.
 </body>
 </poem>
@@ -475,12 +477,13 @@ Men jeg var dog glad ved Byttet.
    <subtitle>(September 1856)</subtitle>
    <toctitle>Sophieshaab (September 1856)</toctitle>
    <indextitle>Sophieshaab</indextitle>
-   <firstline>Til Høire, der hvor Veien glider</firstline>
+   <firstline>Til Højre, der hvor Vejen glider</firstline>
    <source pages="20-21"/>
-   <quality>korrektur1,kilde,side</quality>
+   <keywords>rahbekk</keywords>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Til Høire, der hvor Veien glider
+Til Højre, der hvor Vejen glider
 Forbi den grønne Jagtallee,
 En landlig Bolig er at see,
 Som sender Smil til alle Sider; -
@@ -498,8 +501,8 @@ Hen til hans Øre Venners Sang,
 Og Kvindens Røst og Bægrets Klang,
 Sad heller han maaske derinde; -
 
-Og han tog ikke Feil tilvisse!
-Saa sandt som Høiheds største Glands
+Og han tog ikke Fejl tilvisse!
+Saa sandt som Højheds største Glands
 Fordunkles af en Rosenkrands,
 Som Glæden fletter om vor Isse; -
 Ja, der var godt og kjært at være!
@@ -521,19 +524,17 @@ Men - Kammas Aand er ej forsvunden.
 <poem id="boedtcher2018100909" variant="boedtcher2001082601">
 <head>
    <title>April</title>
-   <toctitle>April</toctitle>
-   <indextitle>April</indextitle>
    <firstline>Mit Hjerte hilser Dig April!</firstline>
    <source pages="22-23"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Mit Hjerte hilser Dig April! -
 Jeg kjender godt dit Vexelsmil
-Og Taaren i dit Øie;
-Du vil ei ret for Alvor tro,
+Og Taaren i dit Øje;
+Du vil ej ret for Alvor tro,
 At Vinterstormen gik til Ro
-Og smukt sig maatte føie;
+Og smukt sig maatte føje;
 
 Du aner dog, hvad snart vil ske,
 At bag den kolde, klamme Sne
@@ -542,7 +543,7 @@ At Træet atter faaer sin Frugt,
 Og Lærkens Sang sin Himmelflugt
 Den klare Sommermorgen; -
 
-O blide Haab i Hjertets Vraa,
+O, blide Haab i Hjertets Vraa,
 At Intet, Intet skal forgaa,
 Hvad her til Live kommer!
 At Alt, hvad her er visnet hen,
@@ -558,7 +559,7 @@ I Evighedens Sommer!
    <subtitle>(Fragment fra 1823)</subtitle>
    <firstline>O, fryd Dig, Skov, med dine Stammer!</firstline>
    <source pages="24-26"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <nonum><center><small>(Camacho gaaer op og ned og læser paa en stor Liste. En Flok Kokke, som bærer forskjellige Kjøkkenredskaber.</small></center></nonum>
@@ -654,11 +655,9 @@ Druens Rosenblod.
 <poem id="boedtcher2018100911" variant="boedtcher2003010316">
 <head>
    <title>Til min egen Dreng</title>
-   <toctitle>Til min egen Dreng</toctitle>
-   <indextitle>Til min egen Dreng</indextitle>
    <firstline>I din Haand du Lille! blinker</firstline>
    <source pages="27-28"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 I din Haand du Lille! blinker
@@ -666,30 +665,30 @@ Nøglen til Alverdens Skat:
 Naar din Fantasi kun vinker,
 Faaer du hvert et Ønske fat:
 
-Kongens Slot du kunstigt bygger -
+Kongens Slot Du kunstigt bygger -
 Et Spil Kort er dertil nok,
-Ønsker du en Hest med Nykker,
-Sadler du din Faders Stok;
+Ønsker Du en Hest med Nykker,
+Sadler Du din Faders Stok;
 
 Hvis sit Trav den stædig mindsker,
 Bruges Pidsken - det er klart,
-Og den steiler, og den vrindsker,
+Og den stejler, og den vrindsker,
 Men den lystrer i en Fart:
 
-Hurtig er du da i Skoven,
-Hvor dig møder Eventyr,
-Og du seirer kjæk forvoven
+Hurtig er Du da i Skoven,
+Hvor Dig møder Eventyr,
+Og Du sejrer kjækt forvoven
 Over Drager - vilde Dyr; -
 
 Naar saa Eventyret ender,
-Sidder du som i en Krands
-Paa din Bænk blandt lutter <i>Venner:</i>
-Peder, Jørgen, Jens og Hans. -
+Sidder Du som i en Krands
+Paa din Bænk blandt lutter <w>Venner:</w>
+Peder, Jørgen, Jens og Hans.
 
-Lykkelig jeg vil dig kalde,
-Du min egen lille Strik!
+Lykkelig jeg vil Dig kalde,
+Du, min egen lille Strik!
 Naar du finder blandt dem Alle
-Een, blot <i>Een, som holder Stik!</i>
+Een, blot <w>Een, som holder Stik!</w>
 </body>
 </poem>
 
@@ -698,21 +697,21 @@ Een, blot <i>Een, som holder Stik!</i>
    <title>Skriftestolen</title>
    <subtitle>En Jule-Fortælling</subtitle>
    <toctitle>Skriftestolen. En Jule-Fortælling</toctitle>
-   <firstline>Det var just en Juleqveld</firstline>
+   <firstline>Det var just en Julekvæld</firstline>
    <source pages="29-43"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Det var just en Juleqveld,
-Sneehvid som i gamle Dage,
+Det var just en Julekvæld,
+Snehvid som i gamle Dage,
 Og man hørte Frosten knage,
 Hvor man satte hen sin Hæl; -
 Og foroven, hvilken Pragt!
 Stjernerne fra alle Kanter
 Funklede som Diamanter
-Paa en dunkel Høitidsdragt.
+Paa en dunkel Højtidsdragt.
 
-Himlen liig, men i det Smaa,
+Himlen lig, men i det Smaa,
 Havde ogsaa Jordens Tue
 Festligt i sin Julestue
 Stjerner tændt i hver en Vraa;
@@ -730,9 +729,9 @@ Hvor - o Fryd, som Ingen fatter! -
 Husets unge, skjønne Datter
 Lønlig saae i ham sin Fest!
 
-Nær ved ham en deilig Dreng
+Nær ved ham en dejlig Dreng
 Bragte Alle til at smile -
-Barnets Blikke fløi som Pile
+Barnets Blikke fløj som Pile
 Rundt paa hver en Ting ifleng;
 Og evindelig foer om
 Haanden i den lille Lomme,
@@ -741,26 +740,26 @@ Haanden blev bestandig tom.
 
 Men Camillo stod ham bi,
 - Let en Elskende kan vindes -
-Drengens Øine ligned <i>hendes,</i>
+Drengens Øine ligned <w>hendes,</w>
 Drog ham sødt med Sympathi.
 Og han klapped blidt hans Kind,
 Kjøbte ham en Pil og Bue
 Og forlod den lumre Stue,
 Styrket i den kolde Vind.
 
-,,Ja!'' han mumled paa sin Vei,
+,,Ja!'' han mumled paa sin Vej,
 ,,Sløret falde maa iaften!
-Blot mit Ord maa eie Kraften,
-Og at <i>Hun</i> har Mod som jeg!
-Husets Guld mig frister ei, -
+Blot mit Ord maa eje Kraften,
+Og at <w>Hun</w> har Mod som jeg!
+Husets Guld mig frister ej, -
 Klart Alverden maa erkjende:
-<i>Leve</i> kan jeg uden hende, -
-Leve uden <i>Anna</i> - nei!''
+<w>Leve</w> kan jeg uden hende, -
+Leve uden <w>Anna</w> - nej!''
 
-Meer og meer blev Gaden steil,
+Meer og meer blev Gaden stejl,
 Alt som Phantasien stilled
-For hans Øie Aftnens Billed
-I sit magisk slebne Speil:
+For hans Øje Aftnens Billed
+I sit magisk slebne Spejl:
 Glimrende, men kold som Iis.
 Ingen Julespøg med Panter,
 Kjedsomhed og gamle Tanter -
@@ -770,39 +769,39 @@ Foden standser - rigtigt see!
 Bag Gardinerne, de røde,
 Seer han Lysekronen gløde,
 Lugter Duften alt af Thee,
-Veed, at Anna festlig staaer
+<w>Veed</w>, at Anna festlig staaer
 Ved den blanke Sølvmaskine
 Og med en urolig Mine
 Lytter, hvergang Døren gaaer.
 
-Elskovs Himmel har sit <i>Lyn</i> -
+Elskovs Himmel har sit <w>Lyn</w> -
 Viger Haab og Mod tilbage,
 Vil den Elskende forsage,
 Flux ham sendes sligt et Syn -
 Længslen sprænger alle Baand -
-Ei var endt Minutet, førend
+Ej var endt Minutet, førend
 Rask Camillo stod ved Døren,
 Havde Laasen i sin Haand.
 
 Og da elskovsfuld i Sind
 Blindt han fulgte Hjertets Flamme,
-Saae han ei, at med det Samme
-Fløi med ham en Lille ind -
+Saae han ej, at med det Samme
+Fløj med ham en Lille ind -
 Barnet, som han klapped mild
 Nys paa Kindens Rosenlue,
-Drengen med sin Piil og Bue,
+Drengen med sin Pil og Bue,
 Og hvis Blik var som en Ild.
 
-Gik den Lille feil maaskee,
+Gik den Lille fejl maaske,
 Meente han at være hjemme?
 ingen hævede sin Stemme,
 Alle stræbte kun at see -
 Fuld af Ynde stod han der,
-Liig en Gud paa Piedestalen,
+Lig en Gud paa Piedestalen,
 Og med Blikket rundt i Salen
 Sigtede han skjelmsk paa hver.
 
-Skjønhed liig en Trylledrik
+Skjønhed lig en Trylledrik
 Varmer Hjertet, hæver Vingen,
 Og blandt Alle var der Ingen,
 Som sad meer med roligt Blik -
@@ -818,7 +817,7 @@ Som den Lille havde tændt,
 Ja, det var dem Begge fast,
 Som om Ømheds første Dage
 Atter lod dem Nektar smage
-Ved hans lyse Øiekast.
+Ved hans lyse Øjekast.
 
 Som i Ørknen efter Brød
 Higed ham Enhver at favne,
@@ -827,24 +826,24 @@ Satte ham paa Knæ og Skjød -
 Barnet fulgte Alles Bud,
 Vilde Ingen volde Smerte,
 Og fra Hjerte hen til Hjerte
-Fløi han som et Stjerneskud.
+Fløj han som et Stjerneskud.
 
 ,,Jeg har seet hans Ansigt før,''
 Sukked Annas gamle Tante,
-,,Det er ikke af de <i>vante</i>
+,,Det er ikke af de <w>vante</w>
 Som man let forglemme bør;
 Dog - mig rinder klart i Hu,
 Det er længe, længe siden,
 Og saa stemmer ikke Tiden -
 Han er jo et Barn endnu!''
 
-,,Hvor har Du dit Hjem, Du Smaa?''
+,,Hvor har Du dit Hjem, du Smaa?''
 Spurgte Anna, som med Varme
 Holdt ham fast i sine Arme,
 Og han peged: ,,ovenpaa!''
 ,,Men nu bliver Du hos os,
-Ikke sandt, Du søde Lille?''
-,,Ja, naar <i>lege Juul</i> I ville!''
+Ikke sandt, du søde Lille?''
+,,Ja, naar <w>lege Juul</w> I ville!''
 Svared han med barnlig Trods.
 
 Bønligt vendte Annas Blik
@@ -881,10 +880,10 @@ Andre til den ,,brede Steen'', -
 Ingen gav han Rist og Ro,
 Og da nu med komisk Stønnen
 Selv Agenten ,,faldt i Brønden''
-O, hvor Tanterne da loe!
+O, hvor Tanterne da lo!
 
 Tiden selv kom ud af Takt,
-Timerne fløi altfor fage,
+Timerne fløj altfor fage,
 Snart var kun eet Pant tilbage,
 Som blev til Camillo rakt;
 Smilte da den lille Strik,
@@ -913,7 +912,7 @@ Lukked Døren til paa Klem.
 Men som naar et roligt Vand
 Føler pludselig en Brise
 Og kan ikke længer vise
-Speilet med sin stille Rand -
+Spejlet med sin stille Rand -
 Drev nu Brisen her sit Spil
 Først med en nysgjerrig Kikken,
 Saa med Hvisken, saa med Nikken
@@ -924,7 +923,7 @@ Hvilken underfuld Forandring
 Paa hans korte Pilgrimsvandring!
 Han var salig som en Gud!
 Fandt tilnød sin tomme Stol
-Og holdt Øiet her utrættet
+Og holdt Øjet her utrættet
 Hen mod Skriftestolen rettet,
 Som Magneten mod sin Pol.
 
@@ -933,7 +932,7 @@ Slog med Vingen ikke længer,
 Og den lille Fuglefænger
 Traadte hen til hendes Skjul.
 ,,Modig, nævn din Skriftefa'er -
-Julens Gud Dig ei forlader!''
+Julens Gud Dig ej forlader!''
 ,,Jeg vil skrifte for min Fader!''
 Gav hun bævende til Svar.
 
@@ -958,19 +957,19 @@ Svar ved Smilet om sin Mund.
 Trægt gik Tidens Flugt forbi,
 Lang var Skriftemaalets Pause,
 Alle sad omsider tause
-Med den travle Phantasi -
+Med den travle Phantasi.
 Endelig man Anna seer,
-Taaren hang i hendes Øie,
-Men liig Taagen i det Høie,
+Taaren hang i hendes Øje,
+Men liig Taagen i det Høje,
 Hvorigjennem Stjernen leer.
 
-Og hun bøiede sig ømt,
+Og hun bøjede sig ømt,
 Trykkede med henrykt Mine
 Barnets Læber varmt mod sine,
 Mens hun trued ham paaskrømt;
 Gik saa til sin Moder kjær,
 Gav Camillo dog forinden
-Et af hine Blik fra Qvinden,
+Et af hine Blik fra Kvinden,
 Som er ligt et Himmelskjær.
 
 Uden først at spørges ad
@@ -983,10 +982,10 @@ Roligt lysende som Solen,
 Naar mod Vest den gjør sit Skridt.
 
 Men nu steg til Bægrets Rand
-Brat Nysgjerrighedens Qvide;
+Brat Nysgjerrighedens Kvide;
 Stolene blev skudt tilside,
-Og man reiste sig paastand;
-Og man speided, gik paa Luur,
+Og man rejste sig paastand;
+Og man spejded, gik paa Luur,
 Tungen løb af al Formue,
 Da Agenten og hans Frue
 Aabned Skriftestolens Buur.
@@ -1001,7 +1000,7 @@ Bordet venter, der er dækket,
 Gjør som jeg og følg mit Spor.''
 
 Og sin Kones Arm han tog,
-Ingen turde Veien spærre,
+Ingen turde Vejen spærre,
 Og man fulgte Husets Herre
 Som en Sphinx, der foran drog.
 Først da Alt om Bordets Fryd
@@ -1009,26 +1008,26 @@ Sad i Kreds og danned Rammen,
 - Anna og Camillo sammen -
 Slog Agentens Glas ,,til Lyd''.
 
-Og han reiste sig: ,,Jeg veed,
+Og han rejste sig: Jeg veed,
 At der findes ingen Naade
 For en Præst, som vil forraade
 Skriftemaalets Hellighed;
 Men - jeg lystrer Hjertets Bud -
-<i>Anna og Camillo</i> leve!
+<w>Anna og Camillo leve!</w>
 Rask et Hurra af de gjeve,
-Leve Brudgom, leve Brud!''
+Leve Brudgom, leve Brud!
 
 Og der blev en festlig Gang
-Bordet rundt med Smiil og Neien,
-Glassene paa hele Veien
+Bordet rundt med Smiil og Nejen,
+Glassene paa hele Vejen
 Ringede som Klokkeklang;
 Og de gamle Damer loe:
 ,,Skjøndt der skriftedes bag Døren,
 Har vi Tanter skarpe Øren,
-Og vi hørte Græsset groe!''
+Og vi hørte Græsset gro!''
 
 Nu slog Fruen paa sit Glas:
-,,Høit en Skaal for ham, vor Lille,
+,,Højt en Skaal for ham, vor Lille,
 Englen i vort Julegilde,
 Han har første Æresplads!'' -
 Ak, men da man rigtigt saae,
@@ -1041,17 +1040,16 @@ Og var smuttet - ,,ovenpaa''.
 <poem id="boedtcher2018100913" variant="boedtcher2003010339">
 <head>
    <title>Somme Dage</title>
-   <toctitle>Somme Dage</toctitle>
-   <indextitle>Somme Dage</indextitle>
    <firstline>Naar blandt Nattens Stjernevrimmel</firstline>
    <source pages="44-45"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <keywords>brahe</keywords>
 </head>
 <body>
 Naar blandt Nattens Stjernevrimmel
-Tycho speided fra sin Borg,
+Tycho spejded fra sin Borg,
 Glemte han al jordisk Sorg,
-Følte i sit Bryst en Himmel -
+Følte i sit Bryst en Himmel, -
 Men naar skyfuld Nattens Porte
 Tidt var lukket, som til Spot,
 Skrev han Stregerne de sorte,
@@ -1060,7 +1058,7 @@ Som af Alle mindes godt.
 Ofte dog den ædle Herre
 Samlede sit Mod paany.
 Og han smilte ad den Sky,
-Som ham vilde Himlen sperre:
+Som ham vilde Himlen spærre:
 Grubled med sin lyse Hjerne,
 Og ved Tankens stærke Tvang
 Brød han Skyen, saae sin Stjerne
@@ -1071,26 +1069,24 @@ Tycho! dine gamle Ord,
 At vor lille dunkle Jord
 Ejer visse onde Dage -
 Dage, ak, som Sjælen trykker
-Liig et Uhr, der gaar istaa,
+Lig et Uhr, der gaar istaa,
 Og hvor Øjet møder Skygger
 Ængstende i hver en Vraa.
 
-Lær mig da du vise Døde,
+Lær mig da, du vise Døde,
 Naar det dæmrer i min Sjæl,
 Ej at lystre som en Træl,
 Men gaa Tvivlen kjæk imøde -
 Lad min Aand da bag det Dunkle,
 Som vil binde for mit Syn,
 Se min klare Stjerne funkle
-Gjennem Nattens mørke Bryn!
+Stærkere end Nattens Lyn!
 </body>
 </poem>
 
 <poem id="boedtcher2018100914" variant="boedtcher2003010348">
 <head>
    <title>Et Møde</title>
-   <toctitle>Et Møde</toctitle>
-   <indextitle>Et Møde</indextitle>
    <firstline>Du Ensomhedens Sødme</firstline>
    <source pages="46-50"/>
    <quality>korrektur1,kilde,side</quality>
@@ -1117,7 +1113,7 @@ Da kasted Du en Straale
 Af Livets Solskin ind!
 
 End mindes jeg min Længsel
-En deilig Sommerkvæld,
+En dejlig Sommerkvæld,
 Som drev mig dig at søge
 Fordybet i mig selv;
 
@@ -1139,7 +1135,7 @@ Jeg veed nok selv hvorhen, -
 Jeg smutted bag en Stamme,
 Ret som et Skjul beredt,
 Og ømt jeg bad Dryaden
-Om ei at blive seet;
+Om ej at blive seet;
 
 Men Pan hans Fod har styret -
 Jeg hørte med et Suk
@@ -1161,10 +1157,10 @@ Jeg lo, og saae mig om,
 Og ventede hans Latter -
 Men ingen Latter kom.
 
-Og da jeg listig speided,
+Og da jeg listig spejded,
 Men Intet fik at see,
 Da var det fast som Skoven
-Sig tvang for ei at lee:
+Sig tvang for ej at lee:
 
 Snart Alt sig aabenbared -
 Det var en lille Spøg
@@ -1172,7 +1168,7 @@ Som kom tilsidst fra Skovens
 Den <i>virkelige</i> Gjøg.
 
 Jeg saae den løfte Vingen -
-Forbi den fløi saa kvik,
+Forbi den fløj saa kvik,
 Og sendte mig i Flugten
 Et muntert Sommerblik.
 
@@ -1188,12 +1184,12 @@ Mig endnu mangt et Aar!
    <title>Notturno</title>
    <toctitle>Notturno</toctitle>
    <indextitle>Notturno</indextitle>
-   <firstline>Intet Lys mit Øie skimter</firstline>
+   <firstline>Intet Lys mit Øje skimter</firstline>
    <source pages="51-52"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Intet Lys mit Øie skimter
+Intet Lys mit Øje skimter
 Bag Gardinets Hang -
 I den blanke Rude glimter
 Maanens tause Gang:
@@ -1248,7 +1244,7 @@ Og til den røde Lak.
 Hen paa Guitaren falder
 Som Maanskin Lampens Blikke,
 Guitaren - hvorfor ikke?
-Min Haand er ei saa haard,
+Min Haand er ej saa haard,
 At jo til Liv jeg kalder
 Endnu en blød Akkord. -
 
@@ -1268,7 +1264,7 @@ Som var vi tyve Aar.
 
 Vi strøe med Roser Stuen,
 Med Ungdomsminder søde,
-Og er de ei saa røde
+Og er de ej saa røde
 Ak, som ved Morgengry -
 Vi stænke dem med Druen,
 Saa blusse de paany!
@@ -1323,16 +1319,16 @@ Og saa til Aske brænde
 Hvad Ingen skulde see!
 
 Og end ved Midnatstide
-Sad henrykt jeg og bøiet,
-Med Smiil og Graad i Øiet -
+Sad henrykt jeg og bøjet,
+Med Smiil og Graad i Øjet -
 Men naar et Blad var endt,
 Blev - ømt det lagt tilside,
 Men Intet, Intet brændt!
 
-Nei, urørt bar jeg Skatten,
-- Mit Hjertes gyldne Eie,
-Hen til sit skjulte Leie,
-Hvor jeg kun kjender Vei -
+Nej, urørt bar jeg Skatten,
+- Mit Hjertes gyldne Eje,
+Hen til sit skjulte Leje,
+Hvor jeg kun kjender Vej -
 Og drømte hele Natten
 Om Roser og - om <i>Dig!</i>
 </body>
@@ -1364,7 +1360,7 @@ Hvor som ung jeg knælte ned;
 Mangen blaa Viol, som blunded'
 I det bløde Græs, jeg fik,
 Medens af og til mit Blik
-Speidende fløi over Sundet.
+Spejdende fløj over Sundet.
 
 Bøgen hist, min Barndomsven,
 Vifted med sit Løv det friske,
@@ -1403,8 +1399,8 @@ Og som nu sang med i Chor,
 Maatte vel det Samme mene.
 
 Og da nær ved Bakkens Top
-Sig den Ranke maatte bøie,
-Var det for mit glade Øie,
+Sig den Ranke maatte bøje,
+Var det for mit glade Øje,
 Som en Rose dukked op;
 Vel forstummed hendes Trille,
 Skabt for Ensomhedens Hjem,
@@ -1412,26 +1408,26 @@ Ak, men Fuglen selv kom frem,
 Nærmende sig bly og stille.
 
 Lykkelige Ungdomsaar!
-Mig det var, som Freia sendte
+Mig det var, som Freja sendte
 Ned sin Terne for at hente
 Blomster til sit gyldne Haar;
 Tankens Billed mig besjælte,
-Og jeg rakte freidiglet
+Og jeg rakte frejdiglet
 Hen min friske Vaarbuket,
 Mens endnu jeg ydmygt knælte.
 
 Med et lille Smiil, som gjød
 Over Munden al sin Sødme,
 Tog hun af min Haand med Rødme
-Hvad jeg i Begeistring bød -
+Hvad jeg i Begejstring bød -
 End jeg grant kan skue hende
 Med sin skjelmske Ynde - ak,
 Hvad er Ord vel mod den Tak,
 Som en Piges Blik kan sende!
 
 Og da nu med langsom Fod
-Hun sig fjerned, speided nøie
-Rundt i Græsset hendes Øie,
+Hun sig fjerned, spejded nøje
+Rundt i Græsset hendes Øje,
 Og med Et hun stille stod;
 Ned mod Jorden hun sig bukked,
 Og en mørkeblaa Viol,
@@ -1447,10 +1443,10 @@ Pludselig sin kjække Daad,
 Og, som stukket af en Braad,
 Vendte hun sig rask og flygted.
 
-Men Violen flygted ei -
+Men Violen flygted ej -
 Fast jeg holdt min lille Fange,
 Og skjøndt <i>Een</i> kun, for saa Mange
-Bytted jeg dog ikke, nei!
+Bytted jeg dog ikke, nej!
 Vel forlængst har Tid og Luften
 Smuldret Blomstens fine Løv
 Og forvandlet den til Støv,
@@ -1469,7 +1465,7 @@ Men endnu mig glæder Duften!
 </head>
 <body>
 Din varme Puls, du gyldne Mai!
-Til Jordens Bryst har fundet Vei
+Til Jordens Bryst har fundet Vej
 Trods Vintrens bittre Vaande;
 Violens Duft bevidner bly
 At Jorden drager sødt paany
@@ -1524,15 +1520,15 @@ Og dine Læbers Varme!
    <title>I en lille Piges Album</title>
    <toctitle>I en lille Piges Album</toctitle>
    <indextitle>I en lille Piges Album</indextitle>
-   <firstline>Dig selv, mit Barn, jeg kjender ei</firstline>
+   <firstline>Dig selv, mit Barn, jeg kjender ej</firstline>
    <source pages="66-68"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>stambog</keywords>
 </head>
 <body>
-Dig selv, mit Barn, jeg kjender ei -
+Dig selv, mit Barn, jeg kjender ej -
 Jeg kjender kun din unge Alder,
-Men <i>den</i> er som en Blomstervei,
+Men <i>den</i> er som en Blomstervej,
 Hvor Glæden vinker, naar du kalder:
 
 Og fremad jublende du gaaer,
@@ -1540,20 +1536,20 @@ Og med en Gartner ved din Side,
 Som fletter Blomster i dit Haar,
 Og vogter Foden, som vil glide -
 
-Men altid <i>frem!</i> Snart Veien naaer
+Men altid <i>frem!</i> Snart Vejen naaer
 Sin Udgang gjennem Blomsterbugter -
 Med Et du ved en Have staaer,
 Hvor Træer vinke dig med Frugter;
 
 Men nu din Tanke selv bær' Frugt,
 Du mindes, at i Edens Have
-Ei Alt var godt, som just var smukt,
+Ej Alt var godt, som just var smukt,
 Og fromt du vælger Træets Gave. -
 
 O hvilken Duft og Fuglesang!
 Saa rig du drømte Haven ikke,
 Trods Bygerne en enkelt Gang
-Gaae Dagene som Øieblikke.
+Gaae Dagene som Øjeblikke.
 
 Men <i>Fremad!</i> er din Fods Behov,
 Og endt er Havens lyse Gange -
@@ -1701,7 +1697,7 @@ Fristende skjønne, hver en himmelsk Gave.
 Ingen blandt Alle sætter dog i Skygge
    Kjærligheds Lykke!
 
-Freidige Ungdom, Dig har Eros kaaren,
+Frejdige Ungdom, Dig har Eros kaaren,
 Skatten den rige hæves kun i Vaaren,
 Før Livets Mismod køler med sin Harme
    Hjerternes Varme.
@@ -1752,11 +1748,11 @@ Blev aldrig smelted ved en Piges Smil:
 At derfor i hans Verker Elskerinden
 Kun taler Pebersvendens kolde Stil:
 Den arme Skjald! ham Amor negted Vingen!
-Hvi fandt han ei en Aand, som ham henrev,
-En Qvinde, som - dog nei, jeg nævner Ingen -
+Hvi fandt han ej en Aand, som ham henrev,
+En Qvinde, som - dog nej, jeg nævner Ingen -
 Der stundom trykked ømt den Haand, som skrev!
 Nu derimod, udmattet af at tænke,
-Ham Rosen kvæged ei paa Livets Tiørn,
+Ham Rosen kvæged ej paa Livets Tiørn,
 Og derfor Sorø blev hans lærde Enke,
 Og Bøger hans udødelige Børn: -
 De muntre Væsner jeg idag Dem sender,
@@ -1947,7 +1943,7 @@ Og Himlen selv vil Dig beskjærme!
    <title>Sølvbryllupssang</title>
    <subtitle>1839</subtitle>
    <!--<subtitle>paa Nebbegaard, den 15de Marts 1839</subtitle>-->
-   <firstline>Der er en Tid, da frisk Begeistring kalder</firstline>
+   <firstline>Der er en Tid, da frisk Begejstring kalder</firstline>
    <source pages="84-85"/>
    <dates>
        <event>1839-03-15</event>
@@ -1955,7 +1951,7 @@ Og Himlen selv vil Dig beskjærme!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Der er en Tid, da frisk Begeistring kalder,
+Der er en Tid, da frisk Begejstring kalder,
 Og Hjertet boer i Glædens muntre Hal, -
 Et Gjenskin af hin tabte gyldne Alder,
 Da Guldet selv var ubekjendt Metal:
@@ -2240,7 +2236,7 @@ Jeg hviled under Bøgens Skjul
 Og over mig en liden Fugl
    Smaanynned af og til.
 Hvad Fuglen sang for sig i Løn
-   Ei fatted ret min Hu;
+   Ej fatted ret min Hu;
 Men Skoven aldrig var saa grøn
    Og duftende som nu.
 
@@ -2249,7 +2245,7 @@ Et Blink brød frem bag Løvets Hang
 Da kunde klart, hvad Fuglen sang,
    Mit Hjerte nok forstaae.
 Den sad i Aftensolens Lyn
-   Saa høit og saae sig om,
+   Saa højt og saae sig om,
 Og af og til et lille Nyn
    Af Tak og Glæde kom.
 
@@ -2258,7 +2254,7 @@ Da Solen sank, en sagte Vind
 En Hvisken lød i Bøg og Lind
    Ret som et blidt Godnat.
 Min lille Fugl blev taus paastand,
-   Den fandt til Reden Vei
+   Den fandt til Reden Vej
 Og drømte om et yndigt Land -
    Det Samme drømte jeg.
 </body>
