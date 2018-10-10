@@ -1317,6 +1317,12 @@ const works_first_pass = collected => {
         const linkTitle = linktitle || title || firstline;
         const indexTitle = indextitle || title || firstline;
 
+        if (linkTitle == null) {
+            throw new Error(
+            `fdirs/${poetId}/${workId}.xml: ${textId} has no usable title`
+            );
+        }
+
         texts.set(textId, {
           title: replaceDashes(linkTitle.title),
           firstline: replaceDashes(firstline == null ? null : firstline.title),
