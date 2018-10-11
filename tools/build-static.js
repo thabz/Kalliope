@@ -838,7 +838,9 @@ const handle_text = (
   let refsArray = (collected.textrefs.get(textId) || []).map(id => {
     const meta = collected.texts.get(id);
     const poet = poetName(collected.poets.get(meta.poetId));
-    const work = workLinkName(collected.works.get(meta.poetId + '/' + meta.workId));
+    const work = workLinkName(
+      collected.works.get(meta.poetId + '/' + meta.workId)
+    );
     return [
       [
         `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`,
@@ -901,14 +903,27 @@ const handle_text = (
     ) {
       // Deduce facsimilePages from pages and facsimilePagesOffset.
       const pagesParts = pagesAttr.split(/-/).map(n => parseInt(n));
-      const pFrom = pagesParts[0] + workSource.facsimilePagesOffset;
-      const pTo = (pagesParts[1] || pFrom) + workSource.facsimilePagesOffset;
-      facsimilePages = [pFrom, pTo];
+      const o = workSource.facsimilePagesOffset;
+      const pFrom = pagesParts[0];
+      const pTo = pagesParts[1] || pFrom;
+      facsimilePages = [pFrom + o, pTo + o];
     } else if (facsimilePages != null) {
       const pagesParts = facsimilePages.split(/-/).map(n => parseInt(n));
       const pFrom = pagesParts[0];
       const pTo = pagesParts[1] || pFrom;
       facsimilePages = [pFrom, pTo];
+    }
+    if (facsimilePages[0] > facsimilePages[1]) {
+      throw new Error(
+        `fdirs/${poetId}/${workId}.xml ${textId} sideangivelser har fra > til.`
+      );
+    }
+    if (facsimilePages[1] > workSource.facsimilePageCount) {
+      throw new Error(
+        `fdirs/${poetId}/${workId}.xml ${textId} sideangivelse ${facsimilePages[1]} rækker over antal facsimile-sider. Er facsimile-pages-offset ${
+          workSource.facsimilePageCount
+        } korrekt?`
+      );
     }
     source = {
       source: sourceBookRef,
@@ -1180,7 +1195,7 @@ const extractDates = head => {
     result.written = safeGetText(dates, 'written');
   }
   return result;
-}
+};
 const build_global_lines_json = collected => {
   safeMkdir('static/api/alltexts');
   let changed_langs = {};
