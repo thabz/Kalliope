@@ -6190,7 +6190,6 @@ Et ærligt Hjerte, og min hulde, kloge Pige,
         <note>Gendigtning af Friedrich Rückert: <xref type="translation" poem="rueckert2018101101"/>.</note>
     </notes>
     <source pages="225-227"/>
-    <keywords>rueckert</keywords>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7111,9 +7110,10 @@ Saaledes, som det her nu findes.
     <title>Min Gudinde</title>
     <subtitle>Efter Goethe</subtitle>
     <firstline>Hvilken Gudinde</firstline>
-    <!-- TODO: Find Goethes original.-->
     <source pages="262-265"/>
-    <keywords>goethe</keywords>
+    <notes>
+        <note>Oversættelse af Goethes <xref type="translation" poem="goethe2018101101"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7284,7 +7284,6 @@ Og dig at byde Trods,
 Som jeg!
 </body>
 </poem>
-
 
 </content>
 </section> <!-- Oversættelser -->
