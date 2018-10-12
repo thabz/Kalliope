@@ -197,6 +197,7 @@ const build_poet_timeline_json = (poet, collected) => {
         ],
       });
     }
+    let dead_date = null;
     if (poet.period.dead.date !== '?') {
       const place = (poet.period.dead.place != null
         ? ' ' +
@@ -224,7 +225,10 @@ const build_poet_timeline_json = (poet, collected) => {
   }
   if (items.length >= 2) {
     const start_date = normalize_timeline_date(items[0].date);
-    const end_date = normalize_timeline_date(items[items.length - 1].date);
+    let end_date = normalize_timeline_date(items[items.length - 1].date);
+    if (poet.period.dead.date !== '?') {
+      end_date = normalize_timeline_date(poet.period.dead.date);
+    }
     let globalItems = collected.timeline.filter(item => {
       const d = normalize_timeline_date(item.date);
       return d > start_date && d < end_date;
@@ -1151,7 +1155,7 @@ const extractDates = head => {
     result.written = safeGetText(dates, 'written');
   }
   return result;
-}
+};
 const build_global_lines_json = collected => {
   safeMkdir('static/api/alltexts');
   let changed_langs = {};
@@ -1175,9 +1179,9 @@ const build_global_lines_json = collected => {
     collected.texts.forEach((textMeta, textId) => {
       const poet = collected.poets.get(textMeta.poetId);
       if (poet == null) {
-          // Ignorer. Dette kan ske når vi skifter mellem branches og digtere
-          // kommer og går fra poets.xml
-          return;
+        // Ignorer. Dette kan ske når vi skifter mellem branches og digtere
+        // kommer og går fra poets.xml
+        return;
       }
       if (changed_langs[poet.country]) {
         let per_country = collected_lines.get(poet.country) || new Map();
@@ -1318,9 +1322,9 @@ const works_first_pass = collected => {
         const indexTitle = indextitle || title || firstline;
 
         if (linkTitle == null) {
-            throw new Error(
+          throw new Error(
             `fdirs/${poetId}/${workId}.xml: ${textId} has no usable title`
-            );
+          );
         }
 
         texts.set(textId, {
