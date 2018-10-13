@@ -835,19 +835,25 @@ const handle_text = (
       });
   }
 
-  let refsArray = (collected.textrefs.get(textId) || []).map(id => {
-    const meta = collected.texts.get(id);
-    const poet = poetName(collected.poets.get(meta.poetId));
-    const work = workLinkName(
-      collected.works.get(meta.poetId + '/' + meta.workId)
-    );
-    return [
-      [
-        `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`,
-        { html: true },
-      ],
-    ];
-  });
+  let refsArray = (collected.textrefs.get(textId) || [])
+    .filter(id => {
+      // Hvis en tekst har varianter som også henviser til denne,
+      // vil vi kun vise den ældste variant.
+      return primaryTextVariantId(id) === id;
+    })
+    .map(id => {
+      const meta = collected.texts.get(id);
+      const poet = poetName(collected.poets.get(meta.poetId));
+      const work = workLinkName(
+        collected.works.get(meta.poetId + '/' + meta.workId)
+      );
+      return [
+        [
+          `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`,
+          { html: true },
+        ],
+      ];
+    });
 
   const variantsArray = (resolve_variants(textId) || [])
     .filter(id => {
@@ -920,7 +926,9 @@ const handle_text = (
     }
     if (facsimilePages[1] > workSource.facsimilePageCount) {
       throw new Error(
-        `fdirs/${poetId}/${workId}.xml ${textId} sideangivelse ${facsimilePages[1]} rækker over antal facsimile-sider. Er facsimile-pages-offset ${
+        `fdirs/${poetId}/${workId}.xml ${textId} sideangivelse ${
+          facsimilePages[1]
+        } rækker over antal facsimile-sider. Er facsimile-pages-offset ${
           workSource.facsimilePageCount
         } korrekt?`
       );
@@ -1219,9 +1227,9 @@ const build_global_lines_json = collected => {
     collected.texts.forEach((textMeta, textId) => {
       const poet = collected.poets.get(textMeta.poetId);
       if (poet == null) {
-          // Ignorer. Dette kan ske når vi skifter mellem branches og digtere
-          // kommer og går fra poets.xml
-          return;
+        // Ignorer. Dette kan ske når vi skifter mellem branches og digtere
+        // kommer og går fra poets.xml
+        return;
       }
       if (changed_langs[poet.country]) {
         let per_country = collected_lines.get(poet.country) || new Map();
@@ -1844,6 +1852,15 @@ const build_poet_works_json = collected => {
   });
 };
 
+const primaryTextVariantId = textId => {
+  const variants = resolve_variants(textId);
+  if (variants != null && variants.length > 0) {
+    return variants[0];
+  } else {
+    return textId;
+  }
+};
+
 const build_poet_lines_json = collected => {
   collected.poets.forEach((poet, poetId) => {
     const filenames = collected.workids
@@ -1865,8 +1882,7 @@ const build_poet_lines_json = collected => {
       doc.find('//poem|//section[@id]').forEach(part => {
         const textId = part.attr('id').value();
         // Skip digte som ikke er ældste variant
-        const variants = resolve_variants(textId);
-        if (variants != null && variants.length > 0 && variants[0] != textId) {
+        if (primaryTextVariantId(textId) !== textId) {
           return;
         }
 
