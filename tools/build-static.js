@@ -150,7 +150,6 @@ const load_timeline = filename => {
 };
 
 const build_global_timeline = collected => {
-  // TODO: Cache this file
   return load_timeline('data/events.xml');
 };
 
@@ -169,24 +168,31 @@ const build_poet_timeline_json = (poet, collected) => {
 
   let items = [];
   if (poet.type !== 'collection') {
-    collected.workids.get(poet.id).forEach(workId => {
-      const work = collected.works.get(`${poet.id}/${workId}`);
-      if (work.year != '?') {
-        // TODO: Hvis der er et titel-blad, så output type image.
-        const workName = work.has_content
-          ? `<a work="${poet.id}/${workId}">${work.title}</a>`
-          : work.title;
-        items.push({
-          date: work.published,
-          type: 'text',
-          content_lang: 'da',
-          is_history_item: false,
-          content_html: [
-            [`${poet.name.lastname}: ${workName}.`, { html: true }],
-          ],
-        });
-      }
-    });
+    collected.workids
+      .get(poet.id)
+      .filter(workId => {
+        // Vi vil ikke have underværkerne i tidslinjen
+        const work = collected.works.get(`${poet.id}/${workId}`);
+        return work.parent == null;
+      })
+      .forEach(workId => {
+        const work = collected.works.get(`${poet.id}/${workId}`);
+        if (work.year != '?') {
+          // TODO: Hvis der er et titel-blad, så output type image.
+          const workName = work.has_content
+            ? `<a work="${poet.id}/${workId}">${work.title}</a>`
+            : work.title;
+          items.push({
+            date: work.published,
+            type: 'text',
+            content_lang: 'da',
+            is_history_item: false,
+            content_html: [
+              [`${poet.name.lastname}: ${workName}.`, { html: true }],
+            ],
+          });
+        }
+      });
     if (poet.period.born.date !== '?') {
       const place = (poet.period.born.place != null
         ? '  ' +
