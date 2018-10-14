@@ -12,7 +12,6 @@
         <picture src="1851-p1.jpg">Titelbladet til <i>Nye Digte</i> (1851) lyder ,,Nye Digte, / af / Christian Winther. // Kjøbenhavn. / Forlagt af C. A. Reitzel. / Trykt hos Bianco Luno. / 1851.''</picture>
     </pictures>
     <source facsimile="115408015327" facsimile-pages-num="124" facsimile-pages-offset="10">Christian Winther: <i>Nye Digte</i>, C.A. Reitzel, Kbh., 1851.</source>
-    <!-- TODO: Alle tekster med en dato før 2018 skal rettes ordentligt ind efter facsimile-kilden. Teksterne fra Svend Andersen mangler især kursivering, men også du/Du og dig/Dig varierer. -->
 </workhead>
 <workbody>
 
@@ -761,6 +760,12 @@ Og Lærkerne <w>slaae</w>.
 <head>
     <title>Den 18de August 1843</title>
     <firstline>Nu paa sin Vandring Tiden kom</firstline>
+    <dates>
+        <event>1843-08-18</event>
+    </dates>
+    <notes>
+        <note>Digtet er skrevet til Winthers svigerinde, Thora Elvine Lütthans, ,,Wilhelmine'', født 18. august 1819.</note>
+    </notes>
     <source pages="35-36"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -816,6 +821,12 @@ For mig og for mit Minde!
 <head>
     <title>Den 18de August 1849</title>
     <firstline>Vi boe paa Deiligheden - det er sandt!</firstline>
+    <dates>
+        <event>1843-08-18</event>
+    </dates>
+    <notes>
+        <note>Digtet er skrevet til Winthers svigerinde, Thora Elvine Lütthans, ,,Wilhelmine'', født 18. august 1819.</note>
+    </notes>
     <source pages="37-38"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -906,7 +917,7 @@ Den blomstrer Dig i Aftensolens Glands;
 O, qvæg Dit Hjerte ved den hulde Tanke:
 Du er det Baand, der bandt dem til en Krands.
 
-Men der er Fleer end dem, Dit Øie skuer.
+Men der er Fleer end dem, Dit Øie skuer,
 Som stedes hid at feire kjært Din Fest:
 Fra Paradisets evig klare Buer
 Nedsvæver tyst endnu saa mangen Gjæst;
@@ -930,7 +941,7 @@ Doctor <w>Morten</w> hist i Sachsen,
 Naar han sad ved Dug og Disk,
 Raabte altid: ,,Drik paa Laxen
 ,,Og paa anden Suul og Fisk!
-,,Den, som ynded ei al qvæde,
+,,Den, som ynded ei at qvæde,
 ,,Som ei fik en Qvinde kjær,
 ,,Som foragted Druens Væde, -
 ,,Han er ei en Bønne værd!''
@@ -956,7 +967,7 @@ Og gjør jævn den rette Sti.
 Derfor vi, Hr. Doctor! raade
 Kjønt at følge Mortens Skik;
 Tag paa Vandring med Dig baade
-Kjarlighed og Sang og Drik!
+Kjærlighed og Sang og Drik!
 Ak! - men see! Du har jo gjort det!
 Og hans Maal forlængst Du vandt;
 Du tog Manden rask paa Ordet,
@@ -1039,7 +1050,7 @@ Hvor Granen kneiser, hvor Fjelde staaer,
 Hvor Malmen groer i Stenen haard
 Og smeddes ud til skarpe Sværde;
 Hvor der er Rigdom paa tappre Mænd,
-Der gjorde Staal om stærken Land
+Der gjorde Staal om stærken Lænd
 Og staae som Manhems Vold og Gjærde;
 
 Hvor Talen toner med liflig Klang
@@ -1258,7 +1269,7 @@ Evigt kun Din milde Stemme.
 
 <nonum><center><w>Hun.</w></center></nonum>
 Engang greb Du mig i Drømme
-Om min Haand af alle Krafter;
+Om min Haand af alle Kræfter;
 Mine Fingre var saa ømme
 Mange Dage end derefter.
 
@@ -1602,7 +1613,7 @@ Kampstærke Møer bolde;
 De sang i Stom et mægtigt Qvad
 Og slog paa deres Skjolde.
 
-<w>Hun</w> sad i Stavn, md Haand paa Roer,
+<w>Hun</w> sad i Stavn, med Haand paa Roer,
 Hun lod det gnye og brage;
 Frem hendes Blik, fremad hun foer, -
 Hun saae sig ei tilbage.
@@ -2117,7 +2128,7 @@ Da Elskovs Blomster, frisk og ungt,
 Fra Himlen fik det første Bud
 Og var just ved at springe ud,
 Da - - dog endnu et Blik derpaa -
-Et venligt Billed end - og saa -
+Et venligt Billed end - og <w>saa</w> -
 
 
 <nonum><center>4.</center></nonum>
