@@ -3,7 +3,5 @@
   <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
     <i>Karl Gjellerup</i>, ca. 1880.
   </picture>
-  <picture src="p2.jpg">
-    P.S. Krøyer: <i>Karl Gjellerup</i>, 1897.
-  </picture>
+  <picture ref="kroyer/gjellerup-2" />
 </pictures>

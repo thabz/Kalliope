@@ -34,7 +34,7 @@ Footnote.contextTypes = {
   footnoteContainer: PropTypes.object,
 };
 
-export class FootnoteList extends Component {
+export class FootnoteList extends Component<*> {
   context: {
     footnoteContainer: FootnoteContainer,
   };

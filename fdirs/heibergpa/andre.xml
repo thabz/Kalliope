@@ -9,55 +9,6 @@
 </workhead>
 <workbody>
 
-<poem id="heibergpa2001070701">
-<head>
-   <title>For ret os paa Jorden at fryde</title>
-   <toctitle>For ret os paa Jorden at fryde</toctitle>
-   <indextitle>For ret os paa Jorden at fryde</indextitle>
-   <firstline>For ret os paa Jorden at fryde</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Margit Ammentorp.</note>
-      <note>Indtastet fra <i>Digter-Krands - En Samling af udkaarede ældre og nyere Selskabssange</i>, Odense, 1826. Trykker og udgiver er S. Hempel "Eier af Fyens Adressekontoir".</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <keywords>drikkevise</keywords>
-</head>
-<body>
-For ret os paa Jorden at fryde,
-vi skabtes til Frihed af Gud;
-fornuftige Love vi lyde,
-men ingens vilkaarlige Bud.
-Held os! Held os!
-Naar dig, ædle Frihed! vi have,
-lyd høit! vor Sang!
-Hvert Baand og hver Lænke til Trods.
-:|: Himmelske Frihed! Skabernes Gave!
-kom og opreis din Trone blandt os! :|:
-
-Naturen os dannede lige,
-og Adel er ikkun en Lyd;
-ja, ene bør Mennesket vige
-for høiere Kundskab og Dyd.
-Held os! Held os!
-Naar fødsel ei meer os skal trykke!
-Lyd høit! vor Sang!
-Al Stolthed og Dumhed til trods!
-:|: Hellige Liighed, Menneskets Smykke,
-kom og opreis din Trone blandt os! :|:
-
-For Sorger og Kummer at lindre,
-steeg Venskab fra Himmelen ned,
-vi følte Bekymringer mindre,
-saa ofte en Ven med os leed.
-Held os! Held os!
-Her Venskab var altid tilstæde,
-Lyd høit! vor Sang!
-Hver avindsyg Nidding til Trods!
-:|: Salige Venskab! Jorderigs Glæde!
-Bliv og grundfæst din Trone blandt os! :|:
-</body>
-</poem>
-
 <poem id="heibergpa20170925218">
 <head>
     <title>Den pæne Mand</title>
@@ -1110,6 +1061,7 @@ Leve Kongerne paa Jorden,
     <firstline>Vor Klub er dog en herlig Sag</firstline>
     <notes>
         <note>Teksten følger Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884, s. 601-603.</note>
+        <note>Melodi som Rahbeks <xref poem="rahbek2001061307"/>.</note>
         <note>Heiberg fik en bøde på 300 rigsdaler for denne vise, som Rahbek uden forfatterens samtykke trykkede i ,,Den Danske Tilskuer''.</note>
     </notes>    
 </head>
@@ -1397,11 +1349,12 @@ for dig vi vores Glas udstikke,
 <head>
     <title>Frihed, Lighed og Venskab</title>
     <subtitle>Vise for det venskabelige Selskab 1794.</subtitle>
-    <!-- Skal erstate teksten fra Margit Ammentorp -->
     <firstline>For ret os ved Jorden at fryde</firstline>
     <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note> <!-- Indtastet fra <i>Digter-Krands - En Samling af udkaarede ældre og nyere Selskabssange</i>, Odense, 1826. Trykker og udgiver er S. Hempel "Eier af Fyens Adressekontoir". -->
         <note>Teksten følger Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884, s. 609.</note>
     </notes>    
+   <keywords>drikkevise</keywords>
 </head>
 <body>
 <center><nonum><small>Mel.: Veillons au salut de l'empire.</small></nonum></center>

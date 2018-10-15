@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg" invnr="KMS1788" museum="smk">
-      Constantin Hansen: <i>Forfatterinden Juliane Marie Jessen</i>, ca. 1830, olie på lærred, 31x25.5 cm. Statens Museum for Kunst. <!-- KMS1788 -->
-  </picture>
+    <picture ref="hansenc/jessen-1830" primary="true" square-src="p1-square.jpg" />
 </pictures>
 

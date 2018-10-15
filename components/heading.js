@@ -1,17 +1,15 @@
 // @flow
 import React from 'react';
 
-export default class Heading extends React.Component {
-  props: {
-    title: any,
-  };
+type HeadingProps = {
+  title: any,
+};
+export default class Heading extends React.Component<HeadingProps> {
   render() {
     const { title } = this.props;
     return (
       <div className="heading">
-        <h1>
-          {title}
-        </h1>
+        <h1>{title}</h1>
         <style jsx>{`
           .heading {
             margin-bottom: 20px;
@@ -27,7 +25,7 @@ export default class Heading extends React.Component {
             transition: font-size 0.2s;
           }
           .heading :global(h1):global(.lighter) {
-            color: #999;
+            color: #757575;
           }
 
           @media (max-width: 850px) {

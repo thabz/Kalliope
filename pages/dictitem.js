@@ -80,7 +80,7 @@ export default class extends React.Component {
     const headTitle = `${item.title} - Kalliope`;
     return (
       <div>
-        <FootnoteContainer>
+        <FootnoteContainer key={item.id}>
           <Head headTitle={headTitle} requestPath={requestPath} />
           <Main>
             <Nav lang={lang} links={navbar} title={item.title} />
