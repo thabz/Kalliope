@@ -1,8 +1,10 @@
 // @flow
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import WorkName from '../components/workname.js';
 import { Link } from '../routes';
+import CommonData from '../pages/helpers/commondata.js';
+import _ from '../pages/helpers/translations.js';
 import type {
   Lang,
   Poet,
@@ -16,6 +18,16 @@ type WorksListProps = {
   poet: Poet,
   works: Array<Work>,
 };
+
+const workNameTranslated = (work, lang): string => {
+  let result = work.toctitle;
+  if (work.id == 'andre') {
+    return _('Andre digte', lang);
+  } else {
+    return work.toctitle.title;
+  }
+};
+
 export default class WorksList extends React.Component<WorksListProps> {
   render() {
     const { lang, poet, works } = this.props;
@@ -40,24 +52,72 @@ export default class WorksList extends React.Component<WorksListProps> {
       }
     };
 
-    return sortWorks(works).map((work, i) => {
-      const workName = <WorkName work={work} lang={lang} useTitle="toctitle" />;
+    const anyPrefixes =
+      works.filter(work => work.toctitle.prefix != null).length > 0;
+
+    const rows = sortWorks(works).map((work, i) => {
+      const workName = workNameTranslated(work, lang);
+
+      const year = work.year;
+      let yearRendered = null;
+      if (year != null && year !== '?') {
+        yearRendered = <span className="lighter"> ({year})</span>;
+      }
+
       const url = `/${lang}/work/${poet.id}/${work.id}`;
       const name = work.has_content ? (
         <Link route={url}>
-          <a title={work.year}>{workName}</a>
+          <a title="Vis værk">
+            {workName}
+            {yearRendered}
+          </a>
         </Link>
       ) : (
-        workName
+        [workName, yearRendered]
       );
+
+      let numTd = null;
+      if (anyPrefixes) {
+        numTd = <td className="num">{work.toctitle.prefix}</td>;
+      }
+
       return (
-        <div
-          className="list-section-line"
-          key={i + work.id}
-          style={{ lineHeight: 1.7 }}>
-          {name}
-        </div>
+        <tr key={i + work.id}>
+          {numTd}
+          <td className="workname">{name}</td>
+        </tr>
       );
     });
+    const className = 'toc';
+    return (
+      <Fragment>
+        <table className={className}>
+          <tbody>{rows}</tbody>
+        </table>
+        <style jsx>{`
+          :global(table.toc) {
+            margin-left: 0;
+            margin-bottom: 10px;
+            cell-spacing: 0;
+            cell-padding: 0;
+            border-collapse: collapse;
+          }
+          :global(.toc) :global(td.num) {
+            text-align: left;
+            color: ${CommonData.lightLinkColor};
+            white-space: nowrap;
+            padding-right: 5px;
+            vertical-align: top;
+          }
+          :global(.toc) :global(td) {
+            line-height: 1.7;
+            padding: 0;
+          }
+          :global(table.toc):global(td.workname) :global(.lighter) {
+            color: ${CommonData.lightLinkColor} !important;
+          }
+        `}</style>
+      </Fragment>
+    );
   }
 }

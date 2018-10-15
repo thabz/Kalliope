@@ -71,7 +71,7 @@ export type Museum = {
 export type Work = {
   id: WorkId,
   title: string,
-  toctitle: string,
+  toctitle: { title: string, prefix?: string },
   linktitle: string,
   breadcrumbtitle: string,
   subtitles: ?TextContentType,

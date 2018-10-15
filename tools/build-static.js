@@ -1354,9 +1354,9 @@ const works_first_pass = collected => {
       }
       const parentId = safeGetAttr(work, 'parent');
       const head = work.get('workhead');
-      const title = head.get('title').text();
-      const toctitle = safeGetText(head, 'toctitle') || title;
-      const linktitle = safeGetText(head, 'linktitle') || title;
+      const title = replaceDashes(safeGetText(head, 'title'));
+      const toctitle = extractTitle(head, 'toctitle') || { title };
+      const linktitle = replaceDashes(safeGetText(head, 'linktitle')) || title;
       const breadcrumbtitle = safeGetText(head, 'breadcrumbtitle') || title;
       const year = head.get('year').text();
       const status = work.attr('status').value();
@@ -1372,10 +1372,10 @@ const works_first_pass = collected => {
       const fullWorkId = `${poetId}/${workId}`;
       works.set(fullWorkId, {
         id: workId,
-        title: replaceDashes(title),
+        title,
         subtitles,
-        toctitle: replaceDashes(toctitle),
-        linktitle: replaceDashes(linktitle),
+        toctitle,
+        linktitle,
         breadcrumbtitle,
         year: year,
         status,
