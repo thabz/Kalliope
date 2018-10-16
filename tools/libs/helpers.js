@@ -263,6 +263,7 @@ const htmlToXml = (
     }
     const hasNonum =
       l.indexOf('<nonum>') > -1 ||
+      l.indexOf('<asterism') > -1 ||
       l.indexOf('<wrap>') > -1 ||
       l.indexOf('<num>') > -1 ||
       l.match(/^\s*$/) ||

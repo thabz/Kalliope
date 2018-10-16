@@ -158,6 +158,16 @@ export default class TextContent extends React.Component<TextContentPropsType> {
       case 'nonum':
       case 'resetnum':
         return this.handle_nodes(node.childNodes);
+      case 'asterism': {
+        const glyph = '\u2042';
+        return (
+          <center
+            key={this.keySeq++}
+            style={{ display: 'block', width: '100%' }}>
+            {glyph}
+          </center>
+        );
+      }
       case 'block-center':
         return (
           <center
