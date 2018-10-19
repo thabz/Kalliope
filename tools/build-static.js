@@ -1174,6 +1174,11 @@ const build_global_lines_json = collected => {
     let collected_lines = new Map();
     collected.texts.forEach((textMeta, textId) => {
       const poet = collected.poets.get(textMeta.poetId);
+      if (poet == null) {
+          // Ignorer. Dette kan ske når vi skifter mellem branches og digtere
+          // kommer og går fra poets.xml
+          return;
+      }
       if (changed_langs[poet.country]) {
         let per_country = collected_lines.get(poet.country) || new Map();
         collected_lines.set(poet.country, per_country);

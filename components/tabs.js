@@ -249,20 +249,14 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
     );
 
     const itemsRendered = items.filter(item => !item.hide).map((item, i) => {
-      let className = 'tab';
-      let content = <h2>{item.title}</h2>;
-      if (item.id === selected) {
-        className += ' selected';
-      } else {
-        content = (
-          <Link route={item.url}>
-            <a>{content}</a>
-          </Link>
-        );
-      }
+      const className = item.id === selected ? 'tab selected' : 'tab';
       return (
         <div className={className} key={item.url}>
-          {content}
+          <Link route={item.url}>
+            <a>
+              <h2>{item.title}</h2>
+            </a>
+          </Link>
         </div>
       );
     });

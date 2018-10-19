@@ -6,10 +6,11 @@
    <year>1801</year>
    <notes>
       <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en foreslået læsemåde.</note>
-      <note>Titelbladets ordlyd: Jens Baggesens / Samtlige Værker / udgivne af ham selv. / I. Bind. / Kiöbenhavn / 1801. / Paa Frederik Brummers Forlag / hos E. M. Cohen.</note>
    </notes>
-   <quality>korrektur1,kilde,side</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+   <pictures>
+      <picture type="titlepage" src="1801-p1.jpg">Titelbladets ordlyd er ,,Jens Baggesens / Samtlige Værker / udgivne af ham selv. / I. Bind. / Kiöbenhavn / 1801. / Paa Frederik Brummers Forlag / hos E. M. Cohen.''</picture>
+   </pictures>
+   <source facsimile="11530804103B_color" facsimile-pages-num="354" facsimile-pages-offset="14">Jens Baggesen: <i>Samtlige Værker, Bd. I</i>, Fr. Brummers Forlag, Kbh., 1801.</source> 
 </workhead>
 <workbody>
 
@@ -26,9 +27,9 @@
    <indextitle>Den Eneste Gud</indextitle>
    <firstline>Tier, alle Muser! Hellas Toner</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 3-12.</note>
       <note>Tidligere trykt i <i>Minerva</i> (juni 1791).</note>
    </notes>
+   <source pages="3-12"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -212,9 +213,9 @@ Jeg har nok! jeg har mig selv!
    <indextitle>Morgenlovsang</indextitle>
    <firstline>Du stiger, Almagts Sendebud!</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 13-17.</note>
       <note>Tidligere trykt i <i>Ungdomsarbeider</i> (1791), under titlen ,,Morgensang. Polyhymnias Yndling J. A. P. Schultz helliget''.</note>
    </notes>
+   <source pages="13-17"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -306,9 +307,7 @@ Som Engle hisset siunge!
    <toctitle>Siælens Høisang</toctitle>
    <indextitle>Siælens Høisang</indextitle>
    <firstline>I dig lever og frydes min Aand, usynlige Guddom!</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 18-20.</note>
-   </notes>
+   <source pages="18-20"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -361,9 +360,9 @@ Og jeg finder dig, Aandernes Aand! og føler dig evig
    <indextitle>Forløsnings-Jubel, eller Christi Død</indextitle>
    <firstline>Skue hans Qvaler, Evighøie!</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 21-29.</note>
       <note>Tidligere udgivet som særtryk: <i>Christi Død. Et Passions-Oratorium, som opføres i Fasten 1792</i> (1792).</note>
    </notes>
+   <source pages="21-29"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -522,9 +521,9 @@ Halleluja!
    <indextitle>Skabningens Halleluja</indextitle>
    <firstline>Bryd, o Støv, i Lovsang ud!</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 30-40.</note>
-      <note>Tidligere trykt i:<br/>- <i>Minerva</i> (april 1797).<br/>- <i>Skabningens Hallelujah. Hymne. Opført ved Hoffet i Fasten 1797</i> (1797).</note>
+      <note>Tidligere trykt i <i>Minerva</i> (april 1797) og <i>Skabningens Hallelujah. Hymne. Opført ved Hoffet i Fasten 1797</i> (1797).</note>
    </notes>
+   <source pages="30-40"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -736,9 +735,9 @@ Vor Gud!
    <indextitle>Dannemarks Lovsang</indextitle>
    <firstline>Vi love dig, Gud! i foreenede Chor</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 41-46.</note>
       <note>Tidligere udgivet som særtryk: <i>Lovsang paa Kongens Fødselsdag. Opført i Slotskirken den 3. Februar 1793</i> (1793).</note>
    </notes>
+   <source pages="41-46"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -849,9 +848,9 @@ I Evighed!
    <indextitle>Hymne til Fornuften</indextitle>
    <firstline>Du Menneskets Guddom, hvis himmelske Haand</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 47-51.</note>
       <note>Tidligere trykt i <i>Skandinavisk Museum</i> (1800), under titlen ,,Ode til Fornuften''.</note>
    </notes>
+   <source pages="47-51"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -935,9 +934,7 @@ Paa Randen af Svælget den Offrende brænder.
    <toctitle>Andagtshymne</toctitle>
    <indextitle>Andagtshymne</indextitle>
    <firstline>Dig alt Levendes Væld, dig, Aandernes evige Kilde</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 52-56.</note>
-   </notes>
+   <source pages="52-56"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1008,9 +1005,7 @@ Tændte til Bøn i Tilbederens Haab, som lyder, og troer dig.
    <toctitle>Hellebeks Harpe</toctitle>
    <indextitle>Hellebeks Harpe</indextitle>
    <firstline>Schimmelmann, din Lyra jeg fandt (o Held mig!)</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 59-61.</note>
-   </notes>
+   <source pages="59-61"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1022,47 +1017,47 @@ Tændte til Bøn i Tilbederens Haab, som lyder, og troer dig.
 Schimmelmann, din Lyra jeg fandt (o Held mig!)
 Skiult i Løv, nedfalden af <i>Helas</i> Steeneeg,
 Hvor du Selv ophængte den, da du paatog
-                                                   <i>Danias</i> Forsorg.
+<right><i>Danias</i> Forsorg.</right>
 
 <i>Solon</i> lig, som, født til <i>Homers</i> og <i>Maros</i>
 Mellemrang, opofred den anden Laurgreen
 Patriothøimodigen for den første
-                                                   Borgernes Eegkrands:
+<right>Borgernes Eegkrands:</right>
 
 See han borthang Lyren, og fulgte <i>Pallas</i>
 Uden Klang, tausskridende hen, hvor Viisdoms
 Raad, og Retfærd fordredes, og din Redning,
-                                                   Synkende <i>Cecrops!</i>
+<right>Synkende <i>Cecrops!</i></right>
 
 Saa min Helt (jeg saae det, o troe mig, Fremtid!)
 Rundt omsmilt, gudvinket, i Musers Chordands,
 Krandsen nær, høit kaldet af selv' <i>Apollon</i>,
-                                                   Sled af Gudinders
+<right>Sled af Gudinders</right>
 
 Favn sig løs, manddommeligstolt, med Høimods
 Hele Kraft undvigende Himlens Troldom!
 <i>Dannemark!</i> dig, dig han kun saae! <i>Herakles</i>
-                                                   Vinked <i>Arete</i>.
+<right>Vinked <i>Arete</i>.</right>
 
 Lyren flux ophængt, mens en Taare smilrandt
 Iilte bort Halvguden; i Lyrens Sted han
 Axled Statssølvaaget, og hialp med <i>Bernstorff</i>
-                                                   <i>Frederiks</i> Fredsskib
+<right><i>Frederiks</i> Fredsskib</right>
 
 Giennem Jordskiælvsvælg, mens Europa rundtom
 Stat paa Stat nedhvirvledes i din Malstrøm,
 Friheds Syndflodhav! Men fra Helas Eeg faldt
-                                                   Lyren, og sukked.
+<right>Lyren, og sukked.</right>
 
 Jeg den fandt, dugrostet hver Streng, dens Tvehorn
 Løvomsnoet, muldfugtet, endnu dog klangfuld!
 <i>Schimmelmann!</i> misund mig den ei! Min Andagts
-                                                   Helligste Høisang,
+<right>Helligste Høisang,</right>
 
 Dydens Priis, Retfærdigheds Lov, Naturens
 Høie Fryd, blot himmelske Nyn, min Midnats
 Stille, høitidsfuldeste <i>Hellig! Hellig!</i>
-                                                   Skal den ledsage.
+<right>Skal den ledsage.</right>
 </body>
 </poem>
 
@@ -1074,9 +1069,9 @@ Stille, høitidsfuldeste <i>Hellig! Hellig!</i>
    <indextitle>Primula</indextitle>
    <firstline>Er jeg rolig, er jeg bange</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 62-63.</note>
       <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1783), under titlen ,,Til Henriette''.</note>
    </notes>
+   <source pages="62-63"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1116,9 +1111,7 @@ Sidste Blun er Henriette.
    <toctitle>Til Døden</toctitle>
    <indextitle>Til Døden</indextitle>
    <firstline>I Livets Torden-Nat, hvor alt omhyller</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 64-66.</note>
-   </notes>
+   <source pages="64-66"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1181,46 +1174,46 @@ De Skridt, hvis Spor hun farver med sit Blod.
    <indextitle>Digtertryghed</indextitle>
    <firstline>Den, hvis Samvittighed Dyder omgiærde</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 67-68.</note>
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1785), under titlen ,,Efter Horaz''.</note>
    </notes>
+   <source pages="67-68"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
     Den, hvis Samvittighed Dyder omgiærde,
 Aldrig til Vaaben og ulmiske Sværde
 Trænger; hans fredsomme Gjørtel ei taaler
-                                                 Ladte Pistoler.
+<right>Ladte Pistoler.</right>
 
     Enten han vandrer i Lydiens Heeder,
 Truet af Løver, blandt Dragernes Reeder;
 Eller hvor Troldene koglende værge
-                                                 Finniens Bierge.
+<right>Finniens Bierge.</right>
 
     Væbnet med Dydens de himmelske Vaaben,
 Hører han rolig Huronernes Raaben
 Midt i det Land, hvor med tordnende Sluser
-                                                 Njagara bruser.
+<right>Njagara bruser.</right>
 
     Mig, mens jeg syngende dig, min Veninde!
 Drukken af Elskov, omvanked' i Blinde,
 Mødt' ubevæbnet en Ulv; men den frygted'
-                                                 Musen, og flygted;
+<right>Musen, og flygted;</right>
 
     Skiønt et Uhyre, saa farligt som hine,
 Skovene nære ved Bredden af Dvine.
 Sielden i Løvernes sandige Rige
-                                                 Saae man dets Lige!
+<right>Saae man dets Lige!</right>
 
     Sæt mig, hvor Sommeren aldrig opliver,
 Hvor ubevandret en Ørken omgiver
 Biørnenes Field, fra hvis evige Huler
-                                                 Boreas kuler!
+<right>Boreas kuler!</right>
 
     Sæt mig, hvor Solens nedfaldende Luer
 Evig forbrænder ufrugtbare Tuer!
 Der skal jeg dog et Elysium finde
-                                                 Hos min Veninde!
+<right>Hos min Veninde!</right>
 </body>
 </poem>
 
@@ -1231,9 +1224,9 @@ Der skal jeg dog et Elysium finde
    <indextitle>Horaz og Lydia</indextitle>
    <firstline>Før, naar jeg tryllet ved dit Bryst</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 69-72.</note>
-      <note>Tidligere trykt i:<br/>- <i>Minerva</i> (august 1785).<br/>- <i>Ungdomsarbeider</i> (1791), med undertitlen ,,Efter Horaz''.</note>
+      <note>Tidligere trykt i <i>Minerva</i> (august 1785) og <i>Ungdomsarbeider</i> (1791), med undertitlen ,,Efter Horaz''.</note>
    </notes>
+   <source pages="69-72"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1294,9 +1287,9 @@ Skal Døden selv din Elskte vorde sød!
    <indextitle>Erato</indextitle>
    <firstline>Langt fra det støiende Bulder af Vinens</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 73-75.</note>
       <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1783), under titlen ,,Ode til Venus''.</note>
    </notes>
+   <source pages="73-75"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1308,42 +1301,42 @@ Skal Døden selv din Elskte vorde sød!
     Langt fra det støiende Bulder af Vinens
 Rasende Glæder, urørt af Bacchantens
 Rusende Lyster og vilde Begeistring,
-                                              Synger min Muse.
+<right>Synger min Muse.</right>
 
     Medens de rave med svingede Thyrser
 Opad til Fjelds, og de mylrende Klipper
 Vildt Dithyramber gienskingre, hun sidder
-                                              Eensom i Dalen,
+<right>Eensom i Dalen,</right>
 
     Mellem hvis Blomster sig bugtende slynger
 Bækkens Krystal, i hvis glimtende Rislen
 Cynthia zittrer; og nynner mit Hiertes
-                                              Salige Veemod.
+<right>Salige Veemod.</right>
 
     Flye mig, o Satyr! o flyer mig, I Fauner!
 Skiul dig blandt Klipper, berusede Sanger!
 Ekko af ,,Evan! o! Evan!'' sig tabe
-                                              Langt fra mit Alter,
+<right>Langt fra mit Alter,</right>
 
     Helliget Elskov, i Bøgenes stille
 Bævende Skygger, omskimret af Lunas
 Smilende Straaler, i Skierm af min Sanglunds
-                                              Hvelvede Løvsal.
+<right>Hvelvede Løvsal.</right>
 
     Skovenes Sappho, kun du, Philomele!
 Nærme dig! Fløitende Klukke ledsage
 Citherens Strenge, mens Eratos Toner
-                                              Tolke min Længsel!
+<right>Tolke min Længsel!</right>
 
     Hør hendes Sang, Amathusia! hør den
 Vingede Gud! og I Grazier! lytter
 Leired' usynlig' omkring mig! Jeg priser,
-                                              Helliget Eder,
+<right>Helliget Eder,</right>
 
     Cyprias tryllende Belte, Chariters
 Svævende Dands, og, o Amor! dit Koggers
 Fylde, de nektarinddyppede Piles
-                                              Kildrende Smerte.
+<right>Kildrende Smerte.</right>
 </body>
 </poem>
 
@@ -1354,9 +1347,10 @@ Fylde, de nektarinddyppede Piles
    <indextitle>Til Pram</indextitle>
    <firstline>O du, hvis muntre Smil, da jeg den første Gang</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 76-79.</note>
       <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1783), under titlen ,,Efter Horazes I. 1. Til min Ven *...''.</note>
    </notes>
+   <source pages="76-79"/>
+   <keywords>pram</keywords>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1429,46 +1423,46 @@ Og kun Horaz og du da tolkede min Lyst.
    <indextitle>Hymenæe</indextitle>
    <firstline>O! hvilken Følelse strømmer i dette Bryst!</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 80-81.</note>
       <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1784), under titlen ,,Ode paa den 14de Maji 1783''.</note>
    </notes>
+   <source pages="80-81"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
     O! hvilken Følelse strømmer i dette Bryst!
 Løftes mit Væsen fra Støvet til Himmelen?
 Hvorfra den hellige Flamme, som festlig
-                                                Hæver mit Hierte?
+<right>Hæver mit Hierte?</right>
 
     Skuffer en Drøm mig? et tryllende Skyggeværk?
 Hører jeg ikke gienlydende Himles Lov?
 Hører jeg ikke den skinnende Cherubs
-                                                Salige Toner?
+<right>Salige Toner?</right>
 
     Himmelen aabner sig! giennem de blindende
 Straaler, giennem utallige Soles Ild
 Seer jeg (hvad styrker mit Øie?) din Throne
-                                                Lysenes Konge!
+<right>Lysenes Konge!</right>
 
     Ordene døe paa de studsende, bævende
 Læber; hvi svæve de lyse, de glimrende
 Skarer omkring mig? Kan skues i Støvet
-                                                Aandernes Syner?
+<right>Aandernes Syner?</right>
 
     Svøbt i Fortryllelser, ned fra den Helliges
 Aabnede Himmel, omringt af de vingede
 Harper, modtaget af vaagnende Jubelchor,
-                                                Svæver til Jorden
+<right>Svæver til Jorden</right>
 
     Morgenens høitidbebudende Straaledands;
 Venskab den følger, og Dyd, og den lønnende
 Kiærlighed. Hvem vil I Himmelske bringe
-                                                Himlenes Fylde?
+<right>Himlenes Fylde?</right>
 
     Held mig Lyksalige! Kiærlig omslyngede
 Seer jeg min Ven og Veninde for Alteret.
 Dagen nedsynker; de zittre; nu knæle de
-                                                Kronte med Krandsen.
+<right>Kronte med Krandsen.</right>
 </body>
 </poem>
 
@@ -1479,9 +1473,9 @@ Dagen nedsynker; de zittre; nu knæle de
    <indextitle>Til Musen</indextitle>
    <firstline>Mig, som en Ven af den rolige Muse</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 82-85.</note>
       <note>Tidligere trykt i:<br/>- Iversens <i>Samling af Poesier. Nytaarsgave</i> (1784), under titlen ,,Ode til Musen efter Horaz's 1ste Bogs 26de Ode''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Digterviise. Efter Horaz''.</note>
    </notes>
+   <source pages="82-85"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1553,9 +1547,7 @@ Høre med lyttende Vellyst hans Sang.
    <toctitle>Tidsfordriv</toctitle>
    <indextitle>Tidsfordriv</indextitle>
    <firstline>Naar Solen vækker mig til Dagens Sysler</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 86-88.</note>
-   </notes>
+   <source pages="86-88"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1608,10 +1600,10 @@ Hvis overalt min Siel var ei hos dig.
    <indextitle>Til Helgesen</indextitle>
    <firstline>Et Blun forsvandt, o Ven, den Tid, som hidtil skabte</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 89-91.</note>
       <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1784), under titlen ,,Til Hr. H*** da han foer ud paa Havet''.</note>
       <note>,,Digtet er skrevet til en ung norsk Skibskapitain Olaf Helgesen, hvis Bekjendtskab Baggesen havde gjort i Efteraaret 1783 under et Besøg hos sine Forældre i Korsør, hvor Helgesen dengang laae med sit Skib i Havnen.'' (A. Arlaud).</note>
    </notes>
+   <source pages="89-91"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1679,9 +1671,9 @@ Did, hvor du ønsker dig.
    <indextitle>Selvindbydelse</indextitle>
    <firstline>Du seer hvor grimt den kolde Stormens Gud</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 92-93.</note>
       <note>Tidligere trykt i:<br/>- Iversens <i>Samling af Poesier. Nytaarsgave</i> (1784), under titlen ,,Til Hr. A*****. Efter Horaz''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Selvindbydelse. Efter Horaz''.</note>
    </notes>
+   <source pages="92-93"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1722,16 +1714,16 @@ Og Skiebnen raade for i Morgen!
 </body>
 </poem>
 
-<poem id="baggesen2001060803">
+<poem id="baggesen2001060803" variant="baggesen2002122401">
 <head>
    <title>Digterdrømmen</title>
    <toctitle>Digterdrømmen</toctitle>
    <indextitle>Digterdrømmen</indextitle>
    <firstline>Den eensomme Skov</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 94-99.</note>
-      <note>Tidligere trykt i:<br/>- Iversens <i>Samling af Poesier. Nytaarsgave</i> (1783), under titlen ,,Den sovende Zemire eller Synet''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen<xref poem="baggesen2002122401"/>.</note>
+      <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1783), under titlen ,,Den sovende Zemire eller Synet''.</note>
    </notes>
+   <source pages="94-99"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1849,9 +1841,9 @@ Var Synet og Liren forsvunden.
    <indextitle>Idealia</indextitle>
    <firstline>Skiøn og kielen, som Cythere</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 100-03.</note>
       <note>Tidligere trykt i:<br/>- Iversens <i>Samling af Poesier</i> (1785), under titlen ,,Lydia''.<br/>- <i>Ungdomsarbeider</i> (1791), også under titlen ,,Lydia''.</note>
    </notes>
+   <source pages="100-103"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1924,9 +1916,9 @@ Drømmer neppe, jeg er til!
    <indextitle>Elskovsjubel</indextitle>
    <firstline>Lig en Tordenskye, naar til gyldne Høie</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 104-05.</note>
       <note>Tidligere trykt i <i>Minerva</i> (november 1785), under titlen ,,Jubel''.</note>
    </notes>
+   <source pages="104-105"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1974,9 +1966,9 @@ See hun smiler! alting smiler med.
    <indextitle>Til Venus</indextitle>
    <firstline>Cyprens skiønne Herskerinde</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 106-09.</note>
       <note>Tidligere trykt i:<br/>- <i>Minerva</i> (november 1785).<br/>- <i>Ungdomsarbeider</i> (1791).</note>
    </notes>
+   <source pages="106-109"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2045,10 +2037,10 @@ Meer end dig i hende der.
    <indextitle>Ved Herman Henrik Kønnemans Død</indextitle>
    <firstline>Jeg leies ei til Sang. Min Muse lyder</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 110-12.</note>
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1785).</note>
       <note>,,Den her Besungne var en Søn af daværende Justitsraad og Justitssekretær i Høiesteret Hermann Henrik Køneman og Hustru Barbara Cathrine f. Schønheyder. Denne 'Viisdoms unge Helt,' som døde d. 12 Novbr. 1784, opnaaede ikkun en Alder af - 6 Aar og 12 Uger.'' (A. Arlaud)</note>
    </notes>
+   <source pages="110-112"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2117,9 +2109,9 @@ Ved Vinket, og udgav sin Aand.
    <indextitle>Til Balladebarden</indextitle>
    <firstline>Til Pindi stjernekronte Top</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 113-18.</note>
       <note>Tidligere trykt i:<br/>- <i>Minerva</i> (juli 1785), under titlen ,,Hymne til Ballademesteren''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Jubelsang til Ballademesteren''.</note>
    </notes>
+   <source pages="113-118"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2231,10 +2223,10 @@ Ved at forlade Hippocrene!
    <indextitle>Til Faye</indextitle>
    <firstline>I Kummer svunde bort din Ungdoms Dage</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 119-20.</note>
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1786), under titlen ,,I en Vens Stambog''.</note>
       <note>,,<i>Gerhard Faye</i>, en norsk Præstesøn, f. 1760, blev Student 1780, tog dansk-juridisk Examen 1790, blev Aaret efter Forvalter paa de kgl. Godser paa Falster og udnævntes 1805 til Amtmand i Thisted Amt; han døde i Thisted 1845 som Kftsrd. og Komm. af Dbg. Om noget nærmere Forhold imellem ham og Baggesen vides forøvrigt Intet. Han optraadte ogsaa som Digter; i Minerva for Sept. 1785 havde der saaledes staaet et længere Digt af ham, 'Udsigter over mit Liv', i hvilket han giver en elegisk Skildring af sit sørgelige Ungdomsliv.'' (A. Arlaud)</note>
    </notes>
+   <source pages="119-120"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2277,9 +2269,9 @@ Ulykkelig, som du.
    <indextitle>Til Psycharion</indextitle>
    <firstline>Munter iler du dit Maal imod</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 121-22.</note>
       <note>Tidligere trykt i <i>Ungdomsarbeider</i> (1791).</note>
    </notes>
+   <source pages="121-122"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2317,6 +2309,7 @@ Evas Døttre mellem Adams Sønner!
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1786), under titlen ,,I en Venindes Stambog''.</note>
       <note>,,<i>Johanna</i> Christiane <i>Braem</i>, Datter af Sognepræst i Korsør, Konsistorialraad Johan B. (død 1764) og Hustru Christiane Rodsteen Pors, var født i Korsør d. 21. Novbr. 1764 og døde ugift, ligeledes i Korsør, d. 26 Marts 1786.'' (A. Arlaud).</note>
    </notes>
+   <source pages="121-122"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2385,9 +2378,9 @@ For Lydias ulykkelige Ven.
    <indextitle>Til Amor</indextitle>
    <firstline>See, hun seiler bort! mit Øie følger</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 126-27.</note>
       <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Da Zeline seilede''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Seiladsen''.</note>
    </notes>
+   <source pages="126-127"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2431,10 +2424,10 @@ Snart tilbage til sin ømme Ven.
    <indextitle>Trøsten</indextitle>
    <firstline>Vis er Døden. Salig Slummer</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 128-33.</note>
       <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Elegie. Til - -''.<br/>- <i>Ungdomsarbeider</i> (1791).</note>
       <note>Digtet er skrevet til Baggesens ven Frederik Plum, der i 1786 havde mistet sin forlovede, Johanne Braem.</note>
    </notes>
+   <source pages="128-133"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2551,9 +2544,7 @@ Ingen Ord dig tolke her.
    <toctitle>Til Søvnen</toctitle>
    <indextitle>Til Søvnen</indextitle>
    <firstline>Eeneste blandt Edens Saligheder</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 134-35.</note>
-   </notes>
+   <source pages="134-135"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2594,10 +2585,10 @@ Mig, og Slangen i mit Hierte dølger.
    <indextitle>Til Bredsdorf</indextitle>
    <firstline>Held følge dig, min Ven! hvorhen du vandrer!</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 136-37.</note>
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1785), under titlen ,,I en Vens Stambog, som reiste til Byen''.</note>
       <note>,,Digtet er skrevet til Baggesens Ven <i>Morten Thomsen Bredsdorff</i> - i hvis Stambog det findes indført - i Anledning af hans Afreise til Fyen, hvor han d. 31. Marts 1784 var bleven udnævnt til sin Faders Eftermand som Sognepræst i Vester-Skjerninge, hvilket Embede han beklædte indtil 1834, da han efter Ansøgning blev entlediget. Han var født i 1757 og døde 1841. Baggesen havde i Slagelse Skole været Ven og Skolekammerat med hans yngre Broder <i>Christian Johan Br.</i> (...) og kom igjennem ham i Forbindelse med hele den Bredsdorffske Kreds, som han i en længere Aarrække sluttede sig nøie til.'' (A. Arlaud).</note>
    </notes>
+   <source pages="136-137"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>stambog</keywords>
 </head>
@@ -2637,10 +2628,10 @@ Sig over Belt og Siælland, til din Ven.
    <indextitle>Aabenbarelsen</indextitle>
    <firstline>Tung af mange mørke Dages Kummer</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 138-43.</note>
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Elegie. Til en Veninde i hendes Stambog''.</note>
       <note>,,Karen <i>Johanne Hornemann</i>, en Datter af Pastor Jacob H. i Marstal paa Ærø, var født 1765 eller 1766 (døbt d. 5. Jan. 1766) og blev gift d. 12. Novbr. 1788 med daværende Sognepræst (...) Pastor Jens Bindesbøll (død 1830). Hun døde d. 30 Jan. 1807.'' (A. Arlaud).</note>
    </notes>
+   <source pages="138-143"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2766,9 +2757,9 @@ Ak! til Lys og Tanke, Dag og Kummer.
    <indextitle>Afslaget</indextitle>
    <firstline>Jeg stod, paa Bredden af Castale</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 144-48.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1792).</note>
    </notes>
+   <source pages="144-148"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2859,9 +2850,9 @@ Hos hvem de alle samled var!
    <indextitle>Formastelsen</indextitle>
    <firstline>Som det uskyldige, tryllende, himmelske</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 149-51.</note>
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Fristelsen''.</note>
    </notes>
+   <source pages="149-151"/>
    <keywords>stolbergf</keywords>
    <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2874,47 +2865,47 @@ Hos hvem de alle samled var!
 Som det uskyldige, tryllende, himmelske
 Smil, paa den blomstrende Skiønnes
 Rødmende Kinder, naar rundere Barm sig
-                                         Hæver og synker,
+<right>Hæver og synker,</right>
 
 Lokker en Yngling, der undrende, stirrende
 Drukner sit Blik i dets Straaler,
 Føler i zittrende Nerver dets Ild, og
-                                         Flammer i Længsel;
+<right>Flammer i Længsel;</right>
 
 Sielen paa svulmende Læber imøde det
 Bæver, paa hidsige Kysses
 Brændende Vinger at hvirvle sig henrykt
-                                         Ind i sin Himmel.
+<right>Ind i sin Himmel.</right>
 
 Men, som det samme livsalige, lokkende
 Smil paa den Yndiges Kinder
 Jager i hellig, utolkelig Rædsel
-                                         Sielen tilbage;
+<right>Sielen tilbage;</right>
 
 Nær ved sin Himmel den truffen af Straalernes
 Alt for vellystige Vælde
 Ikarus lig, paa hensmeltende Vinger
-                                         Lynes til Jorden;
+<right>Lynes til Jorden;</right>
 
 Saa med begeistrende Herlighed vinkende,
 Tryller den hellige Lue
 Helikons Helt til den studsende Verden,
-                                         Hentet fra Himlen;
+<right>Hentet fra Himlen;</right>
 
 Tænder i Undrerens fulde, berusede
 Hierte den brændende Længsel,
 Og at udsprede fra Musers Triumfvogn
-                                         Vellyst til Jorden.
+<right>Vellyst til Jorden.</right>
 
 Ak! men den samme fortryllende, hellige
 Nimbus om Digterens Isse
 Splitter med lynende Straaler de vovsomt
-                                         Spilede Vinger.
+<right>Spilede Vinger.</right>
 
 Blindet af Glandsen nedstyrter den dristige
 Flyvende Helikons Yngling,
 Ikarus lig, og i Støvet med Taushed
-                                         Vidner sin Afmagt.
+<right>Vidner sin Afmagt.</right>
 </body>
 </poem>
 
@@ -2925,9 +2916,9 @@ Ikarus lig, og i Støvet med Taushed
    <indextitle>Trolleborg</indextitle>
    <firstline>Hvor var du, glade Siel! hvor endte sig</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 152-54.</note>
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Ludvigslund''.</note>
    </notes>
+   <source pages="152-154"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2979,36 +2970,34 @@ Og daaner mattet i uvante Glæder.
    <toctitle>Til Skibet, som førte Kronprindsen over Havet</toctitle>
    <indextitle>Til Skibet, som førte Kronprindsen over Havet</indextitle>
    <firstline>Taarn høie Hvirvler op, o Bølgevrimmel!</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 155-56.</note>
-   </notes>
+   <source pages="155-156"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Taarn høie Hvirvler op, o Bølgevrimmel!
 Fra Oceanets dybe Bund,
 Mod Nattens slukte Stierners mørke Himmel!
-                                       Og styrt igien i Grund!
+<right>Og styrt igien i Grund!</right>
 
 Dæk, tykke Mulm! hvert Skiær i hine Gruber,
 Hvor Døden af sin gamle Grav
 Opskyder graadig tusind aabne Struber,
-                                       Og fnys, og hyl, o Hav!
+<right>Og fnys, og hyl, o Hav!</right>
 
 Brøl Storm i Torden! raser Elementer!
 Og truer Himlen selv med Fald!
 Mens Jordens Bæven Livets Ende venter
-                                       I næste Tordenskrald.
+<right>I næste Tordenskrald.</right>
 
 Du dandser trygt paa Randen af de Huler,
 Nu Havets Bund, nu Himlen nær,
 Hvor Livets Fiende sig i Mulmet skiuler
-                                       Blandt Skyer og vilde Skiær.
+<right>Blandt Skyer og vilde Skiær.</right>
 
 O Skib! og trodser Mulm og Storm og Torden,
 Og alle Styrtninger og Død;
 Thi Danmarks Styrer, Fredens Gud i Norden,
-                                       Du bærer i dit Skiød.
+<right>Du bærer i dit Skiød.</right>
 </body>
 </poem>
 
@@ -3020,9 +3009,9 @@ Thi Danmarks Styrer, Fredens Gud i Norden,
    <indextitle>Roserne</indextitle>
    <firstline>Skiønne, kielne Roser! visner ikke!</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 157-59.</note>
       <note>Tidligere trykt i:<br/>- <i>Minerva</i> (juli 1787).<br/>- <i>Ungdomsarbeider</i> (1791).</note>
    </notes>
+   <source pages="157-159"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3077,9 +3066,9 @@ Grumme Sanger! derfor døe vi nu.
    <indextitle>Til Kronprindsen</indextitle>
    <firstline>Lad Kampens Helt, i Vaabens Larm</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 160-63.</note>
       <note>Tidligere trykt i:<br/>- <i>Borger-Sang. I anledning af Kronprindsens Hiemkomst den 7de December 1788</i> (1788).<br/>- <i>Minerva</i> (december 1788).<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Sang for Freden. Ved Kronprindsens Hiemkomst''.</note>
    </notes>
+   <source pages="160-163"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3156,10 +3145,10 @@ Dit elskte Navn.
    <indextitle>Tilegnelse</indextitle>
    <firstline>Thronens Glands og Hoffets Pragt ei blinde</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 164.</note>
       <note>Tidligere trykt som tilegnelsesdigtet i Baggesens opera <i>Holger Danske</i> (1787), med titlen ,,Til Hendes Kongelige Høihed, Kronprindsessen''.</note>
    </notes>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="164"/>
 </head>
 <body>
     Thronens Glands og Hoffets Pragt ei blinde
@@ -3187,10 +3176,10 @@ Med en Krands din Ynde mere værd.
    <indextitle>Landforvandlingen</indextitle>
    <firstline>Hvilken salig Glands mit Blik omhyller?</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 165-70.</note>
       <note>Tidligere trykt i <i>Ungdomsarbeider</i> (1791), under titlen ,,Forvandlingen eller Bøndernes Frihed''.</note>
       <note>Godset Christianssæde på Lolland ejedes af statsminister Christian Reventlow, og var på denne ø det første, hvor hoveriet ophævedes; den hule eg stod i mange år som ,,Baggesens Eg''.</note>
    </notes>
+   <source pages="165-170"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3293,9 +3282,9 @@ Stor, som Du, i alle Danskes Bryst.
    <indextitle>Til min Søster</indextitle>
    <firstline>Skiøn er Purpur-Rosen, naar dens Mund</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 171-73.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1793), under titlen ,,Til Marylli paa hendes Confirmationsdag''.</note>
    </notes>
+   <source pages="171-173"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3345,9 +3334,9 @@ Her og hisset signe dig, som Fader.
    <indextitle>Til Laville</indextitle>
    <firstline>Vee Støvet, hvis i denne Livets Scene</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 174-75.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1793), under titlen ,,Til en Ven, som reiste til Norge''.</note>
    </notes>
+   <source pages="174-175"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3386,9 +3375,9 @@ Mig ingen sydlig Vind saa let borttager.
    <indextitle>Begeistringen</indextitle>
    <firstline>Min Røst var saa svag, min Sang var mat</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 176-78.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1792).</note>
    </notes>
+   <source pages="176-178"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3446,9 +3435,9 @@ Dit Tempels Alter nærme sig?
    <indextitle>Harpeklang</indextitle>
    <firstline>Hvor er du, salige Lyst?</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 179-80.</note>
       <note>Tidligere trykt i <i>Labyrinten</i> (1793).</note>
    </notes>
+   <source pages="179-180"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3497,9 +3486,9 @@ Min søgte, min himmelske Glæde!
    <indextitle>Paa Spidsen af St. Gottard</indextitle>
    <firstline>Støvet tav; og det sidste, det svageste Lisplen af Bækken</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 181-82.</note>
       <note>Tidligere trykt i <i>Minerva</i> (1791).</note>
    </notes>
+   <source pages="181-182"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3537,9 +3526,9 @@ Favned i Glandsens omhyllende Straaler
    <indextitle>Den visnede Maiblomst</indextitle>
    <firstline>Jeg spired frem til moden Duft</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 183-86.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1792), under titlen ,,Den visnede Mayblomst i Blomsterglasset''.</note>
    </notes>
+   <source pages="183-186"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3605,9 +3594,7 @@ Den Blomst hun traadte paa.
    <toctitle>Tordenen, paa Toppen af Grimsel</toctitle>
    <indextitle>Tordenen paa Toppen af Grimsel</indextitle>
    <firstline>Høit opløftet over Jordens Tuer</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 187-89.</note>
-   </notes>
+   <source pages="187-189"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3672,9 +3659,9 @@ Thi jeg er udødelig!
    <indextitle>Serenade</indextitle>
    <firstline>Lyt, Elskede! lyt!</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 190-92.</note>
       <note>Tidligere trykt i <i>Labyrinten</i> (1793).</note>
    </notes>
+   <source pages="190-192"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3729,9 +3716,9 @@ Sov sødelig sagte! drøm salige Drømme!
    <indextitle>Til Palmine</indextitle>
    <firstline>Palmine! vi vil elske, være glade</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 193-94.</note>
       <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797).</note>
    </notes>
+   <source pages="193-194"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3762,17 +3749,14 @@ Vi, Elskte! ville kysse, vi.
 </body>
 </poem>
 
-<poem id="baggesen2002092804">
+<poem id="baggesen2002092804" variant="baggesen2003022002">
 <head>
    <title>Krandsen</title>
    <subtitle>Til Grevinde Charlotte Schimmelmann</subtitle>
    <toctitle>Krandsen</toctitle>
    <indextitle>Krandsen</indextitle>
    <firstline>Jeg ofred til Apoll paa Bredden af Castale</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 195-96.</note>
-      <note>Tidligere trykt i <i>Ungdomsarbeider</i> (1791), se <xref poem="baggesen2003022002"/>.</note>
-   </notes>
+   <source pages="195-196"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3816,9 +3800,9 @@ Jeg saae dem række Dig min Krands.
    <indextitle>Helbredelsen</indextitle>
    <firstline>Solen mig ei bragte Glæde</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 197-99.</note>
       <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Til Zeline''.<br/>- <i>Ungdomsarbeider</i> (1791).</note>
    </notes>
+   <source pages="197-199"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3880,9 +3864,9 @@ I de sidste Suk til Gud.
    <indextitle>Himlen i Draaben</indextitle>
    <firstline>Dagbebudende Glands omskimrede Jorden</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 200-02.</note>
       <note>Tidligere trykt i <i>Minerva</i> (juli 1791), under titlen ,,Dugdraaben''.</note>
    </notes>
+   <source pages="200-202"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3896,37 +3880,37 @@ Dagbebudende Glands omskimrede Jorden;
 Rødmende laae den, et Noer, i Morgenens Favn.
 Helligt Gysende foer igiennem Naturen:
 See! og den slumrende vaktes
-                                          Op i Klangen af Lysets Bliv.
+<right>Op i Klangen af Lysets Bliv.</right>
 
 Evig vækkende Klang! fra vaagende Himles
 Hvelvinger lyder end du til Jordenes Slum;
 Vakt, jeg knælende bad; da voxede Glandsen
 Festlig, og Skyernes Purpur-
-                                          Teppe hævedes. Taagen svandt.
+<right>Teppe hævedes. Taagen svandt.</right>
 
 Solen flammede frem vidtstraalende; Himlens
 Hvelvinger luede; Gud var Flammernes Sang.
 Vaagen bæved i Lyst den lyttende Klode,
 Stirrede, jublede, tonte,
-                                          Sang, og sank under Livets Vægt.
+<right>Sang, og sank under Livets Vægt.</right>
 
 Synet taalte dig ei, det luende Høies
 Vældige Straalen, og Gud i Straalernes Glands!
 Ak! det stirrende Blik, omlynet af Himles
 Altforudæmpede Klarhed,
-                                          Veeg Din Herligheds Overvæld.
+<right>Veeg Din Herligheds Overvæld.</right>
 
 Dybt tilbedende randt min helligste Taare
 Ned, og dens Duggen modtog et visnende Straa;
 Og i Perlen nedsank mit Blik fra det Høie,
 See! men og her jeg et Gienskin
-                                          Fandt af Dig; hvor er ei din Glands,
+<right>Fandt af Dig; hvor er ei din Glands,</right>
 
 Alnærværende? hist i Himlenes Ildhav,
 Her i den Draabe hvori sig sænkte mit Blik,
 Synker Siælen i dig, o Evigheds Under!
 Draabens, som Ætherens Glarhav,
-                                          Favner Solen, og smiler Gud.
+<right>Favner Solen, og smiler Gud.</right>
 </body>
 </poem>
 
@@ -3937,9 +3921,9 @@ Draabens, som Ætherens Glarhav,
    <indextitle>Palmines Smiil</indextitle>
    <firstline>Elsk Dyden! lød en ukiendt Røst</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 203-05.</note>
       <note>Tidligere trykt i:<br/>- Rahbeks <i>Danske Tilskuer</i> (7. april 1791), under titlen ,,Dyden''.<br/>- <i>Ungdomsarbeider</i> (1791).</note>
    </notes>
+   <source pages="203-205"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4007,9 +3991,7 @@ Jeg uophørlig skal tilbede.
    <toctitle>Mirabeaus Død</toctitle>
    <indextitle>Mirabeaus Død</indextitle>
    <firstline>Riqvetti døde. Høit fra Zoner indtil Zoner</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 206-09.</note>
-   </notes>
+   <source pages="206-209"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4072,9 +4054,9 @@ Skal Lysets Venner end i høie Jubler tone,
    <indextitle>Revolutionen</indextitle>
    <firstline>Himmelen tordner, ei Jorden. I Tordenen ruller os Skiæbnens</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 210-13.</note>
       <note>Tidligere trykt i <i>Labyrinten</i> (1793).</note>
    </notes>
+   <source pages="210-213"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4159,9 +4141,9 @@ Priser da Tordnerens Gang!
    <indextitle>Digtekunstens Undfangelse</indextitle>
    <firstline>Begeistring! i Skiønheds uskyldige Skiød</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 214-15.</note>
       <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797), under titlen ,,Fantasie paa Bredden af Thunersøen''.</note>
    </notes>
+   <source pages="214-215"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4205,11 +4187,11 @@ En skiønnere Verden, hvor tusind Fortryllelser vrimle.
    <indextitle>Kyssene</indextitle>
    <firstline>Giv mig, Palmine! tusind Kys, og atter</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 216-17.</note>
       <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Til Zeline. Efter Catullus''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Til Serene. Efter Catull''.</note>
       <note>En fri gendigtning af Catuls berømte femte ode, ,,Vivamus, mea Lesbia, atqua amemus'', der i Otto Gelsteds oversættelse lyder:<br/>Lad os leve, min Lesbia, lad os elske, / ikke regne de strenge oldinges onde / rygtesnak for mere værd end en skilling. / Solens ild kan dø og atter fødes, / men når livets korte lys er slukket / venter os kun en evig nat og slummer. / Giv mig tusind kys og siden hundred, / derpå tusind andre og derpå hundred, / så endnu en gang tusind og så hundred! / Når vi har vekslet endnu et tusind, / vil vi blande dem sammen og glemme tallet, / så at ingen misundelig volder os skade, / når han erfarer hvor mange kys vi har vekslet.</note>
       <note type="credits">Bidrag fra Sven Sørensen.</note>
    </notes>
+   <source pages="216-217"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4238,9 +4220,9 @@ Saa mange Gange hun ham kysset har.
    <indextitle>Til Schleppegrell</indextitle>
    <firstline>Lig Memnons Støtte, kold, og uden Liv</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 218-19.</note>
       <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797), under titlen ,,I Schleppegrells Stambog''.</note>
    </notes>
+   <source pages="218-219"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4274,9 +4256,9 @@ Var Evalds Sang til <i>Schleppegrell</i>.
    <indextitle>Til mit Fædreneland</indextitle>
    <firstline>Du Plet af Jord, hvor første Gang mit Øie</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 220-24.</note>
       <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797), under titlen ,,Giensyn og Tilbageblik''.</note>
    </notes>
+   <source pages="220-224"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4367,10 +4349,10 @@ Min Frydhavns stille Havblik! speilt i dig.
    <indextitle>Palmines Bortgang</indextitle>
    <firstline>Her svandt hun, Rosen falmer, Løvet bæver</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 225-26.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1797), under titlen ,,Dafnes Bortgang''.</note>
       <note>Under navnet <i>Palmine</i> besynger Baggesen sin første hustru, Sophie Haller.</note>
    </notes>
+   <source pages="225-226"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4419,9 +4401,10 @@ Opgiver sødt min Aand.
    <indextitle>Til Frue Frederike Brun</indextitle>
    <firstline>Hvilken Najas tør sin Skaal vel gyde</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 227-28.</note>
       <note>Tidligere trykt i Rahbeks <i>Charis</i> (1800).</note>
    </notes>
+   <keywords>brunf</keywords>
+   <source pages="227-228"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4454,9 +4437,9 @@ Eiegode! tag min <i>Eiegod</i>.
    <indextitle>Skilsmissen</indextitle>
    <firstline>Snart hæves jeg til Lysets Sæde</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 229-30.</note>
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Skilsmissen efter -''.</note>
    </notes>
+   <source pages="229-230"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4505,9 +4488,7 @@ O! rind mit Liv! o favn mig, Død!
    <toctitle>Til Bonaparte</toctitle>
    <indextitle>Til Bonaparte</indextitle>
    <firstline>Hvilken Mand, Helt, Gud, o du Lyd fra Pindus</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 231-35.</note>
-   </notes>
+   <source pages="231-235"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4519,82 +4500,82 @@ O! rind mit Liv! o favn mig, Død!
 Hvilken Mand, Helt, Gud, o du Lyd fra <i>Pindus</i>,
 Clios høisangfordrende Røst! hvis Gienklang
 Rører alt selvdirrende Harpes Strænge,
-                                             Gielder dit Magtbud?
+<right>Gielder dit Magtbud?</right>
 
 Hvilket Navn bør dybt i din Kluft, o <i>Rhodan</i>,
 Høit om <i>Montblancs</i> Top, og fra Pol til Pol rundt
 Tordnens Festklang døvende, trefold Ekko
-                                             Festlig gientage?
+<right>Festlig gientage?</right>
 
 <i>Ilions</i> Borg sank, og i Seklers Stormhav
 <i>Ilions</i> Muurs styrtende Magt, og selv du,
 <i>Ilions</i> gruusreisede nye Kolos, høit-
-                                             taarnede <i>Roma!</i>
+<right>taarnede <i>Roma!</i></right>
 
 Trefold Grav opslugte din Æt, <i>Herakles!</i>
 <i>Cyrus</i> Sol gik ned; <i>Alexanders;</i> <i>Cæsars;</i>
 Hedenold! din Verden forgik; med den sank
-                                             Gudernes Afkom.
+<right>Gudernes Afkom.</right>
 
 Frankens Helt, du <i>Carl!</i> og de Russers Helt, <i>Czar!</i>
 Preussers Helt, Eneherskernes Mønster, <i>Fredrik!</i>
 Eders Maaner straaler ei meer. Hvorhen i
-                                             Heltenes Tusmørk?
+<right>Heltenes Tusmørk?</right>
 
 O Begeistring! Lyn, o kun vilde Lynglimt
 Møde dig, rundtspeidende Blik! Europa
 Hyller afgrundstigende Damp. Omsonst du
-                                             Kaldte mig, <i>Clio!</i>
+<right>Kaldte mig, <i>Clio!</i></right>
 
 Ingen Sol opklarer, og intet Maanlys
 Jordens Nat; selv Stjernerne slukkes; rundt om,
 Mellem Biergtroldspøgelser, saae jeg Dverge
-                                             Kravle paa Dverges
+<right>Kravle paa Dverges</right>
 
 Skuldre, fem Lag høit; men et Pust, og hovdkulds
 Styrtet laae Skykæmpen i Gruus! selv femfold
 Hundred opdyngt skued mit Blik; men aldrig
-                                             Stod der en Heros.
+<right>Stod der en Heros.</right>
 
 Hvi dog, Luftstrøm! suser du saa? Hvi dirrer
 Lyren, syvklangfyldt, som om Musen selv den
 Rørte? Syng! syng! toner mig <i>Drancens</i> Drøn i
-                                             Alpernes Gienlyd.
+<right>Alpernes Gienlyd.</right>
 
 Milde Luft, sydviftede! Fra hvad Alter
 Steg din laurbærrygende Duft? Din Ørn, <i>Zeus</i>,
 Svæver nær, nær, nærmere - Skræk! dens Rov alt
-                                             Suser jeg henrykt
+<right>Suser jeg henrykt</right>
 
 Ned fra <i>Bernhards</i> øverste Tind, hen over
 Heltes fordums Speil, det ruinomkrandste
 Middelhav, hen over din Øe, <i>Calypso!</i>
-                                             <i>Ætna</i> forbi, hen
+<right><i>Ætna</i> forbi, hen</right>
 
 Over <i>Minos</i> hellige Grav, ustandset
 Hen forbi hin Bred, hvor af Havet opsteg
 <i>Aphrodite</i>, hen i din aabne Favn, syv-
-                                             armede <i>Nilus!</i>
+<right>armede <i>Nilus!</i></right>
 
 Skræk! men her! hvad Syn! Pyramiders Zittren!
 Støtters Fald! Jordskiælv! Catacombers Aabning!
 Hedenold giengangende, vakt af <i>Portens</i>
-                                             Styrtende Hvelving!
+<right>Styrtende Hvelving!</right>
 
 O men hist - hvem skuer jeg hist med Ægis
 Væbnet? ham? ham selv, med <i>Apollos</i> Aasyn,<note>Aasyn] Aaasyn</note>
 Skuffer ei hvert Træk, min triumphomtonte
-                                             Helt, <i>Bonaparte!</i>
+<right>Helt, <i>Bonaparte!</i></right>
 
 O! du Vognborgknuser i Kamp, <i>Ares</i>,<note>Her mangler en tryksvag stavelse før ,,Ares'', f.eks. ,,o''.</note>
 <i>Ares?</i> nei, <i>Zeus</i> selv paa Titaners Biergfald.
 Slag i Slag Lyn slyngende, du, min Høisangs
-                                             Skiulte Begeistring!
+<right>Skiulte Begeistring!</right>
 
 Din Triumphvogn vende du snart! Europas
 Hæse Suk, ak! sidste maaskee, dig kalder.
 Iil, Olympskioldrustede hiem, og styrt den
-                                             sidste <i>Chimæra!</i>
+<right>sidste <i>Chimæra!</i></right>
 </body>
 </poem>
 
@@ -4606,9 +4587,9 @@ Iil, Olympskioldrustede hiem, og styrt den
    <indextitle>Taus Tilbedelse</indextitle>
    <firstline>Den høieste Begeistrings Himmel-Elv</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 236-40.</note>
       <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797), under titlen ,,Endelig Erklæring''.</note>
    </notes>
+   <source pages="236-240"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4701,9 +4682,9 @@ Den brænder, nært af dig, men ene seet af Gud.
    <indextitle>Bønhørelsen</indextitle>
    <firstline>O! jeg lyksalige! Fanny bønhører mig!</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 241-42.</note>
       <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Lycas til Lycilis''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Den glade Lycas''.</note>
    </notes>
+   <source pages="241-242"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4748,9 +4729,9 @@ Fanny! jeg døer i din Arm.
    <indextitle>Til Freden</indextitle>
    <firstline>Krigens Larm og Skrækkens Bulder</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 243-45.</note>
       <note>Tidligere trykt i:<br/>- <i>Kreds-Sang for Det Harmoniske Selskab paa Kongens Fødselsdag den 29 Januar 1800</i> (1800).<br/>- <i>Minerva</i> (januar 1800).</note>
    </notes>
+   <source pages="243-245"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4812,9 +4793,9 @@ Signet være <i>Christian!</i>
    <indextitle>Til Kronprindsen</indextitle>
    <firstline>Din Morgenrøde hilset blev</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 246-48.</note>
       <note>Tidligere trykt som særtryk: <i>Sang i Anledning af Hans Kongelige Høihed Kronprindsens Fødselsdag</i> (1800).</note>
    </notes>
+   <source pages="246-248"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4863,9 +4844,9 @@ Dit Hiertes Løn!
    <indextitle>Venskab og Kiærlighed</indextitle>
    <firstline>O du, som medsmilende leer</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 249.</note>
       <note>Tidligere trykt i Rahbeks <i>Charis</i> (1800), under titlen ,,Sonnet''.</note>
    </notes>
+   <source pages="249"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4896,9 +4877,9 @@ Og med Dig i min Vellyst jeg græder.
    <indextitle>Til Fanny</indextitle>
    <firstline>Skal jeg da skylde dig mit Væsens hele Vel?</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 250-52.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1793), under titlen ,,Til Psyche''.</note>
    </notes>
+   <source pages="250-252"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4954,9 +4935,9 @@ At over dig jeg ei skal glemme Gud!
    <indextitle>Digterfortvivlelse</indextitle>
    <firstline>Nei! længer vil jeg ei min vilde Smerte styre</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 253-56.</note>
       <note>Tidligere trykt i <i>Charis</i> (1797), med undertitlen ,,Da hun yttrede, at hun heller læste Prosa end Poesie''.</note>
    </notes>
+   <source pages="253-256"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5043,9 +5024,9 @@ Døe paa min Læbe, du min sidste Sang!
    <indextitle>Til Menander</indextitle>
    <firstline>Du glade Ven! som i din Elsktes Arm</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 259-64.</note>
       <note>Tidligere trykt i Iversens <i>Samling af Poesier</i> (1785), under titlen ,,Til min Ven''.</note>
    </notes>
+   <source pages="259-264"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5150,9 +5131,9 @@ Min Gud, mig selv og min <i>Menander</i> værd.
    <indextitle>Det første Haandtryk</indextitle>
    <firstline>Nei! bort med Trøst! paa denne Jord</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 265-70.</note>
       <note>Tidligere trykt i <i>Minerva</i> (august 1785), under titlen ,,Til Zeline''.</note>
    </notes>
+   <source pages="265-270"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5255,9 +5236,9 @@ Ras Skiebne! lad dit Lyn ned slaae!
    <indextitle>Til Seline</indextitle>
    <firstline>Sig, Elskede! den Mand, til hvem dit Øie</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 271-73.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1797), under titlen ,,Elegie''.</note>
    </notes>
+   <source pages="271-273"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5320,9 +5301,9 @@ Men med det alt, fortiente jeg din Lige;
    <indextitle>Min anden Skabelse</indextitle>
    <firstline>Udannet sprang jeg af min Moders Arme</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 274-79.</note>
       <note>Tidligere trykt i <i>Minerva</i> (juli 1785), under titlen ,,Til Zeline''.</note>
    </notes>
+   <source pages="274-279"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5425,9 +5406,9 @@ At elskes af den fierne Fremtids Sønner,
    <indextitle>Erklæringen</indextitle>
    <firstline>Naar Morgenrødens første Smiil indbyde</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 280-82.</note>
       <note>Tidligere trykt i Iversens <i>Samling af Poesier</i> (1785), under titlen ,,Zeline''.</note>
    </notes>
+   <source pages="280-282"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5485,9 +5466,9 @@ Jeg kan jo synge dig og dine Dyder,
    <indextitle>Elskerens Ønske</indextitle>
    <firstline>Om dig, om dig er alle mine Bønner</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 283-85.</note>
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Til Zeline. Efter Tibullus's 3 Bogs 3 Elegie''.</note>
    </notes>
+   <source pages="283-285"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5549,9 +5530,7 @@ Snart, snart, o! Pluto! lad mig Arme stige
    <toctitle>Bønnerne</toctitle>
    <indextitle>Bønnerne</indextitle>
    <firstline>Gjet, Elskede! hvorom din Elsker beder</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 286-89.</note>
-   </notes>
+   <source pages="286-289"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5618,9 +5597,9 @@ Og beder blot, at giennem Evigheden
    <indextitle>Sværmerie</indextitle>
    <firstline>Gid alle Jordens Kroner vare dine!</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 290-93.</note>
       <note>Tidligere trykt i <i>Minerva</i> (marts 1786), under titlen ,,Til Zeline''.</note>
    </notes>
+   <source pages="290-293"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5686,9 +5665,7 @@ Ved under en Gudindes Skierm at nyde
    <toctitle>Kierlighedseden</toctitle>
    <indextitle>Kierlighedseden</indextitle>
    <firstline>Lad Venus mig en Huldgudinde sende</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 294-97.</note>
-   </notes>
+   <source pages="294-297"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5758,9 +5735,7 @@ Af Guders Lyst skal dette Hierte bæve,
    <toctitle>Overalt den Elskede</toctitle>
    <indextitle>Overalt den Elskede</indextitle>
    <firstline>Tæl Engens Blomstre, Skyggelundens Blade</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 298-99.</note>
-   </notes>
+   <source pages="298-299"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5802,9 +5777,7 @@ Mit Øre blot et dunkelt Bulder saarer;
    <toctitle>Udelukkende Hyldest</toctitle>
    <indextitle>Udelukkende Hyldest</indextitle>
    <firstline>Seline! du skal ene mig behage</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 300-03.</note>
-   </notes>
+   <source pages="300-303"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5878,9 +5851,9 @@ Og nyde salig i sin hele Vidde
    <indextitle>Til Sangen</indextitle>
    <firstline>Gaae, lykkelige Sang! til min Seline</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 304-05.</note>
       <note>Tidligere trykt i <i>Minerva</i> (september 1787), under titlen ,,Elegie''.</note>
    </notes>
+   <source pages="304-305"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5927,9 +5900,9 @@ Dig, hellige! som nød min drømte Lykke,
    <indextitle>Da hun skulde reise</indextitle>
    <firstline>Hvad Mørke for min Siel udbreder sig!</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 306-07.</note>
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788).</note>
    </notes>
+   <source pages="306-307"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5962,9 +5935,9 @@ Fortrolig kun med Mørket, Lasten lig,
    <indextitle>Da hun var bortreist</indextitle>
    <firstline>O! hvor er Glimt af Trøst? Omsonst mit Øie</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 308-10.</note>
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788).</note>
    </notes>
+   <source pages="308-310"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6011,9 +5984,9 @@ For, tryllet af den Redning Haabet spaaer,
    <indextitle>Savnet</indextitle>
    <firstline>Af ængstlig Længsel nu mit Hjerte gyser</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 311-13.</note>
       <note>Tidligere trykt i <i>Minerva</i> (september 1787), under titlen ,,Elegie''.</note>
    </notes>
+   <source pages="311-313"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6059,9 +6032,9 @@ Og i mit Helved længselfuld omfavne
    <indextitle>Til Richardsons Clarissa</indextitle>
    <firstline>O du! som ofte saae min Taare rinde</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 314-19.</note>
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Elegie. Til et Exemplar af Zadig''.</note>
    </notes>
+   <source pages="314-319"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6163,9 +6136,9 @@ Og festlig andagtsfuld i dig tilbede
    <indextitle>Selines Tab</indextitle>
    <firstline>Taus er Naturen, Skabningen er øde</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 320-23.</note>
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Elegie''.</note>
    </notes>
+   <source pages="320-323"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6231,9 +6204,9 @@ O vee mig! vee! mit hele Hierte gyser;
    <indextitle>Til Apollo</indextitle>
    <firstline>Til nogle Himlen Septer gav og Krone</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 324-25.</note>
       <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788).</note>
    </notes>
+   <source pages="324-325"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6275,9 +6248,9 @@ Thi Musen steeg til mig fra mørke Grave,
    <indextitle>Da jeg var lille</indextitle>
    <firstline>Der var en Tid, da jeg var meget lille</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 326-28.</note>
       <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1785).<br/>- <i>Ungdomsarbeider</i> (1791).</note>
    </notes>
+   <source pages="326-328"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6335,9 +6308,9 @@ Gud lad mig aldrig, aldrig tabe den!
    <indextitle>Ved Bergers Død</indextitle>
    <firstline>Ei Lægen blot, som hans Exempel lærte</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 329-30.</note>
       <note>Tidligere trykt i <i>Ungdomsarbeider</i> (1791), under titlen ,,Til Dydens Ven ved Bergers Død''.</note>
    </notes>
+   <source pages="329-330"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6379,9 +6352,9 @@ Min <i>Callisen</i>, saa sang Hygæa, lever;
    <indextitle>Minonas Fraværelse</indextitle>
    <firstline>Fra den sørgende Stund, da Minona forlod dine Bredde</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 331-32.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1797).</note>
    </notes>
+   <source pages="331-332"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6411,9 +6384,9 @@ Da skal den memnonske Støtte, din Skiald, oplives og tone
    <indextitle>Til Palmine</indextitle>
    <firstline>Skaberens blindende Glands gienstraaler utallige Speile</firstline>
    <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 333-34.</note>
       <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797).</note>
    </notes>
+   <source pages="333-334"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6437,9 +6410,7 @@ Ham vil jeg elske som dig, og dig, som man ham bør at elske:
    <toctitle>Til Søvnen</toctitle>
    <indextitle>Til Søvnen</indextitle>
    <firstline>Iil, kiærligste blandt alle milde Guder</firstline>
-   <notes>
-      <note>Teksten følger <i>Samtlige Værker I</i> (1801), side 335-36.</note>
-   </notes>
+   <source pages="335-336"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
