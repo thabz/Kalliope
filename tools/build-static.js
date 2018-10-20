@@ -250,7 +250,7 @@ const build_museum_link = picture => {
         url = `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${objId}&viewType=detailView`;
       case 'digitalmuseum.no':
         url = `https://digitaltmuseum.no/${objId}/maleri`;
-        break;
+      break;
     }
     return url == null ? null : ` <a href="${url}">⌘</a>`;
   }
