@@ -69,20 +69,25 @@ const writeContentOpf = () => {
     .join(', ');
   const language = poet.lang + '-' + poet.country.toUpperCase();
 
-  let xml = '<?xml version="1.0" encoding="utf-8" standalone="yes"?>';
+  let xml = '<?xml version="1.0" encoding="utf-8" standalone="yes"?>\n';
   xml +=
     '<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="2.0">';
   xml += '<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">';
-  xml += `<dc:identifier id="bookid" >urn:kalliope:org:${poetId}:${workId}</dc:identifier>`;
+  xml += `<dc:identifier id="bookid">urn:kalliope:org:${poetId}:${workId}</dc:identifier>`;
   xml += `<dc:title>${work.title}</dc:title>`;
-  if (work.year != null && work.year !=== '?') {
-    xml += `<dc:date opf:event="publication">${work.year}</dc:publisher>`;
+  if (work.year != null && work.year !== '?') {
+    xml += `<dc:date xmlns:opf="http://www.idpf.org/2007/opf" opf:event="publication">${
+      work.year
+    }</dc:date>`;
   }
+  xml += `<dc:date xmlns:opf="http://www.idpf.org/2007/opf" opf:event="modification">${workJson.modified.substring(
+    0,
+    10
+  )}</dc:date>`;
   xml += `<dc:language>${language}</dc:language>`;
   xml += `<dc:creator xmlns:opf="http://www.idpf.org/2007/opf" opf:file-as="${reverseFullName}" opf:role="aut">${fullName}</dc:creator>`;
   xml += `<dc:publisher>Kalliope</dc:publisher>`;
   xml += `<dc:rights>public domain</dc:rights>`;
-  // TODO: creation (git log), publication (work year), and modification (git log) dates
   xml += '</metadata>';
   xml += '</package>';
   writeText(`${epubFolder}/content/content.opf`, xml);
