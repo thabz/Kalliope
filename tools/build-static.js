@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { execSync } = require('child_process');
 const path = require('path');
 const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
@@ -1665,6 +1666,13 @@ const build_works_toc = collected => {
           notes: work_data.notes || [],
           pictures: work_data.pictures || [],
         };
+
+        // Find modified date i git.
+        const modifiedDateString = execSync(
+          `git log -1 --format="%ad" --date=iso-strict -- ${filename}`
+        );
+        toc_file_data.modified = modifiedDateString.toString().trim();
+
         const tocFilename = `static/api/${poetId}/${workId}-toc.json`;
         console.log(tocFilename);
         writeJSON(tocFilename, toc_file_data);
