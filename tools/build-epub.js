@@ -57,10 +57,14 @@ const readTocJson = () => {
 };
 
 const iterateWork = callback => {
+  let id_seq = 1;
   const recurse = section => {
     section.forEach(item => {
-      callback(item);
-      if (item.type === 'section') {
+      if (item.type === 'text') {
+        callback(item.id, item);
+      } else if (item.type === 'section') {
+        const id = item.id || id_seq++;
+        callback('section-' + id, item);
         recurse(item.content);
       }
     });
@@ -70,36 +74,28 @@ const iterateWork = callback => {
 
 const buildManifestXml = () => {
   let items = [];
-  iterateWork(item => {
-    if (item.type === 'text') {
-      items.push(item.id);
-    } else if (item.type === 'section') {
-      items.push('section-' + items.length);
-    }
+  iterateWork((id, item) => {
+    items.push(id);
   });
   const itemsXml = items
     .map(id => {
-      return `<item id="${id}" href="xhtml/${id}.xhtml" media-type="application/xhtml+xml"/>`;
+      return `    <item id="${id}" href="xhtml/${id}.xhtml" media-type="application/xhtml+xml"/>`;
     })
     .join('\n');
-  return `<manifest>\n${itemsXml}\n</manifest>\n`;
+  return `  <manifest>\n${itemsXml}\n  </manifest>\n`;
 };
 
 const buildSpineXml = () => {
   let items = [];
-  iterateWork(item => {
-    if (item.type === 'text') {
-      items.push(item.id);
-    } else if (item.type === 'section') {
-      items.push('section-' + items.length);
-    }
+  iterateWork((id, item) => {
+    items.push(id);
   });
   const itemsXml = items
     .map(id => {
-      return `<itemref idref="${id}" />`;
+      return `    <itemref idref="${id}" />`;
     })
     .join('\n');
-  return `<spine>\n${itemsXml}\n</spine>\n`;
+  return `  <spine>\n${itemsXml}\n  </spine>\n`;
 };
 
 const writeContentOpf = () => {
@@ -134,11 +130,47 @@ const writeContentOpf = () => {
   xml += `<dc:creator xmlns:opf="http://www.idpf.org/2007/opf" opf:file-as="${reverseFullName}" opf:role="aut">${fullName}</dc:creator>`;
   xml += `<dc:publisher>Kalliope</dc:publisher>`;
   xml += `<dc:rights>public domain</dc:rights>`;
-  xml += '</metadata>';
+  xml += '</metadata>\n';
   xml += buildManifestXml();
   xml += buildSpineXml();
   xml += '</package>';
   writeText(`${epubFolder}/content/content.opf`, xml);
+};
+
+const wrapPageInBoilerplace = (title, body) => {
+  let xml = '<?xml version="1.0" encoding="utf-8" standalone="yes"?>\n';
+  xml +=
+    '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">\n';
+  xml += `<head><title>${title}</title></head>\n`;
+  xml += '<body>';
+  xml += '<div epub:type="chapter">';
+  xml += body;
+  xml += '</div>';
+  xml += '</body>';
+  xml += '</html>';
+  return xml;
+};
+
+const writeTextPage = (id, item) => {
+  const content = `<h1>${item.title}</h1>`;
+  const xml = wrapPageInBoilerplace(id, content);
+  writeText(`${epubFolder}/content/xhtml/${id}.xhtml`, xml);
+};
+
+const writeSectionPage = (id, item) => {
+  const content = `<h1>${item.title}</h1>`;
+  const xml = wrapPageInBoilerplace(id, content);
+  writeText(`${epubFolder}/content/xhtml/${id}.xhtml`, xml);
+};
+
+const writePages = () => {
+  iterateWork((id, item) => {
+    if (item.type === 'text') {
+      writeTextPage(id, item);
+    } else if (item.type === 'section') {
+      writeSectionPage(id, item);
+    }
+  });
 };
 
 const main = () => {
@@ -149,6 +181,7 @@ const main = () => {
   safeMkdir(epubFolder);
   safeMkdir(`${epubFolder}/META-INF`);
   safeMkdir(`${epubFolder}/content`);
+  safeMkdir(`${epubFolder}/content/xhtml`);
 
   // 1.5. Læs TOC JSON
   readTocJson();
@@ -157,6 +190,7 @@ const main = () => {
   writeMimetype();
   writeContainerXML();
   writeContentOpf();
+  writePages();
 
   // 3. zip og fjern mappen og
   zipFolder();
