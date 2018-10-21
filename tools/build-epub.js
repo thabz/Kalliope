@@ -56,6 +56,27 @@ const readTocJson = () => {
   workJson = loadJSON(filename);
 };
 
+const buildManifestXml = () => {
+  let items = [];
+  const recurse = section => {
+    section.forEach(item => {
+      if (item.type === 'text') {
+        items.push(item.id);
+      } else if (item.type === 'section') {
+        items.push('section-' + items.length);
+        recurse(item.content);
+      }
+    });
+  };
+  recurse(workJson.toc);
+  const itemsXml = items
+    .map(id => {
+      return `<item id="${id}" href="xhtml/${id}.xhtml" media-type="application/xhtml+xml"/>`;
+    })
+    .join('\n');
+  return `<manifest>\n${itemsXml}\n</manifest>\n`;
+};
+
 const writeContentOpf = () => {
   const poet = workJson.poet;
   const work = workJson.work;
@@ -89,6 +110,7 @@ const writeContentOpf = () => {
   xml += `<dc:publisher>Kalliope</dc:publisher>`;
   xml += `<dc:rights>public domain</dc:rights>`;
   xml += '</metadata>';
+  xml += buildManifestXml();
   xml += '</package>';
   writeText(`${epubFolder}/content/content.opf`, xml);
 };
