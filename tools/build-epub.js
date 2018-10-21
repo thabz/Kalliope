@@ -56,25 +56,50 @@ const readTocJson = () => {
   workJson = loadJSON(filename);
 };
 
-const buildManifestXml = () => {
-  let items = [];
+const iterateWork = callback => {
   const recurse = section => {
     section.forEach(item => {
-      if (item.type === 'text') {
-        items.push(item.id);
-      } else if (item.type === 'section') {
-        items.push('section-' + items.length);
+      callback(item);
+      if (item.type === 'section') {
         recurse(item.content);
       }
     });
   };
   recurse(workJson.toc);
+};
+
+const buildManifestXml = () => {
+  let items = [];
+  iterateWork(item => {
+    if (item.type === 'text') {
+      items.push(item.id);
+    } else if (item.type === 'section') {
+      items.push('section-' + items.length);
+    }
+  });
   const itemsXml = items
     .map(id => {
       return `<item id="${id}" href="xhtml/${id}.xhtml" media-type="application/xhtml+xml"/>`;
     })
     .join('\n');
   return `<manifest>\n${itemsXml}\n</manifest>\n`;
+};
+
+const buildSpineXml = () => {
+  let items = [];
+  iterateWork(item => {
+    if (item.type === 'text') {
+      items.push(item.id);
+    } else if (item.type === 'section') {
+      items.push('section-' + items.length);
+    }
+  });
+  const itemsXml = items
+    .map(id => {
+      return `<itemref idref="${id}" />`;
+    })
+    .join('\n');
+  return `<spine>\n${itemsXml}\n</spine>\n`;
 };
 
 const writeContentOpf = () => {
@@ -111,6 +136,7 @@ const writeContentOpf = () => {
   xml += `<dc:rights>public domain</dc:rights>`;
   xml += '</metadata>';
   xml += buildManifestXml();
+  xml += buildSpineXml();
   xml += '</package>';
   writeText(`${epubFolder}/content/content.opf`, xml);
 };
