@@ -73,6 +73,45 @@ const iterateWork = callback => {
   recurse(workJson.toc);
 };
 
+const writeToc = () => {
+  let id_seq = 1;
+
+  const recurse = section => {
+    let toc = '';
+    section.forEach(item => {
+      if (item.type === 'text') {
+        toc += `<li id="${item.id}"><a href="${item.id}.xhtml">${
+          item.title
+        }</a></li>\n`;
+      } else if (item.type === 'section') {
+        const id = item.id || id_seq++;
+        const fullId = 'section-' + id;
+        toc += '<ol>\n';
+        toc += recurse(item.content);
+        toc += '</ol>\n';
+      }
+    });
+    return toc;
+  };
+  const toc = recurse(workJson.toc);
+
+  let xml =
+    '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">\n';
+  xml += '<head><title>Indhold</title></head>';
+  xml += '<body>';
+  xml += '<section epub:type="frontmatter toc">';
+  xml += '<header><h1>Indhold</h1></header>';
+  xml += '<nav epub:type="toc" id="toc">';
+  xml += '<ol>';
+  xml += recurse(workJson.toc);
+  xml += '</ol>';
+  xml += '</nav>';
+  xml += '</section>';
+  xml += '</body>';
+  xml += '</html>';
+  writeText(`${epubFolder}/content/xhtml/toc.xhtml`, xml);
+};
+
 const buildManifestXml = () => {
   let items = [];
   iterateWork((id, item) => {
@@ -85,6 +124,8 @@ const buildManifestXml = () => {
     .join('\n');
   itemsXml +=
     '<item id="book.css" href="styles/books.css"  media-type="text/css"/>\n';
+  itemsXml +=
+    '<item id="toc" properties="nav" href="xhtml/toc.xhtml"  media-type="application/xhtml+xml"/>\n';
   return `  <manifest>\n${itemsXml}\n  </manifest>\n`;
 };
 
@@ -93,11 +134,17 @@ const buildSpineXml = () => {
   iterateWork((id, item) => {
     items.push(id);
   });
-  const itemsXml = items
+  let chapters = items
     .map(id => {
       return `    <itemref idref="${id}" />`;
     })
     .join('\n');
+  // TODO: Add cover
+  // TODO: Add frontispiece
+  // TODO: Add colophone
+  itemsXml = '<itemref idref="toc" />\n';
+
+  itemsXml += chapters;
   return `  <spine>\n${itemsXml}\n  </spine>\n`;
 };
 
@@ -116,7 +163,7 @@ const writeContentOpf = () => {
 
   let xml = '<?xml version="1.0" encoding="utf-8" standalone="yes"?>\n';
   xml +=
-    '<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="2.0">';
+    '<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="3.0">';
   xml += '<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">';
   xml += `<dc:identifier id="bookid">urn:kalliope:org:${poetId}:${workId}</dc:identifier>`;
   xml += `<dc:title>${work.title}</dc:title>`;
@@ -239,6 +286,7 @@ const main = () => {
   writeMimetype();
   writeContainerXML();
   writeContentOpf();
+  writeToc();
   writeStyles();
   writePages();
 
