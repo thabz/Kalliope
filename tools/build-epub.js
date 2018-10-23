@@ -78,11 +78,13 @@ const buildManifestXml = () => {
   iterateWork((id, item) => {
     items.push(id);
   });
-  const itemsXml = items
+  let itemsXml = items
     .map(id => {
       return `    <item id="${id}" href="xhtml/${id}.xhtml" media-type="application/xhtml+xml"/>`;
     })
     .join('\n');
+  itemsXml +=
+    '<item id="book.css" href="styles/books.css"  media-type="text/css"/>\n';
   return `  <manifest>\n${itemsXml}\n  </manifest>\n`;
 };
 
@@ -196,15 +198,15 @@ const writeTextPage = (textId, item) => {
     return `<p class="${className}">${expandedHtml}</p>`;
   });
 
-  let content = `<h2>${item.title}</h2>`;
-  content += `<!-- ${filename} -->`;
+  let content = `<h2>${item.title}</h2>\n`;
+  content += `<!-- ${filename} -->\n`;
   content += lines.join('\n');
   const xml = wrapPageInBoilerplace(textId, content);
   writeText(`${epubFolder}/content/xhtml/${textId}.xhtml`, xml);
 };
 
 const writeSectionPage = (id, item) => {
-  const content = `<h2>${item.title}</h2>`;
+  const content = `<h2>${item.title}</h2>\n`;
   const xml = wrapPageInBoilerplace(id, content);
   writeText(`${epubFolder}/content/xhtml/${id}.xhtml`, xml);
 };
