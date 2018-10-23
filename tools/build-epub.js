@@ -2,6 +2,7 @@ const fs = require('fs');
 const entities = require('entities');
 const archiver = require('archiver');
 const rmdir = require('rimraf');
+const Paths = require('../pages/helpers/paths.js');
 const { safeMkdir, writeText, loadJSON } = require('./libs/helpers.js');
 
 let poetId = null;
@@ -137,28 +138,73 @@ const writeContentOpf = () => {
   writeText(`${epubFolder}/content/content.opf`, xml);
 };
 
+const writeStyles = () => {
+  // TODO: div.hr
+  let css = '';
+  css += 'span.sc { font-variant: small-caps; }\n';
+  css += 'p.poem-line { margin: 0; line-height: 1.5; }\n';
+  css += 'p.half-height-blank { line-height: 0.8; }\n';
+  css +=
+    '.hr { height: 4px; padding-bottom: px; border-bottom: 1px solid black;  }\n';
+  writeText(`${epubFolder}/content/styles/books.css`, css);
+};
+
 const wrapPageInBoilerplace = (title, body) => {
   let xml = '<?xml version="1.0" encoding="utf-8" standalone="yes"?>\n';
   xml +=
     '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">\n';
-  xml += `<head><title>${title}</title></head>\n`;
-  xml += '<body>';
-  xml += '<div epub:type="chapter">';
+  xml += '<head>\n';
+  xml += `  <title>${title}</title>\n`;
+  xml += '  <link href="../styles/book.css"/>\n';
+  xml += '</head>\n';
+  xml += '<body>\n';
+  xml += '<div>';
   xml += body;
   xml += '</div>';
-  xml += '</body>';
-  xml += '</html>';
+  xml += '</body>\n';
+  xml += '</html>\n';
   return xml;
 };
 
-const writeTextPage = (id, item) => {
-  const content = `<h1>${item.title}</h1>`;
-  const xml = wrapPageInBoilerplace(id, content);
-  writeText(`${epubFolder}/content/xhtml/${id}.xhtml`, xml);
+const expandHtml = s => {
+  return s
+    .replace(/<sc>/g, '<span class="sc">')
+    .replace(/<\/sc>/g, '</span>')
+    .replace(/^(\s+)/, (_, p1) => {
+      return;
+    })
+    .replace(/<note.*?<\/note>/g, '') // TODO: Understøt noter
+    .replace(/<hr width=\"([^"]*)"\/>/, (_, p1) => {
+      return `<span class="hr hr-${p1}" />`;
+    });
+};
+
+const writeTextPage = (textId, item) => {
+  const filename = `${Paths.textFolder(textId)}/${textId}.json`;
+  const textJson = loadJSON(filename);
+  const lines = textJson.text.content_html.map(l => {
+    const rawHtml = l[0];
+    const options = l[1] || {};
+    if (options.hr) {
+      return '<div class="hr" />';
+    }
+    const expandedHtml = options.html ? expandHtml(rawHtml) : rawHtml;
+    let className = 'poem-line';
+    if (expandedHtml.trim().length == 0) {
+      className += ' half-height-blank';
+    }
+    return `<p class="${className}">${expandedHtml}</p>`;
+  });
+
+  let content = `<h2>${item.title}</h2>`;
+  content += `<!-- ${filename} -->`;
+  content += lines.join('\n');
+  const xml = wrapPageInBoilerplace(textId, content);
+  writeText(`${epubFolder}/content/xhtml/${textId}.xhtml`, xml);
 };
 
 const writeSectionPage = (id, item) => {
-  const content = `<h1>${item.title}</h1>`;
+  const content = `<h2>${item.title}</h2>`;
   const xml = wrapPageInBoilerplace(id, content);
   writeText(`${epubFolder}/content/xhtml/${id}.xhtml`, xml);
 };
@@ -182,6 +228,7 @@ const main = () => {
   safeMkdir(`${epubFolder}/META-INF`);
   safeMkdir(`${epubFolder}/content`);
   safeMkdir(`${epubFolder}/content/xhtml`);
+  safeMkdir(`${epubFolder}/content/styles`);
 
   // 1.5. Læs TOC JSON
   readTocJson();
@@ -190,6 +237,7 @@ const main = () => {
   writeMimetype();
   writeContainerXML();
   writeContentOpf();
+  writeStyles();
   writePages();
 
   // 3. zip og fjern mappen og
