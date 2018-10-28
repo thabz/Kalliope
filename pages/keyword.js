@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
-import Nav from '../components/nav';
+import Nav, { kalliopeCrumbs } from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { KalliopeTabs } from '../components/tabs.js';
@@ -79,10 +79,10 @@ export default class extends React.Component<KeywordComponentProps> {
         lang={lang}
       />
     );
-    const navbar = [
-      <Link route={Links.keywordsURL(lang)}>
-        <a>{_('Nøgleord', lang)}</a>
-      </Link>,
+    const crumbs = [
+      ...kalliopeCrumbs(lang),
+      { url: Links.keywordsURL(lang), title: _('Nøgleord', lang) },
+      { title: keyword.title },
     ];
     const title = keyword.title;
     let author = null;
@@ -107,7 +107,7 @@ export default class extends React.Component<KeywordComponentProps> {
             requestPath={requestPath}
           />
           <Main>
-            <Nav lang={lang} links={navbar} title={keyword.title} />
+            <Nav lang={lang} crumbs={crumbs} />
             <Heading title={title} />
             <KalliopeTabs lang={lang} selected="keywords" />
             <SidebarSplit sidebar={sidebar}>
