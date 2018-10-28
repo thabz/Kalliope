@@ -71,6 +71,15 @@ const workName = work => {
   return title + yearPart;
 };
 
+const workLinkName = work => {
+  const { linktitle, year } = work;
+  let yearPart = '';
+  if (year && year !== '?') {
+    yearPart = ` (${year})`;
+  }
+  return linktitle + yearPart;
+};
+
 // Ready after second pass
 let collected_works = new Map();
 
@@ -142,7 +151,6 @@ const load_timeline = filename => {
 };
 
 const build_global_timeline = collected => {
-  // TODO: Cache this file
   return load_timeline('data/events.xml');
 };
 
@@ -161,24 +169,31 @@ const build_poet_timeline_json = (poet, collected) => {
 
   let items = [];
   if (poet.type !== 'collection') {
-    collected.workids.get(poet.id).forEach(workId => {
-      const work = collected.works.get(`${poet.id}/${workId}`);
-      if (work.year != '?') {
-        // TODO: Hvis der er et titel-blad, så output type image.
-        const workName = work.has_content
-          ? `<a work="${poet.id}/${workId}">${work.title}</a>`
-          : work.title;
-        items.push({
-          date: work.published,
-          type: 'text',
-          content_lang: 'da',
-          is_history_item: false,
-          content_html: [
-            [`${poet.name.lastname}: ${workName}.`, { html: true }],
-          ],
-        });
-      }
-    });
+    collected.workids
+      .get(poet.id)
+      .filter(workId => {
+        // Vi vil ikke have underværkerne i tidslinjen
+        const work = collected.works.get(`${poet.id}/${workId}`);
+        return work.parent == null;
+      })
+      .forEach(workId => {
+        const work = collected.works.get(`${poet.id}/${workId}`);
+        if (work.year != '?') {
+          // TODO: Hvis der er et titel-blad, så output type image.
+          const workName = work.has_content
+            ? `<a work="${poet.id}/${workId}">${work.title}</a>`
+            : work.title;
+          items.push({
+            date: work.published,
+            type: 'text',
+            content_lang: 'da',
+            is_history_item: false,
+            content_html: [
+              [`${poet.name.lastname}: ${workName}.`, { html: true }],
+            ],
+          });
+        }
+      });
     if (poet.period.born.date !== '?') {
       const place = (poet.period.born.place != null
         ? '  ' +
@@ -726,12 +741,49 @@ const resolve_variants = poemId => {
   result = Array.from(seen_variants).sort((a, b) => {
     const metaA = collected.texts.get(a);
     const metaB = collected.texts.get(b);
+    if (metaA == null) {
+      throw new Error(
+        `The unknown text ${a} is listed as a variant of ${poemId}.`
+      );
+    }
+    if (metaB == null) {
+      throw new Error(
+        `The unknown text ${b} is listed as a variant ${poemId}.`
+      );
+    }
     const workA = collected.works.get(metaA.poetId + '/' + metaA.workId);
     const workB = collected.works.get(metaB.poetId + '/' + metaB.workId);
     return workA.year > workB.year ? 1 : -1;
   });
   resolve_variants_cache[poemId] = result;
   return result;
+};
+
+const extract_subtitles = head => {
+  let subtitles = null;
+  const subtitle = head.get('subtitle');
+  if (subtitle && subtitle.find('line').length > 0) {
+    subtitles = subtitle.find('line').map(s => {
+      return htmlToXml(
+        s
+          .toString()
+          .replace('<line>', '')
+          .replace('</line>', '')
+          .replace('<line/>', ''),
+        collected,
+        true
+      );
+    });
+  } else if (subtitle) {
+    const subtitleString = subtitle
+      .toString()
+      .replace('<subtitle>', '')
+      .replace('</subtitle>', '');
+    if (subtitleString.indexOf('<subtitle/>') === -1) {
+      subtitles = [htmlToXml(subtitleString, collected, true)];
+    }
+  }
+  return subtitles;
 };
 
 const handle_text = (
@@ -762,29 +814,8 @@ const handle_text = (
   const isFolkevise =
     poetId === 'folkeviser' || (poetId === 'tasso' && workId === '1581');
 
-  let subtitles = null;
-  const subtitle = head.get('subtitle');
-  if (subtitle && subtitle.find('line').length > 0) {
-    subtitles = subtitle.find('line').map(s => {
-      return htmlToXml(
-        s
-          .toString()
-          .replace('<line>', '')
-          .replace('</line>', '')
-          .replace('<line/>', ''),
-        collected,
-        true
-      );
-    });
-  } else if (subtitle) {
-    const subtitleString = subtitle
-      .toString()
-      .replace('<subtitle>', '')
-      .replace('</subtitle>', '');
-    if (subtitleString.indexOf('<subtitle/>') === -1) {
-      subtitles = [htmlToXml(subtitleString, collected, true)];
-    }
-  }
+  let subtitles = extract_subtitles(head);
+
   let keywordsArray = [];
   if (keywords) {
     keywordsArray = keywords
@@ -811,17 +842,25 @@ const handle_text = (
       });
   }
 
-  let refsArray = (collected.textrefs.get(textId) || []).map(id => {
-    const meta = collected.texts.get(id);
-    const poet = poetName(collected.poets.get(meta.poetId));
-    const work = workName(collected.works.get(meta.poetId + '/' + meta.workId));
-    return [
-      [
-        `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`,
-        { html: true },
-      ],
-    ];
-  });
+  let refsArray = (collected.textrefs.get(textId) || [])
+    .filter(id => {
+      // Hvis en tekst har varianter som også henviser til denne,
+      // vil vi kun vise den ældste variant.
+      return primaryTextVariantId(id) === id;
+    })
+    .map(id => {
+      const meta = collected.texts.get(id);
+      const poet = poetName(collected.poets.get(meta.poetId));
+      const work = workLinkName(
+        collected.works.get(meta.poetId + '/' + meta.workId)
+      );
+      return [
+        [
+          `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`,
+          { html: true },
+        ],
+      ];
+    });
 
   const variantsArray = (resolve_variants(textId) || [])
     .filter(id => {
@@ -831,7 +870,7 @@ const handle_text = (
     .map(id => {
       const meta = collected.texts.get(id);
       const poet = poetName(collected.poets.get(meta.poetId));
-      const work = workName(
+      const work = workLinkName(
         collected.works.get(meta.poetId + '/' + meta.workId)
       );
       return [
@@ -877,14 +916,29 @@ const handle_text = (
     ) {
       // Deduce facsimilePages from pages and facsimilePagesOffset.
       const pagesParts = pagesAttr.split(/-/).map(n => parseInt(n));
-      const pFrom = pagesParts[0] + workSource.facsimilePagesOffset;
-      const pTo = (pagesParts[1] || pFrom) + workSource.facsimilePagesOffset;
-      facsimilePages = [pFrom, pTo];
+      const o = workSource.facsimilePagesOffset;
+      const pFrom = pagesParts[0];
+      const pTo = pagesParts[1] || pFrom;
+      facsimilePages = [pFrom + o, pTo + o];
     } else if (facsimilePages != null) {
       const pagesParts = facsimilePages.split(/-/).map(n => parseInt(n));
       const pFrom = pagesParts[0];
       const pTo = pagesParts[1] || pFrom;
       facsimilePages = [pFrom, pTo];
+    }
+    if (facsimilePages[0] > facsimilePages[1]) {
+      throw new Error(
+        `fdirs/${poetId}/${workId}.xml ${textId} sideangivelser har fra > til.`
+      );
+    }
+    if (facsimilePages[1] > workSource.facsimilePageCount) {
+      throw new Error(
+        `fdirs/${poetId}/${workId}.xml ${textId} sideangivelse ${
+          facsimilePages[1]
+        } rækker over antal facsimile-sider. Er facsimile-pages-offset ${
+          workSource.facsimilePageCount
+        } korrekt?`
+      );
     }
     source = {
       source: sourceBookRef,
@@ -971,6 +1025,7 @@ const extractTitle = (head, type) => {
   title = entities
     .decodeHTML(title)
     .replace('<' + type + '>', '')
+    .replace('<' + type + ' force-index="true">', '')
     .replace('</' + type + '>', '')
     .replace('<' + type + '/>', '');
   if (title.length == 0) {
@@ -1012,6 +1067,9 @@ const handle_work = work => {
         }
         if (firstline != null && firstline.title.indexOf('<') > -1) {
           throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
+        }
+        if (firstline != null && firstline.title.trim().length === 0) {
+          throw `${textId} har blank førstelinje i ${poetId}/${workId}.xml`;
         }
         if (indextitle.title.indexOf('>') > -1) {
           throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
@@ -1152,7 +1210,7 @@ const extractDates = head => {
     result.written = safeGetText(dates, 'written');
   }
   return result;
-}
+};
 const build_global_lines_json = collected => {
   safeMkdir('static/api/alltexts');
   let changed_langs = {};
@@ -1176,9 +1234,9 @@ const build_global_lines_json = collected => {
     collected.texts.forEach((textMeta, textId) => {
       const poet = collected.poets.get(textMeta.poetId);
       if (poet == null) {
-          // Ignorer. Dette kan ske når vi skifter mellem branches og digtere
-          // kommer og går fra poets.xml
-          return;
+        // Ignorer. Dette kan ske når vi skifter mellem branches og digtere
+        // kommer og går fra poets.xml
+        return;
       }
       if (changed_langs[poet.country]) {
         let per_country = collected_lines.get(poet.country) || new Map();
@@ -1191,6 +1249,8 @@ const build_global_lines_json = collected => {
           if (line != null) {
             // firstline is null for prose texts
             let indexableLine = line
+              .replace(',', '')
+              .replace('!', '')
               .replace(/^\[/, '')
               .replace(/^\(/, '')
               .toUpperCase()
@@ -1275,6 +1335,9 @@ const works_first_pass = collected => {
 
   let found_changes = false;
   const force_reload = texts.size === 0 || works.size === 0;
+
+  let parentIdsToFillIn = new Map(); // Bruges til nedenstående second-pass som klistrer parent-data på
+
   collected.workids.forEach((workIds, poetId) => {
     workIds.forEach(workId => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
@@ -1290,9 +1353,16 @@ const works_first_pass = collected => {
       if (attrId !== workId) {
         throw new Error(`${workFilename} has wrong id in <kalliopework>`);
       }
+      const parentId = safeGetAttr(work, 'parent');
       const head = work.get('workhead');
-      const title = head.get('title').text();
+      const title = replaceDashes(safeGetText(head, 'title'));
+      const toctitle = extractTitle(head, 'toctitle') || { title };
+      const linktitle = replaceDashes(safeGetText(head, 'linktitle')) || title;
+      const breadcrumbtitle = safeGetText(head, 'breadcrumbtitle') || title;
       const year = head.get('year').text();
+      const status = work.attr('status').value();
+      const type = work.attr('type').value();
+      const subtitles = extract_subtitles(head);
       const dates = extractDates(head);
       // Sanity check
       if (work.attr('author').value() !== poetId) {
@@ -1300,12 +1370,24 @@ const works_first_pass = collected => {
           `fdirs/${poetId}/${workId}.xml has wrong author-attribute in <kalliopework>`
         );
       }
-      works.set(`${poetId}/${workId}`, {
-        title: replaceDashes(title),
+      const fullWorkId = `${poetId}/${workId}`;
+      works.set(fullWorkId, {
+        id: workId,
+        title,
+        subtitles,
+        toctitle,
+        linktitle,
+        breadcrumbtitle,
         year: year,
+        status,
+        type,
+        has_content: work.find('//poem|//prose|//subwork').length > 0,
         published: dates.published || year,
-        has_content: work.find('//poem|//prose').length > 0,
       });
+
+      if (parentId != null) {
+        parentIdsToFillIn.set(fullWorkId, `${poetId}/${parentId}`);
+      }
 
       work.find('//poem|//prose|//section[@id]').forEach(part => {
         const textId = part.attr('id').value();
@@ -1318,6 +1400,11 @@ const works_first_pass = collected => {
         const linkTitle = linktitle || title || firstline;
         const indexTitle = indextitle || title || firstline;
 
+        if (linkTitle == null) {
+          throw new Error(
+            `fdirs/${poetId}/${workId}.xml has ${part.name()} ${textId} without title.`
+          );
+        }
         texts.set(textId, {
           title: replaceDashes(linkTitle.title),
           firstline: replaceDashes(firstline == null ? null : firstline.title),
@@ -1329,6 +1416,15 @@ const works_first_pass = collected => {
       });
     });
   });
+
+  // Second-pass som resolver parentIds til fulde parent objekter
+  Array.from(parentIdsToFillIn.keys()).forEach(fullWorkId => {
+    const parentId = parentIdsToFillIn.get(fullWorkId);
+    const data = works.get(fullWorkId);
+    data.parent = works.get(parentId);
+    works.set(fullWorkId, data);
+  });
+
   if (found_changes) {
     writeCachedJSON('collected.texts', Array.from(texts));
     writeCachedJSON('collected.works', Array.from(works));
@@ -1352,7 +1448,8 @@ const works_second_pass = collected => {
       const head = work.get('workhead');
       const title = head.get('title').text();
       const year = head.get('year').text();
-      const data = { id: workId, title, year, status, type };
+      //const data = { id: workId, title, year, status, type };
+      const data = collected.works.get(`${poetId}/${workId}`);
       let sources = {};
       head.find('source').forEach(sourceNode => {
         let source = null;
@@ -1607,12 +1704,20 @@ const build_section_toc = section => {
   return toc;
 };
 
+const extract_subworks = (poetId, workbody) => {
+  return workbody.find('//subwork').map(subwork => {
+    const subworkId = safeGetAttr(subwork, 'ref');
+    return collected.works.get(`${poetId}/${subworkId}`);
+  });
+};
+
 const build_works_toc = collected => {
-  // Returns {toc, notes, pictures}
+  // Returns {toc, subworks, notes, pictures}
   const extract_work_data = work => {
     const type = work.attr('type').value();
     const poetId = work.attr('author').value();
     const workId = work.attr('id').value();
+    const parentId = safeGetAttr(work, 'parent');
     let lines = [];
 
     const workhead = work.get('workhead');
@@ -1633,9 +1738,9 @@ const build_works_toc = collected => {
         pictures: [],
       };
     }
-
-    const toc = build_section_toc(workbody);
-    return { lines, toc, notes, pictures };
+    let toc = build_section_toc(workbody);
+    let subworks = extract_subworks(poetId, workbody);
+    return { lines, toc, subworks, notes, pictures };
   };
 
   collected.poets.forEach((poet, poetId) => {
@@ -1650,19 +1755,33 @@ const build_works_toc = collected => {
       const work = doc.get('//kalliopework');
       const status = work.attr('status').value();
       const type = work.attr('type').value();
+      const parentId = safeGetAttr(work, 'parent');
       const head = work.get('workhead');
       const title = head.get('title').text();
+      const toctitle = safeGetText(head, 'toctitle') || title;
+      const linktitle = safeGetText(head, 'linktitle') || title;
+      const breadcrumbtitle = safeGetText(head, 'breadcrumbtitle') || title;
       const year = head.get('year').text();
-      const data = { id: workId, title, year, status, type };
+      const data = {
+        id: workId,
+        title,
+        toctitle,
+        breadcrumbtitle,
+        linktitle,
+        year,
+        status,
+        type,
+      };
       collected_works.set(poetId + '-' + workId, data);
-
       const work_data = extract_work_data(work);
+      const parentData = collected.works.get(parentId);
 
       if (work_data) {
         const toc_file_data = {
           poet,
           toc: work_data.toc,
-          work: data,
+          subworks: work_data.subworks,
+          work: collected.works.get(`${poetId}/${workId}`),
           notes: work_data.notes || [],
           pictures: work_data.pictures || [],
         };
@@ -1711,14 +1830,11 @@ const build_poet_works_json = collected => {
       const work = doc.get('//kalliopework');
       const head = work.get('workhead');
       const body = work.get('workbody');
-      const data = {
-        id: workId,
-        title: head.get('title').text(),
-        year: head.get('year').text(),
-        has_content: body != null && body.find('//poem|//prose').length > 0,
-        status: work.attr('status').value(),
-        type: work.attr('type').value(),
-      };
+      const parent = safeGetAttr(work, 'parent');
+      if (parent != null) {
+        return;
+      }
+      const data = collected.works.get(`${poetId}/${workId}`);
       works.push(data);
     });
 
@@ -1750,6 +1866,15 @@ const build_poet_works_json = collected => {
   });
 };
 
+const primaryTextVariantId = textId => {
+  const variants = resolve_variants(textId);
+  if (variants != null && variants.length > 0) {
+    return variants[0];
+  } else {
+    return textId;
+  }
+};
+
 const build_poet_lines_json = collected => {
   collected.poets.forEach((poet, poetId) => {
     const filenames = collected.workids
@@ -1771,8 +1896,7 @@ const build_poet_lines_json = collected => {
       doc.find('//poem|//section[@id]').forEach(part => {
         const textId = part.attr('id').value();
         // Skip digte som ikke er ældste variant
-        const variants = resolve_variants(textId);
-        if (variants != null && variants.length > 0 && variants[0] != textId) {
+        if (primaryTextVariantId(textId) !== textId) {
           return;
         }
 
@@ -2054,7 +2178,7 @@ const build_mentions_json = collected => {
         '/' +
         meta.workId}`;
     }
-    const workNameFormattet = workName(work);
+    const workNameFormattet = workLinkName(work);
     return [
       [
         `${poet}: <a poem="${poemId}">»${
@@ -2477,7 +2601,7 @@ const build_variants = collected => {
       }
       let doc = loadXMLDoc(filename);
       doc
-        .find('//poem[@variant]|//prose[@variant]//@section[@variant]')
+        .find('//poem[@variant]|//prose[@variant]|//section[@variant]')
         .forEach(text => {
           const textId = safeGetAttr(text, 'id');
           const variantId = safeGetAttr(text, 'variant');
