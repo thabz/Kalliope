@@ -74,8 +74,9 @@ const iterateWork = callback => {
 };
 
 const writeToc = () => {
-  let id_seq = 1;
+  let id_seq2 = 1;
 
+  // Returnerer altid en liste af <li>
   const recurse = section => {
     let toc = '';
     section.forEach(item => {
@@ -84,11 +85,13 @@ const writeToc = () => {
           item.title
         }</a></li>\n`;
       } else if (item.type === 'section') {
-        const id = item.id || id_seq++;
+        const id = item.id || id_seq2++;
         const fullId = 'section-' + id;
+        toc += '<li>\n';
+        toc += `<a href="${fullId}.xhtml">${item.title}</a>`;
         toc += '<ol>\n';
         toc += recurse(item.content);
-        toc += '</ol>\n';
+        toc += '</ol></li>\n';
       }
     });
     return toc;
@@ -103,7 +106,7 @@ const writeToc = () => {
   xml += '<header><h1>Indhold</h1></header>';
   xml += '<nav epub:type="toc" id="toc">';
   xml += '<ol>';
-  xml += recurse(workJson.toc);
+  xml += toc;
   xml += '</ol>';
   xml += '</nav>';
   xml += '</section>';
@@ -164,21 +167,20 @@ const writeContentOpf = () => {
   let xml = '<?xml version="1.0" encoding="utf-8" standalone="yes"?>\n';
   xml +=
     '<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="3.0">';
-  xml += '<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">';
+  xml +=
+    '<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">';
   xml += `<dc:identifier id="bookid">urn:kalliope:org:${poetId}:${workId}</dc:identifier>`;
   xml += `<dc:title>${work.title}</dc:title>`;
+  xml += `<dc:language>${language}</dc:language>`;
+  xml += `<dc:creator opf:file-as="${reverseFullName}" opf:role="aut">${fullName}</dc:creator>`;
+  xml += `<dc:publisher>Kalliope</dc:publisher>`;
   if (work.year != null && work.year !== '?') {
-    xml += `<dc:date xmlns:opf="http://www.idpf.org/2007/opf" opf:event="publication">${
-      work.year
-    }</dc:date>`;
+    xml += `<dc:date  opf:event="publication">${work.year}</dc:date>`;
   }
-  xml += `<dc:date xmlns:opf="http://www.idpf.org/2007/opf" opf:event="modification">${workJson.modified.substring(
+  xml += `<dc:date opf:event="modification">${workJson.modified.substring(
     0,
     10
   )}</dc:date>`;
-  xml += `<dc:language>${language}</dc:language>`;
-  xml += `<dc:creator xmlns:opf="http://www.idpf.org/2007/opf" opf:file-as="${reverseFullName}" opf:role="aut">${fullName}</dc:creator>`;
-  xml += `<dc:publisher>Kalliope</dc:publisher>`;
   xml += `<dc:rights>public domain</dc:rights>`;
   xml += '</metadata>\n';
   xml += buildManifestXml();
