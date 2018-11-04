@@ -17,15 +17,18 @@
 </head>
 <content>
 
-<poem id="aarestrup2018110201">
+<poem id="aarestrup1999041502">
 <head>
     <title>I en Stambog</title>
     <firstline>Rask hvirvles vi i Tidens store Dands</firstline>
     <source pages="3"/>
     <keywords>sonnet</keywords>
+    <dates>
+        <written>1817-11-04</written>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
 </head>
-<body>
+body>
 Rask hvirvles vi i Tidens store Dands,
 Vildt famlende blandt Haabets gyldne Ranker;
 Til Kamp, til Lyst gaaer Veien, Hjertet banker —
@@ -1767,6 +1770,9 @@ Hvor man kan være svag og hjertesvimmel.
     <title>O søde Kone!</title>
     <firstline>O søde Kone!</firstline>
     <source pages="47-48"/>
+    <dates>
+        <written>1832-08-18</written>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1856,6 +1862,9 @@ Og vækker og kysser din Mund?
     <title>Balvise</title>
     <firstline>Deres Skaal</firstline>
     <source pages="49-52"/>
+    <dates>
+        <written>1833-02-28</written>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2412,14 +2421,13 @@ Evig er min Elskov, evig!
 <poem id="aarestrup1999032909">
 <head>
    <title>Sølvbryllupsvise</title>
-   <subtitle>
-      <line>den 7de November 1854.</line>
-      <line>Mel: Fader Movitz, Bror.</line>
-   </subtitle>
    <firstline>Hvad er Kjærligheds Vaar</firstline>
    <notes>
       <note>Melodi som i Bellmanns <xref poem="bellman2001061367"/>.</note>
    </notes>
+    <dates>
+        <written>1837-01-22</written>
+    </dates>
    <quality>korrektur1,kilde</quality>
    <keywords>lejlighedsdigtning</keywords>
    <source pages="80-81"/>
@@ -2480,6 +2488,8 @@ Var enige og troe!
 O vær, Himmel, dem huld,
 Og er Tiden fuld,
 Bland Roserne med Guld!
+
+<nonum><small><center>Den 22de Januar 1837.</center></small></nonum>
 </body>
 </poem>
 
@@ -2516,7 +2526,9 @@ Som koger og som suser
 Som trods sin indre Tomhed
 Harmonisk lader høre
 En Brummen og en Syngen -
-Men kun, kun <w>ved Dit Øre</w>!
+Men kun, kun ved dit Øre</w>!
+
+<nonum><small><center>1837.</center></small></nonum>
 </body>
 </poem>
 
@@ -4277,6 +4289,7 @@ Farvel, naar Stjernen leder dig om Natten!
       <note>Strofe 2 har kun 7 vers.</note>
    </notes>
    <quality>korrektur1,korrektur2</quality>
+   <source pages="134-136" />
 </head>
 <body>
 Foraaret kom, og Sommer gik i Enge,
