@@ -6,7 +6,7 @@ import Head from '../components/head';
 import Main from '../components/main.js';
 import { Link } from '../routes';
 import * as Links from '../components/links';
-import Nav from '../components/nav';
+import Nav, { kalliopeCrumbs, poetCrumbsWithTitle } from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import { KalliopeTabs, PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
@@ -21,6 +21,7 @@ import CommonData from '../pages/helpers/commondata.js';
 import ErrorPage from './error.js';
 import * as Client from './helpers/client.js';
 import type { Lang, Country, Poet, PoetId, Error } from './helpers/types.js';
+import _ from './helpers/translations.js';
 
 type SearchProps = {
   lang: Lang,
@@ -304,7 +305,7 @@ export default class extends React.Component<SearchProps> {
       headTitle =
         'Søgning - ' + poetNameString(poet, false, false) + ' - Kalliope';
       pageTitle = <PoetName poet={poet} includePeriod />;
-      nav = <Nav lang={lang} poet={poet} title="Søgeresultat" />;
+      nav = <Nav lang={lang} crumbs={poetCrumbsWithTitle(lang, poet, _('Søgeresultat', lang))} />;
     } else {
       tabs = (
         <KalliopeTabs
@@ -316,7 +317,11 @@ export default class extends React.Component<SearchProps> {
       );
       headTitle = 'Søgning - Kalliope';
       pageTitle = 'Kalliope';
-      nav = <Nav lang={lang} title="Søgeresultat" />;
+      const crumbs = [
+        ...kalliopeCrumbs(lang),
+        { title: _('Søgeresultat', lang)},
+      ];
+      nav = <Nav lang={lang} crumbs={crumbs} />;
     }
     return (
       <div>
