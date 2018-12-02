@@ -6,6 +6,8 @@ import type {
   Country,
   Poet,
   PoetId,
+  Museum,
+  MuseumId,
   Work,
   WorkId,
   Text,
@@ -16,8 +18,11 @@ import type {
   NoteItem,
   PictureItem,
   TextLang,
+  DictItem,
   Error,
   LinesType,
+  TextContentType,
+  TimelineItem,
 } from './types.js';
 
 export const createURL = (path: string): string => {
@@ -53,6 +58,7 @@ type FetchPoetsResult = Promise<{
   error: ?Error,
 }>;
 export const poets = async (country: Country): FetchPoetsResult => {
+  // flow-disable-next-line
   return fetchJSON(`/static/api/poets-${country}.json`);
 };
 
@@ -82,6 +88,7 @@ export type FetchWorkResult = {
   work: Work,
   toc: Array<TocItem>,
   notes: Array<NoteItem>,
+  subworks: ?Array<Work>,
   pictures: Array<PictureItem>,
 };
 export const work = async (
@@ -93,9 +100,21 @@ export const work = async (
   return fetchJSON(path);
 };
 
+export type FetchMuseumResult = {
+  museum: Museum,
+  artwork: Array<PictureItem>,
+};
+export const museum = async (
+  museumId: MuseumId
+): Promise<FetchMuseumResult> => {
+  const path = `/static/api/museums/${museumId}.json`;
+  return fetchJSON(path);
+};
+
 type FetchWorksResult = Promise<{
   poet: Poet,
   works: Array<Work>,
+  artwork: Array<PictureItem>,
   error: ?Error,
 }>;
 export const works = async (poetId: PoetId): FetchWorksResult => {
@@ -104,7 +123,7 @@ export const works = async (poetId: PoetId): FetchWorksResult => {
 
 type FetchBioResult = Promise<{
   poet: Poet,
-  portrait?: PictureItem,
+  portraits?: Array<PictureItem>,
   timeline: Array<TimelineItem>,
   content_html: TextContentType,
   content_lang: TextLang,

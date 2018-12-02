@@ -7,10 +7,12 @@
    <year>1895</year>
    <notes>
       <note>Forfatter angivet med pseudonymet Thøger Underbjerg. Titelbladets motto er »Alt, som er af Sandhed, det har Evighed!«</note>
+      <note>Bidrag fra Henrik Nielsen.</note>
    </notes>
    <pictures>
        <picture type="titlepage" src="1895-p1.jpg">Titelbladet til <i>Vilde Roser</i> (1895). ,,Vilde Roser / Digte / af / Thøger Underbjerg // Aarhus / Jydsk Forlags-Forretning / 1895''.</picture>
    </pictures>
+   <source facsimile="115408012025_color" facsimile-pages-num="84" facsimile-pages-offset="10">Thøger Larsen: <i>Vilde Roser</i>, Jydsk Forlags-Forretning, Aarhus, 1895.</source>
    <quality>korrektur1</quality>
 </workhead>
 <workbody>
@@ -21,7 +23,8 @@
    <toctitle>Tid og Maal</toctitle>
    <indextitle>Tid og Maal</indextitle>
    <firstline>Hvor Tiden fremad farer!</firstline>
-   <quality>korrektur1</quality>
+   <source pages="1-3"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Hvor Tiden fremad farer!
@@ -82,7 +85,8 @@ og vender ej tilbage.
    <toctitle>Under Stjerner</toctitle>
    <indextitle>Under Stjerner</indextitle>
    <firstline>Jeg bliver saa sælsom til Mode</firstline>
-   <quality>korrektur1</quality>
+   <source pages="3-4"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Jeg bliver saa sælsom til Mode,
@@ -123,13 +127,18 @@ tynges af Synd og Sorg?
 </body>
 </poem>
 
+<section level="3">
+<head>
+   <toctitle>Sonetter</toctitle>
+</head>
+<content>
+
 <poem id="larsent2001070103">
 <head>
-   <title>Sonetter - 1</title>
-   <toctitle>Sonetter - 1</toctitle>
-   <indextitle>Sonetter - 1</indextitle>
+   <title><num>1.</num>Naar Efteraarets Taagetæpper gitre</title>
    <firstline>Naar Efteraarets Taagetæpper gitre</firstline>
-   <quality>korrektur1</quality>
+   <source pages="4-5"/>
+   <quality>korrektur1,korrektur2</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
@@ -147,7 +156,7 @@ Jeg ogsaa i mit Levnets lyse Dage
 i Sjælen finder Frø og Blomsterblade,
 men gennem tunge Tider Væksten svinder.
 
-Dog Frøets Liv gaar fremad, ej tilbage;
+Dog <i>Frøets</i> Liv gaar fremad, ej tilbage;
 i Sjælen tage nye Blomster Stade -
 de spired frem fra brudte Haab og Minder.
 </body>
@@ -155,11 +164,10 @@ de spired frem fra brudte Haab og Minder.
 
 <poem id="larsent2001070104">
 <head>
-   <title>Sonetter - 2</title>
-   <toctitle>Sonetter - 2</toctitle>
-   <indextitle>Sonetter - 2</indextitle>
+   <title><num>2.</num>I Verden Stolthed maa fra Hovmod skilles</title>
    <firstline>I Verden Stolthed maa fra Hovmod skilles</firstline>
-   <quality>korrektur1</quality>
+   <source pages="5-6"/>
+   <quality>korrektur1,korrektur2</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
@@ -183,13 +191,17 @@ men kun et Pust - og Hovmods Værk er omme!
 </body>
 </poem>
 
+</content>
+</section>
+
 <poem id="larsent2001070105">
 <head>
    <title>Modsætninger</title>
    <toctitle>Modsætninger</toctitle>
    <indextitle>Modsætninger</indextitle>
    <firstline>Hvis vi vil det gode skatte</firstline>
-   <quality>korrektur1</quality>
+   <source pages="6"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Hvis vi vil det gode skatte,
@@ -209,12 +221,13 @@ maa vi først i Mørket bygge.
    <toctitle>Erfaring</toctitle>
    <indextitle>Erfaring</indextitle>
    <firstline>Paa Gamles Erfaring er godt at tro</firstline>
-   <quality>korrektur1</quality>
+   <source pages="6-7"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Paa Gamles Erfaring er godt at tro,
 men Sindet det unge har aldrig Ro!
-selv vil det styrte sig frem i Verden,
+<i>selv</i> vil det styrte sig frem i Verden,
 ud paa en stor og stormfuld Færden;
 selv vil det nære tomme Haab
 og under bitter Taaredaab
@@ -222,7 +235,7 @@ Skuffelsens Lærdom til sig drage,
 Selverfaringens Malurt smage.
 
 Hvad Hundreder Vismænd om Livet har sagt,
-bliver atter og atter til Side lagt
+bliver atter og atter til Side lagt;
 vil man sligt forstaa, maa man selv det kende
 og føle Bevisernes Lynskrift brænde,
 Beviser, som ej i Ord er svøbt,
@@ -238,87 +251,72 @@ om ogsaa hin Trang bringer Klage paa Læber.
    <toctitle>Dryadens Død</toctitle>
    <indextitle>Dryadens Død</indextitle>
    <firstline>Se, dette Træ er smalt som et Siv</firstline>
-   <quality>korrektur1</quality>
+   <source pages="7-11"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
-<nonum>Stormen:</nonum>
-
+<nonum><center><small><i>Stormen:</i></small></center></nonum>
 Se, dette Træ er smalt som et Siv,
 det vil jeg fra Roden bryde!
 
-<nonum>Dryaden:</nonum>
-
+<nonum><center><small><i>Dryaden:</i></small></center></nonum>
 O, gør det ikke! det gælder mit Liv!
 kan Drabet paa mig dig fryde?
 
-<nonum>Stormen:</nonum>
-
+<nonum><center><small><i>Stormen:</i></small></center></nonum>
 Gennem Luften løfter jeg Vingen tung,
 til Bønner jeg aldrig lytter.
 
-<nonum>Dryaden:</nonum>
-
+<nonum><center><small><i>Dryaden:</i></small></center></nonum>
 Ak, skal jeg da dø saa lys og ung,
 værgeløs, uden Beskytter?
 
-<nonum>Stormen:</nonum>
-
+<nonum><center><small><i>Stormen:</i></small></center></nonum>
 Det lyder jo rørende; men husk paa,
 jeg lader mig ej bevæge.
 
-<nonum>Dryaden:</nonum>
-
+<nonum><center><small><i>Dryaden:</i></small></center></nonum>
 Saa skal jeg da segne ved Søens Blaa,
 som mig hel ofte mon' kvæge.
 
-<nonum>Stormen:</nonum>
-
+<nonum><center><small><i>Stormen:</i></small></center></nonum>
 For Skæbnen raader en evig Magt,
-som jeg maa ydmygen tjene.
+som <i>jeg</i> maa ydmygen tjene.
 
-<nonum>Dryaden:</nonum>
-
-Og jeg der kun kort har Livet smagt,
+<nonum><center><small><i>Dryaden:</i></small></center></nonum>
+Og <i>jeg</i> der kun kort har Livet smagt,
 skal dræbes ung og alene.
 
-<nonum>Stormen:</nonum>
-
+<nonum><center><small><i>Stormen:</i></small></center></nonum>
 Ti stille! Hvad baader dig Klagens Klang?
 I Dag vil jeg dræbe i Klynge!
 
-<nonum>Dryaden:</nonum>
-
+<nonum><center><small><i>Dryaden:</i></small></center></nonum>
 Saa skal da min svulmende Svanesang
 jeg her saa sorrigfuld synge!
 
-<nonum>Stormen:</nonum>
-
+<nonum><center><small><i>Stormen:</i></small></center></nonum>
 Vær fattet! Snart isner det bidende Pust,
 dit Liv i en Traad kun hænger!
 
-<nonum>Dryaden:</nonum>
-
+<nonum><center><small><i>Dryaden:</i></small></center></nonum>
 Nu blomstrer mit Haab om en yndig August,
 med Sommer og Zefyr ej længer.
 
-<nonum>Stormen:</nonum>
-
+<nonum><center><small><i>Stormen:</i></small></center></nonum>
 Hvor turde du haabe? Det dumme Haab,
 det gækker og skuffer saa mange.
 
-<nonum>Dryaden:</nonum>
-
+<nonum><center><small><i>Dryaden:</i></small></center></nonum>
 Det i mig toned med mægtigt Raab
 som solrige Foraarssange.
 
-<nonum>Stormen:</nonum>
-
+<nonum><center><small><i>Stormen:</i></small></center></nonum>
 Nu, denne Røst
 i det unge Bryst
-for mig er fremmed! Lad Haabet fare.
+for mig er fremmed! Lad Haabet fare!
 
-<nonum>Dryaden:</nonum>
-
+<nonum><center><small><i>Dryaden:</i></small></center></nonum>
 Farvel da hver eneste Glæde og Lyst!
 I skuffende, korte vare.
 Ak, end jeg mindes en Solvejrsdag,
@@ -328,14 +326,13 @@ at Verden var rig og lys og herlig
 og Solen kyssed min unge Kind,
 og lun og liflig var hver en Vind,
 og jeg blev med Straaler ammet;
-nu er jeg saaret og lammet!
+<i>nu</i> er jeg saaret og lammet!
 Den dystervingede Dødens Fugl
 fløj iskold frem af sin Redes Skjul,
 den snarlig mit Liv vil tage.
 
-<nonum>Stormen:</nonum>
-
-Jeg kan ikke tøve, jeg trænger til Høst,
+<nonum><center><small><i>Stormen:</i></small></center></nonum>
+Jeg <i>kan</i> ikke tøve, jeg trænger til Høst,
 mig frister din skærende Klage
 dog til at bringe en liden Trøst,
 den eneste, der er tilbage:
@@ -344,8 +341,7 @@ jeg suser til i min Vælde,
 du segner hen lig i Sommernatsblund,
 men jeg nødes til dig at fælde.
 
-<nonum>Dryaden:</nonum>
-
+<nonum><center><small><i>Dryaden:</i></small></center></nonum>
 Farvel da nu Sol og Lys og Liv!
 Jeg brydes itu som det svage Siv!
 Farvel da du store, du rige Haab,
@@ -355,13 +351,15 @@ som køled min Pande og kyssed min Kind!
 Den kommer, den kommer, den Nat saa lang!
 Nu har jeg sunget min Svanesang.
 
+<nonum><center>* * *</center></nonum>
+
 Da løftede Stormen sin Vinge med Kraft,
 og Træet laa brudt paa Jorden!
 Kun Roden stod fri med Livets Saft,
 saa bød jo Naturens Orden.
 Og videre Vej sig Stormen brød,
 og Urt og Gren og Blomst var i Nød;
-Dryader rysted som Sivet-
+Dryader rysted som Sivet -
 sig Længsler klamred til Livet.
 </body>
 </poem>
@@ -372,7 +370,8 @@ sig Længsler klamred til Livet.
    <toctitle>Sangerens Bøn</toctitle>
    <indextitle>Sangerens Bøn</indextitle>
    <firstline>Maa jeg slynge de reneste Rhytmer</firstline>
-   <quality>korrektur1</quality>
+   <source pages="11-12"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Maa jeg slynge de reneste Rhytmer
@@ -419,7 +418,8 @@ med vor Kærligheds første Grøde?
    <toctitle>Øen</toctitle>
    <indextitle>Øen</indextitle>
    <firstline>Aareblade!</firstline>
-   <quality>korrektur1</quality>
+   <source pages="13-15"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Aareblade!
@@ -487,7 +487,8 @@ midt paa striden Strøm!
    <toctitle>En Drøm - et Liv</toctitle>
    <indextitle>En Drøm - et Liv</indextitle>
    <firstline>Der svandt en Drøm i Nattens tavse Timer</firstline>
-   <quality>korrektur1</quality>
+   <source pages="15-16"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Der svandt en Drøm i Nattens tavse Timer,
@@ -528,7 +529,8 @@ og sand og klar og skøn mod Lyset stige.
    <toctitle>I Morgendæmringen</toctitle>
    <indextitle>I Morgendæmringen</indextitle>
    <firstline>Mørket viger, og Taagen letter sig</firstline>
-   <quality>korrektur1</quality>
+   <source pages="16-18"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Mørket viger, og Taagen letter sig,
@@ -585,7 +587,8 @@ og hver, som ved Kvæld skal græde.
    <toctitle>Vinterstorm over Heden</toctitle>
    <indextitle>Vinterstorm over Heden</indextitle>
    <firstline>Der suser over den lynglaadne Hede</firstline>
-   <quality>korrektur1</quality>
+   <source pages="18-19"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Der suser over den lynglaadne Hede
@@ -631,7 +634,8 @@ men her skal nok blive lyst engang!
    <toctitle>Sommernatsstemning</toctitle>
    <indextitle>Sommernatsstemning</indextitle>
    <firstline>I løvgrønne Lund under Aftenens Døen</firstline>
-   <quality>korrektur1</quality>
+   <source pages="20-21"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 I løvgrønne Lund under Aftenens Døen
@@ -682,13 +686,14 @@ det lokker og kalder fra Grenenes Næt!
    <toctitle>Landskab</toctitle>
    <indextitle>Landskab</indextitle>
    <firstline>Himlen er uden Skyer</firstline>
-   <quality>korrektur1</quality>
+   <source pages="21-22"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Himlen er uden Skyer,
 Vindene har sig lagt;
 vestovre Aftenens Røde
-ligger i stille Pragt
+ligger i stille Pragt!
 
 Harmonisk det sammentoner
 med Zenith-Egnenes Blaa!
@@ -701,7 +706,7 @@ hvor Aaen sig snirklet bugter,
 blinkende som Krystal!
 
 Lette, luftige Taager
-fra "Mosekonen"s Hjem
+fra »Mosekonen«s Hjem
 følge det slangeslyngede
 Glar mellem Sivene frem.
 
@@ -718,7 +723,8 @@ den lyttendes Fantasi.
    <toctitle>Solnedgang</toctitle>
    <indextitle>Solnedgang</indextitle>
    <firstline>Hvad er det, som nu begraves</firstline>
-   <quality>korrektur1</quality>
+   <source pages="22-23"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Hvad er det, som nu begraves
@@ -754,7 +760,8 @@ vor Virken her paa Jord.
    <toctitle>Serenade</toctitle>
    <indextitle>Serenade</indextitle>
    <firstline>I den stjernede Nat - i Skærsommernatsluft -</firstline>
-   <quality>korrektur1</quality>
+   <source pages="23-25"/>
+   <quality>korrektur1,korrektu2</quality>
 </head>
 <body>
 I den stjernede Nat - i Skærsommernatsluft -
@@ -805,7 +812,8 @@ er Skærsommer en tryllende Gaade!
    <toctitle>Lærkens Morgensang</toctitle>
    <indextitle>Lærkens Morgensang</indextitle>
    <firstline>Nu vugges mine Grene af lette Morgenvind</firstline>
-   <quality>korrektur1</quality>
+   <source pages="25-26"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Nu vugges mine Grene af lette Morgenvind;
@@ -826,7 +834,7 @@ snart een i Duft fra blomsterfulde Agre -
 Snart een i hver en Straale, der lysende flyr
 fra Solens Luekilde til mit Øje,
 snart atter een i hver af de farvede Sky'r,
-der sejle hist oppe i det høje....!
+der sejle hist oppe i det høje ....!
 
 Det er som om det hele sig samler i Sum
 til et Væsen, der mig kærligt omslynger,
@@ -841,7 +849,8 @@ dets Pris jeg saa gladelig synger.
    <toctitle>Der maa vejes, der maa prøves-</toctitle>
    <indextitle>Der maa vejes, der maa prøves-</indextitle>
    <firstline>Der maa vejes, der maa prøves</firstline>
-   <quality>korrektur1</quality>
+   <source pages="26"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Der maa vejes, der maa prøves,
@@ -865,14 +874,15 @@ det har Evighed!
    <notes>
       <note>Cf. <xref bibel="bibeljohannes18,38"/>.</note>
    </notes>
-   <quality>korrektur1</quality>
+   <source pages="27-29"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
-"Hvad er Sandhed?" lød Pilati Ord!
+»Hvad er Sandhed?« lød Pilati Ord!
 Det har lydt saa mangen Gang paa Jord!
 End der forskes baade fjern og nær:
-"Hvad er Sandhed? Hvor er den at finde?
-Rundt om summer mangen Meningshær!"
+»Hvad er Sandhed? Hvor er den at finde?
+Rundt om summer mangen Meningshær!«
 Ak, det sande søges tit i Blinde.
 
 Hykleriets falske Blændegift
@@ -918,8 +928,8 @@ faa kun sejre i den store Dyst,
 mangen over Nederlaget græder.
 
 Og en døsig Flok gaar sløv omkring:
-" Hvad er Sandhed? Sagtens ingenting!
-Somme sige "dit" og andre "dat"!"
+»Hvad er Sandhed? Sagtens ingenting!
+Somme sige »dit« og andre »dat«!«
 Det er løgnebunden Ladhedstale!
 Vi kan finde Sandheds rige Skat,
 men vi først maa op af Drømmedvale.
@@ -932,7 +942,8 @@ men vi først maa op af Drømmedvale.
    <toctitle>Malstrømmen</toctitle>
    <indextitle>Malstrømmen</indextitle>
    <firstline>Dagene ile, Tiderne skifte</firstline>
-   <quality>korrektur1</quality>
+   <source pages="29"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Dagene ile, Tiderne skifte,
@@ -956,7 +967,8 @@ der over Vover vildene fare.
    <toctitle>Aftenstemning</toctitle>
    <indextitle>Aftenstemning</indextitle>
    <firstline>Der er Lys i det blaa!</firstline>
-   <quality>korrektur1</quality>
+   <source pages="30-31"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
   Der er Lys i det blaa!
@@ -997,7 +1009,8 @@ omsider de hævende Vinger,
    <toctitle>Sanserne</toctitle>
    <indextitle>Sanserne</indextitle>
    <firstline>Sanserne ere Kanaler</firstline>
-   <quality>korrektur1</quality>
+   <source pages="31"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Sanserne ere Kanaler,
@@ -1018,7 +1031,8 @@ den fatter umiddelbart.
    <toctitle>Vaarklang</toctitle>
    <indextitle>Vaarklang</indextitle>
    <firstline>Kender du Solen, hvis Tindreglans</firstline>
-   <quality>korrektur1</quality>
+   <source pages="31-33"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Kender du Solen, hvis Tindreglans
@@ -1071,7 +1085,8 @@ kender du Solen?
    <toctitle>Efteraarsstorm</toctitle>
    <indextitle>Efteraarsstorm</indextitle>
    <firstline>Der staar Skumfog vidt over Strande</firstline>
-   <quality>korrektur1</quality>
+   <source pages="33-34"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Der staar Skumfog vidt over Strande,
@@ -1082,7 +1097,7 @@ i bladfaldsfærdige Gren.
 Skyerne fare som Kæmpefugle
 hen under Himlens graalige Hvælv.
 Stormenes Stemmer, drønende hule,
-tordne til sildige Blomster: " Skælv !"
+tordne til sildige Blomster: »Skælv!«
 Og de skælve og splittes og svæve
 lemlæstede om i den hvirvlende Elv,
 i Vindenes vældige Strøm!
@@ -1091,7 +1106,7 @@ den sænker sig ud over Voven,
 saa søndres den brat til et Mylder af smaat
 og segner og synker i skummende blaat
 Det er Efteraarsstorm -
-  nu er Sommer forbi!
+     nu er Sommer forbi!
 Nu Sommerfreden
 er vandret heden.
 </body>
@@ -1103,7 +1118,8 @@ er vandret heden.
    <toctitle>Til Natten</toctitle>
    <indextitle>Til Natten</indextitle>
    <firstline>Dagen er sejlet fra vor Kyst</firstline>
-   <quality>korrektur1</quality>
+   <source pages="34-35"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Dagen er sejlet fra vor Kyst
@@ -1149,7 +1165,8 @@ styrkes til Dagens Færden!
    <toctitle>Friluftstrang</toctitle>
    <indextitle>Friluftstrang</indextitle>
    <firstline>Jeg vil ud, hvor Morgenvinden suser</firstline>
-   <quality>korrektur1</quality>
+   <source pages="35-36"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Jeg vil ud, hvor Morgenvinden suser
@@ -1187,7 +1204,8 @@ Tonerne skal gløde paa min Tunge!
    <toctitle>Stol paa -</toctitle>
    <indextitle>Stol paa -</indextitle>
    <firstline>Stol paa dig selv, hvis du fremad vil stævne</firstline>
-   <quality>korrektur1</quality>
+   <source pages="36-37"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Stol paa dig selv, hvis du fremad vil stævne,
@@ -1204,7 +1222,7 @@ Stol paa din Gud, hvis du hjemad vil fare,
 dø under Haabenes dagende Glans,
 Haabene høje, hvis Straaler i Skare
 sprede for Sjælen en Regnbuekrans.
-Den, som forsagt mens han virker herneden,
+Den, som forsagt, mens han virker herneden,
 tvivlende tænker paa Gud og sig selv,
 flakker og flygter og vinder ej Freden,
 hvirvles mod Dybet i Tidernes Elv!
@@ -1217,7 +1235,8 @@ hvirvles mod Dybet i Tidernes Elv!
    <toctitle>Augustnat</toctitle>
    <indextitle>Augustnat</indextitle>
    <firstline>Bygeskyerne mørkeblaa</firstline>
-   <quality>korrektur1</quality>
+   <source pages="37-38"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Bygeskyerne mørkeblaa
@@ -1229,7 +1248,7 @@ lader sit Ansigt lyse
 ned over Grene og Stammer i Lund,
 hvis Blade for Vindene gyse.
 
-Der kommer en Sky, - det stænker med Regn,
+Der kommer en Sky, - det stænker med Regn;
 men Maanestraalerne sprænge
 Skyens mulmede, uldne Hegn
 og smile til Mark og Enge,
@@ -1260,11 +1279,10 @@ begejstrede Hjerterne banke.
 
 <poem id="larsent2001070129">
 <head>
-   <title>Du blege Rose-</title>
-   <toctitle>Du blege Rose-</toctitle>
-   <indextitle>Du blege Rose-</indextitle>
+   <title>Du blege Rose -</title>
    <firstline>Du blege Rose i Haven!</firstline>
-   <quality>korrektur1</quality>
+   <source pages="39-40"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Du blege Rose i Haven!
@@ -1315,7 +1333,8 @@ Du blege Rose i Haven!
    <toctitle>Hvor Bøgen vifter -</toctitle>
    <indextitle>Hvor Bøgen vifter -</indextitle>
    <firstline>Hvor Bøgen vifter med grønne Blad</firstline>
-   <quality>korrektur1</quality>
+   <source pages="40-41"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Hvor Bøgen vifter med grønne Blad
@@ -1326,7 +1345,7 @@ hvor først jeg øjned den vide Vang,
 og hvor jeg hørte min Moders Sang -
   hvor Mindets Træ
   staar favrt i Læ -
-  dér helst mit Øje vil blunde.
+     dér helst mit Øje vil blunde.
 
 Tit vinker Sydlandets Blomsterflor
   de vilde, flagrende Tanker!
@@ -1336,7 +1355,7 @@ Men naar den bliver af Flagren træt,
 den søger altid sin gamle Plet!
   I Danmarks Land,
   paa Hjemmets Strand -
-  kun dér den kaster sit Anker.
+     kun dér den kaster sit Anker.
 </body>
 </poem>
 
@@ -1346,7 +1365,8 @@ den søger altid sin gamle Plet!
    <toctitle>Æventyrprinsessen</toctitle>
    <indextitle>Æventyrprinsessen</indextitle>
    <firstline>Det var en Maane- og Stjerne-Nat</firstline>
-   <quality>korrektur1</quality>
+   <source pages="41-52"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Det var en Maane- og Stjerne-Nat
@@ -1390,7 +1410,7 @@ Dér vilde han med et Kæmpeslag
 slaa, saa der lyste en straalende Dag,
 som sprudlede Solskin og Lykke.
 
-Han maatte blive en mægtig Mand
+Han <i>maatte</i> blive en mægtig Mand
 hvem veed . . . kan hænde bjerge et Land
 ved at frelse en troldet Prinsesse?
 Han ejede Mod i Brystet
@@ -1429,31 +1449,31 @@ før en daglys Lykke hans Daad kunde lønne.
 Da svæved en Engel frem fra det blaa,
 sin Haand paa hans Skulder den lagde
 og sagde:
-"Lykken skænkes altid de smaa -
+»Lykken skænkes altid de smaa -
 du havde den ogsaa fra Barndommen af,
 men du lod dig daare af Selvets Krav,
 du vilde med Glans den vinde! -
 Kom, tag min Haand, vi vil sammen gaa,
 hist henne du øjner et Fjæld at staa,
-det vil med Kraft vi sønderslaa -
+<i>det</i> vil med Kraft vi sønderslaa -
 der er en Prinsesse derinde;
 men Fjældet er haardt
 og Tiden kort;
 en Trold hende raned fra Lyset bort!
 Kom, jeg vil hjælpe -
-og der skal din Lykke du finde!"
+og der skal din Lykke du finde!«
 
 Men Ynglingen drejed sig trodsig om:
-"Hvad? Du vil hjælpe? Naa derfor du kom
+»Hvad? Du vil hjælpe? Naa derfor du kom
 Jo du forstaar nok at snakke!
-Saa havde jeg dig at takke,
+Saa havde jeg <i>dig</i> at takke,
 om jeg den unge Prinsesse vandt!
 Ikke sandt:
-det vilde bringe mig Ære!
+<i>det</i> vilde bringe mig Ære!
 Nej, saadan det ej skal være!
 Jeg vil frelse Prinsessen selv
 og løfte min Pande mod Himlens Hvælv
-og føle min egen Vælde!"
+og føle min egen Vælde!«
 
 Da hæved sig Englen med sorgfuld Sans
 og svandt i glimrende Glorieglans;
@@ -1461,7 +1481,7 @@ men Ungersvenden mod Fjældet gik
 med gridske, stirrende, store Blik!
 Derinde i denne Stenkolos
 skulde han Skatten hæve;
-han turde byde Flinten Trods;
+<i>han</i> turde byde Flinten Trods;
 hans Vilje var stærk, og hans Arm var stærk,
 det var ganske vist et Taalmodighedsværk,
 men Tiden fik han jo nok til at gaa,
@@ -1492,13 +1512,13 @@ paany de heftigste Hug!
 Og over de fjerne Vidunderlande
 svømmede Skyer med Maaneskins- Rande,
 men Ynglingen skuede alt med et Suk!
-Den Verden, der var ham saa stjerne-lys,
-bragte ham nu kun isnende Gys
+Den Verden, der <i>var</i> ham saa stjerne-lys,
+bragte ham <i>nu</i> kun isnende Gys
 det syntes, som Maanen lo ham ud
 og spotted hans tusind fortvivlede
 Slag mod den Flintestens-Klippe.
 
-Dog - kæmpe -
+Dog . . . kæmpe -
   og faa en Prinsesse til Brud!
 Det var meget.
   Han vilde ej slippe.
@@ -1509,27 +1529,27 @@ Han rasende blev derover.
 
 Da svævede Engelen til ham igen
 og saa paa ham som hans bedste Ven:
-"Min Hjælp jeg fremdeles dig lover!"
+»Min Hjælp jeg fremdeles dig lover!«
 
 Men Ynglingen stirred mod Klippen kold,
-skar Tænder og skreg: "Gaa Fanden i Vold!
-Mig skræmmer hverken Fjæld eller Trold!
+skar Tænder og skreg: »Gaa Fanden i Vold!
+<i>Mig</i> skræmmer hverken Fjæld eller Trold!
 Lad alt kun mig haane og spotte og pine,
 jeg aldrig ta'r Hjælp fra Hænderne dine;
-nej selv jeg mig borer i Klippens Bryst,
-og selv jeg skaber mig Lykke og Lyst!"
+nej <i>selv</i> jeg mig borer i Klippens Bryst,
+og <i>selv</i> jeg skaber mig Lykke og Lyst!«
 
 Da svarede Engelen vemodsmørk:
-"Du stoler endnu paa din egen Styrke!
+»Du stoler endnu paa din egen Styrke!
 Velan, saa søg kun din Lykke i Mørke,
 saa styr mod dit Eden i Stenens Ørk!
 Jeg kommer ej mer, før paa Knæ du falder
-og bedende mig og min Hjælp paakalder!"
+og bedende mig og min Hjælp paakalder!«
 
 Nu - Hakken blev dog til at bruge paany,
 og han hugged, saa Stumper og Flager
 fløj rundt som en hvirvlende Stenstøv-Sky -
-og det bruser og brister og brager.
+og det bruser og brister og brager . . . .
 
 Men Tiden den gik -
 og Fjældet det stod -
@@ -1537,7 +1557,7 @@ og Trodseren strængte sig an over Evne;
 han tørnede til i det vildeste Mod,
 ham Stumperne flænged, han drypped af Blod,
   men Klippen dog aldrig han bragte
-  den skillende, gabende Revne. -
+  den skillende, gabende Revne. - -
 
 Saa blev det for meget -
 nu var han for træt;
@@ -1553,12 +1573,12 @@ Saa laa han afmægtig en liden Stund -
 det sled og det suged i Sjælens Grund;
 nu havde han stridt, og nu havde han stræbt -
 og dog ved sin stormende Færden
-hver eneste fordums Glæde dræbt  -
+hver eneste fordums Glæde dræbt -
   hvad skulde han mere i Verden? -
 
 Da randt ham i Hu et Alvorsord,
 hans Moder havde ham sagt:
-"En Nat er vort Liv paa denne Jord,
+»En Nat er vort Liv paa denne Jord,
 saa maaneskinsdunkel, med Skyggers Kor,
 men følger du Evighedsaandernes Spor,
 du stævner mod Jubel og Pragt!
@@ -1566,39 +1586,39 @@ Der føres et Levnet i Dagen,
 i Sol, i Straaler, i dejlig Duft, -
 hvor Stjernerne dunkles i Lysets Luft,
 og borte er Mørkets Lagen!
-Et saadant Liv vi ej skabe selv
+Et saadant Liv vi ej skabe <i>selv</i> -
 det sprudler til os fra oven;
 Det springer fra Himlens blaanende Hvælv,
 naar vort Legem er favnet af sorten Elv,
-af Dødens isnende Vande!"
+af Dødens isnende Vande!«
 
 Det var som et køligt Pust paa hans Pande.
 
 Han tænkte nu i sit stille Sind:
-"Jeg har nok faret frem som en blind!
+»Jeg har nok faret frem som en blind!
 Jeg anede vel, at de venlige Røster
 var Evighedsaandernes Kald; -
-men jeg selv vilde skabe en Lykkens Dag
+men jeg <i>selv</i> vilde skabe en Lykkens Dag
 med Lys og Sol efter eget Behag -
-det blev mig til Fare og Fald!"
+det blev mig til Fare og Fald!«
 
 Og ydmyg, bøjet paa Knæ han bad:
-"Du evige Aand fra Lysets Stad!
+»Du evige Aand fra Lysets Stad!
 Kom - hjælp mig Lykken at finde!
 Jeg kan ikke mere - tilgiv mig mildt,
-at jeg stødte dig bort i Blinde."
+at jeg stødte dig bort i Blinde.«
 
 Da skiltes en Sky; der blev saa lyst,
 og alle Vinde aandede tyst;
 der vælded en Straalestrøm ud,
   og Engelen daled til Jorden.
 
-"Vil du nu følge mig?" lød dens Ord;
-"maa jeg dig bane din Lykkes Spor?"
+»Vil du nu følge mig?« lød dens Ord;
+»maa <i>jeg</i> dig bane din Lykkes Spor?«
 Han sukked, plaget af Hjertens-Vaade:
-"Ja gør det, gør det af idel Naade!
+»Ja gør det, gør det af idel Naade!
 Du Lykken mig vise; jeg kender den ej!
-jeg stævnede frem ad en uret Vej !"
+jeg stævnede frem ad en uret Vej!«
 
   Da hæver Englen sin Finger
   og rører ved Stenen den store,
@@ -1607,7 +1627,7 @@ jeg stævnede frem ad en uret Vej !"
 Og smilende blusser en luftig Mø
 med Barndoms-Uskyld i lyse Øje;
 hun staar paa en dejlig Kærminde-Ø,
-hvis Blomster Blikket fornøje . .
+hvis Blomster Blikket fornøje . . . .
 De var hvide og blaa,
 de Blomster smaa,
 med Stjerner i Kronernes Rande,
@@ -1616,22 +1636,22 @@ bar en Krans af dem om sin Pande.
 
 I Kransen saa han en Urt sig sno,
 den skønneste under Ø,
-den nævntes med Navnet Barnetro
+den nævntes med Navnet <i>Barnetro</i>,
 og den maatte aldrig dø;
 thi hvis den visnende segned
 da segned Prinsessen i Jordens Skød,
 da Rosenkinderne blegned,
 og hun døde den evige Død! -
 
-Saa sagde Engelen: "Denne Mø
-var din fra Barndommens Dage,
+Saa sagde Engelen: »Denne Mø
+var <i>din</i> fra Barndommens Dage,
 men du vilde sejle din egen Sø
 og lod en Trold hende tage!
 
-Forfængelighed er Troldens Navn
+<i>Forfængelighed</i> er Troldens Navn
 han tog Prinsessen til Fange,
 men tryk hende nu med Fryd i Favn,
-hun har længtes i Aaringer lange."
+hun har længtes i Aaringer lange.«
 
   Smilende tren mod den yndige,
   unge Prinsesse han hen;
@@ -1649,7 +1669,7 @@ hun har længtes i Aaringer lange."
   Og da han til Bryst hende trykte,
   - sligt Under var aldrig set! -
   vandt Engelen om dem et Gloriebaand,
-  og Møen med Svenden blev et.
+  og Møen med Svenden blev <i>et</i>.
 
 Nu var han helt anderledes end før,
 hans Øje fik Uskyldsglansen.
@@ -1668,7 +1688,8 @@ svandt bort i Gloriekransen! -
    <toctitle>Vikingen</toctitle>
    <indextitle>Vikingen</indextitle>
    <firstline>Fra ung var Ejvind til Farten vant</firstline>
-   <quality>korrektur1</quality>
+   <source pages="53-69"/>
+   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 Fra ung var Ejvind til Farten vant
@@ -1706,10 +1727,10 @@ til et Tog imod Sønderlide
 og Snækkerne duved bag hviden Strand,
 for snart paa det skummende, gyngende Vand
 med Hær og Vaaben at glide.
-Da hed det: "Vor Høvdings Hustru har Sot,
+Da hed det: »Vor Høvdings Hustru har Sot,
 og nu i Morgen skal Flaaden gaa flot!
 Han Ejvind til Fører har kaaret
-og venter os frem paa Aaret!"-
+og venter os frem paa Aaret!« -
 
 Saa jog de da ud gennem Brændingens Brus
 under stormende Heltesange!
@@ -1724,7 +1745,7 @@ selv Vikingens Sværd i Krige.
 De franske mødte i mandstærk Flok;
 mod Føreren kækt de hugged;
 men Ejvind i Brynjen var haard som en Blok,
-og førte han Hugget, fik Offeret nok!
+og førte <i>han</i> Hugget, fik Offeret nok!
 Af Blod var Græsset bedugget.
 Da trængte et langt et blinkende Spyd
 gennem larmfulde Luft med en pibende Lyd -
@@ -1774,46 +1795,46 @@ i Klosterets stille Bolig.
 En gammel Munk, som i Cellekrog
 sig øved i Fromheds Færden,
 var en kristnet Viking fanget paa Tog;
-han talte en Dag paa det "norrøna" Sprog
+han talte en Dag paa det »norrøna« Sprog
 til Ejvind om Lysets Verden.
 Forbavset den syge Kæmpe saa
 paa Vikingsmanden i Kutte graa;
 men tavs paa Ordet han hørte,
 og Frelserens Død ham rørte.
 
-"Det var ene en verdensdyb Kærlighed"
+»Det var ene en verdensdyb Kærlighed«
 - saa lød den graanedes Tale
-"som drog hin Guddom til Jorden ned,
+»som drog hin Guddom til Jorden ned,
 at bringe Frelse, at bringe Fred
-og Fryd over Jorderigs Dale."
+og Fryd over Jorderigs Dale.«
 Saa talte Gubben et mægtigt Ord
 om, hvordan Kristus i Skyen fôr
 med Sejr over Mørkets Drage,
 med Sejr for de stridende svage.
 
 Da mælte Ejvind med Skælv i Røst:
-"Nu fatter jeg først den Gaade,
+»Nu fatter jeg først den Gaade,
 at I, hvem jeg trued med Dødens Høst,
 kunde ynkes over mit saarede Bryst,
 kunde skænke jer Fjende Naade!
 Det skyldes hin Guddoms Kærligheds Flod,
 hin Krist med eder har blandet Blod,
 Fostbrødrene hans I ere,
-ja saadan - saa maa det være!"
+ja saadan - saa maa det være!«
 
-"Du gættede rigtigt," - lød Munkens Svar -
-"det føjer sig, som du aner!
+»Du gættede rigtigt,« - lød Munkens Svar -
+»det føjer sig, som du aner!
 Den hvide Krist, der vor Skyldvægt bar,
 han byder sin Kærligheds Kilde klar
 til baade Galler og Daner,
 til hver en Menneskesjæl paa Jord
 i Øster og Vester, Sønder og Nord,
 over alle Øer og Lande,
-hvor Blod man med ham vil blande."
+hvor Blod man med ham vil blande.«
 
 I Ejvinds Øjne der gryed et Skær,
 i Brystet sig daged en Længsel:
-"Jeg tro'de, at Magtens Tinde var dér,
+»Jeg tro'de, at Magtens Tinde var dér,
 hvor Kraften sig yttrer i Arm og Sværd,
 hvor man blæser ad Død og Trængsel!
 Men her har jeg følt en stærkere Magt,
@@ -1824,12 +1845,12 @@ og kan Hadet og Hævnlysten tvinge!
 Nu vil jeg ej mer paa den vildene Vej
 over Havet hærgende fare;
 plyndre og myrde det vil jeg ej!
-Mon han da vil blande Blod med mig,
+Mon <i>han</i> da vil blande Blod med mig,
 Kærligheds-Guden den klare?
 Jeg ser, at hans Kraft er saa vældig stor,
 han mægter langt mere end Asa-Thor!
 Fostbroderen hans maa jeg være;
-du Vejen til ham mig lære."
+du Vejen til ham mig lære.«
 
 Den gamle talte om Daabens Vand
 som Vejen til Kristi Rige;
@@ -1883,23 +1904,23 @@ Hvad mon det Vandbad dog gavned? -
 
 Til Ejvind kom efter liden Frist
 den Munke-Gubbe og mældte:
-"Nu er du viet til hviden Krist,
+»Nu <i>er</i> du viet til hviden Krist,
 du tælles blandt Vennerne hans forvist
 og ej blandt Asernes Helte!
 Saa svig da aldrig den store Pagt
 men bøj dig ind under Kærligheds Magt;
 den bærer dig frelst af Stride
-til Straaleborgen hin hvide." -
+til Straaleborgen hin hvide.« -
 
 De siden den hellige Nadver nød,
 skønt ingen begribe kunde,
 at Vinen var Blod og Brødet Kød;
-men Munken sagde: "Det Væld, der flød
+men Munken sagde: »Det Væld, der flød
 af Frelserens Dødsensvunde -
-det er nu blandet med eders Blod;
+det <i>er</i> nu blandet med eders Blod;
 hans Legem ogsaa I tog imod;
 hans Liv i eder har Bolig,
-saa følg hans Veje nu trolig." -
+saa følg hans Veje nu trolig.« - -
 
 Der duved Snækker bag stenet Strand
 for Fart imod Nørrelide,
@@ -1909,9 +1930,9 @@ med slagne Kæmper at glide. -
 Da ind de fôr over Revl og Rhed,
 dem Høvdingen vented ved Havets Bred,
 for Rovet i Syne at tage:
-"Hvi kom I saa sent tilbage?"
+»Hvi kom I saa sent tilbage?«
 
-"Ak," svarede Ejvind, "Sejren veg
+»Ak,« svarede Ejvind, »Sejren veg
 fra vor stolte, modige Række,
 thi Thor sine Kæmper paa Toget sveg,
 og mangen nu ligger i Døden bleg
@@ -1919,67 +1940,67 @@ af Danerheltene kække;
 vi slog, saa Sværdene hvined i Vind,
 men blodig Pande og blegen Kind
 fik fler og flere til Mærke;
-de Galler vare for stærke."
+de Galler vare for stærke.«
 
-"Ved Thor i Valhal," Høvdingen svor,
-"de Galler skal snarlig sande
+»Ved Thor i Valhal,« Høvdingen svor,
+»de Galler skal snarlig sande
 at aldrig i Syden Sejren bor,
 men oppe højt i det stormfulde Nord
 i de store Bedrifters Lande!
 Jeg stoler paa eder, Vikingsmænd;
 naar Løvspringstide kommer igen,
 vi fare til Sønderlide
-og vise, at vi kan stride."
+og vise, at <i>vi</i> kan stride.«
 
 Men Ejvind kasted i Bølgen blaa
 det Sværd, som myrded saa mange:
-"Jeg aldrig mer vil i Leding gaa,
+»Jeg aldrig mer vil i Leding gaa,
 thi Nyt jeg hørte i stille Vraa
 dernede paa Galliens Vange!
 En Kærligheds-Asa, hviden Krist,
 der søndrede Jætten Satans List,
 ham har jeg min Vilje givet,
-ham hører jeg til i Livet."
+ham hører jeg til i Livet.«
 
-"Du Ejvind, du!" lød Høvdingens Røst,
-"du vil svigte Hæderens Veje.
+»<i>Du</i> Ejvind, <i>du</i>!« lød Høvdingens Røst,
+»du vil svigte Hæderens Veje.
 du vil Straadød lide paa Fædrekyst,
 imens Valkyrjen vinker i Dyst
 og favner, hvem Sværdene meje!
 Et øde Liv du kun for dig ser,
 du vil aldrig stride og sejre mer!
 Du vil fejg som Trællen dig skjule
-og fare til Helas Hule!"
+og fare til Helas Hule!«
 
-"Ej Fejghed binder mit vilde Sind,"
+»Ej Fejghed binder mit vilde Sind,«
 den krænkede Kriger svarer,
-"jeg bliver ej her for at hytte mit Skind,
+»jeg bliver ej her for at hytte mit Skind,
 jeg aldrig ligned den flygtende Hind -
 men jeg kæmper i Kristi Skarer!
 Den Dag kan funkle paa Bjærg og i Dal,
 da du ligger tæmmet og slagen paa Val,
 mens jeg har Sejren i Hænde,
-hvis Krist det saadan vil vende."
+hvis Krist det saadan vil vende.«
 
 Da drejed sig Høvdingen haant og koldt
 fra Ejvind og talte til Skaren:
-"Ham Løgn og Rænker har fangen holdt,
-men jeg vil nyde en Sejrsstund stolt
+»<i>Ham</i> Løgn og Rænker har fangen holdt,
+men <i>jeg</i> vil nyde en Sejrsstund stolt
 og vinde Ry gennem Faren!
 Og hver, som har Mod, mig følge paa Tog,
 og Galler skal sige, at Daner slog
 som de, der ej Døden frygte!
-Da øges vort Helterygte!"
+Da øges vort Helterygte!«
 
 Der flimrede Flammer i hvert et Blik,
 og Hænder fatted om Vaaben
 alt efter nordisk Vikingeskik,
 og Ejvind øjned selv Bifaldsnik
 fra dem, ham fulgte til Daaben!
-"Lad dem kun svigte," saa tænkte han,
-"men jeg er Kristen, og jeg er Mand!
+»Lad dem kun svigte,« saa tænkte han,
+»men <i>jeg</i> er Kristen, og <i>jeg</i> er Mand!
 Min Haand skal ej Hjertet svige
-for Heltehæder i Krige." --
+for Heltehæder i Krige.« - -
 
 Ejvind slog Bo ved den hvide Kyst,
 hvor Skumstænk fyger fra Bølge!
@@ -1989,7 +2010,7 @@ naar de kom med Stormslag i Følge!
 Hans Kraft blev nu atter frejdig og frisk,
 men skaded ej andet end Dybets Fisk!
 Og saadan gled Uger og Dage!
-Og Skarer paa Valfærd drage. -
+Og Skarer paa Valfærd drage. - -
 
 Det hændte en graanet Septemberdag,
 mens Ejvind sad i sin Hytte,
@@ -2024,14 +2045,14 @@ og kunne ej Styret raade.
 To Snækker knustes i samme Nu
 af en rasende, favnhøj Vove,
 og Ejvind saa det med Stoltheds Gru,
-han sagde sig selv: "Her savnes du,
-slig Storm fælder Træer i Skove."
+han sagde sig selv: »Her savnes du,
+slig Storm fælder Træer i Skove.«
 Han halvt var glad over andres Nød
-og tænkte: "Her vindes Sejr eller Død
-i Kamp for Redning at bringe."
+og tænkte: »Her vindes Sejr eller Død
+i Kamp for Redning at bringe.«
 Straks saas han i Baad at springe.
 
-Det var en Val for en Vikingsjæl,
+<i>Det</i> var en Val for en Vikingsjæl,
 som ej vilde myrde og røve:
 Dybet var vildt og Stormen fæl,
 straks var han drivvaad fra Hoved til Hæl
@@ -2047,7 +2068,7 @@ Han var færdig, saafremt en Aare brast,
 saa Baaden slængtes for Bølgekast,
 men ej han sig selv erindred.
 Den ene Skude var stavnbrudt alt;
-det var en Stund, da Liv det gjaldt;
+<i>det</i> var en Stund, da Liv det gjaldt;
 de fejgeste skreg og jamred,
 og Hænder om Skrog sig klamred.
 
@@ -2084,22 +2105,22 @@ laa gemt i de dybe Vande.
 Og Høvdingen følte sig sær i Sind
 ved Kristenkæmpen at øjne,
 ved Ejvind at se i Blikket ind;
-saa var han dog Helt, trods Hjernespind
+saa <i>var</i> han dog Helt, trods Hjernespind
 og Troen paa Munkeløgne!
 Som her han knejste plaskende vaad,
 saas det, at han var Mand for en Daad,
-at "han med de sejrløse Dage"
+at »han med de sejrløse Dage«
 var stærk, hvor de andre var svage.
 
 Saa rakte Høvdingen Haanden frem
 og talte til Bølgens Tvinger:
-"Jeg spotted, da du fra Kamp kom hjem,
+»Jeg spotted, da du fra Kamp kom hjem,
 men lad det svundne sænkes i Glem!
 Dit Ry vil faa Ørnevinger!
 Jeg her erklærer ved Odin og Thor:
-en Sejr har du vundet, og den er stor;
-men jeg blev slagen paa Valen
-og slæbtes mod Havfrusalen."
+en Sejr har du vundet, og <i>den</i> er stor;
+men <i>jeg</i> blev slagen paa Valen
+og slæbtes mod Havfrusalen.«
 
 Ejvind fik aldrig Svaret sagt;
 han greb sig med eet for Brystet;
@@ -2109,7 +2130,7 @@ sin sidste Strid havde dystet.
 Han stod med Hæder paa Havets Strand
 og sank, som Solen daler af Land.
 Paa Jord var hans Værk til Ende,
-han døde med Sejr i Hænde. -
+han døde med Sejr i Hænde. - -
 
 Hans Bauta er Havet, som højt mod Bred
 fremruller i Dønninger lange;

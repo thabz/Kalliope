@@ -2,20 +2,13 @@
 <pictures>
   <picture src="p1.jpg">
   </picture>
-  <picture src="p2.jpg">
-    P. S. Krøyer: <i>Drachmann</i>, tegning.
-  </picture>
+  <picture ref="kroyer/drachmann-2" />
   <picture src="p3.jpg">
     <i>Holger Drachmann</i>, 1905, fotografi.
   </picture>
   <picture src="p4.jpg">
   </picture>
-  <picture src="p5.jpg" primary="true" square-src="p5-square.jpg">
-    P. S. Krøyer: <i>Digteren Holger Drachmann i Skagens plantage</i>, 1902, 32,5 x 40,8 cm, Hirschsprungske Samling.
-  </picture>
-  <picture src="p6.jpg">
-  </picture>
-  <picture src="p7.jpg">
-    P.S. Krøyer: <i>Holger Drachmann</i>, 1895, pastel. Hirschsprungske Samling.
-  </picture>
+  <picture ref="kroyer/1902-drachmann-5" primary="true" square-src="p5-square.jpg" />
+  <picture ref="kroyer/1903-drachmann-6" />
+  <picture ref="kroyer/1895-drachmann-7" />
 </pictures>

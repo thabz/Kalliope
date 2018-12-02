@@ -247,8 +247,8 @@ export default class PictureOverlay extends React.Component<
 > {
   onKeyUp: KeyboardEvent => void;
   hideOverlay: Event => void;
-  onRightClick: MouseEvent => void;
-  onLeftClick: MouseEvent => void;
+  onRightClick: Event => void;
+  onLeftClick: Event => void;
 
   static contextTypes = {
     showPictureOverlay: PropTypes.func,
@@ -267,7 +267,7 @@ export default class PictureOverlay extends React.Component<
   componentDidMount() {
     if (document != null) {
       // eslint-disable-next-line no-undef
-      document.addEventListener('keyup', this.onKeyUp, false);
+      document.addEventListener('keyup', this.onKeyUp, true);
       if (document.body != null && document.body.classList != null) {
         // eslint-disable-next-line no-undef
         document.body.classList.add('noscroll');
@@ -277,7 +277,7 @@ export default class PictureOverlay extends React.Component<
 
   componentWillUnmount() {
     // eslint-disable-next-line no-undef
-    document.removeEventListener('keyup', this.onKeyUp, false);
+    document.removeEventListener('keyup', this.onKeyUp, true);
     // eslint-disable-next-line no-undef
     if (document.body != null) {
       document.body.classList.remove('noscroll');
@@ -287,6 +287,12 @@ export default class PictureOverlay extends React.Component<
   onKeyUp(e: KeyboardEvent) {
     if (e.keyCode === 27) {
       this.hideOverlay(e);
+    } else if (e.keyCode === 37) {
+      // Left cursor key
+      this.onLeftClick(e);
+    } else if (e.keyCode === 39) {
+      // Right cursor key
+      this.onRightClick(e);
     }
   }
 
@@ -299,14 +305,14 @@ export default class PictureOverlay extends React.Component<
     e.stopPropagation();
   }
 
-  onRightClick(e: MouseEvent) {
+  onRightClick(e: Event) {
     if (this.state.currentIndex < this.props.pictures.length - 1) {
       this.setState({ currentIndex: this.state.currentIndex + 1 });
     }
     e.stopPropagation();
   }
 
-  onLeftClick(e: MouseEvent) {
+  onLeftClick(e: Event) {
     if (this.state.currentIndex > 0) {
       this.setState({ currentIndex: this.state.currentIndex - 1 });
     }

@@ -6,7 +6,7 @@ import Head from '../components/head';
 import Main from '../components/main.js';
 import { KalliopeTabs } from '../components/tabs.js';
 import LangSelect from '../components/langselect';
-import Nav from '../components/nav';
+import Nav, { kalliopeCrumbs } from '../components/nav';
 import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import TwoColumns from '../components/twocolumns.js';
@@ -92,10 +92,10 @@ export default class About extends React.Component<AboutProps> {
         lang={lang}
       />
     );
-    const navbar = [
-      <Link route={Links.aboutURL(lang, 'kalliope')}>
-        <a>Om</a>
-      </Link>,
+    const crumbs = [
+      ...kalliopeCrumbs(lang),
+      { url: Links.aboutURL(lang, 'kalliope'), title: 'Om' },
+      { title: keyword.title },
     ];
     let author = null;
     if (keyword.author != null) {
@@ -141,7 +141,7 @@ export default class About extends React.Component<AboutProps> {
       <div>
         <Head headTitle="Kalliope" requestPath={requestPath} />
         <Main>
-          <Nav lang="da" links={navbar} title={keyword.title} />
+          <Nav lang="da" crumbs={crumbs} />
           <Heading title="Kalliope" />
           <KalliopeTabs lang={lang} selected="about" />
           {pageBody}

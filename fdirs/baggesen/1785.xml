@@ -5,14 +5,13 @@
    <title>Comiske Fortællinger</title>
    <year>1785</year>
    <notes>
-      <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun indlysende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse. Citationstegn er undtagelsesvist blevet rettet og tilføjet stiltiende, da det ellers ville føre til noter ud for stort set hver replik (man tog særdeles let på den slags), men ingen steder er der dog tvivl om hvem der siger hvad. Vi har ikke medtaget den 18 sider lange liste af subskribenter, begyndende med Hans Majestæt Kongen og sluttende med en Hr. Luytkis, toldforvalter i Tronheim. Alle noter med foranstillet * er forfatterens egne.</note>
+      <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven af <i>Comiske Fortællinger</i>, Kbh., 1785. Kun indlysende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse. Citationstegn er undtagelsesvist blevet rettet og tilføjet stiltiende, da det ellers ville føre til noter ud for stort set hver replik (man tog særdeles let på den slags), men ingen steder er der dog tvivl om hvem der siger hvad. Vi har ikke medtaget den 18 sider lange liste af subskribenter, begyndende med Hans Majestæt Kongen og sluttende med en Hr. Luytkis, toldforvalter i Tronheim. Alle noter med foranstillet * er forfatterens egne.</note>
    </notes>
    <!-- I Poesiens Oprindelse og i Katten bruges både schwabacher og  kursivering til fremhævelse, bibeholdt ved at bruge både fed og kursiv i vores tekst, resten af CF bruger kun schwabacher til fremhævelse, hvilket i vores tekst er kursiveret -->
    <pictures>
       <picture type="titlepage" src="1785-p1.jpg">Titelbladet til <i>Comiske Fortællinger</i> (1785).<br/>Comiske / Fortællinger / af / Jens Baggesen. / --- Ubi qvid datur otî / Illudo chartis; hoc est mediocribus illis / Ex vitiis unum. - / Horat. / Kiøbenhavn, 1785. / Trykt hos August Friderich Stein.</picture>
    </pictures>
-   <quality>korrektur1,kilde,side</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+   <source facsimile="115308040544_color" facsimile-pages-num="228" facsimile-pages-offset="28">Jens Baggesen: <i>Comiske Fortællinger</i>, Kbh., 1785.</source> 
 </workhead>
 <workbody>
 
@@ -20,10 +19,8 @@
 <head>
    <title>Fortale</title>
    <toctitle>Fortale</toctitle>
-   <notes>
-      <note>Teksten følger <i>Comiske Fortællinger</i> (1785), side i-iv. (Fortale-siderne er ikke nummerede, hverken med romertal eller arabertal.)</note>
-   </notes>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="i-iv" facsimile-pages="9-12"/>
 </head>
 <body>
 Ikke blot at imodtage, men ogsaa efter Evne at meddeele Glæde, er en Pligt, som ingen fra Monarken til Betleren bør forsømme. Vort Liv og vore fleeste Glæder i Livet har sat og sætter os daglig i Gield til vore Medmennesker; det bør være vor Bestræbelse, at betale noget deraf, om det end skulle blot skee ved at give dem en uskadelig Tidsfordriv.
@@ -47,16 +44,12 @@ Ikke blot at imodtage, men ogsaa efter Evne at meddeele Glæde, er en Pligt, som
 <poem id="baggesen2001060801a">
 <head>
    <title>Poesiens Oprindelse</title>
-   <toctitle>Poesiens Oprindelse</toctitle>
-   <indextitle>Poesiens Oprindelse</indextitle>
    <firstline>Engang i denne Verdens unge Dage</firstline>
-   <notes>
-      <note>Teksten følger <i>Comiske Fortællinger</i> (1785), side 1-44.</note>
-   </notes>
    <pictures>
       <picture src="baggesen2001060801a.jpg">Titelblad til <i>Poesiens Oprindelse</i> fra <i>Comiske Fortællinger</i> (1785).<br/>Poesiens Oprindelse. / - - Sunt, qui non corpora tantum, / Verum animos etiam valeant mutare liquores. / Ovid.</picture>
    </pictures>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="1-44"/>
 </head>
 <body>
 Engang i denne Verdens unge Dage,
@@ -206,7 +199,7 @@ Ved disse Frigges Ord blev Odin ganske tam,
 Han kyste hende, drak sin Chocolade,
 Og alt blev got igien.
 
-                                           <nonum>Paa Jordens Overflade</nonum>
+<nonum><right>Paa Jordens Overflade</right></nonum>
 Imidlertid Hermoder springer om,<note>* <b>Hermoder</b>, med Tilnavn <b>den hurtige</b>, var de gamle Nordiskes Mercurius.</note>
 Og søger Kvaser allevegne;
 Omsonst. Tilsidst et Sted i Heklas Egne
@@ -715,7 +708,7 @@ Et Bøsseskud fra Asgaards Huuse:
 Min Læser, om jeg ogsaa siger Stop
 Et lille Korn!
 
-                       <nonum>Min unge Jomfrue Muse!</nonum>
+<nonum><right>Min unge Jomfrue Muse!</right></nonum>
 O! lad for Himlens Skyld det vel bekomme mig,
 Ei Jomfrue blot; men ung, at have kaldet dig!
 For alting lad mig ikke Tiden spilde
@@ -981,16 +974,12 @@ Hvor vilde jeg da vis paa Digter-Krandsen være!
 <poem id="baggesen2002110103">
 <head>
    <title>Katten, eller Elskovs Magt</title>
-   <toctitle>Katten, eller Elskovs Magt</toctitle>
-   <indextitle>Katten, eller Elskovs Magt</indextitle>
    <firstline>De kiere Katte er' slet ikke mine Folk</firstline>
-   <notes>
-      <note>Teksten følger <i>Comiske Fortællinger</i> (1785), side 44-74.</note>
-   </notes>
    <pictures>
       <picture src="baggesen2002110103.jpg">Titelblad til <i>Katten, eller Elskovs Magt</i> fra <i>Comiske Fortællinger</i> (1785).<br/>Katten, / eller / Elskovs Magt. / - - - -  Ille ferocem / Contudit, et dominae misit in arbitrium. / Armeniae tigres et fulvos ille leones / Vicit et indomitis mollia corda dedit. / Haec Amor, et majora valet. - - / Tibull.</picture>
    </pictures>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="47-74"/>
 </head>
 <body>
 De kiere Katte er' slet ikke mine Folk.
@@ -1038,7 +1027,7 @@ Undtagen gammel Gunilds sorte Kat?
 Hvor meget maatte <b>Gustav Landkron</b> lide
 For Peises Skyld?
 
-                                           <nonum>Forgangen Aar, en Nat,</nonum>
+<nonum><right>Forgangen Aar, en Nat,</right></nonum>
 (Jeg neppe kan for Graad det Syn fortælle;
 Og det er slemt; thi jeg vil gierne lee.)
 En Vinternat en vis høibaaren Delle
@@ -1581,15 +1570,11 @@ Og synge Eventyr om <b>Amor i Triumf</b>.
    <toctitle>Deucalion og Pyrrha</toctitle>
    <indextitle>Deucalion og Pyrrha</indextitle>
    <firstline>Om første Verdens Undergang fortæl</firstline>
-   <notes>
-      <note>Teksten følger <i>Comiske Fortællinger</i> (1785), side 75-100.</note>
-   </notes>
    <pictures>
       <picture src="baggesen2002122301-p1.jpg">Titelblad til <i>Deucalion og Pyrrha</i> fra <i>Comiske Fortællinger</i> (1785).<br/>Deucalion og Pyrrha. / Piscium et summa genus haesit ulmo, / Nota quae sedes fuerat columbis / Et superiecto pavidae natârunt / Aequore damae. / Hor. Carm. L. I. Od. 2. v. 9.</picture>
-      <picture src="baggesen2002122301-p2.jpg">Faksimile af side 79.</picture>
-      <picture src="baggesen2002122301-p3.jpg">Faksimile af side 87.</picture>
    </pictures>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="77-100"/>
 </head>
 <body>
 <center><nonum><b>Første Deel</b></nonum></center>
@@ -1632,7 +1617,8 @@ Thi Vreden kunde de strax i hans Ansigt læse.
 Tre Gange skialv Olymp. <i>Zeus</i> taler saa fra Thronen:
 ,,Jeg i min Levetid har aldrig været før
 Saa bange, som i denne Tid, for Kronen,
-Ei selv den Gang de rasende <i>Kottoner</i>,<note>* Giganter. <i>Kottos</i> var een af de Kiemper, som bestormede Himmelen. [Her citeres Hesiod på oldgræsk, se faksimilen af side 79 for at få det med.]</note>
+
+Ei selv den Gang de rasende <i>Kottoner</i>,<note>* Giganter. <i>Kottos</i> var een af de Kiemper, som bestormede Himmelen.<br/>Οἳ δ᾽ ἄῤ ἐνὶ πρώτοισι μάχην δριμεῖαν ἔγειραν<br/>Κόττος<br/>Hesiod. Deor. Gen. v. 713. etc.<!-- Dette er fra Hesiods Theogonien, hvilket betyder gudefødslen. Deor. Gen. er den latinske titel. --><!-- http://www.sacred-texts.com/cla/hesiod/gtheo.htm--></note>
 Med hundred' Hænder hver, bestormede min Dør,
 <i>Olymper</i> dyngede paa <i>Pelioner</i>,
 Og, dristig klavrende paa disse Bierges Top,
@@ -1745,7 +1731,7 @@ Jeg har besluttet det, og evig som min Torden
 Staaer min Beslutning fast, jeg vil udslette Jorden!''
 Saa talte <i>Saturns</i> Søn.
 
-                                                      <nonum>Enhver af Guderne</nonum>
+<nonum><right>Enhver af Guderne</right></nonum>
 Bifaldt den strænge Dom med Mund og Hænder.
 Naar Vognen hælder, som man tidt kan see,
 Saa flyder alle efter - Een antænder
@@ -1782,10 +1768,10 @@ Af Nat og Storm og Ild og Damp og Torden,
 Tillige skulde tænde Luften an
 Og skikke heele Himlen selv i Brand,
 Tilbageholdt hans Arm - han huskede tillige
-Paa Frue <i>Sibyllas</i> Spaadoms Ord:
+<pb n="87"/>Paa Frue <i>Sibyllas</i> Spaadoms Ord:
 At den Tid komme skal, da Hav, og Jord,
 Og Luften, og det heele Himmel-Rige
-Skal brændes op; og lagde derfor hen<note>Se noten hertil i faksimilen af side 87.</note>
+Skal brændes op;<note>Καὶ τότε δὴ ποταμός τε μέγας πυρὸς ἀιϑομένοιο<br/>Ρεύσει άπουρανόϑεν, ϰαὶπαντατόπον δαππήσει,<br/>Γαῖάν, etc.<br/>Καὶ πόλον ἀράνιον.<br/>Oiac. Sibyll. L. II. v. 196. etc. </note> og lagde derfor hen
 Den grumme Straale paa sit Sted igien.
 Som han nu stod og huskede sig om,
 Et modsat Indfald ham i Sinde kom;
@@ -2049,9 +2035,17 @@ Den anden Deel ærbødigst at frembære.
 </body>
 </poem>
 
-<section level="1">
+<section level="2" id="baggesen2018101601">
 <head>
+   <title>Jeppe</title>
    <toctitle>Jeppe. Et Eventyr</toctitle>
+   <indextitle>Jeppe</indextitle>
+   <linktitle>Jeppe</linktitle>
+   <notes>
+      <note>Titelbladet til <i>Jeppe. Et Eventyr</i> lyder ,,Jeppe. / Et Eventyr. / - - - - d'une voix légere / Passer du grave au doux, du plaisant au sévere. / Boileau. l'art poet. Ch. I. v. 76.''</note>
+      <note>Cf. Boileau: <xref poem="boileau2002122601,75-76"/>.</note>
+   </notes>
+   <source pages="101-196" />
 </head>
 <content>
 
@@ -2059,15 +2053,11 @@ Den anden Deel ærbødigst at frembære.
 <head>
    <title>Første Capitel</title>
    <toctitle>Første Capitel</toctitle>
+   <linktitle>Jeppe. Første Capitel</linktitle>
    <indextitle>Jeppe</indextitle>
    <firstline>Jeg, som tilforn med Piben i min Mund</firstline>
-   <notes>
-      <note>Teksten følger <i>Comiske Fortællinger</i> (1785), side 101-09.</note>
-   </notes>
-   <pictures>
-      <picture src="baggesen2002122501-p1.jpg">Titelblad til <i>Jeppe. Et Eventyr</i> fra <i>Comiske Fortællinger</i> (1785).<br/>Jeppe. / Et Eventyr. / - - - - d'une voix légere / Passer du grave au doux, du plaisant au sévere. / Boileau. l'art poet. Ch. I. v. 76.</picture>
-   </pictures>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="103-109"/>
 </head>
 <body>
 
@@ -2126,7 +2116,7 @@ Og ikke for Erobringer at giøre,
 Just ingen <i>Irus</i> reent og ingen <i>Midas</i> var,
 Da man ved Alchymie saa let ei kunde skabe
 En Doctor af en Kat, og Junker af en Abe,
-Da Hesten kaldtes Hest, og Monsieur <i>Jean</i> en Nar,<note>Den affekterede hovedperson i <i>Holbergs</i> Jean de France.</note>
+Da Hesten kaldtes Hest, og Monsieur <i>Jean</i> en Nar,<note>Den affekterede hovedperson i <i><a poet="holberg">Holbergs</a></i> Jean de France.</note>
 Da Liberie var ei den bedste Vei til Brød,
 Og Mangel paa Patron just ei den visse Død;
 I denne Fabel-Tid, som <i>Holberg</i> har beskrevet
@@ -2203,7 +2193,7 @@ Nei! du skal suurt og dyrt betale -
 Nu sidder du en kiøn! du Hanrei - og saa sandt
 Jeg hedder <i>Birte</i> .....''
 
-                                                          <nonum>Hoved indtil Hale.</nonum>
+<nonum><right>Hoved indtil Hale.</right></nonum>
 Saa stærk og drøi han var, nu Konen Manden fandt -
 Hvad heller Vægten af de mange Puf,
 Der fulgte paa hinanden i en Ruf
@@ -2221,12 +2211,11 @@ For første Gang nedstødt fra konelige Throne.
 <poem id="baggesen2002122502">
 <head>
    <title>Andet Capitel</title>
-   <firstline>Lidt meer om Heltens Tilstand</firstline>
+   <linktitle>Jeppe. Andet Capitel</linktitle>
    <toctitle>Andet Capitel</toctitle>
-   <notes>
-      <note>Teksten følger <i>Comiske Fortællinger</i> (1785), side 110-18.</note>
-   </notes>
+   <firstline>Lidt meer om Heltens Tilstand</firstline>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="110-118"/>
 </head>
 <body>
 <nonum><center><sc>Indhold</sc></center></nonum>
@@ -2410,12 +2399,11 @@ Der laae vor <i>Jeppe</i> - Greenen knak.
 <poem id="baggesen2002122601">
 <head>
    <title>Tredie Capitel</title>
+   <linktitle>Jeppe. Tredie Capitel</linktitle>
    <toctitle>Tredie Capitel</toctitle>
    <firstline>Skielv altid, usle, svage Dødelige</firstline>
-   <notes>
-      <note>Teksten følger <i>Comiske Fortællinger</i> (1785), side 118-26.</note>
-   </notes>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="118-126"/>
 </head>
 <body>
 <center><nonum><sc>Indhold</sc></nonum></center>
@@ -2592,12 +2580,11 @@ Skal Læseren nu faae at vide.
 <poem id="baggesen2003010701">
 <head>
    <title>Fierde Capitel</title>
+   <linktitle>Jeppe. Fierde Capitel</linktitle>
    <toctitle>Fierde Capitel</toctitle>
    <firstline>En Herremand og Kudsk fremviise sig</firstline>
-   <notes>
-      <note>Teksten følger <i>Comiske Fortællinger</i> (1785), side 126-34.</note>
-   </notes>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="126-134"/>
 </head>
 <body>
 <center><nonum><sc>Indhold</sc></nonum></center>
@@ -2787,12 +2774,11 @@ Og endelig sov hen, da hun ei kunde meer.
 <poem id="baggesen2003010801">
 <head>
    <title>Femte Capitel</title>
+   <linktitle>Jeppe. Femte Capitel</linktitle>
    <toctitle>Femte Capitel</toctitle>
    <firstline>Aurores Ankomst giør en Hoben Vind</firstline>
-   <notes>
-      <note>Teksten følger <i>Comiske Fortællinger</i> (1785), side 135-39.</note>
-   </notes>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="135-139"/>
 </head>
 <body>
 <center><nonum><sc>Indhold</sc></nonum></center>
@@ -2901,12 +2887,12 @@ Jeg haaber Læseren mig her og der forlader.
 <poem id="baggesen2003011002">
 <head>
    <title>Siette Capitel</title>
+   <linktitle>Jeppe. Siette Capitel</linktitle>
    <toctitle>Siette Capitel</toctitle>
    <firstline>Et Billede paa Seirens stolte Fryd</firstline>
-   <notes>
-      <note>Teksten følger <i>Comiske Fortællinger</i> (1785), side 140-51.</note>
-   </notes>
+   <keywords>milton,klopstock,ewald</keywords>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="140-151"/>
 </head>
 <body>
 <center><nonum><sc>Indhold</sc></nonum></center>
@@ -2972,7 +2958,7 @@ Paa Bordet for min Roes, den næste Dag derpaa,
 I Stedet for Present en Skrædderregning laae -
 Og siden den Tid - stop!
 
-                                          <nonum>En reent fordiævlet Hoste</nonum>
+<nonum><right>En reent fordiævlet Hoste</right></nonum>
 Var netop for min Helt hvad Regningen var mig:
 En Vækker af den Fryd, hvori han drømte sig.
 Kan man i andet Liv og hoste? Det var Knuden, -
@@ -3159,12 +3145,10 @@ Men kunde raisonnere, naar det gieldte.
 <poem id="baggesen2003011003">
 <head>
    <title>Syvende Capitel</title>
-   <toctitle>Syvende Capitel</toctitle>
+   <linktitle>Jeppe. Syvende Capitel</linktitle>
    <firstline>Et nyt Spilop, hvoraf man seer med Sorg</firstline>
-   <notes>
-      <note>Teksten følger <i>Comiske Fortællinger</i> (1785), side 151-59.</note>
-   </notes>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="151-159"/>
 </head>
 <body>
 <center><nonum><sc>Indhold</sc></nonum></center>
@@ -3197,12 +3181,12 @@ Før han af Hiertens Grund et mægtigt Brøl lar slippe:
 ,,Hør! i tre Spaamænd, som jeg alle hængt'
 Gad seet i disse Træer vippe!
 Hvor er <i>Peer Asen?''</i>
-                                                <nonum>Kiere Fâr! Naa, Naa!</nonum>
+<nonum><right>Kiere Fâr! Naa, Naa!</right></nonum>
 Gientoge de, vær ikke slet saa kiæk!
 Med Lempe faaer man Æg i Hummelsæk,
 Og med det Gode kan man alting faae;
 <i>Peer Asen</i>, siger I! Hvad han?
-                                                           <nonum>,,Har Fanden taget.'' &mdash;</nonum>
+<nonum><right>,,Har Fanden taget.'' &mdash;</right></nonum>
 For meget lidt, saamænd, han sig da har umaget!
 ,,Og hvis I ei paa Stand mig siger hvor han er -
 Jeg veed I kan, Jer Prophesie, desværr'!
@@ -3359,12 +3343,11 @@ Og dermed gik han glad fra sin Bormester væk.
 <poem id="baggesen2003011101">
 <head>
    <title>Ottende Capitel</title>
+   <linktitle>Jeppe. Ottende Capitel</linktitle>
    <toctitle>Ottende Capitel</toctitle>
    <firstline>Vor Helt, trods alle sine tyve Daler</firstline>
-   <notes>
-      <note>Teksten følger <i>Comiske Fortællinger</i> (1785), side 160-68.</note>
-   </notes>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="160-168"/>
 </head>
 <body>
 <center><nonum><sc>Indhold</sc></nonum></center>
@@ -3560,12 +3543,11 @@ Han for sin Koe de tyve Daler fik.
 <poem id="baggesen2003011102">
 <head>
    <title>Niende Capitel</title>
+   <linktitle>Jeppe. Niende Capitel</linktitle>
    <toctitle>Niende Capitel</toctitle>
    <firstline>Man høster ikke altid, hvor man saaede</firstline>
-   <notes>
-      <note>Teksten følger <i>Comiske Fortællinger</i> (1785), side 169-79.</note>
-   </notes>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="169-179"/>
 </head>
 <body>
 <center><nonum><sc>Indhold</sc></nonum></center>
@@ -3804,12 +3786,11 @@ For at faae fat paa den omtalte Hund.
 <poem id="baggesen2003011103">
 <head>
    <title>Tiende Capitel</title>
-   <toctitle>Tiende Capitel</toctitle>
+   <breadcrumbtitle>Tiende Capitel</breadcrumbtitle>
+   <linktitle>Jeppe. Tiende Capitel</linktitle>
    <firstline>Den Læser, som har fulgt mig hidindtil</firstline>
-   <notes>
-      <note>Teksten følger <i>Comiske Fortællinger</i> (1785), side 180-96.</note>
-   </notes>
    <quality>korrektur1,kilde,side</quality>
+   <source pages="180-196"/>
 </head>
 <body>
 <center><nonum><sc>Indhold</sc></nonum></center>
@@ -3897,7 +3878,7 @@ Men bandt ham fast med Grimen til sin Arm,
 Og derpaa trak afsted med Knægten
 Til Slottet.
 
-                       <nonum>Midt paa Holmens Broe</nonum>
+<nonum><right>Midt paa Holmens Broe</right></nonum>
 En skiægget Mand af Isaak-Slægten
 Sig bukked' ydmygst for dem begge to,
 Og spurgte Helten: hvor han vilde hen,
@@ -4131,11 +4112,11 @@ Det halve Rige kan jeg ei regiere;
 Mig selv jeg styrer undertiden slet:
 Det eeneste, jeg vil begiere,
 Er firehundrede ....''
-                                  <nonum>,,Dukater? - Paa et Bret</nonum>
+<nonum><right>,,Dukater? - Paa et Bret</right></nonum>
 Tidobbelt'' -
-                      <nonum>,,Nei; men firehundrede</nonum>
+<nonum><right>,,Nei; men firehundrede</right></nonum>
 Veltalte Stokkeprygl ....''
-                                           <nonum>,,Saa var dog rigtig Manden</nonum>
+<nonum><right>,,Saa var dog rigtig Manden</right></nonum>
 Ei blot for Spøg, men Alvor fra Forstanden!
 Velan! du har mit Ord, og følgelig - Det skee!''
 

@@ -64,7 +64,7 @@ export default class Picture extends React.Component<PictureProps> {
     if (showDropShadow == true) {
       pictureClassName += ' with-drop-shadow';
     }
-    const onClick = e => {
+    const onClick = (e: SyntheticMouseEvent<HTMLPictureElement>) => {
       if (clickToZoom == true) {
         this.context.showPictureOverlay(pictures, 'da', startIndex);
       }
@@ -102,6 +102,7 @@ export default class Picture extends React.Component<PictureProps> {
           figcaption {
             margin-top: 8px;
             font-size: 0.8em;
+            line-height: 1.6;
           }
           .oval-mask {
             border-radius: 50%;

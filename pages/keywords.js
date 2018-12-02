@@ -5,7 +5,7 @@ import React from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
 import * as Links from '../components/links';
-import Nav from '../components/nav';
+import Nav, { kalliopeCrumbs } from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import { KalliopeTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
@@ -74,7 +74,10 @@ export default class extends React.Component<KeywordsProps> {
           requestPath={requestPath}
         />
         <Main>
-          <Nav lang={lang} title={_('Nøgleord', lang)} />
+          <Nav
+            lang={lang}
+            crumbs={[...kalliopeCrumbs(lang), { title: _('Nøgleord', lang) }]}
+          />
           <Heading title={_('Nøgleord', lang)} />
           <KalliopeTabs lang={lang} selected="keywords" />
           {renderedGroups}

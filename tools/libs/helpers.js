@@ -6,6 +6,7 @@ const async = require('async');
 const path = require('path');
 const sharp = require('sharp');
 const CommonData = require('../../pages/helpers/commondata.js');
+const deasync = require('deasync');
 
 const safeMkdir = dirname => {
   try {
@@ -139,6 +140,9 @@ const htmlToXml = (
         .replace(/\n *(----*) *\n/g, (match, p1) => {
           return `\n<hr width="${p1.length}"/>\n`;
         })
+        .replace(/\n *(====*) *\n/g, (match, p1) => {
+          return `\n<hr width="${p1.length}" class="double"/>\n`;
+        })
         .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
           // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
           return `<nonum>${p1}</nonum>`;
@@ -262,6 +266,7 @@ const htmlToXml = (
     }
     const hasNonum =
       l.indexOf('<nonum>') > -1 ||
+      l.indexOf('<asterism') > -1 ||
       l.indexOf('<wrap>') > -1 ||
       l.indexOf('<num>') > -1 ||
       l.match(/^\s*$/) ||
@@ -318,27 +323,48 @@ const htmlToXml = (
   return lines;
 };
 
-const buildThumbnails = (topFolder, isFileModified) => {
-  let resizeImageQueue = async.queue((task, callback) => {
-    sharp(task.inputfile)
-      .resize(task.maxWidth, 10000)
-      .max()
-      .withoutEnlargement()
-      .toFile(task.outputfile, function(err) {
-        if (err != null) {
-          console.log(err);
-        }
-        console.log(task.outputfile);
-        callback();
-      });
-  }, 2);
+const imageSizeAsync = (filename, callback) => {
+  if (!fileExists(filename)) {
+    const error = `image size failed for file: ${filename}`;
+    throw error;
+  }
+  sharp(filename)
+    .metadata()
+    .then(metadata => {
+      callback(null, { width: metadata.width, height: metadata.height });
+    });
+};
 
+const imageSizeSync = deasync(imageSizeAsync);
+
+let resizeImageQueue = async.queue((task, callback) => {
+  sharp(task.inputfile)
+    .resize(task.maxWidth, 10000)
+    .max()
+    .withoutEnlargement()
+    .toFile(task.outputfile, function(err) {
+      if (err != null) {
+        console.log(err);
+      }
+      console.log(task.outputfile);
+      callback();
+    });
+}, 2);
+
+const resizeImage = (inputfile, outputfile, maxWidth) => {
+  resizeImageQueue.push({ inputfile, outputfile, maxWidth });
+};
+
+const buildThumbnails = (topFolder, isFileModified) => {
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
 
   const handleDirRecursive = dirname => {
     if (!fs.existsSync(dirname)) {
       console.log(`${dirname} mangler, så genererer ingen thumbs deri.`);
+      return;
+    }
+    if (dirname.match(/\/social$/)) {
       return;
     }
     fs.readdirSync(dirname).forEach(filename => {
@@ -361,11 +387,7 @@ const buildThumbnails = (topFolder, isFileModified) => {
               (isFileModified != null && isFileModified(fullFilename)) ||
               !fileExists(outputfile)
             ) {
-              resizeImageQueue.push({
-                inputfile: fullFilename,
-                outputfile,
-                maxWith: width,
-              });
+              resizeImage(fullFilename, outputfile, width);
             }
           });
         });
@@ -390,5 +412,7 @@ module.exports = {
   safeGetText,
   safeGetAttr,
   replaceDashes,
+  imageSizeSync,
   buildThumbnails,
+  resizeImage,
 };

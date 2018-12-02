@@ -5,7 +5,7 @@ import Head from '../components/head';
 import Main from '../components/main.js';
 import { Link } from '../routes';
 import * as Links from '../components/links';
-import Nav from '../components/nav';
+import Nav, { kalliopeCrumbs } from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import CountryPicker from '../components/countrypicker.js';
 import Tabs from '../components/tabs.js';
@@ -33,22 +33,25 @@ type GroupBy = 'name' | 'year';
 
 const groupsByLetter = (poets: Array<Poet>, lang: Lang) => {
   let groups = new Map();
-  poets.filter(p => p.type !== 'person').forEach(p => {
-    let key = _('Ukendt digter', lang);
-    if (p.name.lastname != null) {
-      key = p.name.lastname[0];
-    }
-    if (
-      key === 'A' &&
-      p.name.lastname != null &&
-      p.name.lastname.indexOf('Aa') === 0
-    ) {
-      key = 'Å';
-    }
-    let group = groups.get(key) || [];
-    group.push(p);
-    groups.set(key, group);
-  });
+  poets
+    .filter(p => p.type !== 'person')
+    .filter(p => p.type !== 'artist')
+    .forEach(p => {
+      let key = _('Ukendt digter', lang);
+      if (p.name.lastname != null) {
+        key = p.name.lastname[0];
+      }
+      if (
+        key === 'A' &&
+        p.name.lastname != null &&
+        p.name.lastname.indexOf('Aa') === 0
+      ) {
+        key = 'Å';
+      }
+      let group = groups.get(key) || [];
+      group.push(p);
+      groups.set(key, group);
+    });
   let sortedGroups = [];
   groups.forEach((group, key) => {
     sortedGroups.push({
@@ -69,7 +72,7 @@ const groupsByYear = (poets: Array<Poet>, lang: Lang) => {
       p.period.born.date !== '?'
     ) {
       const year = parseInt(p.period.born.date.substring(0, 4), 10);
-      const intervalStart = year - year % 25;
+      const intervalStart = year - (year % 25);
       key = `${intervalStart} - ${intervalStart + 24}`;
     }
     let group = groups.get(key) || [];
@@ -166,7 +169,10 @@ export default class extends React.Component<PoetsProps> {
           requestPath={requestPath}
         />
         <Main>
-          <Nav lang={lang} title={pageTitle} />
+          <Nav
+            lang={lang}
+            crumbs={[...kalliopeCrumbs(lang), { title: pageTitle }]}
+          />
           <Heading title={pageTitle} />
           <Tabs items={tabs} selected={groupBy} country={country} lang={lang} />
           {renderedGroups}

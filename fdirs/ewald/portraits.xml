@@ -6,13 +6,11 @@
   </picture>
   <picture src="p3.jpg">
   </picture>
-  <picture src="p4.jpg" primary="true" square-src="p4-square.jpg">
+  <picture src="p4.jpg" primary="true" square-src="p4-square.jpg" year="1780">
     Erik Pauelsen: <i>Johannes Ewald</i>, omkr. 1780. Frederiksborg.
   </picture>
-  <picture src="p5.jpg">
-    Wilhelm Marstrand: <i>Arendses sidste besøg hos Johannes Ewald</i>, 1864. Frederiksborg.
-  </picture>
-  <picture src="p6.jpg" invnr="KKSgb6230" museum="smk">
+  <picture ref="marstrand/ewald-1864" />
+  <picture src="p6.jpg" invnr="KKSgb6230" museum="smk" year="1779">
     J.F. Clemens: <i>Johannes Ewald</i>, 1779, tegning, 161×125mm. Statens Museum for Kunst.
   </picture>
   <picture src="p7.jpg">

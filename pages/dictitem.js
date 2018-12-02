@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Head from '../components/head';
 import Main from '../components/main.js';
-import Nav from '../components/nav';
+import Nav, { kalliopeCrumbs } from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { KalliopeTabs } from '../components/tabs.js';
@@ -71,19 +71,19 @@ export default class extends React.Component {
         </div>
       );
     }
-    const navbar = [
-      <Link route={Links.dictionaryURL(lang)}>
-        <a>Ordbog</a>
-      </Link>,
+    const crumbs = [
+      ...kalliopeCrumbs(lang),
+      { url: Links.dictionaryURL(lang), title: 'Ordbog' },
+      { title: item.title },
     ];
     const title = item.title;
     const headTitle = `${item.title} - Kalliope`;
     return (
       <div>
-        <FootnoteContainer>
+        <FootnoteContainer key={item.id}>
           <Head headTitle={headTitle} requestPath={requestPath} />
           <Main>
-            <Nav lang={lang} links={navbar} title={item.title} />
+            <Nav lang={lang} crumbs={crumbs} />
             <Heading title={title} />
             <KalliopeTabs lang={lang} selected="dictionary" />
             <SidebarSplit sidebar={sidebar}>
