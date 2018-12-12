@@ -3557,6 +3557,8 @@ Med flammende Begeistring tømmes ud!
    <source pages="142-147"/>
    <quality>korrektur1,korrektur2,kilde,side</quality>
    <!-- TODO: Find et maleri af Fontana del Tritone. https://commons.m.wikimedia.org/wiki/File:Fontana_del_Tritone_Rome_19c.jpg https://commons.m.wikimedia.org/wiki/File:PiazzaBarberiniByRoeslerFranz.jpg ... og også Marstrand sceneri. Og maleritet af pavens besøg i Thorvaldsens værksted. -->
+   <!-- http://collection.smk.dk/#/detail/KMS196 -->
+   <!-- http://collection.smk.dk/#/detail/KMS3770 -->
    <keywords>thorvaldsen,rom</keywords>
 </head>
 <body>
@@ -3712,7 +3714,7 @@ Og længes efter Danmarks Bøgehang.
    <title>I Apenninerne</title>
    <firstline>I Maanskin hæve sig de gustne Klipper</firstline>
    <source pages="148-150"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 I Maanskin hæve sig de gustne Klipper
@@ -3735,14 +3737,14 @@ Nedrulle stundom Fjeldets tunge Stene.
 
 Den første Aften, Du lod mig betragte
 I Afstand dine marmorhvide Træk,
-Urolig Længsel i min Sjæl du vakte,
+Urolig Længsel i min Sjæl Du vakte,
 Mens vinden sused over Klippen væk;
 Du stirred mod det nordlige Soracte,
 Og med dit Blik min Tanke fløj med Skræk:
 O Gud! mit Hjem og mine fjerne Kjære!
 Det var mig, som jeg aldrig saae dem mere. -
 
-Mig Solen Skjar i Øjet med sin Lue,
+Mig Solen skjar i Øjet med sin Lue,
 Og dybt i Hjertet Munterhedens Lag;
 Kun Maanen hang mig liflig fra sin Bue
 Som Frugt paa Træet af den lumre Dag;
@@ -3778,7 +3780,7 @@ Jeg flyer din Honning, som forgifter Sorgen!
    <indextitle>Athenodorus</indextitle>
    <firstline>I Rom gik atter Ry af fjerne Sejre</firstline>
    <source pages="151-165"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 I Rom gik atter Ry af fjerne Sejre
@@ -3813,14 +3815,14 @@ Gav ham Augustus høflig kold til Svar,
 «Men før Du gaaer, hør selv et Sandhedsord:
 Hvo laante vel den Anden Glands idag?
 Du stræber rastløs efter Verdens Agt,
-Jeg - efter at beherske just den Verden,
+<w>Jeg</w> - efter at beherske just den Verden,
 Hvis Agtelse din Higen kæmper for!
 Jeg voved Livet tidt for min Idee,
 Hvad voved hidtil vel Athenodorus?»
 «Du fejler», svared Stoikeren ham,
 «Den Verden, som Du ængstlig troer at eje,
 Har længst jeg overvundet og behersker nu
-I Tryghed ved Forsagelsernes Scepter!
+I Tryghed ved <w>Forsagelsernes</w> Scepter!
 Tag paa min Trone Plads, hvis Du har Mod,
 Hvis ej - hvo er vel Kejser af os Begge?»
 «Mit Valg er gjort», tilsmiled ham August,
@@ -3897,7 +3899,7 @@ Som skal mod Strømmen, men formaaer det ej!»
 «O, det er Guderne, som skikked Dig!
 Jeg kjender Dig, ja hele Rom Dig kjender.
 Et Ord af Dig kan skabe nu min Lykke, -
-Aabn Vejen mig til Kejseren, men nu
+Aabn Vejen mig til Kejseren, men <w>nu</w>
 I dette Øjeblik! Ak, al min Velfærd
 Afhænger af en Times farlig Nølen,
 See her mig knæle!» - «Stille!» bød den Gamle,
@@ -4095,7 +4097,7 @@ Og finder Mageskiftet Du for ringe,
 Da evig Fred tillige for dem Begge,
 Som Du beskytter!» -
 
-Nattens lyse Stjerner
+                    Nattens lyse Stjerner
 Modtog med himmelsk Tindren Oldingen,
 Da ud han traadte i den friske Luft,
 Og Slottets Løndør atter lukked sig.
@@ -4106,7 +4108,7 @@ Og vendte Skridtet, efter fuldendt Dagværk
 Og med sin lille Qvindebylt i Haanden,
 Imod sit Hjem. -
 
-Rundt fra de aabne Haller
+                    Rundt fra de aabne Haller
 Udstrømmed Glædens Blus i Sommernatten
 Og viste Philosophen mangt et Billed
 Af Livets Fryd, men standsede ham ikke;
@@ -4139,13 +4141,18 @@ Og trykked sine Læber til hans Mund!
 <poem id="boedtcher2002112409">
 <head>
    <title>Frederik den Syvende</title>
-   <subtitle>(15de November 1863)</subtitle>
+   <subtitle>
+       <line>†</line>
+       <line>(15de November 1863)</line>
+   </subtitle>
+   <dates>
+       <event>1863-11-15</event>
+   </dates>
    <toctitle>Frederik den Syvende</toctitle>
-   <indextitle>Frederik den Syvende</indextitle>
    <firstline>Den blege Død greb med et Spring sit Bytte</firstline>
    <source pages="166-167"/>
    <keywords>frederik7</keywords>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Den blege Død greb med et Spring sit Bytte
@@ -4161,13 +4168,13 @@ Som Skygge skrider den henover Sundet
 Og staaer useet i Sveas Kongehal
 Og stirrer paa sin Broders Blik og Mine,
 Men flyver i sin Uro flux tilbage; - -
-Du ædle danske Konge! ak, hvi blev
+Du ædle danske Konge! hvi blev
 Din Grav ej højnet hist ved Dannevirke
 Paa Oldtidsviis! Det blotte Syn af den
 Var nok for Dannemænd i Kampens Stund
 Til dobbel Stordaad; tifold vee den Fod,
 Som fjendtlig vilde trampe paa dit Hjerte! -
-Men i dit Hjertes Dyb stod skrevet Slesvig,
+Men i dit Hjertes Dyb stod skrevet <w>Slesvig</w>,
 Hiint minderige, dyrebare Navn,
 Og derfor fylker sig det danske Folk,
 Det frie danske Folk, og svinger Sværdet
@@ -4179,11 +4186,9 @@ Og gjennemføre Tanken uforfærdet!
 <poem id="boedtcher1870a24">
 <head>
    <title>I Foraaret</title>
-   <toctitle>I Foraaret</toctitle>
-   <indextitle>I Foraaret</indextitle>
    <firstline>Nu sænker sig Vaarens svangrende Luft</firstline>
    <source pages="168"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nu sænker sig Vaarens svangrende Luft,
@@ -4215,9 +4220,12 @@ Med Suk, med Savn, med smeltende Lyst!
    <title>Til B. S. Ingemann</title>
    <subtitle>(Den 28de Maj 1859)</subtitle>
    <firstline>Hvert Digterskib har tonet høit sit Flag</firstline>
+   <dates>
+       <event>1859-05-28</event>
+   </dates>
    <source pages="169-170"/>
    <keywords>ingemann</keywords>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hvert Digterskib har tonet høit sit Flag
@@ -4262,7 +4270,7 @@ Du ædle Gave fra den danske Maj!
    <subtitle>(Romance)</subtitle>
    <firstline>Jeg spejded i den grønne Lund</firstline>
    <source pages="171-172"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg spejded i den grønne Lund:
@@ -4297,8 +4305,6 @@ Men - <w>hans</w> jeg tænker paa!
 <poem id="boedtcher2002112407">
 <head>
    <title>Natten</title>
-   <toctitle>Natten</toctitle>
-   <indextitle>Natten</indextitle>
    <firstline>Midnatstimen ved Maanens Skin</firstline>
    <source pages="173-176"/>
    <quality>korrektur1,kilde,side</quality>
