@@ -4595,7 +4595,7 @@ Skal evigt blive nævnt med hans
    <indextitle>En Rose</indextitle>
    <firstline>Rose, min Glæde og Lyst, Foraarets yndige Datter!</firstline>
    <source pages="185-186"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Rose, min Glæde og Lyst, Foraarets yndige Datter!
@@ -4642,11 +4642,9 @@ Glæd Dig, min Rose, min Blomst, det raader <w>Kjærlighed</w> for!
 <poem id="boedtcher1870a30">
 <head>
    <title>Guldbryllupsdigt</title>
-   <toctitle>Guldbryllupsdigt</toctitle>
-   <indextitle>Guldbryllupsdigt</indextitle>
    <firstline>De steg i Baaden Haand i Haand</firstline>
    <source pages="187-190"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 De steg i Baaden Haand i Haand
@@ -4733,12 +4731,13 @@ Som Rejsens første Morgen!
 <head>
    <title>Til Christian Winther</title>
    <subtitle>(Den 29de Juli 1866)</subtitle>
-   <toctitle>Til Chr. Winther</toctitle>
-   <indextitle>Til Christian Winther</indextitle>
+   <dates>
+       <event>1866-07-29</event>
+   </dates>
    <firstline>Omkring din Harpe er idag en Trængsel</firstline>
    <source pages="191-192"/>
    <keywords>winter</keywords>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <!-- Rettelser af Asger Schnack, 22-8-2000. -->
 </head>
 <body>
@@ -4774,8 +4773,6 @@ Og aldrig, aldrig gaae til Hvile.
 <poem id="boedtcher2002112408">
 <head>
    <title>Den gamle Greve</title>
-   <toctitle>Den gamle Greve</toctitle>
-   <indextitle>Den gamle Greve</indextitle>
    <firstline>Paa Skrænten bag de grønne Træer</firstline>
    <source pages="193-209"/>
    <quality>korrektur1,kilde,side</quality>
@@ -4882,7 +4879,7 @@ Et Billed af den dybe Fred;
 Og altsom Solen Styrke vandt,
 Den bange Jægers Frygt forsvandt.
 «Maaskee var et Mirakel skeet,
-Og Greven havde Intet seet - «
+Og Greven havde Intet seet —»
 Hvert Slag fra Slottets Sejerværk
 Af Haab ham gjorde mere stærk,
 Og tryg han sysled alt en Stund
@@ -4911,7 +4908,7 @@ Det er vor Rettighed og Roes
 At kjende Alle paa vort Gods, -
 Hun møde her ved Aftenrød,
 Hvis du vil spise Grevens Brød!»
-
+====TODO====
 Saa steg han op ad Vindeltrin
 Og gik i Fruerstuen ind,
 Hans Gang var luskende og spag
