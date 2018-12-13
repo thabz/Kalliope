@@ -3554,11 +3554,16 @@ Med flammende Begeistring tømmes ud!
    <title>Piazza Barberina</title>
    <subtitle>(Rom 1830)</subtitle>
    <firstline>Den lumre Nat har skjænket sine Gaver</firstline>
+   <pictures>
+       <picture ref="marstrand/piazza-barberini-1840erne" />
+       <picture src="boedtcher1870a22-p1.jpg" museum="" invnr="KMS196">
+           Ditlev Martens: <i>Pave Leo Xll aflægger besøg i Thorvaldsens værksteder ved Piazza Barberini, 18. oktober 1826</i>, 1828-29, olie på lærred, 100x138 cm. Statens Museum for Kunst.
+       </picture>
+   </pictures>
    <source pages="142-147"/>
    <quality>korrektur1,korrektur2,kilde,side</quality>
-   <!-- TODO: Find et maleri af Fontana del Tritone. https://commons.m.wikimedia.org/wiki/File:Fontana_del_Tritone_Rome_19c.jpg https://commons.m.wikimedia.org/wiki/File:PiazzaBarberiniByRoeslerFranz.jpg ... og også Marstrand sceneri. Og maleritet af pavens besøg i Thorvaldsens værksted. -->
-   <!-- http://collection.smk.dk/#/detail/KMS196 -->
-   <!-- http://collection.smk.dk/#/detail/KMS3770 -->
+   <!-- https://commons.m.wikimedia.org/wiki/File:Fontana_del_Tritone_Rome_19c.jpg -->
+   <!-- https://commons.m.wikimedia.org/wiki/File:PiazzaBarberiniByRoeslerFranz.jpg -->
    <keywords>thorvaldsen,rom</keywords>
 </head>
 <body>
@@ -4775,7 +4780,7 @@ Og aldrig, aldrig gaae til Hvile.
    <title>Den gamle Greve</title>
    <firstline>Paa Skrænten bag de grønne Træer</firstline>
    <source pages="193-209"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Paa Skrænten bag de grønne Træer
@@ -4908,7 +4913,7 @@ Det er vor Rettighed og Roes
 At kjende Alle paa vort Gods, -
 Hun møde her ved Aftenrød,
 Hvis du vil spise Grevens Brød!»
-====TODO====
+
 Saa steg han op ad Vindeltrin
 Og gik i Fruerstuen ind,
 Hans Gang var luskende og spag
@@ -4931,6 +4936,7 @@ Kun Fruen hævede sit Blik,
 Og strengt det over Alle gik,
 Og Greven fik det haanligt sagt:
 «Jeg kjender dig og holder Vagt!»
+
 Den Herre sig i Læben bed
 Og satte sig til Hvile ned;
 Han længe lod, som blidt han sov,
@@ -5003,7 +5009,7 @@ Lod Tiden ruge Æget ud. -
 I Grevens Skov paa denne Dag
 Sprang Vildtet om med Velbehag;
 Skjøndt Hans var Jæger nok saa gram,
-Saa gjaldt idag dog Jagten ham;
+Saa gjaldt idag dog Jagten <w>ham;</w>
 Sligt mærked selv den mindste Fugl,
 Og Alt forlod sit trygge Skjul; -
 Tilsidst gik Mikkel frem i Mag,
@@ -5058,6 +5064,7 @@ Der greb han atter Krudt og Bly
 Og laded barsk sin Flint paany,
 Saa gik han frem med trodsigt Fjed,
 Og trøstigt fulgte Inger med. -
+
 I Slottets Fag, bag røden Muur
 Stak Grevens Hoved frem paa Luur: -
 Der var en Dands af muntre Myg
@@ -5196,11 +5203,9 @@ Og bød ham Tusinde Godnat!
 <poem id="boedtcher1870a32">
 <head>
    <title>De Forelskede</title>
-   <toctitle>De Forelskede</toctitle>
-   <indextitle>De Forelskede</indextitle>
    <firstline>I Sommeraftnens milde</firstline>
    <source pages="210-214"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 I Sommeraftnens milde
@@ -5334,11 +5339,9 @@ Og - jeg blev lige klog!
 <poem id="boedtcher1870a33">
 <head>
    <title>Et Suk fra Skoven</title>
-   <toctitle>Et Suk fra Skoven</toctitle>
-   <indextitle>Et Suk fra Skoven</indextitle>
    <firstline>Forlængst er visnet mit lyse Hang</firstline>
    <source pages="215-216"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Forlængst er visnet mit lyse Hang,
@@ -5357,7 +5360,7 @@ Og skriger, at nu har Fornuften talt,
 Og Øxen ligger ved Roden alt. -
 
 Ak! Mennesket lever - det husker jeg godt -
-Dog «ikke af Mad og Drikke blot,»
+Dog «ikke af Mad og Drikke blot»
 Det bringer mig til Trøst, thi ydmyg jeg troer,
 At ogsaa <w>jeg</w> er et lille «Guds Ord,»
 Som aandigt i Menneskets Fryd har Deel -
@@ -5387,11 +5390,9 @@ Det letter mit Sind! - nu fløj min Ravn.
 <poem id="boedtcher1870a34">
 <head>
    <title>Eros</title>
-   <toctitle>Eros</toctitle>
-   <indextitle>Eros</indextitle>
    <firstline>Midt i Kampens Lyn og Torden</firstline>
    <source pages="217-218"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Midt i Kampens Lyn og Torden,
@@ -5439,11 +5440,9 @@ Alle Jordens fæle Tidsler!
 <poem id="boedtcher1870a35">
 <head>
    <title>Fiskeren</title>
-   <toctitle>Fiskeren</toctitle>
-   <indextitle>Fiskeren</indextitle>
    <firstline>En Fisker sad saa stille</firstline>
    <source pages="219-221"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 En Fisker sad saa stille
@@ -5514,11 +5513,9 @@ Og Alt var som en sælsom Drøm. -
 <poem id="boedtcher1870a36">
 <head>
    <title>Sølvbryllupssang</title>
-   <toctitle>Sølvbryllupssang</toctitle>
-   <indextitle>Sølvbryllupssang</indextitle>
    <firstline>Landlige Ynde! køligstille Skygger!</firstline>
    <source pages="222-223"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Landlige Ynde! køligstille Skygger!
@@ -5551,11 +5548,9 @@ Maatte han Krandsen ømt i Tidens Fylde
 <poem id="boedtcher1870a37">
 <head>
    <title>Annine</title>
-   <toctitle>Annine</toctitle>
-   <indextitle>Annine</indextitle>
    <firstline>Nu hæver sig en Aftenvind</firstline>
    <source pages="224-225"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 «Nu hæver sig en Aftenvind,
@@ -5599,11 +5594,9 @@ Og vent paa din Annine!
 <poem id="boedtcher1870a38">
 <head>
    <title>Lorenzo</title>
-   <toctitle>Lorenzo</toctitle>
-   <indextitle>Lorenzo</indextitle>
    <firstline>Fra de skjønne velske Dage</firstline>
    <source pages="226-228"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>rom</keywords>
 </head>
 <body>
@@ -5684,11 +5677,9 @@ Og, Lorenzo, al din Pragt!
 <poem id="boedtcher1870a39">
 <head>
    <title>En Festskaal for Rom 1868</title>
-   <toctitle>En Festskaal for Rom 1868</toctitle>
-   <indextitle>En Festskaal for Rom 1868</indextitle>
    <firstline>Nys svulmed kjækt den gamle Tibers Strømme</firstline>
    <source pages="229-230"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>rom</keywords>
 </head>
 <body>
@@ -5727,11 +5718,9 @@ Og evigt endt din Qval!
 <poem id="boedtcher1870a40">
 <head>
    <title>Himlen aaben</title>
-   <toctitle>Himlen aaben</toctitle>
-   <indextitle>Himlen aaben</indextitle>
    <firstline>Nu endelig fra Himlens Pol</firstline>
    <source pages="231"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nu endelig fra Himlens Pol
@@ -5759,8 +5748,6 @@ Med Fingeren paa Munden!
 <poem id="boedtcher1870a41">
 <head>
    <title>Skjulte Kræfter</title>
-   <toctitle>Skjulte Kræfter</toctitle>
-   <indextitle>Skjulte Kræfter</indextitle>
    <firstline>Ej nogen Tanke, klædt i Ord</firstline>
    <source pages="232"/>
    <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5781,8 +5768,6 @@ For Dybets Aand paa Mørkets Side.
 <poem id="boedtcher1870a42">
 <head>
    <title>Ved et Tab</title>
-   <toctitle>Ved et Tab</toctitle>
-   <indextitle>Ved et Tab</indextitle>
    <firstline>Hvad her vi elske, ejes kun paa Borg</firstline>
    <source pages="233"/>
    <!--
@@ -5808,11 +5793,9 @@ Og derfor skal du - elske her paa Jorden.
 <poem id="boedtcher1870a43">
 <head>
    <title>Et Varsel</title>
-   <toctitle>Et Varsel</toctitle>
-   <indextitle>Et Varsel</indextitle>
    <firstline>Rød sank til Hvile Dagens Stjerne</firstline>
    <source pages="234"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Rød sank til Hvile Dagens Stjerne
@@ -5883,11 +5866,9 @@ Som dog fik ret.
 <poem id="boedtcher1870a44">
 <head>
    <title>Mod Slutningen</title>
-   <toctitle>Mod Slutningen</toctitle>
-   <indextitle>Mod Slutningen</indextitle>
    <firstline>Tak Gud! for hver en Glæde</firstline>
    <source pages="237-238"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Tak Gud! for hver en Glæde,
