@@ -2965,7 +2965,7 @@ Hvormed vi hilse paa den søde Juul!
    <subtitle>(August)</subtitle>
    <firstline>Som onde Dunster svæve over Graven</firstline>
    <source pages="102-104"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>rom</keywords>
 </head>
 <body>
@@ -3009,7 +3009,6 @@ I Spidsen for de høje Musers Chor,
 Og Alle sig om Guden flokker;
 Selv Jupiter bevæger sine Lokker
 Forventningsfuld: -
-
 Da griber han i Lyrens Guld
 Og synger smeltende en Klage
 Om gamle, svunde, store Dage. -
@@ -3062,15 +3061,13 @@ Mens Aftensolens Lue kysser Fjeldet!
 <poem id="boedtcher2018101023" variant="boedtcher1870a17">
 <head>
    <title>Morgen i Nemi</title>
-   <toctitle>Morgen i Nemi</toctitle>
-   <indextitle>Morgen i Nemi</indextitle>
    <firstline>Lyt, Albert! det er sikkert Dag</firstline>
    <source pages="105-108"/>
    <notes>
        <note>Nemi er en middelalderby ved en kratersø i Albanerbjergene 25 km sydøst for Rom. Albert henviser til maleren <a person="kuchler">Albert Küchler (1803-1886)</a>, der ligesom Bødtcher tilhørte den danske kunstnergruppe omkring <a person="thorvaldsen">Thorvaldsen</a> i Rom.</note>
       <!-- <note>Rettelse af Jan Zahle.</note>-->
    </notes>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>rom</keywords>
 </head>
 <body>
@@ -3103,8 +3100,10 @@ I stille Ro og Velbehag
 Den speiler sig med omvendt Taarn og Tag
 Og vover ej et Aandedrag fra Landet;
 Thi see! det mindste Suk, som stiger,
-Fordunkler Spejlet - Synet viger. -
+Fordunkler Spejlet - Synet viger. - -
 
+Den svale Morgen vinker aarle Livet,
+Før Dagen svækker med sin dorske Hede.
 Jeg øjner Fiskeren i Krattet dybt dernede,
 Han synger alt om Elskov glad
 Og skyder Baaden ud fra Sivet
@@ -3121,7 +3120,7 @@ Mens sjeldne Fugle sang i Busk og Grene.
 Fra Jorden svandt de gamle Minder,
 Og Skibet sank til Søens dybe Grund
 Med al sin Pragt, med Guder og Gudinder!
-Men Sagnet lever fort i Bondens mund,
+Men Sagnet lever fort i Bondens Mund,
 Og fattig Fisker kaster her sit Anker;
 Thi Karpen søger i den fede Grund
 Sin Næring nu iblandt de gyldne Planker,
@@ -3176,11 +3175,12 @@ Hen mod Evighedens Land!
 <poem id="boedtcher2018101024" variant="boedtcher1870a18">
 <head>
    <title>Sang den 28de Januar 1833 i Rom</title>
-   <toctitle>Sang den 28de Januar 1833 i Rom</toctitle>
-   <indextitle>Sang den 28de Januar 1833 i Rom</indextitle>
    <firstline>Nu dækker Vintersneen hvid</firstline>
+   <dater>
+       <event>1833-01-28</event>
+   </dates>
    <source pages="109-110"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>rom,frederik6</keywords>
 </head>
 <body>
@@ -3229,14 +3229,9 @@ Gud signe vor elskede Konge!
 <poem id="boedtcher2018101025" variant="boedtcher1870a19">
 <head>
    <title>Gjenkomst til Nemi</title>
-   <toctitle>Gjenkomst til Nemi</toctitle>
-   <indextitle>Gjenkomst til Nemi</indextitle>
    <firstline>Med Længsel gik jeg Dig imøde</firstline>
    <source pages="111-114"/>
-   <notes>
-      <note>Rettet af Jan Zahle og Sven Sørensen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>rom</keywords>
 </head>
 <body>
@@ -3256,7 +3251,6 @@ Et Spring engang - og det gaaer galt! -
 Hvor er Maria! er hun inde? -
 Ak, ti! jeg seer det Hele alt!
 Der staaer den Lille jo og græder;
-
 Den arme Smaa
 Har alt sin Sørgekjole paa
 Af Moders gamle brune Klæder!
@@ -3282,7 +3276,6 @@ Slutted Du dit Blomster tæt -
 Gaaden blev - en yndig Pige!
 Skjul ej skamfuld Øjets Glands,
 Aabn mig sine smukke Hænder!
-
 See Teresa! Paven sender
 Dig fra Rom en Rosenkrands!
 Hulde Smil! Hun seer fornøjet
@@ -3361,7 +3354,7 @@ Snart saaes Nemi-Sø fremstige.
 Diana smilte til sin Daad:
 Ja, end det glæder hende saare
 I Maaneglands, til Elskovs Skræk,
-At speil sine kolde Træk
+At speile sine kolde Træk
 I denne store Elskovstaare!
 </body>
 </poem>
@@ -3375,10 +3368,10 @@ I denne store Elskovstaare!
    <firstline>Du Bølge fra den danske Kyst</firstline>
    <source pages="115-116"/>
    <notes>
-      <note>Sven Sørensen skriver »'Danmarks Vei til Magt og Ære' er en allusion til Ewalds <xref poem="ewlad1999022205"/>. 'Kunstneren' er Thorvaldsen, hvis værker fregatten Bellona bragte til Danmark.«</note>
+      <note>,,Danmarks Vei til Magt og Ære'' er en allusion til Ewalds <xref poem="ewlad1999022205"/>. ,,Kunstneren'' er Thorvaldsen, hvis værker fregatten Bellona bragte til Danmark«''</note>
    </notes>
-   <keywords>frederik6</keywords>
-   <quality>korrektur1,kilde,side</quality>
+   <keywords>frederik6,thorvaldsen</keywords>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Du Bølge fra den danske Kyst,
@@ -3386,7 +3379,7 @@ Med Jubel hilse vi Dig atter!
 Paany sig vugger ved dit Bryst
 Din unge krigeriske Datter;
 Din mørke Pragt os hellig er
-Som Danmarks Vei til Magt og Ære,
+Som Danmarks Vei til Magt og Ære<note>,
 Og nu vort Hjerte dobbelt kjær
 Som Vejen hjem til vore Kjære.
 
@@ -3422,15 +3415,11 @@ For Fredrik og hans gamle Rige!
 <poem id="boedtcher2018101027" variant="boedtcher2002112405">
 <head>
    <title>Fiskeren i Nemi</title>
-   <toctitle>Fiskeren i Nemi</toctitle>
-   <indextitle>Fiskeren i Nemi</indextitle>
    <firstline>Ave Maria lød fra Klostrets Hal</firstline>
    <source pages="117-120"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Ave Maria lød fra Klostrets Hal, -
-Det var, som svaltes Luftens Strømme
 Ved Aftenklangen af det svævende Metal,
 Den brune Dæmring sænked som i Drømme
 Sit Slør om Bjerget og den stille By;
