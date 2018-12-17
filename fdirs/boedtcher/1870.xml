@@ -1836,6 +1836,9 @@ Er intet Blad saa tungt som mit!
    <firstline>Vexlende med Sang og Viin</firstline>
    <source pages="74-76"/>
    <quality>korrektur1,korrektur2,kilde,side</quality>
+   <notes>
+       <note>8. marts fejrede Thorvaldsen sin romerske fødselsdag.</note>
+   </notes>
    <keywords>rom</keywords>
 </head>
 <body>
@@ -3507,10 +3510,16 @@ Drev Baaden vildsom hen ad Søen med den Døde.
    <source pages="140-141"/>
    <pictures>
        <picture ref="thorvaldsen/1803-jason"/>
+       <picture ref="thorvaldsen/1815-dagen"/>
+       <picture ref="thorvaldsen/1815-natten"/>
    </pictures>
    <dates>
       <event>1828-03-08</event>
    </dates>
+   <notes>
+       <note>8. marts fejrede Thorvaldsen sin romerske fødselsdag.</note>
+   </notes>
+   <keywords>thorvaldsen</keywords>
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4147,11 +4156,11 @@ Og trykked sine Læber til hans Mund!
        <line>†</line>
        <line>(15de November 1863)</line>
    </subtitle>
+   <toctitle>Frederik den Syvende</toctitle>
+   <firstline>Den blege Død greb med et Spring sit Bytte</firstline>
    <dates>
        <event>1863-11-15</event>
    </dates>
-   <toctitle>Frederik den Syvende</toctitle>
-   <firstline>Den blege Død greb med et Spring sit Bytte</firstline>
    <source pages="166-167"/>
    <keywords>frederik7</keywords>
    <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4179,7 +4188,7 @@ Som fjendtlig vilde trampe paa dit Hjerte! -
 Men i dit Hjertes Dyb stod skrevet <w>Slesvig</w>,
 Hiint minderige, dyrebare Navn,
 Og derfor fylker sig det danske Folk,
-Det frie danske Folk, og svinger Sværdet
+Det <w>frie</w> danske Folk, og svinger Sværdet
 Og være vil din Tankes djerve Tolk
 Og gjennemføre Tanken uforfærdet!
 </body>

@@ -1879,6 +1879,9 @@ Er intet Blad saa tungt som mit!
    <firstline>Vexlende med Sang og Viin</firstline>
    <source pages="67-68"/>
    <quality>korrektur1,korrektur2,kilde,side</quality>
+   <notes>
+       <note>8. marts fejrede Thorvaldsen sin romerske fødselsdag.</note>
+   </notes>
    <keywords>rom</keywords>
 </head>
 <body>
@@ -3417,9 +3420,11 @@ For Fredrik og hans gamle Rige!
    <title>Fiskeren i Nemi</title>
    <firstline>Ave Maria lød fra Klostrets Hal</firstline>
    <source pages="117-120"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+Ave Maria lød fra Klostrets Hal, -
+Det var, som svaltes Luftens Strømme
 Ved Aftenklangen af det svævende Metal,
 Den brune Dæmring sænked som i Drømme
 Sit Slør om Bjerget og den stille By;
@@ -3540,14 +3545,22 @@ Drev Baaden vildsom hen ad Søen med den Døde.
 <poem id="boedtcher2018101028" variant="boedtcher1870a21">
 <head>
    <title>Til Thorvaldsen</title>
-   <toctitle>Til Thorvaldsen</toctitle>
-   <indextitle>Til Thorvaldsen</indextitle>
+   <subtitle>(Den 8de Marts 1828)</subtitle>
    <firstline>Svæv, Evan! ned og nærm Dig til vort Sæde</firstline>
    <source pages="121-122"/>
    <pictures>
        <picture ref="thorvaldsen/1803-jason"/>
+       <picture ref="thorvaldsen/1815-dagen"/>
+       <picture ref="thorvaldsen/1815-natten"/>
    </pictures>
-   <quality>korrektur1,kilde,side</quality>
+   <dates>
+      <event>1828-03-08</event>
+   </dates>
+   <notes>
+       <note>8. marts fejrede Thorvaldsen sin romerske fødselsdag.</note>
+   </notes>
+   <keywords>thorvaldsen</keywords>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Svæv, Evan! ned og nærm Dig til vort Sæde
@@ -3586,12 +3599,16 @@ Med flammende Begeistring tømmes ud!
 <head>
    <title>Piazza Barberina</title>
    <subtitle><i>(Rom 1830)</i></subtitle>
-   <toctitle>Piazza Barberina</toctitle>
-   <indextitle>Piazza Barberina</indextitle>
    <firstline>Den lumre Nat har skjænket sine Gaver</firstline>
+   <pictures>
+       <picture ref="marstrand/piazza-barberini-1840erne" />
+       <picture src="boedtcher1870a22-p1.jpg" museum="" invnr="KMS196">
+           Ditlev Martens: <i>Pave Leo Xll aflægger besøg i Thorvaldsens værksteder ved Piazza Barberini, 18. oktober 1826</i>, 1828-29, olie på lærred, 100x138 cm. Statens Museum for Kunst.
+       </picture>
+   </pictures>
    <source pages="123-127"/>
    <quality>korrektur1,kilde,side</quality>
-   <keywords>rom</keywords>
+   <keywords>thorvaldsen,rom</keywords>
 </head>
 <body>
 Den lumre Nat har skjænket sine Gaver,
@@ -3642,7 +3659,6 @@ Hvis nøgne Væg det grove Lærred dækker,
 Og som endnu kan vise Sporet,
 Hvor Heste forhen vrinsked og blev foret -
 Har fængslet til sin Plet Europas Øje;
-
 Og hver, som Vej til Rom kan finde,
 Hver Aandrig selv af Kongerang,
 Han styrer did sin Pilgrimsgang,
@@ -3745,8 +3761,6 @@ Og længes efter Danmarks Bøgehang.
 <poem id="boedtcher2018101030" variant="boedtcher1870a23">
 <head>
    <title>I Apenninerne</title>
-   <toctitle>I Apenninerne</toctitle>
-   <indextitle>I Apenninerne</indextitle>
    <firstline>I Maanskin hæve sig de gustne Klipper</firstline>
    <source pages="128-129"/>
    <quality>korrektur1,kilde,side</quality>
@@ -3811,8 +3825,6 @@ Jeg flyer din Honning, som forgifter Sorgen!
 <poem id="boedtcher2018101031" variant="boedtcher2002112410">
 <head>
    <title>Athenodorus</title>
-   <toctitle>Athenodorus</toctitle>
-   <indextitle>Athenodorus</indextitle>
    <firstline>I Rom gik atter Ry af fjerne Sejre</firstline>
    <source pages="130-141"/>
    <quality>korrektur1,kilde,side</quality>
@@ -4173,18 +4185,19 @@ Og trykked sine Læber til hans Mund!
 </body>
 </poem>
 
-<!-- Nedenstående 11 digte tilføjet i 2. udgave, 1867 -->
-
 <poem id="boedtcher2018101032" variant="boedtcher2002112409">
 <head>
-   <title>Frederik den Syvende</title>
+   <title>Frederik den Syvende †</title>
    <subtitle>(15de November 1863)</subtitle>
    <toctitle>Frederik den Syvende</toctitle>
    <indextitle>Frederik den Syvende</indextitle>
    <firstline>Den blege Død greb med et Spring sit Bytte</firstline>
+   <dates>
+       <event>1863-11-15</event>
+   </dates>
    <source pages="142"/>
    <keywords>frederik7</keywords>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Den blege Død greb med et Spring sit Bytte
@@ -4206,10 +4219,10 @@ Paa Oldtidsviis! Det blotte Syn af den
 Var nok for Dannemænd i Kampens Stund
 Til dobbel Stordaad; tifold vee den Fod,
 Som fjendtlig vilde trampe paa dit Hjerte! -
-Men i dit Hjertes Dyb stod skrevet Slesvig,
+Men i dit Hjertes Dyb stod skrevet <i>Slesvig</i>,
 Hiint minderige, dyrebare Navn,
 Og derfor fylker sig det danske Folk,
-Det frie danske Folk, og svinger Sværdet
+Det <i>frie</i> danske Folk, og svinger Sværdet
 Og være vil din Tankes djerve Tolk
 Og gjennemføre Tanken uforfærdet!
 </body>
@@ -4222,7 +4235,7 @@ Og gjennemføre Tanken uforfærdet!
    <indextitle>I Foraaret</indextitle>
    <firstline>Nu sænker sig Vaarens svangrende Luft</firstline>
    <source pages="143"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nu sænker sig Vaarens svangrende Luft,
