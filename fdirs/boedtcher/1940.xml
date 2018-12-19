@@ -4570,8 +4570,8 @@ Courbetteer! - og nu pareer galant!
    </dates>
    <firstline>Naar Solen gaaer sin Aftengang</firstline>
    <source pages="154-155"/>
-   <keywords>hauch</keywords>
-   <quality>korrektur1,kilde,side</quality>
+   <keywords>hauch,brahe</keywords>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Naar Solen gaaer sin Aftengang
@@ -4633,11 +4633,9 @@ Skal evigt blive nævnt med hans
 <poem id="boedtcher2018101040" variant="boedtcher1870a29">
 <head>
    <title>En Rose</title>
-   <toctitle>En Rose</toctitle>
-   <indextitle>En Rose</indextitle>
    <firstline>Rose, min Glæde og Lyst, Foraarets yndige Datter!</firstline>
    <source pages="156-157"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Rose, min Glæde og Lyst, Foraarets yndige Datter!
@@ -4684,11 +4682,9 @@ Glæd Dig, min Rose, min Blomst, det raader <i>Kjærlighed</i> for!
 <poem id="boedtcher2018101041" variant="boedtcher1870a30">
 <head>
    <title>Guldbryllupsdigt</title>
-   <toctitle>Guldbryllupsdigt</toctitle>
-   <indextitle>Guldbryllupsdigt</indextitle>
    <firstline>De steg i Baaden Haand i Haand</firstline>
    <source pages="158-160"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 De steg i Baaden Haand i Haand
@@ -4775,12 +4771,13 @@ Som Rejsens første Morgen!
 <head>
    <title>Til Christian Winther</title>
    <subtitle><i>(Den 29de Juli 1866)</i></subtitle>
-   <toctitle>Til Chr. Winther</toctitle>
-   <indextitle>Til Chr. Winther</indextitle>
+   <dates>
+       <event>1866-07-29</event>
+   </dates>
    <firstline>Omkring din Harpe er idag en Trængsel</firstline>
    <source pages="161"/>
    <keywords>winter</keywords>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <!-- Rettelser af Asger Schnack, 22-8-2000. -->
 </head>
 <body>
@@ -4813,13 +4810,9 @@ Og aldrig, aldrig gaae til Hvile.
 </body>
 </poem>
 
-<!-- Nedenstående 14 digte tilføjet i 3. udgave, 1870 -->
-
 <poem id="boedtcher2018101043" variant="boedtcher2002112408">
 <head>
    <title>Den gamle Greve</title>
-   <toctitle>Den gamle Greve</toctitle>
-   <indextitle>Den gamle Greve</indextitle>
    <firstline>Paa Skrænten bag de grønne Træer</firstline>
    <source pages="162-175"/>
    <quality>korrektur1,kilde,side</quality>
