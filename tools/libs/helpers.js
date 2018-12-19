@@ -140,6 +140,9 @@ const htmlToXml = (
         .replace(/\n *(----*) *\n/g, (match, p1) => {
           return `\n<hr width="${p1.length}"/>\n`;
         })
+        .replace(/\n *(====*) *\n/g, (match, p1) => {
+          return `\n<hr width="${p1.length}" class="double"/>\n`;
+        })
         .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
           // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
           return `<nonum>${p1}</nonum>`;
@@ -263,6 +266,7 @@ const htmlToXml = (
     }
     const hasNonum =
       l.indexOf('<nonum>') > -1 ||
+      l.indexOf('<asterism') > -1 ||
       l.indexOf('<wrap>') > -1 ||
       l.indexOf('<num>') > -1 ||
       l.match(/^\s*$/) ||

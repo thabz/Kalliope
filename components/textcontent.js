@@ -136,6 +136,8 @@ export default class TextContent extends React.Component<TextContentPropsType> {
         return replaceHyphens(node.textContent);
       case '#comment':
         return null;
+      case 'pb':
+        return null;
       case 'i':
         return <i key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</i>;
       case 'b':
@@ -158,6 +160,16 @@ export default class TextContent extends React.Component<TextContentPropsType> {
       case 'nonum':
       case 'resetnum':
         return this.handle_nodes(node.childNodes);
+      case 'asterism': {
+        const glyph = '\u2042';
+        return (
+          <center
+            key={this.keySeq++}
+            style={{ display: 'block', width: '100%' }}>
+            {glyph}
+          </center>
+        );
+      }
       case 'block-center':
         return (
           <center
@@ -233,13 +245,19 @@ export default class TextContent extends React.Component<TextContentPropsType> {
       case 'metrik':
         return this.handle_metrik(node.textContent);
       case 'hr':
+        const double = node.getAttribute('class') || 'solid';
         const width = Math.min(node.getAttribute('width') * 10, 100);
+        const borderTop =
+          double === 'double' ? '3px double black' : '1px solid black';
         return (
           <hr
             key={this.keySeq++}
-            size="1"
-            color="black"
-            style={{ color: 'black', width: `${width}%` }}
+            style={{
+              border: 0,
+              borderTop,
+              color: 'black',
+              width: `${width}%`,
+            }}
           />
         );
       case 'column':
