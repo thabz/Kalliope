@@ -3602,7 +3602,7 @@ Med flammende Begeistring tømmes ud!
    <firstline>Den lumre Nat har skjænket sine Gaver</firstline>
    <pictures>
        <picture ref="marstrand/piazza-barberini-1840erne" />
-       <picture src="boedtcher1870a22-p1.jpg" museum="" invnr="KMS196">
+       <picture src="boedtcher1870a22-p1.jpg" museum="smk" invnr="KMS196">
            Ditlev Martens: <i>Pave Leo Xll aflægger besøg i Thorvaldsens værksteder ved Piazza Barberini, 18. oktober 1826</i>, 1828-29, olie på lærred, 100x138 cm. Statens Museum for Kunst.
        </picture>
    </pictures>
@@ -6068,7 +6068,7 @@ At venligt I modtoge min Bouket.
    <title>Den kløgtige Johan</title>
    <firstline>Giv hurtig hid, Johan! min Sminke og min Kam</firstline>
    <source pages="210"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Giv hurtig hid, Johan! min Sminke og min Kam;
@@ -6093,7 +6093,7 @@ Som hele Resten være lille bitte. -
    <title>Paa en Vens Dør</title>
    <firstline>Ak atter fulgte sig igjen</firstline>
    <source pages="211"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ak atter fulgte sig igjen
@@ -6123,7 +6123,7 @@ At jeg er altid hjemme.
    <title>Den hellige Kilde</title>
    <firstline>Der risler trindt paa Jorden om en Kilde</firstline>
    <source pages="212-214"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Der risler trindt paa Jorden om en Kilde;
@@ -6206,7 +6206,7 @@ Da styrkner Kildevældet og forgaaer! -
    <notes>
       <note type="credits">Bidrag fra Asger Schnack</note>
    </notes>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 O Lina! hulde Læge! tag mig i din Kuur,
@@ -6223,11 +6223,9 @@ Og min Mixtur har nydt i Mag og Ro,
 <poem id="boedtcher2002122506">
 <head>
    <title>Lucas og Lisette</title>
-   <toctitle>Lucas og Lisette</toctitle>
-   <indextitle>Lucas og Lisette</indextitle>
    <firstline>Hvi kysser Du Joli saa ømt med Rosenmund</firstline>
    <source pages="216"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <nonum><center><i>Lucas.</i></center></nonum>
@@ -6250,10 +6248,12 @@ Faaer Du først Kyssene, Du tænker snart paa mere.
    <title>Prolog</title>
    <subtitle>(fremsagt i et dramatisk Selskab d. 21. Sept. 1817)</subtitle>
    <toctitle>Prolog, 21. Septbr. 1817</toctitle>
-   <indextitle>Prolog</indextitle>
    <firstline>Snart rasler ved vor Fod det gule Blad</firstline>
+   <dates>
+       <event>1817-09-21</event>
+   </dates>
    <source pages="217"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Snart rasler ved vor Fod det gule Blad,
@@ -6288,11 +6288,9 @@ Og ømme Taarer af det klare Øie
 <poem id="boedtcher2002122508">
 <head>
    <title>Strengen</title>
-   <toctitle>Strengen</toctitle>
-   <indextitle>Strengen</indextitle>
    <firstline>Paa Digterharpen lue mange Strenge</firstline>
    <source pages="218"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Paa Digterharpen lue mange Strenge,
@@ -6328,11 +6326,14 @@ Min Linas Navn fra Harpens bedste Streng.
 <head>
    <title>Under Kritikeren H.C.G. Profts Portræt</title>
    <subtitle>(tegnet af C. Winsløw 1818)</subtitle>
-   <toctitle>Under Kritikeren Profts Portræt</toctitle>
-   <indextitle>Under Kritikeren H.C.G. Profts Portræt</indextitle>
    <firstline>Rask flyder Lapseblodet som en Elv</firstline>
+   <pictures>
+       <picture src="boedtcher2002122509-p1.jpg" museum="kb" objid="472085">
+           Carl Winsløv: <i>Henrik Christian Gottlieb Proft</i>, H.P. Hansen (xylograf), ukendt år. Det Kongelige Bibliotek. 
+       </picture>
+   </pictures>
    <source pages="219"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Rask flyder Lapseblodet som en Elv,
@@ -6349,7 +6350,7 @@ Men glemmer kun sig selv.
    <indextitle>Epigram</indextitle>
    <firstline>Iil ej for rask med en tjenstfærdig Haand</firstline>
    <source pages="220"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Iil ej for rask med en tjenstfærdig Haand
@@ -6369,7 +6370,7 @@ Der ene binder ham til Livets Møje.
    <firstline>Aabnet blev det gyldne Buur</firstline>
    <source pages="221-222"/>
    <keywords>ingemann</keywords>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Aabnet blev det gyldne Buur,
@@ -6414,10 +6415,9 @@ Og ved Druesaften!
 <head>
    <title>Opmuntring</title>
    <toctitle>Opmuntring (Et Hav vi alle pløie)</toctitle>
-   <indextitle>Opmuntring</indextitle>
    <firstline>Et Hav vi alle pløje</firstline>
    <source pages="223-224"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Et Hav vi alle pløje
@@ -6462,11 +6462,9 @@ Forklarte Favn mod Favn!
 <head>
    <title>Hun gik til Søndagsdandsen</title>
    <subtitle>(Efter det Tydske)</subtitle>
-   <toctitle>Hun gik til Søndagsdandsen</toctitle>
-   <indextitle>Hun gik til Søndagsdandsen</indextitle>
    <firstline>Hun gik til Søndagsdandsen</firstline>
    <source pages="225-226"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hun gik til Søndagsdandsen,
@@ -6509,37 +6507,35 @@ At Kjærlighed gjør dum!
 <poem id="boedtcher2002122514">
 <head>
    <title>Balvise</title>
-   <toctitle>Balvise</toctitle>
-   <indextitle>Balvise</indextitle>
    <firstline>Ved Dands vort Blod blev varmt, vi synes end at høre</firstline>
    <source pages="227"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ved Dands vort Blod blev varmt, vi synes end at høre
-   De muntre Toners Ild!
+      De muntre Toners Ild!
 Nu vil vi Glassets Klang velvillig laane Øre
-   Og secundere til.
+      Og secundere til.
 
 Ret glad man være kan, om Kjolen ei er sværtet,
-   Om man ei nævnes lærd:
+      Om man ei nævnes lærd:
 Her krones Snillet vel, men hisset krones Hjertet,
-   Og det er mere værd!
+      Og det er mere værd!
 
 Vel findes her paa vor forkeerte Jord, at Stjernen
-   Paa Hjertet fæstet er:
+      Paa Hjertet fæstet er:
 Men skete den sin Ret, man fæsted den paa Hjernen,
-   Dens Himmel findes der.
+     Dens Himmel findes der.
 
 Held den, som naar han seer den bedre Morgenrøde
-   Afløse Livets Spas,
+     Afløse Livets Spas,
 Kan med et skyldfrit Sind sit fulde Bæger støde
-   Mod Dødens Timeglas!
+     Mod Dødens Timeglas!
 
 Den Braves Skaal, som her sig glad har rosenkrandset
-   Og som var Dydens Ven!
+     Og som var Dydens Ven!
 Skaal, Venner, for de Been, som har uskyldig dandset
-   Og dem, der dandse end!
+     Og dem, der dandse end!
 </body>
 </poem>
 
