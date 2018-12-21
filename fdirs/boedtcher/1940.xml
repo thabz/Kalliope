@@ -9419,7 +9419,7 @@ Gjennem Nattens mørke Bryn!
    <indextitle>En Tyv i Rom</indextitle>
    <firstline>Endt var Osteriets Gilde</firstline>
    <source pages="331-336"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Endt var Osteriets Gilde, -
@@ -9591,10 +9591,12 @@ Men jeg var dog glad ved Byttet.
    <title>Til Frederikke Leth</title>
    <subtitle>d. 13de April 1874</subtitle>
    <toctitle>Til Frederikke Leth, April 1874</toctitle>
-   <indextitle>Til Frederikke Leth</indextitle>
    <firstline>Vaarens svulmende Natur</firstline>
+   <dates>
+      <event>1874-04-13</event>
+   </dates>
    <source pages="337"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Vaarens svulmende Natur
@@ -9620,11 +9622,9 @@ Ham, Dit Hjerte ej kan glemme!
 <poem id="boedtcher2003010342">
 <head>
    <title>Du kan lignes ved en Have</title>
-   <toctitle>Du kan lignes ved en Have</toctitle>
-   <indextitle>Du kan lignes ved en Have</indextitle>
    <firstline>Du kan lignes ved en Have</firstline>
    <source pages="338"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Du kan lignes ved en Have
@@ -9652,11 +9652,9 @@ Og som har min Kjærlighed!
 <poem id="boedtcher2003010343">
 <head>
    <title>Med en Juleengel</title>
-   <toctitle>Med en Juleengel</toctitle>
-   <indextitle>Med en Juleengel</indextitle>
    <firstline>Jeg kommer fra en barnlig Englevrimmel</firstline>
    <source pages="339-340"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg kommer fra en barnlig Englevrimmel
@@ -9676,20 +9674,20 @@ Din Haand vil gjøre Gaven dobbelt kjær -
 Selv vil jeg folde sammen mine Vinger
 Og dvæle denne Juleaften her.
 
-   <nonum><i>Med Naalepuden.</i></nonum>
+<nonum><center><i>Med Naalepuden.</i></center></nonum>
 
-Gid alle Livets bittre Skaale
-Maa fra dit Hjerte holdes ude,
-Forvandle sig dl Knappenaale
-Og ikkun stikke denne Pude!
+    Gid alle Livets bittre Skaale
+    Maa fra dit Hjerte holdes ude,
+    Forvandle sig dl Knappenaale
+    Og ikkun stikke denne Pude!
 
-   <nonum><i>Med Brillefutteralet.</i></nonum>
+<nonum><center><i>Med Brillefutteralet.</i></center></nonum>
 
-Har Konstnerhaanden træt sig malet,
-Og finder flygtig Idealet,
-Da paalæg Aanden ingen Tvang:
-Slut Brillerne i Foderalet
-Og syng en Bellmannsk Sang!
+    Har Konstnerhaanden træt sig malet,
+    Og finder flygtig Idealet,
+    Da paalæg Aanden ingen Tvang:
+    Slut Brillerne i Foderalet
+    Og syng en Bellmannsk Sang!
 </body>
 </poem>
 
@@ -9701,7 +9699,7 @@ Og syng en Bellmannsk Sang!
    <indextitle>Til Fru Emma Bødtcher, f. Rosenstand</indextitle>
    <firstline>Din Dag, Din Nat - gid Begge maatte ligne</firstline>
    <source pages="341"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Din Dag, Din Nat - gid Begge maatte ligne
@@ -9719,7 +9717,7 @@ Og Lykkelige Drømme Dine Nætter!
    <linktitle>Ved Tilbagesendelsen af en Bog</linktitle>
    <firstline>Først efter Aar fik du Din Bog tilbage</firstline>
    <source pages="342"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Først efter Aar fik du Din Bog tilbage, -
@@ -9733,11 +9731,9 @@ Mit Mesterskab i Nøleri.
 <poem id="boedtcher2003010345">
 <head>
    <title>I Skoven</title>
-   <toctitle>I Skoven</toctitle>
-   <indextitle>I Skoven</indextitle>
    <firstline>Du smykker dig til Pintsefest</firstline>
    <source pages="343"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Du smykker dig til Pintsefest
@@ -9758,7 +9754,7 @@ Da strakte jeg som bønlig Haand
 Min nøgne Gren mod Kraftens Aand,
 Og see! et Lyn mig skimte lod
 Til Trøst min dybe skjulte Rod. - -
-Og Du - det Ypperste af Alt,
+Og <i>Du</i> - det Ypperste af Alt,
 Hvad Kraften har tillive kaldt,
 Du ængstes for din Vintertid
 Fordi som Sne din Lok er hvid -
@@ -9772,11 +9768,9 @@ Og husk: <i>din dybe skjulte Rod!''</i>
 <poem id="boedtcher2003010346">
 <head>
    <title>Det er en yndig Tid</title>
-   <toctitle>Det er en yndig Tid</toctitle>
-   <indextitle>Det er en yndig Tid</indextitle>
    <firstline>Det er en yndig Tid, naar Vaaren blid sig nærmer</firstline>
    <source pages="344"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Det er en yndig Tid, naar Vaaren blid sig nærmer,
@@ -9799,8 +9793,6 @@ Til alle Hjerters Lyst!
 <poem id="boedtcher2003010347">
 <head>
    <title>Den Gamles Bøn</title>
-   <toctitle>Den Gamles Bøn</toctitle>
-   <indextitle>Den Gamles Bøn</indextitle>
    <firstline>Send, Ungdom! mig de lyse Minder</firstline>
    <source pages="345"/>
    <quality>korrektur1,kilde,side</quality>
@@ -9819,18 +9811,16 @@ Man Skygger frem i Aftenrøden.
 Da gyldne Sol! er du den Samme!
 Hvert Kys af dig et Blomsterflor, -
 Og Vemod boer
-Som før i Nattens blege Fla
+Som før i Nattens blege Flamme!
 </body>
 </poem>
 
 <poem id="boedtcher2003010348">
 <head>
    <title>Et Møde</title>
-   <toctitle>Et Møde</toctitle>
-   <indextitle>Et Møde</indextitle>
    <firstline>Du Ensomhedens Sødme</firstline>
    <source pages="346-348"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Du Ensomhedens Sødme
@@ -9923,8 +9913,6 @@ Mig endnu mangt et Aar!
 <poem id="boedtcher2003010349">
 <head>
    <title>Sangfuglen</title>
-   <toctitle>Sangfuglen</toctitle>
-   <indextitle>Sangfuglen</indextitle>
    <firstline>Jeg hviled under Bøgens Skjul</firstline>
    <source pages="349"/>
    <quality>korrektur1,kilde,side</quality>
