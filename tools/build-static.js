@@ -213,6 +213,7 @@ const build_poet_timeline_json = (poet, collected) => {
         ],
       });
     }
+    let dead_date = null;
     if (poet.period.dead.date !== '?') {
       const place = (poet.period.dead.place != null
         ? ' ' +
@@ -240,7 +241,10 @@ const build_poet_timeline_json = (poet, collected) => {
   }
   if (items.length >= 2) {
     const start_date = normalize_timeline_date(items[0].date);
-    const end_date = normalize_timeline_date(items[items.length - 1].date);
+    let end_date = normalize_timeline_date(items[items.length - 1].date);
+    if (poet.period.dead.date !== '?') {
+      end_date = normalize_timeline_date(poet.period.dead.date);
+    }
     let globalItems = collected.timeline.filter(item => {
       const d = normalize_timeline_date(item.date);
       return d > start_date && d < end_date;
