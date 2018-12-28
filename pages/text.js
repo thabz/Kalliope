@@ -105,7 +105,7 @@ class TextHeading extends React.Component<TextHeadingProps> {
         {subtitles}
         <style jsx>{`
           .text-heading :global(h2) {
-            line-height: 1.4em;
+            line-height: 1.6;
             font-size: 1.4em;
             font-weight: normal;
             margin: 0 0 15px 0;
@@ -114,7 +114,7 @@ class TextHeading extends React.Component<TextHeadingProps> {
           }
           .text-heading :global(h4) {
             font-size: 1.05em;
-            line-height: 1.05em;
+            line-height: 1.6;
             font-weight: normal;
             margin: 0 0 0px 0;
             padding: 0;

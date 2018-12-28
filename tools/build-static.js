@@ -213,6 +213,7 @@ const build_poet_timeline_json = (poet, collected) => {
         ],
       });
     }
+    let dead_date = null;
     if (poet.period.dead.date !== '?') {
       const place = (poet.period.dead.place != null
         ? ' ' +
@@ -240,7 +241,10 @@ const build_poet_timeline_json = (poet, collected) => {
   }
   if (items.length >= 2) {
     const start_date = normalize_timeline_date(items[0].date);
-    const end_date = normalize_timeline_date(items[items.length - 1].date);
+    let end_date = normalize_timeline_date(items[items.length - 1].date);
+    if (poet.period.dead.date !== '?') {
+      end_date = normalize_timeline_date(poet.period.dead.date);
+    }
     let globalItems = collected.timeline.filter(item => {
       const d = normalize_timeline_date(item.date);
       return d > start_date && d < end_date;
@@ -2202,8 +2206,20 @@ const build_mentions_json = collected => {
     };
     const refs = collected.person_or_keyword_refs.get(poetId);
     if (refs != null) {
-      data.mentions = refs.mention.map(build_html);
-      data.translations = refs.translation.map(build_html);
+      data.mentions = refs.mention
+        .filter(id => {
+          // Hvis en tekst har varianter som også henviser til denne,
+          // vil vi kun vise den ældste variant.
+          return primaryTextVariantId(id) === id;
+        })
+        .map(build_html);
+      data.translations = refs.translation
+        .filter(id => {
+          // Hvis en tekst har varianter som også henviser til denne,
+          // vil vi kun vise den ældste variant.
+          return primaryTextVariantId(id) === id;
+        })
+        .map(build_html);
     }
 
     ['primary', 'secondary'].forEach(filename => {
@@ -3018,9 +3034,9 @@ b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 collected.poets = b('build_poets_json', build_poets_json, collected);
 collected.artwork = b('build_artwork', build_artwork, collected);
 b('build_museums', build_museums, collected);
+collected.variants = b('build_variants', build_variants, collected);
 b('build_mentions_json', build_mentions_json, collected);
 collected.textrefs = b('build_textrefs', build_textrefs, collected);
-collected.variants = b('build_variants', build_variants, collected);
 build_dict_first_pass(collected);
 collected.keywords = b('build_keywords', build_keywords);
 b('build_poet_lines_json', build_poet_lines_json, collected);
