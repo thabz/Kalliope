@@ -6,14 +6,19 @@ import _ from '../pages/helpers/translations.js';
 
 type WorkNameProps = {
   work: Work,
-  cursive?: boolean,
+  cursive: boolean,
+  useTitle: 'title' | 'toctitle' | 'linktitle' | 'breadcrumbtitle',
   lang: Lang,
 };
 export default class WorkName extends React.Component<WorkNameProps> {
+  static defaultProps = {
+    cursive: false,
+    useTitle: 'title',
+  };
   render() {
-    const { work, cursive, lang } = this.props;
-    const { title, year } = work;
-    var titleTranslated = title;
+    const { work, cursive, useTitle, lang } = this.props;
+    const { year } = work;
+    var titleTranslated = work[useTitle || 'title'];
     if (work.id == 'andre') {
       titleTranslated = _('Andre digte', lang);
     }
