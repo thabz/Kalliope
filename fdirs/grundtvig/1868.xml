@@ -28,7 +28,6 @@
     <title>Forord</title>
     <source pages="i" facsimile-pages="19"/>
     <quality>korrektur1,kilde,side</quality>
-    <keywords>salme</keywords>
 </head>
 <body>
 Ved mit Jubilæum 1861 blev der efter Indbydelse af nogle af mine Venner sammenskudt et Beløb af 3000 Rigsdaler til derfor at bekoste en Udgave af mine Psalmer og aandelige Sange og nærmest til en billig anden Udgave af Sangværket til den Danske Kirke, og i det hele til fremme af den danske Psalmesangs Udbredelse og Bestandighed. Da det med Sangværkets anden Udgave af flere Grunde gik i Langdrag, voxede imidlertid Beløbet, der strax blev gjort frugtbringende, saaledes at der vil blive et Overskud ikke alene til at dække den snart færdige Udgave for Skolen af de bibelhistoriske og kirkehistoriske Sange, og dette Overskud saavelsom Indtægten af de nye Udgaver har jeg overgivet til et Udvalg med Præsterne <w>Busck</w> og <w>Fenger</w> i Spidsen til at sørge for, at der altid findes billige Udgaver af Sangværket, og at der tillige giøres alt muligt til Psalmesangens Bedste. Kun saaledes troer jeg, at Givernes Hensigt kan fuldelig naaes og den Danske Psalmesang sikkres en ved Guds Hjælp varig og frugtbar Tilværelse, som vi alle ønske den og som den til vort velsignede Modersmaals Ære visselig er værd. Jeg kalder denne Udgave uforandret, thi uagtet en deel Ord hist og her er forandrede, er dog derved hverken fremkommet andre Sange eller anden Mening.
@@ -38,17 +37,13 @@ Ved mit Jubilæum 1861 blev der efter Indbydelse af nogle af mine Venner sammens
 </body>
 </prose>
 
-<poem id="grundtvig20010107forspil">
+<poem id="grundtvig20010107forspil" variant="grundtvig2001042402">
 <head>
     <title>For-Spil</title>
     <subtitle>af Nyaars-Morgen 1824</subtitle>
     <firstline>Guds Fred! hvor I bygge</firstline>
-    <notes>
-       <note>Stærkt beskåret udgave af den tidligere udgivelse <xref poem="grundtvig2001042402"/>.</note>
-    </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="1-20"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Guds Fred! hvor I bygge
@@ -767,7 +762,6 @@ Som varsler om Ragna-Roks Gny!
     <firstline>Jeg er saa underfuld en Magt</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="21-25"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Jeg er saa underfuld en Magt,
@@ -923,7 +917,6 @@ Han selv er over Skyggen!
     <firstline>Der ligger en Stad i det Tyrkiske Land</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="25-26"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Der ligger en Stad i det Tyrkiske Land,
@@ -989,11 +982,10 @@ Til Himmerigs Porte oplades!
     <title><num>3.</num>Guds Kirke er vor Klippe-Borg</title>
     <firstline>Guds Kirke er vor Klippe-Borg</firstline>
     <notes>
-       <note>Fri Fordanskning af Luthers <xref type="translation" poem="luther2000070904"/></note>
+       <note>* Fri Fordanskning af Luthers <xref type="translation" poem="luther2000070904"/></note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="27-28"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Guds Kirke er vor Klippe-Borg,
@@ -1057,7 +1049,6 @@ Det i vor Æt nedarves!
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="28-30"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Som den gyldne Soel udbryder
@@ -1139,11 +1130,10 @@ Giør en liflig Aften-Røde!
     <title><num>5.</num>Velmødt, I Christne fromme</title>
     <firstline>Velmødt, I Christne fromme!</firstline>
     <notes>
-       <note>Omarbeidelse af den gammeldanske Reformations-Psalme: Lover Gud I Christne fromme</note>
+       <note>* Omarbeidelse af den gammeldanske Reformations-Psalme: Lover Gud I Christne fromme</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="30-32"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Velmødt, I Christne fromme!
@@ -1234,11 +1224,10 @@ Og Saligheden naae!
     <title><num>6.</num>Den Christne Kirkes skiønne Navn</title>
     <firstline>Den Christne Kirkes skiønne Navn</firstline>
     <notes>
-       <note>Omarbeidelse af Hans Thomesens Reformations-Psalme: Den christelige Kirkes skiønne Navn</note>
+       <note>* Omarbeidelse af Hans Thomesens Reformations-Psalme: Den christelige Kirkes skiønne Navn</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="33-35"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Den Christne Kirkes skiønne Navn
@@ -1321,7 +1310,6 @@ Din Kirke vil forklare!
     <firstline>Her er Guds Huus og Himlens Dør</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="35-37"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Her er Guds Huus og Himlens Dør,<note>Cf. <xref bibel="bibel1mose28,17"/>.</note>
@@ -1404,7 +1392,6 @@ For Vuggerne har sjunget!
     <firstline>I Vittenberg, i Sachsen-Land</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="37-39"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I Vittenberg, i Sachsen-Land
@@ -1504,11 +1491,10 @@ Det fattes her en Hytte!
     <title><num>9.</num>Ved Babylons Floder</title>
     <firstline>Ved Babylons Floder</firstline>
     <notes>
-       <note>Efter den <a poem="bibelsalme137">137. Davids-Psalme</a></note>
+       <note>* Efter den <a poem="bibelsalme137">137de Davids-Psalme</a></note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="39-41"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Ved Babylons Floder
@@ -1582,11 +1568,10 @@ Til Lykke med den!
     <title><num>10.</num>Hvor er dog din Naade</title>
     <firstline>Hvor er dog din Naade!</firstline>
     <notes>
-       <note>Efter den <a poem="bibelsalme74">74. Davids-Psalme</a></note>
+       <note>* Efter den <a poem="bibelsalme74">74de Davids-Psalme</a></note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="41-45"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hvor er dog din Naade!
@@ -1733,7 +1718,6 @@ Et Halleluja!
     <firstline>O, havde jeg Vinger, og var jeg en Fugl</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="45-47"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O, havde jeg Vinger, og var jeg en Fugl,
@@ -1814,7 +1798,6 @@ Vor Livs-Kraft, vor Soel og vort Skjold!
     <firstline>Stille, stille, Zions Døttre smaa!</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="47-49"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Stille, stille, Zions Døttre smaa!
@@ -1895,7 +1878,6 @@ Det var Herren selv som gav mig Disse!
     <firstline>Tør end Nogen ihukomme</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="49-52"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Tør end Nogen ihukomme
@@ -2005,7 +1987,6 @@ Den skal vi forklares ved!
     <firstline>O store Gud! vi love Dig</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="52-54"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O store Gud! vi love Dig
@@ -2110,7 +2091,6 @@ Være Dig! Halleluja!
     <firstline>Tusind Aar stod Christi Kirke</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="55-57"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Tusind Aar stod Christi Kirke
@@ -2192,11 +2172,10 @@ Alle med hverandres Tunge!
     <title><num>16.</num>Den signede Dag med Fryd vi seer</title>
     <firstline>Den signede Dag med Fryd vi seer</firstline>
     <notes>
-       <note>En omarbeidelse af den gammeldanske Dag-vise hos Hans Thomesen</note>
+       <note>* En omarbeidelse af den gammeldanske Dag-vise hos Hans Thomesen</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="57-59"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Den signede Dag med Fryd vi seer
@@ -2276,12 +2255,11 @@ Med Venner i Lys vi tale!
     <title><num>17.</num>For al den Deel, som Gud har gjort</title>
     <firstline>For al den Deel, som Gud har gjort</firstline>
     <notes>
-       <note>En omarbeidelse af Brorsons: "Op al den Ting som Gud har gjort"</note>
+       <note>* En omarbeidelse af Brorsons: "Op al den Ting som Gud har gjort"</note>
        <note>Cf. Brorsons <xref poem="brorson1739b1"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="59-62"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 For al den Deel, som Gud har gjort,
@@ -2405,7 +2383,6 @@ Kiærminden groer i Enge!
     <firstline>Oprundet er vor Jubel-Fest</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="62-64"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Oprundet er vor Jubel-Fest,
@@ -2486,7 +2463,6 @@ I Christi Kirkes Gylden-Aar!
     <firstline>Kirken er som Himmerige</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="64-65"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kirken er som Himmerige,
@@ -2521,11 +2497,10 @@ Favner den forlorne Søn!
     <title><num>20.</num>Vær trøstig, Zion, Jesu Brud</title>
     <firstline>Vær trøstig, Zion, Jesu Brud!</firstline>
     <notes>
-       <note>En af Kingos bekiendte Psalmer efter Es. 60, lidt forandret</note>
+       <note>* En af Kingos bekiendte Psalmer efter Es. 60, lidt forandret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="65-66"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vær trøstig, Zion, Jesu Brud!
@@ -2583,11 +2558,10 @@ Til vore Dages Ende!
     <title><num>21.</num>Nu lader os sjunge en Vise</title>
     <firstline>Nu lader os sjunge en Vise</firstline>
     <notes>
-       <note>Omarbeidelse af den gammeldanske "Vorherres Brude-Vise" efter den <a poem="bibelsalme45">45. Davids-Psalme</a></note>
+       <note>* Omarbeidelse af den gammeldanske "Vorherres Brude-Vise" efter den <a poem="bibelsalme45">45. Davids-Psalme</a></note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="66-69"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Nu lader os sjunge en Vise,
@@ -2689,7 +2663,6 @@ Saa være nu Drotten etc.
     <firstline>Kirken det er et gammelt Huus</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="69-71"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kirken det er et gammelt Huus,
@@ -2772,7 +2745,6 @@ Ordet kun helliger Huset!
     <firstline>Herren han har besøgt sit Folk</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="71-74"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Herren han har besøgt sit Folk,
@@ -2885,7 +2857,6 @@ Vil jer paa Hænder bære!
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="74-77"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Var I ikke Galilæer,
@@ -2986,11 +2957,10 @@ Byder Død og Djævel Trods!
     <title><num>25.</num>Er det mueligt, er det sandt</title>
     <firstline>Er det mueligt, er det sandt</firstline>
     <notes>
-       <note>Efter den <a poem="bibelsalme124">124.</a> og <a poem="bibelsalme126">126.</a> Davids-Psalme</note>
+       <note>* Efter den <a poem="bibelsalme124">124de</a> og <a poem="bibelsalme126">126de</a> Davids-Psalme</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="77-78"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Er det mueligt, er det sandt,
@@ -3060,7 +3030,6 @@ Vinter aldrig mere!
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="78-80"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hos Herren paa det Høie
@@ -3146,7 +3115,6 @@ I Herrens Kirke-By!
     <firstline>Kom, lader os bygge</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="81-83"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kom, lader os bygge
@@ -3256,11 +3224,10 @@ Og vist kroner Herren sit Værk!
     <title><num>28.</num>Hvor deilig skal Guds Kirke staae</title>
     <firstline>Hvor deilig skal Guds Kirke staae</firstline>
     <notes>
-       <note>Omarbeidelse af Kingos med samme Begyndelse</note>
+       <note>* Omarbeidelse af Kingos med samme Begyndelse</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="83-85"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hvor deilig skal Guds Kirke staae
@@ -3320,7 +3287,6 @@ Vort evige Halleluja!
     <firstline>Det Ord, som bestaaer</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="85"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Det Ord, som bestaaer,
@@ -3346,11 +3312,10 @@ Der findes det Alt!
     <title><num>30.</num>Nu bede vi den Hellig-Aand</title>
     <firstline>Nu bede vi den Hellig-Aand</firstline>
     <notes>
-       <note>Omarbeidelse af Luthers <xref type="translation" poem="luther2000070903"/>.</note>
+       <note>* Omarbeidelse af Luthers <xref type="translation" poem="luther2000070903"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="85-86"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Nu bede vi den Hellig-Aand,
@@ -3400,11 +3365,10 @@ Døden overvundet!
     <title><num>31.</num>Som Foraars-Solen mild og blid</title>
     <firstline>Som Foraars-Solen mild og blid</firstline>
     <notes>
-       <note>Efter den <a poem="bibelsalme85">85. Davids-Psalme</a></note>
+       <note>* Efter den <a poem="bibelsalme85">85de Davids-Psalme</a></note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="87-88"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Som Foraars-Solen mild og blid,
@@ -3474,11 +3438,10 @@ Naar brat sig Bladet vender!
     <title><num>32.</num>Herren, han sagde til Herre min</title>
     <firstline>Herren, han sagde til Herre min</firstline>
     <notes>
-       <note>Efter den <a poem="bibelsalme110">110. Davids-Psalme</a></note>
+       <note>* Efter den <a poem="bibelsalme110">110de Davids-Psalme</a></note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="88-89"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Herren, han sagde til Herre min:
@@ -3525,7 +3488,6 @@ Saa Du er Mig kiær over Alle.
     <firstline>Stene for mig raabe skal</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="89-91"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Stene for mig raabe skal,
@@ -3584,14 +3546,8 @@ Kirke-Staden finder!
 <head>
     <title><num>34.</num>Hvad har Kirken her tilbage</title>
     <firstline>Hvad har Kirken her tilbage</firstline>
-    <notes>
-       <note>Efter Esaias 53.</note>
-       <note><xref bibel="bibelesajas53"/></note>
-       <note>Strofe 11, vers 2: 2 Cor. 4</note>
-    </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="91-96"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hvad har Kirken her tilbage,
@@ -3656,7 +3612,7 @@ Billedlig ta'r Skriften Svaret:
 "Taaler Sting i stille Sind,
 "Taaler Spot og Tugt beskeden,
 "Mægler os til Bedste Freden,
-"Kiøber Læge-Konst med Saar!"
+"Kiøber Læge-Konst med Saar!<note>* Efter <a poem="bibelesajas53">Esaias 53.</a></note>"
 
 Ja, i Colossenser-Brevet,
 Frugtbart, naar det pløies vaadt,
@@ -3675,13 +3631,12 @@ Over Sky, som over Skoven,
 Ei hvad kiønt er kun paa Jord!
 
 Endelig dertil og Grunden,
-I et andet Sende-Brev,
+I et andet Sende-Brev<note>* 2 Cor. 4</note>,
 Fløi Apostelen af Munden,
 Da han til Hellener skrev:
 Synligt har sin Tid og Time,
 Evigt kan dermed sig rime,
 Kom, dog ei tilsyne her!
-
 
 Bundet blev den store Drage,
 Rugende paa Kirke-Guld,
@@ -3803,7 +3758,6 @@ Gjort til Alt hvad Gud har sagt!
     <firstline>Jesus! hvor er Du dog henne?</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="96-99"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Jesus! hvor er Du dog henne?
@@ -3921,11 +3875,10 @@ Som det lyder, sagt til os!
     <title><num>36.</num>Mig rinder i Hu et lystigt Ord</title>
     <firstline>Mig rinder i Hu et lystigt Ord</firstline>
     <notes>
-       <note>Efter den <a poem="bibelsalme45">45. Davids-Psalme</a> og vor Lutherske "Bryllups-vise om Christus og hans aandelige Brud", begyndende: Mit Hjerte opgav et lystigt Ord</note>
+       <note>* Efter den <a poem="bibelsalme45">45de Davids-Psalme</a> og vor Lutherske "Bryllups-vise om Christus og hans aandelige Brud", begyndende: Mit Hjerte opgav et lystigt Ord</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="100-102"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Mig rinder i Hu et lystigt Ord,
@@ -4023,11 +3976,10 @@ Og synger din Bryllups-Vise!
     <title><num>37.</num>Christus er vores, med Ham har vi Alt</title>
     <firstline>Christus er vores, med Ham har vi Alt</firstline>
     <notes>
-       <note>Efter Propheten Esaias 61</note>
+       <note>* Efter Propheten Esaias 61</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="102-105"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Christus er vores, med Ham har vi Alt,
@@ -4129,7 +4081,6 @@ Ei har jeg Aanden opgivet!
     <firstline>Christne, med Skiel</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="105"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Christne, med Skiel,
@@ -4161,7 +4112,6 @@ Christus omsider fornægte!
     <firstline>Christendom i Verdens Mund</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="105-106"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Christendom i Verdens Mund
@@ -4190,7 +4140,7 @@ Salighed af Naade!
     <firstline>Verden er, som Man den tager</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="106-108"/>
-    <keywords>salme,helpwanted</keywords>
+    <keywords>helpwanted</keywords>
     <notes>
        <note>Sven Sørensen skriver: ,,Se Rahbeks digt <xref poem="rahbek2001062308"/> med samme førstelinie. Er der tale om en travesti heraf, eller er identiteten tilfældig?''</note>
     </notes>
@@ -4295,7 +4245,6 @@ Ondt er kun i Helved Alt!
     <firstline>Tvang til Tro er Snak i Taaget</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="108-110"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Tvang til Tro er Snak i Taaget,
@@ -4370,7 +4319,6 @@ Sødt I sang om Himmerig!
     <firstline>Hvo kan troe, som har ei hørt!</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="110-113"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hvo kan troe, som har ei hørt!
@@ -4468,11 +4416,10 @@ Christus den forkynder!
     <title><num>43.</num>Frygt, mit Barn, den sande Gud</title>
     <firstline>Frygt, mit Barn, den sande Gud!</firstline>
     <notes>
-       <note>Ændring af: Mit Barn, frygt den sande Gud</note>
+       <note>* Ændring af: Mit Barn, frygt den sande Gud</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="113-114"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Frygt, mit Barn, den sande Gud!
@@ -4523,7 +4470,6 @@ Og i Salighedens Fryd!
     <firstline>Vor Kirke-Dør vel lukkes op</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="114-115"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vor Kirke-Dør vel lukkes op
@@ -4561,7 +4507,6 @@ Guds Salighed i Himmerige!
     <firstline>Vi troer paa Gud-Fader</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="115-116"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vi troer paa Gud-Fader,
@@ -4620,7 +4565,6 @@ I Jesu Navn, Amen!
     <firstline>Vi troe, som vi ved Daaben svor</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="116-117"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vi troe, som vi ved Daaben svor,
@@ -4668,7 +4612,6 @@ Saa kroner Du vor Christne Tro!
     <firstline>Til Helvede vor Drot nedfoer</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="117-118"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Til Helvede vor Drot nedfoer,
@@ -4719,7 +4662,6 @@ Vorherres og vort Eget!
     <firstline>Jesus, Dødens Overvinder!</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="118-122"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Jesus, Dødens Overvinder!
@@ -4856,7 +4798,6 @@ Op i Sky med Fryd og Gammen!
     <firstline>Enhver, som tro'er og bliver døbt</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="122-123"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Enhver, som tro'er og bliver døbt,
@@ -4903,7 +4844,6 @@ Med Ham en evig Sommer!
     <firstline>O, kjender du Daaben</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="123-124"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O, kjender du Daaben,
@@ -4941,11 +4881,10 @@ Det Løsen, os aabner den herlige Stad!
     <title><num>51.</num>Der var en Kæmpe, stor og stærk</title>
     <firstline>Der var en Kæmpe, stor og stærk</firstline>
     <notes>
-       <note>2 Kong. B. 5</note>
+       <note>* 2 Kong. B. 5</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="124-126"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Der var en Kæmpe, stor og stærk,
@@ -5043,11 +4982,10 @@ I Guddoms-Trillingnavnet!
     <title><num>52.</num>Kom med til Jordans Flod</title>
     <firstline>Kom med til Jordans Flod!</firstline>
     <notes>
-       <note>Omarbeidelse af Kingos: Mig lyster nu at træde, Hen ned til Jordans vand</note>
+       <note>* Omarbeidelse af Kingos: Mig lyster nu at træde, Hen ned til Jordans vand</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="126-127"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kom med til Jordans Flod!
@@ -5103,7 +5041,6 @@ I Hjerte dit Hans Aand!
     <firstline>Herrens Røst er over Vandet</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="128"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Herrens Røst er over Vandet,
@@ -5138,7 +5075,6 @@ Døbte faae, som Ordet troe!
     <firstline>Er Aand kun Luft, er Ord kun Lyd</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="128-130"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Er Aand kun Luft, er Ord kun Lyd,
@@ -5213,7 +5149,6 @@ Mod Ord, som flytte Bjerge!
     <firstline>Ordet var fra Arilds-Tid</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="130-132"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Ordet var fra Arilds-Tid,
@@ -5304,7 +5239,6 @@ Evig Hjertet fryder!
     <firstline>I Begyndelsen var Ordet</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="132-134"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I Begyndelsen var Ordet,
@@ -5375,7 +5309,6 @@ Smelte kiærlig sammen!
     <firstline>Dig rumme ei Himle</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="134-137"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Dig rumme ei Himle,
@@ -5484,7 +5417,6 @@ Det Purpur, Du bød!
     <firstline>Som Hønen klukker mindelig</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="137"/>
-    <keywords>helpwanted,salme</keywords>
 </head>
 <body>
 Som Hønen klukker mindelig,
@@ -5511,7 +5443,6 @@ Som Hønens for de Spæde!
     <firstline>Som Hjertet slaaer i Glædens Stund</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="137-138"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Som Hjertet slaaer i Glædens Stund,
@@ -5537,11 +5468,10 @@ For Menighedens Øre!
     <title><num>60.</num>Trods Længselens Smerte</title>
     <firstline>Trods Længselens Smerte</firstline>
     <notes>
-       <note>Efter Romer-Brevets 10.</note>
+       <note>* Efter Romer-Brevets 10.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="138-139"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Trods Længselens Smerte,
@@ -5607,12 +5537,10 @@ Vorherre vi tager i Favn!
     <title><num>61.</num>Hyggelig, rolig</title>
     <firstline>Hyggelig, rolig</firstline>
     <notes>
-       <note>Efter den 84. Davids-Psalme</note>
-       <note>Cf. <xref bibel="bibelsalme84"/>.</note>
+        <note>* Efter den <a poem="bibelsalme84">84de Davids-Psalme</a>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="140-142"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hyggelig, rolig,
@@ -5694,12 +5622,11 @@ Til for dit Aasyn de kronede staae!
     <title><num>62.</num>Giv mig, Gud, en Psalme-Tunge</title>
     <firstline>Giv mig, Gud, en Psalme-Tunge</firstline>
     <notes>
-       <note>Efter den <a poem="bibelsalme92">92. Davids-Psalme</a>.</note>
+       <note>* Efter den <a poem="bibelsalme92">92. Davids-Psalme</a>.</note>
        <note>I udgaven af dette digt som blev trykt i <i>Nordisk Kirketidende</i>, 1836 findes 8. strofe som: »Om end giennem Dage haarde, / Blomstre skal i dine Gaarde / Hvert et Hjerte-Skud, / Bære Frugt paa gamle Dage, / Medens Bjerg og Skov gientage: / Eiegod er Gud!«</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="142-143"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Giv mig, Gud, en Psalme-Tunge,
@@ -5765,11 +5692,10 @@ Finest Frugt om Vintertide
     <title><num>63.</num>Paradis-Gaard og Folke-Vang</title>
     <firstline>Paradis-Gaard og Folke-Vang!</firstline>
     <notes>
-       <note>Efter den <a poem="bibelsalme96">96. Davids-Psalme</a>.</note>
+       <note>* Efter den <a poem="bibelsalme96">96. Davids-Psalme</a>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="143-144"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Paradis-Gaard og Folke-Vang!
@@ -5814,12 +5740,10 @@ Bruser i Vind-Harpetoner!
     <title><num>64.</num>Lovsynger Herren, min Mund og mit Indre</title>
     <firstline>Lovsynger Herren, min Mund og mit Indre!</firstline>
     <notes>
-       <note>Efter den 103. Davids-Psalme.</note>
-       <note>Cf. <xref bibel="bibelsalme103"/>.</note>
+        <note>* Efter <a poem="bibelsalme103">den 103de Davids-Psalme</a>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="144-146"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Lovsynger Herren, min Mund og mit Indre!
@@ -5879,11 +5803,10 @@ Skaberens Priis, hvor Han throner i Glands!
     <title><num>65.</num>Giv Himlen nu din Stemme</title>
     <firstline>Giv Himlen nu din Stemme</firstline>
     <notes>
-       <note>Kingos "op, op med Himmel-Stemme" forandret og forkortet</note>
+       <note>* Kingos "op, op med Himmel-Stemme" forandret og forkortet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="146-148"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Giv Himlen nu din Stemme,
@@ -5956,12 +5879,11 @@ Guds Aand dig hjelpe frem!
     <title><num>66.</num>Din Kirke-Mark, o Gud</title>
     <firstline>Din Kirke-Mark, o Gud!</firstline>
     <notes>
+       <note>* Efter Kingos: O Gud, hvor jammerlig, din Kirke-Ager sig, I disse Tider finder</note>
        <note>Cf. <xref bibel="bibelmatt13,24-30"/>.</note>
-       <note>Efter Kingos: O Gud, hvor jammerlig, din Kirke-Ager sig, I disse Tider finder</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="148-150"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Din Kirke-Mark, o Gud!
@@ -6069,11 +5991,10 @@ Med Fynd til Verdens Ende!
     <title><num>67.</num>Guds Naade-Soels Aarvaagenhed</title>
     <firstline>Guds Naade-Soels Aarvaagenhed</firstline>
     <notes>
-       <note>Efter Kingos "Guds Naade og Aarvaagenhed"</note>
+       <note>* Efter Kingos "Guds Naade og Aarvaagenhed"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="150-152"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Guds Naade-Soels Aarvaagenhed,
@@ -6155,11 +6076,10 @@ Naar vi faaer Løn af Naade!
     <title><num>68.</num>O Jesus, Præst i Evighed</title>
     <firstline>O Jesus, Præst i Evighed</firstline>
     <notes>
-       <note>Efter Kingos med samme Begyndelse efterlignet</note>
+       <note>* Efter Kingos med samme Begyndelse efterlignet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="153-155"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O Jesus, Præst i Evighed,
@@ -6241,11 +6161,10 @@ Til Fryd i Dødens Vaande!
     <title><num>69.</num>Din Aand, o Gud! har ført dit Ord</title>
     <firstline>Din Aand, o Gud! har ført dit Ord</firstline>
     <notes>
-       <note>Efter No. 371 i den Ny Psalmebog</note>
+       <note>* Efter No. 371 i den Ny Psalmebog</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="155"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Din Aand, o Gud! har ført dit Ord,
@@ -6272,7 +6191,6 @@ Hos os til Verdens Ende!
     <firstline>Er du skriftklog paa Guds Rige</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="155-156"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Er du skriftklog paa Guds Rige,
@@ -6303,7 +6221,6 @@ Kun Guds Aand randsager!
     <firstline>Bladet fra Munden!</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="156-157"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Bladet fra Munden!
@@ -6373,12 +6290,11 @@ Hvor den dig vented, du kommer for seent!
     <title><num>72.</num>I Jesu Navn</title>
     <firstline>I Jesu Navn</firstline>
     <notes>
-       <note>Den Gamle opfrisket</note>
+       <note>* Den Gamle opfrisket</note>
        <!-- Titlen fejlagtigt trykt som "73." -->
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="158-159"/>
-    <keywords>salme</keywords>
 </head>
 <body>
     I Jesu Navn
@@ -6425,7 +6341,6 @@ Som Lyksalighedens Ø;
     <firstline>Vort Løsen er vor Tro og Daab</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="159-161"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vort Løsen er vor Tro og Daab,
@@ -6540,7 +6455,6 @@ Alt hvad det higed efter.
     <firstline>Vorherres Røst er Kirkens Aand</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="162-164"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vorherres Røst er Kirkens Aand,
@@ -6641,7 +6555,6 @@ Vort Liv i Evigheden!
     <firstline>Vor Herres Røst</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="164-165"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vor Herres Røst
@@ -6688,7 +6601,6 @@ Jesu Christi Hvile-Aar!
     <firstline>Kommer hid kun med de Smaa</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="165-167"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kommer hid kun med de Smaa,
@@ -6755,7 +6667,6 @@ Jeg i dig har Velbehag.
     <firstline>Siig kun et Ord</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="167-168"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Siig kun et Ord,
@@ -6810,7 +6721,6 @@ Hvem kan nedbryde, hvad Du vil opbygge!
     <firstline>Menneskens Søn og Troens Aand</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="168-169"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Menneskens Søn og Troens Aand
@@ -6857,7 +6767,6 @@ For evig Dit skal være!
     <firstline>Hvad nytter den Raaben</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="169-174"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hvad nytter den Raaben
@@ -7029,7 +6938,6 @@ I Hyrdens velsignede Spor!
     <firstline>Guds Ord blev aldrig bundet</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="174-177"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Guds Ord blev aldrig bundet,
@@ -7152,7 +7060,6 @@ Sin bedste Lede-Traad!
     <firstline>Gud taler, saa det skeer</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="177-184"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Gud taler, saa det skeer:
@@ -7414,11 +7321,10 @@ Paa Skyer himmelblaa!
     <title><num>82.</num>Fryd dig, du Christi Brud</title>
     <firstline>Fryd dig, du Christi Brud</firstline>
     <notes>
-       <note>Den Gamle, nænsom ændret</note>
+       <note>* Den Gamle, nænsom ændret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="184-186"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Fryd dig, du Christi Brud,
@@ -7485,7 +7391,6 @@ Skal denne vor Konning være!
     <firstline>Kong Christus den Første regierer endnu</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="186-188"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kong Christus den Første regierer endnu,
@@ -7576,7 +7481,6 @@ Som Sine til Enden han elskede med,
     <firstline>Hvad forklarer Rigets Gaade</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="188-190"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hvad forklarer Rigets Gaade,
@@ -7667,7 +7571,6 @@ Skiænker kun den Helligaand!
     <firstline>Fader, Søn og Hellig-Aand!</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="191-194"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Fader, Søn og Hellig-Aand!
@@ -7785,11 +7688,10 @@ Heel den i Gud-Faders Rige!
     <title><num>86.</num>Gud Hellig-Aand! i Tro os lær</title>
     <firstline>Gud Hellig-Aand! i Tro os lær</firstline>
     <notes>
-       <note>Den velbekjendte, næsten uforandret</note>
+       <note>* Den velbekjendte, næsten uforandret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="194"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Gud Hellig-Aand! i Tro os lær
@@ -7824,7 +7726,6 @@ I Himmerig at gjemmes!
     <firstline>I Vorherres Jesu Navn</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="195-197"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I Vorherres Jesu Navn
@@ -7923,7 +7824,6 @@ Gud sin Søn omfavne!
     <firstline>Børne-Lærdoms Parter fem!</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="197-201"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Børne-Lærdoms Parter fem!
@@ -8069,11 +7969,10 @@ Vi tilbords kan følges ad!
     <title><num>89.</num>Vor Fader god i Himmerig</title>
     <firstline>Vor Fader god i Himmerig</firstline>
     <notes>
-       <note>Luthers "Vater Unser Im Himmelreich" frit oversat</note>
+       <note>* Luthers "Vater Unser Im Himmelreich" frit oversat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="201-203"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vor Fader god i Himmerig,
@@ -8147,7 +8046,6 @@ Og Kiærlighed er Alt i Alt!
     <firstline>Fader-Vor i Himmerig!</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="203-206"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Fader-Vor i Himmerig!
@@ -8242,7 +8140,6 @@ Ja, det skal saa være!
     <firstline>Venner! lad os ihukomme</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="206-212"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Venner! lad os ihukomme
@@ -8491,7 +8388,6 @@ Hos vor Drot i Herligheden!
     <firstline>Fader-Vor er Herrens Bøn</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="213-218"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Fader-Vor er Herrens Bøn,
@@ -8683,11 +8579,10 @@ Aabnes Himmerige!
     <title><num>93.</num>Til klart Guds Aasyn vi skal see</title>
     <firstline>Til klart Guds Aasyn vi skal see</firstline>
     <notes>
-       <note>Efter 1 Cor. 13</note>
+       <note>* Efter 1 Cor. 13</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="218-221"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Til klart Guds Aasyn vi skal see,
@@ -8801,11 +8696,10 @@ Naar vore Tunger gløde!
     <title><num>94.</num>Vil du Kirkens Spir forgylde</title>
     <firstline>Vil du Kirkens Spir forgylde</firstline>
     <notes>
-       <note>Efter Ephes. 1.</note>
+       <note>* Efter Ephes. 1.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="221-224"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vil du Kirkens Spir forgylde,
@@ -8924,7 +8818,6 @@ Haab om Guddoms-Herligheden!
     <firstline>Kiender du Bordet</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="224-225"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kiender du Bordet,
@@ -8963,7 +8856,6 @@ Sandhed blev Raabet, thi den foer deri!
     <firstline>Dækker Gud nu Bord i Ørken</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="225"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Dækker Gud nu Bord i Ørken,
@@ -8998,7 +8890,6 @@ Har sin Kraft med Brød og Viin!
     <firstline>Smuler under Herrens Bord</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="226-227"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Smuler under Herrens Bord
@@ -9080,11 +8971,10 @@ Glemmes Død og Pine!
     <title><num>98.</num>Bryd ud, min Sjæl, med Tak, og siig</title>
     <firstline>Bryd ud, min Sjæl, med Tak, og siig</firstline>
     <notes>
-       <note>Af Kingos "O Jesu, søde Jesu, dig"</note>
+       <note>* Af Kingos "O Jesu, søde Jesu, dig"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="228"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Bryd ud, min Sjæl, med Tak, og siig:
@@ -9099,11 +8989,10 @@ Et Himmerig det er paa Jord!
     <title><num>99.</num>Jesus Christ! Du gav mig Livet</title>
     <firstline>Jesus Christ! Du gav mig Livet</firstline>
     <notes>
-       <note>Efter No. 398 i den Ny Psalmebog</note>
+       <note>* Efter No. 398 i den Ny Psalmebog</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="228"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Jesus Christ! Du gav mig Livet,
@@ -9122,11 +9011,10 @@ Over dig al Verden glemmer!
     <title><num>100.</num>Herre! hvor skal vi gaae hen</title>
     <firstline>Herre! hvor skal vi gaae hen!</firstline>
     <notes>
-       <note>Efter Joh. 6</note>
+       <note>* Efter Joh. 6</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="228-231"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Herre! hvor skal vi gaae hen!
@@ -9220,11 +9108,10 @@ Den med dig i os er nu!
     <title><num>101.</num>Jeg veed et evigt Himmerig</title>
     <firstline>Jeg veed et evigt Himmerig</firstline>
     <notes>
-       <note>Den Gamle opfrisket</note>
+       <note>* Den Gamle opfrisket</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="231-232"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Jeg veed et evigt Himmerig,
@@ -9270,7 +9157,6 @@ Vi da skal triumfere!
     <firstline>Der stander et Træ i vor Guds Paradis</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="232-234"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Der stander et Træ i vor Guds Paradis,
@@ -9345,7 +9231,6 @@ Som virker alt Godt i os Alle!
     <firstline>Hyrder, som paa Marken her</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="234-239"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hyrder, som paa Marken her,
@@ -9546,7 +9431,6 @@ Natter-Galen synger!
     <firstline>Klynke og klage</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="239-240"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Klynke og klage,
@@ -9577,11 +9461,10 @@ Lærer os Mund-Smag af Himlen paa Jord!
     <title><num>105.</num>Christi Kirkes Alderdom</title>
     <firstline>Christi Kirkes Alderdom</firstline>
     <notes>
-       <note>Af Thomas Hygoms Svanesang "Herre, Jeg er nu gammel og graa"</note>
+       <note>* Af Thomas Hygoms Svanesang "Herre, Jeg er nu gammel og graa"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="240-242"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Christi Kirkes Alderdom
@@ -9648,7 +9531,6 @@ Til evig Fryd og Ære!
     <firstline>Kan gamle Folk gienfødes</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="242-244"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kan gamle Folk gienfødes
@@ -9755,7 +9637,6 @@ At Haab slaaer Frygt ihjel!
     <firstline>Vor Alderdoms Trøst og Støtte-Stav</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="245-247"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vor Alderdoms Trøst og Støtte-Stav,
@@ -9837,11 +9718,10 @@ Midt i Guds Paradiset!
     <title><num>108.</num>O søde Gud! din Kiærlighed</title>
     <firstline>O søde Gud! din Kiærlighed</firstline>
     <notes>
-       <note>Kingos med samme Begyndelse omarbeidet</note>
+       <note>* Kingos med samme Begyndelse omarbeidet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="247-250"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O søde Gud! din Kiærlighed
@@ -9968,11 +9848,10 @@ Vi glade Seier-Sange!
     <title><num>109.</num>O Jesus Christ</title>
     <firstline>O Jesus Christ!</firstline>
     <notes>
-       <note>Den gamle, kiære Psalme "Herre Jesu Christ, Min Frelser du est" læmpelig omsat</note>
+       <note>* Den gamle, kiære Psalme "Herre Jesu Christ, Min Frelser du est" læmpelig omsat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="250-252"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O Jesus Christ!
@@ -10046,11 +9925,10 @@ Kan leve i Fryd og Gammen!
     <title><num>110.</num>Med os det har slet ingen Nød</title>
     <firstline>Med os det har slet ingen Nød</firstline>
     <notes>
-       <note>Efter den Gamle "Hvad kan os komme til for Nød" og den <a poem="bibelsalme23">23.  Davids-Psalme</a></note>
+       <note>* Efter den Gamle "Hvad kan os komme til for Nød" og den <a poem="bibelsalme23">23.  Davids-Psalme</a></note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="252-254"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Med os det har slet ingen Nød,
@@ -10116,11 +9994,10 @@ Og i Gud-Faders Rige!
     <title><num>111.</num>Trods den beseiglede Steen</title>
     <firstline>Trods den beseiglede Steen</firstline>
     <notes>
-       <note>Efter Gammel-Græske Paaske-Vers</note>
+       <note>* Efter Gammel-Græske Paaske-Vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="254-255"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Trods den beseiglede Steen,
@@ -10146,11 +10023,10 @@ Menneske-Ven! med dit Rige!
     <title><num>112.</num>Gud Hellig-Aand! opfyld med Lyst</title>
     <firstline>Gud Hellig-Aand! opfyld med Lyst</firstline>
     <notes>
-       <note>Efter det berømte Latinske vers "veni Sancte spiritus"</note>
+       <note>* Efter det berømte Latinske vers "veni Sancte spiritus"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="255"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Gud Hellig-Aand! opfyld med Lyst
@@ -10176,7 +10052,6 @@ Halleluja, Halleluja,
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="255-256"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Min Mund og mit Hjerte
@@ -10219,7 +10094,6 @@ Vor Kraft og vort Liv og vor Løn!
     <firstline>Som Høielofts-Sale</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="256-259"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Som Høielofts-Sale,
@@ -10337,11 +10211,10 @@ Som skabde Tunge-Maalet!
     <title><num>115.</num>Med høi og festlig Jubel-Klang</title>
     <firstline>Med høi og festlig Jubel-Klang</firstline>
     <notes>
-       <note>Efter No. 123 i den Ny Psalme-Bog</note>
+       <note>* Efter No. 123 i den Ny Psalme-Bog</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="259-261"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Med høi og festlig Jubel-Klang
@@ -10416,11 +10289,10 @@ Alles Knæ for dig sig bøie!
     <title><num>116.</num>Af Høiheden oprundet er</title>
     <firstline>Af Høiheden oprundet er</firstline>
     <notes>
-       <note>Den Gamle forandret</note>
+       <note>* Den Gamle forandret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="261-264"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Af Høiheden oprundet er
@@ -10522,7 +10394,6 @@ Kun hos dig er godt at være!
     <firstline>Stol-Kongen over Himlens Hær</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="264-267"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Stol-Kongen over Himlens Hær
@@ -10624,7 +10495,6 @@ Høit med dig til Himmerige!
     <firstline>Vaagner op, I Folk, som sove!</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="267-271"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vaagner op, I Folk, som sove!
@@ -10769,11 +10639,10 @@ Jesus Christus, Ja og Amen!
     <title><num>119.</num>Syng, Guds Folk! med Hjertens Glæde</title>
     <firstline>Syng, Guds Folk! med Hjertens Glæde!</firstline>
     <notes>
-       <note>Af den 40. Davids-Psalme</note>
+       <note>* Af den 40. Davids-Psalme</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="271-273"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Syng, Guds Folk! med Hjertens Glæde!
@@ -10861,12 +10730,11 @@ Ham, som gjorde Alting godt!
     <title><num>120.</num>Himlene, Herre, fortælle din Ære</title>
     <firstline>Himlene, Herre, fortælle din Ære</firstline>
     <notes>
-       <note>Af den 19. Davids-Psalme</note>
+       <note>* Af den 19. Davids-Psalme</note>
        <note>Cf. <xref bibel="bibelsalme19"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="273-274"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Himlene, Herre, fortælle din Ære,
@@ -10903,11 +10771,10 @@ Viismænd det giør af vankundige Smaa!
     <title><num>121.</num>I Herrens Huus det toner</title>
     <firstline>I Herrens Huus det toner</firstline>
     <notes>
-       <note>Af Math. 5. som i den gamle Kirke hørde til hver Søndag</note>
+       <note>* Af Math. 5. som i den gamle Kirke hørde til hver Søndag</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="274-276"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I Herrens Huus det toner
@@ -10989,11 +10856,10 @@ Hil Guds-Treenigheden!
     <title><num>122.</num>Du Tøile paa Folerne vilde</title>
     <firstline>Du Tøile paa Folerne vilde!</firstline>
     <notes>
-       <note>Denne ældgamle Græske Kirke-Levning anseer jeg for en Vexel-Sang ved Børnenes Confirmation og har afdeelt den derefter</note>
+       <note>* Denne ældgamle Græske Kirke-Levning anseer jeg for en Vexel-Sang ved Børnenes Confirmation og har afdeelt den derefter</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="276-279"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Menigheden:
@@ -11086,11 +10952,10 @@ Viisdoms-Folk! med os bryd ud:
     <title><num>123.</num>Ved Kundskabs-Træet, uretviis</title>
     <firstline>Ved Kundskabs-Træet, uretviis</firstline>
     <notes>
-       <note>Gammel-Græsk Søndags-Psalme, frit fordansket</note>
+       <note>* Gammel-Græsk Søndags-Psalme, frit fordansket</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="279-281"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Ved Kundskabs-Træet, uretviis,
@@ -11181,11 +11046,10 @@ vor Frelser, lovet være!
     <title><num>124.</num>Høiere end Huus og Hall</title>
     <firstline>Høiere end Huus og Hall</firstline>
     <notes>
-       <note>Af den Angel-Sachsiske Messiade i Exeter-Bogen</note>
+       <note>* Af den Angel-Sachsiske Messiade i Exeter-Bogen</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="281-283"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Høiere end Huus og Hall,
@@ -11275,11 +11139,10 @@ Svinger Hjerte-Sukket!
     <title><num>125.</num>Vaagn op, du Helgen-Kiæde</title>
     <firstline>Vaagn op, du Helgen-Kiæde!</firstline>
     <notes>
-       <note>Den Engelske søndags-Sang "Awake, ye Saints, awake" frit fordansket</note>
+       <note>* Den Engelske søndags-Sang "Awake, ye Saints, awake" frit fordansket</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="284"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vaagn op, du Helgen-Kiæde!
@@ -11317,11 +11180,10 @@ For Almagts Fod i Kiærlighed!
     <title><num>126.</num>Søde Jesus! vi er her</title>
     <firstline>Søde Jesus! vi er her</firstline>
     <notes>
-       <note>Oprindelig den Tydske "Liebster Jesu, wir sind hier"</note>
+       <note>* Oprindelig den Tydske "Liebster Jesu, wir sind hier"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="285"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Søde Jesus! vi er her,
@@ -11352,11 +11214,10 @@ Fugle-Neb dem giv og Vinge!
     <title><num>127.</num>Det lakker nu ad Aften brat</title>
     <firstline>Det lakker nu ad Aften brat</firstline>
     <notes>
-       <note>Den Tydske "Ach bleib bey uns, Herr Jesu Christ, Weil es nun Abend worden ist"</note>
+       <note>* Den Tydske "Ach bleib bey uns, Herr Jesu Christ, Weil es nun Abend worden ist"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="285-286"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Det lakker nu ad Aften brat,
@@ -11406,11 +11267,10 @@ Med Sang til Himlens Fryde-Sal!
     <title><num>128.</num>Ophold os Herre, ved dit Ord</title>
     <firstline>Ophold os Herre, ved dit Ord</firstline>
     <notes>
-       <note>Luthers "Erhalt uns, Herr, bey deinem Wort"</note>
+       <note>* Luthers "Erhalt uns, Herr, bey deinem Wort"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="287"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Ophold os Herre, ved dit Ord,
@@ -11435,11 +11295,10 @@ Hold os i Live trods vor Død!
     <title><num>129.</num>Vi samles for dit Aasyn her</title>
     <firstline>Vi samles for dit Aasyn her</firstline>
     <notes>
-       <note>Efter No. 374 i den Ny Psalmebog</note>
+       <note>* Efter No. 374 i den Ny Psalmebog</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="287"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vi samles for dit Aasyn her,
@@ -11457,11 +11316,10 @@ Vær Selv blandt os tilstæde!
     <title><num>130.</num>Som Hjorten, med Tørst befangen</title>
     <firstline>Som Hjorten, med Tørst befangen</firstline>
     <notes>
-       <note>Af den <a poem="bibelsalme41">41.</a> og <a poem="bibelsalme42">42.</a> Davids-Psalme</note>
+       <note>* Af den <a poem="bibelsalme41">41.</a> og <a poem="bibelsalme42">42.</a> Davids-Psalme</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="287-290"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Som Hjorten, med Tørst befangen,
@@ -11552,12 +11410,11 @@ Hans Kiærlighed dulme din Smerte!
     <title><num>131.</num>Foragter ei de ringe Dage</title>
     <firstline>Foragter ei de ringe Dage!</firstline>
     <notes>
-       <note>Efter Propheten Sacharias 4</note>
+       <note>* Efter Propheten Sacharias 4</note>
        <note>Cf. <xref bibel="bibelzakarias04,6-10"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="290-292"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Foragter ei de ringe Dage!
@@ -11644,12 +11501,11 @@ Og folde sig i Lampens Glands!
     <title><num>132.</num>Blomstre som en Rosen-Gaard</title>
     <firstline>Blomstre som en Rosen-Gaard</firstline>
     <notes>
-       <note>Efter Propheten Esaias 35.</note>
+       <note>* Efter Propheten Esaias 35.</note>
        <note>Cf. <xref bibel="bibelesajas35"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="292-296"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Blomstre som en Rosen-Gaard
@@ -11780,7 +11636,6 @@ Sarons Yndigheder!
     <firstline>Søndag-Morgen fra de Døde</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="296"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Søndag-Morgen fra de Døde
@@ -11815,7 +11670,6 @@ Dødens Drot og Mørkets Rige!
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="296-297"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Denne er Dagen, som Herren har gjort!
@@ -11862,7 +11716,6 @@ Christne har kronede Dage!
     <firstline>Den første Dag paa Jord</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="298"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Den første Dag paa Jord
@@ -11906,7 +11759,6 @@ I lydt Mund-Harpeslag!
     <firstline>Søndag er Vorherres Dag</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="299-301"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Søndag er Vorherres Dag,
@@ -12007,7 +11859,6 @@ Evighedens Palme-Fugl!
     <firstline>Jeg veed et lille Himmerig</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="301-304"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Jeg veed et lille Himmerig,
@@ -12133,7 +11984,6 @@ Guds-Aandens Billed-Tale!
     <firstline>Herrens Dag, paa Aandens Sprog</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="304-305"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Herrens Dag, paa Aandens Sprog,
@@ -12174,7 +12024,6 @@ Smelte Sky til Tone-Hav!
     <firstline>Lyset og Livet er Tvillinger bolde</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="305-307"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Lyset og Livet er Tvillinger bolde,
@@ -12257,7 +12106,6 @@ Evigheds-Lyset i Kiærligheds Dyb!
     <firstline>Soel gaar ned i Vester-Hav</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="307-308"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Soel gaar ned i Vester-Hav,
@@ -12295,7 +12143,6 @@ Dødens Skræk og Mørkets Gru!
     <firstline>Jesus, Moses og Elias</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="308-312"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Jesus, Moses og Elias,
@@ -12455,11 +12302,10 @@ Der er godt at være!
     <title><num>142.</num>Ved Sæden, som den falder</title>
     <firstline>Ved Sæden, som den falder</firstline>
     <notes>
-       <note>Omarbeidelse af Kingos "O Herre Gud, din Lære, din Sæd, dit rene Ord"</note>
+       <note>* Omarbeidelse af Kingos "O Herre Gud, din Lære, din Sæd, dit rene Ord"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="313-314"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Ved Sæden, som den falder,
@@ -12523,11 +12369,10 @@ Men altid mange Fold!
     <title><num>143.</num>I eder selv paaminde</title>
     <firstline>I eder selv paaminde</firstline>
     <notes>
-       <note>Kingos "Ak, lader eder minde" efter 2 Cor. 6. omarbeidet</note>
+       <note>* Kingos "Ak, lader eder minde" efter 2 Cor. 6. omarbeidet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="314-316"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I eder selv paaminde,
@@ -12600,11 +12445,10 @@ I Himmel og paa Jord!
     <title><num>144.</num>Herre Gud! hvor agtes ringe</title>
     <firstline>Herre Gud! hvor agtes ringe</firstline>
     <notes>
-       <note>Ændring af Kingos, med samme Begyndelse, efter 1 Cor. 4.</note>
+       <note>* Ændring af Kingos, med samme Begyndelse, efter 1 Cor. 4.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="316-317"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Herre Gud! hvor agtes ringe
@@ -12660,7 +12504,6 @@ Værer frie paa egen Fare!
     <firstline>Vingaards-Røgt og Ager-Dyrkning</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="318"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vingaards-Røgt og Ager-Dyrkning
@@ -12705,7 +12548,6 @@ Virker salig Hjertens-Fryd!
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="318-320"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 En Sæde-Mand gik ud at saae,
@@ -12770,11 +12612,10 @@ Og evigsøde Fryde-Sange!
     <title><num>147.</num>Kron-Prinds i Himlen og Konge paa Jorden</title>
     <firstline>Kron-Prinds i Himlen og Konge paa Jorden!</firstline>
     <notes>
-       <note>Efter den <a poem="bibelsalme72">72. Davids-Psalme</a></note>
+       <note>* Efter den <a poem="bibelsalme72">72. Davids-Psalme</a></note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="320-321"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kron-Prinds i Himlen og Konge paa Jorden!
@@ -12838,11 +12679,10 @@ Fredegod Fyrste, med Bod for alt Savn!
     <title><num>148.</num>Hedenskabets Galilæer</title>
     <firstline>Hedenskabets Galilæer</firstline>
     <notes>
-       <note>Af Esaias i det 7., 9. og 11, sammenføiet</note>
+       <note>* Af Esaias i det 7., 9. og 11, sammenføiet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="322-324"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hedenskabets Galilæer,
@@ -12948,11 +12788,10 @@ Fryder eder Alle!
     <title><num>149.</num>Bethlehem Ephrata</title>
     <firstline>Bethlehem Ephrata</firstline>
     <notes>
-       <note>Af Propheten Michas det 5.</note>
+       <note>* Af Propheten Michas det 5.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="324-325"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Bethlehem Ephrata:
@@ -12983,11 +12822,10 @@ Rækker til Jorderigs Ender!
     <title><num>150.</num>Forudsigelsen</title>
     <firstline>Forudsigelsen</firstline>
     <notes>
-       <note>Den Gammel-Græske Juleaftens-Sang</note>
+       <note>* Den Gammel-Græske Juleaftens-Sang</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="325-326"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Forudsigelsen
@@ -13027,11 +12865,10 @@ Synger Guds Miskundheds Priis!
     <title><num>151.</num>Held den Mand, som frygter Gud</title>
     <firstline>Held den Mand, som frygter Gud</firstline>
     <notes>
-       <note>Efterligning af det Græske Indgangs-Kvad paa Jule-Festen, med den <a poem="bibelsalme112">112. Davids-Psalme</a>.</note>
+       <note>* Efterligning af det Græske Indgangs-Kvad paa Jule-Festen, med den <a poem="bibelsalme112">112. Davids-Psalme</a>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="326-327"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Held den Mand, som frygter Gud,
@@ -13071,11 +12908,10 @@ Frels os, Herre Jesus Christ!
     <title><num>152.</num>Mens i Krybben spæd du laae</title>
     <firstline>Mens i Krybben spæd du laae</firstline>
     <notes>
-       <note>Sammensat efter Græske Jule-Vers</note>
+       <note>* Sammensat efter Græske Jule-Vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="327-328"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Mens i Krybben spæd du laae,
@@ -13125,11 +12961,10 @@ I hans Svøb med Ære!
     <title><num>153.</num>Bethlehem i Juda-Egne</title>
     <firstline>Bethlehem i Juda-Egne!</firstline>
     <notes>
-       <note>Sammensat efter Græske Julevers</note>
+       <note>* Sammensat efter Græske Julevers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="328-332"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Bethlehem i Juda-Egne!
@@ -13259,11 +13094,10 @@ Gud med os! velkommen vær!
     <title><num>154.</num>Fra Solens Vugge til Solens Grav</title>
     <firstline>Fra Solens Vugge til Solens Grav</firstline>
     <notes>
-       <note>Den gamle Latinske Jule-Sang "A soils ortus cardine" som laae til Grund for Luthers "Christum wir sollen loben schon"</note>
+       <note>* Den gamle Latinske Jule-Sang "A soils ortus cardine" som laae til Grund for Luthers "Christum wir sollen loben schon"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="332-333"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Fra Solens Vugge til Solens Grav,
@@ -13329,11 +13163,10 @@ For os at bænke engang hos Sig
     <title><num>155.</num>Sønnen af Guds Fader-Hjerte</title>
     <firstline>Sønnen af Guds Fader-Hjerte</firstline>
     <notes>
-       <note>Den Latinske "Corde natus ex parentis" paa Gammel-Dansk, uden Riim "Christus af Gud Faders Hjerte"</note>
+       <note>* Den Latinske "Corde natus ex parentis" paa Gammel-Dansk, uden Riim "Christus af Gud Faders Hjerte"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="334-335"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Sønnen af Guds Fader-Hjerte,
@@ -13383,11 +13216,10 @@ Evig Tak og Ære!
     <title><num>156.</num>Stjernernes Skaber og Himmelens Drot</title>
     <firstline>Stjernernes Skaber og Himmelens Drot!</firstline>
     <notes>
-       <note>Den Ambrosianske "Conditor alme siderum" paa Gammel-Dansk "O Stjerners Skaber i himmelske Huus"</note>
+       <note>* Den Ambrosianske "Conditor alme siderum" paa Gammel-Dansk "O Stjerners Skaber i himmelske Huus"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="335-336"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Stjernernes Skaber og Himmelens Drot!
@@ -13432,11 +13264,10 @@ Til dig os binder Fuldkommenheds Baand!
     <title><num>157.</num>Hedenskabets Frelser-Mand</title>
     <firstline>Hedenskabets Frelser-Mand</firstline>
     <notes>
-       <note>Den Ambrosianske "Veni redemtor gentium" eller "Kom Hedningers Frelser sand"</note>
+       <note>* Den Ambrosianske "Veni redemtor gentium" eller "Kom Hedningers Frelser sand"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="336-337"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hedenskabets Frelser-Mand,
@@ -13502,12 +13333,11 @@ Vær velkommen til os Smaa,
     <title><num>158.</num>Sanddru og Fredegod</title>
     <firstline>Sanddru og Fredegod!</firstline>
     <notes>
-       <note>Af den Angel-Sachsiske Messiade i Exeter-Bogen</note>
+       <note>* Af den Angel-Sachsiske Messiade i Exeter-Bogen</note>
        <note>Strofe 13, vers 3: Ezechiel 44</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="338-340"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Sanddru og Fredegod!
@@ -13616,11 +13446,10 @@ Aanden fra det Høie!
     <title><num>159.</num>Engle-Herolder, hør du dem</title>
     <firstline>Engle-Herolder, hør du dem!</firstline>
     <notes>
-       <note>Den Engelske Kirkes Jule-Sang "Hark, the herald angels sing"</note>
+       <note>* Den Engelske Kirkes Jule-Sang "Hark, the herald angels sing"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="341-342"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Engle-Herolder, hør du dem!
@@ -13663,11 +13492,10 @@ Kongen er født i Bethlehem!
     <title><num>160.</num>Fra Himlen høit kom jeg nu her</title>
     <firstline>Fra Himlen høit kom jeg nu her</firstline>
     <notes>
-       <note>En ny Fordanskning af Luthers <xref type="translation" poem="luther2000070914"/> læmpet efter den Gamle.</note>
+       <note>* En ny Fordanskning af Luthers <xref type="translation" poem="luther2000070914"/> læmpet efter den Gamle.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="342-344"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Fra Himlen høit kom jeg nu her
@@ -13757,11 +13585,10 @@ Os Himmerig med Nytaars-Ny!
     <title><num>161.</num>Lovet være du, Jesus Christ</title>
     <firstline>Lovet være du, Jesus Christ</firstline>
     <notes>
-       <note>Luthers <xref type="translation" poem="luther2000070909"/>.</note>
+       <note>* Luthers <xref type="translation" poem="luther2000070909"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="344-345"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Lovet være du, Jesus Christ,
@@ -13807,11 +13634,10 @@ Hjem til din lyse Konge-Sal!
     <title><num>162.</num>Fra Himlen kom en Engel klar</title>
     <firstline>Fra Himlen kom en Engel klar</firstline>
     <notes>
-       <note>Luthers "Vom Himmel kam der Engel-Schaar"</note>
+       <note>* Luthers "Vom Himmel kam der Engel-Schaar"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="345-346"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Fra Himlen kom en Engel klar,
@@ -13856,12 +13682,11 @@ Som sang for os saa frydelig!
     <title><num>163.</num>Et Barn er født i Bethlehem</title>
     <firstline>Et Barn er født i Bethlehem</firstline>
     <notes>
-       <note>Ny Bearbeidelse af vor gamle Jule-Sang, oprindelig paa Munke-Latin "Puer, natus in Bethlehem"</note>
+       <note>* Ny Bearbeidelse af vor gamle Jule-Sang, oprindelig paa Munke-Latin "Puer, natus in Bethlehem"</note>
        <note>I andre udgaver findes 11. strofe som: »For Frelser bold og Broder blid, / Broder blid, / Vi synge da til evig Tid: / Halleluja, Halleluja!«</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="346-348"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Et Barn er født i Bethlehem,
@@ -13926,11 +13751,10 @@ For Frelser bold og Broder blid!
     <title><num>164.</num>Glæden, hun er født i Dag</title>
     <firstline>Glæden, hun er født i Dag</firstline>
     <notes>
-       <note>Den i Norden fordum saa yndede Jule-Sang "Dies est lætitiæ," frit fordansket</note>
+       <note>* Den i Norden fordum saa yndede Jule-Sang "Dies est lætitiæ," frit fordansket</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="348-351"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Glæden, hun er født i Dag,
@@ -14028,12 +13852,11 @@ Med din Engle-Skare!
     <title><num>165.</num>Et lidet Barn saa lystelig</title>
     <firstline>Et lidet Barn saa lystelig</firstline>
     <notes>
-       <note>Luthers Vers "Ein Kindelein so löbelich"</note>
+       <note>* Luthers Vers "Ein Kindelein so löbelich"</note>
        <note>Gendigtning af Luthers <xref type="translation" poem="luther2002010601"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="351"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Et lidet Barn saa lystelig
@@ -14054,11 +13877,10 @@ O fri os fra den Onde!
     <title><num>166.</num>Lad det klinge sødt i Sky</title>
     <firstline>Lad det klinge sødt i Sky</firstline>
     <notes>
-       <note>Efter det Latinske Jule-Vers "Resonet in laudibus"</note>
+       <note>* Efter det Latinske Jule-Vers "Resonet in laudibus"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="351-352"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Lad det klinge sødt i Sky:
@@ -14098,11 +13920,10 @@ Gud med os, Immanuel!
     <title><num>167.</num>En sød og liflig Klang</title>
     <firstline>En sød og liflig Klang</firstline>
     <notes>
-       <note>Efter den Tydsk-Latinske Jule-Sang "In dulci jubilo, Nun singet und seyd froh"</note>
+       <note>* Efter den Tydsk-Latinske Jule-Sang "In dulci jubilo, Nun singet und seyd froh"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="352-353"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 En sød og liflig Klang
@@ -14144,11 +13965,10 @@ O, var vi Alle der! :,:
     <title><num>168.</num>Ære og Priis og Dyd</title>
     <firstline>Ære og Priis og Dyd!</firstline>
     <notes>
-       <note>Vor Dansk-Latinske Jule-Sang "Priis og Ære og Dyd, ganske meget, Summo Jesu Christo, pro isto"</note>
+       <note>* Vor Dansk-Latinske Jule-Sang "Priis og Ære og Dyd, ganske meget, Summo Jesu Christo, pro isto"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="353-355"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Ære og Priis og Dyd!
@@ -14236,11 +14056,10 @@ Bær os paa Børneviis
     <title><num>169.</num>O Jesu Christ, som Manddom reen</title>
     <firstline>O Jesu Christ, som Manddom reen</firstline>
     <notes>
-       <note>Vor bekiendte Jule-Sang "O Jesu Christ, som Manddom tog"</note>
+       <note>* Vor bekiendte Jule-Sang "O Jesu Christ, som Manddom tog"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="356-357"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O Jesu Christ, som Manddom reen
@@ -14298,11 +14117,10 @@ I Himmeriges Rige!
     <title><num>170.</num>Nu glæder eder, Adams Børn, allesammen</title>
     <firstline>Nu glæder eder, Adams Børn, allesammen</firstline>
     <notes>
-       <note>Ogsaa et gammeldags Jule-Vers, lidt forandret</note>
+       <note>* Ogsaa et gammeldags Jule-Vers, lidt forandret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="357-358"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Nu glæder eder, Adams Børn, allesammen,
@@ -14329,11 +14147,10 @@ Du skænked os Usle og Arme!
     <title><num>171.</num>Alle Christne sig fryde nu</title>
     <firstline>Alle Christne sig fryde nu</firstline>
     <notes>
-       <note>Ogsaa et gammelt Jule-Vers</note>
+       <note>* Ogsaa et gammelt Jule-Vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="358"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Alle Christne sig fryde nu,
@@ -14357,11 +14174,10 @@ Til os er kommet hid!
     <title><num>172.</num>Luk op dit Borge-Led</title>
     <firstline>Luk op dit Borge-Led</firstline>
     <notes>
-       <note>Jule-Sangen "Dine Øine, o Christendom" ændret og afkortet</note>
+       <note>* Jule-Sangen "Dine Øine, o Christendom" ændret og afkortet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="358-360"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Luk op dit Borge-Led,
@@ -14441,11 +14257,10 @@ Som blev for os den Lille!
     <title><num>173.</num>Marie hun var en Jomfru skiær</title>
     <firstline>Marie hun var en Jomfru skiær</firstline>
     <notes>
-       <note>En gammel Marie-Vise, fordum og nu "christelig forvendt"</note>
+       <note>* En gammel Marie-Vise, fordum og nu "christelig forvendt"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="361-362"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Marie hun var en Jomfru skiær,
@@ -14495,11 +14310,10 @@ Og drages det Alt til Minde!
     <title><num>174.</num>Alt hvad Fornuften overgaaer</title>
     <firstline>Alt hvad Fornuften overgaaer</firstline>
     <notes>
-       <note>Kingos, efter Propheten Esaias i det 7., lidt forandret</note>
+       <note>* Kingos, efter Propheten Esaias i det 7., lidt forandret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="362-363"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Alt hvad Fornuften overgaaer
@@ -14549,11 +14363,10 @@ Gienføder Fred og Lykke!
     <title><num>175.</num>Nu kom her Bud fra Engle-Chor</title>
     <firstline>Nu kom her Bud fra Engle-Chor</firstline>
     <notes>
-       <note>Kingos, med samme Begyndelse, forandret</note>
+       <note>* Kingos, med samme Begyndelse, forandret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="363-365"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Nu kom her Bud fra Engle-Chor,
@@ -14619,12 +14432,11 @@ Saa frydelig sig skynde!
     <title><num>176.</num>Fryd dig ved Guds Behag</title>
     <firstline>Fryd dig ved Guds Behag</firstline>
     <notes>
-       <note>Kingos "Fryd dig i Guds Behag," lidt forandret</note>
+       <note>* Kingos "Fryd dig i Guds Behag," lidt forandret</note>
        <note>Salmenummeret fejltrykt som 167.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="365-366"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Fryd dig ved Guds Behag,
@@ -14676,11 +14488,10 @@ Med evig Jule-Glæde!
     <title><num>177.</num>Søde Jesus, Davids Rod</title>
     <firstline>Søde Jesus, Davids Rod!</firstline>
     <notes>
-       <note>Taget af Kingos "Store Gud og Frelsermand" med lidt Forandring</note>
+       <note>* Taget af Kingos "Store Gud og Frelsermand" med lidt Forandring</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="366-367"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Søde Jesus, Davids Rod!
@@ -14698,11 +14509,10 @@ Giør en liflig Jule-Fest!
     <title><num>178.</num>Op, Hjerte, op med fyrig Tro</title>
     <firstline>Op, Hjerte, op med fyrig Tro</firstline>
     <notes>
-       <note>Kingos, forandret og forkortet</note>
+       <note>* Kingos, forandret og forkortet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="367-369"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Op, Hjerte, op med fyrig Tro,
@@ -14777,11 +14587,10 @@ Skal for Herren altid være!
     <title><num>179.</num>Alle Ting er underlige</title>
     <firstline>Alle Ting er underlige</firstline>
     <notes>
-       <note>Kingos, noget anderledes</note>
+       <note>* Kingos, noget anderledes</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="369-371"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Alle Ting er underlige,
@@ -14872,11 +14681,10 @@ Lad mig din Livegen være!
     <title><num>180.</num>Min Soel, min Lyst og Glæde</title>
     <firstline>Min Soel, min Lyst og Glæde!</firstline>
     <notes>
-       <note>Kingos "Min Soel, min Lyst, min Glæde" forandret</note>
+       <note>* Kingos "Min Soel, min Lyst, min Glæde" forandret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="371-373"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Min Soel, min Lyst og Glæde!
@@ -14958,11 +14766,10 @@ For Fader og for dig!
     <title><num>181.</num>Op, thi Dagen nu frembryder</title>
     <firstline>Op, thi Dagen nu frembryder</firstline>
     <notes>
-       <note>Brorsons med samme Begyndelse, ændret og forkortet</note>
+       <note>* Brorsons med samme Begyndelse, ændret og forkortet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="373-375"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Op, thi Dagen nu frembryder,
@@ -15028,12 +14835,11 @@ Klart nu skinner Nytaars-Ny!
     <title><num>182.</num>I denne søde Jule-Tid</title>
     <firstline>I denne søde Jule-Tid</firstline>
     <notes>
-       <note>Brorsons Velbekiendte, næsten uforandret</note>
+       <note>* Brorsons Velbekiendte, næsten uforandret</note>
        <note>Cf. Brorsons <xref poem="brorson1732a1"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="375-377"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I denne søde Jule-Tid
@@ -15120,11 +14926,10 @@ Med ham til Himmerige!
     <title><num>183.</num>Hvad maa mit Hjerte sige</title>
     <firstline>Hvad maa mit Hjerte sige</firstline>
     <notes>
-       <note>Taget af Brorsons "Mit Hjerte altid vanker"</note>
+       <note>* Taget af Brorsons "Mit Hjerte altid vanker"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="377-379"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hvad maa mit Hjerte sige,
@@ -15188,11 +14993,10 @@ I Tro og Tak indsvøbt!
     <title><num>184.</num>Den yndigste Rose er fundet</title>
     <firstline>Den yndigste Rose er fundet</firstline>
     <notes>
-       <note>Brorsons, lidt mere udarbeidet</note>
+       <note>* Brorsons, lidt mere udarbeidet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="379-381"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Den yndigste Rose er fundet
@@ -15257,11 +15061,10 @@ Af alle Smaae-Blomsterne priset!
     <title><num>185.</num>Vor Jesus kan ei noget Herberg finde</title>
     <firstline>Vor Jesus kan ei noget Herberg finde</firstline>
     <notes>
-       <note>Brorsons, omgjort for Tonens og Begyndelsens Skyld</note>
+       <note>* Brorsons, omgjort for Tonens og Begyndelsens Skyld</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="381-382"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vor Jesus kan ei noget Herberg finde
@@ -15311,12 +15114,11 @@ Da aldrig blandt os være!
     <title><num>186.</num>Davids faldefærdig' Hytte</title>
     <firstline>Davids faldefærdig' Hytte!</firstline>
     <notes>
-       <note>Fru Boies, i den Guldbergske Psalme-Bog No. 76, gjort lidt istand</note>
+       <note>* Fru Boies, i den Guldbergske Psalme-Bog No. 76, gjort lidt istand</note>
        <note>Salmenummeret fejltrykt som 168.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="382-383"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Davids faldefærdig' Hytte!
@@ -15371,11 +15173,10 @@ Throne-Sal for den Eenbaarne!
     <title><num>187.</num>Stat op, bliv klar, Soel er oprunden</title>
     <firstline>Stat op, bliv klar, Soel er oprunden!</firstline>
     <notes>
-       <note>Nordahl Bruns Jule-Vers "Stat op, bliv klar! dit Lys er runden," lidt forandret</note>
+       <note>* Nordahl Bruns Jule-Vers "Stat op, bliv klar! dit Lys er runden," lidt forandret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="384"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Stat op, bliv klar, Soel er oprunden!
@@ -15392,11 +15193,10 @@ Enhver, som Øren har, nu hører!
     <title><num>188.</num>Hører I, Tyrannen byder</title>
     <firstline>Hører I, Tyrannen byder</firstline>
     <notes>
-       <note>Nordahl Bruns "Keiseren Augustus byder" lidt forandret</note>
+       <note>* Nordahl Bruns "Keiseren Augustus byder" lidt forandret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="384-386"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hører I, Tyrannen byder,
@@ -15460,11 +15260,10 @@ Lov og Tak og evig Ære!
     <title><num>189.</num>Nu Bod vi fik for Synd og Død</title>
     <firstline>Nu Bod vi fik for Synd og Død</firstline>
     <notes>
-       <note>Nordahl Bruns Jule-Vers "Min Sjæl er frelst fra Synd og Død" lidt anderledes</note>
+       <note>* Nordahl Bruns Jule-Vers "Min Sjæl er frelst fra Synd og Død" lidt anderledes</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="386"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Nu Bod vi fik for Synd og Død,
@@ -15485,11 +15284,10 @@ Hans Kirke er vor Moder!
     <title><num>190.</num>O Jesus! vor Forsoner</title>
     <firstline>O Jesus! vor Forsoner!</firstline>
     <notes>
-       <note>Efter No. 138 i den Ny Psalmebog</note>
+       <note>* Efter No. 138 i den Ny Psalmebog</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="386-387"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O Jesus! vor Forsoner!
@@ -15544,11 +15342,10 @@ Vorherre Jesus Christ!
     <title><num>191.</num>Høit udi Gudernes hvælvede Sal</title>
     <firstline>Høit udi Gudernes hvælvede Sal</firstline>
     <notes>
-       <note>Brudstykke af en verdslig Jule-Sang fra 1809</note>
+       <note>* Brudstykke af en verdslig Jule-Sang fra 1809</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="388-389"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Høit udi Gudernes hvælvede Sal
@@ -15594,11 +15391,10 @@ Tone hos Brødre i Norden!
     <title><num>192.</num>Op, alle Christne, stemmer i</title>
     <firstline>Op, alle Christne, stemmer i!</firstline>
     <notes>
-       <note>Forsøg paa en Jule-Sang 1810, forkortet</note>
+       <note>* Forsøg paa en Jule-Sang 1810, forkortet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="389-391"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Op, alle Christne, stemmer i!
@@ -15688,11 +15484,10 @@ Du altid saa vil fødes!
     <title><num>193.</num>Det kimer nu til Jule-Fest</title>
     <firstline>Det kimer nu til Jule-Fest</firstline>
     <notes>
-       <note>Jule-Sang fra 1817, efter Luther, forkortet</note>
+       <note>* Jule-Sang fra 1817, efter Luther, forkortet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="391-394"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Det kimer nu til Jule-Fest,
@@ -15797,11 +15592,10 @@ Dig takke høit vor Nytaars-Sang!
     <title><num>194.</num>Der kneiser et Træ paa Norges Fjeld</title>
     <firstline>Der kneiser et Træ paa Norges Fjeld</firstline>
     <notes>
-       <note>En Kæmpe-Vise om Julen fra 1823</note>
+       <note>* En Kæmpe-Vise om Julen fra 1823</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="394-398"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Der kneiser et Træ paa Norges Fjeld,
@@ -15951,11 +15745,10 @@ Giør Frelseren kronede Dage!
     <title><num>195.</num>Bøi dig for din Konge, Sjæl</title>
     <firstline>Bøi dig for din Konge, Sjæl!</firstline>
     <notes>
-       <note>Af Ingemanns "Glæd dig Zion, glæd dig Jord"</note>
+       <note>* Af Ingemanns "Glæd dig Zion, glæd dig Jord"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="398-399"/>
-    <keywords>salme</keywords>
     <!-- TODO: Link til Ingemanns original. -->
 </head>
 <body>
@@ -15984,12 +15777,11 @@ Hosianna i det Høie!
     <title><num>196.</num>Jeg som et Barn mig glæde vil</title>
     <firstline>Jeg som et Barn mig glæde vil</firstline>
     <notes>
-       <note>Ingemanns Jule-Sang med et Par Smaa-Ændringer</note>
+       <note>* Ingemanns Jule-Sang med et Par Smaa-Ændringer</note>
     </notes>
     <!-- TODO: Link til Ingemanns original. -->
     <quality>korrektur1,kilde,side</quality>
     <source pages="399-400"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Jeg som et Barn mig glæde vil,
@@ -16055,7 +15847,6 @@ Og født al Jordens Glæde!
     <firstline>Velkommen igien, Guds Engle smaa</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="401-402"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Velkommen igien, Guds Engle smaa,
@@ -16122,7 +15913,6 @@ Lad Jule-Sorgen slukkes!
     <firstline>Et Drømme-Syn for Hedninger</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="402-406"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Et Drømme-Syn for Hedninger
@@ -16263,7 +16053,6 @@ Den gyldne Morgen-Røde!
     <firstline>Frygter ikke! thi Fryd jeg bringer</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="406-407"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Frygter ikke! thi Fryd jeg bringer,
@@ -16295,7 +16084,6 @@ Glæde og Fryd i Mande-Bryst!
     <firstline>Guds Engle sang i Stjerne-Tal</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="407-409"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Guds Engle sang i Stjerne-Tal,
@@ -16366,7 +16154,6 @@ Guds Søn og Aanden ligerviis
     <firstline>Nazareth og Bethlehem!</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="409-410"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Nazareth og Bethlehem!
@@ -16440,7 +16227,6 @@ Høre, elske Faders Ord!
     <firstline>Glædelig Fest! Glædelig Fest!</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="411-412"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Glædelig Fest! Glædelig Fest!
@@ -16487,7 +16273,6 @@ Søger det lille Guds-Ord!
     <firstline>Dagene stækkes og mørkne i Nord</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="412-414"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Dagene stækkes og mørkne i Nord,
@@ -16577,11 +16362,10 @@ Jule-Leg kun er nu Dødninge-Dands!
     <title><num>204.</num>Alle Christne Fødsels-Dag</title>
     <firstline>Alle Christne Fødsels-Dag</firstline>
     <notes>
-       <note>Med Hensyn paa Esajas 66.</note>
+       <note>* Med Hensyn paa Esajas 66.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="414-417"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Alle Christne Fødsels-Dag
@@ -16703,11 +16487,10 @@ Hjertet alle Dage!
     <title><num>205.</num>Al den ganske Christenhed</title>
     <firstline>Al den ganske Christenhed</firstline>
     <notes>
-       <note>Efter Propheten Esajas 53.</note>
+       <note>* Efter Propheten Esajas 53.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="418-420"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Al den ganske Christenhed
@@ -16807,11 +16590,10 @@ Det er nu skeet, som spaaet havde Esaias!
     <title><num>206.</num>I de gyldne Himmel-Sale</title>
     <firstline>I de gyldne Himmel-Sale</firstline>
     <notes>
-       <note>Efter den <a poem="bibelsalme16">16. Davids-Psalme</a>.</note>
+       <note>* Efter den <a poem="bibelsalme16">16. Davids-Psalme</a>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="420-422"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I de gyldne Himmel-Sale
@@ -16877,12 +16659,11 @@ Evig ved din Høire-Haand!
     <title><num>207.</num>O Gud, min Gud og Fader</title>
     <firstline>O Gud, min Gud og Fader!</firstline>
     <notes>
-       <note>Den 22. Davids-psalme, frit oversat</note>
+       <note>* Den 22. Davids-psalme, frit oversat</note>
        <note>Cf. <xref bibel="bibelsalme22"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="422-426"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O Gud, min Gud og Fader!
@@ -17028,11 +16809,10 @@ Hans egne Hænders Værk!
     <title><num>208.</num>Op til Jerusalem vi gaae</title>
     <firstline>Op til Jerusalem vi gaae</firstline>
     <notes>
-       <note>Efter en Græsk Faste-sang</note>
+       <note>* Efter en Græsk Faste-sang</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="426-427"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Op til Jerusalem vi gaae,
@@ -17069,12 +16849,11 @@ Sin Throne med Glands at beklæde!
     <title><num>209.</num>Stat op i Gry, min Gud! stat op</title>
     <firstline>Stat op i Gry, min Gud! stat op!</firstline>
     <notes>
-       <note>Den 68. Davids-Psalme, christelig benyttet</note>
+       <note>* Den 68. Davids-Psalme, christelig benyttet</note>
        <note>Cf. <xref bibel="bibelsalme68"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="427-430"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Stat op i Gry, min Gud! stat op!
@@ -17175,11 +16954,10 @@ Sit Folk op til sig hæver!
     <title><num>210.</num>Troende Sjæle!</title>
     <firstline>Troende Sjæle!</firstline>
     <notes>
-       <note>Samlet af Græske Faste-Vers</note>
+       <note>* Samlet af Græske Faste-Vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="430-431"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Troende Sjæle!
@@ -17209,13 +16987,12 @@ Døde for os, saa vi leve med dig!
     <title><num>211.</num>Med sin Alabaster-Krukke</title>
     <firstline>Med sin Alabaster-Krukke</firstline>
     <notes>
-       <note>Efter den Græske Sang i Dimmel-Ugen</note>
+       <note>* Efter den Græske Sang i Dimmel-Ugen</note>
        <note>Cf. <xref bibel="bibellukas07,36-50"/>.</note>
        <note>Synges palmesøndag</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="431-433"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Med sin Alabaster-Krukke,
@@ -17289,11 +17066,10 @@ Skjul mig i din Kiærlighed!
     <title><num>212.</num>Skiændige Judas, som fandt det uhyre</title>
     <firstline>Skiændige Judas, som fandt det uhyre</firstline>
     <notes>
-       <note>Efterligning af de Græske Vers om Judas</note>
+       <note>* Efterligning af de Græske Vers om Judas</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="433-434"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 <i>Skiændige Judas</i>, som fandt det uhyre,
@@ -17339,11 +17115,10 @@ Fra <i>Falskhedens</i> Afgrund os Alle Du frie!
     <title><num>213.</num>Søn var Judas af de Øgle-Unger</title>
     <firstline>Søn var Judas af de Øgle-Unger</firstline>
     <notes>
-       <note>Et Græsk vers</note>
+       <note>* Et Græsk vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="434"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Søn var Judas af de Øgle-Unger,
@@ -17362,11 +17137,10 @@ Med Umennesket ei gaae fortabt!
     <title><num>214.</num>For at dømme Verdens Dommer</title>
     <firstline>For at dømme Verdens Dommer</firstline>
     <notes>
-       <note>Et Græsk vers</note>
+       <note>* Et Græsk vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="434-435"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 For at dømme Verdens Dommer.
@@ -17389,13 +17163,12 @@ Din Langmodighed er stor!
     <title><num>215.</num>For den soleklare Gud</title>
     <firstline>For den soleklare Gud</firstline>
     <notes>
-       <note>Efter Græske vers</note>
+       <note>* Efter Græske vers</note>
        <note>'Korsets Ord' alluderer til <xref bibel="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' <i>Ordbog over det danske sprog</i> [under <i>Kors,</i> sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.) - Sven Sørensen</note>
        <note>Herfra stammer verset <i>Som et stille offerlam</i>, DDS 173.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="435-437"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 For den soleklare Gud
@@ -17471,11 +17244,10 @@ Lukked op Guds-Haven!
     <title><num>216.</num>Tie, alt Kiød, for Aasyn hans</title>
     <firstline>Tie, alt Kiød, for Aasyn hans</firstline>
     <notes>
-       <note>Efter Græske Vers.</note>
+       <note>* Efter Græske Vers.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="437-438"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Tie, alt Kiød, for Aasyn hans,
@@ -17525,11 +17297,10 @@ Sukke dybt Halleluja!
     <title><num>217.</num>Hør vor Hellig-Aftens Bøn</title>
     <firstline>Hør vor Hellig-Aftens Bøn!</firstline>
     <notes>
-       <note>Græker-Sangen Paaske-Løverdag</note>
+       <note>* Græker-Sangen Paaske-Løverdag</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="438-439"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hør vor Hellig-Aftens Bøn!
@@ -17574,11 +17345,10 @@ Slukker du al Dødning-Sorgen!
     <title><num>218.</num>I Dag sukker Helved og klager</title>
     <firstline>I Dag sukker Helved og klager</firstline>
     <notes>
-       <note>En Græsk Sang, frit oversat</note>
+       <note>* En Græsk Sang, frit oversat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="439-441"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I Dag sukker Helved og klager:
@@ -17644,7 +17414,6 @@ Korsfæstet og opstanden!
     <firstline>Herren af Søvne opvaagned, opsprang</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="441-442"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Herren af Søvne opvaagned, opsprang,
@@ -17696,11 +17465,10 @@ Saaed paa Jord han den evige Glæde:
     <title><num>220.</num>Kom, lad os tømme et Bæger paany</title>
     <firstline>Kom, lad os tømme et Bæger paany</firstline>
     <notes>
-       <note>En Græsk Paaske-Sang, frit fordansket</note>
+       <note>* En Græsk Paaske-Sang, frit fordansket</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="442-443"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kom, lad os tømme et Bæger paany,
@@ -17746,11 +17514,10 @@ Dig, som er evig vort Liv og vor Styrke!
     <title><num>221.</num>Engelen som Lynet</title>
     <firstline>Engelen som Lynet</firstline>
     <notes>
-       <note>Et Græsk Paaske-Vers</note>
+       <note>* Et Græsk Paaske-Vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="443-444"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Engelen som Lynet,
@@ -17779,11 +17546,10 @@ Reiste nu Guds Søn!
     <title><num>222.</num>Frydelig Himmel og Jord</title>
     <firstline>Frydelig Himmel og Jord</firstline>
     <notes>
-       <note>Et Græsk Paaske-Vers</note>
+       <note>* Et Græsk Paaske-Vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="444"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Frydelig Himmel og Jord
@@ -17803,11 +17569,10 @@ Afgrund til et Naadens Dyb!
     <title><num>223.</num>Herrens Veninder</title>
     <firstline>Herrens Veninder!</firstline>
     <notes>
-       <note>Sammensat af Græske Paaske-Vers</note>
+       <note>* Sammensat af Græske Paaske-Vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="444-445"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Herrens Veninder!
@@ -17852,11 +17617,10 @@ Vidnesbyrd stort fra Forglemmelsens Land!
     <title><num>224.</num>Menneske-Bolig</title>
     <firstline>Menneske-Bolig!</firstline>
     <notes>
-       <note>Et Græsk Paaske-Vers</note>
+       <note>* Et Græsk Paaske-Vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="446"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Menneske-Bolig!
@@ -17876,11 +17640,10 @@ Dybt i det blødende Hjerte!
     <title><num>225.</num>Klapper i Haand, alle Folke-Færd</title>
     <firstline>Klapper i Haand, alle Folke-Færd!</firstline>
     <notes>
-       <note>Efter Græske Himmelfarts-Vers</note>
+       <note>* Efter Græske Himmelfarts-Vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="446"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Klapper i Haand, alle Folke-Færd!
@@ -17904,11 +17667,10 @@ Himmelfaren er Menneske-Sønnen!
     <title><num>226.</num>Optaget er i Herlighed</title>
     <firstline>Optaget er i Herlighed</firstline>
     <notes>
-       <note>Efter Græske Himmelfarts-Vers</note>
+       <note>* Efter Græske Himmelfarts-Vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="446-448"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Optaget er i Herlighed
@@ -17960,11 +17722,10 @@ Med Engle I ham love!
     <title><num>227.</num>Hvi er dine Klæder saa røde</title>
     <firstline>Hvi er dine Klæder saa røde!</firstline>
     <notes>
-       <note>Et Græsk Himmelfarts-Vers</note>
+       <note>* Et Græsk Himmelfarts-Vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="448"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hvi er dine Klæder saa røde!
@@ -17988,11 +17749,10 @@ Indgik til den himmelske Pragt!
     <title><num>228.</num>Lad vaie høit vort Konge-Flag</title>
     <firstline>Lad vaie høit vort Konge-Flag!</firstline>
     <notes>
-       <note>Den Latinske "Vexilla Regis prodeunt" omarbeidet</note>
+       <note>* Den Latinske "Vexilla Regis prodeunt" omarbeidet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="448-449"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Lad vaie høit vort Konge-Flag!
@@ -18037,11 +17797,10 @@ Du dine Kæmper danner!
     <title><num>229.</num>Helten, som os hjalp af Nød</title>
     <firstline>Helten, som os hjalp af Nød</firstline>
     <notes>
-       <note>Den Latinske "Eia, recolamus laudibus" ændret</note>
+       <note>* Den Latinske "Eia, recolamus laudibus" ændret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="449-450"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Helten, som os hjalp af Nød,
@@ -18091,11 +17850,10 @@ Os med Seiers-Tegnet!
     <title><num>230.</num>Hil dig, vor Fane</title>
     <firstline>Hil dig, vor Fane!</firstline>
     <notes>
-       <note>Af den Latinske "Salve crux arbor"</note>
+       <note>* Af den Latinske "Salve crux arbor"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="451"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hil dig, vor Fane!
@@ -18137,11 +17895,10 @@ Har under Kors det med Fred!
     <title><num>231.</num>Under Korset stod med Smerte</title>
     <firstline>Under Korset stod med Smerte</firstline>
     <notes>
-       <note>Af den berømte "Stabat mater dolorosa" efterlignet</note>
+       <note>* Af den berømte "Stabat mater dolorosa" efterlignet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="452-453"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Under Korset stod med Smerte,
@@ -18214,11 +17971,10 @@ Hvad I savned: evig Trøst!
     <title><num>232.</num>Hil dig, Frelser og Forsoner</title>
     <firstline>Hil dig, Frelser og Forsoner!</firstline>
     <notes>
-       <note>Den hellige Bernhards "Salve mundi salutare" frit oversat</note>
+       <note>* Den hellige Bernhards "Salve mundi salutare" frit oversat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="454-456"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hil dig, Frelser og Forsoner!
@@ -18300,11 +18056,10 @@ Siig: vi gaae til <i>Paradis!</i>
     <title><num>233.</num>Gienlyd, du ny Jerusalem</title>
     <firstline>Gienlyd, du ny Jerusalem</firstline>
     <notes>
-       <note>Den Latinske "Chorus novæ Jerusalem"</note>
+       <note>* Den Latinske "Chorus novæ Jerusalem"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="456-457"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Gienlyd, du ny Jerusalem,
@@ -18350,11 +18105,10 @@ Vort Støv staaer op af Døde!
     <title><num>234.</num>Paaske vi holde</title>
     <firstline>Paaske vi holde</firstline>
     <notes>
-       <note>Den Latinske Paaske-Sang "Vita sanctorum" frit oversat</note>
+       <note>* Den Latinske Paaske-Sang "Vita sanctorum" frit oversat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="457-459"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Paaske vi holde
@@ -18420,11 +18174,10 @@ Synke, med Afgrundens Kryb,
     <title><num>235.</num>Paaske-Lammet fra Urte-Gaarden</title>
     <firstline>Paaske-Lammet fra Urte-Gaarden</firstline>
     <notes>
-       <note>Efter det Latinske Paaske-Vers "victimæ Paschali" i vor gamle Oversættelse "Jesus Christus, for os offret"</note>
+       <note>* Efter det Latinske Paaske-Vers "victimæ Paschali" i vor gamle Oversættelse "Jesus Christus, for os offret"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="459-460"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Paaske-Lammet fra Urte-Gaarden
@@ -18472,11 +18225,10 @@ Jesus er opstanden!
     <title><num>236.</num>O, saligt dog det Øine-Par</title>
     <firstline>O, saligt dog det Øine-Par</firstline>
     <notes>
-       <note>Af den Latinske Paaske-Sang "Mane prima sabbathi"</note>
+       <note>* Af den Latinske Paaske-Sang "Mane prima sabbathi"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="460-461"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O, saligt dog det Øine-Par,
@@ -18521,11 +18273,10 @@ Du Skabningens Halleluja!
     <title><num>237.</num>Verdens Igienfødelse</title>
     <firstline>Verdens Igienfødelse</firstline>
     <notes>
-       <note>Den Latinske Paaske-Sang "Mundi renovatio"</note>
+       <note>* Den Latinske Paaske-Sang "Mundi renovatio"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="461-462"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Verdens Igienfødelse
@@ -18575,11 +18326,10 @@ Vinker os til Haven!
     <title><num>238.</num>Gamle Surdei! ud af Huset</title>
     <firstline>Gamle Surdei! ud af Huset!</firstline>
     <notes>
-       <note>Den Latinske Paaske-Sang "Zyma vetus expurgetur" efterlignet</note>
+       <note>* Den Latinske Paaske-Sang "Zyma vetus expurgetur" efterlignet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="462-464"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Gamle Surdei! ud af Huset!
@@ -18661,11 +18411,10 @@ Soel opstod med Fryde-Sang!
     <title><num>239.</num>Dag uden Mage</title>
     <firstline>Dag uden Mage!</firstline>
     <notes>
-       <note>Paaske-sangen "Ecce dies celebris" frit oversat</note>
+       <note>* Paaske-sangen "Ecce dies celebris" frit oversat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="465-468"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Dag uden Mage!
@@ -18785,11 +18534,10 @@ Alle opreiste i Adam ny!
     <title><num>240.</num>Høitids-Dagen, Høiheds-Gangen</title>
     <firstline>Høitids-Dagen, Høiheds-Gangen</firstline>
     <notes>
-       <note>Himmelfarts-Sangen "Festum nunc celebre, magnaque Gaudia" frit oversat og forkortet</note>
+       <note>* Himmelfarts-Sangen "Festum nunc celebre, magnaque Gaudia" frit oversat og forkortet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="468-469"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Høitids-Dagen, Høiheds-Gangen,
@@ -18823,11 +18571,10 @@ Lad os see din Herlighed!
     <title><num>241.</num>Stol-Konning i al Evighed</title>
     <firstline>Stol-Konning i al Evighed</firstline>
     <notes>
-       <note>Himmelfarts-Sangen "Æterne Rex altissime" frit oversat.</note>
+       <note>* Himmelfarts-Sangen "Æterne Rex altissime" frit oversat.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="469-470"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Stol-Konning i al Evighed,
@@ -18867,11 +18614,10 @@ Paa Fader-Rigets Throne!
     <title><num>242.</num>Kæmpe-Skridt, som ingen Anden</title>
     <firstline>Kæmpe-Skridt, som ingen Anden</firstline>
     <notes>
-       <note>Af den Latinske "Summi triumphum Regis proseqvamur" med Hensyn paa Høisangens 2.</note>
+       <note>* Af den Latinske "Summi triumphum Regis proseqvamur" med Hensyn paa Høisangens 2.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="470-471"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kæmpe-Skridt, som ingen Anden,
@@ -18909,11 +18655,10 @@ Mageløst det Kæmpe-Skridt!
     <title><num>243.</num>I Kveld blev der banket paa Helvedes Port</title>
     <firstline>I Kveld blev der banket paa Helvedes Port</firstline>
     <notes>
-       <note>Efter Angel-Sachseren hos Cædmon</note>
+       <note>* Efter Angel-Sachseren hos Cædmon</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="471-474"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I Kveld blev der banket paa Helvedes Port,
@@ -19023,11 +18768,10 @@ Guds Søn haver Helvede giæstet!
     <title><num>244.</num>Kommer Sjæle, dyrekiøbte</title>
     <firstline>Kommer Sjæle, dyrekiøbte</firstline>
     <notes>
-       <note>Af den Angelsachsiske Messiade i Exeter-Bogen</note>
+       <note>* Af den Angelsachsiske Messiade i Exeter-Bogen</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="474-475"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kommer Sjæle, dyrekiøbte,
@@ -19093,11 +18837,10 @@ Fader, Søn og Hellig-Aand!
     <title><num>245.</num>Himmel-Farten saae i Løn</title>
     <firstline>Himmel-Farten saae i Løn</firstline>
     <notes>
-       <note>Af Messiaden i Exeter-Bogen, med Hensyn paa Høisangens 2.</note>
+       <note>* Af Messiaden i Exeter-Bogen, med Hensyn paa Høisangens 2.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="476-477"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Himmel-Farten saae i Løn
@@ -19170,11 +18913,10 @@ Til vi naae Guld-Kronen!
     <title><num>246.</num>For den store Fattigdom</title>
     <firstline>For den store Fattigdom</firstline>
     <notes>
-       <note>Den Engelske "By thy birth and early years" frit oversat</note>
+       <note>* Den Engelske "By thy birth and early years" frit oversat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="478"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 For den store Fattigdom,
@@ -19202,11 +18944,10 @@ Skaan os, hør vor Suk og Bøn!
     <title><num>247.</num>Følger med til Urtegaarden</title>
     <firstline>Følger med til Urtegaarden</firstline>
     <notes>
-       <note>Montgomerys "Go to dark Gethsemane" frit oversat</note>
+       <note>* Montgomerys "Go to dark Gethsemane" frit oversat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="478-479"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Følger med til Urtegaarden,
@@ -19244,11 +18985,10 @@ Lær os, Herre, at opstaae!
     <title><num>248.</num>Al Verden under Død og Dom</title>
     <firstline>Al Verden under Død og Dom</firstline>
     <notes>
-       <note>Montgomerys "The world in condemnation lay" frit oversat</note>
+       <note>* Montgomerys "The world in condemnation lay" frit oversat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="479-480"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Al Verden under Død og Dom
@@ -19276,11 +19016,10 @@ Saa vi ad Død kan evig smile!
     <title><num>249.</num>Kun faa var Paradisets Dage</title>
     <firstline>Kun faa var Paradisets Dage</firstline>
     <notes>
-       <note>Montgomerys "The days of Paradise were few" lidt anderledes</note>
+       <note>* Montgomerys "The days of Paradise were few" lidt anderledes</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="480-481"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kun faa var Paradisets Dage,
@@ -19320,11 +19059,10 @@ Da er vort Hjem i Paradis!
     <title><num>250.</num>Syng høit, min Sjæl, om Jesu Død</title>
     <firstline>Syng høit, min Sjæl, om Jesu Død!</firstline>
     <notes>
-       <note>Watts "I sing my Saviour's wondrous death" frit oversat</note>
+       <note>* Watts "I sing my Saviour's wondrous death" frit oversat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="481-482"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Syng høit, min Sjæl, om Jesu Død!
@@ -19359,12 +19097,11 @@ Den Mindste, Ham har kiær!
     <title><num>251.</num>Navnet over alle Navne</title>
     <firstline>Navnet over alle Navne</firstline>
     <notes>
-       <note>Watts "Dearest of all the names above" frit oversat.</note>
+       <note>* Watts "Dearest of all the names above" frit oversat.</note>
        <note>'Korsets Ord' alluderer til <xref bibel="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' <i>Ordbog over det danske sprog</i> [under <i>Kors,</i> sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.) - Sven Sørensen</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="482"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Navnet over alle Navne,
@@ -19399,11 +19136,10 @@ Korsets Ord giør Alting godt!
     <title><num>252.</num>Ruller, Engle, Stenen bort</title>
     <firstline>Ruller, Engle, Stenen bort!</firstline>
     <notes>
-       <note>Den Engelske "Angels, roll the rock away" frit oversat</note>
+       <note>* Den Engelske "Angels, roll the rock away" frit oversat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="483"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Ruller, Engle, Stenen bort!
@@ -19438,11 +19174,10 @@ For Dig Livets Seier-Sang!
     <title><num>253.</num>Reis Dig, alle Drotters Drot</title>
     <firstline>Reis Dig, alle Drotters Drot</firstline>
     <notes>
-       <note>Den Engelske "Come thou mighty King of kings"</note>
+       <note>* Den Engelske "Come thou mighty King of kings"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="484"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Reis Dig, alle Drotters Drot,
@@ -19472,11 +19207,10 @@ Al vor Gierning er omsonst!
     <title><num>254.</num>Halleluja for Lysets Drot</title>
     <firstline>Halleluja for Lysets Drot!</firstline>
     <notes>
-       <note>Watts "Hosanna to the Prince of Light"</note>
+       <note>* Watts "Hosanna to the Prince of Light"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="484-485"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Halleluja for Lysets Drot!
@@ -19516,11 +19250,10 @@ Al Mørkheds Magt til Trods!
     <title><num>255.</num>Vor Frelser opstod fra de Døde</title>
     <firstline>Vor Frelser opstod fra de Døde</firstline>
     <notes>
-       <note>Wesley's "Our Lord is risen from the dead" lidt anderledes</note>
+       <note>* Wesley's "Our Lord is risen from the dead" lidt anderledes</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="485-486"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vor Frelser opstod fra de Døde,
@@ -19555,11 +19288,10 @@ Er Jesus, er Menneskens Søn!
     <title><num>256.</num>For Alle slagtet er Guds Lam</title>
     <firstline>For Alle slagtet er Guds Lam</firstline>
     <notes>
-       <note>Den Engelske Kirkes Paaske-Sang "Since Christ, our passover, is slain"</note>
+       <note>* Den Engelske Kirkes Paaske-Sang "Since Christ, our passover, is slain"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="486-487"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 For Alle slagtet er Guds Lam,
@@ -19596,11 +19328,10 @@ Skee evig Lov og Priis!
     <title><num>257.</num>Nu fryde sig hver Christen Mand</title>
     <firstline>Nu fryde sig hver Christen Mand</firstline>
     <notes>
-       <note>Morten Luthers <xref type="translation" poem="luther2000070924"/> frit oversat.</note>
+       <note>* Morten Luthers <xref type="translation" poem="luther2000070924"/> frit oversat.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="487-490"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Nu fryde sig hver Christen Mand,
@@ -19690,11 +19421,10 @@ Det er min sidste Vilje!"
     <title><num>258.</num>Bort, Verden, med din Glæde</title>
     <firstline>Bort, Verden, med din Glæde</firstline>
     <notes>
-       <note>Den Tydske "Weg, Welt, mit deinen Freuden" frit oversat og forkortet</note>
+       <note>* Den Tydske "Weg, Welt, mit deinen Freuden" frit oversat og forkortet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="490-491"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Bort, Verden, med din Glæde
@@ -19760,11 +19490,10 @@ Det faae til Arv og Eie!
     <title><num>259.</num>O, Du Guds Lam</title>
     <firstline>O, Du Guds Lam!</firstline>
     <notes>
-       <note>Efter det Gamle "Agnus Dei" og "Christe, du Lamm Gottes"</note>
+       <note>* Efter det Gamle "Agnus Dei" og "Christe, du Lamm Gottes"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="492"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O, Du Guds Lam!
@@ -19795,11 +19524,10 @@ Derfra vort Liv begynder;
     <title><num>260.</num>Christus, vor Gienløser blid</title>
     <firstline>Christus, vor Gienløser blid</firstline>
     <notes>
-       <note>De Bøhmiske Brødres "Christus, der uns selig macht" frit oversat og afkortet</note>
+       <note>* De Bøhmiske Brødres "Christus, der uns selig macht" frit oversat og afkortet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="492-494"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Christus, vor Gienløser blid,
@@ -19863,11 +19591,10 @@ Naar vi fare heden!
     <title><num>261.</num>Jesus! dine dybe Vunder</title>
     <firstline>Jesus! dine dybe Vunder</firstline>
     <notes>
-       <note>Heermans ogsaa hos os velbekiendte "Jesu, deine tiefe Wunden," frit oversat</note>
+       <note>* Heermans ogsaa hos os velbekiendte "Jesu, deine tiefe Wunden," frit oversat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="494-496"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Jesus! dine dybe Vunder
@@ -19931,11 +19658,10 @@ Sødt af Livet overvundet!
     <title><num>262.</num>Ind i Haven Jesus gik</title>
     <firstline>Ind i Haven Jesus gik</firstline>
     <notes>
-       <note>Af Stockman's "Jesu Leiden, Pein und Tod"</note>
+       <note>* Af Stockman's "Jesu Leiden, Pein und Tod"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="496-499"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Ind i Haven Jesus gik,
@@ -20071,11 +19797,10 @@ End Du mig fortjente!
     <title><num>263.</num>I Dødens Baand vor Frelser laae</title>
     <firstline>I Dødens Baand vor Frelser laae</firstline>
     <notes>
-       <note>Luthers Paaske-Sang <xref type="translation" poem="luther2000070919"/> paany fordansket</note>
+       <note>* Luthers Paaske-Sang <xref type="translation" poem="luther2000070919"/> paany fordansket</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="500-501"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I Dødens Baand vor Frelser laae,
@@ -20139,11 +19864,10 @@ Døds-Natten, hun er forgangen!
     <title><num>264.</num>Nu kom det rette Paaske-Lam</title>
     <firstline>Nu kom det rette Paaske-Lam</firstline>
     <notes>
-       <note>Udtaget af den Foregaaende</note>
+       <note>* Udtaget af den Foregaaende</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="501-502"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Nu kom det rette Paaske-Lam,
@@ -20171,11 +19895,10 @@ Syng evig til Lammets Ære:
     <title><num>265.</num>Salighedens Morgen-Røde</title>
     <firstline>Salighedens Morgen-Røde</firstline>
     <notes>
-       <note>Franck's "Dieses ist der Tag der Wonne" med lidt omstilling, frit oversat</note>
+       <note>* Franck's "Dieses ist der Tag der Wonne" med lidt omstilling, frit oversat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="502-503"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Salighedens Morgen-Røde,
@@ -20234,11 +19957,10 @@ Med sin Aand sin Strid mod Livet!
     <title><num>266.</num>Idag opstod den Herre Christ</title>
     <firstline>Idag opstod den Herre Christ</firstline>
     <notes>
-       <note>Oprindelig paa Munke-Latin "Surrexit Christus hodie" hos os "Fra Døde opstod den Herre Christ"</note>
+       <note>* Oprindelig paa Munke-Latin "Surrexit Christus hodie" hos os "Fra Døde opstod den Herre Christ"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="504"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Idag opstod den Herre Christ,
@@ -20278,11 +20000,10 @@ Nu løste os af Dødens Baand!
     <title><num>267.</num>Til Himmels foer den Ærens Drot</title>
     <firstline>Til Himmels foer den Ærens Drot</firstline>
     <notes>
-       <note>Den gamle "Cælos ascendit hodie" lidt udvidet</note>
+       <note>* Den gamle "Cælos ascendit hodie" lidt udvidet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="505-506"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Til Himmels foer den Ærens Drot,
@@ -20332,12 +20053,12 @@ Med Straale-Krands paa Rosen-Sky!
     <title><num>268.</num>Hjelp Gud, at jeg nu kunde</title>
     <firstline>Hjelp Gud, at jeg nu kunde</firstline>
     <notes>
-       <note>vor egen Gamle, med samme Begyndelse gjort i Fængsel, nu læmpelig ændret</note>
+       <note>* vor egen Gamle, med samme Begyndelse gjort i Fængsel, nu læmpelig ændret</note>
        <note>Hvem kan forklare hvad Grundtvigs note ovenfor betyder? Send svaret til jesper@kalliope.org.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="506-508"/>
-    <keywords>helpwanted,salme</keywords>
+    <keywords>helpwanted</keywords>
 </head>
 <body>
 Hjelp Gud, at jeg nu kunde,
@@ -20427,11 +20148,10 @@ Altsammen vi skal faae!
     <title><num>269.</num>Det hellige Kors, vor Herre, Han bar</title>
     <firstline>Det hellige Kors, vor Herre, Han bar</firstline>
     <notes>
-       <note>Gammel-Dansk fra Middel-Alderen, ændret paany</note>
+       <note>* Gammel-Dansk fra Middel-Alderen, ændret paany</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="508-509"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Det hellige Kors, vor Herre, Han bar,
@@ -20461,11 +20181,10 @@ Saa vi ham frygte og elske, Amen!
     <title><num>270.</num>En Ædel-Steen er rosenrød</title>
     <firstline>En Ædel-Steen er rosenrød</firstline>
     <notes>
-       <note>Sammensat af Hr. Mikkels Rim i Korthed, hvad før blev langt i den gamle "Nu lader os af Hjertens Grund"</note>
+       <note>* Sammensat af Hr. Mikkels Rim i Korthed, hvad før blev langt i den gamle "Nu lader os af Hjertens Grund"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="509-511"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 En Ædel-Steen er rosenrød,
@@ -20531,11 +20250,10 @@ Saa vil jeg dig lovsjunge!
     <title><num>271.</num>Den bittre Død dig trængde</title>
     <firstline>Den bittre Død dig trængde</firstline>
     <notes>
-       <note>Et Vers af Palladius efter det Latinske "Laus tibi Christe"</note>
+       <note>* Et Vers af Palladius efter det Latinske "Laus tibi Christe"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="511"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Den bittre Død dig trængde,
@@ -20560,11 +20278,10 @@ Gud har forbarmet Sig!
     <title><num>272.</num>Hører til, I høie Himle</title>
     <firstline>Hører til, I høie Himle!</firstline>
     <notes>
-       <note>Kingos med samme Begyndelse, i Udtryk endeel forandret</note>
+       <note>* Kingos med samme Begyndelse, i Udtryk endeel forandret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="512-513"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hører til, I høie Himle!
@@ -20628,11 +20345,10 @@ Op med Sang til Himmerige!
     <title><num>273.</num>Solen vel i sorte Klæder</title>
     <firstline>Solen vel i sorte Klæder</firstline>
     <notes>
-       <note>Holger Paulis "Solen udi mørke Klæder" omgjort</note>
+       <note>* Holger Paulis "Solen udi mørke Klæder" omgjort</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="513-515"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Solen vel i sorte Klæder
@@ -20687,12 +20403,11 @@ Græde kun jeg kan af Glæde!
     <title><num>274.</num>Gak under Jesu Kors at staae</title>
     <firstline>Gak under Jesu Kors at staae</firstline>
     <notes>
-       <note>Kingos velbekiendte, med lidt Sprog-Forandring</note>
+       <note>* Kingos velbekiendte, med lidt Sprog-Forandring</note>
        <note>Se også den ubeskårede udgave af <xref poem="grundtvig20010107a20b"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="515-517"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Gak under Jesu Kors at staae,
@@ -20762,11 +20477,10 @@ Det blive maa paa denne Jord!
     <title><num>275.</num>O hjertenskiære Jesus Christ</title>
     <firstline>O hjertenskiære Jesus Christ</firstline>
     <notes>
-       <note>"O hjertekiære Jesu Christ" forkortet og nænsom ændret</note>
+       <note>* "O hjertekiære Jesu Christ" forkortet og nænsom ændret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="517-518"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O hjertenskiære Jesus Christ,
@@ -20825,11 +20539,10 @@ Velsigner evig Jesu Navn!
     <title><num>276.</num>Hvem seer jeg hist som Lammet gaae</title>
     <firstline>Hvem seer jeg hist som Lammet gaae</firstline>
     <notes>
-       <note>Brorsons "Her seer jeg da et Lam at gaae" forkortet og omsat</note>
+       <note>* Brorsons "Her seer jeg da et Lam at gaae" forkortet og omsat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="518-521"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hvem seer jeg hist som Lammet gaae
@@ -20917,11 +20630,10 @@ Er Rum paa Himmel-Thronen.
     <title><num>277.</num>Naglet til et Kors paa Jorden</title>
     <firstline>Naglet til et Kors paa Jorden</firstline>
     <notes>
-       <note>No. 422 i den Guldbergske Psalmebog, sparsomt ændret</note>
+       <note>* No. 422 i den Guldbergske Psalmebog, sparsomt ændret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="521-523"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Naglet til et Kors paa Jorden,
@@ -20994,11 +20706,10 @@ Af en evig høilys Dag!
     <title><num>278.</num>Ømme Taarer, Hjerte-Toner</title>
     <firstline>Ømme Taarer, Hjerte-Toner</firstline>
     <notes>
-       <note>Nordahl Bruns "Ømme Taarer, bange Toner" lidt ændret og afkortet</note>
+       <note>* Nordahl Bruns "Ømme Taarer, bange Toner" lidt ændret og afkortet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="523-524"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Ømme Taarer, Hjerte-Toner,
@@ -21044,11 +20755,10 @@ Som slaaer ømt ved Næstens Smerte!
     <title><num>279.</num>O Held os, at vi kiende Dig</title>
     <firstline>O Held os, at vi kiende Dig</firstline>
     <notes>
-       <note>Efter No. 150 i den Evangeliske Psalmebog</note>
+       <note>* Efter No. 150 i den Evangeliske Psalmebog</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="524-525"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O Held os, at vi kiende Dig,
@@ -21074,11 +20784,10 @@ Vort Liv er Du i Døden!
     <title><num>280.</num>Jesus, i din Død er Livet</title>
     <firstline>Jesus, i din Død er Livet</firstline>
     <notes>
-       <note>Efter No. 163 i den Ny Psalmebog</note>
+       <note>* Efter No. 163 i den Ny Psalmebog</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="525"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Jesus, i din Død er Livet,
@@ -21106,11 +20815,10 @@ I Guds Haand er ingen Pine!
     <title><num>281.</num>I Verden mon være de Sygdomme to</title>
     <firstline>I Verden mon være de Sygdomme to</firstline>
     <notes>
-       <note>Aandelig Kæmpe-Vise fra 1812</note>
+       <note>* Aandelig Kæmpe-Vise fra 1812</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="525-529"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I Verden mon være de Sygdomme to,
@@ -21241,7 +20949,6 @@ Da hører du Paradis-Sange!
     <firstline>Hvor er nu de gamle Stier</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="529-534"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hvor er nu de gamle Stier,
@@ -21420,7 +21127,6 @@ Torne-Kronen dyrebar!
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="534-535"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Over Krybben Korset svæver,
@@ -21457,11 +21163,10 @@ Kronen adler Korsets Pine!
     <title><num>284.</num>Guds Engel sidder paa Gravens Bredd</title>
     <firstline>Guds Engel sidder paa Gravens Bredd</firstline>
     <notes>
-       <note>Vor Gamle "Guds Engel sidder hos Graven" lidt udvidet</note>
+       <note>* Vor Gamle "Guds Engel sidder hos Graven" lidt udvidet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="535-536"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Guds Engel sidder paa Gravens Bredd,
@@ -21495,11 +21200,10 @@ Gav Menneskens Kiøn for Døden Bod!
     <title><num>285.</num>Christus fuldstrag</title>
     <firstline>Christus fuldstrag</firstline>
     <notes>
-       <note>Vort ældgamle Paaske-Vers "Christ have Lov"</note>
+       <note>* Vort ældgamle Paaske-Vers "Christ have Lov"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="536"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Christus fuldstrag,
@@ -21517,11 +21221,10 @@ Lovet være vor Herres Dag!
     <title><num>286.</num>Christ stod op af Døde</title>
     <firstline>Christ stod op af Døde</firstline>
     <notes>
-       <note>Den Gamle efterlignet</note>
+       <note>* Den Gamle efterlignet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="536-537"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Christ stod op af Døde,
@@ -21549,11 +21252,10 @@ Alt hvad Han har lovet os!
     <title><num>287.</num>I Døden Jesus blunded'</title>
     <firstline>I Døden Jesus blunded'</firstline>
     <notes>
-       <note>Søren Jonesøns Velbekiendte, lidt ændret</note>
+       <note>* Søren Jonesøns Velbekiendte, lidt ændret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="537-538"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I Døden Jesus blunded',
@@ -21608,11 +21310,10 @@ Med Livets Krone faae!
     <title><num>288.</num>Op, Sjæl, bryd Søvnen af</title>
     <firstline>Op, Sjæl, bryd Søvnen af</firstline>
     <notes>
-       <note>Kingos Udmærkede, lidt omsat</note>
+       <note>* Kingos Udmærkede, lidt omsat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="538-540"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Op, Sjæl, bryd Søvnen af,
@@ -21678,12 +21379,11 @@ Dit Navn velsignet være!
     <title><num>289.</num>Som den gyldne Soel frembryder</title>
     <firstline>Som den gyldne Soel frembryder</firstline>
     <notes>
-       <note>Kingos Berømte, for en Deel omsat</note>
+       <note>* Kingos Berømte, for en Deel omsat</note>
        <note>Cf. Kingos <xref poem="kingo2001071402"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="540-542"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Som den gyldne Soel frembryder
@@ -21765,11 +21465,10 @@ Salig jeg skal see og finde!
     <title><num>290.</num>O, kiæreste Siæl, op at vaage</title>
     <firstline>O, kiæreste Siæl, op at vaage!</firstline>
     <notes>
-       <note>Kingos, lidt ændret</note>
+       <note>* Kingos, lidt ændret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="542-543"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O, kiæreste Siæl, op at vaage!
@@ -21809,11 +21508,10 @@ For vi er med Jesus ilive!
     <title><num>291.</num>Hvor er dog Paaske sød og blid</title>
     <firstline>Hvor er dog Paaske sød og blid</firstline>
     <notes>
-       <note>Brorsons med samme Begyndelse, sammentrukket og omsat</note>
+       <note>* Brorsons med samme Begyndelse, sammentrukket og omsat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="543-545"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hvor er dog Paaske sød og blid
@@ -21867,12 +21565,11 @@ Jesus stod i Morgen-Røde!
     <title><num>292.</num>Hører, I, som græde</title>
     <firstline>Hører, I, som græde</firstline>
     <notes>
-       <note>Brorsons med samme Begyndelse, tildeels omarbeidet</note>
+       <note>* Brorsons med samme Begyndelse, tildeels omarbeidet</note>
        <note>Cf. Brorsons <xref poem="brorson1739a9"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="545-547"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hører, I, som græde,
@@ -21962,11 +21659,10 @@ Jord og Himmel med hinanden!
     <title><num>293.</num>Triumf Triumf! vor Soel er nu oprundet</title>
     <firstline>Triumf Triumf! vor Soel er nu oprundet</firstline>
     <notes>
-       <note>Af Brorsons med samme Begyndelse og Tanke-Gang</note>
+       <note>* Af Brorsons med samme Begyndelse og Tanke-Gang</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="547-548"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Triumf Triumf! vor Soel er nu oprundet,
@@ -22011,11 +21707,10 @@ Triumf! Triumf! Halleluja!
     <title><num>294.</num>O Helt, som undertvang al Død</title>
     <firstline>O Helt, som undertvang al Død</firstline>
     <notes>
-       <note>No. 187 i den Guldbergske Psalmebog, sparsom ændret</note>
+       <note>* No. 187 i den Guldbergske Psalmebog, sparsom ændret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="548-551"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O Helt, som undertvang al Død,
@@ -22102,11 +21797,10 @@ Meer end Verden seer og tænker!
     <title><num>295.</num>Jesus lever, Graven brast</title>
     <firstline>Jesus lever, Graven brast</firstline>
     <notes>
-       <note>Nordahl Bruns, lidt ændret</note>
+       <note>* Nordahl Bruns, lidt ændret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="551"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Jesus lever, Graven brast,
@@ -22130,11 +21824,10 @@ Jesus vandt og vi har vundet!
     <title><num>296.</num>Al Verdens Synd er sonet ud</title>
     <firstline>Al Verdens Synd er sonet ud</firstline>
     <notes>
-       <note>No. 177 i den Ny Psalmebog</note>
+       <note>* No. 177 i den Ny Psalmebog</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="551"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Al Verdens Synd er sonet ud,
@@ -22155,11 +21848,10 @@ Som med Sig bød Sine leve!
     <title><num>297.</num>Lilje guul, hvad vil du her?</title>
     <firstline>Lilje guul, hvad vil du her?</firstline>
     <notes>
-       <note>Paaske-Lørdagssang fra 1817</note>
+       <note>* Paaske-Lørdagssang fra 1817</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="552-555"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Lilje guul, hvad vil du her?
@@ -22304,11 +21996,10 @@ Vaagne i livsaligt Minde!
     <title><num>298.</num>Herren Sig hæver</title>
     <firstline>Herren Sig hæver!</firstline>
     <notes>
-       <note>Drømme-Kvad ved Graven Paaske-Morgen 1817</note>
+       <note>* Drømme-Kvad ved Graven Paaske-Morgen 1817</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="556-559"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Gabriel:
@@ -22440,12 +22131,11 @@ I Jesu Navn og syng med os:
     <title><num>299.</num>Lyse Morgen er oprunden</title>
     <firstline>Lyse Morgen er oprunden</firstline>
     <notes>
-       <note>Af Ingemanns Paaske-Sang uforandret</note>
+       <note>* Af Ingemanns Paaske-Sang uforandret</note>
        <note>Note til strofe 2, vers 4: Mens han alt paa Lysets Vinge overfarer Jord og Hav!</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="559-560"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Lyse Morgen er oprunden,
@@ -22484,11 +22174,10 @@ Engle-Røst fra Graven toner!
     <title><num>300.</num>Hørt det har jeg, Han opstod</title>
     <firstline>Hørt det har jeg, Han opstod</firstline>
     <notes>
-       <note>Ogsaa Ingemanns uforandret</note>
+       <note>* Ogsaa Ingemanns uforandret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="560-561"/>
-    <keywords>salme</keywords>
 <!--  TODO: Link til Ingemanns original. -->
 </head>
 <body>
@@ -22527,13 +22216,12 @@ Salig, hellig og forklaret!
     <title><num>301.</num>Har Sorg og Frygt mit Lys udslukt</title>
     <firstline>Har Sorg og Frygt mit Lys udslukt</firstline>
     <notes>
-       <note>Ingemanns uforandret</note>
+       <note>* Ingemanns uforandret</note>
        <note>Note til strofe 4, vers 6: Lær mig at troe hvad ei jeg saae, og Vidnesbyrd at lide paa</note>
        <!--  TODO: Link til Ingemanns original. -->
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="561-562"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Har Sorg og Frygt mit Lys udslukt
@@ -22576,7 +22264,6 @@ Til Savnets Tid er omme!
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="562-564"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Tag det sorte Kors fra Graven!
@@ -22650,7 +22337,6 @@ Med din Røst, hvor Lærker himle!
     <firstline>Dødning-Gud er ei vor Drot</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="564-567"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Dødning-Gud er ei vor Drot,
@@ -22773,7 +22459,6 @@ Paa den hele Klode!
     <firstline>Guddommelige Tvillinger</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="567-570"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Guddommelige Tvillinger,
@@ -22883,7 +22568,6 @@ At Livet den har favnet!
     <firstline>Du, som i Paaske-Dagningen</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="570-573"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Du, som i Paaske-Dagningen
@@ -22982,7 +22666,6 @@ At Solen var oprunden!
     <firstline>I Graven laae den Herre Christ</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="573-574"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I Graven laae den Herre Christ,
@@ -23038,7 +22721,6 @@ Som Sole vi opstaae forvist,
     <firstline>Daniel i Løver-Kulen</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="574-575"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Daniel i Løver-Kulen
@@ -23081,7 +22763,6 @@ Skal i Gry opstaae med Glands!
     <firstline>Anden Gang opstod i Aanden</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="575-578"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Anden Gang opstod i Aanden,
@@ -23188,7 +22869,6 @@ Himmelsk Lys og evigt Liv!
     <firstline>Vaar i Guds Rige, velkommen paany</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="578-579"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vaar i Guds Rige, velkommen paany
@@ -23235,7 +22915,6 @@ Flyver fra Vintren som Storken i Høst!
     <firstline>I Vuggens Engel kom til Jord</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="579-580"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I Vuggens Engel kom til Jord
@@ -23270,7 +22949,6 @@ Himmerig Hans Glæde!
     <firstline>Engel, hvor jeg har dig kiær</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="580"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Engel, hvor jeg har dig kiær,
@@ -23305,7 +22983,6 @@ Er vi alle Dage!
     <firstline>Korsets hvide Seiers-Fane</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="581-584"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Korsets hvide Seiers-Fane,
@@ -23424,7 +23101,6 @@ Thi for Sagnet da gaaer Syn!
     <firstline>Aften rød giør Morgen sød</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="584-585"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Aften rød giør Morgen sød,
@@ -23488,11 +23164,10 @@ Fryd dig, Natten er forgangen!
     <title><num>314.</num>Seierrig opstanden</title>
     <firstline>Seierrig opstanden</firstline>
     <notes>
-       <note>Himmelfarts-Verset "Postqvam resurrexit" eller "Christ til Himmels mon fare"</note>
+       <note>* Himmelfarts-Verset "Postqvam resurrexit" eller "Christ til Himmels mon fare"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="585"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Seierrig opstanden,
@@ -23508,11 +23183,10 @@ Gud skee Lov og Takke!
     <title><num>315.</num>Ypperlig Høitid, med aandelig Glæde</title>
     <firstline>Ypperlig Høitid, med aandelig Glæde</firstline>
     <notes>
-       <note>Fordum "den ypperste Høitid og stor aandelig Glæde" efter "Festum nunc celebre"</note>
+       <note>* Fordum "den ypperste Høitid og stor aandelig Glæde" efter "Festum nunc celebre"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="586"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Ypperlig Høitid, med aandelig Glæde,
@@ -23546,11 +23220,10 @@ I Glemselens Afgrund begravet!
     <title><num>316.</num>Til Himmels foer, som Gud og Mand</title>
     <firstline>Til Himmels foer, som Gud og Mand</firstline>
     <notes>
-       <note>Den gamle "Triumf-Sang" som før begyndte "Til Himmels foer den Herre sand"</note>
+       <note>* Den gamle "Triumf-Sang" som før begyndte "Til Himmels foer den Herre sand"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="586-587"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Til Himmels foer, som Gud og Mand,
@@ -23590,11 +23263,10 @@ Eet i Fuldkommenhedens Baand!
     <title><num>317.</num>Min Sjæl og Aand! opsving du dig</title>
     <firstline>Min Sjæl og Aand! opsving du dig</firstline>
     <notes>
-       <note>Kingos "Min Sjæl og Aand, opmuntre dig"</note>
+       <note>* Kingos "Min Sjæl og Aand, opmuntre dig"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="587-588"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Min Sjæl og Aand! opsving du dig
@@ -23644,11 +23316,10 @@ Gid Længslens Tid var omnie!
     <title><num>318.</num>Lov og Tak og evig Ære</title>
     <firstline>Lov og Tak og evig Ære</firstline>
     <notes>
-       <note>Kingos velbekiendte, lidt anderledes, med Tilsætning af Slutnings-Verset i "Som den gyldne Soel frembryder"</note>
+       <note>* Kingos velbekiendte, lidt anderledes, med Tilsætning af Slutnings-Verset i "Som den gyldne Soel frembryder"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="589"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Lov og Tak og evig Ære
@@ -23685,12 +23356,11 @@ Der Guds-Hvilen jeg skal finde!
     <title><num>319.</num>Drag, Jesus, mig</title>
     <firstline>Drag, Jesus, mig</firstline>
     <notes>
-       <note>Brorsons med samme Begyndelse, saa smaat forandret</note>
+       <note>* Brorsons med samme Begyndelse, saa smaat forandret</note>
        <note>Cf. Brorsons <xref poem="brorson1739a11"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="590"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Drag, Jesus, mig
@@ -23730,12 +23400,11 @@ Støv du kan forklare!
     <title><num>320.</num>Bort, Verden, af mit Sind og Øie</title>
     <firstline>Bort, Verden, af mit Sind og Øie!</firstline>
     <notes>
-       <note>No. 234 i den Guldbergske Psalmebog, sparsomt ændret</note>
+       <note>* No. 234 i den Guldbergske Psalmebog, sparsomt ændret</note>
        <!-- Side 592 fejltrykt som 492. -->
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="591-592"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Bort, Verden, af mit Sind og Øie!
@@ -23801,11 +23470,10 @@ Jeg kun min Jesus elske vil.
     <title><num>321.</num>Den Helt, som knuste Dødens Magt</title>
     <firstline>Den Helt, som knuste Dødens Magt</firstline>
     <notes>
-       <note>Af Fru Boies "Saa knuste Christus Dødens Magt"</note>
+       <note>* Af Fru Boies "Saa knuste Christus Dødens Magt"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="592-593"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Den Helt, som knuste Dødens Magt,
@@ -23837,11 +23505,10 @@ Jeg er med dig alle Dage!
     <title><num>322.</num>Min Harpe jeg til Sang om Bjerget stemmer</title>
     <firstline>Min Harpe jeg til Sang om Bjerget stemmer</firstline>
     <notes>
-       <note>Nordahl Bruns "Min Harpe Leeg om Oljebjerg istemmer"</note>
+       <note>* Nordahl Bruns "Min Harpe Leeg om Oljebjerg istemmer"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="593-595"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Min Harpe jeg til Sang om Bjerget stemmer,
@@ -23907,11 +23574,10 @@ Og see det Lys, som klart og evig brænder
     <title><num>323.</num>Det er fuldbragt, til Himmels foer</title>
     <firstline>Det er fuldbragt, til Himmels foer</firstline>
     <notes>
-       <note>No. 180 i den Evangeliske Psalmebog</note>
+       <note>* No. 180 i den Evangeliske Psalmebog</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="595"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Det er fuldbragt, til Himmels foer
@@ -23932,11 +23598,10 @@ Taksigelse og Ære!
     <title><num>324.</num>Jesus Christ! vi offre Dig</title>
     <firstline>Jesus Christ! vi offre Dig</firstline>
     <notes>
-       <note>Efter No. 188 i den Evangeliske Psalmebog</note>
+       <note>* Efter No. 188 i den Evangeliske Psalmebog</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="595-596"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Jesus Christ! vi offre Dig
@@ -23962,12 +23627,11 @@ Dele skal din Herlighed.
     <title><num>325.</num>Hos Gud, før Verdens Grund blev lagt</title>
     <firstline>Hos Gud, før Verdens Grund blev lagt</firstline>
     <notes>
-       <note>Ingemanns Himmelfarts-Sang "Fuldendt er Naadens store Værk" med Udeladelse af første Vers</note>
+       <note>* Ingemanns Himmelfarts-Sang "Fuldendt er Naadens store Værk" med Udeladelse af første Vers</note>
        <note>[1] Den Haand, som tæmmed Storm og Hav; [2] Himlen vinker, Herlighedens Krone blinker; [3] Velsignelse paa Jorderig endnu din Haand udbreder; [4] Forjættet har du os din Aand; [5] Herre! stig da paa din Throne; [6] Jesus aldrig Jorden glemmer.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="596-597"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hos Gud, før Verdens Grund blev lagt,
@@ -24011,7 +23675,6 @@ Jesus Christus os ei glemmer! [6]
     <firstline>Vai nu, Dannebrog, paa Voven!</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="597-599"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vai nu, Dannebrog, paa Voven!
@@ -24085,7 +23748,6 @@ Siger: hvil med salig Glæde!
     <firstline>Gud-Fader udsendte sit Naadens-Ord</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="599-600"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Gud-Fader udsendte sit Naadens-Ord,
@@ -24127,11 +23789,10 @@ I Himmels og Jords Eenbaarne!
     <title><num>328.</num>Libanons de høie Cedre</title>
     <firstline>Libanons de høie Cedre</firstline>
     <notes>
-       <note>Propheten Ezechiel i det 17., christelig forklaret</note>
+       <note>* Propheten Ezechiel i det 17., christelig forklaret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="600-602"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Libanons de høie Cedre,
@@ -24205,11 +23866,10 @@ Ogsaa Den fra Abraham!
     <title><num>329.</num>Fat Mod, du Jord, vær frisk og glad</title>
     <firstline>Fat Mod, du Jord, vær frisk og glad!</firstline>
     <notes>
-       <note>Propheten Joels Spaadom i det 2. og 3., forklaret efter Apostlenes Gerninger 2</note>
+       <note>* Propheten Joels Spaadom i det 2. og 3., forklaret efter Apostlenes Gerninger 2</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="602-604"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Fat Mod, du Jord, vær frisk og glad!
@@ -24289,11 +23949,10 @@ Dem tager under Kaaben!
     <title><num>330.</num>Hvilende paa mig er Guds Aand</title>
     <firstline>Hvilende paa mig er Guds Aand</firstline>
     <notes>
-       <note>Propheten Esaias Spaadom i det 61., forklaret efter Lucas i det 4.</note>
+       <note>* Propheten Esaias Spaadom i det 61., forklaret efter Lucas i det 4.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="604-605"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hvilende paa mig er Guds Aand,
@@ -24352,11 +24011,10 @@ Løste ind med Ord og Aand!
     <title><num>331.</num>Himlene, Talsmand! fortælle din Ære</title>
     <firstline>Himlene, Talsmand! fortælle din Ære</firstline>
     <notes>
-       <note>Af Græske Pindse-Vers, knyttede til den <a poem="bibelsalme19">19. Davids-Psalme</a></note>
+       <note>* Af Græske Pindse-Vers, knyttede til den <a poem="bibelsalme19">19. Davids-Psalme</a></note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="605-607"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Himlene, Talsmand! fortælle din Ære,
@@ -24408,11 +24066,10 @@ Hvor Sangen Dig bringer Halleluja!
     <title><num>332.</num>Sidder rolig i Jerusalem</title>
     <firstline>Sidder rolig i Jerusalem</firstline>
     <notes>
-       <note>Efter det Græske</note>
+       <note>* Efter det Græske</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="607"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Sidder rolig i Jerusalem,
@@ -24446,11 +24103,10 @@ Tonesatte efter Hedning-Griller,
     <title><num>333.</num>Bisper og Præster, som axled ved Daaben</title>
     <firstline>Bisper og Præster, som axled ved Daaben</firstline>
     <notes>
-       <note>En Græsk Allehelgens-Sang, efterlignet</note>
+       <note>* En Græsk Allehelgens-Sang, efterlignet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="608-609"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Bisper og Præster, som axled ved Daaben
@@ -24516,11 +24172,10 @@ Giør deres Minde velsignet paa Jord!
     <title><num>334.</num>Herre! vi elske dit Straale-Palads</title>
     <firstline>Herre! vi elske dit Straale-Palads</firstline>
     <notes>
-       <note>Samlet af Græske Vers paa Kirke-Festen i September</note>
+       <note>* Samlet af Græske Vers paa Kirke-Festen i September</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="609-610"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Herre! vi elske dit Straale-Palads,
@@ -24565,11 +24220,10 @@ Skiænket os sønlig Udkaarelses Aand!
     <title><num>335.</num>Fordum sønneløs og gold</title>
     <firstline>Fordum sønneløs og gold</firstline>
     <notes>
-       <note>Af Græske Vers paa Christi Daabs-Fest i Januar</note>
+       <note>* Af Græske Vers paa Christi Daabs-Fest i Januar</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="610-611"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Fordum sønneløs og gold,
@@ -24600,11 +24254,10 @@ Adam blev i Davids By!
     <title><num>336.</num>Til vor Forsamlings Paulun</title>
     <firstline>Til vor Forsamlings Paulun</firstline>
     <notes>
-       <note>En Græsk Sang om Kirke-Fædrene "christelig forvendt"</note>
+       <note>* En Græsk Sang om Kirke-Fædrene "christelig forvendt"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="611-612"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Til vor Forsamlings Paulun
@@ -24662,11 +24315,10 @@ Eet med det levendegiørende Ord!
     <title><num>337.</num>Kvinden saae, din Frugt var skiøn</title>
     <firstline>Kvinden saae, din Frugt var skiøn</firstline>
     <notes>
-       <note>Efter det Græske</note>
+       <note>* Efter det Græske</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="613-614"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kvinden saae, din Frugt var skiøn,
@@ -24716,11 +24368,10 @@ Med Jesus, den Opstandne!
     <title><num>338.</num>Engle i Skare</title>
     <firstline>Engle i Skare</firstline>
     <notes>
-       <note>Et Græsk Altergangs-Vers, efterlignet</note>
+       <note>* Et Græsk Altergangs-Vers, efterlignet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="614-615"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Engle i Skare
@@ -24757,11 +24408,10 @@ Gud være lovet! Halleluja!
     <title><num>339.</num>I dine Helgenes straalende Kiæde</title>
     <firstline>I dine Helgenes straalende Kiæde</firstline>
     <notes>
-       <note>Et Græsk Vers</note>
+       <note>* Et Græsk Vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="615"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I dine Helgenes straalende Kiæde
@@ -24784,11 +24434,10 @@ Bænk mig saa naadig ved Bordet igien,
     <title><num>340.</num>Himmelske Brudgom! ak, jeg var i Senge</title>
     <firstline>Himmelske Brudgom! ak, jeg var i Senge</firstline>
     <notes>
-       <note>Et Græsk Vers</note>
+       <note>* Et Græsk Vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="615-616"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Himmelske Brudgom! ak, jeg var i Senge,
@@ -24816,11 +24465,10 @@ Halleluja! Halleluja! Halleluja!
     <title><num>341.</num>Hvad skal den unyttige Tjener med Pundet</title>
     <firstline>Hvad skal den unyttige Tjener med Pundet!</firstline>
     <notes>
-       <note>Et Græsk Vers</note>
+       <note>* Et Græsk Vers</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="616"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hvad skal den unyttige Tjener med Pundet!
@@ -24843,11 +24491,10 @@ Saa du til din Herres den evige Glæde
     <title><num>342.</num>Christus kom tilbage</title>
     <firstline>Christus kom tilbage</firstline>
     <notes>
-       <note>Det Latinske Pindse-Vers "Christus nos revisit"</note>
+       <note>* Det Latinske Pindse-Vers "Christus nos revisit"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="616"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Christus kom tilbage,
@@ -24864,11 +24511,10 @@ Med sin skjulte Haand!
     <title><num>343.</num>Samtlig her vi helligholde</title>
     <firstline>Samtlig her vi helligholde</firstline>
     <notes>
-       <note>Den Latinske Søndags-Sang "Omnes una celebremus"</note>
+       <note>* Den Latinske Søndags-Sang "Omnes una celebremus"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="617-618"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Samtlig her vi helligholde
@@ -24913,11 +24559,10 @@ I dit rolige Paulun!
     <title><num>344.</num>Dag med Ære, Dag med Ynde</title>
     <firstline>Dag med Ære, Dag med Ynde!</firstline>
     <notes>
-       <note>Den Latinske pindse-Sang "Lux jucunda, lux insignis" i Korthed efterlignet</note>
+       <note>* Den Latinske pindse-Sang "Lux jucunda, lux insignis" i Korthed efterlignet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="618-620"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Dag med Ære, Dag med Ynde!
@@ -24999,11 +24644,10 @@ Lad os love Guders Gud!
     <title><num>345.</num>Kom, skab os om, Gud-Helligaand</title>
     <firstline>Kom, skab os om, Gud-Helligaand!</firstline>
     <notes>
-       <note>Den Latinske Pindse-Sang "Veni creator, Spiritus" tillagt Karl den Store, og os velbekiendt, efter Luthers Bearbeidelse, som "Kom, Gud Skaber, o Hellig-Aand," nu frit oversat og forkortet</note>
+       <note>* Den Latinske Pindse-Sang "Veni creator, Spiritus" tillagt Karl den Store, og os velbekiendt, efter Luthers Bearbeidelse, som "Kom, Gud Skaber, o Hellig-Aand," nu frit oversat og forkortet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="620-621"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kom, skab os om, Gud-Helligaand!
@@ -25038,11 +24682,10 @@ Hans Brud, har samme Aand som De!
     <title><num>346.</num>Tider skifte, atter kom</title>
     <firstline>Tider skifte, atter kom</firstline>
     <notes>
-       <note>Dan Latinske Pindse-Sang "Beata nobis gaudia" efterlignet</note>
+       <note>* Dan Latinske Pindse-Sang "Beata nobis gaudia" efterlignet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="621-622"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Tider skifte, atter kom
@@ -25077,11 +24720,10 @@ Til de stille Glæder!
     <title><num>347.</num>Kom, o Hellig-Aand, kom brat</title>
     <firstline>Kom, o Hellig-Aand, kom brat!</firstline>
     <notes>
-       <note>Den Latinske Pindse-Sang "Veni, Sancte Spiritus, et emitte cælitus" efterlignet</note>
+       <note>* Den Latinske Pindse-Sang "Veni, Sancte Spiritus, et emitte cælitus" efterlignet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="622-623"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kom, o Hellig-Aand, kom brat!
@@ -25126,11 +24768,10 @@ Med din hvide Lilje!
     <title><num>348.</num>Kiærligheds og Sandheds Aand</title>
     <firstline>Kiærligheds og Sandheds Aand!</firstline>
     <notes>
-       <note>Den Latinske Pindse-Sang "Qui procedis ab utroqve" omsat og forkortet</note>
+       <note>* Den Latinske Pindse-Sang "Qui procedis ab utroqve" omsat og forkortet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="623-625"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kiærligheds og Sandheds Aand!
@@ -25210,11 +24851,10 @@ Det giør Enigheden!
     <title><num>349.</num>Paa Jerusalem det Ny</title>
     <firstline>Paa Jerusalem det Ny</firstline>
     <notes>
-       <note>Den Latinske Sang ved Kirke-Vielse "Urbs beata Jerusalem" blanket op</note>
+       <note>* Den Latinske Sang ved Kirke-Vielse "Urbs beata Jerusalem" blanket op</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="625-627"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Paa Jerusalem det Ny,
@@ -25280,11 +24920,10 @@ Os Vorherres Glæde!
     <title><num>350.</num>Christi Kirke! lydt du kvæde</title>
     <firstline>Christi Kirke! lydt du kvæde</firstline>
     <notes>
-       <note>"Psallat ecclesia, mater illibata" ligeledes</note>
+       <note>* "Psallat ecclesia, mater illibata" ligeledes</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="627-628"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Christi Kirke! lydt du kvæde,
@@ -25330,11 +24969,10 @@ Lyser Fred og skaber Glæde,
     <title><num>351.</num>Eenlighed er ei det Bedste</title>
     <firstline>Eenlighed er ei det Bedste!</firstline>
     <notes>
-       <note>Af den Latinske Kirke-Sang "Jerusalem et Sion filiæ"</note>
+       <note>* Af den Latinske Kirke-Sang "Jerusalem et Sion filiæ"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="628-629"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Eenlighed er ei det Bedste!
@@ -25380,11 +25018,10 @@ Som dig skiænked Paradis!
     <title><num>352.</num>Virkeligt det nu er blevet</title>
     <firstline>Virkeligt det nu er blevet</firstline>
     <notes>
-       <note>Af den Latinske Kirke-Sang "Qvam dilecta Tabernacula"</note>
+       <note>* Af den Latinske Kirke-Sang "Qvam dilecta Tabernacula"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="629-631"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Virkeligt det nu er blevet
@@ -25464,11 +25101,10 @@ Han, der var i Cana Giæst!
     <title><num>353.</num>Frelser! under aaben Sky</title>
     <firstline>Frelser! under aaben Sky</firstline>
     <notes>
-       <note>Den Latinske Daabs-Sang "Veterem hominem renovans Salvator" efterlignet</note>
+       <note>* Den Latinske Daabs-Sang "Veterem hominem renovans Salvator" efterlignet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="631-632"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Frelser! under aaben Sky
@@ -25505,11 +25141,10 @@ Giemmer himmelsk Liv og Aand!
     <title><num>354.</num>Sin Eenbaarne Gud hengivet</title>
     <firstline>Sin Eenbaarne Gud hengivet</firstline>
     <notes>
-       <note>Efter den Latinske Altergangs-Sang "Pange lingva gloriosi"</note>
+       <note>* Efter den Latinske Altergangs-Sang "Pange lingva gloriosi"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="632-633"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Sin Eenbaarne Gud hengivet
@@ -25540,11 +25175,10 @@ Evigt Liv er Guddoms-Ordet!
     <title><num>355.</num>Takker den Herre, som Sorgen omvendte</title>
     <firstline>Takker den Herre, som Sorgen omvendte</firstline>
     <notes>
-       <note>Af den Angel-Sachsiske Messiade i Exeter-Bogen</note>
+       <note>* Af den Angel-Sachsiske Messiade i Exeter-Bogen</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="633-634"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Takker den Herre, som Sorgen omvendte
@@ -25589,11 +25223,10 @@ Stiger af Blod-Bad som Aften-Soel rød!
     <title><num>356.</num>Gud-Helligaand! o kom</title>
     <firstline>Gud-Helligaand! o kom</firstline>
     <notes>
-       <note>En Engelsk Pindse-Sang "Come Holy Spirit, come" frit oversat</note>
+       <note>* En Engelsk Pindse-Sang "Come Holy Spirit, come" frit oversat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="634-635"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Gud-Helligaand! o kom
@@ -25633,11 +25266,10 @@ Og vi blev Fiendens Bytte!
     <title><num>357.</num>Hellig-Aand! vor Sorg Du slukke</title>
     <firstline>Hellig-Aand! vor Sorg Du slukke!</firstline>
     <notes>
-       <note>Pindse-Sangen "Holy Ghost, dispel our sadness" frit oversat og forkortet</note>
+       <note>* Pindse-Sangen "Holy Ghost, dispel our sadness" frit oversat og forkortet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="635"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hellig-Aand! vor Sorg Du slukke!
@@ -25668,11 +25300,10 @@ Byg dit Tempel i vort Bryst!
     <title><num>358.</num>Hellig-Aand! med Velbehag</title>
     <firstline>Hellig-Aand! med Velbehag</firstline>
     <notes>
-       <note>Montgomerys "Lord God, the Holy Ghost" frit oversat</note>
+       <note>* Montgomerys "Lord God, the Holy Ghost" frit oversat</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="635-636"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Hellig-Aand! med Velbehag
@@ -25709,11 +25340,10 @@ Og fra Glands til Glands forklarer!
     <title><num>359.</num>Fordum Alt var tomt og øde</title>
     <firstline>Fordum Alt var tomt og øde</firstline>
     <notes>
-       <note>Bathurst's "Ere the world with light invested" efterlignet</note>
+       <note>* Bathurst's "Ere the world with light invested" efterlignet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="636-637"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Fordum Alt var tomt og øde,
@@ -25758,11 +25388,10 @@ I det Blanke og det Bolde
     <title><num>360.</num>Du, som gaaer ud fra den levende Gud</title>
     <firstline>Du, som gaaer ud fra den levende Gud</firstline>
     <notes>
-       <note>Montgomerys <xref type="translation" poem="mont2000070901"/> efterlignet.</note>
+       <note>* Montgomerys <xref type="translation" poem="mont2000070901"/> efterlignet.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="637-638"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Du, som gaaer ud fra den levende Gud,
@@ -25814,11 +25443,10 @@ Gaaer kun Fortabelsens Æt fortabt!
     <title><num>361.</num>Herlige Ting er talt om dig</title>
     <firstline>Herlige Ting er talt om dig</firstline>
     <notes>
-       <note>Kirke-Sangen "Glorious things of thee are spoken" frit oversat</note>
+       <note>* Kirke-Sangen "Glorious things of thee are spoken" frit oversat.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="639"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Herlige Ting er talt om dig,
@@ -25849,11 +25477,10 @@ Findes kun i Herrens By!
     <title><num>362.</num>Tusinde Hvirvler paa Tromme vi slaae</title>
     <firstline>Tusinde Hvirvler paa Tromme vi slaae</firstline>
     <notes>
-       <note>Moore's "Sound the loud timbrel o'er Egypt's dark sea" efterlignet</note>
+       <note>* Moore's ,,Sound the loud timbrel o'er Egypt's dark sea'' efterlignet.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="639-640"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Tusinde Hvirvler paa Tromme vi slaae,
@@ -25877,11 +25504,10 @@ I Dybet nedhvirvled Hærskaren saa prud!
     <title><num>363.</num>Gylden-Aaret! hør, det runger</title>
     <firstline>Gylden-Aaret! hør, det runger</firstline>
     <notes>
-       <note>Montgomergs "Hark, the song of jubilee" efterlignet</note>
+       <note>* Montgomerys ,,Hark, the song of jubilee'' efterlignet.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="640-641"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Gylden-Aaret! hør, det runger,
@@ -25922,7 +25548,6 @@ Jesus, Dødens Bane-Mand!
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="641-642"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Helgen her og Helgen hisset
@@ -25967,11 +25592,10 @@ Daglig vi med Moses sang!<note>Cf. <xref bibel="bibelaabenbaringen15,3"/> og <xr
     <title><num>365.</num>Seier-Kirkens Høvding bold</title>
     <firstline>Seier-Kirkens Høvding bold!</firstline>
     <notes>
-       <note>Decourcys "Head of the church triumphant" fordansket og klaret</note>
+       <note>* Decourcys "Head of the church triumphant" fordansket og klaret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="642-643"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Seier-Kirkens Høvding bold!
@@ -26017,11 +25641,10 @@ Over alle Sole!
     <title><num>366.</num>Vor Gud, som Moder-Fugl i Lund</title>
     <firstline>Vor Gud, som Moder-Fugl i Lund</firstline>
     <notes>
-       <note>Cowper's "As birds their infant brood protect" fordansket og forlænget</note>
+       <note>* Cowper's "As birds their infant brood protect" fordansket og forlænget</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="643-644"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vor Gud, som Moder-Fugl i Lund,
@@ -26066,11 +25689,10 @@ Med Løfte paa Guds Lykke.
     <title><num>367.</num>Kom, Hellig-Aand, med Skaber-Magt</title>
     <firstline>Kom, Hellig-Aand, med Skaber-Magt!</firstline>
     <notes>
-       <note>En Engelsk Daabs-Sang "Come, Holy Ghost, descend from high"</note>
+       <note>* En Engelsk Daabs-Sang "Come, Holy Ghost, descend from high"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="644-645"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kom, Hellig-Aand, med Skaber-Magt!
@@ -26090,11 +25712,10 @@ For Øine glad at træde!
     <title><num>368.</num>Herren strækker ud sin Arm</title>
     <firstline>Herren strækker ud sin Arm</firstline>
     <notes>
-       <note>En Engelsk Daabs-Sang "Welcome to the Saviours breast"</note>
+       <note>* En Engelsk Daabs-Sang "Welcome to the Saviours breast"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="645"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Herren strækker ud sin Arm,
@@ -26113,11 +25734,10 @@ Sig fra Dig forvilde!
     <title><num>369.</num>O lad din Aand nu med os være</title>
     <firstline>O lad din Aand nu med os være</firstline>
     <notes>
-       <note>En Engelsk Daabs-Sang "Jesus, we lift our souls to Thee"</note>
+       <note>* En Engelsk Daabs-Sang "Jesus, we lift our souls to Thee"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="645-646"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O lad din Aand nu med os være,
@@ -26152,11 +25772,10 @@ I Skygge-Dalen Du gaaer med!
     <title><num>370.</num>Vor Frelser! ved dit Naade-Bord</title>
     <firstline>Vor Frelser! ved dit Naade-Bord</firstline>
     <notes>
-       <note>Doddridge's "Lord Jesus, is thy table spread"</note>
+       <note>* Doddridge's "Lord Jesus, is thy table spread"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="646"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vor Frelser! ved dit Naade-Bord
@@ -26186,11 +25805,10 @@ At Selv Du er tilstæde!
     <title><num>371.</num>I Dag med Haand og Mund til Giæst</title>
     <firstline>I Dag med Haand og Mund til Giæst</firstline>
     <notes>
-       <note>Efter Mason's "Today the Lord of hosts invites"</note>
+       <note>* Efter Mason's "Today the Lord of hosts invites"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="647"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 I Dag med Haand og Mund til Giæst
@@ -26220,11 +25838,10 @@ En Krands, som ei affalder!
     <title><num>372.</num>Mindes vi en fuldtro Ven</title>
     <firstline>Mindes vi en fuldtro Ven</firstline>
     <notes>
-       <note>Efter "If human kindness meets return"</note>
+       <note>* Efter "If human kindness meets return"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="647-648"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Mindes vi en fuldtro Ven
@@ -26262,11 +25879,10 @@ Finde Glæden i din Favn
     <title><num>373.</num>O himmelske Udsigt fra Kirke-Bjerg</title>
     <firstline>O himmelske Udsigt fra Kirke-Bjerg!</firstline>
     <notes>
-       <note>En Engelsk Sang "Oh for the eye of faith divine" efterlignet</note>
+       <note>* En Engelsk Sang "Oh for the eye of faith divine" efterlignet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="648-649"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O himmelske Udsigt fra Kirke-Bjerg!
@@ -26296,11 +25912,10 @@ I Sky sig til Frelseren hæver!
     <title><num>374.</num>Gud-Faders Søn gik hjem til Sit</title>
     <firstline>Gud-Faders Søn gik hjem til Sit</firstline>
     <notes>
-       <note>Mason's "My Saviour is gone up to heaven"</note>
+       <note>* Mason's "My Saviour is gone up to heaven"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="649"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Gud-Faders Søn gik hjem til Sit,
@@ -26330,11 +25945,10 @@ Du vundet har din Sag!
     <title><num>375.</num>Forventningsfulde Sjæle</title>
     <firstline>Forventningsfulde Sjæle</firstline>
     <notes>
-       <note>Efter Wesleys "Ye virgin souls, arise"</note>
+       <note>* Efter Wesleys "Ye virgin souls, arise"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="650"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Forventningsfulde Sjæle,
@@ -26376,11 +25990,10 @@ Indgaae til Herrens Glæde!
     <title><num>376.</num>Synger, Himmel, Jord og Hav</title>
     <firstline>Synger, Himmel, Jord og Hav!</firstline>
     <notes>
-       <note>Biskop Kenn's berømte Æresvers "Praise God, from whom all blessings flow"</note>
+       <note>* Biskop Kenn's berømte Æresvers "Praise God, from whom all blessings flow"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="651"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Synger, Himmel, Jord og Hav!
@@ -26395,11 +26008,10 @@ Fader, Søn og Hellig-Aand!
     <title><num>377.</num>Nu syng for Herren Psalmer ny</title>
     <firstline>Nu syng for Herren Psalmer ny</firstline>
     <notes>
-       <note>Alber's Pindse-Sang "Ein neues Lied dem Herrn Christ"</note>
+       <note>* Alber's Pindse-Sang "Ein neues Lied dem Herrn Christ"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="651"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Nu syng for Herren Psalmer ny,
@@ -26429,11 +26041,10 @@ At det i Himlen høres maa!
     <title><num>378.</num>Gud-Faders runde, milde Haand</title>
     <firstline>Gud-Faders runde, milde Haand</firstline>
     <notes>
-       <note>Alber's "Gar manche schone Gottes-Gab" lidt klaret</note>
+       <note>* Alber's "Gar manche schone Gottes-Gab" lidt klaret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="652"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Gud-Faders runde, milde Haand
@@ -26463,11 +26074,10 @@ Gud-Faders elskelige Søn!
     <title><num>379.</num>O Hellig-Aand! som Pindse-Dag</title>
     <firstline>O Hellig-Aand! som Pindse-Dag</firstline>
     <notes>
-       <note>Schirmer's "O heilger Geist, kehr bey uns ein" frit fordansket</note>
+       <note>* Schirmer's "O heilger Geist, kehr bey uns ein" frit fordansket</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="652-655"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O Hellig-Aand! som Pindse-Dag,
@@ -26565,11 +26175,10 @@ Sagte op til Himmerige!
     <title><num>380.</num>Drag ind ad disse Porte</title>
     <firstline>Drag ind ad disse Porte</firstline>
     <notes>
-       <note>P. Gerhard's "Zeuch ein zu meinen Thoren" forkortet og frit fordansket</note>
+       <note>* P. Gerhard's "Zeuch ein zu meinen Thoren" forkortet og frit fordansket</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="655-657"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Drag ind ad disse Porte,
@@ -26660,11 +26269,10 @@ Er Bække i din Haand!
     <title><num>381.</num>Guds Huus med Livets Ord</title>
     <firstline>Guds Huus med Livets Ord</firstline>
     <notes>
-       <note>Af Starck's "Ihr Christen kommt herbey," og "So lang die Sonne scheint"</note>
+       <note>* Af Starck's "Ihr Christen kommt herbey," og "So lang die Sonne scheint"</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="658-659"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Guds Huus med Livets Ord,
@@ -26714,11 +26322,10 @@ Lovsynge Herrens Bord!
     <title><num>382.</num>Vorherre kom til Jordans Flod</title>
     <firstline>Vorherre kom til Jordans Flod</firstline>
     <notes>
-       <note>Luther's "Christ unser Herr zum Jordan kam" frit fordansket</note>
+       <note>* Luther's "Christ unser Herr zum Jordan kam" frit fordansket</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="659-661"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vorherre kom til Jordans Flod,
@@ -26798,11 +26405,10 @@ Godt Pant er Hellig-Aanden!
     <title><num>383.</num>O Storværk skiønt af Herrens Haand</title>
     <firstline>O Storværk skiønt af Herrens Haand</firstline>
     <notes>
-       <note>Af P. Gerhard's "Du Volk das du getaufet bist" med lidt Ændring</note>
+       <note>* Af P. Gerhard's "Du Volk das du getaufet bist" med lidt Ændring</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="661-662"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 O Storværk skiønt af Herrens Haand,
@@ -26844,11 +26450,10 @@ Og rækker Livets Krone!
     <title><num>384.</num>Jesus Christus har afvendt Verdens Lyn</title>
     <firstline>Jesus Christus har afvendt</firstline>
     <notes>
-       <note>Luthers "Jesus Christus, unser Heiland" frit fordansket</note>
+       <note>* Luthers "Jesus Christus, unser Heiland" frit fordansket</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="662-663"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Jesus Christus har afvendt
@@ -26909,7 +26514,6 @@ Gierne for Ham Livet til.
     <firstline>Kom, Gud-Faders Aand fuldgod!</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="664-665"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Kom, Gud-Faders Aand fuldgod!
@@ -26974,11 +26578,10 @@ I vor Frelsers Kiærlighed!
     <title><num>386.</num>Nu nærmer sig vor Pindse-Fest</title>
     <firstline>Nu nærmer sig vor Pindse-Fest</firstline>
     <notes>
-       <note>Kingos med samme Begyndelse, lidt ændret og forkortet</note>
+       <note>* Kingos med samme Begyndelse, lidt ændret og forkortet</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="665-666"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Nu nærmer sig vor Pindse-Fest,
@@ -27018,11 +26621,10 @@ Med Livets Ord til evig Trøst!
     <title><num>387.</num>Klar op, mit Hjerte, Sjæl og Sind</title>
     <firstline>Klar op, mit Hjerte, Sjæl og Sind!</firstline>
     <notes>
-       <note>Kingos med samme Begyndelse, lidt ændret</note>
+       <note>* Kingos med samme Begyndelse, lidt ændret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="666-668"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Klar op, mit Hjerte, Sjæl og Sind!
@@ -27102,11 +26704,10 @@ Al Skabningens Halleluja!
     <title><num>388.</num>Aand over Aander! kom ned fra det Høie</title>
     <firstline>Aand over Aander! kom ned fra det Høie</firstline>
     <notes>
-       <note>Af Nordahl Bruns med samme Begyndelse</note>
+       <note>* Af Nordahl Bruns med samme Begyndelse</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="668"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Aand over Aander! kom ned fra det Høie,
@@ -27125,11 +26726,10 @@ Sandhedens Vidne og Kiærligheds Tolk!
     <title><num>389.</num>Fra Himlen Herrens Aand nedfoer</title>
     <firstline>Fra Himlen Herrens Aand nedfoer</firstline>
     <notes>
-       <note>Ingemanns Pindse-Sang uforandret</note>
+       <note>* Ingemanns Pindse-Sang uforandret</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="668-669"/>
-    <keywords>salme</keywords>
 <!--  TODO: Link til Ingemanns original. -->
 </head>
 <body>
@@ -27181,7 +26781,6 @@ Til Naadens Dom os kalder!
     <firstline>Klar op, du Sky paa Øien-Bryn</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="670-672"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Klar op, du Sky paa Øien-Bryn,
@@ -27290,7 +26889,6 @@ Fra Død sig føler dyrekiøbt!
     <firstline>Vi stole paa den Hellig-Aand</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="673-674"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Vi stole paa den Hellig-Aand,
@@ -27361,7 +26959,6 @@ Forgylde Herrens Huse!
     <firstline>Velkommen, Aand fra Himmelen</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="675"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Velkommen, Aand fra Himmelen,
@@ -27402,7 +26999,6 @@ Den mesterlig forklarer!
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="675-677"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Talsmand! som paa Jorderige
@@ -27463,7 +27059,6 @@ Naar vi byde skal Farvel!
     <firstline>Paaske-Soel med Pindse-Luer</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="677-679"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Paaske-Soel med Pindse-Luer
@@ -27546,7 +27141,6 @@ Med sin Aand i Kirkens Skiød!
     <firstline>Sjunger, alle Fugle, sjunger</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="679-681"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Sjunger, alle Fugle, sjunger
@@ -27611,7 +27205,6 @@ See vi skal Guds Herlighed!
     <firstline>Er som Faar vi uden Hyrde?</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="681-683"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Er som Faar vi uden Hyrde?
@@ -27699,7 +27292,6 @@ Forsmag her paa Fryden hist!
     <firstline>Almindelig er Christi Kirke</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="683-685"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Almindelig er Christi Kirke:
@@ -27774,7 +27366,6 @@ Uegennyttig Kiærlighed!
     <firstline>Syndernes Forladelse</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="685-686"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Syndernes Forladelse
@@ -27812,7 +27403,6 @@ Thi kun Synd dem skildte ad!
     <firstline>Var Vandet alene</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="686-687"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Var Vandet alene
@@ -27877,7 +27467,6 @@ Guds Kiærligheds-Drik!
     <firstline>Reis op dit Hoved, al Christenhed!</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="688-690"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Reis op dit Hoved, al Christenhed!
@@ -27965,7 +27554,6 @@ Da straaler Livets Krone!
     <firstline>Sørger ei for dem, der sove</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="690"/>
-    <keywords>salme</keywords>
 </head>
 <body>
 Sørger ei for dem, der sove
