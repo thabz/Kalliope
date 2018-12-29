@@ -9,6 +9,13 @@
   <works>andre</works>
 </person>
 
+<person id="anonym1700de" country="de" lang="de" type="collection">
+  <name>
+      <firstname>Anonyme, 18. Jahrhundert</firstname>
+  </name>
+  <works>andre</works>
+</person>
+
 <person id="anonym1800dk" country="dk" lang="da" type="collection">
   <name>
       <firstname>Anonym, 1800-tallet</firstname>
@@ -553,7 +560,7 @@
       <place>Neuses</place>
     </dead>
   </period>
-  <works>1814,1844,1872,andre</works>
+  <works>1814,1822,1844,1872,andre</works>
 </person>
 
 <person id="muellerw" country="de" lang="de" type="poet">
@@ -2064,7 +2071,7 @@
       <date>1821-07-12</date>
     </dead>
   </period>
-  <works>1790,1793,andre</works>
+  <works>1790,1793,1822,andre</works>
 </person>
 
 <person id="bruuntc" country="dk" lang="da" type="poet">
@@ -2579,7 +2586,7 @@
       <place>Bistrup</place>
     </dead>
   </period>
-  <works>andre</works>
+  <works>1806,1812,1814,1815,1816,1818,1820,andre</works>
 </person>
 
 <person id="oehlenschlaeger" country="dk" lang="da" type="poet">
@@ -2836,7 +2843,7 @@
       <place>København</place>
     </dead>
   </period>
-  <works>1870,andre</works>
+  <works>1870,1875,1940,andre</works>
 </person>
 
 <person id="moellerpm" country="dk" lang="da" type="poet">
@@ -2891,7 +2898,7 @@
       <place>Paris</place>
     </dead>
   </period>
-  <works>1828,1832,1835,1840,1840h,1843,1846,1849,1851,1853,1855,1858,1865,1872,1879,andre</works>
+  <works>1828,1832,1835,1840,1840h,1843,1846,1849,1851,1853,1856,1858,1860,1860-1,1860-2,1860-3,1860-4,1860-5,1860-6,1860-7,1865,1872,1879,andre</works>
 </person>
 
 <person id="wilster" country="dk" lang="da" type="poet">
@@ -3357,7 +3364,7 @@
       <date>1899-12-30</date>
     </dead>
   </period>
-  <works>1858,1867</works>
+  <works>1858,1862,1867</works>
 </person>
 
 <person id="wormp" country="dk" lang="da" type="poet">
@@ -3573,7 +3580,7 @@
       <date>1925-01-06</date>
     </dead>
   </period>
-  <works>1866</works>
+  <works>1866,1870</works>
 </person>
 
 <person id="nielsenz" country="dk" lang="da" type="poet">
@@ -4188,7 +4195,7 @@
       <place>Rom</place>
     </dead>
   </period>
-  <works>1897,1898,1901,1905,andre</works>
+  <works>1897,1898,1901,1904,1905,1907,1909,1912,1913,1918,1919,1920,1922,1924,1926,andre</works>
 </person>
 
 <person id="mylius" country="dk" lang="da" type="poet">
@@ -5739,7 +5746,24 @@
   </period>
 </person>
 
->>>>>>> master
+<person id="geijer" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Erik Gustaf</firstname>
+    <lastname>Geijer</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1783-01-12</date>
+      <place>Ransäter, Värmland</place>
+    </born>
+    <dead>
+      <date>1847-04-23</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="stagnelius" country="se" lang="sv" type="poet">
   <name>
     <firstname>Erik Johan</firstname>
@@ -7207,7 +7231,7 @@
 
 <person id="arezzo" country="it" lang="it" type="poet">
   <name>
-    <firstname>Guinttone d'</firstname>
+    <firstname>Guittone d'</firstname>
     <lastname>Arezzo</lastname>
   </name>
   <period>
@@ -7685,6 +7709,7 @@
   <name>
     <firstname>Johanne Luise</firstname>
     <lastname>Heiberg</lastname>
+    <christened>Johanne Luise Pätges</christened>
   </name>
   <period>
     <born>
@@ -7993,6 +8018,7 @@
     <lastname>Gyllembourg</lastname>
     <fullname>Baronesse Thomasine Christine Gyllembourg-Ehrensvärd</fullname>
     <christened>Thomasine Christine Buntzen</christened>
+    <pseudonym>Forf. til en Hverdagshistorie</pseudonym>
   </name>
   <period>
     <born>

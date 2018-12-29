@@ -3,7 +3,7 @@
 import React from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
-import Nav from '../components/nav';
+import Nav, { poetCrumbsWithTitle } from '../components/nav';
 import _ from '../pages/helpers/translations.js';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
@@ -118,7 +118,10 @@ export default class extends React.Component<MentionsProps> {
       <div>
         <Head headTitle={headTitle} requestPath={requestPath} />
         <Main>
-          <Nav lang={lang} poet={poet} title={_('Henvisninger', lang)} />
+          <Nav
+            lang={lang}
+            crumbs={poetCrumbsWithTitle(lang, poet, _('Henvisninger', lang))}
+          />
           <Heading title={title} subtitle={_('Henvisninger', lang)} />
           <PoetTabs lang={lang} poet={poet} selected="mentions" />
           <TwoColumns>{sections}</TwoColumns>
