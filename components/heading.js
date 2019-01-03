@@ -44,6 +44,7 @@ export default class Heading extends React.Component<HeadingProps> {
             flex-basis: 80px;
             height: 80px;
             border-radius: 40px;
+            box-shadow: 4px 4px 12px #aaa;
           }
 
           @media (max-width: 850px) {
