@@ -108,7 +108,10 @@ export default class extends React.Component<KeywordComponentProps> {
           />
           <Main>
             <Nav lang={lang} crumbs={crumbs} />
-            <Heading title={title} />
+            <Heading
+              title={title}
+              image="/static/apple-touch-icon-192x192.png"
+            />
             <KalliopeTabs lang={lang} selected="keywords" />
             <SidebarSplit sidebar={sidebar}>
               <div key="content">

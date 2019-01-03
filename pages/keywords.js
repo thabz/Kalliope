@@ -78,7 +78,10 @@ export default class extends React.Component<KeywordsProps> {
             lang={lang}
             crumbs={[...kalliopeCrumbs(lang), { title: _('Nøgleord', lang) }]}
           />
-          <Heading title={_('Nøgleord', lang)} />
+          <Heading
+            title={_('Nøgleord', lang)}
+            image="/static/apple-touch-icon-192x192.png"
+          />
           <KalliopeTabs lang={lang} selected="keywords" />
           {renderedGroups}
           <LangSelect lang={lang} path={requestPath} />

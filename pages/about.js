@@ -142,7 +142,10 @@ export default class About extends React.Component<AboutProps> {
         <Head headTitle="Kalliope" requestPath={requestPath} />
         <Main>
           <Nav lang="da" crumbs={crumbs} />
-          <Heading title="Kalliope" />
+          <Heading
+            title="Kalliope"
+            image="/static/apple-touch-icon-192x192.png"
+          />
           <KalliopeTabs lang={lang} selected="about" />
           {pageBody}
           <LangSelect lang={lang} path={requestPath} />
