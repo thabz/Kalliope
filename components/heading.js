@@ -9,11 +9,13 @@ export default class Heading extends React.Component<HeadingProps> {
   render() {
     const { title, image } = this.props;
     let imageRendered = null;
+    let headingClassName = 'heading';
     if (image != null) {
       imageRendered = <img src={image} className="heading-image" />;
+      headingClassName += ' padded-heading';
     }
     return (
-      <div className="heading">
+      <div className={headingClassName}>
         {imageRendered}
         <h1>{title}</h1>
         <style jsx>{`
@@ -29,8 +31,11 @@ export default class Heading extends React.Component<HeadingProps> {
             font-size: 48px;
             font-weight: lighter;
             transition: font-size 0.2s;
+          }
+          .padded-heading :global(h1) {
             padding-left: 20px;
           }
+
           .heading :global(h1):global(.lighter) {
             color: #757575;
           }
