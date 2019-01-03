@@ -349,7 +349,11 @@ export default class extends React.Component<BioProps> {
             lang={lang}
             crumbs={poetCrumbsWithTitle(lang, poet, _('Biografi', lang))}
           />
-          <Heading title={title} subtitle={_('Biografi', lang)} />
+          <Heading
+            title={title}
+            subtitle={_('Biografi', lang)}
+            image={ogImage}
+          />
           <PoetTabs lang={lang} poet={poet} selected="bio" />
           <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
             <div style={{ lineHeight: '1.6' }}>

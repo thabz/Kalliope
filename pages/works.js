@@ -250,7 +250,7 @@ export default class extends React.Component<WorksProps> {
         />
         <Main>
           <Nav lang={lang} crumbs={worksCrumbs(lang, poet)} />
-          <Heading title={title} subtitle={_('Værker', lang)} />
+          <Heading title={title} subtitle={_('Værker', lang)} image={ogImage} />
           <PoetTabs lang={lang} poet={poet} selected="works" />
           <div className="two-columns">
             <WorksList lang={lang} poet={poet} works={works} />

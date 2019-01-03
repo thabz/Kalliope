@@ -11,6 +11,7 @@ import Heading from '../components/heading.js';
 import PoetName, { poetNameString } from '../components/poetname.js';
 import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
+import * as OpenGraph from './helpers/opengraph.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
@@ -113,6 +114,7 @@ export default class extends React.Component<MentionsProps> {
       });
 
     const title = <PoetName poet={poet} includePeriod />;
+    const ogImage = OpenGraph.poetImage(poet);
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
     return (
       <div>
@@ -122,7 +124,11 @@ export default class extends React.Component<MentionsProps> {
             lang={lang}
             crumbs={poetCrumbsWithTitle(lang, poet, _('Henvisninger', lang))}
           />
-          <Heading title={title} subtitle={_('Henvisninger', lang)} />
+          <Heading
+            title={title}
+            subtitle={_('Henvisninger', lang)}
+            image={ogImage}
+          />
           <PoetTabs lang={lang} poet={poet} selected="mentions" />
           <TwoColumns>{sections}</TwoColumns>
           <LangSelect lang={lang} path={requestPath} />
