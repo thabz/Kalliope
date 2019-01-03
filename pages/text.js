@@ -445,7 +445,7 @@ export default class extends React.Component<TextComponentProps> {
               crumbs={textCrumbs(lang, poet, work, section_titles || [], text)}
               rightSide={rightSide}
             />
-            <Heading title={title} subtitle="Værker" />
+            <Heading title={title} subtitle="Værker" image={ogImage} />
             <PoetTabs lang={lang} poet={poet} selected="works" />
             <SidebarSplit sidebar={sidebar}>
               <div>
