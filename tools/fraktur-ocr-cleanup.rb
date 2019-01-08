@@ -25,6 +25,8 @@
 'sijon/skjøn',
 'stjon/skjøn',
 'stjsn/skjøn',
+'stiondt/skiøndt',
+'stionne/skiønne',
 'brsd/brød',
 'kjobe/kjøbe',
 'doem/dæm',
