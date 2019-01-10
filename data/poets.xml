@@ -285,6 +285,7 @@
       <place>Colmar</place>
     </dead>
   </period>
+  <works>andre</works>
 </person>
 
 <person id="claudius" country="de" lang="de" type="poet">
@@ -2083,13 +2084,14 @@
   <period>
     <born>
       <date>1750-11-02</date>
-      <place>Gaunø, Sjælland</place>
+      <place>Gavnø, Sjælland</place>
     </born>
     <dead>
       <date>1834-06-24</date>
+      <place>København</place>
     </dead>
   </period>
-  <works>andre</works>
+  <works>1783,andre</works>
 </person>
 
 <person id="brun" country="no" lang="no" type="poet">
@@ -2183,9 +2185,11 @@
   <period>
     <born>
       <date>1754-05-05</date>
+      <place>Fuglevig Præstegaard</place>
     </born>
     <dead>
       <date>1784-11-09</date>
+      <place>Fåborg</place>
     </dead>
   </period>
   <works>andre</works>
