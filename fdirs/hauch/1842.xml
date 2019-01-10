@@ -999,7 +999,7 @@ Den Jomfru, der mig kiærest var, en Anden vil trolove.
     <subtitle>(Af den polske Familie.)</subtitle>
     <firstline>Her Roserne blussed ved rullende Vove</firstline>
     <source pages="36-38"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <nonum><center><b>Han.</b></center></nonum>
@@ -1085,7 +1085,7 @@ Hvis ikke vi levende fange den kan.
     <notes>
         <note type="credits">Bidrag fra Sven Sørensen.</note>
     </notes>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 ,,Hvi staaer du saa eensom, o Birketræ!
@@ -1116,7 +1116,7 @@ Paa Heden i Vinter og Vind.''
    <subtitle>(Af den polske Familie.)</subtitle>
    <firstline>O Piil! har Vinden hentet dig</firstline>
     <source pages="40-41"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 ,,O Piil! har Vinden hentet dig,
@@ -1159,7 +1159,7 @@ Forvandled hendes Blik.''
    <indextitle>Længsel</indextitle>
    <firstline>Om Dagen jeg søger dig fiern og nær</firstline>
     <source pages="42-43"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Om Dagen jeg søger dig fiern og nær,
@@ -1207,13 +1207,13 @@ For dit Kys bortflye.
    <indextitle>Sang af Hamadryaden</indextitle>
    <firstline>Naar Sneens Lilier dække Marken ene</firstline>
     <source pages="44-45"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Naar Sneens Lilier dække Marken ene,
 Sneehvide Lilie, da jeg mindes dig;
 Naar Vinden gynger paa de smekkre Grene,
-Jeg smekkertbøielige, mindes dig.
+Jeg Smekkertbøielige, mindes dig.
 
 Naar Bække blaae mod Sommerstranden rinde,
 Du aldrig standsede, jeg mindes dig,
@@ -1242,7 +1242,7 @@ Du Drømmefødende, jeg mindes dig.
     <title>Sang af Hamadryaden</title>
     <firstline>Mig ængster urolige Drømme</firstline>
     <source pages="46-47"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Mig ængster urolige Drømme,
@@ -1287,7 +1287,7 @@ En elsket, en fiendtlig Ven.
     <title>Agnes's Sang i Hamadryaden</title>
     <firstline>Veemod ei min Siæl forlader</firstline>
     <source pages="48-49"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Veemod ei min Siæl forlader,
@@ -1307,7 +1307,7 @@ Haabet gav Bedrag mig kun.
 
 Kiærlighed kun fødte Længsel,
 Aldrig stillet, stedse vakt,
-Fader tilgiv, altfor bitter ,
+Fader tilgiv, altfor bitter
 Er den Skaal, du mig har rakt.
 
 Skal i Snese Aar jeg tælle
@@ -1321,11 +1321,9 @@ Vidt oplukte Nat og Dag.
 <poem id="hauch2002092902">
 <head>
    <title>Den Elskede</title>
-   <toctitle>Den Elskede</toctitle>
-   <indextitle>Den Elskede</indextitle>
    <firstline>De hvideste Perler i Havet er spredt</firstline>
    <source pages="50-51"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 De hvideste Perler i Havet er spredt,
@@ -1365,7 +1363,7 @@ Og mon det om Morgenen glemme.
     <title>Forskiellig Attraae</title>
     <firstline>Hver Gang jeg stirred paa de gamle Skrifter</firstline>
     <source pages="52-54"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <nonum><center><b>Han.</b></center></nonum>
@@ -1434,11 +1432,9 @@ For hist at tilstaae, hvad jeg dulgte her.
 <poem id="hauch2002092901">
 <head>
    <title>Dyvekes Sang i Vilhelm Zabern</title>
-   <toctitle>Dyvekes Sang i Vilhelm Zabern</toctitle>
-   <indextitle>Dyvekes Sang i Vilhelm Zabern</indextitle>
    <firstline>Naar Skytten udsender den hvasse Piil</firstline>
    <source pages="55"/>
-   <quality>korrektur1,kilde,side</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Naar Skytten udsender den hvasse Piil,
@@ -1458,7 +1454,7 @@ Kan seile til Himmerigs Porte?
 
 Foroven glimter det høieste Tag,
 Med Perler og Guld uden Lige,
-At falder derfra er slet ingen Sag,
+At falde derfra er slet ingen Sag,
 Men vanskeligt did at stige.
 </body>
 </poem>
@@ -1468,8 +1464,11 @@ Men vanskeligt did at stige.
     <title>Sang af Othello</title>
     <subtitle>(Efter en engelsk Folkesang, der findes i Shakspeares Othello.)</subtitle>
     <firstline>Den stakkels Pige sad ved det vilde Figentræ</firstline>
+    <notes>
+        <note>Gendigtning af Shakespeares <xref type="translation" poem="shakespeare2019011001"/>.</note>
+    </notes>
     <source pages="56"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Den stakkels Pige sad ved det vilde Figentræ,
@@ -1499,7 +1498,7 @@ Af Pilen jeg fletter mig min Krands.
         <note>Gendigtning af Goethes <xref type="translation" poem="goethe2019010801"/>.</note>
     </notes>
     <source pages="57-59"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg Intet fordrer paa Jorden meer,
@@ -1531,7 +1530,7 @@ Jeg vendte mit Sind og paa Reiser gik,
 Og jeg forlod mit Fædrelands Skik,
         Ak ja!
 Af fremmede Sæber blev snart jeg mæt,
-Kosten var uvant og Sengen flet,
+Kosten var uvant og Sengen slet,
 Ingen forstod mig ret.
 
 Jeg søgte min Lykke paa Ærens Sti,
@@ -1566,7 +1565,7 @@ Og tømme den sidste Rest!
     <subtitle>(I et Exemplar af Sørgespillene Bajazet og Tiber.)</subtitle>
     <firstline>Hvor Faa forstaae den sære Kunst, til Livet</firstline>
     <source pages="60"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hvor Faa forstaae den sære Kunst, til Livet
@@ -1597,7 +1596,7 @@ Dig skylder jeg og vier jeg mit Digt.
     <title>Til Adam Oehlenschlager</title>
     <firstline>Den flygtige Lykke gik Skialden forbi</firstline>
     <source pages="61-62"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Den flygtige Lykke gik Skialden forbi,
@@ -1612,7 +1611,7 @@ I Luen stod skrevet det magiske Ord,
 Hvorved han sig Vei gjennem Afgrunden baned,
 Hvorved han har Alfer af Bierget opmanet,
 Hvorved uden Skib han har seilet paa Havet,
-Og tryllest til Liv, hvad der længst var begravet.
+Og tryllet til Liv, hvad der længst var begravet.
 
 Ved det han de fjerneste Secler kan naae.
 Ved det han kan Fuglenes Røster forstaae,
@@ -1655,7 +1654,7 @@ Der aldrig hildedes i Sløvheds Lænke,
 Du eied end et bedre Ridderbaand,
 End det, som Dødelige kan bortskienke.
 
-Et Baand, der bandt dig til din Konge god.
+Et Baand, der bandt dig til din Konge god,
 Og til dit Land og til hver ædel Tanke,
 Som Egen bindes af sin stærke Nød
 Til Skovens Grund, hvori den Kraft mon sanke.
@@ -1683,7 +1682,7 @@ Og nøgen Sandhed være skal dens Smykke.
     <subtitle>(Med den tydske Oversættelse af Maastrichts Belejring.)</subtitle>
     <firstline>Heel modig paa min Vandring kom jeg til dig engang</firstline>
     <source pages="65-66"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
     <keywords>tieck</keywords>
 </head>
 <body>
@@ -1728,23 +1727,23 @@ Selv naar de skiule Sangeren i udenlandsk Dragt.<note>Dragt.]Dragt</note>
     <subtitle>(Afsungen paa Rysøe.)</subtitle>
     <firstline>Hvi funkler nu saa stærkt hver Ynglings Øie?</firstline>
     <source pages="67-68"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
     <keywords>thorvaldsen</keywords>
 </head>
 <body>
 Hvi funkler nu saa stærkt hver Ynglings Øie?
-Hvi hæver sig hver ædel Qvides Barm?
+Hvi hæver sig hver ædel Qvindes Barm?
 Hvi maa den stolte Mand sin Pande bøie?
 Hvi vorder selv den ældste Olding varm?
 Hvi rører sig saa høit hver Digtertunge,
-Mens Harpen klinger under Egens Blad ?
+Mens Harpen klinger under Egens Blad?
 Hvi høre vi hver Fugl i Lunden siunge,
 Mens gamle Fiender glemme deres Had?
 
 En stor og sielden Konstner blandt os træder,
 Derfor nu vorder hver en Yngling varm,
 Derfor saa høit hver Digtertunge qvæder,
-Derfor sig hæver mildt hver Qvides Barm;
+Derfor sig hæver mildt hver Qvindes Barm;
 Derfor hver laant og løiet Glands bortsvinder,
 Og Døgnets Smiger nu os blænder ei,
 Imens hver sand og ædel Tone finder
@@ -1755,11 +1754,11 @@ Det præged han for Evigheden af,
 Det skiønne Barn, der med vor Smerte leger,
 Den dunkle Aand, der stander ved vor Grav,
 Den unge Pige, der sin Drøm forfølger,
-Den Vises Stirren giennem Skyens Rist,
+Den Vises Stirren giennem Skyens Rift,
 De store Heltesagn i Tidens Bølger,
 Og Troens bedste, helligste Bedrift.
 
-Ja tidt skal Vinden vore Kyster svale.
+Ja tidt skal Vinden vore Kyster svale,
 Og ofte Smerten vexle skal med Lyst,
 Og ofte Regnen falde skal i Dale,
 Og mangt et Foraar skifte skal med Høst,
@@ -1783,15 +1782,13 @@ Og leger med sin Sorg og med sin Lyst.
 <poem id="hauch1842a2">
 <head>
    <title>Christiane Oehlenschläger</title>
-   <toctitle>Christiane Oehlenschläger</toctitle>
-   <indextitle>Christiane Oehlenschläger</indextitle>
    <firstline>Andre troe, det er nok</firstline>
    <notes>
       <note>Skrevet 1841. Sørgedigt over <a person="oehlenschlaeger">Adam Oehlenschlägers</a> hustrus død.</note>
    </notes>
    <source pages="69-72"/>
    <keywords>oehlenschlaeger</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Andre troe, det er nok,
@@ -1848,7 +1845,7 @@ Naar det gialdt dine Elskedes Vel.
 
 Men den, som ei mildner sit Ord,
 Som ei bøier sit Mod,
-Som ei at smigre forstaar,
+Som ei at smigre forstaaer,
 Er besværlig tidt,
 Thi Sandheds Sol er for stærk for den Svage,
 Og Tusmørket elske vi meest,
@@ -2025,7 +2022,7 @@ Der aldrig kan og aldrig vil forgaae.
     <subtitle>(Af Shakspeares Cymbeline.)</subtitle>
     <firstline>Frygt ei Sommersolens Magt!</firstline>
     <notes>
-        <note>Gendigtning af Shakespeares <xref poem="shakespeare2019010901"/>.</note>
+        <note>Gendigtning af Shakespeares <xref type="translation" poem="shakespeare2019010901"/>.</note>
     </notes>
     <source pages="79-80"/>
     <quality>korrektur1,kilde,side</quality>
@@ -3179,7 +3176,7 @@ Hun mellem Kuld og Hede gruer,
 Og skiælvende, som Espeløvet,
 Hun seer paa Dørens hvalte Buer.
 Da springer op de som for Vinde,
-Paa Tærsklen staaer en gammel Qvide;
+Paa Tærsklen staaer en gammel Qvinde;
 
 En gammel Qvind mod sorte Klæder.
 Hun snoer sig sagte som en Slange,
@@ -3207,7 +3204,7 @@ Mechtilde skialv, forladt af Varme;
 Dog snart hun glemte Drømmetaagen,
 Varmt krystet i sin Brudgoms Arme,
 Paa Jagt, paa Gang'ren, ved hans Side,
-Hun glemte snart sin Angst og Qvide.
+Hun glemte snart sin Angst og Qvinde.
 
 De muntre Terner Væven sloge,
 Mechtilde sad i Fruerstue;
