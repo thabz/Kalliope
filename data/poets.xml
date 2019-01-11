@@ -285,6 +285,7 @@
       <place>Colmar</place>
     </dead>
   </period>
+  <works>andre</works>
 </person>
 
 <person id="claudius" country="de" lang="de" type="poet">
@@ -1764,6 +1765,7 @@
   <name>
     <firstname>Thomas</firstname>
     <lastname>Clitau</lastname>
+    <fullname>Thomas Christensen Clitau</fullname>
   </name>
   <period>
     <born>
@@ -1775,7 +1777,7 @@
       <place>Bergen</place>
     </dead>
   </period>
-  <works>1738</works>
+  <works>1738,1740</works>
 </person>
 
 <person id="wormw" country="dk" lang="da" type="poet">
@@ -2082,13 +2084,14 @@
   <period>
     <born>
       <date>1750-11-02</date>
-      <place>Gaunø, Sjælland</place>
+      <place>Gavnø, Sjælland</place>
     </born>
     <dead>
       <date>1834-06-24</date>
+      <place>København</place>
     </dead>
   </period>
-  <works>andre</works>
+  <works>1783,andre</works>
 </person>
 
 <person id="brun" country="no" lang="no" type="poet">
@@ -2182,9 +2185,11 @@
   <period>
     <born>
       <date>1754-05-05</date>
+      <place>Fuglevig Præstegaard</place>
     </born>
     <dead>
       <date>1784-11-09</date>
+      <place>Fåborg</place>
     </dead>
   </period>
   <works>andre</works>
@@ -7870,6 +7875,25 @@
   </period>
 </person>
 
+<person id="blunck" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>Ditlev</firstname>
+    <lastname>Blunck</lastname>
+    <fullname>Ditlev Conrad Blunck</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1798-06-22</date>
+      <place>Münsterdorf, Holstein</place>
+    </born>
+    <dead>
+      <date>1853-01-07</date>
+      <place>Hamborg</place>
+    </dead>
+  </period>
+</person>
+
+
 <person id="bissen" country="dk" lang="da" type="artist">
   <name>
     <firstname>H.W.</firstname>
@@ -7977,6 +8001,25 @@
     </dead>
   </period>
 </person>
+
+<person id="gertner" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>J.V.</firstname>
+    <lastname>Gertner</lastname>
+    <fullname>Johan Vilhelm Gertner </fullname>
+  </name>
+  <period>
+    <born>
+      <date>1818-03-10</date>
+      <place>Nyboder</place>
+    </born>
+    <dead>
+      <date>1871-03-29</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
 
 <person id="struensee" country="dk" lang="da" type="person">
   <name>
