@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1854" author="hauch" status="incomplete" type="poetry">
+<kalliopework id="1854" author="hauch" status="complete" type="poetry">
 <workhead>
-   <title>Lyriske Digte. Anden forøgede udgave</title>
-   <year>1854</year>
-   <notes>
-      <note><i>Lyriske Digte</i> (1854) er en forøget anden udgave af <a work="hauch/1842"><i>Lyriske Digte</i> (1842)</a>. Digte tilføjet i udgaven fra 1854: Lauras Sange af <i>Robert Fulton</i></note>
-      <!-- Digte fra romanen "Robert Fulton" (1853) -->
-   </notes>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+    <title>Lyriske Digte</title>
+    <subtitle>Anden meget forøgede Udgave</subtitle>
+    <year>1854</year>
+    <notes>
+        <note>Teksten følger Carsten Hauch: <i>Lyriske Digte</i>, 2. forøgede udgave, C. A. Reitzel, Kbh., 1854.</note>
+    </notes>
+    <pictures>
+        <picture src="1854-p1.jpg">Titelbladet til <i>Lyriske Digte</i> (1854) lyder ,,Lyriske Digte / af / C. Hauch. // Anden meget forøgede Udgave // Kjøbenhavn. / Forlagt af C. A. Reitzels Bo og Arvinger. / Bianco Lunos Bogtrykkeri. / 1854.''</picture>
+    </pictures>
+    <source facsimile="115308060105_color" facsimile-pages-num="316" facsimile-pages-offset="14">Carsten Hauch: <i>Lyriske Digte</i>, 2. forøgede udgave, C. A. Reitzel, Kbh., 1854.</source>
 </workhead>
 <workbody>
 
