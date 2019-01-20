@@ -1765,6 +1765,7 @@
   <name>
     <firstname>Thomas</firstname>
     <lastname>Clitau</lastname>
+    <fullname>Thomas Christensen Clitau</fullname>
   </name>
   <period>
     <born>
@@ -1776,7 +1777,7 @@
       <place>Bergen</place>
     </dead>
   </period>
-  <works>1738</works>
+  <works>1738,1740</works>
 </person>
 
 <person id="wormw" country="dk" lang="da" type="poet">
@@ -2083,13 +2084,14 @@
   <period>
     <born>
       <date>1750-11-02</date>
-      <place>Gaunø, Sjælland</place>
+      <place>Gavnø, Sjælland</place>
     </born>
     <dead>
       <date>1834-06-24</date>
+      <place>København</place>
     </dead>
   </period>
-  <works>andre</works>
+  <works>1783,andre</works>
 </person>
 
 <person id="brun" country="no" lang="no" type="poet">
@@ -2183,9 +2185,11 @@
   <period>
     <born>
       <date>1754-05-05</date>
+      <place>Fuglevig Præstegaard</place>
     </born>
     <dead>
       <date>1784-11-09</date>
+      <place>Fåborg</place>
     </dead>
   </period>
   <works>andre</works>
@@ -3842,7 +3846,7 @@
       <place>Gentofte</place>
     </dead>
   </period>
-  <works>1910</works>
+  <works>goethe,1910</works>
 </person>
 
 <person id="knudsen" country="dk" lang="da" type="poet">
@@ -4108,6 +4112,23 @@
   <works>1899,1905,1906,1909,1910,1913,1916,1919,1920,1921,1924,1926,1927,andre</works>
 </person>
 
+<person id="madsen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Oscar</firstname>
+    <lastname>Madsen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1866-11-03</date>
+    </born>
+    <dead>
+      <date>1902-07-06</date>
+    </dead>
+  </period>
+  <works>1891,1892,1904</works>
+</person>
+
+
 <person id="bregendahl" country="dk" lang="da" type="poet">
   <name>
     <firstname>Marie</firstname>
@@ -4269,6 +4290,23 @@
     </dead>
   </period>
   <works>1895,1904,1905,1907,1912,1914,1920,rubai,1923,1924,1925,1926,1927,andre</works>
+</person>
+
+<person id="holbergk" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Kai</firstname>
+    <lastname>Holberg</lastname>
+    <fullname>Kai Caroc Schall Holberg</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1877-03-23</date>
+    </born>
+    <dead>
+      <date>1932-03-19</date>
+    </dead>
+  </period>
+  <works>1903,1907,1914,1927,1931</works>
 </person>
 
 <person id="munchp" country="dk" lang="da" type="poet">

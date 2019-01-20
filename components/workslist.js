@@ -61,7 +61,12 @@ export default class WorksList extends React.Component<WorksListProps> {
       const year = work.year;
       let yearRendered = null;
       if (year != null && year !== '?') {
-        yearRendered = <span className="lighter"> ({year})</span>;
+        yearRendered = (
+          <span key="year" className="lighter">
+            {' '}
+            ({year})
+          </span>
+        );
       }
 
       const url = `/${lang}/work/${poet.id}/${work.id}`;
@@ -81,10 +86,12 @@ export default class WorksList extends React.Component<WorksListProps> {
         numTd = <td className="num">{work.toctitle.prefix}</td>;
       }
 
+      const className =
+        'workname ' + (work.has_content ? ' has-content' : ' no-content');
       return (
         <tr key={i + work.id}>
           {numTd}
-          <td className="workname">{name}</td>
+          <td className={className}>{name}</td>
         </tr>
       );
     });
@@ -113,8 +120,13 @@ export default class WorksList extends React.Component<WorksListProps> {
             line-height: 1.7;
             padding: 0;
           }
-          :global(table.toc):global(td.workname) :global(.lighter) {
+          :global(table.toc)
+            :global(td.workname.has-content)
+            :global(.lighter) {
             color: ${CommonData.lightLinkColor} !important;
+          }
+          :global(table.toc) :global(td.workname.no-content) :global(.lighter) {
+            color: ${CommonData.lightTextColor} !important;
           }
         `}</style>
       </Fragment>
