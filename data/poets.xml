@@ -5803,6 +5803,24 @@
   <works>andre</works>
 </person>
 
+<person id="atterbom" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Per Daniel Amadeus</firstname>
+    <lastname>Atterbom</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1790-01-19</date>
+      <place>Pålsbo, Åsbo</place>
+    </born>
+    <dead>
+      <date>1855-07-21</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <works>1824,1858</works>
+</person>
+
 <person id="stagnelius" country="se" lang="sv" type="poet">
   <name>
     <firstname>Erik Johan</firstname>
@@ -5820,6 +5838,24 @@
   </period>
   <works>1821,1822,andre</works>
 </person>
+
+<person id="almqvist" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Carl Jonas Love</firstname>
+    <lastname>Almqvist</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1793-11-28</date>
+      <place>Stockholm</place>
+    </born>
+    <dead>
+      <date>1866-09-26</date>
+      <place>Bremen</place>
+    </dead>
+  </period>
+</person>
+
 
 <person id="rydberg" country="se" lang="sv" type="poet">
   <name>
