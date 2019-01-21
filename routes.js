@@ -22,5 +22,6 @@ routes.add('keyword', '/:lang(da|en)/keyword/:keywordId');
 routes.add('dict', '/:lang(da|en)/dict');
 routes.add('dictitem', '/:lang(da|en)/dict/:dictItemId');
 routes.add('about', '/:lang(da|en)/about/:aboutItemId');
+routes.add('edit-list', '/:lang(da|en)/edit-list');
 routes.add('search-poet', '/:lang(da|en)/search/:country/:poetId', 'search');
 routes.add('search-kalliope', '/:lang(da|en)/search/:country', 'search');
