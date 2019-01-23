@@ -13,6 +13,7 @@
     "build-facsimiles": "node tools/build-facsimiles.js"
   },
   "dependencies": {
+    "flow": "^0.2.3",
     "global": "^4.3.2",
     "isomorphic-fetch": "^2.2.1",
     "next": "^4.2.1",
@@ -23,12 +24,12 @@
     "xmldom": "^0.1.27"
   },
   "devDependencies": {
-    "deasync": "^0.1.13",
     "async": "^2.5.0",
     "babel-eslint": "^7.1.1",
     "babel-plugin-transform-flow-strip-types": "^6.21.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "deasync": "^0.1.13",
     "entities": "^1.1.1",
     "enzyme": "^3.0",
     "flow-bin": "^0.52.0",

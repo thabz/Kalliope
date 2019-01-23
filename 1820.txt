@@ -2,6 +2,7 @@ KILDE:B.S. Ingemann: <i>Reiselyren</i>, I-II, Boas Brünnich, Kbh., 1820.
 DIGTER:ingemann
 FACSIMILE:115308068605
 FACSIMILE-SIDER:566
+DATO:20190123
 
 T:Indledning
 F:For Danmarks Aasyn maa jeg høit udsige
@@ -83,7 +84,7 @@ Og Øiet tusind Trylleverdner skued.
 Jeg maa derhen, hvor hine Straaler lued,
 Jeg følge maa de underfulde Drømme,
 En Engel har mig til det Fjerne vinket.
-===
+
 Hist stimter jeg alt broget Neisestare,
 Uvante Lungemaal snart trindt mig klinge;
 I fremmed Lyd ffal Tanken sig fremtvinge.
@@ -734,7 +735,7 @@ Men ei Helten, som vild dig i sin Dlindhed forlod.
 Har alt Stav jeg i Haand, er Randslen att paa
 min Skulder,
 Først dog med nordisk Sang jeg priser fremmede
-______ Vye.
+
 * ) Tannekers.
 . I'K lZ TG G '^ E
 
@@ -851,7 +852,7 @@ at vandre,
 Her hvor Ørnen sig svang og Verdenskamperne stod.
 Domkirken see vi endnu for gamle Stad vi forlade;
 Fraueulobs Eravsteen der os r.Kvner lykkelig
-__ ___________ Skjald:
+Skjald:
 * ) LariL lcLn'. geu. ^
 - H8
 Skjønheden priste han tro og med. den herlige
@@ -1055,7 +1056,7 @@ jeg glider,
 
 T:Rhinfart fra Weinheim
 F:I Morgenrøde vi gange
-SIDE:58-
+SIDE:58-59
 
 I Morgenrøde vi gange
 Til Rhinens Vover ned;
@@ -1931,7 +1932,7 @@ Mens du tørmundet gaaer fra Dværgen og Kæmpernes Fad.
 T:Gammeltydsk Konst
 F:Fort til ædlere Syn — til Skatte, som ei fortæres!
 SIDE:105-107
-NOTE:* I Brødrene _Boisarsées Samling, nu i Stuttgard.
+NOTE:* I Brødrene _Boisarsées_ Samling, nu i Stuttgard.
 
 Fort til ædlere Syn — til Skatte, som ei fortæres!
 O s af SkjønhedenSBro n d, rigere strømmer deus
@@ -3270,7 +3271,7 @@ Bord —
 Ingen, som hører de bævende Ord —
 Ingen, som veed hvorfor Kinden er rød —
 Tungere Taare paa Jorden ei flsd.
-___; 8 5 —
+
 Spøgende og smilende med stille kranket Sind
 Klappes af fremmede Herre paa Kmd —
 Betle om Livet og misse sig død —
@@ -5080,10 +5081,10 @@ Paa stsvet Ve i den Vandrer staaer vemodsfuld
 igjen.
 
 T:Den fremmede Blomst
-F:
+F:Blomst jeg søger i fremmed Land
 SIDE:292-296
 
-Blomst jeg foger i fremmed Land
+Blomst jeg søger i fremmed Land
 paa Bjerg og vildene Fjeld;
 Ak, hvis jeg den Blomst ei sinde kan,
 Zeg faaer er Ro i min SjK l.
@@ -5163,19 +5164,13 @@ SLUTSEKTION
 
 SLUTSEKTION
 
-SLUT
+SEKTION:Anden Deel
 
-e i s e l y r e n.
-Af
-B. S. I n g e m a n n .
-An d e n D e e l .
-Aj s b e n h a v n .
-Trykt og forlagt af Boas Brunrirch,
-Kongelig Hofbogtrykker.
+T:Indledning
+F:Ikke Alt hvad Øiet skuer
+SIDE:1
 
-R e i s e l y r e il
-An d e n De e l .
--)k k e Alt hvad D ie t skuer,
+Ikke Alt hvad Øiet skuer,
 Ik k e Alt hvad Å r e t hører,
 K u n hvad San d s og Hje rte rs rc r,
 K u n hvad Blik og Sjecl opluer.
@@ -5190,10 +5185,14 @@ San g en s F u g l de lelte W inger
 L v a n g ls s over Verden svinger;
 Verden gaaer sin tvungne G an g ,
 F r i cc Sa n g og Lyreklang.
-I
-- 1KI
-t a l i e n
-^Zcg v a r r det Land, hvor C itro n en voxer vild,
+
+T:Italien
+F:Jeg var i det Land, hvor Citronen voxer vild
+SIDE:3
+NOTE:TODO: Noindex.
+NOTE:Variant af St. St. Blichers <xref poem="blicher20030915108"/>.
+
+Jeg var i det Land, hvor Citronen voxer vild,
 G uldorangen glsder i Som m ersolens I l d;
 Mild e Binde vifte fra Him len reen og -d iaa;
 G jennem Myrth elu n d e de stille Borkke gaae.
@@ -5203,11 +5202,13 @@ C ith aren klinger i maanelyse N a t,
 Bru n e Ain e lindre under nikkende Ha t .''
 ( St. St . Bl i c h e r . )
 
-Ve t u r i n f a r t .
-lFra Gens over Simplon til Milano,1
-Sidst i August igrg.
-3)elsklan d, er du alt nær? jeg hører alt dine
-Toner,
+T:Veturinfart
+U:[Fra Gens over Simplon til Milano.]
+U:Sidst i August igrg.
+F:Velskland, er du alt nær? jeg hører alt dine Toner
+SIDE:5-11
+
+Velskland, er du alt nær? jeg hører alt dine Toner,
 Munter velff Veturin vi klogt fledføre vs til.
 Han maa føre os did, og sørge for os paa Veien,
 Hnuslye og dagligt Brod vi sorgles fordre af ham.
@@ -5335,8 +5336,12 @@ Priste paa Veien dog vi gjerne Netten inat;
 Sikkrest Veien dog er, hvor nyligst Stimanden
 slvgted,
 Derpaa stole vi tryg, og glad Milano vi see.
-D o m k i r k e n i Mi l a n o .
-hellige Marmorbjerg, til Herrens Tempel udhvKlvet!
+
+T:Domkirken i Milano
+F:Hellige Marmorbjerg, til Herrens Tempel udhvælvet!
+SIDE:12
+
+Hellige Marmorbjerg, til Herrens Tempel udhvælvet!
 Store gothiste Dom, din Lige saae jeg end er.
 Sank Milano i Gruns, og du stod eene paa Graven,
 Gjerne knesled jeg her, og savned Staden vist ei;
@@ -5349,10 +5354,14 @@ Taarnestoven dog stor om Helligdommen alt stygger.
 Traadte fra største Daad den største K-nnpe herind.
 Liden føled han sig, og dybt ydmyget han kuæled,
 Bsied den stolte Sjæl, og føled Herre.: var norr.
-13
-K o n s t b l i k.
-sMi l a n o.)
-§orlad mig ei du store Aand, hvis Vinge
+
+
+T:Konstblik
+U:[Milano.]
+F:Forlad mig ei du store Aand, hvis Vinge
+SIDE:13-14
+
+Forlad mig ei du store Aand, hvis Vinge
 Har hist omsuset mig i Domens Hal,
 Jeg hører Trylletoner mig vinklinge.
 Jeg gjennem Tonehavet vandre skal;
@@ -5386,11 +5395,13 @@ Vil Verden i sig selv det Store sinde,
 Lad den forgylde Aandens Jorde-Spor!
 Men aldrig skal det Store den gjenføde.
 Hvor Døde kun begrave deres Døde.
-— 15
-U f u l d e n d t Tr i u m f b u e . * )
-sVed Mila n o . ^
-dandred en Romeraand gjenfødt dog gjennem
-Milano?
+
+T:Ufuldendt Triumfbue
+U:[Ved Milano.]
+F:Vandred en Romeraand gjenfødt dog gjennem Milano?
+SIDE:15-16
+
+Vandred en Romeraand gjenfødt dog gjennem Milano?
 Amphitheatret hist er KKmpetidernes liigt:
 Stolt har vældige Haand sin Seiersbue hist hvælvet
 —
@@ -5410,9 +5421,11 @@ Nemesis her endnu, med Kroner under sin Fod.
 Verdens Stolthed forgaaer og Herligheden henfarer;
 Taus den Fremmede staaer, og Synet ryster hans
 SjKl. —
-— 16 —
--
-M.. iland ske Scener
+
+T:Millandske Scener
+F:
+SIDE:17-19
+
 C o r s o.
 dommer et Liigtoghist? den store farmenes Rskke
 For Hsltidelighed sig neppe rører — men see!
@@ -5452,10 +5465,12 @@ Sands;
 Munken rysied dem nys med Frygt for Afgrundens
 Flammer;
 Lungen ryster dem nu den brave Lrvster Vafaz.
-I!
-— 2 0 —
-Sidste Afleri i Milano.
-Lette, sydlige Liv, ei her du Nordboen fKngsler.
+
+T:Sidste Aften i Milano
+F:Lette, sydlige Liv, ei her du Nordboen fængsler
+SIDE:20-24
+
+Lette, sydlige Liv, ei her du Nordboen fængsler.
 Stod paa Altanen hist end fremmed Skjønne idag,
 Tabte Smaablomsten ned, og blinked venligtmedFiet,
 Velfte Dronning, til dig, o Roma, staaer dog
@@ -5553,9 +5568,12 @@ Og for hver Elskovsklang henflyer en elskende Aand —
 Stille, ahnende Sjorl, om Jordens Sorg du ei
 drømmel
 Drøm nu om Himlens Ro, og fro du vaagner
-25
-P a r m a.
-^ e r seer jeg førstegang i Farve.stød
+
+T:Parma
+F:Her seer jeg førstegang i Farveglød
+SIDE:25-26
+
+Her seer jeg førstegang i Farveglød
 Correggio, din Genius sig boltre'
 Her, svømmends' i Livets rige Fylde
 Og yppig Mands fra alle Jordens Blomster,
@@ -5595,10 +5613,12 @@ Du var det, ja; dog for du vidste det.
 Du saae vist, barnlig from, hvad her du maled.
 Og skjønnere saae Skjalden dog din Aand,
 End kolde Steen dit Aasyn her afbilded.
-27
-R e g g i o.
-^ i g er Velskland paa Kon sk, og ei en Stad er
-saa liden,
+
+T:Reggio
+F:Rig er Velskland paa Konst, og ei en Stad er saa liden
+SIDE:27-28
+
+Rig er Velskland paa Konst, og ei en Stad er saa liden,
 2!t den Minder jo har fra Konstheroerues Tid.
 Aandens Blomsterold svandt, og vidt adspredt over
 Landet
@@ -5622,9 +5642,12 @@ Mindes vor Lnther vi dog hvert Hundredaar end
 medGlorde —
 Bist han knKler nu der, hvor høit du svare er i
 Glands.
-29
-Bo l o g n a.
-Merke igaar vi Modena har seer,
+
+T:Bologna
+F:I Mørke igaar vi Modena har seet
+SIDE:29-32
+
+I Mørke igaar vi Modena har seet,
 Idag var vi alt ved Pavens Gedeet.
 Med Protestanter man der ei spvger.
 Som i Landet indføre kjærtterste Bsger:
@@ -5704,9 +5727,12 @@ Men naar en Sj« l i hellig Andagt smelter,
 Og lytter til en bedre Verdens Toner,
 Hun over Stjerner Himmelorglet rsrer,
 Og iKrer Jorden høie Engles Sang.
-33
-L i v o r n o.
-^ t . Cecilias Stad, i dig var meget at skue;
+
+T:Livorno
+F:St. Cecilias Stad, i dig var meget at skue
+SIDE:33
+
+St. Cecilias Stad, i dig var meget at skue;
 Flygtig hilscd jeg dig; men vist jeg kommer igjen.
 Selv bin herlige Favn, Du evig blomstrende Florenz,
 Standsed ei lette Gjorst, da Neisepnngen var rom.
@@ -5717,10 +5743,14 @@ Finder jeg ham idag,, imorgen atter jeg hilser
 Kvastens blomstrende Stad — men tys, hvad ho-
 / rer jeg hist?
 Larnge savnede Røst af msgtig Ven fra mit Vorden
-Toner xaa fremmed Kyst, og Sjarlen svulmer i
-Sang.
-sSeet i Livorno.H
-Hv a d hvidster, hvad suser,
+Toner xaa fremmed Kyst, og Sjarlen svulmer i Sang.
+
+T:Middelhavet
+U:[Seet i Livorno.]
+F:Hvad hvidsker, hvad suser
+SIDE:34-38
+
+Hvad hvidsker, hvad suser,
 Som Stemmer fra Hjemmet, i fremmede Land?
 Som Kilder det risler, som Strømme det bruser.
 Det toner som rullende Bølger mod Strand.
@@ -5796,9 +5826,12 @@ Hen strammer, I Bølger,
 Svulm, »Nldige Hav ved den fremmede Kyst!
 Min Sj« l har du fryder — men Stjernen jeg følger,
 Hvor Stjernernes Herre kun kjender min Røst.
-39
-F l o r e n z.
-?3emodtonende Røst, opløft til Fryd dig og Jubel!
+
+T:Florenz
+F:Vemodtonende Røst, opløft til Fryd dig og Jubel!
+SIDE:39-52
+
+Vemodtonende Røst, opløft til Fryd dig og Jubel!
 DunkleØie fra Nord, kan Sydens Glands du nu see ?
 Her i konftrige Stad ved hvert et Fodtrin jeg studser,
 Hist staaer høie Palads, her Dom og marmorne
@@ -6077,9 +6110,12 @@ See, er den eene udbrandt, Laver den anden og flyer.
 O, men naar Lampen er siukt, modtag de Lavende
 Flammer,
 Hav dem forklaret, forent evig, i evige Lys!
-— Z 3 —
-Ar e z z o.
-gaaer Reisen til Rom, paa Veien stakket vi dvarle;
+
+T:Arezzo
+F:Nu gaaer Reisen til Rom, paa Veien stakket vi dvæle
+SIDE:53-54
+
+Nu gaaer Reisen til Rom, paa Veien stakket vi dvæle;
 Her i Petrarcas Bye en Stund dog hvile vi glad,
 See paaStad og paa D o m; - bag Kirken, eensom
 og stille.
@@ -6106,9 +6142,13 @@ End efter Sekler fremmed Elsker ganger.
 Og priser dig lyksalig ved din Vugge;
 — Lad Jordens Taager alle Stjerner slukke,
 Den skjønneste paa Himlen evig'pranger.
-P e r rr g g i a
-Viinhostglorder nu Valfarten standse,
-Mens hen ad Heien med Druer vi daudse;
+
+T:Peruggia
+F:
+SIDE:55-
+
+Tit Viinhøstglæder nu Valfarten standse,
+Mens hen ad Veien med Druer vi dandse;
 Med tragicomist Deklamation
 Gaaer foran vor lystige velfte Person;
 Fra Karmen toner Romerens Sang,
@@ -9269,7 +9309,7 @@ Dobbelt lokkende iion,
 Og Hyrdinden, dobbelt skjøn,
 Skal red fremmed Hjerte glsde
 2 det lyndomsfulde Mede.
-- - »MM. _______
+
 -224
 F r e m m e d e Husar -masker r Tr i u m f t o g
 (p a a udstoppede He fte ).
@@ -9617,7 +9657,7 @@ Me p h i s t o p h e l e s - Ma s k e n (gaaer forbi og leer).
 Skal vi modes her igjcn?
 Fe r n a n d o .
 Følg mig, Gjulra, man konimer —
-.— ________ ^ 7
+
 G j u l i a .
 Alle Helgne staae os bi!
 Fer n and o.
@@ -9713,7 +9753,7 @@ Og, hvis Patronerne lyster, til Verdens Ende!
 God Beværtning paa Veien, og herligt Logis!
 God Vogn, gode Muler, og godt Compagnie! .
 Deturinen f.r Alt bsrer Sorgen!
-' _________'_____________________ _
+
 — 245 —
 D en Reisen de.
 Til Neapel, til Neapel, imorgen!
