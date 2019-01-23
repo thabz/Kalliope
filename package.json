@@ -13,7 +13,6 @@
     "build-facsimiles": "node tools/build-facsimiles.js"
   },
   "dependencies": {
-    "flow": "^0.2.3",
     "global": "^4.3.2",
     "isomorphic-fetch": "^2.2.1",
     "next": "^4.2.1",
