@@ -12,7 +12,7 @@ const hashCode = str => {
   return Math.abs(hash);
 };
 
-const textFolder = (id: string) => {
+const textFolder = id => {
   // Hashen bevæger sig mest i de mindst betydende bits, så reverse hex-strengen.
   const hash = hashCode(id)
     .toString(16)
@@ -22,7 +22,7 @@ const textFolder = (id: string) => {
   return `static/api/texts/${hash[0]}/${hash[1]}${hash[2]}`;
 };
 
-const textPath = (id: string) => {
+const textPath = id => {
   const folder = textFolder(id);
   return `${folder}/${id}.json`;
 };
