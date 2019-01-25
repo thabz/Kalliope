@@ -86,7 +86,12 @@ export default class extends React.Component<MentionsProps> {
                   breakInside: 'avoid',
                   lineHeight: 1.5,
                 }}>
-                <TextContent key={j} contentHtml={line} lang={lang} />
+                <TextContent
+                  key={j}
+                  contentHtml={line}
+                  lang={lang}
+                  contentLang="da"
+                />
               </div>
             );
           }),
