@@ -11,7 +11,8 @@ import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
 import TOC from '../components/toc.js';
-import PoetName, { poetNameString } from '../components/poetname.js';
+import PoetName from '../components/poetname.js';
+import { poetNameString } from '../components/poetname-helpers.js';
 import { workTitleString } from '../components/workname.js';
 import TextName, {
   textTitleString,
