@@ -4,20 +4,45 @@
 <workhead>
    <title>Andre digte</title>
    <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
+<poem id="goethe2019011801">
+<head>
+   <title>Wandrers Nachtlied I</title>
+   <firstline>Der du von dem Himmel bist</firstline>
+   <notes>
+       <note>Skrevet 1776 og efterfulgtes af <xref poem="goethe2002103001"/> i 1780.</note>
+   </notes>
+   <dates>
+       <written>1776-02-12</written>
+   </dates>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Der du von dem Himmel bist,
+Alles Leid und Schmerzen stillest,
+Den, der doppelt elend ist,
+Doppelt mit Erquickung füllest,
+Ach, ich bin des Treibens müde!
+Was soll all der Schmerz und Lust?
+Süsser Friede,
+Komm, ach, komm in meine Brust!    
+</body>
+</poem>
+
+
 <poem id="goethe2002103001">
 <head>
-   <title>Wandrers Nachtlied</title>
-   <toctitle>Wandrers Nachtlied</toctitle>
-   <indextitle>Wandrers Nachtlied</indextitle>
+   <title>Wandrers Nachtlied II</title>
    <firstline>Über allen Gipfeln</firstline>
    <notes>
-      <note>Digtet hedder Ein Gleiches, dvs. samme som forrige digts titel, hvad man på dansk typisk vil kalde "Ligeledes" og på engelsk "Another".</note>
+       <note>Skrevet 1780 som efterfølger til <xref poem="goethe2019011801"/> fra 1870.</note>
+       <note>Først i 1815 blev digtene udgivet sammen, hvor dette digt fik titlen »Ein Gleiches« (da.: ligeledes).</note>
    </notes>
+   <dates>
+       <written>1780-09-06</written>
+   </dates>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -2246,6 +2271,87 @@ Mit dem Lichte des Lebens
 Sich von mir wende,
 Die edle Treiberin,
 Trösterin Hoffnung!
+</body>
+</poem>
+
+<poem id="goethe2018121101">
+<head>
+   <title>Der Junggesell und der Mühlbach</title>
+   <firstline>Wo willst du klares Bächlein hin</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+<nonum><center><i>Gesell</i></center></nonum>
+Wo willst du klares Bächlein hin,
+So munter?
+Du eilst mit frohem, leichtem Sinn
+Hinunter.
+Was suchst du eilig in dem Tal?
+So höre doch und sprich einmal!
+
+<nonum><center><i>Bach</i></center></nonum>
+Ich war ein Bächlein, Junggesell;
+Sie haben
+Mich so gefaßt, damit ich schnell
+Im Graben,
+Zur Mühle dort hinunter soll,
+Und immer bin ich rasch und voll.
+
+<nonum><center><i>Gesell</i></center></nonum>
+Du eilest mit gelaßnem Mut
+Zur Mühle,
+Und weißt nicht, was ich junges Blut
+Hier fühle.
+Es blickt die schöne Müllerin
+Wohl freundlich manchmal nach dir hin?
+
+<nonum><center><i>Bach</i></center></nonum>
+Sie öffnet früh beim Morgenlicht
+Den Laden,
+Und kommt, ihr liebes Angesicht
+Zu baden.
+Ihr Busen ist so voll und weiß;
+Es wird mir gleich zum Dampfen heiß.
+
+<nonum><center><i>Gesell</i></center></nonum>
+Kann sie im Wasser Liebesglut
+Entzünden,
+Wie soll man Ruh' mit Fleisch und Blut
+Wohl finden?
+Wenn man sie einmal nur gesehn,
+Ach! immer muß man nach ihr gehn.
+
+<nonum><center><i>Bach</i></center></nonum>
+Dann stürz' ich auf die Räder mich
+Mit Brausen,
+Und alle Schaufeln drehen sich
+Im Sausen.
+Seitdem das schöne Mädchen schafft,
+Hat auch das Wasser beßre Kraft.
+
+<nonum><center><i>Gesell</i></center></nonum>
+Du Armer, fühlst du nicht den Schmerz
+Wie andre?
+Sie lacht dich an und sagt im Scherz:
+"Nun wandre!"
+Sie hielte dich wohl selbst zurück
+Mit einem süßen Liebesblick?
+
+<nonum><center><i>Bach</i></center></nonum>
+Mir wird so schwer, so schwer, vom Ort
+Zu fließen:
+Ich krümme mich nur sachte fort
+Durch Wiesen;
+Und käm es erst auf mich nur an,
+Der Weg wär bald zurückgetan.
+
+<nonum><center><i>Gesell</i></center></nonum>
+Geselle meiner Liebesqual,
+Ich scheide
+Du murmelst mir vielleicht einmal
+Zur Freude.
+Geh', sag' ihr gleich, und sag ihr oft,
+Was still der Knabe wünscht und hofft.    
 </body>
 </poem>
 

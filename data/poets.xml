@@ -527,6 +527,25 @@
   <works>andre</works>
 </person>
 
+<person id="kerner" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Justinus</firstname>
+    <lastname>Kerner</lastname>
+    <fullname>Justinus Andreas Christian Kerner</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1786-09-18</date>
+      <place>Ludwigsburg, Baden-Württemberg</place>
+    </born>
+    <dead>
+      <date>1862-02-21</date>
+      <place>Weinsberg, Baden-Württemberg</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="uhland" country="de" lang="de" type="poet">
   <name>
     <firstname>Ludwig</firstname>
@@ -561,7 +580,7 @@
       <place>Neuses</place>
     </dead>
   </period>
-  <works>1814,1822,1844,1872,andre</works>
+  <works>1814,1822,1836,1837,1839,1844,1872,andre</works>
 </person>
 
 <person id="muellerw" country="de" lang="de" type="poet">
@@ -597,7 +616,7 @@
       <place>Paris</place>
     </dead>
   </period>
-  <works>1827,1844,deutsch,1851,1854,andre</works>
+  <works>1827,1834,1844,deutsch,1851,1854,andre</works>
 </person>
 
 <person id="lenau" country="de" lang="de" type="poet">
@@ -3011,7 +3030,7 @@
       <place>Odense</place>
     </dead>
   </period>
-  <works>1838,trykte,1815-24,1825-37,1838-56,udat,ovs</works>
+  <works>1838,1863,trykte,1815-24,1825-37,1838-56,udat,ovs</works>
 </person>
 
 <person id="deichmann" country="dk" lang="da" type="poet">
@@ -6387,6 +6406,25 @@
   <works>1758,1760,1761,1763,1765</works>
 </person>
 
+<person id="logan" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Logan</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1748</date>
+      <place>Soutra, Midlothian, Skotland</place>
+    </born>
+    <dead>
+      <date>1788-12-28</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
+
 <person id="blake" country="gb" lang="en" type="poet">
   <name>
     <firstname>William</firstname>
@@ -6620,6 +6658,23 @@
     </dead>
   </period>
   <works>1820,1844,1850,1851,1860,1862</works>
+</person>
+
+<person id="sprague" country="us" lang="en" type="poet"> 
+  <name>
+    <firstname>Charles</firstname>
+    <lastname>Sprague</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1791-10-26</date>
+      <place>Boston, Mass.</place>
+    </born>
+    <dead>
+      <date>1875-01-22</date>
+    </dead>
+  </period>
+  <works>andre</works>
 </person>
 
 <person id="longfellow" country="us" lang="en" type="poet">
