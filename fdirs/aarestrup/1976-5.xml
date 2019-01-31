@@ -24,11 +24,11 @@
 
 <poem id="aarestrup2002022002">
 <head>
-   <title>Tilstaaelsen</title>
-   <toctitle>Blumenhagen: Tilstaaelsen</toctitle>
-   <firstline>Den gule Strøm i Aftenrøden bølger</firstline>
-   <quality>korrektur1,kilde</quality>
-   <source pages="11-12"/>
+    <title>Tilstaaelsen</title>
+    <toctitle>Blumenhagen: Tilstaaelsen</toctitle>
+    <firstline>Den gule Strøm i Aftenrøden bølger</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="11-12"/>
 </head>
 <body>
 Den gule Strøm i Aftenrøden bølger
@@ -83,16 +83,16 @@ Blidt toner det, som fjerne Sølverklokker:
 
 <poem id="aarestrup2001061301">
 <head>
-   <title>Advarsel</title>
-   <toctitle>Göthe: Advarsel</toctitle>
-   <firstline>Paa Dommedag, naar de Basuner skralde</firstline>
-   <notes>
-      <note>Cf. <xref bibel="bibelmatt12,36"/>.</note>
-      <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2019013101"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
-   <source pages="23"/>
+    <title>Advarsel</title>
+    <toctitle>Göthe: Advarsel</toctitle>
+    <firstline>Paa Dommedag, naar de Basuner skralde</firstline>
+    <notes>
+        <note>Cf. <xref bibel="bibelmatt12,36"/>.</note>
+        <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2019013101"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <keywords>sonnet</keywords>
+    <source pages="23"/>
 </head>
 <body>
 Paa Dommedag, naar de Basuner skralde,
@@ -119,16 +119,16 @@ Saa bliver Dommedag fast til et Aar.
 
 <poem id="aarestrup2001061302">
 <head>
-   <title>Sonetten</title>
-   <toctitle>—: Sonetten</toctitle>
-   <firstline>Sig med fornyet Kunstbrug Møie give</firstline>
-   <notes>
-      <note>Dateret: 1818.</note>
-      <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2019013102"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
-   <source pages="24"/>
+    <title>Sonetten</title>
+    <toctitle>—: Sonetten</toctitle>
+    <firstline>Sig med fornyet Kunstbrug Møie give</firstline>
+    <notes>
+        <note>Dateret: 1818.</note>
+        <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2019013102"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <keywords>sonnet</keywords>
+    <source pages="24"/>
 </head>
 <body>
 Sig med fornyet Kunstbrug Møie give,
@@ -155,14 +155,14 @@ Og maatte dog iblandt nu ogsaa lime.
 
 <poem id="aarestrup2001061303">
 <head>
-   <title>Leveregel</title>
-   <toctitle>—: Leveregel</toctitle>
-   <firstline>Vil du Livet smukt dig tømre</firstline>
-   <notes>
-      <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2000010807"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="25"/>
+    <title>Leveregel</title>
+    <toctitle>—: Leveregel</toctitle>
+    <firstline>Vil du Livet smukt dig tømre</firstline>
+    <notes>
+        <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2000010807"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="25"/>
 </head>
 <body>
 Vil du Livet smukt dig tømre,
@@ -197,23 +197,23 @@ Og Fremtiden Gud overlade.
         <note>Gendigtning af »Forget me not«, 1831.</note>
     </notes>
     <source pages="38-39"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Det var langtfra, jeg søgte ham -
 Det faldt jeg aldrig paa;
 Jeg smiilte ikke meer til ham
-End til Enhver, jeg saae.
+End til Enhver, jeg saae:
 Jeg valgte ikke selv min Plads;
 Ved Bordet sad vi to,
-Og, Himmel! jeg har aldrig hørt
-En Røst saa sød, saa - o!
+Og - Himmel! - jeg har aldrig hørt
+En Røst, saa sød, saa - o!
 
 Ved Dandsen siden var det mig,
 Han valgte sig igjen;
 Jeg hørte den forførende,
 Den hulde Røst igjen;
-Han førte mig til Siden hen
+Han førte mig til Siden hen,
 Og hvisked med et Suk,
 At aldrig, aldrig saae han før
 En, som han fandt saa smuk.
@@ -227,13 +227,13 @@ Mig til en tom Allarm,
 At Veien kjeded mig, naar ei
 Jeg gik den ved hans Arm.
 
-Ak, jeg har gjættet Grunden nu!
+Ak, jeg har giættet Grunden nu!
 Hvi mon jeg nødig kom
 Til mine Søstres Samlingsplads,
 Men helst gik ene om?
 Hvi krøllede jeg vel mit Haar?
 Hvad gjorde, at jeg glad
-Studeerte paa det, han fandt smukt?
+Studeerte paa det han fandt smukt?
 Hvad - uden Elskov? hvad?
 
 O! kjende Verden, Mænd især,
@@ -243,14 +243,14 @@ Hvert Ord alvorligt meent.
 Han talte om sin Kærlighed -
 Jeg det for Sandhed tog
 Og drømte ikke om, hvor tidt
-Hans Røst alt for bedrog.
+Hans Røst alt før bedrog.
 
-Han smiler til en Anden nu
+Han smiler til en anden nu
 Og siger hende alt
-Det Søde, ak! som fordumstid
-Jeg troede mig kun gjaldt.
+Det Søde, ak, som fordumstid
+Jeg troede mig kun gjaldt -
 O hun er ogsaa meget smuk!
-Jeg dadler ei hans Smag
+Jeg dadler ei hans Smag,
 Og tvivler ei, hun vindes let
 Ved et saa sødt Bedrag.
 
@@ -263,14 +263,14 @@ Ved et saa sødt Bedrag.
 
 <poem id="aarestrup2001061101">
 <head>
-   <title>Vor Ulla laae i Sengen og sov</title>
-   <toctitle>Bellman: Vor Ulla laae i Sengen og sov</toctitle>
-   <firstline>Vor Ulla laae i Sengen og sov</firstline>
-   <notes>
-      <note>Gendigtning af Carl Michaël Bellmans »Fredmans Epistler nr. 36.« (<xref type="translation" poem="bellman2001061336"/>).</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="41-46"/>
+    <title>Vor Ulla laae i Sengen og sov</title>
+    <toctitle>Bellman: Vor Ulla laae i Sengen og sov</toctitle>
+    <firstline>Vor Ulla laae i Sengen og sov</firstline>
+    <notes>
+        <note>Gendigtning af Carl Michaël Bellmans »Fredmans Epistler nr. 36.« (<xref type="translation" poem="bellman2001061336"/>).</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="41-46"/>
 </head>
 <body>
 Vor Ulla laae i Sengen og sov
@@ -465,35 +465,35 @@ Haab at let fra Skrub og Riis
         <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2018110601"/>.</note>
     </notes>
     <source pages="61-62"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Fra Vindvet saae jeg hen til hendes,
-Saa længe Vintren vared nys;
-Vi elskede uden at kjendes,
-I Luften krydsedes vore Kys.
+Fra Vindvet saae jeg hen til hendes
+Saa længe Vintren vared nys
+Vi elskede uden at kjendes
+I Luften krydsedes vore Kys -
 Igjennem disse Qviste glade
-Vi stirred til hinanden hen;
+Vi stirred til hinanden hen,
 Men du gjengiver Træet Blade,
-Fordømte Vaar! er du alt der igjen?
+Fordømte Vaar, er du alt der igjen!
 
 Nu dine Skygger for mig skjule
 Den Lysets Engel, huld og blid,
 Som jeg har seet til sultne Fugle
 At kaste Korn ved Juletid.
 Hun kaldte dem, og deres Hoppen
-Var Elskovsvinket for en Ven.
-O fagre Træ med Snee med Toppen! -
-Fordømte Vaar! er du alt der igjen?
+Var Elskovsvinket for en Ven -
+O fagre Træ med Snee med Toppen
+Fordømte Vaar, er du alt der igjen?
 
 Var ikke du, saa saae jeg hende
 Berede sig til Nattens Ro
 Og frisk, som vi Aurora kjende,
-At løste tidlig sit Rideaux.
+At løste tidlig sit Rideau.
 Endnu hver Aften kunde sukkes:
 Min skjønne Stjerne synker hen,
 Hun slumrer ind, og Lampen slukkes.
-Fordømte Vaar! er du alt der igjen?
+Fordømte Vaar, er du alt der igjen
 
 Jeg beder om en Vinter, Guder!
 O, at jeg hørte muntre Knald
@@ -502,7 +502,7 @@ Og saae de hvide Sneefogs Fald!
 Hvad nytte Skyerne, som ile,
 Den lange Dag, hvad nytter den?
 Jeg seer ei hende mere smile -
-Fordømte Vaar! er du alt der igjen?
+Fordømte Vaar, er du alt der igjen?
 
 <nonum><right><i>Beranger.</i></right></nonum>
 </body>
@@ -512,13 +512,13 @@ Fordømte Vaar! er du alt der igjen?
 
 <poem id="aarestrup20190130102" variant="aarestrup2000083001">
 <head>
-   <title>O du er liig en Rose rød</title>
-   <toctitle>Burns: O du er liig en Rose rød</toctitle>
-   <notes>
-      <note>Robert Burns: <xref type="translation" poem="burns2000083001"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="65"/>
+    <title>O du er liig en Rose rød</title>
+    <toctitle>Burns: O du er liig en Rose rød</toctitle>
+    <notes>
+        <note>Robert Burns: <xref type="translation" poem="burns2000083001"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="65"/>
 </head>
 <body>
 O du er liig en Rose rød,
@@ -547,14 +547,14 @@ Om det var titusind Miil.
 
 <poem id="aarestrup20190130103" variant="aarestrup2000083002">
 <head>
-   <title>Til Mary i Himlen</title>
-   <toctitle>—: Til Mary i Himlen</toctitle>
-   <firstline>O Stjerne du, med mindsket Glands</firstline>
-   <notes>
-      <note>Robert Burns: <xref type="translation" poem="burns2000083002"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="66"/>
+    <title>Til Mary i Himlen</title>
+    <toctitle>—: Til Mary i Himlen</toctitle>
+    <firstline>O Stjerne du, med mindsket Glands</firstline>
+    <notes>
+        <note>Robert Burns: <xref type="translation" poem="burns2000083002"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="66"/>
 </head>
 <body>
 O Stjerne du, med mindsket Glands,
@@ -607,42 +607,42 @@ Og hører Sukket fra hans Bryst?
         <note>Gendigtning af Lord Byron: <xref type="translation" poem="byron2018120802"/>.</note>
     </notes>
     <source pages="68-71"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Hør Nattestormen vild og vred
-Om Pindus' Klippefod!
-Harmfulde Skyer strømme ned,
+Hør Nattestormen! vild og vred
+Om Pindus Klippefod;
+Harmfulde Skyer strømme ned
 En Himlens Straffeflod.
 
-Vor Fører svandt - kun Lynets Blink
+Vor Fører svandt, kun Lynets Blink
 Viser i Mulm og Nat
 Vandfaldets Skum, den steile Brink,
 Og Fjeldets sorte Krat.
 
 Var det en Hytte, som vi saae,
 En Hyrdebolig lav?
-Velkommen var den usle Vraa.
+Velkommen var den usle Vraa!
 Men nei - en turkisk Grav!
 
-Min bolde landsmand - o hvor kjæk
+Min bolde Landsmand - o hvor kjæk
 I Stormens vilde Favn,
 Igjennem Fossens Brøl og Skræk
-Han raaber Englands Navn!
+Han raaber Englands Navn.
 
 Fra Fjende eller Ven - et Skud!
 Nok et! - En Prøve paa
 At kalde Bjergets Hyrder ud
 At lede til en Vraa.
 
-Forgjæves! Under Tordnens Strid
-Hvem hører vort Signal
+Forgjæves! under Tordnens Strid
+Hvem hører vort Signal?
 Og vover sig ved Nattens Tid
 Til Bjergets øde Dal?
 
 Og hørtes det, hvo steg vel nu
 I dette Farens Gab
-Og drømte ei med frygtsom Hu
+Og drømte ei, med frygtsom Hu
 Om Røverdaad og Drab?
 
 See Glimt i Glimt! rædsomme Pragt!
@@ -651,22 +651,22 @@ Og dog een Tanke end har Magt
 At holde Sjælen varm.
 
 Mens Veien gaaer i Regnens Øs
-Paa steilest Skrænt med Gru,
+Paa steilest Skrent med Gru,
 Mens alle Tordner buldre løs -
 Florenza, hvor er du?
 
 Kun ei tilsøes, min Hjertenskjær!
 Dit Skib vist skyndte sig:
 O, at den Storm, som raser her,
-Alene træffe mig!
+Allene treffe mig!
 
 Scirocco blæste, da din Mund
 Jeg trykked sidst til min,
 Og hurtig over Hav og Sund
-Den drev din Stup saa fiin.
+Den drev din Slup saa fiin.
 
-O, du er frelst! Alt længe nu
-Dig favned Spaniens Ø;
+O, du er frelst! alt længe nu
+Dig favned Spaniens Ø:
 Haardt, om en Yndighed som du
 Flakked paa salten Sø!
 
@@ -675,28 +675,28 @@ I Storm og Tordenluft,
 Som dengang Salen hvælved sig
 Om os med Sang og Duft -
 
-See fra din Pillas hvide Muur
+O, fra din Villas hvide Muur
 I dit frigjorte Land,
 See stundom fra dit Jomfrubuur
 Ud paa det mørkblaa Vand:
 
 Tænk paa Calypsos Klippekyst,
-For mig saa kjær, som dig;
+For mig saa kjær som dig;
 Skjænk tusind Smiil hvem du har Lyst,
-Men gjem et Suk til mig!
+Men gjem et Suk til mig.
 
 Og mærker din Tilbederhær
-Et Blik med Tungsind i,
+Et Blik med Tungsind i
 En halvsødt Taare og et Skjær
-Af sød Melancholie,
+Af sød Melancholie
 
-Smiil snart igjen; lad ei forstaae
+Smiil snart igjen, lad ei forstaae
 Den Gjæk, der nærmer sig,
-At der var En, du tænkte paa,
-Hvis Tanke kun er dig!
+At der var en, du tænkte paa,
+Hvis Tanke kun er dig.
 
-Thi er end Smiil og Taarer eet
-For Hjertekval, som min,
+Thi er end Smiil og Taarer eet,
+For Hjertekval som min,
 Min Sjæl dog leder vidt og bredt
 Tungsindig efter din.
 
@@ -713,11 +713,11 @@ Tungsindig efter din.
         <note>Gendigtning af Lord Byron: <xref type="translation" poem="byron2018120801"/>.</note>
     </notes>
     <source pages="72-91"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Det er den Time, Nattergalen
-Fra Busken hæver høit sin Røst;
+Fra Busken hæver høit sin Røst:
 Det er den Time, Elskovstalen
 Sødt trænger i det aabne Bryst.
 Vindpustet og Vandboblen rører
@@ -725,7 +725,7 @@ Den Streng, man helst i Løndom hører.
 Hvert Blomster er af Duggen vaad,
 Og henad Himlen flyder Stjernegraad.
 Og mere dybt er Bølgens Blaat,
-Og Løvet mere bruunt og graat.
+Og Løvet mere bruunt og graat:
 Den halve Lysning Himlen har,
 Uvis, om mere mørk end klar,
 Som naar, hvor Solen nys nedgik,
@@ -736,27 +736,27 @@ Som lokker Parisina fra sin Hal;
 Det er ei for at see paa Himlens Stjerner,
 At Fruen fra Buret sig natlig fjerner;
 Og hvis hun sidder i Lysthusets Hyld,
-Det er ei for den fulde Blomstrings Skuld.
-Hun lytter - men ei efter Nattergale,
+Det er ei for den fulde Blomstrings Skyld.
+Hun lytter - men ei efter Nattergale -
 Skjøndt vel efter fuld saa sød en Tale.
 Der rasler et Fodtrin blandt Løv og Ranker -
-Hun blegner, og Hjertet stærkere banker.
+Hun blegner - og Hjertet stærkere banker -
 Der hvisker en Røst - et Øieblik end,
-Og hun skal mødes med sin Ven!
+Og hun skal mødes med sin Ven -
 Forbi - han ligger for hendes Fødder.
 
 Og hvad er Verden dem ved Siden
 Med alle Skiftninger af Tiden?
 Dens Jord og Sky, dens levende Vrimmel
 Er Intet nu mod deres Himmel.
-De ændse oven, neden, rundtomkring,
+De ændse oven, neden, rundt omkring,
 Som Døde, om dem Ingenting;
-Som var forsvunden hver en Anden,
+Som var forsvunden hver en anden,
 De aande ene for hinanden.
 Saa ægte Suk er der paa deres Læbe,
-En Fryd saa dyb, at, svandt den ei i Hast,
+En Fryd saa dyb, at svandt den ei i Hast,
 Dem vilde saligt Afsind dræbe,
-I Flammen deres Hjerter brast.
+I Flammen deres Hjerter brast!
 Om Brøde, Fare - kan de dømme
 I dette Hav af kjælne Drømme?
 Hvo følte denne Storm i Sjælen
@@ -764,39 +764,39 @@ Og frygted, standsede med Dvælen?
 Hvo tænkte paa det Flygtige deri?
 Og dog - nu er det alt forbi!
 Ak, vi maae vaagne, før vi lære,
-At den Slags Timer komme aldrig mere!
+At detslags Timer komme aldrig mere!
 
 Med mangt et smægtigt Blik forlod de Løvet,
-Som deres brødefulde Glæde vidste;
-Og, skjøndt med Haab og Eed, de var bedrøvet,
+Som deres brødefulde Glæde vidste,
+Og skjøndt med Haab og Eed, de var bedrøvet,
 Som om den Afsked var den sidste.
 De dybe Suk, det lange Favntags Lyst,
 Der nu gad vare evig, Bryst mod Bryst,
-Da Parisina srygter, ingen Straale
+Da Parisina frygter, ingen Straale
 Af Himlen meer kan hendes Ansigt taale,
-Som om hvr stille medvidende Stjerne
+Som om hver stille medvidende Stjerne
 Betragted hendes Feiltrin fra det Fjerne -
 De dybe Suk, det lange Favntags Lyst
 Til Pletten lænker dem, Bryst imod Bryst.
 Men det maa skee, de maae med Smerte
 Adskilles, med det tunge Hjerte,
 Med al den Gysen, kold som Døden,
-Der immer følger efter Brøden.
+Der altid følger efter Brøden.
 
 Til lønligt Leie Hugo iler,
-Forelsket i hvad ei er hans;
+Forelsket i, hvad ei er hans;
 Men hun et skyldigt Hoved hviler
 Ved Siden af troskyldig Mands.
 I Federhede Blodet strømmer,
-Med Luekind, i Skræk, hun drømmer;
+Med Luekind, i Skræk, hun drømmer,
 Hun mumler i urolig Vaande
 Et Navn, hun tør ved Dag ei aande,
 Og griber, bævende af Lyst
-For en Forsvunden, om sin Husbonds Bryst.
+For en Forsvunden, om sin Husbonds Bryst:
 Og han, vakt af de kjælne Hænder
 Og lykkelig i Tankerne, miskjender
-De drømmende Suk, kjærtegnets Varme
-For dem, kan ellers fandt i hendes Arme,
+De drømmende Suk, Kjertegnets Varme
+For dem, han ellers fandt i hendes Arme,
 Og kunde over hende fældet Taare,
 Som, selv i Søvne, elsked ham saa saare.
 Han favner Soversken, som blusser,
@@ -807,12 +807,12 @@ Vel maa han studse - værre Dom
 Vel neppe fra Basunen kom,
 Naar han skal vækkes af dens Tone
 Og staae af Graven for Guds Throne.
-Vel maa hau studse - hans Fred paa Jorden
-Er dømt til Flugt ved denne Torden;
+Vel maa han studse - hans Fred paa Jorden
+Er dømt til Flugt ved denne Torden.
 Den Søvnens Hvisken vidned ham
 Om hendes Skyld og Azos Skam.
-Hvis var det Navn, der over Puden
-Lod gyseligt som Bølgens Tuden,
+Hvis var det Navn? der over Puden
+Lød gyseligt som Bølgens Tuden,
 Der ruller Planken i sit Skjød
 Og kaster Svømmeren med Latter
 Paa Strand, for ei at reises atter? -
@@ -827,62 +827,62 @@ En Mø, hvis Daarskab var saa stor,
 At troe paa ham og paa hans Ord.
 
 Han trak sin Dolk, til Myrden færdig,
-Men gjemte den igjen og bed sin Læbe;
+Men gjemte den igjen og bed sin Læbe -
 Skjøndt til at leve nu uværdig,
-Saa faur en Ting kan han ei dræbe,
-Mindst smilende, i Søvne der.
+Saa faur en Ting kan han ei dræbe -
+Mindst smilende - i Søvne der -
 Nei, meer: han vækkede hende ikke,
-Men stirred blot med Dødsens Blikke,
+Men stirred blot, med Dødsens Blikke,
 Som, vaagned hun af Henrykkelsen,
-Vilde isne hende i Søvn igjen.
+Vilde isne hende i Søvn igjen -
 Den Lysning, Lampen til hans Aasyn sendte,
 Paa tykke, tunge Draaber brændte.
-Hun talte ei meer, hun roligt blunded -
+Hun talte ei meer - hun roligt blunded -
 Men i hans Sjæl var hendes Liv udrundet.
 
 Ved Daggry søgte han og fandt
 I mangt Udsagn fra hver en Kant
 Beviser for en rædsom Viden,
-Deres Brøde nu, hans Jammer siden.
+Deres Brøde nu, hans Jammer siden;
 De længe tause Damer hige
 At frie sig selv, og de bekjende
-Brøden, Skammen, Alt om hende;
+Brøden, Skammen, Alt om hende:
 Neddysses Intet kan - de sige
 Enhver Omstændighed, som gjelder
-For fuldt Beviis hvad de fortæller;
+For fuldt Beviis hvad de fortæller:
 Og Azos piinte Sjæl og Øre
 Har intet meer at føle og at høre.
 
 Ham maatte ingen Tøven hue:
 Midt i sit Statsraad kan du skue
-Fyrsten af Estes gamle Æt
+Fyrsten, af Estes gamle Æt
 Paa Thronen holde Dom og Ret.
-Riddere, Vagt tilstede var,
+Riddere, Vagt, tilstede var
 Og foran ham det skyldige Par;
 Saa unge - og en af dem hvor smuk!
 Foruden Sværd, fængslet for Brøde,
-At saa en Søn - Christ sig forbarme -
+At saa en Søn - Christ sig forbarme! -
 Skal for sin Fader møde!
 Saadan maa Hugo for ham træde
 Og høre Røsten af hans Harme
-Og Dommen af hans Vrede;
+Og Dommen af hans Vrede!
 Og dog han synes ei overvunden,
 Skjøndt maalløs han ei aabner Munden.
 
-Og stille, bleg, med Tausbed, saae
+Og stille, bleg, med Taushed, saae
 Man Parisina for Domstolen staae;
 Forandret siden sidst, da Synet
 Af hende Glæde gjennem Hallen lyned;
-Da Adelsmænd paa hendes Vink gav Agt,
+Da Adelsmænd paa hendes Vink gav Agt -
 Og Skjønhed lured, for at efterligne
-Den ædle Røst, den hulde Mine,
+Den ædle Røst - den hulde Mine -
 Og af Fyrstindens Høviskhed og Dragt
 Opsamled Yndighedens Magt:
 Da - hvis hendes Øie havde grædt,
 Et tusind Helte vare flux opsprungne,
 Et tusind Glavind vare svungne,
-For at forfegte hendes Ret;
-Nu - hvad er hun? kan hun byde?
+For at forfægte hendes Ret;
+Nu, - hvad er hun? kan hun byde?
 Og de? - hvordan? kan de adlyde?
 Heel tause staae de der med Bryn,
 Som sænke sig, med skummelt Syn,
@@ -890,25 +890,25 @@ Med rynket Pande, Armene korslagt,
 Paa Læben neppe skjult Foragt:
 Den hele Hofstat, Damer, Riddere, Vagt.
 Og han, den kaarne Svend, hvis Landse
-Hun havde smykket tidt med Krandse;
-Som nu - var ikke Armen hundet -
+Hun havde smykket tidt med Krandse,
+Som nu - var ikke Armen bundet -
 Befriet havde hende, eller Døden fundet;
 Paa hvem hun, fuld af Ømhed, tænker -
-Han til ved hendes Side der i Lænker!
+Han, til ved hendes Side der, i Lænker;
 Det svulne Øie ei, som Taaren hyller,
-For hende selv meer end for ham sig fylder;
-De Silkelaag, hvorpaa
+For hende selv meer end for ham sig fylder!
+De Silkelaag - hvorpaa
 En Aare slyngede sig blaa
 Og gjennem glattest Hvidhed flød,
 Som nogentid til Kys indbød,
 Nu synes hede, rødblaae bøiet
-At trykke snarere end skygge Øiet,
+At trykke snarere, end skygge Øiet,
 Der straaler tungt og fyldt, jo meer
 Sig Taarer samle fleer og fleer.
 
 Og han for hende havde ogsaa grædt;
-Men hvo, som ham betragted ret,
-Saae ei, hvad end han følte, Sorgens Træk
+Men hvo som ham betragted ret,
+Saae ei, hvad end han følte, Sorgens Træk;
 Med opreist Pande stod han, høi og kjæk.
 Hvad Qval end bragte Hjertet til at gyse,
 Han lod sig ei af Mængden kyse.
@@ -916,85 +916,85 @@ Men see paa hende turde han ikke;
 Det var Erindring kun om Øieblikke -
 Hans Brøde - Elskov - Stilling nu -
 Hans Faders Had - Alverdens Gru -
-Hans Lod for evig og hans Skjæbne nu -
-Og hendes - hendes! Han turde ei see,
-Ei kaste et Blik paa hendes Pande;
+Hans Lod for evig, og hans Skjæbne nu -
+Og hendes - hendes! - han turde ei see,
+Ei kaste et Blik paa hendes Pande!
 Thi ellers vilde Hjertets Vee
 Den stolte Holdning overmande.
 
 Og Azo talte: ,,endnu igaar
 En Viv og Søn velsigned mine Aar;
 Men denne Morgen har forandret Tingen:
-Før Tagen hælder har jeg ingen.
+Før Tagen hælder har jeg Ingen.
 Mit Liv skal tæres eensomt hen;
-Dog, lad det skee - det er ei stort!
+Dog, lad det skee! - det er ei stort!
 Der aander ingen Fjende eller Ven,
-Som gjorde ei hvad jeg har gjort.
-Hvert Baand er brudt, men ei af mig.
+Som gjorde ei, hvad jeg har gjort:
+Hvert Baand er brudt, men ei af mig!
 Lad fare det! - Min Dom er Døden!
-Hugo! alt Præsten venter dig,
+Hugo! Præst venter dig,
 Og saa - betalt er Brøden.
-Bort! Lad til Himlen dine Bønner vendes -
-Førend dens Aftenstjerner tændes,
-Prøv, om du kan tilgives der!
-Dens Naade skjænke dig sin Aflad her!
+Bort! Til Himlen dine Bønner vendes!
+Førend dens Aftenstjerner tændes -
+Prøv, om du kan tilgives der;
+Dens Naade skjænke dig sin Aflad her.
 Saavidt sig strækker Jordens Ø,
 Er ei en Plet, hvor jeg og du
-En Time sammen kunde aande nu.
-Farvel! Jeg vil ei see dig døe.
-Men du, Elendige! skal see ham død.
-Bort! - fast svigter mig min Røst -
-Gaa, Qvinde med det geile Bryst!
-Ei jeg, men du hans Blod udgjød.
-Gaa, hvis det Syn du kan udholde,
-Glad ved et Liv, jeg lader dig beholde!''
+En Time sammen kunde aande nu:
+Farvel! Jeg vil ei see dig døe -
+Men du, Elendige! skal see ham død -
+Bort! Fast svigter mig min Røst:
+Gaa! Qvinde med det geile Bryst;
+Ei jeg, men du hans Blod udgjød:
+Gaa! hvis det Syn du kan udholde,
+Glad ved et Liv, jeg lader dig beholde.''
 
-Og her stolt Azo skjulte Panden,
+Og her stolt Azo skjulte Panden -
 Thi Aaren svulmede og slog,
 Som om en modsat Retning Blodet tog
 Og hedt tilbage i hans Hjerne jog;
 Og derfor bøied han sig ned, og for sit Bryn
 Han skjælvende en Stund holdt Haanden,
-At skjule sig for Mængdens Syn.
+At skjule sig for Mængdens Syn;
 Men Hugo, lænkebunden, Armen hæved,
-En stakket Frist han af sin Fader kræved
-At høres i; skjøndt stum, tilsteder
+En stakket Frist han af sin Fader kræved,
+At høres i: skjøndt stum, tilsteder
 Ham Fyrsten det, hvorom han beder.
 
 ,,Tro ikke, at jeg frygter Døden -
-Thi du har seet mig ved din Side
+Thi du har seet mig ved din Side,
 Blodstænket over Valen ride,
 Og dette Glavind, Trælle sled
 Af mine Hænder, som du veed,
-Har udøst mere Blod for dig og Dit,
-End Øxen kan besudles af for mig og Mit.
-Tag hvad du gav igjen tilbage -
+Har udøst mere Blod for dig og dit,
+End Øxen kan besudles af for mig og mit:
+Tag hvad du gav, igjen tilbage!
 En Skjænk, jeg ikke takker for! Ei glemt
-Er, maa du troe, min Moders Klage,
+Er, maa du tro, min Moders Klage,
 Forskudte Elskov og forspildte Ære
-Og hendes Afkoms Arv af Skam.
+Og hendes Afkoms Arv af Skam;
 Men hun er der, hvor hendes Søn
-Og din Medbeiler snart skal være;
+Og din Medbeiler, snart skal være;
 Et Hjerte og en Hals, som bløde,
 Skal vidne for dig fra de Døde,
 Hvor trofast og hvor dyrebar
 Som Elsker du og Fader var.
 Vel sandt, jeg mig mod dig forbrød -
-Men Ondt mod Ondt? Det ei fortrød
+Men Ondt mod Ondt - det ei fortrød
 Det andet Offer for dit Overmod,
-Den Brud, du mig fratage lod:
-Du saae og tilbad hendes Ynde,
+Den Brud, du mig fratage lod -
+Du saae og tilbad hendes Ynde -
 Og med min Fødsel, just din Synd, du jog
-Dyb Skjændsel over mig og Æren tog;
+Dyb Skjændsel over mig og Æren tog.
 Jeg var en Usling, hende altfor slet,
 Fordi, sandtnok, jeg ei min Ret
 Godtgjøre kunde til dit Navn
-Som Arving af din Fyrstestol.
+Som Arving af din Fyrstestol:
 Og dog - var blot en kort Tid min,
 Der skulde straale om mit Navn
 Selvvunden Glands - en bedre Sol,
 En større Seierskrands end din.
-Et Sværd var mit, og i min Magt
+Et Sværd var mit - og i min Magt
 Er der en Aand, saa uforsagt
 Og vel saa værdig Fyrstekroner,
 Som i din Slægts Baroner.
@@ -1005,34 +1005,34 @@ Langt foran Fyrster og alle dem,
 Naar Pauken klang, og Kampskriget lød:
 ,,For Estes Banner Seir eller Død!''
 Jeg vil ei Forsvar, vil ei Rettergang,
-Ja, ei bønfalde vil jeg dig engang
+Ja ei bønfalde vil jeg dig engang
 Om nogle Timer eller Dages Frist -
-De rulle med mit Støv dog hen tilsidst.
+De rulle med mit Støv dog hen tilsidst -
 Den Slags Henrykkelse, jeg nylig nød,
-Kan endes kun, og gjør det og, med Død.
+Kan endes kun, og gjør det og, med Død -
 Lad end mit Navn, min Fødsel være ringe
 Og dit høibaarne Slægtskab tvinge
-Til Væmmelse og til Foragt:
+Til Væmmelse og til Foragt -
 Dog i mit Ansigtstræk - giv Agt! -
-De finde Spor, min Faders Ansigt liig;
-Og i min Aand - Alt ligner dig:
-Fra dig den Hjertets vilde Tvist,
+De finde Spor, min Faders Ansigt lig -
+Og i min Aand - Alt ligner dig! -
+Fra dig - den Hjertets vilde Tvist -
 Fra dig - hvi stirrer du saa vist? -
-Fra dig i al sin Fylde stammer
-Min Arm af Styrke og min Sjæl af Flammer;
+Fra dig, i al sin Fylde stammer
+Min Arm af Styrke og min Sjæl af Flammer -
 Du gav mig Liv ei blot, men du
 Gav det, som gjorde din mig meer endnu.
-See her din brødefulde Bryndes Løn:
-Gjengjeld i din dig altfor lige Søn!
+See her din brødefulde Bryndes Løn!
+Gjengjeld i din, dig altfor lige Søn!
 Min Sjæl er ei Bastard; thi min
-Afskyer al Tvang, som din.
+Afskyer al Tvang, som din!
 Og dette Aandedrag, den flygtige Gave,
 Som du saasnart igjen vil have,
 Jeg agted ikke meer end du tilvisse,
 Naar Hjelmen blinked om din Isse,
-Og vi jevnsides rede
-Henover faldne Mænd i Slagets Hede.
-Hvad er fordi, er intet, og tilsidst
+Og vi, jevnsides, rede
+Henover faldne Mænd i Slagets Hede:
+Hvad er fordi, er Intet, og tilsidst
 Er det, som kommer, det, som gik;
 Dog gad jeg dengang lukt mit Blik:
 Thi skjøndt min Moder du bedrog forvist
@@ -1041,38 +1041,38 @@ Saa føler jeg, du er min Fader end;
 Var Røsten streng, som fra din Læbe kom,
 Ubillig var dog ei din Dom.
 Begyndt i Synd, i Skjændsel endt,
-Eens er mit Liv udslukt og tændt:
+Eens er mit Liv udslukt og tændt,
 Som Faderen synded, synded Sønnen,
 Og ham for begge rammer Straffelønnen.
 Min Brøde seer vel rædsomst ud -
 Men mellem os maa dømme Gud!''
 
-Han taug, og med korslagte Arme,
-Som klang af Lænker, stum han stod.
+Han taug - og med korslagte Arme,
+Som klang af Lænker, stum han stod;
 I Kredsen rundt om Thronens Fod
 Var ingen Mand, hvis Øre
-Koldsindig denne Raslen kunde døie,
+Koldsindig denne Raslen kunde døie:
 Til Parisina - ak, den arme!
-Tiltrak sig atter hvert et Øie.
-Kunde hun saadan hans Dødsdom høre?
+Tiltrak sig atter hvert et Øie -
+Kunde hun saadan hans Dødsdom høre!
 Bleg, sagde jeg, stiltiende stod hun,
 Til Hugos Meen den levende Grund.
 Vidtaabne hendes Øine saae
 Ei fra den Plet, de stirred paa,
 Og aldrig sank de skjønne Laag,
-At skjule Blikket, eller skygge dog;
-Men om et Blaat af dybest Farvestjær
-De hvide Kredse voxte meer og meer,
-Og der med Blikke som af Glas hun stod,
+At skjule Blikket, eller skygge dog,
+Men om et Blaat af dybest Farveskjær
+De hvide Kredse voxte meer og meer -
+Og der, med Blikke som af Glas, hun stod,
 Som var der Iis i hendes størknede Blod;
-Men af og til bestandig gled
+Men, af og til, bestandig gled
 En Taare, stor og hastig samlet, ned
 Fra Øielaagets lange, mørke Rand -
-Det maa man see, det kan man ei fortælle,
+Det maa man see, det kan man ei fortælle!
 Og de, som saae det, undres maae forsand,
-At stige Draaber fra et Øie vælde.
-Hun prøved paa at tale, hendes Røst
-Blev qvalt i det udspændte Bryst;
+At slige Draaber fra et Øie vælde.
+Hun prøved paa at tale - hendes Røst
+Blev qvalt i det udspændte Bryst,
 Dog syntes, i det sagte, hule Suk, hun drog,
 Som hele Hjertet vaanded sig og slog.
 Det var forbi - hun prøved det igjen,
@@ -1085,10 +1085,10 @@ End hende med det arme, brødefulde Liv,
 Hvem hver en Følelse som Spore gjaldt
 Til syndig Daad, men som ei havde Magt
 At bære dens Opdagelse og dens Foragt.
-Og dog hun leved, ja, for snart kom Timen,
+Og dog hun leved - ja - for snart kom Timen,
 Der endte den dødlignende Besvimen,
-Men bragte ei Fornuft: hver Sands
-Ved Rædslens dybe Rysten gik i Staa.
+Men bragte ei Fornuft - hver Sands
+Ved Rædslens dybe Rysten gik i Staa;
 Som Buestrengen, man i Regnen spændte,
 Forfeiler Maal og Skud,
 Hver svækket Trevl i Hjernen sendte
@@ -1096,56 +1096,56 @@ Vildfarende sin Tanke ud:
 Fortiden sort, Fremtiden mørk,
 Omblusset kun af Vanvidsflammen,
 Som Lynglimt i en øde Ørk,
-Hvor Midnatsstorme kæmpe sammen!
-Hun frygted, følte Skræk og Gru,
-Rædsomme Byrder tynged hendes Hu,
-Hun vidste, Synd og Skam var mellem dem,
+Hvor Midnatsstorme kæmpe sammen.
+Hun frygted - følte Skræk og Gru -
+Rædsomme Byrder tynged hendes Hu -
+Hun vidste, Synd og Skam var mellem dem;
 At der var En, som skulde døe - men hvem?
-Det var forglemt. Mon selv hun leved end?
+Det var forglemt: - Mon selv hun leved end?
 Var det endnu den samme Jord, de samme Mænd,
 Den samme Himmel? Hvor forvirret!
 Eller var det Fjender, disse der, som stirred
-Foragtelig med Kulde
+Foragtelig med Kulde,
 Paa Blik, dem forhen vennehulde?
 Alting var ubestemt og uden Baand
 For hendes vankende, vildfarne Aand;
-Af Augst og Haab et Virvar uden Ende.
+Af Angst og Haab et Virvar uden Ende;
 Snart under Graad, snart Latter, saae man hende,
 Vanvittig stum i al sin Qvide,
 Med sorte Rædseldrømme stride;
-Forgjæves dog anstrengte hun sin Magt,
-Forgjæves kæmped hun, at blive vakt.
+Forgjæves dog anstrengte hun sin Magt;
+Forgjæves kæmped hun, at blive vakt!
 
 Alt Klosterklokken ringer,
 Men drøvelig og svag
 I Taarnets Hul den svinger
-Og gungrer dybe Slag;
-Alvorlig de til Hjertet gaae.
-Hør! Sangen lyder allerede,
-Sangen for Døde dernede,
-Eller for dem, der snart er ligesaa.
+Og gungrer dybe Slag.
+Alvorlig de til Hjertet gaae!
+Hør! Sangen allerede -
+Sangen for Døde, dernede,
+Eller for dem, der snart er ligesaa!
 For et Væsens Sjæl, som bortgaaer,
 Liigpsalmen lyder, og Kirkeklokken slaaer.
 Nær ved sit jordiske Maal han staaer:
 Knælende ved Munkens Knæ
-(Munken flau at høre, ynkelig at see),
+Flau at høre - ynkelig at see -
 Knælende ved Lyden af Klokken,
-Rundtom sig Vagten, foran sig Blokken,
+Rundtom sig Vagten, foran sig Blokken -
 Og Bødlen med blottet Arm, for, naar han vil,
-Med stadig Kraft at kunne hugge til,
-Prøvende Oxens skarpe Bid
-Og hvæssende den paany med Flid;
+Med stadig Kraft at kunne hugge til -
+Prøvende Øxens skarpe Bid
+Og hvæssende den paany med Flid -
 Mens Kredsen af en maalløs Mængde tættes,
 For ved en Faders Dom at see en Søn henrettes.
 
 Endnu en Times Herlighed,
 Før denne Sommersol gaaer ned,
-Der steg paa Rædselsdagen, som til Spot,
+Der steg paa Rædselsdagen, som til Spot
 Med renest Glands, skyfriest Blaat;
 Dens Aftenlysning rød
 Sig over Hugos uheldsvangre Hoved gjød,
 Mens han, sit sidste Skriftemaal
-Fremstammende, med stille Taal
+Fremstammende med stille Taal
 Og angerfuld Hengivenhed
 For Munken bøies ned,
 At høre Ordet, som forkynder
@@ -1156,116 +1156,116 @@ Og Haaret bruunt i Krøller gled
 Halvt om den nøgne Nakke ned;
 Men mere stærk endnu den hvide
 Solstraale faldt paa Øxen ved hans Side
-Og funkled med en klar ætherisk Strime.
-O, det var en bitter Afskedstime!
+Og funkled med en klar ætherisk Strime -
+O - det var en bitter Afskedstime!
 De Haardeste med Rædsel maatte stride:
 Sort Brøde og retfærdig Dom -
 Dog gjøs det i dem, da den kom.
 
 Nu ere alle Bønner sendt mod oven
-For den falske Søn, den Beiler saa forvoven,
-Talt hver Synd, læst hver Bøn, han vidste;
-Sig nærmer blandt hans Øieblik det sidste.
+For den falske Søn, den Beiler saa forvoven!
+Talt hver Synd, læst hver Bøn, han vidste:
+Sig nærmer, blandt hans Øieblik, det sidste -
 Kappen, den flagrende, først faldt,
 Og nu de tykke, brune Lokker alt;
-Det er fordi, tæt er de ham afskaaren.
-Den Trøie, til det Sidste baaren,
-Det Skjers, ham Parisina gav,
+Det er forbi - tæt er de ham afskaaren -
+Den Trøie, til det Sidste baaren -
+Det Skierf, ham Parisina gav,
 Maa ham ei pryde i hans Grav.
 Alt det man kaster nu tilside,
 Og omkring Øiet Klædet slaaes, det hvide;
 Men nei - nei, denne sidste Skam
-Skal ikke overgaae hans Blik og ham;
+Skal ikke overgaae hans Blik og ham:
 Al Følelse, der lod som slukt, paany
 Halvt vaagnede i dyb Afsky,
 Da Bødlens Hænder gav sig til og vilde
-Hans Øine ved et Skjul fra Lyset stille:
+Hans Øine ved et Skjul, fra Lyset skille:
 De havde til at skue Døden Mod.
-,,Nei, eders er mit spildte Liv og Blod,
-Min Arm er lænket fast; men skik
+,,Nei - eders er mit spildte Liv og Blod -
+Min Arm er lænket fast, men skik
 Mig ud af Verden med mit frie Blik -
-Hug!'' og idet hau Ordet sagde,
-Han Hovedet paa Blokken lagde.
-Det var det sidste Ord, da kan sig bukked:
+Hug!'' og idet han Ordet sagde,
+Han Hovedet paa Blokken lagde;
+Det var det sidste Ord, da han sig bukked:
 ,,Hug!'' og glimtende faldt Huggget -
 Sprang Hovedet - og livløs, fuld
 Af røde Pletter, Kroppen sank omkuld
 I Sandet, som hver dyb Blodaare slukked
-Og med sin blodige Regn bedugged.
+Og med sin blodige Regn bedugged;
 Hans Læber og hans Blik krampagtig spille
 Endnu et Øieblik - saa evigt stille.
 
 Han døde, som en Mand skal døe med Rette,
 Foruden Pral, foruden Trætte.
 Ydmyg bad han og tilfode faldt;
-Præstens Løfter ham for fulde gjaldt,
+Præstens Løvter ham for fulde gjaldt,
 Og hans Haab fortvivled ei om Alt.
-Medens han for Præsten knælte,
+Medens han for Præsten knælte
 Ei noget Jordisk mere ham besjælte;
 Hans vrede Herre - og hans Elskerinde, hun -
 Hvad var de for ham i en saadan Stund?
-Nu intet Had, nu ingen Anke,
-Til Bøn kun Ord, for Gud kun Tanke -
-Paa de Ord nær, han sukked
+Nu intet Had - nu ingen Anke;
+Til Bøn kun Ord - for Gud kun Tanke -
+Paa de faa nær, han sukked
 Henbøiet under Bøddelhugget
 Om Død med Øiet uomvunden,
 Det eneste Farvel, ham slap af Munden.
 
 Hidtil, som tomt for Livets Kilde,
 Enhver Tilskuers Bryst stod stille;
-Men nu fra Mand til Mand vidtom
+Men nu, fra Mand til Mand, vidtom
 En kold, elektrisk Gysen rendte,
 Idet det faldt, det Dødsens Hug
 Paa ham, hvis Liv og Elskov endte;
 Og blandet med en Hysning kom
-Fra hver en Barm et angstfuldt Suk.
+Fra hver en Barm et angstfuldt Suk;
 Men ingen Lyd meer skingrende dog brast
 Bagefter Hugget, som med fast
 Og kraftig Iil til Blokken trængte,
-End een - Hvis var den Røst, som sprængte
+End een: - hvis var den Røst, som sprængte
 Den tause Luft med saadant Hviin?
 Saa vildtfortvivlende, som Skriget
 Af Moderen, der søger sin
-Hjertelskte Glut og finder Liget.
+Hjertelskte Glut, og finder Liget.
 Til Himlen trængte denne Jammer,
 Som kom den dybt fra evige Flammer.
-Igjennem dit Borggitter, Azo! skriger
+Igjennem dit Borggitter, Azo, skriger
 Den skrækkelige Røst og op til Himlen stiger,
-Og didhen vendes hvert et Blik.
-Men Lyd og Suk med eet forgik.
-Det var en Qvindes Skrig, og aldrig tvang
+Og didhen vendes hvert et Blik;
+Men Lyd og Suk med eet forgik!
+Det var en Qvindes Skrig - og aldrig tvang
 Fortvivlelsen Lyd til vildere Klang;
 Enhver, som hørte det i Luften briste,
 Barmhjertig ønskede, det var det sidste.
 
 Hugo er død; og fra den Time vil
-Om Parisina man i Hal og Hytte
+Om Parisina man, i Hal og Hytte
 Forgjæves skue og forgjæves lytte.
 Hendes Navn - som var det aldrig til -
 Var banlyst fra hver Mund og Øre,
-Liig Ord, vanhellige at høre;
+Lig Ord, vanhellige at høre;
 Og af Fyrst Azo Ingen, selv i Løn,
 En Lyd fornam, som angik Viv og Søn.
-Ei Grav, ei Mindesteen dem fattes -
+Ei Grav, ei Mindesteen dem sattes -
 Ham idetmindste, som vi dræbes saae,
 Hans Støv Indvielsen maa fattes.
 Men Parisinas Skjæbne laae
-Skjult, som et Liig med Kistelaaget paa:
+Skjult som et Liig med Kistelaaget paa:
 Om hun i Klostret Tilflugt fandt
 Og der den tornede Vei til Himlen vandt,
 I Rad af Aar hudflettet, hungrende og vaad
 Af de søvnløse Nætters Graad;
 Om ved Giftbægret eller Staalet blank
-Til Straf hun for sin sorte Elskov sank:
+Til Straf hun for sin sorte Elskov sank;
 Hvad eller hun i Timen, i den samme,
 For mere hastig Marter maatte synke,
 Liig ham, hun saae Blodøxen ramme,
 Idet hun Deel i Bøddelhugget tog,
 Og Hjertet, fuldt af Hast, som for at ynke
-Den Sønderknnste, brast, idet det slog:
-Man veed det ei - og Ingen faaer det vide;
+Den Sønderknuste, brast, idet det slog, -
+Man veed det ei - og Ingen faaer det vide:
 Men hvad hun ogsaa maatte lide,
-Begyndte hendes Liv, og endte det med Qvide.
+Begyndte hendes Liv, og endte det med Qvide!
 
 Og Azo fandt en anden Brud,
 Og bolde Sønner gav ham Gud;
@@ -1274,13 +1274,13 @@ Som han, der smuldred i sin Grav;
 Og var de end - hans kolde Blik
 Kun flygtigt over deres Blomstring gik;
 Et halvqvalt Suk var Alt, de fik.
-Men aldrig Graad paa Kinden hviilte,
-Og aldrig det mørke Aasyn smiilte;
+Men aldrig Graad paa Kinden hvilte,
+Og aldrig det mørke Aasyn smilte;
 Paa Fyrstens stolte Pande sad
 Erindringsfolderne i afbrudt Rad,
 De Furer og de dybe Skaar,
-En Ploug af Kummer skar før Tiden,
-Ax af de smertefulde Saar,
+En Ploug af Kummer skar før Tiden, -
+Arr af de smertefulde Saar,
 Hans Sind modtog i Sjælestriden.
 Al Fremtids Fryd og Qval for ham var slukt,
 Hans hele Livsens Frugt
@@ -1288,41 +1288,41 @@ Var søvnløs Ro, aarvaagen Plage,
 Glandsløse og fortabte Dage,
 Et Hjerte, sig selv en Byrde til det Sidste,
 Der ei kan glemme og dog ei vil briste;
-Der, naar det synes koldt og dødt.
+Der, naar det synes koldt og dødt,
 Har dybest Nag, er ømmest blødt:
 Hvor tykt endogsaa Isen lægges,
-Kun Overfladen er det, som bedækkes;
-Paa Bunden gaaer den stride Elv
+Kun Overfladen er det, som bedækkes -
+Paa Bunden gaaer den stride Elv,
 Og kan ei standse, om den vilde selv.
 Hans lukte Barm af Følelser blev gjæstet,
 Som der Naturens Magt har fæstet
 Med altfor dybe Rødder til at glemmes,
-Om ogsaa Taareløbet hemmes.
+Om ogsaa Taareløbet hemmes;
 Om end med Vold vi qvæle dem
 Og hindre fra at bryde frem,
 De tørres ei - de Taarer trille
-Tilbage til den indre Kilde:
-<w>Der</w>, i den dybe Brønd, de rinde.
-<w>Der</w> slutte de sig evigt inde,
-Useet, ugrædt, en Strøm, som aldrig endes.
+Tilbage til den indre Kilde;
+Der, i den dybe Brønd, de rinde,
+Der slutte de sig evigt inde,
+Useet, ugrædt, en Strøm, som aldrig endes,
 Og rigest der, hvor mindst den kjendes.
 Med Følelsernes efterladte Krav;
 Med Angst for dem i sorten Grav;
 Med Muligheden plat fortabt
 At fylde Svælget, hines Død har skabt;
-Foruden Haab, at sees med dem igjen.
+Foruden Haab, at sees med dem igjen
 Hvor Sjæle mødes, Ven med Ven;
 Med en Samvittighed, hvis Røst
 Gav Dommen Ret, og med den Trøst,
-De grov dem selv en Grav ved deres Brøde -
+De grov dem selv en Grav ved deres Brøde
 Dog Azos Liv for evig var lagt øde.
 Lad Træets visne Grene hugges ned
 Med varsom Haand, det giver Kraft,
 Desbedre stiger Liv og Saft,
-Og Kronen breder sig derved;
+Og Kronen breder sig derved:
 Men dersom Lynet med sin Flamme
 Slaaer ned, hvor Toppen frodig suser,
-Det føler i sin Marv den tætte Stamme,
+Det føler i sin Marv den tætte Stamme;
 Og aldrig meer et Løv sig kruser.
 
 <nonum><right><i>Byron.</i></right></nonum>
@@ -1332,14 +1332,14 @@ Og aldrig meer et Løv sig kruser.
 
 <poem id="aarestrup2002022101">
 <head>
-   <title>Til min Søn</title>
-   <toctitle>—: Til min Søn</toctitle>
-   <firstline>Saa lyse Haar, saa mørke Blik</firstline>
-   <notes>
-      <note>Gendigtning af Byrons <xref type="translation" poem="byron2002022501"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="92-93"/>
+    <title>Til min Søn</title>
+    <toctitle>—: Til min Søn</toctitle>
+    <firstline>Saa lyse Haar, saa mørke Blik</firstline>
+    <notes>
+        <note>Gendigtning af Byrons <xref type="translation" poem="byron2002022501"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="92-93"/>
 </head>
 <body>
 Saa lyse Haar, saa mørke Blik,
@@ -1387,14 +1387,14 @@ Ungdom ei slukker Hjertets Drift
 
 <poem id="aarestrup2002022102">
 <head>
-   <title>O græske Øer! min Fædrejord!</title>
-   <toctitle>—: O græske Øer! min Fædrejord!</toctitle>
-   <firstline>O græske Øer! min Fædrejord!</firstline>
-   <notes>
-      <note>Gendigtning af Byron: <xref type="translation" poem="byron2002022502"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="94-95"/>
+    <title>O græske Øer! min Fædrejord!</title>
+    <toctitle>—: O græske Øer! min Fædrejord!</toctitle>
+    <firstline>O græske Øer! min Fædrejord!</firstline>
+    <notes>
+        <note>Gendigtning af Byron: <xref type="translation" poem="byron2002022502"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="94-95"/>
 </head>
 <body>
 O græske Øer! min Fædrejord!
@@ -1445,14 +1445,14 @@ Mit Ansigt rødmede af Blue.
 
 <poem id="aarestrup2002022103">
 <head>
-   <title>Er min Hjertenskjær paa Søen</title>
-   <toctitle>Cornwall: Er min Hjertenskjær paa Søen</toctitle>
-   <firstline>Er min Hjertenskjær paa Søen</firstline>
-   <notes>
-      <note>Oversættelse af Cornwalls <xref type="translation" poem="cornwall2002022501"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="96"/>
+    <title>Er min Hjertenskjær paa Søen</title>
+    <toctitle>Cornwall: Er min Hjertenskjær paa Søen</toctitle>
+    <firstline>Er min Hjertenskjær paa Søen</firstline>
+    <notes>
+        <note>Oversættelse af Cornwalls <xref type="translation" poem="cornwall2002022501"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="96"/>
 </head>
 <body>
 Er min Hjertenskjær paa Søen
@@ -1476,14 +1476,14 @@ Til min Arm, mit Bryst.
 
 <poem id="aarestrup2002022104">
 <head>
-   <title>Sover du i Træet hist</title>
-   <toctitle>—: Sover du i Træet hist</toctitle>
-   <firstline>Sover du i Træet hist</firstline>
-   <notes>
-      <note>Oversættelse af Cornwalls <xref type="translation" poem="cornwall2019013101"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="97"/>
+    <title>Sover du i Træet hist</title>
+    <toctitle>—: Sover du i Træet hist</toctitle>
+    <firstline>Sover du i Træet hist</firstline>
+    <notes>
+        <note>Oversættelse af Cornwalls <xref type="translation" poem="cornwall2019013101"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="97"/>
 </head>
 <body>
 Sover du i Træet hist,
@@ -1507,15 +1507,15 @@ Uden hun var kjælen med.
 
 <poem id="aarestrup20190130106" variant="aarestrup2002022105">
 <head>
-   <title>Drikkevise</title>
-   <toctitle>—: Drikkevise</toctitle>
-   <firstline>Natten fyld med Jubelstemme</firstline>
-   <notes>
-      <note>Oversættelse af Cornwalls <xref type="translation" poem="cornwall2019013102"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <keywords>drikkevise</keywords>
-   <source pages="98"/>
+    <title>Drikkevise</title>
+    <toctitle>—: Drikkevise</toctitle>
+    <firstline>Natten fyld med Jubelstemme</firstline>
+    <notes>
+        <note>Oversættelse af Cornwalls <xref type="translation" poem="cornwall2019013102"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <keywords>drikkevise</keywords>
+    <source pages="98"/>
 </head>
 <body>
 Natten fyld med Jubelstemme
@@ -1552,14 +1552,14 @@ Drik, og drukn i Glæde Verden.
 
 <poem id="aarestrup2002022106">
 <head>
-   <title>Just nys var den vandet med brusende Strøm</title>
-   <toctitle>Cowper: Just nys var den vandet med brusende Strøm</toctitle>
-   <firstline>Just nys var den vandet med brusende Strøm</firstline>
-   <notes>
-      <note>Oversættelse af Cowpers <xref type="translation" poem="cowper2019013101"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="99"/>
+    <title>Just nys var den vandet med brusende Strøm</title>
+    <toctitle>Cowper: Just nys var den vandet med brusende Strøm</toctitle>
+    <firstline>Just nys var den vandet med brusende Strøm</firstline>
+    <notes>
+        <note>Oversættelse af Cowpers <xref type="translation" poem="cowper2019013101"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="99"/>
 </head>
 <body>
 Just nys var den vandet med brusende Strøm
@@ -1594,15 +1594,15 @@ Paafølges maaskee af et Smiil
 
 <poem id="aarestrup2000082801">
 <head>
-   <title>Ederne</title>
-   <toctitle>Delavigne: Ederne</toctitle>
-   <indextitle>Ederne</indextitle>
-   <firstline>Ja, jeg adlyder Dig; jeg sværger, tøiles skal</firstline>
-   <notes>
-      <note>Oversættelse af Casimir Delavigne: <xref type="translation" poem="delavigne2019013101"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="107-108"/>
+    <title>Ederne</title>
+    <toctitle>Delavigne: Ederne</toctitle>
+    <indextitle>Ederne</indextitle>
+    <firstline>Ja, jeg adlyder Dig; jeg sværger, tøiles skal</firstline>
+    <notes>
+        <note>Oversættelse af Casimir Delavigne: <xref type="translation" poem="delavigne2019013101"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="107-108"/>
 </head>
 <body>
 Ja, jeg adlyder Dig; jeg sværger, tøiles skal
@@ -1642,15 +1642,15 @@ Jeg sværger - - Ha - hvem der? - O jeg har intet svoret!
 
 <poem id="aarestrup20190130107" variant="aarestrup2000082802">
 <head>
-   <title>Levende Minde</title>
-   <toctitle>Goethe: Levende Minde</toctitle>
-   <firstline>Et Baand, en Sløife, som den Smukke</firstline>
-   <notes>
-      <note>Gendigtnings af Goethes <xref type="translation" poem="goethe2000082802"/>.</note>
-      <note>Fra brev 1. juli 1826 til Frk. Caroline Aagaard, senere Fru Aarestrup.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="109"/>
+    <title>Levende Minde</title>
+    <toctitle>Goethe: Levende Minde</toctitle>
+    <firstline>Et Baand, en Sløife, som den Smukke</firstline>
+    <notes>
+        <note>Gendigtnings af Goethes <xref type="translation" poem="goethe2000082802"/>.</note>
+        <note>Fra brev 1. juli 1826 til Frk. Caroline Aagaard, senere Fru Aarestrup.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="109"/>
 </head>
 <body>
 Et Baand, en Sløife, som den Smukke
@@ -1687,15 +1687,15 @@ Mind mig om Lykke og om Lyst!
 
 <poem id="aarestrup20190130108" variant="aarestrup2000082803">
 <head>
-   <title>Den Elsktes Nærhed</title>
-   <toctitle>—: Den Elsktes Nærhed</toctitle>
-   <firstline>Jeg mindes dig, naar Morgensolen brænder</firstline>
-   <notes>
-      <note>Gendigtning af Goethe: <xref type="translation" poem="goethe2000082801"/>.</note>
-      <note>Fra brev 1. juli 1826 til Frk. Caroline Aagaard, senere Fru Aarestrup.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <source pages="110"/>
+    <title>Den Elsktes Nærhed</title>
+    <toctitle>—: Den Elsktes Nærhed</toctitle>
+    <firstline>Jeg mindes dig, naar Morgensolen brænder</firstline>
+    <notes>
+        <note>Gendigtning af Goethe: <xref type="translation" poem="goethe2000082801"/>.</note>
+        <note>Fra brev 1. juli 1826 til Frk. Caroline Aagaard, senere Fru Aarestrup.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <source pages="110"/>
 </head>
 <body>
 Jeg mindes dig, naar Morgensolen brænder
@@ -1724,15 +1724,15 @@ Sol synker alt, snart funkle mine Stjerner -
 
 <poem id="aarestrup2019013101" variant="aarestrup2000082804">
 <head>
-   <title>Til den Fraværende</title>
-   <toctitle>—: Til den Fraværende</toctitle>
-   <firstline>Saa har jeg virkelig Dig mistet?</firstline>
-   <notes>
-      <note>Gendigtning af Goethe: <xref type="translation" poem="goethe2000082803"/>.</note>
-      <note>Fra brev 1. juli 1826 til Frk. Caroline Aagaard, senere Fru Aarestrup.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
-   <source pages="111"/>
+    <title>Til den Fraværende</title>
+    <toctitle>—: Til den Fraværende</toctitle>
+    <firstline>Saa har jeg virkelig Dig mistet?</firstline>
+    <notes>
+        <note>Gendigtning af Goethe: <xref type="translation" poem="goethe2000082803"/>.</note>
+        <note>Fra brev 1. juli 1826 til Frk. Caroline Aagaard, senere Fru Aarestrup.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="111"/>
 </head>
 <body>
 Saa har jeg virkelig Dig mistet?
@@ -1757,15 +1757,15 @@ O Elskte, kom! o kom igjen!
 
 <poem id="aarestrup20190130109" variant="aarestrup2000082805">
 <head>
-   <title>Trøst</title>
-   <toctitle>—: Trøst</toctitle>
-   <firstline>Du er bestandig kummerfuld</firstline>
-   <notes>
-      <note>Gendigtning af Goethe: <xref type="translation" poem="goethe2000082805"/>.</note>
-      <note>Fra brev 1. juli 1826 til Frk. Caroline Aagaard, senere Fru Aarestrup.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="112-113"/>
+    <title>Trøst</title>
+    <toctitle>—: Trøst</toctitle>
+    <firstline>Du er bestandig kummerfuld</firstline>
+    <notes>
+        <note>Gendigtning af Goethe: <xref type="translation" poem="goethe2000082805"/>.</note>
+        <note>Fra brev 1. juli 1826 til Frk. Caroline Aagaard, senere Fru Aarestrup.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="112-113"/>
 </head>
 <body>
 Du er bestandig kummerfuld,
@@ -1773,40 +1773,40 @@ Min Ven, det er ei ret.
 Man kan paa dine Øine see,
 Nu har Du atter grædt.
 
-»Og har jeg atter eensom grædt,
+,,Og har jeg atter eensom grædt,
 Det er min egen Sag,
 Lad Taaren flyde, naar den vil,
-Den lindrer Sorg og Nag.«
+Den lindrer Sorg og Nag.''
 
 Hør dine glade Venners Raad,
 Kom til os; her er Ro!
 Og har Du ogsaa meget tabt,
 Dit Tab du os fortro
 
-»O sværm I kun! I ane ei
+,,O sværm I kun! I ane ei
 Hvad mig har qvalfuld gjort.
 Gud veed! jeg har vel intet tabt,
-Skjøndt Savnet er saa stort.«
+Skjøndt Savnet er saa stort.''
 
 Nuvel! klynk ikke som et Barn,
 Frisk strømmer jo dit Blod!
 Af Kræfter har du meer end nok
 Brug til Bedrift dit Mod.
 
-»O kunde jeg erhverve det?
+,,O kunde jeg erhverve det?
 I daarlig mig forstaae.
 Det er saa høit, det er saa skjønt,
-Som Stjernen i det Blaae.«
+Som Stjernen i det Blaae.''
 
 Forlanger du da Stjernerne?
 Til Pragt er de kun sat.
 Og henrykt vi mod Himlen see
 Den stjerneklare Nat.
 
-»Ja henrykt seer jeg ogsaa op
+,,Ja henrykt seer jeg ogsaa op
 Om Dagen, til min Trøst;
 Lad mig da græde Natten bort,
-Saalænge jeg har Lyst.«
+Saalænge jeg har Lyst.''
 
 <nonum><right><i>Goethe.</i></right></nonum>
 </body>
@@ -1817,27 +1817,27 @@ Saalænge jeg har Lyst.«
     <title>Ungersvenden og Møllebækken</title>
     <toctitle>—: Ungersvenden og Møllebækken</toctitle>
     <firstline>Saa lyt dog, klare Sølverbæk</firstline>
-   <notes>
-      <note>Gendigtning af Goethes <xref type="translation" poem="goethe2018121101"/>.</note>
-   </notes>
+    <notes>
+        <note>Gendigtning af Goethes <xref type="translation" poem="goethe2018121101"/>.</note>
+    </notes>
     <source pages="114-116"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <nonum><center>SVENDEN.</center></nonum>
 Saa lyt dog, klare Sølverbæk,
-Til Talen?
+Til Talen;
 Du iler glad, letsindig væk
 I Dalen.
 Hvad søger du med hastig Trang?
-Saa hør mig dog og tal engang!
+Saa hør mig dog, og tal engang!
 
 <nonum><center>BÆKKEN.</center></nonum>
 Jeg var en Bæk, et freidigt Væld;
 De spænde
 Mig ind, paa det jeg mere snel
 Skal rende
-Derned til Lundens Mølleværk
+Derned til Lundens Mølleværk,
 Og altid være fuld og stærk.
 
 <nonum><center>SVENDEN.</center></nonum>
@@ -1858,7 +1858,7 @@ Da ryger jeg og damper varm.
 
 <nonum><center>SVENDEN.</center></nonum>
 Kan hun i Vandet Elskovsglød
-Optænde,
+Optænde;
 Hvad har ei Kjød og Blod for Nød
 Af hende?
 Hvo kun den Hulde eengang faae
@@ -1869,32 +1869,32 @@ Saa styrter jeg paa Hjulet mig
 Fra Slusen,
 Og alle Tænder dreie sig
 Med Susen.
-Fra den Tid, vi har hende havt,
+Fra den Tid, vi har hende haft,
 Har ogsaa Vandet bedre Kraft.
 
 <nonum><center>SVENDEN.</center></nonum>
 Hvor skjøn hun er, du snart har glemt,
-Hvor yndig;
-Hun siger til dig, sødt i Skjemt:
+Hvor yndig!
+Hun siger til dig, sødt i Skjæmt:
 Nu skynd dig!
 Dog, gav hun dig et Elskovsblik,
-Jeg troer, du mere nødig gik.
+Jeg troer du mere nødig gik.
 
 <nonum><center>BÆKKEN.</center></nonum>
-Saa langsom, langsom finder jeg,
-Som fangen,
+Saa langsom, langsom flyder jeg,
+Som fangen:
 Jeg krummer sagte kun min Vei
 Om Vangen;
-Og kom det an paa mig, min Ven!
+Og kom det an paa mig, min Ven,
 Jeg gierne vendte om igjen.
 
 <nonum><center>SVENDEN.</center></nonum>
-Farvel da! Bølg om Busk og Vang
+Farvel da! Bølg om Busk og Vang,
 I Skygge!
 Du mumler mig maaskee engang
 Til Lykke.
 Nyn hende for, i Aftnens Ro,
-Mit stille Haab, min bange Tro!
+Mit stille Haab, min bange Tro.
 
 <nonum><right><i>Goethe.</i></right></nonum>
 </body>
@@ -1902,14 +1902,14 @@ Mit stille Haab, min bange Tro!
 
 <poem id="aarestrup2000082806">
 <head>
-   <title>Møllerpigens Forræderie</title>
-   <toctitle>—: Møllerpigens Forræderie</toctitle>
-   <firstline>Ei, ei, min Ven, saa tidlig oppe?</firstline>
-   <notes>
-      <note>Fragment af Goethes <xref type="translation" poem="goethe2000082804"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="117"/>
+    <title>Møllerpigens Forræderie</title>
+    <toctitle>—: Møllerpigens Forræderie</toctitle>
+    <firstline>Ei, ei, min Ven, saa tidlig oppe?</firstline>
+    <notes>
+        <note>Fragment af Goethes <xref type="translation" poem="goethe2000082804"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="117"/>
 </head>
 <body>
 Ei, ei, min Ven, saa tidlig oppe?
@@ -1934,14 +1934,14 @@ Hin skjælmske Gud har ham bedraget,
 
 <poem id="aarestrup2000082807">
 <head>
-   <title>Salig Længsel</title>
-   <toctitle>—: Salig Længsel</toctitle>
-   <firstline>Siig det ikkun til den Vise</firstline>
-   <notes>
-      <note>Gendigtning af Goethe: <xref type="translation" poem="goethe2000082806"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="118"/>
+    <title>Salig Længsel</title>
+    <toctitle>—: Salig Længsel</toctitle>
+    <firstline>Siig det ikkun til den Vise</firstline>
+    <notes>
+        <note>Gendigtning af Goethe: <xref type="translation" poem="goethe2000082806"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="118"/>
 </head>
 <body>
 Siig det ikkun til den Vise -
@@ -1975,14 +1975,14 @@ Paa denne dunkle Jord.
 
 <poem id="aarestrup2000082808">
 <head>
-   <title>Yndig er det Blik, en Pige skikker</title>
-   <toctitle>—: Yndig er det Blik, en Pige skikker</toctitle>
-   <firstline>Yndig er det Blik, en Pige skikker</firstline>
-   <notes>
-      <note>Gendigtning af Goethe: <xref type="translation" poem="goethe2000082807"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="119"/>
+    <title>Yndig er det Blik, en Pige skikker</title>
+    <toctitle>—: Yndig er det Blik, en Pige skikker</toctitle>
+    <firstline>Yndig er det Blik, en Pige skikker</firstline>
+    <notes>
+        <note>Gendigtning af Goethe: <xref type="translation" poem="goethe2000082807"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="119"/>
 </head>
 <body>
 Yndig er det Blik, en Pige skikker,
@@ -2002,14 +2002,14 @@ Agt det vel, og du vil immer give. -
 
 <poem id="aarestrup2000082809">
 <head>
-   <title>Til Suleika</title>
-   <toctitle>—: Til Suleika</toctitle>
-   <firstline>For at gotte dig med Vellugt</firstline>
-   <notes>
-      <note>Gendigtning af Goethe: <xref type="translation" poem="goethe2000082808"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="120"/>
+    <title>Til Suleika</title>
+    <toctitle>—: Til Suleika</toctitle>
+    <firstline>For at gotte dig med Vellugt</firstline>
+    <notes>
+        <note>Gendigtning af Goethe: <xref type="translation" poem="goethe2000082808"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="120"/>
 </head>
 <body>
 For at gotte dig med Vellugt,
@@ -2038,14 +2038,14 @@ Offret Myriader Sjæle?
 
 <poem id="aarestrup2000082810">
 <head>
-   <title>Maanskinsnatten</title>
-   <toctitle>—: Maanskinsnatten</toctitle>
-   <firstline>Herskerinde, siig, hvad hviske</firstline>
-   <notes>
-      <note>Gendigtning af Goethes <xref type="translation" poem="goethe2000082809"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="121"/>
+    <title>Maanskinsnatten</title>
+    <toctitle>—: Maanskinsnatten</toctitle>
+    <firstline>Herskerinde, siig, hvad hviske</firstline>
+    <notes>
+        <note>Gendigtning af Goethes <xref type="translation" poem="goethe2000082809"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="121"/>
 </head>
 <body>
 Herskerinde, siig, hvad hviske
@@ -2083,14 +2083,14 @@ Just i dette Øieblik.
 
 <poem id="aarestrup20190130111" variant="aarestrup2000082601">
 <head>
-   <title>Paa Sangens skjønne Vinger</title>
-   <toctitle>Heine: Paa Sangens skjønne Vinger</toctitle>
-   <firstline>Paa Sangens skjønne Vinger</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2000082601"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="124"/>
+    <title>Paa Sangens skjønne Vinger</title>
+    <toctitle>Heine: Paa Sangens skjønne Vinger</toctitle>
+    <firstline>Paa Sangens skjønne Vinger</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2000082601"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="124"/>
 </head>
 <body>
 Paa Sangens skjønne Vinger,
@@ -2124,14 +2124,14 @@ Og drømme en salig Drøm.
 
 <poem id="aarestrup20190130112" variant="aarestrup2000082602">
 <head>
-   <title>Min søde Glut, naar Du er død</title>
-   <toctitle>—: Min søde Glut, naar Du er død</toctitle>
-   <firstline>Min søde Glut, naar Du er død</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2000082602"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="125"/>
+    <title>Min søde Glut, naar Du er død</title>
+    <toctitle>—: Min søde Glut, naar Du er død</toctitle>
+    <firstline>Min søde Glut, naar Du er død</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2000082602"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="125"/>
 </head>
 <body>
 Min søde Glut, naar Du er død,
@@ -2160,14 +2160,14 @@ Vi blive rolig dernede.
 
 <poem id="aarestrup20190130113" variant="aarestrup2000082603">
 <head>
-   <title>Mit Hjerte er sørgmodigt</title>
-   <toctitle>—: Mit Hjerte er sørgmodigt</toctitle>
-   <firstline>Mit Hjerte er sørgmodigt</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2000082603"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="126-127"/>
+    <title>Mit Hjerte er sørgmodigt</title>
+    <toctitle>—: Mit Hjerte er sørgmodigt</toctitle>
+    <firstline>Mit Hjerte er sørgmodigt</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2000082603"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="126-127"/>
 </head>
 <body>
 Mit Hjerte er sørgmodigt,
@@ -2206,14 +2206,14 @@ Gud give, han skjød mig ihiel!
 
 <poem id="aarestrup20190130114" variant="aarestrup2000082604">
 <head>
-   <title>Til den svundne Tid, paa min Ære</title>
-   <toctitle>—: Til den svundne Tid, paa min Ære</toctitle>
-   <firstline>Til den svundne Tid, paa min Ære</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2000082604"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="128"/>
+    <title>Til den svundne Tid, paa min Ære</title>
+    <toctitle>—: Til den svundne Tid, paa min Ære</toctitle>
+    <firstline>Til den svundne Tid, paa min Ære</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2000082604"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="128"/>
 </head>
 <body>
 Til den svundne Tid, paa min Ære,
@@ -2237,14 +2237,14 @@ Saa var der sletintet at holde sig til.
 
 <poem id="aarestrup20190130115" variant="aarestrup2000082605">
 <head>
-   <title>Nu er det Tid; jeg vil hiint Tant</title>
-   <toctitle>—: Nu er det Tid; jeg vil hiint Tant</toctitle>
-   <firstline>Nu er det Tid; jeg vil hiint Tant</firstline>
-   <notes>
-      <note>Oversættelse af Heinrich Heine: <xref type="translation" poem="heine2000082605"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="129"/>
+    <title>Nu er det Tid; jeg vil hiint Tant</title>
+    <toctitle>—: Nu er det Tid; jeg vil hiint Tant</toctitle>
+    <firstline>Nu er det Tid; jeg vil hiint Tant</firstline>
+    <notes>
+        <note>Oversættelse af Heinrich Heine: <xref type="translation" poem="heine2000082605"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="129"/>
 </head>
 <body>
 Nu er det Tid; jeg vil hiint Tant,
@@ -2273,14 +2273,14 @@ Spillet den døende Gladiator.
 
 <poem id="aarestrup20190130116" variant="aarestrup2000082606">
 <head>
-   <title>Jeg vilde saa gjerne hvile</title>
-   <toctitle>—: Jeg vilde saa gjerne hvile</toctitle>
-   <firstline>Jeg vilde saa gjerne hvile</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2000082606"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="130"/>
+    <title>Jeg vilde saa gjerne hvile</title>
+    <toctitle>—: Jeg vilde saa gjerne hvile</toctitle>
+    <firstline>Jeg vilde saa gjerne hvile</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2000082606"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="130"/>
 </head>
 <body>
 Jeg vilde saa gjerne hvile
@@ -2309,14 +2309,14 @@ Er hændet mig eengang før.
 
 <poem id="aarestrup20190130117" variant="aarestrup2000082607">
 <head>
-   <title>Du har Diamanter og Perler</title>
-   <toctitle>—: Du har Diamanter og Perler</toctitle>
-   <firstline>Du har Diamanter og Perler</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2000082607"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="131"/>
+    <title>Du har Diamanter og Perler</title>
+    <toctitle>—: Du har Diamanter og Perler</toctitle>
+    <firstline>Du har Diamanter og Perler</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2000082607"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="131"/>
 </head>
 <body>
 Du har Diamanter og Perler,
@@ -2340,15 +2340,15 @@ Elskede, hvad vil du meer?
 
 <poem id="aarestrup20190130118" variant="aarestrup2000082608">
 <head>
-   <title>Hvor mig Kastraterne ynkede</title>
-   <toctitle>—: Hvor mig Kastraterne ynkede</toctitle>
-   <indextitle>Hvor mig Kastraterne ynkede</indextitle>
-   <firstline>Hvor mig Kastraterne ynkede</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2000082608"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="132"/>
+    <title>Hvor mig Kastraterne ynkede</title>
+    <toctitle>—: Hvor mig Kastraterne ynkede</toctitle>
+    <indextitle>Hvor mig Kastraterne ynkede</indextitle>
+    <firstline>Hvor mig Kastraterne ynkede</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2000082608"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="132"/>
 </head>
 <body>
 Hvor mig Kastraterne ynkede,
@@ -2372,15 +2372,15 @@ Græd over saadan en Konst.
 
 <poem id="aarestrup20190130119" variant="aarestrup2000082609">
 <head>
-   <title>Siig, hvor er det Englevæsen</title>
-   <toctitle>—: Siig, hvor er det Englevæsen</toctitle>
-   <indextitle>Siig, hvor er det Englevæsen</indextitle>
-   <firstline>Siig, hvor er det Englevæsen</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2000082609"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="133"/>
+    <title>Siig, hvor er det Englevæsen</title>
+    <toctitle>—: Siig, hvor er det Englevæsen</toctitle>
+    <indextitle>Siig, hvor er det Englevæsen</indextitle>
+    <firstline>Siig, hvor er det Englevæsen</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2000082609"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="133"/>
 </head>
 <body>
 Siig, hvor er det Englevæsen,
@@ -2399,15 +2399,15 @@ Urnen med min Elskovs Aske.
 
 <poem id="aarestrup20190130120" variant="aarestrup2002021801">
 <head>
-   <title>Erklæring</title>
-   <toctitle>—: Erklæring</toctitle>
-   <indextitle>Erklæring</indextitle>
-   <firstline>Dæmrende kom Aftnen</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2002020388"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="134"/>
+    <title>Erklæring</title>
+    <toctitle>—: Erklæring</toctitle>
+    <indextitle>Erklæring</indextitle>
+    <firstline>Dæmrende kom Aftnen</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2002020388"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="134"/>
 </head>
 <body>
 Dæmrende kom Aftnen,
@@ -2459,42 +2459,41 @@ Læse med Jubel Himmelordene:
         <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2000010801"/>.</note>
     </notes>
     <source pages="136-138"/>
-    <quality>korrektur1,kilde,side</quality>
+    <keywords>hafis</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Lykkelig Manden, der naaede Havnen,
 Lagde bag sig Havet og Stormene,
 Og som nu sidder varm og rolig
-I Raadstuens Viinkjelder i Bremen!
+I Raadstuens Viinkjælder i Bremen!
 
-    Hvor dog Verden fortrolig og yndig
+Hvor dog Verden fortrolig og yndig
 Afspejles i det grønne Viinglas,
 Og hvor den bølgende Mikrokosmos
 Solvarm flyder ned i det tørstige Hjerte!
 Alting seer jeg i Glasset,
 Verdenshistorien, den gamle og nye,
 Tyrker og Græker, Hegel og Gaasen,
-Orangelunden og Vagtparaden,
+Orangelunden og Vagtparader,
 Berlin og Schilda og Tunis og Hamborg,
 Men fremfor Alt den Elskedes Billed,
 Englehovedet paa Rhinskovenes Guldgrund.
-
-    O hvor skjøn, hvor skjøn er du, Elskte!
-Du er som en Rose;
+O hvor skjøn! hvor skjøn er du, Elskte!
+Du er som en Rose!
 Ikke som Rosen fra Schiras,
-Den hafisbesjungne Nattergalebrud;
+Den hafisbesjungne Nattergalebrud:
 Ikke som Sarons Rose,
 Den helligrøde, prophetlovpriste;
-Du er som Raadstukjelderens Rose i Bremen.
+Du er som Raadstuekjælderens Rose i Bremen!
 Det er Rosernes Rose,
 Jo ældre den bliver, des yndigere,
 Og den himmelske Duft har besjælt mig,
-Har indblæst mig Aand, har beruust mig;
-Og, holdt mig ei fast, ved Haartoppen fast
-Den bremiske Raadstumester i Kjelderen,
-Saa snublede jeg.
-
-    Den brave Mand! vi sade tilsammen
+Har indblæst mig Aand, har beruust mig,
+Og holdt mig ei fast, ved Haartoppen fast,
+Den bremiske Raadstuemester i Kjælderen,
+Saa snublede jeg -
+Den brave Mand! vi sade tilsammen
 Og drak som Brødre,
 Vi talte om høie, hemmelige Ting,
 Vi sukkede, sank hinanden til Brystet,
@@ -2505,21 +2504,19 @@ Som eengang mig selv skal vorde tilgivet;
 Jeg græd af Andagt, og endelig
 Aabnedes for mig Porten til den evige Lykke,
 Hvor de tolv Apostle, de hellige Viinfade,
-Prædike tause og dog saa forstaaelig
+Prædike tause, og dog saa forstaaelig
 For alle Folkeslag.
-
-    Det er Mænd!
-Uanseelige udenfra, gjorded' med Træ,
+Det er Mænd!
+Uanseelige udenfra, gjorded med Træ,
 Indvendig ere de skjønne og lysende, mere
 End alle Templets stolte Leviter,
-End Herodes' Drabanter og Hofmænd,
+End Herodes Trabanter og Hofmænd,
 De gyldensmykkede, purpurbeklædte -
 Altid var det min Tro,
-Ei iblandt den allersimpleste Klasse,
-Nei, i det ypperste Selskab
+Ei iblandt den allersimpleste Classe,
+Nei i det ypperste Selskab
 Leved bestandig Himlens Drot.
-
-    Halleluja! hvor yndigt omviste mig
+Halleluja! hvor yndigt omvifter mig
 Beth Els Palmer!
 Hvor dufter Hebrons Myrrha!
 Hvor bruser Jordan og tumler af Glæde!
@@ -2527,10 +2524,9 @@ Og min udødelige Sjæl tumler ogsaa,
 Og jeg tumler med den, og tumlende
 Bringer op ad Trappen mig til Dagens Lys
 Raadstuens Kjeldermester, den brave, i Bremen.
-
-Du brave Raadstukjeldermester i Bremen?
+Du brave Raadstukkældermester i Bremen!
 Seer du, paa Husenes Tage sidde
-Englene og ere halvfulde og synge;
+Englene, og ere halvfulde og synge;
 Den skinnende Sol deroppe paa Himlen
 Er kun den røde, viindrukne Næse,
 Som Verdens Geist stikker frem,
@@ -2543,14 +2539,14 @@ Dreier sig hele den drukne Verden.
 
 <poem id="aarestrup20190130122" variant="aarestrup2002021802">
 <head>
-   <title>Sove gjør de store Guder</title>
-   <toctitle>—: Sove gjør de store Guder</toctitle>
-   <firstline>Sove gjør de store Guder</firstline>
-   <notes>
+    <title>Sove gjør de store Guder</title>
+    <toctitle>—: Sove gjør de store Guder</toctitle>
+    <firstline>Sove gjør de store Guder</firstline>
+    <notes>
        <note>Oversættelse af Heines <xref type="translation" poem="heine2017081901"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="139"/>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="139"/>
 </head>
 <body>
 Sove gjør de store Guder
@@ -2574,14 +2570,14 @@ For, som Guderne, at sove.
 
 <poem id="aarestrup20190130123" variant="aarestrup2002021803">
 <head>
-   <title>Vaarnattens Øine, stjerneblaa</title>
-   <toctitle>—: Vaarnattens Øine, stjerneblaa</toctitle>
-   <firstline>Vaarnattens Øine, stjerneblaa</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2018120905"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="140"/>
+    <title>Vaarnattens Øine, stjerneblaa</title>
+    <toctitle>—: Vaarnattens Øine, stjerneblaa</toctitle>
+    <firstline>Vaarnattens Øine, stjerneblaa</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2018120905"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="140"/>
 </head>
 <body>
 Vaarnattens Øine, stjerneblaa,
@@ -2600,14 +2596,14 @@ Udvider atter sig Sjælen.
 
 <poem id="aarestrup20190130124" variant="aarestrup2002021804">
 <head>
-   <title>Alle Skovens Træer skingre</title>
-   <toctitle>—: Alle Skovens Træer skingre</toctitle>
-   <firstline>Alle Skovens Træer skingre</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2018120906"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="141"/>
+    <title>Alle Skovens Træer skingre</title>
+    <toctitle>—: Alle Skovens Træer skingre</toctitle>
+    <firstline>Alle Skovens Træer skingre</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2018120906"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="141"/>
 </head>
 <body>
 Alle Skovens Træer skingre,
@@ -2636,14 +2632,14 @@ Amor troer jeg, at han hedder.
 
 <poem id="aarestrup20190130125" variant="aarestrup2002021805">
 <head>
-   <title>Faren er der, Stormklokken ringer</title>
-   <toctitle>—: Faren er der, Stormklokken ringer</toctitle>
-   <firstline>Faren er der, Stormklokken ringer</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120904"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="142"/>
+    <title>Faren er der, Stormklokken ringer</title>
+    <toctitle>—: Faren er der, Stormklokken ringer</toctitle>
+    <firstline>Faren er der, Stormklokken ringer</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120904"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="142"/>
 </head>
 <body>
 Faren er der, Stormklokken ringer
@@ -2662,14 +2658,14 @@ Troer jeg, er med blandt de Sammensvorne.
 
 <poem id="aarestrup20190130126" variant="aarestrup2002021806">
 <head>
-   <title>Hvad har Du for i den deilige Nat?</title>
-   <toctitle>—: Hvad har Du for i den deilige Nat?</toctitle>
-   <firstline>Hvad har Du for i den deilige Nat?</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120901"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="143"/>
+    <title>Hvad har Du for i den deilige Nat?</title>
+    <toctitle>—: Hvad har Du for i den deilige Nat?</toctitle>
+    <firstline>Hvad har Du for i den deilige Nat?</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120901"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="143"/>
 </head>
 <body>
 Hvad har Du for i den deilige Nat?
@@ -2692,14 +2688,14 @@ Henrykt med Stjernerne talte?
 
 <poem id="aarestrup20190130127" variant="aarestrup2002021807">
 <head>
-   <title>Den hellige Alliance</title>
-   <toctitle>—: Den hellige Alliance</toctitle>
-   <firstline>Den hellige Alliance</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120902"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="144"/>
+    <title>Den hellige Alliance</title>
+    <toctitle>—: Den hellige Alliance</toctitle>
+    <firstline>Den hellige Alliance</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120902"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="144"/>
 </head>
 <body>
 Den hellige Alliance,
@@ -2718,14 +2714,14 @@ Den trykkede vi itu.
 
 <poem id="aarestrup20190130128" variant="aarestrup2002021808">
 <head>
-   <title>Siig, hvo opfandt Uhrene, Glut?</title>
-   <toctitle>—: Siig, hvo opfandt Uhrene, Glut?</toctitle>
-   <firstline>Siig, hvo opfandt Uhrene, Glut?</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120804"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="145"/>
+    <title>Siig, hvo opfandt Uhrene, Glut?</title>
+    <toctitle>—: Siig, hvo opfandt Uhrene, Glut?</toctitle>
+    <firstline>Siig, hvo opfandt Uhrene, Glut?</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120804"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="145"/>
 </head>
 <body>
 Siig, hvo opfandt Uhrene, Glut?
@@ -2748,14 +2744,14 @@ Og Solen smiilte, Fuglene sang.
 
 <poem id="aarestrup20190130129" variant="aarestrup2002021809">
 <head>
-   <title>Frygt kun ei, at jeg forraader</title>
-   <toctitle>—: Frygt kun ei, at jeg forraader</toctitle>
-   <firstline>Frygt kun ei, at jeg forraader</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120903"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="146"/>
+    <title>Frygt kun ei, at jeg forraader</title>
+    <toctitle>—: Frygt kun ei, at jeg forraader</toctitle>
+    <firstline>Frygt kun ei, at jeg forraader</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120903"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="146"/>
 </head>
 <body>
 Frygt kun ei, at jeg forraader
@@ -2780,14 +2776,14 @@ Og for Poesie det gaaer.
 
 <poem id="aarestrup2002021810">
 <head>
-   <title>Himlen graa og immer Hverdags!</title>
-   <toctitle>—: Himlen graa og immer Hverdags!</toctitle>
-   <firstline>Himlen graa og immer Hverdags!</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2019013101"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="147"/>
+    <title>Himlen graa og immer Hverdags!</title>
+    <toctitle>—: Himlen graa og immer Hverdags!</toctitle>
+    <firstline>Himlen graa og immer Hverdags!</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2019013101"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="147"/>
 </head>
 <body>
 Himlen graa og immer Hverdags!
@@ -2811,15 +2807,15 @@ Seer igjen, og dette Pludder.
 
 <poem id="aarestrup20190130130" variant="aarestrup2002021811">
 <head>
-   <title>Ha din Fader! ha, din Moder</title>
-   <toctitle>—: Ha din Fader! ha, din Moder</toctitle>
-   <indextitle>Ha din Fader! ha, din Moder</indextitle>
-   <firstline>Ha din Fader! ha, din Moder</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120802"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="148"/>
+    <title>Ha din Fader! ha, din Moder</title>
+    <toctitle>—: Ha din Fader! ha, din Moder</toctitle>
+    <indextitle>Ha din Fader! ha, din Moder</indextitle>
+    <firstline>Ha din Fader! ha, din Moder</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120802"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="148"/>
 </head>
 <body>
 Ha din Fader! ha, din Moder
@@ -2843,15 +2839,15 @@ Da de saae dem begge dræbes.
 
 <poem id="aarestrup20190130131" variant="aarestrup2002021812">
 <head>
-   <title>Knurre maa du, lee og gruble</title>
-   <toctitle>—: Knurre maa du, lee og gruble</toctitle>
-   <indextitle>Knurre maa du, lee og gruble</indextitle>
-   <firstline>Knurre maa du, lee og gruble</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120801"/>.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <source pages="149"/>
+    <title>Knurre maa du, lee og gruble</title>
+    <toctitle>—: Knurre maa du, lee og gruble</toctitle>
+    <indextitle>Knurre maa du, lee og gruble</indextitle>
+    <firstline>Knurre maa du, lee og gruble</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120801"/>.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <source pages="149"/>
 </head>
 <body>
 Knurre maa du, lee og gruble,
@@ -2872,14 +2868,14 @@ Til du faar din Næse blodig.
 
 <poem id="aarestrup20190130132" variant="aarestrup2002021813">
 <head>
-   <title>Lykken - en løs, letsindig Frøken</title>
-   <toctitle>—: Lykken - en løs, letsindig Frøken</toctitle>
-   <firstline>Lykken - en løs, letsindig Frøken</firstline>
-   <notes>
-      <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120803"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="153"/>
+    <title>Lykken - en løs, letsindig Frøken</title>
+    <toctitle>—: Lykken - en løs, letsindig Frøken</toctitle>
+    <firstline>Lykken - en løs, letsindig Frøken</firstline>
+    <notes>
+        <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2018120803"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="153"/>
 </head>
 <body>
 Lykken - en løs, letsindig Frøken,
@@ -2908,24 +2904,24 @@ Sætter sig ved din Seng og strikker.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Hvor er min Sø, mit blanke Speil,
+Hvor er min Søe, mit blanke Speil,
 Hvor er den friske Bugt?
-Hvor Snekkerne for fulde Seil
+Hvor Snekkerne for fulde Seil -
 Med Flag og Vimplers Flugt?
 
-Jeg savner Strandens Bølgeslag,
-En Lyd, harmonisk skjøn,
+Jeg savner Strandens Bølgeslag
+En Lyd, harmonisk, skjøn -
 Det fjerne Muml, det nære Brag -
 Hvor høres Havets Drøn?
 
-Hvad Duft end disse Myrter strøe,
-Hvor sølvklart Kildens Vand:
+Hvad Duft end disse Myrter strøe
+Hvor sølvklart Kildens Vand -
 Af Længsel maa mit Hjerte døe -
 Hvor er den aabne Strand?
 
 Jeg hører Alpehornets Røst,
-Seer Hyrden ved sin Stav;
-Men Echo tier i mit Bryst -
+Seer Hyrden ved sin Stav -
+Men Eccho tier i mit Bryst -
 Hvor er det høie Hav?
 
 <nonum><right><i>Mrs. Hemans.</i></right></nonum>
@@ -2941,33 +2937,33 @@ Hvor er det høie Hav?
         <note>Gendigtning af »Der Muck und die Flue verheirathen sich«.</note>
     </notes>
     <source pages="155"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-En Myg og Flue Bryllup holdt,
+En Myg og Flue Bryllup holdt
 Det var saamegen Glæde;
 I Solskin paa en Taarepiil
 De monne Dandsen træde.
 
-,,Og siig mig, hvad dit Udstyr er,
-Og hvad din Brudegave?''
-,,,,En lille Draabe Menneskeblod
-Er Alt hvad jeg mon have.''''
+Og siig mig hvad dit Udstyr er,
+Og hvad din Brudegave?
+En lille Draabe Menneskeblod
+Er Alt hvad jeg mon have.
 
-,,Og siig, hvor er din Sommersal,
-Hvor vi hinanden finde?''
-,,,,I Græsset ved den mumlende Bæk
-Alt under brede Linde.''''
+Og siig, hvor er din Sommersal
+Hvor vi hinanden finde?
+I Græsset ved den mumlende Bæk
+Alt under brede Linde.
 
-,,Og siig, hvor er dit Vinterhuus,
-Naar vi af Kuld mon grue?''
-,,,,I Hytten hos en Bonde god
-Vi spanke i hans Stue.''''
+Og siig, hvor er dit Vinterhuus,
+Naar vi af Kuld mon grue?
+I Hytten hos en Bonde god
+Vi spanke i hans Stue.
 
 De dandse paa den Taarepiil
 Og glædes overmaade -
 Da kommer en Vipstjert listelig
-Og snapper dennem baade.
+Og snapper dem alle baade.
 
 <nonum><right><i>Hoffmann von Fallersleben.</i></right></nonum>
 </body>
@@ -2978,6 +2974,8 @@ Og snapper dennem baade.
 <!-- TODO: -: La Fée et la Péri, pp. 159-168 -->
 <!-- TODO: -: Péri, pp. 169-170 -->
 <!-- TODO: -: Hvor hen, du unge Skæl, hold stille, pp. 171-173 -->
+
+<!-- ==== Nået hertil ==== -->
 
 <poem id="aarestrup20190130135" variant="aarestrup2018111007">
 <head>
@@ -3261,14 +3259,14 @@ Og kan ei samle meer de sønderhugne Led,
 
 <poem id="aarestrup20190130139" variant="aarestrup2002022006">
 <head>
-   <title>Moderen i Graven</title>
-   <toctitle>Kerner: Moderen i Graven</toctitle>
-   <firstline>Faderen med Børneflokken</firstline>
-   <notes>
-      <note>Oversættelse af »Auf der Mutter Grabes Hügel«.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="187"/>
+    <title>Moderen i Graven</title>
+    <toctitle>Kerner: Moderen i Graven</toctitle>
+    <firstline>Faderen med Børneflokken</firstline>
+    <notes>
+        <note>Gendigtning af Justinus Kerner: <xref type="translation" poem="kerner2018120901"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="187"/>
 </head>
 <body>
 Faderen med Børneflokken
@@ -3393,14 +3391,14 @@ Og Drot ind i sin Glød.
 
 <poem id="aarestrup2000082901">
 <head>
-   <title>Til Lucasta, da han gik i Krig -</title>
-   <toctitle>Lovelace: Til Lucasta, da han gik i Krig -</toctitle>
-   <firstline>Kald mig ei, Søde, mindre varm</firstline>
-   <notes>
-      <note>Richard Lovelace: <xref type="translation" poem="lovelace2000082901"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="194"/>
+    <title>Til Lucasta, da han gik i Krig -</title>
+    <toctitle>Lovelace: Til Lucasta, da han gik i Krig -</toctitle>
+    <firstline>Kald mig ei, Søde, mindre varm</firstline>
+    <notes>
+        <note>Richard Lovelace: <xref type="translation" poem="lovelace2000082901"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="194"/>
 </head>
 <body>
 Kald mig ei, Søde, mindre varm,
@@ -3424,14 +3422,14 @@ Var mig ei Æren dyr.
 
 <poem id="aarestrup2002022008">
 <head>
-   <title>Til Cæcilianus</title>
-   <toctitle>Martial: Til Cæcilianus</toctitle>
-   <firstline>Ingen i hele vor By gad røre din Kone, det veed du</firstline>
-   <notes>
-      <note>Oversættelse af Lib. 1. epig. 73.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="195"/>
+    <title>Til Cæcilianus</title>
+    <toctitle>Martial: Til Cæcilianus</toctitle>
+    <firstline>Ingen i hele vor By gad røre din Kone, det veed du</firstline>
+    <notes>
+        <note>Oversættelse af Lib. 1. epig. 73.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="195"/>
 </head>
 <body>
 Ingen i hele vor By gad røre din Kone, det veed du,
@@ -3445,14 +3443,14 @@ Krybskytter øve din Dont - Du er unægtelig snild!
 
 <poem id="aarestrup2002022009">
 <head>
-   <title>Siger du: skynd dig! saa gjør jeg det, Hidyle, skjøndt at</title>
-   <toctitle>—: Siger du: skynd dig! saa gjør jeg det, Hidyle, skjøndt at</toctitle>
-   <firstline>Siger du: skynd dig! saa gjør jeg det, Hidyle, skjøndt at</firstline>
-   <notes>
-      <note>Oversættelse af Lib. 1. epig. 46.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="195"/>
+    <title>Siger du: skynd dig! saa gjør jeg det, Hidyle, skjøndt at</title>
+    <toctitle>—: Siger du: skynd dig! saa gjør jeg det, Hidyle, skjøndt at</toctitle>
+    <firstline>Siger du: skynd dig! saa gjør jeg det, Hidyle, skjøndt at</firstline>
+    <notes>
+        <note>Oversættelse af Lib. 1. epig. 46.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="195"/>
 </head>
 <body>
 Siger du: skynd dig! saa gjør jeg det, Hidyle, skjøndt at
@@ -3466,11 +3464,11 @@ Og hvis selv du har Hast, siig det, saa giver jeg Tid.
 
 <poem id="aarestrup2002022010">
 <head>
-   <title>Byttet</title>
-   <toctitle>Martin: Byttet</toctitle>
-   <firstline>Mig disse Blomsters Valg og dette</firstline>
-   <quality>korrektur1,kilde</quality>
-   <source pages="196"/>
+    <title>Byttet</title>
+    <toctitle>Martin: Byttet</toctitle>
+    <firstline>Mig disse Blomsters Valg og dette</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="196"/>
 </head>
 <body>
 <nonum><center><sc>digteren</sc></center></nonum>
@@ -3499,14 +3497,14 @@ Yndige Digt, du her har sagt.
 
 <poem id="aarestrup20190130142" variant="aarestrup2002022011">
 <head>
-   <title>Jeg vilde mig udride</title>
-   <toctitle>Mezger: Jeg vilde mig udride</toctitle>
-   <firstline>Jeg vilde mig udride</firstline>
-   <notes>
-      <note>Oversættelse af »Spazieren wollt ich reiten«.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="197-198"/>
+    <title>Jeg vilde mig udride</title>
+    <toctitle>Mezger: Jeg vilde mig udride</toctitle>
+    <firstline>Jeg vilde mig udride</firstline>
+    <notes>
+        <note>Oversættelse af Ambrosius Mezger: »Spazieren wollt ich reiten«.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="197-198"/>
 </head>
 <body>
 Jeg vilde mig udride
@@ -3591,14 +3589,14 @@ Har at elske de Læber, som komme os nær!
 
 <poem id="aarestrup20190130144" variant="aarestrup2000082902">
 <head>
-   <title>Harpens Oprindelse</title>
-   <toctitle>—: Harpens Oprindelse</toctitle>
-   <firstline>Man vil vide, at Harpen, jeg slaaer for min Møe</firstline>
-   <notes>
-      <note>Thomas Moore: <xref type="translation" poem="moore2000082936"/>.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <source pages="200"/>
+    <title>Harpens Oprindelse</title>
+    <toctitle>—: Harpens Oprindelse</toctitle>
+    <firstline>Man vil vide, at Harpen, jeg slaaer for min Møe</firstline>
+    <notes>
+        <note>Thomas Moore: <xref type="translation" poem="moore2000082936"/>.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <source pages="200"/>
 </head>
 <body>
 Man vil vide, at Harpen, jeg slaaer for min Mø,
@@ -3627,14 +3625,14 @@ Er du fjern, tone Sorg, tone Lyst, er du nær.
 
 <poem id="aarestrup20190130145" variant="aarestrup2000082903">
 <head>
-   <title>Lesbias Øie er af Ild</title>
-   <toctitle>—: Lesbias Øie er af Ild</toctitle>
-   <firstline>Lesbias Øie er af Ild</firstline>
-   <notes>
-      <note>Thomas Moore: <xref type="translation" poem="moore2000082940"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="201-202"/>
+    <title>Lesbias Øie er af Ild</title>
+    <toctitle>—: Lesbias Øie er af Ild</toctitle>
+    <firstline>Lesbias Øie er af Ild</firstline>
+    <notes>
+        <note>Thomas Moore: <xref type="translation" poem="moore2000082940"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="201-202"/>
 </head>
 <body>
 Lesbias Øie er af Ild
@@ -3685,14 +3683,14 @@ Som varmer dine Blik, o Nora Creina.
 
 <poem id="aarestrup20190130146" variant="aarestrup2000082904">
 <head>
-   <title>I Midnattens Time, ved Stjernegraad vil jeg gaae</title>
-   <toctitle>—: I Midnattens Time, ved Stjernegraad vil jeg gaae</toctitle>
-   <firstline>I Midnattens Time, ved Stjernegraad vil jeg gaae</firstline>
-   <notes>
-      <note>Thomas Moore: <xref type="translation" poem="moore2000082950"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="203"/>
+    <title>I Midnattens Time, ved Stjernegraad vil jeg gaae</title>
+    <toctitle>—: I Midnattens Time, ved Stjernegraad vil jeg gaae</toctitle>
+    <firstline>I Midnattens Time, ved Stjernegraad vil jeg gaae</firstline>
+    <notes>
+        <note>Thomas Moore: <xref type="translation" poem="moore2000082950"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="203"/>
 </head>
 <body>
 I Midnattens Time, ved Stjernegraad vil jeg gaae
@@ -3713,14 +3711,14 @@ Istemmende svagt den eengang saa elskede Sang.
 
 <poem id="aarestrup20190130147" variant="aarestrup2000082905">
 <head>
-   <title>Den unge Maimaane svømmer, Glut</title>
-   <toctitle>—: Den unge Maimaane svømmer, Glut</toctitle>
-   <firstline>Den unge Maimaane svømmer, Glut</firstline>
-   <notes>
-      <note>Thomas Moore: <xref type="translation" poem="moore2000082953"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="204"/>
+    <title>Den unge Maimaane svømmer, Glut</title>
+    <toctitle>—: Den unge Maimaane svømmer, Glut</toctitle>
+    <firstline>Den unge Maimaane svømmer, Glut</firstline>
+    <notes>
+        <note>Thomas Moore: <xref type="translation" poem="moore2000082953"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="204"/>
 </head>
 <body>
 Den unge Maimaane svømmer, Glut
@@ -3751,14 +3749,14 @@ Den Vises Kikkert kan ei genere, du
 
 <poem id="aarestrup20190130148" variant="aarestrup2000082906">
 <head>
-   <title>O! Havde vi os en fager lille Ø</title>
-   <toctitle>—: O! Havde vi os en fager lille Ø</toctitle>
-   <firstline>O havde vi os en fager lille Ø</firstline>
-   <notes>
-      <note>Thomas Moore: <xref type="translation" poem="moore2000082956"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="205"/>
+    <title>O! Havde vi os en fager lille Ø</title>
+    <toctitle>—: O! Havde vi os en fager lille Ø</toctitle>
+    <firstline>O havde vi os en fager lille Ø</firstline>
+    <notes>
+        <note>Thomas Moore: <xref type="translation" poem="moore2000082956"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="205"/>
 </head>
 <body>
 O havde vi os en fager lille Ø
@@ -3790,14 +3788,14 @@ Og som Natten vor Død nærmes hellig og mild.
 
 <poem id="aarestrup2000082907">
 <head>
-   <title>O tvivl ei - Du vil finde</title>
-   <toctitle>—: O tvivl ei - Du vil finde</toctitle>
-   <firstline>O tvivl ei - Du vil finde</firstline>
-   <notes>
-      <note>Thomas Moore: <xref type="translation" poem="moore2000082958"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="206"/>
+    <title>O tvivl ei - Du vil finde</title>
+    <toctitle>—: O tvivl ei - Du vil finde</toctitle>
+    <firstline>O tvivl ei - Du vil finde</firstline>
+    <notes>
+        <note>Thomas Moore: <xref type="translation" poem="moore2000082958"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="206"/>
 </head>
 <body>
 O tvivl ei - Du vil finde
@@ -3832,15 +3830,15 @@ Skal vogte Ilden, tændt af Dig!
 
 <poem id="aarestrup20190130149" variant="aarestrup2000082908">
 <head>
-   <title>Til -</title>
-   <toctitle>—: Til -</toctitle>
-   <indextitle>Til -</indextitle>
-   <firstline>O dette Øiekast - see væk!</firstline>
-   <notes>
-      <note>Thomas Moore: »Sweet lady! look not thus again«.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="207"/>
+    <title>Til -</title>
+    <toctitle>—: Til -</toctitle>
+    <indextitle>Til -</indextitle>
+    <firstline>O dette Øiekast - see væk!</firstline>
+    <notes>
+        <note>Thomas Moore: »Sweet lady! look not thus again«.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="207"/>
 </head>
 <body>
 O dette Øiekast - see væk!
@@ -3874,15 +3872,15 @@ Paany fortryllet, flyer til dig!
 
 <poem id="aarestrup20190130150" variant="aarestrup2000082909">
 <head>
-   <title>Kysset</title>
-   <toctitle>—: Kysset</toctitle>
-   <indextitle>Kysset</indextitle>
-   <firstline>Giv mig det Duekys, du veed</firstline>
-   <notes>
-      <note>Thomas Moore: »Give me, my love, that billing kiss«.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="208"/>
+    <title>Kysset</title>
+    <toctitle>—: Kysset</toctitle>
+    <indextitle>Kysset</indextitle>
+    <firstline>Giv mig det Duekys, du veed</firstline>
+    <notes>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2018111206"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="208"/>
 </head>
 <body>
 Giv mig det Duekys, du veed
@@ -3906,14 +3904,14 @@ Du har jo lært mig det i Mørke!
 
 <poem id="aarestrup20190130151" variant="aarestrup2000082910">
 <head>
-   <title>Elegiske Stanzer</title>
-   <toctitle>—: Elegiske Stanzer</toctitle>
-   <firstline>Hvor roligt hviilte jeg ei der</firstline>
-   <notes>
-      <note>Thomas Moore: »How sweetly could I lay my head«.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="209"/>
+    <title>Elegiske Stanzer</title>
+    <toctitle>—: Elegiske Stanzer</toctitle>
+    <firstline>Hvor roligt hviilte jeg ei der</firstline>
+    <notes>
+        <note>Oversættelse af Thomas Moore: <xref type="translation" poem="moore2018121105"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="209"/>
 </head>
 <body>
 Hvor roligt hviilte jeg ei der,
@@ -3933,14 +3931,14 @@ Er Livets Sol alt gaaet bort.
 
 <poem id="aarestrup2000082911">
 <head>
-   <title>Til en sovende Pige</title>
-   <toctitle>—: Til en sovende Pige</toctitle>
-   <firstline>Vaagn op, mit Liv! Din Elskers Arm</firstline>
-   <notes>
-      <note>Thomas Moore: »Wake, my life! thy lover's arms«.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="210"/>
+    <title>Til en sovende Pige</title>
+    <toctitle>—: Til en sovende Pige</toctitle>
+    <firstline>Vaagn op, mit Liv! Din Elskers Arm</firstline>
+    <notes>
+        <note>Oversættelse af Thomas Moore: <xref type="translation" poem="moore2019013101"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="210"/>
 </head>
 <body>
 Vaagn op, mit Liv! Din Elskers Arm
@@ -3959,14 +3957,14 @@ Saa sov du, eller lad kun saa.
 
 <poem id="aarestrup20190130152" variant="aarestrup2000082912">
 <head>
-   <title>Til Phillis</title>
-   <toctitle>—: Til Phillis</toctitle>
-   <firstline>Glut, gjør ingen fæl Allarm</firstline>
-   <notes>
-      <note>Thomas Moore: »Phillis, you little rosy rake«.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="211"/>
+    <title>Til Phillis</title>
+    <toctitle>—: Til Phillis</toctitle>
+    <firstline>Glut, gjør ingen fæl Allarm</firstline>
+    <notes>
+        <note>Oversættelse af Thomas Moore: <xref type="translation" poem="moore2018111302"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="211"/>
 </head>
 <body>
 Glut, gjør ingen fæl Allarm,
@@ -3981,15 +3979,16 @@ Og ingen Snak meer om saa lidt.
 
 <poem id="aarestrup2000082913">
 <head>
-   <title>Til den meget lille JFR</title>
-   <toctitle>—: Til den meget lille Jfr</toctitle>
-   <indextitle>Til den meget lille JFR</indextitle>
-   <firstline>Denne Galskabsjournal er et Billed paa mig</firstline>
-   <notes>
-      <note>Thomas Moore: »This journal of folly's an emblem of me«.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="212"/>
+    <title>Til den meget lille JFR</title>
+    <toctitle>—: Til den meget lille Jfr</toctitle>
+    <indextitle>Til den meget lille JFR</indextitle>
+    <firstline>Denne Galskabsjournal er et Billed paa mig</firstline>
+    <notes>
+        <note>Thomas Moore: »This journal of folly's an emblem of me«.</note>
+        <!-- TODO: Find original: https://books.google.dk/books?id=y2o_AAAAYAAJ&dq=This%20journal%20of%20folly's%20an%20emblem%20of%20me&hl=da&pg=PA281#v=onepage&q=This%20journal%20of%20folly's%20an%20emblem%20of%20me&f=false -->
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="212"/>
 </head>
 <body>
 Denne Galskabsjournal er et Billed paa mig
@@ -4005,14 +4004,14 @@ Indbunden, ak, giv vore Arme kun Leilighed.
 
 <poem id="aarestrup20190130153" variant="aarestrup2000082914">
 <head>
-   <title>Til Julia</title>
-   <toctitle>—: Til Julia</toctitle>
-   <firstline>O hvis din Taare er af Smerte</firstline>
-   <notes>
-      <note>Thomas Moore: »Oh! if your tears are giv'n to care«.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="213"/>
+    <title>Til Julia</title>
+    <toctitle>—: Til Julia</toctitle>
+    <firstline>O hvis din Taare er af Smerte</firstline>
+    <notes>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2018111203"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="213"/>
 </head>
 <body>
 O hvis din Taare er af Smerte,
@@ -4033,15 +4032,14 @@ At jeg maa bede: stands dem ikke!
 
 <poem id="aarestrup20190130154" variant="aarestrup2000082910">
 <head>
-   <title>Elegiske Stanzer</title>
-   <toctitle>—: Elegiske Stanzer</toctitle>
-   <!-- Får senere titlen »Elegiske Stanzer« -->
-   <firstline>Hvor roligt hviilte jeg ei der</firstline>
-   <notes>
-      <note>Oversættelse af Thomas Moore: <xref type="translation" poem="moore2018121105"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
-   <source pages="217"/>
+    <title>Elegiske Stanzer</title>
+    <toctitle>—: Elegiske Stanzer</toctitle>
+    <firstline>Hvor roligt hviilte jeg ei der</firstline>
+    <notes>
+        <note>Oversættelse af Thomas Moore: <xref type="translation" poem="moore2018121105"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="217"/>
 </head>
 <body>
 Hvor roligt hviilte jeg ei der,
@@ -4067,7 +4065,7 @@ Er Livets Sol alt gaaet bort!
     <toctitle>—: Catalogen</toctitle>
     <firstline>Kom, hviskede Rosa en Dag ved mit Bryst</firstline>
     <notes>
-      <note>Oversættelse af Thomas Moore: <xref type="translation" poem="moore2018111301"/>.</note>
+        <note>Oversættelse af Thomas Moore: <xref type="translation" poem="moore2018111301"/>.</note>
     </notes>
     <source pages="222-223"/>
     <quality>korrektur1,kilde,side</quality>
@@ -4385,9 +4383,9 @@ Saasnart han siger Sandhed til dig!
     <title>Til en ostindisk Pige</title>
     <toctitle>—: Til en ostindisk Pige</toctitle>
     <firstline>Er alle Pigebørn fra Solens Hjem</firstline>
-   <notes>
+    <notes>
        <note>Oversættelse af Thomas Moore: <xref type="translation" poem="moore2018111202"/>.</note>
-   </notes>
+    </notes>
     <source pages="238"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4970,15 +4968,15 @@ End duftende Roser og selv dine Kys?
 
 <poem id="aarestrup2002022005">
 <head>
-   <title>Amor og Hymen</title>
-   <toctitle>—: Amor og Hymen</toctitle>
-   <indextitle>Amor og Hymen</indextitle>
-   <firstline>Amor var syg - han laae og vreed</firstline>
-   <notes>
-      <note>Oversættelse af »Love had a fever - ne'er could close«.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="257"/>
+    <title>Amor og Hymen</title>
+    <toctitle>—: Amor og Hymen</toctitle>
+    <indextitle>Amor og Hymen</indextitle>
+    <firstline>Amor var syg - han laae og vreed</firstline>
+    <notes>
+        <note>Oversættelse af »Love had a fever - ne'er could close«.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="257"/>
 </head>
 <body>
 Amor var syg - han laae og vreed
@@ -4998,15 +4996,15 @@ At skaffe Amor Ro og Hvile
 
 <poem id="aarestrup2002022003">
 <head>
-   <title>Hvis fri for trykkende Domme</title>
-   <toctitle>—: Hvis fri for trykkende Domme</toctitle>
-   <indextitle>Hvis fri for trykkende Domme</indextitle>
-   <firstline>Hvis fri for trykkende Domme</firstline>
-   <notes>
-      <note>Oversættelse af »If ever you've seen a gay party«.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="258"/>
+    <title>Hvis fri for trykkende Domme</title>
+    <toctitle>—: Hvis fri for trykkende Domme</toctitle>
+    <indextitle>Hvis fri for trykkende Domme</indextitle>
+    <firstline>Hvis fri for trykkende Domme</firstline>
+    <notes>
+        <note>Oversættelse af »If ever you've seen a gay party«.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="258"/>
 </head>
 <body>
 Hvis fri for trykkende Domme
@@ -5025,15 +5023,15 @@ Udsprudlende Sødme og Kraft.
 
 <poem id="aarestrup2002022004">
 <head>
-   <title>Lindetræet</title>
-   <toctitle>Müller: Lindetræet</toctitle>
-   <firstline>Der staaer en Lind ved Porten</firstline>
-   <notes>
-      <note>Maj 1834.</note>
-      <note>Gendigtning af Wilhelm Müllers <xref type="translation" poem="muellerw2002022501"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="259-260"/>
+    <title>Lindetræet</title>
+    <toctitle>Müller: Lindetræet</toctitle>
+    <firstline>Der staaer en Lind ved Porten</firstline>
+    <notes>
+        <note>Maj 1834.</note>
+        <note>Gendigtning af Wilhelm Müllers <xref type="translation" poem="muellerw2002022501"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="259-260"/>
 </head>
 <body>
 Der staaer en Lind ved Porten,
@@ -5072,14 +5070,14 @@ Her er dit Hvilested!
 
 <poem id="aarestrup2002021814">
 <head>
-   <title>Andalousierinden</title>
-   <toctitle>Musset: Andalousierinden</toctitle>
-   <firstline>Saae Du bevæge sig derinde</firstline>
-   <notes>
-      <note>Gendigtning af Mussets <xref type="translation" poem="musset2002022501"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <source pages="261-262"/>
+    <title>Andalousierinden</title>
+    <toctitle>Musset: Andalousierinden</toctitle>
+    <firstline>Saae Du bevæge sig derinde</firstline>
+    <notes>
+        <note>Gendigtning af Mussets <xref type="translation" poem="musset2002022501"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="261-262"/>
 </head>
 <body>
 Saae Du bevæge sig derinde
@@ -5139,6 +5137,9 @@ Skal fare op og bande høit!
     <title>En Engel stod ved Leiet stille</title>
     <toctitle>Reboul: En Engel stod ved Leiet stille</toctitle>
     <firstline>En Engel stod ved Leiet stille</firstline>
+    <notes>
+        <note>Gendigtning af Jean Reboul: <xref type="translation" poem="reboul2019013101"/>.</note>
+    </notes>
     <source pages="263-264"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5194,11 +5195,14 @@ Du favner grædende et Liig.
 
 <poem id="aarestrup20190130176" variant="aarestrup2001052510">
 <head>
-   <title>Ei du Halsen dække</title>
-   <toctitle>Rückert: Ei du Halsen dække</toctitle>
-   <firstline>Ei du Halsen dække</firstline>
-   <quality>korrektur1,kilde</quality>
-   <source pages="265-266"/>
+    <title>Ei du Halsen dække</title>
+    <toctitle>Rückert: Ei du Halsen dække</toctitle>
+    <firstline>Ei du Halsen dække</firstline>
+    <notes>
+        <note>Gendigtning af Rückert: <xref type="translation" poem="rueckert2018121103"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="265-266"/>
 </head>
 <body>
 Ei du Halsen dække,
@@ -5253,10 +5257,14 @@ Seer den fra sin Sky.
 
 <poem id="aarestrup2001052511">
 <head>
-   <title>Jeg lever i min Elsktes Bryst</title>
-   <toctitle>—: Jeg lever i min Elsktes Bryst</toctitle>
-   <firstline>Jeg lever i min Elsktes Bryst</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Jeg lever i min Elsktes Bryst</title>
+    <toctitle>—: Jeg lever i min Elsktes Bryst</toctitle>
+    <firstline>Jeg lever i min Elsktes Bryst</firstline>
+    <notes>
+        <note>Gendigtning af Rückert: <xref type="translation" poem="rueckert2019013101"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="267"/>
 </head>
 <body>
 Jeg lever i min Elsktes Bryst,
@@ -5356,11 +5364,11 @@ Hvis ikke, bliv ude!
 
 <poem id="aarestrup20190130178" variant="aarestrup2002021815">
 <head>
-   <title>Holde ud</title>
-   <toctitle>—: Holde ud</toctitle>
-   <firstline>Holder ud, o I elskende Hjerter!</firstline>
-   <quality>korrektur1,kilde</quality>
-   <source pages="271"/>
+    <title>Holde ud</title>
+    <toctitle>—: Holde ud</toctitle>
+    <firstline>Holder ud, o I elskende Hjerter!</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="271"/>
 </head>
 <body>
 Holder ud, o I elskende Hjerter!
@@ -5531,12 +5539,15 @@ Glad ved Livet, uden Frygt.''''
 
 <poem id="aarestrup20190130181" variant="aarestrup2002021816">
 <head>
-   <title>Vidtdreven Kjærlighed</title>
-   <toctitle>—: Vidtdreven Kjærlighed</toctitle>
-   <indextitle>Vidtdreven Kjærlighed</indextitle>
-   <firstline>Jeg elsker Alt, som har med Dig en Liighed -</firstline>
-   <quality>korrektur1,kilde</quality>
-   <source pages="280"/>
+    <title>Vidtdreven Kjærlighed</title>
+    <toctitle>—: Vidtdreven Kjærlighed</toctitle>
+    <indextitle>Vidtdreven Kjærlighed</indextitle>
+    <firstline>Jeg elsker Alt, som har med Dig en Liighed -</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <notes>
+        <note>Gendigtning af Rückert: <xref type="translation" poem="rueckert2018111302"/>.</note>
+    </notes>
+    <source pages="280"/>
 </head>
 <body>
 Jeg elsker Alt, som har med Dig en Liighed -
@@ -5973,14 +5984,14 @@ For en Faareost sat i Pant.
 
 <poem id="aarestrup20190130189" variant="aarestrup2002022001">
 <head>
-   <title>Vi ere syv</title>
-   <toctitle>Wordsworth: Vi ere syv</toctitle>
-   <indextitle>Vi ere syv</indextitle>
-   <firstline>Et muntert Barn</firstline>
-   <notes>
-      <note>Gendigtning af Wordsworths <xref type="translation" poem="wordsworth2002022501"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>Vi ere syv</title>
+    <toctitle>Wordsworth: Vi ere syv</toctitle>
+    <indextitle>Vi ere syv</indextitle>
+    <firstline>Et muntert Barn</firstline>
+    <notes>
+        <note>Gendigtning af Wordsworths <xref type="translation" poem="wordsworth2002022501"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
     <source pages="322-325"/>
 </head>
 <body>
