@@ -487,7 +487,7 @@
       <place>Weißenfels</place>
     </dead>
   </period>
-  <works>1797,1798,1802,1802h</works>
+  <works>1797,1798,1802,1802h,andre</works>
 </person>
 
 <person id="tieck" country="de" lang="de" type="poet">
@@ -5840,6 +5840,24 @@
   <works>andre</works>
 </person>
 
+<person id="atterbom" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Per Daniel Amadeus</firstname>
+    <lastname>Atterbom</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1790-01-19</date>
+      <place>Pålsbo, Åsbo</place>
+    </born>
+    <dead>
+      <date>1855-07-21</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <works>1824,1858</works>
+</person>
+
 <person id="stagnelius" country="se" lang="sv" type="poet">
   <name>
     <firstname>Erik Johan</firstname>
@@ -5857,6 +5875,24 @@
   </period>
   <works>1821,1822,andre</works>
 </person>
+
+<person id="almqvist" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Carl Jonas Love</firstname>
+    <lastname>Almqvist</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1793-11-28</date>
+      <place>Stockholm</place>
+    </born>
+    <dead>
+      <date>1866-09-26</date>
+      <place>Bremen</place>
+    </dead>
+  </period>
+</person>
+
 
 <person id="rydberg" country="se" lang="sv" type="poet">
   <name>
@@ -6176,7 +6212,7 @@
       <place>Stratford-upon-Avon, Warwickshire, England</place>
     </dead>
   </period>
-  <works>1593,1594,1601,lovers,sonnets</works>
+  <works>1593,1594,1601,lovers,sonnets,andre</works>
 </person>
 
 <person id="campion" country="gb" lang="en" type="poet">
