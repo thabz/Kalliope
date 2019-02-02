@@ -3030,7 +3030,7 @@
       <place>Odense</place>
     </dead>
   </period>
-  <works>1838,1863,trykte,1815-24,1825-37,1838-56,udat,ovs</works>
+  <works>1838,1863,1976,1976-1,1976-2,1976-3,1976-4,1976-5,1976-6</works>
 </person>
 
 <person id="deichmann" country="dk" lang="da" type="poet">
@@ -4742,6 +4742,24 @@
     <dead>
       <date>1811-01-10</date>
       <place>Paris</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
+<person id="reboul" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Jean</firstname>
+    <lastname>Reboul</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1796-01-23</date>
+      <place>Nîmes</place>
+    </born>
+    <dead>
+      <date>1864-05-28</date>
+      <place>Nîmes</place>
     </dead>
   </period>
   <works>andre</works>

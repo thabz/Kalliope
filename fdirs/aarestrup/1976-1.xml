@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1815-24" author="aarestrup" status="incomplete" type="poetry">
+<kalliopework id="1976-1" author="aarestrup" status="incomplete" type="poetry" parent="1976">
 <workhead>
-   <title>Utrykte digte 1814-24</title>
-   <year>?</year>
-   <notes>
-      <note>Indtastet efter Emil Aarestrups Samlede Skrifter, udg. af Hans Brix og Palle Raunkjær, C. A. Reitzels Boghandel, Kbh., 1976, bd. 1.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+    <title>Samlede Skrifter</title>
+    <subtitle>
+        <line>Første Bind. Utrykte digte før 1825.</line>
+    </subtitle>
+    <linktitle>Samlede Skrifter, 1. Bind</linktitle>
+    <toctitle><num>Bind 1.</num>Utrykte digte før 1825</toctitle>
+    <breadcrumbtitle>Bd. 1</breadcrumbtitle>
+    <year>1976</year>
+    <notes>
+        <note>Teksten følger Emil Aarestrup: <i>Samlede Skrifter</i>, Hans Brix (red.), Dansk Sprog- og Litteraturselskab, C.A. Reitzels Boghandel, Kbh., 1976.</note>
+    </notes>
+    <pictures>
+        <picture src="1976-1-p1.jpg">Titelbladet til <i>Samlede Skrifter, første bind</i> (1976) lyder ,,Emil Aarestrups / Samlede Skrifter / udgivne af / Hans Brix og Palle Runkjær / Første Bind // C. A. Reitzels Boghandel / 1976.''</picture>
+    </pictures>
+    <source facsimile="1976-1" facsimile-pages-num="244" facsimile-pages-offset="14">Emil Aarestrup: <i>Samlede Skrifter</i>, Hans Brix (red.), Dansk Sprog- og Litteraturselskab, C.A. Reitzels Boghandel, Kbh., 1976, bd. 1</source>
 </workhead>
 <workbody>
 
@@ -18,8 +26,8 @@
    <toctitle>Ridder Bruno</toctitle>
    <indextitle>Ridder Bruno</indextitle>
    <firstline>Lorinde iler ved Ridderens Arm</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
-   <!--  FILES:aarestrup1/aare1001.gif, aarestrup1/aare1002.gif, aarestrup1/aare1003.gif, aarestrup1/aare1004.gif, aarestrup1/aare1005.gif -->
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="1-5"/>
 </head>
 <body>
 I
@@ -162,27 +170,6 @@ Om Midnat, Stormene ud og ind
 </body>
 </poem>
 
-<poem id="aarestrup2002033101">
-<head>
-   <title>Dedikation til Hr. A. Tønder</title>
-   <toctitle>Dedikation til Hr. A. Tønder</toctitle>
-   <indextitle>Dedikation til Hr. A. Tønder</indextitle>
-   <firstline>Ei slemt nedriiv I lærde Mænd</firstline>
-   <notes>
-      <note>Dateret: den 5te Maii 1814.</note>
-      <note>Fra 1976-udgaven af <i>Emil Aarestrups Samlede Skrifter</i>, bind 6.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-</head>
-<body>
-Ei slemt nedriiv I lærde Mænd,
-Min<note>Min] min</note> lille nyelig bagte Bog.
-Den er for jer som ingenting,
-Thi naar I bare kunde see
-Saa loe I til I sprak ihjel.
-</body>
-</poem>
-
 <poem id="aarestrup1999041501">
 <head>
    <title>Sonnet</title>
@@ -190,8 +177,9 @@ Saa loe I til I sprak ihjel.
    <toctitle>Sonnet</toctitle>
    <indextitle>Sonnet</indextitle>
    <firstline>Mørk over mig sig sorte Graner bued</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>sonnet</keywords>
+   <source pages="6"/>
 </head>
 <body>
 Mørk over mig sig sorte Graner bued,
@@ -224,8 +212,9 @@ Og Synden tvetted Jesu med sit Blod.
    <notes>
       <note>Gendigtning af Segnis <xref type="translation" poem="segni2002032001"/>.</note>
    </notes>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>heksameter</keywords>
+   <source pages="8"/>
 </head>
 <body>
 Da end Aanden behersked Malerens dødlige Lemmer,
@@ -249,8 +238,9 @@ Fatted, og, uden Slør, nøgne, Gudinderne saae.
       <note>Der hentydes til <a person="oehlenschlaeger">Oehlenschlägers</a> tragedie <i>Correggio</i> (1811).</note>
       <note>Se evt. også <xref poem="aarestrup1999041503"/> og <xref poem="segni2002032001"/></note>
    </notes>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>heksameter,oehlenschlaeger</keywords>
+   <source pages="8-9"/>
 </head>
 <body>
 Længst alt var i den høie Himmel den hellige Maler,
@@ -276,8 +266,9 @@ Og fra Norden lød, dæmpet, den tragiske Sang -
    <pictures>
       <picture src="aarestrup1999041505.jpg">Hagesandros, Athenodoros og Polydoros af Rhodos: <i>Laokoon og hans sønner</i>, 175-150 f.Kr., Museo Pio Clementino, Vatikanet.</picture>
    </pictures>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>rom</keywords>
+   <source pages="10"/>
 </head>
 <body>
 Hvo saae ei Laokoons snogombugtede Dødskamp
@@ -299,8 +290,8 @@ Derfor kan stolt vort Nord skue paa Grækeren hen -
    <toctitle>Natseilersken</toctitle>
    <indextitle>Natseilersken</indextitle>
    <firstline>I Havfruer smaae!</firstline>
-   <quality>korrektur1,kilde</quality>
-   <!--  FILES:aarestrup1/aare1011.gif, aarestrup1/aare1012.gif, aarestrup1/aare1013.gif -->
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="11-13"/>
 </head>
 <body>
 I
@@ -377,20 +368,14 @@ Der svømmer en blegblaa Lilie.
 </body>
 </poem>
 
-<!--  T:Romance -->
-
-<!--  T:Tilstaaelsen -->
-
-<!--  T:Til et Barn -->
-
 <poem id="aarestrup200209293">
 <head>
    <title>Til Rosentræet i Lauras Vindue</title>
    <toctitle>Til Rosentræet i Lauras Vindue</toctitle>
    <indextitle>Til Rosentræet i Lauras Vindue</indextitle>
    <firstline>Glødende Rose, halvskjult af de vaargrønne Blade!</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
-   <!--  FILES:aarestrup1/aare1014.gif, aarestrup1/aare1015.gif -->
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="14-15"/>
 </head>
 <body>
 Glødende Rose, halvskjult af de vaargrønne Blade!
@@ -429,8 +414,8 @@ Kunstig et trøstende Svar, Balsom for Elskerens Sjæl.
    <toctitle>Da Vinduet var frosset</toctitle>
    <indextitle>Da Vinduet var frosset</indextitle>
    <firstline>Iiskolde Graaskjæg, som Stormene hvirvle fra Norden!</firstline>
-   <quality>korrektur1,kilde</quality>
-   <!--  FILES:aarestrup1/aare1016.gif, aarestrup1/aare1017.gif -->
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="16-17"/>
 </head>
 <body>
 Iiskolde Graaskjæg, som Stormene hvirvle fra Norden!
@@ -463,8 +448,8 @@ Meer i den Yndiges Sted, som kun for Kjærlighed groer!
    <toctitle>Serenade</toctitle>
    <indextitle>Serenade</indextitle>
    <firstline>Hæv, kjælne Cither, nu din Røst!</firstline>
-   <quality>korrektur1,kilde</quality>
-   <!--  FILES:aarestrup1/aare1018.gif, aarestrup1/aare1019.gif, aarestrup1/aare1020.gif -->
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="18-20"/>
 </head>
 <body>
 <wrap><s>Liebe kennt der allein, der ohne Hoffnung liebt.</s></wrap>
@@ -538,8 +523,8 @@ Den triller i min Lyras Barm!
    <toctitle>Vaarsang</toctitle>
    <indextitle>Vaarsang</indextitle>
    <firstline>Himmelblaa</firstline>
-   <quality>korrektur1,kilde</quality>
-   <!--  FILES:aarestrup1/aare1021.gif, aarestrup1/aare1022.gif, aarestrup1/aare1023.gif -->
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="21-23"/>
 </head>
 <body>
 I
@@ -610,13 +595,8 @@ IX
     Den speilklare Aae
     Og grønklædte Vang
 Liig smilende Engle min Harpe slaae!
-
-<!--  [Resten giver ingen mening... -->
-<!--  hvorfor henvise til et digt?!] -->
 </body>
 </poem>
-
-<!--  T:Til den Elsktes Øine -->
 
 <poem id="aarestrup200209297">
 <head>
@@ -624,8 +604,8 @@ Liig smilende Engle min Harpe slaae!
    <toctitle>Skjøn Lilaly</toctitle>
    <indextitle>Skjøn Lilaly</indextitle>
    <firstline>Nu skjuler Natten By og Vang</firstline>
-   <quality>korrektur1,kilde</quality>
-   <!--  FILES:aarestrup1/aare1024.gif, aarestrup1/aare1025.gif -->
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="24-25"/>
 </head>
 <body>
 I
@@ -686,16 +666,15 @@ Mit Valdhorns Røst i dunkle Lund:
 </body>
 </poem>
 
-<!--  T:Jesus paa Havet -->
-
 <poem id="aarestrup1999041506">
 <head>
    <title>Den stille Glæde</title>
    <toctitle>Den stille Glæde</toctitle>
    <indextitle>Den stille Glæde</indextitle>
    <firstline>Hvorfor skal jeg vel sørge, hvorfor græde</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>sonnet</keywords>
+   <source pages="26"/>
 </head>
 <body>
 Hvorfor skal jeg vel sørge, hvorfor græde,
@@ -724,8 +703,9 @@ En stakkels Sanger tør ei fordre mere!
    <toctitle>Paamindelse</toctitle>
    <indextitle>Paamindelse</indextitle>
    <firstline>Vogn, dorske Sjæl! vogn op, hvor kan du sove</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>sonnet</keywords>
+   <source pages="27"/>
 </head>
 <body>
 Vogn, dorske Sjæl! vogn op, hvor kan du sove?
@@ -748,8 +728,6 @@ Ham møder den!« - saa lyder Stjernens Stemme.
 </body>
 </poem>
 
-<!--  T:Sørgedragten -->
-
 <poem id="aarestrup200209298">
 <head>
    <title>Ung Alver</title>
@@ -759,8 +737,8 @@ Ham møder den!« - saa lyder Stjernens Stemme.
    <notes>
       <note>romance</note>
    </notes>
-   <quality>korrektur1,kilde</quality>
-   <!--  FILES:aarestrup1/aare1028.gif, aarestrup1/aare1029.gif, aarestrup1/aare1030.gif, aarestrup1/aare1031.gif, aarestrup1/aare1032.gif, aarestrup1/aare1033.gif, aarestrup1/aare1034.gif, aarestrup1/aare1035.gif -->
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="28-35"/>
 </head>
 <body>
 Det var ungen Alver,
@@ -965,17 +943,14 @@ Han endte al den Sorg! -
 </body>
 </poem>
 
-<!--  T:Sangerlykke -->
-<!--  T:Blomsterofferet -->
-
 <poem id="aarestrup200209299">
 <head>
    <title>Natsang</title>
    <toctitle>Natsang</toctitle>
    <indextitle>Natsang</indextitle>
    <firstline>Kom, o Slummer!</firstline>
-   <quality>korrektur1,kilde</quality>
-   <!--  FILES:aarestrup1/aare1036.gif, aarestrup1/aare1037.gif -->
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="36-37"/>
 </head>
 <body>
    Kom, o Slummer!
@@ -1022,8 +997,9 @@ Uskyld hun i Vuggen gynger -
    <toctitle>Den Naive</toctitle>
    <indextitle>Den Naive</indextitle>
    <firstline>Bondepige! lille Bondepige!</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>sonnet</keywords>
+   <source pages="38"/>
 </head>
 <body>
 Bondepige! lille Bondepige!
@@ -1046,8 +1022,6 @@ Ja, min Tro! det er en Brudepsalme!«
 </body>
 </poem>
 
-<!--  T:Guldringen -->
-
 <poem id="aarestrup2002092910">
 <head>
    <title>Nytaarsvers</title>
@@ -1055,8 +1029,8 @@ Ja, min Tro! det er en Brudepsalme!«
    <toctitle>Nytaarsvers</toctitle>
    <indextitle>Nytaarsvers</indextitle>
    <firstline>Musa kom med Blomsterkurvens</firstline>
-   <quality>korrektur1,kilde</quality>
-   <!--  FILES:aarestrup1/aare1039.gif, aarestrup1/aare1040.gif, aarestrup1/aare1041.gif -->
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="39-41"/>
 </head>
 <body>
 Musa kom med Blomsterkurvens
@@ -1138,8 +1112,8 @@ Kan du undres, at jeg beder:
    <toctitle>Konningen og hans Brud</toctitle>
    <indextitle>Konningen og hans Brud</indextitle>
    <firstline>Den Pigelil stander ved Borgeled</firstline>
-   <quality>korrektur1,kilde</quality>
-   <!--  FILES:aarestrup1/aare1042.gif, aarestrup1/aare1043.gif, aarestrup1/aare1044.gif, aarestrup1/aare1045.gif -->
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="42-45"/>
 </head>
 <body>
 Den Pigelil stander ved Borgeled
@@ -1250,7 +1224,8 @@ Vidt om i Konningens Lande.
    <toctitle>Smerte og Trøst</toctitle>
    <indextitle>Smerte og Trøst</indextitle>
    <firstline>Dybt smerter det vor Ven Kortill</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="45"/>
 </head>
 <body>
 Dybt smerter det vor Ven <sc>Kortill</sc>,
@@ -1266,7 +1241,8 @@ At hun sig ei forværre kan.
    <toctitle>Drankerglose</toctitle>
    <indextitle>Drankerglose</indextitle>
    <firstline>Solguden hver en Aften viger</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="46"/>
 </head>
 <body>
 Solguden hver en Aften viger
@@ -1284,7 +1260,8 @@ Saa stod han ei for Middag op!
    <toctitle>Amazonen</toctitle>
    <indextitle>Amazonen</indextitle>
    <firstline>Tag jer i agt! hun er i Striid forfærdelig</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="46"/>
 </head>
 <body>
 Tag jer i agt! hun er i Striid forfærdelig,
@@ -1298,7 +1275,8 @@ Hun saare eder vil - i det hun blotter sig. -
    <toctitle>Elsker ømt sin Stær Pauline</toctitle>
    <indextitle>Elsker ømt sin Stær Pauline</indextitle>
    <firstline>Elsker ømt sin Stær Pauline</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="46"/>
 </head>
 <body>
 Elsker ømt sin Stær Pauline,
@@ -1316,7 +1294,8 @@ Dog din Frier elske kan!
    <toctitle>Man kjender dig, du Poesiens Fjende</toctitle>
    <indextitle>Man kjender dig, du Poesiens Fjende</indextitle>
    <firstline>Man kjender dig, du Poesiens Fjende</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="46"/>
 </head>
 <body>
 Man kjender dig, du Poesiens Fjende
@@ -1332,7 +1311,8 @@ For saadan Dumhed er du frie.
    <toctitle>Erkjendtlighed</toctitle>
    <indextitle>Erkjendtlighed</indextitle>
    <firstline>Fordi at hende Yndighed</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="47"/>
 </head>
 <body>
 Fordi at hende Yndighed
@@ -1348,7 +1328,8 @@ Den heller intet af! -
    <toctitle>St: Denis</toctitle>
    <indextitle>St: Denis</indextitle>
    <firstline>Man bandt den Hellige paa Ryggen sine Hænder</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="47"/>
 </head>
 <body>
 Man bandt den Hellige paa Ryggen sine Hænder,
@@ -1367,7 +1348,8 @@ Han tog det op med sine Tænder!
    <toctitle>Raad Wilm i sine Breve sender meget Sand</toctitle>
    <indextitle>Raad Wilm i sine Breve sender meget Sand</indextitle>
    <firstline>Raad Wilm i sine Breve sender meget Sand</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="47"/>
 </head>
 <body>
 Raad Wilm i sine Breve sender meget Sand,
@@ -1378,13 +1360,16 @@ Hans Breve ere af Natur tørre.
 </body>
 </poem>
 
+<!-- TODO: Paakaldelse p. 48 -->
+<!-- TODO: Idyll, pp. 49-54 -->
+<!-- TODO: Vinvela, pp. 55-58 -->
+
 <poem id="aarestrup1999041517">
 <head>
    <title>En Stedmoderblomst</title>
-   <toctitle>En Stedmoderblomst</toctitle>
-   <indextitle>En Stedmoderblomst</indextitle>
    <firstline>Hvor var vi dog eengang saa muntre og glade</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="60"/>
 </head>
 <body>
 Hvor var vi dog eengang saa muntre og glade;
@@ -1408,11 +1393,10 @@ Som eengang et lille, uskyldigt vi var!
 <poem id="aarestrup1999041518">
 <head>
    <title>Elegie til en Myg</title>
-   <toctitle>Elegie til en Myg</toctitle>
-   <indextitle>Elegie til en Myg</indextitle>
    <firstline>Lille Myg paa spinkle Vinger</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>elegi</keywords>
+   <source pages="61-62"/>
 </head>
 <body>
 Lille Myg paa spinkle Vinger,
@@ -1438,14 +1422,17 @@ Ak, din Braad, den gjør dog ondt!
 </body>
 </poem>
 
+<!-- TODO: Udrugningen, p. 63 -->
+
 <poem id="aarestrup1999041519">
 <head>
    <title>Ved Viol-Urnen</title>
    <toctitle>Ved Viol-Urnen</toctitle>
    <indextitle>Ved Viol-Urnen</indextitle>
    <firstline>Du blaa Viol med dine søde Blade</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>sonnet</keywords>
+   <source pages="65"/>
 </head>
 <body>
 Du blaa Viol med dine søde Blade,
@@ -1474,8 +1461,9 @@ Uskyldig som dets første Kjærlighed.
    <toctitle>Øhlenschlägers Collegium</toctitle>
    <indextitle>Øhlenschlägers Collegium</indextitle>
    <firstline>Som i Onyxens dunkle Aarer vinder</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>sonnet</keywords>
+   <source pages="66"/>
 </head>
 <body>
 Som i Onyxens dunkle Aarer vinder
@@ -1498,13 +1486,37 @@ Staaer Poesiens maanedunkle Lære.
 </body>
 </poem>
 
+<!-- TODO: Fostbrødrene, pp. 67-76 -->
+<!-- TODO: Bakkehulen, pp. 77-81 -->
+<!-- TODO: Syekurven, pp. 82-84 -->
+<!-- TODO: Til den bortreiste, p. 85 -->
+<!-- TODO: Til Sommerluften, p. 86 -->
+<!-- TODO: Aftensang, p. 87 -->
+<!-- TODO: Epigram, p. 88 -->
+<!-- TODO: Hver sørger for sine, p. 88 -->
+<!-- TODO: Kaaberne, p. 88 -->
+<!-- TODO: Conversation, p. 89 -->
+<!-- TODO: Ved Evalds Grav, p. 90 -->
+<!-- TODO: Naaden, p. 92 -->
+<!-- TODO: Camilla, pp. 93-116 -->
+<!-- TODO: Til min Lyra, p. 117 -->
+<!-- TODO: Jesus paa Havet, p. 118 -->
+<!-- TODO: Til et Barn, p. 119 -->
+<!-- TODO: Sørgedragten, pp. 120-121 -->
+<!-- TODO: De forelsktes April, p. 122 -->
+<!-- TODO: Holberg, p. 122 -->
+<!-- TODO: Satiren, p. 122 -->
+<!-- TODO: Betlersken med sit Barn, pp. 123-125 -->
+<!-- TODO: Minas Dødssang, pp. 126-127 -->
+
 <poem id="aarestrup1999041521">
 <head>
    <title>Dyden</title>
    <toctitle>Dyden</toctitle>
    <indextitle>Dyden</indextitle>
    <firstline>Hverdags synes os Solen, skjøndt ei vi vove den skue</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="128"/>
 </head>
 <body>
 Hverdags synes os Solen, skjøndt ei vi vove den skue,
@@ -1520,7 +1532,8 @@ Prismaets kløvende Glands see her i Støvet vi kun.
    <toctitle>Speilet</toctitle>
    <indextitle>Speilet</indextitle>
    <firstline>Lille Ecko, lille Skjønheds-Ecko</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="128"/>
 </head>
 <body>
 Lille Ecko, lille Skjønheds-Ecko,
@@ -1546,8 +1559,9 @@ Og en Rosenbusk blev al min Smerte.
    <toctitle>Morgenen</toctitle>
    <indextitle>Morgenen</indextitle>
    <firstline>Naar Morgenen phantaserer paa sin Lyre</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>sonnet</keywords>
+   <source pages="129"/>
 </head>
 <body>
 Naar Morgenen phantaserer paa sin Lyre
@@ -1576,8 +1590,9 @@ Lad freidigt Mod i Morgenluft sig bade!
    <toctitle>Middagen</toctitle>
    <indextitle>Middagen</indextitle>
    <firstline>Alt Dagens Melodrama sig udfolder</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>sonnet</keywords>
+   <source pages="130"/>
 </head>
 <body>
 Alt Dagens Melodrama sig udfolder.
@@ -1606,8 +1621,9 @@ En Dag i Vennekreds er aldrig dunkel.
    <toctitle>Aftenen</toctitle>
    <indextitle>Aftenen</indextitle>
    <firstline>Nedsynker Solen rødmende og stille</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>sonnet</keywords>
+   <source pages="131"/>
 </head>
 <body>
 Nedsynker Solen rødmende og stille
@@ -1636,8 +1652,9 @@ Og skriv en Elskovsbrev paa Himmelranden!
    <toctitle>Natten</toctitle>
    <indextitle>Natten</indextitle>
    <firstline>Og kommer Natten, falder Dug i Enge</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>sonnet</keywords>
+   <source pages="132"/>
 </head>
 <body>
 Og kommer Natten, falder Dug i Enge
@@ -1666,7 +1683,8 @@ Priis dog den gode Faders skjulte Veie!
    <toctitle>Maanen</toctitle>
    <indextitle>Maanen</indextitle>
    <firstline>Den Maane den synger en underlig Sang</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="133"/>
 </head>
 <body>
 Den Maane den synger en underlig Sang,
@@ -1691,14 +1709,17 @@ Hun løfter ei Amor til Brystet.
 </body>
 </poem>
 
+<!-- TODO: Flodpigens Vise, pp. 134-135 -->
+
 <poem id="aarestrup1999041528">
 <head>
    <title>Blomsterofferet</title>
    <toctitle>Blomsterofferet</toctitle>
    <indextitle>Blomsterofferet</indextitle>
    <firstline>Her staaer Huset. I det mørke Stræde</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>sonnet</keywords>
+   <source pages="136"/>
 </head>
 <body>
 Her staaer Huset. I det mørke Stræde
@@ -1721,13 +1742,28 @@ Eders Duft skal hendes Drøm omflyde,
 </body>
 </poem>
 
+<!-- TODO: Guldringen, pp. 137-138 -->
+<!-- TODO: Til den forladte, p. 139 -->
+<!-- TODO: Syner, p. 140 -->
+<!-- TODO: Kys og Anelse, pp. 141-142 -->
+<!-- SEKTION:Sonetter -->
+<!-- TODO: I Hjertets Dyb sig dunkle Toner rørte, pp. 143 -->
+<!-- TODO: Ei hvor jeg er kan jeg Dig rede gjøre, pp. 143-144 -->
+<!-- TODO: Men straf ei grumt den stille Alf i Skoven, pp. 144-145 -->
+<!-- SLUTSEKTION -->
+<!-- TODO: Kjendetegnet paa Utroskab, pp. 146-149 --> 
+<!-- TODO: Min Haab, p. 150 -->
+<!-- TODO: Til Amanda, p. 151 -->
+<!-- TODO: Den forkjølede Amor, pp. 152-155 -->
+
 <poem id="aarestrup1999041529">
 <head>
    <title>Fortabelse</title>
    <toctitle>Fortabelse</toctitle>
    <indextitle>Fortabelse</indextitle>
    <firstline>Min Sjæl er heed af Længslens Tørst</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="156"/>
 </head>
 <body>
 Min Sjæl er heed af Længslens Tørst,
@@ -1748,16 +1784,32 @@ Op til dit Skjød, o Herre mild!
 </body>
 </poem>
 
+<!-- TODO: Med en Confirmations Rose, p. 157 -->
+<!-- TODO: Sygdommen, p. 158 -->
+<!-- TODO: Da Amanda var syg, p. 159 -->
+<!-- TODO: Afsked, p. 160 -->
+<!-- TODO: Hvidtfeldt, pp. 161-163 -->
+<!-- TODO: Elegie, p. 164 -->
+<!-- TODO: Sonett, p. 165 -->
+<!-- TODO: Bøn, p. 166 -->
+<!-- TODO: Skjøn Anna, pp. 167-168 -->
+<!-- TODO: Aftensang, pp. 169-170 -->
+<!-- TODO: Om min Muse, pp. 171-173 -->
+<!-- TODO: Luca Signorelli, pp. 174-176 -->
+<!-- TODO: Længsel, p. 177 -->
+<!-- TODO: Elegie, p. 178 -->
+<!-- TODO: Den bortfløine Elskov, pp. 179-181 -->
+<!-- TODO: Begeistringen og Elskoven, pp. 182-183 -->
+
 <poem id="aarestrup2001052706">
 <head>
    <title>Til Gud</title>
-   <toctitle>Til Gud</toctitle>
-   <indextitle>Til Gud</indextitle>
    <firstline>Skal jeg klage, skal jeg græde</firstline>
    <notes>
       <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="184"/>
 </head>
 <body>
 Skal jeg klage, skal jeg græde
@@ -1792,7 +1844,8 @@ Evig skal jeg ei forsmægte!
    <toctitle>Til Luise</toctitle>
    <indextitle>Til Luise</indextitle>
    <firstline>De Farver, hvor mørke og vilde!</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="185"/>
 </head>
 <body>
 De Farver, hvor mørke og vilde!
@@ -1807,13 +1860,16 @@ Den rene, uskyldige Klang!
 </body>
 </poem>
 
+<!-- TODO: Digterskjæbne, p. 186 -->
+<!-- TODO: Havfruen, pp. 187-192 -->
+<!-- TODO: Ønskerne, pp. 193-194- -->
+
 <poem id="aarestrup1999041531">
 <head>
    <title>I Kanterne af et Confirmations-Lommetørklæde</title>
-   <toctitle>I Kanterne af et Confirmations-Lommetørklæde</toctitle>
-   <indextitle>I Kanterne af et Confirmations-Lommetørklæde</indextitle>
    <firstline>Jeg er et lille venligt Minde</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="195"/>
 </head>
 <body>
 Jeg er et lille venligt Minde,
@@ -1826,17 +1882,482 @@ Jeg tør en hellig Taare trykke -
 <poem id="aarestrup1999041532">
 <head>
    <title>I en Botanikers Stambog</title>
-   <toctitle>I en Botanikers Stambog</toctitle>
-   <indextitle>I en Botanikers Stambog</indextitle>
    <firstline>Ved Planterne og deres gamle Venskab</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>stambog</keywords>
+   <source pages="195"/>
 </head>
 <body>
 Ved Planterne og deres gamle Venskab,
 Kom stundom mig, en yngre Ven, ihu
 Der - skjøndt et flygtigt Blik og kort Bekjendtskab
 Dog lærte snart at elske dem, som Du -
+</body>
+</poem>
+
+<!-- TODO: Til Thorvaldsen, p. 196 -->
+<!-- TODO: Til mine Øine, p. 197 -->
+
+<poem id="aarestrup2019012702" variant="aarestrup2018110205">
+<head>
+    <title>Petrus i Kom</title>
+    <firstline>I Rom, i Fængslets Hule</firstline>
+    <source pages="198-200"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+I
+I Rom, i Fængslets Hule,
+Som Marmorblokke skjule,
+Sad Petrus, den Udsendte,
+Bedrøvet, fuld af Qvide.
+Han skulde Døden lide
+For Herren, som han tjente.
+    
+II
+En kraftfuld Mand; i Barmen
+Var Ild og Mod, men Harmen
+Endnu for jordisk brændte.
+Han elskte Gud af Hjertet,
+Og dog ham Døden smerted,
+Thi Livets Lyst han kjendte.
+
+III
+Da aander Duft fra Muren.
+Huldt vinker ham Naturen;
+Han føler Luften strømme.
+En bælmørk Gang — en Lem — men rusten
+Jernlaasens Slaa er brusten,
+Og frit kan Fangen rømme.
+
+IV
+Klart tindre Nattens Stjerner.
+Petrus sig sagte fjerner.
+I Græsset Vinden suser.
+Han kjæmper — Tvivlen seirer —
+Dødsangst hans Kraft henveirer
+Og Herrens Helt beruser.
+
+V
+Han flygter — gjennem Gader -
+Augsten ham ei forlader.
+Han tør ei Gud anraabe.
+Hvor Romerporten hvælver
+Han feig for Vagten skjælver,
+Tæthyllet i sin Kaabe.
+
+VI
+Han sniger sig. Det regner.
+Han slipper ud, og blegner,
+Tør ei mod Himlen skue.
+Med Bjerge, Skov og Hækker
+Landet sig yndigt strækker
+Og smiler med sin Drue.
+
+VII
+Da kommer ham imøde
+En Mand, hvis Vunder bløde,
+Omsuust af Nattevinden.
+Paa Ryggen Korsets Planke,
+Om Panden Tornens Ranke,
+Og Draaber Blod Paa Kinden.
+
+VIII
+Et himmelsk Lys ham krandser.
+Petrus paa Veien standser
+Og kjender Gud, sin Herre.
+I Støvet han sig kaster,
+Og spørger: ak, hvor haster
+Du hen, min Gud og Herre?
+
+IX
+Blidt svarer ham den Høie,
+Med Smertens Graad i Øie:
+Til Rom, at sone Brøden.
+End eengang vil jeg lide;
+Thi de, jeg sendte, stride
+Ei meer; de frygte Døden.
+
+X
+Da voved Petrus ikke
+At hæve sine Blikke.
+Han græd, han skjalv som Sivet,
+Og sukked: jeg vil drage
+I Fængslets Død tilbage,
+Min Gud, og vinde Livet.
+
+XI
+Beegfakler brændte. Hallen
+Gjenlød af Vagtens Kalden,
+Da Petrus til dem iilte.
+Man bragte Bolt og Tvinge,
+Slog ham i Lænkens Ringe.
+Men han — Guds Vidne — smiilte.
+</body>
+</poem>
+
+<!-- TODO: Den 4de Juli 1823, pp. 201-202 -->
+
+<poem id="aarestrup2019012703" variant="aarestrup2018110907">
+<head>
+    <title>Kirkeklokken</title>
+    <firstline>Syng Psalmerne, du liden Dreng!</firstline>
+    <source pages="203-204"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+I
+,,Syng Psalmerne, du liden Dreng,
+I Kirken til Guds Ære;
+Der skal du, ei paa grønnen Eng,
+En hellig Søndag være.
+
+II
+Den store Klokke - hør kun til! -
+Den kalder paa de Fromme;
+Ifald du smutter bort, den vil
+I Hælene dig komme.
+
+III
+Den vil af Taarnet springe ud,
+Og humpe ned af Bakken,
+Og, som et Himlens Straffebud,
+Dig styrte over Nakken.''
+
+IV
+Den Præken er saa tør og lang;
+Den liden Dreng han gaber:
+,,Langt heller jeg med Fuglen sang
+Derude for min Skaber!''
+
+V
+Han lister sig fra Kirkens Blok;
+Han seer sig om saa fage:
+,,Den gamle Brumbas bliver nok
+I Hullet paa sin Knage!''
+
+VI
+Han ligger ved den grønne Aa
+Hos Lammene og skjemter.
+Da hører han en Klokke slaae -
+Hum, hum, bum, bum, det klemter.
+
+VII
+Og Klokken kommer, tung og seen,
+Men som en malmsort Kjæmpe,
+Der knækker Busk og løvrig Green
+Og farer ei med Lempe.
+
+VIII
+Det var den liden Dreng, han tog
+Saa hastig til at rende;
+Han hørte, hvordan Kneblen slog;
+Han turde sig ei vende.
+
+IX
+Han hørte, hvordan Klokken rap
+I Hælene ham brummed -
+Først da han ind i Kirken slap,
+Den vrede Lyd forstummed.
+
+X
+Og da han satte fromt sig ned
+I Choret paa sit Sæde,
+Hang Klokken paa sit gamle Sted
+Og dirrede af Glæde.
+
+XI
+Han tog til Hjerte sig den Sag;
+Og vil ei mere vente
+Herefter nogen Helligdag,
+Til Klokken skal ham hente.
+
+<nonum><small><right>Frit efter Goethe.</right></small></nonum>
+</body>
+</poem>
+
+<poem id="aarestrup2019012704" variant="aarestrup2018110202">
+<head>
+    <title>Holbergs Grav</title>
+    <firstline>Din Grav, Holberg, er smuk; vor Wiedewelt har bygget</firstline>
+    <source pages="205"/>
+    <keywords>holberg</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Din Grav, Holberg, er smuk; vor Wiedevelt har bygget
+Dig ret et prægtigt Skrin, af Kirken overskygget.
+Godt, at man satte dig blandt gamle Heltes Been;
+Dog taler ei din Aand fra disse kolde Steen;
+Her gaaer du ei igjen, saalidt som dybt i Lunden,
+Ved Aaens grønne Bred, naar Maanen er oprunden;
+Ei svæver du i Storm, omsust af Skyers Hær,
+Og ei paa Marken gaaer i Lynets blanke Skjær.
+Langt snarere man vil dig i en Landsby træffe,
+Hvor Porten staaer paa Klem, og alle Hunde bjæffe,
+At skue roligt til, foruden Vee og Ak,
+Maaskee hos Pigen selv, i Engen, paa en Stak.
+Du skræmmer Ingen bort, du smiler, rækker Haanden;
+Med Guldsnor om sin Hat, fuldpaaklædt vandrer Aanden.
+Og vil man følge dig til Gravens stille Læ,
+Da gaaer du langsomt hen, hen til et Hyldetræ.
+Opklappet, pyntet nyt, den smalle Høi sig strækker,
+Og Arv har hegnet den med tætte Buxbomhækker.
+Did gaaer Pernille tidt, bevæget, sælsom rørt,
+Om Morgenen, med Sand og Blomster i sit Skjørt.
+Men fjernt fra Hyttens Qvist, naar Dæmringen indbryder,
+En sagte, dæmpet Klang af Violinen lyder;
+I aabent Vindue da Herik spiller der
+Det kjære Instrument, som var det hans Holberg kjær.
+</body>
+</poem>
+
+<!-- TODO: D: 22de Septbr 1824, p. 206 -->
+<!-- TODO: Frøkenen og Gartneren, p. 207 -->
+<!-- TODO: Romanze (Det var et frygtligt blæsende Vær), pp. 208-212 -->
+<!-- TODO: Den Betænksomme, pp. 212-215 -->
+<!-- TODO: Kone, Kone, hjem du gaa, pp. 216-217 -->
+<!-- TODO: Idyll (Ved det klare Morgengry), pp. 218-220 -->
+
+<poem id="aarestrup2019012705" variant="aarestrup2018110203">
+<head>
+    <title>Liigvers</title>
+    <firstline>Hvor Livet er kort!</firstline>
+    <source pages="221-222"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+I
+Hvor Livet er kort!
+Nys stod han i Blomster, nu bæres han bort.
+Den evige Hikke
+Den loved ei godt, det saae jeg forud.
+Vor Herre ham sendte det ranglede Bud,
+Han tøvede ikke.
+Hvis Himlen gjenlyder af jublende Stemme
+Og ikkun af Gammen bestaaer
+— Som Skriften spaaer —
+Saa vil han snart føle sig hjemme.
+
+II
+Der ligger hans Hat,
+Henkastet i Støvet, øde, forladt;
+Den Hat, som har skygget
+Hans Isse, skjøndt begge var fattig paa Haar.
+Uhret — det brugte han ikke — det staaer.
+Det Bord har han rykket
+Til Sengen, den Stakkel, ei efter Vandet —
+Men Viinflasken staaer uden Prop,
+Den trak han op —
+Det var ham saa klogt som alt andet.
+
+III
+Chatollet er lukt,
+Forseglet — tomt — blev aldrigen brugt.
+Hør, Liigvognen runger!
+Der hænge de Fugle, han satte i Hæk
+Saa kort for sin Afgang; flyv I kun væk,
+Flyv ud, mine Unger,
+Og syng paa Stakittet om Graven -
+Jeg græder. Jeg misted en Ven!
+Naar sees vi igjen?
+Deroppe i Paradiishaven?
+
+IV
+Min Arv — vil I see:
+En Punscheskaal. Ak, imod Jammer og Vee
+Et Skjold her i Verden.
+Farvel, min Broder, farvel paa dit Tog!
+Strø Blomster, Drenge, tykt paa hans Laag!
+Syng Visen, han digted, her er den!
+Liigbærere, drik til den kryddrede Kringle!
+En Taar endnu, det glider nok ned;
+Han bliver ei vred,
+Han leer fra sin Sky, naar I dingle.
+</body>
+</poem>
+
+<poem id="aarestrup2019012706" variant="aarestrup2018110204">
+<head>
+    <title>Grubleren</title>
+    <firstline>Lad mig sige</firstline>
+    <source pages="223-224"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+I
+Lad mig sige
+Dig Besked
+Om mit Hjertes
+Lønlighed.
+
+II
+Hvad mig glæder,
+Hvad med Lyst
+Oftest fylder
+Dette Bryst.
+
+III
+Ingen Tummel,
+Ingen Glands;
+Ikke Ærens
+Døde Krands.
+
+IV
+Ikke Venskabs
+Milde Dyd;
+Ikke Elskovs
+Drukne Fryd;
+
+V
+Hvad mig glæder,
+Hvad med Lyst
+Oftest fylder
+Dette Bryst:
+
+VI
+Er den stille,
+Er den tro
+Eftertankes
+Dybe Ro.
+</body>
+</poem>
+
+<poem id="aarestrup2019012707" variant="aarestrup2018110206">
+<head>
+    <title>Undskyld mig, bedste Ven</title>
+    <firstline>Undskyld mig, bedste Ven!</firstline>
+    <source pages="225"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Undskyld mig, bedste Ven!
+Du savnes ikke meer;
+Jeg gaaer min egen Vei,
+Forelsket, som du seer.
+
+Og du, Natur, vær s'god!
+Lad dine Drosler slaae,
+Riv dine Farver ud,
+Og stryg dem paa det Graa!
+
+Tillad! Som fordum vel
+Jeg hænger ved din Arm;
+Men jeg har intet Blik
+For Rosen ved din Barm.
+
+Mig har Forliebelsen
+— Imellem os, som sagt —
+I Daarekisten halvt
+Og halvt i Himlen bragt.
+</body>
+</poem>
+
+<!-- TODO: Jeg sad med Dig bag Malver, huldt i Skygge, p. 226. Variant af nedenstående. -->
+
+<poem id="aarestrup2019012708" variant="aarestrup2018110207">
+<head>
+    <title>Sonnet</title>
+    <firstline>Jeg sad med dig bag Malver, huldt i Skygge</firstline>
+    <source pages="227"/>
+    <keywords>sonnet</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Jeg sad med dig bag Malver huldt i Skygge,
+Vi talte intet. Krybende blev Tiden.
+Besværlig sad vor bedste Ven ved Siden,
+Jeg saae dig Bladene af Busken rykke.
+
+Ven, hvisked jeg, dit Selskab er vor Lykke;
+Men din Vedhængenhed, som ei er liden,
+Var kjærere, jeg nægter ikke, siden.
+Han reiste sig og gik. Et Venskabsstykke!
+
+Da greb jeg om din Haand bag røde Malve.
+O havde jeg nu, raabte jeg, at byde
+Et Hjerte, som var værd at ei forskyde,
+
+Men jeg har kun et halvt. - ,,Giv mig det halve,
+Lød fra din Mund, o jeg vil gjerne dele
+Med andre dit, men du har mit det hele!''
+</body>
+</poem>
+
+<poem id="aarestrup2019012709" variant="aarestrup2018110208">
+<head>
+    <title>Min Glut forstaaer at løse Sjælens Knuder</title>
+    <firstline>Min Glut forstaaer at løse Sjælens Knuder</firstline>
+    <source pages="228"/>
+    <keywords>sonnet</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Min Glut forstaaer at løse Sjælens Knuder;
+Fortvivler ei, fordi at Traaden kurrer;
+Hun trækker Sødme af de skarpe Burrer
+Og samler Bær hvor Afgrundskanten luder.
+
+Om Skjæbnen end i Vægterhornet tuder
+Og Rædslens store Hund i Mørket knurrer:
+Rolig sit muntre Tankehjul hun snurrer
+Og nynner Visen om de høie Guder.
+
+Og hun har sagt, at om end Laurbærkrandsen
+Faldt af mit Hoved, faldt som visne Blade,
+Og i dens Sted vildt hvirvled Helvedglandsen
+
+Hun vilde dog mit Hjerte ei forlade,
+Men selv i Mørkets slangefyldte Dale
+Min arme Sjæl med Kjærlighed husvale.
+</body>
+</poem>
+
+<poem id="aarestrup2019012710" variant="aarestrup2018110209">
+<head>
+    <title>Hvad vil du her? hvad søger du ved Huset?</title>
+    <firstline>Hvad vil du her? hvad søger du ved Huset?</firstline>
+    <source pages="229"/>
+    <keywords>sonnet</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Hvad vil du her? hvad søger du ved Huset?
+Dets Dør er lukt; ei høres Lyd derinde.
+Kun Edderkoppene i Salen spinde,
+Og Bulmeurten suger Gift i Gruset.
+
+Du dvæler end? har dig en Drøm beruset?
+Her stryger over brusten Gavl og Tinde
+Harmonisk ikke Nattehimlens Vinde;
+Det Taarn, du stirrer paa, har Lynet knuset.
+
+,,O lad mig dvæle, hvor jeg helst vil dvæle!
+Lad mig kun eensom i den brede Skygge,
+Hvor Muren høit mod Skyerne sig reiser.
+
+De fromme Svaler ved Gesimsen bygge.
+Paa Taget Storken i sin Rede kneiser;
+Og Maanskin er her jo, og Dødes Sjæle.''
+</body>
+</poem>
+
+
+<poem id="aarestrup2019012701" variant="aarestrup1999041533">
+<head>
+   <title>Der var en Tid, da Venskab var mit Alt</title>
+   <firstline>Der var en Tid, da Venskab var mit Alt</firstline>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <source pages="230"/>
+</head>
+<body>
+Der var en Tid, da Venskab var mit Alt;
+Det kunde ene Fryd og Kraft mig laane.
+For Kjærlighed det siden sagtens faldt,
+Ved Morgenrødens Skjær en blegnet Maane.
+Som Solen, Elskov lyser meer og mindre,
+Dens Himmel maa imellem dunkelt blaane:
+Da see vi Venskabsstjernen stort at tindre.
 </body>
 </poem>
 
