@@ -1952,7 +1952,7 @@ Blid e lig os samle.
 </content>
 </section>
 
-<poem id="oehlenschlaeger2019020322">
+<poem id="oehlenschlaeger2019020322" variant="oehlenschlaeger1999062808">
 <head>
     <title>Den frembrydende Vaar</title>
     <firstline>Engene grønnes, og Skovenes Kroner</firstline>
@@ -2318,38 +2318,46 @@ Fordi jeg eengang har drømt om Dagen.
 </body>
 </poem>
 
-<poem id="oehlenschlaeger2019020328">
+<poem id="oehlen2000010509" variant="oehlenschlaeger2001052917">
 <head>
     <title>Til Rimer</title>
     <firstline>Rimer! du maa takke mig</firstline>
     <source pages="70-71"/>
-    <quality>korrektur1,kilde,side</quality>
+    <notes>
+      <note type="credits">Bidrag fra Henrik Nielsen.</note>
+   </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Rimer! du maa takke mig,
+Rimer! Du maa takke mig,
 Hvad de Fleste negte dig,
 Jeg beviser, at du har.
-Hør tu n! Sagen er jo klar.
-Forst og fremmest selv du troer.
+Hør kun! Sagen er jo klar.
+
+Først og fremmest selv du troer,
 At du er en Digter stor.
 Kunde du slig Tanke havt
-Uden stank I n d b i l d n i n g s k r a f t ?
+Uden stærk <w>Indbildningskraft?</w>
+
 Du erindrer ganske klog,
 Hvad der staaer i Andres Bog,
-Sammensætter det med F lid -
-Det er jo Beviis yaa Bid .
+Sammensætter det med Flid -
+Det er jo Beviis paa Vid.
+
 Cithrens nysselige Klang,
 Lidenskabens vilde Sang
 Synes Galskab dig og Luft -
-Ergo har du jo F o r n u f t .
-F o l el se blev'og din Deel;
-Kaldes du en Sneglesml,
-Snærter det, som du sik R iis .
-Trænge v i til meer Beviis-?
+Ergo har du jo <w>Fornuft</w>.
+
+<w>Følelse</w> blev og din Deel;
+Kaldes du en Sneglesiæl,
+Smærter det, som du fik Riis.
+Trænge vi til meer Beviis?
+
 Følelse, Vid, Phantasie,
 Og Fornuft - det er Genie.
-Rimer! har du Mage seet?
-Du fikst G e n i a l i t e t .
+Rimer! Har du Mage set?
+Du fikst <w>Genialitet</w>.
 </body>
 </poem>
 
@@ -3233,7 +3241,7 @@ At gaae til Folket fra de dunkle Skove.
 </body>
 </poem>
 
-<poem id="oehlenschlaeger2019020342">
+<poem id="oehlenschlaeger2019020342" variant="oehlen1999062835">
 <head>
     <title>Violerne</title>
     <firstline>Smaae Violer! o, hvor sødt</firstline>
@@ -3274,7 +3282,7 @@ Og det sorte D ie!
 </body>
 </poem>
 
-<poem id="oehlenschlaeger2019020343">
+<poem id="oehlenschlaeger2019020343" variant="oehlen1999062836">
 <head>
     <title>Vaarsang</title>
     <firstline>Nu er da Vaaren kommen</firstline>
@@ -3341,12 +3349,15 @@ Koldt spotter Elskovs Navn.
 </body>
 </poem>
 
-<poem id="oehlenschlaeger2019020344">
+<poem id="oehlenschlaeger2019020344" variant="oehlen2002101110">
 <head>
     <title>Viinguden</title>
     <subtitle>(Efter Novalis.)</subtitle>
     <firstline>Paa grønne, varme Bierge fødes</firstline>
     <source pages="103-104"/>
+   <notes>
+      <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2005060501"/>.</note>
+   </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8097,7 +8108,7 @@ Og seer paa vor Glædc, og glædcs derved.
 </body>
 </poem>
 
-<poem id="oehlenschlaeger20190203113">
+<poem id="oehlenschlaeger20190203113" variant="oehlen1999062837">
 <head>
     <title>Vahl</title>
     <firstline>Dækker Graven, grønne Urter smaae!</firstline>
@@ -8452,7 +8463,7 @@ Hun lever! hun lever! hun lever!
 </body>
 </poem>
 
-<poem id="oehlenschlaeger20190203118">
+<poem id="oehlenschlaeger20190203118" variant="oehlen1999062842">
 <head>
     <title>Hiemvee</title>
     <firstline>Underlige Aftenlufte!</firstline>
