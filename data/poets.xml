@@ -3518,6 +3518,23 @@
   <works>1864,1883,andre</works>
 </person>
 
+<person id="bloch" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>Carl</firstname>
+    <lastname>Bloch</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1834-05-23</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1890-02-22</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
 <person id="bergsoe" country="dk" lang="da" type="poet">
   <name>
     <firstname>Vilhelm</firstname>
