@@ -187,7 +187,6 @@
 'skion/skiøn',
 'Groes/Græs',
 'Skion/Skiøn',
-'sierne/fierne',
 'sorge/sørge',
 'solvblaa/sølvblaa',
 'rodme/rødme',
@@ -261,6 +260,8 @@
 '(\W)langes/\1længes',
 '(\W)ftr/\1str',
 '(\W)fpr/\1spr',
+'(\W)lamge/\1længe',
+'(\W)siern/\1fiern',
 # 'Dine/Øine', # Volder mange fejl, så udkommenteret
 'loeng/læng',
 'Onske/Ønske',
