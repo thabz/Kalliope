@@ -664,6 +664,7 @@
 '(\W)blod(\W)/\1blød\2',
 '(\W)skjod(\W)/\1skjød\2',
 '(\W)ganste(\W)/\1ganske\2',
+'(\W)i Mode(\W)/\1i Møde\2',
 ];
 
 @regexps = @rules.map { |rule| 
