@@ -187,6 +187,7 @@
 'skion/skiøn',
 'Groes/Græs',
 'Skion/Skiøn',
+'Skiod/Skiød',
 'sorge/sørge',
 'solvblaa/sølvblaa',
 'rodme/rødme',
