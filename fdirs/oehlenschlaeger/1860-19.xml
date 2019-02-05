@@ -17,6 +17,7 @@
         <picture src="1860-19-p1.jpg">Titelbladet til <i>Poetiske Skrifter</i> (1860) lyder ,,Oehlenschlägers Digte. // Udgivne / af / F. L. Liebenberg. // Første Deel. // Kjøbenhavn. / Forlagt af Selskabet til Udgivelse af Oehlenschlägers Skrifter. // Hovedcommissionair: Th. Lind, Store Kjøbmagergade Nr. 6. / 1860.''</picture>
     </pictures>
     <source facsimile="130023479592_color" facsimile-pages-num="368" facsimile-pages-offset="18">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 19, 1860.</source>
+    <!-- TODO: Langelands-Reise og Jesu Christi gientagne Liv mangler tilrettelse. -->
 </workhead>
 <workbody>
 
@@ -118,7 +119,7 @@ O, ton bestandig Dyd i Svages Barm!
 <poem id="oehlenschlaeger2019020302">
 <head>
     <title>Paa min Moders Grav,</title>
-    <toctitle>Paa min Moders Grav</toctitle>
+    <toctitle>Paa min Moders Grav. Mai 1800</toctitle>
     <indextitle>Paa min Moders Grav</indextitle>
     <linktitle>Paa min Moders Grav</linktitle>
     <subtitle>
@@ -382,6 +383,7 @@ Med Mod i den fældende Kamp.
 <poem id="oehlenschlaeger2019020306">
 <head>
     <title>Afskedssang</title>
+    <toctitle>Afskedssang til Digteren Baggesen. Sept. 1800</toctitle>
     <subtitle>
         <line>til Digteren Jens Baggesen</line>
         <line>September 1800</line>
@@ -442,6 +444,7 @@ Din <w>sieldne</w> Sang de Danske gav!''
 <poem id="oehlen2000010506" variant="oehlenschlaeger2001071002">
 <head>
     <title>Drikkevise</title>
+    <toctitle>Drikkevise. Nov. 1800</toctitle>
     <subtitle>
         <line>for Dreiers Klub paa dens femogtyvende Aarsdag,</line>
         <line>den 26de November 1800.</line>
@@ -806,6 +809,7 @@ Men meer endnu med din Poesie.
 <poem id="oehlen2000010507">
 <head>
     <title>Hymne til Glæden</title>
+    <toctitle>Hymne til Glæden. (Efter Schiller.)</toctitle>
     <subtitle>(Efter Schiller.)</subtitle>
     <firstline>Glæde, Lynglimt fra det Høie!</firstline>
     <notes>
@@ -956,6 +960,7 @@ Hist, naar Dommersværdet blinker.
 <poem id="oehlenschlaeger2019020312">
 <head>
     <title>Høitidssang</title>
+    <toctitle>Høitidssang i Anledning af den 2den April 1802</toctitle>
     <subtitle>
         <line>for Kronprindsens Livcorps i Anledning af</line>
         <line>den 2den April 1802.</line>
@@ -1018,6 +1023,7 @@ Evig uforglemmelig.
 <poem id="oehlenschlaeger2019020313" variant="oehlenschlaeger2001053001">
 <head>
     <title>Cantate</title>
+    <toctitle>Cantate, den 2den April 1802</toctitle>
     <subtitle>den 2den April 1802.</subtitle>
     <firstline>Det er Danmarks Høitidsdag</firstline>
     <source pages="29-33"/>
@@ -1663,6 +1669,7 @@ Hvis Lyren du ei sønderriver.
 <poem id="oehlenschlaeger2019020320">
 <head>
     <title>Min barnlige Dannelse</title>
+    <toctitle>Min barnlige Dannelse. Helliget min Ven og Lærer Dichman</toctitle>
     <subtitle>Helliget min Ven og Lærer Carl Frederik Dichman.</subtitle>
     <firstline>Instinctets Bud, vor Ven paa Dydens Vei</firstline>
     <source pages="47-53"/>
@@ -2258,6 +2265,7 @@ Snart synker jeg i eders Favn.
 <poem id="oehlenschlaeger2019020324" variant="oehlenschlaeger2001052912">
 <head>
     <title>Den Tillidsfulde</title>
+    <toctitle>Den Tillidsfulde. (Efter Horats.)</toctitle>
     <subtitle>(Efter Horats.)</subtitle>
     <firstline>Den, som er uden Synd og Last</firstline>
     <source pages="64-66"/>
@@ -2739,6 +2747,7 @@ Og takked Gud, fordi jeg var saa stum.
 <poem id="oehlenschlaeger2019020332" variant="oehlenschlaeger2001053003">
 <head>
     <title>Biergmands-Liv</title>
+    <toctitle>Biergmands-Liv. (Efter Novalis.)</toctitle>
     <subtitle>(Efter Novalis.)</subtitle>
     <firstline>Den over Jorden byder</firstline>
     <notes>
@@ -2808,6 +2817,7 @@ Den glade Jordens Drot.
 <poem id="oehlenschlaeger2019020333">
 <head>
     <title>Landlivets Glæder</title>
+    <toctitle>Landlivets Glæder. (Efter Horats.)</toctitle>
     <subtitle>(Efter Horats.)</subtitle>
     <firstline>Lyksalig den, som til det Bedre</firstline>
     <source pages="80-82"/>
@@ -3281,13 +3291,11 @@ Her disse smaae Forgietmigei.
 
 <poem id="oehlenschlaeger2019020339">
 <head>
+    <suptitle>I Anledning af vor kiære Moder</suptitle>
     <title>E. C. Møllers Fødselsdag</title>
-    <subtitle>
-        <line>I Anledning af vor kiære Moder</line>
-        <line>den 27de April 1804.</line>
-    </subtitle>
+    <toctitle>I Anledning af vor kiære Moder E. C. Møllers Fødselsdag. April 1804</toctitle>
+    <subtitle>den 27de April 1804.</subtitle>
     <firstline>Den Kreds, hvor nu du har dit Sæde</firstline>
-    <!-- TODO: Overoverskrifter. #605 -->
     <source pages="94"/>
     <dates>
         <event>1804-04-27</event>
@@ -3599,6 +3607,7 @@ Koldt spotter Elskovs Navn.
 <poem id="oehlenschlaeger2019020344" variant="oehlen2002101110">
 <head>
     <title>Viinguden</title>
+    <toctitle>Viinguden. (Efter Novalis)</toctitle>
     <subtitle>(Efter Novalis.)</subtitle>
     <firstline>Paa grønne, varme Bierge fødes</firstline>
     <source pages="103-104"/>
@@ -3753,6 +3762,7 @@ Slukked i taagede Tid Fromhedens reneste Ild.
 <head>
     <title>Langelands-Reise</title>
     <subtitle>I Sommeren 1804</subtitle>
+    <toctitle>Langelands-Reise. I Sommeren 1804:</toctitle>
 </head>
 <content>
 
@@ -3765,58 +3775,48 @@ Slukked i taagede Tid Fromhedens reneste Ild.
 </head>
 <body>
 Altsaa skal jeg da nu forlade mit Hiem, og en Reise
-My te Gang i mit Liv prøve? Besynderligt nok!
-Mrogtyvende Gang er jeg reist vel rundt omkring Solen,
-Dristig og lang var min Bei, mangen Staldbroder er død;
-Ak! men hvad siger det alt? Mens paa Himlen ustandset
-jeg iled,
-Bar fra min Axelskad luppe jeg fem Mile s Bei.
-Nu vort Siællaud jeg drager igiennem, til Fyen, ja til
-Taasing,
-Over ^ il Langelands By, muligt til Laaland og Mæn.
->Leer forventning fylder min Barm, som da først i min
-Barndom
-Fandig til Jægersborg Skov pakket en Kildevogn stod.
-Lad mig da stemme, min L u th! at igiennem de lydende
-Strænge
-Reent jeg tolke kan Alt, hvad paa Veien er hundt.
+Første Gang i mit Liv prøve? Besynderligt nok!
+Fiirogtyvende Gang er jeg reist vel rundt omkring Solen,
+Dristig og lang var min Vei, mangen Staldbroder er død;
+Ak! men hvad siger det alt? Mens paa Himlen ustandset jeg iled,
+Var fra min Axelskad neppe jeg fem Miles Vei.
+Nu vort Siælland jeg drager igiennem, til Fyen, ja til Taasing,
+Over til Langelands By, muligt til Laaland og Møen.
+Sær forventning fylder min Barm, som da først i min Barndom
+Færdig til Jægersborg Skov pakket en Kildevogn stod.
+Lad mig da stemme, min Luth! at igiennem de lydende Strænge
+Reent jeg tolke kan Alt, hvad paa Veien er hændt.
 Men hvad tænker du paa, barnagtige, daarlige Digter?
-Slig en Reife du troer Publieum vand at betroe ?
-Om hvordan først du drog over Roeskildes langsomme
-Landvei,
-Ringsted og Slagels forbi, lige til selve Korsor;
-Kom paa Smakken, stk Ondt, rulled langsomt fra Porten i
-Nyborg,
-Otte Timer fem Miil, over den knudrede Bei,
-Kom saa til Svendborg, derfra over Sundet til Taasing,
-og derfra
-Atter paa Bølgænes Ryg uskadt til Langelands By.
-Slige Sager da mener du verrd at fortælle til Folk, som
-Reiser har lu ft, der er givrt hele Jordkloden omkring?
-Mist er dit Barsel, min Ve n! og jeg soler, hvad dristig jeg
-vover;
-Til mit Forsvar kun maa time dig dette P a r Ord:
-Amagerfolk har man sect at dandse paa Bund afen Fierding,
-H vortil v i Andre en Sa l onske paa hundrede Fag.
-Hiernen er omringet rundt af hele den ovrige Verden,
-Men, hvad besynderligt er. Hiernen kan omringe den.
-Viseste Mænd har seet i et Mg Alskabningens Billed,
+Slig en Reise du troer Publicum værd at betroe?
+Om hvordan først du drog over Roeskildes langsomme Landvei,
+Ringsted og Slagels forbi, lige til selve Korsør;
+Kom paa Smakken, fik Ondt, rulled langsomt fra Porten i Nyborg,
+Otte Timer fem Miil, over den knudrede Vei,
+Kom saa til Svendborg, derfra over Sundet til Taasing, og derfra
+Atter paa Bølgernes Ryg uskadt til Langelands By.
+Slige Sager da mener du værd at fortælle til Folk, som
+Reiser har læst, der er giort hele Jordkloden omkring?
+Viist er dit Varsel, min Ven! og jeg føler, hvad dristig jeg vover;
+Til mit Forsvar kun maa tiene dig dette Par Ord:
+Amagerfolk har man seet at dandse paa Bund af en Fierding,
+Hvortil vi Andre en Sal ønske paa hundrede Fag.
+Hiernen er omringet rundt af hele den øvrige Verden,
+Men, hvad besynderligt er, Hiernen kan omringe den.
+Viseste Mænd har seet i et Æg Alskabningens Billed,
 Skiønhedens yndigste Form, Klodens eliptiske Gang,
-Organismens herlige Fro, og det mystiske Livstof.
+Organismens herlige Frø, og det mystiske Livstof.
 Ligger det alt i et Æg, lidet af Omfang og Kraft,
-Hvad maa der ligge da vel mellem Axelskad, Ringsted og
-Nyborg,
-Og saa videre frem, naar v i det ret kuu kan sæ?
+Hvad maa der ligge da vel mellem Axelskad, Ringsted og Nyborg,
+Og saa videre frem, naar vi det ret kun kan see?
 Dette Talent, at see, har de ældgamle Slægter bestandig
-Tilla g t Digterens Blik; der stikker Kunsten kun i.
-Og for at vise. Synet ei blot gaaer udenfra ind ad.
+Tillagt Digterens Blik; der stikker Kunsten kun i.
+Og for at vise, Synet ei blot gaaer udenfra ind ad,
 Men fornemmelig først indenfra straalerigt ud,
 Siger det gamle Sagn, at Homer, Poeternes Fader,
-Var i sin Alderdoms Tid blind paa det udvortes Sy n .
+Var i sin Alderdoms Tid blind paa det udvortes Syn.
 Hvad der nu angaaer mig, som ei løse tør Faderens Sko-Rem,
-Blin d er, som han, jeg vel ei, bruger dog tid t min Lorgnet.
-Tag da nu her, uden Spøg, til Takke med hvad jeg dig
-byder!
+Blind er, som han, jeg vel ei, bruger dog tidt min Lorgnet.
+Tag da nu her, uden Spøg, til Takke med hvad jeg dig byder!
 Ingen redelig Mand giver dig meer, end han har.
 </body>
 </poem>
@@ -3830,23 +3830,21 @@ Ingen redelig Mand giver dig meer, end han har.
 </head>
 <body>
 Gamle Foliobog! nu lukker jeg dit Pergament-Bind.
-Langt nok drog jeg med dig, siddende stil paa min Sto l;
+Langt nok drog jeg med dig, siddende stil paa min Stol;
 Reise vil jeg uden dig nu, eller rettere med dig:
 Følger den Elskte ei med, selv naar Farvel der er sagt?
-Verr mig en Ledsager tro, hav dit Hiem i det hellige
-Minde,
-Følg nrig, og viis mig omkring giennem mit Fædreneland;
+Vær mig en Ledsager tro, hav dit Hiem i det hellige Minde,
+Følg mig, og viis mig omkring giennem mit Fædreneland;
 Trin, som en gammel huusvant Ven, beskeden tilbage,
-Hvergang Besøg jeg faaer huldt af den unge N a tu r;
-Men naar Farvel hun har sagt, naar sig nanme de mosgroede
-Mure,
-Følg nrig da trofast, min Ven! svin i det taagede Veir.
-Ledet ved din Haand lad mig staae for den hellige Hvrrlving,
-Hvor dine Heltes Bæn lagdes og smuldne til Skov.
-Lær mig igiennem Bondens enfoldige Mund at osidage
-Ma n gt et oævoædigt Sagn, Lyd fra den hensvundne Tid;
-At sig O ld tid kan blande med N utid, og Nutid med Oldtid
-Kiærligt i blid Harmonie giennem det restende Dig t.
+Hvergang Besøg jeg faaer huldt af den unge Natur;
+Men naar Farvel hun har sagt, naar sig nærme de mosgroede Mure,
+Følg mig da trofast, min Ven! som i det taagede Veir.
+Ledet ved din Haand lad mig staae for den hellige Hvælving,
+Hvor dine Heltes Been lagdes og smuldne til Støv.
+Lær mig igiennem Bondens enfoldige Mund at opdage
+Mangt et ærværdigt Sagn, Lyd fra den hensvundne Tid;
+At sig Oldtid kan blande med Nutid, og Nutid med Oldtid
+Kiærligt i blid Harmonie giennem det restende Digt.
 </body>
 </poem>
 
@@ -3859,11 +3857,11 @@ Kiærligt i blid Harmonie giennem det restende Dig t.
 </head>
 <body>
 ,,Langsomt, strengt og lige den brede Kongevei fremgaaer,
-Sparsom paa Skygger og Krat. Hvilken kiedsornmelig Tid!''
-Stille, min kiælne Ve n! En Ko n g e vei streng er og lige,
+Sparsom paa Skygger og Krat. Hvilken kiedsommelig Tid!''
+Stille, min kiælne Ven! En <w>Kongevei</w> streng er og lige,
 Ei til Skygger og Krat trænger den herlige Helt.
-Helligt i Midnattens Stu n d forsi beskygger den tampede Hvælving,
-Naar vi til Murene hist trille hans modige Been.
+Helligt i Midnattens Stund først beskygger den lampede Hvælving,
+Naar vi til Murene hist trille hans mødige Been.
 </body>
 </poem>
 
@@ -3876,50 +3874,50 @@ Naar vi til Murene hist trille hans modige Been.
 </head>
 <body>
 Du gamle, sølvblaa, stille, klare
-Isesiord, som Nordens Helte
-Segle for med Svend ved Bælte,
-Altid stier til Kamp og Fare!
-Du, som stedse bar en Skare
-Fordum af de brune Snekker!
-In te t nu din Flade derkker. -
-Tidens Tand kan Altin g fure;
-Styrtet er de gamle Mure.
-Alt den mergter at beseire;
-Selv det seiervante Leire
-Sank, dets G lands som Heltens Øie
-Slukkes, og de lave Vande,
-Hvorhen Snekken for lod stande.
-Kan nu ingen Kisle ploie.
-Selv den By, som Kongen bygged,
-Hvor de dunkle Lunde skygged.
-Ro, som roligt leve vilde
-Ved den roligstille Kilde -
-Roeskild selv er overvunden,
-Al dens Glimmer er forsvunden,
-Kun den gamle Kirke savner
-Endnu ei sin høie Bue,
-Ak! som taust og helligt favner
-Asken af den stukte Lue.
+  Isefiord, som Nordens Helte
+  Søgte før med Svend ved Bælte,
+  Altid flux til Kamp og Fare!
+  Du, som stedse bar en Skare
+  Fordum af de brune Snekker!
+  Intet nu din Flade dækker. -
+  Tidens Tand kan Alting fure;
+  Styrtet er de gamle Mure.
+  Alt den mægter at beseire;
+  Selv det seiervante Leire
+  Sank, dets Glands som Heltens Øie
+  Slukkes, og de lave Vande,
+  Hvorhen Snekken før lod stande,
+  Kan nu ingen Kiøle pløie.
+  Selv den By, som Kongen bygged,
+  Hvor de dunkle Lunde skygged,
+  Ro, som roligt leve vilde
+  Ved den roligstille Kilde -
+  Roeskild selv er overvunden,
+  Al dens Glimmer er forsvunden,
+  Kun den gamle Kirke savner
+  Endnu ei sin høie Bue,
+  Ak! som taust og helligt favner
+  Asken af den slukte Lue.
 O, hvisler kun veemodigt, Vover!
-Hvor de gamle Helte sover;
-Hvisler mod den morte Hule,
-Hiem for Kongerne i Thule;
-Hvisler op med tunge Bølger;
-Eder blidt min Taare følger.
-Saa ru l da, Vogn! fra disse Vande.
-Ak! som sig med Taarer blande;
-Og lad Strandens grønne Hrckke
-Huldt den blanke Bu g t bederkke,
-Sk iu lt lad Vinden Bølgen fure.
-Bring mig hen -til hine Mure.
-Kannpestærke, tykke, røde.
-Verrn omkring de elskte Døde.
-Lad mig der med Andagt skiælve.
-Hvor sig Chorets Buer Hvivlve;
-Hvor de tykke P ille r favne
-Støvet af de store Navne,
-Som ei døer, ei blier forgiettet,
-Naar min Old er længst udslettet.
+  Hvor de gamle Helte sover;
+  Hvisler mod den mørke Hule,
+  Hiem for Kongerne i Thule;
+  Hvisler op med tunge Bølger;
+  Eder blidt min Taare følger.
+Saa rul da, Vogn! fra disse Vande,
+  Ak! som sig med Taarer blande;
+  Og lad Strandens grønne Hække
+  Huldt den blanke Bugt bedække,
+  Skiult lad Vinden Bølgen fure,
+  Bring mig hen til hine Mure.
+  Kæmpestærke, tykke, røde,
+  Værn omkring de elskte Døde.
+  Lad mig der med Andagt skiælve,
+  Hvor sig Chorets Buer hvælve;
+  Hvor de tykke Piller favne
+  Støvet af de store Navne,
+  Som ei døer, ei blier forgiettet,
+  Naar min Old er længst udslettet.
 </body>
 </poem>
 
@@ -3934,157 +3932,207 @@ Naar min Old er længst udslettet.
 Alt rasler Nøglen i de tunge Døre,
 Med Larm den rustne Laas nu op sig lukker,
 Dens Gienlyd kan jeg dybt i Kirken høre.
-Mod raske Lyd den gamle Hvrrlving sukker.
-Alt staaer jeg paa de brede Rodsteens-Fliser,
-Mod hvilke Loftet bolet, hvalt sig bukker.
+
+Mod raske Lyd den gamle Hvælving sukker.
+Alt staaer jeg paa de brede Rødsteens-Fliser,
+Mod hvilke Loftet bøiet, hvalt sig bukker.
+
 Den sorte Mand nu rundtomkring mig viser
 I Hvælvingen, hvor Heltens Been er lagt,
 Hvor stille Borger endnu Herren priser.
-Du gamle Kure, stolt og uden P ra g t!
-Taust vidne dine gothiskstarke P ille r
+
+Du gamle Kirke, stolt og uden Pragt!
+Taust vidne dine gothiskstærke Piller
 Om Oldtids dybe Høitidsaand og Magt.
-Siig, Taare! hvi du ned ad Kinden trille r;
-Siig, hvi saa brandende m it Blik du væder,
-Da stolte Minder for m it Sy n sig stiller.
-Ak! ei af Sorg. af Ærefrygt jeg grader.
+
+Siig, Taare! hvi du ned ad Kinden triller;
+Siig, hvi saa brændende mit Blik du væder,
+Da stolte Minder for mit Syn sig stiller.
+
+Ak! ei af Sorg, af Ærefrygt jeg græder,
 Mens jeg i det begravne Danmark gaaer,
 Som efterlod til Evighed kun Hæder.
-Med vilde, stærke Sla g m it Hierte slaaer.
+
+Med vilde, stærke Slag mit Hierte slaaer,
 En barnlig Skiald, som Harpen kun kan røre,
-De tunge Sva rd jeg løfte knap formaaer;
+De tunge Sværd jeg løfte knap formaaer;
+
 Men for det Store gav mig Gud et Øre,
 Skiøndt selv ei Kampe, tolker jeg Bedrifter,
-Og sene Slagter skal m it Drapa høre.
+Og sene Slægter skal mit Drapa høre.
+
 Den Aand, som luer i de gamle Skrifter,
-Den svævel her i disse dunkle Gange,
+Den svæver her i disse dunkle Gange,
 Den sukker giennem Gravens dybe Rifter.
-Saa ton da, O ld tid! giennem mine Sange,
+
+Saa ton da, Oldtid! giennem mine Sange,
 At hvad du viser den henrykte Aand,
 Den atter kan med Vellyst vise Mange.
-Du leder mig saa k ia rlig t ved din Haand
+
+Du leder mig saa kiærligt ved din Haand
 Hen over disse halvudslidte Stene,
-Som fangster, ak! m it Blik med starke Baand.
-Th i under Pladen hvile Heltens Bene;
+Som fængsler, ak! mit Blik med stærke Baand.
+
+Thi under Pladen hvile Heltens Bene;
 Enfoldigt staaer han med sin stille Frue
 Udhuggen der paa Gulvet - men ei ene,
-Th i som paa Marken Tue staaer ved Tue,
+
+Thi som paa Marken Tue staaer ved Tue,
 Saa stander Heltegrav ved Heltegrav,
 Omfavnet af den høie Tempelbue.
-Du faldt paa det fribaarne danske Hav,
-Du h is s e t sank i Danækongens Hære,
-Du fromt og helligt bar din Bispestav.
-For at udbrede Jesu rene Lare
+
+<w>Du</w> faldt paa det fribaarne danske Hav,
+<w>Du hisset</w> sank i Danerkongens Hære,
+<w>Du</w> fromt og helligt bar din Bispestav.
+
+For at udbrede Jesu rene Lære
 Dit Liv svandt hen, derfor blandt disse Helte
 Du hviler broderligt til evig Ære.
-Ugudeligste Frakhed kun kan valte
-Den Liigsteen bort, hvor Kampen nu ei mær
-Til Forsvar rive kan sit Sv a rd fra Balte.
+
+Ugudeligste Frækhed kun kan vælte
+Den Liigsteen bort, hvor Kampen nu ei meer
+Til Forsvar rive kan sit Sværd fra Bælte.
+
 En Rustning-Skikkelse seg hisset seer,
-Med intet Legem i. Dens Barm ei staaer;
+Med intet Legem i. Dens Barm ei slaaer;
 Men Morgensolen hen paa Hielmen leer,
+
 Og siger: Saadan Heltens Minde staaer;
-Selv naar til Sto v hans Legem langst er blevet,
+Selv naar til Støv hans Legem længst er blevet,
 Ei Tidens matte Haand hans Død formaaer.
-Det Navn, som Sagas Griskel dybt har skrevet,
+
+Det Navn, som Sagas Griffel dybt har skrevet,
 Det sletter ingen Alders Taager ud,
-Det lever herligt, som det for har levet.
+Det lever herligt, som det før har levet.
+
 Skiøndt Fanen hist er vorden til en Klud,
 Saa vidner dog den lange, stærke Stang,
 At Fienden blegnet faldt paa Heltens Bud.
-H iin Glavind truer end med Undergang,
+
+Hiin Glavind truer end med Undergang,
 Skiøndt sort og rusten den paa Kisten hviler,
-Og Guldet bortflidt er af stærke Fang.
+Og Guldet bortslidt er af stærke Fang.
+
 Hvor selsomt Solen ind i Kirken smiler!
 Som Oldtid smiler i den nye Tid,
 Saa smiler Nutid ind, hvor Oldtid hviler.
-Ak, see den blinde Snedkers fromme F lid!
-Et Taarn af bløde Trer til Herrens Ære
-Han trolig star, og satte her det hid.
-At paa hans Andagt Tegn det skulde vane.
+
+Ak, see den blinde Snedkers fromme Flid!
+Et Taarn af bløde Træ til Herrens Ære
+Han trolig skar, og satte her det hid.
+
+At paa hans Andagt Tegn det skulde være.
 Skiøndt dunkelt var hans Syn, lys var hans Siæl,
-Da famlende hans Hænder det mon stære.
-Med Farve dækt er Kirkestolens P u l;
+Da famlende hans Hænder det mon skære.
+
+Med Farve dækt er Kirkestolens Pæl;
 Hvor saae jeg Egeplanken selv dog gierne
-Paa dette Sted, hvor hellig er hver F ie rl!
+Paa dette Sted, hvor hellig er hver Fiæl!
+
 Om Nutids Glimmer og om Oldtids Kierne
-Taust vidner dette rødblaa Stolcstad,
-Hvor Overfladen skal om Altin g verrne.
+Taust vidner dette rødblaa Stolestad,
+Hvor Overfladen skal om Alting værne.
+
 Meer op jeg triner i den lange Rad.
 Høialtret der med Andagt nu jeg skuer,
 Hvor gamle Konger knælte ned og bad.
+
 Dit hele Levnet, elskte Jesus! luer
 Paa Altartavlen, som sig blank oplader,
 Og spreder ud sin Glands i Kirkens Buer.
+
 Med Haab og Trøst jeg i dit Smiil mig bader.
 Hvo hviler her bag Altrets lune Ly?
 Hvo giemmes bag de gitterslyngte Plader?
+
 O, Margareta! du, som Danmarks Sky,
-Liig Maanen, Huldt med Modersmiil adskilled!
-Her stumrer du, du Nordens stolte R y!
+Liig Maanen, huldt med Modersmiil adskilled!
+Her stumrer du, du Nordens stolte Ry!
+
 Og blegt og rankt dit moderlige Billed,
 Med Kronen om de lange Hovedhaar,
 Er oven lagt, i hvide Klæder hildet.
+
 Bag dig det høie, sorte Gitter staaer,
-Og værner om det Sted, hvor O ld tid boer,
+Og værner om det Sted, hvor Oldtid boer,
 Hvor ældste Levning endnu ei forgaaer.
+
 Med Gysen træder jeg i dunkle Chor,
-Som ved en Troldmands Bud i Oslerland,
-Hvor lutter Underverrker mig omsnoer;
-Th i Phantasien In te t vise kan,
-Af Tiden uafhamgigt meer og Wlde,'
+Som ved en Troldmands Bud i Østerland,
+Hvor lutter Underværker mig omsnoer;
+
+Thi Phantasien Intet vise kan,
+Af Tiden uafhængigt meer og Ælde,
 End disse Piller, smykt med Farvevand;
-Som spotte Døden og dens stærke Ballde,
+
+Som spotte Døden og dens stærke Vælde,
 Som stande henved tusind lange Aar,
 Mens Tiden ingen Steen har kunnet fælde.
-Paa Stotten Harald Blaatand malet staaer;
-Den stobte Kiste Tveskiægs Fader giemmer,
-Indinuret, som hans Navn, den ei forgaaer.
-Skraas overfor, hvor P ille n op sig stemmer.
-Der favner Muren, o Svend Estrithson!
-Den sidste iltest af dine trætte Lemmer.
-Og ret for dig din Dronning, huld og stivn,
-Led Harald Blaatands Side venligt stander;
-Tintisten slutter hendes Been i Lou.
+
+Paa Støtten Harald Blaatand malet staaer;
+Den støbte Kiste Tveskiægs Fader giemmer,
+Indmuret, som hans Navn, den ei forgaaer.
+
+Skraas overfor, hvor Pillen op sig stemmer,
+Der favner Muren, o Svend Estrithsøn!
+Den sidste Rest af dine trætte Lemmer.
+
+Og ret for dig din Dronning, huld og skiøn,
+Ved Harald Blaatands Side venligt stander;
+Tinkisten slutter hendes Been i Løn.
+
 Den fromme Vilhelms Aske her sig blander;
 Han ved din Side staaer med Bispestav,
-Hans Nerrhed om din dybe Gudsfrygt sander.
+Hans Nærhed om din dybe Gudsfrygt sander.
+
 Men alle Fire ned fra eders Grav
 I skue paa det stolte Marmor rolig,
 Som Efterslægten eders Afkom gav.
+
 O, hvor sig Loftet hvælver her fortrolig
 Mod Pillerne, som rage dristigt frem.
 Det gamle Chor er Helligdommens Bolig.
+
 Hist aabner sig en liden Brædelem:
 Uskyldighedens Engel huldt beskiermer
-De danske Kongers Bom i Dødens Hiem.
-En Kugle hist i Muren jeg mig nerrmer,
+De danske Kongers Børn i Dødens Hiem.
+
+En Kugle hist i Muren jeg mig nærmer,
 Den knuste Brystet paa den tappre Juel.
 Han hviler nu, hvor ingen Fiende sværmer.
-Hvad trader her jeg paa? Et ydmygt Sk iu l!
+
+Hvad træder her jeg paa? Et ydmygt Skiul!
 En smal og ringe Sandsteen, glat og lige,
 Beskeden ruger over Graven huul.
-O, Taarc! du behover ei at snige
-Dig langsomt frem, hist siger Tavlen m ig:
-Her hviler Saxo i de Dødcs Rige.
-Din Indskrift selv du, W d le! satte dig.
+
+O, Taare! du behøver ei at snige
+Dig langsomt frem, hist siger Tavlen mig:
+Her hviler Saxo i de Dødes Rige.
+
+Din Indskrift selv du, Ædle! satte dig.
 Dit Navn ei trænger til i Steen at hugges;
-Lad Ridderen beholde Slig t for sig.
-Et Gittervank nu atter seent oplukkes.
-Fra Femte Fredrik bring mig hisset ned.
+Lad Ridderen beholde Sligt for sig.
+
+Et Gitterværk nu atter seent oplukkes.
+Fra Femte Fredrik bring mig hisset ned,
 At sødt mit Blik med Veemod kan bedugges.
-Her simmer med sin Hustru blidt i Fred
-Den Fierde Christian, som skal elsket vare
+
+Her slumrer med sin Hustru blidt i Fred
+Den Fierde Christian, som skal elsket være
 Af hver taknemlig Dansk i Evighed.
-Hist hvor hans adle Fædre høit til Ære
+
+Hist hvor hans ædle Fædre høit til Ære
 Et herligt Hvilested af Steen er sat,
-Skal end med Andagt mine Been mig bare.
-Og nu, I clskte L iig! god rolig Nat.
+Skal end med Andagt mine Been mig bære.
+
+Og nu, I elskte Liig! god rolig Nat.
 Tilgiver Skialden, som sit Fied lod lyde
-Ved stillen G ra v! Dog I har alt fo rla d t;
-Th i I har sæt hans Taare k ia rlig t flyde.
+Ved stillen Grav! Dog I har alt forladt;
+
+Thi I har seet hans Taare kiærligt flyde.
 </body>
 </poem>
-
+<!-- === -->
 <poem id="oehlenschlaeger2019020352" variant="oehlen1999062705">
 <head>
     <title>Overgang</title>
@@ -4176,7 +4224,7 @@ Hisset mod Venstre, paa Veien, i Taager en Kirke sig haved,
 Og hvad jeg haabede, blev, mildt qvægede Lyden mit Hierte,
 Skiødesløst, gnavent udslængt af ligegyldige Mund.
 Sigersted! altsaa dig? Og see, det glindsende Blik sig
-Brod giennem Taarer en Bei hen ad den taagede Mark.
+Brod giennem Taarer en Vei hen ad den taagede Mark.
 At Kong Sig a r i Sinde mig randt, og Signe med Hagbarth,
 Beed alt du, som har lust Oldtidens herlige Dig t.
 Hisset altsaa stod hans Gaard, og hisset paa Bakken
@@ -6590,6 +6638,7 @@ Camonen tier, Harpens Lyd forstummer.
 <section id="oehlenschlaeger20190203200" variant="oehlen2018083103">
 <head>
     <title>Jesu Christi gientagne Liv i den aarlige Natur</title>
+    <toctitle>Jesu Christi gientagne Liv i den aarlige Natur:</toctitle>
 </head>
 <content>
 
@@ -8193,6 +8242,7 @@ Forened med den hellige Natur.
 <poem id="oehlenschlaeger20190203110" variant="oehlen2002022403">
 <head>
     <title>Fortrøstning</title>
+    <toctitle>Fortrøstning. Til Henrik Steffens</toctitle>
     <subtitle>Til Henrik Steffens</subtitle>
     <firstline>Naar eensom og alene</firstline>
     <source pages="245-246"/>
@@ -8251,6 +8301,7 @@ Omringe mig paa ny.
 <head>
     <title>Til Camma Rahbek</title>
     <subtitle>Paa hendes Fødselsdag, den 19de October 1804, i et Exemplar af Schlegels <w>Spanisches Theater</w>.</subtitle>
+    <toctitle>Til Camma Rahbek. Oct. 1804</toctitle>
     <firstline>At det er gaaet dig, som mig, Veninde!</firstline>
     <source pages="246-247"/>
     <notes>
@@ -8520,6 +8571,7 @@ Og ydmygt sig i dine Laurbær vinde!
 <poem id="oehlenschlaeger20190203115">
 <head>
     <title>Til Callisen</title>
+    <toctitle>Til Callisen. Marts 1805</toctitle>
     <subtitle>
         <line>Siunget af hans Lærlinge, da han fratraadte Embedet.</line>
         <line>Den 29de Marts 1805.</line>
@@ -8622,8 +8674,8 @@ Og aldrig dit Minde at glemme.
         <line>Juli 1805.</line>
     </subtitle>
     <toctitle>I Anledning af M. E. Thuras Død. Juli 1805</toctitle>
-    <linktitle>I Anledning af M. E. Thuras Død. Juli 1805</linktitle>
-    <indextitle>I Anledning af M. E. Thuras Død. Juli 1805</indextitle>
+    <linktitle>I Anledning af M. E. Thuras Død</linktitle>
+    <indextitle>I Anledning af M. E. Thuras Død</indextitle>
     <firstline>Udmærket som en stille Blomst du stod</firstline>
     <source pages="257-258" />
     <quality>korrektur1,kilde,side</quality>
@@ -8774,6 +8826,7 @@ Hun lever! hun lever! hun lever!
 <poem id="oehlenschlaeger20190203118" variant="oehlen1999062842">
 <head>
     <title>Hiemvee</title>
+    <toctitle>Hiemvee. Efteraaret 1805</toctitle>
     <firstline>Underlige Aftenlufte!</firstline>
     <source pages="261-263"/>
     <quality>korrektur1,kilde,side</quality>
@@ -8865,6 +8918,7 @@ Trykke mig i hendes Arme?
 <poem id="oehlenschlaeger20190203119">
 <head>
     <title>Vaar-Elegie</title>
+    <toctitle>Vaar-Elegie. Min Veninde K. M. Rahbek tilskrevet</toctitle>
     <subtitle>Min Veninde Karen Margareta Rahbek tilskrevet.</subtitle>
     <firstline>Lad under Lyrens venlige Klang mig spørge dig, Camma!</firstline>
     <source pages="264-266"/>
@@ -9086,6 +9140,7 @@ Til i dit Spor at gaae.
 <poem id="oehlenschlaeger20190203122">
 <head>
     <title>Til Hanna Steffens, født Reichardt</title>
+    <toctitle>Til Hanna Steffens. Nov. 1806</toctitle>
     <subtitle>Den 21de November 1806.</subtitle>
     <firstline>Kiære Hanna! iblandt kiære Dage</firstline>
     <source pages="270-272"/>
@@ -9246,7 +9301,7 @@ Flyder let nu paa Styx, venlig befriet, til et lyksaligt Hiem.
 <poem id="oehlenschlaeger20190203124">
 <head>
     <title>Sang paa Kongens Fødselsdag,</title>
-    <toctitle>Sang paa Kongens Fødselsdag</toctitle>
+    <toctitle>Sang paa Kongens Fødselsdag. Jan. 1807</toctitle>
     <indextitle>Sang paa Kongens Fødselsdag</indextitle>
     <linktitle>Sang paa Kongens Fødselsdag</linktitle>
     <subtitle>
@@ -9317,6 +9372,7 @@ Maria Danebod!
 <poem id="oehlen2000010511">
 <head>
     <title>Med en Guldhalskiæde</title>
+    <toctitle>Med en Guldhalskiæde. (Efter Goethe)</toctitle>
     <subtitle>(Efter Goethe.)</subtitle>
     <firstline>Maa jeg med dette Blad dig byde</firstline>
     <notes>
@@ -9346,6 +9402,7 @@ Om du en Slags Betænkning har.
 <poem id="oehlen2000010512">
 <head>
     <title>Blindebuk</title>
+    <toctitle>Blindebuk. (Efter Goethe)</toctitle>
     <subtitle>(Efter Goethe.)</subtitle>
     <firstline>Livsalige Belinde!</firstline>
     <notes>
@@ -9382,6 +9439,7 @@ Han raver i en evig Nat.
 <poem id="oehlenschlaeger20190203127">
 <head>
     <title>De tre Fødselsdage</title>
+    <toctitle>De tre Fødselsdage. Sommeren 1807</toctitle>
     <firstline>Naar Danerskoven grønnes</firstline>
     <source pages="279-283"/>
     <quality>korrektur1,kilde,side</quality>
