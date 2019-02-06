@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1976-1" author="aarestrup" status="incomplete" type="poetry" parent="1976">
+<kalliopework id="1976-1" author="aarestrup" status="complete" type="poetry" parent="1976">
 <workhead>
     <title>Samlede Skrifter</title>
     <subtitle>
@@ -239,7 +239,7 @@ Fatted, og, uden Slør, nøgne, Gudinderne saae.
       <note>Se evt. også <xref poem="aarestrup1999041503"/> og <xref poem="segni2002032001"/></note>
    </notes>
    <quality>korrektur1,korrektur2,kilde,side</quality>
-   <keywords>heksameter,oehlenschlaeger</keywords>
+   <keywords>heksameter</keywords>
    <source pages="8-9"/>
 </head>
 <body>
@@ -261,7 +261,7 @@ Og fra Norden lød, dæmpet, den tragiske Sang -
    <indextitle>Over Fostbrødrene</indextitle>
    <firstline>Hvo saae ei Laokoons snogombugtede Dødskamp</firstline>
    <notes>
-      <note>Om statuen: »Romerske kopi af græsk original fra ca. 100 f.kr. eller romersk original. Fundet 1506 på Esquilinhøjen i Rom og straks identificeret med en skulpturgruppe af den trojanske præst Laokoon og hans sønner, som ifølge Plinius den Ældre var opstillet i kejser Titus' palads«, <i>Græsk kunst</i>, Gads Forlag, 1999, p. 242.</note>
+      <note>Om statuen: ''Romerske kopi af græsk original fra ca. 100 f.kr. eller romersk original. Fundet 1506 på Esquilinhøjen i Rom og straks identificeret med en skulpturgruppe af den trojanske præst Laokoon og hans sønner, som ifølge Plinius den Ældre var opstillet i kejser Titus' palads'', <i>Græsk kunst</i>, Gads Forlag, 1999, p. 242.</note>
    </notes>
    <pictures>
       <picture src="aarestrup1999041505.jpg">Hagesandros, Athenodoros og Polydoros af Rhodos: <i>Laokoon og hans sønner</i>, 175-150 f.Kr., Museo Pio Clementino, Vatikanet.</picture>
@@ -688,8 +688,8 @@ Maaske til mere gylden Stjerne sender?
 Skal Elskovs Due sukke i en Kjæde?
 
 Er det ei nok, jeg stille glad kan hvile
-Hos Blomsterne; naar de: »vi elske!« synge,
-»Jeg ogsaa!« henrykt svare kan de Kjære?
+Hos Blomsterne; naar de: ,,vi elske!'' synge,
+,,Jeg ogsaa!'' henrykt svare kan de Kjære?
 
 Troe I, de Lykkelige haanligt smile?
 Saa skynd jer da, den bedre Krands at slynge,
@@ -722,9 +722,9 @@ O Himmelvandrer! Straaleklædte Stjerne!
 Afspeilet i min Sjæl fra natblaa Fjerne!
 Som du, en Himmelblomst, jeg var saa gjerne!
 
-»Saa fold da ud, hvad i dit Bryst har hjemme!
+''Saa fold da ud, hvad i dit Bryst har hjemme!
 Og kan end Jorden ei din Duft fornemme,
-Ham møder den!« - saa lyder Stjernens Stemme.
+Ham møder den!'' - saa lyder Stjernens Stemme.
 </body>
 </poem>
 
@@ -1007,18 +1007,18 @@ Kjender du Cytheres kjælne Hytter?
 Skal vi os derhen i Aften snige?
 Dunkelt Løv for Storm og Regn beskytter.
 
-»Hvad skal dette hedensk' Kram vel sige,
+''Hvad skal dette hedensk' Kram vel sige,
 Som du veed jeg slettes ikke skjøtter?
 Ind af Vindvet til mig kan du stige;
-Der paa dig, min Kjæreste! jeg lytter.«
+Der paa dig, min Kjæreste! jeg lytter.''
 
 Nytaarsnyet brænder over Skoven!
 Bondepige! lille Bondepige!
 Skal vor søde Fryd da aldrig falme?
 
-»Tys, min Kjærest! Her er Psalmebogen.
+''Tys, min Kjærest! Her er Psalmebogen.
 Lad nu Bladet os vor Lykke sige -
-Ja, min Tro! det er en Brudepsalme!«
+Ja, min Tro! det er en Brudepsalme!''
 </body>
 </poem>
 
@@ -1300,7 +1300,7 @@ Dog din Frier elske kan!
 <body>
 Man kjender dig, du Poesiens Fjende
 Og kan fra Cancelliet sig dit Ordsprog minde:
-»Den Karl er dum som et Genie!« -
+''Den Karl er dum som et Genie!'' -
 For saadan Dumhed er du frie.
 </body>
 </poem>
@@ -1336,7 +1336,7 @@ Man bandt den Hellige paa Ryggen sine Hænder,
 og hugged saa hans Hoved af;
 Hør nu, min Ven, hvad sig begav:
 Han tog det op og trykket det til Brystet -
-»Hvorledes? med Hænderne paa Ryggen?«
+,,Hvorledes? med Hænderne paa Ryggen?''
 Ak nei! et Barn kan det begribe:
 Han tog det op med sine Tænder!
 </body>
@@ -1352,7 +1352,7 @@ Han tog det op med sine Tænder!
    <source pages="47"/>
 </head>
 <body>
-Raad Wilm i sine Breve sender meget Sand,
+Raad <sc>Wilm</sc> i sine Breve sender meget Sand,
 Som Rigsforretningshjulet vilde staae paa Stand,
 Hvis han dem Tid at tørres gav;
 O Forfængeligheds Bedrag!
@@ -5376,7 +5376,7 @@ Gaaer Poesiens Aander ned.
 
 <poem id="aarestrup2019012702" variant="aarestrup2018110205">
 <head>
-    <title>Petrus i Kom</title>
+    <title>Petrus i Rom</title>
     <firstline>I Rom, i Fængslets Hule</firstline>
     <source pages="198-200"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5635,12 +5635,408 @@ Det kjære Instrument, som var det hans Holberg kjær.
 </body>
 </poem>
 
-<!-- TODO: D: 22de Septbr 1824, p. 206 -->
-<!-- TODO: Frøkenen og Gartneren, p. 207 -->
-<!-- TODO: Romanze (Det var et frygtligt blæsende Vær), pp. 208-212 -->
-<!-- TODO: Den Betænksomme, pp. 212-215 -->
-<!-- TODO: Kone, Kone, hjem du gaa, pp. 216-217 -->
-<!-- TODO: Idyll (Ved det klare Morgengry), pp. 218-220 -->
+<poem id="aarestrup20190206144">
+<head>
+    <title>D: 22de Septbr 1824</title>
+    <firstline>Jeg tar Dit Billed frem, at dæmpe Qualer</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <keywords>sonnet</keywords>
+    <dates>
+        <event>1824-09-22</event>
+    </dates>
+    <source pages="206"/>
+</head>
+<body>
+Jeg tar Dit Billed frem, at dæmpe Qualer;
+Ak, kun Din fagre Skygge, Caroline!
+Men dette Smiil og disse Træk er <i>Dine;</i>
+Den høie Kjærlighed her stille taler.
+
+Og Dine Breve, naar mig Aanden daler,
+De gir mig atter Mod og slynge sine
+Kjærlige Tanker styrkende i mine,
+Og i en dunkel Sky mig Himlen maler.
+
+Saameget skjænker Du mig fra det Fjerne.
+Du er det lyse Skjær i mine Dage,
+Og i min Nat Du er den høie Stjerne.
+
+Naar kommer Du mig nærmere, Du Hulde?
+Og fylder Savnet for den Længselsfulde?
+O al min Glæde er en stille Klage!
+</body>
+</poem>
+
+<poem id="aarestrup20190206145">
+<head>
+    <title>Frøkenen og Gartneren</title>
+    <firstline>Gartner, kan jeg faae hos Dem</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="207"/>
+</head>
+<body>
+Gartner, kan jeg faae hos Dem
+Et par Duske Merian,
+Rosmarin, Lavendel blaa,
+Og en smule Timian?
+
+Frøken, med Fornøjelse,
+Strax skal jeg det hente
+Hav den Godhed bare her
+Et Minut at vente?
+
+Dreng, bring Lænestolen hid!
+Saa, nu vil vi ile;
+Frøkenen maa være træt;
+Vil De ikke hvile?
+
+Dreng, gaae ned i Haugen, hent
+Timian og det andet,
+Stamp ei op i Landet
+Men vær vaersom, see dig for,
+- - - - - - - -
+</body>
+</poem>
+
+<poem id="aarestrup20190206146">
+<head>
+    <title>Romanze</title>
+    <firstline>Det var et frygteligt blæsende Vær</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="208-212"/>
+</head>
+<body>
+Det var et frygteligt blæsende Vær,
+Især paa Pladsen ved Slottet,
+Det hvirvlede baade med Hatte og Fjær,
+Og Læggene saae man blotted.
+
+Vi kom just fra Præsten, min Kone og jeg -
+Vor Bolig behøves er vide -
+Nok, at vi tog den nærmeste Vei,
+og krydsed med Vinden paa Side.
+
+Men før jeg gaaer videre een Ting absolut
+Er vigtig først at man kjender:
+Min Brud var en noget aldrende Glut,
+Men feed og feiende, Venner!
+
+Jeg fik hende fat den 1ste April,
+Og efter Avisen, forstaa mig!
+Et Væsen, saa stadigt, med saadant et Smiil,
+Jeg tænkte, hun kan ikke slaae dig.
+
+Om ogsaa Næsen er glubsk og krum,
+Er Krøllerne blide bag Øret,
+Og over den noget puklede Rum -
+Majestætisk bølgede Sløret.
+
+Er Tænderne ikke anseelige nok,
+Fordi de fleste er borte,
+Saa er det Andet næsten en Blok,
+Og Øinene ligesom sorte.
+
+Som sagt, som vi med Tavl og med Top
+Foer frem med Blæsten for Bagen,
+Saa - Himmel og Jord - gik noget op,
+Der holdt hendes Hat under Hagen.
+
+Og - kunde jeg lugte det? - en, to, tre!
+Husch fløi den fjærede Takkel!
+Der stod jeg og gabed - Hvad maatte jeg see?
+Ak ja dog det nøgne Spetakkel.
+
+Hun vilde krybe i Jorden ned,
+Langt hellere nu end kneise;
+Saavidt som Skalden buglede bred,
+Var ei et Haar til at reise.
+
+Og Hatten fløi, og Haarene med,
+Jeg efter dem alle med Stokken,
+Op over Høibro, langt afsted,
+Gjennem hele Pidskebaandsflokken.
+
+Dybt i en Kjelders brogede Hals
+Vel tre Snese Æg jeg knuste -
+Hvor Lax og Meloner bydes tilfals,
+Der raaatte vi ligge og puste.
+
+Der fik jeg den Bortrømte endelig fat,
+Og prise kunde vi Lykken,
+At endnu den store, flagrende Hat
+Holdt som en Rovfugl Parykken.
+
+Men hjemme - naa - der blev en Allarm;
+Min Pukkel maatte det døie;
+Hun bankede den med grædende Harm
+Og sigtede efter mit Øie.
+
+Hvi skulde jeg - raabte hun - leve den Dag
+At faae en Mand som denne
+Ved Siden af hvem en saadan Sag
+En saa malicieux kan hænde?
+
+Det er din Skyld, din Skyld, din Knægt
+Da vi var alene hos Præsten
+Da skulde du havt lidt meer Respect
+Og ikke - du veed nok Resten
+
+Men ved den megen Famlen og Fjat
+Jeg værgede mig efter Evne
+Saa kunde man sagtens forpjudske en Hat
+Og faae et Baand til at revne
+
+Gud give jeg aldrig var født Dit Fæ
+Liv eller Død, hvad er slemmest?
+Hvor er der at finde en Krog? et Træ
+Nei Langebro - det er nemmest
+
+Da kom just min Ven, en stor Filur,
+Gudskeelov for det hjelpsomme Væsen;
+Han har en inderlig brav Natur,
+og Frokosten stod ham i Næsen
+
+Han bærer sin Dragt efter gammel Skik,
+Taer Verden som den kan falde,
+Er mager og lidt forfalden til Drik,
+Har ogsaa ondt ved at -.
+
+Hvad er der paa Færde med Jer, I to?
+Hvad Satan, han sagde, er dette?
+Er det at spise sin Mad i Ro?
+Er det at være honette?
+
+Han sagde - jeg kan ei huske det ret -
+Men flydende, smuk var Talen -
+Han sagde: hvad er der at gjøre ved det?
+Og meget meer af Moralen.
+
+Han førte Thisted og flere an;
+Det maatte paa Qvinden virke.
+Det er en Allerhelvedesbrand,
+Hver Søndag gaaer han i Kirke.
+
+Han sagde: hvad seer jeg? For Gudsskyld hør!
+Sæt Skinken sæt Sennop paa Dugen!
+Er det Aqvavit? hvad? Krabber og Kløer?
+Naa, har I Fornuften, saa brug'en!
+
+Skaal! sagde han, skjænkte i Glasset, og loe.
+Vi klinkede med Madammen;
+Og siden den Tid, saa har jeg havt Ro.
+Det skylder jeg ham altsammen
+</body>
+</poem>
+
+<poem id="aarestrup20190206147">
+<head>
+    <title>Den Betænksomme</title>
+    <firstline>Du gaaer saalænge og hegler</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="212-215"/>
+</head>
+<body>
+Du gaaer saalænge og hegler,
+Sagde Krigsraaden til mig igaar,
+Til en af de andre Kegler
+Snapper Lotte bort, dit Faar!
+
+Det lader sig let nok sige;
+Men jeg farer helst i Mag,
+Saadan at frie til en Pige,
+Det er en egen Sag.
+
+Deels stemmer det aldeles ikke
+Med mit Princip overeens,
+Deels har hun en bandsat Hikke,
+Deels gaaer hun lidt indtilbeens.
+
+Og Moderen er mig saa egen;
+Saasnart jeg kommer der - væk!
+Sidst blev jeg ganske forlegen
+Og fik en ordentlig Skræk
+
+Glutten sad ved sin Ramme
+Og bukkede Hovedet ned;
+Og strax den gode Madamme
+Gik ud, jeg vidste Beskeed.
+
+Mit Blod begyndte at surre
+Og gaae mig til Hovedet lidt,
+Og hendes Mave at knurre
+Som jeg har hørt det saa tidt.
+
+Et Vinsel gled fra Rammen,
+Vi bukked os begge to;
+Vore Pander knaldede sammen.
+Et Varsel, skulde man tro.
+
+Dog Vinslet fik jeg til Lykke,
+Og da jeg rakte det hen,
+Saa kom jeg lidt til at trykke -
+Og Barnet trykte igjen.
+
+Jeg tænkte: der har vi Chancen;
+Nu gaaer det aldrig godt;
+Nu kommer du ud af Ballancen!
+Og hostede derfor smaat.
+
+O Lotte, jeg føler - jeg følte
+Hem, hem, hem, hem!
+Min Gud, hvor du dig forkjølte,
+Din Hoste er saare slem.
+
+Du kunde dig hoste til Døde
+Hun sprang ud af Døren i Hast
+Idet hun raabte[:] det Søde
+Vil gjøre den mindre fast
+
+Hun kom med en Candisstengel
+Og med et Æg, som var raat,
+Og da det var stift, den Engel:
+Prøv - sagde hun - det gjør godt!
+
+Jeg følte alt ved den anden
+Theskefuld, som jeg fik ned,
+Hvor det Søde steg mig til Panden,
+Og hvordan mit Hjerte gled.
+
+Og hurtig tog jeg Bestikket
+Som altid, var ei seen,
+Tog Hatten paa Øieblikket,
+Og Kjærlighed gav mig Been.
+
+Man kan behøve sin Fatning
+Naar man skal falde paa Knæ -
+Hvad faaer man til Æreserstatning
+Naar man bær sig ad som et Fæ?
+</body>
+</poem>
+
+<poem id="aarestrup20190206148">
+<head>
+    <title>Kone, Kone, hjem du gaa</title>
+    <firstline>Kone, Kone, hjem du gaa</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="216-217"/>
+</head>
+<body>
+Kone, Kone, hjem du gaa,
+Din Mand er blevet vov.
+Er han vov? Gudskelov!
+Nok en Dands, rask paa Taa,
+Siden vil jeg hjemad gaae
+
+Kone, Kone, hjem du gaa,
+De har hentet Docter Klunt.
+Docter Klunt? sving mig rundt!
+Nok en Dands, rask paa Taa,
+Siden vil jeg hjemad gaae
+
+Kone, Kone, hjem du gaa,
+Din Mand har faaet Hikke.
+Fik han Hikke? Lad ham ligge!
+Nok en Dands, rask paa Taa,
+Siden vil jeg hjemad gaae
+
+Kone, Kone, hjem du gaae,
+Din Mand strider saa haardt -
+Strider han haardt, varer det kort!
+[Nok en Dands, rask paa Taa,
+Siden vil jeg hjemad gaae]
+
+Kone, Kone, hjem du gaae,
+Nu gav han Aanden op.
+Aanden op? Heisa! hop!
+Nok en Dands[, rask paa Taa,
+Siden vil jeg hjemad gaae]
+
+Kone, Kone, hjem du gaae,
+Tiden den er kort.
+Er den kort? Saa bær ham bort
+[Nok en Dands, rask paa Taa,
+Siden vil jeg hjemad gaae]
+
+Kone, Kone, hjem du gaa,
+En anden vil alt frie.
+Vil han frie? lad ham bi!
+Nok en Dands, rask paa Taa,
+Siden vil jeg hjemad gaae.
+</body>
+</poem>
+
+<poem id="aarestrup20190206149">
+<head>
+    <title>Idyll</title>
+    <firstline>Ved det klare Morgengry</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="218-220"/>
+</head>
+<body>
+Hun: Ved det klare Morgengry
+     Var ei Plet paa Himlen;
+     Pyntet ud af Port og By
+     Væltede sig Vrimlen;
+Han: Men med eet der kom en Sky
+     Kulsort op paa Himlen;
+     Under Egens Paraplui
+     Samler nu sig Stimlen.
+
+Hun: Hør paa Træets grønne Blad
+     Hvordan Regnen suser!
+     Alle fik et dygtigt Bad
+     Paa de tynde Blouser.
+Han: Lad os ikke skilles ad -
+     Skjøndt - ved alle Muser! -
+     Denne Mand dig trykker flad
+     Og din Hat han knuser -
+
+Hun: See! det bliver ei saa slemt
+     Som vi Alle tænkte;
+     Tordenbygen kun i Skjæmt
+     Med sit Vaadt os stænkte.
+Han: Alle Venner, munter stemt,
+     Sig i Græsset slængte,
+     Maanen, som var reen forglemt,
+     Paa en Sky sig hængte.
+
+Hun: Giv mig, Engel, nu din Arm,
+     Alt for stærkt du stamper!
+     Hør i Teltet Sang og Larm!
+     See hvor Engen damper!
+Han: Ei forkjøl din hvide Barm
+     Hør hvor Mængden tramper!
+     Vi vil dandse os lidt varm
+     See de tændte Lamper
+
+Hun: Nu bag Lundens tætte Krat
+     Er alt sunken Solen,
+     Duggen falder stærkt i Nat
+     Drivvaad er mig Kjolen.
+Han: Disse Pletter paa din Hat,
+     Disse Stænk paa Kjolen,
+     O de klæde dig, min Skat,
+     Som lidt Dug Violen.
+
+Hun: Hele Stadsen som en Klud
+     Jeg har Grund til Klagen
+     Strømperne - Ei du min Gud,
+     Aldrig saae jeg Magen!
+Han: Silkelokken falder ud -
+     Hvad gjør det til Sagen?
+     Du har været faur og prud,
+     Søde, hele Dagen.
+
+Hun: Immer falde Draaber smaat
+     Gjennem Bøgens Duske,
+     Og I Mørket Ikke godt
+     Kan man Veien huske!
+Han: Ak, hvad siger vel lidt Vaadt?
+     Søde, lad det ruske!
+     Bedre end et Herreslot
+     Er de tætte Buske.
+</body>
+</poem>
 
 <poem id="aarestrup2019012705" variant="aarestrup2018110203">
 <head>
@@ -5780,7 +6176,7 @@ Og halvt i Himlen bragt.
 <head>
     <title>Jeg sad med dig bag Malver, huldt i Skygge</title>
     <firstline>Jeg sad med dig bag Malver, huldt i Skygge</firstline>
-    <source pages="153"/>
+    <source pages="226"/>
     <keywords>sonnet</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
