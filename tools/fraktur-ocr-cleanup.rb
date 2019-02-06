@@ -480,6 +480,7 @@
 'frelske/frelste',
 'Ilv/Hv',
 'Jis/Iis',
+'J is/Iis',
 'Elstov/Elskov',
 'Elstov/Elskov',
 'Elssov/Elskov',
