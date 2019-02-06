@@ -242,6 +242,8 @@
 'Jl/Il',
 'ZE/Æ',
 'LE/Æ',
+'Wble/Æble',
+'Wdle/Ædle',
 'Sial/Siæl',
 'Sjal/Sjæl',
 'Sjoel/Sjæl',
