@@ -251,7 +251,6 @@
 'Lerr/Lær',
 'loer/lær',
 'flukt/slukt',
-'smulte/smiilte',
 'fmile/smile',
 'Skrak/Skræk',
 'Traer/Træer',
