@@ -129,6 +129,7 @@
 'svsb/svøb',
 'foerd/færd',
 'stanke/stærke',
+'errk/ærk',
 'speede/spæde',
 'Lce/Læ',
 'troeng/træng',
