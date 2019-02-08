@@ -222,7 +222,7 @@ export default class TextContent extends React.Component<TextContentPropsType> {
             {this.handle_nodes(node.childNodes)}
           </span>
         );
-      case 'num':
+      case 'versenum': // Linjer med kun tal eller romertal.
         return (
           <span
             key={this.keySeq++}
@@ -403,16 +403,10 @@ export default class TextContent extends React.Component<TextContentPropsType> {
 
       if (options.isPoetry && !lineOptions.wrap && !lineOptions.hr) {
         className += ' poem-line';
-        let displayedLineNum = null;
-        if (lineOptions.folkevise && lineNum != null) {
-          displayedLineNum = lineNum + '.';
-        } else if (lineNum != null && lineNum % 5 === 0) {
-          displayedLineNum = lineNum;
-        }
         return (
           <div
             className={className}
-            data-num={displayedLineNum}
+            data-num={lineOptions.displayNum}
             key={keyPrefix + i}>
             {anchor}
             <div className={lineInnerClass}>{rendered}</div>
