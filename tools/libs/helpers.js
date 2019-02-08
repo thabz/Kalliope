@@ -315,7 +315,7 @@ const htmlToXml = (
     }
     if (l.indexOf('<margin>') > -1) {
       options.margin = l.match(/<margin>(.*)<\/margin>/)[1];
-      l = l.replace('<margin>', '').replace('</margin>', '');
+      l = l.replace(/<margin>(.*)<\/margin>/, '');
     }
     if (l.indexOf('<center>') > -1) {
       l = l.replace('<center>', '').replace('</center>', '');
