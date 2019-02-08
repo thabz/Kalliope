@@ -187,6 +187,7 @@
 'kiort/kiørt',
 'skion/skiøn',
 'Groes/Græs',
+' v i / vi ',
 'Skion/Skiøn',
 'Skiod/Skiød',
 'sorge/sørge',
@@ -401,6 +402,7 @@
 '(\W)Dn(\W)/\1Du\2',
 '(\W)Nn(\W)/\1Nu\2',
 '(\W)nred(\W)/\1med\2',
+'(\W)nren/\1men',
 '(\W)herste/\1herske',
 'nnd/und',
 'Iord/Jord',
@@ -675,6 +677,12 @@
 '(\W)skjod(\W)/\1skjød\2',
 '(\W)ganste(\W)/\1ganske\2',
 '(\W)i Mode(\W)/\1i Møde\2',
+'ccn/æn',
+'cck/æk',
+'ccs/æs',
+'ccd/æd',
+'ccl/æl',
+'cct/æt',
 ];
 
 @regexps = @rules.map { |rule| 
