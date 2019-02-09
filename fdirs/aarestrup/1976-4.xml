@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1976-4" author="aarestrup" status="incomplete" type="poetry" parent="1976">
+<kalliopework id="1976-4" author="aarestrup" status="complete" type="poetry" parent="1976">
 <workhead>
     <title>Samlede Skrifter</title>
     <subtitle>
@@ -24,7 +24,7 @@
 <head>
    <title>Fremtiden</title>
    <firstline>Alting bagvendt og forkludret!</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="1-2"/>
 </head>
 <body>
@@ -69,7 +69,7 @@ Som en Ulv i Lænker, brumme.
 <head>
    <title>Den første Bøn</title>
    <firstline>Ungersvendens Eed jeg kjender</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="3"/>
 </head>
 <body>
@@ -106,7 +106,7 @@ Elsk mig lidt og elsk mig længe!
 <head>
    <title>Drømmen</title>
    <firstline>Jeg drømte, at jeg saae dig staae</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="4-5"/>
 </head>
 <body>
@@ -151,7 +151,7 @@ Min Mund, den var saa kold som Sne .
 <head>
    <title>Gaadeløsningen</title>
    <firstline>Dit drømmerige, tankefyldte</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="6"/>
 </head>
 <body>
@@ -185,7 +185,7 @@ Hvad nytter det, man holder Hoedet?
    <notes>
       <note>Titlen er fra Juvenal, Satire I, 30, og kan oversættes til »Det er vanskeligt ikke at skrive en satire«.</note>
    </notes>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="7"/>
 </head>
 <body>
@@ -205,7 +205,7 @@ Dog passe, at man ei fordærver Maven.
 <prose id="aarestrup2001061301a">
 <head>
    <title>Kjære Ven! Jeg har faaet en Maneer</title>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="8-10"/>
 </head>
 <body>
@@ -223,7 +223,7 @@ Dog passe, at man ei fordærver Maven.
 <prose id="aarestrup2001061302a">
 <head>
    <title>Kjære værslevske Venner!</title>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="11-13"/>
 </head>
 <body>
@@ -240,7 +240,7 @@ Dog passe, at man ei fordærver Maven.
 <head>
    <title>Tilegnelse</title>
    <firstline>Her seer Du nogle Digte</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="14"/>
 </head>
 <body>
@@ -276,7 +276,7 @@ Men kun, kun <w>ved Dit Øre</w>!
 <head>
    <title>Kongens Skaal</title>
    <firstline>En Konge, veed vi, fødes</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>lejlighedsdigtning</keywords>
    <source pages="15-17"/>
 </head>
@@ -364,7 +364,7 @@ Og hans i sidste Led!
 <head>
    <title>Gravrøsten</title>
    <firstline>Omfyget af Sneen</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="18-20"/>
 </head>
 <body>
@@ -434,7 +434,7 @@ Dødfrossen og stille.
 <head>
    <title>Den har du tabt, den Kjæde</title>
    <firstline>Den har du tabt, den Kjæde</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="21-22"/>
 </head>
 <body>
@@ -487,7 +487,7 @@ Det kan du aldrig miste.
    <notes>
       <note>O. Bang er den ansete læge Oluf Lundt Bang (kaldet Ole Bang; 1788-1877), også virksom som skribent. Farfader til <a person="bang">Herman Bang</a>.</note>
    </notes>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="23-26"/>
 </head>
 <body>
@@ -594,14 +594,14 @@ Hvile Lægehaanden ud!
 </poem>
 
 
-<poem id="aarestrup1838-56a3">
+<poem id="aarestrup1838-56a3" variant="aarestrup2019020206">
 <head>
    <title>Thorvaldsen</title>
    <firstline>Guldharnisket Septembersolen gryer</firstline>
    <notes>
-       <note>En rettet renskrift af sonnetter, hvoraf de fire blev trykt i <i>Kjøbenhavnsposten</i>, 11. Oktober 1838.  Cf. den trykte udgave af sonetterne (<xref poem="aarestruptrykteefter1837a0"/>) i <i>Digte, trykt efter 1837</i>.<!-- TODO: Fiks link til den rette udgave, når bd. 3 er på plads. --></note>
+       <note>En rettet renskrift af sonnetter, hvoraf de fire blev trykt i <i>Kjøbenhavnsposten</i>, 11. Oktober 1838.  Cf. den trykte udgave af sonetterne (<xref poem="aarestrup2019020206"/>) i <i>Digte, trykt efter 1837</i>.</note>
    </notes>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>lejlighedsdigtning,rom,thorvaldsen,sonnet</keywords>
    <source pages="27-30"/>
 </head>
@@ -716,7 +716,7 @@ Uændset holdt tilbage, dog tilsidst udbryder.
 <head>
    <title>Critik</title>
    <firstline>Hvad Publikum har fundet for et Hold</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="31"/>
 </head>
 <body>
@@ -731,7 +731,7 @@ En nøgen Philosoph og en paaklædt Apoll.
 <head>
    <title>Yndig er Ourebygaard</title>
    <firstline>Yndig er Ourebygaard i Sommerens blussende Skjønhed</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>heksameter</keywords>
    <source pages="32-34"/>
 </head>
@@ -789,7 +789,7 @@ Og at den herlige Flor længe maa blomstre som nu -
    <title>Min Ven - Christian Petersen!</title>
    <toctitle>Min Ven - Christian Petersen!</toctitle>
    <indextitle>Min Ven - Christian Petersen!</indextitle>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="35-37"/>
 </head>
 <body>
@@ -809,7 +809,7 @@ Og at den herlige Flor længe maa blomstre som nu -
 <head>
    <title>Kjøbenhavnske Minder</title>
    <firstline>O I grønne Bastioner</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="38-41"/>
 </head>
 <body>
@@ -926,7 +926,7 @@ Alle Venner snart mig glemt.
    <title>Mit Brev jeg sender</title>
    <toctitle>Mit Brev jeg sender</toctitle>
    <indextitle>Mit Brev jeg sender</indextitle>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="42-44"/>
 </head>
 <body>
@@ -937,11 +937,13 @@ Alle Venner snart mig glemt.
 <poem id="aarestrup2001061406">
 <head>
    <title>Sang</title>
-   <subtitle>til Stiftamtmand v. Jessen i Anledning af hans 25 Aars Embedsdag den 1ste August 1839. - Mel: Der er et Land, dets Sted er høit mod Norden. Weyse -</subtitle>
-   <toctitle>Sang</toctitle>
-   <indextitle>Sang</indextitle>
+   <subtitle>
+       <line>til Stiftamtmand v. Jessen</line>
+       <line>i Anledning af hans 25 Aars Embedsdag den 1ste August 1839.</line>
+       <line>- Mel: Der er et Land, dets Sted er høit mod Norden. Weyse -</line>
+   </subtitle>
    <firstline>To grønne Øer sig mod Syden runde</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="45-46"/>
 </head>
 <body>
@@ -996,7 +998,7 @@ Men i hvert ærligt Hjerte, som du vandt!
 <head>
    <title>Kom, Gudsengel, stille Død</title>
    <firstline>Kom, Gudsengel, stille Død</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="47-48"/>
 </head>
 <body>
@@ -1036,7 +1038,7 @@ Kun et Drag til Afskedssukket!
 <head>
    <title>Til Kritikerne</title>
    <firstline>Om Aanden skulde flagre noget vildt</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="49"/>
 </head>
 <body>
@@ -1071,7 +1073,7 @@ Om den veed ikkun Guderne Besked.
 <head>
    <title>Patriotisk Elegie</title>
    <firstline>Der var en Tid mit Fødeland</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="50-52"/>
 </head>
 <body>
@@ -1156,7 +1158,7 @@ Der gav os Naadestødet
 <head>
    <title>Forskjønnelsen</title>
    <firstline>Der var mere i mit Hjerte</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="53-54"/>
 </head>
 <body>
@@ -1202,7 +1204,7 @@ Er i Nattens Mulm at see.
    <title>Prolog</title>
    <subtitle>til en dramatisk Forestilling til Bedste for de vandlidte Jyder.</subtitle>
    <firstline>Vort Hjem er paa den lave Ø</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="55-57"/>
 </head>
 <body>
@@ -1276,7 +1278,7 @@ Et ubetydeligt, et ringe Aften-Tidsfordriv.
 <prose id="aarestrup2019013011" variant="aarestrup2001061801">
 <head>
    <title>Paa en Dag, der er bestemt Lykønskninger og Foræringer</title>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="58-59"/>
 </head>
 <body>
@@ -1289,7 +1291,7 @@ Et ubetydeligt, et ringe Aften-Tidsfordriv.
 <head>
    <title>Bliv ved, bliv ved, med Klokkerne at kime</title>
    <firstline>Bliv ved, bliv ved, med Klokkerne at kime</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="60"/>
 </head>
 <body>
@@ -1304,7 +1306,7 @@ Vil man, at du skal gloe, og ikke tænke.
 <head>
    <title>Jeg var et Barn - mit Blod saa sagte løb</title>
    <firstline>Jeg var et Barn - mit Blod saa sagte løb</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="61"/>
 </head>
 <body>
@@ -1327,7 +1329,7 @@ At du vil ogsaa lære mig at græde. -
    <notes>
       <note>Digtet stammer fra sommeren 1840, og refererer til en Samtale mellem Aarestrup og <a person="molbechsr">Chr. Molbech</a>.</note>
    </notes>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="62"/>
 </head>
 <body>
@@ -1344,7 +1346,7 @@ Det Reenforglemte og det Længstforsvundne,
    <title>Til Frøken Christine Rosenørn-Lehn</title>
    <subtitle>den 10de December 1840.</subtitle>
    <firstline>Spaniens Land gjenlyder ei længer af tonende Sange</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>heksameter,lejlighedsdigtning</keywords>
    <source pages="63-64"/>
 </head>
@@ -1386,7 +1388,7 @@ Fagre Veninde, mit Digts stille, lykønskende Ord!
 <head>
    <title>Critik</title>
    <firstline>Jeg har seet den store Digter</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="65"/>
 </head>
 <body>
@@ -1421,7 +1423,7 @@ I en simpel Hodvandsflaske.
 <head>
    <title>Den 1ste Januar 1841</title>
    <firstline>Nymaanen skinner over Søens Flade</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <dates>
        <event>1841-01-01</event>
    </dates>
@@ -1490,7 +1492,7 @@ En fattig Digters ufuldførte Klade!
 <head>
    <title>Er Du en Christen? - spurgte du mig nylig</title>
    <firstline>Er Du en Christen? - spurgte du mig nylig</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="68-69"/>
 </head>
 <body>
@@ -1541,7 +1543,7 @@ Og turde ei paa Porten kime.
    <toctitle>Deres Naade Fru Kammerherreinde, Baronesse Rosenørn-Lehn</toctitle>
    <indextitle>Deres Naade Fru Kammerherreinde, Baronesse Rosenørn-Lehn</indextitle>
    <firstline>Italiens Sanger slaaer som Nattergalen</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>lejlighedsdigtning,thovaldsen,sonnet</keywords>
    <source pages="70"/>
 </head>
@@ -1570,7 +1572,7 @@ Og af den Dyd, hvorom kun sjelden tales.
 <prose id="aarestrup2001061802">
 <head>
    <title>Høivelbaarne Hr. Greve</title>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="71-72"/>
 </head>
 <body>
@@ -1584,7 +1586,7 @@ Og af den Dyd, hvorom kun sjelden tales.
    <title>Til Frøken Warenka Rosenkrantz</title>
    <subtitle>d. 21 Oct 1842.</subtitle>
    <firstline>Din Vugge gik ved Brum af Nordhavsrøsten</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>lejlighedsdigtning,sonnet</keywords>
    <dates>
        <event>1842-10-21</event>
@@ -1616,7 +1618,7 @@ Som Brud og Viv det skjønne Engestofte.
 <head>
    <title>Flugt</title>
    <firstline>Jeg har seet den store Verden!</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="74"/>
 </head>
 <body>
@@ -1651,7 +1653,7 @@ Til sin Ørkens vilde Hule.
 <head>
    <title>Trøst</title>
    <firstline>Beilere paa alle Kanter!</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="75"/>
 </head>
 <body>
@@ -1686,7 +1688,7 @@ Thi hun elsker sit Uhyre.
 <prose id="aarestrup2001061805">
 <head>
    <title>Idet jeg føler det som en indre Pligt</title>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="76-78"/>
 </head>
 <body>
@@ -1699,7 +1701,7 @@ Thi hun elsker sit Uhyre.
 <head>
    <title>Med Roser og Ranunkler</title>
    <firstline>Med Roser og Ranunkler</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="79-80"/>
 </head>
 <body>
@@ -1745,7 +1747,7 @@ Det var mig nok - jeg drømte.
 <head>
    <title>O hvor smukt dette Landskabs Form i sit dæmrende Mørke!</title>
    <firstline>O hvor smukt dette Landskabs Form i sit dæmrende Mørke!</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="81-82"/>
 </head>
 <body>
@@ -1779,7 +1781,69 @@ Og - der sees vi igjen, der samles, der favnes vi atter!
 </body>
 </poem>
 
-<!-- TODO: D. 12te Juli 1845, pp. 83-84 -->
+<poem id="aarestrup2019021046">
+<head>
+    <title>D. 12te Juli 1845</title>
+    <subtitle>Sølvbryllupskrandsen</subtitle>
+    <dates>
+        <event>1845-07-12</event>
+    </dates>
+    <firstline>En Krands af Livets Vaar og Sommer bunden</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="83-84"/>
+</head>
+<body>
+<num>I</num>En Krands af Livets Vaar og Sommer bunden,
+Kun ikke fuldendt af dets Høst!
+Hvor gjerne dvæler Tanken ei ved denne
+Og nyder sin Erindrings Lyst!
+
+<num>II</num>En femogtyveaarig Krands! hvis Blomster,
+Hvis yndigste og bedste Pryd
+Var Huuslighed og ædel Gjerning
+Var Moderglæde, Faderfryd!
+
+<num>III</num>En femogtyveaarig Krands! hvis Skygger,
+Hvis mørke Blades dunkle Magt
+Forhøier kun de lyse Farvers Reenhed
+Og hele Blomsterfyldens Pragt!
+
+<num>IV</num>En saadan Krands af Sorger og af Glæder,
+Af Troskab og Hengivenhed -
+Udfolder sig idag paa Mindets Alter
+Og straaler der i festlig Fred:
+
+<num>V</num>I festlig Fred og med forklaret Skjønhed,
+Det Forbigangnes rige Krands!
+Erindringen omflorer den med Æther
+Med Aftenskjær og Maaneglands
+
+<num>VI</num>Og Dagens Engel iler med at knytte
+Til Roserne fra Ungdoms Tid,
+Til Roserne, hvoraf den først blev flettet,
+Sølvbrudekronen lilliehvid!
+
+<num>VII</num>Dog ikke Mindets Fest alene feires,
+Ei blot paa svundne Timers Frugt
+Tilbageblikket sig vemodigt hviler -
+Fremad gaaer Haabets glade Flugt!
+
+<num>VIII</num>Den lange Blomsterkjæde er ei sluttet,
+Idag er sat et Mærke kun,
+Og Aar for Aar skal Krandsen herligt voxe,
+Velsignet som i denne Stund.
+
+<num>IX</num>Den Gud, der føied Blomst og Blad tilsammen
+Fra først af, efter sine Raad,
+Han holder end i sine stærke Hænder
+Fuldendelsens den gyldne Traad!
+
+<num>X</num>Og Børn og Slægtninge og Venner samles
+Høitidelig i fælleds Bøn,
+At Krandsen, som af Himlen selv er viet,
+Maa daglig svulme frisk og skjøn!
+</body>
+</poem>
 
 <poem id="aarestrup2019013023" variant="aarestrup3x2002032817">
 <head>
@@ -1791,37 +1855,37 @@ Og - der sees vi igjen, der samles, der favnes vi atter!
    <source pages="85-86"/>
 </head>
 <body>
-Fra grønne Bakker - svulmende paa Øen
+<num>I</num>Fra grønne Bakker - svulmende paa Øen
 Som ude paa det Dybe Havets Bølge -
 Skal min Blik til Horizonten følge
 Dit hvide Seil henover Østersøen.
 
-Du reiser bort til Nordens Klippestrande,
+<num>II</num>Du reiser bort til Nordens Klippestrande,
 Til Bjerget, der er Fader til vor Slette:
 Hils ham, den mørke, havombruste Jette,
 Der endnu trodsig rynker Bryn og Pande!
 
-Der knuser Østens Storm i sine Kløfter,
+<num>III</num>Der knuser Østens Storm i sine Kløfter,
 Og med det frie Granbar høit sig krandser!
 Der, trods det store, tunge Klippepantser,
 Dog Kæmpefoden meer og mere løfter!
 
-Der var vel Mulighed, at finde Mening
+<num>IV</num>Der var vel Mulighed, at finde Mening
 I Landets Reisning over Saltvandssletten!
 Som Kysten stiger, saa skal stige Ætten
 Af Norsk og Svensk og Dansker i Forening.
 
-Gjør dit dertil! Lad nordisk Mod og Mæle
+<num>V</num>Gjør dit dertil! Lad nordisk Mod og Mæle
 Forkynde Fremmede hvorfra du stammer!
 Fortvivl ei om dit Fædreland! det ammer
 Et nyfødt Kuld, som Aaget ei skal qvæle.
 
-Fortæl, at Frihedslyst i Danmark svulmer!
+<num>VI</num>Fortæl, at Frihedslyst i Danmark svulmer!
 En Skare Ynglinger er alt herhjemme,
 Hvis Haab og Dristighed man ei kan skræmme,
 Og Mænd, hos hvem det under Asken ulmer.
 
-Fra disse Høider vifter jeg med Hatten,
+<num>VII</num>Fra disse Høider vifter jeg med Hatten,
 Og ønsker dig Farvel paa Sømandstoget!
 Farvel, naar Solen lysner Dannebroget!
 Farvel, naar Stjernen leder dig om Natten!
@@ -1834,7 +1898,7 @@ Farvel, naar Stjernen leder dig om Natten!
    <title>Til - - -</title>
    <subtitle>(I Anledning af en tilsendt Pengepung)</subtitle>
    <firstline>Tak for den Silkeskjønhed</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>lejlighedsdigtning</keywords>
    <source pages="87"/>
 </head>
@@ -1954,7 +2018,7 @@ Nu ved Siden af sin Beiler.
 <head>
    <title>Det fryser ved Octobers klare Maane</title>
    <firstline>Det fryser ved Octobers klare Maane</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
    <source pages="91"/>
 </head>
@@ -1983,7 +2047,7 @@ Farvel! Farvel! Hvem undres, at det Skjønne
 <head>
    <title>Her rasler Skoven og her suser Sivet</title>
    <firstline>Her rasler Skoven og her suser Sivet</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="92"/>
 </head>
 <body>
@@ -2013,7 +2077,7 @@ Hvor Leda, i sin Uskyld, klapped Svanen.
 <head>
    <title>Paa Rosenborg, der vil I jer forsamle</title>
    <firstline>Paa Rosenborg, der vil I jer forsamle</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
    <source pages="93"/>
 </head>
@@ -2042,7 +2106,7 @@ En Samling nye Snurrepiberier.
 <head>
    <title>Raskelsen</title>
    <firstline>At varetage Folkets dyre Skat</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
    <source pages="94"/>
 </head>
@@ -2071,7 +2135,7 @@ Sig Krigens Gud, med heelt opsmøgne Ærmer.
 <head>
    <title>Valget</title>
    <firstline>Kom, danske Folk! Tørklædet over Næsen!</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
    <source pages="95"/>
 </head>
@@ -2100,7 +2164,7 @@ Hvad greb du der? Ih, fy for en Ulykke!
 <head>
    <title>Den stakkelse Blindebuk! Han gjør sit Bedste</title>
    <firstline>Den stakkelse Blindebuk! Han gjør sit Bedste</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
    <source pages="96"/>
 </head>
@@ -2132,7 +2196,7 @@ See saa! Lad nu en Anden gaae iblinde!
    <notes>
       <note>Den teologiske professor H.N. Clausen (1793-1877).</note>
    </notes>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
    <source pages="97"/>
 </head>
@@ -2164,23 +2228,23 @@ En Bitterhed, hvis Ret jeg ei benegter.
    <pictures>
       <picture src="aarestrup1999032903-p1.jpg">Manuskript fra Det Kongelige Bibliotek.</picture>
    </pictures>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
    <source pages="98"/>
 </head>
 <body>
-»Jeg ynder frit Erhverv for frie Hænder;
+,,Jeg ynder frit Erhverv for frie Hænder;
 Med almeen Væbning finder jeg det haster;
 Tokammeret jeg ligefrem forkaster
-Og holder mig til Eidergrændsen, Venner.«
+Og holder mig til Eidergrændsen, Venner.''
 
-»Jeg til en modsat Mening mig bekjender;
+,,Jeg til en modsat Mening mig bekjender;
 Thi Frihedens Udsvævelser og Laster
 Har kun i Dobbeltkammeret sit Plaster,
-Og heelt mit Hjerte for en Heelstat brænder.«
+Og heelt mit Hjerte for en Heelstat brænder.''
 
-»Om Kirke, Skole, Krig og Fred Debatten
-Belærer mig stol paa mig da som Dommer!«
+,,Om Kirke, Skole, Krig og Fred Debatten
+Belærer mig stol paa mig da som Dommer!''
 Saa tale Peer og Povl og Folket klapper.
 
 Det er saa vist, som 9 og 9 er 18,
@@ -2193,7 +2257,7 @@ Saa tælle Peer og Povl paa deres Knapper.
 <head>
    <title>Af Krigens Trommer og Trompeter skræmmet</title>
    <firstline>Af Krigens Trommer og Trompeter skræmmet</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>sonnet</keywords>
    <source pages="99"/>
 </head>
@@ -2309,46 +2373,46 @@ Fuldt af Erkjendtlighed og Velbehag. -
 <head>
    <title>Naar jeg i Eenrum færdes</title>
    <firstline>Naar jeg i Eenrum færdes</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="103-104"/>
 </head>
 <body>
-Naar jeg i Eenrum færdes
+<num>I</num>Naar jeg i Eenrum færdes
 med stille Grublen vanker,
 da er min Sjæl lysvaagen,
 da sværme mine Tanker.
 
-Fordobblet min Bevidsthed
+<num>II</num>Fordobblet min Bevidsthed
 det smukke Virvar maaler,
 som det Uendelige
 omkring min Pande straaler.
 
-I Skjønheds underfulde
+<num>III</num>I Skjønheds underfulde
 Mysterier bevandret,
 jeg har Dit Væsen hos mig,
 frigjordt, men ei forandret.
 
-Let flagrer Psychevingen
+<num>IV</num>Let flagrer Psychevingen
 paa dine Skulderblade,
 og Dine Lokker slynges
 udødelige, glade.
 
-Du tager mig ved Haanden
+<num>V</num>Du tager mig ved Haanden
 som Dantes Beatrice,
 og vil mig Himlens Engle
 og Saligheden vise.
 
-Kun naar en Ven mig møder
+<num>VI</num>Kun naar en Ven mig møder
 og, som han tror, opliver -
 og naar jeg Selskabskredsen,
 som man har sagt, henriver -
 
-Saa er det som om Livet
+<num>VII</num>Saa er det som om Livet
 fordulgt tilbagestrømmer -
 det saakaldt Virkelige,
 det troer jeg, at jeg drømmer.
 
-Det vexler og forsvinder,
+<num>VIII</num>Det vexler og forsvinder,
 det hylder sig i Taager -
 da er det, Sjælen blunder
 og Legemet kun vaager.
@@ -2478,7 +2542,70 @@ Vor Vert og vor Vertinde leve!
 </body>
 </poem>
 
-<!-- TODO: Den 19de Juni 1851, pp. 109-111 -->
+<poem id="aarestrup2019021063">
+<head>
+    <title>Den 19de Juni 1851</title>
+    <firstline>Den 19de Juni 1851</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="109-111"/>
+</head>
+<body>
+<num>I</num>Det var en liflig Sommerdag -
+I Gaarden, blandt kjølige Linde
+- Hospitalets grønne, susende Flag
+Boltred sig Vestenvinde.
+
+<num>II</num>Professoren holder Bryllup idag! -
+Ud, hvor Strandluften strømmer!
+Af Ungersvende et lystigt Lag
+For Parret Pokalen tømmer.
+
+<num>III</num>Dengang var ikke een Gud mig nok
+Svimmel vaklede Fyren
+Imellem Asklepiadens Stok
+Og Musens Skjød med Lyren.
+
+<num>IV</num>Tredobbelt følte jeg mig dengang
+Hygæas Præst beslægtet,
+Ham, der baade Plektret svang
+Og paa Kathedret fægted;
+
+<num>V</num>Hvem Aphrodite, gunstig og mild,
+Fordi han erotisk brændte
+Og vogted over sin Ungdomsild,
+En elskelig Hustru sendte.
+
+<num>VI</num>Og fem og tyve Aar har ei løst
+De sympathetiske Knuder,
+Der i Mandens og Ynglingens Bryst
+Blev knyttet af mægtige Guder.
+
+<num>VII</num>Hav Tak for det Vidnesbyrd derom,
+Jeg fik fra den Henipelske Lade -
+En poetisk Luftning, idag det kom,
+Med Duft af de friskeste Blade.
+
+<num>VIII</num>En Krydder fra de sundeste Strøg,
+,,Indviftet af Musens Vinge'',
+Et sindrigt Smykke, et Konstforsøg,
+I femten brogede Ringe.
+
+<num>IX</num>Saa kjækt udskaarne, med Krøller og Kant,
+Saa uafhængig af Moden,
+Som Folderne i det lette Gevandt,
+Der synker Cythere til Foden.
+
+<num>X</num>Værdige til den skjønne Krands,
+Sølvbryllupet fæster i Haaret;
+Ildfulde som den Ungdomsglands,
+Begge i Livet har baaret;
+
+<num>XI</num>Og som - det styrke Himlen til!
+Med stadig Lue vil brænde:
+En trofast, ægte Kjærligheds-Ild
+Hos Begge til Livets Ende!
+</body>
+</poem>
 
 <poem id="aarestrup2019013039" variant="aarestrup2018110518">
 <head>
@@ -2563,15 +2690,175 @@ Fordi, <w>Pauline Holsten</w>, Du er her!
 </body>
 </poem>
 
-<!-- TODO: Cotillon-Deviser, pp. 115-119 -->
+<poem id="aarestrup2019021066">
+<head>
+    <title>Cotillon-Deviser</title>
+    <firstline>Jeg elsker Dig, du faureste Pige paa Jorden!</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="115-119"/>
+</head>
+<body>
+Jeg elsker Dig, du faureste Pige paa Jorden! -
+- Saa er det ikke mig,
+For jeg er kun den faureste Pige i Norden.
+
+---
+
+Lisbeth! Lisbeth!
+Læg din lille Haand i min
+Den er saa fiin -
+
+Jochum, Jochum!
+Aldrig taer jeg den igjen,
+Min Hjertensven -
+
+---
+
+Frøken, vil du være Kjæresten min,
+Saa vil jeg glad være Husbonden din?
+
+Min Herre, min Herre, det gaaer ikke an,
+De er for ung til at kaldes min Mand.
+
+---
+
+Smukke Pige med det sorte Haar,
+See lidt paa mig!
+
+Nei, Hr Jæger, nei!
+Lad mig gaae min Vei!
+
+---
+
+Gud dennem forlade, som Aarsag er,
+At de ei sammen maa være -
+Som have hinanden af Hjertet kjær,
+Og elske i Tugt og Ære -
+
+---
+
+Hvo gjør i Odense det smukkeste Huus?
+
+Muus.
+
+---
+
+Hos hvem kan man vente det næste Bal -
+Mine Herrer og Damer jeg spørger dem ad?
+
+Hos Biskop Gad.
+
+---
+
+Har De følt hvordan Adam Homo fortryller? 
+Ja, leve Paludan-Müller!
+
+---
+
+Mellem store og lille Belt
+Er Fyen saa net situeret -
+
+Som i Cotillon en Helt
+To Damer har engageret.
+
+---
+
+Hvad ønskes: Student, Officeer, Kjøbmand, Baron?
+Tør jeg bede om en bitter Makron.
+
+---
+
+For Cholera, den russiske Hex,
+Vi ingen Frygt vil nære -
+
+Af Doctere har vi hele Sex
+Foruden de Militaire.
+
+---
+
+Ved Seinens Bredder Paris er stor,
+Ved Themsens London er større -
+
+Men Odense er baade lille og stor
+Og har det paa det Tørre.
+
+---
+
+Med Knebelsbarterne par force
+Jeg finder mig saa grumme net -
+
+Men naar De faaer et Ridderkors,
+Saa er De først complet.
+
+---
+
+En Candidat kan længe gaae
+Og see sig om og vrage -
+
+Men naar han bliver altfor graa,
+Saa vil ham Ingen tage.
+
+---
+
+Ich bin nicht hübsch, ich bin nicht schön,
+Das heisst ich bin nicht häslich eben -
+
+Denn wären Sie dies, Sie mögens gestehn,
+Dann möchten Sie lieber gar nicht leben.
+
+---
+
+En Sko, som trykker, er meget slemt,
+Og to er endnu værre -
+
+En god Mazurca er bestemt
+Det bedste Middel, min Herre!
+
+---
+
+Der var en Tid, da jeg var meget lille,
+Min hele Krop var kun en Alen lang -
+
+O ti om denne Tid i Aften stille,
+Det kan vi tale om en andengang.
+
+---
+
+Jeg elsker mit Land, min Konge, mit Kald!
+
+Min Herre! husk, De er paa et Bal!
+
+---
+
+Dannevang med grønne Bred,
+Ved den blanke Vove -
+
+I dit Skjød boer Kjærlighed,
+Fred i dine Skove.
+
+---
+
+Holder De af en Constitution?
+Er derved ei meget risqueret?
+
+Jeg ynder den, for min Person,
+Vor Amtmand er constitueret
+
+---
+
+Har De bemærket de nye Lygter?
+Halvoplyst Odins Stad nu undrer -
+
+Det bliver ei anderledes, jeg frygter,
+Odin var eenøiet, om De erindrer.
+</body>
+</poem>
 
 <poem id="aarestrup1999032905">
 <head>
-   <title>Tør jeg haabe, yndigste Neglike</title>
-   <toctitle>Tør jeg haabe, yndigste Neglike</toctitle>
    <indextitle>Tør jeg haabe, yndigste Neglike</indextitle>
    <firstline>Tør jeg haabe, yndigste Neglike?</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="119"/>
 </head>
 <body>
@@ -2582,152 +2869,155 @@ De taer feil, min Herre, jeg vil ikke.
 
 <poem id="aarestrup2019013042" variant="aarestrup1999032915">
 <head>
-   <title>Man har Sagn om Borgtapeter (I)</title>
+   <title>Man har Sagn om Borgtapeter</title>
+   <subtitle>I</subtitle>
    <firstline>Man har Sagn om Borgtapeter</firstline>
    <quality>korrektur1,korrektur2,kilde,side</quality>
    <source pages="120-121"/>
 </head>
 <body>
-Man har Sagn om Borgtapeter,
+<num>I</num>Man har Sagn om Borgtapeter,
 Hundredaarige, paa hvilke
 De afblegede Figurer,
 Syede Sting i Sting af Silke,
 
-Faae et sælsomt Liv om Natten,
+<num>II</num>Faae et sælsomt Liv om Natten,
 Stige ned og, som det gamle
 Herskab fordumstider, sig i
 Maanskinscabinettet samle.
 
-I de bløde Lænestole
+<num>III</num>I de bløde Lænestole
 Damerne med Atlasslæbet,
 Blændende sig atter kaste,
 Munden smiler rosenlæbet.
 
-Ridderen, som fra Tapetet
+<num>IV</num>Ridderen, som fra Tapetet
 Knapt om Dagen man kan mærke,
 Læne sig til Stoleryggen,
 Brune, skjæggede og stjærk.
 
-Gjennem Buevindvet glimre
+<num>V</num>Gjennem Buevindvet glimre
 De forgyldte Instrumenter;
 Hvide Skyggehænder jage
 Over støvede Tangenter.
 
-Klang fra de forsvundne Tider,
+<num>VI</num>Klang fra de forsvundne Tider,
 O vidunderlig at høre!
 Gammedags Galanterier
 Hviskes i et yndigt Øre.
 
-Næsten kunde man misunde
+<num>VII</num>Næsten kunde man misunde
 Dette Skyggeliv, hvis ikke -
 See! hun blegner bag sin Vifte,
 Angst for Morgenrødens Blikke.
 
-Selv den tappre Ridder gyser,
+<num>VIII</num>Selv den tappre Ridder gyser,
 Smutter, som den hele Vrimmel,
 Ind i Muren, i Tapetet;
 Dagen seer kun Støv og Skimmel.
 
-O, hvor skjønne, nydelige
+<num>IX</num>O, hvor skjønne, nydelige
 Spøgelser kan ei fremtræde!
 Ja, i Mindets Dæmringstime
 Lever op den gamle Glæde.
 
-Mange lyse Nætter, fulde
+<num>X</num>Mange lyse Nætter, fulde
 Med en yndig Gjenfærdsvrimmel
 Ønsker jeg en ung Veninde:
 Ret en fuld Erindringshimmel.
 </body>
 </poem>
 
-
-<poem id="aarestrup1999032914">
+<poem id="aarestrup1999032914" variant="aarestrup2019013042">
 <head>
-   <title>Man har Sagn om Borgtapeter (II)</title>
-   <subtitle>Til Christian Petersen</subtitle>
+   <title>Man har Sagn om Borgtapeter</title>
+   <subtitle>
+       <line>II</line>
+       <line>Til Christian Petersen.</line>
+   </subtitle>
    <firstline>Man har Sagn om Borgtapeter</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="122-125"/>
 </head>
 <body>
-Man har Sagn om Borgtapeter,
+<num>I</num>Man har Sagn om Borgtapeter,
 Hundredaarige, paa hvilke
 De afblegede Figurer,
 Syete Sting i Sting af Silke,
 
-Faae et sælsomt Liv om Natten -
+<num>II</num>Faae et sælsomt Liv om Natten -
 Stige ned, og - som det gamle
 Herskab fordumstider - sig i
 Maanskinscabinettet samle.
 
-I de bløde Lænestole
+<num>III</num>I de bløde Lænestole
 Damerne, med Atlasslæbet,
 Blændende sig atter kaste -
 Munden smiler, rosenlæbet.
 
-Og en Riddersmand - om Dagen
+<num>IV</num>Og en Riddersmand - om Dagen
 Neppe kjendelig for Synet -
 Læner sig paa Stoleryggen,
 Stærk, sortskjæget, dunkelbrynet.
 
-Gjennem Buevinvet glimre
+<num>V</num>Gjennem Buevinvet glimre
 De forgjyldte Instrumenter -
 Hvide Skyggehænder jage
 Over støvede Tangenter.
 
-Klang fra de forsvundne Tider!
+<num>VI</num>Klang fra de forsvundne Tider!
 O vidunderligt at høre!
 Gammeldags Galanterier
 Hvidskes i et yndigt Øre.
 
-Næsten kunde man misunde
+<num>VII</num>Næsten kunde man misunde
 Dette Skyggeliv, hvis ikke -
 See! Hun blegner bag sin Vifte,
 Angst for Morgenrødens Blikke.
 
-Selv den tappre Ridder gyser,
+<num>VIII</num>Selv den tappre Ridder gyser,
 Smutter som den hele Vrimmel
 Ind i Muren, i Tapetet -
 Dagen seer kun Støv og Skimmel
 
 -----
 
-Saadan smutter bort fra Dagens
+<num>IX</num>Saadan smutter bort fra Dagens
 Færdsel ogsaa Sjælens Mærker,
 De forsvundne Sympathiers
 Efterladte Billedværker.
 
-Glemsel, som et Møl, den gnaver,
+<num>X</num>Glemsel, som et Møl, den gnaver,
 Tiden slukker deres Farve -
 Kun Erindringsnatten bringer
 Flygtigt liv i deres Larve.
 
-O, men skjønne, elskelige,
+<num>XI</num>O, men skjønne, elskelige,
 Spøgelserne kan fremtræde,
 Og i mangen Dæmringstime
 Lever op den gamle Glæde.
 
-Fra Tapetet stige Mindets
+<num>XII</num>Fra Tapetet stige Mindets
 Falmede Figurer, - lægge
 Sig paa den bekjendte Sopha
 Og gemytligt Benet strække.
 
-Fruen, men ætherisk Hvidhed,
+<num>XIII</num>Fruen, men ætherisk Hvidhed,
 Bringer Lampen. - Marianes
 Øine funkle med et Mørke,
 Hvori Sjælens Flammer anes.
 
-Talen sig gymnastisk øver,
+<num>XIV</num>Talen sig gymnastisk øver,
 Springer Buk, som fordums Dage -
 Ja, paa Bordet fyldes Glasset
 Og de gamle Retter smage.
 
-O, man gantes, gjør sig over
+<num>XV</num>O, man gantes, gjør sig over
 Spøgelser og Geister lystig -
 Selv ved Hanegalet rækker
 Man hinanden Haanden trøstig.
 
-Sukker sit: a rivederla!
+<num>XVI</num>Sukker sit: a rivederla!
 Og, som jeg i Aften, smutter
 I Tapetet - - kjære Christian,
 Ak, idet jeg Brevet slutter.
@@ -2736,68 +3026,69 @@ Ak, idet jeg Brevet slutter.
 
 <poem id="aarestrup2019013043" variant="aarestrup1999032915">
 <head>
-   <title>Man har Sagn om Borgtapeter (III)</title>
+   <title>Man har Sagn om Borgtapeter</title>
+   <subtitle>III</subtitle>
    <firstline>Man har Sagn om Borgtapeter</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="126-128"/>
 </head>
 <body>
-Man har Sagn om Borgtapeter,
+<num>I</num>Man har Sagn om Borgtapeter,
 Hundredaarige, paa hvilke
 De afblegede Figurer,
 Syete Sting i Sting af Silke,
 
-Faae et sælsomt Liv om Natten -
+<num>II</num>Faae et sælsomt Liv om Natten -
 Stige ned, og som i gamle
 Dage, sig i Cabinettet
 Hyggeligt i Maanskin samle.
 
-I de bløde Lænestole
+<num>III</num>I de bløde Lænestole
 Damerne, med Atlasslæbet,
 Blændende sig atter kaste -
 Munden smiler, rosenlæbet.
 
-Ridderne, som paa Tapetet
+<num>IV</num>Ridderne, som paa Tapetet
 Man om Dagen knapt kan mærke,
 Læne sig til Stoleryggen,
 Brune, skjægede og stærke.
 
-Støvede Tangenter trykkes -
+<num>V</num>Støvede Tangenter trykkes -
 Svundne Toner kan man høre -
 Gammeldags Galanterier
 Hvidskes i et yndigt Øre.
 
-Næsten kunde man misunde
+<num>VI</num>Næsten kunde man misunde
 Dette Skyggeliv, hvis ikke -
 See! Den Skjønne blegner bag sin
 Vifte, angst for Solens Blikke.
 
-Selv den tappre Ridder gyser,
+<num>VII</num>Selv den tappre Ridder gyser,
 Smutter som den hele Vrimmel
 Ind i Muren, i Tapetet -
 Dagen seer kun Støv og Skimmel. -
 
-Saadan gaaer det ogsaa Venskabs
+<num>VIII</num>Saadan gaaer det ogsaa Venskabs
 Stille Tegn og Billedværker,
 De forsvundne Symphatiers
 Efterladte Mindesmærker.
 
-Glemsel, som et Møl, dem gnaver,
+<num>IX</num>Glemsel, som et Møl, dem gnaver,
 Tiden slukker deres Farve -
 Kun Erindringsnatten bringer
 Flygtigt Liv i deres Larve.
 
-Og, som hist i Borgen, stige
+<num>X</num>Og, som hist i Borgen, stige
 Falmede Figurer, flade
 Tegninger, i Mindets Time,
 Ud fra disse hvide Blade -
 
-Færdes som i svundne Tider,
+<num>XI</num>Færdes som i svundne Tider,
 Sladdre sammen, gjør sig lystig -
 Selv ved Hanegalet rækker
 Man hinanden Haanden trøstig -
 
-Sukker sit: a rivederla!
+<num>XII</num>Sukker sit: a rivederla!
 Og, som jeg i Aften, smutter
 I Tapetet - ak, idet jeg
 Verset her paa Bladet slutter.
@@ -2805,76 +3096,79 @@ Verset her paa Bladet slutter.
 </poem>
 
 
-<poem id="aarestrup1999032916">
+<poem id="aarestrup1999032916" variant="aarestrup2019013043">
 <head>
-   <title>Man har Sagn om Borgtapeter (IV)</title>
-   <subtitle>Til Andreas Krogh.</subtitle>
+   <title>Man har Sagn om Borgtapeter</title>
+   <subtitle>
+       <line>IV</line>
+       <line>Til Andreas Krogh.</line>
+   </subtitle>
    <firstline>Man har Sagn om Borgtapeter</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="129-131"/>
 </head>
 <body>
-Man har Sagn om Borgtapeter,
+<num>I</num>Man har Sagn om Borgtapeter,
 Hundredaarige, paa hvilke
 De afblegede Figurer,
 Syete Sting i Sting af Silke,
 
-Faae et sælsomt Liv om Natten -
+<num>II</num>Faae et sælsomt Liv om Natten -
 Stige ned og som i gamle
 Dage sig i Cabinettet
 Hyggeligt og muntert samle.
 
-I de bløde Lænestole
+<num>III</num>I de bløde Lænestole
 Damerne, med Atlasslæbet,
 Blændende sig atter kaste -
 Munden smiler rosenlæbet.
 
-Ridderne som man om Dagen
+<num>IV</num>Ridderne som man om Dagen
 Paa Tapetet knapt kan mærke,
 Læne sig til Stoleryggen,
 Brune skjægede og stærke.
 
-Støvede Tangenter trykkes -
+<num>V</num>Støvede Tangenter trykkes -
 O vidunderligt at høre!
 Gammeldags Galanterier
 Hvidskes i et yndigt Øre -
 
-Næsten kunde man misunde
+<num>VI</num>Næsten kunde man misunde
 Dette Skyggeliv, hvis ikke -
 See! bag Viften blegner Damen,
 Angst for Morgenrødens Blikke.
 
-Selv den tappre Ridder gyser,
+<num>VII</num>Selv den tappre Ridder gyser,
 Smutter, som den hele Vrimmel
 Ind i Muren, i Tapetet -
 Dagen seer kun Støv og Skimmel. -
 
-Saadan gaaer det ogsaa Sjælenss
+<num>VIII</num>Saadan gaaer det ogsaa Sjælenss
 Underfulde Billedværker,
 De forsvundne Symphatiers
 Efterladte Mindesmærker.
 
-Glemsel som et Møl dem gnaver,
+<num>IX</num>Glemsel som et Møl dem gnaver,
 Tiden slukker deres Farve -
 Kun Erindringsnatten bringer
 Flygtigt Liv i deres Larve.
 
-Og, som fra Tapetet, stige
+<num>X</num>Og, som fra Tapetet, stige
 Falmede Figurer, - lægge
 Sig paa den bekjendte Sopha
 Og gemytligt Benet strækket.
 
-Blade i den gamle Bøger
+<num>XI</num>Blade i den gamle Bøger
 Stoppe sig den gamle Pibe;
 Ja, de trofastgamle Hænder
 Hjerteligt hinanden gribe.
 
-O, man gantes, gjør sig over
+<num>XII</num>O, man gantes, gjør sig over
 Spøgelser og Geister lystig -
 Selv ved Hanegalet favner
 Vennen Vennens Skygge trøstig,
 
-Sukker sit: a rivederla!
+<num>XIII</num>Sukker sit: a rivederla!
 Og, som jeg i Aften, smutter
 I Tapetet - Ak, idet jeg
 Kjære Krogh; Epistlen slutter.
@@ -2885,7 +3179,7 @@ Kjære Krogh; Epistlen slutter.
 <head>
    <title>Du var henrivende paa Børneballet</title>
    <firstline>Du var henrivende paa Børneballet</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="132"/>
 </head>
 <body>
@@ -2916,7 +3210,7 @@ Hvordan Du kan fortumle og fortrylle.
 <head>
    <title>Epilog</title>
    <firstline>Tillad - jeg har endnu et Ord</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="133-134"/>
 </head>
 <body>
@@ -2974,13 +3268,178 @@ Den Skaansomhed, som gav mig Mod!
 </body>
 </poem>
 
+<poem id="aarestrup2019021074">
+<head>
+    <title>O min Ven, min Ven Don Carlo</title>
+    <firstline>O min Ven, min Ven Don Carlo</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <dates>
+        <written>1852-09-24</written>
+    </dates>
+    <source pages="135-140"/>
+</head>
+<body>
+<nonum><right>Odense den 24de Sept. 1852.</right></nonum>
 
-<!-- TODO: O min Ven, min Ven Don Carlo, pp. 135-140 -->
+<num>I</num>O min Ven, min Ven Don Carlo,
+Min Veninde, Donna Thora,
+Hvor bevæget, hvor beruset
+Foer jeg bort i Røgcoupeen -
+
+<num>II</num>Bort fra Eders varme Haandtryk,
+Bort fra Eders skjønne Latter -
+Ved min Høire sad en Tydsker,
+Ved min Venstre sad en Jøde!
+
+<num>III</num>Hvor bevæget, hvor beruset -
+Døende Zigarren brændte,
+Tydskeren med Hovdet nikked,
+Jøden gabede i Søvne.
+
+<num>IV</num>Hvor bevæget, hvor beruset!
+Af Dit Venskab, Carl, bevæget,
+Af det tro, det tyveaarige!
+Og af Thoras Kys beruset,
+
+<num>V</num>Af det tre die - Jord og Himmel!
+Trende Kvs i tvende Somre!
+Det maa gjøre en Omvæltning
+I mit Levnets stille Omløb;
+
+<num>VI</num>En klimatisk stærk Forandring!
+Tre kjedsommelige, mørke
+Vintre ere idetmindste
+Som tre Efteraar forsvundne.
+
+<num>VII</num>Hvor bevæget, hvor beruset!
+Kulingen fra Nord paa Beltet,
+Med en næsten Storm, jog ikke
+Blodet bort af mine Kinder.
+
+<num>VIII</num>Selv i Læ af Hjemmets Mure,
+I de aabne, kjære Arme,
+Var endnu den sagte Skjælven,
+Afskedsrusen, i mit Hjerte.
+
+<num>IX</num>O Don Carlo, Donna Thora!
+Selv i disse Liniers Mathed
+Er et Udtryk af min Afsked,
+Et Godnat, Farvel saalænge! -
+
+<num>X</num>Men jeg vil forandre Tonen
+Til en fyrig Morgenhilsen,
+Et Velmødt! et Takforsidst! for
+Velkomst- og for Afskedskysset!
+
+<num>XI</num>Endnu strømmer Morgenluften,
+Varmet af Septembersolen,
+Under flagrende Markiser
+Ind paa Eders Blomsterborde -
+
+<num>XII</num>Kjære Carl, min Ven Don Carlo,
+Min Veninde, Donna Thora,
+Og om ei i støvet Frakke,
+Med de lange Reiselokker -
+
+<num>XIII</num>Som en Aand, til disse Stave
+Paa Papiret bunden, lister
+Eders gamle Ven og Digter
+Sig til Jer en Søndagmorgen.
+
+<num>XIV</num>Tag, som altid, vel imod ham!
+Klap hans Haandskrift! stryg de Krøller,
+Han poetisk slog med Pennen,
+Ud til en naturlig Hilsen!
+
+<num>XV</num>Fuld af Munterhed og Glæde!
+Fuld af dristig Spøg! - Hvor gjerne
+Var jeg ikke, heel og holden,
+Rund og rynket, selv tilstede!
+
+<num>XVI</num>Gynged mig i Gyngestolen,
+Brød en Stump af Vienerbrødet,
+Slurkede af Kaffeslurken,
+Snaksom med en Snakkesalig!
+
+<num>XVII</num>Men som Geist, en saakaldt Aand, er
+Jeg tilstede kun disværre!
+Kan ei slurke Kaffeslurken,
+Kan ei bryde Vienerbrødet -
+
+<num>XVIII</num>Men, til Lykke, snakke kan jeg.
+Snakkesalig og fortrolig
+Med en snaksom Ven og Frue,
+Snakke til den sidste Strophe!
+
+<num>XIX</num>Donna Thoras brune Lokker
+Sig bevæge - Med Lorgnetten
+Søger hun et muligt Gjenfærd,
+Et compakt Phantom, en Masse -
+
+<num>XX</num>Allenfals mig selv i Døren -
+Men det er nu eengang mere
+Lette Vare, kun Papir med
+Poesiens fine Krumspring -
+
+<num>XXI</num>Selv jeg sidder i det gode,
+Gamle Odense, omtaarnet
+Af mit Bibliotheks og Læge-
+Konstens Snurrepiberier -
+
+<num>XXII</num>Sidder ved et nedbrændt, dunkelt
+Lys, i Lænestolen, i en
+Blommet Slaabrok, hoster af og
+Til, og har en himmelsk Snue.
+
+<num>XXIII</num>Men paa Vesterbro, en svag For-
+Dybning i to deilige O-
+Valer, og et Glimt af Perle-
+Glands i Roserne af Peithos -
+
+<num>XXIV</num>Kort, paa Dansk, et Smiil paa Thoras
+Mesterlige Ansigt siger snart, at
+Brevet, uledsaget af per-
+Sonlig Plumphed, er velkomment.
+
+<num>XXV</num>Nu, saa lad da disse Linier
+Trykke Eder til mit Hjerte,
+Begge, baade Mand og Kone,
+Alle, baade Børn og Gamle!
+
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+- - - - - - - - - - 
+
+<num>XXVI</num>Ak! - paa dette korte Gjensyn
+Af en lille Deel af mig - thi
+Kroppen er hos mig den største
+Og den vigtigste tillige -
+
+<num>XVII</num>Følger atter Afskedssukket -
+Mit Farvel - Farvel, Don Carlo!
+Donna Thora, ak, addio! -
+Glem mig ei! Felicità!
+<nonum><right>E Aarestrup</right></nonum>
+
+---
+
+<num>XXVIII</num>Digtervennen, Don Vernaccio,
+Og hans Frue, Donna Giulia,
+Bring Dem begge Tak og Hilsen,
+Tak for sidst og Tak for Meget!
+
+<num>XXIX</num>Ogsaa Damerne, de tvende
+Sortomflorte Marguerither -
+Virkelige, ægte Perler -
+Meld Dem min Salutaziòne!
+</body>
+</poem>
 
 <prose id="aarestrup1999032910">
 <head>
    <title>Min elskte Viv</title>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="141"/>
 </head>
 <body>
@@ -2995,7 +3454,7 @@ Hilsen til Alle! især til Emilie!
 <head>
    <title>I Sydens Dal den hvide Fos sig styrter</title>
    <firstline>I Sydens Dal den hvide Fos sig styrter</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="142-143"/>
 </head>
 <body>
@@ -3039,12 +3498,12 @@ Som huldt I mindes Furresøens Kyst.
    <notes>
       <note>Melodi som i Bellmanns <xref poem="bellman2001061367"/>.</note>
    </notes>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <keywords>lejlighedsdigtning</keywords>
    <source pages="143-144"/>
 </head>
 <body>
-Hvad er Kjærligheds Vaar,
+<num>I</num>Hvad er Kjærligheds Vaar,
 Som saa hurtig forgaaer,
 Vel andet end en blændende Drøm?
 End en Dag i April,
@@ -3058,7 +3517,7 @@ Men da Drømmen forsvandt
 Siig os, hvad vi fandt?
 Knap Mindet - ikke sandt?
 
-Nei, nu er Du for slem;
+<num>II</num>Nei, nu er Du for slem;
 Sagtens gives der dem,
 For hvilke Elskovs Sol ei oprandt;
 Som ei saae nogen Frugt,
@@ -3072,7 +3531,7 @@ Dens Erindring er Lyst,
 Og i Alles Bryst
 Udbreder den sin Trøst.
 
-Dog en Dag som i Dag
+<num>III</num>Dog en Dag som i Dag
 Taler Kjærligheds Sag,
 O Held os, med den stærkeste Røst;
 Denne Fest for en Vaar,
@@ -3086,7 +3545,7 @@ Ingen Vinge faldt af;
 Man ei Baand ham gav,
 Men Huset holdt han af.
 
-Derfor Slægtning og Ven
+<num>IV</num>Derfor Slægtning og Ven
 Derfor Datter og Søn,
 En Skaal for Brudeparret, de to,
 Der i femogtyve Aar,
@@ -3117,22 +3576,22 @@ Bland Roserne med Guld!
    <source pages="145"/>
 </head>
 <body>
-EWALD.
+<nonum><center><small>EWALD.</small></center></nonum>
 Paa Sengen skrev du det, med Taarer tunge,
 Men Poesien greb dit Digt, og sagde:
 Det er det bedste af den danske Tunge.
 
-OEHLENSCHLÄGER.
+<nonum><center><small>OEHLENSCHLÄGER.</small></center></nonum>
 Fra den Tid Skjalde sang til Slagets Torden,
 Blev intet Drapa reist om Heltemodet
 Meer gjenlydvækkende end dit i Norden.
 
-BAGGESEN.
+<nonum><center><small>BAGGESEN.</small></center></nonum>
 Du lyrisk smidige! du giftig stærke
 Du Rimets musikalske Klapperslange,
 Hvem skulde ei din Trylleskjønhed mærke?
 
-GRUNDTVIG.
+<nonum><center><small>GRUNDTVIG.</small></center></nonum>
 Jeg kan ei skjære Runerne saa hvasse,
 At de paa dig, som du det vel fortjener,
 Og paa din store Bautasteen kan passe.
@@ -3248,10 +3707,80 @@ En ubegrændset Lyst.
 </body>
 </poem>
 
-<!-- TODO: Meget Lolland mig gav, den frugtbare Ø, da jeg som Fremmed, pp. 150-151 -->
-<!-- TODO: Fik Kong Midas for sin Smag, p. 152 -->
-<!-- TODO: De første Skarer er forsvundne, p. 153 -->
+<poem id="aarestrup2019021086">
+<head>
+    <title>Meget Lolland mig gav, den frugtbare Ø, da jeg som Fremmed</title>
+    <firstline>Meget Lolland mig gav, den frugtbare Ø, da jeg som Fremmed</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="150-151"/>
+</head>
+<body>
+Meget Lolland mig gav, den frugtbare Ø, da jeg som Fremmed,
+Ung, med min 19aars Viv kom til dens blomstrende Strand:
+Hyggeligt Hjem, Venner, og hvad mit Hjerte forlangte,
+Sundhed, Børn, Brød - Alt i et rundeligt Maal.
+Ogsaa et velanseet Navn, Indvaanernes Huldskab, en Lykke
+Stigende Aar for Aar, tør jeg vel rose mig af.
+Nysteds deilige Strandbred - aldrig jeg glemmer din Hyttes
+Gjæstfri Røg og det Blik smilende gav mig din Bugt
+Aalholm din ældgamle Borg, med de vældige Mure, med Taarnets
+Fiirkant, og med din Parks slyngende Roser, hvis Skjød
+Aandede Duft fra Jordens fjerneste Strøg, i hvis Skygge
+Nattergalene slog, ak, og hvor Musen jeg fandt.
+Ingen Plet dog var mig saa mild, indbydende, kjærlig,
+Frugtbar paa Held og saa fri for Sorg og Bekymring,
+Ingen, som Guldborglands skovomkrandsede Mark
+Ingen for mig og Mine saaledes fyldig paa Goder,
+Et Overflødighedshorn var mig det straalende Slot -
+Straalende, siger jeg - ja thi det straalte af Adel og Rigdom -
+Adel af ædleste Slags, Rigdom af skjønneste Art,
+Midt i sin landlige Ro en sand Høiskole for Dyder,
+Skjønhedens, Konstens Asyl - nei deres Fæstning og Borg.
+</body>
+</poem>
 
+<poem id="aarestrup2019021087">
+<head>
+    <title>Fik Kong Midas for sin Smag</title>
+    <subtitle>Mel: Vil du være stærk og fri</subtitle>
+    <firstline>Fik Kong Midas for sin Smag</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="152"/>
+</head>
+<body>
+Fik Kong Midas for sin Smag
+Æslets loddne Øre,
+Hvad Forvandling kan i Dag
+Vi da faae at høre?
+O Apoll! for Ret lad gaae
+Naade her i Hallen;
+Lad en Flok af Æsler faae
+Kløgt i Pandeskalden!
+<nonum><center><small>(forfra)</small></center></nonum>
+</body>
+</poem>
+
+<poem id="aarestrup2019021088">
+<head>
+    <title>De første Skarer er forsvundne</title>
+    <firstline>De første Skarer er forsvundne</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="153"/>
+</head>
+<body>
+De første Skarer er forsvundne
+Hertugen, mærker jeg, er nær
+Fanerne, fra Fjenden vundne
+Bagefter kommer, sammenbundne
+See Søstre, Paukerne, see der.
+
+Til disse Ord et Blik med Himlen
+Og Haabets søde Drømme i
+Hvor Øiet fløi, og sank i Stimlen -
+Ha - livløs faldt hun om i Vrimlen. -
+- Det hele Krigstog drog forbi.
+</body>
+</poem>
 
 <poem id="aarestrup2001082501">
 <head>
@@ -3383,9 +3912,160 @@ Er min Rosauras Attributer
 </body>
 </poem>
 
-<!-- TODO: Christiansholm med Borg og Skove, pp. 158-159 -->
-<!-- TODO: Vi har ført op et lille Skuespil, pp. 160-161 -->
-<!-- TODO: Munter og tidlig til Krigens Skare, pp. 162 -->
+<poem id="aarestrup2019021098">
+<head>
+    <title>Christiansholm med Borg og Skove</title>
+    <firstline>Christiansholm med Borg og Skove</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="158-159"/>
+</head>
+<body>
+<num>I</num>Christiansholm med Borg og Skove
+Ved den blanke Sø,
+Dig maa Vandringsmanden love,
+Reed han under Ø -
+Kornet bølger paa din Banke,
+Fugle i din Sø sig sanke
+Og din Hauges bløde Bugter
+Krandse Blomst og Frugter.
+
+<num>II</num>Mure fik dit Slot og Volde,
+Som stred mangen Dyst,
+Som kan Stormens Tørning holde
+Uden Bræk og Brøst;
+Men ei meer til Krig og Feide
+Kun for Stjerners Gang at speide,
+Hvor den stille Sølvsky svæver,
+Taarnet nu sig hæver.
+
+<num>III</num>Og hvor fordum Vikingskaren
+Gjemte Pul og Spyd,
+Tømte Hornet efter Faren
+Sang til Skjoldelyd -
+Sidder Tænkeren i Salen
+Fryder sig ved Oldtidstalen,
+Og med vittig Kløgt betragter
+Livets mange Fagter
+
+<num>IV</num>Borgens Roes i gamle Dage
+Skal ei plat forgaae,
+Den var Tilhold for de Svage,
+Den er endnu saa.
+Gavmildhedens skjønne Glæder
+I de danske Herresæder
+Kan ei glemmes, naar en Kvinde
+Hersker blidt derinde.
+
+<num>V</num>Held dig Borg ved Lollands Skove
+Ved den blanke Sø
+Vandringsmanden maa dig love,
+Reed han under Ø. -
+Gjæstmildt i den høie Stue
+Sysler Grevens ædle Frue,
+Fattigmand, som kom med Klage,
+Hjulpen gik tilbage.
+
+<num>VI</num>Derfor lad nu Toner klinge
+Høit i Slottets Sal,
+Hende vi vor Jubel bringe
+Ved en fyldt Pokal.
+Grevens Frue leve længe,
+Vennehuld mod dem, som trænge,
+Borgens Perle, Egnens Smykke
+Og sin Christians Lykke.
+</body>
+</poem>
+
+<poem id="aarestrup2019021099">
+<head>
+    <title>Vi har ført op et lille Skuespil</title>
+    <firstline>Vi har ført op et lille Skuespil</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="160-161"/>
+</head>
+<body>
+Vi har ført op et lille Skuespil,
+Og I har overbærende seet til.
+Høistærede, I vil da ei fortryde
+Jeg et par Ord end ovenpaa tør byde.
+Langtfra, at jeg vil prøve paa at sige
+Til Eder dette Spils Betydning og deslige
+Hvorfor, med hvilke Hensyn, til hvad Ende
+Vi næsten hele Stuen endevende
+Og gjøre vore smaa og lystige Personer
+Om til Madammer, Lærere, Baroner
+Det vil, langt klogere, I selv erkjende
+Et Par Undskyldninger kun Politiken
+Befaler os at stille mod Kritiken
+Vi spilte fransk! - Hvorfor just lege fremmed
+Og tale udenlandsk her midt i Hjemmet?
+Tilgiv, vi ventede ved denne Maske
+Paa ingen Maade jer at overraske,
+Men mangen Bommert, mangt et lille Hak,
+Uskyldig, let Feiltagelse, som - ak
+Os vilde have voldet megen Skam i Dansken
+Det bæres over med, vi veed, i Fransken
+At vi, skjøndt Børn, ei Børn har forestillet
+Men derimod de Ældres høiærværdige Billed,
+Det var, o tro mig, ei af Indbildskhed,
+Men kan en gammel Fyr som Rosenkilde
+Med Kone og 6 Børn saa vidt jeg veed
+En Skolepog med Flagrekrave spille,
+Saa at vi flyde hen i Graad af Latter,
+Hvad stor Urimelighed er da i
+Om eengang Drengen tør agere Vatter?
+Undskyldningerne ere da forbi;
+Vi beilte ei til Muser og Parnasser,
+Vi svedte ikke for Theaterkasser,
+Men hvis vi vandt, I Kjære, Eders Gunst
+Forstod vi til Fuldkommenhed vor Kunst
+Og var der Følelse og barnligt Liv,
+Var der Begeistring i vor Tidsfordriv,
+Saa viid, det gjalt ei denne løse Leeg,
+Men, kjære Fader! ja, den gjalt kun Dig!
+Din Fødselsdag, hvad kan vi gjøre bedre,
+End ved uskyldig Børneleg at hædre
+Men Alvor svæver over Barnets Lyst
+Naar varm Taknemlighed er i dets Bryst
+See, Søstre, see! hans Navn, det brænder der
+Svagt Udtryk kun af Kjærligheden her.
+</body>
+</poem>
+
+
+<poem id="aarestrup20190210100">
+<head>
+    <title>Munter og tidlig til Krigens Skare</title>
+    <firstline>Munter og tidlig til Krigens Skare</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="162"/>
+</head>
+<body>
+<nonum><center>Chr.</center></nonum>
+Munter og tidlig til Krigernes Skare
+Førte han Sønnen ved faderlig Haand
+For at det Gode jeg tro skal bevare
+Planted han Æren mig dybt i min Aand.
+
+<nonum><center>Emilie</center></nonum>
+Bly er Violen, bedugget i Dalen,
+Lærken saa smuk ved sin jublende Røst,
+Villigt og venligt er Barnet i Salen,
+Saa gad jeg være, min Fader til Lyst -
+
+<nonum><center>[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</center></nonum>
+Skjøndt jeg er lille, jeg bruger Forstanden
+Og jeg vil synge saa godt som jeg kan
+Fader han kysser saa tidt mig paa Panden,
+Derfor jeg kysser igjen paa hans Hand.
+
+<nonum><center>Alle</center></nonum>
+Elskede Fader! o hør paa vor Stemme!
+Kjærlighed lyder og Glæde i den!
+Moder og Du er vor Lykke herhjemme
+Gid vi maa gjøre jer Glæde igjen.
+</body>
+</poem>
 
 <poem id="aarestrupudata5">
 <head>
@@ -3417,7 +4097,69 @@ Dänen ein göttliches Heil, Deutschen ein wonniges Glück.
 </body>
 </poem>
 
-<!-- TODO: Kong Fredrik gav sit vise Bud, pp. 165-166 -->
+<poem id="aarestrup20190210102">
+<head>
+    <title>Kong Fredrik gav sit vise Bud</title>
+    <firstline>Kong Fredrik gav sit vise Bud</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="165-166"/>
+</head>
+<body>
+<num>I</num>Kong Fredrik gav sit vise Bud
+Om Borgerret og Ære;
+Han planted Friheds unge Skud,
+Som snart skal Frugter bære.
+Vi skulde ei med Trællesind
+See Dagen gaae og komme,
+Men træde selv i Raadet ind
+Og fælde sunde Domme.
+
+<num>II</num>Da tænkte vi: det gamle Huus,
+Som stod blandt os saalænge
+Og daglig synker meer i Gruus -
+Det kan til Bedring trænge.
+Det Vidne var til vort Forfald
+Saavelsom til sit eget -
+Ei meer det langsomt smuldre skal,
+Men reises, som saameget.
+
+<num>III</num>Dog Krykken ved det syge Knæ
+Er kun en daarlig Støtte,
+Og flikke paa det møre Træ,
+Er kun til liden Nytte;
+Vi førte derfor op fra Grund
+En Bygning heel og holden,
+Hvis Kjærne er saa frisk og sund
+Som Ret fra Hedenolden.
+
+<num>IV</num>Her læses Lovens Bogstav grant
+I disse lyse Sale
+Og Alt, hvad der er Godt og Sandt,
+Skal komme her paa Tale;
+Ja, selv hvor Brødens mørke Sti
+Til Fængslets Dyb sig sænker,
+Skal Luften strømme lys og fri
+Om skaanselfulde Lænker.
+
+<num>V</num>Velkommen være hver en Gjæst,
+Alt inden Nakskov Volde,
+Som kom, med os den muntre Fest
+Ved Nytaarstid at holde!
+Saa vist som Vaaren komme vil
+Og Sommerdagens Skygge,
+Saa sikkert stunder Tiden til
+For Danmarks faure Lykke.
+
+<num>VI</num>Fred være da med dette Tag,
+Hvor Lov og Ret har hjemme,
+Hvor, for og mod, i hver en Sag
+Skal høres Friheds Stemme!
+Og Glæden over fuldført Værk,
+Som vi idag udsjunge,
+Tidt lade her mod Loftet stærk
+Sit kjække Hurra runge!
+</body>
+</poem>
 
 <poem id="aarestrup2019013048" variant="aarestrup2018110311">
 <head>
@@ -3493,18 +4235,281 @@ Hvor finder jeg eder?
 </head>
 <content>
 
-<!-- TODO: Ud i den friske Luft! Ud i den frie Natur! pp. 171-172 -->
-<!-- TODO: Lærken hun sjunger og Klokken gaaer, pp. 173-174 -->
-<!-- TODO: Helvede, pp. 175-176 -->
-<!-- TODO: Afsides i en Dal, hvor sjælden Solen kommer, pp. 177-178 -->
-<!-- TODO: Bag Hyttens Ruder smaa, pp. 179-180 -->
-<!-- TODO: Den regndryppende Sandvei, p. 180 -->
+<poem id="aarestrup20190210105">
+<head>
+    <title>Ud i den friske Luft! Ud i den frie Natur!</title>
+    <firstline>Ud i den friske Luft! Ud i den frie Natur!</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="171-172"/>
+</head>
+<body>
+<nonum><center>Greven. <small>(kommer)</small></center></nonum>
+
+Ud i den friske Luft! Ud i den frie Natur!
+Lad staae i døsig Fred det fængselsmørke Buur!
+Den milde Søvn har bort sig fra mit Leie svunget,
+Og Drømmens Harpestreng, den gjøglende, er sprunget.
+O Elzinice, o, en giftig Orm har røvet
+Dit Blomster Sundheds-Sødmen, og min Sjæl bedrøvet!
+Hvad skal jeg paa den mørke, sorgindhylte Klode,
+Hvor mine Barndoms-Genier mit Bryst forlode?
+Hvor Tungsinds klamme Haand har lagt sig om mit Hjerte,
+Og Haabets visne Liig haansmiler til min Smerte?
+Lad Lykkelige kun sig Glædens Guldax binde,
+Den hele store Skat vil dog tilsidst forsvinde.
+
+
+<nonum><center>Jægeren. <small>(afsides)</small></center></nonum>
+
+Ei, see Hr. Greven! Naa hvad skriver man
+Idag? At Fugl og Fisk og Morgensolen
+Gi'er Greven Audiens og han ei dem,
+Det tegnes bør med Rødt i Almanakken.
+<nonum><center><small>(blæser paa Hornet.)</small></center></nonum>
+
+
+<nonum><center>Skovklang.</center></nonum>
+
+Fru Ecko sidder i Kløft, i Fjeld,
+Der drikker hun af det kolde Væld;
+            Narcissus er død,
+                Er død!
+Fru Ecko, her kommer en ung Cumpan,
+En Bjergets Søn er ogsaa han;
+            Det gamle Metal
+Har født ham til Verden i Klippehal;
+Han farer i Dyb, han farer i Top,
+Med gyldent Harnisk omkring sin Krop,
+Hvor Skoven er grøn og Himlen er hvalt,
+                Overalt.
+Fru Ecko, suk, suk, suk ei meer,
+De muntre Fugle i Skoven leer,
+                Hihihi!
+Og Bjørnen til sine Labber seer,
+            Brummerum!
+Hør Klangen banker alt paa din Dør:
+                Luk op!
+En Beiler, en Beiler! Fru Ecko, hør!
+Suk ei meer! Suk ei meer!
+. . . . . . .
+</body>
+</poem>
+
+<poem id="aarestrup20190210106">
+<head>
+    <title>Lærken hun sjunger og Klokken gaaer</title>
+    <firstline>Lærken hun sjunger og Klokken gaaer</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="173-174"/>
+</head>
+<body>
+<nonum><small><center><b>1ste Act.</b></center></small></nonum>
+<nonum><small><center>Grøn Strandbred, hvorved en Snekke sees, i Baggrunden en Øe. - Det ringer fra Kirke -</center></small></nonum>
+
+<nonum><center><sc>Hyrdedreng.</sc></center></nonum>
+
+Lærken hun sjunger og Klokken gaaer,
+Alt saa tripper mine hvide Faar.
+Folket foer til Kirke imag,
+Saasnart det monne lakke ad Dag,
+Bondens Hustru i Vadmel og Liin,
+Adelig Frue i Hermelin,
+Unge Karle og Piger smaa,
+Lystig var det at skue paa.
+Som en Neglike broget og kruus
+Myldret Veien til det Kirkehuus,
+Men ingen skinned paa grønnen Land
+Som Frøken <sc>Ebba</sc>, den Lilievand.
+I Fløiel og Skarlagen var hun klædt,
+Selv var hun en Rose i Midten stædt
+En Blomst hun havde i hver en Haand
+Og Sløifer om Livet af Gyldenbaand.
+Hun kom herned fra sit høie Slot
+Mens Taagen stod paa og Græsset var vaadt,
+Men aldrig saasnart hun paa Veien var,
+Før Luften saae ud som en Lilie klar,
+Og i Skoven nikkede Løv og Rus
+Den ædelig Frøken saameget til Priis.
+Men hvad ligger vel for Snekke der,
+Og hure kommer til Lands den her?
+Vel maa jeg kjende den gyldne Raa,
+Jo mere jeg nu skuer derpaa,
+Det er Hr <sc>Grimolfs</sc> vilde Gam,
+Saalidet sig skjuler dens svarte Ham.
+Selv er han en Fugl baade leed og ram.
+Saa mangengang han reed under Øe
+At beile til <sc>Ebba</sc>, den statelig Møe,
+Men hende han var for beedsk en Blomme
+Ret aldrig vilde hans Beilen fromme,
+Og kommer han med sine Svende nu,
+Hjelp, St Birgitt! han har ondt i Hu.
+. . . . . . .
+</body>
+</poem>
+
+<poem id="aarestrup20190210107">
+<head>
+    <title>Helvede</title>
+    <subtitle>(Forsøg til et beskrivende Digt)</subtitle>
+    <firstline>Beskrive Steder, Egne, Lande, man besøgte</firstline>
+    <notes>
+        <note>Se også <xref poem="aarestrup20190210108"/>.</note>
+    </notes>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="175-176"/>
+</head>
+<body>
+Beskrive Steder, Egne, Lande, man besøgte,
+Og denne Dont saa mesterligen røgte,
+At selv en streng Kritik man ei behøver frygte,
+Det kræver visselig, Behændighed,
+Der veed at nytte rigtig Pennens Spændighed
+Stoffets Ubændighed,
+Anbringe passende sin Kløgts Elendighed
+Og, frem for alt, Kjedsomligheds Nødvendighed
+Men derimod beskrive Noget,
+Som man i Grunden aldrig saae,
+Som mange ingen Vægt meer ligger paa,
+De fleste forbigaae
+Og som ærværdigt Meubel lader staae,
+En Ting, hvis hele Tilvær sættes,
+Som noget, hvorom trættes;
+Beskrive dette, falder noget broget.
+Men vil man vinde, maa man vove noget,
+Og, for at komme ud med Sproget,
+Ved disse Vers forstaaer jeg en Indledning,
+Langt fjernet fra Forfængligheds Tilbedning -
+En Christen er jeg, ingen Hedning -
+Hvormed jeg vil begynde Haabets Fedning,
+At man betragter mit Forsøg, som noget,
+Hvis Hensigt er at zire Sproget.
+Afsides paa et Fjeld, hvor ingen courbetterer
+Fordi at man paa Æsler sig generer,
+Og endnu mere paa Blankskinnebeen,
+Hvor Granen strækker mørk sin stive Green
+Og ingen Lygte den illuminerer
+Der ligger Helvede, en Hovedstad,
+Men vee! fra andre skiller den sig meget ad.
+Klimatet der er raat; et evigt Jask
+Gjør blanke Støvler der til en Umulighed
+Jordbundens Smask gjør Engletrin til Trask,
+Paadigter Dandsemestere Udulighed
+Berøver Damerne
+Den svævende Jomfrulighed.
+. . . . . . .
+</body>
+</poem>
+
+<poem id="aarestrup20190210108">
+<head>
+    <title>Afsides i en Dal, hvor sjælden Solen kommer</title>
+    <firstline>Afsides i en Dal, hvor sjælden Solen kommer</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="177-178"/>
+</head>
+<body>
+Afsides i en Dal, hvor sjælden Solen kommer,
+Hvor Vinteren er lang og kort den lyse Sommer
+Der ligger Helvede, en Hovedstad;
+Men vee! fra andre skiller den sig meget ad.
+Med mørke Huse, daarligtakte Skure,
+Omgivet trindt af gamle, halvforfaldne Mure,
+Ved første Syn - æsthetisk upaaklagelig -
+Den falder mere skummel end behagelig.
+Klimatet der, er raat; et evigt Jask
+Gjør blanke Støvler der til en Umulighed;
+Jordbundens Smadsk gjør Engletrin til Trask,
+Paadigter Dandsemestere Udulighed,
+Berøver Damerne - i Flugten,
+Den svævende Jomfrulighed.
+Om Vinteren, naar Iis bedækker Bugten,
+Naar Østenvinden blæser,
+Da høster man en Mængde røde Næser,
+Der kunne gjemmes Somren over.
+Om Natten ikke sødelig man sover,
+De smaa Insecter, man har kaldet Lopper,
+Med sjælden Fjærkraft hopper,
+Forfusker Søvnens milde Qvægelse
+Og volder idelig Bevægelse,
+Hvorved man søger disse Dyr forjage
+Hvad nytter det, at Tanker, hele Oder 
+Drage
+Ved Nat igjennem de opvakte Hoeder?
+Poetisk Flor man rimelig formoder!
+Men tænk, nu vaagner og Samvittigheden,
+Den stikker Næsen derimell'm!
+Marsch! maae den arme Skjelm
+Bort fra sit drømte Eden.
+. . . . . . .
+</body>
+</poem>
+
+
+<poem id="aarestrup20190210109">
+<head>
+    <title>Bag Hyttens Ruder smaa</title>
+    <firstline>Bag Hyttens Ruder smaa</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="179-180"/>
+</head>
+<body>
+<num>I</num>Bag Hyttens Ruder smaa
+Seer jeg Maanen langsomt gaa
+Halvt fordulgt og halvt tilsyne
+Mellem Humleranker, dugget Løv,
+Straalen spiller paa min Dyne
+Og paa Gulvets Støv
+Ingen Lyd! kun Sengen knager,
+Naar det varme Sted jeg vrager
+Eller kløer, hvor Loppen plager.
+Kobberpanden
+Glassene med Guld om Randen
+Hvor ærværdigt
+Dog til Gammen fix og færdigt
+
+<num>II</num>Bag Døren i en Vraa
+Uden Laas og uden Slaa
+Ligger Tøsen, træt af Valtsen
+Træt af Bryllupstadsen Støi og Qualm
+Udstrakt Armen, blottet Halsen
+Paa den blanke Halm.
+Men i Stuen øverst oppe,
+Ha jeg kan ei Tanken stoppe -
+Der er Elskovssolen oppe
+Amor møder
+Der sin Broder; undres, støder
+Paa sin Nabo,
+Klapper, raaber høit da Capo!
+
+<num>III</num>Sukket skiller
+Lokken som paa Panden triller
+. . . . . . .
+</body>
+</poem>
+
+
+<poem id="aarestrup20190209110">
+<head>
+    <title>Den regndryppende Sandvei</title>
+    <firstline>Kattehale og Ranunkler</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="180"/>
+</head>
+<body>
+Kattehale og Ranunkler
+Græs i Morgenregnen funkler
+Blomster røde blaa
+Mellem høie Rugax staae
+. . . . . . .
+</body>
+</poem>
+
 
 <poem id="aarestrup2001072301">
 <head>
    <title>Ei de snoe sig om det Stive</title>
    <firstline>Ei de snoe sig om det Stive</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="181"/>
 </head>
 <body>
@@ -3526,7 +4531,7 @@ Gud har dannet, egenhændigt.
 <head>
    <title>Saae jeg ikke Dine spredes</title>
    <firstline>Saae jeg ikke Dine spredes</firstline>
-   <quality>korrektur1,kilde</quality>
+   <quality>korrektur1,kilde,side</quality>
    <source pages="181"/>
 </head>
 <body>
@@ -3540,7 +4545,38 @@ I min Sjæl
 </body>
 </poem>
 
-<!-- TODO: Fiskeren, p. 182- -->
+<poem id="aarestrup20190209113">
+<head>
+    <title>Fiskeren</title>
+    <firstline>Malerie - flyvende Skum -</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="182"/>
+</head>
+<body>
+  Malerie - flyvende Skum -
+  Alting har Staten tilegnet sig, Jorden, Luften
+  med hvad der groer og lever i den,
+Jorden med sit Leer og Gruus
+Mark og Eng med Korn og Straa
+Skov og Busk med Dyr og Hare
+Luften selv med Lærken i
+Selv den lille Ferskvandssø
+Med Karudsen ...
+  Kun paa snevre Landeveie, kan man
+  færdes frit, og paa knebne Gader.
+Kun paa Havet er man fri
+Kun paa Havet
+Fik Naturen Raaderum
+Kun i Bølgens Rige
+Kan Naturen sige
+Til den Flok, som lider Nød:
+Kom! her er mit Moderskjød
+Kom! her kan I finde Brød!
+
+<nonum><i>Bagsiden:</i></nonum>
+Blæsten kaster Skum paa Landet
+</body>
+</poem>
 
 </content>
 </section>
