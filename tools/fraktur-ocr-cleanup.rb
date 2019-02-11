@@ -349,6 +349,7 @@
 'Osten/Østen',
 'Øft/Øst',
 'Kjon/Kjøn',
+'Ungling/Yngling',
 'voev/væv',
 'nc/ne',
 'gcn/gen',

@@ -3816,7 +3816,6 @@ Naar den vil Kiærligheden saare.
 </body>
 </poem>
 
-<!-- === -->
 <poem id="oehlenschlaeger2019020652">
 <head>
     <title><num>3.</num>Jesus, Johannes og Maria</title>
@@ -3824,23 +3823,27 @@ Naar den vil Kiærligheden saare.
     <indextitle>Jesus, Johannes og Maria</indextitle>
     <linktitle>Jesus, Johannes og Maria</linktitle>
     <firstline>O, Jesu! hvad er jeg mod dig?</firstline>
+    <pictures>
+        <picture ref="thorvaldsen/1806-maria-jesus-johannes"/>
+    </pictures>
     <source pages="110-111"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-J o h annes.
+<nonum><center><w>Johannes.</w></center></nonum>
 O, Jesu! hvad er jeg mod dig?
 Dit hulde Aasyn fryder mig.
-Tak, for du mig foragter c i!
+Tak, for du mig foragter ei!
 Jeg tilbereder dig din Vei.
-Med Vand jeg dober af min Haand;
-Du dobe skal med I l d og Aand.
+Med Vand jeg døber af min Haand;
+Du døbe skal med Ild og Aand.
 Og naar m it Liv er her forbi,
-Saa svccver jeg saa glad og fr i
+Saa svæver jeg saa glad og fri
 Til dig i Salighedens Glands,
-Og lonnes med din Liliekrands.
-J e s u s .
-Johannes! ei saa ydmyg veer,
+Og lønnes med din Liliekrands.
+
+<nonum><center><w>Jesus.</w></center></nonum>
+Johannes! ei saa ydmyg vær,
 Mit Hierte har dig evig kiær.
 Du rydder ud den golde Torn,
 At jeg kan saae mit Sædekorn.
@@ -3848,15 +3851,17 @@ Du stemmer Harpen i den Skov,
 Hvor jeg skal siunge Himlens Lov.
 Johannes! o, du er for mig,
 Hvad Jesus er igien for dig.
-Ma r ia .
+
+<nonum><center><w>Maria.</w></center></nonum>
 Jeg ingen større Glæde veed.
 O, himmelske Beskedenhed!
-O, hulde Broderkianlighed!
+O, hulde Broderkiærlighed!
 Den fromme Jesus er den Største,
 Men hans Johannes er den Første.
-Lær, Ungling! af din Frelsers Iløst,
+Lær, Yngling! af din Frelsers Røst,
 Naar Æren svulmer i dit Bryst,
 Og undrende dig Verden hylder —
+
 Hvad du din store Formand skylder.
 </body>
 </poem>
@@ -3868,6 +3873,9 @@ Hvad du din store Formand skylder.
     <indextitle>Hercules og Hebe</indextitle>
     <linktitle>Hercules og Hebe</linktitle>
     <firstline>At kryste Druens Blod i Struben</firstline>
+    <pictures>
+        <picture ref="thorvaldsen/1808-herkules-og-hebe"/>
+    </pictures>
     <source pages="111-112"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3875,32 +3883,34 @@ Hvad du din store Formand skylder.
 At kryste Druens Blod i Struben,
 I Vellysts Favn, i Epheugruben.
 Af Ladhed fræk, i dunkle Skov —
-Det er kun vilde Sa ty rs Lov.
+Det er kun vilde Satyrs Lov.
 Med Dumheds Purpur paa hans Kinder,
 Han favner drukne Bacchantinder;
 Og Dyret ved sit Kildevand
-Beskummer ham med meer Forstand.
-Ei Bacchns i hans Selskab træder
-Med Phantasiens høie Glu d e r;
-Sile n kun fra sit Esel glær
-Med dosig Stirre n til hans Bord,
-Og Echo spotter huse Stemmer
-Af vanske D y r, som Skoven gicmmer.
-Men see den udle Helt, som her,
+Beskæmmer ham med meer Forstand.
+Ei Bacchus i hans Selskab træder
+Med Phantasiens høie Glæder;
+Silen kun fra sit Esel gloer
+Med døsig Stirren til hans Bord,
+Og Echo spotter hæse Stemmer
+Af værste Dyr, som Skoven giemmer.
+
+Men see den ædle Helt, som her,
 Ukiendt med Lysternes Begier
-I Hallen ved sin Kolle hviler,
+I Hallen ved sin Kølle hviler,
 Hvor Skiønhed ham i Møde smiler!
-Ei Lovens Glubskhed, Slangens Bugt,
+Ei Løvens Glubskhed, Slangens Bugt,
 Ei Hjortens Snarhed, Griskens Flugt,
 Ei Jettens Kraft, ei Helvedhunden
-Har, Hercules! din Styrke hunden.
+Har, Hercules! din Styrke bunden.
 Uhyrerne du overvandt,
-Og salig din Betonning fandt;
-Thi Sundhed skienker i d it Bæger,
-Im e n s Apol paa Harpen leger.
-O, da er Hvilen dobbelt sod,
-Naar Kiækhed spåender Sværd fra Bu tte!
-Valkyrien kun skienker Mio d
+Og salig din Belønning fandt;
+Thi Sundhed skienker i dit Bæger,
+Imens Apol paa Harpen leger.
+O, da er Hvilen dobbelt sød,
+Naar Kiækhed spænder Sværd fra Bælte!
+
+Valkyrien kun skienker Miød
 For Odins og for Balburs Helte.
 </body>
 </poem>
@@ -3912,57 +3922,61 @@ For Odins og for Balburs Helte.
     <indextitle>Venus med Æblet</indextitle>
     <linktitle>Venus med Æblet</linktitle>
     <firstline>Den kloge Pallas, høie Here</firstline>
+    <pictures>
+        <picture ref="thorvaldsen/1816-venus"/>
+    </pictures>
     <source pages="113-114"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den kloge Pallas, høie Here
-Med hulde Venus stredes om.
-Hvo blandt dem skisnnest skulde være,
-Og Striden kom til Pa ris ' Dom.
+Med hulde Venus stredes om,
+Hvo blandt dem skiønnest skulde være,
+Og Striden kom til Paris' Dom.
 Den unge kongelige Hyrde
 Sig sætter paa en mosgroet Steen,
 Hvor dem for Middagssolens Byrde
 Beskygger Laurens friske Green.
 Han spørger, hvorom Strid de føre;
-Der svares: ,,Eris for lod see
-Et Wble, som skal den tilhøre.
+Der svares: ,,Eris før lod see
+Et Æble, som skal den tilhøre.
 Der skiønnest er af alle Tre.''
 Ei Paris længe sig betænker,
-Men nikker det til Venus hen.
-Hans raske Dom de Andre kramker,
+Men rækker det til Venus hen.
+Hans raske Dom de Andre krænker,
 Og Juno siger: ,,Unge Ven!
-Du lod dig uden Tv iv l bestikke;
-Men find dig i, jeg siger n u:
-Det sommer sig en Dommer ikke
+Du lod dig uden Tvivl bestikke;
+Men find dig i, jeg siger nu:
+Det sømmer sig en Dommer ikke
 At være saa partisk, som du.
 Kan sig den svage Venus maale
 Med denne Høihed, denne Magt?
 Mit Øie ligner Solens Straale,
 Det har selv Jupiter mig sagt.''
-Og Pastas: ,,O, du svage Dommer!
-Lidt Undighed, som vækker Lyst,
+Og Pallas: ,,O, du svage Dommer!
+Lidt Yndighed, som vækker Lyst,
 Dig mere herlig forekommer,
 End Dydens Kraft i dette Bryst?''
 Med roligt Blik i skyldfrit Øie
-Giensvarer P a r is: ,, I har sagt,
+Giensvarer Paris: ,,I har sagt,
 Her var ei Spørgsmaal om det Høie,
 Om Viisdoms, men om Skiønheds Magt.
 Naar Eris Æblerne bestemmer
-Til Høiheds Dronning — tro m it Ord —
-Jeg aldrig, store J u n o! glemmer,
+Til Høiheds Dronning — tro mit Ord —
+Jeg aldrig, store Juno! glemmer,
 At du est Viv ved Drottens Bord.
-Og siger h u n: Jeg Æblet skienker
+Og siger hun: Jeg Æblet skienker
 Til den iblandt dem alle Tre,
 Som grundigst er, og dybest tænker —
 Da skal Minerva Frugten see.
-Men tilg iv Hyrden i det Grønne,
-Imellem Somrens røde Berr,
-At naar der tales om det Sk io n n e ,
+Men tilgiv Hyrden i det Grønne,
+Imellem Somrens røde Bær,
+At naar der tales om det Skiønne,
 Saa hylder han, hvad skiønnest er.''
 </body>
 </poem>
 
+<!-- === -->
 <poem id="oehlenschlaeger2019020655">
 <head>
     <title><num>6.</num>Charitas</title>
@@ -3970,61 +3984,79 @@ Saa hylder han, hvad skiønnest er.''
     <indextitle>Charitas</indextitle>
     <linktitle>Charitas</linktitle>
     <firstline>Kom, Moder! vil du med mig gaae?</firstline>
+    <pictures>
+        <picture ref="thorvaldsen/1810-caritas"/>
+    </pictures>
     <source pages="114-116"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-D e n wld re Sø n .
+<nonum><center><w>Den ældre Søn.</w></center></nonum>
 Kom, Moder! vil du med mig gaae?
-Mø d e r e n .
+
+<nonum><center><w>Moderen.</w></center></nonum>
 Nei, jeg maa passe paa den Smaa.
-Sø n n e n .
+
+<nonum><center><w>Sønnen.</w></center></nonum>
 Jeg maa fra dig i Skole gaae;
 Men neppe Klokken tolv mon slaae,
 For atter jeg for dig skal staae.
-Mø d e r e n .
-Der komme vil, m it Ba rn! den Tid,
-Da Klokken ei fra mandig I d
+
+<nonum><center><w>Moderen.</w></center></nonum>
+Der komme vil, mit Barn! den Tid,
+Da Klokken ei fra mandig Id
 Dig kalder til din Moder blid.
-Sø n n e n .
+
+<nonum><center><w>Sønnen.</w></center></nonum>
 Nei, aldrig komme skal den Tid!
-Mø d e re n .
+
+<nonum><center><w>Moderen.</w></center></nonum>
 Der komme vil den Tid, mit Noer!
 At ei du finder meer din Moer,
 Hun ligger dybt i sorten Jord.
-Sø nnen.
+
+<nonum><center><w>Sønnen.</w></center></nonum>
 O, kiære Moder! tal ei saa;
 Du aldrig bort fra mig maa gaae.
-Mø d e re n .
-Bi samles hisset i det Blaa.
-To n n e n .
+
+<nonum><center><w>Moderen.</w></center></nonum>
+Vi samles hisset i det Blaa.
+
+<nonum><center><w>Sønnen.</w></center></nonum>
 O, Moder! Jorden er saa skiøn,
 Saa fuld af Blomster og saa grøn;
 Bliv her paa Jorden hos din Søn.
-Mø d e r e n .
-Du milde G lu t! ei Himlen har
+
+<nonum><center><w>Moderen.</w></center></nonum>
+Du milde Glut! ei Himlen har
 En Engel, mig saa dyrebar.
 Du sande Billed af din Faer!
-Sø n n e n .
+
+<nonum><center><w>Sønnen.</w></center></nonum>
 Nu smiler du igien saa glad.
 Farvel, nu maae vi skilles ad;
 Vi sees igien til Middagsmad.
-Gaaer.
-Mø d e r e n kysser den Lille.
+<nonum><center><small>Gaaer.</small></center></nonum>
+
+<nonum><center><w>Moderen</w> <small>kysser den Lille.</small></center></nonum>
 Du bliver dog endnu hos mig.
 Snart skal jeg ogsaa miste dig,
-O, hvor det er bedrovelig!
-Ma n ønsker sig saa stolt en Sø n;
+O, hvor det er bedrøvelig!
+
+Man ønsker sig saa stolt en Søn;
 Men kort kun er den søde Løn,
-Knap løber han i Troien kort,
-Saa slagrer han fra Reden bort.
+Knap løber han i Trøien kort,
+Saa flagrer han fra Reden bort.
 Af Pigen større Fryd man faaer;
 Hun biiver dog en sexten Aar,
-For bort hun med sin Beiler gaaer.
+Før bort hun med sin Beiler gaaer.
+
+---
+
 O, hulde Moderkærlighed!
 Din Sorg — en Draabe Bitterhed,
-Hvis Ma lu rt i d it Bccger flod
-Og gier din Nectar mere sod!
+Hvis Malurt i dit Bæger flød
+Og giør din Nectar mere sød!
 </body>
 </poem>
 
@@ -6977,7 +7009,7 @@ Sønlige P lig te r!
 H il dig, vor Ungdoms elskte Dig te r!
 Glade din Skaal v i drikke n u;
 Du begeistred saa tid lig vor Hu,
-Og sin Lurer ei Unglingen svigter.
+Og sin Lurer ei Ynglingen svigter.
 Hist, hvor d it Bad i Tibur staaer,
 Ranken sig end i Gruset slynger;
 Murene smuldnes Aar for Aar,
@@ -7491,7 +7523,7 @@ Men den na'ste blier dog bedst,
 Guldets er dog bedre.
 Nyd de siir og tyve Aar
 Med din fromme Qvinde,
-Som en Ungling i sin Vaar
+Som en Yngling i sin Vaar
 Med sin Elskerinde.
 </body>
 </poem>
@@ -7817,7 +7849,7 @@ I Oldingskraft med I l d og med Forstand;
 En Olding, som ei Verden Ryggen vender,
 Men Livet i den yngre Sla g t erkiender.
 En saadan venlig Gubbes Dag jeg signer;
-Blid er han som en Mand, som Ungling varm,
+Blid er han som en Mand, som Yngling varm,
 Og end sig selv i Ungdomskraften ligner
 Med stærken Haand og med beskalet Barm.
 Halvhundred Aar han sad i Themis' Sale,
@@ -8321,7 +8353,7 @@ I sine Lokkers Snee;
 Hvis gamle Hierte slaaer
 Endnu med samme Mod,
 Som for halvhundred Aar,
-Med fyrigt Unglingsblod.
+Med fyrigt Ynglingsblod.
 En Gubbe, from og viis,
 Som paa Guds Godhed troer
 Som gior til Paradiis
@@ -8441,7 +8473,7 @@ Vi siunge til Afsked en lystelig Qvad,
 I den sig ei Vccmod skal blande.
 Snart atter til Absalons ældgamle Stad
 Herr Christen sin Snekke laer stande.
-En Olding i Alder, en Ungling i Blod.
+En Olding i Alder, en Yngling i Blod.
 Ei Havet forsander hans driftige Mod.
 Han henter hos Rosiner det gyldne Sk riin ,
 Saa vender han atter tilbage;
