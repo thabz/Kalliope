@@ -562,6 +562,8 @@
 'Kjoemp/Kjæmp',
 '(\W)kierr/\1kiær',
 '(\W)Kierr/\1Kiær',
+'(\W)kiar/\1kiær',
+'(\W)Kiar/\1Kiær',
 'stjælv/skjælv',
 'stjæn/skjæn',
 'endc(\W)/ende\1',
