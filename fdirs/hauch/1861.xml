@@ -1076,10 +1076,13 @@ Igjennem Dødens Nat til Livets Kilder!
 <head>
     <title>Et mystisk Digt</title>
     <toctitle>Et mystisk Digt (efter Novalis)</toctitle>
-    <subtitle>Efter Novalias</subtitle>
+    <subtitle>Efter Novalis</subtitle>
     <firstline>Naar Tal ikke meer og ei Figurer</firstline>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2019010901"/>.</note>
+    </notes>
     <source pages="49"/>
+    <keywords>novalis</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1108,6 +1111,7 @@ Det forvildede Væsen bort fra Jord.
         <note>Gendigtning af Rückert: <xref type="translation" poem="rueckert2018121110"/>.</note>
     </notes>    
     <source pages="50"/>
+    <keywords>rueckert</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1131,6 +1135,7 @@ Er jeg af Længsel død.
     <firstline>Befal hvad Du mon eie</firstline>
     <!-- TODO: Find originalen -->
     <source pages="51-54"/>
+    <keywords>gerhardt</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
