@@ -3,7 +3,7 @@
 import React from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
-import Nav from '../components/nav';
+import Nav, { kalliopeCrumbs } from '../components/nav';
 import { KalliopeTabs } from '../components/tabs.js';
 import SubHeading from '../components/subheading.js';
 import Heading from '../components/heading.js';
@@ -21,7 +21,10 @@ export default class extends React.Component<ErrorProps> {
       <div>
         <Head headTitle="Kalliope" />
         <Main>
-          <Nav lang={lang} title={message} />
+          <Nav
+            lang={lang}
+            crumbs={[...kalliopeCrumbs(lang), { title: message }]}
+          />
           <Heading title="&nbsp;" />
           <KalliopeTabs lang={lang} selected="index" />
           <SubHeading>{message}</SubHeading>

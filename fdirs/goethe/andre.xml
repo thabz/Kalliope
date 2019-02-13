@@ -4,20 +4,45 @@
 <workhead>
    <title>Andre digte</title>
    <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
+<poem id="goethe2019011801">
+<head>
+   <title>Wandrers Nachtlied I</title>
+   <firstline>Der du von dem Himmel bist</firstline>
+   <notes>
+       <note>Skrevet 1776 og efterfulgtes af <xref poem="goethe2002103001"/> i 1780.</note>
+   </notes>
+   <dates>
+       <written>1776-02-12</written>
+   </dates>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Der du von dem Himmel bist,
+Alles Leid und Schmerzen stillest,
+Den, der doppelt elend ist,
+Doppelt mit Erquickung füllest,
+Ach, ich bin des Treibens müde!
+Was soll all der Schmerz und Lust?
+Süsser Friede,
+Komm, ach, komm in meine Brust!    
+</body>
+</poem>
+
+
 <poem id="goethe2002103001">
 <head>
-   <title>Wandrers Nachtlied</title>
-   <toctitle>Wandrers Nachtlied</toctitle>
-   <indextitle>Wandrers Nachtlied</indextitle>
+   <title>Wandrers Nachtlied II</title>
    <firstline>Über allen Gipfeln</firstline>
    <notes>
-      <note>Digtet hedder Ein Gleiches, dvs. samme som forrige digts titel, hvad man på dansk typisk vil kalde "Ligeledes" og på engelsk "Another".</note>
+       <note>Skrevet 1780 som efterfølger til <xref poem="goethe2019011801"/> fra 1870.</note>
+       <note>Først i 1815 blev digtene udgivet sammen, hvor dette digt fik titlen »Ein Gleiches« (da.: ligeledes).</note>
    </notes>
+   <dates>
+       <written>1780-09-06</written>
+   </dates>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -597,8 +622,6 @@ Ist wünschenswertester Beruf.
 <poem id="goethe2000010807">
 <head>
    <title>Lebensregel</title>
-   <toctitle>Lebensregel</toctitle>
-   <indextitle>Lebensregel</indextitle>
    <firstline>Willst du dir ein hübsch Leben zimmern</firstline>
    <quality>korrektur1</quality>
    <!-- (eingesandt von Peter Tuchscherer; PTuchscherer@databecker.de) -->
@@ -975,10 +998,11 @@ Solang ich weinen mag.«
 
 <poem id="goethe2001111901">
 <head>
-   <title>Mignon</title>
-   <toctitle>Mignon</toctitle>
-   <indextitle>Mignon</indextitle>
+   <title>Kennst du das Land, wo die Zitronen blühn</title>
    <firstline>Kennst du das Land, wo die Zitronen blühn</firstline>
+   <notes>
+       <note>Mignons berømte sang fra <i>Wilhelm Meisters Lehrjahre</i>, 1795/96, begyndelsen af tredje bog.</note>
+   </notes>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -2148,6 +2172,335 @@ Zur Hütte,
 Vergoldet vom letzten Sonnenstrahl,
 Lass mich empfangen solch ein Weib,
 Den Knaben auf dem Arm!    
+</body>
+</poem>
+
+<poem id="goethe2018101101">
+<head>
+   <title>Meine Göttin</title>
+   <firstline>Welcher Unsterblichen</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Welcher Unsterblichen
+Soll der höchste Preis sein?
+Mit niemand streit ich,
+Aber ich geb ihn
+Der ewig beweglichen,
+Immer neuen,
+Seltsamen Tochter Jovis,
+Seinem Schoßkinde,
+Der Phantasie.
+
+Denn ihr hat er
+Alle Launen,
+Die er sonst nur allein
+Sich vorbehält,
+Zugestanden
+Und hat seine Freude
+An der Törin.
+
+Sie mag rosenbekränzt
+Mit dem Lilienstengel
+Blumentäler betreten,
+Sommervögeln gebieten
+Und leichtnährenden Tau
+Mit Bienenlippen
+Von Blüten saugen;
+
+Oder sie mag
+Mit fliegendem Haar
+Und düsterm Blicke
+Im Winde sausen
+Um Felsenwände,
+Und tausendfarbig,
+Wie Morgen und Abend,
+Immer wechselnd
+Wie Mondesblicke,
+Den Sterblichen scheinen.
+
+Laßt uns alle
+Den Vater preisen!
+Den alten, hohen,
+Der solch eine schöne,
+Unverwelkliche Gattin
+Dem sterblichen Menschen
+Gesellen mögen!
+
+Denn uns allein
+Hat er sie verbunden
+Mit Himmelsband
+Und ihr geboten,
+In Freud und Elend
+Als treue Gattin
+Nicht zu entweichen
+
+Alle die andern
+Armen Geschlechter
+Der kinderreichen,
+Lebendigen Erde
+Wandeln und weiden
+In dunkelm Genuß
+Und trüben Schmerzen
+Des augenblicklichen
+Beschränkten Lebens,
+Gebeugt vom Joche
+Der Notdurft.
+
+Uns aber hat er
+Seine gewandteste,
+Verzärtelte Tochter,
+Freut euch! gegönnt.
+Begegnet ihr lieblich,
+Wie einer Geliebten!
+Laßt ihr die Würde
+Der Frauen im Haus!
+
+Und daß die alte
+Schwiegermutter Weisheit
+Das zarte Seelchen
+Ja nicht beleidge!
+
+Doch kenn ich ihre Schwester,
+Die ältere, gesetztere,
+Meine stille Freundin:
+O daß die erst
+Mit dem Lichte des Lebens
+Sich von mir wende,
+Die edle Treiberin,
+Trösterin Hoffnung!
+</body>
+</poem>
+
+<poem id="goethe2018121101">
+<head>
+   <title>Der Junggesell und der Mühlbach</title>
+   <firstline>Wo willst du klares Bächlein hin</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+<nonum><center><i>Gesell</i></center></nonum>
+Wo willst du klares Bächlein hin,
+So munter?
+Du eilst mit frohem, leichtem Sinn
+Hinunter.
+Was suchst du eilig in dem Tal?
+So höre doch und sprich einmal!
+
+<nonum><center><i>Bach</i></center></nonum>
+Ich war ein Bächlein, Junggesell;
+Sie haben
+Mich so gefaßt, damit ich schnell
+Im Graben,
+Zur Mühle dort hinunter soll,
+Und immer bin ich rasch und voll.
+
+<nonum><center><i>Gesell</i></center></nonum>
+Du eilest mit gelaßnem Mut
+Zur Mühle,
+Und weißt nicht, was ich junges Blut
+Hier fühle.
+Es blickt die schöne Müllerin
+Wohl freundlich manchmal nach dir hin?
+
+<nonum><center><i>Bach</i></center></nonum>
+Sie öffnet früh beim Morgenlicht
+Den Laden,
+Und kommt, ihr liebes Angesicht
+Zu baden.
+Ihr Busen ist so voll und weiß;
+Es wird mir gleich zum Dampfen heiß.
+
+<nonum><center><i>Gesell</i></center></nonum>
+Kann sie im Wasser Liebesglut
+Entzünden,
+Wie soll man Ruh' mit Fleisch und Blut
+Wohl finden?
+Wenn man sie einmal nur gesehn,
+Ach! immer muß man nach ihr gehn.
+
+<nonum><center><i>Bach</i></center></nonum>
+Dann stürz' ich auf die Räder mich
+Mit Brausen,
+Und alle Schaufeln drehen sich
+Im Sausen.
+Seitdem das schöne Mädchen schafft,
+Hat auch das Wasser beßre Kraft.
+
+<nonum><center><i>Gesell</i></center></nonum>
+Du Armer, fühlst du nicht den Schmerz
+Wie andre?
+Sie lacht dich an und sagt im Scherz:
+"Nun wandre!"
+Sie hielte dich wohl selbst zurück
+Mit einem süßen Liebesblick?
+
+<nonum><center><i>Bach</i></center></nonum>
+Mir wird so schwer, so schwer, vom Ort
+Zu fließen:
+Ich krümme mich nur sachte fort
+Durch Wiesen;
+Und käm es erst auf mich nur an,
+Der Weg wär bald zurückgetan.
+
+<nonum><center><i>Gesell</i></center></nonum>
+Geselle meiner Liebesqual,
+Ich scheide
+Du murmelst mir vielleicht einmal
+Zur Freude.
+Geh', sag' ihr gleich, und sag ihr oft,
+Was still der Knabe wünscht und hofft.    
+</body>
+</poem>
+
+<poem id="goethe2019010801">
+<head>
+   <title>Vanitas! Vanitatum vanitas!</title>
+   <firstline>Ich hab' mein Sach' auf Nichts gestellt</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Ich hab' mein Sach' auf Nichts gestellt,
+    Juchhe!
+Drum ist's so wohl mir in der Welt.
+    Juchhe!
+Und wer will mein Kamerade sein,
+Der stoße mit an, der stimme mit ein,
+Bei dieser Neige Wein!
+
+Ich stellt' mein Sach' auf Geld und Gut.
+    Juchhe!
+Darüber verlor ich Freud' und Mut.
+    O weh!
+Die Münze rollte hier und dort,
+Und hascht' ich sie an einem Ort,
+Am andern war sie fort.
+
+Auf Weiber stellt' ich nun mein' Sach'.
+    Juchhe!
+Daher mir kam viel Ungemach.
+    O weh!
+Die Falsche sucht' sich ein ander Teil,
+Die Treue macht' mir Langeweil;
+Die Beste war nicht feil.
+
+Ich stellt' mein Sach' auf Reis' und Fahrt.
+    Juchhe!
+Und ließ meine Vaterlandesart.
+    O weh!
+Und mir behagt' es nirgends recht;
+Die Kost war fremd, das Bett war schlecht,
+Niemand verstand mich recht.
+
+Ich stellt' mein' Sach' auf Ruhm und Ehr'.
+    Juchhe!
+Und sieh! gleich hatt' ein andrer mehr.
+    O weh!
+Wie ich mich hatt' hervorgetan,
+Da sahen die Leute scheel mich an,
+Hatte keinem recht getan.
+
+Ich setzt' mein Sach' auf Kampf und Krieg.
+    Juchhe!
+Und uns gelang so mancher Sieg.
+    Juchhe!
+Wir zogen in Feindes Land hinein,
+Dem Freunde sollt's nicht viel besser sein,
+Und ich verlor ein Bein.
+
+Nun hab' ich mein Sach' auf Nichts gestellt.
+    Juchhe!
+Und mein gehört die ganze Welt.
+    Juchhe!
+Zu Ende geht nun Sang und Schmaus.
+Nur trinkt mir alle Neigen aus;
+Die letzte muß heraus!    
+</body>
+</poem>
+
+<poem id="goethe2019013101">
+<head>
+   <title><num>XIII</num>Warnung</title>
+   <firstline>Am Jüngsten Tag, wenn die Posaunen schallen</firstline>
+   <quality>korrektur1</quality>
+   <!-- https://www.textlog.de/18578.html -->
+   <keywords>sonnet</keywords>
+</head>
+<body>
+Am Jüngsten Tag, wenn die Posaunen schallen
+Und alles aus ist mit dem Erdeleben,
+Sind wir verpflichtet, Rechenschaft zu geben
+Von jedem Wort, das unnütz uns entfallen.
+ 
+Wie wird's nun werden mit den Worten allen,
+In welchen ich so liebevoll mein Streben
+Um deine Gunst dir an den Tag gegeben,
+Wenn diese bloß an deinem Ohr verhallen?
+ 
+Darum bedenk', o Liebchen! dein Gewissen,
+Bedenk' im Ernst, wie lange du gezaudert,
+Daß nicht der Welt solch Leiden widerfahre.
+ 
+Werd' ich berechnen und entschuld'gen müssen,
+Was alles unnütz ich vor dir geplaudert;
+So wird der Jüngste Tag zum vollen Jahre.    
+</body>
+</poem>
+
+<poem id="goethe2019013102">
+<head>
+   <title>Das Sonett</title>
+   <firstline>Sich in erneutem Kunstgebrauch zu üben</firstline>
+   <quality>korrektur1</quality>
+   <!-- https://lyrikwiki.de/mediawiki/index.php/Sonett_(Goethe) -->
+</head>
+<body>
+Sich in erneutem Kunstgebrauch zu üben,
+Ist heil'ge Pflicht, die wir dir auferlegen:
+Du kannst dich auch, wie wir, bestimmt bewegen
+Nach Tritt und Schritt, wie es dir vorgeschrieben.
+
+Denn eben die Beschränkung läßt sich lieben,
+Wenn sich die Geister gar gewaltig regen;
+Und wie sie sich denn auch gebärden mögen,
+Das Werk zuletzt ist doch vollendet blieben.
+
+So möcht' ich selbst in künstlichen Sonetten,
+In sprachgewandter Maßen kühnem Stolze,
+Das Beste, was Gefühl mir gäbe, reimen;
+
+Nur weiß ich hier mich nicht bequem zu betten,
+Ich schneide sonst so gern aus ganzem Holze,
+Und müßte nun doch auch mitunter leimen.    
+</body>
+</poem>
+
+<poem id="goethe2019021201">
+<head>
+   <title>Jägers Abendlied</title>
+   <firstline>Im Felde schleich ich still und wild</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Im Felde schleich ich still und wild,
+Gespannt mein Feuerrohr.
+Da schwebt so licht dein liebes Bild,
+Dein süßes Bild mir vor.
+
+Du wandelst jetzt wohl still und mild
+Durch Feld und liebes Tal,
+Und ach, mein schnell verrauschend Bild,
+Stellt sich dir’s nicht einmal?
+
+Des Menschen, der die Welt durchstreift
+Voll Unmut und Verdruß,
+Nach Osten und nach Westen schweift,
+Weil er dich lassen muß.
+
+Mir ist es, denk ich nur an dich,
+Als in den Mond zu sehn;
+Ein stiller Friede kommt auf mich,
+Weiß nicht, wie mir geschehn.    
 </body>
 </poem>
 
