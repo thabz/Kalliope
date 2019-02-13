@@ -11,7 +11,7 @@
     <pictures>
         <picture src="1863-p1.jpg">Titelbladet til <i>Digte</i> (1863) lyder ,,Digte / af / S. Schandorph. // Kjøbenhavn. / Wilhelm Priors Forlag. / 1863.''</picture>
     </pictures>
-    <source facsimile="130023205085_color" facsimile-pages-num="138" facsimile-pages-offset="10">Sophus Schandorph: <i>Digte</i>, Vilh. Priors Forlag, Kbh., 1863.</source>
+    <source facsimile="130023205085_color" facsimile-pages-num="138" facsimile-pages-offset="8">Sophus Schandorph: <i>Digte</i>, Vilh. Priors Forlag, Kbh., 1863.</source>
 </workhead>
 <workbody>
 
@@ -302,9 +302,11 @@ der skinner med Smil ad Rum og ad Tid,
     <title>Romance</title>
     <subtitle>(Efter Prosper Mérimée: Théatre de Clara Gazul: Les Espagnols en Danemarc Journée II, Sc. I.)</subtitle>
     <firstline>Ridder Alvar fra Zamora</firstline>
-    <notes>
-        <note>TODO:Find originalen</note>
-    </notes>
+    <pictures>
+        <picture src="schandorph2018092407-p1.jpg">Prosper Mérimée: <i>Théâtre de Clara Gazul, comédienne espagnole; suivi de La Jacquerie et de La famille Carvajal</i>,  Paris Charpentier, Paris, 1857, p. 37.</picture>
+        <picture src="schandorph2018092407-p2.jpg">Ibid., p. 38.</picture>
+        <!-- Fra https://archive.org/details/thtredeclara00mruoft -->
+    </pictures>
     <source pages="15-17"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -354,7 +356,7 @@ Al sin Rigdom bort han skjænker
 Gud! vær Broder Jago naadig, -
 Munken fra Inigos Kloster.
 
-- Zobeïdes sorte Øjne
+Zobeïdes sorte Øjne
 voldte ham saa tung en Smerte.
 Hellig Duft hans Død omsvæved,
 men af Elskov brast hans Hjerte.
@@ -449,7 +451,7 @@ stemme til Andagt min Sjæl ved sin sølvklare Tale.
       op mod mit Hjerte og sagt:
 Frygt ej for mig, om end Livsbølgen vildt os omskyller;
       holder jeg dig kun i Haand,
-      er jeg saa tryg i min 'Aand,
+      er jeg saa tryg i min Aand,
 Kvinden, som elsker, er stærk, thi en Gud hende fylder.
 
       Lad alle Livsblomster dø!
@@ -631,7 +633,7 @@ thi Drengen mig dikterte,
 og jeg var blot Kopisten.
 </body>
 </poem>
-
+<!-- === Korrekturlæst hertil === -->
 <poem id="schandorph2018092413">
 <head>
     <title>Faderlig Erfaring</title>
@@ -1942,7 +1944,7 @@ med Stjerneøjne milde og kloge.
     <subtitle>I saw thee weep</subtitle>
     <firstline>Du græd - og Taaren klar og smuk</firstline>
     <notes>
-        <note>Gendigtning af Byrons <xref poem="byron1999041110"/>.</note>
+        <note>Gendigtning af Byrons <xref type="translation" poem="byron1999041110"/>.</note>
     </notes>
     <source pages="105-106"/>
     <quality>korrektur1,kilde,side</quality>
