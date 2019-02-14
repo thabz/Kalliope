@@ -416,6 +416,25 @@
   <works>andre</works>
 </person>
 
+<person id="tiedge" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Christoph August</firstname>
+    <lastname>Tiedge</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1752-12-14</date>
+      <place>Gardelegen</place>
+    </born>
+    <dead>
+      <date>1841-03-08</date>
+      <place>Dresden</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
+
 <person id="schiller" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich von</firstname>
@@ -2340,7 +2359,7 @@
       <place inon="on">Frederiksberg</place>
     </dead>
   </period>
-  <works>1794,1802,andre</works>
+  <works>1794,1802,1817,andre</works>
 </person>
 
 <person id="riber" country="dk" lang="da" type="poet">
