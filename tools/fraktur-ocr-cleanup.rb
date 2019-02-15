@@ -283,6 +283,7 @@
 'Boge/Bøge',
 'Bslg/Bølg',
 '(\W)fsle/\1føle',
+'(\W)Fole/\1Føle',
 'Bon(\W)/Bøn\1',
 'Bvn(\W)/Bøn\1',
 'cn(\W)/en\1',
