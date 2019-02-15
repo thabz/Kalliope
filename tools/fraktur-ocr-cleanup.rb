@@ -139,6 +139,7 @@
 'rce/ræ',
 'loft/løft',
 'lvft/løft',
+'gisr/giør',
 'giore/giøre',
 'flut/slut',
 'siue/skue',
