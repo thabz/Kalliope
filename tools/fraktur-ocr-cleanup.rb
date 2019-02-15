@@ -548,6 +548,7 @@
 'oeng/æng',
 'sproel/spræl',
 'Hander/Hænder',
+'Hamder/Hænder',
 'Hoende/Hænde',
 'roend/rænd',
 'hoev/hæv',
