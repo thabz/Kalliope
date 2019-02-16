@@ -1,14 +1,38 @@
-KILDE:Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 21, 1860.
-DIGTER:oehlenschlaeger
-FACSIMILE:115208057559_color
-FACSIMILE-SIDER:368
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="1860-21" author="oehlenschlaeger" status="complete" type="poetry">
+<workhead>
+    <title>Poetiske Skrifter</title>
+    <subtitle>
+        <line>Tyvende Bind. Digte, Tredie Deel.</line>
+    </subtitle>
+    <linktitle>Samlede Skrifter, 21. Bind</linktitle>
+    <toctitle><num>Bind 21.</num>Digte, Tredie Deel</toctitle>
+    <breadcrumbtitle>Bd. 21</breadcrumbtitle>
+    <year>1860</year>
+    <notes>
+        <note>Teksten følger Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 21, 1860.</note>
+    </notes>
+    <pictures>
+        <picture src="1860-21-p1.jpg">Titelbladet til <i>Poetiske Skrifter</i> (1860) lyder ,,Oehlenschlägers Digte. // Udgivne / af / F. L. Liebenberg. // Anden Deel. // Kjøbenhavn. / Forlagt af Selskabet til Udgivelse af Oehlenschlägers Skrifter. // Hovedcommissionair: Th. Lind, Store Kjøbmagergade Nr. 6. / 1860.''.</picture>
 
-T:Sømands-Tak til Selskabet for Musikens Udbredelse
-U:Den 17de Marts 1822.
-BEGIVENHED:1822-03-17
-F:Vi Sømænd giør ei mange Ord
-SIDE:1-2
+    </pictures>
+    <source facsimile="115208057559_color" facsimile-pages-num="368" facsimile-pages-offset="10">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 21, 1860.</source>
+</workhead>
+<workbody>
 
+<poem id="oehlenschlaeger2019021601">
+<head>
+    <title>Sømands-Tak til Selskabet for Musikens Udbredelse</title>
+    <subtitle>Den 17de Marts 1822.</subtitle>
+    <firstline>Vi Sømænd giør ei mange Ord</firstline>
+    <source pages="1-2"/>
+    <dates>
+        <event>1822-03-17</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Vi Sømænd giør ei mange Ord,
 Ei hykle eller prale;
 Om hvad der i vort Hierte boer,
@@ -44,15 +68,24 @@ Hil Danerkongen og hans Huus,
 Hil hver en ædel Borger,
 Som bygger Hytten af sit Gruus,
 Og lindrer Sømands-Sorger!
+</body>
+</poem>
 
-T:Sang
-U:paa grinds Christian Frederiks Fødselsdag
-U:Den 18de September 1822.
-BEGIVENHED:1822-09-18
-F:O Prinds, hvem vi saalænge
-SIDE:2-3
-
-
+<poem id="oehlenschlaeger2019021602">
+<head>
+    <title>Sang</title>
+    <subtitle>
+        <line>paa grinds Christian Frederiks Fødselsdag</line>
+        <line>Den 18de September 1822.</line>
+    </subtitle>
+    <firstline>O Prinds, hvem vi saalænge</firstline>
+    <source pages="2-3"/>
+    <dates>
+        <event>1822-09-18</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 O Prinds, hvem vi saalænge
 Har savnet nu i Herthadal!
 Modtag ved Harpens Strænge
@@ -86,13 +119,21 @@ Glad med den yndigste Biv vil du mindes
 Herlige Vandring i sod Sympathie;
 Me n kun i Hiemme t f in d e s
 D e t ægte Sø r g e n f r i .
+</body>
+</poem>
 
-T:De danske Studenters Velkomst-Sang til Prinds Christian Frederik og Prindsesse Carolina Amalia
-U:Den 18de September 1822.
-BEGIVENHED:1822-09-18
-F:Velkommen i din Ungdomslund
-SIDE:4-5
-
+<poem id="oehlenschlaeger2019021603">
+<head>
+    <title>De danske Studenters Velkomst-Sang til Prinds Christian Frederik og Prindsesse Carolina Amalia</title>
+    <subtitle>Den 18de September 1822.</subtitle>
+    <firstline>Velkommen i din Ungdomslund</firstline>
+    <source pages="4-5"/>
+    <dates>
+        <event>1822-09-18</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Velkommen i din Ungdomslund
 Ved Lyst og Ju b e llyd!
 Vi feirc her din Fødselsstund,
@@ -129,15 +170,23 @@ Fra gamle Rom, Apolløs Hiem
 De drog til Helthas Treeer.
 Og de har Muser kiær;
 Th i juble dem i Møde Musasonner.
+</body>
+</poem>
 
-T:Pebersvenden og Ægtemanden.
-U:Et Carmen i Anledning af den høilæirde Doctor og Lector Peder Hjorts og den dydzirede Mø Frøken Olivia Rasbechs Ægteforening.
-U:Den 25de September 1822.
-U:Forfattet
-U:Af et Øievidne.
-F:Det vise Varselsraad, min Ven!
-SIDE:5-6
-
+<poem id="oehlenschlaeger2019021604">
+<head>
+    <title>Pebersvenden og Ægtemanden.</title>
+    <subtitle>
+        <line>Et Carmen i Anledning af den høilæirde Doctor og Lector Peder Hjorts og den dydzirede Mø Frøken Olivia Rasbechs Ægteforening.</line>
+        <line>Den 25de September 1822.</line>
+        <line>Forfattet</line>
+        <line>Af et Øievidne.</line>
+    </subtitle>
+    <firstline>Det vise Varselsraad, min Ven!</firstline>
+    <source pages="5-6"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Det vise Varselsraad, min Ven!
 Bi hørte tid t gientage
 D o ei som gammel Pebersvend,
@@ -170,11 +219,17 @@ For Resten gaa i Holbergs Spor,
 At atter Soro staaer i Flor,
 Og at en Sa d i adel Jord
 Kan gyldne Frugter bare.
+</body>
+</poem>
 
-T:Da Kongen atter var karsk
-F:Vredelig brandguul, gold, som i en Ørken
-SIDE:7
-
+<poem id="oehlenschlaeger2019021605">
+<head>
+    <title>Da Kongen atter var karsk</title>
+    <firstline>Vredelig brandguul, gold, som i en Ørken</firstline>
+    <source pages="7"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Vredelig brandguul, gold, som i en Ørken,
 Sviende Græsset, hærgede kun Torten,
 Længer ei Hertha Danerskoven krandsed,
@@ -199,15 +254,25 @@ Sild ig t de pryde dine Lokker lyse,
 Lang Tid ei Folket, ei Naturen gyse;
 Kraftig som Olding, dine Sønner prise
 F r e d r i k den Vi s e!
+</body>
+</poem>
 
-T:Sang
-U:i Anledning af
-U:Dronningens og Kronprinsessens Fødselsdag.
-U:Afsiungen i det Venskabelige Selskabs Concert den 3die November 1822.
-BEGIVENHED:1822-11-03
-F:Ædle Moder! hulde Datter!
-SIDE:8
-
+<poem id="oehlenschlaeger2019021606">
+<head>
+    <title>Sang</title>
+    <subtitle>
+        <line>i Anledning af</line>
+        <line>Dronningens og Kronprinsessens Fødselsdag.</line>
+        <line>Afsiungen i det Venskabelige Selskabs Concert den 3die November 1822.</line>
+    </subtitle>
+    <firstline>Ædle Moder! hulde Datter!</firstline>
+    <source pages="8"/>
+    <dates>
+        <event>1822-11-03</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Ædle Moder! hulde Datter!
 Fredriks Glæde, Danmarks F ryd!
 Eders Fest fremstraaler atter,
@@ -232,11 +297,17 @@ Jubler med de høie Tvende!
 Himlen skienkte Dagen Lyst;
 Frve, som deres Hierter, buende
 Hver en ærlig Danskes Bryst!
+</body>
+</poem>
 
-T:Holbergs Skaal
-F:Vi veed, det er en ærværdig Skik
-SIDE:9-11
-
+<poem id="oehlenschlaeger2019021607">
+<head>
+    <title>Holbergs Skaal</title>
+    <firstline>Vi veed, det er en ærværdig Skik</firstline>
+    <source pages="9-11"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Vi veed, det er en ærværdig Skik,
 Rort at begræde de Fædre,
 Som kort for os ud af Verden gik;
@@ -309,13 +380,21 @@ Med liflig Farve den er at see
 Ved laurbærflettede Kiæde.
 Af den vore Børnebsrn vil lee,
 Naar os de ei meer begrade.
+</body>
+</poem>
 
-T:Til Emma
-U:(Efter Schiller.)
-F:I det Taagegraa, det Fierne
-SIDE:12
-NOTE:Gendigtning af Schillers <xref type="translate" poem="schiller2001102420"/>.
-
+<poem id="oehlenschlaeger2019021608">
+<head>
+    <title>Til Emma</title>
+    <subtitle>(Efter Schiller.)</subtitle>
+    <firstline>I det Taagegraa, det Fierne</firstline>
+    <notes>
+        <note>Gendigtning af Schillers <xref type="translation" poem="schiller2001102420"/>.</note>
+    </notes>
+    <source pages="12"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I det Taagegraa, det Fierne
 Mine Glæder snart henrandt.
 End dog ei en deilig Stierne
@@ -334,11 +413,17 @@ Støvets alt for snevre Fængsel,
 Favner det den hele Lyst?
 Nei, den rogindslorte Gnist
 Klarer sig til Flamme hist.
+</body>
+</poem>
 
-T:Selkirk i Robinsonshulen.
-F:Her er jeg atter hiemme
-SIDE:12-15
-
+<poem id="oehlenschlaeger2019021609">
+<head>
+    <title>Selkirk i Robinsonshulen.</title>
+    <firstline>Her er jeg atter hiemme</firstline>
+    <source pages="12-15"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Her er jeg atter hiemme
 I hellig Eensomhed,
 Og henrykt kan jeg glemme
@@ -403,15 +488,25 @@ Og paa den Steen skal stande,
 Som ruger over mit Leer:
 ,,Han lånte Mennesker elske,
 Og var ei ene meer''.
+</body>
+</poem>
 
-T:Sang
-U:i Anledning af
-U:Kongens Fødselsdag.
-U:Opført i Selskabet for Musikens Udbredelse, den 2den Februar 1823
-BEGIVENHED:1823-02-02
-F:For Fredrik, Fædrelandets Ven
-SIDE:15-16
-
+<poem id="oehlenschlaeger2019021610">
+<head>
+    <title>Sang</title>
+    <subtitle>
+        <line>i Anledning af</line>
+        <line>Kongens Fødselsdag.</line>
+        <line>Opført i Selskabet for Musikens Udbredelse, den 2den Februar 1823</line>
+    </subtitle>
+    <firstline>For Fredrik, Fædrelandets Ven</firstline>
+    <source pages="15-16"/>
+    <dates>
+        <event>1823-02-02</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 For Fredrik, Fædrelandets Ven,
 Nu juble Nord!
 Hans Fest os hilser skisn igien,
@@ -440,12 +535,18 @@ Skienk os din Høst,
 Skienk os din Vinter, reen som Snee!
 Paa den skal Himlens Stiæner sec
 Med Lyst.
+</body>
+</poem>
 
-T:Til min Søn
-U:I et Exemplar af den latinske Grammatik.
-F:En Gave her, min Hans! du fik
-SIDE:16-18
-
+<poem id="oehlenschlaeger2019021611">
+<head>
+    <title>Til min Søn</title>
+    <subtitle>I et Exemplar af den latinske Grammatik.</subtitle>
+    <firstline>En Gave her, min Hans! du fik</firstline>
+    <source pages="16-18"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En Gave her, min Hans! du fik,
 Som vel i første Øieblik
 Dig inderligt behager;
@@ -488,12 +589,18 @@ Kun følger Flaneskikken!
 Ei til d e t Sl e t t e d e e l in e e r ,
 D i g med det Go d e c o n ju g e e r!
 Saa veed du Grammatikere.
+</body>
+</poem>
 
-T:Frederike von der Maase
-U:Februar 1823.
-F:Overstridt du har, Veninde!
-SIDE:18-19
-
+<poem id="oehlenschlaeger2019021612">
+<head>
+    <title>Frederike von der Maase</title>
+    <subtitle>Februar 1823.</subtitle>
+    <firstline>Overstridt du har, Veninde!</firstline>
+    <source pages="18-19"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Overstridt du har, Veninde!
 Vennen stirrer ved d it Minde
 Tausveemodig paa din Grav.
@@ -536,11 +643,17 @@ Hun er ikke langt herfra.
 Tid t i Vaar, naar Blomster bæve.
 Arm i Arm to Skygger svæve:
 Hist hun fandt Am a l i a .
+</body>
+</poem>
 
-T:Til Morgensolen
-F:Tak, du himmelske Lys, som atter straaler
-SIDE:20-21
-
+<poem id="oehlenschlaeger2019021613">
+<head>
+    <title>Til Morgensolen</title>
+    <firstline>Tak, du himmelske Lys, som atter straaler</firstline>
+    <source pages="20-21"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Tak, du himmelske Lys, som atter straaler
 Paa min Bog, min Haand, og paa min Kin d!
 Gluden drikker jeg nu af dine Skaaler,
@@ -569,16 +682,26 @@ Laer, o himmelske Lys! min Aand at vaage,
 Laer den frydcs ved Alt, hvad stort er og smukt;
 Da skal ingen jordisk Taage
 Staikkc Siaelens hellige Vingcflugt.
+</body>
+</poem>
 
-T:Afskedssang
-U:til
-U:Kammerherre og Oberst Hegermann-Lindencrone.
-U:Fra det jydske Jæger-Corps.
-U:Den 29de April 1823.
-BEGIVENHED:1823-04-29
-F:Nu op, Kammerater! ved Hornenes Klang
-SIDE:21-22
-
+<poem id="oehlenschlaeger2019021614">
+<head>
+    <title>Afskedssang</title>
+    <subtitle>
+        <line>til</line>
+        <line>Kammerherre og Oberst Hegermann-Lindencrone.</line>
+        <line>Fra det jydske Jæger-Corps.</line>
+        <line>Den 29de April 1823.</line>
+    </subtitle>
+    <firstline>Nu op, Kammerater! ved Hornenes Klang</firstline>
+    <source pages="21-22"/>
+    <dates>
+        <event>1823-04-29</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nu op, Kammerater! ved Hornenes Klang
 Et Bæger til Minde vi drikke;
 Men i Staldbrodrenes Afskedssang
@@ -615,23 +738,37 @@ Gid længe saa munter, saa ivrig og fro
 For Skioldungens Kannper du drage!
 Saa venlig som tapper, saa tapper som mild,
 Du styrke de Angre med Manddommens I l d!
+</body>
+</poem>
 
-T:Indskrift
-U:i det græske Tempel i Søndermarken.
-F:O, søde Sommer! aldrig skal dit Minde
-SIDE:22
-
+<poem id="oehlenschlaeger2019021615">
+<head>
+    <title>Indskrift</title>
+    <subtitle>i det græske Tempel i Søndermarken.</subtitle>
+    <firstline>O, søde Sommer! aldrig skal dit Minde</firstline>
+    <source pages="22"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 O, søde Sommer! aldrig skal dit Minde
 Af dette Bryst forsvinde,
 Naar atter Flora her mig favner,
 Og lamgselsfuld jeg mindes, hvad jeg savner.
+</body>
+</poem>
 
-T:Prindsesse Carolina Amalias Fødselsdag.
-U:Den 28de Juni.
-BEGIVENHED:1923-06-28
-F:Hulde Fyrstinde! saa gierne jeg vilde
-SIDE:23-24
-
+<poem id="oehlenschlaeger2019021616">
+<head>
+    <title>Prindsesse Carolina Amalias Fødselsdag.</title>
+    <subtitle>Den 28de Juni.</subtitle>
+    <firstline>Hulde Fyrstinde! saa gierne jeg vilde</firstline>
+    <source pages="23-24"/>
+    <dates>
+        <event>1923-06-28</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hulde Fyrstinde! saa gierne jeg vilde
 Krandsen dig række;
 Ak, men jeg frygter, jeg kommer for silde,
@@ -672,13 +809,21 @@ Lev med din Christian lyksalige Dage,
 Freidig tilbage
 Steds paa de svindende Timer du tænke;
 Himlen dig altid dem gladere skienke!
+</body>
+</poem>
 
-T:Til en ung pige paa hendes Fødselsdag.
-U:Den 30te Juli 1823.
-U:Med samlede Digte, I.
-F:Juli er skiønneste Maaned i Aaret
-SIDE:24-25
-
+<poem id="oehlenschlaeger2019021617">
+<head>
+    <title>Til en ung pige paa hendes Fødselsdag.</title>
+    <subtitle>
+        <line>Den 30te Juli 1823.</line>
+        <line>Med samlede Digte, I.</line>
+    </subtitle>
+    <firstline>Juli er skiønneste Maaned i Aaret</firstline>
+    <source pages="24-25"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Juli er skiønneste Maaned i Aaret,
 Rosen er J u lis fagreste Pryd;
 Huldere Blomst dog end Rosen er baaret:
@@ -697,15 +842,25 @@ J u li er evig i Musernes Egne,
 Om end Naturen sig hyller i Snee.
 Siælenes Blomster har Englenes Vinge,
 Dem kan ei Tiden og Rummet betvinge.
+</body>
+</poem>
 
-T:Sølvbryllups-Sang
-U:i Anledning af
-U:Hr. Studiosus K. L. Rahbeks og Frøken L . M. Hegers Ægteforening.
-U:Den 31te August 1823.
-BEGIVENHED:1823-08-31
-F:Sølvbryllupsfolk, mig meest bekiendt
-SIDE:25-26
-
+<poem id="oehlenschlaeger2019021618">
+<head>
+    <title>Sølvbryllups-Sang</title>
+    <subtitle>
+        <line>i Anledning af</line>
+        <line>Hr. Studiosus K. L. Rahbeks og Frøken L . M. Hegers Ægteforening.</line>
+        <line>Den 31te August 1823.</line>
+    </subtitle>
+    <firstline>Sølvbryllupsfolk, mig meest bekiendt</firstline>
+    <source pages="25-26"/>
+    <dates>
+        <event>1823-08-31</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Sølvbryllupsfolk, mig meest bekiendt,
 Er gierne Folk med Lokker graae,
 Med Toure, med Parykker paa,
@@ -738,12 +893,18 @@ Solv er vel godt, og Guld er meer;
 Men bedre dog, end begge to,
 Er Noisomhed og Hiertero,
 Som Himlen i Naturen seer.
+</body>
+</poem>
 
-T:Prinds Christian Frederiks Fødselsdag
-U:Den 18de September 1823.
-F:Siølunda glædes atter
-SIDE:27-28
-
+<poem id="oehlenschlaeger2019021619">
+<head>
+    <title>Prinds Christian Frederiks Fødselsdag</title>
+    <subtitle>Den 18de September 1823.</subtitle>
+    <firstline>Siølunda glædes atter</firstline>
+    <source pages="27-28"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Siølunda glædes atter
 Til Christians Fødselsfest,
 Og Gcsion, Odins Datter,
@@ -793,15 +954,23 @@ Sæt Krandsen oin din Tinding,
 Og glæd dig, thi du veed:
 Skioldungens bedste Vinding
 Er Folkets Kianlighed.
+</body>
+</poem>
 
-T:Sang
-U:i Anledning af
-U:Dronningens og Kronprinsessens Fødselsfest
-U:den 28de Octobec 1823
-U:ved deres Ankomst i Skuespilhuset.
-F:Hæver, o Brødre! forenede Stemmer
-SIDE:29-30
-
+<poem id="oehlenschlaeger2019021620">
+<head>
+    <title>Sang</title>
+    <subtitle>
+        <line>i Anledning af</line>
+        <line>Dronningens og Kronprinsessens Fødselsfest</line>
+        <line>den 28de Octobec 1823</line>
+        <line>ved deres Ankomst i Skuespilhuset.</line>
+    </subtitle>
+    <firstline>Hæver, o Brødre! forenede Stemmer</firstline>
+    <source pages="29-30"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hæver, o Brødre! forenede Stemmer,
 Giger og Flsiter førstærke vor Røst.
 Åndige Søstre! nu Frygten fvrglemmer,
@@ -832,13 +1001,19 @@ Vinter-Orkanernes Mu lm ei fordunkle.
 Nordens October! bit yndige Lys.
 Vi elske dem begge, den ædelske Z iir ,
 De bedste Demanter i Frederiks Sp iir .
+</body>
+</poem>
 
-T:Uhret og Lamperne
-U:Da Hans Høihed Prinds Christian havde hædret Digteren med disse Gaver.
-F:At bruge sin Tid, og sit Lys holde tændt
-SIDE:30-31
-
-,,At bruge sin =Tid=, og sit =Lys= holde tændt,
+<poem id="oehlenschlaeger2019021621">
+<head>
+    <title>Uhret og Lamperne</title>
+    <subtitle>Da Hans Høihed Prinds Christian havde hædret Digteren med disse Gaver.</subtitle>
+    <firstline>At bruge sin Tid, og sit Lys holde tændt</firstline>
+    <source pages="30-31"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+,,At bruge sin <w>Tid</w>, og sit <w>Lys</w> holde tændt,
 Det ei under Skieppen at skiule.
 Den Land om har Himlen til Jorderig sendt,
 Fra Nazareth lod den, til Thule.
@@ -878,12 +1053,18 @@ Min Harpe skal høres i Lunden.
 Og tro, som en Viggo, der Haderen fandt,
 Da R olf ham om Armen en Guldslange vandt,
 Til Døden jeg er dig forbunden.
+</body>
+</poem>
 
-T:Ved Callisens Grav.
-U:Februar 1824.
-F:Naar skal da min Tid faae Ende?
-SIDE:32-33
-
+<poem id="oehlenschlaeger2019021622">
+<head>
+    <title>Ved Callisens Grav.</title>
+    <subtitle>Februar 1824.</subtitle>
+    <firstline>Naar skal da min Tid faae Ende?</firstline>
+    <source pages="32-33"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 ,,Naar skal da min Tid faae Ende?
 Naar min Aand Magevende?
 Brister dog, I Baand! itu .
@@ -938,13 +1119,18 @@ SundhedSurter! voxer skiønt,
 Dukker ham med Haabets Grønt.
 Lunke! sut paa Graven dig,
 Siu n g: H a n er u b o d e l ig .
+</body>
+</poem>
 
-
-T:Nationalsang for Jyderne
-U:ved Kongens Besøg i Landet 1824.
-F:Vaaren er kommen med Blomst og med Green
-SIDE:34-35
-
+<poem id="oehlenschlaeger2019021623">
+<head>
+    <title>Nationalsang for Jyderne</title>
+    <subtitle>ved Kongens Besøg i Landet 1824.</subtitle>
+    <firstline>Vaaren er kommen med Blomst og med Green</firstline>
+    <source pages="34-35"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Vaaren er kommen med Blomst og med Green,
 Himlen er reen,
 Heden staaer fuld af det rødmende Lyng;
@@ -977,16 +1163,26 @@ O, mindes vil Jyden i Fremtidens Aar,
 Naar Lærken siaaer,
 Den Sommer, da Liimfiord og Skodborg-Aa
 Dit Billed saae!
+</body>
+</poem>
 
-T:Sang
-U:ved det borgerlige Militaires Høitidelighed
-U:i Anledning af
-U:Kongens Hiemkomst.
-U:Den 18de Juli 1824.
-BEGIVENHED:1824-07-18
-F:Kong Fredrik stod ved Axelskrand
-SIDE:35-36
-
+<poem id="oehlenschlaeger2019021624">
+<head>
+    <title>Sang</title>
+    <subtitle>
+        <line>ved det borgerlige Militaires Høitidelighed</line>
+        <line>i Anledning af</line>
+        <line>Kongens Hiemkomst.</line>
+        <line>Den 18de Juli 1824.</line>
+    </subtitle>
+    <firstline>Kong Fredrik stod ved Axelskrand</firstline>
+    <source pages="35-36"/>
+    <dates>
+        <event>1824-07-18</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Kong Fredrik stod ved Axelskrand,
 Da lod hans Ord:
 »Jeg gieste vil det jydske Land,
@@ -1014,12 +1210,18 @@ Belkommen du!
 Til Døden er vs Fredrik kiær,
 Gud signe Kongeir fiern og nær.
 Som n u!
+</body>
+</poem>
 
-T:Prinds Christian Frederiks Fødselsdag
-U:Den 18de September 1824.
-F:September! med de gyldne Dage
-SIDE:36-37
-
+<poem id="oehlenschlaeger2019021625">
+<head>
+    <title>Prinds Christian Frederiks Fødselsdag</title>
+    <subtitle>Den 18de September 1824.</subtitle>
+    <firstline>September! med de gyldne Dage</firstline>
+    <source pages="36-37"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 September! med de gyldne Dage,
 Med Himlen blaa
 Du vender atter siion tilbage,
@@ -1048,13 +1250,21 @@ Alfader! du beskiermer Dine,
 Og din er han.
 Du, som ham stienkte Caroline! ^
 Skienk Danmark længe Christian.
+</body>
+</poem>
 
-T:Sang
-U:i Anledning af
-U:et dramatisk Selskabs Stiftelsesdag.
-F:Et Aar er forløbet nu samler som Giest
-SIDE:37-39
-
+<poem id="oehlenschlaeger2019021626">
+<head>
+    <title>Sang</title>
+    <subtitle>
+        <line>i Anledning af</line>
+        <line>et dramatisk Selskabs Stiftelsesdag.</line>
+    </subtitle>
+    <firstline>Et Aar er forløbet nu samler som Giest</firstline>
+    <source pages="37-39"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Et Aar er forløbet nu samler som Giest
 Sig Broder med Broder igien til en Fest, s .
 En Fest for Thalia, den venlige Mø, s i .
@@ -1095,13 +1305,21 @@ Og glad for Thalia han Becgret i Dag
 Har fyldt os til Randen i broderligt Lag.
 Thi tvmmer hans Becger, og siunger derpaa:
 Gid enigt og lamgc vort Samfund bestaae!
+</body>
+</poem>
 
-T:Hilsen til Henrik Steffens
-U:i Studenter-Foreningen. Den 23de September 1824.
-BEGIVENHED:1824-09-23
-F:Vort Danmark var et mægtigt Rige
-SIDE:39-41
-
+<poem id="oehlenschlaeger2019021627">
+<head>
+    <title>Hilsen til Henrik Steffens</title>
+    <subtitle>i Studenter-Foreningen. Den 23de September 1824.</subtitle>
+    <firstline>Vort Danmark var et mægtigt Rige</firstline>
+    <source pages="39-41"/>
+    <dates>
+        <event>1824-09-23</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Vort Danmark var et mægtigt Rige,
 For Odins Billedstøtte faldt,
 Og førte stedse Hæderskrigc
@@ -1154,13 +1372,21 @@ Og Troskab du med Troskab lonner,
 I D ie t straaler Taarens Glands,
 Mens alle danske Musassnner
 Dig række velfortientc Krands.
+</body>
+</poem>
 
-T:Inscription
-U:paa Mindestøtten, der opreistes paa Föhr
-U:Anledning af Kongens Nærværelse paa Øen i Sommeren 1824.
-F:Kong Valdemar i Oldtid besøgte denne Ø
-SIDE:41
-
+<poem id="oehlenschlaeger2019021628">
+<head>
+    <title>Inscription</title>
+    <subtitle>
+        <line>paa Mindestøtten, der opreistes paa Föhr</line>
+        <line>Anledning af Kongens Nærværelse paa Øen i Sommeren 1824.</line>
+    </subtitle>
+    <firstline>Kong Valdemar i Oldtid besøgte denne Ø</firstline>
+    <source pages="41"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Kong Valdemar i Oldtid besøgte denne Ø;
 Men ubessgt af Konger den vented i sin Sø ,
 Nlens Tiden sig udvikled, og sire Sekler gik.
@@ -1169,15 +1395,23 @@ Han vilde see sit Rige, han giested sine Øer,
 Og Vesterhavets Bølger ham bragte til sit Fohr.
 Taknemmelig Erindring har reist ham denne Steen,
 Aarhundreder den smykke med Vaarens friske Green!
+</body>
+</poem>
 
-T:Sang
-U:i Anledning af
-U:Kongens Fødselsdagsfest
-U:Den 28de Januar 1825.
-U:Fra det kongelige kiøbenhavnske Skydeselskab og danske Broderskab.
-F:Nu Festens Horn med ædel Drik vi fylde
-SIDE:42-43
-
+<poem id="oehlenschlaeger2019021629">
+<head>
+    <title>Sang</title>
+    <subtitle>
+        <line>i Anledning af</line>
+        <line>Kongens Fødselsdagsfest</line>
+        <line>Den 28de Januar 1825.</line>
+        <line>Fra det kongelige kiøbenhavnske Skydeselskab og danske Broderskab.</line>
+    </subtitle>
+    <firstline>Nu Festens Horn med ædel Drik vi fylde</firstline>
+    <source pages="42-43"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nu Festens Horn med ædel Drik vi fylde,
 Det gaae fra Mand til Ma n d!
 En Hædersskaal vor Frederik vi skylde;
@@ -1214,15 +1448,25 @@ Ja . Frederik! som Christians, dit Hiertc
 Kun siaaer for Danmarks G a vn;
 Thi jubler nu ved Glædens Høitidskerte
 Det gamle Kiobenhavn.
+</body>
+</poem>
 
-T:Balvise
-U:i Anledning af
-U:Hans Majestæts Fødselsdag.
-U:Den 28de Januar 1825.
-BEGIVENHED:1825-01-28
-F:Naar Sommeren smiler, og Blomsterne groe
-SIDE:43-45
-
+<poem id="oehlenschlaeger2019021630">
+<head>
+    <title>Balvise</title>
+    <subtitle>
+        <line>i Anledning af</line>
+        <line>Hans Majestæts Fødselsdag.</line>
+        <line>Den 28de Januar 1825.</line>
+    </subtitle>
+    <firstline>Naar Sommeren smiler, og Blomsterne groe</firstline>
+    <source pages="43-45"/>
+    <dates>
+        <event>1825-01-28</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Naar Sommeren smiler, og Blomsterne groe,
 Forsamles de Bønder paa Græsset saa froe;
 Der tumler sig Knosen med Pigen omkring.
@@ -1259,11 +1503,17 @@ Saa binder da Krandsen, I siællandste Mv e r!
 Og rækker den Drotten for Daniens Der.
 Vor Frederik leve! Bor Fader, vor Ben!
 Din Fest komme stedse lyksalig igien.
+</body>
+</poem>
 
-T:Oversvømmelsen
-F:Du skiønne Livets Element
-SIDE:45-48
-
+<poem id="oehlenschlaeger2019021631">
+<head>
+    <title>Oversvømmelsen</title>
+    <firstline>Du skiønne Livets Element</firstline>
+    <source pages="45-48"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du skiønne Livets Element,
 Der, som en sosterlig Veninde,
 Med F orden monne dig forbinde,
@@ -1344,13 +1594,21 @@ Syndfloden kommer ei paa n y;
 Men Lidet kan den Svage fcvlde,
 Beskyt os med din Guddomsvælbe,
 Og skienk den Fattige sit Ly.
+</body>
+</poem>
 
-T:Prindsesse Caroline Amalias Fødselsdag.
-U:Den 28de Juni 1825.
-F:I Skovens gamle Bøgeklynge
-BEGIVENHED:1825-06-28
-SIDE:48-50
-
+<poem id="oehlenschlaeger2019021632">
+<head>
+    <title>Prindsesse Caroline Amalias Fødselsdag.</title>
+    <subtitle>Den 28de Juni 1825.</subtitle>
+    <firstline>I Skovens gamle Bøgeklynge</firstline>
+    <source pages="48-50"/>
+    <dates>
+        <event>1825-06-28</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I Skovens gamle Bøgeklynge
 Sad under Træets grønne Sk iu l,
 Sin Rede nær, en lille Fugl,
@@ -1407,17 +1665,27 @@ Naar Hertha dine Lokker kroner
 Med Roser af en nyfødt Flor,
 Du med et Smiil, et venligt Ord
 Belønner Skialdens Harpetoner.
+</body>
+</poem>
 
-T:Rahbeks Jubelfest,
-TOCTITEL:Rahbeks Jubelfest
-INDEXTITEL:Rahbeks Jubelfest
-LINKTITEL:Rahbeks Jubelfest
-U:helligholdt i Studenter-Foreningen.
-U:Den 16de Juli 1825
-F:Halvhundred Aar svandt hurtig hen
-BEGIVENHED:1825-07-16
-SIDE:50-52
-
+<poem id="oehlenschlaeger2019021633">
+<head>
+    <title>Rahbeks Jubelfest,</title>
+    <toctitle>Rahbeks Jubelfest</toctitle>
+    <indextitle>Rahbeks Jubelfest</indextitle>
+    <linktitle>Rahbeks Jubelfest</linktitle>
+    <subtitle>
+        <line>helligholdt i Studenter-Foreningen.</line>
+        <line>Den 16de Juli 1825</line>
+    </subtitle>
+    <firstline>Halvhundred Aar svandt hurtig hen</firstline>
+    <source pages="50-52"/>
+    <dates>
+        <event>1825-07-16</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Halvhundred Aar svandt hurtig hen
 I Evighedens Rige;
 D og er ei mangen Mand igien,
@@ -1483,13 +1751,21 @@ Lad som Anaereon ham staae
 Med Oldings-Blomsterkrandsen paa.
 For Nahbek vore Hiæter slaae,
 Vor Formand og vor Broder!
+</body>
+</poem>
 
-T:Til Anna Wexschall
-U:Den 4de September 1825.
-F:Tilfældet er en Alf af sær Natur
-BEGIVENHED:1825-09-04
-SIDE:53-54
-
+<poem id="oehlenschlaeger2019021634">
+<head>
+    <title>Til Anna Wexschall</title>
+    <subtitle>Den 4de September 1825.</subtitle>
+    <firstline>Tilfældet er en Alf af sær Natur</firstline>
+    <source pages="53-54"/>
+    <dates>
+        <event>1825-09-04</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Tilfældet er en Alf af sær Natur;
 Snart er han venlig, og snart er han snur.
 Han Hjertet mangen Fryd derover, streng;
@@ -1520,13 +1796,21 @@ Og und den danske Digter, hendes Den,
 Som fik ved hende Scenen kurr igien,
 Den Fryd, at staae den Hulde længe nerr,
 Besiælet af det friske Blomsterskurr.
+</body>
+</poem>
 
-T:Prinds Christian Frederiks Fødselsdag
-U:Den 18de September 1825.
-F:Nys slynged vi med Rosenbugter
-BEGIVENHED:1825-09-18
-SIDE:54-55
-
+<poem id="oehlenschlaeger2019021635">
+<head>
+    <title>Prinds Christian Frederiks Fødselsdag</title>
+    <subtitle>Den 18de September 1825.</subtitle>
+    <firstline>Nys slynged vi med Rosenbugter</firstline>
+    <source pages="54-55"/>
+    <dates>
+        <event>1825-09-18</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nys slynged vi med Rosenbugter
 En strands til Carolines Fest;
 Vor clsktc Christian bringes Frugter
@@ -1559,11 +1843,17 @@ Vor Christian! alle vi tilstede
 Med a rlig Troskab hylde dig.
 Va r lange gamle Danmarks Glade,
 Og var, som elsket, lykkelig!
+</body>
+</poem>
 
-T:Thalias Skaal
-F:I Syden, hvor ei Sol nedgaaer
-SIDE:55-57
-
+<poem id="oehlenschlaeger2019021636">
+<head>
+    <title>Thalias Skaal</title>
+    <firstline>I Syden, hvor ei Sol nedgaaer</firstline>
+    <source pages="55-57"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I Syden, hvor ei Sol nedgaaer,
 At morkne halve Dagen;
 Hvor Vintren intet Fierdingaar
@@ -1621,15 +1911,25 @@ Du Fadder selv til Barnet stod;
 H vi skulde vi da tie?
 Op, Brodrc! siunger froe i Mø d:
 Hil være vor Thalie!
+</body>
+</poem>
 
-T:Sang
-U:i Anledning af
-U:Dronningens og Kronprindsesfens Ankomst i Skuespilhuset,
-U:den 29de October 1825.
-BEGIVENHED:1825-10-29
-F:Atter Danerfolket iler
-SIDE:57-58
-
+<poem id="oehlenschlaeger2019021637">
+<head>
+    <title>Sang</title>
+    <subtitle>
+        <line>i Anledning af</line>
+        <line>Dronningens og Kronprindsesfens Ankomst i Skuespilhuset,</line>
+        <line>den 29de October 1825.</line>
+    </subtitle>
+    <firstline>Atter Danerfolket iler</firstline>
+    <source pages="57-58"/>
+    <dates>
+        <event>1825-10-29</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Atter Danerfolket iler
 Til Oetobers kiære Fest.
 Mild t Naturen, skiøndt den hviler.
@@ -1662,12 +1962,18 @@ Og, som Solen fra det Fierne
 Er vort Øie Madens Tolk,
 Stra a l, Ma ria! med bin Stierne
 Lange Ma d e n til dit Folk.
+</body>
+</poem>
 
-T:Orgelets Priis
-U:Hymne.
-F:Nu, Orgel! med fornyet Brag
-SIDE:59-60
-
+<poem id="oehlenschlaeger2019021638">
+<head>
+    <title>Orgelets Priis</title>
+    <subtitle>Hymne.</subtitle>
+    <firstline>Nu, Orgel! med fornyet Brag</firstline>
+    <source pages="59-60"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nu, Orgel! med fornyet Brag
 Ledsag vor fromme Sang i Dag,
 Lad mægtig dine Toner klinge,
@@ -1716,14 +2022,24 @@ De Store med de Smaa. de Ringe
 Fromt med de Høie sammenklingc:
 Kun Kim-lighed var Jesu Bud,
 Og kun i Kiærlighed er Gud!
+</body>
+</poem>
 
-T:Sang 
-U:til Jubelfesten i Selskabet Den nye Forening, til Jubelfesten i Selskabet Den nye Forening.
-U:Den 26de November 1825.
-F:I Axelskad der stander en Gaard
-BEGIVENHED:1825-11-26
-SIDE:61-64
-
+<poem id="oehlenschlaeger2019021639">
+<head>
+    <title>Sang</title>
+    <subtitle>
+        <line>til Jubelfesten i Selskabet Den nye Forening, til Jubelfesten i Selskabet Den nye Forening.</line>
+        <line>Den 26de November 1825.</line>
+    </subtitle>
+    <firstline>I Axelskad der stander en Gaard</firstline>
+    <source pages="61-64"/>
+    <dates>
+        <event>1825-11-26</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I Axelskad der stander en Gaard,
 Som lid t kun fin Plads har forandret.
 Imedens et heelt Halvhundred-Aar
@@ -1817,15 +2133,25 @@ Dog Tiden gier selv hverken Ondt eller Godt,
 Saa siunger da Helten til Ære:
 Vor Skytsaand i Tiden er Fredrik, vor Drot,
 Dens Vover ham jublende bære!
+</body>
+</poem>
 
-T:Sang
-U:for det Dramatisk-Litteraire Selskab
-U:ved Femogflirgetyveaars-Feften
-U:den 21de December 1825.
-F:En gammel Bøg sig hæver ene
-BEGIVENHED:1825-12-21
-SIDE:64-65
-
+<poem id="oehlenschlaeger2019021640">
+<head>
+    <title>Sang</title>
+    <subtitle>
+        <line>for det Dramatisk-Litteraire Selskab</line>
+        <line>ved Femogflirgetyveaars-Feften</line>
+        <line>den 21de December 1825.</line>
+    </subtitle>
+    <firstline>En gammel Bøg sig hæver ene</firstline>
+    <source pages="64-65"/>
+    <dates>
+        <event>1825-12-21</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En gammel Bøg sig hæver ene
 Paa Marken mellem Korn og Straae,
 Og vinker hid med svale Grene
@@ -1862,12 +2188,18 @@ Men yngre Slergter sig forsamle,
 Og turd er i de Gamles Spor.
 Vor G leedes Ska a l! den Skaal er din;
 Thi vande vi din Rod med Viin .
+</body>
+</poem>
 
-T:Juleaftens-Vise
-U:for Studenter-Foreningen.
-F:Froe til Festen samles vi
-SIDE:66-67
-
+<poem id="oehlenschlaeger2019021641">
+<head>
+    <title>Juleaftens-Vise</title>
+    <subtitle>for Studenter-Foreningen.</subtitle>
+    <firstline>Froe til Festen samles vi</firstline>
+    <source pages="66-67"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Froe til Festen samles vi
 Ved den muntre H oitid s lue;
 Aaret er nu snart forbi,
@@ -1916,14 +2248,22 @@ Vor Forening iblandt Klubber.
 Som en Eeg i Dalen, staae!
 Gid vi alle froe som Gubber
 Denne Aften mindes maae!
+</body>
+</poem>
 
-T:Sang
-U:ved Høitideligheden paa Landcadet-Academiet i Anledning af
-U:Kongens Fødselsdag
-U:i Aaret 1826
-F:O, Gud! du, som bestemte mig
-SIDE:68-69
-
+<poem id="oehlenschlaeger2019021642">
+<head>
+    <title>Sang</title>
+    <subtitle>
+        <line>ved Høitideligheden paa Landcadet-Academiet i Anledning af</line>
+        <line>Kongens Fødselsdag</line>
+        <line>i Aaret 1826</line>
+    </subtitle>
+    <firstline>O, Gud! du, som bestemte mig</firstline>
+    <source pages="68-69"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 For Talen.
 O, Gud! du, som bestemte mig
 For Danmark Sværd at føre!
@@ -1967,14 +2307,21 @@ Da siunge vi: Vo r Konge god!
 Dig offre vi vort Liv og Blod.
 Dit Fadersmiil belonner
 De unge Danmarks Sønner.
+</body>
+</poem>
 
-T:Sang
-U:for Enigheds-Selskabet paa
-U:Kongens Fødselsfest,
-T:1826.
-F:Enighedens Skiønne Navn
-SIDE:69-70
-
+<poem id="oehlenschlaeger2019021643">
+<head>
+    <title>1826.</title>
+    <subtitle>
+        <line>for Enigheds-Selskabet paa</line>
+        <line>Kongens Fødselsfest,</line>
+    </subtitle>
+    <firstline>Enighedens Skiønne Navn</firstline>
+    <source pages="69-70"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Enighedens Skiønne Navn
 Samler os til Glæde
 I det gode Kiobenhavn,
@@ -2007,14 +2354,22 @@ Himlen smile venligblaa,
 Altid Lykken seire,
 See dig fro som Olding graa
 I dit elskte Leire!
+</body>
+</poem>
 
-T:Cantate
-U:i Anledning af
-U:Kongens Fødselsdag,
-U:afsiungen i Regentskirken den 4de Februar 1826.
-F:Lyd høit, vor Sang!
-SIDE:71-72
-
+<poem id="oehlenschlaeger2019021644">
+<head>
+    <title>Cantate</title>
+    <subtitle>
+        <line>i Anledning af</line>
+        <line>Kongens Fødselsdag,</line>
+        <line>afsiungen i Regentskirken den 4de Februar 1826.</line>
+    </subtitle>
+    <firstline>Lyd høit, vor Sang!</firstline>
+    <source pages="71-72"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 For Talen.
 
 Lyd høit, vor Sang!
@@ -2068,15 +2423,21 @@ Men giensmiler Freden, da banker min Barm,
 Som varmt for min Pige, for Frederik varm.
 For Fredrik, for Danmark vi leve, vi dve.
 Og Gud skienke Held til det spirende Fro!
+</body>
+</poem>
 
-T:Til Anna Werschall,
-TOCTITEL:Til Anna Werschall,
-LINKTITEL:Til Anna Werschall,
-INDEXTITEL:Til Anna Werschall,
-U:da hun havde været syg.
-F:Du skyldfri Barm, et yndigt Giemme
-SIDE:73-74
-
+<poem id="oehlenschlaeger2019021645">
+<head>
+    <title>Til Anna Werschall,</title>
+    <toctitle>Til Anna Werschall,</toctitle>
+    <indextitle>Til Anna Werschall,</indextitle>
+    <linktitle>Til Anna Werschall,</linktitle>
+    <subtitle>da hun havde været syg.</subtitle>
+    <firstline>Du skyldfri Barm, et yndigt Giemme</firstline>
+    <source pages="73-74"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du skyldfri Barm, et yndigt Giemme
 For bedste Hierte, skiønue Stemme!
 Hvad trykte dig en foie Tid ?
@@ -2109,14 +2470,22 @@ D i t Minde skal bag Aftenboge
 Med Maanen ofte ham besøge.
 — Hvis den dig standser paa din Vei —
 Pluk ham en lille Glemmigei!
+</body>
+</poem>
 
-T:Prinds Frederik Carl Christians og Prindsesse Vilhelmine Marias Forlovelse
-U:I Anledning af
-U:Foraaret 1826.
-F:O Freia, som med Rosenqvist i Armen
-TODO:Fiks overoverskrift
-SIDE:74-77
-
+<poem id="oehlenschlaeger2019021646">
+<head>
+    <title>Prinds Frederik Carl Christians og Prindsesse Vilhelmine Marias Forlovelse</title>
+    <subtitle>
+        <line>I Anledning af</line>
+        <line>Foraaret 1826.</line>
+    </subtitle>
+    <firstline>O Freia, som med Rosenqvist i Armen</firstline>
+    <source pages="74-77"/>
+    <!-- TODO: Fiks overoverskrift -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 O Freia, som med Rosenqvist i Armen
 I gyldne Tid for høie Guder sang,
 Foer, som en Aftenstjerne, klar paa Karmen,
@@ -2209,12 +2578,18 @@ Naar du med Daad retferrdiggisr vort Haab.
 Du Fredriks, Christians Navn sik i din Daab;
 Lign begge disse elskelige Fa'dre,
 Og gamle Danmark kan ei vnske bedre.
+</body>
+</poem>
 
-T:Sommertørken
-U:Skrevet i Juli 1826.
-F:Du Livets Kilde, friske Regn
-SIDE:77-80
-
+<poem id="oehlenschlaeger2019021647">
+<head>
+    <title>Sommertørken</title>
+    <subtitle>Skrevet i Juli 1826.</subtitle>
+    <firstline>Du Livets Kilde, friske Regn</firstline>
+    <source pages="77-80"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du Livets Kilde, friske Regn,
 Som siunken ned fra dine Skyer
 Naturens unge Kraft fornyer!
@@ -2295,13 +2670,21 @@ Da styrkes atter Støvets Bryst,
 Sin Ladhed dorske Jord indhenter,
 Og skienker — hvad nu In g e n venter - -
 En gylden Høst.
+</body>
+</poem>
 
-T:Til min kære Fader, Joachim Conrad Oehlenschläger
-U:Paa hans Fødselsdag den 31te Juli 1826.
-BEGIVENHED:1826-07-31
-F:Danemark har ingen Klipper, ingen gamle Borgruiner
-SIDE:80-82
-
+<poem id="oehlenschlaeger2019021648">
+<head>
+    <title>Til min kære Fader, Joachim Conrad Oehlenschläger</title>
+    <subtitle>Paa hans Fødselsdag den 31te Juli 1826.</subtitle>
+    <firstline>Danemark har ingen Klipper, ingen gamle Borgruiner</firstline>
+    <source pages="80-82"/>
+    <dates>
+        <event>1826-07-31</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Danemark har ingen Klipper, ingen gamle Borgruiner,
 In g e n Flod, hvori sig Muren speiler, medens Stormen hviner;
 Til min kiære Fader, Joachim Conrad Oehlenschlager. 81
@@ -2335,11 +2718,17 @@ Alt, hvad altsaa jeg kan onske, Alt, hvad der mig er tilbage:
 Skienk, Alfader! denne Gubbe mange slige Vinterdage,
 Lad som Brud og lad som Brudgom sine Børnebørn ham see,
 Og lad længe Sundhedsrosen voxe midt i Vintersnee.
+</body>
+</poem>
 
-T:Til en Veninde
-F:Du vil, Veninde! jeg skal prise
-SIDE:82-84
-
+<poem id="oehlenschlaeger2019021649">
+<head>
+    <title>Til en Veninde</title>
+    <firstline>Du vil, Veninde! jeg skal prise</firstline>
+    <source pages="82-84"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du vil, Veninde! jeg skal prise
 Det ynderige Ermelund?
 Jeg digted gierne det en Vise,
@@ -2413,13 +2802,21 @@ Hvor hun et Jordban til mig plukte
 Og en beskeden Reseda;
 Selv na ar mig Skiebnen Døren lukte.
 Og hun maastcc er langt derfra.
+</body>
+</poem>
 
-T:Prinds Christian Frederiks Fødselsdag
-U:Den 18de September 1826.
-BEGIVENHED:1826-09-18
-F:Den Ædling, som Kunsten beskytter
-SIDE:85-86
-
+<poem id="oehlenschlaeger2019021650">
+<head>
+    <title>Prinds Christian Frederiks Fødselsdag</title>
+    <subtitle>Den 18de September 1826.</subtitle>
+    <firstline>Den Ædling, som Kunsten beskytter</firstline>
+    <source pages="85-86"/>
+    <dates>
+        <event>1826-09-18</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Den Ædling, som Kunsten beskytter;
 Som Musernes Dyrker bar t u r r;
 Som gierne til Tonerne lytter.
@@ -2460,15 +2857,25 @@ Nu spaltes ei Skioldungestammen.
 Dens Grene sig favne paa n y;
 Og Himlen med Kiærlighedsflammen
 Velsignelse sender fra Sky.
+</body>
+</poem>
 
-T:Sang
-U:ved
-U:Professor J. W. Hornemanns Sølvbryllup
-U:Den 9de October 1826
-BEGIVENHED:1826-10-09
-F:Du, som studeerte vel i Bogen
-SIDE:86-87
-
+<poem id="oehlenschlaeger2019021651">
+<head>
+    <title>Sang</title>
+    <subtitle>
+        <line>ved</line>
+        <line>Professor J. W. Hornemanns Sølvbryllup</line>
+        <line>Den 9de October 1826</line>
+    </subtitle>
+    <firstline>Du, som studeerte vel i Bogen</firstline>
+    <source pages="86-87"/>
+    <dates>
+        <event>1826-10-09</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du, som studeerte vel i Bogen,
 Der med Genie forfattet blev,
 Vi mene nemlig: katalogen,
@@ -2501,13 +2908,21 @@ Som Guld om eders Lokker staae.
 Og trylle Vinter om til Sommer!
 Lyksalighed! verrn med din Fred
 Om dette fieldne Blomsterbed.
+</body>
+</poem>
 
-T:Nyerups Jubelfest
-U:Den 15de October 1826.
-BEGIVENHED:1826-10-15
-F:Der var engang en Fyenbo, en Bondesøn
-SIDE:87-90
-
+<poem id="oehlenschlaeger2019021652">
+<head>
+    <title>Nyerups Jubelfest</title>
+    <subtitle>Den 15de October 1826.</subtitle>
+    <firstline>Der var engang en Fyenbo, en Bondesøn</firstline>
+    <source pages="87-90"/>
+    <dates>
+        <event>1826-10-15</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Der var engang en Fyenbo, en Bondesøn,
 Han giorde til sin Fader saa ydmyg en Bøn
 Om Orlov og Forlov,
@@ -2593,14 +3008,24 @@ Dit elskelige Minde, vor Nyerup! ei forgaaer.
 Der svæver du sonr Als,
 Og vækker Læsclyst
 I yngre Brødres Bryst.
+</body>
+</poem>
 
-T:Huusalferne
-U:Romance, helliget Dronningen og Kronprindsessen paa deres Fødselsdag.
-U:Den 28de October 1826.
-BEGIVENHED:1826-10-28
-F:Vi smaae Huusalfer kiedes grumt
-SIDE:91-94
-
+<poem id="oehlenschlaeger2019021653">
+<head>
+    <title>Huusalferne</title>
+    <subtitle>
+        <line>Romance, helliget Dronningen og Kronprindsessen paa deres Fødselsdag.</line>
+        <line>Den 28de October 1826.</line>
+    </subtitle>
+    <firstline>Vi smaae Huusalfer kiedes grumt</firstline>
+    <source pages="91-94"/>
+    <dates>
+        <event>1826-10-28</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Vi smaae Huusalfer kiedes grumt
 Paa dette ode Slo t her hiemme;
 Nu Altin g staaer saa taust og stumt.
@@ -2705,12 +3130,18 @@ Og hvis det godt nok ei er fleet.
 Sig Alf og Sangeren beklager.
 Tid t onfler man sig en Poet,
 Og finder kun en Versemager.
+</body>
+</poem>
 
-T:Carl Maria Webers Minde
-U:November 1826.
-FDen hulde Tone lyder, og forstummer:
-SIDE:95-96
-
+<poem id="oehlenschlaeger2019021654">
+<head>
+    <title>Carl Maria Webers Minde</title>
+    <subtitle>November 1826.</subtitle>
+    <firstline>Den hulde Tone lyder, og forstummer:</firstline>
+    <source pages="95-96"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Den hulde Tone lyder, og forstummer;
 Hvor kom den fra? hvor veg den atter hen?
 Besvget er saa kort. Af tause Slummer
@@ -2767,11 +3198,17 @@ Du var den stærke Sanger, som den blide;
 H vi skienktes Verden du saa kort en Dag?
 I dine Vanker den dig evig eier.
 Endt er din K a m p — og salig var din Se i e r .
+</body>
+</poem>
 
-T:De fattige Fiskere i Aggersogn
-F:Stands ei din Vogn
-SIDE:97-100
-
+<poem id="oehlenschlaeger2019021655">
+<head>
+    <title>De fattige Fiskere i Aggersogn</title>
+    <firstline>Stands ei din Vogn</firstline>
+    <source pages="97-100"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Stands ei din Vogn
 Ved Aggersøgn,
 Hvis der forbi du kiorer!
@@ -2864,11 +3301,17 @@ Er Fiskeren ei Kystens Pragt,
 Som Urt ved Bækken grønne?
 H il dig, som har ham Haanden rakt!
 Alfader vil dig lonne.
+</body>
+</poem>
 
-T:Den danske Sømand til Havet
-F:Jeg elsker høit det sølvblaa Hav
-SIDE:100-101
-
+<poem id="oehlenschlaeger2019021656">
+<head>
+    <title>Den danske Sømand til Havet</title>
+    <firstline>Jeg elsker høit det sølvblaa Hav</firstline>
+    <source pages="100-101"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Jeg elsker høit det sølvblaa Hav.
 Den Mark er let med K io l at ploie;
 Og skiøndt den ingen Frugter gav,
@@ -2909,12 +3352,18 @@ L a a vidt som denne Jord beboes.
 Og blier mig end ei Krandsen slettet.
 Og surres end mit Liig til Brættet -
 Jeg døer dog som en dansk Matros.
+</body>
+</poem>
 
-T:Søllings Minde
-U:Marts 1827.
-F:De grumsede Bølger med lydeligt Skrig
-SIDE:101-103
-
+<poem id="oehlenschlaeger2019021657">
+<head>
+    <title>Søllings Minde</title>
+    <subtitle>Marts 1827.</subtitle>
+    <firstline>De grumsede Bølger med lydeligt Skrig</firstline>
+    <source pages="101-103"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 De grumsede Bølger med lydeligt Skrig
 Mod Norriges Fieldstene synge;
 Som Havfruer grumme de vente paa Liig,
@@ -2959,11 +3408,17 @@ Nu lider ei længer den Aldrende Nød,
 Luunt sidder i Lee han for Vinde.
 Men Sollin g, som reiste jer Hytten — er død;
 I Gubber! velsigner hans Minde.
+</body>
+</poem>
 
-T:De fire Menneske-Aldere
-F:Hvilken Alder er vel skiønnest?
-SIDE:103-106
-
+<poem id="oehlenschlaeger2019021658">
+<head>
+    <title>De fire Menneske-Aldere</title>
+    <firstline>Hvilken Alder er vel skiønnest?</firstline>
+    <source pages="103-106"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hvilken Alder er vel skiønnest?
 Barndomsvennen yndiggrønnest
 Vinker med sit Trylleri.
@@ -3044,13 +3499,21 @@ Barndomsspog og Ungdomsglæde,
 Manddomskraft og Oldingsro
 Vawes til mit Straaleklæde
 I Udødeligheds Bo.
+</body>
+</poem>
 
-T:Joachim Conrad Oehlenschläger
-U:Mai 1827.
-NOTE:Adam Oehlenschlägers fader.
-F:Den unge Mai udspringer atter fro
-SIDE:106-110
-
+<poem id="oehlenschlaeger2019021659">
+<head>
+    <title>Joachim Conrad Oehlenschläger</title>
+    <subtitle>Mai 1827.</subtitle>
+    <firstline>Den unge Mai udspringer atter fro</firstline>
+    <notes>
+        <note>Adam Oehlenschlägers fader.</note>
+    </notes>
+    <source pages="106-110"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Den unge Mai udspringer atter fro,
 Og Sangfugl-Skaren vender glad til Nord,
 Med Græsset dækker sig den stiore Jo rd ,
@@ -3172,13 +3635,21 @@ Og Haabets Grønt selv sarver Skven varm.
 Ingen Klage!
 Kun tilbage
 Sank han i sin Skabers Arm.
+</body>
+</poem>
 
-T:Prindsesse Caroline Amalias Fødselsdag
-U:Den 28de Juni 1827.
-F:Min lille Sang! hvi est du ei
-BEGIVENHED:1827-06-28
-SIDE:111-112
-
+<poem id="oehlenschlaeger2019021660">
+<head>
+    <title>Prindsesse Caroline Amalias Fødselsdag</title>
+    <subtitle>Den 28de Juni 1827.</subtitle>
+    <firstline>Min lille Sang! hvi est du ei</firstline>
+    <source pages="111-112"/>
+    <dates>
+        <event>1827-06-28</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Min lille Sang! hvi est du ei
 En Urt, Fyrstinden i sin Hauge finder,
 Der spirer aarlig een s paa hendes Vei,
@@ -3209,13 +3680,21 @@ Skiøndt dine Blade kun er smaae,
 I dig dog Troskab boer, som ei kan Godhed glemme.
 Saa i i l til Sorgenfri, du tiender Beien nok,
 Og bland dig i den store Blomsterslok!
+</body>
+</poem>
 
-T:Prinds Christian Frederiks Fødselsdag
-U:Den 18de September 1827.
-F:Christian! hvergang din Fødselsdag September os bringer
-BEGIVENHED:1827-09-18
-SIDE:112-113
-
+<poem id="oehlenschlaeger2019021661">
+<head>
+    <title>Prinds Christian Frederiks Fødselsdag</title>
+    <subtitle>Den 18de September 1827.</subtitle>
+    <firstline>Christian! hvergang din Fødselsdag September os bringer</firstline>
+    <source pages="112-113"/>
+    <dates>
+        <event>1827-09-18</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Christian! hvergang din Fødselsdag September os bringer,
 Svulmer os Hiertct af Lyst, lokker mig Harpen til Klang.
 Baaren beskaler den qviddrcnde Fugl, naar Bakkene risle;
@@ -3254,12 +3733,18 @@ Gierne lytted du her til din Skialds oldprisende Sange,
 Aabent var Hjertet for hver errlig og strerbende Kraft.
 Derfor hylder dig Kunst og Videnskab som Beskytter,
 Og paa din Fødselsdag rækkes dig Musernes Krands.
+</body>
+</poem>
 
-T:Vilhelm Peter Zeuthen.
-U:October 1827.
-F:I Livels Sommer stod saa smukt
-SIDE:113
-
+<poem id="oehlenschlaeger2019021662">
+<head>
+    <title>Vilhelm Peter Zeuthen.</title>
+    <subtitle>October 1827.</subtitle>
+    <firstline>I Livels Sommer stod saa smukt</firstline>
+    <source pages="113"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I Livels Sommer stod saa smukt
 Dit Manddomstrer, sin Skabers Ære.
 Til Himlen foer din Blomst; sin Frugt
@@ -3268,12 +3753,18 @@ Hist vender sig vor Klagesang
 Til Fryd, naar vi dig atter møde.
 Du vs bedrovcd sorste Gang,
 O elskte Vilh e lm! da du døde.
+</body>
+</poem>
 
-T:Til Camma Rahbek
-U:Paa hendes Fødselsdag
-F:Til Fødselsdag en Bog at yde
-SIDE:114
-
+<poem id="oehlenschlaeger2019021663">
+<head>
+    <title>Til Camma Rahbek</title>
+    <subtitle>Paa hendes Fødselsdag</subtitle>
+    <firstline>Til Fødselsdag en Bog at yde</firstline>
+    <source pages="114"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Til Fødselsdag en Bog at yde
 Dig midt i Poesiens Skiød,
 Det, kicere Camma! var at byde
@@ -3290,12 +3781,18 @@ D rik Sundheds Thee, som Sorgen slukker,
 Dig Himlen skienke Livets Vand,
 Og aldrig mangle Glædens Sukker
 For dig og for din Ægtemand!
+</body>
+</poem>
 
-T:Sange for Metropolitanskolens Disciple
-U:Den 31te December 1827
-F:Du, som tændte Kundskabs Kerte
-SIDE:114-116
-
+<poem id="oehlenschlaeger2019021664">
+<head>
+    <title>Sange for Metropolitanskolens Disciple</title>
+    <subtitle>Den 31te December 1827</subtitle>
+    <firstline>Du, som tændte Kundskabs Kerte</firstline>
+    <source pages="114-116"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Choral.
 Du, som tændte Kundskabs Kerte,
 Viisdoms Fader! paa vor Vei,
@@ -3343,12 +3840,18 @@ Forsvunden Oldtid skal os lære,
 Det døde Sprog, den døde Helt,
 At virke til Fremtidens Ære
 For Livet ved det danske Bastt.
+</body>
+</poem>
 
-T:Sang for Musikkonservatoriet
-U:Den 10de Februar 1828.
-F:Himmelske Lyd! som en Engel med Vinger
-SIDE:116-117
-
+<poem id="oehlenschlaeger2019021665">
+<head>
+    <title>Sang for Musikkonservatoriet</title>
+    <subtitle>Den 10de Februar 1828.</subtitle>
+    <firstline>Himmelske Lyd! som en Engel med Vinger</firstline>
+    <source pages="116-117"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Himmelske Lyd! som en Engel med Vinger
 Flyver usynlig fra Gud du til Jord;
 Trøsten du stank den Bedrovcde bringer,
@@ -3373,12 +3876,18 @@ Smiler igicnnem det damrende Flor.
 Himmelske Lyd! din Almagt vi hylde,
 Dig vore reneste Glader vi skylde,
 Va r da vor Tolk, hvor ei Laben har Ord.
+</body>
+</poem>
 
-T:Prindsesse Caroline Amalias Fødselsdag.
-U:Den 28de Juni 1828.
-F:Vor Amalias Fødselsfest
-SIDE:117-119
-
+<poem id="oehlenschlaeger2019021666">
+<head>
+    <title>Prindsesse Caroline Amalias Fødselsdag.</title>
+    <subtitle>Den 28de Juni 1828.</subtitle>
+    <firstline>Vor Amalias Fødselsfest</firstline>
+    <source pages="117-119"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Vor Amalias Fødselsfest
 Vi l d e vi saa gierne siunge.
 Al t fo r svage D i g t e r t u n g e!
@@ -3423,13 +3932,21 @@ Sin taknemligstumme Giest?
 O, for alle skiønne Verrker,
 Naar sig Folclsen forstærker,
 Ta v s h e d t y d e r Glæden bedst .
+</body>
+</poem>
 
-T:Sange for det kongelige kiøbenhavnske Skydeselskab
-U:Den 31te Juli 1828.
-F:Til aarlig Fryd os samler her
-BEGIVENHED:1828-07-31
-SIDE:119-121
-
+<poem id="oehlenschlaeger2019021667">
+<head>
+    <title>Sange for det kongelige kiøbenhavnske Skydeselskab</title>
+    <subtitle>Den 31te Juli 1828.</subtitle>
+    <firstline>Til aarlig Fryd os samler her</firstline>
+    <source pages="119-121"/>
+    <dates>
+        <event>1828-07-31</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Til Kongen.
 Til aarlig Fryd os samler her
 En aarlig Fest;
@@ -3480,11 +3997,17 @@ Saa Wesscl sang. Hvad kan vel bedre synge
 Den Fugledrot, som stander ved sit Maal?
 Hver Broder Held i denne Samfuudsklynge!
 D e t gode gamle danske G i l d e s Sk a a l!
+</body>
+</poem>
 
-T:Dampskibsfarten
-F:Du stærke Damp, usynlig i din Vælde
-SIDE:121-123
-
+<poem id="oehlenschlaeger2019021668" variant="oehlenschlaeger20190216121">
+<head>
+    <title>Dampskibsfarten</title>
+    <firstline>Du stærke Damp, usynlig i din Vælde</firstline>
+    <source pages="121-123"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du stærke Damp, usynlig i din Vælde
 Med Lynet i din Tordensky,
 Som fordum monne Helteskaren fælde,
@@ -3545,14 +4068,22 @@ Da kan de bedste Jordens Verxter trives.
 Som trådes ned i siendtlig Kamp.
 O, felsomt! — at saa hurtig de oplives,
 Det skylde vi en flygtig Damp.
+</body>
+</poem>
 
-T:Indskrifter til Transparenter
-U:paa det kongelige Theater ved Illuminationen i Anledning af
-U:Knuds Frederik Carl Christians og Prindsesse Vilhelmines Formæling.
-U:Den 1ste November 1828.
-F:Al anden Sang i Dag du glemme
-SIDE:123-124
-
+<poem id="oehlenschlaeger2019021669">
+<head>
+    <title>Indskrifter til Transparenter</title>
+    <subtitle>
+        <line>paa det kongelige Theater ved Illuminationen i Anledning af</line>
+        <line>Knuds Frederik Carl Christians og Prindsesse Vilhelmines Formæling.</line>
+        <line>Den 1ste November 1828.</line>
+    </subtitle>
+    <firstline>Al anden Sang i Dag du glemme</firstline>
+    <source pages="123-124"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Erato, Amor, Hymen.
 Al anden Sang i Dag du glemme,
 Erato! sving i Sky din Aand,
@@ -3567,13 +4098,21 @@ Beskeden hun tilbage træder,
 Thalia verre Glædens Tolk!
 Terpsichøre med Muser dandse,
 Mens Danmark sletter Myrtekrandse.
+</body>
+</poem>
 
-T:De danske Studenters Lykønskning tit Kongehuset
-U:den 2den November 1828.
-BEGIVENHED:1828-11-02
-F:Elskov, som til Jordens Glæde
-SIDE:124-125
-
+<poem id="oehlenschlaeger2019021670">
+<head>
+    <title>De danske Studenters Lykønskning tit Kongehuset</title>
+    <subtitle>den 2den November 1828.</subtitle>
+    <firstline>Elskov, som til Jordens Glæde</firstline>
+    <source pages="124-125"/>
+    <dates>
+        <event>1828-11-02</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Elskov, som til Jordens Glæde
 Sm ile r som en Engel skiøn!
 Danmarks Ungæsvcnde qvæde
@@ -3614,14 +4153,21 @@ Fredrik og Ma ria ligne
 Hver en Fremtids Kongeslægt!
 Elskte Brudepar velsigne
 Himlen med sin Baretægt!
+</body>
+</poem>
 
-T:Danrigets Lykønskninger
-U:Allegorier
-U:i Anledning af Prinds Frederik Carl Christians og PrindseSse Vilhelmine Marias Ægteforening.
-F:Blandt alle Nords udstrakte Lande
-SIDE:126-136
-
-
+<poem id="oehlenschlaeger2019021671">
+<head>
+    <title>Danrigets Lykønskninger</title>
+    <subtitle>
+        <line>Allegorier</line>
+        <line>i Anledning af Prinds Frederik Carl Christians og PrindseSse Vilhelmine Marias Ægteforening.</line>
+    </subtitle>
+    <firstline>Blandt alle Nords udstrakte Lande</firstline>
+    <source pages="126-136"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Gefion,
 med Egelov om sit Klædebon og med Roser i Haaret,
 bringer Prindsessen en Krands.
@@ -3877,15 +4423,25 @@ Hvori Elskovsrosen brænder.
 Axelskad har Krandsen flettet.
 Kongens Hiem har ei forgiettet.
 Hvad den Fædrene sorjctted.
+</body>
+</poem>
 
-T:Cantate til Universitetsfesten
-U:i Anledning of
-U:Prinds Frederik Carl Christians og Prindsesse Vilhelmines Ægtesorening.
-U:Den 11te November 1828.
-BEGIVENHED:1828-11-11
-F:O Kiærlighed, som evig boer
-SIDE:136-138
-
+<poem id="oehlenschlaeger2019021672">
+<head>
+    <title>Cantate til Universitetsfesten</title>
+    <subtitle>
+        <line>i Anledning of</line>
+        <line>Prinds Frederik Carl Christians og Prindsesse Vilhelmines Ægtesorening.</line>
+        <line>Den 11te November 1828.</line>
+    </subtitle>
+    <firstline>O Kiærlighed, som evig boer</firstline>
+    <source pages="136-138"/>
+    <dates>
+        <event>1828-11-11</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Chor .
 O Kiærlighed, som evig boer,
 Hvor Aandens Glæder pryde Livet.
@@ -3948,12 +4504,18 @@ Herre! velsign dem med din høre Naade.
 Elskeligt Monster skienke de os baade.
 Lykkelig, Danmark! skienk du dem et Eden,
 Sa lig t i Freden.
+</body>
+</poem>
 
-T:Til Kongen
-U:Med Heltedigtet Hrolf Krake, 1828.
-F:Naar jeg saae Hrolf henride
-SIDE:138-139
-
+<poem id="oehlenschlaeger2019021673">
+<head>
+    <title>Til Kongen</title>
+    <subtitle>Med Heltedigtet Hrolf Krake, 1828.</subtitle>
+    <firstline>Naar jeg saae Hrolf henride</firstline>
+    <source pages="138-139"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Naar jeg saae Hrolf henride,
 Lyshaaret, faderlig.
 Ved sine Kccmpers Side,
@@ -4002,12 +4564,18 @@ Ham ingen Farer true.
 Han smiler kiækt og trygt,
 Og andre Konger skue
 Paa ham med Ærefrygt.
+</body>
+</poem>
 
-T:Til Ove Malling
-U:I et Exemplar af Hrolf Krake, 1828.
-F:Du, som alt for et halvt Aarhundrcd siden
-SIDE:140-141
-
+<poem id="oehlenschlaeger2019021674">
+<head>
+    <title>Til Ove Malling</title>
+    <subtitle>I et Exemplar af Hrolf Krake, 1828.</subtitle>
+    <firstline>Du, som alt for et halvt Aarhundrcd siden</firstline>
+    <source pages="140-141"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du, som alt for et halvt Aarhundrcd siden
 R o l f Kra g e læste, som din Ewalds Ven;
 Du, som gik stedse frem med Tiden,
@@ -4020,13 +4588,21 @@ Modtag min Hro l s, og Tak, fordi du skienker
 Den faderlig Opmerrksomhed til Løn.
 Du fine Føler! sunde Tænker!
 Tilgiv den Stolthed, at jeg kalder mig din Søn.
+</body>
+</poem>
 
-T:Collins Sølvbryllup
-U:Den 13de November 1828.
-F:Og nu en Skaal for den Dannemand
-BEGIVENHED:1828-11-13
-SIDE:141-142
-
+<poem id="oehlenschlaeger2019021675">
+<head>
+    <title>Collins Sølvbryllup</title>
+    <subtitle>Den 13de November 1828.</subtitle>
+    <firstline>Og nu en Skaal for den Dannemand</firstline>
+    <source pages="141-142"/>
+    <dates>
+        <event>1828-11-13</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Og nu en Skaal for den Dannemand,
 Som virker kraftigt for Fædrelandet,
 Og hvad ei enkelt saa Mangen kan.
@@ -4069,13 +4645,19 @@ Som begge fylde de fem og tyve.
 Med lige Held gid I dobbelt længe
 Bla n d t Barnepiger og Børnedrenge
 Jer Fest fornye!
+</body>
+</poem>
 
-T:Hvo har Smag?
-F:Hvo har Smag?
-SIDE:143-145
-
+<poem id="oehlenschlaeger2019021676">
+<head>
+    <title>Hvo har Smag?</title>
+    <firstline>Hvo har Smag?</firstline>
+    <source pages="143-145"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hvo har Smag?
-=Holberg= havde Smag.
+<w>Holberg</w> havde Smag.
 Holberg? gammel Holberg? Jo, han har en god Dag.
 Af Vittighed en Stump,
 Men vamimclig og plump.
@@ -4139,12 +4721,18 @@ Som Hunden stikker Hvalp,
 Bor Eleganæn slikke Thalias Foster reent,
 Saa kommer sikkert Smagen, om end den kommer seent.
 Den nok forbedrer sig med Tiden.
+</body>
+</poem>
 
-T:Karen Margareta Rahbek, født Heger
-U:Den 27de Januar 1829.
-F:See Graveren i aarle Stund
-SIDE:145-148
-
+<poem id="oehlenschlaeger2019021677">
+<head>
+    <title>Karen Margareta Rahbek, født Heger</title>
+    <subtitle>Den 27de Januar 1829.</subtitle>
+    <firstline>See Graveren i aarle Stund</firstline>
+    <source pages="145-148"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 See Graveren i aarle Stund
 I Dødens kolde, sneebcdækte Have,
 Han hugger i den frosne Bund
@@ -4218,15 +4806,25 @@ Du var en P e r le dyrebar,
 Du var, hvad os d it elskte Navn betyder.
 Vi se es i g i e n! Den fromme Tanke trøster
 Din Mand, din Slccgt, din Ven, din Broder og din Søster.
+</body>
+</poem>
 
-T:Holbøll
-U:Fremsagt ved en Mindefest i det Dramatisk-Litteraire Selskab,
-U:hvor den Afdøde havde været Æresmedlem.
-U:Den 4de Marts 1829.
-F:Vor Kreds! ak, savner du igien
-BEGIVENHED:1829-03-04
-SIDE:148-150
-
+<poem id="oehlenschlaeger2019021678">
+<head>
+    <title>Holbøll</title>
+    <subtitle>
+        <line>Fremsagt ved en Mindefest i det Dramatisk-Litteraire Selskab,</line>
+        <line>hvor den Afdøde havde været Æresmedlem.</line>
+        <line>Den 4de Marts 1829.</line>
+    </subtitle>
+    <firstline>Vor Kreds! ak, savner du igien</firstline>
+    <source pages="148-150"/>
+    <dates>
+        <event>1829-03-04</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Vor Kreds! ak, savner du igien
 En ædel Ven?
 Har Døden ham os røvet?
@@ -4287,12 +4885,18 @@ Thalia mangen Glæde nod
 Med dig i Livets Scene,
 Og derfor klager ved din Død
 Den rørte Melpomene.
+</body>
+</poem>
 
-T:Til Kronprindssesse Caroline
-U:Mai 1829.
-F:Hør, ædle, blide Kongemø!
-SIDE:150-153
-
+<poem id="oehlenschlaeger2019021679">
+<head>
+    <title>Til Kronprindssesse Caroline</title>
+    <subtitle>Mai 1829.</subtitle>
+    <firstline>Hør, ædle, blide Kongemø!</firstline>
+    <source pages="150-153"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hør, ædle, blide Kongemø!
 Hvad Skialden har at sige:
 Han hilser dig fra Land og O
@@ -4365,12 +4969,18 @@ Alfader! sign et dobbelt Par,
 Et dobbelt Held du give;
 Og stor, som Folkets Glæde var,
 Lad stedse Glæden blive.
+</body>
+</poem>
 
-T:Til mine svenske Venner
-U:Juni 1829.
-F:Som lille Gut fra, Fredriksberg! din Bakke
-SIDE:153-155
-
+<poem id="oehlenschlaeger2019021680">
+<head>
+    <title>Til mine svenske Venner</title>
+    <subtitle>Juni 1829.</subtitle>
+    <firstline>Som lille Gut fra, Fredriksberg! din Bakke</firstline>
+    <source pages="153-155"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Som lille Gut fra, Fredriksberg! din Bakke,
 Jeg daglig saae den svenske Strand,
 Med hviden Se il den Smakke,
@@ -4435,13 +5045,21 @@ Men hør mig, Hertha! du, vor fælles Moder!
 Hør, Axel! hvor din Kirke staaer:
 J e g elsker dem som Br o d e r ,
 Saalænge H i e r t e t staaer .
+</body>
+</poem>
 
-T:Hilsen til vore svenske Venner
-U:Den 28de Juni 1829.
-F:Velkommen, Venner! til Danmarks Skov
-BEGIVENHED:1829-06-28
-SIDE:155-156
-
+<poem id="oehlenschlaeger2019021681">
+<head>
+    <title>Hilsen til vore svenske Venner</title>
+    <subtitle>Den 28de Juni 1829.</subtitle>
+    <firstline>Velkommen, Venner! til Danmarks Skov</firstline>
+    <source pages="155-156"/>
+    <dates>
+        <event>1829-06-28</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Velkommen, Venner! til Danmarks Skov,
 Hvor Bøgen svaler med breden Skygge;
 Hvor under Skjoldungens Fader-Lov
@@ -4474,13 +5092,21 @@ Ei Dansken svigter
 De gicstfri Pligter.
 Th i Skaal for eder og eders Dig te r!
 Den Ædles Skaal!
+</body>
+</poem>
 
-T:Caroline Amalia.
-U:Den 28de Juni 1829.
-BEGIVENHED:1829-06-28
-F:Camoenen kommer i din Skov, Fyrstinde!
-SIDE:157
-
+<poem id="oehlenschlaeger2019021682">
+<head>
+    <title>Caroline Amalia.</title>
+    <subtitle>Den 28de Juni 1829.</subtitle>
+    <firstline>Camoenen kommer i din Skov, Fyrstinde!</firstline>
+    <source pages="157"/>
+    <dates>
+        <event>1829-06-28</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Camoenen kommer i din Skov, Fyrstinde!
 At see den Fest. hvortil din H o itid byder.
 Rubinen liig . din Morgensol frembryder.
@@ -4495,14 +5121,22 @@ Am a lia! du Christians. Folkets Glæde!
 Lad en Sønet, en Blomst, dig ei mishage.
 Indsluttet af d i t Na v n . Dit Navn den smykke!
 Alfader skienke dig sin bedste Lykke!
+</body>
+</poem>
 
-T:Cantate
-U:i Anledning af
-U:Prinds Frederik Ferdinands og Kronprindsesse Carolinas Ægteforening.
-U:Opført ved Kiøbenhavns Universitets Fest den 8de August 1829.
-F:Festlige Tone gienlyder atter
-SIDE:157-160
-
+<poem id="oehlenschlaeger2019021683">
+<head>
+    <title>Cantate</title>
+    <subtitle>
+        <line>i Anledning af</line>
+        <line>Prinds Frederik Ferdinands og Kronprindsesse Carolinas Ægteforening.</line>
+        <line>Opført ved Kiøbenhavns Universitets Fest den 8de August 1829.</line>
+    </subtitle>
+    <firstline>Festlige Tone gienlyder atter</firstline>
+    <source pages="157-160"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 F o r Ta le n .
 C h o r.
 Festlige Tone
@@ -4582,13 +5216,21 @@ Og nane den I ld, som opflammer jert Bryst,
 Til Danemarks Glæde, til Frederiks Glæde,
 Til Fryd for Ma ria, til Fremtidens Trøst,
 Til vordende Slægters Beundring og Lyst!
+</body>
+</poem>
 
-T:Christian Frederik
-U:Den 18de September 1829.
-F:Christian! fra Bragis og Eivinds Oldtid
-BEGIVENHED:1829-09-18
-SIDE:160-162
-
+<poem id="oehlenschlaeger2019021684">
+<head>
+    <title>Christian Frederik</title>
+    <subtitle>Den 18de September 1829.</subtitle>
+    <firstline>Christian! fra Bragis og Eivinds Oldtid</firstline>
+    <source pages="160-162"/>
+    <dates>
+        <event>1829-09-18</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Christian! fra Bragis og Eivinds Oldtid
 Til den Festens Dag, da din Sø n for Freia
 Knæled, lytted froc Skioldunger i Hal til
@@ -4630,15 +5272,25 @@ Hosten hilfer dig fro: den klare Stierne
 Funkler fra Blaahvælvingen ned til Jordens
 Astre; duftende sig i Pragten blander
 Hndig Reseda.
+</body>
+</poem>
 
-T:Cantate
-U:opført i Anledning af
-U:den polytechniske Lære-Anstaæts Indvielse, ved Kongens høie Nærværellse,
-U:den 5te November 1829.
-BEGIVENHED:1829-11-05
-F:Natur! du af din Fylde skienker
-SIDE:162-165
-
+<poem id="oehlenschlaeger2019021685">
+<head>
+    <title>Cantate</title>
+    <subtitle>
+        <line>opført i Anledning af</line>
+        <line>den polytechniske Lære-Anstaæts Indvielse, ved Kongens høie Nærværellse,</line>
+        <line>den 5te November 1829.</line>
+    </subtitle>
+    <firstline>Natur! du af din Fylde skienker</firstline>
+    <source pages="162-165"/>
+    <dates>
+        <event>1829-11-05</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 F o r Talen.
 C Kor.
 Natur! du af din Fylde skienker
@@ -4712,15 +5364,21 @@ Alt trives i en kraftig Sol;
 Th i lyder Harpens Tone.
 Taknemlighedens blaa Vio l
 Sig slynger i hans Krone.
+</body>
+</poem>
 
-T:Til de danske Studenter,
-TOCTITEL:Til de danske Studenter
-LINKTITEL:Til de danske Studenter
-INDEXTITEL:Til de danske Studenter
-U:som Natten mellem den 14de og 15de November 1829 hædrede mig med et Vivat.
-F:Den, som Apol til Skiald har kaaret
-SIDE:165-166
-
+<poem id="oehlenschlaeger2019021686">
+<head>
+    <title>Til de danske Studenter,</title>
+    <toctitle>Til de danske Studenter</toctitle>
+    <indextitle>Til de danske Studenter</indextitle>
+    <linktitle>Til de danske Studenter</linktitle>
+    <subtitle>som Natten mellem den 14de og 15de November 1829 hædrede mig med et Vivat.</subtitle>
+    <firstline>Den, som Apol til Skiald har kaaret</firstline>
+    <source pages="165-166"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Den, som Apol til Skiald har kaaret,
 Den nærer han med Vaarens Kost;
 Og selv i sildig Vintersrost
@@ -4758,13 +5416,21 @@ Velsign, Apol lo! deres Ferrd,
 Og lad dem dine Laurbær bære
 Til Fredriks og til Danmarks Ære,
 Og gior mig deres Venskab vaæd.
+</body>
+</poem>
 
-T:Mallings Død
-U:Kantate ved Universitetets Sørgehøitid den 23de Januar 1830.
-F:Stemmer i med sagte Sørgetoner
-BEGIVENHED:1830-01-23
-SIDE:167-169
-
+<poem id="oehlenschlaeger2019021687">
+<head>
+    <title>Mallings Død</title>
+    <subtitle>Kantate ved Universitetets Sørgehøitid den 23de Januar 1830.</subtitle>
+    <firstline>Stemmer i med sagte Sørgetoner</firstline>
+    <source pages="167-169"/>
+    <dates>
+        <event>1830-01-23</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 F o r Talen.
 C h o r.
 Stemmer i med sagte Sørgetoner,
@@ -4844,12 +5510,18 @@ Sto r var dine Venners Skare;
 Mangen Sø n en Fader mistet har.
 Hiertet evig skal bevare
 Din Erindring dyrebar.
+</body>
+</poem>
 
-T:Sangens Musa
-U:Digtet til en Melodie af Schall
-F:Du hulde Sang, min Ven i Livet!
-SIDE:170
-
+<poem id="oehlenschlaeger2019021688">
+<head>
+    <title>Sangens Musa</title>
+    <subtitle>Digtet til en Melodie af Schall</subtitle>
+    <firstline>Du hulde Sang, min Ven i Livet!</firstline>
+    <source pages="170"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du hulde Sang, min Ven i Livet!
 Kom, skienk mig din Fortrolighed.
 Du blev til Trøst vor Lamgsel givet,
@@ -4874,15 +5546,25 @@ Usynligt er dit skiønne Rige
 I Luften blaa, d it Ætherhav.
 Opsving mig ad din Himmelskige,
 Naar du bar tonet ved min Grav!
+</body>
+</poem>
 
-T:Sang
-U:i Anledning af
-U:Kongens Fødselsfest
-U:Afsungen i Skydeselskabet den 4de Februar 1830.
-F:Blomstrer den varme, den kraftige Sommer
-BEGIVENHED:1830-02-04
-SIDE:171
-
+<poem id="oehlenschlaeger2019021689">
+<head>
+    <title>Sang</title>
+    <subtitle>
+        <line>i Anledning af</line>
+        <line>Kongens Fødselsfest</line>
+        <line>Afsungen i Skydeselskabet den 4de Februar 1830.</line>
+    </subtitle>
+    <firstline>Blomstrer den varme, den kraftige Sommer</firstline>
+    <source pages="171"/>
+    <dates>
+        <event>1830-02-04</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Blomstrer den varme, den kraftige Sommer,
 Naar den med Frugt og med Roserne kommer.
 Samles vi Skytter, som Skytter i Skov.
@@ -4907,12 +5589,18 @@ Sønnerne siunge til Bagerets Lyd.
 Elskede Fredrik! gid lange du vare
 Danemarks Lykke, som Danemarks Ære!
 In te t fordunkle, vor Fader! din Fryd.
+</body>
+</poem>
 
-T:Frederik Münter
-U:April 1830.
-F:Atter Sørgeharpen klinger
-SIDE:172-174
-
+<poem id="oehlenschlaeger2019021690">
+<head>
+    <title>Frederik Münter</title>
+    <subtitle>April 1830.</subtitle>
+    <firstline>Atter Sørgeharpen klinger</firstline>
+    <source pages="172-174"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Atter Sørgeharpen klinger,
 Hyllet i det sorte Flor.
 Dodens Engel! paa de kolde Vinger
@@ -4990,13 +5678,21 @@ Kiærligheden, Troen, Haabet hilse dig i Himlens Eden.
 Troen st'ienkte dig sit Anker, og sin Rose Kiærligheden.
 Rosen sig i Ankret slynger, du har naaet en sikker Havn,
 Og fra Himlen du nedsmiler salig i din Jesu Favn.
+</body>
+</poem>
 
-T:Ved Fru Maria Hornemanns Jordefærd
-U:Den 19de Mai 1830.
-BEGIVENHED:1830-05-19
-F:Med hellig Andagts stærke Mod
-SIDE:175
-
+<poem id="oehlenschlaeger2019021691">
+<head>
+    <title>Ved Fru Maria Hornemanns Jordefærd</title>
+    <subtitle>Den 19de Mai 1830.</subtitle>
+    <firstline>Med hellig Andagts stærke Mod</firstline>
+    <source pages="175"/>
+    <dates>
+        <event>1830-05-19</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Med hellig Andagts stærke Mod
 Du Jorden og dens Q v a l forlod.
 De klare Bo rn i angstlig Klnnge
@@ -5009,13 +5705,21 @@ De brudte Blomster paa din Baare
 Bedugged han med Sorgens stille Taare.
 Ak, hvi forlodst du Bo rn og Ven?
 Signe dig G u d! — Vi sees iglen!
+</body>
+</poem>
 
-T:Sange ved Høitideligheden i Skydeselskabet
-U:den 25de Mai 1830.
-F:Naar atter Vaarens grønne Vinge
-BEGIVENHED:1830-05-25
-SIDE:175-178
-
+<poem id="oehlenschlaeger2019021692">
+<head>
+    <title>Sange ved Høitideligheden i Skydeselskabet</title>
+    <subtitle>den 25de Mai 1830.</subtitle>
+    <firstline>Naar atter Vaarens grønne Vinge</firstline>
+    <source pages="175-178"/>
+    <dates>
+        <event>1830-05-25</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Kongen og Dronningen.
 Naar atter Vaarens grønne Vinge
 Bedakker Vang og Mark og Skov;
@@ -5084,13 +5788,21 @@ Og Axelskad.
 Slyn g lacirge dine Roser i
 Hans Egeblad!
 Vor Christian, Amalia leve!
+</body>
+</poem>
 
-T:Rahbeks Minde
-U:Cantate,
-U:Opført i Studenter-Foreningen den 16de Juni 1830.
-F:Et venligt Billed til os seer
-SIDE:178-179
-
+<poem id="oehlenschlaeger2019021693">
+<head>
+    <title>Rahbeks Minde</title>
+    <subtitle>
+        <line>Cantate,</line>
+        <line>Opført i Studenter-Foreningen den 16de Juni 1830.</line>
+    </subtitle>
+    <firstline>Et venligt Billed til os seer</firstline>
+    <source pages="178-179"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Q v a r t c t .
 Et venligt Billed til os seer,
 Fra Vuggen hist det smiler;
@@ -5165,13 +5877,21 @@ Vi vidste det dog alle;
 Vi hørte ham i Axelhallc.
 Vor elskte Låner var en brav Student,
 Taknemligt mindes vi ham alle.
+</body>
+</poem>
 
-T:Sange for Skydeselskabet
-U:Den 29de Juli 1830
-F:Vor Konge drog i Landet om
-BEGIVENHED:1830-07-29
-SIDE:181-183
-
+<poem id="oehlenschlaeger2019021694">
+<head>
+    <title>Sange for Skydeselskabet</title>
+    <subtitle>Den 29de Juli 1830</subtitle>
+    <firstline>Vor Konge drog i Landet om</firstline>
+    <source pages="181-183"/>
+    <dates>
+        <event>1830-07-29</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Til Kongen.
 Vor Konge drog i Landet om,
 Og hvor han kom,
@@ -5234,12 +5954,18 @@ En Taare stod
 For Danmark i dit Glædesblik,
 Vo r Dannebod!
 Og for din Frederik.
+</body>
+</poem>
 
-T:Til Humaniteten
-U:Skrevet efter Julirevolutionen 1830.
-F:De vilde gierne myrde dig herneden
-SIDE:183-185
-
+<poem id="oehlenschlaeger2019021695">
+<head>
+    <title>Til Humaniteten</title>
+    <subtitle>Skrevet efter Julirevolutionen 1830.</subtitle>
+    <firstline>De vilde gierne myrde dig herneden</firstline>
+    <source pages="183-185"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 De vilde gierne myrde dig herneden,
 Huldsalige Engel! troede paa din H a ls;
 Men Kiærlighed og Freden
@@ -5296,12 +6022,18 @@ Uskyldige, som sank for Morderhænder!
 I Overmodets Glavind brod;
 Humaniteten teender
 Sin Fakkel ved jer Død.
+</body>
+</poem>
 
-T:Til Studenter-Foreningen i Kiøbenhavn
-U:Med Lystspillet Trillingbrødrene fra Damask, 1830.
-F:Halvhundred Aar alt af sin Livets Bane
-SIDE:186-187
-
+<poem id="oehlenschlaeger2019021696">
+<head>
+    <title>Til Studenter-Foreningen i Kiøbenhavn</title>
+    <subtitle>Med Lystspillet Trillingbrødrene fra Damask, 1830.</subtitle>
+    <firstline>Halvhundred Aar alt af sin Livets Bane</firstline>
+    <source pages="186-187"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Halvhundred Aar alt af sin Livets Bane
 Den danske D igter saae tilbagelagt;
 Dog kunde han ei glemme gamle Vane,
@@ -5350,13 +6082,21 @@ Gid ingen gnidsk Babekan eder saare,
 Og vise jer ud af sit Broderhuus;
 Gid Lykken følge jer med fyldte Kruus,
 Og gid I kun maae faflde Glædestaare!
+</body>
+</poem>
 
-T:Skaal for de svenske Venner
-U:Studenter-Foreningen den 30te September 1830.
-BEGIVENHED:1830-09-30
-F:Videnskab og ædel Kunst formaae
-SIDE:188-189
-
+<poem id="oehlenschlaeger2019021697">
+<head>
+    <title>Skaal for de svenske Venner</title>
+    <subtitle>Studenter-Foreningen den 30te September 1830.</subtitle>
+    <firstline>Videnskab og ædel Kunst formaae</firstline>
+    <source pages="188-189"/>
+    <dates>
+        <event>1830-09-30</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Videnskab og ædel Kunst formaae
 At flytte Bierge, hvad vel Umagen lonner;
 De kan Broen over Havet flaae,
@@ -5406,11 +6146,17 @@ Videnskab og ædel Kunst formaae
 At flytte Bierge, hvad vel Umagen lonner;
 De kan Broen over Havet flaae,
 Og Brødre føle sig Minervas Sønner.
+</body>
+</poem>
 
-T:Til Charlotte Oehlenschläger
-F:Mit elskte Barn! jeg fandt mig taaligt i
-SIDE:189-190
-
+<poem id="oehlenschlaeger2019021698">
+<head>
+    <title>Til Charlotte Oehlenschläger</title>
+    <firstline>Mit elskte Barn! jeg fandt mig taaligt i</firstline>
+    <source pages="189-190"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Mit elskte Barn! jeg fandt mig taaligt i,
 At du for nogen Tid forlod de Kiære.
 Ei spanre vilde jeg din Blomstersti;
@@ -5435,14 +6181,22 @@ Hun kom igien. Da klang den hulde Røst
 Mig atter yndigt — men kun nogle Dage;
 Da drog hun til den ubekiendte Kyst,
 Hvorfra man aldrig kommer meer tilbage.
+</body>
+</poem>
 
-T:Sang
-U:for det Dramatisk-Litteraire Selskab
-U:til dets Halvhundredeaars-Fest.
-U:Den 24de November 1830
-F:Halvhundred Aar som Drømmen svandt
-SIDE:191-192
-
+<poem id="oehlenschlaeger2019021699">
+<head>
+    <title>Sang</title>
+    <subtitle>
+        <line>for det Dramatisk-Litteraire Selskab</line>
+        <line>til dets Halvhundredeaars-Fest.</line>
+        <line>Den 24de November 1830</line>
+    </subtitle>
+    <firstline>Halvhundred Aar som Drømmen svandt</firstline>
+    <source pages="191-192"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Halvhundred Aar som Drømmen svandt
 Med Tidens F lu g t;
 Men man kan ogsaa drømmc sandt.
@@ -5480,11 +6234,17 @@ Vi glædes vil.
 I Livets virkelige Frrrd.
 I Skuespil
 Foreen os, o Danmark! svin Brødre.
+</body>
+</poem>
 
-T:Den gode Smag
-F:Den gode Smag — det er en herlig Sag;
-SIDE:192-194
-
+<poem id="oehlenschlaeger20190216100">
+<head>
+    <title>Den gode Smag</title>
+    <firstline>Den gode Smag — det er en herlig Sag;</firstline>
+    <source pages="192-194"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Den gode Smag — det er en herlig Sag;
 Men sieldent finder uran den gode Smag.
 Hvoraf det kommer, vil jeg eder siunge:
@@ -5552,12 +6312,18 @@ Det rene Hiertes ædle Bryllupsklæder!
 Hvis ei, forvises han fra Lyset brat,
 At skære Tænder i sin egen Nat,
 Men ei med egen Sod at plette Hæder.
+</body>
+</poem>
 
-T:Niebuhr
-U:Januar 1831.
-F:Europas Himmel graaner Aar for Aar
-SIDE:195-196
-
+<poem id="oehlenschlaeger20190216101">
+<head>
+    <title>Niebuhr</title>
+    <subtitle>Januar 1831.</subtitle>
+    <firstline>Europas Himmel graaner Aar for Aar</firstline>
+    <source pages="195-196"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Europas Himmel graaner Aar for Aar,
 Og Aandens Lys hendøer i skumle Sk y;
 See Videnskabens Sol for Nakken slye!
@@ -5607,12 +6373,18 @@ Han var en Danske, fedt i Mobenhavn,
 Og gamle Danmark var ham altid knrr;
 Og derfor lyder Danersangen her,
 Og Mnemosyne glemmer ei sit Savn.
+</body>
+</poem>
 
-T:Schimmelmann
-U:Februar 1831
-F:Sølyst! yndigt over Vandet
-SIDE:196-199
-
+<poem id="oehlenschlaeger20190216102">
+<head>
+    <title>Schimmelmann</title>
+    <subtitle>Februar 1831</subtitle>
+    <firstline>Sølyst! yndigt over Vandet</firstline>
+    <source pages="196-199"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Sølyst! yndigt over Vandet
 Grøn dn smiler høit fra Landet;
 Mange Danske tid lig t, silde
@@ -5697,15 +6469,25 @@ Troer jeg, Schimmelmann! at skue
 Dig i Aftenrødens Lue.
 Stolberg dig og Klopstock bringer
 Smilende paa Englevinger.
+</body>
+</poem>
 
-T:Recitation og Sang
-U:i Anledning af
-U:Prinds Christian Frederiks Fødselsdag,
-U:fremsagt og sinnget paa Sorgenfri Slot, ved Festen den 18de September 1831, af Musikconservatoriets Elever.
-BEGIVENHED:1831-09-18
-F:Tør en Ungdomsflok vel vove
-SIDE:200-202
-
+<poem id="oehlenschlaeger20190216103">
+<head>
+    <title>Recitation og Sang</title>
+    <subtitle>
+        <line>i Anledning af</line>
+        <line>Prinds Christian Frederiks Fødselsdag,</line>
+        <line>fremsagt og sinnget paa Sorgenfri Slot, ved Festen den 18de September 1831, af Musikconservatoriets Elever.</line>
+    </subtitle>
+    <firstline>Tør en Ungdomsflok vel vove</firstline>
+    <source pages="200-202"/>
+    <dates>
+        <event>1831-09-18</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En Yngling.
 Tør en Ungdomsflok vel vove,
 Neppe traadt af Barndoinsaar,
@@ -5777,12 +6559,18 @@ Alt sig til Christians Hader forene,
 Md g am le Slagters vårdige Sø n!
 Da n! ved din Gravhøis mosgroede Stene
 Breder sig Lauren frodig og grøn.
+</body>
+</poem>
 
-T:Nicoline Reinhardt, født Harnmeleff
-U:December 1831.
-F:En Due blid, med Smaae, med elskte Mage
-SIDE:202-204
-
+<poem id="oehlenschlaeger20190216104">
+<head>
+    <title>Nicoline Reinhardt, født Harnmeleff</title>
+    <subtitle>December 1831.</subtitle>
+    <firstline>En Due blid, med Smaae, med elskte Mage</firstline>
+    <source pages="202-204"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En Due blid, med Smaae, med elskte Mage,
 'd yndig Noisomhed du Gladen fa n d t;
 Da flagred du mod Himlen og forsvandt,
@@ -5825,12 +6613,18 @@ Dig gierne lædsked Snotens Trøst
 Med rene Draaber af Castale!
 Dig planter feg paa Dødens Vei
 En Glemmigei.
+</body>
+</poem>
 
-T:Den korteste Dag i Aaret
-U:Til Anders Sandøe Ørsted paa hans Fødselsdag
-F:Min Anders! det dig tidt fortrød
-SIDE:204-205
-
+<poem id="oehlenschlaeger20190216105">
+<head>
+    <title>Den korteste Dag i Aaret</title>
+    <subtitle>Til Anders Sandøe Ørsted paa hans Fødselsdag</subtitle>
+    <firstline>Min Anders! det dig tidt fortrød</firstline>
+    <source pages="204-205"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Min Anders! det dig tidt fortrød,
 At jeg dig intet Carmen bod
 Paa Dagen, da du først fik Pat te;
@@ -5868,14 +6662,24 @@ Maa leve mange kor te Dage,
 Og som Ju ris t fra Sogn til Sogn
 End mangen Sommer i din Vogn k
 Paa Roser og Kroænrinder age.
+</body>
+</poem>
 
-T:Til Kongen
-U:Sang for Skydeselskabet
-U:den 26de Juli 1832.
-BEGIVENHED:1832-07-26
-F:Vort gamle Gilde feirer
-SIDE:206-207
-
+<poem id="oehlenschlaeger20190216106">
+<head>
+    <title>Til Kongen</title>
+    <subtitle>
+        <line>Sang for Skydeselskabet</line>
+        <line>den 26de Juli 1832.</line>
+    </subtitle>
+    <firstline>Vort gamle Gilde feirer</firstline>
+    <source pages="206-207"/>
+    <dates>
+        <event>1832-07-26</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Vort gamle Gilde feirer
 Sin Fest igien i Aar.
 Rafk Tiden det beseirer
@@ -5924,12 +6728,18 @@ Som Vin ' i Glasset flyde,
 Vo rt Blod vi osfre froe;
 Men Himlen det forbyde,
 Og flienke Fredrik R o!
+</body>
+</poem>
 
-T:Anders Sandøe Ørsted
-U:Den 21de December 1832.
-F:I Vennesamfund mellem ædle Mænd
-SIDE:208-209
-
+<poem id="oehlenschlaeger20190216107">
+<head>
+    <title>Anders Sandøe Ørsted</title>
+    <subtitle>Den 21de December 1832.</subtitle>
+    <firstline>I Vennesamfund mellem ædle Mænd</firstline>
+    <source pages="208-209"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I Vennesamfund mellem ædle Mænd
 Til Dagens Fest sig damer Skjaldens Stemme.
 Den Fodsclsdag oprunden er igien.
@@ -5970,114 +6780,140 @@ Si t Fædreland med Viisdomskraft og Aand
 Han bruge vederqvæge, længe gbrde!
 Som Baldur bruge vane han det Baand,
 Der sammenknytter denne Lennekierde!
+</body>
+</poem>
 
-T:Peblingesøen
-U:Ballade.
-F:Jeg gik mig ud over Byens Bro
-SIDE:209-213
-
-Jeg gik mig ud over Byens Bro
-En tid lig Aftengang.
-Stormvinden havde sig lagt til Ro,
+<poem id="oehlenschlaeger20030308009">
+<head>
+    <title>Peblingesøen</title>
+    <subtitle>Ballade.</subtitle>
+    <firstline>Jeg gik mig ud over Byens Bro</firstline>
+    <source pages="209-213"/>
+    <notes>
+        <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    </notes>
+    <!-- TODO: Korrekturlæs -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Jeg gik mig ud over Byens Bro,
+En tidlig Aftengang;
+Stormvinden sig havde lagt til Ro,
 Men Dagen var end ei lang;
-Snart Solen skulde til Hvile gaae.
-Snart G landsen var forbi.
+Snart Solen skulde til Hvile gaae,
+Snart Glandsen var forbi,
 Jeg iled ud i min Kappe blaa
-Til Kiærlighedens St i.
-D m er ei mær, svm i Sommer, grøn;
-Ei Løvet i Træet staaer.
-Men, svin Naturen, Menneskets Sø n
+Til Kiærlighedens Sti.
+
+Den er ei meer, som i Sommer, grøn.
+Ei Løvet i Træet staaer;
+Men, som Naturen, Menneskets Søn
 Faaer ogsaa hvide Haar.
-Erindringen er dog frist endnu;
-Afsted kun! uforsagt!
-Bien, Afte n! ei, hvor stivn est du
-I nsgne Vinterdragt.
-En Aftenrøde saa skrån at see,
-Svm i en SommerqvKld;
-De lange Straaler i Skyen lee.
-Op Skyen taarner Field.
-N u grønne Farve, nu lyseguul.
+Erindringen er dog frisk endnu;
+Afsted kun! Uforsagt.
+Men Aften! ei hvor skiøn est du 
+I nøgne Vinterdragt.
+
+En Aftenrøde saa skiær at see,
+Som i en Sommerqveld;
+De lange Straaler i Skyen lee,
+Op Skyen taarner Field;
+Nu grønne Farve, nu lyseguul,
 Og nu violne Brand;
-Og Solen vender sit Purp u rh iu l
+Og Solen vender sit Purpurhjul
 Mod Jordens sorte Rand.
-Og Mollen rører Vingen let.
-Og Broen stander saa straa,
-Som i et Billed — en Marionet,
-Nled trillende Vogne paa.
-Og unge Moer i Zodel og Maar,
-Og Mu n d og Qvider til.
-Men hvi mon Alle til Søen gaaer?
-Ha, hvilket Skuespil!
+
+Og Møllen rører Vingen let,
+Og Broen stander saa skraa.
+Som i et Billed - Marionet,
+Med trillende Vogne paa.
+Og unge Møer i Zobel og Maar,
+Og Mænd og Qvinder til.
+Men hvi mon alle til Søen gaaer?
+Ha hvilket Skuespil!
+
 Paa Dammens Flade glindser en Blok
-Af Iis, og den glor tryg.
-Der svanmer en lystig Drcngcflok,
-Sv in Aftenrødens Myg ,
-Peblingesoen.
-Og Yngliuger med — som Fuglen fast.
-Snart nær, snart atter fiern.
-Og vove saamangt et kunstigt Kast
-Paa snelle Skoitejern.
-Laan, gainle Maler af Nederland!
-Din Pensel mig et Blund,
+Af Iis, og den giør tryg.
+Der sværmer en lystig Drengeflok,
+Som Aftenrødens Myg.
+Og Ynglinger med, - som Fuglen fast,
+Snart nær, snart atter fiern; - 
+Og vove saa mangt et kunstigt Kast,
+Paa snelle Skøite-Jern.
+
+Laan, gamle Maler af Nederland!
+Din Pensel mig et Blund;
 At jeg med Farver male kan
-Den yndige Viuterstund.
-H vi skal den svinde saa snelt og brat?
-Den qvæger alt for smukt.
-Lerr mig, fra Evighedens Nat
-At gienne Tidens F lu g t!
+Den yndige Vinterstund.
+Hvi skal den svinde saa snelt og brat?
+Den qvæger alt for smukt!
+Lær mig, fra Evighedens Nat,
+At gienne Tidens Flugt!
+
 Jeg gik den lystige Sværm forbi
-Ad Frederiksberg til Giest,
-Og kom igien paa Kmrlighedssti
+Ad Frederiksberg, til Giest,
+Og kom igien paa Kiærlighedsti
 Ved fulde Maanes Fest.
 Det var en stille Midienat,
-Men klar var Nattens Ve i;
-Den ode St i var nu forladt,
+Men klar var Nattens Vei;
+Den lange Sti var nu forladt,
 Men Søen var det ei.
+
 En Skare sværmed atter der;
-Men langsomt glede de Smaae
-I Maanens blege Dødningeskierr —
-Og med Liigskiørter paa.
-Den falske Skorpe tid t med dem brast;
+Men langsomt glede de Smaae,
+I Maanens blege Dødningskiær - 
+Og med Ligskiorter paa.
+Den falske Skorpe med dem brast;
 De sank, men dukkede frem.
 Iistapper hang i Haarene fast,
 Og Vandet qvalte dem.
-Sanet Jsrgen kom fra Jorgens Sø;
-Og Dragen, han fordnm vog,
+
+St. Jørgen nærmed sig sin Sø;
+Og Dragen, han fordum vog,
 Saae jeg, som Sky, i Luften døe,
-En lang, en spraglet Snog.
-,,Jeg redded fordnm Byens Moer
-Fra Dragen,'' var hans Ord;
-,,Me n den i disse førske Soer,
-Den er for lumsk og stor.
-Hver Vinter kræver den sin Fangst.
-H iin Drcngeflok, der gaaer.
-Den druknede her med Skræk og Angst;
-Si t Bytte fik hvert Aar.
-Og P e tri-, Frue-Kirke lang.
-Som hist fra Volden dem see.
-Gav til Farvel en Klokkeklang
-Hen over Gravens Snee.''
-Sanet Jorgen svandt — og Skaren svandt,
-Og Altin g var forbi,
-Og jeg mig atter ene fandt
-Paa Kiærlighedens St i.
-Da lod en Røst: ,,Thør ynder vel
-Hver Angling varm og kiæk;
+En lang og spraglet Snog.
+"Jeg redded' fordum Byens Møer
+Fra Dragen" var hans Ord;
+"Men den i disse ferske Søer,
+Den er for lumsk og stor."
+
+"Hver Vinter kræver den sin Fangst.
+Hin Drengeflok, der gaaer,
+Den drukned her, med Skræk og Angst;
+Sit Bytte fik hvert Aar.
+Og Frueklokker, Petri med,
+Som over Volden see,
+Klang for dem, paa det samme Sted,
+Hen over Gravens Snee."
+
+St. Jørgen svandt, - og Skaren svandt,
+Og alting var forbi,
+Og jeg mig atter ene fandt,
+Paa Kiærlighedens Sti.
+Da lød en Røst: "Thor ynder vel
+Hver Yngling varm og kiæk;
 Men den nedsynke maa til Hel,
-Som kun er kold og frcok.''
-Men mildere lod en Alferost:
-,,Uskyldig, skiøndt ei klog,
+Som trodser kold og fræk."
+
+Men mildere lød en Alferøst;
+"Uskyldig, skiøndt ei klog,
 Bortlokket fra sin Moders Bryst
-Blev mangen herlig Pog.''
+Blev mangen herlig Pog."
 Da skued jeg mod Himlens Blaa,
-Saa freidigt og saa trygt —
-Og jeg en Engleskarc saae.
+For Haabet svandt min Frygt;
+Og jeg en Engleskare saae,
 Som var med Stierner smykt.
+</body>
+</poem>
 
-T:Nytaarsvers
-F:Man siger: Ringen uden Ende
-SIDE:213-216
-
+<poem id="oehlenschlaeger20190216109">
+<head>
+    <title>Nytaarsvers</title>
+    <firstline>Man siger: Ringen uden Ende</firstline>
+    <source pages="213-216"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Er o t i s k e .
 Man siger: Ringen uden Ende
 Er evig Kiærligheds Forkyndelse;
@@ -6157,15 +6993,25 @@ Og tvivler ikke om, at den vil more dig.
 Til Laseren.
 Nu intet meer for dette Øieblik,
 Endskiøndt du denne Gang ei heller Noget sik.
+</body>
+</poem>
 
-T:Sange
-U:i Anledning af
-U:Kongens Fødselsfest,
-U:afjungne i Skydeselskabet den 7de Februar 1833.
-F:Mens Oprørsaanden fiernt og nær
-SIDE:217-219
-BEGIVENHED:1833-02-07
-
+<poem id="oehlenschlaeger20190216110">
+<head>
+    <title>Sange</title>
+    <subtitle>
+        <line>i Anledning af</line>
+        <line>Kongens Fødselsfest,</line>
+        <line>afjungne i Skydeselskabet den 7de Februar 1833.</line>
+    </subtitle>
+    <firstline>Mens Oprørsaanden fiernt og nær</firstline>
+    <source pages="217-219"/>
+    <dates>
+        <event>1833-02-07</event>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Til Kongen.
 Mens Oprørsaanden fiemt og nær
 Sin Fakkel svinger over Jorden,
@@ -6224,12 +7070,18 @@ Med Atterkomst;
 Og vær i Fredriks sene Høst
 Hans bedste Blomst!
 Gud signe vor elskte Ma r ia! '
+</body>
+</poem>
 
-T:Til Charlotte Phister, født Oehlenschläger
-U:Februar 1833.
-F:Du valgte selv en steil, en farlig Vei
-SIDE:219-220
-
+<poem id="oehlenschlaeger20190216111">
+<head>
+    <title>Til Charlotte Phister, født Oehlenschläger</title>
+    <subtitle>Februar 1833.</subtitle>
+    <firstline>Du valgte selv en steil, en farlig Vei</firstline>
+    <source pages="219-220"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du valgte selv en steil, en farlig Vei,
 Dog blomsterfuld og smuk, til Musalunden.
 Stra r med min Villie var det ei —
@@ -6266,11 +7118,17 @@ Veer god og ædel, dyrk din skiønne Kunst,
 L iis Gubben — naar det vorder silde —
 Apolløs Himmel giennem Jordens Dunst,
 Og mk en Lædst'cdrik mig af min egen Kilde!
+</body>
+</poem>
 
-T:Den musikelskende Landsby-Pige
-F:Jeg vandrer her alene
-SIDE:220-223
-
+<poem id="oehlenschlaeger20190216112">
+<head>
+    <title>Den musikelskende Landsby-Pige</title>
+    <firstline>Jeg vandrer her alene</firstline>
+    <source pages="220-223"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Jeg vandrer her alene
 Bag Skovens høie Tm c r;
 Den musikelskende Landsby-Pige.
@@ -6350,11 +7208,17 @@ N u savner Glæden Ord.
 Ei Ord, ei Ord,
 Kun Fløiteklang gientage.
 Hvad dybt i Hiertet boer!
+</body>
+</poem>
 
-T:Min Kakkelovn
-F:Ak, min Trøst! min Elskerinde!
-SIDE:223-224
-
+<poem id="oehlenschlaeger20190216113">
+<head>
+    <title>Min Kakkelovn</title>
+    <firstline>Ak, min Trøst! min Elskerinde!</firstline>
+    <source pages="223-224"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Ak, min Trøst! min Elskerinde!
 Hvor din Md e lokker mig.
 Altid her i Stuen inde
@@ -6387,22 +7251,36 @@ Her ved Kakkelovnens Lue
 Synes Verden ,, lig saa smuk,
 Og i damiringslorte Stue
 Leger Alfen Blindebuk.
+</body>
+</poem>
 
-T:I H. C. Andersens Album
-U:Den 19de April 1833.
-F:Lad nu din Digterphantasie
-SKREVET:1833-04-19
-SIDE:225
-
+<poem id="oehlenschlaeger20190216114">
+<head>
+    <title>I H. C. Andersens Album</title>
+    <subtitle>Den 19de April 1833.</subtitle>
+    <firstline>Lad nu din Digterphantasie</firstline>
+    <source pages="225"/>
+    <dates>
+        <written>1833-04-19</written>
+    </dates>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Lad nu din Digterphantasie
 Omsvæve som en lystig Bi,
 Og bringe dygtig Honning hiem;
 Og midlertid os ikke glem!
+</body>
+</poem>
 
-T:Til Vaaren
-F:Du kommer end saa frisk og ung
-SIDE:225-227
-
+<poem id="oehlenschlaeger20190216115">
+<head>
+    <title>Til Vaaren</title>
+    <firstline>Du kommer end saa frisk og ung</firstline>
+    <source pages="225-227"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du kommer end saa frisk og ung,
 Som for en stirti Somre siden;
 Jeg føler mig lid t mere tung.
@@ -6451,11 +7329,17 @@ Det Gamle svandt, da kom det N y;
 Hvis Himlen Spiren vil beskytte,
 Da kan i svale Trioers Ly
 Endnu jeg bygge mig en Hytte.
+</body>
+</poem>
 
-T:Udødeligheden
-F:Intet Støv ophører jo paa Jorden
-SIDE:227-228
-
+<poem id="oehlenschlaeger20190216116">
+<head>
+    <title>Udødeligheden</title>
+    <firstline>Intet Støv ophører jo paa Jorden</firstline>
+    <source pages="227-228"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Intet Støv ophører jo paa Jorden,
 Alt forvandles i en evig Orden,
 Liget gisder — liflig t Græsset groer.
@@ -6493,11 +7377,17 @@ Følger du i Mu lm ei Støvct ned.
 Vaagnet — en fornvct Uugdomsmorgen —
 Dig den Frvd, som nu dig er forborgen,
 Overrasker med Guds Kiærlighed.
+</body>
+</poem>
 
-T:Min Faders ældste portrait
-F:Du hænger der igien, du gamle Billed
-SIDE:228-229
-
+<poem id="oehlenschlaeger20190216117">
+<head>
+    <title>Min Faders ældste portrait</title>
+    <firstline>Du hænger der igien, du gamle Billed</firstline>
+    <source pages="228-229"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du hænger der igien, du gamle Billed:
 Min Fader sidder munter, venlig, try g;
 Som smuk ung Mand jeg seer ham forestillet,
@@ -6526,12 +7416,18 @@ Naar jeg er død, skal du min Mt tilhøre;
 Og paa deus Bv rn du atter rolig seer.
 Men dette lille Qvad vil Hiertct røre,
 Naar du er der — og Skialden ikke meer.
+</body>
+</poem>
 
-T:Lindetræet i Regentsgaarden
-U:En Studentervise.
-F:Naar Skoven grøn i festligt Løv sig klæder
-SIDE:230-231
-
+<poem id="oehlenschlaeger20190216118">
+<head>
+    <title>Lindetræet i Regentsgaarden</title>
+    <subtitle>En Studentervise.</subtitle>
+    <firstline>Naar Skoven grøn i festligt Løv sig klæder</firstline>
+    <source pages="230-231"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Naar Skoven grøn i festligt Løv sig klæder,
 Den vinker Sværmen i sin Favn;
 Men sparsomt vi kun nyde Somrene Glæder,
@@ -6568,11 +7464,17 @@ Og ofte Bragis Harpe her skal klinge.
 Som alt i Ewalds Tid den klang.
 Op, Brødre! drikker froe i Sin d:
 Skaal for Regentsene gamle L in d!
+</body>
+</poem>
 
-T:I en Englænders Stambog
-F:En Angelsaxe var min Fader
-SIDE:231
-
+<poem id="oehlenschlaeger20190216119">
+<head>
+    <title>I en Englænders Stambog</title>
+    <firstline>En Angelsaxe var min Fader</firstline>
+    <source pages="231"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En Angelsaxe var min Fader,
 Miir Moder var fra J y lla n d s Kyst.
 Ei Landet Dansken nu forlader
@@ -6585,13 +7487,23 @@ Nei, Danmark fro sig kalder Søster,
 Brita n n ia! til din Blomsterstrand,
 Mens Bølgen naaer fra jydske Kyster
 Østangeln og Northumberland.
+</body>
+</poem>
 
-SEKTION:Norgesrejsen - En Digtekrands. - Sommeren 1833.
+<section>
+<head>
+    <title>Norgesrejsen - En Digtekrands. - Sommeren 1833.</title>
+</head>
+<content>
 
-T:Afskeden
-F:Hvorfor flyder Veemodstaaren
-SIDE:232-233
-
+<poem id="oehlenschlaeger20190216120">
+<head>
+    <title>Afskeden</title>
+    <firstline>Hvorfor flyder Veemodstaaren</firstline>
+    <source pages="232-233"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hvorfor flyder Veemodstaaren
 I hver Afskedsstund,
 Som om bort svcmdl Blomstervaaren
@@ -6640,11 +7552,17 @@ Lad hver Atterkomst os bringe
 Th i vi modes vist - -
 Vished paa sin Englevinge
 Om et Mode hist!
+</body>
+</poem>
 
-T:Dampskibsfarten
-F:Du stærke Damp, usynlig i din Vælde
-SIDE:234-235
-
+<poem id="oehlenschlaeger20190216121">
+<head>
+    <title>Dampskibsfarten</title>
+    <firstline>Du stærke Damp, usynlig i din Vælde</firstline>
+    <source pages="234-235"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du stærke Damp, usynlig i din Vælde,
 Med Lynet i din Tordensky,
 Som fordum monne Heltcskaren fastde,
@@ -6677,11 +7595,17 @@ Hvor ingen Regn os drsvelig forsolger,
 Til Dynd forvandler tykke Ste v;
 Kun Hiulet suser i de klare Bølger,
 Og Seklet skygger som et Lov.
+</body>
+</poem>
 
-T:Samlivet paa Dampskibet
-F:Hvor forunderlig snart paa det snelthenilende Dampskib
-SIDE:235-236
-
+<poem id="oehlenschlaeger20190216122">
+<head>
+    <title>Samlivet paa Dampskibet</title>
+    <firstline>Hvor forunderlig snart paa det snelthenilende Dampskib</firstline>
+    <source pages="235-236"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hvor forunderlig snart paa det snelthenilende Dampskib
 Border den reisende Flok bekiendt, endskiøndt man tilfo rn ei
 Kiendtes. Ma n deler den fallles Nød og de samtlige Glæder.
@@ -6721,11 +7645,17 @@ Eet Ma a l have vi alle — til Lykken. Og her paa vort
 Dampskib
 Kalde vi Lykken, ret snart at see den deilige Fiordbugt,
 Hvor i et sremmed forunderligt Land sig Staden os aabner.
+</body>
+</poem>
 
-T:Kronborg
-F:Aftenen stunder til. Det var sludfuldt nylig og skyfuldt
-SIDE:236-238
-
+<poem id="oehlenschlaeger20190216123">
+<head>
+    <title>Kronborg</title>
+    <firstline>Aftenen stunder til. Det var sludfuldt nylig og skyfuldt</firstline>
+    <source pages="236-238"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Aftenen stunder til. Det var sludfuldt nylig og skyfuldt;
 Nu opklarer sig Himmelen blaar, og i purpurne Skybrud
 Skinner den dalende Sol over Kronborg, yndig ved Siden
@@ -6773,11 +7703,17 @@ Men ved at ryste dem Støvet af blanke Rustning, og drage
 Sværdet paa Kisten af Balgen, at Fremtids Bo rn maae
 beundre
 Nordens ærverrdigc Kraft, hvis Glands ei Graven fordunkler.
+</body>
+</poem>
 
-T:Kattegat
-F:Besynderlige Skifte!
-SIDE:238-240
-
+<poem id="oehlenschlaeger20190216124">
+<head>
+    <title>Kattegat</title>
+    <firstline>Besynderlige Skifte!</firstline>
+    <source pages="238-240"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Besynderlige Skifte!
 Sa t i et Bølgebuur,
 Skal jeg Bekendtskab stifte
@@ -6826,11 +7762,17 @@ Her præges intet Mcæke,
 Her knuses stolte Vand.
 Men Ære for den Stanke,
 Som trodser Tidens Ta n d!
+</body>
+</poem>
 
-T:Søsygen
-F:Ei Nogen vil just gierne til
-SIDE:240-241
-
+<poem id="oehlenschlaeger20190216125">
+<head>
+    <title>Søsygen</title>
+    <firstline>Ei Nogen vil just gierne til</firstline>
+    <source pages="240-241"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Ei Nogen vil just gierne til
 Forkyndelsen.
 Enhver det gierne skiule vil
@@ -6877,11 +7819,17 @@ Og Morgensolen en Dei saa skiøn
 Sig baner,
 Og Fieldet nikker til Dalenes Sø n
 Med Graner.
+</body>
+</poem>
 
-T:Christianiafiord
-F:Nu Kattegattets Bølger
-SIDE:241-243
-
+<poem id="oehlenschlaeger20190216126">
+<head>
+    <title>Christianiafiord</title>
+    <firstline>Nu Kattegattets Bølger</firstline>
+    <source pages="241-243"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nu Kattegattets Bølger
 Med vrede Brusen os ei mær forsalger.
 Nu ikke meer i Skokke
@@ -6948,11 +7896,17 @@ Hvor mig, mens Aftnen gløber,
 Min salig Søsters Ven paa Stranden moder.
 For mig min Haand at trykke
 Og onske med min Reise mig til Lykke.
+</body>
+</poem>
 
-T:Modtagelsen i Christiania
-F:Du vil, jeg skal beskrive dig Klippen, Himlens Brud
-SIDE:244-250
-
+<poem id="oehlenschlaeger20190216127">
+<head>
+    <title>Modtagelsen i Christiania</title>
+    <firstline>Du vil, jeg skal beskrive dig Klippen, Himlens Brud</firstline>
+    <source pages="244-250"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du vil, jeg skal beskrive dig Klippen, Himlens Brud;
 Hvordan det gamle Norge ret egenlig seer ud?
 Det kan jeg strax ei, Kioere! Min Mnsa vane Tolk
@@ -7111,11 +8065,17 @@ Jeg maatte snart mig fatte, at svare var min P lig t,
 Da tog jeg frem af Barmen det nyligstrevne Dig t;
 Men varmt og atter gienfødt det strømmed fra m it Bryst,
 Da lytted man i Hasten l i t Skialdens høie Røst.
+</body>
+</poem>
 
-T:Til Norges Sønner
-F:Fra Barnsbeen fik jeg Norge kiær
-SIDE:250-253
-
+<poem id="oehlenschlaeger20190216128">
+<head>
+    <title>Til Norges Sønner</title>
+    <firstline>Fra Barnsbeen fik jeg Norge kiær</firstline>
+    <source pages="250-253"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Fra Barnsbeen fik jeg Norge kiær;
 Derom var daglig Tale,
 Det laae saa fiernt og dog saa nær
@@ -7192,11 +8152,17 @@ Gid aldrig Thør os skille maa.
 Men Bra g i sammensmelte!
 Ba ld u r h iin Godes Alter staae
 Ved Nvrdhav og ved Bælte!
+</body>
+</poem>
 
-T:Omegnen
-F:Deiligt ligger Hovedstaden, det maa Sandheden tilstaae
-SIDE:253-255
-
+<poem id="oehlenschlaeger20190216129">
+<head>
+    <title>Omegnen</title>
+    <firstline>Deiligt ligger Hovedstaden, det maa Sandheden tilstaae</firstline>
+    <source pages="253-255"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Deiligt ligger Hovedstaden, det maa Sandheden tilstaae.
 Agershuus, den gamle Fæstning, speiler sig i Fiorden blaa.
 Rundtom bovne grønne Bakker, hvorfra daglig D ie t sik
@@ -7259,12 +8225,18 @@ Th o ra s Sø s t r e, Va l b o r g s Sø s t r e fletted strands —
 ei i mit Sværd —
 Men en strands om Skialdens Harpe viste: d e n varW m n e t
 vand.
+</body>
+</poem>
 
-T:Den unge Digter
-F:Venligt besøgte mig nys en Digter, bragt af en Maler
-SIDE:255
-TODO:Hvilken digter? Hvilket portræt? Er Munk lig Munch?
-
+<poem id="oehlenschlaeger20190216130">
+<head>
+    <title>Den unge Digter</title>
+    <firstline>Venligt besøgte mig nys en Digter, bragt af en Maler</firstline>
+    <source pages="255"/>
+    <!-- TODO: Hvilken digter? Hvilket portræt? Er Munk lig Munch? -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Venligt besøgte mig nys en Digter, bragt af en Maler,
 (Trofaste Mu n k! i P a ris malte du Skialden som ung).
 Skiøn var Sangen, som Anglingen skrev og rakle beskeden;
@@ -7275,11 +8247,17 @@ For at byde Velkommen den danske Skiald, hvem du nared
 Forst med din Digterild? Moder paa Bierget maaskæ
 Mig din Aand, som en Barde, med flagrende stlader og Langspil?
 Hilser du mig i din Sky? rakker du Harpen din Søn?
+</body>
+</poem>
 
-T:Reisen op i Landet
-F:Nu har vi os leiet en liden Karjol
-SIDE:255-258
-
+<poem id="oehlenschlaeger20190216131">
+<head>
+    <title>Reisen op i Landet</title>
+    <firstline>Nu har vi os leiet en liden Karjol</firstline>
+    <source pages="255-258"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nu har vi os leiet en liden Karjol.
 Ret mageligt vist er det bageste Sad e;
 Men den, som skal sidde paa forreste Sto l,
@@ -7346,11 +8324,17 @@ Men denne Gang seer han ei Rauksosscns Fald,
 Og ager ei over det mægtige Dovre.
 Paa Søndensield glad i Naturen han svarmer,
 Og Bakken ved Berrum alt Vognen sig mormor.
+</body>
+</poem>
 
-T:Værum
-F:Hvor smiler det deiligt bag Fieldet!
-SIDE:258-259
-
+<poem id="oehlenschlaeger20190216132">
+<head>
+    <title>Værum</title>
+    <firstline>Hvor smiler det deiligt bag Fieldet!</firstline>
+    <source pages="258-259"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hvor smiler det deiligt bag Fieldet!
 Af Tra 'r og Udsigter er nok,
 Og Elven nedskyller med Vældet
@@ -7399,11 +8383,17 @@ Hist — Fortidens tro Pyramide,
 Her — fremmede Tegn af et Blu n d!
 Ja, Liv! — dine Manker henglide,
 Alt smelter den seneste Stu n d .
+</body>
+</poem>
 
-T:Krogkleven
-F:Du skiønne Kløft! og vil jeg dig
-SIDE:260-262
-
+<poem id="oehlenschlaeger20190216133">
+<head>
+    <title>Krogkleven</title>
+    <firstline>Du skiønne Kløft! og vil jeg dig</firstline>
+    <source pages="260-262"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Du skiønne Kløft! og vil jeg dig
 Ved Harpen malerisk besynge?
 Af Venner samler sig en Klynge,
@@ -7476,11 +8466,17 @@ Som Dalen hist til Skialdens P r iis
 Sk io n t aabner sig bag Klippens Fure,
 Skal Himlen sprænge Gravens Mure,
 Og vinke ham til Paradiis.
+</body>
+</poem>
 
-T:Maleren
-F:Stille! hvad finder jeg der? Der sidder i Sandhed en Maler
-SIDE:262-263
-
+<poem id="oehlenschlaeger20190216134">
+<head>
+    <title>Maleren</title>
+    <firstline>Stille! hvad finder jeg der? Der sidder i Sandhed en Maler</firstline>
+    <source pages="262-263"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Stille! hvad finder jeg der? Der sidder i Sandhed en Maler
 Ved Krogkleven, og har for sig en Griskel, et Broct.
 Er det Vennen fra Dresden, som nys i Sangen jeg kaldte?
@@ -7512,11 +8508,17 @@ Dantes Helved er meer poetisk, end Digterens Himmel,
 I Tragodien gaaer Veien fortryllende ned. —
 Saaledes sindrigt boder den ene Kunst paa den anden;
 Og hvad ei Digterens Ord, Malerens Pensel formaaer.
+</body>
+</poem>
 
-T:Halfdan Svartes Grav
-F:Forunderlige Kiærlighed
-SIDE:263-264
-
+<poem id="oehlenschlaeger20190216135">
+<head>
+    <title>Halfdan Svartes Grav</title>
+    <firstline>Forunderlige Kiærlighed</firstline>
+    <source pages="263-264"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Forunderlige Kiærlighed
 I en barbarisk Ti d!
 Her lagde man hans Hoved ned,
@@ -7549,11 +8551,17 @@ Han marker end med Fædres Mod
 Si t stolte Hiertc slaae;
 Han soler sig af Halsdans Blod
 Med Bondekofte paa.
+</body>
+</poem>
 
-T:Norderhougs Præstegaard
-F:I Norderhoug sig hæved en Gaard
-SIDE:265-267
-
+<poem id="oehlenschlaeger20190216136">
+<head>
+    <title>Norderhougs Præstegaard</title>
+    <firstline>I Norderhoug sig hæved en Gaard</firstline>
+    <source pages="265-267"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I Norderhoug sig hæved en Gaard,
 Som md den staaer;
 Der boede Dvinden med Prasten.
@@ -7620,11 +8628,17 @@ Men Overmod du ei taaler.
 Den, som paa Døren dig banker stolt,
 Du byder H o ld t!
 Og skienker ham beskere Skaaler.
+</body>
+</poem>
 
-T:Den dobbelte Skydsgut
-F:Vi fik en lille venlig Dreng
-SIDE:267-268
-
+<poem id="oehlenschlaeger20190216137">
+<head>
+    <title>Den dobbelte Skydsgut</title>
+    <firstline>Vi fik en lille venlig Dreng</firstline>
+    <source pages="267-268"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Vi fik en lille venlig Dreng
 Til Skydsgut paa Karjolen.
 Han satte sig med raske Slæng
@@ -7665,11 +8679,17 @@ Gid intet Uheld, Døden ei
 Jer fra hinanden føre;
 Den skiønne Livets Landevei
 Gid broderligt I klore!
+</body>
+</poem>
 
-T:Elvene og Fossene
-F:Tydskland har Bierge, som Norge. Jeg finder
-SIDE:269-271
-
+<poem id="oehlenschlaeger20190216138">
+<head>
+    <title>Elvene og Fossene</title>
+    <firstline>Tydskland har Bierge, som Norge. Jeg finder</firstline>
+    <source pages="269-271"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Tydskland har Bierge, som Norge. Jeg finder
 Høiere Fielde, hvor Alperne staae.
 Ha, men en Elv, som saa yndigt henrinder,
@@ -7751,11 +8771,17 @@ Fossen vi høre.
 Medens sig Norbakken skynder sin Gang.
 Ofte skal lyde, min Siæl! for d it Øre
 Larmen af Elvens fortryllende Sang.
+</body>
+</poem>
 
-T:Ringerige og Modum
-F:Hvordan skal jeg kraftigt dig beskrive
-SIDE:271-275
-
+<poem id="oehlenschlaeger20190216139">
+<head>
+    <title>Ringerige og Modum</title>
+    <firstline>Hvordan skal jeg kraftigt dig beskrive</firstline>
+    <source pages="271-275"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hvordan skal jeg kraftigt dig beskrive
 Og give
 Dig et Billed,
@@ -7876,11 +8902,17 @@ Næste Morgen vi vor Kaffe drikke.
 Solens Blikke
 Mangler ikke;
 Den er os en trofast Ven.
+</body>
+</poem>
 
-T:Bønderne
-F:Med norske Bonden en lille Sang
-SIDE:276-277
-
+<poem id="oehlenschlaeger20190216140">
+<head>
+    <title>Bønderne</title>
+    <firstline>Med norske Bonden en lille Sang</firstline>
+    <source pages="276-277"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Med norske Bonden en lille Sang,
 Du vil, skal giøre dig fortrolig?
 Ak, Skade var det, at denne Gang
@@ -7926,11 +8958,17 @@ Saa god som han i Boigben gives!''
 Vi sees ei meer;
 Men Skialden seer
 End længe, hvad der fra ham rives.
+</body>
+</poem>
 
-T:Sanct Olafs Jertegn
-F:En Skydsgut her jeg træffer, snild
-SIDE:277-280
-
+<poem id="oehlenschlaeger20190216141">
+<head>
+    <title>Sanct Olafs Jertegn</title>
+    <firstline>En Skydsgut her jeg træffer, snild</firstline>
+    <source pages="277-280"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En Skydsgut her jeg træffer, snild,
 Og klog paa gamle Sager;
 Ham flittig t jeg udspørge vil,
@@ -8007,11 +9045,17 @@ Hav Tak, min Ven, som dette veed!
 Jeg P r iis paa Sagnet sætter.
 N u kiore vi til Dalen ned
 Fra de forsteente Jetter.
+</body>
+</poem>
 
-T:De tydske Studenter i Vigersund
-F:Hvor man allermindst det venter
-SIDE:280-281
-
+<poem id="oehlenschlaeger20190216142">
+<head>
+    <title>De tydske Studenter i Vigersund</title>
+    <firstline>Hvor man allermindst det venter</firstline>
+    <source pages="280-281"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hvor man allermindst det venter,
 Gaaer fra Tydstland ud Studenter;
 Her ved Sundet, froe i Sin d ,
@@ -8042,11 +9086,17 @@ Reise, naar man selv kan gaae.
 Femti Aar først lagt tilbage —
 Nei, da vil uran heller age
 Med den lune Kappe paa.
+</body>
+</poem>
 
-T:Kongsberg
-F:Nu mere mørkt sig Fieldet sammendrager
-SIDE:281-286
-
+<poem id="oehlenschlaeger20190216143">
+<head>
+    <title>Kongsberg</title>
+    <firstline>Nu mere mørkt sig Fieldet sammendrager</firstline>
+    <source pages="281-286"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nu mere mørkt sig Fieldet sammendrager,
 Udsigten stoppes af de snevre Klipper,
 Et andet Ansigt paa Naturen tager.
@@ -8176,11 +9226,17 @@ Men frydcs kan han kun hver Søndagmorgen,
 Naar Klokken ham fra Field til Kirken kalder,
 Naar Solen er ham længer ei forborgen —
 Naar paa hans blege Kind en Straalc falder.
+</body>
+</poem>
 
-T:Faldet i Hougsund
-F:Hist syv og tredve Stiger ned
-SIDE:287-288
-
+<poem id="oehlenschlaeger20190216144">
+<head>
+    <title>Faldet i Hougsund</title>
+    <firstline>Hist syv og tredve Stiger ned</firstline>
+    <source pages="287-288"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hist syv og tredve Stiger ned
 I Biergets D yb mig bare,
 Og Foden ei det mindste gled.
@@ -8213,11 +9269,17 @@ Min Lasier! hør Moralen:
 I Nød de sielden dragte;
 Men tid t vi styrte for de smaae,
 Fordi vi dem foragte.''
+</body>
+</poem>
 
-T:Farten i Maaneskin
-F:Saa har I ogsaa her en Maane?
-SIDE:288-290
-
+<poem id="oehlenschlaeger20190216145">
+<head>
+    <title>Farten i Maaneskin</title>
+    <firstline>Saa har I ogsaa her en Maane?</firstline>
+    <source pages="288-290"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Saa har I ogsaa her en Maane?
 ,, Ja, kiære Dig te r! som du seer.
 D e t er den samme, som i Skaane
@@ -8276,11 +9338,17 @@ Men naar i røde Dunst den svømmer,
 Og farer den i Skyen vild.
 Da, som en bleg, phantastift Drømmer.
 Den gyser for sin egen I ld .
+</body>
+</poem>
 
-T:Drammen
-F:Nu da vi Drammen besøge? — Ja vist! og her du fra Fieldet
-SIDE:290-291
-
+<poem id="oehlenschlaeger20190216146">
+<head>
+    <title>Drammen</title>
+    <firstline>Nu da vi Drammen besøge? — Ja vist! og her du fra Fieldet</firstline>
+    <source pages="290-291"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nu da vi Drammen besøge? — ,,Ja vist! og her du fra Fieldet
 Overskuer den grandt.'' — Hvilken besynderlig By!
 Husene ligge jo alle, som Perler trukne paa Traaden,
@@ -8329,11 +9397,17 @@ Mrlige W u l f s b e r g! du mig bragte Mindet tilbage.
 Bakkehuset igien jeg mellem Træeme saae
 Ved din deilige Hauge. Du nævnte Camma med Rahbek —
 Og ved din Velkomst-Ovad Veemodens Taare nedrandt.
+</body>
+</poem>
 
-T:Kirken i Drammen
-F:Selsom rørt jeg blev til Mode
-SIDE:292-293
-
+<poem id="oehlenschlaeger20190216147">
+<head>
+    <title>Kirken i Drammen</title>
+    <firstline>Selsom rørt jeg blev til Mode</firstline>
+    <source pages="292-293"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Selsom rørt jeg blev til Mode,
 Da jeg ind i Kirken kom.
 Atter jeg mig træde troede
@@ -8374,20 +9448,32 @@ Snart igien ved Landringsstav
 Da g lig hilser jeg din Grav.
 Hvis du leved, var tilstede —
 Hvor min Fryd dig vilde girede!
+</body>
+</poem>
 
-T:Paradiisbakken
-F:Nu skal vi reise tilbage. Vi komme til Paradiisbakken
-SIDE:293
-
+<poem id="oehlenschlaeger20190216148">
+<head>
+    <title>Paradiisbakken</title>
+    <firstline>Nu skal vi reise tilbage. Vi komme til Paradiisbakken</firstline>
+    <source pages="293"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nu skal vi reise tilbage. Vi komme til Paradiisbakken,
 Derfra det dejligste Sy n har man paa Dalene trindt.
 Men — hvor lrrnge var Adam i Paradiset? Det regner;
 Nidkirrr taagede Dunst Skiønheden hyller i Slo r.
+</body>
+</poem>
 
-T:Farvel til Norge
-F:Farvel, du skiønne Norges Land!
-SIDE:293-295
-
+<poem id="oehlenschlaeger20190216149">
+<head>
+    <title>Farvel til Norge</title>
+    <firstline>Farvel, du skiønne Norges Land!</firstline>
+    <source pages="293-295"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Farvel, du skiønne Norges Land!
 Maaskee jeg meer dig aldrig skuer.
 Nu vinke Bøgens, Egens Buer
@@ -8436,11 +9522,17 @@ Nei, Brødre! m it Farvel i Dag
 Ei gielder alle Livets Dage;
 Jeg kommer vist engang tilbage —
 Til Bergen og til Throndelag.
+</body>
+</poem>
 
-T:Den sidste Morgenstund i Christiania
-F:I aarle Morgenstund, før Solen smukt
-SIDE:295
-
+<poem id="oehlenschlaeger20190216150">
+<head>
+    <title>Den sidste Morgenstund i Christiania</title>
+    <firstline>I aarle Morgenstund, før Solen smukt</firstline>
+    <source pages="295"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I aarle Morgenstund, før Solen smukt
 Fik farvet med sit Purpur Biergets Tinde,
 Blev sendt mig til Farvel af en Veninde
@@ -8453,11 +9545,17 @@ Skal med den norske Klippe mig forbinde,
 Til atter hist jeg staaer i Havnen inde.
 Og visner snart end Blomsten med sin Du ft -
 Det kiære Minde visner ingensinde.
+</body>
+</poem>
 
-T:Gothenborg
-F:Da første Gang vi seiled forbi
-SIDE:296-297
-
+<poem id="oehlenschlaeger20190216151">
+<head>
+    <title>Gothenborg</title>
+    <firstline>Da første Gang vi seiled forbi</firstline>
+    <source pages="296-297"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Da første Gang vi seiled forbi
 Den fremmede Sta d ,
 Ei dveele kunde med Skibet vi
@@ -8502,11 +9600,17 @@ Champagneren skummed, de drak min Skaal,
 Og mig forlod.
 Og snart jeg nerr ved urin Reises Ma a l
 Paa Dæktet stod.
+</body>
+</poem>
 
-T:Hiemkomsten
-F:Nu aabner, Fædreland! du atter mig din Favn
-SIDE:297-298
-
+<poem id="oehlenschlaeger20190216152">
+<head>
+    <title>Hiemkomsten</title>
+    <firstline>Nu aabner, Fædreland! du atter mig din Favn</firstline>
+    <source pages="297-298"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nu aabner, Fædreland! du atter mig din Favn;
 Men Skyen tung mod Havet segner.
 Jeg seer ei Tårnnene paa Kiobenhavn —
@@ -8527,11 +9631,17 @@ Gud signe jer! Nu flynder eder, kom
 Til Arnen; der jeg In te t vil fordølge.
 Erindringen giør Reisen om,
 Og I skal alle Fader solge.
+</body>
+</poem>
 
-T:Tilbageblik
-F:Naar jeg fra min lave Dal
-SIDE:298-300
-
+<poem id="oehlenschlaeger20190216153">
+<head>
+    <title>Tilbageblik</title>
+    <firstline>Naar jeg fra min lave Dal</firstline>
+    <source pages="298-300"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Naar jeg fra min lave Dal
 Og fra Bakken ved Slo tte t til Søen henskuer,
 I den muntre Lindefal,
@@ -8580,11 +9690,17 @@ Elskte Fredrik! ved din Sø
 Vil jeg leve, vil jeg dse.
 Danemark en Krands mig gav,
 Som ei visner paa Digterens Grav.
+</body>
+</poem>
 
-T:Armbaandene og Guldhornet
-F:En Reisende, som søgte sieldne Sager
-SIDE:300-301
-
+<poem id="oehlenschlaeger20190216154">
+<head>
+    <title>Armbaandene og Guldhornet</title>
+    <firstline>En Reisende, som søgte sieldne Sager</firstline>
+    <source pages="300-301"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En Reisende, som søgte sieldne Sager,
 Fandt, først i eet, saa andet Naboland,
 To skiønne Smykker paa den fierne Strand,
@@ -8614,6 +9730,11 @@ Men dette Guldhorn, som i Dag du fik,
 Dig bringe med sin Skiønhed til at tænke:
 D e t Bæger, som b l ie r f y l d t med L i v e t s D r i k ,
 Ma a F c rd re la n d e t skienke.''
+</body>
+</poem>
 
-SLUTSEKTION
+</content>
+</section>
 
+</workbody>
+</kalliopework>

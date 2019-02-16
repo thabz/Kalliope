@@ -1709,9 +1709,13 @@ const build_section_toc = section => {
 };
 
 const extract_subworks = (poetId, workbody) => {
-  return workbody.find('//subwork').map(subwork => {
-    const subworkId = safeGetAttr(subwork, 'ref');
-    return collected.works.get(`${poetId}/${subworkId}`);
+  return workbody.find('//subwork').map(subworkNode => {
+    const subworkId = safeGetAttr(subworkNode, 'ref');
+    const subwork = collected.works.get(`${poetId}/${subworkId}`);
+    if (subwork == null) {
+      throw `${poetId}/${subworkId}.xml refereret i hovedfil, men findes ikke. Glemt at tilføje til poets.xml?`;
+    }
+    return subwork;
   });
 };
 
