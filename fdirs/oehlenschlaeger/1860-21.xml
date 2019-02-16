@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1860-21" author="oehlenschlaeger" status="complete" type="poetry">
+<kalliopework id="1860-21" author="oehlenschlaeger" status="complete" type="poetry" parent="1860">
 <workhead>
     <title>Poetiske Skrifter</title>
     <subtitle>
@@ -17,7 +17,7 @@
         <picture src="1860-21-p1.jpg">Titelbladet til <i>Poetiske Skrifter</i> (1860) lyder ,,Oehlenschlägers Digte. // Udgivne / af / F. L. Liebenberg. // Anden Deel. // Kjøbenhavn. / Forlagt af Selskabet til Udgivelse af Oehlenschlägers Skrifter. // Hovedcommissionair: Th. Lind, Store Kjøbmagergade Nr. 6. / 1860.''.</picture>
 
     </pictures>
-    <source facsimile="115208057559_color" facsimile-pages-num="368" facsimile-pages-offset="10">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 21, 1860.</source>
+    <source facsimile="115208057559_color" facsimile-pages-num="368" facsimile-pages-offset="18">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 21, 1860.</source>
 </workhead>
 <workbody>
 
@@ -175,7 +175,7 @@ Th i juble dem i Møde Musasonner.
 
 <poem id="oehlenschlaeger2019021604">
 <head>
-    <title>Pebersvenden og Ægtemanden.</title>
+    <title>Pebersvenden og Ægtemanden</title>
     <subtitle>
         <line>Et Carmen i Anledning af den høilæirde Doctor og Lector Peder Hjorts og den dydzirede Mø Frøken Olivia Rasbechs Ægteforening.</line>
         <line>Den 25de September 1822.</line>
@@ -418,7 +418,7 @@ Klarer sig til Flamme hist.
 
 <poem id="oehlenschlaeger2019021609">
 <head>
-    <title>Selkirk i Robinsonshulen.</title>
+    <title>Selkirk i Robinsonshulen</title>
     <firstline>Her er jeg atter hiemme</firstline>
     <source pages="12-15"/>
     <quality>korrektur1,kilde,side</quality>
@@ -538,11 +538,14 @@ Med Lyst.
 </body>
 </poem>
 
-<poem id="oehlenschlaeger2019021611">
+<poem id="oehlen2000030206">
 <head>
     <title>Til min Søn</title>
     <subtitle>I et Exemplar af den latinske Grammatik.</subtitle>
     <firstline>En Gave her, min Hans! du fik</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Henrik Nielsen.</note>
+    </notes>
     <source pages="16-18"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -550,45 +553,51 @@ Med Lyst.
 En Gave her, min Hans! du fik,
 Som vel i første Øieblik
 Dig inderligt behager;
-Th i Bøgen smukt er hundet ind
+Thi Bogen smukt er bundet ind
 I Glandspapir med gule Skind,
-Dens Ådre dig indtager.
+Dens Ydre dig indtager.
+
 Dog (modsat Mandelens Natur)
-Du Skallen sod, og Kiærnen sum
-Af denne Frugt vil sinde;
-Og M6N8N, (lommu8) lue, lioe
+Du Skallen sød, og Kiærnen suur
+Af denne Frugt vil finde;
+Og mensa, dominus, hic, hoc
 Vil giøre dig det broget nok.
 Du maa dig overvinde.
+
 Thi naar du heller ud gad gaae,
 Du sidde maa i stille Vraa,
-Og lase paa din Lexe.
+Og læse paa din Lexe.
 Dog ei om liden Tvang dig bryd!
-Snart marker du med megen Fryd,
+Snart mærker du med megen Fryd,
 At denne Bog kan hexe.
+
 Et Eventyr du jo har hørt
-Om ham, som blev i Bierget fort.
-Blo t ved et Ord at fatte;
-Og navned han det Trolddomsord,
+Om ham, som blev i Bierget ført,
+Blot ved et Ord at fatte;
+Og nævned han det Trolddomsord,
 Da Tryllebierget strax opfoer,
-Og bod ham sine Skatte.
-Her maa du sagtens lare sleer;
+Og bød ham sine Skatte.
+
+Her maa du sagtens lære fleer;
 Men, Hans! hvad siger det saa meer,
-Om Fliden du foroger?
-Naar denne Bog du forsi forstemer,
-Da Noglen pludselig du faaer
+Om du Fliden forøger?
+Naar denne Bog du først forstaaer,
+Da Nøglen pludselig du faaer
 Til hundred andre Bøger.
-Studeer da nu med al din F lid!
+
+Studeer da nu med al din Flid!
 Tak Gud, du lever ei en Tid,
-Som revser strengt for Toddel;
-Hvor Barnet ikke langer fandt
+Som revser strengt for en Tøddel;
+Hvor Barnet ikke længer fandt
 I en utaalelig Pedant
-Sin Afsky og sin Boddel!
-Men heller ei forfores du
+Sin Afsky og sin Bøddel!
+
+Men heller ei forføres du
 Af dovne Lapseri, som nu
 Kun følger Flaneskikken!
-Ei til d e t Sl e t t e d e e l in e e r ,
-D i g med det Go d e c o n ju g e e r!
-Saa veed du Grammatikere.
+Ei til det Slette declineer,
+Dig med det Gode conjugeer!
+Saa veed du Grammatiken.
 </body>
 </poem>
 
@@ -759,7 +768,7 @@ Og lamgselsfuld jeg mindes, hvad jeg savner.
 
 <poem id="oehlenschlaeger2019021616">
 <head>
-    <title>Prindsesse Carolina Amalias Fødselsdag.</title>
+    <title>Prindsesse Carolina Amalias Fødselsdag</title>
     <subtitle>Den 28de Juni.</subtitle>
     <firstline>Hulde Fyrstinde! saa gierne jeg vilde</firstline>
     <source pages="23-24"/>
@@ -814,7 +823,7 @@ Himlen dig altid dem gladere skienke!
 
 <poem id="oehlenschlaeger2019021617">
 <head>
-    <title>Til en ung pige paa hendes Fødselsdag.</title>
+    <title>Til en ung pige paa hendes Fødselsdag</title>
     <subtitle>
         <line>Den 30te Juli 1823.</line>
         <line>Med samlede Digte, I.</line>
@@ -1058,7 +1067,7 @@ Til Døden jeg er dig forbunden.
 
 <poem id="oehlenschlaeger2019021622">
 <head>
-    <title>Ved Callisens Grav.</title>
+    <title>Ved Callisens Grav</title>
     <subtitle>Februar 1824.</subtitle>
     <firstline>Naar skal da min Tid faae Ende?</firstline>
     <source pages="32-33"/>
@@ -1599,7 +1608,7 @@ Og skienk den Fattige sit Ly.
 
 <poem id="oehlenschlaeger2019021632">
 <head>
-    <title>Prindsesse Caroline Amalias Fødselsdag.</title>
+    <title>Prindsesse Caroline Amalias Fødselsdag</title>
     <subtitle>Den 28de Juni 1825.</subtitle>
     <firstline>I Skovens gamle Bøgeklynge</firstline>
     <source pages="48-50"/>
@@ -2312,10 +2321,11 @@ De unge Danmarks Sønner.
 
 <poem id="oehlenschlaeger2019021643">
 <head>
-    <title>1826.</title>
+    <title>Sang</title>
     <subtitle>
         <line>for Enigheds-Selskabet paa</line>
         <line>Kongens Fødselsfest,</line>
+        <line>1826.</line>
     </subtitle>
     <firstline>Enighedens Skiønne Navn</firstline>
     <source pages="69-70"/>
@@ -3738,7 +3748,7 @@ Og paa din Fødselsdag rækkes dig Musernes Krands.
 
 <poem id="oehlenschlaeger2019021662">
 <head>
-    <title>Vilhelm Peter Zeuthen.</title>
+    <title>Vilhelm Peter Zeuthen</title>
     <subtitle>October 1827.</subtitle>
     <firstline>I Livels Sommer stod saa smukt</firstline>
     <source pages="113"/>
@@ -3881,7 +3891,7 @@ Va r da vor Tolk, hvor ei Laben har Ord.
 
 <poem id="oehlenschlaeger2019021666">
 <head>
-    <title>Prindsesse Caroline Amalias Fødselsdag.</title>
+    <title>Prindsesse Caroline Amalias Fødselsdag</title>
     <subtitle>Den 28de Juni 1828.</subtitle>
     <firstline>Vor Amalias Fødselsfest</firstline>
     <source pages="117-119"/>
@@ -5097,7 +5107,7 @@ Den Ædles Skaal!
 
 <poem id="oehlenschlaeger2019021682">
 <head>
-    <title>Caroline Amalia.</title>
+    <title>Caroline Amalia</title>
     <subtitle>Den 28de Juni 1829.</subtitle>
     <firstline>Camoenen kommer i din Skov, Fyrstinde!</firstline>
     <source pages="157"/>
@@ -6315,62 +6325,69 @@ Men ei med egen Sod at plette Hæder.
 </body>
 </poem>
 
-<poem id="oehlenschlaeger20190216101">
+<poem id="oehlenschlaeger2005050701">
 <head>
     <title>Niebuhr</title>
     <subtitle>Januar 1831.</subtitle>
     <firstline>Europas Himmel graaner Aar for Aar</firstline>
+    <notes>
+        <note>Barthold Georg Niebuhr (1776-1831), tysk statsmand og historiker. Søn af Carsten Niebuhr (1733-1815), tysk landmåler og eneste overlevende af den videnskabelige ekspedition (1761-1767) udsendt af <a person="frederik5">Frederik V</a> til Yemen og den nære Orient.</note>
+    </notes>
     <source pages="195-196"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Europas Himmel graaner Aar for Aar,
-Og Aandens Lys hendøer i skumle Sk y;
-See Videnskabens Sol for Nakken slye!
-Hvor nys var Aftenrøde, Taage staaer.
-Geniets Carlsvogn i den mørke Nak
-Snart ruller længer ei paa skiønne H ju l;
-Og Orlon, i Flammerustning guul,
-Ei klarer Mulmet — som en Tanke brat.
+Og Aandens Lys hendøer i skumle Sky;
+See Videnskabens Sol for Natten flye!
+Hvor nys var Aftenrøde, Taage staar.
+Geniets Carlsvogn i den mørke Nat
+Snart ruller længer ei paa skiønne Hiul;
+Og Orion, i Flammerustning guul,
+Ei klaarer Mulmet - som en Tanke brat.
+
 Men længe smerted Muser ei et Tab,
-Eom Niebuhrs Død. Han var et Krempelys.
-Tkiondt ofte Sygdom trued ham med Gys,
-Han brændte ma-gtig for hver Videnskab.
-Opfedt ved Daddelfrugt i Morgenland,
-Han drak af Kilden, hvor Ferdusi drak;
-Han i sin Vandringstaske Blomsten stak.
+Som Niebuhrs Død. Han var et Kæmpelys.
+Skiøndt ofte Sygdom trued ham med Gys,
+Han brændte mægtig for hver Videnskab.
+Opfødt ved Daddelfrugt i Morgenland,
+Han drak af Kilden, hvor Ferdusi<note>Ferdosi (født omkr. 940), persisk digter.</note> drak;
+Han i sin Vandringstaske Blomsten stak,
 Og tog den gierne med til Tiberstrand.
-Og Agt han nu med F lid paa Runen gav.
+
+Og Agt han nu med Flid paa Runen gav,
 Som ruged over Romerheltens Been.
 Han læste sindrigt paa den brustne Steen
-Og paa hvert grønsvandækket Arckitrav.
+Og paa hvert grønsværdækket Architrav.
 Nys Sandhed han i Eventyret saae,
 Nu blev Historien ham Eventyr;
-Og mangt et Trak skarpsynet han fornyer.
-Som selv en Livius ei tænkte paa.
-Hvo troer, at han, som Smag i Dig tn in g fandt.
-Som lytted barnligrsrt til Bækkens Fald,
-13*
+Og mangt et Træk skarpsynet han fornyer,
+Som selv en Livius<note>Titus Livius (59 f.Kr. - 17), romersk historiker.</note> ei tænkte paa.
+
+Hvo troer, at han, som Smag i Digtning fandt,
+Som lytted barnligrørt til Bækkens Fald,
 En Mester ogsaa var i brudne Tal,
 Og regned trods den koldeste Pedant?
-Dog var det saa. Th i Alt. hvad mægtigt ind
-2 Livets Samfund greb til Vinding, Tab,
+Dog var det saa. Thi Alt, hvad mægtigt ind
+I Livets Samfund greb til Vinding, Tab,
 Det rørte Niebuhrs Aand til Mesterskab,
 Det vakte Verdensvennens Tankesind.
-Ma n brugte ham. Og snildt han sig forstod
-Paa Selvet — paa den Vin d, der ei slaaer feil,
-Der h e lt opsvulmer Handelsskibets Se il —
-Det borgerlige Lcgems Mod og Blod.
+
+Man brugte ham. Og snildt han sig forstod
+Paa Sølvet - paa den Vind, der ei slaaer fejl,
+Der høit opsvulmer Handelsskibets Seil -
+Det borgerlige Legems Kiød og Blod.
 Med sikker Daad han virked, hvor han kom;
 Men Videnskaben atter Seier vandt,
-Sin Ciæro i Asken han gienfandt,
+Sin Cicerio i Asken han gienfandt,
 Og moderligt ham vinkte gamle Rom.
-Ei meer Politiker, Beregner klog —
+
+Ei meer Politiker, Beregner klog -
 Høilærer han i Skolen atter stod;
 Misundelig ham Døden ei tillod
-At ende sin ud edelige Bog.
-Han var en Danske, fedt i Mobenhavn,
-Og gamle Danmark var ham altid knrr;
+At ende sin udødelige Bog.
+Han var en Danske, født i Kiøbenhavn,
+Og gamle Danmark var ham altid kiær;
 Og derfor lyder Danersangen her,
 Og Mnemosyne glemmer ei sit Savn.
 </body>
@@ -7490,9 +7507,14 @@ Mens Bølgen naaer fra jydske Kyster
 </body>
 </poem>
 
-<section>
+<section id="oehlenschlaeger20190216155" level="2">
 <head>
-    <title>Norgesrejsen - En Digtekrands. - Sommeren 1833.</title>
+    <title>Norgesrejsen</title>
+    <subtitle>
+        <line>En Digtekrands</line>
+        <line>Sommeren 1833</line>
+    </subtitle>
+    <source pages="232-301"/>
 </head>
 <content>
 
