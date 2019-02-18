@@ -25,6 +25,7 @@ end
 @state = 'NONE'
 @poemcount = 1;
 @header_printed = false
+@section_title_stack = []
 
 # Work data
 @poetid = 'POETID'
@@ -218,9 +219,9 @@ def printStartSektion(title)
   puts ""
 end    
 
-def printEndSection()
+def printEndSection(sectionTitle)
   puts "</content>"
-  puts "</section>"
+  puts "</section> <!-- #{sectionTitle} -->"
   puts ""
 end
 
@@ -312,6 +313,7 @@ File.readlines(ARGV[0]).each do |line|
           printPoem();
       end
       sectionTitle = line[8..-1].strip
+      @section_title_stack.push(sectionTitle)
       print printStartSektion(sectionTitle)
       @state = 'NONE'
   end
@@ -319,7 +321,7 @@ File.readlines(ARGV[0]).each do |line|
       if @state != 'NONE'
           printPoem();
       end
-      printEndSection();
+      printEndSection(@section_title_stack.pop);
       @state = 'NONE'
   end
   if @state == 'INHEAD'
