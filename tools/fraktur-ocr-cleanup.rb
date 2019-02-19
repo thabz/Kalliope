@@ -272,12 +272,12 @@
 'Loeber/Læber',
 'Langse/Længse',
 'Langsl/Længsl',
+'Lamgsel/Længsel',
 '(\W)langes/\1længes',
 '(\W)ftr/\1str',
 '(\W)fpr/\1spr',
 '(\W)lamge/\1længe',
 '(\W)siern/\1fiern',
-# 'Dine/Øine', # Volder mange fejl, så udkommenteret
 'loeng/læng',
 'Onske/Ønske',
 '(\W)onste/\1ønske',
