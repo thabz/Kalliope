@@ -12,10 +12,9 @@
 <poem id="thaarup2001053001">
 <head>
    <title>Hr Bacchus er en skjønne Mand</title>
-   <toctitle>Hr Bacchus er en skjønne Mand</toctitle>
-   <indextitle>Hr Bacchus er en skjønne Mand</indextitle>
    <firstline>Hr Bacchus er en skjønne Mand</firstline>
    <notes>
+       <note>Gendigtning af Gottfried August Bürger: <xref type="translation" poem="burger2019021901"/>.</note>
       <note type="credits">Bidrag fra Margit Ammentorp.</note>
       <note>Indtastet fra <i>Digter-Krands - En Samling af udkaarede ældre og nyere Selskabssange</i>, Odense, 1826. Trykker og udgiver er S. Hempel "Eier af Fyens Adressekontoir".</note>
    </notes>
@@ -397,6 +396,7 @@ Lykkelig
        <note>Den egentlige kilde er en lille tryksag, som opbevares på det kongelige bibliotek og bærer titlen ,,Cantate opført paa Universitetetets øverste Auditorium 17. Dec. 1789 over Statsminister Henrich de Stamp'' af Thaarup. Thom.  Hertil er der tilføjet mindre ændringer af teksten på grundlag af månedskriftet <i>Minerva</i> december 1790 p.391-396. Thaarup understeger selv her, at han har ønsket teksten rettet.</note>
        <note>Titelbladet til nævnte tryksag lyder ,,Cantate / opfört / paa Universitetets överste Auditorium, / Torsdagen den 17de Decbr. 1789 From. Kl. 11 / ved den over / Hans Excellence / afg. Statsminister og Geheimeraad / Henrik de Stampe / Ridder af Dannebroge og l’union parfaite6 &amp;c. / af / Hans efterladte Enkefrue / foranstaltet Sörge-Höytidelighed. / ved / Hr. Th. Thaarup. / Musiken af Hr. Capelmester Schultz. / KIÖBENHAVN. / Trykt hos Directeur P. M. HÖPFFNER, Hans Kongel. / Majestæts og Universitets förste Bogtrykker.''</note>
       <note type="credits">Bidrag fra Mikkel Kølkær.</note>
+      <!-- TODO: Samme indledning som thaarup2017011601 -->
    </notes>
    <quality>korrektur1</quality>
    <keywords></keywords>
@@ -650,6 +650,115 @@ Da Hun faldt hen i Dødens Blund
 Og sank i Gravens Gjemme.
 Held Hende; thi Hun gik herfra
 Til alles Gud – Halleluja!
+</body>
+</poem>
+
+<poem id="thaarup2019021901">
+<head>
+   <title>Fødelands-Kjerlighed</title>
+   <firstline>Du Plet af Jord, hvor Livets Stemme</firstline>
+   <quality>korrektur1</quality>
+   <keywords></keywords>
+</head>
+<body>
+Du Plet af Jord, hvor Livets Stemme
+    Steeg første Gang fra spæde Bryst,
+Hvor Himlen gav mig at fornemme
+    Det første Glimt af Livets Lyst,
+Der, hvor jeg lærte Moder stamme,
+    Og første Fjed ved hendes Haand;
+Der tændtes Gnisten til den Flamme,
+    Som brænder for mit Fødeland.
+
+Og naar i Barndoms blide Dage
+    Til fremmed Egn vi løbe hen,
+Med Længsel ilte vi tilbage: 
+    Til moderlige Hjem igjen;
+Hver Høi, hver Dal, som gav os Glæder,
+    Den blev vort Minde dyrebar,
+Og henrykt Manden seer de Steder,
+    Hvor han som Barn lyksalig var.
+
+Fra Øst, fra Vest, mod Polers Ende,
+    Hvor en fornuftig Stemme lød,
+De samme Luer varig brænde,
+    Som Himlen, som Fornuften bød.
+Ei Grønlands arme Søn vil bytte
+    Sit golde Fjeld med kornrigt Land,
+Et Marmor-Slot er ham hans Hytte,
+    Og Fjeldet er hans Kanaan.
+
+Af denne ædle Lue brændte
+    De fordums Helte af vort Land
+Skjøndt de kun tvende Pligter kjendte:
+    At elske og at døe som Mand;
+Saa glemte Hjalte Elskerinde
+    Og Fødelandet ene saae,
+Og faldt for det; Hans Troskabs Minde
+    Som Bauta-Stenen varig staae!
+
+Den bød dig, Absalon, at lægge:
+    Din Stav, og gribe Sverd til Strid,
+At bytte Klostrets lune Vægge
+    Med Telt i Landets Trængsels Tid;
+Ei Storm ham skrekker, Mulm ham blinder;
+    Arkona følte Danmarks Ven,
+Med Skjelven saae sin Overvinder,
+    Med Glæde Mennesket igjen.
+
+De danske Sletter, Norges Fjelde -
+    Har Minder af den Kjerlighed, -
+Hvorpaa Monarkers sande Vælde
+    Staaer fast i Feide og i Fred.
+Kjær har vi Fædre, Ven og Pige
+    Og Frugten af arbeidsom Haand;
+Men over Alt skal Flammen stige,
+    Som brænder for vort Fødeland.
+
+Du Troskabs Minde i vort Norden,
+    Urokkelige Fredrikshald!
+Du trodsed' Carls gjentagne Torden,
+    Og tændte Lynet til hans Fald;
+Paa Klippen, som et Alter, brændte
+    Et Offer for vort Fødeland,
+Der Borger-Kjerligheden tændte
+    For Landets Vel sin By i Brand.
+    
+O Konge-Stad, din Seiers Minde
+    Til Danskes sidste Slægt skal staae:
+Det Land, som Gustav vilde vinde,
+    Bag dine svage Volde laae;
+Men Borger-Kjerligheden vinder,
+    Og Gustav skjelver for sit Navn,
+Hans Haab og Helte Gravsted finder
+    Omkring det frelste Kjøbenhavn.
+    
+Hver Dannemarks og Norges Pige
+    Skal henrykt synge deres Navn;
+Hver Moder ofte Sønnen sige
+    Om Frederikshald og Kjøbenhavn,
+Og, mens han lærer stamme Moder,
+    Ham lære stamme Fødeland,
+At elske Mennesket som Broder,
+    Men Fødelandet som en Mand.
+    
+Vi ville ligne vore Fædre
+    Som Mænd i Feide og i Fred;
+Vort Navn skal Efterslægten hædre
+    For Fødelandets Kjerlighed;
+Hans Minde Tidens Tand ei skader,
+    Naar tvivlsomt Marmor-Tegn forgaaer,
+Som sig den Gravskrift efterlader:
+    At han en nyttig Borger var.
+
+Brænd varig i vort Dan og Norden
+    Du Fødelandets Kjerlighed!
+Gjør Manden kjek i Slagets Torden,
+    Og nyttig i den gyldne Fred!
+Vor Attraa Viisdoms Børn skal ære;
+    Alfader give Bifalds Smil! .
+Den gode Borgers Navn at bære,
+    Er Maalet, som vi stræbe til.
 </body>
 </poem>
 
