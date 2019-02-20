@@ -1,12 +1,33 @@
-KILDE:Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 24, 1861.
-DIGTER:oehlenschlaeger
-FACSIMILE:115208057585_color
-FACSIMILE-SIDER:418
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="1861-24" author="oehlenschlaeger" status="complete" type="poetry" parent="1860">
+<workhead>
+    <title>Poetiske Skrifter</title>
+    <subtitle>
+        <line>Fire og Tyvende Bind. Digte, Sjette Deel.</line>
+    </subtitle>
+    <linktitle>Samlede Skrifter, 24. Bind</linktitle>
+    <toctitle><num>Bind 24.</num>Digte, Siette Deel</toctitle>
+    <breadcrumbtitle>Bd. 24</breadcrumbtitle>
+    <year>1861</year>
+    <notes>
+        <note>Teksten følger Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 24, 1861.</note>
+    </notes>
+    <pictures>
+        <picture src="1861-24-p1.jpg">Titelbladet til <i>Poetiske Skrifter</i> (1861) lyder ,,Oehlenschlägers Digte. // Udgivne / af / F. L. Liebenberg. // Sjette Deel. // Kjøbenhavn. / Forlagt af Selskabet til Udgivelse af Oehlenschlägers Skrifter. // Hovedcommissionair: Th. Lind, Store Kjøbmagergade Nr. 44 (6). / 1861.''.</picture>
+    </pictures>
+    <source facsimile="115208057585_color" facsimile-pages-num="418" facsimile-pages-offset="10">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 24, 1861.</source>
+</workhead>
+<workbody>
 
-T:Sivald og Thora
-F:Fra Thoras ømme, elskovsfulde Bryst
-SIDE:1-4
-
+<poem id="oehlenschlaeger2019022001">
+<head>
+    <title>Sivald og Thora</title>
+    <firstline>Fra Thoras ømme, elskovsfulde Bryst</firstline>
+    <source pages="1-4"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Fra Thoras ømme, elskovsfulde Bryst
 Sled Sivald sig med fæl og grusom Latter;
 Fvrgieves qvalte Taarer hendes Røst,
@@ -96,11 +117,17 @@ Forgieves kalker man den skumle Muur,
 Blodblomsten voxer stedse fra sin Kime.
 Ved Midnatstid det stygge Dødninguhr .
 Fælt minder Morderen om Hevnens Time.
+</body>
+</poem>
 
-T:Vilhelm
-F:Bag grønklædte Bakke der ligger et Huus
-SIDE:4-8$
-
+<poem id="oehlenschlaeger2019022002">
+<head>
+    <title>Vilhelm</title>
+    <firstline>Bag grønklædte Bakke der ligger et Huus</firstline>
+    <source pages="4-8$"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Bag grønklædte Bakke der ligger et Huus,
 Langt borte fra Stadens fortumlende Su u s;
 De Stuer er lave, de Ruder er smaae,
@@ -209,13 +236,18 @@ Nu smiler jeg mat, og veemodig jeg gaaer,
 Nu digter jeg Viser, og Strængene siaaer.
 De høre mig gierne, de elskende Moer,
 Med Blomster de krandse min Grav, naar jeg døer.
+</body>
+</poem>
 
-T:Kongen i Leire
-U:(Efter Goethe.)
-F:Der  var en Konning i Leire
-SIDE:8-9
-VARIANT:oehlenschlaeger2001052903
-
+<poem id="oehlenschlaeger2019022003" variant="oehlenschlaeger2001052903">
+<head>
+    <title>Kongen i Leire</title>
+    <subtitle>(Efter Goethe.)</subtitle>
+    <firstline>Der  var en Konning i Leire</firstline>
+    <source pages="8-9"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Der  var en Konning i Leire,
 Heel trofast til sin Grav.
 Hans Fæstemo, hiin feire,
@@ -240,13 +272,21 @@ Igiennem dybe Taage
 Han blank det synke seer.
 Da segned hans Øienlaage —
 Drak ei en Draabe meer.
+</body>
+</poem>
 
-T:Romance
-U:af
-U:,,Anden April 1801'', en dramatisk Situation.
-F:Ad Sundet en truende Flaade gik
-SIDE:9-10
-
+<poem id="oehlenschlaeger2019022004">
+<head>
+    <title>Romance</title>
+    <subtitle>
+        <line>af</line>
+        <line>,,Anden April 1801'', en dramatisk Situation.</line>
+    </subtitle>
+    <firstline>Ad Sundet en truende Flaade gik</firstline>
+    <source pages="9-10"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Ad Sundet en truende Flaade gik,
 For Kiobenhavn at bekrige.
 Carl Gustav smulte med stolten Blik:
@@ -263,12 +303,17 @@ Men frem han stævner med vredelig Hu,
 Og tænkte, vi skulde blegne.
 Da hvinede Sværdet med Dødens Gru —
 En d n u er vi vore egne.
+</body>
+</poem>
 
-T:Siølnd
-F:I første Tider
-SIDE:10-12
-VARIANT:oehlen2002022404
-
+<poem id="oehlenschlaeger2019022005" variant="oehlen2002022404">
+<head>
+    <title>Siølnd</title>
+    <firstline>I første Tider</firstline>
+    <source pages="10-12"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I første Tider,
 Da Aser droge
 Hid fra Østen,
@@ -349,12 +394,17 @@ Bedste Disa
 Ib la n d t Diser!
 Sislunds unge
 Skiald dig priser.
+</body>
+</poem>
 
-T:Biergtrolden
-F:See Nordlys lue
-SIDE:13-23
-VARIANT:oehlenschlaeger2001052801
-
+<poem id="oehlenschlaeger2019022006" variant="oehlenschlaeger2001052801">
+<head>
+    <title>Biergtrolden</title>
+    <firstline>See Nordlys lue</firstline>
+    <source pages="13-23"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 See Nordlys lue
 Med røde Flammer
 Paa sorten Bue!
@@ -662,11 +712,17 @@ Og armindslynget
 Og favnopklynget
 Til Biælkehuset
 I Dalen ile!
+</body>
+</poem>
 
-T:Hakon Jarls Død
-F:De Nætter ruge saa lange og sorte
-SIDE:23-27
-
+<poem id="oehlenschlaeger2019022007">
+<head>
+    <title>Hakon Jarls Død</title>
+    <firstline>De Nætter ruge saa lange og sorte</firstline>
+    <source pages="23-27"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 De Nætter ruge saa lange og sorte,
 Syvstiernen glimter saa mat.
 Ud stormer Vinden fra Himmelens Porte,
@@ -676,7 +732,7 @@ Om mosgroede Stotter af Valhals Guder.
 ,,Vo r Tid er fordi;
 Snart synke vi.''
 Den rasler, og styrter, den blodige Steen,
-Og knuser omliggende Offerbeen. ' 
+Og knuser omliggende Offerbeen. '
 Den gothiste Steenmasse kneiser
 Bruunrodlig skummel i Maaneglands.
 I mørkedlaa Luft sit Sp iir den reiser,
@@ -787,12 +843,17 @@ Kun hist og her
 Man stem og nerr
 En Høi og en opreist Kampesteen skuer.
 Som minder om Oldtidens stukte Luer.
+</body>
+</poem>
 
-T:Skattegraveren
-F:Mens Vintersneen fyger
-SIDE:27-30
-VARIANT:oehlenschlaeger2001052803
-
+<poem id="oehlenschlaeger2019022008" variant="oehlenschlaeger2001052803">
+<head>
+    <title>Skattegraveren</title>
+    <firstline>Mens Vintersneen fyger</firstline>
+    <source pages="27-30"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Mens Vintersneen fyger
 Saa gnistrende og hvid,
 Og medens Stormen stryger
@@ -889,12 +950,17 @@ See, hvor den Arme bæver,
 Kom, hielper ham i Nød!''
 De ham fra Kisten hæver,
 Han smulte, og var død.
+</body>
+</poem>
 
-T:Løveridderen
-F:Mildt boltre sig de lune Sommervinde
-SIDE:30-37
-VARIANT:oehlenschlaeger1999062804
-
+<poem id="oehlenschlaeger2019022009" variant="oehlenschlaeger1999062804">
+<head>
+    <title>Løveridderen</title>
+    <firstline>Mildt boltre sig de lune Sommervinde</firstline>
+    <source pages="30-37"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Mildt boltre sig de lune Sommervinde,
 Fra klare Sapphirhvælving Maanen straaler
 Igiennem duftopfyldte, svale Linde
@@ -1090,12 +1156,17 @@ Taknemlighed er al den Fryd, den tiender;
 Den glemmer Stolthed, Frihed, selve Sorgen
 At skilles fra sin Skov og fra sin Mage,
 Den tiener Kongen alle sine Dage.
+</body>
+</poem>
 
-T:Fuglefængeren
-F:Svagt suser Bækken hist
-SIDE:37-40
-VARIANT:oehlenschlaeger2001052901
-
+<poem id="oehlenschlaeger2019022010" variant="oehlenschlaeger2001052901">
+<head>
+    <title>Fuglefængeren</title>
+    <firstline>Svagt suser Bækken hist</firstline>
+    <source pages="37-40"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Svagt suser Bækken hist,
 I Bladet Vinden gynger,
 Veem odigt Fuglen synger
@@ -1172,12 +1243,17 @@ Der glimted svage Lyn.
 Den gamle Gubbe stirred
 Paa blodig Qvit forvirret,
 Han troede ei sit Syn.
+</body>
+</poem>
 
-T:Harald i Offerlunden
-F:Klar er Nattens Stiernehvælving
-SIDE:40-43
-VARIANT:oehlenschlaeger2001052904
-
+<poem id="oehlenschlaeger2019022011" variant="oehlenschlaeger2001052904">
+<head>
+    <title>Harald i Offerlunden</title>
+    <firstline>Klar er Nattens Stiernehvælving</firstline>
+    <source pages="40-43"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 ,,Klar er Nattens Stiernehvælving.
 Høitidsfulde Midnatsscene!
 Væmodsfuld og taus jeg vanker
@@ -1250,12 +1326,17 @@ Blomsten aabner sig faa venlig.
 Duggen ned ad Æspen glider.
 Harald gyser ved sin Drøm —
 Ønsker dog de gamle Tid e r..
+</body>
+</poem>
 
-T:Ellehøien
-F:Paa hede Dag den svale Aften fulgte
-SIDE:43-46
-VARIANT:oehlenschlaeger1999062805
-
+<poem id="oehlenschlaeger2019022012" variant="oehlenschlaeger1999062805">
+<head>
+    <title>Ellehøien</title>
+    <firstline>Paa hede Dag den svale Aften fulgte</firstline>
+    <source pages="43-46"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Paa hede Dag den svale Aften fulgte;
 Der glimted Purpur bag de sorte Grene,
 Den dunkle Landevei var heel beskygget.
@@ -1334,12 +1415,17 @@ Mens Solen slukkede de mindre Sole.
 Vogt, unge Kampe! dig for stige Høie;
 Den lumske Død der Blomsterne beklader,
 Og Trolden suger Blodet af dit Øie.
+</body>
+</poem>
 
-T:Spilleren
-F:Skarp Stormen foer ved Midnatstid
-SIDE:46-49
-VARIANT:oehlenschlaeger2001052905
-
+<poem id="oehlenschlaeger2019022013" variant="oehlenschlaeger2001052905">
+<head>
+    <title>Spilleren</title>
+    <firstline>Skarp Stormen foer ved Midnatstid</firstline>
+    <source pages="46-49"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Skarp Stormen foer ved Midnatstid
 Jgiennem Krat og Hegn,
 Kold gnistred Vintersneen bvid
@@ -1405,12 +1491,17 @@ Man fandt ham aarle Morgenstund,
 Mens Alt endnu var tyst,
 Med Smykket til den blege Mund,
 Med Haanden paa sit Bryst.
+</body>
+</poem>
 
-T:Jurabierget
-F:I Juras skiønne Egne
-SIDE:49-51
-VARIANT:oehlenschlaeger2001052906
-
+<poem id="oehlenschlaeger2019022014" variant="oehlenschlaeger2001052906">
+<head>
+    <title>Jurabierget</title>
+    <firstline>I Juras skiønne Egne</firstline>
+    <source pages="49-51"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I Juras skiønne Egne,
 Ved Biergets Kæmpefod,
 Der viser man en Klippe,
@@ -1472,12 +1563,17 @@ I Juras skiønne Egne,
 Ved Biergets Kæmpefod,
 Der viser man en Klippe,
 Den er besprængt med Blod.
+</body>
+</poem>
 
-T:Fridleif og Helga
-F:Alt Skoven saa prud udi Blomster staaer
-SIDE:51-55
-VARIANT:oehlenschlaeger2001052907
-
+<poem id="oehlenschlaeger2019022015" variant="oehlenschlaeger2001052907">
+<head>
+    <title>Fridleif og Helga</title>
+    <firstline>Alt Skoven saa prud udi Blomster staaer</firstline>
+    <source pages="51-55"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Alt Skoven saa prud udi Blomster staaer,
 Vanked der liden Helga, vel svobt udi Maar.
 Vandet rinder over hun liden smaa Steen;
@@ -1568,12 +1664,17 @@ I trende Dage hans Legem stod,
 Og stirred ned i det levret Blod.
 Den tredie Nat — da skete et Raab,
 Herr Erik faldt ned i en Askehob.
+</body>
+</poem>
 
-T:Guldhornene
-F:De higer, og søger
-SIDE:55-61
-VARIANT:oehlenschlaeger1803a0
-
+<poem id="oehlenschlaeger2019022016" variant="oehlenschlaeger1803a0">
+<head>
+    <title>Guldhornene</title>
+    <firstline>De higer, og søger</firstline>
+    <source pages="55-61"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 De higer, og søger
 I gamle Beger,
 I oplukte Høie
@@ -1740,12 +1841,17 @@ Himlen sortner, Storme brage.
 Visse Time! du er kommen.
 Hvad de gav, de tog tilbage,
 Evig bortsvandt Helligdommen.
+</body>
+</poem>
 
-T:Violsamleren
-F:Nattens blege Gienfærd lyste
-SIDE:61-64
-VARIANT:oehlenschlaeger2001052908
-
+<poem id="oehlenschlaeger2019022017" variant="oehlenschlaeger2001052908">
+<head>
+    <title>Violsamleren</title>
+    <firstline>Nattens blege Gienfærd lyste</firstline>
+    <source pages="61-64"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Nattens blege Gienfærd lyste,
 Stormen dreied Kirkespiret.
 Emma ved min Side gyste.
@@ -1826,12 +1932,17 @@ Derfor sank er jeg Violer;
 De mit blege Liig skal klæde,
 Naar i Nat de hvide Straaler
 Vinke mig til evig Glæde.
+</body>
+</poem>
 
-T:Valravnen
-F:De gule Silkeseil, som Vinden fylder
-SIDE:64-77
-VARIANT:oehlenschlaeger1999062806
-
+<poem id="oehlenschlaeger2019022018" variant="oehlenschlaeger1999062806">
+<head>
+    <title>Valravnen</title>
+    <firstline>De gule Silkeseil, som Vinden fylder</firstline>
+    <source pages="64-77"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 De gule Silkeseil, som Vinden fylder,
 Hiemlede bugnende den lette Snekke.
 Mens Aftensolen ranke Mast forgylder,
@@ -2213,12 +2324,17 @@ I Nattens Blaa stg Stiernen mat fremtromger.
 En selvklar Sky ved Maanen flyder ene.
 Det er Minona dsende, som svæver.
 Hun synker ei, hun sig til Himlen hæver.
+</body>
+</poem>
 
-T:Harpespilleren ved Posthuset
-F:Her vil jeg sidde, og Harpen slaae
-SIDE:78-82
-VARIANT:oehlenschlaeger2001052909
-
+<poem id="oehlenschlaeger2019022019" variant="oehlenschlaeger2001052909">
+<head>
+    <title>Harpespilleren ved Posthuset</title>
+    <firstline>Her vil jeg sidde, og Harpen slaae</firstline>
+    <source pages="78-82"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Her vil jeg sidde, og Harpen slaae,
 Og synge for Folket en Sang.
 Her ile hid baade Store og Smaae;
@@ -2355,12 +2471,17 @@ Ja, Kieerligheds Gnist, saa mild,
 Skal teende Oldtidens Guddomsild.
 Af det kolde, natlige Hav
 Skal Solen staae frem af sin Grav.
+</body>
+</poem>
 
-T:Rosmer Havmand
-F:Konning Uller er sig i Hu saa mod
-SIDE:83-94
-VARIANT:oehlenschlaeger2001052910
-
+<poem id="oehlenschlaeger2019022020" variant="oehlenschlaeger2001052910">
+<head>
+    <title>Rosmer Havmand</title>
+    <firstline>Konning Uller er sig i Hu saa mod</firstline>
+    <source pages="83-94"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Konning Uller er sig i Hu saa mod.
 Han sidder ved Midienat;
 Mens Maanen langsomt gaaer op i Blod,
@@ -2663,12 +2784,17 @@ De aande i det rene Ætherblaa,
 De bade sig i Morgensolens Varme.
 Letsvævende de iler op fra Lunden,
 Alt synes dem en Drøm, som er forsvunden.
+</body>
+</poem>
 
-T:Anelsen
-F:Kammerat! Kammerat! afsted, afsted!
-SIDE:94-98
-VARIANT:oehlenschlaeger2001052920
-
+<poem id="oehlenschlaeger2019022021" variant="oehlenschlaeger2001052920">
+<head>
+    <title>Anelsen</title>
+    <firstline>Kammerat! Kammerat! afsted, afsted!</firstline>
+    <source pages="94-98"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Vilhelm og Ludvig paa Valpladsen.
 Vilh e lm .
 Kammerat! Kammerat! afsted, afsted!
@@ -2802,12 +2928,17 @@ Hvorfor hvisler du saa underligt?
 Busken til Bølgerne.
 Hvorfor risler 2 sned Maaneblod?
 Nattergalen slaaer.
+</body>
+</poem>
 
-T:Skøiteløberen
-F:Fra Træet Rimens Blade
-SIDE:98-100
-VARIANT:oehlenschlaeger2001053006
-
+<poem id="oehlenschlaeger2019022022" variant="oehlenschlaeger2001053006">
+<head>
+    <title>Skøiteløberen</title>
+    <firstline>Fra Træet Rimens Blade</firstline>
+    <source pages="98-100"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Fra Træet Rimens Blade
 Faldt ned for sagte Vind;
 Over den glatte Flade
@@ -2848,12 +2979,17 @@ Derpaa han langsomt dukker,
 Over Issen Bølgen slaaer.
 Sig Lyset i Borgen slukker,
 En Sky for Maanen staaer.
+</body>
+</poem>
 
-T:Eventyret i den fremmede Stad
-F:Og som jeg nu hen ad Gaden gik
-SIDE:100-103
-VARIANT:oehlen2002101104
-
+<poem id="oehlenschlaeger2019022023" variant="oehlen2002101104">
+<head>
+    <title>Eventyret i den fremmede Stad</title>
+    <firstline>Og som jeg nu hen ad Gaden gik</firstline>
+    <source pages="100-103"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Og som jeg nu hen ad Gaden gik
 I den fremmede Stad,
 Da faldt paa en Mø mit dristige Blik;
@@ -2943,14 +3079,21 @@ Jeg raved til Dsren med bange Mod,
 Kun lidet glad.
 Inden Hanegal jeg atter forlod
 Den fremmede Stad.
+</body>
+</poem>
 
-T:Blomst Underskiøn
-U:Den fangne Greves Sang.
-U:(Efter Goethe.)
-F:Jeg kiender en Blomst, saa underskiøn
-SIDE:103-106
-VARIANT:oehlen2002101105
-
+<poem id="oehlenschlaeger2019022024" variant="oehlen2002101105">
+<head>
+    <title>Blomst Underskiøn</title>
+    <subtitle>
+        <line>Den fangne Greves Sang.</line>
+        <line>(Efter Goethe.)</line>
+    </subtitle>
+    <firstline>Jeg kiender en Blomst, saa underskiøn</firstline>
+    <source pages="103-106"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Greven.
 Jeg kiender en Blomst, saa underskiøn,
 Og har efter den Forlængsel;
@@ -3044,13 +3187,18 @@ Det holder mig end i Live.
 Naar Hiertet isner, og banker ei.
 Saa raaber jeg kun: Fokglem mig ei
 Da vender Livet tilbage.
+</body>
+</poem>
 
-T:Den første Valpurgis-Nat
-U:(Efter Goethe.)
-F:See, Vaaren leer
-SIDE:107-110
-VARIANT:oehlen2002101106
-
+<poem id="oehlenschlaeger2019022025" variant="oehlen2002101106">
+<head>
+    <title>Den første Valpurgis-Nat</title>
+    <subtitle>(Efter Goethe.)</subtitle>
+    <firstline>See, Vaaren leer</firstline>
+    <source pages="107-110"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En D r u id e .
 See, Vaaren leer,
 Ei Sneen meer
@@ -3162,12 +3310,17 @@ I Røgen luttres Flammens Blik.
 Her staaer vor Tro sin Prøve;
 Og roves os den gamle Skik,
 Hvo vil dit Lys os rove?
+</body>
+</poem>
 
-T:Den gamle Kiæmpe Cometes
-F:Jeg er en gammel Kæmpe stærk
-SIDE:111-114
-VARIANT:oehlen1999062832
-
+<poem id="oehlenschlaeger2019022026" variant="oehlen1999062832">
+<head>
+    <title>Den gamle Kiæmpe Cometes</title>
+    <firstline>Jeg er en gammel Kæmpe stærk</firstline>
+    <source pages="111-114"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Jeg er en gammel Kæmpe stærk,
 Mit Legem blusser sundt;
 1 kobbærode Pandserserrk
@@ -3258,13 +3411,17 @@ Da støder jeg med roedsom Gru
 Mod dig min Barm saa bred,
 At udi tusind Stykker du
 I Dybet styrter ned.
+</body>
+</poem>
 
-
-T:Uffe hiin Spage
-F:Vermund gammel var og graa
-SIDE:114-132
-VARIANT:oehlen2002101102
-
+<poem id="oehlenschlaeger2019022027" variant="oehlen2002101102">
+<head>
+    <title>Uffe hiin Spage</title>
+    <firstline>Vermund gammel var og graa</firstline>
+    <source pages="114-132"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Vermund gammel var og graa;
 Træt af mange svare Krige
 Sad han hiemme i sit Rige,
@@ -3778,12 +3935,17 @@ Froe var Vermunds sidste Dage,
 Uffe blev en Kæmpe stank,
 Altid sindigt var hans Værk,
 Derfor kaldtes han den Spage.
+</body>
+</poem>
 
-T:Knud den Store
-F:Kong Knud sad stor og mægtig paa sin Throne
-SIDE:132-136
-VARIANT:oehlen1999062831
-
+<poem id="oehlenschlaeger2019022028" variant="oehlen1999062831">
+<head>
+    <title>Knud den Store</title>
+    <firstline>Kong Knud sad stor og mægtig paa sin Throne</firstline>
+    <source pages="132-136"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Kong Knud sad stor og mægtig paa sin Throne,
 En Herre, drabelig og stank og huld.
 Den danske, britiske, den norske Krone
@@ -3882,12 +4044,17 @@ Der- knælte han, og hver sin Synd bekiendte,
 Mens Angerstaaren trilled heed og klar.
 Paa den Korsfæstede i Martyrqviden
 Han Kronen satte, bar den aldrig siden.
+</body>
+</poem>
 
-T:Borgridderen
-F:Hvor Stormen vældigt tuder
-SIDE:136-141
-VARIANT:oehlen2002101103
-
+<poem id="oehlenschlaeger2019022029" variant="oehlen2002101103">
+<head>
+    <title>Borgridderen</title>
+    <firstline>Hvor Stormen vældigt tuder</firstline>
+    <source pages="136-141"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hvor Stormen vældigt tuder,
 Hist høit paa Fieldet brat
 En gammel Borg udluder,
@@ -4024,12 +4191,18 @@ Da viser man, hvorlunde
 Sig Muren strakte hen.
 De gamle Tider svunde —
 Men Mindet er igien.
+</body>
+</poem>
 
-T:Skovkirken
-F:I Gudbrandsdalen stod en eenlig Hytte
-SIDE:141-149
-TODO:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022030">
+<head>
+    <title>Skovkirken</title>
+    <firstline>I Gudbrandsdalen stod en eenlig Hytte</firstline>
+    <source pages="141-149"/>
+    <!-- TODO: Findes i andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I Gudbrandsdalen stod en eenlig Hytte,
 Hvis Eier ei var blevet Dødens Bytte,
 Da Pesten dybt sin Vinge synke lod,
@@ -4241,12 +4414,18 @@ Og i en hellig Psalme ud de brod,
 Og klart det skiønne Chor i Kirken lod.
 Hs it siunge Mænd og Qvinder:
 ,,Hvo banker, lades ind; hvo trofast leder, finder.''
+</body>
+</poem>
 
-T:Ægirs Gave
-F:Mens høie Guder
-SIDE:149-156
-TODO:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022031">
+<head>
+    <title>Ægirs Gave</title>
+    <firstline>Mens høie Guder</firstline>
+    <source pages="149-156"/>
+    <!-- TODO: Findes i andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Mens høie Guder
 Fornoied sig, hvor salten Sø -
 Med Vælde tuder
@@ -4448,12 +4627,17 @@ Oldtids dunkle Taager flye,
 Valhal straaler smukt;
 Guder lever op paa ny
 Ved Adunas Frugt.
+</body>
+</poem>
 
-T:De tvende Kirketaarne
-F:Det var sig Herr Asker Ryg
-SIDE:156-161
-VARIANT:oehlen1999062840
-
+<poem id="oehlenschlaeger2019022032" variant="oehlen1999062840">
+<head>
+    <title>De tvende Kirketaarne</title>
+    <firstline>Det var sig Herr Asker Ryg</firstline>
+    <source pages="156-161"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Det var sig Herr Asker Ryg,
 Hannem lyster i Leding at gange;
 Forst træder han i den Kirke liden,
@@ -4594,12 +4778,18 @@ Hil verre den Kæmpe, som seierrig
 Hiem drager med stolten Skare,
 Og finder i Vuggen Tvillinger to,
 Som Axel og Esbern Snare!
+</body>
+</poem>
 
-T:Agnete
-F:Agnete sidder paa den eensomme Strand
-SIDE:161-164
-TODO:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022033">
+<head>
+    <title>Agnete</title>
+    <firstline>Agnete sidder paa den eensomme Strand</firstline>
+    <source pages="161-164"/>
+    <!-- TODO: Findes i andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Agnete sidder paa den eensomme Strand,
 Saa sagtelig de Bølger slaae op paa hviden Sand.
 De Bølger svulme med skummende Top,
@@ -4670,12 +4860,18 @@ I Sandet han grov hende ned bag en Steen,
 Den skiermer nu for Bølgerne de modige Been.
 Hver Morgen og hver Aften er Liigstenen vaad;
 Det kalde Byens Piger nu Havmandens Graad.
+</body>
+</poem>
 
-T:Børnene i Maanen
-F:Hør, mit Barn! et Eventyr
-SIDE:164-166
-TODO:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022034">
+<head>
+    <title>Børnene i Maanen</title>
+    <firstline>Hør, mit Barn! et Eventyr</firstline>
+    <source pages="164-166"/>
+    <!-- TODO: Findes i andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hør, mit Barn! et Eventyr.
 Seer du hist de dunkle Skyer
 Mid t i Maanens gule Skive?
@@ -4732,13 +4928,18 @@ Naar du solvgraae Lokker faaer,
 Guult er endnu deres Haar;
 Smile lige froe og smukke
 Til din Grav, som til din Vugge.
+</body>
+</poem>
 
-T:Sigrid med Sløret
-F:Mit gamle Fædreland! jeg seer dig atter
-SIDE:166-193
-VARIANT:oehlenschlaeger20030308005
-TODO:Meget anderledes variant... sammen titel og slutning, men ellers?
-
+<poem id="oehlenschlaeger2019022035" variant="oehlenschlaeger20030308005">
+<head>
+    <title>Sigrid med Sløret</title>
+    <firstline>Mit gamle Fædreland! jeg seer dig atter</firstline>
+    <source pages="166-193"/>
+    <!-- TODO: Meget anderledes variant... sammen titel og slutning, men ellers? -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Mit gamle Fædreland! jeg seer dig atter,
 Hver Gienstand, som var spæde Barndom kiær;
 Din lysegrønne Ma i mig taust omfatter,
@@ -5499,12 +5700,17 @@ Til Othar et af Staal fortræsligt Vaerge,
 Men til sig selv et deiligt Slo r af Guld.
 I Sløret virket staaer: ,,Ei Sigrid nænner.
 At glemme sine smaae trofaste Venner.''
+</body>
+</poem>
 
-T:Harald Hildetand
-F:Hildetand med sølvgraae Haar
-SIDE:194-201
-VARIANT:oehlen1999062839
-
+<poem id="oehlenschlaeger2019022036" variant="oehlen1999062839">
+<head>
+    <title>Harald Hildetand</title>
+    <firstline>Hildetand med sølvgraae Haar</firstline>
+    <source pages="194-201"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hildetand med sølvgraae Haar
 Hu til Valhal vendte;
 Hundredfemti Hædersaar
@@ -5733,12 +5939,18 @@ Der bevares Heltens Bene.
 Bidt end viser Runen vaeldigt Kæmper alle,
 Hvor Kong Harald paa Braavalla
 Som en Helt gik til Valhalla.
+</body>
+</poem>
 
-T:Rosentræerne
-F:I Skyggen under Myrtens Hang
-SIDE:201-205
-TODO:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022037">
+<head>
+    <title>Rosentræerne</title>
+    <firstline>I Skyggen under Myrtens Hang</firstline>
+    <source pages="201-205"/>
+    <!-- TODO: Findes i andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I Skyggen under Myrtens Hang
 Sad Rollo med sin Elskerinde,
 Bed Arnoflodens Bølgegang.
@@ -5853,12 +6065,18 @@ Som vidner Pisas dybe Fald;
 Thi Støvets Magt kan Jernet krænke.
 Ja slaae et Folk i Slaveri,
 Men Kiærlighed er evig fri.
+</body>
+</poem>
 
-T:Den hemmelige Røst
-F:Skiøn Ingerlil gaaer om alene
-SIDE:206-209
-TODO:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022038">
+<head>
+    <title>Den hemmelige Røst</title>
+    <firstline>Skiøn Ingerlil gaaer om alene</firstline>
+    <source pages="206-209"/>
+    <!-- TODO: Findes i andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Skiøn Ingerlil gaaer om alene,
 Beskygt af Borgelundens Grene;
 Da hører hun en Stemme sod.
@@ -5965,12 +6183,18 @@ Mig lader Salighed fornemme.
 O, lad mig fræk ei stræbe ned.
 Og miste i dit dunkle Giemme
 Min Ro og min Uskyldighed!
+</body>
+</poem>
 
-T:Tidens Perspectiv
-F:I den store, snevre Stad
-SIDE:210-212
-TODO:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022039">
+<head>
+    <title>Tidens Perspectiv</title>
+    <firstline>I den store, snevre Stad</firstline>
+    <source pages="210-212"/>
+    <!-- TODO: Findes i andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I den store, snevre Stad
 Gik en Pngling lidet glad.
 Aftenen var taaget, mørk,
@@ -6052,12 +6276,18 @@ Funkler nu den lyse Rad.'' —
 Tid e n at tilb a g e g a a e!''
 Svared med et venligt Blik
 Gubben, hilste ham, og gik.
+</body>
+</poem>
 
-T:Augustinus
-F:Hvo vanker i den mørke Skov
-SIDE:212-216
-TODO:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022040">
+<head>
+    <title>Augustinus</title>
+    <firstline>Hvo vanker i den mørke Skov</firstline>
+    <source pages="212-216"/>
+    <!-- TODO: Findes i andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hvo vanker i den mørke Skov,
 Hvor ellers Ulven kun sit Rov
 Sig søger nær ved Klippens Kanter?
@@ -6168,12 +6398,18 @@ Han knælte let og vel tilmode.
 ,,O ,'' raabte han med-salig Ro,
 ,,Tilg iv mig, Fader! jeg vil troe,
 Og jeg vil virke til det Gode.''
+</body>
+</poem>
 
-T:Daniel Rantzau
-F:Hvi siunges evigt om Spartaner
-SIDE:216-218
-TODO:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022041">
+<head>
+    <title>Daniel Rantzau</title>
+    <firstline>Hvi siunges evigt om Spartaner</firstline>
+    <source pages="216-218"/>
+    <!-- TODO: Findes i andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hvi siunges evigt om Spartaner,
 Som giorde Fienden Passet trangt?
 Behsve vore vakkre Daner
@@ -6215,13 +6451,19 @@ Leonidas stod uforfurdet,
 Han Heltedød bag Klippen fandt;
 Men Daniel Rantzau stod bag Svaerdet,
 Og brugte Svaerdet^ til han vandt.
+</body>
+</poem>
 
-T:Violen
-U:(Efter Goethe.)
-F:Violen stod ved Bækkens Bred
-SIDE:218-219
-TODO:Find originalen
-
+<poem id="oehlenschlaeger2019022042">
+<head>
+    <title>Violen</title>
+    <subtitle>(Efter Goethe.)</subtitle>
+    <firstline>Violen stod ved Bækkens Bred</firstline>
+    <source pages="218-219"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Violen stod ved Bækkens Bred,
 Af Ingen kiendt, og bøiet ned,
 En venlig lille Blomme.
@@ -6243,12 +6485,18 @@ Den synker, døer, men døer med Lyst:
 ,,Og skal jeg døe, saa er min Trøst:
 Min Død, min Død
 Ved hendes Fod er sod.''
+</body>
+</poem>
 
-T:Portnerindens Tilbagekomst
-U:Legende efter A. Helwig.
-F:Tidlig viet, uden egen Villie
-SIDE:219-226
-
+<poem id="oehlenschlaeger2019022043">
+<head>
+    <title>Portnerindens Tilbagekomst</title>
+    <subtitle>Legende efter A. Helwig.</subtitle>
+    <firstline>Tidlig viet, uden egen Villie</firstline>
+    <source pages="219-226"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Tidlig viet, uden egen Villie,
 Levcd, fuld af Ander og Natur,
 Rod som Rosen, smekker som en Mie,
@@ -6450,14 +6698,22 @@ Der i Andagt, medens Sangen lyder,
 Og mens Orglet bryder vældigt ud.
 Beder hun, mens hyppig Taaren flyder:
 ,,Naade for den Angrende, min G ud!''
+</body>
+</poem>
 
-T:Den vandrende Ridder
-U:eller
-U:Don Quixote den Yngre.
-U:Et Fragment.
-F:Syng ved Harpen, o Skiald! en Sang om Ynglingen Philip
-SIDE:226-242
-
+<poem id="oehlenschlaeger2019022044">
+<head>
+    <title>Den vandrende Ridder</title>
+    <subtitle>
+        <line>eller</line>
+        <line>Don Quixote den Yngre.</line>
+        <line>Et Fragment.</line>
+    </subtitle>
+    <firstline>Syng ved Harpen, o Skiald! en Sang om Ynglingen Philip</firstline>
+    <source pages="226-242"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 F e rs te Sa n g .
 Syng ved Harpen, o Skiald! en Sang om Ynglingen Philip,
 Som, af en sværmerisk I ld forført, af ungdommelig Blindhed,
@@ -6931,12 +7187,18 @@ Ph ilip den solverne Mand, og nedslog Øiet med Rødme,
 Da uskyldig og blid ham betragted den hulde Clotilda,
 Som med Psalmebogen i Haand, i tarveligt Hvergarn,
 Med Kornblomsternes Krands paa sit Haar, hiemfulgte sin Fader.
+</body>
+</poem>
 
-T:William Shakespeare
-F:I Warwickshire der stander et Huus
-SIDE:242-248
-TODO:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022045">
+<head>
+    <title>William Shakespeare</title>
+    <firstline>I Warwickshire der stander et Huus</firstline>
+    <source pages="242-248"/>
+    <!-- TODO: Findes i andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I Warwickshire der stander et Huus,
 Det truer med at falde til GruuS,
 Til Bolig det kan ei gavne;
@@ -7099,12 +7361,20 @@ I Liflighed, Tegning og Farve.
 De brister aldrig, de afbleges ei.
 De blomstre som Roser i evige Mai, .
 Og Hver kan Klenodiet arve.
+</body>
+</poem>
 
-T:Den selsomme Jordefærd
-F:En Schweizerbonde staaer aarle ved Strand
-SIDE:248-254
-NOTE:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022046">
+<head>
+    <title>Den selsomme Jordefærd</title>
+    <firstline>En Schweizerbonde staaer aarle ved Strand</firstline>
+    <notes>
+        <note>Findes i andre.xml</note>
+    </notes>
+    <source pages="248-254"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En Schweizerbonde staaer aarle ved Strand,
 Da seer han i borgerlig Dragt en Mand
 I Baaden, som Landet sig narmer;
@@ -7274,11 +7544,17 @@ Der langsomt, tidlig og silde,
 I Trængsel og Mulm under Jorden randt,
 Til Sluden er klaret, som Diamant,
 Og springer som lislige Kilde.
+</body>
+</poem>
 
-T:Den bolde Lars Bagge
-F:Kling, Harpe! om den bolde Mand
-SIDE:255-259
-
+<poem id="oehlenschlaeger2019022047">
+<head>
+    <title>Den bolde Lars Bagge</title>
+    <firstline>Kling, Harpe! om den bolde Mand</firstline>
+    <source pages="255-259"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Kling, Harpe! om den bolde Mand
 Med Orgellyd og Klokkeklang.
 Hvo sieldent Høimod vise kan,
@@ -7399,13 +7675,19 @@ Hvo saadant Høimod vise kan,
 Ham lonner ei Guld, ham lønner Sa n g .
 O, Held mig, Held, at jeg siunge kan,
 Udødelig siunge den Dannemand!
+</body>
+</poem>
 
-T:Sangeren
-U:(Efter Goethe.)
-F:Hvad hører jeg ved Porten der
-SIDE:259-261
-TODO:Find originalen
-
+<poem id="oehlenschlaeger2019022048">
+<head>
+    <title>Sangeren</title>
+    <subtitle>(Efter Goethe.)</subtitle>
+    <firstline>Hvad hører jeg ved Porten der</firstline>
+    <source pages="259-261"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 ,,Hvad hører jeg ved Porten der,
 Hvad hist paa Broen lyde?
 Lad atter Sangen' for os her
@@ -7448,11 +7730,17 @@ Som rnkker sligt et Bnger!
 Gaaer det dig vel, saa tænk paa mig,
 Og tak din Gud saa varmt, som dig
 For denne Skaal jeg takker.''
+</body>
+</poem>
 
-T:Røveren, Lygtemanden og Bonden
-F:Veiviser! hør dog. Plager Fanden dig?
-SIDE:261-265
-
+<poem id="oehlenschlaeger2019022049">
+<head>
+    <title>Røveren, Lygtemanden og Bonden</title>
+    <firstline>Veiviser! hør dog. Plager Fanden dig?</firstline>
+    <source pages="261-265"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Roveren .
 Veiviser! hør dog. Plager Fanden dig?
 Er det, den rette Vei at vise mig?
@@ -7593,13 +7881,26 @@ Ei Naturen er stedse saa kold.
 Som den Mennesket skielder;
 Mangen eerlig, retfeerdig Trold
 Pidsker Lasten med Nælder.
+</body>
+</poem>
 
-SEKTION:Fabler
+<section>
+<head>
+    <title>Fabler</title>
+</head>
+<content>
 
-T:<num>1.</num>Den hvide og den blaa Viol
-F:I Vaaren i den lune Sol
-SIDE:266
-
+<poem id="oehlenschlaeger2019022050">
+<head>
+    <title><num>1.</num>Den hvide og den blaa Viol</title>
+    <toctitle><num>1.</num>Den hvide og den blaa Viol</toctitle>
+    <indextitle>Den hvide og den blaa Viol</indextitle>
+    <linktitle>Den hvide og den blaa Viol</linktitle>
+    <firstline>I Vaaren i den lune Sol</firstline>
+    <source pages="266"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I Vaaren i den lune Sol
 Stod hos den blaa en hvid Viol.
 ,,Min Søster!'' ytttede den hvide,
@@ -7616,11 +7917,20 @@ Og næsten ogsaa uden Du ft.''
 ,,Du maa dig gierne Fortrin give;
 Dog tanker jeg, at man kan drive
 Beskedenheden alt for vidt.''
+</body>
+</poem>
 
-T:<num>2.</num>Lilien
-F:En sværmersk Lilie prægtig stod
-SIDE:266-267
-
+<poem id="oehlenschlaeger2019022051">
+<head>
+    <title><num>2.</num>Lilien</title>
+    <toctitle><num>2.</num>Lilien</toctitle>
+    <indextitle>Lilien</indextitle>
+    <linktitle>Lilien</linktitle>
+    <firstline>En sværmersk Lilie prægtig stod</firstline>
+    <source pages="266-267"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En sværmersk Lilie prægtig stod,
 Og hæved Kalken paa sin Stængel,
 Og troede selv, den var en Engel,
@@ -7641,11 +7951,20 @@ Og viser Fromhed ved at blegne?
 Hvad søger du i Luften der?
 Troer du dig Himlen mere nær?
 Er Verdens Gud ei allevegne?''
+</body>
+</poem>
 
-T:<num>3.</num>Rosen
-F:Du var langt mere skiøn og huld
-SIDE:267-268
-
+<poem id="oehlenschlaeger2019022052">
+<head>
+    <title><num>3.</num>Rosen</title>
+    <toctitle><num>3.</num>Rosen</toctitle>
+    <indextitle>Rosen</indextitle>
+    <linktitle>Rosen</linktitle>
+    <firstline>Du var langt mere skiøn og huld</firstline>
+    <source pages="267-268"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 y n g l i n g e n .
 Du var langt mere skiøn og huld,
 Hvis ei du var af Torne fuld;
@@ -7658,22 +7977,40 @@ An g l in g e n .
 Men Torn har ingen Tulipan.
 Rosen.
 En Tulipan har ingen Fare;
+</body>
+</poem>
 
-T:<num>4.</num>Skorpionen
-F:En Skorpion, som var forsigtig ikke
-SIDE:268
-
+<poem id="oehlenschlaeger2019022053">
+<head>
+    <title><num>4.</num>Skorpionen</title>
+    <toctitle><num>4.</num>Skorpionen</toctitle>
+    <indextitle>Skorpionen</indextitle>
+    <linktitle>Skorpionen</linktitle>
+    <firstline>En Skorpion, som var forsigtig ikke</firstline>
+    <source pages="268"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En Skorpion, som var forsigtig ikke,
 Paa Gulvet rasled, for den vilde stikke.
 Den blev opdaget, den blev qvæstet slemt,
 Og knuust i Apothekerkrukken gicmt.
 Thi Skorpioners Bid bag Laurens Kroner
 Man læger bedst med knuste Skorpioner.
+</body>
+</poem>
 
-T:<num>5.</num>Løveungen
-F:En Bonde kiøbte sig en Løveunge
-SIDE:268
-
+<poem id="oehlenschlaeger2019022054">
+<head>
+    <title><num>5.</num>Løveungen</title>
+    <toctitle><num>5.</num>Løveungen</toctitle>
+    <indextitle>Løveungen</indextitle>
+    <linktitle>Løveungen</linktitle>
+    <firstline>En Bonde kiøbte sig en Løveunge</firstline>
+    <source pages="268"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En Bonde kiøbte sig en Løveunge;
 Og mens den lille var, i Stuen hver en Stund
 Behandled han den som en Hund,
@@ -7684,11 +8021,20 @@ Han pryglte den, den utaalmodig blev,
 Og Eiermanden sønderrev.
 Forhaan ei dumme^Ieppe med sin Koste!
 Saa dumt det var, endnu det hændes oste.
+</body>
+</poem>
 
-T:<num>6.</num>Den Druknedes Redning
-F:En Ødeland, som prægtigt svømme kunde
-SIDE:268-269
-
+<poem id="oehlenschlaeger2019022055">
+<head>
+    <title><num>6.</num>Den Druknedes Redning</title>
+    <toctitle><num>6.</num>Den Druknedes Redning</toctitle>
+    <indextitle>Den Druknedes Redning</indextitle>
+    <linktitle>Den Druknedes Redning</linktitle>
+    <firstline>En Ødeland, som prægtigt svømme kunde</firstline>
+    <source pages="268-269"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En Ødeland, som prægtigt svømme kunde,
 Fortvivlet styrted sig til Havets Bunde,
 Og fandt en Pung i Søen, proppet fuld
@@ -7701,20 +8047,38 @@ Nu sprang han ud i samme glade Tanker.
 Paa Bunden fik ham fat et rustent Anker.
 Det var ei Haabets. Sidste Gang han sank.
 Man Krukken drog af Vandet uden Hank.
+</body>
+</poem>
 
-T:<num>7.</num>Æselet og Hyrdinden
-F:Et Æsel tygged Tidsler, Hyrdinden fletted Roser
-SIDE:269
-
+<poem id="oehlenschlaeger2019022056">
+<head>
+    <title><num>7.</num>Æselet og Hyrdinden</title>
+    <toctitle><num>7.</num>Æselet og Hyrdinden</toctitle>
+    <indextitle>Æselet og Hyrdinden</indextitle>
+    <linktitle>Æselet og Hyrdinden</linktitle>
+    <firstline>Et Æsel tygged Tidsler, Hyrdinden fletted Roser</firstline>
+    <source pages="269"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Et Æsel tygged Tidsler, Hyrdinden fletted Roser.
 Af Dyret maatte Pigen da doie mange Skoser:
 ,,Hvad nytte dine Blomster, naar man dem ei kan spise?''
 Hvor ofte mckke vi høre den gamle Æsel-Vise?
+</body>
+</poem>
 
-T:<num>8.</num>Regnbuen
-F:To Mennesker Regnbuen saae
-SIDE:269-270
-
+<poem id="oehlenschlaeger2019022057">
+<head>
+    <title><num>8.</num>Regnbuen</title>
+    <toctitle><num>8.</num>Regnbuen</toctitle>
+    <indextitle>Regnbuen</indextitle>
+    <linktitle>Regnbuen</linktitle>
+    <firstline>To Mennesker Regnbuen saae</firstline>
+    <source pages="269-270"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 To Mennesker Regnbuen saae.
 Den Ene monne henrykt staae,
 Og nod det skiønue Øieblik;
@@ -7737,14 +8101,21 @@ Tænk ei paa Frosten, naar det teer!
 Mens Græsset voxer, Koen døer.
 Grib din Fortuna, hvor hun staaer!
 I Nakken har hun ingen Haar.
+</body>
+</poem>
 
-SLUTSEKTION
+</content>
+</section> <!-- Fabler -->
 
-T:Iisposten
-F:Paa Danerstranden stod et Huus
-SIDE:270-273
-TODO:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022058">
+<head>
+    <title>Iisposten</title>
+    <firstline>Paa Danerstranden stod et Huus</firstline>
+    <source pages="270-273"/>
+    <!-- TODO: Findes i andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Paa Danerstranden stod et Huus;
 Der drak de dem en ærlig Ruus,
 Det var en Iuleglæde.
@@ -7828,12 +8199,18 @@ Sit Liv og Kiæresten igien,
 Naar begge staaer i Fare!
 Til Bryllup gav dem Junkeren
 Et Daadyr og en Hare.
+</body>
+</poem>
 
-T:Ridderen ved Kulsvierhytten
-F:I Skoven sidder en Kulsvierqvinde
-SIDE:273-276
-TODO:I andre.xml
-
+<poem id="oehlenschlaeger2019022059">
+<head>
+    <title>Ridderen ved Kulsvierhytten</title>
+    <firstline>I Skoven sidder en Kulsvierqvinde</firstline>
+    <source pages="273-276"/>
+    <!-- TODO: I andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I Skoven sidder en Kulsvierqvinde;
 De Bøge beskytte for Østenvinde.
 Men Mennesket raser veerr', end Vinden,
@@ -7911,12 +8288,18 @@ Han drak lidt Band af Kulsvierkanden,
 Han torred Sveden af Heltepanden,
 Med ham i Galop sig Gangeren strakte,
 Forgieves de efter ham Brodene rakte.
+</body>
+</poem>
 
-T:Storken
-F:Paa Danmarks Strand en Hytte
-SIDE:276-282
-TODO:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022060">
+<head>
+    <title>Storken</title>
+    <firstline>Paa Danmarks Strand en Hytte</firstline>
+    <source pages="276-282"/>
+    <!-- TODO: Findes i andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Paa Danmarks Strand en Hytte
 Saa nar ved Skoven laae.
 Den kunde vel beskytte
@@ -8093,12 +8476,18 @@ Nu trives Kiærligheden
 Bag Rosenhækkens Tiorn,
 Og Svalen vogter Freden,
 Og Storken bringer Børn.
+</body>
+</poem>
 
-T:Bissekræmmeren
-F:Ved Rhinens Bred en yndig Gaard
-SIDE:283-286
-TODO:I andre.xml
-
+<poem id="oehlenschlaeger2019022061">
+<head>
+    <title>Bissekræmmeren</title>
+    <firstline>Ved Rhinens Bred en yndig Gaard</firstline>
+    <source pages="283-286"/>
+    <!-- TODO: I andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Ved Rhinens Bred en yndig Gaard
 Stod midt i Dalens Favn;
 Der følte Fader Reicbenwald
@@ -8211,12 +8600,18 @@ Gid Alle nyde slig en Lyst,
 Som grade Kinden vaad.
 Gid Freden skienke Hiertet Trøst,
 Og standse Kampens Graad!
+</body>
+</poem>
 
-T:Herlufsholms Skole
-F:I Danmarks gamle Rige
-SIDE:287-292
-TODO:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022062">
+<head>
+    <title>Herlufsholms Skole</title>
+    <firstline>I Danmarks gamle Rige</firstline>
+    <source pages="287-292"/>
+    <!-- TODO: Findes i andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I Danmarks gamle Rige,
 Paa Sioellands grønne O
 Sees Klostermuren stige
@@ -8369,12 +8764,18 @@ Velsignet er hans Minde,
 Og det skal aldrig døe.
 Ham vandig var hans Qvide,
 Ærlig Birgitte Gioe.
+</body>
+</poem>
 
-T:Kæmpebegravelsen
-F:Paa en af grønne Danmarks Øer
-SIDE:292-302
-TODO:Findes i andre.xml
-
+<poem id="oehlenschlaeger2019022063">
+<head>
+    <title>Kæmpebegravelsen</title>
+    <firstline>Paa en af grønne Danmarks Øer</firstline>
+    <source pages="292-302"/>
+    <!-- TODO: Findes i andre.xml -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Paa en af grønne Danmarks Øer,
 Og fiænt fra Larm og Sto i,
 Paa Marken, nnr ved klare Soer,
@@ -8650,12 +9051,18 @@ Og intet Gienferrd meer de saae,
 Der hørtes Ingen græde;
 Men Maanen tidt ''fra Himlen blaa
 Bestraalte deres Gla'de.
+</body>
+</poem>
 
-T:Udgangsøget
-U:En Fabel.
-F:Paa Marken, i Vintren, ved Juletids-Fest
-SIDE:302-303
-
+<poem id="oehlenschlaeger2019022064">
+<head>
+    <title>Udgangsøget</title>
+    <subtitle>En Fabel.</subtitle>
+    <firstline>Paa Marken, i Vintren, ved Juletids-Fest</firstline>
+    <source pages="302-303"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Paa Marken, i Vintren, ved Juletids-Fest,
 Da Søen var frossen, og Sneen var falden,
 Lob om uden Bidsel, forjaget af Stalden,
@@ -8699,11 +9106,17 @@ Og medens den blødende Koter i Hast
 Lob hiem til sin Borg, mens hvert Lem paa ham drrred,
 Nedlagde sig Hesten paa Isen, og stirred
 Mod Himlen med Adel — og Vinene brast.
+</body>
+</poem>
 
-T:Giotto
-F:Middelaldrens Græker bragte
-SIDE:304-306
-
+<poem id="oehlenschlaeger2019022065">
+<head>
+    <title>Giotto</title>
+    <firstline>Middelaldrens Græker bragte</firstline>
+    <source pages="304-306"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Middelaldrens Græker bragte
 Til Ita lie n sit Billed,
 Stiv t og kummerligt fremstillet,
@@ -8785,11 +9198,17 @@ Men det var ei Buk, han malte
 Dengang; han med Vennen talte,
 Medens han sin Farve blandte.
 Vennen — var den store Dante.
+</body>
+</poem>
 
-T:Mikel Angelo
-F:Den stolte Pave Giulio
-SIDE:306-311
-
+<poem id="oehlenschlaeger2019022066">
+<head>
+    <title>Mikel Angelo</title>
+    <firstline>Den stolte Pave Giulio</firstline>
+    <source pages="306-311"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Den stolte Pave Giulio
 Høit pnded Mikel Angelo;
 Mikel A»aelo.
@@ -8925,11 +9344,17 @@ Med Angelo; thi Bispen gik.
 Fuldkommen mæt af hvad han fik.
 Speil dig i Bispen, dumme Mand!
 Som troer, Genie har ei Forstand.
+</body>
+</poem>
 
-T:De forskiellige Vaabner
-F:Der var en Biskop, som hedde Lind
-SIDE:311-313
-
+<poem id="oehlenschlaeger2019022067">
+<head>
+    <title>De forskiellige Vaabner</title>
+    <firstline>Der var en Biskop, som hedde Lind</firstline>
+    <source pages="311-313"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Der var en Biskop, som hedde Lind,
 Om Dansk, om Norsk, eller Svensk — det
 Jeg vil ei her med min Kundskab bramme,
@@ -8994,12 +9419,18 @@ Derved fik Sagen et andet Sving,
 Nu tilstod Alle: ,,Ma n tidt kan finde
 De meest forstiellige Adelslinde.''
 Og fredeligt Sværmen gik fra Thing.
+</body>
+</poem>
 
-T:De tre Tegn i Skoven
-U:(Efter L. Tieck.)
-F:O, min Søn! hvor rædsomt skriger
-SIDE:314-327
-
+<poem id="oehlenschlaeger2019022068">
+<head>
+    <title>De tre Tegn i Skoven</title>
+    <subtitle>(Efter L. Tieck.)</subtitle>
+    <firstline>O, min Søn! hvor rædsomt skriger</firstline>
+    <source pages="314-327"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 ,,O, min Søn! hvor rædsomt skriger
 Froen op til os fra Kiæret.
 Horer du ei Ravnen tude?
@@ -9388,12 +9819,18 @@ Daglig seer man ham at vandre.
 Snart i Skoven, snart i Haven.
 Bønder fandt det døde Legem,
 Og de lagde ham i Graven.
+</body>
+</poem>
 
-T:Jægeren paa Frieri og Dyrene som Raadgivere
-U:(Ideen efter det Tydske.)
-F:En Jæger vilde giftes engang
-SIDE:328-330
-
+<poem id="oehlenschlaeger2019022069">
+<head>
+    <title>Jægeren paa Frieri og Dyrene som Raadgivere</title>
+    <subtitle>(Ideen efter det Tydske.)</subtitle>
+    <firstline>En Jæger vilde giftes engang</firstline>
+    <source pages="328-330"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En Jæger vilde giftes engang,
 Thi gik han ud i Skoven, og sang.
 Han kaldte Vildtet; i samme Stund
@@ -9448,11 +9885,17 @@ Dog vilde han giftes, og Pla f i Pla f
 Med Hiertet han flod, men aldrig traf.
 Diana! hielp paa vor Iægers Sag;
 Thi ellers han fager til Dommedag.
+</body>
+</poem>
 
-T:Juveelhandleren
-F:See, den yndige Charlotte
-SIDE:330-333
-
+<poem id="oehlenschlaeger2019022070">
+<head>
+    <title>Juveelhandleren</title>
+    <firstline>See, den yndige Charlotte</firstline>
+    <source pages="330-333"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 See, den yndige Charlotte,
 Vilhelms Datter, Landgrevinden,
 Sad i Hangens kole Grotte
@@ -9534,11 +9977,17 @@ Diamanterne, jeg byder.
 Er kun Legetoi og Tant;
 Hendes Skiønhed, hendes Dyder
 Overgaae hver Diamant.''
+</body>
+</poem>
 
-T:Ivan Wasiliewitsch
-F:Vel Tigren er et grusomt Dyr
-SIDE:333-336
-
+<poem id="oehlenschlaeger2019022071">
+<head>
+    <title>Ivan Wasiliewitsch</title>
+    <firstline>Vel Tigren er et grusomt Dyr</firstline>
+    <source pages="333-336"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Vel Tigren er et grusomt Dyr,
 Og feel er Klapyerslangens G ift;
 Dog ved dens Rangle Faren flyer,
@@ -9635,11 +10084,17 @@ Slig blodig Diccvel, sendt fra Hel,
 Hos ædelt Folk ei trives kan;
 Og hvor ei findes først en Træl,
 Der findes aldrig en Tyran.
+</body>
+</poem>
 
-T:Tanhuser i Venusbierget
-F:Tanhuser var en Ridder skiøn
-SIDE:336-348
-
+<poem id="oehlenschlaeger2019022072">
+<head>
+    <title>Tanhuser i Venusbierget</title>
+    <firstline>Tanhuser var en Ridder skiøn</firstline>
+    <source pages="336-348"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Tanhuser var en Ridder skiøn,
 En mægtig Greves ældste Svn,
 Saa hovisk og forvoven.
@@ -9993,11 +10448,17 @@ Da Englestemmer lode:
 Skal Mennesker ei true.
 Kun skue
 Kan han i alle Hierter ned.''
+</body>
+</poem>
 
-T:Götz von Berlichingen og Smeden
-F:Om gamle Götz med Haand af Jern
-SIDE:348-353
-
+<poem id="oehlenschlaeger2019022073">
+<head>
+    <title>Götz von Berlichingen og Smeden</title>
+    <firstline>Om gamle Götz med Haand af Jern</firstline>
+    <source pages="348-353"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Om gamle Götz med Haand af Jern
 Vi hørte Gothe siunge;
 Ham nær, skiøndt dog i Tiden fiern,
@@ -10134,11 +10595,17 @@ Naar Kunstneren hos Helten boer,
 Og sluttes Vennepagten —
 Da tvinge de den hele Jord,
 Da modstaaer In te t Magten.''
+</body>
+</poem>
 
-T:De to Røvere
-F:To Røvere drog vidt omkring i Jødelandet
-SIDE:353-356
-
+<poem id="oehlenschlaeger2019022074">
+<head>
+    <title>De to Røvere</title>
+    <firstline>To Røvere drog vidt omkring i Jødelandet</firstline>
+    <source pages="353-356"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 To Røvere drog vidt omkring i Jødelandet,
 Til alle Dvinders Skræk, af Mandene forbandet.
 Ildgierninger man saae dem overalt bedrive.
@@ -10216,11 +10683,17 @@ Et ædelt Hierte han i Synderen erkiendte.
 Der bøiet paa sit Kors med Tro sig til ham vendte.
 Han synded som en Blin d, et Barn, og kyssed Riset,
 Der straffed ham; og foer med Gud til Paradiset.
+</body>
+</poem>
 
-T:Stimanden
-F:En Ungersvend gik stærk og tryg
-SIDE:356-359
-
+<poem id="oehlenschlaeger2019022075">
+<head>
+    <title>Stimanden</title>
+    <firstline>En Ungersvend gik stærk og tryg</firstline>
+    <source pages="356-359"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 En Ungersvend gik stærk og tryg,
 Med Stav og Bylten paa sin Ryg,
 Ad Biergets St i;
@@ -10294,11 +10767,17 @@ Farvel, farvel! Nu er vi qvit:
 Du stienkte mig paa Klipperanden
 Mit Liv; jeg her dig skienker dit.''
 Saa taled — og forsvandt den Anden.
+</body>
+</poem>
 
-T:Giøglerne
-F:Til en Stad, som var rig ved sin Handel og Havn
-SIDE:359-361
-
+<poem id="oehlenschlaeger2019022076">
+<head>
+    <title>Giøglerne</title>
+    <firstline>Til en Stad, som var rig ved sin Handel og Havn</firstline>
+    <source pages="359-361"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Til en Stad, som var rig ved sin Handel og Havn,
 Men hvor Spidsborger altid blev bister
 Paa hver Fremmed, der kom Plo t med Kunstnerens Navn,
@@ -10372,3 +10851,8 @@ Men Giogleren loe: ,,N u jeg ret jer forstaaer;
 Skam jer ikke, kom dristig med Ordet:
 Lerrken agter I ei, naar i Marken den slaaer.
 Men naar stegt jer den bringes paa Bordet.''
+</body>
+</poem>
+
+</workbody>
+</kalliopework>
