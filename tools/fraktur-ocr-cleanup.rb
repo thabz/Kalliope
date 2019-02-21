@@ -651,6 +651,7 @@
 'sonder/sønder',
 'ssnder/sønner',
 'lsnne/lønne',
+'lonne/lønne',
 'Logn/Løgn',
 'lnk/luk',
 'oedel/ædel',
