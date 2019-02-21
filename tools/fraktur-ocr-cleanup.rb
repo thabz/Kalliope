@@ -654,6 +654,7 @@
 'lonne/lønne',
 'Logn/Løgn',
 'lnk/luk',
+'Mdel/Ædel',
 'oedel/ædel',
 'knoel/knæl',
 'hoere/hære',
