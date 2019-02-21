@@ -16,7 +16,7 @@
     <pictures>
         <picture src="1861-24-p1.jpg">Titelbladet til <i>Poetiske Skrifter</i> (1861) lyder ,,Oehlenschlägers Digte. // Udgivne / af / F. L. Liebenberg. // Sjette Deel. // Kjøbenhavn. / Forlagt af Selskabet til Udgivelse af Oehlenschlägers Skrifter. // Hovedcommissionair: Th. Lind, Store Kjøbmagergade Nr. 44 (6). / 1861.''.</picture>
     </pictures>
-    <source facsimile="115208057585_color" facsimile-pages-num="418" facsimile-pages-offset="10">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 24, 1861.</source>
+    <source facsimile="115208057585_color" facsimile-pages-num="418" facsimile-pages-offset="18">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 24, 1861.</source>
 </workhead>
 <workbody>
 
@@ -242,6 +242,7 @@ Med Blomster de krandse min Grav, naar jeg døer.
 <poem id="oehlenschlaeger2019022003" variant="oehlenschlaeger2001052903">
 <head>
     <title>Kongen i Leire</title>
+    <toctitle>Kongen i Leire (Efter Goethe)</toctitle>
     <subtitle>(Efter Goethe.)</subtitle>
     <firstline>Der  var en Konning i Leire</firstline>
     <source pages="8-9"/>
@@ -278,6 +279,9 @@ Drak ei en Draabe meer.
 <poem id="oehlenschlaeger2019022004">
 <head>
     <title>Romance</title>
+    <toctitle>Romance af ,,Anden April 1801''</toctitle>
+    <indextitle>Romance af ,,Anden April 1801''</indextitle>
+    <linktitle>Romance af ,,Anden April 1801''</linktitle>
     <subtitle>
         <line>af</line>
         <line>,,Anden April 1801'', en dramatisk Situation.</line>
@@ -3085,6 +3089,7 @@ Den fremmede Stad.
 <poem id="oehlenschlaeger2019022024" variant="oehlen2002101105">
 <head>
     <title>Blomst Underskiøn</title>
+    <toctitle>Blomst Underskiøn (Efter Goethe)</toctitle>
     <subtitle>
         <line>Den fangne Greves Sang.</line>
         <line>(Efter Goethe.)</line>
@@ -3193,6 +3198,7 @@ Da vender Livet tilbage.
 <poem id="oehlenschlaeger2019022025" variant="oehlen2002101106">
 <head>
     <title>Den første Valpurgis-Nat</title>
+    <toctitle>Den første Valpurgis-Nat (Efter Goethe)</toctitle>
     <subtitle>(Efter Goethe.)</subtitle>
     <firstline>See, Vaaren leer</firstline>
     <source pages="107-110"/>
@@ -6457,10 +6463,13 @@ Og brugte Svaerdet^ til han vandt.
 <poem id="oehlenschlaeger2019022042">
 <head>
     <title>Violen</title>
+    <toctitle>Violen (Efter Goethe)</toctitle>
     <subtitle>(Efter Goethe.)</subtitle>
     <firstline>Violen stod ved Bækkens Bred</firstline>
     <source pages="218-219"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Goethes <xref type="translation" poem="goethe2019022101"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6491,9 +6500,11 @@ Ved hendes Fod er sod.''
 <poem id="oehlenschlaeger2019022043">
 <head>
     <title>Portnerindens Tilbagekomst</title>
+    <toctitle>Portnerindens Tilbagekomst. Legende efter A. Helwig</toctitle>
     <subtitle>Legende efter A. Helwig.</subtitle>
     <firstline>Tidlig viet, uden egen Villie</firstline>
     <source pages="219-226"/>
+    <!-- TODO: Find originalen -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6704,6 +6715,7 @@ Beder hun, mens hyppig Taaren flyder:
 <poem id="oehlenschlaeger2019022044">
 <head>
     <title>Den vandrende Ridder</title>
+    <toctitle>Den vandrende Ridder eller Don Quixote den Yngre. Fragment</toctitle>
     <subtitle>
         <line>eller</line>
         <line>Don Quixote den Yngre.</line>
@@ -7681,10 +7693,13 @@ Udødelig siunge den Dannemand!
 <poem id="oehlenschlaeger2019022048">
 <head>
     <title>Sangeren</title>
+    <toctitle>Sangeren (Efter Goethe)</toctitle>
     <subtitle>(Efter Goethe.)</subtitle>
     <firstline>Hvad hører jeg ved Porten der</firstline>
+    <notes>
+        <note>Gendigtning af Goethes <xref type="translation" poem="goethe2019022103"/>.</note>
+    </notes>
     <source pages="259-261"/>
-    <!-- TODO: Find originalen -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9425,8 +9440,10 @@ Og fredeligt Sværmen gik fra Thing.
 <poem id="oehlenschlaeger2019022068">
 <head>
     <title>De tre Tegn i Skoven</title>
+    <toctitle>De tre Tegn i Skoven (Efter L. Tieck)</toctitle>
     <subtitle>(Efter L. Tieck.)</subtitle>
     <firstline>O, min Søn! hvor rædsomt skriger</firstline>
+    <!-- TODO: Find originalen -->
     <source pages="314-327"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9825,8 +9842,10 @@ Og de lagde ham i Graven.
 <poem id="oehlenschlaeger2019022069">
 <head>
     <title>Jægeren paa Frieri og Dyrene som Raadgivere</title>
+    <toctitle>Jægeren paa Frieri og Dyrene som Raadgivere. (Ideen efter det Tydske)</toctitle>
     <subtitle>(Ideen efter det Tydske.)</subtitle>
     <firstline>En Jæger vilde giftes engang</firstline>
+    <!-- TODO: Find originalen -->
     <source pages="328-330"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
