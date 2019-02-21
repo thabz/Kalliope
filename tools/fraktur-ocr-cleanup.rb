@@ -705,6 +705,7 @@
 'kjsbe/kjøbe',
 'Chør/Chor',
 'Sø l/Sol',
+'(\W)Mser(\W)/\1Møer\2',
 '(\W)blod(\W)/\1blød\2',
 '(\W)skjod(\W)/\1skjød\2',
 '(\W)ganste(\W)/\1ganske\2',
