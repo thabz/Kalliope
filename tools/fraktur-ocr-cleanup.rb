@@ -238,6 +238,7 @@
 'forte /førte ',
 ' vard/ værd',
 'voerd/værd',
+'verrd/værd',
 'Voerd/Værd',
 'Voerk/Værk',
 'Voer(\W)/Vær\1',
