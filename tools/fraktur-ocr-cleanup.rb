@@ -365,6 +365,7 @@
 'Øft/Øst',
 'Kjon/Kjøn',
 'Ungling/Yngling',
+'Angling/Yngling',
 'voev/væv',
 'nc/ne',
 'gcn/gen',
