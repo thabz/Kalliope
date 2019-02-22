@@ -3,46 +3,12 @@ DIGTER:
 FACSIMILE:
 FACSIMILE-SIDER:
 
-SEKTION:
 
-T:
+T:Til Kongen
 F:
-SIDE:
+SIDE:II-VI
+TYPE:prosa
 
-SLUTSEKTION
-
-WIDEN
-Tm
-HN SQBBR
-
--
-Æ?--?.K--'' 3°. ÆLr:
-:
-Thomas Thaarups
-efterladte poetiske
-Sk r i f t e r.
-•
-A
-Samlede og udgivne
-- af
-（-
-（:
-K. L. Rahbek,
-Professor og Theaterdirecteur, Ridder af Dannebrog.
-ZKjøbenhavn.
-Trykt i det Schultziske Officin.
-Paa Arvinger mes Forlag.
-1822.
-Sca… - 47 -, *
-*
-- * -
--''
-* -
-- -
-- -
-- - - ）
-* -
-Til Kongen.
 Maaskee torde allerede en Samling af Dig
 te, der ved Indhold og Aand have erhver
 vet deres nu hedengangne Forfatter Danne
@@ -96,9 +62,12 @@ Stolthed, hans Lykke, hans Ære, hans
 skjønneste og værdigste Løn. \
 Bakkehuset den 17de Junii 1822.
 Allerunderdanigst
-2K. L. Rahbek.
-F o r t a l e .
---
+K. L. Rahbek.
+
+T:Fortale
+TYPE:prosa
+SIDE:VII-XXIV
+
 J det jeg herved overgiver vore Medborgere min afdøde
 Vens efterladte poetiske Skrifter, er det min Pligt frem
 for Alt at bevidne min inderlige Taknemmelighed for
@@ -710,6 +679,11 @@ Danner - Folket under Frederiks nylige Sygdom og ved
 hans Helbredelse har savnet sin gamle Ordfører
 Den 7de Juli 1822.
 K. L. Rahbek.
+
+T:Høst-Gildet
+F:Nys fyldte skjøn Sired det attende Aar
+SIDE:1-48
+
 Høst - Gildet.
 ''------
 Et Syngespil i een Act,
@@ -1974,7 +1948,11 @@ Stemmer alle i:
 Fredrik og hans Brud,
 Dem velsigne Gud,
 Dem lykønske vi,
-Peters Bryllup,
+
+T:Peters Bryllup
+F:O hvad kan min Glæde ligne
+SIDE:49-
+
 -=--
 -
 Et Syngespil i to Akter,
@@ -2001,7 +1979,8 @@ Første Scene.
 (Theatret førestiller en Bondestue, Anna sidder paaklædt som an
 velhavende Bondekone i sin Stads, og vugger sin Søn.)
 Vuggevise.
-hvad kan min Glæde ligne,
+
+O hvad kan min Glæde ligne,
 Hvad er herligt som min Stand!
 Dag! dig skal min Sjæl velsigne,
 Da min Halvor blev min Mand!
@@ -4001,10 +3980,14 @@ Frihed er fra Gud,
 Kongen lød hans Bud;
 Kongen gav os fri,
 Ham velsigne vi.
-126
-Barianter
-til Pet er s Bryllup.
---
+
+
+T:Varianter
+U:til Peters Bryllup.
+F:
+SIDE:-129
+TYPE:prosa
+
 Af dette Syngestykke udkom ikke nogen ny Udgave,
 før Omstændighederne ogsaa havde gjort Forandringer
 deri fornødne, og det tilligemed Høstgildet omtryktes
@@ -4095,6 +4078,13 @@ Stig Fædreland i Kraft og Dyder
 Stig til Lyksalighed! -
 Hvor Dannerkongens Septer byder,
 Bo Velstand, Glæde, Fred!
+
+
+T:Hjemkomsten
+U:Et Syngespil i een Akt
+F:Dalens Lilje mod det Høie
+SIDE:129-176
+
 (2)
 - • • • • • • • • • • * *
 • • • • • • • • \ •
@@ -4141,6 +4131,7 @@ Hun kommer langsømt frem ud fra Huset; hun er tildeels
 bondeklædt, men med meer end almindelig Smag; hen
 des Dragt er smuk, men uden Pragt eller Bonde-Coavet
 teri; hendes Adfærd røber stille Vemod.
+
 Dalens Lilje mod det Høie
 Om en qvægsom Draabe bad;:
 Uhørt den sig maa nedbøie;
@@ -5398,14 +5389,15 @@ Og naar du vil, da flyde,
 O Fædreland! vort Blod. -
 Hver Mø, hver Yngling, Qvinde, Mand ,
 Indvies dig, vort Fædreland!
-Lyriske Digte.
-(12)
 
-H y m n e.
-Opført i Slotskirken, den 30te Januar 1791:
--
-*
-Gud Jehovah! vi prise dig! \
+SEKTION:Lyriske Digte
+
+T:Hymne
+U:Opført i Slotskirken, den 30te Januar 1791.
+F:Gud Jehovah! vi prise dig!
+SIDE:179-
+
+Gud Jehovah! vi prise dig! 
 Til dig vort Hjerte hæver sig.
 O du! som var, som er, og bliver;
 Lyksalighedens runde Giver!
@@ -9289,11 +9281,17 @@ O lader os betænke Døden!
 Og frydes ved vor Evighed,
 Hvordan vi Banen træde maa
 Den skal til Liv og Glæde gaae.
-339
-Fædrelands Oder, Hymner og
-Sange.
-Sde over Indfødsretten,
-1777.
+
+SLUTSEKTION
+
+SEKTION:Fædrelands Oder, Hymner og Sange.
+
+
+T:Ode over Indfødsretten
+U:1777.
+F:Hvilken Mand, til Scepter baaret
+SIDE:339-341
+
 Hvilken Mand, til Scepter baaret,
 Som sin tunge Kongepligt
 Føler og med Mod opfylder,
@@ -9312,8 +9310,6 @@ Og som Fader dem tilsmilte
 Straaler af Alfaders Smiil, ''
 Naar med Lyst han seer
 Adams Børn. '': ''.
-(22*)
-340
 Fordumstidens store Skjalder!
 Kunde I fra Mørkets Skjøb
 See vor Glædes Morgenrøde!
@@ -9365,8 +9361,12 @@ Skinne til den sidste Slægt,
 En Alfaders Skjald -: *
 Synge Dig! .
 342
-Fødelands-Kjerlighed.
-1782.
+
+T:Fødelands-Kjerlighed
+U:1782.
+F:Du Plet af Jord, hvor Livets Stemme
+SIDE:342-345
+
 Du Plet af Jord, hvor Livets Stemme
 Steeg første Gang fra spæde Bryst,
 Hvor Himlen gav mig at fornemme
@@ -9459,11 +9459,14 @@ Vor Attraa Viisdoms Børn skal ære;
 Alfader give Bifalds Smil! .
 Den gode Borgers Navn at bære,
 Er Maalet, som vi stræbe til.
-346
-Sa n g
-paa Kronprindsens Fødselsdag
-1784.
-{
+
+
+T:Sang
+U:paa Kronprindsens Fødselsdag
+U:1784.
+F:Naar Østens Straale mild udbreder
+SIDE:346-347
+
 Naar Østens Straale mild udbreder
 Sit Purpur og fremkalder Glæder,
 :|: Da rørte Hymner møde den;:|:
@@ -9507,10 +9510,13 @@ Hver Dag han vandre til det Bedre,
 Hans Ungdom skjøn som Vaaren være!:|:
 :|: Hans Manddom glade Frugter bære!:|:
 Velsign Ham, Gud, og hør vor Bøn!
-348
-Murer sang
-i Anledning af >
-Kronprinds Frederiks Confirmation.
+
+T:Murersang
+U:i Anledning af 
+U:Kronprinds Frederiks Confirmation.
+F:Vor Ordens-Mester! store Fader
+SIDE:348-350
+
 Vor Ordens-Mester! store Fader
 Til Visdom, Kraft og Salighed!
 Som fra din lyse Trone lader
@@ -9562,10 +9568,14 @@ Ei Voldsmand kan vor Kjede bryde,
 Ei Mulm kan dæmme for vor Sol.
 Bag Dødens dybe Midnat finde
 Vi den igjen for os oprinde.
-Chor af Muser
-afsjunget i Decorationen udenfor Skuespilhuset
-ved Kronprindsens Indtog med sin Brud.
-1790.
+
+T:Chor af Muser
+U:afsjunget i Decorationen udenfor Skuespilhuset
+U:ved Kronprindsens Indtog med sin Brud.
+U:1790.
+F:Fredrik! Folkets Lyst og Haab
+SIDE:350
+
 Fredrik! Folkets Lyst og Haab
 Og Maria, Fredriks Mage!
 Eder Folkets Jubelraab,
@@ -9577,13 +9587,15 @@ Og at vinde Folkets Hjerte.
 Hører! Danmarks Røst sig hæve
 Fredrik og Maria leve!
 De skal ynde Phæbi Chor.
-351
-F r e de n.
-Et Digt, helliget Hendes Kongl. Majestæts
-Dronning Juliane Maries
-Fødselsdag 1792.
---
-J fjerne Tid, i Livets Morgenrøde,
+
+T:Freden
+U:Et Digt, helliget Hendes Kongl. Majestæts
+U:Dronning Juliane Maries
+U:Fødselsdag 1792.
+F:I fjerne Tid, i Livets Morgenrøde
+SIDE:351-356
+
+I fjerne Tid, i Livets Morgenrøde,
 Da var du Fred! livsalig Førstegrøde
 Af den Velsignelse, Alfader gav;
 Da fra sin Trone han nedsaae til Jorden,
@@ -9712,10 +9724,15 @@ O Dronning! ofte, fulgt af nye Glæder,
 Nyd længe, i en signet Afkoms Vrimmel,
 O Juliane! Forsmag paa den Himmel,
 Som border Dine Dyders Løn.
-Opmuntringssang
-til
-, Fædrelandets Forsvar
-29 Januar 1801.
+
+T:Opmuntringssang
+U:til
+U:Fædrelandets Forsvar
+U:29 Januar 1801.
+BEGIVENHED:1801-01-29
+F:Det glimter i Kimingen, varslende Gny
+SIDE:356-357
+
 Det glimter i Kimingen, varslende Gny
 Bebuder et Uvejr i Norden,
 Alt hæver sig langsom den ildsvangre Sky,
@@ -9728,34 +9745,30 @@ Den Kloge bør tænke paa Feide i Fred,
 Kun Daarerne Varslet kan haane;
 Thi bør det hver Hædersmand stande bered,
 Før Uvejret times at graane,
-357
 Til Idræt, til Værge med Klogskab og Mod!
 O lader Europa det kjende,
 At ingen sig holder til Kampen for god,
 Men hver til at flye for en Fjende.
-•: -, * - - -: *
-, '' '' '' '' |
 Og hver, som i Freden vandt Velstand og Guld,
 Og Hjorde, og mangefold Ager,
 Han sikre den Broder for Hunger og, Kuld,
 Som modig mod Fjenden uddrager.
-3: （: ）.:;; –
 Til Værge, til Værge mod Trædsthed og Vold.
 For Overmods Trudsel at dæmpe .
 Som Bille, og Krabbe, og Lilienskjold.
 Paa Landet og Bølgen vi kjæmpe.
-:::: *
 Der vorde, da Feide, der vorde da Fred,
 Dog skal det til Hæder os være,
 At hver Mand var frejdig til begge. bered
 For Fædrelands Velfærd og Ær:
-358
-Krigssang
-- - for
-Student er ne.
-:
--
-Borgerdybers store Mober,
+
+T:Krigssang
+U:for
+U:Studenterne
+F:Borgerdyders store Moder
+SIDE:358-359
+
+Borgerdyders store Moder,
 Fædrelandets Kjærlighed! .
 Smil til dine unge Poder,
 Smil med Himlens Bifald ned!
@@ -9786,10 +9799,14 @@ Gud! i Faren, som os truer,
 Giver du vort Hjerte Fred
 Brødre! Mænd! til Slag! til Slag! .
 Retfærds Sag er Danskens Sag'' -
-Sa n g
-for -
-Kronprindsens Liv corps
-da det havde svoret til Fanen.
+
+T:Sang
+U:for
+U:Kronprindsens Livcorps
+U:da det havde svoret til Fanen.
+F:Alvælde du har hørt os sværge
+SIDE:359-360
+
 Alvælde du har hørt os sværge,
 For Dannerkongens Ret at værge 3
 Dit milde Faderbud vi lyde,
@@ -9815,12 +9832,15 @@ Bor Bane vi med Mod betræder,
 Vor Idræt Jordens Folk skal lære,
 At Borgernavnet er vor Ære,
 Sg Norden er vort Fædreland.
-364.
-Sa n g
-for
-Kongens Tømmer mænd
-ved Hæderstegnenes Uddeling 1801.
-Frtidigt til sin Idræt træder
+
+T:Sang
+U:for
+U:Kongens Tømmermænd
+U:ved Hæderstegnenes Uddeling 1801.
+F:Freidigt til sin Idræt træder
+SIDE:361-362
+
+Freidigt til sin Idræt træder
 Danneflaadens Bygningsmand;
 Kongens Retfærd gav ham Hæder,
 Bød ham frydes ved sin Stand.
@@ -9845,10 +9865,11 @@ Sku den færdes, for at ligne
 Hver din Kongeid og Daad!
 Hør det hele Folk velsigne
 Fredrik, Kongens Søn og Raad!
-Til
-Mæ n d e n e
-fra anden April.
-•
+
+T:Til Mændene fra anden April.
+F:Kjække Mænd! vi signe Eder
+SIDE:362-363
+
 Kjække Mænd! vi signe Eder;
 I forøge Nordens Hæder,
 Med en ny og herlig Glands
@@ -9873,10 +9894,14 @@ Alle Ævner sig forene,
 Viisdoms Tænken, Manddoms Arm!
 Gyd din himmelrene Flamme
 I hver Mand, du skal opamme
-Ved din moderlige Barm! .
-Indvielses-Sang
-bestemt for Monumentet over anden Aprils Faldne.
-- Vær kjært, vær helligt, Kjækheds Minde
+Ved din moderlige Barm!
+
+T:Indvielses-Sang
+U:bestemt for Monumentet over anden Aprils Faldne.
+F:Vær kjært, vær helligt, Kjækheds Minde
+SIDE:363-364
+
+Vær kjært, vær helligt, Kjækheds Minde
 Paa faldne Brødres Hvilested! ..
 Erkjændtlig Savnets Taare rinde
 *
@@ -10836,9 +10861,15 @@ Han vælger Mænd af Dyd og Ære
 At fremme Landets Held;
 Gaa Mand! din Hæders lyse Vei!
 Gaa! du os glemmer ei.
-Blandede Sange.
-Festlig Begyndelses-Sang.
---
+
+SLUTSEKTION
+
+SEKTION:Blandede Sange
+
+T:Festlig Begyndelses-Sang.
+F:Vær du vort Selskabs Skytsgudinde
+SIDE:403-404
+
 Vær du vort Selskabs Skytsgudinde,
 O Venskab, Jordens bedste Held;
 Vort Favnetag dit Hædersminde!
@@ -10857,8 +10888,6 @@ Naar Skjæbnen sine Tordner tænder,
 Hvor sødt at flye hen til en Ven.
 Op Brødre! stemmer, stemmer i:
 Held være Venskabs Harmoni!
-(26*)
-404
 Og her ved Festens glade Dage,
 Naar Ven er samlet med sin Ven,
 Du smelter os ved Armods Klage,
@@ -10871,7 +10900,11 @@ At alle, alle Hjerter brænde,
 For dig, du Jordens Salighed!
 Op Brødre! stemmer, stemmer i:
 Held være Venskabs Harmoni!
-Selsk abs - San g.
+
+T:Selskabs-Sang
+F:
+SIDE:404-405
+
 Mild som Aftenstjernen smile
 Sande Glæder til os med!
 De forskjønne Mandens Hvile,
@@ -10897,7 +10930,11 @@ Du som over Hjerter byder,
 Dig til Ære synge vi;
 Ædle Venskab! intet bryder
 Dine Sønners Harmoni.
-Ven nes a n g.
+
+T:Vennesang
+F:For Glæden i Venskab at finde
+SIDE:405-
+
 For Glæden i Venskab at finde
 Vi række hinanden vor Haand,
 For Frihed med Pligt at forbinde
@@ -11897,9 +11934,16 @@ Vinker, at den tunge Dødens Nat
 Kun paa Gravens kolde Bolig hviler,
 Og hvor Livets korte Dag svandt hen,
 Er Dag igjen. -
-Idyller og Elegier.
-Til Jul i e.
-1778.
+
+SLUTSEKTION
+
+SEKTION:Idyller og Elegier
+
+T:Til Julie
+U:1778.
+F:Julie selv denne stille Glæde
+SIDE:448-
+
 Julie selv denne stille Glæde,
 Som dit Kys, og dine Favnetag
 Skabe i min Sjæl, skal Skjæbnens Vrede
@@ -12396,11 +12440,17 @@ Saa Veninde! skildred du din Smerte,
 Ved din Vens, din elskte Lærers Grav;
 Tag det Bifald fra hvert ædelt Hjerte,
 Som dig Taushed gav!
-469
-Prologer og Epiloger.
-Thal i a og Mel p om e n e
-ved Roses Grav
-1784,
+
+SLUTSEKTION
+
+SEKTION:Prologer og Epiloger
+
+T:Thalia og Melpomene
+U:ved Roses Grav
+U:1784.
+F:Her hvile de, den Slægt, som fordum vakte
+SIDE:469-474
+
 Melpomene, Mad. Rosing.
 Thalia, Mad. Preisler.
 Da Dækket hævedes, stod Melpomene ved Roses Urne
@@ -12410,7 +12460,8 @@ wiées, Løndemanns, Clementins og Hortulans Grave.
 Thalia
 kom med en Krands i Haanden frem blandt Gravene.
 (Efter en kort Pause.)
-er hvile de, den Slægt, som fordum vakte
+
+Her hvile de, den Slægt, som fordum vakte
 Den blide Glæde i en skyldfri Sjæl,
 Som lærte Daarskabs Adfærd at foragte
 Og Masken drog fra Lasters skjulte Træl;
@@ -12490,8 +12541,7 @@ Ham vies den ved min, ved Venskabs Stemme,
 Melpomene.
 Og denne vidne om min Roses Savn!
 Hans Sjæl har Fred, hans Støv har Gravens Gjemme,
-Men den, som naaer hans Kunst, giv den hans
-Navn!
+Men den, som naaer hans Kunst, giv den hans Navn!
 Efter Digterens første Bestemmelse skulde denne Prolog været
 saaledes fremsagt af Hr. Musted.-
 J stille Mulm her hvile Kunstens Fædre,
@@ -12539,9 +12589,12 @@ Ham deres elskte Lærer, Fader, Ven.
 O denne tause Graad, meer end min Stemme,
 Fortolker Smerten ved vor Roses Savn;
 Hans Sjel har Fred, hans Støv har Jordens Gjemme,
-Men den, der naaer hans Kunst, giv den hans
-Navn!
-Ved et Privattheaters Aabning.
+Men den, der naaer hans Kunst, giv den hans Navn!
+
+T:Ved et Privattheaters Aabning
+F:Naturen daaner, thi fra Kuldens Vinger
+SIDE:474-
+
 Naturen daaner, thi fra Kuldens Vinger,
 Neddrypper Rimen paa det visne Blad;
 Den muntre Lærke sig ei mere svinger
@@ -13592,10 +13645,17 @@ Signer Pagtens Blomsterkjæde,
 Han, hvis Aasyn alt opliver,
 Livets Dag sin Glæde giver,
 Til dens Aften giver Fred.
-517
-Bl a n d i n g e r.
-Efter det Tydske.
--=-
+
+SLUTSEKTION
+
+SEKTION:Blandinger
+
+
+T:Efter det Tydske.
+F:Søg aldrig paa en Nar at lære
+SIDE:517
+TODO:Find original
+
 Søg aldrig paa en Nar at lære,
 Han svær en Eed i Tugt og Ære,
 Den holder han, og bliver dum,
@@ -13608,6 +13668,7 @@ Hiin bliver sort, og denne dum,
 Os ei med Daaren at afgive,
 Men ham en Daare lade blive,
 Det er vort Privilegium.
+
 Vi s e ,
 Efter de t Tydske.
 Sin Handel mig Niels Kjøbmand priser,
@@ -14122,252 +14183,6 @@ Jeg skal evig, jeg skal salig være,
 Naar du Jord! du Himmel! skal forgaae!
 O tilbed mit Hjerte. Priis og Ære
 Være dig min Gud, Halleluja!
-It!
-#,
-M!,
-#.
-set,
-Fortale............- --------
------- •.VII
-Høstgildet, Syngespil i en Act.......
------------------------- • 1
-Peters Bryllup, Syngespil i to Acter............................ ... 49
-Forandringer foretagen af Digteren t de senere Udgaver af disse
-tvende Syngespil. Forerindring.....................................
-•.111
-Varianter i Udgaverne af Høstgildet for 1791 og 1808..............113
-Varianter i Udgaven for 1819......... •---------117
-Varianter til Peters Bryllup....... ---------»« »«»------------«....126
-Hjemkomsten, Syngespil i en Act............................................129
-Lyriske Digte:
-Hymne opført i Slotskirken 1791 •---179
-Passionssang med Forerindring...........................................
-».-184
-Dpstandelsen et Oratorium---------------.....................................194
-Julehymne 1818
-203
-Langfredags Hymne med Choral 1819.....................................206
-Paaskehymne med Choral 1821............
-Pindsehymne med Choral 1820....................•-----------------------216
-Nytaarssang 1822
-221
-Jubelhymne 1801.....
-223
-Hymne til det nye Aarhundrede.............................................228
-Ved det nye Aarhundredes Begyndelse.................................
-...230
-Afskedssang til Aaret 1807.......................
-•-........-231
-Sange ved Bispevielsen 1811.........- ..239
-Sange og Cantate ved Kroningsfesten 1815............................244
-Eantate paa Universitetet i samme Anledning..........................256
-540 -
-Psalmer ved Gudstjenesten i Holmens Kirke 1815.......... -----------261
-Psalmer for Hirschholms Menighed ved Reformationsfesten 1817..264
-Cantate til Reichards Musik.........•» « »« » « » « »« » « »• « » « » « » « »» « »« »« »» « »« »«« »• • •»269
-Paaskecantate til Wolfs Musik....... ----------271
-Begyndelses Chor til en Cantate 1790....................... --------------275
-Vassionssang til samme ''... -275
-Passionssang.......- 276
-Til Herlufsholms Trehundredaarsfest.........------------ -----------277
-Til Kronprindsesse Louise Augnstas Formæling 1786..
-Cantate til Kongens Fødselsdag 1786........ ............................
-K. S. Cantate til samme Fødselsfest..........*** -
-Sørgecantate over Biskop Harbo 1783....................................299
-Sørgesange over Henrik Gerner 1788.................-----------304
-M. S. Ved Sørgehøitiden over ham..................................... 305
-Sørgecantate over Stampe........................ •-•-----------307
-Sørgesange ved Prindsesse Sophie Frederikkes Jordefærd 1794...312
-Sørgecantate i samme Auledning--------------.............................316
-Sørgecantate over Sprengporten 1796 ---------------------..............320
-Sang ved Mindetalen over P. A. Bernstorff 1798.......................325
-Sang ved Fru Haabers Grav 1786.........................................329
-Schulhes Minde 1808.. - 330
-Ved J E. Colbjørnsens Jordefærd 1802..................................332
-For de Afdøde. K. S.................................... • •-•- --•------332
-Gravsang. K. S334
-De Hedengangnes Minde K. S.................................... -•-.335
-LiigPsalme ''…............................................................336
-Sørgelogesang....…............................. • 4 • •'' « » « » - • - - » « » «- '' '' '' '' '' '' '' '' • • « .....337
-Fædrelands Oder, Hymner og Sange.
-Dde over Indfødsretten 1777...................................................339
-Fødelandskjærlighed 1782,.................• - • ------------'' ---- - ------- •342
-Paa Kronprindsens Fødselsdag 1784.........................................
-Murersang ved sammes Confirmation 1784...
-Chor af Muser ved Formælingsindtoget 1790......................
-Freden - en Ode 1792.:''..........................................................:
-Opmuntringssang til Fædrelandets Forsvar 1801......................355
-541
-#
--
-Krigssang for Studenterne 1801...................…........................358
-Sang for Kronprindsens Livcorps 1801...................................359
-Sang for Kongens Tømmermænd {s. Aar.....................------------361
-Til Mændene for anden April s. Aar..........................-----------362
-Indvielsessang for Monumentet over de Faldne........ ..363
-Fædrelandskjærlighed K. S............... ''.''…365
-For Kongen og Fædrelandet K. S..
-BØn for Kongen K. S......................
-Murersang for Kongen............................. • • • • •• • • • • • • • • • • • • • • • • • • • • • • •368
-For det danske Broderskab.......................................... 370
-Murersang for Kongen 1793.................................................--371
-Sang for Kronprindsens Club.......................-------- ..37
-Sang i det harmoniske Selskab 1801...................... .374
-29 Januari 1791...............................
-Ved Kongeslægtens Ankomst i Skuespilhuset 1794
-Den 29 Januar 1832. (* - «
-28 og 29 JanUår sainme Aar........................ ''--------... -----------378
-28 October • ø - - - • • • • • '''' ------379
-Til Kronprindsesse Karoline 1810............• • • • - • •• • • • • • •''----------. .380
-Skjoldungers Miunt ved det danske Broderskabs Paaskegilde...382
-Den 28 Januar..... ------------------ • • • • ----------------- .383
-Velkomstsang for det danske Broderskab til Kongen.............385
-Til Dronningen................................ ''.386
-Paa Maskeradebállet 1804.............. - • • • • • • • • • • • • •387
-Velkomstsang i Skuespilhuset 28 Januar 1816.... ''............388
-28 October 1820...................................... - ... - - - - - - 386
-Det danske Broderskabs Velkomstsang til Kongehuset 1820.......390
-Til Prindsesse Caroline Amalie............... .392
-Sang i Anledning af Indretningen paa Doqven.. •'' '' '' '' '' '' '' '' '' |
-Vennesang til Gerners Fødselsdag 1784..................................395
-Til samme Høitid 1785.... ''* - - -–
-Til samme Høitid 1787............ • • • • • • • • •''...''
-Til Chr. Colbjørnsens Fødselsdag 1794..
-Lykønskningssang til Justitiarius Eordsen 1794...
-Kunstbrødretak til Capelmester Schulk... -
-Ved Tønder Lunds Afrejse til Norge 1808.....
-''400
-#''102
-542
-Blandede Sange.
-Festlig Begyndelsessang 403
-Selskabssang...... 404
-Vennesang......... -- 405
-Klubsang i Klubben fra 1775..............................................---407
-Dyd og Venskab K. S------------------------------------.......................408
-Enighed K. S- #09
-Velgjørenhed K. S411
-Velgjørenhed M. S412
-Vaaravad K. S414
-Festavad K. S... - 415
-Drdensregler K, S416
-Murersang 417
-Sjelefred K. S...........--•419
-Vaaren K. S--------------------------------------------------------------.........421
-Sang ved Aarskifte 422
-Sang for de borgerlige Militaire. September 1790..................423
-For det borgerlige Artillerie. September 1790..........................425
-For samme Corps 426
-Nytaarsaftensang..... .427
-Evas Skabelse. - - ......429.
-Sang til et Klaveer.............---430
-Ved det harmoniske Selskabs første Conært 1819.....................431
-Sang..................''---433
-Sang............'''':::::''...'''' - -434
-Sandhed K. S''-----------------------..................................435
-Sang ved Prinds Christians Fødselsfest 1816...... ...436
-I det harmoniske Selskab den 28 Januar 1798. .438
-Folkesang den 16 September 1790................--........439
-Ved Kronprindsessens Ankomst i Skuespilhuset 1793.................440
-Sølvbryllupssang til C. F. Jacobi 1805.................................441
-Vaarsang ved det harmoniske Conærts Slutning 1794............442
-Sang til samme Selskabs 25 Aars Fest................ ..4
-Brodersind M. S...............................................-445
-Sørgesang over Frederik af Preusen M. S.............................446
-543
-Idyller og Elegier.
-Til Julie 1778
-448
-Forsøg til en Elegie 1780
-- ...449
-Til Kjærlighed 1780 «.452
-Ved et Bryllup
-454
-Hymenæe til C. F. Jacobi 1780........ ------------- -------------------455
-Venskabsminde til Rahbek 1782.........................................''...457
-Over Livets Forfængelighed 1780.............•» -»-'':457
-Fragment 1803
-460
-Ved den unge Reißensteins Død 1777.....................................460
-Ved Admiral Arffs Død 1781.............................
--------462
-John Erichsens Minde 1789
-- 463
-Bed en Vens Grav 1816
-- 463
-Den brudte Rose. ''. 464
-Ved en hæderværdig Kones Grav...............''64
-Ved en Venindes Grav #''. 466
-Paa en værdig Oldings Fødselsdag.…...…''.
--''.....466
-Til en værdig Geistlig
-467
-Til Madam Rosing som Melpomene ved Roses urne................468
-Prologer og Epiloger.
-Thalia og Melpomene ved Roses Grav 1784..........................469
-Samme Prolog i sin første Form.........................------------------472
-Ved et Privattheaters Aabning 1785 D. D. L. S...............474
-Bed sammes Slutning D. D. L. S.....................................477
-Prolog 1786. D. D. L. S
---------478
-Prolog og Almuesang ved Kronprindsens Hjemkomst 1788.......479
-Prolog til Kronprindsesse Maria 1791.............----------------------483
-Prolog Fædrelandskjærlighed og huuslig Lykke 1809.........-----485
-Prolo9 den 29 Januar 1813........................... •------------------488
-Velgjørenhed Prolog 1791..........• - - - - - - - 491
-Flora Epilog 1795 Junii
-493
-Ceres Prolog September 1795 494
-Penia Prolog Martii 1796.............................-
-496
-Prolog, Epilog og Chore ved en Forestilling for de Blindes Institut.497
-544
-Prolog fremsagt af Skuespillerinden Madam Rose................
-Epilog fremsagt af Regisseur Clausen......................... --503
-Prolog bestemt for Madam Berthelsen...................... ..505
-Epilog fremsagt af Skuespillerinden Madaun Liebe.................506
-Epilog paa et Privattheater D. D. L. S...................... -------507
-Til samune Selskabs fem og tyve Aarsfest............----------------508
-Til dets tredive Aarsfest.........--------509
-Paa samme Privattheater............................ 511
-Synet en dramatisk Idylle....................''….........''- ------513
-Blandinger.
-Efter det tydske.........----517
-Vise efter det tydske......-- ..517
-Efter Bürger........''…''•••---------------»«519
-Sang til Publikum af Madam Frydendahl..............................521
-Inskriptioner ved Formælingsindtoget.....................................522
-Sang af Cantaten paa venskabelige Selskabs Stiftelsesdag 1787.523
-Passionscantate til Sørgemusikken over Prindsesse Sophie
-Frederikke.... 524
-Til en Ven paa hans Fødselsdag..... .527
-Til Frue Grevinde Danneskjold Samsøe......*******'': ''-----------------528
-Til Doris 1780 # - - ----529
-MSed en VSens Bryllup 1780...... 530
-Ode til Kiærlighed 1779---------------------............ 532
-Ungdommené Erindring 1779........---------------------533
-En Ulykkeligs Længsel efter Døden 1779.................................534
-Hyune 1779 - 536
-- - - - -
-–''–------ - - 4. -
-# …: '',
-:
-* - - -
--
-- - - + ''
--
--
-- – ''----
-- -------
-**
 
--
-- –
-This book should be returned to
-the Library on the last date stamped
-below.
-Afine of five ænts a day is ineurred
-by retaining it beyond the specified
-time.
-Please return promptly.
+SLUTSEKTION
 
