@@ -6817,7 +6817,7 @@ Gud bandt for Evigheden.
     <dates>
         <event>1836-11-22</event>
     </dates>
-    <keywords>heilbergjohanne</keywords>
+    <keywords>heibergjohanne</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6914,7 +6914,6 @@ Sin Høitidsharpe slaae.
 </body>
 </poem>
 
-<!-- === -->
 <poem id="oehlenschlaeger2019021884">
 <head>
     <title>Sang</title>
@@ -6928,6 +6927,7 @@ Sin Høitidsharpe slaae.
     </subtitle>
     <firstline>Naar Dansken fylder bredfuldt Maal</firstline>
     <source pages="190-191"/>
+    <keywords>frederik6</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6937,41 +6937,45 @@ Den første Skaal er Kongens Skaal,
 Og alle Hierter qvæde:
 Velsign ham, Gud! og skienk ham Fred
 Og Helbred og Lyksalighed.
-Den første Skaal er Kongens Sk aal;
+Den første Skaal er Kongens Skaal;
 Den vier ind vor Glæde.
-Og hvad vi onskte dig, du fik;
-Thi kraftig og fomoiet
+
+Og hvad vi ønskte dig, du fik;
+Thi kraftig og fornøiet
 Du stod for os, vor Frederik!
-As Tiden ei nedbøiet.
+Af Tiden ei nedbøiet.
 Nu kom en lille flygtig Sky,
 Og derfor sørged Land og By;
 Men Solen straaler frem paa ny
 Som Forsyns-Fadersiet.
-Sa n g i Anledning af Kongens Fødselsfest.
-Med Anglingsild, saa let og rank,
+
+Sang i Anledning af Kongens Fødselsfest.
+Med Ynglingsild, saa let og rank,
 Som moden Mand du tænkte;
 Og mens saamangen Kæmpe sank,
-Dit Hoved ei dn sænkte.
-Er end dit. Haar som Sølv et hvidt,
+Dit Hoved ei du sænkte.
+Er end dit Haar som Sølv et hvidt,
 O, det har ei af Tiden liidt!
 Det i din Barndom alt var dit,
 Dig Freia selv det skienkte.
-Du laerte Flid, Aarvaagenhed
-Og Noisomhed os andre;
+
+Du lærte Flid, Aarvaagenhed
+Og Nøisomhed os andre;
 Og da du nys dig lagde ned,
 Det monne lidt forandre.
-At være syg-sorkiaelet ei.
-O s lånte du paa denne Vei.
+At være syg-forkiælet ei,
+Os lærte du paa denne Vei.
 Dit Blik, din Mine sagde: Jeg
 Skal snart blandt eder vandre.
-I lang Tid end — fiernt staaer hans Maal
+
+I lang Tid end — fiernt staaer hans Maal -
 Hans Kraft ham svigter ikke;
 Thi fylder Alle Haabets Skaal
 Nu efter Fædreskikke!
-Paa mangen aarlig Høitidødag
+Paa mangen aarlig Høitidsdag
 I dette gamle Skyttelag
 Vor første Skaal var Fredriks Skaal,
-De n skal vi længe drikke.
+<w>Den skal vi længe drikke.</w>
 </body>
 </poem>
 
@@ -6982,34 +6986,39 @@ De n skal vi længe drikke.
     <subtitle>Marts 1837.</subtitle>
     <firstline>Hvo veed, hvor nær mig er min Ende?</firstline>
     <source pages="192-193"/>
+    <keywords>zahle</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-,,Hvo veed, hvor nær mig er min Ende?
+,,Hvo veed, hvor nær mig er min Ende?''<!-- TODO: Hvad citeres? -->
 Saa siunger hver en Dødelig.
 Vel, at vi ikke Veien kiende!
 Men Maalet hist i Himmerig
-Seer Sioelen, ei af Gud forladt,
+Seer Siælen, ei af Gud forladt,
 Med Haabets Øie Dag og Nat.
-Du skued Maalet klart herneden,
-Før Dødens Alf dit Øie brod;
+
+<w>Du</w> skued Maalet klart herneden,
+Før Dødens Alf dit Øie brød;
 Hengangne Ven! Udødligheden
-Besiælte dig tidt for din Død.
+Besiælte dig tidt før din Død.
 Hvad her som Christen troede du,
-Det, Salig e! det veed du nu.
+Det, Salige! det veed du nu.
+
 Dit Øie med forklarte Blikke
 Den elskte Viv hos Gud giensaae,
 Og Gud og Fædrelandet ikke
-Forlade dine kicere Sm aae.
-En Vennestok med Barmeg trang
+Forlade dine kiære Smaae.
+En Venneflok med Barmen trang
 Dig følger tro med Skialdesang.
-Thi Den du var, og Kunsten styrked
+
+Thi Ven du var, og Kunsten styrked
 Din Aand med Harpens Melodie;
 Naturens Videnskab du dyrked,
 Thi Himlen speiler sig deri.
 Kunst og Natur som Vinger bar
 Dig op til Naadens Throne klar.
-Sø v ssdt, vor Ven! Vi skal ei glemme
+
+Sov sødt, vor Ven! Vi skal ei glemme
 Dit Minde paa vor Fremtids Gang;
 Og ofte lyder os din Stemme
 Endnu i mangen venlig Sang.
@@ -7018,6 +7027,7 @@ Paa Graven — og den visner ei.
 </body>
 </poem>
 
+<!-- === -->
 <poem id="oehlenschlaeger2019021886">
 <head>
     <title>Til Beskow</title>
@@ -9622,6 +9632,11 @@ Gud skienker Fremtid Grvde.
         <line>Den 28de Juni 1840.</line>
     </subtitle>
     <firstline>Skiøn er den Fest, som Ætten fryder</firstline>
+    <pictures>
+        <picture src="oehlenschlaeger20190218124-p1.jpg" year="1840-1843" museum="smk" invnr="KMS493">
+            Sophus Schack: <i>Christian VIII og Caroline Amalies salving i Frederiksborg Slotskirke den 28. juni 1840</i>, 1840-1943, olie på lærred, 295x222 cm. Statens Museem for Kunst.
+        </picture>
+    </pictures>
     <source pages="267-277"/>
     <dates>
         <event>1840-06-28</event>
