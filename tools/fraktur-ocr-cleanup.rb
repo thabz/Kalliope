@@ -159,6 +159,7 @@
 'fsdt/født',
 'fsde/føde',
 'nogn/nøgn',
+'noie/nøie',
 'ipn/iøn',
 'mce/mæ',
 'Moen/Mæn',
@@ -406,8 +407,8 @@
 'fidst(\W)/sidst\1',
 'Dsd/Død',
 'Dvd/Død',
-'Udbrod/Udbrød',
 'dsd/død',
+'brod/brød', 'brøder/broder', # Kun denne ene undtagelse
 'rvm/røm',
 'flige/slige',
 'fligt/sligt',
