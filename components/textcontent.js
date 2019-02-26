@@ -222,7 +222,7 @@ export default class TextContent extends React.Component<TextContentPropsType> {
             {this.handle_nodes(node.childNodes)}
           </span>
         );
-      case 'num':
+      case 'versenum': // Linjer med kun tal eller romertal.
         return (
           <span
             key={this.keySeq++}
@@ -401,18 +401,16 @@ export default class TextContent extends React.Component<TextContentPropsType> {
         lineInnerClass += ' right-aligned-text';
       }
 
+      if (lineOptions.margin) {
+        className += ' with-margin-text';
+      }
+
       if (options.isPoetry && !lineOptions.wrap && !lineOptions.hr) {
         className += ' poem-line';
-        let displayedLineNum = null;
-        if (lineOptions.folkevise && lineNum != null) {
-          displayedLineNum = lineNum + '.';
-        } else if (lineNum != null && lineNum % 5 === 0) {
-          displayedLineNum = lineNum;
-        }
         return (
           <div
             className={className}
-            data-num={displayedLineNum}
+            data-num={lineOptions.displayNum || lineOptions.margin}
             key={keyPrefix + i}>
             {anchor}
             <div className={lineInnerClass}>{rendered}</div>
@@ -471,6 +469,18 @@ export default class TextContent extends React.Component<TextContentPropsType> {
             margin-left: -2.5em;
             vertical-align: top;
             margin-top: 0.25em;
+          }
+          :global(.poem-line.with-margin-text::before) {
+            content: attr(data-num);
+            color: black;
+            margin-right: 1em;
+            width: 1.5em;
+            font-size: 1em;
+            text-align: right;
+            display: inline-block;
+            margin-left: -2.5em;
+            vertical-align: top;
+            margin-top: 0;
           }
           :global(.bible-line),
           :global(.poem-line) {

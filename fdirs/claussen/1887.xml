@@ -5,13 +5,14 @@
    <title>Naturbørn</title>
    <year>1887</year>
    <pictures>
-       <picture type="titlepage" src="1887-p1.jpg">Titelbladet til <i>Naturbørn</i> (1887). ,,Naturbørn / Digte / af / Sophus Claussen. // København. / I Kommision hos C. A. Reitzel. / Fr. Bagges Bogtrykkeri. / 1887.''</picture>
+       <picture type="titlepage" src="1887-p1.jpg">Titelbladet til <i>Naturbørn</i> (1887). «Naturbørn / Digte / af / Sophus Claussen. // København. / I Kommision hos C. A. Reitzel. / Fr. Bagges Bogtrykkeri. / 1887.»</picture>
    </pictures>
    <notes>
-      <note type="credits">Tilføjet med hjælp fra Martin Snoer Raaschou.</note>
+      <note type="credits">Tilføjet med hjælp fra Henrik Nielsen og Martin Snoer Raaschou.</note>
+      <note>Teksten følger Sophus Claussen: <i>Naturbørrn</i>, C.A. Reitzel, Kbh., 1887.</note>
    </notes>
-   <quality>korrektur1,korrektur2</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+   <source facsimile="11530805030F_color" facsimile-pages-num="156" facsimile-pages-offset="10">Sophus Claussen: <i>Naturbørrn</i>, C.A. Reitzel, Kbh., 1887.</source>
 </workhead>
 <workbody>
 
@@ -21,7 +22,8 @@
    <toctitle>Døgndrømme</toctitle>
    <indextitle>Døgndrømme</indextitle>
    <firstline>Hvad blev der tilbage, som Tiden randt</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="1-2"/>
+   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
    <notes>
       <note>Citatet er fra Goethes <xref poem="goethe2003060101"/>.</note>
    </notes>
@@ -62,7 +64,8 @@ Jeg fanger Jer Pragt, mens I løses til Skum.
    <toctitle>Jeg syntes -</toctitle>
    <indextitle>Jeg syntes -</indextitle>
    <firstline>Jeg syntes, i en Baad jeg lod mig glide</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="3-5"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg syntes, i en Baad jeg lod mig glide
@@ -129,7 +132,8 @@ og mere Handlingernes Romantik.
    <toctitle>Kan du drømme med mig?</toctitle>
    <indextitle>Kan du drømme med mig?</indextitle>
    <firstline>Kan du drømme med mig?</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="6-7"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
         Kan du drømme med mig
@@ -169,7 +173,8 @@ ti en Drøm vinder Liv, naar den drømmes af to.
    <toctitle>Du som en lille Kattekilling er ...</toctitle>
    <indextitle>Du som en lille Kattekilling er ...</indextitle>
    <firstline>Du som en lille Kattekilling er, du kaade Barn</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="8"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Du som en lille Kattekilling er, du kaade Barn,
@@ -195,7 +200,8 @@ naar andre Nøgler rent gør tummelumsk min kælne Kat.
    <toctitle>Vaar i Vinter</toctitle>
    <indextitle>Vaar i Vinter</indextitle>
    <firstline>Oktobers blege Sol er svunden hen</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="9"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Oktobers blege Sol er svunden hen,
@@ -221,7 +227,8 @@ har første Gang tæt til mit Bryst dig lagt.
    <toctitle>Dæmring</toctitle>
    <indextitle>Dæmring</indextitle>
    <firstline>Det var ved Daggry. Vaagen</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="10-12"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Det var ved Daggry. Vaagen
@@ -279,7 +286,8 @@ dig atter hurtig til.
    <toctitle>Hver Morgen, naar jeg vaagner</toctitle>
    <indextitle>Hver Morgen, naar jeg vaagner</indextitle>
    <firstline>Jeg skotter til min Rude</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="13-14"/>
+   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 Jeg skotter til min Rude,
@@ -317,7 +325,8 @@ en Morgen naar jeg vaagner.
    <toctitle>Sagtelig ...</toctitle>
    <indextitle>Sagtelig ...</indextitle>
    <firstline>Sagtelig, sagtelig Timer glide</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="15"/>
+   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 Sagtelig, sagtelig Timer glide
@@ -342,7 +351,8 @@ Sagtelig, sagtelig glider Tiden ...
    <toctitle>Paa Strandvejen</toctitle>
    <indextitle>Paa Strandvejen</indextitle>
    <firstline>Da vi til Aften spiste i Skoven, Skæbnen vilde</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="16-18"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Da vi til Aften spiste i Skoven, Skæbnen vilde,
@@ -355,7 +365,7 @@ Hun talte om sin Stolthed, som var saa let at krænke,
 og hvad om hint og dette vel Verden maatte tænke!
 
 Og hun var bleven hæftig, forinden hun blev færdig.
-Til Strandvejen vi naaed', og <i>jeg</i> begyndte værdig ...
+Til Strandvejen vi naaed', og <w>jeg</w> begyndte værdig ...
 
 Og mens i Aftnens Stilhed der hørtes fjærne Toner,
 og Linde stod og drømte med deres lyse Kroner -
@@ -400,7 +410,8 @@ hun loved mig at være en artig, lille Kone.
    <toctitle>Sent hjem</toctitle>
    <indextitle>Sent hjem</indextitle>
    <firstline>Jeg slentred ind ad Porten</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="19-20"/>
+   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 Jeg slentred ind ad Porten,
@@ -446,7 +457,8 @@ mig ved din unge Barm.
    <toctitle>Kærlighed</toctitle>
    <indextitle>Kærlighed</indextitle>
    <firstline>Tal ej om skuffet Kærlighed</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="21"/>
+   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 Tal ej om skuffet Kærlighed
@@ -467,7 +479,8 @@ og synker træt til slut.
    <toctitle>Bagefter</toctitle>
    <indextitle>Bagefter</indextitle>
    <firstline>En kølig Aften sidder jeg paa Bænken</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="22-24"/>
+   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 En kølig Aften sidder jeg paa Bænken
@@ -522,7 +535,8 @@ staa dryppende af Regn ved Kærets Rand.
    <toctitle>En Stormdrøm der gaar ...</toctitle>
    <indextitle>En Stormdrøm der gaar ...</indextitle>
    <firstline>En Stormdrøm der gaar gennem Verden</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="25-26"/>
+   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 En Stormdrøm der gaar gennem Verden,
@@ -565,7 +579,8 @@ og Kampen for Frihed ej kommer.
    <toctitle>Messalina</toctitle>
    <indextitle>Messalina</indextitle>
    <firstline>O Messalina med det stolte Hoved!</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="27-28"/>
+   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 O Messalina med det stolte Hoved!
@@ -592,9 +607,9 @@ Og hver Gang Drømme-Blikket paa mig stirred,
 det var, som hver en Nerve i mig dirred,
 og jeg slog Øjet ned og stod forvirrret.
 
-,,Bliv ikke vred!'' - jeg voved ,,Hvad jeg <i>vil</i> Dem,
-fortjener ingen Vrede.'' Stemmen skælved.
-Hun svared: ,,Jeg vil ikke tale til Dem.''
+«Bliv ikke vred!» - jeg voved - «Hvad jeg <w>vil</w> Dem,
+fortjener ingen Vrede.» Stemmen skælved.
+Hun svared: «Jeg vil ikke tale til Dem.»
 
 - Hvorfor foragter De, hvem De ej kender?
 Ak Messalina, De er altfor grusom.
@@ -608,7 +623,8 @@ O vidste De, hvor Blodet i mig brænder!
    <toctitle>For god!</toctitle>
    <indextitle>For god!</indextitle>
    <firstline>I København og Valby</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="29-31"/>
+   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 I København og Valby
@@ -639,7 +655,7 @@ som altid skal gaa og glane,
 den smagløse, støjende Ungdom,
 der fordrer saa broget en Scene
 og ikke forstaar at vurdére
-som <i>hun</i> det fornødne éne.
+som <w>hun</w> det fornødne éne.
 
 Mod en hovmodig Fløs kan hun vise
 en Haan, som du ikke begriber.
@@ -648,7 +664,7 @@ at straks hun i Armen dig kniber.
 
 Saa vil eders Sjæle befjedres
 af smaa, poétiske Vinger.
-Hun hvisker saa sirlig: ,,jeg elsker,''
+Hun hvisker saa sirlig: «jeg elsker,»
 som om hun kyssed paa Finger.
 
 - Det énlige Væsen! hvem dadler,
@@ -669,7 +685,8 @@ for god til en Verden som denne.
    <toctitle>Kærligheds Program</toctitle>
    <indextitle>Kærligheds Program</indextitle>
    <firstline>Foran hendes Fødder</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="32-34"/>
+   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 Foran hendes Fødder
@@ -702,29 +719,29 @@ imedens jeg taler
 om Kærligheds Drømme
 og Skuffelsens Kvaler:
 
-,,... jeg hader den Verdens-
+«... jeg hader den Verdens-
 afhængige, trælske,
 poétisk forskønnende
 Maade at elske.
 
-,,Ved festklædte Løgne
+«Ved festklædte Løgne
 jeg lédes og Fraser,
 bort vil jeg slænge
 de Maskebals Laser.
 
-,,<i>De</i> er saa naturlig,
+«<w>De</w> er saa naturlig,
 saa prægtig fordærvet,
 med Floskel-Foragten,
 som De har erhværvet!
 
-,,Fortæl, kan De elske?
+«Fortæl, kan De elske?
 forstaar De: oprigtig,
 af selvstændig Higen?
 ej naadig, ej pligtig -
 
-,,og skænke et <i>Hjærte</i>,
+«og skænke et <w>Hjærte</w>,
 ej Digternes Løgne?
-O tror De?'' - Jeg ser i
+O tror De?» - Jeg ser i
 to glimtende Øjne.
 
 Hun slaar om min Nakke
@@ -740,7 +757,9 @@ hvornaar det mon ender?
    <toctitle>Solnedgang</toctitle>
    <indextitle>Solnedgang</indextitle>
    <firstline>Af Solens henflagrende Straaler</firstline>
-   <quality>korrektur1</quality>
+   <source pages="35-36"/>
+   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
+   <notes>Parafrase fra <xref poem="heine2001102272"/>.</notes>
    <keywords>heine</keywords>
 </head>
 <body>
@@ -748,42 +767,42 @@ hvornaar det mon ender?
 <right><small><nonum>- mir frösteln die Gedärme!</nonum></small></right>
 <right><small><nonum><i>Heine</i></nonum></small></right>
 
-Af Solens henflagrende Straaler 
+Af Solens henflagrende Straaler
 en Guldglans er lagt over Haven:
-paa Gruset, paa Græsset i Plænen 
-og Blomsternes brogede Skaaler. 
-De bristende Lys-Blikke maaler 
-det skælvende Vand i Fontænen. 
+paa Gruset, paa Græsset i Plænen
+og Blomsternes brogede Skaaler.
+De bristende Lys-Blikke maaler
+det skælvende Vand i Fontænen.
 
-Og bag Lysthusets Tremmeværk danser 
-der Sol om en gulklædt Kvinde, 
-som hviler sig slank i hver Bøjning 
+Og bag Lysthusets Tremmeværk danser
+der Sol om en gulklædt Kvinde,
+som hviler sig slank i hver Bøjning
 med Barmen spændt blank som et Panser,
-saa trofast, med drømmende Sanser 
-paa Lur i hver Leddenes Føjning. 
+saa trofast, med drømmende Sanser
+paa Lur i hver Leddenes Føjning.
 
 Men Skyggerne mere sig strækker,
-og Solen forsvinder bag Hækken, 
-den guldgule Farvepragt visner, 
-en afsvalet Aftenvind trækker, 
-mens graalig sig Skumringen lægger 
-og Springvandets Sølvklarhed isner. 
+og Solen forsvinder bag Hækken,
+den guldgule Farvepragt visner,
+en afsvalet Aftenvind trækker,
+mens graalig sig Skumringen lægger
+og Springvandets Sølvklarhed isner.
 
-Jeg gyser. Jeg sér imod hende. 
-Hun lægger sin Bog til Side 
-og korser de rundede Arme: 
-der svulmer en Kraft uden Ende, 
+Jeg gyser. Jeg sér imod hende.
+Hun lægger sin Bog til Side
+og korser de rundede Arme:
+der svulmer en Kraft uden Ende,
 som Ild i en udslukt kan tænde
-og frysende Indvolde varme. 
+og frysende Indvolde varme.
 
 Det er, som en Vaar-Golf mig strømmer
-i Blodet - hun kysser min Tinding; 
-jeg ligger i sitrende Knælen. 
+i Blodet - hun kysser min Tinding;
+jeg ligger i sitrende Knælen.
 - Saa vig nu, hver legemløs Drømmer!
-I Slægten fra Sundheden dømmer 
-og gør os forfrosne i Sjælen. 
+I Slægten fra Sundheden dømmer
+og gør os forfrosne i Sjælen.
 
-<right><i><nonum>5. 1.86</nonum></i></right>
+<right><i><nonum>5.1.86</nonum></i></right>
 </body>
 </poem>
 
@@ -793,17 +812,18 @@ og gør os forfrosne i Sjælen.
    <toctitle>Hvorfor mon?</toctitle>
    <indextitle>Hvorfor mon?</indextitle>
    <firstline>Jeg vil vide, Skønjomfru saa ung og saa fin!</firstline>
-   <quality>korrektur1</quality>
+   <source pages="37"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg vil vide, Skønjomfru saa ung og saa fin!
-er du hviskende Suk eller stormende Hvin? 
+er du hviskende Suk eller stormende Hvin?
 
 Er den fine Pupille mon blændet og vaad
-af bristende Savn eller Kærligheds Graad? 
+af bristende Savn eller Kærligheds Graad?
 
 - Jeg saâ kun et Barn, som uhjælpelig græd.
-Hvorfor mon jeg gjorde den Jomfru Fortræd? 
+Hvorfor mon jeg gjorde den Jomfru Fortræd?
 </body>
 </poem>
 
@@ -813,23 +833,24 @@ Hvorfor mon jeg gjorde den Jomfru Fortræd?
    <toctitle>Efter Regnen</toctitle>
    <indextitle>Efter Regnen</indextitle>
    <firstline>Det regned i Nat, den brune Sti</firstline>
-   <quality>korrektur1</quality>
+   <source pages="38"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Det regned i Nat, den brune Sti 
-er fast og fri for Støv. 
+Det regned i Nat, den brune Sti
+er fast og fri for Støv.
 Der hænger fuldt af Draaber i
-Hvidtjørnehækkens Løv. 
+Hvidtjørnehækkens Løv.
 
-Mens skiferfarvede Skylag ned 
-over Himlen tones blidt, 
-staar Skoven i sin grønne Fred 
-og drømmer, tung, om sit. 
+Mens skiferfarvede Skylag ned
+over Himlen tones blidt,
+staar Skoven i sin grønne Fred
+og drømmer, tung, om sit.
 
 Jeg gaar derind. Hvor alt er vaadt!
-- en lyttende Bladdryp-Sal. 
+- en lyttende Bladdryp-Sal.
 Fra Skovfogdhuset skingrer blot
-stundum et Hanegal. 
+stundum et Hanegal.
 
 <nonum><small><right>18.5.85.</right></small></nonum>
 </body>
@@ -841,23 +862,24 @@ stundum et Hanegal.
    <toctitle>Sommermorgen</toctitle>
    <indextitle>Sommermorgen</indextitle>
    <firstline>Jorden ligger sløromvundet</firstline>
-   <quality>korrektur1</quality>
+   <source pages="39"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Jorden ligger sløromvundet, 
+Jorden ligger sløromvundet,
 Sølvstøv-drysset, slummersvag,
-mens det dæmrer over Sundet 
-        imod Dag. 
+mens det dæmrer over Sundet
+        imod Dag.
 
-Vandets Flade kruser let sig 
-under Vindens friske Tag; 
+Vandets Flade kruser let sig
+under Vindens friske Tag;
 Bredden faar et køligt Tvæt sig
-        imod Dag. 
+        imod Dag.
 
-Solen kigger frem; den Taagen 
-suger ind i hede Drag. 
-Jorden glødes varm og vaagen. 
-         Det er Dag. 
+Solen kigger frem; den Taagen
+suger ind i hede Drag.
+Jorden glødes varm og vaagen.
+         Det er Dag.
 </body>
 </poem>
 
@@ -868,199 +890,201 @@ Jorden glødes varm og vaagen.
    <toctitle>Pan</toctitle>
    <indextitle>Pan</indextitle>
    <firstline>Pan sad og lo</firstline>
-   <quality>korrektur1</quality>
+   <source pages="40-43"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
    Pan sad og lo,
-   som han altid lér, 
+   som han altid lér,
    naar ikke han fløjter,
-   hvad ogsaa sker. 
-   
-   Pan sad og lo, 
-   han holdt Øje med to,
-   som trodsig var vandrede 
-   hver sin Vej, 
-   da <i>han</i> vilde kysse 
-   og <i>hun</i> vilde ej. 
-   
-   Pan sad og lo,
-   han mored sig godt, 
-   og Ekko, som hørte ham, 
-   gentog hans Spot. 
-   
-   Saa dansede Latteren 
-   ind gennem Skoven
-   kaad og forvoven, 
-   sukkede hult, 
-   hviskede rundt om
-   for neden og oven, 
-   som var der Fauner 
-   bag Træerne skjult. 
-   
-   Det stønnede bagved! 
-   det raslede dér! 
-   Hvad var mon det sorte 
-   ved disse Trær, 
-   hvor Mørket laa tæt? 
-   
-   Og mens hun flygted, 
-   hun vidste ej ret, 
-   om dette var Stien, 
-   som hjemad førte. 
-   Og hvad var det nu
-   for Fodtrin hun hørte? 
-   
-   Én fulgte efter, 
-   hun mærked det klart. 
-   Hun skyndte sig fremad 
-   med stærkere Fart. 
-   
-   Hvad ogsaa hun vilde 
-   i Skoven saa silde? 
-   
-   Saa <i>nu</i> fôr hun vild! 
-   
-   Et bundløst Føre 
-   af Mose og Slam, 
-   hvor hun vendte sig hen! 
-   
-   Hvad skulde hun gøre? 
-   Hun kaldte paa <i>den,</i>
-   hun ej før vilde høre. 
-   
-   En frygtelig Skam! 
-   
-   Hun lytted. Forgæves! 
-   han vilde ej svare.
-   Kun Skridtene lød. 
-   Der var virkelig Fare! 
-   
-   Men saa var det ham.
-   
-   Og hun kasted sig til ham 
-   og følte sig tryg 
-   og pludred og skændte 
-   og kaldte ham styg. 
-   Og hun kyssed ham selv 
-   baade én Gang og to. 
-   
-   Pan sad og lo. 
-   Der kan ingen gaa fri 
-   for hans Drilleri. 
+   hvad ogsaa sker.
 
-Han lo, og han fanged og kyssed 
-en Nymfe, som just kom forbi. 
+   Pan sad og lo,
+   han holdt Øje med to,
+   som trodsig var vandrede
+   hver sin Vej,
+   da <w>han</w> vilde kysse
+   og <w>hun</w> vilde ej.
+
+   Pan sad og lo,
+   han mored sig godt,
+   og Ekko, som hørte ham,
+   gentog hans Spot.
+
+   Saa dansede Latteren
+   ind gennem Skoven
+   kaad og forvoven,
+   sukkede hult,
+   hviskede rundt om
+   for neden og oven,
+   som var der Fauner
+   bag Træerne skjult.
+
+   Det stønnede bagved!
+   det raslede dér!
+   Hvad var mon det sorte
+   ved disse Trær,
+   hvor Mørket laa tæt?
+
+   Og mens hun flygted,
+   hun vidste ej ret,
+   om dette var Stien,
+   som hjemad førte.
+   Og hvad var det nu
+   for Fodtrin hun hørte?
+
+   Én fulgte efter,
+   hun mærked det klart.
+   Hun skyndte sig fremad
+   med stærkere Fart.
+
+   Hvad ogsaa hun vilde
+   i Skoven saa silde?
+
+   Saa <w>nu</w> fôr hun vild!
+
+   Et bundløst Føre
+   af Mose og Slam,
+   hvor hun vendte sig hen!
+
+   Hvad skulde hun gøre?
+   Hun kaldte paa <w>den,</w>
+   hun ej før vilde høre.
+
+   En frygtelig Skam!
+
+   Hun lytted. Forgæves!
+   han vilde ej svare.
+   Kun Skridtene lød.
+   Der var virkelig Fare!
+
+   Men saa var det ham.
+
+   Og hun kasted sig til ham
+   og følte sig tryg
+   og pludred og skændte
+   og kaldte ham styg.
+   Og hun kyssed ham selv
+   baade én Gang og to.
+
+   Pan sad og lo.
+   Der kan ingen gaa fri
+   for hans Drilleri.
+
+Han lo, og han fanged og kyssed
+en Nymfe, som just kom forbi.
 </body>
 </poem>
 
 <poem id="claussen2003052606">
 <head>
-   <title>Faldende Sne</title>
-   <toctitle>Faldende Sne</toctitle>
-   <indextitle>Faldende Sne</indextitle>
+   <title>Faldende Sné</title>
+   <toctitle>Faldende Sné</toctitle>
+   <indextitle>Faldende Sné</indextitle>
    <firstline>I tætnende Hvidhed</firstline>
-   <quality>korrektur1</quality>
+   <source pages="44-48"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-I tætnende Hvidhed, 
-lette, legende 
-hvirvles vi, falder 
-med lydløs Blidhed 
+I tætnende Hvidhed,
+lette, legende
+hvirvles vi, falder
+med lydløs Blidhed
 
-som Døgnfluer sarte, 
-hvis Puppe springer, 
-som Sommerfugle 
-med vide Vinger, 
+som Døgnfluer sarte,
+hvis Puppe springer,
+som Sommerfugle
+med vide Vinger,
 
-end mere tyst 
-end en elskende Kvindes 
-Taarer, som rinder; 
-blødere, ømmere 
+end mere tyst
+end en elskende Kvindes
+Taarer, som rinder;
+blødere, ømmere
 endnu, end hendes
-Hænder berører 
-den elskedes Kinder. 
+Hænder berører
+den elskedes Kinder.
 
-Vi drysses, 
-vi drysses 
-som hvide Krystaller. 
+Vi drysses,
+vi drysses
+som hvide Krystaller.
 
-Hvert Fodtrin, som gjalder, 
-skal dæmpes, 
+Hvert Fodtrin, som gjalder,
+skal dæmpes,
 skal tie,
-skal tysses. 
+skal tysses.
 
-Hvirvlende, tætnende, 
-legende, kæmpende 
-dækker vi Jorden 
-dunbløde, dæmpende. 
+Hvirvlende, tætnende,
+legende, kæmpende
+dækker vi Jorden
+dunbløde, dæmpende.
 
 <nonum>- - - - - - -</nonum>
 
-En Ørken, et Øde 
-vi svæver i Møde 
+En Ørken, et Øde
+vi svæver i Møde
 
-- plukket af Vinden 
+- plukket af Vinden
 den skarpe og skingrende,
-isnet af Frosten 
-den klare og klingrende; 
-med Grene og Kviste, 
-knækkede, strø'de 
-blandt ligblege, døde, 
-stivnede Blade. 
+isnet af Frosten
+den klare og klingrende;
+med Grene og Kviste,
+knækkede, strø'de
+blandt ligblege, døde,
+stivnede Blade.
 
-Et klirrende Ekko 
-fra tusende Steder, 
-mens hulkende Bækken 
-bag Isen græder. - 
+Et klirrende Ekko
+fra tusende Steder,
+mens hulkende Bækken
+bag Isen græder. -
 
-Græd ej! 
-Vi vil lægge 
-os skærmende lune, 
-at Frost skal ej saare. 
+Græd ej!
+Vi vil lægge
+os skærmende lune,
+at Frost skal ej saare.
 
-Græd ej! Vi vil dække 
-det skarpe og haarde. 
+Græd ej! Vi vil dække
+det skarpe og haarde.
 
 <nonum>- - - - - - -</nonum>
 
 Saa spredes vi ud,
-saa svæve vi ned, 
-drysse og glide 
-tætnende, skinnende, 
+saa svæve vi ned,
+drysse og glide
+tætnende, skinnende,
 blændende, blindende
-alt med vor hvide 
-Uendelighed. 
+alt med vor hvide
+Uendelighed.
 
-Fnug efter Fnug, 
-Flok efter Flok, 
-fra Skyernes Vugge 
-kredsende fri 
+Fnug efter Fnug,
+Flok efter Flok,
+fra Skyernes Vugge
+kredsende fri
 - til af vort Flagreliv vi
-trættede daler, 
-lader os fange, 
-lader os lukke 
-i Massernes Hav. 
+trættede daler,
+lader os fange,
+lader os lukke
+i Massernes Hav.
 
-Der ligger vi, venter 
-i stille Fryd 
-uden Mæle og Lyd, 
-mens tættere sammen 
-vi trænges, vi knuges 
-og presses og æltes 
+Der ligger vi, venter
+i stille Fryd
+uden Mæle og Lyd,
+mens tættere sammen
+vi trænges, vi knuges
+og presses og æltes
 
-og endelig smæltes. 
+og endelig smæltes.
 
-Saa svinder vi, siver 
-i Jordens Grav. 
+Saa svinder vi, siver
+i Jordens Grav.
 
 <nonum>- - - - - - -</nonum>
 
-Vi snurrer, vi kredser, 
+Vi snurrer, vi kredser,
 vi svinger os rundt fra
-Skyernes Vugge 
-til Jordfladens Grav, 
-med tætnende Hvidhed, 
-med lydløs Blidhed, 
+Skyernes Vugge
+til Jordfladens Grav,
+med tætnende Hvidhed,
+med lydløs Blidhed,
 lette og legende.
 </body>
 </poem>
@@ -1071,23 +1095,24 @@ lette og legende.
    <toctitle>En Fabel</toctitle>
    <indextitle>En Fabel</indextitle>
    <firstline>Da et Parti begyndte at nærme sig Døden</firstline>
-   <quality>korrektur1</quality>
+   <source pages="49-50"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Da et Parti begyndte at nærme sig Døden
 og det saa nødig endnu vilde skilles ved Livet,
-bad det til Gud, om <i>han</i> vilde hjælpe i Nøden,
+bad det til Gud, om <w>han</w> vilde hjælpe i Nøden,
 ligesom fordum han havde det Livskraften givet.
-,,Nej,'' svared Gud. Man betragtede raadvild hinanden.
+«Nej,» svared Gud. Man betragtede raadvild hinanden.
 Saa blev dets Formand bemyndiget at gaa til Fanden.
 
 Ved Audiensen tog Satanas venlig imod ham,
 takked for sidst og bønfaldt ham bare at tale,
 mens han forsikred ham om, at til Tjeneste stod ham
-alt, hvad der afhang af <i>ham</i> ... han kunde befale!
+alt, hvad der afhang af <w>ham</w> ... han kunde befale!
 
 Formanden talte. Hr. Satanas strøg sig om Hagen:
-,,Hm! jeg maa sé Deres Folk, før jeg dømmer i Sagen.''
+«Hm! jeg maa sé Deres Folk, før jeg dømmer i Sagen.»
 
 Saa blev Partiet da mønstret paa ottende Dagen.
 Alt, hvad der var af forældet, stagnéret Berømthed,
@@ -1095,17 +1120,17 @@ alt, hvad der fandtes af privilegéret Forsømthed,
 Blomsten, de ædleste, ældste, i Trop arrivérte:
 Krigsmænd og Fredsvenner, Lægfolk og Folk, som studérte,
 store Grossister og smaa bitte lærde Doktorer,
-,,Raader'' og ,,Naader'' og Højesterets Assessorer.
+«Raader» og «Naader» og Højesterets Assessorer.
 
 Satanas grunded og kløede sig bag sit Øre:
-,,Undskyld, Hr. Formand! med <i>dem</i> kan jeg ingen Ting gøre.'' 
+«Undskyld, Hr. Formand! med <i>dem</i> kan jeg ingen Ting gøre.»
 
-,,Aa, men saa sé dog! Kan nogen vel ønske sig mere?
-alt, hvad vort Land af Ærværdighed, Rang kan præstere,''
+«Aa, men saa sé dog! Kan nogen vel ønske sig mere?
+alt, hvad vort Land af Ærværdighed, Rang kan præstere,»
 svarede Formanden angst, med veltalende Tunge.
 
-,,Ja, gode Mand!'' sagde Fanden.
-,,Men hvor er de unge?''
+«Ja, gode Mand!» sagde Fanden.
+«Men hvor er de unge?»
 </body>
 </poem>
 
@@ -1115,11 +1140,10 @@ svarede Formanden angst, med veltalende Tunge.
    <toctitle>Manna</toctitle>
    <indextitle>Manna</indextitle>
    <firstline>Der er en Legende om Manna</firstline>
-   <quality>korrektur1</quality>
+   <source pages="51-53"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <notes>
-      <note>
-         Se <xref bibel="bibel2mose16,14"/>ff og <xref bibel="bibel4mose11,4"/>ff.
-     </note>
+      <note>Se <xref bibel="bibel2mose16,14"/>ff og <xref bibel="bibel4mose11,4"/>ff.</note>
    </notes>
 </head>
 <body>
@@ -1140,7 +1164,7 @@ et Rygte til Arne, til Kro,
 til Kræmmerens Disk og til Ploven,
 hvor Bonden holdt stille og lo.
 
-De saa under aandeløs Svimlen <note>saa] saâ</note>
+De saâ under aandeløs Svimlen
 et Kæmpeliv stige af Grav
 og hilste, med Fanen fra Himlen,
 paa Friheden, Kongen dem gav.
@@ -1152,7 +1176,7 @@ som Frihedens Undergang spaar.
 
 Se Bladene bruse og flagre,
 og Solen gør salig og ør:
-  Nu dæmrer for Danmark, det fagre,
+Nu dæmrer for Danmark, det fagre,
 en Stortid, som aldrig dør. -
 
 Men Tiderne komme og svinde
@@ -1171,7 +1195,7 @@ som faa vilde tro og forstaa.
 den tænker saa ofte jeg paa.
 
 Der er en Legende om Manna
-- paa <i>én</i> Nat gik Orm i dens Sné
+- paa <w>én</w> Nat gik Orm i dens Sné
 fortræffelig at faa Forstand af,
 om ikke just lystig at sé.
 
@@ -1185,7 +1209,8 @@ om ikke just lystig at sé.
    <toctitle>Hilsen</toctitle>
    <indextitle>Hilsen</indextitle>
    <firstline>Har I hørt, vort Folk er uden Ære</firstline>
-   <quality>korrektur1</quality>
+   <source pages="54-55"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <notes>
    <note>* Til Studentersamfundet ved Besøget hos Horsens Bønder i Sommeren 1886.</note>
    </notes>
@@ -1216,13 +1241,13 @@ som har foldet Frihedsfanen ud.
 Vi hinanden fandt i Kampens Trængsel,
 og et fælles Had os knytted nær.
 Fremad nu i fælles Haab og Længsel
-vandrer en forynget Frihedshær. 
+vandrer en forynget Frihedshær.
 </body>
 </poem>
 
-<section> <!-- Dette burde være en group  -->
+<section id="claussen2019020501" level="2">
 <head>
-    <toctitle>Antonius Gynt</toctitle>
+    <title>Antonius Gynt</title>
     <indextitle>Antonius Gynt</indextitle>
     <subtitle>- junge Leiden</subtitle>
 </head>
@@ -1230,11 +1255,10 @@ vandrer en forynget Frihedshær.
 
 <poem id="claussen2003060103">
 <head>
-   <title>Drømme</title>
-   <toctitle><num>I.</num>Drømme</toctitle>
-   <indextitle>Drømme</indextitle>
+   <title><num>I.</num>Drømme</title>
    <firstline>Der er sunget om Drømme i duftrige Ord</firstline>
-   <quality>korrektur1</quality>
+   <source pages="56"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Der er sunget om Drømme i duftrige Ord.
@@ -1250,25 +1274,25 @@ udbrændt i Drømmenes Helvedflammer.
 
 <poem id="claussen2003060104">
 <head>
-   <title>Vision</title>
-   <toctitle><num>II.</num>Vision</toctitle>
-   <indextitle>Vision</indextitle>
+   <title><num>II.</num>Vision</title>
    <firstline>De kommer i alle mulige Stillinger</firstline>
-   <quality>korrektur1</quality>
+   <source pages="57"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+   <keywords>bjoernson</keywords>
 </head>
 <body>
 <nonum><right><small>Mændene fra de hundrede Favntag.</small></right></nonum>
 <nonum><right><small><i>B. Björnson</i></small></right></nonum>
 
 De kommer i alle mulige Stillinger
-uden og <i>med</i> Audiens-Bevillinger;
+uden og <w>med</w> Audiens-Bevillinger;
 aldrig de samme, der skiftes med ti,
 ja tyve - et aandeligt Flerkoneri.
 
 En Æsel i Tanker, men from i det vigtige
 gør jeg det anerkendt éneste rigtige.
 Kommer det bare paa Gærninger an!
-jeg er fuldkommengjort i <i>katholsk</i> Forstand.
+jeg er fuldkommengjort i <w>katholsk</w> Forstand.
 
 Med Teologer endog kan jeg klare mig.
 Dog for en Tvivl kan ej altid jeg bare mig,
@@ -1279,11 +1303,10 @@ saa er det dog Vold mod Vorherres Natur.
 
 <poem id="claussen2003060105">
 <head>
-   <title>Det værste</title>
-   <toctitle><num>III.</num>Det værste</toctitle>
-   <indextitle>Det værste</indextitle>
+   <title><num>III.</num>Det værste</title>
    <firstline>Hvad er vel saa tungt at erindre</firstline>
-   <quality>korrektur1</quality>
+   <source pages="59-60"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <nonum><right><small>Die Erdbeere, die ich stehen liess,</small></right></nonum>
@@ -1300,20 +1323,19 @@ en uopkrævet Værdi!
 at dér har man gaaet og gabet,
 mens Lykken spasérte forbi!
 
-For Pigen er <i>dog</i> bleven svanger,
+For Pigen er <w>dog</w> bleven svanger,
 kun var der en anden til Fa'r.
 - O dette er værre end Anger
-af alle de Synder, man <i>har</i>!
+af alle de Synder, man <w>har</w>!
 </body>
 </poem>
 
 <poem id="claussen2003060106">
 <head>
-   <title>Sommervarme</title>
-   <toctitle><num>IV</num>Sommervarme</toctitle>
-   <indextitle>Sommervarme</indextitle>
+   <title><num>IV</num>Sommervarme</title>
    <firstline>Det var Middag; drivende Hede</firstline>
-   <quality>korrektur1</quality>
+   <source pages="61-64"/>
+   <quality>korrektur1,korretur2</quality>
 </head>
 <body>
 <nonum><right><small>- frech und froh.</small></right></nonum>
@@ -1338,7 +1360,7 @@ med en stinkende Grøft, der er frodig bevokset
 af tilstøvet grønt og soltørre Nælder,
 ind gennem Anlægets kølige Lys,
 forbi en Knøs, som har siddet og blundet,
-naar jeg til Højen, hvor opløst jeg segner<note>naar] naâr</note>
+naâr jeg til Højen, hvor opløst jeg segner
 ned paa en Bænk
              og sér over Sundet.
 
@@ -1358,14 +1380,14 @@ Men ingen moderne, nej ukultivéret!
 - vor Halvkultur har dem bare spoléret.
 
 Sydlandsk, romansk? ... dog, heller ikke.
-Om <i>dem</i> saa længe man havde snakket,
+Om <w>dem</w> saa længe man havde snakket,
 at de var skillet ved Nyhedsglansen.
 Sydlandsk, romansk! jeg mig betakked
 for disse funklende Olietryks-Blikke.
 
 Nej, vild, barbarisk! en Steppens Pige.
 Sort eller hvid? - havde mindre at sige.
-Men vild som den vildeste, kaad som den kaadeste. 
+Men vild som den vildeste, kaad som den kaadeste.
 
   Jeg drog gennem Ørknen i brændende Hede
 - en Dag som i Dag!
@@ -1390,11 +1412,10 @@ Hvor kan ên tænke dydig?
 
 <poem id="claussen2003060107">
 <head>
-   <title>Forbandelse</title>
-   <toctitle><num>V.</num>Forbandelse</toctitle>
-   <indextitle>Forbandelse</indextitle>
+   <title><num>V.</num>Forbandelse</title>
    <firstline>Den Teolog gad jeg dømme til at hænges</firstline>
-   <quality>korrektur1</quality>
+   <source pages="65"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Den Teolog gad jeg dømme til at hænges,
@@ -1416,12 +1437,11 @@ Jer Lære har Skyld, at jeg blev til en Løgn.
 
 <poem id="claussen2003060108">
 <head>
-   <title>Nye Piger</title>
-   <toctitle><num>VI.</num>Nye Piger</toctitle>
+   <title><num>VI.</num>Nye Piger</title>
    <subtitle>Et Resultat</subtitle>
-   <indextitle>Nye Piger</indextitle>
    <firstline>Nævn mig dine Drømme!</firstline>
-   <quality>korrektur1</quality>
+   <source pages="66-70"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nævn mig dine Drømme!
@@ -1429,7 +1449,7 @@ Hvorfor er det, dit Hjærte banker?
 Blodet skriger -
 sig mig dine viltre Tanker.
 
-Hvad er hundrede Kys af <i>ét</i> Par Læber
+Hvad er hundrede Kys af <w>ét</w> Par Læber
 mod at kysse hundrede Piger?
 - -
 
@@ -1453,7 +1473,7 @@ Saa du Blomsten, som pranger i Græsset,
 den fine Blomst med de dugfriske Farver?
 - Viol, Anemone, Mimose,
 den hvide Lilje, den røde Rose.
-Der kommer en Fod og tramper den ned. 
+Der kommer en Fod og tramper den ned.
 
   Sønderknust, som for evig knækket
 ligger den paa den urene Jord.
@@ -1471,25 +1491,26 @@ Bestandig den higer mere forvoven,
 med blomstrende Fylde,
 med angstfuld Pragt,
 letter sig frem paa Taaen og skriger:
-,,Nye Piger! nye Piger!''
+«Nye Piger! nye Piger!»
 
-Hvad er hundrede Kys af <i>ét</i> Par Læber
+Hvad er hundrede Kys af <w>ét</w> Par Læber
 mod at kysse hundrede Piger?
 
 Hans Læber dirrer, hans Pulse hamrer,
 han sidder i tunge Drømme.
 Han vrider Hænderne vildt og jamrer:
-,,Hundred Sonater for en Pige!
-Nye Piger! nye Piger!''
+«Hundred Sonater for en Pige!
+Nye Piger! nye Piger!»
 
 Han smiler stille vemodig:
-,,Min gamle Pige er sød til visse,
+«Min gamle Pige er sød til visse,
 altid skal jeg takke hende,
-<i>hende</i> skal jeg aldrig forlade!
+<w>hende</w> skal jeg aldrig forlade!
 Men en Pige til, blot en eneste!
 O, jeg kunde græde bitterlig
 - at Skæbnen kan nægte
-saa ringe, uskyldig en Glæde!''
+saa ringe, uskyldig en Glæde!»
+- -
 
 Vore fromme Ønsker,
 Skæbnen nægter dem aldrig.
@@ -1529,9 +1550,9 @@ en duftfyldt Damp.
 Han stirrede anstrængt i Natten,
 naar brusende Klæder og trippende Fodtrin lød,
 og sukked og hvisked bestandig:
-,,Jeg giver hundred Sonater,
+«Jeg giver hundred Sonater,
 hundrede skønne Sonater,
-blot for en eneste Pige til!''
+blot for en eneste Pige til!»
 </body>
 </poem>
 
@@ -1544,7 +1565,8 @@ blot for en eneste Pige til!''
    <toctitle>Raadløs</toctitle>
    <indextitle>Raadløs</indextitle>
    <firstline>Jeg tænkte paa hende den lange Dag</firstline>
-   <quality>korrektur1</quality>
+   <source pages="71-72"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg tænkte paa hende den lange Dag.
@@ -1563,7 +1585,7 @@ Jeg skælver som Strandbredens svajende Siv
 for Fortidens Spot
 og for Fremtidens Angst,
 til raadløs jeg knælende byder mit Liv -
-,,Aa hvis du, aa hvis du vil elske mig blot!''
+«Aa hvis du, aa hvis du vil elske mig blot!»
 
 <nonum><right><i>27.7.86</i></right></nonum>
 </body>
@@ -1575,7 +1597,8 @@ til raadløs jeg knælende byder mit Liv -
    <toctitle>Maaneskin</toctitle>
    <indextitle>Maaneskin</indextitle>
    <firstline>I maaneblændet Drøm det tavse Sund</firstline>
-   <quality>korrektur1</quality>
+   <source pages="73"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 I maaneblændet Drøm det tavse Sund
@@ -1588,7 +1611,7 @@ søvnløs, mens Verden ligger dum-forsovet.
 Det brænder mig som Ild, naar i min Drøm
 jeg sér dit blide Smil, dit lyse Hoved.
 
-Aléne gaar jeg. Hvorfor kom ej <i>du?</i>
+Aléne gaar jeg. Hvorfor kom ej <w>du?</w>
 og blot et Ord mig kunde dulme Sorgen!
 Alene vaagen venter jeg med Gru
 paa Længslens lange Marterdag i Morgen.
@@ -1603,7 +1626,8 @@ paa Længslens lange Marterdag i Morgen.
    <toctitle>Første Gang</toctitle>
    <indextitle>Første Gang</indextitle>
    <firstline>Jeg trykked dine hvide Hænder</firstline>
-   <quality>korrektur1</quality>
+   <source pages="74-75"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg trykked dine hvide Hænder
@@ -1627,13 +1651,13 @@ Det var mig nok
 dine Læbers Kys,
 dine Øjnes Glans at drikke.
 
-Man taler om <i>flammende</i> Blikke -
-<i>Dit</i> mørke Blik
+Man taler om <w>flammende</w> Blikke -
+<w>Dit</w> mørke Blik
 vided sig, ebbed
 som smæltet Metal.
 
 Det var første Gang,
-mit Blod saa ungt. 
+mit Blod saa ungt.
 
 Jeg kyssed dig atter
 saa trykkende tæt.
@@ -1642,7 +1666,7 @@ var Klage, var Sang.
 Mit Hjærte blev let,
 mens mit Hoved gled tungt
 til dit Bryst.
-Og jeg tror, at jeg helst havde grædt. 
+Og jeg tror, at jeg helst havde grædt.
 </body>
 </poem>
 
@@ -1652,7 +1676,8 @@ Og jeg tror, at jeg helst havde grædt.
    <toctitle>Spøgelsesfrygt</toctitle>
    <indextitle>Spøgelsesfrygt</indextitle>
    <firstline>Vi talte om Spøgelser, husker du vel?</firstline>
-   <quality>korrektur1</quality>
+   <source pages="76"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Vi talte om Spøgelser, husker du vel?
@@ -1668,7 +1693,7 @@ et Smil, som bær' Balsam for Suk og for Saar.
 Bort Overtro, Genfærd og Spøgelsesfrygt!
 De blændende Fingre om Nakken mig flæt!
 Jeg vil løfte dig op, jeg er ør og forrykt,
-og bære dig bort, du er dunblød og let. 
+og bære dig bort, du er dunblød og let.
 </body>
 </poem>
 
@@ -1678,7 +1703,8 @@ og bære dig bort, du er dunblød og let.
    <toctitle>Dine Kys er imod dig</toctitle>
    <indextitle>Dine Kys er imod dig</indextitle>
    <firstline>Du forsikrer mig, søde!</firstline>
-   <quality>korrektur1</quality>
+   <source pages="77-79"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Du forsikrer mig, søde!
@@ -1710,10 +1736,9 @@ snirklende klynger sig.
 
 Det er saa grønnende tæt i Løvet,
 det skjuler Druernes Klaser for Øjet.
-Men den, som er øvet, 
+Men den, som er øvet,
 ser mellem Bladene
 Druerne gløde.
-
 - -
 
 Du forsikrer mig, søde!
@@ -1734,7 +1759,7 @@ Jeg føler i Kysset,
 hvorledes det snehvide smælter i Sjælen.
 Jeg føler i Kysset,
 at Drømmenes blodrøde Slanger
-dig stikker i Hælen. 
+dig stikker i Hælen.
 </body>
 </poem>
 
@@ -1744,7 +1769,8 @@ dig stikker i Hælen.
    <toctitle>Anka! Anka!</toctitle>
    <indextitle>Anka! Anka!</indextitle>
    <firstline>Anka! Anka! søvnløs éne</firstline>
-   <quality>korrektur1</quality>
+   <source pages="80"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Anka! Anka! søvnløs éne
@@ -1758,7 +1784,7 @@ har du gjort mod mig, du søde,
 du, hvis Favn har Ild for to,
 du, hvis unge, marmorrene
 Barm kan skænke salig Ro
-- at du lod mig søvnløs éne! 
+- at du lod mig søvnløs éne!
 </body>
 </poem>
 
@@ -1768,30 +1794,31 @@ Barm kan skænke salig Ro
    <toctitle>Der slumred i dit Blik ...</toctitle>
    <indextitle>Der slumred i dit Blik ...</indextitle>
    <firstline>Der slumred i dit Blik, i Nat vi skiltes</firstline>
+   <source pages="81"/>
    <quality>korrektur1</quality>
 </head>
 <body>
 Der slumred i dit Blik, i Nat vi skiltes,
-et sløret <i>noget</i>, som ej blev til noget.
+et sløret <w>noget</w>, som ej blev til noget.
 - Græd for en Jomfrunat, hvis Skønhed spildtes!
 
-<nonum><center>*</center></nonum>
+<nonum><center>* * *</center></nonum>
 
 Det er, som vilde du i Kys beruse dig.
-Hvad vil du, Skat? - ,,Ja hvad skal jeg vel gøre?
-... jeg ved ej, men jeg kunde ... kunde knuse dig.''
+Hvad vil du, Skat? - «Ja hvad skal jeg vel gøre?
+... jeg ved ej, men jeg kunde ... kunde knuse dig.»
 
-<nonum><center>*</center></nonum>
+<nonum><center>* * *</center></nonum>
 
 Ja, du er Nonne, snehvidsløret Nonne,
 et Himmelsuk er Mundens sagte Aande;
-og <i>jeg</i> er Munk - men lider Helvedvaande.
+og <w>jeg</w> er Munk - men lider Helvedvaande.
 
-<nonum><center>*</center></nonum>
+<nonum><center>* * *</center></nonum>
 
 Nu skingrer alle Landets Sangerlærker
 af sorgsort-vemodsvægtig Sjæleklemme,
-mens bare jeg af jordisk Elskov værker. 
+mens bare jeg af jordisk Elskov værker.
 </body>
 </poem>
 
@@ -1801,7 +1828,8 @@ mens bare jeg af jordisk Elskov værker.
    <toctitle>Efteraarsdigt</toctitle>
    <indextitle>Efteraarsdigt</indextitle>
    <firstline>Det er tusendfarvet broget</firstline>
-   <quality>korrektur1</quality>
+   <source pages="82-83"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Det er tusendfarvet broget
@@ -1829,7 +1857,7 @@ nye finde.
 Græd ej! lad det faldne trædes
 under Fødder.
 Vær du, elskede, nu ogsaa
-min Veninde! 
+min Veninde!
 </body>
 </poem>
 
@@ -1839,7 +1867,8 @@ min Veninde!
    <toctitle>Et Farvel</toctitle>
    <indextitle>Et Farvel</indextitle>
    <firstline>Det var, som Solen brød igennem Taagen</firstline>
-   <quality>korrektur1</quality>
+   <source pages="84-85"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>sonnet</keywords>
 </head>
 <body>
@@ -1863,7 +1892,7 @@ ved Kys, som sveg det bedste inderst inde.
 
 Saa lad mig være Mand! - ej kæle, bede.
 Vort Leje er jo grønt, behængt med Ranker,
-og du er dejlig, dejlig, min Veninde! 
+og du er dejlig, dejlig, min Veninde!
 </body>
 </poem>
 
@@ -1873,7 +1902,8 @@ og du er dejlig, dejlig, min Veninde!
    <toctitle>I Drift</toctitle>
    <indextitle>I Drift</indextitle>
    <firstline>Nu glider jeg saa jævnt af Sted -</firstline>
-   <quality>korrektur1</quality>
+   <source pages="86-87"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nu glider jeg saa jævnt af Sted -
@@ -1910,7 +1940,8 @@ i Vinterlys, ved Lygteskin.
    <toctitle>Aftenskumring</toctitle>
    <indextitle>Aftenskumring</indextitle>
    <firstline>Mørket falder</firstline>
-   <quality>korrektur1</quality>
+   <source pages="88-92"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Mørket falder,
@@ -1941,7 +1972,7 @@ saa sidder jeg ene i Natten,
 ene med tomme Arme og brændende Læber,
 som minder om dig, fordi de længes,
 fordi de lider
-i Længsel mod dig. 
+i Længsel mod dig.
 
 Anka! Anka!
 O var du hos mig!
@@ -2006,7 +2037,7 @@ en Dag i Vaar, den store Dag.
 Sjælens syngende Dag
 og Støvets hellige Nat!
 
-Til <i>da</i> vil jeg længes mig frem
+Til <w>da</w> vil jeg længes mig frem
 gennem øde, henflagrende Dage,
 gennem tavse, susende Nætter.
 
@@ -2022,7 +2053,8 @@ Du tog mig med stærke Arme.
    <toctitle>I Marts</toctitle>
    <indextitle>I Marts</indextitle>
    <firstline>Skal jeg mon rejse? skal jeg mon blive?</firstline>
-   <quality>korrektur1</quality>
+   <source pages="93-94"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Skal jeg mon rejse? skal jeg mon blive?
@@ -2034,7 +2066,7 @@ selv har jeg købt en Buket Violer.
 Himmelblaa Vaar, og Violerne dufter,
 ikke en isnende Trækvind lufter.
 
-Endelig <i>nu</i> er vel Vinteren omme?
+Endelig <w>nu</w> er vel Vinteren omme?
 foraarsberuset hun venter mit Komme ...
 
 En hvileløs Nat i en mørk Kupé;
@@ -2053,7 +2085,7 @@ Jeg vented paa Foraar i tvende Dage,
 og isnet jeg drog gennem Snéen tilbage.
 
 Stormkolde Marts! dit Sollys har sveget
-én, som har elsket og hadet for meget. 
+én, som har elsket og hadet for meget.
 
 Jævndøgnet tungt med sin Snevægt skrider ...
 Der mærkes dog Tegn til Foraar omsider.
@@ -2066,7 +2098,8 @@ Der mærkes dog Tegn til Foraar omsider.
    <toctitle>Friskt Vejr</toctitle>
    <indextitle>Friskt Vejr</indextitle>
    <firstline>Flokkende Skymasser drive</firstline>
-   <quality>korrektur1</quality>
+   <source pages="95-96"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Flokkende Skymasser drive
@@ -2094,7 +2127,7 @@ blotter de røde-blaa Strømper
 Og over de smilende Øjne
    Lokkerne glattes og Sløret sig snor.
 - <i>Lilla fru!</i> kan du synge en Bellmann?
-   syng den om ,,Jomfru'mord''! <note>Henvisning til <xref poem="bellman2001061325"/>, str. 5.</note>
+   syng den om «Jomfru'mord»! <note>Henvisning til <xref poem="bellman2001061325"/>, str. 5.</note>
 
 De skæreste Jomfruer <i>myrdes,</i>
    des sødere Tilgang i Fruernes Ring;
@@ -2102,27 +2135,25 @@ det er i den syndige Verden
    den allernaturligste Ting.
 Er Vejret kun friskt for inden,
    saa friskt som en Blæst paa den græsgrønne Jord
-- <i>lilla fru!</i> da kan Jomfruer ,,myrdes'',
+- <i>lilla fru!</i> da kan Jomfruer «myrdes»,
    og Skaden er aldrig saa stor.
 
 <nonum><right><i>20.5.87</i></right></nonum>
 </body>
 </poem>
 
-<section> <!-- Dette burde være en group  -->
+<section id="claussen2019020502" level="2">
 <head>
-    <toctitle>Nymennesker</toctitle>
-    <indextitle>Nymennesker</indextitle>
+    <title>Nymennesker</title>
 </head>
 <content>
 
 <poem id="claussen2003060123">
 <head>
-   <title>Tidsbillede</title>
-   <toctitle><num>I.</num>Tidsbillede</toctitle>
-   <indextitle>Tidsbillede</indextitle>
+   <title><num>I.</num>Tidsbillede</title>
    <firstline>Jeg tror, for tidlig Hanerne gol</firstline>
-   <quality>korrektur1</quality>
+   <source pages="97"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg tror, for tidlig Hanerne gol;
@@ -2141,11 +2172,10 @@ og falder i Søvn med dyb Foragt.
 
 <poem id="claussen2003060124">
 <head>
-   <title>Hos de ventende</title>
-   <toctitle><num>II.</num>Hos de ventende</toctitle>
-   <indextitle>Hos de ventende</indextitle>
+   <title><num>II.</num>Hos de ventende</title>
    <firstline>Ingen skal trygle eller lade sig nøde</firstline>
-   <quality>korrektur1</quality>
+   <source pages="98-99"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ingen skal trygle eller lade sig nøde:
@@ -2158,7 +2188,7 @@ Kender du at staa til en Soldans paa Spring
 og se, der er Menneskemørke omkring!
 
 Menneskemørke og Gudemørke -
-mine nyfødte Sanser ulædsket tørke. 
+mine nyfødte Sanser ulædsket tørke.
 
 Mens endnu man sukker til falske Lyrer,
 staar vi med omskabte Hjærter og Nyrer,
@@ -2178,11 +2208,10 @@ paa Kredit af en Fremtid, vi ikke har skabt.
 
 <poem id="claussen2003060125">
 <head>
-   <title>Metamorfose</title>
-   <toctitle><num>III.</num>Metamorfose</toctitle>
-   <indextitle>Metamorfose</indextitle>
+   <title><num>III.</num>Metamorfose</title>
    <firstline>Om enkelte Arter</firstline>
-   <quality>korrektur1</quality>
+   <source pages="100-101"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Om enkelte Arter
@@ -2191,7 +2220,7 @@ at Livet de starter
 som Fiske, med Gæller;
 
 men snart de drømmer
-om <i>det</i>, som er større,
+om <w>det</w>, som er større,
 faar Lunger og rømmer
 op paa det tørre.
 
@@ -2203,7 +2232,7 @@ paa Metamorfosen.
 De tidligst slupne
 maa vente desværre.
 Det regner med knubne
-Ord til Vorherre. 
+Ord til Vorherre.
 
 Hvor de fuldvoksne Unger
 i Vandskorpen spræller!
@@ -2214,14 +2243,13 @@ og skal aande ved Gæller.
 
 <poem id="claussen2003060126">
 <head>
-   <title>Poesi</title>
-   <toctitle><num>IV.</num>Poesi</toctitle>
-   <indextitle>Poesi</indextitle>
+   <title><num>IV.</num>Poesi</title>
    <firstline>Luft ud den mugne Lugt af Blomster</firstline>
-   <quality>korrektur1,korrektur2</quality>
+   <source pages="102-104"/>
+   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
-<nonum><small><i>,,Altfor mange Blomster!''</i></small></nonum>
+<nonum><small><i>«Altfor mange Blomster!»</i></small></nonum>
 
 Luft ud den mugne Lugt af Blomster,
 de visne Roser, fej dem væk!
@@ -2249,7 +2277,7 @@ den sover paa en Seng af Roser,
 et Rosen-Genskin er dens Glød.
 
 Fortæl om Kød og Blod, fortæl os,
-hvorledes I for hende skjalv, 
+hvorledes I for hende skjalv,
   I havde haabet hélt at gribe,
 og som I kun fik eje halv.
 
@@ -2272,11 +2300,10 @@ de visne Roser, fej dem væk!
 
 <poem id="claussen2003060127">
 <head>
-   <title>Ungdom</title>
-   <toctitle><num>V.</num>Ungdom</toctitle>
-   <indextitle>Ungdom</indextitle>
+   <title><num>V.</num>Ungdom</title>
    <firstline>Vi lærte med Haanden mod Hjærtet</firstline>
-   <quality>korrektur1</quality>
+   <source pages="105-107"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Vi lærte med Haanden mod Hjærtet
@@ -2292,11 +2319,11 @@ Et ængsteligt Sind at besejre
 Du har jo et Liv at skabe;
    hvor kan du da tænke saa slapt?
 Den Dag, som du ikke har nyttet,
-   den har du for evig tabt. 
+   den har du for evig tabt.
 
 Tiden det er til at vente,
    naar Blodet er kølnet og tyndt.
-Men <i>den</i> har kun Stunder at hente,
+Men <w>den</w> har kun Stunder at hente,
    hvis Tid er næppe begyndt.
 
 Kan hænde vi tørster saa længe,
@@ -2328,12 +2355,11 @@ Kom ud! Endnu nogle salige
 
 <poem id="claussen2003060128">
 <head>
-   <title>Nymennesker</title>
+   <title><num>VI.</num>Nymennesker</title>
    <subtitle>Et Brev</subtitle>
-   <toctitle><num>VI.</num>Nymennesker</toctitle>
-   <indextitle>Nymennesker</indextitle>
    <firstline>Hvor vel til Mode følte jeg mig nede</firstline>
-   <quality>korrektur1</quality>
+   <source pages="108-112"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hvor vel til Mode følte jeg mig nede
@@ -2361,14 +2387,14 @@ om Himmelglans og hede Helvedstuer,
 om fromme Mænd, hvis sejge Kamp mod Kønnet
 og anden Verdenslast blev evig lønnet,
 og som - da deres Stand ej frembød bedre -
-erstatningsvis blev gjort til <i>Kirkens</i> ,,Fædre''.
+erstatningsvis blev gjort til <i>Kirkens</i> «Fædre».
 
 De havde fundet Djævlen saa forførende,
 at deres Modstandskraft blev dobbelt rørende.
 Vi ynked dem for deres Martyrkrans,
 - jeg som Forkynder af den sunde Sans,
-<i>Kathinka</i> med sit Smil og Grublerblik 
-og <i>Maleren</i> med sin Gemyt-Kritik.
+<w>Kathinka</w> med sit Smil og Grublerblik
+og <w>Maleren</w> med sin Gemyt-Kritik.
 Vi ynked dem for Lykken, som var slugt
 af Klostrets ørkesløse, strænge Tugt,
 og vilde skænke dem et Paradis
@@ -2386,48 +2412,48 @@ Vi sad og talte om <i>den nye Gud.</i>
 Om Ham, den Gud, som er i vore Nerver
 og styrer alt, skønt aldrig Sjælehverver!
 
-Kathinka sagde tyst: ,,I kan <i>forklare</i>
+Kathinka sagde tyst: «I kan <w>forklare</w>
 maaske, at alt er Nerver - Nerver bare!
 Men da maa vi jo ogsaa dø til sidst,
-og det er <i>det</i>, jeg føler er saa trist.
+og det er <w>det</w>, jeg føler er saa trist.
 Den Tanke var saa dulmende, saa skøn:
 at kunne bede Gud om Trøst og Løn;
 ti det er ensomt nok endda for ên,
-naar man skal staa paa sine egne Ben.''
+naar man skal staa paa sine egne Ben.»
 
 Jeg skulde til at svare just, men standsed,
 da Maleren, som tankefuld ej sandsed,
 tilbagestrakt - den højre Haand om Nakken,
 den venstre med Cigaren for paa Jakken -
-udbrød: ,,Mon der er Trøst for nogen Stymper,
+udbrød: «Mon der er Trøst for nogen Stymper,
 som ved sin Uformuenhed sig krymper?
-For <i>det</i> er Helved, mer end Svovl og Luer!
+For <w>det</w> er Helved, mer end Svovl og Luer!
 hvis man kan ingen Ting faa gjort, som duer.
-Dog, der er heller ingen Himmel til 
-som <i>det:</i> at have naaet, hvad man vil
+Dog, der er heller ingen Himmel til
+som <w>det:</w> at have naaet, hvad man vil
 ... at føle Evnerne ... at have taget
 paa Tingen - som en Mand, der kender Faget.
 Om der er noget Forsyn eller ikke,
 vor Kamp og Famlen lader det vel ligge.
-Kan ikke <i>selv</i> sin Tvivl man gøre klar,
+Kan ikke <w>selv</w> sin Tvivl man gøre klar,
 saa bli'r det Fusk ... selv <i>med</i> Orakelsvar!
 ... Naar man om Gengæld efter Døden taler,
-da maa i Paradis hver daarlig Maler.''
+da maa i Paradis hver daarlig Maler.»
 
 Han talte afbrudt, og han vedblev ømt,
-med dæmpet Stemme: ,,Jeg har altid drømt
+med dæmpet Stemme: «Jeg har altid drømt
 at finde én - en Kvinde - som vil dele
 min Sygelighed ... Glæde ... og det hele,
 og være Kammerat, naar ud jeg driver
-i Sjap og Sol og leder om Motiver.''
+i Sjap og Sol og leder om Motiver.»
 
 Han nikked til mig og betoned vist:
-,,Men du skal sé, jeg finder det til sidst!''
+«Men du skal sé, jeg finder det til sidst!»
 
 Med Armene i Kors og Smil om Munden
 Kathinka hvilte i forstenet Grunden.
 Saa vaagned hun og smilte stadig let:
-,,Ja det kan gærne være, De har Ret!''
+«Ja det kan gærne være, De har Ret!»
 
 Vi skælned snart ej tydelig hverandre,
 og tavse lod vi vore Tanker vandre
@@ -2447,11 +2473,10 @@ da stod den store Guddom midt iblandt os.
 
 <poem id="claussen2003060129">
 <head>
-   <title>Credo</title>
-   <toctitle><num>VII.</num>Credo</toctitle>
-   <indextitle>Credo</indextitle>
+   <title><num>VII.</num>Credo</title>
    <firstline>Der bølger Sollys om den grønne Sommer</firstline>
-   <quality>korrektur1</quality>
+   <source pages="113-114"/>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Der bølger Sollys om den grønne Sommer;
@@ -2459,10 +2484,10 @@ der trækker Skyer op til Styrteregn;
 der hujer Stormkast, Efteraaret kommer;
 der blænder Snedrys i den golde Egn;
 - i Sné og Storm, igennem Regnen, Solen,
-som digter <i>om</i> og gøgler med vor Jord,
+som digter <w>om</w> og gøgler med vor Jord,
 ulænket knejser end i Kongestolen
 den evige Natur.
-<right>Paa <i>den</i> jeg tror!</right>
+<right>Paa <w>den</w> jeg tror!</right>
 
 Det store Hav af Mennesker! som dønner
 med udslidt Skvulpen og med Brændingsbrag,
@@ -2472,7 +2497,7 @@ forliger sig og holder Dommedag;
 jeg tror, at dette Hav trods Pral og Ord
 vil frit i evig Bølgerinden ligge.
 
-<right>Paa <i>Livet</i>, Svaghedens Triumf, jeg tror!</right>
+<right>Paa <w>Livet</w>, Svaghedens Triumf, jeg tror!</right>
 
 Jeg tror paa god Natur. De friske Vinde
 skal hvirvle alle visne Løgne væk.
@@ -2482,7 +2507,7 @@ Den <i>evige</i> Natur, hvem intet saarer,
 hvem ingen Kvakler giver sin Bekomst,
 vil skænke Gudespot mod syge Taarer.
 
-<right>Og midt i <i>Døgnet</i> plukker jeg en Blomst.</right>
+<right>Og midt i <w>Døgnet</w> plukker jeg en Blomst.</right>
 </body>
 </poem>
 
@@ -2495,22 +2520,23 @@ vil skænke Gudespot mod syge Taarer.
    <toctitle>Til Alle</toctitle>
    <indextitle>Til Alle</indextitle>
    <firstline>Nu har I fulgt til disse sidste Blade</firstline>
+   <source pages="117-140"/>
    <keywords>aarestrup</keywords>
-   <quality>korrektur1</quality>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 I
 
 Nu har I fulgt til disse sidste Blade,
 hvad jeg har tænkt og drømt, har følt og <i>følet,</i>
-naar ,,jeg'' befandt sig vel og hented Varme
+naar «jeg» befandt sig vel og hented Varme
 fra røde Læber, lune, bløde Arme,
-naar <i>,,jeg''</i> i Tungsindsmoser maatte vade,
-naar ,,jeg'' var hæftig og til Vildskab rede,
-naar samme ,,jeg'' af Blæst og Frost forkølet
+naar <w>«jeg»</w> i Tungsindsmoser maatte vade,
+naar «jeg» var hæftig og til Vildskab rede,
+naar samme «jeg» af Blæst og Frost forkølet
 var bleven utilpas og følte Léde.
 
-Og dog fik <i>alle</i> ikke fuld Besked.
+Og dog fik <w>alle</w> ikke fuld Besked.
 
 Min Kritiker, som vel min Mening véd,
 (skønt kun ved Gætteri og saa omtrent)
@@ -2528,7 +2554,7 @@ vi klistrer op et Plankeværk Programmer.
 Ja det er Tidens Svaghed eller Styrke,
 skønt i vor Politik, i vore Blade
 dér vil man nødig, grumme nødig til det,
-men det er én Gang saa, at Folket vil det, 
+men det er én Gang saa, at Folket vil det,
 
 og stritte dérimod er bare Yrke.
 Saa tilstaar jeg, hvis det gør nogle glade,
@@ -2540,7 +2566,7 @@ Han er mig blot imod - saa ret imod,
 den Ordenens forretningsstive Ridder,
 der sidder som en Skranke for hver Fod,
 som vilde frem, for alt, hvad jeg forstod,
-for <i>det</i>, som ejer Livstrang, Ungdom, Blod,
+for <w>det</w>, som ejer Livstrang, Ungdom, Blod,
 - og Gud maa vide, af hvad Grund han sidder.
 
 Et Mandfolk uden Dyder eller Laster,
@@ -2576,11 +2602,11 @@ som de gad bære frem for egen Regning.
 
 At ej man længe trodser Slægtens Trang,
 at Slægtens Liv dog ingen kan faa Finger i,
-at nu vi staar, til Gengæld <i>siden</i> springer vi
+at nu vi staar, til Gengæld <w>siden</w> springer vi
 - hvad Trøst for os, som standsed denne Gang?
 
 I kommer spørgende: hvad de har gjort!
-en Ungdoms Kræfter spildt, er <i>det</i> ej stort?
+en Ungdoms Kræfter spildt, er <w>det</w> ej stort?
 
 Men kan af Skam en Draabe Blod ej brænde
 i disse Godtfolk, hvorfor skal jeg skænde?
@@ -2601,7 +2627,7 @@ til Synet for det Lys, jeg vil bekende.
 som Frugt af al vor store Politik.
 Døgnpolitiken, Pindehuggeriet,
 de tusend Draaber, som skal fylde Havet,
-- hvem har vel sét, at Folk af mine Lige 
+- hvem har vel sét, at Folk af mine Lige
 paa Poesiens høje Hønsestige
 ej stadig har om Døgnets Smaating tiet
 og følt for sligt sig altfor højt begavet?
@@ -2619,13 +2645,13 @@ forglemmer let det smaalig-virkelige.
 I deres Gyngen paa en luftig Gren,
 imens evindelig de gør Musik
 og sér, om Vaaren bliver snar, om sén,
-- hvor skulde <i>de</i> vel have faaet Blik
+- hvor skulde <w>de</w> vel have faaet Blik
 for noget som Detalje-Politik?
 
 Jeg altsaa om Detaljer lidet véd
 og har kun mine grønne Grene kær;
-og vil blot ikke <i>dem</i> man hugge ned ...!
-Men der er denne Snak om et ,,Par Trær''.
+og vil blot ikke <w>dem</w> man hugge ned ...!
+Men der er denne Snak om et «Par Trær».
 
 Det hænger noget sammen med en Hær,
 en Livssag for de folkehadte Troner:
@@ -2636,17 +2662,17 @@ at exercere ind en Slægt Kujoner.
 Det hænger sammen med en Slagter Lære,
 at Maalet for et Land er Krigerære.
 
-Hvor skulde <i>de</i> vel skaane et ,,Par Trær''?
-For Folk med Krigerære let kan hænde, 
+Hvor skulde <w>de</w> vel skaane et «Par Trær»?
+For Folk med Krigerære let kan hænde,
 at Skoven ej har større Værd end Brænde.
 Vi har jo vor Passion enhver for sig,
 og Krigeræren dvæler vistnok ej
 ved Blomster eller Skove paa sin Vej.
-Men Fremtidshaab og Minder ,,Skoven'' bær;
+Men Fremtidshaab og Minder «Skoven» bær;
 i alt Fald jeg
 vil nødig miste den, jeg har den kær.
 
-Med ,,Minder'' ej jeg mener Øhlenschlæger,
+Med «Minder» ej jeg mener Øhlenschlæger,
 hvis bedste Ungdomsmod sig her slog løs,
 ej Aarestrup, hvis Muse - denne Tøs,
 som næppe skattede et Kildebæger -
@@ -2654,9 +2680,9 @@ her viste Bentøj for hver lysten Knøs,
 ej Hejberg og de andre, Povl og Peter,
 som gærne gav sig ud at være Digter;
 for stor en Vægt ej ligger paa Poeter,
-det er til andre <i>Minder,</i> at jeg sigter.
+det er til andre <w>Minder,</w> at jeg sigter.
 
-Jeg tænker paa, at Skoven, ,,det Par Trær'',
+Jeg tænker paa, at Skoven, «det Par Trær»,
 har, rent personlig, Affektionens Værd.
 
 Ja rent privat for mig og for enhver
@@ -2670,7 +2696,7 @@ Slægt efter Slægt, lyksalig og bedrøvet,
 naar Solen sived gylden gennem Løvet,
 naar Taagesølvet bredte sig i Natten,
 har drømt i Bøgestamme Tystet inde
-og lét til Strandens Bølgeskvulp og Vinde. 
+og lét til Strandens Bølgeskvulp og Vinde.
 
 Slægt efter Slægt! det skal ej gaa af Minde.
 Og Slægt for Slægt skal nye Livshaab skinne
@@ -2679,7 +2705,7 @@ i dette Eden frem med Ungdoms Skær.
 Det var vel værd at tænke paa, at tunge
 fortrykte Sind har følt sig frie her.
 Og saa den Ting, at jeg og tusend unge
-har kysset første Gang bag ,,de Par Trær''.
+har kysset første Gang bag «de Par Trær».
 
 Jeg husker klart en Sti imellem Hasler;
 det var en Gang ... Men jeg til Sagen springer:
@@ -2690,7 +2716,7 @@ De Øxer for Systemet er symbolsk.
 Man søndrer Nationalitetens bløde Baand,
 der viser Folket dansk og ikke polsk,
 ej russisk, engelsk eller græsk katholsk
-- og <i>det</i>, skønt man med Gammeldom sig sminker,
+- og <w>det</w>, skønt man med Gammeldom sig sminker,
 indtil af Danskhed og Moral man stinker.
 Men hvad de vover - Glemselsøxen blinker
 bag denne <i>Junker Estrup med den døde Haand.</i>
@@ -2734,11 +2760,11 @@ mod Orgelstemninger og Kirkerøgelser,
 og som før Døden nød det sjældne Held
 at tage Livet af en god Del Spøgelser,
 fortælles der, at han blev spurgt en Gang
-om Gud og om, hvordan det sammen hang,
-naar <i>det,</i> som er af Støv, til Støv gik bort
+om <i>Gud</i> og om, hvordan det sammen hang,
+naar <w>det,</w> som er af Støv, til Støv gik bort
 og Sjælen paa en Vis var bleven Enke.
-Men Darwin svared: ,,Livet er saa kort;
-paa den Slags Ting har jeg ej Tid at tænke.''
+Men Darwin svared: «Livet er saa kort;
+paa den Slags Ting har jeg ej Tid at tænke.»
 
 En anden Tænker, ogsaa af de store,
 af dem, hvis klare Tvivlen Verden renser
@@ -2779,7 +2805,7 @@ I Leg den fødtes, vokste stærk i Kamp,
 skød lidt for rask til Vejrs i Drømmeblundet
 og stredes saa med Skuffelsernes Svamp,
 som havde dræbt den, hvis de havde kunnet.
-Saa laa den syg, men da den fik sig sundet, 
+Saa laa den syg, men da den fik sig sundet,
 steg klaret frem af Længslers Taagedamp
 <i>en Livsanskuelse paa Elskov grundet.</i>
 
@@ -2788,7 +2814,7 @@ man spørge om, at den er ganske blottet
 for al Moral - saa godt som nogen Røver!
 De skændige, som har sig sammenrottet
 og ærer hverken Kirken eller Slottet,
-kan <i>de</i> forstaa den Kærlighed, som skrumper
+kan <w>de</w> forstaa den Kærlighed, som skrumper
 i Oldemoderdydens Katakomber?
 De har jo Dydsbegreber, som ej skiller
 de svangre Koner fra de dito Friller,
@@ -2801,7 +2827,7 @@ Det kære, rare, gode, gamle Samfund!
 min Ven, hvad nærer du for Vanvids Tanker?
 Saa du vil lære dette sejge Trækdyr
 at sparke ud med sine stive Skanker!
-O søde Enfold, du vil reformere,
+O søde Énfold, du vil reformere,
 vil slaa som Samson med en Asenkæfte <note>Se <xref bibel="bibeldommer15,15-16"/></note>
 til vore patriotiske Filistre!
 Min Ven, hold heller op at fantasere.
@@ -2829,27 +2855,27 @@ Men læg ej paa de gamles Bedring Vægt;
 de sidder fast og rører sig ej mere.
 
 Den <i>unge, sunde Slægt</i> - ak hvilken Frase!
-Er <i>den</i> ej løs og mat, har den en Smule
+Er <w>den</w> ej løs og mat, har den en Smule
 jærnholdigt Blod, som end har Lyst at rase?
 Er ej vi alle bleven gustengule?
 Af Tidens lange Kævl, snart oppe, nede,
 er ej vi alle halv Vejs sløjfet hen?
 Hvad siger det, om vi er kolde, hede,
-om <i>nu</i> vi føler Glæde eller Vrede?
+om <w>nu</w> vi føler Glæde eller Vrede?
 i Morgen er vi rolige igen.
-Hos <i>os</i> er intet sejgt paa nær vor Léde,
-som er vor Dyd - vi har alene <i>den.</i>
+Hos <w>os</w> er intet sejgt paa nær vor Léde,
+som er vor Dyd - vi har alene <w>den.</w>
 
 En Kaste Kvinder og en Kaste Mænd,
 hvor Kvinderne er ét og Mænd et andet,
 maa slig en Slægt ej tørre bort i Sandet?
-<i>Han</i> er den stærke, <i>hun</i> det skøre Kar, <note>Se <xref bibel="bibel1peter03,7"/></note>
+<w>Han</w> er den stærke, <w>hun</w> det skøre Kar, <note>Se <xref bibel="bibel1peter03,7"/></note>
 han klog, men raa, hun dum, men hjærtedannet,
 - det er, som aldrig deres Blod var blandet
-og ikke af den samme Marv de var. 
+og ikke af den samme Marv de var.
 
 Naturligvis, bevare's! hvert et Køn
-har <i>sine</i> Finheder og <i>sit</i> det sære,
+har <w>sine</w> Finheder og <w>sit</w> det sære,
 ja uden Forbehold jeg vil erklære,
 at Kvinden fra Naturens Haand er skøn
 og taler mægtig til sit Ophavs Ære!
@@ -2881,11 +2907,10 @@ Husk Æblet falder ikke langt fra Stammen!
 
 Om <i>hun</i> og <i>han</i> I spørger, <i>hende, ham!</i>
 Hvorfor den dumme Snak? Og hvorfor dømmer
-I <i>det,</i> som taalelig for <i>ham</i> sig sømmer,
+I <w>det,</w> som taalelig for <w>ham</w> sig sømmer,
 hos <i>hende</i> som al Verdens Spot og Skam?
-
 Er det ej ligegyldigt: <i>han</i> og <i>hun?</i>
-At de er Mennesker, er <i>det</i> ej nok?
+At de er Mennesker, er <w>det</w> ej nok?
 Naar Tingen dog er éns, af hvilken Grund
 ej bruge én og samme Maalestok?
 
@@ -2893,7 +2918,7 @@ Af ét de kom, kun én er deres Bøn,
 at de faar Lov igen at blive ét.
 Naar en Begæring er saa from og skøn,
 bekymrer <i>han</i> og <i>hun</i> mig meget lidt:
-vi har kun <i>Fælleskøn</i> og <i>intet</i> Køn.
+vi har kun <i>Fælleskøn</i> og <w>intet</w> Køn.
 
 En <i>Livsanskuelse paa Elskov!</i> - Navnet
 har jeg desværre selv ej fundet paa -
@@ -2912,7 +2937,7 @@ og to og to de vandrer stærke, glade
 med Ungdomstrods og mere Blod end vi.
 Er blot de to, al Synd man skal forlade.
 - Jeg kalder ikke Kærligheden fri,
-jeg siger <i>to</i> og <i>to</i> - for visse Blade!
+jeg siger <i>to og to</i> - for visse Blade!
 
 For <i>visse Blade,</i> der, som andet mere,
 til den Tid længer ej vil existere.
@@ -2955,7 +2980,7 @@ en Kvinderøst i Latter skarp og raa.
 Og uklart ser jeg over Gaden skraa
 tre dansende Personer, hvoraf hun
 bestandig nynner, lér og bruger Mund
-og kalder en af Mændene sin ,,Frier''.
+og kalder en af Mændene sin «Frier».
 Betjenten retter paa sig, og de tier.
 
 Hvor passer disse tre forsorentglade
@@ -2990,9 +3015,9 @@ og kast dig ikke bort, før Hvirvlen ta'r dig!
 Men hvis sig hede Sommerlængsler spinde
 omkring en Kvinde, stærke som Musik,
 da grib, i Fald du kan, din Elskerinde
-- kan <i>du</i> vel svare for en daarlig Skik?
-Og er I uberørte - <i>unge</i> blot!
-det mindste, <i>det,</i> som skældes lavt og raat,
+- kan <w>du</w> vel svare for en daarlig Skik?
+Og er I uberørte - <w>unge</w> blot!
+det mindste, <w>det,</w> som skældes lavt og raat,
 vil faa et Skær af Helligdoms Mystik.
 
 Luk op, der banker paa en trodsig Hær
@@ -3000,7 +3025,7 @@ af friske Længsler, tvingende Begær.
 O lad os faa at sé en Slægt, som lér!
 
 - Saa vil de alle elske, én og hver,
-med <i>sin</i> Grad Varme og paa <i>sin</i> Manér.
+med <w>sin</w> Grad Varme og paa <w>sin</w> Manér.
 Og Sommernattens Alf, den glade Puk,
 vil skinsyg aande mer end tusend Suk.
 Slet intet skiller mer - ej Magt, ej List -

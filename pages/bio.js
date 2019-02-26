@@ -8,10 +8,8 @@ import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
-import PoetName, {
-  poetNameString,
-  poetLastNameString,
-} from '../components/poetname.js';
+import PoetName from '../components/poetname.js';
+import { poetNameString, poetLastNameString } from '../components/poetname-helpers.js';
 import WorkName from '../components/workname.js';
 import Picture from '../components/picture.js';
 import TextContent from '../components/textcontent.js';

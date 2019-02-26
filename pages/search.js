@@ -168,81 +168,83 @@ export default class extends React.Component<SearchProps> {
 
     let items = [];
     if (result.hits.total > 0) {
-      items = this.hits.filter(x => x._source.text != null).map((hit, i) => {
-        const { poet, work, text } = hit._source;
-        const { highlight } = hit;
-        let item = null;
-        if (text == null) {
-          const workURL = Links.textURL(lang, work.id);
-          item = (
-            <div>
+      items = this.hits
+        .filter(x => x._source.text != null)
+        .map((hit, i) => {
+          const { poet, work, text } = hit._source;
+          const { highlight } = hit;
+          let item = null;
+          if (text == null) {
+            const workURL = Links.textURL(lang, work.id);
+            item = (
               <div>
-                <Link route={workURL}>
-                  <a>
-                    <WorkName work={work} lang={lang} />
-                  </a>
-                </Link>
+                <div>
+                  <Link route={workURL}>
+                    <a>
+                      <WorkName work={work} lang={lang} />
+                    </a>
+                  </Link>
+                </div>
+                <div>
+                  <PoetName poet={poet} />:{' '}
+                </div>
               </div>
+            );
+          } else {
+            const textURL = Links.textURL(lang, text.id);
+            let renderedHighlight = null;
+            if (highlight && highlight['text.content_html']) {
+              // The query is highlighted in each line using <em> by Elasticsearch
+              const lines = highlight['text.content_html'];
+              renderedHighlight = lines.map((line, i) => {
+                let parts = line
+                  .replace(/\s+/g, ' ')
+                  .replace(/^[\s,.!:;?\d"“„]+/, '')
+                  .replace(/[\s,.!:;?\d"“„]+$/, '')
+                  .split(/<\/?em>/);
+                parts[1] = <em key={i}>{parts[1]}</em>;
+                return <div key={i}>{parts}</div>;
+              });
+            }
+            item = (
               <div>
-                <PoetName poet={poet} />:{' '}
+                <div className="title">
+                  <Link route={textURL}>
+                    <a>
+                      <TextName text={text} />
+                    </a>
+                  </Link>
+                </div>
+                <div className="hightlights">{renderedHighlight}</div>
+                <div className="poet-and-work">
+                  <PoetName poet={poet} />: <WorkName work={work} lang={lang} />
+                </div>
+                <style jsx>{`
+                  .title {
+                    font-size: 1.15em;
+                  }
+                  .hightlights {
+                    color: ${CommonData.lightTextColor};
+                    font-weight: lighter;
+                  }
+                  .poet-and-work {
+                    font-weight: lighter;
+                  }
+                `}</style>
               </div>
-            </div>
-          );
-        } else {
-          const textURL = Links.textURL(lang, text.id);
-          let renderedHighlight = null;
-          if (highlight && highlight['text.content_html']) {
-            // The query is highlighted in each line using <em> by Elasticsearch
-            const lines = highlight['text.content_html'];
-            renderedHighlight = lines.map((line, i) => {
-              let parts = line
-                .replace(/\s+/g, ' ')
-                .replace(/^[\s,.!:;?\d"“„]+/, '')
-                .replace(/[\s,.!:;?\d"“„]+$/, '')
-                .split(/<\/?em>/);
-              parts[1] = <em key={i}>{parts[1]}</em>;
-              return <div key={i}>{parts}</div>;
-            });
+            );
           }
-          item = (
-            <div>
-              <div className="title">
-                <Link route={textURL}>
-                  <a>
-                    <TextName text={text} />
-                  </a>
-                </Link>
-              </div>
-              <div className="hightlights">{renderedHighlight}</div>
-              <div className="poet-and-work">
-                <PoetName poet={poet} />: <WorkName work={work} lang={lang} />
-              </div>
+          return (
+            <div key={hit._id} className="result-item">
+              {item}
               <style jsx>{`
-                .title {
-                  font-size: 1.15em;
-                }
-                .hightlights {
-                  color: ${CommonData.lightTextColor};
-                  font-weight: lighter;
-                }
-                .poet-and-work {
-                  font-weight: lighter;
+                .result-item {
+                  margin-bottom: 20px;
                 }
               `}</style>
             </div>
           );
-        }
-        return (
-          <div key={hit._id} className="result-item">
-            {item}
-            <style jsx>{`
-              .result-item {
-                margin-bottom: 20px;
-              }
-            `}</style>
-          </div>
-        );
-      });
+        });
     }
     const antal = result.hits.total;
     let resultaterOrd = null;
@@ -305,7 +307,12 @@ export default class extends React.Component<SearchProps> {
       headTitle =
         'Søgning - ' + poetNameString(poet, false, false) + ' - Kalliope';
       pageTitle = <PoetName poet={poet} includePeriod />;
-      nav = <Nav lang={lang} crumbs={poetCrumbsWithTitle(lang, poet, _('Søgeresultat', lang))} />;
+      nav = (
+        <Nav
+          lang={lang}
+          crumbs={poetCrumbsWithTitle(lang, poet, _('Søgeresultat', lang))}
+        />
+      );
     } else {
       tabs = (
         <KalliopeTabs
@@ -319,7 +326,7 @@ export default class extends React.Component<SearchProps> {
       pageTitle = 'Kalliope';
       const crumbs = [
         ...kalliopeCrumbs(lang),
-        { title: _('Søgeresultat', lang)},
+        { title: _('Søgeresultat', lang) },
       ];
       nav = <Nav lang={lang} crumbs={crumbs} />;
     }
