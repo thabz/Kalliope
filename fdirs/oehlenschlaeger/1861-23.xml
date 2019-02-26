@@ -915,9 +915,11 @@ Regner jeg dit Hierte.
     <title>Peter Frederik Wulff</title>
     <subtitle>Febuar 1842.</subtitle>
     <firstline>Nys, Sorgens Harpe! hængte jeg dig hen —</firstline>
+    <notes>
+        <note>Peter Frederik (Friderich) Wulff (1774-1842), søofficer, digter og oversætter, hvor især oversættelserne af Shakespeare vandt anerkendelse.</note>
+    </notes>
     <source pages="25-27"/>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Mangler siderne 26-27 -->
 </head>
 <body>
 Nys, Sorgens Harpe! hængte jeg dig hen —
@@ -940,6 +942,37 @@ Den Lund, som Frigga selv med Blomster freded,
 
 Naar freidig du ad Østersaltet jog,
     Da Døden du bedrog;
+Den traf dig ei. Da du paa ,,Lougen'' naaede 
+    En Fugl fra Britens Flaade,
+    Din Klo i den du slog.
+
+Og Skole holdt du over Ægirs Seng 
+    For raske danske Dreng,
+Og lærte Gutterne, paa Søen kloge, 
+    At heise Dannebroge
+    Til Fryd for Danavæng.
+
+Men hiemme du, naar røgtet var dit Kald, 
+    Som gamle Helt blev Skiald;
+Da som en Færgemand du Shakespeares Skatte 
+    Til Siælland oversatte,
+    Fik Plads i Kunstnerhal.
+
+<!-- TODO: Fiks nedenstående -->    
+Saaledes blev du ogsaa Digterlods; Men, stedse-dansk Matros,
+Du deelte trofast dine Venners Glceder Med vittigmuntre, dicerve Somandssceder.
+Fortient har du din Roes.
+Din Smerte var kun snel:
+Fra Bragis muntre Spil dig viukte Hel; Da Balbur kom, og bragte dig til Gimle,
+Til Saligheders Himle Hoit over Dal og Field.
+Ak, dure Born — de grade ved din Dod, Og Skraldens Taare flod;
+Men Foedrelandet paa den Tabte skionner. Og, Wulff! — og dine Sonner
+Gaae i det Spor, som du med Kislen brod.
+
+ Thi Havet sletter ud ei Heltespor; Og Mindets Lilie groer
+Saa hvid som Skum — men evig som en Der viser i det Fierne,
+Hvor Helten boer.
+
 
 [...]
 </body>
@@ -948,14 +981,25 @@ Naar freidig du ad Østersaltet jog,
 <poem id="oehlenschlaeger2019022114">
 <head>
     <title>Weyses Jubelfest</title>
+    <subtitle>Den 4de April 1842.</subtitle>
     <firstline>XXXXUKENDT</firstline>
     <source pages="27-29"/>
     <keywords>weyse</keywords>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Mangler siderne 26-27 -->
+    <dates>
+        <event>1842-04-04</event>
+    </dates>
 </head>
 <body>
-[...]
+<!-- TODO: Fiks nedenstående -->    
+8yd, vort Qvad, ved Hoitidsbrag! Fletter Mrens Krone!
+Paa vor Weyses Jubeldag
+Alle Lurer tone!
+Strengeleg og Harpeklang, Ei ved Festen svigter. Toner i vor Hoitidssang Om vor Tonedigter!
+For at give Gildet Kraft — Fra hans Trylleslotte,
+Henter Brause nu og Saft, Walter og Charlotte!
+Smedder ham et Smykke! Ludlam fra din Klippeblok, Skienk din Sanger Lykke!
+„Norden mangler deilig Klang," Mange for istemte;
 
 Men da du ved Harpen sang,
 Klagen man forglemte.
