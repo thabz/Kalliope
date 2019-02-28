@@ -731,6 +731,7 @@
 'ccl/æl',
 'cct/æt',
 'Qvide/Qvinde',
+'smulte/smiilte',
 ];
 
 @regexps = @rules.map { |rule| 
