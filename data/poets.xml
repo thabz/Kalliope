@@ -8754,28 +8754,205 @@
   </period>
 </person>
 
-<!--
-<person id="margrethe2" country="dk" lang="da" type="person">
+<person id="harder" country="dk" lang="da" type="poet">
   <name>
-    <firstname>Margrethe 2.</firstname>
+    <firstname>Henrik</firstname>
+    <lastname>Harder</lastname>
   </name>
   <period>
     <born>
-      <date>1940-04-16</date>
-      <place>Amalienborg</place>
+      <date>1642</date>
+      <place>Flensburg</place>
     </born>
-    <coronation>
-      <date>1972-01-14</date>
-    </coronation>
     <dead>
-      <date></date>
+      <date>1683-01-08</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <!-- http://denstoredanske.dk/Dansk_Biografisk_Leksikon/Kunst_og_kultur/Litteratur/Digter/Henrik_Harder -->
+</person>
+
+<person id="kjoege" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Peder</firstname>
+    <lastname>Nielsen Kjøge</lastname>
+  </name>
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>1695-05-09</date>
+      <place>Assens</place>
+    </dead>
+  </period>
+</person>
+
+<person id="oldenburg" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Theodor</firstname>
+    <lastname>Oldenburg</lastname>
+    <fullname>Theodor Wilhelm Oldenburg</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1805-09-27</date>
+      <place></place>
+    </born>
+    <dead>
+      <date>1842-05-26</date>
+      <place>Sorterup</place>
+    </dead>
+  </period>
+</person>
+
+<person id="blom" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>G.V.</firstname>
+    <lastname>Blom</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1826-09-26</date>
+      <place></place>
+    </born>
+    <dead>
+      <date>1850-07-25</date>
+      <place>Isted</place><!-- (dræbt ved Isted i krigen om Slesvig-Holsten) -->
+    </dead>
+  </period>
+</person>
+
+<person id="timm" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>H.A.</firstname>
+    <lastname>Timm</lastname>
+    <fullname>Herman Andreas</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1800-10-28</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1866-11-04</date>
+      <place>Store Magleby</place>
+    </dead>
+  </period>
+</person>
+
+<person id="rosenhoff" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Claudius</firstname>
+    <lastname>Rosenhoff</lastname>
+    <fullname>Caspar Claudius Rosenhoff</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1804-11-18</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1869-01-19</date>
+      <place>Frederiksberg</place>
+    </dead>
+  </period>
+</person>
+
+<person id="valloee" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Knud</firstname>
+    <lastname>Valløe</lastname>
+    <fullname>Knud Engelbrecht Valløe</fullname>
+    <pseudonym>Jens Birke Riis</pseudonym>
+    <pseudonym>-a-ø</pseudonym>
+    <pseudonym>Fg.</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1833-02-05</date>
+    </born>
+    <dead>
+      <date>1877-05-17</date>
+    </dead>
+  </period>
+</person>
+
+<person id="hoedt" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Frederik</firstname>
+    <lastname>Høedt</lastname>
+    <fullname>Frederik Ludvig Høedt</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1820-02-13</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1885-03-22</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
+<person id="iversen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Iver</firstname>
+    <lastname>Iversen</lastname>
+    <fullname>Iver Utzon Iversen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1862-03-14</date>
+    </born>
+    <dead>
+      <date>1892-01-19</date>
       <place></place>
     </dead>
   </period>
 </person>
--->
+
+<person id="birkedal" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Vilhelm</firstname>
+    <lastname>Birkedal</lastname>
+    <fullname>Schøller Parelius Vilhelm Birkedal</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1809-12-07</date>
+      <place>Ålebækgård, Møn</place>
+    </born>
+    <dead>
+      <date>1892-07-26</date>
+      <place>Gentofte</place>
+    </dead>
+  </period>
+  <!-- Malet af bla. Const. Hansen -->
+  <!-- http://denstoredanske.dk/Dansk_Biografisk_Leksikon/Kirke_og_tro/Præst/Vilhelm_Birkedal -->
+</person>
+
+<person id="greensteen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Henrik</firstname>
+    <lastname>Greensteen</lastname>
+    <fullname>Henrik Jørgen Greensteen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1833-10-12</date>
+      <place>nær Roskilde</place>
+    </born>
+    <dead>
+      <date>1895-07-11</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
+
 <!--
-<person id="" country="dk" lang="da" type="person">
+<person id="" country="dk" lang="da" type="poet">
   <name>
     <firstname></firstname>
     <lastname></lastname>
@@ -8785,10 +8962,6 @@
       <date></date>
       <place></place>
     </born>
-    <coronation>
-      <date></date>
-      <place></place>
-    </coronation>
     <dead>
       <date></date>
       <place></place>
