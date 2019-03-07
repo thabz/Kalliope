@@ -52,6 +52,7 @@ end
 @event = nil
 @type = 'poem'
 @variant = nil
+@todos = []
 @facsimile_page = nil
 
 def printHeader()
@@ -171,6 +172,11 @@ def printPoem()
     end
     puts "    </dates>"
   end
+  if @todos.length > 0
+    @todos.each { |todo|
+        puts "    <!-- TODO: #{todo} -->"
+    }
+  end
   if @keywords
     puts "    <keywords>#{@keywords}</keywords>"
   end
@@ -198,6 +204,7 @@ def printPoem()
   @event = nil
   @type = 'poem'
   @variant = nil
+  @todos = []
   @facsimile_page = nil
   @poemcount += 1
 end
@@ -338,7 +345,7 @@ File.readlines(ARGV[0]).each do |line|
     elsif line.start_with?("N:")
       @keywords = line[2..-1].strip
       if @keywords =~ / /
-          abort "FEJL: Digtet »#{@title}« har mellemrum i sine nøgleord. Forvekslet N: med NOTE:?"
+        abort "FEJL: Digtet »#{@title}« har mellemrum i sine nøgleord. Forvekslet N: med NOTE:?"
       end
     elsif line.start_with?("TOCTITEL:")
       @toctitle = line[9..-1].strip
@@ -363,6 +370,8 @@ File.readlines(ARGV[0]).each do |line|
       @event = line.gsub(/^BEGIVENHED:/,'').strip
     elsif line.start_with?("VARIANT:")
       @variant = line[8..-1].strip
+    elsif line.start_with?("TODO:")
+      @todos.push(line[5..-1].strip)
     elsif line.start_with?("TYPE:")
       @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
     elsif line =~ /^[A-Z]*:/
