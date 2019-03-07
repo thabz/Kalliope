@@ -52,7 +52,7 @@ end
 @event = nil
 @type = 'poem'
 @variant = nil
-@todos = [] 
+@todos = []
 @facsimile_page = nil
 
 def printHeader()
@@ -344,6 +344,9 @@ File.readlines(ARGV[0]).each do |line|
       @poemid = line[3..-1].strip
     elsif line.start_with?("N:")
       @keywords = line[2..-1].strip
+      if @keywords =~ / /
+        abort "FEJL: Digtet »#{@title}« har mellemrum i sine nøgleord. Forvekslet N: med NOTE:?"
+      end
     elsif line.start_with?("TOCTITEL:")
       @toctitle = line[9..-1].strip
       if @toctitle =~ /<num>.*?<\/num>$/ 
