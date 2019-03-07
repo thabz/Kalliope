@@ -112,6 +112,7 @@ const replaceDashes = html => {
       .replace(/ -&ldquo;/g, ' —&ldquo;')
       .replace(/ -$/gm, ' —')
       .replace(/ -([\!;\?\.»«,:\n])/g, / —$1/)
+      .replace(/ —/g,'&nbsp;—') // Undgå tankestreger som ombrydes til sin egen linje
   );
 };
 
