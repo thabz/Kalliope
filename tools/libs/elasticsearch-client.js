@@ -45,7 +45,7 @@ const indexingQueue = queue((task, callback) => {
 class ElasticSearchClient {
   createIndex(index, lang) {
     const URL = `${URLPrefix}/${index}`;
-    const fields = ['title', 'content_html', 'subtitles'];
+    const fields = ['text.title', 'text.content_html', 'text.subtitles'];
     const analyzerNames = {
       da: 'danish',
       en: 'english',
