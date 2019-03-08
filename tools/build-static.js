@@ -2640,6 +2640,13 @@ const build_variants = collected => {
 const update_elasticsearch = collected => {
   const inner_update_elasticsearch = () => {
     collected.poets.forEach((poet, poetId) => {
+      const poetLang = poet.lang;
+      const poetCountry = poet.country;
+      if (poet.type !== 'collection') {
+        // elasticSearchClient.create(`kalliope-${poetLang}`, 'person', poetId, {
+        //   poet,
+        // });
+      }
       collected.workids.get(poetId).forEach(workId => {
         const filename = `fdirs/${poetId}/${workId}.xml`;
         if (!isFileModified(filename)) {
@@ -2648,6 +2655,7 @@ const update_elasticsearch = collected => {
         let doc = loadXMLDoc(filename);
         const work = doc.get('//kalliopework');
         const status = work.attr('status').value();
+        const workLang = safeGetAttr(work, 'lang') || poetLang;
         const type = work.attr('type').value();
         const head = work.get('workhead');
         const title = head.get('title').text();
@@ -2663,15 +2671,16 @@ const update_elasticsearch = collected => {
           poet,
           work: workData,
         };
-
+        /*
         elasticSearchClient.create(
-          'kalliope',
-          'work',
+          `kalliope-${poetCountry}`,
           `${poetId}-${workId}`,
           data
         );
+        */
         doc.find('//poem|//prose').forEach(text => {
           const textId = text.attr('id').value();
+          const textLang = safeGetAttr(text, 'lang') || workLang;
           const head = text.get('head');
           const body = text.get('body');
           const title =
@@ -2731,14 +2740,37 @@ const update_elasticsearch = collected => {
             work: workData,
             text: textData,
           };
-          elasticSearchClient.create('kalliope', 'text', textId, data);
+          const index = `kalliope-${poetCountry}`;
+          elasticSearchClient.create(index, textId, data);
         });
       });
     });
   };
+  inner_update_elasticsearch();
 
   elasticSearchClient
-    .createIndex('kalliope')
+    .createIndex('kalliope-dk', 'da')
+    .then(() => {
+      return elasticSearchClient.createIndex('kalliope-se', 'sv');
+    })
+    .then(() => {
+      return elasticSearchClient.createIndex('kalliope-no', 'no');
+    })
+    .then(() => {
+      return elasticSearchClient.createIndex('kalliope-gb', 'en');
+    })
+    .then(() => {
+      return elasticSearchClient.createIndex('kalliope-us', 'en');
+    })
+    .then(() => {
+      return elasticSearchClient.createIndex('kalliope-de', 'de');
+    })
+    .then(() => {
+      return elasticSearchClient.createIndex('kalliope-fr', 'fr');
+    })
+    .then(() => {
+      return elasticSearchClient.createIndex('kalliope-it', 'it');
+    })
     .then(() => {
       try {
         inner_update_elasticsearch();
@@ -3047,7 +3079,7 @@ collected.timeline = build_global_timeline(collected);
 b('build_bio_json', build_bio_json, collected);
 b('build_news', build_news, collected);
 b('build_about_pages', build_about_pages, collected);
-b('build_global_lines_json', build_global_lines_json, collected);
+//b('build_global_lines_json', build_global_lines_json, collected);
 b('build_dict_second_pass', build_dict_second_pass, collected);
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
