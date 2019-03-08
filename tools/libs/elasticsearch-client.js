@@ -42,6 +42,26 @@ const indexingQueue = queue((task, callback) => {
     });
 }, 100);
 
+/*
+PUT /my_index
+{
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "text.title": { 
+          "type": "text",
+          "fields": {
+            "analyzed": { 
+              "type":     "text",
+              "analyzer": "danish"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 class ElasticSearchClient {
   createIndex(index, lang) {
     const URL = `${URLPrefix}/${index}`;
