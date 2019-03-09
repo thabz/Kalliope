@@ -293,6 +293,7 @@ const museums = {
   },
   smb: {
     url: `http://www.smb-digital.de/eMuseumPlus?objectId=$objId`,
+    name: 'Staatliche Museen zu Berlin'
   },
   md: {
     url: `https://www.museum-digital.de/nat/index.php?t=objekt&oges=$objId`,
