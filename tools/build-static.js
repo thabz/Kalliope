@@ -293,7 +293,7 @@ const museums = {
   },
   smb: {
     url: `http://www.smb-digital.de/eMuseumPlus?objectId=$objId`,
-    name: 'Staatliche Museen zu Berlin'
+    name: 'Staatliche Museen zu Berlin',
   },
   md: {
     url: `https://www.museum-digital.de/nat/index.php?t=objekt&oges=$objId`,
@@ -1792,11 +1792,14 @@ const build_works_toc = collected => {
         };
 
         // Find modified date i git.
+        // Later: this turns out to be super-slow, building toc's
+        // takes 151s instead of 9s. So I've disabled this.
+        /*
         const modifiedDateString = execSync(
           `git log -1 --format="%ad" --date=iso-strict -- ${filename}`
         );
         toc_file_data.modified = modifiedDateString.toString().trim();
-
+        */
         const tocFilename = `static/api/${poetId}/${workId}-toc.json`;
         console.log(tocFilename);
         writeJSON(tocFilename, toc_file_data);
