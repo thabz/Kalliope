@@ -1309,14 +1309,21 @@ const build_global_lines_json = collected => {
     collected_lines.forEach((per_country, country) => {
       per_country.forEach((per_linetype, linetype) => {
         const locale = compareLocales[country] || 'da-DK';
+        const collator = new Intl.Collator(locale, {
+          numeric: true,
+          sensitivity: 'base',
+        });
         const linesComparator = (a, b) => {
           if (a.line === b.line) {
-            return a.poet.name.localeCompare(b.poet.name, locale);
+            return collator.compare(a.poet.name, b.poet.name);
           } else {
-            return a.line.localeCompare(b.line, locale);
+            return collator.compare(a.line, b.line);
           }
         };
-        const lettersComparator = (a, b) => a.localeCompare(b, locale);
+        const lettersComparator = (a, b) => {
+          return collator.compare(a, b);
+        };
+
         const letters = Array.from(per_linetype.keys()).sort(lettersComparator);
         per_linetype.forEach((lines, letter) => {
           const data = {
@@ -1324,7 +1331,7 @@ const build_global_lines_json = collected => {
             lines: lines.sort(linesComparator),
           };
           const filename = `static/api/alltexts/${country}-${linetype}-${letter}.json`;
-          console.log(filename);
+          //console.log(filename);
           writeJSON(filename, data);
         });
       });
