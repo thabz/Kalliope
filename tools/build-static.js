@@ -1609,7 +1609,7 @@ const build_person_or_keyword_refs = collected => {
       texts.forEach(text => {
         const fromId = text.attr('id').value();
         const notes = text.find(
-          'head/notes/note|body//footnote|body//note|body'
+          'head/notes/note|head/pictures/picture|body//footnote|body//note|body'
         );
         notes.forEach(note => {
           regexps.forEach(rule => {
