@@ -2599,7 +2599,7 @@
       <place>København</place>
     </dead>
   </period>
-  <works>andre</works>
+  <works>1803,andre</works>
 </person>
 
 <person id="weyse" country="dk" lang="da" type="poet">
@@ -3927,7 +3927,7 @@
       <place>Odense</place>
     </dead>
   </period>
-  <works>1885,1894,1900</works>
+  <works>1885,1889,1892,1894,1896,1898,1900</works>
 </person>
 
 
@@ -8908,6 +8908,7 @@
       <place>Frederiksberg</place>
     </dead>
   </period>
+  <works>1848,1849,1849a</works>
 </person>
 
 <person id="valloee" country="dk" lang="da" type="poet">
@@ -8945,6 +8946,7 @@
       <place>København</place>
     </dead>
   </period>
+  <works>1856</works>
 </person>
 
 <person id="iversen" country="dk" lang="da" type="poet">
@@ -8999,6 +9001,7 @@
       <place>København</place>
     </dead>
   </period>
+  <works>1859,1898</works>
 </person>
 
 <person id="waage" country="dk" lang="da" type="poet">
@@ -9039,15 +9042,19 @@
   <name>
     <firstname>Edvard</firstname>
     <lastname>Søderberg</lastname>
+    <fullname>Hakon Charles Edvard Søderberg</fullname>
   </name>
   <period>
     <born>
       <date>1869</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1906</date>
+      <place>København</place>
     </dead>
   </period>
+  <works>1900</works>
 </person>
 
 <person id="schmidtt" country="dk" lang="da" type="poet">
@@ -9074,12 +9081,14 @@
   <period>
     <born>
       <date>1884-12-02</date>
-      <place>København</place>
+      <place>Frederiksberg</place>
     </born>
     <dead>
       <date>1910-02-27</date>
+      <place>København</place>
     </dead>
   </period>
+  <works>1909,1917</works>
 </person>
 
 <person id="blaumueller" country="dk" lang="da" type="poet">
@@ -9115,6 +9124,7 @@
       <place>Frederiksberg</place>
     </dead>
   </period>
+  <works>1908</works>
 </person>
 
 <person id="bahnson" country="dk" lang="da" type="poet">
@@ -9134,7 +9144,7 @@
   </period>
 </person>
 
-<person id="nielsen" country="dk" lang="da" type="poet">
+<person id="nielseni" country="dk" lang="da" type="poet">
   <name>
     <firstname>Iben</firstname>
     <lastname>Nielsen</lastname>
@@ -9155,15 +9165,18 @@
   <name>
     <firstname>Aage</firstname>
     <lastname>Hoffmeyer</lastname>
+    <!-- tegner, cand. phil. -->
   </name>
   <period>
     <born>
       <date>1867</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1924</date>
     </dead>
   </period>
+  <works>1915,1918</works>
 </person>
 
 <person id="bange" country="dk" lang="da" type="poet">
@@ -9182,7 +9195,7 @@
   </period>
 </person>
 
-<person id="hansen" country="dk" lang="da" type="poet">
+<person id="hansenpcv" country="dk" lang="da" type="poet">
   <name>
     <firstname>P.C.V.</firstname>
     <lastname>Hansen</lastname>
@@ -9198,6 +9211,7 @@
       <place>København</place>
     </dead>
   </period>
+  <works>1916,1920</works>
 </person>
 
 <person id="sandvad" country="dk" lang="da" type="poet">
@@ -9366,8 +9380,10 @@
     </born>
     <dead>
       <date>1940-08-05</date>
+      <place>Struer</place>
     </dead>
   </period>
+  <works>1921</works>
 </person>
 
 <person id="bech" country="dk" lang="da" type="poet">
@@ -9404,6 +9420,7 @@
       <date>1943-02-25</date>
     </dead>
   </period>
+  <works>1905,1908,1910,1920,1926</works>
 </person>
 
 <person id="pontoppidan" country="dk" lang="da" type="poet">
@@ -9456,6 +9473,7 @@
       <place>Dortheasminde</place>
     </dead>
   </period>
+  <works>1896,1904,1932,1937,1939</works>
 </person>
 
 <person id="barfod" country="dk" lang="da" type="poet">
@@ -9472,9 +9490,10 @@
       <place>Hjørlunde Præstegård</place>
     </born>
     <dead>
-      <date>1847-11-28 eller 1847-11-27</date>
+      <date>1947-11-28 eller 1897-11-27</date>
     </dead>
   </period>
+  <works>1911,1913,1917,1919,1929,1930,1933,1936,1938,1944</works>
 </person>
 
 <person id="norman" country="dk" lang="da" type="poet">
@@ -9499,6 +9518,7 @@
   <name>
     <firstname>Axel</firstname>
     <lastname>Juel</lastname>
+    <fullname>Axel Niels Christian Juel</fullname>
   </name>
   <period>
     <born>
@@ -9510,6 +9530,7 @@
       <place>Charlottenlund</place>
     </dead>
   </period>
+  <works>1909,1909f,1915,1915v,1917,1918,1919,1920,1921,1923,1924,1929,1932,1934,1936,1939,1941,1942,1947,1952</works>
 </person>
 
 <person id="lundotto" country="dk" lang="da" type="poet">
@@ -9561,6 +9582,7 @@
       <date>1948-11-03</date>
     </dead>
   </period>
+  <works>1935,1937,1942,1945,1949</works>
 </person>
 
 <person id="hermann" country="dk" lang="da" type="poet">
@@ -9598,6 +9620,7 @@
       <place>Lyngby</place>
     </dead>
   </period>
+  <works>1899,1902,1905,1907,1911,1913,1916,1918,1919,1920,1921,1923,1926,1926b,1931,1941,1944,1945</works>
 </person>
 
 <person id="lunde" country="dk" lang="da" type="poet">
@@ -9613,8 +9636,10 @@
     </born>
     <dead>
       <date>1949-10-02</date>
+      <place>Nyborg</place>
     </dead>
   </period>
+  <works>1903,1905,1908,1920,1920v,1923,1926,1928,1936,1941</works>
 </person>
 
 <!--
