@@ -293,7 +293,7 @@ const museums = {
   },
   smb: {
     url: `http://www.smb-digital.de/eMuseumPlus?objectId=$objId`,
-    name: 'Staatliche Museen zu Berlin'
+    name: 'Staatliche Museen zu Berlin',
   },
   md: {
     url: `https://www.museum-digital.de/nat/index.php?t=objekt&oges=$objId`,
@@ -1309,14 +1309,21 @@ const build_global_lines_json = collected => {
     collected_lines.forEach((per_country, country) => {
       per_country.forEach((per_linetype, linetype) => {
         const locale = compareLocales[country] || 'da-DK';
+        const collator = new Intl.Collator(locale, {
+          numeric: true,
+          sensitivity: 'base',
+        });
         const linesComparator = (a, b) => {
           if (a.line === b.line) {
-            return a.poet.name.localeCompare(b.poet.name, locale);
+            return collator.compare(a.poet.name, b.poet.name);
           } else {
-            return a.line.localeCompare(b.line, locale);
+            return collator.compare(a.line, b.line);
           }
         };
-        const lettersComparator = (a, b) => a.localeCompare(b, locale);
+        const lettersComparator = (a, b) => {
+          return collator.compare(a, b);
+        };
+
         const letters = Array.from(per_linetype.keys()).sort(lettersComparator);
         per_linetype.forEach((lines, letter) => {
           const data = {
@@ -1324,7 +1331,7 @@ const build_global_lines_json = collected => {
             lines: lines.sort(linesComparator),
           };
           const filename = `static/api/alltexts/${country}-${linetype}-${letter}.json`;
-          console.log(filename);
+          //console.log(filename);
           writeJSON(filename, data);
         });
       });
@@ -1609,7 +1616,7 @@ const build_person_or_keyword_refs = collected => {
       texts.forEach(text => {
         const fromId = text.attr('id').value();
         const notes = text.find(
-          'head/notes/note|body//footnote|body//note|body'
+          'head/notes/note|head/pictures/picture|body//footnote|body//note|body'
         );
         notes.forEach(note => {
           regexps.forEach(rule => {
@@ -1792,11 +1799,14 @@ const build_works_toc = collected => {
         };
 
         // Find modified date i git.
+        // Later: this turns out to be super-slow, building toc's
+        // takes 151s instead of 9s. So I've disabled this.
+        /*
         const modifiedDateString = execSync(
           `git log -1 --format="%ad" --date=iso-strict -- ${filename}`
         );
         toc_file_data.modified = modifiedDateString.toString().trim();
-
+        */
         const tocFilename = `static/api/${poetId}/${workId}-toc.json`;
         console.log(tocFilename);
         writeJSON(tocFilename, toc_file_data);
