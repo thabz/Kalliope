@@ -9608,6 +9608,80 @@
 </person>
 
 <!--
+<person id="plautus" country="un" lang="la" type="poet">
+  <name>
+    <firstname>Titus Maccius</firstname>
+    <lastname>Plautus</lastname>
+  </name>
+  <period>
+    <born>
+      <date>-254</date>
+      <place>Sarsina</place>
+    </born>
+    <dead>
+      <date>-184 ca.</date>
+      <place>Rom</place>
+    </dead>
+  </period>
+</person>
+-->
+
+<person id="hafez" country="un" lang="pe" type="poet">
+  <name>
+    <firstname>Shams al-din</firstname>
+    <lastname>Hafez</lastname>
+    <fullname>Khwāje Šamsod-dīn Mohammad Hāfez-e Šīrāzī</fullname>
+    <christened>خواجه شمسالدین محمد حافظ شیرازی</christened>
+  </name>
+  <period>
+    <born>
+      <date>1320</date>
+      <place>Shiraz (nuværende Iran)</place>
+    </born>
+    <dead>
+      <date>1390</date>
+      <place>Shiraz</place>
+    </dead>
+  </period>
+</person>
+
+<person id="cervantes" country="un" lang="sp" type="poet">
+  <name>
+    <firstname>Miguel de</firstname>
+    <lastname>Cervantes</lastname>
+    <fullname>Miguel de Cervantes Saavedra</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1547-09-29</date>
+      <place>Alcalá de Henares, Spanien</place>
+    </born>
+    <dead>
+      <date>1616-04-22</date>
+      <place>Madrid</place>
+    </dead>
+  </period>
+</person>
+
+<person id="calderon" country="un" lang="da" type="poet">
+  <name>
+    <firstname>Pedro</firstname>
+    <lastname>Calderón de la Barca</lastname>
+    <fullname>Pedro Calderón de la Barca y Barreda González de Henao Ruiz de Blasco y Riaño</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1600-01-17</date>
+      <place>Madrid</place>
+    </born>
+    <dead>
+      <date>1681-05-25</date>
+      <place>Madrid</place>
+    </dead>
+  </period>
+</person>
+
+<!--
 <person id="" country="dk" lang="da" type="poet">
   <name>
     <firstname></firstname>
