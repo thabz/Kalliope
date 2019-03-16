@@ -314,8 +314,8 @@ const museums = {
   'fnm': {
       name: 'Frederiksborg Nationalhistorisk Museum',
       url: (ids) => {
-          // invNr må være 'a-841', 'A-841', 'A841', 'A 841'
-        const m = ids.invNr.match(/([a-z]+)[- ]*([0-9]+)/i);
+        // invNr må være 'a-841', 'A-841', 'A841', 'A 841'
+        const m = ids.invNr.match(/([a-z]+)[- ]*([0-9]+[a-z]*)/i);
         return `https://dnm.dk/kunstvaerk/${m[1].toLowerCase()}-${m[2]}/`;
       }
   }
