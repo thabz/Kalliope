@@ -268,49 +268,57 @@ const museums = {
     name: 'Skagens Museum',
   },
   thorvaldsens: {
-    url: 'http://thorvaldsensmuseum.dk/samlingerne/vaerk/$invNr',
+    url: ids => `http://thorvaldsensmuseum.dk/samlingerne/vaerk/${ids.invNr}`,
     name: 'Thorvaldsens Museum',
   },
   nivaagaard: {
-    url: 'http://www.nivaagaard.dk/samling-da/$objId',
+    url: ids => `http://www.nivaagaard.dk/samling-da/${objId}`,
     name: 'Nivaagaards Malerisamling',
   },
   kb: {
-    url: 'http://www.kb.dk/images/billed/2010/okt/billeder/object$objId/da/',
+    url: ids => `http://www.kb.dk/images/billed/2010/okt/billeder/object${ids.objId}/da/`,
     name: 'Det kongelige Bibliotek',
   },
   smk: {
-    url: 'http://collection.smk.dk/#/detail/$invNr',
+    url: ids => `http://collection.smk.dk/#/detail/${ids.invNr}`,
     name: 'Statens Museum for Kunst',
   },
   gleimhaus: {
-    url: 'https://www.museum-digital.de/nat/index.php?t=objekt&oges=$objId',
+    url: ids => `https://www.museum-digital.de/nat/index.php?t=objekt&oges=${ids.objId}`,
     name: 'Gleimhaus, Halberstadt',
   },
   ribe: {
-    url: `https://ribekunstmuseum.dk/samling/$invNr`,
+    url: ids => `https://ribekunstmuseum.dk/samling/${ids.invNr}`,
     name: 'Ribe Kunstmuseum',
   },
   smb: {
-    url: `http://www.smb-digital.de/eMuseumPlus?objectId=$objId`,
+    url: ids => `http://www.smb-digital.de/eMuseumPlus?objectId=${ids.objId}`,
     name: 'Staatliche Museen zu Berlin',
   },
   md: {
-    url: `https://www.museum-digital.de/nat/index.php?t=objekt&oges=$objId`,
+    url: ids => `https://www.museum-digital.de/nat/index.php?t=objekt&oges=${ids.objId}`,
   },
   npg: {
-    url: `https://www.npg.org.uk/collections/search/portrait/$objId`,
+    url: ids => `https://www.npg.org.uk/collections/search/portrait/${ids.objId}`,
     name: 'National Portrait Gallery, London',
   },
   'natmus.se': {
-    url: `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=$objId&viewType=detailView`,
+    url: ids => `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${ids.objId}&viewType=detailView`,
   },
   'digitalmuseum.no': {
-    url: `https://digitaltmuseum.no/$objId/maleri`,
+    url: ids => `https://digitaltmuseum.no/${ids.objId}/maleri`,
   },
   'digitalmuseum.se': {
-    url: `https://digitaltmuseum.se/$objId/maleri`,
+    url: ids => `https://digitaltmuseum.se/${ids.objId}/maleri`,
   },
+  'fnm': {
+      name: 'Frederiksborg Nationalhistorisk Museum',
+      url: (ids) => {
+          // invNr må være 'a-841', 'A-841', 'A841', 'A 841'
+        const m = ids.invNr.match(/([a-z]+)[- ]*([0-9]+)/i);
+        return `https://dnm.dk/kunstvaerk/${m[1].toLowerCase()}-${m[2]}/`;
+      }
+  }
 };
 
 const get_museum_json = museumId => {
@@ -334,6 +342,7 @@ const build_museum_url = picture => {
   if (museum != null && (invNr != null || objId != null)) {
     const museumObject = museums[museum];
     if (museumObject != null && museumObject.url != null) {
+      return museumObject.url({invNr,objId});
       return museumObject.url.replace('$objId', objId).replace('$invNr', invNr);
     }
   }
