@@ -22,7 +22,7 @@ if ARGV.length != 1
   exit 0
 end
 
-@state = 'NONE'
+@state = 'WORKHEAD'
 @poemcount = 1;
 @header_printed = false
 @section_title_stack = []
@@ -34,6 +34,7 @@ end
 @facsimile = nil
 @facsimile_pages_num = 150
 @worknotes = []
+@worktodos = []
 @found_corrections = false
 @found_poet_notes = false
 @done = false
@@ -90,6 +91,11 @@ def printHeader()
     puts %Q|    <pictures>|
     puts %Q|        <picture src="#{year}-p1.jpg">Titelbladet til <i>#{title}</i> (#{year}) lyder ,,''.</picture>|
     puts %Q|    </pictures>|
+    if @worktodos.length > 0
+      @worktodos.each { |todo|
+          puts "    <!-- TODO: #{todo} -->"
+      }
+    end
     puts %Q|    <source facsimile="#{@facsimile}" facsimile-pages-num="#{@facsimile_pages_num}" facsimile-pages-offset="10">#{@source}</source>|
     puts %Q|</workhead>|
     puts %Q|<workbody>|
@@ -283,23 +289,24 @@ File.readlines(ARGV[0]).each do |line|
       l = "<nonum>#{l}</nonum>"
       line = l
   end
-  if @state == 'NONE' and line =~ /^KILDE:/
+  if @state == 'WORKHEAD'  
+    if line =~ /^KILDE:/
       @source = line[6..-1].strip
-  end
-  if @state == 'NONE' and line =~ /^FACSIMILE:/
+    elsif line =~ /^FACSIMILE:/
       @facsimile = line.gsub(/^FACSIMILE:/,'').strip
-  end
-  if @state == 'NONE' and line =~ /^FACSIMILE-SIDER:/
+    elsif line =~ /^FACSIMILE-SIDER:/
       @facsimile_pages_num = line.gsub(/^FACSIMILE-SIDER:/,'').strip
-  end
-  if @state == 'NONE' and line =~ /^VÆRKNOTE:/
-      @worknotes.push(line.gsub(/^VÆRKNOTE:/,'').strip)
-  end
-  if @state == 'NONE' and line =~ /^DIGTER:/
+    elsif line =~ /^NOTE:/
+      @worknotes.push(line.gsub(/^NOTE:/,'').strip)
+    elsif line =~ /^TODO:/
+      @worktodos.push(line.gsub(/^TODO:/,'').strip)
+    elsif line =~ /^DIGTER:/
       @poetid = line[7..-1].strip
-  end
-  if @state == 'NONE' and line =~ /^DATO:/
+    elsif line =~ /^DATO:/
       @date = line[5..-1].strip
+    else 
+      @state = 'NONE'
+    end
   end
   if @state == 'NONE' and (line =~ /^T:/ or line =~ /^ID:/)
     @state = 'INHEAD'

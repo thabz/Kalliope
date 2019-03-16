@@ -6063,6 +6063,24 @@
   </period>
 </person>
 
+<person id="runeberg" country="un" lang="sv" type="poet">
+  <name>
+    <firstname>Johan Ludvig</firstname>
+    <lastname>Runeberg</lastname>
+    <!-- I virkeligheden finsk, men skrev på svensk. -->
+  </name>
+  <period>
+    <born>
+      <date>1804-02-05</date>
+      <place>Pietarsaari/Jakobstad</place>
+    </born>
+    <dead>
+      <date>1877-05-06</date>
+      <place>Porvoo/Borgå</place>
+    </dead>
+  </period>
+  <works>1848</works>
+</person>
 
 <person id="rydberg" country="se" lang="sv" type="poet">
   <name>
@@ -9064,12 +9082,15 @@
   </name>
   <period>
     <born>
-      <date>1847</date>
+      <date>1847-12-07</date>
+      <place>Fohl</place>
     </born>
     <dead>
-      <date>1909</date>
+      <date>1909-12-17</date>
     </dead>
   </period>
+  <works>1944</works>
+  <!-- Fanøs digter. Læs meget mere på http://www.mitfanoe.dk/index.php/da/tema-artikler/persongalleri/874-thomas-schmidt-familie-og-lobebane -->
 </person>
 
 <person id="schneider" country="dk" lang="da" type="poet">
@@ -9228,6 +9249,7 @@
       <date>1929-09-13</date>
     </dead>
   </period>
+  <works>1927</works>
 </person>
 
 <person id="kaarsberg" country="dk" lang="da" type="poet">
@@ -9270,6 +9292,7 @@
   <name>
     <firstname>Rolf</firstname>
     <lastname>Harboe</lastname>
+    <fullname>Rolf Gunnersen Harboe</fullname>
   </name>
   <period>
     <born>
@@ -9278,8 +9301,10 @@
     </born>
     <dead>
       <date>1938-12-13</date>
+      <place>Frederiksberg</place>
     </dead>
   </period>
+  <works>1891,1898,1902,1906,1910,1915,1916</works>
 </person>
 
 <person id="egeberg" country="dk" lang="da" type="poet">
@@ -9640,6 +9665,80 @@
     </dead>
   </period>
   <works>1903,1905,1908,1920,1920v,1923,1926,1928,1936,1941</works>
+</person>
+
+<!--
+<person id="plautus" country="un" lang="la" type="poet">
+  <name>
+    <firstname>Titus Maccius</firstname>
+    <lastname>Plautus</lastname>
+  </name>
+  <period>
+    <born>
+      <date>-254</date>
+      <place>Sarsina</place>
+    </born>
+    <dead>
+      <date>-184 ca.</date>
+      <place>Rom</place>
+    </dead>
+  </period>
+</person>
+-->
+
+<person id="hafez" country="un" lang="pe" type="poet">
+  <name>
+    <firstname>Shams al-din</firstname>
+    <lastname>Hafez</lastname>
+    <fullname>Khwāje Šamsod-dīn Mohammad Hāfez-e Šīrāzī</fullname>
+    <christened>خواجه شمسالدین محمد حافظ شیرازی</christened>
+  </name>
+  <period>
+    <born>
+      <date>1320</date>
+      <place>Shiraz (nuværende Iran)</place>
+    </born>
+    <dead>
+      <date>1390</date>
+      <place>Shiraz</place>
+    </dead>
+  </period>
+</person>
+
+<person id="cervantes" country="un" lang="sp" type="poet">
+  <name>
+    <firstname>Miguel de</firstname>
+    <lastname>Cervantes</lastname>
+    <fullname>Miguel de Cervantes Saavedra</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1547-09-29</date>
+      <place>Alcalá de Henares, Spanien</place>
+    </born>
+    <dead>
+      <date>1616-04-22</date>
+      <place>Madrid</place>
+    </dead>
+  </period>
+</person>
+
+<person id="calderon" country="un" lang="da" type="poet">
+  <name>
+    <firstname>Pedro</firstname>
+    <lastname>Calderón de la Barca</lastname>
+    <fullname>Pedro Calderón de la Barca y Barreda González de Henao Ruiz de Blasco y Riaño</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1600-01-17</date>
+      <place>Madrid</place>
+    </born>
+    <dead>
+      <date>1681-05-25</date>
+      <place>Madrid</place>
+    </dead>
+  </period>
 </person>
 
 <!--
