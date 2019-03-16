@@ -793,6 +793,7 @@ Der paa hans Vei giöd Glæde ned.
 <poem id="rahbek2019021203">
 <head>
    <title>Naar Klaffertungerne dig stikke</title>
+   <subtitle>Efter Bürger</subtitle>
    <toctitle>Bürger: Naar Klaffertungerne dig stikke</toctitle>
    <firstline>Naar Klaffertungerne dig stikke</firstline>
    <quality>korrektur1,kilde,side</quality>
@@ -810,6 +811,7 @@ De Gedehamser söge paa.
 <poem id="rahbek2019031607">
 <head>
     <title>Hvor</title>
+    <toctitle>Werner: Hvor</toctitle>
     <subtitle>Sang efter Werner</subtitle>
     <firstline>Jeg kommer hid fra Bierget af</firstline>
     <source pages="40-41"/>
@@ -1508,6 +1510,7 @@ O lange Nat! o Venten uden Tröst!
 <poem id="rahbek2019021312">
 <head>
    <title>Det tilslörede Billede i Sais</title>
+   <toctitle>Schiller: Det tilslörede Billede i Sais</toctitle>
    <subtitle>Efter Schiller</subtitle>
    <firstline>En Yngling, hvem den hede Videtörst</firstline>
    <notes>
@@ -2930,7 +2933,11 @@ Jeg kommer ei meer med min stakkels Hund, Tro.
 <head>
     <title>Til en Veninde paa hendes Födselsdag</title>
     <toctitle>Til en Veninde med en Ring, efter det Tydske</toctitle>
-    <subtitle>Med en Ring, hvori en Tyrkiis, fra et Barn (efter det Tydske)</subtitle>
+    <subtitle>
+        <line>Med en Ring, hvori en Tyrkiis,</line> 
+        <line>fra et Barn</line>
+        <line>(efter det Tydske)</line>
+    </subtitle>
     <firstline>Hvor lykkelig var jeg den Ring at finde</firstline>
     <source pages="127-128"/>
     <!-- TODO: Find originalen. -->
@@ -2963,7 +2970,10 @@ Din Gunst mig, Ædle! du unddrage ingensinde.
 <head>
     <title>Forsvar for mine to Uhre</title>
     <toctitle>Forsvar for mine to Uhre, efter det Franske</toctitle>
-    <subtitle>Til en Veninde (efter det Franske)</subtitle>
+    <subtitle>
+        <line>Til en Veninde</line>
+        <line>(efter det Franske)</line>
+    </subtitle>
     <firstline>Til Overflod du intet af dem agte</firstline>
     <source pages="128"/>
     <!-- TODO: Find originalen. -->
