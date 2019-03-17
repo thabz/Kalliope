@@ -61,11 +61,39 @@ PUT /my_index
     }
   }
 }
+
+mappings: {
+  _doc: {
+    properties: {
+      text: {
+        type: "text",
+        properties: {
+          "title": { ... }
+          "subtitle": { ...}
+        }
+        fields: {
+          "analyzed": {
+            type: "text",
+            "analyzer": "danish"
+          }
+        }
+      }
+    }
+  }
+}
 */
+
+fields = [
+  'text.title',
+  'text.content_html',
+  'text.subtitles',
+  'poet.name.firstname',
+  'poet.name.lastname',
+];
+
 class ElasticSearchClient {
   createIndex(index, lang) {
     const URL = `${URLPrefix}/${index}`;
-    const fields = ['text.title', 'text.content_html', 'text.subtitles'];
     const analyzerNames = {
       da: 'danish',
       en: 'english',
@@ -75,36 +103,54 @@ class ElasticSearchClient {
       no: 'norwegian',
       sv: 'swedish',
     };
-    const properties = {};
-    fields.forEach(field => {
-      properties[field] = {
-        type: 'string',
-        fields: {
-          analyzed: {
-            type: 'string',
-            analyzer: analyzerNames[lang],
+
+    const mappings = { _doc: {} };
+    const handle = (obj, name, remaining) => {
+      console.log('handle: ', name, remaining);
+      if (remaining.length === 0) {
+        obj.properties = obj.properties || {};
+        obj.properties[name] = {
+          type: 'text',
+          fields: {
+            analyzed: {
+              type: 'text',
+              analyzer: analyzerNames[lang],
+            },
           },
-        },
-      };
-    });
-    const mappings = {
-      mappings: {
-        _doc: {
-          properties: properties,
-        },
-      },
+        };
+      } else {
+        let properties = obj.properties || {};
+        let newObj = properties[name] || {};
+        const newRemaining = remaining.slice();
+        const newName = newRemaining.shift();
+        handle(newObj, newName, newRemaining);
+        properties[name] = newObj;
+        obj['properties'] = properties;
+      }
     };
+
+    fields.forEach(path => {
+      const pathItems = path.split('.');
+      const name = pathItems.shift();
+      handle(mappings._doc, name, pathItems);
+    });
+
+    console.log(JSON.stringify({ mappings }, null, 2));
     return fetch(URL, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
-      body: mappings,
+      body: JSON.stringify({ mappings }),
+    }).then(res => {
+      if (res.status !== 200) {
+        console.log(res.text());
+      }
     });
   }
 
   create(index, id, json) {
     indexingQueue.push({ index, id, json }, err => {
       if (err) {
-        console.log(err);
+        //console.log(err);
       }
     });
   }
@@ -129,6 +175,10 @@ class ElasticSearchClient {
                   'text.content_html.analyzed',
                   'text.subtitles',
                   'text.subtitles.analyzed',
+                  'poet.name.firstname',
+                  'poet.name.firstname.analyzed',
+                  'poet.name.lastname',
+                  'poet.name.lastname.analyzed',
                 ],
               },
             },
