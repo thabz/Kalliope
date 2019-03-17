@@ -272,7 +272,7 @@ const museums = {
     name: 'Thorvaldsens Museum',
   },
   nivaagaard: {
-    url: ids => `http://www.nivaagaard.dk/samling-da/${objId}`,
+    url: ids => `http://www.nivaagaard.dk/samling-da/${ids.objId}`,
     name: 'Nivaagaards Malerisamling',
   },
   kb: {
