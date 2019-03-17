@@ -42,47 +42,6 @@ const indexingQueue = queue((task, callback) => {
     });
 }, 100);
 
-/*
-PUT /my_index
-{
-  "mappings": {
-    "_doc": {
-      "properties": {
-        "text.title": { 
-          "type": "text",
-          "fields": {
-            "analyzed": { 
-              "type":     "text",
-              "analyzer": "danish"
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-mappings: {
-  _doc: {
-    properties: {
-      text: {
-        type: "text",
-        properties: {
-          "title": { ... }
-          "subtitle": { ...}
-        }
-        fields: {
-          "analyzed": {
-            type: "text",
-            "analyzer": "danish"
-          }
-        }
-      }
-    }
-  }
-}
-*/
-
 fields = [
   'text.title',
   'text.content_html',
@@ -106,7 +65,6 @@ class ElasticSearchClient {
 
     const mappings = { _doc: {} };
     const handle = (obj, name, remaining) => {
-      console.log('handle: ', name, remaining);
       if (remaining.length === 0) {
         obj.properties = obj.properties || {};
         obj.properties[name] = {
@@ -135,16 +93,25 @@ class ElasticSearchClient {
       handle(mappings._doc, name, pathItems);
     });
 
-    console.log(JSON.stringify({ mappings }, null, 2));
+    //console.log(JSON.stringify({ mappings }, null, 2));
     return fetch(URL, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ mappings }),
-    }).then(res => {
-      if (res.status !== 200) {
-        console.log(res.text());
-      }
-    });
+    })
+      .then(res => {
+        if (res.status !== 200) {
+          return res.text();
+        }
+      })
+      .then(body => {
+        if (body) {
+          // Vores PUT smider en fejl, hvis indexet allerede eksisterer.
+          // Dette ignorerer vi. Enable nedenstående console.log hvis noget (andet)
+          // fejler.
+          //console.log(body);
+        }
+      });
   }
 
   create(index, id, json) {
