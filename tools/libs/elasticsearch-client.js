@@ -42,7 +42,7 @@ const indexingQueue = queue((task, callback) => {
     });
 }, 100);
 
-fields = [
+const fields = [
   'text.title',
   'text.content_html',
   'text.subtitles',
@@ -136,6 +136,7 @@ class ElasticSearchClient {
                 type: 'most_fields',
                 query: query,
                 fields: [
+                  // TODO: Byg nedenstående ud fra fields foroven.
                   'text.title',
                   'text.title.analyzed',
                   'text.content_html',
