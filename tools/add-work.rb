@@ -14,15 +14,20 @@ if (!File.directory?(folder))
     abort("Mappen #{folder} findes ikke.")
 end
 
-puts "Skriv år: "
-year = STDIN.gets.strip
+puts "Skriv værk-id: "
+workId = STDIN.gets.strip
+year = nil
+if m = workId.match(/\d\d\d\d/)
+    year = m[0]
+else 
+    abort("Værk-id skal indeholde fire cifre")
+end
 puts "Skriv titel: "
-title= STDIN.gets.strip
-
+title = STDIN.gets.strip
 
 lines = %{<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="#{year}" author="#{poetid}" status="incomplete" type="poetry">
+<kalliopework id="#{workId}" author="#{poetid}" status="incomplete" type="poetry">
 <workhead>
     <title>#{title}</title>
     <year>#{year}</year>
@@ -32,7 +37,7 @@ lines = %{<?xml version="1.0" encoding="UTF-8"?>
 </kalliopework>
 }
 
-path = "#{folder}/#{year}.xml"
+path = "#{folder}/#{workId}.xml"
 
 if (File.file?(path))
     abort("Filen #{path} eksisterer.")
