@@ -5,10 +5,13 @@
    <title>Ungdom i Digt og Sang</title>
    <year>1879</year>
    <notes>
-      <note>Gengivet efter Holger Drachmann: <i>Poetiske Skrifter</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1927, bd. I, pp. 138-181.</note>
+      <note>De fleste tekster er gengivet efter Holger Drachmann: <i>Poetiske Skrifter</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1927, bd. I, pp. 138-181.</note>
    </notes>
-   <quality>korrektur1,kilde</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+    <pictures>
+        <picture src="1879-p1.jpg">Forsiden til <i>Ungdom i Digt og Sang</i> (1879).</picture>
+    </pictures>
+    <source facsimile="11530805172D_color" facsimile-pages-num="390" facsimile-pages-offset="22">Holger Drachmann: <i>Ungdom i Digt og Sang</i>, Gyldendal, Kbh., 1879.</source>
+    <!-- Der mangler vist et titelblad i bogen - hvilket ikke udgøres af den illustrerede forside. --> 
 </workhead>
 <workbody>
 
@@ -18,7 +21,7 @@
    <toctitle>Til Bjørnstjerne Bjørnson</toctitle>
    <indextitle>Til Bjørnstjerne Bjørnson</indextitle>
    <firstline>Det er, saa tilpas, et Decennium siden</firstline>
-   <source pages="IX-XVI"/>
+   <source pages="IX-XVI" facsimile-pages="15-22"/>
    <quality>korrektur1,kilde</quality>
    <keywords>bjoernson</keywords>
 </head>
