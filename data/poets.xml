@@ -2563,7 +2563,7 @@
       <place>København</place>
     </dead>
   </period>
-  <works>andre</works>
+  <works>1803,andre</works>
 </person>
 
 <person id="weyse" country="dk" lang="da" type="poet">
@@ -3891,7 +3891,7 @@
       <place>Odense</place>
     </dead>
   </period>
-  <works>1885,1894,1900</works>
+  <works>1885,1889,1892,1894,1896,1898,1900</works>
 </person>
 
 
@@ -6010,6 +6010,24 @@
   </period>
 </person>
 
+<person id="runeberg" country="un" lang="sv" type="poet">
+  <name>
+    <firstname>Johan Ludvig</firstname>
+    <lastname>Runeberg</lastname>
+    <!-- I virkeligheden finsk, men skrev på svensk. -->
+  </name>
+  <period>
+    <born>
+      <date>1804-02-05</date>
+      <place>Pietarsaari/Jakobstad</place>
+    </born>
+    <dead>
+      <date>1877-05-06</date>
+      <place>Porvoo/Borgå</place>
+    </dead>
+  </period>
+  <works>1848</works>
+</person>
 
 <person id="rydberg" country="se" lang="sv" type="poet">
   <name>
@@ -8855,6 +8873,7 @@
       <place>Frederiksberg</place>
     </dead>
   </period>
+  <works>1848,1849,1849a</works>
 </person>
 
 <person id="valloee" country="dk" lang="da" type="poet">
@@ -8892,6 +8911,7 @@
       <place>København</place>
     </dead>
   </period>
+  <works>1856</works>
 </person>
 
 <person id="iversen" country="dk" lang="da" type="poet">
@@ -8946,6 +8966,7 @@
       <place>København</place>
     </dead>
   </period>
+  <works>1859,1898</works>
 </person>
 
 <person id="waage" country="dk" lang="da" type="poet">
@@ -8986,15 +9007,19 @@
   <name>
     <firstname>Edvard</firstname>
     <lastname>Søderberg</lastname>
+    <fullname>Hakon Charles Edvard Søderberg</fullname>
   </name>
   <period>
     <born>
       <date>1869</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1906</date>
+      <place>København</place>
     </dead>
   </period>
+  <works>1900</works>
 </person>
 
 <person id="schmidtt" country="dk" lang="da" type="poet">
@@ -9004,12 +9029,15 @@
   </name>
   <period>
     <born>
-      <date>1847</date>
+      <date>1847-12-07</date>
+      <place>Fohl</place>
     </born>
     <dead>
-      <date>1909</date>
+      <date>1909-12-17</date>
     </dead>
   </period>
+  <works>1944</works>
+  <!-- Fanøs digter. Læs meget mere på http://www.mitfanoe.dk/index.php/da/tema-artikler/persongalleri/874-thomas-schmidt-familie-og-lobebane -->
 </person>
 
 <person id="schneider" country="dk" lang="da" type="poet">
@@ -9021,12 +9049,14 @@
   <period>
     <born>
       <date>1884-12-02</date>
-      <place>København</place>
+      <place>Frederiksberg</place>
     </born>
     <dead>
       <date>1910-02-27</date>
+      <place>København</place>
     </dead>
   </period>
+  <works>1909,1917</works>
 </person>
 
 <person id="blaumueller" country="dk" lang="da" type="poet">
@@ -9062,6 +9092,7 @@
       <place>Frederiksberg</place>
     </dead>
   </period>
+  <works>1908</works>
 </person>
 
 <person id="bahnson" country="dk" lang="da" type="poet">
@@ -9081,7 +9112,7 @@
   </period>
 </person>
 
-<person id="nielsen" country="dk" lang="da" type="poet">
+<person id="nielseni" country="dk" lang="da" type="poet">
   <name>
     <firstname>Iben</firstname>
     <lastname>Nielsen</lastname>
@@ -9102,15 +9133,18 @@
   <name>
     <firstname>Aage</firstname>
     <lastname>Hoffmeyer</lastname>
+    <!-- tegner, cand. phil. -->
   </name>
   <period>
     <born>
       <date>1867</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1924</date>
     </dead>
   </period>
+  <works>1915,1918</works>
 </person>
 
 <person id="bange" country="dk" lang="da" type="poet">
@@ -9129,7 +9163,7 @@
   </period>
 </person>
 
-<person id="hansen" country="dk" lang="da" type="poet">
+<person id="hansenpcv" country="dk" lang="da" type="poet">
   <name>
     <firstname>P.C.V.</firstname>
     <lastname>Hansen</lastname>
@@ -9145,6 +9179,7 @@
       <place>København</place>
     </dead>
   </period>
+  <works>1916,1920</works>
 </person>
 
 <person id="sandvad" country="dk" lang="da" type="poet">
@@ -9161,6 +9196,7 @@
       <date>1929-09-13</date>
     </dead>
   </period>
+  <works>1927</works>
 </person>
 
 <person id="kaarsberg" country="dk" lang="da" type="poet">
@@ -9205,6 +9241,7 @@
   <name>
     <firstname>Rolf</firstname>
     <lastname>Harboe</lastname>
+    <fullname>Rolf Gunnersen Harboe</fullname>
   </name>
   <period>
     <born>
@@ -9213,8 +9250,10 @@
     </born>
     <dead>
       <date>1938-12-13</date>
+      <place>Frederiksberg</place>
     </dead>
   </period>
+  <works>1891,1898,1902,1906,1910,1915,1916</works>
 </person>
 
 <person id="egeberg" country="dk" lang="da" type="poet">
@@ -9315,8 +9354,10 @@
     </born>
     <dead>
       <date>1940-08-05</date>
+      <place>Struer</place>
     </dead>
   </period>
+  <works>1921</works>
 </person>
 
 <person id="bech" country="dk" lang="da" type="poet">
@@ -9353,6 +9394,7 @@
       <date>1943-02-25</date>
     </dead>
   </period>
+  <works>1905,1908,1910,1920,1926</works>
 </person>
 
 <person id="pontoppidan" country="dk" lang="da" type="poet">
@@ -9405,6 +9447,7 @@
       <place>Dortheasminde</place>
     </dead>
   </period>
+  <works>1896,1904,1932,1937,1939</works>
 </person>
 
 <person id="barfod" country="dk" lang="da" type="poet">
@@ -9449,6 +9492,7 @@
   <name>
     <firstname>Axel</firstname>
     <lastname>Juel</lastname>
+    <fullname>Axel Niels Christian Juel</fullname>
   </name>
   <period>
     <born>
@@ -9460,6 +9504,7 @@
       <place>Charlottenlund</place>
     </dead>
   </period>
+  <works>1909,1909f,1915,1915v,1917,1918,1919,1920,1921,1923,1924,1929,1932,1934,1936,1939,1941,1942,1947,1952</works>
 </person>
 
 <person id="lundotto" country="dk" lang="da" type="poet">
@@ -9511,6 +9556,7 @@
       <date>1948-11-03</date>
     </dead>
   </period>
+  <works>1935,1937,1942,1945,1949</works>
 </person>
 
 <person id="hermann" country="dk" lang="da" type="poet">
@@ -9548,6 +9594,7 @@
       <place>Lyngby</place>
     </dead>
   </period>
+  <works>1899,1902,1905,1907,1911,1913,1916,1918,1919,1920,1921,1923,1926,1926b,1931,1941,1944,1945</works>
 </person>
 
 <person id="lunde" country="dk" lang="da" type="poet">
@@ -9563,6 +9610,82 @@
     </born>
     <dead>
       <date>1949-10-02</date>
+      <place>Nyborg</place>
+    </dead>
+  </period>
+  <works>1903,1905,1908,1920,1920v,1923,1926,1928,1936,1941</works>
+</person>
+
+<!--
+<person id="plautus" country="un" lang="la" type="poet">
+  <name>
+    <firstname>Titus Maccius</firstname>
+    <lastname>Plautus</lastname>
+  </name>
+  <period>
+    <born>
+      <date>-254</date>
+      <place>Sarsina</place>
+    </born>
+    <dead>
+      <date>-184 ca.</date>
+      <place>Rom</place>
+    </dead>
+  </period>
+</person>
+-->
+
+<person id="hafez" country="un" lang="pe" type="poet">
+  <name>
+    <firstname>Shams al-din</firstname>
+    <lastname>Hafez</lastname>
+    <fullname>Khwāje Šamsod-dīn Mohammad Hāfez-e Šīrāzī</fullname>
+    <christened>خواجه شمسالدین محمد حافظ شیرازی</christened>
+  </name>
+  <period>
+    <born>
+      <date>1320</date>
+      <place>Shiraz (nuværende Iran)</place>
+    </born>
+    <dead>
+      <date>1390</date>
+      <place>Shiraz</place>
+    </dead>
+  </period>
+</person>
+
+<person id="cervantes" country="un" lang="sp" type="poet">
+  <name>
+    <firstname>Miguel de</firstname>
+    <lastname>Cervantes</lastname>
+    <fullname>Miguel de Cervantes Saavedra</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1547-09-29</date>
+      <place>Alcalá de Henares, Spanien</place>
+    </born>
+    <dead>
+      <date>1616-04-22</date>
+      <place>Madrid</place>
+    </dead>
+  </period>
+</person>
+
+<person id="calderon" country="un" lang="da" type="poet">
+  <name>
+    <firstname>Pedro</firstname>
+    <lastname>Calderón de la Barca</lastname>
+    <fullname>Pedro Calderón de la Barca y Barreda González de Henao Ruiz de Blasco y Riaño</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1600-01-17</date>
+      <place>Madrid</place>
+    </born>
+    <dead>
+      <date>1681-05-25</date>
+      <place>Madrid</place>
     </dead>
   </period>
 </person>
