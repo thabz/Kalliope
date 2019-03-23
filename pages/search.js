@@ -10,10 +10,11 @@ import Nav, { kalliopeCrumbs, poetCrumbsWithTitle } from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import { KalliopeTabs, PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
-import PoetName, {
+import {
   poetNameString,
   poetGenetiveLastName,
-} from '../components/poetname.js';
+} from '../components/poetname-helpers.js';
+import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import TextName from '../components/textname.js';
 import * as Strings from './helpers/strings.js';

@@ -145,6 +145,9 @@ const htmlToXml = (
         .replace(/\n *(====*) *\n/g, (match, p1) => {
           return `\n<hr width="${p1.length}" class="double"/>\n`;
         })
+        .replace(/^( +)/gm, (match, p1) => {
+          return '&nbsp;'.repeat(2 * p1.length);
+        })
         .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
           // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
           return `<nonum>${p1}</nonum>`;
@@ -152,9 +155,6 @@ const htmlToXml = (
         .replace(/^\n/, '')
         .replace(/^ *(<right>.*)$/gm, '$1')
         .replace(/^ *(<center>.*)$/gm, '$1')
-        .replace(/^( +)/gm, (match, p1) => {
-          return '&nbsp;'.repeat(2 * p1.length);
-        })
     )
   );
 
