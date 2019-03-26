@@ -25,6 +25,7 @@ const regexps = [
   ///iii/, // Problematisk da den rammer lowercase romertal. Fiks fejlere og drop reglen.
   /lll/,
   /,;/,
+  /,\./,
   {
     regexp: /;,/,
     whitelist: [/&/],
