@@ -1,6 +1,7 @@
 #!/usr/bin/ruby
 
 @rules = [
+'\^/ ',    
 'V /V',    
 'A /A',    
 'T /T',    
@@ -25,6 +26,8 @@
 'sijon/skjøn',
 'stjon/skjøn',
 'stjsn/skjøn',
+'stiondt/skiøndt',
+'stionne/skiønne',
 'brsd/brød',
 'kjobe/kjøbe',
 'doem/dæm',
@@ -84,6 +87,7 @@
 'stsd/stød',
 'storre/større',
 'ftaae/staae',
+'(\W)ftal/\1skal',
 'Oie/Øie',
 'Oje/Øje',
 'Ojne/Øjne',
@@ -110,6 +114,7 @@
 'O g /Og ',
 'Krast/Kraft',
 'Kroeft/Kræft',
+'dct(\W)/det\1',
 'forst(\W)/først\1',
 'forste(\W)/første\1',
 'førfte/første',
@@ -180,6 +185,7 @@
 'Bp/Bø',
 'Orne/Ørne',
 'Oin/Øin',
+'kiort/kiørt',
 'skion/skiøn',
 'Groes/Græs',
 'Skion/Skiøn',

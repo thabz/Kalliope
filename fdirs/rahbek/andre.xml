@@ -6,6 +6,7 @@
    <year>?</year>
    <quality>korrektur1</quality>
    <cvs-timestamp>$Id$</cvs-timestamp>
+   <source id="wilhelm-meister-1801" facsimile="130019095941_color" facsimile-pages-num="608" facsimile-pages-offset="306"><i>Wilhelm Meisters Læreaar, en Roman</i>, K.L. Rahbek (oversætter), Kbh., 1801, Tredie Bog.</source>
 </workhead>
 <workbody>
 
@@ -1411,13 +1412,12 @@ Saa fylder da Glasset til Skummende Maal:
 <poem id="rahbek2001061313">
 <head>
    <title>Der er et Land, Citronen blomstrer vildt</title>
-   <toctitle>Der er et Land, Citronen blomstrer vildt</toctitle>
-   <indextitle>Der er et Land, Citronen blomstrer vildt</indextitle>
    <firstline>Der er et Land, Citronen blomstrer vildt</firstline>
    <notes>
       <note type="credits">Bidrag fra Margit Ammentorp.</note>
       <note>Indtastet fra <i>Digter-Krands - En Samling af udkaarede ældre og nyere Selskabssange</i>, Odense, 1826. Trykker og udgiver er S. Hempel "Eier af Fyens Adressekontoir".</note>
       <note>Gendigtning af Goethes <xref type="translation" poem="goethe2001111901"/>.</note>
+      <!-- TODO: Der findes en lidt alternativ oversættelse i Rahbeks oversættelse af Wilhelm Meisters Læreaar, en Roman (1801). Se PDF Bd. 1-2, pdf-side 311-312. -->
    </notes>
    <quality>korrektur1,kilde</quality>
    <keywords>drikkevise</keywords>
@@ -2390,5 +2390,41 @@ Blid du smile til Enhver,
 som er dine Glæder værd!
 </body>
 </poem>
+
+<poem id="rahbek2019021110">
+<head>
+   <title>Veed du et Land, Citronen blomstrer vildt</title>
+   <firstline>Veed du et Land, Citronen blomstrer vildt</firstline>
+   <notes>
+       <note>Oversættelse af Goethes <xref type="translation" poem="goethe2001111901"/>.</note>
+       <note>Der findes en variant af Rahbeks oversættelse: <xref poem="rahbek2001061313"/>.</note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+   <source in="wilhelm-meister-1801" pages="3-4"/>
+</head>
+<body>
+Veed du et Land, Citronen blomstrer vildt, 
+Bag mørke Løv Orangen grønnes mildt,
+En sagte Kiøling giennem Egnen gaaer,
+Hvor Myrthen blid hos Olietræet staaer. 
+Veed du det Land! Didhen! didhen! 
+Hvor sødt at tye med dig, min elskte Ven!
+
+    Der er et Huus, dets Tag paa Søiler lagt, 
+Høi Salen er, og straalende med Pragt;
+Hvert Marmorbilled smiler huldt til mig.
+Du arme, arme Barn! hvad giør man dig?
+O elskte Huus! didhen! didhen!
+Hvor sødt at tye med dig, Beskytter, Ven!    
+
+    Veed du det Bierg, hvis Fodstie øines ei, 
+I Taage Mulen søger der sin Vei,
+I Klippens Rifte ruger Dragen grum
+Og Fieldet styrter ned i Fossens Skum. 
+Veed du det Bjerg! didhen! didhen, 
+Gaaer vores Vei! o Fader drag didhen.
+</body>
+</poem>
+
 </workbody>
 </kalliopework>

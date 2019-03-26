@@ -57,6 +57,8 @@
     <head><xsl:text>&#xa;</xsl:text>
       <xsl:text>    </xsl:text><title><xsl:value-of select="head"/></title><xsl:text>&#xa;</xsl:text>
       <xsl:text>    </xsl:text><firstline>xx</firstline><xsl:text>&#xa;</xsl:text>
+      <xsl:text>    </xsl:text><quality>korrektur1,kilde,side</quality><xsl:text>&#xa;</xsl:text>
+      <xsl:text>    </xsl:text><source pages=""/><xsl:text>&#xa;</xsl:text>
     </head><xsl:text>&#xa;</xsl:text>
     <body><xsl:text>&#xa;</xsl:text>
         <xsl:apply-templates select="lg|p|sp|stage"/>

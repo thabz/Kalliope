@@ -11,9 +11,12 @@ function flatten(arr) {
 // Regulære expressions som fanger typiske fejl i vores XML.
 // Disse kan enten være et regexp direkte eller et regexp med en whitelist.
 const regexps = [
+  /\^/,
   /^,[a-zæøåA-ZÆØÅ]/m,  // Enkelt komma først på linjen
   /^\s[-a-zæøåA-ZÆØÅ]/m, // Enkelt mellemrum først på linjen
   /^\.[a-zæøåA-ZÆØÅ]/m, // Enkelt punktum ...
+  {regexp: /[a-zæøå] \.[^\.]/,
+  whitelist: [/\. \. \./]}, // Mellemrum foran punktum
   /^-[a-zæøåA-ZÆØÅ]/m,   // Enkelt bindestreg ...
   /<firstline><\/firstline>/,   // Tom <firstline> ...
   {regexp: /[a-zæøå],[a-zæøå]/,
