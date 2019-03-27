@@ -3420,6 +3420,24 @@
   <works>andre</works>
 </person>
 
+<person id="lundbye" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>J.Th.</firstname>
+    <lastname>Lundbye</lastname>
+    <fullname>Johan Thomas Lundbye</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1818-09-01</date>
+      <place>Kalundborg</place>
+    </born>
+    <dead>
+      <date>1848-04-26</date>
+      <place>Bedsted</place>
+    </dead>
+  </period>
+</person>
+
 <person id="molbech" country="dk" lang="da" type="poet">
   <name>
     <firstname>Chr.K.F.</firstname>
