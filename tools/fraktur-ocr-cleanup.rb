@@ -199,6 +199,7 @@
 'Orne/Ørne',
 'Oin/Øin',
 'kiort/kiørt',
+'Kiobe/Kiøbe',
 'skion/skiøn',
 'flion/skiøn',
 'skisn/skiøn',
