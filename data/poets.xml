@@ -3456,6 +3456,24 @@
   <works>andre</works>
 </person>
 
+<person id="lundbye" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>J.Th.</firstname>
+    <lastname>Lundbye</lastname>
+    <fullname>Johan Thomas Lundbye</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1818-09-01</date>
+      <place>Kalundborg</place>
+    </born>
+    <dead>
+      <date>1848-04-26</date>
+      <place>Bedsted</place>
+    </dead>
+  </period>
+</person>
+
 <person id="molbech" country="dk" lang="da" type="poet">
   <name>
     <firstname>Chr.K.F.</firstname>
@@ -6079,7 +6097,7 @@
       <place>Porvoo/Borgå</place>
     </dead>
   </period>
-  <works>1848</works>
+  <works>1830,1848</works>
 </person>
 
 <person id="rydberg" country="se" lang="sv" type="poet">
@@ -9360,8 +9378,10 @@
     </born>
     <dead>
       <date>1939-09-25</date>
+      <place>København</place>
     </dead>
   </period>
+  <works>1896,1927</works>
 </person>
 
 <person id="gravlund" country="dk" lang="da" type="poet">
