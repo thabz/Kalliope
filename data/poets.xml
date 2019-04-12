@@ -664,7 +664,8 @@
   <works>1827,1834,1844,deutsch,1851,1854,andre</works>
 </person>
 
-<person id="lenau" country="de" lang="de" type="poet">
+<person id="lenau" country="un" lang="de" type="poet">
+  <!-- Østrisk digter -->
   <name>
     <firstname>Nikolaus</firstname>
     <lastname>Lenau</lastname>
@@ -2441,7 +2442,7 @@
       <place>København</place>
     </dead>
   </period>
-  <works>andre</works>
+  <works>1803,andre</works>
 </person>
 
 <person id="baggesen" country="dk" lang="da" type="poet">
@@ -6063,7 +6064,7 @@
       <place>Porvoo/Borgå</place>
     </dead>
   </period>
-  <works>1848</works>
+  <works>1830,1848</works>
 </person>
 
 <person id="rydberg" country="se" lang="sv" type="poet">
@@ -9344,8 +9345,10 @@
     </born>
     <dead>
       <date>1939-09-25</date>
+      <place>København</place>
     </dead>
   </period>
+  <works>1896,1927</works>
 </person>
 
 <person id="gravlund" country="dk" lang="da" type="poet">
