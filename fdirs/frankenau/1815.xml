@@ -10,17 +10,19 @@
         <note>Noter med en foranstillet asterisk er digterens egne.</note>
     </notes>
     <pictures>
-        <picture src="1815-p1.jpg">Titelbladet til <i>Nytaarsgave for 1815</i> (1815) lyder ,,''.</picture>
+        <picture src="1815-p1.jpg">Første titelblad lyder ,,Nytaarsgave / for 1815. // En Samling af Digte / af / R. Frankenau / Dr. Med. // Kiøbenhavn. / Forlagt af Fr. Brummer. / Trykt hos C. Græbe.''</picture>
+        <picture src="1815-p2.jpg">Andet titelblad lyder ,,Samlede Digte // ved / R. Frankenau / Dr. Med. // Kiøbenhavn. / Forlagt af Fr. Brummer. / Trykt hos C. Græbe.''</picture>
+        <picture src="1815-p3.jpg">Didikationsbladet lyder ,,Alle / Veninder og Venner / i / Hovedstaden / samt Andre / der yndede mine Digterarbejder / helliges de her / samlede, / med varm Taknemmeligheds / Følelse, / for / det uventede Bifald / de havde nydt / og endnu nyde.''</picture>
     </pictures>
     <!-- TODO: Fiks alle [..] og ?? -->
-    <source facsimile="115308054964_color" facsimile-pages-num="366" facsimile-pages-offset="10">Rasmus Frankenau: <i>Nytaarsgave for 1815</i>, Fr. Brummer, Kbh., 1815.</source>
+    <source facsimile="115308054964_color" facsimile-pages-num="366" facsimile-pages-offset="20">Rasmus Frankenau: <i>Nytaarsgave for 1815</i>, Fr. Brummer, Kbh., 1815.</source>
 </workhead>
 <workbody>
 
 <prose id="frankenau2019041201">
 <head>
     <title>Til Læseren</title>
-    <source pages="V-VIII" facsimile-pages="10" />
+    <source pages="V-VIII" facsimile-pages="13-16" />
     <keywords>ewald</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -597,7 +599,7 @@ dit, og dine Rosers Muld !
     <firstline>Veed du den Zone, hvor Citronen groer?</firstline>
     <notes>
         <note>Gendigtning af Goethes <xref poem="goethe2001111901"/>.</note>
-        <note>Bidrag fra Margit Ammentorp</note>
+        <note type="credits">Bidrag fra Margit Ammentorp</note>
     </notes>
     <source pages="30-32"/>
     <quality>korrektur1,kilde,side</quality>
@@ -1163,7 +1165,7 @@ og høit til Glædens Priis min Harpe staae. -
     <subtitle>1798</subtitle>
     <firstline>Jeg veed en Blomst i Floras Have</firstline>
     <notes>
-        <note>Bidrag fra Margit Ammentorp.</note>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
     </notes>
     <source pages="60-61"/>
     <quality>korrektur1,kilde,side</quality>
@@ -3145,7 +3147,7 @@ skal giennemstrømme alle Zoner.
     <title>Til Venskab</title>
     <firstline>Smiil, Venskab! til vort Samfund ned</firstline>
     <notes>
-        <note>Bidrag fra Margit Ammentorp.</note>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
     </notes>
     <source pages="163-165"/>
     <keywords>drikkevise</keywords>
@@ -3408,7 +3410,7 @@ hvor de, mod Fienden staae!
     <subtitle>(efter Hølty)</subtitle>
     <firstline>Hvo vilde sig med Griller plage</firstline>
     <notes>
-        <note>Gendigtning af L. C. H. Hölty: <xref poem="holty2018040801"/>.</note>
+        <note>Gendigtning af L. C. H. Hölty: <xref poem="holty2018070701"/>.</note>
     </notes>
     <source pages="176-177"/>
     <quality>korrektur1,kilde,side</quality>
@@ -5264,11 +5266,15 @@ Og stemmer Llle, Alle i:
 </body>
 </poem>
 
-<poem id="frankenau2019041267">
+<poem id="frankenau2001070309">
 <head>
     <title>Lystig min Broder! og lystig igien!</title>
     <subtitle>Mel. Giver i Bollen og Glasset frembær.</subtitle>
     <firstline>Lystig min Broder! og lystig igien!</firstline>
+   <notes>
+      <note>Ogsaa bekjendt under denne Begyndelse: Punktuli!  Punktuli! lystig min Ven</note>
+      <note type="credits">Bidrag fra Margit Ammentorp.</note>
+   </notes>
     <source pages="277-279"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5314,10 +5320,13 @@ Skall hver, som klinker, og stemmer i med mig:
 </body>
 </poem>
 
-<poem id="frankenau2019041268">
+<poem id="frankenau2001070317">
 <head>
     <title>Trindt om os lyder englemild</title>
     <firstline>Trindt om os lyder englemild</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
     <source pages="279-281"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5352,10 +5361,13 @@ Før du fra Venskab, Kys, og Spøg maae døe!
 </body>
 </poem>
 
-<poem id="frankenau2019041269">
+<poem id="frankenau2001053004">
 <head>
     <title>Det skummende Bæger begynde sin Gang</title>
     <firstline>Det skummende Bæger begynde sin Gang</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
     <source pages="281-282"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5437,17 +5449,20 @@ Den hvide med den røde!
 </body>
 </poem>
 
-<poem id="frankenau2019041271">
+<poem id="frankenau2001070307">
 <head>
     <title>Lad Mennesker dræbes, og Riger forgaae!</title>
     <subtitle>Mel. Det skummende Bæger begynde etc.</subtitle>
     <firstline>Lad Mennesker dræbes, og Riger forgaae!</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
     <source pages="285-287"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Lad Mennesker dræbes, og Riger forgaae!
-Tyranner og Bonzar jo styre det saa;
+Tyranner og Bonzer jo styre det saa;
 De Daarer maae troe paa en underlig Gud,
 Jeg lyder Naturens velgiørende Bud;
 Til Enigheds Glæder blev Mennesket skabt,
@@ -5483,10 +5498,13 @@ Den frydløse Dag er for evig fortabt.
 </body>
 </poem>
 
-<poem id="frankenau2019041272">
+<poem id="frankenau2001070308">
 <head>
     <title>Langt meer end Guld er Druen værd</title>
     <firstline>Langt meer end Guld er Druen værd</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
     <source pages="287-288"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5565,11 +5583,14 @@ Nag til Fryd kun Daaren har.
 </body>
 </poem>
 
-<poem id="frankenau2019041274">
+<poem id="frankenau2001060302">
 <head>
     <title>Høit leve, hvo ved Bægerklang</title>
     <subtitle>Mel. Ich bin der Vogelfänger, ja.</subtitle>
     <firstline>Høit leve, hvo ved Bægerklang</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
     <source pages="291-292"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6422,11 +6443,14 @@ O! denne Trøst er Salighed!
 </body>
 </poem>
 
-<poem id="frankenau2019041293">
+<poem id="frankenau2001070302">
 <head>
     <title>Venskabs Værd</title>
     <subtitle>(Efter det Tydske.)</subtitle>
     <firstline>Ei blot for denne Sorgens Dal</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
     <source pages="332-334"/>
     <!-- TODO: Find originalen -->
     <quality>korrektur1,kilde,side</quality>
