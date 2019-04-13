@@ -4,14 +4,15 @@ import React, { Fragment } from 'react';
 import { Link } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
-import Nav, { NavPaging } from '../components/nav';
+import Nav, { NavPaging, textCrumbs } from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
 import TOC from '../components/toc.js';
-import PoetName, { poetNameString } from '../components/poetname.js';
+import PoetName from '../components/poetname.js';
+import { poetNameString } from '../components/poetname-helpers.js';
 import { workTitleString } from '../components/workname.js';
 import TextName, {
   textTitleString,
@@ -105,7 +106,7 @@ class TextHeading extends React.Component<TextHeadingProps> {
         {subtitles}
         <style jsx>{`
           .text-heading :global(h2) {
-            line-height: 1.4em;
+            line-height: 1.6;
             font-size: 1.4em;
             font-weight: normal;
             margin: 0 0 15px 0;
@@ -114,7 +115,7 @@ class TextHeading extends React.Component<TextHeadingProps> {
           }
           .text-heading :global(h4) {
             font-size: 1.05em;
-            line-height: 1.05em;
+            line-height: 1.6;
             font-weight: normal;
             margin: 0 0 0px 0;
             padding: 0;
@@ -321,9 +322,17 @@ export default class extends React.Component<TextComponentProps> {
 
     let renderedVariants = null;
     if (variants.length > 0) {
+      let heading = null;
+      if (text.text_type === 'section') {
+        heading = 'Varianter af denne samling:';
+      } else if (text.text_type === 'poem') {
+        heading = 'Varianter af dette digt:';
+      } else if (text.text_type === 'prose') {
+        heading = 'Varianter af denne tekst:';
+      }
       renderedVariants = (
         <div className="variants">
-          <p>Varianter af dette digt:</p>
+          <p>{heading}</p>
           {variants}
           <style jsx>{`
             @media print {
@@ -434,11 +443,8 @@ export default class extends React.Component<TextComponentProps> {
           <Main>
             <Nav
               lang={lang}
-              poet={poet}
-              work={work}
+              crumbs={textCrumbs(lang, poet, work, section_titles || [], text)}
               rightSide={rightSide}
-              sectionTitles={section_titles}
-              title={textLinkTitleString(text)}
             />
             <Heading title={title} subtitle="Værker" />
             <PoetTabs lang={lang} poet={poet} selected="works" />

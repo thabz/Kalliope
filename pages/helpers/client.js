@@ -88,6 +88,7 @@ export type FetchWorkResult = {
   work: Work,
   toc: Array<TocItem>,
   notes: Array<NoteItem>,
+  subworks: ?Array<Work>,
   pictures: Array<PictureItem>,
 };
 export const work = async (
@@ -102,6 +103,7 @@ export const work = async (
 export type FetchMuseumResult = {
   museum: Museum,
   artwork: Array<PictureItem>,
+  error: ?Error,
 };
 export const museum = async (
   museumId: MuseumId

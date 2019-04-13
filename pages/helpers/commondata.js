@@ -76,6 +76,13 @@ module.exports.countries = [
       en: 'North American',
     },
   },
+  {
+    code: 'un',
+    adjective: {
+      da: 'andre',
+      en: 'other',
+    },
+  },
 ];
 
 module.exports.backgroundLinkColor = 'hsla(353, 20%, 85%, 1)';

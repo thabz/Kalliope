@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link, Router } from '../routes';
 import * as Links from './links.js';
-import { poetGenetiveLastName } from './poetname.js';
+import { poetGenetiveLastName } from './poetname-helpers.js';
 import _ from '../pages/helpers/translations.js';
 import type { Lang, Poet, Country } from '../pages/helpers/types.js';
 import CommonData from '../pages/helpers/commondata.js';
@@ -249,20 +249,14 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
     );
 
     const itemsRendered = items.filter(item => !item.hide).map((item, i) => {
-      let className = 'tab';
-      let content = <h2>{item.title}</h2>;
-      if (item.id === selected) {
-        className += ' selected';
-      } else {
-        content = (
-          <Link route={item.url}>
-            <a>{content}</a>
-          </Link>
-        );
-      }
+      const className = item.id === selected ? 'tab selected' : 'tab';
       return (
         <div className={className} key={item.url}>
-          {content}
+          <Link route={item.url}>
+            <a>
+              <h2>{item.title}</h2>
+            </a>
+          </Link>
         </div>
       );
     });

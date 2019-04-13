@@ -48,7 +48,7 @@ class ElasticSearchClient {
             {
               multi_match: {
                 query: query,
-                fields: ['text.title', 'text.content_html'],
+                fields: ['text.title', 'text.content_html', 'text.subtitles'],
               },
             },
           ],
@@ -74,10 +74,9 @@ class ElasticSearchClient {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(body),
-    })
-      .then(res => {
-        return res.text();
-      })
+    }).then(res => {
+      return res.text();
+    });
   }
 }
 
