@@ -18,7 +18,7 @@
 </workhead>
 <workbody>
 
-<poem id="goldstein2019041101">
+<poem id="goldstein2019041101" variant="goldstein2019041220">
 <head>
     <title>Ouverture</title>
     <firstline>Vaaren var fløjet -</firstline>
@@ -70,7 +70,7 @@ Elskovsbaarne Hulken . . . .
 </body>
 </poem>
 
-<poem id="goldstein2019041102">
+<poem id="goldstein2019041102" variant="goldstein2019041210">
 <head>
     <title>Minder</title>
     <firstline>Elskovens Minder</firstline>
@@ -92,7 +92,7 @@ Glohede Digel.
 </body>
 </poem>
 
-<poem id="goldstein2019041103">
+<poem id="goldstein2019041103" variant="goldstein2019041201">
 <head>
     <title>Forraadt</title>
     <firstline>Der er ingen Sjæl paa Jorden</firstline>
@@ -122,7 +122,7 @@ Jeg elsker saa ømt som Dig.
 </body>
 </poem>
 
-<poem id="goldstein2019041104">
+<poem id="goldstein2019041104" variant="goldstein2019041202">
 <head>
     <title>Forgjort</title>
     <firstline>Du har spundet mig ind</firstline>
@@ -145,7 +145,7 @@ Isnende Bad.
 </body>
 </poem>
 
-<poem id="goldstein2019041105">
+<poem id="goldstein2019041105" variant="goldstein2019041207">
 <head>
     <title>Sejd</title>
     <firstline>Der var, da jeg mødte Dig første Gang</firstline>
@@ -206,7 +206,7 @@ Jeg <i>véd</i>, hvad der skjules bag Vaarens Skrud -
 </body>
 </poem>
 
-<poem id="goldstein2019041106">
+<poem id="goldstein2019041106" variant="goldstein2019041204">
 <head>
     <title>Elskov</title>
     <firstline>En Hede, der isner</firstline>
@@ -261,7 +261,7 @@ Efter Aaringer varsler den atter ind
 </body>
 </poem>
 
-<poem id="goldstein2019041108">
+<poem id="goldstein2019041108" variant="goldstein2019041217">
 <head>
     <title>To Sonetter til en Ven</title>
     <firstline>Forpint jeg laa i Julinattens Glød</firstline>
@@ -315,16 +315,20 @@ Men Hunnens Gift . . .
 </body>
 </poem>
 
-<poem id="goldstein2019041109">
+<section id="goldstein2019041109" level="3">
 <head>
     <title>Narreviser</title>
+</head>
+<content>
+
+<poem id="goldstein2019041401" variant="goldstein2019041211">
+<head>
+    <title><num>I.</num>For Graad og Bønner</title>
     <firstline>For Graad og Bønner</firstline>
-    <source pages="26-27"/>
+    <source pages="26"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<nonum><center>I</center></nonum>
-
 For Graad og Bønner
 Sviende Hug!
 - Spark og Spot
@@ -344,10 +348,17 @@ Men det vil jeg sige Dig
 Rent ud af Posen:
 Saa er Jomfru-Støvet
 Fejet af Rosen.
+</body>
+</poem>
 
-
-<nonum><center>II</center></nonum>
-
+<poem id="goldstein2019041402" variant="goldstein2019041209">
+<head>
+    <title><num>II.</num>Dine Træk er grove</title>
+    <firstline>For Graad og Bønner</firstline>
+    <source pages="27"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Dine Træk er grove,
 Din Hud er gusten og ru
 - Aldrig saa’ jeg en Jomfru
@@ -370,7 +381,10 @@ Saa isnende ildne mit Blod.
 </body>
 </poem>
 
-<poem id="goldstein2019041110">
+</content>
+</section> <!-- Narreviser -->
+
+<poem id="goldstein2019041110" variant="goldstein2019041219">
 <head>
     <title>I Tryllecirklen</title>
     <firstline>En Trolddoms snærende Masker</firstline>
@@ -581,7 +595,7 @@ Den er <i>stærk</i> som Døden
 </body>
 </poem>
 
-<poem id="goldstein2019041114">
+<poem id="goldstein2019041114" variant="goldstein2019041212">
 <head>
     <title>Scirocco</title>
     <firstline>Du er Vampyren, der suger</firstline>
@@ -601,7 +615,7 @@ Raser, hvor Blodstrømmen rulled’.
 </body>
 </poem>
 
-<poem id="goldstein2019041115">
+<poem id="goldstein2019041115" variant="goldstein2019041203">
 <head>
     <title>Tørke</title>
     <firstline>Jeg er som det skøre Lerkar</firstline>
@@ -629,7 +643,7 @@ Af Glohedens Gab.
 </body>
 </poem>
 
-<poem id="goldstein2019041116">
+<poem id="goldstein2019041116" variant="goldstein2019041214">
 <head>
     <title>Naade! Naade!</title>
     <firstline>Miserecordia!</firstline>
@@ -664,7 +678,7 @@ Blomstrer den giftig-ødsel.
 </body>
 </poem>
 
-<poem id="goldstein2019041118">
+<poem id="goldstein2019041118" variant="goldstein2019041206">
 <head>
     <title>Alruner</title>
     <firstline>Paa Fjældene, hvor mine Taarer fløde</firstline>
