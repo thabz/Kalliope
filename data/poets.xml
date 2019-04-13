@@ -3489,7 +3489,7 @@
       <date>1899-12-30</date>
     </dead>
   </period>
-  <works>1858,1862,1867</works>
+  <works>1858,1862,1867,1888</works>
 </person>
 
 <person id="wormp" country="dk" lang="da" type="poet">
@@ -7094,6 +7094,25 @@
     </dead>
   </period>
 </person>
+
+<person id="channing" country="us" lang="en" type="poet">
+  <name>
+    <firstname>William Ellery</firstname>
+    <lastname>Channing</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1818-11-29</date>
+      <place>Boston, Massachusetts</place>
+    </born>
+    <dead>
+      <date>1901-12-23</date>
+      <place>Concord, Massachusetts</place>
+    </dead>
+  </period>
+  <works>1843</works>
+</person>
+
 
 <person id="howe" country="us" lang="en" type="poet">
   <name>
