@@ -3,6 +3,7 @@ DIGTER:hoffmann
 FACSIMILE:115308063015_color
 FACSIMILE-SIDER:126
 NOTE:Anden afdeling indledes med mottoet ,,Den Tid, der randt, de Aar, som gik . . . / Og grøn stod Skov og gult stod Korn. / Men, aldrig glemt, klang Krigens Horn, /  klang dumpt -- bag alt -- en Dødsmusik.''
+TODO:Fiks formattering af dramaet. :%s/^KONGEN/{c:<sc>Kongen</s>}/
 
 SEKTION:I
 
@@ -1293,17 +1294,18 @@ Røsten langt borte, som hulker og dør . . .
 
 
 T:Waterloo
-F:
-SIDE:84-
+F:Sejren var nærmest
+SIDE:84-85
 
-T^VA Sejren var nærmest,
-M*J forvandledes alt,
+Sejren var nærmest,
+forvandledes alt,
 en Stjerne, en straalende,
 sluktes og faldt.
 Kanonerne tav.
 Der var kun et Hav
 af Mørke og Flugtens
 forvirrede Trav.
+
 Paa éngang, for altid,
 hvad vældigt var skabt
 af Rigernes Svøbe,
@@ -1312,14 +1314,16 @@ Tyst randt, hvor han stod,
 de Trofastes Blod.
 Det sidste — der standsed
 for evigt hans Fod.
+
 O, Herskernes Hersker,
 for høj til at naa — —
 Du kunde dog rammes,
-Du Øm i det Blaa!
+Du Ørn i det Blaa!
 De gav Dig ej Ro.
 Falk, Glente — de to,
 de jog Dig, de vog Dig
 med Næb og med Klo.
+
 Din brændende Brynde,
 Din bundløse Tørst . . .
 O, Du, som paa Jorden
@@ -1334,111 +1338,156 @@ SLUTSEKTION
 SEKTION:V
 
 T:Kongen
-F:
-SIDE:89-
+F:Ulykkesfugl - hvad vil du midt om Natten?
+SIDE:89-95
+
+{c:I}
 
 KONGEN
 Ulykkesfugl — hvad vil du midt om Natten?
 Hvad nyt — hvad ondt?
+
 MARSKEN
-Din Son — vort Haab . . .
+        Din Søn — vort Haab . . .
+
+KONGEN          
+                Prins Niels?
+
+MARSKEN
+Prins Niels, din Søn . . .
+
 KONGEN
+        Syg — saaret?
+
 MARSKEN
-Prins Niels, din Son . . .
-Prins Niels?
-KONGEN
-Syg — saaret?
-MARSKEN
+                Herre, Herre!
+
 KONGEN
 Naar — hvor — hvordan?
-Herre, Herre!
+
 MARSKEN
-Et Udfald, nu ved Midnat,
+            Et Udfald, nu ved Midnat,
 fra søndre Port — en Bøsses onde Kugle . . .
+
 KONGEN
 Fra hvem kom Kuglen?
+
 MARSKEN
-Vilde Horder stormed.
+            Vilde Horder stormed.
 Med Nød og Neppe, paa en Hest, blev Liget —
+
 KONGEN
 Han døde straks?
+
 MARSKEN
-Ja, ja.
+        Ja, ja.
+
 KONGEN
-Hvor ramt?
+            Hvor ramt?
+
 MARSKEN
-I Munden . . .
+                I Munden . . .
+
 KONGEN
 — Hvor har de lagt ham?
+
+MARSKEN
+            Herre, paa et Bord
 i Salen sover nu
+
+KONGEN
+            Saa kom - kom, kom!
+
 MARSKEN
-Herre, paa et Bord
-Saa kom — kom, kom!
-MARSKEN
-Sult, Sot og Dod — hvor haardt har Himlen ramt o s !
-II
+Sult, Sot og Død - hvor haardt har Himlen ramt os!
+
+
+{c:II}
+            
 KONGEN
 Hvor fuldt af mange Mænd . . . Hvad vil den Præst?
 Men ikke Fakler nok . . . Min Søn! Hvor er han?
 Min Søn — Niels, Niels . . . Med store isblaa Øjne
 betragter han sin Far — med Afgrundsøjne,
 der stirrer mod mig — mig, der endnu, endnu
-kan løfte Sværd, mens han — Prins Niels —
-hvidkindet
+kan løfte Sværd, mens han — Prins Niels — hvidkindet
 er evig vaabenløs — mens der er én,
 en Orm, som lever — Mænd som han og jeg,
 der spiser, sover, skønt de dræbte ham,
 som — skønt de dræbte ham — dog endnu lever . . .
+
 PRÆSTEN
 Tillad mig, Konge!
+
 KONGEN
-Ti!
+        Ti!
+
 PRÆSTEN
-Et Trøstens Ord.
+            Et Trøstens Ord.
+
 KONGEN
 Hævn! Eenting: Hævn!
+
 PRÆSTEN
-Hævn hører Herren til.
+            Hævn hører Herren til.
+
 KONGEN
 Jeg vil se Døden meje.
+
 PRÆSTEN
-Kun Guds Redskab
+            Kun Guds Redskab
 er han, du hader — sendt af Ham, som ene —
+
 KONGEN
 Kom Satans Engle nu med Helveds Brande
 at bringe Hjælp —
+
 PRÆSTEN
-Da var du Satans, dersom —
+                Da var du Satans, dersom —
+
 KONGEN
 Hvor er du, Marsk?
+
 PRÆSTEN
-Hør Ham, som var og er!
+                Hør Ham, som var og er!
+
 KONGEN
 Titusind Mand . . .
+
 PRÆSTEN
-Kun Een kan hjælpe nu.
+                Kun Een kan hjælpe nu.
+
 KONGEN
 Titusind Mand — lad Trommen gaa . . .
+
 PRÆSTEN
-F orrykte!
+                    Forrykte!
 Han, der kan slaa dig, som man slaar et Barn,
 Han, der er over dig, som Bjerget, Lynet —
 trods ikke mer, trods ikke Ham!
+
 KONGEN
-Afvej en!
-Paa Knæ!
-PRÆSTEN
-KONGEN
-Min Hest!
+                                Afvejen!
+
 PRÆSTEN
 Paa Knæ!
+
 KONGEN
-Titusind Dj ævle!
+        Min Hest!
+
+PRÆSTEN
+                Paa Knæ!
+
+KONGEN
+                        Titusind Djævle!
 Forgæves alt. Kast Præsten ud — bort alle!
 Bort, bort — jeg ved det, Marsk: du har ej Trøst,
 og Helved er i Pagt med ham derude,
 og jeg maa tørstig, dødsenstørstig, tørste.
-é
+
+
+{c:III}
+
 KONGEN
 Een Ting var Frelse — een: at du sprang op —
 nu, mens jeg sidder her — som fra en Søvn
@@ -1450,11 +1499,11 @@ er ikke Granskning værd — hans Vilje ske!
 Men vé hans Viljes Redskab! Glemt af mig
 er du, naar glemt er han, der tog dig fra mig,
 naar jeg har ikke mer, ved Nat og Gry,
-een Bøn: hans Hoved . . . Niels — ja, „Niels“ —
-du tier,
+een Bøn: _hans_ Hoved . . . Niels — ja, ,,Niels'' — du tier,
 du har ej Svar — og stod jeg op og raabte
-højt over Salen: „Niels “ — jeg fik ej Svar.
-Sorg, Smeite — Sorg; hvad er det vel: at sørge,
+højt over Salen: ,,Niels'' — jeg fik ej Svar.
+- - -
+Sorg, Smette — Sorg; hvad er det vel: at sørge,
 at miste, martres? — Der skal komme Stunder
 igen, igen — jeg ved det — hvor mit Sind
 kun sanser Sol, en Fugl, der fløjter, Hunden,
@@ -1465,8 +1514,8 @@ Men alting mister jeg i Nat paany.
 I glider fra mig — Du og Du og Du,
 i denne Stund — jer, som jeg elsked, ser jeg
 forsvinde, synke nu . . .
-Hvad er jeg — jeg, Mand, Konge, Sen og Fader —
-hvad er jeg uden det: at jeg har elsket,
+Hvad er jeg — jeg, Mand, Konge, Søn og Fader —
+hvad er jeg uden _det:_ at jeg har elsket,
 det, at jeg elsker jer? — Der er ej andet.
 Der er kun jer, kun Stjernerne — Niels, Niels!
 
@@ -1474,73 +1523,94 @@ SLUTSEKTION
 
 SEKTION:VI
 
-
 T:Valfart
-F:
-SIDE:99-
+F:Jeg rejste gennem Lande
+SIDE:99-104
 
-Hjemland*
+{c:I}
 
-T EG rejste gennem Lande,
+Jeg rejste gennem Lande,
 I hvor Lærker steg mod Sky,
 som for var danske Lande,
 med Mark og Bondeby.
+
 Jeg vandred over Torve,
 hvor Skilderhuse stod,
 hvis Sorte-Hvide-Sorte
 var fordum rødt som Blod.
+
+
 En gammel stille Kirke,
 en falmet Kongestol —:
 dér hang det danske Vaaben
 som en begravet Sol . . .
+
+
+{c:II}
+
 De Stæder, Fjorde, Sletter . . .
 Her kom min Far som Dreng.
 Og Gaderne var Danmark
 og Engen Danmarks Eng.
+
 Her stod min Farfars Vugge,
 her har han traadt sit Spor,
 til han fordrevet dræbtes
 af Mænd, der tog hans Jord.
+
 Jeg rejste gennem Lande,
 hvor Lærker sang i Sky.
 Og som en Fremmed kom jeg
 til mine Fædres By.
+
 Rundtom Marsken — milevidt.
 Byen —: Linde og Kanaler . . .
 Fremmed, fremmed, ikke mit,
 er det Sprog, som Byen taler.
+
 Her lød éngang Sprog ved Sprog,
 Barnets Modersmaal var tvende . . .
 Farfar — under Dannebrog
 slap Dig By og Marsk af Hænde.
+
 At Din Barndoms grønne Jord
 var det gamle danske Rige —
 intet Ord og intet Spor
 véd af Dit og mit at sige.
+
 Langt herfra Din Gravsten staar
 langt fra denne lave Slette
 og den dunkle Kirkegaard
-med Din Moders „Ruheståttew . . .
+med Din Moders ,,Ruhestätte'' . . .
+
 Drenge tyst ved Medestang.
 Drenge højt i store Grene.
 Saadan sprang Du her engang,
 mellem Brødrene og ene.
+
 Bølgen gaar og Græsset gror.
 Hvor er nu de Brødre henne?
 Da for Syd Du valgte Nord,
 gav Du Slip paa Ven og Frænde.
+
 Frænde ikke Frænde mer.
 Alting slettet, bristet, svundet.
 Hvad der end med Danmark sker —
 Dig og Dine har Du bundet.
+
 Her, hvor Slægtens gamle Hus
 staar og kan mig ikke kende —
 mere død — trods Sol og Sus —
 véd jeg ingen By end denne.
+
 Himlen høj, med Sommerskær.
 Gamle Linde og Kanaler . . .
 Ene — Farfar — er vi her,
 hvor kun Sorg, kun Sorgen taler.
+
+
+{c:IV}
+
 Nogle grønne og furede Banker,
 nogle Kors over Mænd, der blev Støv.
 Men med Taarer, vi ikke kan standse,
@@ -1549,6 +1619,7 @@ Der er Saar, som vi tror, vi kan glemme,
 der er Grave, vi ikke vil se.
 Men en Dag staar vi dog ved de Grave,
 den har ventet os — Smertens Allé.
+
 Der er intet saa sommerlig frodigt,
 der er intet saa blæsende frit
 som det græsgrønne Dybbøl ved Havet
@@ -1557,7 +1628,8 @@ Hvad er Skønhedens rygende Altre?
 Hvilken Gud er Tilbedelse værd?
 Jeg har fundet de hellige Høje,
 de har ventet mig, ventet mig her.
-103
+
+Som en Søn af de segnede Tapre,
 af det Folk, der blev sondret og delt,
 som en _Son af det Folk er jeg kommet
 for at favne det, favne det helt.
@@ -1571,10 +1643,10 @@ SLUTSEKTION
 SEKTION:VII
 
 T:Sang til det ny Aar
-F:
-SIDE:107-
+F:Atter, atter
+SIDE:107-110
 
-A TTER, atter.
+Atter, atter.
 Et Aar til Gave.
 Atter, atter
 de blaa, blaa Have.
@@ -1582,6 +1654,7 @@ Tidernes yngste,
 hvide Datter . . .
 Stride og elske —
 atter, atter.
+
 Vejene træde,
 Byrder bære.
 Drikke al Fjemheds
@@ -1590,6 +1663,7 @@ Duft af det Nære.
 det fine, grove.
 Under det store
 Øje sove.
+
 Hører I Bruset —
 Mænd, Venner?
 Sangen — hører I?
@@ -1598,6 +1672,7 @@ hvad der end sker os —
 Hav, Bølge
 skal, til vi dør,
 vor Færd følge!
+
 Graaner Dagene,
 hvisker Leden,
 Gaar vi og ser
@@ -1606,6 +1681,7 @@ da skal i Hjertet
 en Braadsø stige,
 da skal vi høre
 Maager skrige.
+
 Blaaet, Blæsten
 i Leg med Skummet,
 Stormens, Strømmenes
@@ -1614,6 +1690,7 @@ Dybet, Havet —
 at dykke, dykke,
 favnende, isnet:
 Lykke, Lykke!
+
 Karsk som Saltet,
 med stormfuld Glæde,
 skal gennem Trængslerne
@@ -1622,14 +1699,16 @@ Hæmmes og vokse,
 vokse, stige,
 miste og vinde
 hver Dag et Rige.
+
 Kampen, Kampen.
 Gør den os haarde.
-E r det os ét:
+Er det os ét:
 at saares, saare.
 — Øksen kysser
 det Træ, den fælder.
 Havhjertets Ømhed
 i os vælder.
+
 Dagene, Nætterne —
 tunge, sode.
 Alt det mest dyre
@@ -1638,7 +1717,7 @@ Alt, der er Jordens,
 dens Himles, Haves,
 skal i vort Hjerte
 med os begraves.
-109
+
 Hører I Bruset —
 Mænd, Venner?
 Sangen — hører I?
