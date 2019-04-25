@@ -1303,7 +1303,7 @@ Og Frydesang vor Røst!
 </body>
 </poem>
 
-<poem id="grundtvigandresalmera19">
+<poem id="grundtvigandresalmera19" variant="grundtvig2002120101">
 <head>
    <title>Livs-Ordet</title>
    <toctitle>Livs-Ordet</toctitle>
@@ -1312,7 +1312,6 @@ Og Frydesang vor Røst!
    <notes>
       <note>V/123</note>
       <note>Efter Grundtvig: <i>Sangværk</i>, bd. 5.2, Kbh., 1984, pp. 212-213.</note>
-      <note>Se <xref poem="grundtvig2002120101"/> for en alternativ udgave.</note>
    </notes>
    <quality>korrektur1,korrektur2,kilde,side</quality>
    <keywords>salme</keywords>
@@ -1358,7 +1357,6 @@ Dets Lys gjør Nat til Dag!
    <firstline>Som Dugg paa slagne Enge</firstline>
    <notes>
       <note>Kilde ukendt.</note>
-      <note>En anden udgave af denne salme findes trykt i Sang-Værk V. Se <xref poem="grundtvigandresalmera19"/>.</note>
    </notes>
    <quality>korrektur1</quality>
    <keywords>salme</keywords>
@@ -1577,7 +1575,6 @@ Kan med Guds Hjælp og lykkes os!
    <firstline>Tag det sorte Kors fra Graven!</firstline>
    <notes>
        <note>Dette er den oprindelige 1832-version af salmen, der senere i beskåret og omarbejdet form er indgået i Den danske Salmebog. Originalversionen er et ganske vildt stykke romantisk kristendom.</note>
-      <note>Se også udgaven af <xref poem="grundtvig1837a21"/> fra <i>Sangværk til den danske Kirke I</i> (1837).</note>
       <note type="credits">Bidrag fra Erik A. Nielsen.</note>
    </notes>
    <quality>korrektur1</quality>
@@ -1652,12 +1649,7 @@ Breed du ud din Blomster-Vinge!
 <poem id="grundtvig20010107a20b">
 <head>
    <title>Gak under Jesu Kors at staae</title>
-   <toctitle>Gak under Jesu Kors at staae</toctitle>
-   <indextitle>Gak under Jesu Kors at staae</indextitle>
    <firstline>Gak under Jesu Kors at staae</firstline>
-   <notes>
-      <note>Beskåret udgave af denne salme findes som <xref poem="grundtvig1837a20"/> fra <i>Sangværk til den Danske Kirke I</i> (1837).</note>
-   </notes>
    <quality>korrektur1</quality>
    <keywords>salme</keywords>
 </head>
@@ -1752,13 +1744,12 @@ Jeg tale skal paa denne Jord!
    <firstline>Talsmand! som paa Jorderige</firstline>
    <notes>
       <note>Cf. <xref bibel="bibelrom8,26"/>.</note>
-      <note>En anden udgave af denne salme findes som »<xref poem="grundtvig1837a26"/>« fra <i>Sangværk til den Danske Kirke I</i> (1837).</note>
    </notes>
    <quality>korrektur1</quality>
    <keywords>salme</keywords>
 </head>
 <body>
-1. Talsmand! som paa Jorderige
+Talsmand! som paa Jorderige
 Med et Suk kan Alt udsige,
 Hvad vi evig trænge til,
 I et Kys kan Alt udtrykke,
@@ -1768,7 +1759,7 @@ Værdiges til os at dale,
 Om Guds Storværk med os tale
 Paa vort jævne Moders-Maal!
 
-2. Kun hvad Du har seet, Du maler,
+Kun hvad Du har seet, Du maler,
 O vær Du vor store taler,
 Kiærligheds og Sandheds Aand!
 Du, som skiænker hvad Du nævner,
@@ -1778,7 +1769,7 @@ Visere til Daad at Øve,
 Visere til Aande-Prøve,
 Visere til Salighed!
 
-3. Sjæle-Sørger fra det Høie!
+Sjæle-Sørger fra det Høie!
 Hold med os et vaagent Øie,
 Vogt de Smaa for Falk og Høg!
 Væk de Dorske, styrk de Svage,
@@ -1788,7 +1779,7 @@ Dan vort Hjerte, løs vor Tunge,
 Saa vi bede, saa vi sjunge
 Yndelig i Jesu Navn!
 
-4. Trøster over Alt, som truer,
+Trøster over Alt, som truer,
 Alt, hvorfor vort Hjerte gruer,
 Trøster over alle Tab!
 Skiænk os, skiøndt vi boe paa Sletten,
@@ -1798,7 +1789,7 @@ Saa, naar Man os vil forjage,
 Glade vi herfra kan drage
 Did, hvor vi har evig Fred!
 
-5. Store, himmelske Ledsager,
+Store, himmelske Ledsager,
 Som for Støvet Dig umager
 Giennem Ild Og giennem Vand!
 Før os, bøiet, liljehaandet,

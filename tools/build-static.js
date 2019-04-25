@@ -268,48 +268,57 @@ const museums = {
     name: 'Skagens Museum',
   },
   thorvaldsens: {
-    url: 'http://thorvaldsensmuseum.dk/samlingerne/vaerk/$invNr',
+    url: ids => `http://thorvaldsensmuseum.dk/samlingerne/vaerk/${ids.invNr}`,
     name: 'Thorvaldsens Museum',
   },
   nivaagaard: {
-    url: 'http://www.nivaagaard.dk/samling-da/$objId',
+    url: ids => `http://www.nivaagaard.dk/samling-da/${ids.objId}`,
     name: 'Nivaagaards Malerisamling',
   },
   kb: {
-    url: 'http://www.kb.dk/images/billed/2010/okt/billeder/object$objId/da/',
+    url: ids => `http://www.kb.dk/images/billed/2010/okt/billeder/object${ids.objId}/da/`,
     name: 'Det kongelige Bibliotek',
   },
   smk: {
-    url: 'http://collection.smk.dk/#/detail/$invNr',
+    url: ids => `http://collection.smk.dk/#/detail/${ids.invNr}`,
     name: 'Statens Museum for Kunst',
   },
   gleimhaus: {
-    url: 'https://www.museum-digital.de/nat/index.php?t=objekt&oges=$objId',
+    url: ids => `https://www.museum-digital.de/nat/index.php?t=objekt&oges=${ids.objId}`,
     name: 'Gleimhaus, Halberstadt',
   },
   ribe: {
-    url: `https://ribekunstmuseum.dk/samling/$invNr`,
+    url: ids => `https://ribekunstmuseum.dk/samling/${ids.invNr}`,
     name: 'Ribe Kunstmuseum',
   },
   smb: {
-    url: `http://www.smb-digital.de/eMuseumPlus?objectId=$objId`,
+    url: ids => `http://www.smb-digital.de/eMuseumPlus?objectId=${ids.objId}`,
+    name: 'Staatliche Museen zu Berlin',
   },
   md: {
-    url: `https://www.museum-digital.de/nat/index.php?t=objekt&oges=$objId`,
+    url: ids => `https://www.museum-digital.de/nat/index.php?t=objekt&oges=${ids.objId}`,
   },
   npg: {
-    url: `https://www.npg.org.uk/collections/search/portrait/$objId`,
+    url: ids => `https://www.npg.org.uk/collections/search/portrait/${ids.objId}`,
     name: 'National Portrait Gallery, London',
   },
   'natmus.se': {
-    url: `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=$objId&viewType=detailView`,
+    url: ids => `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${ids.objId}&viewType=detailView`,
   },
   'digitalmuseum.no': {
-    url: `https://digitaltmuseum.no/$objId/maleri`,
+    url: ids => `https://digitaltmuseum.no/${ids.objId}/maleri`,
   },
   'digitalmuseum.se': {
-    url: `https://digitaltmuseum.se/$objId/maleri`,
+    url: ids => `https://digitaltmuseum.se/${ids.objId}/maleri`,
   },
+  'fnm': {
+      name: 'Frederiksborg Nationalhistorisk Museum',
+      url: (ids) => {
+          // invNr må være 'a-841', 'A-841', 'A841', 'A 841'
+        const m = ids.invNr.match(/([a-z]+)[- ]*([0-9]+[a-z]*)/i);
+        return `https://dnm.dk/kunstvaerk/${m[1].toLowerCase()}-${m[2]}/`;
+      }
+  }
 };
 
 const get_museum_json = museumId => {
@@ -333,6 +342,7 @@ const build_museum_url = picture => {
   if (museum != null && (invNr != null || objId != null)) {
     const museumObject = museums[museum];
     if (museumObject != null && museumObject.url != null) {
+      return museumObject.url({invNr,objId});
       return museumObject.url.replace('$objId', objId).replace('$invNr', invNr);
     }
   }
@@ -1308,14 +1318,21 @@ const build_global_lines_json = collected => {
     collected_lines.forEach((per_country, country) => {
       per_country.forEach((per_linetype, linetype) => {
         const locale = compareLocales[country] || 'da-DK';
+        const collator = new Intl.Collator(locale, {
+          numeric: true,
+          sensitivity: 'base',
+        });
         const linesComparator = (a, b) => {
           if (a.line === b.line) {
-            return a.poet.name.localeCompare(b.poet.name, locale);
+            return collator.compare(a.poet.name, b.poet.name);
           } else {
-            return a.line.localeCompare(b.line, locale);
+            return collator.compare(a.line, b.line);
           }
         };
-        const lettersComparator = (a, b) => a.localeCompare(b, locale);
+        const lettersComparator = (a, b) => {
+          return collator.compare(a, b);
+        };
+
         const letters = Array.from(per_linetype.keys()).sort(lettersComparator);
         per_linetype.forEach((lines, letter) => {
           const data = {
@@ -1323,7 +1340,7 @@ const build_global_lines_json = collected => {
             lines: lines.sort(linesComparator),
           };
           const filename = `static/api/alltexts/${country}-${linetype}-${letter}.json`;
-          console.log(filename);
+          //console.log(filename);
           writeJSON(filename, data);
         });
       });
@@ -1608,7 +1625,7 @@ const build_person_or_keyword_refs = collected => {
       texts.forEach(text => {
         const fromId = text.attr('id').value();
         const notes = text.find(
-          'head/notes/note|body//footnote|body//note|body'
+          'head/notes/note|head/pictures/picture|body//footnote|body//note|body'
         );
         notes.forEach(note => {
           regexps.forEach(rule => {
@@ -1709,9 +1726,13 @@ const build_section_toc = section => {
 };
 
 const extract_subworks = (poetId, workbody) => {
-  return workbody.find('//subwork').map(subwork => {
-    const subworkId = safeGetAttr(subwork, 'ref');
-    return collected.works.get(`${poetId}/${subworkId}`);
+  return workbody.find('//subwork').map(subworkNode => {
+    const subworkId = safeGetAttr(subworkNode, 'ref');
+    const subwork = collected.works.get(`${poetId}/${subworkId}`);
+    if (subwork == null) {
+      throw `${poetId}/${subworkId}.xml refereret i hovedfil, men findes ikke. Glemt at tilføje til poets.xml?`;
+    }
+    return subwork;
   });
 };
 
@@ -1791,11 +1812,14 @@ const build_works_toc = collected => {
         };
 
         // Find modified date i git.
+        // Later: this turns out to be super-slow, building toc's
+        // takes 151s instead of 9s. So I've disabled this.
+        /*
         const modifiedDateString = execSync(
           `git log -1 --format="%ad" --date=iso-strict -- ${filename}`
         );
         toc_file_data.modified = modifiedDateString.toString().trim();
-
+        */
         const tocFilename = `static/api/${poetId}/${workId}-toc.json`;
         console.log(tocFilename);
         writeJSON(tocFilename, toc_file_data);
