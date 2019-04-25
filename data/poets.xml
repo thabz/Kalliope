@@ -4098,6 +4098,25 @@
   <works>1915</works>
 </person>
 
+<person id="goldstein" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Emanuel</firstname>
+    <lastname>Goldstein</lastname>
+    <pseudonym>Alexander Herz, Hugo Falck</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1862-08-06</date>
+      <place>Nakskov</place>
+    </born>
+    <dead>
+        <date>1921-01-23</date>
+        <!-- rex siger 28/1 og Dansk skønlitterært forfatterleksikon 1900-1950. Bind 1-3, 1959-64 siger 23/1 -->
+    </dead>
+  </period>
+  <works>1884,1886,1910,1916,andre</works>
+</person>
+
 <person id="stuckenberg" country="dk" lang="da" type="poet">
   <name>
     <firstname>Viggo</firstname>
