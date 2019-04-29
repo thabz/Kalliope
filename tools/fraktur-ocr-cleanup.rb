@@ -1,6 +1,7 @@
 #!/usr/bin/ruby
 
 @rules = [
+'\^/ ',    
 'V /V',    
 'A /A',    
 'T /T',    
