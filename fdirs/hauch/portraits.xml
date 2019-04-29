@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
   <picture ref="bissen/hauch-1858" />
-  <picture src="p2.jpg">
-  </picture>
+  <picture src="p2.jpg" />
   <picture src="p3.jpg">
     F. Vermehren: <i>Hauch</i>, 1847, tegning.
   </picture>
-  <picture src="p4.jpg">
-  </picture>
+  <picture src="p4.jpg" />
   <picture src="p5.jpg">
     <i>Carsten Hauch</i>, tegnet og litograferet af Emil Bærentzen.
   </picture>
-  <picture src="p6.jpg" primary="true" square-src="p6-square.jpg">
+  <picture src="p6.jpg" primary="true" square-src="p6-square.jpg" museum="kb" objid="499">
     Budtz Müller &amp; Co. (fotograf): <i>Carsten Hauch</i>, 1868 (?), Det Kongelige Bibliotek.
+  </picture>
+  <picture src="p7.jpg" museum="kb" objid="6100">
+    Georg Hansen (fotograf): <i>Carsten Hauch</i>, Det Kongelige Bibliotek.
+  </picture>
+  <picture src="p8.jpg" museum="kb" objid="38458">
+    Rudolph Striegler (fotograf): <i>Carsten Hauch</i>, Det Kongelige Bibliotek.
   </picture>
 </pictures>
