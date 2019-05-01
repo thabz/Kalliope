@@ -396,6 +396,7 @@
 'nnd/und',
 'Iord/Jord',
 'Nost/Røst',
+'Nose/Rose',
 'Trost/Trøst',
 'Die/Øie',
 'Dg/Og',
