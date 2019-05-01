@@ -609,6 +609,25 @@
   <works>1814,1822,1836,1837,1839,1844,1872,andre</works>
 </person>
 
+<person id="koerner" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Theodor</firstname>
+    <lastname>Körner</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1791-09-23</date>
+      <place>Dresden</place>
+    </born>
+    <dead>
+      <date>1813-08-26</date>
+      <place>Forst Rosenow bei Lützow</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
+
 <person id="muellerw" country="de" lang="de" type="poet">
   <name>
     <firstname>Wilhelm</firstname>
