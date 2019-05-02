@@ -501,6 +501,7 @@
 'Grsn/Grøn',
 'Fodder/Fødder',
 'kjar/kjær',
+'kjcer/kjær',
 'kjoer/kjær',
 'Kjerr/Kjær',
 'Kjoer/Kjær',
