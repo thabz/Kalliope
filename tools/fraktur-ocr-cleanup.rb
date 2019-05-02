@@ -252,6 +252,7 @@
 'Trerer/Træer',
 'Laber/Læber',
 'loenge/længe',
+'lamger/længer',
 'Loeber/Læber',
 'Langse/Længse',
 'Langsl/Længsl',
