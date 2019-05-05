@@ -267,6 +267,7 @@
 'LE/Æ',
 'Wble/Æble',
 'Wdle/Ædle',
+'Ædelskeen/Ædelskeen',
 'Sial/Siæl',
 'Sjal/Sjæl',
 'Sjoel/Sjæl',
