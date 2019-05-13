@@ -5,7 +5,7 @@
     <title>Blaaklokke</title>
     <year>1897</year>
     <notes>
-        <note>Titelbladets motto »Kind words so short to speak / but whose echo is endless«. / Lord Hougkton stammer fra ...</note><!-- TODO: Find citatet. -->
+        <note>Titelbladets motto »Kind words so short to speak / but whose echo is endless« stammer fra Lord Houghtons <xref poem="houghton2019051301"/>.</note>
         <note>Samlingen bærer tilegnelsen ,,Til / den danske Digter / Statsraad, Dr. phil. <a poet="lange">Thor Lange</a> / R. af Dbrg. Dbmd. p. p. / med ærbødig og venlig hilsen / fra / Aage Matthison-Hansen.''</note>
         <note>Teksten følger Aage Matthison-Hansen: <i>Blaaklokke</i>, Axel Andersen, Kbh., 1897.</note>
     </notes>
@@ -769,7 +769,9 @@ som Skum over Kysten den hvide.
     </subtitle>
     <firstline>Se! paa hint Hjørnevindu, vendt mod Vest</firstline>
     <source pages="35"/>
-    <!-- TODO: https://www.poets.org/poetsorg/poem/evening-star -->
+    <notes>
+        <note>Oversættelse af Longfellows <xref type="translation" poem="longfellow2019051301"/>.</note>
+    </notes>
     <keywords>sonnet</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>

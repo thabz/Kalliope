@@ -721,6 +721,25 @@
   <works>1838,1844,1846,1849,1871,andre</works>
 </person>
 
+<person id="geibel" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Emanuel</firstname>
+    <lastname>Geibel</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1815-10-17</date>
+      <place>Lübeck</place>
+    </born>
+    <dead>
+      <date>1884-04-06</date>
+      <place>Lübeck</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
+
 <person id="nietzsche" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich</firstname>
@@ -6941,6 +6960,26 @@
   </period>
   <works>1839,1842,1847,1855,1858,1863,1865,andre</works>
 </person>
+
+<person id="houghton" country="en" lang="en" type="poet">
+  <name>
+    <firstname>Lord</firstname>
+    <lastname>Houghton</lastname>
+    <christened>Richard Monckton Milnes</christened>
+  </name>
+  <period>
+    <born>
+      <date>1809-06-19</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1885-08-11</date>
+      <place>Vichy</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 
 <person id="poe" country="us" lang="en" type="poet"> 
   <name>
