@@ -5,14 +5,14 @@
     <title>Blaaklokke</title>
     <year>1897</year>
     <notes>
-        <note>Titelbladets motto »Kind words so short to speak / but whose echo is endless«. / Lord Hougkton stammer fra ...</note>
+        <note>Titelbladets motto »Kind words so short to speak / but whose echo is endless«. / Lord Hougkton stammer fra ...</note><!-- TODO: Find citatet. -->
+        <note>Samlingen bærer tilegnelsen ,,Til / den danske Digter / Statsraad, Dr. phil. <a poet="lange">Thor Lange</a> / R. af Dbrg. Dbmd. p. p. / med ærbødig og venlig hilsen / fra / Aage Matthison-Hansen.''</note>
         <note>Teksten følger Aage Matthison-Hansen: <i>Blaaklokke</i>, Axel Andersen, Kbh., 1897.</note>
     </notes>
     <pictures>
-        <picture src="1897-p1.jpg">Titelbladet til <i>Blaaklokke</i> (1897) lyder ,,''.</picture>
+        <picture src="1897-p1.jpg">Titelbladet til <i>Blaaklokke</i> (1897) lyder ,,Blaaklokke / og andre / Diget / af / Aage Matthison-Hansen // »Kind words so short to speak / but whose echo is endless«.» / Lord Houghton // København / Axel Andersen / Laur. Madsens Bogtrykkeri / 1897''.</picture>
     </pictures>
-    <!-- TODO: Tilegnelsen -->
-    <source facsimile="115308078015_color" facsimile-pages-num="58" facsimile-pages-offset="10">Aage Matthison-Hansen: <i>Blaaklokke</i>, Axel Andersen, Kbh., 1897.</source>
+    <source facsimile="115308078015_color" facsimile-pages-num="58" facsimile-pages-offset="4">Aage Matthison-Hansen: <i>Blaaklokke</i>, Axel Andersen, Kbh., 1897.</source>
 </workhead>
 <workbody>
 
@@ -20,9 +20,9 @@
 <head>
     <title>Thor Lange</title>
     <firstline>Se, hvor Naturen sine Farver fletter</firstline>
-    <source pages=""/>
+    <source pages="5-6"/>
     <!-- TODO: Henvis til Langes oversættelser af Drayton og Dante. -->
-    <keywords>sonnet</keywords>
+    <keywords>sonnet,lange</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -470,12 +470,13 @@ og siger mildt: Kom, lad os være Venner!
 <poem id="matthison2019051115">
 <head>
     <title>Til min Mo’r</title>
-    <subtitle>Julen 1896.</subtitle>
     <firstline>Hjærte har du og Forstand</firstline>
     <source pages="23"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<nonum><right><i>Julen 1896.</i></right></nonum>
+
 Hjærte har du og Forstand,
 Fantasiens Underland
 breder sig for dine Blikke,
@@ -665,7 +666,7 @@ hver, som ingen Slægtning har.
 
 <poem id="matthison2019051119">
 <head>
-    <title>Th. Bindesbøll.</title>
+    <title>Th. Bindesbøll</title>
     <subtitle>
         <line>21.Juli 1896.</line>
         <line>Mel.: Hr. Peder kasted Runer -</line>
@@ -711,7 +712,7 @@ som Sommeren er ung og Vinen - den er stærk.
 
 <poem id="matthison2019051120">
 <head>
-    <title>Holger Drachmann.</title>
+    <title>Holger Drachmann</title>
     <subtitle>9. Oktober 1896.</subtitle>
     <firstline>Du Fiskernes Sanger og Havets Drot</firstline>
     <source pages="33-34"/>
