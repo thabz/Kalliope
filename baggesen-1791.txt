@@ -2732,10 +2732,12 @@ Denne Forskiællighed i Hensigter, og deraf flydende Forskiæl i Maaden at efter
    Maatte alle vore danske Skribentere, og især de Digtere, hvis Evner saa langt overgaae mine, besiæles af den Omhue for Sproget, som jeg eene skylder den Ære, een og anden Gang at vare bleven talt iblandt dem! Maatte de blive meer og meer opmærksomme paa den Skat, de besidde i deres Modersmaal, og maatte de efter Sange, som vor Thaarups Hymne, finde sig belønnede i dets Taknemmelighed!
    Man tilgive mig denne lille Udsvævelse af en virkelig Lidenskab, der aldrig — trods alle de uvenlige falste Beskyldninger man har giort mig — kiølnes i mit Hierte. Maaskee elsker jeg derfor ikke mindre mit Fædreneland, fordi jeg kun elsker det elskværdige deri, og finder at en dansk Mangel er ikke mindre en Mangel, fordi den er dansk. For i Korthed at aflægge min Troesbekiendelse i denne Materie, maae jeg tilstaae, at jeg holder Sproget for det reneste væsentlige, hvorved Naturen skiller een Nation fra en anden — og fra denne Naturside betragtet finder jeg mit Fødeland elskeligere end alle dets Naboeriger. Jeg holder Sproget for et Lands Siel, og finder derfor, at man aldrig noksom kan befordre dets Dyrkelse, saa meget mindre, da man derfra umueligen kan afsondre Indflydelsen paa alt det øvrige. Hvor let, hvor behagelig, hvor belønnende vilde denne Siels Dyrkelse blive hos os! O! naar man engang i alle Landets Skoler lærer Dansk! naar man engang lærer overalt at udtale det! naar almindelig Oplysning engang fremviser det i al dets Ynde! O! jeg er vis paa at Gratierne selv, hvis de af Europas levende Sprog skulde veelge sig eet til Morgendragt, efterat have speilet sig med alle de andre, da vilde beholde det Danske; og vor Schulzes Dom om dets musicalske Fortrin fuldender min Overbevisning, at alle Sanggudinder i det vilde vælge Ord til deres Melodier.
 
-T:Emma
-U:Et Digt i fem Sange
-VARIANT:baggesen200111101
-SIDE:3-64
+SEKTION:Emma, et Digt i fem Sange
+VARIANT:
+
+T:<num>Første Sang</num>O! du, mit Haab, min Fryd, min Sang
+F:O! du, mit Haab, min Fryd, min Sang
+SIDE:3-18
 
 O! du, mit Haab, min Fryd, min Sang,
 Min Siæls tilbedede Veninde!
@@ -3038,7 +3040,10 @@ Han Emma ser i Haven ene.
 Men denne høitidsfulde Scene
 Fortiener for sig selv en Sang.
 
-Anden Sang
+T:<num>Anden Sang</num>Den lyse Dagens Konge gled
+F:Den lyse Dagens Konge gled
+SIDE:19-27
+
 Den lyse Dagens Konge gled
 Igiennem gyldne Purpurskyer
 Sødt smilende bag Skoven ned.
@@ -3212,7 +3217,10 @@ Som Isis, Taushed af sin Ven;
 Til Lethe med den usle Sanger,
 Som vover at afsløre den!
 
-Tredje Sang
+T:<num>Tredje Sang</num>Du doppelt skiøn, fordi din Ild
+F:Du doppelt skiøn, fordi din Ild
+SIDE:28-38
+
 Du doppelt skiøn, fordi din Ild
 Sig gjennem Savnets Mørke maler!
 Som, naar bag Skyen Solen daler
@@ -3409,7 +3417,10 @@ Et uophørlig Nok hinanden,
 Men ak! de stode trygt paa Randen
 Af Livets alt for bratte Roe.
 
-Fjerde Sang
+T:<num>Fjerde Sang</num>Mens Vintrens seirende Tyran
+F:Mens Vintrens seirende Tyran
+SIDE:39-53
+
 Mens Vintrens seirende Tyran
 Paa Livets blegnende Ruiner
 I Field og Skov og Dal og Strand,
@@ -3704,7 +3715,10 @@ Sin Ven til Havens Ende hen;
 Han over Muren frelst sig svinger,
 Og glad hun flyer hiem igien.
 
-Femte Sang
+T:<num>Femte Sang</num>Som Vandreren der mat af Sved
+F:Som Vandreren der mat af Sved
+SIDE:54-64
+
 Som Vandreren der mat af Sved
 Op over Alpetoppe higer,
 Troer, hvert et Bierg, hans Fod bestiger
@@ -3908,6 +3922,7 @@ I Lykkens Skiød, i Glædens Slum,
 Til begges Siæle sammensvæved
 Fra Jorden til Elysium.
 
+SEKTIONSLUT
 
 SEKTION:Romancer og smaae Fortællinger
 
