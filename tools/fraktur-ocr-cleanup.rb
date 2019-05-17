@@ -272,6 +272,7 @@
 'Drsm/Drøm',
 'Drem/Drøm',
 'Boge/Bøge',
+'Bsge/Bøge',
 'Bslg/Bølg',
 '(\W)fsle/\1føle',
 'Bon(\W)/Bøn\1',
