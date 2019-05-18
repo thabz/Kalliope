@@ -7,6 +7,7 @@ def printTemplate()
     puts "DIGTER:"
     puts "FACSIMILE:"
     puts "FACSIMILE-SIDER:"
+    puts "TITELBLAD:"
     puts ""
     puts "SEKTION:"
     puts ""
@@ -38,6 +39,7 @@ end
 @found_corrections = false
 @found_poet_notes = false
 @done = false
+@titlepage = ''
 
 # Poem data
 @poemid = nil
@@ -89,7 +91,7 @@ def printHeader()
     end
     puts %Q|    </notes>|
     puts %Q|    <pictures>|
-    puts %Q|        <picture src="#{year}-p1.jpg">Titelbladet til <i>#{title}</i> (#{year}) lyder ,,''.</picture>|
+    puts %Q|        <picture src="#{year}-p1.jpg">Titelbladet til <i>#{title}</i> (#{year}) lyder ,,#{@titlepage}''.</picture>|
     puts %Q|    </pictures>|
     if @worktodos.length > 0
       @worktodos.each { |todo|
@@ -294,6 +296,8 @@ File.readlines(ARGV[0]).each do |line|
       @source = line[6..-1].strip
     elsif line =~ /^FACSIMILE:/
       @facsimile = line.gsub(/^FACSIMILE:/,'').strip
+    elsif line =~ /^TITELBLAD:/
+      @titlepage = line.gsub(/^TITELBLAD:/,'').strip
     elsif line =~ /^FACSIMILE-SIDER:/
       @facsimile_pages_num = line.gsub(/^FACSIMILE-SIDER:/,'').strip
     elsif line =~ /^NOTE:/
