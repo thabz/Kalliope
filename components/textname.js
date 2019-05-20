@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import type { Text } from '../pages/helpers/types.js';
+import CommonData from '../pages/helpers/commondata.js';
 
 type TextNameProps = {
   text: Text,
@@ -11,7 +12,11 @@ export default class TextName extends React.Component<TextNameProps> {
     const { title, title_prefix } = text;
     let renderedPrefix = null;
     if (title_prefix != null) {
-      renderedPrefix = <span style={{ color: '#888' }}>{title_prefix} </span>;
+      renderedPrefix = (
+        <span style={{ color: CommonData.lightTextColor }}>
+          {title_prefix}{' '}
+        </span>
+      );
     }
     return (
       <span className="textname">

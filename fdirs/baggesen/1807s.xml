@@ -8,10 +8,9 @@
       <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun direkte meningsforstyrrende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse. Tak til de to Svend'er, Andersen og Sørensen, der har bidraget med næsten alle digtene.</note>
    </notes>
    <pictures>
-      <picture type="titlepage" src="1807s-p1.jpg">Titelbladet til <i>Skiemtsomme Riimbreve</i> (1807).<br/>Skiemtsomme / Riimbreve / af / Jens Baggesen. / - - - - ut sibi quivis / Speret idem - - - - / Hor. / Kiöbenhavn. / 1807. / Paa Frederik Brummers Forlag.</picture>
+      <picture type="titlepage" src="1807s-p1.jpg">Titelbladet til <i>Skiemtsomme Riimbreve</i> (1807) lyder ,,Skiemtsomme / Riimbreve / af / Jens Baggesen. / - - - - ut sibi quivis / Speret idem - - - - / Hor. / Kiöbenhavn. / 1807. / Paa Frederik Brummers Forlag.''</picture>
    </pictures>
-   <quality>korrektur1,kilde,side</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+   <source facsimile="130023407941_color" facsimile-pages-num="368" facsimile-pages-offset="6">Jens Baggesen: <i>Skiemtsomme Riimbreve</i>, Frederik Brummers Forlag, Kbh., 1807.</source>
 </workhead>
 <workbody>
 
@@ -22,6 +21,7 @@
    <notes>
       <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side ii-ix (siderne er ikke paginerede).</note>
    </notes>
+   <!-- Vores faksimile mangler disse sider -->
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -61,9 +61,7 @@ og det er med en virkelig <i>Giengangers</i> veemodige Følelser, han, spøgende
    <toctitle>Sandsigelse</toctitle>
    <indextitle>Sandsigelse</indextitle>
    <firstline>Bog! du skyder dig op af min Lomme, hvori du kun Haandskrift</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 1-8.</note>
-   </notes>
+   <source pages="1-8"/>
    <quality>korrektur1,kilde,side</quality>
    <keywords>heksameter</keywords>
 </head>
@@ -135,13 +133,11 @@ Med-Raadmænd i Musernes nye Regiering i <i>Danmark</i>.<note>Den 5. juli 1805 b
    <toctitle>Hunden</toctitle>
    <indextitle>Hunden</indextitle>
    <firstline>Huldsaligste blandt alle Koner</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 9-15.</note>
-   </notes>
+   <source pages="9-15"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn</small></nonum>
+<right><nonum><small>Kiøbenhavn</small></nonum></right>
     Huldsaligste blandt alle Koner,
 I hvis med Blomster strøede Fied
 Jeg sikkert alle Jordens Kroner,
@@ -261,13 +257,13 @@ Hvis ikke staar jeg der en kiøn!
    <indextitle>Collerette</indextitle>
    <firstline>Tilgiv mig, uforglemmelige Frue!</firstline>
    <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 16-21.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1797).</note>
    </notes>
+   <source pages="16-21"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn</small></nonum>
+<right><nonum><small>Kiøbenhavn</small></nonum></right>
     Tilgiv mig, uforglemmelige Frue!
 At jeg, som nys har lært en smule dansk,
 I Deres Vens, mit nye Herskabs Stue,
@@ -357,13 +353,13 @@ Rødstribet, ung, chinesisk <i>Collerette!</i>
    <indextitle>Fastelavnsriset</indextitle>
    <firstline>I Morgenrødens Land, paa Jordens Østerkant</firstline>
    <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 22-25.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1797).</note>
    </notes>
+   <source pages="22-25"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn</small></nonum>
+<right><nonum><small>Kiøbenhavn</small></nonum></right>
     I Morgenrødens Land, paa Jordens Østerkant,
 Man har den Skik, ved visse Leiligheder
 At sende til den Skiønne, man tilbeder,
@@ -413,13 +409,11 @@ Naar vi har vækket Dem, og Deres Hænder kyst!''
    <toctitle>Tvungen Latter</toctitle>
    <indextitle>Tvungen Latter</indextitle>
    <firstline>Her sender jeg Dig, kiære Ven, et Bind</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 26-30.</note>
-   </notes>
+   <source pages="26-30"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn</small></nonum>
+<right><nonum><small>Kiøbenhavn</small></nonum></right>
     Her sender jeg Dig, kiære Ven, et Bind
 Af Vers, som jeg har trukket ud og ind,
 Alt efter Musens løierlige Sind -
@@ -484,13 +478,13 @@ Et: ,,<i>Baggesen!</i>
    <indextitle>Historien indtil Syndfloden</indextitle>
    <firstline>Fortæl os snart et Eventyr igien!</firstline>
    <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 31-37.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1792).</note>
    </notes>
+   <source pages="31-37"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Korsør</small></nonum>
+<right><nonum><small>Korsør</small></nonum></right>
     ,,Fortæl os snart et Eventyr igien!''
 Saa lyder Efterskriften, Ven! i Brevet,
 Du til Korsør mig kiærligen har skrevet;
@@ -595,13 +589,11 @@ Selv, naar han til et Brev har Texten laant hos Moses?
    <toctitle>Brevlængselen</toctitle>
    <indextitle>Brevlængselen</indextitle>
    <firstline>Den nysbortløbne stolte Baggehund</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 38-43.</note>
-   </notes>
+   <source pages="38-43"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Trolleborg</small></nonum>
+<right><nonum><small>Trolleborg</small></nonum></right>
     Den nysbortløbne stolte Baggehund -
 Som hver en anden Titel kan undvære,
 Som evig intet Navn vil bære,
@@ -636,7 +628,7 @@ Men - Laas for Munden! Snak om, hvad jeg lider
 Bekymrer Dem, og lindrer ikke mig -
 Taal! hedder Symbolet i vore Tider,
 Symbolet vil jeg sige -
-                                         <nonum>Virkelig!</nonum>
+<right><nonum>Virkelig!</nonum></right>
 Jeg taaler meer end nogen skulde troe,
 Der kunde taales af en Hund, som gaaer paa to:
 Og dog jeg piber ei det mindste, som De seer -
@@ -683,13 +675,11 @@ Og flyttes af en Himmel i en anden.
    <toctitle>Reisen til Korsør</toctitle>
    <indextitle>Reisen til Korsør</indextitle>
    <firstline>Jeg i mit forrige hastfulde Brev</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 44-56.</note>
-   </notes>
+   <source pages="44-56"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Trolleborg</small></nonum>
+<right><nonum><small>Trolleborg</small></nonum></right>
     Jeg i mit forrige hastfulde Brev
 Min Ankomst her til <i>Trolleborg</i> Dem skrev,
 I lette Vers - maaskee kun alt for lette!
@@ -874,13 +864,11 @@ Snart er og Glæden her forbi, forbi, forbi.
    <toctitle>Brevrusen</toctitle>
    <indextitle>Brevrusen</indextitle>
    <firstline>Hvor er jeg? hvor? I hvilke Labyrinter</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 57-65.</note>
-   </notes>
+   <source pages="57-65"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Trolleborg</small></nonum>
+<right><nonum><small>Trolleborg</small></nonum></right>
     Hvor er jeg? hvor? I hvilke Labyrinter
 Af Edens Myrter, mellem Blomsterbed
 Af Roser, Lilier og Hyacinter,
@@ -1014,13 +1002,11 @@ Mod Dem skal intet standse førend Døden.
    <toctitle>Fragmentet i Lolland</toctitle>
    <indextitle>Fragmentet i Lolland</indextitle>
    <firstline>Fred, Sundhed, Fryd fra nu til Aarets Ende</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 66-76.</note>
-   </notes>
+   <source pages="66-76"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Wandsbeck</small></nonum>
+<right><nonum><small>Wandsbeck</small></nonum></right>
     <i>Jens Baggesen</i> til <i>Anders Christen Hviid:</i>
 Fred, Sundhed, Fryd fra nu til Aarets Ende,
 Fra den til Livets, og derfra til evig Tid!
@@ -1074,7 +1060,7 @@ At dandse giennem Evighedens Roser -
 Da, tro mig, ædle Hviid! * * * * * *
 
 
-                                                      <nonum><small>Altona</small></nonum>
+<right><nonum><small>Altona</small></nonum></right>
                 <nonum>&mdash; Hvor slap jeg sidst, mon troe?</nonum>
 Seqventsen har jeg glemt. Men det er ligemeget -
 Den ei den første var, som jeg har streget.
@@ -1157,7 +1143,7 @@ Men, for at spare Porto og Papir -
 Og da dog egentligen Rimets Ziir,
 Om ikke mig, saa Dem maaskee dog trætter,
 I simpel Prosa Brevet jeg fortsætter.
-            <nonum>* * * * * * * *</nonum>
+<center><nonum>* * * * * * * *</nonum></center>
 </body>
 </poem>
 
@@ -1171,13 +1157,11 @@ I simpel Prosa Brevet jeg fortsætter.
    <toctitle>Det korte Solbesøg</toctitle>
    <indextitle>Det korte Solbesøg</indextitle>
    <firstline>Du reiser om til Jordens Vesterlide</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 77-80.</note>
-   </notes>
+   <source pages="77-80"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn</small></nonum>
+<right><nonum><small>Kiøbenhavn</small></nonum></right>
     Du reiser om til Jordens Vesterlide,
 Til Sukkers, Gulds, og Solskins Opholdssted;
 Og vi, som boe paa dens luslidte Side,
@@ -1230,14 +1214,12 @@ Og froe med fiorten Been betræde den.
    <toctitle>Alperne</toctitle>
    <indextitle>Alperne</indextitle>
    <firstline>Saa kom jeg da til Schweiz? - Saa lod mig Skiæbnen stige</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 81-90.</note>
-   </notes>
+   <source pages="81-90"/>
    <keywords>pram</keywords>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Bern</small></nonum>
+<right><nonum><small>Bern</small></nonum></right>
     Saa kom jeg da til <i>Schweiz?</i> - Saa lod mig Skiæbnen stige
 Til denne mine Sværmeriers Top?
 Saa kom jeg da med ganske Siæl og Krop
@@ -1373,13 +1355,11 @@ Om jeg beskeden holdt mig til det Lave.
    <toctitle>Fuglen</toctitle>
    <indextitle>Fuglen</indextitle>
    <firstline>Fornemmer Du, at jeg mig nærmer Dig?</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 91-111.</note>
-   </notes>
+   <source pages="91-111"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Lyon</small></nonum>
+<right><nonum><small>Lyon</small></nonum></right>
     Fornemmer Du, at jeg mig nærmer Dig?
 Og at mit Legem, som min Siæl,
 Skiøndt ubevingt, tilbage skynder sig
@@ -1692,13 +1672,11 @@ Er <i>danske!</i>
    <toctitle>Gratierne</toctitle>
    <indextitle>Gratierne</indextitle>
    <firstline>For mig, som for den hele Klode</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 112-13.</note>
-   </notes>
+   <source pages="112-113"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Trolleborg</small></nonum>
+<right><nonum><small>Trolleborg</small></nonum></right>
     For mig, som for den hele Klode,
 Hvor Ynde, Vid og Dyd er Mode,
 Er alle Gratier kun tre.
@@ -1727,13 +1705,13 @@ og reiste <i>med</i> den <i>tredie</i>.
    <indextitle>Offeret</indextitle>
    <firstline>Et Altar en ukiendt Gud engang</firstline>
    <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 114-15.</note>
       <note>Tidligere trykt i Malte Conrad Bruuns tidsskrift <i>Svada</i> (1796).</note>
    </notes>
+   <source pages="114-115"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn</small></nonum>
+<right><nonum><small>Kiøbenhavn</small></nonum></right>
     Et Altar en <i>ukiendt Gud</i> engang<note>Citerer <xref bibel="bibelapostlene17"/></note>
 Men i Athen har villet finde;
 Jeg noget hedensk er - især i Sang -
@@ -1761,9 +1739,9 @@ Og tænk medlidende: Han saae mig ikke!
    <indextitle>Parnas-Revolutionen</indextitle>
    <firstline>For nogen Tid det Rygte gik</firstline>
    <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 116-27.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1792).</note>
    </notes>
+   <source pages="116-127"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1942,13 +1920,13 @@ Og meer end alle <i>Pindi</i> Saligheder!
    <indextitle>Paaske-Indbydelsen</indextitle>
    <firstline>Jeg har Klokken henimod syv i min Stue</firstline>
    <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 128-29.</note>
       <note>Winsløw er den berømte læge Jacob Winsløw (1669-1760) som levede hele sit aktive liv i Paris.</note>
    </notes>
+   <source pages="128-129"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn</small></nonum>
+<right><nonum><small>Kiøbenhavn</small></nonum></right>
     Jeg har Klokken henimod syv i min Stue,
 Den yndigste, deiligste, vakkreste Frue,
 Som nogentid Engelland bar.
@@ -1978,9 +1956,7 @@ I nysmeldte Selskab, saa kom!
    <toctitle>Tandpinen</toctitle>
    <indextitle>Tandpinen</indextitle>
    <firstline>Min Kone skranter lidt igien</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 130-31.</note>
-   </notes>
+   <source pages="130-131"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2017,9 +1993,9 @@ Træk Tanden ud!
    <indextitle>Apollo den Syttende</indextitle>
    <firstline>For fire Sekler siden</firstline>
    <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 132-40.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1797).</note>
    </notes>
+   <source pages="132-140"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2149,13 +2125,11 @@ Et Kys - paa hver af mine Musers - Hænder?
    <toctitle>Stambogen</toctitle>
    <indextitle>Stambogen</indextitle>
    <firstline>Der levede for hundred Aar</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 141-49.</note>
-   </notes>
+   <source pages="141-149"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Gravensteen</small></nonum>
+<right><nonum><small>Gravensteen</small></nonum></right>
     ,,Der levede for hundred Aar
 I Dans Elysium en Hertug uden Mage,
 I Fortids, den Tids, og i vor Tids Dage -
@@ -2273,14 +2247,14 @@ Skal Ord for Ord min sidste Søn gientage.
    <indextitle>Smagens Forfalden</indextitle>
    <firstline>Jeg læste samlede, hvad mange Gange</firstline>
    <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 150-51.</note>
       <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1797).</note>
       <note>Brevet er henvendt til <a person="rahbek">Knud Lyne Rahbek</a>.</note>
    </notes>
+   <source pages="150-151"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn</small></nonum>
+<right><nonum><small>Kiøbenhavn</small></nonum></right>
     Jeg læste samlede, hvad mange Gange
 Jeg sang i Vennelag,
 For middelmaadig Viin at give Mestersmag,
@@ -2313,13 +2287,11 @@ Fordærvet af Tobak, af Øl, og af Aviser.
    <toctitle>Levningen af Uskyldighedsstanden</toctitle>
    <indextitle>Levningen af Uskyldighedsstanden</indextitle>
    <firstline>Letsindig kalder Du, min Lilia! Din Sanger</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 152-59.</note>
-   </notes>
+   <source pages="152-159"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn</small></nonum>
+<right><nonum><small>Kiøbenhavn</small></nonum></right>
     <i>Letsindig</i> kalder Du, min <i>Lilia!</i> Din Sanger,
 Fordi han Gratier og Muser fanger
 Med Glæde, naar han seer sit Ram;
@@ -2437,13 +2409,11 @@ Der i sin lodne Kappe giemmer Englen,
    <toctitle>Strømpebaandet</toctitle>
    <indextitle>Strømpebaandet</indextitle>
    <firstline>Vee den Vanhellige, hvis Haand</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 160-65.</note>
-   </notes>
+   <source pages="160-165"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn</small></nonum>
+<right><nonum><small>Kiøbenhavn</small></nonum></right>
     Vee den Vanhellige, hvis Haand
 Formaster sig at løse Baand,
 Som Næstens Kones Strømper binde!
@@ -2532,13 +2502,11 @@ Og af dens Glands i dine Blikke.
    <toctitle>Vers for Prosa</toctitle>
    <indextitle>Vers for Prosa</indextitle>
    <firstline>Min astronomiske, min kiøbenhavnske Ven</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 166-74.</note>
-   </notes>
+   <source pages="166-174"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Paris</small></nonum>
+<right><nonum><small>Paris</small></nonum></right>
     Min astronomiske, min kiøbenhavnske Ven,
 Som lige langt fra Himmelen og Jorden,
 Og næsten lige langt fra Syden og fra Norden,
@@ -2655,13 +2623,11 @@ Farvel min Himmelven! mit Helvede begynder.
    <toctitle>Svaret</toctitle>
    <indextitle>Svaret</indextitle>
    <firstline>Jeg lover hermed en Billet</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 175-78.</note>
-   </notes>
+   <source pages="175-178"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn</small></nonum>
+<right><nonum><small>Kiøbenhavn</small></nonum></right>
     Jeg lover hermed en Billet
 Til Stykket: <i>den forladte Datter</i>,
 Saasnart man samme giver atter;
@@ -2715,13 +2681,11 @@ E. S. Jeg er prosaisk nok, desværr'!
    <toctitle>Vor Verdens Skabelse</toctitle>
    <indextitle>Vor Verdens Skabelse</indextitle>
    <firstline>O Du, som Oceanets Flade</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 179-89.</note>
-   </notes>
+   <source pages="179-189"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn</small></nonum>
+<right><nonum><small>Kiøbenhavn</small></nonum></right>
     O Du, som Oceanets Flade,<note>,,Du'' bliver af udgivere gerne rettet til ,,De''.</note>
 Med vore sorte Brødres Øer,
 Pallmall, og Store Kongensgade,
@@ -2882,13 +2846,11 @@ De sover sikkert allerede!
    <toctitle>Postskriptet i Aar til Brevet i Fjor</toctitle>
    <indextitle>Postskriptet i Aar til Brevet i Fjor</indextitle>
    <firstline>Tillad, høistærede Krigscommissarius!</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 190-201.</note>
-   </notes>
+   <source pages="190-201"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Lüneborg</small></nonum>
+<right><nonum><small>Lüneborg</small></nonum></right>
     Tillad, høistærede Krigscommissarius!
 At, mens jeg nipper til lidt Mad,
 I denne Svinestad -
@@ -2960,7 +2922,7 @@ Elskværdige Herr <i>Jessen!</i> Deres Ven,
 <nonum><b><center>Efterskrift</center></b></nonum>
 <nonum><small><center>(1803)</center></small></nonum>
 
-                                                      <nonum><small>Paris</small></nonum>
+<right><nonum><small>Paris</small></nonum></right>
     At det nærværende Postscriptum til et Brev,
 Som jeg omtrent for eet Aar siden skrev,
 Saa sildig kommer, og maaskee for silde,
@@ -3057,13 +3019,11 @@ Og kysser Deres Frues skiønne Haand.
    <toctitle>Forfatterens Liv og Levnet i Paris</toctitle>
    <indextitle>Forfatterens Liv og Levnet i Paris</indextitle>
    <firstline>Elskværdigste blandt alle danske Koner</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 202-22.</note>
-   </notes>
+   <source pages="202-222"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Paris</small></nonum>
+<right><nonum><small>Paris</small></nonum></right>
     Elskværdigste blandt alle danske Koner -
 Hvis alle Dyders Øven uden Tvang,
 Bestandig Munterhed paa Livets Gang,
@@ -3345,13 +3305,11 @@ E. S. Et venligt Svar jeg haaber fuldt og fast
    <toctitle>Afskeden</toctitle>
    <indextitle>Afskeden</indextitle>
    <firstline>Lyksalighed, min Strøm! trods hver Moral-Pedant</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 223-26.</note>
-   </notes>
+   <source pages="223-226"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Mayland</small></nonum>
+<right><nonum><small>Mayland</small></nonum></right>
     Lyksalighed, min <i>Strøm!</i> trods hver Moral-Pedant,
 Fra <i>Zeno</i> til den ellers viise <i>Kant</i>,
 Er Maalet, hvortil selv en Dydig sigter;
@@ -3402,14 +3360,14 @@ Den Lov, jeg gav mig selv, den Lov, som frelste mig:
    <indextitle>Rom og Paris</indextitle>
    <firstline>Skiæbnen bød mig først Johan</firstline>
    <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 227-36.</note>
       <note>Se <a person="gierlei">Andreas Chr. Gierlew</a>.</note>
       <note>Teksten citerer flittigt <xref poem="19990208005"/> fra Wessels <i>Kierlighed uden Strømper</i>s Første Optog.</note>
    </notes>
+   <source pages="227-236"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Paris</small></nonum>
+<right><nonum><small>Paris</small></nonum></right>
     ,,Skiæbnen bød mig først <i>Johan;</i>
 Nu mig giver <i>Mads</i> til Mand.''
 
@@ -3561,13 +3519,11 @@ Er tilsidst <i>det sande Rom!</i>
    <toctitle>Tilbagegangen over Rubicon</toctitle>
    <indextitle>Tilbagegangen over Rubicon</indextitle>
    <firstline>Sex hele søgne Dage siden</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 237-56.</note>
-   </notes>
+   <source pages="237-256"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Paris</small></nonum>
+<right><nonum><small>Paris</small></nonum></right>
     Sex hele søgne Dage siden
 Den første Søndag i det sidste Aar,
 Jeg, hvor jeg ligger, sidder, staaer og gaaer,
@@ -3843,13 +3799,13 @@ I Tanker til vort Bryst vi trykke.
    <indextitle>Romerering</indextitle>
    <firstline>Glade, lykkelige Ven!</firstline>
    <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 257-82.</note>
-      <note>Se <a person="gierlei">Andreas Chr. Gierlew</a>.</note>
+      <note>Se <a person="gierlew">Andreas Chr. Gierlew</a>.</note>
    </notes>
+   <source pages="257-282"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Paris</small></nonum>
+<right><nonum><small>Paris</small></nonum></right>
     Glade, lykkelige Ven!
 Som i Hesperiders Have
 Henrykt sværmer Vintren hen
@@ -4241,13 +4197,11 @@ O! men bliv bestandig - <i>dansk!</i>
    <toctitle>Overhovedet og i Grunden</toctitle>
    <indextitle>Overhovedet og i Grunden</indextitle>
    <firstline>De stikler ved hver given Leilighed</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 283-89.</note>
-   </notes>
+   <source pages="283-289"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Paris</small></nonum>
+<right><nonum><small>Paris</small></nonum></right>
     De stikler ved hver given Leilighed,
 Min ellers ædle Ven, paa Held, jeg har i Munden;
 Og sigter overhovedet dermed,
@@ -4352,13 +4306,13 @@ Udtrykker værdigt nok i Grunden.
    <indextitle>Hvis jeg er, og hvis jeg ikke er</indextitle>
    <firstline>Man skriver mig til Svar paa ni private Breve</firstline>
    <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 290-94.</note>
       <note>Første gang trykt i Iversens <i>Fyenske Avertissements Tidende</i>, d. 9. April 1805, foranlediget af følgende lille notits i samme avis: ,,Den nylig afdøde Spazier var en fød Berliner, havde faaet Hofraadstitlen, som han lige til sin Død prunkede med, af Fyrsten af Neuwied, og derpaa reist i selskab med <i>vor Baggesen</i> (det var han idetmindste dengang, Gud veed, <i>hvis</i> han nu er).'' (Citeret i Arlauds udgave).</note>
    </notes>
+   <source pages="290-294"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Paris</small></nonum>
+<right><nonum><small>Paris</small></nonum></right>
     Man skriver mig til Svar paa ni private Breve,
 Der alle hidtil ubesvarte bleve,
 Fra Fædrelandet i en offentlig Avis,
@@ -4420,9 +4374,7 @@ Vor Kronprinds <i>Frederiks</i>, hvis Uniform jeg bær!
    <toctitle>Satansengelen</toctitle>
    <indextitle>Satansengelen</indextitle>
    <firstline>Den er der da, den frygtede blandt Dage</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 295-308.</note>
-   </notes>
+   <source pages="295-308"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4628,13 +4580,11 @@ Mod Satansengelen, som ham med Næve slog.
    <toctitle>Tausheden</toctitle>
    <indextitle>Tausheden</indextitle>
    <firstline>Du klager, at jeg skriver alt for lidt</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 309-13.</note>
-   </notes>
+   <source pages="309-313"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Marly</small></nonum>
+<right><nonum><small>Marly</small></nonum></right>
     Du klager, at jeg skriver alt for lidt
 Paa nogen Tid, især til Norden;
 Og at min Taushed gaaer saa vidt,
@@ -4707,13 +4657,11 @@ Du vilde det, som Ven af <i>den</i> og <i>mig</i>, fortryde!
    <toctitle>Sprog-Smørrebrød.</toctitle>
    <indextitle>Sprog-Smørrebrød.</indextitle>
    <firstline>O Du, som, deelende den Fred</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 314-20.</note>
-   </notes>
+   <source pages="314-320"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Marly</small></nonum>
+<right><nonum><small>Marly</small></nonum></right>
     O Du, som, deelende den Fred,
 Vort kolde Nord oplives ved,
 Mens Syd og Vest og Øst i Surturskampen med
@@ -4801,13 +4749,13 @@ Vil under tusind Bravoraab fortære.
    <indextitle>Noureddin til Aladdin</indextitle>
    <firstline>Du har da fundet den, min Adam! den, jeg søgte</firstline>
    <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 321-37.</note>
       <note>Digtet spiller på Oehlenschlägers ,,Lystspil'' <i>Aladdin</i> fra <a work="oehlenschlaeger/1805">Poetiske Skrifter</a> (1805).</note>
    </notes>
+   <source pages="321-337"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn d. 14de Nov. 1806</small></nonum>
+<right><nonum><small>Kiøbenhavn d. 14de Nov. 1806</small></nonum></right>
     ,,Du har da fundet den, min <i>Adam!</i> den, jeg søgte
 Med Alvors dybe Grublen, med
 Utrættelig Arbeidsomhed,
@@ -4859,7 +4807,7 @@ Med Schlegelpærer og med Tieckske Blommer,
 Og propper Buxefikken alt for fuld
 Af Göthes underjordiske Granater,
 Imens Din skiønne runde Hattepuld
-Fiirkantes af et Calderonsk Theater &mdash;<note>Den store spanske skuespilsforfatter Calderon (1600-1681) skrev fortrinsvis firefodede trochæer</note>
+Fiirkantes af et Calderonsk Theater &mdash;<note>Den store spanske skuespilsforfatter <a poet="calderon">Calderon (1600-1681)</a> skrev fortrinsvis firefodede trochæer.</note>
 Skiøndt Lampen Du med Haan har puttet i
 Belæsselsen af alt det andet Skramlerie -
 Skiøndt, havde Du betænkt Dig meget længe,
@@ -5041,13 +4989,13 @@ Men ventelig <i>Vaulunders Steen</i>.
    <indextitle>Taksigelsen</indextitle>
    <firstline>Man tvang Dig, trods Din Mistroe til Din Evne</firstline>
    <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 338-41.</note>
       <note>Recensenten er Claus Pavels (1769-1822), senere biskop i Bergen.</note>
    </notes>
+   <source pages="338-341"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn</small></nonum>
+<right><nonum><small>Kiøbenhavn</small></nonum></right>
     Man tvang Dig, trods Din Mistroe til Din Evne
 At dømme <i>Sagen</i> selv, end sige meer,
 <i>Poeter</i> for Din Domstol at indstevne,
@@ -5092,16 +5040,12 @@ Og lod Poeter, som Du ei begriber, være.
 <head>
    <title>Forespørgselen</title>
    <subtitle>Til Assessor A. S. Ørsted</subtitle>
-   <toctitle>Forespørgselen</toctitle>
-   <indextitle>Forespørgselen</indextitle>
    <firstline>O Du, som veed at dømme hver en Sag</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 342-48.</note>
-   </notes>
+   <source pages="342-348"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-                                                      <nonum><small>Kiøbenhavn</small></nonum>
+<right><nonum><small>Kiøbenhavn</small></nonum></right>
     O Du, som veed at dømme hver en Sag,
 Saavel ved Hoffet, som i Staden,
 Hvis Mandag er en evig Dommedag
@@ -5210,9 +5154,7 @@ Jeg med at døe mig ikke skynder.
    <toctitle>Min Skygge</toctitle>
    <indextitle>Min Skygge</indextitle>
    <firstline>I faa, som end tilbagebleve</firstline>
-   <notes>
-      <note>Teksten følger <i>Skiemtsomme Riimbreve</i> (1807), side 349-56.</note>
-   </notes>
+   <source pages="349-356"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

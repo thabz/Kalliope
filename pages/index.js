@@ -5,7 +5,7 @@ import Head from '../components/head';
 import Main from '../components/main.js';
 import { KalliopeTabs } from '../components/tabs.js';
 import LangSelect from '../components/langselect';
-import Nav, { NavPaging } from '../components/nav';
+import Nav, { NavPaging, kalliopeCrumbs } from '../components/nav';
 import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import * as Links from '../components/links';
@@ -137,7 +137,7 @@ class News extends React.Component<NewsProps> {
             }
             div.news-item:first-child {
               padding-bottom: 40px;
-              border-bottom: 1px solid #777;
+              border-bottom: 1px solid #757575;
               margin-bottom: 50px;
             }
 
@@ -155,7 +155,7 @@ class News extends React.Component<NewsProps> {
               margin-top: 5px;
               font-weight: lighter;
               font-size: 0.8em;
-              color: #777;
+              color: #757575;
             }
           `}</style>
         </div>
@@ -247,7 +247,7 @@ export default class extends React.Component<IndexProps> {
       <div>
         <Head headTitle="Kalliope" requestPath={requestPath} />
         <Main>
-          <Nav lang="da" rightSide={navPaging} />
+          <Nav lang="da" crumbs={kalliopeCrumbs(lang)} rightSide={navPaging} />
           <Heading title="Kalliope" />
           <KalliopeTabs lang={lang} selected="index" />
           <SidebarSplit sidebar={sidebar}>

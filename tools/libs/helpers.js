@@ -112,6 +112,8 @@ const replaceDashes = html => {
       .replace(/ -&ldquo;/g, ' —&ldquo;')
       .replace(/ -$/gm, ' —')
       .replace(/ -([\!;\?\.»«,:\n])/g, / —$1/)
+      .replace(/ \. \. \./gm, '&nbsp;.&nbsp;.&nbsp;.') // Undgå ombrydning af ". . ."
+      .replace(/ —/g,'&nbsp;—') // Undgå tankestreger som ombrydes til sin egen linje
   );
 };
 
@@ -126,9 +128,9 @@ const htmlToXml = (
   if (isPoetry && !isBible && !isFolkevise) {
     // Marker strofe numre
     html = html
-      .replace(/^(\d+\.?)\s*$/gm, '<num>$1</num>')
-      .replace(/^[ \t]*([IVXLCDM]+\.?) *$/gm, '<num>$1</num>')
-      .replace(/^\[(\d+\.?)\]\s*$/gm, '<num>[$1]</num>');
+      .replace(/^(\d+\.?)\s*$/gm, '<versenum>$1</versenum>')
+      .replace(/^[ \t]*([IVXLCDM]+\.?) *$/gm, '<versenum>$1</versenum>')
+      .replace(/^\[(\d+\.?)\]\s*$/gm, '<versenum>[$1]</versenum>');
   }
   html = html
     .replace(/\n/g, '::NEWLINE-PLACEHOLDER::') // Regexp nedenunder spænder ikke over flere linjer... underligt.
@@ -140,6 +142,12 @@ const htmlToXml = (
         .replace(/\n *(----*) *\n/g, (match, p1) => {
           return `\n<hr width="${p1.length}"/>\n`;
         })
+        .replace(/\n *(====*) *\n/g, (match, p1) => {
+          return `\n<hr width="${p1.length}" class="double"/>\n`;
+        })
+        .replace(/^( +)/gm, (match, p1) => {
+          return '&nbsp;'.repeat(2 * p1.length);
+        })
         .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
           // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
           return `<nonum>${p1}</nonum>`;
@@ -147,9 +155,6 @@ const htmlToXml = (
         .replace(/^\n/, '')
         .replace(/^ *(<right>.*)$/gm, '$1')
         .replace(/^ *(<center>.*)$/gm, '$1')
-        .replace(/^( +)/gm, (match, p1) => {
-          return '&nbsp;'.repeat(2 * p1.length);
-        })
     )
   );
 
@@ -237,7 +242,7 @@ const htmlToXml = (
     decoded = collectedLines.join('\n');
   } else if (isFolkevise) {
     // Flyt strofe-nummer fra egen linje ind i starten af strofens første linje.
-    let foundNum = '';
+    let foundNum = null;
     const collectedLines = [];
     decoded.split(/\n/).forEach(line => {
       const match = line.match(/^\s*(\d+)\.?\s*/);
@@ -246,13 +251,21 @@ const htmlToXml = (
         foundNum = match[1];
         return;
       } else {
-        const curLine = foundNum + line;
-        collectedLines.push(curLine);
-        foundNum = '';
+        if (foundNum != null) {
+          collectedLines.push(`<num>${foundNum}.</num>${line}`);
+        } else {
+          collectedLines.push(line);
+        }
+        foundNum = null;
       }
     });
     decoded = collectedLines.join('\n');
   }
+
+  // Hvis teksten har sine egne linjenummeringer (f.eks. til Aarestrups strofenumre eller margin-tekster)
+  // skal automatisk linjenummerering skippes.
+  const hasOwnNums =
+    decoded.indexOf('<num>') > -1 || decoded.indexOf('<margin>') > -1;
 
   let lineNum = 1;
   lines = decoded.split('\n').map(l => {
@@ -262,34 +275,49 @@ const htmlToXml = (
       l = l.replace('<resetnum/>', '');
     }
     const hasNonum =
+      l.indexOf('<versenum>') > -1 ||
       l.indexOf('<nonum>') > -1 ||
+      l.indexOf('<asterism') > -1 ||
       l.indexOf('<wrap>') > -1 ||
-      l.indexOf('<num>') > -1 ||
       l.match(/^\s*$/) ||
       l.match(/^\s*<hr[^>]*>\s*$/);
     if (!hasNonum) {
       if (isPoetry && !isFolkevise) {
         options.num = lineNum;
       }
+      if (lineNum % 5 == 0 && !hasOwnNums) {
+        options.displayNum = lineNum;
+      }
       lineNum += 1;
     } else {
       l = l.replace(/<nonum>/g, '').replace(/<\/nonum>/g, '');
     }
+
     if (isBible) {
       const match = l.match(/^\s*(\d+,?\d*)\.\s*/);
       if (match) {
         options.num = match[1];
+        options.displayNum = match[1];
         options.bible = true;
         l = l.replace(/^\s*\d+,?\d*\.\s*/, '');
       }
     }
-    if (isFolkevise) {
-      const match = l.match(/^\s*(\d+)\.?\s*/);
-      if (match) {
-        options.num = match[1];
-        options.folkevise = true;
-        l = l.replace(/^\s*\d+\.?\s*/, '');
-      }
+    // if (isFolkevise) {
+    //   const match = l.match(/^\s*(\d+)\.?\s*/);
+    //   if (match) {
+    //     options.displayNum = match[1] + '.';
+    //     options.num = match[1];
+    //     options.folkevise = true;
+    //     l = l.replace(/^\s*\d+\.?\s*/, '');
+    //   }
+    // }
+    if (l.indexOf('<num>') > -1) {
+      options.displayNum = l.match(/<num>(.*)<\/num>/)[1];
+      l = l.replace(/<num>(.*)<\/num>/, '');
+    }
+    if (l.indexOf('<margin>') > -1) {
+      options.margin = l.match(/<margin>(.*)<\/margin>/)[1];
+      l = l.replace(/<margin>(.*)<\/margin>/, '');
     }
     if (l.indexOf('<center>') > -1) {
       l = l.replace('<center>', '').replace('</center>', '');
@@ -333,27 +361,34 @@ const imageSizeAsync = (filename, callback) => {
 
 const imageSizeSync = deasync(imageSizeAsync);
 
-const buildThumbnails = (topFolder, isFileModified) => {
-  let resizeImageQueue = async.queue((task, callback) => {
-    sharp(task.inputfile)
-      .resize(task.maxWidth, 10000)
-      .max()
-      .withoutEnlargement()
-      .toFile(task.outputfile, function(err) {
-        if (err != null) {
-          console.log(err);
-        }
-        console.log(task.outputfile);
-        callback();
-      });
-  }, 2);
+let resizeImageQueue = async.queue((task, callback) => {
+  sharp(task.inputfile)
+    .resize(task.maxWidth, 10000)
+    .max()
+    .withoutEnlargement()
+    .toFile(task.outputfile, function(err) {
+      if (err != null) {
+        console.log(err);
+      }
+      console.log(task.outputfile);
+      callback();
+    });
+}, 2);
 
+const resizeImage = (inputfile, outputfile, maxWidth) => {
+  resizeImageQueue.push({ inputfile, outputfile, maxWidth });
+};
+
+const buildThumbnails = (topFolder, isFileModified) => {
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
 
   const handleDirRecursive = dirname => {
     if (!fs.existsSync(dirname)) {
       console.log(`${dirname} mangler, så genererer ingen thumbs deri.`);
+      return;
+    }
+    if (dirname.match(/\/social$/)) {
       return;
     }
     fs.readdirSync(dirname).forEach(filename => {
@@ -376,11 +411,7 @@ const buildThumbnails = (topFolder, isFileModified) => {
               (isFileModified != null && isFileModified(fullFilename)) ||
               !fileExists(outputfile)
             ) {
-              resizeImageQueue.push({
-                inputfile: fullFilename,
-                outputfile,
-                maxWith: width,
-              });
+              resizeImage(fullFilename, outputfile, width);
             }
           });
         });
@@ -407,4 +438,5 @@ module.exports = {
   replaceDashes,
   imageSizeSync,
   buildThumbnails,
+  resizeImage,
 };

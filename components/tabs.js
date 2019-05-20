@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link, Router } from '../routes';
 import * as Links from './links.js';
-import { poetGenetiveLastName } from './poetname.js';
+import { poetGenetiveLastName } from './poetname-helpers.js';
 import _ from '../pages/helpers/translations.js';
 import type { Lang, Poet, Country } from '../pages/helpers/types.js';
 import CommonData from '../pages/helpers/commondata.js';
@@ -218,7 +218,11 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
       <div style={{ display: 'flex' }}>
         <div style={{ flexGrow: 1 }}>
           <form onSubmit={this.onSubmit}>
+            <label htmlFor="search-field-id" style={{ display: 'none' }}>
+              Søg
+            </label>
             <input
+              id="search-field-id"
               ref={domElement => {
                 if (domElement != null) {
                   this.searchField = domElement;
@@ -340,6 +344,11 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
           :global(.tabs) > :global(.tab.selected) {
             border-bottom: 2px solid black;
           }
+          /*
+          :global(.tabs) > :global(.tab:hover) {
+            border-bottom: 2px solid #888;
+          }
+          */
           :global(.tabs) :global(.tab.selected a) {
             color: black;
           }
