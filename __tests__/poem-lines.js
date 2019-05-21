@@ -19,6 +19,7 @@ const regexps = [
   whitelist: [/\. \. \./]}, // Mellemrum foran punktum
   /^-[a-zæøåA-ZÆØÅ]/m,   // Enkelt bindestreg ...
   /<firstline><\/firstline>/,   // Tom <firstline> ...
+  /^.*[^\.]\.\s*[a-z;]\s*$/, // Løse bogstaver efter sidste punktum
   {regexp: /[a-zæøå],[a-zæøå]/,
   whitelist: [/<keywords>/,/<quality>/]},
   { regexp: /mmm/, whitelist: [/<note>.*\]/] },
