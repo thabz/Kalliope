@@ -412,6 +412,9 @@ Naar Du blot er ene.
     <subtitle>(1816)</subtitle>
     <firstline>Den er forhaanden, din Fødselsdag</firstline>
     <source pages="14-16"/>
+    <notes>
+        <note>Mottoet stammer fra Baggesens <xref poem="baggesen200111101,5-8"/>.</note>
+    </notes>
     <!-- TODO: Referér til det citerede stykke Baggesen -->
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -419,7 +422,7 @@ Naar Du blot er ene.
 <nonum><small><right>Kan Musens stille Harmonie</right></small></nonum>
 <nonum><small><right>Dig, Elskte! haabe mildt at røre?</right></small></nonum>
 <nonum><small><right>Vil Du dens kjælne Sværmerie</right></small></nonum>
-{Med sympathetisk Vellyst høre?}
+<nonum><small><right>Med sympathetisk Vellyst høre?</right></small></nonum>
 <nonum><small><right><w>Baggesen</w></right></small></nonum>
 
 Den er forhaanden, din Fødselsdag;
@@ -2114,14 +2117,13 @@ Blev en Himmel mit Bryst, et Uskyldstempel mit Hjerte.
 
 <poem id="zahle2019052446">
 <head>
-    <title>I Studenterforeningen, den 28de Jan. 1825</title>
-    <toctitle>I Studenterforeningen den 28de Januar 1825</toctitle>
+    <title>I Studenterforeningen, den 28de Jan. 1823</title>
+    <toctitle>I Studenterforeningen den 28de Januar 1823</toctitle>
     <firstline>Jeg kjender et Land, som har Bølgen til Vold</firstline>
     <source pages="70-71"/>
     <dates>
-        <event>1825-01-28</event>
+        <event>1823-01-28</event>
     </dates>
-    <!-- TODO: 1825 eller 1823? Indholdsfortegnelsen siger 1823. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5262,7 +5264,6 @@ Han gik med Graad paa Kind.
     <toctitle>Hr. Jens 1832</toctitle>
     <firstline>Hr. Jens, han seiler fra Sjølunds Ø</firstline>
     <source pages="194"/>
-    <!-- TODO: Er titlen virkeligt blot 1832? -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
