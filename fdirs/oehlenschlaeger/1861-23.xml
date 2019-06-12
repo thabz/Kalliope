@@ -7053,13 +7053,13 @@ Men lange Søvn - den kosted Broderblodet.
 </body>
 </poem>
 
-<!-- === -->
 <poem id="oehlen2005050714">
 <head>
     <title>Digteren national</title>
     <firstline>Som Fædreland sin Kunst, saa elsker atter</firstline>
     <source pages="191-192"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <keywords>shakespeare,caldaron,corneille,racine,goethe,schiller</keywords>
 </head>
 <body>
 Som Fædreland sin Kunst, saa elsker atter
@@ -7109,7 +7109,7 @@ Men derfor blive vi dog, hvad vi ere.
     <title>Poesiens Sandhed</title>
     <firstline>I braute med jer Poesie! Mon Legen</firstline>
     <source pages="192-194"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 ,,I braute med jer Poesie! Mon Legen
@@ -7184,7 +7184,7 @@ Er skiøn og lærerig, før den blev smeltet.
     <title>Den blotte Form</title>
     <firstline>Stilistiker! hovmod dig ei for meget</firstline>
     <source pages="194-195"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Stilistiker! hovmod dig ei for meget,
@@ -7210,7 +7210,7 @@ Var uden Talg og Vox og uden Væge.
 Hvad siger Schiller? ,,Tro ei Skiald at være,
 Fordi et dannet Sprog dig giør den Ære
 (Var Aanden mat, og Følelserne køle),
-For dig at tænke, Ven! for dig at føle.''
+For dig at tænke, Ven! for dig at føle.''<!-- TODO: Find citatet -->
 
 Hvor rørende, hvor skiønt, i Morgendampen
 Med Sprog at skue Digteren i Kampen!
@@ -7229,7 +7229,7 @@ Der hented sig sin Luxus i Boutiken.
     <title>Stoffet</title>
     <firstline>Ei Stoffets gode Valg man Roes bør negte</firstline>
     <source pages="195-196"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ei Stoffets gode Valg man Roes bør negte.
@@ -7254,12 +7254,13 @@ Thi kun Vorherre kan af Intet skabe.
 </body>
 </poem>
 
+<!-- === -->
 <poem id="oehlen2005050803">
 <head>
     <title>Tanken</title>
     <firstline>I Poesien steds arbeider Tanken</firstline>
     <source pages="196"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 I Poesien steds arbeider Tanken;
