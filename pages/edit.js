@@ -4,7 +4,7 @@ import React, { Fragment } from 'react';
 import { Link, Router } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
-import Nav, { NavPaging } from '../components/nav';
+import Nav, { NavPaging, textCrumbs } from '../components/nav';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
@@ -12,7 +12,8 @@ import Heading from '../components/heading.js';
 import TextHeading from '../components/textheading.js';
 import SubHeading from '../components/subheading.js';
 import TOC from '../components/toc.js';
-import PoetName, { poetNameString } from '../components/poetname.js';
+import PoetName from '../components/poetname.js';
+import { poetNameString } from '../components/poetname-helpers.js';
 import { workTitleString } from '../components/workname.js';
 import TextName, {
   textTitleString,
@@ -167,10 +168,11 @@ type EditComponentProps = {
   poet: Poet,
   work: Work,
   text: Text,
+  section_titles: ?Array<{ title: string, id: ?string }>,
   xml: string,
   error: ?Error,
 };
-export default class extends React.Component<EditComponentProps> {
+export default class EditComponent extends React.Component<EditComponentProps> {
   onCancelClick: (e: SyntheticInputEvent<HTMLButtonElement>) => void;
   onSubmitClick: (e: SyntheticInputEvent<HTMLButtonElement>) => void;
 
@@ -187,14 +189,17 @@ export default class extends React.Component<EditComponentProps> {
   }) {
     const json = await Client.text(textId);
     const xml = await Client.textXml(textId);
-
     return {
       lang,
+      highlight,
       poet: json.poet,
       work: json.work,
+      prev: json.prev,
+      next: json.next,
       text: json.text,
-      error: json.error || xml.error,
       xml: xml.xml,
+      section_titles: json.section_titles,
+      error: json.error || xml.error,
     };
   }
 
@@ -216,9 +221,10 @@ export default class extends React.Component<EditComponentProps> {
   onSubmitClick() {}
 
   render() {
-    const { lang, poet, work, text, xml, error } = this.props;
+    const { lang, poet, work, text, section_titles, xml, error } = this.props;
 
     if (error) {
+      console.log(error);
       return <ErrorPage error={error} lang={lang} message="Ukendt tekst" />;
     }
     const requestPath = `/${lang}/text/${text.id}`;
@@ -310,6 +316,7 @@ export default class extends React.Component<EditComponentProps> {
               lang={lang}
               poet={poet}
               work={work}
+              crumbs={textCrumbs(lang, poet, work, section_titles || [], text)}
               title={textLinkTitleString(text)}
             />
             <Heading title={title} subtitle="Værker" />

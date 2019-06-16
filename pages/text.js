@@ -78,7 +78,7 @@ class KeywordLink extends React.Component<KeywordLinkProps> {
 }
 
 type TextHeadingProps = { text: Text, lang: Lang, isProse: boolean };
-class TextHeading extends React.Component<TextHeadingProps> {
+class PageTextHeading extends React.Component<TextHeadingProps> {
   render() {
     const { text, lang, isProse } = this.props;
 
@@ -144,7 +144,7 @@ type TextComponentProps = {
   next?: PrevNextText,
   error: ?Error,
 };
-export default class extends React.Component<TextComponentProps> {
+export default class TextComponent extends React.Component<TextComponentProps> {
   static async getInitialProps({
     query: { lang, textId, highlight },
   }: {
@@ -471,7 +471,7 @@ export default class extends React.Component<TextComponentProps> {
               <div>
                 <article>
                   <div className="text-content">
-                    <TextHeading
+                    <PageTextHeading
                       text={text}
                       lang={lang}
                       isProse={text.is_prose}
