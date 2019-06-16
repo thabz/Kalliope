@@ -2,14 +2,20 @@
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1847" author="blicher" status="complete" type="poetry">
 <workhead>
-   <title>Digte</title>
-   <year>1847</year>
-   <cvs-timestamp>$Id$</cvs-timestamp>
-   <quality>korrektur1,kilde</quality>
-   <notes>
-    <note>Kilde er Blicher: <i>Digte</i>, I-II, P. L. Møller (red.), C. A. Reitzel, 1847.</note>
-    <note>Noter med foranstillet * stammer fra ovennævnte kilde.</note>
+    <title>Digte</title>
+    <year>1847</year>
+    <notes>
+       <note>Kilde er St. St. Blicher: <i>Digte</i>, bd. I-II, P. L. Møller (red.), C. A. Reitzel, 1847.</note>
+       <note>Noter med foranstillet * stammer fra ovennævnte kilde.</note>
+       <note>Første del har mottoet ,,Stille og mørkladen er vel min Hede; / Dog under Lyngtoppen Blomstret staaer. / Lærken blandt Gravhøjen bygger sit Rede / Og sine Triller i Ørknen slaaer. / (Af ,,Jyllandsrejse i sex Døgn'' 1816.)''</note>
+       <note>Anden del har mottoet ,,Længe er det siden jeg var ung; / Haaret graaner, Gangen vorder tung. / Vaar og Sommer ere længst forbi; / Vinterklædt er Resten af min Sti. / St. St. Blicher ,,Min Svanesang.''''</note>
     </notes>
+    <pictures>
+        <picture type="titlepage" src="1847-p1.jpg">Titelbladet til første del af <i>Digte</i> (1847) lyder ,,Digte / af / St. St. Blicher. // Første Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt i Bianco Lunos Bogtrykkeri. / 1847.''</picture>
+        <picture type="titlepage" src="1847-p2.jpg">Titelbladet til anden del af <i>Digte</i> (1847) lyder ,,Digte / af / St. St. Blicher. // Anden Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt i Bianco Lunos Bogtrykkeri. / 1847.''</picture>
+   </pictures>
+    <source id="bd1" facsimile="115308045460_color" facsimile-pages-num="528" facsimile-pages-offset="14">St. St. Blicher: <i>Digte</i>, P.L. Møller (red.), C.A. Reitzel, 1847, Bd. I.</source>
+    <source id="bd2" facsimile="115308045460_color" facsimile-pages-num="528" facsimile-pages-offset="256">St. St. Blicher: <i>Digte</i>, P.L. Møller (red.), C.A. Reitzel, 1847, Bd. II.</source>
 </workhead>
 
 <!-- 
@@ -30,15 +36,15 @@ Det var nærv. Udgivers oprindelige Haab at meddele alle de paa forskjellige Ste
 
 <section>
 <head>
-   <toctitle>Første Deel</toctitle>
+    <toctitle>Første Deel</toctitle>
 </head>
 <content>
 
 <poem id="blicher2003091501">
 <head>
-   <title>Motto</title>
-   <toctitle>Motto</toctitle>
-   <firstline>Stille og mørkladen er vel min Hede</firstline>
+    <title>Motto</title>
+    <toctitle>Motto</toctitle>
+    <firstline>Stille og mørkladen er vel min Hede</firstline>
 </head>
 <body>
 
@@ -54,11 +60,12 @@ Og sine Triller i Ørkenen Slaaer.
 
 <poem id="blicher2003091502">
 <head>
-   <title>Mit første Digt</title>
-   <toctitle>Mit første Digt</toctitle>
-   <indextitle>Mit første Digt</indextitle>
-   <subtitle>1810</subtitle>
-   <firstline>Endnu engang, I længst henfarne Dage!</firstline>
+    <title>Mit første Digt</title>
+    <toctitle>Mit første Digt</toctitle>
+    <indextitle>Mit første Digt</indextitle>
+    <subtitle>1810</subtitle>
+    <firstline>Endnu engang, I længst henfarne Dage!</firstline>
+    <source in="bd1" pages="1-5"/>
 </head>
 <body>
 Endnu engang, I længst henfarne Dage!
@@ -190,13 +197,14 @@ Naar ingen veed hvor Skjaldens Gravhøj findes,
 
 <poem id="blicher2003091503">
 <head>
-   <title>Klintekorset</title>
-   <toctitle>Klintekorset</toctitle>
-   <indextitle>Klintekorset</indextitle>
-   <firstline>Dejlig est du, mit Østhavs Møe!</firstline>
-   <notes>
+    <title>Klintekorset</title>
+    <toctitle>Klintekorset</toctitle>
+    <indextitle>Klintekorset</indextitle>
+    <firstline>Dejlig est du, mit Østhavs Møe!</firstline>
+    <notes>
       <note>* Paa Møen.</note>
-   </notes>
+    </notes>
+    <source in="bd1" pages="5-10"/>
 </head>
 <body>
 Dejlig est du, mit Østhavs Møe!
@@ -364,11 +372,12 @@ Dens Mulm er meer end Livets Solglands værd.
 
 <poem id="blicher2003091504">
 <head>
-   <title>Den eenlige Brud</title>
-   <toctitle>Den eenlige Brud</toctitle>
-   <indextitle>Den eenlige Brud</indextitle>
-   <subtitle>Et jydsk Sagn</subtitle>
-   <firstline>Den rige Mand triner af Døren ud</firstline>
+    <title>Den eenlige Brud</title>
+    <toctitle>Den eenlige Brud</toctitle>
+    <indextitle>Den eenlige Brud</indextitle>
+    <subtitle>(Et jydsk Sagn)</subtitle>
+    <firstline>Den rige Mand triner af Døren ud</firstline>
+    <source in="bd1" pages="10-12"/>
 </head>
 <body>
 Den rige Mand triner af Døren ud
@@ -425,10 +434,11 @@ Da faldt den rige Mand død til Jord.
 
 <poem id="blicher2003091505">
 <head>
-   <title>Ynglingen i den store Stad</title>
-   <toctitle>Ynglingen i den store Stad</toctitle>
-   <indextitle>Ynglingen i den store Stad</indextitle>
-   <firstline>Jeg vanked med Bøssen under min Arm</firstline>
+    <title>Ynglingen i den store Stad</title>
+    <toctitle>Ynglingen i den store Stad</toctitle>
+    <indextitle>Ynglingen i den store Stad</indextitle>
+    <firstline>Jeg vanked med Bøssen under min Arm</firstline>
+    <source in="bd1" pages="12-15"/>
 </head>
 <body>
 Jeg vanked med Bøssen under min Arm
@@ -526,10 +536,11 @@ Jeg vendte mit Ansigt omkring og græd.
 
 <poem id="blicher2003091506">
 <head>
-   <title>Min Yndlingsdal</title>
-   <toctitle>Min Yndlingsdal</toctitle>
-   <indextitle>Min Yndlingsdal</indextitle>
-   <firstline>Hvor est du, elskte Plet! hvad er dit Navn?</firstline>
+    <title>Min Yndlingsdal</title>
+    <toctitle>Min Yndlingsdal</toctitle>
+    <indextitle>Min Yndlingsdal</indextitle>
+    <firstline>Hvor est du, elskte Plet! hvad er dit Navn?</firstline>
+    <source in="bd1" pages="15-17"/>
 </head>
 <body>
 Hvor est du, elskte Plet! hvad er dit Navn?
@@ -591,10 +602,11 @@ Jeg hvirvles bort i mine Dages Strøm,
 
 <poem id="blicher2003091507">
 <head>
-   <title>Gjenfærd</title>
-   <toctitle>Gjenfærd</toctitle>
-   <indextitle>Gjenfærd</indextitle>
-   <firstline>Vægteren vaager den Nat saa lang</firstline>
+    <title>Gjenfærd</title>
+    <toctitle>Gjenfærd</toctitle>
+    <indextitle>Gjenfærd</indextitle>
+    <firstline>Vægteren vaager den Nat saa lang</firstline>
+    <source in="bd1" pages="17-18"/>
 </head>
 <body>
 Vægteren vaager den Nat saa lang,
@@ -636,10 +648,11 @@ Men ej for Samvittigheds hvasse Braad,
 
 <poem id="blicher2003091508">
 <head>
-   <title>La Cours Død</title>
-   <toctitle>La Cours Død</toctitle>
-   <indextitle>La Cours Død</indextitle>
-   <firstline>Min Ven er død! lad Taaren flyde!</firstline>
+    <title>La Cours Død</title>
+    <toctitle>La Cours Død</toctitle>
+    <indextitle>La Cours Død</indextitle>
+    <firstline>Min Ven er død! lad Taaren flyde!</firstline>
+    <source in="bd1" pages="18-19"/>
 </head>
 <body>
 Min Ven er død! lad Taaren flyde!
@@ -681,14 +694,15 @@ Engang det blier i Graven ogsaa Morgen:
 
 <poem id="blicher2003091509">
 <head>
-   <title>Ellekongen</title>
-   <toctitle>Ellekongen</toctitle>
-   <indextitle>Ellekongen</indextitle>
-   <firstline>Hvo rider saa silde mod Skoven frem?</firstline>
-   <notes>
+    <title>Ellekongen</title>
+    <toctitle>Ellekongen</toctitle>
+    <indextitle>Ellekongen</indextitle>
+    <firstline>Hvo rider saa silde mod Skoven frem?</firstline>
+    <notes>
       <note>* Efter Göthe.</note>
       <note>Fri gendigtning af Goethes <xref type="translation" poem="goethe2000010805"/>.</note>
-   </notes>
+    </notes>
+    <source in="bd1" pages="20-21"/>
 </head>
 <body>
 Hvo rider saa silde mod Skoven frem?
@@ -735,12 +749,13 @@ Da var den Pige af Døden bleg.
 
 <poem id="blicher2003091510">
 <head>
-   <title>Dykkeren</title>
-   <firstline>I Riddere gjæve! hvo drister sig til</firstline>
-   <notes>
+    <title>Dykkeren</title>
+    <firstline>I Riddere gjæve! hvo drister sig til</firstline>
+    <notes>
       <note>* Efter Schiller</note>
       <note>Gendigtning af Schillers <xref type="translation" poem="schiller2018100401"/>.</note>
-   </notes>
+    </notes>
+    <source in="bd1" pages="21-27"/>
 </head>
 <body>
 ,,I Riddere gjæve! hvo drister sig til
@@ -922,10 +937,11 @@ Men Dykkeren bringer den aldrig tilbage.
 
 <poem id="blicher2003091511">
 <head>
-   <title>Skieløberen</title>
-   <toctitle>Skieløberen</toctitle>
-   <indextitle>Skieløberen</indextitle>
-   <firstline>Bjergsøen er med Iis belagt</firstline>
+    <title>Skieløberen</title>
+    <toctitle>Skieløberen</toctitle>
+    <indextitle>Skieløberen</indextitle>
+    <firstline>Bjergsøen er med Iis belagt</firstline>
+    <source in="bd1" pages="27-30"/>
 </head>
 <body>
 Bjergsøen er med Iis belagt,
@@ -1030,13 +1046,14 @@ Den Yngling saae man aldrig mere.
 
 <poem id="blicher2003091512">
 <head>
-   <title>Klaveerspillerinden</title>
-   <toctitle>Klaveerspillerinden</toctitle>
-   <indextitle>Klaveerspillerinden</indextitle>
-   <firstline>Ere da disse henrykkende Toner fra Jorden?</firstline>
-   <notes>
+    <title>Klaveerspillerinden</title>
+    <toctitle>Klaveerspillerinden</toctitle>
+    <indextitle>Klaveerspillerinden</indextitle>
+    <firstline>Ere da disse henrykkende Toner fra Jorden?</firstline>
+    <notes>
       <note>Catharine Wernicke (<year>1789</year>-<year>1862</year>), dansk pianist. Blicher skrev dette digt, da han i <year>1812</year> havde hørt hende spille ved en koncert i Århus.</note>
-   </notes>
+    </notes>
+    <source in="bd1" pages="30-32"/>
 </head>
 <body>
 Ere da disse henrykkende Toner fra Jorden?
@@ -1086,13 +1103,14 @@ Cathrina Wernicke! bort til Udødelighed.
 
 <poem id="blicher2003091513">
 <head>
-   <title>Bjørnkjærs Ruiner</title>
-   <toctitle>Bjørnkjærs Ruiner</toctitle>
-   <indextitle>Bjørnkjærs Ruiner</indextitle>
-   <firstline>Bjørnkjær Slot ligger ned i Gruus</firstline>
-   <notes>
+    <title>Bjørnkjærs Ruiner</title>
+    <toctitle>Bjørnkjærs Ruiner</toctitle>
+    <indextitle>Bjørnkjærs Ruiner</indextitle>
+    <firstline>Bjørnkjær Slot ligger ned i Gruus</firstline>
+    <notes>
       <note>* Ved Gersdorpslund i Jylland.</note>
-   </notes>
+    </notes>
+    <source in="bd1" pages="32-36"/>
 </head>
 <body>
 Bjørnkjær Slot ligger ned i Gruus
@@ -1211,10 +1229,11 @@ I Sangen lever dog Oldtidens Minde.
 
 <poem id="blicher2003091514">
 <head>
-   <title>Najaden</title>
-   <toctitle>Najaden</toctitle>
-   <indextitle>Najaden</indextitle>
-   <firstline>Løft dit Hoved, Dovrefjeld!</firstline>
+    <title>Najaden</title>
+    <toctitle>Najaden</toctitle>
+    <indextitle>Najaden</indextitle>
+    <firstline>Løft dit Hoved, Dovrefjeld!</firstline>
+    <source in="bd1" pages="36-38"/>
 </head>
 <body>
 Løft dit Hoved, Dovrefjeld!
@@ -1299,13 +1318,14 @@ Meer end Livet værd.
 
 <poem id="blicher2003091515">
 <head>
-   <title>Skibbrudet</title>
-   <toctitle>Skibbrudet</toctitle>
-   <indextitle>Skibbrudet</indextitle>
-   <firstline>Solen gaaer mørkrød ned i Sydvest</firstline>
-   <notes>
+    <title>Skibbrudet</title>
+    <toctitle>Skibbrudet</toctitle>
+    <indextitle>Skibbrudet</indextitle>
+    <firstline>Solen gaaer mørkrød ned i Sydvest</firstline>
+    <notes>
       <note>* Paa Jyllands Vestkyst i December 1811.</note>
-   </notes>
+    </notes>
+    <source in="bd1" pages="39-42"/>
 </head>
 <body>
 Solen gaaer mørkrød ned i Sydvest,
@@ -1401,19 +1421,18 @@ Naar Himlenes Herre bevæger sin Haand.
 </body>
 </poem>
 
-<section>
+<section id="blicher2019010403" level="2">
 <head>
-   <toctitle>Hjemvee</toctitle>
-   <indextitle>Hjemvee</indextitle>
+    <title>Hjemvee</title>
+    <source in="bd1" pages="42-50"/>
 </head>
 <content>
 
 <poem id="blicher2003091516">
 <head>
-   <title>Schveitzeren i Paris</title>
-   <toctitle>Schveitzeren i Paris</toctitle>
-   <indextitle>Schveitzeren i Paris</indextitle>
-   <firstline>Er det Skyer</firstline>
+    <title><num>I.</num>Schveitzeren i Paris</title>
+    <firstline>Er det Skyer</firstline>
+    <source in="bd1" pages="42-44"/>
 </head>
 <body>
 Er det Skyer
@@ -1475,10 +1494,9 @@ O Schweitz! mit Fødeland!
 
 <poem id="blicher2003091517">
 <head>
-   <title>Provençalen i Engelland</title>
-   <toctitle>Provençalen i Engelland</toctitle>
-   <indextitle>Provençalen i Engelland</indextitle>
-   <firstline>Spred dig, o spred dig</firstline>
+    <title><num>II.</num>Provençalen i Engelland</title>
+    <firstline>Spred dig, o spred dig</firstline>
+    <source in="bd1" pages="44-45"/>
 </head>
 <body>
 Spred dig, o spred dig,
@@ -1524,10 +1542,9 @@ O, du mit Fødeland!
 
 <poem id="blicher2003091518">
 <head>
-   <title>Araberen i Schveitz</title>
-   <toctitle>Araberen i Schveitz</toctitle>
-   <indextitle>Araberen i Schveitz</indextitle>
-   <firstline>Døvende Torden!</firstline>
+    <title><num>III.</num>Araberen i Schveitz</title>
+    <firstline>Døvende Torden!</firstline>
+    <source in="bd1" pages="45-46"/>
 </head>
 <body>
 Døvende Torden!
@@ -1562,10 +1579,9 @@ O, Du mit Fødeland!
 
 <poem id="blicher2003091519">
 <head>
-   <title>Huroneren i Arabien</title>
-   <toctitle>Huroneren i Arabien</toctitle>
-   <indextitle>Huroneren i Arabien</indextitle>
-   <firstline>Lumre Sandørken</firstline>
+    <title><num>IV.</num>Huroneren i Arabien</title>
+    <firstline>Lumre Sandørken</firstline>
+    <source in="bd1" pages="46-47"/>
 </head>
 <body>
 Lumre Sandørken,
@@ -1602,10 +1618,9 @@ Herlige Fødeland!
 
 <poem id="blicher2003091520">
 <head>
-   <title>Hollænderen i Norge</title>
-   <toctitle>Hollænderen i Norge</toctitle>
-   <indextitle>Hollænderen i Norge</indextitle>
-   <firstline>Bort, bort fra disse</firstline>
+    <title><num>V.</num>Hollænderen i Norge</title>
+    <firstline>Bort, bort fra disse</firstline>
+    <source in="bd1" pages="47-48"/>
 </head>
 <body>
 Bort, bort fra disse
@@ -1629,10 +1644,9 @@ Signede Fødeland!
 
 <poem id="blicher2003091521">
 <head>
-   <title>Nordmanden i Holland</title>
-   <toctitle>Nordmanden i Holland</toctitle>
-   <indextitle>Nordmanden i Holland</indextitle>
-   <firstline>Løft dig af Sumperne</firstline>
+    <title><num>VI.</num>Nordmanden i Holland</title>
+    <firstline>Løft dig af Sumperne</firstline>
+    <source in="bd1" pages="48-49"/>
 </head>
 <body>
 Løft dig af Sumperne,
@@ -1677,10 +1691,9 @@ Herlige Klippeland!
 
 <poem id="blicher2003091522">
 <head>
-   <title>Kjær est du Fødeland, sødt er dit Navn</title>
-   <toctitle>Kjær est du Fødeland, sødt er dit Navn</toctitle>
-   <indextitle>Kjær est du Fødeland, sødt er dit Navn</indextitle>
-   <firstline>Kjær est du Fødeland, sødt er dit Navn</firstline>
+    <title><num>VII.</num>Kjær est du Fødeland, sødt er dit Navn</title>
+    <firstline>Kjær est du Fødeland, sødt er dit Navn</firstline>
+    <source in="bd1" pages="49-50"/>
 </head>
 <body>
 Kjær est du Fødeland, sødt er dit Navn,
@@ -1711,10 +1724,11 @@ Blandt mine Fædres lyngbegroede Grave!
 
 <poem id="blicher2003091523">
 <head>
-   <title>Til Glæden</title>
-   <toctitle>Til Glæden</toctitle>
-   <indextitle>Til Glæden</indextitle>
-   <firstline>Hulde Engel! Du min Barndoms Ven!</firstline>
+    <title>Til Glæden</title>
+    <toctitle>Til Glæden</toctitle>
+    <indextitle>Til Glæden</indextitle>
+    <firstline>Hulde Engel! Du min Barndoms Ven!</firstline>
+    <source in="bd1" pages="50-51"/>
 </head>
 <body>
 Hulde Engel! Du min Barndoms Ven!
@@ -1766,10 +1780,11 @@ Eller til det ny du snart mig drage!
 
 <poem id="blicher2003091524">
 <head>
-   <title>Til Sorgen</title>
-   <toctitle>Til Sorgen</toctitle>
-   <indextitle>Til Sorgen</indextitle>
-   <firstline>Du som taus med sænket Hoved staaer</firstline>
+    <title>Til Sorgen</title>
+    <toctitle>Til Sorgen</toctitle>
+    <indextitle>Til Sorgen</indextitle>
+    <firstline>Du som taus med sænket Hoved staaer</firstline>
+    <source in="bd1" pages="51-52"/>
 </head>
 <body>
 Du som taus med sænket Hoved staaer,
@@ -1806,10 +1821,11 @@ Du mit Øje fra dit Mørke hæver!
 
 <poem id="blicher2003091525">
 <head>
-   <title>Til Valmuen</title>
-   <toctitle>Til Valmuen</toctitle>
-   <indextitle>Til Valmuen</indextitle>
-   <firstline>For dig, hvis Saft fra tusind Penne flyder</firstline>
+    <title>Til Valmuen</title>
+    <toctitle>Til Valmuen</toctitle>
+    <indextitle>Til Valmuen</indextitle>
+    <firstline>For dig, hvis Saft fra tusind Penne flyder</firstline>
+    <source in="bd1" pages="53-55"/>
 </head>
 <body>
 For dig, hvis Saft fra tusind Penne flyder,
@@ -1906,10 +1922,11 @@ Hjælp dem! og lad min Ringhed være fri!
 
 <poem id="blicher2003091526">
 <head>
-   <title>Skjaldens Embede</title>
-   <toctitle>Skjaldens Embede</toctitle>
-   <indextitle>Skjaldens Embede</indextitle>
-   <firstline>Du, som kun agter nyttig Daad i Livet</firstline>
+    <title>Skjaldens Embede</title>
+    <toctitle>Skjaldens Embede</toctitle>
+    <indextitle>Skjaldens Embede</indextitle>
+    <firstline>Du, som kun agter nyttig Daad i Livet</firstline>
+    <source in="bd1" pages="56-59"/>
 </head>
 <body>
 Du, som kun agter nyttig Daad i Livet,
@@ -2017,10 +2034,11 @@ Og jublende ledsager den med Sang.
 
 <poem id="blicher2003091527">
 <head>
-   <title>Digterrang</title>
-   <toctitle>Digterrang</toctitle>
-   <indextitle>Digterrang</indextitle>
-   <firstline>Du spørger mig, hvem jeg tør kalde størst</firstline>
+    <title>Digterrang</title>
+    <toctitle>Digterrang</toctitle>
+    <indextitle>Digterrang</indextitle>
+    <firstline>Du spørger mig, hvem jeg tør kalde størst</firstline>
+    <source in="bd1" pages="59-73"/>
 </head>
 <body>
 Du spørger mig, hvem jeg tør kalde størst
@@ -2463,18 +2481,17 @@ Og viis og god indblæst sin Aand i Støvet!
 </body>
 </poem>
 
-<section>
+<section level="2">
 <head>
-   <toctitle>Livet</toctitle>
+    <toctitle>Livet</toctitle>
 </head>
 <content>
 
 <poem id="blicher2003091528">
 <head>
-   <title>En Reise</title>
-   <toctitle>En Reise</toctitle>
-   <indextitle>En Reise</indextitle>
-   <firstline>En Vej er Livet, hvis Begyndelse</firstline>
+    <title><num>1.</num>En Reise</title>
+    <firstline>En Vej er Livet, hvis Begyndelse</firstline>
+    <source in="bd1" pages="73-75"/>
 </head>
 <body>
 En Vej er Livet, hvis Begyndelse
@@ -2528,10 +2545,9 @@ Jeg ,,Lykke paa din Rejse!'' Dig tilraaber.
 
 <poem id="blicher2003091529">
 <head>
-   <title>En Seilads</title>
-   <toctitle>En Seilads</toctitle>
-   <indextitle>En Seilads</indextitle>
-   <firstline>Du farer, min Gut! paa et uroligt Hav</firstline>
+    <title><num>2.</num>En Seilads</title>
+    <firstline>Du farer, min Gut! paa et uroligt Hav</firstline>
+    <source in="bd1" pages="75-76"/>
 </head>
 <body>
 Du farer, min Gut! paa et uroligt Hav:
@@ -2577,10 +2593,9 @@ Han tryggelig styrer din Snekke til Havn.
 
 <poem id="blicher2003091530">
 <head>
-   <title>Et Spil</title>
-   <toctitle>Et Spil</toctitle>
-   <indextitle>Et Spil</indextitle>
-   <firstline>Man Kalder Livet og et Lykkespil</firstline>
+    <title><num>3.</num>Et Spil</title>
+    <firstline>Man Kalder Livet og et Lykkespil</firstline>
+    <source in="bd1" pages="76-77"/>
 </head>
 <body>
 Man Kalder Livet og et Lykkespil -
@@ -2620,10 +2635,9 @@ Ej Bankerot Du skalt af Spillet gaae.
 
 <poem id="blicher2003091531">
 <head>
-   <title>Et Gjæstebud</title>
-   <toctitle>Et Gjæstebud</toctitle>
-   <indextitle>Et Gjæstebud</indextitle>
-   <firstline>At ligne Livet ved et Gjæstebud</firstline>
+    <title><num>4.</num>Et Gjæstebud</title>
+    <firstline>At ligne Livet ved et Gjæstebud</firstline>
+    <source in="bd1" pages="77-78"/>
 </head>
 <body>
 At ligne Livet ved et Gjæstebud,
@@ -2665,10 +2679,9 @@ Som hungrig eller overmæt Dig klage.
 
 <poem id="blicher2003091532">
 <head>
-   <title>En Jagt</title>
-   <toctitle>En Jagt</toctitle>
-   <indextitle>En Jagt</indextitle>
-   <firstline>Det femte Billed, Du skuer - giv Agt!</firstline>
+    <title><num>5.</num>En Jagt</title>
+    <firstline>Det femte Billed, Du skuer - giv Agt!</firstline>
+    <source in="bd1" pages="79-80"/>
 </head>
 <body>
 Det femte Billed, Du skuer - giv Agt!
@@ -2710,10 +2723,9 @@ Din Afsked fra Jagten kan tage!
 
 <poem id="blicher2003091533">
 <head>
-   <title>En Have</title>
-   <toctitle>En Have</toctitle>
-   <indextitle>En Have</indextitle>
-   <firstline>Tidt ved et Blomsterbed man ligned Livet</firstline>
+    <title><num>6.</num>En Have</title>
+    <firstline>Tidt ved et Blomsterbed man ligned Livet</firstline>
+    <source in="bd1" pages="80-81"/>
 </head>
 <body>
 ,,Tidt ved et Blomsterbed man ligned Livet''
@@ -2759,10 +2771,9 @@ Da finder Du en Blomst for Evigheden!
 
 <poem id="blicher2003091534">
 <head>
-   <title>Et Skuespil</title>
-   <toctitle>Et Skuespil</toctitle>
-   <indextitle>Et Skuespil</indextitle>
-   <firstline>Vor Jord en Skueplads man og med Rette kalder</firstline>
+    <title><num>7.</num>Et Skuespil</title>
+    <firstline>Vor Jord en Skueplads man og med Rette kalder</firstline>
+    <source in="bd1" pages="81-82"/>
 </head>
 <body>
 Vor Jord en Skueplads man og med Rette kalder;
@@ -2807,10 +2818,9 @@ Med Bifald vel fortjent Du Scenen da forlader.
 
 <poem id="blicher2003091535">
 <head>
-   <title>En Skole</title>
-   <toctitle>En Skole</toctitle>
-   <indextitle>En Skole</indextitle>
-   <firstline>Livet er en Skole, som Alle søge maae</firstline>
+    <title><num>8.</num>En Skole</title>
+    <firstline>Livet er en Skole, som Alle søge maae</firstline>
+    <source in="bd1" pages="82-83"/>
 </head>
 <body>
 Livet er en Skole, som Alle søge maae,
@@ -2844,10 +2854,9 @@ Med Ære da tilvise Du af Skolen skal udskrives.
 
 <poem id="blicher2003091536">
 <head>
-   <title>En Krig</title>
-   <toctitle>En Krig</toctitle>
-   <indextitle>En Krig</indextitle>
-   <firstline>Din Levetid Du Strid paa Strid</firstline>
+    <title><num>9.</num>En Krig</title>
+    <firstline>Din Levetid Du Strid paa Strid</firstline>
+    <source in="bd1" pages="83-84"/>
 </head>
 <body>
 Din Levetid
@@ -2882,10 +2891,9 @@ Til evig Fred skal vandre!
 
 <poem id="blicher2003091537">
 <head>
-   <title>En Drøm</title>
-   <toctitle>En Drøm</toctitle>
-   <indextitle>En Drøm</indextitle>
-   <firstline>En Drøm? - ,,En Drøm? og intet meer?</firstline>
+    <title><num>10.</num>En Drøm</title>
+    <firstline>En Drøm? - ,,En Drøm? og intet meer?</firstline>
+    <source in="bd1" pages="84-86"/>
 </head>
 <body>
 En Drøm? - ,,En Drøm? og intet meer?
@@ -2940,10 +2948,11 @@ Og puster til det slappe Sejl:
 
 <poem id="blicher2003091538">
 <head>
-   <title>Doxologia</title>
-   <toctitle>Doxologia</toctitle>
-   <indextitle>Doxologia</indextitle>
-   <firstline>Hvi skjælver Du, naar sig Orkanen hæver</firstline>
+    <title>Doxologia</title>
+    <toctitle>Doxologia</toctitle>
+    <indextitle>Doxologia</indextitle>
+    <firstline>Hvi skjælver Du, naar sig Orkanen hæver</firstline>
+    <source in="bd1" pages="86-87"/>
 </head>
 <body>
 Hvi skjælver Du, naar sig Orkanen hæver,
@@ -2978,10 +2987,11 @@ Saavidt hans Almagts Skabning sig udbreder
 
 <poem id="blicher2003091539">
 <head>
-   <title>Til en ung tungsindig Digter</title>
-   <toctitle>Til en ung tungsindig Digter</toctitle>
-   <indextitle>Til en ung tungsindig Digter</indextitle>
-   <firstline>Hvad hører jeg? hvis er den Harpeklang</firstline>
+    <title>Til en ung tungsindig Digter</title>
+    <toctitle>Til en ung tungsindig Digter</toctitle>
+    <indextitle>Til en ung tungsindig Digter</indextitle>
+    <firstline>Hvad hører jeg? hvis er den Harpeklang</firstline>
+    <source in="bd1" pages="87-91"/>
 </head>
 <body>
 Hvad hører jeg? hvis er den Harpeklang,
@@ -3109,10 +3119,11 @@ Og med de Saliges din Stemme blande!
 
 <poem id="blicher2003091540">
 <head>
-   <title>Den unge Lærkes Foraarssang</title>
-   <toctitle>Den unge Lærkes Foraarssang</toctitle>
-   <indextitle>Den unge Lærkes Foraarssang</indextitle>
-   <firstline>Blæs Søndenvind! lad Søen høre Dig!</firstline>
+    <title>Den unge Lærkes Foraarssang</title>
+    <toctitle>Den unge Lærkes Foraarssang</toctitle>
+    <indextitle>Den unge Lærkes Foraarssang</indextitle>
+    <firstline>Blæs Søndenvind! lad Søen høre Dig!</firstline>
+    <source in="bd1" pages="91-93"/>
 </head>
 <body>
 Blæs Søndenvind! lad Søen høre Dig!
@@ -3179,10 +3190,11 @@ Og hilse Solen i de grønne Dale.
 
 <poem id="blicher2003091541">
 <head>
-   <title>Den gamle Lærkes Efteraarssang</title>
-   <toctitle>Den gamle Lærkes Efteraarssang</toctitle>
-   <indextitle>Den gamle Lærkes Efteraarssang</indextitle>
-   <firstline>Den mørke Skye hen over Ørken gaaer</firstline>
+    <title>Den gamle Lærkes Efteraarssang</title>
+    <toctitle>Den gamle Lærkes Efteraarssang</toctitle>
+    <indextitle>Den gamle Lærkes Efteraarssang</indextitle>
+    <firstline>Den mørke Skye hen over Ørken gaaer</firstline>
+    <source in="bd1" pages="93-95"/>
 </head>
 <body>
 Den mørke Skye hen over Ørken gaaer,
@@ -3254,10 +3266,11 @@ Snart med min Død den mørke Vinter kommer.
 
 <poem id="blicher2003091542">
 <head>
-   <title>Nytaarsmorgen</title>
-   <toctitle>Nytaarsmorgen</toctitle>
-   <indextitle>Nytaarsmorgen</indextitle>
-   <firstline>Hvor Tiden gaaer!</firstline>
+    <title>Nytaarsmorgen</title>
+    <toctitle>Nytaarsmorgen</toctitle>
+    <indextitle>Nytaarsmorgen</indextitle>
+    <firstline>Hvor Tiden gaaer!</firstline>
+    <source in="bd1" pages="95-99"/>
 </head>
 <body>
 Hvor Tiden gaaer!
@@ -3384,21 +3397,21 @@ Fremgryer en evig Nytaarsmorgen.
 </poem>
 
 
-<section>
+<section id="blicher2019010401" level="2">
 <head>
-   <toctitle>Natten paa Jellingehøje</toctitle>
-   <subtitle>Skrevet i October 1817</subtitle>
-   <linktitle>Natten paa Jellingehøje</linktitle>
-   <indextitle>Natten paa Jellingehøje</indextitle>
+    <title>Natten paa Jellingehøje</title>
+    <subtitle>(Skrevet i October 1817)</subtitle>
+    <source in="bd1" pages="99-128"/>
 </head>
 <content>
 
 <poem id="blicher2003091543">
 <head>
-   <title>Aften</title>
-   <toctitle>Aften</toctitle>
-   <indextitle>Aften</indextitle>
-   <firstline>Fra Tordenskyen synker Solen rød</firstline>
+    <title>Aften</title>
+    <toctitle>Aften</toctitle>
+    <indextitle>Aften</indextitle>
+    <firstline>Fra Tordenskyen synker Solen rød</firstline>
+    <source in="bd1" pages="99-110"/>
 </head>
 <body>
 Fra Tordenskyen synker Solen rød,
@@ -3750,10 +3763,11 @@ Men efter begge bli'er det atter Morgen.
 
 <poem id="blicher2003091544">
 <head>
-   <title>Midnat</title>
-   <toctitle>Midnat</toctitle>
-   <indextitle>Midnat</indextitle>
-   <firstline>Blegt glimte Stjernerne i mørke Nat</firstline>
+    <title>Midnat</title>
+    <toctitle>Midnat</toctitle>
+    <indextitle>Midnat</indextitle>
+    <firstline>Blegt glimte Stjernerne i mørke Nat</firstline>
+    <source in="bd1" pages="110-119"/>
 </head>
 <body>
 Blegt glimte Stjernerne i mørke Nat,
@@ -4037,10 +4051,11 @@ Tungsindigen om sunkne Verdner runge.
 
 <poem id="blicher2003091545">
 <head>
-   <title>Morgen</title>
-   <toctitle>Morgen</toctitle>
-   <indextitle>Morgen</indextitle>
-   <firstline>Nu skyder Lyset sig i Østen op</firstline>
+    <title>Morgen</title>
+    <toctitle>Morgen</toctitle>
+    <indextitle>Morgen</indextitle>
+    <firstline>Nu skyder Lyset sig i Østen op</firstline>
+    <source in="bd1" pages="119-128"/>
 </head>
 <body>
 Nu skyder Lyset sig i Østen op,
@@ -4330,10 +4345,11 @@ Og vandrer fro mod Østens Morgenrøde.
 
 <poem id="blicher2003091546">
 <head>
-   <title>Til det gjenfødte Grækenland</title>
-   <toctitle>Til det gjenfødte Grækenland</toctitle>
-   <indextitle>Til det gjenfødte Grækenland</indextitle>
-   <firstline>Saa est Du da omsider vaagnet op!</firstline>
+    <title>Til det gjenfødte Grækenland</title>
+    <toctitle>Til det gjenfødte Grækenland</toctitle>
+    <indextitle>Til det gjenfødte Grækenland</indextitle>
+    <firstline>Saa est Du da omsider vaagnet op!</firstline>
+    <source in="bd1" pages="128-133"/>
 </head>
 <body>
 Saa est Du da omsider vaagnet op!
@@ -4521,10 +4537,11 @@ I frihed skal din frelste Søn dog leve.
 
 <poem id="blicher2003091547">
 <head>
-   <title>Nygrækernes Sejershymne</title>
-   <toctitle>Nygrækernes Sejershymne</toctitle>
-   <indextitle>Nygrækernes Sejershymne</indextitle>
-   <firstline>Løft din Isse, Pindus! Du est fri</firstline>
+    <title>Nygrækernes Sejershymne</title>
+    <toctitle>Nygrækernes Sejershymne</toctitle>
+    <indextitle>Nygrækernes Sejershymne</indextitle>
+    <firstline>Løft din Isse, Pindus! Du est fri</firstline>
+    <source in="bd1" pages="134-137"/>
 </head>
 <body>
 Løft din Isse, Pindus! Du est fri:
@@ -4631,10 +4648,11 @@ Han gav Haab og Mod og Sejr i Striden.
 
 <poem id="blicher2003091548">
 <head>
-   <title>Ipsara</title>
-   <toctitle>Ipsara</toctitle>
-   <indextitle>Ipsara</indextitle>
-   <firstline>Halvmaanen over Askedynger staaer</firstline>
+    <title>Ipsara</title>
+    <toctitle>Ipsara</toctitle>
+    <indextitle>Ipsara</indextitle>
+    <firstline>Halvmaanen over Askedynger staaer</firstline>
+    <source in="bd1" pages="137-140"/>
 </head>
 <body>
 Halvmaanen over Askedynger staaer,
@@ -4677,6 +4695,8 @@ Og ej som Ræven ræd du indebrændte;
 Paa Ildens Vinger du til Himlen foer,
 Og ned til Hel de knuste Fiender sendte.
 
+---
+
 O Du, som sukker dybt af ængstet Barm,
 Tilbed og haab, selv under bedske Taarer!
 Forkortet er ej Herrens Almagts Arm,
@@ -4692,7 +4712,9 @@ Lad Vellyst, Guld og Grumhed Jorden hærge!
 Om seent, engang dog kommer Frelsens Tid,
 Og Dagen skinner over Dal og Bjerge.
 
-Men Du, o Græker! som i Kampen staaer,
+---
+
+Men Du<note>Du]D</note>, o Græker! som i Kampen staaer,
 Som ene Friheds Himmelbanner svinger;
 Med Fiendeblod Du læge skal Dit Saar,
 Mens Sorgen i Din Barm Du fast betvinger.
@@ -4731,10 +4753,11 @@ Skal Sejerskrandsen til Din Isse binde.
 
 <poem id="blicher2003091549">
 <head>
-   <title>Navarinoslaget</title>
-   <toctitle>Navarinoslaget</toctitle>
-   <indextitle>Navarinoslaget</indextitle>
-   <firstline>Der var en Tid, da Hellas som en Have</firstline>
+    <title>Navarinoslaget</title>
+    <toctitle>Navarinoslaget</toctitle>
+    <indextitle>Navarinoslaget</indextitle>
+    <firstline>Der var en Tid, da Hellas som en Have</firstline>
+    <source in="bd1" pages="140-144"/>
 </head>
 <body>
 Der var en Tid, da Hellas som en Have
@@ -4856,11 +4879,12 @@ Først da opstander Phønix af sin Aske!
 
 <poem id="blicher2003091550">
 <head>
-   <title>De Indmurede</title>
-   <subtitle>(Et Vinteraftens Eventyr)</subtitle>
-   <toctitle>De Indmurede</toctitle>
-   <indextitle>De Indmurede</indextitle>
-   <firstline>Hør: Vinterstormen tuder huult derude</firstline>
+    <title>De Indmurede</title>
+    <subtitle>(Et Vinteraftens Eventyr)</subtitle>
+    <toctitle>De Indmurede</toctitle>
+    <indextitle>De Indmurede</indextitle>
+    <firstline>Hør: Vinterstormen tuder huult derude</firstline>
+    <source in="bd1" pages="144-163"/>
 </head>
 <body>
 Hør: Vinterstormen tuder huult derude,
@@ -5477,10 +5501,11 @@ Og hvor hans sidste Dage sødelig henrandt.
 
 <poem id="blicher2003091551">
 <head>
-   <title>Faderkjerlighed</title>
-   <toctitle>Faderkjerlighed</toctitle>
-   <indextitle>Faderkjerlighed</indextitle>
-   <firstline>Da Harald hiin haarfagre</firstline>
+    <title>Faderkjerlighed</title>
+    <toctitle>Faderkjerlighed</toctitle>
+    <indextitle>Faderkjerlighed</indextitle>
+    <firstline>Da Harald hiin haarfagre</firstline>
+    <source in="bd1" pages="164-167"/>
 </head>
 <body>
 Da Harald hiin haarfagre
@@ -5612,10 +5637,11 @@ Jeg Dig fortalte her.
 
 <poem id="blicher2003091552">
 <head>
-   <title>Snedkersang</title>
-   <toctitle>Snedkersang</toctitle>
-   <indextitle>Snedkersang</indextitle>
-   <firstline>Af sorg der ej findes i Verden saa lidt</firstline>
+    <title>Snedkersang</title>
+    <toctitle>Snedkersang</toctitle>
+    <indextitle>Snedkersang</indextitle>
+    <firstline>Af sorg der ej findes i Verden saa lidt</firstline>
+    <source in="bd1" pages="168-169"/>
 </head>
 <body>
 Af sorg der ej findes i Verden saa lidt,
@@ -5664,10 +5690,11 @@ Herover Du aldrig beklager Dig meer.
 
 <poem id="blicher2003091553">
 <head>
-   <title>Laternen og Fyret</title>
-   <toctitle>Laternen og Fyret</toctitle>
-   <indextitle>Laternen og Fyret</indextitle>
-   <firstline>Mørk er Natten; Blæsten tuder</firstline>
+    <title>Laternen og Fyret</title>
+    <toctitle>Laternen og Fyret</toctitle>
+    <indextitle>Laternen og Fyret</indextitle>
+    <firstline>Mørk er Natten; Blæsten tuder</firstline>
+    <source in="bd1" pages="169-171"/>
 </head>
 <body>
 Mørk er Natten; Blæsten tuder
@@ -5734,10 +5761,11 @@ Sikkert og snart det i frelsende Havn.
 
 <poem id="blicher2003091554">
 <head>
-   <title>Juletanker</title>
-   <toctitle>Juletanker</toctitle>
-   <indextitle>Juletanker</indextitle>
-   <firstline>Midt i Natten, midt i Vinters Hjerte</firstline>
+    <title>Juletanker</title>
+    <toctitle>Juletanker</toctitle>
+    <indextitle>Juletanker</indextitle>
+    <firstline>Midt i Natten, midt i Vinters Hjerte</firstline>
+    <source in="bd1" pages="171-175"/>
 </head>
 <body>
 Midt i Natten, midt i Vinters Hjerte,
@@ -5863,11 +5891,10 @@ See den Sol, som aldrig meer gaaer ned.
 
 <poem id="blicher2003091555">
 <head>
-   <title>Skovplanteren</title>
-   <subtitle>Digteroldingen Faye tilegnet</subtitle>
-   <toctitle>Skovplanteren</toctitle>
-   <indextitle>Skovplanteren</indextitle>
-   <firstline>Flyd sødt og sagtelig, min stille Sang!</firstline>
+    <title>Skovplanteren</title>
+    <subtitle>(Digteroldingen Faye tilegnet)</subtitle>
+    <firstline>Flyd sødt og sagtelig, min stille Sang!</firstline>
+    <source in="bd1" pages="175-179"/>
 </head>
 <body>
 Flyd sødt og sagtelig, min stille Sang!
@@ -5989,23 +6016,20 @@ Ej før forglemmes. gode Planter, Du!
 </body>
 </poem>
 
-<section>
+<section id="blicher2019010402" level="3">
 <head>
-   <toctitle>Bautastene</toctitle>
-   <indextitle>Bautastene</indextitle>
-   <linktitle>Bautastene</linktitle>
+    <title>Bautastene</title>
+    <source in="bd1" pages="180-234"/>
 </head>
 <content>
 
 <poem id="blicher2003091556">
 <head>
-   <title>Til Danmarks Ungdom</title>
-   <toctitle>Til Danmarks Ungdom</toctitle>
-   <indextitle>Til Danmarks Ungdom</indextitle>
-   <firstline>Unge Danske! træd ærbødig ind</firstline>
-   <notes>
-      
-   </notes>
+    <title>Til Danmarks Ungdom</title>
+    <toctitle>Til Danmarks Ungdom</toctitle>
+    <indextitle>Til Danmarks Ungdom</indextitle>
+    <firstline>Unge Danske! træd ærbødig ind</firstline>
+    <source in="bd1" pages="180-182"/>
 </head>
 <body>
 Unge Danske! træd ærbødig ind
@@ -6093,10 +6117,9 @@ Gjennem Døden til Udødligheden!
 
 <poem id="blicher2003091557">
 <head>
-   <title>Saxo</title>
-   <toctitle>Saxo</toctitle>
-   <indextitle>Saxo</indextitle>
-   <firstline>Risle venligt, Roars Kilde klar!</firstline>
+    <title><num>I.</num>Saxo</title>
+    <firstline>Risle venligt, Roars Kilde klar!</firstline>
+    <source in="bd1" pages="182-184"/>
 </head>
 <body>
 Risle venligt, Roars Kilde klar!
@@ -6152,10 +6175,9 @@ Medens Vand til Issefjorden rinder.
 
 <poem id="blicher2003091558">
 <head>
-   <title>Snorro</title>
-   <toctitle>Snorro</toctitle>
-   <indextitle>Snorro</indextitle>
-   <firstline>Højt oppe imod Norden der ligger et Land</firstline>
+    <title><num>II.</num>Snorro</title>
+    <firstline>Højt oppe imod Norden der ligger et Land</firstline>
+    <source in="bd1" pages="184-186"/>
 </head>
 <body>
 Højt oppe imod Norden der ligger et Land,
@@ -6242,10 +6264,9 @@ Det nordiske Hjerte Du fryde!
 
 <poem id="blicher2003091559">
 <head>
-   <title>Niels Ebbesen</title>
-   <toctitle>Niels Ebbesen</toctitle>
-   <indextitle>Niels Ebbesen</indextitle>
-   <firstline>Hvi seer Du, danske Mand</firstline>
+    <title><num>III.</num>Niels Ebbesen</title>
+    <firstline>Hvi seer Du, danske Mand</firstline>
+    <source in="bd1" pages="187-192"/>
 </head>
 <body>
 Hvi seer Du, danske Mand,
@@ -6414,10 +6435,9 @@ For os og vore Børn af Heltebryst!
 
 <poem id="blicher2003091560">
 <head>
-   <title>Tygge Brahe</title>
-   <toctitle>Tygge Brahe</toctitle>
-   <indextitle>Tygge Brahe</indextitle>
-   <firstline>Jorden sover, Natten dækker over</firstline>
+    <title><num>IV.</num>Tygge Brahe</title>
+    <firstline>Jorden sover, Natten dækker over</firstline>
+    <source in="bd1" pages="192-195"/>
 </head>
 <body>
 Jorden sover,
@@ -6522,10 +6542,9 @@ Brahes Minde over Død og Grav!
 
 <poem id="blicher2003091561">
 <head>
-   <title>Griffenfeld</title>
-   <toctitle>Griffenfeld</toctitle>
-   <indextitle>Griffenfeld</indextitle>
-   <firstline>Som et Frø af ædel Art</firstline>
+    <title><num>V.</num>Griffenfeld</title>
+    <firstline>Som et Frø af ædel Art</firstline>
+    <source in="bd1" pages="195-197"/>
 </head>
 <body>
 Som et Frø af ædel Art,
@@ -6588,15 +6607,14 @@ Griffenfelder ingen mere.
 
 <poem id="blicher2003091562">
 <head>
-   <title>Niels og Jens Juel</title>
-   <subtitle>(Thema af Evald, varieret.)</subtitle>
-   <toctitle>Niels og Jens Juel</toctitle>
-   <indextitle>Niels og Jens Juel</indextitle>
-   <notes>
+    <title><num>VI.</num>Niels og Jens Juel</title>
+    <subtitle>(Thema af Evald, varieret.)</subtitle>
+    <notes>
        <note>Cf. Johannes Ewalds <xref poem="ewlad1999022205"/>.</note>
-   </notes>
-   <keywords>ewald</keywords>
-   <firstline>Niels Juel gav Agt paa Stormens Brag</firstline>
+    </notes>
+    <keywords>ewald</keywords>
+    <firstline>Niels Juel gav Agt paa Stormens Brag</firstline>
+    <source in="bd1" pages="197-199"/>
 </head>
 <body>
 Niels Juel gav Agt paa Stormens Brag:
@@ -6663,13 +6681,12 @@ Med Sværd i Haand, og Fod ved Fod,
 
 <poem id="blicher2003091563">
 <head>
-   <title>Morten Borup</title>
-   <toctitle>Morten Borup</toctitle>
-   <indextitle>Morten Borup</indextitle>
-   <firstline>I Skanderborrig Enge</firstline>
-   <notes>
+    <title><num>VII.</num>Morten Borup</title>
+    <firstline>I Skanderborrig Enge</firstline>
+    <notes>
        <note><a poet="boerup">Morten Børup</a> (ca. 1446–1526) var rektor for Aarhus Katedralskole og digter af latinske vers og skuespil.</note>
-   </notes>
+    </notes>
+    <source in="bd1" pages="199-205"/>
 </head>
 <body>
 I Skanderborrig Enge,
@@ -6866,10 +6883,10 @@ Ham vækker til Livet igien.
 
 <poem id="blicher2003091564">
 <head>
-   <title>Holberg</title>
-   <toctitle>Holberg</toctitle>
-   <indextitle>Holberg</indextitle>
-   <firstline>Ingen Himmelstorm paa Fjeldet</firstline>
+    <title><num>VIII.</num>Holberg</title>
+    <firstline>Ingen Himmelstorm paa Fjeldet</firstline>
+    <keywords>holberg</keywords>
+    <source in="bd1" pages="205-208"/>
 </head>
 <body>
 Ingen Himmelstorm paa Fjeldet,
@@ -6967,10 +6984,9 @@ Danebardens Bautasteen.
 
 <poem id="blicher2003091565">
 <head>
-   <title>Tyge Rothe</title>
-   <toctitle>Tyge Rothe</toctitle>
-   <indextitle>Tyge Rothe</indextitle>
-   <firstline>Der er et lys, som her i Verden brænder</firstline>
+    <title><num>IX.</num>Tyge Rothe</title>
+    <firstline>Der er et lys, som her i Verden brænder</firstline>
+    <source in="bd1" pages="208-209"/>
 </head>
 <body>
 Der er et Lys, som her i Verden brænder,
@@ -7007,10 +7023,9 @@ Hvad som en Gnist i Natten her Du saae.
 
 <poem id="blicher2003091566">
 <head>
-   <title>Bernstorff</title>
-   <toctitle>Bernstorff</toctitle>
-   <indextitle>Bernstorff</indextitle>
-   <firstline>For din Griffenfeld saa god</firstline>
+    <title><num>X.</num>Bernstorff</title>
+    <firstline>For din Griffenfeld saa god</firstline>
+    <source in="bd1" pages="209-211"/>
 </head>
 <body>
 For din Griffenfeld saa god
@@ -7069,10 +7084,10 @@ Du tilgive Fædres Brøst!
 
 <poem id="blicher2003091567">
 <head>
-   <title>Tode</title>
-   <toctitle>Tode</toctitle>
-   <indextitle>Tode</indextitle>
-   <firstline>Ligger Du her under græsklædte Tue</firstline>
+    <title><num>XI.</num>Tode</title>
+    <firstline>Ligger Du her under græsklædte Tue</firstline>
+    <keywords>tode</keywords>
+    <source in="bd1" pages="211-212"/>
 </head>
 <body>
 Ligger Du her under græsklædte Tue,
@@ -7124,10 +7139,9 @@ Alfader glæde din venlige Aand!
 
 <poem id="blicher2003091568">
 <head>
-   <title>Birckner</title>
-   <toctitle>Birckner</toctitle>
-   <indextitle>Birckner</indextitle>
-   <firstline>Der er en Kilde dybt i Jordens Skjød</firstline>
+    <title><num>XII.</num>Birckner</title>
+    <firstline>Der er en Kilde dybt i Jordens Skjød</firstline>
+    <source in="bd1" pages="213-214"/>
 </head>
 <body>
 Der er en Kilde dybt i Jordens Skjød,
@@ -7174,11 +7188,12 @@ Hvad her Du som en Draabe saae opstige.
 
 <poem id="blicher2003091569">
 <head>
-   <title>Schieldrup</title>
-   <subtitle>Gouverneur paa Kysten Guinea</subtitle>
-   <toctitle>Schieldrup</toctitle>
-   <indextitle>Schieldrup</indextitle>
-   <firstline>Stolte Laurbærtræ! som byder</firstline>
+    <title><num>XII.</num>Schieldrup</title>
+    <firstline>Stolte Laurbærtræ! som byder</firstline>
+    <notes>
+       <note>* Gouverneur paa Kysten Guinea</note>
+    </notes>
+    <source in="bd1" pages="214-216"/>
 </head>
 <body>
 Stolte Laurbærtræ! som byder
@@ -7255,11 +7270,12 @@ Disse Runer paa hans Bautastene
 
 <poem id="blicher2003091570">
 <head>
-   <title>v. Westen</title>
-   <subtitle>Missionair i Grønland</subtitle>
-   <toctitle>v. Westen</toctitle>
-   <indextitle>v. Westen</indextitle>
-   <firstline>Hvide Blomst! hvorfor saa bly</firstline>
+    <title><num>XIII.</num>v. Westen</title>
+    <firstline>Hvide Blomst! hvorfor saa bly</firstline>
+    <notes>
+        <note>* Missionair i Grønland</note>
+    </notes>
+    <source in="bd1" pages="216-217"/>
 </head>
 <body>
 Hvide Blomst! hvorfor saa bly
@@ -7301,10 +7317,9 @@ Tegnet staaer i Evighed
 
 <poem id="blicher2003091571">
 <head>
-   <title>Pfingsten</title>
-   <toctitle>Pfingsten</toctitle>
-   <indextitle>Pfingsten</indextitle>
-   <firstline>Der er en Dannemand i Nord</firstline>
+    <title><num>XIV.</num>Pfingsten</title>
+    <firstline>Der er en Dannemand i Nord</firstline>
+    <source in="bd1" pages="218-219"/>
 </head>
 <body>
 Der er en Dannemand i Nord:
@@ -7360,17 +7375,18 @@ Din rette Dagløn skalt Du først modtage.
 
 <poem id="blicher2003091572">
 <head>
-   <title>Holm</title>
-   <toctitle>Holm</toctitle>
-   <indextitle>Holm</indextitle>
-   <firstline>Græd ej, Qvinde, for din Søn!</firstline>
+    <title><num>XV.</num>Holm</title>
+    <firstline>Græd ej, Qvinde, for din Søn!</firstline>
+    <source in="bd1" pages="219-220"/>
 </head>
 <body>
+- - - -
+- - - -    
 Græd ej, Qvinde, for din Søn!
    Ej for Hosbond kjer!
 Slig en Død med Ære
 Under Kamp og Sejr maae være
-   Meer end Livet værd. <note>* Med dette Vers ender det her (S.36-38) i sin oprindelige Skikkelse, efter Udg. af 1814, meddeelte Digt ,,Najaden''. -</note>
+Meer end Livet værd. <note>* Med dette Vers ender det her (S.36-38) i sin oprindelige Skikkelse, efter Udg. af 1814, meddeelte Digt ,,Najaden''. - I en senere Udgave optog <w>Blicher</w> dette Digt iblandt <a poem="blicher2019010402">,,Bautastene''</a> med nærværende Overskrift og med Tilføielse af de følgende tre Vers. Udg. Anm.</note>
 
 O! men græd for ham, som her
    Skilles fra sin Mø!
@@ -7394,10 +7410,9 @@ Og i troløs Afgrund segner
 
 <poem id="blicher2003091573">
 <head>
-   <title>Buhl</title>
-   <toctitle>Buhl</toctitle>
-   <indextitle>Buhl</indextitle>
-   <firstline>Glat var din Kind, da første gang</firstline>
+    <title><num>XVI.</num>Buhl</title>
+    <firstline>Glat var din Kind, da første gang</firstline>
+    <source in="bd1" pages="221-223"/>
 </head>
 <body>
 Glat var din Kind, da første Gang
@@ -7474,13 +7489,12 @@ Slaae, eller falde under Sværdet.
 
 <poem id="blicher2003091574">
 <head>
-   <title>Qvistgaard</title>
-   <toctitle>Qvistgaard</toctitle>
-   <indextitle>Qvistgaard</indextitle>
-   <firstline>Som naar et Skib paa Vigens stille Vande</firstline>
-   <notes>
-      <note>* Captain, Eier af Vibygaard ved Roeskilde; faldt i Slaget ved Kjøge 1807.) See ,,Gamle og nye noveller'' af Blicher 1ste Deel.</note>
-   </notes>
+    <title><num>XVII.</num>Qvistgaard</title>
+    <firstline>Som naar et Skib paa Vigens stille Vande</firstline>
+    <notes>
+      <note>* Captain, Eier af Vibygaard ved Roeskilde; faldt i Slaget ved Kjøge 1807, (See ,,Gamle og nye noveller'' af Blicher 1ste Deel. S. XVI).</note>
+    </notes>
+    <source in="bd1" pages="223-226"/>
 </head>
 <body>
 Som naar et Skib paa Vigens stille Vande
@@ -7585,13 +7599,12 @@ Det haver Roes og evigt Eftermæle.
 
 <poem id="blicher2003091575">
 <head>
-   <title>Knud Henneberg</title>
-   <toctitle>Knud Henneberg</toctitle>
-   <indextitle>Knud Henneberg</indextitle>
-   <firstline>Hvem har vi her? - Knud Henneberg! - Hvo kjender</firstline>
-   <notes>
+    <title><num>XVIII.</num>Knud Henneberg</title>
+    <firstline>Hvem har vi her? - Knud Henneberg! - Hvo kjender</firstline>
+    <notes>
       <note>* Lærd Astronom og Oldgrandsker. Skrev en aandfuld Afhandling om Guldhornene. Døde som Capellan i Aalborg 1832 i høj Alder.</note>
-   </notes>
+    </notes>
+    <source in="bd1" pages="226-228"/>
 </head>
 <body>
 ,,Hvem har vi her? - Knud Henneberg! - Hvo kjender
@@ -7678,11 +7691,12 @@ O Vandrer! naar Du hjem fra Højen gaaer. <note>* Med dette sidste Vers, som er 
 
 <poem id="blicher2003091576">
 <head>
-   <title>Ole Worm</title>
-   <subtitle>Skolerector i Horsens</subtitle>
-   <toctitle>Ole Worm</toctitle>
-   <indextitle>Ole Worm</indextitle>
-   <firstline>Man bygger op med stor Umag</firstline>
+    <title><num>XIX.</num>Ole Worm</title>
+    <notes>
+        <note>* Skolerector i Horsens.</note>
+    </notes>
+    <firstline>Man bygger op med stor Umag</firstline>
+    <source in="bd1" pages="229-230"/>
 </head>
 <body>
 Man bygger op med stor Umag
@@ -7749,10 +7763,9 @@ Jeg hænger den paa Stenen.
 
 <poem id="blicher2003091577">
 <head>
-   <title>Søren Kanne</title>
-   <toctitle>Søren Kanne</toctitle>
-   <indextitle>Søren Kanne</indextitle>
-   <firstline>Det blæste en Storm udi Kattegat</firstline>
+    <title><num>XX.</num>Søren Kanne</title>
+    <firstline>Det blæste en Storm udi Kattegat</firstline>
+    <source in="bd1" pages="231-234"/>
 </head>
 <body>
 Det blæste en Storm udi Kattegat,
@@ -7869,14 +7882,14 @@ Og Alle til Enighed føre!
 
 <poem id="blicher2003091578">
 <head>
-   <title>Kong Frederik den Sjette</title>
-   <subtitle>1839</subtitle>
-   <toctitle>Kong Frederik den Sjette</toctitle>
-   <indextitle>Kong Frederik den Sjette</indextitle>
-   <firstline>For Dig jeg tilforn saa ofte sang</firstline>
-   <notes>
+    <title><num>XXI.</num>Kong Frederik den Sjette</title>
+    <subtitle>(1839)</subtitle>
+    <firstline>For Dig jeg tilforn saa ofte sang</firstline>
+    <notes>
       <note>Se <xref bibel="bibel1samuel25,6"/> for motto.</note>
-   </notes>
+    </notes>
+    <keywords>frederik6</keywords>
+    <source in="bd1" pages="234"/>
 </head>
 <body>
 <nonum><right><small>Fred være med Dig! og Fred med dit Huus!</small></right></nonum>
@@ -7910,26 +7923,27 @@ Gud Signe din Slægt og din Eftermand!
 
 <section>
 <head>
-   <toctitle>Anden Deel</toctitle>
+    <toctitle>Anden Deel</toctitle>
 </head>
 <content>
 
-<section>
+<section id="blicher2019010404">
 <head>
-   <toctitle>Jyllandsrejse i sex Døgn</toctitle>
-   <linktitle>Jyllandsrejse i sex Døgn</linktitle>
-   <indextitle>Jyllandsrejse i sex Døgn</indextitle>
-   <subtitle>(udført og beskreven i Aaret 1816 af S.S.B. og Barberen i Ribe, siden bekjendt under Firma P.Sp.)</subtitle>
+    <title>Jyllandsrejse i sex Døgn</title>
+    <subtitle>
+        <line>udført og beskreven i Aaret 1816 af S.S.B. og Barberen i Ribe,</line>
+        <line>(siden bekjendt under Firma P.Sp.)</line>
+    </subtitle>
+    <source in="bd2" pages="1-87"/>
 </head>
 <content>
 
 <poem id="blicher2003091579">
 <head>
-   <title>Forsang</title>
-   <toctitle>Forsang</toctitle>
-   <indextitle>Forsang</indextitle>
-   <firstline>Eensom jeg laae paa min lynggro'de Bakke</firstline>
-   <keywords>ingemann</keywords>
+    <title>Forsang</title>
+    <subtitle>(En kjer Frænde helliget)</subtitle>
+    <firstline>Eensom jeg laae paa min lynggro'de Bakke</firstline>
+    <source in="bd2" pages="1-5"/>
 </head>
 <body>
 Eensom jeg laae paa min lynggro'de Bakke,
@@ -7999,7 +8013,7 @@ Skjalv jeg, og faldt paa mit Ansigt til Jorden,
 
 Bedende laae jeg, ej turde jeg svinge
    Mig imod Himlen i jordiske Ham -
-Bernhard! <note>* Ingemann.</note> jeg slumrede ej, da din Vinge
+Bernhard! <note>* <a poet="ingemann">Ingemann.</a></note> jeg slumrede ej, da din Vinge
    Rørte min Skulder med venlige Ram.
 
 Rørte den venligt, forlod mig og suste
@@ -8061,10 +8075,11 @@ Lærken blandt Gravene bygger sit Rede,
 
 <poem id="blicher2003091580">
 <head>
-   <title>Første Døgn</title>
-   <toctitle>Første Døgn</toctitle>
-   <indextitle>Første Døgn</indextitle>
-   <firstline>Farvel, farvel da, du røgindhyllede Tue!</firstline>
+    <title>Første Døgn</title>
+    <toctitle>Første Døgn</toctitle>
+    <indextitle>Første Døgn</indextitle>
+    <firstline>Farvel, farvel da, du røgindhyllede Tue!</firstline>
+    <source in="bd2" pages="5-16"/>
 </head>
 <body>
 Blicher.
@@ -8411,10 +8426,9 @@ Saa staaer dit Rede trygt og fast.
 
 <poem id="blicher2003091581">
 <head>
-   <title>Andet Døgn</title>
-   <toctitle>Andet Døgn</toctitle>
-   <indextitle>Andet Døgn</indextitle>
-   <firstline>Saa tidlig paa Dækket? - Hvi bæver Smilet ustadigt</firstline>
+    <title>Andet Døgn</title>
+    <firstline>Saa tidlig paa Dækket? - Hvi bæver Smilet ustadigt</firstline>
+    <source in="bd2" pages="16-28"/>
 </head>
 <body>
 Blicher.
@@ -8827,10 +8841,11 @@ Paa Landevejen, der løber fra Aarhuus til Grennaae!
 
 <poem id="blicher2003091582">
 <head>
-   <title>Tredie Døgn</title>
-   <toctitle>Tredie Døgn</toctitle>
-   <indextitle>Tredie Døgn</indextitle>
-   <firstline>Borte er Søvnens Børn, - ufuldendte Gestalter</firstline>
+    <title>Tredie Døgn</title>
+    <toctitle>Tredie Døgn</toctitle>
+    <indextitle>Tredie Døgn</indextitle>
+    <firstline>Borte er Søvnens Børn, - ufuldendte Gestalter</firstline>
+    <source in="bd2" pages="28-37"/>
 </head>
 <body>
 Blicher.
@@ -9109,17 +9124,16 @@ Sejrende stode i Dietmars taagede Sumper!
 Hører og kjender, at ikke bag skyhøje Fjelde,
 Ej heller bag Volde boer Friheden sikker, men ene
 Bag kjekke Hjerter. - Hør til, Du Danske, Hvorlunde
-Frihed og Ære og Skjaldesange skal vindes! <note>* See Bautastene i Blichers Digte 1ste Del.</note>
+Frihed og Ære og Skjaldesange skal vindes! <note>* See <a poem="blicher2019010402">Bautastene</a> i Blichers Digte 1ste Del.</note>
 
 </body>
 </poem>
 
 <poem id="blicher2003091583">
 <head>
-   <title>Fjerde Døgn</title>
-   <toctitle>Fjerde Døgn</toctitle>
-   <indextitle>Fjerde Døgn</indextitle>
-   <firstline>Hvi raaber den Sanger saa højt paa ensomme Hede?</firstline>
+    <title>Fjerde Døgn</title>
+    <firstline>Hvi raaber den Sanger saa højt paa ensomme Hede?</firstline>
+    <source in="bd2" pages="37-51"/>
 </head>
 <body>
 Barberen.
@@ -9570,11 +9584,12 @@ Blicher.
 
 <poem id="blicher2003091584">
 <head>
-   <title>Femte Døgn</title>
-   <subtitle>Viborg Snapsting</subtitle>
-   <toctitle>Femte Døgn</toctitle>
-   <indextitle>Femte Døgn</indextitle>
-   <firstline>O! I Poeternes Tjenestepiger!</firstline>
+    <title>Femte Døgn</title>
+    <subtitle>(Viborg Snapsthing)</subtitle>
+    <toctitle>Femte Døgn</toctitle>
+    <indextitle>Femte Døgn</indextitle>
+    <firstline>O! I Poeternes Tjenestepiger!</firstline>
+    <source in="bd2" pages="51-77"/>
 </head>
 <body>
 Barberen.
@@ -10395,10 +10410,11 @@ Hjemad til Nibe! - Nu Snapsting! Adio!
 
 <poem id="blicher2003091585">
 <head>
-   <title>Sjette Døgn</title>
-   <toctitle>Sjette Døgn</toctitle>
-   <indextitle>Sjette Døgn</indextitle>
-   <firstline>Hil dig mit Fødeland, Fædrenes mørkbrune Gravmark</firstline>
+    <title>Sjette Døgn</title>
+    <toctitle>Sjette Døgn</toctitle>
+    <indextitle>Sjette Døgn</indextitle>
+    <firstline>Hil dig mit Fødeland, Fædrenes mørkbrune Gravmark</firstline>
+    <source in="bd2" pages="77-87"/>
 </head>
 <body>
 Blicher.
@@ -10717,17 +10733,18 @@ Til bedre Glæder en bedre Harpe slaae!
 
 <section>
 <head>
-   <toctitle>Blandede Digte og Oversættelser</toctitle>
+    <toctitle>Blandede Digte og Oversættelser</toctitle>
 </head>
 <content>
 
 <poem id="blicher2003091586">
 <head>
-   <title>Digterens Lyksalighed</title>
-   <subtitle>Harlekin Poet declamerer</subtitle>
-   <toctitle>Digterens Lyksalighed</toctitle>
-   <indextitle>Digterens Lyksalighed</indextitle>
-   <firstline>Lyksalig den, hvem Phæbos Harpen rækker!</firstline>
+    <title>Digterens Lyksalighed</title>
+    <subtitle>Harlekin Poet declamerer</subtitle>
+    <toctitle>Digterens Lyksalighed</toctitle>
+    <indextitle>Digterens Lyksalighed</indextitle>
+    <firstline>Lyksalig den, hvem Phæbos Harpen rækker!</firstline>
+    <source in="bd2" pages="88-90"/>
 </head>
 <body>
 Lyksalig den, hvem Phæbos Harpen rækker!
@@ -10794,10 +10811,9 @@ Man tusind Blomster paa hans Bane strøer -
 
 <poem id="blicher2003091587">
 <head>
-   <title>Adskillige Evigheder</title>
-   <toctitle>Adskillige Evigheder</toctitle>
-   <indextitle>Adskillige Evigheder</indextitle>
-   <firstline>Naar Ungesvend og Mø hverandre møde</firstline>
+    <title>Adskillige Evigheder</title>
+    <firstline>Naar Ungesvend og Mø hverandre møde</firstline>
+    <source in="bd2" pages="90-91"/>
 </head>
 <body>
 Naar Ungesvend og Mø hverandre møde
@@ -10846,10 +10862,11 @@ Som Urtekræmmeren og Møl det sparer.
 
 <poem id="blicher2003091588">
 <head>
-   <title>Rang og Fortjenester</title>
-   <toctitle>Rang og Fortjenester</toctitle>
-   <indextitle>Rang og Fortjenester</indextitle>
-   <firstline>Der var en Tid paa denne Klode</firstline>
+    <title>Rang og Fortjenester</title>
+    <toctitle>Rang og Fortjenester</toctitle>
+    <indextitle>Rang og Fortjenester</indextitle>
+    <firstline>Der var en Tid paa denne Klode</firstline>
+    <source in="bd2" pages="91-93"/>
 </head>
 <body>
 Der var en Tid paa denne Klode
@@ -10904,14 +10921,15 @@ De har Fortjenester!
 
 <poem id="blicher2003091589">
 <head>
-   <title>Vildbassen og Væderen</title>
-   <subtitle>(Frit efter Gay.)</subtitle>
-   <toctitle>Vildbassen og Væderen</toctitle>
-   <indextitle>Vildbassen og Væderen</indextitle>
-   <firstline>Omringet af sin Faareflok, der stod</firstline>
-   <notes>
+    <title>Vildbassen og Væderen</title>
+    <subtitle>(Frit efter Gay.)</subtitle>
+    <toctitle>Vildbassen og Væderen</toctitle>
+    <indextitle>Vildbassen og Væderen</indextitle>
+    <firstline>Omringet af sin Faareflok, der stod</firstline>
+    <notes>
       <note>Gendigtning af John Gay: <xref type="translation" poem="gay2005052801"/>.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="93-94"/>
 </head>
 <body>
 Omringet af sin Faareflok, der stod
@@ -10942,10 +10960,11 @@ Og siger: ,, Laan os dine Huggetænder!
 
 <poem id="blicher2003091590">
 <head>
-   <title>Bien og Myggen</title>
-   <toctitle>Bien og Myggen</toctitle>
-   <indextitle>Bien og Myggen</indextitle>
-   <firstline>En Myg tilfældigviis blev Vidne til</firstline>
+    <title>Bien og Myggen</title>
+    <toctitle>Bien og Myggen</toctitle>
+    <indextitle>Bien og Myggen</indextitle>
+    <firstline>En Myg tilfældigviis blev Vidne til</firstline>
+    <source in="bd2" pages="94-95"/>
 </head>
 <body>
 En Myg tilfældigviis blev Vidne til,
@@ -10982,11 +11001,12 @@ At Bier stak en Mand tildøde.
 
 <poem id="blicher2003091591">
 <head>
-   <title>En Gaade</title>
-   <toctitle>En Gaade</toctitle>
-   <indextitle>En Gaade</indextitle>
-   <firstline>Hvad er det, man ved Obis kolde Elv -
+    <title>En Gaade</title>
+    <toctitle>En Gaade</toctitle>
+    <indextitle>En Gaade</indextitle>
+    <firstline>Hvad er det, man ved Obis kolde Elv -
 </firstline>
+    <source in="bd2" pages="95-96"/>
 </head>
 <body>
 Hvad er det, man ved Obis kolde Elv -
@@ -11013,11 +11033,10 @@ Og i en Lyd det Hele svinder bort.
 
 <poem id="blicher2003091592">
 <head>
-   <title>Et af Horatses Breve til Mæcenas</title>
-   <subtitle>(Lokaliseret)</subtitle>
-   <toctitle>Et af Horatses Breve til Mæcenas</toctitle>
-   <indextitle>Et af Horatses Breve til Mæcenas</indextitle>
-   <firstline>Hvi vil dog Deres Exellence faa</firstline>
+    <title>Et af Horatses Breve til Mæcenas</title>
+    <subtitle>(Localiseret)</subtitle>
+    <firstline>Hvi vil dog Deres Exellence faa</firstline>
+    <source in="bd2" pages="96-100"/>
 </head>
 <body>
 Hvi vil dog Deres Exellence saa
@@ -11040,7 +11059,7 @@ Hvo mit Orakel er? hvem jeg citerer?
 Jeg ingen fast bestemt Præceptor har:
 Nu dykker jeg i kantisk Dybsinds Bølger -
 Og nu den conseqvente Boye søger
-Udi hans sjeldne Bog;<note>* ,,Statens Ven.'' et philosophisk-oekonomisk Værk, 3Dele 1796-1814.</note> (hvis Fortrin ene
+Udi hans sjeldne Bog;<note>* ,,Statens Ven.'' et philosophisk-oekonomisk Værk, 3 Dele (1796-1814.)</note> (hvis Fortrin ene
 Er sund forstand, og Sandheds Straaler rene;
 Hvorfor naturligviis den ikke gjor'e
 Udi vor lærde Verden stor Furore.)
@@ -11141,11 +11160,12 @@ Ja sund endogsaa - paa lidt Snue nær.
 
 <poem id="blicher2003091593">
 <head>
-   <title>Jægersange</title>
-   <subtitle>(af et utrykt Syngespil)</subtitle>
-   <toctitle>Jægersange</toctitle>
-   <indextitle>Jægersange</indextitle>
-   <firstline>Løft højt det blanke Bæger</firstline>
+    <title>Jægersange</title>
+    <subtitle>(af et utrykt Syngespil)</subtitle>
+    <toctitle>Jægersange</toctitle>
+    <indextitle>Jægersange</indextitle>
+    <firstline>Løft højt det blanke Bæger</firstline>
+    <source in="bd2" pages="100-103"/>
 </head>
 <body>
 <nonum><b>No.1.</b></nonum>
@@ -11157,8 +11177,8 @@ En Skaal for hver en Jæger
 Vi hver, som Jagten ynder,
 Vort Broderskab forkynder
 Med Hjerte Haand og Mund!
-:,. Hallo halli halli hallo,
-Med Hjerte Haand og Mund:,: Jaho!
+:,: Hallo halli halli hallo,
+Med Hjerte Haand og Mund :,: - Jaho!
 
 Vor Jægersang lad runge!
 En Jæger er en Konge
@@ -11249,13 +11269,16 @@ Mig et venligt Monument.
 
 <poem id="blicher2003091594">
 <head>
-   <title>Aristarchos autodidactos eller en kort og grundig Anviisning til at lære sig selv det æsthetiske Recensenterie</title>
-   <toctitle>Aristarchos autodidactos eller en kort og grundig Anviisning til at lære sig selv det æsthetiske Recensenterie</toctitle>
-   <indextitle>Aristarchos autodidactos eller en kort og grundig Anviisning til at lære sig selv det æsthetiske Recensenterie</indextitle>
-   <firstline>Ligerviis som Fuglekongen mon være</firstline>
-   <notes>
+    <title>Aristarchos autodidactos</title>
+    <subtitle>
+        <line>eller</line>
+        <line>en kort og grundig Anviisning til at lære sig selv det æsthetiske Recensenterie.</line>
+    </subtitle>
+    <firstline>Ligerviis som Fuglekongen mon være</firstline>
+    <notes>
       <note>* Trykt i ,,Sneklokken'' 1826.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="104-110"/>
 </head>
 <body>
 Ligerviis som Fuglekongen mon være
@@ -11461,13 +11484,14 @@ Naar selv man ej mægter at flyve derop. <note>* Jeg har oplevet den Glæde: at 
 
 <poem id="blicher2003091595">
 <head>
-   <title>I dag og Imorgen</title>
-   <toctitle>I dag og Imorgen</toctitle>
-   <indextitle>I dag og Imorgen</indextitle>
-   <firstline>Hvor skjøn i Haabet er den Dag imorgen!</firstline>
-   <notes>
+    <title>I dag og Imorgen</title>
+    <toctitle>I dag og Imorgen</toctitle>
+    <indextitle>I dag og Imorgen</indextitle>
+    <firstline>Hvor skjøn i Haabet er den Dag imorgen!</firstline>
+    <notes>
       <note>* Efter et nordamerikansk Digt.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="110-111"/>
 </head>
 <body>
 Hvor skjøn i Haabet er den Dag imorgen!
@@ -11499,14 +11523,15 @@ Tør paa imorgen sin Fortrøstning bygge.
 
 <poem id="blicher2003091596">
 <head>
-   <title>Imorgen</title>
-   <subtitle>(Variation paa det Foregaaende)</subtitle>
-   <toctitle>Imorgen</toctitle>
-   <indextitle>Imorgen</indextitle>
-   <firstline>I smilende Vaar, mens paa Roser jeg træder</firstline>
-   <notes>
+    <title>Imorgen</title>
+    <subtitle>(Variation paa det Foregaaende)</subtitle>
+    <toctitle>Imorgen</toctitle>
+    <indextitle>Imorgen</indextitle>
+    <firstline>I smilende Vaar, mens paa Roser jeg træder</firstline>
+    <notes>
       <note>Se <xref poem="blicher2003091595"/>.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="111-112"/>
 </head>
 <body>
 I smilende Vaar, mens paa Roser jeg træder,
@@ -11548,11 +11573,12 @@ Der kommer en evig og herlig imorgen.
 
 <poem id="blicher2003091597">
 <head>
-   <title>Tiden, Kjerligheden og Venskab</title>
-   <subtitle>Efter det Franske</subtitle>
-   <toctitle>Tiden, Kjerligheden og Venskab</toctitle>
-   <indextitle>Tiden, Kjerligheden og Venskab</indextitle>
-   <firstline>En Olding, som man Tiden kalder</firstline>
+    <title>Tiden, Kjerligheden og Venskab</title>
+    <subtitle>(Efter det Franske)</subtitle>
+    <toctitle>Tiden, Kjerligheden og Venskab</toctitle>
+    <indextitle>Tiden, Kjerligheden og Venskab</indextitle>
+    <firstline>En Olding, som man Tiden kalder</firstline>
+    <source in="bd2" pages="113-114"/>
 </head>
 <body>
 En Olding, som man Tiden kalder,
@@ -11604,10 +11630,9 @@ En yndig Mø mod Tiden frem.
 
 <poem id="blicher2003091598">
 <head>
-   <title>Hvo har Ret?</title>
-   <toctitle>Hvo har Ret?</toctitle>
-   <indextitle>Hvo har Ret?</indextitle>
-   <firstline>Til Dagen Orden i hver Zone</firstline>
+    <title>Hvo har Ret?</title>
+    <firstline>Til Dagen Orden i hver Zone</firstline>
+    <source in="bd2" pages="114-116"/>
 </head>
 <body>
 Til Dagen Orden i hver Zone
@@ -11679,14 +11704,13 @@ Ret og forsigtigen.
 
 <poem id="blicher2003091599">
 <head>
-   <title>Vennen i Nød</title>
-   <subtitle>(Frit efter Gay)</subtitle>
-   <toctitle>Vennen i Nød</toctitle>
-   <indextitle>Vennen i Nød</indextitle>
-   <firstline>En Hare sad en Morgenstund</firstline>
-   <notes>
+    <title>Vennen i Nød</title>
+    <subtitle>(Frit efter Gay)</subtitle>
+    <firstline>En Hare sad en Morgenstund</firstline>
+    <notes>
       <note>Gendigtning af John Gay: <xref type="translation" poem="gay2005052802"/>.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="117-118"/>
 </head>
 <body>
 En Hare sad en Morgenstund
@@ -11749,12 +11773,15 @@ Og raaber: Ven! Du kjender nok mit Hjerte,
 
 <poem id="blicher20030915100">
 <head>
-   <title>Vennen i Nød</title>
-   <subtitle>(Frit efter Pfeffel)</subtitle>
-   <toctitle>Vennen i Nød</toctitle>
-   <indextitle>Vennen i Nød</indextitle>
-   <firstline>Forraadt, bedraget og forladt</firstline>
-   <!-- TODO: Find originalen under http://www.gutenberg2000.de/autoren/pfeffel.htm -->
+    <title>Vennen i Nød</title>
+    <subtitle>(Frit efter Pfeffel)</subtitle>
+    <toctitle>Vennen i Nød</toctitle>
+    <indextitle>Vennen i Nød</indextitle>
+    <firstline>Forraadt, bedraget og forladt</firstline>
+    <notes>
+        <note>Fri gendigtning af Gottlieb Konrad Pfeffel: <xref type="translation" poem="pfeffel2019010901"/>.</note>
+    </notes>
+    <source in="bd2" pages="119-120"/>
 </head>
 <body>
 Forraadt, bedraget og forladt,
@@ -11799,14 +11826,15 @@ Og med det Hele løb sin Vej.
 
 <poem id="blicher20030915101">
 <head>
-   <title>Den sande Lykke</title>
-   <subtitle>(En Efterligning af den gammelengelske Sang: ,,My mind to me a kingdom is.'')</subtitle>
-   <toctitle>Den sande Lykke</toctitle>
-   <indextitle>Den sande Lykke</indextitle>
-   <firstline>Jeg ejer i mit eget Bryst</firstline>
-   <notes>
+    <title>Den sande Lykke</title>
+    <subtitle>(En Efterligning af den gammelengelske Sang: ,,My mind to me a kingdom is.'')</subtitle>
+    <toctitle>Den sande Lykke</toctitle>
+    <indextitle>Den sande Lykke</indextitle>
+    <firstline>Jeg ejer i mit eget Bryst</firstline>
+    <notes>
       <note>Se Sir Edward Dyers <xref poem="dyer2003091501"/>.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="120-122"/>
 </head>
 <body>
 Jeg ejer i mit eget Bryst
@@ -11883,17 +11911,17 @@ Et nøjsomt Sind er Jordens største Lykke.
 
 <poem id="blicher20030915102">
 <head>
-   <title>Angelica Catalani</title>
-   <subtitle>(Efter det Italienske af P.Sp.)</subtitle>
-   <toctitle>Angelica Catalani</toctitle>
-   <indextitle>Angelica Catalani</indextitle>
-   <firstline>Est Du et Menneske, hvor fik Du da</firstline>
-   <notes>
+    <title>Angelica Catalani</title>
+    <subtitle>(Efter det Italienske af P. Sp.)</subtitle>
+    <firstline>Est Du et Menneske, hvor fik Du da</firstline>
+    <notes>
       <note>Angelica Catalani (1780-1849), en af sin tids mest berømte sopraner.</note>
-   </notes>
-   <pictures>
+    </notes>
+    <pictures>
        <picture src="blicher20030915102-p1.jpg">Elisabeth Vigée Le Brun: <i>Angelica Catalani</i> (1806).</picture>
-   </pictures>
+    </pictures>
+    <!-- TODO: Hvem er P. Sp.? -->
+    <source in="bd2" pages="122-123"/>
 </head>
 <body>
 Est Du et Menneske, hvor fik Du da
@@ -11915,10 +11943,11 @@ At levende til Himlen jeg opfoer.
 
 <poem id="blicher20030915103">
 <head>
-   <title>Ode til Løgnen</title>
-   <toctitle>Ode til Løgnen</toctitle>
-   <indextitle>Ode til Løgnen</indextitle>
-   <firstline>Kryb, o Du min Sang, i krumme Slangebugter!</firstline>
+    <title>Ode til Løgnen</title>
+    <toctitle>Ode til Løgnen</toctitle>
+    <indextitle>Ode til Løgnen</indextitle>
+    <firstline>Kryb, o Du min Sang, i krumme Slangebugter!</firstline>
+    <source in="bd2" pages="123-125"/>
 </head>
 <body>
 Kryb, o Du min Sang, i krumme Slangebugter!
@@ -11985,10 +12014,11 @@ Siig i mit Navn: ,,Du Ringhedens Datter!
 
 <poem id="blicher20030915104">
 <head>
-   <title>Den største Nar</title>
-   <toctitle>Den største Nar</toctitle>
-   <indextitle>Den største Nar</indextitle>
-   <firstline>Fuld af Narre er vor lille Jord</firstline>
+    <title>Den største Nar</title>
+    <toctitle>Den største Nar</toctitle>
+    <indextitle>Den største Nar</indextitle>
+    <firstline>Fuld af Narre er vor lille Jord</firstline>
+    <source in="bd2" pages="125-128"/>
 </head>
 <body>
 Fuld af Narre er vor lille Jord;
@@ -12072,10 +12102,9 @@ At til Vise han forvandler Taaber.
 
 <poem id="blicher20030915105">
 <head>
-   <title>Politisk Gnavpose</title>
-   <toctitle>Politisk Gnavpose</toctitle>
-   <indextitle>Politisk Gnavpose</indextitle>
-   <firstline>At Politiken er et Spil</firstline>
+    <title>Politisk Gnavpose</title>
+    <firstline>At Politiken er et Spil</firstline>
+    <source in="bd2" pages="128-131"/>
 </head>
 <body>
 At Politiken er et Spil,
@@ -12193,11 +12222,10 @@ Og - tager Potten hjem.
 
 <poem id="blicher20030915106">
 <head>
-   <title>Kjerlighed og Whist</title>
-   <subtitle>(Ideen tildeleels af det Tydske:)</subtitle>
-   <toctitle>Kjerlighed og Whist</toctitle>
-   <indextitle>Kjerlighed og Whist</indextitle>
-   <firstline>Det første Spil af alle Whist dog bliver</firstline>
+    <title>Kjerlighed og Whist</title>
+    <subtitle>Ideen tildeleels af det Tydske</subtitle>
+    <firstline>Det første Spil af alle Whist dog bliver</firstline>
+    <source in="bd2" pages="132-134"/>
 </head>
 <body>
 Det første Spil af alle Whist dog bliver,
@@ -12293,10 +12321,11 @@ Med een man nøjes for det hele Liv.
 
 <poem id="blicher20030915107">
 <head>
-   <title>Kjerlighedsdalen</title>
-   <toctitle>Kjerlighedsdalen</toctitle>
-   <indextitle>Kjerlighedsdalen</indextitle>
-   <firstline>Blandt grønklædte Bakker der ligger en Dal</firstline>
+    <title>Kjerlighedsdalen</title>
+    <toctitle>Kjerlighedsdalen</toctitle>
+    <indextitle>Kjerlighedsdalen</indextitle>
+    <firstline>Blandt grønklædte Bakker der ligger en Dal</firstline>
+    <source in="bd2" pages="135-137"/>
 </head>
 <body>
 Blandt grønklædte Bakker der ligger en Dal,
@@ -12368,10 +12397,14 @@ Som Dalen har fundet - og mistet igjen.
 
 <poem id="blicher20030915108">
 <head>
-   <title>Hedelærkens Velkommenhjem til Nattergalen</title>
-   <toctitle>Hedelærkens Velkommenhjem til Nattergalen</toctitle>
-   <indextitle>Hedelærkens Velkommenhjem til Nattergalen</indextitle>
-   <firstline>Længe har jeg savnet, o Broderlil! din Sang</firstline>
+    <title>Hedelærkens Velkommenhjem til Nattergalen</title>
+    <subtitle>(Ved Ingemanns Hjemkomst fra Italien)</subtitle>
+    <firstline>Længe har jeg savnet, o Broderlil! din Sang</firstline>
+    <notes>
+        <note>Stroferne 4-6 er en gendigtning af Goethes <xref type="translation" poem="goethe2001111901"/>.</note>
+    </notes>
+    <keywords>ingemann</keywords>
+    <source in="bd2" pages="137-139"/>
 </head>
 <body>
 Længe har jeg savnet, o Broderlil! din Sang:
@@ -12450,14 +12483,15 @@ Sødt, naar Solen daler, Du Dine Triller slaae!
 
 <poem id="blicher20030915109">
 <head>
-   <title>Robin Hood</title>
-   <subtitle>(Gammelengelsk Ballade)</subtitle>
-   <toctitle>Robin Hood</toctitle>
-   <indextitle>Robin Hood</indextitle>
-   <firstline>Det er saa lystigt i Vaaren forvist</firstline>
-   <notes>
-      <note>* Omarbejdet efter et gammelengelsk Digt. Denne er den samme Robin Hood, der under det falske Navn ,,Lockley'' spiller saa vigtig en Rolle i W. Scotts ,,Ivanhoe''. Han er Helten i mange Ballader, og udgjør med sine Kammerater: Little John og Scharlet et Kløverblad Mage til: Adam Bell, Clym af Stone og Cloudesly.</note>
-   </notes>
+    <title>Robin Hood</title>
+    <subtitle>(Gammelengelsk Ballade)</subtitle>
+    <toctitle>Robin Hood</toctitle>
+    <indextitle>Robin Hood</indextitle>
+    <firstline>Det er saa lystigt i Vaaren forvist</firstline>
+    <notes>
+        <note>* Omarbejdet efter et gammelengelsk Digt. Denne er den samme <w>Robin Hood</w>, der under det falske Navn ,,Lockley'' spiller saa vigtig en Rolle i <a poet="scott">W. Scotts</a> ,,Ivanhoe''. Han er Helten i mange Ballader, og udgjør med sine Kammerater: <w>Little John</w> og <w>Scharlet</w> et Kløverblad Mage til: <w>Adam Bell</w>, <w>Clym</w> af <w>Stone</w> og <w>Cloudesly</w>.</note>
+    </notes>
+    <source in="bd2" pages="139-147"/>
 </head>
 <body>
 Det er saa lystigt i Vaaren forvist,
@@ -12708,22 +12742,23 @@ Med Pilen udi sin Bag.
 </body>
 </poem>
 
-<section>
+<section id="blicher2019010405" level="2">
 <head>
-   <toctitle>Haarlokken. (Episk Digt i 5 Sange efter Pope)</toctitle>
-   <indextitle>Haarlokken</indextitle>
+    <title>Haarlokken</title>
+    <subtitle>et Episk Digt i fem Sange efter Pope</subtitle>
+    <source in="bd2" pages="147-"/>
 </head>
 <content>
 
 <poem id="blicher20030915110a">
 <head>
-   <title>Første Sang</title>
-   <toctitle>Første Sang</toctitle>
-   <linktitle>Haarlokken, første Sang</linktitle>
-   <firstline>Hvorledes Had af Elskov kan udbryde</firstline>
-   <notes>
+    <title>Første Sang</title>
+    <linktitle>Haarlokken, første Sang</linktitle>
+    <firstline>Hvorledes Had af Elskov kan udbryde</firstline>
+    <notes>
       <note>Efter Popes <xref type="translation" poem="pope2003091502"/>.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="147-152"/>
 </head>
 <body>
 Hvorledes Had af Elskov kan udbryde,
@@ -12870,13 +12905,14 @@ Skjøndt Jomfru Betty Æren derfor nyder.
 
 <poem id="blicher20030915110b">
 <head>
-   <title>Anden Sang</title>
-   <toctitle>Anden Sang</toctitle>
-   <linktitle>Haarlokken, anden Sang</linktitle>
-   <firstline>Ei mere prægtig Solen straaler, naar</firstline>
-   <notes>
+    <title>Anden Sang</title>
+    <toctitle>Anden Sang</toctitle>
+    <linktitle>Haarlokken, anden Sang</linktitle>
+    <firstline>Ei mere prægtig Solen straaler, naar</firstline>
+    <notes>
       <note>Efter Popes <xref type="translation" poem="pope2003091503"/>.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="152-157"/>
 </head>
 <body>
 Ei mere prægtig Solen straaler, naar
@@ -13044,13 +13080,14 @@ De alle Skjæbnens Slag imøde see.
 
 <poem id="blicher20030915110c">
 <head>
-   <title>Tredie Sang</title>
-   <toctitle>Tredie Sang</toctitle>
-   <linktitle>Haarlokken, tredie Sang</linktitle>
-   <firstline>Nær ved den Eng, et evigt Foraar pryder</firstline>
-   <notes>
+    <title>Tredie Sang</title>
+    <toctitle>Tredie Sang</toctitle>
+    <linktitle>Haarlokken, tredie Sang</linktitle>
+    <firstline>Nær ved den Eng, et evigt Foraar pryder</firstline>
+    <notes>
       <note>Efter Popes <xref type="translation" poem="pope2003091504"/>.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="157-163"/>
 </head>
 <body>
 Nær ved den Eng, et evigt Foraar pryder,
@@ -13234,13 +13271,14 @@ Saa høres Sejerherren stolt udbryde:
 
 <poem id="blicher20030915110d">
 <head>
-   <title>Fjerde Sang</title>
-   <toctitle>Fjerde Sang</toctitle>
-   <linktitle>Haarlokken, fjerde Sang</linktitle>
-   <firstline>Men lønlig Smerte qvalte Nymphens Røst</firstline>
-   <notes>
+    <title>Fjerde Sang</title>
+    <toctitle>Fjerde Sang</toctitle>
+    <linktitle>Haarlokken, fjerde Sang</linktitle>
+    <firstline>Men lønlig Smerte qvalte Nymphens Røst</firstline>
+    <notes>
       <note>Efter Popes <xref type="translation" poem="pope2003091505"/>.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="163-169"/>
 </head>
 <body>
 Men lønlig Smerte qvalte Nymphens Røst,
@@ -13433,13 +13471,14 @@ Med Suk hun løfted det og talte saa:
 
 <poem id="blicher20030915110e">
 <head>
-   <title>Femte Sang</title>
-   <toctitle>Femte Sang</toctitle>
-   <linktitle>Haarlokken, femte Sang</linktitle>
-   <firstline>Slig Klagesang til Taarer Alle rører</firstline>
-   <notes>
+    <title>Femte Sang</title>
+    <toctitle>Femte Sang</toctitle>
+    <linktitle>Haarlokken, femte Sang</linktitle>
+    <firstline>Slig Klagesang til Taarer Alle rører</firstline>
+    <notes>
       <note>Efter Popes <xref type="translation" poem="pope2003091506"/>.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="169-175"/>
 </head>
 <body>
 Slig Klagesang til Taarer Alle rører,
@@ -13626,10 +13665,9 @@ Og mellem Stjernerne dit Navn indføre.
 
 <poem id="blicher20030915111">
 <head>
-   <title>Farvel til min første Kjereste</title>
-   <toctitle>Farvel til min første Kjereste</toctitle>
-   <indextitle>Farvel til min første Kjereste</indextitle>
-   <firstline>Jeg var ung, da Du mig første Gang</firstline>
+    <title>Farvel til min første Kjereste</title>
+    <firstline>Jeg var ung, da Du mig første Gang</firstline>
+    <source in="bd2" pages="175-180"/>
 </head>
 <body>
 Jeg var ung, da Du mig første Gang
@@ -13797,7 +13835,7 @@ Skjænk da til Farvel mig Haabets Trøst!
 At vi, naar jeg Dig atter seer,
 Samles maae, for ej at skilles meer!
 
-Alheden den 11 Oktober 1824.
+<nonum><right><small>Alheden den 11 Oktober 1824.</small></right></nonum>
 </body>
 </poem>
 
@@ -13807,16 +13845,16 @@ Alheden den 11 Oktober 1824.
 
 <section>
 <head>
-   <toctitle>Prologer og Lejlighedsdigte</toctitle>
+    <toctitle>Prologer og Lejlighedsdigte</toctitle>
+    <source in="bd2" pages=""/>
 </head>
 <content>
 
 <poem id="blicher20030915112">
 <head>
-   <title>Ved Forestillingen af en Forfatters første dramatiske Forsøg</title>
-   <toctitle>Ved Forestillingen af en Forfatters første dramatiske Forsøg</toctitle>
-   <indextitle>Ved Forestillingen af en Forfatters første dramatiske Forsøg</indextitle>
-   <firstline>Modtag med fordomsfrie Blik</firstline>
+    <title><num>1.</num>Ved Forestillingen af en Forfatters første dramatiske Forsøg</title>
+    <firstline>Modtag med fordomsfrie Blik</firstline>
+    <source in="bd2" pages="181-182"/>
 </head>
 <body>
 
@@ -13865,12 +13903,11 @@ Kan Ungdomsgnist oppustes dog til Lue.
 
 <poem id="blicher20030915113">
 <head>
-   <title>Stambogsstykke</title>
-   <subtitle>(Ved en Ynglings Udgang i Verden.)</subtitle>
-   <toctitle>Stambogsstykke</toctitle>
-   <indextitle>Stambogsstykke</indextitle>
-   <firstline>Ud gaaer Du nu paa Livets Vej</firstline>
-   <keywords>stambog</keywords>
+    <title><num>2.</num>Stambogsstykke</title>
+    <subtitle>(Ved en Ynglings Udgang i Verden.)</subtitle>
+    <firstline>Ud gaaer Du nu paa Livets Vej</firstline>
+    <keywords>stambog</keywords>
+    <source in="bd2" pages="182-184"/>
 </head>
 <body>
 Ud gaaer Du nu paa Livets Vej.
@@ -13928,11 +13965,10 @@ Da gaaer Du ikke hen, men hjem.
 
 <poem id="blicher20030915114">
 <head>
-   <title>I en ung Piges Stambog</title>
-   <toctitle>I en ung Piges Stambog</toctitle>
-   <indextitle>I en ung Piges Stambog</indextitle>
-   <firstline>Vort Liv ved Billeder betegnes maae</firstline>
-   <keywords>stambog</keywords>
+    <title><num>3.</num>I en ung Piges Stambog</title>
+    <firstline>Vort Liv ved Billeder betegnes maae</firstline>
+    <keywords>stambog</keywords>
+    <source in="bd2" pages="184-185"/>
 </head>
 <body>
 
@@ -13971,11 +14007,10 @@ Saa skal din Rejse endes glædelig
 
 <poem id="blicher200309151115">
 <head>
-   <title>Sneeklokken</title>
-   <subtitle>(Forsang til en Nytaarsgave under denne titel. 1826.)</subtitle>
-   <toctitle>Sneeklokken</toctitle>
-   <indextitle>Sneeklokken</indextitle>
-   <firstline>Naar alle Blomster slumme i kolde Vintergrav</firstline>
+    <title><num>4.</num>Sneeklokken</title>
+    <subtitle>(Forsang til en Nytaarsgave under denne titel. 1826.)</subtitle>
+    <firstline>Naar alle Blomster slumme i kolde Vintergrav</firstline>
+    <source in="bd2" pages="185-186"/>
 </head>
 <body>
 Naar alle Blomster slumme i kolde Vintergrav,
@@ -14007,11 +14042,12 @@ Et kjerligt Hjerte tænker paa Vintrens blege Søn.
 
 <poem id="blicher20030915116">
 <head>
-   <title>Epilog</title>
-   <subtitle>(Efter en Tragedie)</subtitle>
-   <toctitle>Epilog</toctitle>
-   <indextitle>Epilog</indextitle>
-   <firstline>Ej blot til Lyst! saa sige vi, naar lystig Skjemt</firstline>
+    <title><num>5.</num>Epilog</title>
+    <subtitle>(Efter en Tragoedie)</subtitle>
+    <toctitle><num>5.</num>Epilog (efter en Tragoedie)</toctitle>
+    <indextitle>Epilog</indextitle>
+    <firstline>Ej blot til Lyst! saa sige vi, naar lystig Skjemt</firstline>
+    <source in="bd2" pages="186-187"/>
 </head>
 <body>
 ,,Ej blot til Lyst!'' saa sige vi, naar lystig Skjemt
@@ -14051,11 +14087,12 @@ Det var - skjøndt kun et Digt - dog ikke blot til Lyst.
 
 <poem id="blicher20030915117">
 <head>
-   <title>Prolog</title>
-   <subtitle>(Ved et Privattheaters Aabning)</subtitle>
-   <toctitle>Prolog</toctitle>
-   <indextitle>Prolog</indextitle>
-   <firstline>Højtærede Herrer og Danneqvinder!</firstline>
+    <title><num>6.</num>Prolog</title>
+    <subtitle>(Ved et Privattheaters Aabning)</subtitle>
+    <toctitle><num>6.</num>Prolog (ved et Privattheaters Aabning)</toctitle>
+    <indextitle>Prolog</indextitle>
+    <firstline>Højtærede Herrer og Danneqvinder!</firstline>
+    <source in="bd2" pages="187-189"/>
 </head>
 <body>
 Højtærede Herrer og Danneqvinder!
@@ -14125,13 +14162,12 @@ Vi Samle os ofte og glade som nu!
 
 <poem id="blicher20030915118">
 <head>
-   <title>Holbergs Minde</title>
-   <toctitle>Holbergs Minde</toctitle>
-   <indextitle>Holbergs Minde</indextitle>
-   <firstline>Stor er den kunst ved Plectrets Mesterslag</firstline>
-   <notes>
+    <title><num>7.</num>Holbergs Minde</title>
+    <firstline>Stor er den kunst ved Plectrets Mesterslag</firstline>
+    <notes>
       <note>* Epilog, fremsagt paa Viborg Privattheater den 27de Oktober 1822, efter en Holbergsk Comoedie ved Digterens 100aars Jubilæum.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="190-192"/>
 </head>
 <body>
 Stor er den Kunst ved Plectrets Mesterslag
@@ -14207,11 +14243,10 @@ Ludvig Holberg, Scenens Konge!
 
 <poem id="blicher20030915119">
 <head>
-   <title>Epilog</title>
-   <subtitle>(Ved Saisonens Aabning den 28de October med en Holbergsk Comoedie)</subtitle>
-   <toctitle>Epilog</toctitle>
-   <indextitle>Epilog</indextitle>
-   <firstline>God Aften Allesammen! og mange Tak for sidst!</firstline>
+    <title><num>8.</num>Epilog</title>
+    <subtitle>(Ved Saisonens Aabning den 28de October med en Holbergsk Comoedie)</subtitle>
+    <firstline>God Aften Allesammen! og mange Tak for sidst!</firstline>
+    <source in="bd2" pages="192-193"/>
 </head>
 <body>
 God Aften Allesammen! og mange Tak for sidst!
@@ -14245,11 +14280,10 @@ Og blander han sin Stemme med det almene Raab:
 
 <poem id="blicher20030915120">
 <head>
-   <title>Kjædebrev</title>
-   <subtitle>(Skreveti Aaret 1811 til Jens Lyngbye, da kaldet Sognepræst til Thunøe)</subtitle>
-   <toctitle>Kjædebrev</toctitle>
-   <indextitle>Kjædebrev</indextitle>
-   <firstline>Goddag Hr, Jens! Velkommen hid til Thunøe Land!</firstline>
+    <title><num>9.</num>Kjædebrev</title>
+    <subtitle>(Skreveti Aaret 1811 til Jens Lyngbye, da kaldet Sognepræst til Thunøe)</subtitle>
+    <firstline>Goddag Hr, Jens! Velkommen hid til Thunøe Land!</firstline>
+    <source in="bd2" pages="193-196"/>
 </head>
 <body>
 Goddag Hr, Jens! Velkommen hid til Thunøe Land!
@@ -14335,12 +14369,13 @@ Kun ikke for Besøg udaf din Ven Steen Blicher.
 
 <poem id="blicher20030915121">
 <head>
-   <title>Til B. S. Ingemann 1815</title>
-   <firstline>Fra min afsides Dal jeg nys frembrød</firstline>
-   <notes>
+    <title><num>10.</num>Til B. S. Ingemann 1815</title>
+    <firstline>Fra min afsides Dal jeg nys frembrød</firstline>
+    <notes>
       <note>* I Anledning af hans til mig i Minerva indførte Digt. (1815) - Jvfr. Gl. og n. Noveller, B. 1., S. 16.</note>
-   </notes>
-   <keywords>ingemann</keywords>
+    </notes>
+    <keywords>ingemann</keywords>
+    <source in="bd2" pages="196-198"/>
 </head>
 <body>
 Fra min afsides Dal jeg nys frembrød,
@@ -14427,11 +14462,10 @@ Og nu Farvel! - I højen Himmelbue
 
 <poem id="blicher20030915122">
 <head>
-   <title>Epilog</title>
-   <subtitle>(Den 28de October 1823)</subtitle>
-   <toctitle>Epilog</toctitle>
-   <indextitle>Epilog</indextitle>
-   <firstline>Snart for Indbildningen det trætte Forhæng drages</firstline>
+    <title><num>11.</num>Epilog</title>
+    <subtitle>(Den 28de October 1823)</subtitle>
+    <firstline>Snart for Indbildningen det trætte Forhæng drages</firstline>
+    <source in="bd2" pages="198-199"/>
 </head>
 <body>
 Snart for Indbildningen det trætte Forhæng drages,
@@ -14463,10 +14497,13 @@ Hurra, Hurra for Kongens Hustru og hans Datter!
 
 <poem id="blicher20030915123">
 <head>
-   <title>Vise til en Farvers Bryllup</title>
-   <toctitle>Vise til en Farvers Bryllup</toctitle>
-   <indextitle>Vise til en Farvers Bryllup</indextitle>
-   <firstline>Yndig er vor gamle Jord</firstline>
+    <title><num>12.</num>Vise</title>
+    <subtitle>til en Farvers Bryllup</subtitle>
+    <toctitle><num>12.</num>Vise til en Farvers Bryllup</toctitle>
+    <linktitle>Vise til en Farvers Bryllup</linktitle>
+    <indextitle>Vise til en Farvers Bryllup</indextitle>
+    <firstline>Yndig er vor gamle Jord</firstline>
+    <source in="bd2" pages="199-202"/>
 </head>
 <body>
 Yndig er vor gamle Jord,
@@ -14554,11 +14591,10 @@ Skal dem alle nyde!
 
 <poem id="blicher20030915124">
 <head>
-   <title>Epilog</title>
-   <subtitle>(efter Holbergs ,,Hexeri og blind allarm,'' givet paa et Privarttheater, til Bedste for en trængende Familie)</subtitle>
-   <toctitle>Epilog</toctitle>
-   <indextitle>Epilog</indextitle>
-   <firstline>Her har skyldfri Skjemt sin Bolig</firstline>
+    <title><num>13.</num>Epilog</title>
+    <subtitle>(efter Holbergs ,,Hexeri og blind allarm,'' givet paa et Privarttheater, til Bedste for en trængende Familie)</subtitle>
+    <firstline>Her har skyldfri Skjemt sin Bolig</firstline>
+    <source in="bd2" pages="202-203"/>
 </head>
 <body>
 Her har skyldfri Skjemt sin Bolig;
@@ -14600,10 +14636,10 @@ Var dog meer end blind Allarm.
 
 <poem id="blicher20030915125">
 <head>
-   <title>Amors Udskrivning</title>
-   <toctitle>Amors Udskrivning</toctitle>
-   <indextitle>Amors Udskrivning</indextitle>
-   <firstline>Hr. Visekrigscom'sarius!</firstline>
+    <title><num>14.</num>Amors Udskrivning</title>
+    <subtitle>(ved en Krigscommissærs Fuldmægtigs Bryllup).</subtitle>
+    <firstline>Hr. Visekrigscom'sarius!</firstline>
+    <source in="bd2" pages="203-205"/>
 </head>
 <body>
 Hr. Visekrigscom'sarius!
@@ -14674,11 +14710,10 @@ I Glæde I tilsammen boe,
 
 <poem id="blicher20030915126">
 <head>
-   <title>Avertissement</title>
-   <subtitle>(indrykket i Randers Avis)</subtitle>
-   <toctitle>Avertissement</toctitle>
-   <indextitle>Avertissement</indextitle>
-   <firstline>Henholdende mig til min ældre Kundgjørelse</firstline>
+    <title><num>15.</num>Avertissement</title>
+    <subtitle>(indrykket i Randers Avis)</subtitle>
+    <firstline>Henholdende mig til min ældre Kundgjørelse</firstline>
+    <source in="bd2" pages="205-207"/>
 </head>
 <body>
 Henholdende mig til min ældre Kundgjørelse,
@@ -14740,10 +14775,9 @@ Og Sjelen sig føler paa Timen i Ruus hensat.
 
 <poem id="blicher20030915127">
 <head>
-   <title>Nytaarsønsker</title>
-   <toctitle>Nytaarsønsker</toctitle>
-   <indextitle>Nytaarsønsker</indextitle>
-   <firstline>Det er en gammel skik - og megen skjøn tillige</firstline>
+    <title><num>16.</num>Nytaarsønsker</title>
+    <firstline>Det er en gammel skik - og megen skjøn tillige</firstline>
+    <source in="bd2" pages="207-208"/>
 </head>
 <body>
 Det er en gammel skik - og megen skjøn tillige -
@@ -14792,14 +14826,16 @@ De, der fra Dør til Dør hvert Nytaar bæres om.
 
 <poem id="blicher20030915128">
 <head>
-   <title>Den 15. Juni 1830 i Randers</title>
-   <toctitle>Den 15. Juni 1830 i Randers</toctitle>
-   <indextitle>Den 15. Juni 1830 i Randers</indextitle>
-   <firstline>Kongen kommer!</firstline>
-   <notes>
+    <title><num>17.</num>Den 15. Juni 1830 i Randers</title>
+    <firstline>Kongen kommer!</firstline>
+    <notes>
        <note>Trykt på forsiden 15/6 1830 af Randers Amtsavis ifb. kongens besøg.</note>
-   </notes>
-   <keywords>frederik6</keywords>
+    </notes>
+    <dates>
+        <event>1830-06-15</event>
+    </dates>
+    <keywords>frederik6</keywords>
+    <source in="bd2" pages="208-209"/>
 </head>
 <body>
 Kongen kommer!
@@ -14838,10 +14874,12 @@ Der er Fred og Fylde i hans Norden!
 
 <poem id="blicher20030915129">
 <head>
-   <title>Den 28de Mai 1839</title>
-   <toctitle>Den 28de Mai 1839</toctitle>
-   <indextitle>Den 28de Mai 1839</indextitle>
-   <firstline>Nu først en Skaal for Førstemand</firstline>
+    <title><num>18.</num>Den 28de Mai 1839</title>
+    <firstline>Nu først en Skaal for Førstemand</firstline>
+    <dates>
+        <event>1839-05-28</event>
+    </dates>
+    <source in="bd2" pages="210"/>
 </head>
 <body>
 Nu først en Skaal for Førstemand
@@ -14875,10 +14913,9 @@ Staae Fjeld og Mark hverandre bi,
 
 <poem id="blicher20030915130">
 <head>
-   <title>Hans Brøckner i Elbek</title>
-   <toctitle>Hans Brøckner i Elbek</toctitle>
-   <indextitle>Hans Brøckner i Elbek</indextitle>
-   <firstline>Hvor der er vakkert i den Præstegaard!</firstline>
+    <title><num>19.</num>Hans Brøckner i Elbek</title>
+    <firstline>Hvor der er vakkert i den Præstegaard!</firstline>
+    <source in="bd2" pages="211-212"/>
 </head>
 <body>
 Hvor der er vakkert i den Præstegaard!
@@ -14929,13 +14966,12 @@ Det store hist han nu imøde gik.
 
 <poem id="blicher20030915131">
 <head>
-   <title>Carl Fischer</title>
-   <toctitle>Carl Fischer</toctitle>
-   <indextitle>Carl Fischer</indextitle>
-   <firstline>Jeg kommer seent - o Du, min Vens Veninde!</firstline>
-   <notes>
+    <title><num>20.</num>Carl Fischer</title>
+    <firstline>Jeg kommer seent - o Du, min Vens Veninde!</firstline>
+    <notes>
       <note>* Justidsraad, Bureauchef, R. af D. stræbte med ædel Iver, men forgjæves, at saae istandbragt et Asyl for faldne Piger - liig Magdalene-Stiftelsen i Englland, m.fl. I denne Anledning frifindes det her saa snart begrædte Venskab. (Jvfr. Dansk Minerva 1815, S. 523 og Tilskueren 1816, nr. 12 -13.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="212-214"/>
 </head>
 <body>
 Jeg kommer seent - o Du, min Vens Veninde!
@@ -15012,13 +15048,12 @@ Gud Fader glæde ham, og trøste Dig!
 
 <poem id="blicher20030915132">
 <head>
-   <title>Stengel</title>
-   <toctitle>Stengel</toctitle>
-   <indextitle>Stengel</indextitle>
-   <firstline>Hvi sysle de saa travlt i Skive hist</firstline>
-   <notes>
+    <title><num>21.</num>Stengel</title>
+    <firstline>Hvi sysle de saa travlt i Skive hist</firstline>
+    <notes>
       <note>* Districtslæge, en mand god og glad som Tode, og velgjørende som han; døde uventet den samme Dag, paa hvilken hans Sølvbryllup skulde være fejret.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="215-216"/>
 </head>
 <body>
 Hvi sysle de saa travlt i Skive hist
@@ -15056,11 +15091,10 @@ Thi stilled han og alle dem, han kunde.
 
 <poem id="blicher20030915133">
 <head>
-   <title>En Morgenscene ved Vildsted Sø</title>
-   <subtitle>(Hans Helmuth v. Lüttigchaus Efterladte helliget)</subtitle>
-   <toctitle>En Morgenscene ved Vildsted Sø</toctitle>
-   <indextitle>En Morgenscene ved Vildsted Sø</indextitle>
-   <firstline>Dagen skimter, Morgenstjernen glimter</firstline>
+    <title><num>22.</num>En Morgenscene ved Vildsted Sø</title>
+    <subtitle>(Hans Helmuth v. Lüttigchaus Efterladte helliget)</subtitle>
+    <firstline>Dagen skimter, Morgenstjernen glimter</firstline>
+    <source in="bd2" pages="216-219"/>
 </head>
 <body>
 Dagen skimter,
@@ -15172,10 +15206,9 @@ Slumre her i Jordens Taagedal.
 
 <poem id="blicher20030915134">
 <head>
-   <title>Farvel, Hans Christian!</title>
-   <toctitle>Farvel, Hans Christian!</toctitle>
-   <indextitle>Farvel, Hans Christian!</indextitle>
-   <firstline>Farvel Hans Christian! ogsaa Du gaaer bort!</firstline>
+    <title><num>23.</num>Farvel, Hans Christian!</title>
+    <firstline>Farvel Hans Christian! ogsaa Du gaaer bort!</firstline>
+    <source in="bd2" pages="210-221"/>
 </head>
 <body>
 Farvel Hans Christian! ogsaa Du gaaer bort!
@@ -15233,10 +15266,9 @@ Naar Dødens Engel ogsaa mig tilsmiler.
 
 <poem id="blicher20030915135">
 <head>
-   <title>Over en værdig Kone</title>
-   <toctitle>Over en værdig Kone</toctitle>
-   <indextitle>Over en værdig Kone</indextitle>
-   <firstline>Den stolte Flod, som spreder Frugtbarhed</firstline>
+    <title><num>24.</num>Over en værdig Kone</title>
+    <firstline>Den stolte Flod, som spreder Frugtbarhed</firstline>
+    <source in="bd2" pages="221"/>
 </head>
 <body>
 Den stolte Flod, som spreder Frugtbarhed
@@ -15263,11 +15295,10 @@ Din Aand opsteg til Støvets, Aandens Skaber.
 
 <poem id="blicher20030915136">
 <head>
-   <title>Sophie Amalie</title>
-   <subtitle>1838</subtitle>
-   <toctitle>Sophie Amalie</toctitle>
-   <indextitle>Sophie Amalie</indextitle>
-   <firstline>Der var en Tid, da Du, i Skjønheds Fylde</firstline>
+    <title><num>25.</num>Sophie Amalie</title>
+    <subtitle>1838</subtitle>
+    <firstline>Der var en Tid, da Du, i Skjønheds Fylde</firstline>
+    <source in="bd2" pages="222-223"/>
 </head>
 <body>
 Der var en Tid, da Du, i Skjønheds Fylde
@@ -15340,18 +15371,17 @@ Mit Afskedssuk skal over Graven bølge.
 </content>
 </section> <!-- Prologer og Lejlighedsdigte -->
 
-<section>
+<section level="2">
 <head>
-   <toctitle>Ossianske Elegier</toctitle>
+    <toctitle>Ossianske Elegier</toctitle>
 </head>
 <content>
 
 <poem id="blicher20030915137">
 <head>
-   <title>Til Aftenstjernen</title>
-   <toctitle>Til Aftenstjernen</toctitle>
-   <indextitle>Til Aftenstjernen</indextitle>
-   <firstline>Yndigt er dit Lys, o Aftenstjerne!</firstline>
+    <title>Til Aftenstjernen</title>
+    <firstline>Yndigt er dit Lys, o Aftenstjerne!</firstline>
+    <source in="bd2" pages="224"/>
 </head>
 <body>
 Yndigt er dit Lys, o Aftenstjerne!
@@ -15379,10 +15409,9 @@ Fortids Minde røres i hans Bryst.
 
 <poem id="blicher20030915138">
 <head>
-   <title>Til Maanen</title>
-   <toctitle>Til Maanen</toctitle>
-   <indextitle>Til Maanen</indextitle>
-   <firstline>Hil Dig atter, Himlens faure Datter!</firstline>
+    <title>Til Maanen</title>
+    <firstline>Hil Dig atter, Himlens faure Datter!</firstline>
+    <source in="bd2" pages="225-226"/>
 </head>
 <body>
 Hil Dig atter,
@@ -15445,10 +15474,9 @@ Trille klare sine Bølger smaa!
 
 <poem id="blicher20030915139">
 <head>
-   <title>Til Solen</title>
-   <toctitle>Til Solen</toctitle>
-   <indextitle>Til Solen</indextitle>
-   <firstline>O Du, som ruller højt paa Himlens Bue</firstline>
+    <title>Til Solen</title>
+    <firstline>O Du, som ruller højt paa Himlens Bue</firstline>
+    <source in="bd2" pages="227-228"/>
 </head>
 <body>
 O Du, som ruller højt paa Himlens Bue:
@@ -15504,19 +15532,17 @@ Blidt Nordens Vinterstorm i Ørknen tuder;
 Det drøner huult og dybt ved Havets Bred.
 For gamle Vandrer ingen Stjerne lyser;
 Midt paa sin Vej han gyser.
-
 </body>
 </poem>
 
 <poem id="blicher20030915140">
 <head>
-   <title>Ossians Svanesang</title>
-   <toctitle>Ossians Svanesang</toctitle>
-   <indextitle>Ossians Svanesang</indextitle>
-   <firstline>Den gamle Eeg ud over Elven luder</firstline>
-   <notes>
+    <title>Ossians Svanesang</title>
+    <firstline>Den gamle Eeg ud over Elven luder</firstline>
+    <notes>
       <note>* Synges endnu med vild men hjertegribende Melodie af bjergskotterne.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="228-231"/>
 </head>
 <body>
 Den gamle Eeg ud over Elven luder,
@@ -15611,18 +15637,21 @@ Hoverende i alle Storme staaer.
 </content>
 </section>
 
-<section>
+<section level="2">
 <head>
-   <toctitle>Danske Folkeviser</toctitle>
+    <toctitle>Danske Folkeviser</toctitle>
 </head>
 <content>
 
 <poem id="blicher20030915141">
 <head>
-   <title>En ganske ny Vise om Tym Sællandsfa'r</title>
-   <toctitle>En ganske ny Vise om Tym Sællandsfa'r</toctitle>
-   <indextitle>En ganske ny Vise om Tym Sællandsfa'r</indextitle>
-   <firstline>En Vise vil vi nu sjunge</firstline>
+    <title><num>1.</num>En ganske ny Vise</title>
+    <subtitle>
+        <line>om</line>
+        <line>Tym Sællandsfa'r</line>
+    </subtitle>
+    <firstline>En Vise vil vi nu sjunge</firstline>
+    <source in="bd2" pages="232-236"/>
 </head>
 <body>
 En Vise vil vi nu sjunge,
@@ -15757,13 +15786,12 @@ Jeg vover de danske Drenge.
 
 <poem id="blicher20030915142">
 <head>
-   <title>Christian den Fjerde i Søslaget ved Femern</title>
-   <toctitle>Christian den Fjerde i Søslaget ved Femern</toctitle>
-   <indextitle>Christian den Fjerde i Søslaget ved Femern</indextitle>
-   <firstline>Stemmer i; thi nu ville vi sjunge!</firstline>
-   <!-- Rettelser fra Simon Kjærsgaard. -->
-   <keywords>christian4</keywords>
-   <quality>korrektur1,korrektur2</quality>
+    <title><num>2.</num>Christian den Fjerde i Søslaget ved Femern</title>
+    <firstline>Stemmer i; thi nu ville vi sjunge!</firstline>
+    <!-- Rettelser fra Simon Kjærsgaard. -->
+    <keywords>christian4</keywords>
+    <quality>korrektur1,korrektur2</quality>
+    <source in="bd2" pages="236-239"/>
 </head>
 <body>
 Stemmer i; thi nu ville vi sjunge!
@@ -15854,10 +15882,9 @@ Tidsrøsten jo haver os vækket:
 
 <poem id="blicher20030915143">
 <head>
-   <title>Et dansk Kløverblad</title>
-   <toctitle>Et dansk Kløverblad</toctitle>
-   <indextitle>Et dansk Kløverblad</indextitle>
-   <firstline>Steenvinkel, Rostgaard og Gerner</firstline>
+    <title><num>3.</num>Et dansk Kløverblad</title>
+    <firstline>Steenvinkel, Rostgaard og Gerner</firstline>
+    <source in="bd2" pages="239-243"/>
 </head>
 <body>
 Steenvinkel, Rostgaard og Gerner,
@@ -15989,14 +16016,16 @@ Som deres, hvem vi maae kalde
 
 <poem id="blicher20030915144">
 <head>
-   <title>Prinds Christian</title>
-   <toctitle>Prinds Christian</toctitle>
-   <indextitle>Prinds Christian</indextitle>
-   <firstline>Ved Christianssand</firstline>
+    <title><num>4.</num>,,Prinds Christian''</title>
+    <toctitle><num>4.</num>Prinds Christian</toctitle>
+    <indextitle>Prinds Christian</indextitle>
+    <linktitle>Prinds Christian</linktitle>
+    <firstline>Ved Christianssand</firstline>
+    <source in="bd2" pages="243-246"/>
 </head>
 <body>
    Ved Christianssand
-Der laae den sidste Orlogsmand *50)
+Der laae den sidste Orlogsmand<note>* Egentlig den næstsidste. Som bekjendt blev den efter 5 timers tapper Kamp med den engelske Krydsflaadde fra Store Belt, af Jessen sat paa Grund og derefter brændt (ifølge D. Tilskuer 1808, Nr. 21 og 27) af <w>Engellænderne</w>. Jessen, Top og Rothe blev reddede.</note> 
 Af Danmarks stole Flaade.
 Og Jessen hedte han,
 Som havde der at raade.
@@ -16038,7 +16067,7 @@ De sendte strenge Bud
 Til gamle Dannebroge.
 
    De sendte hid
-En Æl af Kugler heel ublid: <note>* Egntlig den næstsidste. som bekjendt blev den efter 5 timers tapper Kamp med den engelske Krydsflaadde fra Store Belt, af Jessen sat paa Grund og derefter brændt (ifølge tilskuer 1808 Nr. 21 og 27) af Engellænderne. Jessen, Top og Rothe blev reddede. Æl: Iling, Byge.</note> 
+   En Æl<note>Iling, Byge.</note> af Kugler heel ublid: 
 Den kapped Stang og Master.
 Den brave Jessen did
 Sit Svar tilbagekaster.
@@ -16095,10 +16124,9 @@ Dens Drapa nu er sjungen.
 
 <poem id="blicher20030915145">
 <head>
-   <title>Peder Lykke</title>
-   <toctitle>Peder Lykke</toctitle>
-   <indextitle>Peder Lykke</indextitle>
-   <firstline>Den Nordsø! det er et uroligt Vand</firstline>
+    <title><num>5.</num>Peder Lykke</title>
+    <firstline>Den Nordsø! det er et uroligt Vand</firstline>
+    <source in="bd2" pages="246-249"/>
 </head>
 <body>
 Den Nordsø! det er et uroligt Vand,
@@ -16210,11 +16238,17 @@ Med Alle skal stædes i Fare?
 
 <poem id="blicher20030915146">
 <head>
-   <title>En ganske ny Vise om en Kroermand og han Søn</title>
-   <subtitle>Synges som Niels Ebbesens Vise</subtitle>
-   <toctitle>En ganske ny Vise om en Kroermand og han Søn</toctitle>
-   <indextitle>En ganske ny Vise om en Kroermand og han Søn</indextitle>
-   <firstline>De Bønder de sidde saa tykt over Bord</firstline>
+    <title><num>6.</num>En ganske ny Vise</title>
+    <subtitle>
+        <line>om</line>
+        <line>en Kroermand og han Søn.</line>
+        <line>(Synges som Niels Ebbesens Vise.)</line>
+    </subtitle>
+    <toctitle><num>6.</num>En ganske ny Vise om en Kroermand og han Søn</toctitle>
+    <indextitle>En ganske ny Vise om en Kroermand og han Søn</indextitle>
+    <linktitle>En ganske ny Vise om en Kroermand og han Søn</linktitle>
+    <firstline>De Bønder de sidde saa tykt over Bord</firstline>
+    <source in="bd2" pages="249-253"/>
 </head>
 <body>
 De Bønder de sidde saa tykt over Bord
@@ -16351,14 +16385,15 @@ Som Dreng han med Døden maa spøge.
 
 <poem id="blicher20030915147">
 <head>
-   <title>Krigssange</title>
-   <subtitle>for jydske Dragonregiment</subtitle>
-   <toctitle>Krigssange</toctitle>
-   <indextitle>Krigssange</indextitle>
-   <firstline>Tilhest! tilhest nu, Du jydske Dragon!</firstline>
+    <title>Krigssange</title>
+    <subtitle>(for jydske Dragonregiment)</subtitle>
+    <toctitle>Krigssange (for jydske Dragonregiment.)</toctitle>
+    <indextitle>Krigssange</indextitle>
+    <firstline>Tilhest! tilhest nu, Du jydske Dragon!</firstline>
+    <source in="bd2" pages="254-256"/>
 </head>
 <body>
-<nonum><b>Udmarsch</b></nonum>
+<nonum><center><b>1. Udmarsch</b></center></nonum>
 
 Tilhest! tilhest nu, Du jydske Dragon!
    Og muntert i Marken lad springe!
@@ -16396,7 +16431,7 @@ Hvor Sejren sig haver til Danskerne vendt:
 Der findes det jydske Dragonregiment.
 
 
-<nonum><b>Natlejr</b></nonum>
+<nonum><center><b>Natlejr</b></center></nonum>
 
 Nu dækker Natten over 
    Alt med sin mørke Sky,
@@ -16448,11 +16483,10 @@ Snart Solen skal fremtræde,
 
 <poem id="blicher20030915148">
 <head>
-   <title>Natten før Slaget</title>
-   <subtitle>(Værnersang)</subtitle>
-   <toctitle>Natten før Slaget</toctitle>
-   <indextitle>Natten før Slaget</indextitle>
-   <firstline>Nu hvile mange trætte Lemmer</firstline>
+    <title>Natten før Slaget</title>
+    <subtitle>(Værnersang)</subtitle>
+    <firstline>Nu hvile mange trætte Lemmer</firstline>
+    <source in="bd2" pages="256-257"/>
 </head>
 <body>
 Nu hvile mange trætte Lemmer
@@ -16494,14 +16528,13 @@ Den hører Danskens Sejerssang!
 
 <poem id="blicher20030915149">
 <head>
-   <title>Himmelbjergssange</title>
-   <subtitle>Den 1ste August 1840</subtitle>
-   <toctitle>Himmelbjergssange</toctitle>
-   <indextitle>Himmelbjergssange</indextitle>
-   <firstline>Op af Nordhavs dybe Vander knejser</firstline>
+    <title>Himmelbjergssange</title>
+    <subtitle>(Den 1ste August 1840.)</subtitle>
+    <firstline>Op af Nordhavs dybe Vander knejser</firstline>
+    <source in="bd2" pages="257-259"/>
 </head>
 <body>
-<nonum><b>For Norge</b></nonum>
+<nonum><b>1. For Norge</b></nonum>
 
 Op af Nordhavs dybe Vander knejser
 Landet, hvor sin Trone frihed rejser.
@@ -16521,7 +16554,9 @@ Frie Marker pløje
 Som de Bølger høje! -
 Norges hæder fast som Himlen stande!
 
-<nonum><b>For Sverrig</b></nonum>
+---
+
+<nonum><b>2. For Sverrig</b></nonum>
 
 Du gamle Alfers første Hjem i Norden!
 Du skjøne Disers skjønne Fædreland!
@@ -16538,7 +16573,9 @@ I evig Ungdom kraftigt Aar for Aar!
 I Borgerdyd Du mærke kun din Ælde,
 Og Svithiod stærk som nu om Sekler staaer!
 
-<nonum><b>For Danmark</b></nonum>
+---
+
+<nonum><b>3. For Danmark</b></nonum>
 
 Danmark! Fostermoder kjere!
    Hør vor Frydesang!
@@ -16576,7 +16613,9 @@ Mod er rette Danneværke:
 Hegnes saa den danske Have,
 Ledet er ilave.
 
-<nonum><b>For Nodens Enighed</b></nonum>
+---
+
+<nonum><b>4. For Nodens Enighed</b></nonum>
 
 Om end Tvedragt herefter trindt paa Jorden,
 Venskab, Fred og Fryd udi vort Norden! -
@@ -16603,11 +16642,12 @@ Skal staae!
 
 <poem id="blicher20030915150">
 <head>
-   <title>Din Skaal og min Skaal</title>
-   <subtitle>Fædrelandssange</subtitle>
-   <toctitle>Din Skaal og min Skaal</toctitle>
-   <indextitle>Din Skaal og min Skaal</indextitle>
-   <firstline>Din Skaal og min Skaal!</firstline>
+    <title>Din Skaal og min Skaal</title>
+    <subtitle>(Fædrelandssange.)</subtitle>
+    <toctitle>Din Skaal og min Skaal (Fædrelandssang.)</toctitle>
+    <indextitle>Din Skaal og min Skaal</indextitle>
+    <firstline>Din Skaal og min Skaal!</firstline>
+    <source in="bd2" pages="259-260"/>
 </head>
 <body>
 Din Skaal og min Skaal!
@@ -16645,13 +16685,12 @@ Skal fridig lyde Sangen!
 
 <poem id="blicher20030915151">
 <head>
-   <title>Hymne efter en Sygdom</title>
-   <toctitle>Hymne efter en Sygdom</toctitle>
-   <indextitle>Hymne efter en Sygdom</indextitle>
-   <firstline>Opløft dig, Sjel! fra Smertens Land</firstline>
-   <notes>
+    <title>Hymne efter en Sygdom</title>
+    <firstline>Opløft dig, Sjel! fra Smertens Land</firstline>
+    <notes>
       <note>* Jfr. ,,Min Svanesang! (i I.H. Hansens Maigave 1839, siden i ,,Nyeste Noveller og digte'' 1840), skrevet 1838, som det synes, i en senere Sygdom.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="260-261"/>
 </head>
 <body>
 Opløft dig, Sjel! fra Smertens Land,
@@ -16698,14 +16737,15 @@ Til evig Glædes rige!
 
 <poem id="blicher20030915152">
 <head>
-   <title>Til mine Velgjørere</title>
-   <subtitle>1840</subtitle>
-   <toctitle>Til mine Velgjørere</toctitle>
-   <indextitle>Til mine Velgjørere</indextitle>
-   <firstline>I tredive Aar, og vel fleer, jeg sang</firstline>
-   <notes>
+    <title>Til mine Velgjørere</title>
+    <subtitle>1840</subtitle>
+    <toctitle>Til mine Velgjørere</toctitle>
+    <indextitle>Til mine Velgjørere</indextitle>
+    <firstline>I tredive Aar, og vel fleer, jeg sang</firstline>
+    <notes>
       <note>* Jfr. Gl. o. n. Novell. 1, S 16. og Kbhs. Morgenbl. 1839, Nr. 59.</note>
-   </notes>
+    </notes>
+    <source in="bd2" pages="262-263"/>
 </head>
 <body>
 I tredive Aar, og vel fleer, jeg sang
@@ -16766,11 +16806,12 @@ Han har jo forvundet sin bittreste Nød.
 
 <poem id="blicher20030915153">
 <head>
-   <title>Mit Modersmaal</title>
-   <subtitle>1840</subtitle>
-   <toctitle>Mit Modersmaal</toctitle>
-   <indextitle>Mit Modersmaal</indextitle>
-   <firstline>Du dyrebare Tolk før mine Tanker</firstline>
+    <title>Mit Modersmaal</title>
+    <subtitle>1840</subtitle>
+    <toctitle>Mit Modersmaal</toctitle>
+    <indextitle>Mit Modersmaal</indextitle>
+    <firstline>Du dyrebare Tolk før mine Tanker</firstline>
+    <source in="bd2" pages="263-264"/>
 </head>
 <body>
 Du dyrebare Tolk før mine Tanker,

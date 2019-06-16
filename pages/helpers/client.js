@@ -114,6 +114,7 @@ export const work = async (
 export type FetchMuseumResult = {
   museum: Museum,
   artwork: Array<PictureItem>,
+  error: ?Error,
 };
 export const museum = async (
   museumId: MuseumId
