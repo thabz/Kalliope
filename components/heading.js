@@ -3,29 +3,48 @@ import React from 'react';
 
 type HeadingProps = {
   title: any,
+  image?: string,
 };
 export default class Heading extends React.Component<HeadingProps> {
   render() {
-    const { title } = this.props;
+    const { title, image } = this.props;
+    let imageRendered = null;
+    let headingClassName = 'heading';
+    if (image != null) {
+      imageRendered = <img src={image} className="heading-image" />;
+      headingClassName += ' padded-heading';
+    }
     return (
-      <div className="heading">
+      <div className={headingClassName}>
+        {imageRendered}
         <h1>{title}</h1>
         <style jsx>{`
           .heading {
-            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
           }
 
           .heading :global(h1) {
             margin: 0;
             width: 100%;
-            padding-top: 20px;
             line-height: 48px;
             font-size: 48px;
             font-weight: lighter;
             transition: font-size 0.2s;
           }
+          .padded-heading :global(h1) {
+            padding-left: 20px;
+          }
+
           .heading :global(h1):global(.lighter) {
             color: #757575;
+          }
+
+          .heading :global(img) {
+            flex-basis: 80px;
+            height: 80px;
+            border-radius: 40px;
+            box-shadow: 4px 4px 12px #aaa;
           }
 
           @media (max-width: 850px) {

@@ -237,22 +237,24 @@ export default class Nav extends React.Component<NavProps> {
     const { lang, crumbs, rightSide } = this.props;
 
     let joinedLinks = [];
-    crumbs.filter(x => x != null).map((crumb, i) => {
-      if (i !== 0) {
-        joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
-      }
-      let link: Node = null;
-      if (i !== crumbs.length - 1 && crumb.url != null) {
-        link = (
-          <Link prefetch route={crumb.url}>
-            <a>{crumb.title}</a>
-          </Link>
-        );
-      } else {
-        link = crumb.title;
-      }
-      joinedLinks.push(<div key={'link' + i}>{link}</div>);
-    });
+    crumbs
+      .filter(x => x != null)
+      .map((crumb, i) => {
+        if (i !== 0) {
+          joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
+        }
+        let link: Node = null;
+        if (i !== crumbs.length - 1 && crumb.url != null) {
+          link = (
+            <Link prefetch route={crumb.url}>
+              <a>{crumb.title}</a>
+            </Link>
+          );
+        } else {
+          link = crumb.title;
+        }
+        joinedLinks.push(<div key={'link' + i}>{link}</div>);
+      });
 
     let rightSideStyle = null;
     if (rightSide != null) {
@@ -297,7 +299,7 @@ export default class Nav extends React.Component<NavProps> {
           }
           .nav-container {
             margin-top: 10px;
-            margin-bottom: 80px;
+            margin-bottom: 64px;
             width: 100%;
             display: flex;
             justify-content: space-between;

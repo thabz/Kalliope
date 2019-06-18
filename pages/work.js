@@ -157,7 +157,7 @@ export default class extends React.Component<WorkProps> {
 
         <Main>
           <Nav lang={lang} crumbs={workCrumbs(lang, poet, work)} />
-          <Heading title={title} subtitle="Værker" />
+          <Heading title={title} subtitle="Værker" image={ogImage} />
           <PoetTabs lang={lang} poet={poet} selected="works" />
           <SidebarSplit sidebar={sidebar}>
             <div>

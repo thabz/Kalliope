@@ -15,6 +15,7 @@ import * as Links from '../components/links.js';
 import * as Sorting from './helpers/sorting.js';
 import { createURL } from './helpers/client.js';
 import CommonData from '../pages/helpers/commondata.js';
+import * as OpenGraph from './helpers/opengraph.js';
 import _ from '../pages/helpers/translations.js';
 import type {
   LinesPair,
@@ -128,6 +129,8 @@ export default class Texts extends React.Component<TextsProps> {
     const lastCrumbTitle =
       type === 'titles' ? _('Titler', lang) : _('Førstelinjer', lang);
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
+    const ogImage = OpenGraph.poetImage(poet);
+
     return (
       <div>
         <Head
@@ -140,7 +143,7 @@ export default class Texts extends React.Component<TextsProps> {
             lang={lang}
             crumbs={poetCrumbsWithTitle(lang, poet, lastCrumbTitle)}
           />
-          <Heading title={title} />
+          <Heading title={title} image={ogImage} />
           <PoetTabs lang={lang} poet={poet} selected={type} />
           {renderedGroups}
           <LangSelect lang={lang} path={requestPath} />
