@@ -170,8 +170,7 @@ app.prepare().then(() => {
     if (pathname.indexOf('/search') === 0) {
       elasticSearchClient
         .search(
-          'kalliope',
-          'text',
+          'kalliope-'+query.country,
           query.country,
           query.poetId,
           query.query,
