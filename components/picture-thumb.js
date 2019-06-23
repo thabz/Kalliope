@@ -15,7 +15,7 @@ type PictureProps = {
   contentLang: TextLang,
 };
 
-export default class Picture extends React.Component<PictureProps> {
+export default class PictureThumb extends React.Component<PictureProps> {
   static contextTypes = {
     showPictureOverlay: Function,
   };
