@@ -12,7 +12,7 @@ import * as Links from '../components/links';
 import Heading from '../components/heading.js';
 import TextContent from '../components/textcontent.js';
 import SplitWhenSmall from '../components/split-when-small.js';
-import Picture from '../components/picture.js';
+import PictureThumb from '../components/picture-thumb.js';
 import FormattedDate from '../components/formatteddate.js';
 import type {
   Lang,
@@ -68,7 +68,7 @@ class TodaysEvents extends React.Component<TodaysEventsProps> {
         };
         const html = (
           <div className="picture-item">
-            <Picture
+            <PictureThumb
               pictures={[picture]}
               lang={lang}
               contentLang={item.content_lang}
@@ -115,52 +115,54 @@ class News extends React.Component<NewsProps> {
   render() {
     const { lang, news } = this.props;
 
-    const items = news.filter((_, i) => i < 5).map((item, i) => {
-      const { date, content_html, content_lang, title } = item;
-      const renderedTitle = title == null ? null : <h3>{title}</h3>;
-      return (
-        <div className="news-item" key={date + i}>
-          {renderedTitle}
-          <div className="news-body">
-            <TextContent
-              contentHtml={content_html}
-              contentLang={content_lang}
-              lang={lang}
-            />
-          </div>
-          <div className="news-date">
-            <FormattedDate date={date} lang={lang} />
-          </div>
-          <style jsx>{`
-            div.news-item {
-              margin-bottom: 20px;
-            }
-            div.news-item:first-child {
-              padding-bottom: 40px;
-              border-bottom: 1px solid #757575;
-              margin-bottom: 50px;
-            }
+    const items = news
+      .filter((_, i) => i < 5)
+      .map((item, i) => {
+        const { date, content_html, content_lang, title } = item;
+        const renderedTitle = title == null ? null : <h3>{title}</h3>;
+        return (
+          <div className="news-item" key={date + i}>
+            {renderedTitle}
+            <div className="news-body">
+              <TextContent
+                contentHtml={content_html}
+                contentLang={content_lang}
+                lang={lang}
+              />
+            </div>
+            <div className="news-date">
+              <FormattedDate date={date} lang={lang} />
+            </div>
+            <style jsx>{`
+              div.news-item {
+                margin-bottom: 20px;
+              }
+              div.news-item:first-child {
+                padding-bottom: 40px;
+                border-bottom: 1px solid #757575;
+                margin-bottom: 50px;
+              }
 
-            :global(div.news-item h3) {
-              font-weight: lighter;
-              font-size: 1.3em;
-              margin: 0 0 20px 0;
-              padding: 0;
-            }
-            div.news-body {
-              line-height: 1.6;
-              font-weight: lighter;
-            }
-            div.news-date {
-              margin-top: 5px;
-              font-weight: lighter;
-              font-size: 0.8em;
-              color: #757575;
-            }
-          `}</style>
-        </div>
-      );
-    });
+              :global(div.news-item h3) {
+                font-weight: lighter;
+                font-size: 1.3em;
+                margin: 0 0 20px 0;
+                padding: 0;
+              }
+              div.news-body {
+                line-height: 1.6;
+                font-weight: lighter;
+              }
+              div.news-date {
+                margin-top: 5px;
+                font-weight: lighter;
+                font-size: 0.8em;
+                color: #757575;
+              }
+            `}</style>
+          </div>
+        );
+      });
 
     return <div>{items}</div>;
   }

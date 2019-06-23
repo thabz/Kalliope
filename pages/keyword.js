@@ -14,7 +14,7 @@ import PoetName from '../components/poetname.js';
 import TextName from '../components/textname.js';
 import TextContent from '../components/textcontent.js';
 import SidebarPictures from '../components/sidebarpictures.js';
-import Picture from '../components/picture.js';
+import PictureThumb from '../components/picture-thumb.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
@@ -55,7 +55,7 @@ export default class extends React.Component<KeywordComponentProps> {
 
     const pictures = keyword.pictures.map(p => {
       return (
-        <Picture
+        <PictureThumb
           pictures={[p]}
           contentLang={p.content_lang || 'da'}
           lang={lang}

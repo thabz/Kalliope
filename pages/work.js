@@ -18,7 +18,7 @@ import Note from '../components/note.js';
 import TOC from '../components/toc.js';
 import TextContent from '../components/textcontent.js';
 import SidebarPictures from '../components/sidebarpictures.js';
-import Picture from '../components/picture.js';
+import PictureThumb from '../components/picture-thumb.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
@@ -90,7 +90,7 @@ export default class extends React.Component<WorkProps> {
 
     const workPictures = pictures.map((p, i) => {
       return (
-        <Picture
+        <PictureThumb
           pictures={[p]}
           key={'picture' + i}
           contentLang={p.content_lang || 'da'}

@@ -23,7 +23,7 @@ import TextContent from '../components/textcontent.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import SidebarPictures from '../components/sidebarpictures.js';
-import Picture from '../components/picture.js';
+import PictureThumb from '../components/picture-thumb.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
@@ -238,7 +238,7 @@ export default class TextComponent extends React.Component<TextComponentProps> {
 
     let textPictures = text.pictures.map((p, i) => {
       return (
-        <Picture
+        <PictureThumb
           key={'textpicture' + i}
           pictures={[p]}
           contentLang={p.content_lang || 'da'}
@@ -265,7 +265,7 @@ export default class TextComponent extends React.Component<TextComponentProps> {
         });
       }
       textPictures.push(
-        <Picture
+        <PictureThumb
           key={'facsimile' + firstPageNumber}
           pictures={facsimilePictures}
           startIndex={firstPageNumber - 1}
