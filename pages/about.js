@@ -11,7 +11,7 @@ import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import TwoColumns from '../components/twocolumns.js';
 import SidebarPictures from '../components/sidebarpictures.js';
-import Picture from '../components/picture.js';
+import PictureThumb from '../components/picture-thumb.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
@@ -63,7 +63,7 @@ export default class About extends React.Component<AboutProps> {
     const requestPath = `/${lang}/about/${aboutItemId}`;
     const pictures = keyword.pictures.map(p => {
       return (
-        <Picture
+        <PictureThumb
           pictures={[p]}
           contentLang={p.content_lang || 'da'}
           showDropShadow={aboutItemId !== 'kalliope'}

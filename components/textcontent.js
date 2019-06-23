@@ -20,8 +20,8 @@ const replaceHyphens = s => {
 };
 
 type TextContentPropsType = {
-  contentHtml: TextContentType,
-  contentLang: TextLang,
+  contentHtml: ?TextContentType,
+  contentLang: ?TextLang,
   lang: Lang,
   options?: TextContentOptions,
   style?: Object,
@@ -31,6 +31,7 @@ type TextContentPropsType = {
 export default class TextContent extends React.Component<TextContentPropsType> {
   static defaultProps = {
     keyPrefix: 'linje-',
+    contentLand: 'da',
   };
   keySeq: number;
 

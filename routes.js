@@ -17,6 +17,7 @@ routes.add('bibliography', '/:lang(da|en)/bibliography/:poetId');
 routes.add('mentions', '/:lang(da|en)/mentions/:poetId');
 routes.add('work', '/:lang(da|en)/work/:poetId/:workId');
 routes.add('text', '/:lang(da|en)/text/:textId');
+routes.add('edit', '/:lang(da|en)/edit/:textId');
 routes.add('keywords', '/:lang(da|en)/keywords');
 routes.add('keyword', '/:lang(da|en)/keyword/:keywordId');
 routes.add('dict', '/:lang(da|en)/dict');

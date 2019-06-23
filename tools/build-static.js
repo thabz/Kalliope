@@ -968,6 +968,7 @@ const handle_text = (
   let content_html = null;
   let has_footnotes = false;
   let toc = null;
+  let rawBody = null;
   if (textType === 'section') {
     // A linkable section with id
     if (title == null) {
@@ -978,7 +979,7 @@ const handle_text = (
   } else {
     // prose or poem
     const body = text.get('body');
-    const rawBody = body
+    rawBody = body
       .toString()
       .replace('<body>', '')
       .replace('</body>', '');
@@ -1024,8 +1025,14 @@ const handle_text = (
       toc,
     },
   };
-  console.log(Paths.textPath(textId));
-  writeJSON(Paths.textPath(textId), text_data);
+
+  const jsonPath = Paths.textPath(textId);
+  console.log(jsonPath);
+  writeJSON(jsonPath, text_data);
+  if (rawBody != null) {
+    const xmlPath = jsonPath.replace(/\.json$/, '.xml');
+    writeText(xmlPath, rawBody);
+  }
 };
 
 // Returns raw {title: string, prefix?: string}

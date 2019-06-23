@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import Picture from '../components/picture.js';
+import PictureThumb from '../components/picture-thumb.js';
 import type {
   Lang,
   Poet,
@@ -111,7 +111,7 @@ export default class PicturesGrid extends React.Component<ArtworkListProps> {
           let pictureRendered = null;
           if (picture != null) {
             pictureRendered = (
-              <Picture
+              <PictureThumb
                 key={'picture-' + picture.src}
                 pictures={[picture]}
                 contentLang={picture.content_lang || 'da'}

@@ -10,8 +10,9 @@ import Nav from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import Tabs from '../components/tabs.js';
 import Heading from '../components/heading.js';
-import PoetName, { poetNameString } from '../components/poetname.js';
-import Picture from '../components/picture.js';
+import PoetName from '../components/poetname.js';
+import { poetNameString } from '../components/poetname-helpers.js';
+import PictureThumb from '../components/picture-thumb.js';
 import * as Sorting from './helpers/sorting.js';
 import * as Strings from './helpers/strings.js';
 import CommonData from '../pages/helpers/commondata.js';
@@ -162,7 +163,7 @@ export default class extends React.Component<PoetLooksProps> {
         };
         const srcPrefix = `/static/images/${poet.id}`;
         item = (
-          <Picture
+          <PictureThumb
             pictures={[picture]}
             lang={lang}
             srcPrefix={srcPrefix}

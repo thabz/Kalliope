@@ -9,9 +9,12 @@ import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
-import { poetNameString, poetLastNameString } from '../components/poetname-helpers.js';
+import {
+  poetNameString,
+  poetLastNameString,
+} from '../components/poetname-helpers.js';
 import WorkName from '../components/workname.js';
-import Picture from '../components/picture.js';
+import PictureThumb from '../components/picture-thumb.js';
 import TextContent from '../components/textcontent.js';
 import SplitWhenSmall from '../components/split-when-small.js';
 import FormattedDate, { parseDate } from '../components/formatteddate.js';
@@ -197,7 +200,7 @@ class PersonPortrait extends React.Component<PersonPortraitProps> {
       return p.primary;
     })[0];
     return (
-      <Picture
+      <PictureThumb
         pictures={portraits}
         startIndex={primaryIndex}
         lang={lang}
@@ -232,7 +235,7 @@ class Timeline extends React.Component<TimelineProps> {
         };
         html = (
           <div style={{ paddingTop: '0.37em' }}>
-            <Picture
+            <PictureThumb
               pictures={[picture]}
               lang={lang}
               contentLang={picture.content_lang || 'da'}

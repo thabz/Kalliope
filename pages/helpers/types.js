@@ -137,7 +137,7 @@ export type PictureItem = {
   content_lang?: TextLang,
   content_html?: TextContentType,
   primary?: boolean,
-  size: ?{ width: number, height: number },
+  size?: ?{ width: number, height: number },
   src: string,
 };
 

@@ -10,6 +10,7 @@ import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
+import TextHeading from '../components/textheading.js';
 import TOC from '../components/toc.js';
 import PoetName from '../components/poetname.js';
 import { poetNameString } from '../components/poetname-helpers.js';
@@ -22,7 +23,7 @@ import TextContent from '../components/textcontent.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import SidebarPictures from '../components/sidebarpictures.js';
-import Picture from '../components/picture.js';
+import PictureThumb from '../components/picture-thumb.js';
 import * as Links from '../components/links';
 import * as Client from './helpers/client.js';
 import * as OpenGraph from './helpers/opengraph.js';
@@ -77,7 +78,7 @@ class KeywordLink extends React.Component<KeywordLinkProps> {
 }
 
 type TextHeadingProps = { text: Text, lang: Lang, isProse: boolean };
-class TextHeading extends React.Component<TextHeadingProps> {
+class PageTextHeading extends React.Component<TextHeadingProps> {
   render() {
     const { text, lang, isProse } = this.props;
 
@@ -143,7 +144,7 @@ type TextComponentProps = {
   next?: PrevNextText,
   error: ?Error,
 };
-export default class extends React.Component<TextComponentProps> {
+export default class TextComponent extends React.Component<TextComponentProps> {
   static async getInitialProps({
     query: { lang, textId, highlight },
   }: {
@@ -229,6 +230,7 @@ export default class extends React.Component<TextComponentProps> {
         <Note className="print-only" key="source" note={note} lang={lang} />
       );
     }
+
     let renderedNotes = null;
     if (notes.length > 0) {
       renderedNotes = <div style={{ marginBottom: '30px' }}>{notes}</div>;
@@ -236,7 +238,7 @@ export default class extends React.Component<TextComponentProps> {
 
     let textPictures = text.pictures.map((p, i) => {
       return (
-        <Picture
+        <PictureThumb
           key={'textpicture' + i}
           pictures={[p]}
           contentLang={p.content_lang || 'da'}
@@ -263,7 +265,7 @@ export default class extends React.Component<TextComponentProps> {
         });
       }
       textPictures.push(
-        <Picture
+        <PictureThumb
           key={'facsimile' + firstPageNumber}
           pictures={facsimilePictures}
           startIndex={firstPageNumber - 1}
@@ -345,6 +347,21 @@ export default class extends React.Component<TextComponentProps> {
       );
     }
 
+    let renderedContactLink = null;
+    if (text.source != null && text.source.facsimilePages != null) {
+      renderedContactLink = (
+        <div className="contact-link">
+          <p>
+            Fandt du en fejl i teksten, kan du hjælpe ved at{' '}
+            <Link to={Links.editURL(lang, text.id)}>
+              <a>indsende en rettelse</a>
+            </Link>
+            .
+          </p>
+        </div>
+      );
+    }
+
     let sidebar = null;
     if (
       refs.length > 0 ||
@@ -353,7 +370,8 @@ export default class extends React.Component<TextComponentProps> {
       text.pictures.length > 0 ||
       notes.length > 0 ||
       text.keywords.length > 0 ||
-      textPictures.length > 0
+      textPictures.length > 0 ||
+      renderedContactLink != null
     ) {
       sidebar = (
         <div>
@@ -363,6 +381,7 @@ export default class extends React.Component<TextComponentProps> {
           {renderedVariants}
           {renderedKeywords}
           {renderedPictures}
+          {renderedContactLink}
         </div>
       );
     }
@@ -452,7 +471,7 @@ export default class extends React.Component<TextComponentProps> {
               <div>
                 <article>
                   <div className="text-content">
-                    <TextHeading
+                    <PageTextHeading
                       text={text}
                       lang={lang}
                       isProse={text.is_prose}
