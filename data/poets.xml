@@ -702,6 +702,26 @@
   <works>1838,1839,1840,1844,1846,andre</works>
 </person>
 
+<person id="gruen" country="un" lang="de" type="poet">
+  <name>
+    <firstname>Anastasius</firstname>
+    <lastname>Grün</lastname>
+    <!-- Primært kendt under sit pseudonym Anastasius Grün -->
+    <christened>Anton Alexander Graf von Auersperg</christened>
+  </name>
+  <period>
+    <born>
+      <date>1806-04-11</date>
+      <place>Laibach, Østrig, (nuværende Ljubljana, Slovenien)</place>
+    </born>
+    <dead>
+      <date>1876-09-12</date>
+      <place>Graz</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="freiligrath" country="de" lang="de" type="poet">
   <name>
     <firstname>Ferdinand</firstname>
@@ -720,6 +740,25 @@
   </period>
   <works>1838,1844,1846,1849,1871,andre</works>
 </person>
+
+<person id="geibel" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Emanuel</firstname>
+    <lastname>Geibel</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1815-10-17</date>
+      <place>Lübeck</place>
+    </born>
+    <dead>
+      <date>1884-04-06</date>
+      <place>Lübeck</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 
 <person id="nietzsche" country="de" lang="de" type="poet">
   <name>
@@ -4183,7 +4222,7 @@
       <place>København</place>
     </dead>
   </period>
-  <works>1891,1893,1894,1896,1897,1900,1903,1907,1922,1929a,1929b</works>
+  <works>1891,1893,1894,1896,1897,1899,1900,1901,1903,1903v,1906,1907,1909,1915,1919,1920,1922,1930</works>
 </person>
 
 <person id="holstein" country="dk" lang="da" type="poet">
@@ -5045,6 +5084,26 @@
   </period>
   <works>1857,1866</works>
 </person>
+
+<person id="bouilhet" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Louis</firstname>
+    <lastname>Bouilhet</lastname>
+    <fullname>Louis Hyacinthe Bouilhet</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1822-05-27</date>
+      <place>Cany-Barville</place>
+    </born>
+    <dead>
+      <date>1869-07-18</date>
+      <place>Rouen</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 
 <person id="mallarme" country="fr" lang="fr" type="poet">
   <name>
@@ -6951,6 +7010,26 @@
   </period>
   <works>1839,1842,1847,1855,1858,1863,1865,andre</works>
 </person>
+
+<person id="houghton" country="en" lang="en" type="poet">
+  <name>
+    <firstname>Lord</firstname>
+    <lastname>Houghton</lastname>
+    <christened>Richard Monckton Milnes</christened>
+  </name>
+  <period>
+    <born>
+      <date>1809-06-19</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1885-08-11</date>
+      <place>Vichy</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 
 <person id="poe" country="us" lang="en" type="poet"> 
   <name>
@@ -9530,6 +9609,7 @@
       <date>1944-06-22</date>
     </dead>
   </period>
+  <works>1902,1906,1911,1915,1915s,1916,1918,1920,1925,1930,1931,1931v,1932,1934,1938</works>
 </person>
 
 <person id="alsted" country="dk" lang="da" type="poet">
