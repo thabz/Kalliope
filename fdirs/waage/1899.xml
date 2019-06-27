@@ -10,7 +10,7 @@
     <pictures>
         <picture src="1899-p1.jpg">Titelbladet til <i>Ungkarl</i> (1899) lyder ,,Erik Waage / Ungkarl / København / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn) / Trykt hos J. Jørgensen &amp; Co. (M. A. Hannover) / 1899''.</picture>
     </pictures>
-    <source facsimile="130023475465_color" facsimile-pages-num="94" facsimile-pages-offset="10">Erik Waage: <i>Ungkarl</i>, Gyldendalske Boghandels Forlag, Kbh., 1899.</source>
+    <source facsimile="130023475465_color" facsimile-pages-num="94" facsimile-pages-offset="6">Erik Waage: <i>Ungkarl</i>, Gyldendalske Boghandels Forlag, Kbh., 1899.</source>
 </workhead>
 <workbody>
 
@@ -363,7 +363,6 @@ virket som Personlighed.
     <linktitle>I gamle Haver</linktitle>
     <firstline>I gamle Haver</firstline>
     <source pages="22-24"/>
-    <!-- TODO: Giv sektionen »Greve« id -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -707,6 +706,12 @@ om Kap med det, jeg snart skal puttes ned i . . .
     <firstline>Spot ærværdige Filistre</firstline>
     <source pages="38"/>
     <!-- TODO: Find Heines tekst. -->
+    <notes>
+        <note>Første gang trykt i <i>Illustreret Tidende</i>, 6. marts 1898 og rettet mod Krøyers maleri <i>Fra Københavns børs</i>.</note>
+    </notes>
+    <pictures>
+        <picture ref="kroyer/1895-fra-koebenhavns-boers"/>
+    </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
