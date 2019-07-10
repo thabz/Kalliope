@@ -461,6 +461,25 @@
   <works>andre</works>
 </person>
 
+<person id="salis" country="un" lang="de" type="poet">
+  <!-- Schweizisk digter -->
+  <name>
+    <firstname>Johann Gaudenz von</firstname>
+    <lastname>Salis-Seewis</lastname>
+    <fullname>Johann Gaudenz Freiherr von Salis-Seewis</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1762-12-26</date>
+      <place>Schloss Bothmar, Malans, Schweiz</place>
+    </born>
+    <dead>
+      <date>1834-01-29</date>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
 <person id="matthisson" country="de" lang="de" type="poet">
   <name>
     <firstname>Friedrich von</firstname>
@@ -2575,7 +2594,7 @@
       <place>Slagelse</place>
     </dead>
   </period>
-  <works>andre</works>
+  <works>1815,andre</works>
 </person>
 
 <person id="staffeldt" country="dk" lang="da" type="poet">
@@ -7008,7 +7027,7 @@
       <place>Cambridge, Mass., USA</place>
     </dead>
   </period>
-  <works>1839,1842,1847,1855,1858,1863,1865,andre</works>
+  <works>1839,1842,1847,1855,1858,1863,1865</works>
 </person>
 
 <person id="houghton" country="en" lang="en" type="poet">
@@ -9856,7 +9875,7 @@
   </period>
 </person>
 
-<person id="calderon" country="un" lang="da" type="poet">
+<person id="calderon" country="un" lang="sp" type="poet">
   <name>
     <firstname>Pedro</firstname>
     <lastname>Calderón de la Barca</lastname>
