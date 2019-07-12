@@ -169,6 +169,7 @@
 'cen/æn',
 'sæne/scene',
 'Sæne/Scene',
+'Nose/Rose',
 'Rost/Røst',
 'Rsst/Røst',
 'Rvst/Røst',

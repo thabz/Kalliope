@@ -56,6 +56,7 @@ end
 @type = 'poem'
 @variant = nil
 @todos = []
+@credits = nil
 @facsimile_page = nil
 
 def printHeader()
@@ -151,11 +152,14 @@ def printPoem()
   if (@type != 'prose')
     puts "    <firstline>#{@firstline}</firstline>"
   end
-  if @notes.length > 0
+  if @notes.length > 0 or @credits
     puts "    <notes>"
     @notes.each { |noteline|
       puts "        <note>#{noteline}</note>"
     }
+    if @credits
+      puts %Q|        <note type="credits">#{@credits}</note>|;
+    end
     puts "    </notes>"
   end
   if @source and @page
@@ -213,6 +217,7 @@ def printPoem()
   @type = 'poem'
   @variant = nil
   @todos = []
+  @credits = nil
   @facsimile_page = nil
   @poemcount += 1
 end
@@ -381,6 +386,8 @@ File.readlines(ARGV[0]).each do |line|
       @event = line.gsub(/^BEGIVENHED:/,'').strip
     elsif line.start_with?("VARIANT:")
       @variant = line[8..-1].strip
+    elsif line.start_with?("CREDITS:")
+      @credits = line[8..-1].strip
     elsif line.start_with?("TODO:")
       @todos.push(line[5..-1].strip)
     elsif line.start_with?("TYPE:")
