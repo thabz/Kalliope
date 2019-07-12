@@ -1,6 +1,10 @@
 #!/usr/bin/ruby
 
+require 'nokogiri'
+
 poetid = ''
+poetsxmlfilename = 'data/poets.xml'
+
 if ARGV.length > 0
     poetid = ARGV[0]
 else
@@ -45,4 +49,28 @@ end
 
 File.open(path, 'w') do |file|
   file.puts lines
+end
+
+# Modify poets.xml
+
+poetsxmlfile = File.read(poetsxmlfilename)
+poetsxml = Nokogiri::XML(poetsxmlfile)
+poetnodes = poetsxml.xpath(".//person[@id=$p]", nil, {:p => poetid})
+
+if poetnodes.empty?
+    abort "Ukendt digter med id #{poetid}"
+end
+
+worksnodes = poetnodes.first.xpath('.//works')
+
+if worksnodes.empty?
+    poetnodes.first.add_child("  <works>#{workId}</works>\n")
+else
+    content = worksnodes.first.content.split(',')
+    content.push(workId)
+    worksnodes.first.content = content.sort.join(',')
+end
+
+File.open(poetsxmlfilename, 'w') do |f|
+    f.write poetsxml.to_xml
 end
