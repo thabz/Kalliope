@@ -4,9 +4,14 @@
 <workhead>
     <title>Arier og andre poetiske Stykker</title>
     <year>1771</year>
+    <pictures>
+        <picture type="titlepage" src="1771-p1.jpg">Titelbladet til <i>Arier og andre poetiske Stykker</i> (1771) lyder ,,Arier / og andre / Poetiske Stykker. // Af / Ambr. Stub. // Kiöbenhavn 1771. / Trykt hos H. J. Graae, boende ved Gammel / Strand.''</picture>
+   </pictures>
     <source facsimile="11540800823B_color" facsimile-pages-num="98" facsimile-pages-offset="4">Ambrosius Stub: <i>Arier og andre poetiske Stykker</i>, T.S. Heiberg, Kbh., 1771.</source>
 </workhead>
 <workbody>
+
+<!-- TODO: Forordet -->
 
 <section level="1">
 <head>
@@ -56,79 +61,78 @@ Det eene, jeg Synder vil viide paa Jord,
 </poem>
 
 <poem id="stub2019061402" variant="stubgudeligea6">
-<!-- 23 -->
 <head>
-   <title>Aria over Luc. II, 29</title>
-   <subtitle>Herre! nu lader du din Tiener fare i Fred</subtitle>
-   <toctitle>Aria over Luc. II, 29</toctitle>
-   <indextitle>Aria over Luc. II, 29</indextitle>
+   <suptitle>Herre! nu lader du din Tiener fare i Fred</suptitle>
+   <title>Aria</title>
    <firstline>Seer jeg Naadens Frelsermand</firstline>
    <notes>
       <note>Cf. <xref bibel="bibellukas02,29"/></note>
    </notes>
    <quality>korrektur1</quality>
+   <source pages="9"/>
 </head>
 <body>
 Seer jeg Naadens Frelsermand,
-  Kan jeg selv min Frelser kiende;
+    Kan jeg selv min Frelser kiende;
 Seer jeg ham i Livets Land,
-  Seer jeg Troens Maal og Ende;
+    Seer jeg Troens Maal og Ende;
 O! hvad seer jeg efter meer?
-  Hvad er her at vente efter?
-Ach, hvi løses ey mit Leer,
-  Som ved Siælens Vinger hæfter!
-Livets Herre! løs min Aand,
-  Riv den ud af Dødens Snare!
+    Hvad er her at vente efter?
+Ach hvi löses ey mit Leer,
+    Som ved Siælens Vinger hæfter,
+Livets Herre! lös min Aand,
+    Riv den ud af Dödens Snare!
 See, der er den i din Haand,
-  Bedre kan den aldrig fare.
+    Bedre kan den aldrig fare.
 </body>
 </poem>
 
 <poem id="stub2019061403" variant="stubgudeligea2">
-<!-- 3 -->
 <head>
-   <title>Aria over 1. Mos, III, 6-24</title>
-   <subtitle>Mel. Søde Jesu, ald min tragten etc.</subtitle>
-   <toctitle>Aria over 1. Mos, III, 6-24</toctitle>
-   <indextitle>Aria over 1. Mos, III, 6-24</indextitle>
-   <firstline>Før din hellig Lyst blev syndig</firstline>
+   <title>Aria</title>
+   <subtitle><i>Mel.</i> Söde Jesu, ald min tragten etc.</subtitle>
+   <firstline>För din hellig Lyst blev syndig</firstline>
    <notes>
       <note>Cf. <xref bibel="bibel1mose3,6-24"/></note>
    </notes>
    <quality>korrektur1</quality>
+   <source pages="10-11"/>
 </head>
 <body>
-Før din hellig Lyst blev syndig
-Ved en frugtbegierlig Tand,
-Prægtig Adam! ach hvor yndig,
-Ach hvor herlig var din Stand!
-  Da sit Sæde
-  Var i Glæde
-Til din blide Skabers Priis;
-  Da du, lydig,
-  Viis og dydig,
-Var Monarch i Paradiis.
+<nonum><center>1.</center></nonum>
+För din hellig Lyst blev syndig
+    Ved en frugtbegierlig Tand;
+Prægtig <i>Adam!</i> ach hvor yndig,
+    Ach hvor herlig var din Stand!
+      Da sit Sæde
+      Var i Glæde
+    Til din blide Skabers Priis;
+      Da du, lydig,
+      Viis og dydig,
+    Var <i>Monarch</i> i <i>Paradiis.</i>
 
-Men du lod dig dog forvilde
-Til at staae en Gud imod,
+<nonum><center>2.</center></nonum>
+Men du lod dig dog forvilde,
+    Til at staae en Gud imod,
 Til at falde og forspilde
-Ald din Herligheds Klenod;
-  Høyheds Tanke
-  Brød den Skranke
-Om det Træ, som Gud forbød;
-  Ach, du spiiste!
-  Vi forliste
-Livet, der du aad din Død.
+    Ald din Herligheds Klenod;
+      Höyheds Tanke
+      Bröd den Skranke
+    Om det Træ, som Gud forböd;
+      Ach: de spiiste!
+      Vi forliste
+    Livet, der du aad din Död.
 
-Adam faldt og vi tillige,
-Her fik Slangen vundet Spil.
-Eden Haven, Ærens Rige
-Luktes for os alle til.
-  Himlens Vrede,
-  Helvedes Heede
-Gnistret af en evig Ild;
-  Men Gud være
-  Evig Ære!
+<nonum><center>3.</center></nonum>
+<i>Adam</i> faldt og vi tillige,
+    Her fik Slangen vundet Spil.
+<i>Edens</i> Haven, Ærens Rige
+    Luktes for os alle til.
+      Himlens Vrede,
+      Helvedes Heede
+    Gnistret af en evig Ild.
+      Men Gud være
+      Evig Ære!
 Han bar Medynk, han blev mild.
 </body>
 </poem>
@@ -140,30 +144,30 @@ Han bar Medynk, han blev mild.
    <subtitle>Aria</subtitle>
    <toctitle>Opreysning i Christo</toctitle>
    <indextitle>Opreysning i Christo</indextitle>
-   <firstline>Høye Gud! vor Fald desværre</firstline>
+   <firstline>Höye Gud! vor Fald desværre</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
-Høye Gud! vor Fald desværre
+Höye Gud! vor Fald desværre
 Giorde dig, vor Naadig Herre, naadig Herre,
     Naadig Herre, vreed;
-Men hvor har du kundet bøye
-Til vor Fald dit Medynks Øye, Medynks Øye,
-    Medynks Øye need?
+Men hvor har du kundet böye
+Til vor Fald dit Medynks Öye, Medynks Öye,
+    Medynks Öye need?
   Fader! du est kiærlig,
   Ja din Sandhed herlig
-    I Sønnen, som
+    I Sönnen, som
     Slog Sathan om,
   Der Tidens Fylde kom.
 
-Løftet efter Bogens Rolde
+Löftet efter Bogens Rolde
 Voldt, at Helveds Hær maae holde :/:
     Hær maae holde Trop;
-Før vi skulle døe saa ilde,
+För vi skulle döe saa ilde,
 Brast i Gud en Livsens Kilde :/:
     Livsens Kilde op;
-  Naaden midt i Nøden
-  Stoed os bie mod Døden;
+  Naaden midt i Nöden
+  Stoed os bie mod Döden;
     Den Gud, der saae,
     Hvordan vi laae,
   Han lod os ey forgaae.
@@ -178,7 +182,7 @@ Brast i Gud en Livsens Kilde :/:
    <title>Aria</title>
    <toctitle>Aria</toctitle>
    <indextitle>Aria</indextitle>
-   <firstline>Bedrøvet Verdens Glæde!</firstline>
+   <firstline>Bedrövet Verdens Glæde!</firstline>
    <notes>
       <note type="credits">Bidrag fra Jan Anton Hartogsveld.</note>
       <note>Kilde er <i>Samlede Digte</i>, v. Henning Fonsmark, Hans Reitzel 1961, pp. 11-12.</note>
@@ -186,27 +190,27 @@ Brast i Gud en Livsens Kilde :/:
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Bedrøvet Verdens Glæde!
-  Saa pak dig flux paa Dør;
+Bedrövet Verdens Glæde!
+  Saa pak dig flux paa Dör;
 Mig lyster nu at græde,
-  For Lysten stak mig før.
-Min Jesu blodig Møye,
-  Hans Angest, Nød og Død
-Staar malet for mit Øye,
-  Og legger det i Blød
+  For Lysten stak mig för.
+Min Jesu blodig Möye,
+  Hans Angest, Nöd og Död
+Staar malet for mit Öye,
+  Og legger det i Blöd
 
-Jeg løb jo selv til Helved
+Jeg löb jo selv til Helved
   Fra Paradiis, men see,
 Min Jesu laae og skiælved
   I sit Gethsemane.
 Jeg tændte selv Guds Vrede,
-  Mens Pinens evig Glød
+  Mens Pinens evig Glöd
 Kom Jesum til at sveede
-  I Striden med min Død.
+  I Striden med min Död.
 
 O see, hvor taus han kunde,
   I min den tabte Sag,
-Fordøye falske Munde
+Fordöye falske Munde
   Og uforskyldte Slag!
 Hans Ansigts Glands og Ære
   Leed Spyt og Spot og Spee,
@@ -215,10 +219,10 @@ I det han vilde tære
 
 O see, han blev jo bunden
   Saa haart med stærke Baand!
-Endskiønt der ey blev funden
+Endskiönt der ey blev funden
   Misgierning i hans Haand.
 Jeg seer min egen Strikke,
-  Hvori han førtes om,
+  Hvori han förtes om,
 Fordi jeg skulle ikke
   Staae bunden for Guds Dom.
 
@@ -233,12 +237,12 @@ Han bar min Hovmods Krone,
 
 O see, hvor slog hans Hierte
   Paa Korset i hans Bryst!
-O! see hans Død og Smerte
+O! see hans Död og Smerte
   For ald min Synd og Lyst
-Bedrøvet Verdens Glæde!
-  Saa pak dig flux paa Dør;
+Bedrövet Verdens Glæde!
+  Saa pak dig flux paa Dör;
 Her lyster mig at græde,
-  For Lysten stak mig før.
+  For Lysten stak mig för.
 </body>
 </poem>
 
@@ -263,35 +267,35 @@ Her lyster mig at græde,
 <body>
 Et varigt Vel er dog engang at finde,
   Hvo hielper da min arme Siæl i Stand!
-Den søger ey, hvad dette Rum har inde,
+Den söger ey, hvad dette Rum har inde,
   Det Blandings-Gods of Ild, Jord, Luft og Vand;
 Naturens alt i alt er intet værd at nævne
   Mod Saligheds Værdi og Naadens rige Evne.
 
 Er Salighed af bare Naade, Naade,
-  Bør Adams Børn døe Døden een og hver,
+  Bör Adams Börn döe Döden een og hver,
 Kan Mennisker da hielpe eller baade,
   Der af sig selv ey kommer Livet nær?
 Ney, under Himlen er et eene Navn befunden,
-  Hvori en Troende kand see sin Nød forsvunden.
+  Hvori en Troende kand see sin Nöd forsvunden.
 
 Ved Jesu Navn forlades alle Synder,
   Ved Jesu Navn udslettes Gielden reent,
 Ved Jesu Navn kom jeg blant dem, Gud ynder,
   Ved Jesu Navn er intet mig formeent;
-Det er ved Jesu Navn, min Bøn af Gud skal høres;
-  Det er i Jesu Navn, min Siel skal saliggøres.
+Det er ved Jesu Navn, min Bön af Gud skal höres;
+  Det er i Jesu Navn, min Siel skal saliggöres.
 
 Du Naadens Aand! Guds Finger! kom at skeive,
   Skriv Jesu Navn dybt i min Siæl og Bryst,
 Lad Jesu Navn der uudslettet blive,
-  Til Hiertet selv af Dødens Haand er kryst;
+  Til Hiertet selv af Dödens Haand er kryst;
 Lad mig her værdelig mit Navn af Christo bære,
   Og faae ved Jesu Navn nyt Navn i evig Ære.
 </body>
 </poem>
 
-<!-- TODO: En Røver, 33-34 -->
+<!-- TODO: En Röver, 33-34 -->
 <!-- TODO: O! Höye Raab, 35-36 -->
 <!-- TODO: Lyksalig endte Dag, 37-38 -->
 
@@ -302,11 +306,11 @@ Lad mig her værdelig mit Navn af Christo bære,
    <subtitle>Aria</subtitle>
    <toctitle>Livet som en Seylads</toctitle>
    <indextitle>Livet som en Seylads</indextitle>
-   <firstline>Hvad vindes ved Verdens vidtløftige Hav?</firstline>
+   <firstline>Hvad vindes ved Verdens vidtlöftige Hav?</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
-Hvad vindes ved Verdens vidtløftige Hav?
+Hvad vindes ved Verdens vidtlöftige Hav?
 O tusinde Farer i skummende Trav!
   Man veed kun to Havne,
   Bekiendte af Navne,
@@ -315,29 +319,29 @@ Den eene vor Vugge, den anden vor Grav.
 Fra Vuggen til Graven maae krydses omkring
 Blant Haabets og Frygtens de stridige Ting.
   Snart vippe vi oppe
-  Paa Bølgernes Toppe,
+  Paa Bölgernes Toppe,
 Snart nermes vi Grunden i flyvende Spring.
 
 Her fristes Ustadigheds Ebbe og Flod,
 En Vagt er saa ond, som en anden er god,
   Hver Time i Glasset;
   Hver Streg paa Compasset,
-Forandrer, forhøyer, fornedrer vort Mod.
+Forandrer, forhöyer, fornedrer vort Mod.
 
-Saa hidser en Medbør det nedrige Sind,
+Saa hidser en Medbör det nedrige Sind,
 Ja puster i Hiertet Dumdristighed ind,
-  Vil Farten kuns føye
-  Vor Attraa og Øye,
-Strax bleses vi op af en ønskelig Vind.
+  Vil Farten kuns föye
+  Vor Attraa og Öye,
+Strax bleses vi op af en önskelig Vind.
 
 Saa slipper Kleinmodighed Roret i Hast;
-Naar Forstavnen dukker for Bølgernes Kast,
+Naar Forstavnen dukker for Bölgernes Kast,
   Naar Vindene suse,
   Og Vandene bruse,
 Saa skrekkes vi strax for en knagende Mast.
 
-Dit Forsyn, o Fader! det fører os hiem,
-Det styrer saa sikkert, hvor Søen er slem,
+Dit Forsyn, o Fader! det förer os hiem,
+Det styrer saa sikkert, hvor Söen er slem,
   Vor Gisning kand feyle,
   Hvor vi end vil peyle;
 Selv stavner vi mere tilbage end frem.
@@ -371,10 +375,10 @@ Du har lovet ey at svige,
       Selv tilstaae
    Saadant holdes kun af faae.
 
-Skal jeg friste større Fare,
-   Sveve mellem Liv og Død,
+Skal jeg friste större Fare,
+   Sveve mellem Liv og Död,
 See da ere Venner Rare,
-   Som man kiender best i Nød;
+   Som man kiender best i Nöd;
       Har Du Mod?
       Ærligt Blod
    Til at staae og holde Foed.
@@ -383,9 +387,9 @@ Vil min Lykke viise Hælen,
    Vender Armod mig sin Taae
 Trænger Mangel ind til Siælen,
    Reeder mig een Seng af Straae,
-      Mon jeg tør
-      Ved Din Dør
-   Vente, hvad du kan og bør?
+      Mon jeg tör
+      Ved Din Dör
+   Vente, hvad du kan og bör?
 
 Fæster Svaghed mig til Sængen,
    Skal jeg blive Skind og Been,
@@ -395,13 +399,13 @@ Visne som en Urt i Engen,
       Komme nær,
    Have en Ælendig kiær?
 
-Hierte Ven saa bør det være,
+Hierte Ven saa bör det være,
    Denne er vor felles Pagt,
 Den skal findes værd at ære,
    Naar den tages vel i Agt,
       Gid den maae
       Varigt staae,
-   Prøven ønskes et at naae.
+   Pröven önskes et at naae.
 </body>
 </poem>
 
@@ -418,8 +422,8 @@ Den skal findes værd at ære,
 Hvad render I Verdens Olympiske Giekke
   Paa Banen, da Kronen er intet bevendt?
 Navnkundighedens Boble kan Tiden jo brække,
-  I vinder kuns Støvet, naar Løbet er endt.
-Bort, skiden Belønning med Skarn og Skade!
+  I vinder kuns Stövet, naar Löbet er endt.
+Bort, skiden Belönning med Skarn og Skade!
   Min Fod skal ey trættes for falmede Glands;
 Min Tinding foragter de visnede Blade;
   Thi Himlen har viist mig en varende Krands.
@@ -440,31 +444,31 @@ Min Tinding foragter de visnede Blade;
 </head>
 <body>
 Medgangs Ven har lært at smiile,
-   Naar min Sol er høy og bliid
+   Naar min Sol er höy og bliid
 Men saa snart den gaar til hviile!
    Kaster Spodskhed Nacken hid.
-O! du Svale føyter bort,
+O! du Svale föyter bort,
 Naar min Dag er kold og kort.
 
-Eed paa løffter, Troe og Love
-   Høres nock af slibrig Mund.
+Eed paa löffter, Troe og Love
+   Höres nock af slibrig Mund.
 Tillid staar saa tit i Vove
    Paa en Muur foruden grund
-O! du Rørstilck har et Kneck,
-Skøndt du synes uden Breck.
+O! du Rörstilck har et Kneck,
+Sköndt du synes uden Breck.
 
 Verden har forgyldt sin Pille:
    Verden skiencker gifft i Vin:
-Verden kand saa høflig drille:
+Verden kand saa höflig drille:
    Verden er saa falsk som fiin.
 O du Slange! Brod og Mord
 Sticker i dit sledske Ord.
 
 Klog og oprigtighed bær Priisen;
    Thi den holder fod og Stand
-Midt paa Bølgen midt paa Iisen,
+Midt paa Bölgen midt paa Iisen,
    Midt igiennem Ild og Vand.
-Søde Phoenix! Modgangs Ven
+Söde Phoenix! Modgangs Ven
    Jeg er ævig din igien!
 </body>
 </poem>
@@ -493,7 +497,7 @@ Men Fundamentet gleed,
 Og Elskov selv fald Ned.
    Oprigtig Dyd! Din Klippe
    Kand aldrig aldrig Glippe,
-Paa den gaaer Ønsket op
+Paa den gaaer Önsket op
 Til Glædens roelig Top.
 
 Saa staaer en Ædel Siæl
@@ -501,8 +505,8 @@ Saa staaer en Ædel Siæl
    Lad heele Resten vanke,
 Og vende mig sin Hæl
 Saa staaer en Ædel Siæl;
-   Bort Skiønhed, som har Pletter
-   Bort løse Ords Raketter,
+   Bort Skiönhed, som har Pletter
+   Bort löse Ords Raketter,
 Bort Pralen med dit Skrald!
 Bort Stolthed med dit Fald!
    Elskværdighed dit Minde
@@ -514,28 +518,28 @@ Du est mig eene kiær.
 
 <poem id="stub2019061412" variant="stub2000082603">
 <head>
-   <title>Eet Roeligt Sinds fornøyelige Tilstand</title>
+   <title>Eet Roeligt Sinds fornöyelige Tilstand</title>
    <subtitle><i>Aria</i></subtitle>
-   <toctitle>Eet Roeligt Sinds fornøyelige Tilstand</toctitle>
-   <indextitle>Eet Roeligt Sinds fornøyelige Tilstand</indextitle>
-   <firstline>Jeg lever jevnt fornøyet foruden store Ting</firstline>
+   <toctitle>Eet Roeligt Sinds fornöyelige Tilstand</toctitle>
+   <indextitle>Eet Roeligt Sinds fornöyelige Tilstand</indextitle>
+   <firstline>Jeg lever jevnt fornöyet foruden store Ting</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
-Jeg lever jevnt fornøyet foruden store Ting,
-Min Foed er Ubemøyet og frie for høye Spring;
-   Ved Jorden er jeg fød,
-   Ved Jorden har jeg Brød,
-Alt vel og Nok, jeg nøyes, jeg nøyes til min Død.
+Jeg lever jevnt fornöyet foruden store Ting,
+Min Foed er Ubemöyet og frie for höye Spring;
+   Ved Jorden er jeg föd,
+   Ved Jorden har jeg Bröd,
+Alt vel og Nok, jeg nöyes, jeg nöyes til min Död.
 
-Lad Hovmod ikkun flyve til Høyheds Firmament,
+Lad Hovmod ikkun flyve til Höyheds Firmament,
 Ærgierrighed maae klyve til ære Ufortiænt,
    Naar Lykkens Torden-Skrald
-   Bestormer høye Hald,
+   Bestormer höye Hald,
 Saa sidder jeg i Dalen og seer paa andres Fald.
 
-For mig maae Vellyst svømme i Honning Dag og Nat,
-Lad Daarlighed i Drømme faae Glæde-Skyggen fat,
+For mig maae Vellyst svömme i Honning Dag og Nat,
+Lad Daarlighed i Drömme faae Glæde-Skyggen fat,
    Naar Lysters usle Træl
    Vil Gremme sig ihiel,
 Saa glædes jeg ved lidet og lider meget vel.
@@ -544,9 +548,9 @@ Lad Gierrighed kun grave ja vraade efter Guld,
 Lad Karrighed kun have sit Giemme Propper fuld,
    Naar hiin har slidt sig varm,
    Og denne giort sig Arm,
-Saa leer jeg ad dem begge fornøyet uden Harm.
+Saa leer jeg ad dem begge fornöyet uden Harm.
 
-O Nøysomhed min Ære! hvis Magt er din vel liig?
+O Nöysomhed min Ære! hvis Magt er din vel liig?
 Ved dig kand Ringhed være ret Agtet, Glad og Riig,
    Forbliv min Vandre-Stav,
    Skriv siden paa Min Grav:
@@ -561,7 +565,7 @@ Her hviiler en lyksalig, trods Lykkens Laan og Krav.
    <indextitle>Den kiedsom Vinter gik sin Gang</indextitle>
    <firstline>Den kiedsom Vinter gik sin Gang</firstline>
    <notes>
-      <note type="credits">Bidrag fra Søren Mogensen.</note>
+      <note type="credits">Bidrag fra Sören Mogensen.</note>
    </notes>
    <quality>korrektur1</quality>
 </head>
@@ -570,7 +574,7 @@ Den kiedsom Vinter gik sin Gang,
 Den Dag saa kort, den Nat saa lang
    Forandrer sig
    Saa lempelig;
-Den barske Vind, den mørke Skye
+Den barske Vind, den mörke Skye
    Maae flye;
 Vor Kakkel-Ovn saa eene staaer,
 Og hver Dags Kolde-Syge faaer.
@@ -579,7 +583,7 @@ Er alt hengt hen og reent foragt,
 Og Muffen er tillige giemt
    Og glemt;
 Man frygter ey, at Snee og Slud
-Skal møde dem, som vil gaae ud;
+Skal möde dem, som vil gaae ud;
    Thi lad os gaae
    At skue paa,
 Hvor smukt Naturen sig beteer
@@ -592,10 +596,10 @@ Med lange Straaler i sit Haar;
 For alle Ting, som nu maa grye
    Paa nye;
 Det klare, lyse Himmelblaae
-Er værd at kaste Øye paa;
+Er værd at kaste Öye paa;
 See Fuglene i Flokke-Tal,
 Luftens viide Sommer-Sal
-De holde snart hvert Øieblik
+De holde snart hvert Öieblik
    Musik;
 De kappes daglig, to og to,
 At bygge, hvor de best kan boe;
@@ -611,26 +615,26 @@ For Bonden, heele Verdens Trel!
 Skal endes med sin Frugtbarhed
    I Fred.
 Hist gaaer de kaade Lam i fleng
-Og spøge i den grønne Eng;
+Og spöge i den grönne Eng;
 De knæle med en Hiertens Lyst
 For Moders mælkefulde Bryst;
-De qvægner ved den søde Taar,
+De qvægner ved den söde Taar,
    De faaer,
 Hist vogter Hyrden Qvæg og Korn;
 Et Hunde-Biæl, en Lyd af Horn
    Er ald hans Spil;
-   Men hører til,
+   Men hörer til,
 Hvor smukt den Skov ham svare maa
    Derpaa.
 
 Ak, see et meget yndigt Syn
-Paa Skovens grønne Øyenbryn!
-   Den høye Top
+Paa Skovens grönne Öyenbryn!
+   Den höye Top
    Skal klædes op,
-Og Vaaren pynter Bøgen ud
+Og Vaaren pynter Bögen ud
    Til Brud.
-Naar Soelen brænder, som en Glød,
-Og stikker Ild i Barm og Skiød,
+Naar Soelen brænder, som en Glöd,
+Og stikker Ild i Barm og Skiöd,
 Da har man jo bag hvert et Blad
 Abskonsel for sin matte Rad;
 Her smager Thee og et Glas Viin
@@ -643,7 +647,7 @@ De raske Dyr vil dandse net
    Og let.
 
 Ak see, hvor speyle-klar og glat
-Den Søe dog er i lave sat;
+Den Söe dog er i lave sat;
    Det er jo, som
    At Solen kom
 Kun for at see sit Skilderie
@@ -651,11 +655,11 @@ Kun for at see sit Skilderie
 Den Fisk, som stak i Dynd og Skarn,
 Og slap fra Frost og Fange-Garn,
 Han faaer nu atter Moed og Liv,
-Og spøger frit i Rør og Siv;
+Og spöger frit i Rör og Siv;
 See hist, hvor stolt hans Finner gaaer,
    Og slaaer.
-Nu lirrer Frøen med sin Mund
-Imod den søvnig Aften-Stund.
+Nu lirrer Fröen med sin Mund
+Imod den sövnig Aften-Stund.
    Jeg tænker paa
    Mit Hviile-Straae,
 Og ender min Spadsere-Gang
@@ -675,7 +679,7 @@ Gud kommer vist min Tarv ihu
    Endnu.
 Han rammer nok den rette Tiid,
 Da Himlen den skal blive bliid;
-   Jeg tør maaskee
+   Jeg tör maaskee
    Vel faae at see
 Min Vinter blive til en Vaar
    I Aar.
@@ -706,7 +710,7 @@ A. E. R. ær, L. I. G. lig, sig ærlig! men det er ret.
 Vor ærlig Meening i begge Hierter har sin Grund
 Til fast Foreening med troefast Haand og Mund
    Læs ret og rigtig: jeg er og bliver dig
-Liig, ærlig, kiærlig, vil du meer, saa lev, og Døe med mig.
+Liig, ærlig, kiærlig, vil du meer, saa lev, og Döe med mig.
 </body>
 </poem>
 
@@ -724,27 +728,27 @@ Liig, ærlig, kiærlig, vil du meer, saa lev, og Døe med mig.
 <body>
    Ey saa hvi tripper du saa fast?
       Hvad stikker dig du pene Pige?
-      At du vil løbe saa og skrige
-   Blot ved et Elskovs Øyekast.
-Jeg ved det smukke Kiøn har Engle-Navn og Ære,
-Men Trold og Biørn og Ulv vil Mandfolk aldrig være,
+      At du vil löbe saa og skrige
+   Blot ved et Elskovs Öyekast.
+Jeg ved det smukke Kiön har Engle-Navn og Ære,
+Men Trold og Biörn og Ulv vil Mandfolk aldrig være,
       Vor Omgang uden Hexe-Kunst
       Har vundet stolte Nymphers Gunst;
-Den største Deylighed med Dyd og god Forstand
+Den störste Deylighed med Dyd og god Forstand
 Naturen dannede til Kiærlighed og Mand.
       Din Moder selv befandt
       At det var sandt.
 
    Betænk, at Ungdom varer kort,
       At yndig Rose snart kand falme,
-      At Skiønhed kan faae Knæk i Qvalme,
+      At Skiönhed kan faae Knæk i Qvalme,
    Og uformærket visne bort.
-Naar Skiønhed borte er, og yndig Skabning saunes,
+Naar Skiönhed borte er, og yndig Skabning saunes,
 Saa leer man af een Rad uværdig til at favnes,
-      Derfore bøi dit Hierte hid,
+      Derfore böi dit Hierte hid,
       Elsk, elsk det er den rette Tiid;
-Naturen gav hvert Kiøn sin Elske-Lyst og Lov,
-Den eene Ungdom har den anden høyt behov;
+Naturen gav hvert Kiön sin Elske-Lyst og Lov,
+Den eene Ungdom har den anden höyt behov;
       Din Moder selv befandt,
       At det var sandt.
 </body>
@@ -763,7 +767,7 @@ Den eene Ungdom har den anden høyt behov;
 </head>
 <body>
 Hver Time er forgyldt, og Viiseren tillige;
-Du Jord-Klimp, hør engang, hvad Guldet her vil sige.
+Du Jord-Klimp, hör engang, hvad Guldet her vil sige.
   Den gyldne Time gik, men kommer aldrig meer;
   - - -
 Blev denne Sandhed nu engang til Hierte tagen,
@@ -786,8 +790,8 @@ Den sterke brænder Blodet,
 Den sterke svekker Modet
 Og giver Hierte-Vee;
 Jeg laver tynd Caffe.
-I Mandfolk! I, der skiønner
-At bruge Sundheds Bønner,
+I Mandfolk! I, der skiönner
+At bruge Sundheds Bönner,
 I see jo meget let,
 At min Maneer er ret;
 Men vil Jurister sætte
@@ -819,7 +823,7 @@ At Medici de vilde
 Engang foreenes om
 At fælde denne Dom:
 I Pigers hvide Arme
-Bør ey den Karl faa Varme,
+Bör ey den Karl faa Varme,
 Der findes kold, som Snee,
 Af sort og stærk Caffe.
 </body>
@@ -838,9 +842,9 @@ Af sort og stærk Caffe.
 Reen Handel og Vandel florere i Landet!
 Forsigtighed lykkes ved Roeret paa Vandet!
   Oprigtighed havne med Gods i Behold!
-Velsignelse følge med alle de Vahre,
+Velsignelse fölge med alle de Vahre,
 Hvis Eiermænd erlig vil unde og svare
-  Den Told, som bør Told!<note>Allusion til <xref bibel="bibelrom13,7"/>.</note>
+  Den Told, som bör Told!<note>Allusion til <xref bibel="bibelrom13,7"/>.</note>
 </body>
 </poem>
 
@@ -858,11 +862,11 @@ Græm dig aldrig, thi det svier,
   Uven griner ad din Vee;
 Spar ey heller, saa du gnier,
   Thi deraf vil Arving lee.
-Uven seer dig helst i Nøden,
-Arving ønsker dig kun Døden;
+Uven seer dig helst i Nöden,
+Arving önsker dig kun Döden;
   - - -
   Vær da vel tilmode,
-  Giør dig selv tilgode,
+  Giör dig selv tilgode,
 Lev og lee dem begge ud.
 </body>
 </poem>
@@ -871,7 +875,7 @@ Lev og lee dem begge ud.
 <!-- 69 -->
 <head>
    <title>Til Major Cramohn</title>
-   <subtitle>just som han kiørte forbi et vist lystigt Selskab med sin Brud, Frøken <i>L'Amare</i>, fra Closteret i Odense</subtitle>
+   <subtitle>just som han kiörte forbi et vist lystigt Selskab med sin Brud, Fröken <i>L'Amare</i>, fra Closteret i Odense</subtitle>
    <toctitle>Til Major Cramohn</toctitle>
    <indextitle>Til Major Cramohn</indextitle>
    <firstline>Ved Vinen den klare</firstline>
@@ -880,11 +884,11 @@ Lev og lee dem begge ud.
 <body>
 Ved Vinen den klare
 Erindres vi nu,
-At Frøken L'Amare
-Bør kommes i hu;
+At Fröken L'Amare
+Bör kommes i hu;
 Du, Closterets Due,
-Fløy parret herfra;
-Af Frøken bliv Frue,
+Flöy parret herfra;
+Af Fröken bliv Frue,
 Af Frue Mama!
 </body>
 </poem>
@@ -922,13 +926,13 @@ Hans Fiender blive sorte!
 Rare Printz! to Rigers Glæde!
 Rare Printz! to Rigers Haab!
 Paa din Vugges Purpur-Klæde
-Brister Ønsket ud i Raab:
-Lev og bliv fornøyet,
-Lev og bliv ophøyet,
+Brister Önsket ud i Raab:
+Lev og bliv fornöyet,
+Lev og bliv ophöyet,
 Lev og bliv din kronet Herkomsts herlig Ziir!
 Vi og vore,
 Smaae og Store
-Ønsker dig din Krone, Throne og dit Spiir.
+Önsker dig din Krone, Throne og dit Spiir.
 </body>
 </poem>
 
@@ -954,16 +958,16 @@ Tager sig dens Væsen Nær.
 Hvor mange have, hvad de vil,
    Og nende ey at nyde noget got,
 Men tit maaske de spare til
-   Et Drog - der giør dem kun i Graven Spot.
+   Et Drog - der giör dem kun i Graven Spot.
       Hvad hialp det, at
       Mand Dag og Nat
          Sleed sig tret
          Og ey met
-Døde bort, og blev forgiet.
+Döde bort, og blev forgiet.
 
-Hvor mange sørger kuns, fordi
-   De kan ey meer, end de behøve, faae!
-Og føyed Himlen dem deri,
+Hvor mange sörger kuns, fordi
+   De kan ey meer, end de behöve, faae!
+Og föyed Himlen dem deri,
    Da skulde heele Verden knap forslaae;
       O Giærig Flok!
       Vi faae vel nok
@@ -973,23 +977,23 @@ Naar vi skal af Verden ud.
 
 Hvor mange stræber kuns at faae,
    Een fattig Titel for en Penge Sum?
-Den vil ved høyre Side gaae,
+Den vil ved höyre Side gaae,
    Som mangen gang er baade blind og dum,
       Men lad dem gaae
       Og tænke paae,
          At vi skal
          Uden Val
-Jevnes i den mørke Dal.
+Jevnes i den mörke Dal.
 
-Du har imidlertid kun Støv,
+Du har imidlertid kun Stöv,
    Kun Skum og Skygge, usle Verdens Ven,
-Dit Velstands Blomster som et Løv,
+Dit Velstands Blomster som et Löv,
    Kand hastig falde af, og smulnes hen,
       Saa est du dog
       Een Giæk, et Drog,
          Som ey veed
          Ret Beskeed,
-Om din Foed i Løbet gleed.
+Om din Foed i Löbet gleed.
 </body>
 </poem>
 
@@ -997,7 +1001,7 @@ Om din Foed i Løbet gleed.
 <!-- 71 -->
 <head>
    <title>Grav-skrift over en Ælling med toe Hoveder</title>
-   <subtitle>fød 1746 in Junio og forvares paa Apoteqvet udi Odense</subtitle>
+   <subtitle>föd 1746 in Junio og forvares paa Apoteqvet udi Odense</subtitle>
    <toctitle>Grav-skrift over en Ælling med toe Hoveder</toctitle>
    <indextitle>Grav-skrift over en Ælling med toe Hoveder</indextitle>
    <firstline>Du lille Ande-Noer!</firstline>
@@ -1006,13 +1010,13 @@ Om din Foed i Løbet gleed.
 </head>
 <body>
 Du lille Ande-Noer!
-Hvi døde du saa snart?
+Hvi döde du saa snart?
 Du burde bleven her
 Til noget stort og rart.
 Dog dette var endda
 Til deels for meget loved,
-Da Lykken føyer dem,
-Der fødes uden Hoved.
+Da Lykken föyer dem,
+Der födes uden Hoved.
 </body>
 </poem>
 
@@ -1098,7 +1102,7 @@ Al Verden blev jo ved dit Bud
   Af intet viid og prægtig;
     Men dette store Alt
     I Omkreds og Gestalt
-  Er dog i Sielens Øye slet
+  Er dog i Sielens Öye slet
   Mod dig, som eene skabte det.
 
 Jeg seer det vidt udstrakte Rum,
@@ -1115,7 +1119,7 @@ Jeg seer en Jord, en grundfæst Bold
 Fyldt op med Forraad tusind Fold
   For alle Liv og Munde;
     Din Rundhed gav mig meer,
-    End jeg fornøden seer;
+    End jeg fornöden seer;
   Men var al Jorden skabt for mig,
   Jeg var dog arm foruden dig.
 
