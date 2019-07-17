@@ -113,7 +113,7 @@ end
 
 def printPoem()
   printHeader()
-  if @facsimile and not @page 
+  if @facsimile and (not @page or @page.strip.length == 0)
       abort "FEJL: Digtet »#{@title}« mangler sideangivelse"
   end
   if @facsimile and @page =~ /\d-$/
