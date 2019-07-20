@@ -9,6 +9,7 @@
     "test-ci": "NODE_ICU_DATA=./node_modules/full-icu jest",
     "flow": "flow",
     "build-static": "node tools/build-static.js",
+    "build-graph": "node tools/build-graph.js",
     "build-static-force-reload": "node tools/build-static.js --force-reload",
     "build-facsimiles": "node tools/build-facsimiles.js",
     "build-facsimiles-old": "node tools/build-facsimiles-old.js"

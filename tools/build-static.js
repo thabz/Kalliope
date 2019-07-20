@@ -773,9 +773,9 @@ const resolve_variants = poemId => {
   return result;
 };
 
-const extract_subtitles = head => {
+const extract_subtitles = (head, tag = 'subtitle') => {
   let subtitles = null;
-  const subtitle = head.get('subtitle');
+  const subtitle = head.get(tag);
   if (subtitle && subtitle.find('line').length > 0) {
     subtitles = subtitle.find('line').map(s => {
       return htmlToXml(
@@ -791,9 +791,9 @@ const extract_subtitles = head => {
   } else if (subtitle) {
     const subtitleString = subtitle
       .toString()
-      .replace('<subtitle>', '')
-      .replace('</subtitle>', '');
-    if (subtitleString.indexOf('<subtitle/>') === -1) {
+      .replace(`<${tag}>`, '')
+      .replace(`</${tag}>`, '');
+    if (subtitleString.indexOf(`<${tag}/>`) === -1) {
       subtitles = [htmlToXml(subtitleString, collected, true)];
     }
   }
@@ -828,7 +828,8 @@ const handle_text = (
   const isFolkevise =
     poetId === 'folkeviser' || (poetId === 'tasso' && workId === '1581');
 
-  let subtitles = extract_subtitles(head);
+  let subtitles = extract_subtitles(head, 'subtitle');
+  let suptitles = extract_subtitles(head, 'suptitle');
 
   let keywordsArray = [];
   if (keywords) {
@@ -1005,6 +1006,7 @@ const handle_text = (
       title_prefix: title.prefix,
       linktitle: replaceDashes(linktitle.title),
       subtitles,
+      suptitles,
       is_prose: text.name() === 'prose',
       text_type: textType,
       has_footnotes,
