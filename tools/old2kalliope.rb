@@ -58,6 +58,7 @@ end
 @todos = []
 @credits = nil
 @facsimile_page = nil
+@lang = nil
 
 def printHeader()
     if @header_printed
@@ -113,7 +114,7 @@ end
 
 def printPoem()
   printHeader()
-  if @facsimile and not @page 
+  if @facsimile and (not @page or @page.strip.length == 0)
       abort "FEJL: Digtet »#{@title}« mangler sideangivelse"
   end
   if @facsimile and @page =~ /\d-$/
@@ -127,8 +128,11 @@ def printPoem()
   if @variant
       variant = " variant=\"#{@variant}\""
   end
+  if @lang
+      lang = " lang=\"#{@lang}\""
+  end
 
-  puts "<#{@type} id=\"#{poemid}\"#{variant}>"
+  puts "<#{@type} id=\"#{poemid}\"#{variant}#{lang}>"
   puts "<head>"
   puts "    <title>#{@title}</title>"
   if @toctitle
@@ -216,6 +220,7 @@ def printPoem()
   @event = nil
   @type = 'poem'
   @variant = nil
+  @lang = nil
   @todos = []
   @credits = nil
   @facsimile_page = nil
@@ -384,6 +389,8 @@ File.readlines(ARGV[0]).each do |line|
       @written = line[9..-1].strip
     elsif line.start_with?("BEGIVENHED:")
       @event = line.gsub(/^BEGIVENHED:/,'').strip
+    elsif line.start_with?("SPROG:")
+      @lang = line.gsub(/^SPROG:/,'').strip
     elsif line.start_with?("VARIANT:")
       @variant = line[8..-1].strip
     elsif line.start_with?("CREDITS:")

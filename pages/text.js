@@ -10,6 +10,8 @@ import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import SubHeading from '../components/subheading.js';
+import Stack from '../components/stack.js';
+import WrapNonEmpty from '../components/wrapnonempty.js';
 import TOC from '../components/toc.js';
 import PoetName from '../components/poetname.js';
 import { poetNameString } from '../components/poetname-helpers.js';
@@ -88,36 +90,44 @@ class TextHeading extends React.Component<TextHeadingProps> {
       className += ' poem';
     }
 
-    let subtitles = null;
-    if (text.subtitles != null) {
-      subtitles = text.subtitles.map((t, i) => {
-        return (
-          <h4 key={i} style={{ lineHeight: '1.6' }}>
-            <TextContent contentHtml={t} lang={lang} />
-          </h4>
-        );
-      });
-    }
+    const subtitles = (text.subtitles || []).map((t, i) => {
+      return (
+        <h4 key={'sub' + i} style={{ lineHeight: '1.6' }}>
+          <TextContent contentHtml={t} lang={lang} />
+        </h4>
+      );
+    });
+    let suptitles = (text.suptitles || []).map((t, i) => {
+      return (
+        <h4 key={'sup' + i} style={{ lineHeight: '1.6' }} className="suptitle">
+          <TextContent contentHtml={t} lang={lang} />
+        </h4>
+      );
+    });
+
     return (
       <div className={className}>
-        <h2>
-          <TextName text={text} />
-        </h2>
-        {subtitles}
+        <Stack spacing="15px">
+          <WrapNonEmpty>{suptitles}</WrapNonEmpty>
+          <h2>
+            <TextName text={text} />
+          </h2>
+          <WrapNonEmpty>{subtitles}</WrapNonEmpty>
+        </Stack>
         <style jsx>{`
           .text-heading :global(h2) {
             line-height: 1.6;
             font-size: 1.4em;
             font-weight: normal;
-            margin: 0 0 15px 0;
             font-style: italic;
+            margin: 0;
             padding: 0;
           }
           .text-heading :global(h4) {
             font-size: 1.05em;
             line-height: 1.6;
             font-weight: normal;
-            margin: 0 0 0px 0;
+            margin: 0;
             padding: 0;
           }
           .text-heading {
