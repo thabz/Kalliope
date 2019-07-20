@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <persons>
 
 <person id="anonym1600uk" country="gb" lang="en" type="collection">
@@ -456,6 +455,25 @@
     <dead>
       <date>1805-05-09</date>
       <place>Weimar</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
+
+<person id="salis" country="un" lang="de" type="poet">
+  <!-- Schweizisk digter -->
+  <name>
+    <firstname>Johann Gaudenz von</firstname>
+    <lastname>Salis-Seewis</lastname>
+    <fullname>Johann Gaudenz Freiherr von Salis-Seewis</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1762-12-26</date>
+      <place>Schloss Bothmar, Malans, Schweiz</place>
+    </born>
+    <dead>
+      <date>1834-01-29</date>
     </dead>
   </period>
   <works>andre</works>
@@ -2575,7 +2593,7 @@
       <place>Slagelse</place>
     </dead>
   </period>
-  <works>andre</works>
+  <works>1815,andre</works>
 </person>
 
 <person id="staffeldt" country="dk" lang="da" type="poet">
@@ -3395,7 +3413,7 @@
       <place>København</place>
     </dead>
   </period>
-  <works>1870</works>
+  <works>1870,1901</works>
 </person>
 
 <person id="hostrup" country="dk" lang="da" type="poet">
@@ -3411,7 +3429,7 @@
     </born>
     <dead>
       <date>1892-11-21</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </dead>
   </period>
   <works>1852,1865,1872,1884,1893,andre</works>
@@ -3522,7 +3540,7 @@
       <place>København</place>
     </dead>
   </period>
-  <works>1840,1851,1852,blandede,andre</works>
+  <works>1840,1846,1851,1852,1877,1879,1888,andre</works>
 </person>
 
 <person id="boegh" country="dk" lang="da" type="poet">
@@ -3888,6 +3906,27 @@
   </period>
   <works>1875,1911,andre</works>
 </person>
+
+<person id="wandallfr" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Frederik</firstname>
+    <lastname>Wandall</lastname>
+    <fullname>Hans Frederik Vilhelm Wandall</fullname>
+    <pseudonym>Erik Dall</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1849-09-10</date>
+      <place>Brahesborg</place>
+    </born>
+    <dead>
+      <date>1917-07-17</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1908</works>
+</person>
+
 
 <person id="dolleris" country="dk" lang="da" type="poet">
   <name>
@@ -4258,7 +4297,7 @@
     </born>
     <dead>
       <date>1907-02-04</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </dead>
   </period>
   <works>1885,1888,1890,1895,1900,1901,1903,1907</works>
@@ -4639,7 +4678,7 @@
       <place>Paris</place>
     </dead>
   </period>
-  <works></works>
+  <works/>
 </person>
 
 <person id="nielsenm" country="dk" lang="da" type="poet">
@@ -5296,7 +5335,7 @@
       <place>København</place>
     </dead>
   </period>
-  <works>1782,andre</works>
+  <works>1774,1775,1778,1778i,1782,1785,1788,andre</works>
 </person>
 
 <person id="frimannph" country="no" lang="no" type="poet">
@@ -5451,6 +5490,7 @@
       <place>Vedbæk ved København</place>
     </dead>
   </period>
+  <works>1836,1837,1842b,1842d,1852,1855,1861,1867,1877</works>
 </person>
 
 <person id="moe" country="no" lang="no" type="poet">
@@ -5627,7 +5667,7 @@
       <place>Christiania</place>
     </dead>
   </period>
-  <works></works>
+  <works/>
 </person>
 
 <person id="kinck" country="no" lang="no" type="poet">
@@ -6262,7 +6302,7 @@
       <place>Raivola, Finland (nu Roshchino, Rusland)</place>
     </dead>
   </period>
-  <works></works>
+  <works/>
 </person>
 
 <person id="boyek" country="se" lang="sv" type="poet">
@@ -6281,7 +6321,7 @@
       <place>Alingsås</place>
     </dead>
   </period>
-  <works></works>
+  <works/>
 </person>
 
 <!-- Engelske digtere -->
@@ -8367,7 +8407,7 @@
     </born>
     <dead>
       <date>1880-03-29</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </dead>
   </period>
 </person>
@@ -9037,7 +9077,7 @@
     </born>
     <dead>
       <date>1869-01-19</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </dead>
   </period>
   <works>1848,1849,1849a</works>
@@ -9219,7 +9259,7 @@
   <period>
     <born>
       <date>1884-12-02</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </born>
     <dead>
       <date>1910-02-27</date>
@@ -9255,11 +9295,11 @@
   <period>
     <born>
       <date>1871-08-29</date>
-      <place>Sankt Thomas i Dansk Vestindien</place>
+      <place inon="on">Sankt Thomas i Dansk Vestindien</place>
     </born>
     <dead>
       <date>1913-11-18</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </dead>
   </period>
   <works>1908</works>
@@ -9424,7 +9464,7 @@
     </born>
     <dead>
       <date>1938-12-13</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </dead>
   </period>
   <works>1891,1898,1902,1906,1910,1915,1916</works>
@@ -9568,7 +9608,7 @@
   <period>
     <born>
       <date>1878-01-30</date>
-      <place>Frederiksberg</place>
+      <place inon="on">Frederiksberg</place>
     </born>
     <dead>
       <date>1943-02-25</date>
@@ -9856,7 +9896,7 @@
   </period>
 </person>
 
-<person id="calderon" country="un" lang="da" type="poet">
+<person id="calderon" country="un" lang="sp" type="poet">
   <name>
     <firstname>Pedro</firstname>
     <lastname>Calderón de la Barca</lastname>
