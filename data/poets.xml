@@ -777,6 +777,25 @@
   <works>andre</works>
 </person>
 
+<person id="fontane" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Theodor</firstname>
+    <lastname>Fontane</lastname>
+    <fullname>Heinrich Theodor Fontane</fullname>
+    <christened>Henri Theodore Fontane</christened>
+  </name>
+  <period>
+    <born>
+      <date>1819-12-30</date>
+      <place>Neuruppin</place>
+    </born>
+    <dead>
+      <date>1898-09-20</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
 
 <person id="nietzsche" country="de" lang="de" type="poet">
   <name>
