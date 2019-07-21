@@ -6247,7 +6247,7 @@
       <place>Stockholm</place>
     </dead>
   </period>
-  <works>1869</works>
+  <works>1869,andre</works>
 </person>
 
 <person id="froeding" country="se" lang="sv" type="poet">
@@ -6980,6 +6980,24 @@
     </dead>
   </period>
   <works>1810,1813,1816,1818,1819,1823,1824,ovs,andre</works>
+</person>
+
+<person id="clare" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Clare</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1793-07-13</date>
+      <place>Helpston</place>
+    </born>
+    <dead>
+      <date>1864-05-20</date>
+      <place>Northampton General Lunatic Asylum</place>
+    </dead>
+  </period>
+  <works>andre</works>
 </person>
 
 <person id="keats" country="gb" lang="en" type="poet">
