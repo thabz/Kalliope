@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="delavigne" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Casimir</firstname>
+    <lastname>Delavigne</lastname>
+    <fullname>Jean-François Casimir Delavigne</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1793-04-04</date>
+      <place>Le Havre</place>
+    </born>
+    <dead>
+      <date>1843-12-11</date>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

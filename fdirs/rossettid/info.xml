@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rossettid" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Dante Gabriel</firstname>
+    <lastname>Rossetti</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1828-05-12</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1882-04-09</date>
+      <place>Birchington-on-Sea, Kent, England</place>
+    </dead>
+  </period>
+  <works>1861,1881</works>
+</person>

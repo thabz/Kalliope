@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bates" country="us" lang="en" type="poet">
+  <name>
+    <firstname>David</firstname>
+    <lastname>Bates</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1809-03-06</date>
+      <place>Indian Hill, Ohio</place>
+    </born>
+    <dead>
+      <date>1870-01-25</date>
+    </dead>
+  </period>
+  <works>1849,1870</works>
+</person>

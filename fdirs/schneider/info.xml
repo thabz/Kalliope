@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="schneider" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Marinus</firstname>
+    <lastname>Schneider</lastname>
+    <fullname>Marinus Martin Sophus Schneider</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1884-12-02</date>
+      <place inon="on">Frederiksberg</place>
+    </born>
+    <dead>
+      <date>1910-02-27</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1909,1917</works>
+</person>

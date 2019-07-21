@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="timm" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>H.A.</firstname>
+    <lastname>Timm</lastname>
+    <fullname>Herman Andreas</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1800-10-28</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1866-11-04</date>
+      <place>Store Magleby</place>
+    </dead>
+  </period>
+</person>

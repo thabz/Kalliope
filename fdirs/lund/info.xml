@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lund" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>J.L.</firstname>
+    <lastname>Lund</lastname>
+    <fullname>Johann Ludewig Gebhard Lund</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1777-10-16</date>
+      <place>Kiel</place>
+    </born>
+    <dead>
+      <date>1867-03-03</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>

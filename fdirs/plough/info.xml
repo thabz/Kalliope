@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="plough" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Carl</firstname>
+    <lastname>Ploug</lastname>
+    <fullname>Parmo Carl Ploug</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1813-10-29</date>
+      <place>Kolding</place>
+    </born>
+    <dead>
+      <date>1894-10-27</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1854,1861,1869,1883,1895,andre</works>
+</person>

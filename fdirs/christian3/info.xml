@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="christian3" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 3.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1503-08-12</date>
+      <place inon="on">Gottorp Slot</place>
+    </born>
+    <coronation>
+      <date>1534-07-04</date>
+    </coronation>
+    <dead>
+      <date>1559-01-01</date>
+      <place>Koldinghus</place>
+    </dead>
+  </period>
+</person>

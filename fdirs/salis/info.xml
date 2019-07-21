@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="salis" country="un" lang="de" type="poet">
+  <!-- Schweizisk digter -->
+  <name>
+    <firstname>Johann Gaudenz von</firstname>
+    <lastname>Salis-Seewis</lastname>
+    <fullname>Johann Gaudenz Freiherr von Salis-Seewis</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1762-12-26</date>
+      <place>Schloss Bothmar, Malans, Schweiz</place>
+    </born>
+    <dead>
+      <date>1834-01-29</date>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

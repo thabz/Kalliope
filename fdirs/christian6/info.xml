@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="christian6" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 6.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1699-11-30</date>
+      <place inon="on">Københavns Slot</place>
+    </born>
+    <coronation>
+      <date>1730-10-12</date>
+    </coronation>
+    <dead>
+      <date>1746-08-06</date>
+      <place inon="on">Hirschholm Slot</place>
+    </dead>
+  </period>
+</person>

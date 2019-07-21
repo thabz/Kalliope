@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="guinizelli" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Guido</firstname>
+    <lastname>Guinizelli</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1230 ca.</date>
+      <place>Bologna</place>
+    </born>
+    <dead>
+      <date>1276</date>
+      <place>Monselice ved Padua</place>
+    </dead>
+  </period>
+</person>

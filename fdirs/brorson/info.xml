@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="brorson" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>H.A.</firstname>
+    <lastname>Brorson</lastname>
+    <fullname>Hans Adolph Brorson</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1694-06-20</date>
+      <place>Randerup</place>
+    </born>
+    <dead>
+      <date>1764-06-03</date>
+      <place>Ribe</place>
+    </dead>
+  </period>
+  <works>1732,1739,1765,andre</works>
+</person>

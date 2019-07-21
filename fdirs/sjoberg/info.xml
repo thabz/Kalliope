@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="sjoberg" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Birger</firstname>
+    <lastname>Sjöberg</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1885-12-06</date>
+      <place>Vänersborg</place>
+    </born>
+    <dead>
+      <date>1929-04-30</date>
+      <place>Växjö</place>
+    </dead>
+  </period>
+  <works>1922,1926,1929,1940,1955,1956</works>
+</person>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="graah" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Jacob</firstname>
+    <lastname>Graah</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1721</date>
+      <place>Rendsborg</place>
+    </born>
+    <dead>
+      <date>1756</date>
+      <place inon="by">skibsforlis på vej hjem fra Kina</place>
+    </dead>
+  </period>
+  <works>1751</works>
+</person>

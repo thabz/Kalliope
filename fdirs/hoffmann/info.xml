@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hoffmann" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Kai</firstname>
+    <lastname>Hoffmann</lastname>
+    <fullname>Kai Anton Carl Nyholm Hoffmann</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1874-08-31</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1949-08-29</date>
+      <place>Lyngby</place>
+    </dead>
+  </period>
+  <works>1899,1902,1905,1907,1911,1913,1915,1918,1919,1920,1921,1923,1926,1926b,1931,1941,1944,1945</works>
+</person>

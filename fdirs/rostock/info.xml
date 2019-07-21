@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rostock" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Mads Pedersen</firstname>
+    <lastname>Rostock</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1655-01-01</date>
+      <place>Ribe</place>
+    </born>
+    <dead>
+      <date>1713-02-24</date>
+      <place>Middelfart</place>
+    </dead>
+  </period>
+  <works>ribe</works>
+</person>
