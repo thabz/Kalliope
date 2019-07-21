@@ -555,11 +555,26 @@ const build_poets_json = collected => {
     };
   };
 
-  let byCountry = new Map();
-  let collected_poets = new Map();
+  let collected_poets = new Map(loadCachedJSON('collected.poets') || []);
+  let found_changes = false;
 
   all_poet_ids().forEach(id => {
-    let doc = loadXMLDoc(`fdirs/${id}/info.xml`);
+    const infoFilename = `fdirs/${id}/info.xml`;
+    if (!fs.existsSync(infoFilename)) {
+      throw new Error(`Missing info.xml in fdirs/${poetId}.`);
+    }
+    const relevantFiles = [
+      infoFilename,
+      `fdirs/${id}/bibliography-primary.xml`,
+      `fdirs/${id}/bibliography-secondary.xml`,
+      `fdirs/${id}/artwork.xml`,
+      `fdirs/${id}/portraits.xml`,
+    ];
+    if (!isFileModified(...relevantFiles)) {
+      return;
+    }
+    found_changes = true;
+    const doc = loadXMLDoc(infoFilename);
     const p = doc.get('//person');
     const country = p.attr('country').value();
     const lang = p.attr('lang').value();
@@ -630,7 +645,6 @@ const build_poets_json = collected => {
       period = null;
     }
 
-    let list = byCountry.get(country) || [];
     let worksArray = works ? works.split(',') : [];
     const has = hasTexts(id, worksArray);
     const poet = {
@@ -658,11 +672,24 @@ const build_poets_json = collected => {
           period.born.date !== '?' &&
           period.dead.date !== '?'),
     };
-    list.push(poet);
-    byCountry.set(country, list);
+    writeJSON(`static/api/${poet.id}.json`, poet);
     collected_poets.set(id, poet);
   });
-  byCountry.forEach((poets, country) => {
+  if (found_changes) {
+    writeCachedJSON('collected.poets', Array.from(collected_poets));
+  }
+  return collected_poets;
+};
+
+const build_poets_by_country_json = collected => {
+  let poetsByCountry = new Map();
+  let hasChangesByCountry = new Map();
+  collected.poets.forEach(poet => {
+    let list = poetsByCountry.get(poet.country) || [];
+    list.push(poet);
+    poetsByCountry.set(poet.country, list);
+  });
+  poetsByCountry.forEach((poets, country) => {
     const sorted = poets.sort((a, b) => {
       return a.id < b.id ? -1 : 1;
     });
@@ -670,11 +697,7 @@ const build_poets_json = collected => {
       poets: sorted,
     };
     writeJSON(`static/api/poets-${country}.json`, data);
-    poets.forEach(poet => {
-      writeJSON(`static/api/${poet.id}.json`, poet);
-    });
   });
-  return collected_poets;
 };
 
 let _all_poet_ids = null;
@@ -694,10 +717,8 @@ const build_poet_workids = () => {
       throw new Error(`Missing info.xml in fdirs/${poetId}.`);
     }
     if (isFileModified(infoFilename)) {
-      console.log(infoFilename);
       const doc = loadXMLDoc(infoFilename);
       const person = doc.get('//person');
-      const poetId = person.attr('id').value();
       const workIds = person.get('works');
       let items = workIds
         ? workIds
@@ -3075,6 +3096,7 @@ collected.workids = b('build_poet_workids', build_poet_workids);
 Object.assign(collected, b('works_first_pass', works_first_pass, collected));
 b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 collected.poets = b('build_poets_json', build_poets_json, collected);
+b('build_poets_by_country_json', build_poets_by_country_json, collected);
 collected.artwork = b('build_artwork', build_artwork, collected);
 b('build_museums', build_museums, collected);
 collected.variants = b('build_variants', build_variants, collected);
@@ -3086,7 +3108,11 @@ b('build_poet_lines_json', build_poet_lines_json, collected);
 b('build_poet_works_json', build_poet_works_json, collected);
 b('works_second_pass', works_second_pass, collected);
 b('build_works_toc', build_works_toc, collected);
-collected.timeline = build_global_timeline(collected);
+collected.timeline = b(
+  'build_global_timeline',
+  build_global_timeline,
+  collected
+);
 b('build_bio_json', build_bio_json, collected);
 b('build_news', build_news, collected);
 b('build_about_pages', build_about_pages, collected);
