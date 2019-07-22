@@ -4,6 +4,8 @@ import {
   loadText,
   fileExists,
 } from '../tools/libs/helpers.js';
+import fs from 'fs';
+
 
 function flatten(arr) {
   return [].concat(...arr);
@@ -43,23 +45,34 @@ const regexps = [
 ];
 
 describe('Check workfiles', () => {
-  const doc = loadXMLDoc('data/poets.xml');
-  let filenames = doc.find('/persons/person').map(person => {
-    const poetId = person.attr('id').value();
-    const workIds = person.get('works');
+  const allPoetIds = fs.readdirSync('fdirs').filter(p => p.indexOf('.') === -1);
+  
+  let filenames = allPoetIds.map(poetId => {
+    const infoFilename = `fdirs/${poetId}/info.xml`;
+    if (!fs.existsSync(infoFilename)) {
+      throw new Error(`Missing info.xml in fdirs/${poetId}.`);
+    }
+    const doc = loadXMLDoc(infoFilename);
+    const person = doc.get('//person');
+    if (person == null) {
+      throw new Error(`${infoFilename} is malformed.`);
+    }
+    const workIds = person[0].get('works');
     let items = workIds
-      ? workIds
-          .toString()
-          .replace('<works>', '')
-          .replace('</works>', '')
-          .replace('<works/>', '')
-          .trim()
-          .split(',')
-          .filter(x => x.length > 0)
-      : [];
+        ? workIds
+            .toString()
+            .replace('<works>', '')
+            .replace('</works>', '')
+            .replace('<works/>', '')
+            .trim()
+            .split(',')
+            .filter(x => x.length > 0)
+        : [];
     return items.map(w => `${poetId}/${w}.xml`);
   });
+
   filenames = flatten(filenames);
+
   filenames.forEach(filename => {
     const fullpath = `fdirs/${filename}`;
     const data = loadText(fullpath);
