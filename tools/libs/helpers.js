@@ -404,7 +404,7 @@ const buildThumbnails = (topFolder, isFileModifiedMethod) => {
         filename.endsWith('.jpg') &&
         !skipRegExps.test(filename)
       ) {
-        if (!isFileModifiedMethod(fullFilename)) {
+        if (isFileModifiedMethod != null && !isFileModifiedMethod(fullFilename)) {
           return;
         }
         CommonData.availableImageFormats.forEach((ext, i) => {
