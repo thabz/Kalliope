@@ -3,7 +3,6 @@
 require 'nokogiri'
 
 poetid = ''
-poetsxmlfilename = 'data/poets.xml'
 
 if ARGV.length > 0
     poetid = ARGV[0]
@@ -51,15 +50,12 @@ File.open(path, 'w') do |file|
   file.puts lines
 end
 
-# Modify poets.xml
+# Modify info.xml
 
-poetsxmlfile = File.read(poetsxmlfilename)
-poetsxml = Nokogiri::XML(poetsxmlfile)
-poetnodes = poetsxml.xpath(".//person[@id=$p]", nil, {:p => poetid})
-
-if poetnodes.empty?
-    abort "Ukendt digter med id #{poetid}"
-end
+infoxmlfilename = "fdirs/#{poetid}/info.xml"
+infoxmlfile = File.read(infoxmlfilename)
+infoxml = Nokogiri::XML(infoxmlfile)
+poetnodes = poetsxml.xpath(".//person")
 
 worksnodes = poetnodes.first.xpath('.//works')
 
@@ -71,6 +67,6 @@ else
     worksnodes.first.content = content.sort.join(',')
 end
 
-File.open(poetsxmlfilename, 'w') do |f|
-    f.write poetsxml.to_xml
+File.open(infoxmlfilename, 'w') do |f|
+    f.write infoxml.to_xml
 end
