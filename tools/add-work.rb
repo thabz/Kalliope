@@ -55,7 +55,7 @@ end
 infoxmlfilename = "fdirs/#{poetid}/info.xml"
 infoxmlfile = File.read(infoxmlfilename)
 infoxml = Nokogiri::XML(infoxmlfile)
-poetnodes = poetsxml.xpath(".//person")
+poetnodes = infoxml.xpath(".//person")
 
 worksnodes = poetnodes.first.xpath('.//works')
 
