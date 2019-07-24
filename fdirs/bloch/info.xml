@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bloch" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>Carl</firstname>
+    <lastname>Bloch</lastname>
+    <fullname>Carl Heinrich Bloch</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1834-05-23</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1890-02-22</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>

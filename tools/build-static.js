@@ -276,7 +276,8 @@ const museums = {
     name: 'Nivaagaards Malerisamling',
   },
   kb: {
-    url: ids => `http://www.kb.dk/images/billed/2010/okt/billeder/object${ids.objId}/da/`,
+    url: ids =>
+      `http://www.kb.dk/images/billed/2010/okt/billeder/object${ids.objId}/da/`,
     name: 'Det kongelige Bibliotek',
   },
   smk: {
@@ -284,7 +285,8 @@ const museums = {
     name: 'Statens Museum for Kunst',
   },
   gleimhaus: {
-    url: ids => `https://www.museum-digital.de/nat/index.php?t=objekt&oges=${ids.objId}`,
+    url: ids =>
+      `https://www.museum-digital.de/nat/index.php?t=objekt&oges=${ids.objId}`,
     name: 'Gleimhaus, Halberstadt',
   },
   ribe: {
@@ -296,14 +298,19 @@ const museums = {
     name: 'Staatliche Museen zu Berlin',
   },
   md: {
-    url: ids => `https://www.museum-digital.de/nat/index.php?t=objekt&oges=${ids.objId}`,
+    url: ids =>
+      `https://www.museum-digital.de/nat/index.php?t=objekt&oges=${ids.objId}`,
   },
   npg: {
-    url: ids => `https://www.npg.org.uk/collections/search/portrait/${ids.objId}`,
+    url: ids =>
+      `https://www.npg.org.uk/collections/search/portrait/${ids.objId}`,
     name: 'National Portrait Gallery, London',
   },
   'natmus.se': {
-    url: ids => `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${ids.objId}&viewType=detailView`,
+    url: ids =>
+      `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${
+        ids.objId
+      }&viewType=detailView`,
   },
   'digitalmuseum.no': {
     url: ids => `https://digitaltmuseum.no/${ids.objId}/maleri`,
@@ -311,14 +318,14 @@ const museums = {
   'digitalmuseum.se': {
     url: ids => `https://digitaltmuseum.se/${ids.objId}/maleri`,
   },
-  'fnm': {
-      name: 'Frederiksborg Nationalhistorisk Museum',
-      url: (ids) => {
-          // invNr må være 'a-841', 'A-841', 'A841', 'A 841'
-        const m = ids.invNr.match(/([a-z]+)[- ]*([0-9]+[a-z]*)/i);
-        return `https://dnm.dk/kunstvaerk/${m[1].toLowerCase()}-${m[2]}/`;
-      }
-  }
+  fnm: {
+    name: 'Frederiksborg Nationalhistorisk Museum',
+    url: ids => {
+      // invNr må være 'a-841', 'A-841', 'A841', 'A 841'
+      const m = ids.invNr.match(/([a-z]+)[- ]*([0-9]+[a-z]*)/i);
+      return `https://dnm.dk/kunstvaerk/${m[1].toLowerCase()}-${m[2]}/`;
+    },
+  },
 };
 
 const get_museum_json = museumId => {
@@ -342,7 +349,7 @@ const build_museum_url = picture => {
   if (museum != null && (invNr != null || objId != null)) {
     const museumObject = museums[museum];
     if (museumObject != null && museumObject.url != null) {
-      return museumObject.url({invNr,objId});
+      return museumObject.url({ invNr, objId });
       return museumObject.url.replace('$objId', objId).replace('$invNr', invNr);
     }
   }
@@ -471,11 +478,11 @@ const build_bio_json = collected => {
     // Skip if all of the participating xml files aren't modified
     if (
       !isFileModified(
-        `data/poets.xml:${poet.id}`,
         'data/events.xml',
         ...collected.workids
           .get(poetId)
           .map(workId => `fdirs/${poet.id}/${workId}.xml`),
+        `fdirs/${poet.id}/info.xml`,
         `fdirs/${poet.id}/events.xml`,
         `fdirs/${poet.id}/portraits.xml`,
         `fdirs/${poet.id}/bio.xml`
@@ -548,14 +555,27 @@ const build_poets_json = collected => {
     };
   };
 
-  let doc = loadXMLDoc('data/poets.xml');
-  const persons = doc.find('//person');
+  let collected_poets = new Map(loadCachedJSON('collected.poets') || []);
+  let found_changes = false;
 
-  let byCountry = new Map();
-  let collected_poets = new Map();
-
-  persons.forEach(p => {
-    const id = p.attr('id').value();
+  all_poet_ids().forEach(id => {
+    const infoFilename = `fdirs/${id}/info.xml`;
+    if (!fs.existsSync(infoFilename)) {
+      throw new Error(`Missing info.xml in fdirs/${poetId}.`);
+    }
+    const relevantFiles = [
+      infoFilename,
+      `fdirs/${id}/bibliography-primary.xml`,
+      `fdirs/${id}/bibliography-secondary.xml`,
+      `fdirs/${id}/artwork.xml`,
+      `fdirs/${id}/portraits.xml`,
+    ];
+    if (!isFileModified(...relevantFiles)) {
+      return;
+    }
+    found_changes = true;
+    const doc = loadXMLDoc(infoFilename);
+    const p = doc.get('//person');
     const country = p.attr('country').value();
     const lang = p.attr('lang').value();
     const type = p.attr('type').value();
@@ -625,7 +645,6 @@ const build_poets_json = collected => {
       period = null;
     }
 
-    let list = byCountry.get(country) || [];
     let worksArray = works ? works.split(',') : [];
     const has = hasTexts(id, worksArray);
     const poet = {
@@ -653,11 +672,24 @@ const build_poets_json = collected => {
           period.born.date !== '?' &&
           period.dead.date !== '?'),
     };
-    list.push(poet);
-    byCountry.set(country, list);
+    writeJSON(`static/api/${poet.id}.json`, poet);
     collected_poets.set(id, poet);
   });
-  byCountry.forEach((poets, country) => {
+  if (found_changes) {
+    writeCachedJSON('collected.poets', Array.from(collected_poets));
+  }
+  return collected_poets;
+};
+
+const build_poets_by_country_json = collected => {
+  let poetsByCountry = new Map();
+  let hasChangesByCountry = new Map();
+  collected.poets.forEach(poet => {
+    let list = poetsByCountry.get(poet.country) || [];
+    list.push(poet);
+    poetsByCountry.set(poet.country, list);
+  });
+  poetsByCountry.forEach((poets, country) => {
     const sorted = poets.sort((a, b) => {
       return a.id < b.id ? -1 : 1;
     });
@@ -665,20 +697,28 @@ const build_poets_json = collected => {
       poets: sorted,
     };
     writeJSON(`static/api/poets-${country}.json`, data);
-    poets.forEach(poet => {
-      writeJSON(`static/api/${poet.id}.json`, poet);
-    });
   });
-  return collected_poets;
+};
+
+let _all_poet_ids = null;
+const all_poet_ids = () => {
+  if (!_all_poet_ids) {
+    _all_poet_ids = fs.readdirSync('fdirs').filter(p => p.indexOf('.') === -1);
+  }
+  return _all_poet_ids;
 };
 
 const build_poet_workids = () => {
   let collected_workids = new Map(loadCachedJSON('collected.workids') || []);
-  if (collected_workids.size === 0 || isFileModified('data/poets.xml')) {
-    collected_workids = new Map();
-    const doc = loadXMLDoc('data/poets.xml');
-    doc.find('/persons/person').forEach(person => {
-      const poetId = person.attr('id').value();
+  let found_changes = false;
+  all_poet_ids().forEach(poetId => {
+    const infoFilename = `fdirs/${poetId}/info.xml`;
+    if (!fs.existsSync(infoFilename)) {
+      throw new Error(`Missing info.xml in fdirs/${poetId}.`);
+    }
+    if (isFileModified(infoFilename)) {
+      const doc = loadXMLDoc(infoFilename);
+      const person = doc.get('//person');
       const workIds = person.get('works');
       let items = workIds
         ? workIds
@@ -687,7 +727,10 @@ const build_poet_workids = () => {
             .filter(x => x.length > 0)
         : [];
       collected_workids.set(poetId, items);
-    });
+      found_changes = true;
+    }
+  });
+  if (found_changes) {
     writeCachedJSON('collected.workids', Array.from(collected_workids));
   }
   return collected_workids;
@@ -809,7 +852,7 @@ const handle_text = (
   section_titles
 ) => {
   if (
-    !isFileModified(`data/poets.xml:${poetId}`, `fdirs/${poetId}/${workId}.xml`)
+    !isFileModified(`fdirs/${poetId}/info.xml`, `fdirs/${poetId}/${workId}.xml`)
   ) {
     return;
   }
@@ -1251,7 +1294,7 @@ const build_global_lines_json = collected => {
       const poet = collected.poets.get(textMeta.poetId);
       if (poet == null) {
         // Ignorer. Dette kan ske når vi skifter mellem branches og digtere
-        // kommer og går fra poets.xml
+        // kommer og går.
         return;
       }
       if (changed_langs[poet.country]) {
@@ -1732,7 +1775,7 @@ const extract_subworks = (poetId, workbody) => {
     const subworkId = safeGetAttr(subworkNode, 'ref');
     const subwork = collected.works.get(`${poetId}/${subworkId}`);
     if (subwork == null) {
-      throw `${poetId}/${subworkId}.xml refereret i hovedfil, men findes ikke. Glemt at tilføje til poets.xml?`;
+      throw `${poetId}/${subworkId}.xml refereret i hovedfil, men findes ikke. Glemt at tilføje til <works> i fdirs/${poetId}/info.xml?`;
     }
     return subwork;
   });
@@ -1840,7 +1883,7 @@ const build_poet_works_json = collected => {
       .map(workId => `fdirs/${poetId}/${workId}.xml`);
     if (
       !isFileModified(
-        `data/poets.xml:${poetId}`,
+        `fdirs/${poetId}/info.xml`,
         `fdirs/${poetId}/artwork.xml`,
         ...workFilenames
       )
@@ -1910,7 +1953,7 @@ const build_poet_lines_json = collected => {
     const filenames = collected.workids
       .get(poetId)
       .map(workId => `fdirs/${poetId}/${workId}.xml`);
-    if (!isFileModified(`data/poets.xml:${poetId}`, ...filenames)) {
+    if (!isFileModified(`fdirs/${poetId}/info.xml`, ...filenames)) {
       return;
     }
 
@@ -2280,7 +2323,6 @@ const build_about_pages = collected => {
       return isFileModified(`fdirs/${key}.xml`);
     })
     .reduce((result, b) => b || result, false);
-  const arePoetsModified = isFileModified('data/poets.xml');
   const folder = 'data/about';
   const filenames = fs
     .readdirSync(folder)
@@ -2291,10 +2333,7 @@ const build_about_pages = collected => {
         json: `static/api/about/${x.replace(/.xml$/, '.json')}`,
       };
     })
-    .filter(
-      paths =>
-        isFileModified(paths.xml) || arePoetsModified || areAnyWorkModified
-    )
+    .filter(paths => isFileModified(paths.xml) || areAnyWorkModified)
     .forEach(paths => {
       let lang = 'da';
       const m = paths.xml.match(/_(..)\.xml$/);
@@ -2363,9 +2402,6 @@ const print_benchmarking_results = () => {
 };
 
 const build_redirects_json = collected => {
-  if (!isFileModified('data/poets.xml')) {
-    return;
-  }
   let redirects = {};
   collected.poets.forEach((poet, poetId) => {
     if (!poet.has_works && !poet.has_artwork) {
@@ -2382,7 +2418,10 @@ const build_todays_events_json = collected => {
       return `fdirs/${poet.id}/portraits.xml`;
     }
   );
-  if (!isFileModified(`data/poets.xml`, ...portrait_descriptions)) {
+  const poet_info_files = Array.from(collected.poets.values()).map(poet => {
+    return `fdirs/${poet.id}/info.xml`;
+  });
+  if (!isFileModified(...poet_info_files, ...portrait_descriptions)) {
     return;
   }
 
@@ -2841,10 +2880,9 @@ const build_artwork = collected => {
   let collected_artwork = new Map(loadCachedJSON('collected.artwork') || []);
   const force_reload = collected_artwork.size == 0;
 
-  const doc = loadXMLDoc('data/poets.xml');
-  doc.find('/persons/person').forEach(person => {
-    const personId = person.attr('id').value();
-    const personType = person.attr('type').value();
+  collected.poets.forEach(person => {
+    const personId = person.id;
+    const personType = person.type;
     const artworkFilename = `fdirs/${personId}/artwork.xml`;
     const portraitsFile = `fdirs/${personId}/portraits.xml`;
 
@@ -3058,6 +3096,7 @@ collected.workids = b('build_poet_workids', build_poet_workids);
 Object.assign(collected, b('works_first_pass', works_first_pass, collected));
 b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 collected.poets = b('build_poets_json', build_poets_json, collected);
+b('build_poets_by_country_json', build_poets_by_country_json, collected);
 collected.artwork = b('build_artwork', build_artwork, collected);
 b('build_museums', build_museums, collected);
 collected.variants = b('build_variants', build_variants, collected);
@@ -3069,7 +3108,11 @@ b('build_poet_lines_json', build_poet_lines_json, collected);
 b('build_poet_works_json', build_poet_works_json, collected);
 b('works_second_pass', works_second_pass, collected);
 b('build_works_toc', build_works_toc, collected);
-collected.timeline = build_global_timeline(collected);
+collected.timeline = b(
+  'build_global_timeline',
+  build_global_timeline,
+  collected
+);
 b('build_bio_json', build_bio_json, collected);
 b('build_news', build_news, collected);
 b('build_about_pages', build_about_pages, collected);

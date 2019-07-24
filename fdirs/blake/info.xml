@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="blake" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>William</firstname>
+    <lastname>Blake</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1757-11-28</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1827-08-12</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>inno,1790,expe,1804a,1804</works>
+</person>

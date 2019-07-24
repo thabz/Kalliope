@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="baudelaire" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Charles</firstname>
+    <lastname>Baudelaire</lastname>
+    <fullname>Charles-pierre Baudelaire</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1821-04-09</date>
+      <place>Paris</place>
+    </born>
+    <dead>
+      <date>1867-08-31</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <works>1857,1866</works>
+</person>

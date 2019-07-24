@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="dam" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johannes</firstname>
+    <lastname>Dam</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1866-04-29</date>
+      <place>Aalborg</place>
+    </born>
+    <dead>
+      <date>1926-01-09</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>michelangelo,1915,1918,1926</works>
+</person>

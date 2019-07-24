@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="gruen" country="un" lang="de" type="poet">
+  <name>
+    <firstname>Anastasius</firstname>
+    <lastname>Grün</lastname>
+    <!-- Primært kendt under sit pseudonym Anastasius Grün -->
+    <christened>Anton Alexander Graf von Auersperg</christened>
+  </name>
+  <period>
+    <born>
+      <date>1806-04-11</date>
+      <place>Laibach, Østrig, (nuværende Ljubljana, Slovenien)</place>
+    </born>
+    <dead>
+      <date>1876-09-12</date>
+      <place>Graz</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

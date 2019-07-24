@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="longfellow" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Henry Wadsworth</firstname>
+    <lastname>Longfellow</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1807-02-27</date>
+      <place>Portland, Mass. (nu i Maine), USA</place>
+    </born>
+    <dead>
+      <date>1882-03-24</date>
+      <place>Cambridge, Mass., USA</place>
+    </dead>
+  </period>
+  <works>1839,1842,1847,1855,1858,1863,1865,andre</works>
+</person>

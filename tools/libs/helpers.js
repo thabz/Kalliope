@@ -113,7 +113,7 @@ const replaceDashes = html => {
       .replace(/ -$/gm, ' —')
       .replace(/ -([\!;\?\.»«,:\n])/g, / —$1/)
       .replace(/ \. \. \./gm, '&nbsp;.&nbsp;.&nbsp;.') // Undgå ombrydning af ". . ."
-      .replace(/ —/g,'&nbsp;—') // Undgå tankestreger som ombrydes til sin egen linje
+      .replace(/ —/g, '&nbsp;—') // Undgå tankestreger som ombrydes til sin egen linje
   );
 };
 
@@ -379,7 +379,7 @@ const resizeImage = (inputfile, outputfile, maxWidth) => {
   resizeImageQueue.push({ inputfile, outputfile, maxWidth });
 };
 
-const buildThumbnails = (topFolder, isFileModified) => {
+const buildThumbnails = (topFolder, isFileModifiedMethod) => {
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
 
@@ -392,6 +392,9 @@ const buildThumbnails = (topFolder, isFileModified) => {
       return;
     }
     fs.readdirSync(dirname).forEach(filename => {
+      if (filename === 't') {
+        return;
+      }
       const fullFilename = path.join(dirname, filename);
       const stats = fs.statSync(fullFilename);
       if (stats.isDirectory()) {
@@ -401,16 +404,16 @@ const buildThumbnails = (topFolder, isFileModified) => {
         filename.endsWith('.jpg') &&
         !skipRegExps.test(filename)
       ) {
+        if (isFileModifiedMethod != null && !isFileModifiedMethod(fullFilename)) {
+          return;
+        }
         CommonData.availableImageFormats.forEach((ext, i) => {
           CommonData.availableImageWidths.forEach(width => {
             const outputfile = fullFilename
               .replace(/\.jpg$/, `-w${width}.${ext}`)
               .replace(/\/([^\/]+)$/, '/t/$1');
             safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-            if (
-              (isFileModified != null && isFileModified(fullFilename)) ||
-              !fileExists(outputfile)
-            ) {
+            if (!fileExists(outputfile)) {
               resizeImage(fullFilename, outputfile, width);
             }
           });

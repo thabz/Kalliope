@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="roemer" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Ole</firstname>
+    <lastname>Rømer</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1644-09-25</date>
+      <place>Århus</place>
+    </born>
+    <dead>
+      <date>1710-09-19</date>
+      <place>Kbh.</place>
+    </dead>
+  </period>
+</person>

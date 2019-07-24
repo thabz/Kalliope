@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="magnusson" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Finnur</firstname>
+    <lastname>Magnússon</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1781-08-27</date>
+      <place>Skålholt, Island</place>
+    </born>
+    <dead>
+      <date>1847-12-24</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

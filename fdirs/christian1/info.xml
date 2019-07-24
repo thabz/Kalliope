@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="christian1" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 1.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1426</date>
+    </born>
+    <coronation>
+      <date>1448-09-01</date>
+    </coronation>
+    <dead>
+      <date>1481-05-21</date>
+      <place inon="on">København Slot</place>
+    </dead>
+  </period>
+</person>

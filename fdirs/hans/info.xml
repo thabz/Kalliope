@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hans" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Hans</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1455-02-02</date>
+      <place inon="on">Aalborghus Slot</place>
+    </born>
+    <coronation>
+      <date>1481-05-21</date>
+    </coronation>
+    <dead>
+      <date>1513-02-20</date>
+      <place inon="on">Aalborghus Slot</place>
+    </dead>
+  </period>
+</person>

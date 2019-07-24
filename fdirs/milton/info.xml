@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="milton" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Milton</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1608-12-09</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1674-11-08</date>
+      <place>Chalfont St. Giles, Buckinghamshire, England</place>
+    </dead>
+  </period>
+  <works>1667,1671,1671s</works>
+</person>

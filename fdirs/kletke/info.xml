@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="kletke" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Hermann</firstname>
+    <lastname>Kletke</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1813-03-14</date>
+      <place>Breslau</place>
+    </born>
+    <dead>
+      <date>1886-05-02</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

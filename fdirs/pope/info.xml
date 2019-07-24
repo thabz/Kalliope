@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="pope" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Alexander</firstname>
+    <lastname>Pope</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1688-05-21</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1744-05-30</date>
+      <place>Twickenham, England</place>
+    </dead>
+  </period>
+  <works>andre,1733,1714</works>
+</person>
