@@ -53,7 +53,7 @@ end
 @poetFolder = "fdirs/#{@poetId}"
 @wantsAndreXml = isYes(@fieldvalues['andre.xml (Y/n)'])
 @wantsPortraitsXml = isYes(@fieldvalues['portraits.xml (Y/n)'])
-@fullname = wrapInTag(@fieldvalues['Fulde navn'], 'fullname', '      ')
+@fullname = wrapInTag(@fieldvalues['Fulde navn'], 'fullname', '    ')
 @birthplace = wrapInTag(@fieldvalues['Fødested'], 'place', '      ')
 @deathplace = wrapInTag(@fieldvalues['Dødssted'], 'place', '      ')
 
@@ -69,7 +69,7 @@ end
 <person id="#{@poetId}" country="#{@country}" lang="#{@lang}" type="poet">
   <name>
     <firstname>#{@fieldvalues['Fornavn']}</firstname>
-    <lastname>#{@fieldvalues['Fornavn']}</lastname>#{@fullname}
+    <lastname>#{@fieldvalues['Efternavn']}</lastname>#{@fullname}
   </name>
   <period>
     <born>
