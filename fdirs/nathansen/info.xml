@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="nathansen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Henri</firstname>
+    <lastname>Nathansen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1868-07-17</date>
+      <place>Hjørring</place>
+    </born>
+    <dead>
+      <date>1944-02-16</date>
+      <place>Lund</place>
+    </dead>
+  </period>
+  
+  <works>1928,1951</works>
+</person>
