@@ -22,7 +22,6 @@ const {
   replaceDashes,
   imageSizeSync,
   buildThumbnails,
-  resizeImage,
 } = require('./libs/helpers.js');
 const {
   all_poet_ids,
@@ -35,6 +34,7 @@ const {
 } = require('./build-static/dict.js');
 const { safeGetText, safeGetAttr } = require('./build-static/xml.js');
 const { build_sitemap_xml } = require('./build-static/sitemap.js');
+const { build_keywords } = require('./build-static/keywords.js');
 const { build_portraits_json } = require('./build-static/portraits.js');
 const { build_todays_events_json } = require('./build-static/today.js');
 const {
@@ -53,6 +53,7 @@ const {
   primaryTextVariantId,
 } = require('./build-static/variants.js');
 const { build_artwork } = require('./build-static/artwork.js');
+const { flushImageSizeCache } = require('./build-static/image.js');
 const {
   poetName,
   workName,
@@ -66,6 +67,10 @@ const {
   build_museums,
   build_museum_url,
 } = require('./build-static/museums.js');
+const {
+  b,
+  print_benchmarking_results,
+} = require('./build-static/benchmarking.js');
 const { build_works_toc, build_section_toc } = require('./build-static/toc.js');
 const { update_elasticsearch } = require('./build-static/elastic.js');
 const { build_textrefs } = require('./build-static/textrefs.js');
@@ -827,73 +832,6 @@ const build_poet_works_json = collected => {
   });
 };
 
-const build_keywords = () => {
-  safeMkdir('static/api/keywords');
-  let collected_keywords = new Map(loadCachedJSON('collected.keywords') || []);
-  const folder = 'data/keywords';
-  const filenames = fs
-    .readdirSync(folder)
-    .filter(x => x.endsWith('.xml'))
-    .map(x => `${folder}/${x}`);
-  if (collected_keywords.size === 0 || isFileModified(...filenames)) {
-    collected_keywords = new Map();
-    let keywords_toc = new Array();
-    filenames.map(path => {
-      if (!path.endsWith('.xml')) {
-        return;
-      }
-      const doc = loadXMLDoc(path);
-      const keyword = doc.get('//keyword');
-      const head = keyword.get('head');
-      const body = keyword.get('body');
-      const id = keyword.attr('id').value();
-      const is_draft =
-        keyword.attr('draft') != null
-          ? keyword.attr('draft').value() === 'true'
-          : false;
-      const title = head.get('title').text();
-      const pictures = get_pictures(
-        head,
-        '/static/images/keywords',
-        path,
-        collected
-      );
-      const author = safeGetText(head, 'author');
-      const rawBody = body
-        .toString()
-        .replace('<body>', '')
-        .replace('</body>', '');
-      const content_html = htmlToXml(rawBody, collected);
-      const has_footnotes =
-        rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
-      const data = {
-        id,
-        title,
-        is_draft,
-        author,
-        pictures,
-        has_footnotes,
-        content_lang: 'da',
-        content_html,
-      };
-      keywords_toc.push({
-        id,
-        title,
-        is_draft,
-      });
-      const outFilename = `static/api/keywords/${id}.json`;
-      console.log(outFilename);
-      writeJSON(outFilename, data);
-      collected_keywords.set(id, { id, title });
-    });
-    writeCachedJSON('collected.keywords', Array.from(collected_keywords));
-    const outFilename = `static/api/keywords.json`;
-    console.log(outFilename);
-    writeJSON(outFilename, keywords_toc);
-  }
-  return collected_keywords;
-};
-
 const build_news = collected => {
   ['da', 'en'].forEach(lang => {
     const path = `data/news_${lang}.xml`;
@@ -1001,24 +939,6 @@ const build_about_pages = collected => {
     });
 };
 
-let b_results = [];
-// Benchmarking
-const b = (name, f, args) => {
-  const beforeMillis = Date.now();
-  const result = f(args);
-  const afterMillis = Date.now();
-  b_results.push({ name, millis: afterMillis - beforeMillis });
-  return result;
-};
-const print_benchmarking_results = () => {
-  let sum = 0;
-  b_results.forEach(r => {
-    sum += r.millis;
-    console.log(`${r.name}: ${r.millis}ms`);
-  });
-  console.log(`sum: ${sum}ms`);
-};
-
 const build_redirects_json = collected => {
   let redirects = {};
   collected.poets.forEach((poet, poetId) => {
@@ -1048,7 +968,7 @@ collected.variants = b('build_variants', build_variants, collected);
 b('build_mentions_json', build_mentions_json, collected);
 collected.textrefs = b('build_textrefs', build_textrefs, collected);
 build_dict_first_pass(collected);
-collected.keywords = b('build_keywords', build_keywords);
+collected.keywords = b('build_keywords', build_keywords, collected);
 b('build_poet_lines_json', build_poet_lines_json, collected);
 b('build_poet_works_json', build_poet_works_json, collected);
 b('works_second_pass', works_second_pass, collected);
@@ -1071,4 +991,5 @@ b('build_image_thumbnails', build_image_thumbnails);
 b('update_elasticsearch', update_elasticsearch, collected);
 
 refreshFilesModifiedCache();
+flushImageSizeCache();
 print_benchmarking_results();

@@ -6,7 +6,6 @@ const async = require('async');
 const path = require('path');
 const sharp = require('sharp');
 const CommonData = require('../../pages/helpers/commondata.js');
-const deasync = require('deasync');
 
 const safeMkdir = dirname => {
   try {
@@ -327,21 +326,8 @@ const htmlToXml = (
   return lines;
 };
 
-const imageSizeAsync = (filename, callback) => {
-  if (!fileExists(filename)) {
-    const error = `image size failed for file: ${filename}`;
-    throw error;
-  }
-  sharp(filename)
-    .metadata()
-    .then(metadata => {
-      callback(null, { width: metadata.width, height: metadata.height });
-    });
-};
-
-const imageSizeSync = deasync(imageSizeAsync);
-
 let resizeImageQueue = async.queue((task, callback) => {
+  console.log('Resize image ' + task.inputfile);
   sharp(task.inputfile)
     .resize(task.maxWidth, 10000)
     .max()
@@ -420,7 +406,6 @@ module.exports = {
   loadXMLDoc,
   htmlToXml,
   replaceDashes,
-  imageSizeSync,
   buildThumbnails,
   resizeImage,
 };

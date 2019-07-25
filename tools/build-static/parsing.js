@@ -1,5 +1,5 @@
 const entities = require('entities');
-const { htmlToXml, imageSizeSync } = require('../libs/helpers.js');
+const { htmlToXml } = require('../libs/helpers.js');
 const {
   build_museum_link,
   build_museum_url,
@@ -7,6 +7,7 @@ const {
 } = require('./museums.js');
 const { safeGetText, safeGetAttr } = require('./xml.js');
 const { poetName } = require('./formatting.js');
+const { imageSizeSync } = require('./image.js');
 
 // Returns raw {title: string, prefix?: string}
 // Both can be converted to xml using htmlToXml(...)

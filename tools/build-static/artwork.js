@@ -1,10 +1,11 @@
-const { loadXMLDoc, htmlToXml, imageSizeSync } = require('../libs/helpers.js');
+const { loadXMLDoc, htmlToXml } = require('../libs/helpers.js');
 const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
   markFileDirty,
 } = require('../libs/caching.js');
+const { imageSizeSync } = require('./image.js');
 const { safeGetAttr } = require('./xml.js');
 const { get_picture } = require('./parsing.js');
 const {
