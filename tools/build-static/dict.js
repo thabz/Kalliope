@@ -3,6 +3,12 @@ const {
   loadCachedJSON,
   writeCachedJSON,
 } = require('../libs/caching.js');
+const {
+  safeMkdir,
+  loadXMLDoc,
+  writeJSON,
+  htmlToXml,
+} = require('../libs/helpers.js');
 
 const build_dict_first_pass = collected => {
   const path = `data/dict.xml`;

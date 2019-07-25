@@ -63,7 +63,7 @@ const build_section_toc = section => {
   return toc;
 };
 
-const extract_subworks = (poetId, workbody) => {
+const extract_subworks = (poetId, workbody, collected) => {
   return workbody.find('//subwork').map(subworkNode => {
     const subworkId = safeGetAttr(subworkNode, 'ref');
     const subwork = collected.works.get(`${poetId}/${subworkId}`);
@@ -102,7 +102,7 @@ const build_works_toc = collected => {
       };
     }
     let toc = build_section_toc(workbody);
-    let subworks = extract_subworks(poetId, workbody);
+    let subworks = extract_subworks(poetId, workbody, collected);
     return { lines, toc, subworks, notes, pictures };
   };
 
