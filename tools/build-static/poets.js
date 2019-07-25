@@ -6,10 +6,12 @@ const {
 } = require('../libs/caching.js');
 const {
   fileExists,
+  safeMkdir,
   writeJSON,
   loadXMLDoc,
   safeGetText,
   safeGetAttr,
+  resizeImage,
 } = require('../libs/helpers.js');
 
 const create_poet_square_thumb = (poetId, square_path) => {
