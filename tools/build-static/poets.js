@@ -11,7 +11,7 @@ const {
   loadXMLDoc,
   resizeImage,
 } = require('../libs/helpers.js');
-const { safeGetText, safeGetAttr } = require('./xml.js');
+const { safeGetText, safeGetAttr } = require('./parsing.js');
 
 const create_poet_square_thumb = (poetId, square_path) => {
   const path = `static/images/${poetId}/${square_path}`;

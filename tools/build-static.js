@@ -5,7 +5,6 @@ const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
 const Paths = require('../pages/helpers/paths.js');
 const CommonData = require('../pages/helpers/commondata.js');
-const ics = require('ics');
 const {
   isFileModified,
   markFileDirty,
@@ -35,11 +34,14 @@ const {
   build_dict_second_pass,
 } = require('./build-static/dict.js');
 const { safeGetText, safeGetAttr } = require('./build-static/xml.js');
+const { build_sitemap_xml } = require('./build-static/sitemap.js');
+const { build_portraits_json } = require('./build-static/portraits.js');
+const { build_todays_events_json } = require('./build-static/today.js');
 const {
+  extractDates,
   extractTitle,
   get_notes,
   get_pictures,
-  get_picture,
 } = require('./build-static/parsing.js');
 const {
   build_person_or_keyword_refs,
@@ -50,6 +52,7 @@ const {
   resolve_variants,
   primaryTextVariantId,
 } = require('./build-static/variants.js');
+const { build_artwork } = require('./build-static/artwork.js');
 const {
   poetName,
   workName,
@@ -65,6 +68,8 @@ const {
 } = require('./build-static/museums.js');
 const { build_works_toc, build_section_toc } = require('./build-static/toc.js');
 const { update_elasticsearch } = require('./build-static/elastic.js');
+const { build_textrefs } = require('./build-static/textrefs.js');
+const { build_anniversaries_ical } = require('./build-static/ical.js');
 const {
   build_global_timeline,
   build_poet_timeline_json,
@@ -83,39 +88,6 @@ let collected = {
 
 // Ready after second pass
 let collected_works = new Map();
-
-const build_portraits_json = (poet, collected) => {
-  let result = [];
-  if (!poet.has_portraits) {
-    return result;
-  }
-  const doc = loadXMLDoc(`fdirs/${poet.id}/portraits.xml`);
-  if (doc != null) {
-    onError = message => {
-      throw `fdirs/${poet.id}/portraits.xml: ${message}`;
-    };
-    result = doc.find('//pictures/picture').map(picture => {
-      picture = get_picture(
-        picture,
-        `/static/images/${poet.id}`,
-        collected,
-        onError
-      );
-      if (picture == null) {
-        onError('har et billede uden src- eller ref-attribut.');
-      }
-      return picture;
-    });
-    const primaries = result.filter(p => p.primary);
-    if (primaries.length > 1) {
-      onError('har flere primary');
-    }
-    if (primaries.length == 0) {
-      onError('mangler primary');
-    }
-  }
-  return result;
-};
 
 const build_bio_json = collected => {
   collected.poets.forEach((poet, poetId) => {
@@ -611,17 +583,6 @@ const handle_work = work => {
   return { lines, toc, notes, pictures };
 };
 
-const extractDates = head => {
-  const dates = head.get('dates');
-  const result = {};
-  if (dates != null) {
-    result.published = safeGetText(dates, 'published');
-    result.event = safeGetText(dates, 'event');
-    result.written = safeGetText(dates, 'written');
-  }
-  return result;
-};
-
 // Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
 const works_first_pass = collected => {
@@ -799,49 +760,6 @@ const works_second_pass = collected => {
       doc = null;
     });
   });
-};
-
-const build_textrefs = collected => {
-  let textrefs = new Map(loadCachedJSON('collected.textrefs') || []);
-  const force_reload = textrefs.size == 0;
-  let found_changes = false;
-  const regexps = [
-    /xref\s.*?poem="([^",]*)/g,
-    /a\s.*?poem="([^",]*)/g,
-    /xref bibel="([^",]*)/g,
-  ];
-  collected.poets.forEach((poet, poetId) => {
-    collected.workids.get(poetId).forEach(workId => {
-      const filename = `fdirs/${poetId}/${workId}.xml`;
-      if (!force_reload && !isFileModified(filename)) {
-        return;
-      } else {
-        found_changes = true;
-      }
-      let doc = loadXMLDoc(filename);
-      const texts = doc.find('//poem|//prose');
-      texts.forEach(text => {
-        const notes = text.find('head/notes/note|body//footnote|body//note');
-        notes.forEach(note => {
-          regexps.forEach(regexp => {
-            while ((match = regexp.exec(note.toString())) != null) {
-              const fromId = text.attr('id').value();
-              const toId = match[1];
-              const array = textrefs.get(toId) || [];
-              if (array.indexOf(fromId) === -1) {
-                array.push(fromId);
-              }
-              textrefs.set(toId, array);
-            }
-          });
-        });
-      });
-    });
-  });
-  if (found_changes) {
-    writeCachedJSON('collected.textrefs', Array.from(textrefs));
-  }
-  return textrefs;
 };
 
 const build_poet_works_json = collected => {
@@ -1112,461 +1030,9 @@ const build_redirects_json = collected => {
   writeJSON('static/api/redirects.json', redirects);
 };
 
-const build_todays_events_json = collected => {
-  const portrait_descriptions = Array.from(collected.poets.values()).map(
-    poet => {
-      return `fdirs/${poet.id}/portraits.xml`;
-    }
-  );
-  const poet_info_files = Array.from(collected.poets.values()).map(poet => {
-    return `fdirs/${poet.id}/info.xml`;
-  });
-  if (!isFileModified(...poet_info_files, ...portrait_descriptions)) {
-    return;
-  }
-
-  const langs = ['da', 'en'];
-
-  safeMkdir('static/api/today');
-  langs.forEach(lang => {
-    safeMkdir(`static/api/today/${lang}`);
-  });
-
-  const collected_events = new Map();
-
-  const add_event = (lang, monthAndDay, event) => {
-    const key = `${lang}-${monthAndDay}`;
-    let items = collected_events.get(key) || [];
-    items.push(event);
-    collected_events.set(key, items);
-  };
-
-  collected.poets.forEach((poet, poetId) => {
-    if (poet.period != null) {
-      const born = poet.period.born;
-      const dead = poet.period.dead;
-      if (born != null && born.date != null) {
-        const m = born.date.match(/(\d\d\d\d)-(\d\d-\d\d)/);
-        if (m != null) {
-          const year = m[1];
-          const monthAndDay = m[2];
-          langs.forEach(lang => {
-            content_html = `<a poet="${poetId}">${poetName(poet)}</a>`;
-            content_html += lang === 'da' ? ' født' : ' born';
-            if (born.place != null) {
-              content_html += `, ${born.place}.`;
-            } else {
-              content_html += '.';
-            }
-            content_html = content_html.replace(/\.+$/, '.');
-            add_event(lang, monthAndDay, {
-              type: 'text',
-              content_html: [[content_html, { html: true }]],
-              content_lang: lang,
-              date: born.date,
-              context: { event_type: 'born', year, poet },
-            });
-          });
-        }
-      }
-      if (dead != null && dead.date != null) {
-        const m = dead.date.match(/(\d\d\d\d)-(\d\d-\d\d)/);
-        if (m != null) {
-          const year = m[1];
-          const monthAndDay = m[2];
-          langs.forEach(lang => {
-            content_html = `<a poet="${poetId}">${poetName(poet)}</a>`;
-            content_html += lang === 'da' ? ' død' : ' dead';
-            if (dead.place != null) {
-              content_html += `, ${dead.place}.`;
-            } else {
-              content_html += '.';
-            }
-            content_html = content_html.replace(/\.+$/, '.');
-            add_event(lang, monthAndDay, {
-              type: 'text',
-              content_html: [[content_html, { html: true }]],
-              date: dead.date,
-              content_lang: lang,
-              context: { event_type: 'dead', year, poet },
-            });
-          });
-        }
-      }
-    }
-  });
-
-  langs.forEach(lang => {
-    const preferredCountries =
-      lang === 'da' ? ['se', 'de', 'dk'] : ['us', 'gb']; // Større index er større vægt
-    for (let m = 1; m <= 12; m++) {
-      for (let d = 1; d <= 31; d++) {
-        const dd = d < 10 ? '0' + d : d;
-        const mm = m < 10 ? '0' + m : m;
-        const events = collected_events.get(`${lang}-${mm}-${dd}`) || [];
-        if (events.filter(e => e.type === 'image').length === 0) {
-          // There are no images from events in today.xml. Find the most relevant poet portrait.
-          const weighted = events
-            .filter(e => e.context.poet.has_portraits)
-            .map(event => {
-              const poet = event.context.poet;
-              let weight = 0;
-              weight += poet.has_portraits ? 12 : 6; // TODO: Find the one with a portrait description
-              weight += poet.has_texts ? 10 : 5;
-              weight += poet.has_works ? 6 : 3;
-              weight += preferredCountries.indexOf(poet.country);
-              weight += event.context.event_type === 'born' ? 3 : 0; // Foretræk fødselsdage
-              return {
-                weight,
-                event,
-              };
-            })
-            .sort((a, b) => (a.weight < b.weight ? 1 : -1));
-          if (weighted.length > 0) {
-            const event = weighted[0].event;
-            const poet = event.context.poet;
-            let content_html = null;
-            const primary_portrait = build_portraits_json(
-              poet,
-              collected
-            ).filter(p => p.primary)[0];
-            if (
-              primary_portrait != null &&
-              primary_portrait.content_html[0][0].length > 0
-            ) {
-              content_html = primary_portrait.content_html;
-            } else {
-              content_html = [[poetName(poet)]];
-            }
-            if (primary_portrait != null) {
-              const data = {
-                type: 'image',
-                src: primary_portrait.src,
-                content_html,
-                content_lang: lang,
-                date: event.date,
-              };
-              add_event(lang, `${mm}-${dd}`, data);
-            }
-          }
-        }
-      }
-    }
-  });
-
-  langs.forEach(lang => {
-    for (let m = 1; m <= 12; m++) {
-      for (let d = 1; d <= 31; d++) {
-        const dd = d < 10 ? '0' + d : d;
-        const mm = m < 10 ? '0' + m : m;
-        const events = collected_events.get(`${lang}-${mm}-${dd}`) || [];
-        const path = `static/api/today/${lang}/${mm}-${dd}.json`;
-        console.log(path);
-        writeJSON(path, events);
-      }
-    }
-  });
-};
-
 const build_image_thumbnails = () => {
   buildThumbnails('static/images', isFileModified);
   buildThumbnails('static/kunst', isFileModified);
-};
-
-const build_sitemap_xml = collected => {
-  safeMkdir(`static/sitemaps`);
-
-  const write_sitemap = (filename, urls) => {
-    let xmlUrls = urls.map(url => {
-      return `  <url><loc>${url}</loc></url>`;
-    });
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-    xml += xmlUrls.join('\n');
-    xml += '\n</urlset>\n';
-    writeText(filename, xml);
-  };
-
-  let urls = [];
-  ['da', 'en'].forEach(lang => {
-    urls.push(`https://kalliope.org/${lang}/`);
-    urls.push(`https://kalliope.org/${lang}/keywords`);
-    collected.keywords.forEach((keyword, keywordId) => {
-      urls.push(`https://kalliope.org/${lang}/keyword/${keywordId}`);
-    });
-    collected.poets.forEach((poet, poetId) => {
-      urls.push(`https://kalliope.org/${lang}/bio/${poetId}`);
-      if (poet.has_mentions) {
-        urls.push(`https://kalliope.org/${lang}/mentions/${poetId}`);
-      }
-    });
-  });
-  write_sitemap('static/sitemaps/global.xml', urls);
-
-  collected.poets.forEach((poet, poetId) => {
-    const filenames = collected.workids
-      .get(poetId)
-      .map(workId => `fdirs/${poetId}/${workId}.xml`);
-    if (!isFileModified(...filenames)) {
-      return;
-    }
-    const poet_text_urls = [];
-    ['da', 'en'].forEach(lang => {
-      if (poet.has_works || poet.has_artwork) {
-        poet_text_urls.push(`https://kalliope.org/${lang}/works/${poetId}`);
-      }
-      if (poet.has_poems) {
-        poet_text_urls.push(
-          `https://kalliope.org/${lang}/texts/${poetId}/titles`
-        );
-        poet_text_urls.push(
-          `https://kalliope.org/${lang}/texts/${poetId}/first`
-        );
-      }
-      collected.workids.get(poetId).forEach(workId => {
-        const work = collected.works.get(`${poetId}/${workId}`);
-        if (work.has_content) {
-          poet_text_urls.push(
-            `https://kalliope.org/${lang}/work/${poetId}/${workId}`
-          );
-          const filename = `fdirs/${poetId}/${workId}.xml`;
-          let doc = loadXMLDoc(filename);
-          if (doc == null) {
-            console.log("Couldn't load", filename);
-          }
-          doc.find('//poem|//prose').forEach(part => {
-            const textId = part.attr('id').value();
-            poet_text_urls.push(`https://kalliope.org/${lang}/text/${textId}`);
-          });
-        }
-      });
-    });
-    write_sitemap(`static/sitemaps/${poetId}.xml`, poet_text_urls);
-  });
-
-  const sitemaps_urls_xml = Array.from(collected.poets.values())
-    .filter(poet => poet.has_works || poet.has_artwork)
-    .map(poet => {
-      return `https://kalliope.org/static/sitemaps/${poet.id}.xml`;
-    })
-    .map(url => {
-      return `  <sitemap><loc>${url}</loc></sitemap>`;
-    });
-  sitemaps_urls_xml.push(
-    `  <sitemap><loc>https://kalliope.org/static/sitemaps/global.xml</loc></sitemap>`
-  );
-  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-  xml +=
-    '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">>\n';
-  xml += sitemaps_urls_xml.join('\n');
-  xml += '\n</sitemapindex>\n';
-  writeText('static/sitemap.xml', xml);
-};
-
-const build_anniversaries_ical = collected => {
-  let events = [];
-  let [nowYear, nowMonth, nowDay] = new Date()
-    .toISOString()
-    .split('T')[0]
-    .split('-')
-    .map(s => parseInt(s, 10));
-
-  const handleDate = (poet, eventType, date) => {
-    var [year, month, day] = date.split('-').map(s => parseInt(s, 10));
-    if (month == null || day == null || year == null) {
-      // Ignorer datoer som ikke er fulde datoer, såsom "1300?" og "1240 ca."
-      return;
-    }
-    for (let eventYear = nowYear - 1; eventYear < nowYear + 3; eventYear++) {
-      let eventDate = new Date();
-      eventDate.setDate(day);
-      eventDate.setMonth(month - 1);
-      eventDate.setYear(eventYear);
-      if ((eventYear - year) % 100 === 0 || (eventYear - year) % 250 === 0) {
-        const eventTitle = eventType === 'born' ? 'født' : 'død';
-        events.push({
-          start: [eventYear, month, day],
-          duration: { days: 1 },
-          title: `${poetName(poet)} ${eventTitle} for ${eventYear -
-            year} år siden`,
-          description: `${poetName(poet)} ${eventTitle} ${parseInt(
-            day,
-            10
-          )}/${parseInt(month, 10)} ${year}.`,
-          url: `https://kalliope.org/da/bio/${poet.id}`,
-          uid: `${poet.id}-${eventType}-${eventYear}@kalliope.org`,
-        });
-      }
-    }
-  };
-  collected.poets.forEach((poet, poetId) => {
-    if (
-      poet.period != null &&
-      poet.period.born != null &&
-      poet.period.born.date !== '?'
-    ) {
-      handleDate(poet, 'born', poet.period.born.date);
-    }
-    if (
-      poet.period != null &&
-      poet.period.dead != null &&
-      poet.period.dead.date !== '?'
-    ) {
-      handleDate(poet, 'dead', poet.period.dead.date);
-    }
-  });
-  const { error, value } = ics.createEvents(events);
-  if (error != null) {
-    throw error;
-  }
-  writeText('static/Kalliope.ics', value);
-};
-
-const build_artwork = collected => {
-  let collected_artwork = new Map(loadCachedJSON('collected.artwork') || []);
-  const force_reload = collected_artwork.size == 0;
-
-  collected.poets.forEach(person => {
-    const personId = person.id;
-    const personType = person.type;
-    const artworkFilename = `fdirs/${personId}/artwork.xml`;
-    const portraitsFile = `fdirs/${personId}/portraits.xml`;
-
-    if (
-      personType === 'artist' &&
-      (force_reload || isFileModified(artworkFilename))
-    ) {
-      // Fjern eksisterende fra cache (i tilfælde af id er slettet)
-      Array.from(collected_artwork.keys())
-        .filter(k => k.indexOf(`${personId}/`) === 0)
-        .forEach(k => {
-          collected_artwork.delete(k);
-        });
-
-      const artworksDoc = loadXMLDoc(artworkFilename);
-      if (artworksDoc != null) {
-        artworksDoc.find('//pictures/picture').forEach(picture => {
-          const pictureId = safeGetAttr(picture, 'id');
-          const subjectAttr = safeGetAttr(picture, 'subject');
-          let subjects = subjectAttr != null ? subjectAttr.split(',') : [];
-          const year = safeGetAttr(picture, 'year');
-          if (pictureId == null) {
-            throw `fdirs/${personId}/artwork.xml har et billede uden id-attribut.`;
-          }
-          subjects.forEach(subjectId => {
-            // Make sure we rebuild the affected bio page.
-            markFileDirty(`fdirs/${subjectId}/portraits.xml`);
-          });
-
-          const src = `/static/images/${personId}/${pictureId}.jpg`;
-          const size = imageSizeSync(src.replace(/^\//, ''));
-          const remoteUrl = build_museum_url(picture);
-          const museumLink = build_museum_link(picture) || '';
-          const museumId = safeGetAttr(picture, 'museum');
-          const artworkId = `${personId}/${pictureId}`;
-          const artist = collected.poets.get(personId);
-          const content_raw =
-            picture
-              .toString()
-              .replace(/<picture[^>]*?>/, '')
-              .replace('</picture>', '')
-              .trim() + museumLink;
-          const artworkJson = {
-            id: `${personId}/${pictureId}`,
-            artistId: personId,
-            artist,
-            museum: get_museum_json(museumId),
-            remoteUrl,
-            lang: person.lang,
-            src,
-            size,
-            content_lang: 'da',
-            subjects,
-            year,
-            content_raw,
-            content_html: htmlToXml(content_raw, collected),
-          };
-          collected_artwork.set(artworkId, artworkJson);
-        });
-      }
-    }
-    if (force_reload || isFileModified(portraitsFile)) {
-      // Fjern eksisterende portraits fra cache (i tilfælde af id er slettet)
-      Array.from(collected_artwork.keys())
-        .filter(k => k.indexOf(`portrait/${personId}/`) === 0)
-        .forEach(k => {
-          collected_artwork.delete(k);
-        });
-
-      // From portraits.xml
-      const doc = loadXMLDoc(`fdirs/${personId}/portraits.xml`);
-      if (doc != null) {
-        onError = message => {
-          throw `fdirs/${personId}/portraits.xml: ${message}`;
-        };
-        doc
-          .find('//pictures/picture')
-          .filter(picture => {
-            return safeGetAttr(picture, 'ref') == null;
-          })
-          .forEach(pictureNode => {
-            const src = safeGetAttr(pictureNode, 'src');
-            const picture = get_picture(
-              pictureNode,
-              `/static/images/${personId}`,
-              collected,
-              onError
-            );
-            if (picture == null) {
-              onError('har et billede uden src- eller ref-attribut.');
-            }
-            const key = `portrait/${personId}/${src}`;
-            collected_artwork.set(key, picture);
-          });
-      }
-    }
-
-    // From works
-    collected.workids.get(personId).forEach(workId => {
-      const workFilename = `fdirs/${personId}/${workId}.xml`;
-      if (force_reload || isFileModified(workFilename)) {
-        // Fjern eksisterende work pictures fra cache
-        Array.from(collected_artwork.keys())
-          .filter(k => k.indexOf(`work/${personId}/${workId}`) === 0)
-          .forEach(k => {
-            collected_artwork.delete(k);
-          });
-
-        const doc = loadXMLDoc(workFilename);
-        if (doc != null) {
-          onError = message => {
-            throw `${workFilename}: ${message}`;
-          };
-          doc
-            .find('//pictures/picture')
-            .filter(picture => {
-              return safeGetAttr(picture, 'ref') == null;
-            })
-            .forEach(pictureNode => {
-              const src = safeGetAttr(pictureNode, 'src');
-              const picture = get_picture(
-                pictureNode,
-                `/static/images/${personId}`,
-                collected,
-                onError
-              );
-              if (picture == null) {
-                onError('har et billede uden src- eller ref-attribut.');
-              }
-              const key = `work/${personId}/${workId}/${src}`;
-              collected_artwork.set(key, picture);
-            });
-        }
-      }
-    });
-  });
-  writeCachedJSON('collected.artwork', Array.from(collected_artwork));
-  return collected_artwork;
 };
 
 safeMkdir(`static/api`);

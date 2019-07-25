@@ -136,9 +136,21 @@ const get_pictures = (head, srcPrefix, xmlFilename, collected) => {
   });
 };
 
+const extractDates = head => {
+  const dates = head.get('dates');
+  const result = {};
+  if (dates != null) {
+    result.published = safeGetText(dates, 'published');
+    result.event = safeGetText(dates, 'event');
+    result.written = safeGetText(dates, 'written');
+  }
+  return result;
+};
+
 module.exports = {
   extractTitle,
   get_notes,
   get_pictures,
   get_picture,
+  extractDates,
 };
