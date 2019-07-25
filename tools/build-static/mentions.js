@@ -7,9 +7,9 @@ const {
   safeMkdir,
   writeJSON,
   loadXMLDoc,
-  safeGetText,
   htmlToXml,
 } = require('../libs/helpers.js');
+const { safeGetText } = require('./xml.js');
 const { poetName, workLinkName } = require('./formatting.js');
 const { primaryTextVariantId } = require('./variants.js');
 

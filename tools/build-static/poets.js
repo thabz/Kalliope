@@ -9,10 +9,9 @@ const {
   safeMkdir,
   writeJSON,
   loadXMLDoc,
-  safeGetText,
-  safeGetAttr,
   resizeImage,
 } = require('../libs/helpers.js');
+const { safeGetText, safeGetAttr } = require('./xml.js');
 
 const create_poet_square_thumb = (poetId, square_path) => {
   const path = `static/images/${poetId}/${square_path}`;

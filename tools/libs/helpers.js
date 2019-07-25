@@ -72,26 +72,6 @@ const loadXMLDoc = filename => {
   }
 };
 
-const safeGetText = (element, child) => {
-  if (element) {
-    const childElement = element.get(child);
-    if (childElement) {
-      return childElement.text();
-    }
-  }
-  return null;
-};
-
-const safeGetAttr = (element, attrName) => {
-  if (element) {
-    const attrElement = element.attr(attrName);
-    if (attrElement) {
-      return attrElement.value();
-    }
-  }
-  return null;
-};
-
 const replaceDashes = html => {
   if (html == null) {
     return null;
@@ -404,7 +384,10 @@ const buildThumbnails = (topFolder, isFileModifiedMethod) => {
         filename.endsWith('.jpg') &&
         !skipRegExps.test(filename)
       ) {
-        if (isFileModifiedMethod != null && !isFileModifiedMethod(fullFilename)) {
+        if (
+          isFileModifiedMethod != null &&
+          !isFileModifiedMethod(fullFilename)
+        ) {
           return;
         }
         CommonData.availableImageFormats.forEach((ext, i) => {
@@ -436,8 +419,6 @@ module.exports = {
   writeText,
   loadXMLDoc,
   htmlToXml,
-  safeGetText,
-  safeGetAttr,
   replaceDashes,
   imageSizeSync,
   buildThumbnails,

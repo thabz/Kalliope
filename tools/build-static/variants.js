@@ -1,3 +1,49 @@
+const {
+  isFileModified,
+  loadCachedJSON,
+  writeCachedJSON,
+} = require('../libs/caching.js');
+const { loadXMLDoc } = require('../libs/helpers.js');
+
+const build_variants = collected => {
+  let variants_map = new Map(loadCachedJSON('collected.variants') || []);
+
+  register_variant = (from, to) => {
+    let array = variants_map.get(from) || [];
+    if (array.indexOf(to) === -1) {
+      array.push(to);
+    }
+    variants_map.set(from, array);
+  };
+
+  collected.poets.forEach((poet, poetId) => {
+    collected.workids.get(poetId).forEach(workId => {
+      const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!isFileModified(filename)) {
+        return;
+      }
+      let doc = loadXMLDoc(filename);
+      doc
+        .find('//poem[@variant]|//prose[@variant]|//section[@variant]')
+        .forEach(text => {
+          const textId = safeGetAttr(text, 'id');
+          const variantId = safeGetAttr(text, 'variant');
+          register_variant(textId, variantId);
+          register_variant(variantId, textId);
+          // Mark work containing variantId dirty
+          const variantData = collected.texts.get(variantId);
+          if (variantData != null) {
+            markFileDirty(
+              `fdirs/${variantData.poetId}/${variantData.workId}.xml`
+            );
+          }
+        });
+    });
+  });
+  writeCachedJSON('collected.variants', Array.from(variants_map));
+  return variants_map;
+};
+
 const resolve_variants_cache = {};
 const resolve_variants = (poemId, collected) => {
   const variantIds = collected.variants.get(poemId);
@@ -56,6 +102,7 @@ const primaryTextVariantId = (textId, collected) => {
 };
 
 module.exports = {
+  build_variants,
   resolve_variants,
   primaryTextVariantId,
 };
