@@ -2,8 +2,10 @@ const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
+  markFileDirty,  
 } = require('../libs/caching.js');
 const { loadXMLDoc } = require('../libs/helpers.js');
+const { safeGetAttr } = require('./xml.js');
 
 const build_variants = collected => {
   let variants_map = new Map(loadCachedJSON('collected.variants') || []);

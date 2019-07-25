@@ -23,7 +23,6 @@ const imageSizeAsync = (filename, callback) => {
   if (cached != null && !isFileModified(filename)) {
     callback(null, cached);
   } else {
-    console.log('Image size for ' + filename);
     sharp(filename)
       .metadata()
       .then(metadata => {
