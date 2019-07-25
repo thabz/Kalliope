@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="barfod" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Thorkil</firstname>
+    <lastname>Barfod</lastname>
+    <fullname>Thorkil Barfred Barfod</fullname>
+    <pseudonym>Edith Egedahl</pseudonym>
+    <pseudonym>Ellen Holte</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1889-07-24</date>
+      <place>Hjørlunde Præstegård</place>
+    </born>
+    <dead>
+      <date>1947-11-28 eller 1897-11-27</date>
+    </dead>
+  </period>
+  <works>1911,1913,1917,1919,1929,1930,1933,1936,1938,1944</works>
+</person>

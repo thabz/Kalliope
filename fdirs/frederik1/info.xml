@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="frederik1" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 1.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1471-10-07</date>
+      <place>Haderslevhus</place>
+    </born>
+    <coronation>
+      <date>1523-04-13</date>
+    </coronation>
+    <dead>
+      <date>1533-04-10</date>
+      <place inon="on">Gottorp Slot</place>
+    </dead>
+  </period>
+</person>

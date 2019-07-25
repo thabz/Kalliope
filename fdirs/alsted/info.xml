@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="alsted" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Peter</firstname>
+    <lastname>Alsted</lastname>
+    <fullname>Peter Christen Alsted</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1864-03-28</date>
+      <place>Kobbelgaard ved Tørring</place>
+    </born>
+    <dead>
+      <date>1944-10-29</date>
+      <place>Dortheasminde</place>
+    </dead>
+  </period>
+  <works>1896,1904,1932,1937,1939</works>
+</person>

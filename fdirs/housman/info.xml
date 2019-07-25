@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="housman" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>A.E.</firstname>
+    <lastname>Housman</lastname>
+    <fullname>Alfred Edward Housman</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1859-03-26</date>
+      <place>Fockbury, Worcestershire</place>
+    </born>
+    <dead>
+      <date>1936-04-30</date>
+      <place>Cambridge</place>
+    </dead>
+  </period>
+  <works>1896,1922,1936,1939</works>
+</person>

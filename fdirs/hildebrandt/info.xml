@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hildebrandt" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Karen</firstname>
+    <lastname>Hildebrandt</lastname>
+    <fullname>Karen Astrid Hillbrandt</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1898-08-18</date><!-- ikke 1899 iflg. Danske Litteraturpriser -->
+      <place>Glamsbjerg</place>
+    </born>
+    <dead>
+      <date>1948-11-03</date>
+    </dead>
+  </period>
+  <works>1935,1937,1942,1945,1949</works>
+</person>

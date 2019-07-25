@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="opitz" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Martin</firstname>
+    <lastname>Opitz</lastname>
+    <fullname>Martin Opitz von Boberfeld</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1597-12-23</date>
+      <place>Bunzlau, Schlesien</place>
+    </born>
+    <dead>
+      <date>1639-08-20</date>
+      <place>Danzig</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

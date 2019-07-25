@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="frederik2" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 2.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1534-07-01</date>
+      <place>Haderslevhus</place>
+    </born>
+    <coronation>
+      <date>1559-01-01</date>
+    </coronation>
+    <dead>
+      <date>1588-04-04</date>
+      <place>Antvorskov Kloster</place>
+    </dead>
+  </period>
+</person>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lautreamont" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Comte de</firstname>
+    <lastname>Lautréamont</lastname>
+    <fullname>Isidore-Lucien Ducasse</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1846-04-04</date>
+      <place>Montevideo, Uruguay</place>
+    </born>
+    <dead>
+      <date>1870-11-04</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+</person>

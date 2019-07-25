@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="vibe" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Johan</firstname>
+    <lastname>Vibe</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1748-09-10</date>
+      <place>Drammen, Norge</place>
+    </born>
+    <dead>
+      <date>1782-02-09</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

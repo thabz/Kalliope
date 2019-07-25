@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="nilsen" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Rudolf</firstname>
+    <lastname>Nilsen</lastname>
+    <fullname>Rudolf William Nilsen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1901-02-28</date>
+      <place>Kristania</place>
+    </born>
+    <dead>
+      <date>1929-03-23</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <works>1924,1926,1929</works>
+</person>

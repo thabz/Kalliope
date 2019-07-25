@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wilde" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Oscar</firstname>
+    <lastname>Wilde</lastname>
+    <realname>Fingal O'Flahertie Wills</realname>
+  </name>
+  <period>
+    <born>
+      <date>1854-10-16</date>
+      <place>Dublin</place>
+    </born>
+    <dead>
+      <date>1900-11-30</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <works>1881,andre</works>
+</person>

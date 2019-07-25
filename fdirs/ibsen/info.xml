@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="ibsen" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Henrik</firstname>
+    <lastname>Ibsen</lastname>
+    <fullname>Henrik Johan Ibsen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1828-03-20</date>
+      <place>Skien, Norge</place>
+    </born>
+    <dead>
+      <date>1906-05-23</date>
+      <place>Christiania (nu Oslo)</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

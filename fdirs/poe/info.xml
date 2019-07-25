@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="poe" country="us" lang="en" type="poet"> 
+  <name>
+    <firstname>Edgar Allan</firstname>
+    <lastname>Poe</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1809-01-19</date>
+      <place>Boston, Mass., USA</place>
+    </born>
+    <dead>
+      <date>1849-10-07</date>
+      <place>Baltimore, Md., USA</place>
+    </dead>
+  </period>
+  <works>1827,1829,1831,1840,1841,1845,andre</works>
+</person>

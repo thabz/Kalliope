@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="munch" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Andreas</firstname>
+    <lastname>Munch</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1811-10-19</date>
+      <place>Kristiania</place>
+    </born>
+    <dead>
+      <date>1884-06-27</date>
+      <place>Vedbæk ved København</place>
+    </dead>
+  </period>
+  <works>1836,1837,1842b,1842d,1852,1855,1861,1867,1877</works>
+</person>

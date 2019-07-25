@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="henriksen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hans</firstname>
+    <lastname>Henriksen</lastname>
+    <fullname>Hans Peter Henriksen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1861-08-26</date>
+      <place>Hillerød</place>
+    </born>
+    <dead>
+      <date>1944-06-22</date>
+    </dead>
+  </period>
+  <works>1902,1906,1911,1915,1915s,1916,1918,1920,1925,1930,1931,1931v,1932,1934,1938</works>
+</person>

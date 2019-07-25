@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="holberg" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Ludvig</firstname>
+    <lastname>Holberg</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1684-12-03</date>
+      <place>Bergen</place>
+    </born>
+    <dead>
+      <date>1754-01-28</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1719,metam,skiemte,andre</works>
+</person>

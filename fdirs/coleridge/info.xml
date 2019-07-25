@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="coleridge" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Samuel Taylor</firstname>
+    <lastname>Coleridge</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1772-10-21</date>
+      <place>Ottery St. Mary, Devonshire, England</place>
+    </born>
+    <dead>
+      <date>1834-07-25</date>
+      <place>Highgate, ved London</place>
+    </dead>
+  </period>
+  <works>1796,1798,1816,1817,andre</works>
+</person>

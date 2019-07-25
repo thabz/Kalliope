@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="frederik9" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 9.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1899-03-11</date>
+      <place inon="on">Sorgenfri Slot</place>
+    </born>
+    <coronation>
+      <date>1947-04-20</date>
+    </coronation>
+    <dead>
+      <date>1972-01-14</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>

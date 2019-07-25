@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="goldoni" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Carlo</firstname>
+    <lastname>Goldoni</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1707-02-25</date>
+      <place>Venedig</place>
+    </born>
+    <dead>
+      <date>1793-02-06</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+</person>

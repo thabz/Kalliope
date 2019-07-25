@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="holmes" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Oliver Wendell</firstname>
+    <lastname>Holmes</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1809-08-29</date>
+      <place>Cambridge, Mass.</place>
+    </born>
+    <dead>
+      <date>1894-10-07</date>
+      <place>Boston</place>
+    </dead>
+  </period>
+  <works>1836,1862,1875,1880,1887</works>
+</person>

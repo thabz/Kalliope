@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="montgomery" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>James</firstname>
+    <lastname>Montgomery</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1771-11-04</date>
+      <place> Irvine, Ayrshire, Skotland</place>
+    </born>
+    <dead>
+      <date>1854-04-30</date>
+      <place>Sheffield, Yorkshire, England</place>
+    </dead>
+  </period>
+  <works>1797,1806,1807,1813,1819,1822,1825,1825a,1828,1835,1853</works>
+</person>

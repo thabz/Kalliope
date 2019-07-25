@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="melbye" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Anton</firstname>
+    <lastname>Melbye</lastname>
+    <fullname>Anton Christian Cornelius Melbye</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1861-10-14</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1929-08-08</date>
+    </dead>
+  </period>
+  
+  <works>1930</works>
+</person>
