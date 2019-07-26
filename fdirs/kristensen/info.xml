@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="kristensen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>K.L.</firstname>
+    <lastname>Kristensen</lastname>
+    <fullname>Kristen Larsen Kristensen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1886-04-02</date>
+      <place>Munkebo</place>
+    </born>
+    <dead>
+      <date>1944-05-01</date>
+    </dead>
+  </period>
+  
+  <works>1926,1928,1929,1929h,1933,1933t,1934,1937,1940</works>
+</person>
