@@ -607,7 +607,6 @@ const works_first_pass = collected => {
       } else {
         found_changes = true;
       }
-        console.log("Loading " + workFilename);
 
       let doc = loadXMLDoc(workFilename);
       const work = doc.get('//kalliopework');
