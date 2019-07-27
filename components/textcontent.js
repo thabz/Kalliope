@@ -508,6 +508,7 @@ export default class TextContent extends React.Component<TextContentPropsType> {
           :global(.poem-hr) {
             line-height: 4px !important;
             padding-bottom: 3px;
+            margin-left: 0 !important;
           }
           :global(.last-highlighted-line) {
             border-bottom: 1px solid rgb(238, 232, 213);
