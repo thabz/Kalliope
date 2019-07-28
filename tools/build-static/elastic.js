@@ -1,3 +1,10 @@
+const { 
+  loadXMLDoc, 
+  htmlToXml,
+  replaceDashes,
+} = require('../libs/helpers.js');
+const { safeGetText } = require('./xml.js');
+const { isFileModified } = require('../libs/caching.js');
 const elasticSearchClient = require('../libs/elasticsearch-client.js');
 
 const update_elasticsearch = collected => {
