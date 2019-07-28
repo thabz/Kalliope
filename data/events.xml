@@ -45,9 +45,7 @@
      <html>Erik Klipping myrdes i Finderup Lade.</html>
    </entry>
    <entry date="1286-11-22" type="image">
-       <picture src="kunst/otto-bache-de-sammensvorne.jpg">
-           Otto Bache: <i>De sammensvorne rider fra Finderup efter mordet på Erik Klipping Skt. Cæcilienat 1286</i>, olie på lærred, 1882. Det Nationalhistoriske Museum på Frederiksborg Slot.
-       </picture>
+       <picture ref="bache/1882-finderup"/>
    </entry>
    <entry date="1337" type="text">
      <html>Hundredeårskrigen mellem Frankrig og England (1337-1453) bryder ud.</html>
@@ -150,11 +148,14 @@
    <entry date="1583" type="text">
      <html>Pest i Danmark dræber 9.000 mennesker.</html>
    </entry>
-   <entry date="1588" type="text">
-     <html><a person="christian4">Christian IV</a> (1577-1648) udråbes til konge.</html>
+   <entry date="1588-04-04" type="text">
+     <html>Den 11-årige <a person="christian4">Christian IV</a> (1577-1648) udråbes til konge og der dannes en foreløbig formynderregering.</html>
    </entry>
    <entry date="1592-09-13" type="text">
      <html>Michel de Montaigne død i Bordeaux.</html>
+   </entry>
+   <entry date="1596-08-29" type="image">
+       <picture ref="bache/1887-christian4-kroningstog"/>
    </entry>
    <entry date="1599-06" type="text">
        <html><a poet="shakespeare">Shakespeares</a> teater The Globe Playhouse åbner i London.</html>
@@ -211,6 +212,9 @@
    </entry>
    <entry date="1654" type="text">
      <html>Pest i København dræber 9.000 mennesker.</html>
+   </entry>
+   <entry date="1657" type="text">
+     <html>Svenskekrigene (1657-1660), hvor Danmark undervejs mister Skåne, Halland og Blekinge.</html>
    </entry>
    <entry date="1660" type="text">
      <html>Enevælde i Danmark-Norge indføres med Kongeloven.</html>
@@ -480,8 +484,8 @@
    <entry date="1847" type="text">
      <html>Carlsberg begynder at brygge øl.</html>
    </entry>
-   <entry date="1847-10-21" type="text">
-     <html>Edvard Brandes født.</html>
+   <entry date="1848" type="text">
+     <html>Treårskrigen (1848-1851) udkæmpes i Slesvig.</html>
    </entry>
    <entry date="1848-01-20" type="text">
      <html><a person="christian8">Christian VIII</a> dør, og <a person="frederik7">Frederik VII</a> (1808-1863) udråbes til konge.</html>
@@ -498,14 +502,14 @@
    <entry date="1849" type="text">
      <html>Almindelig værnepligt indføres.</html>
    </entry>
+   <entry date="1849-09-09" type="image">
+       <picture ref="bache/1894-soldaternes-hjemkomst"/>
+   </entry>
+   <entry date="1850-07-25" type="text">
+     <html>Slaget på Isted Hede.</html>
+   </entry>
    <entry date="1853" type="text">
      <html>Koleraepidemi i København.</html>
-   </entry>
-   <entry date="1853-04-28" type="text">
-     <html>Ludwig Tieck død.</html>
-   </entry>
-   <entry date="1855-11-11" type="text">
-     <html>Søren Kierkegaard død.</html>
    </entry>
    <entry date="1859" type="text">
      <html>Charles Darwin udgiver <i>The Origin of Species</i>.</html>
@@ -513,17 +517,20 @@
    <entry date="1859" type="text">
      <html>John Stuart Mill udgiver <i>On Liberty</i>.</html>
    </entry>
-   <entry date="1860-09-21" type="text">
-     <html>Schopenhauer død i Frankfurt am Main.</html>
-   </entry>
    <entry date="1861" type="text">
      <html>Den amerikanske borgerkrig bryder ud.</html>
    </entry>
    <entry date="1863" type="text">
      <html><a person="christian9">Christian IX</a> (1818-1906) udråbes til konge.</html>
    </entry>
-   <entry date="1864" type="text">
-     <html>Dansk nederlag ved Dybbøl til Preussen/Østrig.</html>
+   <entry date="1864-02-01" type="text">
+     <html>Den 2. Slesvigske Krig mod Preussen og Østrig bryder ud og ender med at Danmark afstår Holsten, Lauenborg og Slesvig.</html>
+   </entry>
+   <entry date="1864-02-06" type="image">
+       <picture ref="bache/1886-sankelmark"/>
+   </entry>
+   <entry date="1864-04-18" type="text">
+     <html>Dansk nederlag ved Dybbøl.</html>
    </entry>
    <entry date="1867" type="text">
      <html>Alfred Nobel opfinder dynamit.</html>
@@ -624,11 +631,14 @@
    <entry date="1919" type="text">
      <html>Folkeforbundet stiftes ved Versailletraktaten.</html>
    </entry>
+   <entry date="1920-06-15" type="text">
+     <html>Det nordlige Sønderjylland genforenes med Danmark efter en folkestemning.</html>
+   </entry>
    <entry date="1922" type="text">
      <html>Mussolini tager magten i Italien.</html>
    </entry>
    <entry date="1923" type="text">
-     <html>Hitler forsøger kup i Munchen.</html>
+     <html>Hitler forsøger kup i München.</html>
    </entry>
    <entry date="1925" type="text">
      <html>Statsradiofonien grundlægges i Danmark.</html>
