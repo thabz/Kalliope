@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="kie" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Alfred</firstname>
+    <lastname>Kie</lastname>
+    <fullname>Alfred Lauritz Torben Nielsen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1899-09-05</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1924-10-06</date>
+    </dead>
+  </period>
+  
+  <works>1921</works>
+</person>
