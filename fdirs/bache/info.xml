@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bache" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>Otto</firstname>
+    <lastname>Bache</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1839-08-21</date>
+      <place>Roskilde</place>
+    </born>
+    <dead>
+      <date>1927-06-28</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>
