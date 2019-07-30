@@ -562,16 +562,17 @@ Og saa faar Du Brev fra frankerende Venner,
 og jævnlig fra Folk, som Du slet ikke kjender!
 Og Borgeren skikker Dig slagtede Ænder!
 Og Du faar Kritiker fra agtede Hænder!
-
+<!-- TODO: ting mangler -->
 </body>
 </poem>
 
 <poem id="richardt2019073013">
 <head>
-    <title>Danmarks Frihed.(Den 5. Juni 1860.)</title>
-    <firstline>xx</firstline>
+    <title>Danmarks Frihed</title>
+    <subtitle>(Den 5. Juni 1860.)</subtitle>
+    <firstline>Frihed! Du Nordens kjække Mø</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="19-21"/>
 </head>
 <body>
 Frihed! Du Nordens kjække Mø,
@@ -625,10 +626,15 @@ hun og Du, hendes gjenfundne Datter!
 
 <poem id="richardt2019073014">
 <head>
-    <title>C. M. Wengel.(Den 28. Sept. 1859.)</title>
-    <firstline>xx</firstline>
+    <title>† C. M. Wengel</title>
+    <indextitle>C. M. Wengel</indextitle>
+    <subtitle>(Den 28. Sept. 1859.)</subtitle>
+    <firstline>Før Skoven tog sin Vinterdragt</firstline>
+    <dates>
+        <event>1859-09-28</event>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="21-22"/>
 </head>
 <body>
 Før Skoven tog sin Vinterdragt,
@@ -656,7 +662,8 @@ i Naadens Hav udrinde.
 
 <poem id="richardt2019073015">
 <head>
-    <title>Nordens Kirke.(Ved Kirkemødet 1857.)</title>
+    <title>Nordens Kirke</title>
+    <subtitle>(Ved Kirkemødet 1857.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -944,7 +951,7 @@ Du vil virkelig være min Brud?
 
 <poem id="richardt2019073021">
 <head>
-    <title>Tulte.</title>
+    <title>Tulte</title>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -1931,7 +1938,8 @@ den første Blomst i den sidste Snee!
 
 <poem id="richardt2019073040">
 <head>
-    <title>Beethovenske Stemninger.(Sonata quasi Fantasia.)</title>
+    <title>Beethovenske Stemninger</title>
+    <subtitle>(Sonata quasi Fantasia.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -2078,7 +2086,8 @@ ingensinde, ingensinde!
 
 <poem id="richardt2019073044">
 <head>
-    <title>Faer skal sove.(Til et Billede af Bloch.)</title>
+    <title>Faer skal sove</title>
+    <subtitle>(Til et Billede af Bloch.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -3087,7 +3096,8 @@ Saa heller Røver paa Fjeldet!
 
 <poem id="richardt2019073059">
 <head>
-    <title>Julen i Rom.(Ved Skandinavernes Julefest 1861.)</title>
+    <title>Julen i Rom</title>
+    <subtitle>(Ved Skandinavernes Julefest 1861.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -3421,7 +3431,8 @@ Du mægter det ej!
 
 <poem id="richardt2019073063">
 <head>
-    <title>Studereliv.(Nordisk Højtid 13 Jan. 1863.)</title>
+    <title>Studereliv</title>
+    <subtitle>(Nordisk Højtid 13 Jan. 1863.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -3466,7 +3477,8 @@ En Gnist til Lampen i vort Kammer.
 
 <poem id="richardt2019073064">
 <head>
-    <title>Ved Indvielsen af Studenterforenings-Bygningen.(Den 17de April 1863.)</title>
+    <title>Ved Indvielsen af Studenterforenings-Bygningen</title>
+    <subtitle>(Den 17de April 1863.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -3583,7 +3595,8 @@ Studentens Gaard:
 
 <poem id="richardt2019073067">
 <head>
-    <title>Studenter-Jubilæum.(1859.)</title>
+    <title>Studenter-Jubilæum</title>
+    <subtitle>(1859.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -3629,7 +3642,8 @@ de trives; de og deres Poder!
 
 <poem id="richardt2019073068">
 <head>
-    <title>For Kvinden.(Ved Upsalensernes Besøg 1852.)</title>
+    <title>For Kvinden</title>
+    <subtitle>(Ved Upsalensernes Besøg 1852.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -3675,7 +3689,8 @@ kæmpe med os!
 
 <poem id="richardt2019073069">
 <head>
-    <title>Efter Upsalatoget.(Sommeren 1856.)</title>
+    <title>Efter Upsalatoget</title>
+    <subtitle>(Sommeren 1856.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -3710,7 +3725,8 @@ udover det hele Nordens Land!
 
 <poem id="richardt2019073070">
 <head>
-    <title>Til J. P. E. Hartmann.(I Studentersangforeningen d. 30 Novbr. 1860.)</title>
+    <title>Til J. P. E. Hartmann</title>
+    <subtitle>(I Studentersangforeningen d. 30 Novbr. 1860.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -3753,7 +3769,8 @@ Du deler med os vore Minders Krans.
 
 <poem id="richardt2019073073">
 <head>
-    <title>Til Georg Forchhammer.(Den 19 Decbr. 1857.)</title>
+    <title>Til Georg Forchhammer</title>
+    <subtitle>(Den 19 Decbr. 1857.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -3845,7 +3862,8 @@ vi Stjernens Fred kan eje!
 
 <poem id="richardt2019073075">
 <head>
-    <title>Ved en Skolehøjtid.(Den 10 Septbr. 1864.)</title>
+    <title>Ved en Skolehøjtid</title>
+    <subtitle>(Den 10 Septbr. 1864.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -3895,7 +3913,8 @@ saa atter det løves om Lande.
 
 <poem id="richardt2019073078">
 <head>
-    <title>Carl Johannes Nissen.(4 Okt. 1836.- 26 Jan. 1861.)</title>
+    <title>Carl Johannes Nissen</title>
+    <subtitle>(4 Okt. 1836.- 26 Jan. 1861.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -3961,7 +3980,8 @@ Da voxer Tak af Klage.
 
 <poem id="richardt2019073081">
 <head>
-    <title>Marie Brøndsted.(7 Marts 1845. - 27 August 1864.)</title>
+    <title>Marie Brøndsted</title>
+    <subtitle>(7 Marts 1845. - 27 August 1864.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -4007,7 +4027,8 @@ vor Frelser og vor Gud!
 
 <poem id="richardt2019073082">
 <head>
-    <title>Ved Skovkapellets Indvielse.(Den 26 Juni 1864.)</title>
+    <title>Ved Skovkapellets Indvielse</title>
+    <subtitle>(Den 26 Juni 1864.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -4559,7 +4580,8 @@ og Du kan gjerne styre!
 
 <poem id="richardt2019073096">
 <head>
-    <title>I.I Maj.(C. J. Hansen.)</title>
+    <title>I.I Maj</title>
+    <subtitle>(C. J. Hansen.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -4587,7 +4609,8 @@ Høje Sol, kom og did!
 
 <poem id="richardt2019073097">
 <head>
-    <title>2.Tilfods.(P Heise.)</title>
+    <title>2.Tilfods</title>
+    <subtitle>(P Heise.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -4630,7 +4653,8 @@ Om Hatten og i Brystet.
 
 <poem id="richardt2019073098">
 <head>
-    <title>3.Den vilde Rosenbusk.(P Heise.)</title>
+    <title>3.Den vilde Rosenbusk</title>
+    <subtitle>(P Heise.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -4658,7 +4682,8 @@ dens Maj er kun een.
 
 <poem id="richardt2019073099">
 <head>
-    <title>4.Menuetten.(Gammel Menuet.)</title>
+    <title>4.Menuetten</title>
+    <subtitle>(Gammel Menuet.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -4718,7 +4743,8 @@ Tag min Foragt!
 
 <poem id="richardt20190730100">
 <head>
-    <title>5.I Gadedøren.(Zelter.)</title>
+    <title>5.I Gadedøren</title>
+    <subtitle>(Zelter.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -4837,7 +4863,8 @@ Taarer af Fryd eller Kummer.
 
 <poem id="richardt20190730103">
 <head>
-    <title>Danmark.(5 Juni 1861.)</title>
+    <title>Danmark</title>
+    <subtitle>(5 Juni 1861.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -4865,7 +4892,8 @@ men Enighed! det Skjold vi trænge til.
 
 <poem id="richardt20190730104">
 <head>
-    <title>Kongens Skaal.(Ved Festen til Minde om Stormen paa Kjøbenhavn 10 Febr.1859.)</title>
+    <title>Kongens Skaal</title>
+    <subtitle>(Ved Festen til Minde om Stormen paa Kjøbenhavn 10 Febr.1859.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -4905,7 +4933,8 @@ og aldrig Du døer i din Rede!
 
 <poem id="richardt20190730105">
 <head>
-    <title>Ved Kongens Hjemkomst fra sin Sommerrejse.(Paa Kjøbenhavns Rhed den 16 August 1861.)</title>
+    <title>Ved Kongens Hjemkomst fra sin Sommerrejse</title>
+    <subtitle>(Paa Kjøbenhavns Rhed den 16 August 1861.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -4948,7 +4977,8 @@ en gylden Høst!
 
 <poem id="richardt20190730106">
 <head>
-    <title>Ved Prinsesse Alexandras Afrejse.(Korsør, den 26 Februar 1863.)</title>
+    <title>Ved Prinsesse Alexandras Afrejse</title>
+    <subtitle>(Korsør, den 26 Februar 1863.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5002,7 +5032,8 @@ fra Gud.
 
 <poem id="richardt20190730107">
 <head>
-    <title>Frederiksborg.(17 Decbr. 1859.)</title>
+    <title>Frederiksborg</title>
+    <subtitle>(17 Decbr. 1859.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5041,7 +5072,8 @@ lægge Danmark selv i Grus!
 
 <poem id="richardt20190730109">
 <head>
-    <title>Til Frederik den Syvendes Minde.(I Studenterforeningen den 20 Decbr. 1863.)</title>
+    <title>Til Frederik den Syvendes Minde</title>
+    <subtitle>(I Studenterforeningen den 20 Decbr. 1863.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5107,7 +5139,8 @@ hans Mindefest.
 
 <poem id="richardt20190730112">
 <head>
-    <title>Mørke.(Den 19 December 1863.)</title>
+    <title>Mørke</title>
+    <subtitle>(Den 19 December 1863.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5193,7 +5226,8 @@ Vor Skjærm og vort Skjold!
 
 <poem id="richardt20190730114">
 <head>
-    <title>Efter Dannevirkes Rømning.(Skrevet den 7 Februar 1864.)</title>
+    <title>Efter Dannevirkes Rømning</title>
+    <subtitle>(Skrevet den 7 Februar 1864.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5280,7 +5314,8 @@ og kæmper som en Løve.
 
 <poem id="richardt20190730116">
 <head>
-    <title>Krig og Fred.(Marts 1864.)</title>
+    <title>Krig og Fred</title>
+    <subtitle>(Marts 1864.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5325,7 +5360,8 @@ Krig er Fredens Moderskjød.
 
 <poem id="richardt20190730117">
 <head>
-    <title>Slesvigs Besættelse.(April 1864.)</title>
+    <title>Slesvigs Besættelse</title>
+    <subtitle>(April 1864.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5380,7 +5416,8 @@ og Armen ung og modig!
 
 <poem id="richardt20190730118">
 <head>
-    <title>I Nød og Fare.(Kirkekantate - Under Dybbølskansernes Belejring.)</title>
+    <title>I Nød og Fare</title>
+    <subtitle>(Kirkekantate - Under Dybbølskansernes Belejring.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5442,7 +5479,8 @@ vældige Gud!
 
 <poem id="richardt20190730121">
 <head>
-    <title>Ved Foraarets Komme.(Maj 1864.)</title>
+    <title>Ved Foraarets Komme</title>
+    <subtitle>(Maj 1864.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5472,7 +5510,8 @@ og tænke paa Ro?
 
 <poem id="richardt20190730122">
 <head>
-    <title>Kampen ved Helgoland.(Maj 1864.)</title>
+    <title>Kampen ved Helgoland</title>
+    <subtitle>(Maj 1864.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5507,7 +5546,8 @@ vajer ungt det gamle Flag!
 
 <poem id="richardt20190730123">
 <head>
-    <title>For Hæren og Flaaden.(5 Juni 1864.)</title>
+    <title>For Hæren og Flaaden</title>
+    <subtitle>(5 Juni 1864.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5562,7 +5602,8 @@ i Danmarks Modernavn!
 
 <poem id="richardt20190730124">
 <head>
-    <title>Efter Tabet af Als.(Juli 1864.)</title>
+    <title>Efter Tabet af Als</title>
+    <subtitle>(Juli 1864.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5599,7 +5640,8 @@ kan give hvad han tog!
 
 <poem id="richardt20190730125">
 <head>
-    <title>Sørgetoner.(August 1864.)</title>
+    <title>Sørgetoner</title>
+    <subtitle>(August 1864.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5627,7 +5669,8 @@ Da skal atter Danmarks Træ faae Marv.
 
 <poem id="richardt20190730126">
 <head>
-    <title>De Saarede.(Septbr. 1864.)</title>
+    <title>De Saarede</title>
+    <subtitle>(Septbr. 1864.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5665,7 +5708,8 @@ os til Kors og Kjærlighed!
 
 <poem id="richardt20190730127">
 <head>
-    <title>Til de Faldnes Efterladte.(Novbr. 1864.)</title>
+    <title>Til de Faldnes Efterladte</title>
+    <subtitle>(Novbr. 1864.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -5752,7 +5796,8 @@ den var saa tung, thi den bar Guld i Skjødet.
 
 <poem id="richardt20190730128">
 <head>
-    <title>Ved Løvfald.(Oktober 1864.)</title>
+    <title>Ved Løvfald</title>
+    <subtitle>(Oktober 1864.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
