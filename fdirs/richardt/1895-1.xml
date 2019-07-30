@@ -135,7 +135,7 @@ men den kan rumme Mange!
 </body>
 </poem>
 
-<poem id="richardt201907304">
+<poem id="richardt201907304" variant="richardt2001122901">
 <head>
     <title>For Sverrig og Norge</title>
     <subtitle>(1860.)</subtitle>
@@ -396,7 +396,7 @@ kjender I saa <w>Carl Ploug!</w>
 </body>
 </poem>
 
-<poem id="richardt201907309">
+<poem id="richardt201907309" variant="richardt2019052909">
 <head>
     <title>Filistervise</title>
     <subtitle>(Ved C. Hostrups Bortrejse.)</subtitle>
@@ -2150,25 +2150,19 @@ hun og jeg.
 </body>
 </poem>
 
-<poem id="richardt2019073046">
+<section level="2">
 <head>
     <title>Texter.</title>
-    <firstline>xx</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
 </head>
-<body>
-</body>
-</poem>
+<content>
 
-<poem id="richardt2019073047">
+<poem id="richardt2019073047" variant="richardt2019052944">
 <head>
-    <title>1.
-						Det er Efteraar.
-						(P. Heise.)</title>
-    <firstline>xx</firstline>
+    <title><num>1.</num>Det er Efteraar</title>
+    <subtitle>(P. Heise.)</subtitle>
+    <firstline>Jeg fryser, siger den Lærke graa</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="65-66"/>
 </head>
 <body>
 Jeg fryser, siger den Lærke graa,
@@ -2208,12 +2202,11 @@ og hun, hun forstaar sig paa Kjælder og Kjøkken.
 
 <poem id="richardt2019073048">
 <head>
-    <title>2.
-						Tøvejr.
-						(F. P. E. Hartmann.)</title>
-    <firstline>xx</firstline>
+    <title><num>2.</num>Tøvejr</title>
+    <subtitle>(F. P. E. Hartmann.)</subtitle>
+    <firstline>Hør, hør hvor det tøer!</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="67"/>
 </head>
 <body>
 Hør, hør hvor det tøer!
@@ -2234,14 +2227,13 @@ drømme om Drikkepenge.
 </body>
 </poem>
 
-<poem id="richardt2019073049">
+<poem id="richardt2019073049" variant="richardt2019052946">
 <head>
-    <title>3.
-						I Skoven.
-						(Gade.)</title>
-    <firstline>xx</firstline>
+    <title><num>3.</num>I Skoven</title>
+    <subtitle>(Gade.)</subtitle>
+    <firstline>Der er saa travlt i Skoven</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="67-68"/>
 </head>
 <body>
 Der er saa travlt i Skoven
@@ -2269,6 +2261,9 @@ kom ud, kom ud,
 thi Bøgen er saa kjøn en Brud!
 </body>
 </poem>
+
+</content>
+</section>
 
 <poem id="richardt2019073050">
 <head>
@@ -11086,22 +11081,16 @@ gyldnes til Høst.
 </body>
 </poem>
 
-<poem id="richardt20190730218">
+<section>
 <head>
-    <title>Fra Aarets Tider.</title>
-    <firstline>xx</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <title>Fra Aarets Tider</title>
 </head>
-<body>
-</body>
-</poem>
+<content>
 
 <poem id="richardt20190730219">
 <head>
-    <title>I.
-						Foraarsvise.</title>
-    <firstline>xx</firstline>
+    <title><num>I.</num>Foraarsvise.</title>
+    <firstline>Hvor det skyder og bryder</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
 </head>
@@ -11150,8 +11139,7 @@ kom ud!
 
 <poem id="richardt20190730220">
 <head>
-    <title>II.
-						Sommervise.</title>
+    <title><num>II.</num>Sommervise.</title>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -11201,9 +11189,8 @@ saa hastigt Du fly'r som et drømmerigt Blund!
 
 <poem id="richardt20190730221">
 <head>
-    <title>III.
-						Mod Efteraar.</title>
-    <firstline>xx</firstline>
+    <title><num>III.</num>Mod Efteraar.</title>
+    <firstline>Roser og Liljer, vi maa skilles ad</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
 </head>
@@ -11237,9 +11224,8 @@ drømmer hun sødt om Sol og Roser røde.
 
 <poem id="richardt20190730222">
 <head>
-    <title>IV.
-						December skov.</title>
-    <firstline>xx</firstline>
+    <title><num>IV.</num>December skov</title>
+    <firstline>Som et Rov for Stormens Horde</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
 </head>
@@ -11275,6 +11261,9 @@ det er Hallens Klokkeringen
 for det hedengangne Aar.
 </body>
 </poem>
+
+</content>
+</section>
 
 </workbody>
 </kalliopework>
