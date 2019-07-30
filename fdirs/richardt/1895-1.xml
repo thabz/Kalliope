@@ -1,14 +1,19 @@
 <?xml version="1.0"?>
-<kalliopework id="1895-1" author="richardt" status="complete" type="poetry">
-  <workhead>
+<kalliopework id="1895-1" author="richardt" status="complete" type="poetry" parent="1895">
+<workhead>
     <title>Første Deel</title>
-  </workhead>
-  <workbody><poem id="richardt201907301">
+    <year>1895</year>
+    <source facsimile="1895-1" facsimile-pages-num="342" facsimile-pages-offset="8">Christian Richardt: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, Kbh., 1895, 1. del.</source> 
+</workhead>
+<workbody>
+
+<poem id="richardt201907301" variant="richardt2019052901">
 <head>
-    <title>Danmark.(Efter den første slesvigske Krig.)</title>
-    <firstline>xx</firstline>
+    <title>Danmark</title>
+    <subtitle>(Efter den første slesvigske Krig.)</subtitle>
+    <firstline>Mit fagre Hjem, hvor Bølgen blaa</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="1-2"/>
 </head>
 <body>
 Mit fagre Hjem, hvor Bølgen blaa
@@ -45,12 +50,13 @@ Staa fast mit gamle danske Hus!
 </body>
 </poem>
 
-<poem id="richardt201907302">
+<poem id="richardt201907302" variant="richardt2019052902">
 <head>
-    <title>Nordens Eenhed.(1852.)</title>
-    <firstline>xx</firstline>
+    <title>Nordens Eenhed</title>
+    <subtitle>(1852.)</subtitle>
+    <firstline>Udbrændt er Bavnernes blodige Flamme</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="2-3"/>
 </head>
 <body>
 Udbrændt er Bavnernes blodige Flamme,
@@ -86,9 +92,9 @@ Trin efter Trin som ved Troldhættens Fløje,
 <poem id="richardt201907303">
 <head>
     <title>Studentersang.</title>
-    <firstline>xx</firstline>
+    <firstline>Vi er et lystigt Folkefærd</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="3-4"/>
 </head>
 <body>
 Vi er et lystigt Folkefærd
@@ -131,10 +137,11 @@ men den kan rumme Mange!
 
 <poem id="richardt201907304">
 <head>
-    <title>For Sverrig og Norge.(1860.)</title>
-    <firstline>xx</firstline>
+    <title>For Sverrig og Norge</title>
+    <subtitle>(1860.)</subtitle>
+    <firstline>En Skaal for det blinkende Søernes Baand</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="5-6"/>
 </head>
 <body>
 En Skaal for det blinkende Søernes Baand,
@@ -197,10 +204,10 @@ med dem vil vi kæmpe og sejre!
 
 <poem id="richardt201907305">
 <head>
-    <title>For Kvinden.</title>
-    <firstline>xx</firstline>
+    <title>For Kvinden</title>
+    <firstline>Vi sang saa tidt om Nordens Taarne trende</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="7-8"/>
 </head>
 <body>
 Vi sang saa tidt om Nordens Taarne trende;
@@ -248,9 +255,9 @@ der hun boer!
 <poem id="richardt201907306">
 <head>
     <title>Balvise.</title>
-    <firstline>xx</firstline>
+    <firstline>Mens Blomsterflokken sover sødt</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="8-9"/>
 </head>
 <body>
 Mens Blomsterflokken sover sødt,
@@ -302,10 +309,11 @@ at sidde her og synge!
 
 <poem id="richardt201907307">
 <head>
-    <title>Rejsesang.(Til Upsalatoget 1856.)</title>
-    <firstline>xx</firstline>
+    <title>Rejsesang</title>
+    <subtitle>(Til Upsalatoget 1856.)</subtitle>
+    <firstline>Paa mægtige Vinger mod Norden det gaar</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="10"/>
 </head>
 <body>
 Paa mægtige Vinger mod Norden det gaar,
@@ -342,10 +350,12 @@ for Bøgen og Birken til lysere Vaar!
 
 <poem id="richardt201907308">
 <head>
-    <title>Studentervise.(Ved C. Plougs Studenterjubilæum.)</title>
-    <firstline>xx</firstline>
+    <title>Studentervise</title>
+    <subtitle>(Ved C. Plougs Studenterjubilæum.)</subtitle>
+    <firstline>Vi Studenter har en Skik</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="11-12"/>
+    <keywords>plough</keywords>
 </head>
 <body>
 Vi Studenter har en Skik:
@@ -382,16 +392,18 @@ om Ideernes Riger;
 han stod ved Ror, naar vi styred mod Norden,
 han var vor Thor, naar vi trængte til Torden,
 han var vor Hejmdal, naar Vægterne sov -
-kjender I saa Carl Ploug !
+kjender I saa <w>Carl Ploug!</w>
 </body>
 </poem>
 
 <poem id="richardt201907309">
 <head>
-    <title>Filistervise.(Ved C. Hostrups Bortrejse.)</title>
-    <firstline>xx</firstline>
+    <title>Filistervise</title>
+    <subtitle>(Ved C. Hostrups Bortrejse.)</subtitle>
+    <firstline>Fryd dig, du tro Filisterflok</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="12-13"/>
+    <keywords>hostrup</keywords>
 </head>
 <body>
 Fryd dig, du tro Filisterflok:
@@ -428,10 +440,11 @@ nej, vort Løsen er: Meer Smør i Grøden!
 
 <poem id="richardt2019073010">
 <head>
-    <title>For Danmark.(Foraaret 1857.)</title>
-    <firstline>xx</firstline>
+    <title>For Danmark</title>
+    <subtitle>(Foraaret 1857.)</subtitle>
+    <firstline>O Danmark, i din Kappe blaa</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="13-14"/>
 </head>
 <body>
 O Danmark, i din Kappe blaa,
@@ -468,10 +481,10 @@ en Hilsen over Sundet!
 
 <poem id="richardt2019073011">
 <head>
-    <title>Ved en Skoleskovtur.</title>
-    <firstline>xx</firstline>
+    <title>Ved en Skoleskovtur</title>
+    <firstline>Om Du vil være stærk og fri</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="14-15"/>
 </head>
 <body>
 Om Du vil være stærk og fri,
@@ -505,13 +518,14 @@ og det var det vi skulde!
 
 <poem id="richardt2019073012">
 <head>
-    <title>Fest-Kantate.(Ved P. Helses Bortrejse, afsunget i Studenter-Sangforeningen.)</title>
+    <title>Fest-Kantate</title>
+    <subtitle>(Ved P. Heises Bortrejse, afsunget i Studenter-Sangforeningen.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="15-16"/>
 </head>
 <body>
-
+<!-- TODO: Her mangler noget -->
 men Du o Ven, som lægger Sceptret ned,
 hvormed Du fægted højt i Luftens Rige,
 at ingen Tonetyve skulde snige
