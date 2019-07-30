@@ -327,7 +327,6 @@ const htmlToXml = (
 };
 
 let resizeImageQueue = async.queue((task, callback) => {
-  console.log('Resize image ' + task.inputfile);
   sharp(task.inputfile)
     .resize(task.maxWidth, 10000)
     .max()
