@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="ariosto" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Ludovico</firstname>
+    <lastname>Ariosto</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1474-09-08</date>
+      <place>Reggio nell'Emilia</place>
+    </born>
+    <dead>
+      <date>1533-07-06</date>
+      <place>Ferrara</place>
+    </dead>
+  </period>
+</person>

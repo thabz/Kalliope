@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="jackson" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Helen Hunt</firstname>
+    <lastname>Jackson</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1830</date>
+      <place>Amherst, Mass.</place>
+    </born>
+    <dead>
+      <date>1885</date>
+    </dead>
+  </period>
+</person>

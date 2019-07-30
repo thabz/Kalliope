@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="burns" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Robert</firstname>
+    <lastname>Burns</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1759-01-25</date>
+      <place>Alloway, Ayrshire, Skotland</place>
+    </born>
+    <dead>
+      <date>1796-07-21</date>
+      <place>Dumfries, Dumfriesshire, England</place>
+    </dead>
+  </period>
+  <works>1786,1787,1788,1789,1786p,andre</works>
+</person>

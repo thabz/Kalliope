@@ -1,6 +1,9 @@
 #!/usr/bin/ruby
 
+require 'nokogiri'
+
 poetid = ''
+
 if ARGV.length > 0
     poetid = ARGV[0]
 else
@@ -45,4 +48,25 @@ end
 
 File.open(path, 'w') do |file|
   file.puts lines
+end
+
+# Modify info.xml
+
+infoxmlfilename = "fdirs/#{poetid}/info.xml"
+infoxmlfile = File.read(infoxmlfilename)
+infoxml = Nokogiri::XML(infoxmlfile)
+poetnodes = infoxml.xpath(".//person")
+
+worksnodes = poetnodes.first.xpath('.//works')
+
+if worksnodes.empty?
+    poetnodes.first.add_child("  <works>#{workId}</works>\n")
+else
+    content = worksnodes.first.content.split(',')
+    content.push(workId)
+    worksnodes.first.content = content.sort.join(',')
+end
+
+File.open(infoxmlfilename, 'w') do |f|
+    f.write infoxml.to_xml
 end

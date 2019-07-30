@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="frederik3" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 3.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1609-03-18</date>
+      <place>Haderslevhus</place>
+    </born>
+    <coronation>
+      <date>1648-07-06</date>
+    </coronation>
+    <dead>
+      <date>1670-02-09</date>
+      <place inon="on">Københavns Slot</place>
+    </dead>
+  </period>
+</person>

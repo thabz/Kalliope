@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="luther" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Martin</firstname>
+    <lastname>Luther</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1483-11-10</date>
+      <place>Eisleben, Sachsen (nu Tyskland)</place>
+    </born>
+    <dead>
+      <date>1546-02-18</date>
+      <place>Eisleben, Sachsen (nu Tyskland)</place>
+    </dead>
+  </period>
+  <works>salmer,andre</works>
+</person>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="olavius" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johannes</firstname>
+    <lastname>Olavius</lastname>
+    <christened>Johannes Olsen</christened>
+  </name>
+  <period>
+    <born>
+      <date>1624-09-27</date>
+      <place>Randers</place>
+    </born>
+    <dead>
+      <date>1698-05-01</date>
+      <place>Randers</place>
+    </dead>
+  </period>
+</person>

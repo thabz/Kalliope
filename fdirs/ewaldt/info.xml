@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="ewaldt" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Theodor</firstname>
+    <lastname>Ewald</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1874-07-19</date>
+      <place inon="on">Frederiksborg Slot</place>
+    </born>
+    <dead>
+      <date>1923-06-29</date>
+      <place>Nykøbing Sjælland</place>
+    </dead>
+  </period>
+  <works>1894</works>
+</person>

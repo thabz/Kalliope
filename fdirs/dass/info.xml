@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="dass" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Petter</firstname>
+    <lastname>Dass</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1647 ca.</date>
+      <place>Herøy, Nordland</place>
+    </born>
+    <dead>
+      <date>1707-08-17</date>
+    </dead>
+  </period>
+  <works>1739,bib,kate,evang,andre</works>
+</person>

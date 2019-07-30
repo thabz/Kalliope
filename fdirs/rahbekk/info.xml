@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rahbekk" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Kamma</firstname>
+    <lastname>Rahbek</lastname>
+    <fullname>Karen Margrethe Heger</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1775-10-19</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1829-01-21</date>
+      <place inon="on">Frederiksberg</place>
+    </dead>
+  </period>
+</person>

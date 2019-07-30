@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="oehlenschlaeger" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Adam</firstname>
+    <lastname>Oehlenschläger</lastname>
+    <fullname>Adam Gottlob Oehlenschläger</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1779-11-14</date>
+      <place>Kbh.</place>
+    </born>
+    <dead>
+      <date>1850-01-20</date>
+      <place>Kbh.</place>
+    </dead>
+  </period>
+  <works>1803,1805,1807,1811,1813,1814,1817,1819,1828,1841,1849,1849d,andre</works>
+</person>

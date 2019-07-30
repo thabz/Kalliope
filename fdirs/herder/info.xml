@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="herder" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Johann Gottfried von</firstname>
+    <lastname>Herder</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1744-08-25</date>
+      <place>Mohrungen (nu Murag, Polen)</place>
+    </born>
+    <dead>
+      <date>1803-12-18</date>
+      <place>Weimar</place>
+    </dead>
+  </period>
+  <works>1778,1778v,1779,andre</works>
+</person>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="moe" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Jørgen</firstname>
+    <lastname>Moe</lastname>
+  </name>
+  <period>
+    <born>
+        <date>1813-04-22</date>
+        <place>Mo i Hole</place>
+    </born>
+    <dead>
+      <date>1882-03-27</date>
+      <place>Kristiansand</place>
+    </dead>
+  </period>
+</person>

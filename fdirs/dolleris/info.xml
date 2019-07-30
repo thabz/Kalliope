@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="dolleris" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Andreas</firstname>
+    <lastname>Dolleris</lastname>
+    <fullname>Jørgen Andreas Dolleris</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1850-10-16</date>
+      <place>Skyum, Thy</place>
+    </born>
+    <dead>
+      <date>1925-08-27</date>
+      <place>Vejle</place>
+    </dead>
+  </period>
+  <works>1892,1894,1904</works>
+</person>
