@@ -2145,7 +2145,7 @@ hun og jeg.
 </body>
 </poem>
 
-<section level="2">
+<section level="3">
 <head>
     <title>Texter</title>
 </head>
@@ -4495,7 +4495,7 @@ og Du kan gjerne styre!
 </body>
 </poem>
 
-<section>
+<section level="3">
 <head>
     <title>Texter</title>
 </head>
@@ -4997,7 +4997,7 @@ lægge Danmark selv i Grus!
 </body>
 </poem>
 
-<section>
+<section level="3" id="richardt20190730108">
 <head>
     <title>Et Aar</title>
 </head>
@@ -6973,6 +6973,8 @@ ingen Franker er mig fremmed.«
 </body>
 </poem>
 
+<!-- TODO: Tornerose skal deles op i en section med fire tekster. Se indholdsfortegnelsen. -->
+
 <poem id="richardt20190730151">
 <head>
     <title>Tornerose</title>
@@ -8926,7 +8928,7 @@ kan altid Alle samle.
 </body>
 </poem>
 
-<section id="richardt20190730168">
+<section level="3">
 <head>
     <title>Ældre Studenterviser</title>
 </head>
@@ -10298,18 +10300,22 @@ som Eventyrets Kejser!
 </body>
 </poem>
 
-<poem id="richardt20190730203">
+<section level="3">
 <head>
     <title>Fra Studentermødet</title>
-    <subtitle>1869</subtitle>
-    <firstline>Der gaar Dans ved Elv og Fjord</firstline>
+    <toctitle>Fra Studentermødet 1-2</toctitle>
+</head>
+<content>
+
+<poem id="richardt20190730203">
+<head>
+    <title><num>I.</num>Til Dansen i Drammen</title>
+    <toctitle><num>2.</num>Til Dansen i Drammen</toctitle>
+    <subtitle>Der gaar Dans ved Elv og Fjord</subtitle>
     <quality>korrektur1,kilde,side</quality>
-    <source pages="312-314"/>
+    <source pages="312-313"/>
 </head>
 <body>
-<nonum><center>I.</center></nonum>
-<nonum><center><small>Til Dansen i Drammen.</small></center></nonum>
-
 Der gaar Dans ved Elv og Fjord,
 Elven selv maa synge Kor;
 <i>der</i> danser Tømmerstokken til sin Slægt ombord.
@@ -10340,15 +10346,25 @@ snart veed mangen stakkels Yngling hverken ud
 eller ind;
 ja i Dansen
 fanges vore Hjerter her i Norge!
+</body>
+</poem>
 
 ---
-
-<nonum><center>II.</center></nonum>
-<nonum><center><small>Nordens Kvinde</small></center></nonum>
-
+<poem id="richardt20190730204">
+<head>
+    <title><num>I.</num>Nordens Kvinde</title>
+    <toctitle><num>2.</num>Nordens Kvinde</toctitle>
+    <firstline>xx</firstline>
+    <quality>korrektur1,kilde,side</quality>
+    <source pages="313-314"/>
+</head>
+<body>
 TODO:Tekst mangler
 </body>
 </poem>
+
+</content>
+</section>
 
 <poem id="richardt20190730206">
 <head>
@@ -10913,15 +10929,17 @@ gyldnes til Høst.
 </body>
 </poem>
 
-<section>
+<section level="3">
 <head>
     <title>Fra Aarets Tider</title>
+    <toctitle>Fra Aarets Tider 1-4</toctitle>
 </head>
 <content>
 
 <poem id="richardt20190730219">
 <head>
     <title><num>I.</num>Foraarsvise</title>
+    <toctitle><num>1.</num>Foraarsvise</toctitle>
     <firstline>Hvor det skyder og bryder</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="329-330"/>
@@ -10972,6 +10990,7 @@ kom ud!
 <poem id="richardt2002050906">
 <head>
     <title><num>II.</num>Sommervise</title>
+    <toctitle><num>2.</num>Sommervise</toctitle>
     <firstline>Naar Egene knoppes</firstline>
     <notes>
         <note type="credits">Bidrag fra Sven Sørensen.</note>
@@ -11025,6 +11044,7 @@ saa hastigt Du fly'r som et drømmerigt Blund!
 <poem id="richardt20190730221">
 <head>
     <title><num>III.</num>Mod Efteraar</title>
+    <toctitle><num>3.</num>Mod Efteraar</toctitle>
     <firstline>Roser og Liljer, vi maa skilles ad</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="332-333"/>
@@ -11059,7 +11079,8 @@ drømmer hun sødt om Sol og Roser røde.
 
 <poem id="richardt20190730222">
 <head>
-    <title><num>IV.</num>December skov</title>
+    <title><num>IV.</num>Decemberskov</title>
+    <toctitle><num>4.</num>Decemberskov</toctitle>
     <firstline>Som et Rov for Stormens Horde</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="333-334"/>
