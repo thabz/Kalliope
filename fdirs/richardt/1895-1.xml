@@ -627,7 +627,7 @@ hun og Du, hendes gjenfundne Datter!
 </body>
 </poem>
 
-<poem id="richardt2019073014" var="richardt2019052915">
+<poem id="richardt2019073014" variant="richardt2019052915">
 <head>
     <title>† C. M. Wengel</title>
     <indextitle>C. M. Wengel</indextitle>
@@ -764,7 +764,7 @@ og broget Blomsterbelte!
 </body>
 </poem>
 
-<poem id="richardt2019073017">
+<poem id="richardt2019073017" variant="richardt2019052918">
 <head>
     <title>Den Lovende</title>
     <firstline>Han var saa ung og modig</firstline>
@@ -1246,7 +1246,7 @@ Smaafuglenes Røst.
 </body>
 </poem>
 
-<poem id="richardt2019073026">
+<poem id="richardt2019073026" variant="richardt2019052927">
 <head>
     <title>Paa Kastelsvejen</title>
     <firstline>Hvor Sneen slaar en takket Bord</firstline>
@@ -1316,7 +1316,7 @@ hvad de med Suk maa savne!
 </body>
 </poem>
 
-<poem id="richardt2019073027">
+<poem id="richardt2019073027" variant="richardt2002121501">
 <head>
     <title>Paa Badehuset</title>
     <firstline>Her er den allersolideste Kursal</firstline>
@@ -1730,7 +1730,7 @@ det er kun Evighedens Vugge!
 </body>
 </poem>
 
-<poem id="richardt2019073036">
+<poem id="richardt2019073036" variant="richardt2019052937">
 <head>
     <title>Mellem Gravene</title>
     <firstline>Hist sig Marmorhøje brede</firstline>
@@ -1858,7 +1858,7 @@ lidt af Barnets Juleglæde.
 </body>
 </poem>
 
-<poem id="richardt2019073038">
+<poem id="richardt2019073038" variant="richardt2019052939">
 <head>
     <title>Savoyarddrengens Sang</title>
     <firstline>Jeg danser og drejer paa min Lire saa fro</firstline>
@@ -2067,14 +2067,16 @@ ingensinde, ingensinde!
 </body>
 </poem>
 
-<poem id="richardt2019073044">
+<poem id="richardt2019073044" variant="richardt2006052501">
 <head>
     <title>Faer skal sove</title>
     <subtitle>(Til et Billede af <i>Bloch</i>.)</subtitle>
     <firstline>Hører Du det, min egen Unge</firstline>
+    <pictures>
+        <picture ref="bloch/fiskerstue-1858">Digtet kommenterer dette maleri af Carl Bloch.</picture>
+    </pictures>
     <quality>korrektur1,kilde,side</quality>
     <source pages="63-64"/>
-    <!-- TODO: Vis billedet som på varianten. -->
 </head>
 <body>
 Hører Du det, min egen Unge,
@@ -2193,7 +2195,7 @@ og hun, hun forstaar sig paa Kjælder og Kjøkken.
 </body>
 </poem>
 
-<poem id="richardt2019073048">
+<poem id="richardt2019073048" variant="richardt2002050902">
 <head>
     <title><num>2.</num>Tøvejr</title>
     <subtitle>(F. P. E. Hartmann.)</subtitle>
@@ -6093,7 +6095,7 @@ end Vindens Legen med Løvet.
 </body>
 </poem>
 
-<poem id="richardt20190730137">
+<poem id="richardt20190730137" variant="richardt1999100502">
 <head>
     <title>Naturen og Kunsten</title>
     <subtitle>Af en Kantate</subtitle>
