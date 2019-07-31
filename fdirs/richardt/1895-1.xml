@@ -89,7 +89,7 @@ Trin efter Trin som ved Troldhættens Fløje,
 </body>
 </poem>
 
-<poem id="richardt201907303">
+<poem id="richardt201907303" variant="richardt2019052903">
 <head>
     <title>Studentersang</title>
     <firstline>Vi er et lystigt Folkefærd</firstline>
@@ -202,7 +202,7 @@ med dem vil vi kæmpe og sejre!
 </body>
 </poem>
 
-<poem id="richardt201907305">
+<poem id="richardt201907305" variant="richardt2019052905">
 <head>
     <title>For Kvinden</title>
     <firstline>Vi sang saa tidt om Nordens Taarne trende</firstline>
@@ -252,7 +252,7 @@ der hun boer!
 </body>
 </poem>
 
-<poem id="richardt201907306">
+<poem id="richardt201907306" variant="richardt2019052906">
 <head>
     <title>Balvise</title>
     <firstline>Mens Blomsterflokken sover sødt</firstline>
@@ -307,7 +307,7 @@ at sidde her og synge!
 </body>
 </poem>
 
-<poem id="richardt201907307">
+<poem id="richardt201907307" variant="richardt2019052907">
 <head>
     <title>Rejsesang</title>
     <subtitle>(Til Upsalatoget 1856.)</subtitle>
@@ -348,7 +348,7 @@ for Bøgen og Birken til lysere Vaar!
 </body>
 </poem>
 
-<poem id="richardt201907308">
+<poem id="richardt201907308" variant="richardt2019052908">
 <head>
     <title>Studentervise</title>
     <subtitle>(Ved C. Plougs Studenterjubilæum.)</subtitle>
@@ -438,7 +438,7 @@ nej, vort Løsen er: Meer Smør i Grøden!
 </body>
 </poem>
 
-<poem id="richardt2019073010">
+<poem id="richardt2019073010" variant="richardt2019052910">
 <head>
     <title>For Danmark</title>
     <subtitle>(Foraaret 1857.)</subtitle>
@@ -479,7 +479,7 @@ en Hilsen over Sundet!
 </body>
 </poem>
 
-<poem id="richardt2019073011">
+<poem id="richardt2019073011" variant="richardt2019052911">
 <head>
     <title>Ved en Skoleskovtur</title>
     <firstline>Om Du vil være stærk og fri</firstline>
@@ -566,7 +566,7 @@ Og Du faar Kritiker fra agtede Hænder!
 </body>
 </poem>
 
-<poem id="richardt2019073013">
+<poem id="richardt2019073013" variant="richardt2019052914">
 <head>
     <title>Danmarks Frihed</title>
     <subtitle>(Den 5. Juni 1860.)</subtitle>
@@ -627,7 +627,7 @@ hun og Du, hendes gjenfundne Datter!
 </body>
 </poem>
 
-<poem id="richardt2019073014">
+<poem id="richardt2019073014" var="richardt2019052915">
 <head>
     <title>† C. M. Wengel</title>
     <indextitle>C. M. Wengel</indextitle>
@@ -1381,7 +1381,7 @@ altid en styrkende Sang!
 </body>
 </poem>
 
-<poem id="richardt2019073028">
+<poem id="richardt2019073028" variant="richardt2019052929">
 <head>
     <title>Paa Kvisten</title>
     <firstline>Min Gjenbo er en Mur og mit Skjul er en Kvist</firstline>
@@ -1412,7 +1412,7 @@ og nikker saa længe, til jeg sover som en Steen.
 </body>
 </poem>
 
-<poem id="richardt2019073029">
+<poem id="richardt2019073029" variant="richardt2019052930">
 <head>
     <title>Stambogsblad</title>
     <firstline>Min Barndoms Legesøster og Veninde</firstline>
@@ -1443,7 +1443,7 @@ og Mindets Fugle kredse hendes Tanke!
 </body>
 </poem>
 
-<poem id="richardt2019073030">
+<poem id="richardt2019073030" variant="richardt2002050905">
 <head>
     <title>Lær mig</title>
     <firstline>Lær mig Nattens Stjerne</firstline>
@@ -1513,7 +1513,7 @@ o hjælp mig til at græde!
 </body>
 </poem>
 
-<poem id="richardt2019073032">
+<poem id="richardt2019073032" variant="richardt2019052933">
 <head>
     <title>Korsets Vej</title>
     <firstline>Et Kors det var det haarde, trange Leje</firstline>
@@ -1695,7 +1695,7 @@ om Munden.
 </body>
 </poem>
 
-<poem id="richardt2019073035">
+<poem id="richardt2019073035" variant="richardt2019052936">
 <head>
     <title>Vuggerne</title>
     <firstline>En Vidiekurv paa Gænger smaa</firstline>
@@ -1939,22 +1939,19 @@ den første Blomst i den sidste Snee!
 </body>
 </poem>
 
-<section id="richardt2019073040" level="3">
+<poem id="richardt2019073041" variant="richardt2019052929">
 <head>
     <title>Beethovenske Stemninger</title>
     <subtitle>(Sonata quasi Fantasia.)</subtitle>
-    <source pages="59-63"/>
-</head>
-<content>
-
-<poem id="richardt2019073041">
-<head>
-    <title><num>1.</num>Adagio</title>
     <firstline>Mig fryder ej den lyse Dag</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages="59-60"/>
+    <source pages="59-63"/>
 </head>
 <body>
+    
+<nonum><center>1.</center></nonum>
+<nonum><center><small>Adagio</small></center></nonum>
+
 Mig fryder ej den lyse Dag,
 ej Skovens gyngende, grønne Tag,
 ej Stjernen i det Høje;
@@ -1983,17 +1980,12 @@ vift med din Vinge Kjølighed,
 kom styrk mig, sval mig, gjem mig!
 Og faar jeg blot et Pust af Fred,
 O Herre! kald saa hjem mig.
-</body>
-</poem>
 
-<poem id="richardt2019073042">
-<head>
-    <title><num>2.</num>Allegretto</title>
-    <firstline>I tusinde Solglimt</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="60-62"/>
-</head>
-<body>
+---
+
+<nonum><center>2.</center></nonum>
+<nonum><center><small>Allegretto</small></center></nonum>
+
 I tusinde Solglimt,
 I puslende Smaa!
 som, klarende Vældet
@@ -2046,17 +2038,12 @@ O smil mig imøde,
 Du duftende Snee!
 at Smilet kan døde
 min dybeste Vee.
-</body>
-</poem>
 
-<poem id="richardt2019073043">
-<head>
-    <title><num>3.</num>Presto agitato</title>
-    <firstline>Nej det spænder og det brænder</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="62-63"/>
-</head>
-<body>
+---
+
+<nonum><center>3.</center></nonum>
+<nonum><center><small>Presto agitato</small></center></nonum>
+
 Nej det spænder og det brænder
 og det jager i mit Bryst,
 og det hamrer og det jamrer
@@ -2079,9 +2066,6 @@ Altid savne, aldrig vinde -
 ingensinde, ingensinde!
 </body>
 </poem>
-
-</content>
-</section>
 
 <poem id="richardt2019073044">
 <head>
@@ -2126,7 +2110,7 @@ Hører Du ikke, at Faer skal sove!
 </body>
 </poem>
 
-<poem id="richardt2019073045">
+<poem id="richardt2019073045" variant="richardt2019052943">
 <head>
     <title>Frieri</title>
     <firstline>Alene vi gik i den grønne Skov</firstline>
@@ -2274,7 +2258,7 @@ thi Bøgen er saa kjøn en Brud!
 </content>
 </section>
 
-<poem id="richardt2019073050">
+<poem id="richardt2019073050" variant="richardt2019052948">
 <head>
     <title>Æblerne</title>
     <firstline>Engang om Eftersommeren</firstline>
@@ -9249,10 +9233,17 @@ Fred med dit Støv, og Stjerner om dit Minde!
 
 <poem id="richardt20190730178">
 <head>
-    <title>Til Kong Christian den Niende.*)5te Juni 1864</title>
+    <title>Til Kong Christian den Niende</title>
+    <subtitle>5te Juni 1864.</subtitle>
     <firstline>Vel mødt Kong Christian hos de danske Bøge</firstline>
+    <notes>
+        <note>* Her meddeles Sangen i den oprindelige Skikkelse.</note>
+    </notes>
+    <dates>
+        <event>1864-06-05</event>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="280-281"/>
 </head>
 <body>
 Vel mødt Kong Christian hos de danske Bøge
@@ -9295,10 +9286,17 @@ og i vor Kjærlighed din bedste Magt!
 
 <poem id="richardt20190730179">
 <head>
-    <title>Til Enkedronning Caroline Amalie.*)Sorgenfri den 16de Juli 1865</title>
+    <title>Til Enkedronning Caroline Amalie</title>
+    <subtitle>Sorgenfri den 16de Juli 1865</subtitle>
     <firstline>Disse Klokkers Kimen</firstline>
+    <notes>
+        <note>* Ved en Fest til Minde om Hendes første Indtog paa Sorgenfri.</note>
+    </notes>
+    <dates>
+        <event>1865-06-16</event>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="281-282"/>
 </head>
 <body>
 Disse Klokkers Kimen
@@ -9354,10 +9352,10 @@ tak fra Folkets Sjæl!
     <title>Ved Indvielsen af en Folkehøjskole.Januar 1867</title>
     <firstline>Den Bonde, som vil lede</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="283-285"/>
 </head>
 <body>
-I.    
+<nonum><center>I.</center></nonum>
 
 Den Bonde, som vil lede
 sin Avling med Forstand,
@@ -9395,7 +9393,8 @@ er bleven morgenlyst,
 skal vaagne Svende falde
 til vaagne Brødres Bryst.
 
-II.
+
+<nonum><center>II.</center></nonum>
 
 Kom da, raske Bondesønner,
 kom med Mod og Lyst!
@@ -9426,7 +9425,7 @@ Det skal Værket værne.
 </body>
 </poem>
 
-<section id="richardt20190730183">
+<section id="richardt20190730183" level="2">
 <head>
     <title>Til Slesvigerne</title>
 </head>
@@ -9437,7 +9436,7 @@ Det skal Værket værne.
     <title><num>I.</num>I Kjøbenhavn 1866</title>
     <firstline>Hvor fordum Volmers Ganger sprang</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="285-286"/>
 </head>
 <body>
 Hvor fordum Volmers Ganger sprang
@@ -9491,10 +9490,12 @@ af hine Grænsepæle!
 <head>
     <title><num>II.</num>Til Kryger og Aklmann</title>
     <subtitle>Foraaret 1867</subtitle>
-    <!-- TODO: Note -->
+    <notes>
+        <note>* Efter deres Hjemkomst fra Berlin.</note>
+    </notes>
     <firstline>Tak for djærv og sanddru Tale!</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="287-288"/>
 </head>
 <body>
 Tak for djærv og sanddru Tale!
@@ -9545,7 +9546,7 @@ som af Hjertet elske Gud.
     <title><num>III.</num>I Aarhus 1868</title>
     <firstline>Det Jern, der Fil skal vorde</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="288-289"/>
 </head>
 <body>
 Det Jern, der Fil skal vorde,
@@ -9591,13 +9592,18 @@ skal bide og skal slaa!
 
 <poem id="richardt20190730187">
 <head>
-    <title>Volmerslaget.*)</title>
-    <firstline>Alt Solen ildner om de sortblaa Skove</firstline>
+    <title>Volmerslaget</title>
+    <firstline>Vidt over grønne Bølge</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <notes>
+        <note>* Text fra Sangfesten i Kjøbenhavn, Sommeren 1868. Musikken af P. Heise.</note>
+    </notes>
+    <source pages="289-293"/>
 </head>
 <body>
-I.
+<nonum><center>I.</center></nonum>
+
+TODO:Tekst mangler
 
 Alt Solen ildner om de sortblaa Skove,
 til Ave Hornet klang, de Danske sove.
@@ -9612,7 +9618,8 @@ mens Kølleslag mod Ridderskjolde tørne:
 »De jager os til Havs de grumme Bjørne,
 hvor er vort Banner? Tabt! - Fly Danske, fly!«
 
-II.
+
+<nonum><center>II.</center></nonum>
 
 O Dannebrog, Flag for alle Flag,
 sexhundred Aar har Du vajet i Slag,
@@ -9634,10 +9641,14 @@ om Folket fylder af Ham sin Aand,
 
 <poem id="richardt20190730190">
 <head>
-    <title>Adam Oehlenschlägers Minde.April 1868.*)</title>
+    <title>Adam Oehlenschlägers Minde</title>
+    <subtitle>April 1868.</subtitle>
     <firstline>Forlængst er Skjalden lagt i Muld</firstline>
+    <notes>
+        <note>* I Studenterforeningen, ved Afdækningen af Digterens Buste.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="293-294"/>
 </head>
 <body>
 Forlængst er Skjalden lagt i Muld;
@@ -9677,10 +9688,13 @@ Da døer ej Oehlenschlägers Ætt.
 
 <poem id="richardt20190730191">
 <head>
-    <title>Septembertid.*)</title>
+    <title>Septembertid</title>
     <firstline>Hvor dejlig er September her i Danmark!</firstline>
+    <notes>
+        <note>* Skrevet i Marts 1868.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="294-297"/>
 </head>
 <body>
 Hvor dejlig er September her i Danmark!
@@ -9777,7 +9791,7 @@ da skal igjennem Stormtid Vaaren vindes.
     <subtitle>Ved Naturforskermødet 1873</subtitle>
     <firstline>Frit i sin Skjønhed løfter sig af Havet</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="297-298"/>
 </head>
 <body>
 Frit i sin Skjønhed løfter sig af Havet
@@ -9823,7 +9837,7 @@ Fuglen fra Skov.
     <subtitle>Ved Studenter-Jubilæet 1848-74</subtitle>
     <firstline>Det var et Aar, da Danmark skjalv</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="298-300"/>
 </head>
 <body>
 Det var et Aar, da Danmark skjalv.
@@ -9874,13 +9888,15 @@ af Tidens Flod!
 
 <poem id="richardt20190730194">
 <head>
-    <title>Kong Frederik den Syvende.Ved Afsløringen af Mindestøtten i Kjøge 1869</title>
+    <title>Kong Frederik den Syvende</title>
+    <subtitle>Ved Afsløringen af Mindestøtten i Kjøge 1869</subtitle>
     <firstline>Staa fast, vort Kongebilled</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <keywords>frederik7</keywords>
+    <source pages="300-302"/>
 </head>
 <body>
-I.
+<nonum><center>I.</center></nonum>
     
 Staa fast, vort Kongebilled,
 ved alfart Mødested, -
@@ -9918,8 +9934,9 @@ at vi skal vaage med, -
 staa fast vort Kongebilled,
 ved alfart Mødested!
 
+---
 
-II.
+<nonum><center>II.</center></nonum>
 
 See, hvad Kunstnerhaanden evner
 med en Smule Leer:
@@ -9953,10 +9970,13 @@ Folket af Guds Naade!
 <poem id="richardt20190730197">
 <head>
     <title>Stormfloden</title>
-    <subtitle>Indledning til en Forestilling for de Vandlidte. 1872.</subtitle>
+    <subtitle>
+        <line>Indledning til en Forestilling for de Vandlidte.</line>
+        <line>1872.</line>
+    </subtitle>
     <firstline>Du Hav, der som med Sang og Spil</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="302-304"/>
 </head>
 <body>
 Du Hav, der som med Sang og Spil
@@ -10007,10 +10027,11 @@ som I!
 
 <poem id="richardt20190730198">
 <head>
-    <title>Grundlovsvise.1871</title>
+    <title>Grundlovsvise</title>
+    <subtitle>1871</subtitle>
     <firstline>I Stalden var der Uro, Støj og Sparken</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="304-305"/>
 </head>
 <body>
 I Stalden var der Uro, Støj og Sparken,
@@ -10057,10 +10078,11 @@ Friheds Fest!
 
 <poem id="richardt20190730199">
 <head>
-    <title>Gyldendalske BoghandelsHundredaarsfest.1870</title>
+    <title>Gyldendalske Boghandels Hundredaarsfest</title>
+    <subtitle>1870</subtitle>
     <firstline>Hvor fordum Sankt Klaras Nonner gik i Lin</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="305-307"/>
 </head>
 <body>
 Hvor fordum Sankt Klaras Nonner gik i Lin,
@@ -10106,10 +10128,11 @@ til Kæmpe vorde, hvad først var Dværg,
 
 <poem id="richardt20190730200">
 <head>
-    <title>En Drikkevise.Til Studenternes Rusgilde 1871</title>
+    <title>En Drikkevise</title>
+    <subtitle>Til Studenternes Rusgilde 1871</subtitle>
     <firstline>I gamle Føniciens Land</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="307-309"/>
 </head>
 <body>
 I gamle Føniciens Land,
@@ -10170,11 +10193,12 @@ om ej Du faaer Purpur paa Næsen!
 
 <poem id="richardt20190730201">
 <head>
-    <title>Til C. Hostrup.Ved »Gjenboernes« Jubilæum 1869</title>
+    <title>Til C. Hostrup</title>
+    <subtitle>Ved »Gjenboernes« Jubilæum 1869</subtitle>
     <firstline>Ak, hvor er det længe siden</firstline>
     <quality>korrektur1,kilde,side</quality>
     <keywords>hostrup</keywords>
-    <source pages=""/>
+    <source pages="309-310"/>
 </head>
 <body>
 Ak, hvor er det længe siden
@@ -10221,7 +10245,7 @@ dobbelt Tak iaften!
     <firstline>I Østen, i Aladdins Land</firstline>
     <quality>korrektur1,kilde,side</quality>
     <keywords>andersen</keywords>
-    <source pages=""/>
+    <source pages="310-311"/>
 </head>
 <body>
 I Østen, i Aladdins Land,
@@ -10264,14 +10288,15 @@ som Eventyrets Kejser!
 
 <poem id="richardt20190730203">
 <head>
-    <title>Fra Studentermødet.1869</title>
+    <title>Fra Studentermødet</title>
+    <subtitle>1869</subtitle>
     <firstline>Der gaar Dans ved Elv og Fjord</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="312-314"/>
 </head>
 <body>
-I.
-Til Dansen i Drammen    
+<nonum><center>I.</center></nonum>
+<nonum><center><small>Til Dansen i Drammen.</small></center></nonum>
 
 Der gaar Dans ved Elv og Fjord,
 Elven selv maa synge Kor;
@@ -10304,7 +10329,10 @@ eller ind;
 ja i Dansen
 fanges vore Hjerter her i Norge!
 
-II.
+---
+
+<nonum><center>II.</center></nonum>
+<nonum><center><small>Nordens Kvinde</small></center></nonum>
 
 TODO:Tekst mangler
 </body>
@@ -10312,10 +10340,14 @@ TODO:Tekst mangler
 
 <poem id="richardt20190730206">
 <head>
-    <title>Mødet i Norge.13. Januar 1870</title>
+    <title>Mødet i Norge</title>
+    <subtitle>13. Januar 1870</subtitle>
     <firstline>I Norgesfarere! Hver og En</firstline>
+    <dates>
+        <event>1870-01-13</event>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="314-317"/>
 </head>
 <body>
 I Norgesfarere! Hver og En,
@@ -10414,10 +10446,14 @@ til Norges snedugede Fjeld!
 
 <poem id="richardt20190730207">
 <head>
-    <title>Johan Henrik Thomander.I Lund, ved Afsløringen af hans Buste, 7. Maj 1870</title>
+    <title>Johan Henrik Thomander</title>
+    <subtitle>I Lund, ved Afsløringen af hans Buste, 7. Maj 1870</subtitle>
     <firstline>Forstenet sidder Trolden Finn</firstline>
+    <dates>
+        <event>1870-05-07</event>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="317-318"/>
 </head>
 <body>
 Forstenet sidder Trolden Finn
@@ -10456,10 +10492,11 @@ som han, i Kamp mod Troldens Slægt!
 
 <poem id="richardt20190730208">
 <head>
-    <title>Skyttesang.1868</title>
+    <title>Skyttesang</title>
+    <subtitle>1868.</subtitle>
     <firstline>Med Krumveje ofte man slaar sig tiltaals</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="318-319"/>
 </head>
 <body>
 Med Krumveje ofte man slaar sig tiltaals,
@@ -10501,10 +10538,11 @@ den ligeste Vej var den bedste
 
 <poem id="richardt20190730209">
 <head>
-    <title>Ved et Diamantbryllup.December 1872</title>
+    <title>Ved et Diamantbryllup</title>
+    <subtitle>December 1872.</subtitle>
     <firstline>Herligt at mødes i Ungdommens Vaar</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="320"/>
 </head>
 <body>
 Herligt at mødes i Ungdommens Vaar,
@@ -10532,10 +10570,14 @@ Lys, som ej slukkes, naar Natten er nær!
 
 <poem id="richardt20190730210">
 <head>
-    <title>Ved et Jubilæum.Til Pastor P. W. v. Wylich i Greve, 9. Juni 1872</title>
+    <title>Ved et Jubilæum</title>
+    <subtitle>Til Pastor P. W. v. Wylich i Greve, 9. Juni 1872</subtitle>
     <firstline>Væxten altid er fra oven</firstline>
+    <dates>
+        <event>1872-06-00</event>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="320-321"/>
 </head>
 <body>
 Væxten altid er fra oven:
@@ -10570,11 +10612,16 @@ den, han skjænkte Simeon!
 
 <poem id="richardt20190730211">
 <head>
-    <title>Henrik Hertz.4. Marts 1870</title>
+    <title>† Henrik Hertz</title>
+    <indextitle>Henrik Hertz</indextitle>
+    <subtitle>4. Marts 1870.</subtitle>
     <firstline>Du gamle Sanger, som i Livets Kveld</firstline>
+    <dates>
+        <event>1870-03-04</event>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
     <keywords>hertzh</keywords>
-    <source pages=""/>
+    <source pages="321-322"/>
 </head>
 <body>
 Du gamle Sanger, som i Livets Kveld
@@ -10614,10 +10661,12 @@ I Jesu Navn Farvel!
 
 <poem id="richardt20190730212">
 <head>
-    <title>Emilie Monrad.1815-1871</title>
+    <title>† Emilie Monrad</title>
+    <indextitle>Emilie Monrad</indextitle>
+    <subtitle>1815-1871</subtitle>
     <firstline>Nu har Du tømt din Smertes Skaal</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="323"/>
 </head>
 <body>
 Nu har Du tømt din Smertes Skaal
