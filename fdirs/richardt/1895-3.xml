@@ -199,7 +199,7 @@ fra <i>Gethsemane</i> sig Stien vinder.
 <poem id="richardt201908014">
 <head>
     <title>Et Enebo.</title>
-    <firstline>xx</firstline>
+    <firstline>Paa et Fjeld i Rhonedalen</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="8-10"/>
 </head>
@@ -802,7 +802,7 @@ de Stavnsbaand aldrig løses!
 <poem id="richardt2019080121">
 <head>
     <title>Danmark.</title>
-    <firstline>xx</firstline>
+    <firstline>Ud for Verdens Herregaarde</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
 </head>
@@ -874,7 +874,7 @@ Kjærlighedens Sejre!
 <poem id="richardt2019080122">
 <head>
     <title>Til Sønderjyderne.</title>
-    <firstline>xx</firstline>
+    <firstline>Brødre mellem tvende Have</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
 </head>
@@ -918,7 +918,7 @@ I er Danmarks Formur, I!
 <poem id="richardt2019080123">
 <head>
     <title>Til de Unge!</title>
-    <firstline>xx</firstline>
+    <firstline>Aand og Legem er et Spand</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
 </head>
@@ -5508,7 +5508,7 @@ som Guds Kjærlighed gav Liv.
 <poem id="richardt20190801130">
 <head>
     <title>Perler.</title>
-    <firstline>xx</firstline>
+    <firstline>En Musling-Perle klar og rund</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
 </head>
@@ -5558,7 +5558,7 @@ thi uden Dig var Alting Tab!
 <poem id="richardt20190801131">
 <head>
     <title>Korsets Tegn.</title>
-    <firstline>xx</firstline>
+    <firstline>Det hellige Kors, den Bjælke svar</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
 </head>
@@ -5596,7 +5596,7 @@ mod Verdens vilde Vande.
 <poem id="richardt20190801132">
 <head>
     <title>Jakobsstigen.</title>
-    <firstline>xx</firstline>
+    <firstline>Jeg veed en gammel Jakobsstige</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
 </head>
@@ -5971,7 +5971,8 @@ med Lys fra Bethlehems Stjerne!
 
 <poem id="richardt20190801140">
 <head>
-    <title>Tak for Skjærmen!  (Til Marie, Novbr. 1888.)</title>
+    <title>Tak for Skjærmen!</title>
+    <subtitle>(Til Marie, Novbr. 1888.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -6007,7 +6008,8 @@ Tidt var Skjærmen Du, og jeg kun Sivet
 
 <poem id="richardt20190801141">
 <head>
-    <title>Til Marie.  (Med en Psalmebog. Octbr. 1889.)</title>
+    <title>Til Marie</title>
+    <subtitle>(Med en Psalmebog. Octbr. 1889.)</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
@@ -6109,24 +6111,22 @@ vorde Barn og Gubbe <i>vise!</i>
 </body>
 </poem>
 
-<poem id="richardt20190801143">
+<section id="richardt20190801143" level="2">
 <head>
-    <title>Vignetter
-til en Symfoni af Aug. Winding.*)</title>
-    <firstline>xx</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <title>Vignetter</title>
+    <subtitle>til en Symfoni af Aug. Winding.</subtitle>
+    <notes>
+        <note>* Forf.'s sidste Digt, skrevet i Novnr. 1892, 6 Uger før hans Død. Overskrifterne til de enkelte Dele opgivne af Componisten.</note>
+    </notes>
 </head>
-<body>
-</body>
-</poem>
+<content>
 
 <poem id="richardt20190801144">
 <head>
     <title><num>I.</num>Tunge Tider.</title>
-    <firstline>xx</firstline>
+    <firstline>Lange Dage, lange Nætter</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="263-264"/>
 </head>
 <body>
 Lange Dage, lange Nætter
@@ -6153,9 +6153,9 @@ som en Høstkvelds klamme Spind.
 <poem id="richardt20190801145">
 <head>
     <title><num>II.</num>Lyse Drømme.</title>
-    <firstline>xx</firstline>
+    <firstline>Glimt af Sol og Glimt af Haaben</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="264"/>
 </head>
 <body>
 Glimt af Sol og Glimt af Haaben,
@@ -6175,9 +6175,9 @@ skuf mig ej paany!
 <poem id="richardt20190801146">
 <head>
     <title><num>III.</num>Uden Haab.</title>
-    <firstline>xx</firstline>
+    <firstline>Ak, den Lysning var kun kort</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="265"/>
 </head>
 <body>
 Ak, den Lysning var kun kort,
@@ -6199,9 +6199,9 @@ tag med Verden brat Farvel!
 <poem id="richardt20190801147">
 <head>
     <title><num>IV.</num>Tak og Jubel.</title>
-    <firstline>xx</firstline>
+    <firstline>Du som bøjed mig i Støvet</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="265-266"/>
 </head>
 <body>
 Du som bøjed mig i Støvet
@@ -6226,6 +6226,9 @@ thi jeg veed det: Vee og Vaade
 var kun Skjul for idel Naade!
 </body>
 </poem>
+
+</content>
+</section>
 
 </workbody>
 </kalliopework>
