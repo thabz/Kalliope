@@ -475,9 +475,7 @@ Det kgl. Blinde-Instituts Jubelfest.
 
 
 
-            <center><nonum><sc>
-              De blinde Børn.
-            </sc></nonum></center>
+<center><nonum><sc>De blinde Børn.</sc></nonum></center>
 
             Hvem vil os styrke
 til Vandring i Mørke?
@@ -487,14 +485,14 @@ Hvem vil gjøre os bundne fri?
 
           
 
-            <center><nonum><sc>Stemmer.
+<center><nonum><sc>Stemmer.
 </sc></nonum></center>
 
             Vi! Vi! Vi!
 
           
 
-            <center><nonum><sc>Blomsterne.
+<center><nonum><sc>Blomsterne.
 </sc></nonum></center>
 
             Saa sødt skal vi dufte
@@ -506,7 +504,7 @@ saa heelt I skal glemme hver klagende Røst!
 
           
 
-            <center><nonum><sc>Børnene.
+<center><nonum><sc>Børnene.
 </sc></nonum></center>
 
             Tak Blomster, bløde, linde -
@@ -514,7 +512,7 @@ gjør milde Hjerter og Sinde!
 
           
 
-            <center><nonum><sc>Fuglene.
+<center><nonum><sc>Fuglene.
 </sc></nonum></center>
 
             Saa glad skal vi kvidre,
@@ -526,7 +524,7 @@ saa selv I faae Lyst til at gjøre Musik!
 
           
 
-            <center><nonum><sc>Børnene.
+<center><nonum><sc>Børnene.
 </sc></nonum></center>
 
             Tak Fugle, lær os synge!
@@ -534,7 +532,7 @@ i muntert jublende Klynge!
 
           
 
-            <center><nonum><sc>Bølgerne.
+<center><nonum><sc>Bølgerne.
 </sc></nonum></center>
 
             Saa lydt skal vi bruse,
@@ -546,7 +544,7 @@ saa selv I skal friskes og styrkes derved.
 
           
 
-            <center><nonum><sc>Børnene.
+<center><nonum><sc>Børnene.
 </sc></nonum></center>
 
             Tak Bølger, lad os mærke,
@@ -563,7 +561,7 @@ og hvem vil os være et Lys paa vor Sti?
 
           
 
-            <center><nonum><sc>Stemmer.
+<center><nonum><sc>Stemmer.
 </sc></nonum></center>
 
             Vi Seende, Vi!
@@ -1730,7 +1728,7 @@ følge Dig paa din Aftengang!
 
 <poem id="richardt2019080138">
 <head>
-    <title> Til Niels W. Gade
+    <title>Til Niels W. Gade
 paa hans 70 Aars Fødselsdag, 22. Februar 1887</title>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
@@ -2939,8 +2937,10 @@ hvor Evigheds-Roserne gløde!
 
 <poem id="richardt2019080168">
 <head>
-    <title> Theobald Otto.(d. 16. April 1889)</title>
-    <firstline>xx</firstline>
+    <title>† Theobald Otto</title>
+    <indextitle>Theobald Otto</indextitle>
+    <subtitle>(d. 16. April 1889).</subtitle>
+    <firstline>Som en Stuefugl i Bur</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
 </head>
@@ -2984,9 +2984,13 @@ Paaskesol Dig Herren tænde!
 
 <poem id="richardt2019080169">
 <head>
-    <title> Carl Høgh-Guldberg.Marts 1886.
-					(I Kirken)</title>
-    <firstline>xx</firstline>
+    <title>† Carl Høgh-Guldberg</title>
+    <indextitle>Carl Høgh-Guldberg</indextitle>
+    <subtitle>
+        <line>Marts 1886.</line>
+	    <line>(I Kirken).</line>
+    </subtitle>
+    <firstline>Lad Tonerne følge hans Baare</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
 </head>
@@ -3015,13 +3019,14 @@ til din Naades livsalige Kyst!
 
 <poem id="richardt2019080170">
 <head>
-    <title>Ved 40 Aars Student-Jubilæum.
-1848-1888</title>
+    <title>Ved 40 Aars Student-Jubilæum</title>
+    <subtitle>1848-1888.</subtitle>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
 </head>
 <body>
+TODO: Teksten mangler.
 </body>
 </poem>
 
@@ -3814,8 +3819,13 @@ den har i dit Billed sit Klædemon!
 
 <poem id="richardt2019080187">
 <head>
-    <title> Ditlev Gothard Monrad.Ved hans Jordefærd, 4. April 1887</title>
-    <firstline>xx</firstline>
+    <title>† Ditlev Gothard Monrad</title>
+    <indextitle>Ditlev Gothard Monrad</indextitle>
+    <subtitle>Ved hans Jordefærd, 4. April 1887.</subtitle>
+    <firstline>Gik fra Skumring ind til Nat</firstline>
+    <dates>
+        <event>1887-04-04</event>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
 </head>
@@ -4505,8 +4515,13 @@ fordi han har et evigt Faderhjerte!
 
 <poem id="richardt20190801106">
 <head>
-    <title> Abigael Forchhammer.9. August 1888</title>
-    <firstline>xx</firstline>
+    <title>† Abigael Forchhammer</title>
+    <indextitle>Abigael Forchhammer</indextitle>
+    <subtitle>9. August 1888.</subtitle>
+    <dates>
+        <event>1888-08-09</event>
+    </dates>
+    <firstline>Brat kom din Kveld, Abigael</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages=""/>
 </head>
@@ -4569,10 +4584,12 @@ jeg saae Dig under Høstens Krans,
 
 <poem id="richardt20190801107">
 <head>
-    <title> Augusta Marie Hallf. Brøndsted..
-1816-1891</title>
-    <firstline>xx</firstline>
+    <title>† Augusta Marie Hall, f. Brøndsted.</title>
+    <indextitle>Augusta Marie Hall, f. Brøndsted.</indextitle>
+    <subtitle>1816-1891.</subtitle>
+    <firstline>Nys blev Solen ringet ned</firstline>
     <quality>korrektur1,kilde,side</quality>
+    <!-- TODO: Check titel. -->
     <source pages=""/>
 </head>
 <body>
@@ -5198,7 +5215,7 @@ fra Fuglelivet</title>
 </head>
 <body>
 
-              <center><nonum><sc>
+<center><nonum><sc>
                 <i>Stæren.</i>
               </sc></nonum></center>
 
@@ -5207,7 +5224,7 @@ Saa maa I dele Skarnbassen!
 
             
 
-              <center><nonum><sc><i>Svanen</i>.</sc></nonum></center>
+<center><nonum><sc><i>Svanen</i>.</sc></nonum></center>
 
               Vel lærer I ej saa stolt at glide,
 og bliver ej heller slet saa hvide -
@@ -5216,7 +5233,7 @@ for det er en dejlig Vane!
 
             
 
-              <center><nonum><sc><i>Hanen</i>.</sc></nonum></center>
+<center><nonum><sc><i>Hanen</i>.</sc></nonum></center>
 
               Naar Solen stiger af Bølgesale,
 begynder Hr. Hane strax at gale:
@@ -5226,7 +5243,7 @@ han svøber blot Dynen om sin Krop!
 
             
 
-              <center><nonum><sc><i>Ternen</i>.</sc></nonum></center>
+<center><nonum><sc><i>Ternen</i>.</sc></nonum></center>
 
               Paa Ternen bider slet ikke Vand,
 er Vingerne nok saa vaade;
@@ -5235,7 +5252,7 @@ de er nok gjennemtrængt' af Tran -
 
             
 
-              <center><nonum><sc><i>Maager</i>.</sc></nonum></center>
+<center><nonum><sc><i>Maager</i>.</sc></nonum></center>
 
               Maagerne de er helst tilsøs,
 de fisker uden Snøre!
@@ -5244,7 +5261,7 @@ det maa I ogsaa gjøre!
 
             
 
-              <center><nonum><sc><i>Hjejlen</i>.</sc></nonum></center>
+<center><nonum><sc><i>Hjejlen</i>.</sc></nonum></center>
 
               Heelt over til Himmelbjergets Top
 naaer Hjejlens Fløjtetone -
