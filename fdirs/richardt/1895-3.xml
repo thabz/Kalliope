@@ -2795,7 +2795,7 @@ og fejre Danmarks Sommer!
     </dates>
     <firstline>Er Vilhelm Rode bleven Menig</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="141-142"/>
 </head>
 <body>
 Er Vilhelm Rode bleven Menig
@@ -2845,7 +2845,7 @@ for Dig vort Glas!
         <event>1886-12-11</event>
     </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="142-143"/>
 </head>
 <body>
 Din Ungdom var straalende Lune!
@@ -2885,7 +2885,7 @@ hvor Evigheds-Roserne gløde!
     <subtitle>(d. 16. April 1889).</subtitle>
     <firstline>Som en Stuefugl i Bur</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="143-144"/>
 </head>
 <body>
 Som en Stuefugl i Bur,
@@ -2935,7 +2935,7 @@ Paaskesol Dig Herren tænde!
     </subtitle>
     <firstline>Lad Tonerne følge hans Baare</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="144-145"/>
 </head>
 <body>
 Lad Tonerne følge hans Baare,
@@ -2964,23 +2964,14 @@ til din Naades livsalige Kyst!
 <head>
     <title>Ved 40 Aars Student-Jubilæum</title>
     <subtitle>1848-1888.</subtitle>
-    <firstline>xx</firstline>
+    <firstline>Husker I Dagen, da Artiums-Horden</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="145-148"/>
+    <!-- TODO: Formatter sektionerne i digtet. -->
 </head>
 <body>
-TODO: Teksten mangler.
-</body>
-</poem>
-
-<poem id="richardt2019080171">
-<head>
-    <title><num>I.</num></title>
-    <firstline>xx</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
-</head>
-<body>
+I.
+    
 Husker I Dagen, da Artiums-Horden
 havde paa sin Hue Minerva'en sat,
 stormed med Stolthed fra Studiegaarden,
@@ -3025,24 +3016,12 @@ dog, er det <i>Høst</i>, lad os samle med Flid
 Hjemmenes Axkrans og Arbejdets Kjerner,
 samle os selv i den rullende Tid,
 see mod de evige Stjerner!
-</body>
-</poem>
 
-<poem id="richardt2019080172">
-<head>
-    <title><num>II.</num>En Udstillings-Vise.</title>
-    <subtitle>
-        <line>(Lidt Jaskværk til Slut).</line>
-        <line>11. Septbr. 1888.</line>
-    </subtitle>
-    <firstline>Hvem der ej er overjordiske</firstline>
-    <dates>
-        <event>1888-09-11</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
-</head>
-<body>
+II. 
+En Udstillings-Vise.
+(Lidt Jaskværk til Slut).
+11. Septbr. 1888.
+
 Hvem der ej er overjordiske,
 har vel været paa »Den Nordiske« -
 her paa Skydebanen ved et Glas
@@ -3087,7 +3066,7 @@ dertil egne sig jo Tømmermænd!
     <subtitle>Paa Studenter-Toget 1875</subtitle>
     <firstline>Tak, I Venner, for Jer Fest</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="148-149"/>
 </head>
 <body>
 Tak, I Venner, for Jer Fest
@@ -3134,7 +3113,7 @@ Varmt Goddag! og varmt Farvel!
     <subtitle>En Pose Rim ved Studenter-Sangforeningens Jubilæum.</subtitle>
     <firstline>Venner, vi var lykkelige</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="150-152"/>
 </head>
 <body>
 Venner, vi var lykkelige,
@@ -3235,7 +3214,7 @@ længe den bestaa!
         <event>1888-04-21</event>
     </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="153-154"/>
 </head>
 <body>
 Hvad er dog din Mening, vor gamle Forening,
@@ -3286,18 +3265,16 @@ spil op Musikanter, saa danser vi ud!
         <event>1888-06-04</event>
     </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="154-157"/>
 </head>
 <body>
 Velkommen Venner, I fra Sverigs Dale,
 fra Norges Fjelde, fra de danske Sletter -
-
-            <i>hilsed' med Tonerne fra »Elverhøj«!</i>
-          
-
-            <i>De Toner har en egen sælsom Saga -</i>
-          
+<i>hilsed' med Tonerne fra »Elverhøj«!</i>
+<i>De Toner har en egen sælsom Saga -</i>
 og vil I lytte, skal jeg den fortælle!
+
+---
 
 Der var i gamle Dage en Mø saa favr og skjær,
 hende maatte Alle laane Øre;
@@ -3372,7 +3349,7 @@ og Harmoniers Brus og Farvers Glimren -
 fornemmes fra det Dybe som en Rislen
 af Folkevisens favre Tonefald:
 
-            <i>det sjælfuldt Enkle, som kan Hjertet røre!</i>
+<i>det sjælfuldt Enkle, som kan Hjertet røre!</i>
           
 - Smyk Dig med <i>den</i>, Du Nordens Tonekunst,
 alt mens Du gaar i Lære hos de Store:
@@ -3386,22 +3363,19 @@ Retten er sat, Dem selv tilhører Dommen!
 </body>
 </poem>
 
-<section id="richardt2019080177" level="3">
+<poem id="richardt2019080178">
 <head>
     <title>»Røde Kors«</title>
     <indextitle>Røde Kors</indextitle>
     <linktitle>Røde Kors</linktitle>
-</head>
-<content>
-
-<poem id="richardt2019080178">
-<head>
-    <title><num>I.</num>Grumme Krig! Dit Lyn, din Torden</title>
     <firstline>Grumme Krig! Dit Lyn, din Torden</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="157-159"/>
+    <!-- TODO: Formatter underafdelingerne. -->
 </head>
 <body>
+I.
+    
 Grumme <i>Krig!</i> Dit Lyn, din Torden
 slaar en Ungskov ned -
 tom er dog den Drøm paa Jorden
@@ -3446,17 +3420,10 @@ Dvæl i vore Bøgesale
 dyrekjøbte Fred!
 Men, skal Kampens Hane gale -
 <i>»Korset«</i> følger med!
-</body>
-</poem>
 
-<poem id="richardt2019080179">
-<head>
-    <title><num>II.</num>Rul frem din Baare, Røde Kors</title>
-    <firstline>Rul frem din Baare, Røde Kors</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
-</head>
-<body>
+
+II.
+
 Rul frem din Baare, <i>Røde Kors</i>,
 mod mangt et brustent Fadervors
 forpinte Klagelyd!
@@ -3489,8 +3456,11 @@ med Lægedom og Fred!
     <title>Brahetrolleborg Folkehøjskole</title>
     <subtitle>4. November 1889.</subtitle>
     <firstline>Det graaner, det skumrer om baade Land og Strand</firstline>
+    <dates>
+        <event>1889-11-04</event>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="160-161"/>
 </head>
 <body>
 Det graaner, det skumrer om baade Land og Strand,
@@ -3535,7 +3505,7 @@ og alle gode Spirer fuldmodnes til Høst!
     <title>Hjemløse Børn</title>
     <firstline>Mindes Du, hvor Moders Mund</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="161-163"/>
 </head>
 <body>
 Mindes Du, hvor Moders Mund
@@ -3595,7 +3565,7 @@ gode Mennesker!
     <title>Sang for Danske i Amerika</title>
     <firstline>Kom I, som maatte gynge</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="163-165"/>
 </head>
 <body>
 Kom I, som maatte gynge
@@ -3662,17 +3632,21 @@ hvor Mindets Kilde springer
 
 <poem id="richardt2019080183">
 <head>
-    <title>Ved Indvielsen af
-den polytekniske Læreanstalt's nye
-Bygning.
-1. September 1890.
-(Musiken af Johan Bartholdy.)</title>
+    <suptitle>>Ved Indvielsen af</suptitle>
+    <title>den polytekniske Læreanstalt's nye Bygning</title>
+    <subtitle>
+        <line>1. September 1890.</line>
+        <line>(Musiken af Johan Bartholdy.)</line>
+    </title>
     <toctitle>Den Polytekniske Læreanstalt (Kantate)</toctitle>
     <indextitle>Den Polytekniske Læreanstalt (Kantate)</indextitle>
     <linktitle>Den Polytekniske Læreanstalt (Kantate)</linktitle>
-    <firstline>xx</firstline>
+    <dates>
+        <event>1890-09-01</event>
+    </dates>
+    <firstline>Vær hilset Du vort nye Hjem</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="165-174"/>
 </head>
 <body>
 
@@ -3712,7 +3686,7 @@ fra en <i>ny</i> Natur!
     <subtitle>(Til Afsløringen af hans Buste.)</subtitle>
     <firstline>Fra Østerhavs-Øen med Klipperne graa</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="174-175"/>
 </head>
 <body>
 Fra Østerhavs-Øen med Klipperne graa
@@ -3762,7 +3736,7 @@ den har i dit Billed sit Klædemon!
         <event>1887-04-04</event>
     </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="175-176"/>
 </head>
 <body>
 Gik fra Skumring ind til Nat
@@ -3807,7 +3781,7 @@ Du i ham lod Kirken have!
         <event>1890-09-15</event>
     </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="176-178"/>
 </head>
 <body>
 Der staar han i sin Dagligdragt
@@ -3852,25 +3826,20 @@ og krans paany hans Minde!
 </body>
 </poem>
 
-<section id="richardt2019080189" level="3">
+<poem id="richardt2019080190">
 <head>
     <title>Ved Kunstakademiets Stiftelsesfest</title>
     <toctitle>Kunstakademiets Stiftelsesfest</toctitle>
     <subtitle>31. Marts 1888.</subtitle>
+    <firstline>Alt som ejer Livets Lue</firstline>
     <dates>
         <event>1888-03-31</event>
     </dates>
-</head>
-<content>
-
-<poem id="richardt2019080190">
-<head>
-    <title><num>I.</num>Alt som ejer Livets Lue</title>
-    <firstline>Alt som ejer Livets Lue</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="178-179"/>
 </head>
 <body>
+I.    
 Alt som ejer Livets Lue,
 Rosens Blus og Havets Blaa,
 Skovens Hvælv og Brynets Bue,
@@ -3898,17 +3867,9 @@ her skal Vingefanget prøves,
 her er Vink og Varsko nok!
 Flyv saa ud fra Skolens Favn,
 og gjør Ære Danmarks Navn!
-</body>
-</poem>
 
-<poem id="richardt2019080191">
-<head>
-    <title><num>II.</num>Ja kæmper trøstigt, selv mod Vind og Vove</title>
-    <firstline>Ja kæmper trøstigt, selv mod Vind og Vove</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
-</head>
-<body>
+II.
+
 Ja kæmper trøstigt, selv mod Vind og Vove,
 med Pen og Farver, Mejsel eller Stift,
 og kæmper efter Kunstens egne Love,
@@ -3920,16 +3881,13 @@ hvad <i>den</i> har skabt, den Blomst gaar aldrig ud.
 </body>
 </poem>
 
-</content>
-</section>
-
 <poem id="richardt2019080192">
 <head>
     <title>»Ancker's Legat«</title>
     <indextitle>Ancker's Legat</indextitle>
     <firstline>Om Mandens Liv kun lidt jeg har at sige</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="179-181"/>
 </head>
 <body>
 Om Mandens Liv kun lidt jeg har at sige,
@@ -3996,7 +3954,7 @@ da blev jeg flux en rejsende Forfatter!
     <subtitle>En Dag i Hardanger</subtitle>
     <firstline>Forunderligt!</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="181-189"/>
 </head>
 <body>
 Forunderligt!
@@ -4042,7 +4000,7 @@ maa dog lystre Menneske-Tanken.
     <title>Ved Kong Christian den Niende's Regjerings-Jubilæum</title>
     <firstline>Hvem var han, den Prins af Danmark</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="189-192"/>
 </head>
 <body>
 
@@ -4142,12 +4100,15 @@ hvil i <i>den</i>, til Sol gaar ned!
 
 <poem id="richardt2019080198">
 <head>
-    <title>Med et Basrelief
-af Evens: Goddædighed.
-(Jubilæums-Gave fra den Kongl. Husstand.)</title>
+    <title>Med et Basrelief</title>
+    <subtitle>
+        <line>af Evens: <i>Goddædighed</i>.</line>
+        <line>(Jubilæums-Gave fra den Kongl. Husstand.)</line>
+    </subtitle>
     <firstline>Da Sankt Elisabeth gav Smaafolk Brød</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <!-- TODO: Find billede af relieffen. -->
+    <source pages="192-193"/>
 </head>
 <body>
 Da Sankt Elisabeth gav Smaafolk Brød,
@@ -4165,11 +4126,11 @@ og <i>de</i> har ingen Torne i sit Skjød!
 
 <poem id="richardt2019080199">
 <head>
-    <title>Prolog til Festballet
-19. Novbr. 1888</title>
+    <title>Prolog til Festballet</title>
+    <subtitle>19. Novbr. 1888</subtitle>
     <firstline>Vær hilsed Danmarks Konge, Danmarks Dronning</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="193-195"/>
 </head>
 <body>
 Vær hilsed Danmarks Konge, Danmarks Dronning,
@@ -4239,25 +4200,21 @@ vor Ærefrygt, Hengivenhed, og Tak!
 
 <poem id="richardt20190801100">
 <head>
-    <title>Ved Aabningen af det sjette nordiske Skolemøde
-5. Aug. 1890.
-(Musiken af eller ved Joh. Bartholdy.)</title>
-    <firstline>xx</firstline>
+    <title>Ved Aabningen af det sjette nordiske Skolemøde</title>
+    <subtitle>
+        <line>5. Aug. 1890.</line>
+        <line>(Musiken af eller ved <i>Joh. Bartholdy.</i>)</line>
+    </subtitle>
+    <firstline>Velkommen hid fra høje Nord!</firstline>
+    <dates>
+        <event>1890-08-05</event>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="195-201"/>
 </head>
 <body>
-</body>
-</poem>
+TODO: Teksten mangler.
 
-<poem id="richardt20190801101">
-<head>
-    <title><num>I.</num></title>
-    <firstline>xx</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
-</head>
-<body>
 Velkommen hid fra høje Nord!
 Fra Fjeld og Dal og blanke Søer,
 fra Danmarks skov-omkranste Øer,
@@ -4272,22 +4229,6 @@ den vil vi granske, Bred paa Bred:
 hvad Fastland dér ved Mod kan findes,
 hvad Skatte dér ved Flid kan vindes,
 ved Arbejd, Taal og Kjærlighed.
-
-
-
-</body>
-</poem>
-
-<poem id="richardt20190801102">
-<head>
-    <title><num>II.</num></title>
-    <firstline>xx</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
-</head>
-<body>
-
-
 </body>
 </poem>
 
@@ -4296,7 +4237,7 @@ ved Arbejd, Taal og Kjærlighed.
     <title>September-Kveld</title>
     <firstline>Over tømte Markers nøgne Barhed</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="201"/>
 </head>
 <body>
 Over tømte Markers nøgne Barhed
@@ -4327,7 +4268,7 @@ hviske: bag vort Forhæng skal Du naae !
     <title>Et Barns Aftenbøn</title>
     <firstline>Nu lukker Solen sit Øje</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="202"/>
 </head>
 <body>
 Nu lukker Solen sit Øje,
@@ -4367,7 +4308,7 @@ og sover sundt og trygt.
     <title>En Faders Fortælling</title>
     <firstline>Jeg glemmer aldrig, hvor den Dyst var haard</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="203-204"/>
 </head>
 <body>
 Jeg glemmer aldrig, hvor den Dyst var haard,
@@ -4442,7 +4383,7 @@ fordi han har et evigt Faderhjerte!
     </dates>
     <firstline>Brat kom din Kveld, Abigael</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="205-206"/>
 </head>
 <body>
 Brat kom din Kveld, Abigael,
@@ -4509,7 +4450,7 @@ jeg saae Dig under Høstens Krans,
     <firstline>Nys blev Solen ringet ned</firstline>
     <quality>korrektur1,kilde,side</quality>
     <!-- TODO: Check titel. -->
-    <source pages=""/>
+    <source pages="207-208"/>
 </head>
 <body>
 Nys blev Solen ringet ned
