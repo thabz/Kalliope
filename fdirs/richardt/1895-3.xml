@@ -682,7 +682,7 @@ TODO: Her mangler teksten.
 <head>
     <title>Kantate ved Universitets-Festen til Holbergs Minde</title>
     <subtitle>3. December 1884</subtitle>
-    <firstline>xx</firstline>
+    <firstline>Der er saa øde i Dannevang</firstline>
     <dates>
         <event>1884-12-03</event>
     </dates>
@@ -4444,12 +4444,17 @@ jeg saae Dig under Høstens Krans,
 
 <poem id="richardt20190801107">
 <head>
-    <title>† Augusta Marie Hall, f. Brøndsted.</title>
-    <indextitle>Augusta Marie Hall, f. Brøndsted.</indextitle>
-    <subtitle>1816-1891.</subtitle>
+    <suptitle>† <suptitle>
+    <title>Augusta Marie Hall</title>
+    <toctitle>† Augusta Marie Hall</toctitle>
+    <linktitle>† Augusta Marie Hall</linktitle>
+    <subtitle>
+        <line>f. Brøndsted.</line>
+        <line>1816-1891.</line>
+    </subtitle>
+    <indextitle>Augusta Marie Hall</indextitle>
     <firstline>Nys blev Solen ringet ned</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Check titel. -->
     <source pages="207-208"/>
 </head>
 <body>
@@ -4507,9 +4512,9 @@ til det store Paaskegry!
 <poem id="richardt20190801108">
 <head>
     <title>Bryllups-Psalme</title>
-    <firstline>xx</firstline>
+    <firstline>Hold Ja-Ord her i Herrens Hus</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="208-209"/>
 </head>
 <body>
 Hold Ja-Ord her i Herrens Hus,
@@ -4546,25 +4551,20 @@ med Luerne de milde.
 </body>
 </poem>
 
-<poem id="richardt20190801109">
+<section level="3">
 <head>
     <title>Bryllupsviser</title>
-    <firstline>xx</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
 </head>
-<body>
-</body>
-</poem>
+<content>
 
 <poem id="richardt20190801110">
 <head>
-    <title>I.  Ved C. R. Nybloms og H. Roeds Bryllup.
-Septbr. 1864</title>
+    <title><num>I.</num>Ved C. R. Nybloms og H. Roeds Bryllup</title>
+    <subtitle>Septbr. 1864</subtitle>
     <firstline>Hist i Velsklands skjønne Dale</firstline>
     <quality>korrektur1,kilde,side</quality>
     <keywords>nyblom</keywords>
-    <source pages=""/>
+    <source pages="210-211"/>
 </head>
 <body>
 Hist i Velsklands skjønne Dale,
@@ -4616,11 +4616,11 @@ vi har drukket deres Skaal!
 
 <poem id="richardt20190801111">
 <head>
-    <title>II.  Ved J. Börjessons og V. Bartholins Bryllup.
-Maj 1873</title>
+    <title><num>II.</num>Ved J. Börjessons og V. Bartholins Bryllup.</title>
+    <subtitle>Maj 1873</subtitle>
     <firstline>Udi Roma, i sit Studie</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="211-213"/>
 </head>
 <body>
 Udi Roma, i sit Studie
@@ -4686,7 +4686,7 @@ Højt leve Vitte, højt »Herr Vittemand«!
     <subtitle>Oktober 1887</subtitle>
     <firstline>Til Lykke Brudgom med Bruden din</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="213-215"/>
 </head>
 <body>
 Til Lykke Brudgom med Bruden din,
@@ -4733,13 +4733,16 @@ og kom igjen med Vaarens Fugle!
 </body>
 </poem>
 
+</content>
+</section>
+
 <poem id="richardt20190801113">
 <head>
     <title>Ved C. C. og A. M. Halls Guldbryllup</title>
     <subtitle>December 1887</subtitle>
     <firstline>Til Lykke, Brud og Brudgom kjær</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="215-216"/>
 </head>
 <body>
 Til Lykke, Brud og Brudgom kjær,
@@ -4801,7 +4804,7 @@ i Skjær af Livets Morgenrøde!
         <event>1890-11-17</event>
     </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="217-219"/>
 </head>
 <body>
 Du var saa ung og frejdig
@@ -4871,16 +4874,14 @@ al Kjærligheds Gud!
 
 <poem id="richardt20190801115">
 <head>
-    <title>Prolog til Musikforeningens Mindefest
-for Niels W. Gade.
-Februar 1891</title>
-    <firstline>xx</firstline>
+    <title>Prolog til Musikforeningens Mindefest for Niels W. Gade</title>
+    <subtitle>Februar 1891.</subtitle>
+    <firstline>Det gamle Aar var graanet</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="219-222"/>
 </head>
 <body>
-
-
+    TODO: Tekst mangler
 
 </body>
 </poem>
@@ -4896,7 +4897,7 @@ Februar 1891</title>
     <title><num>I.</num>Dæggelammet</title>
     <firstline>Hun gaar saa troligt og vogter Flokken</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="222-223"/>
 </head>
 <body>
 Hun gaar saa troligt og vogter Flokken,
@@ -4941,7 +4942,7 @@ saa skal Du see, hvor Du har det godt!
     <title><num>II.</num>Forskrækkelse</title>
     <firstline>Hvad er der? Hvad græder Du for, min Skat?</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="224-226"/>
 </head>
 <body>
 »Hvad <i>er</i> der? Hvad græder Du for, min Skat?
@@ -5015,24 +5016,12 @@ at faae det i Orden igjen i en Fart
     <title><num>III.</num>Fra Kysthospitalet</title>
     <firstline>xx</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="226-228"/>
 </head>
 <body>
-TODO: Teksten mangler.
-</body>
-</poem>
 
-</content>
-</section>
+A. Brevskrivning
 
-<poem id="richardt20190801120">
-<head>
-    <title>A. Brevskrivning</title>
-    <firstline>Paa Børnenes Sygestue</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
-</head>
-<body>
 Paa Børnenes Sygestue
 er Søndagsro og Hvile.
 Men Længslen hviler ikke,
@@ -5066,25 +5055,13 @@ og de taaretunge Tanker,
 meer og mere Sollys sanker,
 blinke funklende og rene -
 just som Strandens vaade Stene.
-</body>
-</poem>
 
-<poem id="richardt20190801121">
-<head>
-    <title>B. Til Børnehospitalets Dekorationer
-							
-fra Fuglelivet</title>
-    <firstline>xx</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
-</head>
-<body>
 
-<center><nonum><sc>
-                <i>Stæren.</i>
-              </sc></nonum></center>
+B. Til Børnehospitalets Dekorationer fra Fuglelivet
 
-              Flyv ud, smaa Unger - ud af Kassen!
+<center><nonum><sc><i>Stæren.</i></sc></nonum></center>
+
+Flyv ud, smaa Unger - ud af Kassen!
 Saa maa I dele Skarnbassen!
 
             
@@ -5139,10 +5116,11 @@ heelt op mod Vorherres Trone!
 
 <poem id="richardt20190801122">
 <head>
-    <title><num>IV.</num>Skuffelse.  (Mus med Unger, foran en tildækket Kurv.)</title>
-    <firstline>xx</firstline>
+    <title><num>IV.</num>Skuffelse</title>
+    <subtitle>(Mus med Unger, foran en tildækket Kurv.)</subtitle>
+    <firstline>Kom, skynd Jer nu smaa Nussebeen</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="229-230"/>
 </head>
 <body>
 »Kom, skynd Jer nu smaa Nussebeen,
@@ -5187,7 +5165,7 @@ Kun en artig Musefælde!
     <title><num>V.</num>I Bedring</title>
     <firstline>Saa, nu kom Inger op igjen</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="230-231"/>
 </head>
 <body>
 Saa, nu kom <i>Inger</i> op igjen,
@@ -5224,7 +5202,7 @@ som næsten slukkes vilde.
     <title><num>VI.</num>Vinde Garn!</title>
     <firstline>Hvis Peter ej som et artigt Barn</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="231"/>
 </head>
 <body>
 Hvis Peter ej som et artigt Barn
@@ -5252,7 +5230,7 @@ den mindste Kurre paa Traaden seer.
     <title><num>VII.</num>Ved Stranden</title>
     <firstline>Her Børnenes Leg en høstlig Dag</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="232"/>
 </head>
 <body>
 Her Børnenes Leg en høstlig Dag,
@@ -5279,26 +5257,23 @@ som frier fra de vilde Vande.
 </body>
 </poem>
 
+</content>
+</section>
+
 <poem id="richardt20190801126">
 <head>
-    <title>Ved »Borgervennen«s Jubelfest.  (I Frue Kirke 4. Juni 1888.)</title>
-    <firstline>xx</firstline>
+    <title>Ved »Borgervennen«s Jubelfest</title>
+    <subtitle>(I Frue Kirke 4. Juni 1888.)</subtitle>
+    <firstline>For Himlens Stjernerader</firstline>
+    <dates>
+        <event>1888-06-04</event>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
-</head>
-<body>
-</body>
-</poem>
-
-<poem id="richardt20190801127">
-<head>
-    <title><num>I.</num></title>
-    <firstline>xx</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="232-236"/>
 </head>
 <body>
 
+TODO: Tekst mangler
 
 Tusinde Aar hans Korstegn stod
 plantet i Muld paa vore Sletter;
@@ -5309,17 +5284,10 @@ til Broderkjærlighedens Frugter -
 hver Gang Du skar, hver Gang Du tugter,
 lad os Din Gartner-Haand forstaa:
 Bedre Kjærlighed skal vi naae!
-</body>
-</poem>
 
-<poem id="richardt20190801128">
-<head>
-    <title><num>II.</num>Lovsang</title>
-    <firstline>xx</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
-</head>
-<body>
+II.
+Lovsang.
+
 Lover Herren min Sjæl og Aand,
 alt mit Inderste Herren love!
 Ham som knytted Alskabningens Baand,
@@ -5353,9 +5321,9 @@ lov Ham, Harper og Strengespil!
 <poem id="richardt20190801129">
 <head>
     <title>Lov og Evangelium</title>
-    <firstline>xx</firstline>
+    <firstline>Hjertet ej sin Gud vil dyrke</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="236-237"/>
 </head>
 <body>
 Hjertet ej sin Gud vil dyrke,
@@ -5392,7 +5360,7 @@ som Guds Kjærlighed gav Liv.
     <title>Perler</title>
     <firstline>En Musling-Perle klar og rund</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="237-238"/>
 </head>
 <body>
 En Musling-Perle klar og rund,
@@ -5442,7 +5410,7 @@ thi uden Dig var Alting Tab!
     <title>Korsets Tegn</title>
     <firstline>Det hellige Kors, den Bjælke svar</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="238-239"/>
 </head>
 <body>
 Det hellige Kors, den Bjælke svar,
@@ -5480,7 +5448,7 @@ mod Verdens vilde Vande.
     <title>Jakobsstigen</title>
     <firstline>Jeg veed en gammel Jakobsstige</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="239-241"/>
 </head>
 <body>
 Jeg veed en gammel Jakobsstige,
@@ -5537,22 +5505,14 @@ og ender med en Takkesang.
 <poem id="richardt20190801133">
 <head>
     <title>Niniveh</title>
-    <firstline>xx</firstline>
+    <firstline>I Flodlandet, Evfrat og Tigris' Land</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="241-248"/>
 </head>
 <body>
-</body>
-</poem>
 
-<poem id="richardt20190801134">
-<head>
-    <title><num>I.</num></title>
-    <firstline>xx</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
-</head>
-<body>
+I.
+
 I Flodlandet, <i>Evfrat</i> og <i>Tigris'</i> Land,
 nær Menneskehedens Vugge,
 der rejste sig fordum <i>Babels</i> og <i>Assur' s</i>
@@ -5657,19 +5617,12 @@ under den britiske Dronnings Øjne
 vaagne atter <i>Sancheribs</i> Løve og Tyr -
 »dem tilbeder <i>hun!«</i> siger Kadien i Mossul.
 Til <i>Byrons</i> Land kommer <i>Sardanapal</i>
-						
 <i>- Niniveh</i> bliver et Musæum.
-</body>
-</poem>
 
-<poem id="richardt20190801135">
-<head>
-    <title><num>II.</num></title>
-    <firstline>xx</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
-</head>
-<body>
+---
+
+II.
+
 Slig Sandørk som hin i Flodernes Land
 - men i Vidde vældige Verd'ner -
 tykkes mig <i>det mørke Hedenskab</i>.
@@ -5762,11 +5715,15 @@ men et Niniveh, der bygges til en Kirke.
 
 <poem id="richardt20190801136">
 <head>
-    <title>Prolog til J. L. Heibergs Mindefest.
-Den 14. December 1891</title>
-    <firstline>xx</firstline>
+    <title>Prolog til J. L. Heibergs Mindefest</title>
+    <subtitle>Den 14. December 1891.</subtitle>
+    <firstline>At finde en Firkløver, siger man</firstline>
+    <dates>
+        <event>1891-12-14</event>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="248-252"/>
+    <keywords>heibergjl</keywords>
 </head>
 <body>
 TODO: Teksten mangler    
@@ -5775,26 +5732,19 @@ TODO: Teksten mangler
 
 <poem id="richardt20190801137">
 <head>
-    <title>Ved Universitetets Fest den 28. Maj 1892
-i Anledning af
-Deres Majestæter
-Kongens og Dronningens Guldbryllup</title>
-    <firstline>xx</firstline>
+    <suptitle>Ved</suptitle>
+    <title>Universitetets Fest den 28. Maj 1892</title>
+    <subtitle>
+        <line>i Anledning af</line>
+        <line>Deres Majestæter Kongens og Dronningens Guldbryllup</line>
+    </subtitle>
+    <firstline>De Klokker ringe med Højtidsklang</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="253-259"/>
 </head>
 <body>
-</body>
-</poem>
+Første Afdeling.
 
-<poem id="richardt20190801138">
-<head>
-    <title>Første Afdeling</title>
-    <firstline>xx</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
-</head>
-<body>
 De Klokker ringe med Højtidsklang
 over Danevang,
 og Flaget spiler sin Vinge!
@@ -5817,17 +5767,10 @@ vi blandes i Folke-Bruset,
 og træde med <i>Tak</i> for Tronen frem,
 ønske med dem
 Gudsfred over Kongehuset!
-</body>
-</poem>
 
-<poem id="richardt20190801139">
-<head>
-    <title>Anden Afdeling</title>
-    <firstline>xx</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
-</head>
-<body>
+
+Anden Afdeling.
+
 Vort Land, som nu i de tusind Aar
 har mangen Vaar
 holdt Guldbryllups-Fest med Solen,
@@ -5857,20 +5800,15 @@ med Lys fra Bethlehems Stjerne!
     <subtitle>(Til Marie, Novbr. 1888.)</subtitle>
     <firstline>Tak for Skjærmen med de ranke Siv</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="260"/>
 </head>
 <body>
 Tak for Skjærmen med de ranke Siv,
 som for Lysskjær skaanet har mit Øje!
 Tak end meer for Kjærlighedens Møje
 med at skjærmc mig mit Stilleliv!
-
-            <i><i>Mine</i> Sager - vore kjære Børns -</i>
-          
-
-            <i>alle Sager skjøtter Du - selv <i>Søren's!</i>
-						</i>
-          
+<i>Mine</i> Sager - vore kjære <i>Børns -</i>
+<i>alle</i> Sager skjøtter Du - selv <i>Søren's!</i>
 
 Du er Hjemmets gode sunde Salt,
 og Du træffer just den rette Tone
@@ -5894,7 +5832,7 @@ Tidt var Skjærmen Du, og jeg kun Sivet
     <subtitle>(Med en Psalmebog. Octbr. 1889.)</subtitle>
     <firstline>Modtag en Psalmebog, en ny</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="260-261"/>
 </head>
 <body>
 Modtag en Psalmebog, en ny,
@@ -5941,7 +5879,7 @@ det gaar dog mod Foryngelsen!
     <title>Bethlehems-Stjernen</title>
     <firstline>Fra Kaldæa i det Fjerne</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <source pages=""/>
+    <source pages="262-263"/>
 </head>
 <body>
 Fra Kaldæa i det Fjerne
@@ -5993,7 +5931,7 @@ vorde Barn og Gubbe <i>vise!</i>
 </body>
 </poem>
 
-<section id="richardt20190801143" level="2">
+<section id="richardt20190801143" level="3">
 <head>
     <title>Vignetter</title>
     <subtitle>til en Symfoni af Aug. Winding.</subtitle>
