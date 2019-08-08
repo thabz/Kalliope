@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg" museum="fnm" invnr="A 7911" year="1808">
-    C. A. Lorentzen: <i>Henrik Steffens</i>, 1808, Det Nationalhistoriske Museum på Frederiksborg.
-  </picture>
+  <picture ref="lorentzen/1808-steffens" primary="true" square-src="p1-square.jpg" museum="fnm" invnr="A 7911" year="1808" />
 </pictures>
