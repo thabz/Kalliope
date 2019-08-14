@@ -90,6 +90,12 @@ const build_poets_json = collected => {
     const nameE = p.get('name');
     const periodE = p.get('period');
     const works = safeGetText(p, 'works');
+    if (!country.match(/(dk|se|no|gb|de|fr|us|it|un)/)) {
+      throw `${id} har ukendt land: ${country}`;
+    }
+    if (!lang.match(/(da|sv|no|en|de|fr||un|it)/)) {
+      throw `${id} har ukendt sprog: ${country}`;
+    }
 
     let square_portrait = null;
     const has_portraits = fileExists(`fdirs/${id}/portraits.xml`);
