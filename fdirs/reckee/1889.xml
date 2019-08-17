@@ -409,10 +409,7 @@ Hvis ei - hvis ei - -
 
 <poem id="reckee2019081812">
 <head>
-    <title><num>12.</num></title>
-    <toctitle><num>12.</num></toctitle>
-    <indextitle></indextitle>
-    <linktitle></linktitle>
+    <title><num>12.</num>Et Aar! - En Vægt af Lykke og af Smerte</title>
     <subtitle>(Nytaarsnat 82-83.)</subtitle>
     <firstline>Et Aar! - En Vægt af Lykke og af Smerte</firstline>
     <source pages="22"/>
@@ -514,7 +511,7 @@ Uden at miste mig selv?
 Det kan du tænke dig slettet
 Af Alt, hvad jeg sang til dig?
 Mit Liv! Saa har du ei gjættet
-Endnu, hvad dit N^vn er for mig!
+Endnu, hvad dit Navn er for mig!
 </body>
 </poem>
 
@@ -869,9 +866,11 @@ Som findes i Verdens Land.
 </body>
 </poem>
 
-<section>
+<section id="reckee20190818103" level="3">
 <head>
-    <title>Dæmring og Dag, Sonetkrans. I-XV</title>
+    <title>Dæmring og Dag</title>
+    <subtitle>Sonetkrans</subtitle>
+    <toctitle><num>27.</num>Dæmring og Dag, Sonetkrans. I-XV</toctitle>
 </head>
 <content>
 
@@ -1047,7 +1046,7 @@ Om end mit Blik ei naaer det lyse Maal,
 Et Billed er mig nær i mine Tanker;
 Det vækker mig til Kamp, naar Stormen
 slaaer,
-Det rækker mig i .Tørst en Lindringsskaal,
+Det rækker mig i Tørst en Lindringsskaal,
 I Livets Bølgegang mit stærke Anker.
 </body>
 </poem>
@@ -1478,9 +1477,10 @@ Og smil saa til det en Smule!
 </body>
 </poem>
 
-<section>
+<section id="reckee20190818104" level="3">
 <head>
-    <title>(Med Roser.) I-III</title>
+    <title>Med Roser</title>
+    <toctitle><num>33.</num>(Med Roser.) I-III</toctitle>
 </head>
 <content>
 
@@ -1711,9 +1711,14 @@ En Aften for min Fod.
 </body>
 </poem>
 
-<section>
+<section id="reckee20190818102" level="3">
 <head>
-    <title>Gyldne Snarer, to Phantasier, I-II</title>
+    <title>Gyldne Snarer</title>
+    <subtitle>
+        <line>to Phantasier.</line>
+        <line>(Med et Armbaand.)</line>
+    </subtitle>
+    <toctitle><num>38.</num>Gyldne Snarer, to Phantasier, I-II</toctitle>
 </head>
 <content>
 
@@ -1729,8 +1734,6 @@ En Aften for min Fod.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-to Phantasier.
-(Med et Armbaand.)
 
 Min faure Hjærtenskjære!
 Ræk mig din hvide Haand,
@@ -2246,10 +2249,7 @@ Til Alfelandet knytte!
 
 <poem id="reckee2019081856">
 <head>
-    <title><num>39.</num></title>
-    <toctitle><num>39.</num></toctitle>
-    <indextitle></indextitle>
-    <linktitle></linktitle>
+    <title><num>39.</num>Min Elskede! Jeg sender</title>
     <subtitle>(Med ,,En Nytaarsdrøm''.)</subtitle>
     <firstline>Min Elskede! Jeg sender</firstline>
     <source pages="107-108"/>
@@ -2445,10 +2445,7 @@ Hele Blomsterdusken trække!
 
 <poem id="reckee2019081862">
 <head>
-    <title><num>45.</num></title>
-    <toctitle><num>45.</num></toctitle>
-    <indextitle></indextitle>
-    <linktitle></linktitle>
+    <title><num>45.</num>Fine, bløde Jomfruhænder</title>
     <firstline>Fine, bløde Jomfruhænder</firstline>
     <source pages="117"/>
     <quality>korrektur1,kilde,side</quality>
@@ -2466,10 +2463,7 @@ Til det voxende Fordærv!
 
 <poem id="reckee2019081863">
 <head>
-    <title><num></num>Nu siger jeg mig fra mit Arbejd løs</title>
-    <toctitle><num></num>Nu siger jeg mig fra mit Arbejd løs</toctitle>
-    <indextitle>Nu siger jeg mig fra mit Arbejd løs</indextitle>
-    <linktitle>Nu siger jeg mig fra mit Arbejd løs</linktitle>
+    <title><num>46.</num>Nu siger jeg mig fra mit Arbejd løs</title>
     <subtitle>(Med Blomster.)</subtitle>
     <firstline>Nu siger jeg mig fra mit Arbejd løs</firstline>
     <source pages="118-119"/>
@@ -2513,9 +2507,6 @@ Og et Kys dertil paa Din Fødselsdag!
 <poem id="reckee2019081864">
 <head>
     <title><num>47.</num>Jeg vilde, jeg var en Hybentorn</title>
-    <toctitle><num>47.</num>Jeg vilde, jeg var en Hybentorn</toctitle>
-    <indextitle>Jeg vilde, jeg var en Hybentorn</indextitle>
-    <linktitle>Jeg vilde, jeg var en Hybentorn</linktitle>
     <subtitle>Folkevise.</subtitle>
     <firstline>Jeg vilde, jeg var en Hybentorn</firstline>
     <source pages="120-121"/>
@@ -2543,10 +2534,7 @@ Sang Rosen af Knop inat!
 
 <poem id="reckee2019081865">
 <head>
-    <title><num></num>Du maa ei sørge, min søde Brud</title>
-    <toctitle><num></num>Du maa ei sørge, min søde Brud</toctitle>
-    <indextitle>Du maa ei sørge, min søde Brud</indextitle>
-    <linktitle>Du maa ei sørge, min søde Brud</linktitle>
+    <title><num>48.</num>Du maa ei sørge, min søde Brud</title>
     <subtitle>(Med en Eucharis.)</subtitle>
     <firstline>Du maa ei sørge, min søde Brud</firstline>
     <source pages="122-123"/>
@@ -2709,10 +2697,7 @@ Læs, Elskte, om Du kan!
 
 <poem id="reckee2019081870">
 <head>
-    <title><num></num>Aarsdagen for min Lykke</title>
-    <toctitle><num></num>Aarsdagen for min Lykke</toctitle>
-    <indextitle>Aarsdagen for min Lykke</indextitle>
-    <linktitle>Aarsdagen for min Lykke</linktitle>
+    <title><num>53.</num>Aarsdagen for min Lykke</title>
     <subtitle>(Med Blomster.)</subtitle>
     <firstline>Aarsdagen for min Lykke</firstline>
     <source pages="132-133"/>
@@ -3191,9 +3176,10 @@ Og sang for mig som en Fugl?
 </body>
 </poem>
 
-<section>
+<section id="reckee20190818101" level="3">
 <head>
-    <title>Foraarsblomster, Sonetkrans. I-XV</title>
+    <title>Foraarsblomster</title>
+    <toctitle><num>68.</num>Foraarsblomster, Sonetkrans. I-XV</toctitle>
 </head>
 <content>
 
