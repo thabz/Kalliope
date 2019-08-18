@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="stuckenberg" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Viggo</firstname>
+    <lastname>Stuckenberg</lastname>
+    <fullname>Viggo Henrik Fog Stuckenberg</fullname>
+    <pseudonym>Silius</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1863-09-17</date>
+      <place>Vridsløselille</place>
+    </born>
+    <dead>
+      <date>1905-12-06</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1886,1894,1898,1901,1905,1906,andre</works>
+</person>

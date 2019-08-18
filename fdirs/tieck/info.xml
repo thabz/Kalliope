@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="tieck" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Johann Ludwig</firstname>
+    <lastname>Tieck</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1773-05-31</date>
+      <place>Berlin</place>
+    </born>
+    <dead>
+      <date>1853-04-28</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

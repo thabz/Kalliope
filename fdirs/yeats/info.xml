@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="yeats" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>W.B.</firstname>
+    <lastname>Yeats</lastname>
+    <fullname>William Butler Yeats</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1865-06-13</date>
+      <place>Sandymount, Dublin</place>
+    </born>
+    <dead>
+      <date>1939-01-28</date>
+      <place>Roquebrune-Cap-Martin, Frankrig</place>
+    </dead>
+  </period>
+  <works>1889,1893,1899,1904,1910,1914,1919,1921,1928,1933,1935,1938a,1938</works>
+</person>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="michaelis" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Sophus</firstname>
+    <lastname>Michaëlis</lastname>
+    <fullname>Sophus August Berthel Michaëlis</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1865-05-14</date>
+      <place>Odense</place>
+    </born>
+    <dead>
+      <date>1932-01-28</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1889,1893,1898,1900,1904,1913,1921,andre</works>
+</person>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="huch" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Richarda</firstname>
+    <lastname>Huch</lastname>
+    <fullname>Ricarda Octavia Huch</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1864-07-18</date>
+      <place>Braunschweig</place>
+    </born>
+    <dead>
+      <date>1947-11-17</date>
+      <place>Schönberg im Taunus</place>
+    </dead>
+  </period>
+  <works>1891,1908,1920,1929</works>
+</person>

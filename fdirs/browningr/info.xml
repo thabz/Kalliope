@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="browningr" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Robert</firstname>
+    <lastname>Browning</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1812-05-07</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1889-12-12</date>
+      <place>Venedig</place>
+    </dead>
+  </period>
+  <works>1842,1855,1864,andre</works>
+</person>

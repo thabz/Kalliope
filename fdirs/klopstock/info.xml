@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="klopstock" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich Gottlieb</firstname>
+    <lastname>Klopstock</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1724-07-02</date>
+      <place>Quedlinburg</place>
+    </born>
+    <dead>
+      <date>1803-03-14</date>
+      <place>Hamburg</place>
+    </dead>
+  </period>
+  <works>1749,1758,1769,1771,1784,1787,andre</works>
+</person>

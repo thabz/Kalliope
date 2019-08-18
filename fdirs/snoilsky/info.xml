@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="snoilsky" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Carl</firstname>
+    <lastname>Snoilsky</lastname>
+    <fullname>Carl Johan Gustaf, Greve Snoilsky</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1841-09-08</date>
+      <place>Stockholm</place>
+    </born>
+    <dead>
+      <date>1903-05-19</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <works>1869,andre</works>
+</person>

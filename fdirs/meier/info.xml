@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="meier" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johannes</firstname>
+    <lastname>Meier</lastname>
+    <fullname>Johannes Nicolai Meier</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1880-01-27</date>
+      <place>Jegindø</place>
+    </born>
+    <dead>
+      <date>1902-11-02</date>
+    </dead>
+  </period>
+  
+  <works>1905</works>
+</person>

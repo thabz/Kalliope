@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="young" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Edward</firstname>
+    <lastname>Young</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1683-07-03</date>
+      <place>Upham, Hampshire, England</place>
+    </born>
+    <dead>
+      <date>1765-04-05</date>
+      <place>Welwyn, Hertfordshire, England</place>
+    </dead>
+  </period>
+  <works>1742,1759</works>
+</person>

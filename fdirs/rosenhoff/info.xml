@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rosenhoff" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Claudius</firstname>
+    <lastname>Rosenhoff</lastname>
+    <fullname>Caspar Claudius Rosenhoff</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1804-11-18</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1869-01-19</date>
+      <place inon="on">Frederiksberg</place>
+    </dead>
+  </period>
+  <works>1848,1849,1849a</works>
+</person>

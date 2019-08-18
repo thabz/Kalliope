@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bagger" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Carl</firstname>
+    <lastname>Bagger</lastname>
+    <fullname>Carl Christian Bagger</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1807-05-11</date>
+      <place>Kbh.</place>
+    </born>
+    <dead>
+      <date>1846-10-25</date>
+      <place>Odense</place>
+    </dead>
+  </period>
+  <works>1834,1835,1836,1845,andre</works>
+</person>

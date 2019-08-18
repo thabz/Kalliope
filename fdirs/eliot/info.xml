@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="eliot" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>George</firstname>
+    <lastname>Eliot</lastname>
+    <fullname>Mary Anne Evans</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1819-11-22</date>
+      <place>Nuneaton, Warwickshire</place>
+    </born>
+    <dead>
+      <date>1880-12-22</date>
+      <place>Chelsea, Middlesex</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

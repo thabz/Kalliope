@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="pram" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Christen H.</firstname>
+    <lastname>Pram</lastname>
+    <fullname>Christen Henriksen Pram</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1756-09-04</date>
+      <place>Lesja, Norge</place>
+    </born>
+    <dead>
+      <date>1821-11-25</date>
+      <place inon="on">Skt. Thomas, Dansk Vestindien</place>
+    </dead>
+  </period>
+  <works>1782,andre</works>
+</person>
