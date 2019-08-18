@@ -24,7 +24,7 @@ const build_textrefs = collected => {
         found_changes = true;
       }
       let doc = loadXMLDoc(filename);
-      const texts = doc.find('//poem|//prose');
+      const texts = doc.find('//poem|//prose|//section[@id]');
       texts.forEach(text => {
         const notes = text.find('head/notes/note|body//footnote|body//note');
         notes.forEach(note => {

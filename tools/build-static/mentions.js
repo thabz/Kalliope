@@ -67,7 +67,7 @@ const build_person_or_keyword_refs = collected => {
         found_changes = true;
       }
       let doc = loadXMLDoc(filename);
-      const texts = doc.find('//poem|//prose');
+      const texts = doc.find('//poem|//prose|//section[@id]');
       texts.forEach(text => {
         const fromId = text.attr('id').value();
         const notes = text.find(
