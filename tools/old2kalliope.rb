@@ -348,12 +348,6 @@ File.readlines(ARGV[0]).each do |line|
   if @state == 'INHEAD'
     if line.start_with?("T:")
       @title = line[2..-1].strip
-      if @title =~ /<num>/
-          @stripped = @title.gsub(/<num>.*<\/num>/,'')
-          @toctitle = @title
-          @linktitle = @stripped
-          @indextitle = @stripped
-      end
     elsif line.start_with?("F:")
       unless @firstline.nil?
           abort "FEJL: Digtet »#{@title}« har mere end én F:"
