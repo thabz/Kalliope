@@ -2591,7 +2591,7 @@ vi slutte med Røn til dig vort Gavn,
 
 <section>
 <head>
-    <title>Digte efter Anakreon.</title>
+    <title>Digte efter Anakreon</title>
 </head>
 <content>
 
@@ -2839,7 +2839,7 @@ og Eros og Bathyllos.
 </poem>
 
 </content>
-</section> <!-- Digte efter Anakreon. -->
+</section> <!-- Digte efter Anakreon -->
 
 <section>
 <head>
@@ -2850,12 +2850,11 @@ og Eros og Bathyllos.
 <poem id="horn2019081945">
 <head>
     <title><num>1.</num>Højt blandt Sarijärvis Heder boede</title>
-    <toctitle><num>1.</num>Højt blandt Sarijärvis Heder boede</toctitle>
-    <indextitle>Højt blandt Sarijärvis Heder boede</indextitle>
-    <linktitle>Højt blandt Sarijärvis Heder boede</linktitle>
     <firstline>Højt blandt Sarijärvis Heder boede</firstline>
     <source pages="132-134"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Runebergs <xref type="translation" poem="runeberg201908191"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2991,12 +2990,9 @@ og med Sjæl og Krop jeg dig tilhører«.
 <poem id="horn2019081947">
 <head>
     <title><num>3.</num>Vort Land, vort Land, vort Fødeland</title>
-    <toctitle><num>3.</num>Vort Land, vort Land, vort Fødeland</toctitle>
-    <indextitle>Vort Land, vort Land, vort Fødeland</indextitle>
-    <linktitle>Vort Land, vort Land, vort Fødeland</linktitle>
     <firstline>Vort Land, vort Land, vort Fødeland</firstline>
     <notes>
-        <note>Gendigtning den finske nationalsang <xref poem="runeberg20190313"/>.</note>
+        <note>Gendigtning af den finske nationalsang <xref type="translation" poem="runeberg20190313"/>.</note>
     </notes>
     <source pages="138-141"/>
     <quality>korrektur1,kilde,side</quality>
