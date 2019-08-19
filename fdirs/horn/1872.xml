@@ -11,7 +11,7 @@
     <pictures>
         <picture src="1872-p1.jpg">Titelbladet til <i>Digte</i> (1872) lyder ,,Digte / af / Fr. Winkel Horn. // Kjøbenhavn. / C. A. Reitzels Forlag. / Thieles Bogtrykkeri. / 1872.''.</picture>
     </pictures>
-    <source facsimile="115308066037_color" facsimile-pages-num="160" facsimile-pages-offset="10">Fr. Winkel Horn: <i>Digte</i>, C.A. Reitzels Forlag, Kbh., 1872.</source>
+    <source facsimile="115308066037_color" facsimile-pages-num="160" facsimile-pages-offset="12">Fr. Winkel Horn: <i>Digte</i>, C.A. Reitzels Forlag, Kbh., 1872.</source>
 </workhead>
 <workbody>
 
@@ -851,7 +851,7 @@ som fulgtes i Døden ad.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<nonum><small>Det var engang, at Arnfinn Jarl havde budet Thorolf og hans Broder Egil, som dengang var en ung Knøs, til Gilde. Der blev da trukket Lod, om hvordan de skulde sidde, en Mand og en Kvinde sammen. Loddet faldt da saa, at Egil skulde sidde hos Jarlens Datter. Hun var gaaet bort, og da hun kom ind og saa’, at Egil havde sat sig ved hendes Plads, kvad hun:</small></nonum>
+    <nonum><wrap><small>Det var engang, at Arnfinn Jarl havde budet Thorolf og hans Broder Egil, som dengang var en ung Knøs, til Gilde. Der blev da trukket Lod, om hvordan de skulde sidde, en Mand og en Kvinde sammen. Loddet faldt da saa, at Egil skulde sidde hos Jarlens Datter. Hun var gaaet bort, og da hun kom ind og saa’, at Egil havde sat sig ved hendes Plads, kvad hun:</small></wrap></nonum>
 
 Gaa din Vej, rødmussede Svend!
 du faar sætte dig andensteds hen,
@@ -2149,6 +2149,9 @@ en Helligdom os være.
     <title>Den 15de November 1864</title>
     <firstline>Et Aar er der gaaet, kun et eneste Aar</firstline>
     <source pages="102-104"/>
+    <dates>
+        <event>1864-11-15</event>
+    </dates>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2265,6 +2268,8 @@ Alt, hvad der fik Liv paa Jorden
 ejer Ét, hvori det lever,
 Et, hvori dets Sjæl sig rører,
 mit det blev at elske dig.
+
+---
 
 <nonum><center>3.</center></nonum>
 
@@ -2732,10 +2737,7 @@ forbyde mig at drikke.
 
 <poem id="horn2019081941">
 <head>
-    <title><num>6.</num></title>
-    <toctitle><num>6.</num></toctitle>
-    <indextitle></indextitle>
-    <linktitle></linktitle>
+    <title><num>6.</num>Om Theben du fortæller</title>
     <firstline>Om Theben du fortæller</firstline>
     <source pages="128"/>
     <keywords>anakreon</keywords>
