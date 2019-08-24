@@ -1,10 +1,1768 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1867" author="preetzmann" status="incomplete" type="poetry">
+<kalliopework id="1867" author="preetzmann" status="complete" type="poetry">
 <workhead>
     <title>Hundrede Digte</title>
     <year>1867</year>
+    <notes>
+        <note>Forfatteren betegner overalt de amerikanske digtere med asterisk *. Denne praksis er udeladt i nærværende udgave.</note>
+        <note>Teksten følger Christian Preetzmann: <i>Hundrede Digte</i>, Chr. Steen &amp; Søns Forlag, Kbh., 2. opl., 1867.</note>
+    </notes>
+    <pictures>
+        <picture src="1867-p1.jpg">Titelbladet til <i>Hundrede Digte</i> (1867) lyder ,,Hundrede Digte / ved / Caralis. // Andet Oplag / Kjöbenhavn. / Chr. Steen &amp; Søns Forlag. / Thieles Bogtrykkeri. / 1867.''.</picture>
+    </pictures>
+    <!-- TODO: Find Thomas Moore på https://archive.org/stream/thecompletepoems08187gut/7cptm10.txt -->
+    <source facsimile="115408046475" facsimile-pages-num="238" facsimile-pages-offset="10">Christian Preetzmann: <i>Hundrede Digte</i>, Chr. Steen &amp; Søns Forlag, Kbh., 2. opl., 1867.</source>
 </workhead>
 <workbody>
+
+<prose id="preetzmann2019082201">
+<head>
+    <title>Indledning</title>
+    <source pages="iii-iv" facsimile-pages="10" />
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Hensigten med denne Digtsamling skulde
+være at give danske Læsere et for Alle tilgængeligt
+Udvalg af den engelske, derunder
+indbefattet den amerikanske Literaturs lyriske
+og lyrisk-episke Frembringelser i ældre og
+nyere Tid. Den Troskab, hvormed de enkelte
+Digte ere gjengivne, har ganske vist mange
+Grader, og det kan derom kun ialmindelighed
+bemærkes, at Udgiveren overalt har bestræbt
+sig for at lade Omsorgen for at bevare Originalens
+poetiske Ejendommelighed gaae Haand
+i Haand med Hensynet til Modersmaalets
+Fordringer. Stednavne og andre saadanne
+Betegnelser, der knytte sig til reent lokale
+Forhold, ere enten udeladte eller iførte dansk
+Dragt. Med Hensyn til Rythmus, Strophebygning
+og deslige, har jeg i de fleste Tilfælde
+ganske fulgt Originalen; kun i et Par
+af de byronske Digte ere Rimene udeladte,
+hvor jeg troede derved at opnaae mere end
+der tabtes, og Serenaden af samme Forfatter
+er det eneste, som er heelt omarbeidet.
+At jeg iøvrigt har benyttet mig af den Fordeel,
+som en større Rigdom paa qvindeligeRiim
+yder vort Sprog fremfor det engelske, til
+at lade disse afvexle med de mandlige, og
+derved har søgt at forhøie den rythmiske Virkning,
+antager jeg ikke kan misbilliges. I
+Digtenes Orden har jeg alene stræbt efter
+Afvexling, da de tilføiede Henviisninger gjøre
+det let for Læseren at skaffe sig et samlet
+Overblik over hver enkelt Forfatter. Ved
+at ledsage Bogen med kortfattede biographi^ke
+Meddelelser, samt Portraiter af de fire Forfattere,
+der baade have leveret de fleste Bidrag,
+og tillige i Literaturen staae som fremragende
+Repræsentanter, hver for sin særskilte Nationalitet,
+haaber jeg at have givet den forøget
+Interesse.
+    De vedføiede Anmærkninger ere fornemlig
+laante fra »Johnsons Lives of the British
+Poets«, completed by William Hazlitt, London
+1854; "The Poetry and Poets ofBritain« by
+Daniel Scrymgeour, Edinburgh 1850, og »Biographical
+Sketches of Eminent British Poets«,
+Dublin 1851.
+Kjøbenhavn, September 1866.
+</body>
+</prose>
+
+<poem id="preetzmann2019082202">
+<head>
+    <title><num>1.</num>I Skumringen</title>
+    <toctitle><num>1.</num>I Skumringen (H. W. Longfellow)</toctitle>
+    <indextitle>I Skumringen</indextitle>
+    <linktitle>I Skumringen</linktitle>
+    <firstline>Dagen er endt, alt Mørket</firstline>
+    <notes>
+        <note>Gendigtning af Longfellow: <xref type="translation" poem="longfellow201908222"/>.</note>
+    </notes>
+    <source pages="1-3"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Dagen er endt, alt Mørket
+  Fra Nattens Vinger gled,
+Som fra en Ørn i Flugten
+  En Fjer, der svæver ned.
+
+Igjennem Regn og Taage
+  Landsbyens Lys finder Vei,
+Men over min Sjæl sig sænker
+  Et Tungsind, jeg modstaaer ei.
+
+Et Tungsind og en Længsel,
+  Ei fostret i Smertens Egn;
+Den ligner alene Sorgen,
+  Som Taage ligner Regn.
+
+Kom! læs mig et Digt, et simpelt,
+  Men sjælfuldt Sangerqvad,
+Der kan bringe min Tanke Hvile
+  Og splitte Taagerne ad.
+
+Ei et af de store Mestre,
+  Ei af nogen Oldtidsskjald,
+Hvis Fodtrin fra det Fjerne
+  Gjenlyder i Tidens Hal;
+
+Hvis mægtige Tanker trænge
+  Som Krigstrompetens Klang
+Gjennem Livets rastløse Virken -
+  Nu har kun til Ro jeg Trang.
+
+Læs et af en mindre Sanger,
+  Der strømmed dybt fra hans Sjæl,
+Som Byger fra Sommerskyen,
+  Som Taarer fra Øiets Væld,
+
+Imens han i travle Dage
+  Og mangen søvnløs Nat
+Bar i sit Bryst af Toner
+  Saa underfuld en Skat.
+
+Saadanne Sange dulme
+  Just Sindets Oprør bedst,
+De komme som Velsignelsen,
+  Der følger Bønnen næst.
+
+See her en broget Samling,
+  Vælg efter din egen Lyst,
+Og laan saa til Digtets Rythmer
+  Skjønheden af din Røst,
+
+Og Natten skal fyldes med Toner,
+  Og Dagens Qval og Fortræd
+Indpakke sit Telt, som Nomaden,
+  Og stjæle sig taust afsted.
+
+<nonum><right><b>Henry W. Longfellow.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082203">
+<head>
+    <title><num>2.</num>Elskov og Tiden</title>
+    <toctitle><num>2.</num>Elskov og Tiden (Thomas Moore)</toctitle>
+    <indextitle>Elskov og Tiden</indextitle>
+    <linktitle>Elskov og Tiden</linktitle>
+    <firstline>Man siger - om det holder Stik</firstline>
+    <notes>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908221"/>.</note>
+    </notes>
+    <source pages="4-5"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Man siger - om det holder Stik,
+  Hvem veed - det selsomt klinger -
+At Tid og Elskov ikkun fik
+  Til Deling eet Par Vinger.
+I Sværmeriets første Ruus
+  Ei Elskov Brug gjør af dem,
+Han slentrer om i Suus og Duus,
+  La’er gamle Graaskjæg ha’e dem.
+    Tiden da la’er staae til,
+    Flyer afsted, hvorhen han vil.
+
+Men, ak! den laante Herlighed
+  Saa saare snart er omme:
+Idag fløi Tiden jo afsted,
+  Saa Elskovs Tour maa komme.
+Ja! da det gjælder først en slem,
+  En fristende Forandring,
+Naar hiin maa atter hinke frem,
+  Og denne gaaer paa Vandring.
+    Elskov da er paa Spil,
+    Flyer afsted, hvorhen han vil.
+
+Men Hun, som seer mig for sin Fod
+  I Lænker silkebløde,
+Iblandt de Tvende godt forstod
+  At skifte Ret, den Søde!
+Hun vidste deres Flygtighed
+  At parre saa behændig,
+At Elskov knap af Vinger veed,
+  Og Tiden bær dem stændig.
+    Nu har han vundet Spil,
+    Flyer afsted, hvorhen han vil.
+
+<nonum><right><b>Thomas Moore.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082204">
+<head>
+    <title><num>3.</num>Den lyksalige Enkemand</title>
+    <toctitle><num>3.</num>Den lyksalige Enkemand (Robert Burns)</toctitle>
+    <indextitle>Den lyksalige Enkemand</indextitle>
+    <linktitle>Den lyksalige Enkemand</linktitle>
+    <firstline>Den trettende April jeg tog</firstline>
+    <source pages="6-7"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Den trettende April jeg tog
+  En Skjændegjæst til Mage,
+Hun ved sin Tungefærdighed
+  Forbittred mine Dage.
+Jeg længe mine Qvaler har,
+  Og endnu fleer mig vented,
+Men nu har hende til min Trøst
+  Omsider Døden hentet.
+
+Samfulde eenogtyve Aar
+  Vi maatte Livet slide,
+Da styrede hun bort sin Curs -
+  Hvorhen, maa Himlen vide.
+Jeg tilstaaer, jeg gad selv det vidst,
+  Thi jeg vil ei fordølge,
+Af alle Qvinder, Jorden bær,
+  Jeg hende mindst gad følge.
+
+Nu Legemet er vel forvart,
+  Hvor Ormen er dets Makker,
+Men for at huse hendes Sjæl
+  Sig Djævlen vist betakker.
+Hun snarere i Skyen staaer
+  Og splitter den med Bulder:
+Det er, som hørte hendes Røst
+  Jeg hvergang Tordnen ruller.
+
+<nonum><right><b>Robert Burns.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082205">
+<head>
+    <title><num>4.</num>Lisbeth</title>
+    <toctitle><num>4.</num>Lisbeth (William Wordsworth)</toctitle>
+    <indextitle>Lisbeth</indextitle>
+    <linktitle>Lisbeth</linktitle>
+    <firstline>Hun boede fjernt fra Verdens Larm</firstline>
+    <notes>
+        <note>Gendigtning af William Wordsworth: <xref type="translation" poem="wordsworth201908221"/>.</note>
+    </notes>
+    <source pages="8"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Hun boede fjernt fra Verdens Larm,
+  Hvor Kilden risler blaa,
+Ei smigret af en Moders Sjæl
+  Og elsket kun af Faa.
+
+Violen lig ved mosgroet Steen,
+  Halv skjult for Verdens Blik,
+Alene paa en Himmel mørk,
+  Hun Stjernens Skjønhed fik.
+
+Ukjendt i Live, fulgt af Faa
+  Paa Dødens mørke Vei,
+Nu Lisbeth ligger i sin Grav -
+  Min Gud! hvad tabte jeg!
+
+<nonum><right><b>Wm. Wordsworth.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082206">
+<head>
+    <title><num>5.</num>Indisk Kjærlighed</title>
+    <toctitle><num>5.</num>Indisk Kjærlighed (Barry Cornwall)</toctitle>
+    <indextitle>Indisk Kjærlighed</indextitle>
+    <linktitle>Indisk Kjærlighed</linktitle>
+    <firstline>Siig mig ei, at Du mig elsker</firstline>
+    <notes>
+        <note>Gendigtning af Barry Cornwall: <xref type="translation" poem="cornwall201908221"/>.</note>
+    </notes>
+    <source pages="9"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Siig mig ei, at Du mig elsker,
+  Jubler end min Sjæl derved:
+Som til Jorden Himlens Stjerner,
+  Lyser Du jo til mig ned.
+
+Indiens Barn Du Kongebaarne
+  Skjænkede din Elskovs Krands,
+Skal da hun, hvem Du har hævet,
+  Mørkne Dig din Morgens Glands?
+
+Gaa! - Din Faders Ære kræver
+  Frit og ædelt Blod for Dig;
+Jeg har høstet nok af Hæder -
+  Du har engang elsket mig!
+
+<nonum><right><b>Barry Cornwall.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082207">
+<head>
+    <title><num>6.</num>O, var Du i den kolde Blæst</title>
+    <toctitle><num>6.</num>O, var Du i den kolde Blæst (Robert Burns)</toctitle>
+    <indextitle>O, var Du i den kolde Blæst</indextitle>
+    <linktitle>O, var Du i den kolde Blæst</linktitle>
+    <firstline>O! var Du i den kolde Blæst</firstline>
+    <notes>
+        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns201908221"/>.</note>
+    </notes>
+    <source pages="10"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+O! var Du i den kolde Blæst
+    Paa Marken der,
+Min Kappe slog jeg om Dig mod
+    Det vilde Veir;
+Og dersom Skjæbnens Uveirsstorm
+    Imod Dig brød,
+Her i mit Bryst Du bar et Hjem
+    I Liv og Død.
+
+Og stod jeg i den vilde Ørk,
+    Saa sort som Nat,
+Dens Øde var et Paradis
+    Med Dig, min Skat!
+Og var jeg bele Verdens Drot,
+    Og vi et Par,
+Min Krones skjønneste Juvel
+    Min Dronning var.
+
+<nonum><right><b>Robert Burns.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082208">
+<head>
+    <title><num>7.</num>Slavens Drøm</title>
+    <toctitle><num>7.</num>Slavens Drøm (H. W. Longfellow)</toctitle>
+    <indextitle>Slavens Drøm</indextitle>
+    <linktitle>Slavens Drøm</linktitle>
+    <firstline>Ved en uhøstet Riismark laae</firstline>
+    <notes>
+        <note>Gendigtning af Longfellow: <xref type="translation" poem="longfellow201908221"/>.</note>
+    </notes>
+    <source pages="11-13"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Ved en uhøstet Riismark laae
+    Med Seglen i Haanden han;
+Hans Bryst var nøgent, hans filtede Haar
+    Begravet i Sand.
+I Søvnens dæmrende Taager saae
+    Han atter sit Fødeland.
+
+Igjennem hans Drømmes vidtstrakte Egn
+    Den stolte Niger gled;
+Over Sletten der under Palmeløv
+    Igjen som Konge han skred;
+Karavanen han hørte med Klokkeklang
+    Ad Bjergets Skrænt stige ned.
+
+Blandt Børnene atter han saae sin Gemal
+    Med Øine som Ibenholt staae,
+Og jublende kasted sig om hans Hals
+    Og kyssed hans Kind de Smaae -
+Fra Drømmerens Øie en Taare faldt
+    I Sandet, hvor han laae.
+
+Saa foer han afsted i fnysende Fart
+    Langs Nigers Bredder, som før,
+Af gyldne Kjæder hans Bidsel var snoet,
+    Og ved hvert Sæt, han gjør,
+Hans Sabelskede klirrende slaaer
+    Mod Flanken af hans Paradeur.
+
+Foran ham fløi som et blodrødt Flag
+    Flamingoers lysende Bræm,
+Fra det gryed ad Dag fulgte han deres Flugt
+    Gjennem Tamarinternes Hjem,
+Til Kaffernes Hytter i Sigte han fik,
+    Og Havet dukkede frem.
+
+Om Natten hørte han Løvens Brøl
+    Og vilde Hyæners Skrig,
+Hvordan Flodhesten knuste ved sumpige Bred
+    De Rør, den skjulte sig i -
+Som en Æreshvirvel af Pauker det drog
+    I Drømmens Triumf ham forbi.
+
+Fra Skovenes Dyb lød et Frihedschor,
+    Det skingred af fulde Bryst,
+Og Blæsten i Ørkenen blanded deri
+    Sin vilde, ustyrlige Røst -
+Op foer han i Drømme, og smile han maa
+    Ad al den stormende Lyst.
+
+Ei følte han Slavefogedens Pidsk,
+    Ei Dagens brændende Glød:
+Hans Drømmes Land havde Døden smykt,
+    Og endt er nu al hans Nød -
+Der laae hans livløse Legeme slængt,
+    En Lænke, som Sjælen brød!
+
+<nonum><right><b>Henry W. Longfellow.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082209">
+<head>
+    <title><num>8.</num>Rask, før Tiden os henter</title>
+    <toctitle><num>8.</num>Rask, før Tiden os henter (Thomas Moore)</toctitle>
+    <indextitle>Rask, før Tiden os henter</indextitle>
+    <linktitle>Rask, før Tiden os henter</linktitle>
+    <firstline>Rask, før Tiden os henter</firstline>
+    <source pages="14-15"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Rask, før Tiden os henter,
+  Skjænk i til Glassenes Bred -
+Den Knægt alt staaer og venter,
+  Og vi maae afsted, afsted!
+Grib Glæden, før den bortsmutter,
+  Ei Orpheus’s Melodi
+Kan vinde fra Døden Minuter
+  Og trylle Liv deri.
+Thi rask, før Tiden os henter,
+  Skjænk i til Glassenes Bred,
+Den Knægt alt staaer og venter,
+  Og vi maae afsted, afsted!
+
+Nektarskaalen med Sødme,
+  Din Hebes Læbe lig,
+Sig nærmer din med Rødme,
+  Fordi Du betænker Dig.
+Skam skal over Dig lyde,
+  Ifald Du lever den Stund,
+Da Glas eller Glut Dig byde
+  Omsonst en Purpurmund.
+Thi rask, for Tiden os henter,
+  Skjænk i til Glassenes Bred,
+Den Knægt alt staaer og venter,
+  Og vi maae afsted, afsted!
+
+<nonum><right><b>Thomas Moore.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082210">
+<head>
+    <title><num>9.</num>Hvergang dit Blik jeg seer paany</title>
+    <toctitle><num>9.</num>Hvergang dit Blik jeg seer paany (Samme)</toctitle>
+    <indextitle>Hvergang dit Blik jeg seer paany</indextitle>
+    <linktitle>Hvergang dit Blik jeg seer paany</linktitle>
+    <firstline>Hvergang dit Blik jeg seer paany</firstline>
+    <source pages="16"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Hvergang dit Blik jeg seer paany,
+  Saa fuldt af Haab og Liv og Lyst,
+Som kunde aldrig nogen Sky
+  Formørke Himlen i dit Bryst: -
+Da maa jeg tænke paa med Smerte,
+  At Rosen taber Blad for Blad,
+Og dette, nu saa lette Hjerte
+  Kan glemme, det engang var glad.
+
+Thi, ak! der komme kan den Stund,
+  Da Haabets Stjerne ned vil gaae,
+Da Elskovs Sol maaskee ikkun
+  Et isnet Hjerte skinner paa.
+Ak! Ungdom er som Sneekrystaller,
+  Før Regn og Slud slaaer ned fra Sky,
+Men der, hvor Smertens Taare falder,
+  Blier Sneen aldrig hvid paany.
+
+<nonum><right><b>Thomas Moore.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082211">
+<head>
+    <title><num>10.</num>Da Amor var Barn</title>
+    <toctitle><num>10.</num>Da Amor var Barn (Samme)</toctitle>
+    <indextitle>Da Amor var Barn</indextitle>
+    <linktitle>Da Amor var Barn</linktitle>
+    <firstline>Da Amor var Barn og gik ørkesløs om</firstline>
+    <notes>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908222"/>.</note>
+    </notes>
+    <source pages="17-18"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Da Amor var Barn og gik ørkesløs om
+  Blandt Blomster fra Morgen til Aften,
+Engang til en Skovplet i Dalen han kom,
+  Og standsede strax, da han traf den.
+
+En Krands han i Træerne hænge saae,
+  En Kilde der risled i Grunden -
+Glad sprang han iveiret for Krandsen at naae,
+  Han veed, den af Glæden er hunden.
+
+Men, ung som han var, ikke aned hans Bryst,
+  Da Blomsternes Ynde ham daarer,
+At Kilden, der mumled i Dybet tyst,
+  Var rundet af Sorgens Taarer.
+
+Han greb efter Krandsen med Ungdomsmod,
+  Alt med sine Hænder haade -
+Da faldt den saa dybt i den salte Flod,
+  Og Blomsterne bleve saa vaade.
+
+Nu bærer han Krandsen ved Nat og Dag,
+  Dens Farver i Sollyset spille;
+Dog endnu hvert Blad har beholdt en Smag
+  Af Taarernes salte Kilde.
+
+<nonum><right><b>Thomas Moore.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082212">
+<head>
+    <title><num>11.</num>Stanzer</title>
+    <toctitle><num>11.</num>Ei Verden giver os igjen (Byron)</toctitle>
+    <indextitle>Stanzer</indextitle>
+    <linktitle>Stanzer</linktitle>
+    <firstline>Ei Verden giver os igjen den Glæde, den har spildt</firstline>
+    <source pages="19-20"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Ei Verden giver os igjen den Glæde, den har spildt,
+Naar Sjælens Morgenrød gaaer ned i dunkle Drifters Nat;
+Det er ei Kindens Rødme blot, der visner bort med den,
+Men Hjertets fine Blomst gaaer ud, før Ungdom er forbi.
+
+Thi, ak! de Faa, hvis Aand sig svang fra deres Lykkes Vrag,
+De drives hastig mod et Skjær paa vilde Lysters Hav:
+Forgjæves da Kompassets Naal henpeger mod den Kyst,
+Hvortil med sønderrevne Seil de aldrig dog vil naae.
+
+Da sænker Dødens Kulde sig paa den fortabte Sjæl,
+Den føler ei for Andres Nød, den gyser for sig selv,
+Da lægger dette Laag af Iis sig over Taarens Væld,
+Og Blikket funkler kun, imens det speiler sig deri.
+
+Gi’er Aanden nu og da et Lyn, og Læben slaaer et Smiil,
+Dermed du kjøber ei et Blund fra Haabets glade Tid;
+Det er kun som en Epheugreen omkring en gold Ruin,
+Foruden Alt er frisk og grønt, forinden lurer Død.
+
+O! havde jeg min Ungdom end, mit varme Hjerteslag,
+O! kunde jeg blot græde nu, som jeg har grædt engang!
+Som Kilder i det øde Sand, saa sød og liflig blev
+Her, midt i Livets visne Ork, den Taareflod for mig.
+
+<nonum><right><b>Byron.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082213">
+<head>
+    <title><num>12.</num>Kjærlighedens Philosophi</title>
+    <toctitle><num>12.</num>Kjærlighedens Philosophi (P. B. Shelley)</toctitle>
+    <indextitle>Kjærlighedens Philosophi</indextitle>
+    <linktitle>Kjærlighedens Philosophi</linktitle>
+    <firstline>Med Havets brusende Vande</firstline>
+    <source pages="21"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Med Havets brusende Vande
+  Forener sig Skovbækkens Kluk,
+Og evig i Luften blande
+  Sig Vindenes omme Suk.
+Det er ei Naturens Mening
+  At staae det Enkelte bi,
+Alt stræber jo mod Forening --
+  Ak! hvorfor ikke vi?
+
+See! Bjergene kysse jo Himlen,
+  Og Bølge ta’er Bølgen i Favn,
+Med et Kys hvert Blomster i Vrimlen
+  Betroer en Søster sit Savn.
+Og Solen kjæler for Dyssen,
+  Til Krat stjæler Maanen sig -
+Ak! hvortil dog al den Kyssen,
+  Kysser Du ikke mig?
+
+<nonum><right><b>P. B. Shelley</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082214">
+<head>
+    <title><num>13.</num>Høstmanden og Blomsterne</title>
+    <toctitle><num>13.</num>Høstmanden og Blomsterne (H. W. Longfellow)</toctitle>
+    <indextitle>Høstmanden og Blomsterne</indextitle>
+    <linktitle>Høstmanden og Blomsterne</linktitle>
+    <firstline>Der er en Høstmand, hans Navn er Død</firstline>
+    <source pages="22-23"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Der er en Høstmand, hans Navn er Død,
+    Med Leens skarpe Kant
+Meier han Kornets stride Skjæg
+    Og Blomsterne deriblandt.
+
+,,Hvi skal'' - han talte - ,,det stride Korn,
+    ,,Ei det Skjønne være min Part? -
+,,Skjøndt Blomsternes Aande blev mig saa kjær,
+    ,,Jeg skal dem dog miste snart.''
+
+Med Taarer i Øiet kyssede saa
+    Han Blomsternes Kind saa bleg;
+Det var for Vorherre i Paradis
+    Han bandt dem i sine Neg.
+
+,,Min Herre har Brug for de Blomster smaa''
+    - Saa Høstmandens Tale klang -
+,,Et dyrebart Minde for ham om den Jord,
+    ,,Hvor selv han var Barn engang.''
+
+,,De Alle skal blomstre i Lysets Land,
+    ,,Omplantede ved min Haand,
+,,Og fromme Helgene bære dem paa
+    ,,Deres skinnende Klædebon.''
+
+Og Moderen gav med Taarer og Suk
+    De Blomster, hun elskede mest:
+Hun vidste, bun kunde jo finde igjen
+    I Lysets Egne dem hist.
+
+Det var uden Vrede den Høstmand kom,
+    Hans Hjerte var ikke haardt;
+Som Engel ban saae til den grønne Jord -
+    Og Blomsterne bar han bort.
+
+<nonum><right><b>H. W. Longfellow.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082215">
+<head>
+    <title><num>14.</num>Serenade</title>
+    <toctitle><num>14.</num>Serenade (J. J. Callanan)</toctitle>
+    <indextitle>Serenade</indextitle>
+    <linktitle>Serenade</linktitle>
+    <firstline>See! Luften er stille</firstline>
+    <source pages="24-25"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+See! Luften er stille,
+  Smaabølgerne gaae,
+Dugtaarerne trille
+  Fra Blad og fra Straa;
+Og Maanen nedsmiler
+  I deilige Nat:
+Nu kom til dit Vindve,
+  O Mary, min Skat!
+
+I Straalernes Flitter
+  En Skabning meer fiin
+Ei over et Gitter
+  Sig bøied, end din.
+O kom til dit Vindve
+  Og send mig, min Skat,
+Et Smiil af din Læbe
+  Den deilige Nat!
+
+Vil Stormen mig bøie,
+  Din Favn er mit Ly,
+Min Himmel dit Øie,
+  Dertil vil jeg tye.
+Hvor høit jeg Dig elsker,
+  Det veed Du, min Skat!
+Godnat da, min Elskte,
+  Min Mary, Godnat!
+
+<nonum><right><b>J. J. Callanan.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082216">
+<head>
+    <title><num>15.</num>Et Tempel for Venskab</title>
+    <toctitle><num>15.</num>Et Tempel for Venskab (Thomas Moore)</toctitle>
+    <indextitle>Et Tempel for Venskab</indextitle>
+    <linktitle>Et Tempel for Venskab</linktitle>
+    <firstline>Et Tempel for Venskab - udbrød Magdalene</firstline>
+    <notes>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908223"/>.</note>
+    </notes>
+    <source pages="26"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+,,Et Tempel for Venskab'' - udbrød Magdalene -
+  ,,Jeg bygger i Haven, o! tænk, hvilken Fryd!''
+Og Templet blev bygget, nu savned hun ene
+  Symbolet i Marmor til Altarets Pryd.
+Hun fløi til en Konstner, han for hende satte
+  Et Billed af Venskab, det bedste han har,
+Men saa koldt og saa dorsk, at en Kjender vil fatte,
+  Det var ei den Afgud, i Hjertet hun bar.
+
+,,Nei aldrig'' - hun raabte - ,,kan jeg faae isinde
+  ,,At reise et Billed, hvis Blik er saa mat;
+,,Nei, hiin lille Gud iblandt Roser derhenne,
+  ,,Ham gad jeg som Venskab paa Altaret sat!''
+Og Handlen blev sluttet; sin Favn hun udbreder,
+  Og iler med Støtten til Altret saa glad:
+,,Farvel!'' - sagde Manden - ,,fleer Piger end Eder
+  ,,Tog Elskov, endskjøndt kun om Venskab de bad.''
+
+<nonum><right><b>Thomas Moore.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082217">
+<head>
+    <title><num>16.</num>Mary</title>
+    <toctitle><num>16.</num>Mary (Robert Burns)</toctitle>
+    <indextitle>Mary</indextitle>
+    <linktitle>Mary</linktitle>
+    <firstline>Himlens Magter, I, som vaage</firstline>
+    <source pages="27"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Himlens Magter, I, som vaage
+  Evig over Uskylds Fjed,
+Mens i fjerne Land jeg vandrer,
+  Skuer til min Mary ned!
+Lad den himmelsk skjønne Skabning,
+  Skjøn og himmelsk som I selv,
+Lad min Mary, Eders Søster,
+  Drage Jer fra Himlens Hvælv!
+
+Ikkun lette Vindpust røre
+  Sig om hendes milde Bryst!
+Med de viftende Favoner
+  Indaand hendes Hjerte Trøst!
+Værn om hende, I Serapher!
+  Mens jeg vandrer uden Ro,
+Og naar hjemløs jeg omtumles,
+  Lad i hendes Barm mig boe!
+
+<nonum><right><b>Robert Burns.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082218">
+<head>
+    <title><num>17.</num>Jeg erindrer, jeg erindrer</title>
+    <toctitle><num>17.</num>Jeg erindrer, jeg erindrer (Thomas Hood)</toctitle>
+    <indextitle>Jeg erindrer, jeg erindrer</indextitle>
+    <linktitle>Jeg erindrer, jeg erindrer</linktitle>
+    <firstline>Jeg erindrer, jeg erindrer</firstline>
+    <source pages="28-29"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Jeg erindrer, jeg erindrer
+  Mit stille Barndomshjem,
+Hvor Solen gjennem Ruden mildt
+  Om Morgnen titted frem.
+Og aldrig den for tidlig kom,
+  Ei Dagen blev mig lang;
+Nu ønsker jeg, en evig Nat
+  Mig gjemte mangengang.
+
+Jeg erindrer, jeg erindrer
+  De røde Rosers Duft,
+Og Lilierne, hvis Kalk er skabt
+  Af Solskin og af Luft,
+Og Droslerne, der bygged skjult
+  I Hasselhækkens Læ,
+Og Rønnen i min Broders Bed -
+  End staaer det gamle Træ.
+
+Jeg erindrer, jeg erindrer,
+  Hvordan omkring jeg sprang,
+Saa frit som Svalen, naar den glad
+  Sig gjennem Luften svang.
+Dengang var end saa fjederlet,
+  Nu er saa tungt mit Sind,
+Og Mølledammen køled knap
+  Min feberhede Kind.
+
+Jeg erindrer, jeg erindrer
+  Den dunkle Fyr, hvis Top
+Jeg troede med sit ranke Spiir
+  I Skyen raged op:
+Ak! end jeg var jo kun et Barn,
+  Nu føler jeg med Blu,
+Langt nærmere jeg Himlen var
+  Dengang, end jeg er nu.
+
+<nonum><right><b>Thomas Hood.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082219">
+<head>
+    <title><num>18.</num>Naar Bægerne foran os funkle</title>
+    <toctitle><num>18.</num>Naar Bægerne foran os funkle (Thomas Moore)</toctitle>
+    <indextitle>Naar Bægerne foran os funkle</indextitle>
+    <linktitle>Naar Bægerne foran os funkle</linktitle>
+    <firstline>Naar Bægerne foran os funkle</firstline>
+    <notes>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908224"/>.</note>
+    </notes>
+    <source pages="30"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Naar Bægerne foran os funkle,
+  I en Kreds af de trofaste Faa,
+Gjennem Jordlivets Skygger saa dunkle
+  Seer et Glimt vi af Himmelens Blaa.
+Herligt Adam i Eden sig hvilte,
+  Men vi dristig tør byde ham Trods;
+Thi for ham dog kun to Øine smilte -
+  See, hvormange der straale for os!
+
+Ved en Side den skummende Drue,
+  Ved den anden en blaaøiet Glut:
+Det var nok, denne dobbelte Lue,
+  Til en Helgen at gjøre kaput.
+Ja, skjøndt Livet heniler som Bækken,
+  Knap et Suk er dets Flygtighed værd,
+Voxer Druen kun frodig bag Hækken,
+  Kaster Elskov paa Bølgen sit Skjær.
+
+<nonum><right><b>Thomas Moore.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082220">
+<head>
+    <title><num>19.</num>Hyrdepigens Sang</title>
+    <toctitle><num>19.</num>Hyrdepigens Sang (R. M. Milnes)</toctitle>
+    <indextitle>Hyrdepigens Sang</indextitle>
+    <linktitle>Hyrdepigens Sang</linktitle>
+    <firstline>Jeg gik langs Møllebækken</firstline>
+    <source pages="31-32"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Jeg gik langs Møllebækken
+  I Dalen dyb og trang,
+Men Bækkens Løb var standset
+  Og Hjulets travle Gang.
+Græshopperne taug stille,
+  Stum var hver Fuglerøst,
+Jeg hørte kun mit Hjerte,
+  Der banked i mit Bryst.
+
+Og under Elmetræet
+  Jeg satte mig saa trygt,
+Jeg saae dets Skygge voxe,
+  Men mærked ei til Frygt;
+Jeg lytted efter Fodtrin,
+  Jeg lytted om en Røst -
+Men al den Lyd, jeg hørte,
+  Var Hjertet i mit Bryst.
+
+Han kom ei, som han loved
+  Dengang vi skiltes ad -
+Paa deres gyldne Throner
+  Sad Stjernerne i Rad;
+Natluften strøg forbi mig
+  Og rørte Løvet tyst -
+Jeg hørte kun mit Hjerte,
+  Der banked i mit Bryst.
+
+Og mine Taarer trilled -
+  Da Grenen fik et Ryk,
+En Haand laae paa min Skulder,
+  Blidt følte jeg dens Tryk.
+Den drog saa nær, saa nær mig
+  Taushed var al vor Røst:
+Kun vore Hjerters Banken
+  Vi hørte, Bryst mod Bryst.
+
+<nonum><right><b>R. M. Milnes.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082221">
+<head>
+    <title><num>20.</num>En Psalme om Livet</title>
+    <toctitle><num>20.</num>En Psalme om Livet (H. W. Longfellow)</toctitle>
+    <indextitle>En Psalme om Livet</indextitle>
+    <linktitle>En Psalme om Livet</linktitle>
+    <firstline>Lær mig ei i mørke Stunder</firstline>
+    <notes>
+        <note>Gendigtning af Henry Wadsworth Longfellow: <xref type="translation" poem="longfellow1999063003"/>.</note>
+    </notes>
+    <source pages="33-34"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Lær mig ei i mørke Stunder,
+  Livet er en Drøm ved Dag:
+Død er Sjælen, naar den blunder,
+  Skinnet er kun Selvbedrag.
+
+Livet det er Alvor, Venner!
+  Graven ei dets Grændseskjel;
+,,Støv til Støv tilbagevender''
+  Gjælder ei den frie Sjæl.
+
+Hverken Glæden eller Sorgen
+  Har Du Lov at hvile i;
+Tænk bestandig paa Imorgen,
+  Naar dit Dagværk er forbi!
+
+Lang er Konst, men Tid har Vinger -
+  Toner nok saa høit dit Flag,
+Dæmpet, som en Ligsang, klinger
+  Indtil Graven Hjertets Slag.
+
+Her i Verdens Strid og Møie,
+  Her i Livets korte Blund,
+Lign ei Oxerne, der pløie,
+  Vær en Helt i Kampens Stund!
+
+Stol ei paa den Tid, som kommer,
+  Sørg ei over den, som gik,
+<w>Saa</w> i Øieblikkets Sommer,
+  Indad, opad vend dit Blik!
+
+Store Aanders Liv os minder,
+  Livet vi forædle kan,
+Plante, før vort Glas udrinder,
+  Spor i Tidens skjøre Sand.
+
+Spor, der, naar en Broder driver
+  Som et Vrag paa Livets Flod,
+End maaskee hans Haab opliver,
+  Lærer ham at fatte Mod.
+
+Lad i Daad os Kraften hente,
+  Aldrig slukke Hjertets Baal,
+Lære virke, lære vente,
+  Stille nærme os vort Maal!
+
+<nonum><right><b>H. W. Longfellow.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082222">
+<head>
+    <title><num>21.</num>O, var jeg en Sommerfugl</title>
+    <toctitle><num>21.</num>O, var jeg en Sommerfugl (Th. H. Bayley)</toctitle>
+    <indextitle>O, var jeg en Sommerfugl</indextitle>
+    <linktitle>O, var jeg en Sommerfugl</linktitle>
+    <firstline>O! var jeg en Sommerfugl, født under Løvet</firstline>
+    <source pages="35-36"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+O! var jeg en Sommerfugl, født under Løvet,
+  Hvor Lilien sig bader i Morgenens Dug,
+Blandt Blomster bestandig jeg sværmed og røved
+  Et Lys fra hver Knop, som er liflig og smuk.
+Hvad gavned det mig at see Slaver i Støvet,
+  Hvi skulde paa Rigdom jeg spilde et Suk?
+O! var jeg en Sommerfugl, født under Løvet,
+  Jeg kyssed hver Knop, som er liflig og smuk.
+
+Ja! kunde en tryllende Fee jeg blot fange,
+  Og fik jeg saa prægtige Vinger engang,
+Jeg boltred mig let i de løvrige Gange,
+  Og slumred i Roser ved Nattergalsang.
+Ak! Rigdommens Skatte maae vogtes saa bange,
+  Tidt Veien til Magten er knudret og trang,
+O! var jeg en Sommerfugl Dagene lange,
+  Vugget i Roser til Nattergalsang.
+
+Fortæl mig kun ei, at hver glad lille Sværmer
+  Maa døe for et Pust af en Efteraarsvind -
+Ak, bedst er det dog, naar sig Sommeren fjerner,
+  At slumre med Blomsten og Skjønheden ind!
+Med Møie Saamangen mod Vintren sig skjærmer,
+  For Livet at friste med blegnende Kind;
+En Sommerfugl leve jeg gad som en Sværmer,
+  Og slumre med Blomsten og Skjønheden ind.
+
+<nonum><right><b>Th. H. Bayley.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082223">
+<head>
+    <title><num>22.</num>O, var jeg end en sorgløs Dreng</title>
+    <toctitle><num>22.</num>O, var jeg end en sorgløs Dreng (Byron)</toctitle>
+    <indextitle>O, var jeg end en sorgløs Dreng</indextitle>
+    <linktitle>O, var jeg end en sorgløs Dreng</linktitle>
+    <firstline>O! var jeg end en sorgløs Dreng</firstline>
+    <source pages="37-39"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+O! var jeg end en sorgløs Dreng
+Hist i mit Høilands Egn,
+Jeg tumled mig paa Bølgens Seng
+Og kløved Skovens Hegn. -
+Hvad nytter mig den flade Pragt,
+Naar Aandens Vingeslag
+Kun higer efter Fjeldets Tragt
+Og Dønningernes Brag?
+
+Ja, bort med denne Drivhuusluft
+Af arvet Navn og Rang! --
+Jeg hader Smigers vamle Duft
+Og Slavers krumme Gang!
+Paa Klippeskrænten vil jeg boe,
+Hvor Havets Brænding gaaer;
+Der vil jeg sværme om, saa fro,
+Som i min Barndoms Vaar.
+
+Skjøndt ung endnu, jeg føler, ei
+For Verden jeg er skabt,
+Og gik til Skyggers Land min Vei,
+Hvad havde jeg vel tabt?
+Kun eengang, i en deilig Drøm,
+Har Salighed jeg smagt -
+Ak! hvorfor var det kun en Drøm,
+Hvi blev jeg atter vakt?
+
+Henvisnet er min Elskovs Vaar,
+Forstummet Venskabs Røst,
+Forladt og ene Hjertet slaaer
+Kun mod mit eget Bryst.
+Og dulmes Smerten mangengang
+I glade Brødres Lag,
+Dog Hjertet, ene Dagen lang,
+Kun tæller sine Slag.
+
+Om Ven og Fjende spørges ei,
+Naar Glæden banker paa,
+Men falder Mørket paa din Vei,
+Du har kun Venner faae.
+Ak! havde jeg en trofast Barm
+At hælde til min Kind,
+Jeg skyed denne vilde Larm,
+Som slutter Tomhed ind.
+
+O, Qvinde! Du, engang mit Alt,
+Beklag mit kolde Leer,
+Som selv din yndige Gestalt
+Ei mægter fængsle meer.
+Thi, tro mig, glad den travle Færd,
+Med Tungsind paa sin Bund,
+Jeg bytted for det milde Skjær
+Omkring den Frommes Mund.
+
+Ja, Verdens tomme Lyst jeg bød
+Med Glæde mit Farvel,
+Naar Dalen skjulte i sit Skjød
+Min mørke Sjæl i Qveld. -
+O! havde jeg den Fjederham,
+Som bærer Duen frem,
+Jeg skulde kløve Skyens Kam
+Og ile til mit Hjem!
+
+<nonum><right><b>Byron.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082224">
+<head>
+    <title><num>23.</num>Sang</title>
+    <toctitle><num>23.</num>Sang (W. C. Bryant)</toctitle>
+    <indextitle>Sang</indextitle>
+    <linktitle>Sang</linktitle>
+    <firstline>Ønsker Du at vide, naar</firstline>
+    <source pages="40-41"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Ønsker Du at vide, naar
+  Bedst dit Suk sig lønner,
+Naar den Skjønne mindst modstaaer
+  Elskovs kjælne Bønner?
+Qvindens Tro kun altfor sødt
+  Skjænkes tidt iblinde,
+Pigehjertet er saa blødt,
+  Mænd som Veir og Vinde!
+
+Nærm den Faure Dig, naar Sang
+  Toner trindt fra Qviste,
+Naar i Duft fra friske Vang
+  Vaarens Knopper briste;
+Naar fra Krat og Søens Speil
+  Elskovsaander stige,
+Straalende i Skjønhed - beil
+  Til den bange Pige!
+
+Nærm Dig, naar med Rosenmund
+  Sommeraftnen vinker,
+Naar fra Bækkens klare Bund
+  Klare Stjerner blinker;
+Naar paa Busk og Vindveskarm
+  Maanelyset bæver,
+Suk, til hendes ømme Barm
+  Ømmere sig hæver!
+
+Nærm Dig, naar sig Høstens Skjær
+  Over Skoven lægger,
+Løvet fra de visne Træer
+  Kildespringet dækker;
+Minde vil den Varselsrøst,
+  Ungdom svinder fage,
+Vil, før Blomsten doer i Høst,
+  Hun dens Sødme smage.
+
+Nærm Dig, naar den kolde Vind
+  Huult paa Porten banker,
+Naar sig om Kaminens Skin
+  Muntre Ungdom sanker;
+Mens Orkanens vilde Stød
+  Nøgne Marker feier,
+Elskovs Hvisken, dobbelt sød,
+  Vinder snarest Seier.
+
+<nonum><right><b>W. C. Bryant.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082225">
+<head>
+    <title><num>24.</num>Amor og Fornuften</title>
+    <toctitle><num>24.</num>Amor og Fornuften (Thomas Moore)</toctitle>
+    <indextitle>Amor og Fornuften</indextitle>
+    <linktitle>Amor og Fornuften</linktitle>
+    <firstline>Det var engang i faure Vaar</firstline>
+    <notes>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908225"/>.</note>
+    </notes>
+    <source pages="42-44"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Det var engang i faure Vaar,
+  Da Hjertet fanger Blomsterduften,
+Da mødtes - selsomt tidt det gaaer -
+  En Morgen Amor og Fornuften.
+
+Han talte om sin sidste Drøm,
+  Imens Fornuften priste Veiret:
+Saa frisk var ogsaa Luftens Strøm -
+  Og snart i Selskab de spadsered.
+
+Den Lille gjorde mangt et Sving,
+  Mens, Juno lig, Fornuften spanker
+Og kaster fra sig vidt omkring
+  En vældig Skygge, hvor hun vanker.
+
+Hvad Under, at tilsidst lidt klam
+  Den klare Morgen Amor følte;
+Thi stadig Skyggen faldt paa ham
+  Og uafladelig ham kølte.
+
+Omsonst han letted Vingen op
+  Mod Lyset, hvor det lifligst spilled,
+Bestandig Pigens Kæmpekrop
+  Sig mellem ham og Solen stilled.
+
+,,Det gaaer forvidt!'' - den Smaa udbrød -
+  ,,Ei Solen er for Jer alene!'' --
+Saa Nympben sit Farvel han bød
+  Og smutted bort bag Myrtegrene.
+
+Nu sværmed han omkring saa glad,
+  I Skov og Eng, ved Søens Brusen,
+Drak Liv og Lyst af Solens Bad
+  Og Sommervindens milde Susen.
+
+Og plukked alle Blomster smaae
+  Og fanged alle faure Qvinder
+Og nipped til hver Frugt, han saae,
+  Til Duften døer og Smagen svinder.
+
+Men da til Slettens aabne Skjød
+  Sig sænked Solens Middagsvarme,
+Vansmægtende i Feberglød
+  Da gispede saa mat den Arme.
+
+Ei svaled meer ham Nattens Luft,
+  Og bort fløi Sundheds Blomstersmykke
+Hvor var den sindige Fornuft
+  Nu henne med sin svale Skygge?
+
+Et gammelt Palmetræ der stod -
+  Hvad seer han, just som han sig vendte? -
+Der stod hun, lænet til dets Fod,
+  Med Panden sval, mens selv han brændte.
+
+,,O! læg mig til din Barm saa kold!'' -
+  Ved hendes Fod han sagte stammed -
+Da slynged hun sin Klædnings Fold
+  Om Hov’det, der i Feber flammed.
+
+Igjennem Marv og Been det gøs,
+  Men hastig sagtnes Pulsens Strømme,
+Thi, ak! til Iis ham Blodet frøs -
+  Forbi det var med Amors Drømme!
+
+<nonum><right><b>Thomas Moore.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082226">
+<head>
+    <title><num>25.</num>Om jeg elske vil Dig?</title>
+    <toctitle><num>25.</num>Om jeg elske vil Dig? (Samme)</toctitle>
+    <indextitle>Om jeg elske vil Dig?</indextitle>
+    <linktitle>Om jeg elske vil Dig?</linktitle>
+    <firstline>Om jeg elske vil Dig?</firstline>
+    <source pages="45"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Om jeg elske vil Dig?
+Ja! ved Stjernens Øie hist,
+Som i Taarer til Dig
+Skuer ned saa vist.
+Skjøndt mørknet tidt
+Af Taarer, mit
+Er trofast hver en Stund,
+Og elske Dig, det vil jeg -
+Ja, til Dødens Blund!
+
+Vil jeg bortflye fra Dig?
+Nei! før Stjernen hisset brast,
+Løftet, som jeg gav Dig,
+Skal som den staae fast.
+I Nattens Slud
+Dens Lys gaaer ud,
+Og mit i Dødens Blund,
+Men bortflye, Elskte, fra Dig -
+Nei, i Døden kun!
+
+<nonum><right><b>Thomas Moore.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082227">
+<head>
+    <title><num>26.</num>Vagtskuddet</title>
+    <toctitle><num>26.</num>Vagtskuddet (Samme)</toctitle>
+    <indextitle>Vagtskuddet</indextitle>
+    <linktitle>Vagtskuddet</linktitle>
+    <firstline>O! husker Du den Solnedgang</firstline>
+    <source pages="46"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+O! husker Du den Solnedgang
+    Hiin sidste Aftenstund,
+Hvordan det fjerne Vagtskud klang
+    Henover mørkblaa Sund?
+Bum! - - I Horisontens Rand
+    Vi hørte Lyden end,
+Indtil bag Dybets skjulte Land
+    Den syntes at døe hen.
+
+Med Dig i Tanker mangengang,
+    En sildig Aftenstund,
+Jeg hører end det Vagtskuds Klang
+    Henover stormfuldt Sund.
+Bum! - - Mens Lydens Tonefald
+    Paa kruset Vand døer hen,
+Med Graad fra Verdens Jammerdal
+    Jeg ønsker døe, som den.
+
+<nonum><right><b>Thomas Moore.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082228">
+<head>
+    <title><num>27.</num>Til Fanny</title>
+    <toctitle><num>27.</num>Til Fanny (Samme)</toctitle>
+    <indextitle>Til Fanny</indextitle>
+    <linktitle>Til Fanny</linktitle>
+    <firstline>Hun er smuk, det er sandt, dog dit Hjerte bevar</firstline>
+    <source pages="47"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+,,Hun er smuk, det er sandt, dog dit Hjerte bevar,
+  ,,Hun er snild, men lad ikke Dig fange!''
+Saa præked Fornuften, men den er en Nar,
+  Det sanded jeg alt mange Gange -
+Ja, Fanny! Fornuften den er dog en Nar,
+  Det sanded jeg alt mange Gange.
+
+,,Hun er elskelig, elsk hende da, mens Du maa,
+  ,,Førend Ungdommens Blomst taber Duften!''
+Saa lød Kjærligheds Bud, og Enhver maa tilstaae,
+  Den har bedre Forstand end Fornuften -
+Ja, sødeste Fanny! det maa Du tilstaae,
+  Den har bedre Forstand end Fornuften.
+
+<nonum><right><b>Thomas Moore.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082229">
+<head>
+    <title><num>28.</num>Soldatens Jordefærd</title>
+    <toctitle><num>28.</num>Soldatens Jordefærd (Charles Wolfe)</toctitle>
+    <indextitle>Soldatens Jordefærd</indextitle>
+    <linktitle>Soldatens Jordefærd</linktitle>
+    <firstline>Ingen Tromme blev hørt, ei Basunernes Stød</firstline>
+    <source pages="48-49"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Ingen Tromme blev hørt, ei Basunernes Stød,
+  Da med Liget til Skandsen vi ilte,
+Og til sidste Farvel ingen Salve der lød
+  Over Graven, hvor Helten sig hvilte.
+
+Vi jorded ham mørkt i den dybe Nat,
+  Bajonetten skar Tørv til hans Tue,
+Mens Maanelyset blanded sig mat
+  Med en Lygtes døsige Lue.
+
+Ei tynged et Kistelaag paa hans Bryst,
+  Intet Liglagn omkring ham sig ruller,
+Som en Kriger han laae der og slumrede tyst,
+  Med sin Feltkappe over sin Skulder.
+
+Kort, var den Bøn, vi fremstammed med Iil,
+  Ei et Ord blev der mælet om Sorgen,
+Men vi stirrede stivt paa hans blege Profil,
+  Tænkte bittert paa den Dag imorgen.
+
+Vi tænkte paa, mens vi redte hans Seng
+  Og glatted hans eensomme Pnde,
+At Fjender den vilde nedtrampe iflæng,
+  Og vi færdes paa Bølgen derude.
+
+De sagtens vil haane hans Støv, kan jeg troe,
+  Og mindes med Spot og Foragt ham -
+Men lidt vil han ændse det, la’er de ham Ro
+  I den Grav. hvor hans Landsmænd har lagt ham.
+
+Ikkun halvt var vort tunge Hverv ført ud,
+  Da Signalet os kaldte tilbage,
+Og Drønet af Fjendens fjerne Skud
+  I Luften vi hørte brage.
+
+I Taushed vi lagde ham - vendt var hans Blik
+  Mod hans friske Navnkundigheds Scene;
+Ingen Steen blev ham reist, ingen Gravskrift han fik
+  Med hans Hæder vi lod ham alene!
+
+<nonum><right><b>Charles Wolfe.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082230">
+<head>
+    <title><num>29.</num>Det var saa tyst</title>
+    <toctitle><num>29.</num>Det var saa tyst (J. J. Callanan)</toctitle>
+    <indextitle>Det var saa tyst</indextitle>
+    <linktitle>Det var saa tyst</linktitle>
+    <firstline>Det var saa tyst, fra Birk og Lind</firstline>
+    <source pages="50"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Det var saa tyst, fra Birk og Lind
+  Kun Duggens Taare trilled,
+Og Vinden sov paa ITavet ind,
+  I Lys dets Bølger spilled.
+Ved Marys Arm, langs dunkle Vig,
+  O, hvor var Himlen nær jeg!
+Jeg trykked hendes Haand: ,,O! siig,
+  Du Søde! har Du kjær mig?''
+
+Hun bøied bly sig, hendes Blik
+  Et Slør af Skjønhed dølger,
+Hun taug, urolig Barmen gik,
+  Som Søen, naar den bølger.
+Da raabte jeg: ,,O, tal! fortæl
+  Min Dom ved Stjerneskjær mig!''
+- Hun sukkede: ,,,,Ak! altfor vel
+  Du veed, hvor kjær Du er mig!''''
+
+<nonum><right><b>J. J. Callanan.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082231">
+<head>
+    <title><num>30.</num>O, Nanna! vil Du følge mig?</title>
+    <toctitle><num>30.</num>O, Nanna! vil Du følge mig? (Thomas Percy)</toctitle>
+    <indextitle>O, Nanna! vil Du følge mig?</indextitle>
+    <linktitle>O, Nanna! vil Du følge mig?</linktitle>
+    <firstline>O, Nanna! vil Du følge mig</firstline>
+    <source pages="51-52"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+O, Nanna! vil Du følge mig
+  Og langt fra Verden hos mig hygge?
+Kan Dalens Stilhed fængsle Dig,
+  Du, som er vant til Lys og Lykke?
+Vil, uden Fløil og Perlekrands,
+  Ei tidt med længselsfulde Sukke
+Du drages mod den tabte Olands,
+  Da Du var smukkest blandt de Smukke?
+
+O, Nanna! fra den fjerne Strand,
+  Vil Du ei see med Suk tilbage?
+Siig, kan Du trodse Solens Brand
+  Og Vinterstormen uden Klage?
+Og vil din Sjæl, saa blød og blid,
+  Ei under Modgangs Vægt sig bukke,
+Men mindes uden Savn den Tid,
+  Da Du var smukkest blandt de Smukke?
+
+O, Nanna! er saa stærk din Tro,
+  At Du igjennem Livets Trængsler
+Vil trofast hos din Beiler boe
+  Og dele med ham Savn og Længsler?
+Og tynger Sorgen paa hans Bryst,
+  Vil Du den ømt i Slummer vugge,
+Ei tænke paa din Ungdoms Lyst,
+  Da Du var smukkest blandt de Smukke?
+
+Og kaldes bort tilsidst din Ven,
+  Vil Du hans Afskedssuk modtage?
+Din Smerte, vil Du tvinge den,
+  Og smile, som i fordums Dage?
+Og strøe paa Graven Rosens Blad,
+  Med dine Taarer den bedugge,
+Og glemme, Du var, ung og glad,
+  Den Smukkeste iblandt de Smukke?
+
+<nonum><right><b>Thomas Percy.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082232">
+<head>
+    <title><num>31.</num>Brug ei de Øine saa!</title>
+    <toctitle><num>31.</num>Brug ei de Øine saa! (Ben Jonson)</toctitle>
+    <indextitle>Brug ei de Øine saa!</indextitle>
+    <linktitle>Brug ei de Øine saa!</linktitle>
+    <firstline>Brug ei de Øine saa! - jeg tør</firstline>
+    <source pages="53"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Brug ei de Øine saa! - jeg tør -
+  Jeg taaler ei at see dem -
+Slaa dem dog ikke ned! nei før
+  Vil om et Blik jeg be’e dem.
+
+See vredt ei med dem, selv paaskrømt,
+  Med Livet maa jeg bøde;
+Dog - seer Du paa mig altfor ømt,
+  Jeg haaber mig tildøde.
+
+Sænk ei dem i en Taareflod,
+  Saa vil mig Sorgen kue,
+Rul ei dem rundt i Vankelmod,
+  Mens jeg gaaer op i Lue!
+
+<nonum><right><b>Ben Jonson.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082233">
+<head>
+    <title><num>32.</num>Hun bar en Krands af Roser</title>
+    <toctitle><num>32.</num>Hun bar en Krands af Roser (Th. H. Bayley)</toctitle>
+    <indextitle>Hun bar en Krands af Roser</indextitle>
+    <linktitle>Hun bar en Krands af Roser</linktitle>
+    <firstline>Hun bar en Krands af Roser</firstline>
+    <source pages="54-55"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Hun bar en Krands af Roser,
+  Da først jeg hende saae,
+Om Kindens Smilehuller
+  Et Net af Krøller laae;
+Saa let var hendes Fodtrin,
+  Saa glad var hendes Røst -
+Ak! hendes unge Hjerte jo
+  Kun kjendte Livets Lyst.
+Vort Møde var kun flygtigt
+  Dog end hun for mig staaer,
+Med Krands af Sommerblomster
+  I det krøllede Haar.
+
+En Krands af Myrter bar hun,
+  Det var den næste Gang,
+Meer tankefuldt var Blikket
+  Og hendes Stemmes Klang;
+Sit Barndomshjem forlod hun,
+  Men En ved Siden staaer,
+Det synes, som hans milde Røst
+  Til Hjertet hende gaaer.
+Vort Møde var kun flygtigt -
+  Dog end hun for mig staaer,
+Med Myrtekrandsen slynget
+  I det krøllede Haar.
+
+Og atter seer jeg hende,
+  Men uden Blomsterkrands,
+En Sørgekappe skjuler
+  Den før saa rige Glands.
+Hun taus og eensom græder,
+  Og ingen kiærlig Aand
+Kan viske hendes Taare bort
+  Og trykke hendes Haand.
+Jeg seer kun hendes Skygge -
+  Dog end hun for mig staaer
+I al sin Ungdomsfylde,
+Med Blomster i sit Haar.
+
+<nonum><right><b>Th. H. Bayley.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082234">
+<head>
+    <title><num>33.</num>Kjærligheds lette Sommersky</title>
+    <toctitle><num>33.</num>Kjærligheds lette Sommersky (Thomas Moore)</toctitle>
+    <indextitle>Kjærligheds lette Sommersky</indextitle>
+    <linktitle>Kjærligheds lette Sommersky</linktitle>
+    <firstline>Sorger og Smerte skal flye, hvor vi bygge</firstline>
+    <source pages="56-57"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Sorger og Smerte skal flye, hvor vi bygge,
+  Ungdom vil visne, men Elskov bestaae,
+Mørkne vor Vei skal alene den Skygge,
+  Kjærligheds Sommersky kaster derpaa.
+        Er det tilstrækkelig
+        Kun for at tækkes Dig,
+        At jeg Dig elsker, Glut,
+        Meer hvert Minut -
+Da er Du kaaret, o! nyd da din Lykke,
+  Skjønhed vil visne, men Elskov bestaae,
+Let paa din Vei kun skal falde den Skygge,
+  Kjærligheds Sommersky kaster derpaa.
+
+Ømmeste Hjerte! ei Sorg Du fornemme,
+  Glæden alene dit Suk skal befrie,
+Straalende Øie! ei Graad skal Dig skæmme,
+  Salighedstaarer kun blinke deri.
+        Gjemmes i Kjærlighed
+        Trøst imod al Fortræd,
+        Er der i Elskov lagt
+        Trolddommens Magt -
+Da er Du kaaret, o! nyd da din Lykke,
+  Skjønhed vil visne, men Elskov bestaae,
+Let paa din Vei kun skal falde den Skygge,
+  Kjærligheds Sommersky kaster derpaa.
+
+<nonum><right><b>Thomas Moore.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082235">
+<head>
+    <title><num>34.</num>Min Sjæl er mørk</title>
+    <toctitle><num>34.</num>Min Sjæl er mørk (Byron)</toctitle>
+    <indextitle>Min Sjæl er mørk</indextitle>
+    <linktitle>Min Sjæl er mørk</linktitle>
+    <firstline>Min Sjæl er mørk - nu, Sanger!</firstline>
+    <source pages="58"/>
+    <!-- TODO: Find originalen -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Min Sjæl er mørk - nu, Sanger! flux
+Du Harpens Streng maa røre,
+Slyng saa i milde Bølgeslag
+Dens Toner mod mit Øre!
+Har end min Sjæl et lønligt Haab,
+Ved Sang det vil fremtrylles,
+Og atter Øiets tørre Væld
+Af friske Taarer fyldes. -
+
+Men bort med Skjemt! kun Smertens Dyb
+Tør tolke dine Strenge,
+Og græde maa jeg, Sanger, skal
+Ei Tungsind Hjertet sprænge.
+Thi det er ammet op med Sorg
+Og døbt i Taarestrømme,
+Og briste maa det nu, kan Sang
+Ei lulle det i Drømme.
+
+<nonum><right><b>Byron.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082236">
+<head>
+    <title><num>35.</num>Salget af Elskovsguder</title>
+    <toctitle><num>35.</num>Salget af Elskovsguder (Thomas Moore)</toctitle>
+    <indextitle>Salget af Elskovsguder</indextitle>
+    <linktitle>Salget af Elskovsguder</linktitle>
+    <firstline>I Paphiske Lunde jeg drømte jeg gik</firstline>
+    <notes>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908236"/>.</note>
+    </notes>
+    <source pages="59-61"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+I Paphiske Lunde jeg drømte jeg gik,
+  En Jagt jeg i Maanskin forsøgte,
+En Flok Amoriner i Garnet jeg fik,
+   Blandt Roser de gik der og spøgte.
+Der var nogle, som nylig i Ægget laae,
+  Der var andre med fjedrede Vinger;
+Saa prægtig en Fangst endnu aldrig man saae,
+  Jeg hastig til Torvet dem bringer.
+        Kom, kjøb saa fiin
+        En Amorin,
+I rosenlæbede Piger!
+        See! hver og en
+        Er uden Meen -
+Og med Kys kun I Budet indfrier.
+
+Den sindige Hanne hun var ikke seen,
+  Hun spidsed sin Mund i det samme:
+,,Værs’god og lad mig efter Vægt kun faae En,
+  ,,Men En af de Voxne og Tamme!''
+,,Lad min være let!'' - bad Fanny - ,,sligt Kram
+  ,,Blot sætter En graae Haar i Panden,
+,,En nem lille Tingest - idag har jeg ham,
+  ,,Imorgen jeg taer mig en Anden.''
+        Kom, kjøb saa fiin
+        En Amorin,
+I rosenlæbede Piger!
+        En er solid,
+        En let og hvid -
+Kom, skynd Jer, thi Prisen stiger!
+
+Den sprænglærde Thora en munter Krabat
+  Til sin Muses Plaiseer sig tiltusked,
+Og hver Gang en heldig Idee hun fik fat,
+  En Fjer af hans Vinger hun rusked.
+Stakkels Lotte sit eneste Øie gad budt
+  For et velnæret Par uden Knurren,
+Og den tandløse Trine vil nu absolut
+  Ha’e den Alleryngste i Kurven.
+        Kom, kjøb saa fiin
+        En Amorin,
+I rosenlæbede Piger!
+        En er solid,
+        En let og hvid -
+Kom, skynd Jer, thi Prisen stiger!
+
+Kun Een var tilbage, da Mary kom,
+  Meer værd end de Andre tilsammen;
+Hun nærmede sig saa undseelig og from,
+  Og han pudsede Fjederhammen.
+Hun ønskede Knægten - og Alvor det var -
+  Hendes Blik, hendes Sukke det røbed,
+Men her gjorde Kys ikke Sagen klar,
+  Og saa gav hun et Hjerte i Kjøbet.
+        Farvel, hver hin,
+        Let Amorin!
+Det vilde ha’e voldt Jer Gammen,
+        See os kjøbslaae
+        Først om den Smaa -
+Og siden opdrage ham sammen.
+
+<nonum><right><b>Thomas Moore.</b></right></nonum>
+</body>
+</poem>
+
+<poem id="preetzmann2019082237">
+<head>
+    <title><num>36.</num>Bryd! bryd! bryd!</title>
+    <toctitle><num>36.</num>Bryd! bryd! bryd! (Alfred Tennyson)</toctitle>
+    <indextitle>Bryd! bryd! bryd!</indextitle>
+    <linktitle>Bryd! bryd! bryd!</linktitle>
+    <firstline>Bryd! bryd! bryd!</firstline>
+    <notes>
+        <note>Gendigtning af Alfred Lord Tennyson: <xref type="translation" poem="tennyson201908241"/>.</note>
+    </notes>
+    <source pages="62"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Bryd! bryd! bryd!
+  Du Bølge, paa stenede Kyst!
+O! kunde min Tunge blot tolke
+  Hvad der gjærer dybt i mit Bryst!
+
+Lyksalig den Fiskerdreng,
+  Som leger med Søstren ved Strand,
+Lyksalig den Sømandsgut,
+  Som skyder med Sang fra Land!
+
+Og det stolte Skib lægger bi
+  I Havnen bag Høiens Vold,
+O! men skaf mig et Ord af en Røst, som er taus,
+  Og et Tryk af en Haand, som er kold!
+
+Bryd! bryd! bryd!
+  Du Bølge, paa Klipper og Skjær!
+Men den milde Lyst fra en Tid, som forgik,
+  Faaer jeg aldrig tilbage meer.
+
+<nonum><right><b>Alfred Tennyson.</b></right></nonum>
+</body>
+</poem>
+
 </workbody>
 </kalliopework>
