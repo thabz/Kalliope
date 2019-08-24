@@ -260,6 +260,9 @@ File.readlines(ARGV[0]).each do |line|
   next if @done;
   if line.start_with?('SLUT') and not line.start_with?('SLUTSEKTION') 
     @done = true
+    if @state != 'NONE'
+        printPoem();
+    end
     @state = 'NONE'
     next
   end
