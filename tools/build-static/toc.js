@@ -42,6 +42,7 @@ const build_section_toc = section => {
         id: sectionId,
         level: level,
         title: htmlToXml(toctitle.title),
+        prefix: replaceDashes(toctitle.prefix),
         content: subtoc,
       });
     } else if (partName === 'prose') {

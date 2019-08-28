@@ -302,7 +302,7 @@ Har du ikke et sidse Ord til Trøst
 
 <poem id="henriksen2019072407">
 <head>
-    <title>Kong Arthur og Prisesse Inga</title>
+    <title>Kong Arthur og Prinsesse Inga</title>
     <firstline>Min Lyst i Ny og Næde</firstline>
     <source pages="20-22"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -590,7 +590,9 @@ Sov kun og vent til jer Time slaar!
     <firstline>Saa gyldent Stjærnerne blinked</firstline>
     <source pages="35-36"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Joseph von Eichendorff <xref type="translation" poem="eichendorff2019072601"/>.</note>
+    </notes>
 </head>
 <body>
 Saa gyldent Stjærnerne blinked,
