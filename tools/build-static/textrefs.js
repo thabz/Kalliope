@@ -69,6 +69,9 @@ const mark_ref_destinations_dirty = collected => {
   collected.poets.forEach((poet, poetId) => {
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!fileExists(filename)) {
+          return
+      }
       if (!isFileModified(filename)) {
         return;
       }
