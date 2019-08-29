@@ -6,12 +6,12 @@
     <year>1875</year>
     <notes>
         <note>Teksten følger Vilhelm Gregersen: <i>Nogle Digte</i>, Hoffenberg, et.al., Kbh., 1875.</note>
+        <note>Samlingen indledes med ,,Betragt den stille Lykke, / Der gør en Digter varm, / Mens Ånden i hans Sange / Svæver fra Barm til Barm. // Lad kun hans Rygte hæves / Mod Sky af Døgnets Vind, - / Det er dog ej den sande / Kvægelse for hans Sind. // Men, når hans Tankebilled, / Med eller uden Ry, / Finder et lutret Indre, / Og fødes der på Ny, - // O, bring ham da et Budskab / Om dette Aandens Bliv; / Thi dermed er der lovet / Hans Værk et evigt Liv.,, fra Welhavens <xref poem="welhaven2001051206,45-60"/>.</note>
     </notes>
     <pictures>
         <picture src="1875-p1.jpg">Titelbladet til <i>Nogle Digte</i> (1875) lyder ,,Nogle Digte / af / Vilhelm Gregersen // Kjøbenhavn / Hoffenberg, Jespersen &amp; Fr. Traps. Etabl. / 1875.''.</picture>
     </pictures>
-    <!-- TODO: Tilføj noten: Samlingen indledes med ,,Betragt den stille Lykke, / Der gør en Digter varm, / Mens Ånden i hans Sange / Svæver fra Barm til Barm. // Lad kun hans Rygte hæves / Mod Sky af Døgnets Vind, - / Det er dog ej den sande / Kvægelse for hans Sind. // Men, når hans Tankebilled, / Med eller uden Ry, / Finder et lutret Indre, / Og fødes der på Ny, - // O, bring ham da et Budskab / Om dette Aandens Bliv; / Thi dermed er der lovet / Hans Værk et evigt Liv.,, fra Welhavens ... -->
-    <source facsimile="11530805700D_color.pdf" facsimile-pages-num="129" facsimile-pages-offset="10">Vilhelm Gregersen: <i>Nogle Digte</i>, Hoffenberg, et.al., Kbh., 1875.</source>
+    <source facsimile="11530805700D_color.pdf" facsimile-pages-num="129" facsimile-pages-offset="8">Vilhelm Gregersen: <i>Nogle Digte</i>, Hoffenberg, et.al., Kbh., 1875.</source>
 </workhead>
 <workbody>
 
@@ -1435,7 +1435,9 @@ Visselig ingen stridt.
     <subtitle>(F. v. Platen.)</subtitle>
     <firstline>Ved Busento, ved Cosenza, under Morbærlundens Kroner</firstline>
     <source pages="65-67"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af August von Platen: <xref type="translation" poem="platen2019082901"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1528,7 +1530,7 @@ Vil, som han bad, sig løfte for hans Øjne.
 <poem id="gregersen2019082024">
 <head>
     <title>Løse Blade af Antons Dagbog</title>
-    <toctitle>Løse Blade af Antons Dagbog(I,II,III,IV,V)</toctitle>
+    <toctitle>Løse Blade af Antons Dagbog (I,II,III,IV,V)</toctitle>
     <firstline>Er Kærlighed et Stjerneskud</firstline>
     <source pages="70-78"/>
     <quality>korrektur1,kilde,side</quality>
@@ -1885,7 +1887,7 @@ I Erindringsdrømme Bølgen sukker.
 
 <poem id="gregersen2019082026">
 <head>
-    <title>Johannes Carsten Hanch</title>
+    <title>Johannes Carsten Hauch</title>
     <firstline>Hvor Atlanterhavets friske Vove</firstline>
     <source pages="85-87"/>
     <keywords>hauch</keywords>
