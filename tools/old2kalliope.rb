@@ -227,9 +227,13 @@ def printPoem()
   @poemcount += 1
 end
 
-def printStartSektion(title)
+def printStartSektion(title, level)
+  levelAttr = ''
+  if not level.nil? and level.length > 0
+      levelAttr = " level=\"#{level}\""
+  end
   printHeader()
-  puts "<section>"
+  puts "<section#{levelAttr}>"
   puts "<head>"
   puts "    <title>#{title}</title>"
   puts "</head>"
@@ -256,6 +260,9 @@ File.readlines(ARGV[0]).each do |line|
   next if @done;
   if line.start_with?('SLUT') and not line.start_with?('SLUTSEKTION') 
     @done = true
+    if @state != 'NONE'
+        printPoem();
+    end
     @state = 'NONE'
     next
   end
@@ -329,13 +336,14 @@ File.readlines(ARGV[0]).each do |line|
     printPoem()
     @state = 'INHEAD'
   end
-  if line.start_with?('SEKTION:')
+  if line =~ /^SEKTION(\d*):/
+      level = $~[1]
       if (@state == 'INBODY')
           printPoem();
       end
-      sectionTitle = line[8..-1].strip
+      sectionTitle = line.gsub(/^SEKTION\d?:/,'').strip
       @section_title_stack.push(sectionTitle)
-      print printStartSektion(sectionTitle)
+      print printStartSektion(sectionTitle, level)
       @state = 'NONE'
   end
   if line.start_with?('SLUTSEKTION')

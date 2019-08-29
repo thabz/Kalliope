@@ -112,10 +112,14 @@ const writeCachedJSON = (key, data) => {
   writeJSON(`caches/${key}.json`, data);
 };
 
+const shouldForceReload = () => {
+  return force_reload;
+};
 module.exports = {
   isFileModified,
   markFileDirty,
   refreshFilesModifiedCache,
   loadCachedJSON,
   writeCachedJSON,
+  force_reload,
 };
