@@ -34,6 +34,8 @@ end
 @source = nil
 @facsimile = nil
 @facsimile_pages_num = 150
+@facsimile_offset = 10
+@workid = nil
 @worknotes = []
 @worktodos = []
 @found_corrections = false
@@ -73,10 +75,13 @@ def printHeader()
             year = m[2]
         end
     end
+    if @workid.nil?
+        @workid = year
+    end
 
     puts %Q|<?xml version="1.0" encoding="UTF-8"?>|
     puts %Q|<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">|
-    puts %Q|<kalliopework id="#{year}" author="#{@poetid}" status="complete" type="poetry">|
+    puts %Q|<kalliopework id="#{@workid}" author="#{@poetid}" status="complete" type="poetry">|
     puts %Q|<workhead>|
     puts %Q|    <title>#{title}</title>|
     puts %Q|    <year>#{year}</year>|
@@ -93,14 +98,14 @@ def printHeader()
     end
     puts %Q|    </notes>|
     puts %Q|    <pictures>|
-    puts %Q|        <picture src="#{year}-p1.jpg">Titelbladet til <i>#{title}</i> (#{year}) lyder ,,#{@titlepage}''.</picture>|
+    puts %Q|        <picture src="#{@workid}-p1.jpg">Titelbladet til <i>#{title}</i> (#{year}) lyder ,,#{@titlepage}''.</picture>|
     puts %Q|    </pictures>|
     if @worktodos.length > 0
       @worktodos.each { |todo|
           puts "    <!-- TODO: #{todo} -->"
       }
     end
-    puts %Q|    <source facsimile="#{@facsimile}" facsimile-pages-num="#{@facsimile_pages_num}" facsimile-pages-offset="10">#{@source}</source>|
+    puts %Q|    <source facsimile="#{@facsimile}" facsimile-pages-num="#{@facsimile_pages_num}" facsimile-pages-offset="#{@facsimile_offset}">#{@source}</source>|
     puts %Q|</workhead>|
     puts %Q|<workbody>|
     puts ""
@@ -313,10 +318,14 @@ File.readlines(ARGV[0]).each do |line|
       @source = line[6..-1].strip
     elsif line =~ /^FACSIMILE:/
       @facsimile = line.gsub(/^FACSIMILE:/,'').strip
+    elsif line =~ /^FACSIMILE-OFFSET:/
+      @facsimile_offset = line.gsub(/^FACSIMILE-OFFSET:/,'').strip
     elsif line =~ /^TITELBLAD:/
       @titlepage = line.gsub(/^TITELBLAD:/,'').strip
     elsif line =~ /^FACSIMILE-SIDER:/
       @facsimile_pages_num = line.gsub(/^FACSIMILE-SIDER:/,'').strip
+    elsif line =~ /^ID:/
+      @workid = line.gsub(/^ID:/,'').strip
     elsif line =~ /^NOTE:/
       @worknotes.push(line.gsub(/^NOTE:/,'').strip)
     elsif line =~ /^TODO:/
