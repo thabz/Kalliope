@@ -1,4 +1,4 @@
-const { safeMkdir, loadXMLDoc, writeText } = require('../libs/helpers.js');
+const { safeMkdir, loadXMLDoc, writeText, fileExists } = require('../libs/helpers.js');
 const { isFileModified } = require('../libs/caching.js');
 const build_sitemap_xml = collected => {
   safeMkdir(`static/sitemaps`);
@@ -57,6 +57,10 @@ const build_sitemap_xml = collected => {
             `https://kalliope.org/${lang}/work/${poetId}/${workId}`
           );
           const filename = `fdirs/${poetId}/${workId}.xml`;
+          if (!fileExists(filename)) {
+            return
+          }
+
           let doc = loadXMLDoc(filename);
           if (doc == null) {
             console.log("Couldn't load", filename);
