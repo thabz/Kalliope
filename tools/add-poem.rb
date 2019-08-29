@@ -46,7 +46,7 @@ date = Time.now.strftime("%Y%m%d")
 num = 1
 done = false
 while (!done)
-    poemId = "#{poetid}#{date}#{num}"
+    poemId = "#{poetid}#{date}%02d" % [num]
     if not contents.include? poemId
         done = true
     else 
