@@ -5,6 +5,7 @@ workid = 'andre'
 
 if ARGV.length == 0
     puts "USAGE: ./tools/add-poem.rb poet-id [work-id]"
+    exit
 elsif ARGV.length == 1
     poetid = ARGV[0]
 else
