@@ -5,6 +5,7 @@ const {
   loadXMLDoc,
   htmlToXml,
   replaceDashes,
+  fileExists,
 } = require('../libs/helpers.js');
 const { extractTitle, get_notes, get_pictures } = require('./parsing.js');
 const { safeGetText, safeGetAttr } = require('./xml.js');
@@ -112,6 +113,9 @@ const build_works_toc = collected => {
 
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!fileExists(filename)) {
+          return
+      }
       if (!isFileModified(filename)) {
         return;
       }

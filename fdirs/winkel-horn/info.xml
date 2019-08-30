@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="winkel-horn" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Frederik</firstname>
+    <lastname>Winkel-Horn</lastname>
+    <christened>Frederik Horn</christened>
+    <pseudonym>Grison</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1756-11-12</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1837-05-19</date>
+      <place>København</place>
+    </dead>
+  </period>
+  
+  <works>1787,1834,1837</works>
+</person>
