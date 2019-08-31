@@ -735,13 +735,15 @@ Godnat! Put dig ned nu under din Dyne!''
 </content>
 </section> <!-- Børnedigte -->
 
-<poem id="reckee2019081719">
+<poem id="reckee2019081719" variant="reckee2019082801">
 <head>
     <title>En Nytaarsdrøm</title>
     <subtitle>(Til Tegninger af N. Wiwel.)</subtitle>
     <firstline>Det var en Nytaarsaften</firstline>
     <source pages="33-38"/>
-    <!-- TODO: Kan tegningerne tilstedebringes? -->
+    <notes>
+        <note>Se Reckes <a work="recke/1885a"><i>En Nytaarsdrøm</i> (1885)</a> for Wiwels tegninger.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
