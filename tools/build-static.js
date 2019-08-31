@@ -605,6 +605,9 @@ const works_first_pass = collected => {
   collected.workids.forEach((workIds, poetId) => {
     workIds.forEach(workId => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
+      if (!fileExists(workFilename)) {
+          return
+      }
       if (!force_reload && !isFileModified(workFilename)) {
         return;
       } else {
@@ -702,6 +705,9 @@ const works_second_pass = collected => {
 
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!fileExists(filename)) {
+          return
+      }
       if (!isFileModified(filename)) {
         return;
       }
@@ -790,6 +796,9 @@ const build_poet_works_json = collected => {
     let works = [];
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!fileExists(filename)) {
+          return
+      }
 
       // Copy the xml-file into static to allow for xml download.
       fs.createReadStream(filename).pipe(
