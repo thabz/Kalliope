@@ -73,7 +73,10 @@ const {
 } = require('./build-static/benchmarking.js');
 const { build_works_toc, build_section_toc } = require('./build-static/toc.js');
 const { update_elasticsearch } = require('./build-static/elastic.js');
-const { build_textrefs } = require('./build-static/textrefs.js');
+const {
+  build_textrefs,
+  mark_ref_destinations_dirty,
+} = require('./build-static/textrefs.js');
 const { build_anniversaries_ical } = require('./build-static/ical.js');
 const {
   build_global_timeline,
@@ -602,6 +605,9 @@ const works_first_pass = collected => {
   collected.workids.forEach((workIds, poetId) => {
     workIds.forEach(workId => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
+      if (!fileExists(workFilename)) {
+          return
+      }
       if (!force_reload && !isFileModified(workFilename)) {
         return;
       } else {
@@ -699,6 +705,9 @@ const works_second_pass = collected => {
 
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!fileExists(filename)) {
+          return
+      }
       if (!isFileModified(filename)) {
         return;
       }
@@ -787,6 +796,9 @@ const build_poet_works_json = collected => {
     let works = [];
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!fileExists(filename)) {
+          return
+      }
 
       // Copy the xml-file into static to allow for xml download.
       fs.createReadStream(filename).pipe(
@@ -961,6 +973,7 @@ collected.workids = b('build_poet_workids', build_poet_workids);
 Object.assign(collected, b('works_first_pass', works_first_pass, collected));
 b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 collected.poets = b('build_poets_json', build_poets_json, collected);
+b('mark_ref_destinations_dirty', mark_ref_destinations_dirty, collected);
 b('build_poets_by_country_json', build_poets_by_country_json, collected);
 collected.artwork = b('build_artwork', build_artwork, collected);
 b('build_museums', build_museums, collected);

@@ -48,7 +48,7 @@ export default class extends React.Component<TocProps> {
           const className = `level-${item.level == null ? 1 : item.level}`;
           return (
             <tr key={i}>
-              <td />
+              <td className="num">{prefix}</td>
               <td>
                 <h3 className={className}>{shownTitle}</h3>
                 {renderItems(
