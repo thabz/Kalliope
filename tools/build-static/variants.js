@@ -4,7 +4,7 @@ const {
   writeCachedJSON,
   markFileDirty,  
 } = require('../libs/caching.js');
-const { loadXMLDoc } = require('../libs/helpers.js');
+const { loadXMLDoc, fileExists } = require('../libs/helpers.js');
 const { safeGetAttr } = require('./xml.js');
 
 const build_variants = collected => {
@@ -21,6 +21,9 @@ const build_variants = collected => {
   collected.poets.forEach((poet, poetId) => {
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!fileExists(filename)) {
+          return
+      }
       if (!isFileModified(filename)) {
         return;
       }
