@@ -268,12 +268,15 @@ const handle_text = (
     .map(id => {
       const meta = collected.texts.get(id);
       const poet = poetName(collected.poets.get(meta.poetId));
-      const work = workLinkName(
-        collected.works.get(meta.poetId + '/' + meta.workId)
-      );
+      const workFormattet =
+        meta.workId === 'andre'
+          ? ''
+          : ' - ' +
+            workLinkName(collected.works.get(meta.poetId + '/' + meta.workId));
+
       return [
         [
-          `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`,
+          `${poet}: <a poem="${id}">»${meta.title}«</a>${workFormattet}`,
           { html: true },
         ],
       ];
@@ -606,7 +609,7 @@ const works_first_pass = collected => {
     workIds.forEach(workId => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(workFilename)) {
-          return
+        return;
       }
       if (!force_reload && !isFileModified(workFilename)) {
         return;
@@ -706,7 +709,7 @@ const works_second_pass = collected => {
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(filename)) {
-          return
+        return;
       }
       if (!isFileModified(filename)) {
         return;
@@ -797,7 +800,7 @@ const build_poet_works_json = collected => {
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(filename)) {
-          return
+        return;
       }
 
       // Copy the xml-file into static to allow for xml download.
