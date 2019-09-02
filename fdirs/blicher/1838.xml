@@ -2,38 +2,31 @@
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1838" author="blicher" status="complete" type="poetry">
 <workhead>
-   <title>Trækfuglene</title>
-   <year>1838</year>
-   <notes>
+    <title>Trækfuglene</title>
+    <subtitle>En Naturconcert</subtitle>
+    <year>1838</year>
+    <notes>
       <note>Kilde er <i>Guldalderdigte</i>, Asger Schnack (red.), LyrikBiblioteket, Hans Reitzels Forlag, 1994.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+    </notes>
+    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </workhead>
 <workbody>
 
-<section level="1">
-<head>
-   <toctitle>En Naturconcert</toctitle>
-</head>
-<content>
-
 <poem id="blicher1838a0">
 <head>
-   <title>Præludium</title>
-   <toctitle>Præludium</toctitle>
-   <indextitle>Præludium</indextitle>
-   <firstline>Sig nærmer Tiden, da jeg maa væk</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title>Præludium</title>
+    <firstline>Sig nærmer Tiden, da jeg maa væk</firstline>
+    <source pages="3-4"/>
+    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
-Sig nærmer Tiden, da jeg maa væk,
+Sig nærmer Tiden, da jeg maa væk!
   Jeg hører Vinterens Stemme;
 Thi ogsaa jeg er kun her paa Træk,
   Og haver andensteds hjemme.
 
 Jeg vidste længe, jeg skal herfra;
-  Det Hjærtet ikke betynger,
+  Det Hjertet ikke betynger,
 Og derfor lige glad nu og da
   Paa Gjennemreisen jeg synger.
 
@@ -43,22 +36,22 @@ Men mørke Dage jeg maatte see,
   Og Storme rev mine Fjædre.
 
 Jeg vilde gjerne i Guds Natur
-  Med Frihed spændt mine Vinger,
-Men sidder fast i mit snevre Buur,
+  Med Frihed spændt mine Vinger;
+Men sidder fast i mit snævre Buur,
   Det allevegne mig tvinger.
 
 Jeg vilde gjerne fra høien Sky
   Udsendt de gladere Sange;
 Men blive maa jeg for Kost og Ly
-  En stakkels gjældbunden Fange.
+  En Stakkels gjældbunden Fange.
 
 Tidt ligevel til en Smule Trøst
-  Jeg ud af Fængselet titter,
-Og sender stundom min Veemodsrøst
+  Jeg ud af Fængselet titter;
+Og sender stundom min Vemodsrøst
   Med Længsel gjennem mit Gitter.
 
-Lyt og, o Vandrer! til denne Sang,
-  Lidt af din Vei Du hidtræde!
+Lyt og, o Vandrer! til denne Sang;
+  Lidt af din Vei du hidtræde!
 Gud veed, maaske det er sidste Gang
   Du hører Livsfangen qvæde.
 
@@ -71,11 +64,10 @@ Thi qviddre vil jeg et ømt Farvel;
 
 <poem id="blicher1838a1">
 <head>
-   <title>Ouverture</title>
-   <toctitle>Ouverture</toctitle>
-   <indextitle>Ouverture</indextitle>
-   <firstline>Det er hvidt herude</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title>Ouverture</title>
+    <firstline>Det er hvidt herude</firstline>
+    <source pages="7-8"/>
+    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 Det er hvidt herude:
@@ -97,7 +89,7 @@ Ravne skrige, Ugler tude,
 Søge Føde, søge Læ.
 Kragen spanker om med Skaden
 Højt paa Rygningen af Laden,
-Skele til det tamme Kræ. <!-- Sven Sørensen ønsker Skeler] Skele af grammatiske hensyn. Andre trykte kilder har dog Skele. -->
+Skele til det tamme Kræ.
 
 Hanen sig opsvinger
 Paa en Snemand; sine Vinger
@@ -117,18 +109,17 @@ Kom og løs den bundne Jord!
 
 <poem id="blicher1838a2">
 <head>
-   <title>Hjejlen</title>
-   <toctitle>Hjejlen</toctitle>
-   <indextitle>Hjejlen</indextitle>
-   <firstline>Hjejlen! han har ikkun een Melodie</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num>1.</num>Hjejlen</title>
+    <firstline>Hjejlen! han har ikkun een Melodie</firstline>
+    <source pages="9-10"/>
+    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 Hjejlen! han har ikkun een Melodie,
-Og den endda i Minore;
+Og den endda i _Minore;_
 Den stemmer lidt til Melankoli,
-Og dog jeg raaber: encore!
-Jeg ynder hans Maestoso godt;
+Og dog jeg raaber: _encore!_
+Jeg ynder hans _Maestoso_ godt;
 Den passer til Heden derude;
 Naar Havsulen klæder Himlen i Graat,
 Og Moseuglerne tude.
@@ -141,19 +132,18 @@ Om langt fra ikke et lystigt;
 Er Skyen graa og er Jorden mørk,
 Den Fløjte klinger dog trøstigt.
 Den leder Foraarsconcerten ind
-Med en alvorlig Andante.
+Med en alvorlig _Andante_.
 Desmeer forlystes da Sjæl og Sind
-Ved Lærkens Allegro brillante.
+Ved Lærkens _Allegro_ brillante.
 </body>
 </poem>
 
 <poem id="blicher1838a3">
 <head>
-   <title>Lærken</title>
-   <toctitle>Lærken</toctitle>
-   <indextitle>Lærken</indextitle>
-   <firstline>Der er han selv! Velkommen tusind Gange</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num>2.</num>Lærken</title>
+    <firstline>Der er han selv! Velkommen tusind Gange</firstline>
+    <source pages="10-11"/>
+    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 Der er han selv! Velkommen tusind Gange
@@ -191,11 +181,10 @@ Du lige freidigt Afskedstrillen slaaer.
 
 <poem id="blicher1838a4">
 <head>
-   <title>Sisgenen</title>
-   <toctitle>Sisgenen</toctitle>
-   <indextitle>Sisgenen</indextitle>
-   <firstline>Du, som i Vaarens og Haabets Dragt</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num>3.</num>Sisgenen</title>
+    <firstline>Du, som i Vaarens og Haabets Dragt</firstline>
+    <source pages="11-12"/>
+    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 Du, som i Vaarens og Haabets Dragt
@@ -205,7 +194,7 @@ Hvor i al Verden har du holdet Juul?
 Dog ligemeget hvorfra du kommer,
 Hvorhen du agter dig nu i Sommer:
 Til hine grønklædte Klippebanker
-Did følge Dig mine forlystende Tanker,
+Did følge Dig mine forlystende Tanker.
 Det kunde slet aldrig gaae mig iglem:
 De stolte Floder! de ydmyge Væld!
 Den livlige Dal! det alvorlige Fjeld!
@@ -217,20 +206,19 @@ Ak! er end slet Ingen, mig haver kjær;
 Dog Een og Anden vel mindes mig der.
 O siig dem - og kan du - da syng du det frem
 I dette dit skjønne, velsignede Hjem:
-»Der boer en Mand paa de jydske Vange,
-»Han digter Æventyr, digter Sange;
-»Ham kommer ved Blikket mod Sveas Kyst
-»En Taare i Øjet, et Suk i hans Bryst.«
+,,Der boer en Mand paa de jydske Vange,
+,,Han digter Æventyr, digter Sange;
+,,Ham kommer ved Blikket mod Sveas Kyst
+,,En Taare i Øjet, et Suk i hans Bryst.''
 </body>
 </poem>
 
 <poem id="blicher1838a5">
 <head>
-   <title>Hornuglen</title>
-   <toctitle>Hornuglen</toctitle>
-   <indextitle>Hornuglen</indextitle>
-   <firstline>Hvilken frygtelig Fagot!</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num>4.</num>Hornuglen</title>
+    <firstline>Hvilken frygtelig Fagot!</firstline>
+    <source pages="12-13"/>
+    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 Hvilken frygtelig Fagot!
@@ -243,7 +231,7 @@ Over Kongen, som hans Ridderblod
 Ved Snigmordere udøse lod.
 Siden blev mig af vor Skytte sagt:
 Det var Lyden af den vilde Jagt.
-»<i>Søndagsjægeren!</i>« hver Nat han maae
+,,<w>Søndagsjægeren!</w>'' hver Nat han maae
 For sin Ryggesløshed bøde saa.
 Lykkelige Tid, da jeg i Ro
 Kunde Æventyr og Fabler troe.
@@ -251,7 +239,7 @@ Var der noget, som mig Skræk indjog,
 Var der Andet, mig forlysted dog.
 Og om ængstedes mit unge Bryst,
 Selve Skrækken havde og sin Lyst.
-Tud kun derfor, vilde Jæger, du!
+Tud kun derfor, vilde Jæger, Du!
 I dit Jagthorn! Væk den gamle Gru!
 Med de unge Dages Tryllerie
 Fyld igjen min gamle Phantasie!
@@ -262,11 +250,10 @@ Lad mig dog som Digter være Barn!
 
 <poem id="blicher1838a6">
 <head>
-   <title>Viben</title>
-   <toctitle>Viben</toctitle>
-   <indextitle>Viben</indextitle>
-   <firstline>Viben! det lille næsvis Ting</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num>5.</num>Viben</title>
+    <firstline>Viben! det lille næsvis Ting</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 Viben! det lille næsvis Ting
@@ -298,11 +285,10 @@ Mit Kritikakler jeg derfor vil kalde dig. -
 
 <poem id="blicher1838a7">
 <head>
-   <title>Stæren</title>
-   <toctitle>Stæren</toctitle>
-   <indextitle>Stæren</indextitle>
-   <firstline>Eja! Velkommen du lystige Stær!</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num>6.</num>Stæren</title>
+    <firstline>Eja! Velkommen du lystige Stær!</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 Eja! Velkommen du lystige Stær!
@@ -332,11 +318,10 @@ Skjønnere ofte end Virkelighed.
 
 <poem id="blicher1838a8">
 <head>
-   <title>Storken</title>
-   <toctitle>Storken</toctitle>
-   <indextitle>Storken</indextitle>
-   <firstline>Hillemænd!</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num>7.</num>Storken</title>
+    <firstline>Hillemænd!</firstline>
+    <source pages="16-18"/>
+    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
 Hillemænd!
@@ -344,70 +329,70 @@ Husets allerældste Ven!
 Gaaer han ikke der og spanker,
 Nu som før i dybe Tanker.
 
-»Det er ikke sært, min Kjære!
-»Om jeg maa adstadig være:
-»Jeg var Mand, da du som Dreng
-»Plukked Blomster udi Eng.«
+,,Det er ikke sært, min Kjære!
+,,Om jeg maa adstadig være:
+,,Jeg var Mand, da du som Dreng
+,,Plukked Blomster udi Eng.''
 
 Det er sandt!
 Jeg erindrer ogsaa grant
 Hvad min Moder da mig sagde:
 Du Smaabørn fra Engen bragde.
 
-»Nu kan vistnok Ingen mere
-»Dig med saadan Snak fixere;
-»Ældre er Du, kan jeg see -
-»Er Du ogsaa klogere?«
+,,Nu kan vistnok Ingen mere
+,,Dig med saadan Snak fixere;
+,,Ældre er Du, kan jeg see -
+,,Er Du ogsaa klogere?''
 
 Ja og Nej!
 Dog derom er Talen ej.
 Lad os snakke nu om Andet.
 Hvor' staaer til i Sønderlandet?
 
-»Næsten som det altid plejer:
-»Sund Forstand slet Intet vejer;
-»Stedse man forsvinde seer
-»Dyd og Penge meer og meer.«
+,,Næsten som det altid plejer:
+,,Sund Forstand slet Intet vejer;
+,,Stedse man forsvinde seer
+,,Dyd og Penge meer og meer.''
 
 Guld og Dyd!
 Følges disse ad i Syd?
-»Hver er god for sig« saa siger
+,,Hver er god for sig'' saa siger
 Man i disse Nordens Riger.
 
-»Hisset har man ikke Stater,
-»Men alene Potentater -
-»Een kun klædt i Purpur staaer,
-»Resten udi Lænker gaaer.«
+,,Hisset har man ikke Stater,
+,,Men alene Potentater -
+,,Een kun klædt i Purpur staaer,
+,,Resten udi Lænker gaaer.''
 
 Det var slemt,
 Hvis det ellers ej er Skjemt.
 Her regjerer ikkun Loven;
 Frihed gaaer bag selve Ploven.
 
-»Anstrøg af Religionen
-»Hører hisset nu til Tonen;
-»Smaafolk troe en Smule meer,
-»Philosofen dem beleer.«
+,,Anstrøg af Religionen
+,,Hører hisset nu til Tonen;
+,,Smaafolk troe en Smule meer,
+,,Philosofen dem beleer.''
 
 Kjære, Nej!
 Her vi gaae en bedre Vej:
 Arme, Rige, Læg og Klerke
 Alle er' i Troen stærke.
 
-»Hisset bøjer Guldet Retten,
-»Rigest vinder altid Trætten.
-»Loven fanger kun de Smaa,
-»Udenom de Store gaae.«
+,,Hisset bøjer Guldet Retten,
+,,Rigest vinder altid Trætten.
+,,Loven fanger kun de Smaa,
+,,Udenom de Store gaae.''
 
 Det er stygt!
 Udi Lovens Skygge trygt
 Her den Fattige sig trækker,
 Retfærds Skjold ham stedse dækker.
 
-»Venskab hist er kun en Maske,
-»Kjærlighed en snedig Taske;
-»Falskhed, Løgn og Hyklerie
-»Giver Titel af Genie.«
+,,Venskab hist er kun en Maske,
+,,Kjærlighed en snedig Taske;
+,,Falskhed, Løgn og Hyklerie
+,,Giver Titel af Genie.''
 
 Fy for Skam!
 Man i Sindet bliver gram
@@ -418,37 +403,36 @@ Stoppe vil jeg nu mit Øre.
 
 <poem id="blicher1838a9">
 <head>
-   <title>Glenten</title>
-   <toctitle>Glenten</toctitle>
-   <indextitle>Glenten</indextitle>
-   <firstline>Ret længe skal vi nu, min Tro!</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num>8.</num>Glenten</title>
+    <firstline>Ret længe skal vi nu, min Tro!</firstline>
+    <source pages="19-"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ret længe skal vi nu, min Tro!
 Paa Sneppen ikke vente;
 Der er hans Reisefælle jo,
 Den Tyveknægt, den Glente.
-»En Tyv! det burde du, minsandt!
-»Bevise først tilfulde:
-»Hvis man i Gjerningen mig fandt,
-»Jeg aldrig nægte skulde.
-»Jeg slider som en ærlig Mand
-»For mig og mine Unger;
-»Men uden Skyld man falde kan
-»For onde Klaffertunger.
-»Jeg arme Stakkel lide maa
-»For hvad de Andre gjøre;
-»Den rette Tyv - du lide paa -
-»En nærmere for Døre.
-»Nu kan Du troe mig, om Du vil,
-»Men det er Storken, Kjære!
-»Det kan Du dig forlade til
-»Den rette Tyv mon være.
-»Det er, for Huus Du laaner ham
-»At han Dig saa bestjæler;
-»Han har bidt Hovedet af Skam -
-»Er baade Tyv og Hæler.«
+,,En Tyv! det burde du, minsandt!
+,,Bevise først tilfulde:
+,,Hvis man i Gjerningen mig fandt,
+,,Jeg aldrig nægte skulde.
+,,Jeg slider som en ærlig Mand
+,,For mig og mine Unger;
+,,Men uden Skyld man falde kan
+,,For onde Klaffertunger.
+,,Jeg arme Stakkel lide maa
+,,For hvad de Andre gjøre;
+,,Den rette Tyv - du lide paa -
+,,En nærmere for Døre.
+,,Nu kan Du troe mig, om Du vil,
+,,Men det er Storken, Kjære!
+,,Det kan Du dig forlade til
+,,Den rette Tyv mon være.
+,,Det er, for Huus Du laaner ham
+,,At han Dig saa bestjæler;
+,,Han har bidt Hovedet af Skam -
+,,Er baade Tyv og Hæler.''
 Tak for din Underretning, Ven!
 Men Løn du og kan vente!
 Bie lidt! jeg kommer strax igjen;
@@ -462,11 +446,10 @@ Bagtaler Folk for Inte.
 
 <poem id="blicher1838a10">
 <head>
-   <title>Sneppen</title>
-   <toctitle>Sneppen</toctitle>
-   <indextitle>Sneppen</indextitle>
-   <firstline>Tys tys tys! hvad hører jeg?</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Sneppen</title>
+    <firstline>Tys tys tys! hvad hører jeg?</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Tys tys tys! hvad hører jeg?
@@ -498,18 +481,17 @@ Til den kjære Gjæst rejser atter bort:
 Naar første Blomst udi Lunden smiler,
 Mod Norden han piler.
 Og Jægeren hænger sin Bøsse hen;
-»Mon jeg er med, naar det hedder igjen:
-»Tirez haut! tirez haut!«
+,,Mon jeg er med, naar det hedder igjen:
+,,Tirez haut! tirez haut!''
 </body>
 </poem>
 
 <poem id="blicher1838a11">
 <head>
-   <title>Silkehalen</title>
-   <toctitle>Silkehalen</toctitle>
-   <indextitle>Silkehalen</indextitle>
-   <firstline>Nordens Phoenix! ligesaa deilig som sjelden!</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Silkehalen</title>
+    <firstline>Nordens Phoenix! ligesaa deilig som sjelden!</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nordens Phoenix! ligesaa deilig som sjelden!
@@ -541,14 +523,13 @@ Over Døden og Mørket til Lyset sig svinger.
 
 <poem id="blicher1838a12">
 <head>
-   <title>Sælsorten</title>
-   <toctitle>Sælsorten</toctitle>
-   <indextitle>Sælsorten</indextitle>
-   <firstline>Fløjtetoner elskovsømme, bløde</firstline>
-   <notes>
-      <note>Flere har ønsket titlen på dette digt rettet til »Solsorten«. Den korrekte titel er dog ifølge alle mine kilder »Sælsorten«. Hvor sælsomt det end kan lyde.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Sælsorten</title>
+    <firstline>Fløjtetoner elskovsømme, bløde</firstline>
+    <source pages=""/>
+    <notes>
+      <note>Flere har ønsket titlen på dette digt rettet til ,,Solsorten''. Den korrekte titel er dog ifølge alle mine kilder ,,Sælsorten''. Hvor sælsomt det end kan lyde.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Fløjtetoner elskovsømme, bløde,
@@ -575,24 +556,23 @@ Men <i>der</i> hang din Moders, kan jeg tænke.
 Reis da Kjære!
 Fødelandet, veed jeg, har en Lænke,
 Blød at bære.
-»Blød at bære; ja! men haard at bryde;
-»Tung at kaste,
-»Let at bære. Hjertets Længsler byde
-»Did at haste.
-»Bøgen hørte <i>dine</i> første Sange,
-»<i>Dine</i> Sukke;
-»Granen paa de kolde Klippevange
-»Bar <i>min</i> Vugge.«
+,,Blød at bære; ja! men haard at bryde;
+,,Tung at kaste,
+,,Let at bære. Hjertets Længsler byde
+,,Did at haste.
+,,Bøgen hørte <i>dine</i> første Sange,
+,,<i>Dine</i> Sukke;
+,,Granen paa de kolde Klippevange
+,,Bar <i>min</i> Vugge.''
 </body>
 </poem>
 
 <poem id="blicher1838a13">
 <head>
-   <title>Droslen</title>
-   <toctitle>Droslen</toctitle>
-   <indextitle>Droslen</indextitle>
-   <firstline>Naa! skal du ogsaa strax afsted?</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Droslen</title>
+    <firstline>Naa! skal du ogsaa strax afsted?</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Naa! skal du ogsaa strax afsted?
@@ -628,7 +608,7 @@ Hiin Morgen førend Slaget,
 Da Skjalden Bjarkemaalet kvad,
 Og vakte Vaabenbraget.
 Jeg gad end heller seet den Steen,
-»Som truer Norges Fjender,«
+,,Som truer Norges Fjender,''
 Hvor over tusind Scotters Been
 Den gamle Lougen rinder.
 Gad seet det stærke Fredrikshald,
@@ -648,11 +628,10 @@ Min Hilsen Du ham bringer.
 
 <poem id="blicher1838a14">
 <head>
-   <title>Skovduen</title>
-   <toctitle>Skovduen</toctitle>
-   <indextitle>Skovduen</indextitle>
-   <firstline>Der kommer Duen: den blysomme Fugl</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Skovduen</title>
+    <firstline>Der kommer Duen: den blysomme Fugl</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Der kommer Duen: den blysomme Fugl,
@@ -694,11 +673,10 @@ Du flytter jo dog til en anden Vaar.
 
 <poem id="blicher1838a15">
 <head>
-   <title>Falken</title>
-   <toctitle>Falken</toctitle>
-   <indextitle>Falken</indextitle>
-   <firstline>En Falk! ja nu er den Tid forbi</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Falken</title>
+    <firstline>En Falk! ja nu er den Tid forbi</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 En Falk! ja nu er den Tid forbi,
@@ -717,32 +695,31 @@ Den ædle Hest og den trofaste Hund
 Fik Hug, naar Du fik Æde -
 Og du var som Gjæst i den grønne Lund,
 Naar Prindser gik til Sæde.
-»O! al denne glimrende Lykke forvist
-»Jeg under Nattergalen:
-»Gier ei af min Rede den mindste Qvist
-»For hele Riddersalen.
-»Jeg giver end ikke en Draabe Vand
-»For Viin af gyldne Bæger;
-»Og er jeg endogsaa en fattig Mand
-»Mit eget Bord mig kvæger.
-»Bøj du kun for Stormanden dybt din Ryg,
-»Naar du hans Kjøkken lugter:
-»Om der til Eftermad vanker lidt Stryg,
-»Kys Riset, som dig tugter.
-»Sæt dig kun til Nattergalen i Buur!
-»Og syng naar Herren byder;
-»Jeg svinger mig ud i den vilde Natur,
-»Og fattig Frihed nyder.«
+,,O! al denne glimrende Lykke forvist
+,,Jeg under Nattergalen:
+,,Gier ei af min Rede den mindste Qvist
+,,For hele Riddersalen.
+,,Jeg giver end ikke en Draabe Vand
+,,For Viin af gyldne Bæger;
+,,Og er jeg endogsaa en fattig Mand
+,,Mit eget Bord mig kvæger.
+,,Bøj du kun for Stormanden dybt din Ryg,
+,,Naar du hans Kjøkken lugter:
+,,Om der til Eftermad vanker lidt Stryg,
+,,Kys Riset, som dig tugter.
+,,Sæt dig kun til Nattergalen i Buur!
+,,Og syng naar Herren byder;
+,,Jeg svinger mig ud i den vilde Natur,
+,,Og fattig Frihed nyder.''
 </body>
 </poem>
 
 <poem id="blicher1838a16">
 <head>
-   <title>Thomas i Gjærdet</title>
-   <toctitle>Thomas i Gjærdet</toctitle>
-   <indextitle>Thomas i Gjærdet</indextitle>
-   <firstline>Nordiske Kolibri! Du som boer</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Thomas i Gjærdet</title>
+    <firstline>Nordiske Kolibri! Du som boer</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nordiske Kolibri! Du som boer -
@@ -761,32 +738,31 @@ Eller har dig Slægt og Ven forladt?
 Sørger derfor Dag og Nat?
 Eller ak! maaskee du ogsaa veed
 Lidt om skuffet Kjerlighed?
-»Jordmonark! Du seer saa stoltelig
-»Fra din Høihed ned paa mig.
-»Sand Lyksalighed, din Viisdom troer,
-»Kun i Glands og Færdsel boer.
-»Siig mig: i dit eget lange Liv
-»Hvad er vel <i>din</i> Tidsfordriv?
-»Drømme skjønt om Magt og Herlighed,
-»Bygge op og rive ned:
-»Sætte dig et Maal, du aldrig naaer,
-»Kæmpe om et Potteskaar.
-»Store Herre! ynk kun ikke mig!
-»Jeg misunder ikke dig.
-»Bad dig, brænd dig kun i Ærens Sol!
-»Tumle dig fra Pol til Pol:
-»Enden dog, du Træl af Magt og Guld!
-»Er ikkun en Sæng af Muld.«
+,,Jordmonark! Du seer saa stoltelig
+,,Fra din Høihed ned paa mig.
+,,Sand Lyksalighed, din Viisdom troer,
+,,Kun i Glands og Færdsel boer.
+,,Siig mig: i dit eget lange Liv
+,,Hvad er vel <i>din</i> Tidsfordriv?
+,,Drømme skjønt om Magt og Herlighed,
+,,Bygge op og rive ned:
+,,Sætte dig et Maal, du aldrig naaer,
+,,Kæmpe om et Potteskaar.
+,,Store Herre! ynk kun ikke mig!
+,,Jeg misunder ikke dig.
+,,Bad dig, brænd dig kun i Ærens Sol!
+,,Tumle dig fra Pol til Pol:
+,,Enden dog, du Træl af Magt og Guld!
+,,Er ikkun en Sæng af Muld.''
 </body>
 </poem>
 
 <poem id="blicher1838a17">
 <head>
-   <title>Rørdrummen</title>
-   <toctitle>Rørdrummen</toctitle>
-   <indextitle>Rørdrummen</indextitle>
-   <firstline>Hør! Hvilket Suk! det hæver sig og døer</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Rørdrummen</title>
+    <firstline>Hør! Hvilket Suk! det hæver sig og døer</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hør!
@@ -795,51 +771,50 @@ Liig en Basunes i Søens hvislende Rør.
 Hvo er du, som hilser Vaarens Dage
 Med Klage?
 
-»Nej!
-»Hvad du hører, Klage er det ej;
-»I Elegier alleneste bejler nu jeg.
-»Hvorfor kan man ej i Suk udtrykke
-»Sin Lykke?
+,,Nej!
+,,Hvad du hører, Klage er det ej;
+,,I Elegier alleneste bejler nu jeg.
+,,Hvorfor kan man ej i Suk udtrykke
+,,Sin Lykke?
 
-»O!
-»Der er Lykke, mere end du vil troe
-»I umisundte, stille, lønlige Boe.
-»Ikke alle Suk og Taarer glide
-»Af Kvide.
+,,O!
+,,Der er Lykke, mere end du vil troe
+,,I umisundte, stille, lønlige Boe.
+,,Ikke alle Suk og Taarer glide
+,,Af Kvide.
 
-»Sang,
-»Selve din, min Ven! har ej engang
-»Idelig jublende Glædes henrivende Klang;
-»Og maae Du ej selv jo stundom græde
-»Af Glæde?
+,,Sang,
+,,Selve din, min Ven! har ej engang
+,,Idelig jublende Glædes henrivende Klang;
+,,Og maae Du ej selv jo stundom græde
+,,Af Glæde?
 
-»Tidt
-»Om Lyksalighed paa Jorden vidt
-»Lede I Mennesker! finde som oftest lidt;
-»Mangen leder, til han vorder fremmet
-»I Hjemmet.
+,,Tidt
+,,Om Lyksalighed paa Jorden vidt
+,,Lede I Mennesker! finde som oftest lidt;
+,,Mangen leder, til han vorder fremmet
+,,I Hjemmet.
 
-»Mit
-»Er kun snævert, ejer ikkun lidt;
-»Dog jeg det ikke, du Stolte! bortbytter for Dit.
-»Ingen, Du! af dine gyldne Avner
-»Jeg savner.
+,,Mit
+,,Er kun snævert, ejer ikkun lidt;
+,,Dog jeg det ikke, du Stolte! bortbytter for Dit.
+,,Ingen, Du! af dine gyldne Avner
+,,Jeg savner.
 
-»Flyv
-»Med din Legion af Ønsker! Klyv
-»Møjsomt til Ærens Top, og lyksalig Dig lyv!
-»I min Vraae jeg skal dig ingenlunde
-»Misunde.«
+,,Flyv
+,,Med din Legion af Ønsker! Klyv
+,,Møjsomt til Ærens Top, og lyksalig Dig lyv!
+,,I min Vraae jeg skal dig ingenlunde
+,,Misunde.''
 </body>
 </poem>
 
 <poem id="blicher1838a18">
 <head>
-   <title>Brushanen</title>
-   <toctitle>Brushanen</toctitle>
-   <indextitle>Brushanen</indextitle>
-   <firstline>Tringa pugnax! nu blier her et muntert Liv</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Brushanen</title>
+    <firstline>Tringa pugnax! nu blier her et muntert Liv</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Tringa pugnax! nu blier her et muntert Liv;
@@ -871,11 +846,10 @@ Raabte: nu er Congressen endt.
 
 <poem id="blicher1838a19">
 <head>
-   <title>Rylen</title>
-   <toctitle>Rylen</toctitle>
-   <indextitle>Rylen</indextitle>
-   <firstline>Det er jo Rylen, som hisset kommer!</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Rylen</title>
+    <firstline>Det er jo Rylen, som hisset kommer!</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Det er jo Rylen, som hisset kommer!
@@ -905,11 +879,10 @@ Og den ikkun <i>nyder</i> som ogsaa <i>taaler.</i>
 
 <poem id="blicher1838a20">
 <head>
-   <title>Horsegommen</title>
-   <toctitle>Horsegommen</toctitle>
-   <indextitle>Horsegommen</indextitle>
-   <firstline>Du Flyvemester, der stiger mod Sky'n</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Horsegommen</title>
+    <firstline>Du Flyvemester, der stiger mod Sky'n</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Du Flyvemester, der stiger mod Sky'n,
@@ -945,33 +918,32 @@ Belønne.
 
 <poem id="blicher1838a21">
 <head>
-   <title>Muusvaagen</title>
-   <toctitle>Muusvaagen</toctitle>
-   <indextitle>Muusvaagen</indextitle>
-   <firstline>Ih! see god Dag Hr. Landraad! hvordanne staaer</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Muusvaagen</title>
+    <firstline>Ih! see god Dag Hr. Landraad! hvordanne staaer</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ih! see god Dag Hr. Landraad! hvordanne staaer det til?
 Der er saa læng' imellem De os besøge vil;
 Det er jo mange Tider - et halvt Aar er det vist -
 At her i disse Enge vi have seet Dem sidst.
-»Ja, Kjere! jeg maae virke foruden Roe og Rist
-»Og svære Embedspligter mig have fængslet hist.
-»Jeg veed det nok: man venter mig her med Længsel stor;
-»Med Extrapost jeg derfor herhid fra Syden foer.
-»Her har jeg saa det samme uendelige Slid;
-»Og naar endda jeg rigtig blev belønnet for min Flid!
-»Men mine Sportler falde bestandig saare smaa:
-»Af Rotter næsten igen, af Muus kun ganske faa.«
+,,Ja, Kjere! jeg maae virke foruden Roe og Rist
+,,Og svære Embedspligter mig have fængslet hist.
+,,Jeg veed det nok: man venter mig her med Længsel stor;
+,,Med Extrapost jeg derfor herhid fra Syden foer.
+,,Her har jeg saa det samme uendelige Slid;
+,,Og naar endda jeg rigtig blev belønnet for min Flid!
+,,Men mine Sportler falde bestandig saare smaa:
+,,Af Rotter næsten igen, af Muus kun ganske faa.''
 Det tykkes mig dog ikke; endskjøndt De siger saa.
 Og overalt min Kjere! man klager ogsaa paa:
 De gjør Dem selv betalt udi Bondens Høns og Lam,
 Og er det sandt, mig tykkes: det næsten er en Skam.
-»Hvad snakker De om Bonden? jo den Karl! luur De ham -
-»Det skader ham slet ikke, engang han faar et Ram:
-»Min Sportulering, skriger han altid paa, er dyr;
-»Jeg taer kun for Udpantning mit lovlige Gebyhr.«
+,,Hvad snakker De om Bonden? jo den Karl! luur De ham -
+,,Det skader ham slet ikke, engang han faar et Ram:
+,,Min Sportulering, skriger han altid paa, er dyr;
+,,Jeg taer kun for Udpantning mit lovlige Gebyhr.''
 Ja saa! jeg har og kjendt Dem jo som en ærlig Fyr;
 Der med en sjælden Strenghed Skin af det Onde skyer:
 Men Embedsmænd beklikkes saa ofte, kan jeg troe,
@@ -981,11 +953,10 @@ Gid Deres Ret saa lovlig, De nye maae i Roe.
 
 <poem id="blicher1838a22">
 <head>
-   <title>Stillitsen</title>
-   <toctitle>Stillitsen</toctitle>
-   <indextitle>Stillitsen</indextitle>
-   <firstline>Smukke Fugl! Du som saa tarvelig</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Stillitsen</title>
+    <firstline>Smukke Fugl! Du som saa tarvelig</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Smukke Fugl! Du som saa tarvelig
@@ -998,35 +969,34 @@ Men ved slig en Kost hvorledes kan
 Kan en Digter da ved Brød og Vand
   Lade Digteraaren rinde?
 
-»Netop Kjere! Skjalden sulte maa;
-  »Synger bedst, naar han er sulten,
-»Siig mig, hvor en feed Poet Du saae!
-  »Neppelig ved Skriverpulten.
+,,Netop Kjere! Skjalden sulte maa;
+  ,,Synger bedst, naar han er sulten,
+,,Siig mig, hvor en feed Poet Du saae!
+  ,,Neppelig ved Skriverpulten.
 
-»Det forstaaer sig: sulte reent ihjel
-  »Maae han ei. Jeg har en Broder,
-»Som i Buuer befinder sig ret vel,
-  »Men maae trælle for sit Foder.
+,,Det forstaaer sig: sulte reent ihjel
+  ,,Maae han ei. Jeg har en Broder,
+,,Som i Buuer befinder sig ret vel,
+  ,,Men maae trælle for sit Foder.
 
-»Rigtignok: hans meste Tid gaaer bort
-  »Med hans Ædekop at trække;
-»Men selv det Opmærksomhed, skjønt kort
-  »Kan for ham hos Mange vække.
+,,Rigtignok: hans meste Tid gaaer bort
+  ,,Med hans Ædekop at trække;
+,,Men selv det Opmærksomhed, skjønt kort
+  ,,Kan for ham hos Mange vække.
 
-»Men han venter og, naar han er død,
-  »At hans Skind udstoppet bliver.
-»Denne Løn, min kjere Mand! er sød,
-  »Og hans Hjerte kjønt opliver.«
+,,Men han venter og, naar han er død,
+  ,,At hans Skind udstoppet bliver.
+,,Denne Løn, min kjere Mand! er sød,
+  ,,Og hans Hjerte kjønt opliver.''
 </body>
 </poem>
 
 <poem id="blicher1838a23">
 <head>
-   <title>Irrisken</title>
-   <toctitle>Irrisken</toctitle>
-   <indextitle>Irrisken</indextitle>
-   <firstline>Ha! Bravo! først Liv nu Concerten faaer</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Irrisken</title>
+    <firstline>Ha! Bravo! først Liv nu Concerten faaer</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ha! Bravo! først Liv nu Concerten faaer
@@ -1066,11 +1036,10 @@ Istemme et evigt Majore.
 
 <poem id="blicher1838a24">
 <head>
-   <title>Svalen</title>
-   <toctitle>Svalen</toctitle>
-   <indextitle>Svalen</indextitle>
-   <firstline>Vidivit! der er Svalen, min Troe!</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Svalen</title>
+    <firstline>Vidivit! der er Svalen, min Troe!</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Vidivit! der er Svalen, min Troe!
@@ -1108,30 +1077,29 @@ Til Foraaret ogsaa vil kalde paa mig.
 
 <poem id="blicher1838a25">
 <head>
-   <title>Vagtlen</title>
-   <toctitle>Vagtlen</toctitle>
-   <indextitle>Vagtlen</indextitle>
-   <firstline>Hys!</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Vagtlen</title>
+    <firstline>Hys!</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-»Hys!
-»Tys!
-»Kom nu og kys!
-»Tag mig!
-»Drag mig!
-»Ej meer beklag dig
-»Over min Kulde!
-»Thi nu er jeg varm.
-»Kom da, du Hulde!
-»Og synk til min Barm!«
+,,Hys!
+,,Tys!
+,,Kom nu og kys!
+,,Tag mig!
+,,Drag mig!
+,,Ej meer beklag dig
+,,Over min Kulde!
+,,Thi nu er jeg varm.
+,,Kom da, du Hulde!
+,,Og synk til min Barm!''
 Ja den har du lært udi Myrthernes Land,
 Hvor Rosen aldrig henvisner;
 Hvor Hjerte enten maae staae ibrand,
 Eller og af Kulde det isner.
 Hvad vil du med saadan en Elskov her?
 En Ild, som Vesuvio tænder?
-Her have vi »<i>mindre men længere kjær;</i>«
+Her have vi ,,<i>mindre men længere kjær;</i>''
 Men her er ingen, som brænder.
 Her kalde vi den kun en Fusentast,
 Som elsker meer end tilmaade;
@@ -1154,11 +1122,10 @@ At Kjerlighed kommer med Tiden.
 
 <poem id="blicher1838a26">
 <head>
-   <title>Hejren</title>
-   <toctitle>Hejren</toctitle>
-   <indextitle>Hejren</indextitle>
-   <firstline>Der kommer Hejren i Bølgeflugt</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Hejren</title>
+    <firstline>Der kommer Hejren i Bølgeflugt</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Der kommer Hejren i Bølgeflugt,
@@ -1210,11 +1177,10 @@ Og bære Hejrereder. -
 
 <poem id="blicher1838a27">
 <head>
-   <title>Ternen</title>
-   <toctitle>Ternen</toctitle>
-   <indextitle>Ternen</indextitle>
-   <firstline>Terne! Du erindrer mig</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Ternen</title>
+    <firstline>Terne! Du erindrer mig</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Terne! Du erindrer mig
@@ -1234,7 +1200,7 @@ Stak den røde Flamme.
 
 Du var Skyld i al den Harm
 Ved din trædske Tunge;
-»Habor laa i Signes Arm«
+,,Habor laa i Signes Arm''
 Røbed Du den Konge.
 
 Tidt ved Haborshøj jeg sad,
@@ -1286,15 +1252,14 @@ Sødere jeg drømte.
 
 <poem id="blicher1838a28">
 <head>
-   <title>Gjøgen</title>
-   <toctitle>Gjøgen</toctitle>
-   <indextitle>Gjøgen</indextitle>
-   <firstline>Min Søn! om Du vil i Verden frem</firstline>
-   <notes>
-      <note>Sven Sørensen skriver: Digtet travesterer W. H. F. Abrahamsons <xref poem="abrahamsonandrea0"/>. Med titlen »Gjøgesang« blev digtet trykt 1822 i tidsskriftet <i>Harpen</i>; senere omarbejdede Blicher det, hvorved antallet af strofer blev skåret ned til under det halve. Det er denne sidste version som er gengivet her. En interessant analyse af digtet findes hos Björn von Törne, pp. 137-143.</note>
+    <title><num></num>Gjøgen</title>
+    <firstline>Min Søn! om Du vil i Verden frem</firstline>
+    <source pages=""/>
+    <notes>
+      <note>Sven Sørensen skriver: Digtet travesterer W. H. F. Abrahamsons <xref poem="abrahamsonandrea0"/>. Med titlen ,,Gjøgesang'' blev digtet trykt 1822 i tidsskriftet <i>Harpen</i>; senere omarbejdede Blicher det, hvorved antallet af strofer blev skåret ned til under det halve. Det er denne sidste version som er gengivet her. En interessant analyse af digtet findes hos Björn von Törne, pp. 137-143.</note>
       <note>Cf. Törne, Björn von: <i>Zwischen Loyalität und Servilität: Steen Steensen Blichers politische Publizistik und ihre Voraussetzungen</i>, (Skandinavistische Studien, 12.), Neumünster, 1980.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Min Søn! om Du vil i Verden frem,
@@ -1371,11 +1336,10 @@ Snart uden Kuk Du i Graven snorker.
 
 <poem id="blicher1838a29">
 <head>
-   <title>Lyngspurven</title>
-   <toctitle>Lyngspurven</toctitle>
-   <indextitle>Lyngspurven</indextitle>
-   <firstline>Hvem der! hvor saaes vi To sidste Gang!</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Lyngspurven</title>
+    <firstline>Hvem der! hvor saaes vi To sidste Gang!</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hvem der! hvor saaes vi To sidste Gang!
@@ -1418,11 +1382,10 @@ Den korte Livets Sommer!
 
 <poem id="blicher1838a30">
 <head>
-   <title>Nattergalen</title>
-   <toctitle>Nattergalen</toctitle>
-   <indextitle>Nattergalen</indextitle>
-   <firstline>Velkommen lille Emigrant!</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Nattergalen</title>
+    <firstline>Velkommen lille Emigrant!</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Velkommen lille Emigrant!
@@ -1461,21 +1424,20 @@ Aftenunderholdning give -
 Skjøndt Dig kun saare Faa
 Opmærksomhed vil skjænke.
 
-»Min Sang, o Broder! som en Elv
-»Af egen Magt hentriller.
-»Bejl Du kun til Verdens Roes!
-»Mens Du for Andre spiller,
-»Jeg synger for mig selv«.
+,,Min Sang, o Broder! som en Elv
+,,Af egen Magt hentriller.
+,,Bejl Du kun til Verdens Roes!
+,,Mens Du for Andre spiller,
+,,Jeg synger for mig selv''.
 </body>
 </poem>
 
 <poem id="blicher1838a31">
 <head>
-   <title>Svanen</title>
-   <toctitle>Svanen</toctitle>
-   <indextitle>Svanen</indextitle>
-   <firstline>Ah! Hvo est Du, som hisset gynger</firstline>
-   <quality>korrektur1,korrektur2,kilde</quality>
+    <title><num></num>Svanen</title>
+    <firstline>Ah! Hvo est Du, som hisset gynger</firstline>
+    <source pages=""/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Ah! Hvo est Du, som hisset gynger
@@ -1504,7 +1466,6 @@ Som Sejerssang, før hiint oprinder,
 Hans sidste Kamp ledsage.
 </body>
 </poem>
-</content>
-</section>
+
 </workbody>
 </kalliopework>
