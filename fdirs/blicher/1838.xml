@@ -3,12 +3,15 @@
 <kalliopework id="1838" author="blicher" status="complete" type="poetry">
 <workhead>
     <title>Trækfuglene</title>
-    <subtitle>En Naturconcert</subtitle>
+    <subtitle>Naturconcert</subtitle>
     <year>1838</year>
     <notes>
-      <note>Kilde er <i>Guldalderdigte</i>, Asger Schnack (red.), LyrikBiblioteket, Hans Reitzels Forlag, 1994.</note>
+        <note>Teksten følger samvittighedsfuldt førsteudgaven af St. St. Blicher: <i>Trækfuglene</i>, Boghandler Smiths Forlag, Randers, 1838.</note>
     </notes>
-    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
+    <pictures>
+        <picture type="titlepage" src="1838-p1.jpg">Titelbladet til <i>Trækfuglene</i> (1838) lyder ,,Trækfuglene. / Naturconcert / af / Steen Steensen Blicher. // Randers. / Trykt, paa Boghandler Smiths Forlag, / hos J. M. Elmenhoff.</picture>
+   </pictures>
+    <source facsimile="11530804553D" facsimile-pages-num="64" facsimile-pages-offset="6">St. St. Blicher: <i>Trækfuglene</i>, Boghandler Smiths Forlag, Randers, 1838.</source>
 </workhead>
 <workbody>
 
@@ -252,7 +255,7 @@ Lad mig dog som Digter være Barn!
 <head>
     <title><num>5.</num>Viben</title>
     <firstline>Viben! det lille næsvis Ting</firstline>
-    <source pages=""/>
+    <source pages="13-14"/>
     <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -287,7 +290,7 @@ Mit Kritikakler jeg derfor vil kalde dig. -
 <head>
     <title><num>6.</num>Stæren</title>
     <firstline>Eja! Velkommen du lystige Stær!</firstline>
-    <source pages=""/>
+    <source pages="15"/>
     <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -526,9 +529,11 @@ Over Døden og Mørket til Lyset sig svinger.
     <title><num>11.</num>Sælsorten</title>
     <firstline>Fløjtetoner elskovsømme, bløde</firstline>
     <source pages="23-24"/>
+    <!--
     <notes>
       <note>Flere har ønsket titlen på dette digt rettet til ,,Solsorten''. Den korrekte titel er dog ifølge alle mine kilder ,,Sælsorten''. Hvor sælsomt det end kan lyde.</note>
     </notes>
+    -->
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
