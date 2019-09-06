@@ -6,7 +6,6 @@ const async = require('async');
 const path = require('path');
 const sharp = require('sharp');
 const CommonData = require('../../pages/helpers/commondata.js');
-const deasync = require('deasync');
 
 const safeMkdir = dirname => {
   try {
@@ -72,26 +71,6 @@ const loadXMLDoc = filename => {
   }
 };
 
-const safeGetText = (element, child) => {
-  if (element) {
-    const childElement = element.get(child);
-    if (childElement) {
-      return childElement.text();
-    }
-  }
-  return null;
-};
-
-const safeGetAttr = (element, attrName) => {
-  if (element) {
-    const attrElement = element.attr(attrName);
-    if (attrElement) {
-      return attrElement.value();
-    }
-  }
-  return null;
-};
-
 const replaceDashes = html => {
   if (html == null) {
     return null;
@@ -113,7 +92,7 @@ const replaceDashes = html => {
       .replace(/ -$/gm, ' —')
       .replace(/ -([\!;\?\.»«,:\n])/g, / —$1/)
       .replace(/ \. \. \./gm, '&nbsp;.&nbsp;.&nbsp;.') // Undgå ombrydning af ". . ."
-      .replace(/ —/g,'&nbsp;—') // Undgå tankestreger som ombrydes til sin egen linje
+      .replace(/ —/g, '&nbsp;—') // Undgå tankestreger som ombrydes til sin egen linje
   );
 };
 
@@ -347,20 +326,6 @@ const htmlToXml = (
   return lines;
 };
 
-const imageSizeAsync = (filename, callback) => {
-  if (!fileExists(filename)) {
-    const error = `image size failed for file: ${filename}`;
-    throw error;
-  }
-  sharp(filename)
-    .metadata()
-    .then(metadata => {
-      callback(null, { width: metadata.width, height: metadata.height });
-    });
-};
-
-const imageSizeSync = deasync(imageSizeAsync);
-
 let resizeImageQueue = async.queue((task, callback) => {
   sharp(task.inputfile)
     .resize(task.maxWidth, 10000)
@@ -379,7 +344,7 @@ const resizeImage = (inputfile, outputfile, maxWidth) => {
   resizeImageQueue.push({ inputfile, outputfile, maxWidth });
 };
 
-const buildThumbnails = (topFolder, isFileModified) => {
+const buildThumbnails = (topFolder, isFileModifiedMethod) => {
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
 
@@ -392,6 +357,9 @@ const buildThumbnails = (topFolder, isFileModified) => {
       return;
     }
     fs.readdirSync(dirname).forEach(filename => {
+      if (filename === 't') {
+        return;
+      }
       const fullFilename = path.join(dirname, filename);
       const stats = fs.statSync(fullFilename);
       if (stats.isDirectory()) {
@@ -401,16 +369,19 @@ const buildThumbnails = (topFolder, isFileModified) => {
         filename.endsWith('.jpg') &&
         !skipRegExps.test(filename)
       ) {
+        if (
+          isFileModifiedMethod != null &&
+          !isFileModifiedMethod(fullFilename)
+        ) {
+          return;
+        }
         CommonData.availableImageFormats.forEach((ext, i) => {
           CommonData.availableImageWidths.forEach(width => {
             const outputfile = fullFilename
               .replace(/\.jpg$/, `-w${width}.${ext}`)
               .replace(/\/([^\/]+)$/, '/t/$1');
             safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-            if (
-              (isFileModified != null && isFileModified(fullFilename)) ||
-              !fileExists(outputfile)
-            ) {
+            if (!fileExists(outputfile)) {
               resizeImage(fullFilename, outputfile, width);
             }
           });
@@ -433,10 +404,7 @@ module.exports = {
   writeText,
   loadXMLDoc,
   htmlToXml,
-  safeGetText,
-  safeGetAttr,
   replaceDashes,
-  imageSizeSync,
   buildThumbnails,
   resizeImage,
 };

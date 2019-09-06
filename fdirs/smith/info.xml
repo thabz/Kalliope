@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="smith" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Alexander</firstname>
+    <lastname>Smith</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1829-12-31</date>
+      <place>Kilmarnock</place>
+    </born>
+    <dead>
+      <date>1867-01-05</date>
+      <place>Wardie</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

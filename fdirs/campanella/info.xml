@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="campanella" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Tommaso</firstname>
+    <lastname>Campanella</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1568-09-05</date>
+      <place>Stilo, Calabria</place>
+    </born>
+    <dead>
+      <date>1639-05-21</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+</person>

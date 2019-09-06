@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bruunnt" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>N.T.</firstname>
+    <lastname>Bruun</lastname>
+    <fullname>Niels Thoroup Bruun</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1778-01-19</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1823-06-08</date>
+      <place>Bistrup</place>
+    </dead>
+  </period>
+  <works>1806,1812,1814,1815,1816,1818,1820,andre</works>
+</person>

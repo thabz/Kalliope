@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="juelaxel" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Axel</firstname>
+    <lastname>Juel</lastname>
+    <fullname>Axel Niels Christian Juel</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1883-02-12</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1948-07-15</date>
+      <place>Charlottenlund</place>
+    </dead>
+  </period>
+  <works>1909,1913,1915,1916,1917,1918,1919,1920,1921,1923,1924,1929,1932,1934,1936,1939,1941,1942,1947,1952</works>
+</person>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="steffens" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Henrich</firstname>
+    <lastname>Steffens</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1773-05-02</date>
+      <place>Stavanger</place>
+    </born>
+    <dead>
+      <date>1845-02-13</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
+</person>

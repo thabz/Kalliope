@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="frandsen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hans</firstname>
+    <lastname>Frandsen</lastname>
+    <latin>Johannes Francisci Ripensis</latin>
+  </name>
+  <period>
+    <born>
+      <date>1522</date>
+      <place>Ribe</place>
+    </born>
+    <dead>
+      <date>1584</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1556</works>
+</person>

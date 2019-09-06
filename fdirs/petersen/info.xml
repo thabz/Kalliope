@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="petersen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Nis</firstname>
+    <lastname>Petersen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1897-01-22</date>
+      <place>Vamdrup</place>
+    </born>
+    <dead>
+      <date>1943-03-09</date>
+    </dead>
+  </period>
+  <works>1926,1933,1935,1940</works>
+</person>

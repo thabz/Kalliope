@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="frederik6" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 6.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1768-01-28</date>
+      <place inon="on">Christianborg Slot</place>
+    </born>
+    <!-- Regent 1784-04-13 pga. Christian 7.s sygdom. -->
+    <coronation>
+      <date>1808-03-13</date>
+    </coronation>
+    <dead>
+      <date>1839-12-03</date>
+      <place inon="on">Amalienborg</place>
+    </dead>
+  </period>
+</person>

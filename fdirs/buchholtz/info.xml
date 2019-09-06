@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="buchholtz" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johannes</firstname>
+    <lastname>Buchholtz</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1882-02-22</date>
+      <place>Odense</place>
+    </born>
+    <dead>
+      <date>1940-08-05</date>
+      <place>Struer</place>
+    </dead>
+  </period>
+  <works>1921</works>
+</person>

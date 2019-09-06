@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lear" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Edward</firstname>
+    <lastname>Lear</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1812</date>
+    </born>
+    <dead>
+      <date>1888</date>
+    </dead>
+  </period>
+  <works>1846,1861,1871,1872,1877,1895</works>
+</person>

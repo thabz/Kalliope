@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="liunge" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Andreas Peter</firstname>
+    <lastname>Liunge</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1798-04-06</date>
+      <place>København</place>
+    </born>
+    <dead>
+        <date>1879-03-31</date>
+        <place inon="on">Frederiksberg</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

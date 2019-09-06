@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="eckersberg" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>C.W.</firstname>
+    <lastname>Eckersberg</lastname>
+    <fullname>Christoffer Wilhelm Eckersberg</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1783-01-02</date>
+      <place>Blåkrog, Sundeved</place>
+      <!-- og ikke Blåkrog, Als, som man oftest finder. -->
+    </born>
+    <dead>
+      <date>1853-07-22</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>

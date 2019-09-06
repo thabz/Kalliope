@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="blicherclausen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Jenny</firstname>
+    <lastname>Blicher-Clausen</lastname>
+    <fullname>Jenny Frederikke Blicher-Clausen</fullname>
+    <pseudonym>John Bentsen</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1865-07-29</date>
+      <place>Durup Sogn</place>
+    </born>
+    <dead>
+      <date>1907-02-04</date>
+      <place inon="on">Frederiksberg</place>
+    </dead>
+  </period>
+  <works>1885,1888,1890,1894,1895,1898,1900,1901,1903,1907</works>
+</person>

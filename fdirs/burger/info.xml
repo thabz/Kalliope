@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="burger" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Gottfried August</firstname>
+    <lastname>Bürger</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1747-12-31</date>
+      <place>Molmerswende</place>
+    </born>
+    <dead>
+      <date>1794-06-08</date>
+      <place>Göttingen</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

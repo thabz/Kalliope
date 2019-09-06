@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="leopardi" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Giacomo</firstname>
+    <lastname>Leopardi</lastname>
+    <fullname>Giacomo Talegardo Francesco Di Sales Saverio Pietro Leopardi</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1798-06-29</date>
+      <place>Recanati</place>
+    </born>
+    <dead>
+      <date>1837-06-14</date>
+      <place>Napoli</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

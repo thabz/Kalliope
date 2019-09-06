@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="spenser" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Edmund</firstname>
+    <lastname>Spenser</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1552 ca.</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1599-01-13</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>1569,1579,1590,1591,1595,1595e,1596</works>
+</person>

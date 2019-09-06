@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="swift" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Jonathan</firstname>
+    <lastname>Swift</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1667-11-30</date>
+      <place>Dublin</place>
+    </born>
+    <dead>
+      <date>1745-10.19</date>
+      <place>Dublin</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

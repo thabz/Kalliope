@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="holbek" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johannes</firstname>
+    <lastname>Holbek</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1872</date><!-- TODO: Find detaljer -->
+    </born>
+    <dead>
+      <date>1903</date>
+    </dead>
+  </period>
+</person>

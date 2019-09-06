@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hostrup" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Jens Christian</firstname>
+    <lastname>Hostrup</lastname>
+    <pseudonym>Jens Kristrup</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1818-05-20</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1892-11-21</date>
+      <place inon="on">Frederiksberg</place>
+    </dead>
+  </period>
+  <works>1852,1865,1872,1884,1893,andre</works>
+</person>

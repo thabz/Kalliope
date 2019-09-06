@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="fitger" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Arthur</firstname>
+    <lastname>Fitger</lastname>
+      <fullname>Arthur Heinrich Wilhelm Fitger</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1840-10-04</date>
+      <place>Delmenhorst</place>
+    </born>
+    <dead>
+      <date>1909-06-28</date>
+      <place>Horn ved Bremen</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

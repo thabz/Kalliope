@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="donne" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Donne</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1572-01-22</date>
+    </born>
+    <dead>
+      <date>1631-03-31</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>1601,andre</works>
+</person>

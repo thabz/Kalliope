@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="ramler" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Karl Wilhelm</firstname>
+    <lastname>Ramler</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1725-02-25</date>
+      <place>Kolberg</place>
+    </born>
+    <dead>
+      <date>1798-04-11</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
+</person>

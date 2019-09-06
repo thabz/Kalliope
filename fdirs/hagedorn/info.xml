@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hagedorn" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich von</firstname>
+    <lastname>Hagedorn</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1708-04-23</date>
+      <place>Hamburg</place>
+    </born>
+    <dead>
+      <date>1754-10-28</date>
+      <place>Hamburg</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
