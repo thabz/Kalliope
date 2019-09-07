@@ -13,7 +13,6 @@
     <!-- TODO: Longfellows samlede: http://www.gutenberg.org/cache/epub/1365/pg1365.txt -->
     <!-- TODO: Thomas Moores samlede: http://www.gutenberg.org/cache/epub/8187/pg8187.txt -->
     <!-- TODO: Bryants: http://www.gutenberg.org/files/16341/16341.txt -->
-    <!-- TODO: Burns http://www.gutenberg.org/cache/epub/18500/pg18500.txt -->
     <source facsimile="115408046490" facsimile-pages-num="238" facsimile-pages-offset="24">Christian Preetzmann: <i>Digte og Sange</i>, Chr. Steen &amp; Søns Forlag, Kbh., 2. opl., 1868.</source>
 </workhead>
 <workbody>
@@ -2208,7 +2207,9 @@ Og see! — Ben Adhems Navn i Spidsen stod!
     <toctitle>Gaa — forglem mig! (Charles Wolfe)</toctitle>
     <firstline>Gaa, forglem mig — lad ei Sorgen</firstline>
     <source pages="82-83"/>
-    <!-- TODO: Find originalen (Charles Wolfe) -->
+    <notes>
+        <note>Gendigtning af Charles Wolfe: <xref type="translation" poem="wolfe2019090702"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2274,7 +2275,7 @@ Du var sød vel i Elskovens Ild —
     <toctitle>Faderglæder (G. Massey)</toctitle>
     <firstline>Sig Sommernatten sænker over Jorden</firstline>
     <source pages="85-87"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (G. Massey) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4868,7 +4869,6 @@ Men Karen leved ugift til sin Død.
         <note>Amerikanske digtere er angivet med asterisk *.</note>
     </notes>
     <source pages="191-208"/>
-    <!-- TODO: Find originalen -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
