@@ -1620,7 +1620,9 @@ Da drog man frem ham i Ørkenens Sand —
     <toctitle>Stancer (Robert Southey)</toctitle>
     <firstline>Mit Liv iblandt de Døde randt</firstline>
     <source pages="59-60"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Robert Southey: <xref type="translation" poem="southey2019090701"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1834,7 +1836,9 @@ Var skudt som Overløber!
     <toctitle>Tungsind (R. H. Wilde)</toctitle>
     <firstline>Mit Liv er Rosen, der i Vaar</firstline>
     <source pages="67-68"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Richard Henry Wilde: <xref type="translation" poem="wilderh2019090701"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4206,7 +4210,7 @@ Det var saa tungt at gaae tilbage
 <poem id="preetzmann2019082377">
 <head>
     <title>Kjærlighed</title>
-    <toctitle>Kjærlighed (Hobert Southey)</toctitle>
+    <toctitle>Kjærlighed (Robert Southey)</toctitle>
     <firstline>Synd er det, hvem der os fortæller</firstline>
     <source pages="163-164"/>
     <!-- TODO: Find originalen -->
