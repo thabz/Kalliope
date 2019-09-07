@@ -13,6 +13,7 @@
     <!-- TODO: Longfellows samlede: http://www.gutenberg.org/cache/epub/1365/pg1365.txt -->
     <!-- TODO: Thomas Moores samlede: http://www.gutenberg.org/cache/epub/8187/pg8187.txt -->
     <!-- TODO: Bryants: http://www.gutenberg.org/files/16341/16341.txt -->
+    <!-- TODO: Burns http://www.gutenberg.org/cache/epub/18500/pg18500.txt -->
     <source facsimile="115408046490" facsimile-pages-num="238" facsimile-pages-offset="24">Christian Preetzmann: <i>Digte og Sange</i>, Chr. Steen &amp; Søns Forlag, Kbh., 2. opl., 1868.</source>
 </workhead>
 <workbody>
@@ -274,7 +275,9 @@ Og Haabets Drøm om Amor randt —
     <toctitle>Mit Høiland (Robert Burns)</toctitle>
     <firstline>Mit Høiland jeg elsker, her er ei mit Sind</firstline>
     <source pages="10"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090704"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -308,7 +311,9 @@ Mit Høiland jeg elsker, hvorhen jeg mon gaae.
     <toctitle>Til Anna (Samme)</toctitle>
     <firstline>Din Skjønhed, Anna! tærer hen</firstline>
     <source pages="11"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090703"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1044,7 +1049,9 @@ Evighedens Klokkeklang:
     <toctitle>Vexelsang (Robert Burns)</toctitle>
     <firstline>Husbond! hold dog op med Kiv!</firstline>
     <source pages="39-40"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2001052505"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1966,7 +1973,9 @@ Maae henover Verden saa lysende smile,
     <toctitle>Længsel (Robert Burns)</toctitle>
     <firstline>I hvor jeg end</firstline>
     <source pages="73-75"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090707"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1998,7 +2007,7 @@ En Hilsen bringer mig.
 
   Blandt Høi og Dal,
   I Skovens Sal,
-Bruus, milde Zeyhyr, frem!
+Bruus, milde Zephyr<note>Zephyr] Zeypyr</note>, frem!
   Blandt Foraarsløv,
   Med Blomsterstøv
 Bring Bien til sit Hjem!
@@ -2033,7 +2042,9 @@ Har al min Kjærlighed.
     <subtitle>(Som Forf. pløiede op af Jorden.)</subtitle>
     <firstline>Du lille Blomst saa rød og rund!</firstline>
     <source pages="76-78"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090708"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2057,6 +2068,7 @@ Dog stod Du glad, trods Storm og Kulde,
       Og titted op,
 Knap hævede sig over Mulde
       Din Blomstertop.
+
 Bag Skjærm af Muur og Buske groer
 I Haven stolt en Blomsterflor,
 Du voxer ubemærkt og ene,
@@ -2079,14 +2091,14 @@ Besudlet, knust som Du, hun ligger
       I Støvet traadt.
 
 Saadan en Skjald, af Skjæbnens Harm
-Henslængt i Livets Bolgelarm,
+Henslængt i Livets Bølgelarm,
 Uvant med Kløgt, af Cursen feiler
       I Vindens Suus,
 Og under gaaer hans raske Seiler
       Med Mand og Muus.
 
 Saa kæmper tidt med Modgang her
-Den, der en bedre Lod var værd.
+Den, der en bedre Lod var værd,
 Indtil, fra Sted til Sted fordreven
       Af List og Nag,
 Tilsidst kun Himlen tro er bleven
@@ -3158,7 +3170,9 @@ Fortryller med sin Vellugt end vor Sands:
     <toctitle>Marie Stuarts Klage (Robert Burns)</toctitle>
     <firstline>Naturen alt paa nøgne Green</firstline>
     <source pages="121-123"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090701"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3171,7 +3185,7 @@ Nu Phoebus liver Bækken op,
 Men, ak! den trætte Fanges Sind
   Kan Intet glæde meer.
 
-Nu stiger Lærken hoit mod Sky
+Nu stiger Lærken høit mod Sky
   Fra Morgenduggens Bad;
 I Skovens Dyb, hvor Eccho boer,
   Solsorten qviddrer glad;
@@ -3235,7 +3249,9 @@ Og næste Foraar Blomster snoe
     <toctitle>Ingen (Samme)</toctitle>
     <firstline>Min er Konen, jeg har</firstline>
     <source pages="124"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090702"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4564,7 +4580,9 @@ Som den evige Kjærlighed hisset
     <toctitle>Hyrdesang (Robert Burns)</toctitle>
     <firstline>Pige med den blonde Lok</firstline>
     <source pages="177-178"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090705"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4608,7 +4626,9 @@ Jeg trykker til mit Bryst min Skat
     <toctitle>Livets Vinter (Samme)</toctitle>
     <firstline>Nys Skoven i sin Foraarsdragt</firstline>
     <source pages="179"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090706"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4625,7 +4645,7 @@ Men Sneen i mit hvide Haar
   Vil ingen Vaar optøe,
 Min gamle Stammes Blomsterløv
   I Tidens Storm vil døe.
-For Oldingen gaaer Dagen tnngt
+For Oldingen gaaer Dagen tungt
   Og Natten søvnløst hen —
 Hvi kommer, gyldne Ungdomstid!
     Du aldrig meer igjen?
