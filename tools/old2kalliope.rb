@@ -46,7 +46,10 @@ end
 # Poem data
 @poemid = nil
 @firstline = nil
-@title = nil, @toctitle = nil, @linktitle = nil, @indextitle = nil
+@title = nil
+@toctitle = nil
+@linktitle = nil
+@indextitle = nil
 @subtitles = []
 @body = []
 @notes = []
@@ -139,7 +142,9 @@ def printPoem()
 
   puts "<#{@type} id=\"#{poemid}\"#{variant}#{lang}>"
   puts "<head>"
-  puts "    <title>#{@title}</title>"
+  if @title
+      puts "    <title>#{@title}</title>"
+  end
   if @toctitle
     puts "    <toctitle>#{@toctitle}</toctitle>"
   end
@@ -338,10 +343,12 @@ File.readlines(ARGV[0]).each do |line|
       @state = 'NONE'
     end
   end
-  if @state == 'NONE' and (line =~ /^T:/ or line =~ /^ID:/)
+  if @state == 'NONE' and (line =~ /^T:/ or line =~ /^F:/ or line =~ /^ID:/)
     @state = 'INHEAD'
   end
-  if @state == 'INBODY' and (line.start_with?("T:") or line.start_with?("ID:"))
+  if @state == 'INBODY' and (line.start_with?("T:") or 
+                             line.start_with?("F:") or 
+                             line.start_with?("ID:"))
     printPoem()
     @state = 'INHEAD'
   end
@@ -365,12 +372,6 @@ File.readlines(ARGV[0]).each do |line|
   if @state == 'INHEAD'
     if line.start_with?("T:")
       @title = line[2..-1].strip
-      if @title =~ /<num>/
-          @stripped = @title.gsub(/<num>.*<\/num>/,'')
-          @toctitle = @title
-          @linktitle = @stripped
-          @indextitle = @stripped
-      end
     elsif line.start_with?("F:")
       unless @firstline.nil?
           abort "FEJL: Digtet »#{@title}« har mere end én F:"
