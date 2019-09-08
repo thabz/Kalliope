@@ -12,6 +12,7 @@
         <picture src="1867-p1.jpg">Titelbladet til <i>Hundrede Digte</i> (1867) lyder ,,Hundrede Digte / ved / Caralis. // Andet Oplag / Kjöbenhavn. / Chr. Steen &amp; Søns Forlag. / Thieles Bogtrykkeri. / 1867.''.</picture>
     </pictures>
     <!-- Find Thomas Moore på http://www.gutenberg.org/cache/epub/8187/pg8187.txt -->
+    <!-- Find Byron på https://en.wikisource.org/wiki/Author:George_Gordon_Byron/Index_of_First_Lines -->
     <source facsimile="115408046475" facsimile-pages-num="238" facsimile-pages-offset="30">Christian Preetzmann: <i>Hundrede Digte</i>, Chr. Steen &amp; Søns Forlag, Kbh., 2. opl., 1867.</source>
 </workhead>
 <workbody>
@@ -512,6 +513,7 @@ Dog endnu hvert Blad har beholdt en Smag
     <firstline>Ei Verden giver os igjen den Glæde, den har spildt</firstline>
     <source pages="19-20"/>
     <!-- TODO: Find originalen (Byron) -->
+    <!-- https://en.wikisource.org/wiki/The_Works_of_Lord_Byron_(ed._Coleridge,_Prothero)/Poetry/Volume_3/Stanzas_for_Music._%22There%27s_not_a_joy_the_world_can_give_like_that_it_takes_away%22 -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1009,8 +1011,10 @@ En Sommerfugl leve jeg gad som en Sværmer,
     <indextitle>O, var jeg end en sorgløs Dreng</indextitle>
     <linktitle>O, var jeg end en sorgløs Dreng</linktitle>
     <firstline>O! var jeg end en sorgløs Dreng</firstline>
+    <notes>
+        <note>Gendigtning af George Gordon Byron: <xref type="translation" poem="byron2019090802"/>.</note>
+    </notes>
     <source pages="37-39"/>
-    <!-- TODO: Find originalen (Byron) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1610,8 +1614,10 @@ Let paa din Vei kun skal falde den Skygge,
     <indextitle>Min Sjæl er mørk</indextitle>
     <linktitle>Min Sjæl er mørk</linktitle>
     <firstline>Min Sjæl er mørk - nu, Sanger!</firstline>
+    <notes>
+        <note>Gendigtning af George Gordon Byron: <xref type="translation" poem="byron1999041109"/>.</note>
+    </notes>
     <source pages="58"/>
-    <!-- TODO: Find originalen (Byron) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2216,7 +2222,7 @@ Og Havets Bryst sig sagte bæver,
 
 Det er som Oceanets Strømme
   Sig lulled ind i dette Net,
-Som smelted Bolgen ben i Drømme,
+Som smelted Bølgen ben i Drømme,
   Og Vinden boldt sit Aandedræt.
 
 Saa er den Glands, din Skjønhed dølg
@@ -3291,7 +3297,9 @@ Hvad det er for en herlig Ting,
     <linktitle>Da jeg sværmed i Høilandet</linktitle>
     <firstline>Da jeg sværmed i Høilandets Egne paa Heden</firstline>
     <source pages="119-121"/>
-    <!-- TODO: Find originalen (Byron) -->
+    <notes>
+        <note>Gendigtning af George Gordon Byron: <xref type="translation" poem="byron2019090801"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3445,7 +3453,9 @@ Det trænger ei til Dagens Lys,
     <linktitle>Ved Afskeden</linktitle>
     <firstline>Det Afskedskys, mig gav din Mund</firstline>
     <source pages="125-126"/>
-    <!-- TODO: Find originalen (Byron) -->
+    <notes>
+        <note>Gendigtning af George Gordon Byron: <xref type="translation" poem="byron2019090803"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
