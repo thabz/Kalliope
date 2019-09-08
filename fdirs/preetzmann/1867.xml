@@ -11,7 +11,7 @@
     <pictures>
         <picture src="1867-p1.jpg">Titelbladet til <i>Hundrede Digte</i> (1867) lyder ,,Hundrede Digte / ved / Caralis. // Andet Oplag / Kjöbenhavn. / Chr. Steen &amp; Søns Forlag. / Thieles Bogtrykkeri. / 1867.''.</picture>
     </pictures>
-    <!-- TODO: Find Thomas Moore på http://www.gutenberg.org/cache/epub/8187/pg8187.txt -->
+    <!-- Find Thomas Moore på http://www.gutenberg.org/cache/epub/8187/pg8187.txt -->
     <source facsimile="115408046475" facsimile-pages-num="238" facsimile-pages-offset="30">Christian Preetzmann: <i>Hundrede Digte</i>, Chr. Steen &amp; Søns Forlag, Kbh., 2. opl., 1867.</source>
 </workhead>
 <workbody>
@@ -432,7 +432,9 @@ Den Knægt alt staaer og venter,
     <linktitle>Hvergang dit Blik jeg seer paany</linktitle>
     <firstline>Hvergang dit Blik jeg seer paany</firstline>
     <source pages="16"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2000082979"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -509,7 +511,7 @@ Dog endnu hvert Blad har beholdt en Smag
     <linktitle>Stanzer</linktitle>
     <firstline>Ei Verden giver os igjen den Glæde, den har spildt</firstline>
     <source pages="19-20"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Byron) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -639,7 +641,7 @@ Som Engel ban saae til den grønne Jord -
     <linktitle>Serenade</linktitle>
     <firstline>See! Luften er stille</firstline>
     <source pages="24-25"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (J. J. Callanan) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -754,7 +756,7 @@ Og naar hjemløs jeg omtumles,
     <linktitle>Jeg erindrer, jeg erindrer</linktitle>
     <firstline>Jeg erindrer, jeg erindrer</firstline>
     <source pages="28-29"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Hood) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1004,7 +1006,7 @@ En Sommerfugl leve jeg gad som en Sværmer,
     <linktitle>O, var jeg end en sorgløs Dreng</linktitle>
     <firstline>O! var jeg end en sorgløs Dreng</firstline>
     <source pages="37-39"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Byron) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1083,7 +1085,7 @@ Og ile til mit Hjem!
     <linktitle>Sang</linktitle>
     <firstline>Ønsker Du at vide, naar</firstline>
     <source pages="40-41"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (W. C. Bryant) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1227,7 +1229,7 @@ Thi, ak! til Iis ham Blodet frøs -
     <linktitle>Om jeg elske vil Dig?</linktitle>
     <firstline>Om jeg elske vil Dig?</firstline>
     <source pages="45"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Moore)-->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1263,7 +1265,7 @@ Nei, i Døden kun!
     <linktitle>Vagtskuddet</linktitle>
     <firstline>O! husker Du den Solnedgang</firstline>
     <source pages="46"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Moore) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1297,7 +1299,7 @@ Med Graad fra Verdens Jammerdal
     <linktitle>Til Fanny</linktitle>
     <firstline>Hun er smuk, det er sandt, dog dit Hjerte bevar</firstline>
     <source pages="47"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Moore) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1327,7 +1329,7 @@ Ja, sødeste Fanny! det maa Du tilstaae,
     <linktitle>Soldatens Jordefærd</linktitle>
     <firstline>Ingen Tromme blev hørt, ei Basunernes Stød</firstline>
     <source pages="48-49"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Charles Wolfe) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1383,7 +1385,7 @@ Ingen Steen blev ham reist, ingen Gravskrift han fik
     <linktitle>Det var saa tyst</linktitle>
     <firstline>Det var saa tyst, fra Birk og Lind</firstline>
     <source pages="50"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (J. J. Callanan) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1417,7 +1419,7 @@ Da raabte jeg: ,,O, tal! fortæl
     <linktitle>O, Nanna! vil Du følge mig?</linktitle>
     <firstline>O, Nanna! vil Du følge mig</firstline>
     <source pages="51-52"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Percy) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1469,7 +1471,7 @@ Og glemme, Du var, ung og glad,
     <linktitle>Brug ei de Øine saa!</linktitle>
     <firstline>Brug ei de Øine saa! - jeg tør</firstline>
     <source pages="53"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Ben Jonson) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1557,7 +1559,7 @@ Med Blomster i sit Haar.
     <linktitle>Kjærligheds lette Sommersky</linktitle>
     <firstline>Sorger og Smerte skal flye, hvor vi bygge</firstline>
     <source pages="56-57"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Moore) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1599,7 +1601,7 @@ Let paa din Vei kun skal falde den Skygge,
     <linktitle>Min Sjæl er mørk</linktitle>
     <firstline>Min Sjæl er mørk - nu, Sanger!</firstline>
     <source pages="58"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Byron) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1749,7 +1751,7 @@ Men den milde Lyst fra en Tid, som forgik,
     <linktitle>En fugtig Bov, et Bølgeslag</linktitle>
     <firstline>En fugtig Bov, et Bølgeslag</firstline>
     <source pages="63-64"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Allan Cunningham) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2113,7 +2115,7 @@ For Krandsen vil jeg binde
     <linktitle>Den Landflygtige</linktitle>
     <firstline>Til Sommer vil Svalen</firstline>
     <source pages="77-78"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Hood) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2156,7 +2158,7 @@ I Himlen først mødes
     <linktitle>Hendes Slummer være sød</linktitle>
     <firstline>Hendes Slummer være sød</firstline>
     <source pages="79"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Barry Cornwall) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2191,7 +2193,7 @@ Op mod Evigheden!
     <linktitle>Serenade</linktitle>
     <firstline>Af Maanestraaler Natten væver</firstline>
     <source pages="80"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Byron) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2546,7 +2548,7 @@ Pas paa! den Haand, som djærvest slaaer,
     <linktitle>Sukkenes Bro</linktitle>
     <firstline>Atter en Stakkel har</firstline>
     <source pages="93-97"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Hood) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2733,7 +2735,7 @@ Men elsker hun som jeg, da vil
     <linktitle>Farvel</linktitle>
     <firstline>Farvel! Farvel! af Hjemmets Kyst</firstline>
     <source pages="100-103"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Byron) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3040,7 +3042,7 @@ I Knøse! tag, det raader jeg,
     <linktitle>Naar Aftnens Skjær sig sænker</linktitle>
     <firstline>Naar Aftnens Skjær sig sænker blidt</firstline>
     <source pages="111"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Moore) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3074,7 +3076,9 @@ Skal see den Graad, vi fælded her,
     <linktitle>Hun sang om Elskov</linktitle>
     <firstline>Hun sang om Elskov, Aftenrøde</firstline>
     <source pages="112-113"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore20000829107"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3269,7 +3273,7 @@ Hvad det er for en herlig Ting,
     <linktitle>Da jeg sværmed i Høilandet</linktitle>
     <firstline>Da jeg sværmed i Høilandets Egne paa Heden</firstline>
     <source pages="119-121"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Byron) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3339,7 +3343,7 @@ Ingen Arne jeg har, naar mig Træthed vil bøie -
     <linktitle>Tidt i den stille Nat</linktitle>
     <firstline>Tidt i den stille Nat</firstline>
     <source pages="122-123"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Moore) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3385,7 +3389,7 @@ Sig over mig nedsænker.
     <linktitle>Sang</linktitle>
     <firstline>Hvor Vandringsmanden styrer hen</firstline>
     <source pages="124"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Hood) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3419,7 +3423,7 @@ Det trænger ei til Dagens Lys,
     <linktitle>Ved Afskeden</linktitle>
     <firstline>Det Afskedskys, mig gav din Mund</firstline>
     <source pages="125-126"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Byron) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3487,7 +3491,9 @@ Skjøndt fjern, saa klar, skjøndt blank - dog, ak! saa kold.
     <linktitle>Hist over Bølge</linktitle>
     <firstline>Hist over Bølge</firstline>
     <source pages="128-129"/>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2000082961"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3533,7 +3539,7 @@ Men rundt om os hvælver sig Himlen, den høie.
     <linktitle>Stormvinden Havet reiser</linktitle>
     <firstline>Stormvinden Havet reiser</firstline>
     <source pages="130-131"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (John Gay) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3594,7 +3600,7 @@ Sit Hoved som en Lilie
     <linktitle>Jørgen</linktitle>
     <firstline>Den skjæbnesvangre Stund er nær</firstline>
     <source pages="132-133"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Campbell) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3660,7 +3666,7 @@ Imens Du smuldrer der til Støv,
     <linktitle>Vi skiltes i Taushed</linktitle>
     <firstline>Vi skiltes i Taushed, men sørgede saare</firstline>
     <source pages="134"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Ch. F. Hoffman) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3693,7 +3699,7 @@ Og Duggen, der bæver paa Blomsternes Vrimmel,
     <linktitle>Din Tro vil aldrig briste</linktitle>
     <firstline>For ungt er, siger man, vort Blod</firstline>
     <source pages="135-136"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Th. H. Bayley) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3943,7 +3949,7 @@ Men Sangen fandt hos en Ven jeg -
     <linktitle>Saa henrykt vi mødtes</linktitle>
     <firstline>Saa henrykt vi mødtes, vi skiltes saa kjærligt</firstline>
     <source pages="144"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Moore) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4215,7 +4221,7 @@ Kun paa dets klingende Ambolt kan
     <linktitle>Vee mig! Vee!</linktitle>
     <firstline>Ak! hvor sjeldent Held, at finde</firstline>
     <source pages="153"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Campbell) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4281,7 +4287,7 @@ Og sove sammen ved dens Fod.
     <linktitle>I et Album</linktitle>
     <firstline>Blandt kolde Graves Marmorstene</firstline>
     <source pages="155"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Byron) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4384,7 +4390,7 @@ Og slynger Blomsterne i Støvet!
     <linktitle>Soldatens Drøm</linktitle>
     <firstline>Det mørkned. - Til Hvile gav Hornet Signal</firstline>
     <source pages="159-160"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Thomas Campbell) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4582,7 +4588,7 @@ Før Amor, der nylig var søvnløs, den Strik!
     <linktitle>Amor og Døden</linktitle>
     <firstline>Klart lyste Maanen i sin fulde Glands</firstline>
     <source pages="166"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Alfred Tennyson) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4615,7 +4621,7 @@ Men jeg skal herske evig overalt.''
     <linktitle>Morgensang</linktitle>
     <firstline>O, kom! see paa Marken</firstline>
     <source pages="167-168"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Allan Cunningham) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4670,7 +4676,7 @@ Kom os bland da ved Solskin
     <linktitle>Sommerfuglen</linktitle>
     <firstline>Den Sommerfugl var en stolt Kavaleer</firstline>
     <source pages="169-170"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (?) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4761,7 +4767,7 @@ Hil! trefold hil Dig! mine Længslers Maal,
     <linktitle>Elskov er en Gaade</linktitle>
     <firstline>Sig Elskovs Flamme lægger</firstline>
     <source pages="173"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Harry Carey) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4786,7 +4792,7 @@ Men Modstand gjør den modig,
     <linktitle>En Kjærlighedssang</linktitle>
     <firstline>Ei Suk og Eder jeg forstaaer</firstline>
     <source pages="174-175"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Eliza Cook) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4838,7 +4844,7 @@ Min Tunge mangler søde Ord,
     <linktitle>Min Sang er Smertens Røst</linktitle>
     <firstline>Du troer vel, at mit Sind er let</firstline>
     <source pages="176-177"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Th. H. Bayley) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4969,7 +4975,7 @@ Os skjuler Solen, mens vi see
     <linktitle>Harpesneglen</linktitle>
     <firstline>Har Du hørt om en Snekke - i Tangen begravet</firstline>
     <source pages="181"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Bernard Barton) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
