@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="prentice" country="us" lang="en" type="poet">
+  <name>
+    <firstname>George D.</firstname>
+    <lastname>Prentice</lastname>
+    <fullname>George Dennison Prentice</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1802-12-18</date>
+      <place>Preston, Connecticut</place>
+    </born>
+    <dead>
+      <date>1870-01-22</date>
+      <place>Jefferson County, Kentucky</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

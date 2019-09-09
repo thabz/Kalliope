@@ -8,7 +8,7 @@
         <note>Teksten følger Christian Preetzmann: <i>Digte og Sange</i>, Chr. Steen &amp; Søns Forlag, Kbh., 2. opl., 1868.</note>
     </notes>
     <pictures>
-        <picture src="1867d-p1.jpg">Titelbladet til <i>Digte og Sange</i> (1868) lyder ,,Digte og Sange / ved / Caralis. // Andet Oplag / Kjöbenhavn. / Chr. Steen &amp; Søns Forlag. / Thieles Bogtrykkeri. / 1868.''.</picture>
+        <picture src="1867d-p1.jpg">Titelbladet til <i>Digte og Sange</i> (1868) lyder ,,Digte og Sange / ved / Caralis. // Andet Oplag / Kjöbenhavn. / Chr. Steen &amp; Søns Forlag. / Thieles Bogtrykkeri. / 1868.''</picture>
     </pictures>
     <!-- Thomas Moores samlede: http://www.gutenberg.org/cache/epub/8187/pg8187.txt -->
     <source facsimile="115408046490" facsimile-pages-num="238" facsimile-pages-offset="24">Christian Preetzmann: <i>Digte og Sange</i>, Chr. Steen &amp; Søns Forlag, Kbh., 2. opl., 1868.</source>
@@ -2274,8 +2274,10 @@ Du var sød vel i Elskovens Ild —
     <title>Faderglæder</title>
     <toctitle>Faderglæder (G. Massey)</toctitle>
     <firstline>Sig Sommernatten sænker over Jorden</firstline>
+    <notes>
+        <note>Gendigtning af Gerald Massey: <xref type="translation" poem="massey2019090901"/>.</note>
+    </notes>
     <source pages="85-87"/>
-    <!-- TODO: Find originalen (G. Massey) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2337,8 +2339,10 @@ Staaer kronet med en solbestraalet Byge!
     <title>Jeg mindes Dig</title>
     <toctitle>Jeg mindes Dig (Prentice)</toctitle>
     <firstline>Jeg mindes Dig, naar Morgnen springer</firstline>
+    <notes>
+        <note>Gendigtning af George D. Prentice: <xref type="translation" poem="prentice2019090901"/>.</note>
+    </notes>
     <source pages="88-89"/>
-    <!-- TODO: Find originalen (G. D. Prentice) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2360,7 +2364,7 @@ Og sidder blussende og bange,
 Og naar paa Dybet uden Bølger
   I Glands Halvmaanen hæver sig,
 Mens Gravens Mulm hver Stjerne dølger,
-  Jeg mindes Dig —- jeg mindes Dig!
+  Jeg mindes Dig - jeg mindes Dig!
 
 Jeg mindes Dig — med Ild i Øiet,
   Og Krøllerne, der boltre sig
@@ -2448,8 +2452,10 @@ Og bygger i Læ af den ludende Muur.
     <title>Vi har holdt trofast sammen</title>
     <toctitle>Vi har holdt trofast sammen (Mrs. Norton)</toctitle>
     <firstline>Vi har holdt trofast sammen</firstline>
+    <notes>
+        <note>Gendigtning af Caroline Norton: <xref type="translation" poem="norton2019090901"/>.</note>
+    </notes>
     <source pages="93-94"/>
-    <!-- TODO: Find originalen (Mrs. Norton) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
