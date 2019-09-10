@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="arbuthnot" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Arbuthnot</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1667</date>
+      <place>Kincardineshire, Skotland</place>
+      <note>Døbt 29-04-1667</note>
+    </born>
+    <dead>
+      <date>1735-02-27</date>
+      <place>London</place>
+    </dead>
+  </period>
+  
+</person>
