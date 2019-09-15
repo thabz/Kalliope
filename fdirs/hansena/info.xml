@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hansena" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Adolf</firstname>
+    <lastname>Hansen</lastname>
+    <fullname>Adolph Marius Hansen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1850-06-06</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1908-02-02</date>
+    </dead>
+  </period>
+  
+  <works>1884,1885</works>
+</person>
