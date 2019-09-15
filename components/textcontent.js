@@ -189,6 +189,13 @@ export default class TextContent extends React.Component<TextContentPropsType> {
             {this.handle_nodes(node.childNodes)}
           </center>
         );
+      case 'colored':
+        const color = node.getAttribute('color') || 'solid';
+        return (
+          <span key={this.keySeq++} style={{ color: color }}>
+            {this.handle_nodes(node.childNodes)}
+          </span>
+        );
       case 's':
       case 'small':
         return (
