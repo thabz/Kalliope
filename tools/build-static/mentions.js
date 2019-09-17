@@ -149,6 +149,9 @@ const build_mentions_json = collected => {
   };
 
   collected.poets.forEach((poet, poetId) => {
+    if (!poet.has_mentions) {
+      return;
+    }
     const biblioFilesAreModifed =
       isFileModified(`fdirs/${poet.id}/bibliography-primary.xml`) ||
       isFileModified(`fdirs/${poet.id}/bibliography-secondary.xml`);
