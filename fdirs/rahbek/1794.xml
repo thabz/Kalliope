@@ -5,21 +5,21 @@
     <title>Poetiske Forsøg</title>
     <year>1794</year>
     <notes>
-        <note>Tilegnelsen lyder ,,Sin mangeaarige / Ven, Opmuntrer og Veileder / Magdalus Cold / helliger / disse Sanges Camene / nærværende Forsøg. // Ihr kleines Lied wird nicht empor / Verwegen fliegen an des Donurers Wagen. / Es säuselt um der Freundschaft Ohr. / Gotters Gedichte.''</note>
+        <note>Samlingen bærer tilegnelsen ,,Sin mangeaarige / Ven, Opmuntrer og Veileder / Magdalus Cold / helliger / disse Sanges Camene / nærværende Forsøg. // Ihr kleines Lied wird nicht empor / Verwegen fliegen an des Donurers Wagen. / Es säuselt um der Freundschaft Ohr. / Gotters Gedichte.''</note>
         <note>Teksten følger Knud Lyne Rahbek: <i>Poetiske Forsøg</i>, Første Deel, J.F. Schultz, Kbh., 1794.</note>
         <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
     </notes>
     <pictures>
-        <picture src="1794-p1.jpg">Titelbladet til <i>Poetiske Forsøg</i> (1794) lyder ,,''.</picture>
+        <picture src="1794-p1.jpg">Titelbladet til <i>Poetiske Forsøg</i> (1794) lyder ,,Poetiske Førsøg. / Mariehöien. // Første Deel. / Kiøbenhavn, / forlagt af Hof- og Universitetsboghandler J. F. Schultz. / 1794.''</picture>
     </pictures>
-    <source facsimile="115408000060_color.pdf" facsimile-pages-num="234" facsimile-pages-offset="10">Knud Lyne Rahbek: <i>Poetiske Forsøg</i>, Første Deel, J.F. Schultz, Kbh., 1794.</source>
+    <source facsimile="115408000060_color.pdf" facsimile-pages-num="234" facsimile-pages-offset="14">Knud Lyne Rahbek: <i>Poetiske Forsøg</i>, Første Deel, J.F. Schultz, Kbh., 1794.</source>
 </workhead>
 <workbody>
 
 <prose id="rahbek2019091901">
 <head>
     <title>Forerindring</title>
-    <source pages="v-vi" facsimile-pages="10" />
+    <source pages="v-vi" facsimile-pages="9-10" />
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -144,10 +144,13 @@ Med Danmarks Held og Hæder!
 </body>
 </poem>
 
-<poem id="rahbek2019091904">
+<poem id="rahbek2001061310">
 <head>
     <title>Vennesang</title>
     <firstline>Barndoms Lyst, og Barndoms Smerte</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
     <source pages="9-11"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -952,6 +955,7 @@ Men evig skal jeg synge dig.
     <firstline>Den første Sang i Vennelag</firstline>
     <source pages="52-54"/>
     <!-- TODO: Tilføj original (Voß) -->
+    <keywords>voss</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1205,6 +1209,7 @@ Vi broderlige, nu hinanden give Hænder;
     <firstline>O hvor lykkelig er den</firstline>
     <source pages="66-68"/>
     <!-- TODO: Tilføj original (Voß) -->
+    <keywords>voss</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1678,6 +1683,9 @@ Er vi dog meget viisere.
 <head>
     <title>Drikkevise for et Mandfolkelag</title>
     <firstline>Skal den hedde viis, som det ei rører</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
     <source pages="93-94"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2490,10 +2498,13 @@ Skaal for hver, som leger med!
 </body>
 </poem>
 
-<poem id="rahbek2019091950">
+<poem id="rahbek2001062304">
 <head>
     <title>Balvise</title>
     <firstline>Naar heele sit Levnet man nøie beseer</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
     <source pages="137-138"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2528,11 +2539,14 @@ De Skiønnes, de Venners, de Dandsendes Skaal!
 </body>
 </poem>
 
-<poem id="rahbek2019091951">
+<poem id="rahbek2001061321">
 <head>
     <title>Drikkevise</title>
     <subtitle>1788</subtitle>
     <firstline>Sørge, hvo sørge vil!</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
     <source pages="139-141"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
