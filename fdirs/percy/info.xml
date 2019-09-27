@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="percy" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Thomas</firstname>
+    <lastname>Percy</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1729-04-13</date>
+      <place>Brignorth</place>
+    </born>
+    <dead>
+      <date>1811-09-30</date>
+      <place>Dromore</place>
+    </dead>
+  </period>
+  <works>1765,andre</works>
+</person>
