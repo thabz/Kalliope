@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="falk" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Johannes</firstname>
+    <lastname>Falk</lastname>
+    <fullname>Johannes Daniel Falk</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1768-10-28</date>
+      <place>Danzig</place>
+    </born>
+    <dead>
+      <date>1826-02-14</date>
+      <place>Weimar</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
