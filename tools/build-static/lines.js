@@ -4,6 +4,7 @@ const {
   writeJSON,
   loadXMLDoc,
   replaceDashes,
+  fileExists,
 } = require('../libs/helpers.js');
 const { primaryTextVariantId } = require('./variants.js');
 const { extractTitle } = require('./parsing.js');
@@ -16,6 +17,9 @@ const build_global_lines_json = collected => {
   collected.workids.forEach((workIds, poetId) => {
     workIds.forEach(workId => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
+      if (!fileExists(workFilename)) {
+          return
+      }
       if (!isFileModified(workFilename)) {
         return;
       } else {
@@ -146,6 +150,9 @@ const build_poet_lines_json = collected => {
     let collectedLines = [];
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!fileExists(filename)) {
+          return
+      }
       let doc = loadXMLDoc(filename);
       if (doc == null) {
         console.log("Couldn't load", filename);
