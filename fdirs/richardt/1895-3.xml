@@ -3,6 +3,12 @@
 <workhead>
     <title>Tredje Deel</title>
     <year>1895</year>
+    <notes>
+        <note>Teksten følger Christian Richardt: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, Kbh., 1895, 3. del.</note>
+    </notes>
+    <pictures>
+        <picture type="titlepage" src="1895-p3.jpg">Titelbladet til <i>Samlede Digte</i> (1895) lyder ,,Samlede Digte / af / Chr. Richardt. / Tredje Deel. / Kjøbenhavn. / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn) / Trykt hos J. Jørgensen &amp; Co (M. A. Hannover) / 1895.''</picture>
+    </pictures>
     <source facsimile="1895-3" facsimile-pages-num="274" facsimile-pages-offset="8">Christian Richardt: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, Kbh., 1895, 3. del.</source>
 </workhead>
 <workbody>
@@ -3992,7 +3998,7 @@ som vil med <i>bortvendt</i> Aasyn Fjenden fælde.
     <firstline>Den Wessel, som besværed Aftenposten</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="120-122"/>
-    <keywords>holberg,ewald</holberg>
+    <keywords>holberg,ewald</keywords>
     <notes>
         <note>Mottoet er Wessels <xref poem="wesselsmaaversc1"/>.</note>
     </notes>
@@ -8560,7 +8566,7 @@ og Længslerne dybest inde -
     <source pages="253-259"/>
 </head>
 <body>
-<nonum><center><i>Første Afdeling.</center></nonum>
+    <nonum><center><i>Første Afdeling.</i></center></nonum>
 
 De Klokker ringe med Højtidsklang
                 over Danevang,
@@ -8727,7 +8733,7 @@ Gudsfred over Kongehuset!
 
 ---
 
-<nonum><center><i>Anden Afdeling.</center></nonum>
+<nonum><center><i>Anden Afdeling.</i></center></nonum>
 
 Vort Land, som nu i de tusind Aar
         har mangen Vaar
