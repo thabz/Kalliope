@@ -152,6 +152,10 @@ export default class TextContent extends React.Component<TextContentPropsType> {
         return (
           <sup key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</sup>
         );
+      case 'sub':
+        return (
+          <sub key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</sub>
+        );
       case 'strike':
         return <strike>{this.handle_nodes(node.childNodes)}</strike>;
       case 'year':
