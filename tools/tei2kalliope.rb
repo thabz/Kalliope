@@ -50,30 +50,33 @@ def extractText(node)
     titles = []
     title = nil
     firstline = nil
+
     node.xpath("head").each_with_index { |node, i|
         titles.push(node.content)
     }
     if titles.empty?
         title = ''
     else 
-        title = titles[0].strip.gsub(/\.$/,'').gsub(/\n/,'')
+        title = titles[0].strip.gsub(/\n/,'')
     end
 
-    firstline_node = node.css("l")
-    if not firstline_node.nil? and not firstline_node.first.nil?
-        subtitle = firstline_node.first.content.gsub(/[,\.\s;:]*$/,'')
-    end
+    node.css("l").each { |noden|
+        if firstline.nil? or firstline.size == 0
+            firstline = noden.content.gsub(/[,\.\s;:]*$/,'')
+        end
+    }
 
     if title.match(/^\d+\.?$/)
-        title = "<num>#{title}</num>#{subtitle}"
+        title = "<num>#{title}</num>#{firstline}"
     end
+    title = title.gsub(/\.$/,'').strip
     
     poemid = "#{@poetid}#{@date}%02d" % [@poemnum]
     @poemnum += 1
     puts %Q|<poem id="#{poemid}">|
     puts %Q|<head>|
     puts "   <title>#{title}</title>"
-    puts "   <firstline>#{subtitle}</firstline>"
+    puts "   <firstline>#{firstline}</firstline>"
     puts %Q|</head>|
     puts %Q|<body>|
     extractPoemBody(node)
@@ -90,7 +93,7 @@ def extractSection(node)
     puts "<section>"
     puts "<head>"
     puts "   <title>#{titles[0]}</title>"
-    puts "<head>"
+    puts "</head>"
     puts "<content>"
     puts
     extractWorkBody(node);
