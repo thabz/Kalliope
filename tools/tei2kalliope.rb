@@ -3,6 +3,10 @@
 require 'nokogiri'
 require 'fileutils'
 
+# TODO: Lav <num> i titler ala "1. In der Ferne"
+# TODO: Fjern punktummer fra section titler
+# TODO: Fjern citationstegn fra titler og førstelinjer
+
 @poemnum = 1
 @poetid = nil
 @date = Time.now.strftime("%Y%m%d")
