@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hoffman" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Charles Fenno</firstname>
+    <lastname>Hoffman</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1806-02-07</date>
+      <place>New York City</place>
+    </born>
+    <dead>
+      <date>1884-06-07</date>
+      <place>Harrisburg, Pennsylvania</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

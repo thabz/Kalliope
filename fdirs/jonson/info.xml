@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="jonson" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Ben</firstname>
+    <lastname>Jonson</lastname>
+    <fullname>Benjamin Jonson</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1572-06-11, ca.</date>
+      <place>Westminster, London</place>
+    </born>
+    <dead>
+      <date>1637-08-16, ca.</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
