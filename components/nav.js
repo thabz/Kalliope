@@ -237,24 +237,22 @@ export default class Nav extends React.Component<NavProps> {
     const { lang, crumbs, rightSide } = this.props;
 
     let joinedLinks = [];
-    crumbs
-      .filter(x => x != null)
-      .map((crumb, i) => {
-        if (i !== 0) {
-          joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
-        }
-        let link: Node = null;
-        if (i !== crumbs.length - 1 && crumb.url != null) {
-          link = (
-            <Link prefetch route={crumb.url}>
-              <a>{crumb.title}</a>
-            </Link>
-          );
-        } else {
-          link = crumb.title;
-        }
-        joinedLinks.push(<div key={'link' + i}>{link}</div>);
-      });
+    crumbs.filter(x => x != null).map((crumb, i) => {
+      if (i !== 0) {
+        joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
+      }
+      let link: Node = null;
+      if (i !== crumbs.length - 1 && crumb.url != null) {
+        link = (
+          <Link prefetch route={crumb.url}>
+            <a>{crumb.title}</a>
+          </Link>
+        );
+      } else {
+        link = crumb.title;
+      }
+      joinedLinks.push(<div key={'link' + i}>{link}</div>);
+    });
 
     let rightSideStyle = null;
     if (rightSide != null) {
@@ -273,9 +271,6 @@ export default class Nav extends React.Component<NavProps> {
             font-size: 14px;
             height: 150px;
             -webkit-tap-highlight-color: ${CommonData.backgroundLinkColor};
-          }
-          :global(*:focus) {
-            outline: 2px solid ${CommonData.lightLinkColor};
           }
           :global(a) {
             color: ${CommonData.linkColor};
