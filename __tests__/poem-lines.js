@@ -29,7 +29,7 @@ const regexps = [
   { regexp: /\s\?\s*$/m, ignorelangs: ['fr'] }, // luft foran afsluttende spørgsmål (tilladt på fransk)
   { regexp: /\s;\s*$/m, ignorelangs: ['fr'] }, // luft foran afsluttende semikolon (tilladt på fransk)
   //{ regexp: /\s:\s*$/m, ignorelangs: ['fr'] }, // luft foran afsluttende kolon (tilladt på fransk og i versgentagelser :)
-  /lll/,
+  {regexp: /lll/, whitelist: [/Allliebe/]},
   /,;/,
   /,\./,
   {

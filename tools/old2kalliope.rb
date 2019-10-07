@@ -261,7 +261,7 @@ File.readlines(ARGV[0]).each do |line|
   if line =~ /<note>.*\] .*<\/note>/
     @found_corrections = true
   end
-  if line =~ /<note>\* .*<\/note>/
+  if line =~ /<note>\* .*<\/note>/ or line =~ /^NOTE:\*.*/
     @found_poet_notes = true
   end
 end
