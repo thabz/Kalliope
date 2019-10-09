@@ -237,22 +237,24 @@ export default class Nav extends React.Component<NavProps> {
     const { lang, crumbs, rightSide } = this.props;
 
     let joinedLinks = [];
-    crumbs.filter(x => x != null).map((crumb, i) => {
-      if (i !== 0) {
-        joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
-      }
-      let link: Node = null;
-      if (i !== crumbs.length - 1 && crumb.url != null) {
-        link = (
-          <Link prefetch route={crumb.url}>
-            <a>{crumb.title}</a>
-          </Link>
-        );
-      } else {
-        link = crumb.title;
-      }
-      joinedLinks.push(<div key={'link' + i}>{link}</div>);
-    });
+    crumbs
+      .filter(x => x != null)
+      .map((crumb, i) => {
+        if (i !== 0) {
+          joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
+        }
+        let link: Node = null;
+        if (i !== crumbs.length - 1 && crumb.url != null) {
+          link = (
+            <Link prefetch route={crumb.url}>
+              <a>{crumb.title}</a>
+            </Link>
+          );
+        } else {
+          link = crumb.title;
+        }
+        joinedLinks.push(<div key={'link' + i}>{link}</div>);
+      });
 
     let rightSideStyle = null;
     if (rightSide != null) {
@@ -288,7 +290,6 @@ export default class Nav extends React.Component<NavProps> {
             }
           }
           nav {
-            font-weight: lighter;
             display: flex;
           }
           nav > :global(div) {

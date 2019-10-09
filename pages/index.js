@@ -99,7 +99,6 @@ class TodaysEvents extends React.Component<TodaysEventsProps> {
           }
           :global(div.today-body) {
             line-height: 1.6;
-            font-weight: lighter;
           }
         `}</style>
       </div>
@@ -147,18 +146,18 @@ class News extends React.Component<NewsProps> {
               }
 
               :global(div.news-item h3) {
-                font-weight: lighter;
+                font-weight: 300;
                 font-size: 1.3em;
                 margin: 0 0 20px 0;
                 padding: 0;
               }
               div.news-body {
                 line-height: 1.6;
-                font-weight: lighter;
+                font-weight: 300;
               }
               div.news-date {
                 margin-top: 5px;
-                font-weight: lighter;
+                font-weight: 300;
                 font-size: 0.8em;
                 color: #757575;
               }
