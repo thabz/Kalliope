@@ -264,7 +264,6 @@ export default class extends React.Component<WorksProps> {
             <style jsx>{`
               :global(.nodata) {
                 padding: 30px 0;
-                font-weight: lighter;
               }
             `}</style>
           </div>

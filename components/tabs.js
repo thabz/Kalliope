@@ -248,18 +248,20 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
       </div>
     );
 
-    const itemsRendered = items.filter(item => !item.hide).map((item, i) => {
-      const className = item.id === selected ? 'tab selected' : 'tab';
-      return (
-        <div className={className} key={item.url}>
-          <Link route={item.url}>
-            <a>
-              <h2>{item.title}</h2>
-            </a>
-          </Link>
-        </div>
-      );
-    });
+    const itemsRendered = items
+      .filter(item => !item.hide)
+      .map((item, i) => {
+        const className = item.id === selected ? 'tab selected' : 'tab';
+        return (
+          <div className={className} key={item.url}>
+            <Link route={item.url}>
+              <a>
+                <h2>{item.title}</h2>
+              </a>
+            </Link>
+          </div>
+        );
+      });
 
     const leftSide = (
       <div className="leftside">
@@ -317,7 +319,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
             padding: 0;
             margin: 0;
             outline: 0;            
-            font-weight: lighter;
+            font-weight: 100;
             font-family: inherit;
             transition: font-size ${transitionDuration}, line-height: ${transitionDuration};
             caret-color: black;
@@ -338,7 +340,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
             padding: 0;
             line-height: 32px;
             font-size: 32px;
-            font-weight: lighter;
+            font-weight: 100;
             transition: font-size ${transitionDuration}, line-height: ${transitionDuration};
           }
           :global(.tabs) > :global(.tab.selected) {

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="schiebeler" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Daniel</firstname>
+    <lastname>Schiebeler</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1741-03-25</date>
+      <place>Hamburg</place>
+    </born>
+    <dead>
+      <date>1771-08-18</date>
+      <place>Hamburg</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

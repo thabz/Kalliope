@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="white" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Henry Kirke</firstname>
+    <lastname>White</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1785-03-21</date>
+      <place>Nottingham</place>
+    </born>
+    <dead>
+      <date>1806-10-19</date>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="downing" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Mary</firstname>
+    <lastname>Downing</lastname>
+    <pseudonym>Christabel</pseudonym>
+    <pseudonym>Myrrha</pseudonym>
+    <christened>Mary McCarthy</christened>
+  </name>
+  <period>
+    <born>
+      <date>1815 ca.</date>
+      <place>Kilfadda More, Irland</place>
+    </born>
+    <dead>
+      <date>1881</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

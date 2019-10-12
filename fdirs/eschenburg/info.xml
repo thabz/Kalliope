@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="eschenburg" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Johann Joachim</firstname>
+    <lastname>Eschenburg</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1743-12-07</date>
+      <place>Hamburg</place>
+    </born>
+    <dead>
+      <date>1820-02-29</date>
+      <place>Braunschweig</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

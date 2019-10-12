@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="willis" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Nathaniel Parker</firstname>
+    <lastname>Willis</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1806-01-20</date>
+      <place>Portland, Maine</place>
+    </born>
+    <dead>
+      <date>1867-01-20</date>
+      <place>Cornwall-on-Hudson, New York</place>
+    </dead>
+  </period>
+  <works>1829,1831,1843,1843p,1844,1868,andre</works>
+</person>
