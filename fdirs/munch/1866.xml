@@ -1,8 +1,31 @@
-T:Enoch Arden
-F:I lange Klippestrand er der en Kløft
-SIDE:3-63
-N:blankvers
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="1866" author="munch" status="complete" type="poetry">
+<workhead>
+    <title>Enoch Arden</title>
+    <year>1866</year>
+    <notes>
+        <note>Teksten følger Andreas Munch: <i>Enoch Arden</i>, Forlagsbureauet, Kbh., 1866</note>
+    </notes>
+    <pictures>
+        <picture src="1866-p1.jpg">Titelbladet til <i>Enoch Arden</i> (1866) lyder ,,Enoch Arden / Digt / af / Alfred Tennyson / fra det Engelske / ved / A. Munch. // Forlagsbureauet i Kjøbenhavn. / (O. H. Delbanco. G. E. C. Gad. Gyldendalske Boghandel. C. C. Lose.) / Thieles Bogtrykkeri. / 1866.''.</picture>
+    </pictures>
+    <source facsimile="11540804869D.pdf" facsimile-pages-num="74" facsimile-pages-offset="6">Andreas Munch: <i>Enoch Arden</i>, Forlagsbureauet, Kbh., 1866</source>
+</workhead>
+<workbody>
 
+<poem id="munch2019101201">
+<head>
+    <title>Enoch Arden</title>
+    <firstline>I lange Klippestrand er der en Kløft</firstline>
+    <notes>
+        <note>Gendigtning af Alfred Lord Tennyson: <xref type="translation" poem="tennyson2019101201"/>.</note>
+    </notes>
+    <source pages="3-63"/>
+    <keywords>blankvers</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 I lange Klippestrand er der en Kløft,
 Hvor Havets Skum paa gule Sandbund slaar
 Bag den en Klynge røde Tage om
@@ -12,7 +35,7 @@ Imod en taarnhøi Mølle stiger op,
 Og saa mod Himlen høit en graabrun Hede
 Med danske Kjæmpehøie, samt en Skov
 Af Hasselbuske, der med Grønt udfylder
-T nøgne Hede en skaalformet Hulning,
+I nøgne Hede en skaalformet Hulning,
 Som flittigen hver Høst hjemsøges af
 De unge Nøddesamlere fra Byen.
 
@@ -1110,3 +1133,8 @@ Han faldt tilbage, talte ikke meer.
 Saa foer den stærke Heltesjæl da hen.
 Og da man ham begrov, den lille By
 Ei havde seet meer pragtfuld Jordefærd.
+</body>
+</poem>
+
+</workbody>
+</kalliopework>
