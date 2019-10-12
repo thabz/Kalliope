@@ -106,14 +106,14 @@ export default class extends React.Component<TocProps> {
               margin-left: 0;
             }
             :global(.toc) :global(h3.level-1) {
-              font-weight: lighter;
+              font-weight: 300;
               font-size: 18px;
               padding: 0;
               margin: 0;
               margin-top: 10px;
             }
             :global(.toc) :global(h3.level-2) {
-              font-weight: lighter;
+              font-weight: 300;
               font-size: 16px;
               padding: 0;
               margin: 0;
@@ -137,7 +137,6 @@ export default class extends React.Component<TocProps> {
             }
             :global(.nodata) {
               padding: 30px 0;
-              font-weight: lighter;
             }
           `}</style>
         </div>

@@ -109,7 +109,7 @@ export default class extends React.Component<MentionsProps> {
             {g.items}
             <style jsx>{`
               h3 {
-                font-weight: lighter;
+                font-weight: normal;
                 font-size: 18px;
                 border-bottom: 1px solid black;
               }

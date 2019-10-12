@@ -33,8 +33,21 @@ def extractWorkHead(xml)
 
 end
 
+def as_html(node)
+    return node.to_html.strip
+        .gsub(/<(\/?)hi[^>]*>/,'<\1i>')
+        .gsub(/<\/?l[^>]*>/,'')
+        .gsub(/<\/?p[^>]*>/,'')
+        .gsub(/<\/?stage[^>]*>/,'')
+        .gsub(/<\/?speaker[^>]*>/,'')
+        .gsub(/<\/?pb[^>]*>\n?/,'')
+        .gsub(/<\/?gap[^>]*>\n?/,'')
+        .gsub(/<\/?fw[^>]*>\n?/,'')
+
+end
+
 def extractPoemBody(poemnode)
-    items = poemnode.xpath("lg|l|p|sp|stage")
+    items = poemnode.xpath("lg|l|p|sp|stage|speaker")
     items.each_with_index { |node, i|
         if node.name == "lg"
             extractPoemBody(node)
@@ -42,11 +55,21 @@ def extractPoemBody(poemnode)
                 puts 
             end
         elsif node.name == "l" or node.name == "p"
-            content = node.content.strip
+            content = as_html(node)
             if content.size > 0
                 puts content
             end
+        elsif node.name == "sp"
+            extractPoemBody(node)
+        elsif node.name == "stage"
+            content = as_html(node).gsub("\n"," ")
+            puts "<center><nonum><small>#{content}</small></nonum></center>"
+        elsif node.name == "speaker"
+            content = as_html(node)
+            puts
+            puts "<center><nonum>#{content}</nonum></center>"
         end
+
     }
 end
 
