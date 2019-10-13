@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wilderh" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Richard Henry</firstname>
+    <lastname>Wilde</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1789-09-24</date>
+      <place>Dublin</place>
+    </born>
+    <dead>
+      <date>1847-09-10</date>
+      <place>New Orleans, Louisiana</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

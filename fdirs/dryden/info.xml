@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="dryden" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Dryden</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1631-08-09</date>
+      <place>Aldwinkle, Northamptonshire, England</place>
+    </born>
+    <dead>
+      <date>1700-05-01</date>
+      <place>London</place>
+    </dead>
+  </period>
+</person>

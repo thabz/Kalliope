@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="thorvaldsen" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>Bertel</firstname>
+    <lastname>Thorvaldsen</lastname>
+    <fullname>Albert Bertel Thorvaldsen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1770-11-19</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1844-03-24</date>
+      <place>København</place>
+    </dead>
+  </period>
+</person>

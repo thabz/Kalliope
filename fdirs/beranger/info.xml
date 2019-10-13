@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="beranger" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Pierre-Jean de</firstname>
+    <lastname>Béranger</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1780-08-19</date>
+      <place>Paris</place>
+    </born>
+    <dead>
+      <date>1857-07-16</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

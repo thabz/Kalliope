@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="reboul" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Jean</firstname>
+    <lastname>Reboul</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1796-01-23</date>
+      <place>Nîmes</place>
+    </born>
+    <dead>
+      <date>1864-05-28</date>
+      <place>Nîmes</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

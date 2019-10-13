@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rimbaud" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Arthur</firstname>
+    <lastname>Rimbaud</lastname>
+    <fullname>Jean-Nicolas-Arthur Rimbaud</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1854-10-20</date>
+      <place>Charlesville, Frankrig</place>
+    </born>
+    <dead>
+      <date>1891-11-10</date>
+      <place>Marseille</place>
+    </dead>
+  </period>
+  <works>1873</works>
+</person>

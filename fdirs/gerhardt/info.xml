@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="gerhardt" country="de" lang="de" type="poet"> 
+  <name>
+    <firstname>Paul</firstname>
+    <lastname>Gerhardt</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1607-03-12</date>
+      <place>Gräfenhainichen, Sachsen</place>
+    </born>
+    <dead>
+      <date>1676-05-27</date>
+      <place>Lübben, Spree</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

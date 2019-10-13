@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="kingo" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Thomas</firstname>
+    <lastname>Kingo</lastname>
+    <fullname>Thomas Hansen Kingo</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1634-12-15</date>
+      <place>Slangerup</place>
+    </born>
+    <dead>
+      <date>1703-10-14</date>
+      <place>Odense</place>
+    </dead>
+  </period>
+  <works>1667,1674,1681,1689,1699,andre</works>
+</person>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="alfieri" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Vittorio</firstname>
+    <lastname>Alfieri</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1749-01-16</date>
+      <place>Asti</place>
+    </born>
+    <dead>
+      <date>1803-10-08</date>
+      <place>Firenze</place>
+    </dead>
+  </period>
+</person>

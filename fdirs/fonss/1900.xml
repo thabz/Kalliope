@@ -475,9 +475,9 @@ som lukker Dig i Mindets Verden ind.
     <title>Et Steds i Napolimuseets Sale</title>
     <toctitle><num>II.</num>Et Steds i Napolimuseets Sale</toctitle>
     <firstline>Et Steds i Napolimuseets Sale</firstline>
-    <notes>
-        <note>https://en.wikipedia.org/wiki/Danaë<i>(Titian</i>series)#/media/File:Tizian_011.jpg</note>
-    </notes>
+    <pictures>
+        <picture src="fonss2018041909-p1.jpg">Titian: <i>Danaë</i>, 1544-46, olie på lærred, 120x172cm. Museo di Capodimonte, Napoli.</picture> <!-- https://en.wikipedia.org/wiki/Danaë_(Titian_series)#/media/File:Tizian_011.jpg -->
+    </pictures>
     <source pages="19"/>
     <keywords>sonnet</keywords>
     <quality>korrektur1,korrektur2,side,side</quality>
@@ -1669,6 +1669,9 @@ henfarne Aanders stolte Vingeslag.
     <title>Paa Guldgrund</title>
     <subtitle>(Efter Conr. Ferd. Meyer, Zürich)</subtitle>
     <firstline>Paa Galleriet jeg min Vandring endte</firstline>
+    <notes>
+        <note>Gendigtning af Conrad Ferdinand Meyer: <xref type="translation" poem="meyer2019082907"/>.</note>
+    </notes>
     <source pages="63-64"/>
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
@@ -1702,7 +1705,7 @@ Hellige Billeder paa gylden Grund!
     <firstline>Din Bue, rejst i svundne Tiders Gry</firstline>
     <notes>
         <note>* Teufelsbrücke</note>
-        <note>"Samme" er Conr. Ferd. Meyer, Zürich.</note>
+        <note>Gendigtning af Conrad Ferdinand Meyer: <xref type="translation" poem="meyer2019082908"/>.</note>
     </notes>
     <source pages="65-66"/>
     <quality>korrektur1,korrektur2,side,side</quality>
@@ -1745,7 +1748,7 @@ og svøbt Dig i sit kyske grønne Liv.
     <subtitle>(Efter Samme)</subtitle>
     <firstline>Den sidste haarde Stridens Dag forløb</firstline>
     <notes>
-        <note>"Samme" er Conr. Ferd. Meyer, Zürich.</note>
+        <note>Gendigtning af Conrad Ferdinand Meyer: <xref type="translation" poem="meyer2019082909"/>.</note>
     </notes>
     <source pages="67-68"/>
     <quality>korrektur1,korrektur2,side,side</quality>
@@ -1782,6 +1785,7 @@ og ubekendte Guder tog det op!«
     <subtitle>(Efter Gottlieb Ritter, Schweitz)</subtitle>
     <firstline>Ved Skrivebordet i min Stol</firstline>
     <source pages="69-70"/>
+    <!-- TODO: Find originalen. Gottlieb Ritter. -->
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -1814,6 +1818,7 @@ det er - mig selv.
     <subtitle>(Efter Adolf Frey, Schweitz)</subtitle>
     <firstline>Trommernes Buldren, Staalets Skratten</firstline>
     <source pages="71-72"/>
+    <!-- TODO: Find originalen. Adolf Frey. -->
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -1848,6 +1853,7 @@ de Dødes Blik i Natten bort.
     <firstline>Da nu den store Aand, der sagde: Bliv!</firstline>
     <source pages="73"/>
     <keywords>freiligrath</keywords>
+    <!-- TODO: Find originalen. Fritz Krausz. -->
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -1875,7 +1881,7 @@ bar fra en Fader han den første Søn.
 <head>
     <title>Over Revlen</title>
     <subtitle>(Alfr. Tennyson's sidste Digt.)</subtitle>
-    <firstline>Nær et Kildevæld boede en Løve</firstline>
+    <firstline>Solnedgang, Aftenstjerneglans</firstline>
     <notes>
         <note>* Revlen, the bar, hvor Floden udmunder i Havet. Ved Flodtid er her smult, under Ebben stærk Brænding.</note>
         <note>Gendigtning af Alfred Lord Tennyson: <xref type="translation" poem="tennyson2018080101"/>.</note>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="moth" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Fr.</firstname>
+    <lastname>Moth</lastname>
+    <fullname>Claus Frederik Moth</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1861-04-23</date>
+      <place>Grindsted</place>
+    </born>
+    <dead>
+      <date>1930-10-16</date>
+      <place inon="on">Frederiksberg</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

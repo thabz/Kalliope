@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="cornwall" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Barry</firstname>
+    <lastname>Cornwall</lastname>
+    <realname>Bryan Waller Procter</realname>
+  </name>
+  <period>
+    <born>
+      <date>1787-11-21</date>
+      <place>Leeds</place>
+    </born>
+    <dead>
+      <date>1874-10-05</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

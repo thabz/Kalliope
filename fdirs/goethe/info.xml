@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="goethe" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Johann Wolfgang von</firstname>
+    <lastname>Goethe</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1749-08-28</date>
+      <place>Frankfurt am Main</place>
+    </born>
+    <dead>
+      <date>1832-03-22</date>
+      <place>Weimar</place>
+    </dead>
+  </period>
+  <works>1795,1808,1819,1832,romi,andre</works>
+</person>

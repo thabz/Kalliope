@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="waage" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Erik</firstname>
+    <lastname>Waage</lastname>
+    <fullname>Erik Holm Waage</fullname>
+  </name>
+  <period>
+    <born>
+        <date>1869-11-18</date>
+        <place>København</place>
+    </born>
+    <dead>
+      <date>1899-12-11</date>
+      <place>Herlufmagle</place>
+    </dead>
+  </period>
+  <works>1897,1899,1899e,1901</works>
+</person>

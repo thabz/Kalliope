@@ -21,7 +21,7 @@ export default class Heading extends React.Component<HeadingProps> {
             padding-top: 20px;
             line-height: 48px;
             font-size: 48px;
-            font-weight: lighter;
+            font-weight: 100;
             transition: font-size 0.2s;
           }
           .heading :global(h1):global(.lighter) {

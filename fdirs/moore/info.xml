@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="moore" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Thomas</firstname>
+    <lastname>Moore</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1779-05-28</date>
+      <place>Dublin</place>
+    </born>
+    <dead>
+      <date>1852-02-25</date>
+      <place>Wiltshire, England</place>
+    </dead>
+  </period>
+  <works>1801,1801t,1806,1808,1813,1818,1834,1835,andre</works>
+</person>

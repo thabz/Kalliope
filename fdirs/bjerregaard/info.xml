@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bjerregaard" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Henrik Anker</firstname>
+    <lastname>Bjerregaard</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1792-01-01</date>
+      <place>Ringsaker</place>
+    </born>
+    <dead>
+      <date>1842-04-07</date>
+      <place>Christiania (nu Oslo)</place>
+    </dead>
+  </period>
+  <works>1824,1829,andre</works>
+</person>

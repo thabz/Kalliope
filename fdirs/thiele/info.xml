@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="thiele" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Just Mathias</firstname>
+    <lastname>Thiele</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1795-12-13</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1874-11-09</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1848</works>
+</person>

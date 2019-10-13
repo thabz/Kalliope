@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="manzoni" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Alessandro</firstname>
+    <lastname>Manzoni</lastname>
+    <fullname>Alessandro Francesco Tommaso Antonio Manzoni</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1785-03-07</date>
+      <place>Milano</place>
+    </born>
+    <dead>
+      <date>1873-03-22</date>
+      <place>Milano</place>
+    </dead>
+  </period>
+  <works>1822</works>
+</person>

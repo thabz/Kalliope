@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="morgenstern" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Christian</firstname>
+    <lastname>Morgenstern</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1871-05-06</date>
+      <place>München</place>
+    </born>
+    <dead>
+      <date>1914-03-31</date>
+      <place>Meran</place>
+    </dead>
+  </period>
+  <works>1895,1898,1900,1905,1906,1910,1910a,1911,1914,1916,1920,1918,1919,1928</works>
+</person>

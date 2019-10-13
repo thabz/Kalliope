@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="berni" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Francesco</firstname>
+    <lastname>Berni</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1497</date>
+      <place>Lamporecchio, Bibbiena</place>
+    </born>
+    <dead>
+      <date>1536-05-26</date>
+      <place>Firenze</place>
+    </dead>
+  </period>
+</person>

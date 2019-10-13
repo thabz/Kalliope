@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="petrarca" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Francesco</firstname>
+    <lastname>Petrarca</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1304-07-20</date>
+      <place>Arezzo</place>
+    </born>
+    <dead>
+      <date>1374-07-19</date>
+      <place>Arquà</place>
+    </dead>
+  </period>
+  <works>1360</works>
+</person>

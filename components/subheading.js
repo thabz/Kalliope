@@ -16,7 +16,7 @@ export default class SubHeading extends React.Component<*> {
             margin: 0 0 50px 0;
             line-height: 1.5;
             font-size: 28px;
-            font-weight: lighter;
+            font-weight: 100;
           }
         `}</style>
       </div>

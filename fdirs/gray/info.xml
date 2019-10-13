@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="gray" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Thomas</firstname>
+    <lastname>Gray</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1716-12-26</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1771-07-30</date>
+      <place>Cambridge, Cambridgeshire, England</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

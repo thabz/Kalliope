@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="percival" country="us" lang="en" type="poet">
+  <name>
+    <firstname>James Gates</firstname>
+    <lastname>Percival</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1795-09-15</date>
+      <place>Berlin, Connecticut</place>
+    </born>
+    <dead>
+      <date>1856-05-02</date>
+      <place>Hazel Green, Wisconsin</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

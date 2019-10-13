@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="moltesen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Erik</firstname>
+    <lastname>Moltesen</lastname>
+    <fullname>Erik Arvid Moltesen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1899-05-31</date>
+      <place>Askov</place>
+    </born>
+    <dead>
+      <date>1926-08-19</date>
+    </dead>
+  </period>
+  
+  <works>1931</works>
+</person>

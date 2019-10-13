@@ -152,6 +152,10 @@ export default class TextContent extends React.Component<TextContentPropsType> {
         return (
           <sup key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</sup>
         );
+      case 'sub':
+        return (
+          <sub key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</sub>
+        );
       case 'strike':
         return <strike>{this.handle_nodes(node.childNodes)}</strike>;
       case 'year':
@@ -188,6 +192,13 @@ export default class TextContent extends React.Component<TextContentPropsType> {
             style={{ display: 'inline-block', width: '100%' }}>
             {this.handle_nodes(node.childNodes)}
           </center>
+        );
+      case 'colored':
+        const color = node.getAttribute('color') || 'solid';
+        return (
+          <span key={this.keySeq++} style={{ color: color }}>
+            {this.handle_nodes(node.childNodes)}
+          </span>
         );
       case 's':
       case 'small':
@@ -508,6 +519,7 @@ export default class TextContent extends React.Component<TextContentPropsType> {
           :global(.poem-hr) {
             line-height: 4px !important;
             padding-bottom: 3px;
+            margin-left: 0 !important;
           }
           :global(.last-highlighted-line) {
             border-bottom: 1px solid rgb(238, 232, 213);
