@@ -18,7 +18,7 @@
 
 <section>
 <head>
-    <title>A. Rimfri Kunstdigtning</title>
+    <title>Rimfri Kunstdigtning</title>
 </head>
 <content>
 
@@ -330,8 +330,10 @@ Min Tanke taler nu til en Forklaret!
 <head>
     <title>Lykken</title>
     <firstline>Salig er den, der, før han var født, blev Gudernes Yndling</firstline>
+    <notes>
+        <note>Gendigtning af Schillers <xref type="translation" poem="schiller2019101402"/>.</note>
+    </notes>
     <source pages="19-24"/>
-    <!-- TODO: Find originalen (Schiller) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -380,7 +382,7 @@ Det er hans herligste Roes, at han var Gudernes Ven,
 Saa at de kun for at skjænke den Udkaarne Ry over Alle
 Styrted til Tartarus ned Grækenlands ædleste Slægt!
 O, bliv ej Skjønheden gram, naar den uden Fortjeneste pranger,
-Ligesom Lillien er ly s, kun fordi Venus det vil!
+Ligesom Lillien er lys, kun fordi Venus det vil!
 Se paa dens Lykke, til selv Du er glad og lykkelig med den,
 Det, som for Intet blev skjønt, fryder for Intet Dig selv!
 Hist paa det larmende Torv kan Themis Vægtskaalen føre,
@@ -567,7 +569,7 @@ Paa Bjergets Tind at staa som Brudelampe.
 
 <section>
 <head>
-    <title>B. Folkesange</title>
+    <title>Folkesange</title>
 </head>
 <content>
 
@@ -1238,7 +1240,7 @@ Og hav Du aldrig Taare paa Kind,
 
 <section>
 <head>
-    <title>C. Sonnetter</title>
+    <title>Sonnetter</title>
 </head>
 <content>
 
@@ -1482,6 +1484,9 @@ At synge, som den vilde, til din Ære!
 <head>
     <title><num>VIII.</num>En Svane flyver under Himlens Hvælv</title>
     <firstline>En Svane flyver under Himlens Hvælv</firstline>
+    <notes>
+        <note>En særdeles fri gendigtning af Michael Draytons <xref type="translation" poem="drayton2002020356"/>.</note>
+    </notes>
     <source pages="77"/>
     <keywords>sonnet</keywords>
     <quality>korrektur1,kilde,side</quality>
@@ -1513,6 +1518,9 @@ Naar Sol og alle Stjerner er brændt ud!
 <head>
     <title><num>IX.</num>Du klare Strøm, hvor hun, min Helgeninde</title>
     <firstline>Du klare Strøm, hvor hun, min Helgeninde</firstline>
+    <notes>
+        <note>Fri gendigtning af Michael Draytons <xref type="translation" poem="drayton2002020353"/>.</note>
+    </notes>
     <source pages="78"/>
     <keywords>sonnet</keywords>
     <quality>korrektur1,kilde,side</quality>
