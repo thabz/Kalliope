@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="barton" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Bernard</firstname>
+    <lastname>Barton</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1784-01-31</date>
+      <place>Carlisle</place>
+    </born>
+    <dead>
+      <date>1849-02-19</date>
+      <place>Woodbridge</place>
+    </dead>
+  </period>
+  <works>1818,1822,1824,1845,andre</works>
+</person>

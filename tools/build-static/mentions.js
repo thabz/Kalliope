@@ -8,6 +8,7 @@ const {
   writeJSON,
   loadXMLDoc,
   htmlToXml,
+  fileExists,
 } = require('../libs/helpers.js');
 const { safeGetText } = require('./xml.js');
 const { poetName, workLinkName } = require('./formatting.js');
@@ -61,6 +62,9 @@ const build_person_or_keyword_refs = collected => {
   collected.workids.forEach((workIds, poetId) => {
     workIds.forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!fileExists(filename)) {
+        return;
+      }
       if (!force_reload && !isFileModified(filename)) {
         return;
       } else {
@@ -134,12 +138,11 @@ const build_mentions_json = collected => {
         '/' +
         meta.workId}`;
     }
-    const workNameFormattet = workLinkName(work);
+    const workNameFormattet =
+      work.id === 'andre' ? '' : `- ${workLinkName(work)}`;
     return [
       [
-        `${poet}: <a poem="${poemId}">»${
-          meta.title
-        }«</a> – ${workNameFormattet}`,
+        `${poet}: <a poem="${poemId}">»${meta.title}«</a>${workNameFormattet}`,
         { html: true },
       ],
     ];

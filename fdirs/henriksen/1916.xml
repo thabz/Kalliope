@@ -33,6 +33,9 @@
     <indextitle>Skibet</indextitle>
     <linktitle>Skibet</linktitle>
     <firstline>Hint Skib, der glider bort for Morgnens Bris</firstline>
+    <notes>
+        <note>Gendigtning af William Wordsworth: <xref type="translation" poem="wordsworth2019090901"/>.</note>
+    </notes>
     <source pages="9"/>
     <keywords>sonnet</keywords>
     <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -64,6 +67,9 @@ O, Skib, hvad Lykke mon os Skæbnen gav!
     <indextitle>Liljerne</indextitle>
     <linktitle>Liljerne</linktitle>
     <firstline>Jeg vandrer ensom lig en Sky</firstline>
+    <notes>
+        <note>Gendigtning af William Wordsworth: <xref type="translation" poem="wordsworth2001062406"/>.</note>
+    </notes>
     <source pages="10-11"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -111,6 +117,9 @@ og danser som hint Liljeflor.
 <head>
     <title>Min Barndoms Hjem</title>
     <firstline>Her bygged Spurv i hegnets Pil</firstline>
+    <notes>
+        <note>Gendigtning af John Clare: <xref type="translation" poem="clare2019100401"/>.</note>
+    </notes>
     <source pages="12-13"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -153,12 +162,13 @@ men aldrig blomstred de som da:
 </head>
 <content>
 
-<poem id="henriksen2019072404">
+<poem id="henriksen2019072404" variant="henriksen2019072226">
 <head>
     <title>O, Frihed -</title>
     <firstline>Jeg drømte om Frihed en Drøm</firstline>
     <source pages="14-15"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
+    <!-- TODO: Find originalen (Hemans) -->
 </head>
 <body>
 Jeg drømte om Frihed en Drøm,
@@ -176,7 +186,7 @@ jeg hørte hvor trodsigt den skreg
 og Vingernes susense Slag.
 Jeg drømte om ukendte Vande,
 hvor aldrig en Kølfure kom,
-om Urskove, dyde som Natten —
+om Urskove, dybe som Natten —
 o, Frihed, Dig drømte jeg om!
 
 Jeg drømte om Rovdyrets Hi,
@@ -306,6 +316,7 @@ Har du ikke et sidse Ord til Trøst
     <firstline>Min Lyst i Ny og Næde</firstline>
     <source pages="20-22"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
+    <!-- TODO: Find originalen (Swinburne) -->
 </head>
 <body>
 Min Lyst i Ny og Næde
@@ -639,7 +650,7 @@ i den prægtige Sommernat.
     <firstline>O elsk imens Du elske kan!</firstline>
     <source pages="37-39"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Freiligrath) -->
 </head>
 <body>
 O elsk imens Du elske kan!
@@ -703,13 +714,13 @@ alene mellem Grave staa!
 </head>
 <content>
 
-<poem id="henriksen2019072414">
+<poem id="henriksen2019072414" variant="henriksen2019072219">
 <head>
     <title>Elverdrøm</title>
     <firstline>O, vogt for Fare vel din Fod</firstline>
     <source pages="40-41"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Kletke) -->
 </head>
 <body>
 O, vogt for Fare vel din Fod,
@@ -806,7 +817,7 @@ fornemme Efterarets Løvfaldsfryd.
     <firstline>Der blæser en Sydstorm af værste Art</firstline>
     <source pages="44-45"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Schoenaich-Carolath) -->
 </head>
 <body>
 Der blæser en Sydstorm af værste Art,
@@ -846,7 +857,7 @@ Vi hilser Dig, Gudestrand!
     <firstline>Du smalle Ring, Du gyldne Ring</firstline>
     <source pages="46-47"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Vierordt) -->
 </head>
 <body>
 Du smalle Ring, Du gyldne Ring,
@@ -896,7 +907,7 @@ det helligt-rene Troskabspant.
     <firstline>Og gaarr Du i modløs Tøven</firstline>
     <source pages="48-50"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find originalen (Lienhard) -->
 </head>
 <body>
 Og gaar Du i modløs Tøven
@@ -1177,7 +1188,8 @@ der drog ham med Toner og Sus.
     <subtitle>Ynglingen til Jomfruen:</subtitle>
     <firstline>Det var i Jordens sidste Vaar</firstline>
     <source pages="61-63"/>
-    <!-- TODO: Find originalen. http://www.karlfeldt.org/bibliotek/diktarkivet -->
+    <!-- TODO: Find originalen (Karlfeldt). -->
+    <!-- http://www.karlfeldt.org/bibliotek/diktarkivet -->
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

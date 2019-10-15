@@ -5,6 +5,7 @@ workid = 'andre'
 
 if ARGV.length == 0
     puts "USAGE: ./tools/add-poem.rb poet-id [work-id]"
+    exit
 elsif ARGV.length == 1
     poetid = ARGV[0]
 else
@@ -46,7 +47,7 @@ date = Time.now.strftime("%Y%m%d")
 num = 1
 done = false
 while (!done)
-    poemId = "#{poetid}#{date}#{num}"
+    poemId = "#{poetid}#{date}%02d" % [num]
     if not contents.include? poemId
         done = true
     else 

@@ -47,8 +47,10 @@ Vi fro ei savne moderlige Zone.
     <subtitle>Originalen til Bürgers Romance die Entführung</subtitle>
     <toctitle>Ridder Helge, efter det Engelske</toctitle>
     <firstline>Der staaer en Borg paa Höien hist</firstline>
+    <notes>
+        <note>Se Thomas Percys <xref type="translation" poem="percy2019090802"/> og Bürgers <xref poem="burger2019090801"/>.</note>
+    </notes>
     <source pages="9-20"/>
-    <!-- TODO: Tilføj originalen, https://de.wikisource.org/wiki/Die_Entf%C3%BChrung_(B%C3%BCrger) Er Bürgers romance en gendigtning af Percy Bysshe Shelley? -->
     <keywords>romance</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -407,7 +409,7 @@ At alt i Haab jeg stolt der tager Sted!
     <toctitle>Le Brun: Til Oversættere</toctitle>
     <firstline>Sög ei at give Ord for Ord</firstline>
     <source pages="24"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find originalen (Le Brun) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -467,7 +469,7 @@ Blid Fred neddaler over mig,
     <toctitle>Bonaventura (Schelling): Præsten i Drotnings sidste Ord</toctitle>
     <firstline>De matte Lemmer sig mod Jorden böie</firstline>
     <source pages="26-36"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find originalen (Schelling). -->
     <keywords>romance</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -690,7 +692,7 @@ Og du i Fredens Hytte ham optager!
     <toctitle>Classon Horn: Til Venskab</toctitle>
     <firstline>Hel'ge Olie, som heler</firstline>
     <source pages="36-37"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find originale (Classon Horn) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -798,7 +800,7 @@ Der paa hans Vei giöd Glæde ned.
    <firstline>Naar Klaffertungerne dig stikke</firstline>
    <quality>korrektur1,kilde,side</quality>
    <source pages="40"/>
-   <!-- TODO: Find Bürgers original -->
+   <!-- TODO: Find original (Bürger) -->
 </head>
 <body>
 Naar Klaffertungerne dig stikke,
@@ -815,7 +817,7 @@ De Gedehamser söge paa.
     <subtitle>Sang efter Werner</subtitle>
     <firstline>Jeg kommer hid fra Bierget af</firstline>
     <source pages="40-41"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Werner) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -853,7 +855,7 @@ Kun hvor du er ei, findes Held.
     <subtitle>Efter Imbert</subtitle>
     <firstline>Hvorfor klage, hvorfor græde</firstline>
     <source pages="42"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find original (Imbert) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1085,7 +1087,7 @@ For intet, og indtil hans salige Död.''
     <subtitle>Romance efter Franzên</subtitle>
     <firstline>De Dage, da Troldene end var istand</firstline>
     <source pages="53-59"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Franzén) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1248,7 +1250,7 @@ Ad Sagnet, som Klokkerne mindes.
     <subtitle>Fabel efter Nivernois</subtitle>
     <firstline>En Konge havde sig engang en Nar</firstline>
     <source pages="60-61"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find originalen (Nivernois) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1444,7 +1446,7 @@ Farvel, elskte Harpe! min eneste Skat!
     <subtitle>Efter Florian</subtitle>
     <firstline>Forgiæves Fængslets Muur gientager</firstline>
     <source pages="69-70"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Florian) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1484,7 +1486,7 @@ Din sidste Time nærmer sig.
     <subtitle>Efter Franzén og Della Casa</subtitle>
     <firstline>O Slummer! du den stille sorrigblide</firstline>
     <source pages="70-71"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Franzén) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1622,7 +1624,7 @@ Ham vil den aldrig være glædelig.
     <subtitle>Efter Jerningham</subtitle>
     <firstline>Til Templet söger sorgfuld Hob i Bön</firstline>
     <source pages="76-82"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Jerningham) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1775,7 +1777,7 @@ Med hielpsom Haand at bringe dem tilbage.
     <subtitle>Efter Clason Horn</subtitle>
     <firstline>Den Ild, o Gud! der om dig luer</firstline>
     <source pages="82-89"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Classon Horn) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1940,7 +1942,7 @@ Ja dette svage Hierte troer:
     <subtitle>Oratorium efter Mahlmann</subtitle>
     <firstline>Du har dine Stötter opbygget dig</firstline>
     <source pages="89-92"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Mahlman) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2096,7 +2098,7 @@ Den Pillegrim at flyde.
     <subtitle>Efter Clason Horn</subtitle>
     <firstline>Uendelige Væsen! du</firstline>
     <source pages="95-97"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Clason Horn) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2237,7 +2239,7 @@ Falsk Siæl, skiör Kiæde, maallös Luth!
     <subtitle>Efter Franzên</subtitle>
     <firstline>Din Sol, Natur! gaaer op saa skiön</firstline>
     <source pages="100-102"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Franzén) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2549,7 +2551,7 @@ Og det er denne, som du har beholder.
     <subtitle>Fabel efter Fumars</subtitle>
     <firstline>Nedstegen Phæbus er i Thetis Favn</firstline>
     <source pages="110"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Fumars) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2574,7 +2576,7 @@ Höit Maanen vi, men aldrig Solen see.
         <note>* En Lövhytte i Toppen af en herlig Eeg i Kraagerup Hauge, hvis Eiers Kone, Fru Fr. Brun den yngre, Sangen er tilegnet.</note>
     </notes>
     <source pages="111-112"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find original (Frue Fr. Brun)-->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2621,7 +2623,7 @@ Et daarende Haab du ei elske mig op!
     <subtitle>Efter Steenhammars svenske Original</subtitle>
     <firstline>Storme vildt om Thorvalds Leie hviner</firstline>
     <source pages="113-121"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Stenhammer) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2824,7 +2826,7 @@ Ofte Thorvald blev begrædt af dem.
     <subtitle>Af Walter Scott, efter en gammel engelsk Sang</subtitle>
     <firstline>Min tunge Lod jeg klage maa</firstline>
     <source pages="122-124"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Scott)-->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2889,8 +2891,10 @@ Jeg lever, döer allene.
     <toctitle>Th. Campbell: Harpespilleren og hans Hund, Tro</toctitle>
     <subtitle>Efter Thomas Campbells engelske Original</subtitle>
     <firstline>Paa Bredden af Shannon, da Sally var min</firstline>
+    <notes>
+        <note>Gendigtning af Thomas Campbell: <xref type="translation" poem="campbell2019090803"/>.</note>
+    </notes>
     <source pages="125-126"/>
-    <!-- TODO: Tilføj originalen, https://books.google.dk/books?id<w>XMBgAAAAcAAJ&pg</w>PA227&lpg<w>PA227&dq</w>thomas+campbell+The+Irish+Harper+and+His+Dog&source<w>bl&ots</w>LUCRIS1RtC&sig<w>ACfU3U2fjFXyyBoso0TaKkeFdf21yAFBMA&hl</w>en&sa<w>X&ved</w>2ahUKEwiK9am9pNvgAhVKMewKHefPCfsQ6AEwDnoECAEQAQ#v<w>onepage&q</w>thomas%20campbell%20The%20Irish%20Harper%20and%20His%20Dog&f=false -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3038,8 +3042,10 @@ At ene ham jeg kunde fölge.
     <toctitle>Th. Campbell: Fædrehiemmets Ruiner</toctitle>
     <subtitle>Efter Th. Campbell</subtitle>
     <firstline>I tiende Skumrings den tankefuld Stund</firstline>
+    <notes>
+        <note>Gendigtning af Thomas Campbell: <xref type="translation" poem="campbell2019090804"/>.</note>
+    </notes>
     <source pages="131-132"/>
-    <!-- TODO: Find originalen. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3092,7 +3098,7 @@ Et Mindelses Suk skal afpresse min Favn.
     <subtitle>Efter Sidney Walker</subtitle>
     <firstline>Nei! min Maria! siig ei saa</firstline>
     <source pages="133-134"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Walker) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

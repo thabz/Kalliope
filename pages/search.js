@@ -226,10 +226,6 @@ export default class extends React.Component<SearchProps> {
                   }
                   .hightlights {
                     color: ${CommonData.lightTextColor};
-                    font-weight: lighter;
-                  }
-                  .poet-and-work {
-                    font-weight: lighter;
                   }
                 `}</style>
               </div>
