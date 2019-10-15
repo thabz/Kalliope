@@ -24,8 +24,8 @@ Forgjeves man byder mig nyt Rangleri
 Og viser mig Helten i Blik og i Pjalter:
 Forgjeves af Kunstnerens høie Ruiner
 De pene Kasteller man sindrigen kliner;
- Af det ældgamle Spil
- Ei daares jeg vil.
+  Af det ældgamle Spil
+  Ei daares jeg vil.
 Lad Dækket gaae ned, jeg er lige glad;
 Mit Aarhundredes Kunst kan jeg udenad.
 
@@ -1036,6 +1036,7 @@ Nu rulles af Bølgen hans snehvide Ben
    <notes>
       <note type="credits">Bidrag fra Svend Olav Andersen.</note>
    </notes>
+   <keywords>steffens</keywords>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -1161,6 +1162,7 @@ Kommer Fruen med Vin udi højen Loft
    <notes>
       <note type="credits">Bidrag fra Svend Olav Andersen.</note>
    </notes>
+   <keywords>rahbek</keywords>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -2025,9 +2027,7 @@ Med afskyelig Skrift.''
 
 <poem id="moellerpm2001082901">
 <head>
-   <title>En gammel Pedant</title>
-   <toctitle>1. En gammel Pedant</toctitle>
-   <indextitle>En gammel Pedant</indextitle>
+   <title><num>1.</num>En gammel Pedant</title>
    <firstline>Langs hen med Væggene paa Byens Gade</firstline>
    <notes>
       <note type="credits">Bidrag fra Svend Olav Andersen.</note>
@@ -2094,9 +2094,7 @@ I Gangen mellem dette lange Tog.
 
 <poem id="moellerpm2001082902">
 <head>
-   <title>En Tigger</title>
-   <toctitle>2. En Tigger</toctitle>
-   <indextitle>En Tigger</indextitle>
+   <title><num>2.</num>En Tigger</title>
    <firstline>For mig maa nu Skildvagten blive sort</firstline>
    <notes>
       <note type="credits">Bidrag fra Svend Olav Andersen.</note>
@@ -2164,9 +2162,7 @@ Enhver bør drive sin Næringsvej.
 
 <poem id="moellerpm2001082903">
 <head>
-   <title>En Moder med sit Barn, paa en Bænk</title>
-   <toctitle>3. En Moder med sit Barn, paa en Bænk</toctitle>
-   <indextitle>En Moder med sit Barn, paa en Bænk</indextitle>
+    <title><num>3.</num>En Moder med sit Barn, paa en Bænk</title>
    <firstline>Sov ind, mit søde Nusseben!</firstline>
    <notes>
       <note type="credits">Bidrag fra Svend Olav Andersen.</note>
@@ -2218,9 +2214,7 @@ Saa gaa vi hjem til Fader.
 
 <poem id="moellerpm2001082904">
 <head>
-   <title>En Rekonvalescent</title>
-   <toctitle>4. En Rekonvalescent</toctitle>
-   <indextitle>En Rekonvalescent</indextitle>
+   <title><num>4.</num>En Rekonvalescent</title>
    <firstline>Jeg tvende Somre laa paa Puden</firstline>
    <notes>
       <note type="credits">Bidrag fra Svend Olav Andersen.</note>
@@ -2282,9 +2276,7 @@ Hint Livets rige Kildedyb.
 
 <poem id="moellerpm2001082905">
 <head>
-   <title>Mads og Mikkel</title>
-   <toctitle>5. Mads og Mikkel</toctitle>
-   <indextitle>Mads og Mikkel</indextitle>
+   <title><num>5.</num>Mads og Mikkel</title>
    <firstline>Mads, jeg tror bestemt, du dratter</firstline>
    <notes>
       <note type="credits">Bidrag fra Svend Olav Andersen.</note>
@@ -2328,9 +2320,7 @@ Skal du faa dem alle syv.
 
 <poem id="moellerpm2001082906">
 <head>
-   <title>Hans og Trine</title>
-   <toctitle>6. Hans og Trine</toctitle>
-   <indextitle>Hans og Trine</indextitle>
+    <title><num>6.</num>Hans og Trine</title>
    <firstline>Skønne Sol for alle Sole!</firstline>
    <notes>
       <note type="credits">Bidrag fra Svend Olav Andersen.</note>
@@ -2433,7 +2423,7 @@ Stedse jeg forgæves retter
 Paa din megen Uforstand.
 Vist en Pind jeg for det sætter,
 Om du blive skal min Mand.
-Du har mange slemme Laster ,
+Du har mange slemme Laster,
 Ej det allermindste Pli;
 Dine Penge bort du kaster
 Til unyttigt Slikkeri;
@@ -2493,6 +2483,7 @@ Fordi jeg stedse henrykt sad hos Flanen
 Og læste skønne Bøger fra Stadthagen.
 </body>
 </poem>
+
 </content>
 </section>
 
@@ -2649,13 +2640,13 @@ Da skjønner man, vi har det bedst i Norden.
    <firstline>Deelt er vort Liv; Søvn har sin egen Verden</firstline>
    <subtitle>(Efter Lord Byron.)</subtitle>
    <notes>
-      <note>Gendigtning af Byrons <xref poem="byron2017090401"/>.</note>
+      <note>Gendigtning af Byrons <xref type="translation" poem="byron2017090401"/>.</note>
       <note>Teksten følger Poul M. Møllers <i>Efterladte Skrifter</i>, C.A. Reitzel, Kbh., 1855, bd. 1, pp. 85-93.</note>
    </notes>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<num>I.</num>
+I.
 Deelt er vort Liv; Søvn har sin egen Verden
 Et Grændseskjel for slet benævnte Ting,
 Tilvær og Død: Søvn har sin egen Verden,
@@ -2685,7 +2676,7 @@ Muligt i Søvne; — thi een Tanke blot,
 Een Slummertanke rummer Aar og Dag
 Og størkner længste Liv til et Minut.
 
-<num>II.</num>
+II.
 Jeg saae to Væsner udi Ungdoms Farve.
 De stode paa en Høi, en venlig Høi;
 Jævnt hæved sig dens grønne Ryg, den slutted
@@ -2735,7 +2726,7 @@ Nu stod hun høit paa Bjergets Tind,
 Og Blikket speided, om den Elsktes Ganger
 Holdt Skridt med hendes Længselsuk og fløi.
 
-<num>III.</num>
+III.
 Brat kom Forvandling over Drømmens Aand.
 Det var et gammelt Huus og foran det,
 Ved Muren, stod en Hest med Skabberak.
@@ -2767,7 +2758,7 @@ Ud af den gamle Halles tunge Port,
 Steg paa sin Ganger og drog brat afsted;
 Ei meer betraadte han den mosgraae Tærskel.
 
-<num>IV.</num>
+IV.
 Brat kom Forvandling over Drømmens Aand.
 Til Mand var Svenden modnet. Vilden Ørk
 I brændende Jordstrøg kaared han til Hjem.
@@ -2790,7 +2781,7 @@ Og over dem sig telted Himlens Blaae,
 Saa skyfrit, klart og ubesmittet skjønt,
 At Gud alene var tilsyns i Himlen.
 
-<num>V.</num>
+V.
 Brat kom Forvandling over Drømmens Aand.
 Hans Sjæls Udkaarne var en Andens Viv,
 Ei elsket mere varmt. Fjerne i sit Hjem —
@@ -2810,7 +2801,7 @@ Og gav ham aldrig Grund, at troe sig elsket.
 Han var ei Deel af det, der hendes Sjæl
 Bespændte, som Gjenfærd fra forgangne Tid.
 
-<num>VI.</num>
+VI.
 Brat kom Forvandling over Drømmens Aand.
 Hjem Pillegrimmen kom; jeg saae ham staae
 Foran et Altar med en venlig Brud.
@@ -2835,7 +2826,7 @@ Og hun, der var hans Skjebne, kom igjen
 Og trængte sig imellem ham og Lyset.
 Hvad Ærind havde de paa slig en Tid?
 
-<num>VII.</num>
+VII.
 Brat kom Forvandling over Drømmens Aand.
 Hans Sjæls Udkaarne — o! hvor dybt forandret!
 Som ved en Sjælesygdom. Hendes Aand
@@ -2854,7 +2845,7 @@ Som klæder Phantasiens Blændværk af,
 Som bringer nær det splinternøgne Liv
 Og gjør den kolde Sandhed altfor sand.
 
-<num>VIII.</num>
+VIII.
 Brat kom Forvandling over Drømmens Aand.
 Vor Pillegrim var ene som tilforn;
 De Væsner, der omgave ham, forsvandt;
@@ -2874,7 +2865,7 @@ For ham laae Nattens Bog vidt slaget op,
 Og Røster, fjernt fra Dybet, sløred af
 Et Under og en Løndom. Saa det skee!
 
-<num>IX.</num>
+IX.
 Min Drøm var endt: den vexled ikke meer.
 Det var et sælsomt Syn, at Skjebnens Raad
     Med disse tvende Væsner skulde skildres
@@ -3754,6 +3745,7 @@ Og skænke dig et Smil til Fosterløn.
     <firstline>Vor Verden priser jeg tusindfold</firstline>
     <notes>
       <note>Teksten følger Poul Møller: <i>Skrifter i Udvalg</i>, Vilh. Andersen (red.), G.E.C. Gads Forlag, Kbh., 1930, bd. 1, pp. 76-77.</note>
+      <note>En variant, uden første strofe, findes under titlen »Freidigt Liv« i Poul M. Møller: <i>Efterladte Skrifter</i>, C. A. Reitzels Bo og Arvinger, Khb., 1855.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>

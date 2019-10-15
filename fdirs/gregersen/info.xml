@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="gregersen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Vilhelm</firstname>
+    <lastname>Gregersen</lastname>
+    <fullname>Andreas Peter Vilhelm Gregersen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1848-03-17</date>
+      <place>Flensborg</place>
+    </born>
+    <dead>
+      <date>1929-01-16</date>
+      <place>Gjerrild</place>
+    </dead>
+  </period>
+  <works>1875,1884,1895,1911,andre</works>
+</person>

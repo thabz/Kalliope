@@ -12,6 +12,7 @@ import type {
 } from '../pages/helpers/types.js';
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
+import CommonData from '../pages/helpers/commondata.js';
 
 // Fiks bindestreger mellem årstal, sidetal osv.
 const replaceHyphens = s => {
@@ -23,12 +24,11 @@ type TextContentPropsType = {
   contentLang: TextLang,
   lang: Lang,
   options?: TextContentOptions,
-  style?: ?Object,
+  style?: Object,
   className?: ?string,
   keyPrefix?: string, // Ved bladring hopper linjenumrene hvis alle digtes linjer har samme key.
 };
-export default class TextContent extends React.Component {
-  props: TextContentPropsType;
+export default class TextContent extends React.Component<TextContentPropsType> {
   static defaultProps = {
     keyPrefix: 'linje-',
   };
@@ -131,10 +131,12 @@ export default class TextContent extends React.Component {
   handle_node(node: any) {
     switch (node.nodeName) {
       case 'br':
-        return <br />;
+        return <br key={this.keySeq++} />;
       case '#text':
         return replaceHyphens(node.textContent);
       case '#comment':
+        return null;
+      case 'pb':
         return null;
       case 'i':
         return <i key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</i>;
@@ -150,6 +152,10 @@ export default class TextContent extends React.Component {
         return (
           <sup key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</sup>
         );
+      case 'sub':
+        return (
+          <sub key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</sub>
+        );
       case 'strike':
         return <strike>{this.handle_nodes(node.childNodes)}</strike>;
       case 'year':
@@ -158,6 +164,24 @@ export default class TextContent extends React.Component {
       case 'nonum':
       case 'resetnum':
         return this.handle_nodes(node.childNodes);
+      case 'asterism': {
+        const glyph = '\u2042';
+        return (
+          <center
+            key={this.keySeq++}
+            style={{ display: 'block', width: '100%' }}>
+            {glyph}
+          </center>
+        );
+      }
+      case 'block-center':
+        return (
+          <center
+            key={this.keySeq++}
+            style={{ display: 'block', width: '100%' }}>
+            {this.handle_nodes(node.childNodes)}
+          </center>
+        );
       case 'center':
         // <center> er et block element og for at undgå dobbelt
         // linjeskift efter (vi laver jo \n til <br/>) renderer
@@ -168,6 +192,13 @@ export default class TextContent extends React.Component {
             style={{ display: 'inline-block', width: '100%' }}>
             {this.handle_nodes(node.childNodes)}
           </center>
+        );
+      case 'colored':
+        const color = node.getAttribute('color') || 'solid';
+        return (
+          <span key={this.keySeq++} style={{ color: color }}>
+            {this.handle_nodes(node.childNodes)}
+          </span>
         );
       case 's':
       case 'small':
@@ -184,7 +215,9 @@ export default class TextContent extends React.Component {
         );
       case 'biblio':
         return (
-          <span key={this.keySeq++} style={{ color: '#888' }}>
+          <span
+            key={this.keySeq++}
+            style={{ color: CommonData.lightTextColor }}>
             [{this.handle_nodes(node.childNodes)}]
           </span>
         );
@@ -200,13 +233,13 @@ export default class TextContent extends React.Component {
             {this.handle_nodes(node.childNodes)}
           </span>
         );
-      case 'num':
+      case 'versenum': // Linjer med kun tal eller romertal.
         return (
           <span
             key={this.keySeq++}
             style={{
               display: 'inline',
-              color: '#888',
+              color: CommonData.lightTextColor,
               pageBreakAfter: 'avoid', // Not working.
             }}>
             {this.handle_nodes(node.childNodes)}
@@ -215,22 +248,43 @@ export default class TextContent extends React.Component {
       case 'w':
         // Render spatieret tekst som kursiv.
         return <i key={this.keySeq++}>{this.handle_nodes(node.childNodes)}</i>;
-//        return (
-//          <span key={this.keySeq++} style={{ letterSpacing: '0.1em' }}>
-//            {this.handle_nodes(node.childNodes)}
-//          </span>
-//        );
+      //        return (
+      //          <span key={this.keySeq++} style={{ letterSpacing: '0.1em' }}>
+      //            {this.handle_nodes(node.childNodes)}
+      //          </span>
+      //        );
       case 'metrik':
         return this.handle_metrik(node.textContent);
       case 'hr':
+        const double = node.getAttribute('class') || 'solid';
         const width = Math.min(node.getAttribute('width') * 10, 100);
+        const borderTop =
+          double === 'double' ? '3px double black' : '1px solid black';
         return (
           <hr
             key={this.keySeq++}
-            size="1"
-            color="black"
-            style={{ color: 'black', width: `${width}%` }}
+            style={{
+              border: 0,
+              borderTop,
+              color: 'black',
+              width: `${width}%`,
+            }}
           />
+        );
+      case 'column':
+        return (
+          <div style={{ textAlign: 'left' }} key={this.keySeq++}>
+            {this.handle_nodes(node.childNodes)}
+          </div>
+        );
+      case 'two-columns':
+        const styles = {
+          display: 'flex',
+        };
+        return (
+          <div className="text-two-columns" style={styles} key={this.keySeq++}>
+            {this.handle_nodes(node.childNodes)}
+          </div>
         );
       case 'img': {
         const width = node.getAttribute('width');
@@ -358,14 +412,16 @@ export default class TextContent extends React.Component {
         lineInnerClass += ' right-aligned-text';
       }
 
+      if (lineOptions.margin) {
+        className += ' with-margin-text';
+      }
+
       if (options.isPoetry && !lineOptions.wrap && !lineOptions.hr) {
         className += ' poem-line';
-        const displayedLineNum =
-          lineNum != null && lineNum % 5 === 0 ? lineNum : null;
         return (
           <div
             className={className}
-            data-num={displayedLineNum}
+            data-num={lineOptions.displayNum || lineOptions.margin}
             key={keyPrefix + i}>
             {anchor}
             <div className={lineInnerClass}>{rendered}</div>
@@ -415,7 +471,7 @@ export default class TextContent extends React.Component {
           :global(.poem-line::before),
           :global(.bible-line::before) {
             content: attr(data-num);
-            color: #888;
+            color: ${CommonData.lightTextColor};
             margin-right: 1em;
             width: 1.5em;
             font-size: 0.8em;
@@ -424,6 +480,18 @@ export default class TextContent extends React.Component {
             margin-left: -2.5em;
             vertical-align: top;
             margin-top: 0.25em;
+          }
+          :global(.poem-line.with-margin-text::before) {
+            content: attr(data-num);
+            color: black;
+            margin-right: 1em;
+            width: 1.5em;
+            font-size: 1em;
+            text-align: right;
+            display: inline-block;
+            margin-left: -2.5em;
+            vertical-align: top;
+            margin-top: 0;
           }
           :global(.bible-line),
           :global(.poem-line) {
@@ -451,6 +519,7 @@ export default class TextContent extends React.Component {
           :global(.poem-hr) {
             line-height: 4px !important;
             padding-bottom: 3px;
+            margin-left: 0 !important;
           }
           :global(.last-highlighted-line) {
             border-bottom: 1px solid rgb(238, 232, 213);
@@ -481,6 +550,13 @@ export default class TextContent extends React.Component {
           }
           :global(.half-height-blank) {
             line-height: 0.8;
+          }
+          :global(.text-two-columns) :global(div:first-child) {
+            border-right: 1px solid black;
+            padding-right: 10px;
+          }
+          :global(.text-two-columns) :global(div:last-child) {
+            padding-left: 10px;
           }
         `}</style>
       </div>

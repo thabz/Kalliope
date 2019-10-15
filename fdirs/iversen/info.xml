@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="iversen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Iver</firstname>
+    <lastname>Iversen</lastname>
+    <fullname>Iver Utzon Iversen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1862-03-14</date>
+      <place>Haderslev</place>
+    </born>
+    <dead>
+      <date>1892-01-19</date>
+      <place>Nørre Nebel</place>
+    </dead>
+  </period>
+  <works>1884,1887</works>
+</person>

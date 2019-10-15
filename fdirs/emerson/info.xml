@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="emerson" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Ralph Waldo</firstname>
+    <lastname>Emerson</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1803-05-25</date>
+      <place>Boston, Mass.</place>
+    </born>
+    <dead>
+      <date>1882-04-27</date>
+      <place>Concord, Mass.</place>
+    </dead>
+  </period>
+  <works>1836,1847,1867</works>
+</person>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lawrence" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>D.H.</firstname>
+    <lastname>Lawrence</lastname>
+    <fullname>David Herbert Lawrence</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1885-09-11</date>
+      <place>Eastwood, Nottinghamshire, England</place>
+    </born>
+    <dead>
+      <date>1930-03-02</date>
+      <place>Vence, Frankrig</place>
+    </dead>
+  </period>
+  <works>rhyming,unrhyming,1929,1930,1932m,1932</works>
+</person>

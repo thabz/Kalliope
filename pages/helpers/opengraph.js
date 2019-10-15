@@ -29,10 +29,8 @@ export const trimmedDescription = (
 
 export const poetImage = (poet: Poet): ?string => {
   if (poet.has_square_portrait) {
-    const thumb = poet.square_portrait
-      .replace(/.jpg$/, '-w600.jpg')
-      .replace(/\/([^\/]+)$/, '/t/$1');
-    return `/static/images/${poet.id}/t/${thumb}`;
+    const thumb = poet.square_portrait;
+    return `/static/images/${poet.id}/${thumb}`;
   } else {
     return null;
   }

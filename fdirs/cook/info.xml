@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="cook" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Eliza</firstname>
+    <lastname>Cook</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1818-12-24</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1889-09-23</date>
+      <place>Wimbledon</place>
+    </dead>
+  </period>
+  <works>1840</works>
+</person>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
-    Johann Ludewig Gebhard Lund: <i>Adam Oehlenschläger</i>, 1809, olie på lærred. Det Nationalhistoriske Museum, Frederiksborg Slot.
-  </picture>
-  <picture src="p2.jpg">
-    C.A. Jensen: <i>Adam Oehlenschläger</i>, 1832.
-  </picture>
-  <picture src="p3.jpg">
-  </picture>
-  <picture src="p4.jpg">C.A. Jensen: <i>Adam Oehlenschläger</i>, 1834, olie på lærred, 26,5 x 22,5 cm. Kunstmuseet Brundlund Slot, Aabenraa.
-  </picture>
-  <picture src="p5.jpg">
-    Friedrich von Amerling: <i>Adam Oehlenschläger</i>, 1844. Wien.
+  <picture src="p7.jpg" museum="fnm" invnr="A 551">
+    Peder Faxøe (1761-1840): <i>Adam Oehlenschläger som 6-årig</i>, 1785.Frederiksborg Nationalhistorisk Museum. 
   </picture>
   <picture src="p6.jpg">
       <i>Adam Oehlenschläger</i>. Bakkehusmuseet.
+  </picture>
+  <picture ref="lund/1809-oehlenschlaeger" primary="true" square-src="p1-square.jpg" />
+  <picture src="p8.jpg" museum="fnm" invnr="A 2620" year="1815">
+    F.C. Gröger: <i>Adam Oehlenschläger</i>, 1815. Frederiksborg Nationalhistorisk Museum.
+  </picture>
+  <picture ref="jensenca/oehlenschlaeger-1832" />
+  <picture ref="jensenca/oehlenschlaeger-1834" />
+  <picture ref="jensenca/oehlenschlaeger-1842" />
+  <picture src="p5.jpg">
+    Friedrich von Amerling: <i>Adam Oehlenschläger</i>, 1844. Wien.
   </picture>
 </pictures>

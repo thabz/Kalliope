@@ -24,7 +24,7 @@
      <html>Richard Løvehjerte krones i England.</html>
    </entry>
    <entry date="1203" type="text">
-     <html>Saxo Grammaticus skriver Gesta Danorum.</html>
+     <html>Saxo Grammaticus skriver <i>Gesta Danorum</i>.</html>
    </entry>
    <entry date="1219-06-15" type="text">
      <html>Dannebrog falder tilsyneladende ned fra himlen i forbindelse med Valdemar Sejrs erobringer i Estland.</html>
@@ -45,8 +45,7 @@
      <html>Erik Klipping myrdes i Finderup Lade.</html>
    </entry>
    <entry date="1286-11-22" type="image">
-     <src>kunst/otto-bache-de-sammensvorne.jpg</src>
-     <html>Otto Bache: <i>De sammensvorne rider fra Finderup efter mordet på Erik Klipping Skt. Cæcilienat 1286</i>, olie på lærred, 1882, Det Nationalhistoriske Museum på Frederiksborg Slot.</html>
+       <picture ref="bache/1882-finderup"/>
    </entry>
    <entry date="1337" type="text">
      <html>Hundredeårskrigen mellem Frankrig og England (1337-1453) bryder ud.</html>
@@ -61,7 +60,7 @@
      <html>Jeanne d'Arc (1412?-31) erobrer Orléans tilbage.</html>
    </entry>
    <entry date="1448" type="text">
-     <html>Christian I (1426-1481) udråbes til konge over Danmark. Konge over Norge i 1450-81 og Sverige 1457-63.</html>
+     <html><a person="christian1">Christian I</a> (1426-1481) udråbes til konge over Danmark. Konge over Norge i 1450-81 og Sverige 1457-63.</html>
    </entry>
    <entry date="1453" type="text">
      <html>Hundredeårskrigen mellem Frankrig og England (1337-1453) ender. </html>
@@ -81,7 +80,7 @@
      <html>Niccolò Machiavelli født.</html>
    </entry>
    <entry date="1471-10-07" type="text">
-     <html>Frederik d. 1. af Danmark-Norge født. (død 1533)</html>
+     <html><a person="frederik1">Frederik d. 1.</a> af Danmark-Norge født. (død 1533)</html>
    </entry>
    <entry date="1477" type="text">
      <html>Universitetet i Uppsala bliver nordens første universitet.</html>
@@ -99,13 +98,18 @@
      <html>Christoffer Columbus død i Valladolid, Spanien.</html>
    </entry>
    <entry date="1508" type="text">
-     <html>Michelangelo maler det sixtinske kapel (1508-12).</html>
+     <html><a person="michelangelo">Michelangelo</a> maler det sixtinske kapel (1508-12).</html>
    </entry>
    <entry date="1520" type="text">
      <html>Det stockholmske blodbad.</html>
    </entry>
    <entry date="1523" type="text">
-     <html>Frederik I (1471-1533) udråbes til konge.</html>
+     <html><a person="frederik1">Frederik 1.</a> (1471-1533) udråbes til konge.</html>
+   </entry>
+   <entry date="1532" type="image">
+     <picture ref="bloch/christian2-1871">
+       <a person="christian2">Christian 2.</a> fængsles på Sønderborg Slot.
+     </picture>
    </entry>
    <entry date="1527" type="text">
      <html>Niccolò Machiavelli (f. 1469) død.</html>
@@ -114,7 +118,7 @@
      <html>Michel de Montaigne født nær Bordeaux.</html>
    </entry>
    <entry date="1534" type="text">
-     <html>Christian III (1503-1559) udråbes til konge over Danmark-Norge.</html>
+     <html><a person="christian3">Christian 3.</a> (1503-1559) udråbes til konge over Danmark-Norge.</html>
    </entry>
    <entry date="1534" type="text">
      <html>Grevens Fejde: borgerkrig i Danmark 1534-1536.</html>
@@ -129,13 +133,13 @@
      <html>Pest i København.</html>
    </entry>
    <entry date="1550" type="text">
-     <html>Christian III's danske bibel udkommer.</html>
+     <html><a person="christian3">Christian 3.</a>s danske bibel udkommer.</html>
    </entry>
    <entry date="1553-04-09" type="text">
      <html>François Rabelais død i Paris.</html>
    </entry>
    <entry date="1559" type="text">
-     <html>Frederik II (1534-1588) udråbes til konge over Danmark-Norge.</html>
+     <html><a person="frederik2">Frederik 2.</a> (1534-1588) udråbes til konge over Danmark-Norge.</html>
    </entry>
    <entry date="1571-10-07" type="text">
      <html>Enkedronning Dorothea af Danmark-Norge død. (født 1511)</html>
@@ -149,18 +153,27 @@
    <entry date="1583" type="text">
      <html>Pest i Danmark dræber 9.000 mennesker.</html>
    </entry>
-   <entry date="1588" type="text">
-     <html>Christian IV (1577-1648) udråbes til konge.</html>
+   <entry date="1588-04-04" type="text">
+     <html>Den 11-årige <a person="christian4">Christian IV</a> (1577-1648) udråbes til konge og der dannes en foreløbig formynderregering.</html>
    </entry>
    <entry date="1592-09-13" type="text">
      <html>Michel de Montaigne død i Bordeaux.</html>
+   </entry>
+   <entry date="1596-08-29" type="image">
+       <picture ref="bache/1887-christian4-kroningstog"/>
    </entry>
    <entry date="1599-06" type="text">
        <html><a poet="shakespeare">Shakespeares</a> teater The Globe Playhouse åbner i London.</html>
    </entry>
    <entry date="1599" type="image">
-       <src>kunst/the-globe.jpg</src>
-     <html><i>Globe Theatre</i>, stik fra 1612. Yale Center for British Art.</html>
+       <picture src="kunst/the-globe.jpg">
+          <i>Globe Theatre</i>, stik fra 1612. Yale Center for British Art.
+       </picture>
+   </entry>
+   <entry date="1605" type="image">
+       <picture ref="marstrand/don-quixote-og-sancho-panza">
+           Miguel de Cervantes: <i>Den sindrige ridder Don Quixote de la Mancha</i> (1605-1615) udkommer.
+       </picture>
    </entry>
    <entry date="1613" type="text">
      <html>Første tobakdyrkning i Englands nordamerikanske kolonier.</html>
@@ -193,13 +206,10 @@
      <html>Maren Splids anklages for trolddom og brændes på bålet.</html>
    </entry>
    <entry date="1642" type="text">
-     <html>Isaac Newton (d. 1727) født.</html>
-   </entry>
-   <entry date="1642" type="text">
      <html>Rundetårn står færdigt.</html>
    </entry>
    <entry date="1648" type="text">
-     <html>Chr. IV dør. Frederik III (1609-1670) udråbes til konge.</html>
+     <html><a person="christian4">Chr. IV</a> dør. <a person="frederik3">Frederik III</a> (1609-1670) udråbes til konge.</html>
    </entry>
    <entry date="1648" type="text">
      <html>30 års krigen ender.</html>
@@ -210,12 +220,14 @@
    <entry date="1654" type="text">
      <html>Pest i København dræber 9.000 mennesker.</html>
    </entry>
-   <entry date="1660" type="text">
-     <html>Enevælde i Danmark-Norge indføres med Kongeloven.</html>
+   <entry date="1657" type="text">
+     <html>Svenskekrigene (1657-1660), hvor Danmark undervejs mister Skåne, Halland og Blekinge.</html>
    </entry>
-   <entry date="1660" type="image">
-     <src>kunst/eckersberg_frederik_iii_kongeloven.jpg</src>
-     <html>C. W. Eckersberg: <i>Frederik III, som lader udfærdige kongeloven ved Peder Schumacher sidenhen bekjendt under navnet <a poet="griffenfeld">Griffenfeldt</a></i>, 1824. Skitse til de store billeder malet til trongemakket på Christiansborg Slot.</html>
+   <entry date="1660" type="text">
+     <html>Enevælde i Danmark-Norge indføres. Den afskaffes med Grundloven i 1849.</html>
+   </entry>
+   <entry date="1665" type="image">
+       <picture ref="eckersberg/frederik3-kongeloven-1824"/>
    </entry>
    <entry date="1665" type="text">
      <html>Sorø Akademi nedlægges.</html>
@@ -230,11 +242,12 @@
      <html>Brand i London.</html>
    </entry>
    <entry date="1666-09-04" type="image">
-     <src>kunst/great-fire-london.jpg</src>
-     <html>Anonymous: <i>The Great Fire of London</i>.</html>
+       <picture src="kunst/great-fire-london.jpg">
+         Anonymous: <i>The Great Fire of London</i>.
+       </picture>
    </entry>
    <entry date="1670" type="text">
-     <html>Christian V (1646-1699) udråbes til konge.</html>
+     <html><a person="christian5">Christian V</a> (1646-1699) udråbes til konge.</html>
    </entry>
    <entry date="1671" type="text">
      <html>Greve- og baronstanden indføres i Danmark.</html>
@@ -267,20 +280,26 @@
      <html>De sidste heksebrændinger foretages i Danmark.</html>
    </entry>
    <entry date="1699" type="text">
-     <html>Frederik IV (1671-1730) udråbes til konge.</html>
+     <html><a person="frederik4">Frederik IV</a> (1671-1730) udråbes til konge.</html>
    </entry>
    <entry date="1700" type="text">
      <html>Danmark går over til den gregorianske kalender.</html>
    </entry>
    <entry date="1702" type="image">
-     <src>kunst/kneller_newton.jpg</src>
-     <html>Sir Godfrey Kneller: Portræt af Sir Isaac Newton, malet i år 1702.</html>
+       <picture src="kunst/kneller_newton.jpg">
+           Sir Godfrey Kneller: Portræt af Sir Isaac Newton, malet i år 1702.
+       </picture>
    </entry>
    <entry date="1711" type="text">
      <html>Byldepesten hærger hele Danmark og dræber bla. en trediedel af Københavns indbyggere.</html>
    </entry>
    <entry date="1713-10-05" type="text">
      <html>Den franske oplysningsfilosof og forfatter Denis Diderot født. (død 1784)</html>
+   </entry>
+   <entry date="1719" type="image">
+       <picture src="kunst/balthasar-denner-tordenskiold.jpg">
+           Balthasar Denner: <i>Peter Wessel Tordenskiold</i>, 1719. Det Nationalhistoriske Museum på Frederiksborg Slot.
+       </picture>
    </entry>
    <entry date="1720" type="text">
      <html>Tordenskjold dør i duel.</html>
@@ -291,9 +310,6 @@
    <entry date="1724-08-22" type="text">
      <html>Jens Schielderup Sneedorff født.</html>
    </entry>
-   <entry date="1727" type="text">
-     <html>Sir Isaac Newton (f. 1642) dør.</html>
-   </entry>
    <entry date="1728" type="text">
      <html>Storbrand i København ødelægger 1670 huse.</html>
    </entry>
@@ -301,7 +317,7 @@
      <html>Peter Frederik Suhm født.</html>
    </entry>
    <entry date="1730" type="text">
-     <html>Christian VI (1699-1746) udråbes til konge.</html>
+     <html><a person="christian6">Christian VI</a> (1699-1746) udråbes til konge.</html>
    </entry>
    <entry date="1733" type="text">
      <html>Stavnsbånd indføres</html>
@@ -310,7 +326,7 @@
      <html>Det andet guldhorn findes ved Gallehus, Tønder.</html>
    </entry>
    <entry date="1746" type="text">
-     <html>Frederik V (1723-1766) udråbes til konge.</html>
+     <html><a person="frederik5">Frederik V</a> (1723-1766) udråbes til konge.</html>
    </entry>
    <entry date="1748" type="text">
      <html>Det Kongelige Teater åbner på Kongens Nytorv.</html>
@@ -325,42 +341,33 @@
      <html>Aalborg Stifttidende udkommer første gang.</html>
    </entry>
    <entry date="1766" type="text">
-     <html>Christian VII (1749-1808) udråbt til konge.</html>
+     <html><a person="christian7">Christian VII</a> (1749-1808) udråbt til konge.</html>
    </entry>
    <entry date="1767-09-08" type="text">
      <html>August Wilhelm Schlegel født i Hannover.</html>
    </entry>
    <entry date="1771" type="text">
-     <html>Struensee ved magten.</html>
+     <html><a person="struensee">Struensee</a> ved magten.</html>
    </entry>
    <entry date="1771" type="image">
-     <src>kunst/juel-struensee-oval.jpg</src>
-     <html>Jens Juel: <i>Johann Friedrich Struensee</i>, 1771. Schloss Celle.</html>
+       <picture ref="juel/struensee-1771-oval" />
    </entry>
    <entry date="1770-09-14" type="text">
      <html>Trykkefrihed indføres indtil censurens genindførelse 20/10 1773.</html>
-   </entry>
-   <entry date="1772-03-10" type="text">
-     <html>Friedrich Schlegel født i Hannover.</html>
    </entry>
    <entry date="1781" type="text">
      <html>Kant skriver <i>Kritik der reinen Vernunft</i>. (<i>Kritik af den rene fornuft</i>)</html>
    </entry>
    <entry date="1784" type="text">
-     <html>Den 16-årige Frederik VI (1768-1839) overtager regeringsmagten fra sin sindssyge far.</html>
-   </entry>
-   <entry date="1785-07-18" type="text">
-     <html>Frederik Christian Sibbern født.</html>
-   </entry>
-   <entry date="1788-02-22" type="text">
-     <html>Schopenhauer født i Danzig.</html>
+     <html>Den 16-årige <a person="frederik6">Frederik VI</a> (1768-1839) overtager regeringsmagten fra sin sindssyge far.</html>
    </entry>
    <entry date="1788-06-20" type="text">
      <html>Ophævelse af stavnsbåndet.</html>
    </entry>
    <entry date="1789-07-14" type="image">
-     <src>kunst/bastille.jpg</src>
-     <html>Jean-Pierre Houel: <i>Vue du siège et prise de la Bastille</i>.</html>
+       <picture src="kunst/bastille.jpg">
+         Jean-Pierre Houel: <i>Vue du siège et prise de la Bastille</i>.
+       </picture>
    </entry>
    <entry date="1789" type="text">
      <html>Den franske revolution (1789-1801).</html>
@@ -381,8 +388,9 @@
      <html><a poet="heibergpa">P. A. Heiberg</a> idømmes landsforvisning pga. artiklerne »Politisk Dispache« og »Sprog-Granskning«.</html>
    </entry>
    <entry date="1801-4-2" type="image">
-     <src>kunst/lorentzen_slaget_paa_rheden.jpg</src>
-     <html>C. A. Lorentzen: <i>Slaget paa Rheden 2. april 1801</i>, 1802, Frederiksborg Museum.</html>
+       <picture src="kunst/lorentzen_slaget_paa_rheden.jpg">
+         C. A. Lorentzen: <i>Slaget paa Rheden 2. april 1801</i>, 1802, Frederiksborg Museum.
+       </picture>
    </entry>
    <entry date="1802-12-15" type="text">
      <html>Oehlenschlägers <a work="oehlenschlaeger/1803">Digte</a> (1803) udkommer.</html>
@@ -394,27 +402,19 @@
      <html>København bombarderes af englænderne.</html>
    </entry>
    <entry date="1807-09-02" type="image">
-     <src>kunst/eckersberg-koebenhavn-i-brand.jpg</src>
-     <html>C.W. Eckersberg: <i>Københavns Bombardement</i>, 1807. Københavns Bymuseum.</html>
-     <!-- Ovenstående er Farvelagt stik af G.L. Lahde efter akvarel af C.W. Eckersberg -->
+       <picture ref="eckersberg/koebenhavns-bombardement-1807" />
    </entry>
    <entry date="1808" type="text">
-     <html>Christian VII død. Frederik VI (1768-1839) som har haft regeringsmagten siden 1784, udråbes til konge.</html>
+     <html><a person="christian7">Christian VII</a> død. <a person="frederik6">Frederik VI</a> (1768-1839) som har haft regeringsmagten siden 1784, udråbes til konge.</html>
    </entry>
    <entry date="1808-2-20" type="text">
      <html>Danmark erklærer Sverige krig.</html>
-   </entry>
-   <entry date="1808-10-06" type="text">
-     <html>Frederik VII født. (død 1863)</html>
    </entry>
    <entry date="1812" type="text">
      <html>Napoleon invaderer Rusland.</html>
    </entry>
    <entry date="1813" type="text">
      <html>Dansk statsbankerot og penge nedskrives med ⅙ af pålydende værdi.</html>
-   </entry>
-   <entry date="1813-05-05" type="text">
-     <html>Søren Kierkegaard født.</html>
    </entry>
    <entry date="1814" type="text">
      <html>Danmark taber Norge som kommer ind under svensk herredømme.</html>
@@ -444,8 +444,7 @@
      <html>Friedrich Schlegel død i Dresden.</html>
    </entry>
    <entry date="1834" type="image">
-     <src>kunst/hansen_kronborg_slot_1834.jpg</src>
-     <html>Constantin Hansen: <i>Kronborg Slot</i>, 1834, Statens Museum for Kunst.</html>
+       <picture ref="hansenc/slottet-kronborg-1834" />
    </entry>
    <entry date="1837" type="text">
      <html>Morse perfektionerer telegrafen</html>
@@ -454,14 +453,13 @@
      <html>Victoria udråbes til dronning af England.</html>
    </entry>
    <entry date="1837" type="image">
-     <src>kunst/hansen_et_selskab_af_danske_kunstnere_i_rom.jpg</src>
-     <html>Constantin Hansen: <i>Et Selskab af danske Kunstnere i Rom</i>, 1837, 62x74cm, Statens Museum for Kunst.</html>
+       <picture ref="hansenc/et-selskab-af-danske-kunstnere-i-rom-1837" />
    </entry>
    <entry date="1838-9-17" type="text">
      <html>Thorvaldsen ankommer til København.</html>
    </entry>
    <entry date="1839" type="text">
-     <html>Christian VIII (1786-1848) udråbes til konge.</html>
+     <html><a person="christian8">Christian VIII</a> (1786-1848) udråbes til konge.</html>
    </entry>
    <entry date="1843-02-20" type="text">
        <html>Søren Kierkegaard udgiver <i>Enten - Eller</i>.</html>
@@ -472,20 +470,20 @@
    <entry date="1845" type="text">
      <html>Kolonierne Trankebar og Serampore som havde tilhørt Danmark siden 1616, sælges til East India Co. i London.</html>
    </entry>
-   <entry date="1845-05-12" type="text">
-     <html>August Wilhelm Schlegel død i Bonn.</html>
-   </entry>
    <entry date="1847" type="text">
      <html>Carlsberg begynder at brygge øl.</html>
    </entry>
-   <entry date="1847-10-21" type="text">
-     <html>Edvard Brandes født.</html>
+   <entry date="1848" type="text">
+     <html>Treårskrigen (1848-1851) udkæmpes i Slesvig.</html>
    </entry>
-   <entry date="1848-1-20" type="text">
-     <html>Christian VIII dør, og Frederik VII (1808-1863) udråbes til konge.</html>
+   <entry date="1848-01-20" type="text">
+     <html><a person="christian8">Christian VIII</a> dør, og <a person="frederik7">Frederik VII</a> (1808-1863) udråbes til konge.</html>
    </entry>
    <entry date="1848" type="text">
      <html>Karl Marx udgiver <i>Det kom&#173;munis&#173;tiske Manifest</i>.</html>
+   </entry>
+   <entry date="1848-10-23" type="image">
+       <picture ref="hansenc/den-grundlovgivende-rigsforsamling-1861" />
    </entry>
    <entry date="1849-6-5" type="text">
      <html>Grundloven underskrives og træder i kraft.</html>
@@ -493,14 +491,14 @@
    <entry date="1849" type="text">
      <html>Almindelig værnepligt indføres.</html>
    </entry>
+   <entry date="1849-09-09" type="image">
+       <picture ref="bache/1894-soldaternes-hjemkomst"/>
+   </entry>
+   <entry date="1850-07-25" type="text">
+     <html>Slaget på Isted Hede.</html>
+   </entry>
    <entry date="1853" type="text">
      <html>Koleraepidemi i København.</html>
-   </entry>
-   <entry date="1853-04-28" type="text">
-     <html>Ludwig Tieck død.</html>
-   </entry>
-   <entry date="1855-11-11" type="text">
-     <html>Søren Kierkegaard død.</html>
    </entry>
    <entry date="1859" type="text">
      <html>Charles Darwin udgiver <i>The Origin of Species</i>.</html>
@@ -508,17 +506,20 @@
    <entry date="1859" type="text">
      <html>John Stuart Mill udgiver <i>On Liberty</i>.</html>
    </entry>
-   <entry date="1860-09-21" type="text">
-     <html>Schopenhauer død i Frankfurt am Main.</html>
-   </entry>
    <entry date="1861" type="text">
      <html>Den amerikanske borgerkrig bryder ud.</html>
    </entry>
    <entry date="1863" type="text">
-     <html>Christian IX (1818-1906) udråbes til konge.</html>
+     <html><a person="christian9">Christian IX</a> (1818-1906) udråbes til konge.</html>
    </entry>
-   <entry date="1864" type="text">
-     <html>Dansk nederlag ved Dybbøl til Preussen/Østrig.</html>
+   <entry date="1864-02-01" type="text">
+     <html>Den 2. Slesvigske Krig mod Preussen og Østrig bryder ud og ender med at Danmark afstår Holsten, Lauenborg og Slesvig.</html>
+   </entry>
+   <entry date="1864-02-06" type="image">
+       <picture ref="bache/1886-sankelmark"/>
+   </entry>
+   <entry date="1864-04-18" type="text">
+     <html>Dansk nederlag ved Dybbøl.</html>
    </entry>
    <entry date="1867" type="text">
      <html>Alfred Nobel opfinder dynamit.</html>
@@ -529,19 +530,14 @@
    <entry date="1869" type="text">
      <html>Suez-kanalen færdigbygget.</html>
    </entry>
-   <entry date="1869-06-26" type="text">
-     <html>Martin Andersen Nexø født.</html>
-   </entry>
    <entry date="1871-11-03" type="text">
      <html><a poet="brandes">Georg Brandes</a> indleder sine fore&#173;læsninger <i>Hoved&#173;strøm&#173;ning&#173;er i det 19de Aarhundredes Litteratur</i>.</html>
    </entry>
    <entry date="1871-11-04" type="image">
        <!-- Året er korrekt, men måned-dag er sat, så dette billede vises efter begivenheden om forelæsningerne -->
-     <src>kunst/slott-moeller-brandes.jpg</src>
-     <html>Harald Slott-Møller: <i>Georg Brandes på Universitetets talerstol</i>, 1889-90.</html>
-   </entry>
-   <entry date="1872-12-16" type="text">
-     <html>Frederik Christian Sibbern død.</html>
+       <picture src="kunst/slott-moeller-brandes.jpg">
+          Harald Slott-Møller: <i>Georg Brandes på Universitetets talerstol</i>, 1889-90.
+       </picture>
    </entry>
    <entry date="1875" type="text">
      <html>Kvinder får adgang til universi&#173;tetet.</html>
@@ -549,26 +545,23 @@
    <entry date="1876" type="text">
      <html>Alexander Graham Bell opfinder telefonen.</html>
    </entry>
-   <entry date="1880-10-06" type="text">
-     <html>Den østrigske forfatter Robert Musil født. (død 1942)</html>
-   </entry>
    <entry date="1882" type="text">
      <html>Danmarks første telefoncentral med 22 abonnenter.</html>
    </entry>
+   <entry date="1882" type="text">
+     <html>P.S. Krøyer rejste til Skagen for første gang.</html>
+   </entry>
    <entry date="1884" type="text">
      <html>Christiansborg brænder.</html>
+   </entry>
+   <entry date="1888" type="image">
+       <picture ref="kroyer/1888-hip-hip-hurra" />
    </entry>
    <entry date="1884-10-01" type="text">
      <html>Dagbladet Politiken udkommer første gang.</html>
    </entry>
    <entry date="1890-12-21" type="text">
-     <html>Johanne Luise Heiberg død.</html>
-   </entry>
-   <entry date="1893-08-04" type="text">
-     <html>Tom Kristensen født.</html>
-   </entry>
-   <entry date="1898-01-13" type="text">
-     <html>Kaj Munk født.</html>
+     <html><a person="heibergjohanne">Johanne Luise Heiberg</a> død.</html>
    </entry>
    <entry date="1901" type="text">
      <html>Systemskiftet. Venstre overtager magten i Danmark efter at have været i flertal i folketinget siden 1872.</html>
@@ -592,7 +585,7 @@
      <html>Ellehammer flyver.</html>
    </entry>
    <entry date="1906" type="text">
-     <html>Frederik VIII (1843-1912) udråbes til konge.</html>
+     <html><a person="frederik8">Frederik VIII</a> (1843-1912) udråbes til konge.</html>
    </entry>
    <entry date="1906" type="text">
      <html>Nordisk Film grundlægges.</html>
@@ -612,17 +605,23 @@
    <entry date="1915" type="text">
      <html>Danske kvinder får stemmeret.</html>
    </entry>
+   <entry date="1916-07-01" type="image">
+       <picture src="kunst/ww1.jpg">Slaget ved Somme.</picture>
+   </entry>
    <entry date="1918" type="text">
      <html>Første verdenskrig ender.</html>
    </entry>
    <entry date="1919" type="text">
      <html>Folkeforbundet stiftes ved Versailletraktaten.</html>
    </entry>
+   <entry date="1920-06-15" type="text">
+     <html>Det nordlige Sønderjylland genforenes med Danmark efter en folkestemning.</html>
+   </entry>
    <entry date="1922" type="text">
      <html>Mussolini tager magten i Italien.</html>
    </entry>
    <entry date="1923" type="text">
-     <html>Hitler forsøger kup i Munchen.</html>
+     <html>Hitler forsøger kup i München.</html>
    </entry>
    <entry date="1925" type="text">
      <html>Statsradiofonien grundlægges i Danmark.</html>
@@ -632,9 +631,6 @@
    </entry>
    <entry date="1929" type="text">
      <html>Den amerikanske børs bryder sammen.</html>
-   </entry>
-   <entry date="1931-12-20" type="text">
-     <html>Edvard Brandes død.</html>
    </entry>
    <entry date="1933" type="text">
      <html>Adolf Hitler kommer til magten i Tyskland.</html>
@@ -648,14 +644,11 @@
    <entry date="1940" type="text">
      <html>Tyskerne invaderer Danmark.</html>
    </entry>
-   <entry date="1942-03-05" type="text">
-     <html>Peter Laugesen født.</html>
-   </entry>
    <entry date="1944" type="text">
      <html>Verdensbanken oprettet.</html>
    </entry>
    <entry date="1944-01-04" type="text">
-     <html>Kaj Munk død.</html>
+     <html><a poet="munk">Kaj Munk</a> død.</html>
    </entry>
    <entry date="1945-10-24" type="text">
      <html>De Forenede Nationer stiftes.</html>
@@ -665,14 +658,5 @@
    </entry>
    <entry date="1948-04-01" type="text">
      <html>Retskrivningsreformen indfører bolle-å og lille begyndelsesbogstav i navneord.</html>
-   </entry>
-   <entry date="1954-06-01" type="text">
-     <html>Martin Andersen Nexø død.</html>
-   </entry>
-   <entry date="1974-06-02" type="text">
-     <html>Tom Kristensen død.</html>
-   </entry>
-   <entry date="1991-07-09" type="text">
-     <html>Per Lange død.</html>
    </entry>
 </events>

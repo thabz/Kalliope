@@ -3,10 +3,11 @@
 import React from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
-import Nav from '../components/nav';
+import Nav, { poetCrumbsWithTitle } from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import Heading from '../components/heading.js';
-import PoetName, { poetNameString } from '../components/poetname.js';
+import PoetName from '../components/poetname.js';
+import { poetNameString } from '../components/poetname-helpers.js';
 import WorkName from '../components/workname.js';
 import { PoetTabs } from '../components/tabs.js';
 import SectionedList from '../components/sectionedlist.js';
@@ -14,6 +15,7 @@ import * as Links from '../components/links.js';
 import * as Sorting from './helpers/sorting.js';
 import { createURL } from './helpers/client.js';
 import CommonData from '../pages/helpers/commondata.js';
+import _ from '../pages/helpers/translations.js';
 import type {
   LinesPair,
   Section,
@@ -21,18 +23,17 @@ import type {
   Poet,
   Work,
   SectionForRendering,
+  LinesType,
 } from './helpers/types.js';
 import 'isomorphic-fetch';
 
-type LinesType = 'first' | 'titles';
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    poet: Poet,
-    lines: Array<LinesPair>,
-    type: LinesType,
-  };
-
+type TextsProps = {
+  lang: Lang,
+  poet: Poet,
+  lines: Array<LinesPair>,
+  type: LinesType,
+};
+export default class Texts extends React.Component<TextsProps> {
   static async getInitialProps({
     query: { lang, poetId, type },
   }: {
@@ -57,6 +58,7 @@ export default class extends React.Component {
       if (line == null || line.length == 0) {
         return;
       }
+      line = line.replace(',', '').replace('!', '');
       linePair['sortBy'] = line + ' [' + alternative + '[' + linePair.id;
       let letter: string = line[0];
       if (line.startsWith('Aa')) {
@@ -64,6 +66,9 @@ export default class extends React.Component {
       }
       if (line.startsWith('Ö')) {
         letter = 'Ø';
+      }
+      if (line.startsWith('È')) {
+        letter = 'E';
       }
       letter = letter.toUpperCase();
       let array = groups.get(letter) || [];
@@ -82,6 +87,7 @@ export default class extends React.Component {
 
   render() {
     const { lang, poet, type, lines } = this.props;
+    const requestPath = `/${lang}/texts/${poet.id}/${type}`;
 
     const groups = this.groupLines(lines);
     let sections: Array<SectionForRendering> = [];
@@ -119,20 +125,25 @@ export default class extends React.Component {
     let renderedGroups = <SectionedList sections={sections} />;
 
     const title = <PoetName poet={poet} includePeriod />;
+    const lastCrumbTitle =
+      type === 'titles' ? _('Titler', lang) : _('Førstelinjer', lang);
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
     return (
       <div>
-        <Head headTitle={headTitle} ogTitle={headTitle} />
+        <Head
+          headTitle={headTitle}
+          ogTitle={headTitle}
+          requestPath={requestPath}
+        />
         <Main>
           <Nav
             lang={lang}
-            poet={poet}
-            title={type === 'titles' ? 'Titler' : 'Førstelinjer'}
+            crumbs={poetCrumbsWithTitle(lang, poet, lastCrumbTitle)}
           />
           <Heading title={title} />
           <PoetTabs lang={lang} poet={poet} selected={type} />
           {renderedGroups}
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

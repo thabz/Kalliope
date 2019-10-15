@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="christian5" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 5.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1646-04-15</date>
+      <place inon="on">Duborg Slot, Flensborg</place>
+    </born>
+    <coronation>
+      <date>1670-02-09</date>
+    </coronation>
+    <dead>
+      <date>1699-08-25</date>
+      <place inon="on">Københavns Slot</place>
+    </dead>
+  </period>
+</person>

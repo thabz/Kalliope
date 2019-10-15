@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="topelius" country="un" lang="sv" type="poet">
+  <name>
+    <firstname>Zacharias</firstname>
+    <lastname>Topelius</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1818-01-14</date>
+      <place>Kuddnäs</place>
+    </born>
+    <dead>
+      <date>1898-03-12</date>
+      <place>Sipoo</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

@@ -4,20 +4,45 @@
 <workhead>
    <title>Andre digte</title>
    <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
+<poem id="goethe2019011801">
+<head>
+   <title>Wandrers Nachtlied I</title>
+   <firstline>Der du von dem Himmel bist</firstline>
+   <notes>
+       <note>Skrevet 1776 og efterfulgtes af <xref poem="goethe2002103001"/> i 1780.</note>
+   </notes>
+   <dates>
+       <written>1776-02-12</written>
+   </dates>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Der du von dem Himmel bist,
+Alles Leid und Schmerzen stillest,
+Den, der doppelt elend ist,
+Doppelt mit Erquickung füllest,
+Ach, ich bin des Treibens müde!
+Was soll all der Schmerz und Lust?
+Süsser Friede,
+Komm, ach, komm in meine Brust!    
+</body>
+</poem>
+
+
 <poem id="goethe2002103001">
 <head>
-   <title>Wandrers Nachtlied</title>
-   <toctitle>Wandrers Nachtlied</toctitle>
-   <indextitle>Wandrers Nachtlied</indextitle>
+   <title>Wandrers Nachtlied II</title>
    <firstline>Über allen Gipfeln</firstline>
    <notes>
-      <note>Digtet hedder Ein Gleiches, dvs. samme som forrige digts titel, hvad man på dansk typisk vil kalde "Ligeledes" og på engelsk "Another".</note>
+       <note>Skrevet 1780 som efterfølger til <xref poem="goethe2019011801"/> fra 1870.</note>
+       <note>Først i 1815 blev digtene udgivet sammen, hvor dette digt fik titlen »Ein Gleiches« (da.: ligeledes).</note>
    </notes>
+   <dates>
+       <written>1780-09-06</written>
+   </dates>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -597,8 +622,6 @@ Ist wünschenswertester Beruf.
 <poem id="goethe2000010807">
 <head>
    <title>Lebensregel</title>
-   <toctitle>Lebensregel</toctitle>
-   <indextitle>Lebensregel</indextitle>
    <firstline>Willst du dir ein hübsch Leben zimmern</firstline>
    <quality>korrektur1</quality>
    <!-- (eingesandt von Peter Tuchscherer; PTuchscherer@databecker.de) -->
@@ -721,7 +744,6 @@ Es war doch so schön!
    <indextitle>Nähe des Geliebten</indextitle>
    <firstline>Ich denke dein, wenn mir der Sonne Schimmer</firstline>
    <notes>
-      <note>Oversat af Aarestrup: <xref poem="aarestrup2000082803"/>.</note>
       <note>Efter Sämtliche Werke, Hamburger Ausgabe.</note>
    </notes>
    <quality>korrektur1,korrektur2,kilde</quality>
@@ -755,9 +777,6 @@ O, wärst du da!
    <toctitle>Lebendiges Andenken</toctitle>
    <indextitle>Lebendiges Andenken</indextitle>
    <firstline>Der Liebsten Band und Schleife rauben</firstline>
-   <notes>
-      <note>Oversat af Aarestrup: <xref poem="aarestrup2000082802"/>.</note>
-   </notes>
    <quality>korrektur1</quality>
    <!-- (eingesandt von Karin Nachtigal: karin.nachtigal@sap-ag.de) -->
 </head>
@@ -782,7 +801,7 @@ Soll ich dich gleich, Geliebte, missen,
 Wirst du mir doch nicht ganz entrissen:
 Zu schaun, zu tändeln und zu küssen
 Bleibt die Reliquie von dir. -
-Gleich ist des Haars und mein Geschicke :
+Gleich ist des Haars und mein Geschicke:
 Sonst buhlten wir mit Einem Glücke
 Um sie, jetzt sind wir fern von ihr.
 
@@ -802,9 +821,6 @@ Erinnre mich an Glück und Lust!
    <toctitle>An die Entfernte</toctitle>
    <indextitle>An die Entfernte</indextitle>
    <firstline>So hab ich wirklich dich verloren?</firstline>
-   <notes>
-      <note>Oversat af Aarestrup: <xref poem="aarestrup2000082804"/>.</note>
-   </notes>
    <quality>korrektur1</quality>
    <!-- eingesandt von Michael Sorger: sorger@rmc.de -->
 </head>
@@ -832,9 +848,6 @@ O komm, Geliebte, mir zurück!
    <toctitle>Der Müllerin Verrat</toctitle>
    <indextitle>Der Müllerin Verrat</indextitle>
    <firstline>Woher der Freund so früh und schnelle</firstline>
-   <notes>
-      <note>Oversat af Aarestrup: <xref poem="aarestrup2000082806"/>.</note>
-   </notes>
    <quality>korrektur1</quality>
    <!-- (eingesandt von Hans-Hermann Bartz: Kranz-Bartz@t-online.de ) -->
 </head>
@@ -937,9 +950,6 @@ O komm, Geliebte, mir zurück!
    <toctitle>Trost in Tränen</toctitle>
    <indextitle>Trost in Tränen</indextitle>
    <firstline>Wie kommts, daß du so traurig bist</firstline>
-   <notes>
-      <note>Oversat af Aarestrup: <xref poem="aarestrup2000082805"/>.</note>
-   </notes>
    <quality>korrektur1</quality>
    <!-- (eingesandt von : Nico Baumgartner, nico.baumgartner@datacomm.ch) -->
 </head>
@@ -983,44 +993,6 @@ In jeder heitern Nacht.
 So manchen lieben Tag;
 Verweinen laßt die Nächte mich,
 Solang ich weinen mag.«
-</body>
-</poem>
-
-<poem id="goethe2001111901">
-<head>
-   <title>Mignon</title>
-   <toctitle>Mignon</toctitle>
-   <indextitle>Mignon</indextitle>
-   <firstline>Kennst du das Land, wo die Zitronen blühn</firstline>
-   <quality>korrektur1</quality>
-</head>
-<body>
-1.
-Kennst du das Land, wo die Zitronen blühn,
-Im dunkeln Laub die Goldorangen glühn,
-Ein sanfter Wind vom blauen Himmel weht,
-Die Myrte still und hoch der Lorbeer steht?
-Kennst du es wohl? Dahin!
-Dahin möcht' ich mit dir,
-O mein Geliebter, ziehn.
-
-2.
-Kennst du das Haus? Auf Sälen ruht sein Dach,
-Es glänzt der Saal, es schimmert das Gemach,
-Und Marmorbilder stehn und sehn mich an:
-Was hat man dir, du armes Kind, getan?
-Kennst du es wohl? Dahin!
-Dahin möcht' ich mit dir,
-O mein Beschützer, ziehn.
-
-3.
-Kennst du den Berg und seinen Wolkensteg?
-Das Maultier such im Nebel seinen Weg,
-In Höhlen wohnt der Drachen alte Brut;
-Es stürzt der Fels und über ihn die Flut.
-Kennst du ihn wohl? Dahin!
-Dahin geht unser Weg!
-O Vater, laß uns ziehn!
 </body>
 </poem>
 
@@ -1460,13 +1432,1064 @@ Die Liebe weiß schon Rat dafür.
 </body>
 </poem>
 
+<poem id="goethe2017122801">
+<head>
+   <title>Liebebedürfnis</title>
+   <firstline>Wer vernimmt mich? ach, wem soll ich's klagen?</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Wer vernimmt mich? ach, wem soll ich's klagen?
+Wer's vernähme, würd' er mich bedauern?
+Ach, die Lippe, die so manche Freude
+Sonst genossen hat und sonst gegeben,
+Ist gespalten, und sie schmerzt erbärmlich.
+Und sie ist nicht etwa wund geworden,
+Weil die Liebste mich zu wild ergriffen,
+Hold mich angebissen, daß sie, fester
+Sich des Freunds versichernd, ihn genösse:
+Nein, das zarte Lippchen ist gesprungen,
+Weil nun über Reif und Frost die Winde
+Spitz und scharf und lieblos mir begegnen.
+ 
+Und nun soll mir Saft der edlen Traube,
+Mit dem Saft der Bienen bei dem Feuer
+Meines Herds vereinigt, Lind'rung schaffen.
+Ach, was will das helfen, mischt die Liebe
+Nicht ein Tröpfchen ihres Balsams drunter?
+</body>
+</poem>
+
+<poem id="goethe2017123101">
+<head>
+   <title>Beherzigung</title>
+   <firstline>Ach, was soll der Mensch verlangen?</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Ach, was soll der Mensch verlangen?
+Ist es besser, ruhig bleiben,
+Klammernd fest sich anzuhangen?
+Ist es besser, sich zu treiben?
+ 
+Soll er sich ein Häuschen bauen?
+Soll er unter Zelten leben?
+Soll er auf die Felsen trauen?
+Selbst die festen Felsen beben.
+ 
+Eines schickt sich nicht für alle!
+Sehe jeder, wie er's treibe,
+Sehe jeder, wo er bleibe,
+Und wer steht, daß er nicht falle!    
+</body>
+</poem>
+
+<poem id="goethe2018011001">
+<head>
+   <title>Die Nacht</title>
+   <firstline>Gern verlass ich diese Hütte</firstline>
+   <quality>korrektur1</quality>
+   <notes>
+       <note>Skrevet 1768, første gang trykt 1769 og senere trykt i 1789 under titlen »Die schöne Nacht«.</note>
+   </notes>
+</head>
+<body>
+Gern verlass ich diese Hütte,
+Meiner Liebsten Aufenthalt,
+Wandle mit verhülltem Tritte
+Durch den ausgestorb'nen Wald.
+Luna bricht die Nacht der Eichen,
+Zephyrs melden ihren Lauf,
+Und die Birken streu'n mit Neigen
+Ihr den süß´ten Weihrauch auf.
+
+Schauer, der das Herze fühlen,
+Der die Seele schmelzen macht,
+Flüstert durchs Gebüsch im Kühlen.
+Welche schöne, süße Nacht!
+Freude! Wollust! kaum zu fassen!
+Und doch wollt ich, Himmel, dir
+Tausend solcher Nächte lassen,
+Gäb mein Mädchen <i>eine</i> mir.    
+</body>
+</poem>
+
+<poem id="goethe2018012901">
+<head>
+   <title>Der Ewige Jude</title>
+   <subtitle>
+       <line>Fragmentarisch</line>
+       <line>Des Ewigen Juden erster Fetzen</line>
+   </subtitle>
+   <!-- Stjålet fra http://gutenberg.spiegel.de/buch/gedichte-9503/357 -->
+   <firstline>Um Mitternacht wohl fang ich an</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Um Mitternacht wohl fang ich an,
+Spring aus dem Bette wie ein Toller;
+Nie war mein Busen seelevoller,
+Zu singen den gereisten Mann,
+Der Wunder ohne Zahl gesehn,
+Die trutz der Lästrer Kinderspotte
+In unserm unbegriffnen Gotte
+Per omnia tempora in Einem Punkt geschehn.
+Und hab ich gleich die Gabe nicht
+Von wohlgeschliffnen, leichten Reimen,
+So darf ich doch mich nicht versäumen;
+Denn es ist Drang, und so ists Pflicht.
+Und wie ich dich, geliebter Leser, kenne,
+Den ich von Herzen Bruder nenne:
+Willst gern, vom Fleck und bist so faul,
+Nimmst wohl auch einen Ludergaul,
+Und ich, mir fehlt zu Nacht der Kiel,
+Ergreif wohl einen Besenstiel.
+Drum hör es denn, wenn dirs beliebt,
+So kauderwelsch, wie mir der Geist es gibt.
+
+    In Judäa, dem heiligen Land,
+War einst ein Schuster, wohlbekannt
+Wegen seiner Herz-Frömmigkeit,
+Zur gar verdorbnen Kirchenzeit.
+War halb Essener, halb Methodist,
+Herrnhuter, mehr Separatist,
+Denn er hielt viel auf Kreuz und Qual;
+Genug, er war Original,
+Und aus Originalität
+Er andern Narren gleichen tät.
+
+    Die Priester vor so vielen Jahren
+Waren, als wie sie immer waren,
+Und wie ein jeder wird zuletzt,
+Wenn man ihn hat in ein Amt gesetzt.
+War er vorher wie ein Ameis krabblig
+Und wie ein Schlänglein schnell und zabblig,
+Wird er hernach in Mantel und Kragen
+In seinem Sessel sich wohlbehagen.
+Und ich schwöre bei meinem Leben.
+Hätte man Sankt Paulen ein Bistum gegeben:
+Pollrer wär worden ein fauler Bauch
+Wie coeteri confratres auch.
+
+    Der Schuster aber und seinesgleichen
+Verlangten täglich Wunder und Zeichen,
+Daß einer predgen sollt für Geld,
+Als hätt der Geist ihn hingestellt.
+Nickten die Köpfe sehr bedenklich
+Über die Tochter Zion kränklich,
+Daß, ach, auf Kanzel und Altar
+Kein Moses und kein Aaron war,
+Daß es dem Gottesdienste ging,
+Als wärs ein Ding wie ein ander Ding,
+Das einmal nach dem Lauf der Welt
+Im Alter dürr zusammenfällt.
+
+    »O weh, der großen Babylon!
+Herr, tilge sie von deiner Erden,
+Laß sie im Pfuhl gebraten werden,
+Und, Herr, dann gib uns ihren Thron.«
+So sang das Häuflein, kroch zusammen,
+Teilten so Geists- als Liebesflammen,
+Gafften und langeweilten nun,
+Hätten das auch können im Tempel tun.
+Aber das Schöne war dabei.
+Es kam an jeden auch die Reih,
+Und wie sein Bruder welscht' und sprach,
+Durft er auch welschen eins hernach.
+Denn in der Kirche spricht erst und letzt
+Der, den man hat hinaufgesetzt,
+Und gläubigt euch und tut so groß
+Und schließt euch an und macht euch los,
+Und ist ein Sünder wie andre Leut,
+Ach und nicht einmal so gescheut.
+
+<nonum><center>*</center></nonum>
+
+Der größte Mensch bleibt stets ein Menschen-Kind,
+Die größten Köpfe sind das nur, was andre sind;
+Allein, das merkt, sie sind es umgekehrt.
+Sie wollen nicht mit andern Erdentröpfen
+Auf ihren Füßen gehn, sie gehn auf ihren Köpfen,
+Verachten, was ein jeder ehrt;
+Und was gemeinen Sinn empört,
+Das ehren unbefangne Weisen.
+Doch brachten sies nicht allzu weit,
+Ihr non plus ultra jeder Zeit
+War: Gott zu lästern und den Dreck zu preisen.
+
+<nonum><center>*</center></nonum>
+
+Die Priester schrieen weit und breit:
+Es ist, es kommt die letzte Zeit,
+Bekehr dich, sündiges Geschlecht!
+Der Jude sprach: Mir ists nicht bang,
+Ich hör vom jüngsten Tag so lang.
+
+<nonum><center>*</center></nonum>
+
+Behalten auch zu unsern Zeiten
+Die Gabe, Geister zu unterscheiden,
+Kap und Champagner und Burgunder
+Von Hoch- nach Rüdesheim hinunter.
+
+<nonum><center>*</center></nonum>
+
+Der Vater saß auf seinem Thron;
+Da rief er seinem lieben Sohn,
+Mußt zwei- bis dreimal schreien.
+Da kam der Sohn ganz überquer
+Gestolpert über Sterne her
+Und fragt', was zu befehlen.
+Der Vater fragt' ihn, wo er stickt –
+»Ich war im Stern, der dorten blickt,
+Und half dort einem Weibe
+Vom Kind in ihrem Leibe.«
+Der Vater war ganz aufgebracht
+Und sprach: Das hast du dumm gemacht,
+Sieh einmal auf die Erde.
+Es ist wohl schön und alles gut,
+Du hast ein menschenfreundlich Blut
+Und hilfst Bedräng'ten gerne.«
+
+<nonum><center>*</center></nonum>
+
+Als er sich nun hernieder schwung
+Und näher die weite Erde sah
+Und Meer und Länder weit und nah,
+Ergriff ihn die Erinnerung,
+Die er so lange nicht gefühlt,
+Wie man dadrunten ihm mitgespielt.
+(Wie man zu einem Mädchen fliegt,
+Das lang an unserm Blute sog
+Und endlich treulos uns betrog.)
+Er fühlt in vollem Himmels-Flug
+Der irdschen Atmosphäre Zug,
+Fühlt, wie das reinste Glück der Welt
+Schon eine Ahndung von Weh enthält.
+Er denkt an jenen Augenblick,
+Da er den letzten Todesblick
+Vom Schmerzen-Hügel herab getan,
+Fing vor sich hin zu reden an:
+»Sei, Erde, tausendmal gegrüßt!
+Gesegnet all ihr meine Brüder!
+Zum erstenmal mein Herz ergießt
+Sich nach dreitausend Jahren wieder,
+Und wonnevolle Zähre fließt
+Vom nimmertrüben Auge nieder.
+O mein Geschlecht, wie sehn ich mich nach dir!
+Und du, mit Herz und Liebes-Armen
+Flehst du aus tiefem Drang zu mir.
+Ich komm, ich will mich dein erbarmen.
+O Welt voll wunderbarer Wirrung,
+Voll Geist der Ordnung, träger Irrung,
+Du Kettenring von Wonn und Wehe,
+Du Mutter, die mich selbst zum Grab gebar!
+Die ich, obgleich ich bei der Schöpfung war,
+Im ganzen doch nicht sonderlich verstehe,
+Die Dumpfheit deines Sinns, in der du schwebtest,
+Daraus du dich nach meinem Tage drangst,
+Die schlangenknotige Begier, in der du bebtest,
+Von ihr dich zu befreien strebtest
+Und dann, befreit, dich wieder neu umschlangst –
+Das rief mich her aus meinem Sternen-Saale,
+Das läßt mich nicht an Gottes Busen ruhn.
+Ich komme nun zu dir zum zweiten Male,
+Ich säete dann, und ernten will ich nun.«
+
+<nonum><center>*</center></nonum>
+
+Er auf dem Berge stille hält,
+Auf den in seiner ersten Zeit
+Freund Satanas ihn aufgestellt
+Und ihm gezeigt die volle Welt
+Mit aller ihrer Herrlichkeit.
+
+    Er sieht begierig rings sich um,
+Sein Auge scheint ihn, zu betrügen,
+Ihm scheint die Welt noch um und um
+In jener Sauce tief zu liegen,
+Wie sie an jener Stunde lag,
+Da sie bei hellem, lichten Tag
+Der Geist der Finsternis, der Herr der alten Welt,
+Im Sonnenschein ihm glänzend dargestellt
+Und angemaßt sich ohne Scheu,
+Daß er hier Herr im Hause sei;
+Nicht gut, nicht bös, nicht groß, nicht klein,
+So scheißig, als sie sollte sein –
+Doch wenn ers tät sich feste kopfen,
+Das Reich Gottes hinein zu pfropfen.
+
+    »Wo!« rief der Heiland, »ist das Licht,
+Das hell von meinem Wort entbrennen?
+Weh! und ich seh den Faden nicht,
+Den ich so rein vom Himmel 'rab gesponnen.
+Wo haben sich die Zeugen hingewandt,
+Die weiß aus meinem Blut entsprungen,
+Und, ach, wohin der Geist; den ich gesandt –
+Sein Wehn, ich fühls, ist all verklungen.
+Schleicht nicht mit ewgem Hunger-Sinn,
+Mit halbgekrümmten Klauen-Händen,
+Verfluchten, eingedorrten Lenden
+Der Geiz nach tückischem Gewinn,
+Mißbraucht die sorgenlosen Freuden
+Des Nachbars auf der reichen Flur
+Und hemmt in dürren Eingeweiden
+Das liebe Leben der Natur?
+Verschließt der Fürst mit seinen Sklaven
+Sich nicht in jenes Marmorhaus
+Und brütet seinen irren Schafen
+Die Wölfe selbst im Busen aus?
+Ihm wird zu grillenhafter Stillung
+Der Menschen Mark herbeigerafft,
+Verspritzt in ekler Überfüllung
+Von Tausenden die Nahrungskraft.
+In meinem Namen weiht dem Bauche
+Ein Armer seiner Kinder Brot;
+Mich schmäht auf diesem faulen Schlauche
+Das goldne Zeichen meiner Not.«
+
+    Er war nunmehr der Länder satt,
+Wo man so viele Kreuze hat
+Und man für lauter Kreuz und Christ
+Ihn eben und sein Kreuz vergißt.
+Er trat in ein benachbart Land;
+Wo er sich nur als Kirchfahn fand,
+Man aber sonst nicht merkte sehr,
+Als ob ein Gott im Lande wär.
+Wie man ihn denn auch bald beteuert,
+Aller Sauerteig sei hier ausgescheuert,
+Befurcht er, daß das Brot so lieb
+Wie ein Matzkuchen sitzen blieb.
+Davon sprach ihm ein geistlich Schaf,
+Das er auf hohem Wege traf,
+Das eine mackliche Frau im Bett,
+Viel Kinder und viel Zehnden hätt.
+Der also Gott ließ im Himmel ruhn
+Und sich auch was zugute tun.
+
+    Unser Herr fühlt' ihm auf den Zahn,
+Fing etlichmal von Christo an;
+Da war der ganze Mensch Respekt,
+Hätte fast nie das Haupt bedeckt.
+Aber der Herr sah ziemlich klar,
+Daß er drum nicht im Herzen war,
+Daß er dem Mann im Hirne stand
+Als wie ein Holzschnitt an der Wand.
+Sie waren bald der Stadt so nah,
+Daß man die Türme klärlich sah.
+Ach, sprach der Mann, hier ist der Ort,
+Aller Wünsche sichrer Friedensport,
+Hier ist des Landes Mittelthron;
+Gerechtigkeit und Religion
+Spedieren, wie der Selzerbrunn
+Petschiert, ihren Einfluß ringsherum.
+
+    Sie kamen immer näher an,
+Sah immer der Herr nichts Seinigs dran.
+Sein innres Zutraun war gering,
+Als wie er einst zum Feigbaum ging.
+Wollt aber doch eben weitergehn
+Und ihm recht unter die Äste sehn.
+So kamen sie denn unters Tor;
+
+    Christus kam ihnen ein Fremdling vor,
+Hätt ein edel Gesicht und einfach Kleid.
+Sprachen: Der Mann kommt gar wohl weit.
+Fragt' ihn der Schreiber, wie er hieß'?
+Er gar demütig die Worte ließ:
+
+    »Kinder, ich bin des Menschen Sohn«,
+Und ganz gelassen ging davon.
+Seine Worte hatten von jeher Kraft,
+Der Schreiber stande wie vergafft,
+Der Wache war, sie wußt nicht wie,
+Fragt keiner: Was bedienen Sie?
+Er ging grad durch und war vorbei.
+Da fragten sie sich überlei,
+Als in Rapport sies wollten tragen:
+Was tät der Mann Kurioses sagen?
+Sprach er wohl unsrer Nase Hohn?
+Er sagt': er wär des Menschen Sohn!
+Sie dachten lang, doch auf einmal
+Sprach ein branntweinger Korporal:
+Was mögt ihr euch den Kopf zerreißen!
+Sein Vater hat wohl Mensch geheißen.
+
+    Christ sprach zu seinem Gleiter dann:
+»So führet mich zum Gottes-Mann,
+Den ihr als einen solchen kennt
+Und ihn Herr Oberpfarrer nennt.«
+
+    Dem Herren Pfaff das krabbeln tät,
+War selber nicht so hoch am Brett.
+Hätt so viel Häute ums Herze ring,
+Daß er nicht spürt', mit wem er ging,
+Auch nicht einmal einer Erbse groß.
+Doch war er gar nicht liebelos
+Und dacht: kommt alles ringsherum,
+Verlangt er ein Viatikum.
+
+    Kamen ans Oberpfarrers Haus,
+Stand von uralters noch im Ganzen.
+Reformation hätt ihren Schmaus
+Und nahm den Pfaffen Hof und Haus,
+Um wieder Pfaffen 'nein zu pflanzen,
+Die nur in allem Grund der Sachen
+Mehr schwätzen, weniger Grimassen machen.
+Sie klopften an, sie schellten an,
+Weiß nicht bestimmt, was sie getan.
+Genug, die Köchin kam hervor,
+Aus der Schürz ein Krauthaupt verlor,
+Und sprach: Der Herr ist im Konvent,
+Ihr heut nicht mit ihm sprechen könnt.
+»Wo ist denn das Konvent?« sprach Christ.
+Was hilft es Euch, wenn Ihrs auch wißt,
+Versetzt' die Köchin porrisch drauf,
+Dahin geht nicht eines jeden Lauf.
+»Möchts doch gern wissen!« tät er fragen.
+Sie hätt nicht Herz, es zu versagen,
+Wie er den Weg zur Weiblein-Brust
+Von alten Zeiten wohl noch wußt.
+Sie zeigt's ihm an, und er tät gehn,
+Wie ihrs bald weiter werdet sehn.
+
+<nonum><center>*</center></nonum>
+
+Es waren, die den Vater auch gekannt;
+Wo sind denn die? – Eh, man hat sie verbrannt.    
+</body>
+</poem>
+
+<poem id="goethe2018012902">
+<head>
+   <title>Vor Gericht</title>
+   <firstline>Von wem ich es habe, das sag' ich euch nicht</firstline>
+   <!-- Stjålet fra http://gutenberg.spiegel.de/buch/gedichte-9503/138 -->
+   <quality>korrektur1</quality>
+</head>
+<body>
+Von wem ich es habe, das sag' ich euch nicht,
+Das Kind in meinem Leib. –
+Pfui! speit ihr aus: die Hure da! –
+Bin doch ein ehrlich Weib.
+
+Mit wem ich mich traute, das sag' ich euch nicht.
+Mein Schatz ist lieb und gut,
+Trägt er eine goldene Kett' am Hals,
+Trägt er einen strohernen Hut.
+
+Soll Spott und Hohn getragen sein,
+Trag' ich allein den Hohn.
+Ich kenn' ihn wohl, er kennt mich wohl,
+Und Gott weiß auch davon.
+
+Herr Pfarrer und Herr Amtmann ihr,
+Ich bitte, laßt mich in Ruh!
+Es ist mein Kind, es bleibt mein Kind,
+Ihr gebt mir ja nichts dazu.    
+</body>
+</poem>
+
+<poem id="goethe2018050901">
+<head>
+   <title>Der Wanderer</title>
+   <subtitle>Wetzlar 1772</subtitle>
+   <firstline>Gott segne dich, junge Frau</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+<nonum><center>Wandrer.</center></nonum>
+Gott segne dich, junge Frau,
+Und den säugenden Knaben
+An deiner Brust!
+Lass mich an der Felsenwand hier
+In des Ulmbaums Schatten
+Meine Bürde werfen,
+Neben dir ausruhn.
+
+<nonum><center>Frau.</center></nonum>
+Welch Gewerb treibt dich
+Durch des Tages Hitze
+Den staubigen Pfad her?
+Bringst du Waren aus der Stadt
+Im Land herum?  —  
+Lächelst, Fremdling,
+Über meine Frage?
+
+<nonum><center>Wandrer.</center></nonum>
+Keine Ware bring‘ ich aus der Stadt
+Kühl wird nun der Abend
+Zeige mir den Brunnen,
+D‘raus du trinkest,
+Liebes junges Weib!
+
+<nonum><center>Frau.</center></nonum>
+Hier den Felsenpfad hinauf.
+Geh voran! Durchs Gebüsche
+Geht der Pfad nach der Hütte,
+D‘rin ich wohne,
+Zu dem Brunnen,
+Den ich trinke.
+
+<nonum><center>Wandrer.</center></nonum>
+Spuren ordnender Menschenhand
+Zwischen dem Gesträuch!
+Diese Steine hast du nicht gefügt,
+Reichhinstreuende Natur!
+
+<nonum><center>Frau.</center></nonum>
+Weiter hinauf!
+
+<nonum><center>Wandrer.</center></nonum>
+Von dem Moos gedeckt ein Architrav!
+Ich erkenne dich, bildender Geist!
+Hast dein Siegel in den Stein geprägt.
+
+<nonum><center>Frau.</center></nonum>
+Weiter, Fremdling!
+
+<nonum><center>Wandrer.</center></nonum>
+Eine Inschrift, über die ich trete!
+Nicht zu lesen!
+Weggewandelt seid ihr,
+Tiefgegrabne Worte,
+Die ihr eures Meisters Andacht
+Tausend Enkeln zeigen solltet.
+
+<nonum><center>Frau.</center></nonum>
+Staunest, Fremdling,
+Diese Stein‘ an?
+Droben sind der Steine viel
+Um meine Hütte.
+
+<nonum><center>Wandrer.</center></nonum>
+Droben?
+
+<nonum><center>Frau.</center></nonum>
+Gleich zur Linken
+Durchs Gebüsch hinan;
+Hier.
+
+<nonum><center>Wandrer.</center></nonum>
+Ihr Musen und Grazien!
+
+<nonum><center>Frau.</center></nonum>
+Das ist meine Hütte.
+
+<nonum><center>Wandrer.</center></nonum>
+Eines Tempels Trümmer!
+
+<nonum><center>Frau.</center></nonum>
+Hier zur Seit‘ hinab
+Quillt der Brunnen,
+Den ich trinke.
+
+<nonum><center>Wandrer.</center></nonum>
+Glühend webst du
+Über deinem Grabe,
+Genius! Über dir
+Ist zusammengestürzt
+Dein Meisterstück,
+O du Unsterblicher!
+
+<nonum><center>Frau.</center></nonum>
+Wart‘, ich hole das Gefäß
+Dir zum Trinken.
+
+<nonum><center>Wandrer.</center></nonum>
+Epheu hat deine schlanke
+Götterbildung umkleidet.
+Wie du emporstrebst
+Aus dem Schutte,
+Säulenpaar!
+Und du, einsame Schwester dort,
+Wie ihr,
+Düstres Moos auf dem heiligen Haupt,
+Majestätisch trauernd herabschaut
+Auf die zertrümmerten
+Zu euren Füßen,
+Eure Geschwister!
+In des Brombeergesträuches Schatten
+Deckt die Schutt und Erde,
+Und hohes Gras wankt drüber hin!
+Schätzest du so, Natur,
+Deines Meisterstücks Meisterstück?
+Unempfindlich zertrümmerst du
+Dein Heiligtum?
+Säest Disteln d‘rein?
+
+<nonum><center>Frau.</center></nonum>
+Wie der Knabe schläft!  —  
+Willst du in der Hütte ruhn,
+Fremdling? Willst du hier
+Lieber in dem Freien bleiben?
+Es ist kühl! Nimm den Knaben,
+Dass ich Wasser schöpfen gehe.
+Schlafe, Lieber! Schlaf!
+
+<nonum><center>Wandrer.</center></nonum>
+Süß ist deine Ruh!
+Wie‘s, in himmlischer Gesundheit
+Schwimmend, ruhig atmet!
+Du, geboren über Resten
+Heiliger Vergangenheit,
+Ruh‘ ihr Geist auf dir!
+Welchen der umschwebt,
+Wird in Götterselbstgefühl
+Jedes Tags genießen.
+Voller Keim blüh‘ auf,
+Des glänzenden Frühlings
+Herrlicher Schmuck,
+Und leuchte vor deinen Gesellen!
+Und welkt die Blütenhülle weg,
+Dann steig‘ aus deinem Busen
+Die volle Frucht
+Und reife der Sonn‘ entgegen!
+
+<nonum><center>Frau.</center></nonum>
+Gesegne‘s Gott! — Und schläft er noch?
+Ich habe nichts zum frischen Trunk
+Als ein Stück Brot, das ich dir bieten kann.
+
+<nonum><center>Wandrer.</center></nonum>
+Ich danke dir.
+Wie herrlich alles blüht umher
+Und grünt!
+
+<nonum><center>Frau.</center></nonum>
+Mein Mann wird bald
+Nach Hause sein
+Vom Feld. O bleibe, bleibe, Mann!
+Und iss mit uns das Abendbrot.
+
+<nonum><center>Wandrer.</center></nonum>
+Ihr wohnet hier?
+
+<nonum><center>Frau.</center></nonum>
+Da, zwischen dem Gemäuer her,
+Die Hütte baute noch mein Vater
+Aus Ziegeln und des Schuttes Steinen
+Hier wohnen wir.
+Er gab mich einem Ackersmann
+Und starb in unsern Armen.   —  
+Hast du geschlafen, liebes Herz?
+Wie er munter ist und spielen will!
+Du Schelm!
+
+<nonum><center>Wandrer.</center></nonum>
+Natur! Du ewig keimende,
+Schaffst jeden zum Genuss des Lebens,
+Hast deine Kinder alle mütterlich
+Mit Erbteil ausgestattet, einer Hütte.
+Hoch baut die Schwalb‘ an das Gesims,
+Unfühlend, welchen Zierat
+Sie verklebt;
+Die Raup‘ umspinnt den goldnen Zweig
+Zum Winterhaus für ihre Brut;
+Und du flickst zwischen der Vergangenheit
+Erhabne Trümmer
+Für dein Bedürfniss
+Eine Hüte, o Mensch,
+Genießest über Gräbern!   —  
+Leb‘ wohl, du glücklich Weib!
+
+<nonum><center>Frau.</center></nonum>
+Du willst nicht bleiben?
+
+<nonum><center>Wandrer.</center></nonum>
+Gott erhalt‘ euch,
+Segn‘ euern Knaben!
+
+<nonum><center>Frau.</center></nonum>
+Glück auf den Weg!
+
+<nonum><center>Wandrer.</center></nonum>
+Wohin führt mich der Pfad
+Dort übern Berg?
+
+<nonum><center>Frau.</center></nonum>
+Nach Cuma.
+
+<nonum><center>Wandrer.</center></nonum>
+Wie weit ist‘s hin?
+
+<nonum><center>Frau.</center></nonum>
+Drei Meilen gut.
+
+<nonum><center>Wandrer.</center></nonum>
+Leb‘ wohl!
+O leite meinen Gang, Natur!
+Den Fremdlings-Reisetritt,
+Den über Gräber
+Heiliger Vergangenheit
+Ich wandle.
+Leit‘ ihn zum Schutzort,
+Vorm Nord gedeckt,
+Und wo dem Mittagsstrahl
+Ein Pappelwäldchen wehrt.
+Und kehr‘ ich dann
+Am Abend heim
+Zur Hütte,
+Vergoldet vom letzten Sonnenstrahl,
+Lass mich empfangen solch ein Weib,
+Den Knaben auf dem Arm!    
+</body>
+</poem>
+
+<poem id="goethe2018101101">
+<head>
+   <title>Meine Göttin</title>
+   <firstline>Welcher Unsterblichen</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Welcher Unsterblichen
+Soll der höchste Preis sein?
+Mit niemand streit ich,
+Aber ich geb ihn
+Der ewig beweglichen,
+Immer neuen,
+Seltsamen Tochter Jovis,
+Seinem Schoßkinde,
+Der Phantasie.
+
+Denn ihr hat er
+Alle Launen,
+Die er sonst nur allein
+Sich vorbehält,
+Zugestanden
+Und hat seine Freude
+An der Törin.
+
+Sie mag rosenbekränzt
+Mit dem Lilienstengel
+Blumentäler betreten,
+Sommervögeln gebieten
+Und leichtnährenden Tau
+Mit Bienenlippen
+Von Blüten saugen;
+
+Oder sie mag
+Mit fliegendem Haar
+Und düsterm Blicke
+Im Winde sausen
+Um Felsenwände,
+Und tausendfarbig,
+Wie Morgen und Abend,
+Immer wechselnd
+Wie Mondesblicke,
+Den Sterblichen scheinen.
+
+Laßt uns alle
+Den Vater preisen!
+Den alten, hohen,
+Der solch eine schöne,
+Unverwelkliche Gattin
+Dem sterblichen Menschen
+Gesellen mögen!
+
+Denn uns allein
+Hat er sie verbunden
+Mit Himmelsband
+Und ihr geboten,
+In Freud und Elend
+Als treue Gattin
+Nicht zu entweichen
+
+Alle die andern
+Armen Geschlechter
+Der kinderreichen,
+Lebendigen Erde
+Wandeln und weiden
+In dunkelm Genuß
+Und trüben Schmerzen
+Des augenblicklichen
+Beschränkten Lebens,
+Gebeugt vom Joche
+Der Notdurft.
+
+Uns aber hat er
+Seine gewandteste,
+Verzärtelte Tochter,
+Freut euch! gegönnt.
+Begegnet ihr lieblich,
+Wie einer Geliebten!
+Laßt ihr die Würde
+Der Frauen im Haus!
+
+Und daß die alte
+Schwiegermutter Weisheit
+Das zarte Seelchen
+Ja nicht beleidge!
+
+Doch kenn ich ihre Schwester,
+Die ältere, gesetztere,
+Meine stille Freundin:
+O daß die erst
+Mit dem Lichte des Lebens
+Sich von mir wende,
+Die edle Treiberin,
+Trösterin Hoffnung!
+</body>
+</poem>
+
+<poem id="goethe2018121101">
+<head>
+   <title>Der Junggesell und der Mühlbach</title>
+   <firstline>Wo willst du klares Bächlein hin</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+<nonum><center><i>Gesell</i></center></nonum>
+Wo willst du klares Bächlein hin,
+So munter?
+Du eilst mit frohem, leichtem Sinn
+Hinunter.
+Was suchst du eilig in dem Tal?
+So höre doch und sprich einmal!
+
+<nonum><center><i>Bach</i></center></nonum>
+Ich war ein Bächlein, Junggesell;
+Sie haben
+Mich so gefaßt, damit ich schnell
+Im Graben,
+Zur Mühle dort hinunter soll,
+Und immer bin ich rasch und voll.
+
+<nonum><center><i>Gesell</i></center></nonum>
+Du eilest mit gelaßnem Mut
+Zur Mühle,
+Und weißt nicht, was ich junges Blut
+Hier fühle.
+Es blickt die schöne Müllerin
+Wohl freundlich manchmal nach dir hin?
+
+<nonum><center><i>Bach</i></center></nonum>
+Sie öffnet früh beim Morgenlicht
+Den Laden,
+Und kommt, ihr liebes Angesicht
+Zu baden.
+Ihr Busen ist so voll und weiß;
+Es wird mir gleich zum Dampfen heiß.
+
+<nonum><center><i>Gesell</i></center></nonum>
+Kann sie im Wasser Liebesglut
+Entzünden,
+Wie soll man Ruh' mit Fleisch und Blut
+Wohl finden?
+Wenn man sie einmal nur gesehn,
+Ach! immer muß man nach ihr gehn.
+
+<nonum><center><i>Bach</i></center></nonum>
+Dann stürz' ich auf die Räder mich
+Mit Brausen,
+Und alle Schaufeln drehen sich
+Im Sausen.
+Seitdem das schöne Mädchen schafft,
+Hat auch das Wasser beßre Kraft.
+
+<nonum><center><i>Gesell</i></center></nonum>
+Du Armer, fühlst du nicht den Schmerz
+Wie andre?
+Sie lacht dich an und sagt im Scherz:
+"Nun wandre!"
+Sie hielte dich wohl selbst zurück
+Mit einem süßen Liebesblick?
+
+<nonum><center><i>Bach</i></center></nonum>
+Mir wird so schwer, so schwer, vom Ort
+Zu fließen:
+Ich krümme mich nur sachte fort
+Durch Wiesen;
+Und käm es erst auf mich nur an,
+Der Weg wär bald zurückgetan.
+
+<nonum><center><i>Gesell</i></center></nonum>
+Geselle meiner Liebesqual,
+Ich scheide
+Du murmelst mir vielleicht einmal
+Zur Freude.
+Geh', sag' ihr gleich, und sag ihr oft,
+Was still der Knabe wünscht und hofft.    
+</body>
+</poem>
+
+<poem id="goethe2019010801">
+<head>
+   <title>Vanitas! Vanitatum vanitas!</title>
+   <firstline>Ich hab' mein Sach' auf Nichts gestellt</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Ich hab' mein Sach' auf Nichts gestellt,
+    Juchhe!
+Drum ist's so wohl mir in der Welt.
+    Juchhe!
+Und wer will mein Kamerade sein,
+Der stoße mit an, der stimme mit ein,
+Bei dieser Neige Wein!
+
+Ich stellt' mein Sach' auf Geld und Gut.
+    Juchhe!
+Darüber verlor ich Freud' und Mut.
+    O weh!
+Die Münze rollte hier und dort,
+Und hascht' ich sie an einem Ort,
+Am andern war sie fort.
+
+Auf Weiber stellt' ich nun mein' Sach'.
+    Juchhe!
+Daher mir kam viel Ungemach.
+    O weh!
+Die Falsche sucht' sich ein ander Teil,
+Die Treue macht' mir Langeweil;
+Die Beste war nicht feil.
+
+Ich stellt' mein Sach' auf Reis' und Fahrt.
+    Juchhe!
+Und ließ meine Vaterlandesart.
+    O weh!
+Und mir behagt' es nirgends recht;
+Die Kost war fremd, das Bett war schlecht,
+Niemand verstand mich recht.
+
+Ich stellt' mein' Sach' auf Ruhm und Ehr'.
+    Juchhe!
+Und sieh! gleich hatt' ein andrer mehr.
+    O weh!
+Wie ich mich hatt' hervorgetan,
+Da sahen die Leute scheel mich an,
+Hatte keinem recht getan.
+
+Ich setzt' mein Sach' auf Kampf und Krieg.
+    Juchhe!
+Und uns gelang so mancher Sieg.
+    Juchhe!
+Wir zogen in Feindes Land hinein,
+Dem Freunde sollt's nicht viel besser sein,
+Und ich verlor ein Bein.
+
+Nun hab' ich mein Sach' auf Nichts gestellt.
+    Juchhe!
+Und mein gehört die ganze Welt.
+    Juchhe!
+Zu Ende geht nun Sang und Schmaus.
+Nur trinkt mir alle Neigen aus;
+Die letzte muß heraus!    
+</body>
+</poem>
+
+<poem id="goethe2019013101">
+<head>
+   <title><num>XIII</num>Warnung</title>
+   <firstline>Am Jüngsten Tag, wenn die Posaunen schallen</firstline>
+   <quality>korrektur1</quality>
+   <!-- https://www.textlog.de/18578.html -->
+   <keywords>sonnet</keywords>
+</head>
+<body>
+Am Jüngsten Tag, wenn die Posaunen schallen
+Und alles aus ist mit dem Erdeleben,
+Sind wir verpflichtet, Rechenschaft zu geben
+Von jedem Wort, das unnütz uns entfallen.
+ 
+Wie wird's nun werden mit den Worten allen,
+In welchen ich so liebevoll mein Streben
+Um deine Gunst dir an den Tag gegeben,
+Wenn diese bloß an deinem Ohr verhallen?
+ 
+Darum bedenk', o Liebchen! dein Gewissen,
+Bedenk' im Ernst, wie lange du gezaudert,
+Daß nicht der Welt solch Leiden widerfahre.
+ 
+Werd' ich berechnen und entschuld'gen müssen,
+Was alles unnütz ich vor dir geplaudert;
+So wird der Jüngste Tag zum vollen Jahre.    
+</body>
+</poem>
+
+<poem id="goethe2019013102">
+<head>
+   <title>Das Sonett</title>
+   <firstline>Sich in erneutem Kunstgebrauch zu üben</firstline>
+   <quality>korrektur1</quality>
+   <!-- https://lyrikwiki.de/mediawiki/index.php/Sonett_(Goethe) -->
+</head>
+<body>
+Sich in erneutem Kunstgebrauch zu üben,
+Ist heil'ge Pflicht, die wir dir auferlegen:
+Du kannst dich auch, wie wir, bestimmt bewegen
+Nach Tritt und Schritt, wie es dir vorgeschrieben.
+
+Denn eben die Beschränkung läßt sich lieben,
+Wenn sich die Geister gar gewaltig regen;
+Und wie sie sich denn auch gebärden mögen,
+Das Werk zuletzt ist doch vollendet blieben.
+
+So möcht' ich selbst in künstlichen Sonetten,
+In sprachgewandter Maßen kühnem Stolze,
+Das Beste, was Gefühl mir gäbe, reimen;
+
+Nur weiß ich hier mich nicht bequem zu betten,
+Ich schneide sonst so gern aus ganzem Holze,
+Und müßte nun doch auch mitunter leimen.    
+</body>
+</poem>
+
+<poem id="goethe2019021201">
+<head>
+   <title>Jägers Abendlied</title>
+   <firstline>Im Felde schleich ich still und wild</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Im Felde schleich ich still und wild,
+Gespannt mein Feuerrohr.
+Da schwebt so licht dein liebes Bild,
+Dein süßes Bild mir vor.
+
+Du wandelst jetzt wohl still und mild
+Durch Feld und liebes Tal,
+Und ach, mein schnell verrauschend Bild,
+Stellt sich dir’s nicht einmal?
+
+Des Menschen, der die Welt durchstreift
+Voll Unmut und Verdruß,
+Nach Osten und nach Westen schweift,
+Weil er dich lassen muß.
+
+Mir ist es, denk ich nur an dich,
+Als in den Mond zu sehn;
+Ein stiller Friede kommt auf mich,
+Weiß nicht, wie mir geschehn.    
+</body>
+</poem>
+
+<poem id="goethe2019051301">
+<head>
+   <title>Diese Gondel vergleich ich</title>
+   <firstline>Diese Gondel vergleich ich der Wiege</firstline>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Diese Gondel vergleich ich der Wiege,
+    sie schaukelt gefällig
+Und das Kästchen darauf
+    scheint ein geräumiger Sarg.
+Recht so! Zwischen der Wieg und dem Sarg
+    wir schwanken und schweben
+Auf dem großen Kanal
+    sorglos durchs Leben dahin.    
+</body>
+</poem>
+
 <!--
 <poem id="goethe2005060501">
 <head>
    <title></title>
    <toctitle></toctitle>
    <indextitle></indextitle>
-   <firstline></firstline>
+   <firstline> </firstline>
    <quality>korrektur1</quality>
 </head>
 <body>

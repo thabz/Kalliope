@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
-      Edvard Munch: <i>Portræt af den danske forfatter Helge Rode</i>, 1908, olie på lærred, 198 x 96 cm, Moderna Museet, Stockholm.
+  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg" year="1908">
+      Edvard Munch: <i>Portræt af den danske forfatter Helge Rode</i>, 1908, olie på lærred, 198x96 cm, Moderna Museet, Stockholm.
   </picture>
   <picture src="p2.jpg">
       Ebbe Rode: <i>Helge Rode</i>, ukendt år, tegning. Det Kongelige Bibliotek. ,,Skuespilleren Ebbe Rodes (1910-1998) tegning af sin far.''
   </picture>
-  <picture src="p4.jpg">
+  <picture src="p4.jpg" year="1919">
+      Ludvig Peter Karsten: <i>Helge Rode</i>, 1919, olie på lærred, 208x85 cm.
+      <!-- http://www.artnet.com/artists/ludvig-peter-karsten/helge-rode-5jRXhJ8X5BrdTj9K442ZcA2 -->
+  </picture>
+  <picture src="p3.jpg">
       <i>Helge Rode</i>, ukendt år, fotografi. Det Kongelige Bibliotek.
   </picture>
 </pictures>

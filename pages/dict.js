@@ -5,7 +5,7 @@ import React from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
 import * as Links from '../components/links';
-import Nav from '../components/nav';
+import Nav, { kalliopeCrumbs } from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import { KalliopeTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
@@ -33,20 +33,20 @@ const groupsByLetter = (dictItems: Array<DictItem>) => {
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
-export default class extends React.Component {
+type DictProps = {
+  lang: Lang,
+  dictItems: Array<DictItem>,
+};
+export default class extends React.Component<DictProps> {
   static async getInitialProps({ query: { lang } }: { query: { lang: Lang } }) {
     const res = await fetch(createURL('/static/api/dict.json'));
     const dictItems: Array<DictItem> = await res.json();
     return { lang, dictItems };
   }
 
-  props: {
-    lang: Lang,
-    dictItems: Array<DictItem>,
-  };
-
   render() {
     const { lang, dictItems } = this.props;
+    const requestPath = `/${lang}/dict`;
 
     const groups = groupsByLetter(dictItems);
     let sections: Array<SectionForRendering> = [];
@@ -66,13 +66,16 @@ export default class extends React.Component {
 
     return (
       <div>
-        <Head headTitle="Ordbog - Kalliope" />
+        <Head headTitle="Ordbog - Kalliope" requestPath={requestPath} />
         <Main>
-          <Nav lang={lang} title="Ordbog" />
+          <Nav
+            lang={lang}
+            crumbs={[...kalliopeCrumbs(lang), { title: 'Ordbog' }]}
+          />
           <Heading title="Ordbog" />
           <KalliopeTabs lang={lang} selected="dictionary" />
           {renderedGroups}
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

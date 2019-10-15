@@ -2,10 +2,8 @@
 <pictures>
   <picture src="p1.jpg">
   </picture>
-  <picture src="p2.jpg">
-    H. W. Bissen: <i>J.L. Heiberg</i>, 1860.
-  </picture>
-  <picture src="p3.jpg" primary="true" square-src="p3-square.jpg">
+  <picture ref="bissen/heibergjl-1860" />
+  <picture src="p3.jpg" primary="true" square-src="p3-square.jpg" museum="fnm" invnr="A 2533">
     Sophus Schack: <i>Johan Ludvig Heiberg</i>. Frederiksborgmuseet.
   </picture>
   <picture src="p4.jpg">

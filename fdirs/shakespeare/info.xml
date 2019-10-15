@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="shakespeare" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>William</firstname>
+    <lastname>Shakespeare</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1564-04-26</date>
+      <place>Stratford-upon-Avon, Warwickshire, England</place>
+      <note>Dåbsdag</note>
+    </born>
+    <dead>
+      <date>1616-04-23</date>
+      <place>Stratford-upon-Avon, Warwickshire, England</place>
+    </dead>
+  </period>
+  <works>1593,1594,1601,lovers,sonnets,andre</works>
+</person>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="greensteen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Henrik</firstname>
+    <lastname>Greensteen</lastname>
+    <fullname>Henrik Jørgen Greensteen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1833-10-12</date>
+      <place>nær Roskilde</place>
+    </born>
+    <dead>
+      <date>1895-07-11</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1859,1898</works>
+</person>

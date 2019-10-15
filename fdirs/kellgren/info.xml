@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="kellgren" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Johan Henric</firstname>
+    <lastname>Kellgren</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1751-12-01</date>
+      <place>Vestergötland</place>
+    </born>
+    <dead>
+      <date>1795-04-20</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

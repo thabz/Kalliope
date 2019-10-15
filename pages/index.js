@@ -5,7 +5,7 @@ import Head from '../components/head';
 import Main from '../components/main.js';
 import { KalliopeTabs } from '../components/tabs.js';
 import LangSelect from '../components/langselect';
-import Nav, { NavPaging } from '../components/nav';
+import Nav, { NavPaging, kalliopeCrumbs } from '../components/nav';
 import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import * as Links from '../components/links';
@@ -14,15 +14,21 @@ import TextContent from '../components/textcontent.js';
 import SplitWhenSmall from '../components/split-when-small.js';
 import Picture from '../components/picture.js';
 import FormattedDate from '../components/formatteddate.js';
-import type { Lang, NewsItem, TimelineItem } from './helpers/types.js';
+import type {
+  Lang,
+  NewsItem,
+  TimelineItem,
+  PictureItem,
+} from './helpers/types.js';
 import { createURL } from './helpers/client.js';
+import _ from '../pages/helpers/translations.js';
 import 'isomorphic-fetch';
 
-class TodaysEvents extends React.Component {
-  props: {
-    lang: Lang,
-    events: Array<TimelineItem>,
-  };
+type TodaysEventsProps = {
+  lang: Lang,
+  events: Array<TimelineItem>,
+};
+class TodaysEvents extends React.Component<TodaysEventsProps> {
   render() {
     const { lang, events } = this.props;
     if (events == null || events.length == 0) {
@@ -56,13 +62,17 @@ class TodaysEvents extends React.Component {
       .filter(item => item.type === 'image' && item.src != null)
       .map((item, i) => {
         const picture: PictureItem = {
-          src: item.src,
-          lang: item.lang,
+          src: item.src || '',
+          lang: item.content_lang,
           content_html: item.content_html,
         };
         const html = (
           <div className="picture-item">
-            <Picture picture={picture} lang={item.lang} srcPrefix="/static" />
+            <Picture
+              pictures={[picture]}
+              lang={lang}
+              contentLang={item.content_lang}
+            />
           </div>
         );
         return (
@@ -89,7 +99,6 @@ class TodaysEvents extends React.Component {
           }
           :global(div.today-body) {
             line-height: 1.6;
-            font-weight: lighter;
           }
         `}</style>
       </div>
@@ -97,61 +106,65 @@ class TodaysEvents extends React.Component {
   }
 }
 
-class News extends React.Component {
-  props: {
-    news: Array<NewsItem>,
-    lang: Lang,
-  };
-
+type NewsProps = {
+  news: Array<NewsItem>,
+  lang: Lang,
+};
+class News extends React.Component<NewsProps> {
   render() {
     const { lang, news } = this.props;
 
-    const items = news.filter((_, i) => i < 5).map((item, i) => {
-      const { date, content_html, content_lang, title } = item;
+    const items = news
+      .filter((_, i) => i < 5)
+      .map((item, i) => {
+        const { date, content_html, content_lang, title } = item;
+        let renderedTitle = null;
+        if (i === 0 && title != null) {
+          renderedTitle = <h3>{title}</h3>;
+        }
+        return (
+          <div className="news-item" key={date + i}>
+            {renderedTitle}
+            <div className="news-body">
+              <TextContent
+                contentHtml={content_html}
+                contentLang={content_lang}
+                lang={lang}
+              />
+            </div>
+            <div className="news-date">
+              <FormattedDate date={date} lang={lang} />
+            </div>
+            <style jsx>{`
+              div.news-item {
+                margin-bottom: 20px;
+              }
+              div.news-item:first-child {
+                padding-bottom: 40px;
+                border-bottom: 1px solid #757575;
+                margin-bottom: 50px;
+              }
 
-      return (
-        <div className="news-item" key={date + i}>
-          <h3>{title}</h3>
-          <div className="news-body">
-            <TextContent
-              contentHtml={content_html}
-              contentLang={content_lang}
-              lang={lang}
-            />
+              :global(div.news-item h3) {
+                font-weight: 300;
+                font-size: 1.3em;
+                margin: 0 0 20px 0;
+                padding: 0;
+              }
+              div.news-body {
+                line-height: 1.6;
+                font-weight: 300;
+              }
+              div.news-date {
+                margin-top: 5px;
+                font-weight: 300;
+                font-size: 0.8em;
+                color: #757575;
+              }
+            `}</style>
           </div>
-          <div className="news-date">
-            <FormattedDate date={date} lang={lang} />
-          </div>
-          <style jsx>{`
-            div.news-item {
-              margin-bottom: 20px;
-            }
-            div.news-item:first-child {
-              padding-bottom: 40px;
-              border-bottom: 1px solid #777;
-              margin-bottom: 50px;
-            }
-
-            div.news-item h3 {
-              font-weight: lighter;
-              font-size: 1.3em;
-              margin: 0 0 20px 0;
-              padding: 0;
-            }
-            div.news-body {
-              line-height: 1.6;
-              font-weight: lighter;
-            }
-            div.news-date {
-              margin-top: 5px;
-              font-weight: lighter;
-              font-size: 0.8em;
-              color: #777;
-            }
-          `}</style>
-        </div>
-      );
-    });
+        );
+      });
 
     return <div>{items}</div>;
   }
@@ -161,17 +174,16 @@ const zeroPad = n => {
   return n < 10 ? `0${n}` : n;
 };
 
-export default class extends React.Component {
-  props: {
-    lang: Lang,
-    news: Array<NewsItem>,
-    todaysEvents: Array<TimelineItem>,
-    pagingContext: ?{
-      prev: string, // mm-dd
-      next: string, // mm-dd
-    },
-  };
-
+type IndexProps = {
+  lang: Lang,
+  news: Array<NewsItem>,
+  todaysEvents: Array<TimelineItem>,
+  pagingContext: ?{
+    prev: string, // mm-dd
+    next: string, // mm-dd
+  },
+};
+export default class extends React.Component<IndexProps> {
   static async getInitialProps({
     query: { lang, date },
   }: {
@@ -191,8 +203,10 @@ export default class extends React.Component {
       // For debugging we accept an URL-param date with the format 'MM-DD'.
       // When that exists we enable the paging arrow on the top of the page.
       const parts = dayAndMonth.split('-');
+      const month = parseInt(parts[0]) - 1;
+      const day = parseInt(parts[1]);
       const date = new Date();
-      date.setFullYear(new Date().getFullYear(), parts[0] - 1, parts[1]);
+      date.setFullYear(new Date().getFullYear(), month, day);
       const prev = new Date(date.getTime() - 24 * 60 * 60 * 1000);
       const next = new Date(date.getTime() + 24 * 60 * 60 * 1000);
       pagingContext = {
@@ -214,15 +228,16 @@ export default class extends React.Component {
 
   render() {
     const { lang, news, todaysEvents, pagingContext } = this.props;
+    const requestPath = `/${lang}/`;
 
     let navPaging = null;
     if (pagingContext != null) {
       let prevURL = {
-        url: `/${lang}?date=${pagingContext.prev}`,
+        url: `/${lang}/?date=${pagingContext.prev}`,
         title: 'En dag tilbage',
       };
       let nextURL = {
-        url: `/${lang}?date=${pagingContext.next}`,
+        url: `/${lang}/?date=${pagingContext.next}`,
         title: 'En dag frem',
       };
       navPaging = <NavPaging prev={prevURL} next={nextURL} />;
@@ -234,18 +249,18 @@ export default class extends React.Component {
 
     return (
       <div>
-        <Head headTitle="Kalliope" />
+        <Head headTitle="Kalliope" requestPath={requestPath} />
         <Main>
-          <Nav lang="da" rightSide={navPaging} />
+          <Nav lang="da" crumbs={kalliopeCrumbs(lang)} rightSide={navPaging} />
           <Heading title="Kalliope" />
           <KalliopeTabs lang={lang} selected="index" />
           <SidebarSplit sidebar={sidebar}>
             <div>
-              <SubHeading>Nyheder</SubHeading>
+              <SubHeading>{_('Nyheder', lang)}</SubHeading>
               {renderedNews}
             </div>
           </SidebarSplit>
-          <LangSelect lang={lang} />
+          <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>
     );

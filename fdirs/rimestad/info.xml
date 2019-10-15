@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rimestad" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Chr.</firstname>
+    <lastname>Rimestad</lastname>
+    <fullname>Christian Rimestad</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1878-01-30</date>
+      <place inon="on">Frederiksberg</place>
+    </born>
+    <dead>
+      <date>1943-02-25</date>
+    </dead>
+  </period>
+  <works>1905,1908,1910,1920,1926</works>
+</person>

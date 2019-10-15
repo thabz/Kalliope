@@ -1,3 +1,5 @@
+// @flow
+
 // routes.js
 const nextRoutes = require('next-routes');
 const routes = (module.exports = nextRoutes());
@@ -6,10 +8,13 @@ const routes = (module.exports = nextRoutes());
 routes.add('index', '/:lang(da|en)/');
 routes.add('poets', '/:lang(da|en)/poets/:country/:groupBy(name|year)');
 routes.add('poets-looks', '/:lang(da|en)/poets/:country/:groupBy(looks)');
-routes.add('works', '/:lang(da|en)/works/:poetId/');
+routes.add('works', '/:lang(da|en)/works/:poetId');
+routes.add('museum', '/:lang(da|en)/museum/:museumId');
 routes.add('texts', '/:lang(da|en)/texts/:poetId/:type');
+routes.add('alltexts', '/:lang(da|en)/texts/:country/:type/:letter');
 routes.add('bio', '/:lang(da|en)/bio/:poetId');
 routes.add('bibliography', '/:lang(da|en)/bibliography/:poetId');
+routes.add('mentions', '/:lang(da|en)/mentions/:poetId');
 routes.add('work', '/:lang(da|en)/work/:poetId/:workId');
 routes.add('text', '/:lang(da|en)/text/:textId');
 routes.add('keywords', '/:lang(da|en)/keywords');

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="geibel" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Emanuel</firstname>
+    <lastname>Geibel</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1815-10-17</date>
+      <place>Lübeck</place>
+    </born>
+    <dead>
+      <date>1884-04-06</date>
+      <place>Lübeck</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

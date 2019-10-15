@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
-    Ditlev Blunck (1798-1854): <i>Henrik Hertz</i>, 1834. Frederiksborgmuseet.
-  </picture>
+    <picture ref="blunck/1834-henrik-hertz" primary="true" square-src="p1-square.jpg"/>
   <picture src="p2.jpg">
+  </picture>
+  <picture src="p3.jpg" museum="smk" invnr="KKS11662">
+    Franz Wilhelm Obermann: <i>Henrik Hertz</i>, Henrik Olrik (forlæg), xylografi, 155x140mm. Statens Museum for Kunst.
   </picture>
 </pictures>

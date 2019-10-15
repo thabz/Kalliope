@@ -3,8 +3,16 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import flush from 'styled-jsx/server';
 
 export default class MyDocument extends Document {
-  static getInitialProps({ renderPage, query: { lang } }) {
+  static getInitialProps({ renderPage, asPath }) {
     const { html, head, errorHtml, chunks } = renderPage();
+    // TODO: Get all supported langs from somewhere...
+    let lang = 'da';
+    if (asPath.match(/^\/da\//)) {
+      lang = 'da';
+    } else if (asPath.match(/^\/en\//)) {
+      lang = 'en';
+    }
+
     const styles = flush();
     return { lang, html, head, errorHtml, chunks, styles };
   }

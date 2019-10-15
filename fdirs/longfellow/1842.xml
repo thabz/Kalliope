@@ -1,79 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1842" author="longfellow" status="incomplete" type="poetry">
+<kalliopework id="1842" author="longfellow" status="complete" type="poetry">
 <workhead>
-   <title>Ballads and Other Poems</title>
-   <year>1842</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
-   <!-- Taken from the Project Gutenberg Etext #1365 (cphwl10.txt) which was prepared by Don Lainson -->
+    <title>Ballads and other Poems</title>
+    <year>1842</year>
+    <notes>
+        <note>Teksten følger Henry Wadsworth Longfellow: <i>Ballads and other Poems</i>, 2nd edition, John Owen, Cambridge, 1842.</note>
+        <note>Noter med en foranstillet asterisk er digterens egne.</note>
+        <note>Bidrag fra Henrik Nielsen.</note>
+    </notes>
+    <pictures>
+        <picture src="1842-p1.jpg">Titelbladet til <i>Ballads and other Poems</i> (1842) lyder ,,Ballads / and / other poems. / by / Henry Wadsworth Longfellow, / Author of “Voices of the Night”, / “Hyperion,” &amp;c. // Second edition. // Cambridge / Published by John Owen. // M DCCC XLII.''</picture>
+    </pictures>
+    <source facsimile="1842.pdf" facsimile-pages-num="142" facsimile-pages-offset="4">Henry Wadsworth Longfellow: <i>Ballads and other Poems</i>, 2nd edition, John Owen, Cambridge, 1842.</source>
 </workhead>
 <workbody>
 
+<prose id="longfellow2019041301">
+<head>
+    <title>Preface</title>
+    <source pages="VII-XXV" facsimile-pages="13-31" />
+    <keywords>tegner</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+   There is one poem in this volume, in reference to which a few introductory remarks may be useful It is <i>The Children of the Lord's Supper,</i> from the Swedish of Bishop Tegnér; a poem which enjoys no inconsiderable reputation in the North of Europe, and for its beauty and simplicity merits the attention of English readers. It is an Idyl, descriptive of scenes in a Swedish village; and belongs to the same class of poems, as the <i>Luise</i> of Voss and the <i>Hermann und Dorothea</i> of <a poet="goethe">Göthe</a>. But the Swedish Poet has been guided by a surer taste, than his German predecessors. His tone is pure and elevated; and he rarely, if ever, mistakes what is trivial for what is simple.
+   There is something patriarchal still lingering about rural life in Sweden, which renders it a fit theme for song. Almost primeval simplicity reigns over that Northern land, — almost primeval solitude and stillness. You pass out from the gate of the city, and, as if by magic, the scene changes to a wild, woodland landscape. Around you are forests of fir. Over head hang the long, fan-like branches, trailing with moss, and heavy with red and blue cones. Under foot is a carpet of yellow leaves; and the air is warm and balmy. On a wooden bridge you cross a little silver stream; and anon come forth into a pleasant and sunny land of farms. Wooden fences divide the adjoining fields. Across the road are gates, which are opened by troops of children. The peasants take off their hats as you pass; you sneeze, and they cry, “God bless you.” The houses in the villages and smaller towns are all built of hewn timber, and for the most part painted red. The floors of the taverns are strewn with the fragrant tips of fir boughs. In many villages there are no taverns, and the peasants take turns in receiving travellers. The thrifty housewife shows you into the best chamber, the walls of which are hung round with rude pictures from the Bible; and brings you her heavy silver spoons, — an heirloom, — to dip the curdled milk from the pan. You have oaten cakes baked some months before; or bread with anise-seed and coriander in it, or perhaps a little pine bark.
+   Meanwhile the sturdy husband has brought his horses from the plough, and harnessed them to your carriage. Solitary travellers come and go in uncouth one-horse chaises. Most of them have pipes in their mouths, and hanging around their necks in front, a leather wallet, in which they carry tobacco, and the great bank notes of the country, as large as your two hands. You meet, also, groups of Dalekarlian peasant women, travelling homeward or town-ward in pursuit of work. They walk barefoot, carrying in their hands their shoes, which have high heels under the hollow of the foot, and soles of birch bark.
+   Frequent, too, are the village churches, standing by the road-side, each in its own little garden of Gethsemane. In the parish register great events are doubtless recorded. Some old king was christened or buried in that church; and a little sexton, with a rusty key, shows you the baptismal font, or the coffin. In the church-yard are a few flowers, and much green grass; and daily the shadow of the church spire, with its long tapering finger, counts the tombs, representing a dialplate of human life, on which the hours and minutes are the graves of men. The stones are flat, and large, and low, and perhaps sunken, like the roofs of old houses. On some are armorial bearings; on others only the initials of the poor tenants, with a date, as on the roofs of Dutch cottages. They all sleep with their heads to the westward. Each held a lighted taper in his hand when he diedj and in his coffin were placed his little hearttreasures, and a piece of money for his last journey. Babes that came lifeless into the world were carried in the arms of gray-haired old men to the only cradle they ever slept in; and in the shroud of the dead mother were laid the little garments of the child, that lived and died in her bosom. And over this scene the village pastor looks from his window in the stillness of midnight, and says in his heart, “How quietly they rest, all the departed!”
+   Near the church-yard gate stands a poorbox, fastened to a post by iron bands, and secured by a padlock, with a sloping wooden roof to keep off the rain. If it be Sunday, the peasants sit on the church steps and con their psalm-books. Others are coming down the road with their beloved pastor, who talks to them of holy things from beneath his broad-brimmed hat. He speaks of fields and harvests, and of the parable of the sower, that went forth to sow. He leads them to the Good Shepherd, and to the pleasant pastures of the spirit-land. He is their patriarch, and, like Melchizedek, both priest and king, though he has no other throne than the church pulpit. The women carry psalm-books in their hands, wrapped in silk handkerchiefs, and listen devoutly to the good man's words. But the young men, like Gallio, care for none of these things. They are busy counting the plaits in the kirtles of the peasant girls, their number being an indication of the wearer's wealth. It may end in a wedding.
+   I will endeavour to describe a village wedding in Sweden. It shall be in summer time, that there may be flowers, and in a southern province, that the bride may be fair. The early song of the lark and of chanticleer are mingling in the clear morning air, and the sun, the heavenly bridegroom with golden locks, arises in the east, just as our earthly this the host replies, “Yes; were you seven times as many, you should all be welcome; and in token thereof receive this cup.” Whereupon each herald receives a can of ale; and soon after the whole jovial company comes storming into the farmer's yard, and, riding round the May-pole, which stands in the centre, alights amid a grand salute and flourish of music.
+   In the hall sits the bride, with a crown upon her head and a tear in her eye, like the Virgin Mary in old church paintings. She is dressed in a red boddice and kirtle, with loose linen sleeves. There is a gilded belt around her waist; and around her neck strings of golden beads, and a golden chain. On the crown rests a wreath of wild roses, and below it another of cypress. Loose over her shoulders falls her flaxen hair; and her blue innocent eyes are fixed upon the ground. O thou good soul! thou hast hard hands, but a soft heart! Thou art poor. The very ornaments thou wearest are not thine. They have been hired for this great day. Yet art thou rich; rich in health, rich in hope, rich in thy first, young, fervent love. The blessing of heaven be upon thee! So thinks the parish priest, as he joins together the hands of bride and bridegroom, saying in deep, solemn tones, — “I give thee in marriage this damsel, to be thy wedded wife in all honor, and to share the half of thy bed, thy lock and key, and every third penny which you two may possess, or may inherit, and all the rights which Upland's laws provide, and the holy king Erik gave.”
+   The dinner is now served, and the bride sits between the bridegroom and the priest. The Spokesman delivers an oration after the ancient custom of his fathers. He interlards it well with quotations from the Bible; and invites the Saviour to be present at this marriage feast, as he was at the marriage feast in Cana of Galilee. The table is not sparingly set forth. Each makes a long arm, and the feast goes cheerly on. Punch and brandy pass round between the courses, and here and there a pipe is smoked, while waiting for the next dish. They sit long at table; but, as all things must have an end, so must a Swedish dinner. Then the dance begins. It is led off by the bride and the priest, who perform a solemn minuet together. Not till after midnight comes the Last Dance. The girls form a ring around the bride, to keep her from the hands of the married women, who endeavour to break through the magic circle, and seize their new sister. After long struggling they succeed; and the crown is taken from her head and the jewels from her neck, and her boddice is unlaced and her kirtle taken off; and like a vestal virgin clad all in white she goes, but it is to her marriage chamber, not to her grave; and the wedding guests follow her with lighted candles in their hands. And this is a village bridal.
+   Nor must I forget the suddenly changing seasons of the Northern clime. There is no long and lingering sirring, unfolding leaf and blossom one by one; — no long and lingering autumn, pompous Avith many-colored leaves and the glow of Indian summers. But winter and summer are wonderful, and pass into each other. The quail has hardly ceased piping in the corn, when winter from the folds of trailing clouds sows broad-cast over the land snow, icicles, and rattling hail. The days wane apace. Ere long the sun hardly rises above the horizon, or does not rise at all. The moon and the stars shine through the day; only, at noon, they are pale and wan, and in the southern sky a red, fiery glow, as of sunset, burns along the horizon, and then goes out. And pleasantly under the silver moon, and under the silent, solemn stars, ring the steel-shoes of the skaters on the frozen sea, and voices, and the sound of bells.
+   And now the Northern Lights begin to burn, faintly at first, like sunbeams playing in the waters of the blue sea. Then a soft crimson glow tinges the heavens. There is a blush on the cheek of night. The colors come and go; and change from crimson to gold, from gold to crimson. The snow is stained with rosy light. Twofold from the zenith, east and west, flames a fiery sword; and a broad band passes athwart the heavens, like a summer sunset. Soft purple clouds come sailing over the sky, and through their vapory folds the winking stars shine white as silver. With such pomp as this is Merry Christmas ushered in, though only a single star heralded the first Christmas. And in memory of that day the Swedish peasants dance on straw; and the peasant girls throw straws at the timbered roof of the hall, and for every one that sticks in a crack shall a groomsman come to their wedding. Merry Christmas indeed! For pious souls there shall be church songs and sermons, but for Swedish peasants, brandy and nut brown ale in wooden bowls; and the great Yulecake crowned with a cheese, and garlanded with apples, and upholding a three-armed candlestick over the Christmas feast. They may tell tales, too; of Jöns Lundsbracka, and Lunkenfus, and the great Riddar Finke of Pingsdaga.<note>* Titles of Swedish popular tales.</note>
+   And now the glad, leafy mid-summer, full of blossoms and the song of nightingales, is come! Saint John has taken the flowers and festival of heathen Balder; and in every village there is a May-pole fifty feet high, with wreaths and roses and ribands streaming in the wind, and a noisy weathercock on top, to tell the village whence the wind cometh and whither it goeth. The sun does not set till ten o'clock at night; and the children are at play in the streets an hour later. The windows and doors are all open, and you may sit and read till midnight without a candle. O how beautiful is the summer night, which is not night, but a sunless yet unclouded day, descending upon earth with dews, and shadows, and refreshing coolness! How beautiful the long, mild twilight, which like a silver clasp unites to-day with yesterday! How beautiful the silent hour, when Morning and Evening thus sit together, hand in hand, beneath the starless sky of midnight! From the church-tower in the public square the bell tolls the hour, with a soft, musical chime; and the watchman, whose watch-tower is the belfry, blows a blast in his horn, for each stroke of the hammer, and four times, to the four corners of the heavens, in a sonorous voice he chaunts, —
+           “Ho! watchman, ho!
+           Twelve is the clock!
+           God keep our town
+           From fire and brand
+           And hostile hand!
+           Twelve is the clock!”
+From his swallow's nest in the belfry he can see the sun all night long; and farther north the priest stands at his door in the warm midnight, and lights his pipe with a common burning glass.
+   I trust that these remarks will not be deemed irrelevant to the poem, but will lead to a clearer understanding of it. The translation is literal, perhaps to a fault. In no instance have I done the author a wrong, by introducing into his work any supposed improvements or Embellishments of my own. I have preserved even the measure; that inexorable hexameter, in which, it must be confessed, the motions of the English Muse are not unlike those of a prisoner dancing to the music of his chains; and perhaps, as Dr. Johnson said of the dancing dog, “the wonder is not that she should do it so well, but that she should do it at all.”
+   Esaias Tegnér, the author of this poem, was born in the parish of By in Wärmland, in the year 1782. In 1799 he entered the University of Lund, as a student; and in 1812 was appointed Professor of Greek in that institution.
+In 1824 he became Bishop of Wexiö, which office he still holds. He stands first among all the poets of Sweden, living or dead. His principal work is Frithiofs Saga; one of the most remarkable poems of the age. This modern Scald has written his name in immortal runes. He is the glory and boast of Sweden; a prophet, honored in his own country, and adding one more to the list of great names, that adorn her history.
+</body>
+</prose>
+
+<section>
+<head>
+    <title>Ballads</title>
+</head>
+<content>
+
 <poem id="longfellow1999063010">
 <head>
-   <title>The Skeleton in Armor</title>
-   <toctitle>The Skeleton in Armor</toctitle>
-   <indextitle>The Skeleton in Armor</indextitle>
+   <title>The Skeleton in Armour</title>
+   <toctitle>The Skeleton in Armour</toctitle>
+   <indextitle>The Skeleton in Armour</indextitle>
    <firstline>Speak! speak I thou fearful guest</firstline>
+   <notes>
+        <note>* [The following Ballad was suggested to me while riding on the seashore at Newport. A year or two previous a skeleton had been dug up at Fall River, clad in broken and corroded armour; and the idea occurred to me of connecting it with the Round Tower at Newport, generally known hitherto as the Old Wind-Mill, though now claimed by the Danes as a work of their early ancestors. Professor Rafn, in the <i>Mémoires de la Société Royale des Antiquaires du Nord,</i> for 1838-1839, says; "There is no mistaking in this instance the style in which the more ancient stone edifices of the North were constructed, the style which belongs to the Roman or Ante-Gothic architecture, and which, especially after the time of Charlemagne, diffused itself from Italy over the whole of the West and North of Europe, where it continued to predominate until the close of the 12th century; that style, which some authors have, from one of its most striking characteristics, called the round arch style, the same which in England is denominated Saxon and sometimes Norman architecture. On the ancient structure in Newport there are no ornaments remaining, which might possibly have served to guide us in assigning the probable date of its erection. That no vestige whatever is found of the pointed arch, nor any approximation to it, is indicative of an earlier rather than of a later period. From such characteristics as remain, however, we can scarcely form any other inference than one, in which I am persuaded that all, who are familiar with Old-Northern architecture, will concur, that this building was erected AT A PERIOD DECIDEDLY NOT LATER THAN THE 12TH CENTURY. This remark applies, of course, to the original building only, and not to the alterations that it subsequently received; for there are several such alterations in the upper part of the building which cannot be mistaken, and which were most likely occasioned by its being adapted in modern times to various uses, for example as the substructure of a wind-mill, and latterly as a hay magazine. To the same times may be referred the windows, the fire-place, and the apertures made above the columns. That this building could not have been erected for a wind-mill, is what an architect will easily discern." I will not enter into a discussion of the point. It is sufficiently well established for the purpose of a ballad ; though doubtless many an honest citizen of Newport, who has passed his days within sight of the Round Tower, will be ready to exclaim with Sancho; "God bless me! did I not warn you to have a care of what you were doing, for that it was nothing but a wind-mill ; and nobody could mistake it, but one who had the like in his head."]
+        </note>
+   </notes>
+   <source pages="29-41"/>
    <quality>korrektur1</quality>
 </head>
 <body>
-"Speak! speak I thou fearful guest
- Who, with thy hollow breast
- Still in rude armor drest,
-   Comest to daunt me!
- Wrapt not in Eastern balms,
- Bat with thy fleshless palms
- Stretched, as if asking alms,
-   Why dost thou haunt me?"
+“Speak! speak! thou fearful guest
+  Who, with thy hollow breast
+  Still in rude armour drest,
+    Comest to daunt me!
+  Wrapt not in Eastern balms,
+  But with thy fleshless palms
+  Stretched, as if asking alms,
+    Why dost thou haunt me?”
 
 Then, from those cavernous eyes
 Pale flashes seemed to rise,
 As when the Northern skies
-   Gleam in December;
+    Gleam in December;
 And, like the water's flow
 Under December's snow,
 Came a dull voice of woe
-   From the heart's chamber.
+    From the heart's chamber.
 
-"I was a Viking old!
+“I was a Viking old!
 My deeds, though manifold,
 No Skald in song has told,
-   No Saga taught thee!
+    No Saga taught thee!
 Take heed, that in thy verse
 Thou dost the tale rehearse,
 Else dread a dead man's curse;
-   For this I sought thee.
+    For this I sought thee.
 
-"Far in the Northern Land,
+“Far in the Northern Land,
 By the wild Baltic's strand,
 I, with my childish hand,
-   Tamed the gerfalcon;
+    Tamed the ger-falcon;
 And, with my skates fast-bound,
 Skimmed the half-frozen Sound,
-   That the poor whimpering hound
+    That the poor whimpering hound
 Trembled to walk on.
 
-"Oft to his frozen lair
+“Oft to his frozen lair
 Tracked I the grisly bear,
 While from my path the hare
-   Fled like a shadow;
+    Fled like a shadow;
 Oft through the forest dark
 Followed the were-wolf's bark,
 Until the soaring lark
-  Sang from the meadow.
+    Sang from the meadow.
 
-"But when I older grew,
+“But when I older grew,
 Joining a corsair's crew,
 O'er the dark sea I flew
-   With the marauders.
+    With the marauders.
 Wild was the life we led;
 Many the souls that sped,
 Many the hearts that bled,
-  By our stern orders.
+    By our stern orders.
 
-"Many a wassail-bout
+“Many a wassail-bout
 Wore the long Winter out;
 Often our midnight shout
   Set the cocks crowing,
@@ -82,7 +131,7 @@ Measured in cups of ale,
 Draining the oaken pail,
   Filled to o'erflowing.
 
-"Once as I told in glee
+“Once as I told in glee
 Tales of the stormy sea,
 Soft eyes did gaze on me,
   Burning yet tender;
@@ -91,7 +140,7 @@ On the dark Norway pine,
 On that dark heart of mine
   Fell their soft splendor.
 
-"I wooed the blue-eyed maid,
+“I wooed the blue-eyed maid,
 Yielding, yet half afraid,
 And in the forest's shade
   Our vows were plighted.
@@ -100,7 +149,7 @@ Fluttered her little breast
 Like birds within their nest
   By the hawk frighted.
 
-"Bright in her father's hall
+“Bright in her father's hall
 Shields gleamed upon the wall,
 Loud sang the minstrels all,
   Chanting his glory;
@@ -109,7 +158,7 @@ I asked his daughter's hand,
 Mute did the minstrels stand
   To hear my story.
 
-"While the brown ale he quaffed,
+“While the brown ale he quaffed,
 Loud then the champion laughed,
 And as the wind-gusts waft
   The sea-foam brightly,
@@ -118,7 +167,7 @@ Out of those lips unshorn,
 From the deep drinking-horn
   Blew the foam lightly.
 
-"She was a Prince's child,
+“She was a Prince's child,
 I but a Viking wild,
 And though she blushed and smiled,
   I was discarded!
@@ -127,7 +176,7 @@ Follow the sea-mew's flight,
 Why did they leave that night
   Her nest unguarded?
 
-"Scarce had I put to sea,
+“Scarce had I put to sea,
 Bearing the maid with me,
 Fairest of all was she
   Among the Norsemen!
@@ -136,7 +185,7 @@ Waving his armed hand,
 Saw we old Hildebrand,
   With twenty horsemen.
 
-"Then launched they to the blast,
+“Then launched they to the blast,
 Bent like a reed each mast,
 Yet we were gaining fast,
   When the wind failed us;
@@ -145,16 +194,16 @@ Came round the gusty Skaw,
 So that our foe we saw
   Laugh as he hailed us.
 
-"And as to catch the gale
+“And as to catch the gale
 Round veered the flapping sail,
 Death I was the helmsman's hail,
   Death without quarter!
 Mid-ships with iron keel
-Struck we her ribs of steel
+Struck we her ribs of steel;
 Down her black hulk did reel
   Through the black water!
 
-"As with his wings aslant,
+“As with his wings aslant,
 Sails the fierce cormorant,
 Seeking some rocky haunt
   With his prey laden,
@@ -163,7 +212,7 @@ Beating to sea again,
 Through the wild hurricane,
   Bore I the maiden.
 
-"Three weeks we westward bore,
+“Three weeks we westward bore,
 And when the storm was o'er,
 Cloud-like we saw the shore
   Stretching to leeward;
@@ -172,7 +221,7 @@ Built I the lofty tower,
 Which, to this very hour,
   Stands looking seaward.
 
-"There lived we many years;
+“There lived we many years;
 Time dried the maiden's tears
 She had forgot her fears,
   She was a mother.
@@ -181,7 +230,7 @@ Under that tower she lies;
 Ne'er shall the sun arise
   On such another!
 
-"Still grew my bosom then.
+“Still grew my bosom then.
 Still as a stagnant fen!
 Hateful to me were men,
   The sunlight hateful!
@@ -190,14 +239,13 @@ Clad in my warlike gear,
 Fell I upon my spear,
   O, death was grateful!
 
-"Thus, seamed with many scars,
+“Thus, seamed with many scars,
 Bursting these prison bars,
 Up to its native stars
   My soul ascended!
 There from the flowing bowl
 Deep drinks the warrior's soul,
-Skoal! to the Northland! skoal!"
-  Thus the tale ended.
+<i>Skoal!</i> to the Northland! <i>skoal!</i>”<note>* In Scandanavia this is the customary salutation when drinking a health. I have slightly changed the orthography of the word, in order to preserve the correct pronunciation.</note>
 </body>
 </poem>
 
@@ -207,6 +255,7 @@ Skoal! to the Northland! skoal!"
    <toctitle>The Wreck of the Hesperus</toctitle>
    <indextitle>The Wreck of the Hesperus</indextitle>
    <firstline>It was the schooner Hesperus</firstline>
+   <source pages="42-47"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -227,11 +276,11 @@ And he watched how the veering flaw did blow
 
 Then up and spake an old Sailor,
    Had sailed to the Spanish Main,
-"I pray thee, put into yonder port,
+“I pray thee, put into yonder port,
    For I fear a hurricane.
 
-"Last night, the moon had a golden ring,
-   And to-night no moon we see!"
+“Last night, the moon had a golden ring,
+   And to-night no moon we see!”
 The skipper, he blew a whiff from his pipe,
    And a scornful laugh laughed he.
 
@@ -245,10 +294,10 @@ Down came the storm, and smote amain
 She shuddered and paused, like a frighted steed,
    Then leaped her cable's length.
 
-"Come hither! come hither! my little daughter,
+“Come hither! come hither! my little daughter,
    And do not tremble so;
 For  I can weather the roughest gale
-   That ever wind did blow."
+   That ever wind did blow.”
 
 
 He wrapped her warm in his seaman's coat
@@ -256,18 +305,18 @@ He wrapped her warm in his seaman's coat
 He cut a rope from a broken spar,
    And bound her to the mast.
 
-"O father! I hear the church-bells ring,
-   O say, what may it be?"
- "'Tis a fog-bell on a rock-bound coast!"--
+“O father! I hear the church-bells ring,
+   O say, what may it be?”
+“'Tis a fog-bell on a rock-bound coast!”—
    And he steered for the open sea.
 
-"O father! I hear the sound of guns,
-   O say, what may it be?"
-"Some ship in distress, that cannot live
-   In such an angry sea!"
+“O father! I hear the sound of guns,
+   O say, what may it be?”
+“Some ship in distress, that cannot live
+   In such an angry sea!”
 
-"O father! I see a gleaming light
-   O say, what may it be?"
+“O father! I see a gleaming light
+   O say, what may it be?”
 But the father answered never a word,
    A frozen corpse was he.
 
@@ -323,70 +372,607 @@ Christ save us all from a death like this,
 </body>
 </poem>
 
+
+<poem id="longfellow2019041302">
+<head>
+    <title>The Luck of Edenhall</title>
+    <subtitle>From the German of Uhland</subtitle>
+    <firstline>Of Edenhall, the youthful Lord</firstline>
+    <notes>
+        <note>Digtet er en oversættelse af <xref type="translation" poem="uhland2019040901"/> af Ludwig Uhland.</note>
+        <note>* [The tradition, upon which this ballad is founded, and the “shards of the Luck of Edenhall,” still exist in England. The goblet is in the possession of Sir Christopher Musgrave, Bart., of Eden Hall, Cumberland; and is not so entirely shattered, as the ballad leaves it.]</note>
+    </notes>
+    <source pages="48-52"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Of Edenhall, the youthful Lord
+Bids sound the festal trumpet's call;
+He rises at the banquet board,
+And cries, 'mid the drunken revellers all,
+“Now bring me the Luck of Edenhall!”
+
+The butler hears the words with pain,
+The house's oldest seneschal,
+Takes slow from its silken cloth again
+The drinking glass of crystal tall;
+They call it The Luck of Edenhall.
+
+Then said the Lord; “This glass to praise,
+Fill with red wine from Portugal!”
+The gray-beard with trembling hand obeys;
+A purple light shines over all,
+It beams from the Luck of Edenhall.
+
+Then speaks the Lord, and waves it light,
+“This glass of flashing crystal tall
+Gave to my sires the Fountain-Sprite;
+She wrote in it; <i>If this glass doth fall</i>
+<i>Farewell then, O Luck of Edenhall!</i>
+
+“'T was right a goblet the Fate should be
+Of the joyous race of Edenhall!
+Deep draughts drink we right willingly;
+And willingly ring, with merry call,
+Kling! klang! to the Luck of Edenhall!”
+
+First rings it deep, and full, and mild,
+Like to the song of a nightingale;
+Then like the roar of a torrent wild;
+Then mutters at last like the thunder's fall,
+The glorious Luck of Edenhall.
+
+“For its keeper takes a race of might.
+The fragile goblet of crystal tall;
+It has lasted longer than is right;
+Kling! klang! — with a harder blow than all
+Will I try the Luck of Edenhall!”
+
+As the goblet ringing flies apart,
+Suddenly cracks the vaulted hall;
+And through the rift, the wild flames start;
+The guests in dust are scattered all,
+With the breaking Luck of Edenhall!
+
+In storms the foe, with fire and sword;
+He in the night had scaled the wall,
+Slain by the sword lies the youthful Lord,
+But holds in his hand the crystal tall,
+The shattered Luck of Edenhall.
+
+On the morrow the butler gropes alone,
+The gray-beard in the desert hall.
+He seeks his Lord's burnt skeleton,
+He seeks in the dismal ruin's fall
+The shards of the Luck of Edenhall.
+
+“The stone wall,” saith he, “doth fall aside,
+Down must the stately columns fall;
+Glass is this earth's Luck and Pride;
+In atoms shall fall this earthly ball
+One day like the Luck of Edenhall!”
+</body>
+</poem>
+
+<poem id="longfellow2019041303">
+<head>
+    <title>The Elected Knight</title>
+    <firstline>Sir Oluf he rideth over the plain</firstline>
+    <notes>
+        <note>* [The following strange and somewhat mystical ballad is from Nyerup and Rahbek's <i>Danske Viser</i> of the Middle Ages. It seems to refer to the first preaching of Christianity in the North, and to the institution of Knight-Errantry. The three maidens I suppose to be Faith, Hope, and Charity. The irregularities of the original have been carefully preserved in the translation.]</note>
+    </notes>
+    <source pages="53-56"/>
+    <!-- TODO: Find originalen. Jeg tror ikke, det er "Elverskud", måske en afart eller videredigtning af det? -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Sir Oluf he rideth over the plain,
+   Full seven miles broad and seven miles wide,
+But never, ah never can meet with the man
+   A tilt with him dare ride.
+
+He saw under the hill-side
+   A Knight full well equipped;
+His steed was black, his helm was barred;
+   He was riding at full speed.
+
+He wore upon his spurs
+   Twelve little golden birds;
+Anon he spurred his steed with a clang,
+   And there sat all the birds and sang.
+
+He wore upon his mail
+   Twelve little golden wheels;
+Anon in eddies the wild wind blew,
+   And round and round the wheels they flew.
+
+He wore before his breast
+   A lance that was poised in rest;
+And it was sharper than diamond-stone,
+   It made Sir Oluf's heart to groan.
+
+He wore upon his helm,
+   A wreath of ruddy gold;
+And that gave him the Maidens Three,
+   The youngest was fair to behold.
+
+Sir Oluf questioned the Knight eftsoon
+   If he were come from heaven down;
+“Art thou Christ of Heaven,” quoth he,
+   “So will I yield me unto thee.”
+
+“I am not Christ the Great,
+   Thou shalt not yield thee yet;
+I am an Unknown Knight,
+   Three modest Maidens have me bedight.”
+
+“Art thou a Knight elected.
+   And have three Maidens thee bedight;
+So shalt thou ride a tilt this day,
+   For all the Maidens' honor!”
+
+The first tilt they together rode
+   They put their steeds to the test;
+The second tilt they together rode.
+   They proved their manhood best.
+
+The third tilt they together rode,
+   Neither of them would yield;
+The fourth tilt they together rode.
+   They both fell on the field.
+
+Now lie the lords upon the plain,
+   And their blood runs unto death;
+Now sit the Maidens in the high tower,
+   The youngest sorrows till death.
+</body>
+</poem>
+
+</content>
+</section> <!-- Ballads -->
+
+<poem id="longfellow2019041304">
+<head>
+    <title>The Children of the Lord's Supper</title>
+    <subtitle>From the Swedish of Bishop Tegnér</subtitle>
+    <firstline>Pentecost, day of rejoicing, had come. The</firstline>
+    <source pages="59-95"/>
+    <!-- TODO: Find originalen. -->
+    <keywords>heksameter</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Pentecost, day of rejoicing, had come. The church of the village
+Stood gleaming white in the morning's sheen. On the spire of the belfry.
+Tipped with a vane of metal, the friendly flames of the Spring-sun
+Glanced like the tongues of fire, beheld by Apostles aforetime.
+Clear was the heaven and blue, and May, with her cap crowned with roses,
+Stood in her hohday dress in the fields, and the wind and the brooklet
+Murmured gladness and peace, God's-peace! With lips rosy-tinted
+Whispered the race of the flowers, and merry on balancing branches
+Birds were singing their carol, a jubilant hymn to the Highest.
+Swept and clean was the churchyard. Adorned like a leaf-woven arbour
+Stood its old-fashioned gate; and within upon each cross of iron
+Hung was a sweet-scented garland, new twined by the hands of affection.
+Even the dial, that stood on a fountain among the departed,
+(There full a hundred years had it stood,) was embellished with blossoms.
+Like to the patriarch hoary, the sage of his kith and the hamlet,
+Who on his birth-day is crowned by children and children's children,
+So stood the ancient prophet, and mute with his pencil of iron
+Marked on the tablet of stone, and measured the swift-changing moment.
+While all around at his feet, an eternity slumbered in quiet.
+Also the church within was adorned, for this was the season
+In which the young, their parents' hope, and the loved-ones of heaven.
+Should at the foot of the altar renew the vows of their baptism.
+Therefore each nook and corner was swept and cleaned, and the dust was
+Blown from the walls and ceiling, and from the oil-painted benches.
+There stood the church like a garden; the Feast of the Leafy Pavilions<note>* The Feast of the Tabernacles; in Swedish, <i>Löfhyddohögtiden,</i> the Leaf-huts'-high-tide.</note>
+Saw we in hving presentment. From noble arms on the church wall
+Grew forth a cluster of leaves, and the preacher's pulpit of oak-wood
+Budded once more anew, as aforetime the rod before Aaron.
+Wreathed thereon was the Bible with leaves, and the dove, washed with silver.
+Under its canopy fastened, a necklace had on of wind-flowers.
+But in front of the choir, round the altar-piece painted by Hörberg,<note>* The peasant-painter of Sweden. He is known chiefly by his altar-pieces in the village churches.</note>
+Crept a garland gigantic; and bright-curhng tresses of angels
+Peeped, like the sun from a cloud, out of the shadowy leaf-work.
+Likewise the lustre of brass, new-polished, blinked from the ceiling,
+And for lights there were lilies of Pentecost set in the sockets.
+
+   Loud rang the bells already; the thronging crowd was assembled
+Far from valleys and hills, to list to the holy preaching.
+Hark! then roll forth at once the mighty tones from the organ,
+Hover like voices from God, aloft like invisible spirits.
+Like as Elias in heaven, when he cast off from him his mantle,
+Even so cast off the soul its garments of earth; and with one voice
+Chimed in the congregation, and sang an anthem immortal
+Of the subhme Wallín,<note>* A distinguished pulpit-orator and poet. He is particularly remarkable for the beauty and sublimity of his psalms.</note> of David's harp in the North-land
+Tuned to the choral of Luther; the song on its powerful pinions
+Took every hving soul, and lifted it gently to heaven,
+And every face did shine like the Holy One's face upon Tabor.
+Lo! there entered then into the church the Reverend Teacher.
+Father he hight and he was in the parish; a christianly plainness
+Clothed from his head to his feet the old man of seventy winters.
+Friendly was he to behold, and glad as the heralding angel
+Walked he among the crowds, but still a contemplative grandeur
+Lay on his forehead as clear, as on moss-covered grave-stone a sun-beam.
+As in his inspiration (an evening twilight that faintly
+Gleams in the human soul, even now, from the day of creation)
+Th' Artist, the friend of heaven, imagines Saint John when in Patmos;—
+Gray, with his eyes uplifted to heaven, so seemed then the old man;
+Such was the glance of his eye, and such were his tresses of silver.
+All the congregation arose in the pews that were numbered.
+But with a cordial look, to the right and the left hand, the old man
+Nodding all hail and peace, disappeared in the innermost chancel.
+
+   Simply and solemnly now proceeded the Christian service,
+Singing and prayer, and at last an ardent discourse from the old man.
+Many a moving word and warning, that out of the heart came
+Fell like the dew of the morning, like manna on those in the desert.
+Afterwards, when all was finished, the Teacher reëntered the chancel,
+Followed therein by the young. On the right hand the boys had their places,
+Delicate figures, with close-curling hair and cheeks rosy-blooming.
+But on the left-hand of these, there stood the tremulous lilies,
+Tinged with the blushing light of the morning, the diffident maidens,—
+Folding their hands in prayer, and their eyes cast down on the pavement.
+Now came, with question and answer, the catechism. In the beginning
+Answered the children with troubled and fahering voice, but the old man's
+Glances of kindness encouraged them soon, and the doctrines eternal
+Flowed, like the waters of fountains, so clear from lips unpolluted.
+Whene'er the answer was closed, and as oft as they named the Redeemer,
+Lowly louted the boys, and lowly the maidens all courtesied.
+Friendly the Teacher stood, like an angel of light there among them.
+And to the children explained he the holy, the highest, in few words,
+Thorough, yet simple and clear, for sublimity always is simple,
+Both in sermon and song, a child can seize on its meaning.
+Even as the green-growing bud is unfolded when Spring-tide approaches
+Leaf by leaf is developed, and, warmed by the radiant sunshine,
+Blushes with purple and gold, till at last the perfected blossom
+Opens its odorous chalice, and rocks with its crown in the breezes,
+So was unfolded here the Christian lore of salvation,
+Line by line from the soul of childhood. The fathers and mothers
+Stood behind them in tears, and were glad at each well-worded answer.
+
+   Now went the old man up to the altar;—and straightway transfigured
+(So did it seem unto me) was then the affectionate Teacher.
+Like the Lord's Prophet sublime, and awful as Death and as Judgment
+Stood he, the God-commissioned, the soulsearcher, earthward descending.
+Glances, sharp as a sword, into hearts, that to him were transparent
+Shot he; his voice was deep, was low like the thunder afar off.
+So on a sudden transfigured he stood there, he spake and he questioned.
+“This is the faith of the Fathers, the faith the Apostles delivered,
+This is moreover the faith whereunto I baptized you, while still ye
+Lay on your mothers' breasts, and nearer the portals of heaven.
+Slumbering received you then the Holy Church in its bosom;
+Wakened from sleep are ye now, and the light in its radiant splendor
+Bains from the heaven downward;—to-day on the threshold of childhood
+Kindly she frees you again, to examine and make your election,
+For she knows nought of compulsion, only conviction desireth.
+This is the hour of your trial, the turning-point of existence,
+Seed for the coming days; without revocation departeth
+Now from your lips the confession; Bethink ye, before ye make answer!
+Think not, O think not with guile to deceive the questioning Teacher.
+Sharp is his eye to-day, and a curse ever rests upon falsehood.
+Enter not with a lie on Life's journey; the multitude hears you,
+Brothers and sisters and parents, what dear upon earth is and holy
+Standeth before your sight as a witness; the Judge everlasting
+Looks from the sun down upon you, and angels in waiting beside him
+Grave your confession in letters of fire, upon tablets eternal.
+Thus then,—believe ye in God, in the Father who this world created?
+Him who redeemed it, the Son, and the Spirit where both are united?
+Will ye promise me here, (a holy promise!) to cherish
+God more than all things earthly, and every man as a brother?
+Will ye promise me here, to confirm your faith by your living,
+Th' heavenly faith of affection! to hope, to forgive, and to suffer,
+Be what it may your condition, and walk before God in uprightness?
+Will ye promise me this before God and man?”—With a clear voice
+Answered the young men Yes! and Yes! with lips softly-breathing
+Answered the maidens eke. Then dissolved from the brow of the Teacher
+Clouds with the thunders therein, and he spake on in accents more gentle,
+Soft as the evening's breath, as harps by Babylon's rivers.
+
+   “Hail, then, hail to you all! To the heirdom of heaven be ye welcome!
+Children no more from this day, but by covenant brothers and sisters!
+Yet,—for what reason not children? Of such is the kingdom of heaven.
+Here upon earth an assemblage of children, in heaven one father,
+Ruling them as his own household,—forgiving in turn and chastising.
+That is of human life a picture, as Scripture has taught us.
+Blessed are the pure before God! Upon purity and upon virtue
+Resteth the Christian Faith; she herself from on high is descended.
+Strong as a man and pure as a child, is the sum of the doctrine,
+Which the Godlike delivered, and on the cross suffered and died for.
+O! as ye wander this day from childhood's sacred asylum
+Downward and ever downward, and deeper in Age's chill valley,
+O! how soon will ye come,—too soon!—and long to turn backward
+Up to its hill-tops again, to the sun-illumined, where Judgment
+Stood like a father before you, and Pardon, clad like a mother,
+Gave you her hand to kiss, and the loving heart was forgiven,
+Life was a play and your hands grasped after tlie roses of heaven!
+Seventy years have I lived already; the father eternal
+Gave to me gladness and care; but the loveliest hours of existence,
+When I have steadfastly gazed in their eyes, I have instantly known them,
+Known them all, all again;—they were my childhood's acquaintance.
+Therefore take from henceforth, as guides in the paths of existence,
+Prayer, with her eyes raised to heaven, and Innocence, bride of man's childhood.
+Innocence, child beloved, is a guest from the world of the blessed,
+Beautiful, and in her hand a lily; on life's roaring billows
+Swings she in safety, she heedeth them not, in the ship she is sleeping.
+Calmly she gazes around in the turmoil of men; in the desert
+Angels descend and minister unto her; she herself knoweth
+Naught of her glorious attendance; but follows faithful and humble,
+Follows so long as she may her friend; O do not reject her,
+For she cometh from God and she holdeth the keys of the heavens.—
+Prayer is Innocence' friend; and willingly flyeth incessant
+'Twixt the earth and the sky, the carrier-pigeon of heaven.
+Son of Eternity, fettered in Time, and an exile, the Spirit
+Tugs at his chains evermore, and struggles like flames ever upward.
+Still he recalls with emotion his father's manifold mansions,
+Thinks of the land of his fathers, where blossomed more freshly the flowers,
+Shone a more beautiful sun, and he played with the wingèd angels.
+Then grows the earth too narrow, too close; and homesick for heaven
+Longs the wanderer again; and the Spirit's longings are worship;
+Worship is called his most beautiful hour, and its tongue is entreaty.
+Ah! when the infinite burden of life descendeth upon us,
+Crushes to earth our hope, and, under the earth, in the grave-yard,—
+Then it is good to pray unto God; for his sorrowing children
+Turns he ne'er from his door, but he heals and helps and consoles them.
+Yet is it better to pray when all things are prosperous with us,
+Pray in fortunate days, for life's most beautiful Fortune
+Kneels down before the Eternal's throne; and, with hands interfolded,
+Praises thankful and moved the only giver of blessings.
+Or do ye know, ye children, one blessing that comes not from Heaven?
+What has mankind forsooth, the poor! that it has not received?
+Therefore, fall in the dust and pray! The seraphs adoring
+Cover with pinions six their face in the glory of him who
+Hung his masonry pendant on naught, when the world he created.
+Earth declareth his might, and the firmament uttereth his glory.
+Races blossom and die, and stars fall downward from heaven,
+Downward like withered leaves; at the last stroke of midnight, millenniums
+Lay themselves down at his feet, and he sees them, but counts them as nothing.
+Who shall stand in his presence? The wrath of the judge is terrific,
+Casting the insolent down at a glance. When he speaks in his anger
+Hillocks skip like the kid, and mountains leap like the roe-buck.
+Yet,—why are ye afraid, ye children? This awful avenger,
+Ah! is a merciful God! God's voice was not in the earthquake
+Not in the fire, nor the storm, but it was in the whispering breezes.
+Love is the root of creation; God's essence; worlds without number
+Lie in his bosom like children; he made them for this purpose only.
+Only to love and to be loved again, he breathed forth his spirit
+Into the slumbering dust, and upright standing, it laid its
+Hand on its heart, and felt it was warm with a flame out of heaven.
+Quench, O quench not that flame! It is the breath of your being.
+Love is life, but hatred is death. Not father, nor mother
+Loved you, as God has loved you; for 't was that you may be happy
+Gave he his only son. When he bowed down his head in the death-hour
+Solemnized Love its triumph; the sacrifice then was completed.
+Lo! then was rent on a sudden the vail of the temple, dividing
+Earth and heaven apart, and the dead from their sepulchres rising
+Whispered with pallid lips and low in the ears of each other
+Th' answer, but dreamed of before, to creation's enigma,—Atonement!
+Depths of Love are Atonement's depths, for Love is Atonement.
+Therefore, child of mortality, love thou the merciful Father;
+Wish what the Holy One wishes, and not from fear, but affection;
+Fear is the virtue of slaves; but the heart that loveth is willing;
+Perfect was before God, and perfect is Love, and Love only.
+Lovest thou God as thou oughtest, then lovest thou likewise thy brethren;
+One is the sun in heaven, and one, only one, is Love also.
+Bears not each human figure the godlike stamp on his forehead?
+Readest thou not in his face thine origin? Is he not sailing
+Lost like thyself on an ocean unknown, and is he not guided
+By the same stars that guide thee? Why shouldst thou hate then thy brother?
+Hateth he thee, forgive! For 't is sweet to stammer one letter
+Of the Eternal's language;—on earth it is called Forgiveness!
+Knowest thou Him, who forgave, with the crown of thorns round his temples?
+Earnestly prayed for his foes, for his murderers? Say, dost thou know him?
+Ah! thou confesses! his name, so follow likewise his example,
+Think of thy brother no ill, but throw a veil over his failings,
+Guide the erring aright; for the good, the heavenly shepherd
+Took the lost lamb in his arms, and bore it back to its mother.
+This is the fruit of Love, and it is by its fruits that we know it.—
+Love is the creature's welfare, with God; but Love among mortals
+Is but an endless sigh! He longs, and endures, and stands waiting,
+Suffers and yet rejoices, and smiles with tears on his eyelids.
+Hope,—so is called upon earth, his recompense. —Hope, the befriending,
+Does what she can, for she points evermore up to heaven, and faithful
+Plunges her anchor's peak in the depths of the grave, and beneath it
+Paints a more beautiful world, a dim, but a sweet play of shadows!
+Races, better than we, have leaned on her wavering promise,
+Having naught else beside Hope. Then praise we our Father in heaven,
+Him, who has given us more; for to us has Hope been illumined,
+Groping no longer in night; she is Faith, she is living assurance.
+Faith is enlightened Hope; she is light, is the eye of affection,
+Dreams of the longing interprets, and carves their visions in marble.
+Faith is the sun of life; and her countenance shines hke the Prophet's,
+For she has looked upon God; the heaven on its stable foundation
+Draws she with chains down to earth, and the New Jerusalem sinketh
+Splendid with portals twelve in golden vapors descending.
+There enraptured she wanders, and looks at the figures majestic,
+Fears not the wingèd crowd, in the midst of them all is her homestead.
+Therefore love and believe; for works will follow spontaneous
+Even as day does the sun; the Right from the Good is an offspring,
+Love in a bodily shape; and Christian works are no more than
+Animate Love and faith, as flowers are the animate spring-tide.
+Works do follow us all unto God; there stand and bear witness
+Not what they seemed,—but what they were only. Blessed is he who
+Hears their confession secure; they are mute upon earth until death's hand
+Opens the mouth of the silent. Ye children, does Death e'er alarm you?
+Death is the brother of Love, twin-brother is he, and is only
+More austere to behold. With a kiss upon hps that are fading
+Takes he the soul and departs, and rocked in the arms of affection,
+Places the ransomed child, new born, 'fore the face of its father.
+Sounds of his coming already I hear,—see dimly his pinions,
+Swart as the night, but with stars strewn upon them! I fear not before him.
+Death is only release, and in mercy is mute. On his bosom
+Freer breathes, in its coolness, my breast; and face to face standing
+Look I on God as he is, a sun unpolluted by vapors;
+Look on the light of the ages I loved, the spirits majestic,
+Nobler, better than I; they stand by the throne all transfigured.
+Vested in white, and with harps of gold, and are singing an anthem,
+Writ in the climate of heaven, in the language spoken by angels.
+You, in like manner, ye children beloved, he one day shall gather,
+Never forgets he the weary;—then welcome, ye loved ones, hereafter!
+Meanwhile forget not the keeping of vows, forget not the promise,
+Wander from holiness onward to holiness; earth shall ye heed not;
+Earth is but dust and heaven is light; I have pledged you to heaven.
+God of the Universe, hear me! thou fountain of Love everlasting,
+Hark to the voice of thy servant! I send up my prayer to thy heaven!
+Let me hereafter not miss at thy throne one spirit of all these,
+Whom thou hast given me here! I have loved them all like a father.
+May they bear witness for me, that I taught them the way of salvation,
+Faithful, so far as I knew of thy word; again may they know me,
+Fall on their Teacher's breast, and before thy face may I place them,
+Pure as they now are, but only more tried, and exclaiming with gladness,
+Father, lo! I am here, and the children, whom thou hast given me!”
+
+   Weeping he spake in these words; and now at the beck of the old man
+Knee against knee they knitted a wreath round the altar's enclosure.
+Kneeling he read then the prayers of the consecration, and softly
+With him the children read; at the close, with tremulous accents,
+Asked he the peace of heaven, a benediction upon them.
+Now should have ended his task for the day; the following Sunday
+Was for the young appointed to eat of the Lord's holy Supper.
+Sudden, as struck from the clouds, stood the Teacher silent and laid his
+Hand on his forehead, and cast his looks upward; while thoughts high and holy
+Flew through the midst of his soul, and his eyes glanced with wonderful brightness.
+“On the next Sunday, who knows! perhaps I shall rest in the grave-yard!
+Some one perhaps of yourselves, a hly broken untimely,
+Bow down his head to the earth; why delay I? the hour is accomphshed.
+Warm is the heart;—I will so! for to-day grows the harvest of heaven.
+What I began accomplish I now; for what failing therein is
+I, the old man, will answer to God and the reverend father.
+Say to me only, ye children, ye denizens newcome in heaven,
+Are ye ready this day to eat of the bread of Atonement?
+What it denote ill, that know ye full well, I have told it you often.
+Of the new covenant a symbol it is, of Atonement a token,
+Stablished between earth and heaven. Man by his sins and transgressions
+Far has wandered from God, from his essence. 'T was in the beginning
+Fast by the Tree of Knowledge he fell, and it hangs its crown o'er the
+Fall to this day; in the Thought is the Fall; in the Heart the Atonement.
+Infinite is the Fall, the Atonement infinite likewise.
+See! behind me, as far as the old man remembers, and forward,
+Far as Hope in her flight can reach with her wearied pinions,
+Sin and Atonement incessant go through the lifetime of mortals.
+Brought forth is sin full-grown; but Atonement sleeps in our bosoms
+Still as the cradled babe; and dreams of heaven and of angels,
+Cannot awake to sensation; is like the tones in the harp's-strings,
+Spirits imprisoned, that wait evermore the deliverer's finger.
+Therefore, ye children beloved, descended the Prince of Atonement,
+Woke the slumberer from sleep, and she stands now with eyes all resplendent,
+Bright as the vault of the sky, and battles with Sin and o'ercomes her.
+Downward to earth he came and transfigured, thence reascended,
+Not from the heart in like wise, for there he still lives in the Spirit,
+Loves and atones evermore. So long as Time is, is Atonement.
+Therefore with reverence receive this day her visible token.
+Tokens are dead if the things do not Uve. The hght everlasting
+Unto the bhnd man is not, but is born of the eye that has vision.
+Neither in bread nor in vine, but in the heart that is hallowed
+Lieth forgiveness enshrined; the intention alone of amendment
+Fruits of the earth ennobles to heavenly things, and removes all
+Sin and the guerdon of sin. Only Love with his arms wide extended,
+Penitence weeping and praying; the Will that is tried, and whose gold flows
+Purified forth from the flames; in a word, mankind by Atonement
+Breaketh Atonement's bread, and drinketh Atonement's wine-cup.
+But he who Cometh up hither, unworthy, with hate in his bosom,
+Scoffing at men and at God, is guiky of Christ's blessed body,
+And the Redeemer's blood! To himself he eateth and drinketh
+Death and doom! And from this, preserve us, thou heavenly Father!
+Are ye ready, ye children, to eat of the bread of Atonement?”
+Thus with emotion he asked, and together answered the children
+Yes! with deep sobs interrupted. Then read he the due supplications,
+Read the Form of Communion, and in chimed the organ and anthem;
+O! Holy Lamb of God, who takest away our transgressions,
+Hear us! give us thy peace! have mercy, have mercy upon us!
+Th' old man, with trembling hand, and heavenly pearls on his eyelids,
+Filled now the chalice and paten, and dealt round the mystical symbols.
+O! then seemed it to me, as if God, with the broad eye of mid-day,
+Clearer looked in at the windows, and all the trees in the churchyard
+Bowed down their summits of green, and the grass on the graves 'gan to shiver.
+But in the children, (I noted it well; I knew it) there ran a
+Tremor of holy rapture along through their icycold members.
+Decked like an altar before them, there stood the green earth, and above it
+Opened the heaven, as once before Stephen of old;—they beheld there
+Radiant in glory the Father, and on his right hand the Redeemer.
+Under them hear they the clang of harpstrings, and angels from gold clouds
+Beckon to them like brothers, and fan with their pinions of purple.
+
+   Closed was the Teacher's task, and with heaven in their hearts and their faces,
+Up rose the children all, and each bowed him, weeping full sorely,
+Downward to kiss that reverend hand, but all of them pressed he
+Moved to his bosom, and laid, with a prayer, his hands full of blessings.
+Now on the holy breast, and now on the innocent tresses.
+</body>
+</poem>
+
+<section>
+<head>
+    <title>Miscellaneous</title>
+</head>
+<content>
+
 <poem id="longfellow1999063012">
 <head>
    <title>The Village Blacksmith</title>
    <toctitle>The Village Blacksmith</toctitle>
    <indextitle>The Village Blacksmith</indextitle>
    <firstline>Under a spreading chestnut-tree</firstline>
+   <source pages="99-102"/>
    <quality>korrektur1</quality>
 </head>
 <body>
 Under a spreading chestnut-tree
- The village smithy stands;
+  The village smithy stands;
 The smith, a mighty man is he,
- With large and sinewy hands;
+  With large and sinewy hands;
 And the muscles of his brawny arms
- Are strong as iron bands.
+  Are strong as iron bands.
 
 His hair is crisp, and black, and long,
- His face is like the tan;
+  His face is like the tan;
 His brow is wet with honest sweat,
- He earns whate'er he can,
+  He earns whate'er he can,
 And looks the whole world in the face,
- For he owes not any man.
+  For he owes not any man.
 
 Week in, week out, from morn till night,
- You can hear his bellows blow;
+  You can hear his bellows blow;
 You can hear him swing his heavy sledge,
- With measured beat and slow,
+  With measured beat and slow,
 Like a sexton ringing the village bell,
- When the evening sun is low.
+  When the evening sun is low.
 
 And children coming home from school
- Look in at the open door;
+  Look in at the open door;
 They love to see the flaming forge,
- And bear the bellows roar,
+  And bear the bellows roar,
 And catch the burning sparks that fly
- Like chaff from a threshing-floor.
+  Like chaff from a threshing-floor.
 
 He goes on Sunday to the church,
- And sits among his boys;
+  And sits among his boys;
 He hears the parson pray and preach,
- He hears his daughter's voice,
+  He hears his daughter's voice,
 Singing in the village choir,
- And it makes his heart rejoice.
+  And it makes his heart rejoice.
 
 It sounds to him like her mother's voice,
- Singing in Paradise!
+  Singing in Paradise!
 He needs must think of her once more,
- How in the grave she lies;
+  How in the grave she lies;
 And with his haul, rough hand he wipes
- A tear out of his eyes.
+  A tear out of his eyes.
 
-Toiling,--rejoicing,--sorrowing,
- Onward through life he goes;
+Toiling,—rejoicing,—sorrowing,
+  Onward through life he goes;
 Each morning sees some task begin,
- Each evening sees it close
+  Each evening sees it close
 Something attempted, something done,
- Has earned a night's repose.
+  Has earned a night's repose.
 
 Thanks, thanks to thee, my worthy friend,
-For the lesson thou hast taught!
+   For the lesson thou hast taught!
 Thus at the flaming forge of life
- Our fortunes must be wrought;
+  Our fortunes must be wrought;
 Thus on its sounding anvil shaped
- Each burning deed and thought.
+  Each burning deed and thought.
 </body>
 </poem>
 
@@ -396,6 +982,7 @@ Thus on its sounding anvil shaped
    <toctitle>Endymion</toctitle>
    <indextitle>Endymion</indextitle>
    <firstline>The rising moon has hid the stars</firstline>
+   <source pages="103-105"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -419,8 +1006,8 @@ Love gives itself, but is not bought;
    Nor voice, nor sound betrays
    Its deep, impassioned gaze.
 
-It comes,--the beautiful, the free,
-The crown of all humanity,--
+It comes,—the beautiful, the free,
+The crown of all humanity,—
    In silence and alone
    To seek the elected one.
 
@@ -439,27 +1026,75 @@ No one so utterly desolate,
    But some heart, though unknown,
    Responds unto his own.
 
-Responds,--as if with unseen wings,
+Responds,—as if with unseen wings,
 An angel touched its quivering strings;
    And whispers, in its song,
-   "'Where hast thou stayed so long?"
+   “'Where hast thou stayed so long?”
+</body>
+</poem>
+
+
+<poem id="longfellow2019041305">
+<head>
+    <title>The Two Locks of Hair</title>
+    <subtitle>From the German of Pfizer</subtitle>
+    <firstline>A youth, light-hearted and content</firstline>
+    <source pages="106-108"/>
+    <!-- TODO: Find originalen. -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+A youth, light-hearted and content,
+  I wander through the world;
+Here, Arab-like, is pitched my tent
+  And straight again is furled.
+
+Yet oft I dream, that once a wife
+  Close in my heart was locked,
+And in the sweet repose of life
+  A blessed child I rocked.
+
+I wake! Away that dream,—away!
+  Too long did it remain!
+So long, that both by night and day
+  It ever comes again.
+
+The end lies ever in my thought;
+  To a grave so cold and deep
+The mother beautiful was brought;
+  Then dropt the child asleep.
+
+But now the dream is wholly o’er,
+  I bathe mine eyes and see;
+And wander through the world once more,
+  A youth so light and free.
+
+Two locks—and they are wondrous fair—
+  Left me that vision mild;
+The brown is from the mother’s hair,
+  The blond is from the child.
+
+And when I see that lock of gold,
+  Pale grows the evening-red;
+And when the dark lock I behold,
+  I wish that I were dead.
 </body>
 </poem>
 
 <poem id="longfellow1999063014">
 <head>
    <title>It is not always May</title>
-   <subtitle>
-      <line>No hay pajaros en los nidos de antano.</line>
-      <line>Spanish Proverb.</line>
-   </subtitle>
    <toctitle>It is not always May</toctitle>
    <indextitle>It is not always May</indextitle>
-   <firstline>The sun is bright,--the air is clear</firstline>
+   <firstline>The sun is bright,—the air is clear</firstline>
+   <source pages="109-110"/>
    <quality>korrektur1</quality>
 </head>
 <body>
-The sun is bright,--the air is clear,
+<nonum><right><sc>no hay pájaros en los nidos de antaño.</sc></right></nonum>
+<nonum><right><small><i>Spanish Proverb.</i></small></right></nonum>
+
+The sun is bright,—the air is clear,
   The darting swallows soar and sing.
 And from the stately elms I hear
   The bluebird prophesying Spring.
@@ -469,14 +1104,14 @@ So blue you winding river flows,
 Where waiting till the west-wind blows,
   The freighted clouds at anchor lie.
 
-All things are new;--the buds, the leaves,
+All things are new;—the buds, the leaves,
   That gild the elm-tree's nodding crest,
- And even the nest beneath the eaves;--
+And even the nest beneath the eaves;—
    There are no birds in last year's nest!
 
 All things rejoice in youth and love,
    The fulness of their first delight!
- And learn from the soft heavens above
+And learn from the soft heavens above
    The melting tenderness of night.
 
 Maiden, that read'st this simple rhyme,
@@ -497,6 +1132,7 @@ For Time will teach thee soon the truth,
    <toctitle>The Rainy Day</toctitle>
    <indextitle>The Rainy Day</indextitle>
    <firstline>The day is cold, and dark, and dreary</firstline>
+   <source pages="111-112"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -526,6 +1162,7 @@ Into each life some rain must fall,
    <toctitle>God's-Acre</toctitle>
    <indextitle>God's-Acre</indextitle>
    <firstline>I like that ancient Saxon phrase, which calls</firstline>
+   <source pages="113-114"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -540,19 +1177,19 @@ The seed that they had garnered in their hearts,
   Their bread of life, alas! no more their own.
 
 Into its furrows shall we all be cast,
- In the sure faith, that we shall rise again
+  In the sure faith, that we shall rise again
 At the great harvest, when the archangel's blast
   Shall winnow, like a fan, the chaff and grain.
 
 Then shall the good stand in immortal bloom,
- In the fair gardens of that second birth;
+  In the fair gardens of that second birth;
 And each bright blossom mingle its perfume
- With that of flowers, which never bloomed on earth.
+  With that of flowers, which never bloomed on earth.
 
-With thy rude ploughahare, Death, turn up the sod,
- And spread the furrow for the seed we sow;
+With thy rude ploughshare, Death, turn up the sod,
+  And spread the furrow for the seed we sow;
 This is the field and Acre of our God,
- This is the place where human harvests grow!
+  This is the place where human harvests grow!
 </body>
 </poem>
 
@@ -562,18 +1199,19 @@ This is the field and Acre of our God,
    <toctitle>To the River Charles</toctitle>
    <indextitle>To the River Charles</indextitle>
    <firstline>River! that in silence windest</firstline>
+   <source pages="115-117"/>
    <quality>korrektur1</quality>
 </head>
 <body>
 River! that in silence windest
- Through the meadows, bright and free,
+  Through the meadows, bright and free,
 Till at length thy rest thou findest
- In the bosom of the sea!
+  In the bosom of the sea!
 
 Four long years of mingled feeling,
- Half in rest, and half in strife,
+  Half in rest, and half in strife,
 I have seen thy waters stealing
- Onward, like the stream of life.
+  Onward, like the stream of life.
 
 Thou hast taught me, Silent River!
   Many a lesson, deep and long;
@@ -600,7 +1238,7 @@ Where yon shadowy woodlands hide thee,
 Friends I love have dwelt beside thee,
   And have made thy margin dear.
 
-More than this;--thy name reminds me
+More than this;—thy name reminds me
   Of three friends, all true and tried;
 And that name, like magic, binds me
   Closer, closer to thy side.
@@ -623,6 +1261,7 @@ Thou hast been a generous giver,
    <toctitle>Blind Bartimeus</toctitle>
    <indextitle>Blind Bartimeus</indextitle>
    <firstline>Blind Bartimeus at the gates</firstline>
+   <source pages="118-119"/>
    <notes>
       <note>Cf. <xref bibel="bibelmarkus10,46-52"/></note>
    </notes>
@@ -631,40 +1270,41 @@ Thou hast been a generous giver,
 <body>
 Blind Bartimeus at the gates
 Of Jericho in darkness waits;
-He hears the crowd;--he hears a breath
-Say, "It is Christ of Nazareth!"
+He hears the crowd;—he hears a breath
+Say, “It is Christ of Nazareth!”
 And calls, in tones of agony,
-Ιησου, ξλξησδν με!
+Ἰησοῦ, ἐλέησόν με!
 
 The thronging multitudes increase;
 Blind Bartimeus, hold thy peace!
 But still, above the noisy crowd,
 The beggar's cry is shrill and loud;
-Until they say, "He calleth thee!"
-Θαρσει ζγειραι, φωνει σε!
+Until they say, “He calleth thee!”
+Θάρσει, ἔγειραι, φωνεῖ σε!
 
 Then saith the Christ, as silent stands
-The crowd, "What wilt thou at my hands?"
-And he replies, "O give me light!
+The crowd, “What wilt thou at my hands?”
+And he replies, “O give me light!
 Rabbi, restore the blind man's sight.
-And Jesus answers, "Υπαγε'
-'Η πιστις σου σεσωκε σε!
+And Jesus answers, “Υπαγε
+Ἡ πίστις σου σέσωκέ σε!
 
 Ye that have eyes, yet cannot see,
 In darkness and in misery,
 Recall those mighty Voices Three,
-'Ιησου, ξλξησδν με!
-Θαρσει ξγειραι, υπαγε!
-'Η πιστις σου σεσωκε σε!
+Ἰησοῦ, ἐλέησόν με!
+Θάρσει, ἔγειραι, ὕπαγε!
+Ἡ πίστις σου σέσωκέ σε!
 </body>
 </poem>
 
 <poem id="longfellow1999063019">
 <head>
-   <title>The Gobles of Life</title>
-   <toctitle>The Gobles of Life</toctitle>
-   <indextitle>The Gobles of Life</indextitle>
+   <title>The Goblet of Life</title>
+   <toctitle>The Goblet of Life</toctitle>
+   <indextitle>The Goblet of Life</indextitle>
    <firstline>Filled is Life's goblet to the brim</firstline>
+   <source pages="120-124"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -674,7 +1314,7 @@ I see its sparkling bubbles swim,
 And chant a melancholy hymn
    With solemn voice and slow.
 
-No purple flowers,--no garlands green,
+No purple flowers,—no garlands green,
 Conceal the goblet's shade or sheen,
 Nor maddening draughts of Hippocrene,
 Like gleams of sunshine, flash between
@@ -723,7 +1363,7 @@ He asked but the return of sight,
    To see his foeman's face.
 
 Let our unceasing, earnest prayer
-Be, too, for light,--for strength to bear
+Be, too, for light,—for strength to bear
 Our portion of the weight of care,
 That crushes into dumb despair
    One half the human race.
@@ -732,12 +1372,12 @@ O suffering, sad humanity!
 O ye afflicted one; who lie
 Steeped to the lips in misery,
 Longing, and yet afraid to die,
-   Patient, though sorely tried !
+   Patient, though sorely tried!
 
 I pledge you in this cup of grief,
-Where floats the fennel's bitter leaf !
+Where floats the fennel's bitter leaf!
 The Battle of our Life is briet
-The alarm,--the struggle,--the relief,
+The alarm,—the struggle,—the relief,
    Then sleep we side by side.
 </body>
 </poem>
@@ -748,6 +1388,7 @@ The alarm,--the struggle,--the relief,
    <toctitle>Maidenhood</toctitle>
    <indextitle>Maidenhood</indextitle>
    <firstline>Maiden! with the meek, brown eyes</firstline>
+   <source pages="125-128"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -784,7 +1425,7 @@ That our ears perceive no more,
 Deafened by the cataract's roar?
 
 O, thou child of many prayers!
-Life hath quickeands,--Life hath snares
+Life hath quickeands,—Life hath snares
 Care and age come unawares!
 
 Like the swell of some sweet tune,
@@ -792,7 +1433,7 @@ Morning rises into noon,
 May glides onward into June.
 
 Childhood is the bough, where slumbered
-Birds and blossoms many-numbered;--
+Birds and blossoms many-numbered;—
 Age, that bough with snows encumbered.
 
 Gather, then, each flower that grows,
@@ -805,7 +1446,7 @@ One touch of that magic wand.
 
 Bear through sorrow, wrong, and ruth,
 In thy heart the dew of youth,
-On thy lips the smile of truth. <!-- truth.]truth1 - fejlen stammer fra Gutenberg. Ved ikke om rettelsen er korrekt-->
+On thy lips the smile of truth.
 
 O, that dew, like balm, shall steal
 Into wounds that cannot heal,
@@ -823,6 +1464,7 @@ For a smile of God thou art.
    <toctitle>Excelsior</toctitle>
    <indextitle>Excelsior</indextitle>
    <firstline>The shades of night were falling fast</firstline>
+   <source pages="129-132"/>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -844,20 +1486,20 @@ Above, the spectral glaciers shone,
 And from his lips escaped a groan,
        Excelsior!
 
-"Try not the Pass!" the old man said:
-"Dark lowers the tempest overhead,
+“Try not the Pass!” the old man said:
+“Dark lowers the tempest overhead,
 The roaring torrent is deep and wide!
 And loud that clarion voice replied,
        Excelsior!
 
-"Oh stay," the maiden said, "and rest
-Thy weary head upon this breast!"
+“Oh stay,” the maiden said, “and rest
+Thy weary head upon this breast!”
 A tear stood in his bright blue eye,
 But still he answered, with a sigh,
        Excelsior!
 
-"Beware the pine-tree's withered branch!
-Beware the awful avalanche!"
+“Beware the pine-tree's withered branch!
+Beware the awful avalanche!”
 This was the peasant's last Good-night,
 A voice replied, far up the height,
         Excelsior!
@@ -881,5 +1523,9 @@ A voice fell, like a falling star,
        Excelsior!
 </body>
 </poem>
+
+</content>
+</section> <!-- Miscellaneous -->
+
 </workbody>
 </kalliopework>

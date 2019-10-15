@@ -116,7 +116,7 @@ Ud af disse Vanvidslabyrinther,
    <indextitle>Sonet</indextitle>
    <firstline>Lina kommer - Harpestrænge, toner!</firstline>
    <notes>
-      <note>Sonet fra digtet »Lina«</note>
+       <note>Sonet fra digtet <xref poem="staffeldt2018010413"/>.</note>
    </notes>
    <quality>korrektur1</quality>
    <keywords>sonnet</keywords>
@@ -146,7 +146,7 @@ Saa skal jeg med Solens rene Varme
    <indextitle>Sonet</indextitle>
    <firstline>Hvad jeg fornam, kan intet Ord udtale</firstline>
    <notes>
-      <note>Sonet fra digtet »Lina«</note>
+       <note>Sonet fra digtet <xref poem="staffeldt2018010413"/>.</note>
       <note type="credits">Bidrag fra Brian Bentsen.</note>
    </notes>
    <quality>korrektur1</quality>
@@ -761,5 +761,24 @@ Skabe selv hvad vi begiærte:
 Trylle det bønhørte Hierte!
 </body>
 </poem>
+
+<poem id="staffeldt2019051101">
+<head>
+   <title>Det sande Værd</title>
+   <firstline>Lykken er dybt i vor Barm og ikke i Tidernes Gaver</firstline>
+   <notes>
+      <note>Kilde er <i>Nytaarsgave 1803</i>, Simon Poulsen (red.), Udgiverens Forlag, 1803, p. 239.</note>
+      <note type="credits">Bidrag fra Peter Urban-Halle.</note>
+   </notes>
+   <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Lykken er dybt i vor Barm og ikke i Tidernes Gaver,
+  Kongen vaager med Sorg, Tiggeren sover i Fred:
+Sæt du Tingenes Priis og lad dig af dem ei vurdere,
+  Da er du rig ved dig selv, kiender, lig Guder, ei Trang.
+</body>
+</poem>
+
 </workbody>
 </kalliopework>

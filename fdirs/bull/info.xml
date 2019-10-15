@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bull" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Olaf</firstname>
+    <lastname>Bull</lastname>
+    <fullname>Olaf Jacob Martin Luther Bull</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1883-11-10</date>
+      <place>Oslo</place>
+    </born>
+    <dead>
+      <date>1933-06-23</date>
+      <place>Oslo</place>
+    </dead>
+  </period>
+  <works>1909,1913,1916,1924,1927,1928,1930,1931,1932</works>
+</person>

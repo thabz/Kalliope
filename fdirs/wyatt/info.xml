@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wyatt" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Sir Thomas</firstname>
+    <lastname>Wyatt</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1503</date>
+      <place>Allington, nær Maidstone, Kent</place>
+    </born>
+    <dead>
+      <date>1542-10-06</date>
+      <place>Sherborne, Dorset</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

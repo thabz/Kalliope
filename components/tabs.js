@@ -2,16 +2,17 @@
 import React from 'react';
 import { Link, Router } from '../routes';
 import * as Links from './links.js';
-import { poetGenetiveLastName } from './poetname.js';
+import { poetGenetiveLastName } from './poetname-helpers.js';
+import _ from '../pages/helpers/translations.js';
 import type { Lang, Poet, Country } from '../pages/helpers/types.js';
 import CommonData from '../pages/helpers/commondata.js';
 
 const transitionDuration = '0.2s';
 
-class LoupeSVG extends React.Component {
-  props: {
-    color: string,
-  };
+type LoupeSVGProps = {
+  color: string,
+};
+class LoupeSVG extends React.Component<LoupeSVGProps> {
   render() {
     const { color } = this.props;
     const style = {
@@ -45,10 +46,10 @@ class LoupeSVG extends React.Component {
   }
 }
 
-class CrossSVG extends React.Component {
-  props: {
-    color: string,
-  };
+type CrossSVGProps = {
+  color: string,
+};
+class CrossSVG extends React.Component<CrossSVGProps> {
   render() {
     const { color } = this.props;
     const style = {
@@ -80,23 +81,27 @@ class CrossSVG extends React.Component {
     );
   }
 }
-
-export default class Tabs extends React.Component {
-  props: {
-    items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
-    poet?: Poet,
-    country: Country,
-    lang: Lang,
-    query?: ?string,
-    selected: string,
-  };
+type TabsProps = {
+  items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
+  poet?: Poet,
+  country: Country,
+  lang: Lang,
+  query?: ?string,
+  selected: string,
+};
+type TabsState = {
+  showSearchField: boolean,
+};
+export default class Tabs extends React.Component<TabsProps, TabsState> {
   searchField: HTMLInputElement;
   onLoupeClick: (e: Event) => void;
   onCrossClick: (e: Event) => void;
   onSubmit: (e: Event) => void;
   onKeyDown: (e: KeyboardEvent) => void;
+  onFocus: () => void;
+  onBlur: () => void;
 
-  constructor(props: any) {
+  constructor(props: TabsProps) {
     super(props);
     const { query } = props;
     this.state = { showSearchField: query != null && query.length > 0 };
@@ -104,12 +109,14 @@ export default class Tabs extends React.Component {
     this.onCrossClick = this.onCrossClick.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     this.onKeyDown = this.onKeyDown.bind(this);
+    this.onBlur = this.onBlur.bind(this);
+    this.onFocus = this.onFocus.bind(this);
   }
 
   hideSearchField() {
     this.searchField.value = '';
     if (window) {
-      window.removeEventListener('keydown', this.onKeyDown);
+      window.removeEventListener('keydown', this.onKeyDown, false);
     }
     this.setState({ showSearchField: false });
   }
@@ -117,7 +124,7 @@ export default class Tabs extends React.Component {
   componentDidUpdate() {
     if (this.state.showSearchField) {
       if (window) {
-        window.addEventListener('keydown', this.onKeyDown);
+        window.addEventListener('keydown', this.onKeyDown, false);
       }
       if (document && document.activeElement !== this.searchField) {
         this.searchField.focus();
@@ -166,9 +173,18 @@ export default class Tabs extends React.Component {
     e.preventDefault();
   }
 
+  onFocus() {
+    window && (window.searchFieldHasFocus = true);
+  }
+
+  onBlur() {
+    window && (window.searchFieldHasFocus = false);
+  }
+
   onKeyDown(e: KeyboardEvent) {
     if (e.keyCode === 27) {
       this.hideSearchField();
+      this.onBlur();
       e.preventDefault();
     }
   }
@@ -178,19 +194,23 @@ export default class Tabs extends React.Component {
     let placeholder = null;
     if (poet != null && poet.has_texts) {
       const genetiveLastName = poetGenetiveLastName(poet, lang);
-      placeholder = `Søg i ${genetiveLastName} værker`;
+      placeholder = _('Søg i {genetiveLastName} værker', lang, {
+        genetiveLastName,
+      });
     } else {
       if (country === 'dk') {
-        placeholder = `Søg i Kalliope`;
+        placeholder = _('Søg i Kalliope', lang);
       } else {
         const countryData = CommonData.countries.filter(
           x => x.code === country
         );
         if (countryData.length > 0) {
           const adjective = countryData[0].adjective[lang];
-          placeholder = `Søg i Kalliopes ${adjective} samling`;
+          placeholder = _('Søg i Kalliopes {adjective} samling', lang, {
+            adjective,
+          });
         } else {
-          placeholder = `Søg i Kalliope`;
+          placeholder = _('Søg i Kalliope', lang);
         }
       }
     }
@@ -198,10 +218,19 @@ export default class Tabs extends React.Component {
       <div style={{ display: 'flex' }}>
         <div style={{ flexGrow: 1 }}>
           <form onSubmit={this.onSubmit}>
+            <label htmlFor="search-field-id" style={{ display: 'none' }}>
+              Søg
+            </label>
             <input
+              id="search-field-id"
               ref={domElement => {
-                this.searchField = domElement;
+                if (domElement != null) {
+                  this.searchField = domElement;
+                }
               }}
+              onFocus={this.onFocus}
+              onBlur={this.onBlur}
+              title={placeholder}
               defaultValue={query}
               className="search-field"
               placeholder={placeholder}
@@ -219,18 +248,20 @@ export default class Tabs extends React.Component {
       </div>
     );
 
-    const itemsRendered = items.filter(item => !item.hide).map((item, i) => {
-      const className = item.id === selected ? 'tab selected' : 'tab';
-      return (
-        <div className={className} key={item.url}>
-          <Link route={item.url}>
-            <a>
-              <h2>{item.title}</h2>
-            </a>
-          </Link>
-        </div>
-      );
-    });
+    const itemsRendered = items
+      .filter(item => !item.hide)
+      .map((item, i) => {
+        const className = item.id === selected ? 'tab selected' : 'tab';
+        return (
+          <div className={className} key={item.url}>
+            <Link route={item.url}>
+              <a>
+                <h2>{item.title}</h2>
+              </a>
+            </Link>
+          </div>
+        );
+      });
 
     const leftSide = (
       <div className="leftside">
@@ -288,7 +319,7 @@ export default class Tabs extends React.Component {
             padding: 0;
             margin: 0;
             outline: 0;            
-            font-weight: lighter;
+            font-weight: 100;
             font-family: inherit;
             transition: font-size ${transitionDuration}, line-height: ${transitionDuration};
             caret-color: black;
@@ -309,12 +340,17 @@ export default class Tabs extends React.Component {
             padding: 0;
             line-height: 32px;
             font-size: 32px;
-            font-weight: lighter;
+            font-weight: 100;
             transition: font-size ${transitionDuration}, line-height: ${transitionDuration};
           }
           :global(.tabs) > :global(.tab.selected) {
             border-bottom: 2px solid black;
           }
+          /*
+          :global(.tabs) > :global(.tab:hover) {
+            border-bottom: 2px solid #888;
+          }
+          */
           :global(.tabs) :global(.tab.selected a) {
             color: black;
           }
@@ -431,14 +467,13 @@ export default class Tabs extends React.Component {
   }
 }
 
-export class PoetTabs extends React.Component {
-  props: {
-    poet: Poet,
-    lang: Lang,
-    query?: ?string,
-    selected: 'works' | 'titles' | 'first' | 'bio' | 'bibliography' | 'search',
-  };
-
+type PoetTabsProps = {
+  poet: Poet,
+  lang: Lang,
+  query?: ?string,
+  selected: 'works' | 'titles' | 'first' | 'bio' | 'search' | 'mentions',
+};
+export class PoetTabs extends React.Component<PoetTabsProps> {
   render() {
     const { lang, poet, selected, query } = this.props;
     const tabs: Array<{
@@ -449,31 +484,31 @@ export class PoetTabs extends React.Component {
     }> = [
       {
         id: 'works',
-        title: 'Værker',
-        hide: !poet.has_works,
+        title: _('Værker', lang),
+        hide: !poet.has_works && !poet.has_artwork,
         url: Links.worksURL(lang, poet.id),
       },
       {
         id: 'titles',
-        title: 'Digttitler',
+        title: _('Digttitler', lang),
         hide: !poet.has_poems,
         url: Links.textsURL(lang, poet.id, 'titles'),
       },
       {
         id: 'first',
-        title: 'Førstelinjer',
+        title: _('Førstelinjer', lang),
         hide: !poet.has_poems,
         url: Links.textsURL(lang, poet.id, 'first'),
       },
       {
-        id: 'bibliography',
-        title: 'Bibliografi',
-        hide: !poet.has_bibliography,
-        url: Links.bibliographyURL(lang, poet.id),
+        id: 'mentions',
+        title: _('Henvisninger', lang),
+        hide: !poet.has_mentions,
+        url: Links.mentionsURL(lang, poet.id),
       },
       {
         id: 'bio',
-        title: 'Biografi',
+        title: _('Biografi', lang),
         hide: !poet.has_biography,
         url: Links.bioURL(lang, poet.id),
       },
@@ -491,27 +526,47 @@ export class PoetTabs extends React.Component {
   }
 }
 
-export class KalliopeTabs extends React.Component {
-  props: {
-    lang: Lang,
-    country?: Country,
-    query?: ?string,
-    selected:
-      | 'index'
-      | 'poets'
-      | 'keywords'
-      | 'dictionary'
-      | 'about'
-      | 'search',
-  };
+type KalliopeTabsProps = {
+  lang: Lang,
+  country?: Country,
+  query?: ?string,
+  selected:
+    | 'index'
+    | 'poets'
+    | 'keywords'
+    | 'dictionary'
+    | 'about'
+    | 'search'
+    | 'museum',
+};
+export class KalliopeTabs extends React.Component<KalliopeTabsProps> {
   render() {
     const { lang, selected, country, query } = this.props;
     const tabs = [
       { id: 'index', title: 'Kalliope', url: Links.frontPageURL(lang) },
-      { id: 'poets', title: 'Digtere', url: Links.poetsURL(lang, 'name') },
-      { id: 'keywords', title: 'Nøgleord', url: Links.keywordsURL(lang) },
+      {
+        id: 'poets',
+        title: _('Digtere', lang),
+        url: Links.poetsURL(lang, 'name'),
+      },
+      /*
+      {
+        id: 'poems',
+        title: _('Digte', lang),
+        url: Links.allTextsURL(lang, 'dk', 'titles', 'A'),
+      },
+      */
+      {
+        id: 'keywords',
+        title: _('Nøgleord', lang),
+        url: Links.keywordsURL(lang),
+      },
       //{ id: 'dictionary', title: 'Ordbog', url: Links.dictionaryURL(lang) },
-      { id: 'about', title: 'Om', url: Links.aboutURL(lang, 'kalliope') },
+      {
+        id: 'about',
+        title: _('Om', lang),
+        url: Links.aboutURL(lang, 'kalliope'),
+      },
     ];
     return (
       <Tabs

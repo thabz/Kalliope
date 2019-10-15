@@ -2,35 +2,149 @@
 
 require 'date'
 
+def printTemplate() 
+    puts "KILDE:"
+    puts "DIGTER:"
+    puts "FACSIMILE:"
+    puts "FACSIMILE-SIDER:"
+    puts "TITELBLAD:"
+    puts ""
+    puts "SEKTION:"
+    puts ""
+    puts "T:"
+    puts "F:"
+    puts "SIDE:"
+    puts ""
+    puts "SLUTSEKTION"
+end
+
 if ARGV.length != 1
-  puts "Missing filename (try --help)"
+  printTemplate()
   exit 0
 end
 
-
-@state = 'NONE'
+@state = 'WORKHEAD'
 @poemcount = 1;
+@header_printed = false
+@section_title_stack = []
 
-@source = nil
+# Work data
 @poetid = 'POETID'
 @date = Date.today.strftime("%Y%m%d")
+@source = nil
+@facsimile = nil
+@facsimile_pages_num = 150
+@facsimile_offset = 10
+@workid = nil
+@worknotes = []
+@worktodos = []
+@found_corrections = false
+@found_poet_notes = false
+@done = false
+@titlepage = ''
 
+# Poem data
+@poemid = nil
 @firstline = nil
-@title = nil, @toctitle = nil, @linktitle = nil, @indextitle = nil
-@subtitle = nil
+@title = nil
+@toctitle = nil
+@linktitle = nil
+@indextitle = nil
+@subtitles = []
 @body = []
 @notes = []
 @keywords = nil;
 @page = nil;
+@written = nil;
+@performed = nil;
+@event = nil
 @type = 'poem'
+@variant = nil
+@todos = []
+@credits = nil
+@facsimile_page = nil
+@lang = nil
+
+def printHeader()
+    if @header_printed
+        return
+    end
+    year = "ÅR"
+    title = "TITEL"
+    if @source 
+        m = @source.match(/<i>(.*?)<\/i>.*(\d\d\d\d)[\s\.]*$/)
+        if m 
+            title = m[1]
+            year = m[2]
+        end
+    end
+    if @workid.nil?
+        @workid = year
+    end
+
+    puts %Q|<?xml version="1.0" encoding="UTF-8"?>|
+    puts %Q|<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">|
+    puts %Q|<kalliopework id="#{@workid}" author="#{@poetid}" status="complete" type="poetry">|
+    puts %Q|<workhead>|
+    puts %Q|    <title>#{title}</title>|
+    puts %Q|    <year>#{year}</year>|
+    puts %Q|    <notes>|
+    @worknotes.each { |noteline|
+      puts "        <note>#{noteline}</note>"
+    }
+    puts %Q|        <note>Teksten følger #{@source}</note>|
+    if @found_corrections      
+        puts %Q|        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>|
+    end
+    if @found_poet_notes
+        puts %Q|        <note>Noter med en foranstillet asterisk er digterens egne.</note>|
+    end
+    puts %Q|    </notes>|
+    puts %Q|    <pictures>|
+    puts %Q|        <picture src="#{@workid}-p1.jpg">Titelbladet til <i>#{title}</i> (#{year}) lyder ,,#{@titlepage}''.</picture>|
+    puts %Q|    </pictures>|
+    if @worktodos.length > 0
+      @worktodos.each { |todo|
+          puts "    <!-- TODO: #{todo} -->"
+      }
+    end
+    puts %Q|    <source facsimile="#{@facsimile}" facsimile-pages-num="#{@facsimile_pages_num}" facsimile-pages-offset="#{@facsimile_offset}">#{@source}</source>|
+    puts %Q|</workhead>|
+    puts %Q|<workbody>|
+    puts ""
+    @header_printed = true
+end
+
+def printFooter()
+    puts "</workbody>"
+    puts "</kalliopework>"
+end
 
 def printPoem()
-  if @source and not @page and
+  printHeader()
+  if @facsimile and (not @page or @page.strip.length == 0)
       abort "FEJL: Digtet »#{@title}« mangler sideangivelse"
   end
-  puts "<#{@type} id=\"#{@poetid}#{@date}#{'%02d' % @poemcount}\">"
+  if @facsimile and @page =~ /\d-$/
+      abort "FEJL: Digtet »#{@title}« har kun halv sideangivelse: #{@page}"
+  end
+  if @type == 'poem' and (@firstline.nil? || @firstline.strip.length == 0)
+      abort "FEJL: Digtet »#{@title}« mangler førstelinje"
+  end
+  poemid = @poemid || "#{@poetid}#{@date}#{'%02d' % @poemcount}"
+  variant = ''
+  if @variant
+      variant = " variant=\"#{@variant}\""
+  end
+  if @lang
+      lang = " lang=\"#{@lang}\""
+  end
+
+  puts "<#{@type} id=\"#{poemid}\"#{variant}#{lang}>"
   puts "<head>"
-  puts "    <title>#{@title}</title>"
+  if @title
+      puts "    <title>#{@title}</title>"
+  end
   if @toctitle
     puts "    <toctitle>#{@toctitle}</toctitle>"
   end
@@ -40,18 +154,54 @@ def printPoem()
   if @linktitle
     puts "    <linktitle>#{@linktitle}</linktitle>"
   end
-  if @subtitle
-    puts "    <subtitle>#{@subtitle}</subtitle>"
+  if @subtitles.length == 1
+    puts "    <subtitle>#{@subtitles[0]}</subtitle>"
+  elsif @subtitles.length > 1
+    puts "    <subtitle>"
+    @subtitles.each { |line|
+        puts "        <line>#{line}</line>"
+    }
+    puts "    </subtitle>"
   end
-  puts "    <firstline>#{@firstline}</firstline>"
-  if (@source && @page) || @notes.length > 0
-    pp = @page.include?('-') ? 'pp' : 'p';
+  if (@type != 'prose')
+    puts "    <firstline>#{@firstline}</firstline>"
+  end
+  if @notes.length > 0 or @credits
     puts "    <notes>"
     @notes.each { |noteline|
-    puts "        <note>#{noteline}</note>"
+      puts "        <note>#{noteline}</note>"
     }
-    puts "        <note>#{@source.gsub(/[\. ]*$/,'')}, #{pp}. #{@page}.</note>"
+    if @credits
+      puts %Q|        <note type="credits">#{@credits}</note>|;
+    end
     puts "    </notes>"
+  end
+  if @source and @page
+      if @facsimile_page 
+        puts "    <source pages=\"#{@page}\" facsimile-pages=\"#{@facsimile_page}\" />"
+      elsif @page =~ /[ivx]+/i 
+        puts "    <source pages=\"#{@page}\" facsimile-pages=\"10\" />"
+      else  
+        puts "    <source pages=\"#{@page}\"/>"
+      end
+  end
+  if @written or @performed or @event
+    puts "    <dates>"
+    if @written
+      puts "        <written>#{@written}</written>"
+    end
+    if @performed
+      puts "        <performed>#{@performed}</performed>"
+    end
+    if @event
+      puts "        <event>#{@event}</event>"
+    end
+    puts "    </dates>"
+  end
+  if @todos.length > 0
+    @todos.each { |todo|
+        puts "    <!-- TODO: #{todo} -->"
+    }
   end
   if @keywords
     puts "    <keywords>#{@keywords}</keywords>"
@@ -64,22 +214,36 @@ def printPoem()
   puts "</body>"
   puts "</#{@type}>"
   puts ""
+  @poemid = nil
   @firstline = nil
   @title = nil 
   @toctitle = nil
   @linktitle = nil
   @indextitle = nil
-  @subtitle = nil
+  @subtitles = []
   @body = []
   @notes = []
   @keywords = nil
   @page = nil
+  @written = nil
+  @performed = nil
+  @event = nil
   @type = 'poem'
+  @variant = nil
+  @lang = nil
+  @todos = []
+  @credits = nil
+  @facsimile_page = nil
   @poemcount += 1
 end
 
-def printStartSektion(title)
-  puts "<section>"
+def printStartSektion(title, level)
+  levelAttr = ''
+  if not level.nil? and level.length > 0
+      levelAttr = " level=\"#{level}\""
+  end
+  printHeader()
+  puts "<section#{levelAttr}>"
   puts "<head>"
   puts "    <title>#{title}</title>"
   puts "</head>"
@@ -87,65 +251,150 @@ def printStartSektion(title)
   puts ""
 end    
 
-def printEndSection()
+def printEndSection(sectionTitle)
   puts "</content>"
-  puts "</section>"
+  puts "</section> <!-- #{sectionTitle} -->"
   puts ""
 end
 
 File.readlines(ARGV[0]).each do |line|
+  if line =~ /<note>.*\] .*<\/note>/
+    @found_corrections = true
+  end
+  if line =~ /<note>\* .*<\/note>/ or line =~ /^NOTE:\*.*/
+    @found_poet_notes = true
+  end
+end
+
+File.readlines(ARGV[0]).each do |line|
+  next if @done;
+  if line.start_with?('SLUT') and not line.start_with?('SLUTSEKTION') 
+    @done = true
+    if @state != 'NONE'
+        printPoem();
+    end
+    @state = 'NONE'
+    next
+  end
   line_before = line
-  while line =~ /^\t/
-      line = line.gsub(/^\t/,'    ')
+  while line =~ /\t/
+      line = line.gsub(/\t/,'    ')
   end
-  line = line.rstrip.gsub(/_(.+?)_/,'<i>\1</i>')
-  if (line =~ /_/)
-      STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal _"
+  if not line =~ /^FACSIMILE:/ and not line =~ /http/
+      line = line.rstrip.gsub(/_(.+?)_/,'<i>\1</i>')
+      if (line =~ /_/)
+          STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal _"
+      end
   end
-  line = line.rstrip.gsub(/=(.+?)=/,'<w>\1</w>')
-  if (line =~ /=/)
+  line = line.rstrip.gsub(/=([^"].+?)=/,'<w>\1</w>')
+  if (line =~ /=[^"]/)
       STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal ="
   end
-  if @state == 'NONE' and line =~ /^KILDE:/
+  line = line.rstrip.gsub(/\*(.+?)\*/,'<b>\1</b>')
+  if (line =~ /\*/)
+      STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal *"
+  end
+  # Håndter {..} TODO: Fang manglende }
+  m = /{(.*?):(.*)}/.match(line)
+  if (!m.nil?)
+      l = m[2]
+      if m[1].include? "b"
+          l = "<b>#{l}</b>"
+      end
+      if m[1].include? "i"
+          l = "<i>#{l}</i>"
+      end
+      if m[1].include? "w"
+          l = "<w>#{l}</w>"
+      end
+      if m[1].include? "c"
+          l = "<center>#{l}</center>"
+      end
+      if m[1].include? "r"
+          l = "<right>#{l}</right>"
+      end
+      if m[1].include? "p"
+          l = "<wrap>#{l}</wrap>"
+      end
+      if m[1].include? "s"
+          l = "<small>#{l}</small>"
+      end
+      l = "<nonum>#{l}</nonum>"
+      line = l
+  end
+  if @state == 'WORKHEAD'  
+    if line =~ /^KILDE:/
       @source = line[6..-1].strip
-  end
-  if @state == 'NONE' and line =~ /^DIGTER:/
+    elsif line =~ /^FACSIMILE:/
+      @facsimile = line.gsub(/^FACSIMILE:/,'').strip
+    elsif line =~ /^FACSIMILE-OFFSET:/
+      @facsimile_offset = line.gsub(/^FACSIMILE-OFFSET:/,'').strip
+    elsif line =~ /^TITELBLAD:/
+      @titlepage = line.gsub(/^TITELBLAD:/,'').strip
+    elsif line =~ /^FACSIMILE-SIDER:/
+      @facsimile_pages_num = line.gsub(/^FACSIMILE-SIDER:/,'').strip
+    elsif line =~ /^ID:/
+      @workid = line.gsub(/^ID:/,'').strip
+    elsif line =~ /^NOTE:/
+      @worknotes.push(line.gsub(/^NOTE:/,'').strip)
+    elsif line =~ /^TODO:/
+      @worktodos.push(line.gsub(/^TODO:/,'').strip)
+    elsif line =~ /^DIGTER:/
       @poetid = line[7..-1].strip
-  end
-  if @state == 'NONE' and line =~ /^DATO:/
+    elsif line =~ /^DATO:/
       @date = line[5..-1].strip
+    else 
+      @state = 'NONE'
+    end
   end
-  if @state == 'NONE' and line =~ /^T:/
+  if @state == 'NONE' and (line =~ /^T:/ or line =~ /^F:/ or line =~ /^ID:/)
     @state = 'INHEAD'
   end
-  if @state == 'INBODY' and line.start_with?("T:")
+  if @state == 'INBODY' and (line.start_with?("T:") or 
+                             line.start_with?("F:") or 
+                             line.start_with?("ID:"))
     printPoem()
     @state = 'INHEAD'
   end
-  if line.start_with?('SEKTION:')
+  if line =~ /^SEKTION(\d*):/
+      level = $~[1]
       if (@state == 'INBODY')
           printPoem();
       end
-      sectionTitle = line[8..-1].strip
-      print printStartSektion(sectionTitle)
+      sectionTitle = line.gsub(/^SEKTION\d?:/,'').strip
+      @section_title_stack.push(sectionTitle)
+      print printStartSektion(sectionTitle, level)
       @state = 'NONE'
   end
   if line.start_with?('SLUTSEKTION')
-      printPoem();
-      printEndSection();
+      if @state != 'NONE'
+          printPoem();
+      end
+      printEndSection(@section_title_stack.pop);
       @state = 'NONE'
   end
   if @state == 'INHEAD'
     if line.start_with?("T:")
       @title = line[2..-1].strip
     elsif line.start_with?("F:")
+      unless @firstline.nil?
+          abort "FEJL: Digtet »#{@title}« har mere end én F:"
+      end
       @firstline = line[2..-1].strip
     elsif line.start_with?("U:")
-      @subtitle = line[2..-1].strip
+      @subtitles.push(line[2..-1].strip)
+    elsif line.start_with?("ID:")
+      @poemid = line[3..-1].strip
     elsif line.start_with?("N:")
       @keywords = line[2..-1].strip
+      if @keywords =~ / /
+        abort "FEJL: Digtet »#{@title}« har mellemrum i sine nøgleord. Forvekslet N: med NOTE:?"
+      end
     elsif line.start_with?("TOCTITEL:")
       @toctitle = line[9..-1].strip
+      if @toctitle =~ /<num>.*?<\/num>$/ 
+        abort "FEJL: Digtet »#{@title}« mangler titel i TOCTITEL:"
+      end
     elsif line.start_with?("INDEXTITEL:")
       @indextitle = line[11..-1].strip
     elsif line.start_with?("LINKTITEL:")
@@ -154,6 +403,22 @@ File.readlines(ARGV[0]).each do |line|
       @notes.push(line[5..-1].strip)
     elsif line.start_with?("SIDE:")
       @page = line[5..-1].strip
+    elsif line.start_with?("FACSIMILE-SIDE:")
+      @facsimile_page = line.gsub(/^FACSIMILE-SIDE:/,'').strip
+    elsif line.start_with?("SKREVET:")
+      @written = line[8..-1].strip
+    elsif line.start_with?("FREMFØRT:")
+      @written = line[9..-1].strip
+    elsif line.start_with?("BEGIVENHED:")
+      @event = line.gsub(/^BEGIVENHED:/,'').strip
+    elsif line.start_with?("SPROG:")
+      @lang = line.gsub(/^SPROG:/,'').strip
+    elsif line.start_with?("VARIANT:")
+      @variant = line[8..-1].strip
+    elsif line.start_with?("CREDITS:")
+      @credits = line[8..-1].strip
+    elsif line.start_with?("TODO:")
+      @todos.push(line[5..-1].strip)
     elsif line.start_with?("TYPE:")
       @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
     elsif line =~ /^[A-Z]*:/
@@ -164,9 +429,18 @@ File.readlines(ARGV[0]).each do |line|
   end
   if @state == 'INBODY'
       @body.push(line)
+      if line =~ /<note>.*\] .*<\/note>/
+          @found_corrections = true
+      end
+      if line =~ /<note>\* .*<\/note>/
+          @found_poet_notes = true
+      end
   end
 end
 
 if @state != 'NONE'
     printPoem()
 end
+
+printFooter()
+

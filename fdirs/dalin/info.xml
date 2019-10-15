@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="dalin" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Olof von</firstname>
+    <lastname>Dalin</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1708-08-29</date>
+      <place>Vinberg, Sverige</place>
+    </born>
+    <dead>
+      <date>1763-08-12</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <works>andre,1740,1742</works>
+</person>

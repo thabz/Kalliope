@@ -1,28 +1,31 @@
 // @flow
 import React from 'react';
-import type { Work } from '../pages/helpers/types.js';
+import type { Work, Lang } from '../pages/helpers/types.js';
 import CommonData from '../pages/helpers/commondata.js';
+import _ from '../pages/helpers/translations.js';
 
-export default class WorkName extends React.Component {
-  props: {
-    work: Work,
-    cursive?: boolean,
+type WorkNameProps = {
+  work: Work,
+  cursive: boolean,
+  useTitle: 'title' | 'toctitle' | 'linktitle' | 'breadcrumbtitle',
+  lang: Lang,
+};
+export default class WorkName extends React.Component<WorkNameProps> {
+  static defaultProps = {
+    cursive: false,
+    useTitle: 'title',
   };
   render() {
-    const { work, cursive } = this.props;
-    const { title, year } = work;
-    let titlePart = (
-      <span>
-        {title}
-      </span>
-    );
+    const { work, cursive, useTitle, lang } = this.props;
+    const { year } = work;
+    var titleTranslated = work[useTitle || 'title'];
+    if (work.id == 'andre') {
+      titleTranslated = _('Andre digte', lang);
+    }
+    let titlePart = <span>{titleTranslated}</span>;
     let yearPart = null;
     if (year != null && year !== '?') {
-      yearPart = (
-        <span>
-          ({year})
-        </span>
-      );
+      yearPart = <span>({year})</span>;
     }
 
     const parts = [titlePart, yearPart].map((p, i) => {
@@ -30,11 +33,11 @@ export default class WorkName extends React.Component {
       if (cursive === true && i === 0) {
         className += ' cursive';
       }
-      return p
-        ? <span key={i} className={className}>
-            {p}{' '}
-          </span>
-        : null;
+      return p ? (
+        <span key={i} className={className}>
+          {p}{' '}
+        </span>
+      ) : null;
     });
     return (
       <span className="workname">
@@ -45,7 +48,7 @@ export default class WorkName extends React.Component {
           }
 
           :global(.workname) :global(.lighter) {
-            color: #888 !important;
+            color: ${CommonData.lightTextColor} !important;
           }
 
           :global(a) :global(.workname) :global(.lighter) {

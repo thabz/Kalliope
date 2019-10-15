@@ -17,7 +17,7 @@
    <firstline>Med Andagt knæler jeg</firstline>
    <notes>
       <note type="credits">Bidrag fra Brian Bentsen.</note>
-      <note>Trykt i <i>Iris for 1819</i>. Noten i selve digtet, markeret med *), er Hauchs egen.</note>
+      <note>Trykt i <i>Iris for 1819</i>. Noten i selve digtet, markeret med *, er Hauchs egen.</note>
    </notes>
    <quality>korrektur1</quality>
 </head>
@@ -65,47 +65,12 @@ For et Blik af Dit dunkeltbeskuende Øie.
 Ingen Ring vexled' Du med mig,
 Ingen gylden Slange
 Snoer sig om Fing'ren til Pant paa Din Troskab.
-Kun en ringe Steen*)
+Kun en ringe Steen<note>* Magnetstenen.</note>
 Gav Du i min Haand,
 Uanselig og graa,
 Men jeg føler i den
 Et dunkelt Slag af Dit mægtige Hjerte.
 
-*) Magnetstenen.
-</body>
-</poem>
-
-<poem id="hauch2002050901">
-<head>
-   <title>Birken</title>
-   <toctitle>Birken</toctitle>
-   <indextitle>Birken</indextitle>
-   <firstline>Hvi staaer du saa eensom, o Birketræ</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Sven Sørensen.</note>
-   </notes>
-   <quality>korrektur1</quality>
-</head>
-<body>
-"Hvi staaer du saa eensom, o Birketræ!
-Paa Heden i Vinter og Vind?"
-O Jomfru! hvi vælger du Himlen til Læ?
-Hvi er du saa hvid om Kind?
-
-"Jeg aldrig hviler bag Skov og Hegn,
-derfor er jeg hvid om Kind!"
-Mig aldrig forfrisker den faldende Regn,
-paa Heden i Vinter og Vind.
-
-"Min Sjæl er bedrøvet, mit Haab bortveeg,
-derfor er jeg hvid om Kind!"
-See Maanen er dunkel og Solen er bleg
-paa Heden i Vinter og Vind.
-
-"Ak! Jorden har drukken min Beilers Blod,
-derfor er jeg hvid om Kind!"
-Tartaren har myrdet ham ved min Rod
-paa Heden i Vinter og Vind.
 </body>
 </poem>
 
@@ -118,7 +83,7 @@ paa Heden i Vinter og Vind.
       <note>Indtastet efter Carsten Hauch: <i>Udvalgte Skrifter</i>, I-III, Poul Schjærf (red.), Holbergselskabet, Kbh., 1926-29, bd. III, pp. 274-276.</note>
    </notes>
    <pictures>
-      <picture src="blunck-osteriet.jpg">Ditlev Conrad Blunck: <i>Danske kunstnere på osteriet La Gensola i Trastevere i Rom</i>, 1836-37. Frederiksborgmuseet.</picture>
+       <picture ref="blunck/1837-la-gensola"/>
    </pictures>
    <quality>korrektur1,kilde,side</quality>
    <keywords>rom</keywords>
@@ -261,6 +226,68 @@ Den korte Elskovsleg.
 </body>
 </poem>
 
+<poem id="hauch1842a3">
+<head>
+   <title>Aftensang</title>
+   <subtitle>(Efter Claudius.)</subtitle>
+   <firstline>Sig Maanen langsomt hæver</firstline>
+   <notes>
+      <note>På grundlag af Claudius' <xref type="translation" poem="claudius2001091301"/>.</note>
+      <note>Sidste strofe findes også som ,,Koldt Nattens Vinde sukke, / mit Øje vil sig lukke, / Giv mig, o Gud, din Fred! / See naadig til min Slummer, / Og trøst mig i min Kummer, / Og trøst min syge Nabo med!''.</note>
+   </notes>
+   <quality>korrektur1</quality>
+</head>
+<body>
+Sig Maanen langsomt hæver,
+Den gyldne Stjerne svæver
+Paa Himlen klar og blid.
+Vor Skov er taus og stille,
+Og hvide Taager spille
+Paa Engen rundt ved Aftentid.
+
+Hvor roligt Jorden hviler
+Bag Nattens Slør og smiler
+Saa mild og sommervarm;
+Den ligner stillen Kammer,
+Hvori al Dagens Jammer
+Forglemmes skal i Søvnens Arm.
+
+Betragter Maanens Bue,
+Den er kun halv at skue,
+Og er dog heel og rund;
+Saa er vel flere Sager,
+Som nu vort Hjerte vrager,
+Fordi vi halvt dem skue kun.
+
+Vi stolte Adams Slægter
+Kun saare lidet mægter,
+Og meget veed vi ej.
+Vi efter Skygger jage,
+Og mangen Konst opdage -
+Og komme længre fra vor Vej.
+
+Gud Fader i det Høje,
+Lær mig at skjelne nøje
+Det Sande fra sit Skin!
+Og mens jeg er i Live,
+Lad lig et Barn mig blive!
+Skjenk mig et fromt enfoldigt Sind!
+
+Og brister saa mit Hjerte,
+Skjenk uden Sorg og Smerte
+Den sidste Hvile mig!
+Og naar Du har den skjenket,
+Lad Sjælen uforkrænket
+Opstige fra sin Grav til Dig.
+
+Saa kold er Nattens Vove;
+Nu vil jeg rolig sove,
+Giv mig, o Gud, din Fred!
+See naadig til min Slummer,
+Og trøst mig i min Kummer,
+Og trøst min syge Nabo med!
+</body>
+</poem>
 
 </workbody>
 </kalliopework>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="clare" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Clare</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1793-07-13</date>
+      <place>Helpston</place>
+    </born>
+    <dead>
+      <date>1864-05-20</date>
+      <place>Northampton General Lunatic Asylum</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

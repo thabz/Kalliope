@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="meyer" country="un" lang="de" type="poet">
+  <name>
+    <firstname>Conrad F.</firstname>
+    <lastname>Meyer</lastname>
+    <fullname>Conrad Ferdinand Meyer</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1825-10-11</date>
+      <place>Zürich</place>
+    </born>
+    <dead>
+      <date>1898-11-28</date>
+      <place>Kilchberg</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

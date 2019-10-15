@@ -1,23 +1,17 @@
 // @flow
 
 import React from 'react';
-import Head from './head';
 import { Link } from '../routes';
 import * as Links from './links.js';
 import type { Lang } from '../pages/helpers/types.js';
 
-const links = [
-  { href: '/da/poets/name', label: 'Dansk' },
-  { href: '/en/poets/name', label: 'Engelsk' },
-];
-
-export default class LangSelect extends React.Component {
-  props: {
-    lang: Lang,
-  };
-
+type LangSelectProps = {
+  lang: Lang,
+  path: string,
+};
+export default class LangSelect extends React.Component<LangSelectProps> {
   render() {
-    const { lang } = this.props;
+    const { lang, path } = this.props;
     return <div style={{ paddingBottom: '70px' }} />;
     /*
     return (
