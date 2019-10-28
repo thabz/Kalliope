@@ -33,7 +33,7 @@ const build_person_or_keyword_refs = collected => {
   ];
   // TODO: Led også efter <a person="">xxx</a> og <a poet="">xxxx</a>
   // toKey is a poet id or a keyword id
-  const register = (filename, toKey, fromPoemId, type) => {
+  const register = (filename, toKey, fromPoemId, type, toPoemId) => {
     const collection = person_or_keyword_refs.get(toKey) || {
       mention: [],
       translation: [],
@@ -48,10 +48,14 @@ const build_person_or_keyword_refs = collected => {
     } else if (type === 'translation') {
       const mentionIndex = collection.mention.indexOf(fromPoemId);
       if (mentionIndex > -1) {
+        // If this is a translationed poem that were a mention earlier, remove it from mentions.
         collection.mention.splice(mentionIndex, 1);
       }
       if (collection.translation.indexOf(fromPoemId) === -1) {
-        collection.translation.push(fromPoemId);
+        collection.translation.push({
+          translationPoemId: fromPoemId,
+          translatedPoemId: toPoemId,
+        });
       }
     } else {
       throw new Error(`${filename} has xref with unknown type ${type}`);
@@ -88,7 +92,8 @@ const build_person_or_keyword_refs = collected => {
                   const toPoetId = toText.poetId;
                   if (toPoetId !== poetId) {
                     // Skip self-refs
-                    register(filename, toPoetId, fromId, refType);
+                    register(filename, toPoetId, fromId, refType, toPoemId);
+                    console.log(`Registering ${refType} to ${toPoemId}`);
                   }
                 } else {
                   throw new Error(
@@ -177,12 +182,37 @@ const build_mentions_json = collected => {
         })
         .map(build_html);
       data.translations = refs.translation
-        .filter(id => {
-          // Hvis en tekst har varianter som også henviser til denne,
-          // vil vi kun vise den ældste variant.
-          return primaryTextVariantId(id, collected) === id;
+        .filter(t => {
+          // Fjern oversættelser som ikke er den ældste variant
+          const { translationPoemId, _ } = t;
+          return (
+            primaryTextVariantId(translationPoemId, collected) ===
+            translationPoemId
+          );
         })
-        .map(build_html);
+        .map(t => {
+          const { translationPoemId, translatedPoemId } = t;
+          const translationPoem = collected.texts.get(translationPoemId);
+          const translatedPoem = collected.texts.get(translatedPoemId);
+          if (translatedPoem == null) {
+            throw `${translatedPoemId} not found in texts.`;
+          }
+          return {
+            translated: {
+              poem: translatedPoem,
+              work: collected.works.get(
+                `${translatedPoem.poetId}/${translatedPoem.workId}`
+              ),
+            },
+            translation: {
+              poem: translationPoem,
+              work: collected.works.get(
+                `${translationPoem.poetId}/${translationPoem.workId}`
+              ),
+              poet: collected.poets.get(translationPoem.poetId),
+            },
+          };
+        });
     }
 
     ['primary', 'secondary'].forEach(filename => {
