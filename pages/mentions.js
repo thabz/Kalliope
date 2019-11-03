@@ -58,9 +58,9 @@ class Section extends React.Component {
   render() {
     const { title, items } = this.props;
     return (
-      <div className="list-section" style={{ marginBottom: '20px' }}>
+      <div className="list-section" style={{ marginBottom: '40px' }}>
         <h3 style={{ columnSpan: 'all' }}>{title}</h3>
-        {items}
+        <TwoColumns>{items}</TwoColumns>
         <style jsx>{`
           h3 {
             font-weight: normal;
@@ -92,10 +92,9 @@ const Item = props => {
 const PoemLink = props => {
   const { poem, lang } = props;
   const url = Links.textURL(lang, poem.id);
-  const title = poem.linktitle || poem.title || poem.firstline;
   return (
     <Link route={url}>
-      <a>{title}</a>
+      <a>{poem.linkTitle}</a>
     </Link>
   );
 };
@@ -159,7 +158,7 @@ const TranslationsGroupedByTranslator = props => {
       const translations = a.translations.map(t => {
         return (
           <>
-            <PoemLink poem={t.translated.poem} lang={lang} /> {_('to', lang)}{' '}
+            <PoemLink poem={t.translated.poem} lang={lang} /> {_('til', lang)}{' '}
             <PoemLink poem={t.translation.poem} lang={lang} />
           </>
         );
@@ -174,7 +173,7 @@ const TranslationsGroupedByTranslator = props => {
 };
 const TranslationsSection = props => {
   const { translations, lang } = props;
-  const [groupBy, setGroupBy] = useState('by-translator');
+  const [groupBy, setGroupBy] = useState('by-translated');
 
   const groupByOptions = [
     { title: _('Efter titel', lang), value: 'by-translated' },
@@ -183,7 +182,7 @@ const TranslationsSection = props => {
     const selected = o.value === groupBy;
     const style = {
       marginLeft: '10px',
-      fontWeight: selected ? 'bold' : 'auto',
+      fontWeight: selected ? 'bold' : 'normal',
       cursor: selected ? 'auto' : 'pointer',
     };
     console.log(o.value);
@@ -191,7 +190,7 @@ const TranslationsSection = props => {
       setGroupBy(o.value);
     };
     return (
-      <span style={style} onClick={onClick}>
+      <span style={style} onClick={onClick} key={o.title}>
         {o.title}
       </span>
     );
@@ -278,12 +277,7 @@ export default class extends React.Component<MentionsProps> {
           items: this.props[section].map((line, j) => {
             return (
               <Item key={j}>
-                <TextContent
-                  key={j}
-                  contentHtml={line}
-                  lang={lang}
-                  contentLang="da"
-                />
+                <TextContent contentHtml={line} lang={lang} contentLang="da" />
               </Item>
             );
           }),
@@ -316,7 +310,7 @@ export default class extends React.Component<MentionsProps> {
           />
           <Heading title={title} subtitle={_('Henvisninger', lang)} />
           <PoetTabs lang={lang} poet={poet} selected="mentions" />
-          <TwoColumns>{sections}</TwoColumns>
+          {sections}
           <LangSelect lang={lang} path={requestPath} />
         </Main>
       </div>

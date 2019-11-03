@@ -2,6 +2,7 @@ const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
+  force_reload,
 } = require('../libs/caching.js');
 const {
   safeMkdir,
@@ -17,10 +18,11 @@ const { primaryTextVariantId } = require('./variants.js');
 const person_mentions_dirty = new Set();
 
 const build_person_or_keyword_refs = collected => {
-  let person_or_keyword_refs = new Map(
-    loadCachedJSON('collected.person_or_keyword_refs') || []
-  );
-  const force_reload = person_or_keyword_refs.size == 0;
+  let person_or_keyword_refs = new Map([]);
+  if (!force_reload) {
+    loadCachedJSON('collected.person_or_keyword_refs') || [];
+  }
+  const forced_reload = person_or_keyword_refs.size == 0;
   let found_changes = false;
   const regexps = [
     { regexp: /xref ()poem="([^"]*)"/g, type: 'text' },
@@ -51,7 +53,9 @@ const build_person_or_keyword_refs = collected => {
         // If this is a translationed poem that were a mention earlier, remove it from mentions.
         collection.mention.splice(mentionIndex, 1);
       }
-      if (collection.translation.indexOf(fromPoemId) === -1) {
+      if (
+        !collection.translation.some(t => t.translationPoemId === fromPoemId)
+      ) {
         collection.translation.push({
           translationPoemId: fromPoemId,
           translatedPoemId: toPoemId,
@@ -69,7 +73,7 @@ const build_person_or_keyword_refs = collected => {
       if (!fileExists(filename)) {
         return;
       }
-      if (!force_reload && !isFileModified(filename)) {
+      if (!forced_reload && !isFileModified(filename)) {
         return;
       } else {
         found_changes = true;

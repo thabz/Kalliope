@@ -683,6 +683,7 @@ const works_first_pass = collected => {
           title: replaceDashes(linkTitle.title),
           firstline: replaceDashes(firstline == null ? null : firstline.title),
           indexTitle: replaceDashes(indexTitle.title),
+          linkTitle: replaceDashes(linkTitle.title),
           type: part.name(),
           poetId: poetId,
           workId: workId,
