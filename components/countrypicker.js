@@ -1,9 +1,9 @@
 // @flow
 import React, { Component } from 'react';
 import { Link } from '../routes';
-import * as Strings from '../pages/helpers/strings.js';
-import _ from '../pages/helpers/translations.js';
-import CommonData from '../pages/helpers/commondata.js';
+import * as Strings from '../helpers/strings.js';
+import _ from '../helpers/translations.js';
+import CommonData from '../helpers/commondata.js';
 import type {
   Lang,
   Country,
@@ -12,7 +12,7 @@ import type {
   SortReturn,
   SectionForRendering,
   Error,
-} from '../pages/helpers/types.js';
+} from '../helpers/types.js';
 
 function joinWithCommaAndOr(
   items: Array<string | React$Element<*>>,

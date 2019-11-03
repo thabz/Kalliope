@@ -1,9 +1,9 @@
 // @flow
 import React from 'react';
 import PropTypes from 'prop-types';
-import CommonData from '../pages/helpers/commondata.js';
+import CommonData from '../helpers/commondata.js';
 import TextContent from './textcontent.js';
-import type { PictureItem, Lang } from '../pages/helpers/types.js';
+import type { PictureItem, Lang } from '../helpers/types.js';
 
 type SVGProps = {
   onClick: MouseEvent => void,

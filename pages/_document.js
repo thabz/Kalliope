@@ -1,8 +1,8 @@
-// ./pages/_document.js
-import Document, { Head, Main, NextScript } from 'next/document';
+import React from 'react';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 import flush from 'styled-jsx/server';
 
-export default class MyDocument extends Document {
+class MyDocument extends Document {
   static getInitialProps({ renderPage, asPath }) {
     const { html, head, errorHtml, chunks } = renderPage();
     // TODO: Get all supported langs from somewhere...
@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html lang={this.props.lang}>
+      <Html lang={this.props.lang}>
         <Head>
           <style>{`body { margin: 0 } /* custom! */`}</style>
         </Head>
@@ -28,7 +28,9 @@ export default class MyDocument extends Document {
           <NextScript />
           <script src="/static/register-sw.js" />
         </body>
-      </html>
+      </Html>
     );
   }
 }
+
+export default MyDocument;

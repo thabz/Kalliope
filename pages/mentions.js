@@ -4,7 +4,7 @@ import React from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
 import Nav, { poetCrumbsWithTitle } from '../components/nav';
-import _ from '../pages/helpers/translations.js';
+import _ from '../helpers/translations.js';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
@@ -14,15 +14,56 @@ import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
-import * as Client from './helpers/client.js';
+import * as Client from '../helpers/client.js';
 import type {
   Lang,
   Poet,
   Work,
   TextContentType,
   Error,
-} from './helpers/types.js';
-import { createURL } from './helpers/client.js';
+} from '../helpers/types.js';
+import { createURL } from '../helpers/client.js';
+
+const sectionTitle = (sectionType, lang) => {
+  switch (sectionType) {
+    case 'mentions':
+      return _('Omtaler', lang);
+    case 'translations':
+      return _('Oversættelser', lang);
+    case 'primary':
+      _('Primær litteratur', lang);
+    case 'secondary':
+      _('Sekundær litteratur', lang);
+    default:
+      return 'Ukendt sektion ' + sectionType;
+  }
+};
+
+class Section extends React.Component {
+  render() {
+    const { title, items } = this.props;
+    return (
+      <div className="list-section" style={{ marginBottom: '20px' }}>
+        <h3 style={{ columnSpan: 'all' }}>{title}</h3>
+        {items}
+        <style jsx>{`
+          h3 {
+            font-weight: normal;
+            font-size: 18px;
+            border-bottom: 1px solid black;
+          }
+        `}</style>
+      </div>
+    );
+  }
+}
+
+class TranslationsSection extends React.Component {
+  render() {
+    const { translations, lang } = this.props;
+    return <Section title={sectionTitle('translations', lang)} items={[]} />;
+  }
+}
 
 type MentionsProps = {
   lang: Lang,
@@ -66,16 +107,10 @@ export default class extends React.Component<MentionsProps> {
       return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
     }
     const requestPath = `/${lang}/mentions/${poet.id}`;
-    const titles = {
-      mentions: _('Omtaler', lang),
-      translations: _('Oversættelser', lang),
-      primary: _('Primær litteratur', lang),
-      secondary: _('Sekundær litteratur', lang),
-    };
-    const sections = ['mentions', 'translations', 'primary', 'secondary']
+    const sections = ['mentions', 'primary', 'secondary']
       .map((section, i) => {
         return {
-          title: titles[section],
+          title: sectionTitle(section, lang),
           items: this.props[section].map((line, j) => {
             return (
               <div
@@ -100,23 +135,16 @@ export default class extends React.Component<MentionsProps> {
       })
       .filter(g => g.items.length > 0)
       .map(g => {
-        return (
-          <div
-            key={g.title}
-            className="list-section"
-            style={{ marginBottom: '20px' }}>
-            <h3 style={{ columnSpan: 'all' }}>{g.title}</h3>
-            {g.items}
-            <style jsx>{`
-              h3 {
-                font-weight: normal;
-                font-size: 18px;
-                border-bottom: 1px solid black;
-              }
-            `}</style>
-          </div>
-        );
+        return <Section title={g.title} items={g.items} key={g.title} />;
       });
+
+    sections.push(
+      <TranslationsSection
+        translations={translations}
+        lang={lang}
+        key={'translations'}
+      />
+    );
 
     const title = <PoetName poet={poet} includePeriod />;
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';

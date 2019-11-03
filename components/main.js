@@ -3,7 +3,7 @@
 import React from 'react';
 import PictureOverlay from './pictureoverlay.js';
 import { Link, Router } from '../routes';
-import type { PictureItem, Lang } from '../pages/helpers/types.js';
+import type { PictureItem, Lang } from '../helpers/types.js';
 
 type MainStateTypes = {
   overlayPictures: {

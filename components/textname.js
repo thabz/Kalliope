@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
-import type { Text } from '../pages/helpers/types.js';
-import CommonData from '../pages/helpers/commondata.js';
+import type { Text } from '../helpers/types.js';
+import CommonData from '../helpers/commondata.js';
 
 type TextNameProps = {
   text: Text,

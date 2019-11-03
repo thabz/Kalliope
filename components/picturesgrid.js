@@ -8,7 +8,7 @@ import type {
   Work,
   PictureItem,
   Error,
-} from '../pages/helpers/types.js';
+} from '../helpers/types.js';
 
 type ArtworkListProps = {
   lang: Lang,

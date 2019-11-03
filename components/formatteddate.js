@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import type { Lang } from '../pages/helpers/types.js';
+import type { Lang } from '../helpers/types.js';
 
 type parseDateReturnType = {
   day: ?number,

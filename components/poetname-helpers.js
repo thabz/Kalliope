@@ -1,6 +1,6 @@
 // @flow
 
-import type { Poet, Lang } from '../pages/helpers/types.js'
+import type { Poet, Lang } from '../helpers/types.js'
 
 const nvl = <T>(x: ?T, v: T): T => {
   return x == null ? v : x;

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link } from '../routes';
-import type { SectionForRendering } from '../pages/helpers/types.js';
+import type { SectionForRendering } from '../helpers/types.js';
 import TwoColumns from './twocolumns.js';
 
 type SectionedListProps = {

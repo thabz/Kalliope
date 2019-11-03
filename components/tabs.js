@@ -3,9 +3,9 @@ import React from 'react';
 import { Link, Router } from '../routes';
 import * as Links from './links.js';
 import { poetGenetiveLastName } from './poetname-helpers.js';
-import _ from '../pages/helpers/translations.js';
-import type { Lang, Poet, Country } from '../pages/helpers/types.js';
-import CommonData from '../pages/helpers/commondata.js';
+import _ from '../helpers/translations.js';
+import type { Lang, Poet, Country } from '../helpers/types.js';
+import CommonData from '../helpers/commondata.js';
 
 const transitionDuration = '0.2s';
 

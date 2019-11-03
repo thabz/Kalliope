@@ -14,12 +14,12 @@ import { poetNameString } from '../components/poetname-helpers.js';
 import PicturesGrid from '../components/picturesgrid.js';
 import WorksList from '../components/workslist.js';
 import * as Links from '../components/links';
-import * as Client from './helpers/client.js';
+import * as Client from '../helpers/client.js';
 import ErrorPage from './error.js';
-import CommonData from './helpers/commondata.js';
-import type { Lang, Poet, Work, PictureItem, Error } from './helpers/types.js';
-import _ from '../pages/helpers/translations.js';
-import * as OpenGraph from './helpers/opengraph.js';
+import CommonData from '../helpers/commondata.js';
+import type { Lang, Poet, Work, PictureItem, Error } from '../helpers/types.js';
+import _ from '../helpers/translations.js';
+import * as OpenGraph from '../helpers/opengraph.js';
 
 type ArtworkListProps = {
   lang: Lang,

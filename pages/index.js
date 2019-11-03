@@ -19,9 +19,9 @@ import type {
   NewsItem,
   TimelineItem,
   PictureItem,
-} from './helpers/types.js';
-import { createURL } from './helpers/client.js';
-import _ from '../pages/helpers/translations.js';
+} from '../helpers/types.js';
+import { createURL } from '../helpers/client.js';
+import _ from '../helpers/translations.js';
 import 'isomorphic-fetch';
 
 type TodaysEventsProps = {

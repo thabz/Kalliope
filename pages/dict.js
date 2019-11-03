@@ -11,9 +11,9 @@ import { KalliopeTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
-import * as Sorting from './helpers/sorting.js';
-import type { Lang, DictItem, SectionForRendering } from './helpers/types.js';
-import { createURL } from './helpers/client.js';
+import * as Sorting from '../helpers/sorting.js';
+import type { Lang, DictItem, SectionForRendering } from '../helpers/types.js';
+import { createURL } from '../helpers/client.js';
 
 const groupsByLetter = (dictItems: Array<DictItem>) => {
   let groups = new Map();

@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import type { Poet, Lang } from '../pages/helpers/types.js';
+import type { Poet, Lang } from '../helpers/types.js';
 import { poetNameParts } from './poetname-helpers.js';
 
 const nvl = <T>(x: ?T, v: T): T => {

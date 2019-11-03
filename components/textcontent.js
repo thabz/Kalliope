@@ -9,10 +9,10 @@ import type {
   Lang,
   TextContentOptions,
   TextContentType,
-} from '../pages/helpers/types.js';
+} from '../helpers/types.js';
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
-import CommonData from '../pages/helpers/commondata.js';
+import CommonData from '../helpers/commondata.js';
 
 // Fiks bindestreger mellem årstal, sidetal osv.
 const replaceHyphens = s => {

@@ -12,10 +12,10 @@ import WorkName from '../components/workname.js';
 import { PoetTabs } from '../components/tabs.js';
 import SectionedList from '../components/sectionedlist.js';
 import * as Links from '../components/links.js';
-import * as Sorting from './helpers/sorting.js';
-import { createURL } from './helpers/client.js';
-import CommonData from '../pages/helpers/commondata.js';
-import _ from '../pages/helpers/translations.js';
+import * as Sorting from '../helpers/sorting.js';
+import { createURL } from '../helpers/client.js';
+import CommonData from '../helpers/commondata.js';
+import _ from '../helpers/translations.js';
 import type {
   LinesPair,
   Section,
@@ -24,7 +24,7 @@ import type {
   Work,
   SectionForRendering,
   LinesType,
-} from './helpers/types.js';
+} from '../helpers/types.js';
 import 'isomorphic-fetch';
 
 type TextsProps = {

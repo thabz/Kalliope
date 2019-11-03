@@ -9,7 +9,10 @@ import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
-import { poetNameString, poetLastNameString } from '../components/poetname-helpers.js';
+import {
+  poetNameString,
+  poetLastNameString,
+} from '../components/poetname-helpers.js';
 import WorkName from '../components/workname.js';
 import Picture from '../components/picture.js';
 import TextContent from '../components/textcontent.js';
@@ -18,9 +21,9 @@ import FormattedDate, { parseDate } from '../components/formatteddate.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
-import * as Client from './helpers/client.js';
-import * as OpenGraph from './helpers/opengraph.js';
-import _ from '../pages/helpers/translations.js';
+import * as Client from '../helpers/client.js';
+import * as OpenGraph from '../helpers/opengraph.js';
+import _ from '../helpers/translations.js';
 
 import type {
   Lang,
@@ -31,8 +34,8 @@ import type {
   TextContentType,
   TextLang,
   Error,
-} from './helpers/types.js';
-import { createURL } from './helpers/client.js';
+} from '../helpers/types.js';
+import { createURL } from '../helpers/client.js';
 
 const dateAndPlace = (
   datePlace: ?DateWithPlace,

@@ -12,13 +12,13 @@ import Tabs from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
-import * as Sorting from './helpers/sorting.js';
-import * as Strings from './helpers/strings.js';
-import _ from './helpers/translations.js';
-import CommonData from '../pages/helpers/commondata.js';
+import * as Sorting from '../helpers/sorting.js';
+import * as Strings from '../helpers/strings.js';
+import _ from '../helpers/translations.js';
+import CommonData from '../helpers/commondata.js';
 import ErrorPage from './error.js';
-import * as Client from './helpers/client.js';
-import { createURL } from './helpers/client.js';
+import * as Client from '../helpers/client.js';
+import { createURL } from '../helpers/client.js';
 import type {
   Lang,
   Country,
@@ -27,7 +27,7 @@ import type {
   SortReturn,
   SectionForRendering,
   Error,
-} from './helpers/types.js';
+} from '../helpers/types.js';
 
 type GroupBy = 'name' | 'year';
 
@@ -64,21 +64,23 @@ const groupsByLetter = (poets: Array<Poet>, lang: Lang) => {
 
 const groupsByYear = (poets: Array<Poet>, lang: Lang) => {
   let groups = new Map();
-  poets.filter(p => p.type === 'poet').forEach(p => {
-    let key = _('Ukendt fødeår', lang);
-    if (
-      p.period != null &&
-      p.period.born != null &&
-      p.period.born.date !== '?'
-    ) {
-      const year = parseInt(p.period.born.date.substring(0, 4), 10);
-      const intervalStart = year - (year % 25);
-      key = `${intervalStart} - ${intervalStart + 24}`;
-    }
-    let group = groups.get(key) || [];
-    group.push(p);
-    groups.set(key, group);
-  });
+  poets
+    .filter(p => p.type === 'poet')
+    .forEach(p => {
+      let key = _('Ukendt fødeår', lang);
+      if (
+        p.period != null &&
+        p.period.born != null &&
+        p.period.born.date !== '?'
+      ) {
+        const year = parseInt(p.period.born.date.substring(0, 4), 10);
+        const intervalStart = year - (year % 25);
+        key = `${intervalStart} - ${intervalStart + 24}`;
+      }
+      let group = groups.get(key) || [];
+      group.push(p);
+      groups.set(key, group);
+    });
   let sortedGroups = [];
   groups.forEach((group, key) => {
     sortedGroups.push({

@@ -7,7 +7,7 @@ import Nav, { kalliopeCrumbs } from '../components/nav';
 import { KalliopeTabs } from '../components/tabs.js';
 import SubHeading from '../components/subheading.js';
 import Heading from '../components/heading.js';
-import type { Lang, Error } from './helpers/types.js';
+import type { Lang, Error } from '../helpers/types.js';
 
 type ErrorProps = {
   lang: Lang,

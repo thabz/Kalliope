@@ -14,7 +14,7 @@ import SidebarPictures from '../components/sidebarpictures.js';
 import Picture from '../components/picture.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
-import * as Client from './helpers/client.js';
+import * as Client from '../helpers/client.js';
 import Heading from '../components/heading.js';
 import TextContent from '../components/textcontent.js';
 import ErrorPage from './error.js';
@@ -24,8 +24,8 @@ import type {
   TextContentType,
   AboutItem,
   Error,
-} from './helpers/types.js';
-import { createURL } from './helpers/client.js';
+} from '../helpers/types.js';
+import { createURL } from '../helpers/client.js';
 
 // Koden er stort set identisk med keyword
 

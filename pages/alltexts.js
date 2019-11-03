@@ -12,13 +12,13 @@ import Tabs from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import TwoColumns from '../components/twocolumns';
-import * as Sorting from './helpers/sorting.js';
-import * as Strings from './helpers/strings.js';
-import _ from './helpers/translations.js';
-import CommonData from '../pages/helpers/commondata.js';
+import * as Sorting from '../helpers/sorting.js';
+import * as Strings from '../helpers/strings.js';
+import _ from '../helpers/translations.js';
+import CommonData from '../helpers/commondata.js';
 import ErrorPage from './error.js';
-import * as Client from './helpers/client.js';
-import { createURL } from './helpers/client.js';
+import * as Client from '../helpers/client.js';
+import { createURL } from '../helpers/client.js';
 import type {
   Lang,
   Country,

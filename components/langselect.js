@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from '../routes';
 import * as Links from './links.js';
-import type { Lang } from '../pages/helpers/types.js';
+import type { Lang } from '../helpers/types.js';
 
 type LangSelectProps = {
   lang: Lang,

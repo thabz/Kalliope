@@ -3,15 +3,15 @@
 import React, { Fragment } from 'react';
 import WorkName from '../components/workname.js';
 import { Link } from '../routes';
-import CommonData from '../pages/helpers/commondata.js';
-import _ from '../pages/helpers/translations.js';
+import CommonData from '../helpers/commondata.js';
+import _ from '../helpers/translations.js';
 import type {
   Lang,
   Poet,
   Work,
   PictureItem,
   Error,
-} from '../pages/helpers/types.js';
+} from '../helpers/types.js';
 
 type WorksListProps = {
   lang: Lang,

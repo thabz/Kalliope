@@ -1,8 +1,8 @@
 // @flow
 import React from 'react';
-import type { Work, Lang } from '../pages/helpers/types.js';
-import CommonData from '../pages/helpers/commondata.js';
-import _ from '../pages/helpers/translations.js';
+import type { Work, Lang } from '../helpers/types.js';
+import CommonData from '../helpers/commondata.js';
+import _ from '../helpers/translations.js';
 
 type WorkNameProps = {
   work: Work,

@@ -11,9 +11,9 @@ import TextName, {
   textLinkTitleString,
 } from '../components/textname.js';
 import TextContent from './textcontent.js';
-import CommonData from '../pages/helpers/commondata.js';
-import _ from '../pages/helpers/translations.js';
-import * as Strings from '../pages/helpers/strings.js';
+import CommonData from '../helpers/commondata.js';
+import _ from '../helpers/translations.js';
+import * as Strings from '../helpers/strings.js';
 import * as Links from './links.js';
 import type {
   Lang,
@@ -21,7 +21,7 @@ import type {
   Work,
   Text,
   URLString,
-} from '../pages/helpers/types.js';
+} from '../helpers/types.js';
 
 type BreadcrumbItem = {
   url?: ?URLString,
