@@ -2,6 +2,7 @@ const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
+  force_reload,
 } = require('../libs/caching.js');
 const {
   safeMkdir,
@@ -17,10 +18,11 @@ const { primaryTextVariantId } = require('./variants.js');
 const person_mentions_dirty = new Set();
 
 const build_person_or_keyword_refs = collected => {
-  let person_or_keyword_refs = new Map(
-    loadCachedJSON('collected.person_or_keyword_refs') || []
-  );
-  const force_reload = person_or_keyword_refs.size == 0;
+  let person_or_keyword_refs = new Map([]);
+  if (!force_reload) {
+    loadCachedJSON('collected.person_or_keyword_refs') || [];
+  }
+  const forced_reload = person_or_keyword_refs.size == 0;
   let found_changes = false;
   const regexps = [
     { regexp: /xref ()poem="([^"]*)"/g, type: 'text' },
@@ -33,7 +35,7 @@ const build_person_or_keyword_refs = collected => {
   ];
   // TODO: Led også efter <a person="">xxx</a> og <a poet="">xxxx</a>
   // toKey is a poet id or a keyword id
-  const register = (filename, toKey, fromPoemId, type) => {
+  const register = (filename, toKey, fromPoemId, type, toPoemId) => {
     const collection = person_or_keyword_refs.get(toKey) || {
       mention: [],
       translation: [],
@@ -48,10 +50,16 @@ const build_person_or_keyword_refs = collected => {
     } else if (type === 'translation') {
       const mentionIndex = collection.mention.indexOf(fromPoemId);
       if (mentionIndex > -1) {
+        // If this is a translationed poem that were a mention earlier, remove it from mentions.
         collection.mention.splice(mentionIndex, 1);
       }
-      if (collection.translation.indexOf(fromPoemId) === -1) {
-        collection.translation.push(fromPoemId);
+      if (
+        !collection.translation.some(t => t.translationPoemId === fromPoemId)
+      ) {
+        collection.translation.push({
+          translationPoemId: fromPoemId,
+          translatedPoemId: toPoemId,
+        });
       }
     } else {
       throw new Error(`${filename} has xref with unknown type ${type}`);
@@ -65,7 +73,7 @@ const build_person_or_keyword_refs = collected => {
       if (!fileExists(filename)) {
         return;
       }
-      if (!force_reload && !isFileModified(filename)) {
+      if (!forced_reload && !isFileModified(filename)) {
         return;
       } else {
         found_changes = true;
@@ -88,7 +96,7 @@ const build_person_or_keyword_refs = collected => {
                   const toPoetId = toText.poetId;
                   if (toPoetId !== poetId) {
                     // Skip self-refs
-                    register(filename, toPoetId, fromId, refType);
+                    register(filename, toPoetId, fromId, refType, toPoemId);
                   }
                 } else {
                   throw new Error(
@@ -139,7 +147,7 @@ const build_mentions_json = collected => {
         meta.workId}`;
     }
     const workNameFormattet =
-      work.id === 'andre' ? '' : `- ${workLinkName(work)}`;
+      work.id === 'andre' ? '' : ` - ${workLinkName(work)}`;
     return [
       [
         `${poet}: <a poem="${poemId}">»${meta.title}«</a>${workNameFormattet}`,
@@ -177,12 +185,37 @@ const build_mentions_json = collected => {
         })
         .map(build_html);
       data.translations = refs.translation
-        .filter(id => {
-          // Hvis en tekst har varianter som også henviser til denne,
-          // vil vi kun vise den ældste variant.
-          return primaryTextVariantId(id, collected) === id;
+        .filter(t => {
+          // Fjern oversættelser som ikke er den ældste variant
+          const { translationPoemId, _ } = t;
+          return (
+            primaryTextVariantId(translationPoemId, collected) ===
+            translationPoemId
+          );
         })
-        .map(build_html);
+        .map(t => {
+          const { translationPoemId, translatedPoemId } = t;
+          const translationPoem = collected.texts.get(translationPoemId);
+          const translatedPoem = collected.texts.get(translatedPoemId);
+          if (translatedPoem == null) {
+            throw `${translatedPoemId} not found in texts.`;
+          }
+          return {
+            translated: {
+              poem: translatedPoem,
+              work: collected.works.get(
+                `${translatedPoem.poetId}/${translatedPoem.workId}`
+              ),
+            },
+            translation: {
+              poem: translationPoem,
+              work: collected.works.get(
+                `${translationPoem.poetId}/${translationPoem.workId}`
+              ),
+              poet: collected.poets.get(translationPoem.poetId),
+            },
+          };
+        });
     }
 
     ['primary', 'secondary'].forEach(filename => {
