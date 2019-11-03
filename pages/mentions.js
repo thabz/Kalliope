@@ -1,10 +1,11 @@
 // @flow
 
-import React from 'react';
+import React, { useState } from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
 import Nav, { poetCrumbsWithTitle } from '../components/nav';
 import _ from '../pages/helpers/translations.js';
+import { Link } from '../routes';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
@@ -22,7 +23,21 @@ import type {
   TextContentType,
   Error,
 } from './helpers/types.js';
+import { poetsByLastname } from './helpers/sorting.js';
 import { createURL } from './helpers/client.js';
+
+const joinedByComma = (items, lang) => {
+  let result = [];
+  items.forEach((item, i) => {
+    result.push(item);
+    if (i < items.length - 2) {
+      result.push(', ');
+    } else if (i === items.length - 2) {
+      result.push(` ${_('og', lang)} `);
+    }
+  });
+  return result;
+};
 
 const sectionTitle = (sectionType, lang) => {
   switch (sectionType) {
@@ -31,9 +46,9 @@ const sectionTitle = (sectionType, lang) => {
     case 'translations':
       return _('Oversættelser', lang);
     case 'primary':
-      _('Primær litteratur', lang);
+      return _('Primær litteratur', lang);
     case 'secondary':
-      _('Sekundær litteratur', lang);
+      return _('Sekundær litteratur', lang);
     default:
       return 'Ukendt sektion ' + sectionType;
   }
@@ -58,12 +73,161 @@ class Section extends React.Component {
   }
 }
 
-class TranslationsSection extends React.Component {
-  render() {
-    const { translations, lang } = this.props;
-    return <Section title={sectionTitle('translations', lang)} items={[]} />;
+const Item = props => {
+  const { children } = props;
+  return (
+    <div
+      style={{
+        marginBottom: '5px',
+        marginLeft: '30px',
+        textIndent: '-30px',
+        breakInside: 'avoid',
+        lineHeight: 1.5,
+      }}>
+      {children}
+    </div>
+  );
+};
+
+const PoemLink = props => {
+  const { poem, lang } = props;
+  const url = Links.textURL(lang, poem.id);
+  const title = poem.linktitle || poem.title || poem.firstline;
+  return (
+    <Link route={url}>
+      <a>{title}</a>
+    </Link>
+  );
+};
+
+const TranslationsGroupedByTranslated = props => {
+  const { translations, lang } = props;
+
+  const byTranslated = {};
+  // Build byTranslated
+  translations.forEach(t => {
+    const { translated, translation } = t;
+    const a = byTranslated[translated.poem.id] || {
+      translated,
+      translations: [],
+    };
+    a.translations.push(translation);
+    byTranslated[translated.poem.id] = a;
+  });
+  // Render byTranslated
+  return Object.values(byTranslated)
+    .sort((a, b) => {
+      return a.translated.poem.title < b.translated.poem.title ? -1 : 1;
+    })
+    .map(a => {
+      const translations = a.translations.map(t => {
+        return (
+          <>
+            <PoetName poet={t.poet} />: <PoemLink poem={t.poem} lang={lang} />
+          </>
+        );
+      });
+      return (
+        <Item>
+          <PoemLink poem={a.translated.poem} lang={lang} />{' '}
+          {_('er oversat af', lang)} {joinedByComma(translations, lang)}.
+        </Item>
+      );
+    });
+};
+
+const TranslationsGroupedByTranslator = props => {
+  const { translations, lang } = props;
+
+  const byTranslator = {};
+  // Build byTranslator
+  translations.forEach(t => {
+    const { translated, translation } = t;
+    const a = byTranslator[translation.poet.id] || {
+      translator: translation.poet,
+      translations: [],
+    };
+    a.translations.push(t);
+    byTranslator[translation.poet.id] = a;
+  });
+  // Render byTranslator
+  return Object.values(byTranslator)
+    .sort((a, b) => {
+      return poetsByLastname(a.translator, b.translator);
+    })
+    .map(a => {
+      const translations = a.translations.map(t => {
+        return (
+          <>
+            <PoemLink poem={t.translated.poem} lang={lang} /> {_('to', lang)}{' '}
+            <PoemLink poem={t.translation.poem} lang={lang} />
+          </>
+        );
+      });
+      return (
+        <Item>
+          <PoetName poet={a.translator} lastNameFirst={true} />{' '}
+          {_('har oversat', lang)} {joinedByComma(translations, lang)}.
+        </Item>
+      );
+    });
+};
+const TranslationsSection = props => {
+  const { translations, lang } = props;
+  const [groupBy, setGroupBy] = useState('by-translator');
+
+  const groupByOptions = [
+    { title: _('Efter titel', lang), value: 'by-translated' },
+    { title: _('Efter oversætter', lang), value: 'by-translator' },
+  ].map(o => {
+    const selected = o.value === groupBy;
+    const style = {
+      marginLeft: '10px',
+      fontWeight: selected ? 'bold' : 'auto',
+      cursor: selected ? 'auto' : 'pointer',
+    };
+    console.log(o.value);
+    const onClick = () => {
+      setGroupBy(o.value);
+    };
+    return (
+      <span style={style} onClick={onClick}>
+        {o.title}
+      </span>
+    );
+  });
+  let items = [];
+  if (groupBy === 'by-translated') {
+    items = (
+      <TranslationsGroupedByTranslated
+        translations={translations}
+        lang={lang}
+      />
+    );
+  } else if (groupBy === 'by-translator') {
+    items = (
+      <TranslationsGroupedByTranslator
+        translations={translations}
+        lang={lang}
+      />
+    );
+  } else {
+    items = <p>Ukendt tilstand</p>;
   }
-}
+  const title = (
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'baseline',
+      }}>
+      <div>{sectionTitle('translations', lang)}</div>
+      <div style={{ fontSize: 'small' }}>{groupByOptions}</div>
+    </div>
+  );
+
+  return <Section title={title} items={items} />;
+};
 
 type MentionsProps = {
   lang: Lang,
@@ -113,22 +277,14 @@ export default class extends React.Component<MentionsProps> {
           title: sectionTitle(section, lang),
           items: this.props[section].map((line, j) => {
             return (
-              <div
-                key={j}
-                style={{
-                  marginBottom: '5px',
-                  marginLeft: '30px',
-                  textIndent: '-30px',
-                  breakInside: 'avoid',
-                  lineHeight: 1.5,
-                }}>
+              <Item key={j}>
                 <TextContent
                   key={j}
                   contentHtml={line}
                   lang={lang}
                   contentLang="da"
                 />
-              </div>
+              </Item>
             );
           }),
         };
@@ -138,13 +294,15 @@ export default class extends React.Component<MentionsProps> {
         return <Section title={g.title} items={g.items} key={g.title} />;
       });
 
-    sections.push(
-      <TranslationsSection
-        translations={translations}
-        lang={lang}
-        key={'translations'}
-      />
-    );
+    if (translations.length > 0) {
+      sections.push(
+        <TranslationsSection
+          translations={translations}
+          lang={lang}
+          key={'translations'}
+        />
+      );
+    }
 
     const title = <PoetName poet={poet} includePeriod />;
     const headTitle = poetNameString(poet, false, false) + ' - Kalliope';

@@ -679,6 +679,7 @@ const works_first_pass = collected => {
           );
         }
         texts.set(textId, {
+          id: textId,
           title: replaceDashes(linkTitle.title),
           firstline: replaceDashes(firstline == null ? null : firstline.title),
           indexTitle: replaceDashes(indexTitle.title),
