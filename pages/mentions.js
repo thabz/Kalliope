@@ -127,7 +127,7 @@ const TranslationsGroupedByTranslated = props => {
         );
       });
       return (
-        <Item>
+        <Item key={a.translated.poem.id}>
           <PoemLink poem={a.translated.poem} lang={lang} />{' '}
           {_('er oversat af', lang)} {joinedByComma(translations, lang)}.
         </Item>
@@ -164,7 +164,7 @@ const TranslationsGroupedByTranslator = props => {
         );
       });
       return (
-        <Item>
+        <Item key={a.translator.id}>
           <PoetName poet={a.translator} lastNameFirst={true} />{' '}
           {_('har oversat', lang)} {joinedByComma(translations, lang)}.
         </Item>
@@ -185,7 +185,6 @@ const TranslationsSection = props => {
       fontWeight: selected ? 'bold' : 'normal',
       cursor: selected ? 'auto' : 'pointer',
     };
-    console.log(o.value);
     const onClick = () => {
       setGroupBy(o.value);
     };
