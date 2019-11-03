@@ -97,7 +97,6 @@ const build_person_or_keyword_refs = collected => {
                   if (toPoetId !== poetId) {
                     // Skip self-refs
                     register(filename, toPoetId, fromId, refType, toPoemId);
-                    console.log(`Registering ${refType} to ${toPoemId}`);
                   }
                 } else {
                   throw new Error(
@@ -148,7 +147,7 @@ const build_mentions_json = collected => {
         meta.workId}`;
     }
     const workNameFormattet =
-      work.id === 'andre' ? '' : `- ${workLinkName(work)}`;
+      work.id === 'andre' ? '' : ` - ${workLinkName(work)}`;
     return [
       [
         `${poet}: <a poem="${poemId}">»${meta.title}«</a>${workNameFormattet}`,

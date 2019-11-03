@@ -94,7 +94,7 @@ const PoemLink = props => {
   const url = Links.textURL(lang, poem.id);
   return (
     <Link route={url}>
-      <a>{poem.linkTitle}</a>
+      <a>»{poem.linkTitle}«</a>
     </Link>
   );
 };
