@@ -28,150 +28,143 @@ type TodaysEventsProps = {
   lang: Lang,
   events: Array<TimelineItem>,
 };
-class TodaysEvents extends React.Component<TodaysEventsProps> {
-  render() {
-    const { lang, events } = this.props;
-    if (events == null || events.length == 0) {
-      return null;
-    }
-    const nowYear = new Date().getFullYear();
-    const renderedEvents = events
-      .filter(item => item.type !== 'image')
-      .map((item, i) => {
-        const yearsAgo = nowYear - parseInt(item.date.substring(0, 4));
-        const yearHtml = (
-          <div className="today-date" title={yearsAgo + ' år siden i dag'}>
-            <FormattedDate date={item.date} lang={lang} />
-          </div>
-        );
-        const html = (
-          <TextContent
-            contentHtml={item.content_html}
-            contentLang={item.content_lang}
-            lang={lang}
-          />
-        );
-        return (
-          <div className="today-item" key={i}>
-            {yearHtml}
-            <div className="today-body">{html}</div>
-          </div>
-        );
-      });
-    let pictureItems = events
-      .filter(item => item.type === 'image' && item.src != null)
-      .map((item, i) => {
-        const picture: PictureItem = {
-          src: item.src || '',
-          lang: item.content_lang,
-          content_html: item.content_html,
-        };
-        const html = (
-          <div className="picture-item">
-            <Picture
-              pictures={[picture]}
-              lang={lang}
-              contentLang={item.content_lang}
-            />
-          </div>
-        );
-        return (
-          <div className="today-item" key={i}>
-            <div className="today-body">{html}</div>
-          </div>
-        );
-      });
-    let pictureItem = pictureItems.length > 0 ? pictureItems[0] : null;
-    return (
-      <div>
-        <SubHeading>Dagen i dag</SubHeading>
-        <SplitWhenSmall>
-          <div>{renderedEvents}</div>
-          <div style={{ marginTop: '40px' }}>{pictureItem}</div>
-        </SplitWhenSmall>
-        <style jsx>{`
-          :global(div.today-item) {
-            margin-bottom: 20px;
-          }
-          :global(div.today-date) {
-            font-size: 0.8em;
-            margin-bottom: 3px;
-          }
-          :global(div.today-body) {
-            line-height: 1.6;
-          }
-        `}</style>
-      </div>
-    );
+const TodaysEvents = ({ lang, events }: TodaysEventsProps) => {
+  if (events == null || events.length == 0) {
+    return null;
   }
-}
+  const nowYear = new Date().getFullYear();
+  const renderedEvents = events
+    .filter(item => item.type !== 'image')
+    .map((item, i) => {
+      const yearsAgo = nowYear - parseInt(item.date.substring(0, 4));
+      const yearHtml = (
+        <div className="today-date" title={yearsAgo + ' år siden i dag'}>
+          <FormattedDate date={item.date} lang={lang} />
+        </div>
+      );
+      const html = (
+        <TextContent
+          contentHtml={item.content_html}
+          contentLang={item.content_lang}
+          lang={lang}
+        />
+      );
+      return (
+        <div className="today-item" key={i}>
+          {yearHtml}
+          <div className="today-body">{html}</div>
+        </div>
+      );
+    });
+  let pictureItems = events
+    .filter(item => item.type === 'image' && item.src != null)
+    .map((item, i) => {
+      const picture: PictureItem = {
+        src: item.src || '',
+        lang: item.content_lang,
+        content_html: item.content_html,
+      };
+      const html = (
+        <div className="picture-item">
+          <Picture
+            pictures={[picture]}
+            lang={lang}
+            contentLang={item.content_lang}
+          />
+        </div>
+      );
+      return (
+        <div className="today-item" key={i}>
+          <div className="today-body">{html}</div>
+        </div>
+      );
+    });
+  let pictureItem = pictureItems.length > 0 ? pictureItems[0] : null;
+  return (
+    <div>
+      <SubHeading>Dagen i dag</SubHeading>
+      <SplitWhenSmall>
+        <div>{renderedEvents}</div>
+        <div style={{ marginTop: '40px' }}>{pictureItem}</div>
+      </SplitWhenSmall>
+      <style jsx>{`
+        :global(div.today-item) {
+          margin-bottom: 20px;
+        }
+        :global(div.today-date) {
+          font-size: 0.8em;
+          margin-bottom: 3px;
+        }
+        :global(div.today-body) {
+          line-height: 1.6;
+        }
+      `}</style>
+    </div>
+  );
+};
 
 type NewsProps = {
   news: Array<NewsItem>,
   lang: Lang,
 };
-class News extends React.Component<NewsProps> {
-  render() {
-    const { lang, news } = this.props;
-
-    const items = news
-      .filter((_, i) => i < 5)
-      .map((item, i) => {
-        const { date, content_html, content_lang, title } = item;
-        let renderedTitle = null;
-        if (i === 0 && title != null) {
-          renderedTitle = <h3>{title}</h3>;
-        }
-        return (
-          <div className="news-item" key={date + i}>
-            {renderedTitle}
-            <div className="news-body">
-              <TextContent
-                contentHtml={content_html}
-                contentLang={content_lang}
-                lang={lang}
-              />
-            </div>
-            <div className="news-date">
-              <FormattedDate date={date} lang={lang} />
-            </div>
-            <style jsx>{`
-              div.news-item {
-                margin-bottom: 20px;
-              }
-              div.news-item:first-child {
-                padding-bottom: 40px;
-                border-bottom: 1px solid #757575;
-                margin-bottom: 50px;
-              }
-
-              :global(div.news-item h3) {
-                font-weight: 300;
-                font-size: 1.3em;
-                margin: 0 0 20px 0;
-                padding: 0;
-              }
-              div.news-body {
-                line-height: 1.6;
-                font-weight: 300;
-              }
-              div.news-date {
-                margin-top: 5px;
-                font-weight: 300;
-                font-size: 0.8em;
-                color: #757575;
-              }
-            `}</style>
+const News = ({ lang, news }: NewsProps) => {
+  const items = news
+    .filter((_, i) => i < 5)
+    .map((item, i) => {
+      const { date, content_html, content_lang, title } = item;
+      let renderedTitle = null;
+      if (i === 0 && title != null) {
+        renderedTitle = <h3>{title}</h3>;
+      }
+      return (
+        <div className="news-item" key={date + i}>
+          {renderedTitle}
+          <div className="news-body">
+            <TextContent
+              contentHtml={content_html}
+              contentLang={content_lang}
+              lang={lang}
+            />
           </div>
-        );
-      });
+          <div className="news-date">
+            <FormattedDate date={date} lang={lang} />
+          </div>
+          <style jsx>{`
+            div.news-item {
+              margin-bottom: 20px;
+            }
+            div.news-item:first-child {
+              padding-bottom: 40px;
+              border-bottom: 1px solid #757575;
+              margin-bottom: 50px;
+            }
 
-    return <div>{items}</div>;
-  }
-}
+            :global(div.news-item h3) {
+              font-weight: 300;
+              font-size: 1.3em;
+              margin: 0 0 20px 0;
+              padding: 0;
+            }
+            div.news-body {
+              line-height: 1.6;
+              font-weight: 300;
+            }
+            div.news-date {
+              margin-top: 5px;
+              font-weight: 300;
+              font-size: 0.8em;
+              color: #757575;
+            }
+          `}</style>
+        </div>
+      );
+    });
 
-const zeroPad = n => {
-  return n < 10 ? `0${n}` : n;
+  return <div>{items}</div>;
+};
+
+const zeroPad = (n: number) => {
+  return n < 10 ? `0${n}` : `${n}`;
 };
 
 type IndexProps = {

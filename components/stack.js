@@ -2,7 +2,11 @@
 
 import React from 'react';
 
-const Stack = props => {
+type StackProps = {
+  spacing: string,
+  children: Array<Node>,
+};
+const Stack = (props: StackProps) => {
   let { children, spacing } = { spacing: '15px', ...props };
   const padded = children.map((c, i) => {
     const style = i < children.length - 1 ? { marginBottom: spacing } : {};
