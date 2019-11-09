@@ -1,11 +1,12 @@
 // @flow
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, Router } from '../routes';
 import * as Links from './links.js';
 import { poetGenetiveLastName } from './poetname-helpers.js';
 import _ from '../pages/helpers/translations.js';
 import type { Lang, Poet, Country } from '../pages/helpers/types.js';
 import CommonData from '../pages/helpers/commondata.js';
+import LangContext from '../pages/helpers/LangContext.js';
 
 const transitionDuration = '0.2s';
 
@@ -527,7 +528,6 @@ export class PoetTabs extends React.Component<PoetTabsProps> {
 }
 
 type KalliopeTabsProps = {
-  lang: Lang,
   country?: Country,
   query?: ?string,
   selected:
@@ -539,43 +539,42 @@ type KalliopeTabsProps = {
     | 'search'
     | 'museum',
 };
-export class KalliopeTabs extends React.Component<KalliopeTabsProps> {
-  render() {
-    const { lang, selected, country, query } = this.props;
-    const tabs = [
-      { id: 'index', title: 'Kalliope', url: Links.frontPageURL(lang) },
-      {
-        id: 'poets',
-        title: _('Digtere', lang),
-        url: Links.poetsURL(lang, 'name'),
-      },
-      /*
+export const KalliopeTabs = (props: KalliopeTabsProps) => {
+  const { selected, country, query } = props;
+  const lang = useContext(LangContext);
+  const tabs = [
+    { id: 'index', title: 'Kalliope', url: Links.frontPageURL(lang) },
+    {
+      id: 'poets',
+      title: _('Digtere', lang),
+      url: Links.poetsURL(lang, 'name'),
+    },
+    /*
       {
         id: 'poems',
         title: _('Digte', lang),
         url: Links.allTextsURL(lang, 'dk', 'titles', 'A'),
       },
       */
-      {
-        id: 'keywords',
-        title: _('Nøgleord', lang),
-        url: Links.keywordsURL(lang),
-      },
-      //{ id: 'dictionary', title: 'Ordbog', url: Links.dictionaryURL(lang) },
-      {
-        id: 'about',
-        title: _('Om', lang),
-        url: Links.aboutURL(lang, 'kalliope'),
-      },
-    ];
-    return (
-      <Tabs
-        items={tabs}
-        selected={selected}
-        lang={lang}
-        country={country || 'dk'}
-        query={query}
-      />
-    );
-  }
-}
+    {
+      id: 'keywords',
+      title: _('Nøgleord', lang),
+      url: Links.keywordsURL(lang),
+    },
+    //{ id: 'dictionary', title: 'Ordbog', url: Links.dictionaryURL(lang) },
+    {
+      id: 'about',
+      title: _('Om', lang),
+      url: Links.aboutURL(lang, 'kalliope'),
+    },
+  ];
+  return (
+    <Tabs
+      items={tabs}
+      selected={selected}
+      lang={lang}
+      country={country || 'dk'}
+      query={query}
+    />
+  );
+};
