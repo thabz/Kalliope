@@ -6,26 +6,22 @@ import CommonData from '../pages/helpers/commondata.js';
 type TextNameProps = {
   text: Text,
 };
-export default class TextName extends React.Component<TextNameProps> {
-  render() {
-    const { text } = this.props;
-    const { title, title_prefix } = text;
-    let renderedPrefix = null;
-    if (title_prefix != null) {
-      renderedPrefix = (
-        <span style={{ color: CommonData.lightTextColor }}>
-          {title_prefix}{' '}
-        </span>
-      );
-    }
-    return (
-      <span className="textname">
-        {renderedPrefix}
-        {title}
-      </span>
+const TextName = ({ text }: TextNameProps) => {
+  const { title, title_prefix } = text;
+  let renderedPrefix = null;
+  if (title_prefix != null) {
+    renderedPrefix = (
+      <span style={{ color: CommonData.lightTextColor }}>{title_prefix} </span>
     );
   }
-}
+  return (
+    <span className="textname">
+      {renderedPrefix}
+      {title}
+    </span>
+  );
+};
+export default TextName;
 
 export function textTitleString(text: Text): string {
   return text.title;

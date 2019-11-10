@@ -9,7 +9,7 @@ import Nav, { kalliopeCrumbs } from '../components/nav';
 import LangSelect from '../components/langselect';
 import { KalliopeTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
-import PoetName, { poetNameString } from '../components/poetname.js';
+import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import PicturesGrid from '../components/picturesgrid.js';
 import * as Links from '../components/links';

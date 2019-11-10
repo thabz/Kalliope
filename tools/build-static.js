@@ -497,6 +497,9 @@ const handle_work = work => {
         const sectionId = safeGetAttr(part, 'id');
         const title = extractTitle(head, 'title');
         const toctitle = extractTitle(head, 'toctitle') || title;
+        if (toctitle == null) {
+          throw `En section mangler toctitle eller title i ${poetId}/${workId}.xml`;
+        }
         const linktitle = extractTitle(head, 'linktitle') || toctitle || title;
         const breadcrumb = { title: linktitle.title, id: sectionId };
         const subtoc = handle_section(part.get('content'), resolve_prev_next, [
@@ -676,9 +679,11 @@ const works_first_pass = collected => {
           );
         }
         texts.set(textId, {
+          id: textId,
           title: replaceDashes(linkTitle.title),
           firstline: replaceDashes(firstline == null ? null : firstline.title),
           indexTitle: replaceDashes(indexTitle.title),
+          linkTitle: replaceDashes(linkTitle.title),
           type: part.name(),
           poetId: poetId,
           workId: workId,

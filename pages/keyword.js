@@ -1,6 +1,7 @@
 // @flow
 
 import React from 'react';
+import type { Node } from 'react';
 import { Link } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
@@ -29,7 +30,7 @@ import _ from '../pages/helpers/translations.js';
 type KeywordComponentProps = {
   lang: Lang,
   keyword: Keyword,
-  error: ?Error,
+  error?: Error,
 };
 export default class extends React.Component<KeywordComponentProps> {
   static async getInitialProps({
@@ -38,11 +39,14 @@ export default class extends React.Component<KeywordComponentProps> {
     query: { lang: Lang, keywordId: string },
   }) {
     const json = await Client.keyword(keywordId);
-    return {
-      lang,
-      keyword: json,
-      error: json.error,
-    };
+    if (json == null) {
+      return { lang, error: 'Ikke fundet', keyword: null };
+    } else {
+      return {
+        lang,
+        keyword: json,
+      };
+    }
   }
 
   render() {
@@ -63,7 +67,7 @@ export default class extends React.Component<KeywordComponentProps> {
       );
     });
     const renderedPictures = <SidebarPictures>{pictures}</SidebarPictures>;
-    let sidebar = [];
+    let sidebar: Array<Node> = [];
     if (keyword.has_footnotes || keyword.pictures.length > 0) {
       if (keyword.has_footnotes) {
         sidebar.push(<FootnoteList />);

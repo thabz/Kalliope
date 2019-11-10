@@ -9,7 +9,10 @@ import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
-import { poetNameString, poetLastNameString } from '../components/poetname-helpers.js';
+import {
+  poetNameString,
+  poetLastNameString,
+} from '../components/poetname-helpers.js';
 import WorkName from '../components/workname.js';
 import Picture from '../components/picture.js';
 import TextContent from '../components/textcontent.js';
@@ -348,13 +351,12 @@ export default class extends React.Component<BioProps> {
             crumbs={poetCrumbsWithTitle(lang, poet, _('Biografi', lang))}
           />
           <Heading title={title} subtitle={_('Biografi', lang)} />
-          <PoetTabs lang={lang} poet={poet} selected="bio" />
+          <PoetTabs poet={poet} selected="bio" />
           <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
             <div style={{ lineHeight: '1.6' }}>
               <TextContent
                 contentHtml={content_html}
                 contentLang={content_lang}
-                lang={lang}
                 className="bio-text"
                 style={{ marginBottom: '40px' }}
               />
@@ -369,7 +371,7 @@ export default class extends React.Component<BioProps> {
               `}</style>
             </div>
           </SidebarSplit>
-          <LangSelect lang={lang} path={requestPath} />
+          <LangSelect path={requestPath} />
         </Main>
       </div>
     );

@@ -9,6 +9,7 @@ type NoteProps = {
   lang: Lang,
   className?: string,
 };
+
 export default class Note extends React.Component<NoteProps> {
   render() {
     const { note, lang, className } = this.props;
