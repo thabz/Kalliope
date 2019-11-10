@@ -15,7 +15,7 @@ import * as Links from './links';
 import CommonData from '../pages/helpers/commondata.js';
 
 // Fiks bindestreger mellem årstal, sidetal osv.
-const replaceHyphens = s => {
+const replaceHyphens = (s: string) => {
   return s.replace(/(\d)-(\d)/g, '$1–$2'); // Hyphen/minus (U+002D) to en-dash (U+2013)
 };
 

@@ -10,7 +10,6 @@ import LangContext from '../pages/helpers/LangContext.js';
 type PictureProps = {
   pictures: Array<PictureItem>,
   startIndex?: number,
-  lang: Lang,
   showDropShadow?: boolean,
   clickToZoom?: boolean,
   contentLang: TextLang,
@@ -75,7 +74,6 @@ const Picture = ({
       <PictureOverlay
         pictures={pictures}
         closeCallback={onOverlayClose}
-        lang={lang}
         startIndex={startIndex}
       />
     );
