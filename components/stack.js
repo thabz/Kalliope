@@ -1,16 +1,22 @@
 // @flow
 
-import React from 'react';
+import * as React from 'react';
 
 type StackProps = {
   spacing: string,
-  children: Array<Node>,
+  children: React.Node,
 };
 const Stack = (props: StackProps) => {
   let { children, spacing } = { spacing: '15px', ...props };
-  const padded = children.map((c, i) => {
-    const style = i < children.length - 1 ? { marginBottom: spacing } : {};
-    return <div style={style}>{c}</div>;
+
+  const childrenArray = React.Children.toArray(children);
+  const padded = childrenArray.map((c, i) => {
+    const style = i < childrenArray.length - 1 ? { marginBottom: spacing } : {};
+    return (
+      <div style={style} key={i}>
+        {c}
+      </div>
+    );
   });
   return <div>{padded}</div>;
 };

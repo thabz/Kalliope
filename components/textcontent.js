@@ -20,7 +20,7 @@ const replaceHyphens = s => {
 };
 
 type TextContentPropsType = {
-  contentHtml: TextContentType,
+  contentHtml: ?TextContentType,
   contentLang: TextLang,
   lang: Lang,
   options?: TextContentOptions,

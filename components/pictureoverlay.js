@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import PropTypes from 'prop-types';
 import CommonData from '../pages/helpers/commondata.js';
 import TextContent from './textcontent.js';
 import type { PictureItem, Lang } from '../pages/helpers/types.js';
@@ -204,7 +203,11 @@ class BiggerPicture extends React.Component<*> {
       <figure className="overlay-figure">
         <img src={fallbackSrc} className={imgClassName} alt={alt} />
         <figcaption>
-          <TextContent contentHtml={picture.content_html} lang={lang} />
+          <TextContent
+            contentHtml={picture.content_html}
+            lang={lang}
+            contentLang="da"
+          />
         </figcaption>
         <style jsx>{`
           figure {
@@ -232,9 +235,8 @@ class BiggerPicture extends React.Component<*> {
 type PictureOverlayPropType = {
   pictures: Array<PictureItem>,
   startIndex: number,
-  srcPrefix?: string,
   lang: Lang,
-  closeCallback: Function,
+  closeCallback: () => void,
 };
 
 type PictureOverlayStateType = {
@@ -249,11 +251,6 @@ export default class PictureOverlay extends React.Component<
   hideOverlay: Event => void;
   onRightClick: Event => void;
   onLeftClick: Event => void;
-
-  static contextTypes = {
-    showPictureOverlay: PropTypes.func,
-    hidePictureOverlay: PropTypes.func,
-  };
 
   constructor(props: PictureOverlayPropType) {
     super(props);
