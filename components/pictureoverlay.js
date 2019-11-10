@@ -3,11 +3,9 @@ import React, { useState, useEffect, useContext } from 'react';
 import CommonData from '../pages/helpers/commondata.js';
 import TextContent from './textcontent.js';
 import { CloseButton, LeftArrow, RightArrow } from './icons.js';
-import LangContext from '../pages/helpers/LangContext.js';
-import type { PictureItem, Lang } from '../pages/helpers/types.js';
+import type { PictureItem } from '../pages/helpers/types.js';
 
 const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
-  const lang = useContext(LangContext);
   const src = picture.src;
   const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
     return '/t/' + p1 + CommonData.fallbackImagePostfix;
@@ -39,11 +37,7 @@ const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
     <figure className="overlay-figure">
       <img src={fallbackSrc} className={imgClassName} alt={alt} />
       <figcaption>
-        <TextContent
-          contentHtml={picture.content_html}
-          lang={lang}
-          contentLang="da"
-        />
+        <TextContent contentHtml={picture.content_html} contentLang="da" />
       </figcaption>
       <style jsx>{`
         figure {
@@ -74,7 +68,6 @@ type Props = {
 };
 const PictureOverlay = ({ pictures, startIndex, closeCallback }: Props) => {
   const [currentIndex, setCurrentIndex] = useState(startIndex);
-  const lang = useContext(LangContext);
 
   const hideOverlay = (e: Event) => {
     e.preventDefault();
@@ -151,7 +144,7 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }: Props) => {
     <div className="overlay-background" onClick={hideOverlay}>
       <div className="overlay-container" onClick={eatClick}>
         <div className="overlay-icon">{buttons}</div>
-        <BiggerPicture picture={picture} lang={lang} />
+        <BiggerPicture picture={picture} />
       </div>
       <style jsx>{`
         .overlay-background {

@@ -297,10 +297,10 @@ export default class extends React.Component<SearchProps> {
     let headTitle = null;
     let pageTitle = null;
     let nav = null;
+    let requestPath = `/${lang}/search/${country}?query=${query}`;
+
     if (poet != null) {
-      tabs = (
-        <PoetTabs lang={lang} poet={poet} selected="search" query={query} />
-      );
+      tabs = <PoetTabs poet={poet} selected="search" query={query} />;
       headTitle =
         'Søgning - ' + poetNameString(poet, false, false) + ' - Kalliope';
       pageTitle = <PoetName poet={poet} includePeriod />;
@@ -336,7 +336,7 @@ export default class extends React.Component<SearchProps> {
           {tabs}
           {renderedResult}
           {henterFlere}
-          <LangSelect lang={lang} />
+          <LangSelect path={requestPath} />
         </Main>
       </div>
     );

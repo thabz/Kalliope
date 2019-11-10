@@ -308,9 +308,9 @@ export default class extends React.Component<MentionsProps> {
             crumbs={poetCrumbsWithTitle(lang, poet, _('Henvisninger', lang))}
           />
           <Heading title={title} subtitle={_('Henvisninger', lang)} />
-          <PoetTabs lang={lang} poet={poet} selected="mentions" />
+          <PoetTabs poet={poet} selected="mentions" />
           {sections}
-          <LangSelect lang={lang} path={requestPath} />
+          <LangSelect path={requestPath} />
         </Main>
       </div>
     );

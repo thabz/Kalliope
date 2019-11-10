@@ -470,62 +470,61 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
 
 type PoetTabsProps = {
   poet: Poet,
-  lang: Lang,
   query?: ?string,
   selected: 'works' | 'titles' | 'first' | 'bio' | 'search' | 'mentions',
 };
-export class PoetTabs extends React.Component<PoetTabsProps> {
-  render() {
-    const { lang, poet, selected, query } = this.props;
-    const tabs: Array<{
-      id: string,
-      title: string,
-      hide?: boolean,
-      url: string,
-    }> = [
-      {
-        id: 'works',
-        title: _('Værker', lang),
-        hide: !poet.has_works && !poet.has_artwork,
-        url: Links.worksURL(lang, poet.id),
-      },
-      {
-        id: 'titles',
-        title: _('Digttitler', lang),
-        hide: !poet.has_poems,
-        url: Links.textsURL(lang, poet.id, 'titles'),
-      },
-      {
-        id: 'first',
-        title: _('Førstelinjer', lang),
-        hide: !poet.has_poems,
-        url: Links.textsURL(lang, poet.id, 'first'),
-      },
-      {
-        id: 'mentions',
-        title: _('Henvisninger', lang),
-        hide: !poet.has_mentions,
-        url: Links.mentionsURL(lang, poet.id),
-      },
-      {
-        id: 'bio',
-        title: _('Biografi', lang),
-        hide: !poet.has_biography,
-        url: Links.bioURL(lang, poet.id),
-      },
-    ];
-    return (
-      <Tabs
-        items={tabs}
-        selected={selected}
-        lang={lang}
-        country={poet.country}
-        poet={poet}
-        query={query}
-      />
-    );
-  }
-}
+export const PoetTabs = (props: PoetTabsProps) => {
+  const { poet, selected, query } = props;
+  const lang = useContext(LangContext);
+
+  const tabs: Array<{
+    id: string,
+    title: string,
+    hide?: boolean,
+    url: string,
+  }> = [
+    {
+      id: 'works',
+      title: _('Værker', lang),
+      hide: !poet.has_works && !poet.has_artwork,
+      url: Links.worksURL(lang, poet.id),
+    },
+    {
+      id: 'titles',
+      title: _('Digttitler', lang),
+      hide: !poet.has_poems,
+      url: Links.textsURL(lang, poet.id, 'titles'),
+    },
+    {
+      id: 'first',
+      title: _('Førstelinjer', lang),
+      hide: !poet.has_poems,
+      url: Links.textsURL(lang, poet.id, 'first'),
+    },
+    {
+      id: 'mentions',
+      title: _('Henvisninger', lang),
+      hide: !poet.has_mentions,
+      url: Links.mentionsURL(lang, poet.id),
+    },
+    {
+      id: 'bio',
+      title: _('Biografi', lang),
+      hide: !poet.has_biography,
+      url: Links.bioURL(lang, poet.id),
+    },
+  ];
+  return (
+    <Tabs
+      items={tabs}
+      selected={selected}
+      lang={lang}
+      country={poet.country}
+      poet={poet}
+      query={query}
+    />
+  );
+};
 
 type KalliopeTabsProps = {
   country?: Country,

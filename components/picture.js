@@ -5,7 +5,6 @@ import TextContent from './textcontent.js';
 import PictureOverlay from './pictureoverlay.js';
 import CommonData from '../pages/helpers/commondata.js';
 import * as Strings from '../pages/helpers/strings.js';
-import LangContext from '../pages/helpers/LangContext.js';
 
 type PictureProps = {
   pictures: Array<PictureItem>,
@@ -21,7 +20,6 @@ const Picture = ({
   clickToZoom = true,
   startIndex = 0,
 }: PictureProps) => {
-  const lang = useContext(LangContext);
   const [overlayShown, showOverlay] = useState(false);
 
   const picture = pictures[startIndex];
@@ -94,7 +92,6 @@ const Picture = ({
           <TextContent
             contentHtml={picture.content_html}
             contentLang={picture.content_lang || 'da'}
-            lang={lang}
           />
         </figcaption>
       </figure>

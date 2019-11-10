@@ -141,9 +141,9 @@ export default class Texts extends React.Component<TextsProps> {
             crumbs={poetCrumbsWithTitle(lang, poet, lastCrumbTitle)}
           />
           <Heading title={title} />
-          <PoetTabs lang={lang} poet={poet} selected={type} />
+          <PoetTabs poet={poet} selected={type} />
           {renderedGroups}
-          <LangSelect lang={lang} path={requestPath} />
+          <LangSelect path={requestPath} />
         </Main>
       </div>
     );
