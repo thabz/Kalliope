@@ -1,4 +1,5 @@
 // @flow
+import type { Country } from './types.js';
 
 // All our images should have scaled versions with the following widths
 module.exports.availableImageWidths = [
@@ -19,7 +20,10 @@ module.exports.availableImageFormats = ['webp', 'jpg'];
 
 module.exports.fallbackImagePostfix = '-w800.jpg';
 
-module.exports.countries = [
+const countries: Array<{
+  code: Country,
+  adjective: { da: string, en: string },
+}> = [
   {
     code: 'dk',
     adjective: {
@@ -84,6 +88,8 @@ module.exports.countries = [
     },
   },
 ];
+
+module.exports.countries = countries;
 
 module.exports.backgroundLinkColor = 'hsla(353, 20%, 85%, 1)';
 module.exports.lightLinkColor = '#9C686C';

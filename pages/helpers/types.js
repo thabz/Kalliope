@@ -9,7 +9,16 @@ export type DateWithPlace = {
 
 export type Lang = 'da' | 'en';
 export type TextLang = 'da' | 'en' | 'de' | 'fr' | 'sv' | 'no' | 'it';
-export type Country = 'dk' | 'gb' | 'de' | 'fr' | 'se' | 'no' | 'it' | 'us';
+export type Country =
+  | 'dk'
+  | 'gb'
+  | 'de'
+  | 'fr'
+  | 'se'
+  | 'no'
+  | 'it'
+  | 'us'
+  | 'un';
 
 export type PoetId = string;
 export type WorkId = string;

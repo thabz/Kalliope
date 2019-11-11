@@ -1,9 +1,9 @@
 // @flow
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import type { Node } from 'react';
 
 type FootnoteProps = {
-  text: *,
+  text: Node,
 };
 export class Footnote extends Component<FootnoteProps> {
   context: {
@@ -31,7 +31,7 @@ export class Footnote extends Component<FootnoteProps> {
 }
 
 Footnote.contextTypes = {
-  footnoteContainer: PropTypes.object,
+  footnoteContainer: {},
 };
 
 export class FootnoteList extends Component<*> {
@@ -85,11 +85,11 @@ export class FootnoteList extends Component<*> {
 }
 
 FootnoteList.contextTypes = {
-  footnoteContainer: PropTypes.object,
+  footnoteContainer: {},
 };
 
 type FootnoteContainerProps = {
-  children?: *,
+  children?: Node,
 };
 export class FootnoteContainer extends Component<FootnoteContainerProps> {
   _footnotes: Array<Footnote>;
@@ -125,5 +125,5 @@ export class FootnoteContainer extends Component<FootnoteContainerProps> {
 }
 
 FootnoteContainer.childContextTypes = {
-  footnoteContainer: PropTypes.object,
+  footnoteContainer: {},
 };

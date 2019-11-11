@@ -3,10 +3,7 @@ import React from 'react';
 import type { Text } from '../pages/helpers/types.js';
 import CommonData from '../pages/helpers/commondata.js';
 
-type TextNameProps = {
-  text: Text,
-};
-const TextName = ({ text }: TextNameProps) => {
+const TextName = ({ text }: { text: Text }) => {
   const { title, title_prefix } = text;
   let renderedPrefix = null;
   if (title_prefix != null) {
