@@ -83,3 +83,5 @@ const Heading = (props: HeadingProps) => {
     </div>
   );
 };
+
+export default Heading;
