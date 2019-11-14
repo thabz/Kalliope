@@ -1,5 +1,5 @@
 // @flow
-import type { Country } from './types.js';
+//import type { Country } from './types.js';
 
 // All our images should have scaled versions with the following widths
 module.exports.availableImageWidths = [
@@ -20,10 +20,11 @@ module.exports.availableImageFormats = ['webp', 'jpg'];
 
 module.exports.fallbackImagePostfix = '-w800.jpg';
 
-const countries: Array<{
-  code: Country,
-  adjective: { da: string, en: string },
-}> = [
+const countries = [
+//const countries: Array<{
+//  code: Country,
+//  adjective: { da: string, en: string },
+//}> = [
   {
     code: 'dk',
     adjective: {
