@@ -117,7 +117,7 @@ const TextContent = (props: TextContentPropsType) => {
         </Link>
       );
     } else {
-      return <code>{node.toString()}</code>;
+      return <code key={keySeq++}>{node.toString()}</code>;
     }
   };
 
@@ -146,7 +146,7 @@ const TextContent = (props: TextContentPropsType) => {
       case 'sub':
         return <sub key={keySeq++}>{handle_nodes(node.childNodes)}</sub>;
       case 'strike':
-        return <strike>{handle_nodes(node.childNodes)}</strike>;
+        return <strike key={keySeq++}>{handle_nodes(node.childNodes)}</strike>;
       case 'year':
       case 'wrap':
       case 'content':
@@ -288,7 +288,7 @@ const TextContent = (props: TextContentPropsType) => {
         return <Footnote key={keySeq++} text={noteContent} />;
       case 'sc':
         return (
-          <span style={{ fontVariant: 'small-caps' }}>
+          <span key={keySeq++} style={{ fontVariant: 'small-caps' }}>
             {handle_nodes(node.childNodes)}
           </span>
         );
@@ -296,7 +296,7 @@ const TextContent = (props: TextContentPropsType) => {
         return handle_a(node);
       default:
         //console.log(`Mærkeligt tag fundet ${node.toString()}`);
-        return <code>{node.toString()}</code>;
+        return <code key={keySeq++}>{node.toString()}</code>;
     }
   };
 
@@ -324,7 +324,7 @@ const TextContent = (props: TextContentPropsType) => {
   }
   if (!(contentHtml instanceof Array)) {
     return (
-      <div>
+      <div key={keyPrefix + 'failed'}>
         <pre>{JSON.stringify(contentHtml)}</pre>
       </div>
     );
@@ -441,7 +441,11 @@ const TextContent = (props: TextContentPropsType) => {
   });
 
   return (
-    <div style={style} className={className} lang={contentLang}>
+    <div
+      style={style}
+      className={className}
+      lang={contentLang}
+      key={keyPrefix + 'outer'}>
       {/*
         <pre>
           {contentLang || 'Mangler content_lang'}
