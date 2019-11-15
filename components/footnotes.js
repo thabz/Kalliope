@@ -1,5 +1,5 @@
 // @flow
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import type { Node } from 'react';
 
 class Footnotes {
@@ -9,17 +9,10 @@ class Footnotes {
     return this._footnotes.length;
   };
   registrer = (footnote: Footnote, text: Node) => {
-    console.log('Registering');
     this._footnotes.push({ footnote, text });
-    /*
-    const findes = this.number(footnote) >= 0;
-    if (!findes) {
-      this._footnotes.push({ footnote, text });
-    }
-    */
+    return this._footnotes.length;
   };
   unregister = (footnote: Footnote) => {
-    console.log('Unregistering');
     this._footnotes = this._footnotes.filter(x => x.footnote !== footnote);
   };
   footnotes = () => {
@@ -36,15 +29,12 @@ const Footnote = ({ text }: FootnoteProps) => {
   const footnotes = useContext(FootnoteContext);
 
   useEffect(() => {
-    footnotes.registrer(this, text);
-    console.log('Registered');
     return () => {
       footnotes.unregister(this, text);
     };
   });
 
-  const number = footnotes.number(this);
-  console.log('Number', number);
+  const number = footnotes.registrer(this, text);
   const anchor = `note-${number}`;
   return (
     <sup style={{ marginLeft: '0.3em' }} className="footnotes-print-only">
@@ -70,8 +60,6 @@ const FootnoteList = () => {
   });
   return (
     <div className="footnotes footnotes-print-only">
-      Antal noter:
-      {notes.length}
       {notes}
       <style jsx>{`
         div.footnotes {
@@ -101,14 +89,13 @@ const FootnoteList = () => {
   );
 };
 
-const __globalFootnotes = new Footnotes();
-
 type FootnoteContainerProps = {
   children: Node,
 };
 const FootnoteContainer = (props: FootnoteContainerProps) => {
+  const [footnotes] = useState(new Footnotes());
   return (
-    <FootnoteContext.Provider value={__globalFootnotes}>
+    <FootnoteContext.Provider value={footnotes}>
       {props.children}
     </FootnoteContext.Provider>
   );
