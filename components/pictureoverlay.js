@@ -1,9 +1,9 @@
 // @flow
 import React, { useState, useEffect, useContext } from 'react';
-import CommonData from '../pages/helpers/commondata.js';
+import CommonData from '../common/commondata.js';
 import TextContent from './textcontent.js';
 import { CloseButton, LeftArrow, RightArrow } from './icons.js';
-import type { PictureItem } from '../pages/helpers/types.js';
+import type { PictureItem } from '../common/types.js';
 
 const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
   const src = picture.src;

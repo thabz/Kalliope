@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
 import Nav, { poetCrumbsWithTitle } from '../components/nav';
-import _ from '../pages/helpers/translations.js';
+import _ from '../common/translations.js';
 import { Link } from '../routes';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
@@ -15,16 +15,16 @@ import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
-import * as Client from './helpers/client.js';
+import * as Client from '../common/client.js';
 import type {
   Lang,
   Poet,
   Work,
   TextContentType,
   Error,
-} from './helpers/types.js';
-import { poetsByLastname } from './helpers/sorting.js';
-import { createURL } from './helpers/client.js';
+} from '../common/types.js';
+import { poetsByLastname } from '../common/sorting.js';
+import { createURL } from '../common/client.js';
 
 const joinedByComma = (items, lang) => {
   let result = [];

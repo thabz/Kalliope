@@ -2,17 +2,17 @@
 import React, { useContext } from 'react';
 import { Link } from '../routes';
 var DOMParser = require('xmldom').DOMParser;
-import LangContext from '../pages/helpers/LangContext.js';
+import LangContext from '../common/LangContext.js';
 import type {
   Text,
   TextLang,
   Lang,
   TextContentOptions,
   TextContentType,
-} from '../pages/helpers/types.js';
+} from '../common/types.js';
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
-import CommonData from '../pages/helpers/commondata.js';
+import CommonData from '../common/commondata.js';
 
 // Fiks bindestreger mellem årstal, sidetal osv.
 const replaceHyphens = (s: string) => {

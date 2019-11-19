@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import type { Poet, Lang } from '../pages/helpers/types.js';
+import type { Poet, Lang } from '../common/types.js';
 import { poetNameParts } from './poetname-helpers.js';
 
 type PoetNameProps = {

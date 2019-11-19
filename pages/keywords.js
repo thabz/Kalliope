@@ -11,11 +11,11 @@ import { KalliopeTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
-import * as Sorting from './helpers/sorting.js';
-import type { Lang, Keyword, SectionForRendering } from './helpers/types.js';
-import { createURL } from './helpers/client.js';
-import _ from '../pages/helpers/translations.js';
-import LangContext from '../pages/helpers/LangContext.js';
+import * as Sorting from '../common/sorting.js';
+import type { Lang, Keyword, SectionForRendering } from '../common/types.js';
+import { createURL } from '../common/client.js';
+import _ from '../common/translations.js';
+import LangContext from '../common/LangContext.js';
 
 const groupsByLetter = (keywords: Array<Keyword>) => {
   let groups = new Map();

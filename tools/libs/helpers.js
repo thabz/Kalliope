@@ -5,7 +5,7 @@ const bible = require('./bible-abbr.js');
 const async = require('async');
 const path = require('path');
 const sharp = require('sharp');
-const CommonData = require('../../pages/helpers/commondata.js');
+const CommonData = require('../../common/commondata.js');
 
 const safeMkdir = dirname => {
   try {

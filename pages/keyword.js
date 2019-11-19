@@ -19,13 +19,13 @@ import Picture from '../components/picture.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
-import type { Lang, Keyword, Error } from './helpers/types.js';
-import * as Paths from './helpers/paths.js';
-import * as Client from './helpers/client.js';
-import { createURL } from './helpers/client.js';
-import * as OpenGraph from './helpers/opengraph.js';
+import type { Lang, Keyword, Error } from '../common/types.js';
+import * as Paths from '../common/paths.js';
+import * as Client from '../common/client.js';
+import { createURL } from '../common/client.js';
+import * as OpenGraph from '../common/opengraph.js';
 import ErrorPage from './error.js';
-import _ from '../pages/helpers/translations.js';
+import _ from '../common/translations.js';
 
 type KeywordComponentProps = {
   lang: Lang,

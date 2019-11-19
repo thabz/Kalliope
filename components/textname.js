@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
-import type { Text } from '../pages/helpers/types.js';
-import CommonData from '../pages/helpers/commondata.js';
+import type { Text } from '../common/types.js';
+import CommonData from '../common/commondata.js';
 
 const TextName = ({ text }: { text: Text }) => {
   const { title, title_prefix } = text;

@@ -17,12 +17,12 @@ import {
 import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import TextName from '../components/textname.js';
-import * as Strings from './helpers/strings.js';
-import CommonData from '../pages/helpers/commondata.js';
+import * as Strings from '../common/strings.js';
+import CommonData from '../common/commondata.js';
 import ErrorPage from './error.js';
-import * as Client from './helpers/client.js';
-import type { Lang, Country, Poet, PoetId, Error } from './helpers/types.js';
-import _ from './helpers/translations.js';
+import * as Client from '../common/client.js';
+import type { Lang, Country, Poet, PoetId, Error } from '../common/types.js';
+import _ from '../common/translations.js';
 
 type SearchProps = {
   lang: Lang,

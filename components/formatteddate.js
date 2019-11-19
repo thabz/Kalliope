@@ -1,8 +1,8 @@
 // @flow
 
 import React, { useContext } from 'react';
-import type { Lang } from '../pages/helpers/types.js';
-import LangContext from '../pages/helpers/LangContext.js';
+import type { Lang } from '../common/types.js';
+import LangContext from '../common/LangContext.js';
 
 type parseDateReturnType = {
   day: ?number,

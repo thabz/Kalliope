@@ -2,13 +2,7 @@
 
 import React from 'react';
 import Picture from '../components/picture.js';
-import type {
-  Lang,
-  Poet,
-  Work,
-  PictureItem,
-  Error,
-} from '../pages/helpers/types.js';
+import type { Lang, Poet, Work, PictureItem, Error } from '../common/types.js';
 
 type ArtworkListProps = {
   lang: Lang,

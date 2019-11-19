@@ -19,10 +19,10 @@ import type {
   NewsItem,
   TimelineItem,
   PictureItem,
-} from './helpers/types.js';
-import { createURL } from './helpers/client.js';
-import LangContext from './helpers/LangContext.js';
-import _ from '../pages/helpers/translations.js';
+} from '../common/types.js';
+import { createURL } from '../common/client.js';
+import LangContext from '../common/LangContext.js';
+import _ from '../common/translations.js';
 import 'isomorphic-fetch';
 
 type TodaysEventsProps = {

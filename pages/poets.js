@@ -7,19 +7,19 @@ import { Link } from '../routes';
 import * as Links from '../components/links';
 import Nav, { kalliopeCrumbs } from '../components/nav';
 import LangSelect from '../components/langselect.js';
-import LangContext from './helpers/LangContext.js';
+import LangContext from '../common/LangContext.js';
 import CountryPicker from '../components/countrypicker.js';
 import Tabs from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
-import * as Sorting from './helpers/sorting.js';
-import * as Strings from './helpers/strings.js';
-import _ from './helpers/translations.js';
-import CommonData from '../pages/helpers/commondata.js';
+import * as Sorting from '../common/sorting.js';
+import * as Strings from '../common/strings.js';
+import _ from '../common/translations.js';
+import CommonData from '../common/commondata.js';
 import ErrorPage from './error.js';
-import * as Client from './helpers/client.js';
-import { createURL } from './helpers/client.js';
+import * as Client from '../common/client.js';
+import { createURL } from '../common/client.js';
 import type {
   Lang,
   Country,
@@ -28,7 +28,7 @@ import type {
   SortReturn,
   SectionForRendering,
   Error,
-} from './helpers/types.js';
+} from '../common/types.js';
 
 type Group = {
   title: string,

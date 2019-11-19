@@ -3,8 +3,8 @@ const { execSync } = require('child_process');
 const path = require('path');
 const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
-const Paths = require('../pages/helpers/paths.js');
-const CommonData = require('../pages/helpers/commondata.js');
+const Paths = require('../common/paths.js');
+const CommonData = require('../common/commondata.js');
 const {
   isFileModified,
   markFileDirty,
@@ -353,11 +353,7 @@ const handle_text = (
     }
     if (facsimilePages[1] > workSource.facsimilePageCount) {
       throw new Error(
-        `fdirs/${poetId}/${workId}.xml ${textId} sideangivelse ${
-          facsimilePages[1]
-        } rækker over antal facsimile-sider. Er facsimile-pages-offset ${
-          workSource.facsimilePageCount
-        } korrekt?`
+        `fdirs/${poetId}/${workId}.xml ${textId} sideangivelse ${facsimilePages[1]} rækker over antal facsimile-sider. Er facsimile-pages-offset ${workSource.facsimilePageCount} korrekt?`
       );
     }
     source = {

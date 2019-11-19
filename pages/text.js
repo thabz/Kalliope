@@ -26,9 +26,9 @@ import Note from '../components/note.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import Picture from '../components/picture.js';
 import * as Links from '../components/links';
-import * as Client from './helpers/client.js';
-import * as OpenGraph from './helpers/opengraph.js';
-import _ from '../pages/helpers/translations.js';
+import * as Client from '../common/client.js';
+import * as OpenGraph from '../common/opengraph.js';
+import _ from '../common/translations.js';
 import ErrorPage from './error.js';
 import type {
   Lang,
@@ -40,7 +40,7 @@ import type {
   KeywordRef,
   PrevNextText,
   Error,
-} from './helpers/types.js';
+} from '../common/types.js';
 
 type KeywordLinkProps = { keyword: KeywordRef, lang: Lang };
 class KeywordLink extends React.Component<KeywordLinkProps> {
