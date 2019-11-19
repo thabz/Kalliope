@@ -23,8 +23,8 @@ export default class PicturesGrid extends React.Component<ArtworkListProps> {
 
     const sortArtworks = artwork => {
       return artwork.sort((a, b) => {
-        const aKey = a.year + a.src;
-        const bKey = b.year + b.src;
+        const aKey = (a.year || '') + a.src;
+        const bKey = (b.year || '') + b.src;
         return aKey > bKey ? 1 : -1;
       });
     };
@@ -40,7 +40,7 @@ export default class PicturesGrid extends React.Component<ArtworkListProps> {
     const rowHeight = items => {
       let height = 0;
       items.forEach(item => {
-        if (item.picture != null) {
+        if (item.picture != null && item.picture.size != null) {
           height =
             (item.picture.size.height / item.picture.size.width) * item.width;
         }

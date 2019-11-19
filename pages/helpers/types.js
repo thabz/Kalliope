@@ -147,6 +147,7 @@ export type PictureItem = {
   content_html?: TextContentType,
   primary?: boolean,
   size?: { width: number, height: number },
+  year?: string,
   src: string,
 };
 
