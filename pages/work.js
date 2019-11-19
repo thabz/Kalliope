@@ -21,9 +21,9 @@ import SidebarPictures from '../components/sidebarpictures.js';
 import Picture from '../components/picture.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
-import * as Client from './helpers/client.js';
-import * as OpenGraph from './helpers/opengraph.js';
-import CommonData from './helpers/commondata.js';
+import * as Client from '../common/client.js';
+import * as OpenGraph from '../common/opengraph.js';
+import CommonData from '../common/commondata.js';
 import { request } from 'http';
 import WorksList from '../components/workslist';
 import type {
@@ -36,7 +36,7 @@ import type {
   NoteItem,
   PictureItem,
   Error,
-} from './helpers/types.js';
+} from '../common/types.js';
 
 type WorkProps = {
   lang: Lang,
@@ -169,7 +169,6 @@ export default class extends React.Component<WorkProps> {
               <style jsx>{`
                 :global(.nodata) {
                   padding: 30px 0;
-                  font-weight: lighter;
                 }
               `}</style>
             </div>

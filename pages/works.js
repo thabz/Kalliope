@@ -14,12 +14,12 @@ import { poetNameString } from '../components/poetname-helpers.js';
 import PicturesGrid from '../components/picturesgrid.js';
 import WorksList from '../components/workslist.js';
 import * as Links from '../components/links';
-import * as Client from './helpers/client.js';
+import * as Client from '../common/client.js';
 import ErrorPage from './error.js';
-import CommonData from './helpers/commondata.js';
-import type { Lang, Poet, Work, PictureItem, Error } from './helpers/types.js';
-import _ from '../pages/helpers/translations.js';
-import * as OpenGraph from './helpers/opengraph.js';
+import CommonData from '../common/commondata.js';
+import type { Lang, Poet, Work, PictureItem, Error } from '../common/types.js';
+import _ from '../common/translations.js';
+import * as OpenGraph from '../common/opengraph.js';
 
 type ArtworkListProps = {
   lang: Lang,
@@ -32,8 +32,8 @@ class ArtworkList extends React.Component<ArtworkListProps> {
 
     const sortArtworks = artwork => {
       return artwork.sort((a, b) => {
-        const aKey = a.year + a.src;
-        const bKey = b.year + b.src;
+        const aKey = (a.year || '') + a.src;
+        const bKey = (b.year || '') + b.src;
         return aKey > bKey ? 1 : -1;
       });
     };
@@ -49,7 +49,7 @@ class ArtworkList extends React.Component<ArtworkListProps> {
     const rowHeight = items => {
       let height = 0;
       items.forEach(item => {
-        if (item.picture != null) {
+        if (item.picture != null && item.picture.size != null) {
           height =
             (item.picture.size.height / item.picture.size.width) * item.width;
         }
@@ -264,7 +264,6 @@ export default class extends React.Component<WorksProps> {
             <style jsx>{`
               :global(.nodata) {
                 padding: 30px 0;
-                font-weight: lighter;
               }
             `}</style>
           </div>

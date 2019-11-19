@@ -26,9 +26,9 @@ import Note from '../components/note.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import Picture from '../components/picture.js';
 import * as Links from '../components/links';
-import * as Client from './helpers/client.js';
-import * as OpenGraph from './helpers/opengraph.js';
-import _ from '../pages/helpers/translations.js';
+import * as Client from '../common/client.js';
+import * as OpenGraph from '../common/opengraph.js';
+import _ from '../common/translations.js';
 import ErrorPage from './error.js';
 import type {
   Lang,
@@ -40,7 +40,7 @@ import type {
   KeywordRef,
   PrevNextText,
   Error,
-} from './helpers/types.js';
+} from '../common/types.js';
 
 type KeywordLinkProps = { keyword: KeywordRef, lang: Lang };
 class KeywordLink extends React.Component<KeywordLinkProps> {
@@ -262,9 +262,7 @@ export default class extends React.Component<TextComponentProps> {
       }
       const firstPageNumber = text.source.facsimilePages[0];
       let facsimilePictures: Array<PictureItem> = [];
-      const srcPrefix = `https://kalliope.org/static/facsimiles/${poet.id}/${
-        text.source.facsimile
-      }`;
+      const srcPrefix = `https://kalliope.org/static/facsimiles/${poet.id}/${text.source.facsimile}`;
       for (let i = 0; i < text.source.facsimilePageCount; i++) {
         facsimilePictures.push({
           src: srcPrefix + '/' + pad(i, 3) + '.jpg',
@@ -457,7 +455,7 @@ export default class extends React.Component<TextComponentProps> {
               rightSide={rightSide}
             />
             <Heading title={title} subtitle="Værker" />
-            <PoetTabs lang={lang} poet={poet} selected="works" />
+            <PoetTabs poet={poet} selected="works" />
             <SidebarSplit sidebar={sidebar}>
               <div>
                 <article>
@@ -488,7 +486,7 @@ export default class extends React.Component<TextComponentProps> {
                 </article>
               </div>
             </SidebarSplit>
-            <LangSelect lang={lang} path={requestPath} />
+            <LangSelect path={requestPath} />
           </Main>
         </FootnoteContainer>
       </div>

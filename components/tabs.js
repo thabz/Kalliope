@@ -1,11 +1,12 @@
 // @flow
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, Router } from '../routes';
 import * as Links from './links.js';
 import { poetGenetiveLastName } from './poetname-helpers.js';
-import _ from '../pages/helpers/translations.js';
-import type { Lang, Poet, Country } from '../pages/helpers/types.js';
-import CommonData from '../pages/helpers/commondata.js';
+import _ from '../common/translations.js';
+import type { Lang, Poet, Country } from '../common/types.js';
+import CommonData from '../common/commondata.js';
+import LangContext from '../common/LangContext.js';
 
 const transitionDuration = '0.2s';
 
@@ -248,18 +249,20 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
       </div>
     );
 
-    const itemsRendered = items.filter(item => !item.hide).map((item, i) => {
-      const className = item.id === selected ? 'tab selected' : 'tab';
-      return (
-        <div className={className} key={item.url}>
-          <Link route={item.url}>
-            <a>
-              <h2>{item.title}</h2>
-            </a>
-          </Link>
-        </div>
-      );
-    });
+    const itemsRendered = items
+      .filter(item => !item.hide)
+      .map((item, i) => {
+        const className = item.id === selected ? 'tab selected' : 'tab';
+        return (
+          <div className={className} key={item.url}>
+            <Link route={item.url}>
+              <a>
+                <h2>{item.title}</h2>
+              </a>
+            </Link>
+          </div>
+        );
+      });
 
     const leftSide = (
       <div className="leftside">
@@ -317,7 +320,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
             padding: 0;
             margin: 0;
             outline: 0;            
-            font-weight: lighter;
+            font-weight: 100;
             font-family: inherit;
             transition: font-size ${transitionDuration}, line-height: ${transitionDuration};
             caret-color: black;
@@ -338,7 +341,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
             padding: 0;
             line-height: 32px;
             font-size: 32px;
-            font-weight: lighter;
+            font-weight: 100;
             transition: font-size ${transitionDuration}, line-height: ${transitionDuration};
           }
           :global(.tabs) > :global(.tab.selected) {
@@ -467,65 +470,63 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
 
 type PoetTabsProps = {
   poet: Poet,
-  lang: Lang,
   query?: ?string,
   selected: 'works' | 'titles' | 'first' | 'bio' | 'search' | 'mentions',
 };
-export class PoetTabs extends React.Component<PoetTabsProps> {
-  render() {
-    const { lang, poet, selected, query } = this.props;
-    const tabs: Array<{
-      id: string,
-      title: string,
-      hide?: boolean,
-      url: string,
-    }> = [
-      {
-        id: 'works',
-        title: _('Værker', lang),
-        hide: !poet.has_works && !poet.has_artwork,
-        url: Links.worksURL(lang, poet.id),
-      },
-      {
-        id: 'titles',
-        title: _('Digttitler', lang),
-        hide: !poet.has_poems,
-        url: Links.textsURL(lang, poet.id, 'titles'),
-      },
-      {
-        id: 'first',
-        title: _('Førstelinjer', lang),
-        hide: !poet.has_poems,
-        url: Links.textsURL(lang, poet.id, 'first'),
-      },
-      {
-        id: 'mentions',
-        title: _('Henvisninger', lang),
-        hide: !poet.has_mentions,
-        url: Links.mentionsURL(lang, poet.id),
-      },
-      {
-        id: 'bio',
-        title: _('Biografi', lang),
-        hide: !poet.has_biography,
-        url: Links.bioURL(lang, poet.id),
-      },
-    ];
-    return (
-      <Tabs
-        items={tabs}
-        selected={selected}
-        lang={lang}
-        country={poet.country}
-        poet={poet}
-        query={query}
-      />
-    );
-  }
-}
+export const PoetTabs = (props: PoetTabsProps) => {
+  const { poet, selected, query } = props;
+  const lang = useContext(LangContext);
+
+  const tabs: Array<{
+    id: string,
+    title: string,
+    hide?: boolean,
+    url: string,
+  }> = [
+    {
+      id: 'works',
+      title: _('Værker', lang),
+      hide: !poet.has_works && !poet.has_artwork,
+      url: Links.worksURL(lang, poet.id),
+    },
+    {
+      id: 'titles',
+      title: _('Digttitler', lang),
+      hide: !poet.has_poems,
+      url: Links.textsURL(lang, poet.id, 'titles'),
+    },
+    {
+      id: 'first',
+      title: _('Førstelinjer', lang),
+      hide: !poet.has_poems,
+      url: Links.textsURL(lang, poet.id, 'first'),
+    },
+    {
+      id: 'mentions',
+      title: _('Henvisninger', lang),
+      hide: !poet.has_mentions,
+      url: Links.mentionsURL(lang, poet.id),
+    },
+    {
+      id: 'bio',
+      title: _('Biografi', lang),
+      hide: !poet.has_biography,
+      url: Links.bioURL(lang, poet.id),
+    },
+  ];
+  return (
+    <Tabs
+      items={tabs}
+      selected={selected}
+      lang={lang}
+      country={poet.country}
+      poet={poet}
+      query={query}
+    />
+  );
+};
 
 type KalliopeTabsProps = {
-  lang: Lang,
   country?: Country,
   query?: ?string,
   selected:
@@ -537,43 +538,42 @@ type KalliopeTabsProps = {
     | 'search'
     | 'museum',
 };
-export class KalliopeTabs extends React.Component<KalliopeTabsProps> {
-  render() {
-    const { lang, selected, country, query } = this.props;
-    const tabs = [
-      { id: 'index', title: 'Kalliope', url: Links.frontPageURL(lang) },
-      {
-        id: 'poets',
-        title: _('Digtere', lang),
-        url: Links.poetsURL(lang, 'name'),
-      },
-      /*
+export const KalliopeTabs = (props: KalliopeTabsProps) => {
+  const { selected, country, query } = props;
+  const lang = useContext(LangContext);
+  const tabs = [
+    { id: 'index', title: 'Kalliope', url: Links.frontPageURL(lang) },
+    {
+      id: 'poets',
+      title: _('Digtere', lang),
+      url: Links.poetsURL(lang, 'name'),
+    },
+    /*
       {
         id: 'poems',
         title: _('Digte', lang),
         url: Links.allTextsURL(lang, 'dk', 'titles', 'A'),
       },
       */
-      {
-        id: 'keywords',
-        title: _('Nøgleord', lang),
-        url: Links.keywordsURL(lang),
-      },
-      //{ id: 'dictionary', title: 'Ordbog', url: Links.dictionaryURL(lang) },
-      {
-        id: 'about',
-        title: _('Om', lang),
-        url: Links.aboutURL(lang, 'kalliope'),
-      },
-    ];
-    return (
-      <Tabs
-        items={tabs}
-        selected={selected}
-        lang={lang}
-        country={country || 'dk'}
-        query={query}
-      />
-    );
-  }
-}
+    {
+      id: 'keywords',
+      title: _('Nøgleord', lang),
+      url: Links.keywordsURL(lang),
+    },
+    //{ id: 'dictionary', title: 'Ordbog', url: Links.dictionaryURL(lang) },
+    {
+      id: 'about',
+      title: _('Om', lang),
+      url: Links.aboutURL(lang, 'kalliope'),
+    },
+  ];
+  return (
+    <Tabs
+      items={tabs}
+      selected={selected}
+      lang={lang}
+      country={country || 'dk'}
+      query={query}
+    />
+  );
+};

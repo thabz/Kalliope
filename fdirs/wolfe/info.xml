@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wolfe" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Charles</firstname>
+    <lastname>Wolfe</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1791-12-14</date>
+      <place>Kildare, Irland</place>
+    </born>
+    <dead>
+      <date>1823-02-21</date>
+      <place>Cork, Irland</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
