@@ -168,8 +168,9 @@ Lægger Haand paa mit Bryst og slukker Faklen ud —
     <title>Chariterne</title>
     <firstline>Svæv, min Sang, paa din lette Flugt</firstline>
     <source pages="10-12"/>
-    <!-- TODO: Find originalen (Stolberg) -->
-    <keywords>stolbergf</keywords>
+    <notes>
+        <note unknown-original-by="stolbergf" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -232,8 +233,9 @@ Vil de hellige Tre synge min Vuggesang.
     <title>Mindet</title>
     <firstline>Sol for min Sjæl! Hil Dig, Du Mindets Gudinde!</firstline>
     <source pages="13-14"/>
-    <keywords>salis</keywords>
-    <!-- TODO: Find originalen (Salis) -->
+    <notes>
+        <note unknown-original-by="salis" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -276,8 +278,9 @@ Høje Veninde, Du er evindelig tro!
     <title>Amor og Psyche</title>
     <firstline>Tidt har paa Grave jeg seet to sammenslyngede Hænder</firstline>
     <source pages="15-16"/>
-    <keywords>herder</keywords>
-    <!-- TODO: Find originalen (Herder) -->
+    <notes>
+        <note unknown-original-by="herder" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -486,8 +489,9 @@ Her er forenet til Et: Blomst og den blussende Frugt!
     <title>Kvindens Skabelse</title>
     <firstline>Nu bringer jeg Dig, Adam, al din Glæde</firstline>
     <source pages="29-32"/>
-    <keywords>milton</keywords>
-    <!-- TODO: Find originalen (Milton) -->
+    <notes>
+        <note unknown-original-by="milton" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1253,10 +1257,12 @@ Og hav Du aldrig Taare paa Kind,
 <head>
     <title><num>I.</num>Du høje Helgenbilled i mit Sind!</title>
     <firstline>Du høje Helgenbilled i mit Sind!</firstline>
+    <notes>
+        <note unknown-original-by="ariosto" />
+    </notes>
     <source pages="70"/>
-    <keywords>sonnet,ariosto</keywords>
+    <keywords>sonnet</keywords>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Ariosto) -->
 </head>
 <body>
 Du høje Helgenbilled i mit Sind!
