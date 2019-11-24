@@ -54,6 +54,7 @@ export type Poet = {
     pseudonym?: string,
     christened?: string,
     realname?: string,
+    sortname?: string,
   },
   period: ?{
     born?: DateWithPlace,

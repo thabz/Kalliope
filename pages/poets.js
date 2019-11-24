@@ -30,6 +30,10 @@ import type {
   Error,
 } from '../common/types.js';
 
+const nvl = <T>(x: ?T, v: T): T => {
+  return x == null ? v : x;
+};
+
 type Group = {
   title: string,
   items: Array<Poet>,
@@ -43,16 +47,19 @@ const groupsByLetter = (poets: Array<Poet>, lang: Lang): Array<Group> => {
     .filter(p => p.type !== 'person')
     .filter(p => p.type !== 'artist')
     .forEach(p => {
-      let key = _('Ukendt digter', lang);
-      if (p.name.lastname != null) {
+      let key = null;
+      if (p.name.sortname != null) {
+        key = p.name.sortname[0];
+        if (key === 'A' && p.name.sortname.indexOf('Aa') === 0) {
+          key = 'Å';
+        }
+      } else if (p.name.lastname != null) {
         key = p.name.lastname[0];
-      }
-      if (
-        key === 'A' &&
-        p.name.lastname != null &&
-        p.name.lastname.indexOf('Aa') === 0
-      ) {
-        key = 'Å';
+        if (key === 'A' && p.name.lastname.indexOf('Aa') === 0) {
+          key = 'Å';
+        }
+      } else {
+        key = _('Ukendt digter', lang);
       }
       let group: Array<Poet> = groups.get(key) || [];
       group.push(p);

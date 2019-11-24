@@ -15,20 +15,15 @@ const nvl = <T>(x: ?T, v: T): T => {
 };
 
 export const poetsByLastname = (a: Poet, b: Poet): SortReturn => {
-  const a1 = nvl(a.name.lastname, 'X');
-  const a2 = nvl(a.name.firstname, 'X');
-  const b1 = nvl(b.name.lastname, 'X');
-  const b2 = nvl(b.name.firstname, 'X');
-
-  if (a1 === b1) {
-    if (a2 === b2) {
-      return a.id < b.id ? -1 : 1;
-    } else {
-      return a2.localeCompare(b2, daDK);
-    }
-  } else {
-    return a1.localeCompare(b1, daDK);
-  }
+  const ao = nvl(
+    a.name.sortname,
+    nvl(a.name.lastname, '') + nvl(a.name.firstname, '')
+  );
+  const bo = nvl(
+    b.name.sortname,
+    nvl(b.name.lastname, '') + nvl(b.name.firstname, '')
+  );
+  return ao.localeCompare(bo, daDK);
 };
 
 export const poetsByBirthDate = (a: Poet, b: Poet): SortReturn => {
