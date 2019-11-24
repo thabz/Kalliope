@@ -1,6 +1,7 @@
 // @flow
 
 import React, { Fragment } from 'react';
+import type { Element, Node } from 'react';
 import { Link } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
@@ -30,6 +31,7 @@ import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
 import ErrorPage from './error.js';
+import HelpKalliope from '../components/helpkalliope.js';
 import type {
   Lang,
   Poet,
@@ -214,9 +216,53 @@ export default class extends React.Component<TextComponentProps> {
       <NavPaging prev={rightSideItems[0]} next={rightSideItems[1]} />
     );
 
-    const notes = text.notes.map((note, i) => {
-      return <Note key={i} note={note} lang={lang} />;
-    });
+    const notes: Array<Node> = text.notes
+      .filter(note => note.type !== 'unknown-original')
+      .map((note, i) => {
+        return (
+          <Note key={'note' + i} type={note.type}>
+            <TextContent
+              contentHtml={note.content_html}
+              contentLang={note.content_lang}
+            />
+          </Note>
+        );
+      });
+
+    text.notes
+      .filter(
+        note =>
+          note.type === 'unknown-original' && note.unknownOriginalBy != null
+      )
+      .map((note, i) => {
+        const poet = note.unknownOriginalBy;
+        if (poet == null) {
+          return null;
+        }
+        const html = _(
+          `Oversættelse af et ukendt digt af <a poet="{poetId}">{poetName}</a>.`,
+          lang,
+          {
+            poetId: poet.id,
+            poetName: poetNameString(poet, false, true),
+          }
+        );
+        return (
+          <Note key={'unknown' + i} type={'unknown-original'}>
+            <>
+              <TextContent
+                contentHtml={[[html, { html: true }]]}
+                contentLang={lang}
+              />
+              <HelpKalliope unknownOriginalBy={poet} />
+            </>
+          </Note>
+        );
+      })
+      .filter((x: ?Node) => x != null)
+      .forEach((element: Node) => {
+        notes.push(element);
+      });
 
     let sourceText = '';
     if (text.source != null) {
@@ -229,16 +275,16 @@ export default class extends React.Component<TextComponentProps> {
         sourceText += 'p. ';
       }
       sourceText += source.pages + '.';
-      const note = {
-        lang,
-        type: 'source',
-        content_html: [[sourceText, { html: true }]],
-        content_lang: 'da',
-      };
       notes.push(
-        <Note className="print-only" key="source" note={note} lang={lang} />
+        <Note className="print-only" key="source" type="source">
+          <TextContent
+            contentHtml={[[sourceText, { html: true }]]}
+            contentLang="da"
+          />
+        </Note>
       );
     }
+
     let renderedNotes = null;
     if (notes.length > 0) {
       renderedNotes = <div style={{ marginBottom: '30px' }}>{notes}</div>;

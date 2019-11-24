@@ -32,6 +32,10 @@ const build_person_or_keyword_refs = collected => {
     { regexp: /xref ()bibel="([^",]*)/g, type: 'text' },
     { regexp: /a ()person="([^"]*)"/g, type: 'person' },
     { regexp: /a ()poet="([^"]*)"/g, type: 'person' },
+    {
+      regexp: /note ()unknown-original-by="([^",]*)/g,
+      type: 'unknown-original',
+    },
   ];
   // TODO: Led også efter <a person="">xxx</a> og <a poet="">xxxx</a>
   // toKey is a poet id or a keyword id
@@ -106,6 +110,9 @@ const build_person_or_keyword_refs = collected => {
               } else if (rule.type === 'person') {
                 const toPoetId = match[2];
                 register(filename, toPoetId, fromId, 'mention');
+              } else if (rule.type === 'unknown-original') {
+                const toPoetId = match[2];
+                register(filename, toPoetId, fromId, 'translation', null);
               }
             }
           });
@@ -196,17 +203,14 @@ const build_mentions_json = collected => {
         .map(t => {
           const { translationPoemId, translatedPoemId } = t;
           const translationPoem = collected.texts.get(translationPoemId);
-          const translatedPoem = collected.texts.get(translatedPoemId);
-          if (translatedPoem == null) {
-            throw `${translatedPoemId} not found in texts.`;
+          let translatedPoem = null;
+          if (translatedPoemId != null) {
+            translatedPoem = collected.texts.get(translatedPoemId);
+            if (translatedPoem == null) {
+              throw `${translatedPoemId} not found in texts.`;
+            }
           }
-          return {
-            translated: {
-              poem: translatedPoem,
-              work: collected.works.get(
-                `${translatedPoem.poetId}/${translatedPoem.workId}`
-              ),
-            },
+          const result = {
             translation: {
               poem: translationPoem,
               work: collected.works.get(
@@ -215,6 +219,15 @@ const build_mentions_json = collected => {
               poet: collected.poets.get(translationPoem.poetId),
             },
           };
+          if (translatedPoem != null) {
+            result.translated = {
+              poem: translatedPoem,
+              work: collected.works.get(
+                `${translatedPoem.poetId}/${translatedPoem.workId}`
+              ),
+            };
+          }
+          return result;
         });
     }
 

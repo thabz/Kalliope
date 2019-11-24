@@ -24,6 +24,8 @@ const translations: { [string]: string } = {
   'en*Efter oversætter': 'By translator',
   'en*er oversat af': 'is translated by',
   'en*har oversat': 'translated',
+  'en* et ukendt digt ': ' an unknown poem ',
+  'en*Et ukendt digt er oversat af': 'An unknown poem is translated by',
   'en*til': 'to',
   'en*og': 'and',
   'en*Ukendt år': 'Unknown birth year',
