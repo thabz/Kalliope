@@ -85,7 +85,14 @@ export default class extends React.Component<WorkProps> {
     const requestPath = `/${lang}/work/${poet.id}/${work.id}`;
 
     const renderedNotes = notes.map((note, i) => {
-      return <Note key={'note' + i} note={note} lang={lang} />;
+      return (
+        <Note key={'note' + i} type={note.type}>
+          <TextContent
+            contentHtml={note.content_html}
+            contentLang={note.content_lang}
+          />
+        </Note>
+      );
     });
 
     const workPictures = pictures.map((p, i) => {

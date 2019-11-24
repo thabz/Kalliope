@@ -1,18 +1,18 @@
 // @flow
 
 import React from 'react';
-import type { NoteItem, Lang } from '../common/types.js';
+import type { Node } from 'react';
+import type { NoteType, Lang } from '../common/types.js';
 import TextContent from './textcontent.js';
 
 type NoteProps = {
-  note: NoteItem,
-  lang: Lang,
+  type: NoteType,
   className?: string,
+  children?: Node,
 };
 
 const Note = (props: NoteProps) => {
-  const { note, lang, className } = props;
-  const { type } = note;
+  const { className, type, children } = props;
   let finalClassName = (className || '') + ' sidebar-note';
   if (type === 'credits') {
     finalClassName += ' sidebar-note-credits';
@@ -20,11 +20,7 @@ const Note = (props: NoteProps) => {
 
   return (
     <div className={finalClassName}>
-      <TextContent
-        contentHtml={note.content_html}
-        contentLang={note.content_lang}
-        lang={lang}
-      />
+      {children}
       <style jsx>{`
         div.sidebar-note {
           margin-bottom: 10px;

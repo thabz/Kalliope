@@ -8,7 +8,7 @@ import LangContext from '../common/LangContext.js';
 type WorkNameProps = {
   work: Work,
   cursive?: boolean,
-  useTitle: 'title' | 'toctitle' | 'linktitle' | 'breadcrumbtitle',
+  useTitle?: 'title' | 'toctitle' | 'linktitle' | 'breadcrumbtitle',
 };
 
 const WorkName = ({
