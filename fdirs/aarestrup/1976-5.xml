@@ -127,8 +127,10 @@ Blidt toner det, som fjerne Sølverklokker:
     <title>Legende</title>
     <toctitle>Falk: Legende</toctitle>
     <firstline>I Bayerlandet, i Ingolstad</firstline>
+    <notes>
+        <note unknown-original-by="falk" />
+    </notes>
     <source pages="13-14"/>
-    <!-- TODO: Find originalen (Falk) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -242,10 +244,9 @@ Vi sees igjen, Taalmodighed!
     <toctitle>Fouqué: Afskedssang</toctitle>
     <firstline>Om Elsktes Dør sig Skjalden sneg</firstline>
     <notes>
-        <note>Gendigtning af »Der Sänger schlich um Liebchens Thür«.</note>
+        <note>Oversættelse af Fouqué: <xref type="translation" poem="fouque2019112501"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Fouqué) -->
     <source pages="17-18"/>
 </head>
 <body>
@@ -304,7 +305,9 @@ Med Citherspil og Sang.
     <toctitle>—: Trøstens Vise</toctitle>
     <firstline>Frisk, nye Menniskbilled</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Fouqué) -->
+    <notes>
+        <note unknown-original-by="fouque" />
+    </notes>
     <source pages="19-21"/>
 </head>
 <body>
@@ -398,8 +401,10 @@ I Herrens Jubelsang.
     <title>Afskedssang</title>
     <toctitle>—: Afskedssang</toctitle>
     <firstline>Daggry ligger lys og klar</firstline>
+    <notes>
+        <note unknown-original-by="fouque" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Fouqué) -->
     <source pages="22"/>
 </head>
 <body>
@@ -535,8 +540,10 @@ Og Fremtiden Gud overlade.
     <title>Hymen og Amors Trupper</title>
     <toctitle>Götz: Hymen og Amors Trupper</toctitle>
     <firstline>Hymen laae engang i Baghold</firstline>
+    <notes>
+        <note unknown-original-by="goetz" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Götz) -->
     <source pages="26"/>
 </head>
 <body>
@@ -560,8 +567,10 @@ Gjennemmarsch vi kun forlange.
     <title>Utroskaben</title>
     <toctitle>—: Utroskaben</toctitle>
     <firstline>Frygt ei min Ubestand! troer du at dine</firstline>
+    <notes>
+        <note unknown-original-by="goetz" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Götz) -->
     <source pages="26"/>
 </head>
 <body>
@@ -579,8 +588,10 @@ Men andre kun, og kun for allersidste Gang.
     <title>Til en Knibsk</title>
     <toctitle>—: Til en Knibsk</toctitle>
     <firstline>Paa dine Kinder seer jeg Vaarens Blomsterhøie</firstline>
+    <notes>
+        <note unknown-original-by="goetz" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Götz) -->
     <source pages="27"/>
 </head>
 <body>
@@ -4651,9 +4662,8 @@ Fordi det Alt er i mit Bryst?
     <toctitle>Hugo: De første Skarer er forsvundne</toctitle>
     <firstline>De første Skarer er forsvundne</firstline>
     <notes>
-        <note>Gendigtning af »La fiancée du timbalier« (Monseigneur le duc de Bretagne).</note>
+        <note>Gendigtning af Vicor Hugo: <xref type="translation" poem="hugo2019112501"/>.</note>
     </notes>
-    <!-- TODO: Find originalen (Hugo) -->
     <quality>korrektur1,kilde,side</quality>
     <source pages="158"/>
 </head>
@@ -4681,9 +4691,8 @@ Ha — livløs faldt hun om i Vrimlen. -
     <toctitle>—: La Fée et la Péri</toctitle>
     <firstline>Børn! Naar I døe, vogt eder vel, at en Aand</firstline>
     <notes>
-        <note>Gendigtning af »La Fée et la Péri« (Enfants! si vous mouriez, gardez bien qu'un esprit).</note>
+        <note>Gendigtning af Vicor Hugo: <xref type="translation" poem="hugo2019112502"/>.</note>
     </notes>
-    <!-- TODO: Find originalen (Hugo) -->
     <quality>korrektur1,kilde,side</quality>
     <source pages="159-168"/>
 </head>
@@ -4954,7 +4963,6 @@ Pludselig forsvinder det for deres troløse Syn — —
     <notes>
         <note>Omdigtning af fire strofer i Aarestrups <xref poem="aarestrup2019021122,69-92"/>.</note>
     </notes>
-    <!-- TODO: Find originalen (Hugo) -->
     <source pages="169-170" />
 </head>
 <body>
@@ -5001,7 +5009,6 @@ Truer, naar han nærmer sig at høre Havet bruse.
         <note>Omdigtning af otte strofer (samt sidste strofe) fra Aarestrups <xref poem="aarestrup2019021122,14-68"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Hugo) -->
     <source pages="171-173"/>
 </head>
 <body>
@@ -9781,8 +9788,10 @@ Ved Midnatstid i Byen.
     <linktitle>Efter Daumers »Hafis«</linktitle>
     <indextitle>Efter Daumers »Hafis«</indextitle>
     <firstline>Vil du paa eengang vise</firstline>
+    <notes>
+        <note unknown-original-by="daumer" />
+    </notes>
     <source pages="331-338"/>
-    <!-- TODO: Find originalen (Daumer) -->
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10056,8 +10065,10 @@ Saa farvel! saa siig: begrav ham nu!
     <linktitle>Efter Daumers »Mahomed«</linktitle>
     <indextitle>Efter Daumers »Mahomed«</indextitle>
     <firstline>Mod Slangens Hoved</firstline>
+    <notes>
+        <note unknown-original-by="daumer" />
+    </notes>
     <source pages="339-341"/>
-    <!-- TODO: Find originalen (Daumer) -->
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10510,7 +10521,9 @@ Det kan du tro.
     <title>Hurra Courage, Bagage</title>
     <quality>korrektur1,kilde,side</quality>
     <source pages="357-358"/>
-    <!-- TODO: Find originalen (Bellman) -->
+    <notes>
+        <note unknown-original-by="bellman" />
+    </notes>
 </head>
 <body>
   Hurra Courage, Bagage! God Dag, Brødre! friskt i Flasken! Væk med Damspillet. Du Beegbuxe med din lange hollandske Pibe der. Du skal blive Dam-Jan. Slaa i og sup mig til. Hirr! det lyner ud af Skydehullerne. Peter Iversen kommer fra Bourdeaux. Han ligger jo i Kattegat, Canaille. Godtaar! han kommer fra Danzig. Ja det gjør han. Seer du det røde Flag? det er blaat! Nok en Sopken! Skaal! Det er rødt, siger jeg. Det er grønt, siger jeg. Hurra! Hurra! Hurra! stryg paa Violerne. Tag Vinduerne i Agt. Hei Piger! sving med Hattene. Ræk Ølkruset hid. Klink og drik. Godtaar Fader Berg! Det skal være Petter Iversens Skaal. Hei sa! Topseilets Skaal! Jeg har den Ære at drikke Topseilets Skaal. Hei hvilke Tolvpundinger! Hurra! Hurra! Hurra! Nu faae vi Viin og Danziger Dobbeltbier, Flasker med Sølv-Tulpaner i Kanterne og Guldbrændeviin. Gnid Violinerne. Stød i Trompeterne. Byd op til Dandsen. Dands I Poppegøier. Blæs I Varulve. Saa til Helvede, Søegreen, kan du faae Lyst til en Hex med sort Flonellskjole, et Par røde Boucles de Nuit, og en barbenet Fod med en udtrædt Triumphants Tøffel? Søegreen! hør du Søegreen? Hvad tykkes dig om hende med den gule Damastkjole og Kalminkslivstykket? Han som staaer barfodet der og skruer paa Basviolen. Hør du Søegreen. Werda! Hvem er det? Hei der kommer en Tydsker. Det er, en Italiener er det, med de tolf Apostler paa Ryggen. Hvad koster Kong David til Hest med en Løber foran sig? Acht Schtiber. Ta mej sju tusan! alla ä di från Bourdeaux. Gutår! Hej flickor! God Dag Herre! Gutår Herre! Dolce Vino della Place. Hei han tycker om Calase. Än en Sup. L'ira di Dio arrivera bentosto a questa città. Regera og besitta! Si paa Dansken hur han svänger sig. Rask Farlille. Sup ellers skal vi banke dig. Blir du bange? I Ægtemænds Horer! I Rumpevrikkere! Er der ingen Skam i Jer? Tør I raabe saadan udi Borgemesterens Gade, Fanden selv maa logere paa Raadhuset. Gebjørnamat. Hei blæs i Trompeterne! God dam you! How do you do? Machen Sie mir kein Schpasen nicht. Palla vinno ja olta tånne. Hurra! Blæs i Trompeterne.

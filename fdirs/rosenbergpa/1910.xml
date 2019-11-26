@@ -5876,10 +5876,9 @@ Den største af Slægternes Sejre, den straalende <i>Verdensfred!</i>
     <subtitle>(Efter Antonio Fogazzaro.)</subtitle>
     <firstline>Den tomme Stue vides ud og voxer</firstline>
     <notes>
-        <note>Antonio Fogazzaro (1842-1911), italiensk forfatter.</note>
+        <note unknown-original-by="fogazzaro" />
     </notes>
     <source pages="287"/>
-    <!-- TODO: Find originalen. Antonio Fogazzaro. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5909,10 +5908,9 @@ Mens uden Ord vi stirred paa hinanden.
     <subtitle>(Efter Antonio Fogazzaro)</subtitle>
     <firstline>Fastbunden ved et ensomt Figentræ</firstline>
     <notes>
-        <note>Antonio Fogazzaro (1842-1911), italiensk forfatter.</note>
+        <note unknown-original-by="fogazzaro" />
     </notes>
     <source pages="288"/>
-    <!-- TODO: Find originalen. Antonio Fogazzaro. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5944,10 +5942,9 @@ Der glider bort og brister — langt, langt ude.
     <subtitle>(Efter Antonio Fogazzaro)</subtitle>
     <firstline>Lystig i Solen og glade</firstline>
     <notes>
-        <note>Antonio Fogazzaro (1842-1911), italiensk forfatter.</note>
+        <note unknown-original-by="fogazzaro" />
     </notes>
     <source pages="289"/>
-    <!-- TODO: Find originalen. Antonio Fogazzaro. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5983,10 +5980,9 @@ Derfor de elsker hinanden.
     <subtitle>(Efter Antonio Fogazzaro)</subtitle>
     <firstline>Blændlygtens Skær langs Gulvets Mosaiker falder</firstline>
     <notes>
-        <note>Antonio Fogazzaro (1842-1911), italiensk forfatter.</note>
+        <note unknown-original-by="fogazzaro" />
     </notes>
     <source pages="290-291"/>
-    <!-- TODO: Find originalen. Antonio Fogazzaro. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6019,10 +6015,9 @@ Og Paven spejder efter Træk af Satan nøje.
     <subtitle>(Efter Antonio Fogazzaro)</subtitle>
     <firstline>Aftnen sænker sig. Frejdig</firstline>
     <notes>
-        <note>Antonio Fogazzaro (1842-1911), italiensk forfatter.</note>
+        <note unknown-original-by="fogazzaro" />
     </notes>
     <source pages="292-293"/>
-    <!-- TODO: Find originalen. Antonio Fogazzaro. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6105,8 +6100,10 @@ Naar blot I tænker ham med Vinger Alle!''
     <toctitle>Rig og fattig (efter Hermann von Gilm)</toctitle>
     <subtitle>(Efter Hermann von Gilm)</subtitle>
     <firstline>Saa talte Folket: I har varme Klæder</firstline>
+    <notes>
+        <note unknown-original-by="gilm" />
+    </notes>
     <source pages="296"/>
-    <!-- TODO: Find originalen. Hermann von Gilm. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6135,8 +6132,10 @@ Vi presser ud af Eders hule Øjne!''
     <toctitle>Ingen ved - (efter Hermann von Gilm)</toctitle>
     <subtitle>(Efter Hermann von Gilm)</subtitle>
     <firstline>Ingen véd, hvordan jeg hader</firstline>
+    <notes>
+        <note unknown-original-by="gilm" />
+    </notes>
     <source pages="297"/>
-    <!-- TODO: Find originalen. Hermann von Gilm. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6165,8 +6164,10 @@ End min Pegasus beslaa.
     <toctitle>Hvem har gjort det? (efter Hermann von Gilm)</toctitle>
     <subtitle>(Efter Hermann von Gilm)</subtitle>
     <firstline>I Nattekulden stod min Sang</firstline>
+    <notes>
+        <note unknown-original-by="gilm" />
+    </notes>
     <source pages="298"/>
-    <!-- TODO: Find originalen. Hermann von Gilm. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6195,8 +6196,10 @@ Som klæder Markens Liljer.
     <toctitle>Tre Kranse (efter Hermann von Gilm)</toctitle>
     <subtitle>(Efter Hermann von Gilm)</subtitle>
     <firstline>Tre Kranse har jeg bundet</firstline>
+    <notes>
+        <note unknown-original-by="gilm" />
+    </notes>
     <source pages="299"/>
-    <!-- TODO: Find originalen. Hermann von Gilm. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6230,8 +6233,10 @@ I mit lyksaligste Aar!
     <toctitle>Den grusomme (efter Hermann von Gilm)</toctitle>
     <subtitle>(Efter Hermann von Gilm)</subtitle>
     <firstline>Det var en Sommeraften</firstline>
+    <notes>
+        <note unknown-original-by="gilm" />
+    </notes>
     <source pages="300-301"/>
-    <!-- TODO: Find originalen. Hermann von Gilm. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6271,12 +6276,14 @@ Som ingen Ting var hændt.
 
 <poem id="rosenbergpa20180225115">
 <head>
-    <title>La renommé</title>
-    <toctitle>La renommé (efter Hermann von Gilm)</toctitle>
+    <title>La renommée</title>
+    <toctitle>La renommée (efter Hermann von Gilm)</toctitle>
     <subtitle>(Efter Hermann von Gilm)</subtitle>
     <firstline>Du er huslig og stilfærdig</firstline>
+    <notes>
+        <note>Gendigtning af Hermann von Gilm: <xref type="translation" poem="gilm2019112401"/>.</note>
+    </notes>
     <source pages="302"/>
-    <!-- TODO: Find originalen. Hermann von Gilm. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6305,8 +6312,10 @@ Og du har en ganske særlig
     <toctitle>Poesien (efter Adolf Pichler)</toctitle>
     <subtitle>(Efter Adolf Pichler)</subtitle>
     <firstline>Poesi, min Ven, er Æther</firstline>
+    <notes>
+        <note unknown-original-by="pichler" />
+    </notes>
     <source pages="303"/>
-    <!-- TODO: Find originalen. Adolf Pichler. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6330,8 +6339,10 @@ Som Aabenbaring drager.
     <toctitle>Zillerthalernes Fordrivelse (efter Adolf Pichler)</toctitle>
     <subtitle>(Efter Adolf Pichler)</subtitle>
     <firstline>Tyrol, Tyrol! mit Fædreland, mit Hjem</firstline>
+    <notes>
+        <note unknown-original-by="pichler" />
+    </notes>
     <source pages="304-308"/>
-    <!-- TODO: Find originalen. Adolf Pichler. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6444,8 +6455,10 @@ Tyrolerørn! din Dag gaar op paany!
     <toctitle>Dødedansen (efter Adolf Pichler)</toctitle>
     <subtitle>(Efter Adolf Pichler)</subtitle>
     <firstline>Naar Selskabet er slet — slet kan det være</firstline>
+    <notes>
+        <note unknown-original-by="pichler" />
+    </notes>
     <source pages="309-321"/>
-    <!-- TODO: Find originalen. Adolf Pichler. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
