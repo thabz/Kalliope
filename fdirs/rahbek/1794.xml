@@ -873,7 +873,7 @@ Nyd længe dit Venskabs, din Kiærligheds Løn!
         <note>Se Goethes <xref poem="goethe2019091401"/>.</note>
     </notes>
     <source pages="48-51"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Min Sang, min Lina, er for dig!
@@ -905,7 +905,7 @@ Og naar jeg mindes, savner dig,
 O hvad! hvad kan da fryde mig?
 
 O skiønne Lina! hvo dig saae,
-Hvad Syn kan ham forøoie?
+Hvad Syn kan ham fornøie?
 Er blidest Maidags Himmel blaa,
 Og venlig, som dit Øie?
 Er Rosens Rødme halv saa fiin
@@ -915,7 +915,7 @@ Saa skiøn I finde Lilien,
 I Lina skulde kiende!
 Forvoxen, skrumpen, sort er den,
 Og grim og leed mod hende!
-Og Hæs er Nattergalens Sang
+Og hæs er Nattergalens Sang
 Mod hendes Tales Trylleklang!
 
 O hver en Sorg forsvandt for den,
@@ -953,10 +953,11 @@ Men evig skal jeg synge dig.
     <title>Venskabsbaand</title>
     <subtitle>Efter Voss</subtitle>
     <firstline>Den første Sang i Vennelag</firstline>
+    <notes>
+        <note unknown-original-by="voss" />
+    </notes>
     <source pages="52-54"/>
-    <!-- TODO: Tilføj original (Voß) -->
-    <keywords>voss</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Den første Sang i Vennelag
@@ -1015,12 +1016,12 @@ Maae vandre evig Haand i Haand!
     <title>Murersang til Søstrene</title>
     <firstline>Brødre! I, som Viisdom dyrke</firstline>
     <source pages="55-57"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Brødre! I, som Viisdom dyrke,
 I som have Skiønhed kiær,
-I, hvis Arbeids Maal er Styrk e!
+I, hvis Arbeids Maal er Styrke!
 Vore Søstres Skaal det er.
 Deres Skiønhed os opliver,
 Viisdom boer i deres Raad,
@@ -1033,7 +1034,7 @@ Kiærlighed hver Dyd ham lærte,
 Som hans Møe besiæles af.
 Dobbelt let vi Møien finde
 Med den utilhugne Steen,
-Naar en søstertig Veninde
+Naar en søsterlig Veninde
 Først har forberedet den.
 
 Mørke, tunge, lidet blide
@@ -1057,7 +1058,7 @@ Dydens Vei med Moderhaand.
 Naar nedbøiet Olding sukker
 Under Lidelser og Aar;
 Naar for ham den Grav sig lukker,
-Hvortil al hans Længsei staaer,
+Hvortil al hans Længsel staaer,
 Held ham, hvis en kiærlig Mage
 Da hans Trøst og Lindring er!
 O! i Sorgs og Sygdoms Dage
@@ -1083,11 +1084,11 @@ Skiønhed, Ynde, Aand og Dyd.
     </notes>
     <source pages="59-60"/>
     <keywords>drikkevise</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-En Skaal for Hver, hvis Hjerte og hvis Haand
-Paa Brødres Vink er altid villig reede;
+En Skaal for hver, hvis Hierte og hvis Haand
+Paa Broders Vink er altid villig reede;
 Der tager Deel med munter skyldfrie Aand
 I Vennelags, og Spøgs, og Sangens Glæde;
 Han anseer hver Dag for spildt og ød,
@@ -1104,7 +1105,7 @@ Gid Venskab huldt nedsmile til enhver,
 Som i dets Smiil sin Held og Fryd kan finde!
 Det skiænke ham de Venner, han er værd,
 Og meer end alt, en trofast øm Veninde!
-Tag dit Glas, fyld det til bredfuldt Maal!
+Tag dit Glas, fyld det til bredfuldt Maal,
 Det er Venskabs, det er vores Skaal.
 </body>
 </poem>
@@ -1116,7 +1117,7 @@ Det er Venskabs, det er vores Skaal.
     <firstline>Tung er Veien giennem Livet</firstline>
     <source pages="61-63"/>
     <keywords>norskeselskab</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Tung er Veien giennem Livet,
@@ -1150,7 +1151,7 @@ Glad du Brødres Glæde deelte,
 Lindred' deres Sorg med Lyst,
 Trønders gamle Aand besiælte
 Med sin ædle Ild dit Bryst.
-Iil, og bliv, hvad du fortjener,
+Iil, og bliv, hvad du fortiener,
 Elsket, æret, lykkelig!
 Men forglem ei gamle Venner,
 Ingen Tid de glemme dig.
@@ -1162,7 +1163,7 @@ Ingen Tid de glemme dig.
     <title>Murersang til Slutning</title>
     <firstline>I elskte Brødres Kreds, blandt festlig høie Glæder</firstline>
     <source pages="64-65"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 I elskte Brødres Kreds, blandt festlig høie Glæder
@@ -1181,9 +1182,9 @@ Og aldrig dette Sted ubedrede forlade,
     Men mindes troe vor Eed,
 
 Gid bedre Mennesker, og bedre Statens Sønner
-    Vi gaae fra Altret her.
+    Vi gaae fra Altret her,
 Ak hver, som seer vor Daad, og Dyd og Viisdom skiønner
-    Maae faae vor Orden klar!
+    Maae faae vor Orden kiær!
 
 Og hvis den Time slaaer, hver ægte Murer tænker
     Med glad Ærbødighed;
@@ -1207,9 +1208,10 @@ Vi broderlige, nu hinanden give Hænder;
     <title>Elskovssang for Ægtemænd</title>
     <subtitle>efter Voss.</subtitle>
     <firstline>O hvor lykkelig er den</firstline>
+    <notes>
+        <note unknown-original-by="voss" />
+    </notes>
     <source pages="66-68"/>
-    <!-- TODO: Tilføj original (Voß) -->
-    <keywords>voss</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
