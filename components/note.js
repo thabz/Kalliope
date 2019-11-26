@@ -6,7 +6,7 @@ import type { NoteType, Lang } from '../common/types.js';
 import TextContent from './textcontent.js';
 
 type NoteProps = {
-  type: NoteType,
+  type?: NoteType,
   className?: string,
   children?: Node,
 };
