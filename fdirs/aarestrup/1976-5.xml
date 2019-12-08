@@ -612,7 +612,9 @@ Bar du ei Vintren i dit Hjerte!
     <toctitle>Gubitz: Degnens Eventyr</toctitle>
     <firstline>Henrykt end af Kysset, sidst jeg</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Gubitz) -->
+    <notes>
+        <note unknown-original-by="gubitz" />
+    </notes>
     <source pages="28-29"/>
 </head>
 <body>
@@ -850,10 +852,9 @@ Naar man nu eengang maa?
     <toctitle>Assmann v. Abschatz: Elskovsdød</toctitle>
     <firstline>Nogle dræbe Staal og Kugler</firstline>
     <notes>
-        <note>Gendigtning af »Diesen tödtet Blei und Eisen«.</note>
+        <note>Gendigtning af Hans Aßmann Freiherr von Abschatz: <xref type="translation" poem="abschatz2019120701"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Assmann v. Abschatz) -->
     <source pages="35"/>
 </head>
 <body>
@@ -887,8 +888,7 @@ Elskov gjør, at jeg maa døe!
     <toctitle>—: Kjærlighed og Gjenkjærlighed</toctitle>
     <firstline>Hvortil denne søde Smalten</firstline>
     <notes>
-        <note>Hans Aßmann Freiherr von Abschatz (1646-1699), tysk statsmand og digter.</note>
-        <note>Gendigtning af »Wozu dient so süsses Blicken«.</note>
+        <note>Gendigtning af Hans Aßmann Freiherr von Abschatz: <xref type="translation" poem="abschatz2019120702"/>.</note>
     </notes>
     <source pages="36-37"/>
     <quality>korrektur1,kilde,side</quality>
@@ -1224,9 +1224,8 @@ Haab at let fra Skrub og Riis
     <toctitle>Beranger: Jeg veed det nok, man sladdrer om min Ære</toctitle>
     <firstline>Jeg veed det nok, man sladdrer om min Ære</firstline>
     <notes>
-        <note>Gendigtning af »Je sais fort bien que sur moi l'on babille«.</note>
+        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019120701"/>.</note>
     </notes>
-    <!-- TODO: Find originalen (Beranger) -->
     <quality>korrektur1,kilde,side</quality>
     <source pages="47"/>
 </head>
@@ -1260,10 +1259,9 @@ Da jeg slap Naalen for Theatrets Ære,
     <toctitle>—: Katten</toctitle>
     <firstline>Du med dit Skrig mig plager</firstline>
     <notes>
-        <note>Gendigtning af »Tu réveilles ta maîtresse«.</note>
+        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019120702"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Beranger) -->
     <source pages="48-49"/>
 </head>
 <body>
@@ -1322,10 +1320,9 @@ Miau! Miau! gaae ligedan.
     <toctitle>—: For vor Doctor og for hans Meriter</toctitle>
     <firstline>For vor Doctor og for hans Meriter</firstline>
     <notes>
-        <note>Gendigtning af »Saluons de maintes rasades«.</note>
+        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019120703"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Beranger) -->
     <source pages="50-51"/>
 </head>
 <body>
@@ -1375,10 +1372,9 @@ Og lad os beholde vor Ven.
     <toctitle>—: Hanne</toctitle>
     <firstline>Fy, den Frue, som gjør sig lækker!</firstline>
     <notes>
-        <note>Gendigtning af »Fi, des coquettes maniérées«.</note>
+        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019120704"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Beranger) -->
     <source pages="52-54"/>
 </head>
 <body>
@@ -1415,7 +1411,7 @@ Min lille Hanne, min Hannemoer!
 
 Og ved Bordet, ved et Gilde,
 Denne Uglspil hun kan spille
-Med en Fyr, om nok saa flin.
+Med en Fyr, om nok saa fiin.
 Hun med Dristighed sig værger,
 Synger smukt, er evig min;
 Paa mit Ord den Lille sværger,
@@ -1462,10 +1458,9 @@ Min lille Hanne, min Hannemoer!
     <toctitle>—: Min Republik</toctitle>
     <firstline>Nu mig Republikken behager</firstline>
     <notes>
-        <note>Gendigtning af »J'ai pris goût à la république«.</note>
+        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019120705"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Beranger) -->
     <source pages="55-56"/>
 </head>
 <body>
@@ -1525,10 +1520,9 @@ Med Friheden er det forbi.
     <toctitle>—: Selv du vil ældes, som i Ungdom smiler</toctitle>
     <firstline>Selv du vil ældes, som i Ungdom smiler</firstline>
     <notes>
-        <note>Gendigtning af »Vous vieillirez, ô ma belle maîtresse«.</note>
+        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019120706"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Beranger) -->
     <source pages="57-58"/>
 </head>
 <body>
@@ -1587,10 +1581,9 @@ Gjentag ved Lampen Digtet af din Ven.
     <toctitle>—: Drømme</toctitle>
     <firstline>Fjern fra en flygtig Lille</firstline>
     <notes>
-        <note>Gendigtning af »Loin d'une Iris volage«.</note>
+        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019120707"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Beranger) -->
     <source pages="59-60"/>
 </head>
 <body>
@@ -4594,7 +4587,9 @@ Og snapper dem alle baade.
     <toctitle>Houwald: Sjælevandringen</toctitle>
     <firstline>Naar jeg for Planten stille staaer</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Houwald) -->
+    <notes>
+        <note unknown-original-by="houwald" />
+    </notes>
     <source pages="156-157"/>
 </head>
 <body>
@@ -9686,13 +9681,12 @@ Som før: nei, vi er syv!
 <poem id="aarestrup20190130190" variant="aarestrup2018111223">
 <head>
     <title>Mynstringen ved Midnat</title>
-    <toctitle>Zetlitz: Mynstringen ved Midnat</toctitle>
+    <toctitle>Zedlitz: Mynstringen ved Midnat</toctitle>
     <firstline>Tambouren staaer af Graven</firstline>
     <notes>
-       <note>Gendigtning af Joseph Christian von Zedlitz (1790-1862): »Nachts um die zwölfte Stunde«..</note>
+        <note>Gendigtning af Joseph Christian von Zedlitz: <xref type="translation" poem="zedlitz2019120701"/>.</note>
     </notes>
     <source pages="326-330"/>
-    <!-- TODO: Find originalen (Zetlitz) -->
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
