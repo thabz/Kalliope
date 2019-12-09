@@ -324,8 +324,10 @@ De vi har, og end kan faae!
     <title>Sang</title>
     <subtitle>efter Eschenborg.</subtitle>
     <firstline>Stille Veemods søde Taarer rinde</firstline>
+    <notes>
+        <note unknown-original-by="eschenburg" />
+    </notes>
     <source pages="18-20"/>
-    <!-- TODO: Find originalen (Eschenburg) -->
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -447,9 +449,9 @@ Ved din Elises ømme Bryst!
     <firstline>Hver, som hylder muntre Glæder</firstline>
     <notes>
         <note type="credits">Bidrag fra Margit Ammentorp.</note>
+        <note unknown-original-by="kellgren" />
     </notes>
     <source pages="25-27"/>
-    <!-- TODO: Find originalen (Johan Henric Kellgren) -->
     <!-- TODO: Originalen findes ikke i Samlade skrifter (1796) eller Skrifter (1995), men måske i 1935-udgaven på https://litteraturbanken.se/forfattare/KellgrenJH/titlar -->
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -727,7 +729,9 @@ Lykkelig og glad som Du!
     <subtitle>efter Bürger.</subtitle>
     <firstline>O Lalage! hvo danned' dig</firstline>
     <source pages="41-43"/>
-    <!-- TODO: Find originalen (Bürger) -->
+    <notes>
+        <note unknown-original-by="burger" />
+    </notes>
     <!-- TODO: ingemann2018040908 omtaler også Lalage -->
     <!-- TODO: Se også »Lalages Flugt efter Kleist« længere nede i denne samling. -->
     <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3360,8 +3364,10 @@ At du, min Ven! blev lykkelig.
     <subtitle>efter Berqvin.</subtitle>
     <firstline>Sov bedste Dreng! du sidste Glæde</firstline>
     <source pages="182-184"/>
-    <!-- TODO: Find originalen (Berquin) -->
-    <quality>korrektur1,kilde,side</quality>
+    <notes>
+        <note unknown-original-by="berquin" />
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Sov bedste Dreng! du sidste Glæde,
@@ -3369,7 +3375,7 @@ Min vrede Skiæbne under mig!
 Sov bedste Dreng! hold op at græde!
 Bedrøv mig ikke med dit Skrig.
   Da mig din falske Fader lærte,
-  At kiende Krierlighed og sig,
+  At kiende Kierlighed og sig,
   Hvo kunde nægte ham sit Hierte,
   Han dig i Uskyld syntes liig!
   Jeg troede ham, ak mig til Smerte!
@@ -3416,7 +3422,7 @@ Bedrøv mig ikke med dit Skrig.
   Vort Liv i Kummer svinde hen!
   Bliv du min svage Ældes Stytte,
   Jeg er din spæde Barndoms Ven!
-  Vor Skiæbne os Maae sammenknytte,
+  Vor Skiæbne os maae sammenknytte,
   O lad os samlet bære den.
 </body>
 </poem>
@@ -3426,7 +3432,7 @@ Bedrøv mig ikke med dit Skrig.
     <title>Hvidtfeldts Vise</title>
     <firstline>Vort Fødeland var altid rigt</firstline>
     <source pages="185-188"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Vort Fødeland var altid rigt
@@ -3469,7 +3475,7 @@ Nei! var hans Svar: flye vi derhen
 Staar Danmarks Flode Fare,
 Og skulde Danske vove den
 For egne Liv at spare,
-Døe skal vi, men vi hævnes maae
+Døe skal vi, men vi hævnes maae:
 Til sidste Aandedrag vi slaae.
 Vort Fødeland var altid rigt
 Paa raske Orlogshelte.
@@ -3499,7 +3505,7 @@ Paa raske Orlogshelte!
     <title>Fredrikshalds Minde</title>
     <firstline>Kong Carl laae med en mægtig Hær</firstline>
     <source pages="189-193"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Kong Carl laae med en mægtig Hær
@@ -3543,7 +3549,7 @@ Og Byens Herre troede sig,
 Saa stride de Nordmænd for Norge.
 
 Hans Folk fandt Død i hver en Vraae,
-    Hvor de drog frem.
+    Hvor de drog frem,
 Thi allevegne Nordmand laae,
     Og helste dem.
 Da sendte Carl saa lidet froe
@@ -3567,7 +3573,7 @@ At sætte egen Bye i Brand
 Og den, der først sit Huus stak an,
     Var Colbiørnsen!
 At slukke Ilden Fjenderne
-    Vil stimle hen.
+    Vil stimle hen,
 Men Kugler føg saa tykt som Snee
     Fra Fæstningen.
 De Nordmænd de stride for Norge.
@@ -3600,7 +3606,7 @@ Saa strede de Nordmænd for Norge.
     <firstline>Den heele Landbye samler sig</firstline>
     <source pages="194-198"/>
     <!-- TODO: Find originalen (Miller) -->
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Den heele Landbye samler sig
@@ -3615,7 +3621,7 @@ Og Spil og Latter hader jeg,
 
 Thi jeg min Hanne mistet har;
     Jeg glemmer aldrig hende;
-Jeg veed for vel, hvor riig jeg var.
+Jeg veed for vel, hvor riig jeg var,
     Den Tid, jeg havde hende.
 
 Hvad hun var from, og bliid, og huld!
@@ -3629,7 +3635,7 @@ Enhver i dem saa klarlig saae,
     Hvad der i Hiertet boede.
 
 Paa Timen slog jeg mine ned,
-    Naar hendes paa dem hviilte.
+    Naar hendes paa dem hviilte,
 Og blev saa underlig derved,
     Naar Hanne til mig smiilte.
 
@@ -3641,7 +3647,7 @@ Vi dansde, spøgte, sang, og loe,
 Saa sprang hun op, og bad god Nat;
     Og saae paa mig, og smiilte.
 Fik dette Baand omkring min Hat,
-    Og skielmst bort fra mig iilte.
+    Og skielmsk bort fra mig iilte.
 
 Men snart jeg hented' hende ind,
     Og kyssede den hulde;
@@ -3654,13 +3660,13 @@ Men jeg dig fik af Hannes Haand,
     Du hende hellig være!
 
 En Krands jeg paa vor Kirkevæg
-    Har hængt til Hannes Minde
+    Har hængt til Hannes Minde;
 Ved Sorgekrandsens Side jeg
     Min Hannes Baand vil binde.
 
 Og sidde lige over for,
     Og see paa dem, og græde,
-Og tanke paa min Hannemoer,
+Og tænke paa min Hannemoer,
     Og paa min tabte Glæde.
 
 Vor Kirkegaard fra den Dag af
@@ -3694,7 +3700,7 @@ Og bort fra denne Verden mig
         <note>Gendigtning af Bürgers <xref type="translation" poem="burger2019091901"/>.</note>
     </notes>
     <source pages="199-201"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nys drømte jeg ved Midnatsstund,
@@ -3746,7 +3752,7 @@ I Myrthens Sted groer Buxbom nu,
     <firstline>Den fromme Frue Signe paa Sotteseng laae</firstline>
     <source pages="202-206"/>
     <!-- TODO: Find folkevisen. -->
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Den fromme Frue Signe paa Sotteseng laae,
@@ -3775,7 +3781,7 @@ Herr Esbern nu ægtede Guldborg den rige;
 Berømt for sin Skiønhed, og Snilde og Skiemt,
 I Dands og i Harpeleeg fandt hun ei Lige.
 Thi svæved' hun stedse i Gammen og Suus,
-Og agted' saa lidet Paa Børn, og paa Huus.
+Og agted' saa lidet paa Børn, og paa Huus.
 
 De Hunde de tude om Midienat,
 De Voxlys de brænde i svovelblaae Lue.
@@ -3817,7 +3823,7 @@ O tag os nu med dig! vi lide saa ilde;
 Vi fryse, og sulte, og ligge paa Straae,
 De Terner her raade med os, som de vilde.
 O see til din Dreng, hvor forkommen han er!
-Thi satt' jeg mig med ham paa Ildsteder her.”
+Thi satt' jeg mig med ham paa Ildstedet her.”
 
 Ømt favnede Signe sin Datter og Dreng,
 Det var dem som Pust af Sydvestvindens Aande;
@@ -3847,7 +3853,7 @@ Ei ædlere Hustrue og Moder end hun.
     <title>Klage</title>
     <firstline>Himmel! mine Klager bede</firstline>
     <source pages="207"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Himmel! mine Klager bede
@@ -3868,7 +3874,7 @@ Und mig kun at glemme den.
     <subtitle>En Romance.</subtitle>
     <firstline>O du, der Livets bedste Lyst</firstline>
     <source pages="208-214"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
     O du, der Livets bedste Lyst,
@@ -3904,7 +3910,7 @@ Paa yndte Høi med elskte Ven at mødes,
 Hvor skyldfrie glad hver Aften der hengleed!
 Der lange tunge Dag belønnes og forsødes.
 O Held, Held den! der langt fra Stæders Vrimmel,
-Fandt i en Ark, som de, ved elsket Bryst sin Himmel
+Fandt i en Ørk, som de, ved elsket Bryst sin Himmel!
 
     Paa eengang kom de stedse did
 Hver bange var at komme der for silde;
@@ -3941,7 +3947,7 @@ O Smerte, Smerte spaaer den overvættes Glæde,
 Omkring mit Hierte kryber Dødens Kulde,
 Om det var Spaadom, Ven! ak! om vi skilles skulde.”
 
-“Det skal I!” tordnede en Røst;
+    “Det skal I!” tordnede en Røst;
 Af Skræk betagen hun den neppe kiender;
 Med Gysen foer hun op fra Munkens Bryst,
 Og saae den nærmeste blandt sine Frænder.
@@ -3998,7 +4004,7 @@ Man gruende paa Stedet dem begraver,
 Og troer at sone Gud, og dem med Siælegaver.
 
     En sælsom Gangstie endnu er
-Om Graven, under hvilken hun er jordet.
+Om Graven, under hvilken hun er jordet,
 Ved Midnatsstund Georg skal vandre der,
 Saaledes gaaer endnu i heele Egnen Ordet.
 Med veefuldt Sind og taarevædet Øie
