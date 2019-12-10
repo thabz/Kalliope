@@ -1,6 +1,7 @@
 // @flow
 
 import React, { Fragment } from 'react';
+import type { Element, Node } from 'react';
 import { Link } from '../routes';
 import Head from '../components/head';
 import Main from '../components/main.js';
@@ -26,10 +27,11 @@ import Note from '../components/note.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import Picture from '../components/picture.js';
 import * as Links from '../components/links';
-import * as Client from './helpers/client.js';
-import * as OpenGraph from './helpers/opengraph.js';
-import _ from '../pages/helpers/translations.js';
+import * as Client from '../common/client.js';
+import * as OpenGraph from '../common/opengraph.js';
+import _ from '../common/translations.js';
 import ErrorPage from './error.js';
+import HelpKalliope from '../components/helpkalliope.js';
 import type {
   Lang,
   Poet,
@@ -40,7 +42,7 @@ import type {
   KeywordRef,
   PrevNextText,
   Error,
-} from './helpers/types.js';
+} from '../common/types.js';
 
 type KeywordLinkProps = { keyword: KeywordRef, lang: Lang };
 class KeywordLink extends React.Component<KeywordLinkProps> {
@@ -214,9 +216,53 @@ export default class extends React.Component<TextComponentProps> {
       <NavPaging prev={rightSideItems[0]} next={rightSideItems[1]} />
     );
 
-    const notes = text.notes.map((note, i) => {
-      return <Note key={i} note={note} lang={lang} />;
-    });
+    const notes: Array<Node> = text.notes
+      .filter(note => note.type !== 'unknown-original')
+      .map((note, i) => {
+        return (
+          <Note key={'note' + i} type={note.type}>
+            <TextContent
+              contentHtml={note.content_html}
+              contentLang={note.content_lang}
+            />
+          </Note>
+        );
+      });
+
+    text.notes
+      .filter(
+        note =>
+          note.type === 'unknown-original' && note.unknownOriginalBy != null
+      )
+      .map((note, i) => {
+        const poet = note.unknownOriginalBy;
+        if (poet == null) {
+          return null;
+        }
+        const html = _(
+          `Oversættelse af et ukendt digt af <a poet="{poetId}">{poetName}</a>.`,
+          lang,
+          {
+            poetId: poet.id,
+            poetName: poetNameString(poet, false, true),
+          }
+        );
+        return (
+          <Note key={'unknown' + i} type={'unknown-original'}>
+            <>
+              <TextContent
+                contentHtml={[[html, { html: true }]]}
+                contentLang={lang}
+              />
+              <HelpKalliope unknownOriginalBy={poet} />
+            </>
+          </Note>
+        );
+      })
+      .filter((x: ?Node) => x != null)
+      .forEach((element: Node) => {
+        notes.push(element);
+      });
 
     let sourceText = '';
     if (text.source != null) {
@@ -229,16 +275,16 @@ export default class extends React.Component<TextComponentProps> {
         sourceText += 'p. ';
       }
       sourceText += source.pages + '.';
-      const note = {
-        lang,
-        type: 'source',
-        content_html: [[sourceText, { html: true }]],
-        content_lang: 'da',
-      };
       notes.push(
-        <Note className="print-only" key="source" note={note} lang={lang} />
+        <Note className="print-only" key="source" type="source">
+          <TextContent
+            contentHtml={[[sourceText, { html: true }]]}
+            contentLang="da"
+          />
+        </Note>
       );
     }
+
     let renderedNotes = null;
     if (notes.length > 0) {
       renderedNotes = <div style={{ marginBottom: '30px' }}>{notes}</div>;
@@ -262,9 +308,7 @@ export default class extends React.Component<TextComponentProps> {
       }
       const firstPageNumber = text.source.facsimilePages[0];
       let facsimilePictures: Array<PictureItem> = [];
-      const srcPrefix = `https://kalliope.org/static/facsimiles/${poet.id}/${
-        text.source.facsimile
-      }`;
+      const srcPrefix = `https://kalliope.org/static/facsimiles/${poet.id}/${text.source.facsimile}`;
       for (let i = 0; i < text.source.facsimilePageCount; i++) {
         facsimilePictures.push({
           src: srcPrefix + '/' + pad(i, 3) + '.jpg',
@@ -457,7 +501,7 @@ export default class extends React.Component<TextComponentProps> {
               rightSide={rightSide}
             />
             <Heading title={title} subtitle="Værker" />
-            <PoetTabs lang={lang} poet={poet} selected="works" />
+            <PoetTabs poet={poet} selected="works" />
             <SidebarSplit sidebar={sidebar}>
               <div>
                 <article>
@@ -488,7 +532,7 @@ export default class extends React.Component<TextComponentProps> {
                 </article>
               </div>
             </SidebarSplit>
-            <LangSelect lang={lang} path={requestPath} />
+            <LangSelect path={requestPath} />
           </Main>
         </FootnoteContainer>
       </div>

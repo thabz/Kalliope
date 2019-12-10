@@ -108,14 +108,15 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
 // context contains keys for any `${var}` that's to be replaced in the note texts.
 const get_notes = (head, collected, context = {}) => {
   return head.find('notes/note').map(note => {
-    const lang = note.attr('lang') ? note.attr('lang').value() : 'da';
-    const type = note.attr('type') ? note.attr('type').value() : null;
+    const lang = safeGetAttr(note, 'lang') || 'da';
+    const type = safeGetAttr(note, 'type');
+    const unknownOriginalByPoetId = safeGetAttr(note, 'unknown-original-by');
     const replaceContextPlaceholders = s => {
       return s.replace(/\$\{(.*?)\}/g, (_, p1) => {
         return context[p1];
       });
     };
-    return {
+    const result = {
       type,
       content_lang: lang,
       content_html: htmlToXml(
@@ -125,6 +126,11 @@ const get_notes = (head, collected, context = {}) => {
         collected
       ),
     };
+    if (unknownOriginalByPoetId != null) {
+      result.type = 'unknown-original';
+      result.unknownOriginalBy = collected.poets.get(unknownOriginalByPoetId);
+    }
+    return result;
   });
 };
 

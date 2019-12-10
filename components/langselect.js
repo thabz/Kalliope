@@ -3,17 +3,10 @@
 import React from 'react';
 import { Link } from '../routes';
 import * as Links from './links.js';
-import type { Lang } from '../pages/helpers/types.js';
 
-type LangSelectProps = {
-  lang: Lang,
-  path: string,
-};
-export default class LangSelect extends React.Component<LangSelectProps> {
-  render() {
-    const { lang, path } = this.props;
-    return <div style={{ paddingBottom: '70px' }} />;
-    /*
+const LangSelect = ({ path }: { path: string }) => {
+  return <div style={{ paddingBottom: '70px' }} />;
+  /*
     return (
       <nav>
         {links.map(({ href, label }) =>
@@ -41,5 +34,5 @@ export default class LangSelect extends React.Component<LangSelectProps> {
       </nav>
     );
     */
-  }
-}
+};
+export default LangSelect;

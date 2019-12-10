@@ -3,8 +3,8 @@ const { execSync } = require('child_process');
 const path = require('path');
 const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
-const Paths = require('../pages/helpers/paths.js');
-const CommonData = require('../pages/helpers/commondata.js');
+const Paths = require('../common/paths.js');
+const CommonData = require('../common/commondata.js');
 const {
   isFileModified,
   markFileDirty,
@@ -353,11 +353,7 @@ const handle_text = (
     }
     if (facsimilePages[1] > workSource.facsimilePageCount) {
       throw new Error(
-        `fdirs/${poetId}/${workId}.xml ${textId} sideangivelse ${
-          facsimilePages[1]
-        } rækker over antal facsimile-sider. Er facsimile-pages-offset ${
-          workSource.facsimilePageCount
-        } korrekt?`
+        `fdirs/${poetId}/${workId}.xml ${textId} sideangivelse ${facsimilePages[1]} rækker over antal facsimile-sider. Er facsimile-pages-offset ${workSource.facsimilePageCount} korrekt?`
       );
     }
     source = {
@@ -497,6 +493,9 @@ const handle_work = work => {
         const sectionId = safeGetAttr(part, 'id');
         const title = extractTitle(head, 'title');
         const toctitle = extractTitle(head, 'toctitle') || title;
+        if (toctitle == null) {
+          throw `En section mangler toctitle eller title i ${poetId}/${workId}.xml`;
+        }
         const linktitle = extractTitle(head, 'linktitle') || toctitle || title;
         const breadcrumb = { title: linktitle.title, id: sectionId };
         const subtoc = handle_section(part.get('content'), resolve_prev_next, [
@@ -676,9 +675,11 @@ const works_first_pass = collected => {
           );
         }
         texts.set(textId, {
+          id: textId,
           title: replaceDashes(linkTitle.title),
           firstline: replaceDashes(firstline == null ? null : firstline.title),
           indexTitle: replaceDashes(indexTitle.title),
+          linkTitle: replaceDashes(linkTitle.title),
           type: part.name(),
           poetId: poetId,
           workId: workId,

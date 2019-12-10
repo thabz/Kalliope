@@ -12,10 +12,10 @@ import WorkName from '../components/workname.js';
 import { PoetTabs } from '../components/tabs.js';
 import SectionedList from '../components/sectionedlist.js';
 import * as Links from '../components/links.js';
-import * as Sorting from './helpers/sorting.js';
-import { createURL } from './helpers/client.js';
-import CommonData from '../pages/helpers/commondata.js';
-import _ from '../pages/helpers/translations.js';
+import * as Sorting from '../common/sorting.js';
+import { createURL } from '../common/client.js';
+import CommonData from '../common/commondata.js';
+import _ from '../common/translations.js';
 import type {
   LinesPair,
   Section,
@@ -24,7 +24,7 @@ import type {
   Work,
   SectionForRendering,
   LinesType,
-} from './helpers/types.js';
+} from '../common/types.js';
 import 'isomorphic-fetch';
 
 type TextsProps = {
@@ -141,9 +141,9 @@ export default class Texts extends React.Component<TextsProps> {
             crumbs={poetCrumbsWithTitle(lang, poet, lastCrumbTitle)}
           />
           <Heading title={title} />
-          <PoetTabs lang={lang} poet={poet} selected={type} />
+          <PoetTabs poet={poet} selected={type} />
           {renderedGroups}
-          <LangSelect lang={lang} path={requestPath} />
+          <LangSelect path={requestPath} />
         </Main>
       </div>
     );

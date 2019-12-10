@@ -261,7 +261,7 @@ File.readlines(ARGV[0]).each do |line|
   if line =~ /<note>.*\] .*<\/note>/
     @found_corrections = true
   end
-  if line =~ /<note>\* .*<\/note>/
+  if line =~ /<note>\* .*<\/note>/ or line =~ /^NOTE:\*.*/
     @found_poet_notes = true
   end
 end
@@ -289,6 +289,10 @@ File.readlines(ARGV[0]).each do |line|
   line = line.rstrip.gsub(/=([^"].+?)=/,'<w>\1</w>')
   if (line =~ /=[^"]/)
       STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal ="
+  end
+  line = line.rstrip.gsub(/\*(.+?)\*/,'<b>\1</b>')
+  if (line =~ /\*/)
+      STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal *"
   end
   # Håndter {..} TODO: Fang manglende }
   m = /{(.*?):(.*)}/.match(line)

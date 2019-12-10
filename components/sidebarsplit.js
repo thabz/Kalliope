@@ -34,7 +34,6 @@ export default class SidebarSplit extends React.Component<SidebarSplitProps> {
             flex-shrink: 0;
             width: 250px;
             padding: 0 0 0 40px;
-            font-weight: lighter;
             line-height: 1.5;
             border-left: 1px solid #666;
             color: #666;
