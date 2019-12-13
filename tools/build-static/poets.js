@@ -127,6 +127,7 @@ const build_poets_json = collected => {
     const pseudonym = safeGetText(nameE, 'pseudonym');
     const christened = safeGetText(nameE, 'christened');
     const realname = safeGetText(nameE, 'realname');
+    const sortname = safeGetText(nameE, 'sortname');
 
     let period = {};
     if (periodE) {
@@ -167,7 +168,15 @@ const build_poets_json = collected => {
       lang,
       type,
       square_portrait,
-      name: { firstname, lastname, fullname, pseudonym, christened, realname },
+      name: {
+        firstname,
+        lastname,
+        fullname,
+        pseudonym,
+        christened,
+        realname,
+        sortname,
+      },
       period,
       has_portraits,
       has_square_portrait,

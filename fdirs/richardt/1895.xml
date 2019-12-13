@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1895" author="richardt" status="incomplete" type="poetry">
+<kalliopework id="1895" author="richardt" status="complete" type="poetry">
 <workhead>
     <title>Samlede Digte</title>
     <year>1895</year>
+    <notes>
+        <note>Teksten følger Christian Richardt: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, Kbh., 1895.</note>
+    </notes>
 </workhead>
 <workbody>
+    <subwork ref="1895-1"/>    
+    <subwork ref="1895-2"/>    
+    <subwork ref="1895-3"/>    
 </workbody>
 </kalliopework>

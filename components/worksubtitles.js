@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import type { Work, Lang } from '../pages/helpers/types.js';
+import type { Work, Lang } from '../common/types.js';
 import TextContent from './textcontent.js';
 
 type WorkSubtitlesProps = {
