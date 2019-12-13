@@ -15,10 +15,10 @@ import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
-import type { Lang, DictItem, Error } from './helpers/types.js';
-import * as Client from './helpers/client.js';
-import * as Paths from './helpers/paths.js';
-import { createURL } from './helpers/client.js';
+import type { Lang, DictItem, Error } from '../common/types.js';
+import * as Client from '../common/client.js';
+import * as Paths from '../common/paths.js';
+import { createURL } from '../common/client.js';
 
 export default class extends React.Component {
   props: {
