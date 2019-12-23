@@ -291,7 +291,7 @@ File.readlines(ARGV[0]).each do |line|
       STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal ="
   end
   line = line.rstrip.gsub(/\*(.+?)\*/,'<b>\1</b>')
-  if (line =~ /\*/)
+  if (line =~ /\*/ and not line =~ /^NOTE:/ and not line =~ /<note>/ and not line =~ /{/)
       STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal *"
   end
   # Håndter {..} TODO: Fang manglende }
