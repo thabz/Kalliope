@@ -54,6 +54,7 @@ export type Poet = {
     pseudonym?: string,
     christened?: string,
     realname?: string,
+    sortname?: string,
   },
   period: ?{
     born?: DateWithPlace,
@@ -134,10 +135,12 @@ export type TocItem = {
   level?: number,
   content?: Array<TocItem>,
 };
+export type NoteType = null | 'credits' | 'source' | 'unknown-original';
 
 export type NoteItem = {
   lang: Lang,
-  type: null | 'credits' | 'source',
+  type: NoteType,
+  unknownOriginalBy?: Poet,
   content_html: TextContentType,
   content_lang: TextLang,
 };
@@ -147,6 +150,7 @@ export type PictureItem = {
   content_html?: TextContentType,
   primary?: boolean,
   size?: { width: number, height: number },
+  year?: string,
   src: string,
 };
 
@@ -176,6 +180,10 @@ export type Text = {
   has_footnotes: boolean,
   is_prose: boolean,
   source?: TextSource,
+  unknown_original?: {
+    poetId: PoetId,
+    note?: Text,
+  },
 };
 
 export type Keyword = {

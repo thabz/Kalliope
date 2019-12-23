@@ -7,19 +7,19 @@ import { Link } from '../routes';
 import * as Links from '../components/links';
 import Nav, { kalliopeCrumbs } from '../components/nav';
 import LangSelect from '../components/langselect.js';
-import LangContext from './helpers/LangContext.js';
+import LangContext from '../common/LangContext.js';
 import CountryPicker from '../components/countrypicker.js';
 import Tabs from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
-import * as Sorting from './helpers/sorting.js';
-import * as Strings from './helpers/strings.js';
-import _ from './helpers/translations.js';
-import CommonData from '../pages/helpers/commondata.js';
+import * as Sorting from '../common/sorting.js';
+import * as Strings from '../common/strings.js';
+import _ from '../common/translations.js';
+import CommonData from '../common/commondata.js';
 import ErrorPage from './error.js';
-import * as Client from './helpers/client.js';
-import { createURL } from './helpers/client.js';
+import * as Client from '../common/client.js';
+import { createURL } from '../common/client.js';
 import type {
   Lang,
   Country,
@@ -28,7 +28,11 @@ import type {
   SortReturn,
   SectionForRendering,
   Error,
-} from './helpers/types.js';
+} from '../common/types.js';
+
+const nvl = <T>(x: ?T, v: T): T => {
+  return x == null ? v : x;
+};
 
 type Group = {
   title: string,
@@ -43,16 +47,19 @@ const groupsByLetter = (poets: Array<Poet>, lang: Lang): Array<Group> => {
     .filter(p => p.type !== 'person')
     .filter(p => p.type !== 'artist')
     .forEach(p => {
-      let key = _('Ukendt digter', lang);
-      if (p.name.lastname != null) {
+      let key = null;
+      if (p.name.sortname != null) {
+        key = p.name.sortname[0];
+        if (key === 'A' && p.name.sortname.indexOf('Aa') === 0) {
+          key = 'Å';
+        }
+      } else if (p.name.lastname != null) {
         key = p.name.lastname[0];
-      }
-      if (
-        key === 'A' &&
-        p.name.lastname != null &&
-        p.name.lastname.indexOf('Aa') === 0
-      ) {
-        key = 'Å';
+        if (key === 'A' && p.name.lastname.indexOf('Aa') === 0) {
+          key = 'Å';
+        }
+      } else {
+        key = _('Ukendt digter', lang);
       }
       let group: Array<Poet> = groups.get(key) || [];
       group.push(p);

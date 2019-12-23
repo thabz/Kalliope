@@ -1,10 +1,10 @@
 // @flow
 
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import Head from '../components/head';
 import Main from '../components/main.js';
 import Nav, { poetCrumbsWithTitle } from '../components/nav';
-import _ from '../pages/helpers/translations.js';
+import _ from '../common/translations.js';
 import { Link } from '../routes';
 import LangSelect from '../components/langselect';
 import { PoetTabs } from '../components/tabs.js';
@@ -15,16 +15,17 @@ import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
-import * as Client from './helpers/client.js';
+import * as Client from '../common/client.js';
 import type {
   Lang,
+  TextId,
   Poet,
   Work,
   TextContentType,
   Error,
-} from './helpers/types.js';
-import { poetsByLastname } from './helpers/sorting.js';
-import { createURL } from './helpers/client.js';
+} from '../common/types.js';
+import { poetsByLastname } from '../common/sorting.js';
+import { createURL } from '../common/client.js';
 
 const joinedByComma = (items, lang) => {
   let result = [];
@@ -99,31 +100,45 @@ const PoemLink = props => {
   );
 };
 
-const TranslationsGroupedByTranslated = props => {
+type PoemType = {
+  poet: Poet,
+  poem: Text,
+};
+type TranslationsProps = {
+  lang: Lang,
+  translations: Array<{
+    translated?: PoemType,
+    translation: PoemType,
+  }>,
+};
+
+const TranslationsGroupedByTranslated = (props: TranslationsProps) => {
   const { translations, lang } = props;
 
   const byTranslated = {};
   // Build byTranslated
-  translations.forEach(t => {
-    const { translated, translation } = t;
-    const a = byTranslated[translated.poem.id] || {
-      translated,
-      translations: [],
-    };
-    a.translations.push(translation);
-    byTranslated[translated.poem.id] = a;
-  });
+  translations
+    .filter(t => t.translated != null)
+    .forEach(t => {
+      const { translated, translation } = t;
+      const a = byTranslated[translated.poem.id] || {
+        translated,
+        translations: [],
+      };
+      a.translations.push(translation);
+      byTranslated[translated.poem.id] = a;
+    });
   // Render byTranslated
-  return Object.values(byTranslated)
+  const result = Object.values(byTranslated)
     .sort((a, b) => {
       return a.translated.poem.title < b.translated.poem.title ? -1 : 1;
     })
     .map(a => {
       const translations = a.translations.map(t => {
         return (
-          <>
+          <Fragment key={t.poem.id}>
             <PoetName poet={t.poet} />: <PoemLink poem={t.poem} lang={lang} />
-          </>
+          </Fragment>
         );
       });
       return (
@@ -133,9 +148,22 @@ const TranslationsGroupedByTranslated = props => {
         </Item>
       );
     });
+  return result.concat(
+    translations
+      .filter(t => t.translated == null)
+      .map(a => {
+        return (
+          <Item key={a.translation.poem.id}>
+            {_('Et ukendt digt er oversat af', lang)}{' '}
+            <PoetName poet={a.translation.poet} />:{' '}
+            <PoemLink poem={a.translation.poem} lang={lang} />
+          </Item>
+        );
+      })
+  );
 };
 
-const TranslationsGroupedByTranslator = props => {
+const TranslationsGroupedByTranslator = (props: TranslationsProps) => {
   const { translations, lang } = props;
 
   const byTranslator = {};
@@ -156,12 +184,22 @@ const TranslationsGroupedByTranslator = props => {
     })
     .map(a => {
       const translations = a.translations.map(t => {
-        return (
-          <>
-            <PoemLink poem={t.translated.poem} lang={lang} /> {_('til', lang)}{' '}
-            <PoemLink poem={t.translation.poem} lang={lang} />
-          </>
-        );
+        if (t.translated != null) {
+          return (
+            <>
+              <PoemLink poem={t.translated.poem} lang={lang} /> {_('til', lang)}{' '}
+              <PoemLink poem={t.translation.poem} lang={lang} />
+            </>
+          );
+        } else {
+          return (
+            <>
+              {_(' et ukendt digt ', lang)}
+              {_('til', lang)}{' '}
+              <PoemLink poem={t.translation.poem} lang={lang} />
+            </>
+          );
+        }
       });
       return (
         <Item key={a.translator.id}>

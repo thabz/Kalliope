@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import App from 'next/app';
-import LangContext from './helpers/LangContext.js';
+import LangContext from '../common/LangContext.js';
 
 const KalliopeAppFunc = props => {
   const { Component, pageProps } = props;

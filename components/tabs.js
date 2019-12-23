@@ -3,10 +3,10 @@ import React, { useContext } from 'react';
 import { Link, Router } from '../routes';
 import * as Links from './links.js';
 import { poetGenetiveLastName } from './poetname-helpers.js';
-import _ from '../pages/helpers/translations.js';
-import type { Lang, Poet, Country } from '../pages/helpers/types.js';
-import CommonData from '../pages/helpers/commondata.js';
-import LangContext from '../pages/helpers/LangContext.js';
+import _ from '../common/translations.js';
+import type { Lang, Poet, Country } from '../common/types.js';
+import CommonData from '../common/commondata.js';
+import LangContext from '../common/LangContext.js';
 
 const transitionDuration = '0.2s';
 

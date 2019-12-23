@@ -2,9 +2,9 @@
 import React, { useContext } from 'react';
 import type { Node } from 'react';
 import { Link } from '../routes';
-import * as Strings from '../pages/helpers/strings.js';
-import _ from '../pages/helpers/translations.js';
-import CommonData from '../pages/helpers/commondata.js';
+import * as Strings from '../common/strings.js';
+import _ from '../common/translations.js';
+import CommonData from '../common/commondata.js';
 import type {
   Lang,
   Country,
@@ -13,8 +13,8 @@ import type {
   SortReturn,
   SectionForRendering,
   Error,
-} from '../pages/helpers/types.js';
-import LangContext from '../pages/helpers/LangContext.js';
+} from '../common/types.js';
+import LangContext from '../common/LangContext.js';
 
 function joinWithCommaAndOr(items: Array<string | Node>, andOrWord: string) {
   const result = [];

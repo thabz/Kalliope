@@ -13,18 +13,18 @@ import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import PicturesGrid from '../components/picturesgrid.js';
 import * as Links from '../components/links';
-import * as Client from './helpers/client.js';
+import * as Client from '../common/client.js';
 import ErrorPage from './error.js';
-import CommonData from './helpers/commondata.js';
+import CommonData from '../common/commondata.js';
 import type {
   Lang,
   Poet,
   Museum,
   PictureItem,
   Error,
-} from './helpers/types.js';
-import _ from '../pages/helpers/translations.js';
-import * as OpenGraph from './helpers/opengraph.js';
+} from '../common/types.js';
+import _ from '../common/translations.js';
+import * as OpenGraph from '../common/opengraph.js';
 
 type MuseumProps = {
   lang: Lang,

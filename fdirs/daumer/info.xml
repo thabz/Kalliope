@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="daumer" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Georg Friedrich</firstname>
+    <lastname>Daumer</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1800-03-05</date>
+      <place>Nuremburg</place>
+    </born>
+    <dead>
+      <date>1875-12-14</date>
+      <place>Würzburg</place>
+    </dead>
+  </period>
+  
+</person>

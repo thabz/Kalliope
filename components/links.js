@@ -6,7 +6,7 @@ import type {
   LinesType,
   Country,
   URLString,
-} from '../pages/helpers/types.js';
+} from '../common/types.js';
 
 export const frontPageURL = (lang: string = 'da'): URLString => {
   return `/${lang}/`;

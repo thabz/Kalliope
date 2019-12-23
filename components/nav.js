@@ -11,17 +11,11 @@ import TextName, {
   textLinkTitleString,
 } from '../components/textname.js';
 import TextContent from './textcontent.js';
-import CommonData from '../pages/helpers/commondata.js';
-import _ from '../pages/helpers/translations.js';
-import * as Strings from '../pages/helpers/strings.js';
+import CommonData from '../common/commondata.js';
+import _ from '../common/translations.js';
+import * as Strings from '../common/strings.js';
 import * as Links from './links.js';
-import type {
-  Lang,
-  Poet,
-  Work,
-  Text,
-  URLString,
-} from '../pages/helpers/types.js';
+import type { Lang, Poet, Work, Text, URLString } from '../common/types.js';
 
 type BreadcrumbItem = {
   url?: ?URLString,

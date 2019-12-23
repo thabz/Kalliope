@@ -1,10 +1,10 @@
 // @flow
 import React, { useContext, useState } from 'react';
-import type { PictureItem, Lang, TextLang } from '../pages/helpers/types.js';
+import type { PictureItem, Lang, TextLang } from '../common/types.js';
 import TextContent from './textcontent.js';
 import PictureOverlay from './pictureoverlay.js';
-import CommonData from '../pages/helpers/commondata.js';
-import * as Strings from '../pages/helpers/strings.js';
+import CommonData from '../common/commondata.js';
+import * as Strings from '../common/strings.js';
 
 type PictureProps = {
   pictures: Array<PictureItem>,

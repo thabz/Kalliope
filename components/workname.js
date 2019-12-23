@@ -1,14 +1,14 @@
 // @flow
 import React, { useContext } from 'react';
-import type { Work, Lang } from '../pages/helpers/types.js';
-import CommonData from '../pages/helpers/commondata.js';
-import _ from '../pages/helpers/translations.js';
-import LangContext from '../pages/helpers/LangContext.js';
+import type { Work, Lang } from '../common/types.js';
+import CommonData from '../common/commondata.js';
+import _ from '../common/translations.js';
+import LangContext from '../common/LangContext.js';
 
 type WorkNameProps = {
   work: Work,
   cursive?: boolean,
-  useTitle: 'title' | 'toctitle' | 'linktitle' | 'breadcrumbtitle',
+  useTitle?: 'title' | 'toctitle' | 'linktitle' | 'breadcrumbtitle',
 };
 
 const WorkName = ({

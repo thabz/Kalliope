@@ -1,6 +1,6 @@
 // @flow
 
-import type { Poet, Lang } from '../pages/helpers/types.js'
+import type { Poet, Lang } from '../common/types.js';
 
 const nvl = <T>(x: ?T, v: T): T => {
   return x == null ? v : x;
@@ -56,8 +56,7 @@ export function poetNameParts(
     }
   }
   return [namePart, periodPart];
-};
-
+}
 
 export function poetNameString(
   poet: Poet,
@@ -109,4 +108,3 @@ export function poetGenetiveLastName(poet: Poet, lang: Lang): string {
     throw `Ukendt sprog: ${lang}`;
   }
 }
-
