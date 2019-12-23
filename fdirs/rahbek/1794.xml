@@ -958,7 +958,7 @@ Men evig skal jeg synge dig.
     <subtitle>Efter Voss</subtitle>
     <firstline>Den første Sang i Vennelag</firstline>
     <notes>
-        <note unknown-original-by="voss" />
+        <note>Gendigtning af Johann Heinrich Voß' <xref type="translation" poem="voss2019122301"/>.</note>
     </notes>
     <source pages="52-54"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3608,7 +3608,9 @@ Saa strede de Nordmænd for Norge.
     <title>Efter Miller</title>
     <firstline>Den heele Landbye samler sig</firstline>
     <source pages="194-198"/>
-    <!-- TODO: Find originalen (Miller) -->
+    <notes>
+        <note unknown-original-by="miller" />
+    </notes>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
