@@ -1,9 +1,4021 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1794" author="rahbek" status="incomplete" type="poetry">
+<kalliopework id="1794" author="rahbek" status="complete" type="poetry">
 <workhead>
-   <title>Poetiske Forsøg I</title>
-   <year>1794</year>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+    <title>Poetiske Forsøg</title>
+    <year>1794</year>
+    <notes>
+        <note>Samlingen bærer tilegnelsen ,,Sin mangeaarige / Ven, Opmuntrer og Veileder / Magdalus Cold / helliger / disse Sanges Camene / nærværende Forsøg. // Ihr kleines Lied wird nicht empor / Verwegen fliegen an des Donurers Wagen. / Es säuselt um der Freundschaft Ohr. / Gotters Gedichte.''</note>
+        <note>Teksten følger Knud Lyne Rahbek: <i>Poetiske Forsøg</i>, Første Deel, J.F. Schultz, Kbh., 1794.</note>
+        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    </notes>
+    <pictures>
+        <picture src="1794-p1.jpg">Titelbladet til <i>Poetiske Forsøg</i> (1794) lyder ,,Poetiske Førsøg. / Mariehöien. // Første Deel. / Kiøbenhavn, / forlagt af Hof- og Universitetsboghandler J. F. Schultz. / 1794.''</picture>
+    </pictures>
+    <source facsimile="115408000060_color.pdf" facsimile-pages-num="234" facsimile-pages-offset="14">Knud Lyne Rahbek: <i>Poetiske Forsøg</i>, Første Deel, J.F. Schultz, Kbh., 1794.</source>
 </workhead>
+<workbody>
+
+<prose id="rahbek2019091901">
+<head>
+    <title>Forerindring</title>
+    <source pages="v-vi" facsimile-pages="9-10" />
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Af de her fremlagte Stykker er en betydelig Deel ikke tilforn offentlig trykt, og af de øvrige er neppe eet eeneste meddeelt gandske uforandret; ja adskillige endog aldeles omarbejdede. Har jeg i disse Forandringer ikke varet gandske uheldig, er det min Pligt at tilstaae, dette skyldes de rigtigere og fuldstændigere Begreber om Sangdigtets Natur, jeg i den ny den ny Psalmebogs Udgave nedsatte Commission har erholdt ved at arbeide i Foreening med Mænd, som jeg høilig havde været fristet at tilegne nærværende Samling, hvis jeg ikke havde følt, at slige Smaating ikke uden Uforskammenhed kunne bydes, undtagen nøie og mangeaarigt Venskab. Jeg henegnede dem da til den Mand, der ved min første Indtrædelse paa den litterariske Bane rakte mig broderlig Haand, i mange Aar var min troefaste Ledsager, og selv nu, da hans andre mange og vigtigere Sysler ikke tillade mig at giøre Fordring paa hans Veiledelse, endnu ofte tilvinker mig gavnlig Varsel, og styrkende Opmuntring paa Vanen.
+    Hvad Stykkernes Valg angaaer, da tilstaaer jeg, at jeg ofte har været forlegen mellem min egen Overtydning og den offentlige Stemme; Sangdigtes Held beroer maaskee mindre end nogen anden Digtearts paa deres egen Værd; en skiøn Melodie, en yndet Sangers eller Sangerindes formaaende Anbefaling skaffer disse ofte et Bifald, hvorpaa de ellers havde liden eller ingen Fordring.  Ærlig erkiender jeg, at det ofte har varer Tilfældet med mine, især med dem, som vor <w>Schulzes</w> fortryllende Camene har taget under sin mægtige Beskyttelse. Men er Faderøiet altid upartisk nok til at skiønne, om hans Barn har giort <w>Lykke</w>, eller blot er skeet sin Ret? nogle har jeg opoftet: meget frygter jeg imidlertid for, flere burde havt samme Dom.
+    Man har undertiden giort mig den Ære at nævne mig blandt Fædrelandets Digtere; endnu for ikke længe siden er dette skeet af en Mand, hvis Bifald altid bliver mig en sand Ære, om endog personligt Venskab her havde forledet ham fra hans sædvanlige Sanddruehed. Men høilig frygter jeg, at denne Samling af idel Smaating vil blive et vigtigt Document for dem, der nægte mig hiin hæderfulde Titel. Jeg vil ikke nægte, at jeg engang har drømt om at vinde Adkomst dertil; men hvo der først faaer Smag paa at dvæle under Lycæets Plataner, bestiger siælden Parnasset siden med den Fyrighed og Kraft, som er fornøden, hvis man vil naae dets laurbærskyggede Top.
+    Man venter maaskee en Undskyldning, fordi disse Forsøg ere udeblevne; men det er Forfatterens højeste Ønske, at man ikke maae finde, de endnu ere komne for snart, og at han burde holdt dem længere inde, for at give dem mere Fuldending og indvortes Værd.
+
+  Den 5 Februari 1794.
+<nonum><right><w>K. L. Rahbek.</w></right></nonum>
+</body>
+</prose>
+
+<poem id="rahbek2019091902">
+<head>
+    <title>Til Fædrelandet</title>
+    <firstline>Da du fremsteeg af Havets Skiød</firstline>
+    <source pages="3-5"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Da du fremsteeg af Havets Skiød,
+O Danmark! i din Ynde,
+Fra Skyerne en Stemme lød,
+Dig Lykke at forkynde:
+Held dig, nyskabte Danmark! Held!
+Du aldrig, aldrig vorde Træl!
+Dig være Friehed Lykkens Væld!
+Og aldrig det hentørres!
+
+Og skiøn vi Frieheds ædle Aand
+Hos vore Fædre spore;
+Den halve Jord bar Romerbaand,
+Men stolte Rom bar vore;
+Til Kriig stod Fædrenes Attraae,
+De lagde andre Lænker paa;
+Men aldrig fremmed Aag man saae
+Paa danske Skuldre hvile!
+
+Een Tidspunct mørk og sørgelig
+Dog kom til Hovmods Glæde;
+Den sine Brødre fik ved Sviig
+Paalistet Trældomskiæde.
+Da væbned' Danmarks gode Aand
+En <w>Nansens</w> og en <w>Svanes</w> Haand,
+De knuste hine Trældomsbaand,
+Og frie blev danske Borger.
+
+Dog klirred' end om Bondens Fod
+Den tunge Slavekiæde;
+Men mangen ædel Mand fremstod
+Fra Trældom ham at redde;
+Til Landets fromme Fader lød
+Det høie Raad om Bondens Nød,
+Og Christian Bondens Lænker brød,
+Og Danmarks Skytsaand smiilte.
+
+Og ofte, ofte smiler han
+I Fader Christians Dage,
+Han ofte høres til sit Land
+Den Varsel froe gientage:
+Fortien, mit Danmark! o fortien
+Din Friehed ved at skatte den,
+Og elske hver dens sande Ven,
+Din Prinds, din gode Konge!
+</body>
+</poem>
+
+<poem id="rahbek2019091903">
+<head>
+    <title>Murersang</title>
+    <subtitle>for Kongen og Kronprindsen</subtitle>
+    <firstline>Held Fyrsten, som er Lysets Ven</firstline>
+    <source pages="6-8"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Held Fyrsten, som er Lysets Ven
+Og elsker Sandheds Fremme,
+Som nidkiær jager Mørket hen,
+Og hædrer Folkets Stemme.
+Den gode Fyrste hædrer den,
+Kun han, kun han er Sandheds Ven,
+Derfor skal Sandhed og igien
+Hans Lovsang froe istemme.
+
+O leve Danmarks Christian!
+Vor gode Konge leve!
+I dit det lykkelige Land
+Tør Lyset frit omsvæve;
+Vel maae du dette have kiær,
+Det viiser dine Børn dit Værd!
+Og alles, alles Bøn det er:
+Vor gode Konge leve!
+
+Og leve, leve Frederik!
+Hans Søn, hans Ven, hans Støtte!
+Hvert Held af Christians Haand vi fik,
+Vi see hans Søn beskytte;
+Ham Sandhed har til nidkiær Ven,
+Thi elsker den ham troe igien.
+O leve, leve Folkets Ven,
+Og Thronens første Støtte!
+
+I disses Lye vort Lys sig her
+Saa frit og trygt udbreder;
+I deres Værn vort Arbeid er,
+De frede vore Glæder.
+Hver Gang vort Lys vi tænde her,
+Det klart bestraaler disses Værd!
+Og Brødres første Ønske er
+For deres Held og Hæder.
+
+Vor store Mester! Lysets Ven!
+Som dig i Sandhed glæder,
+Med Velbehag du skuer den,
+Der dine Spor betræder!
+Hør da vor Bøn, giør disse to,
+Som Fyrster og som Fædre froe!
+Sign dem med Landefred og Roe,
+Med Danmarks Held og Hæder!
+</body>
+</poem>
+
+<poem id="rahbek2001061310">
+<head>
+    <title>Vennesang</title>
+    <firstline>Barndoms Lyst, og Barndoms Smerte</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="9-11"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Barndoms Lyst, og Barndoms Smerte,
+Som en Taage svinde hen,
+Tidlig trænger Barnets Hierte
+Dog til ligeaarig Ven!
+Tomme er udeelte Glæder,
+Beedsk den Graad, man eensom græder,
+Livet øde uden Ven!
+
+Andre Sorger, andre Glæder
+Rive munter Yngling hen;
+Elskovs mange Bitterheder
+Lindres deelte af en Ven;
+Selv den elskte lykkelige
+Maae en Ven sin Lykke sige,
+Hvis han ret skal nyde den.
+
+O! men Ungdoms Sorg er Glæde
+Mod den Lod, som forestaaer;
+Dagens Byrde, Dagens Heede
+Føles først i Manddoms Aar;
+Men hvad Modgang, Sorg, og Møie,
+Magte vel den Mand at bøie,
+Ved hvis Side Venskab gaaer?
+
+Tung paa trætte Olding hviler
+Alderdommens kolde Haand,
+O men ogsaa ham tilsmiler
+Venskab Mod, og Kraft, og Aand;
+I jævnaarig Kreds oprinde
+Med forgangne Dages Minde
+Gienskin af de Dages Aand.
+
+Du, som gav vor Barndom Glæder,
+Du vor muntre Ungdoms Lyst,
+Du vor raske Manddoms Hæder,
+Bliv vor svage Ældes Trøst!
+Venskab! sank os da at drage
+Mindet af din Vaar tilbage,
+Og fornye dens skyldfrie Lyst.
+</body>
+</poem>
+
+<poem id="rahbek2019091905">
+<head>
+    <title>Til det norske litteraire Selskab</title>
+    <toctitle>Til det norske litteraire Selskab</toctitle>
+    <indextitle>Til det norske litteraire Selskab</indextitle>
+    <linktitle>Til det norske litteraire Selskab</linktitle>
+    <subtitle>tyvende Stiftelses-Dag den 30 April 1792.</subtitle>
+    <firstline>O Norges Skytsaand! ynd vor Glæde!</firstline>
+    <source pages="12-14"/>
+    <dates>
+        <event>1792-04-30</event>
+    </dates>
+    <keywords>norskeselskab</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+O Norges Skytsaand! ynd vor Glæde!
+Selv stifted du vort Broderlag;
+Selv bygged du dig her et Sæde,
+Beskyt det til din sidste Dag!
+O see vor Fryd, og hav den kiær,
+Og evig vor Beskytter vær!
+
+Da du vort Selskabs Grundsteen lagde,
+Stod Venskabs Skytsaand froe derhos.
+Og Haand i Haand han dig tilsagde,
+Saa ømt, som du, at elske os.
+Du vor Beskytter evig vær!
+Dit Tempel da og Venskabs er!
+
+Hans Ord de hulde Muser hørte,
+Og gientog det med freidigt Smiil;
+Til her Pierisk Luth de rørte,
+Og norske Sønner sang dertil;
+Du vor Beskytter evig vær,
+Og Norden faaer sit Pindus her!
+
+Du vinkede, og Skiemt, og Glæde
+Strax paa dit Vink fremiilte da,
+Her bygged begge sig et Sæde,
+Og Sorger flygted bort herfra;
+Du vor Beskytter evig vær,
+Da throne Skiemt og Glæde her!
+
+Her saae du Norges Sønner brænde
+For Norges Ære, Norges Held.
+Her gav du Sangen Kraft at tænde
+Fordobblet Ild i Nordmands Siæl.
+Du vor Beskytter evig vær,
+Da samles ægte Nordmand her!
+
+Bliid du modtog med aabne Arme
+Hver Broderrigets ædle Søn;
+Der elskte dig med Nordmands Varme,
+Og fandt i Nordmænds Agt sin Løn.
+Du vor Beskytter evig vær,
+Og dansk og norsk er Brødre her!
+
+Vor Skytsaand! elsk dit gamle Sæde!
+Viig aldrig fra vort Broderlag!
+Tit lad os hylde dig med Glæde,
+Saa sand, saa reen, som denne Dag.
+O see vor Fryd, og hav den kiær,
+Og evig vor Beskytter vær!
+</body>
+</poem>
+
+<poem id="rahbek2019091906">
+<head>
+    <title>Sang til Søstrene</title>
+    <firstline>Vore elskte Søstre leve!</firstline>
+    <source pages="15-17"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Vore elskte Søstre leve!
+Brødre! stemmer i med mig!
+For enhver den ædle svæve,
+Som han har udkaaret sig!
+Ingen dermed sig undskylde,
+At hans Tiid ei kommen er!
+Hver, som Venskabs Lov kan hylde,
+Elske, thi han er det værd!
+
+Bort fra os, hvo grusom krænker
+Den, han Haand og Hierte gav!
+Han giør Hymens Baand til Lænker,
+Ægteskab til Elskovs Grav.
+Bort med hver, som falsk kan svige
+Den, der var ham kiær, og huld,
+Hvo bedrage kan sin Pige,
+Er som Ven ei prøvet Guld!
+
+Leve hver en ædel Mage,
+Som sin Mand er huld og troe;
+Lindrer ham de mørke Dage,
+Og forsøder ham de fro.
+Hvem en saadan Viv er vorden,
+Og der føler hendes Værd,
+Han har Himlen her paa Jorden,
+Han er Glædens Giver kiær!
+
+Leve Pigen, som indtager
+Ømme Yngling uden Sviig,
+Og hans Siæl til Dyden drager,
+Ved at drage den til sig!
+Mangen Ynglings Skytsgudinde
+En elskværdig Pige var;
+Kan han blive Dyders Fiende,
+Som hun elsker, og hun har?
+
+Lever længe lykkelige,
+Elskte Koners ømme Mænd!
+Hver, som sukker for en Pige,
+Vorde elsket ømt igien!
+Hver, hvis Blik end frie omsvæve,
+Snart i Amors Lænker gaae!
+Alle vore Søstre leve,
+De vi har, og end kan faae!
+</body>
+</poem>
+
+<poem id="rahbek2019091907">
+<head>
+    <title>Sang</title>
+    <subtitle>efter Eschenborg.</subtitle>
+    <firstline>Stille Veemods søde Taarer rinde</firstline>
+    <notes>
+        <note unknown-original-by="eschenburg" />
+    </notes>
+    <source pages="18-20"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Stille Veemods søde Taarer rinde,
+Laura, disse ofrer Elskov dig.
+Levende omsvæver mig dit Minde,
+Siælden, siælden undes dette mig!
+Føl, o føl, med hvilken grusom Kulde
+Mismod hviler paa din arme Ven!
+Øieblik hensnige kummerfulde,
+Glædens Dage, som et Lyn, svandt hen.
+
+Dog anklag dig ei; thi før jeg lærte
+Først at kiænde Kiærlighed og dig,
+Venskab længe alt til grusom Smerte
+Troeløs smilende indvied mig.
+Mangen Taare randt ved Venners Grave,
+Fleer aftvang mig falske Venners Svig;
+Venskab, Himlens allerbedste Gave,
+Kun til grusom Marter sendtes mig.
+
+Du min Lod ei over dig maae drage,
+Ei dig græmme med og over mig;
+Ei til Sorg, ei til mismodig Klage,
+Nei til Glæde skabte Himlen dig.
+O forglem, forglem, hvor tit mit Hierte
+Har i Blik og Ord forraadet sig.
+Villig vil jeg bære al min Smerte!
+O kun ei! kun ei bedrøve dig.
+
+“Grædende du Graad mig vil forbyde!
+Svarer du, og græder bitterlig:
+Græd ei selv, og jeg dig strax skal lyde,
+Vær du glad, da er jeg glad med dig!”
+Laura! lad kun disse Taare rinde,
+De husvale, trøste, muntre mig!
+O! og tænk, og tænk dig selv, Veninde:
+Om de eengang lønnedes med dig!
+
+Froe jeg vilde mindes dem, og male
+For min Laura, hvad jeg fordum leed,
+Du hver Sorg med syvfold Fryd betale,
+Give Kiærlighed for Kiærlighed;
+Men forskyder Skiæbnen Vilhelms Klage,
+Følg dens Vink, forglem min Sorg, min Ild!
+Før jeg skulde mørkne dine Dage,
+Laura! da forglem, at jeg er til!
+</body>
+</poem>
+
+<poem id="rahbek2019091908">
+<head>
+    <title>Til en ædel Læges Bryllupsdag</title>
+    <firstline>Og er vor Jord end fuld af Plager</firstline>
+    <source pages="21-24"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Og er vor Jord end fuld af Plager,
+De glemmes let ved elsket Bryst,
+Den Mand, en kiærlig Viv ledsager,
+Gaaer Livets tunge Vei med Lyst;
+Da Herren i retfærdig Harme
+Jog Adam ud af Paradis,
+Vor Fader i sin Evas Arme
+Fandt Trøst, og glemte sit Forliis.
+
+Din Kunst, dit Kald, dit ømme Hierte
+Dig aabne Sørgescener, Ven!
+Thi for at lindre Brødres Smerte,
+Du søger, skuer, deeler den.
+Og stor er ædel Læges Glæde,
+— O den har ofte lønnet dig —
+Naar frelste Broders Viv og Spæde
+Omringe ham med Glædesskriig.
+
+Men stundom saae du Brødre lide,
+Hvis Redning Skiæbnen nægted' dig;
+Saae maalløs Hustrue Hænder vride,
+Og hørte Børns forgiæves Skriig,
+Med blødende, med martret Hierte
+Du sleed dig sorgfuld bort fra dem,
+Af uforskyldt og ædel Smerte
+Nedtrykt at flye til eensomt Hiem.
+
+Men Himlen elsker sligt et Hierte,
+Du fik en Viv til Løn og Trøst;
+Øm hun udlokke vil hver Smerte,
+Og deele den med kiærligt Bryst;
+I Øiet ædel Graad skal tindre
+Ved Brødres tunge Lidelser,
+Og sødt det skal din Smerte lindre,
+At see, at føle hendes Værd.
+
+Og naar det undes dig at redde
+En elsket Fader eller Mand,
+Hun deeler ikke blot din Glæde,
+Og stolt sig fryder ved sin Mand;
+Nei, hines Lykke froe hun nyder,
+Hvis Dages Lyst du reddet har,
+Og henrykt i din Arm sig fryder,
+Som om du selv den frelste var.
+
+Føel, Broder! føel din fulde Lykke!
+Fortien den, ved at føle den!
+Sand Elskovs Fryd kan intet rygge,
+Selv Tiden kun forøger den.
+Nyd, elskte Broder! dine Dage
+I Kiærligheds og Venskabs Lyst.
+Du al din Stræbens Løn modtage
+Ved din Elises ømme Bryst!
+</body>
+</poem>
+
+<poem id="rahbek2001062301">
+<head>
+    <title>Sang</title>
+    <subtitle>efter Kelgreen.</subtitle>
+    <firstline>Hver, som hylder muntre Glæder</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+        <note unknown-original-by="kellgren" />
+    </notes>
+    <source pages="25-27"/>
+    <!-- TODO: Originalen findes ikke i Samlade skrifter (1796) eller Skrifter (1995), men måske i 1935-udgaven på https://litteraturbanken.se/forfattare/KellgrenJH/titlar -->
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Hver, som hylder muntre Glæder,
+Holde deres Fest i Dag;
+I vor Viin boer Held og Hæder,
+Viisdom, Mod, og Vid og Smag!
+Helte der maae Manddom hente;
+Skialdens Aand boer i hans Glas;
+Gamle Odin selv erkiændte,
+Valhal uden Viin var Fias.
+
+Dog, som Vand mod Bacchi Gave,
+Viinen er mod Kiærlighed;
+Skiønheds Læber Nectar have,
+Som vi meer beruses ved.
+Daarlig den sit Liv forøder,
+For at opnaae frugtløst Navn,
+Hvo dets Kummer ei forsøder
+I en elsket Skiønheds Favn.
+
+Bacchus selv med Lyst erkiender,
+Elskov meer end han formaaer;
+Skiænket i af Skiønheds Hænder
+Viinen dobbelt Sødhed faaer.
+Elskov Glædens Moder være,
+Glædens muntre Børn er vi!
+Naar vi Bacchi Krandse bære,
+Myrther flette vi deri.
+
+Snart maaskee vor Stierne iiler
+Ned ad Vesterhimmelen,
+Snart sit Afskeedssmiil den smiiler
+Snart for evig slukkes den.
+Troe derfor ei Haabets Morgen,
+Nyd den Dag, der til dig leer,
+Ingen, ingen er dig Borgen,
+Slig en Dag dig bydes meer.
+
+Hisset ingen Druer bløde,
+Synges ei i Vennelag;
+Hisset idel Skygger møde
+Vore ømme Favnetag.
+Brødre! lad os da paaskiønne,
+At endnu vi ere her.
+Leve alle vore Skiønne!
+Leve hver, som har dem kiær!
+</body>
+</poem>
+
+<poem id="rahbek2001061311">
+<head>
+    <title>Trøst mod mange Slags Taare</title>
+    <subtitle>efter Øverbek.</subtitle>
+    <firstline>Brødre! Hvorfor flyde</firstline>
+    <notes>
+        <note>Gendigtning af Christian Adolph Overbeck: <xref type="translation" poem="overbeck2019091401"/>.</note>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="28-31"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Brødre! Hvorfor flyde
+Taarer uden Tal!
+Mange Suk frembryde,
+Som ei høres skal.
+Bort med Klynk og Klage!
+Hvor er eders Mod?
+Efter bittre Dage
+Bliver Enden god.
+
+Mindes eders Fader,
+Og hvor god han er;
+Aldrig han forlader
+Sine Skabninger.
+Han i Nød os sender
+Tit uventet Trøst;
+Tit han kiærlig vender
+Smerten om til Lyst.
+
+Ak! vi blinde, svage
+Kiende ei vort Vel,
+Det, hvorved vi klage,
+Ofte er vort Held.
+Meget her i Live
+Ei vort Sind anstaaer;
+Lad os bedre blive.
+Alt da bedre gaaer.
+
+Hvem vor Gud har givet
+Sand Fortrøst til sig,
+Gennemvandrer Livet
+Tryg og lykkelig.
+Jorden og dens Vrimmel
+Agter han ei meer,
+Naar til Herrens Himmel
+Han med Tilliid seer.
+
+Er en evig Slummer
+Da os falden paa?
+Livet, og dets Kummer,
+Som en Drøm forgaae.
+Natten snart hensvinder,
+Drømmen flyer med den,
+Og en Dag oprinder
+Skiøn, som Himmelen.
+
+Hvo kun denne Morgen
+Vente vil med Taal,
+Agte ei paa Sorgen,
+Snart han naaer sit Maal!
+Der al Sorg vi glemme,
+Held os, held os da!
+Der vi froe istemme
+Et Halleluja.
+</body>
+</poem>
+
+<poem id="rahbek2019091911">
+<head>
+    <title>Afskeedssang til Digteren Rein</title>
+    <subtitle>i det norske litteraire Selskab.</subtitle>
+    <firstline>Forgiæves Glædessange lyde</firstline>
+    <source pages="32-34"/>
+    <keywords>rein,vibe</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Forgiæves Glædessange lyde,
+Forgiæves de til Fryd indbyde,
+Den smiler ei til dette Lag.
+Han, paa hvis Vink den muntre Glæde
+Saa ofte tog blandt os sit Sæde,
+Udrives af vort Favnetag.
+
+Og du vort Selskabs Sanggudinde!
+I Dag selv dine Taare rinde;
+Selv dig nedbøier Sorgens Vægt.
+I <w>Rein</w> du sorgfuld seer bortdrage
+Den reneste, du har tilbage
+Af ædle norske Digterslægt.
+
+Saa glad, saa henrykt nys du hørte,
+Hvor sødt hiin Teiers Luth han rørte,
+Som af sin <w>Viibes</w> Haand han tog;
+Og Gratierne om dig iilte,
+Og lyttede paa ham, og smilte,
+Som da din <w>Viibe</w> Luthen slog.
+
+Og da sit Norges Sag han talte,
+Og for dets unge Fyrste malte
+Dets Bødler og dets Hædersmænd;
+Da steeg af Fryd dit store Hierte,
+Af Norges Skytsaand du begiærte
+En Eegekrands til eders Ven.
+
+Skiøn er, o Rein! din Digterære!
+Dog er din sande Roes at være
+En ægte Nordmand, Brødres Ven!
+Thi skal dit dyrebare Minde
+I norske Selskab ei forsvinde,
+Før norske Selskab svinder hen.
+
+Tænk da med Venskab tit tilbage
+Paa os, og paa henfarne Dage
+Som her i Glæde svunde hen!
+Gaae, hvor du gaaer, til Held og Glæder!
+Vær Musers Yndling, Norges Hæder,
+Vær lykkelig, og vær vor Ven!
+</body>
+</poem>
+
+<poem id="rahbek2019091912">
+<head>
+    <title>Sang for det borgerlige Selskab</title>
+    <subtitle>ved deres nye Klubværelsers Indvielse.</subtitle>
+    <firstline>Frieheds, Venskabs, Glædens Sæde</firstline>
+    <source pages="35-37"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Frieheds, Venskabs, Glædens Sæde,
+Brødre! her skal vies ind.
+Det indvies maae med Glæde,
+Med oprigtigt Vennesind.
+Alle Glas nu fyldte være!
+Alle Brødre stemme i!
+Denne Skaal er hver til Ære,
+Som er Ven, og froe, og frie.
+
+Mangen Aften her bortiile
+I uskyldigt Vennelag!
+Borgeren her finde Hvile
+Efter vel anvendte Dag!
+Stedse her et Fristed blive
+Mod al falsk og kiedsom Tvang!
+Skyldfrie Munterhed oplive
+Det med Viin og Spøg og Sang!
+
+Mangt et ærligt Venskab blive
+Knyttet her paa dette Sted!
+De vort Selskab Styrke give,
+Og befæste Eenighed!
+Kun den gode Borger finde
+Adgang til vort Vennelag!
+Tit vi da i frydfuldt Minde
+Skal gienkalde denne Dag.
+
+Frieheds, Venskabs, Glædens Sæde
+Brødre! nu vi vie ind,
+Vie det med skyldfrie Glæde,
+Med oprigtigt Vennesind.
+Alle Glas nu fyldte ere,
+Alle Brødre stemme i:
+Denne Skaal er os til Ære,
+Vi er Venner, froe, og frie!
+</body>
+</poem>
+
+<poem id="rahbek2019091913">
+<head>
+    <title>Til min Faders Fødselsdag</title>
+    <subtitle>den 17 September 1791.</subtitle>
+    <firstline>Bedste mellem alle Fædre!</firstline>
+    <source pages="38-40"/>
+    <dates>
+        <event>1791-09-17</event>
+    </dates>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Bedste mellem alle Fædre!
+See vor Fryd, og hav den kiær!
+For Din Fødselsdag at hædre
+Den vor bedste Høitid er!
+Længe, længe, længe være
+Du Din ømme Mages Fryd,
+Venners Glæde, Dines Ære,
+Og vort Mynster ved Din Dyd.
+
+Tak for hver en Times Møie,
+Du for os opofret har,
+For hver Gang Dit skarpe Øie
+Paa vor Vandring hæftet var!
+For hver Gang Dit ømme Hierte
+Ved vor Glæde glædde sig,
+For hver Fare, for hver Smerte,
+Som Du deelte faderlig.
+
+Han, som slige Fædre lønner,
+Alles Fader lønne Dig!
+Gid enhver af Dine Sønner
+Dig maae vorde værd og liig!
+Dine Døttre ligne hende,
+Som er Dine Dages Fryd.
+Verden med Beundring kiende
+Eders Børn paa Eders Dyd!
+
+Da skal ingen Adel være
+Hæderlig og skiøn som vor!
+Dydens skiønne Vei til Ære
+Vandre vi i eders Spor!
+Mangen, Mangen Dag skal være
+Eder skiøn, som denne nu!
+Ingen, ingen Fader være
+Lykkelig og glad som Du!
+</body>
+</poem>
+
+<poem id="rahbek2019091914">
+<head>
+    <title>Lalage</title>
+    <subtitle>efter Bürger.</subtitle>
+    <firstline>O Lalage! hvo danned' dig</firstline>
+    <source pages="41-43"/>
+    <notes>
+        <note unknown-original-by="burger" />
+    </notes>
+    <!-- TODO: ingemann2018040908 omtaler også Lalage -->
+    <!-- TODO: Se også »Lalages Flugt efter Kleist« længere nede i denne samling. -->
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+O Lalage! hvo danned' dig,
+Saa huld, saa skiøn, saa elskelig?
+Den Gud, der eene frembragt har,
+Hvad skiønt der bliver, er, og var.
+O Lalage! han danned' dig
+Saa huld, saa skiøn, saa elskelig!
+
+Hvo gav dig Øiet blaat og lyst?
+Hvo hvælvede det hvide Bryst?
+Den Gud, der hvælved' Himmelen,
+Og Lys og Skiønhed skiænkte den.
+Han gav dig Øiet blaat og lyst,
+Han hvælvede det hvide Bryst.
+
+Hvo farvede din Kind saa bliid
+Som Rosen rød, som Liiien hvid?
+Han, han der mestred Rosen af,
+Og Lilien Sneens Hvidhed gav.
+Han farvede din Kind saa bliid
+Som Rosen rød, som Lilien hvid.
+
+Hvo gav din Tale og din Sang
+Den underlige Trylleklang?
+Han, som gav Philomeles Røst
+At skiænke veemodblandet Lyst!
+Han gav din Tale og din Sang
+Den underlige Trylleklang.
+
+Hvo dannede dit skiønne Liv
+Saa rankt, som Rør, saa mygt, som Siv?
+Han, han, for hvem i Ydmyghed
+Hver Phidias maae knæle ned!
+Han dannede dit skiønne Liv
+Saa rankt, som Rør, saa mygt, som Siv .
+
+Hvo har nedlagt med kiærlig Haand
+I skiønne Krop den skiønne Aand?
+O hvo har giort det, uden han,
+Som Himlens Engle skabe kan?
+Han har nedlagt med kiærlig Haand
+I skiønne Krop den skiønne Aand.
+
+Hvo gav den Yndige til mig,
+Hvo giorde mig saa lykkelig?
+Han, han, hvis store Idræt er
+At signe sine Skabninger;
+Han gav den Yndige til mig,
+Han giorde mig saa lykkelig.
+</body>
+</poem>
+
+<poem id="rahbek2019091915">
+<head>
+    <title>Til en Ven, som reiste til Indien</title>
+    <firstline>Saa iler du bort fra vort sukkende Bryst</firstline>
+    <source pages="44-45"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Saa iler du bort fra vort sukkende Bryst,
+Og følger din Lykkes befalende Røst!
+Paa første Befaling adlyde man den,
+Thi ellers maaskee den ei kalder igien!
+
+Vi Hastingers Rigdomme ønske dig ei,
+Din Ærlighed afskyer Hastingers Vei;
+Men skiønner Fortuna paa redelig Flid,
+Du hende vil lære at vorde dig blid.
+
+Veldædigt skal Venskab omsvæve dig der,
+Og lønne med retskafne Venner dit Værd;
+Hun allesteds throner, hvor Mennesker boe,
+Og aldrig hun skuffer, hvo hende var troe.
+
+Maaskee ogsaa Himlen der giemte til dig
+En Pige, hvis Hierte skal giøre dig riig;
+Thi Ynde og Dyd har Naturen udspreed
+Fra Pol, og til Pol i sit signede Fied.
+
+O bliv du, bliv yndet, og elsket, og riig,
+Men tænk dog paa os, som tit tænke paa dig!
+Til Venskab iblandt os har mistet sit Værd,
+O Ven! din Erindring vil blive os kiær!
+</body>
+</poem>
+
+<poem id="rahbek2019091916">
+<head>
+    <title>Til en Vens Bryllup</title>
+    <firstline>Knæle, hvo lyster for Lykkens Gudinde</firstline>
+    <source pages="46-47"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Knæle, hvo lyster for Lykkens Gudinde,
+Søge Lyksalighed fra hendes Haand!
+Alt, hvad saaledes bortkastes i Blinde,
+Fristede aldrig den Tænkendes Aand,
+Og Dydens og Venskabs og Kiærligheds Fryd
+Bortskiænke kun Kiærlighed, Venskab, og Dyd.
+
+Daarlige Rige sit Mammon udspreder;
+Phryner og Mundvenner fylde hans Sal;
+Stormanden ødsler med Høihed og Hæder,
+Sig at tilkiøbe, hvad ikke er fal.
+Vor Skytsaand til Ære den Sandhed skal staae,
+Hvo Venskab vil høste, han Venskab maae saae.
+
+Broder du saaede med gavmilde Hænder
+Broderligt Venskab i Brødrenes Bryst,
+Og i vor Glæde i Dag du erkiender,
+Venskabets Skytsaand velsignte din Høst;
+Dog ofte og længe det var jo din Roes,
+Vi alle dig elskte, som du elsker os.
+
+Og som du vidste vort Venstab at vinde,
+Vandt du og Kiærligheds herligste Løn;
+Blidt, som en Maidag, dit Liv skal henrinde,
+Eden ved Eva først Adam blev skiøn.
+Som Stjernenats Skumring mod Middagens Lys
+Er Venskabets Favntag mod Kiærligheds Kys.
+
+Held den, der eier en troefast Veninde,
+Og der forstaaer sin Lyksaligheds Værd!
+Sorgerne for ham som Drømme hensvinde,
+Daarernes Glæder ham Skyggeværk er.
+O Ven! som dit Hierte din Lykke er skiøn,
+Nyd længe dit Venskabs, din Kiærligheds Løn!
+</body>
+</poem>
+
+<poem id="rahbek2019091917">
+<head>
+    <title>Lina</title>
+    <subtitle>tildeels efter det tydske.</subtitle>
+    <firstline>Min Sang, min Lina, er for dig!</firstline>
+    <notes>
+        <note>Se Goethes <xref poem="goethe2019091401"/>.</note>
+    </notes>
+    <source pages="48-51"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Min Sang, min Lina, er for dig!
+Min Musa er mit Hierte.
+Du selv at synge lærte mig,
+Da du mig elske lærte;
+Thi er og du og Kiærlighed
+Alt det, din Ven at synge veed!
+
+Saa mangen Sang jeg bragde dig,
+Og saae dig huld den tage!
+O den Gang var jeg lykkelig!
+Men nu min Sang er Klage!
+Ei meer skal Smiil og Tak fra dig
+Mig giøre stolt, og glad, og riig.
+
+Du reves bort fra dette Bryst,
+Og intet meer mig glæder,
+Naturen al sin rige Lyst
+Forgiæves om mig spreder.
+Ak i dens moderlige Favn
+Jeg dobbelt føler Linas Savn.
+
+Hvorhen mit Øie vender sig,
+Det møder Linas Minde,
+Strax flyer det alt, og søger dig;
+Dig kan det ikke finde!
+Og naar jeg mindes, savner dig,
+O hvad! hvad kan da fryde mig?
+
+O skiønne Lina! hvo dig saae,
+Hvad Syn kan ham fornøie?
+Er blidest Maidags Himmel blaa,
+Og venlig, som dit Øie?
+Er Rosens Rødme halv saa fiin
+Saa skiær, saa huld, saa skiøn, som din?
+
+Saa skiøn I finde Lilien,
+I Lina skulde kiende!
+Forvoxen, skrumpen, sort er den,
+Og grim og leed mod hende!
+Og hæs er Nattergalens Sang
+Mod hendes Tales Trylleklang!
+
+O hver en Sorg forsvandt for den,
+Som Snee for Solen svinder;
+Men nu, hvor jeg mig vender hen,
+Ny Sorg for mig oprinder;
+Selv ærligt Venskabs ømme Trøst
+Opriver Saaret i mit Bryst!
+
+Har den for Jordens Glæder Smag,
+Der Himlens fik at kiende?
+Hvad ere Venstabs Favnetag
+For den, der kyste hende?
+Og naar jeg Dyd og Ømhed seer,
+Jeg mindes, favner Lina meer!
+
+O kom! o kom igien til mig!
+Jeg atter Fryd skal finde!
+See! Glæderne omsvæve dig,
+Som deres Herskerinde!
+Alt, alt jeg har, naar du er her!
+Alt savner jeg, du borte er!
+
+Men skal jeg, skal jeg savne dig,
+Og med dig al min Glæde,
+Den Trøst skal intet røve mig,
+Min Lina! dig at qvæde!
+Ei meer du hører, lønner mig!
+Men evig skal jeg synge dig.
+</body>
+</poem>
+
+<poem id="rahbek2019091918">
+<head>
+    <title>Venskabsbaand</title>
+    <subtitle>Efter Voss</subtitle>
+    <firstline>Den første Sang i Vennelag</firstline>
+    <notes>
+        <note>Gendigtning af Johann Heinrich Voß' <xref type="translation" poem="voss2019122301"/>.</note>
+    </notes>
+    <source pages="52-54"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Den første Sang i Vennelag
+Forkynde Venskabs Værd;
+En Venskab uindviet Dag,
+Forloren, misbrugt er;
+Og medynkværdig er den Mand,
+Som Venskabs Fryd ei føle kan.
+
+Med ynksomt Blik saar Godheds Gud
+Til Støvets tungt Lod;
+Men Venskab af hans Haand gik ud,
+Da steeg vor Kraft, vort Mod;
+I Glædens Vægtskaal lagdes det,
+Og strax blev Sorgens Skaal saa let.
+
+At elske, og at elskes, er
+Det skabtes store Baand,
+Den tamme Fugl vi have kiær,
+Der pikker af vor Haand;
+En troefast Hund er Hyrdens Lyst,
+En Ædderkop den fangnes Trøst.
+
+Men syvfold lykkelig er den,
+Der føler Venskabs Værd,
+Og der velsigntes med en Ven
+Som har ham ærlig kiær;
+Som troefast deeler Sorg og Fryd,
+Undskylder Feil, og elsker Dyd.
+
+Selv Eden frydløs var og mørk,
+Da Adam eene var!
+Men Himlen boer i hver en Ørk,
+Hvor Venskab Tempel har.
+Og Vand og Brød er Herreret,
+Naar Venskabs Fryd forsøder det.
+
+Hver Daad, og Tanke, Vee, og Vel,
+Hvert Glimt af Sorg og Lyst,
+Hvad der oprinder i vor Siæl,
+Betroes Vennebryst.
+Da voxte Fryd, og Sorg svandt hen,
+Naar troefast Venskab deelte den.
+
+Nu Venner! det er Venskabs Skaal!
+Det Venskabs Høitid er!
+Det give Fryd, og Trøst, og Taal
+Til hver, som er det værd!
+O gid vi i dets Rosenbaand
+Maae vandre evig Haand i Haand!
+</body>
+</poem>
+
+<poem id="rahbek2019091919">
+<head>
+    <title>Murersang til Søstrene</title>
+    <firstline>Brødre! I, som Viisdom dyrke</firstline>
+    <source pages="55-57"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Brødre! I, som Viisdom dyrke,
+I som have Skiønhed kiær,
+I, hvis Arbeids Maal er Styrke!
+Vore Søstres Skaal det er.
+Deres Skiønhed os opliver,
+Viisdom boer i deres Raad,
+Deres Ømhed Styrke giver
+Til saa mangen ædel Daad.
+
+Held den Yngling, som sit Hierte
+Til en ædel Pige gav,
+Kiærlighed hver Dyd ham lærte,
+Som hans Møe besiæles af.
+Dobbelt let vi Møien finde
+Med den utilhugne Steen,
+Naar en søsterlig Veninde
+Først har forberedet den.
+
+Mørke, tunge, lidet blide
+Ere tit vor Manddoms Fied;
+Som en Rosenvei de glide,
+Lettes de ved Kiærlighed;
+Aldrig kan den Mand forsage,
+Aldrig finde Pligten svar,
+Som i øm og elsket Mage
+Hver en Dyds Belønning har.
+
+Hvem vor Mester ret vil signe,
+Signer han med Faderfryd,
+Signer han med Børn, der ligne
+Faderen i Værd og Dyd.
+O! men dobbelt, dobbelt glæder
+Disses Værd og Dyd hans Aand,
+Naar hans ømme Viv dem leder
+Dydens Vei med Moderhaand.
+
+Naar nedbøiet Olding sukker
+Under Lidelser og Aar;
+Naar for ham den Grav sig lukker,
+Hvortil al hans Længsel staaer,
+Held ham, hvis en kiærlig Mage
+Da hans Trøst og Lindring er!
+O! i Sorgs og Sygdoms Dage
+Føles dobbelt hendes Værd.
+
+Venner! Brødre! Mænd, og Fædre!
+Vi som have Skiønhed kiær,
+Vi som Styrken søge, hædre,
+Vi hvis Formaal Viisdom er.
+Leve vore Dages Lykke,
+Som forsøde Sorg og Fryd,
+Denne skiønne Bygnings Smykke,
+Skiønhed, Ynde, Aand og Dyd.
+</body>
+</poem>
+
+<poem id="rahbek2001061316">
+<head>
+    <title>Vennesang</title>
+    <firstline>En Skaal for Hver, hvis Hjerte og hvis Haand</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="59-60"/>
+    <keywords>drikkevise</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+En Skaal for hver, hvis Hierte og hvis Haand
+Paa Broders Vink er altid villig reede;
+Der tager Deel med munter skyldfrie Aand
+I Vennelags, og Spøgs, og Sangens Glæde;
+Han anseer hver Dag for spildt og ød,
+Som han ei blandt ædle Venner nød.
+
+En Skaal for den, der deeler Venners Fryd
+Og deres Sorg med lige aabent Hjerte;
+Der glæder sig ved deres Værd og Dyd,
+Og deres Feil bliid at tilgive lærte;
+Han, i Spøg og Alvor lige fast,
+Svigter aldrig, om end Himlen brast.
+
+Gid Venskab huldt nedsmile til enhver,
+Som i dets Smiil sin Held og Fryd kan finde!
+Det skiænke ham de Venner, han er værd,
+Og meer end alt, en trofast øm Veninde!
+Tag dit Glas, fyld det til bredfuldt Maal,
+Det er Venskabs, det er vores Skaal.
+</body>
+</poem>
+
+<poem id="rahbek2019091921">
+<head>
+    <title>Sang i det norske litteraire Selskab</title>
+    <subtitle>ved Hr. Amtmand Meldahls Bortreise.</subtitle>
+    <firstline>Tung er Veien giennem Livet</firstline>
+    <source pages="61-63"/>
+    <keywords>norskeselskab</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Tung er Veien giennem Livet,
+Over Klipper løber den;
+Ærligt Venskab os blevet givet,
+At forsøde Vandringen.
+Held, o Held den lykkelige,
+Der kan vandre med en Ven!
+Som en Dands med elsket Pige
+Reisen let ham iiler hen!
+
+O! men var en saadan Lykke
+Ei for stor for Mennesker?
+Venskabs Baand at sønderrykke
+Skiæbnen altid reede er.
+Brødre! iiler da at nyde
+Hvert et Glimt af Venskabs Fryd!
+Snarlig, snarlig maae vi byde
+Hver en Fryd et tungt Farvel.
+
+Haand i Haand til Fryd at iile
+Venskab her os samlet har,
+Mange alt i Graven hvile,
+Som vort Samfunds Hæder var.
+Mange, mange Savn oprives
+I hver Broders Bryst i Dag;
+Da en elsket Broder rives
+Bort fra dette Vennelag.
+
+Glad du Brødres Glæde deelte,
+Lindred' deres Sorg med Lyst,
+Trønders gamle Aand besiælte
+Med sin ædle Ild dit Bryst.
+Iil, og bliv, hvad du fortiener,
+Elsket, æret, lykkelig!
+Men forglem ei gamle Venner,
+Ingen Tid de glemme dig.
+</body>
+</poem>
+
+<poem id="rahbek2019091922">
+<head>
+    <title>Murersang til Slutning</title>
+    <firstline>I elskte Brødres Kreds, blandt festlig høie Glæder</firstline>
+    <source pages="64-65"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+I elskte Brødres Kreds, blandt festlig høie Glæder
+    Blev denne Aften endt.
+Den høitidsfulde Fryd, vor Orden os bereder,
+    Har aldrig Daaren kiendt.
+
+Thi ei Bacchanters Larm, ei Daarskabs kaade Latter
+    Er Fryd for Ordnens Søn,
+Nei! majestætisk mild hans Fryd er Viisdoms Datter,
+    Og som sin Moder skiøn.
+
+O! gid vi ofte her maae samles dydig glade
+    I viis Fortroelighed.
+Og aldrig dette Sted ubedrede forlade,
+    Men mindes troe vor Eed,
+
+Gid bedre Mennesker, og bedre Statens Sønner
+    Vi gaae fra Altret her,
+Ak hver, som seer vor Daad, og Dyd og Viisdom skiønner
+    Maae faae vor Orden kiær!
+
+Og hvis den Time slaaer, hver ægte Murer tænker
+    Med glad Ærbødighed;
+Hvis Døden een af os sin Glædes Kalk iskiænker,
+    Han døe med Dydens Fred!
+
+Gid da den Evige, vor Mester i det Høie,
+    Ham finde Lyset værd!
+Han henrykt skue da med uformørket Øie,
+    Hvad vi kun skimte her.
+
+Du, i hvis Navn vort Værk begynder, og fuldender,
+    Hør, hvad vi bede her!
+Vi broderlige, nu hinanden give Hænder;
+    Det høie Midnat er.
+</body>
+</poem>
+
+<poem id="rahbek2019091923">
+<head>
+    <title>Elskovssang for Ægtemænd</title>
+    <subtitle>efter Voss.</subtitle>
+    <firstline>O hvor lykkelig er den</firstline>
+    <notes>
+        <note unknown-original-by="voss" />
+    </notes>
+    <source pages="66-68"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+O hvor lykkelig er den,
+Der har sig en Viv saa ven;
+Skiøn, og klog, og uden Sviig,
+Og i Fromhed Duen liig.
+
+Ham er hver en Møie let,
+Frydfuldt er hvert Aandedræt,
+Al Besvær, og Sorg, og Savn
+Glemmer han i hendes Favn.
+
+Kommer end en Vanhelds Stund
+Øm hans Graad bortkysser hun,
+Og den Vei, han har at gaae,
+Strøer hun kiærlig Roser paa.
+
+Stormed' han end stundum vred,
+Og selv Venneraad ei leed,
+Snart med kiærlig Blik og Røst
+Giød hun Mildhed i hans Bryst.
+
+Englene en Vognborg slaae
+Om det Sted, de hvile paa,
+Thi det kydske Ægtebaand
+Knytted' Herrens Faderhaand,
+
+Den med Sønner signer dem,
+Som i Fædres Spor gaae frem,
+Eie Fædrekraft i Arm,
+Fædremod i ædel Barm.
+
+Som de Rosenknoppe smaae
+Om udsprungen Rose staae;
+Man en yndig Døttre-Hær
+Om den hulde Moder seer.
+
+Slig en Viv at være kiær,
+Jordens bedste Lykke er,
+Og kun den, som Gud har kiær,
+Finder han slig Lykke værd.
+</body>
+</poem>
+
+<poem id="rahbek2019091924">
+<head>
+    <title>Sang til Kongens Fødselsdag 1793</title>
+    <firstline>Der er paa Jorden knap et Sted</firstline>
+    <source pages="69-72"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Der er paa Jorden knap et Sted,
+Man drikke kan sit Glas i Fred,
+Hvor Folk ei nappes, eller slaaes,
+Undtagen her hos os.
+Og slaaes man ei, saa spytter man
+I Næverne i mangt et Land,
+Og det er næsten nok saa galt,
+Som om man sloges alt.
+
+I Sommer i Champagne fik
+Sig Tydsken ret en deilig Drik,
+Og mangen Tydsker drak saa stivt,
+At Vinen blev ham Gift.
+Men Frankrigs <w>Kellerman</w> kom da,
+Og fulgte dem i Hast derfra,
+Og godt og vel, om de og først
+Fik stukket deres Tørst.
+
+Men knap faaer Fransken dem paa Dør,
+Før han sit Gienbesøg dem giør,
+Og giør sig selv betalt ved Rhin
+For sin Champagneviin.
+I Klosterkielderne var der
+En deilig Mængde Sechziger,
+Da tydske Munke denne Skat
+Med Smerte bad god Nat.
+
+Dog at de Franske Vinen drak
+Fra Hochheim og fra Bacharach,
+Det havde jeg i deres Sted
+Nok uden Tvivl giort med.
+Men at de hugge Ranker om,
+Det synes jeg slet ikke om,
+Og derfor er det dem tilpas,
+Ifald det gaaer dem fias.
+
+Betragt nu dette Orlogsfærd,
+Hvad Lærdom kan du finde der?
+At du skal passe paa din Viin,
+Imedens den er din?
+Thi mon ei Tydsklands Munke fandt
+Det gamle Ordsprog alt for sandt?
+Heel ofte giemmer den til Kat,
+Der giemme vil til Nat.
+
+Dog vi, som sidde her saa trygt,
+Og nyde Vinen uden Frygt,
+Endnu en Lærdom faae vi her;
+Dog den veed alt enhver:
+Den Mand, vi skylde denne Fred,
+Og heele vor Lyksalighed,
+Erindres maae med bredfuldt Maal!
+Vor gode Konges Skaal.
+</body>
+</poem>
+
+<poem id="rahbek2001061304">
+<head>
+    <title>Vennesang</title>
+    <firstline>Lad os drikke</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="73-74"/>
+    <keywords>drikkevise</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Lad os drikke
+Vinen, vi som kan;
+Mangen Stakkel har den ikke,
+Men maae drikke Vand.
+
+Værer glade!
+Venner samles her;
+Ynker den, som maae forlade
+Hver, som er ham kiær.
+
+Ryd hver Glæde,
+Før den svinder hen!
+Du for seent da maae begræde,
+Du miskiendte den.
+
+Venskab sanker
+Os til Glæde her;
+Bort med alle mørke Tanker!
+Glæde Maalet er.
+
+Ingen svige
+Dette ædle Maal!
+For hver Broder og hans Pige
+Være denne Skaal.
+</body>
+</poem>
+
+<poem id="rahbek2019091926">
+<head>
+    <title>Vise for det norske litteraire Selskab</title>
+    <firstline>Man trættes nu saa meget her</firstline>
+    <source pages="75-77"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Man trættes nu saa meget her,
+Hvad Klub den allerbeste er,
+Og meer end een har sagt paa Sang,
+At hans har første Rang;
+Jeg vil ei dømme mellem dem,
+Men elske Frieheds gamle Hiem,
+Og drikke glad, med bredfuldt Maal,
+Det norske Selskabs Skaal.
+
+Vel sidde Damer ei i Ring,
+Som Giække flane kan omkring,
+Da Nordens ægte Døttre ei
+Vil gaae paa Daarers Vei;
+Og vi fra Loth den Varsel fik,
+At Qvinder due ei ved Drik;
+Thi skiænker Brødre bredfuldt Maal
+Til norske Selskabs Skaal.
+
+Her giælder intet Stammetræe,
+Her agtes ei bemidlet Fæe,
+Her vrimler ei med Stiernemænd,
+Her sidder Ven hos Ven.
+Det ene Hjertets Adel er,
+Der giver Rang og Adgang her;
+Thi tømmer Brødre bredfuldt Maal
+Til norske Selskabs Skaal.
+
+Den ædle Mand, som samled' os,
+Sang nøisom flittig Ringheds Roes,
+Og bød os følge Fædres Skik
+I Sind og Sang og Drik.
+O lad os iile i hans Spor,
+Og samles tit ved dette Bord,
+Og glade tømme bredfuldt Maal
+Til norske Selskabs Skaal.
+</body>
+</poem>
+
+<poem id="rahbek2001053006">
+<head>
+    <title>Der var engang en tapper Mand</title>
+    <firstline>Der var engang en tapper Mand</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="78-80"/>
+    <keywords>drikkevise</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Der var engang en tapper Mand,
+Der Teucer monne hedde,
+Han joges af sit Fædreland
+Alt ved sin Faders Vrede.
+Hendrevet til en fremmed Strand
+Sit Folk han sammenkaldte;
+Og med sit Glas i Haanden han
+Saaledes til dem talte.
+
+I Brødre! hidtil meget ondt
+Med mig I have døiet;
+Og det troeløse Hellespont
+Ved Vinterstide pløiet;
+Nu teer jer ogsaa her som Mænd,
+En Polak lides ikke;
+I Morgen seile vi igien,
+I Aften vil vi drikke.
+
+Paa denne Verdens falske Hav
+Vi samtlig jo omdrive.
+Det Raad han sine Brødre gav,
+Jeg vil os alle give!
+Hver Gang man naaer en Ankerplads
+Hvor deilig Drikke vanker,
+Man hvile bør af sin Seilads,
+Og villig kaste Anker.
+
+Og da dog ingen slipper frie
+For samme Hav at pløie,
+Held den, der stundum kan, som vi,
+Forglemme Sorg og Møie;
+Gid hver, som sørger paa vor Jord,
+Og ei sin Sorg fortiener.
+Sad froe som vi, ved sligt et Bord,
+Og mellem slige Venner.
+</body>
+</poem>
+
+<poem id="rahbek2019091928">
+<head>
+    <title>Drikkevise</title>
+    <firstline>Bort, I Frieheds Prædikanter!</firstline>
+    <source pages="81-82"/>
+    <keywords>drikkevise</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Bort, I Frieheds Prædikanter!
+Lader mig engang i Roe;
+Hvad skal Friehed til, I Fianter!
+Naar man uden den er froe?
+I som mig vil giøre frie,
+Seer de Baand, jeg holdes i.
+
+Evan! Evan! er min Fyrste!
+Længe leve Viinens Gud!
+Hvo mig tiener, maae ei tørste!
+Dette er hans første Bud.
+Frieheds Mænd! hvad synes I
+Om de Baand, jeg lever i?
+
+Skiønne Venus er hans Dronning,
+Længe leve hun og han!
+Kiærlighed er Glædens Honning,
+Uden den var Vinen Vand!
+Troer I, jeg vil være frie
+Fra de Baand, jeg lever i?
+
+Saares jeg af Skiæbnens Pile,
+Er ei Verden mig tilpas,
+Byder hun min Chloris smile,
+Og han rækker mig sit Glas.
+Daarer, Daarer, synes I,
+At jeg vandt, om jeg blev frie?
+
+I hvert Glas lad Druen rinde!
+Hvert til Bunds skal tømmes ud!
+Leve Kiærligheds Gudinde!
+Leve, leve Vinens Gud!
+Disses Baand velsigne vi!
+Lad os leve, døe deri.
+</body>
+</poem>
+
+<poem id="rahbek2001061301">
+<head>
+    <title>Drikkevise</title>
+    <firstline>Kom Brødre! lad os drikke!</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="83-85"/>
+    <keywords>drikkevise</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Kom Brødre! lad os drikke!
+Her Sandhed boer!
+Vi plage Hiernen ikke
+Med tomme Ord.
+Nei! uden Tid at spilde
+Vi gaae til Viisdoms Kilde;
+Kun der boer sand Philosophie,
+Alt andet er kun Narrerie!
+Thi drikke vi!
+
+At vi er skabt til Glæde,
+Vi lære her;
+At Tossen kun bør græde,
+Staaer ogsaa der.
+Al Viisdom er <i>in Nuce</i>
+I vore Glas til Huse;
+Kun der boer sand Philosophie,
+Alt andet er kun Narrerie!
+Thi drikke vi!
+
+Enhver, som sig vil plage
+Med Politik,
+Maae som en Nar forsage
+Den ædle Drik.
+Men vore Glas os lære,
+At lade saadant være;
+Kun der boer sand Philosophie,
+Alt andet er kun Narrerie!
+Thi drikke vi!
+
+Mon Jacobiner ere
+At frygte her?
+Det vore Glas os lære;
+Hvad see vi der?
+Hver Klub, hvori man drikker,
+Er for sligt Galskab sikker.
+Kun der boer sand Philosophie,
+Alt andet er kun Narrerie!
+Thi drikke vi!
+</body>
+</poem>
+
+<poem id="rahbek2001061312">
+<head>
+    <title>Selskabssang</title>
+    <firstline>De Mennesker vide saa lidt, hvad de vil</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="86-87"/>
+    <keywords>drikkevise</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+De Mennesker vide saa lidt, hvad de vil;
+Den blinde Gudinde den beile de til;
+Een ønsker sig riig, og en anden sig stor;
+Mon Riigdom og Høihed har saadant et Bord?
+
+Den Rige forskriver sig dyrere Viin,
+Men drikker den aldrig saa glad, som jeg min;
+Paa Bordet hans Kok Sneese Retter har slæbt,
+Men hos staaer hans Doctor, og skriver Recept.
+
+De Hykklere myldre som Myrer om ham,
+Og mangen en Naade, saa stolt og saa stram;
+De søge om Glæde, men finde den ei;
+Thi Kiedsomhed staaer bag hver Stol, som Lakei!
+
+Til blinde Gudinder maae beile, hvo vil,
+Den jeg skal tilbede, maae see, og see mild.
+Min Viin er min Riigdom, vort Venskab min Rang,
+Mit Maaltiid maae krydres med Spøg og med Sang.
+
+Til Glæde, til Glæde er Løsenet her,
+Den gladeste altid den viseste er!
+Saa fylder da Glasset til Skummende Maal;
+Vi Glade, vi viise, vi Venner! vor Skaal!
+</body>
+</poem>
+
+<poem id="rahbek2001052701">
+<head>
+    <title>Candidat-Vise</title>
+    <firstline>For Studiegaardens Dogmatik</firstline>
+    <notes>
+        <note>Melodi som Rahbeks <xref poem="rahbek2001061307"/>.</note>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="88-90"/>
+    <keywords>hagehorn,anakreon,vibe,horats,drikkevise</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+For Studiegaardens Dogmatik
+<i>Laudabilem</i> i Dag du fik;
+Nu, Broder! maa du lade see,
+Hvor du dig her kan tee.
+Men den Examen practisk er,
+Du dig maae underkaste her;
+Hvad lærer da vor Dogmatik?
+Vær troe i Ord og drik!
+
+<i>Quid profiteris</i> i Moral?
+Kan du i Tide være gal?
+Ei er dens Viisdom meget værd,
+Der ikke det har lært.
+Kom, lee, og syng, og spøg med mig,
+I Morgen er jeg klog med dig;
+Saa Fader Hagedorn har sagt;
+Hav dette vel i Agt!
+
+Nu <i>Domini Collegæ</i>, vi
+Ham prøve in <i>Exegesi</i>,
+Om han har læst Anacreon,
+Og fattet Mandens Aand.
+Dog han og Wibe, og Horaz
+Fortolkes bedst ved fulde Glas,
+Thi vis paa det, som hos dig staaer,
+Om du de tre forstaaer.
+
+Nu <i>Reverendi Patres</i>, I,
+<i>Et docti Assessores</i>, vi,
+Vil letteligen eenes om
+Herr Candidatens Dom.
+Nu heele Facultetet istem:
+<i>Laudabilem! Laudabilem!</i>
+Og tømme derpaa bredfuldt Maal
+Til Candidatens Skaal.
+</body>
+</poem>
+
+<poem id="rahbek2001053005">
+<head>
+    <title>Drikkevise</title>
+    <firstline>Der var en Lov i Grækenland</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="91-92"/>
+    <keywords>drikkevise</keywords>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Der var en Lov i Grækenland,
+Som giør sin Autor Ære,
+Og det er ilde, den og han
+Saa reent forglemt skal være!
+Hvo kommer i Symposia,
+Skal drikke, eller gaae derfra.
+
+Men naar man grant beseer den Sag,
+Den vidner dog tillige,
+At mangen een i deres Lag
+Har havt for Skik sin Pligt at svige;
+Thi hvortil var et saadant Bud,
+Naar hver sit Glas drak villig ud?
+
+Vi havde ingen saadan Lov,
+Deraf vi os berømme,
+Den har ei Folk som vi behov,
+Der ei sin Pligt forsømme;
+Med al Respekt for Grækerne
+Er vi dog meget viisere.
+</body>
+</poem>
+
+<poem id="rahbek2001061319">
+<head>
+    <title>Drikkevise for et Mandfolkelag</title>
+    <firstline>Skal den hedde viis, som det ei rører</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="93-94"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Skal den hedde viis, som det ei rører,
+Der behersker Daarers tomme Sind,
+Mig fremfor de syv det Navn tilhører,
+Mig er Guldet Muld, og Æren Vind;
+Lykken mig ei Rang, ei Penge gav;
+Jeg er lige glad, jeg leer deraf.
+
+Jeg har seet den riige blegne, bæve,
+Naar hans Actiebreve steeg, og faldt,
+Skulde jeg i slig en Angest svæve,
+Var min Riigdom lidt for dyrt betalt.
+Nei min Skat, min Viin har stadigt Værd,
+Den er evig god, mig evig kiær.
+
+Skulde jeg mig bukke og credentse.
+For at faae mig giøre til fornem Mand,
+Jeg misunder ingen Excellence,
+Han maae mellem Fiender drikke Vand;
+Og jeg sidder her i Vennekreds
+Ved et godt Glas Viin, og vel tilfreds.
+
+Bacchus fra de Stores Tafler jages,
+Da man veed, han aabner Hierterne,
+Og der vilde smukke Ting opdages,
+Kunde man i somme Stores see;
+Eene den, hvis Siæl er reen og frie,
+Den bør drikke Viin, thi drikke vi.
+
+En Ting fattes kun i vores Glæde,
+Saa bød den al Jordens Glæde trods,
+Vare vore Skiønne her tilstæde,
+Klinkede, drak med, og kyste os.
+De erindres maae med bredfuldt Maal,
+Skiænk, og klink, og drik din Donnas Skaal.
+</body>
+</poem>
+
+<poem id="rahbek2019091934">
+<head>
+    <title>Selskabssang</title>
+    <subtitle>i det ny Aar 1794.</subtitle>
+    <firstline>De Dage bortile med Lynildens Fart</firstline>
+    <source pages="95-96"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+De Dage bortile med Lynildens Fart;
+Men Daaren kun finder, de flygte for snart;
+Han klager jo ogsaa saa mangen en Gang,
+At Tiden ham falder saa græsselig lang.
+O Venner! o Venner! vi kiende dens Værd,
+Og hverken for kort eller lang den os er.
+
+Lad Glædskabens Dage, som Øieblik flye;
+De iile kun bort at afvexle med ny;
+Og du, som de flygtendes Bortgang fortrød,
+Veed du, hvad den kommende har i sit Skiød.
+Hver Time, hver Time er Glædernes Væld,
+For hver, som dem søger med redelig Siæl.
+
+Een Time forsødes ved vel fortient Roe,
+Een er os ved veldædig Virksomhed froe,
+Een flyer i tillokkende Eensomhed hen,
+Een svinder saa sødt hos en udkaaren Ven.
+Og denne, og denne os lønner vor Dag
+Ved Spøg, og ved Sang, og ved vennehuldt Lag.
+
+Saa flyer da, I Timer, og Dage, og Aar,
+Den Fryd, I os skiænkte, os Fremtiden spaaer,
+Det Glædernes Bægger, som Venskab os gav,
+Det fyldes kun meer, naar man drikker deraf.
+O Venskab! o Venskab! med skummende Maal
+Erkiændtlige drikke vi samtlig din Skaal.
+</body>
+</poem>
+
+<poem id="rahbek2001061322">
+<head>
+    <title>Drikkesang</title>
+    <firstline>Vinen er i Fryd og Smerte</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="97-98"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Vinen er i Fryd og Smerte
+Stedse en oprigtig Ven,
+Det mig lang Erfaring lærte;
+Ofte jeg har prøvet den;
+Herlig trøster den i Nød,
+Og giør Glæden dobbelt sød.
+
+Elskte Flaske, hvis du kunde
+Evig være lige fuld,
+O hvor var jeg at misunde!
+Jeg dig solgte ei for Guld.
+Dog den Tanke trøster mig,
+Man paa ny kan fylde dig.
+
+Gid jeg aldrig her Live
+Dig maae savne, ædle Viin!
+Du min Ven bestandig blive,
+Som jeg evig bliver din.
+Flaske! her er bredfuldt Maal,
+Det er evigt Venskabs Skaal.
+</body>
+</poem>
+
+<poem id="rahbek2001061302">
+<head>
+    <title>Selskabssang</title>
+    <firstline>Lad miltsyge Daarer bagtale vor Jord!</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="99-100"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Lad miltsyge Daarer bagtale vor Jord!
+Jeg finder den ikke saa slem, som man troer;
+Thi spire end hist og her Tornene frem,
+Da smile de herligste Roser blandt dem,
+Og Sagen er kun, som vor Vessel har sagt:
+Bryd Rosen, men tag dig for Tornen i Agt!<note>Se Johan Herman Wessels <xref poem="wessel2002092206"/>.</note>
+
+At Hofmænd os svige med slibrige Ord,
+Det volder man selv, som de Rørkiæppe troer;
+En bedre Beskytter jeg mig har udvalgt,
+Som aldrig hengivne Climater undfaldt;
+Herr Bacchus, det er min Patron og min Ven,
+Han lover mig Fryd, og han skiænker mig den.
+
+Basil maae bagtale, det vide vi jo,
+Og det er naturligt, at Tosser ham troe;
+De Stakler maae gierne miskiende mit Værd,
+Naar kun mine Venner beholde mig kiær;
+At elskes af dem, er min Stolthed og Lyst,
+Sødt svinder al Kummer ved vennehuldt Bryst.
+
+Naar Lykkens Gudinde er grusom og vred,
+For Kiærligheds Altere knæler jeg ned,
+Og lønner min Donna mig øm med et Smiil,
+Saa maae Frue Fortuna see surt, om hun vil.
+Er Kys giør mig mægtig, og fornem, og riig,
+Og Jordens Monarker er Smaafolk mod mig.
+
+Det være en Tosse, der laster vor Jord,
+Saa længe den qvægende Drue der groer,
+Saa længe ei Venssab iblandt os døer ud,
+Og Pigerne lyde den vingede Gud!
+Thi fylder da Glasset til skummende Maal,
+Til Vinens og Venskabs og Kierligheds Skaal.
+</body>
+</poem>
+
+<poem id="rahbek2019091937">
+<head>
+    <title>Selskabssang</title>
+    <firstline>Livet man med Grund kan kalde</firstline>
+    <source pages="101-103"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Livet man med Grund kan kalde
+Lykkens store Lotterie,
+Skiøndt der mange Nitter falde,
+Vindes der og tit deri;
+Men de fleeste slet kun kiende
+Nitter fra Gevinsterne.
+Ivrig efter hiine rende,
+Og dem for Gevinst ansee.
+
+Naar han blot kan Penge vinde,
+Mangen troer sig lykkelig;
+Snart, o! snart han skal befinde,
+Penge blot kan giøre riig;
+Disse kun en Frilod ere,
+Som paa ny indsættes maae,
+Og da kan det stundum være,
+At man faaer Gevinst derpaa.
+
+Stormands Gunst, og Rang, og Ære,
+Hiin af Hiulet glad uddrog,
+Troede Lykkens Søn at være,
+Lærte snart, han sig bedrog.
+Daarer! I, som deraf bramme,
+I har ikkun faaet en Nit,
+Og I Stakler med det samme
+Gik de store Lodder qvit.
+
+Han en god Gevinst har vunden,
+Der har faaet en troefast Ven,
+Og hvo ikke den har funden,
+Ei alvorlig søgte den.
+Men den sande lykkelige,
+Frue Fortunas Skiødesøn,
+Er den Mand, der vandt en Pige,
+Øm og ædel, huld og skiøn.
+
+Venner! vi, som sande kloge,
+Knæled for Gudindens Fod;
+Ingen Nitter vi uddroge;
+Frilod blev ei vores Lod.
+Hvo ei vundet har en Pige,
+Han dog vandt en troefast Ven!
+Lykkens Skaal! vi lykkelige?
+Skaal for dem, vi fik af den!
+</body>
+</poem>
+
+<poem id="rahbek2019091938">
+<head>
+    <title>Punsvise</title>
+    <subtitle>Efter Voß</subtitle>
+    <firstline>Brødre! hører Stormen tude</firstline>
+    <notes>
+        <note unknown-original-by="voss" />
+    </notes>
+    <source pages="104-106"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Brødre! hører Stormen tude,
+Vintren yder al sin Harm;
+Lad den harme sig derude,
+Her vi os vil drikke varm.
+Den sig ei til os skal nærme!
+Vi med Puns os vil beskiærme;
+Liv og Varme boer i Puns;
+Skiænk og drik! men drik til Bunds!
+
+Held den Mand, som først optænkte
+Denne skiønne Qvægedrik,
+Jorden han en Nectar skiænkte,
+Som Olympens overgik.
+Om man frydes, eller lider,
+Er den god til alle Tider,
+Trøst og Glæde boer i Puns.
+Skiænk og drik! men drik til Bunds.
+
+Hvo kan dens Opfinder nævne,
+Vi hans Skaal vil drikke her.
+Ei en Taar vi ville levne;
+Ærlig han den Skaal er værd.
+Veed da ingen, hvad han hedde?
+Vi i vore Glas vil leede;
+Sandhed boer saa tit i Puns,
+Søg da der, men søg til Bunds.<note><i>Bunds:</i> kilde ulæselig.</note>
+
+Dog hans Navn giør ei til Tingen,
+Skaalen lige godt er meent;
+Bedre end aldeles ingen.
+Er den Prosit, som kom seent;
+Leve, leve vor Veldæder!
+Han, vi skylde disse Glæder.
+Leve han, der opfandt Puns!
+Klink og drik! men drik til Bunds.
+
+Britter! I som altid bramme,
+I paaskiønne siældent Værd!
+Seer, vi eder giør til Skamme,
+Skiønne paa Fortjenester.
+Punsens Fader I forglemte,
+Vi hans Lovsang froe istemte;
+Vi, kun vi, fortiens Puns!
+Klink! og drik! men drik til Bunds.
+</body>
+</poem>
+
+<poem id="rahbek2001061307">
+<head>
+    <title>Drikkevise</title>
+    <subtitle>1790</subtitle>
+    <firstline>Nu bort med alskens Politik</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="107-109"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Nu bort med alskens Politik,
+Og lad os passe vores Drik!
+Man ærger dog ei Tydsken bort,
+Om man sig ærgrer sort;
+Ei heller reise vi herfra
+Med Nordenskiold til Africa;
+Den Reise er os lidt for lang,
+Og her er Viin og Sang,
+
+Skiøndt nok en Keiser nys sov hen,
+De vælge dog knap mig igien;
+Saa kommer det mig ud paa eet,
+Hvo ellers bliver det.
+Om Tyrken nu fik Last og Skam,
+Saa var det jo tilpas til ham;
+Han holder Kiønnet i Arrest,
+Og hader Viin, som Pest,
+
+I Brabant er der Borgerkrig,
+De nappes tæt i Frankerig;
+Det tager jeg mig lidet nær,
+Naar vi forliges her.
+Men gid den Krig dog ikke naae
+Til Medoc, Pontac, og Bourdeaux,
+Til Epernay, Chalons, og Rhin,
+Hvorfra vi faae vor Viin.
+
+Hvad gaaer os stakkels Polen an?
+Vi det dog ikke hielpe kan.
+Lad ingen Polak taales her!
+Det meget bedre er!
+Vær troe i Ord, og troe i Drik!
+Var vore Fædres Politik;
+Nu vise hver ved dette Bord,
+Han gaaer i deres Spor!
+</body>
+</poem>
+
+<poem id="rahbek2001062308">
+<head>
+    <title>Selskabssang</title>
+    <firstline>Verden er, som man den tager</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="110-111"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Verden er, som man den tager,
+Det man af Erfaring seer,
+Der, hvor Daaren modløs klager,
+Tit den Viise roelig leer.
+Jordens meeste Modgang er
+Ei en rynket Pande værd.
+
+Mangen eier Millioner,
+Og er dog ei lykkelig;
+Mangen en, som bærer Kroner,
+Bytted hierteglad med mig.
+Jordens meeste Lykke er
+Ei eengang et Ønske værd.
+
+Kærlighed og Venskab eene
+Udgiør Livets sande Lyst;
+Disse tvende kun fortiene
+Ønsker fra den Kloges Bryst.
+O! hvad Lykke savner den,
+Der har Pige, der har Ven?
+
+Tit nedsteeg du at oplive
+Vore muntre Vennelag;
+Venskab! du vor Skytsaand blive
+Til vor allersidste Dag!
+Bliid du smile til enhver,
+Som er dine Glæder værd.
+</body>
+</poem>
+
+<poem id="rahbek2019091941">
+<head>
+    <title>Drikkesang</title>
+    <firstline>Verden til Feide nu udruster sig</firstline>
+    <source pages="112-113"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Verden til Feide nu udruster sig,
+Blandt Konger og Fyrster og Lærde er Krig;
+Een strider med Pen, og en anden med Sværd.
+Held os, som kan sidde saa fredelig her!
+
+Hvis Kongerne flittig forsamlede sig,
+Og drak ved hver Tvist et Glas Viin paa Forliig,
+Fik Jorden en evig og ænskelig Fred,
+Og Viintapperlauget floreerte derved.
+
+Den Malurt, den Malurt, som kommer i Blæk,
+Maae giøre den Lærde saa stridbar og kiæk,
+Men hvis han først Smagen paa Viin kunde faae,
+Han holdt sig til den, og lod Blækhornet staae.
+
+Jeg lever i Fred med den samfulde Jord,
+Min eeneste Fjende staaer for mig paa Bord,
+Med Flasken jeg fører evindelig Krig;
+Og var jeg ei stærkest, saa fældte den mig.
+
+Til Vaaben! til Vaaben! og strider som Mænd,
+Der frygte ei Fiende, og svige ei Ven!
+Den falder med Ære, som falder i Krig,
+Nu Brødre! nu speiler jer alle i mig.
+</body>
+</poem>
+
+<poem id="rahbek2019091942">
+<head>
+    <title>Sanct Hans Vise</title>
+    <firstline>Vor Frue og Sanct Hans til Priis</firstline>
+    <source pages="114-116"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Vor Frue og Sanct Hans til Priis
+Det var de gamle Fædres Viis,
+At tye til Kirstens Kilde.
+Det Vand ansaae de som en Skat,
+Som de Sanct Hans og Frue Nat
+Andægtig drak af Haand og Hat,
+Det var et mavert Gilde!
+
+I vores lutheranske Tid
+Vi skareviis vel drage did,
+Men ei som Pillegrime;
+Ei vandre vi paa nøgen Fod,
+Og saare siælden Sindet stod
+Til Andagt, Bedring eller Bod,
+Naar vi om Kilden stime.
+
+I trængselfuld og støvet Gang
+Vel der tre fire Timer lang
+Sig vore Damer steege;
+Men see kun, see paa deres Færd,
+Naar op og ned de flane der,
+Og let du seer, det ikke er,
+For deres Kiød at spæge.
+
+Nu tager man ved Dagen did,
+Og skulde een ved Nattetid
+Ved Kilden sig indfinde,
+Da kan man lide paa, at han
+Som en oprigtig Lutheran,
+Ei kom der for at drikke Vand,
+I hvad han har i Sinde.
+
+Men Brødre! Natten os er nær,
+Thi maae vi alle vise her,
+Vi Lutheraner ere!
+Til Tegn vi hade Pavedom,
+Her intet Vand paa Bordet kom,
+I lutter Viin gaaer Skaalen om
+Til Lutherdommens Ære.
+</body>
+</poem>
+
+<poem id="rahbek2001051302">
+<head>
+    <title>Drikkesang</title>
+    <firstline>Alting paa Jorden er kun Fias</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="117-119"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Alting paa Jorden er kun Fias,
+Viise Kong Salomon fortæller;
+Mig er vel alting ei tilpas,
+Men saa forkeert dog ikke heller.
+Kiærlighed, Venskab og Munterhed
+Gjorde jo han til Daarskab med.
+
+Men der har nu hans Majestet
+Med andre Jøder holdet Taffel,
+Ingen har snakket eller leet,
+Men ikkun gabt paa Kniv og Gaffel;
+Det er jeg lettelig eenig med,
+Saadant et Lag er Daarlighed.
+
+Venner han og knap funden har,
+Det giør jo Konger meget siælden;
+Venskab til Hove gierne var
+Mading at lokke Folk i Fælden.
+Hvo ei af andet Venskab veed,
+Det vel maae kalde Daarlighed.
+
+Vist nok var Salomon viis og klog,
+Men ikke just til alle Tider;
+Tusende Koner han sig tog,
+Kiærlighed ingen Deeling tider;
+Hvis var da Skylden, om han fandt,
+Kiærlighed og var idel Tant?
+
+Muntre vi deele Venners Lyst,
+Ømme vi deele deres Smerte;
+Saarer Cupidos Piil vort Bryst,
+Give vi Hierte bort for Hierte;
+Vi af en glad Erfaring veed,
+Alting er ikke Daarlighed.
+
+Havde blot Salomon sat som vi,
+Drukket sit Glas blandt glade Venner,
+Sikkert han havde stemmet i,
+Dersom han Navn af Viis fortiener.
+Alting paa Jorden Daarskab er
+Paa Elskov Viin og Venskab nær.
+</body>
+</poem>
+
+<poem id="rahbek2001062302">
+<head>
+    <title>Selskabssang</title>
+    <firstline>I Ungdoms Vaar</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="120-121"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+    I Ungdoms Vaar
+  Groe Roser allevegne;
+    Snart den forgaaer,
+  Og disse hastig blegne.
+Lad os da nyde Vaarens Lyst,
+  Førend dens Dage forsvinde,
+Pryde med Roserne vort Bryst,
+  Før vi dem falmede finde.
+
+    Een er der kun,
+  Som visner ingensinde;
+    Til sidste Stund
+  Vi lige skiøn den finde.
+Billigst den groer i Ungdoms Vaar,
+  Hvo da forstaaer den at dyrke;
+Den ham i alle Livets Kaar
+  Herlig vil qvæge og styrke.
+
+    Hver troefast Ven
+  Maae denne Rose hylde,
+    O! det er den,
+  Vi vore Glæder skylde.
+Venskab den skiønne Rose er,
+  Den er vor Fryd og vor Lykke
+Evig den blomstre blandt os her,
+  Eengang vor Gravhøi den smykke.
+</body>
+</poem>
+
+<poem id="rahbek2001060301">
+<head>
+    <title>Drikkesang</title>
+    <firstline>Hvis jeg var riig, saa raabe alle Munde</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="122-124"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Hvis jeg var riig, saa raabe alle Munde,
+Og saa forstod dog kun at være det;
+Den Kunst, som alle og enhver vil kunde,
+Den kan de fleeste gierne meget slet.
+
+Hvis Stax var riig, han blæste Staden noget
+Og kiøbte sig en prægtig Herregaard,
+Det blev da kun en Lykke for hans Foged,
+Der blev hans Eftermand om nogle Aar,
+
+Var Vindsak riig, med sex han vilde kiøre,
+Og blev Baron, om ikke Excellents;
+Da maatte vi ham Reverentser giøre,
+Og lee ham ud ved hver en Reverents.
+
+Var Storhans riig, der skulde ikke være
+Et Slot, som hans i Florents eller Rom!
+Hvad hialp det ham? hvad kan jeg ønske mere,
+Hvor kun min Ven, min Viin, og jeg har Rum?
+
+Hver har sin Orm; som Drager nogle ruge
+Paa det, som andre unydt kaste hen;
+Men var jeg riig, jeg vidste det at bruge,
+At være viis, og mine Brødres Ven.
+
+Jeg lod mig da udsøgte Vine komme
+Fra hver en Egn, hvor Druen ægte groer,
+Og store Flasker, som blev aldrig tomme,
+Stod flokkeviis omkring mit giæstfrie Bord.
+
+Hver munter Fyr velkommen skulde være,
+Og muntrere gaae fra min Giæstesal;
+Den sørgende indbød jeg did at lære,
+At Verden dog ei er en Jammerdal.
+
+Da skulde Spøg og munter Sang oplive
+De fulde Glas, og Venskab throne der,
+Mit Huus et Glædens Tempel skulde blive,
+Jeg Æskulap imod Bekymringer.
+
+O! vilde mig den blinde Gud bønhøre,
+Og giøre mig saa riig, som mangen Nar!
+Hvo skiønsom nød det smaa, fik tit det større,
+Kom, lad os drikke op det lidt, vi har.
+</body>
+</poem>
+
+<poem id="rahbek2001062305">
+<head>
+    <title>Drikkevise</title>
+    <firstline>Paa Friehed høres alle skrige</firstline>
+    <source pages="125-127"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Paa Friehed høres alle skrige,
+Skiøndt faa kun veed, hvad det vil sige,
+Mit Hierte og for Friehed slaaer;
+Men uden Lov og Dom at hænges,
+Derefter jeg slet ikke længes,
+Min Hu til anden Friehed slaaer.
+
+For de fordømte smaae Carafler,
+Der herske paa de Stores Tafler,
+Jeg fremfor alt vil være frie;
+Og endnu mindre vil jeg tigge
+Hver uset Draabe, jeg skal drikke.
+Af en Hansqvast i Liberie.
+
+Frie vil jeg være, mens jeg spiser
+For al den Kiævlen om Aviser,
+Den ny Pastil, og Politik;
+Er det ei nok at vore Dage
+Er skabt til Arbeid og til Plage?
+Vor Aften er til Roe og Drik.
+
+For Damerne, jeg nægter ikke,
+At i det Lag, hvor jeg skal drikke,
+Jeg allerhelst befriet er.
+At kiede Damer, lader ilde,
+Og det end værre klæde vilde,
+Hvis de sig kunde more der.
+
+At vore Vægge, vore Dørre
+Er frie for Tunge og for Øre,
+Det er mig og en Hovedsag;
+At Ven kan frit blandt Venner skiemte,
+Da hvert uveiet Ord man glemte,
+Saasnart man gik af Vennelag.
+
+Hver, som vil denne Friehed hylde,
+Med mig sit Glas til Randen fylde,
+Og med sin Naboe klinke froe:
+I dette deres gamle Sæde
+Gid Venskab, Ærlighed, og Glæde,
+Og saadan Friehed stedse boe!
+</body>
+</poem>
+
+<poem id="rahbek2019091947">
+<head>
+    <title>Aprilsvise</title>
+    <firstline>Vi April bestandig rende</firstline>
+    <source pages="128-130"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Vi April bestandig rende
+Fra vor Vugge til vor Grav;
+Ofte det, hvorfor vi brænde,
+Vi en prægtig Titel gav;
+Men see vi lidt nøie til,
+Løbe vi dog kun April.
+
+Andre Børn April at sende
+Gammelt Barnemoerskab er;
+Vi saa nødig vil bekiende,
+Det og tit os Gamle skeer;
+Ofte, naar vi Børn belee,
+Er vi større Børn, end de.
+
+Hvo som alt for sikkert lider
+Paa en Piges Ord og Smiil,
+Han erfarer sommetider,
+Han er bleven viist April.
+Elskovs Gud - den Sag er klar -
+Barnet end i Ærmet har.
+
+Manden ret April at skikke,
+Er de Stores bedste Leeg;
+Held den Mand, der troer dem ikke,
+Eene ham de aldrig sveeg.
+Andre faae hos dem kun Snak,
+Stundum og en Pris Tobak.
+
+Ilde vises stakkels Gamle
+Tit April af Rigdoms Gud;
+Naar de til en Arving samle,
+Der til Giengield leer dem ud.
+Vore Arvinger skal see
+Vi er meget klogere.
+
+Vi som efter Glæde ile,
+Vi gik ei April i Dag;
+Viin og Ynde os tilsmile,
+Krydre vores Vennelag.
+Gid vi aldrig gaae April
+Ad det Maal, vi sigte til.
+</body>
+</poem>
+
+<poem id="rahbek2001053003">
+<head>
+    <title>Drikkesang</title>
+    <firstline>De gode Gamle sang saa tit</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="131-133"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+De gode Gamle sang saa tit
+    Om Lethe Flod,
+At hvo, som deraf smagte lidt,
+Han blev hver Sorg og Grille qvit,
+Og mangen Gang min Appetit
+    Til Lethe stod.
+Jeg vidste ikke, hvor den laae,
+Jeg ellers did var gaaet paa
+    Min Fod.
+
+Jeg pønsed da paa denne Tant
+    Ved et Glas Viin,
+Og efterhaands, som Vinen randt,
+Hver Smerte og hver Grille svandt,
+I Druens ædle Saft jeg fandt
+    Min Medicin.
+Og tit jeg i den Tanke stod,
+At hine Gamles Lethe Flod
+    Var Viin.
+
+Men nu jeg grant indseer, og veed,
+    Den var det ei;
+Hist druknede ei blot Fortred,
+Men alle Livets Glæder med,
+Og Venskab selv og Kierlighed
+    Gik samme Vei!
+Mon den, der ei er Muselman,
+Vel sligt om Vinen sige kan?
+    Ih nei!
+
+Her spiller Viin paa gladen Bord
+    Al Sorg svandt hen;
+Men dobbelt Fryd og Venskab groer,
+Og slog end Evan os til Jord,
+Blev dog en Skaal vort sidste Ord
+    For Møe og Ven!
+Og aldrig før opvaagned' vi,
+Før samme Skaal vi stemte i
+    Igien.
+</body>
+</poem>
+
+<poem id="rahbek2001061309">
+<head>
+    <title>Selskabssang</title>
+    <firstline>At vi ere Børn tilsammen</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="134-136"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+At vi ere Børn tilsammen;
+Raaber mangen Viismand paa;
+At han trænger selv til Ammen,
+Han dog siælden vil tilstaae.
+Vi beskeednere vil være,
+Vi vil give Sandhed Ære,
+Og vor Barndom selv tilstaae.
+
+Voxne Børn vil ogsaa have
+Deres Leeg at mores ved;
+Een har Glæde af at grave
+Sig blandt sine Grunker ned;
+Guld er Vellyd for hans Øre,
+Jeg vil meget heller høre,
+Fyldte Glasses muntre Klang.
+
+Een maae leege med de Store,
+Dersom han skal være glad;
+Aldrig ham et Lag kan more,
+Hvor ei Excellencer sad.
+Bort, langt bort med alle Store,
+Hvor vi Smaafolk os skal more,
+Lige Børn de lege bedst.
+
+Andre vil igien saa gierne
+Gaae paa hver Mands høire Haand;
+Leege allerhelst med Stierne,
+Ordenstegn, og Ridderbaand.
+Stiernens Glands kun dem fornøie!
+Men min Piges skiønne Øie
+Har langt anden Glands for mig.
+
+Bacchus og Cupido ere
+Begge Børn, som hver Mand veed;
+De vort Leegeselskab være,
+Venskab leger ogsaa med.
+Naar vor Leeg os bringer Glæde,
+Vi jo gierne Børn kan hedde.
+Skaal for hver, som leger med!
+</body>
+</poem>
+
+<poem id="rahbek2001062304">
+<head>
+    <title>Balvise</title>
+    <firstline>Naar heele sit Levnet man nøie beseer</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="137-138"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Naar heele sit Levnet man nøie beseer,
+Er Livet en Dands, og slet ingen Ting meer;
+Lyksalig er den, der kan dandse den ret,
+Der ei løber surr, og der ei bliver træt;
+I Glæde, i Glæde hans Liv svinder bort,
+Og er, som en Dands efter Bordet, ham kort.
+
+Men eene at dandse er ikke saa let,
+Det trætter saa meget, og morer saa slet;
+Hver søge sig derfor en Dame at faae,
+Saa skal han erfare, hvor Dandsen vil gaae!
+Saa freidig, saa freidig man svæver afsted,
+Som Roser fremspirede i hendes Fied.
+
+Men Dandsen sin Art end tilfulde ei har,
+Saa længe man kun er det enkelte Par;
+Det rigtige Liv kommer først i vor Tuur,
+Naar Venner saa glade med os giør Figur.
+O Venner! o Venner! o maatte enhver
+Faae heele sit Liv figureret, som her!
+
+Her dandse vi samtlig med frydefuld Aand
+Til Glæden ved Skiønheds vejledende Haand;
+Saa troelig for os figurerer hver Ven,
+Og selvsamme Skiel vi ham giøre igien.
+Thi skiænker! thi skiænker til skummende Maal
+De Skiønnes, de Venners, de Dandsendes Skaal!
+</body>
+</poem>
+
+<poem id="rahbek2001061321">
+<head>
+    <title>Drikkevise</title>
+    <subtitle>1788</subtitle>
+    <firstline>Sørge, hvo sørge vil!</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="139-141"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Sørge, hvo sørge vil!
+Jeg har ei Tid dertil;
+Jeg veed, man en Comet
+Nyelig har seet.
+Man siger, den skal spaae,
+At Jorden skal forgaae;
+Vor Viin da og forgik,
+Drik, Naboe! drik!
+
+Skal vi da aldrig meer
+Samles til Glæden her,
+Frydes ved Spøg og Sang
+Og Glassets Klang?
+Hvis Jorden vil forgaae,
+Vi Tiden bruge maae,
+Ret nyde denne Dag
+I Vennelag.
+
+Men om og den Comet
+Nu var en falsk Prophet,
+Hvad os i Morgen skeer,
+Dog ingen seer.
+Spildt er hvert Øieblik,
+Som ei i Fryd hengik,
+Og Livet alt for kort
+At ødsle bort.
+
+Lad os med freidigt Bryst
+Nyde hver skyldfrie Lyst,
+Elske hver troefast Ven,
+Som deeler den!
+Brødre! en Skaal for hver,
+Som af min Mening er.
+See! her er bredfuldt Maal!
+Naboe! din Skaal!
+</body>
+</poem>
+
+<poem id="rahbek2001061308">
+<head>
+    <title>Selskabssang</title>
+    <firstline>At intet er saa sundt, som Glæde</firstline>
+    <notes>
+        <note>Vers 2 findes i senere udgaver som ,,Har Tode sagt paa smuk Latin'' hvor Tode er <a poet="tode">J.C. Tode</a>.</note>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="142-143"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+At intet er saa sundt, som Glæde,
+Man os har sagt paa godt Latin;
+Og heele Verden, tør jeg vedde,
+Vil have<note>have] hove</note> denne Medicin.
+Det bliver da kun Spørgsmaal her:
+Fra hvilket Apothek den er?
+
+Til Frue Fortuna gaaer jeg ikke;
+Hun er i alt for slemt et Ord;
+Det skal ei siælden Fruen stikke
+At give Godtfolk Gift derfor.
+Saa mangen fandt sig ilde af
+Den Glæde, ham Fortuna gav.
+
+Hos Plutus jeg den ikke henter;
+Han er jo blind den stakkels Dreng
+Han derfor og til Patienter
+Uddeeler ondt og godt i Fleng.
+Tit faaer en Dosmer eller Nar,
+Hvad Fliild og Indsigt tiltænkt var.
+
+Herr Bacchus, og Sieur Amor have
+Den nu og da, at handle med,
+Men Amor er saa tit af Lave,
+Og Bacchus drikker, som man veed;
+Thi har de begge tit for Skik,
+At komme beedskt i Madens Drik.
+
+Nei! kun hos Venskabs Skytsgudinde
+Man Glæden altid ægte faaer;
+Hun, hun bedrager ingensinde,
+Hvo tillidsfuld til hende gaaer.
+Thi fylder alle bredfuldt Maal,
+Til Glædens og til Venskabs Skaal.
+</body>
+</poem>
+
+<poem id="rahbek2019091953">
+<head>
+    <title>Balvise</title>
+    <firstline>Lad andre raabe paa Sommeren</firstline>
+    <source pages="144-147"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Lad andre raabe paa Sommeren,
+Langt bedre have<note>have] hove</note> vi Vintrens Dage;
+Den Sommer adskiller Ven fra Ven,
+Men Vintren bringer dem smukt tilbage.
+  Og Vise lære,
+  Det smukt skal være,
+  At Venner kiælig forsamled' ere;
+      Og de har Ret.
+
+Naar Mark og Skov er saa lysegrøn,
+Dem mangen skuer med megen Gammen;
+Men jeg veed den, der er meere skiøn,
+End Mark og Skov og det alt tilsammen;
+  Skiøndt jeg saa lige
+  Det ei vil sige,
+  Hver fatter dog, at det er min Pige,
+      Og han har Ret.
+
+Jeg vil ei nævne just med Foragt
+De Chor, som Fuglene da opføre,
+Men meget daarlig de holde Takt,
+Og Ordene kan man aldrig høre;
+  Dog vil vi regne
+  Fra vore egne,
+  Vi dette Tab maae for Vinding regne;
+      Holdt de kun Takt.
+
+I Marken stander en lystig Dands
+Af Kiær og Frøer, af Lam og Vædre;
+Men den maae være fra Vid og Sands,
+Der nægte vil, at vi dandse bedre.
+  Lad dem probere.
+  En Dands at lære
+  Af vore, og det ei af de svære,
+      Saa skal man see.
+
+Om Spraderen med sin Katteryg
+Kan plumre Lauget lidt for os andre,
+Saa har jo Sommeren ogsaa Myg;
+Lad dem gaae op da imod hverandre!
+  Og vi, som svige
+  Ei vore Lige,
+  Veed og kun lidt af det Pak at sige,
+      Og det er vel.
+
+Men skiøndt nu Vintren er mig saa kiær,
+Jeg vil dog ei, vi dens Skaal skal drikke.
+Ei som den jo var det ærlig værd;
+Men ak den klinker, og takker ikke.
+  Nei Skaalen være
+  Det Kiøn til Ære,
+  Ved hvem os Vintrene blide ere:
+      De Skiønnes Skaal.
+</body>
+</poem>
+
+<poem id="rahbek2019091954">
+<head>
+    <title>En ringe Tillidssang</title>
+    <subtitle>
+        <line>som en Tilegnelse</line>
+        <line>af prosaiske Forsøgs anden Deel</line>
+        <line>til et Selskab</line>
+        <line>1790.</line>
+    </subtitle>
+    <firstline>Ynkværdige Bog</firstline>
+    <source pages="148-151"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+        Ynkværdige Bog,
+Saa længe du dvæled', saa kommer du dog;
+Du vist nok en artig Ulykke vil skee,
+Naar vores Beaumonde først faaer dig at see.
+Ynkværdige Bog! o hvor du vil faae Skrub
+    I nymodens Klub!
+
+        Eenfoldige Bog,
+Du fører i vor Tid det gammeldags Sprog,
+At Konen kiønt ærbar skal passe sit Huus,
+Og ikke omflane i Suus og i Duus.
+Eenfoldige Bog! o hvor du vil faae Skrub
+    I nymodens Klub!
+
+        Vanvittige Bog
+Du er jo saa grov, at du paastaaer endog,
+At Ægteskabs Brud er hos Liden og Stor . . .
+Fy! jeg vil ei nævne det heslige Ord.
+Vanvittige Bog! o hvor du vil faae Skrub
+    I nymodens Klub!
+
+        Skinhellige Bog!
+Forgæves du fører det nidkiære Sprog;
+De Damer, de læse saa lidet deri;
+Men sminkes, og hvidtes, er tamme og frie.
+Skinhellige Bog! o hvor du vil faae Skrub
+    I nymodens Klub!
+
+        Suurmulende Bog!
+Al Munterhed du jo af Jorden forjog,
+Fik du vore Fruer og Frøkner giort viis,
+At væmmes ved Giækkes og Spraderes Priis!
+Suurmulende Bog! o hvor du vil faae Skrub
+    I nymodens Klub!
+
+        Og, knurvurne Bog!
+Du Daaren <w>Jean Jacques</w> til Mynster dig tog,
+Og troer, hver Vellystling en Spyeflue er,
+Som ublue beklikker, hvad den kommer nær.
+O knurvurne Bog! o hvor du vil faae Skrub
+    I nymodens Klub!
+
+        Men narriske Bog!
+Men veed du da ei, da du dog er saa klog,
+Med det, der skal have den fornemme Smag,
+Maae Flue og Orm have været i Lag.
+O narriske Bog! o hvor du vil faae Skrub
+    I nymodens Klub!
+
+        Uhøflige Bog!
+Det lader jo snart, som du paastod endog:
+En Nar, som var Greve, var ligevel Nar,
+Og at med en Skurk det det selvsamme var.
+Uhøflige Bog! o hvor du vil faae Skrub
+    I nymodens Klub!
+
+        Og nedrige Bog!
+Og om man nu af dig den Lærdom uddrog,
+At Børn, som var liige, de legede bedst,
+At Smaafolk bør undflye de Store som Pest!
+O nedrige Bog! o hvor du vil faae Skrub
+    I nymodens Klub!
+
+        O fredløse Bog!
+Om mine Par Venner dit Forsvar end tog,
+Den første Rad Stole dog raabte saa høit,
+At hines Forsvaren ei hialp for en Døit.
+Thi, fredløse Bog! thi belav dig paa Skrub
+    I nymodens Klub!
+
+        Dog — fattige Bog!
+Hvis ikkun eet Selskab til Naade dig tog,
+Hvis Brødrene der kunde mores ved dig,
+Og vilde, som hidindtil, holde af mig.
+Vi agted' saa lidet paa Spradernes Skrub
+    I nymodens Klub!
+</body>
+</poem>
+
+<poem id="rahbek2001061306">
+<head>
+    <title>Drikkeromance</title>
+    <subtitle>efter det svenske.</subtitle>
+    <firstline>Mit Levnet bestandig har sandet</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="152-155"/>
+    <!-- TODO: Find originalen (ukendt svensk) -->
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Mit Levnet bestandig har sandet,
+Hvad Underværk Viinguden giør;
+Jeg drikker, men ikke for andet,
+End Sorgen at jage paa Dør.
+Jeg eder mit Liv vil berette,
+Hvad Fryd og hvad Sorg jeg har havt,
+Men først maae vi Sorgerne lette
+Ved Druernes muntrende Kraft.
+
+Sin Formue testamenterer
+En ældgammel Gnier til mig;
+I Tankerne jeg alt fortærer,
+Hvad han havde efterladt sig.
+Men der kom Jurister, som Fluer,
+Og de gik i Arv i mit Sted;
+Jeg græd, men i Saften af Druer
+Jeg drukned' min første Fortræd.
+
+Jeg nu ubesindig attraaede
+Ad Høihedens Bane at gaae.
+Jeg beiled til Mægtiges Naade,
+Og evig i Forgemak laae.
+De Store mig lovte saa meget,
+Men alt deres Løvte var Vind;
+Jeg græd, da jeg saae, jeg var sveget,
+Men Vinen opmumred' mit Sind.
+
+Saa vilde jeg Skialdekunst dyrke,
+Og kom i Poeternes Lag;
+Men Tankerne fattedes Styrke,
+Og Udtrykket savned' Behag;
+Min Smag overalt man fordømte;
+Kritiken slog Vrag paa min Sang;
+Jeg græd; men i Harmen jeg tømte
+Snart hundrede Glas paa engang.
+
+Jeg nu til en Skiønhed mig vendte;
+Hvor farlig en Tilflugt jeg tog!
+Vel hundrede Hierter hun tændte,
+Og ligesaa mange bedrog.
+Kun Ømhed fremlyste i Minen,
+Dog nærte hun Sviig i sin Barm;
+Jeg græd, men jeg drukned' i Vinen
+Den skuffede Kiærligheds Harm!
+
+Forføriske Skiønhed! du ikke
+Mit Liv til en Jammerdal giør,
+Saa længe man elsker at drikke,
+Man aldrig af Kærlighed døer.
+Ei meer skal din Haardhed mig lære,
+At ønske mig ned i min Grav,
+Og ei skal Fortvivlelse skiære
+For Tiden min Levetraad af.
+</body>
+</poem>
+
+<poem id="rahbek2001053008">
+<head>
+    <title>Drankerromance</title>
+    <firstline>Det hændte sig engang</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    </notes>
+    <source pages="156-158"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Det hændte sig engang,
+At jeg var stygt i Trang
+    For Penge,
+Den Slemme mig indskiød,
+At ende al min Nød
+    Ved mig at hænge.
+
+Jeg i min Lomme greb,
+Gav Pigen til et Reeb
+    Sex Styver.
+Kirstine hedder hun,
+Adspørger hende kun,
+    Troer I, jeg lyver.
+
+Jeg om et Søm nu saae,
+Jeg kunde hænge paa;
+    Hvad skeede?
+Vist nok <w>komt unverhoft</w>.
+Som Tydsken siger, <w>ost!</w>
+    Tænk, hvilken Glæde!
+
+Med eet jeg bliver vaer,
+Een Skat jeg endnu har
+    Tilbage.
+Bag mit Chatol der stod
+En Flaske Viin saa god,
+    Som een vil smage.
+
+Jeg saae den, og jeg svoer:
+Dig ingen Creditor
+    Skal drikke.
+Alt andet smaat og stort
+Kan de kun tage bort.
+    Min Rhinskviin ikke.
+
+Jeg drak et Glas deraf,
+Og dette Lyst mig gav
+    Til mere.
+Jeg drak min Chloris Skaal,
+Og gode Venners Skaal,
+    Ja endnu mere!
+
+Jeg drak taknemmelig
+Hvers Skaal, som har hos mig
+    Tilgode;
+Kort sagt, da Pigen kom
+Var Rhinskviinsflasken tom,
+    Jeg vel tilmode.
+
+Hver speile sig i mig!
+Og ingen hænge sig,
+    Jeg lover,
+Saasnart et Glas man faaer,
+Den Hængegrille gaaer
+    Paa Timen over.
+</body>
+</poem>
+
+<poem id="rahbek2019091957">
+<head>
+    <title>Sang</title>
+    <subtitle>af Comedien aabenbar Kriig.</subtitle>
+    <firstline>I eensom Lund en Rose skiøn</firstline>
+    <source pages="159-160"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+I eensom Lund en Rose skiøn
+Med favre Hoved hængte.
+Af Sorg henvisned' den i Løn,
+Dens Suk til Venus trængte-
+''Forgiæves er jeg Lundens Pryd,
+''Jeg blomstrer her til ingens Fryd;''
+Saa sukked' den saa saare.
+
+Gudinden hørte huld dens Suk,
+De Skiønnes Tarv hun kiendte,
+Og strax en Hyrde ung og smuk
+Hun hen til Lunden sendte.
+Han Rosen saae, og brød den af,
+Og henrykt tusend Kys den gav.
+Da sukked' den ei mere.
+
+Saa mange Piger end i Løn
+Som Rosen daglig sukke,
+Men du, o Venus! og din Søn
+Nu Øret grusomt lukke.
+Og er ei Elskov Skiønheds Løn,
+Hvad gavner da, at man er skiøn?
+O send dog hver sin Hyrde.
+</body>
+</poem>
+
+<poem id="rahbek2019091958">
+<head>
+    <title>Hymens Fakkel</title>
+    <subtitle>En Romance.</subtitle>
+    <firstline>Hymens Fakkel nu omstunder</firstline>
+    <source pages="161-163"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Hymens Fakkel nu omstunder
+Holdes for en Gøgleild,
+Hvo ved den til Lykken stunder,
+Siger man, gaaer altid vild.
+Men naar den, som sig beklager,
+Selv har valgt en blind Ledsager,
+Hvad kan Hymen vel dertil?
+
+Plutus skal de fleste føre,
+Han er blind, som hver Mand veed,
+Og hvad skal nu Hymen giøre,
+Naar man gaaer i slige Fjed?
+Stundum kan hiin blinde Stakkel
+Brænde sig paa Hymens Fakkel,
+Men han aldrig seer derved.
+
+Amordrengen leder andre,
+Han kan gandske rigtig see;
+Men har Løier af at vandre
+Med et Bind for Øinene.
+Blindebuk han gierne leger,
+Og for disse Barnestreger
+Lide hans Tilbedere.
+
+Men han har en ældre Broder,
+Ægte, ædel Kiærlighed;
+Ham har Agtelse, hans Moder,
+Lært at gaae i Dydens Fied.
+Hver, som denne troe Veileder
+Efter Hymens Fakkel leder,
+Farer aldrig vild derved.
+
+Saare, saare faa de ere,
+Han faaer Lov at vise Vei;
+Men os disses Held kan lære,
+Hymens Fakkel sviger ei!
+Leve, leve de, som vandre
+Troe og glade med hverandre
+Kiærligheds og Lykkens Vei!
+</body>
+</poem>
+
+<poem id="rahbek2019091959">
+<head>
+    <title>Vise i gammel Stiil</title>
+    <subtitle>
+        <line>ved min Ven</line>
+        <line>Rasmus Nyerups Bryllup.</line>
+    </subtitle>
+    <firstline>Herr Rasmus han sidder saa sorrigfuld</firstline>
+    <source pages="164-168"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Herr Rasmus han sidder saa sorrigfuld,
+Ad Fyen sig hans Tanker henvende,
+Did reiste den Jomfrue, Herr Rasmus var huld,
+Ret aldrig forglemmer han hende.
+    Saa lover den Svend sin Jomfrue.
+
+Blidt smiler til Jorden den yndige Baar,
+Som Moder til nyfødde spæde;
+Men arme Herr Rasmus saa sorrigfuld gaaer,
+Og andser saa lidet dens Glæde.
+    Saa lover den Svend sin Jomfrue.
+
+Stolt hæved' sig Solen, og Himlen blev rød,
+Som Pigen ved Elskerens Komme,
+Herr Rasmus ei Morgenens Yndighed nød,
+Ham alle dens Glæder var tomme.
+    Saa lover den Svend sin Jomfrue.
+
+Og dalede Solen saa skiøn og saa huld,
+Som Brudgommen iler til Senge;
+End mere Herr Rasmus blev tankefuld,
+Saa dybt sig de Sukke fremtrænge.
+    Saa lover den Svend sin Jomfrue.
+
+De Blomster de mylre paa Marken frem,
+De ere saa favre og spæde,
+Herr Rasmus saa tankefuld nedtræder dem,
+De giøre ham slet ingen Glæde.
+    Saa lover den Svend sin Jomfrue.
+
+De Lærker de synge i Luften klar,
+De Smaasugle qviddre paa Qviste;
+Men sorrigfuld stedse Herr Rasmus var,
+Og ingensteds Roe han sig vidste.
+    Saa lover den Svend sin Jomfrue.
+
+Saa sødelig qvæder den Nattergal,
+Ham qvæder den Kiærligheds Smerte;
+Saa mangt et Suk da ad Fyen sig stial,
+At lette det ængstede Hierte.
+    Saa lover den Svend sin Jomfrue.
+
+Med hende, med hende min Glæde drog hen;
+Hos hende min Uroe kun stilles;
+Gud give, jeg samles med hende igien,
+Ret aldrig vi meere skal skilles.
+    Saa lover den Svend sin Jomfrue.
+
+Saa lader han stande ad frugtbare Fyen;
+De Mile de blev ham saa lange;
+Thi foer end en Elsker afsted som et Lyn,
+For ham det dog seent monne gange.
+    Saa lover den Svend sin Jomfrue.
+
+Og da han nu skued' sin Elskte igien,
+Og nød hendes kiærlige Glæde,
+Hans brændende Uroe saa snarlig svandt hen,
+Hans Smerte omvendtes til Glæde.
+    Saa lover den Svend sin Jomfrue.
+
+Nu hører han Lærkens liflige Sang,
+De Smaafugles Qviddren med Glæde,
+Dog bliver hans Barm ham saa sær og saa trang,
+Seer han dem at samle til Reede.
+    Saa lover den Svend sin Jomfrue.
+
+Ham heele Naturen er ny, og er skiøn,
+Thi alting er Fryd for den Glade,
+Hans Jomfrue ham vidste hans varmeste Bøn,
+Hun vil ham ret aldrig forlade,
+    Saa lover den Svend sin Jomfrue.
+
+Og takket være den Jomfrue saa god,
+De svenske Jomfruers Smykke,
+Som raadede hannen, hans Angest Bod,
+Og føddes Herr Rasmus til Lykke.
+    Saa lover den Svend sin Jomfrue.
+</body>
+</poem>
+
+<poem id="rahbek2019091960">
+<head>
+    <title>Romance</title>
+    <subtitle>ved en Vens Bryllup.</subtitle>
+    <firstline>Der var en Skik i Samnien</firstline>
+    <source pages="169-170"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Der var en Skik i Samnien,
+Hvoraf du vel har hørt at sige,
+Til Løn for Landets unge Mænd,
+Som holdt sig tappert i dets Krige;
+Hvo der sig viiste kiæk og brav,
+Fik den til Kone, han holdt af.
+
+Der var en Feil ved denne Skik,
+Og den var, tykkes mig, ei lille,
+Den, han begiærte, Helten fik,
+Man spurgde ei, om Pigen vilde;
+Thi hendte det sig meget let,
+At hun just ei var glad ved det.
+
+Jeg hines Skik langt bedre leed,
+Som ei en Piges Haand begiærte;
+Før de ved Mod og Kiærlighed,
+Først havde vundet hendes Hierte;
+Men nu er Verden meer poleert,
+Og sandt at sige, lidt forkeert.
+
+Nu kiøbes Konerne for Guld,
+Nu tænder Plurus Hymens Fakkel;
+Naar een faaer den, der er ham huld,
+Da er det ret, som et Mirakel;
+Med ham enhver sig glæde maae,
+Som Donna har, har havt, kan faae.
+
+See dine Brødres Fryd, o Ven!
+Og den dit ømme Venskab lønne!
+Som hine fordums Riddersmænd
+Ved Troefasthed du vandt din Skiønne!
+O Ven! o lev saa lykkelig,
+Som alle, alle ønske dig!
+</body>
+</poem>
+
+<poem id="rahbek2019091961">
+<head>
+    <title>Romance</title>
+    <subtitle>sunget af Cherubin i Figaros Giftermaal</subtitle>
+    <firstline>Klare Kilde! elskte Lund!</firstline>
+    <source pages="171-173"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Klare Kilde! elskte Lund!
+Eder, eder elsker hun;
+Her den Skiønnes Billed' boer.
+Eder jeg min Sorg betroer.
+Her jeg sukked' tit i Løn,
+Naar hun vandred' her saa skiøn.
+Eder, eder jeg tilstaaer:
+Hun var den, jeg sukked' for.
+
+Nys hun fad ved Kildens Bred,
+Dronningen for Kiærlighed,
+Zephyr vifted' Blomster ned,
+At bekrandse hende med.
+O hvor hun var huld og smuk,
+O hvor steg da mangt et Suk!
+O enhver, enhver tilstaaer,
+Hun er den, han sukker for.
+
+Naar det lyse Øie tit
+Hviler ømt og huldt paa mit,
+Naar hun smiler blid til mig.
+Vil mit Hierte røbe sig;
+Men hvis hun min Elskov seer,
+Smiler hun ei til mig meer;
+Nei, jeg ingen Tid tilstaaer,
+Hun er den, jeg sukker for.
+
+Haabløs al min Elskov er,
+O! men daglig jeg dig seer.
+Tit jeg henrykt nyde vil
+Dine Blik og dine Smiil,
+Ofte synke hen i Lyst
+Ved din søde Tryllerøst.
+Aldrig, aldrig jeg tilstaaer,
+Du er den, jeg sukker for.
+</body>
+</poem>
+
+<poem id="rahbek2019091962">
+<head>
+    <title>Lalages Flugt</title>
+    <subtitle>efter Kleist</subtitle>
+    <firstline>Hun borte er! forgiæves er min Klage!</firstline>
+    <notes>
+        <note>Gendigtning af Ewald Christian von Kleist: <xref type="translation" poem="kleiste2019091801"/>.</note>
+    </notes>
+    <source pages="174-175"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Hun borte er! forgiæves er min Klage!
+Ak! al min Fryd med hende flygtet er;
+Hun borte er, og kommer ei tilbage!
+Mig fængsler Skiæbnen her.
+
+Ak havde jeg, o Zephyr! dine Vinger!
+Bestandig jeg omsvæved' Lalage!
+Du mig maaskee fra hende Helsen bringer,
+Du hende saae maaskee!
+
+O siig, hvad Bæk den Skiønnes Billed smykker,
+Paa hvilken Eng omsvæve hendes Fied,
+Hvad stille Lund hun med sin Sang henrykker,
+Og vier ind derved.
+
+Snar er din Fart! du haster efter hende,
+Sølvklare Bæk! vor Sorg til hende føer!
+Siig Lalage, alt længes efter hende!
+Siig, hendes Hyrde døer!
+
+Eet Smiil, eet Blik, eengang min Haand hun trykke!
+Et Kys, kun eet, som de, hun før mig gav;
+Da har Amynt smagt Jordens bedste Lykke,
+Og smiler mod sin Grav.
+
+For Skovene udgiød Amynt sin Klage;
+Der sukked' han hver Dag for Lalage,
+I Hyrdens Sorg de syntes Deel at tage.
+Og sukked' Lalage!
+</body>
+</poem>
+
+<poem id="rahbek2019091963">
+<head>
+    <title>Romance</title>
+    <subtitle>efter Göthe.</subtitle>
+    <firstline>En Natfiol saa ydmyg stod</firstline>
+    <notes>
+        <note>Gendigtning af Goethes <xref type="translation" poem="goethe2019091802"/>.</note>
+    </notes>
+    <source pages="176-177"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+En Natfiol saa ydmyg stod
+Ukiendt ved andre Blomsters Fod,
+Og man den agted ikke!
+En ung Hyrdinde kom derhid,
+Med flygtigt Fied, af Sind saa blid,
+    Derhid,
+Ad Engen hid og sang!
+
+Violen sukked': Var jeg kun
+Saa smuk, kun halv saa smuk, som hun!
+O kun saa smuk, som Rosen!
+Til hun mig havde plukt, og kyst,
+Og ladt mig visne paa sit Bryst,
+    Ak kun
+En liden, liden Stund.
+
+Men ak! Hyrdinden kom derhen,
+Og saae den ei, og traadde den,
+Den arme! under Fødder!
+Den segned', døde, glædde sig;
+Froe døer jeg, thi jeg døer ved dig
+    Ved dig
+Og for din Fod jeg døer.
+</body>
+</poem>
+
+<poem id="rahbek2019091964">
+<head>
+    <title>Vise</title>
+    <firstline>De Stierner, de tindre paa Himmelens Blaae</firstline>
+    <source pages="178-179"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+De Stierner, de tindre paa Himmelens Blaae,
+Dem skuer den Vandrer saa gierne,
+Men aldrig saasnart monne Solen opgaae,
+Strax flygter, og blegner hver Stierne.
+
+De Blomster de bramme saa favre i Vaar,
+Dem skuer min Laura med Gammen;
+Men hvis paa en Rosenknop Øie hun faaer,
+Hun glemmer de andre tilsammen.
+
+Skiønt qviddre i Skoven de Sangfugle smaae;
+Saa listig det tykkes at være;
+Men aldrig saasnart mon en Nattergal slaae
+Før hine man agter ei mere.
+
+De Piger de braste i huld Majestet,
+Saa mangen for dem monne sukke;
+Men hvo kun et Glimt af min Laura har seet,
+Ei mere han finder dem smukke.
+
+Saa mangen en Herre høibaaren og riig
+Sig Lykkens eenbaarne mon tykke;
+O Laura! o dersom du elskede mig,
+Jeg skiøtted' saa lidet hans Lykke.
+</body>
+</poem>
+
+<poem id="rahbek2019091965">
+<head>
+    <title>Afskeedssang</title>
+    <subtitle>til Pyramus.</subtitle>
+    <firstline>O Ven! du venter mig forgiæves</firstline>
+    <source pages="180-181"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+O Ven! du venter mig forgiæves,
+At see dig var mit sidste Haab;
+At see dig, før jeg fra dig reves
+Men Himlen hører ei vort Raab.
+
+For dig din elsktes Taare flyder,
+Men din sig blander ei med den;
+En grusom Hindring mig forbyder,
+Skiøndt ham saa nær, at see min Ven.
+
+Dog Elskovs Stemme Vei skal finde
+Til dig, trods alle Hindringer;
+Hør sidste Gang din Elskerinde,
+Hør sidste Gang, du er mig kiær.
+
+Lev vel! Lev vel! jeg skal bortgræde
+Qvalfulde Dage langt fra dig;
+Ak undtes mig endda den Glæde,
+At du, min Ven! blev lykkelig.
+</body>
+</poem>
+
+<poem id="rahbek2019091966">
+<head>
+    <title>Vuggevise</title>
+    <subtitle>efter Berqvin.</subtitle>
+    <firstline>Sov bedste Dreng! du sidste Glæde</firstline>
+    <source pages="182-184"/>
+    <notes>
+        <note unknown-original-by="berquin" />
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Sov bedste Dreng! du sidste Glæde,
+Min vrede Skiæbne under mig!
+Sov bedste Dreng! hold op at græde!
+Bedrøv mig ikke med dit Skrig.
+  Da mig din falske Fader lærte,
+  At kiende Kierlighed og sig,
+  Hvo kunde nægte ham sit Hierte,
+  Han dig i Uskyld syntes liig!
+  Jeg troede ham, ak mig til Smerte!
+  Han har forglemt sin Søn og mig.
+
+Sov bedste Dreng, du sidste Glæde,
+Min vrede Skiæbne under mig!
+Sov bedste Dreng! lad af at græde,
+Bedrøv mig ikke med dit Skrig.
+  O! kan han ei sin Flugt fortryde!
+  Og komme fordums Fryd ihu!
+  Saa kiær han var mig, før han flyede,
+  Ak! lige kiær han er mig nu!
+  Og Falske! du din Eed kan bryde?
+  Forlade mig! det kunde du?
+
+Sov bedste Dreng! du sidste Glæde,
+Min vrede Skiæbne under mig;
+Sov bedste Dreng! lad af at græde,
+Bedrøv mig ikke med dit Skrig.
+  Det samme Øie har min Mage,
+  Jeg seer hans Billede i dig!
+  Du skal, som han, engang behage,
+  Men bliv ham ei i Falskhed liig!
+  See mig henjamre mine Dage,
+  Bliv troe mod den, der elsker dig.
+
+Sov bedste Dreng! du sidste Glæde,
+Min vrede Skiæbne under mig;
+Sov bedste Dreng! lad af at græde,
+Bedrøv mig ikke med dit Skrig.
+  Du fatter ei, hvorfor jeg græder,
+  Det blive evig skjult for dig!
+  Anklage den, som man tilbeder
+  Hvad Marter er vel denne liig?
+  O jeg har dyrt betalt de Glæder,
+  Som karrig blev tildeelte mig.
+
+Sov bedste Dreng! du sidste Glæde,
+Min vrede Skiæbne under mig;
+Sov bedste Dreng! lad af at græde,
+Bedrøv mig ikke med dit Skrig.
+  Her skal i denne trange Hytte
+  Vort Liv i Kummer svinde hen!
+  Bliv du min svage Ældes Stytte,
+  Jeg er din spæde Barndoms Ven!
+  Vor Skiæbne os maae sammenknytte,
+  O lad os samlet bære den.
+</body>
+</poem>
+
+<poem id="rahbek2019091967">
+<head>
+    <title>Hvidtfeldts Vise</title>
+    <firstline>Vort Fødeland var altid rigt</firstline>
+    <source pages="185-188"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Vort Fødeland var altid rigt
+Paa raske Orlogshelte,
+Der elskte Tapperhed, som Pligt,
+Og skialv ei, hvor det gieldte.
+Saa var vor Juel og Adeler,
+Og saa var han, vi synge her!
+Vort Fødeland var altid rigt
+Paa raske Orlogshelte.
+
+Herr Hvidtfeldt var den Herres Navn,
+Vi synge her til Ære;
+Og evig, evig dette Navn
+I helligt Minde være!
+Han døde for sit Fødeland,
+Og glad og villig døde han!
+Vort Fødeland var stedse rigt
+Paa raske Orlogshelte.
+
+Saa haard en Kamp der monne staae,
+De Fiender var saa mange;
+Men næst til dem Hr. Hvidtfeldt laae,
+Den Helt var aldrig bange!
+I heele Floden ingen slog
+Som Hvidtfeldt med sit Dannebrog,
+Skiøndt Dannemark var stedse rigt
+Paa raske Orlogshelte.
+
+Men som vor Hvidtfeldt mandigst slog,
+Og Lag paa Lag dem sendte,
+Hans gode Skib hans Dannebrog
+Dets egen Ild antændte.
+Kap Anker, Hvidtfeldt, flye til Land!
+Med Flugt du Livet frelse kan.
+Men Dannemark var altid rigt
+Paa raske Orlogshelte.
+
+Nei! var hans Svar: flye vi derhen
+Staar Danmarks Flode Fare,
+Og skulde Danske vove den
+For egne Liv at spare,
+Døe skal vi, men vi hævnes maae:
+Til sidste Aandedrag vi slaae.
+Vort Fødeland var altid rigt
+Paa raske Orlogshelte.
+
+Til sidste Aandedrag vi slaae!
+Hans Søemand kiæk gientoge;
+De Ild og Død rundt om sig saae,
+Men uforsagt de sloge;
+Til Ilden ind til Kruddet brød,
+Og alle døbe Heltedød.
+Vort Fødeland var altid rigt
+Paa raske Orlogshelte.
+
+Og aldrig uddøe Hvidtfeldts Roes,
+Hans kiække Søemands Minde!
+O maatte de i hver af os
+En værdig Landsmand finde!
+Naar Fædrelandet kalder os,
+Som de, hver byde Døden Trods!
+Vær Fødeland, var altid rigt
+Paa raske Orlogshelte!
+</body>
+</poem>
+
+<poem id="rahbek2019091968">
+<head>
+    <title>Fredrikshalds Minde</title>
+    <firstline>Kong Carl laae med en mægtig Hær</firstline>
+    <source pages="189-193"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Kong Carl laae med en mægtig Hær
+    For Fredrikssteen;
+Men tappre Fredrikshald ham er
+    Til megen Meen.
+Hver Borger lagde Verktøi hen,
+    Og greb til Sværd,
+Og kiække Peder Colbiørnsen
+    I Spidsen er.
+Saa stride de Nordmand for Norge.
+
+Thi vendte Carl sin Magt saa gram
+    Mod Fredrikshald;
+De Borgere da mødte ham
+    I ringe Tal.
+Men disse slog som norske Mand
+    For elskte Land,
+Og det var Peder Colbiørnsen,
+    Der førte dem.
+Saa stride de Nordmand for Norge.
+
+De Nordmand hugge tunge Hug
+    Blandt Fjenderne,
+Og Svensken sank som moden Rug
+    For Høstkarls Lee;
+Men stærkest Høstkarl trættes dog,
+    Saa gik det her;
+Saa mange end de Norske slog,
+    Der alt kom fleer.
+Saa stride de Nordmænd for Norge.
+
+Thi flyede de for Overmagt,
+    Som Nordmænd flye,
+De drog kun bort, for uforsagt
+    At slaae paa ny.
+Kong Carl nu over sines Liig
+    Sig baned Vei,
+Og Byens Herre troede sig,
+    Men var det ei.
+Saa stride de Nordmænd for Norge.
+
+Hans Folk fandt Død i hver en Vraae,
+    Hvor de drog frem,
+Thi allevegne Nordmand laae,
+    Og helste dem.
+Da sendte Carl saa lidet froe
+    Til Frederikssteen,
+Og bad, han jorde maae i Roe
+    De slagnes Been.
+Saa stride de Nordmænd for Norge.
+
+Men kiække Nordmand ingen Tid
+    At spilde har,
+Selvbuden er han kommen hid,
+    Fik Carl til Svar.
+Nu maae vi see, at vi igien
+    Ham ud kan faae.
+Og det var Peder Colbiørnsen
+    Der svarte saa.
+De Nordmænd de stride for Norge.
+
+At sætte egen Bye i Brand
+    De ile hen;
+Og den, der først sit Huus stak an,
+    Var Colbiørnsen!
+At slukke Ilden Fjenderne
+    Vil stimle hen,
+Men Kugler føg saa tykt som Snee
+    Fra Fæstningen.
+De Nordmænd de stride for Norge.
+
+Høit blussed' da mod Skyerne
+    Den Lue rød,
+Saa svenske Kongen ret kan see
+    Hans Heltes Død.
+Da sanded' han Herr Peders Ord,
+    Hans Folk vil hiem;
+Men Helten Steen stod uden for,
+    Og modtog dem.
+De Nordmænd de strede for Norge.
+
+Og herlig blussed' Fredrikshald
+    Blandt Liig og Blod.
+Oplyste stolt de Svenskes Fald
+    Og sines Mod.
+Og aldrig brændte nogen Bavn
+    Saa skiøn, som den!
+Og aldrig uddøe skal dit Navn,
+    O Colbiørnsen!
+Saa strede de Nordmænd for Norge.
+</body>
+</poem>
+
+<poem id="rahbek2019091969">
+<head>
+    <title>Efter Miller</title>
+    <firstline>Den heele Landbye samler sig</firstline>
+    <source pages="194-198"/>
+    <notes>
+        <note>Gendigtning af Johann Martin Millers <xref type="translation" poem="miller2019122302"/>.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Den heele Landbye samler sig
+    Saa glade alle ere!
+Hver leer og dandser, ak kun mig,
+    Mig glæder intet meere.
+
+Forbi for mig er Dands og Leeg,
+    Al Glædskab jeg forsager;
+Og Spil og Latter hader jeg,
+    Og heller eensom klager.
+
+Thi jeg min Hanne mistet har;
+    Jeg glemmer aldrig hende;
+Jeg veed for vel, hvor riig jeg var,
+    Den Tid, jeg havde hende.
+
+Hvad hun var from, og bliid, og huld!
+    Og hvad det var et Hierte!
+Saa reent og skiønt som luttret Guld,
+    Saa ømt ved andres Smerte!
+
+Og Øine havde hun saa blaa,
+    Saa smukke, og saa gode;
+Enhver i dem saa klarlig saae,
+    Hvad der i Hiertet boede.
+
+Paa Timen slog jeg mine ned,
+    Naar hendes paa dem hviilte,
+Og blev saa underlig derved,
+    Naar Hanne til mig smiilte.
+
+Hvor vi var glade begge to
+    Til sidste Maidags Gilde!
+Vi dansde, spøgte, sang, og loe,
+    Og glemte, det var silde.
+
+Saa sprang hun op, og bad god Nat;
+    Og saae paa mig, og smiilte.
+Fik dette Baand omkring min Hat,
+    Og skielmsk bort fra mig iilte.
+
+Men snart jeg hented' hende ind,
+    Og kyssede den hulde;
+Saa lidet randt mig da i Sind,
+    Saasnart vi skilles skulde.
+
+Farvel mit kiære grønne Baand,
+    Jeg dig ei meer skal bære!
+Men jeg dig fik af Hannes Haand,
+    Du hende hellig være!
+
+En Krands jeg paa vor Kirkevæg
+    Har hængt til Hannes Minde;
+Ved Sorgekrandsens Side jeg
+    Min Hannes Baand vil binde.
+
+Og sidde lige over for,
+    Og see paa dem, og græde,
+Og tænke paa min Hannemoer,
+    Og paa min tabte Glæde.
+
+Vor Kirkegaard fra den Dag af
+    Jeg har til Livsted kaaret,
+Og sat et Kors paa Hannes Grav,
+    Hvorpaa jeg Vers har skaaret.
+
+Naar Jorden bliver mig for trang,
+    Og ingen Graad vil rinde,
+Jeg stiæler mig saa mangen Gang
+    Til dette Sørgeminde.
+
+Der finder jeg min Graad igien,
+    Kun der jeg finder Lindring
+O daglig vil jeg gaae derhen
+    Min Hanne til Erindring.
+
+Til Gud engang forbarmer sig,
+    Og mine Sukke hører,
+Og bort fra denne Verden mig
+    Hen til min Hanne fører.
+</body>
+</poem>
+
+<poem id="rahbek2019091970">
+<head>
+    <title>Den arme Sannes Drøm</title>
+    <subtitle>efter Bürger.</subtitle>
+    <firstline>Nys drømte jeg ved Midnatsstund</firstline>
+    <notes>
+        <note>Gendigtning af Bürgers <xref type="translation" poem="burger2019091901"/>.</note>
+    </notes>
+    <source pages="199-201"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Nys drømte jeg ved Midnatsstund,
+    At jeg min Falske saae.
+Knap troer jeg, at jeg drømte kun,
+    Saa klarlig jeg ham saae.
+
+Min Fæstensring han tog af Haand
+    Og sønderknuste den,
+Og for min Ring et Perlebaand
+    Til mig han kasted' hen.
+
+Da gik jeg i min Urtegaard
+    Saa sorgfuld og beklemt,
+Der i mit Beed en Myrthe staaer,
+    Til Brudekrands bestemt.
+
+Mit Perlebaand nu søndergik,
+    Og af faldt Perlerne;
+Og i det samme Øieblik
+    Var ikke een at see.
+
+End søgte jeg saa ængstelig,
+    Og græd saa tungt derved,
+Ak da forvandler Myrthen sig
+    Til Buxbom i mit Beed.
+
+Ak! Ord for Ord det opfyldt er,
+    Hvad Drømmen spaaede mig;
+Jeg trænger ei til Spaamand meer,
+    Alt har forklaret sig.
+
+Min Ring er knuust, mit Hierte med,
+    Og Perler har jeg grædt;
+Mig Buxbom groer i Myrthens Sted,
+    Min Død bebuder det.
+
+Brist Hierte! Ringen er i tu,
+    Den Sorg for Fryd dig gav.
+I Myrthens Sted groer Buxbom nu,
+    Den pryde skal min Grav.
+</body>
+</poem>
+
+<poem id="rahbek2019091971">
+<head>
+    <title>Den Dødes Igienkomst</title>
+    <subtitle>efter en gammel Kæmpevise.</subtitle>
+    <firstline>Den fromme Frue Signe paa Sotteseng laae</firstline>
+    <source pages="202-206"/>
+    <!-- TODO: Find folkevisen. -->
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Den fromme Frue Signe paa Sotteseng laae,
+Herr Esbern han sørged for hende saa saare;
+“Vær trøstig, hun bød ham, og græd ikke saa,
+Mig martre langt meer end min Død dine Taare.
+Gid snart i en lykkelig Vennevivs Favn
+Du glemme din Sorg, og forvinde mit Savn.”
+
+“Nei! Signelild! dersom jeg krænker vort Baand,
+Den Evige mig i min Dødsstund forglemme!”
+Hun tyssede paa ham med visnende Haand,
+Og afbrød ham kiærlig med døende Stemme:
+“O gierne min Ven! maae du krænke det saa,
+Naar hun har dig kiær, og vil elske de smaae.”
+
+Fem grædende Døttre omgav hendes Seng,
+Tung faldt deres Taare paa moderligt Hierte,
+Dog sørged' hun meest for sin eenbaarne Søn,
+Der end var for spæd til saa grusom en Smerte.
+Da han sine Sødskende grædende seer,
+Ømt kiæler han for dem, da græd de end meer.
+
+Frue Signelild døde, blev jordet, og glemt,
+Herr Esbern nu ægtede Guldborg den rige;
+Berømt for sin Skiønhed, og Snilde og Skiemt,
+I Dands og i Harpeleeg fandt hun ei Lige.
+Thi svæved' hun stedse i Gammen og Suus,
+Og agted' saa lidet paa Børn, og paa Huus.
+
+De Hunde de tude om Midienat,
+De Voxlys de brænde i svovelblaae Lue.
+Det tuder igien, og de udslukkes bradt,
+Herr Esbern og Guldborg begynde at grue;
+Ved tredie Glam flyve Dørrene op!
+Det suser som Vinden i Eegenes Top.
+
+Paa Stegersets Ildsted Elinalild sad,
+Og havde paa Skiødet sin grædende Broder,
+Hun dæggede for ham, og rysted', og bad.
+Og ønskte sig tit hos sin hvilende Moder;
+Med eet hun forfærdet i Maaneskin saae,
+En liigklædet Skikkelse for dem at staae.
+
+“Elina! min Datter! hvi sidder du her?
+Hvordan staaer der til med Smaasødskende dine?”
+“O! kald mig ei Datter! o hvo du end er,
+Da lad mig med Fred!” svarte ængstlig Eline:
+“Som Æblet min Moder var hvid, og var rød,
+Men du er jo gusten og bleeg som en død.”
+
+I Graven der blegner den rødeste Kind,
+I Graven jeg boer, og fra Graven jeg kommer;
+Jeg hørte din Sorg i mit Hvilested ind,
+Da rørte min Klage den evige Dommer.
+Jeg reiste de mødige Lemmer med Hast,
+Og Murene revned', og Marmoret brast.
+
+Glad gienkiendte Drengen nu Moderens Røst,
+Og strakte mod hende de indsvundne Arme;
+“Ak! sukkede Signelild: tomt er mit Bryst!
+Min Arm uden Styrke, min Favn uden Varme.
+Elina! han kiender sin Moder endnu;
+Min kiæreste Datter! hvi dvæler da du?”
+
+“O Moder! fra Graven du kom til os Smaa!
+O tag os nu med dig! vi lide saa ilde;
+Vi fryse, og sulte, og ligge paa Straae,
+De Terner her raade med os, som de vilde.
+O see til din Dreng, hvor forkommen han er!
+Thi satt' jeg mig med ham paa Ildstedet her.”
+
+Ømt favnede Signe sin Datter og Dreng,
+Det var dem som Pust af Sydvestvindens Aande;
+Saa stæddes hun vred for sin Ægtemands Seng:
+“O! Esbern og Guldborg! see Børnenes Vaande,
+Den kaldte mig op af mit fredsomme Hiem;
+O Guldborg! hvor tager du vare paa dem!”
+
+“Jeg efterlod eder de Bolstre saa blaa;
+Dem monne de Tærner bortrane og slide,
+De Ædlinge fryse, og ligge paa Straae,
+Ei haver jeg fød dem til saadan en Qvide.
+O havde du baaren, og fød dem, som jeg,
+Du glemte dem ikke for Tant og for Leeg!”
+
+Nu galede Hanen, og Signelild svandt,
+Som Morgenens Taage for Solen forsvinder;
+Frue Guldborgs de brændende Taare nedrandt
+Paa Esberns af Ruelse blussende Kinder.
+I Skjoldungens Land var fra selvsamme Stund
+Ei ædlere Hustrue og Moder end hun.
+</body>
+</poem>
+
+<poem id="rahbek2019091972">
+<head>
+    <title>Klage</title>
+    <firstline>Himmel! mine Klager bede</firstline>
+    <source pages="207"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Himmel! mine Klager bede
+Ikke om mig nægtet Held;
+Giem kun hine Glimt af Glæde,
+Ak! som martre meer min Siæl.
+
+Jeg det veed, med hine Dage
+Al min Fryd er flygtet hen;
+Jeg den æsker ei tilbage,
+Und mig kun at glemme den.
+</body>
+</poem>
+
+<poem id="rahbek2019091973">
+<head>
+    <title>Mariehøien</title>
+    <subtitle>En Romance.</subtitle>
+    <firstline>O du, der Livets bedste Lyst</firstline>
+    <source pages="208-214"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+    O du, der Livets bedste Lyst,
+Dets Himmel fandt ved din Udkaarnes Hierte,
+Din egen Lykke hærde ei dit Bryst
+Mod haabløs Elskovs Nød, Ulykkeliges Smerte!
+O skiænk Marie, skiænk Georg en Taare;
+Og aldrig Elskovs Sorg dit ømme Hierte saare!
+
+    I tætte Skov bag Hillerød
+To skiønne skyggefulde Høie stige;
+Naturen Elskov her et Friested bød,
+En Elsker mødtes her hver Aften med sin Pige;
+Her glemte de blandt skyldseie Elskovs Glæder,
+Hvad Kaar dem Klærkers Lov, og Frænders Had bereder.
+
+    Den hellige, hvis Navn hun bar,
+Hun lignede i Ynde og i Dyder;
+I Dyd og Skiønhed hende værd han var,
+Men grusomt Klærkebud det ømme Baand forbyder;
+Hans Ordens Lov ham Elskov bød forsage,
+Den Fordom er ei meer — O! vi har nok tilbage.
+
+    Naturens Røst tit sagde dem,
+At Pavens Bud ei Herrens kunde være;
+Dem kiække Luther nu til Trøst stod frem;
+Hvor froe de hørte om hans Levnet og hans Lære!
+I Haabet alt de bedre Tider smage;
+O! hvad er riigt paa Haab, som Elskovs første Dage?
+
+    Hun stial sig ud, naar Soel gik ned,
+Paa yndte Høi med elskte Ven at mødes,
+Hvor skyldfrie glad hver Aften der hengleed!
+Der lange tunge Dag belønnes og forsødes.
+O Held, Held den! der langt fra Stæders Vrimmel,
+Fandt i en Ørk, som de, ved elsket Bryst sin Himmel!
+
+    Paa eengang kom de stedse did
+Hver bange var at komme der for silde;
+Med karrig Haand udmaales Glædens Tiid,
+Vee den, som nænde kan eet Blund deraf at spilde.
+Ved ingen, ingen Anger, ingen Klage
+Det spildte Øieblik du kalde kan tilbage.
+
+    En Aften kom Georg derhid,
+Og savned' første Gang sin Elskerinde;
+Han saae mod Hillerød, saae hid, og did;
+Forgiæves! ingensteds Marie var at finde;
+Med bange Røst han hendes Navn udstøder,
+Men ham fra Skoven kun en sagte Gienlyd møder.
+
+    Hvor skialv Maries ømme Ven!
+Og med hvert Øieblik hans Rædsler stige;
+O saadan Angest fattes kun af den,
+Der prøved' selv den Qval at ængstes for sin Pige;
+En Stemme pludselig og blidt den ender;
+Ømt kalder den: <w>Georg!</w> Maries Røst han kiender.
+
+    “See,” sagde hun, og rakte ham
+En Blomsterkost, “jeg disse til dig søgte,
+Da jeg din trygge raske Gang fornam;
+Den stolte, tænkte jeg, han lære maae at frygte!
+Men er du vred, og feilede din Pige,
+Her er hun i dit Favn, du hendes Dom afsige?”
+
+    “Naar saae jeg sidst min Brud saa glad?”
+Udbrød han, som de Høiens Top betræde;
+“Gud! raabte hun, mon vi skal skilles ad!
+O Smerte, Smerte spaaer den overvættes Glæde,
+Omkring mit Hierte kryber Dødens Kulde,
+Om det var Spaadom, Ven! ak! om vi skilles skulde.”
+
+    “Det skal I!” tordnede en Røst;
+Af Skræk betagen hun den neppe kiender;
+Med Gysen foer hun op fra Munkens Bryst,
+Og saae den nærmeste blandt sine Frænder.
+Tit Frænder troe, Naturen dem har givet
+Den Ret, ved Grumhed at forgifte Frænder Livet.
+
+    “Saa var dog ei min Møie spildt!
+Den Grusomme med piinlig Spot vedbliver:
+Snart ømme Par! snart skal du vorde skilt,
+Et Øieblik endnu jeg naadig eder giver.
+Hist din Prior, og hendes Frænder vente;
+I os ei undgaae skal; jeg iiler dem at hente.”
+
+    Han gaaer; lynslagne staaer de der,
+Tilsidst de synke i hinandens Arme;
+O! sukker hun: “den sidste Gang det er!
+Det sidste Favnetag! O! Himlen sig forbarme!
+O var og dette Aandedrag det sidste!
+O maatte i dit Favn din Piges Hierte briste.”
+
+    O! raaber han: “o hvis du vil!”
+Alt blinker Morderstaalet i hans Hænder.
+“Forstaaer jeg dig? o min Georg, stød til;
+O snart at frelse os fra mine grumme Frænder,
+De skal os ikke fra hinanden rive!
+Din leved' jeg, og din skal jeg i Døden blive!”
+
+    Selv styrer hun det grumme Stød,
+Og døende i Munkens Arme falder,
+Som Blomstret segner, er den huldes Død,
+Med svage brudte Røst hun sin Georg end kalder;
+“Georg, Georg! snart efter mig du iile!
+Ak hisset, hisset skal os ingen meere skille.”
+
+    End eengang stammer hun hans Navn,
+Og paa Georg det brustne Øie hænger.
+Han maalløs holder hende i sin Favn,
+Fortvivlelse, og Nag, og Harm ham giennemtrænger
+“Du kaldte mig! — du ædle, fromme, bliide!
+Jeg kommer! men ei tør jeg hvile ved din Side.”
+
+    End kysser han det kiære Liig,
+Og væbnet hen paa Naboehøien haster;
+Det heele Frændetog nu nærmer sig,
+Fortvivlet han paa dem det vilde Øie kaster.
+“Tilbage! tordner han: tilbage grumme!
+Maries Blod og mit paa eders Hoved komme!”
+
+    <w>Nu min Marie! nu til dig?</w>
+Han raabte, stødte til, og sank, og døde.
+Med Gysen man til begge skynder sig;
+Da aabnes begges Saar paa ny, og voldsomt bløde;
+Man gruende paa Stedet dem begraver,
+Og troer at sone Gud, og dem med Siælegaver.
+
+    En sælsom Gangstie endnu er
+Om Graven, under hvilken hun er jordet,
+Ved Midnatsstund Georg skal vandre der,
+Saaledes gaaer endnu i heele Egnen Ordet.
+Med veefuldt Sind og taarevædet Øie
+End ømme elskende besøge disse Høie.
+</body>
+</poem>
+
+</workbody>
 </kalliopework>
