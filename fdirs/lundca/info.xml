@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lundca" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>C.A.</firstname>
+    <lastname>Lund</lastname>
+    <fullname>Christen Andersen Lund</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1763-12-28</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1833-08-10</date>
+      <place>Keldby</place>
+    </dead>
+  </period>
+  
+  <works>1788,1836</works>
+</person>
