@@ -265,6 +265,7 @@
 'Jf/If',
 'Jl/Il',
 'ZE/Æ',
+'2E/Æ',
 'LE/Æ',
 'Wble/Æble',
 'Wdle/Ædle',
