@@ -64,6 +64,7 @@ const FootnoteList = () => {
       <style jsx>{`
         div.footnotes {
           margin-top: 0;
+          hyphens: auto;
         }
         :global(.footnote) {
           display: flex;
