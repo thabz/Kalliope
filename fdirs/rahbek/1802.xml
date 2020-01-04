@@ -15,14 +15,14 @@
         <picture src="1802-p2.jpg">Bærer dedikationen ,,Eleonore Ulfeldts / og / Landsbyekirkegaardens / ædle Sang / min sande Ven / C. A. Lund / helliget. // Med Vennehierte du, min Ungdoms Ven! / Af Vennehaand den ringe Skiænk modtage! / Kan den end ikke attisk Smag behage, / Vil Vennesind dog ei forskyde den.</picture>
     </pictures>
     <!-- TODO: Tilføj TOCTITLE efter indholdsfortegnelsen pdf siderne 233-238. -->
-    <source facsimile="115408000092_color.pdf" facsimile-pages-num="434" facsimile-pages-offset="239">Knud Lyne Rahbek: <i>Poetiske Forsøg, Anden Deel</i>, Joh. Fr. Schultz, Kbh., 1802.</source>
+    <source facsimile="115408000092_color.pdf" facsimile-pages-num="434" facsimile-pages-offset="236">Knud Lyne Rahbek: <i>Poetiske Forsøg, Anden Deel</i>, Joh. Fr. Schultz, Kbh., 1802.</source>
 </workhead>
 <workbody>
 
 <prose id="rahbek2019092501">
 <head>
     <title>Forerindring</title>
-    <source pages="VII-X" facsimile-pages="10" />
+    <source pages="VII-X" facsimile-pages="227-231" />
     <dates>
         <written>1802-09-18</written>
     </dates>
@@ -51,7 +51,7 @@ Meget længe har jeg staaet i Beraad med mig selv, inden jeg bestemte mig til at
         <line>hædret med dets Præmiering.</line>
     </subtitle>
     <firstline>Atter en Cypres i Laurbærlunden!</firstline>
-    <source pages="3-8"/>
+    <source pages="1-8"/>
     <keywords>bull,frimannph,vibe,wessel,fasting,wieland,colbjoernsen</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1222,10 +1222,10 @@ O intet Suk skal strænge Forbud bryde.
 
 <poem id="rahbek2020010415">
 <head>
+    <suptitle>1785</suptitle>
     <title>En Elegie</title>
     <firstline>Naar Jenas Skiald med Nordmands Varme maler</firstline>
     <source pages="65-69"/>
-    <!-- TODO: Sæt 1785 ind som suptitle -->
     <keywords>thaarup,pram,wessel,baggesen,faye,riber,frimannph</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1733,6 +1733,9 @@ At jeg sees, og elskes end af dig.
     <title>Til Kunstnerinden M. C. Biørn</title>
     <subtitle>(Efter Balletten den skinsyge Kone.)</subtitle>
     <firstline>Gratie! nu undres jeg ei længer</firstline>
+    <notes>
+        <note>Marie Christiane Bjørn, født Lorentzen (1763-1837), dansk danserinde og skuespillerinde.</note>
+    </notes>
     <source pages="89-91"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1942,8 +1945,10 @@ Hun bliver evig hans, han evig hendes,
     <title>Madrigal</title>
     <subtitle>(Efter Qvinault.)</subtitle>
     <firstline>Før skal, saa svor du Chloe, Bølgen tage</firstline>
+    <notes>
+         <note unknown-original-by="quinault" />
+    </notes>
     <source pages="99"/>
-    <!-- TODO: Marker som ukendt digt af quinault. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2681,13 +2686,13 @@ Vor gode Villie dog din Yndest vinde.
 
 <poem id="rahbek2020010443">
 <head>
+    <suptitle>Efter</suptitle>
     <title>En Forestilling af Grevinde Almaviva</title>
     <toctitle>Efter en Forestilling af Grevinde Almaviva</toctitle>
     <indextitle>Efter en Forestilling af Grevinde Almaviva</indextitle>
     <linktitle>Efter en Forestilling af Grevinde Almaviva</linktitle>
     <firstline>Veninde! paa Parnas en hastig Trætte</firstline>
     <source pages="134"/>
-    <!-- TODO: suptitle "Efter" -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2752,7 +2757,7 @@ Men meer end jeg, de ikke elske dig.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-En bedre Digter os fortalte,<note>* Vor <w>Tode</w>, som nyelia i et Vers, der maaskee er den smukkeste Compliment, vi eie paa dansk, til <w>Mad. B; som tilkiændte Rosen Skjønhedspriis</w>, havde sagt:<br/>O! du behøver ei at sige,<br/>Du har den smukkeste blandt Blomster kiær,<br/>Vi veed jo: <w>Lige elsker Lige</w>.</note>
+En bedre Digter os fortalte,<note>* Vor <w><a poet="tode">Tode</a></w>, som nyelig i et Vers, der maaskee er den smukkeste Compliment, vi eie paa dansk, til <w>Mad. B; som tilkiændte Rosen Skjønhedspriis</w>, havde sagt:<br/>O! du behøver ei at sige,<br/>Du har den smukkeste blandt Blomster kiær,<br/>Vi veed jo: <w>Lige elsker Lige</w>.</note>
 At mellem alle Blomster du
 Dig til din Yndling Rosen valgte.
 Da den er huld, og skiøn som du,
@@ -3031,7 +3036,10 @@ Og som jeg ønsker Eder det.
     <subtitle>(Efter Waller.)</subtitle>
     <firstline>Om Aftenen blev Adam skabt</firstline>
     <source pages="150"/>
-    <!-- TODO: Find originalen (Edmund Waller?) -->
+    <notes>
+        <note>Fri gendigtning af Edmund Waller: <xref type="translation" poem="waller2020010401"/>.
+        </note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3093,13 +3101,13 @@ Krandsen, jeg paa Urnen sætter hen,
 Længe Melpomenes Taare rinde,
         For sin tabte Ven.
 
-Til Digteren Falsen
-U:(I et Exemplar af Samsøs Skrifter.)
 </body>
 </poem>
 
 <poem id="rahbek2020010452">
 <head>
+    <title>Til Digteren Falsen</title>
+    <subtitle>(I et Exemplar af Samsøs Skrifter.)</subtitle>
     <firstline>Ven, som fortolked Melpomenes Savn</firstline>
     <source pages="153"/>
     <keywords>falsen,samsoe</keywords>
@@ -3127,12 +3135,13 @@ Naar jeg mig nægtet Krands seer Venners Tinding
     <subtitle>(Efter Littleton.)</subtitle>
     <firstline>Ei kom jeg Eders Skaansel at begiære</firstline>
     <source pages="154-155"/>
+    <notes>
+        <note>Gendigtning af George Lord Lyttelton: <xref type="translation" poem="lyttelton2020010301"/>.
+        </note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-lyttelton2020010301
-NOTE:Gendigtning af George Lord Lyttelton: <xref type="translation" poem="lyttelton2020010301"/>.
-
 Ei kom jeg Eders Skaansel at begiære,
 For Scener ak! hvis Digter ei er mere,
 Nei de, som han, imens han vandred' her
@@ -3687,15 +3696,13 @@ Og ingens Glæde som Hyrdindens var.
 Fyrstinde! min Camene nærmer sig;
 Hun ikkun Blomster har at byde dig;
 O! maae de tækkes Nordens Huldgudinde!
-
-
-TOCTITEL:Til C. A. Lund i en Afskrift af hans Digte
 </body>
 </poem>
 
 <poem id="rahbek2020010465">
 <head>
     <title>Til Digteren C. A. Lund</title>
+    <toctitle>Til C. A. Lund i en Afskrift af hans Digte</toctitle>
     <subtitle>(Foran i hans samlede Digte, afskrevne af en Veninde.)</subtitle>
     <firstline>Med Hyldest, Ven! modtag fra Vennehænder</firstline>
     <notes>
@@ -3726,7 +3733,7 @@ Den tredie ved landlig stille Grav
 Af Tungsinds veemodsmilende Camene
 Fik Brittebarden Gray<note>* <a poem="gray2019122601">Landsbyekirkegaarden</a>, Grays meest bekiendte Digterværk.</note>; i denne eene
 Hun Digterværd og Digternavn ham gav.
-Den fierde, Ven! du selv har ønsket dig<note><a poem="lundca2019122602">Lunden ved Jægerspriis</a>, Minerva Februari, 1788.</note>
+Den fierde, Ven! du selv har ønsket dig<note><a poem="lundca2019122602">* Lunden ved Jægerspriis</a>, Minerva Februari, 1788.</note>
 Den fordum Thomsens høie Lyra pryded',
 Dog — veed jeg ei — i Skottens Haand den lyded
 Ei nær saa sølvreen, hiine tre saa liig.
