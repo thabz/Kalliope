@@ -90,15 +90,15 @@ if (@wantsAndreXml)
     @andreXml = %{<?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="andre" author="#{@poetId}" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
+    <title>Andre digte</title>
+    <year>?</year>
 </workhead>
 <workbody>
 
 <poem id="#{@poetId}#{today}01">
 <head>
-   <title></title>
-   <firstline></firstline>
+    <title></title>
+    <firstline></firstline>
 </head>
 <body>
 </body>
