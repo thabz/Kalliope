@@ -766,8 +766,10 @@ lille, søde Kjærlighed,
     <title>Ne inducas -</title>
     <toctitle>Ne Inducas - Efter Shelley</toctitle>
     <firstline>Du klager haardt, at jeg Dig har forladt</firstline>
+    <notes>
+        <note unknown-original-by="shelley" />
+    </notes>
     <source pages="37"/>
-    <!-- TODO: Find originalen (Shelley) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1239,6 +1241,9 @@ over Steppen, der dirrer i flimrende Graat
     <title>Nocturne</title>
     <toctitle>Nocturne (Efter Em. Geibel)</toctitle>
     <firstline>Flad Strand og Klitsandsdyner</firstline>
+    <notes>
+        <note unknown-original-by="geibel" />
+    </notes>
     <source pages="54"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1473,9 +1478,12 @@ blev der ømt, hvor jeg fik Smæk!
 </content>
 </section> <!-- Lillerussiske Folkeviser XXI-XXV -->
 
-<section>
+<section id="lange2020010678">
 <head>
-    <title>Varja I-IV</title>
+    <title>Varja</title>
+    <toctitle>Varja I-IV</toctitle>
+    <subtitle>(Død 1881.)</subtitle>
+    <source pages="62-67"/>
 </head>
 <content>
 
