@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wieland" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Christoph Martin</firstname>
+    <lastname>Wieland</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1733-09-05</date>
+      <place>Oberholzheim, nær Biberach</place>
+    </born>
+    <dead>
+      <date>1813-01-20</date>
+      <place>Weimar</place>
+    </dead>
+  </period>
+  <works>1768,andre</works>
+</person>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="strunk" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Aage</firstname>
+    <lastname>Strunk</lastname>
+    <christened>Aage Peter Sørensen</christened>
+  </name>
+  <period>
+    <born>
+      <date>1897-10-25</date>
+      <place>Frederiksberg</place>
+    </born>
+    <dead>
+      <date>1949-11-03</date>
+    </dead>
+  </period>
+  
+  <works>1922</works>
+</person>

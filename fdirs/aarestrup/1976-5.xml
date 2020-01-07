@@ -127,6 +127,9 @@ Blidt toner det, som fjerne Sølverklokker:
     <title>Legende</title>
     <toctitle>Falk: Legende</toctitle>
     <firstline>I Bayerlandet, i Ingolstad</firstline>
+    <notes>
+        <note unknown-original-by="falk" />
+    </notes>
     <source pages="13-14"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -180,6 +183,9 @@ At savne sit lille spæde Noer.
     <toctitle>—: Til Taalmodigheden</toctitle>
     <firstline>En herlig Dyd vil jeg nu vove</firstline>
     <quality>korrektur1,kilde,side</quality>
+    <notes>
+        <note>Oversættelse af Johannes Falk: <xref type="translation" poem="falk2019093001"/>.</note>
+    </notes>
     <source pages="15-16"/>
 </head>
 <body>
@@ -238,7 +244,7 @@ Vi sees igjen, Taalmodighed!
     <toctitle>Fouqué: Afskedssang</toctitle>
     <firstline>Om Elsktes Dør sig Skjalden sneg</firstline>
     <notes>
-        <note>Gendigtning af »Der Sänger schlich um Liebchens Thür«.</note>
+        <note>Oversættelse af Fouqué: <xref type="translation" poem="fouque2019112501"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="17-18"/>
@@ -299,6 +305,9 @@ Med Citherspil og Sang.
     <toctitle>—: Trøstens Vise</toctitle>
     <firstline>Frisk, nye Menniskbilled</firstline>
     <quality>korrektur1,kilde,side</quality>
+    <notes>
+        <note unknown-original-by="fouque" />
+    </notes>
     <source pages="19-21"/>
 </head>
 <body>
@@ -392,6 +401,9 @@ I Herrens Jubelsang.
     <title>Afskedssang</title>
     <toctitle>—: Afskedssang</toctitle>
     <firstline>Daggry ligger lys og klar</firstline>
+    <notes>
+        <note unknown-original-by="fouque" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="22"/>
 </head>
@@ -528,6 +540,9 @@ Og Fremtiden Gud overlade.
     <title>Hymen og Amors Trupper</title>
     <toctitle>Götz: Hymen og Amors Trupper</toctitle>
     <firstline>Hymen laae engang i Baghold</firstline>
+    <notes>
+        <note unknown-original-by="goetz" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="26"/>
 </head>
@@ -552,6 +567,9 @@ Gjennemmarsch vi kun forlange.
     <title>Utroskaben</title>
     <toctitle>—: Utroskaben</toctitle>
     <firstline>Frygt ei min Ubestand! troer du at dine</firstline>
+    <notes>
+        <note unknown-original-by="goetz" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="26"/>
 </head>
@@ -570,6 +588,9 @@ Men andre kun, og kun for allersidste Gang.
     <title>Til en Knibsk</title>
     <toctitle>—: Til en Knibsk</toctitle>
     <firstline>Paa dine Kinder seer jeg Vaarens Blomsterhøie</firstline>
+    <notes>
+        <note unknown-original-by="goetz" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="27"/>
 </head>
@@ -591,6 +612,9 @@ Bar du ei Vintren i dit Hjerte!
     <toctitle>Gubitz: Degnens Eventyr</toctitle>
     <firstline>Henrykt end af Kysset, sidst jeg</firstline>
     <quality>korrektur1,kilde,side</quality>
+    <notes>
+        <note unknown-original-by="gubitz" />
+    </notes>
     <source pages="28-29"/>
 </head>
 <body>
@@ -723,6 +747,7 @@ Vil I mine Stjerner være,
     <toctitle>Schwab: Digter-Veer</toctitle>
     <firstline>Ikke veed jeg hvad jeg vil</firstline>
     <quality>korrektur1,kilde,side</quality>
+    <!-- TODO: Find originalen (Schwab) -->
     <source pages="32"/>
 </head>
 <body>
@@ -827,7 +852,7 @@ Naar man nu eengang maa?
     <toctitle>Assmann v. Abschatz: Elskovsdød</toctitle>
     <firstline>Nogle dræbe Staal og Kugler</firstline>
     <notes>
-        <note>Gendigtning af »Diesen tödtet Blei und Eisen«.</note>
+        <note>Gendigtning af Hans Aßmann Freiherr von Abschatz: <xref type="translation" poem="abschatz2019120701"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="35"/>
@@ -863,8 +888,7 @@ Elskov gjør, at jeg maa døe!
     <toctitle>—: Kjærlighed og Gjenkjærlighed</toctitle>
     <firstline>Hvortil denne søde Smalten</firstline>
     <notes>
-        <note>Hans Aßmann Freiherr von Abschatz (1646-1699), tysk statsmand og digter.</note>
-        <note>Gendigtning af »Wozu dient so süsses Blicken«.</note>
+        <note>Gendigtning af Hans Aßmann Freiherr von Abschatz: <xref type="translation" poem="abschatz2019120702"/>.</note>
     </notes>
     <source pages="36-37"/>
     <quality>korrektur1,kilde,side</quality>
@@ -984,6 +1008,7 @@ Ved et saa sødt Bedrag.
         <note>Gendigtning af »'Tis not your saying that you love«.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
+    <!-- TODO: Find originalen (Behn) -->
     <source pages="40"/>
 </head>
 <body>
@@ -1199,7 +1224,7 @@ Haab at let fra Skrub og Riis
     <toctitle>Beranger: Jeg veed det nok, man sladdrer om min Ære</toctitle>
     <firstline>Jeg veed det nok, man sladdrer om min Ære</firstline>
     <notes>
-        <note>Gendigtning af »Je sais fort bien que sur moi l'on babille«.</note>
+        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019120701"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="47"/>
@@ -1234,7 +1259,7 @@ Da jeg slap Naalen for Theatrets Ære,
     <toctitle>—: Katten</toctitle>
     <firstline>Du med dit Skrig mig plager</firstline>
     <notes>
-        <note>Gendigtning af »Tu réveilles ta maîtresse«.</note>
+        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019120702"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="48-49"/>
@@ -1295,7 +1320,7 @@ Miau! Miau! gaae ligedan.
     <toctitle>—: For vor Doctor og for hans Meriter</toctitle>
     <firstline>For vor Doctor og for hans Meriter</firstline>
     <notes>
-        <note>Gendigtning af »Saluons de maintes rasades«.</note>
+        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019120703"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="50-51"/>
@@ -1347,7 +1372,7 @@ Og lad os beholde vor Ven.
     <toctitle>—: Hanne</toctitle>
     <firstline>Fy, den Frue, som gjør sig lækker!</firstline>
     <notes>
-        <note>Gendigtning af »Fi, des coquettes maniérées«.</note>
+        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019120704"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="52-54"/>
@@ -1386,7 +1411,7 @@ Min lille Hanne, min Hannemoer!
 
 Og ved Bordet, ved et Gilde,
 Denne Uglspil hun kan spille
-Med en Fyr, om nok saa flin.
+Med en Fyr, om nok saa fiin.
 Hun med Dristighed sig værger,
 Synger smukt, er evig min;
 Paa mit Ord den Lille sværger,
@@ -1433,7 +1458,7 @@ Min lille Hanne, min Hannemoer!
     <toctitle>—: Min Republik</toctitle>
     <firstline>Nu mig Republikken behager</firstline>
     <notes>
-        <note>Gendigtning af »J'ai pris goût à la république«.</note>
+        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019120705"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="55-56"/>
@@ -1495,7 +1520,7 @@ Med Friheden er det forbi.
     <toctitle>—: Selv du vil ældes, som i Ungdom smiler</toctitle>
     <firstline>Selv du vil ældes, som i Ungdom smiler</firstline>
     <notes>
-        <note>Gendigtning af »Vous vieillirez, ô ma belle maîtresse«.</note>
+        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019120706"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="57-58"/>
@@ -1553,10 +1578,10 @@ Gjentag ved Lampen Digtet af din Ven.
 <poem id="aarestrup2019021229">
 <head>
     <title>Drømme</title>
-    <title>—: Drømme</title>
+    <toctitle>—: Drømme</toctitle>
     <firstline>Fjern fra en flygtig Lille</firstline>
     <notes>
-        <note>Gendigtning af »Loin d'une Iris volage«.</note>
+        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019120707"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="59-60"/>
@@ -2808,7 +2833,7 @@ Paafølges maaskee af et Smiil
     <title>Matrosfruen</title>
     <toctitle>Cunningham: Matrosfruen</toctitle>
     <notes>
-        <note>Gendigtning af »Come busk you gallantlie«.</note>
+        <note>Gendigtning af Allan Cunningham: <xref type="translation" poem="cunningham2019090803"/>.</note>
     </notes>
     <firstline>Kom, Pige, snør dig rank</firstline>
     <quality>korrektur1,kilde,side</quality>
@@ -2861,7 +2886,7 @@ Og vær vor Dronning, Anna.
     <toctitle>—: Har I vel seet min Hjertenskjær?</toctitle>
     <firstline>Har I vel seet min Hjertenskjær</firstline>
     <notes>
-        <note>Gendigtning af »Know ye the fair one whom I love«.</note>
+        <note>Gendigtning af Allan Cunningham: <xref type="translation" poem="cunningham2019090802"/>.</note>
     </notes>
     <source pages="102-103"/>
     <quality>korrektur1,kilde,side</quality>
@@ -2912,7 +2937,7 @@ Den kan vort Elskovsblik forstaae.
     <toctitle>—: Sømandssang</toctitle>
     <firstline>Vaadt Skjøde og et Hav i Skum</firstline>
     <notes>
-        <note>Gendigtning af »A wet sheet and a flowing sea«.</note>
+        <note>Gendigtning af Allan Cunningham: <xref type="translation" poem="cunningham2019090801"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="104"/>
@@ -2955,7 +2980,7 @@ Behængt med Havets Skum.
     <toctitle>—: Den kjække Hak Humle</toctitle>
     <firstline>Gaa, søg i hiin Bjergkløft</firstline>
     <notes>
-        <note>Gendigtning af »Go seek ind the wild glen«.</note>
+        <note>Gendigtning af Allan Cunningham: <xref type="translation" poem="cunningham2019090804"/>.</note>
     </notes>
     <source pages="105-106"/>
     <quality>korrektur1,kilde,side</quality>
@@ -3506,6 +3531,7 @@ Just i dette Øieblik.
         <note>Gendigtning af »Tu jam purpurea sola cubans toro«.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
+    <!-- TODO: Find originalen (Grotius) -->
     <source pages="122-123"/>
 </head>
 <body>
@@ -4482,7 +4508,7 @@ Sætter sig ved din Seng og strikker.
     <toctitle>Hemans: En landflygtig Øboers Sang</toctitle>
     <firstline>Hvor er min Sø, mit blanke Speil</firstline>
     <notes>
-        <note>Gendigtning af Hemans: »Where is the sea? - I languish here -«.</note>
+        <note>Gendigtning af Felicia Hemans' <xref type="translation" poem="hemans2019072001"/>.</note>
         <!-- Aarestrups kilde er angivet som Songs of Eng[land and Scotland] 1 Del 272. -->
         <!-- Ms.: dateret 16 August 1838 -->
     </notes>
@@ -4561,6 +4587,9 @@ Og snapper dem alle baade.
     <toctitle>Houwald: Sjælevandringen</toctitle>
     <firstline>Naar jeg for Planten stille staaer</firstline>
     <quality>korrektur1,kilde,side</quality>
+    <notes>
+        <note unknown-original-by="houwald" />
+    </notes>
     <source pages="156-157"/>
 </head>
 <body>
@@ -4628,7 +4657,7 @@ Fordi det Alt er i mit Bryst?
     <toctitle>Hugo: De første Skarer er forsvundne</toctitle>
     <firstline>De første Skarer er forsvundne</firstline>
     <notes>
-        <note>Gendigtning af »La fiancée du timbalier« (Monseigneur le duc de Bretagne).</note>
+        <note>Gendigtning af Vicor Hugo: <xref type="translation" poem="hugo2019112501"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="158"/>
@@ -4657,7 +4686,7 @@ Ha — livløs faldt hun om i Vrimlen. -
     <toctitle>—: La Fée et la Péri</toctitle>
     <firstline>Børn! Naar I døe, vogt eder vel, at en Aand</firstline>
     <notes>
-        <note>Gendigtning af »La Fée et la Péri« (Enfants! si vous mouriez, gardez bien qu'un esprit).</note>
+        <note>Gendigtning af Vicor Hugo: <xref type="translation" poem="hugo2019112502"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="159-168"/>
@@ -5459,7 +5488,7 @@ Bøddel, i din brune Hals!
 <poem id="aarestrup2019021126">
 <head>
     <title>Extase</title>
-    <title>—: Extase</title>
+    <toctitle>—: Extase</toctitle>
     <firstline>Jeg var ene ved Havet, ingen Sky paa Himlen</firstline>
     <notes>
         <note>Gendigtning af Victor Hugo: <xref type="translation" poem="hugo2019021201"/>.</note>
@@ -5711,6 +5740,7 @@ Var mig ei Æren dyr.
         <note>Oversættelse af Lib. 1. epig. 73.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
+    <!-- TODO: Find originalen (Martial) -->
     <source pages="195"/>
 </head>
 <body>
@@ -5732,6 +5762,7 @@ Krybskytter øve din Dont - Du er unægtelig snild!
         <note>Oversættelse af Lib. 1. epig. 46.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
+    <!-- TODO: Find originalen (Martial) -->
     <source pages="195"/>
 </head>
 <body>
@@ -5750,6 +5781,7 @@ Og hvis selv du har Hast, siig det, saa giver jeg Tid.
     <toctitle>Martin: Byttet</toctitle>
     <firstline>Mig disse Blomsters Valg og dette</firstline>
     <quality>korrektur1,kilde,side</quality>
+    <!-- TODO: Find originalen (Martin) -->
     <source pages="196"/>
 </head>
 <body>
@@ -5785,6 +5817,7 @@ Yndige Digt, du her har sagt.
     <notes>
         <note>Oversættelse af Ambrosius Mezger: »Spazieren wollt ich reiten«.</note>
     </notes>
+    <!-- TODO: Find originalen (Mezger) -->
     <quality>korrektur1,kilde,side</quality>
     <source pages="197-198"/>
 </head>
@@ -6117,7 +6150,7 @@ Skal vogte Ilden, tændt af Dig!
     <indextitle>Til -</indextitle>
     <firstline>O dette Øiekast - see væk!</firstline>
     <notes>
-        <note>Thomas Moore: »Sweet lady! look not thus again«.</note>
+        <note>Oversættelse af Thomas Moore: <xref type="translation" poem="moore2018111201"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="207"/>
@@ -6266,8 +6299,7 @@ Og ingen Snak meer om saa lidt.
     <indextitle>Til den meget lille JFR</indextitle>
     <firstline>Denne Galskabsjournal er et Billed paa mig</firstline>
     <notes>
-        <note>Thomas Moore: »This journal of folly's an emblem of me«.</note>
-        <!-- Find original: https://books.google.dk/books?id=y2o_AAAAYAAJ&dq=This%20journal%20of%20folly's%20an%20emblem%20of%20me&hl=da&pg=PA281#v=onepage&q=This%20journal%20of%20folly's%20an%20emblem%20of%20me&f=false -->
+        <note>Oversættelse af Thomas Moore: <xref type="translation" poem="moore2019090701"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="212"/>
@@ -6317,7 +6349,7 @@ At jeg maa bede: stands dem ikke!
     <subtitle>|: et Postkaret-Eventyr :|</subtitle>
     <firstline>Da ind i Kareten du satte din Fod</firstline>
     <notes>
-        <note>Gendigtning af »Sweet Fanny of Timmol! when you first came in«.</note>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2019090702"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="214-215"/>
@@ -6424,7 +6456,7 @@ Undtagen dem af Himlens Vinde?
     <toctitle>—: Ode til Morgenen</toctitle>
     <firstline>Kom vend dig, Glut! Daggryet paa</firstline>
     <notes>
-        <note>Gendigtning af »Turn to me, love! the morning rays«.</note>
+        <note>Oversættelse af Thomas Moore: <xref type="translation" poem="moore2019090703"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="218-219"/>
@@ -6769,7 +6801,7 @@ Og roe deres hvide Kanoe.
     <toctitle>—: O lad os ei ved Stranden mere</toctitle>
     <firstline>O lad os ei ved Stranden mere</firstline>
     <notes>
-        <note>Gendigtning af »I pray you, let us roam no more«.</note>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2019090704"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="229-230"/>
@@ -6827,7 +6859,7 @@ Det bliver vor Ruin.
     <toctitle>—: I Anledning af et tabt Brev</toctitle>
     <firstline>O det var fuldt af Fyr og Flamme</firstline>
     <notes>
-        <note>Gendigtning af »Oh! it was fill'd with words of flame«.</note>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2019090705"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="231-232"/>
@@ -6883,7 +6915,7 @@ Jeg, som kan bedre Sager drømme.
     <toctitle>—: Et Kys à l'antique</toctitle>
     <firstline>Betragt, min Glut! den sjeldne Gemme</firstline>
     <notes>
-        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2018111205"/>.</note>
+        <note>Gendigtning af første del af Thomas Moore: <xref type="translation" poem="moore2018111205"/>.</note>
     </notes>
     <source pages="233-234"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6944,7 +6976,7 @@ Og saadan - kysser jeg din Mund!
     <toctitle>—: Intet Ord er hørt, intet Blik jeg saae</toctitle>
     <firstline>Intet Ord er hørt, intet Blik jeg saae</firstline>
     <notes>
-        <note>Gendigtning af »There's not a look, a word of thine«.</note>
+        <note>Gendigtning af anden del af Thomas Moores <xref type="translation" poem="moore2018111205,37-56"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="235"/>
@@ -7616,7 +7648,7 @@ Men giem blot Taarerne til mig!
     <toctitle>—: Vil du?</toctitle>
     <firstline>Vil du komme til Hytten, saa skyggefuld, smuk</firstline>
     <notes>
-        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2018121006"/>.</note>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2018121015"/>.</note>
     </notes>
     <source pages="256"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7653,7 +7685,7 @@ End duftende Roser og selv dine Kys!
     <indextitle>Amor og Hymen</indextitle>
     <firstline>Amor var syg - han laae og vreed</firstline>
     <notes>
-        <note>Oversættelse af »Love had a fever - ne'er could close«.</note>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908235"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="257"/>
@@ -7681,7 +7713,7 @@ At skaffe Amor Ro og Hvile
     <indextitle>Hvis fri for trykkende Domme</indextitle>
     <firstline>Hvis fri for trykkende Domme</firstline>
     <notes>
-        <note>Oversættelse af »If ever you've seen a gay party«.</note>
+        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2019090801"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="258"/>
@@ -8509,6 +8541,9 @@ Gaa, Stjerne, Maane, Sol! Meld mig hos eders Herre!
     <linktitle>Aphorismer</linktitle>
     <firstline>Mod Kjærlighed Forstanden har den Skik</firstline>
     <quality>korrektur1,kilde,side</quality>
+    <notes>
+        <note unknown-original-by="rueckert" />
+    </notes>
     <source pages="287-290"/>
 </head>
 <body>
@@ -8622,6 +8657,9 @@ Og Dig intet Slemt er truffet.
     <toctitle>—: Ritorneller</toctitle>
     <firstline>Giv mig at drikke!</firstline>
     <quality>korrektur1,kilde,side</quality>
+    <notes>
+        <note unknown-original-by="rueckert" />
+    </notes>
     <source pages="291-293"/>
 </head>
 <body>
@@ -8714,8 +8752,7 @@ Gudsdød! ham hugger jeg i tusind Stykker.
     <toctitle>Sallet: Og om de end mit Øie blænde</toctitle>
     <firstline>Og om de end mit Øie blænde</firstline>
     <notes>
-        <note>Gendigtning af Sallet: »Und wollten sie mein Aug' auch blenden«.</note>
-        <!-- Oversat efter Gesammelte Gedichte, 1843, p. 397. -->
+        <note>Gendigtning af Friedrich von Sallet: <xref type="translation" poem="sallet2019090801"/>.</note>
     </notes>
     <source pages="294"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8751,8 +8788,7 @@ Har dræbt en enkelt Nattergal.
     <toctitle>—: Aut, aut</toctitle>
     <firstline>O, hvis jeg var en Tømmermand</firstline>
     <notes>
-        <note>Gendigtning af Sallet: »Und wenn ich wär' ein Zimmermann«.</note>
-        <!-- Oversat efter Gesammelte Gedichte, 1843, p. 400. -->
+        <note>Gendigtning af Friedrich von Sallet: <xref type="translation" poem="sallet2019090802"/>.</note>
     </notes>
     <source pages="295-296"/>
     <quality>korrektur1,kilde,side</quality>
@@ -8873,6 +8909,7 @@ Tilbede kun Naturens Gud.
     <toctitle>Vogel: Serenaden</toctitle>
     <firstline>Donna Laura, Donna Laura!</firstline>
     <source pages="299-301"/>
+    <!-- TODO: Find originalen (Vogel) -->
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8951,6 +8988,9 @@ Gaae paa Gangene og lytte.
     <toctitle>Waiblinger: Af Skjønt og Godt i fordums Dage</toctitle>
     <firstline>Af Skjønt og Godt i fordums Dage</firstline>
     <source pages="302-303"/>
+    <notes>
+        <note unknown-original-by="waiblinger" />
+    </notes>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9013,6 +9053,9 @@ Sat for en Faareost i Pant.
     <title>Jeg mangen Tone sang med Smerte</title>
     <toctitle>—: Jeg mangen Tone sang med Smerte</toctitle>
     <firstline>Jeg mangen Tone sang med Smerte</firstline>
+    <notes>
+        <note unknown-original-by="waiblinger" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="304"/>
 </head>
@@ -9050,6 +9093,9 @@ En saadan Nat kan ligne Døden.
     <title>Det romerske Carneval</title>
     <toctitle>—: Det romerske Carneval</toctitle>
     <firstline>Og hvorfor ei, muntre Muse</firstline>
+    <notes>
+        <note>Gendigtning af Wilhelm Waiblinger: <xref type="translation" poem="waiblinger2019090801"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="305-321"/>
 </head>
@@ -9635,10 +9681,10 @@ Som før: nei, vi er syv!
 <poem id="aarestrup20190130190" variant="aarestrup2018111223">
 <head>
     <title>Mynstringen ved Midnat</title>
-    <toctitle>Zetlitz: Mynstringen ved Midnat</toctitle>
+    <toctitle>Zedlitz: Mynstringen ved Midnat</toctitle>
     <firstline>Tambouren staaer af Graven</firstline>
     <notes>
-       <note>Gendigtning af Joseph Christian von Zedlitz (1790-1862): »Nachts um die zwölfte Stunde«..</note>
+        <note>Gendigtning af Joseph Christian von Zedlitz: <xref type="translation" poem="zedlitz2019120701"/>.</note>
     </notes>
     <source pages="326-330"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9736,6 +9782,9 @@ Ved Midnatstid i Byen.
     <linktitle>Efter Daumers »Hafis«</linktitle>
     <indextitle>Efter Daumers »Hafis«</indextitle>
     <firstline>Vil du paa eengang vise</firstline>
+    <notes>
+        <note unknown-original-by="daumer" />
+    </notes>
     <source pages="331-338"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -10010,6 +10059,9 @@ Saa farvel! saa siig: begrav ham nu!
     <linktitle>Efter Daumers »Mahomed«</linktitle>
     <indextitle>Efter Daumers »Mahomed«</indextitle>
     <firstline>Mod Slangens Hoved</firstline>
+    <notes>
+        <note unknown-original-by="daumer" />
+    </notes>
     <source pages="339-341"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -10463,6 +10515,9 @@ Det kan du tro.
     <title>Hurra Courage, Bagage</title>
     <quality>korrektur1,kilde,side</quality>
     <source pages="357-358"/>
+    <notes>
+        <note unknown-original-by="bellman" />
+    </notes>
 </head>
 <body>
   Hurra Courage, Bagage! God Dag, Brødre! friskt i Flasken! Væk med Damspillet. Du Beegbuxe med din lange hollandske Pibe der. Du skal blive Dam-Jan. Slaa i og sup mig til. Hirr! det lyner ud af Skydehullerne. Peter Iversen kommer fra Bourdeaux. Han ligger jo i Kattegat, Canaille. Godtaar! han kommer fra Danzig. Ja det gjør han. Seer du det røde Flag? det er blaat! Nok en Sopken! Skaal! Det er rødt, siger jeg. Det er grønt, siger jeg. Hurra! Hurra! Hurra! stryg paa Violerne. Tag Vinduerne i Agt. Hei Piger! sving med Hattene. Ræk Ølkruset hid. Klink og drik. Godtaar Fader Berg! Det skal være Petter Iversens Skaal. Hei sa! Topseilets Skaal! Jeg har den Ære at drikke Topseilets Skaal. Hei hvilke Tolvpundinger! Hurra! Hurra! Hurra! Nu faae vi Viin og Danziger Dobbeltbier, Flasker med Sølv-Tulpaner i Kanterne og Guldbrændeviin. Gnid Violinerne. Stød i Trompeterne. Byd op til Dandsen. Dands I Poppegøier. Blæs I Varulve. Saa til Helvede, Søegreen, kan du faae Lyst til en Hex med sort Flonellskjole, et Par røde Boucles de Nuit, og en barbenet Fod med en udtrædt Triumphants Tøffel? Søegreen! hør du Søegreen? Hvad tykkes dig om hende med den gule Damastkjole og Kalminkslivstykket? Han som staaer barfodet der og skruer paa Basviolen. Hør du Søegreen. Werda! Hvem er det? Hei der kommer en Tydsker. Det er, en Italiener er det, med de tolf Apostler paa Ryggen. Hvad koster Kong David til Hest med en Løber foran sig? Acht Schtiber. Ta mej sju tusan! alla ä di från Bourdeaux. Gutår! Hej flickor! God Dag Herre! Gutår Herre! Dolce Vino della Place. Hei han tycker om Calase. Än en Sup. L'ira di Dio arrivera bentosto a questa città. Regera og besitta! Si paa Dansken hur han svänger sig. Rask Farlille. Sup ellers skal vi banke dig. Blir du bange? I Ægtemænds Horer! I Rumpevrikkere! Er der ingen Skam i Jer? Tør I raabe saadan udi Borgemesterens Gade, Fanden selv maa logere paa Raadhuset. Gebjørnamat. Hei blæs i Trompeterne! God dam you! How do you do? Machen Sie mir kein Schpasen nicht. Palla vinno ja olta tånne. Hurra! Blæs i Trompeterne.

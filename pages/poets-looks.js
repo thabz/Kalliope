@@ -10,12 +10,13 @@ import Nav from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import Tabs from '../components/tabs.js';
 import Heading from '../components/heading.js';
-import PoetName, { poetNameString } from '../components/poetname.js';
+import PoetName from '../components/poetname.js';
+import { poetNameString } from '../components/poetname-helpers.js';
 import Picture from '../components/picture.js';
-import * as Sorting from './helpers/sorting.js';
-import * as Strings from './helpers/strings.js';
-import CommonData from '../pages/helpers/commondata.js';
-import { createURL } from './helpers/client.js';
+import * as Sorting from '../common/sorting.js';
+import * as Strings from '../common/strings.js';
+import CommonData from '../common/commondata.js';
+import { createURL } from '../common/client.js';
 import type {
   Lang,
   Country,
@@ -24,7 +25,7 @@ import type {
   SortReturn,
   SectionForRendering,
   PictureItem,
-} from './helpers/types.js';
+} from '../common/types.js';
 
 type GroupBy = 'name' | 'year';
 

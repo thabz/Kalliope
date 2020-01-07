@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="logan" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Logan</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1748</date>
+      <place>Soutra, Midlothian, Skotland</place>
+    </born>
+    <dead>
+      <date>1788-12-28</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

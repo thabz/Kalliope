@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="kipling" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Rudyard</firstname>
+    <lastname>Kipling</lastname>
+    <fullname>Joseph Rudyard Kipling</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1865-12-30</date>
+      <place>Bombay, Indien</place>
+    </born>
+    <dead>
+      <date>1936-01-18</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>1891,1894,1895</works>
+</person>

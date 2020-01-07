@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="blicher" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Steen Steensen</firstname>
+    <lastname>Blicher</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1782-10-11</date>
+      <place>Vium, Jylland</place>
+    </born>
+    <dead>
+      <date>1848-03-26</date>
+      <place>Spentrup, Jylland</place>
+    </dead>
+  </period>
+  <works>1807,1814,1817,1824,1825,1826,1837,1838,andre,1847</works>
+</person>

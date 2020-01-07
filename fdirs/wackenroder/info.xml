@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wackenroder" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Wilhelm Heinrich</firstname>
+    <lastname>Wackenroder</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1773-07-13</date>
+      <place>Berlin</place>
+    </born>
+    <dead>
+      <date>1798-02-13</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

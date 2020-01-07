@@ -11,7 +11,7 @@
    <pictures>
        <picture type="titlepage" src="1884-p1.jpg">Titelbladet til <i>Dybe Strenge</i> (1884). ,,Dybe Strenge. / Digte og Sange / af / Holger Drachmann. // København. / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn). / Trykt hos J. Jørgensen &amp; Co. / 1884.''</picture>
    </pictures>
-   <quality>korrektur1,kilde,side</quality>
+   <source facsimile="11530805180C_color" facsimile-pages-num="154" facsimile-pages-offset="14">Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884.</source>
 </workhead>
 <workbody>
 
@@ -19,9 +19,7 @@
 <head>
     <title>Til Emil og Anna Poulsen</title>
     <firstline>Hvad længe jeg har pønset paa, hvad tidt jeg har til Side lagt</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, p. ii.</note>
-    </notes>
+    <source pages="iii-iv" facsimile-pages="11-13"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -41,14 +39,13 @@ Hil sidde I da, Mand og Viv, ved Disk og Dug, om Bord og Fad,
 med Børneflok og Bogreol, ved Bog og Vugge lige glad,
 med Hjærtet ungt og Sindet lyst og Haanden ubehandsket:
     Tak for det Haandslag, Venner!
-    det er dog ej forfransket.
+    <w>det</w> er dog ej forfransket.
 
 Stolt troner Frankrigs gode Kunst; den ægte fik vort Hyldingsraab,
 men I, saa lidt som jeg, er med at holde Skifting over Daab;
 i Kunst og Liv en Afart gør kun Frankrig liden Ære:
     i Kunsten og i Livet
-    I To vil danske være!
-
+    I To vil <w>danske</w> være!
 
 Og jeg har set paa Scenen Dig, og hvad Du skabte dér som vort,
 og jeg harset i Hjemmet Dig, og dér var Sminken strøget bort,
@@ -81,9 +78,7 @@ ja takker Jer for den Kritik, hvortil og jeg kan trænge:
     <title>Giuseppe Garibaldi</title>
     <subtitle>1882 (Juni)</subtitle>
     <firstline>Giv, Gud, der satte Folk paa Frihedsvagt</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 3-11.</note>
-    </notes>
+    <source pages="3-11"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -328,9 +323,7 @@ det er Garibaldi, som rykker i Marken paa
     <title>Leon Gambetta (og vi selv)</title>
     <subtitle>1883</subtitle>
     <firstline>Tungt flytter Aaret frem den store Væv</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 12-30.</note>
-    </notes>
+    <source pages="12-30"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -838,9 +831,7 @@ saa dør vi ej — thi det gør ej de <w>Stærke</w>.
 <head>
     <title>Grundtvigs Hundredaarsdag</title>
     <firstline>Her, hvor de store</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 31-40.</note>
-    </notes>
+    <source pages="31-40"/>
     <keywords>grundtvig,luther</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -973,6 +964,62 @@ fra Testamentet,
 spøgende, lune
 Legestu’ Løjer
 dansed med Pennen
+og flød med Ordet
+som Blomster, der flyde
+ned ad en Strøm
+og spredes i mange smaa krusede Hvirvler.
+
+---
+
+Jeg lodder ej Dybden
+af Præstens Tro;
+dertil staar jeg udenfor selv.
+Stundom syntes
+han mig Profeten:
+Ildsluer bølged
+under hans Bryn,
+og det var, som en Reformation
+skulde avles paany
+af denne Præste-Skjald;
+men ofte saa’ jeg '
+Profeten svinde
+bag en Sky af Skjaldeord,
+sære, folkebetagende,
+men dunkle.
+
+Stundom tænkte jeg:
+Synd og Skade,
+at ej denne Gubbe
+fremstod for tusind Aar siden,
+Odins, Thors og Frejrs Præst,
+der førte sit Folk
+med Sværd i Haand
+til Hærtog mod Roma.
+
+Og atter, naar Skægget
+skred som en hvid Elv
+ned ad den side, sorte Fløjelsdragt
+og han hæved den tunge Arm
+og Haanden halv knyttet:
+da saa’ jeg en Elfenbenskrumstav
+krystet af Haanden,
+en Ærkebisphue
+trykket om den brede Pande;
+Ringen paa den kødfulde Finger
+funkled og lyste
+Band og Velsignelse
+skiftevis over de vaklende Sjæle.
+
+Men han var Bisp i Danmark
+lang Tid efter Hedenold,
+lang Tid efter Pavevælde,
+og, ak,
+lang Tid endog efter Reformationen.
+
+---
+
+Her fra den fremmede Strand
+lader jeg Blikket glide
 tilbage til mit Land:
 Velsignede Du!
 lidet som Du er,
@@ -1047,14 +1094,12 @@ til en Fuldrigger!
     <title>Martin Luther</title>
     <subtitle>1883. (Novbr.)</subtitle>
     <firstline>Hvad er det for en vældig Flod</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 41-47.</note>
-    </notes>
+    <source pages="41-47"/>
     <keywords>luther</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-I.
+<nonum><center>I.</center></nonum>
 
 Hvad er det for en vældig Flod,
 som breder sig, som Fod for Fod
@@ -1093,7 +1138,7 @@ men vasker først, fra Taa til Top,
 sig ren, mens Badevandet stedse syder?
 
 
-II.
+<nonum><center>II.</center></nonum>
 
 Han tog sig et Bad i den hellige Skrift,
 saa stod han ren til den store Bedrift —
@@ -1135,7 +1180,7 @@ først klapper — saa klipper man sine Faar;
 Munkene kævles — Kirken bestaar,
 
 
-III.
+<nonum><center>III.</center></nonum>
 
 De brødes i Dage, de sloges i ti,
     de fægted i fjorten tillige,
@@ -1184,7 +1229,7 @@ det ringer derud gennem Domkirkens Glug
     det ringer til Reformationen.
 
 
-IV.
+<nonum><center>IV.</center></nonum>
 
 Op, alle Mænd, som Gud har skabt,
 ja skabt dem i sit Billed!
@@ -1239,9 +1284,7 @@ og Martin Luther brændte den —
     <title>Beethoven</title>
     <subtitle>(Niende Symfoni)</subtitle>
     <firstline>Hu—i! hu- i!</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 48-65.</note>
-    </notes>
+    <source pages="48-65"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1547,7 +1590,7 @@ I Brynde blev jeg til, i Smærter født!
 nødt blev jeg, nødt
 til at betale Gæld, som jeg ej stifted;
 og hver Gang redelig jeg skrifted,
-hvor fik jeg Aflad da, hos hvem ... ?
+hvor fik jeg Aflad da, hos hvem ...?
 ak, Mennesket er som et Skovens Vildt,
 har ikke Hus, har ikke Hjem;
 de tusind Gaver blev langs Vejen spildt,
@@ -1658,7 +1701,7 @@ Bjærgenes Gaade: Grubens Ædelsten,
 Havdybets Pryd: de Perlemoders Skaller,
 Vinstokkens Drøm: Gulddruen paa sin Gren —
     hvad er rent som Lyset,
-    klart som Morgentanken ?
+    klart som Morgentanken?
     kan hint Guld paa Ranken
     lignes ved Guds Sol?
 Nu staar Gud fra Lejet, ser fra Pol til Pol,
@@ -1718,9 +1761,7 @@ skal Menneskene danne Hæders Garde!
     <title>Danmark</title>
     <subtitle>(Nytaarsdigt 1884.)</subtitle>
     <firstline>Vi aander en Luft; — den er vor, den er vor</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 69-71.</note>
-    </notes>
+    <source pages="69-71"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1791,9 +1832,7 @@ Til Forsvar for Danmark, i Sejer, i Nød!
 <head>
     <title>Gennembruddets Mænd</title>
     <firstline>Herfrem, herfrem, I gæve Mænd</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 72-74.</note>
-    </notes>
+    <source pages="72-74"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1869,9 +1908,7 @@ og holder Danmark <w>nyfødt</w> over Daaben!
 <head>
     <title>Kærlighedserklæring</title>
     <firstline>Ja — hvo, som ej har tvivlet</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 75-77.</note>
-    </notes>
+    <source pages="75-77"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1941,9 +1978,7 @@ og saa: al Ufreds Færd, Godnat! -
 <head>
     <title>Skuemønten</title>
     <firstline>Smudsigt, mat og tomt er Livet!</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 78-80.</note>
-    </notes>
+    <source pages="78-80"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2031,9 +2066,7 @@ kend Dig selv — og kom til Ro!
 <head>
     <title>Aftenstemning</title>
     <firstline>Stille staar den brune, dunkle Lund</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 83-84.</note>
-    </notes>
+    <source pages="83-84"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2065,9 +2098,7 @@ Stjærnesmykkers hundred, tusind Led:
 <head>
     <title>Morgen</title>
     <firstline>Nu vaagner paa Grene til Hvisken hver Sisken</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 85-86.</note>
-    </notes>
+    <source pages="85-86"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2108,9 +2139,7 @@ han skriver et morgenfriskt Vers til den Nymfe,
 <head>
     <title>Middagshvile</title>
     <firstline>Ind gennem Gavl-Gluggen stjæler sig Humlen</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 87-88.</note>
-    </notes>
+    <source pages="87-88"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2150,9 +2179,7 @@ sveder i Stilhed og fløjter en Dans.
 <head>
     <title>Nat</title>
     <firstline>Dit Fodtrins Lyd dør hen, dør ned i Uld</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 89-90.</note>
-    </notes>
+    <source pages="89-90"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2194,9 +2221,7 @@ en Søvn, saa kysk som Nattens hvide Sne.
     <title>Mønstring</title>
     <subtitle>(Dcbr. 1882.)</subtitle>
     <firstline>Appellen lød. Major, Kaptejn, Sergent</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 93-95.</note>
-    </notes>
+    <source pages="93-95"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2256,9 +2281,7 @@ men hvis paa Arnens Guder ej Du tror:
     <title>Til En -</title>
     <subtitle>(Januar 1883.)</subtitle>
     <firstline>Til En, som for min Ungdoms Tanke stod</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 96-99.</note>
-    </notes>
+    <source pages="96-99"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2362,13 +2385,11 @@ Held mig, jeg kan alt skrive: hun er funden.
 <head>
     <title>Moral</title>
     <firstline>Moral — Moral? Lad Lidenskaben hæve</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 100-109.</note>
-    </notes>
+    <source pages="100-109"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-I.
+<nonum><center>I.</center></nonum>
 
 Moral — Moral? Lad Lidenskaben hæve
 sin Fakkel højt i nøgen, marvfuld Arm:
@@ -2465,7 +2486,7 @@ Held dobbelt den, som Lovens Bogstav lyder!
 — held ogsaa den, som faldt med ærligt Saar.
 
 
-II.
+<nonum><center>II.</center></nonum>
 
 Kast disse Bøger, Dreng, paa Ilden fluks,
 og svar mig ej, at de blev anbefalet
@@ -2483,7 +2504,7 @@ saa maa man hævde dog, at <w>Plet</w> er <w>Plet</w>; —
 brænd disse Bøger, før de selv Dig brænder.
 
 
-III.
+<nonum><center>III.</center></nonum>
 
 De kalder det en »Skole«. Ja, saamænd! —
 Skal <w>vore</w> Drenge sættes dér i Skole?
@@ -2521,7 +2542,7 @@ og sæt det over »Stilens« Glød i Kog
 og byd vor Ungdom det som dens Romaner.
 
 
-IV.
+<nonum><center>IV.</center></nonum>
 
 Lad vore Sønner tage Skovl i Haand,
 lad Kvinden kaste bort Korsettets Baand,
@@ -2545,7 +2566,7 @@ Bliv sund, bliv stærk, ryd Krattets stive Tjørn,
 tærsk, pløj og kærn — og dermed Gud befalet!
 
 
-V.
+<nonum><center>V.</center></nonum>
 
 Thi hvad vi tror, og hvordan end vi former
 det Billed os, hvori vi til er blevet:
@@ -2590,9 +2611,7 @@ til Sangen, som om Sommer bringer Bud —
 <head>
     <title>De bedste Timer</title>
     <firstline>De bedste Timer; — var det dem, jeg nød</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 110-111.</note>
-    </notes>
+    <source pages="110-111"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2625,9 +2644,7 @@ Erindrings Taaren over skyldfri Dage.
 <head>
     <title>I Kloster</title>
     <firstline>Sig, tænkte Du tidt ej at træde</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 112-113.</note>
-    </notes>
+    <source pages="112-113"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2662,13 +2679,11 @@ Hjærtet er selv et Kloster,
 <head>
     <title>Det Abnorme — det Normale</title>
     <firstline>Jeg giver hundred Nætters Elskovsrus</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 114-116.</note>
-    </notes>
+    <source pages="114-116"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-I.
+<nonum><center>I.</center></nonum>
 
 Jeg giver hundred Nætters Elskovsrus
 for én Dag tilbragt ved et køligt Krus
@@ -2694,7 +2709,7 @@ og sætte Krans paa Tag med et: Hurra! —
 den kan, som Muldjordsduft, min' Sjæl beruse.
 
 
-II.
+<nonum><center>II.</center></nonum>
 
 Træd frem, I Dage, med Feber, med Hede,
 med overnaturligt skærpede Blikke,
@@ -2722,9 +2737,7 @@ Saa vil vi mod det i Kamp os vove:
 <head>
     <title>Hytternes Sang</title>
     <firstline>Se os, her ligger vi, jordløse, smaa</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 117-121.</note>
-    </notes>
+    <source pages="117-121"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2839,9 +2852,7 @@ Vandrer! ifald Du vil Livet forstaa:
 <head>
     <title>Godt Raad</title>
     <firstline>Fordi din Ryg er daarlig, Ven</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 122-123.</note>
-    </notes>
+    <source pages="122-123"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2882,9 +2893,7 @@ Du kan ha’ bedre Varer smagt,
     <title>Jeg vilde saa gerne vide!</title>
     <toctitle>Jeg vilde saa gerne vide</toctitle>
     <firstline>Jeg vilde saa gerne vide</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 124-125.</note>
-    </notes>
+    <source pages="124-125"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2925,9 +2934,7 @@ Jeg <w>saa</w>’ det — jeg hørte det ikke
 <head>
     <title>Morgen- og Aftensange</title>
     <firstline>Jeg stod om Morgnen i Børnenes Kammer</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 126-127.</note>
-    </notes>
+    <source pages="126-127"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2962,9 +2969,7 @@ hvor lærte vel Fuglen sin Sang?
 <head>
     <title>Gode Engle</title>
     <firstline>Da jeg var lille, lærte Moder mig</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 128-130.</note>
-    </notes>
+    <source pages="128-130"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3023,9 +3028,7 @@ nu har jeg ikke ondt ved at forstaa,
     <title>Ved Klosterkilden</title>
     <subtitle>Til Emmy</subtitle>
     <firstline>Hvor Orlogsheltens Enke har paa Munke-Grunden bygget</firstline>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Dybe Strenge</i>, Gyldendalske Boghandels Forlag, Kbh., 1884, pp. 131-133.</note>
-    </notes>
+    <source pages="131-133"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

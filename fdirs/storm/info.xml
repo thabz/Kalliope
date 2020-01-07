@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="storm" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Edvard</firstname>
+    <lastname>Storm</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1749-08-21</date>
+      <place>Vågå, Norge</place>
+    </born>
+    <dead>
+      <date>1794-09-29</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1774,1775,1778,1778i,1782,1785,1788,andre</works>
+</person>

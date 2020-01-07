@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hoelderlin" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich</firstname>
+    <lastname>Hölderlin</lastname>
+    <fullname>Johann Christian Friedrich Hölderlin</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1770-03-20</date>
+      <place>Lauffen am Neckar, Württemberg</place>
+    </born>
+    <dead>
+      <date>1843-06-07</date>
+      <place>Tübingen</place>
+    </dead>
+  </period>
+  <works>oedip,1804,1826,andre</works>
+</person>

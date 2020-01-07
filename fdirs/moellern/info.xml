@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="moellern" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Niels</firstname>
+    <lastname>Møller</lastname>
+    <fullname>Niels Laurids Møller</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1859-12-11</date>
+      <place>Svendborg</place>
+    </born>
+    <dead>
+      <date>1941-03-16</date>
+      <place inon="on">Frederiksberg</place>
+    </dead>
+  </period>
+  <works>1888,1897,1920,1939</works>
+</person>

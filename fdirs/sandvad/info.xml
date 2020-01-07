@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="sandvad" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Holger</firstname>
+    <lastname>Sandvad</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1892-09-21</date>
+      <place>Ribe</place>
+    </born>
+    <dead>
+      <date>1929-09-13</date>
+    </dead>
+  </period>
+  <works>1927</works>
+</person>

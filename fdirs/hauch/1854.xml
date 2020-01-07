@@ -567,7 +567,7 @@ Dog stiger Du op som Haabet grøn,
 Du Mørkets Søn!
 Hvad kan Du da haabe,
 Du arme Taabe,
-Du arme Siv ,
+Du arme Siv,
 Der bæver til Vindenes Tidsfordriv?
 
 Den store Natur saa herlig og rig
@@ -4580,8 +4580,10 @@ Fra det forjettede Land.
     <title>Et geistligt Digt</title>
     <subtitle>(Efter Schenkendorf)</subtitle>
     <firstline>Stedse maa jeg derpaa grunde</firstline>
+    <notes>
+        <note unknown-original-by="schenkendorf" />
+    </notes>
     <source pages="169-170"/>
-    <!-- TODO: Find originalen. -->
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4627,10 +4629,11 @@ Frelst og salig ved Dit Blod.
     <title>Gudhengivenhed</title>
     <subtitle>(Frit omarbejdet efter Paul Gerhard.)</subtitle>
     <firstline>Mod Herrens Aasyn gaaer min Vei</firstline>
+    <notes>
+        <note unknown-original-by="gerhardt" />
+    </notes>
     <source pages="171-174"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
-    <!-- TODO: Find originalen. -->
-    <keywords>gerhardt</keywords>
 </head>
 <body>
 Mod Herrens Aasyn gaaer min Vei,

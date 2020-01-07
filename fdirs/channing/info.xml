@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="channing" country="us" lang="en" type="poet">
+  <name>
+    <firstname>William Ellery</firstname>
+    <lastname>Channing</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1818-11-29</date>
+      <place>Boston, Massachusetts</place>
+    </born>
+    <dead>
+      <date>1901-12-23</date>
+      <place>Concord, Massachusetts</place>
+    </dead>
+  </period>
+  <works>1843</works>
+</person>

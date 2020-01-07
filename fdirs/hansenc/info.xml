@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hansenc" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>Constantin</firstname>
+    <lastname>Hansen</lastname>
+    <fullname>Carl Christian Constantin Hansen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1804-11-03</date>
+      <place>Rom</place>
+    </born>
+    <dead>
+      <date>1880-03-29</date>
+      <place inon="on">Frederiksberg</place>
+    </dead>
+  </period>
+</person>

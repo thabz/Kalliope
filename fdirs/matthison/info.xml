@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="matthison" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Aage</firstname>
+    <lastname>Matthison-Hansen</lastname>
+    <fullname>Hans Aage Joachim Matthison-Hansen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1864-03-20</date>
+      <place inon="on">Frederiksberg</place>
+    </born>
+    <dead>
+      <date>1938-05-11</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1891,1893,1894,1896,1897,1899,1900,1901,1903,1903v,1906,1907,1909,1915,1919,1920,1922,1930</works>
+</person>

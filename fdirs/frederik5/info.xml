@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="frederik5" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 5.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1723-03-31</date>
+      <place inon="on">Københavns Slot</place>
+    </born>
+    <coronation>
+      <date>1746-08-06</date>
+    </coronation>
+    <dead>
+      <date>1766-01-14</date>
+      <place inon="on">Christianborg Slot</place>
+    </dead>
+  </period>
+</person>

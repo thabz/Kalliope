@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bang" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Herman</firstname>
+    <lastname>Bang</lastname>
+    <fullname>Herman Joachim Bang</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1857-04-20</date>
+      <place>Asserballe sogn, Als</place>
+    </born>
+    <dead>
+      <date>1912-01-29</date>
+      <place>Ogden City, Utah, USA</place>
+    </dead>
+  </period>
+  <works>1889,p1879,p1890</works>
+</person>

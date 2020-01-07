@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rilke" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Rainer Maria</firstname>
+    <lastname>Rilke</lastname>
+    <fullname>René Karl Wilhelm Johann Josef Maria Rilke</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1875-12-04</date>
+      <place>Prag, Østrig-Ungarn (nu Tjekkiet)</place>
+    </born>
+    <dead>
+      <date>1926-12-29</date>
+      <place>Valmont, Schweiz</place>
+    </dead>
+  </period>
+  <works>1899,1902,1904,1905,1906,1907,1908,1909,1910,1912,1923,1923s,andre</works>
+</person>

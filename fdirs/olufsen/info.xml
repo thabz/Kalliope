@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="olufsen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Oluf Christian</firstname>
+    <lastname>Olufsen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1764-01-20</date>
+      <place>Viborg</place>
+    </born>
+    <dead>
+      <date>1827-05-19</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1793,andre</works>
+</person>

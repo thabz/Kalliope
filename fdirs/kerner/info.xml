@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="kerner" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Justinus</firstname>
+    <lastname>Kerner</lastname>
+    <fullname>Justinus Andreas Christian Kerner</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1786-09-18</date>
+      <place>Ludwigsburg, Baden-Württemberg</place>
+    </born>
+    <dead>
+      <date>1862-02-21</date>
+      <place>Weinsberg, Baden-Württemberg</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

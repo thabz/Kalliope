@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="monti" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Vincenzo</firstname>
+    <lastname>Monti</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1754-02-19</date>
+      <place>Alfonsine i Ravenna</place>
+    </born>
+    <dead>
+      <date>1828-10-13</date>
+      <place>Milano</place>
+    </dead>
+  </period>
+</person>

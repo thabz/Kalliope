@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="joergensen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Lars</firstname>
+    <lastname>Jørgensen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1857-03-13</date>
+      <place>Hygum Mark, Haderslev Amt</place>
+    </born>
+    <dead>
+      <date>1945-09-22</date>
+    </dead>
+  </period>
+  
+  <works>1912,1918</works>
+</person>

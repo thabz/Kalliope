@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="novalis" country="de" lang="de" type="poet">
+  <name>
+    <lastname>Novalis</lastname>
+    <realname>Georg Friedrich Philipp Freiherr von Hardenberg</realname>
+  </name>
+  <period>
+    <born>
+      <date>1772-05-02</date>
+      <place>Oberwiederstedt, Harz</place>
+    </born>
+    <dead>
+      <date>1801-03-25</date>
+      <place>Weißenfels</place>
+    </dead>
+  </period>
+  <works>1797,1798,1802,1802h,andre</works>
+</person>
