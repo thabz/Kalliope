@@ -1,18 +1,25 @@
 
-## Kalliope
+## Kalliope installation
 
-Kalliope needs the following pieces of software to be able to run:
+### Install
 
+```shell
+mkdir ~/home/jec/Sites
+cd ~/home/jec/Sites
+git checkout ...
+npm run build
+```
 
-** OS **
+### systemd
 
-Any UNIX will do.
+```shell
+sudo cp ~/home/jec/Sites/tools/kalliope.service /etc/systemd/system
+sudo systemctl daemon-reload
+sudo systemctl enable kalliope.service
+```
 
-** Required software **
+Now Kalliope should start on system start (after nginx). Test with 
+``` 
+sudo systemctl start kalliope # To et
+```
 
-Node.js
-Elasticsearch
-
-** Required global node packages **
-
-yarn

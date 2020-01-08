@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="haller" country="un" lang="de" type="poet">
+  <name>
+    <firstname>Albrecht von</firstname>
+    <lastname>Haller</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1708-08-16</date>
+      <place>Bern</place>
+    </born>
+    <dead>
+      <date>1777-12-12</date>
+      <place>Bern</place>
+    </dead>
+  </period>
+  <works>1732</works>
+</person>

@@ -1,4 +1,4 @@
-import * as Sorting from '../pages/helpers/sorting.js';
+import * as Sorting from '../common/sorting.js';
 
 //const Sorting = require('./sorting.js');
 
