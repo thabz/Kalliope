@@ -1,38 +1,27 @@
-KILDE:Johannes V. Jensen: _Digte_, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1906.
-DIGTER:jensenjv
-FACSIMILE:115308067513_color
-FACSIMILE-SIDER:112
-TITELBLAD:Johannes V. Jensen / Digte // Gyldendalske Boghandel / Nordisk Forlag / København og Kristiania / 1906
-<!--  Birger Nielsens noter fra http://www.librarything.com/work/4283707
-"Husvild" handler om et par vagabonder, der gerne vil have husly. Og på munter vis fortæller om deres gård, hvor væggene gjort af den rene vind.
-"Godnat" handler om en munter spillemand på dødslejet "De bank, jeg skylder mine fjender, dem får de nok af hverandre."
-"Grottesangen" handler om Fenja og Menja, skæbnegudinder der tilsidst vil male istid på kværnen og lade alt forgå i is.
-"Den blinde Pige" handler om Merete, der leder efter sin elskede og finder døden i stedet.
-"Plejlvisen" handler om bevægelsens rytme, frem og tilbage, godt og ondt.
-"Columbus" handler om Christofer Columbus, som rider på havet og finder det nye land.
-"Moderens Sang" handler om moderen, der giver livet videre til sit lille barn.
-"Pigen der vandrer" handler om en pige, der kærtegnes af vinden?
-"Tilegnelse" handler om vildmanden i det danske rigsvåben.
-"Helled Haagen" handler om Johannes V. Jensens syn på Knut Hamsun. "Tro mig, Ven. Jeg blev ædru."
-"Cecil" handler om den svundne ungdom og en kvinde, der er noget ældre end forfatteren.
-"Sønner af de Slagne" handler om generationen efter dem, der tabte 1864 krigen.
-"Tiger" handler om en hindufyrste og en tiger. Tigeren bliver dræbt og fyrsten keder sig alligevel.
-"Interferens" handler om Rummet og Tiden, der mødes.
-"Ved Frokosten" handler om Øl, Snaps og et par piger. Den ene ren, den anden uvasket.
-"Afsked" handler om at tage afsted fra Danmark og have det fint med den beslutning.
-"Det røde Træ" handler om regn og torden i troperne. Modsat sumpånderne derhjemme.
-"Paa Memphis Station" handler om at strande midlertidigt undervejs på en lang rejse.
-"Hverdagene" handler om at traske rundt i en dansk hverdag med et lidt bittert tonefald.
-"Walt Whitmanske Oversættelser" er en fællesoverskrift for de sidste tre tekster.
-"Jeg kommer fra Paumanok. Fragment" handler om en lidt svulstig begejstring for landet Amerika.
-"Den Aftenstund, da jeg hørte" handler om glæden ved at blive genforenet med sin elskede.
-"Glædesangen" handler om en masse ting, som man kan føle glæde ved. 
--->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="1906" author="jensenjv" status="complete" type="poetry">
+<workhead>
+    <title>Digte</title>
+    <year>1906</year>
+    <notes>
+        <note>Teksten følger Johannes V. Jensen: <i>Digte</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1906.</note>
+    </notes>
+    <pictures>
+        <picture src="1906-p1.jpg">Titelbladet til <i>Digte</i> (1906) lyder ,,Johannes V. Jensen / Digte // Gyldendalske Boghandel / Nordisk Forlag / København og Kristiania / 1906''.</picture>
+    </pictures>
+    <source facsimile="115308067513_color" facsimile-pages-num="112" facsimile-pages-offset="6">Johannes V. Jensen: <i>Digte</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1906.</source>
+</workhead>
+<workbody>
 
-T:Husvild
-F:Gi Husly til to Persowner
-SIDE:7-8
-
+<poem id="jensenjv2020010801">
+<head>
+    <title>Husvild</title>
+    <firstline>Gi Husly til to Persowner</firstline>
+    <source pages="7-8"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Gi Husly til to Persowner,
 der haar saa grusselig traant;
 vi kommer fræ »Mannemilherfræ«
@@ -56,11 +45,17 @@ saa kan I min Dætter spør,
 som aaller haar hat no Foræller
 og hverken ka snak’ eller hør.
 Gi Husly!
+</body>
+</poem>
 
-T:Godnat
-F:No wil a sej Jer Godnæt
-SIDE:9-10
-
+<poem id="jensenjv2020010802">
+<head>
+    <title>Godnat</title>
+    <firstline>No wil a sej Jer Godnæt</firstline>
+    <source pages="9-10"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 No wil a sej Jer Godnæt,
 for a er nøj Kon træt.
 Og nu kan I tru’ mæ og teg mæ,
@@ -95,16 +90,22 @@ Fowal og Tak bette I!
 A ga jer hvad a ku gi.
 Og tøt I et om Musiken,
 da war’et Skaad — for no gik’en.
+</body>
+</poem>
 
-T:Grottesangen
-F:Fenjas og Menjas Møllesang kommer indenfra
-SIDE:11-13
-
+<poem id="jensenjv2020010803">
+<head>
+    <title>Grottesangen</title>
+    <firstline>Fenjas og Menjas Møllesang kommer indenfra</firstline>
+    <source pages="11-13"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
   Fenjas og Menjas Møllesang kommer indenfra
 i din Hjærne som søndermalende Stenlyd. Dit
 Hoved skal blive Centret for Grottes Hvirvler af
 Verdensstøv, for Fenjas og Menjas splintrende Kværnsang.
-    
+
   Vi maler, synger Fenja, vi svinger Stenen, der
 er tung som Jorden, vi maler dig Solopgang og
 Høveder og frodige Agre. Vi maler dig skinnende
@@ -162,76 +163,87 @@ Byerne under Bræen, vi grutter al Frugtbarhed.
 
   Og vi forstener dit Hoved, vi hvirvler Øde ud,
 vi synger med frostkoldt Hjærte, til Kværnen springer.
+</body>
+</poem>
 
-T:Den blinde Pige
-F:Siger du, at det lyser
-SIDE:14-16
-
+<poem id="jensenjv2020010804">
+<head>
+    <title>Den blinde Pige</title>
+    <firstline>Siger du, at det lyser</firstline>
+    <source pages="14-16"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Siger du, at det lyser
     af Blomster hvor vi træder?
     Oh mine Fødder gyser,
     Elskede ja og jeg græder.
-                =Natten er naadig.=
+                <w>Natten er naadig.</w>
 
 Det var den blinde Merete,
     hun gik med sin Ven at spasere,
     hørte et Suk og ledte
     og fandt ham aldrig mere.
-                =Natten er naadig.=
+                <w>Natten er naadig.</w>
 
 Svinder du fra min Sider
     Din Tien er sær, du savner . . .
     Taber du dig i det Vide?
     Jeg finder dig — for jeg favner!
-               =Natten er naadig.=
+               <w>Natten er naadig.</w>
 
 Skjuler du dig og smiler
     ad mine udbredte Arme?
     Tilgiv mig, Tiden iler,
     jeg længes efter din Varme —
-                =Natten er naadig.=
+                <w>Natten er naadig.</w>
 
 Stille! Ak hvor jeg ryster!
     Duggen fra Nattens Porte
     falder paa mine Bryster —
     Kære, din Mund er borte!
-                =Natten er naadig.=
+                <w>Natten er naadig.</w>
 
 Hører du nu, jeg er bange —
     vandrer jeg her alener
     Gaar jeg imellem mange,
     der alle tier som Stene?
-                =Natten er naadig.=
+                <w>Natten er naadig.</w>
 
 Svæver her sorte Baarer?
     Mit Hjærte fryser og falder.
     Duggen og mine Taarer
     sitrer og græder og kalder . . .
-                =Natten er naadig.=
+                <w>Natten er naadig.</w>
 
 Aa, hvis du hører min Klage,
     forbande Gud dine Læber!
     Gaa og kom aldrig tilbage —
     ved du, de Blinde dræber!
-                =Natten er naadig.=
+                <w>Natten er naadig.</w>
 
 Gid du maa rammes af Lynet . . .
     Nej Gud belønne dit Hjærte,
     for nu har jeg faaet Synet!
     Jeg ser, Lyset er Smærte.
-                =Natten er naadig.=
+                <w>Natten er naadig.</w>
 
 Stakkels, stakkels Merete!
     Med dine favnende Arme
     gik du og ledte og ledte
     og fandt kun Dødens Varme.
-                =Natten er naadig.=
+                <w>Natten er naadig.</w>
+</body>
+</poem>
 
-
-T:Plejlvisen
-F:Av! Hold inde, Djævel . . .
-SIDE:17-19
-
+<poem id="jensenjv2020010805">
+<head>
+    <title>Plejlvisen</title>
+    <firstline>Av! Hold inde, Djævel . . .</firstline>
+    <source pages="17-19"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Av!
   Hold inde, Djævel . . .
   Kæreste kære . . .
@@ -287,11 +299,17 @@ Av!
   Ha Ha Ha Ha . . .
   Mit Hjærte brister.
                 Knirk, Knirk.
+</body>
+</poem>
 
-T:Columbus
-F:Der nejed saa mangt et sødygtigt Skib
-SIDE:20-24
-
+<poem id="jensenjv2020010806">
+<head>
+    <title>Columbus</title>
+    <firstline>Der nejed saa mangt et sødygtigt Skib</firstline>
+    <source pages="20-24"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Der nejed saa mangt et sødygtigt Skib
         paa Bølgen, som fór.
 Og mangen forvoven Skipper blev graa
@@ -381,12 +399,17 @@ Der er ingen Gud i de rasende Bølger,
 der er Christofer Columbus’ Hjærte,
 som skabte en ny Verden
         ud af sin Verdenssmærte.
+</body>
+</poem>
 
-
-T:Moderens Sang
-F:Jeg bærer i mit bespændte Bryst
-SIDE:25-27
-
+<poem id="jensenjv2020010807">
+<head>
+    <title>Moderens Sang</title>
+    <firstline>Jeg bærer i mit bespændte Bryst</firstline>
+    <source pages="25-27"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Jeg bærer i mit bespændte Bryst
 en sød og ængstelig Vaar.
 Mit eget lille stumme Barn
@@ -436,12 +459,17 @@ Jeg giver dig Liv, vil du nægte mig
 at strække mig hvilende hen?
 O du er den der skal have Alt
 og Intet give igen!
+</body>
+</poem>
 
-
-T:Pigen der vandrer
-F:Hvem er du, vilde Pige
-SIDE:28
-
+<poem id="jensenjv2020010808">
+<head>
+    <title>Pigen der vandrer</title>
+    <firstline>Hvem er du, vilde Pige</firstline>
+    <source pages="28"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hvem er du, vilde Pige
 der vandrer saa blid paa Vejene
 og strider dig frem imod Blæsten
@@ -461,11 +489,17 @@ Hvorfor bøjer du Brystet
 mod Blæsten? Den vil bære dig!
 Strit ikke saa stridigt imod . . .
 Stormen det er jo mig!
+</body>
+</poem>
 
-T:Tilegnelse
-F:Jeg kommer ud fra Skovene
-SIDE:29
-
+<poem id="jensenjv2020010809">
+<head>
+    <title>Tilegnelse</title>
+    <firstline>Jeg kommer ud fra Skovene</firstline>
+    <source pages="29"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Jeg kommer ud fra Skovene,
 Kender I min Kølle!
 Vid, jeg er Vildmanden
@@ -480,11 +514,17 @@ Her staar jeg ved Skjoldet.
 Jeg vil slaa Fornægteren.
 Jeg vil bekræfte de Raske
 i Retten til Riget.
+</body>
+</poem>
 
-T:Helled Haagen
-F:Dette er kun et Udtog
-SIDE:30-39
-
+<poem id="jensenjv2020010810">
+<head>
+    <title>Helled Haagen</title>
+    <firstline>Dette er kun et Udtog</firstline>
+    <source pages="30-39"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Dette er kun et Udtog
 af Digtet om Haagens Bedrifter.
 Her berettes forsøgsvis
@@ -552,7 +592,7 @@ om taagede Traditioner.)
 
 Spilled vi Kegler, saa Kuglerne
 sprang og splintrede Bagvæggen?
-Bravo! _Battaljon!_
+Bravo! <i>Battaljon!</i>
 Blev vi hældt ud af Banen?
 
 Søgte vi siden stridslystne
@@ -575,7 +615,7 @@ som Pigerne ogsaa parerer,
 (smilende: Dette er Alvor!
 Dette er endelig Elskov!)
 
-Se, men nu _rejser_ sig Haagen!
+Se, men nu <i>rejser</i> sig Haagen!
 Han rager op, rank.
 Jeg ved ingen i Verden
 der rejser sig vældigere!
@@ -595,9 +635,9 @@ gigantiske Dreng for Alvor.
 Ingen kritisk Pauper
 fik plyndret ham for hans Purpur.
 
-Stærk som _Jim Jeffries_,
+Stærk som <i>Jim Jeffries</i>,
 Amerikas djævelske Champion,
-_The big boilermaker_,
+<i>The big boilermaker</i>,
 Verdens første Bokser,
 
 Gylden og from som Gudfader,
@@ -607,7 +647,7 @@ med Indhold op paa Scenen!
 
 Derpaa sender du Stolene
 venligt sammesteds hen,
-_Bordet_ kyler du blidt
+<i>Bordet</i> kyler du blidt
 op til blege Bajaderer!
 
 Siden i søvnløse Nætter
@@ -636,12 +676,12 @@ mod alle Arter af Skørlevned
 og alle syndige Skøger?
 
 Klædte du dig (i spøgende
-Afsind) med spæget _Traa_,
+Afsind) med spæget <i>Traa</i>,
 præked du brunstig, med Bukserne
 fulde af den poetiske Pungbrok?
 
 Tordnede du som Vingthor
-for _gratis_ Piger i Trudvang,
+for <i>gratis</i> Piger i Trudvang,
 raste du (Bukkenes Skræk!)
 i dit Rejersenske Redningsbælte?
 
@@ -705,7 +745,7 @@ baaret af bedre Helbred!
 Aldrig forkyndtes Livslysten
 af kælnere Krigerhjærte!
 
-Jeg siger dig Haagen, _Fluerne_
+Jeg siger dig Haagen, <i>Fluerne</i>
 fulgte dit fine Foredrag,
 tiltrukne af din Aande;
 »Publikum« anede Aadsel.
@@ -714,12 +754,17 @@ Ladies and Gentlemen . . . Haagen!
 Jeg husker dig, hør jeg husker
 dit Vid, din Varme, din Ensomhed.
 Tro mig Ven, jeg blev ædru.
+</body>
+</poem>
 
-
-T:Cecil
-F:Jeg mindes, hvor blond og ubændig du stod
-SIDE:40-43
-
+<poem id="jensenjv2020010811">
+<head>
+    <title>Cecil</title>
+    <firstline>Jeg mindes, hvor blond og ubændig du stod</firstline>
+    <source pages="40-43"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Jeg mindes, hvor blond og ubændig du stod,
         I Danmark
 Rolig men fuld af stormende Blod,
@@ -814,11 +859,17 @@ Det regner Vinter, og det regner Vaar,
         I Danmark
 Det regner det hele lange Aar.
         Svunden er vor Ungdom.
+</body>
+</poem>
 
-T:Sønner af de Slagne
-F:Sønner af de Slagne
-SIDE:44-46
-
+<poem id="jensenjv2020010812">
+<head>
+    <title>Sønner af de Slagne</title>
+    <firstline>Sønner af de Slagne</firstline>
+    <source pages="44-46"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Sønner af de Slagne,
 se, I staar paa Muld!
 Død er det bedragne,
@@ -830,7 +881,7 @@ lattermilde Mand.
 
 Ifra Gorm den Gamle
 til den Dag i Dag
-elskte vi at _samle_,
+elskte vi at <i>samle</i>,
 . . . Ak paa Nederlag!
 Dette vil vi mindes
 med en knyttet Haand,
@@ -839,8 +890,8 @@ af en anden Aand.
 
 Kloge af at bede
 til den døve Gud,
-vil vi _aabne, _sprede,_
-_glemme, slette ud._
+vil vi <i>aabne</i>, <i>sprede</i>,
+<i>glemme</i>, <i>slette ud</i>.
 Ungdom er at handle
 uden Tradition,
 uden falske Veksler
@@ -872,11 +923,17 @@ Borte er det syge,
 I lykkeløse Kuld —
 Sønner af de Slagne
 se, I staar paa Muld!
+</body>
+</poem>
 
-T:Tiger
-F:Hindufyrsten ligger vaagen
-SIDE:47-49
-
+<poem id="jensenjv2020010813">
+<head>
+    <title>Tiger</title>
+    <firstline>Hindufyrsten ligger vaagen</firstline>
+    <source pages="47-49"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Hindufyrsten ligger vaagen
 i den sorte Tropenat
 med sit Øre fuldt af Suset
@@ -927,11 +984,17 @@ Fyrsten vaander sig og gaber:
 Hvor jeg længes efter Hvile,
 Hvile, netop naar jeg ligger.
 Aa jeg tørster, naar jeg drikker
+</body>
+</poem>
 
-T:Interferens
-F:Den blaa Nat er saa stille. Jeg ligger søvnløs
-SIDE:50-52
-
+<poem id="jensenjv2020010814">
+<head>
+    <title>Interferens</title>
+    <firstline>Den blaa Nat er saa stille. Jeg ligger søvnløs</firstline>
+    <source pages="50-52"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
   Den blaa Nat er saa stille. Jeg ligger søvnløs.
 Stilheden vider sig og klinger.
 Det er Lyden af tusinde Miles Tomhed.
@@ -957,7 +1020,7 @@ som alle Morgener før.
 Imorgen skal jeg konfronteres med Vaskefad, Sko-
     horn, Tandbørste og hele Historien,
 Tobak og Solskin og Tuborg fra Fad.
-Og jeg _tilstaar_:
+Og jeg <i>tilstaar</i>:
 Enten er dette Topnoteringen af menneskelig Lykke,
 ægte efterlignet,
 eller det er en dum og sørgelig Fiktion.
@@ -996,11 +1059,17 @@ imellem de kværnende Stenkloder.
 
   Det er Rummets Monologer, hvis Ringe mødes
     med Tidens tonløse Cirkler.
+</body>
+</poem>
 
-T:Ved Frokosten
-F:Kafeen skal være velsignet!
-SIDE:53-58
-
+<poem id="jensenjv2020010815">
+<head>
+    <title>Ved Frokosten</title>
+    <firstline>Kafeen skal være velsignet!</firstline>
+    <source pages="53-58"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Kafeen skal være velsignet!
 Gud ske Lov for Sofahjørnets Fløjl!
 Jeg omfatter min Kellner med Sympati,
@@ -1079,7 +1148,7 @@ Samme Foraar traf mig kaad og kærnesund,
 skummel af Kærestesorg,
 i Favnen paa yndige Olga.
 
-_Hun_ var altid vasket og sval,
+<i>Hun</i> var altid vasket og sval,
 jeg maa formode, hun var Jomfru paa en Badeanstalt.
 (Emma tilhørte den fornemmere Lavadel).
 Olga var saa frejdig, Klæderne suste fra hende.
@@ -1098,8 +1167,8 @@ Uden at betænke mig svælger jeg ogsaa den.
 Snapsen er kold, sød, stærk og brændende . . .
 dette var en Skaal for den uudslukkelige Appetit,
 der lægger mig ned og sætter mig paa Benene igen
-midt imellem hoftebredt henvandrende Mirakler i Menneskeskikkelse. 
-Er I kede af, at jeg synger, saa det sortner mig for Øjnene? 
+midt imellem hoftebredt henvandrende Mirakler i Menneskeskikkelse.
+Er I kede af, at jeg synger, saa det sortner mig for Øjnene?
 
 Ak, Emma og Olga!
 Hvor er I henne?
@@ -1108,13 +1177,18 @@ Jeg føler en lægende Varme, mit Hjærte hopper,
 jeg tror jeg er glad til Trods for Smærte.
 Snapsen er kold, sød, stærk og brændende . . .
 
-Skaal! 
+Skaal!
+</body>
+</poem>
 
-
-T:Afsked 
-F:
-SIDE:59-
-
+<poem id="jensenjv2020010816">
+<head>
+    <title>Afsked</title>
+    <firstline>Graavejr i København!</firstline>
+    <source pages="59-62"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Graavejr i København!
 Gigt og ondartet Stemning i al Evighed!
 
@@ -1198,12 +1272,17 @@ og rykker i Ankerkættingerne,
 stundende mod Søen.
 Vinden er stik Syd -
 Under Sejl!
+</body>
+</poem>
 
-
-T:Det røde Træ
-F:Tropenattens sydende Keddel
-SIDE:63-65
-
+<poem id="jensenjv2020010817">
+<head>
+    <title>Det røde Træ</title>
+    <firstline>Tropenattens sydende Keddel</firstline>
+    <source pages="63-65"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Tropenattens sydende Keddel
 fraader over mod Morgen . . .
 Regn, Regn fra Zenith!
@@ -1255,7 +1334,7 @@ Gennem Regnens drukne Syndflodstone
 og det røde Træs drægtige Rislen
 hører jeg som et Ridt af Tiderne,
 Hestevrinsken og sværmende Pauker,
-Galop, Trommer der kogler, og et Sus forbi af Pile!$                                
+Galop, Trommer der kogler, og et Sus forbi af Pile!$
 Nye Lurtoner! Hærene ler!
 Thalatta! Solen ved Austerlitz!
 
@@ -1263,11 +1342,17 @@ Alverden rykker frem, sejrrig, og dør.
 Og hvorfor sidder jeg ene med et ru Kvak
 fra mit tungsindige Sumphjærte?
 Hvem har snydt mig for min lynende Skæbne?
+</body>
+</poem>
 
-T:Paa Memphis Station
-F:Halvt vaagen og halvt blundende
-SIDE:66-71
-
+<poem id="jensenjv2020010818">
+<head>
+    <title>Paa Memphis Station</title>
+    <firstline>Halvt vaagen og halvt blundende</firstline>
+    <source pages="66-71"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Halvt vaagen og halvt blundende,
 slaaet af en klam Virkelighed, men endnu borte
 i en indre Gus af danaidiske Drømme
@@ -1313,7 +1398,7 @@ Dit Liv er jo alligevel ikke andet
 end et surt Regnvejr, og din Skæbne
 var altid at hænge forsinket
 i en eller anden miserabel Ventesal
-_Bliv_ i Memphis, Tennessee!
+<i>Bliv</i> i Memphis, Tennessee!
 
 For inde i et af disse plakathujende Huse
 venter Lykken dig, Lykken,
@@ -1389,13 +1474,19 @@ og staar færdig til Spring. Sporet er frit.
 Og vi rejser videre
 gennem de oversvømmede Skove,
 under Regnens gabende Sluser.
+</body>
+</poem>
 
-T:Hverdagene
-U:Til L. C. Nielsen
-F:Se Regnbuens Bro over den bygede Fjord!
-N:nielsenlc
-SIDE:72-74
-
+<poem id="jensenjv2020010819">
+<head>
+    <title>Hverdagene</title>
+    <subtitle>Til L. C. Nielsen</subtitle>
+    <firstline>Se Regnbuens Bro over den bygede Fjord!</firstline>
+    <source pages="72-74"/>
+    <keywords>nielsenlc</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Se Regnbuens Bro over den bygede Fjord!
 Se i det Fjærne, hvor Lysstøtten skraaner fra Skyen
 og tænder et rundt Solbillede i Landet,
@@ -1447,17 +1538,28 @@ Lad os gøre det til en bidende Leg,
 et skrapt Bønnemøde,
 for de berømte to Millioner Indbyggere
 i Kongeriget Danmark!
+</body>
+</poem>
 
-SEKTION:Walt Whitmanske Oversættelser
+<section>
+<head>
+    <title>Walt Whitmanske Oversættelser</title>
+</head>
+<content>
 
-
-T:Jeg kommer fra Paumanok
-U:Fragment
-F:Jeg der kommer fra Øen, som ligner en Fisk, fra Paumanok, hvor jeg blev født
-SIDE:77-80
-NOTE:Gendigtning af Walt Whitman: <xref type="translation" poem="whitman2001060427"/>.
-
-{c:1.}
+<poem id="jensenjv2020010820">
+<head>
+    <title>Jeg kommer fra Paumanok</title>
+    <subtitle>Fragment</subtitle>
+    <firstline>Jeg der kommer fra Øen, som ligner en Fisk, fra Paumanok, hvor jeg blev født</firstline>
+    <notes>
+        <note>Gendigtning af Walt Whitman: <xref type="translation" poem="whitman2001060427"/>.</note>
+    </notes>
+    <source pages="77-80"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><center>1.</center></nonum>
 Jeg der kommer fra Øen, som ligner en Fisk, fra Paumanok, hvor jeg blev født,
 Vel undfanget og opfødt af Idealet af en Moder,
 Der har rakket omkring i mange Lande som blot Elsker af Trængslen paa Fortovene,
@@ -1471,9 +1573,9 @@ Og fortrolig med Bøffelhjorderne, der græsser paa Sletten, de haarede herkules
 Og med Muld og med Fjeld og er en Kender af Maj Maaneds Blomster og af Stjærner, Regn, Sne og af de Stemninger, der knuser mig,
 Jeg der véd noget om Spottefuglens Toner og om Bjerghøgens Flugt,
 Og har hørt Solsorten, den uforlignelige Ensomme, i Tusmørket fra Sump-Cederen,
-Jeg, der staar ene, Sangeren fra Vesten, jeg =intonerer= for en ny Verden.
+Jeg, der staar ene, Sangeren fra Vesten, jeg <w>intonerer</w> for en ny Verden.
 
-{c:2.}
+<nonum><center>2.</center></nonum>
 Sejr, Sammenslutning, Troskab, Identitet og lid ,
 De uopløselige Samfund, Rigdommene, Mysteriet, det evige Fremskridt,
 Verdensaltet og den moderne Alvidenhed.
@@ -1514,13 +1616,20 @@ Gydende i ustanselige Eruptioner sin Ild ind i Alle.
 Tag mine Vers, Amerika, tag dem i Syd og tag dem i Nord,
 Bered dem Velkommen hvert eneste Sted, for de er Blod af dit Blod,
 Slut Kres om dem i Øst og i Vest, for de vil maaske slutte Kres om dig . . .
+</body>
+</poem>
 
-T:Den Aftenstund da jeg hørte . . .
-F:Den Aftenstund da jeg hørte, at mit Navn var blevet modtaget med Tilslutning i Rigsdagen, var det dog ikke nogen lykkelig Nat, der fulgte
-SIDE:81-82
-NOTE:Gendigtning af Walt Whitman: <xref type="translation" poem="whitman2001060525"/>.
-
-
+<poem id="jensenjv2020010821">
+<head>
+    <title>Den Aftenstund da jeg hørte . . .</title>
+    <firstline>Den Aftenstund da jeg hørte, at mit Navn var blevet modtaget med Tilslutning i Rigsdagen, var det dog ikke nogen lykkelig Nat, der fulgte</firstline>
+    <notes>
+        <note>Gendigtning af Walt Whitman: <xref type="translation" poem="whitman2001060525"/>.</note>
+    </notes>
+    <source pages="81-82"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
 Den Aftenstund da jeg hørte, at mit Navn var blevet modtaget med Tilslutning i Rigsdagen, var det dog ikke nogen lykkelig Nat, der fulgte;
 Og ellers, naar jeg festede, eller mine Planer havde Fremgang, var jeg ingenlunde lykkelig;
 Men den Dag da jeg rejste mig med Gryet, i Følelsen af et idealt Helbred, udhvilet, syngende og med Høstens modne Aande i mit Svæld;
@@ -1534,14 +1643,21 @@ Jeg hørte det hvislende Drag af Bølgen, som flød, og Sandet, hviskende ligeso
 For den ene, jeg elsker højst, laa sovende hos mig under samme Tæppe i den køle Nat,
 I Stilheden under Høstens Maanestraaler var hans Ansigt bøjet imod mig,
 Og hans Arm hvilede let om mit Bryst — og den Nat var jeg lykkelig.
+</body>
+</poem>
 
-
-T:Glædesangen
-F:Aa at synge den vildeste Frydesang!
-SIDE:83-99
-NOTE:Gendigtning af Walt Whitman: <xref type="translation" poem="whitman2001060606"/>.
-
-{c:1.}
+<poem id="jensenjv2020010822">
+<head>
+    <title>Glædesangen</title>
+    <firstline>Aa at synge den vildeste Frydesang!</firstline>
+    <notes>
+        <note>Gendigtning af Walt Whitman: <xref type="translation" poem="whitman2001060606"/>.</note>
+    </notes>
+    <source pages="83-99"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><center>1.</center></nonum>
 Aa at synge den vildeste Frydesang!
 Fuld af Musik — fuld af Manddom, Kvindelighed, Barndom!
 Fuld af alle daglige Beskæftigelser — fuld af Korn og af Træer.
@@ -1554,7 +1670,7 @@ Aa, min Sjæls Glæde — den er utæmmelig — den springer som Lynstraalen!
 Det er ikke nok at besidde denne Klode eller den og den Tid,
 Jeg vil have tusind Kloder og alt, hvad der hedder Tid.
 
-{c:2.}
+<nonum><center>2.</center></nonum>
 Aa, Maskinistens Glæde! At føre et Lokomotiv!
 At høre Dampen hvisle, det glade Pift af Dampfløjten, Lokomotivet som ler!
 At stemme Afstandens Mure ned og boltre sig i Fjernhed!
@@ -1566,7 +1682,7 @@ Giv mig den fine Duft, der er ved Jordsmonnet i Daggryet og langt op ad Dagen.
 Aa, at ride, hvad enten man er Mand eller Kvinde!
 Saddelen, Firspringet, Bumpene paa Enden, det kolde Luftslug om Øren og Haar.
 
-{c:3.}
+<nonum><center>3.</center></nonum>
 Aa, Brandmandens' Fryd!
 Jeg hører Alarmen i den øde Nat,
 Jeg hører Kimen og Raaben! Jeg passerer Opløbet, jeg render!
@@ -1575,7 +1691,7 @@ Aa, der er Glæde i den kødfulde Bokser, der staar oprejst i Ringen i fineste K
 
 Aa, der er Glæde i den uhyre elementære Sympati, som alene den menneskelige Sjæl har Magt til at skabe og vedligeholde i stadige og grænseløse Flodbølger.
 
-{c:4.}
+<nonum><center>4.</center></nonum>
 Aa, Moderens Fryd!
 Hun vaager, hun taaler, dyrt elsker hun, angst og i Taalmodighed giver hun os Livet.
 
@@ -1587,16 +1703,16 @@ At høre Fuglene synge igen en Gang,
 At pusle omkring ude ved Huset og Laden og lidt ud paa Agrene endnu en Gang
 Og igennem Kaalgaarden og langs de gamle Skel en Gang endnu.
 
-{c:5.}
+<nonum><center>5.</center></nonum>
 Aa, Manden og Kvinden!
 Aa, naar en Kvinde er nær! (Tag min Ed for at jeg ikke kender noget der overgaar bare det at en Kvinde er tilstede;)
 Aa, Pigen der er min Ven! Lykken sammen med min Ven!
-Aa, unge Mænd, naar jeg gaar forbi! Aa, jeg er syg efter Venskabet med _ham_, som jeg frygter for ikke bryder sig om mig.
+Aa, unge Mænd, naar jeg gaar forbi! Aa, jeg er syg efter Venskabet med <i>ham</i>, som jeg frygter for ikke bryder sig om mig.
 
 Aa, Gaderne i de store Byer!
 Ansigterne, der trækker forbi — Udtrykkene, Øjnene, Fødderne, Klæderne! Aa, jeg kan ikke sige hvor gærne jeg tager imod dem.
 
-{c:6.}
+<nonum><center>6.</center></nonum>
 Aa, at være vokset op ved Fjorde, Indsøer, Aaløb eller ude ved Kysten,
 At blive der og bestille noget der hele mit Liv,
 Lugten af Lage og Taagen, Havstokken, den salte Tang, der ligger sydlig ved Lavvande,
@@ -1623,7 +1739,7 @@ En anden Gang trækker vi Blaafisk ud for Paumanok, jeg staar med Kroppen stramm
 Med venstre Fod paa Rælingen og slynger med højre Arm den smækre Line i Ringe langt ud fra mig,
 Mens et Halvthundrede Fartøjer, mine Fæller, ligger i Sigte rundt omkring mig og gaar over Stag og flyver som Pile.
 
-{c:7.}
+<nonum><center>7.</center></nonum>
 Aa, at ligge med en Baad paa Floderne,
 Rejsen ned ad St. Lawrence, det pragtfulde Sceneri, Damperne,
 Skibene under Sejl, de tusind Øer, nu og da en Tømmerflaade, hvis Førere svajer de langtrækkende Bunkaarer,
@@ -1638,7 +1754,7 @@ Aa, at trælle i en Mine eller som Grovsmed
 Eller i et Støberi — Aa, Støberiet selv med det høje, raa Tag - og det luftige Rum fuldt af Skygger!
 Ildstedet, det hede flydende Metal, der gydes ud i en Strøm.
 
-{c:8.}
+<nonum><center>8.</center></nonum>
 Aa, at genopleve Soldatens Glæder!
 At føle Nærværelsen af en gæv Befalingsmand —
 at føle hans gode Mening!
@@ -1649,10 +1765,10 @@ At se Mænd falde og dø og ikke klage!
 At smage den vilde Smag af Blodet — at være saa djævelsk!
 At mætte sine Øjne saadan med de saarede og døde Fjender!
 
-{c:9.}
+<nonum><center>9.</center></nonum>
 Aa, Hvalfangerens Fryd! Aa, jeg gør mit gamle Kryds om igen!
 Jeg føler Skibets Bevægelse under mig, jeg føler de atlantiske Briser vifte mig,
-Jeg hører igen Udraaberen synge fra Mastetoppen: _Dér — dér blæser han!_
+Jeg hører igen Udraaberen synge fra Mastetoppen: <i>Dér — dér blæser han!</i>
 Igen springer jeg op i Rigningen for at se ligesom de andre — vi kommer ned igen, vilde af Ophidselse.
 Jeg hopper i Baaden, som fires, vi ror ind paa vort Bytte,
 Vi nærmer os stjaalent og stille, jeg ser dette Bjerg af en Krop, der ligger som livløs og soler sig,
@@ -1662,9 +1778,9 @@ Igen ser jeg ham stige for at aande, vi ror nær igen,
 Jeg ser Lansen jaget ind i hans Side, skudt i Bunde og drejet rundt i Saaret,
 Igen bakker vi af Vejen, jeg ser ham igen dukke under, Livet løber hurtigt ud af ham,
 Og da han stiger igen, sprøjter han Blod, jeg ser ham svømme i Cirkler, snævrere og snævrere, idet han ilsomt pisker Vandet - jeg ser ham dø.
-Han giver _ét_ Krampespring i Centret af Cirklen, og saa ligger han fladt og stille i det blodige Skum.
+Han giver <i>ét</i> Krampespring i Centret af Cirklen, og saa ligger han fladt og stille i det blodige Skum.
 
-{c:10.}
+<nonum><center>10.</center></nonum>
 Aa, min høje Alders Manddom, den nobleste af alle mine Glæder!
 Mine Børn og Børnebørn, mit hvide Haar og Skæg,
 Min store Skikkelse, Ro og Majestæt formedelst min lange Livsbane.
@@ -1688,7 +1804,7 @@ Min Krop, der er bundet til sit Stof, mit Syn, der er bundet til mine materielle
 Beviser mig idag ovenover alle Spidsfindigheder, at det ikke er mine materielle Øjne til Slut, der ser,
 At det heller ikke er mit materielle Legeme til Slut, der elsker, spaserer, ler, hujer, omfavner, forplanter.
 
-{c:11.}
+<nonum><center>11.</center></nonum>
 Aa, Landmandens Fryd!
 Landmandehs Glæde i Ohio, Illinois, Wisconsin, Kanada, Iowa, Kansas, Missouri, Oregon!
 At staa op i Solgryet og gaa adræt til sit Arbejde,
@@ -1696,7 +1812,7 @@ At pløje Jorden om Efteraaret til Vintersæden,
 At pløje Jorden om Foraaret til Majs,
 At opelske Frugthaver, at pode Træerne, at samle Æbler om Høsten.
 
-{c:12.}
+<nonum><center>12.</center></nonum>
 Aa, at svømme fra Badehuset eller fra et godt Sted paa Kysten,
 At pjaske i Vandet! At vade til Anklerne eller at galoppere nøgen langs med Strandbredden.
 
@@ -1704,22 +1820,22 @@ Aa, at fatte Rummet!
 Altings Pladsoverflødighed, at der ingen Grænser er,
 At gaa til Vejrs og eksistere som Himmel, som Solen og Maanen og de flyvende Skyer, som En, der er med dér.
 
-{c:13.}
+<nonum><center>13.</center></nonum>
 Aa, Glæden ved en mandig Selvbevidsthed!
-Ikke at være servil imod nogen, ikke at fire for nogen, hverken for kendte eller ukendte Tyranner, 
+Ikke at være servil imod nogen, ikke at fire for nogen, hverken for kendte eller ukendte Tyranner,
 At gaa med rejst Hoved, med springende Fjedre i Fødderne,
 At se med et roligt Blik eller med lynende Øjne,
 At tale med fuld og klingende Røst ud fra sin brede Bringe,
 At stille sin Personlighed Ansigt til Ansigt med alle andre Personligheder paa Jorden.
 
-{c:14.}
+<nonum><center>14.</center></nonum>
 Kender du de unge Aars storartede Morskab:
 Glæden ved det dyre Venskab, den sorgløse Snak, de lattermilde Ansigter,
 Glæden ved det frydefulde Solskin, Glæden ved Sport og svulmende Lunger,
 Glæden ved dejlig Musik, Glæden ved den straalende Balsal og de Dansende,
 Glæden ved en stor Middag, Sviregildet og den kraftige Kæfert.
 
-{c:15.}
+<nonum><center>15.</center></nonum>
 Men du, o min dybeste Sjæl!
 Kender du Glæden ved abstrakt Tænkning?
 Kender du det frie og ensomme Hjærtes Glæde, dit ømme, tungsindige Hiærte?
@@ -1729,7 +1845,7 @@ Glæden ved Tanken om Døden, de store Sfærer, Tiden og Rummet?
 Den profetiske Fryd over bedre, stoltere Kærlighedsidealer: den guddommelige Kvinde, den skønne, uomskiftelige, fuldkomne Ven?
 En udødelig Fryd, der ene er din og ene dig værdig, o Sjæl!
 
-{c:16.}
+<nonum><center>16.</center></nonum>
 Aa, at være en Hersker over Livet, mens jeg lever, og ikke en Slave,
 At møde Tilværelsen som en magtfuld Erobrer,
 Ingen Taager, ingen Kedsomhed, ingen Anklager længere eller kritiske Forfølgelser;
@@ -1750,19 +1866,24 @@ At se Spektakler, Tortur, Fængsel, Upopularitet lige i Øjnene!
 At gaa op paa Skafottet, at avancere imod Geværmundingerne med fuldkommen Nonchalance!
 At være en Gud helt igennem!
 
-{c:18.}
+<nonum><center>18.</center></nonum>
 Aa, at gaa til Søs i et Skibi
 At rejse fra dette uflyttelige, uudholdelige Land,
 At rejse væk fra Gadernes mødige Enshed, Fortovene og Husene,
 At rejse fra denne tykke, urokkelige Jord og gaa om Bord i et Skib,
 At sejle og sejle og sejle!
 
-{c:19.}
+<nonum><center>19.</center></nonum>
 Aa, at eje Livet videre fremad som et Digt af nye Glæder!
 At danse, klappe i Hænderne, triumfere, huje, hoppe springe, lade rulle, mase paa!
 At være en Verdenssømand med Ærinde til alle Havne,
 Et Skib selv (ser du ikke disse Sejl, som jeg her spreder ud for Solen og Luften),
 Et hurtigt og svulmende Skib, fuldt af rige Ord, ladet med Glæde!
+</body>
+</poem>
 
+</content>
+</section> <!-- Walt Whitmanske Oversættelser -->
 
-SLUTSEKTION
+</workbody>
+</kalliopework>
