@@ -39,7 +39,7 @@ export default class Head extends React.Component<HeadProps> {
         />
       );
     });
-    let ogImageAbsolute = ogImage || defaultOGImage;
+    let ogImageAbsolute = ogImage != null ? ogImage : defaultOGImage;
     if (!ogImageAbsolute.startsWith('http')) {
       ogImageAbsolute = `${urlPrefix}${ogImageAbsolute}`;
     }

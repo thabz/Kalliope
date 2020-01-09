@@ -17,12 +17,12 @@ import {
 import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import TextName from '../components/textname.js';
-import * as Strings from './helpers/strings.js';
-import CommonData from '../pages/helpers/commondata.js';
+import * as Strings from '../common/strings.js';
+import CommonData from '../common/commondata.js';
 import ErrorPage from './error.js';
-import * as Client from './helpers/client.js';
-import type { Lang, Country, Poet, PoetId, Error } from './helpers/types.js';
-import _ from './helpers/translations.js';
+import * as Client from '../common/client.js';
+import type { Lang, Country, Poet, PoetId, Error } from '../common/types.js';
+import _ from '../common/translations.js';
 
 type SearchProps = {
   lang: Lang,
@@ -226,10 +226,6 @@ export default class extends React.Component<SearchProps> {
                   }
                   .hightlights {
                     color: ${CommonData.lightTextColor};
-                    font-weight: lighter;
-                  }
-                  .poet-and-work {
-                    font-weight: lighter;
                   }
                 `}</style>
               </div>
@@ -301,10 +297,10 @@ export default class extends React.Component<SearchProps> {
     let headTitle = null;
     let pageTitle = null;
     let nav = null;
+    let requestPath = `/${lang}/search/${country}?query=${query}`;
+
     if (poet != null) {
-      tabs = (
-        <PoetTabs lang={lang} poet={poet} selected="search" query={query} />
-      );
+      tabs = <PoetTabs poet={poet} selected="search" query={query} />;
       headTitle =
         'Søgning - ' + poetNameString(poet, false, false) + ' - Kalliope';
       pageTitle = <PoetName poet={poet} includePeriod />;
@@ -340,7 +336,7 @@ export default class extends React.Component<SearchProps> {
           {tabs}
           {renderedResult}
           {henterFlere}
-          <LangSelect lang={lang} />
+          <LangSelect path={requestPath} />
         </Main>
       </div>
     );

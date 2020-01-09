@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hornc" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Clas Frederik</firstname>
+    <lastname>Horn</lastname>
+    <pseudonym>Classon Horn</pseudonym>
+    <christened>Claes Fredrik Horn</christened>
+  </name>
+  <period>
+    <born>
+      <date>1763-05-18</date>
+      <place>Stockholm</place>
+    </born>
+    <dead>
+      <date>1823-05-23</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1816</works>
+</person>

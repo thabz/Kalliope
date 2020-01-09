@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="parnell" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Thomas</firstname>
+    <lastname>Parnell</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1679-09-11</date>
+      <place>Dublin</place>
+    </born>
+    <dead>
+      <date>1718-10-24</date>
+      <place>Chester</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

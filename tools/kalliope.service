@@ -1,0 +1,11 @@
+[Unit]
+After=nginx.service
+Description=Kalliope node server
+
+[Service]
+WorkingDirectory=/home/jec/Sites/kalliope
+ExecStart=/usr/bin/npm run start
+
+[Install]
+WantedBy=default.target
+

@@ -19,8 +19,8 @@
     "isomorphic-fetch": "^2.2.1",
     "next-routes": "^1.2",
     "path-match": "^1.2.4",
-    "react": "^16.2",
-    "react-dom": "^16.2",
+    "react": "^16.8",
+    "react-dom": "^16.8",
     "xmldom": "^0.1.27"
   },
   "devDependencies": {
@@ -50,7 +50,7 @@
     "deasync": "^0.1.13",
     "entities": "^1.1.1",
     "enzyme": "^3.0",
-    "flow-bin": "^0.52.0",
+    "flow-bin": "^0.75",
     "full-icu": "^1.2.1",
     "ics": "^2.4.1",
     "jest": "^23.6.0",

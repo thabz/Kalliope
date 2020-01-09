@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="goetz" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Götz von</firstname>
+    <lastname>Berlichingen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1480</date>
+      <place>Jagsthausen</place>
+    </born>
+    <dead>
+      <date>1562-07-23</date>
+      <place>Burg Hornberg in Neckarzimmern</place>
+    </dead>
+  </period>
+  
+</person>
