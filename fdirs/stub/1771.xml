@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1771" author="stub" status="incomplete" type="poetry">
+<kalliopework id="1771" author="stub" status="complete" type="poetry">
 <workhead>
     <title>Arier og andre poetiske Stykker</title>
     <year>1771</year>
@@ -16,11 +16,12 @@
 
 <prose id="stub2020010906">
 <head>
+    <title>[Forord]</title>
     <quality>korrektur1,kilde,side</quality>
     <source pages="3"/>
 </head>
 <body>
-Forfatteren af denne Samling, er <sc>Ambrosius Stub</sc>, hvis Levnets Löb indeholder intet saa betydeligt, at det her skulle finde Sted: han levede og döde som Student, og har efterladt adskillige Pröver af hans Poetiske Geift, hvilke, skiönt ikke alle Mesterstykker, fortiene dog ikke den ringeste Plads blant deslige Samlinger. Man har længe seet disse Stykker hos adskillige i slette Afskrifter, og dette har bevæget Udgiveren at levere dem samlede til Trykken. Skulde nogle af disse mishage Kiendere af den fine Smag; da faae de blade dem forbie, og allene opholde sig ved de værdigere. I övrigt udbedes det veltænkende Publici Yndeft for denne Samling og
+Forfatteren af denne Samling, er <sc>Ambrosius Stub</sc>, hvis Levnets Löb indeholder intet saa betydeligt, at det her skulle finde Sted: han levede og döde som Student, og har efterladt adskillige Pröver af hans Poetiske Geift, hvilke, skiönt ikke alle Mesterstykker, fortiene dog ikke den ringeste Plads blant deslige Samlinger. Man har længe seet disse Stykker hos adskillige i slette Afskrifter, og dette har bevæget Udgiveren at levere dem samlede til Trykken. Skulde nogle af disse mishage Kiendere af den fine Smag; da faae de blade dem forbie, og allene opholde sig ved de værdigere. I övrigt udbedes det veltænkende Publici Yndest for denne Samling og
 <right>Udgiveren</right>
 </body>
 </prose>
@@ -77,9 +78,6 @@ Det eene, jeg Synder vil viide paa Jord,
     <suptitle>Herre! nu lader du din Tiener fare i Fred</suptitle>
     <title>Aria</title>
     <firstline>Seer jeg Naadens Frelsermand</firstline>
-    <notes>
-         <note>Cf. <xref bibel="bibellukas02,29"/></note>
-    </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="9"/>
 </head>
@@ -102,11 +100,8 @@ See, der er den i din Haand,
 <poem id="stub2019061403" variant="stubgudeligea2">
 <head>
     <title>Aria</title>
-    <subtitle><i>Mel.</i> Söde Jesu, ald min tragten etc.</subtitle>
+    <subtitle><i>Melod.</i> Söde Jesu, ald min tragten, etc.</subtitle>
     <firstline>För din hellig Lyst blev syndig</firstline>
-    <notes>
-         <note>Cf. <xref bibel="bibel1mose3,6-24"/></note>
-    </notes>
     <quality>korrektur1,kilde,side</quality>
     <source pages="10-11"/>
 </head>
@@ -186,7 +181,7 @@ Brast i Gud en Livsens Kilde :,:
 <poem id="stub2020010701">
 <head>
     <title>Aria</title>
-    <subtitle><i>Melod.</i>Naar skal min Tid faae Ende.</subtitle>
+    <subtitle><i>Melod.</i> Naar skal min Tid faae Ende.</subtitle>
     <firstline>O! du dybe Fald og Vaade!</firstline>
     <quality>korrektur1,kilde,side</quality>
     <source pages="14-15"/>
@@ -218,7 +213,7 @@ Alles evig Qyal og Qvide,
 
 <nonum><center>4.</center></nonum>
 Sög, du Syndbeklemte Hierte!
-Lindring af hans heele Smerte ,
+Lindring af hans heele Smerte,
     Sög hans Vunder, hvor du faaer
     Lægedom ved hvert et Saaer;
         Sög i ham din Fred din Roe
@@ -356,7 +351,7 @@ At dens Brod blev brudt i sidfte :,:
 <nonum><center>1.</center></nonum>
         Op af Synden,
         Op af Dynden,
-    Snart herop , du <i>Adams</i> Barn!
+    Snart her op, du <i>Adams</i> Barn!
         Du er veltet
         Nok og æltet
     Ned i Ondskabs dybe Skarn.
@@ -436,7 +431,7 @@ I Gud og <i>Jesu</i> alle Ting,
     <title>Aria</title>
     <firstline>Giv Sag og Sögsmaal, naar du vil</firstline>
     <notes>
-        <note>Mottoet stammer fra <xref bibel="bibel1johannes02,1"/>.
+        <note>Mottoet stammer fra <xref bibel="bibel1johannes02,1"/>.</note>
     </notes>
     <source pages="25-27"/>
     <quality>korrektur1,kilde,side</quality>
@@ -445,11 +440,11 @@ I Gud og <i>Jesu</i> alle Ting,
 <nonum><center>1.</center></nonum>
 Giv Sag og Sögsmaal, naar du vil,
     Min frie og frelste Siæls Misunder,
-Siig fandt, slig lögn , tag fra, læg til,
+Siig sandt, siig lögn, tag fra, læg til,
     Brug Renker, som jeg ey udgrunder,
 Bliv Vidne om hver Ting du veed
     Mit heele Livs Medviderinde,
-Regn op, hvor tit min Foed den gieed^
+Regn op, hvor tit min Foed den gieed,
     Og hvad du har i friske Minde.
 
 <nonum><center>2.</center></nonum>
@@ -459,7 +454,7 @@ Jeg blev fra Strengheds Ret kiöbt frie
     Paa <i>Colgatha</i>, da <i>Jesus</i> döde,
 Der vendtes Rettens Blad omkring,
     Der fik min Sag en anden Tone;
-Thi Zion blev mit Værne-Ting,
+Thi <i>Zion</i> blev mit Værne-Ting,
     Og Ober-Ret blev Naadens Throne.
 
 <nonum><center>3.</center></nonum>
@@ -498,6 +493,9 @@ At jeg kan vinde Himmerig
 <head>
     <suptitle>Act IV, 12. Der er ikke Salighed i nogen anden etc.</suptitle>
     <firstline>Eya! hvor Synden trykker</firstline>
+    <notes>
+         <note>Cf. <xref bibel="bibelapostlene04,12"/></note>
+    </notes>
     <source pages="28-30"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -652,7 +650,7 @@ Om Döden fandt dig nu i Synden död, hvad da?
 <nonum><center>4.</center></nonum>
   En Röver kom til <i>Paradiis</i>,
       Saa blev den vigtig Sag bemerket,
-  At Troe i Döden vinder Priis ,
+  At Troe i Döden vinder Priis,
       Ja Enden, Enden kroner Verket.
 Du Helgen agt ey haant om nogen Synders Siel.
 Thi du har vel begyndt, men han kan ende vel.
@@ -688,7 +686,7 @@ Forladt mig nu i Helveds grusom Heede?
 
 <nonum><center>2.</center></nonum>
 Ald Verdens Synd gik <i>Jesus</i> her i möde<note>möde] mòde</note>
-  Ald Syndens Straf blev nu paa <i>Jefum</i> lagt,
+  Ald Syndens Straf blev nu paa <i>Jesum</i> lagt,
 Ald Straffens Vee betog ham för han döde;
   Ja evig Död blev her af Livet smagt;
 Han eene leed, hvad alle burte liide,
@@ -724,7 +722,7 @@ Skal naae din Gud og finde Himlen aaben.
 <head>
     <suptitle>Luc. 23, 46. Fader jeg vil befale min Aand i dine etc.</suptitle>
     <title>Aria</title>
-    <firstline></firstline>
+    <firstline>Lyksalig endte Dag! min Frelser endte sine Dage</firstline>
     <notes>
          <note>Mottoet er <xref bibel="bibellukas23,46"/>.</note>
     </notes>
@@ -743,7 +741,7 @@ Hans Siæl er löst af alle haarde Baand;
 <nonum><center>2.</center></nonum>
 Hör til, du Levende! som har din Död i Hælen,
   Lær her at döe og frelse Sielen,
-Som blev saa suurt og dyrt löst ind ved <i>Jefu</i> Blod;
+Som blev saa suurt og dyrt löst ind ved <i>Jesu</i> Blod;
   Sov hen med <i>Jesu</i> Ord i Hiertet og i Munden,
     Den Siel, Gud tager selv imod,
       Har Döden evig overvunden.
@@ -904,9 +902,9 @@ Min Tinding foragter de visnede Blade,
 </head>
 <body>
 Medgangs Ven har lært at smiile,
- Naar min Sol er höy og bliid,
+  Naar min Sol er höy og bliid,
 Men saa snart den gaaer til Hviile,
- Kaster Spodskhed Nakken hid,
+  Kaster Spodskhed Nakken hid,
       O! du Svale flyver bort,
       Naar min Dag er kold og kort.
 
@@ -918,18 +916,18 @@ Tillid staar saa tit i Vove
       Skiönt du synes uden Bræk.
 
 Verden har forgyldt sin Pille,
- Verden skienker Gift i Viin,
+  Verden skienker Gift i Viin,
 Verden kan saa höflig drille,
- Verden er saa falsk som fiin.
+  Verden er saa falsk som fiin.
       O! du Slange, Brod og Mord
       Stikker i dit sledske Ord.
 
 Klog Oprigtighed bær Priisen
- Thi den holder Mod og Stand,
+  Thi den holder Mod og Stand,
 Midt paa Bölgen, midt paa Isen
- Midt igiennem Ild og Vand.
+  Midt igiennem Ild og Vand.
       Söde <i>Phoenix</i>! Modgangs Ven!
-   Jeg er evig din igien.
+      Jeg er evig din igien.
 </body>
 </poem>
 
@@ -1171,7 +1169,7 @@ Hver gang jeg krydser tæt langs op ad skiden Gade.
     Kom mindste Viin-Plæt paa hans Dragt,
     Jeg derimod kan ziire min
     Med Saft-Verk fra Bourdeaux og Rhin,
-Og naar den er slidt op, jeg mig med <i>Adam</a> glæder.
+Og naar den er slidt op, jeg mig med <i>Adam</i> glæder.
 Thi han var lykkelig, den Stund han ey bar Klæder.
 
 <nonum><center>4.</center></nonum>
@@ -1191,7 +1189,7 @@ Min Flaske er mig troe, saa ingen mig udstikker,
       I det han elsker Penge,
     Han har; men fattes allerförst,
       Thi maae hans Arving trænge;
-    Hans Glæde er kuns sorrigfuld ,
+    Hans Glæde er kuns sorrigfuld,
     Hans Armod voxer med hans Giuld,
     Hans Venner vente paa hans Död,
     Og deele det, han aldrig nöd;
@@ -1621,7 +1619,7 @@ Een har det i Ryggen af Brud og af Verk;
 J Rige, J Stærke, o! hielper et Skrog,
 Saa eenes Tre Meeninger vel i et Sprog.
 
-<nonum><wrap><i>NB. Dette blev giort til Stattholder Rantzau og Oberst Lieutenant Kendtler</i></wrap></nonum>
+<nonum><wrap><i>NB. Dette blev giort til Stattholder Rantzau og Oberst Lieutenant Kentler</i></wrap></nonum>
 </body>
 </poem>
 
@@ -1818,7 +1816,7 @@ Vel mig min Sag er god,
   Lad Verden kun bekriige
 Og være mig imod,
   Nok at min Sag er god :,:
-    Du Jefus maae selv raade,
+    Du Jesus maae selv raade,
     Jeg bliver ved din Naade,
         Du skal ledsage mig
         Hen ind i Himmerig.
