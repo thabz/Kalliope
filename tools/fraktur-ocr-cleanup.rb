@@ -92,6 +92,7 @@
 'storre/større',
 'ftaae/staae',
 '(\W)ftal/\1skal',
+'(\W)flal/\1skal',
 'Oie/Øie',
 'Oje/Øje',
 'Ojne/Øjne',
