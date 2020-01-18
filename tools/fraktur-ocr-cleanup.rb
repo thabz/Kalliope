@@ -342,6 +342,7 @@
 'hvrt/hørt',
 'hsire/høire',
 'voere/være',
+'(\W)verre/\1være',
 'Voer/Vær',
 'soenk/sænk',
 'fkab/skab',
