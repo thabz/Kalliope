@@ -73,6 +73,7 @@
 'Vlad/Blad',
 'Bloes/Blæs',
 'Gjog/Gjøg',
+'Gnd/Gud',
 'modte/mødte',
 'tsr/tør',
 'ftj/skj',
