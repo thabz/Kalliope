@@ -333,6 +333,9 @@ File.readlines(ARGV[0]).each do |line|
       @titlepage = line.gsub(/^TITELBLAD:/,'').strip
     elsif line =~ /^FACSIMILE-SIDER:/
       @facsimile_pages_num = line.gsub(/^FACSIMILE-SIDER:/,'').strip
+      if (@facsimile_pages_num.length == 0)
+        abort "FEJL: FACSIMILE-SIDER er blank"
+      end
     elsif line =~ /^ID:/
       @workid = line.gsub(/^ID:/,'').strip
     elsif line =~ /^NOTE:/
