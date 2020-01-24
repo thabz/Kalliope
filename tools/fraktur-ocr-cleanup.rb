@@ -364,6 +364,7 @@
 '(\W)omt(\W)/\1ømt\2',
 '(\W)smt(\W)/\1ømt\2',
 '(\W)ci(\W)/\1ei\2',
+'(\W)dn(\W)/\1du\2',
 '(\W)itte(\W)/\1ikke\2',
 '(\W)bersmt/\1berømt',
 '(\W)prsv/\1prøv',
