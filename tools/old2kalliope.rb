@@ -291,7 +291,7 @@ File.readlines(ARGV[0]).each do |line|
       STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal ="
   end
   line = line.rstrip.gsub(/\*(.+?)\*/,'<b>\1</b>')
-  if (line =~ /\*/)
+  if (line =~ /\*/ and not line =~ /^NOTE:/ and not line =~ /<note>/ and not line =~ /{/)
       STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal *"
   end
   # Håndter {..} TODO: Fang manglende }
@@ -333,6 +333,9 @@ File.readlines(ARGV[0]).each do |line|
       @titlepage = line.gsub(/^TITELBLAD:/,'').strip
     elsif line =~ /^FACSIMILE-SIDER:/
       @facsimile_pages_num = line.gsub(/^FACSIMILE-SIDER:/,'').strip
+      if (@facsimile_pages_num.length == 0)
+        abort "FEJL: FACSIMILE-SIDER er blank"
+      end
     elsif line =~ /^ID:/
       @workid = line.gsub(/^ID:/,'').strip
     elsif line =~ /^NOTE:/

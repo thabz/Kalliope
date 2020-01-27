@@ -24,6 +24,7 @@ const Note = (props: NoteProps) => {
       <style jsx>{`
         div.sidebar-note {
           margin-bottom: 10px;
+          hyphens: auto;
         }
         div.sidebar-note.print-only {
           display: none;

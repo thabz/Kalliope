@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="miller" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Johann Martin</firstname>
+    <lastname>Miller</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1750-12-03</date>
+      <place>Ulm</place>
+    </born>
+    <dead>
+      <date>1814-06-21</date>
+      <place>Ulm</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

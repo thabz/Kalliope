@@ -32,6 +32,7 @@ import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
 import ErrorPage from './error.js';
 import HelpKalliope from '../components/helpkalliope.js';
+import { pluralize } from '../common/strings.js';
 import type {
   Lang,
   Poet,
@@ -377,12 +378,16 @@ export default class extends React.Component<TextComponentProps> {
     let renderedVariants = null;
     if (variants.length > 0) {
       let heading = null;
+      const varianter = _(
+        pluralize(variants.length, 'Variant', 'Varianter'),
+        lang
+      );
       if (text.text_type === 'section') {
-        heading = 'Varianter af denne samling:';
+        heading = _('{varianter} af denne samling:', lang, { varianter });
       } else if (text.text_type === 'poem') {
-        heading = 'Varianter af dette digt:';
+        heading = _('{varianter} af dette digt:', lang, { varianter });
       } else if (text.text_type === 'prose') {
-        heading = 'Varianter af denne tekst:';
+        heading = _('{varianter} af denne tekst:', lang, { varianter });
       }
       renderedVariants = (
         <div className="variants">

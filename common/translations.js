@@ -50,6 +50,11 @@ const translations: { [string]: string } = {
     '{poetName}: “{poemTitle}” from {workTitle}',
   'en*Søg i Kalliopes {adjective} samling':
     "Search Kalliope's {adjective} collection",
+  'en*Variant': 'Variation',
+  'en*Varianter': 'Variations',
+  'en*{varianter} af denne tekst:': '{varianter} of this text:',
+  'en*{varianter} af dette digt:': '{varianter} of this poem:',
+  'en*{varianter} af denne samling:': '{varianter} of this collection:',
 };
 
 const _ = (

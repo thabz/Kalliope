@@ -278,6 +278,7 @@ const TextContent = (props: TextContentPropsType) => {
         }
         const style = {
           width: width,
+          pageBreakInside: 'avoid',
           maxWidth: '100%',
         };
         return <img key={keySeq++} src={src} style={style} alt={alt} />;
