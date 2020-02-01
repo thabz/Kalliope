@@ -1,31 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="fortaellinger" author="wessel" status="complete" type="poetry">
+<kalliopework id="1862" author="wessel" status="incomplete" type="poetry">
 <workhead>
-   <title>Fortællinger</title>
-   <year>?</year>
-   <notes>
-      <note>Såvel i tekstens ordlyd som i digtenes arrangering har vi fulgt I. Levins <i>J. H. Wessels samlede Digte</i> fra 1862. Inddelingen af Wessels digte i <i>Fortællinger</i>, <i>Blandede digte</i> og <i>Småvers</i> er altså et rent redaktionelt påhit, som har den egenskab at give overblik og at skabe orden i et forfatterskab der ellers er spredt ud over et mylder af tidsskrifter, håndskrifter, privattryk osv. Levins forklarende noter er medtaget og kan skelnes fra Kalliopes noter derved at de er sat i citationstegn.</note>
-      <note type="credits">Bidrag fra Brian Bentsen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+    <title>Samlede Digte</title>
+    <year>1862</year>
+    <notes>
+        <note>Noter med foranstillet asterisk * er digteren eller udgiverens egne.</note>
+        <note type="credits">Bidrag fra Brian Bentsen, hvor andet ikke er angivet.</note>
+    </notes>
+    <pictures>
+        <picture type="titlepage" src="1862-p1.jpg">Titelbladet til <i>Samlede Digte</i> (1862) lyder ,,J. H. Wessels / samlede Digte. // Udgivne af J. Levin. // Med Digterens Portrait og Facsimile. // Kjøbenhavn. / C. A. Reitzels Forlag. / Thieles Bogtrykkeri. / 1862.''</picture>
+    </pictures>
+    <source facsimile="115208054787_color" facsimile-pages-num="552" facsimile-pages-offset="148">Johan Herman Wessel: <i>Samlede Digte</i>, J. Levin (red.), C.A. Reitzels Forlag, Kbh., 1862.</source>
 </workhead>
 <workbody>
 
+<section>
+<head>
+    <title>Kierlighed uden Strømer</title>    
+</head>
+<content>
+</content>
+</section>
+
+<section>
+<head>
+    <title>Fortællinger</title>    
+</head>
+<content>
+
 <poem id="wesselfortaellingera4">
 <head>
-   <title>Gaffelen</title>
-   <toctitle>Gaffelen</toctitle>
-   <indextitle>Gaffelen</indextitle>
-   <firstline>Jeg synger om, dog nei; jeg ligefrem fortæller</firstline>
-   <notes>
-      <note>Side 75-78.</note>
-      <note>Det franske stykke i P.L. Møllers oversættelse: Den Kaal en Smag jo har fast som et Vomitiv, / Jeg seer ei, hvor ved den man holde kan sit Liv. / Ja, sagde Jupiter, i Gudesuppens Sted / Er Kaalen vistnok slet; - for Velanstændighed, / Min Søn, af denne Kaal dog lidt man nyde maa. / Men apropos, hvad skal i Hast jeg hitte paa, / For disse brave Folk at lønne med Honneur? / Hvis ellers saadan Kaal fortjener en Douceur? / Saa svarede Mercur: du kan jo spørge dem, / Og naadigst lade dem med Ønsker komme frem.</note>
-      <note><i>Gaffelen</i> blev trykt første gang i <i>Viborger Samler</i> 1781 og anden gang i <i>Allehaande</i> 1781.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
-   <keywords>aleksandrin</keywords>
+    <title>Gaffelen</title>
+    <toctitle>Gaffelen</toctitle>
+    <indextitle>Gaffelen</indextitle>
+    <firstline>Jeg synger om, dog nei; jeg ligefrem fortæller</firstline>
+    <notes>
+          <note>Det franske stykke i P.L. Møllers oversættelse: Den Kaal en Smag jo har fast som et Vomitiv, / Jeg seer ei, hvor ved den man holde kan sit Liv. / Ja, sagde Jupiter, i Gudesuppens Sted / Er Kaalen vistnok slet; - for Velanstændighed, / Min Søn, af denne Kaal dog lidt man nyde maa. / Men apropos, hvad skal i Hast jeg hitte paa, / For disse brave Folk at lønne med Honneur? / Hvis ellers saadan Kaal fortjener en Douceur? / Saa svarede Mercur: du kan jo spørge dem, / Og naadigst lade dem med Ønsker komme frem.</note>
+          <note><i>Gaffelen</i> blev trykt første gang i <i>Viborger Samler</i> 1781 og anden gang i <i>Allehaande</i> 1781.</note>
+    </notes>
+    <source pages="75-78"/>
+    <quality>korrektur1,kilde,side</quality>
+    <keywords>aleksandrin</keywords>
 </head>
 <body>
 Jeg synger om, dog nei; jeg ligefrem fortæller,
@@ -125,14 +141,12 @@ Den gik; og Guderne, de giorde ligesaa.
 
 <poem id="wesselfortaellingera2">
 <head>
-   <title>Herremanden</title>
-   <toctitle>Herremanden</toctitle>
-   <indextitle>Herremanden</indextitle>
-   <firstline>En Herremand sov engang hen</firstline>
-   <notes>
-      <note>Side 78-80.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Herremanden</title>
+    <toctitle>Herremanden</toctitle>
+    <indextitle>Herremanden</indextitle>
+    <firstline>En Herremand sov engang hen</firstline>
+    <source pages="78-80"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 En Herremand sov engang hen;
@@ -199,15 +213,15 @@ At ikke skaffe Næsten Barn,
 
 <poem id="wessel1999101403">
 <head>
-   <title>Hundemordet</title>
-   <toctitle>Hundemordet</toctitle>
-   <indextitle>Hundemordet</indextitle>
-   <firstline>At Mennesker af Dyr saa tidt</firstline>
-   <notes>
-      <note>Side 80-83.</note>
-      <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Hundemordet</title>
+    <toctitle>Hundemordet</toctitle>
+    <indextitle>Hundemordet</indextitle>
+    <firstline>At Mennesker af Dyr saa tidt</firstline>
+    <notes>
+          <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    </notes>
+    <source pages="80-83"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
         At Mennesker af Dyr saa tidt
@@ -283,14 +297,12 @@ Man ei om Bagatel maae med sin Næste kives.
 
 <poem id="wessel2002092101">
 <head>
-   <title>Den forvovne Siællands-Faer</title>
-   <toctitle>Den forvovne Siællands-Faer</toctitle>
-   <indextitle>Den forvovne Siællands-Faer</indextitle>
-   <firstline>Der var engang en Siællands-Faer</firstline>
-   <notes>
-      <note>Side 83-85.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Den forvovne Siællands-Faer</title>
+    <toctitle>Den forvovne Siællands-Faer</toctitle>
+    <indextitle>Den forvovne Siællands-Faer</indextitle>
+    <firstline>Der var engang en Siællands-Faer</firstline>
+    <source pages="83-85"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Der var engang en Siællands-Faer - -
@@ -375,15 +387,15 @@ Fra Posten hans.
 
 <poem id="wessel1999100202">
 <head>
-   <title>Det Stiaalne Taft</title>
-   <toctitle>Det Stiaalne Taft</toctitle>
-   <indextitle>Det Stiaalne Taft</indextitle>
-   <firstline>En vittig Kræmmer fik engang en Kunde</firstline>
-   <notes>
-      <note>Side 86-88.</note>
-      <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Det Stiaalne Taft</title>
+    <toctitle>Det Stiaalne Taft</toctitle>
+    <indextitle>Det Stiaalne Taft</indextitle>
+    <firstline>En vittig Kræmmer fik engang en Kunde</firstline>
+    <notes>
+          <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    </notes>
+    <source pages="86-88"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 En vittig Kræmmer fik engang en Kunde,
@@ -451,14 +463,12 @@ Min kiære! Stiel ei Taft!
 
 <poem id="wessel2002092102">
 <head>
-   <title>Sadelen</title>
-   <toctitle>Sadelen</toctitle>
-   <indextitle>Sadelen</indextitle>
-   <firstline>Den Sadelmager havde Ret</firstline>
-   <notes>
-      <note>Side 88-91.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Sadelen</title>
+    <toctitle>Sadelen</toctitle>
+    <indextitle>Sadelen</indextitle>
+    <firstline>Den Sadelmager havde Ret</firstline>
+    <source pages="88-91"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den Sadelmager havde Ret,
@@ -477,7 +487,7 @@ Thi Herremandens Hund
 Til Rov jeg ellers bliver,
 Hvormed en Herremand mig engang før har truet
 Udi et Manuskript, paa Svenstrup publicert,
-Som af en Slump jeg traf engang, jeg kiøbte Sukker,<note>,,af en <i>Slump</i>, af en Hændelse.''</note>
+Som af en Slump jeg traf engang, jeg kiøbte Sukker,<note>* af en <i>Slump</i>, af en Hændelse.</note>
 Og derved blev ei simpel væk forkuet,
 Men havde nær af Angest gar crepert;
 Men det er Tid, jeg Bom for Digressionen lukker.
@@ -562,16 +572,16 @@ De passer jo ei mine Hænder.''
 
 <poem id="wesselfortaellingera1">
 <head>
-   <title>Den gamle Skade</title>
-   <subtitle>Non est in Medico, semper relevetur ut æger</subtitle>
-   <toctitle>Den gamle Skade</toctitle>
-   <indextitle>Den gamle Skade</indextitle>
-   <firstline>Den, som Naturen holde vil i Live</firstline>
-   <notes>
-      <note>Side 91-95.</note>
-      <note>Det latinske citat er fra Ovid og betyder: Det står ikke i lægens magt at helbrede enhver syg.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Den gamle Skade</title>
+    <subtitle>Non est in Medico, semper relevetur ut æger</subtitle>
+    <toctitle>Den gamle Skade</toctitle>
+    <indextitle>Den gamle Skade</indextitle>
+    <firstline>Den, som Naturen holde vil i Live</firstline>
+    <notes>
+          <note>Det latinske citat er fra Ovid og betyder: Det står ikke i lægens magt at helbrede enhver syg.</note>
+    </notes>
+    <source pages="91-95"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den, som Naturen holde vil i Live
@@ -692,15 +702,15 @@ Jeg ingen mere sund og ingen bedre veed.
 
 <poem id="wessel1999101405">
 <head>
-   <title>Posthuuset</title>
-   <toctitle>Posthuuset</toctitle>
-   <indextitle>Posthuuset</indextitle>
-   <firstline>Man har Beviis nok paa</firstline>
-   <notes>
-      <note>Side 95-100.</note>
-      <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Posthuuset</title>
+    <toctitle>Posthuuset</toctitle>
+    <indextitle>Posthuuset</indextitle>
+    <firstline>Man har Beviis nok paa</firstline>
+    <notes>
+          <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    </notes>
+    <source pages="95-100"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <nonum><center><i>I</i></center></nonum>
@@ -772,7 +782,7 @@ Hans Hosbond vented' Brev fra en Correspondent.
     Hvordan hans Hosbond sig af Harme vreed,
 Og hvad den Jyde stor Ulempe leed;
 Det Læserne skal faae at vide,
-Naar de til Nummer otte skride.<note>,,<i>Nummer otte</i>, af Ugebladet Votre Serviteur, hvori nærværende Fortælling oprindelig har været trykket.''</note>
+Naar de til Nummer otte skride.<note>* <i>Nummer otte</i>, af Ugebladet Votre Serviteur, hvori nærværende Fortælling oprindelig har været trykket.</note>
 
 
 <nonum><center><i>II</i></center></nonum>
@@ -861,17 +871,17 @@ A maatt' iblant æ Brev til hende sende.''
 
 <poem id="wessel2002092103">
 <head>
-   <title>Den fri Vognleie</title>
-   <subtitle>Ode</subtitle>
-   <toctitle>Den fri Vognleie</toctitle>
-   <indextitle>Den fri Vognleie</indextitle>
-   <firstline>For Synd er intet Rige</firstline>
-   <notes>
-      <note>Side 100-05.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Den fri Vognleie</title>
+    <subtitle>Ode</subtitle>
+    <toctitle>Den fri Vognleie</toctitle>
+    <indextitle>Den fri Vognleie</indextitle>
+    <firstline>For Synd er intet Rige</firstline>
+    <source pages="100-105"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<nonum><center>I.</center></nonum>
+
 For Synd er intet Rige,
 Og saa ei Sverrig frie.
 Vee dem, som sig berige
@@ -953,11 +963,11 @@ Paa Vognen vil vi kiøre
 Vor Tyv igiennem Rad.''
 
 
-<nonum><center><i>II</i></center></nonum>
-          <small>En frit tilbuden Vogn er god,</small>
-          <small>Skient man iblandt ei tager derimod.</small>
-          <small>Min Helt fik en, han gad havt ingen.</small>
-          <small>Hvorfor? Enhver begriber Tingen.</small>
+<nonum><center>II.</center></nonum>
+              <small>En frit tilbuden Vogn er god,</small>
+              <small>Skient man iblandt ei tager derimod.</small>
+              <small>Min Helt fik en, han gad havt ingen.</small>
+              <small>Hvorfor? Enhver begriber Tingen.</small>
 
     Den Klokker blev forfærdet,
 Da man ham lætted' af;
@@ -1046,19 +1056,19 @@ Naar du betaler vel.
 
 <poem id="wessel1999100201">
 <head>
-   <title>Fyrsten og Forbryderen</title>
-   <subtitle>
-      <line>Din strenge Dom frygt ikke meer,</line>
-      <line>Naar han, som den afsagde, leer.</line>
-   </subtitle>
-   <toctitle>Fyrsten og Forbryderen</toctitle>
-   <indextitle>Fyrsten og Forbryderen</indextitle>
-   <firstline>Den kolde Statsmand troer</firstline>
-   <notes>
-      <note>Side 105-07.</note>
-      <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Fyrsten og Forbryderen</title>
+    <subtitle>
+          <line>Din strenge Dom frygt ikke meer,</line>
+          <line>Naar han, som den afsagde, leer.</line>
+    </subtitle>
+    <toctitle>Fyrsten og Forbryderen</toctitle>
+    <indextitle>Fyrsten og Forbryderen</indextitle>
+    <firstline>Den kolde Statsmand troer</firstline>
+    <notes>
+          <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    </notes>
+    <source pages="105-107"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den kolde Statsmand troer,
@@ -1133,20 +1143,20 @@ Den Tigers Hierte har, som ei. undskylder det.
 
 <poem id="wesselfortaellingera3">
 <head>
-   <title>Den Druknede</title>
-   <subtitle>
-      <line>Oculos in morte gravatos</line>
-      <line>- - erexit.</line>
-      <line>Ovid.</line>
-   </subtitle>
-   <toctitle>Den Druknede</toctitle>
-   <indextitle>Den Druknede</indextitle>
-   <firstline>Rom blev ei bygget paa en Dag</firstline>
-   <notes>
-      <note>Side 108-10.</note>
-      <note>Ovid-citatet betyder: Han løftede de af døden tyngede øjne.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Den Druknede</title>
+    <subtitle>
+          <line>Oculos in morte gravatos</line>
+          <line>- - erexit.</line>
+          <line>Ovid.</line>
+    </subtitle>
+    <toctitle>Den Druknede</toctitle>
+    <indextitle>Den Druknede</indextitle>
+    <firstline>Rom blev ei bygget paa en Dag</firstline>
+    <notes>
+          <note>Ovid-citatet betyder: Han løftede de af døden tyngede øjne.</note>
+    </notes>
+    <source pages="108-110"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Rom blev ei bygget paa en Dag.
@@ -1232,14 +1242,12 @@ At man kan leve op, skiønt man er næsten død.
 
 <poem id="wessel2002092104">
 <head>
-   <title>Toujours Perdrix</title>
-   <toctitle>Toujours Perdrix</toctitle>
-   <indextitle>Toujours Perdrix</indextitle>
-   <firstline>Forandringer, Forandringer</firstline>
-   <notes>
-      <note>Side 110-13.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Toujours Perdrix</title>
+    <toctitle>Toujours Perdrix</toctitle>
+    <indextitle>Toujours Perdrix</indextitle>
+    <firstline>Forandringer, Forandringer</firstline>
+    <source pages="110-113"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Forandringer, Forandringer
@@ -1320,14 +1328,12 @@ Vor Tiener Peer.''
 
 <poem id="wessel2002092105">
 <head>
-   <title>Supplicanterne</title>
-   <toctitle>Supplicanterne</toctitle>
-   <indextitle>Supplicanterne</indextitle>
-   <firstline>Marcus Antonius, om hvem jeg strax fortæller</firstline>
-   <notes>
-      <note>Side 113-15.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Supplicanterne</title>
+    <toctitle>Supplicanterne</toctitle>
+    <indextitle>Supplicanterne</indextitle>
+    <firstline>Marcus Antonius, om hvem jeg strax fortæller</firstline>
+    <source pages="113-115"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <i>Marcus Antonius</i>, om hvem jeg strax fortæller,
@@ -1396,7 +1402,7 @@ Men Pungen min,
 Og over mit jeg raader.
 Min Ret til den jeg giver denne Staader.''
 Han den af <i>Stik</i> modtog,
-Og skaade sig for Fryd, som den, der ei var klog.<note>,,<i>Og skaade sig</i>, skaaede, teede sig.''</note>
+Og skaade sig for Fryd, som den, der ei var klog.<note>* <i>Og skaade sig</i>, skaaede, teede sig.</note>
 Kort sagt: De ginge glade begge.
 Nu vil vi en Moral tillegge.
 
@@ -1407,21 +1413,19 @@ Nu vil vi en Moral tillegge.
         Hvad ingentid de eier:
         Du aldrig dig indbilde bør,
         Een Svale Sommer giør.
-        <i>Stik</i> slap ret godt; men stoel ei paa,
+            <i>Stik</i> slap ret godt; men stoel ei paa,
         Det dig gaaer ligesaa.
 </body>
 </poem>
 
 <poem id="wessel2002092106">
 <head>
-   <title>Stella</title>
-   <toctitle>Stella</toctitle>
-   <indextitle>Stella</indextitle>
-   <firstline>Hvad giør Vildtydsken ei for Penge?</firstline>
-   <notes>
-      <note>Side 116-33.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Stella</title>
+    <toctitle>Stella</toctitle>
+    <indextitle>Stella</indextitle>
+    <firstline>Hvad giør Vildtydsken ei for Penge?</firstline>
+    <source pages="116-133"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <nonum><center><i>I</i></center></nonum>
@@ -1495,7 +1499,7 @@ Hos hver for alle Livets Pligter brændte!
 Men jeg faer alt forvidt omkring.
 
     Jeg beder Læseren mig Resten creditere!
-Han derom læse skal i Nr. 16 mere.<note>,,<i>Han derom læse skal i Nr. 16</i>, nemlig af Digterens Ugeblad, Votre Serviteur, hvori nærv. Fortælling først fremkom.''</note>
+Han derom læse skal i Nr. 16 mere.<note>* <i>Han derom læse skal i Nr. 16</i>, nemlig af Digterens Ugeblad, Votre Serviteur, hvori nærv. Fortælling først fremkom.</note>
 
 
 <nonum><center><i>Moral</i></center></nonum>
@@ -1895,7 +1899,7 @@ Og om ved hvem hun Modernavnet bar.
 ,,Bevare Gud! det er min Mand!''
 Saa raabte den bestyrste Dame,
 Og i det samme
-Indtræder han.<note>,,'Og i det samme / indtræder han.' Med disse to Linier ender Nr. 20 af Votre Serviteur - midt paa syvende Side. Digteren, der ikke overkom at skrive mere til dette Nummer, greb til den Udvei at fylde den næste Side med følgende lunefulde Avertissement:<br/><i>Priismaterie.</i><br/>Den, som kan opdage Udfaldet af denne Historie, og vil give sin Cavalliers Parol, eller i vidrig Fald sværge ved sin Ære, ikke uden af sit Genie at have udfundet samme, loves Premie af alle udkomne Nummere<br/>          Af<br/>    Votre Serviteur.<br/>Navnet, om forlanges, fortiet.''</note>
+Indtræder han.<note>* 'Og i det samme / indtræder han.' Med disse to Linier ender Nr. 20 af Votre Serviteur - midt paa syvende Side. Digteren, der ikke overkom at skrive mere til dette Nummer, greb til den Udvei at fylde den næste Side med følgende lunefulde Avertissement:<br/><i>Priismaterie.</i><br/>Den, som kan opdage Udfaldet af denne Historie, og vil give sin Cavalliers Parol, eller i vidrig Fald sværge ved sin Ære, ikke uden af sit Genie at have udfundet samme, loves Premie af alle udkomne Nummere<br/>          Af<br/>    Votre Serviteur.<br/>Navnet, om forlanges, fortiet.</note>
 
 
 <nonum><center><i>Moral</i></center></nonum>
@@ -1975,14 +1979,12 @@ Hvad Alexander voved' før!
 
 <poem id="wessel2002092107">
 <head>
-   <title>Den fromme Bekiender</title>
-   <toctitle>Den fromme Bekiender</toctitle>
-   <indextitle>Den fromme Bekiender</indextitle>
-   <firstline>En fornem Herre, from, men ikke super-klog</firstline>
-   <notes>
-      <note>Side 134-35.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Den fromme Bekiender</title>
+    <toctitle>Den fromme Bekiender</toctitle>
+    <indextitle>Den fromme Bekiender</indextitle>
+    <firstline>En fornem Herre, from, men ikke super-klog</firstline>
+    <source pages="134-135"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 En fornem Herre, from, men ikke super-klog,
@@ -2047,14 +2049,12 @@ Durch seine Dumheit fort.
 
 <poem id="wesselfortaellingera0">
 <head>
-   <title>Smeden og Bageren</title>
-   <toctitle>Smeden og Bageren</toctitle>
-   <indextitle>Smeden og Bageren</indextitle>
-   <firstline>Der var en liden Bye, i Byen var en Smed</firstline>
-   <notes>
-      <note>Side 136-38.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Smeden og Bageren</title>
+    <toctitle>Smeden og Bageren</toctitle>
+    <indextitle>Smeden og Bageren</indextitle>
+    <firstline>Der var en liden Bye, i Byen var en Smed</firstline>
+    <source pages="136-138"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Der var en liden Bye, i Byen var en Smed,
@@ -2141,16 +2141,16 @@ Den kommer, naar du mindst den tænker nær.
 
 <poem id="wessel2002092108">
 <head>
-   <title>Den sande Drøm</title>
-   <subtitle>Effodiuntur opes, irritamenta malorum</subtitle>
-   <toctitle>Den sande Drøm</toctitle>
-   <indextitle>Den sande Drøm</indextitle>
-   <firstline>Der var tre friske Fyrer</firstline>
-   <notes>
-      <note>Side 138-41.</note>
-      <note>Mottoet betyder omtrent: Rigdomme graves op, lokker til forbrydelse.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Den sande Drøm</title>
+    <subtitle>Effodiuntur opes, irritamenta malorum</subtitle>
+    <toctitle>Den sande Drøm</toctitle>
+    <indextitle>Den sande Drøm</indextitle>
+    <firstline>Der var tre friske Fyrer</firstline>
+    <notes>
+          <note>Mottoet betyder omtrent: Rigdomme graves op, lokker til forbrydelse.</note>
+    </notes>
+    <source pages="138-141"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Der var tre friske Fyrer,
@@ -2245,14 +2245,12 @@ En Nar.
 
 <poem id="wessel2001092201">
 <head>
-   <title>Prutningen</title>
-   <toctitle>Prutningen</toctitle>
-   <indextitle>Prutningen</indextitle>
-   <firstline>Den Vilde haver havt til Lov</firstline>
-   <notes>
-      <note>Side 141-44.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Prutningen</title>
+    <toctitle>Prutningen</toctitle>
+    <indextitle>Prutningen</indextitle>
+    <firstline>Den Vilde haver havt til Lov</firstline>
+    <source pages="141-144"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den Vilde haver havt til Lov
@@ -2334,23 +2332,23 @@ End hvad du fordre vil for Dito til Bormester.
 
 <poem id="wessel1999101406">
 <head>
-   <title>Sanct Sebastian</title>
-   <subtitle>Quæ quibus antiferam?</subtitle>
-   <toctitle>Sanct Sebastian</toctitle>
-   <indextitle>Sanct Sebastian</indextitle>
-   <firstline>Hver Konstner har sit Sprog</firstline>
-   <notes>
-      <note>Side 144-46.</note>
-      <note>Mottoet betyder: Hvad skal jeg foretrække for hvad?</note>
-      <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Sanct Sebastian</title>
+    <subtitle>Quæ quibus antiferam?</subtitle>
+    <toctitle>Sanct Sebastian</toctitle>
+    <indextitle>Sanct Sebastian</indextitle>
+    <firstline>Hver Konstner har sit Sprog</firstline>
+    <notes>
+          <note>Mottoet betyder: Hvad skal jeg foretrække for hvad?</note>
+          <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    </notes>
+    <source pages="144-146"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hver Konstner har sit Sprog,
 Hvorpaa Ukyndighed ei bliver klog.
 En Billedhugger og en Maler
-For Mængden tit det Labelænske taler;<note>,,<i>Det Labelænske</i>, Norvagisme, Pluddervælsk, uforstaaeligt Sprog.''</note>
+For Mængden tit det Labelænske taler;<note><i>Det Labelænske</i>, Norvagisme, Pluddervælsk, uforstaaeligt Sprog.</note>
 Og et Beviis derpaa
 Vi strax vil faae. -
 
@@ -2378,11 +2376,11 @@ Den jammerlig har alt for længe staaet.''
 De samtlige indgik, hvad dem blev foreslaaet.
 Tre smukke Bondemænd blev' sendt med Commission,
 At skaffe deres Bye en splinter ny Patron.
-Nøiagtigt Maal, for Reisen, dem blev givet<note>,,<i>for Reisen</i>, før Reisen.''</note>
+Nøiagtigt Maal, for Reisen, dem blev givet<note>* <i>for Reisen</i>, før Reisen.</note>
 Paa Hoved, Arme, Been og Livet.
 
     Dermed forsynede, de til Paris da foer',
-En Billedhugger fandt, fortalte ham, hvor stor<note>fotalte] fortælte</note>
+En Billedhugger fandt, fortælte ham, hvor stor
 Den Helgen skulde være,
 Som maatte fordums Tid en Martyrkrone bære.
 ,,Det er altsammen godt,'' saa Manden svarede;
@@ -2416,14 +2414,12 @@ Den Mands Partie sig Begge sloge til.
 
 <poem id="wessel2002092109">
 <head>
-   <title>Den bekymrede Moder</title>
-   <toctitle>Den bekymrede Moder</toctitle>
-   <indextitle>Den bekymrede Moder</indextitle>
-   <firstline>Af fiint udførte Laster</firstline>
-   <notes>
-      <note>Side 146-52.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Den bekymrede Moder</title>
+    <toctitle>Den bekymrede Moder</toctitle>
+    <indextitle>Den bekymrede Moder</indextitle>
+    <firstline>Af fiint udførte Laster</firstline>
+    <source pages="146-152"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Af fiint udførte Laster
@@ -2452,7 +2448,7 @@ Af rige Skolemester Navn beholdt han dog,
 For Resten havde Ord for glubsk at være klog.)
 
     ,,Han beder,'' blev hun ved, ,,at De mig vil levere
-To Stykker Triumphant, to eller flere,<note>,,<i>To Stykker Triumphant</i>, Triumphant var Navnet paa et Slags tykt blomstret Silketøi.''</note>
+To Stykker Triumphant, to eller flere,<note>* <i>To Stykker Triumphant</i>, Triumphant var Navnet paa et Slags tykt blomstret Silketøi.</note>
 Som man kan vælge blant;
 Faer Bent vil vise sig galant,
 Og til sin Datter, som med første Brud skal være,
@@ -2604,14 +2600,12 @@ Hvor stor er jeres Søn?
 
 <poem id="wessel2002092110">
 <head>
-   <title>Sødgrød for Vandgrød, og Vandgrød for Sødgrød</title>
-   <toctitle>Sødgrød for Vandgrød, og Vandgrød for Sødgrød</toctitle>
-   <indextitle>Sødgrød for Vandgrød, og Vandgrød for Sødgrød</indextitle>
-   <firstline>I Fordums Tid gik Troe vel vidt</firstline>
-   <notes>
-      <note>Side 152-55.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Sødgrød for Vandgrød, og Vandgrød for Sødgrød</title>
+    <toctitle>Sødgrød for Vandgrød, og Vandgrød for Sødgrød</toctitle>
+    <indextitle>Sødgrød for Vandgrød, og Vandgrød for Sødgrød</indextitle>
+    <firstline>I Fordums Tid gik Troe vel vidt</firstline>
+    <source pages="152-155"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 I Fordums Tid gik Troe vel vidt,
@@ -2698,14 +2692,12 @@ Han i Uvidenhed dem lod ei blive meer.
 
 <poem id="wessel2002092111">
 <head>
-   <title>Tycho Brahes Dag</title>
-   <toctitle>Tycho Brahes Dag</toctitle>
-   <indextitle>Tycho Brahes Dag</indextitle>
-   <firstline>En Mand gik ud en Morgen</firstline>
-   <notes>
-      <note>Side 155-60.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Tycho Brahes Dag</title>
+    <toctitle>Tycho Brahes Dag</toctitle>
+    <indextitle>Tycho Brahes Dag</indextitle>
+    <firstline>En Mand gik ud en Morgen</firstline>
+    <source pages="155-160"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <nonum><center><i>I</i></center></nonum>
@@ -2727,7 +2719,7 @@ End, som Gieldbunden, Ring at bære''
 Et cetera.
 
     Hvor han tog al den Ramse fra,
-Hvormed han piinte skramererte Mand,<note>,,<i>Skramererte Mand</i>, skrammerert, hos Almuen, galoneret, udstafferet, udmaiet (fr. chamarré).''</note>
+Hvormed han piinte skramererte Mand,<note>* <i>Skramererte Mand</i>, skrammerert, hos Almuen, galoneret, udstafferet, udmaiet (fr. chamarré).</note>
 Gaaer over min Forstand.
 
     En Lommetyv sidst i Samtalen kommer,
@@ -2813,7 +2805,7 @@ End den du mig har buden.'' -
 Han dermed op paa Loftet foer,
 Og ingen Skinke fandt.
 Den var - han gietted' hvor,
-Paa den Strandesels Ryg; han gietted' sandt,<note>,,<i>Paa den Strandesels Ryg</i>, paa Havnesjouerens, Dragerens Ryg''.</note>
+Paa den Strandesels Ryg; han gietted' sandt,<note>* <i>Paa den Strandesels Ryg</i>, paa Havnesjouerens, Dragerens Ryg.</note>
 Løb som en Lynild ned ad Trappen,
 Og vilde napp'en;
 Men leider deßen! kom for seent.
@@ -2884,14 +2876,12 @@ Da Tête à Tête med Tyv undgaae!
 
 <poem id="wessel2002092112">
 <head>
-   <title>Det ædelmodige Tilbud</title>
-   <toctitle>Det ædelmodige Tilbud</toctitle>
-   <indextitle>Det ædelmodige Tilbud</indextitle>
-   <firstline>Naar man forøder alt paa andre og paa sig</firstline>
-   <notes>
-      <note>Side 161-64.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Det ædelmodige Tilbud</title>
+    <toctitle>Det ædelmodige Tilbud</toctitle>
+    <indextitle>Det ædelmodige Tilbud</indextitle>
+    <firstline>Naar man forøder alt paa andre og paa sig</firstline>
+    <source pages="161-164"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Naar man forøder alt paa andre og paa sig,
@@ -2990,15 +2980,15 @@ Jeg gider ikke repetere.
 
 <poem id="wessel1999101404">
 <head>
-   <title>Observationen</title>
-   <toctitle>Observationen</toctitle>
-   <indextitle>Observationen</indextitle>
-   <firstline>Istemme Sørgetone</firstline>
-   <notes>
-      <note>Side 164-67.</note>
-      <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Observationen</title>
+    <toctitle>Observationen</toctitle>
+    <indextitle>Observationen</indextitle>
+    <firstline>Istemme Sørgetone</firstline>
+    <notes>
+          <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    </notes>
+    <source pages="164-167"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Istemme Sørgetone
@@ -3097,15 +3087,15 @@ Det snart forvandlet blev til: <i>vær saa god min Mand!</i>
 
 <poem id="wessel1999093001">
 <head>
-   <title>Den jydske Kavalleer</title>
-   <toctitle>Den jydske Kavalleer</toctitle>
-   <indextitle>Den jydske Kavalleer</indextitle>
-   <firstline>En Jyde var</firstline>
-   <notes>
-      <note>Side 167-70.</note>
-      <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Den jydske Kavalleer</title>
+    <toctitle>Den jydske Kavalleer</toctitle>
+    <indextitle>Den jydske Kavalleer</indextitle>
+    <firstline>En Jyde var</firstline>
+    <notes>
+          <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    </notes>
+    <source pages="167-170"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 En Jyde var - (maaskee
@@ -3203,16 +3193,16 @@ Og med Rigsdalers Tab en kiøn jeg stod da nu.''
 
 <poem id="wessel1999100401">
 <head>
-   <title>Felix, quem faciunt aliena pericula cautum!</title>
-   <toctitle>Felix, quem faciunt aliena pericula cautum!</toctitle>
-   <indextitle>Felix, quem faciunt aliena pericula cautum!</indextitle>
-   <firstline>En Jyde var</firstline>
-   <notes>
-      <note>Side 170-73.</note>
-      <note>Titlen betyder: lykkelig er den, som andres farer gør forsigtig.</note>
-      <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Felix, quem faciunt aliena pericula cautum!</title>
+    <toctitle>Felix, quem faciunt aliena pericula cautum!</toctitle>
+    <indextitle>Felix, quem faciunt aliena pericula cautum!</indextitle>
+    <firstline>En Jyde var</firstline>
+    <notes>
+          <note>Titlen betyder: lykkelig er den, som andres farer gør forsigtig.</note>
+          <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    </notes>
+    <source pages="170-173"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 En Jyde var - (Nei, det er sandt,
@@ -3308,14 +3298,12 @@ Man i Utide tie kan.
 
 <poem id="wessel2002092113">
 <head>
-   <title>Fader og Søn, een Mand</title>
-   <toctitle>Fader og Søn, een Mand</toctitle>
-   <indextitle>Fader og Søn, een Mand</indextitle>
-   <firstline>Cupido er en grusom Harselist</firstline>
-   <notes>
-      <note>Side 173-75.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Fader og Søn, een Mand</title>
+    <toctitle>Fader og Søn, een Mand</toctitle>
+    <indextitle>Fader og Søn, een Mand</indextitle>
+    <firstline>Cupido er en grusom Harselist</firstline>
+    <source pages="173-175"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Cupido er en grusom Harselist,
@@ -3394,14 +3382,12 @@ Sig skulde see udstukket af sin Søn.''
 
 <poem id="wessel2002092114">
 <head>
-   <title>Det kolde Blod</title>
-   <toctitle>Det kolde Blod</toctitle>
-   <indextitle>Det kolde Blod</indextitle>
-   <firstline>Bebreid ei gunstige Natur</firstline>
-   <notes>
-      <note>Side 176-78.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Det kolde Blod</title>
+    <toctitle>Det kolde Blod</toctitle>
+    <indextitle>Det kolde Blod</indextitle>
+    <firstline>Bebreid ei gunstige Natur</firstline>
+    <source pages="176-178"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Bebreid ei gunstige Natur,
@@ -3454,10 +3440,10 @@ Af alpisk Mand.
 O nei! - (lær du, som let kan tabe Contenance!)
 Han roelig sin Paryk og Hat tog op,
 Og roelig bag den lille sig begav,
-Til hvem han hviskede: ,,Der var ei blevet af,<note>,,<i>Der var ei blevet af</i>, der var ei blevet noget af, det var ikke skeet (Norsk).''</note>
+Til hvem han hviskede: ,,Der var ei blevet af,<note>* <i>Der var ei blevet af</i>, der var ei blevet noget af, det var ikke skeet (Norsk).</note>
 At min Paryk
 I skulde slaget af i Fior.'' -
-,,Hør Kammerat!'' var Liltens Ord,<note>,,<i>Lilten</i> er paa Tronhiemsk: <i>den lille</i>; jeg troer ikke, det skadede Sproget, om Ordet blev gangbart.''</note>
+,,Hør Kammerat!'' var Liltens Ord,<note>* <i>Lilten</i> er paa Tronhiemsk: <i>den lille</i>; jeg troer ikke, det skadede Sproget, om Ordet blev gangbart.</note>
 ,,Hvordan skal jeg forstaae den Snakken,
 Du hvisker mig i Nakken?
 Hvis du
@@ -3486,14 +3472,12 @@ Jeg forudseer.
 
 <poem id="wessel2002092115">
 <head>
-   <title>De to Agerhøns</title>
-   <toctitle>De to Agerhøns</toctitle>
-   <indextitle>De to Agerhøns</indextitle>
-   <firstline>En Pater var, som kunde, og som gad</firstline>
-   <notes>
-      <note>Side 178-87.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>De to Agerhøns</title>
+    <toctitle>De to Agerhøns</toctitle>
+    <indextitle>De to Agerhøns</indextitle>
+    <firstline>En Pater var, som kunde, og som gad</firstline>
+    <source pages="178-187"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <nonum><center><i>I</i></center></nonum>
@@ -3531,8 +3515,8 @@ En af de fæleste Udyder.
 De Lækkerbiskener hun med Passion ansaae,
 Og, som er sagt, forført af Satan, faldt hun paa
 At dele med vor Mand, og giorde een til Priis,
-Og Skylden haabede at kunne give Piis,<note>,,<i>Piis</i>, Katten.''</note>
-Som noksom kiendtes for at være snagen.<note>,,<i>Snagen</i>, slikvorn (Norsk).''</note>
+Og Skylden haabede at kunne give Piis,<note>* <i>Piis</i>, Katten.</note>
+Som noksom kiendtes for at være snagen.<note>* <i>Snagen</i>, slikvorn (Norsk).</note>
 Jeg faaer vel, sagde hun, lidt Skieldsord for Umagen;
 Men for saa lækker Steeg, den var en Stud,
 En Nar, som sig lod ikke skielde ud.
@@ -3663,7 +3647,7 @@ Men Qvindelist er uden Ende.
 
     Jeg mere ei at vide fik: saa endte jeg sidstleden.
 Jeg siden meer at vide fik.
-Som jeg har Tingen læst, jeg dig vil tee den:<note>,,<i>Jeg dig vil tee den</i>, vise den (Norsk).''</note>
+Som jeg har Tingen læst, jeg dig vil tee den:<note>* <i>Jeg dig vil tee den</i>, vise den (Norsk).</note>
 Hr. Pater talte om to Agerhøns at stiæle,
 Den anden om at snitte af to Hæle;
 Hver af dem Slutning drog af dette, at den anden
@@ -3763,14 +3747,12 @@ Til os fra fremmed Rige.
 
 <poem id="wessel2002092116">
 <head>
-   <title>Gasconaderne</title>
-   <toctitle>Gasconaderne</toctitle>
-   <indextitle>Gasconaderne</indextitle>
-   <firstline>De Franske har en sælsom Skik</firstline>
-   <notes>
-      <note>Side 187-93.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Gasconaderne</title>
+    <toctitle>Gasconaderne</toctitle>
+    <indextitle>Gasconaderne</indextitle>
+    <firstline>De Franske har en sælsom Skik</firstline>
+    <source pages="187-193"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 De Franske har en sælsom Skik,
@@ -3781,7 +3763,7 @@ End at uddele Øgenavn.
 
     (Hæld dig, vort Kiøbenhavn!
 Endskiønt du staaet har saalænge,
-Du bleven er for Sobriquetter fri.<note>,,<i>Sobriquetter</i>, Spottenavne, Øgenavne.''</note>
+Du bleven er for Sobriquetter fri.<note>* <i>Sobriquetter</i>, Spottenavne, Øgenavne.</note>
 To Riger skielder vel - men det er Jalousie -
 Dit unge Mandskab for de kiøbenhavnske Drenge,
 Af Jalousie, fordi de selv ei veed
@@ -3807,7 +3789,7 @@ En Tour til Engelland at tage.
 Han Vadsæk tog paa Ryg; deri var ikke stort.
 (Han vilde Landsmænds Skikke hædre:
 Og for ham destobedre!
-Let Føring giør os Veien kort.)<note>,,<i>Let Føring</i>, Dragt, Byrde, Læs (forældet).''</note>
+Let Føring giør os Veien kort.)<note>* <i>Let Føring</i>, Dragt, Byrde, Læs (forældet).</note>
 Paa raske Fod <i>Calais</i> han rekker,
 Paketbaad treffer strax, som der for Modvind laae.
 Kaptainen kiendte ham (paa Sproget at forstaae).
@@ -3932,7 +3914,7 @@ Og bad dem laane sig fem hundrede Dukater,
 At sige mod en vakker Provision.
 Hver tænkte stort om hans Person.
 Han fik dem, og til Stranden kom
-Forsynet med en madrig Bomme.<note>,,Forsynet med en madrig <i>Bomme</i>, rundt Madskriin (Norsk).''</note>
+Forsynet med en madrig Bomme.<note>* Forsynet med en madrig <i>Bomme</i>, rundt Madskriin (Norsk).</note>
 Han saae sin Vederpart med Herren komme.
 ,,Hvor,'' sagde han, ,,har du din Mad?
 Vil du da af Hunger døe?
@@ -3950,15 +3932,15 @@ Betalte Veddemaal, og gik ei glade bort.
 
 <poem id="wessel2002092201">
 <head>
-   <title>Relata refero</title>
-   <toctitle>Relata refero</toctitle>
-   <indextitle>Relata refero</indextitle>
-   <firstline>Den følgende Historie er sand</firstline>
-   <notes>
-      <note>Side 193-96.</note>
-      <note>Titlen betyder: Jeg fortæller historien som jeg har hørt den.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Relata refero</title>
+    <toctitle>Relata refero</toctitle>
+    <indextitle>Relata refero</indextitle>
+    <firstline>Den følgende Historie er sand</firstline>
+    <notes>
+          <note>Titlen betyder: Jeg fortæller historien som jeg har hørt den.</note>
+    </notes>
+    <source pages="193-196"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Den følgende Historie er sand.
@@ -4035,7 +4017,7 @@ Men denne sieldne Gave aldrig nød.'' -
 Som tale kan extempore!'' -
 ,,Om De det giøre kan nu strax, jeg Dem betaler
 Tre hundrede Rixdaler.''
-Den anden svarede: ,,ja va!<note>,,<i>Ja va</i>; ja, lad gaae, Top; (det franske va!).''</note>
+Den anden svarede: ,,ja va!<note>* <i>Ja va</i>; ja, lad gaae, Top; (det franske va!).</note>
 Hvad Tale er det, De befaler?'' -
 ,,O! intet at befale!
 Jeg tænker paa, Exempli gratia,
@@ -4057,7 +4039,7 @@ Det Spøg er lidt for vidt at drive.'' -
 Nær revned Taleren af Harm.
 Der blev Proces. Ved øverste Instants
 Faldt denne Dom:
-                                 <nonum><i>Den Brud er hans,</i></nonum>
+                                     <nonum><i>Den Brud er hans,</i></nonum>
 <i>Hvis Vielse saa snart var færdig.</i>
 <i>Den Veddeprædikant er Embedet uværdig.</i>
 </body>
@@ -4065,14 +4047,12 @@ Faldt denne Dom:
 
 <poem id="wessel2002092202">
 <head>
-   <title>David og Jonathan</title>
-   <toctitle>David og Jonathan</toctitle>
-   <indextitle>David og Jonathan</indextitle>
-   <firstline>Man ved et velmeent Raad af Ven tit Fiende skaber</firstline>
-   <notes>
-      <note>Side 196-99.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>David og Jonathan</title>
+    <toctitle>David og Jonathan</toctitle>
+    <indextitle>David og Jonathan</indextitle>
+    <firstline>Man ved et velmeent Raad af Ven tit Fiende skaber</firstline>
+    <source pages="196-199"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Man ved et velmeent Raad af Ven tit Fiende skaber.
@@ -4154,14 +4134,12 @@ Forglemmer alt, og er min Ven, som før.''
 
 <poem id="wessel2002092203">
 <head>
-   <title>Veddemaalet</title>
-   <toctitle>Veddemaalet</toctitle>
-   <indextitle>Veddemaalet</indextitle>
-   <firstline>Der var tre Færgemænd, som havde hver sin Mave</firstline>
-   <notes>
-      <note>Side 199-202.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Veddemaalet</title>
+    <toctitle>Veddemaalet</toctitle>
+    <indextitle>Veddemaalet</indextitle>
+    <firstline>Der var tre Færgemænd, som havde hver sin Mave</firstline>
+    <source pages="199-202"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Der var tre Færgemænd, som havde hver sin Mave,
@@ -4209,7 +4187,7 @@ Kan I ei Forskel see paa Svinelaar,
 Og Laar af Faar?''
 ,,Hør,'' svarte Peer, ,,min gode Mand,
 I er, min Troe, fra jer Forstand.'' -
-,,Nei, I er, Gon! fra jeres.'' -<note>,,<i>Nei, I er Gon! fra jeres</i>, sjellandsk Bonde-Eed (af Gud).''</note>
+,,Nei, I er, Gon! fra jeres.'' -<note>* <i>Nei, I er Gon! fra jeres</i>, sjellandsk Bonde-Eed (af Gud).</note>
 Her længe disputeres.
 Tilsidst Peer sagde: ,,Hvis jeg Sandhed ei har sagt,
 Jeg giver jer min halve Sommerfragt:
@@ -4249,15 +4227,15 @@ Til Iis blev Vand igien.
 
 <poem id="wessel1999101402">
 <head>
-   <title>Mosters Pølser</title>
-   <toctitle>Mosters Pølser</toctitle>
-   <indextitle>Mosters Pølser</indextitle>
-   <firstline>Hvis den er sand, jeg sandt fortæller</firstline>
-   <notes>
-      <note>Side 202-04.</note>
-      <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Mosters Pølser</title>
+    <toctitle>Mosters Pølser</toctitle>
+    <indextitle>Mosters Pølser</indextitle>
+    <firstline>Hvis den er sand, jeg sandt fortæller</firstline>
+    <notes>
+          <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    </notes>
+    <source pages="202-204"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Hvis den er sand, jeg sandt fortæller;
@@ -4335,14 +4313,12 @@ Han selv dem aad.
 
 <poem id="wessel2002092204">
 <head>
-   <title>Contrasterne</title>
-   <toctitle>Contrasterne</toctitle>
-   <indextitle>Contrasterne</indextitle>
-   <firstline>En Kone havde fyldt 70 Aar</firstline>
-   <notes>
-      <note>Side 205-07.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Contrasterne</title>
+    <toctitle>Contrasterne</toctitle>
+    <indextitle>Contrasterne</indextitle>
+    <firstline>En Kone havde fyldt 70 Aar</firstline>
+    <source pages="205-207"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 En Kone havde fyldt 70 Aar,
@@ -4415,7 +4391,7 @@ I Morgen Formiddag igien.
 Han treen.
 
     Hun havde giort sig alt for peen.
-Kolør de Ros', Kolør de schær<note>,,<i>Kolør de Ros', Kolør de schær,</i> d.v.s.: couleur de rose, de chair (Kjødfarve).''</note>
+Kolør de Ros', Kolør de schær<note>* <i>Kolør de Ros', Kolør de schær,</i> d.v.s.: couleur de rose, de chair (Kjødfarve).</note>
 Forrædere mod hendes Ansigt er.
 Hun Beileren nu gav sit Ja,
 Hvorpaa han svarte nei,
@@ -4427,15 +4403,16 @@ Duo opposita, contra se posita, clarius iilucescunt.<note>På dansk: To modsatte
 
 <poem id="wesselfortaellingera5">
 <head>
-   <title>Omne tulit punctum, qui miscuit utile dulci</title>
-   <subtitle>Impromtu</subtitle>
-   <toctitle>Omne tulit punctum, qui miscuit utile dulci</toctitle>
-   <indextitle>Omne tulit punctum, qui miscuit utile dulci</indextitle>
-   <firstline>At gavne og fornøie</firstline>
-   <notes>
-      <note>Titlen er et citat fra Horats: Den nåede det ypperste, der forenede det nyttige med det behagelige.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Omne tulit punctum, qui miscuit utile dulci</title>
+    <subtitle>Impromtu</subtitle>
+    <toctitle>Omne tulit punctum, qui miscuit utile dulci</toctitle>
+    <indextitle>Omne tulit punctum, qui miscuit utile dulci</indextitle>
+    <firstline>At gavne og fornøie</firstline>
+    <notes>
+          <note>Titlen er et citat fra Horats: Den nåede det ypperste, der forenede det nyttige med det behagelige.</note>
+    </notes>
+    <source pages="207-208"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 ,,At gavne og fornøie,
@@ -4472,15 +4449,16 @@ Som man saa ofte seer.
 
 <poem id="wesselfortaellingera6">
 <head>
-   <title>Nulla regula sine exceptione</title>
-   <subtitle>Impromtu for en Præmie i et Selskab</subtitle>
-   <toctitle>Nulla regula sine exceptione</toctitle>
-   <indextitle>Nulla regula sine exceptione</indextitle>
-   <firstline>Jeg havde netop lært at gaae</firstline>
-   <notes>
-      <note>Titlen betyder: Ingen regel uden undtagelse.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Nulla regula sine exceptione</title>
+    <subtitle>Impromtu for en Præmie i et Selskab</subtitle>
+    <toctitle>Nulla regula sine exceptione</toctitle>
+    <indextitle>Nulla regula sine exceptione</indextitle>
+    <firstline>Jeg havde netop lært at gaae</firstline>
+    <notes>
+          <note>Titlen betyder: Ingen regel uden undtagelse.</note>
+    </notes>
+    <source pages="209-210"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 Jeg havde netop lært at gaae,
@@ -4542,5 +4520,2630 @@ Hun sagde, ganske spodsk og suur:
 ,,Gid Fanden være jer Natur!''
 </body>
 </poem>
+
+</content>
+</section> <!-- Fortællinger -->
+
+<section>
+<head>
+    <title>Blandede Digte</title>    
+</head>
+<content>
+
+<poem id="wessel1999101401">
+<head>
+    <title>Søvnen</title>
+    <subtitle>
+          <line>Dunvinget, silkeblød, du gled paa Øiet frem</line>
+          <line>Og hvisked': al din Sorg, dig selv, Stryange, glem!</line>
+          <line>Zarine.</line>
+    </subtitle>
+    <toctitle>Søvnen</toctitle>
+    <indextitle>Søvnen</indextitle>
+    <firstline>Du, dobbelt skiøn, fordi jeg sov!</firstline>
+    <notes>
+          <note>* Dette Digt skulde have til Overskrift: <i>Ode</i>, som Digteren havde kaldt det.</note>
+          <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    </notes>
+    <source pages="213-218"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+    Du, dobbelt skiøn, fordi jeg sov!
+Du skal min Tone Styrke give,
+Du, blide Morgen! skal oplive
+Den Røst, som synger Søvnens Lov.
+
+    Omsonst sig sødest Klang tilbød
+Det tunge Øre at fornøie,
+Og fra et dunkelt, svækket Øie
+Til kiedsom Aand kun Ulyst flød;
+
+    Til Døden Livet grændsede,
+Hver Evne syntes slidt af Ælde,
+Og Bygningen til Fald at hælde,
+Da du, o Søvn! mig vinkede.
+
+    Tung i din bløde Favn jeg gleed,
+Berøvet Vid og Syn og Stemme,
+Liig den, som sank i Muldets Giemme
+Til mere varig Hvile ned.
+
+    Jeg tryg mit Væsen dig betroer,
+Jeg spørger ei, hvad stærke Stytter
+Imidlertid fra Fald beskytter
+I tynde Luft den tunge Jord.
+  	
+    En Hær af Verdener utalt,
+Som mig omgive, hvis de skeie
+Et Haar bredt fra de vante Veie,
+Et Kaos giør af mig og alt;
+
+    Min Undergang et Haar bredt nær,
+Jeg slumrer sødt, jeg intet vover;
+Han vaager, han, som aldrig sover,
+For alt og for hvert Støv i sær.
+
+    Som jeg den halve Klode var,
+Indsvøbt i Mørkheds tause Taage,
+Og paa de lukte Øienlaage
+Din grumme Broders Billed bar.
+
+    Men Ilden ulmer, Livet groer;
+Du snart igien skal Kræfter vinde,
+Min Aand, du snart igien skal finde
+En Morgen skiøn, din Skaber stoer.
+
+    Saa danner Aarets Morgen sig;
+Og Jordens Safter Liv udklække,
+Naar, under hvide Sørgedække,
+Naturen synes ligge Liig.
+
+    Nu Kraft til alle Aarer flød,
+Nys slappe Drivefiædre spændtes,
+Til Siælens Pleie Væsner sendtes,
+Som spillede i Søvnens Skiød.
+
+    Med Moders Ømhed bød du dem
+Den spæde Fostersøn fornøie,
+O Søvn! og for din Yndlings Øie
+Hver ønsket Scene bringe frem.
+
+    Du bød dem i den Elskers Bryst,
+Som en uhældig Lue nærte,
+Og som forgiæves Suk fortærte,
+At gyde Lægedom og Trøst,
+
+    Hans Grumme skabes om i Hast,<note>Grumme] grumme</note>
+Hun med Citheres Smiil ham vinker,
+Og Ømhed i hver Mine blinker,
+Og Himlen i hvert Øiekast.
+
+    Du bød dem løse fængslet Fod,
+De Slaven tit paa Tronen satte,
+Gav nøgen Armod Perus Skatte,
+Og den fortrykte Haab og Mod.
+
+    Den usle, segnet i en Vraae,
+Tryg bag det Dække, som du drager
+Imellem ham og Dagens Plager,
+Med Smiil paa blege Kinder laae.
+
+    Ei Smerters giftig Braad formaaer
+Dit Sløer, o Søvn! at giennemtrænge.
+O! skiul ham bag det, skiul ham længe,
+Hans Bødler vaager uden for.
+
+    Men blandt de blide Væsners Kor,
+Som Siælen til dens Hæld bedrager,
+Fornuften studsende opdager
+Alvidenhedens sieldne Spoer.
+
+    Dybt i din skyggefulde Boe
+Hvad mægtig Aand har valgt sig Tempel?
+Dens Udsagn bær et Guddoms Stempel,
+Som Vantroe selv forbaust maa troe.
+
+    Men Tidens Maal i virksom Gang
+De nu fuldmodne Evner bringer,
+Og Søvnen flyer paa Nattens Vinger
+At lindre fierne Landes Trang.
+
+    Nu strømte Lys og Sandhed til,
+Nu faldt Fortryllelsernes Teppe,
+Og Siælen fatted' endnu neppe,
+At, hvad den saae, var Skuespil.
+
+    Vær hilset Morgen, Søvn farvel!
+Tak for den svangre Roe og Varme,
+Som nys i dine kiælne Arme
+Nyt Liv udklækked' i min Siæl.
+
+    Hver Aand er frisk, hver Krop er stærk;
+Hver Sands mod glade Indtryk tager,
+Hvert følsomt Hierte Vellyst smager,
+Og alt er Hæld og Søvnens Verk.
+
+    Og den har stemt til hellig Klang
+De Tunger, som nu Luften fylde,
+Og kappes Skaberen at hylde,
+Som kiendes stor i deres Sang.
+
+    Du ene god og ene stor!
+O! værdiges du at fornemme
+Min ufuldkomne svage Stemme,
+Blandt de utalte Stemmers Kor.
+
+    Meer værdig Verdners og min Gud
+Den fra forklaret Bryst skal lyde,
+Da, naar mig evig Dag skal byde
+Fra Gravens Nat at træde ud.
+
+    Men midt i jordisk Paradiis,
+Hvad Tone kan mit Øre saare?
+Forklares og din Lov ved Taare?
+O Søvn! hvem hyler ud din Priis?
+
+    Elendighed, hvis Glædes Stand,
+Med dig begyndt, med dig ophører,
+Den sukkende fra sin Velgiører
+Nu fløi til Virkeligheds Land.
+
+    Skal og - snart vægrer sig min Røst
+At ytre denne fæle Tanke,
+Skræk synes i hver Aare banke,
+Og Rædsler tordner i mit Bryst -
+
+    Skal og den store Morgens Bud,
+Som os af sidste Søvn bør vække -
+Hvem skal den vaagnende forskrekke?
+Mit Blod blev Iis! O! frels mig Gud!
+</body>
+</poem>
+
+<poem id="wessel2002092205">
+<head>
+    <title>Nøisomhed</title>
+    <subtitle>
+          <line>- - - multa petentibus</line>
+          <line>desunt multa, bene est cui Deus obtulit</line>
+          <line>parca, quod satis est, manu.</line>
+          <line>Horat.</line>
+    </subtitle>
+    <toctitle>Nøisomhed</toctitle>
+    <indextitle>Nøisomhed</indextitle>
+    <firstline>Hvor! Damon, raaber Du</firstline>
+    <notes>
+          <note>Mottoet fra 3. Bogs 16. Ode betyder omtrent: De, som stræber efter meget, savner meget. Glæde sig den, som Gud med nøjsom hånd gav, hvad tilstrækkeligt er.</note>
+    </notes>
+    <source pages="218-221"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+,,Hvor!'' Damon, raaber Du, ,,er Dydens Rettigheder,
+Naar ene Fødselen til Lykken Vei bereder,
+Naar Slumpelykke blot uddeler Løn og Straf,
+Og tit dens blinde Had Uskyldigheden traf?
+Hvad har vel jeg forbrudt, som maae i Kummer leve,
+At jeg ei blev bestemt, som hine andre bleve,
+Til Herlighed og Magt, og fød til Croesers Guld?
+Mon disse Skiæbnen har ved Dyder giort sig huld?
+Og kan man, før man blev, vel ogsaa Dyder øve?
+Hvad kunde, før jeg blev, mig vel dens Gunst berøve?
+Da jeg endnu ei var, hvad mon jeg da begik,
+Hvorfor til Straf jeg Nød, Foragt og Trældom fik?''
+
+    Den Straf kun indbildt er, hvis Vægt du lider under,
+Du lige Lykke fik med dem, som du misunder,
+Thi samme Maal tilfaldt hver Stand af Vee og Vel,
+Og Herren uden Grund misundes af hans Træl.
+Men vi forringe let de Plager, os ei trykke,
+Og altid dobbelt stor anseer en fremmed Lykke;
+Man priser lykkelig hver Stand foruden sin:
+Din blev dit Ønskes Maal, hvis den var ikke din.
+Men nu dens Fortrin faaer endogsaa Navn af Plage,
+Og Grunden til dit Vel var Grunden til din Klage;
+Arbeide Trældom blev, og Nok blev nævnet Nød,
+Skiønt al Velsignelse fra disse Kilder flød.
+Du drager dybe Suk, for dine Kaar forbinde
+Til daglig Flittighed, for dagligt Brød at vinde;
+Kiend din Vildfarelse, kiend din Lyksalighed:
+Arbeidsom, maadelig, du ei af Plager veed,
+Som Overflødighed og Ørkesløshed døie;
+Ja! Livets største Held var Lønnen for din Møie:
+Den muntrede din Siæl, den luttrede dit Blod,
+Ved den du hviled' trygt, og glad igien opstod,
+Den ene krydede de tarvelige Retter,
+Hvorved du dagligen med lige Lyst dig mætter -
+Kan Uheld vel bestaae med saa at lide Nød?
+Og valgte du dig før, om man dig Valget bød,
+At sidde væmmelig ved mange kræsne Retter,
+Og tvinge ned en Gift, som dræber, naar den mætter,
+Og allermest er Gift og allervissest Død,
+Fordi den bragtes dig i døsig Ladheds Skiød,
+Hvor sundest Føde mindst kan trættet Gane smage,
+Hvor slappe Følelser tit smagte Vellyst vrage,
+Og misbrugt Overflod, til alle Lyster vant,
+Sin Vemmelse tilsidst i Smerter endet fandt,
+Hvor Døden selv var Trøst, hvis brudte Pligters Torden
+Ei dig bebreidede, du brød Naturens Orden,
+Og havde selv dit Liv saa snevre Grændser sat.
+
+    ,,Men,'' svarer Damon mig, ,,min Frihed overladt,
+Jeg ikke rasende det værste skulde vælge,
+Ei for utemmet Lyst min Roe og Helbred sælge;
+Nei maadelig, som nu, jeg midt i Overflod
+I rolig Nøisomhed med Nok mig nøie lod.''
+
+    Min Damon! sielden kun vi egen Svaghed mærke,
+Og til vi have tabt, vi troe os gierne stærke,
+Den derfor tryggest er, som sattes i en Stand,
+Hvor i han ei til Strid saa let udæskes kan;
+Men sæt, du er den Helt, den sieldne dødelige,
+Som altid seierrig kan Fristelser bekrige,
+Sæt, at i Lykkens Favn du Lyster overvandt,
+Som tit med Slavebaand selv Dydens Kiemper bandt;
+Hvad nye Fortrin blev da Frugten af din Seier?
+Hvad eiede du da, som nu du ikke eier?
+Om det er ikke dit, som du ei nyde tør,
+Vandt du kun netop Nok, og hvad du havde før.
+
+    ,,Men Æren - blandt en Sværm at vide sig den beste,
+Og tegnet stor, paa sig saa manges Øine fæste,
+At finde lydige, saasnart en Mine bød,
+Det dog et Fortrin er, den ringe Stand ei nød.''
+
+    Misund, o Damon! ei, men heller ynk den Stolte,
+Som Dyden dristigen for Ærens Skygger solgte;
+Hans Lykke, som saa stor i Haabet viiste sig,
+Ved Nydelsen forsvandt, den lette Taage liig.
+Forført ved Glædens Glimt, som lyser i hans Mine,
+Du ønsker dig hans Kaar, og kiedes tør ved dine;
+Men viid, hver Muskel blot ved Konst afrettet er,
+Og troløst Vidnesbyrd om Hiertets Tilstand bær.
+Han skulde i sin Pragt sig høist elendig troe,
+Om ei Misundelse forstyrrede din Roe,
+Hans Vel (om indbildt Vel kan kaldes saa) sig grunder
+Paa denne Kundskab blot, at Ringhed ham misunder;
+Men paa den ægte Dyd (thi den er lige frie
+Fra Misfornøielses og Hofmods Tyrannie)
+Kan Lykkens blinde Gunst ei dybe Indtryk giøre,
+Den, som ved Dyd er stor, giør Høihed ikke større!
+Det sande Vee og Vel er Frugt af Dyd og Last,
+Og denne Sandhed staaer til Himlens Ære fast:
+At lige skyldige og lige Plager trykke,
+Og Ligemænd i Dyd er Ligemænd i Lykke.
+</body>
+</poem>
+
+<poem id="wesselblandedea0">
+<head>
+    <title>Lyksalighed</title>
+    <toctitle>Lyksalighed</toctitle>
+    <indextitle>Lyksalighed</indextitle>
+    <firstline>Lyksalig du, som veed (dog ei af dit Exempel)</firstline>
+    <source pages="221-222"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+    Lyksalig du, som veed (dog ei af dit Exempel)
+At sand Lyksalighed forgylder ei sit Tempel,
+At det, som Hoben Navn af Lykkens Tempel gav,
+Er kun dens Drabsmands Slot, opbygget paa dens Grav.
+
+    Du kiender Høiheds Kaar og kiedes ei ved dine,
+Du veed dens Aasyn har en konstlet Glædes Mine,
+Og at hver Muskel <i>der</i> ved Konst afrettet staaer,
+Og praler af en Fryd, der ei af Hiertet gaaer.
+
+    Du Lykkens Tempel fandt i dine ringe Hytter,
+Hvis lave Bygning dem mod Avinds Storm beskytter,
+Hvor Nøisomhed har nok, hvor Ærlighed er Dyd,
+Og Hiertet aandes ud i rene Læbers Lyd.
+
+    Hvor Egennytten ei har underkiøbt de Arme,
+Som krystede dens Barm mod sine Venners Barme,
+Hvor efter Fordeel blot udlærte Skiønne ei
+Til kolde Beilere uddele Ja og Nei.
+
+    Hvor i Naturens Sprog, naar Elskende sig sige:
+,,Du er min egen Dreng, du er min egen Pige,''
+De mere have sagt, end alt hvad sige kan
+Et Sprog, som bliver lært og hørt som en Roman.
+
+    Hvor ærbar Skiønhed let undværer Guddoms Navne,
+Og tør foruden Eed sin ømme Elsker favne,
+Hvor Doris i din Arm sig i sin Himmel troer,
+Skiønt for at sige det hun mangler Modens Ord.
+</body>
+</poem>
+
+<poem id="wessel2002092206">
+<head>
+    <title>Brodne Potter i alle Lande</title>
+    <toctitle>Brodne Potter i alle Lande</toctitle>
+    <indextitle>Brodne Potter i alle Lande</indextitle>
+    <firstline>Brodne Kar i alle Lande</firstline>
+    <source pages="222-226"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Brodne Kar i alle Lande,
+Roser sig med Torne blande
+    Andensteds saavelsom her.
+Landsmand! Roserne du tage,
+Og af dem du Honning drage!
+    Men for alting agtsom vær,
+    Kom ei Tornene for nær!
+
+Naar en Tydsker dig vil lære,
+Ærlig, grundig, kiæk at være,
+    Du lærvillig følge ham!
+Men, naar en dig stort fortæller
+Om daraussens Bagateller,
+    Var det sandelig en Skam,
+    Om du blindt hen tro'de ham.
+
+Naar en Franskmand dig vil lære,
+Altid glad og munter være,
+    Beed til Gud, du ligner ham!
+Men adlyde ham, som Kongen
+For hver Mode, og for Tongen,<note>* <i>og for Tongen</i>, bon ton, den gode Tone.</note>
+    Det var sandelig en Skam;
+    Vi bør ikke hylde ham.
+
+Som en Britter lad dig være
+Patriotens Pligter kiære!
+    Elske Frihed lær af ham!
+Men, hvis du seer en og anden
+Overmodig, vild som Fanden,
+    Det var fælt at ligne ham;
+    Bukke for ham var en Skam,
+
+Ved den Vælskes søde Stemme
+Vi al Sorg, os selv forglemme.
+    Og henrykte høre ham;
+Men, naar han en Grumhed øver,
+Som ham Børnebørn berøver;
+    Skal vi deri følge ham?
+    Det var baade Synd og Skam.
+
+Paa Spaniolens Viin og Piaster
+Jeg Foragt ei daarlig kaster,
+    Gierne deler dem med ham;
+Men, saa længe jeg kan læse
+Uden Briller paa min Næse,
+    Jeg den Stads vil unde ham.
+    Kunne see giør mig ei Skam.
+
+Han, som boer lidt under Havet,<note>* <i>Han, som boer lidt under Havet</i>, Hollænderen.</note>
+Og med Guld er stærkt begavet,
+    Spare er en Dyd hos ham;
+Men, naar han, tung af Ducater,
+Spiser evige Salater,
+    Saa gid jeg faae Last og Skam,
+    Om jeg spise vil med ham!
+
+Du, som dine Ahner glemmer,
+Og al Pragt bag Ploven giemmer,
+    Du ei nok beundres kan;
+Polak! du skal Verden lære,
+Om lærvillig den vil være:
+    Det er under ingens Stand
+    At han pløier eget Land.
+
+Men at du din Dont forlader,
+Og med Glavind dig omlader,
+    Naar du seer en Vandringsmand;
+Snorrigt synes dem, som mene
+(Thi jeg mener ei alene),
+    At man gierne sige kan
+    Uden Sværd: god Dag, min Mand!
+
+Du, en Skræk for Tyrkens Rige!
+Al din Adfærd os kan sige:
+    Stor var Ruslands første Zar.
+At dig Finkel-Jochum smager,
+Og hver Copek dig fradrager,
+    Derom man vel mumlet har;
+    Herre Gud! om nu saa var!
+
+Svensken jeg slet intet ændser;
+Han for nær er vore Grændser,
+    Og det kunde stikke ham,
+Hvis jeg gav ham mindste Lyde,
+At han Freden vilde bryde;
+    Fik da Landet Krig med ham,
+    Hvis var Skammen? Autors Skam.
+
+Jeg den elskte Danske priser,
+At Beskedenhed han viser,
+    Sielden Dyd i fremmed Land!
+Men, naar han forvidt den driver,
+Og alt Fremmed Fortrin giver,
+    Den en Dyd ei nævnes kan,
+    Og fornedrer danske Mand.
+
+Jeg hos kiekke Nordmand priser,
+At han stedse ivrig viser,
+    Han sit Fødeland har kiær;
+Men, jeg troer, han giorde ilde,
+Om han vilde sig indbilde,
+    At der fødes Mennesker
+    Kun i Engelland og der.
+
+Hædre alle Nationer,
+Hade Feil, men ei Personer,
+    Er vort Selskabs Lov og Lyst.
+Hellig Pligt og største Ære
+Er: Vor Konge troe at være.
+    Statens Ønske er vor Røst:
+    Glæden boe i <i>Christians</i> Bryst!
+</body>
+</poem>
+
+<poem id="wessel2002092207">
+<head>
+    <title>Prologue</title>
+    <subtitle>opført den 13de Octbr. 1780, i Anledning af Hs. Kongl. Høihed Arveprindsens Fødselsfest, paa Lyst-Theatret paa Fredensborg.</subtitle>
+    <toctitle>Prologue</toctitle>
+    <indextitle>Prologue</indextitle>
+    <firstline>Hvad nu? Nu er det reent forkeert!</firstline>
+    <notes>
+          <note>Ifølge Frederik Schyberg: <i>Den store Teaterrejse</i> (1943) var alle de optrædende personer skuespillere på Det kongelige Teater: Frederik Schwarz (1753-1838); Birgitte Christine Winther (1751-1809); Catharine Møller (senere gift Frydendahl) (1760-1831); Inger Birgitte Aaslew (senere gift Clausen) (1762-1843); Iver Hesselberg Urberg (1744-1802); Nicolai Elsberg (1749-1802); Joachim Daniel Preisler (1755-1809); Søren Suhm (1742-83); Niels Hansen (1747-1828).</note>
+    </notes>
+    <source pages="227-233"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><center><i>Schwarz</i></center></nonum>
+Hvad nu? Nu er det reent forkeert!
+Det hele Stykke er spoleert;
+Sieur Nielsen Dækket tør optrække,
+Før jeg kan Ryg med Kiole dække.
+Jeg arme for et Øieblik
+I en saa sød Forhaabning gik,
+At, om ei Evne, dog Umage,
+For mildest Herskab at behage,
+Dets Naade skulde os tilvendt;
+Men Dækket steeg, mit Haab er endt.
+Skam faae Theater-Budet Ole,
+Som ei endnu har bragt min Kiole!
+Og Skam faae Kiolen, for den sprak!
+Værst Skam faae han, som Dækket trak!
+Seendrægtig Skræder! Ondt dig ramme,
+Som langsomt heler Kiolens Skramme!
+Kort: Skam faae hver Mands Siæl og Krop,
+Som haver Deel i det Spilop!
+Og just skal os Ulykken hænde
+Paa en saa vigtig Dag, som denne:
+Den Dag, da os den Lykke skeer,
+Vi Kongehuset hos os seer;
+Den Dag, da Himmelen os skienkte
+Den elskte' Prinds, som stedse tænkte
+Ved vores Held sig lykkelig,
+Og liig sin Stamme viste sig;
+Den Dag, da vi den Ære nyder,
+At seierkronte Helt os fryder
+Ved sin Nærværelse - just skal
+Af alle være meest fatal!
+
+<nonum><center><i>Jomfru Winther</i></center></nonum>
+Ja, var jeg Mandfolk, skulde Nielsen
+Ei længe sige Tak for Hilsen.
+Jeg skulde ærlig lønne ham,
+For han os giorde denne Skam.
+
+<nonum><center><i>Jomfru Møller</i></center></nonum>
+Alt Haab forsvandt, al Glæde;
+I anden Modgang ved at græde
+Mit Hierte nogen Lindring nød,
+Men ingen Trøst mod dette Stød.
+
+<nonum><center><i>Jomfru Aaslev</i></center></nonum>
+Jeg Nielsen give skal en Skose,
+For mit Humør, Kulør de Rose,
+Ved det han giorde os confus,
+Faldt lige til Kulør de Puce.<note>* <i>For mit Humør ...</i>, fordi mit rosenrøde Humeur blev bruunt, fordi han bragte mig af mit gode Humeur.</note>
+
+<nonum><center><i>Urberg</i></center></nonum>
+Jeg tager Raad af Jomfru Winther:
+Hans Ryg haandgribelige Finter
+Skal gives af min seige Stok;
+Og hvis han ei faaer dermed nok,
+Der vel forbarmer sig en anden.
+
+<nonum><center><i>Elsberg</i></center></nonum>
+Nei een om een, og to om Fanden!
+Jeg skal ham hilse, faaer jeg Lov,
+Saa han ei mere har behov.
+
+<nonum><center><i>Preisler</i></center></nonum>
+Vi tabe kun ved ham at prygle;
+Bedst er, at vi om Naade trygle
+Herskabet først, saa Publikum.
+
+<nonum><center><i>Suhm</i></center></nonum>
+I Venner! hører lidt paa Suhm!
+Den Sats er min, og er den rette:
+At intet kan vor Skam aftvette,
+Men at vi Byen heel omkring
+Vil blive latterlige Ting,
+Ifald vi ei den Slutning fatter,
+Med os at døde Folkes Latter.
+Lad væbnet Arm med hvasse Dolk
+Forkynde, hvad vi var for Folk!
+Vor Konst vi øve kun for Ære -
+
+<nonum><center><i>Schwarz</i> <small>sagte.</small></center></nonum>
+Og hvad den ellers kan beskiære.
+
+<nonum><center><i>Suhm</i></center></nonum>
+Og faaer den allermindste Plet -
+Hvo da kan leve, tænker slet.
+
+<nonum><center><i>Urberg</i></center></nonum>
+Nei, døe!
+
+<nonum><center><i>Alle</i></center></nonum>
+                       <nonum>Døe! døe! Men -</nonum>
+
+<nonum><center><i>Suhm</i></center></nonum>
+                                                                       Ingen Menner!
+Om Eders Ærekiærhed, Venner,
+Betager Publikum al Tvivl!
+- I Døden offrer Æren Smiil.
+<nonum><center><small>I Coulissen.</small></center></nonum>
+Hr. Regisseur! lad bringe Knive!
+<nonum><center><small>De vise alle en Frygt, som de vil skiule.</small></center></nonum>
+
+<nonum><center><i>Jomfru Winther</i> <small>sagte.</small></center></nonum>
+Alt mine Lemmer blive stive.
+
+<nonum><center><i>Jomfru Møller</i> <small>sagte.</small></center></nonum>
+Mig Himlen frie fra hastig Død!
+
+<nonum><center><i>Jomfru Aaslev</i> <small>sagte.</small></center></nonum>
+Alt døe? Jeg er jo nylig fød!
+
+<nonum><center><i>Elsberg</i> <small>sagte.</small></center></nonum>
+Jeg troer, vi efter Død ei tørste.
+
+<nonum><center><i>Urberg</i> <small>sagte.</small></center></nonum>
+Slet ingen være vil den første.
+
+<nonum><center><i>Preisler</i> <small>sagte.</small></center></nonum>
+Mon ingen dog Indvending giør?
+
+<nonum><center><i>Schwarz</i> <small>sagte.</small></center></nonum>
+Suhm synes ei saa kiek som før.
+Jeg vil et Snit med ham probere.
+<small>Høit</small> Men Venner! skal vi ei votere?
+Var det ei større Ære, om
+Hver af os skrev sin egen Dom?
+I Grunden var det vel det samme;
+Men Folk kan troe, at vi os skamme
+Den ene for den anden, og
+Af Skamfuldhed vi Dolken drog.
+
+<nonum><center><i>Hansen</i> <small>med Knive.</small></center></nonum>
+Gid dem med Helsen De maae slide!
+
+<nonum><center><i>Suhm</i> <small>grædefærdig, vil synes modig.</small></center></nonum>
+Person! han skiertser i Utide.
+<nonum><center><small>Mere munter.</small></center></nonum>
+Hør lad os bringe lidt Papiir.
+
+<nonum><center><i>Jomfru Winther</i> <small>sagte.</small></center></nonum>
+,,Døe'' troer jeg knap mit Votum bli'r;
+Og gid det ei blev nogen andens!
+
+<nonum><center><i>Elsberg</i> <small>sagte.</small></center></nonum>
+Skrev Mængden: døe! da var det Fandens!
+
+<nonum><center><i>Hansen</i> <small>med Papiir.</small></center></nonum>
+Det slaaer vist ingen Mand ihiel
+<nonum><center><small>De rive Papiir af o. s. v.</small></center></nonum>
+Den Lap Papiir kan Brystet dække,
+Saa Dolken ei skal Hiertet række.
+
+<nonum><center><i>Jomfru Møller</i> <small>seer sig om paa de andre.</small></center></nonum>
+Hvis paa hvers Ansigt ret jeg seer,
+I Dag her intet Selvmord skeer.
+
+<nonum><center><i>Schwarz</i></center></nonum>
+Har I nu alle udvoteert,
+Saa bli'r mig Sedlerne leveert.
+<nonum><center><small>De kaste alle Sedlerne i en Hat.</small></center></nonum>
+Hvad? ,,leve!'' Hvem saa nedrig er,
+Og Liv har meer end Ære kiær?
+<nonum><center><small>han tager nok een.</small></center></nonum>
+Bevare mig! der ere flere,
+Som feige tør paa Liv votere.
+         <wrap><small>han tager ivrig de andre op, og kaster med bister Forundring den ene efter den anden paa Bordet, hvor de andre læse dem efter, og forestille sig meget forundrede. Førend han aabner den sidste, siger han sagte.</small></wrap>
+Een har dog vel paa Død voteert?
+<nonum><center><small>høit, med en foragtende Tone.</small></center></nonum>
+Jeg seer, at I har mig fixeert,
+Og at jeg den maae ene blive,
+Som raader til, sig at aflive.
+<nonum><center><small>Han aabner Seddelen, lægger den forbluffet fra sig.</small></center></nonum>
+Af mig en hellig Eed her gives,
+<nonum><center><small>sagte.</small></center></nonum>
+Saa vidt dog Sagen ikke drives,
+<nonum><center><small>høit.</small></center></nonum>
+At paa min Seddel jeg skrev: døe!
+Skrev nogen af Dem: leve?
+
+<nonum><center><i>Alle</i></center></nonum>
+                                                        <nonum>Døe!</nonum>
+
+<nonum><center><i>Schwarz</i></center></nonum>
+Saa Skiæbnen os et Puds har spillet.
+Vi see, den ei vor Død har villet,
+Og, paa det at vi ei omkom,
+Har vores Skrift kalfatret om.
+Os til at leve Skiæbnen tvinger!
+
+<nonum><center><i>Suhm</i> <small>seer til Coulissen.</small></center></nonum>
+See, Schwarz! der Ole Kiolen bringer.
+
+<nonum><center><i>Schwarz</i></center></nonum>
+Os Skiæbnen derved vil paaminde,
+Vi strax forsøge bør at vinde
+Igien vort elskte Herskabs Gunst
+Ved vores Flid, om ei vor Konst.
+Og er nu dette Spøg mislykket,
+Saa er det dog kun Wessels Skam,
+Og Skaden falde og paa ham!
+- Imidlertid begynder Stykket.
+</body>
+</poem>
+
+<poem id="wesselblandedea1">
+<head>
+    <title>Prologue</title>
+    <subtitle>fremsagt i Anledning af Hds. Maj. Dronning Juliane Maries Fødselsfest den 4de Septbr. 1780, af Skuespillerinden Møller ved Slutningen af Syngestykket De tre Forpagtere, som til den høie Fest blev opført paa Lyst-Theatret paa Fredensborg.</subtitle>
+    <toctitle>Prologue</toctitle>
+    <indextitle>Prologue</indextitle>
+    <firstline>Tør min uvante, svage Røst</firstline>
+    <source pages="233-234"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Tør min uvante, svage Røst
+Til Danmarks store Dronning tale,
+For den usminket Fryd at male,
+Som nu opfylder Danskes Bryst?
+Nei! Glæden, som i Dag vi nyder,
+Paa denne Dag, som gav os Dig,
+Den bliver ubeskrivelig,
+Fordi den ligner Dine Dyder.
+Gid og Dit Held maae ligne dem!
+Os unde Himmelen den Glæde,
+At tidt paa denne Dag vi træde
+Med lige Ønske for Dig frem.
+
+<nonum><center><i>Chor</i></center></nonum>
+    Paa <i>Julianes</i> Fest sig alle Hierter fryde,
+Som Ædelmodighed og Dyden have kier;
+Og ofte denne Fryd at nyde
+Hver ærlig Cimbrers Ønske er.
+</body>
+</poem>
+
+<poem id="wesselblandedea2">
+<head>
+    <title>Chor og Prologue</title>
+    <subtitle>fremsagt i Anledning af Hds. Maj. Dronningens Fødselsfest den 4de Septbr. 1783, af Skuespillerinden Møller ved Slutningen af Syngestykket Julie, som til den høie Fest blev fremstillet paa Lyst-Theatret paa Fredensborg.</subtitle>
+    <toctitle>Chor og Prologue</toctitle>
+    <indextitle>Chor og Prologue</indextitle>
+    <firstline>Ei længer vi hørte</firstline>
+    <source pages="234-235"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<nonum><center><i>Chor</i></center></nonum>
+Ei længer vi hørte
+Den truende Torden;
+Os Himlen bønhørte,
+Og glædede Norden;
+Den frelste vor Dronning, den naadig os var.
+Hver Undersaat zittred' ved gyseligt Rygte;
+Han bad til den Høie,
+Og Sukke udtrykte
+Og taarefyldt Øie
+Hans frygtede Tab;
+Ham Himlen bønhørte, den naadig os var.
+<nonum><center><small>Tales.</small></center></nonum>
+    Med Gysen tænkte vi tilbage
+Paa nys hensvunde Sorgens Dage -
+Dog - denne Dag er Glædens Dag!
+Min Læbe taler Folkets Sag,
+Den: leve <i>Juliane!</i> raaber,
+For Rigets Held sig bønhørt haaber.
+Den ved dig frelste Moders Bøn
+Dig skal tilbede værdig Løn,
+Og hendes Suk til Himlen trænge:
+Gid <i>Juliane</i> leve længe!
+Og end ufødte Børnechor,
+Naar de betræde Livets Bane,
+Skal stamme frelste Moders Ord:
+Velsignet være <i>Juliane!</i>
+<nonum><center><small>Choret igientages.</small></center></nonum>
+</body>
+</poem>
+
+<poem id="wesselblandedea3">
+<head>
+    <title>Til Hr. Jens Baggesen</title>
+    <toctitle>Til Hr. Jens Baggesen</toctitle>
+    <indextitle>Til Hr. Jens Baggesen</indextitle>
+    <firstline>Ved Salig Rasmus Langeland</firstline>
+    <notes>
+          <note><a poet="baggesen">Baggesen</a> føjede i sin udgave af Wessels digte følgende anmærkning til digtet: ,,Denne unge Versemagers Ubetydelighed havde vist ikke skaffet ham et Brev fra vor udødelige Wessel, og deri en Opmuntring af større Vægt, end alle Journalisters Roes, dersom ikke samme var blevet mishandlet af en ubeføiet Dommer. Maaskee min Sygdom i samme Tid, og øvrige, ikke meget lykkelige, Tilstand, har bidraget til en Compliment, som jeg slet ikke fortiener; thi vor Digters Hierte var ligesaa ualmindeligt som hans Hoved.''</note>
+    </notes>
+    <source pages="235-236"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Ved Salig Rasmus Langeland,
+Som ikke var Poet, derfor maaskee ei Prakker,
+Ved store Belt og Smakker
+Udmærkedes kun før
+Korsøer.
+Men nu er Pokker løs;
+En Snees Aars gammel Knøs
+Fød der, tør skrive Vers, dem gode skrive,
+Som Aftenposten ham skal evig ei tilgive.
+Jeg fra Korsøer mindst ventede Rivaler,
+Da <i>Baggesen</i> gav ud sit Manifest.
+
+    Jeg først saa godt som sidst laer falde Flag;
+Thi, naar man tabe skal, at tabe uden Slag
+Er efter mine Tanker bedst.
+Rivalen er for stærk og jeg for svag,
+Han stiger i sin Flugt, jeg daler;<note>Allusion til <xref bibel="bibeljohannes03,30"/>.</note>
+Men dalende jeg har det Haab, den Trøst,
+At tit jeg læse skal hans Vers med Lyst.
+
+    Syng flittig, unge Mand, før Alder giør dig hæs!
+Da nøies med dit Lod, dig glad i Yngres Sange læs!
+Jeg giver dig et Raad, som selv jeg ikke følger.
+Aarsagen - - Taal, at jeg den dølger!
+
+    Men nu et Raad jeg giver dig,
+Som var bestandig fulgt af mig:
+Korsøerianske Ven!
+Mod klog, mod taabelig Kritik
+Spids aldrig Pen!
+Den sidste derved ufortient
+For stor en Ære fik,
+Den første, taus, lad blive vel anvendt!
+Om Myrias Emanueler
+Bidsk til dig skeler,
+Saa see du rolig ligefrem.
+Til Tidsfordriv engang iblandt,
+Naar Tiden er dig lang, du skotte ned til dem,
+Som, for du vittig var, i dig Misdæder fandt!
+</body>
+</poem>
+
+<poem id="wessel2002092208">
+<head>
+    <title>Brev</title>
+    <toctitle>Brev</toctitle>
+    <indextitle>Brev</indextitle>
+    <firstline>Min kiære Hr. Svoger, velædle Student!</firstline>
+    <notes>
+          <note>Digtet er udeladt i udgaven af 1901.</note>
+    </notes>
+    <source pages="237"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Min kiære Hr. Svoger, velædle Student!
+Jeg sender dig herved min Giencompliment.
+Det stedse skal være min Lyst og min Ære,
+Af Svogeren Thomas erindret at være.
+Men hvis min Forsikring for Vaas han anseer,
+Saa kan han - Men derom snart mundtligen meer.
+
+    Hver ærlig med Svogeren vist vil begræde,
+At Glæden er nu flyttet bort fra sit Sæde.
+Hver ærlig vil ønske, den flytte med dem,
+Og i deres Hierter udvælge sit Hiem,
+
+    Men siden vi tale nu just om at flytte:
+Har Rettens-Betientere først sig til Nytte
+De mig med al Rette tilhørende Skoe,
+Og ladet dem flytte i Kiøberens Boe?*
+
+    De Rettergangs Folk os saa gierne gad stevne;
+Her var nu en Leilighed til sig at hevne.
+Fortæl mig derfor, om de stial min Skoe,
+Som, om jeg ret mindes, beløb sig til to. -
+
+* Jeg troer jeg glemte mine Skoe i N.....
+</body>
+</poem>
+
+<poem id="wesselblandedea4">
+<head>
+    <title>Tres humble Serviteurs</title>
+    <toctitle>Tres humble Serviteurs</toctitle>
+    <indextitle>Tres humble Serviteurs</indextitle>
+    <firstline>O! I, som skrive høit og vildt</firstline>
+    <source pages="238-240"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<center><nonum>Formeldelse til</nonum></center>
+<center><nonum><small><b>Velædle Hr. <i>Ole Dometius</i></b>,</small></nonum></center>
+<center><nonum><small>Kongelig bestalter Staldskriver,</small></nonum></center>
+<center><nonum><small>og</small></nonum></center>
+<center><nonum><small><b>Velædle Jomfru <i>Antonette Lynge</i></b>.</small></nonum></center>
+<center><nonum>Paa deres Bryllupsdag, den <i>glædelige</i> 11te Junii 1777.</nonum></center>
+
+---
+
+O! I, som skrive høit og vildt,
+Og giøre hvers Umage spildt,
+    Som vil opdage, hvad I mene,
+Men som opdage alt for seent,
+At I har oftest intet meent!
+    O! lader mig nu være ene!
+
+Bliv du og borte, Tydsklands Fat!
+Som skrev ynkværdig om en Kat,
+    Og næsten saa om Rennomisten!
+Du fik dog Tydsken til at troe,
+At du var lystig, og han loe;
+    O, fromme Tydsker! Gode Christen!
+
+Slig Troe ei findes i vor Egn;
+Thi, seer min Landsmand mindste Tegn
+    Til skuffet Slæb i hvad han læser,
+Medynksom slænger han sin Bog,
+Og siger haant: det stakkels Drog
+    Har svedet nok for de Fadaiser.
+
+Vi svede ei, Hr. Holck og jeg;<note>Hans Holck, se note til <xref poem="wesselsmaaversc2"/>.</note>
+Sandt nok, paa vores jevne Vei
+    Vi kan imellem ennuyere;
+Men det slet intet koster ham,
+Og jeg faae baade Last og Skam,
+    Om det mig koster meget mere!
+
+Kom, Hr. Agent! besiel min Sang!
+Saa skal jeg din en anden Gang;
+    Mig synes, vi har Smag tilfælles.
+Og dermed til min Hovedsag!
+Paa elskte Venners Bryllupsdag
+    Der burde smukke Ting fortælles.
+
+Men, søde Jomfrue <i>Lynge</i> Moer!
+Dit Værd, din Skiønhed er for stor,
+    Til at besynges af en Stymper,
+Der synger næsten i en Smag,
+Som den, der sang forleden Dag
+    Om Kierlighed foruden Strømper.
+
+Du, brave Mand! læs i mit Bryst
+De Følelser, min svage Røst
+    Forgieves søger at udtrykke!
+At varme Venskabs sande Fryd,
+Som hylder Indsigt, Vid og Dyd,
+    Du seer dig ønsket der til Lykke.
+
+I Strofen næst heroven for
+Jeg veeg fra de burleske Spor,
+    Og kunde Tonen ei bevare.
+Som Digter har jeg vel Uret,
+Men Venskab vil undskylde det,
+    Og Sandheden skal det forsvare.
+
+Nu mine Børen! lad mig see,
+I skynde jer at blive tre;
+    Thi Tvillinger er' reent af Moden.
+Skal Barnet ligne Faer og Moer,
+Og træde vil i deres Spoer,
+    Da bli'r der vistnok godt af Poden.
+</body>
+</poem>
+
+<poem id="wesselblandedea5">
+<head>
+    <title>Ringe og velmeent Ønske</title>
+    <toctitle>Ringe og velmeent Ønske</toctitle>
+    <indextitle>Ringe og velmeent Ønske</indextitle>
+    <firstline>Man spøger nu med de Personer</firstline>
+    <source pages="240-241"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<center><nonum><small><b>til Hr. Landsdommer <i>Bartholin</i></b></small></nonum></center>
+<center><nonum><small>og</small></nonum></center>
+<center><nonum><small><b>Jomfru <i>Helt</i></b>.</small></nonum></center>
+<center><nonum><small>i Anledning af deres Ægteforening</small></nonum></center>
+<center><nonum><small>Fra Brudeparrets <b>W</b>en.</small></nonum></center>
+
+Man spøger nu med de Personer,
+Som synge i <i>Ha</i>-stemte Toner;
+Hvem der har Uret eller Ret,
+Jeg ved ei, vil ei vide det;
+Men veed, at, hvis man vil befale,
+Jeg daglig tusind' Vers skal male,
+Saa vælger jeg den Art med <i>Ha!</i>
+Jeg kommer ellers slet derfra.
+Jeg mener <i>Ha!</i> med hvad tilhører;
+Med dette Spænd man hastig kiører.
+Men den, som Læs vil tage paa
+(Den sunde Sands jeg kalder saa),
+Han kiører ei saa langt om Dagen. -
+Men nu er nok kiørt om med Smagen.
+
+    Mit Vers var blevet alt for kort,
+Hvis den Indledning ei var giort;
+Til den jeg valgte lidt om Smagen,
+Blot af en Slump; see det er Sagen!
+
+    Gid Du, og den, som giør dit Vel,
+Maae naae fortiente varigt Held!
+</body>
+</poem>
+
+<poem id="wessel2002092209">
+<head>
+    <title>Geburtsdags-Carmen</title>
+    <toctitle>Geburtsdags-Carmen</toctitle>
+    <indextitle>Geburtsdags-Carmen</indextitle>
+    <firstline>Siig, svøbt i sorte Stormsky'r, Tordnens Gud!</firstline>
+    <notes>
+          <note>Digtet er udeladt i udgaven af 1901.</note>
+    </notes>
+    <source pages="241-242"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Siig, svøbt i sorte Stormsky'r, Tordnens Gud!
+Af dine Lynilds-flammesvangre Huler,
+Laed Helvedes Kanon med sexten Kugler,
+Og saluteer med sexten tusind Skud.
+Slyng Underverd'nens gnistrende Raketter
+I Skokketal mod Skyen op,
+Saa de beskinne alle Bierges Top,
+Som Himlens Stierner i de klare Nætter.
+Træd, alle Luftens Hære, i Geleder,
+Formeer Colonner mellem begge Poler
+Giv Agt! og præsenteer Gevær!
+Fremad Marsch, og retter Eder!
+Og nu forkynd det høit, du hule Torden!
+For alle Himle og for hele Jorden,
+Gientag det Skov og Bierg og Dale,
+Saa høit som I var splittergale:
+Det er Hr. Herman Anthon Jensens Fødselsdag!
+
+<nonum><center><i>Chor af usynlige Aander</i></center></nonum>
+    Fem Faar og fire Gieder,
+    Gid Jensen nyde alle Glæder,
+    Som følger af at være Skræder,
+    Med sin Marie i Forening;
+    Det er saagu vor sande Mening.
+
+<nonum><center><i>Chor af Giesterne</i> <small>(som alle ere drukne.)</small></center></nonum>
+Gid han! gid han! - ja gid vi bare kunde,
+Men det er som en Prop sad fast i vore Munde,
+Saa opfyldt er vor hele Himmelsiæl
+Af lutter Ønsker for hans sande Vel.
+Gid han! Gid han! det ønsker alle Sole,
+Og vi Planeter med, maa kunne flette Been
+Og føre Naal og Traad, saalænge der er een,
+Som bruger Buxer eller Kiole.
+Og naar saa Døden, o! gid sildig, træder
+Paa Nakken af den kiere Skræder,
+Ja saa! Ja saa!
+Lad Verden og forgaae. -
+<nonum><center><small>(Der høres Hyl, Tuden og Skraalen af de usynlige Aander.)</small></center></nonum>
+</body>
+</poem>
+
+<poem id="wesselblandedea6">
+<head>
+    <title>Lovtale over den ugifte Stand</title>
+    <toctitle>Lovtale over den ugifte Stand</toctitle>
+    <indextitle>Lovtale over den ugifte Stand</indextitle>
+    <firstline>Reis Ærestøtter op for hvem du vil, Krabat!</firstline>
+    <source pages="243"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Reis Ærestøtter op for hvem du vil, Krabat!
+(Jeg taler her til dem, som rime hen i Taaget,
+Som skrive Sider fuld, men dog ei sige noget,
+Hvis ganske Poesie er Vittigheds Sabbath)
+Ja Ærestøtter sæt du kun for hvem du vil,
+Kun den ugifte Stand er det, jeg vil besiunge;
+Kom, hører paa min Sang, I gamle og I unge!
+I aldrig hørte før saa majestætisk Stiil.
+Naturen siger os, at Frihed er vor Lod,
+At vi foragte bør, i hvad det er for Kiæder,
+Og jeg af denne Sats fornuftigen udleder,
+At Ægteskabet er just ei Naturens Raad.
+See Fuglene paa Qvist, og sand saa mine Ord;
+Af dem kan du og jeg og hele Verden lære,
+Hvordan man elske kan og fri dog være. - -
+Et Blomster brækkes tidt, midt i sin Foraars Flor,
+Og ligesaa det gaaer nu ogsaa med mit Vers:
+Just paa det høieste da nu min Geist var stegen,
+Saa faldt den ned med eet; min Sorg er derfor megen,
+Og, for at faae et Riim, jeg taler uden Skierts.
+</body>
+</poem>
+
+<poem id="wesselblandedea7">
+<head>
+    <title>Paa en Skive</title>
+    <subtitle>som en aftrædende Fuglekonge gav til det kjøbenhavnske Skydeselskab</subtitle>
+    <toctitle>Paa en Skive</toctitle>
+    <indextitle>Paa en Skive</indextitle>
+    <firstline>Jeg nød, hvad Jordens bedste Konger nyde</firstline>
+    <source pages="244"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Jeg nød, hvad Jordens bedste Konger nyde,
+Den Fryd, blandt Venner som en Ven at byde;
+Jeg nød, hvad ingen Jordens Konge nød,
+Ustyrret Roe, da man mit Scepter brød;
+Jeg kan, hvad ingen Jordens Konge kunde,
+Min Magt og Kongenavn en anden unde,
+Forlade uden Suk min Herskerstand,
+Og synge: leve værdig Eftermand!
+</body>
+</poem>
+
+<poem id="wesselblandedea8">
+<head>
+    <title>Alle Tings Cirkelgang</title>
+    <toctitle>Alle Tings Cirkelgang</toctitle>
+    <indextitle>Alle Tings Cirkelgang</indextitle>
+    <firstline>Alting i en Cirkel gaaer</firstline>
+    <source pages="244-245"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Alting i en Cirkel gaaer:
+Dyder, Følelser og Laster;
+Den, som altid fremad haster,
+Og betids ei stille staaer,
+Haster, uden det at vide,
+Til den Grad af Cirkelen,
+Hvor for ei at komme hen
+Han indbildte sig at stride.
+
+    Kronen selv for alle Dyder,
+Gudsfrygt, Frankrig overdrev,
+Saa fra største Dyd den blev
+Størst iblandt de største Lyder;
+Frankrig troer at tiene Gud
+Ved at slagte Legioner,
+Troer at følge Himlens Bud,
+Naar det Helveds Ønske kroner.
+</body>
+</poem>
+
+<section level="2">
+<head>
+    <toctitle>Fragmenter</toctitle>
+</head>
+<content>
+
+<poem id="wesselblandedea9">
+<head>
+    <title>Om en Jødepige</title>
+    <toctitle>Om en Jødepige</toctitle>
+    <indextitle>Om en Jødepige</indextitle>
+    <firstline>Jeg synger, som jeg kan, om en ebraisk Skiønhed</firstline>
+    <notes>
+          <note>Josias Leopold Bynch (1747-1779) var en af Wessel bekendt smudsforfatter.</note>
+    </notes>
+    <source pages="245-246"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Jeg synger, som jeg kan, om en ebraisk Skiønhed,
+Hvis Øines muntre Glands og Ungdoms ferske Grønhed,
+Hvis purpurrøde Mund og Kind, Kulør de Lax,
+Har de Ulykker voldt, som skal jeg sige strax.
+Dog ikke just saa strax; thi Læseren tillader,
+Jeg falder først paa Knæe for alle Skialdes Fader.
+Jeg veed vel, mellem os, det ikke nytter stort;
+Men jeg dog giøre maae, hvad Folk for mig har giort.
+
+    Du, alle Skialdes Gud, og Vittighedens Dommer,
+Som kaldes paa saa tidt, og som saa sielden kommer,
+Indblæs du selv min Sang, ifald du haver Tid,
+Og om du ingen har, saa send en Muse hid.
+Men send mig ikke een af disse Gadetøiter,
+Som strax paa Pinde staaer, naar en Josias fløiter;
+Men fremfor alle Ting (jeg taler til en Ven,
+For Guds Skyld, søde Faer! ei mine Ord igien)
+For alting send mig ei den smageløse Luder,
+Som indgav Langebek sit Juleaftens Sludder. - - -
+</body>
+</poem>
+
+<poem id="wesselblandedea10">
+<head>
+    <title>Jeg synger om en Mand, saa er den gamle Tone</title>
+    <toctitle>Jeg synger om en Mand, saa er den gamle Tone</toctitle>
+    <indextitle>Jeg synger om en Mand, saa er den gamle Tone</indextitle>
+    <firstline>Jeg synger om en Mand, saa er den gamle Tone</firstline>
+    <source pages="246"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+Jeg synger om en Mand, saa er den gamle Tone;
+Hvad, om man sang engang for Løier om en Kone?
+En Kone synes mig, maae ogsaa vel gaae an;
+Siig, Læser! hvad du vil, en Kone eller Mand?
+En Kone, siger du; velan! det er en Kone,
+Som jeg for Rimets Skyld vil kalde Abelone.
+
+    Jeg synger om en Kone. - Hemistichen faldt,
+Som synes Læseren, en Smule splittergalt;
+Men troe, jeg hende nok herefter saa skal vende,
+At hun mig ikke meer skal Hemistichen skiænde. - - -
+</body>
+</poem>
+
+<poem id="wesselblandedea11">
+<head>
+    <title>Vaaren</title>
+    <toctitle>Vaaren</toctitle>
+    <indextitle>Vaaren</indextitle>
+    <firstline>Fast hele Jordens Kreds udraaber Vaarens Pragt</firstline>
+    <notes>
+          <note>Parodierer bla. Tullins <xref poem="tullinandrea1"/>.</note>
+    </notes>
+    <source pages="247-248"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+    Fast hele Jordens Kreds udraaber Vaarens Pragt.
+Bedrøveligt Beviis paa hvad der saa tidt er sagt:
+At Smagen her til Lands (jeg mener paa vor Klode),
+Om ei den værste, er i Sandhed ei den gode.
+Ifald mig undes Lov, saa er det min Propos,
+At vise, Vaaren ei fortiener Verdens Roes.
+Kun Christen-Kierlighed mig, andet ei, indblæste
+Den Lyst, at høvle lidt paa Smagen hos min Næste.
+(Til Smagens Politur, jeg troer, man bruger Fiil;
+Men høvle, syntes mig, faldt bedre i min Stiil.)
+Jeg sielden noget troer, som troes af for mange;
+Dog hørte jeg saa tidt evindelige Sange
+Om Maji-Dagens Lyst, at jeg det Indfald fik,
+Engang til Floræ Eng at gaae - og see! jeg gik.
+Jeg havde Østerport lagt nogle Skridt tilbage,
+Og standsede, for ret ind i mit Bryst at drage
+Den Balsom, som saa tidt er liflig siungen om,
+Og henrykt raaber jeg: Du Duft af Blomster, kom!
+Du Zephyr, bring mig den paa silkebløde Vinger!
+Da Æolus med Fart mig i mit Ansigt springer,
+Vred, for jeg hilsede hans Fætter Zephyr mildt,
+Og puster Støv, hvis Lugt fra Balsom let var skilt.
+Min Skade lærte mig, at Vestenvinden blæser
+Ei altid lige mildt paa Digter og paa Læser.
+Men, skiønt jeg lidet godt hos Flora torde spaae
+Af Maaden, som hun strax bød mig velkommen paa,
+Min Fromhed gav mig Mod, trods Stormen frem at trænge,
+I Haab, at, naar jeg gik opmærksom, langt og længe,
+En Art af Skiønhed mig vel eengang forekom,
+Som over Næstens Smag formildede min Dom.
+I dette fromme Haab aftørrede jeg Støvet,
+Ved hvilket nyligen mig Synet var berøvet,
+Og saae den grønne Mark - den var - ja! Herre Gud!
+Man veed, hvordan en Mark, naar den er grøn, seer ud.
+Den meest nysgierrige, hvor lidt han end har Stunder,
+Sig dog i Tide kan see mæt paa det Vidunder;
+Sligt Syn mit Øie kun en slet Erstatning gav
+For Støvet, som endnu det følte Svien af.
+Dog tys! jeg synes nu den muntre Lærke høre,
+Hvad Øiet tabte før, det vinder nu mit Øre.
+Men hvad! jeg hører jo blot Klang, og intet meer,
+Som naar man regelløs slaaer paa et stemt Klaveer.
+Omsonst Køer, Faar og Sviin, som brøle, bræge, grynte,
+Med Accompagnement den smukke Sang vil pynte.
+Den første Stemme er de andre Stemmer værd;
+Men for Musikens Skyld jeg staaer ei længer her.
+
+    Endnu var Næstens Smag et Skin af Bifald værdig;
+Endnu til nyt Forsøg min Fromhed fandtes færdig -
+</body>
+</poem>
+
+</content>
+</section> <!-- Fragmenter -->
+
+</content>
+</section> <!-- Blandede Digte -->
+
+<section>
+<head>
+    <title>Smaavers</title>    
+</head>
+<content>
+
+<poem id="wesselsmaaversa0">
+<head>
+    <title>Den, som aldrig turde drikke</title>
+    <toctitle>Den, som aldrig turde drikke</toctitle>
+    <indextitle>Den, som aldrig turde drikke</indextitle>
+    <firstline>Den, som aldrig turde drikke</firstline>
+    <source pages="251"/>
+    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
+</head>
+<body>
+Den, som aldrig turde drikke,
+Turde aldrig noget stort;
+Ægte Helte lade ikke
+Vandet skylle Modet bort.
+
+<nonum><center><i>Chorus</i></center></nonum>
+Krigeren, for han er Helt,
+Takker Vinen i sit Telt.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa1">
+<head>
+    <title>For Kierlighed er Viin</title>
+    <toctitle>For Kierlighed er Viin</toctitle>
+    <indextitle>For Kierlighed er Viin</indextitle>
+    <firstline>For Kierlighed er Viin</firstline>
+    <source pages="251"/>
+    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
+</head>
+<body>
+For Kierlighed er Viin
+En daarlig Medicin;
+Thi, naar de komme sammen
+Forøges altid Flammen;
+Og, naar de sammen kommer,
+Saa blier der dobbelt Sommer;
+Men Sommeren er heed,
+Som Gud og hver Mand veed.
+</body>
+</poem>
+
+<poem id="wessel2002092210">
+<head>
+    <title>Naar jeg formaaer, jeg gierne vil</title>
+    <toctitle>Naar jeg formaaer, jeg gierne vil</toctitle>
+    <indextitle>Naar jeg formaaer, jeg gierne vil</indextitle>
+    <firstline>Naar jeg formaaer, jeg gierne vil</firstline>
+    <source pages="252"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Naar jeg formaaer, jeg gierne vil
+En draabe drikke af og til;
+Om hver en Mand og hver Madame
+Kun foretoge sig det samme,
+De klamredes da ei saa tidt
+Om Dit og Dat, og Fias og Sk&mdash;.
+
+Hvis nogensinde jeg faaer i Sinde
+(Som neppe skeer) mig at beqvinde,
+Da skal et evigt, evigt Ruus
+Stadfæste Freden i mit Huus. -
+Men over denne Impromptu
+Jeg alt undseelig er og bly.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa2">
+<head>
+    <title>Alt det, som i Ungdommen glæde os kan</title>
+    <toctitle>Alt det, som i Ungdommen glæde os kan</toctitle>
+    <indextitle>Alt det, som i Ungdommen glæde os kan</indextitle>
+    <firstline>Alt det, som i Ungdommen glæde os kan</firstline>
+    <source pages="252"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Alt det, som i Ungdommen glæde os kan,
+En Kone os giver, os giver en Mand;
+    Man mærke, at Bacchus her menes ved Manden,
+    Og at jeg Fru Venus forstaaer ved den anden.
+Man veed, at for Venus her Døren er lukt;
+    For ikke med Smerte at savne Madamen,
+Saa troer jeg, det er baade billigt og smukt,
+    At drikke en Draabe, imens vi er sammen.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa3">
+<head>
+    <title>Mærk derpaa!</title>
+    <toctitle>Mærk derpaa!</toctitle>
+    <indextitle>Mærk derpaa!</indextitle>
+    <firstline>Mærk derpaa!</firstline>
+    <source pages="253"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Mærk derpaa!
+For det første
+Skal du tørste,
+Drikke saa.
+Siden, naar
+Viin er drukket,
+Tørsten slukket,
+Nok en Taar.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa4">
+<head>
+    <title>Efter mine ringe Evner</title>
+    <toctitle>Efter mine ringe Evner</toctitle>
+    <indextitle>Efter mine ringe Evner</indextitle>
+    <firstline>Efter mine ringe Evner</firstline>
+    <source pages="253"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <keywords>norskeselskab</keywords>
+</head>
+<body>
+Efter mine ringe Evner
+(Jeg beskeden saa dem nævner)
+Jeg ei rettere kan see,
+End at den, som gider lee,
+Bør imellemstunder drikke -
+Wessel! Meyer! Fasting! <i>ikke?</i>
+</body>
+</poem>
+
+<poem id="wessel2002092211">
+<head>
+    <title>N. N. er mit Navn</title>
+    <toctitle>N. N. er mit Navn</toctitle>
+    <indextitle>N. N. er mit Navn</indextitle>
+    <firstline>N. N. er mit Navn</firstline>
+    <source pages="253"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+N. N. er mit Navn,
+Drikke er mit Gavn,
+Er der Punsch og Glasser,
+Symbolumet passer
+Paa enhver især,
+Brødre! iblandt jer.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa5">
+<head>
+    <title>Afholdenhed! du Vises Dyd</title>
+    <toctitle>Afholdenhed! du Vises Dyd</toctitle>
+    <indextitle>Afholdenhed! du Vises Dyd</indextitle>
+    <firstline>Afholdenhed! du Vises Dyd</firstline>
+    <source pages="254"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Afholdenhed! du Vises Dyd,
+Som jevn og seig, men varig Fryd
+    I et langvarigt Liv os byder!
+Du tager vel ei ilde op,
+At jeg dog heller i Galop,
+    I kort, men heftig Lyst mig fryder.
+</body>
+</poem>
+
+<poem id="wessel2002092212">
+<head>
+    <title>Afholdenhed er en deilig Dyd</title>
+    <toctitle>Afholdenhed er en deilig Dyd</toctitle>
+    <indextitle>Afholdenhed er en deilig Dyd</indextitle>
+    <firstline>Afholdenhed er en deilig Dyd</firstline>
+    <source pages="254"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Afholdenhed er en deilig Dyd,
+Men Uafholdenhed gi'er større Fryd;
+Maaskee for jeg ei bedre vidste,
+Jeg lider nok saa godt den sidste.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa6">
+<head>
+    <title>Kiere Børen, ta'er jer vare</title>
+    <toctitle>Kiere Børen, ta'er jer vare</toctitle>
+    <indextitle>Kiere Børen, ta'er jer vare</indextitle>
+    <firstline>Kiere Børen, ta'er jer vare</firstline>
+    <source pages="254"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Kiere Børen, ta'er jer vare,
+Elskov er en enkelt Snare
+(Mærker, af en enkelt Traad);
+Men giør Vinen Halsen vaad,
+Vi da vistnok Tak skal have:
+For jert Hierte, for jer Mave
+Begge steds er Ildebrand,
+Som kun slukkes slet med Vand;
+Thi som jeg tilforn har sagt,
+Ild derved til Ild bli'er lagt.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa7">
+<head>
+    <title>I en Stambog</title>
+    <toctitle>I en Stambog</toctitle>
+    <indextitle>I en Stambog</indextitle>
+    <firstline>Lev vel og fornøiet!</firstline>
+    <source pages="255"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <keywords>stambog</keywords>
+</head>
+<body>
+Lev vel og fornøiet!
+Hav stedse for Øiet,
+    Du ei er ret frisk.
+For meget af Kiødet
+Saa mangen har dødet,
+    Spiis derfor helst Fisk.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa8">
+<head>
+    <title>Ligeledes</title>
+    <toctitle>Ligeledes</toctitle>
+    <indextitle>Ligeledes</indextitle>
+    <firstline>Dieu nous juge par nos vertus</firstline>
+    <notes>
+          <note>* Ligeldes, dvs. som forrige digt også fra en stambog.</note>
+    </notes>
+    <source pages="255"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Dieu nous juge par nos vertus
+Et non par nos sacrifices.
+
+Du skal i fremmed Egn i denne Tanke styrkes:
+Gud mere værdigen ved Dyd end Offer dyrkes.
+</body>
+</poem>
+
+<poem id="wessel2002092213">
+<head>
+    <title>Jeg troer, jeg i en Bog har læst</title>
+    <toctitle>Jeg troer, jeg i en Bog har læst</toctitle>
+    <indextitle>Jeg troer, jeg i en Bog har læst</indextitle>
+    <firstline>Jeg troer, jeg i en Bog har læst</firstline>
+    <source pages="255"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Jeg troer, jeg i en Bog har læst,
+At Ægtskab er Friheds Pest.
+Jeg læste, troer jeg, i en anden,
+At Ægteskab er værr' end Fanden.
+Jeg læste i den tredie,
+Som var den værste af de tre;
+Og kunde jeg erindre dette,
+Saa skulde jeg det her fremsætte.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa9">
+<head>
+    <title>Til Hr. K. og hans Kone paa deres ellevte Bryllupsdag</title>
+    <toctitle>Til Hr. K. og hans Kone paa deres ellevte Bryllupsdag</toctitle>
+    <indextitle>Til Hr. K. og hans Kone paa deres ellevte Bryllupsdag</indextitle>
+    <firstline>Jeg vil ved dette ringe Skrift</firstline>
+    <source pages="256"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Jeg vil ved dette ringe Skrift,
+Den Dag, paa hvilken I blev' gift,
+Saavidt jeg mægter celebrere.
+Min Celebreren klinger saa:
+Paa denne Dag gid Fanden maae
+I mangen Aaring Tænder skiære,
+For I befinder jer saa vel
+Paa jeres Legem og jer Siæl!
+Fordi Hr. K.... og Madamen
+Hver Dag sig glade spise mæt,
+Og spørge ei om Tamperret.
+Det Fanden længe ærgre - Amen!
+</body>
+</poem>
+
+<poem id="wessel2002092214">
+<head>
+    <title>Ønsket</title>
+    <subtitle>Impromptu</subtitle>
+    <toctitle>Ønsket</toctitle>
+    <indextitle>Ønsket</indextitle>
+    <firstline>Hvad Ove Meyers Ønske er</firstline>
+    <source pages="256"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Hvad Ove Meyers Ønske er,
+Det Amtmand veed, det veed enhver,
+Han blive vil, hvad vist han bliver,
+En Hanrei og en Sorenskriver.
+(En Hanrei og en Ægtemand
+Er ofte eet i Ægtestand).
+
+    Mit Ønske saa omtrent kan lyde:
+Gid ingen Creditor mig byde:
+Sieur Johan Herman Wessel, flyt
+Til Slutterie fra Madam Schiøtt!
+</body>
+</poem>
+
+<poem id="wesselsmaaversa10">
+<head>
+    <title>Impromptu over Tandpine</title>
+    <toctitle>Impromptu over Tandpine</toctitle>
+    <indextitle>Impromptu over Tandpine</indextitle>
+    <firstline>Du Tændernes uhøflig' Giest</firstline>
+    <source pages="257"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Du Tændernes uhøflig' Giest,
+Al Roeligheds og Friheds Pest,
+Du er paa Jorden Vice-Fanden,
+Og halve værre end den anden;
+Men siig mig, naar du plage skal,
+Hvi falder just paa mig dit Val,
+Paa mig, som seer kun sorte Dage,
+Og sorte haver lagt tilbage;
+Paa mig, som meer ei Kiole har,
+Og har den ubetalt, jeg bar;
+Hvis Krop knap fire Skilling gielder,
+Hvis Aand Bekymring daglig fælder,
+Hvis Creditorer er en Flok?
+Er dette dig ei Plager nok?
+Paa denne Suppe kom en Jævning
+Af Mandags og af Torsdags Stævning. -
+See der gaaer <i>Meldahl!</i> glad og feed,
+Som nu af ingen Plage veed;
+Forlad du mig, tag ham i Steden,
+Og lad ham faae lidt Sorg blandt Glæden.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa12">
+<head>
+    <title>Til Luft-Skipperne</title>
+    <toctitle>Til Luft-Skipperne</toctitle>
+    <indextitle>Til Luft-Skipperne</indextitle>
+    <firstline>I, som med brændbar Luft Maskiner fylde</firstline>
+    <source pages="258"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+I, som med brændbar Luft Maskiner fylde,
+Hvad vilde mangen Mand ei eder skylde,
+Ifald I pumped' lens
+For den Ingrediens
+Vor Byes Jesabeller,
+Som hverken I, jeg ikke heller,
+Maaskee slet ingen tæller;
+Og samme strax igien i Luftmaskiner pumped',
+Og nøie valgte Vinden saa,
+De Land ei kunde naae,
+Men midt i Havet dumped'!
+
+    Og er hos nogen af jer ledigt Sted,
+Han tage min Bekymring med
+Ombord
+For billig Fragt og gode Ord!
+</body>
+</poem>
+
+<poem id="wesselsmaaversa13">
+<head>
+    <title>Anbefaling paa en Ansøgning om Ansættelse ved Veivæsenet</title>
+    <toctitle>Anbefaling paa en Ansøgning om Ansættelse ved Veivæsenet</toctitle>
+    <indextitle>Anbefaling paa en Ansøgning om Ansættelse ved Veivæsenet</indextitle>
+    <firstline>Af nærværende Cujon</firstline>
+    <source pages="258"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Af nærværende Cujon
+Er jeg ret en stor Patron;
+Meere værdige Personer
+Blandt vor Christenheds Cujoner
+Sikkerlig der findes ei
+Til at trippe paa en Vei.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa14">
+<head>
+    <title>Med en Gave til Sygecassen</title>
+    <toctitle>Med en Gave til Sygecassen</toctitle>
+    <indextitle>Med en Gave til Sygecassen</indextitle>
+    <firstline>Den sextende i Februar</firstline>
+    <source pages="259"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Den sextende i Februar
+Min dyrebare Fader var
+    Fød;
+Jeg gierne ved slig Leilighed
+Gav Skillingen til den, som leed
+    Nød.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa15">
+<head>
+    <title>Til Digterens Hustru</title>
+    <subtitle>Impromptu</subtitle>
+    <toctitle>Til Digterens Hustru</toctitle>
+    <indextitle>Til Digterens Hustru</indextitle>
+    <firstline>Du, som for din og min Plaseer</firstline>
+    <source pages="259"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Du, som for din og min Plaseer,
+Og hidindtil for intet meer,
+    Hos mig har sovet!
+Du, som jeg svoer en evig Troe,
+Og jevnlig afbrudt Natteroe
+    For Præst har lovet -
+Kort: du, som jeg har Løvte holdt,
+Skiønt det har ingen Skade voldt
+    Paa smalle Taille!
+Du, som jeg kalder tidt paa Skiærts,
+Men nu for Rimet i mit Vers
+    En sød Canaille!
+Dig giør jeg vitterligt, min Mo'er!
+At jeg ei spiser ved dit Bord
+   For denne Sinde;
+Men Klokken fire, ja vel tre,
+Med Glæde jeg igien skal see
+    Min søde Qvinde.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa16">
+<head>
+    <title>Paa Sammes Fødselsdag</title>
+    <subtitle>den 23de Februar 1782</subtitle>
+    <toctitle>Paa Sammes Fødselsdag</toctitle>
+    <indextitle>Paa Sammes Fødselsdag</indextitle>
+    <firstline>Gid i mange glade Dage</firstline>
+    <dates>
+        <event>1782-02-23</event>
+    </dates>
+    <notes>
+          <note>,,Paa Sammes'', dvs. på hustruens fødselsdag, jvf. forrige digt i samlingen. Jonas er digterens søn (blåøjet, forældrene havde begge brune øjne).</note>
+    </notes>
+    <source pages="260"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Gid i mange glade Dage
+Du den søde Fryd maae smage,
+At see <i>Jonas</i> om dig gaae;
+Men hvis end du vil med flere
+Vore Værelser meublere,
+Ydmygt dog jeg bede maae:
+Øinene ei blive blaae.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa17">
+<head>
+    <title>Impromptu til Mad. Juel paa hendes Fødselsdag</title>
+    <toctitle>Impromptu til Mad. Juel paa hendes Fødselsdag</toctitle>
+    <indextitle>Impromptu til Mad. Juel paa hendes Fødselsdag</indextitle>
+    <firstline>Gid du maae mange Penge eie!</firstline>
+    <source pages="260"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Gid du maae mange Penge eie!
+Dig frugtbart vorde Ægteleie!
+Det er i Korthed hvad jeg veed
+At ønske i Gesvindighed.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa18">
+<head>
+    <title>Til Fru Walter</title>
+    <toctitle>Til Fru Walter</toctitle>
+    <indextitle>Til Fru Walter</indextitle>
+    <firstline>Du skienktes os af Himmelen</firstline>
+    <source pages="260"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Du skienktes os af Himmelen,
+Og fire Gratier der bleve,
+Der sildig blive tre igien;
+Til Nordens Ziir du længe leve!
+</body>
+</poem>
+
+<poem id="wesselsmaaversa19">
+<head>
+    <title>Ved en Vens Bortreise til Norge</title>
+    <toctitle>Ved en Vens Bortreise til Norge</toctitle>
+    <indextitle>Ved en Vens Bortreise til Norge</indextitle>
+    <firstline>Snart du i elskte Land skal være</firstline>
+    <source pages="261"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Snart du i elskte Land skal være,
+Hvor først du aanded' Troe og Ære,
+Hvor Mod og Godhed sammen boer.
+Siig til vor Roes de norske Sønner:
+At vi paa Landsmænds Dyder skiønner,
+At vi dig evigt Venskab svoer.
+</body>
+</poem>
+
+<poem id="wesselsmaaversa20">
+<head>
+    <title>Afskeds-Sang</title>
+    <toctitle>Afskeds-Sang</toctitle>
+    <indextitle>Afskeds-Sang</indextitle>
+    <firstline>Kiække Landsmand! Held dig følge!</firstline>
+    <source pages="261"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Kiække Landsmand! Held dig følge!
+Ærligt Venskabs Ønske er.
+Brødres Taushed skal ei dølge,
+At du var vort Selskab kiær.
+Med oprigtigt Venskabs Harmonie
+Hver retskaffen Broder stemmer i:
+Kiække Landsmand! Held dig følge!
+Ærligt Venskabs Ønske er.
+</body>
+</poem>
+
+<section level="2">
+<head>
+    <toctitle>Vers paa opgivne Riim</toctitle>
+</head>
+<content>
+
+<poem id="wesselsmaaversb0">
+<head>
+    <title>Naar Doris vil sin Haand til mine Læber føre</title>
+    <toctitle>Naar Doris vil sin Haand til mine Læber føre</toctitle>
+    <indextitle>Naar Doris vil sin Haand til mine Læber føre</indextitle>
+    <firstline>Naar Doris vil sin Haand til mine Læber føre</firstline>
+    <source pages="261"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <keywords>norskeselskab</keywords>
+</head>
+<body>
+Naar Doris vil sin Haand til mine Læber <i>føre,</i>
+Naar hendes Englerøst fortryller agtsomt <i>Øre,</i>
+Naar hun nedlader sig, at hvile paa mit <i>Skiød,</i>
+Hvor ønsker da min Siæl, jeg var elskværdig <i>fød!</i>
+</body>
+</poem>
+
+<poem id="wesselsmaaversb1">
+<head>
+    <title>Vel den, som haver lært i Ungdoms Tid at høvle</title>
+    <toctitle>Vel den, som haver lært i Ungdoms Tid at høvle</toctitle>
+    <indextitle>Vel den, som haver lært i Ungdoms Tid at høvle</indextitle>
+    <firstline>Vel den, som haver lært i Ungdoms Tid at høvle</firstline>
+    <source pages="262"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <keywords>norskeselskab</keywords>
+</head>
+<body>
+Vel den, som haver lært i Ungdoms Tid at <i>høvle,</i>
+Han kan for et Chatol faae fire, fem Par <i>Støvle;</i>
+Behøver han dem ei, saa kan han kiøbe <i>Lax,</i>
+Skoe, Pocher, Terpentin, Huustømmer, Steen, og <i>Sax.</i>
+</body>
+</poem>
+
+<poem id="wesselsmaaversb2">
+<head>
+    <title>Trods Rigdom, ja Forældre trods</title>
+    <toctitle>Trods Rigdom, ja Forældre trods</toctitle>
+    <indextitle>Trods Rigdom, ja Forældre trods</indextitle>
+    <firstline>Trods Rigdom, ja Forældre trods</firstline>
+    <source pages="262"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <keywords>norskeselskab</keywords>
+</head>
+<body>
+Trods Rigdom, ja Forældre <i>trods,</i>
+Taer vittig Pige ingen <i>Klods.</i>
+Vel er Forældres gamle <i>Meening,</i>
+At de skal stifte Børns <i>Foreening;</i>
+Men Døttrene, de veed at <i>skrømte,</i>
+Man har vel og hørt dem, som <i>rømte,</i>
+For ei i sure Æble at <i>bide,</i>
+Og ei forhadte Favntag <i>lide.</i>
+Kort sagt: de gamle har, og unge deres <i>Skikke</i> -
+Jeg holder hermed op, og Pennen vil <i>afslikke.</i>
+</body>
+</poem>
+
+<poem id="wesselsmaaversb3">
+<head>
+    <title>Jeg Pigers Sælskab ei kan savne</title>
+    <toctitle>Jeg Pigers Sælskab ei kan savne</toctitle>
+    <indextitle>Jeg Pigers Sælskab ei kan savne</indextitle>
+    <firstline>Jeg Pigers Sælskab ei kan savne</firstline>
+    <source pages="262"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <keywords>norskeselskab</keywords>
+</head>
+<body>
+Jeg Pigers Selskab ei kan <i>savne</i>
+I Kiøbenhavn og andre <i>Havne,</i>
+Naar jeg i Nestved har den <i>Lykke,</i>
+At see Sophie, Kiønnets <i>Smykke.</i>
+</body>
+</poem>
+
+<poem id="wesselsmaaversb4">
+<head>
+    <title>Tæl over dine Sind, har du de fulde fem</title>
+    <toctitle>Tæl over dine Sind, har du de fulde fem</toctitle>
+    <indextitle>Tæl over dine Sind, har du de fulde fem</indextitle>
+    <firstline>Tæl over dine Sind, har du de fulde fem</firstline>
+    <source pages="263"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <keywords>norskeselskab</keywords>
+</head>
+<body>
+Tæl over dine Sind, har du de fulde <i>fem,</i>
+Da viid, du kommer ei med dem i Verden <i>frem;</i>
+Kast bort, to, tre; hvis ei, dølg varlig, du har <i>dem,</i>
+Og Held og Overflod skal strømme til dit <i>Hiem.</i>
+</body>
+</poem>
+</content>
+</section>
+
+<poem id="wesselsmaaversc0">
+<head>
+    <title>Indrykket i Aftenposten</title>
+    <toctitle>Indrykket i Aftenposten</toctitle>
+    <indextitle>Indrykket i Aftenposten</indextitle>
+    <firstline>To Acteurer i een Rolle</firstline>
+    <source pages="263"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+To Acteurer i een Rolle,
+Tvende, beilende til Een,
+Og to Hunde om eet Been,
+Aldrig kunne Venskab holde.
+</body>
+</poem>
+
+<poem id="wesselsmaaversc1">
+<head>
+    <title>Ligeledes</title>
+    <toctitle>Ligeledes</toctitle>
+    <indextitle>Ligeledes</indextitle>
+    <firstline>Tør jeg besvære Aftenposten</firstline>
+    <notes>
+          <note>,,Ligeledes'', dvs. som forrige digt i samlingen indrykket i Aftenposten</note>
+    </notes>
+    <source pages="263"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Tør jeg besvære Aftenposten
+Med ringe Raad imod Kiighosten:
+Stød Nelliker en Morgen smaae,
+Kom dem i Miød, og drik dem saa.
+Hvis du er ikke inden Aften
+Som den, der aldrig haver havt'en;
+Saa kan du sige allenfals:
+Hr. Medicus! Løgn i jer Hals!
+</body>
+</poem>
+
+<poem id="wesselsmaaversc2">
+<head>
+    <title>Til Agent Holck</title>
+    <toctitle>Til Agent Holck</toctitle>
+    <indextitle>Til Agent Holck</indextitle>
+    <firstline>Agent Holck</firstline>
+    <notes>
+          <note>Hans Holck (1726-83), foretagsom filantrop og skribent, udgav <i>Kiøbenhavns Aften-Post</i> fra 1772 (bladet, som i daglig tale kaldtes <i>Aftenposten,</i> ophørte først i 1810). ,,Agent'' var en titel som tildeltes større handelsmænd.</note>
+    </notes>
+    <source pages="264"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Agent Holck,
+De Fattiges Tolk,
+Sygekassens Patriarch!
+Jeg dig sender her en Mark,
+I det Haab, at Himmelen
+Mig giver en Ducat igien.
+</body>
+</poem>
+
+<poem id="wesselsmaaversc3">
+<head>
+    <title>Provst Hersom</title>
+    <toctitle>Provst Hersom</toctitle>
+    <indextitle>Provst Hersom</indextitle>
+    <firstline>Ser De Provst Hersom</firstline>
+    <source pages="264"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Seer De Provst Hersom,
+Saa siig ham, at dersom
+Han ei hører op at rime,
+Saa taber han sin Estime.
+</body>
+</poem>
+
+<section level="2">
+<head>
+    <toctitle>Nyaarsvers</toctitle>
+</head>
+<content>
+
+<poem id="wesselsmaaversd0">
+<head>
+    <title>Min lille vakre Madam Knudsen!</title>
+    <toctitle>Min lille vakre Madam Knudsen!</toctitle>
+    <indextitle>Min lille vakre Madam Knudsen!</indextitle>
+    <firstline>Min lille vakre Madam Knudsen!</firstline>
+    <source pages="264"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Min lille vakre Madam Knudsen!
+Ret ligerviis, min Mo'er, som Strudsen,
+Man siger uden mindste Meen,
+Fordøier Jern, og Staal, og Steen:
+Saaledes skal det mig fornøie,
+Om de Fadaisen kan fordøie,
+Som jeg har lagt paa dette Blad.
+    Falleri, Fallera, Fallerad.
+
+Nu fik min Indgang da en Ende,
+Nu vil jeg mig til Texten vende;
+Min Text i disse Ord bestaaer:
+Madam! et glædeligt nyt Aar!
+</body>
+</poem>
+
+<poem id="wesselsmaaversd2">
+<head>
+    <title>Du lille vakre Karen Bach!</title>
+    <toctitle>Du lille vakre Karen Bach!</toctitle>
+    <indextitle>Du lille vakre Karen Bach!</indextitle>
+    <firstline>Du lille vakre Karen Bach!</firstline>
+    <source pages="265"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Du lille vakre Karen Bach!
+For hvert et mødigt Sting, du stak
+Paa en mig høist nødvendig Frak,
+Som sprak,
+Tak!
+
+          P. S. Lyksaligt nyt Aar!
+</body>
+</poem>
+
+<poem id="wesselsmaaversd1">
+<head>
+    <title>Bliv, søde Madam Juel! mod al Formodning riig!</title>
+    <toctitle>Bliv, søde Madam Juel! mod al Formodning riig!</toctitle>
+    <indextitle>Bliv, søde Madam Juel! mod al Formodning riig!</indextitle>
+    <firstline>Bliv, søde Madam Juel! mod al Formodning riig!</firstline>
+    <source pages="265"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Bliv, søde Madam Juel! mod al Formodning riig!
+Og henlev dette Aar og mange lykkelig!
+Saa at vi længe maae den sieldne Lykke nyde,
+At finde Normands Siæl logeret hos en Jyde.
+</body>
+</poem>
+
+<poem id="wesselsmaaversd3">
+<head>
+    <title>Skiæbnen gav dig glatte Kinder</title>
+    <toctitle>Skiæbnen gav dig glatte Kinder</toctitle>
+    <indextitle>Skiæbnen gav dig glatte Kinder</indextitle>
+    <firstline>Skiæbnen gav dig glatte Kinder</firstline>
+    <source pages="265"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Skiæbnen gav dig glatte Kinder,
+    Skiæbnen gav dig lyse Haar;
+Lidt Forstand, den giør ei Hinder,
+    Naar Saturnus engang faaer
+    Reent afplukket dine Haar,
+Og bekruset dine Kinder.
+</body>
+</poem>
+
+<poem id="wesselsmaaversd4">
+<head>
+    <title>Du har alt, hvad kan ønskes dig</title>
+    <toctitle>Du har alt, hvad kan ønskes dig</toctitle>
+    <indextitle>Du har alt, hvad kan ønskes dig</indextitle>
+    <firstline>Du har alt, hvad kan ønskes dig</firstline>
+    <source pages="265"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Du har alt, hvad kan ønskes dig,
+Saasnart du har kun dette ene:
+Dig altid lykkelig at mene;
+Men saa, min Ven! vær lykkelig!
+</body>
+</poem>
+
+<poem id="wesselsmaaversd5">
+<head>
+    <title>Du giftes vil; gift dig med Gud!</title>
+    <toctitle>Du giftes vil; gift dig med Gud!</toctitle>
+    <indextitle>Du giftes vil; gift dig med Gud!</indextitle>
+    <firstline>Du giftes vil; gift dig med Gud!</firstline>
+    <source pages="266"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Du giftes vil; gift dig med Gud!
+Hvad Glæde lover ei en Brud?
+Men Pokker selv har skabt, min Ven!
+Et bandsat Ord; det Ord er - <i>Men</i>.
+</body>
+</poem>
+
+<poem id="wesselsmaaversd6">
+<head>
+    <title>Gid jeg maae see, du stedse bliver</title>
+    <toctitle>Gid jeg maae see, du stedse bliver</toctitle>
+    <indextitle>Gid jeg maae see, du stedse bliver</indextitle>
+    <firstline>Gid jeg maae see, du stedse bliver</firstline>
+    <source pages="266"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Gid jeg maae see, du stedse bliver,
+Hvad jeg dig kiendte for i Fior!
+At sige, troe i Drik og troe i Ord:
+Mit bedste Ønske jeg dig giver.
+</body>
+</poem>
+
+<poem id="wesselsmaaversd7">
+<head>
+    <title>Jeg ønsker dig, Monfrere!</title>
+    <toctitle>Jeg ønsker dig, Monfrere!</toctitle>
+    <indextitle>Jeg ønsker dig, Monfrere!</indextitle>
+    <firstline>Jeg ønsker dig, Monfrere!</firstline>
+    <source pages="266"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Jeg ønsker dig, Monfrere!
+I Aar saa skikkelig at være,
+Som du var skikkelig i Fior;
+Og saa god roelig Nat, min Bro'er!
+</body>
+</poem>
+
+<poem id="wesselsmaaversd8">
+<head>
+    <title>Mit Ønske er lidt nyt, dog, troer jeg, meget plat</title>
+    <toctitle>Mit Ønske er lidt nyt, dog, troer jeg, meget plat</toctitle>
+    <indextitle>Mit Ønske er lidt nyt, dog, troer jeg, meget plat</indextitle>
+    <firstline>Mit Ønske er lidt nyt, dog, troer jeg, meget plat</firstline>
+    <source pages="266"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Mit Ønske er lidt nyt, dog, troer jeg, meget plat:
+Gid du i dette Aar maae finde dig en Skat!
+Dog paa den Condition, at du giør ei som somme,
+Der hitte den iblant i trygge Næstes Lomme.
+</body>
+</poem>
+
+<poem id="wesselsmaaversd9">
+<head>
+    <title>Du yndte mangen kiøn Matrone</title>
+    <toctitle>Du yndte mangen kiøn Matrone</toctitle>
+    <indextitle>Du yndte mangen kiøn Matrone</indextitle>
+    <firstline>Du yndte mangen kiøn Matrone</firstline>
+    <source pages="267"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Du yndte mangen kiøn Matrone;
+Jeg ønsker: gid du ei faae Kone!
+Thi du maae sikkerligen troe,
+Du blev da paa Jus Talio-
+                                        nis
+                                        vis.
+</body>
+</poem>
+
+<poem id="wesselsmaaversd10">
+<head>
+    <title>Du har Skiønhed, du har Dyder</title>
+    <toctitle>Du har Skiønhed, du har Dyder</toctitle>
+    <indextitle>Du har Skiønhed, du har Dyder</indextitle>
+    <firstline>Du har Skiønhed, du har Dyder</firstline>
+    <source pages="267"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Du har Skiønhed, du har Dyder,
+Som henrykker os, dig pryder,
+Det er baade vist og sandt;
+Men naar nogen dig vil sige;
+Du er Engel meer end Pige:
+Troe, min Mo'er! det er ei sandt.
+</body>
+</poem>
+</content>
+</section>
+
+<poem id="wesselsmaaverse1">
+<head>
+    <title>Til J. R. Bull</title>
+    <toctitle>Til J. R. Bull</toctitle>
+    <indextitle>Til J. R. Bull</indextitle>
+    <firstline>Engang en ret forvoven Jyde</firstline>
+    <source pages="267"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Engang en ret forvoven Jyde
+Med Hagel paa en Thrønder vilde skyde,
+Men fik hans Pande ei i sønder,
+Nei, der skal Kugle til en Thrønder!
+</body>
+</poem>
+
+<poem id="wesselsmaaverse0">
+<head>
+    <title>I en Hof-Poets Navn</title>
+    <toctitle>I en Hof-Poets Navn</toctitle>
+    <indextitle>I en Hof-Poets Navn</indextitle>
+    <firstline>Hvo af jer Hofkrabater</firstline>
+    <source pages="268"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Hvo af jer Hofkrabater
+Er Skyld, at de Cantater,
+Som jeg for Eder malte,
+Er ei endnu betalte?
+Jeg beder, efterdags
+Da maae betales strax.
+</body>
+</poem>
+
+<poem id="wesselsmaaverse2">
+<head>
+    <title>Impromptu over en besværlig Hestepranger</title>
+    <toctitle>Impromptu over en besværlig Hestepranger</toctitle>
+    <indextitle>Impromptu over en besværlig Hestepranger</indextitle>
+    <firstline>Den Mand, som sælger Heste</firstline>
+    <source pages="268"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Den Mand, som sælger Heste,
+Han giorde vel det bedste,
+Ifald han gik sin Vei,
+Thi man ham lider ei.
+</body>
+</poem>
+
+<poem id="wesselsmaaverse3">
+<head>
+    <title>Kierlighed og Smørrebrød</title>
+    <toctitle>Kierlighed og Smørrebrød</toctitle>
+    <indextitle>Kierlighed og Smørrebrød</indextitle>
+    <firstline>At Smørrebrød er ikke Mad</firstline>
+    <source pages="268"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+At Smørrebrød er ikke Mad,
+Og Kierlighed er ikke Had,
+Det er for Tiden hvad jeg veed
+Om Smørrebrød og Kierlighed.
+</body>
+</poem>
+
+<poem id="wesselsmaaverse4">
+<head>
+    <title>Over Smagen</title>
+    <toctitle>Over Smagen</toctitle>
+    <indextitle>Over Smagen</indextitle>
+    <firstline>Malheur au maitre fou, qui rime bien et pense</firstline>
+    <source pages="269"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<nonum>Malheur au maitre fou, qui rime bien et pense;</nonum>
+<nonum>Il le perdra un jour, ce bon-sens, qu'il encense.</nonum>
+                                                <nonum>(Voltaire)</nonum>
+
+<nonum><center>Paa Dansk:</center></nonum>
+Den som i sine Vers ned til Fornuften sank,
+I disse Tider fik saamænd kun Stank for Dank.
+</body>
+</poem>
+
+<poem id="wesselsmaaverse5">
+<head>
+    <title>Da Chloe var i Kirke</title>
+    <toctitle>Da Chloe var i Kirke</toctitle>
+    <indextitle>Da Chloe var i Kirke</indextitle>
+    <firstline>Indgiv din Tiener, store Gud</firstline>
+    <source pages="269"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Indgiv din Tiener, store Gud,
+At han sin Præken ei for længe trækker ud!
+Din Tiener sparer du en Hob af sin Umage,
+Og vi des før igien vor Pige faae tilbage.
+</body>
+</poem>
+
+<poem id="wesselsmaaverse6">
+<head>
+    <title>Lyksalighed</title>
+    <toctitle>Lyksalighed</toctitle>
+    <indextitle>Lyksalighed</indextitle>
+    <firstline>Lad Andre tænke, sige</firstline>
+    <source pages="269"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Lad Andre tænke, sige,
+Guld giør os lykkelige;
+Jeg fandt mit Himmerige,
+Min Pige! i dit Skiød.
+</body>
+</poem>
+
+<poem id="wesselsmaaverse7">
+<head>
+    <title>Til en Mand, hvis Barn faldt ned fra anden Etage uden at tage Skade</title>
+    <toctitle>Til en Mand, hvis Barn faldt ned fra anden Etage uden at tage Skade</toctitle>
+    <indextitle>Til en Mand, hvis Barn faldt ned fra anden Etage uden at tage Skade</indextitle>
+    <firstline>Din Siæl af ingen Kummer veed</firstline>
+    <source pages="269"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Din Siæl af ingen Kummer veed,
+Du ei af Næringssorg antastes,
+Og Børn du avler, som kan kastes
+En femten, sexten Alen ned.
+</body>
+</poem>
+
+<poem id="wesselsmaaverse8">
+<head>
+    <title>Impromptu ved en Offring</title>
+    <toctitle>Impromptu ved en Offring</toctitle>
+    <indextitle>Impromptu ved en Offring</indextitle>
+    <firstline>Som udi andre Ting, saa og udi min Gave</firstline>
+    <source pages="270"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Som udi andre Ting, saa og udi min Gave
+Fra de gemene Folk jeg mig adskille vil;
+De offre lidet af det meget, som de have,
+Jeg offrer dig alt mit og - lidt af andres til.
+</body>
+</poem>
+
+<poem id="wesselsmaaverse9">
+<head>
+    <title>Caspar Wessel</title>
+    <toctitle>Caspar Wessel</toctitle>
+    <indextitle>Caspar Wessel</indextitle>
+    <firstline>Han tegner Landkort og læser Loven</firstline>
+    <notes>
+          <note>Caspar Wessel er digterens bror og han huskes i matematikken som den første der afbildede de komplekse tal i en plan (opdaget i 1797 og trykt i 1799).</note>
+    </notes>
+    <source pages="270"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Han tegner Landkort og læser Loven,
+Han er saa flittig som jeg er doven.
+</body>
+</poem>
+
+<poem id="wesselsmaaverse10">
+<head>
+    <title>Parodi</title>
+    <toctitle>Parodi</toctitle>
+    <indextitle>Parodi</indextitle>
+    <firstline>Pigerne i Magle-Ølse</firstline>
+    <source pages="270"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<nonum><center><small>Det parodierede Vers:</small></center></nonum>
+,,Pigerne i Magle-Ølse
+Forstaar at lave herlig Pølse;
+Man sætte Ølse for, man sætte Ølse bag,
+Pølsen beholder dog sin Smag.''
+
+---
+
+For Deres Vers har jeg stor Reverence,
+Høivelbaarne Herr Raad-Conference!
+Man sætte Raaden for, man sætte Raaden bag,
+Conferenceraaden beholder dog sin Smag.
+</body>
+</poem>
+
+<poem id="wesselsmaaverse11">
+<head>
+    <title>Til Viintapper Lunds Svend</title>
+    <toctitle>Til Viintapper Lunds Svend</toctitle>
+    <indextitle>Til Viintapper Lunds Svend</indextitle>
+    <firstline>Hør du søde rare Fyr</firstline>
+    <notes>
+          <note>Jvf. næste digt i samlingen.</note>
+    </notes>
+    <source pages="271"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Hør du søde rare Fyr,
+Du, som altid er ved Muffen!
+Laan mig tvende Mark af Skuffen!
+Vinen den er her saa dyr,
+Lund tre Mark for Flasken ta'er,
+Og jeg kun den ene har.
+</body>
+</poem>
+
+<poem id="wessel2002092215">
+<head>
+    <title>Svar i Svendens Navn</title>
+    <toctitle>Svar i Svendens Navn</toctitle>
+    <indextitle>Svar i Svendens Navn</indextitle>
+    <firstline>Søde rare Wessel, Faer</firstline>
+    <notes>
+          <note>Svarer forrige digt i samlingen.</note>
+    </notes>
+    <source pages="271"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Søde rare Wessel, Faer,
+Du som aldrig er ved Muffen,
+Hvis jeg laante dig af Skuffen,
+Var jeg sandelig en Nar.
+Drik som du har Penge til,
+Lund ei creditere vil.
+</body>
+</poem>
+
+<poem id="wesselsmaaverse12">
+<head>
+    <title>Kiere Moder huld</title>
+    <toctitle>Kiere Moder huld</toctitle>
+    <indextitle>Kiere Moder huld</indextitle>
+    <firstline>Kiere Moder huld</firstline>
+    <source pages="271"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Kiere Moder huld,
+Giør i Guld
+Al jer Uld!
+Thi jer Pode, Johan Herman, mærk:
+Han er ei i Penge stærk.
+</body>
+</poem>
+
+<section level="2">
+<head>
+    <toctitle>Gravskrifter</toctitle>
+</head>
+<content>
+
+<poem id="wesselsmaaversf2">
+<head>
+    <title>Herunder hviler Krigsraad Neergaard</title>
+    <toctitle>Herunder hviler Krigsraad Neergaard</toctitle>
+    <indextitle>Herunder hviler Krigsraad Neergaard</indextitle>
+    <firstline>Herunder hviler Krigsraad Neergaard</firstline>
+    <source pages="272"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <keywords>gravskrift</keywords>
+</head>
+<body>
+Herunder hviler Krigsraad Neergaard, den Store,
+        Store, Store,
+Kun Himlen veed, hvad godt han giorde,
+        Giorde, giorde.
+At tale om hans kiere Frue,
+Da var hun venlig som en Due;
+At tale om hans tvende Sønner
+Det ei Umagen lønner;
+Men naar jeg tænker paa hans Datter,
+Kan jeg ei bare mig for Latter.
+</body>
+</poem>
+
+<poem id="wesselsmaaversf3">
+<head>
+    <title>Jeg, salig Ove Gierløv Meyer</title>
+    <toctitle>Jeg, salig Ove Gierløv Meyer</toctitle>
+    <indextitle>Jeg, salig Ove Gierløv Meyer</indextitle>
+    <firstline>Jeg, salig Ove Gierløv Meyer</firstline>
+    <source pages="272"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <keywords>gravskrift</keywords>
+</head>
+<body>
+Jeg, salig Ove Gierløv Meyer,
+Begik Sottiser, som jeg pleier,
+Men denne Gang begik jeg fem,
+Den sidste var dog værst blandt dem;
+Thi gik jeg hiem, skar ud min Strube,
+Og sidder her i Helveds Grube,
+Hvor nu den lede Satan eier
+Mig, salig Ove Gierløv Meyer.
+</body>
+</poem>
+
+<poem id="wesselsmaaversf4">
+<head>
+    <title>Her ligger Lieut'nant Stabel</title>
+    <toctitle>Her ligger Lieut'nant Stabel</toctitle>
+    <indextitle>Her ligger Lieut'nant Stabel</indextitle>
+    <firstline>Her ligger Lieut'nant Stabel</firstline>
+    <source pages="273"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <keywords>gravskrift</keywords>
+</head>
+<body>
+Her ligger Lieut'nant Stabel,
+O vee, heel miserabel
+I Veiret med sin Snabel,
+Og er ei nu capabel
+At bruge meer sin Sabel,
+Som var ham mest aimabel
+Næst Brændeviin og Fabel.
+</body>
+</poem>
+
+<poem id="wesselsmaaversf5">
+<head>
+    <title>Over Brygger Walt</title>
+    <toctitle>Over Brygger Walt</toctitle>
+    <indextitle>Over Brygger Walt</indextitle>
+    <firstline>Her ligger Walt</firstline>
+    <source pages="273"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <keywords>gravskrift</keywords>
+</head>
+<body>
+Her ligger <i>Walt,</i>
+Han giorde Malt,
+Og det var Alt.
+</body>
+</poem>
+
+<poem id="wesselsmaaversf0">
+<head>
+    <title>Under Londemanns Portrait</title>
+    <toctitle>Under Londemanns Portrait</toctitle>
+    <indextitle>Under Londemanns Portrait</indextitle>
+    <firstline>Man sukker, for han er ei meer</firstline>
+    <notes>
+          <note>Skrevet 1784 om den store skuespiller Geert Londemann (bl.a. Holberg-roller), død 1773.</note>
+    </notes>
+    <source pages="273"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <keywords>gravskrift</keywords>
+</head>
+<body>
+Man sukker, for han er ei meer,
+Man husker hvad han var, og leer.
+</body>
+</poem>
+
+</content>
+</section> <!-- Gravskrifter -->
+
+<poem id="wesselsmaaversf1">
+<head>
+    <title>Under Digterens Portrait</title>
+    <subtitle>skrevet af ham selv</subtitle>
+    <toctitle>Under Digterens Portrait</toctitle>
+    <indextitle>Under Digterens Portrait</indextitle>
+    <firstline>Han syntes fød til Bagateller</firstline>
+    <source pages="273"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+    <keywords>gravskrift</keywords>
+</head>
+<body>
+Han syntes fød til Bagateller,
+Og noget stort han blev ei heller.
+</body>
+</poem>
+
+<poem id="wessel2002092216">
+<head>
+    <title>Digterens Gravskrift over sig selv</title>
+    <toctitle>Digterens Gravskrift over sig selv</toctitle>
+    <indextitle>Digterens Gravskrift over sig selv</indextitle>
+    <firstline>Han aad og drak, var aldrig glad</firstline>
+    <source pages="274"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+Han aad og drak, var aldrig glad,
+Hans Støvlehæle gik han skieve;
+Han ingen Ting bestille gad,
+Tilsidst han gad ei heller leve.
+</body>
+</poem>
+
+</content>
+</section> <!-- Smaavers -->
+
+<section>
+<head>
+    <title>Tillæg</title>    
+</head>
+<content>
+
+</content>
+</section> <!-- Tillæg -->
+
 </workbody>
 </kalliopework>
