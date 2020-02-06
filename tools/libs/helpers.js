@@ -1,10 +1,11 @@
 const fs = require('fs');
 const entities = require('entities');
-const libxml = require('libxmljs');
+//const libxml = require('libxmljs');
+const fastXmlParser = require('fast-xml-parser');
 const bible = require('./bible-abbr.js');
 const async = require('async');
 const path = require('path');
-const sharp = require('sharp');
+const jimp = require('jimp');
 const CommonData = require('../../common/commondata.js');
 
 const safeMkdir = dirname => {
@@ -59,12 +60,12 @@ const writeText = (filename, text) => {
 };
 
 const loadXMLDoc = filename => {
-  const data = loadFile(filename);
+  const data = loadText(filename);
   if (data == null) {
     return null;
   }
   try {
-    return libxml.parseXmlString(data);
+    return fastXmlParser.parse(data);
   } catch (err) {
     console.log(`Problem with ${filename}`);
     throw err;
@@ -327,14 +328,16 @@ const htmlToXml = (
 };
 
 let resizeImageQueue = async.queue((task, callback) => {
-  sharp(task.inputfile)
-    .resize(task.maxWidth, 10000)
-    .max()
-    .withoutEnlargement()
-    .toFile(task.outputfile, function(err) {
-      if (err != null) {
-        console.log(err);
-      }
+  jimp
+    .read(task.inputfile)
+    .then(image => {
+      image
+        .resize(task.maxWidth, jimp.AUTO)
+        // TODO: Don't scale up
+        .write(task.outputfile);
+    })
+    .catch(err => {
+      console.log(err);
       console.log(task.outputfile);
       callback();
     });

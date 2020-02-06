@@ -1,5 +1,5 @@
 const deasync = require('deasync');
-const sharp = require('sharp');
+const jimp = require('jimp');
 const { fileExists } = require('../libs/helpers.js');
 const {
   isFileModified,
@@ -23,13 +23,11 @@ const imageSizeAsync = (filename, callback) => {
   if (cached != null && !isFileModified(filename)) {
     callback(null, cached);
   } else {
-    sharp(filename)
-      .metadata()
-      .then(metadata => {
-        const size = { width: metadata.width, height: metadata.height };
-        collected_imagesizes.set(filename, size);
-        callback(null, size);
-      });
+    jimp.read(filename).then(image => {
+      const size = { width: image.bitmap.width, height: image.bitmap.height };
+      collected_imagesizes.set(filename, size);
+      callback(null, size);
+    });
   }
 };
 

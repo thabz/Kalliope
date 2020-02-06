@@ -1,7 +1,6 @@
 const fs = require('fs');
 const { execSync } = require('child_process');
 const path = require('path');
-const libxml = require('libxmljs');
 const mkdirp = require('mkdirp');
 const Paths = require('../common/paths.js');
 const CommonData = require('../common/commondata.js');
@@ -157,14 +156,9 @@ const build_poet_workids = () => {
     }
     if (isFileModified(infoFilename)) {
       const doc = loadXMLDoc(infoFilename);
-      const person = doc.get('//person');
-      const workIds = person.get('works');
-      let items = workIds
-        ? workIds
-            .text()
-            .split(',')
-            .filter(x => x.length > 0)
-        : [];
+      const person = doc.person;
+      const workIds = person.works || '';
+      let items = workIds ? workIds.split(',').filter(x => x.length > 0) : [];
       collected_workids.set(poetId, items);
       found_changes = true;
     }
