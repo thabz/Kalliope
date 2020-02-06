@@ -157,8 +157,8 @@ const build_poet_workids = () => {
     if (isFileModified(infoFilename)) {
       const doc = loadXMLDoc(infoFilename);
       const person = doc.person;
-      const workIds = person.works || '';
-      let items = workIds ? workIds.split(',').filter(x => x.length > 0) : [];
+      const workIds = '' + (person.works || '');
+      let items = workIds.split(',').filter(x => x.length > 0);
       collected_workids.set(poetId, items);
       found_changes = true;
     }
@@ -611,7 +611,9 @@ const works_first_pass = collected => {
       }
 
       let doc = loadXMLDoc(workFilename);
-      const work = doc.get('//kalliopework');
+      const work = doc.kalliopework;
+      console.log(work);
+      return;
       const attrId = work.attr('id').value();
       if (attrId !== workId) {
         throw new Error(`${workFilename} has wrong id in <kalliopework>`);
@@ -967,10 +969,10 @@ const build_image_thumbnails = () => {
 
 safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);
-/*
 const { works, texts } = b('works_first_pass', works_first_pass, collected);
 collected.works = works;
 collected.texts = texts;
+/*
 b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 collected.poets = b('build_poets_json', build_poets_json, collected);
 b('mark_ref_destinations_dirty', mark_ref_destinations_dirty, collected);

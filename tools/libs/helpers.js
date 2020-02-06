@@ -64,8 +64,11 @@ const loadXMLDoc = filename => {
   if (data == null) {
     return null;
   }
+  const options = {
+    stopNodes: ['source'],
+  };
   try {
-    return fastXmlParser.parse(data);
+    return fastXmlParser.parse(data, options);
   } catch (err) {
     console.log(`Problem with ${filename}`);
     throw err;
