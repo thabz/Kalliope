@@ -294,7 +294,6 @@ File.readlines(ARGV[0]).each do |line|
   if (line =~ /\*/ and not line =~ /^NOTE:/ and not line =~ /<note>/ and not line =~ /{/)
       STDERR.puts "ADVARSEL: Linjen »#{line_before.rstrip}« har ulige antal *"
   end
-  # Håndter {..} TODO: Fang manglende }
   m = /{(.*?):(.*)}/.match(line)
   if (!m.nil?)
       l = m[2]
@@ -321,6 +320,12 @@ File.readlines(ARGV[0]).each do |line|
       end
       l = "<nonum>#{l}</nonum>"
       line = l
+  end
+  if line =~ /{[^:]*}\s*/
+      STDERR.puts "ADVARSEL: Linjen »#{line}« mangler kolon og r,s,i,..."
+  end
+  if line =~ /{[^}]+\s*$/
+      STDERR.puts "ADVARSEL: Linjen »#{line}« mangler afsluttende }"
   end
   if @state == 'WORKHEAD'  
     if line =~ /^KILDE:/
@@ -379,6 +384,9 @@ File.readlines(ARGV[0]).each do |line|
   if @state == 'INHEAD'
     if line.start_with?("T:")
       @title = line[2..-1].strip
+      if @title =~ /<num>.*?<\/num>$/ 
+        abort "FEJL: Digtet »#{@title}« mangler titel i TITEL:"
+      end
     elsif line.start_with?("F:")
       unless @firstline.nil?
           abort "FEJL: Digtet »#{@title}« har mere end én F:"
