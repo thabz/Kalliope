@@ -973,8 +973,10 @@ const build_image_thumbnails = () => {
 
 safeMkdir(`static/api`);
 collected.workids = b('build_poet_workids', build_poet_workids);
-// Build collected.works and collected.texts
-Object.assign(collected, b('works_first_pass', works_first_pass, collected));
+/*
+const { works, texts } = b('works_first_pass', works_first_pass, collected);
+collected.works = works;
+collected.texts = texts;
 b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 collected.poets = b('build_poets_json', build_poets_json, collected);
 b('mark_ref_destinations_dirty', mark_ref_destinations_dirty, collected);
@@ -1006,7 +1008,7 @@ b('build_sitemap_xml', build_sitemap_xml, collected);
 b('build_anniversaries_ical', build_anniversaries_ical, collected);
 b('build_image_thumbnails', build_image_thumbnails);
 b('update_elasticsearch', update_elasticsearch, collected);
-
+*/
 refreshFilesModifiedCache();
 flushImageSizeCache();
 print_benchmarking_results();
