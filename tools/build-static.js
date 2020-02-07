@@ -612,12 +612,11 @@ const works_first_pass = collected => {
 
       let doc = loadXMLDoc(workFilename);
       const work = doc.kalliopework;
-      console.log(work);
-      return;
-      const attrId = work.attr('id').value();
+      const attrId = work['@_id'];
       if (attrId !== workId) {
         throw new Error(`${workFilename} has wrong id in <kalliopework>`);
       }
+      return;
       const parentId = safeGetAttr(work, 'parent');
       const head = work.get('workhead');
       const title = replaceDashes(safeGetText(head, 'title'));
