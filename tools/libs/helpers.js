@@ -65,6 +65,8 @@ const loadXMLDoc = filename => {
     return null;
   }
   const options = {
+    arrayMode: true,
+    ignoreAttributes: false,
     stopNodes: ['source', 'note', 'picture', 'subtitle', 'body'],
   };
   try {

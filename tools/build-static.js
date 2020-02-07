@@ -611,7 +611,9 @@ const works_first_pass = collected => {
       }
 
       let doc = loadXMLDoc(workFilename);
-      const work = doc.kalliopework;
+      const work = doc.kalliopework[0];
+      console.log(work.workbody);
+      return;
       const attrId = work['@_id'];
       if (attrId !== workId) {
         throw new Error(`${workFilename} has wrong id in <kalliopework>`);
