@@ -65,7 +65,7 @@ const loadXMLDoc = filename => {
     return null;
   }
   const options = {
-    stopNodes: ['source'],
+    stopNodes: ['source', 'note', 'picture', 'subtitle', 'body'],
   };
   try {
     return fastXmlParser.parse(data, options);
