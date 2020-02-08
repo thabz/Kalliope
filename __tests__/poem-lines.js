@@ -1,10 +1,12 @@
-import {
-  loadXMLDoc,
-  safeGetText,
-  loadText,
-  fileExists,
-} from '../tools/libs/helpers.js';
 import fs from 'fs';
+import { loadXMLDoc, loadText, fileExists } from '../tools/libs/helpers.js';
+import {
+  safeGetText,
+  safeGetAttr,
+  getChildNode,
+  findChildNodes,
+  tagName,
+} from '../tools/build-static/xml.js';
 
 function flatten(arr) {
   return [].concat(...arr);
@@ -29,7 +31,7 @@ const regexps = [
   { regexp: /\s\?\s*$/m, ignorelangs: ['fr'] }, // luft foran afsluttende spørgsmål (tilladt på fransk)
   { regexp: /\s;\s*$/m, ignorelangs: ['fr'] }, // luft foran afsluttende semikolon (tilladt på fransk)
   //{ regexp: /\s:\s*$/m, ignorelangs: ['fr'] }, // luft foran afsluttende kolon (tilladt på fransk og i versgentagelser :)
-  {regexp: /lll/, whitelist: [/Allliebe/]},
+  { regexp: /lll/, whitelist: [/Allliebe/] },
   /,;/,
   /,\./,
   {
@@ -64,12 +66,12 @@ describe('Check workfiles', () => {
       throw new Error(`Missing info.xml in fdirs/${poetId}.`);
     }
     const doc = loadXMLDoc(infoFilename);
-    const person = doc.get('//person');
+    const person = getChildNode(doc, 'person');
     if (person == null) {
       throw new Error(`${infoFilename} is malformed.`);
     }
-    const lang = person[0].attr('lang');
-    const workIds = person[0].get('works');
+    const lang = safeGetAttr(person, 'lang');
+    const workIds = safeGetText(person, 'works');
     let items = workIds
       ? workIds
           .toString()
@@ -82,7 +84,7 @@ describe('Check workfiles', () => {
       : [];
     return items.map(w => {
       const filename = `${poetId}/${w}.xml`;
-      filenameLangs[filename] = lang.value();
+      filenameLangs[filename] = lang;
       return filename;
     });
   });

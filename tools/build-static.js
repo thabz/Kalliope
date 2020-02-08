@@ -540,12 +540,14 @@ const handle_work = work => {
 
   // Create function to resolve prev/next links in texts
   const resolve_prev_next = (function() {
-    const items = workbody.find('//poem|//prose|//section[@id]').map(part => {
-      const textId = part.attr('id').value();
-      const head = part.get('head');
-      const title = head.get('title') ? head.get('title').text() : null;
-      return { id: textId, title: title };
-    });
+    const items = findChildNodes(workbody, 'poem,prose,section[@id]').map(
+      part => {
+        const textId = part.attr('id').value();
+        const head = part.get('head');
+        const title = head.get('title') ? head.get('title').text() : null;
+        return { id: textId, title: title };
+      }
+    );
     return textId => {
       const index = items.findIndex(x => {
         return x.id === textId;
@@ -624,8 +626,7 @@ const works_first_pass = collected => {
         year: year,
         status,
         type,
-        has_content:
-          findChildNodes(work, '//poem|//prose|//subwork').length > 0,
+        has_content: findChildNodes(work, 'poem,prose,subwork').length > 0,
         published: dates.published || year,
       });
 
@@ -633,8 +634,12 @@ const works_first_pass = collected => {
         parentIdsToFillIn.set(fullWorkId, `${poetId}/${parentId}`);
       }
 
-      findChildNodes(work, 'poem,prose,section[@id]').forEach(part => {
-        const textId = safeGetAttr(part, id);
+      console.log(findChildNodes(work, 'poem,prose,section').nodeName);
+      findChildNodes(work, 'poem,prose,section').forEach(part => {
+        const textId = safeGetAttr(part, 'id');
+        if (part.nodeName === 'section' && textId == null) {
+          return;
+        }
         const head = getChildNode(part, 'head');
         const title = extractTitle(head, 'title');
         const firstline = extractTitle(head, 'firstline');

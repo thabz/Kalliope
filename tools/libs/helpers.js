@@ -59,6 +59,10 @@ const writeText = (filename, text) => {
   fs.writeFileSync(filename, text);
 };
 
+const parseXMLFragment = xmlString => {
+  return JSDOM.fragment(xmlString, { contentType: 'text/xml' });
+};
+
 const loadXMLDoc = filename => {
   const data = loadText(filename);
   if (data == null) {
@@ -66,7 +70,7 @@ const loadXMLDoc = filename => {
   }
 
   try {
-    return JSDOM.fragment(data, { contentType: 'text/xml' });
+    return parseXMLFragment(data);
   } catch (err) {
     console.log(`Problem with ${filename}`);
     throw err;
@@ -407,6 +411,7 @@ module.exports = {
   writeJSON,
   writeText,
   loadXMLDoc,
+  parseXMLFragment,
   htmlToXml,
   replaceDashes,
   buildThumbnails,

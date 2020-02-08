@@ -7,9 +7,13 @@ const getChildNode = (element, childTag) => {
   }
 };
 
-const getChildNodes = (element, query) => {
-  // TODO: Hvis kun eet element findes, skal dette returneres i et array
-  return element.querySelector(query);
+const findChildNodes = (element, query) => {
+  if (element) {
+    // TODO: Hvis kun eet element findes, skal dette returneres i et array
+    return element.querySelector(query);
+  } else {
+    return null;
+  }
 };
 
 const safeGetText = (element, childTag) => {
@@ -29,9 +33,14 @@ const safeGetAttr = (element, attrName) => {
   }
 };
 
+const tagName = element => {
+  return element.nodeName.toLowerCase();
+};
+
 module.exports = {
   safeGetText,
   safeGetAttr,
   getChildNode,
-  getChildNodes,
+  findChildNodes,
+  tagName,
 };
