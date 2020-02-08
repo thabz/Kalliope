@@ -3,6 +3,7 @@ import {
   safeGetAttr,
   getElementByTagName,
   getElementsByTagName,
+  getElementsByTagNames,
   tagName,
   safeGetOuterXML,
   loadXMLDoc,
@@ -44,7 +45,19 @@ describe('XML parser', () => {
     const work = getElementByTagName(doc, 'work');
     const body = getElementByTagName(doc, 'body');
     expect(body).not.toBeNull();
-    const children = getElementsByTagName(body, 'c');
+    const children = getElementsByTagName(body, 'poem');
+    expect(children).not.toBeNull();
+    expect(children.length).toEqual(2);
+    children.forEach(c => {
+      expect(tagName(c)).toEqual('poem');
+    });
+  });
+
+  it('understands multiple children of different type', () => {
+    const work = getElementByTagName(doc, 'work');
+    const body = getElementByTagName(doc, 'body');
+    expect(body).not.toBeNull();
+    const children = getElementsByTagNames(body, ['poem', 'prose']);
     expect(children).not.toBeNull();
     expect(children.length).toEqual(3);
   });
