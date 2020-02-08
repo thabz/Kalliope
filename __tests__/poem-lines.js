@@ -1,10 +1,11 @@
 import fs from 'fs';
-import { loadXMLDoc, loadText, fileExists } from '../tools/libs/helpers.js';
+import { loadText, fileExists } from '../tools/libs/helpers.js';
 import {
+  loadXMLDoc,
   safeGetText,
   safeGetAttr,
-  getChildNode,
-  findChildNodes,
+  getElementByTagName,
+  getElementsByTagName,
   tagName,
 } from '../tools/build-static/xml.js';
 
@@ -66,7 +67,7 @@ describe('Check workfiles', () => {
       throw new Error(`Missing info.xml in fdirs/${poetId}.`);
     }
     const doc = loadXMLDoc(infoFilename);
-    const person = getChildNode(doc, 'person');
+    const person = getElementByTagName(doc, 'person');
     if (person == null) {
       throw new Error(`${infoFilename} is malformed.`);
     }

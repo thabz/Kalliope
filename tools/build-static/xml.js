@@ -1,6 +1,5 @@
-import fs from 'fs';
-import { DOMParser, XMLSerializer } from 'xmldom';
-import { loadText } from '../libs/helpers.js';
+const { DOMParser, XMLSerializer } = require('xmldom');
+const { loadText } = require('../libs/helpers.js');
 
 const parseXMLFragment = xmlString => {
   return new DOMParser().parseFromString(xmlString, 'text/xml');
@@ -20,7 +19,34 @@ const loadXMLDoc = filename => {
   }
 };
 
-const getChildNode = (element, childTag) => {
+const getElementsByTagName = (element, tagName) => {
+  const result = [];
+  if (element) {
+    const list = element.getElementsByTagName(tagName);
+    for (let i = 0; i < list.length; i++) {
+      result.push(list[i]);
+    }
+    return result;
+  } else {
+    return null;
+  }
+};
+
+// Ex. getElementsByTagNames(work, ['poem','section'])
+const getElementsByTagNames = (element, tagNames) => {
+  if (element) {
+    const arrays = tagNames.map(tagName => {
+      return getElementsByTagName(element, tagName);
+    });
+    // Flatten
+    const merged = [].concat.apply([], arrays);
+    return merged;
+  } else {
+    return null;
+  }
+};
+
+const getElementByTagName = (element, childTag) => {
   if (element) {
     const items = element.getElementsByTagName(childTag);
     if (items.length > 0) {
@@ -33,17 +59,8 @@ const getChildNode = (element, childTag) => {
   }
 };
 
-const findChildNodes = (element, query) => {
-  if (element) {
-    // TODO: Hvis kun eet element findes, skal dette returneres i et array
-    return element.getElementsByTagName(query);
-  } else {
-    return null;
-  }
-};
-
 const safeGetText = (element, childTag) => {
-  const childNode = getChildNode(element, childTag);
+  const childNode = getElementByTagName(element, childTag);
   if (childNode) {
     return childNode.textContent;
   } else {
@@ -52,7 +69,7 @@ const safeGetText = (element, childTag) => {
 };
 
 const safeGetOuterXML = (element, childTag) => {
-  const childNode = getChildNode(element, childTag);
+  const childNode = getElementByTagName(element, childTag);
   if (childNode) {
     return new XMLSerializer().serializeToString(childNode);
   } else {
@@ -76,8 +93,9 @@ module.exports = {
   loadXMLDoc,
   safeGetText,
   safeGetAttr,
-  getChildNode,
-  findChildNodes,
+  getElementByTagName,
+  getElementsByTagName,
+  getElementsByTagNames,
   tagName,
   safeGetOuterXML,
 };

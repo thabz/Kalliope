@@ -8,8 +8,8 @@ const {
 const {
   safeGetText,
   safeGetAttr,
-  getChildNode,
-  getChildNodes,
+  getElementByTagName,
+  getElementsByTagName,
 } = require('./xml.js');
 const { poetName } = require('./formatting.js');
 const { imageSizeSync } = require('./image.js');
@@ -17,7 +17,7 @@ const { imageSizeSync } = require('./image.js');
 // Returns raw {title: string, prefix?: string}
 // Both can be converted to xml using htmlToXml(...)
 const extractTitle = (head, type) => {
-  const element = getChildNode(head, type);
+  const element = getElementByTagName(head, type);
   if (element == null) {
     return null;
   }
@@ -44,9 +44,9 @@ const extractTitle = (head, type) => {
 
 const extractSubtitles = (head, tag = 'subtitle') => {
   let subtitles = null;
-  const subtitle = getChildNode(head, tag);
-  if (subtitle && getChildNodes(subtitle, 'line').length > 0) {
-    subtitles = getChildNodes(subtitle, 'line').map(s => {
+  const subtitle = getElementByTagName(head, tag);
+  if (subtitle && getElementsByTagName(subtitle, 'line').length > 0) {
+    subtitles = getElementsByTagName(subtitle, 'line').map(s => {
       return htmlToXml(safeGetText(s), collected, true);
     });
   } else if (subtitle) {
@@ -163,7 +163,7 @@ const get_pictures = (head, srcPrefix, xmlFilename, collected) => {
 };
 
 const extractDates = head => {
-  const dates = getChildNode(head, 'dates');
+  const dates = getElementByTagName(head, 'dates');
   const result = {};
   if (dates != null) {
     result.published = safeGetText(dates, 'published');

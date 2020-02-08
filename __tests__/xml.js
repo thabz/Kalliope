@@ -1,8 +1,8 @@
 import {
   safeGetText,
   safeGetAttr,
-  getChildNode,
-  findChildNodes,
+  getElementByTagName,
+  getElementsByTagName,
   tagName,
   safeGetOuterXML,
   loadXMLDoc,
@@ -15,17 +15,17 @@ describe('XML parser', () => {
   });
 
   it('get direct child', () => {
-    const work = getChildNode(doc, 'subtitle');
+    const work = getElementByTagName(doc, 'subtitle');
     expect(work).not.toBeNull();
   });
 
   it('understands tag-names', () => {
-    const name = tagName(getChildNode(doc, 'title'));
+    const name = tagName(getElementByTagName(doc, 'title'));
     expect(name).toEqual('title');
   });
 
   it('get attribute value', () => {
-    const work = getChildNode(doc, 'work');
+    const work = getElementByTagName(doc, 'work');
     const author = safeGetAttr(work, 'author');
     expect(author).toEqual('baggesen');
   });
@@ -41,10 +41,10 @@ describe('XML parser', () => {
   });
 
   it('understands multiple children', () => {
-    const work = getChildNode(doc, 'work');
-    const body = getChildNode(doc, 'body');
+    const work = getElementByTagName(doc, 'work');
+    const body = getElementByTagName(doc, 'body');
     expect(body).not.toBeNull();
-    const children = findChildNodes(body, 'c');
+    const children = getElementsByTagName(body, 'c');
     expect(children).not.toBeNull();
     expect(children.length).toEqual(3);
   });

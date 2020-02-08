@@ -16,7 +16,6 @@ const {
   safeMkdir,
   writeJSON,
   writeText,
-  loadXMLDoc,
   htmlToXml,
   replaceDashes,
   imageSizeSync,
@@ -32,10 +31,12 @@ const {
   build_dict_second_pass,
 } = require('./build-static/dict.js');
 const {
+  loadXMLDoc,
   safeGetText,
   safeGetAttr,
-  getChildNode,
-  findChildNodes,
+  getElementByTagName,
+  getElementsByTagNames,
+  tagName,
 } = require('./build-static/xml.js');
 const { build_sitemap_xml } = require('./build-static/sitemap.js');
 const { build_keywords } = require('./build-static/keywords.js');
@@ -571,8 +572,8 @@ const handle_work = work => {
 // Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
 const works_first_pass = collected => {
-  let texts = new Map(loadCachedJSON('collected.texts') || []);
-  let works = new Map(loadCachedJSON('collected.works') || []);
+  const texts = new Map(loadCachedJSON('collected.texts') || []);
+  const works = new Map(loadCachedJSON('collected.works') || []);
 
   let found_changes = false;
   const force_reload = texts.size === 0 || works.size === 0;
@@ -592,14 +593,14 @@ const works_first_pass = collected => {
       }
 
       let doc = loadXMLDoc(workFilename);
-      const work = getChildNode(doc, 'kalliopework');
+      const work = getElementByTagName(doc, 'kalliopework');
       // touch fdirs/zahle/1843.xml; npm run build-static
       if (safeGetAttr(work, 'id') !== workId) {
         throw new Error(`${workFilename} has wrong id in <kalliopework>`);
       }
 
       const parentId = safeGetAttr(work, 'parent');
-      const head = getChildNode(work, 'workhead');
+      const head = getElementByTagName(work, 'workhead');
       const title = replaceDashes(safeGetText(head, 'title'));
       const toctitle = extractTitle(head, 'toctitle') || { title };
       const linktitle = replaceDashes(safeGetText(head, 'linktitle')) || title;
@@ -615,6 +616,11 @@ const works_first_pass = collected => {
           `fdirs/${poetId}/${workId}.xml has wrong author-attribute in <kalliopework>`
         );
       }
+      const workTexts = getElementsByTagNames(work, [
+        'poem',
+        'prose',
+        'subwork',
+      ]);
       const fullWorkId = `${poetId}/${workId}`;
       works.set(fullWorkId, {
         id: workId,
@@ -626,7 +632,7 @@ const works_first_pass = collected => {
         year: year,
         status,
         type,
-        has_content: findChildNodes(work, 'poem,prose,subwork').length > 0,
+        has_content: workTexts.length > 0,
         published: dates.published || year,
       });
 
@@ -634,14 +640,12 @@ const works_first_pass = collected => {
         parentIdsToFillIn.set(fullWorkId, `${poetId}/${parentId}`);
       }
 
-      console.log(findChildNodes(work, 'poem,prose,section').nodeName);
-      findChildNodes(work, 'poem,prose,section').forEach(part => {
+      workTexts.forEach(part => {
         const textId = safeGetAttr(part, 'id');
-        if (part.nodeName === 'section' && textId == null) {
+        if (tagName(part) === 'section' && textId == null) {
           return;
         }
-        const head = getChildNode(part, 'head');
-        const title = extractTitle(head, 'title');
+        const head = getElementByTagName(part, 'title');
         const firstline = extractTitle(head, 'firstline');
         const linktitle = extractTitle(head, 'linktitle');
         const indextitle = extractTitle(head, 'indextitle');
@@ -660,7 +664,7 @@ const works_first_pass = collected => {
           firstline: replaceDashes(firstline == null ? null : firstline.title),
           indexTitle: replaceDashes(indexTitle.title),
           linkTitle: replaceDashes(linkTitle.title),
-          type: part.name(),
+          type: tagName(part),
           poetId: poetId,
           workId: workId,
         });
