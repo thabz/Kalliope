@@ -59,7 +59,6 @@ const getElementByTagName = (element, childTag) => {
   }
 };
 
-// TODO: Implement correctly
 const getChildrenByTagName = (element, childTag) => {
   if (element) {
     let result = [];
