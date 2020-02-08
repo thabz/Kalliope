@@ -31,7 +31,12 @@ const {
   build_dict_first_pass,
   build_dict_second_pass,
 } = require('./build-static/dict.js');
-const { safeGetText, safeGetAttr } = require('./build-static/xml.js');
+const {
+  safeGetText,
+  safeGetAttr,
+  getChildNode,
+  findChildNodes,
+} = require('./build-static/xml.js');
 const { build_sitemap_xml } = require('./build-static/sitemap.js');
 const { build_keywords } = require('./build-static/keywords.js');
 const { build_portraits_json } = require('./build-static/portraits.js');
@@ -39,6 +44,7 @@ const { build_todays_events_json } = require('./build-static/today.js');
 const {
   extractDates,
   extractTitle,
+  extractSubtitles,
   get_notes,
   get_pictures,
 } = require('./build-static/parsing.js');
@@ -169,33 +175,6 @@ const build_poet_workids = () => {
   return collected_workids;
 };
 
-const extract_subtitles = (head, tag = 'subtitle') => {
-  let subtitles = null;
-  const subtitle = head.get(tag);
-  if (subtitle && subtitle.find('line').length > 0) {
-    subtitles = subtitle.find('line').map(s => {
-      return htmlToXml(
-        s
-          .toString()
-          .replace('<line>', '')
-          .replace('</line>', '')
-          .replace('<line/>', ''),
-        collected,
-        true
-      );
-    });
-  } else if (subtitle) {
-    const subtitleString = subtitle
-      .toString()
-      .replace(`<${tag}>`, '')
-      .replace(`</${tag}>`, '');
-    if (subtitleString.indexOf(`<${tag}/>`) === -1) {
-      subtitles = [htmlToXml(subtitleString, collected, true)];
-    }
-  }
-  return subtitles;
-};
-
 const handle_text = (
   poetId,
   workId,
@@ -224,8 +203,8 @@ const handle_text = (
   const isFolkevise =
     poetId === 'folkeviser' || (poetId === 'tasso' && workId === '1581');
 
-  let subtitles = extract_subtitles(head, 'subtitle');
-  let suptitles = extract_subtitles(head, 'suptitle');
+  let subtitles = extractSubtitles(head, 'subtitle');
+  let suptitles = extractSubtitles(head, 'suptitle');
 
   let keywordsArray = [];
   if (keywords) {
@@ -611,27 +590,25 @@ const works_first_pass = collected => {
       }
 
       let doc = loadXMLDoc(workFilename);
-      const work = doc.kalliopework[0];
-      console.log(work.workbody);
-      return;
-      const attrId = work['@_id'];
-      if (attrId !== workId) {
+      const work = getChildNode(doc, 'kalliopework');
+      // touch fdirs/zahle/1843.xml; npm run build-static
+      if (safeGetAttr(work, 'id') !== workId) {
         throw new Error(`${workFilename} has wrong id in <kalliopework>`);
       }
-      return;
+
       const parentId = safeGetAttr(work, 'parent');
-      const head = work.get('workhead');
+      const head = getChildNode(work, 'workhead');
       const title = replaceDashes(safeGetText(head, 'title'));
       const toctitle = extractTitle(head, 'toctitle') || { title };
       const linktitle = replaceDashes(safeGetText(head, 'linktitle')) || title;
       const breadcrumbtitle = safeGetText(head, 'breadcrumbtitle') || title;
-      const year = head.get('year').text();
-      const status = work.attr('status').value();
-      const type = work.attr('type').value();
-      const subtitles = extract_subtitles(head);
+      const year = safeGetText(head, 'year');
+      const status = safeGetAttr(work, 'status');
+      const type = safeGetAttr(work, 'type');
+      const subtitles = extractSubtitles(head);
       const dates = extractDates(head);
       // Sanity check
-      if (work.attr('author').value() !== poetId) {
+      if (safeGetAttr(work, 'author') !== poetId) {
         throw new Error(
           `fdirs/${poetId}/${workId}.xml has wrong author-attribute in <kalliopework>`
         );
@@ -647,7 +624,8 @@ const works_first_pass = collected => {
         year: year,
         status,
         type,
-        has_content: work.find('//poem|//prose|//subwork').length > 0,
+        has_content:
+          findChildNodes(work, '//poem|//prose|//subwork').length > 0,
         published: dates.published || year,
       });
 
@@ -655,9 +633,9 @@ const works_first_pass = collected => {
         parentIdsToFillIn.set(fullWorkId, `${poetId}/${parentId}`);
       }
 
-      work.find('//poem|//prose|//section[@id]').forEach(part => {
-        const textId = part.attr('id').value();
-        const head = part.get('head');
+      findChildNodes(work, 'poem,prose,section[@id]').forEach(part => {
+        const textId = safeGetAttr(part, id);
+        const head = getChildNode(part, 'head');
         const title = extractTitle(head, 'title');
         const firstline = extractTitle(head, 'firstline');
         const linktitle = extractTitle(head, 'linktitle');

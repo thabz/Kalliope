@@ -5,18 +5,23 @@ const {
   build_museum_url,
   get_museum_json,
 } = require('./museums.js');
-const { safeGetText, safeGetAttr } = require('./xml.js');
+const {
+  safeGetText,
+  safeGetAttr,
+  getChildNode,
+  getChildNodes,
+} = require('./xml.js');
 const { poetName } = require('./formatting.js');
 const { imageSizeSync } = require('./image.js');
 
 // Returns raw {title: string, prefix?: string}
 // Both can be converted to xml using htmlToXml(...)
 const extractTitle = (head, type) => {
-  const element = head.get(type);
+  const element = getChildNode(head, type);
   if (element == null) {
     return null;
   }
-  let title = element.toString();
+  let title = safeGetText(element);
   title = entities
     .decodeHTML(title)
     .replace('<' + type + '>', '')
@@ -35,6 +40,20 @@ const extractTitle = (head, type) => {
   } else {
     return { title: title };
   }
+};
+
+const extractSubtitles = (head, tag = 'subtitle') => {
+  let subtitles = null;
+  const subtitle = getChildNode(head, tag);
+  if (subtitle && getChildNodes(subtitle, 'line').length > 0) {
+    subtitles = getChildNodes(subtitle, 'line').map(s => {
+      return htmlToXml(safeGetText(s), collected, true);
+    });
+  } else if (subtitle) {
+    const subtitleString = safeGetText(subtitle);
+    subtitles = [htmlToXml(subtitleString, collected, true)];
+  }
+  return subtitles;
 };
 
 const get_picture = (picture, srcPrefix, collected, onError) => {
@@ -107,7 +126,7 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
 
 // context contains keys for any `${var}` that's to be replaced in the note texts.
 const get_notes = (head, collected, context = {}) => {
-  return head.find('notes/note').map(note => {
+  return findChildNodes(head, 'notes > note').map(note => {
     const lang = safeGetAttr(note, 'lang') || 'da';
     const type = safeGetAttr(note, 'type');
     const unknownOriginalByPoetId = safeGetAttr(note, 'unknown-original-by');
@@ -144,7 +163,7 @@ const get_pictures = (head, srcPrefix, xmlFilename, collected) => {
 };
 
 const extractDates = head => {
-  const dates = head.get('dates');
+  const dates = getChildNode(head, 'dates');
   const result = {};
   if (dates != null) {
     result.published = safeGetText(dates, 'published');
@@ -156,8 +175,9 @@ const extractDates = head => {
 
 module.exports = {
   extractTitle,
+  extractSubtitles,
+  extractDates,
   get_notes,
   get_pictures,
   get_picture,
-  extractDates,
 };

@@ -1,7 +1,7 @@
 const fs = require('fs');
+const deasync = require('deasync');
 const entities = require('entities');
-//const libxml = require('libxmljs');
-const fastXmlParser = require('fast-xml-parser');
+const { JSDOM } = require('jsdom');
 const bible = require('./bible-abbr.js');
 const async = require('async');
 const path = require('path');
@@ -64,13 +64,9 @@ const loadXMLDoc = filename => {
   if (data == null) {
     return null;
   }
-  const options = {
-    arrayMode: true,
-    ignoreAttributes: false,
-    stopNodes: ['source', 'note', 'picture', 'subtitle', 'body'],
-  };
+
   try {
-    return fastXmlParser.parse(data, options);
+    return JSDOM.fragment(data, { contentType: 'text/xml' });
   } catch (err) {
     console.log(`Problem with ${filename}`);
     throw err;

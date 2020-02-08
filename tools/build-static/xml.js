@@ -1,24 +1,37 @@
-const safeGetText = (element, child) => {
+// TODO: Kan dette gøres mere effektivt?
+const getChildNode = (element, childTag) => {
   if (element) {
-    const childElement = element.get(child);
-    if (childElement) {
-      return childElement.text();
-    }
+    return element.querySelector(childTag);
+  } else {
+    return null;
   }
-  return null;
+};
+
+const getChildNodes = (element, query) => {
+  // TODO: Hvis kun eet element findes, skal dette returneres i et array
+  return element.querySelector(query);
+};
+
+const safeGetText = (element, childTag) => {
+  const childNode = getChildNode(element, childTag);
+  if (childNode) {
+    return childNode.innerHTML;
+  } else {
+    return null;
+  }
 };
 
 const safeGetAttr = (element, attrName) => {
   if (element) {
-    const attrElement = element.attr(attrName);
-    if (attrElement) {
-      return attrElement.value();
-    }
+    return element.getAttribute(attrName);
+  } else {
+    return null;
   }
-  return null;
 };
 
 module.exports = {
   safeGetText,
   safeGetAttr,
+  getChildNode,
+  getChildNodes,
 };
