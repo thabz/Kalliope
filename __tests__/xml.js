@@ -4,8 +4,10 @@ import {
   getElementByTagName,
   getElementsByTagName,
   getElementsByTagNames,
+  getChildrenByTagName,
   tagName,
   safeGetOuterXML,
+  safeGetInnerXML,
   loadXMLDoc,
 } from '../tools/build-static/xml.js';
 
@@ -36,9 +38,23 @@ describe('XML parser', () => {
     expect(title).toEqual('Ode');
   });
 
-  it('extract xml', () => {
+  it('extract outer xml', () => {
     const subtitle = safeGetOuterXML(doc, 'subtitle');
     expect(subtitle).toEqual('<subtitle>Ode <i>an</i> die Freude</subtitle>');
+  });
+
+  it('extract inner xml', () => {
+    const subtitle = safeGetInnerXML(doc, 'subtitle');
+    expect(subtitle).toEqual('Ode <i>an</i> die Freude');
+  });
+
+  it('understands direct children', () => {
+    const body = getElementByTagName(doc, 'body');
+    const children = getChildrenByTagName(body, 'poem');
+    expect(children.length).toEqual(2);
+    children.forEach(c => {
+      expect(tagName(c)).toEqual('poem');
+    });
   });
 
   it('understands multiple children', () => {

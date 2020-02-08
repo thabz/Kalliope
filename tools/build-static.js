@@ -960,8 +960,8 @@ collected.workids = b('build_poet_workids', build_poet_workids);
 const { works, texts } = b('works_first_pass', works_first_pass, collected);
 collected.works = works;
 collected.texts = texts;
-/*
 b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
+/*
 collected.poets = b('build_poets_json', build_poets_json, collected);
 b('mark_ref_destinations_dirty', mark_ref_destinations_dirty, collected);
 b('build_poets_by_country_json', build_poets_by_country_json, collected);

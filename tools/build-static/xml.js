@@ -59,6 +59,22 @@ const getElementByTagName = (element, childTag) => {
   }
 };
 
+// TODO: Implement correctly
+const getChildrenByTagName = (element, childTag) => {
+  if (element) {
+    let result = [];
+    for (let i = 0; i < element.childNodes.length; i++) {
+      const child = element.childNodes[i];
+      if (tagName(child) === childTag) {
+        result.push(child);
+      }
+    }
+    return result;
+  } else {
+    return null;
+  }
+};
+
 const safeGetText = (element, childTag) => {
   const childNode = getElementByTagName(element, childTag);
   if (childNode) {
@@ -75,6 +91,17 @@ const safeGetOuterXML = (element, childTag) => {
   } else {
     return null;
   }
+};
+
+const safeGetInnerXML = (element, tagName) => {
+  const outer = safeGetOuterXML(element, tagName);
+  if (outer == null) {
+    return null;
+  }
+  return outer
+    .replace('<' + tagName + '>', '')
+    .replace('</' + tagName + '>', '')
+    .replace('<' + tagName + '/>', '');
 };
 
 const safeGetAttr = (element, attrName) => {
@@ -96,6 +123,8 @@ module.exports = {
   getElementByTagName,
   getElementsByTagName,
   getElementsByTagNames,
+  getChildrenByTagName,
   tagName,
   safeGetOuterXML,
+  safeGetInnerXML,
 };
