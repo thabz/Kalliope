@@ -1,10 +1,11 @@
-import { loadXMLDoc } from '../tools/libs/helpers.js';
 import {
   safeGetText,
   safeGetAttr,
   getChildNode,
   findChildNodes,
   tagName,
+  safeGetOuterXML,
+  loadXMLDoc,
 } from '../tools/build-static/xml.js';
 
 describe('XML parser', () => {
@@ -13,14 +14,9 @@ describe('XML parser', () => {
     expect(doc).not.toBeNull();
   });
 
-  it('extract text', () => {
-    const title = safeGetText(doc, 'title');
-    expect(title).toEqual('Ode');
-  });
-
-  it('extract xml', () => {
-    const subtitle = safeGetText(doc, 'subtitle');
-    expect(subtitle).toEqual('Ode <i>an</i> die Freude');
+  it('get direct child', () => {
+    const work = getChildNode(doc, 'subtitle');
+    expect(work).not.toBeNull();
   });
 
   it('understands tag-names', () => {
@@ -28,18 +24,28 @@ describe('XML parser', () => {
     expect(name).toEqual('title');
   });
 
-  //   it('get direct child', () => {
-  //     const work = findChildNodes(doc, 'head');
-  //     expect(work).not.toBeNull();
-  //   });
+  it('get attribute value', () => {
+    const work = getChildNode(doc, 'work');
+    const author = safeGetAttr(work, 'author');
+    expect(author).toEqual('baggesen');
+  });
 
-  //   it('understands multiple children', () => {
-  //     const work = getChildNode(doc, 'work');
-  //     const body = getChildNode(doc, 'body');
-  //     expect(body).not.toBeNull();
-  //     const children = findChildNodes(body, 'c');
-  //     expect(children).not.toBeNull();
-  //     console.log('xxxx', children);
-  //     //expect(children.length).toEqual(3);
-  //   });
+  it('extract text', () => {
+    const title = safeGetText(doc, 'title');
+    expect(title).toEqual('Ode');
+  });
+
+  it('extract xml', () => {
+    const subtitle = safeGetOuterXML(doc, 'subtitle');
+    expect(subtitle).toEqual('<subtitle>Ode <i>an</i> die Freude</subtitle>');
+  });
+
+  it('understands multiple children', () => {
+    const work = getChildNode(doc, 'work');
+    const body = getChildNode(doc, 'body');
+    expect(body).not.toBeNull();
+    const children = findChildNodes(body, 'c');
+    expect(children).not.toBeNull();
+    expect(children.length).toEqual(3);
+  });
 });

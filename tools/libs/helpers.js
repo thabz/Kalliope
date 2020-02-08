@@ -1,7 +1,7 @@
 const fs = require('fs');
 const deasync = require('deasync');
 const entities = require('entities');
-const { JSDOM } = require('jsdom');
+const { DOMParser } = require('xmldom');
 const bible = require('./bible-abbr.js');
 const async = require('async');
 const path = require('path');
@@ -57,24 +57,6 @@ const writeJSON = (filename, data) => {
 
 const writeText = (filename, text) => {
   fs.writeFileSync(filename, text);
-};
-
-const parseXMLFragment = xmlString => {
-  return JSDOM.fragment(xmlString, { contentType: 'text/xml' });
-};
-
-const loadXMLDoc = filename => {
-  const data = loadText(filename);
-  if (data == null) {
-    return null;
-  }
-
-  try {
-    return parseXMLFragment(data);
-  } catch (err) {
-    console.log(`Problem with ${filename}`);
-    throw err;
-  }
 };
 
 const replaceDashes = html => {
@@ -410,8 +392,6 @@ module.exports = {
   loadFile,
   writeJSON,
   writeText,
-  loadXMLDoc,
-  parseXMLFragment,
   htmlToXml,
   replaceDashes,
   buildThumbnails,
