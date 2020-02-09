@@ -59,16 +59,32 @@ const getElementByTagName = (element, childTag) => {
   }
 };
 
-const getChildrenByTagName = (element, childTag) => {
+const getChildren = element => {
   if (element) {
     let result = [];
     for (let i = 0; i < element.childNodes.length; i++) {
       const child = element.childNodes[i];
-      if (tagName(child) === childTag) {
+      if (child.nodeType === 1 /* ELEMENT_NODE */) {
         result.push(child);
       }
     }
     return result;
+  } else {
+    return null;
+  }
+};
+
+const getChildrenByTagName = (element, childTag) => {
+  if (element) {
+    return getChildren(element).filter(c => tagName(c) === childTag);
+  } else {
+    return null;
+  }
+};
+
+const getChildrenByTagNames = (element, childTags) => {
+  if (element) {
+    return getChildren(element).filter(c => childTags.indexOf(tagName(c)) > -1);
   } else {
     return null;
   }
@@ -122,7 +138,9 @@ module.exports = {
   getElementByTagName,
   getElementsByTagName,
   getElementsByTagNames,
+  getChildren,
   getChildrenByTagName,
+  getChildrenByTagNames,
   tagName,
   safeGetOuterXML,
   safeGetInnerXML,

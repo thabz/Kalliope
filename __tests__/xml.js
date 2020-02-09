@@ -5,6 +5,8 @@ import {
   getElementsByTagName,
   getElementsByTagNames,
   getChildrenByTagName,
+  getChildrenByTagNames,
+  getChildren,
   tagName,
   safeGetOuterXML,
   safeGetInnerXML,
@@ -48,13 +50,28 @@ describe('XML parser', () => {
     expect(subtitle).toEqual('Ode <i>an</i> die Freude');
   });
 
-  it('understands direct children', () => {
+  it('understands direct children named', () => {
     const body = getElementByTagName(doc, 'body');
     const children = getChildrenByTagName(body, 'poem');
     expect(children.length).toEqual(2);
     children.forEach(c => {
       expect(tagName(c)).toEqual('poem');
     });
+
+    const allChildren = getChildrenByTagNames(body, ['poem', 'prose']);
+    expect(allChildren.length).toEqual(3);
+    expect(tagName(allChildren[0])).toEqual('poem');
+    expect(tagName(allChildren[1])).toEqual('prose');
+    expect(tagName(allChildren[2])).toEqual('poem');
+  });
+
+  it('understands direct children in order', () => {
+    const body = getElementByTagName(doc, 'body');
+    const children = getChildren(body, 'poem');
+    expect(children.length).toEqual(3);
+    expect(tagName(children[0])).toEqual('poem');
+    expect(tagName(children[1])).toEqual('prose');
+    expect(tagName(children[2])).toEqual('poem');
   });
 
   it('understands multiple children', () => {
