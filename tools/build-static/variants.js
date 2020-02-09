@@ -2,10 +2,10 @@ const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-  markFileDirty,  
+  markFileDirty,
 } = require('../libs/caching.js');
-const { loadXMLDoc, fileExists } = require('../libs/helpers.js');
-const { safeGetAttr } = require('./xml.js');
+const { fileExists } = require('../libs/helpers.js');
+const { loadXMLDoc, safeGetAttr, getElementsByTagNames } = require('./xml.js');
 
 const build_variants = collected => {
   let variants_map = new Map(loadCachedJSON('collected.variants') || []);
@@ -22,17 +22,23 @@ const build_variants = collected => {
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(filename)) {
-          return
+        return;
       }
       if (!isFileModified(filename)) {
         return;
       }
       let doc = loadXMLDoc(filename);
-      doc
-        .find('//poem[@variant]|//prose[@variant]|//section[@variant]')
+      getElementsByTagNames(doc, ['poem', 'prose', 'section'])
+        .filter(e => safeGetAttr(e, 'variant') != null)
         .forEach(text => {
           const textId = safeGetAttr(text, 'id');
           const variantId = safeGetAttr(text, 'variant');
+          if (textId == null) {
+            // TODO: Check errors here
+            throw new Error(
+              `Text in ${poetId}/${workId} ${a} is listed as a variant of ${poemId}.`
+            );
+          }
           register_variant(textId, variantId);
           register_variant(variantId, textId);
           // Mark work containing variantId dirty

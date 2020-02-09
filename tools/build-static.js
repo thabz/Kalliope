@@ -939,10 +939,10 @@ collected.poets = b('build_poets_json', build_poets_json, collected);
 b('mark_ref_destinations_dirty', mark_ref_destinations_dirty, collected);
 b('build_poets_by_country_json', build_poets_by_country_json, collected);
 collected.artwork = b('build_artwork', build_artwork, collected);
-/*
 b('build_museums', build_museums, collected);
 collected.variants = b('build_variants', build_variants, collected);
 b('build_mentions_json', build_mentions_json, collected);
+/*
 collected.textrefs = b('build_textrefs', build_textrefs, collected);
 build_dict_first_pass(collected);
 collected.keywords = b('build_keywords', build_keywords, collected);

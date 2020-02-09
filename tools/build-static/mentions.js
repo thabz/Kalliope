@@ -15,9 +15,11 @@ const {
   safeGetText,
   safeGetAttr,
   getElementsByTagNames,
+  getElementsByTagName,
   getChildrenByTagName,
   getChildByTagName,
   safeGetOuterXML,
+  safeGetInnerXML,
 } = require('./xml.js');
 const { poetName, workLinkName } = require('./formatting.js');
 const { primaryTextVariantId } = require('./variants.js');
@@ -249,7 +251,7 @@ const build_mentions_json = collected => {
       const biblioXmlPath = `fdirs/${poet.id}/bibliography-${filename}.xml`;
       const doc = loadXMLDoc(biblioXmlPath);
       if (doc != null) {
-        data[filename] = doc.getElementsByTagName('item').map(line => {
+        data[filename] = getElementsByTagName(doc, 'item').map(line => {
           return htmlToXml(safeGetInnerXML(line), collected);
         });
       } else {

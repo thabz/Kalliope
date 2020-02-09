@@ -1,6 +1,6 @@
-const { safeMkdir, writeJSON, loadXMLDoc } = require('../libs/helpers.js');
+const { safeMkdir, writeJSON } = require('../libs/helpers.js');
 const { isFileModified } = require('../libs/caching.js');
-const { safeGetAttr } = require('./xml.js');
+const { safeGetAttr, loadXMLDoc } = require('./xml.js');
 
 const museums = {
   hirschsprungske: {
@@ -50,9 +50,7 @@ const museums = {
   },
   'natmus.se': {
     url: ids =>
-      `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${
-        ids.objId
-      }&viewType=detailView`,
+      `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${ids.objId}&viewType=detailView`,
   },
   'digitalmuseum.no': {
     url: ids => `https://digitaltmuseum.no/${ids.objId}/maleri`,
@@ -127,12 +125,12 @@ const build_museums = collected => {
 
   let allArtwork = Array.from(collected.artwork.values());
   // Find portrætter som ikke har en ref og dermed inkluderet i collected.artwork
-  collected.poets.forEach((poet, poetId) => {
-    // From works
-    collected.workids.get(poet.id).forEach(workId => {
-      const doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
-    });
-  });
+  // collected.poets.forEach((poet, poetId) => {
+  //   // From works
+  //   collected.workids.get(poet.id).forEach(workId => {
+  //     const doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
+  //   });
+  // });
   Object.keys(museums).forEach(museumId => {
     const museum = museums[museumId];
     if (museum.name == null) {
