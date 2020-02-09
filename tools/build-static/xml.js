@@ -106,13 +106,17 @@ const getChildrenByTagNames = (element, childTags) => {
   }
 };
 
-const safeGetText = (element, childTag) => {
-  const childNode = getElementByTagName(element, childTag);
-  if (childNode) {
-    return childNode.textContent;
-  } else {
-    return null;
+const safeGetText = (element, optionalTagName) => {
+  if (element) {
+    let e = element;
+    if (optionalTagName) {
+      e = getElementByTagName(element, optionalTagName);
+    }
+    if (e) {
+      return e.textContent;
+    }
   }
+  return null;
 };
 
 const safeGetOuterXML = element => {

@@ -42,7 +42,7 @@ const extractTitle = (head, type) => {
   }
 };
 
-const extractSubtitles = (head, tag = 'subtitle') => {
+const extractSubtitles = (head, tag = 'subtitle', collected) => {
   let subtitles = null;
   const subtitle = getElementByTagName(head, tag);
   if (subtitle && getElementsByTagName(subtitle, 'line').length > 0) {

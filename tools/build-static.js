@@ -198,8 +198,8 @@ const handle_text = (
   const isFolkevise =
     poetId === 'folkeviser' || (poetId === 'tasso' && workId === '1581');
 
-  let subtitles = extractSubtitles(head, 'subtitle');
-  let suptitles = extractSubtitles(head, 'suptitle');
+  let subtitles = extractSubtitles(head, 'subtitle', collected);
+  let suptitles = extractSubtitles(head, 'suptitle', collected);
 
   let keywordsArray = [];
   if (keywords) {
@@ -597,7 +597,7 @@ const works_first_pass = collected => {
       const year = safeGetText(head, 'year');
       const status = safeGetAttr(work, 'status');
       const type = safeGetAttr(work, 'type');
-      const subtitles = extractSubtitles(head);
+      const subtitles = extractSubtitles(head, 'subtitle', collected);
       const dates = extractDates(head);
       // Sanity check
       if (safeGetAttr(work, 'author') !== poetId) {
@@ -937,9 +937,9 @@ collected.texts = texts;
 b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
 collected.poets = b('build_poets_json', build_poets_json, collected);
 b('mark_ref_destinations_dirty', mark_ref_destinations_dirty, collected);
-/*
 b('build_poets_by_country_json', build_poets_by_country_json, collected);
 collected.artwork = b('build_artwork', build_artwork, collected);
+/*
 b('build_museums', build_museums, collected);
 collected.variants = b('build_variants', build_variants, collected);
 b('build_mentions_json', build_mentions_json, collected);

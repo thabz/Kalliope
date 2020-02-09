@@ -36,12 +36,14 @@ describe('XML parser', () => {
   });
 
   it('extract text', () => {
-    const title = safeGetText(doc, 'title');
+    const titleNode = getElementByTagName(doc, 'title');
+    const title = safeGetText(titleNode);
     expect(title).toEqual('Ode');
   });
 
   it('extract text with HTML entities', () => {
-    const prose = safeGetText(doc, 'prose');
+    const proseNode = getElementByTagName(doc, 'prose');
+    const prose = safeGetText(proseNode);
     expect(prose).toEqual('Æble');
   });
 

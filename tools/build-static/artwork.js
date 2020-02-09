@@ -6,7 +6,12 @@ const {
   markFileDirty,
 } = require('../libs/caching.js');
 const { imageSizeSync } = require('./image.js');
-const { loadXMLDoc, safeGetAttr, safeGetInnerXML } = require('./xml.js');
+const {
+  loadXMLDoc,
+  safeGetAttr,
+  safeGetInnerXML,
+  getElementsByTagName,
+} = require('./xml.js');
 const { get_picture } = require('./parsing.js');
 const {
   build_museum_link,
@@ -37,7 +42,7 @@ const build_artwork = collected => {
 
       const artworksDoc = loadXMLDoc(artworkFilename);
       if (artworksDoc != null) {
-        artworksDoc.find('//pictures/picture').forEach(picture => {
+        getElementsByTagName(artworksDoc, 'picture').forEach(picture => {
           const pictureId = safeGetAttr(picture, 'id');
           const subjectAttr = safeGetAttr(picture, 'subject');
           let subjects = subjectAttr != null ? subjectAttr.split(',') : [];
@@ -129,8 +134,7 @@ const build_artwork = collected => {
           onError = message => {
             throw `${workFilename}: ${message}`;
           };
-          doc
-            .find('//pictures/picture')
+          getElementsByTagName(doc, 'picture')
             .filter(picture => {
               return safeGetAttr(picture, 'ref') == null;
             })
