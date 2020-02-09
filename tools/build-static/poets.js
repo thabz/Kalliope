@@ -22,7 +22,7 @@ const create_poet_square_thumb = (poetId, square_path) => {
   const path = `static/images/${poetId}/${square_path}`;
   const destFolder = `static/images/${poetId}/social`;
   const destPath = `${destFolder}/${poetId}.jpg`;
-  if (isFileModified(path) || !fileExists(destPath)) {
+  if (!fileExists(destPath)) {
     safeMkdir(destFolder);
     resizeImage(path, destPath, 600);
   }

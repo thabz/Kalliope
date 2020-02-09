@@ -29,14 +29,17 @@ const build_variants = collected => {
       }
       let doc = loadXMLDoc(filename);
       getElementsByTagNames(doc, ['poem', 'prose', 'section'])
-        .filter(e => safeGetAttr(e, 'variant') != null)
+        .filter(e => {
+          return (
+            safeGetAttr(e, 'variant') != null && safeGetAttr(e, 'id') != null
+          );
+        })
         .forEach(text => {
           const textId = safeGetAttr(text, 'id');
           const variantId = safeGetAttr(text, 'variant');
-          if (textId == null) {
-            // TODO: Check errors here
+          if (textId == null || variantId == null) {
             throw new Error(
-              `Text in ${poetId}/${workId} ${a} is listed as a variant of ${poemId}.`
+              `Text in ${poetId}/${workId} ${textId} is listed as a variant of ${variantId}.`
             );
           }
           register_variant(textId, variantId);
@@ -57,6 +60,10 @@ const build_variants = collected => {
 
 const resolve_variants_cache = {};
 const resolve_variants = (poemId, collected) => {
+  if (poemId == null) {
+    throw new Error(`function resolve_variants called with null poemId.`);
+  }
+
   const variantIds = collected.variants.get(poemId);
   if (variantIds == null || variantIds.length == 0) {
     return null;
@@ -87,12 +94,12 @@ const resolve_variants = (poemId, collected) => {
     const metaB = collected.texts.get(b);
     if (metaA == null) {
       throw new Error(
-        `The unknown text ${a} is listed as a variant of ${poemId}.`
+        `The unknown text "${a}" is listed as a variant of "${poemId}".`
       );
     }
     if (metaB == null) {
       throw new Error(
-        `The unknown text ${b} is listed as a variant ${poemId}.`
+        `The unknown text "${b}" is listed as a variant of "${poemId}".`
       );
     }
     const workA = collected.works.get(metaA.poetId + '/' + metaA.workId);
@@ -104,6 +111,11 @@ const resolve_variants = (poemId, collected) => {
 };
 
 const primaryTextVariantId = (textId, collected) => {
+  if (textId == null) {
+    throw new Error(
+      `function primaryTextVariantId called with textId "${textId}".`
+    );
+  }
   const variants = resolve_variants(textId, collected);
   if (variants != null && variants.length > 0) {
     return variants[0];

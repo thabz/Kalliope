@@ -157,8 +157,7 @@ const build_poet_workids = () => {
     }
     if (isFileModified(infoFilename)) {
       const doc = loadXMLDoc(infoFilename);
-      const person = doc.person;
-      const workIds = '' + (person.works || '');
+      const workIds = safeGetText(doc, 'works') || '';
       let items = workIds.split(',').filter(x => x.length > 0);
       collected_workids.set(poetId, items);
       found_changes = true;

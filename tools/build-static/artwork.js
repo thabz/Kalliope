@@ -96,8 +96,7 @@ const build_artwork = collected => {
         onError = message => {
           throw `fdirs/${personId}/portraits.xml: ${message}`;
         };
-        doc
-          .find('//pictures/picture')
+        getElementsByTagName(doc, 'picture')
           .filter(picture => {
             return safeGetAttr(picture, 'ref') == null;
           })
