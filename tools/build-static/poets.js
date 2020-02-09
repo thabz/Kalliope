@@ -8,10 +8,15 @@ const {
   fileExists,
   safeMkdir,
   writeJSON,
-  loadXMLDoc,
   resizeImage,
 } = require('../libs/helpers.js');
-const { safeGetText, safeGetAttr } = require('./xml.js');
+const {
+  loadXMLDoc,
+  safeGetText,
+  safeGetAttr,
+  getChildByTagName,
+  getElementsByTagName,
+} = require('./xml.js');
 
 const create_poet_square_thumb = (poetId, square_path) => {
   const path = `static/images/${poetId}/${square_path}`;
@@ -46,10 +51,10 @@ const build_poets_json = collected => {
         throw `fdirs/${poetId}/${workId}.xml kan ikke parses.`;
       }
       if (!has_poems) {
-        has_poems = doc.find('//poem').length > 0;
+        has_poems = getElementsByTagName(doc, 'poem').length > 0;
       }
       if (!has_prose) {
-        has_prose = doc.find('//prose').length > 0;
+        has_prose = getElementsByTagName(doc, 'prose').length > 0;
       }
     }
     // has_poems = !!has_poems;
@@ -83,12 +88,12 @@ const build_poets_json = collected => {
     }
     found_changes = true;
     const doc = loadXMLDoc(infoFilename);
-    const p = doc.get('//person');
-    const country = p.attr('country').value();
-    const lang = p.attr('lang').value();
-    const type = p.attr('type').value();
-    const nameE = p.get('name');
-    const periodE = p.get('period');
+    const p = getChildByTagName(doc, 'person');
+    const country = safeGetAttr(p, 'country');
+    const lang = safeGetAttr(p, 'lang');
+    const type = safeGetAttr(p, 'type');
+    const nameE = getChildByTagName(p, 'name');
+    const periodE = getChildByTagName(p, 'period');
     const works = safeGetText(p, 'works');
     if (!country.match(/(dk|se|no|gb|de|fr|us|it|un)/)) {
       throw `${id} har ukendt land: ${country}`;
@@ -101,8 +106,7 @@ const build_poets_json = collected => {
     const has_portraits = fileExists(`fdirs/${id}/portraits.xml`);
     if (has_portraits) {
       const portraitsDoc = loadXMLDoc(`fdirs/${id}/portraits.xml`);
-      const squares = portraitsDoc
-        .find('//pictures/picture')
+      const squares = getElementsByTagName(portraitsDoc, 'picture')
         .map(p => safeGetAttr(p, 'square-src'))
         .filter(s => s != null);
       if (squares.length > 0) {
@@ -131,28 +135,30 @@ const build_poets_json = collected => {
 
     let period = {};
     if (periodE) {
-      const bornE = periodE.get('born');
-      const deadE = periodE.get('dead');
-      const coronationE = periodE.get('coronation');
+      const bornE = getChildByTagName(periodE, 'born');
+      const deadE = getChildByTagName(periodE, 'dead');
+      const coronationE = getChildByTagName(periodE, 'coronation');
       if (bornE) {
         period.born = {
           date: safeGetText(bornE, 'date'),
           place: safeGetText(bornE, 'place'),
-          inon: safeGetAttr(bornE.get('place'), 'inon') || 'in',
+          inon: safeGetAttr(getChildByTagName(bornE, 'place'), 'inon') || 'in',
         };
       }
       if (deadE) {
         period.dead = {
           date: safeGetText(deadE, 'date'),
           place: safeGetText(deadE, 'place'),
-          inon: safeGetAttr(deadE.get('place'), 'inon') || 'in',
+          inon: safeGetAttr(getChildByTagName(deadE, 'place'), 'inon') || 'in',
         };
       }
       if (coronationE) {
         period.coronation = {
           date: safeGetText(coronationE, 'date'),
           place: safeGetText(coronationE, 'place'),
-          inon: safeGetAttr(coronationE.get('place'), 'inon') || 'in',
+          inon:
+            safeGetAttr(getChildByTagName(coronationE, 'place'), 'inon') ||
+            'in',
         };
       }
     }
