@@ -16,6 +16,7 @@ const {
   safeGetAttr,
   getElementsByTagNames,
   getChildrenByTagName,
+  getChildByTagName,
   safeGetOuterXML,
 } = require('./xml.js');
 const { poetName, workLinkName } = require('./formatting.js');
@@ -130,7 +131,7 @@ const build_person_or_keyword_refs = collected => {
             }
           });
         });
-        const head = getChildrenByTagName(text, 'head');
+        const head = getChildByTagName(text, 'head');
         const keywords = safeGetText(head, 'keywords') || '';
         if (keywords.trim().length > 0) {
           keywords.split(',').forEach(keyword => {

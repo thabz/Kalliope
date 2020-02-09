@@ -40,6 +40,11 @@ describe('XML parser', () => {
     expect(title).toEqual('Ode');
   });
 
+  it('extract text with HTML entities', () => {
+    const prose = safeGetText(doc, 'prose');
+    expect(prose).toEqual('Æble');
+  });
+
   it('extract outer xml', () => {
     const subtitle = getElementByTagName(doc, 'subtitle');
     const subtitleOuter = safeGetOuterXML(subtitle);

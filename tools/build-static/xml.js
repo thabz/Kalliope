@@ -1,8 +1,16 @@
 const { DOMParser, XMLSerializer } = require('xmldom');
 const { loadText } = require('../libs/helpers.js');
+const { entityMap } = require('./entities.js');
 
 const parseXMLFragment = xmlString => {
-  return new DOMParser().parseFromString(xmlString, 'text/xml');
+  const s = xmlString.replace(/&([A-Za-z]+);/g, (m, e) => {
+    const replacement = entityMap[e];
+    if (replacement == null) {
+      throw `Unknown entity &${e};`;
+    }
+    return replacement;
+  });
+  return new DOMParser().parseFromString(s, 'text/xml');
 };
 
 const loadXMLDoc = filename => {
@@ -10,7 +18,6 @@ const loadXMLDoc = filename => {
   if (data == null) {
     return null;
   }
-
   try {
     return parseXMLFragment(data);
   } catch (err) {
@@ -48,7 +55,7 @@ const getElementsByTagNames = (element, tagNames) => {
 
 const getElementByTagName = (element, childTag) => {
   if (element) {
-    const items = element.getElementsByTagName(childTag);
+    const items = getElementsByTagName(element, childTag);
     if (items.length > 0) {
       return items[0];
     } else {
@@ -149,6 +156,7 @@ module.exports = {
   getElementsByTagName,
   getElementsByTagNames,
   getChildren,
+  getChildByTagName,
   getChildrenByTagName,
   getChildrenByTagNames,
   tagName,
