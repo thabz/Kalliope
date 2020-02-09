@@ -3,12 +3,8 @@ const {
   loadCachedJSON,
   writeCachedJSON,
 } = require('../libs/caching.js');
-const {
-  safeMkdir,
-  loadXMLDoc,
-  writeJSON,
-  htmlToXml,
-} = require('../libs/helpers.js');
+const { safeMkdir, writeJSON, htmlToXml } = require('../libs/helpers.js');
+const { safeGetInnerXML, loadXMLDoc } = './xml.js';
 
 const build_dict_first_pass = collected => {
   const path = `data/dict.xml`;
@@ -48,13 +44,7 @@ const build_dict_second_pass = collected => {
   let items = new Array();
 
   const createItem = (id, title, phrase, variants, body, collected) => {
-    const content_html = htmlToXml(
-      body
-        .toString()
-        .replace('<forkl>', '')
-        .replace('</forkl>', ''),
-      collected
-    );
+    const content_html = htmlToXml(safeGetInnerXML(body), collected);
     const has_footnotes =
       content_html.indexOf('<footnote') !== -1 ||
       content_html.indexOf('<note') !== -1;

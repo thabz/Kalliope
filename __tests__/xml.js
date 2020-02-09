@@ -41,13 +41,21 @@ describe('XML parser', () => {
   });
 
   it('extract outer xml', () => {
-    const subtitle = safeGetOuterXML(doc, 'subtitle');
-    expect(subtitle).toEqual('<subtitle>Ode <i>an</i> die Freude</subtitle>');
+    const subtitle = getElementByTagName(doc, 'subtitle');
+    const subtitleOuter = safeGetOuterXML(subtitle);
+    expect(subtitleOuter).toEqual(
+      '<subtitle>Ode <i>an</i> die Freude</subtitle>'
+    );
   });
 
   it('extract inner xml', () => {
-    const subtitle = safeGetInnerXML(doc, 'subtitle');
-    expect(subtitle).toEqual('Ode <i>an</i> die Freude');
+    const subtitle = getElementByTagName(doc, 'subtitle');
+    const subtitleInner = safeGetInnerXML(subtitle);
+    expect(subtitleInner).toEqual('Ode <i>an</i> die Freude');
+    // From a tag with attributes
+    const source = getElementByTagName(doc, 'source');
+    const sourceInner = safeGetInnerXML(source);
+    expect(sourceInner).toEqual('Ingemann: <i>Digte</i>');
   });
 
   it('understands direct children named', () => {

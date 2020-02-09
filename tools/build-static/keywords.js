@@ -1,17 +1,12 @@
 const fs = require('fs');
-const {
-  loadXMLDoc,
-  safeMkdir,
-  htmlToXml,
-  writeJSON,
-} = require('../libs/helpers.js');
+const { safeMkdir, htmlToXml, writeJSON } = require('../libs/helpers.js');
 const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
 } = require('../libs/caching.js');
 const { get_pictures } = require('./parsing.js');
-const { safeGetText } = require('./xml.js');
+const { loadXMLDoc, safeGetInnerXML, safeGetText } = require('./xml.js');
 
 const build_keywords = collected => {
   safeMkdir('static/api/keywords');
@@ -45,10 +40,7 @@ const build_keywords = collected => {
         collected
       );
       const author = safeGetText(head, 'author');
-      const rawBody = body
-        .toString()
-        .replace('<body>', '')
-        .replace('</body>', '');
+      const rawBody = safeGetInnerXML(body);
       const content_html = htmlToXml(rawBody, collected);
       const has_footnotes =
         rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;

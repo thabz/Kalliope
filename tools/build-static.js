@@ -136,13 +136,7 @@ const build_bio_json = collected => {
       if (head && head.get('author')) {
         data.author = head.get('author').text();
       }
-      data.content_html = htmlToXml(
-        body
-          .toString()
-          .replace('<body>', '')
-          .replace('</body>', ''),
-        collected
-      );
+      data.content_html = htmlToXml(safeGetInnerXML(body), collected);
       data.content_lang = 'da';
     }
     data.timeline = build_poet_timeline_json(poet, collected);
@@ -292,11 +286,9 @@ const handle_text = (
     let pages = null;
     const pagesAttr = safeGetAttr(sourceNode, 'pages');
     let sourceBookRef = workSource ? workSource.source : null;
-    if (sourceNode.text().trim().length > 0) {
-      sourceBookRef = sourceNode
-        .toString()
-        .replace(/<source[^>]*>/, '')
-        .replace(/<\/source>/, '');
+    const sourceNodeInner = safeGetInnerXML(sourceNode);
+    if (sourceNodeInner.length > 0) {
+      sourceBookRef = sourceNodeInner;
     }
     const facsimile =
       safeGetAttr(sourceNode, 'facsimile') ||
@@ -354,10 +346,7 @@ const handle_text = (
   } else {
     // prose or poem
     const body = text.get('body');
-    const rawBody = body
-      .toString()
-      .replace('<body>', '')
-      .replace('</body>', '');
+    const rawBody = safeGetInnerXML(body);
     content_html = htmlToXml(
       rawBody,
       collected,
@@ -709,14 +698,12 @@ const works_second_pass = collected => {
       //const data = { id: workId, title, year, status, type };
       const data = collected.works.get(`${poetId}/${workId}`);
       let sources = {};
-      head.find('source').forEach(sourceNode => {
+      getChildrenByTagName(head, 'source').forEach(sourceNode => {
         let source = null;
-        if (sourceNode.text().trim().length > 0) {
-          const title = sourceNode
-            .toString()
-            .replace(/<source[^>]*>/, '')
-            .replace(/<\/source>/, '');
-          source = { source: title };
+        const sourceInner = safeGetInnerXML(sourceNode);
+
+        if (sourceInner != null && sourceInner.lenght > 0) {
+          source = { source: sourceInner };
         }
         const sourceId = safeGetAttr(sourceNode, 'id') || 'default';
         if (source == null || source.source == null) {
@@ -852,14 +839,7 @@ const build_news = collected => {
         date,
         title,
         content_lang: lang,
-        content_html: htmlToXml(
-          body
-            .toString()
-            .replace('<body>', '')
-            .replace('</body>', '')
-            .trim(),
-          collected
-        ),
+        content_html: htmlToXml(safeGetInnerXML(body).trim(), collected),
       });
     });
     const outfile = `static/api/news_${lang}.json`;
@@ -926,13 +906,7 @@ const build_about_pages = collected => {
         pictures,
         notes,
         content_lang: 'da',
-        content_html: htmlToXml(
-          body
-            .toString()
-            .replace('<body>', '')
-            .replace('</body>', ''),
-          collected
-        ),
+        content_html: htmlToXml(safeGetInnerXML(body), collected),
       };
       console.log(paths.json);
       writeJSON(paths.json, data);

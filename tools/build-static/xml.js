@@ -82,6 +82,15 @@ const getChildrenByTagName = (element, childTag) => {
   }
 };
 
+const getChildByTagName = (element, childTag) => {
+  const children = getChildrenByTagName(element, childTag);
+  if (children != null && children.length > 0) {
+    return children[0];
+  } else {
+    return null;
+  }
+};
+
 const getChildrenByTagNames = (element, childTags) => {
   if (element) {
     return getChildren(element).filter(c => childTags.indexOf(tagName(c)) > -1);
@@ -99,24 +108,25 @@ const safeGetText = (element, childTag) => {
   }
 };
 
-const safeGetOuterXML = (element, childTag) => {
-  const childNode = getElementByTagName(element, childTag);
-  if (childNode) {
-    return new XMLSerializer().serializeToString(childNode);
+const safeGetOuterXML = element => {
+  if (element) {
+    return new XMLSerializer().serializeToString(element);
   } else {
     return null;
   }
 };
 
-const safeGetInnerXML = (element, tagName) => {
-  const outer = safeGetOuterXML(element, tagName);
+const safeGetInnerXML = element => {
+  const outer = safeGetOuterXML(element);
   if (outer == null) {
     return null;
   }
+  const t = tagName(element);
   return outer
-    .replace('<' + tagName + '>', '')
-    .replace('</' + tagName + '>', '')
-    .replace('<' + tagName + '/>', '');
+    .replace(new RegExp('<' + t + '[^>]*>'), '')
+    .replace('<' + t + '>', '')
+    .replace('</' + t + '>', '')
+    .replace('<' + t + '/>', '');
 };
 
 const safeGetAttr = (element, attrName) => {

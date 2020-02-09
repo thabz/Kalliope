@@ -1,4 +1,4 @@
-const { loadXMLDoc, htmlToXml } = require('../libs/helpers.js');
+const { htmlToXml } = require('../libs/helpers.js');
 const {
   isFileModified,
   loadCachedJSON,
@@ -6,7 +6,7 @@ const {
   markFileDirty,
 } = require('../libs/caching.js');
 const { imageSizeSync } = require('./image.js');
-const { safeGetAttr } = require('./xml.js');
+const { loadXMLDoc, safeGetAttr, safeGetInnerXML } = require('./xml.js');
 const { get_picture } = require('./parsing.js');
 const {
   build_museum_link,
@@ -57,12 +57,7 @@ const build_artwork = collected => {
           const museumId = safeGetAttr(picture, 'museum');
           const artworkId = `${personId}/${pictureId}`;
           const artist = collected.poets.get(personId);
-          const content_raw =
-            picture
-              .toString()
-              .replace(/<picture[^>]*?>/, '')
-              .replace('</picture>', '')
-              .trim() + museumLink;
+          const content_raw = safeGetInnerXML(picture).trim() + museumLink;
           const artworkJson = {
             id: `${personId}/${pictureId}`,
             artistId: personId,

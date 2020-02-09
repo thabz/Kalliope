@@ -114,7 +114,7 @@ const build_works_toc = collected => {
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(filename)) {
-          return
+        return;
       }
       if (!isFileModified(filename)) {
         return;

@@ -1,4 +1,4 @@
-const { loadXMLDoc, fileExists } = require('../libs/helpers.js');
+const { fileExists } = require('../libs/helpers.js');
 const {
   isFileModified,
   loadCachedJSON,
@@ -6,7 +6,7 @@ const {
   force_reload,
   markFileDirty,
 } = require('../libs/caching.js');
-const { safeGetAttr } = require('./xml.js');
+const { loadXMLDoc, safeGetAttr, safeGetOuterXML } = require('./xml.js');
 
 const build_textrefs = collected => {
   let textrefs = new Map(loadCachedJSON('collected.textrefs') || []);
@@ -34,7 +34,7 @@ const build_textrefs = collected => {
         const notes = text.find('head/notes/note|body//footnote|body//note');
         notes.forEach(note => {
           regexps.forEach(regexp => {
-            while ((match = regexp.exec(note.toString())) != null) {
+            while ((match = regexp.exec(safeGetOuterXML(note))) != null) {
               const fromId = text.attr('id').value();
               const toId = match[1];
               const array = textrefs.get(toId) || [];
@@ -81,7 +81,7 @@ const mark_ref_destinations_dirty = collected => {
         const notes = text.find('head/notes/note|body//footnote|body//note');
         notes.forEach(note => {
           regexps.forEach(regexp => {
-            while ((match = regexp.exec(note.toString())) != null) {
+            while ((match = regexp.exec(safeGetOuterXML(note))) != null) {
               const toId = match[1];
               const t = collected.texts.get(toId);
               if (t != null) {

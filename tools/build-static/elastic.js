@@ -1,8 +1,4 @@
-const { 
-  loadXMLDoc, 
-  htmlToXml,
-  replaceDashes,
-} = require('../libs/helpers.js');
+const { loadXMLDoc, htmlToXml, replaceDashes } = require('../libs/helpers.js');
 const { safeGetText } = require('./xml.js');
 const { isFileModified } = require('../libs/caching.js');
 const elasticSearchClient = require('../libs/elasticsearch-client.js');
@@ -52,20 +48,11 @@ const update_elasticsearch = collected => {
           let subtitles = null;
           const subtitle = head.get('subtitle');
           if (subtitle && subtitle.find('line').length > 0) {
-            subtitles = subtitle.find('line').map(s =>
-              replaceDashes(
-                s
-                  .toString()
-                  .replace('<line>', '')
-                  .replace('</line>', '')
-                  .replace('<line/>', '')
-              )
-            );
+            subtitles = subtitle
+              .find('line')
+              .map(s => replaceDashes(safeGetInnerXML(s)));
           } else if (subtitle) {
-            const subtitleString = subtitle
-              .toString()
-              .replace('<subtitle>', '')
-              .replace('</subtitle>', '');
+            const subtitleString = safeGetInnerXML(subtitle);
             if (subtitleString.indexOf('<subtitle/>') === -1) {
               subtitles = [replaceDashes(subtitleString)];
             }
@@ -82,10 +69,7 @@ const update_elasticsearch = collected => {
             is_prose: text.name() === 'prose',
             keywords: keywordsArray,
             content_html: htmlToXml(
-              body
-                .toString()
-                .replace('<body>', '')
-                .replace('</body>', '')
+              safeGetInnerXML(body)
                 .replace(/<note>.*?<\/note>/g, '')
                 .replace(/<footnote>.*?<\/footnote>/g, '')
                 .replace(/<.*?>/g, ' '),

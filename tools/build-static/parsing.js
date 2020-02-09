@@ -78,11 +78,7 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
       museum: get_museum_json(museumId),
       content_lang: 'da',
       content_html: htmlToXml(
-        picture
-          .toString()
-          .replace(/<picture[^>]*?>/, '')
-          .replace('</picture>', '')
-          .trim() + museumLink,
+        safeGetInnerXML(picture).trim() + museumLink,
         collected
       ),
       primary,
@@ -101,11 +97,7 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
     let description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
       artwork.content_raw
     }`;
-    const extraDescription = picture
-      .toString()
-      .replace(/<picture[^>]*?>/, '')
-      .replace('</picture>', '')
-      .trim();
+    const extraDescription = safeGetInnerXML(picture).trim();
     if (extraDescription.length > 0) {
       description = extraDescription + '\n\n' + description;
     }
@@ -139,9 +131,7 @@ const get_notes = (head, collected, context = {}) => {
       type,
       content_lang: lang,
       content_html: htmlToXml(
-        replaceContextPlaceholders(note.toString())
-          .replace(/<note[^>]*>/, '')
-          .replace('</note>', ''),
+        replaceContextPlaceholders(safeGetInnerXML(note)),
         collected
       ),
     };
