@@ -28,7 +28,7 @@ const imageSizeAsync = async filename => {
 };
 
 const imageSizeCallback = (filename, callback) => {
-  const size = imageSizeAsync(f).then(size => {
+  const size = imageSizeAsync(filename).then(size => {
     callback(null, size);
   });
 };

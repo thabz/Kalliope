@@ -129,13 +129,10 @@ const build_bio_json = collected => {
     };
     const doc = loadXMLDoc(bioXmlPath);
     if (doc != null) {
-      const bio = doc.get('//bio');
-      const head = bio.get('head');
-      const body = bio.get('body');
-      let author = null;
-      if (head && head.get('author')) {
-        data.author = head.get('author').text();
-      }
+      const bio = getChildByTagName(doc, 'bio');
+      const head = getChildByTagName(bio, 'head');
+      const body = getChildByTagName(bio, 'body');
+      let author = safeGetText(head, 'author');
       data.content_html = htmlToXml(safeGetInnerXML(body), collected);
       data.content_lang = 'da';
     }
@@ -186,13 +183,13 @@ const handle_text = (
   const work = collected_works.get(poetId + '-' + workId);
 
   const textId = text.attr('id').value();
-  const head = text.get('head');
+  const head = getChildByTagName(text, 'head');
   const firstline = extractTitle(head, 'firstline');
   let title = extractTitle(head, 'title') || firstline; // {title: xxx, prefix: xxx}
   let indextitle = extractTitle(head, 'indextitle') || title;
   let linktitle = extractTitle(head, 'linktitle') || indextitle || title;
 
-  const keywords = head.get('keywords');
+  const keywords = safeGetText(head, 'keywords');
   const isBible = poetId === 'bibel';
   const isFolkevise =
     poetId === 'folkeviser' || (poetId === 'tasso' && workId === '1581');
@@ -202,28 +199,25 @@ const handle_text = (
 
   let keywordsArray = [];
   if (keywords) {
-    keywordsArray = keywords
-      .text()
-      .split(',')
-      .map(k => {
-        let type = null;
-        let title = null;
-        if (collected.poets.get(k) != null) {
-          type = 'poet';
-          title = poetName(collected.poets.get(k));
-        } else if (collected.keywords.get(k) != null) {
-          type = 'keyword';
-          title = collected.keywords.get(k).title;
-        } else {
-          type = 'subject';
-          title = k;
-        }
-        return {
-          id: k,
-          type,
-          title,
-        };
-      });
+    keywordsArray = keywords.split(',').map(k => {
+      let type = null;
+      let title = null;
+      if (collected.poets.get(k) != null) {
+        type = 'poet';
+        title = poetName(collected.poets.get(k));
+      } else if (collected.keywords.get(k) != null) {
+        type = 'keyword';
+        title = collected.keywords.get(k).title;
+      } else {
+        type = 'subject';
+        title = k;
+      }
+      return {
+        id: k,
+        type,
+        title,
+      };
+    });
   }
 
   let refsArray = (collected.textrefs.get(textId) || [])
@@ -271,7 +265,7 @@ const handle_text = (
   const foldername = Paths.textFolder(textId);
   const prev_next = resolve_prev_next(textId);
 
-  const sourceNode = head.get('source');
+  const sourceNode = getChildByTagName(head, 'source');
   let source = null;
   let workSource = null;
   if (sourceNode != null) {
@@ -340,11 +334,11 @@ const handle_text = (
     if (title == null) {
       throw `fdirs/${poetId}/${workId}: section ${textId} mangler title.`;
     }
-    const content = text.get('content');
+    const content = getChildByTagName(text, 'content');
     toc = build_section_toc(content);
   } else {
     // prose or poem
-    const body = text.get('body');
+    const body = getChildByTagName(text, 'body');
     const rawBody = safeGetInnerXML(body);
     content_html = htmlToXml(
       rawBody,
@@ -408,7 +402,7 @@ const handle_work = work => {
       const partName = part.name();
       if (partName === 'poem') {
         const textId = part.attr('id').value();
-        const head = part.get('head');
+        const head = getChildByTagName(part, 'head');
         const firstline = extractTitle(head, 'firstline');
         const title = extractTitle(head, 'title') || firstline;
         const indextitle = extractTitle(head, 'indextitle') || title;
@@ -450,7 +444,7 @@ const handle_work = work => {
           section_titles
         );
       } else if (partName === 'section') {
-        const head = part.get('head');
+        const head = getChildByTagName(part, 'head');
         const level = parseInt(safeGetAttr(head, 'level') || '1');
         const sectionId = safeGetAttr(part, 'id');
         const title = extractTitle(head, 'title');
@@ -483,7 +477,7 @@ const handle_work = work => {
         }
       } else if (partName === 'prose') {
         const textId = part.attr('id').value();
-        const head = part.get('head');
+        const head = getChildByTagName(part, 'head');
         const title = extractTitle(head, 'title');
         const toctitle = extractTitle(head, 'toctitle') || title;
         if (toctitle == null) {
@@ -508,7 +502,7 @@ const handle_work = work => {
     return toc;
   };
 
-  const workhead = work.get('workhead');
+  const workhead = getChildByTagName(work, 'workhead');
   const notes = get_notes(workhead, collected);
   const pictures = get_pictures(
     workhead,
@@ -517,7 +511,7 @@ const handle_work = work => {
     collected
   );
 
-  const workbody = work.get('workbody');
+  const workbody = getChildByTagName(work, 'workbody');
   if (workbody == null) {
     return {
       lines: [],
@@ -532,8 +526,8 @@ const handle_work = work => {
     const items = findChildNodes(workbody, 'poem,prose,section[@id]').map(
       part => {
         const textId = part.attr('id').value();
-        const head = part.get('head');
-        const title = head.get('title') ? head.get('title').text() : null;
+        const head = getChildByTagName(part, 'head');
+        const title = safeGetText(head, 'title');
         return { id: textId, title: title };
       }
     );
@@ -688,12 +682,12 @@ const works_second_pass = collected => {
         return;
       }
       let doc = loadXMLDoc(filename);
-      const work = doc.get('//kalliopework');
+      const work = getChildByTagName(doc, 'kalliopework');
       const status = work.attr('status').value();
       const type = work.attr('type').value();
-      const head = work.get('workhead');
-      const title = head.get('title').text();
-      const year = head.get('year').text();
+      const head = getChildByTagName(work, 'workhead');
+      const title = safeGetText(head, 'title');
+      const year = safeGetText(head, 'year');
       //const data = { id: workId, title, year, status, type };
       const data = collected.works.get(`${poetId}/${workId}`);
       let sources = {};
@@ -779,9 +773,9 @@ const build_poet_works_json = collected => {
         fs.createWriteStream(`static/api/${poetId}/${workId}.xml`)
       );
       let doc = loadXMLDoc(filename);
-      const work = doc.get('//kalliopework');
-      const head = work.get('workhead');
-      const body = work.get('workbody');
+      const work = getChildByTagName(doc, 'kalliopework');
+      const head = getChildByTagName(work, 'workhead');
+      const body = getChildByTagName(work, 'workbody');
       const parent = safeGetAttr(work, 'parent');
       if (parent != null) {
         return;
@@ -825,14 +819,14 @@ const build_news = collected => {
       return;
     }
     const doc = loadXMLDoc(path);
-    const items = doc.get('//items');
+    const items = getChildenByTagName(doc, 'items');
     let list = [];
     items.childNodes().forEach(item => {
       if (item.name() !== 'item') {
         return;
       }
-      const date = item.get('date').text();
-      const body = item.get('body');
+      const date = safeGetText(item, 'date');
+      const body = getChildByTagName(item, 'body');
       const title = safeGetText(item, 'title');
       list.push({
         date,
@@ -873,10 +867,10 @@ const build_about_pages = collected => {
         lang = m[1];
       }
       const doc = loadXMLDoc(paths.xml);
-      const about = doc.get('//about');
-      const head = about.get('head');
-      const body = about.get('body');
-      const title = head.get('title').text();
+      const about = getChildByTagName(doc, 'about');
+      const head = getChildByTagName(about, 'head');
+      const body = getChildByTagName(about, 'body');
+      const title = safeGetText(head, 'title');
       const pictures = get_pictures(
         head,
         '/static/images/about',

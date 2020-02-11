@@ -12,12 +12,12 @@ const update_elasticsearch = collected => {
           return;
         }
         let doc = loadXMLDoc(filename);
-        const work = doc.get('//kalliopework');
+        const work = getChildByTagName(doc, 'kalliopework');
         const status = work.attr('status').value();
         const type = work.attr('type').value();
-        const head = work.get('workhead');
-        const title = head.get('title').text();
-        const year = head.get('year').text();
+        const head = getChildByTagName(work, 'workhead');
+        const title = safeGetText(head, 'title');
+        const year = safeGetText(head, 'year');
         const workData = {
           id: workId,
           title,
@@ -38,15 +38,15 @@ const update_elasticsearch = collected => {
         );
         doc.find('//poem|//prose').forEach(text => {
           const textId = text.attr('id').value();
-          const head = text.get('head');
-          const body = text.get('body');
+          const head = getChildByTagName(text, 'head');
+          const body = getChildByTagName(text, 'body');
           const title =
             safeGetText(head, 'linktitle') ||
             safeGetText(head, 'title') ||
             safeGetText(head, 'firstline');
-          const keywords = head.get('keywords');
+          const keywords = safeGetText(head, 'keywords');
           let subtitles = null;
-          const subtitle = head.get('subtitle');
+          const subtitle = getChildByTagName(head, 'subtitle');
           if (subtitle && subtitle.find('line').length > 0) {
             subtitles = subtitle
               .find('line')
@@ -59,7 +59,7 @@ const update_elasticsearch = collected => {
           }
           let keywordsArray = null;
           if (keywords) {
-            keywordsArray = keywords.text().split(',');
+            keywordsArray = keywords.split(',');
           }
 
           const textData = {

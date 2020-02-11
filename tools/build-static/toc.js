@@ -21,7 +21,7 @@ const build_section_toc = section => {
     const partName = part.name();
     if (partName === 'poem') {
       const textId = part.attr('id').value();
-      const head = part.get('head');
+      const head = getChildByTagName(part, 'head');
       const firstline = extractTitle(head, 'firstline');
       const title = extractTitle(head, 'title') || firstline;
       const toctitle = extractTitle(head, 'toctitle') || title;
@@ -33,7 +33,7 @@ const build_section_toc = section => {
       });
     } else if (partName === 'section') {
       const subtoc = build_section_toc(part.get('content'));
-      const head = part.get('head');
+      const head = getChildByTagName(part, 'head');
       const level = parseInt(safeGetAttr(part, 'level') || '1');
       const sectionId = safeGetAttr(part, 'id');
       const title = extractTitle(head, 'title');
@@ -48,7 +48,7 @@ const build_section_toc = section => {
       });
     } else if (partName === 'prose') {
       const textId = part.attr('id').value();
-      const head = part.get('head');
+      const head = getChildByTagName(part, 'head');
       const title = extractTitle(head, 'title');
       const toctitle = extractTitle(head, 'toctitle') || title;
       if (toctitle == null) {
@@ -85,7 +85,7 @@ const build_works_toc = collected => {
     const parentId = safeGetAttr(work, 'parent');
     let lines = [];
 
-    const workhead = work.get('workhead');
+    const workhead = getChildByTagName(work, 'workhead');
     const notes = get_notes(workhead, collected);
     const pictures = get_pictures(
       workhead,
@@ -94,7 +94,7 @@ const build_works_toc = collected => {
       collected
     );
 
-    const workbody = work.get('workbody');
+    const workbody = getChildByTagName(work, 'workbody');
     if (workbody == null) {
       return {
         lines: [],
@@ -120,16 +120,16 @@ const build_works_toc = collected => {
         return;
       }
       let doc = loadXMLDoc(filename);
-      const work = doc.get('//kalliopework');
+      const work = getChildByTagName(doc, 'kalliopework');
       const status = work.attr('status').value();
       const type = work.attr('type').value();
       const parentId = safeGetAttr(work, 'parent');
-      const head = work.get('workhead');
-      const title = head.get('title').text();
+      const head = getChildByTagName(work, 'workhead');
+      const title = safeGetText(head, 'title');
       const toctitle = safeGetText(head, 'toctitle') || title;
       const linktitle = safeGetText(head, 'linktitle') || title;
       const breadcrumbtitle = safeGetText(head, 'breadcrumbtitle') || title;
-      const year = head.get('year').text();
+      const year = safeGetText(head, 'year');
       const data = {
         id: workId,
         title,

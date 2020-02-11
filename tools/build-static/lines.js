@@ -18,7 +18,7 @@ const build_global_lines_json = collected => {
     workIds.forEach(workId => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(workFilename)) {
-          return
+        return;
       }
       if (!isFileModified(workFilename)) {
         return;
@@ -151,7 +151,7 @@ const build_poet_lines_json = collected => {
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(filename)) {
-          return
+        return;
       }
       let doc = loadXMLDoc(filename);
       if (doc == null) {
@@ -164,7 +164,7 @@ const build_poet_lines_json = collected => {
           return;
         }
 
-        const head = part.get('head');
+        const head = getChildByTagName(part, 'head');
         const firstline = extractTitle(head, 'firstline');
         const title = extractTitle(head, 'title') || firstline;
         const indextitle = extractTitle(head, 'indextitle') || title;
@@ -176,7 +176,7 @@ const build_poet_lines_json = collected => {
         if (
           part.name() === 'poem' &&
           firstline == null &&
-          head.get('nofirstline') == null
+          getChildByTagName(head, 'nofirstline') == null
         ) {
           throw `${textId} mangler firstline i ${poetId}/${workId}.xml`;
         }

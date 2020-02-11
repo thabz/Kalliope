@@ -22,8 +22,8 @@ const build_dict_first_pass = collected => {
       if (item.name() !== 'entry') {
         return;
       }
-      const id = item.attr('id').value();
-      const title = item.get('ord').text();
+      const id = safeGetAttr(item, 'id');
+      const title = safeGetText(item, 'ord');
       const simpleData = {
         id,
         title,
@@ -75,13 +75,15 @@ const build_dict_second_pass = collected => {
         return;
       }
       const id = item.attr('id').value();
-      const body = item.get('forkl');
-      const title = item.get('ord').text();
+      const body = getChildByTagName(item, 'forkl');
+      const title = safeGetText(item, 'ord');
       let phrase = null;
       if (item.get('frase')) {
-        phrase = item.get('frase').text();
+        phrase = safeGetText(text, 'frase');
       }
-      const variants = item.find('var').map(varItem => varItem.text());
+      const variants = getChilrenByTagName(item, 'var').map(varItem =>
+        safeGetText(varItem)
+      );
       variants.forEach(variant => {
         createItem(
           variant,

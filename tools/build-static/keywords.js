@@ -24,15 +24,15 @@ const build_keywords = collected => {
         return;
       }
       const doc = loadXMLDoc(path);
-      const keyword = doc.get('//keyword');
-      const head = keyword.get('head');
-      const body = keyword.get('body');
+      const keyword = getChildByTagName(doc, 'keyword');
+      const head = getChildByTagName(keyword, 'head');
+      const body = getChildByTagName(keyword, 'body');
       const id = keyword.attr('id').value();
       const is_draft =
         keyword.attr('draft') != null
           ? keyword.attr('draft').value() === 'true'
           : false;
-      const title = head.get('title').text();
+      const title = safeGetText(head, 'title');
       const pictures = get_pictures(
         head,
         '/static/images/keywords',

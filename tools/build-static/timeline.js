@@ -44,7 +44,7 @@ const load_timeline = (filename, collected) => {
       const onError = message => {
         throw `${filename}: ${message}`;
       };
-      const pictureNode = event.get('picture');
+      const pictureNode = getChildByTagName(event, 'picture');
       if (pictureNode == null) {
         onError('indeholder event med type image uden <picture>');
       }
@@ -56,7 +56,7 @@ const load_timeline = (filename, collected) => {
     } else {
       data.content_lang = 'da';
       data.lang = 'da';
-      const html = event.get('html');
+      const html = getChildByTagName(event, 'html');
       data.content_html = htmlToXml(safeGetInnerXML(html).trim(), collected);
     }
     return data;
