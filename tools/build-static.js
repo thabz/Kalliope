@@ -34,8 +34,11 @@ const {
   loadXMLDoc,
   safeGetText,
   safeGetAttr,
+  getChildByTagName,
+  getChildrenByTagName,
   getElementByTagName,
   getElementsByTagNames,
+  safeGetInnerXML,
   tagName,
 } = require('./build-static/xml.js');
 const { build_sitemap_xml } = require('./build-static/sitemap.js');
@@ -523,14 +526,15 @@ const handle_work = work => {
 
   // Create function to resolve prev/next links in texts
   const resolve_prev_next = (function() {
-    const items = findChildNodes(workbody, 'poem,prose,section[@id]').map(
-      part => {
+    // TODO: Denne returnerer ikke i korrekt rækkefølge!
+    const items = getElementsByTagNames(workbody, ['poem', 'prose', 'section'])
+      .filter(part => safeGetAttr('id') != null)
+      .map(part => {
         const textId = safeGetAttr(part, 'id');
         const head = getChildByTagName(part, 'head');
         const title = safeGetText(head, 'title');
         return { id: textId, title: title };
-      }
-    );
+      });
     return textId => {
       const index = items.findIndex(x => {
         return x.id === textId;
@@ -694,16 +698,15 @@ const works_second_pass = collected => {
       getChildrenByTagName(head, 'source').forEach(sourceNode => {
         let source = null;
         const sourceInner = safeGetInnerXML(sourceNode);
-
-        if (sourceInner != null && sourceInner.lenght > 0) {
+        if (sourceInner != null && sourceInner.length > 0) {
           source = { source: sourceInner };
         }
-        const sourceId = safeGetAttr(sourceNode, 'id') || 'default';
         if (source == null || source.source == null) {
           throw new Error(
             `fdirs/${poetId}/${workId}.xml has source with no title.`
           );
         }
+        const sourceId = safeGetAttr(sourceNode, 'id') || 'default';
         let facsimile = safeGetAttr(sourceNode, 'facsimile');
         if (facsimile != null) {
           facsimile = facsimile.replace(/.pdf$/, '');
@@ -938,10 +941,10 @@ b('build_mentions_json', build_mentions_json, collected);
 collected.textrefs = b('build_textrefs', build_textrefs, collected);
 build_dict_first_pass(collected);
 collected.keywords = b('build_keywords', build_keywords, collected);
-/*
 b('build_poet_lines_json', build_poet_lines_json, collected);
 b('build_poet_works_json', build_poet_works_json, collected);
 b('works_second_pass', works_second_pass, collected);
+/*
 b('build_works_toc', build_works_toc, collected);
 collected.timeline = b(
   'build_global_timeline',

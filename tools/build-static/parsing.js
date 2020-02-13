@@ -6,6 +6,8 @@ const {
   get_museum_json,
 } = require('./museums.js');
 const {
+  getChildByTagName,
+  getChildrenByTagName,
   getElementByTagName,
   getElementsByTagName,
   safeGetText,
@@ -120,7 +122,11 @@ const get_picture = (pictureNode, srcPrefix, collected, onError) => {
 
 // context contains keys for any `${var}` that's to be replaced in the note texts.
 const get_notes = (head, collected, context = {}) => {
-  return findChildNodes(head, 'notes > note').map(note => {
+  const notes = getChildByTagName(head, 'notes');
+  if (notes == null) {
+    return [];
+  }
+  return getChildrenByTagName(notes, 'note').map(note => {
     const lang = safeGetAttr(note, 'lang') || 'da';
     const type = safeGetAttr(note, 'type');
     const unknownOriginalByPoetId = safeGetAttr(note, 'unknown-original-by');
