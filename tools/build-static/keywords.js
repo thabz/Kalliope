@@ -6,7 +6,13 @@ const {
   writeCachedJSON,
 } = require('../libs/caching.js');
 const { get_pictures } = require('./parsing.js');
-const { loadXMLDoc, safeGetInnerXML, safeGetText } = require('./xml.js');
+const {
+  loadXMLDoc,
+  safeGetInnerXML,
+  safeGetText,
+  safeGetAttr,
+  getChildByTagName,
+} = require('./xml.js');
 
 const build_keywords = collected => {
   safeMkdir('static/api/keywords');
@@ -27,11 +33,8 @@ const build_keywords = collected => {
       const keyword = getChildByTagName(doc, 'keyword');
       const head = getChildByTagName(keyword, 'head');
       const body = getChildByTagName(keyword, 'body');
-      const id = keyword.attr('id').value();
-      const is_draft =
-        keyword.attr('draft') != null
-          ? keyword.attr('draft').value() === 'true'
-          : false;
+      const id = safeGetAttr(keyword, 'id');
+      const is_draft = safeGetAttr(keyword, 'draft') === 'true';
       const title = safeGetText(head, 'title');
       const pictures = get_pictures(
         head,

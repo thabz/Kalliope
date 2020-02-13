@@ -182,7 +182,7 @@ const handle_text = (
   const poet = collected.poets.get(poetId);
   const work = collected_works.get(poetId + '-' + workId);
 
-  const textId = text.attr('id').value();
+  const textId = safeGetAttr(text, 'id');
   const head = getChildByTagName(text, 'head');
   const firstline = extractTitle(head, 'firstline');
   let title = extractTitle(head, 'title') || firstline; // {title: xxx, prefix: xxx}
@@ -388,9 +388,9 @@ const handle_text = (
 };
 
 const handle_work = work => {
-  const type = work.attr('type').value();
-  const poetId = work.attr('author').value();
-  const workId = work.attr('id').value();
+  const type = safeGetAttr(work, 'type');
+  const poetId = safeGetAttr(work, 'author');
+  const workId = safeGetAttr(work, 'id');
   let lines = [];
 
   const handle_section = (section, resolve_prev_next, section_titles) => {
@@ -401,7 +401,7 @@ const handle_work = work => {
     section.childNodes().forEach(part => {
       const partName = part.name();
       if (partName === 'poem') {
-        const textId = part.attr('id').value();
+        const textId = safeGetAttr(part, 'id');
         const head = getChildByTagName(part, 'head');
         const firstline = extractTitle(head, 'firstline');
         const title = extractTitle(head, 'title') || firstline;
@@ -476,7 +476,7 @@ const handle_work = work => {
           );
         }
       } else if (partName === 'prose') {
-        const textId = part.attr('id').value();
+        const textId = safeGetAttr(part, 'id');
         const head = getChildByTagName(part, 'head');
         const title = extractTitle(head, 'title');
         const toctitle = extractTitle(head, 'toctitle') || title;
@@ -525,7 +525,7 @@ const handle_work = work => {
   const resolve_prev_next = (function() {
     const items = findChildNodes(workbody, 'poem,prose,section[@id]').map(
       part => {
-        const textId = part.attr('id').value();
+        const textId = safeGetAttr(part, 'id');
         const head = getChildByTagName(part, 'head');
         const title = safeGetText(head, 'title');
         return { id: textId, title: title };
@@ -683,8 +683,8 @@ const works_second_pass = collected => {
       }
       let doc = loadXMLDoc(filename);
       const work = getChildByTagName(doc, 'kalliopework');
-      const status = work.attr('status').value();
-      const type = work.attr('type').value();
+      const status = safeGetAttr(work, 'status');
+      const type = safeGetAttr(work, 'type');
       const head = getChildByTagName(work, 'workhead');
       const title = safeGetText(head, 'title');
       const year = safeGetText(head, 'year');
@@ -935,10 +935,10 @@ collected.artwork = b('build_artwork', build_artwork, collected);
 b('build_museums', build_museums, collected);
 collected.variants = b('build_variants', build_variants, collected);
 b('build_mentions_json', build_mentions_json, collected);
-/*
 collected.textrefs = b('build_textrefs', build_textrefs, collected);
 build_dict_first_pass(collected);
 collected.keywords = b('build_keywords', build_keywords, collected);
+/*
 b('build_poet_lines_json', build_poet_lines_json, collected);
 b('build_poet_works_json', build_poet_works_json, collected);
 b('works_second_pass', works_second_pass, collected);

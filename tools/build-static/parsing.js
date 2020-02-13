@@ -6,10 +6,12 @@ const {
   get_museum_json,
 } = require('./museums.js');
 const {
-  safeGetText,
-  safeGetAttr,
   getElementByTagName,
   getElementsByTagName,
+  safeGetText,
+  safeGetAttr,
+  safeGetInnerXML,
+  safeTrim,
 } = require('./xml.js');
 const { poetName } = require('./formatting.js');
 const { imageSizeSync } = require('./image.js');
@@ -56,16 +58,16 @@ const extractSubtitles = (head, tag = 'subtitle', collected) => {
   return subtitles;
 };
 
-const get_picture = (picture, srcPrefix, collected, onError) => {
-  const primary = safeGetAttr(picture, 'primary') == 'true';
-  let src = safeGetAttr(picture, 'src');
-  const ref = safeGetAttr(picture, 'ref');
-  const year = safeGetAttr(picture, 'year');
-  const museumId = safeGetAttr(picture, 'museum');
-  const remoteUrl = build_museum_url(picture);
-  const museumLink = build_museum_link(picture) || '';
+const get_picture = (pictureNode, srcPrefix, collected, onError) => {
+  const primary = safeGetAttr(pictureNode, 'primary') == 'true';
+  let src = safeGetAttr(pictureNode, 'src');
+  const ref = safeGetAttr(pictureNode, 'ref');
+  const year = safeGetAttr(pictureNode, 'year');
+  const museumId = safeGetAttr(pictureNode, 'museum');
+  const remoteUrl = build_museum_url(pictureNode);
+  const museumLink = build_museum_link(pictureNode) || '';
   if (src != null) {
-    const lang = safeGetAttr(picture, 'lang') || 'da';
+    const lang = safeGetAttr(pictureNode, 'lang') || 'da';
     if (src.charAt(0) !== '/') {
       src = srcPrefix + '/' + src;
     }
@@ -78,7 +80,7 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
       museum: get_museum_json(museumId),
       content_lang: 'da',
       content_html: htmlToXml(
-        safeGetInnerXML(picture).trim() + museumLink,
+        safeTrim(safeGetInnerXML(pictureNode)) + museumLink,
         collected
       ),
       primary,
@@ -92,12 +94,12 @@ const get_picture = (picture, srcPrefix, collected, onError) => {
       onError(`fandt en ref "${ref}" som ikke matcher noget kendt billede.`);
     }
     const artist = collected.poets.get(artwork.artistId);
-    const museumId = safeGetAttr(picture, 'museum');
-    const remoteUrl = build_museum_url(picture);
+    const museumId = safeGetAttr(pictureNode, 'museum');
+    const remoteUrl = build_museum_url(pictureNode);
     let description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
       artwork.content_raw
     }`;
-    const extraDescription = safeGetInnerXML(picture).trim();
+    const extraDescription = safeTrim(safeGetInnerXML(pictureNode));
     if (extraDescription.length > 0) {
       description = extraDescription + '\n\n' + description;
     }
@@ -147,7 +149,7 @@ const get_pictures = (head, srcPrefix, xmlFilename, collected) => {
   const onError = message => {
     throw `${xmlFilename}: ${message}`;
   };
-  return head.find('pictures/picture').map(p => {
+  return getElementsByTagName(head, 'picture').map(p => {
     return get_picture(p, srcPrefix, collected, onError);
   });
 };

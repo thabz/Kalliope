@@ -74,7 +74,7 @@ const build_dict_second_pass = collected => {
       if (item.name() !== 'entry') {
         return;
       }
-      const id = item.attr('id').value();
+      const id = safeGetAttr(item, 'id');
       const body = getChildByTagName(item, 'forkl');
       const title = safeGetText(item, 'ord');
       let phrase = null;

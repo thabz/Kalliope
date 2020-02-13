@@ -33,8 +33,8 @@ const load_timeline = (filename, collected) => {
     return [];
   }
   return doc.find('//events/entry').map(event => {
-    const type = event.attr('type').value();
-    const date = event.attr('date').value();
+    const type = safeGetAttr(event, 'type');
+    const date = safeGetAttr(event, 'date');
     let data = {
       date,
       type,

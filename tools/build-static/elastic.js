@@ -13,8 +13,8 @@ const update_elasticsearch = collected => {
         }
         let doc = loadXMLDoc(filename);
         const work = getChildByTagName(doc, 'kalliopework');
-        const status = work.attr('status').value();
-        const type = work.attr('type').value();
+        const status = safeGetAttr(work, 'status');
+        const type = safeGetAttr(work, 'type');
         const head = getChildByTagName(work, 'workhead');
         const title = safeGetText(head, 'title');
         const year = safeGetText(head, 'year');
@@ -37,7 +37,7 @@ const update_elasticsearch = collected => {
           data
         );
         doc.find('//poem|//prose').forEach(text => {
-          const textId = text.attr('id').value();
+          const textId = safeGetAttr(text, 'id');
           const head = getChildByTagName(text, 'head');
           const body = getChildByTagName(text, 'body');
           const title =

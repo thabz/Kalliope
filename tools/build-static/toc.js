@@ -20,7 +20,7 @@ const build_section_toc = section => {
   section.childNodes().forEach(part => {
     const partName = part.name();
     if (partName === 'poem') {
-      const textId = part.attr('id').value();
+      const textId = safeGetAttr(part, 'id');
       const head = getChildByTagName(part, 'head');
       const firstline = extractTitle(head, 'firstline');
       const title = extractTitle(head, 'title') || firstline;
@@ -47,7 +47,7 @@ const build_section_toc = section => {
         content: subtoc,
       });
     } else if (partName === 'prose') {
-      const textId = part.attr('id').value();
+      const textId = safeGetAttr(part, 'id');
       const head = getChildByTagName(part, 'head');
       const title = extractTitle(head, 'title');
       const toctitle = extractTitle(head, 'toctitle') || title;
@@ -79,9 +79,9 @@ const extract_subworks = (poetId, workbody, collected) => {
 const build_works_toc = collected => {
   // Returns {toc, subworks, notes, pictures}
   const extract_work_data = work => {
-    const type = work.attr('type').value();
-    const poetId = work.attr('author').value();
-    const workId = work.attr('id').value();
+    const type = safeGetAttr(work, 'type');
+    const poetId = safeGetAttr(work, 'author');
+    const workId = safeGetAttr(work, 'id');
     const parentId = safeGetAttr(work, 'parent');
     let lines = [];
 
@@ -121,8 +121,8 @@ const build_works_toc = collected => {
       }
       let doc = loadXMLDoc(filename);
       const work = getChildByTagName(doc, 'kalliopework');
-      const status = work.attr('status').value();
-      const type = work.attr('type').value();
+      const status = safeGetAttr(work, 'status');
+      const type = safeGetAttr(work, 'type');
       const parentId = safeGetAttr(work, 'parent');
       const head = getChildByTagName(work, 'workhead');
       const title = safeGetText(head, 'title');

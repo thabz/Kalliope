@@ -141,7 +141,7 @@ const safeGetInnerXML = element => {
 };
 
 const safeGetAttr = (element, attrName) => {
-  if (element) {
+  if (element && element.hasAttribute(attrName)) {
     return element.getAttribute(attrName);
   } else {
     return null;
@@ -152,10 +152,15 @@ const tagName = element => {
   return element.tagName;
 };
 
+const safeTrim = str => {
+  return str == null ? null : str.trim();
+};
+
 module.exports = {
   loadXMLDoc,
   safeGetText,
   safeGetAttr,
+  safeTrim,
   getElementByTagName,
   getElementsByTagName,
   getElementsByTagNames,

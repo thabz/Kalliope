@@ -33,12 +33,16 @@ describe('XML parser', () => {
     const work = getElementByTagName(doc, 'work');
     const author = safeGetAttr(work, 'author');
     expect(author).toEqual('baggesen');
+    const nonExisting = safeGetAttr(work, 'non-existing-attr');
+    expect(nonExisting).toBeNull();
   });
 
   it('extract text', () => {
     const titleNode = getElementByTagName(doc, 'title');
     const title = safeGetText(titleNode);
     expect(title).toEqual('Ode');
+    const nonExisting = getElementByTagName(doc, 'non-existing-child');
+    expect(nonExisting).toBeNull();
   });
 
   it('extract text with HTML entities', () => {
