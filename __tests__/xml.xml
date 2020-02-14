@@ -6,8 +6,19 @@
     <source ref="source-ref"  facsimile="115308040544_color" facsimile-pages-num="228" facsimile-pages-offset="28">Ingemann: <i>Digte</i></source>
   </head>
   <body>
-    <poem>x</poem>
-    <prose>&AElig;ble</prose>
-    <poem>x</poem>
+    <poem pos="1">x</poem>
+    <prose pos="2">&AElig;ble</prose>
+    <poem pos="3">x</poem>
+    <section>
+      <poem pos="4">x</poem>
+      <prose pos="5"></prose>
+      <section>
+        <poem pos="6">x</poem>
+        <prose pos="7"></prose>      
+        <poem pos="8">x</poem>      
+      </section>      
+      <poem pos="9">x</poem>      
+      <prose pos="10"></prose>      
+    </section>
   </body>
 </work>

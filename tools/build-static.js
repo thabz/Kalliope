@@ -526,7 +526,6 @@ const handle_work = work => {
 
   // Create function to resolve prev/next links in texts
   const resolve_prev_next = (function() {
-    // TODO: Denne returnerer ikke i korrekt rækkefølge!
     const items = getElementsByTagNames(workbody, ['poem', 'prose', 'section'])
       .filter(part => safeGetAttr('id') != null)
       .map(part => {

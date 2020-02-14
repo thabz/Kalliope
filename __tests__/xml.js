@@ -86,11 +86,12 @@ describe('XML parser', () => {
 
   it('understands direct children in order', () => {
     const body = getElementByTagName(doc, 'body');
-    const children = getChildren(body, 'poem');
-    expect(children.length).toEqual(3);
+    const children = getChildren(body);
+    expect(children.length).toEqual(4);
     expect(tagName(children[0])).toEqual('poem');
     expect(tagName(children[1])).toEqual('prose');
     expect(tagName(children[2])).toEqual('poem');
+    expect(tagName(children[3])).toEqual('section');
   });
 
   it('understands multiple children', () => {
@@ -99,7 +100,7 @@ describe('XML parser', () => {
     expect(body).not.toBeNull();
     const children = getElementsByTagName(body, 'poem');
     expect(children).not.toBeNull();
-    expect(children.length).toEqual(2);
+    expect(children.length).toEqual(6);
     children.forEach(c => {
       expect(tagName(c)).toEqual('poem');
     });
@@ -111,6 +112,35 @@ describe('XML parser', () => {
     expect(body).not.toBeNull();
     const children = getElementsByTagNames(body, ['poem', 'prose']);
     expect(children).not.toBeNull();
-    expect(children.length).toEqual(3);
+    expect(children.length).toEqual(10);
+  });
+
+  it('recursive find returns sorted', () => {
+    const work = getElementByTagName(doc, 'work');
+    const body = getElementByTagName(doc, 'body');
+    expect(body).not.toBeNull();
+    const children = getElementsByTagNames(body, ['poem', 'prose']);
+    expect(children).not.toBeNull();
+    expect(children.length).toEqual(10);
+    expect(tagName(children[0])).toEqual('poem');
+    expect(tagName(children[1])).toEqual('prose');
+    expect(tagName(children[2])).toEqual('poem');
+    expect(tagName(children[3])).toEqual('poem');
+    expect(tagName(children[4])).toEqual('prose');
+    expect(tagName(children[5])).toEqual('poem');
+    expect(tagName(children[6])).toEqual('prose');
+    expect(tagName(children[7])).toEqual('poem');
+    expect(tagName(children[8])).toEqual('poem');
+    expect(tagName(children[9])).toEqual('prose');
+    expect(safeGetAttr(children[0], 'pos')).toEqual('1');
+    expect(safeGetAttr(children[1], 'pos')).toEqual('2');
+    expect(safeGetAttr(children[2], 'pos')).toEqual('3');
+    expect(safeGetAttr(children[3], 'pos')).toEqual('4');
+    expect(safeGetAttr(children[4], 'pos')).toEqual('5');
+    expect(safeGetAttr(children[5], 'pos')).toEqual('6');
+    expect(safeGetAttr(children[6], 'pos')).toEqual('7');
+    expect(safeGetAttr(children[7], 'pos')).toEqual('8');
+    expect(safeGetAttr(children[8], 'pos')).toEqual('9');
+    expect(safeGetAttr(children[9], 'pos')).toEqual('10');
   });
 });

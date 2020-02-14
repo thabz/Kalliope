@@ -47,7 +47,7 @@ const getElementsByTagNames = (element, tagNames) => {
     });
     // Flatten
     const merged = [].concat.apply([], arrays);
-    return merged;
+    return merged.sort(_sortBySourceOrder);
   } else {
     return null;
   }
@@ -75,7 +75,7 @@ const getChildren = element => {
         result.push(child);
       }
     }
-    return result;
+    return result.sort(_sortBySourceOrder);
   } else {
     return null;
   }
@@ -154,6 +154,14 @@ const tagName = element => {
 
 const safeTrim = str => {
   return str == null ? null : str.trim();
+};
+
+const _sortBySourceOrder = (a, b) => {
+  if (a.lineNumber === b.lineNumber) {
+    return a.columnNumber > b.columnNumber ? 1 : -1;
+  } else {
+    return a.lineNumber > b.lineNumber ? 1 : -1;
+  }
 };
 
 module.exports = {
