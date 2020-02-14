@@ -66,7 +66,7 @@ const update_elasticsearch = collected => {
             id: textId,
             title: replaceDashes(title),
             subtitles,
-            is_prose: text.name() === 'prose',
+            is_prose: tagName(text) === 'prose',
             keywords: keywordsArray,
             content_html: htmlToXml(
               safeGetInnerXML(body)
@@ -74,7 +74,7 @@ const update_elasticsearch = collected => {
                 .replace(/<footnote>.*?<\/footnote>/g, '')
                 .replace(/<.*?>/g, ' '),
               collected,
-              text.name() === 'poem'
+              tagName(text) === 'poem'
             )
               .map(line => line[0])
               .join(' ')

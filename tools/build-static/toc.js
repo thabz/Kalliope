@@ -2,13 +2,19 @@ const { isFileModified } = require('../libs/caching.js');
 const {
   safeMkdir,
   writeJSON,
-  loadXMLDoc,
   htmlToXml,
   replaceDashes,
   fileExists,
 } = require('../libs/helpers.js');
 const { extractTitle, get_notes, get_pictures } = require('./parsing.js');
-const { safeGetText, safeGetAttr } = require('./xml.js');
+const {
+  loadXMLDoc,
+  getChildren,
+  tagName,
+  safeGetText,
+  safeGetAttr,
+  getChildByTagName,
+} = require('./xml.js');
 
 // Rekursiv function som bruges til at bygge værkers indholdsfortegnelse,
 // men også del-indholdstegnelser til de linkbare sektioner som har en id.
@@ -17,8 +23,8 @@ const build_section_toc = section => {
   let proses = [];
   let toc = [];
 
-  section.childNodes().forEach(part => {
-    const partName = part.name();
+  getChildren(section).forEach(part => {
+    const partName = tagName(part);
     if (partName === 'poem') {
       const textId = safeGetAttr(part, 'id');
       const head = getChildByTagName(part, 'head');
@@ -32,7 +38,7 @@ const build_section_toc = section => {
         prefix: replaceDashes(toctitle.prefix),
       });
     } else if (partName === 'section') {
-      const subtoc = build_section_toc(part.get('content'));
+      const subtoc = build_section_toc(getChildByTagName(part, 'content'));
       const head = getChildByTagName(part, 'head');
       const level = parseInt(safeGetAttr(part, 'level') || '1');
       const sectionId = safeGetAttr(part, 'id');
@@ -66,7 +72,7 @@ const build_section_toc = section => {
 };
 
 const extract_subworks = (poetId, workbody, collected) => {
-  return workbody.find('//subwork').map(subworkNode => {
+  return getChildrenByTagName(workbody, 'subwork').map(subworkNode => {
     const subworkId = safeGetAttr(subworkNode, 'ref');
     const subwork = collected.works.get(`${poetId}/${subworkId}`);
     if (subwork == null) {

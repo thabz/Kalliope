@@ -34,6 +34,7 @@ const {
   loadXMLDoc,
   safeGetText,
   safeGetAttr,
+  getChildren,
   getChildByTagName,
   getChildrenByTagName,
   getElementByTagName,
@@ -43,6 +44,7 @@ const {
 } = require('./build-static/xml.js');
 const { build_sitemap_xml } = require('./build-static/sitemap.js');
 const { build_keywords } = require('./build-static/keywords.js');
+const { build_about_pages } = require('./build-static/about.js');
 const { build_portraits_json } = require('./build-static/portraits.js');
 const { build_todays_events_json } = require('./build-static/today.js');
 const {
@@ -367,7 +369,7 @@ const handle_text = (
       linktitle: replaceDashes(linktitle.title),
       subtitles,
       suptitles,
-      is_prose: text.name() === 'prose',
+      is_prose: tagName(text) === 'prose',
       text_type: textType,
       has_footnotes,
       notes: get_notes(head, collected),
@@ -401,8 +403,8 @@ const handle_work = work => {
     let proses = [];
     let toc = [];
 
-    section.childNodes().forEach(part => {
-      const partName = part.name();
+    getChildren(section).forEach(part => {
+      const partName = tagName(part);
       if (partName === 'poem') {
         const textId = safeGetAttr(part, 'id');
         const head = getChildByTagName(part, 'head');
@@ -457,10 +459,11 @@ const handle_work = work => {
         }
         const linktitle = extractTitle(head, 'linktitle') || toctitle || title;
         const breadcrumb = { title: linktitle.title, id: sectionId };
-        const subtoc = handle_section(part.get('content'), resolve_prev_next, [
-          ...section_titles,
-          breadcrumb,
-        ]);
+        const subtoc = handle_section(
+          getChildByTagName(part, 'content'),
+          resolve_prev_next,
+          [...section_titles, breadcrumb]
+        );
         toc.push({
           type: 'section',
           id: sectionId,
@@ -527,7 +530,7 @@ const handle_work = work => {
   // Create function to resolve prev/next links in texts
   const resolve_prev_next = (function() {
     const items = getElementsByTagNames(workbody, ['poem', 'prose', 'section'])
-      .filter(part => safeGetAttr('id') != null)
+      .filter(part => safeGetAttr(part, 'id') != null)
       .map(part => {
         const textId = safeGetAttr(part, 'id');
         const head = getChildByTagName(part, 'head');
@@ -640,7 +643,9 @@ const works_first_pass = collected => {
 
         if (linkTitle == null) {
           throw new Error(
-            `fdirs/${poetId}/${workId}.xml has ${part.name()} ${textId} without title.`
+            `fdirs/${poetId}/${workId}.xml has ${tagName(
+              part
+            )} ${textId} without title.`
           );
         }
         texts.set(textId, {
@@ -824,7 +829,7 @@ const build_news = collected => {
     const items = getChildenByTagName(doc, 'items');
     let list = [];
     items.childNodes().forEach(item => {
-      if (item.name() !== 'item') {
+      if (tagName(item) !== 'item') {
         return;
       }
       const date = safeGetText(item, 'date');
@@ -841,71 +846,6 @@ const build_news = collected => {
     writeJSON(outfile, list);
     console.log(outfile);
   });
-};
-
-const build_about_pages = collected => {
-  safeMkdir(`static/api/about`);
-  // Regenerate all about-pages if any work-file is modified, since our poem-counts then might be off
-  const areAnyWorkModified = Array.from(collected.works.keys())
-    .filter(key => {
-      return isFileModified(`fdirs/${key}.xml`);
-    })
-    .reduce((result, b) => b || result, false);
-  const folder = 'data/about';
-  const filenames = fs
-    .readdirSync(folder)
-    .filter(x => x.endsWith('.xml'))
-    .map(x => {
-      return {
-        xml: `${folder}/${x}`,
-        json: `static/api/about/${x.replace(/.xml$/, '.json')}`,
-      };
-    })
-    .filter(paths => isFileModified(paths.xml) || areAnyWorkModified)
-    .forEach(paths => {
-      let lang = 'da';
-      const m = paths.xml.match(/_(..)\.xml$/);
-      if (m) {
-        lang = m[1];
-      }
-      const doc = loadXMLDoc(paths.xml);
-      const about = getChildByTagName(doc, 'about');
-      const head = getChildByTagName(about, 'head');
-      const body = getChildByTagName(about, 'body');
-      const title = safeGetText(head, 'title');
-      const pictures = get_pictures(
-        head,
-        '/static/images/about',
-        paths.xml,
-        collected
-      );
-      const author = safeGetText(head, 'author');
-      const poemsNum = Array.from(collected.texts.values())
-        .map(t => (t.type === 'poem' ? 1 : 0))
-        .reduce((sum, v) => sum + v, 0);
-      const poetsNum = Array.from(collected.poets.values())
-        .map(t => (t.type === 'poet' ? 1 : 0))
-        .reduce((sum, v) => sum + v, 0);
-      const notes = get_notes(head, collected, {
-        poemsNum: poemsNum.toLocaleString(lang),
-        poetsNum: poetsNum.toLocaleString(lang),
-        worksNum: collected.works.size.toLocaleString(lang),
-        langsNum: 8 - 1, // gb og us er begge engelsk.
-      });
-      // Data er samme format som keywords
-      const data = {
-        id: paths.xml,
-        title,
-        author,
-        has_footnotes: false,
-        pictures,
-        notes,
-        content_lang: 'da',
-        content_html: htmlToXml(safeGetInnerXML(body), collected),
-      };
-      console.log(paths.json);
-      writeJSON(paths.json, data);
-    });
 };
 
 const build_redirects_json = collected => {
@@ -955,13 +895,13 @@ b('build_news', build_news, collected);
 b('build_about_pages', build_about_pages, collected);
 b('build_global_lines_json', build_global_lines_json, collected);
 b('build_dict_second_pass', build_dict_second_pass, collected);
+*/
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
 b('build_sitemap_xml', build_sitemap_xml, collected);
 b('build_anniversaries_ical', build_anniversaries_ical, collected);
 b('build_image_thumbnails', build_image_thumbnails);
 b('update_elasticsearch', update_elasticsearch, collected);
-*/
 refreshFilesModifiedCache();
 flushImageSizeCache();
 print_benchmarking_results();

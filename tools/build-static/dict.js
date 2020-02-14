@@ -19,7 +19,7 @@ const build_dict_first_pass = collected => {
     .get('//entries')
     .childNodes()
     .forEach(item => {
-      if (item.name() !== 'entry') {
+      if (tagName(item) !== 'entry') {
         return;
       }
       const id = safeGetAttr(item, 'id');
@@ -71,16 +71,13 @@ const build_dict_second_pass = collected => {
     .get('//entries')
     .childNodes()
     .forEach(item => {
-      if (item.name() !== 'entry') {
+      if (tagName(item) !== 'entry') {
         return;
       }
       const id = safeGetAttr(item, 'id');
       const body = getChildByTagName(item, 'forkl');
       const title = safeGetText(item, 'ord');
-      let phrase = null;
-      if (item.get('frase')) {
-        phrase = safeGetText(text, 'frase');
-      }
+      const phrase = safeGetText(text, 'frase');
       const variants = getChilrenByTagName(item, 'var').map(varItem =>
         safeGetText(varItem)
       );
