@@ -4,7 +4,16 @@ const {
   writeCachedJSON,
 } = require('../libs/caching.js');
 const { safeMkdir, writeJSON, htmlToXml } = require('../libs/helpers.js');
-const { safeGetInnerXML, loadXMLDoc } = './xml.js';
+const {
+  safeGetAttr,
+  safeGetText,
+  getElementsByTagName,
+  getChildByTagName,
+  getChildrenByTagName,
+  tagName,
+  safeGetInnerXML,
+  loadXMLDoc,
+} = require('./xml.js');
 
 const build_dict_first_pass = collected => {
   const path = `data/dict.xml`;
@@ -15,21 +24,15 @@ const build_dict_first_pass = collected => {
 
   safeMkdir('static/api/dict');
   const doc = loadXMLDoc(path);
-  doc
-    .get('//entries')
-    .childNodes()
-    .forEach(item => {
-      if (tagName(item) !== 'entry') {
-        return;
-      }
-      const id = safeGetAttr(item, 'id');
-      const title = safeGetText(item, 'ord');
-      const simpleData = {
-        id,
-        title,
-      };
-      collected.dict.set(id, simpleData);
-    });
+  getElementsByTagName(doc, 'entry').forEach(item => {
+    const id = safeGetAttr(item, 'id');
+    const title = safeGetText(item, 'ord');
+    const simpleData = {
+      id,
+      title,
+    };
+    collected.dict.set(id, simpleData);
+  });
   writeCachedJSON('collected.dict', Array.from(collected.dict));
 };
 
