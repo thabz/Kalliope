@@ -14,6 +14,7 @@ const {
   safeGetText,
   safeGetAttr,
   getChildByTagName,
+  getChildrenByTagName,
 } = require('./xml.js');
 
 // Rekursiv function som bruges til at bygge værkers indholdsfortegnelse,

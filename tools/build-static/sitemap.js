@@ -1,10 +1,14 @@
-const {
-  safeMkdir,
-  loadXMLDoc,
-  writeText,
-  fileExists,
-} = require('../libs/helpers.js');
+const { safeMkdir, writeText, fileExists } = require('../libs/helpers.js');
 const { isFileModified } = require('../libs/caching.js');
+const {
+  loadXMLDoc,
+  safeGetInnerXML,
+  safeGetText,
+  safeGetAttr,
+  getElementsByTagNames,
+  getChildByTagName,
+} = require('./xml.js');
+
 const build_sitemap_xml = collected => {
   safeMkdir(`static/sitemaps`);
 
@@ -70,10 +74,16 @@ const build_sitemap_xml = collected => {
           if (doc == null) {
             console.log("Couldn't load", filename);
           }
-          doc.find('//poem|//prose').forEach(part => {
-            const textId = safeGetAttr(part, 'id');
-            poet_text_urls.push(`https://kalliope.org/${lang}/text/${textId}`);
-          });
+          getElementsByTagNames(doc, ['poem', 'prose', 'section']).forEach(
+            part => {
+              const textId = safeGetAttr(part, 'id');
+              if (textId != null) {
+                poet_text_urls.push(
+                  `https://kalliope.org/${lang}/text/${textId}`
+                );
+              }
+            }
+          );
         }
       });
     });

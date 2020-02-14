@@ -1,5 +1,5 @@
-const { loadXMLDoc } = require('../libs/helpers.js');
 const { get_picture } = require('./parsing.js');
+const { loadXMLDoc, getElementsByTagName } = require('./xml.js');
 
 const build_portraits_json = (poet, collected) => {
   let result = [];
@@ -11,7 +11,7 @@ const build_portraits_json = (poet, collected) => {
     onError = message => {
       throw `fdirs/${poet.id}/portraits.xml: ${message}`;
     };
-    result = doc.find('//pictures/picture').map(picture => {
+    result = getElementsByTagName(doc, 'picture').map(picture => {
       picture = get_picture(
         picture,
         `/static/images/${poet.id}`,

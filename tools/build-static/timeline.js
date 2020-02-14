@@ -1,6 +1,12 @@
 const { safeMkdir, writeJSON, htmlToXml } = require('../libs/helpers.js');
 const { isFileModified } = require('../libs/caching.js');
-const { safeGetAttr, safeGetInnerXML, loadXMLDoc } = require('./xml.js');
+const {
+  safeGetAttr,
+  safeGetInnerXML,
+  getChildByTagName,
+  loadXMLDoc,
+  getElementsByTagName,
+} = require('./xml.js');
 const { get_picture } = require('./parsing.js');
 
 // Accepterer YYYY, YYYY-MM, YYYY-MM-DD og returnerer altid YYYY-MM-DD
@@ -32,7 +38,7 @@ const load_timeline = (filename, collected) => {
   if (doc == null) {
     return [];
   }
-  return doc.find('//events/entry').map(event => {
+  return getElementsByTagName(doc, 'event').map(event => {
     const type = safeGetAttr(event, 'type');
     const date = safeGetAttr(event, 'date');
     let data = {

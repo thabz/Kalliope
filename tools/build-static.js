@@ -826,9 +826,9 @@ const build_news = collected => {
       return;
     }
     const doc = loadXMLDoc(path);
-    const items = getChildenByTagName(doc, 'items');
+    const items = getChildByTagName(doc, 'items');
     let list = [];
-    items.childNodes().forEach(item => {
+    getChildren(items).forEach(item => {
       if (tagName(item) !== 'item') {
         return;
       }
@@ -883,7 +883,6 @@ collected.keywords = b('build_keywords', build_keywords, collected);
 b('build_poet_lines_json', build_poet_lines_json, collected);
 b('build_poet_works_json', build_poet_works_json, collected);
 b('works_second_pass', works_second_pass, collected);
-/*
 b('build_works_toc', build_works_toc, collected);
 collected.timeline = b(
   'build_global_timeline',
@@ -895,7 +894,6 @@ b('build_news', build_news, collected);
 b('build_about_pages', build_about_pages, collected);
 b('build_global_lines_json', build_global_lines_json, collected);
 b('build_dict_second_pass', build_dict_second_pass, collected);
-*/
 b('build_todays_events_json', build_todays_events_json, collected);
 b('build_redirects_json', build_redirects_json, collected);
 b('build_sitemap_xml', build_sitemap_xml, collected);

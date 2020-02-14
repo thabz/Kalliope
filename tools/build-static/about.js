@@ -5,7 +5,7 @@ const {
   loadCachedJSON,
   writeCachedJSON,
 } = require('../libs/caching.js');
-const { get_pictures } = require('./parsing.js');
+const { get_pictures, get_notes } = require('./parsing.js');
 const {
   loadXMLDoc,
   safeGetInnerXML,
