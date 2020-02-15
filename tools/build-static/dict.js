@@ -75,8 +75,8 @@ const build_dict_second_pass = collected => {
     const id = safeGetAttr(item, 'id');
     const body = getChildByTagName(item, 'forkl');
     const title = safeGetText(item, 'ord');
-    const phrase = safeGetText(text, 'frase');
-    const variants = getChilrenByTagName(item, 'var').map(varItem =>
+    const phrase = safeGetText(item, 'frase');
+    const variants = getChildrenByTagName(item, 'var').map(varItem =>
       safeGetText(varItem)
     );
     variants.forEach(variant => {
