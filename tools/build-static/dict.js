@@ -70,32 +70,27 @@ const build_dict_second_pass = collected => {
   };
 
   const doc = loadXMLDoc(path);
-  doc
-    .get('//entries')
-    .childNodes()
-    .forEach(item => {
-      if (tagName(item) !== 'entry') {
-        return;
-      }
-      const id = safeGetAttr(item, 'id');
-      const body = getChildByTagName(item, 'forkl');
-      const title = safeGetText(item, 'ord');
-      const phrase = safeGetText(text, 'frase');
-      const variants = getChilrenByTagName(item, 'var').map(varItem =>
-        safeGetText(varItem)
+
+  getElementsByTagName(doc, 'entry').forEach(item => {
+    const id = safeGetAttr(item, 'id');
+    const body = getChildByTagName(item, 'forkl');
+    const title = safeGetText(item, 'ord');
+    const phrase = safeGetText(text, 'frase');
+    const variants = getChilrenByTagName(item, 'var').map(varItem =>
+      safeGetText(varItem)
+    );
+    variants.forEach(variant => {
+      createItem(
+        variant,
+        variant,
+        null,
+        null,
+        `<b>${variant}</b>: se <a dict="${id}">${title}</a>.`,
+        collected
       );
-      variants.forEach(variant => {
-        createItem(
-          variant,
-          variant,
-          null,
-          null,
-          `<b>${variant}</b>: se <a dict="${id}">${title}</a>.`,
-          collected
-        );
-      });
-      createItem(id, title, phrase, variants, body, collected);
     });
+    createItem(id, title, phrase, variants, body, collected);
+  });
   writeJSON(`static/api/dict.json`, items);
 };
 
