@@ -29,7 +29,9 @@ const person_mentions_dirty = new Set();
 const build_person_or_keyword_refs = collected => {
   let person_or_keyword_refs = new Map([]);
   if (!force_reload) {
-    loadCachedJSON('collected.person_or_keyword_refs') || [];
+    person_or_keyword_refs = new Map(
+      loadCachedJSON('collected.person_or_keyword_refs') || []
+    );
   }
   const forced_reload = person_or_keyword_refs.size == 0;
   let found_changes = false;
