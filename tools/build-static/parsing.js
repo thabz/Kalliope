@@ -21,18 +21,12 @@ const { imageSizeSync } = require('./image.js');
 // Returns raw {title: string, prefix?: string}
 // Both can be converted to xml using htmlToXml(...)
 const extractTitle = (head, type) => {
-  const element = getElementByTagName(head, type);
+  const element = getChildByTagName(head, type);
   if (element == null) {
     return null;
   }
-  let title = safeGetText(element);
-  title = entities
-    .decodeHTML(title)
-    .replace('<' + type + '>', '')
-    .replace('<' + type + ' force-index="true">', '')
-    .replace('</' + type + '>', '')
-    .replace('<' + type + '/>', '');
-  if (title.length == 0) {
+  let title = safeGetInnerXML(element);
+  if (title == null || title.length === 0) {
     return null;
   }
   const parts = title.match(/<num>([^<]*)<\/num>(.*)$/);

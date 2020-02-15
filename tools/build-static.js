@@ -589,6 +589,7 @@ const works_first_pass = collected => {
 
       const parentId = safeGetAttr(work, 'parent');
       const head = getElementByTagName(work, 'workhead');
+      const workBody = getElementByTagName(work, 'workbody');
       const title = replaceDashes(safeGetText(head, 'title'));
       const toctitle = extractTitle(head, 'toctitle') || { title };
       const linktitle = replaceDashes(safeGetText(head, 'linktitle')) || title;
@@ -604,10 +605,10 @@ const works_first_pass = collected => {
           `fdirs/${poetId}/${workId}.xml has wrong author-attribute in <kalliopework>`
         );
       }
-      const workTexts = getElementsByTagNames(work, [
+      const workTexts = getElementsByTagNames(workBody, [
         'poem',
         'prose',
-        'subwork',
+        'section',
       ]);
       const fullWorkId = `${poetId}/${workId}`;
       works.set(fullWorkId, {
@@ -633,8 +634,9 @@ const works_first_pass = collected => {
         if (tagName(part) === 'section' && textId == null) {
           return;
         }
-        const head = getElementByTagName(part, 'title');
+        const head = getChildByTagName(part, 'head');
         const firstline = extractTitle(head, 'firstline');
+        const title = extractTitle(head, 'title');
         const linktitle = extractTitle(head, 'linktitle');
         const indextitle = extractTitle(head, 'indextitle');
 
