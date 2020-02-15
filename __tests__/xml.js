@@ -143,4 +143,12 @@ describe('XML parser', () => {
     expect(safeGetAttr(children[8], 'pos')).toEqual('9');
     expect(safeGetAttr(children[9], 'pos')).toEqual('10');
   });
+
+  it('empty is not null', () => {
+    const work = getElementByTagName(doc, 'work');
+    const body = getElementByTagName(doc, 'bodyx');
+    const children = getElementsByTagNames(body, ['poem', 'prose']);
+    expect(children).not.toBeNull();
+    expect(children).toHaveLength(0);
+  });
 });

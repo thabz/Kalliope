@@ -33,10 +33,8 @@ const getElementsByTagName = (element, tagName) => {
     for (let i = 0; i < list.length; i++) {
       result.push(list[i]);
     }
-    return result;
-  } else {
-    return null;
   }
+  return result;
 };
 
 // Ex. getElementsByTagNames(work, ['poem','section'])
@@ -49,7 +47,7 @@ const getElementsByTagNames = (element, tagNames) => {
     const merged = [].concat.apply([], arrays);
     return merged.sort(_sortBySourceOrder);
   } else {
-    return null;
+    return [];
   }
 };
 
