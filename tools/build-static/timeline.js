@@ -38,7 +38,7 @@ const load_timeline = (filename, collected) => {
   if (doc == null) {
     return [];
   }
-  return getElementsByTagName(doc, 'event').map(event => {
+  return getElementsByTagName(doc, 'entry').map(event => {
     const type = safeGetAttr(event, 'type');
     const date = safeGetAttr(event, 'date');
     let data = {
