@@ -3,7 +3,6 @@ const deasync = require('deasync');
 const entities = require('entities');
 const { DOMParser } = require('xmldom');
 const bible = require('./bible-abbr.js');
-const async = require('async');
 const path = require('path');
 const jimp = require('jimp');
 const CommonData = require('../../common/commondata.js');
@@ -314,24 +313,24 @@ const htmlToXml = (
   return lines;
 };
 
-let resizeImageQueue = async.queue((task, callback) => {
-  jimp
+const resizeImage = (inputfile, outputfile, maxWidth) => {
+  const task = { inputfile, outputfile, maxWidth };
+  return jimp
     .read(task.inputfile)
     .then(image => {
-      image
-        .resize(task.maxWidth, jimp.AUTO)
-        // TODO: Don't scale up
-        .write(task.outputfile);
+      console.log(task.outputfile);
+      return (
+        image
+          .resize(task.maxWidth, jimp.AUTO)
+          // TODO: Don't scale up
+          .write(task.outputfile)
+      );
     })
     .catch(err => {
       console.log(err);
       console.log(task.outputfile);
-      callback();
+      onError();
     });
-}, 2);
-
-const resizeImage = (inputfile, outputfile, maxWidth) => {
-  resizeImageQueue.push({ inputfile, outputfile, maxWidth });
 };
 
 const buildThumbnails = (topFolder, isFileModifiedMethod) => {
