@@ -319,12 +319,11 @@ const resizeImage = (inputfile, outputfile, maxWidth) => {
     .read(task.inputfile)
     .then(image => {
       console.log(task.outputfile);
-      return (
-        image
-          .resize(task.maxWidth, jimp.AUTO)
-          // TODO: Don't scale up
-          .write(task.outputfile)
-      );
+      if (image.bitmap.width < maxWidth) {
+        return image;
+      } else {
+        return image.resize(task.maxWidth, jimp.AUTO).write(task.outputfile);
+      }
     })
     .catch(err => {
       console.log(err);
