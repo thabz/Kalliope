@@ -143,18 +143,18 @@ const News = ({ news }: NewsProps) => {
             }
 
             :global(div.news-item h3) {
-              font-weight: 300;
+              font-weight: 400;
               font-size: 1.3em;
               margin: 0 0 20px 0;
               padding: 0;
             }
             div.news-body {
               line-height: 1.6;
-              font-weight: 300;
+              font-weight: 400;
             }
             div.news-date {
               margin-top: 5px;
-              font-weight: 300;
+              font-weight: 400;
               font-size: 0.8em;
               color: #757575;
             }

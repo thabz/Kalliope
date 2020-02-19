@@ -91,7 +91,6 @@ class MissingPortrait extends React.Component<MissingPortraitProps> {
       display: 'inline-block',
       border: '3px dotted black',
       width: '100%',
-      height: '300px',
       borderRadius: '20px',
     };
     return (
