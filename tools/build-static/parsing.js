@@ -54,7 +54,7 @@ const extractSubtitles = (head, tag = 'subtitle', collected) => {
   return subtitles;
 };
 
-const get_picture = (pictureNode, srcPrefix, collected, onError) => {
+const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
   const primary = safeGetAttr(pictureNode, 'primary') == 'true';
   let src = safeGetAttr(pictureNode, 'src');
   const ref = safeGetAttr(pictureNode, 'ref');

@@ -862,7 +862,6 @@ const build_redirects_json = collected => {
 };
 
 const build_image_thumbnails = () => {
-  return;
   buildThumbnails('static/images', isFileModified);
   buildThumbnails('static/kunst', isFileModified);
 };

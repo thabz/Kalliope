@@ -12,28 +12,39 @@ let collected_imagesizes = new Map(
 );
 
 const imageSizeAsync = async filename => {
-  if (!fileExists(filename)) {
-    return Promise.reject(`image size failed for file: ${filename}`);
-  }
-  const cached = collected_imagesizes.get(filename);
-  if (cached != null && !isFileModified(filename)) {
-    return Promise.resolve(cached);
-  } else {
-    jimp.read(filename).then(image => {
-      const size = { width: image.bitmap.width, height: image.bitmap.height };
-      collected_imagesizes.set(filename, size);
-      return size;
-    });
-  }
-};
-
-const imageSizeCallback = (filename, callback) => {
-  const size = imageSizeAsync(filename).then(size => {
-    callback(null, size);
+  return new Promise((resolve, reject) => {
+    if (!fileExists(filename)) {
+      reject(`image size failed for file: ${filename}`);
+    } else {
+      const cached = collected_imagesizes.get(filename);
+      if (cached != null && !isFileModified(filename)) {
+        resolve(cached);
+      } else {
+        jimp.read(filename).then(image => {
+          const size = {
+            width: image.bitmap.width,
+            height: image.bitmap.height,
+          };
+          collected_imagesizes.set(filename, size);
+          resolve(size);
+        });
+      }
+    }
   });
 };
 
-const imageSizeSync = deasync(imageSizeCallback);
+const imageSizeCallback = (filename, callback) => {
+  callback(null, { width: 1, height: 1 });
+  // imageSizeAsync(filename).then(size => {
+  //   callback(null, size);
+  // });
+};
+
+//const imageSizeSync = deasync(imageSizeCallback);
+
+const imageSizeSync = async filename => {
+  return await imageSizeAsync(filename);
+};
 
 const flushImageSizeCache = () => {
   writeCachedJSON('collected.imagesizes', Array.from(collected_imagesizes));

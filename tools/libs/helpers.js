@@ -4,6 +4,7 @@ const entities = require('entities');
 const { DOMParser } = require('xmldom');
 const bible = require('./bible-abbr.js');
 const path = require('path');
+const plimit = require('p-limit');
 const jimp = require('jimp');
 const CommonData = require('../../common/commondata.js');
 
@@ -314,28 +315,38 @@ const htmlToXml = (
 };
 
 const resizeImage = (inputfile, outputfile, maxWidth) => {
-  return jimp
-    .read(inputfile)
-    .then(image => {
-      console.log(outputfile);
-      if (image.bitmap.width < maxWidth) {
-        return image.write(outputfile);
-      } else {
-        return image
-          .resize(maxWidth, jimp.AUTO)
-          .write(outputfile)
-          .catch(e => {
-            console.log(outputfile + ' failed');
+  return new Promise((resolve, reject) => {
+    const task = { inputfile, outputfile, maxWidth };
+    jimp
+      .read(task.inputfile)
+      .then(image => {
+        if (image.bitmap.width < maxWidth) {
+          image.writeAsync(task.outputfile).then(() => {
+            console.log(outputfile);
+            resolve(outputfile);
           });
-      }
-    })
-    .catch(err => {
-      console.log(outputfile);
-      console.log(err);
-    });
+        } else {
+          image
+            .resize(task.maxWidth, jimp.AUTO)
+            .writeAsync(task.outputfile)
+            .then(() => {
+              console.log(outputfile);
+              resolve(outputfile);
+            });
+        }
+      })
+      .catch(err => {
+        console.log(err);
+        console.log(task.outputfile);
+        reject(err);
+      });
+  });
 };
 
+const limit = plimit(5);
+
 const buildThumbnails = (topFolder, isFileModifiedMethod) => {
+  const tasks = [];
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
 
@@ -373,7 +384,11 @@ const buildThumbnails = (topFolder, isFileModifiedMethod) => {
               .replace(/\/([^\/]+)$/, '/t/$1');
             safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
             if (!fileExists(outputfile)) {
-              resizeImage(fullFilename, outputfile, width);
+              tasks.push(
+                limit(() => {
+                  return resizeImage(fullFilename, outputfile, width);
+                })
+              );
             }
           });
         });
@@ -382,6 +397,11 @@ const buildThumbnails = (topFolder, isFileModifiedMethod) => {
   };
 
   handleDirRecursive(topFolder);
+
+  (async () => {
+    // Only five promises are to run simultaneously
+    const result = await Promise.all(tasks);
+  })();
 };
 
 module.exports = {
