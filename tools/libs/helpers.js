@@ -314,20 +314,19 @@ const htmlToXml = (
 };
 
 const resizeImage = (inputfile, outputfile, maxWidth) => {
-  const task = { inputfile, outputfile, maxWidth };
   return jimp
-    .read(task.inputfile)
+    .read(inputfile)
     .then(image => {
-      console.log(task.outputfile);
+      console.log(outputfile);
       if (image.bitmap.width < maxWidth) {
-        return image;
+        return image.write(outputfile);
       } else {
-        return image.resize(task.maxWidth, jimp.AUTO).write(task.outputfile);
+        return image.resize(maxWidth, jimp.AUTO).write(outputfile);
       }
     })
     .catch(err => {
+      console.log(outputfile);
       console.log(err);
-      console.log(task.outputfile);
       onError();
     });
 };
