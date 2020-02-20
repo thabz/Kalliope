@@ -321,13 +321,17 @@ const resizeImage = (inputfile, outputfile, maxWidth) => {
       if (image.bitmap.width < maxWidth) {
         return image.write(outputfile);
       } else {
-        return image.resize(maxWidth, jimp.AUTO).write(outputfile);
+        return image
+          .resize(maxWidth, jimp.AUTO)
+          .write(outputfile)
+          .catch(e => {
+            console.log(outputfile + ' failed');
+          });
       }
     })
     .catch(err => {
       console.log(outputfile);
       console.log(err);
-      onError();
     });
 };
 
