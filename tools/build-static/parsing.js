@@ -71,7 +71,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       lang,
       src,
       year,
-      size: imageSizeSync(src.replace(/^\//, '')),
+      size: await imageSizeSync(src.replace(/^\//, '')),
       remoteUrl,
       museum: get_museum_json(museumId),
       content_lang: 'da',
@@ -104,7 +104,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       lang: artwork.lang,
       src: artwork.src,
       year,
-      size: imageSizeSync(artwork.src.replace(/^\//, '')),
+      size: await imageSizeSync(artwork.src.replace(/^\//, '')),
       remoteUrl,
       museum: get_museum_json(museumId),
       content_lang: artwork.content_lang,
@@ -149,9 +149,11 @@ const get_pictures = (head, srcPrefix, xmlFilename, collected) => {
   const onError = message => {
     throw `${xmlFilename}: ${message}`;
   };
-  return getElementsByTagName(head, 'picture').map(p => {
-    return get_picture(p, srcPrefix, collected, onError);
-  });
+  return Promise.all(
+    getElementsByTagName(head, 'picture').map(async p => {
+      return await get_picture(p, srcPrefix, collected, onError);
+    })
+  );
 };
 
 const extractDates = head => {

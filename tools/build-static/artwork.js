@@ -42,7 +42,7 @@ const build_artwork = collected => {
 
       const artworksDoc = loadXMLDoc(artworkFilename);
       if (artworksDoc != null) {
-        getElementsByTagName(artworksDoc, 'picture').forEach(picture => {
+        getElementsByTagName(artworksDoc, 'picture').forEach(async picture => {
           const pictureId = safeGetAttr(picture, 'id');
           const subjectAttr = safeGetAttr(picture, 'subject');
           let subjects = subjectAttr != null ? subjectAttr.split(',') : [];
@@ -56,7 +56,7 @@ const build_artwork = collected => {
           });
 
           const src = `/static/images/${personId}/${pictureId}.jpg`;
-          const size = imageSizeSync(src.replace(/^\//, ''));
+          const size = await imageSizeSync(src.replace(/^\//, ''));
           const remoteUrl = build_museum_url(picture);
           const museumLink = build_museum_link(picture) || '';
           const museumId = safeGetAttr(picture, 'museum');
@@ -96,24 +96,29 @@ const build_artwork = collected => {
         onError = message => {
           throw `fdirs/${personId}/portraits.xml: ${message}`;
         };
-        getElementsByTagName(doc, 'picture')
-          .filter(picture => {
-            return safeGetAttr(picture, 'ref') == null;
-          })
-          .forEach(pictureNode => {
-            const src = safeGetAttr(pictureNode, 'src');
-            const picture = get_picture(
-              pictureNode,
-              `/static/images/${personId}`,
-              collected,
-              onError
-            );
-            if (picture == null) {
-              onError('har et billede uden src- eller ref-attribut.');
-            }
-            const key = `portrait/${personId}/${src}`;
-            collected_artwork.set(key, picture);
-          });
+        Promise.all(
+          getElementsByTagName(doc, 'picture')
+            .filter(picture => {
+              return safeGetAttr(picture, 'ref') == null;
+            })
+            .map(async pictureNode => {
+              const src = safeGetAttr(pictureNode, 'src');
+              const picture = await get_picture(
+                pictureNode,
+                `/static/images/${personId}`,
+                collected,
+                onError
+              );
+              if (picture == null) {
+                onError('har et billede uden src- eller ref-attribut.');
+              }
+              const key = `portrait/${personId}/${src}`;
+              return { key, picture };
+            })
+        ).forEach(p => {
+          const { key, picture } = p;
+          collected_artwork.set(key, picture);
+        });
       }
     }
 
@@ -133,24 +138,29 @@ const build_artwork = collected => {
           onError = message => {
             throw `${workFilename}: ${message}`;
           };
-          getElementsByTagName(doc, 'picture')
-            .filter(picture => {
-              return safeGetAttr(picture, 'ref') == null;
-            })
-            .forEach(pictureNode => {
-              const src = safeGetAttr(pictureNode, 'src');
-              const picture = get_picture(
-                pictureNode,
-                `/static/images/${personId}`,
-                collected,
-                onError
-              );
-              if (picture == null) {
-                onError('har et billede uden src- eller ref-attribut.');
-              }
-              const key = `work/${personId}/${workId}/${src}`;
-              collected_artwork.set(key, picture);
-            });
+          Promise.all(
+            getElementsByTagName(doc, 'picture')
+              .filter(picture => {
+                return safeGetAttr(picture, 'ref') == null;
+              })
+              .map(async pictureNode => {
+                const src = safeGetAttr(pictureNode, 'src');
+                const picture = await get_picture(
+                  pictureNode,
+                  `/static/images/${personId}`,
+                  collected,
+                  onError
+                );
+                if (picture == null) {
+                  onError('har et billede uden src- eller ref-attribut.');
+                }
+                const key = `work/${personId}/${workId}/${src}`;
+                return { key, picture };
+              })
+          ).forEach(p => {
+            const { key, picture } = p;
+            collected_artwork.set(key, picture);
+          });
         }
       }
     });

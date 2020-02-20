@@ -38,35 +38,42 @@ const load_timeline = (filename, collected) => {
   if (doc == null) {
     return [];
   }
-  return getElementsByTagName(doc, 'entry').map(event => {
-    const type = safeGetAttr(event, 'type');
-    const date = safeGetAttr(event, 'date');
-    let data = {
-      date,
-      type,
-      is_history_item: true,
-    };
-    if (type === 'image') {
-      const onError = message => {
-        throw `${filename}: ${message}`;
+  return Promise.all(
+    getElementsByTagName(doc, 'entry').map(async event => {
+      const type = safeGetAttr(event, 'type');
+      const date = safeGetAttr(event, 'date');
+      let data = {
+        date,
+        type,
+        is_history_item: true,
       };
-      const pictureNode = getChildByTagName(event, 'picture');
-      if (pictureNode == null) {
-        onError('indeholder event med type image uden <picture>');
+      if (type === 'image') {
+        const onError = message => {
+          throw `${filename}: ${message}`;
+        };
+        const pictureNode = getChildByTagName(event, 'picture');
+        if (pictureNode == null) {
+          onError('indeholder event med type image uden <picture>');
+        }
+        const picture = await get_picture(
+          pictureNode,
+          '/static',
+          collected,
+          onError
+        );
+        data.src = picture.src;
+        data.content_lang = picture.content_lang;
+        data.lang = picture.lang;
+        data.content_html = picture.content_html;
+      } else {
+        data.content_lang = 'da';
+        data.lang = 'da';
+        const html = getChildByTagName(event, 'html');
+        data.content_html = htmlToXml(safeGetInnerXML(html).trim(), collected);
       }
-      const picture = get_picture(pictureNode, '/static', collected, onError);
-      data.src = picture.src;
-      data.content_lang = picture.content_lang;
-      data.lang = picture.lang;
-      data.content_html = picture.content_html;
-    } else {
-      data.content_lang = 'da';
-      data.lang = 'da';
-      const html = getChildByTagName(event, 'html');
-      data.content_html = htmlToXml(safeGetInnerXML(html).trim(), collected);
-    }
-    return data;
-  });
+      return data;
+    })
+  );
 };
 
 const build_global_timeline = collected => {

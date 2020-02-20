@@ -11,18 +11,20 @@ const build_portraits_json = (poet, collected) => {
     onError = message => {
       throw `fdirs/${poet.id}/portraits.xml: ${message}`;
     };
-    result = getElementsByTagName(doc, 'picture').map(picture => {
-      picture = get_picture(
-        picture,
-        `/static/images/${poet.id}`,
-        collected,
-        onError
-      );
-      if (picture == null) {
-        onError('har et billede uden src- eller ref-attribut.');
-      }
-      return picture;
-    });
+    result = Promise.all(
+      getElementsByTagName(doc, 'picture').map(async picture => {
+        picture = await get_picture(
+          picture,
+          `/static/images/${poet.id}`,
+          collected,
+          onError
+        );
+        if (picture == null) {
+          onError('har et billede uden src- eller ref-attribut.');
+        }
+        return picture;
+      })
+    );
     const primaries = result.filter(p => p.primary);
     if (primaries.length > 1) {
       onError('har flere primary');
