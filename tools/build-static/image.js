@@ -13,17 +13,17 @@ let collected_imagesizes = new Map(
 
 const imageSizeAsync = async filename => {
   if (!fileExists(filename)) {
-    const error = `image size failed for file: ${filename}`;
-    throw error;
+    return Promise.reject(`image size failed for file: ${filename}`);
   }
   const cached = collected_imagesizes.get(filename);
   if (cached != null && !isFileModified(filename)) {
-    return cached;
+    return Promise.resolve(cached);
   } else {
-    const image = await jimp.read(filename);
-    const size = { width: image.bitmap.width, height: image.bitmap.height };
-    collected_imagesizes.set(filename, size);
-    return size;
+    jimp.read(filename).then(image => {
+      const size = { width: image.bitmap.width, height: image.bitmap.height };
+      collected_imagesizes.set(filename, size);
+      return size;
+    });
   }
 };
 

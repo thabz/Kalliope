@@ -2,6 +2,7 @@ let b_keys = [];
 let b_millis = {};
 // Benchmarking
 const b = (name, f, args) => {
+  console.log(`Begin ${name}`);
   const beforeMillis = Date.now();
   const result = f(args);
   const afterMillis = Date.now();
@@ -10,6 +11,7 @@ const b = (name, f, args) => {
     b_millis[name] = 0;
   }
   b_millis[name] = b_millis[name] + afterMillis - beforeMillis;
+  console.log(`End ${name}`);
   return result;
 };
 const print_benchmarking_results = () => {
