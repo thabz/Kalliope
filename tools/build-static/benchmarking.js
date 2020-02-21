@@ -1,7 +1,7 @@
 let b_keys = [];
 let b_millis = {};
 // Benchmarking
-const b = (name, f, args) => {
+const b = async (name, f, args) => {
   console.log(`Begin ${name}`);
   const beforeMillis = Date.now();
   const result = f(args);

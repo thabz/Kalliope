@@ -108,45 +108,47 @@ let collected = {
 // Ready after second pass
 let collected_works = new Map();
 
-const build_bio_json = collected => {
-  collected.poets.forEach((poet, poetId) => {
-    // Skip if all of the participating xml files aren't modified
-    if (
-      !isFileModified(
-        'data/events.xml',
-        ...collected.workids
-          .get(poetId)
-          .map(workId => `fdirs/${poet.id}/${workId}.xml`),
-        `fdirs/${poet.id}/info.xml`,
-        `fdirs/${poet.id}/events.xml`,
-        `fdirs/${poet.id}/portraits.xml`,
-        `fdirs/${poet.id}/bio.xml`
-      )
-    ) {
-      return;
-    }
+const build_bio_json = async collected => {
+  return Promise.all(
+    collected.poets.map(async (poet, poetId) => {
+      // Skip if all of the participating xml files aren't modified
+      if (
+        !isFileModified(
+          'data/events.xml',
+          ...collected.workids
+            .get(poetId)
+            .map(workId => `fdirs/${poet.id}/${workId}.xml`),
+          `fdirs/${poet.id}/info.xml`,
+          `fdirs/${poet.id}/events.xml`,
+          `fdirs/${poet.id}/portraits.xml`,
+          `fdirs/${poet.id}/bio.xml`
+        )
+      ) {
+        return;
+      }
 
-    safeMkdir(`static/api/${poet.id}`);
-    const bioXmlPath = `fdirs/${poet.id}/bio.xml`;
-    const data = {
-      poet,
-      content_html: null,
-    };
-    const doc = loadXMLDoc(bioXmlPath);
-    if (doc != null) {
-      const bio = getChildByTagName(doc, 'bio');
-      const head = getChildByTagName(bio, 'head');
-      const body = getChildByTagName(bio, 'body');
-      let author = safeGetText(head, 'author');
-      data.content_html = htmlToXml(safeGetInnerXML(body), collected);
-      data.content_lang = 'da';
-    }
-    data.timeline = build_poet_timeline_json(poet, collected);
-    data.portraits = build_portraits_json(poet, collected);
-    const destFilename = `static/api/${poet.id}/bio.json`;
-    console.log(destFilename);
-    writeJSON(destFilename, data);
-  });
+      safeMkdir(`static/api/${poet.id}`);
+      const bioXmlPath = `fdirs/${poet.id}/bio.xml`;
+      const data = {
+        poet,
+        content_html: null,
+      };
+      const doc = loadXMLDoc(bioXmlPath);
+      if (doc != null) {
+        const bio = getChildByTagName(doc, 'bio');
+        const head = getChildByTagName(bio, 'head');
+        const body = getChildByTagName(bio, 'body');
+        let author = safeGetText(head, 'author');
+        data.content_html = htmlToXml(safeGetInnerXML(body), collected);
+        data.content_lang = 'da';
+      }
+      data.timeline = await build_poet_timeline_json(poet, collected);
+      data.portraits = build_portraits_json(poet, collected);
+      const destFilename = `static/api/${poet.id}/bio.json`;
+      console.log(destFilename);
+      writeJSON(destFilename, data);
+    })
+  );
 };
 
 const build_poet_workids = () => {
@@ -866,42 +868,62 @@ const build_image_thumbnails = () => {
   buildThumbnails('static/kunst', isFileModified);
 };
 
-safeMkdir(`static/api`);
-collected.workids = b('build_poet_workids', build_poet_workids);
-const { works, texts } = b('works_first_pass', works_first_pass, collected);
-collected.works = works;
-collected.texts = texts;
-b('build_person_or_keyword_refs', build_person_or_keyword_refs, collected);
-collected.poets = b('build_poets_json', build_poets_json, collected);
-b('mark_ref_destinations_dirty', mark_ref_destinations_dirty, collected);
-b('build_poets_by_country_json', build_poets_by_country_json, collected);
-collected.artwork = b('build_artwork', build_artwork, collected);
-b('build_museums', build_museums, collected);
-collected.variants = b('build_variants', build_variants, collected);
-b('build_mentions_json', build_mentions_json, collected);
-collected.textrefs = b('build_textrefs', build_textrefs, collected);
-build_dict_first_pass(collected);
-collected.keywords = b('build_keywords', build_keywords, collected);
-b('build_poet_lines_json', build_poet_lines_json, collected);
-b('build_poet_works_json', build_poet_works_json, collected);
-b('works_second_pass', works_second_pass, collected);
-b('build_works_toc', build_works_toc, collected);
-collected.timeline = b(
-  'build_global_timeline',
-  build_global_timeline,
-  collected
-);
-b('build_bio_json', build_bio_json, collected);
-b('build_news', build_news, collected);
-b('build_about_pages', build_about_pages, collected);
-b('build_global_lines_json', build_global_lines_json, collected);
-b('build_dict_second_pass', build_dict_second_pass, collected);
-b('build_todays_events_json', build_todays_events_json, collected);
-b('build_redirects_json', build_redirects_json, collected);
-b('build_sitemap_xml', build_sitemap_xml, collected);
-b('build_anniversaries_ical', build_anniversaries_ical, collected);
-b('build_image_thumbnails', build_image_thumbnails);
-b('update_elasticsearch', update_elasticsearch, collected);
-refreshFilesModifiedCache();
-flushImageSizeCache();
-print_benchmarking_results();
+const main = async () => {
+  safeMkdir(`static/api`);
+  collected.workids = await b('build_poet_workids', build_poet_workids);
+  const { works, texts } = await b(
+    'works_first_pass',
+    works_first_pass,
+    collected
+  );
+  collected.works = works;
+  collected.texts = texts;
+  await b(
+    'build_person_or_keyword_refs',
+    build_person_or_keyword_refs,
+    collected
+  );
+  collected.poets = await b('build_poets_json', build_poets_json, collected);
+  await b(
+    'mark_ref_destinations_dirty',
+    mark_ref_destinations_dirty,
+    collected
+  );
+  await b(
+    'build_poets_by_country_json',
+    build_poets_by_country_json,
+    collected
+  );
+  collected.artwork = await b('build_artwork', build_artwork, collected);
+  await b('build_museums', build_museums, collected);
+  collected.variants = await b('build_variants', build_variants, collected);
+  await b('build_mentions_json', build_mentions_json, collected);
+  collected.textrefs = await b('build_textrefs', build_textrefs, collected);
+  build_dict_first_pass(collected);
+  collected.keywords = await b('build_keywords', build_keywords, collected);
+  await b('build_poet_lines_json', build_poet_lines_json, collected);
+  await b('build_poet_works_json', build_poet_works_json, collected);
+  await b('works_second_pass', works_second_pass, collected);
+  await b('build_works_toc', build_works_toc, collected);
+  collected.timeline = await b(
+    'build_global_timeline',
+    build_global_timeline,
+    collected
+  );
+  await b('build_bio_json', build_bio_json, collected);
+  await b('build_news', build_news, collected);
+  await b('build_about_pages', build_about_pages, collected);
+  await b('build_global_lines_json', build_global_lines_json, collected);
+  await b('build_dict_second_pass', build_dict_second_pass, collected);
+  await b('build_todays_events_json', build_todays_events_json, collected);
+  await b('build_redirects_json', build_redirects_json, collected);
+  await b('build_sitemap_xml', build_sitemap_xml, collected);
+  await b('build_anniversaries_ical', build_anniversaries_ical, collected);
+  await b('build_image_thumbnails', build_image_thumbnails);
+  await b('update_elasticsearch', update_elasticsearch, collected);
+  refreshFilesModifiedCache();
+  flushImageSizeCache();
+  print_benchmarking_results();
+};
+
+main();

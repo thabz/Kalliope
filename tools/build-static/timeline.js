@@ -33,7 +33,7 @@ const sorted_timeline = timeline => {
   });
 };
 
-const load_timeline = (filename, collected) => {
+const load_timeline = async (filename, collected) => {
   let doc = loadXMLDoc(filename);
   if (doc == null) {
     return [];
@@ -76,11 +76,11 @@ const load_timeline = (filename, collected) => {
   );
 };
 
-const build_global_timeline = collected => {
+const build_global_timeline = async collected => {
   return load_timeline('data/events.xml', collected);
 };
 
-const build_poet_timeline_json = (poet, collected) => {
+const build_poet_timeline_json = async (poet, collected) => {
   const inonToString = (inon, lang) => {
     const translations = {
       'da*in': 'i',
@@ -158,7 +158,7 @@ const build_poet_timeline_json = (poet, collected) => {
         ],
       });
     }
-    let poet_events = load_timeline(
+    let poet_events = await load_timeline(
       `fdirs/${poet.id}/events.xml`,
       collected
     ).map(e => {

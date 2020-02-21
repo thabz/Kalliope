@@ -19,9 +19,11 @@ const {
   get_museum_json,
 } = require('./museums.js');
 
-const build_artwork = collected => {
+const build_artwork = async collected => {
   let collected_artwork = new Map(loadCachedJSON('collected.artwork') || []);
   const force_reload = collected_artwork.size == 0;
+
+  const promises = [];
 
   collected.poets.forEach(person => {
     const personId = person.id;
@@ -42,44 +44,48 @@ const build_artwork = collected => {
 
       const artworksDoc = loadXMLDoc(artworkFilename);
       if (artworksDoc != null) {
-        getElementsByTagName(artworksDoc, 'picture').forEach(async picture => {
-          const pictureId = safeGetAttr(picture, 'id');
-          const subjectAttr = safeGetAttr(picture, 'subject');
-          let subjects = subjectAttr != null ? subjectAttr.split(',') : [];
-          const year = safeGetAttr(picture, 'year');
-          if (pictureId == null) {
-            throw `fdirs/${personId}/artwork.xml har et billede uden id-attribut.`;
-          }
-          subjects.forEach(subjectId => {
-            // Make sure we rebuild the affected bio page.
-            markFileDirty(`fdirs/${subjectId}/portraits.xml`);
-          });
+        promises.push(
+          Promise.all(
+            getElementsByTagName(artworksDoc, 'picture').map(async picture => {
+              const pictureId = safeGetAttr(picture, 'id');
+              const subjectAttr = safeGetAttr(picture, 'subject');
+              let subjects = subjectAttr != null ? subjectAttr.split(',') : [];
+              const year = safeGetAttr(picture, 'year');
+              if (pictureId == null) {
+                throw `fdirs/${personId}/artwork.xml har et billede uden id-attribut.`;
+              }
+              subjects.forEach(subjectId => {
+                // Make sure we rebuild the affected bio page.
+                markFileDirty(`fdirs/${subjectId}/portraits.xml`);
+              });
 
-          const src = `/static/images/${personId}/${pictureId}.jpg`;
-          const size = await imageSizeSync(src.replace(/^\//, ''));
-          const remoteUrl = build_museum_url(picture);
-          const museumLink = build_museum_link(picture) || '';
-          const museumId = safeGetAttr(picture, 'museum');
-          const artworkId = `${personId}/${pictureId}`;
-          const artist = collected.poets.get(personId);
-          const content_raw = safeGetInnerXML(picture).trim() + museumLink;
-          const artworkJson = {
-            id: `${personId}/${pictureId}`,
-            artistId: personId,
-            artist,
-            museum: get_museum_json(museumId),
-            remoteUrl,
-            lang: person.lang,
-            src,
-            size,
-            content_lang: 'da',
-            subjects,
-            year,
-            content_raw,
-            content_html: htmlToXml(content_raw, collected),
-          };
-          collected_artwork.set(artworkId, artworkJson);
-        });
+              const src = `/static/images/${personId}/${pictureId}.jpg`;
+              const size = await imageSizeSync(src.replace(/^\//, ''));
+              const remoteUrl = build_museum_url(picture);
+              const museumLink = build_museum_link(picture) || '';
+              const museumId = safeGetAttr(picture, 'museum');
+              const artworkId = `${personId}/${pictureId}`;
+              const artist = collected.poets.get(personId);
+              const content_raw = safeGetInnerXML(picture).trim() + museumLink;
+              const artworkJson = {
+                id: `${personId}/${pictureId}`,
+                artistId: personId,
+                artist,
+                museum: get_museum_json(museumId),
+                remoteUrl,
+                lang: person.lang,
+                src,
+                size,
+                content_lang: 'da',
+                subjects,
+                year,
+                content_raw,
+                content_html: htmlToXml(content_raw, collected),
+              };
+              collected_artwork.set(artworkId, artworkJson);
+            })
+          )
+        );
       }
     }
     if (force_reload || isFileModified(portraitsFile)) {
@@ -96,29 +102,33 @@ const build_artwork = collected => {
         onError = message => {
           throw `fdirs/${personId}/portraits.xml: ${message}`;
         };
-        Promise.all(
-          getElementsByTagName(doc, 'picture')
-            .filter(picture => {
-              return safeGetAttr(picture, 'ref') == null;
-            })
-            .map(async pictureNode => {
-              const src = safeGetAttr(pictureNode, 'src');
-              const picture = await get_picture(
-                pictureNode,
-                `/static/images/${personId}`,
-                collected,
-                onError
-              );
-              if (picture == null) {
-                onError('har et billede uden src- eller ref-attribut.');
-              }
-              const key = `portrait/${personId}/${src}`;
-              return { key, picture };
-            })
-        ).forEach(p => {
-          const { key, picture } = p;
-          collected_artwork.set(key, picture);
-        });
+        promises.push(
+          Promise.all(
+            getElementsByTagName(doc, 'picture')
+              .filter(picture => {
+                return safeGetAttr(picture, 'ref') == null;
+              })
+              .map(async pictureNode => {
+                const src = safeGetAttr(pictureNode, 'src');
+                const picture = await get_picture(
+                  pictureNode,
+                  `/static/images/${personId}`,
+                  collected,
+                  onError
+                );
+                if (picture == null) {
+                  onError('har et billede uden src- eller ref-attribut.');
+                }
+                const key = `portrait/${personId}/${src}`;
+                return { key, picture };
+              })
+          ).then(a => {
+            a.forEach(p => {
+              const { key, picture } = p;
+              collected_artwork.set(key, picture);
+            });
+          })
+        );
       }
     }
 
@@ -138,33 +148,39 @@ const build_artwork = collected => {
           onError = message => {
             throw `${workFilename}: ${message}`;
           };
-          Promise.all(
-            getElementsByTagName(doc, 'picture')
-              .filter(picture => {
-                return safeGetAttr(picture, 'ref') == null;
-              })
-              .map(async pictureNode => {
-                const src = safeGetAttr(pictureNode, 'src');
-                const picture = await get_picture(
-                  pictureNode,
-                  `/static/images/${personId}`,
-                  collected,
-                  onError
-                );
-                if (picture == null) {
-                  onError('har et billede uden src- eller ref-attribut.');
-                }
-                const key = `work/${personId}/${workId}/${src}`;
-                return { key, picture };
-              })
-          ).forEach(p => {
-            const { key, picture } = p;
-            collected_artwork.set(key, picture);
-          });
+          promises.push(
+            Promise.all(
+              getElementsByTagName(doc, 'picture')
+                .filter(picture => {
+                  return safeGetAttr(picture, 'ref') == null;
+                })
+                .map(async pictureNode => {
+                  const src = safeGetAttr(pictureNode, 'src');
+                  const picture = await get_picture(
+                    pictureNode,
+                    `/static/images/${personId}`,
+                    collected,
+                    onError
+                  );
+                  if (picture == null) {
+                    onError('har et billede uden src- eller ref-attribut.');
+                  }
+                  const key = `work/${personId}/${workId}/${src}`;
+                  return { key, picture };
+                })
+            ).then(a => {
+              a.forEach(p => {
+                const { key, picture } = p;
+                collected_artwork.set(key, picture);
+              });
+            })
+          );
         }
       }
     });
   });
+
+  await Promise.all(promises);
   writeCachedJSON('collected.artwork', Array.from(collected_artwork));
   return collected_artwork;
 };
