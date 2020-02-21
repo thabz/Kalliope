@@ -20,24 +20,18 @@ const imageSizeAsync = async filename => {
       if (cached != null && !isFileModified(filename)) {
         resolve(cached);
       } else {
-        resolve({ width: 1, height: 1 });
-        return;
         jimp
           .read(filename)
           .then(image => {
-            try {
-              const size = {
-                width: image.bitmap.width,
-                height: image.bitmap.height,
-              };
-              collected_imagesizes.set(filename, size);
-              resolve(size);
-            } catch (e) {
-              reject(e);
-            }
+            const size = {
+              width: image.bitmap.width,
+              height: image.bitmap.height,
+            };
+            collected_imagesizes.set(filename, size);
+            resolve(size);
           })
           .catch(e => {
-            reject(e);
+            reject(`${filename}: ${e}`);
           });
       }
     }
