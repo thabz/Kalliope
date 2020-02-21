@@ -110,7 +110,8 @@ let collected_works = new Map();
 
 const build_bio_json = async collected => {
   return Promise.all(
-    collected.poets.map(async (poet, poetId) => {
+    Array.from(collected.poets.entries()).map(async entry => {
+      const [poetId, poet] = entry;
       // Skip if all of the participating xml files aren't modified
       if (
         !isFileModified(

@@ -1,7 +1,7 @@
 const { get_picture } = require('./parsing.js');
 const { loadXMLDoc, getElementsByTagName } = require('./xml.js');
 
-const build_portraits_json = (poet, collected) => {
+const build_portraits_json = async (poet, collected) => {
   let result = [];
   if (!poet.has_portraits) {
     return result;
@@ -11,7 +11,7 @@ const build_portraits_json = (poet, collected) => {
     onError = message => {
       throw `fdirs/${poet.id}/portraits.xml: ${message}`;
     };
-    result = Promise.all(
+    result = await Promise.all(
       getElementsByTagName(doc, 'picture').map(async picture => {
         picture = await get_picture(
           picture,

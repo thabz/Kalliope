@@ -158,9 +158,8 @@ const build_poet_timeline_json = async (poet, collected) => {
         ],
       });
     }
-    let poet_events = await load_timeline(
-      `fdirs/${poet.id}/events.xml`,
-      collected
+    let poet_events = (
+      await load_timeline(`fdirs/${poet.id}/events.xml`, collected)
     ).map(e => {
       e.is_history_item = false;
       return e;

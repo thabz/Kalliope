@@ -20,14 +20,25 @@ const imageSizeAsync = async filename => {
       if (cached != null && !isFileModified(filename)) {
         resolve(cached);
       } else {
-        jimp.read(filename).then(image => {
-          const size = {
-            width: image.bitmap.width,
-            height: image.bitmap.height,
-          };
-          collected_imagesizes.set(filename, size);
-          resolve(size);
-        });
+        resolve({ width: 1, height: 1 });
+        return;
+        jimp
+          .read(filename)
+          .then(image => {
+            try {
+              const size = {
+                width: image.bitmap.width,
+                height: image.bitmap.height,
+              };
+              collected_imagesizes.set(filename, size);
+              resolve(size);
+            } catch (e) {
+              reject(e);
+            }
+          })
+          .catch(e => {
+            reject(e);
+          });
       }
     }
   });
@@ -43,7 +54,7 @@ const imageSizeCallback = (filename, callback) => {
 //const imageSizeSync = deasync(imageSizeCallback);
 
 const imageSizeSync = async filename => {
-  return await imageSizeAsync(filename);
+  return imageSizeAsync(filename);
 };
 
 const flushImageSizeCache = () => {
