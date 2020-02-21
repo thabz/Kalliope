@@ -144,7 +144,7 @@ const build_bio_json = async collected => {
         data.content_lang = 'da';
       }
       data.timeline = await build_poet_timeline_json(poet, collected);
-      data.portraits = build_portraits_json(poet, collected);
+      data.portraits = await build_portraits_json(poet, collected);
       const destFilename = `static/api/${poet.id}/bio.json`;
       console.log(destFilename);
       writeJSON(destFilename, data);
