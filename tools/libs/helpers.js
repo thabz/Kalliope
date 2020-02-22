@@ -1,5 +1,4 @@
 const fs = require('fs');
-const deasync = require('deasync');
 const entities = require('entities');
 const { DOMParser } = require('xmldom');
 const bible = require('./bible-abbr.js');
