@@ -1,5 +1,17 @@
+## Kalliope installation lokalt
 
-## Kalliope installation
+```shell
+git clone https://github.com/thabz/Kalliope.git
+cd Kalliope
+npm install
+npm build
+npm build-static
+npm run start
+```
+
+Hvorefter din egen kopi af Kalliope kan ses på http://localhost:3000/.
+
+## Kalliope installation på server
 
 ### Install
 
