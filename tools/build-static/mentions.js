@@ -7,11 +7,20 @@ const {
 const {
   safeMkdir,
   writeJSON,
-  loadXMLDoc,
   htmlToXml,
   fileExists,
 } = require('../libs/helpers.js');
-const { safeGetText } = require('./xml.js');
+const {
+  loadXMLDoc,
+  safeGetText,
+  safeGetAttr,
+  getElementsByTagNames,
+  getElementsByTagName,
+  getChildrenByTagName,
+  getChildByTagName,
+  safeGetOuterXML,
+  safeGetInnerXML,
+} = require('./xml.js');
 const { poetName, workLinkName } = require('./formatting.js');
 const { primaryTextVariantId } = require('./variants.js');
 
@@ -20,7 +29,9 @@ const person_mentions_dirty = new Set();
 const build_person_or_keyword_refs = collected => {
   let person_or_keyword_refs = new Map([]);
   if (!force_reload) {
-    loadCachedJSON('collected.person_or_keyword_refs') || [];
+    person_or_keyword_refs = new Map(
+      loadCachedJSON('collected.person_or_keyword_refs') || []
+    );
   }
   const forced_reload = person_or_keyword_refs.size == 0;
   let found_changes = false;
@@ -83,15 +94,22 @@ const build_person_or_keyword_refs = collected => {
         found_changes = true;
       }
       let doc = loadXMLDoc(filename);
-      const texts = doc.find('//poem|//prose|//section[@id]');
+      const texts = getElementsByTagNames(doc, [
+        'poem',
+        'prose',
+        'section',
+      ]).filter(s => safeGetAttr(s, 'id') != null);
       texts.forEach(text => {
-        const fromId = text.attr('id').value();
-        const notes = text.find(
-          'head/notes/note|head/pictures/picture|body//footnote|body//note|body'
-        );
+        const fromId = safeGetAttr(text, 'id');
+        const notes = getElementsByTagNames(text, [
+          'note',
+          'picture',
+          'footnote',
+          'body',
+        ]);
         notes.forEach(note => {
           regexps.forEach(rule => {
-            while ((match = rule.regexp.exec(note.toString())) != null) {
+            while ((match = rule.regexp.exec(safeGetOuterXML(note))) != null) {
               const refType = match[1] || 'mention';
               if (rule.type === 'text') {
                 const toPoemId = match[2].replace(/,.*$/, '');
@@ -117,7 +135,7 @@ const build_person_or_keyword_refs = collected => {
             }
           });
         });
-        const head = text.get('head');
+        const head = getChildByTagName(text, 'head');
         const keywords = safeGetText(head, 'keywords') || '';
         if (keywords.trim().length > 0) {
           keywords.split(',').forEach(keyword => {
@@ -235,14 +253,8 @@ const build_mentions_json = collected => {
       const biblioXmlPath = `fdirs/${poet.id}/bibliography-${filename}.xml`;
       const doc = loadXMLDoc(biblioXmlPath);
       if (doc != null) {
-        data[filename] = doc.find('//items/item').map(line => {
-          return htmlToXml(
-            line
-              .toString()
-              .replace('<item>', '')
-              .replace('</item>', ''),
-            collected
-          );
+        data[filename] = getElementsByTagName(doc, 'item').map(line => {
+          return htmlToXml(safeGetInnerXML(line), collected);
         });
       } else {
         data[filename] = [];
