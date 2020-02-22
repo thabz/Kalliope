@@ -174,7 +174,7 @@ const build_poet_workids = () => {
   return collected_workids;
 };
 
-const handle_text = (
+const handle_text = async (
   poetId,
   workId,
   text,
@@ -380,7 +380,7 @@ const handle_text = (
       keywords: keywordsArray || [],
       refs: refsArray,
       variants: variantsArray,
-      pictures: get_pictures(
+      pictures: await get_pictures(
         head,
         `/static/images/${poetId}`,
         `fdirs/${poetId}/${workId}.xml:${textId}`,
@@ -395,87 +395,113 @@ const handle_text = (
   writeJSON(Paths.textPath(textId), text_data);
 };
 
-const handle_work = work => {
+const handle_work = async work => {
   const type = safeGetAttr(work, 'type');
   const poetId = safeGetAttr(work, 'author');
   const workId = safeGetAttr(work, 'id');
   let lines = [];
 
-  const handle_section = (section, resolve_prev_next, section_titles) => {
+  const handle_section = async (section, resolve_prev_next, section_titles) => {
     let poems = [];
     let proses = [];
     let toc = [];
 
-    getChildren(section).forEach(part => {
-      const partName = tagName(part);
-      if (partName === 'poem') {
-        const textId = safeGetAttr(part, 'id');
-        const head = getChildByTagName(part, 'head');
-        const firstline = extractTitle(head, 'firstline');
-        const title = extractTitle(head, 'title') || firstline;
-        const indextitle = extractTitle(head, 'indextitle') || title;
-        const toctitle = extractTitle(head, 'toctitle') || title;
-        if (indextitle == null) {
-          throw `${textId} mangler førstelinje, indextitle og title i ${poetId}/${workId}.xml`;
-        }
-        if (firstline != null && firstline.title.indexOf('<') > -1) {
-          throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
-        }
-        if (firstline != null && firstline.title.trim().length === 0) {
-          throw `${textId} har blank førstelinje i ${poetId}/${workId}.xml`;
-        }
-        if (indextitle.title.indexOf('>') > -1) {
-          throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
-        }
-        if (toctitle == null) {
-          throw `${textId} mangler toctitle, firstline og title i ${poetId}/${workId}.xml`;
-        }
-        lines.push({
-          id: textId,
-          work_id: workId,
-          lang: collected.poets.get(poetId).lang,
-          title: replaceDashes(indextitle.title),
-          firstline: firstline == null ? null : replaceDashes(firstline.title),
-        });
-        toc.push({
-          type: 'text',
-          id: textId,
-          title: htmlToXml(toctitle.title),
-          prefix: replaceDashes(toctitle.prefix),
-        });
-        handle_text(
-          poetId,
-          workId,
-          part,
-          partName,
-          resolve_prev_next,
-          section_titles
-        );
-      } else if (partName === 'section') {
-        const head = getChildByTagName(part, 'head');
-        const level = parseInt(safeGetAttr(head, 'level') || '1');
-        const sectionId = safeGetAttr(part, 'id');
-        const title = extractTitle(head, 'title');
-        const toctitle = extractTitle(head, 'toctitle') || title;
-        if (toctitle == null) {
-          throw `En section mangler toctitle eller title i ${poetId}/${workId}.xml`;
-        }
-        const linktitle = extractTitle(head, 'linktitle') || toctitle || title;
-        const breadcrumb = { title: linktitle.title, id: sectionId };
-        const subtoc = handle_section(
-          getChildByTagName(part, 'content'),
-          resolve_prev_next,
-          [...section_titles, breadcrumb]
-        );
-        toc.push({
-          type: 'section',
-          id: sectionId,
-          level: level,
-          title: htmlToXml(toctitle.title),
-          content: subtoc,
-        });
-        if (sectionId != null) {
-          handle_text(
+    await Promise.all(
+      getChildren(section).map(async part => {
+        const partName = tagName(part);
+        if (partName === 'poem') {
+          const textId = safeGetAttr(part, 'id');
+          const head = getChildByTagName(part, 'head');
+          const firstline = extractTitle(head, 'firstline');
+          const title = extractTitle(head, 'title') || firstline;
+          const indextitle = extractTitle(head, 'indextitle') || title;
+          const toctitle = extractTitle(head, 'toctitle') || title;
+          if (indextitle == null) {
+            throw `${textId} mangler førstelinje, indextitle og title i ${poetId}/${workId}.xml`;
+          }
+          if (firstline != null && firstline.title.indexOf('<') > -1) {
+            throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
+          }
+          if (firstline != null && firstline.title.trim().length === 0) {
+            throw `${textId} har blank førstelinje i ${poetId}/${workId}.xml`;
+          }
+          if (indextitle.title.indexOf('>') > -1) {
+            throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
+          }
+          if (toctitle == null) {
+            throw `${textId} mangler toctitle, firstline og title i ${poetId}/${workId}.xml`;
+          }
+          lines.push({
+            id: textId,
+            work_id: workId,
+            lang: collected.poets.get(poetId).lang,
+            title: replaceDashes(indextitle.title),
+            firstline:
+              firstline == null ? null : replaceDashes(firstline.title),
+          });
+          toc.push({
+            type: 'text',
+            id: textId,
+            title: htmlToXml(toctitle.title),
+            prefix: replaceDashes(toctitle.prefix),
+          });
+          await handle_text(
+            poetId,
+            workId,
+            part,
+            partName,
+            resolve_prev_next,
+            section_titles
+          );
+        } else if (partName === 'section') {
+          const head = getChildByTagName(part, 'head');
+          const level = parseInt(safeGetAttr(head, 'level') || '1');
+          const sectionId = safeGetAttr(part, 'id');
+          const title = extractTitle(head, 'title');
+          const toctitle = extractTitle(head, 'toctitle') || title;
+          if (toctitle == null) {
+            throw `En section mangler toctitle eller title i ${poetId}/${workId}.xml`;
+          }
+          const linktitle =
+            extractTitle(head, 'linktitle') || toctitle || title;
+          const breadcrumb = { title: linktitle.title, id: sectionId };
+          const subtoc = await handle_section(
+            getChildByTagName(part, 'content'),
+            resolve_prev_next,
+            [...section_titles, breadcrumb]
+          );
+          toc.push({
+            type: 'section',
+            id: sectionId,
+            level: level,
+            title: htmlToXml(toctitle.title),
+            content: subtoc,
+          });
+          if (sectionId != null) {
+            await handle_text(
+              poetId,
+              workId,
+              part,
+              partName,
+              resolve_prev_next,
+              section_titles
+            );
+          }
+        } else if (partName === 'prose') {
+          const textId = safeGetAttr(part, 'id');
+          const head = getChildByTagName(part, 'head');
+          const title = extractTitle(head, 'title');
+          const toctitle = extractTitle(head, 'toctitle') || title;
+          if (toctitle == null) {
+            throw `${textId} mangler title og toctitle i ${poetId}/${workId}.xml`;
+          }
+          toc.push({
+            type: 'text',
+            id: textId,
+            title: htmlToXml(toctitle.title),
+            prefix: toctitle.prefix,
+          });
+          await handle_text(
             poetId,
             workId,
             part,
@@ -484,30 +510,8 @@ const handle_work = work => {
             section_titles
           );
         }
-      } else if (partName === 'prose') {
-        const textId = safeGetAttr(part, 'id');
-        const head = getChildByTagName(part, 'head');
-        const title = extractTitle(head, 'title');
-        const toctitle = extractTitle(head, 'toctitle') || title;
-        if (toctitle == null) {
-          throw `${textId} mangler title og toctitle i ${poetId}/${workId}.xml`;
-        }
-        toc.push({
-          type: 'text',
-          id: textId,
-          title: htmlToXml(toctitle.title),
-          prefix: toctitle.prefix,
-        });
-        handle_text(
-          poetId,
-          workId,
-          part,
-          partName,
-          resolve_prev_next,
-          section_titles
-        );
-      }
-    });
+      })
+    );
     return toc;
   };
 
@@ -556,7 +560,7 @@ const handle_work = work => {
     };
   })();
 
-  const toc = handle_section(workbody, resolve_prev_next, []);
+  const toc = await handle_section(workbody, resolve_prev_next, []);
   return { lines, toc, notes, pictures };
 };
 
@@ -682,78 +686,83 @@ const works_first_pass = collected => {
   return { works, texts };
 };
 
-const works_second_pass = collected => {
-  collected.poets.forEach((poet, poetId) => {
-    safeMkdir(`static/api/${poetId}`);
+const works_second_pass = async collected => {
+  return Promise.all(
+    Array.from(collected.poets.entries()).map(async entry => {
+      const [poetId, poet] = entry;
+      safeMkdir(`static/api/${poetId}`);
 
-    collected.workids.get(poetId).forEach(workId => {
-      const filename = `fdirs/${poetId}/${workId}.xml`;
-      if (!fileExists(filename)) {
-        return;
-      }
-      if (!isFileModified(filename)) {
-        return;
-      }
-      let doc = loadXMLDoc(filename);
-      const work = getChildByTagName(doc, 'kalliopework');
-      const status = safeGetAttr(work, 'status');
-      const type = safeGetAttr(work, 'type');
-      const head = getChildByTagName(work, 'workhead');
-      const title = safeGetText(head, 'title');
-      const year = safeGetText(head, 'year');
-      //const data = { id: workId, title, year, status, type };
-      const data = collected.works.get(`${poetId}/${workId}`);
-      let sources = {};
-      getChildrenByTagName(head, 'source').forEach(sourceNode => {
-        let source = null;
-        const sourceInner = safeGetInnerXML(sourceNode);
-        if (sourceInner != null && sourceInner.length > 0) {
-          source = { source: sourceInner };
-        }
-        if (source == null || source.source == null) {
-          throw new Error(
-            `fdirs/${poetId}/${workId}.xml has source with no title.`
-          );
-        }
-        const sourceId = safeGetAttr(sourceNode, 'id') || 'default';
-        let facsimile = safeGetAttr(sourceNode, 'facsimile');
-        if (facsimile != null) {
-          facsimile = facsimile.replace(/.pdf$/, '');
-          let facsimilePagesOffset = safeGetAttr(
-            sourceNode,
-            'facsimile-pages-offset'
-          );
-          if (facsimilePagesOffset != null) {
-            facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
+      return Promise.all(
+        collected.workids.get(poetId).map(async workId => {
+          const filename = `fdirs/${poetId}/${workId}.xml`;
+          if (!fileExists(filename)) {
+            return;
           }
-
-          const facsimilePageCount = safeGetAttr(
-            sourceNode,
-            'facsimile-pages-num'
-          );
-          if (facsimilePageCount == null) {
-            throw new Error(
-              `fdirs/${poetId}/${workId}.xml is missing facsimile-pages-num in source.`
-            );
+          if (!isFileModified(filename)) {
+            return;
           }
-          source = {
-            ...source,
-            facsimile,
-            facsimilePageCount: parseInt(facsimilePageCount, 10),
-            facsimilePagesOffset,
-          };
-        }
-        sources[sourceId] = source;
-      });
-      data.sources = sources;
-      collected_works.set(poetId + '-' + workId, data);
+          let doc = loadXMLDoc(filename);
+          const work = getChildByTagName(doc, 'kalliopework');
+          const status = safeGetAttr(work, 'status');
+          const type = safeGetAttr(work, 'type');
+          const head = getChildByTagName(work, 'workhead');
+          const title = safeGetText(head, 'title');
+          const year = safeGetText(head, 'year');
+          //const data = { id: workId, title, year, status, type };
+          const data = collected.works.get(`${poetId}/${workId}`);
+          let sources = {};
+          getChildrenByTagName(head, 'source').forEach(sourceNode => {
+            let source = null;
+            const sourceInner = safeGetInnerXML(sourceNode);
+            if (sourceInner != null && sourceInner.length > 0) {
+              source = { source: sourceInner };
+            }
+            if (source == null || source.source == null) {
+              throw new Error(
+                `fdirs/${poetId}/${workId}.xml has source with no title.`
+              );
+            }
+            const sourceId = safeGetAttr(sourceNode, 'id') || 'default';
+            let facsimile = safeGetAttr(sourceNode, 'facsimile');
+            if (facsimile != null) {
+              facsimile = facsimile.replace(/.pdf$/, '');
+              let facsimilePagesOffset = safeGetAttr(
+                sourceNode,
+                'facsimile-pages-offset'
+              );
+              if (facsimilePagesOffset != null) {
+                facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
+              }
 
-      // TODO: Make handle_work non-recursive by using a simple XPath
-      // to select all the poems and prose texts.
-      handle_work(work); // Creates texts
-      doc = null;
-    });
-  });
+              const facsimilePageCount = safeGetAttr(
+                sourceNode,
+                'facsimile-pages-num'
+              );
+              if (facsimilePageCount == null) {
+                throw new Error(
+                  `fdirs/${poetId}/${workId}.xml is missing facsimile-pages-num in source.`
+                );
+              }
+              source = {
+                ...source,
+                facsimile,
+                facsimilePageCount: parseInt(facsimilePageCount, 10),
+                facsimilePagesOffset,
+              };
+            }
+            sources[sourceId] = source;
+          });
+          data.sources = sources;
+          collected_works.set(poetId + '-' + workId, data);
+
+          // TODO: Make handle_work non-recursive by using a simple XPath
+          // to select all the poems and prose texts.
+          await handle_work(work); // Creates texts
+          doc = null;
+        })
+      );
+    })
+  );
 };
 
 const build_poet_works_json = collected => {
@@ -864,9 +873,11 @@ const build_redirects_json = collected => {
   writeJSON('static/api/redirects.json', redirects);
 };
 
-const build_image_thumbnails = () => {
-  buildThumbnails('static/images', isFileModified);
-  buildThumbnails('static/kunst', isFileModified);
+const build_image_thumbnails = async () => {
+  return Promise.all([
+    buildThumbnails('static/images', isFileModified),
+    buildThumbnails('static/kunst', isFileModified),
+  ]);
 };
 
 const main = async () => {
@@ -920,6 +931,7 @@ const main = async () => {
   await b('build_redirects_json', build_redirects_json, collected);
   await b('build_sitemap_xml', build_sitemap_xml, collected);
   await b('build_anniversaries_ical', build_anniversaries_ical, collected);
+  refreshFilesModifiedCache();
   await b('build_image_thumbnails', build_image_thumbnails);
   await b('update_elasticsearch', update_elasticsearch, collected);
   refreshFilesModifiedCache();

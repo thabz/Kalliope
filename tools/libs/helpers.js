@@ -314,7 +314,7 @@ const htmlToXml = (
   return lines;
 };
 
-const resizeImage = (inputfile, outputfile, maxWidth) => {
+const resizeImage = async (inputfile, outputfile, maxWidth) => {
   return new Promise((resolve, reject) => {
     const task = { inputfile, outputfile, maxWidth };
     jimp
@@ -345,7 +345,7 @@ const resizeImage = (inputfile, outputfile, maxWidth) => {
 
 const limit = plimit(5);
 
-const buildThumbnails = (topFolder, isFileModifiedMethod) => {
+const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
   const tasks = [];
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
@@ -398,10 +398,7 @@ const buildThumbnails = (topFolder, isFileModifiedMethod) => {
 
   handleDirRecursive(topFolder);
 
-  (async () => {
-    // Only five promises are to run simultaneously
-    const result = await Promise.all(tasks);
-  })();
+  await Promise.all(tasks);
 };
 
 module.exports = {

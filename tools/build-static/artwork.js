@@ -25,27 +25,27 @@ const build_artwork = async collected => {
 
   const promises = [];
 
-  collected.poets.forEach(person => {
-    const personId = person.id;
-    const personType = person.type;
-    const artworkFilename = `fdirs/${personId}/artwork.xml`;
-    const portraitsFile = `fdirs/${personId}/portraits.xml`;
+  await Promise.all(
+    Array.from(collected.poets.values()).map(async person => {
+      const personId = person.id;
+      const personType = person.type;
+      const artworkFilename = `fdirs/${personId}/artwork.xml`;
+      const portraitsFile = `fdirs/${personId}/portraits.xml`;
 
-    if (
-      personType === 'artist' &&
-      (force_reload || isFileModified(artworkFilename))
-    ) {
-      // Fjern eksisterende fra cache (i tilfælde af id er slettet)
-      Array.from(collected_artwork.keys())
-        .filter(k => k.indexOf(`${personId}/`) === 0)
-        .forEach(k => {
-          collected_artwork.delete(k);
-        });
+      if (
+        personType === 'artist' &&
+        (force_reload || isFileModified(artworkFilename))
+      ) {
+        // Fjern eksisterende fra cache (i tilfælde af id er slettet)
+        Array.from(collected_artwork.keys())
+          .filter(k => k.indexOf(`${personId}/`) === 0)
+          .forEach(k => {
+            collected_artwork.delete(k);
+          });
 
-      const artworksDoc = loadXMLDoc(artworkFilename);
-      if (artworksDoc != null) {
-        promises.push(
-          Promise.all(
+        const artworksDoc = loadXMLDoc(artworkFilename);
+        if (artworksDoc != null) {
+          await Promise.all(
             getElementsByTagName(artworksDoc, 'picture').map(async picture => {
               const pictureId = safeGetAttr(picture, 'id');
               const subjectAttr = safeGetAttr(picture, 'subject');
@@ -84,26 +84,25 @@ const build_artwork = async collected => {
               };
               collected_artwork.set(artworkId, artworkJson);
             })
-          )
-        );
+          );
+        }
       }
-    }
-    if (force_reload || isFileModified(portraitsFile)) {
-      // Fjern eksisterende portraits fra cache (i tilfælde af id er slettet)
-      Array.from(collected_artwork.keys())
-        .filter(k => k.indexOf(`portrait/${personId}/`) === 0)
-        .forEach(k => {
-          collected_artwork.delete(k);
-        });
+      if (force_reload || isFileModified(portraitsFile)) {
+        // Fjern eksisterende portraits fra cache (i tilfælde af id er slettet)
+        Array.from(collected_artwork.keys())
+          .filter(k => k.indexOf(`portrait/${personId}/`) === 0)
+          .forEach(k => {
+            collected_artwork.delete(k);
+          });
 
-      // From portraits.xml
-      const doc = loadXMLDoc(`fdirs/${personId}/portraits.xml`);
-      if (doc != null) {
-        onError = message => {
-          throw `fdirs/${personId}/portraits.xml: ${message}`;
-        };
-        promises.push(
-          Promise.all(
+        // From portraits.xml
+        const doc = loadXMLDoc(`fdirs/${personId}/portraits.xml`);
+        if (doc != null) {
+          onError = message => {
+            throw `fdirs/${personId}/portraits.xml: ${message}`;
+          };
+
+          await Promise.all(
             getElementsByTagName(doc, 'picture')
               .filter(picture => {
                 return safeGetAttr(picture, 'ref') == null;
@@ -127,60 +126,59 @@ const build_artwork = async collected => {
               const { key, picture } = p;
               collected_artwork.set(key, picture);
             });
-          })
-        );
-      }
-    }
-
-    // From works
-    collected.workids.get(personId).forEach(workId => {
-      const workFilename = `fdirs/${personId}/${workId}.xml`;
-      if (force_reload || isFileModified(workFilename)) {
-        // Fjern eksisterende work pictures fra cache
-        Array.from(collected_artwork.keys())
-          .filter(k => k.indexOf(`work/${personId}/${workId}`) === 0)
-          .forEach(k => {
-            collected_artwork.delete(k);
           });
-
-        const doc = loadXMLDoc(workFilename);
-        if (doc != null) {
-          onError = message => {
-            throw `${workFilename}: ${message}`;
-          };
-          promises.push(
-            Promise.all(
-              getElementsByTagName(doc, 'picture')
-                .filter(picture => {
-                  return safeGetAttr(picture, 'ref') == null;
-                })
-                .map(async pictureNode => {
-                  const src = safeGetAttr(pictureNode, 'src');
-                  const picture = await get_picture(
-                    pictureNode,
-                    `/static/images/${personId}`,
-                    collected,
-                    onError
-                  );
-                  if (picture == null) {
-                    onError('har et billede uden src- eller ref-attribut.');
-                  }
-                  const key = `work/${personId}/${workId}/${src}`;
-                  return { key, picture };
-                })
-            ).then(a => {
-              a.forEach(p => {
-                const { key, picture } = p;
-                collected_artwork.set(key, picture);
-              });
-            })
-          );
         }
       }
-    });
-  });
 
-  await Promise.all(promises);
+      // From works
+      await Promise.all(
+        collected.workids.get(personId).map(async workId => {
+          const workFilename = `fdirs/${personId}/${workId}.xml`;
+          if (force_reload || isFileModified(workFilename)) {
+            // Fjern eksisterende work pictures fra cache
+            Array.from(collected_artwork.keys())
+              .filter(k => k.indexOf(`work/${personId}/${workId}`) === 0)
+              .forEach(k => {
+                collected_artwork.delete(k);
+              });
+
+            const doc = loadXMLDoc(workFilename);
+            if (doc != null) {
+              onError = message => {
+                throw `${workFilename}: ${message}`;
+              };
+              await Promise.all(
+                getElementsByTagName(doc, 'picture')
+                  .filter(picture => {
+                    return safeGetAttr(picture, 'ref') == null;
+                  })
+                  .map(async pictureNode => {
+                    const src = safeGetAttr(pictureNode, 'src');
+                    const picture = await get_picture(
+                      pictureNode,
+                      `/static/images/${personId}`,
+                      collected,
+                      onError
+                    );
+                    if (picture == null) {
+                      onError('har et billede uden src- eller ref-attribut.');
+                    }
+                    const key = `work/${personId}/${workId}/${src}`;
+                    return { key, picture };
+                  })
+              ).then(a => {
+                a.forEach(p => {
+                  const { key, picture } = p;
+                  collected_artwork.set(key, picture);
+                });
+              });
+            }
+          }
+        })
+      );
+    })
+  );
+
   writeCachedJSON('collected.artwork', Array.from(collected_artwork));
   return collected_artwork;
 };

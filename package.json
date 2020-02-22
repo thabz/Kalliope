@@ -1,5 +1,5 @@
 {
-  "name": "Kalliope",
+  "name": "kalliope",
   "version": "1.0.0",
   "scripts": {
     "dev": " LOCALE=da_DK.UTF_8 node server.js",
@@ -18,7 +18,6 @@
   "dependencies": {
     "global": "^4.3.2",
     "isomorphic-fetch": "^2.2.1",
-    "jimp": "^0.9.3",
     "next-routes": "^1.2",
     "path-match": "^1.2.4",
     "react": "^16.8",
@@ -54,6 +53,7 @@
     "full-icu": "^1.2.1",
     "ics": "^2.4.1",
     "jest": "^23.6.0",
+    "jimp": "^0.9.3",
     "mkdirp": "^0.5.1",
     "next": "^7.0.2",
     "node-fetch": "^1.7.1",

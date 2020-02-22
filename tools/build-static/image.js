@@ -1,5 +1,5 @@
-const deasync = require('deasync');
 const jimp = require('jimp');
+const plimit = require('p-limit');
 const { fileExists } = require('../libs/helpers.js');
 const {
   isFileModified,
@@ -37,18 +37,14 @@ const imageSizeAsync = async filename => {
     }
   });
 };
-
-const imageSizeCallback = (filename, callback) => {
-  callback(null, { width: 1, height: 1 });
-  // imageSizeAsync(filename).then(size => {
-  //   callback(null, size);
-  // });
-};
-
-//const imageSizeSync = deasync(imageSizeCallback);
-
+const limit = plimit(5);
 const imageSizeSync = async filename => {
-  return imageSizeAsync(filename);
+  return limit(() => {
+    console.log('imageSizeAsync start ' + filename);
+    const x = imageSizeAsync(filename);
+    console.log('imageSizeAsync slut' + filename);
+    return x;
+  });
 };
 
 const flushImageSizeCache = () => {
