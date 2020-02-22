@@ -6,7 +6,7 @@
 4. Udfør derefter følgende trin (hvoraf nogle kan tage lang tid)
   ```shell
   npm install
-  npm build
+  npm run build
   npm run build-static
   npm run start
   ```
