@@ -1,6 +1,11 @@
 {
   "name": "kalliope",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thabz/Kalliope"
+  },
+  "private": true,
   "scripts": {
     "dev": " LOCALE=da_DK.UTF_8 node server.js",
     "build": "next build",
