@@ -153,8 +153,8 @@ const build_todays_events_json = async collected => {
         const mm = m < 10 ? '0' + m : m;
         const events = collected_events.get(`${lang}-${mm}-${dd}`) || [];
         const path = `static/api/today/${lang}/${mm}-${dd}.json`;
-        console.log(path);
-        writeJSON(path, events);
+        //console.log(path);
+        writeJSON(path, events, true);
       }
     }
   });

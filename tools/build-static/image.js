@@ -1,4 +1,6 @@
+const sizeOf = require('image-size');
 const jimp = require('jimp');
+
 const plimit = require('p-limit');
 const { fileExists } = require('../libs/helpers.js');
 const {
@@ -11,10 +13,10 @@ let collected_imagesizes = new Map(
   loadCachedJSON('collected.imagesizes') || []
 );
 
-const imageSizeAsync = async filename => {
+const slowImageSize = async filename => {
   return new Promise((resolve, reject) => {
     if (!fileExists(filename)) {
-      reject(`image size failed for file: ${filename}`);
+      reject(`image size failed for missing file: ${filename}`);
     } else {
       const cached = collected_imagesizes.get(filename);
       if (cached != null && !isFileModified(filename)) {
@@ -37,13 +39,36 @@ const imageSizeAsync = async filename => {
     }
   });
 };
+
+const fastImageSize = async filename => {
+  return new Promise((resolve, reject) => {
+    if (!fileExists(filename)) {
+      reject(`image size failed for missing file: ${filename}`);
+    } else {
+      const cached = collected_imagesizes.get(filename);
+      if (cached != null && !isFileModified(filename)) {
+        resolve(cached);
+      } else {
+        try {
+          const size = sizeOf(filename); // returns {width, height}
+          collected_imagesizes.set(filename, size);
+          resolve(size);
+        } catch (e) {
+          // Filen er korrupt iflg. image-size biblioteket.
+          // Det sker tit. Brug det langsommere jimp bibliotek i stedet.
+          slowImageSize(filename).then(size => {
+            resolve(size);
+          });
+        }
+      }
+    }
+  });
+};
+
 const limit = plimit(5);
 const imageSizeSync = async filename => {
   return limit(() => {
-    console.log('imageSizeAsync start ' + filename);
-    const x = imageSizeAsync(filename);
-    console.log('imageSizeAsync slut' + filename);
-    return x;
+    return fastImageSize(filename);
   });
 };
 

@@ -616,6 +616,7 @@ const works_first_pass = collected => {
         'poem',
         'prose',
         'section',
+        'subwork',
       ]);
       const fullWorkId = `${poetId}/${workId}`;
       works.set(fullWorkId, {
@@ -639,6 +640,9 @@ const works_first_pass = collected => {
       workTexts.forEach(part => {
         const textId = safeGetAttr(part, 'id');
         if (tagName(part) === 'section' && textId == null) {
+          return;
+        }
+        if (tagName(part) === 'subwork') {
           return;
         }
         const head = getChildByTagName(part, 'head');
