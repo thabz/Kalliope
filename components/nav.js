@@ -259,12 +259,112 @@ export default class Nav extends React.Component<NavProps> {
         <nav>{joinedLinks}</nav>
         <div style={rightSideStyle}>{rightSide}</div>
         <style jsx>{`
+          @font-face {
+            font-family: 'Alegreya';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Alegreya Italic'), local('Alegreya-Italic'),
+              url(https://fonts.gstatic.com/s/alegreya/v13/4UaHrEBBsBhlBjvfkSLkx60.ttf)
+                format('truetype');
+          }
+          @font-face {
+            font-family: 'Alegreya';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: local('Alegreya Bold Italic'), local('Alegreya-BoldItalic'),
+              url(https://fonts.gstatic.com/s/alegreya/v13/4UaErEBBsBhlBjvfkSLk_xHMwps.ttf)
+                format('truetype');
+          }
+          @font-face {
+            font-family: 'Alegreya';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Alegreya Regular'), local('Alegreya-Regular'),
+              url(https://fonts.gstatic.com/s/alegreya/v13/4UaBrEBBsBhlBjvfkRLm.ttf)
+                format('truetype');
+          }
+          @font-face {
+            font-family: 'Alegreya';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: local('Alegreya Bold'), local('Alegreya-Bold'),
+              url(https://fonts.gstatic.com/s/alegreya/v13/4UaGrEBBsBhlBjvfkSpa4o3J.ttf)
+                format('truetype');
+          }
+          @font-face {
+            font-family: 'Alegreya SC';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Alegreya SC Regular'), local('AlegreyaSC-Regular'),
+              url(https://fonts.gstatic.com/s/alegreyasc/v11/taiOGmRtCJ62-O0HhNEa-a6o.ttf)
+                format('truetype');
+          }
+          @font-face {
+            font-family: 'Alegreya Sans';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Alegreya Sans Italic'), local('AlegreyaSans-Italic'),
+              url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUt9_-1phKLFgshYDvh6Vwt7V9tuA.ttf)
+                format('truetype');
+          }
+          @font-face {
+            font-family: 'Alegreya Sans';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: local('Alegreya Sans Bold Italic'),
+              local('AlegreyaSans-BoldItalic'),
+              url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUo9_-1phKLFgshYDvh6Vwt7V9VBEh2jg.ttf)
+                format('truetype');
+          }
+          @font-face {
+            font-family: 'Alegreya Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: local('Alegreya Sans Light'), local('AlegreyaSans-Light'),
+              url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUu9_-1phKLFgshYDvh6Vwt5fFPmE0.ttf)
+                format('truetype');
+          }
+          @font-face {
+            font-family: 'Alegreya Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Alegreya Sans Regular'), local('AlegreyaSans-Regular'),
+              url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUz9_-1phKLFgshYDvh6Vwt3V0.ttf)
+                format('truetype');
+          }
+          @font-face {
+            font-family: 'Alegreya Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: local('Alegreya Sans Bold'), local('AlegreyaSans-Bold'),
+              url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUu9_-1phKLFgshYDvh6Vwt5eFImE0.ttf)
+                format('truetype');
+          }
+          @font-face {
+            font-family: 'Alegreya Sans';
+            font-style: normal;
+            font-weight: 100;
+            font-display: swap;
+            src: local('Alegreya Sans Thin'), local('AlegreyaSans-Thin'),
+              url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUt9_-1phKLFgshYDvh6Vwt5TltuA.ttf)
+                format('truetype');
+          }
+
           :global(body) {
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-              Avenir Next, Avenir, Helvetica, sans-serif;
+            font-family: 'Alegreya Sans', sans-serif;
             box-sizing: border-box;
-            font-size: 14px;
+            font-size: 18px;
             height: 150px;
             -webkit-tap-highlight-color: ${CommonData.backgroundLinkColor};
           }
@@ -296,6 +396,8 @@ export default class Nav extends React.Component<NavProps> {
             width: 100%;
             display: flex;
             justify-content: space-between;
+            font-size: 1rem;
+            font-weight: 300;
           }
           @media print {
             .nav-container {

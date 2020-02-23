@@ -303,7 +303,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
             flex-grow: 1;
           }
           :global(.svg-container)  {
-            flex-basis: 32px;
+            flex-basis: 28px;
             flex-shrink: 1;
             align-self: flex-start;
             transition: flex-basis ${transitionDuration};
@@ -364,7 +364,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
               line-height: 30px;
             }
             :global(.svg-container) {
-              flex-basis: 30px;
+              flex-basis: 26px;
             }
             :global(.tabs) > :global(.tab) {
               margin-right: 30px;
@@ -380,7 +380,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
               line-height: 28px;
             }
             :global(.svg-container) {
-              flex-basis: 28px;
+              flex-basis: 22px;
             }
             :global(.tabs) > :global(.tab) {
               margin-right: 20px;
@@ -396,7 +396,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
               line-height: 24px;
             }
             :global(.svg-container) {
-              flex-basis: 24px;
+              flex-basis: 20px;
             }
             :global(.tabs) > :global(.tab) {
               margin-right: 15px;
@@ -412,7 +412,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
               line-height: 18px;
             }
             :global(.svg-container) {
-              flex-basis: 18px;
+              flex-basis: 16px;
             }
             :global(.tabs) > :global(.tab) {
               margin-right: 15px;
@@ -432,7 +432,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
               line-height: 12px;
             }
             :global(.svg-container) {
-              flex-basis: 12px;
+              flex-basis: 14px;
             }
             :global(.search-field) {
               font-size: 12px;

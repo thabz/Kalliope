@@ -65,8 +65,11 @@ class Section extends React.Component {
         <style jsx>{`
           h3 {
             font-weight: 300;
-            font-size: 18px;
-            border-bottom: 1px solid black;
+            font-size: 22x;
+            line-height: 1.6;
+            padding-bottom: 1px;
+            border-bottom: 1px solid #888;
+            margin-bottom: 12px;
           }
         `}</style>
       </div>
@@ -79,11 +82,11 @@ const Item = props => {
   return (
     <div
       style={{
-        marginBottom: '5px',
+        marginBottom: '10px',
         marginLeft: '30px',
         textIndent: '-30px',
         breakInside: 'avoid',
-        lineHeight: 1.5,
+        lineHeight: 1.4,
       }}>
       {children}
     </div>
@@ -258,7 +261,7 @@ const TranslationsSection = props => {
         alignItems: 'baseline',
       }}>
       <div>{sectionTitle('translations', lang)}</div>
-      <div style={{ fontSize: 'small' }}>{groupByOptions}</div>
+      <div style={{ fontSize: '16px' }}>{groupByOptions}</div>
     </div>
   );
 

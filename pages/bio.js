@@ -253,11 +253,17 @@ class Timeline extends React.Component<TimelineProps> {
       }
 
       return (
-        <div key={i} style={{ marginBottom: '10px', breakInside: 'avoid' }}>
+        <div
+          key={i}
+          style={{
+            marginBottom: '10px',
+            breakInside: 'avoid',
+          }}>
           <div style={{ float: 'left' }}>{year}</div>
           <div
             style={{
               marginLeft: '50px',
+              lineHeight: '1.4',
               color: item.is_history_item ? '#666' : 'black',
             }}>
             {html}

@@ -520,15 +520,14 @@ export default class extends React.Component<TextComponentProps> {
                   <div>{body}</div>
                   <style jsx>{`
                     :global(.text-content) {
-                      font-family: 'Palatino', 'Georgia', serif;
+                      font-family: 'Alegreya', serif;
                       line-height: 1.5;
-                      font-size: 1.15em;
+                      font-size: 1em;
                       display: inline-block;
                     }
                     :global(.text-content) :global(sc) {
-                      font-variant: small-caps;
+                      font-family: 'Alegreya SC';
                     }
-
                     @media print {
                       font-size: 8pt;
                       line-height: 1.5;
