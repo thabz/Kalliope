@@ -143,8 +143,8 @@ const News = ({ news }: NewsProps) => {
             }
 
             :global(div.news-item h3) {
-              font-weight: 300;
-              font-size: 1.3em;
+              font-weight: 100;
+              font-size: 26px;
               margin: 0 0 20px 0;
               padding: 0;
             }
@@ -207,11 +207,9 @@ let Index = (props: IndexProps) => {
         <Nav lang="da" crumbs={kalliopeCrumbs(lang)} rightSide={navPaging} />
         <Heading title="Kalliope" />
         <KalliopeTabs lang={lang} selected="index" />
-        <SidebarSplit sidebar={sidebar}>
-          <div>
-            <SubHeading>{_('Nyheder', lang)}</SubHeading>
-            {renderedNews}
-          </div>
+
+        <SidebarSplit sidebar={sidebar} style={{ marginTop: '50px' }}>
+          <div>{renderedNews}</div>
         </SidebarSplit>
         <LangSelect lang={lang} path={requestPath} />
       </Main>

@@ -7,10 +7,11 @@ type SidebarSplitProps = {
   sidebar: Node | Array<Node> | null,
   children?: Node,
   sidebarOnTopWhenSplit?: boolean,
+  style?: {},
 };
 export default class SidebarSplit extends React.Component<SidebarSplitProps> {
   render() {
-    const { sidebar, sidebarOnTopWhenSplit } = this.props;
+    const { sidebar, sidebarOnTopWhenSplit, style = {} } = this.props;
     let className =
       sidebar == null || sidebar.length == 0
         ? 'sidebar-spl empty'
@@ -18,7 +19,7 @@ export default class SidebarSplit extends React.Component<SidebarSplitProps> {
     className += sidebarOnTopWhenSplit != null ? ' reverse-split' : '';
     const renderedSidebar = <aside>{sidebar}</aside>;
     return (
-      <div className={className}>
+      <div className={className} style={style}>
         {this.props.children}
         {renderedSidebar}
         <style jsx>{`
