@@ -1,7 +1,7 @@
-const { loadXMLDoc } = require('../libs/helpers.js');
 const { get_picture } = require('./parsing.js');
+const { loadXMLDoc, getElementsByTagName } = require('./xml.js');
 
-const build_portraits_json = (poet, collected) => {
+const build_portraits_json = async (poet, collected) => {
   let result = [];
   if (!poet.has_portraits) {
     return result;
@@ -11,18 +11,20 @@ const build_portraits_json = (poet, collected) => {
     onError = message => {
       throw `fdirs/${poet.id}/portraits.xml: ${message}`;
     };
-    result = doc.find('//pictures/picture').map(picture => {
-      picture = get_picture(
-        picture,
-        `/static/images/${poet.id}`,
-        collected,
-        onError
-      );
-      if (picture == null) {
-        onError('har et billede uden src- eller ref-attribut.');
-      }
-      return picture;
-    });
+    result = await Promise.all(
+      getElementsByTagName(doc, 'picture').map(async picture => {
+        picture = await get_picture(
+          picture,
+          `/static/images/${poet.id}`,
+          collected,
+          onError
+        );
+        if (picture == null) {
+          onError('har et billede uden src- eller ref-attribut.');
+        }
+        return picture;
+      })
+    );
     const primaries = result.filter(p => p.primary);
     if (primaries.length > 1) {
       onError('har flere primary');

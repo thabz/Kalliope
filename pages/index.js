@@ -150,11 +150,9 @@ const News = ({ news }: NewsProps) => {
             }
             div.news-body {
               line-height: 1.6;
-              font-weight: 300;
             }
             div.news-date {
               margin-top: 5px;
-              font-weight: 300;
               font-size: 0.8em;
               color: #757575;
             }
