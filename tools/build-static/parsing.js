@@ -26,7 +26,7 @@ const extractTitle = (head, type) => {
     return null;
   }
   let title = safeGetInnerXML(element);
-  if (title == null || title.length === 0) {
+  if (title == null || title.trim().length === 0) {
     return null;
   }
   const parts = title.match(/<num>([^<]*)<\/num>(.*)$/);

@@ -57,8 +57,10 @@ const build_global_lines_json = collected => {
           if (line != null) {
             // firstline is null for prose texts
             let indexableLine = line
+              .trim()
               .replace(',', '')
               .replace('!', '')
+              .replace('?', '')
               .replace(/^\[/, '')
               .replace(/^\(/, '')
               .toUpperCase()
@@ -72,9 +74,9 @@ const build_global_lines_json = collected => {
                 .replace(/^Ö/, 'Ø')
                 .replace(/^AA/, 'Å');
             }
-            let firstletter = indexableLine[0];
-            if (firstletter >= '0' && firstletter <= '9') {
-              firstletter = '_'; // Vises som "Tegn"
+            let firstletter = (indexableLine || '_')[0];
+            if (!firstletter.match(/^[A-ZÆØÅÄÖÜ_]$/)) {
+              firstletter = '_';
             }
             const work = collected.works.get(
               textMeta.poetId + '/' + textMeta.workId
