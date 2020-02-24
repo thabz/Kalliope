@@ -289,7 +289,7 @@ const TextContent = (props: TextContentPropsType) => {
         return <Footnote key={keySeq++} text={noteContent} />;
       case 'sc':
         return (
-          <span key={keySeq++} style={{ fontFamily: 'Alegreya SC' }}>
+          <span key={keySeq++} className="small-caps">
             {handle_nodes(node.childNodes)}
           </span>
         );

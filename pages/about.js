@@ -91,7 +91,7 @@ const About = (props: AboutProps) => {
   let author = null;
   if (keyword.author != null) {
     author = (
-      <div style={{ fontVariant: 'small-caps', marginBottom: '40px' }}>
+      <div style={{ fontSize: '16px', marginBottom: '40px' }}>
         Af {keyword.author}
       </div>
     );

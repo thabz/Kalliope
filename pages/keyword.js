@@ -92,7 +92,7 @@ export default class extends React.Component<KeywordComponentProps> {
     let author = null;
     if (keyword.author != null) {
       author = (
-        <div style={{ fontVariant: 'small-caps', marginBottom: '40px' }}>
+        <div style={{ fontSize: '16px', marginBottom: '40px' }}>
           Af {keyword.author}
         </div>
       );

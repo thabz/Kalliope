@@ -368,6 +368,9 @@ export default class Nav extends React.Component<NavProps> {
             height: 150px;
             -webkit-tap-highlight-color: ${CommonData.backgroundLinkColor};
           }
+          :global(.small-caps) {
+            fontfamily: 'Alegreya SC';
+          }
           :global(a) {
             color: ${CommonData.linkColor};
             text-decoration: none;
@@ -399,6 +402,7 @@ export default class Nav extends React.Component<NavProps> {
             font-size: 1rem;
             font-weight: 300;
           }
+
           @media print {
             .nav-container {
               display: none;
