@@ -298,7 +298,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
             display: flex;
             justify-content: space-between;
             border-bottom: 1px solid black;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
             margin-top: 30px;
             flex-grow: 1;
           }

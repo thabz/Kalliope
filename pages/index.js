@@ -207,8 +207,7 @@ let Index = (props: IndexProps) => {
         <Nav lang="da" crumbs={kalliopeCrumbs(lang)} rightSide={navPaging} />
         <Heading title="Kalliope" />
         <KalliopeTabs lang={lang} selected="index" />
-
-        <SidebarSplit sidebar={sidebar} style={{ marginTop: '50px' }}>
+        <SidebarSplit sidebar={sidebar}>
           <div>{renderedNews}</div>
         </SidebarSplit>
         <LangSelect lang={lang} path={requestPath} />

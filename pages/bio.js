@@ -364,14 +364,16 @@ export default class extends React.Component<BioProps> {
                 contentHtml={content_html}
                 contentLang={content_lang}
                 className="bio-text"
-                style={{ marginBottom: '40px' }}
               />
               <Timeline timeline={timeline} lang={lang} />
               <style jsx>{`
+                :global(.bio-text) {
+                  padding-bottom: 80px;
+                }
                 @media (max-width: 800px) {
                   :global(.bio-text) {
                     border-bottom: 1px solid #666;
-                    padding-bottom: 40px;
+                    padding-bottom: 30px;
                   }
                 }
               `}</style>
