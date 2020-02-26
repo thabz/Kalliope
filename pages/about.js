@@ -45,9 +45,10 @@ const About = (props: AboutProps) => {
     return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
   }
   const requestPath = `/${lang}/about/${aboutItemId}`;
-  const pictures = keyword.pictures.map(p => {
+  const pictures = keyword.pictures.map((p, i) => {
     return (
       <Picture
+        key={'pic' + i}
         pictures={[p]}
         contentLang={p.content_lang || 'da'}
         showDropShadow={aboutItemId !== 'kalliope'}
@@ -56,11 +57,14 @@ const About = (props: AboutProps) => {
       />
     );
   });
-  const renderedPictures = <SidebarPictures>{pictures}</SidebarPictures>;
+  const renderedPictures = (
+    <SidebarPictures key="pictures">{pictures}</SidebarPictures>
+  );
   const renderedNotes = keyword.notes.map((note, i) => {
     return (
       <Note key={'note' + i}>
         <TextContent
+          key="notes"
           contentHtml={note.content_html}
           contentLang={note.content_lang}
         />
@@ -91,7 +95,7 @@ const About = (props: AboutProps) => {
   let author = null;
   if (keyword.author != null) {
     author = (
-      <div style={{ fontVariant: 'small-caps', marginBottom: '40px' }}>
+      <div style={{ fontSize: '16px', marginBottom: '40px' }}>
         Af {keyword.author}
       </div>
     );

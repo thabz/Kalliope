@@ -12,13 +12,13 @@ const Heading = (props: HeadingProps) => {
       <h1>{title}</h1>
       <style jsx>{`
         .heading {
-          margin-bottom: 40px;
+          margin-bottom: 30px;
         }
 
         .heading :global(h1) {
           margin: 0;
           width: 100%;
-          padding-top: 20px;
+          padding-top: 10px;
           line-height: 56px;
           font-size: 56px;
           font-weight: 100;

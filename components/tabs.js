@@ -331,9 +331,9 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
           }
           :global(.tabs) > :global(.tab) {
             display: inline-block;
-            margin-right: 40px;
+            margin-right: 30px;
             border-bottom: 2px solid transparent;
-            padding-bottom: 20px;
+            padding-bottom: 15px;
             transition: margin-right ${transitionDuration};
           }
           :global(.tabs) > :global(.tab) :global(h2) {

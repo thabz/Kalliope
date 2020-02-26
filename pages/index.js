@@ -94,7 +94,7 @@ const TodaysEvents = ({ events }: TodaysEventsProps) => {
           margin-bottom: 20px;
         }
         :global(div.today-date) {
-          font-size: 0.8em;
+          font-size: 0.9em;
           margin-bottom: 3px;
         }
         :global(div.today-body) {
@@ -153,7 +153,7 @@ const News = ({ news }: NewsProps) => {
             }
             div.news-date {
               margin-top: 5px;
-              font-size: 0.8em;
+              font-size: 0.9em;
               color: #757575;
             }
           `}</style>
