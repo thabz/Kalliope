@@ -1,11 +1,10 @@
 // @flow
 
 import React, { useContext } from 'react';
-import Head from '../components/head';
-import Main from '../components/main.js';
-import { KalliopeTabs } from '../components/tabs.js';
+import Page from '../components/page.js';
+import { kalliopeTabs } from '../components/tabs.js';
 import LangSelect from '../components/langselect';
-import Nav, { NavPaging, kalliopeCrumbs } from '../components/nav';
+import Nav, { kalliopeCrumbs } from '../components/nav.js';
 import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import * as Links from '../components/links';
@@ -183,36 +182,37 @@ let Index = (props: IndexProps) => {
 
   const requestPath = `/${lang}/`;
 
-  let navPaging = null;
-  if (pagingContext != null) {
-    let prevURL = {
-      url: `/${lang}/?date=${pagingContext.prev}`,
-      title: 'En dag tilbage',
-    };
-    let nextURL = {
-      url: `/${lang}/?date=${pagingContext.next}`,
-      title: 'En dag frem',
-    };
-    navPaging = <NavPaging prev={prevURL} next={nextURL} />;
-  }
-
-  const renderedNews = <News news={news} lang={lang} />;
+  const paging =
+    pagingContext != null
+      ? {
+          prev: {
+            url: `/${lang}/?date=${pagingContext.prev}`,
+            title: 'En dag tilbage',
+          },
+          next: {
+            url: `/${lang}/?date=${pagingContext.next}`,
+            title: 'En dag frem',
+          },
+        }
+      : null;
 
   const sidebar = <TodaysEvents events={todaysEvents} />;
 
   return (
-    <div>
-      <Head headTitle="Kalliope" requestPath={requestPath} />
-      <Main>
-        <Nav lang="da" crumbs={kalliopeCrumbs(lang)} rightSide={navPaging} />
-        <Heading title="Kalliope" />
-        <KalliopeTabs lang={lang} selected="index" />
-        <SidebarSplit sidebar={sidebar}>
-          <div>{renderedNews}</div>
-        </SidebarSplit>
-        <LangSelect lang={lang} path={requestPath} />
-      </Main>
-    </div>
+    <Page
+      headTitle="Kalliope"
+      pageTitle="Kalliope"
+      requestPath={requestPath}
+      crumbs={kalliopeCrumbs(lang)}
+      menuItems={kalliopeTabs()}
+      selectedMenuItem="index"
+      paging={paging}>
+      <SidebarSplit sidebar={sidebar}>
+        <div>
+          <News news={news} lang={lang} />
+        </div>
+      </SidebarSplit>
+    </Page>
   );
 };
 

@@ -7,82 +7,10 @@ import _ from '../common/translations.js';
 import type { Lang, Poet, Country } from '../common/types.js';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
-
+import { LoupeSVG, CrossSVG } from './icons.js';
 const transitionDuration = '0.2s';
 
-type LoupeSVGProps = {
-  color: string,
-};
-class LoupeSVG extends React.Component<LoupeSVGProps> {
-  render() {
-    const { color } = this.props;
-    const style = {
-      fill: 'none',
-      stroke: color,
-      strokeLinecap: 'round',
-      strokeLinejoin: 'round',
-      strokeWidth: '1px',
-    };
-    return (
-      <svg viewBox="0 -5 48 53" width="100%" height="100%">
-        <ellipse
-          style={style}
-          cx="19.55"
-          cy="19.5"
-          rx="18.55"
-          ry="18.5"
-          vectorEffect="non-scaling-stroke"
-        />
-        <line
-          style={style}
-          x1="47"
-          x2="32.96"
-          y1="47"
-          y2="33"
-          strokeWidth="0.5"
-          vectorEffect="non-scaling-stroke"
-        />
-      </svg>
-    );
-  }
-}
-
-type CrossSVGProps = {
-  color: string,
-};
-class CrossSVG extends React.Component<CrossSVGProps> {
-  render() {
-    const { color } = this.props;
-    const style = {
-      fill: 'none',
-      stroke: color,
-      strokeLinecap: 'round',
-      strokeLinejoin: 'round',
-      strokeWidth: '1px',
-    };
-    return (
-      <svg viewBox="0 -5 48 53" width="100%" height="100%">
-        <line
-          style={style}
-          x1="38"
-          y1="38"
-          x2="4"
-          y2="4"
-          vectorEffect="non-scaling-stroke"
-        />
-        <line
-          style={style}
-          x1="38"
-          y1="4"
-          x2="4"
-          y2="38"
-          vectorEffect="non-scaling-stroke"
-        />
-      </svg>
-    );
-  }
-}
-type TabsProps = {
+type MenuProps = {
   items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
   poet?: Poet,
   country: Country,
@@ -90,10 +18,10 @@ type TabsProps = {
   query?: ?string,
   selected: string,
 };
-type TabsState = {
+type MenuState = {
   showSearchField: boolean,
 };
-export default class Tabs extends React.Component<TabsProps, TabsState> {
+export default class Menu extends React.Component<MenuProps, MenuState> {
   searchField: HTMLInputElement;
   onLoupeClick: (e: Event) => void;
   onCrossClick: (e: Event) => void;
@@ -102,7 +30,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   onFocus: () => void;
   onBlur: () => void;
 
-  constructor(props: TabsProps) {
+  constructor(props: MenuProps) {
     super(props);
     const { query } = props;
     this.state = { showSearchField: query != null && query.length > 0 };
@@ -468,12 +396,12 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   }
 }
 
-type PoetTabsProps = {
+type PoetMenuProps = {
   poet: Poet,
   query?: ?string,
   selected: 'works' | 'titles' | 'first' | 'bio' | 'search' | 'mentions',
 };
-export const PoetTabs = (props: PoetTabsProps) => {
+export const PoetTabs = (props: PoetMenuProps) => {
   const { poet, selected, query } = props;
   const lang = useContext(LangContext);
 
@@ -526,9 +454,22 @@ export const PoetTabs = (props: PoetTabsProps) => {
   );
 };
 
-export const kalliopeTabs = () => {
+type KalliopeTabsProps = {
+  country?: Country,
+  query?: ?string,
+  selected:
+    | 'index'
+    | 'poets'
+    | 'keywords'
+    | 'dictionary'
+    | 'about'
+    | 'search'
+    | 'museum',
+};
+export const KalliopeMenu = (props: KalliopeTabsProps) => {
+  const { selected, country, query } = props;
   const lang = useContext(LangContext);
-  return [
+  const tabs = [
     { id: 'index', title: 'Kalliope', url: Links.frontPageURL(lang) },
     {
       id: 'poets',
@@ -554,26 +495,9 @@ export const kalliopeTabs = () => {
       url: Links.aboutURL(lang, 'kalliope'),
     },
   ];
-};
-
-type KalliopeTabsProps = {
-  country?: Country,
-  query?: ?string,
-  selected:
-    | 'index'
-    | 'poets'
-    | 'keywords'
-    | 'dictionary'
-    | 'about'
-    | 'search'
-    | 'museum',
-};
-export const KalliopeTabs = (props: KalliopeTabsProps) => {
-  const { selected, country, query } = props;
-  const lang = useContext(LangContext);
   return (
     <Tabs
-      items={kalliopeTabs()}
+      items={tabs}
       selected={selected}
       lang={lang}
       country={country || 'dk'}

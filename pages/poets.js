@@ -1,6 +1,7 @@
 // @flow
 
 import React, { useContext } from 'react';
+import Page from '../components/page.js';
 import Head from '../components/head';
 import Main from '../components/main.js';
 import { Link } from '../routes';
@@ -168,28 +169,22 @@ const Poets = (props: PoetsProps) => {
     return Links.poetsURL(lang, groupBy, code);
   };
   return (
-    <div>
-      <Head
-        headTitle={_('Digtere', lang) + ' - Kalliope'}
-        requestPath={requestPath}
+    <Page
+      headTitle={_('Digtere', lang) + ' - Kalliope'}
+      requestPath={requestPath}
+      crumbs={[...kalliopeCrumbs(lang), { title: pageTitle }]}
+      menuItems={tabs}
+      selectedMenuItem={groupBy}
+      country={country}
+      pageTitle={pageTitle}>
+      {renderedGroups}
+      <CountryPicker
+        style={{ marginTop: '40px' }}
+        lang={lang}
+        countryToURL={countryCodeToURL}
+        selectedCountry={country}
       />
-      <Main>
-        <Nav
-          lang={lang}
-          crumbs={[...kalliopeCrumbs(lang), { title: pageTitle }]}
-        />
-        <Heading title={pageTitle} />
-        <Tabs items={tabs} selected={groupBy} country={country} lang={lang} />
-        {renderedGroups}
-        <CountryPicker
-          style={{ marginTop: '40px' }}
-          lang={lang}
-          countryToURL={countryCodeToURL}
-          selectedCountry={country}
-        />
-        <LangSelect path={requestPath} />
-      </Main>
-    </div>
+    </Page>
   );
 };
 
