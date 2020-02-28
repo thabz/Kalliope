@@ -7,81 +7,10 @@ import _ from '../common/translations.js';
 import type { Lang, Poet, Country } from '../common/types.js';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
+import { LoupeSVG, CrossSVG } from './icons.js';
 
 const transitionDuration = '0.2s';
 
-type LoupeSVGProps = {
-  color: string,
-};
-class LoupeSVG extends React.Component<LoupeSVGProps> {
-  render() {
-    const { color } = this.props;
-    const style = {
-      fill: 'none',
-      stroke: color,
-      strokeLinecap: 'round',
-      strokeLinejoin: 'round',
-      strokeWidth: '1px',
-    };
-    return (
-      <svg viewBox="0 -5 48 53" width="100%" height="100%">
-        <ellipse
-          style={style}
-          cx="19.55"
-          cy="19.5"
-          rx="18.55"
-          ry="18.5"
-          vectorEffect="non-scaling-stroke"
-        />
-        <line
-          style={style}
-          x1="47"
-          x2="32.96"
-          y1="47"
-          y2="33"
-          strokeWidth="0.5"
-          vectorEffect="non-scaling-stroke"
-        />
-      </svg>
-    );
-  }
-}
-
-type CrossSVGProps = {
-  color: string,
-};
-class CrossSVG extends React.Component<CrossSVGProps> {
-  render() {
-    const { color } = this.props;
-    const style = {
-      fill: 'none',
-      stroke: color,
-      strokeLinecap: 'round',
-      strokeLinejoin: 'round',
-      strokeWidth: '1px',
-    };
-    return (
-      <svg viewBox="0 -5 48 53" width="100%" height="100%">
-        <line
-          style={style}
-          x1="38"
-          y1="38"
-          x2="4"
-          y2="4"
-          vectorEffect="non-scaling-stroke"
-        />
-        <line
-          style={style}
-          x1="38"
-          y1="4"
-          x2="4"
-          y2="38"
-          vectorEffect="non-scaling-stroke"
-        />
-      </svg>
-    );
-  }
-}
 type TabsProps = {
   items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
   poet?: Poet,
@@ -468,21 +397,10 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   }
 }
 
-type PoetTabsProps = {
-  poet: Poet,
-  query?: ?string,
-  selected: 'works' | 'titles' | 'first' | 'bio' | 'search' | 'mentions',
-};
-export const PoetTabs = (props: PoetTabsProps) => {
-  const { poet, selected, query } = props;
+export const poetTabs = (poet: Poet) => {
   const lang = useContext(LangContext);
 
-  const tabs: Array<{
-    id: string,
-    title: string,
-    hide?: boolean,
-    url: string,
-  }> = [
+  return [
     {
       id: 'works',
       title: _('Værker', lang),
@@ -514,16 +432,6 @@ export const PoetTabs = (props: PoetTabsProps) => {
       url: Links.bioURL(lang, poet.id),
     },
   ];
-  return (
-    <Tabs
-      items={tabs}
-      selected={selected}
-      lang={lang}
-      country={poet.country}
-      poet={poet}
-      query={query}
-    />
-  );
 };
 
 export const kalliopeTabs = () => {

@@ -3,11 +3,11 @@
 import React from 'react';
 import 'isomorphic-fetch';
 import { Link, Router } from '../routes';
-import Head from '../components/head';
+import Page from '../components/page.js';
 import Main from '../components/main.js';
 import Nav, { worksCrumbs } from '../components/nav';
 import LangSelect from '../components/langselect';
-import { PoetTabs } from '../components/tabs.js';
+import { poetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import { poetNameString } from '../components/poetname-helpers.js';
@@ -199,77 +199,63 @@ type WorksProps = {
   artwork: Array<PictureItem>,
   error: ?Error,
 };
-export default class extends React.Component<WorksProps> {
-  static async getInitialProps({
-    query: { lang, poetId },
-  }: {
-    query: { lang: Lang, poetId: string },
-  }) {
-    const json = await Client.works(poetId);
+const WorksPage = (props: WorksProps) => {
+  const { lang, poet, works, artwork, error } = props;
 
-    return {
-      lang,
-      poet: json.poet,
-      works: json.works,
-      artwork: json.artwork,
-      error: json.error,
-    };
+  if (error) {
+    return <ErrorPage error={error} lang={lang} message="Ukendt digter" />;
   }
 
-  render() {
-    const { lang, poet, works, artwork, error } = this.props;
+  if (works.length === 0 && artwork.length === 0) {
+    const bioURL = Links.bioURL(lang, poet.id);
+    Router.replaceRoute(bioURL);
+    return null;
+  }
 
-    if (error) {
-      return <ErrorPage error={error} lang={lang} message="Ukendt digter" />;
-    }
-    const requestPath = `/${lang}/works/${poet.id}`;
-
-    const noDataString = null;
-
-    if (works.length === 0 && artwork.length === 0) {
-      const bioURL = Links.bioURL(lang, poet.id);
-      Router.replaceRoute(bioURL);
-      return null;
-    }
-
-    const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
-
-    const ogDescription = 'Værker';
-    const ogImage = OpenGraph.poetImage(poet);
-    const ogTitle = poetNameString(poet, false, false);
-
-    const title = <PoetName poet={poet} includePeriod />;
-
-    return (
-      <div>
-        <Head
-          headTitle={headTitle}
-          ogTitle={ogTitle}
-          ogImage={ogImage}
-          description={ogDescription}
-          requestPath={requestPath}
+  return (
+    <Page
+      headTitle={poetNameString(poet, false, false) + ' - Kalliope'}
+      ogTitle={poetNameString(poet, false, false)}
+      ogImage={OpenGraph.poetImage(poet)}
+      ogDescription={'Værker'}
+      requestPath={`/${lang}/works/${poet.id}`}
+      crumbs={worksCrumbs(lang, poet)}
+      pageTitle={<PoetName poet={poet} includePeriod />}
+      pageSubtitle={_('Værker', lang)}
+      menuItems={poetTabs(poet)}
+      selectedMenuItem="works">
+      <div className="two-columns">
+        <WorksList lang={lang} poet={poet} works={works} />
+        <PicturesGrid
+          lang={lang}
+          poet={poet}
+          artwork={artwork}
+          hideArtist={true}
         />
-        <Main>
-          <Nav lang={lang} crumbs={worksCrumbs(lang, poet)} />
-          <Heading title={title} subtitle={_('Værker', lang)} />
-          <PoetTabs lang={lang} poet={poet} selected="works" />
-          <div className="two-columns">
-            <WorksList lang={lang} poet={poet} works={works} />
-            <PicturesGrid
-              lang={lang}
-              poet={poet}
-              artwork={artwork}
-              hideArtist={true}
-            />
-            <style jsx>{`
-              :global(.nodata) {
-                padding: 30px 0;
-              }
-            `}</style>
-          </div>
-          <LangSelect lang={lang} path={requestPath} />
-        </Main>
+        <style jsx>{`
+          :global(.nodata) {
+            padding: 30px 0;
+          }
+        `}</style>
       </div>
-    );
-  }
-}
+    </Page>
+  );
+};
+
+WorksPage.getInitialProps = async ({
+  query: { lang, poetId },
+}: {
+  query: { lang: Lang, poetId: string },
+}) => {
+  const json = await Client.works(poetId);
+
+  return {
+    lang,
+    poet: json.poet,
+    works: json.works,
+    artwork: json.artwork,
+    error: json.error,
+  };
+};
+
+export default WorksPage;

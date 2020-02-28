@@ -161,3 +161,76 @@ export class CloseButton extends React.Component<SVGProps> {
     );
   }
 }
+
+type LoupeSVGProps = {
+  color: string,
+};
+export class LoupeSVG extends React.Component<LoupeSVGProps> {
+  render() {
+    const { color } = this.props;
+    const style = {
+      fill: 'none',
+      stroke: color,
+      strokeLinecap: 'round',
+      strokeLinejoin: 'round',
+      strokeWidth: '1px',
+    };
+    return (
+      <svg viewBox="0 -5 48 53" width="100%" height="100%">
+        <ellipse
+          style={style}
+          cx="19.55"
+          cy="19.5"
+          rx="18.55"
+          ry="18.5"
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          style={style}
+          x1="47"
+          x2="32.96"
+          y1="47"
+          y2="33"
+          strokeWidth="0.5"
+          vectorEffect="non-scaling-stroke"
+        />
+      </svg>
+    );
+  }
+}
+
+type CrossSVGProps = {
+  color: string,
+};
+export class CrossSVG extends React.Component<CrossSVGProps> {
+  render() {
+    const { color } = this.props;
+    const style = {
+      fill: 'none',
+      stroke: color,
+      strokeLinecap: 'round',
+      strokeLinejoin: 'round',
+      strokeWidth: '1px',
+    };
+    return (
+      <svg viewBox="0 -5 48 53" width="100%" height="100%">
+        <line
+          style={style}
+          x1="38"
+          y1="38"
+          x2="4"
+          y2="4"
+          vectorEffect="non-scaling-stroke"
+        />
+        <line
+          style={style}
+          x1="38"
+          y1="4"
+          x2="4"
+          y2="38"
+          vectorEffect="non-scaling-stroke"
+        />
+      </svg>
+    );
+  }
+}

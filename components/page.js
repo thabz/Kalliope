@@ -14,8 +14,12 @@ const Page = props => {
     children,
     headTitle,
     pageTitle,
+    pageSubtitle,
+    ogTitle,
+    ogImage,
+    ogDescription,
     requestPath,
-    crumbs,
+    crumbs = [],
     paging,
     country,
     menuItems,
@@ -29,10 +33,16 @@ const Page = props => {
 
   return (
     <div>
-      <Head headTitle={headTitle} requestPath={requestPath} />
+      <Head
+        headTitle={headTitle}
+        ogTitle={ogTitle}
+        ogImage={ogImage}
+        ogDescription={ogDescription}
+        requestPath={requestPath}
+      />
       <Main>
         <Nav lang={lang} crumbs={crumbs} rightSide={pagingRendered} />
-        <Heading title={pageTitle} />
+        <Heading title={pageTitle} subtitle={pageSubtitle} />
         <Tabs
           items={menuItems}
           selected={selectedMenuItem}
