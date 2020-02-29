@@ -463,7 +463,7 @@ const handle_work = async work => {
             throw `En section mangler toctitle eller title i ${poetId}/${workId}.xml`;
           }
           const linktitle =
-            extractTitle(head, 'linktitle') || toctitle || title;
+            extractTitle(head, 'linktitle') || title || toctitle;
           const breadcrumb = { title: linktitle.title, id: sectionId };
           const subtoc = await handle_section(
             getChildByTagName(part, 'content'),
