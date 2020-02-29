@@ -7,7 +7,7 @@ import Page from '../components/page.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
-import { kalliopeTabs } from '../components/menu.js';
+import { kalliopeMenu } from '../components/menu.js';
 import SubHeading from '../components/subheading.js';
 import PoetName from '../components/poetname.js';
 import TextName from '../components/textname.js';
@@ -87,7 +87,7 @@ const KeywordPage = (props: KeywordComponentProps) => {
       requestPath={requestPath}
       crumbs={crumbs}
       pageTitle={title}
-      menuItems={kalliopeTabs()}
+      menuItems={kalliopeMenu()}
       selectedMenuItem="keywords">
       <FootnoteContainer key={keyword.id}>
         <SidebarSplit sidebar={sidebar}>

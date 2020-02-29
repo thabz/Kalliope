@@ -10,7 +10,7 @@ import {
   poetCrumbsWithTitle,
 } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect.js';
-import { kalliopeTabs, poetTabs } from '../components/menu.js';
+import { kalliopeMenu, poetMenu } from '../components/menu.js';
 import {
   poetNameString,
   poetGenetiveLastName,
@@ -301,13 +301,13 @@ export default class extends React.Component<SearchProps> {
     let crumbs = null;
 
     if (poet != null) {
-      tabs = poetTabs(poet);
+      tabs = poetMenu(poet);
       headTitle =
         'Søgning - ' + poetNameString(poet, false, false) + ' - Kalliope';
       pageTitle = <PoetName poet={poet} includePeriod />;
       crumbs = poetCrumbsWithTitle(lang, poet, _('Søgeresultat', lang));
     } else {
-      tabs = kalliopeTabs();
+      tabs = kalliopeMenu();
       headTitle = 'Søgning - Kalliope';
       pageTitle = 'Kalliope';
       crumbs = [...kalliopeCrumbs(lang), { title: _('Søgeresultat', lang) }];

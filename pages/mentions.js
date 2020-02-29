@@ -6,7 +6,7 @@ import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
 import _ from '../common/translations.js';
 import { Link } from '../routes';
 import LangSelect from '../components/langselect';
-import { poetTabs } from '../components/menu.js';
+import { poetMenu } from '../components/menu.js';
 import PoetName from '../components/poetname.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import TextContent from '../components/textcontent.js';
@@ -68,7 +68,7 @@ const Section = props => {
           line-height: 1.6;
           padding-bottom: 1px;
           border-bottom: 1px solid #888;
-          margin-bottom: 50px;
+          margin-bottom: 20px;
         }
       `}</style>
     </div>
@@ -329,7 +329,7 @@ const MentionsPage = (props: MentionsProps) => {
       crumbs={poetCrumbsWithTitle(lang, poet, _('Henvisninger', lang))}
       pageTitle={<PoetName poet={poet} includePeriod />}
       subtitle={_('Henvisninger', lang)}
-      menuItems={poetTabs(poet)}
+      menuItems={poetMenu(poet)}
       selectedMenuItem="mentions">
       {sections}
     </Page>

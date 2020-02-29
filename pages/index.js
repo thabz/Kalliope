@@ -2,7 +2,7 @@
 
 import React, { useContext } from 'react';
 import Page from '../components/page.js';
-import { kalliopeTabs } from '../components/menu.js';
+import { kalliopeMenu } from '../components/menu.js';
 import LangSelect from '../components/langselect';
 import { kalliopeCrumbs } from '../components/breadcrumbs';
 import SubHeading from '../components/subheading.js';
@@ -203,7 +203,7 @@ let Index = (props: IndexProps) => {
       pageTitle="Kalliope"
       requestPath={requestPath}
       crumbs={kalliopeCrumbs(lang)}
-      menuItems={kalliopeTabs()}
+      menuItems={kalliopeMenu()}
       selectedMenuItem="index"
       paging={paging}>
       <SidebarSplit sidebar={sidebar}>

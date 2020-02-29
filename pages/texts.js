@@ -7,7 +7,7 @@ import LangSelect from '../components/langselect.js';
 import PoetName from '../components/poetname.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import WorkName from '../components/workname.js';
-import { poetTabs } from '../components/menu.js';
+import { poetMenu } from '../components/menu.js';
 import SectionedList from '../components/sectionedlist.js';
 import * as Links from '../components/links.js';
 import * as Sorting from '../common/sorting.js';
@@ -126,7 +126,7 @@ const TextsPage = (props: TextsProps) => {
       requestPath={`/${lang}/texts/${poet.id}/${type}`}
       crumbs={poetCrumbsWithTitle(lang, poet, lastCrumbTitle)}
       pageTitle={<PoetName poet={poet} includePeriod />}
-      menuItems={poetTabs(poet)}
+      menuItems={poetMenu(poet)}
       selectedMenuItem={type}>
       {renderedGroups}
     </Page>

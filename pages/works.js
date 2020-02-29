@@ -6,7 +6,7 @@ import { Link, Router } from '../routes';
 import Page from '../components/page.js';
 import { worksCrumbs } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect';
-import { poetTabs } from '../components/menu.js';
+import { poetMenu } from '../components/menu.js';
 import PoetName from '../components/poetname.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PicturesGrid from '../components/picturesgrid.js';
@@ -220,7 +220,7 @@ const WorksPage = (props: WorksProps) => {
       crumbs={worksCrumbs(lang, poet)}
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
-      menuItems={poetTabs(poet)}
+      menuItems={poetMenu(poet)}
       selectedMenuItem="works">
       <div className="two-columns">
         <WorksList lang={lang} poet={poet} works={works} />

@@ -8,7 +8,7 @@ import Main from '../components/main.js';
 import { textCrumbs } from '../components/breadcrumbs.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
-import { poetTabs } from '../components/menu.js';
+import { poetMenu } from '../components/menu.js';
 import SubHeading from '../components/subheading.js';
 import Stack from '../components/stack.js';
 import WrapNonEmpty from '../components/wrapnonempty.js';
@@ -463,7 +463,7 @@ const TextPage = (props: TextComponentProps) => {
       paging={paging}
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
-      menuItems={poetTabs(poet)}
+      menuItems={poetMenu(poet)}
       selectedMenuItem="works">
       <FootnoteContainer key={text.id}>
         <SidebarSplit sidebar={sidebar}>

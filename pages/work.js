@@ -7,7 +7,7 @@ import Main from '../components/main.js';
 import { workCrumbs } from '../components/breadcrumbs.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect.js';
-import { poetTabs } from '../components/menu.js';
+import { poetMenu } from '../components/menu.js';
 import SubHeading from '../components/subheading.js';
 import PoetName from '../components/poetname.js';
 import { poetNameString } from '../components/poetname-helpers.js';
@@ -130,7 +130,7 @@ const WorkPage = (props: WorkProps) => {
       crumbs={workCrumbs(lang, poet, work)}
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
-      menuItems={poetTabs(poet)}
+      menuItems={poetMenu(poet)}
       selectedMenuItem="works">
       <SidebarSplit sidebar={sidebar}>
         <div>

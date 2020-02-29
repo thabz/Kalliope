@@ -3,7 +3,7 @@
 import React from 'react';
 import Page from '../components/page.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
-import { kalliopeTabs } from '../components/menu.js';
+import { kalliopeMenu } from '../components/menu.js';
 import SubHeading from '../components/subheading.js';
 import type { Lang, Error } from '../common/types.js';
 
@@ -20,7 +20,7 @@ const ErrorPage = (props: ErrorProps) => {
       crumbs={[...kalliopeCrumbs(lang), { title: message }]}
       pageTitle=" "
       pageSubtitle={_('Værker', lang)}
-      menuItems={kalliopeTabs()}
+      menuItems={kalliopeMenu()}
       selectedMenuItem="index">
       <SubHeading>{message}</SubHeading>
       <div style={{ lineHeight: 1.7 }}>

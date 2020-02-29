@@ -6,7 +6,7 @@ import Main from '../components/main.js';
 import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
-import { poetTabs } from '../components/menu.js';
+import { poetMenu } from '../components/menu.js';
 import PoetName from '../components/poetname.js';
 import {
   poetNameString,
@@ -319,7 +319,7 @@ const BioPage = (props: BioProps) => {
       crumbs={poetCrumbsWithTitle(lang, poet, _('Biografi', lang))}
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Biografi', lang)}
-      menuItems={poetTabs(poet)}
+      menuItems={poetMenu(poet)}
       selectedMenuItem="bio">
       <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
         <div style={{ lineHeight: '1.6' }}>

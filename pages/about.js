@@ -4,7 +4,7 @@ import React, { useContext } from 'react';
 import type Node from 'react';
 import { Link } from '../routes';
 import Page from '../components/page.js';
-import { kalliopeTabs } from '../components/menu.js';
+import { kalliopeMenu } from '../components/menu.js';
 import LangSelect from '../components/langselect';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import SubHeading from '../components/subheading.js';
@@ -136,7 +136,7 @@ const About = (props: AboutProps) => {
       requestPath={`/${lang}/about/${aboutItemId}`}
       crumbs={crumbs}
       pageTitle={'Kalliope'}
-      menuItems={kalliopeTabs()}
+      menuItems={kalliopeMenu()}
       selectedMenuItem="about">
       {pageBody}
     </Page>

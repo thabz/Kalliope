@@ -7,7 +7,7 @@ import Page from '../components/page.js';
 import Main from '../components/main.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect';
-import { kalliopeTabs } from '../components/menu.js';
+import { kalliopeMenu } from '../components/menu.js';
 import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import PicturesGrid from '../components/picturesgrid.js';
@@ -52,7 +52,7 @@ const MuseumPage = (props: MuseumProps) => {
       crumbs={crumbs}
       pageTitle={museum.name}
       pageSubtitle={_('Værker', lang)}
-      menuItems={kalliopeTabs()}
+      menuItems={kalliopeMenu()}
       selectedMenuItem="works">
       <div className="two-columns" style={{ lineHeight: 1.7 }}>
         <PicturesGrid lang={lang} artwork={artwork} hideMuseum={true} />

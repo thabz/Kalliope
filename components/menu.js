@@ -397,7 +397,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   }
 }
 
-export const poetTabs = (poet: Poet) => {
+export const poetMenu = (poet: Poet) => {
   const lang = useContext(LangContext);
 
   return [
@@ -434,7 +434,7 @@ export const poetTabs = (poet: Poet) => {
   ];
 };
 
-export const kalliopeTabs = () => {
+export const kalliopeMenu = () => {
   const lang = useContext(LangContext);
   return [
     { id: 'index', title: 'Kalliope', url: Links.frontPageURL(lang) },
@@ -462,30 +462,4 @@ export const kalliopeTabs = () => {
       url: Links.aboutURL(lang, 'kalliope'),
     },
   ];
-};
-
-type KalliopeTabsProps = {
-  country?: Country,
-  query?: ?string,
-  selected:
-    | 'index'
-    | 'poets'
-    | 'keywords'
-    | 'dictionary'
-    | 'about'
-    | 'search'
-    | 'museum',
-};
-export const KalliopeTabs = (props: KalliopeTabsProps) => {
-  const { selected, country, query } = props;
-  const lang = useContext(LangContext);
-  return (
-    <Tabs
-      items={kalliopeTabs()}
-      selected={selected}
-      lang={lang}
-      country={country || 'dk'}
-      query={query}
-    />
-  );
 };

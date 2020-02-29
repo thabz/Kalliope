@@ -6,7 +6,7 @@ import Page from '../components/page.js';
 import * as Links from '../components/links';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect.js';
-import { kalliopeTabs } from '../components/menu.js';
+import { kalliopeMenu } from '../components/menu.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
 import * as Sorting from '../common/sorting.js';
@@ -65,7 +65,7 @@ const Keywords = (props: KeywordsProps) => {
       requestPath={requestPath}
       crumbs={[...kalliopeCrumbs(lang), { title: _('Nøgleord', lang) }]}
       pageTitle={_('Nøgleord', lang)}
-      menuItems={kalliopeTabs()}
+      menuItems={kalliopeMenu()}
       selectedMenuItem="keywords">
       {renderedGroups}
       <LangSelect path={requestPath} />
