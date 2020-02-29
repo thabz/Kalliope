@@ -1,13 +1,13 @@
 // @flow
 
 import React, { useState, Fragment } from 'react';
-import Head from '../components/head';
+import Page from '../components/page.js';
 import Main from '../components/main.js';
 import Nav, { poetCrumbsWithTitle } from '../components/nav';
 import _ from '../common/translations.js';
 import { Link } from '../routes';
 import LangSelect from '../components/langselect';
-import { PoetTabs } from '../components/tabs.js';
+import { poetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import { poetNameString } from '../components/poetname-helpers.js';
@@ -18,6 +18,7 @@ import * as Links from '../components/links';
 import * as Client from '../common/client.js';
 import type {
   Lang,
+  Text,
   TextId,
   Poet,
   Work,
@@ -26,6 +27,7 @@ import type {
 } from '../common/types.js';
 import { poetsByLastname } from '../common/sorting.js';
 import { createURL } from '../common/client.js';
+import * as OpenGraph from '../common/opengraph.js';
 
 const joinedByComma = (items, lang) => {
   let result = [];
@@ -55,27 +57,25 @@ const sectionTitle = (sectionType, lang) => {
   }
 };
 
-class Section extends React.Component {
-  render() {
-    const { title, items } = this.props;
-    return (
-      <div className="list-section" style={{ marginBottom: '40px' }}>
-        <h3 style={{ columnSpan: 'all' }}>{title}</h3>
-        <TwoColumns>{items}</TwoColumns>
-        <style jsx>{`
-          h3 {
-            font-weight: 300;
-            font-size: 22x;
-            line-height: 1.6;
-            padding-bottom: 1px;
-            border-bottom: 1px solid #888;
-            margin-bottom: 12px;
-          }
-        `}</style>
-      </div>
-    );
-  }
-}
+const Section = props => {
+  const { title, items } = props;
+  return (
+    <div className="list-section" style={{ marginBottom: '40px' }}>
+      <h3 style={{ columnSpan: 'all' }}>{title}</h3>
+      <TwoColumns>{items}</TwoColumns>
+      <style jsx>{`
+        h3 {
+          font-weight: 300;
+          font-size: 22x;
+          line-height: 1.6;
+          padding-bottom: 1px;
+          border-bottom: 1px solid #888;
+          margin-bottom: 50px;
+        }
+      `}</style>
+    </div>
+  );
+};
 
 const Item = props => {
   const { children } = props;
@@ -93,7 +93,7 @@ const Item = props => {
   );
 };
 
-const PoemLink = props => {
+const PoemLink = (props: { poem: Text, lang: Lang }) => {
   const { poem, lang } = props;
   const url = Links.textURL(lang, poem.id);
   return (
@@ -277,83 +277,98 @@ type MentionsProps = {
   secondary: Array<TextContentType>,
   error: ?Error,
 };
-export default class extends React.Component<MentionsProps> {
-  static async getInitialProps({
-    query: { lang, poetId },
-  }: {
-    query: { lang: Lang, poetId: string },
-  }) {
-    const json = await Client.mentions(poetId);
-    return {
-      lang,
-      poet: json.poet,
-      mentions: json.mentions || [],
-      translations: json.translations || [],
-      primary: json.primary || [],
-      secondary: json.secondary || [],
-      error: json.error,
-    };
+const MentionsPage = (props: MentionsProps) => {
+  const {
+    lang,
+    poet,
+    mentions,
+    translations,
+    primary,
+    secondary,
+    error,
+  } = props;
+
+  if (error != null) {
+    return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
   }
 
-  render() {
-    const {
-      lang,
-      poet,
-      mentions,
-      translations,
-      primary,
-      secondary,
-      error,
-    } = this.props;
+  const sections = ['mentions', 'primary', 'secondary']
+    .map((section, i) => {
+      return {
+        title: sectionTitle(section, lang),
+        items: props[section].map((line, j) => {
+          return (
+            <Item key={j}>
+              <TextContent contentHtml={line} lang={lang} contentLang="da" />
+            </Item>
+          );
+        }),
+      };
+    })
+    .filter(g => g.items.length > 0)
+    .map(g => {
+      return <Section title={g.title} items={g.items} key={g.title} />;
+    });
 
-    if (error != null) {
-      return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
-    }
-    const requestPath = `/${lang}/mentions/${poet.id}`;
-    const sections = ['mentions', 'primary', 'secondary']
-      .map((section, i) => {
-        return {
-          title: sectionTitle(section, lang),
-          items: this.props[section].map((line, j) => {
-            return (
-              <Item key={j}>
-                <TextContent contentHtml={line} lang={lang} contentLang="da" />
-              </Item>
-            );
-          }),
-        };
-      })
-      .filter(g => g.items.length > 0)
-      .map(g => {
-        return <Section title={g.title} items={g.items} key={g.title} />;
-      });
-
-    if (translations.length > 0) {
-      sections.push(
-        <TranslationsSection
-          translations={translations}
-          lang={lang}
-          key={'translations'}
-        />
-      );
-    }
-
-    const title = <PoetName poet={poet} includePeriod />;
-    const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
-    return (
-      <div>
-        <Head headTitle={headTitle} requestPath={requestPath} />
-        <Main>
-          <Nav
-            lang={lang}
-            crumbs={poetCrumbsWithTitle(lang, poet, _('Henvisninger', lang))}
-          />
-          <Heading title={title} subtitle={_('Henvisninger', lang)} />
-          <PoetTabs poet={poet} selected="mentions" />
-          {sections}
-          <LangSelect path={requestPath} />
-        </Main>
-      </div>
+  if (translations.length > 0) {
+    sections.push(
+      <TranslationsSection
+        translations={translations}
+        lang={lang}
+        key={'translations'}
+      />
     );
   }
-}
+
+  return (
+    <Page
+      headTitle={`${_('Henvisninger', lang)} - ${poetNameString(
+        poet
+      )} - Kalliope`}
+      ogTitle={poetNameString(poet, false, false)}
+      ogImage={OpenGraph.poetImage(poet)}
+      requestPath={`/${lang}/mentions/${poet.id}`}
+      crumbs={poetCrumbsWithTitle(lang, poet, _('Henvisninger', lang))}
+      pageTitle={<PoetName poet={poet} includePeriod />}
+      subtitle={_('Henvisninger', lang)}
+      menuItems={poetTabs(poet)}
+      selectedMenuItem="mentions">
+      {sections}
+    </Page>
+  );
+
+  // return (
+  //   <div>
+  //     <Head headTitle={headTitle} requestPath={requestPath} />
+  //     <Main>
+  //       <Nav
+  //         lang={lang}
+  //         crumbs={poetCrumbsWithTitle(lang, poet, _('Henvisninger', lang))}
+  //       />
+  //       <Heading title={title} subtitle={_('Henvisninger', lang)} />
+  //       <PoetTabs poet={poet} selected="mentions" />
+  //       {sections}
+  //       <LangSelect path={requestPath} />
+  //     </Main>
+  //   </div>
+  //);
+};
+
+MentionsPage.getInitialProps = async ({
+  query: { lang, poetId },
+}: {
+  query: { lang: Lang, poetId: string },
+}) => {
+  const json = await Client.mentions(poetId);
+  return {
+    lang,
+    poet: json.poet,
+    mentions: json.mentions || [],
+    translations: json.translations || [],
+    primary: json.primary || [],
+    secondary: json.secondary || [],
+    error: json.error,
+  };
+};
+
+export default MentionsPage;

@@ -122,7 +122,7 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }: Props) => {
     };
   });
 
-  let buttons = [<CloseButton onClick={hideOverlay} />];
+  let buttons = [<CloseButton onClick={hideOverlay} key="close" />];
   if (pictures.length > 1) {
     buttons.push(
       <RightArrow

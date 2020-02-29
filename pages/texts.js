@@ -81,8 +81,6 @@ type TextsProps = {
 const TextsPage = (props: TextsProps) => {
   const { lang, poet, type, lines } = props;
 
-  const requestPath = `/${lang}/texts/${poet.id}/${type}`;
-
   const groups = groupLines(lines, type);
   let sections: Array<SectionForRendering> = [];
   groups.forEach(group => {
@@ -124,10 +122,10 @@ const TextsPage = (props: TextsProps) => {
 
   return (
     <Page
-      headTitle={`${poetNameString(poet)} - Kalliope`}
+      headTitle={`${lastCrumbTitle} - ${poetNameString(poet)} - Kalliope`}
       ogTitle={poetNameString(poet, false, false)}
       ogImage={OpenGraph.poetImage(poet)}
-      requestPath={`/${lang}/works/${poet.id}`}
+      requestPath={`/${lang}/texts/${poet.id}/${type}`}
       crumbs={poetCrumbsWithTitle(lang, poet, lastCrumbTitle)}
       pageTitle={<PoetName poet={poet} includePeriod />}
       menuItems={poetTabs(poet)}
