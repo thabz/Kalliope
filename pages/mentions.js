@@ -336,22 +336,6 @@ const MentionsPage = (props: MentionsProps) => {
       {sections}
     </Page>
   );
-
-  // return (
-  //   <div>
-  //     <Head headTitle={headTitle} requestPath={requestPath} />
-  //     <Main>
-  //       <Nav
-  //         lang={lang}
-  //         crumbs={poetCrumbsWithTitle(lang, poet, _('Henvisninger', lang))}
-  //       />
-  //       <Heading title={title} subtitle={_('Henvisninger', lang)} />
-  //       <PoetTabs poet={poet} selected="mentions" />
-  //       {sections}
-  //       <LangSelect path={requestPath} />
-  //     </Main>
-  //   </div>
-  //);
 };
 
 MentionsPage.getInitialProps = async ({

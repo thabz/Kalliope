@@ -331,7 +331,7 @@ const BioPage = (props: BioProps) => {
           />
           <Timeline timeline={timeline} lang={lang} />
           <style jsx>{`
-            :global(.bio-text) {
+            :global(.spacer) {
               padding-bottom: 80px;
             }
             @media (max-width: 800px) {
@@ -345,26 +345,6 @@ const BioPage = (props: BioProps) => {
       </SidebarSplit>
     </Page>
   );
-  // return (
-  //   <div>
-  //     <Head
-  //       headTitle={headTitle}
-  //       ogTitle={ogTitle}
-  //       ogImage={ogImage}
-  //       description={ogDescription}
-  //       requestPath={requestPath}
-  //     />
-  //     <Main>
-  //       <Nav
-  //         lang={lang}
-  //         crumbs={poetCrumbsWithTitle(lang, poet, _('Biografi', lang))}
-  //       />
-  //       <Heading title={title} subtitle={_('Biografi', lang)} />
-  //       <PoetTabs poet={poet} selected="bio" />
-  //       <LangSelect path={requestPath} />
-  //     </Main>
-  //   </div>
-  // );
 };
 
 BioPage.getInitialProps = async ({
