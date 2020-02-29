@@ -331,8 +331,8 @@ const BioPage = (props: BioProps) => {
           />
           <Timeline timeline={timeline} lang={lang} />
           <style jsx>{`
-            :global(.spacer) {
-              padding-bottom: 80px;
+            :global(.bio-text) {
+              margin-bottom: 40px;
             }
             @media (max-width: 800px) {
               :global(.bio-text) {

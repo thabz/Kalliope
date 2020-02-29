@@ -4,12 +4,63 @@ import React from 'react';
 type SVGProps = {
   onClick: MouseEvent => void,
   inactive?: boolean,
+  className?: string,
+  color?: string,
+};
+
+export const BurgerSVG = (props: SVGProps) => {
+  const { onClick, inactive, className, color = 'black' } = props;
+  const strokeColor = inactive == true ? '#888' : color;
+  let extraClassName = inactive == true ? 'inactive' : 'active';
+  if (className != null) {
+    extraClassName += ' ' + className;
+  }
+  const style = {
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    strokeWidth: '1px',
+    fill: 'none',
+    stroke: color,
+  };
+  return (
+    <svg
+      width="30"
+      height="30"
+      style={style}
+      onClick={onClick}
+      className={extraClassName}>
+      <line
+        style={style}
+        x1="4"
+        y1="8"
+        x2="26"
+        y2="8"
+        vectorEffect="non-scaling-stroke"
+      />
+      <line
+        style={style}
+        x1="4"
+        y1="15"
+        x2="26"
+        y2="15"
+        vectorEffect="non-scaling-stroke"
+      />
+      <line
+        style={style}
+        x1="4"
+        y1="22"
+        x2="26"
+        y2="22"
+        vectorEffect="non-scaling-stroke"
+      />
+    </svg>
+  );
 };
 
 export class LeftArrow extends React.Component<SVGProps> {
   render() {
-    const { onClick, inactive } = this.props;
-    const strokeColor = inactive == true ? '#888' : 'black';
+    const { onClick, inactive, color } = this.props;
+    const strokeColor = inactive == true ? '#888' : color;
     const className = inactive == true ? 'inactive' : 'active';
     return (
       <svg width="30" height="30" onClick={onClick} className={className}>
@@ -61,6 +112,7 @@ export class LeftArrow extends React.Component<SVGProps> {
     );
   }
 }
+
 export class RightArrow extends React.Component<SVGProps> {
   render() {
     const { onClick, inactive } = this.props;
@@ -199,38 +251,39 @@ export class LoupeSVG extends React.Component<LoupeSVGProps> {
   }
 }
 
-type CrossSVGProps = {
-  color: string,
+export const CrossSVG = (props: SVGProps) => {
+  const { onClick, className, color = 'black' } = props;
+
+  const style = {
+    fill: 'none',
+    stroke: color,
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    strokeWidth: '1px',
+  };
+  return (
+    <svg
+      viewBox="0 -5 48 53"
+      width="100%"
+      height="100%"
+      className={className}
+      onClick={onClick}>
+      <line
+        style={style}
+        x1="38"
+        y1="38"
+        x2="4"
+        y2="4"
+        vectorEffect="non-scaling-stroke"
+      />
+      <line
+        style={style}
+        x1="38"
+        y1="4"
+        x2="4"
+        y2="38"
+        vectorEffect="non-scaling-stroke"
+      />
+    </svg>
+  );
 };
-export class CrossSVG extends React.Component<CrossSVGProps> {
-  render() {
-    const { color } = this.props;
-    const style = {
-      fill: 'none',
-      stroke: color,
-      strokeLinecap: 'round',
-      strokeLinejoin: 'round',
-      strokeWidth: '1px',
-    };
-    return (
-      <svg viewBox="0 -5 48 53" width="100%" height="100%">
-        <line
-          style={style}
-          x1="38"
-          y1="38"
-          x2="4"
-          y2="4"
-          vectorEffect="non-scaling-stroke"
-        />
-        <line
-          style={style}
-          x1="38"
-          y1="4"
-          x2="4"
-          y2="38"
-          vectorEffect="non-scaling-stroke"
-        />
-      </svg>
-    );
-  }
-}

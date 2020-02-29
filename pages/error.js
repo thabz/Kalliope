@@ -19,7 +19,7 @@ const ErrorPage = (props: ErrorProps) => {
       headTitle={'Kalliope'}
       crumbs={[...kalliopeCrumbs(lang), { title: message }]}
       pageTitle=" "
-      pageSubtitle={_('Værker', lang)}
+      pageSubtitle={message}
       menuItems={kalliopeMenu()}
       selectedMenuItem="index">
       <SubHeading>{message}</SubHeading>

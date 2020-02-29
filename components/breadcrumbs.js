@@ -22,6 +22,8 @@ type BreadcrumbItem = {
   title: Node,
 };
 
+export type { BreadcrumbItem };
+
 type NavPagingType = {
   prev: ?{
     url: URLString,
@@ -70,7 +72,7 @@ export const Paging = (props: NavPagingType) => {
     if (item == null) return null;
     const { url, title } = item;
     const arrow = i === 0 ? '←' : '→';
-    const style = i === 1 ? { marginLeft: '10px' } : null;
+    const style = { marginLeft: '16px', fontSize: '18px' };
     return (
       <div style={style} key={i}>
         <Link prefetch route={url}>
@@ -230,14 +232,10 @@ const Breadcrumbs = (props: BreadcrumbsProps) => {
       joinedLinks.push(<div key={'link' + i}>{link}</div>);
     });
 
-  let rightSideStyle = null;
-  if (rightSide != null) {
-    rightSideStyle = { paddingLeft: '10px' };
-  }
   return (
     <div className="nav-container">
       <nav>{joinedLinks}</nav>
-      <div style={rightSideStyle}>{rightSide}</div>
+      <div>{rightSide}</div>
       <style jsx>{`
         nav {
           display: flex;
@@ -252,8 +250,8 @@ const Breadcrumbs = (props: BreadcrumbsProps) => {
           width: 100%;
           display: flex;
           justify-content: space-between;
-          font-size: 1rem;
-          font-weight: 300;
+          font-size: 16px;
+          font-weight: 400;
         }
 
         @media print {

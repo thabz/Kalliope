@@ -1,6 +1,7 @@
 // @flow
 import React, { useContext } from 'react';
 import Tabs from './menu.js';
+import BurgerMenu from './burgermenu.js';
 import Breadcrumbs, { Paging } from './breadcrumbs.js';
 import Main from './main.js';
 import Head from './head.js';
@@ -8,6 +9,7 @@ import CountryPicker from './countrypicker.js';
 import LangContext from '../common/LangContext.js';
 import LangSelect from './langselect.js';
 import CommonData from '../common/commondata.js';
+import useMediaQuery from '../common/useMediaQuery.js';
 
 type HeadingProps = {
   title: Node | string,
@@ -36,48 +38,14 @@ const Heading = (props: HeadingProps) => {
           color: #757575;
         }
 
-        @media (max-width: 850px) {
-          .heading :global(h1) {
-            line-height: 44px;
-            font-size: 44px;
-          }
-        }
-
-        @media (max-width: 800px) {
-          .heading :global(h1) {
-            line-height: 38px;
-            font-size: 38px;
-          }
-        }
-
-        @media (max-width: 700px) {
-          .heading :global(h1) {
-            line-height: 32px;
-            font-size: 32px;
-          }
-        }
-
-        @media (max-width: 600px) {
-          .heading :global(h1) {
-            line-height: 28px;
-            font-size: 28px;
-          }
-        }
-
         @media (max-width: 480px) {
           .heading :global(h1) {
             padding-top: 10px;
-            line-height: 22px;
-            font-size: 22px;
+            line-height: 40px;
+            font-size: 40px;
           }
         }
-        @media (max-width: 320px) {
-          .heading :global(h1) {
-            padding-top: 10px;
-            line-height: 18px;
-            font-size: 18px;
-          }
-        }
+
         @media print {
           .heading :global(h1) {
             font-size: 24px;
@@ -114,6 +82,8 @@ const Page = props => {
   const pagingRendered =
     paging != null ? <Paging prev={paging.prev} next={paging.next} /> : null;
 
+  const mobile = useMediaQuery('(max-width: 480px)');
+
   return (
     <div>
       <Head
@@ -124,15 +94,29 @@ const Page = props => {
         requestPath={requestPath}
       />
       <Main>
-        <Breadcrumbs lang={lang} crumbs={crumbs} rightSide={pagingRendered} />
+        {mobile ? (
+          <BurgerMenu
+            items={menuItems}
+            selected={selectedMenuItem}
+            crumbs={crumbs}
+          />
+        ) : (
+          <Breadcrumbs lang={lang} crumbs={crumbs} rightSide={pagingRendered} />
+        )}
         <Heading title={pageTitle} subtitle={pageSubtitle} />
-        <Tabs
-          items={menuItems}
-          selected={selectedMenuItem}
-          country={country}
-          query={query}
-          lang={lang}
-        />
+        {!mobile ? (
+          <Tabs
+            items={menuItems}
+            selected={selectedMenuItem}
+            country={country}
+            query={query}
+            lang={lang}
+          />
+        ) : (
+          <div
+            style={{ borderBottom: '1px solid #888', marginBottom: '20px' }}
+          />
+        )}
         {children}
         <LangSelect lang={lang} path={requestPath} />
         <style jsx>{`
