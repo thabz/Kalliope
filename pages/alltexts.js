@@ -8,8 +8,6 @@ import * as Links from '../components/links';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect.js';
 import CountryPicker from '../components/countrypicker.js';
-import Tabs from '../components/tabs.js';
-import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';
 import TwoColumns from '../components/twocolumns';
 import * as Sorting from '../common/sorting.js';

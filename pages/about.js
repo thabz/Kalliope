@@ -3,9 +3,8 @@
 import React, { useContext } from 'react';
 import type Node from 'react';
 import { Link } from '../routes';
-import Head from '../components/head';
-import Main from '../components/main.js';
-import { KalliopeTabs } from '../components/tabs.js';
+import Page from '../components/page.js';
+import { kalliopeTabs } from '../components/menu.js';
 import LangSelect from '../components/langselect';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import SubHeading from '../components/subheading.js';
@@ -16,7 +15,6 @@ import Picture from '../components/picture.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
 import * as Client from '../common/client.js';
-import Heading from '../components/heading.js';
 import TextContent from '../components/textcontent.js';
 import ErrorPage from './error.js';
 import LangContext from '../common/LangContext.js';
@@ -44,7 +42,7 @@ const About = (props: AboutProps) => {
   if (error) {
     return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
   }
-  const requestPath = `/${lang}/about/${aboutItemId}`;
+
   const pictures = keyword.pictures.map((p, i) => {
     return (
       <Picture
@@ -133,16 +131,15 @@ const About = (props: AboutProps) => {
   }
 
   return (
-    <div>
-      <Head headTitle="Kalliope" requestPath={requestPath} />
-      <Main>
-        <Nav lang="da" crumbs={crumbs} />
-        <Heading title="Kalliope" />
-        <KalliopeTabs lang={lang} selected="about" />
-        {pageBody}
-        <LangSelect lang={lang} path={requestPath} />
-      </Main>
-    </div>
+    <Page
+      headTitle={'Kalliope'}
+      requestPath={`/${lang}/about/${aboutItemId}`}
+      crumbs={crumbs}
+      pageTitle={'Kalliope'}
+      menuItems={kalliopeTabs()}
+      selectedMenuItem="about">
+      {pageBody}
+    </Page>
   );
 };
 

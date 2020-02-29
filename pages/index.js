@@ -2,13 +2,12 @@
 
 import React, { useContext } from 'react';
 import Page from '../components/page.js';
-import { kalliopeTabs } from '../components/tabs.js';
+import { kalliopeTabs } from '../components/menu.js';
 import LangSelect from '../components/langselect';
 import { kalliopeCrumbs } from '../components/breadcrumbs';
 import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import * as Links from '../components/links';
-import Heading from '../components/heading.js';
 import TextContent from '../components/textcontent.js';
 import SplitWhenSmall from '../components/split-when-small.js';
 import Picture from '../components/picture.js';

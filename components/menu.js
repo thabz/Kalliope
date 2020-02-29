@@ -8,9 +8,10 @@ import type { Lang, Poet, Country } from '../common/types.js';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import { LoupeSVG, CrossSVG } from './icons.js';
+
 const transitionDuration = '0.2s';
 
-type MenuProps = {
+type TabsProps = {
   items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
   poet?: Poet,
   country: Country,
@@ -18,10 +19,10 @@ type MenuProps = {
   query?: ?string,
   selected: string,
 };
-type MenuState = {
+type TabsState = {
   showSearchField: boolean,
 };
-export default class Menu extends React.Component<MenuProps, MenuState> {
+export default class Tabs extends React.Component<TabsProps, TabsState> {
   searchField: HTMLInputElement;
   onLoupeClick: (e: Event) => void;
   onCrossClick: (e: Event) => void;
@@ -30,7 +31,7 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
   onFocus: () => void;
   onBlur: () => void;
 
-  constructor(props: MenuProps) {
+  constructor(props: TabsProps) {
     super(props);
     const { query } = props;
     this.state = { showSearchField: query != null && query.length > 0 };
@@ -396,21 +397,10 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
   }
 }
 
-type PoetMenuProps = {
-  poet: Poet,
-  query?: ?string,
-  selected: 'works' | 'titles' | 'first' | 'bio' | 'search' | 'mentions',
-};
-export const PoetTabs = (props: PoetMenuProps) => {
-  const { poet, selected, query } = props;
+export const poetTabs = (poet: Poet) => {
   const lang = useContext(LangContext);
 
-  const tabs: Array<{
-    id: string,
-    title: string,
-    hide?: boolean,
-    url: string,
-  }> = [
+  return [
     {
       id: 'works',
       title: _('Værker', lang),
@@ -442,34 +432,11 @@ export const PoetTabs = (props: PoetMenuProps) => {
       url: Links.bioURL(lang, poet.id),
     },
   ];
-  return (
-    <Tabs
-      items={tabs}
-      selected={selected}
-      lang={lang}
-      country={poet.country}
-      poet={poet}
-      query={query}
-    />
-  );
 };
 
-type KalliopeTabsProps = {
-  country?: Country,
-  query?: ?string,
-  selected:
-    | 'index'
-    | 'poets'
-    | 'keywords'
-    | 'dictionary'
-    | 'about'
-    | 'search'
-    | 'museum',
-};
-export const KalliopeMenu = (props: KalliopeTabsProps) => {
-  const { selected, country, query } = props;
+export const kalliopeTabs = () => {
   const lang = useContext(LangContext);
-  const tabs = [
+  return [
     { id: 'index', title: 'Kalliope', url: Links.frontPageURL(lang) },
     {
       id: 'poets',
@@ -495,9 +462,26 @@ export const KalliopeMenu = (props: KalliopeTabsProps) => {
       url: Links.aboutURL(lang, 'kalliope'),
     },
   ];
+};
+
+type KalliopeTabsProps = {
+  country?: Country,
+  query?: ?string,
+  selected:
+    | 'index'
+    | 'poets'
+    | 'keywords'
+    | 'dictionary'
+    | 'about'
+    | 'search'
+    | 'museum',
+};
+export const KalliopeTabs = (props: KalliopeTabsProps) => {
+  const { selected, country, query } = props;
+  const lang = useContext(LangContext);
   return (
     <Tabs
-      items={tabs}
+      items={kalliopeTabs()}
       selected={selected}
       lang={lang}
       country={country || 'dk'}

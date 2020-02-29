@@ -10,8 +10,7 @@ import {
   poetCrumbsWithTitle,
 } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect.js';
-import { kalliopeTabs, poetTabs } from '../components/tabs.js';
-import Heading from '../components/heading.js';
+import { kalliopeTabs, poetTabs } from '../components/menu.js';
 import {
   poetNameString,
   poetGenetiveLastName,

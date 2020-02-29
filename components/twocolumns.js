@@ -12,7 +12,6 @@ const TwoColumns = (props: { children: Node }) => {
           width: 100%;
           columns: 2;
           column-gap: 30px;
-          margin-top: -30px;
         }
 
         @media (max-width: 480px) {

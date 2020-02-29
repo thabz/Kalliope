@@ -3,7 +3,7 @@
 import React from 'react';
 import Page from '../components/page.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
-import { kalliopeTabs } from '../components/tabs.js';
+import { kalliopeTabs } from '../components/menu.js';
 import SubHeading from '../components/subheading.js';
 import type { Lang, Error } from '../common/types.js';
 

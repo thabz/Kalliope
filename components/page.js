@@ -1,14 +1,96 @@
 // @flow
 import React, { useContext } from 'react';
-import Tabs from './tabs.js';
+import Tabs from './menu.js';
 import Breadcrumbs, { Paging } from './breadcrumbs.js';
 import Main from './main.js';
 import Head from './head.js';
-import Heading from './heading.js';
 import CountryPicker from './countrypicker.js';
 import LangContext from '../common/LangContext.js';
 import LangSelect from './langselect.js';
 import CommonData from '../common/commondata.js';
+
+type HeadingProps = {
+  title: Node | string,
+};
+const Heading = (props: HeadingProps) => {
+  const { title } = props;
+  return (
+    <div className="heading">
+      <h1>{title}</h1>
+      <style jsx>{`
+        .heading {
+          margin-bottom: 30px;
+        }
+
+        .heading :global(h1) {
+          margin: 0;
+          width: 100%;
+          padding-top: 10px;
+          line-height: 56px;
+          font-size: 56px;
+          font-weight: 100;
+          margin-left: -2px;
+          transition: font-size 0.2s;
+        }
+        .heading :global(h1):global(.lighter) {
+          color: #757575;
+        }
+
+        @media (max-width: 850px) {
+          .heading :global(h1) {
+            line-height: 44px;
+            font-size: 44px;
+          }
+        }
+
+        @media (max-width: 800px) {
+          .heading :global(h1) {
+            line-height: 38px;
+            font-size: 38px;
+          }
+        }
+
+        @media (max-width: 700px) {
+          .heading :global(h1) {
+            line-height: 32px;
+            font-size: 32px;
+          }
+        }
+
+        @media (max-width: 600px) {
+          .heading :global(h1) {
+            line-height: 28px;
+            font-size: 28px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .heading :global(h1) {
+            padding-top: 10px;
+            line-height: 22px;
+            font-size: 22px;
+          }
+        }
+        @media (max-width: 320px) {
+          .heading :global(h1) {
+            padding-top: 10px;
+            line-height: 18px;
+            font-size: 18px;
+          }
+        }
+        @media print {
+          .heading :global(h1) {
+            font-size: 24px;
+            border-bottom: 1px solid #888;
+          }
+          .heading {
+            margin-bottom: 40px;
+          }
+        }
+      `}</style>
+    </div>
+  );
+};
 
 const Page = props => {
   const {

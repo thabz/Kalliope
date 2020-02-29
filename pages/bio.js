@@ -6,8 +6,7 @@ import Main from '../components/main.js';
 import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
-import { poetTabs } from '../components/tabs.js';
-import Heading from '../components/heading.js';
+import { poetTabs } from '../components/menu.js';
 import PoetName from '../components/poetname.js';
 import {
   poetNameString,
