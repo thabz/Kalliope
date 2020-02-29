@@ -6,7 +6,7 @@ import Head from '../components/head';
 import Main from '../components/main.js';
 import { Link } from '../routes';
 import * as Links from '../components/links';
-import Nav, { kalliopeCrumbs } from '../components/nav';
+import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect.js';
 import LangContext from '../common/LangContext.js';
 import CountryPicker from '../components/countrypicker.js';

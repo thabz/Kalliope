@@ -4,7 +4,7 @@ import React, { useContext } from 'react';
 import Page from '../components/page.js';
 import { kalliopeTabs } from '../components/tabs.js';
 import LangSelect from '../components/langselect';
-import Nav, { kalliopeCrumbs } from '../components/nav.js';
+import { kalliopeCrumbs } from '../components/breadcrumbs';
 import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import * as Links from '../components/links';

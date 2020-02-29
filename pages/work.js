@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from '../routes';
 import Page from '../components/page.js';
 import Main from '../components/main.js';
-import Nav, { workCrumbs } from '../components/nav';
+import { workCrumbs } from '../components/breadcrumbs.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect.js';
 import { poetTabs } from '../components/tabs.js';

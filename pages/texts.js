@@ -2,8 +2,7 @@
 
 import React from 'react';
 import Page from '../components/page.js';
-import Main from '../components/main.js';
-import Nav, { poetCrumbsWithTitle } from '../components/nav';
+import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect.js';
 import Heading from '../components/heading.js';
 import PoetName from '../components/poetname.js';

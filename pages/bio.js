@@ -3,7 +3,7 @@
 import React from 'react';
 import Page from '../components/page.js';
 import Main from '../components/main.js';
-import Nav, { poetCrumbsWithTitle } from '../components/nav';
+import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { poetTabs } from '../components/tabs.js';

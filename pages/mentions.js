@@ -2,8 +2,7 @@
 
 import React, { useState, Fragment } from 'react';
 import Page from '../components/page.js';
-import Main from '../components/main.js';
-import Nav, { poetCrumbsWithTitle } from '../components/nav';
+import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
 import _ from '../common/translations.js';
 import { Link } from '../routes';
 import LangSelect from '../components/langselect';

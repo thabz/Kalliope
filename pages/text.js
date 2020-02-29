@@ -5,7 +5,7 @@ import type { Element, Node } from 'react';
 import { Link } from '../routes';
 import Page from '../components/page.js';
 import Main from '../components/main.js';
-import Nav, { NavPaging, textCrumbs } from '../components/nav';
+import { textCrumbs } from '../components/breadcrumbs.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
 import { poetTabs } from '../components/tabs.js';
@@ -182,19 +182,19 @@ const TextPage = (props: TextComponentProps) => {
     return <ErrorPage error={error} lang={lang} message="Ukendt tekst" />;
   }
 
-  const rightSideItems = [prev, next].map((t, i) => {
-    if (t == null) {
-      return null;
-    } else {
-      return {
-        url: Links.textURL(lang, t.id),
-        title: t.title,
-      };
-    }
-  });
-  const rightSide = (
-    <NavPaging prev={rightSideItems[0]} next={rightSideItems[1]} />
-  );
+  let paging = {};
+  if (prev != null) {
+    paging.prev = {
+      url: Links.textURL(lang, prev.id),
+      title: prev.title,
+    };
+  }
+  if (next != null) {
+    paging.next = {
+      url: Links.textURL(lang, next.id),
+      title: next.title,
+    };
+  }
 
   const notes: Array<Node> = text.notes
     .filter(note => note.type !== 'unknown-original')
@@ -461,7 +461,7 @@ const TextPage = (props: TextComponentProps) => {
       ogDescription={ogDescription}
       requestPath={`/${lang}/text/${text.id}`}
       crumbs={textCrumbs(lang, poet, work, section_titles || [], text)}
-      paging={rightSide}
+      paging={paging}
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
       menuItems={poetTabs(poet)}

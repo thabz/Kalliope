@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import type { Node } from 'react';
 import Head from './head';
 import { Link, Router } from '../routes';
@@ -33,32 +33,10 @@ type NavPagingType = {
   },
 };
 
-export class NavPaging extends React.Component<NavPagingType> {
-  onKeyUp: KeyboardEvent => void;
+export const Paging = (props: NavPagingType) => {
+  const { prev, next } = props;
 
-  constructor(props: NavPagingType) {
-    super(props);
-    this.onKeyUp = this.onKeyUp.bind(this);
-  }
-
-  componentDidMount() {
-    if (
-      document != null &&
-      document.body != null &&
-      document.body.classList != null
-    ) {
-      // eslint-disable-next-line no-undef
-      document.addEventListener('keyup', this.onKeyUp);
-    }
-  }
-
-  componentWillUnmount() {
-    // eslint-disable-next-line no-undef
-    document.removeEventListener('keyup', this.onKeyUp);
-  }
-
-  onKeyUp(e: KeyboardEvent) {
-    const { prev, next } = this.props;
+  const onKeyUp = (e: KeyboardEvent) => {
     if (e.keyCode === 37) {
       // Left cursor key
       if (prev != null && window && !window.searchFieldHasFocus) {
@@ -74,26 +52,35 @@ export class NavPaging extends React.Component<NavPagingType> {
         e.preventDefault();
       }
     }
-  }
+  };
+  useEffect(() => {
+    if (
+      document != null &&
+      document.body != null &&
+      document.body.classList != null
+    ) {
+      document.addEventListener('keyup', onKeyUp);
+      return () => {
+        document.removeEventListener('keyup', onKeyUp);
+      };
+    }
+  });
 
-  render() {
-    const { prev, next } = this.props;
-    const arrows = [prev, next].map((item, i) => {
-      if (item == null) return null;
-      const { url, title } = item;
-      const arrow = i === 0 ? '←' : '→';
-      const style = i === 1 ? { marginLeft: '10px' } : null;
-      return (
-        <div style={style} key={i}>
-          <Link prefetch route={url}>
-            <a title={title}>{arrow}</a>
-          </Link>
-        </div>
-      );
-    });
-    return <div style={{ display: 'flex', padding: '4px 0' }}>{arrows}</div>;
-  }
-}
+  const arrows = [prev, next].map((item, i) => {
+    if (item == null) return null;
+    const { url, title } = item;
+    const arrow = i === 0 ? '←' : '→';
+    const style = i === 1 ? { marginLeft: '10px' } : null;
+    return (
+      <div style={style} key={i}>
+        <Link prefetch route={url}>
+          <a title={title}>{arrow}</a>
+        </Link>
+      </div>
+    );
+  });
+  return <div style={{ display: 'flex', padding: '4px 0' }}>{arrows}</div>;
+};
 
 export const kalliopeCrumbs = (lang: Lang) => {
   return [
@@ -175,11 +162,9 @@ export const workCrumbs = (lang: Lang, poet: Poet, work: Work) => {
     };
   }
 
-  return [...poetCrumbs(lang, poet), parentLink, workLink].filter(
-    (n: ?BreadcrumbItem) => {
-      return n != null;
-    }
-  );
+  return [...poetCrumbs(lang, poet), parentLink, workLink].filter(n => {
+    return n != null;
+  });
 };
 
 export const textCrumbs = (
@@ -222,194 +207,63 @@ type BreadcrumbsProps = {
   crumbs: Array<BreadcrumbItem>,
   rightSide?: Node,
 };
-export default class Breadcrumbs extends React.Component<BreadcrumbsProps> {
-  static defaultProps = {
-    sectionTitles: [],
-  };
+const Breadcrumbs = (props: BreadcrumbsProps) => {
+  const { lang, crumbs, rightSide } = props;
 
-  render() {
-    const { lang, crumbs, rightSide } = this.props;
+  let joinedLinks = [];
+  crumbs
+    .filter(x => x != null)
+    .map((crumb, i) => {
+      if (i !== 0) {
+        joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
+      }
+      let link: Node = null;
+      if (i !== crumbs.length - 1 && crumb.url != null) {
+        link = (
+          <Link prefetch route={crumb.url}>
+            <a>{crumb.title}</a>
+          </Link>
+        );
+      } else {
+        link = crumb.title;
+      }
+      joinedLinks.push(<div key={'link' + i}>{link}</div>);
+    });
 
-    let joinedLinks = [];
-    crumbs
-      .filter(x => x != null)
-      .map((crumb, i) => {
-        if (i !== 0) {
-          joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
-        }
-        let link: Node = null;
-        if (i !== crumbs.length - 1 && crumb.url != null) {
-          link = (
-            <Link prefetch route={crumb.url}>
-              <a>{crumb.title}</a>
-            </Link>
-          );
-        } else {
-          link = crumb.title;
-        }
-        joinedLinks.push(<div key={'link' + i}>{link}</div>);
-      });
-
-    let rightSideStyle = null;
-    if (rightSide != null) {
-      rightSideStyle = { paddingLeft: '10px' };
-    }
-    return (
-      <div className="nav-container">
-        <nav>{joinedLinks}</nav>
-        <div style={rightSideStyle}>{rightSide}</div>
-        <style jsx>{`
-          @font-face {
-            font-family: 'Alegreya';
-            font-style: italic;
-            font-weight: 400;
-            font-display: swap;
-            src: local('Alegreya Italic'), local('Alegreya-Italic'),
-              url(https://fonts.gstatic.com/s/alegreya/v13/4UaHrEBBsBhlBjvfkSLkx60.ttf)
-                format('truetype');
-          }
-          @font-face {
-            font-family: 'Alegreya';
-            font-style: italic;
-            font-weight: 700;
-            font-display: swap;
-            src: local('Alegreya Bold Italic'), local('Alegreya-BoldItalic'),
-              url(https://fonts.gstatic.com/s/alegreya/v13/4UaErEBBsBhlBjvfkSLk_xHMwps.ttf)
-                format('truetype');
-          }
-          @font-face {
-            font-family: 'Alegreya';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: local('Alegreya Regular'), local('Alegreya-Regular'),
-              url(https://fonts.gstatic.com/s/alegreya/v13/4UaBrEBBsBhlBjvfkRLm.ttf)
-                format('truetype');
-          }
-          @font-face {
-            font-family: 'Alegreya';
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            src: local('Alegreya Bold'), local('Alegreya-Bold'),
-              url(https://fonts.gstatic.com/s/alegreya/v13/4UaGrEBBsBhlBjvfkSpa4o3J.ttf)
-                format('truetype');
-          }
-          @font-face {
-            font-family: 'Alegreya SC';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: local('Alegreya SC Regular'), local('AlegreyaSC-Regular'),
-              url(https://fonts.gstatic.com/s/alegreyasc/v11/taiOGmRtCJ62-O0HhNEa-a6o.ttf)
-                format('truetype');
-          }
-          @font-face {
-            font-family: 'Alegreya Sans';
-            font-style: italic;
-            font-weight: 400;
-            font-display: swap;
-            src: local('Alegreya Sans Italic'), local('AlegreyaSans-Italic'),
-              url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUt9_-1phKLFgshYDvh6Vwt7V9tuA.ttf)
-                format('truetype');
-          }
-          @font-face {
-            font-family: 'Alegreya Sans';
-            font-style: italic;
-            font-weight: 700;
-            font-display: swap;
-            src: local('Alegreya Sans Bold Italic'),
-              local('AlegreyaSans-BoldItalic'),
-              url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUo9_-1phKLFgshYDvh6Vwt7V9VBEh2jg.ttf)
-                format('truetype');
-          }
-          @font-face {
-            font-family: 'Alegreya Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-display: swap;
-            src: local('Alegreya Sans Light'), local('AlegreyaSans-Light'),
-              url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUu9_-1phKLFgshYDvh6Vwt5fFPmE0.ttf)
-                format('truetype');
-          }
-          @font-face {
-            font-family: 'Alegreya Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: local('Alegreya Sans Regular'), local('AlegreyaSans-Regular'),
-              url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUz9_-1phKLFgshYDvh6Vwt3V0.ttf)
-                format('truetype');
-          }
-          @font-face {
-            font-family: 'Alegreya Sans';
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            src: local('Alegreya Sans Bold'), local('AlegreyaSans-Bold'),
-              url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUu9_-1phKLFgshYDvh6Vwt5eFImE0.ttf)
-                format('truetype');
-          }
-          @font-face {
-            font-family: 'Alegreya Sans';
-            font-style: normal;
-            font-weight: 100;
-            font-display: swap;
-            src: local('Alegreya Sans Thin'), local('AlegreyaSans-Thin'),
-              url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUt9_-1phKLFgshYDvh6Vwt5TltuA.ttf)
-                format('truetype');
-          }
-
-          :global(body) {
-            margin: 0;
-            font-family: 'Alegreya Sans', sans-serif;
-            box-sizing: border-box;
-            font-size: 18px;
-            height: 150px;
-            -webkit-tap-highlight-color: ${CommonData.backgroundLinkColor};
-          }
-          :global(.small-caps) {
-            fontfamily: 'Alegreya SC';
-          }
-          :global(a) {
-            color: ${CommonData.linkColor};
-            text-decoration: none;
-          }
-          :global(a):global(.lighter) {
-            color: ${CommonData.lightLinkColor};
-          }
-          @media print {
-            :global(a) {
-              color: black;
-            }
-            :global(body) {
-              font-size: 9pt;
-            }
-          }
-          nav {
-            display: flex;
-          }
-          nav > :global(div) {
-            flex-shrink: 1;
-            padding: 4px 0px;
-          }
-          .nav-container {
-            margin-top: 10px;
-            margin-bottom: 80px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            font-size: 1rem;
-            font-weight: 300;
-          }
-
-          @media print {
-            .nav-container {
-              display: none;
-            }
-          }
-        `}</style>
-      </div>
-    );
+  let rightSideStyle = null;
+  if (rightSide != null) {
+    rightSideStyle = { paddingLeft: '10px' };
   }
-}
+  return (
+    <div className="nav-container">
+      <nav>{joinedLinks}</nav>
+      <div style={rightSideStyle}>{rightSide}</div>
+      <style jsx>{`
+        nav {
+          display: flex;
+        }
+        nav > :global(div) {
+          flex-shrink: 1;
+          padding: 4px 0px;
+        }
+        .nav-container {
+          margin-top: 10px;
+          margin-bottom: 80px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          font-size: 1rem;
+          font-weight: 300;
+        }
+
+        @media print {
+          .nav-container {
+            display: none;
+          }
+        }
+      `}</style>
+    </div>
+  );
+};
+
+export default Breadcrumbs;

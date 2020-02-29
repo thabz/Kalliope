@@ -7,7 +7,7 @@ import Head from '../components/head';
 import Main from '../components/main.js';
 import { KalliopeTabs } from '../components/tabs.js';
 import LangSelect from '../components/langselect';
-import Nav, { kalliopeCrumbs } from '../components/nav';
+import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import TwoColumns from '../components/twocolumns.js';

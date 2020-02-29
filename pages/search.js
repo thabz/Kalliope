@@ -5,7 +5,10 @@ import React from 'react';
 import Page from '../components/page.js';
 import { Link } from '../routes';
 import * as Links from '../components/links';
-import { kalliopeCrumbs, poetCrumbsWithTitle } from '../components/nav';
+import {
+  kalliopeCrumbs,
+  poetCrumbsWithTitle,
+} from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect.js';
 import { kalliopeTabs, poetTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';

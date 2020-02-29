@@ -4,7 +4,7 @@ import 'isomorphic-fetch';
 import React, { useContext } from 'react';
 import Page from '../components/page.js';
 import * as Links from '../components/links';
-import { kalliopeCrumbs } from '../components/nav';
+import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect.js';
 import { kalliopeTabs } from '../components/tabs.js';
 import PoetName from '../components/poetname.js';

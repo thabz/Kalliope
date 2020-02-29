@@ -5,7 +5,6 @@ import React from 'react';
 import Page from '../components/page.js';
 import { Link } from '../routes';
 import * as Links from '../components/links';
-import Nav from '../components/nav';
 import LangSelect from '../components/langselect.js';
 import Tabs from '../components/tabs.js';
 import Heading from '../components/heading.js';

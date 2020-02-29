@@ -5,7 +5,7 @@ import 'isomorphic-fetch';
 import { Link, Router } from '../routes';
 import Page from '../components/page.js';
 import Main from '../components/main.js';
-import Nav, { kalliopeCrumbs } from '../components/nav';
+import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect';
 import { kalliopeTabs } from '../components/tabs.js';
 import Heading from '../components/heading.js';
