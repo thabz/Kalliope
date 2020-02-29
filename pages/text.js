@@ -495,30 +495,6 @@ const TextPage = (props: TextComponentProps) => {
       </FootnoteContainer>
     </Page>
   );
-
-  // return (
-  //   <div>
-
-  //       <Head
-  //         headTitle={headTitle}
-  //         ogTitle={ogTitle}
-  //         ogImage={ogImage}
-  //         description={ogDescription}
-  //         requestPath={requestPath}
-  //       />
-  //       <Main>
-  //         <Nav
-  //           lang={lang}
-  //           crumbs=
-  //           rightSide={rightSide}
-  //         />
-  //         <Heading title={title} subtitle="Værker" />
-  //         <PoetTabs poet={poet} selected="works" />
-  //         <LangSelect path={requestPath} />
-  //       </Main>
-  //     </FootnoteContainer>
-  //   </div>
-  // );
 };
 
 TextPage.getInitialProps = async ({

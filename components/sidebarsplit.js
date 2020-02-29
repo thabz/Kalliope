@@ -38,6 +38,8 @@ export default class SidebarSplit extends React.Component<SidebarSplitProps> {
             line-height: 1.5;
             border-left: 1px solid #666;
             color: #666;
+            font-size: 16px;
+            line-height: 1.4;
           }
           div.sidebar-spl.empty > :global(div:first-child) {
             padding-right: 0;
