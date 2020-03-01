@@ -216,7 +216,7 @@ const Page = props => {
             -webkit-tap-highlight-color: ${CommonData.backgroundLinkColor};
           }
           :global(.small-caps) {
-            fontfamily: 'Alegreya SC';
+            font-family: 'Alegreya SC';
           }
           :global(a) {
             color: ${CommonData.linkColor};
