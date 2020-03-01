@@ -33,6 +33,7 @@ import ErrorPage from './error.js';
 import HelpKalliope from '../components/helpkalliope.js';
 import { pluralize } from '../common/strings.js';
 import LangContext from '../common/LangContext.js';
+import useMediaQuery from '../common/useMediaQuery.js';
 import type {
   Lang,
   Poet,
@@ -52,10 +53,15 @@ type BladrerProps = {
 };
 const Bladrer = (props: BladrerProps) => {
   const { target, left, right } = props;
+  const mobile = useMediaQuery('(max-width: 480px)');
+  const lang = useContext(LangContext);
+
   if (target == null) {
     return null;
   }
-  const lang = useContext(LangContext);
+  if (!mobile) {
+    return null;
+  }
   const onClick = e => {
     const url = Links.textURL(lang, target.id);
     Router.pushRoute(url);
@@ -93,7 +99,7 @@ class KeywordLink extends React.Component<KeywordLinkProps> {
         return null;
     }
     return (
-      <>
+      <span>
         <Link route={url}>
           <a className="keyword-link" title={keyword.title}>
             {keyword.title}
@@ -108,7 +114,7 @@ class KeywordLink extends React.Component<KeywordLinkProps> {
             margin: 0 4px 2px 0;
           }
         `}</style>
-      </>
+      </span>
     );
   }
 }
