@@ -10,7 +10,7 @@ const SubHeading = ({ children }: Props) => {
       <style jsx>{`
         h2 {
           width: 100%;
-          margin: -4px 0 10px 0;
+          margin: -4px 0 40px 0;
           line-height: 1.5;
           font-size: 26px;
           font-weight: 100;
