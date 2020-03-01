@@ -334,7 +334,7 @@ const BioPage = (props: BioProps) => {
             :global(.bio-text) {
               margin-bottom: 40px;
             }
-            @media (max-width: 800px) {
+            @media (max-width: 600px) {
               :global(.bio-text) {
                 border-bottom: 1px solid #666;
                 padding-bottom: 30px;

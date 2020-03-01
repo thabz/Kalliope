@@ -239,7 +239,12 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
           }
           :global(.leftside) {
             width: 100%;
-            padding-right: 10px;
+            overflow: scroll;
+            margin-right: 10px;
+            scrollbar-width: none;
+          }
+          :global(.leftside::-webkit-scrollbar) {
+            display: none;
           }
           :global(.search-field) {
             font-size: 32px;
@@ -289,11 +294,6 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
           }
 
           @media (max-width: 480px) {
-            
-            :global(.leftside) {
-              overflow: scroll;
-              margin-right: 10px;
-            }
             :global(.tabs) > :global(.tab) {
               margin-right: 10px;
             }

@@ -235,10 +235,11 @@ const Breadcrumbs = (props: BreadcrumbsProps) => {
   return (
     <div className="nav-container">
       <nav>{joinedLinks}</nav>
-      <div>{rightSide}</div>
+      <div className="right-side">{rightSide}</div>
       <style jsx>{`
         nav {
           display: flex;
+          flex-wrap: wrap;
         }
         nav > :global(div) {
           flex-shrink: 1;
@@ -254,8 +255,8 @@ const Breadcrumbs = (props: BreadcrumbsProps) => {
           font-weight: 400;
         }
         @media (max-width: 480px) {
-          nav {
-            flex-wrap: wrap;
+          .right-side {
+            display: none;
           }
         }
         @media print {
