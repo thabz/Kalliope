@@ -1,8 +1,8 @@
 // @flow
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import type { Element, Node } from 'react';
-import { Link } from '../routes';
+import { Link, Router } from '../routes';
 import Page from '../components/page.js';
 import Main from '../components/main.js';
 import { textCrumbs } from '../components/breadcrumbs.js';
@@ -32,6 +32,7 @@ import _ from '../common/translations.js';
 import ErrorPage from './error.js';
 import HelpKalliope from '../components/helpkalliope.js';
 import { pluralize } from '../common/strings.js';
+import LangContext from '../common/LangContext.js';
 import type {
   Lang,
   Poet,
@@ -43,6 +44,38 @@ import type {
   PrevNextText,
   Error,
 } from '../common/types.js';
+
+type BladrerProps = {
+  target: ?PrevNextText,
+  left?: boolean,
+  right?: boolean,
+};
+const Bladrer = (props: BladrerProps) => {
+  const { target, left, right } = props;
+  if (target == null) {
+    return null;
+  }
+  const lang = useContext(LangContext);
+  const onClick = e => {
+    const url = Links.textURL(lang, target.id);
+    Router.pushRoute(url);
+    window.scrollTo(0, 0);
+    e.preventDefault();
+  };
+  const style = left === true ? 'left: 0;' : 'right: 0;';
+  return (
+    <div onClick={onClick} title={'Gå til ' + target.title}>
+      <style jsx>{`
+        div {
+          position: absolute;
+          ${style}
+          width: 33%;
+          height: 100%;
+        }
+      `}</style>
+    </div>
+  );
+};
 
 type KeywordLinkProps = { keyword: KeywordRef, lang: Lang };
 class KeywordLink extends React.Component<KeywordLinkProps> {
@@ -469,6 +502,8 @@ const TextPage = (props: TextComponentProps) => {
         <SidebarSplit sidebar={sidebar}>
           <div>
             <article>
+              <Bladrer left target={prev} />
+              <Bladrer right target={next} />
               <div className="text-content">
                 <TextHeading text={text} lang={lang} isProse={text.is_prose} />
               </div>
