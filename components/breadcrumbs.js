@@ -253,7 +253,11 @@ const Breadcrumbs = (props: BreadcrumbsProps) => {
           font-size: 16px;
           font-weight: 400;
         }
-
+        @media (max-width: 480px) {
+          nav {
+            flex-wrap: wrap;
+          }
+        }
         @media print {
           .nav-container {
             display: none;

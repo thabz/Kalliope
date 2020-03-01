@@ -94,29 +94,15 @@ const Page = props => {
         requestPath={requestPath}
       />
       <Main>
-        {mobile ? (
-          <BurgerMenu
-            items={menuItems}
-            selected={selectedMenuItem}
-            crumbs={crumbs}
-          />
-        ) : (
-          <Breadcrumbs lang={lang} crumbs={crumbs} rightSide={pagingRendered} />
-        )}
+        <Breadcrumbs lang={lang} crumbs={crumbs} rightSide={pagingRendered} />
         <Heading title={pageTitle} subtitle={pageSubtitle} />
-        {!mobile ? (
-          <Tabs
-            items={menuItems}
-            selected={selectedMenuItem}
-            country={country}
-            query={query}
-            lang={lang}
-          />
-        ) : (
-          <div
-            style={{ borderBottom: '1px solid #888', marginBottom: '20px' }}
-          />
-        )}
+        <Tabs
+          items={menuItems}
+          selected={selectedMenuItem}
+          country={country}
+          query={query}
+          lang={lang}
+        />
         {children}
         <LangSelect lang={lang} path={requestPath} />
         <style jsx>{`

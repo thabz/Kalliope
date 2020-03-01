@@ -198,7 +198,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
         <nav
           className="tabs"
           style={{
-            display: this.state.showSearchField ? 'none' : 'block',
+            display: this.state.showSearchField ? 'none' : 'flex',
           }}>
           {itemsRendered}
         </nav>
@@ -256,7 +256,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
           }
           :global(.searchfield-container) {
             width: 100%;
-            padding-bottom: 16px;
+            padding-bottom: 10px;
           }
           :global(.tabs) > :global(.tab) {
             display: inline-block;
@@ -287,102 +287,33 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
           :global(.tabs) > :global(.tab) :global(a) {
             color: #707070;
           }
-          @media (max-width: 850px) {
-            :global(.tabs) > :global(.tab) :global(h2) {
-              font-size: 30px;
-              line-height: 30px;
-            }
-            :global(.svg-container) {
-              flex-basis: 26px;
-            }
-            :global(.tabs) > :global(.tab) {
-              margin-right: 30px;
-            }
-            :global(.search-field) {
-              font-size: 30px;
-              line-height: 30px;
-            }
-          }
-          @media (max-width: 800px) {
-            :global(.tabs) > :global(.tab) :global(h2) {
-              font-size: 28px;
-              line-height: 28px;
-            }
-            :global(.svg-container) {
-              flex-basis: 22px;
-            }
-            :global(.tabs) > :global(.tab) {
-              margin-right: 20px;
-            }
-            :global(.search-field) {
-              font-size: 28px;
-              line-height: 28px;
-            }
-          }
-          @media (max-width: 700px) {
-            :global(.tabs) > :global(.tab) :global(h2) {
-              font-size: 24px;
-              line-height: 24px;
-            }
-            :global(.svg-container) {
-              flex-basis: 20px;
-            }
-            :global(.tabs) > :global(.tab) {
-              margin-right: 15px;
-            }
-            :global(.search-field) {
-              font-size: 24px;
-              line-height: 24px;
-            }
-          }
-          @media (max-width: 600px) {
-            :global(.tabs) > :global(.tab) :global(h2) {
-              font-size: 18px;
-              line-height: 18px;
-            }
-            :global(.svg-container) {
-              flex-basis: 16px;
-            }
-            :global(.tabs) > :global(.tab) {
-              margin-right: 15px;
-            }
-            :global(.search-field) {
-              font-size: 18px;
-              line-height: 18px;
-            }
-          }
 
           @media (max-width: 480px) {
+            
+            :global(.leftside) {
+              overflow: scroll;
+              margin-right: 10px;
+            }
             :global(.tabs) > :global(.tab) {
               margin-right: 10px;
             }
             :global(.tabs) > :global(.tab) :global(h2) {
-              font-size: 12px !important;
-              line-height: 12px;
+              font-size: 26px !important;
+              line-height: 26px;
             }
             :global(.svg-container) {
-              flex-basis: 14px;
+              flex-basis: 26px;
             }
             :global(.search-field) {
-              font-size: 12px;
-              line-height: 12px;
+              font-size: 26px;
+              line-height: 26px;
             }
-          }
-
-          @media (max-width: 320px) {
-            :global(.tabs) > :global(.tab) {
-              margin-right: 4px;
+            :global(.searchfield-container) {
+              padding-bottom: 9px;
             }
-            :global(.tabs) > :global(.tab) :global(h2) {
-              font-size: 10px !important;
-              line-height: 10px;
-            }
-            :global(.svg-container) {
-              flex-basis: 10px;
-            }
-            :global(.search-field) {
-              font-size: 10px;
-              line-height: 10px;
+            :global(form) {
+              margin: 0;
+              padding: 0;
             }
           }
 
