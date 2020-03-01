@@ -7,81 +7,10 @@ import _ from '../common/translations.js';
 import type { Lang, Poet, Country } from '../common/types.js';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
+import { LoupeSVG, CrossSVG } from './icons.js';
 
 const transitionDuration = '0.2s';
 
-type LoupeSVGProps = {
-  color: string,
-};
-class LoupeSVG extends React.Component<LoupeSVGProps> {
-  render() {
-    const { color } = this.props;
-    const style = {
-      fill: 'none',
-      stroke: color,
-      strokeLinecap: 'round',
-      strokeLinejoin: 'round',
-      strokeWidth: '1px',
-    };
-    return (
-      <svg viewBox="0 -5 48 53" width="100%" height="100%">
-        <ellipse
-          style={style}
-          cx="19.55"
-          cy="19.5"
-          rx="18.55"
-          ry="18.5"
-          vectorEffect="non-scaling-stroke"
-        />
-        <line
-          style={style}
-          x1="47"
-          x2="32.96"
-          y1="47"
-          y2="33"
-          strokeWidth="0.5"
-          vectorEffect="non-scaling-stroke"
-        />
-      </svg>
-    );
-  }
-}
-
-type CrossSVGProps = {
-  color: string,
-};
-class CrossSVG extends React.Component<CrossSVGProps> {
-  render() {
-    const { color } = this.props;
-    const style = {
-      fill: 'none',
-      stroke: color,
-      strokeLinecap: 'round',
-      strokeLinejoin: 'round',
-      strokeWidth: '1px',
-    };
-    return (
-      <svg viewBox="0 -5 48 53" width="100%" height="100%">
-        <line
-          style={style}
-          x1="38"
-          y1="38"
-          x2="4"
-          y2="4"
-          vectorEffect="non-scaling-stroke"
-        />
-        <line
-          style={style}
-          x1="38"
-          y1="4"
-          x2="4"
-          y2="38"
-          vectorEffect="non-scaling-stroke"
-        />
-      </svg>
-    );
-  }
-}
 type TabsProps = {
   items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
   poet?: Poet,
@@ -269,7 +198,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
         <nav
           className="tabs"
           style={{
-            display: this.state.showSearchField ? 'none' : 'block',
+            display: this.state.showSearchField ? 'none' : 'flex',
           }}>
           {itemsRendered}
         </nav>
@@ -298,19 +227,24 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
             display: flex;
             justify-content: space-between;
             border-bottom: 1px solid black;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
             margin-top: 30px;
             flex-grow: 1;
           }
           :global(.svg-container)  {
-            flex-basis: 32px;
+            flex-basis: 28px;
             flex-shrink: 1;
             align-self: flex-start;
             transition: flex-basis ${transitionDuration};
           }
           :global(.leftside) {
             width: 100%;
-            padding-right: 10px;
+            overflow: scroll;
+            margin-right: 10px;
+            scrollbar-width: none;
+          }
+          :global(.leftside::-webkit-scrollbar) {
+            display: none;
           }
           :global(.search-field) {
             font-size: 32px;
@@ -327,13 +261,13 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
           }
           :global(.searchfield-container) {
             width: 100%;
-            padding-bottom: 16px;
+            padding-bottom: 10px;
           }
           :global(.tabs) > :global(.tab) {
             display: inline-block;
-            margin-right: 40px;
+            margin-right: 30px;
             border-bottom: 2px solid transparent;
-            padding-bottom: 20px;
+            padding-bottom: 15px;
             transition: margin-right ${transitionDuration};
           }
           :global(.tabs) > :global(.tab) :global(h2) {
@@ -358,102 +292,28 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
           :global(.tabs) > :global(.tab) :global(a) {
             color: #707070;
           }
-          @media (max-width: 850px) {
-            :global(.tabs) > :global(.tab) :global(h2) {
-              font-size: 30px;
-              line-height: 30px;
-            }
-            :global(.svg-container) {
-              flex-basis: 30px;
-            }
-            :global(.tabs) > :global(.tab) {
-              margin-right: 30px;
-            }
-            :global(.search-field) {
-              font-size: 30px;
-              line-height: 30px;
-            }
-          }
-          @media (max-width: 800px) {
-            :global(.tabs) > :global(.tab) :global(h2) {
-              font-size: 28px;
-              line-height: 28px;
-            }
-            :global(.svg-container) {
-              flex-basis: 28px;
-            }
-            :global(.tabs) > :global(.tab) {
-              margin-right: 20px;
-            }
-            :global(.search-field) {
-              font-size: 28px;
-              line-height: 28px;
-            }
-          }
-          @media (max-width: 700px) {
-            :global(.tabs) > :global(.tab) :global(h2) {
-              font-size: 24px;
-              line-height: 24px;
-            }
-            :global(.svg-container) {
-              flex-basis: 24px;
-            }
-            :global(.tabs) > :global(.tab) {
-              margin-right: 15px;
-            }
-            :global(.search-field) {
-              font-size: 24px;
-              line-height: 24px;
-            }
-          }
-          @media (max-width: 600px) {
-            :global(.tabs) > :global(.tab) :global(h2) {
-              font-size: 18px;
-              line-height: 18px;
-            }
-            :global(.svg-container) {
-              flex-basis: 18px;
-            }
-            :global(.tabs) > :global(.tab) {
-              margin-right: 15px;
-            }
-            :global(.search-field) {
-              font-size: 18px;
-              line-height: 18px;
-            }
-          }
 
           @media (max-width: 480px) {
             :global(.tabs) > :global(.tab) {
               margin-right: 10px;
             }
             :global(.tabs) > :global(.tab) :global(h2) {
-              font-size: 12px !important;
-              line-height: 12px;
+              font-size: 26px !important;
+              line-height: 26px;
             }
             :global(.svg-container) {
-              flex-basis: 12px;
+              flex-basis: 26px;
             }
             :global(.search-field) {
-              font-size: 12px;
-              line-height: 12px;
+              font-size: 26px;
+              line-height: 26px;
             }
-          }
-
-          @media (max-width: 320px) {
-            :global(.tabs) > :global(.tab) {
-              margin-right: 4px;
+            :global(.searchfield-container) {
+              padding-bottom: 9px;
             }
-            :global(.tabs) > :global(.tab) :global(h2) {
-              font-size: 10px !important;
-              line-height: 10px;
-            }
-            :global(.svg-container) {
-              flex-basis: 10px;
-            }
-            :global(.search-field) {
-              font-size: 10px;
-              line-height: 10px;
+            :global(form) {
+              margin: 0;
+              padding: 0;
             }
           }
 
@@ -468,21 +328,10 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   }
 }
 
-type PoetTabsProps = {
-  poet: Poet,
-  query?: ?string,
-  selected: 'works' | 'titles' | 'first' | 'bio' | 'search' | 'mentions',
-};
-export const PoetTabs = (props: PoetTabsProps) => {
-  const { poet, selected, query } = props;
+export const poetMenu = (poet: Poet) => {
   const lang = useContext(LangContext);
 
-  const tabs: Array<{
-    id: string,
-    title: string,
-    hide?: boolean,
-    url: string,
-  }> = [
+  return [
     {
       id: 'works',
       title: _('Værker', lang),
@@ -514,34 +363,11 @@ export const PoetTabs = (props: PoetTabsProps) => {
       url: Links.bioURL(lang, poet.id),
     },
   ];
-  return (
-    <Tabs
-      items={tabs}
-      selected={selected}
-      lang={lang}
-      country={poet.country}
-      poet={poet}
-      query={query}
-    />
-  );
 };
 
-type KalliopeTabsProps = {
-  country?: Country,
-  query?: ?string,
-  selected:
-    | 'index'
-    | 'poets'
-    | 'keywords'
-    | 'dictionary'
-    | 'about'
-    | 'search'
-    | 'museum',
-};
-export const KalliopeTabs = (props: KalliopeTabsProps) => {
-  const { selected, country, query } = props;
+export const kalliopeMenu = () => {
   const lang = useContext(LangContext);
-  const tabs = [
+  return [
     { id: 'index', title: 'Kalliope', url: Links.frontPageURL(lang) },
     {
       id: 'poets',
@@ -567,13 +393,4 @@ export const KalliopeTabs = (props: KalliopeTabsProps) => {
       url: Links.aboutURL(lang, 'kalliope'),
     },
   ];
-  return (
-    <Tabs
-      items={tabs}
-      selected={selected}
-      lang={lang}
-      country={country || 'dk'}
-      query={query}
-    />
-  );
 };

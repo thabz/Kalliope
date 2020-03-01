@@ -2,14 +2,15 @@
 
 import 'isomorphic-fetch';
 import React from 'react';
-import Head from '../components/head';
-import Main from '../components/main.js';
+import Page from '../components/page.js';
 import { Link } from '../routes';
 import * as Links from '../components/links';
-import Nav, { kalliopeCrumbs, poetCrumbsWithTitle } from '../components/nav';
+import {
+  kalliopeCrumbs,
+  poetCrumbsWithTitle,
+} from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect.js';
-import { KalliopeTabs, PoetTabs } from '../components/tabs.js';
-import Heading from '../components/heading.js';
+import { kalliopeMenu, poetMenu } from '../components/menu.js';
 import {
   poetNameString,
   poetGenetiveLastName,
@@ -297,48 +298,33 @@ export default class extends React.Component<SearchProps> {
     let headTitle = null;
     let pageTitle = null;
     let nav = null;
-    let requestPath = `/${lang}/search/${country}?query=${query}`;
+    let crumbs = null;
 
     if (poet != null) {
-      tabs = <PoetTabs poet={poet} selected="search" query={query} />;
+      tabs = poetMenu(poet);
       headTitle =
         'Søgning - ' + poetNameString(poet, false, false) + ' - Kalliope';
       pageTitle = <PoetName poet={poet} includePeriod />;
-      nav = (
-        <Nav
-          lang={lang}
-          crumbs={poetCrumbsWithTitle(lang, poet, _('Søgeresultat', lang))}
-        />
-      );
+      crumbs = poetCrumbsWithTitle(lang, poet, _('Søgeresultat', lang));
     } else {
-      tabs = (
-        <KalliopeTabs
-          selected="search"
-          lang={lang}
-          country={country}
-          query={query}
-        />
-      );
+      tabs = kalliopeMenu();
       headTitle = 'Søgning - Kalliope';
       pageTitle = 'Kalliope';
-      const crumbs = [
-        ...kalliopeCrumbs(lang),
-        { title: _('Søgeresultat', lang) },
-      ];
-      nav = <Nav lang={lang} crumbs={crumbs} />;
+      crumbs = [...kalliopeCrumbs(lang), { title: _('Søgeresultat', lang) }];
     }
+
     return (
-      <div>
-        <Head headTitle={headTitle} />
-        <Main>
-          {nav}
-          <Heading title={pageTitle} />
-          {tabs}
-          {renderedResult}
-          {henterFlere}
-          <LangSelect path={requestPath} />
-        </Main>
-      </div>
+      <Page
+        headTitle={headTitle}
+        requestPath={`/${lang}/search/${country}?query=${query}`}
+        crumbs={crumbs}
+        pageTitle={pageTitle}
+        query={query}
+        menuItems={tabs}
+        selectedMenuItem="search">
+        {renderedResult}
+        {henterFlere}
+      </Page>
     );
   }
 }
