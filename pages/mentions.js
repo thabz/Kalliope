@@ -331,7 +331,7 @@ const MentionsPage = (props: MentionsProps) => {
       subtitle={_('Henvisninger', lang)}
       menuItems={poetMenu(poet)}
       selectedMenuItem="mentions">
-      {sections}
+      <div style={{ paddingTop: '3px' }}>{sections}</div>
     </Page>
   );
 };
