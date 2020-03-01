@@ -105,8 +105,8 @@ const Picture = ({
         }
         figcaption {
           margin-top: 8px;
-          font-size: 0.8em;
-          line-height: 1.6;
+          font-size: 16px;
+          line-height: 1.4;
         }
         .oval-mask {
           border-radius: 50%;

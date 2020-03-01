@@ -1,15 +1,13 @@
 // @flow
 
 import React, { useContext } from 'react';
-import Head from '../components/head';
-import Main from '../components/main.js';
-import { KalliopeTabs } from '../components/tabs.js';
+import Page from '../components/page.js';
+import { kalliopeMenu } from '../components/menu.js';
 import LangSelect from '../components/langselect';
-import Nav, { NavPaging, kalliopeCrumbs } from '../components/nav';
+import { kalliopeCrumbs } from '../components/breadcrumbs';
 import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import * as Links from '../components/links';
-import Heading from '../components/heading.js';
 import TextContent from '../components/textcontent.js';
 import SplitWhenSmall from '../components/split-when-small.js';
 import Picture from '../components/picture.js';
@@ -94,7 +92,7 @@ const TodaysEvents = ({ events }: TodaysEventsProps) => {
           margin-bottom: 20px;
         }
         :global(div.today-date) {
-          font-size: 0.8em;
+          font-size: 0.9em;
           margin-bottom: 3px;
         }
         :global(div.today-body) {
@@ -143,8 +141,8 @@ const News = ({ news }: NewsProps) => {
             }
 
             :global(div.news-item h3) {
-              font-weight: 300;
-              font-size: 1.3em;
+              font-weight: 100;
+              font-size: 26px;
               margin: 0 0 20px 0;
               padding: 0;
             }
@@ -153,7 +151,7 @@ const News = ({ news }: NewsProps) => {
             }
             div.news-date {
               margin-top: 5px;
-              font-size: 0.8em;
+              font-size: 0.9em;
               color: #757575;
             }
           `}</style>
@@ -183,39 +181,37 @@ let Index = (props: IndexProps) => {
 
   const requestPath = `/${lang}/`;
 
-  let navPaging = null;
-  if (pagingContext != null) {
-    let prevURL = {
-      url: `/${lang}/?date=${pagingContext.prev}`,
-      title: 'En dag tilbage',
-    };
-    let nextURL = {
-      url: `/${lang}/?date=${pagingContext.next}`,
-      title: 'En dag frem',
-    };
-    navPaging = <NavPaging prev={prevURL} next={nextURL} />;
-  }
-
-  const renderedNews = <News news={news} lang={lang} />;
+  const paging =
+    pagingContext != null
+      ? {
+          prev: {
+            url: `/${lang}/?date=${pagingContext.prev}`,
+            title: 'En dag tilbage',
+          },
+          next: {
+            url: `/${lang}/?date=${pagingContext.next}`,
+            title: 'En dag frem',
+          },
+        }
+      : null;
 
   const sidebar = <TodaysEvents events={todaysEvents} />;
 
   return (
-    <div>
-      <Head headTitle="Kalliope" requestPath={requestPath} />
-      <Main>
-        <Nav lang="da" crumbs={kalliopeCrumbs(lang)} rightSide={navPaging} />
-        <Heading title="Kalliope" />
-        <KalliopeTabs lang={lang} selected="index" />
-        <SidebarSplit sidebar={sidebar}>
-          <div>
-            <SubHeading>{_('Nyheder', lang)}</SubHeading>
-            {renderedNews}
-          </div>
-        </SidebarSplit>
-        <LangSelect lang={lang} path={requestPath} />
-      </Main>
-    </div>
+    <Page
+      headTitle="Kalliope"
+      pageTitle="Kalliope"
+      requestPath={requestPath}
+      crumbs={kalliopeCrumbs(lang)}
+      menuItems={kalliopeMenu()}
+      selectedMenuItem="index"
+      paging={paging}>
+      <SidebarSplit sidebar={sidebar}>
+        <div>
+          <News news={news} lang={lang} />
+        </div>
+      </SidebarSplit>
+    </Page>
   );
 };
 

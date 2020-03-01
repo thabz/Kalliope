@@ -189,3 +189,13 @@ export const search = async (
   const res = await fetch(createURL(URL));
   return (await res.json(): FetchSearchResult);
 };
+
+type FetchTextsResult = Promise<{
+  poet: Poet,
+  lines: Object,
+}>;
+
+export const texts = async (poetId: PoetId): FetchTextsResult => {
+  const json: FetchTextsResult = fetchJSON(`/static/api/${poetId}/texts.json`);
+  return json;
+};
