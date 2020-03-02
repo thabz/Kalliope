@@ -79,7 +79,6 @@ const Bladrer = (props: BladrerProps) => {
             width: 40px;
             bottom: 0;
             top: 0;
-            border: 1px solid red;
           }
         }
       `}</style>
