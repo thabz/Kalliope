@@ -1,13 +1,12 @@
 // @flow
 
 import React from 'react';
-import Head from '../components/head';
+import Page from '../components/page.js';
 import Main from '../components/main.js';
-import Nav, { poetCrumbsWithTitle } from '../components/nav';
+import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import LangSelect from '../components/langselect';
-import { PoetTabs } from '../components/tabs.js';
-import Heading from '../components/heading.js';
+import { poetMenu } from '../components/menu.js';
 import PoetName from '../components/poetname.js';
 import {
   poetNameString,
@@ -253,11 +252,18 @@ class Timeline extends React.Component<TimelineProps> {
       }
 
       return (
-        <div key={i} style={{ marginBottom: '10px', breakInside: 'avoid' }}>
-          <div style={{ float: 'left' }}>{year}</div>
+        <div
+          key={i}
+          style={{
+            marginBottom: '10px',
+            breakInside: 'avoid',
+            lineHeight: '22px',
+          }}>
+          <div style={{ float: 'left', fontSize: '15px' }}>{year}</div>
           <div
             style={{
               marginLeft: '50px',
+              fontSize: '16px',
               color: item.is_history_item ? '#666' : 'black',
             }}>
             {html}
@@ -281,99 +287,81 @@ type BioProps = {
   content_lang: TextLang,
   error: ?Error,
 };
-export default class extends React.Component<BioProps> {
-  static async getInitialProps({
-    query: { lang, poetId },
-  }: {
-    query: { lang: Lang, poetId: string },
-  }) {
-    const json = await Client.bio(poetId);
-    return {
-      lang,
-      portraits: json.portraits,
-      poet: json.poet,
-      content_html: json.content_html,
-      content_lang: json.content_lang,
-      timeline: json.timeline,
-      error: json.error,
-    };
+const BioPage = (props: BioProps) => {
+  const {
+    lang,
+    poet,
+    portraits,
+    content_html,
+    content_lang,
+    timeline,
+    error,
+  } = props;
+
+  if (error) {
+    return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
   }
-
-  render() {
-    const {
-      lang,
-      poet,
-      portraits,
-      content_html,
-      content_lang,
-      timeline,
-      error,
-    } = this.props;
-
-    if (error) {
-      return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
-    }
-    const requestPath = `/${lang}/bio/${poet.id}`;
-
-    const sidebarItems = (
-      <SplitWhenSmall key="first-and-on">
-        <PersonMeta poet={poet} lang={lang} />
-        <div style={{ width: '100%', marginTop: '40px' }}>
-          <PersonPortrait poet={poet} portraits={portraits} lang={lang} />
-        </div>
-      </SplitWhenSmall>
-    );
-
-    const title = <PoetName poet={poet} includePeriod />;
-    const headTitle =
-      _('Biografi', lang) +
-      ' - ' +
-      poetNameString(poet, false, false) +
-      ' - Kalliope';
-
-    const ogDescription = OpenGraph.trimmedDescription(content_html);
-    const ogImage = OpenGraph.poetImage(poet);
-    const ogTitle =
-      poetNameString(poet, false, false) + ' ' + _('biografi', lang);
-
-    return (
-      <div>
-        <Head
-          headTitle={headTitle}
-          ogTitle={ogTitle}
-          ogImage={ogImage}
-          description={ogDescription}
-          requestPath={requestPath}
-        />
-        <Main>
-          <Nav
-            lang={lang}
-            crumbs={poetCrumbsWithTitle(lang, poet, _('Biografi', lang))}
-          />
-          <Heading title={title} subtitle={_('Biografi', lang)} />
-          <PoetTabs poet={poet} selected="bio" />
-          <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
-            <div style={{ lineHeight: '1.6' }}>
-              <TextContent
-                contentHtml={content_html}
-                contentLang={content_lang}
-                className="bio-text"
-                style={{ marginBottom: '40px' }}
-              />
-              <Timeline timeline={timeline} lang={lang} />
-              <style jsx>{`
-                @media (max-width: 800px) {
-                  :global(.bio-text) {
-                    border-bottom: 1px solid #666;
-                    padding-bottom: 40px;
-                  }
-                }
-              `}</style>
-            </div>
-          </SidebarSplit>
-          <LangSelect path={requestPath} />
-        </Main>
+  const sidebarItems = (
+    <SplitWhenSmall key="first-and-on">
+      <PersonMeta poet={poet} lang={lang} />
+      <div style={{ width: '100%', marginTop: '40px' }}>
+        <PersonPortrait poet={poet} portraits={portraits} lang={lang} />
       </div>
-    );
-  }
-}
+    </SplitWhenSmall>
+  );
+
+  return (
+    <Page
+      headTitle={`${_('Biografi', lang)} - ${poetNameString(poet)} - Kalliope`}
+      ogTitle={poetNameString(poet, false, false) + ' ' + _('biografi', lang)}
+      ogImage={OpenGraph.poetImage(poet)}
+      ogDescription={OpenGraph.trimmedDescription(content_html)}
+      requestPath={`/${lang}/bio/${poet.id}`}
+      crumbs={poetCrumbsWithTitle(lang, poet, _('Biografi', lang))}
+      pageTitle={<PoetName poet={poet} includePeriod />}
+      pageSubtitle={_('Biografi', lang)}
+      menuItems={poetMenu(poet)}
+      selectedMenuItem="bio">
+      <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
+        <div style={{ lineHeight: '1.6' }}>
+          <TextContent
+            contentHtml={content_html}
+            contentLang={content_lang}
+            className="bio-text"
+          />
+          <Timeline timeline={timeline} lang={lang} />
+          <style jsx>{`
+            :global(.bio-text) {
+              margin-bottom: 40px;
+            }
+            @media (max-width: 600px) {
+              :global(.bio-text) {
+                border-bottom: 1px solid #666;
+                padding-bottom: 30px;
+              }
+            }
+          `}</style>
+        </div>
+      </SidebarSplit>
+    </Page>
+  );
+};
+
+BioPage.getInitialProps = async ({
+  query: { lang, poetId },
+}: {
+  query: { lang: Lang, poetId: string },
+}) => {
+  const json = await Client.bio(poetId);
+  return {
+    lang,
+    portraits: json.portraits,
+    poet: json.poet,
+    content_html: json.content_html,
+    content_lang: json.content_lang,
+    timeline: json.timeline,
+    error: json.error,
+  };
+};
+
+export default BioPage;
