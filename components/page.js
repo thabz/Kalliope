@@ -9,7 +9,6 @@ import CountryPicker from './countrypicker.js';
 import LangContext from '../common/LangContext.js';
 import LangSelect from './langselect.js';
 import CommonData from '../common/commondata.js';
-import useMediaQuery from '../common/useMediaQuery.js';
 
 type HeadingProps = {
   title: Node | string,
@@ -81,8 +80,6 @@ const Page = props => {
 
   const pagingRendered =
     paging != null ? <Paging prev={paging.prev} next={paging.next} /> : null;
-
-  const mobile = useMediaQuery('(max-width: 480px)');
 
   return (
     <div>

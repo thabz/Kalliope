@@ -33,7 +33,6 @@ import ErrorPage from './error.js';
 import HelpKalliope from '../components/helpkalliope.js';
 import { pluralize } from '../common/strings.js';
 import LangContext from '../common/LangContext.js';
-import useMediaQuery from '../common/useMediaQuery.js';
 import type {
   Lang,
   Poet,
@@ -53,13 +52,9 @@ type BladrerProps = {
 };
 const Bladrer = (props: BladrerProps) => {
   const { target, left, right } = props;
-  const mobile = useMediaQuery('(max-width: 480px)');
   const lang = useContext(LangContext);
 
   if (target == null) {
-    return null;
-  }
-  if (!mobile) {
     return null;
   }
   const onClick = e => {
@@ -68,15 +63,23 @@ const Bladrer = (props: BladrerProps) => {
     window.scrollTo(0, 0);
     e.preventDefault();
   };
-  const style = left === true ? 'left: 0;' : 'right: 0;';
+  const style = left === true ? 'left: -20px;' : 'right: -20px;';
   return (
-    <div onClick={onClick} title={'Gå til ' + target.title}>
+    <div onClick={onClick} title={'Gå til ' + target.title} className="bladrer">
       <style jsx>{`
-        div {
-          position: absolute;
-          ${style}
-          width: 33%;
-          height: 100%;
+        div.bladrer {
+          display: none;
+        }
+
+        @media (max-width: 480px) {
+          div.bladrer {
+            display: block;
+            position: absolute;
+            ${style}
+            width: 40%;
+            bottom: 0;
+            top: 0;
+          }
         }
       `}</style>
     </div>
@@ -507,7 +510,7 @@ const TextPage = (props: TextComponentProps) => {
       <FootnoteContainer key={text.id}>
         <SidebarSplit sidebar={sidebar}>
           <div>
-            <article>
+            <article style={{ position: 'relative' }}>
               <Bladrer left target={prev} />
               <Bladrer right target={next} />
               <div className="text-content">
