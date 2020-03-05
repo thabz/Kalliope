@@ -8,6 +8,8 @@ import * as Strings from '../common/strings.js';
 
 type PictureProps = {
   pictures: Array<PictureItem>,
+  hideArtist?: boolean,
+  hideMuseum?: boolean,
   startIndex?: number,
   showDropShadow?: boolean,
   clickToZoom?: boolean,
@@ -16,6 +18,8 @@ type PictureProps = {
 const Picture = ({
   pictures,
   contentLang,
+  hideArtist = false,
+  hideMuseum = false,
   showDropShadow = true,
   clickToZoom = true,
   startIndex = 0,

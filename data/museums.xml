@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<museums>
+  <museum id="hirschsprungske">
+    <name>Den Hirschsprungske Samling</name>
+  </museum>
+  <museum id="skagen">
+    <name>Skagens Museum</name>
+  </museum>
+  <museum id="thorvaldsens">
+    <name>Thorvaldsens Museum</name>
+    <deep-link>http://thorvaldsensmuseum.dk/samlingerne/vaerk/${invNr}</deep-link>
+  </museum>
+  <museum id="nivaagaard">
+    <name>Nivaagaards Malerisamling</name>
+    <deep-link>http://www.nivaagaard.dk/samling-da/${objId}</deep-link>
+  </museum>
+  <museum id="kb">
+    <name>Det kongelige Bibliotek</name>
+    <deep-link>http://www.kb.dk/images/billed/2010/okt/billeder/object${objId}/da/</deep-link>
+  </museum>
+  <museum id="smk">
+    <name>Statens Museum for Kunst</name>
+    <deep-link>http://collection.smk.dk/#/detail/${invNr}</deep-link>
+  </museum>
+  <museum id="gleimhaus">
+    <name>Gleimhaus, Halberstadt</name>
+    <deep-link>https://www.museum-digital.de/nat/index.php?t=objekt&oges=${objId}</deep-link>
+  </museum>
+  <museum id="ribe">
+    <name>Ribe Kunstmuseum</name>
+    <deep-link>https://ribekunstmuseum.dk/samling/${invNr}</deep-link>
+  </museum>
+  <museum id="smb">
+    <name>Staatliche Museen zu Berlin</name>
+    <deep-link>http://www.smb-digital.de/eMuseumPlus?objectId=${objId}</deep-link>
+  </museum>
+  <museum id="md">
+    <deep-link>https://www.museum-digital.de/nat/index.php?t=objekt&oges=${objId}</deep-link>
+  </museum>
+  <museum id="npg">
+    <name>National Portrait Gallery, London</name>
+    <deep-link>https://www.npg.org.uk/collections/search/portrait/${objId}</deep-link>
+  </museum>
+  <museum id="natmus.se">
+    <name>Nationalmuseum, Stockholm</name>
+    <deep-link>http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${objId}&viewType=detailView</deep-link>
+  </museum>
+  <museum id="digitalmuseum.no">
+    <deep-link>https://digitaltmuseum.no/${objId}/maleri</deep-link>
+  </museum>
+  <museum id="digitalmuseum.se">
+    <name></name>
+    <deep-link>https://digitaltmuseum.se/${objId}/maleri</deep-link>
+  </museum>
+  <museum id="fnm">
+    <name>Frederiksborg Nationalhistorisk Museum</name>
+    <!-- invNr må være 'a-841' -->
+    <deep-link>https://dnm.dk/kunstvaerk/${invNr}/</deep-link>
+  </museum>
+  <!-- TODO: Tilføj Glyptoteket. -->
+  <!-- TODO: Alte Nationalgallerie, Berlin -->
+</museums>

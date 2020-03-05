@@ -887,7 +887,7 @@ const build_image_thumbnails = async () => {
 
 const main = async () => {
   safeMkdir(`static/api`);
-  await b('build_museums', build_museums, collected);
+  collected.museums = await b('build_museums', build_museums, collected);
   collected.workids = await b('build_poet_workids', build_poet_workids);
   const { works, texts } = await b(
     'works_first_pass',

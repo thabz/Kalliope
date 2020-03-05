@@ -1,10 +1,6 @@
 const entities = require('entities');
 const { htmlToXml } = require('../libs/helpers.js');
-const {
-  build_museum_link,
-  build_museum_url,
-  get_museum_json,
-} = require('./museums.js');
+const { build_museum_link, build_museum_url } = require('./museums.js');
 const {
   getChildByTagName,
   getChildrenByTagName,
@@ -60,8 +56,8 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
   const ref = safeGetAttr(pictureNode, 'ref');
   const year = safeGetAttr(pictureNode, 'year');
   const museumId = safeGetAttr(pictureNode, 'museum');
-  const remoteUrl = build_museum_url(pictureNode);
-  const museumLink = build_museum_link(pictureNode) || '';
+  const remoteUrl = build_museum_url(pictureNode, collected);
+  const museumLink = build_museum_link(pictureNode, collected) || '';
   if (src != null) {
     const lang = safeGetAttr(pictureNode, 'lang') || 'da';
     if (src.charAt(0) !== '/') {
@@ -73,7 +69,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       year,
       size: await imageSizeSync(src.replace(/^\//, '')),
       remoteUrl,
-      museum: get_museum_json(museumId),
+      museum: collected.museums.get(museumId),
       content_lang: 'da',
       content_html: htmlToXml(
         safeTrim(safeGetInnerXML(pictureNode)) + museumLink,
@@ -106,7 +102,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       year,
       size: await imageSizeSync(artwork.src.replace(/^\//, '')),
       remoteUrl,
-      museum: get_museum_json(museumId),
+      museum: collected.museums.get(museumId),
       content_lang: artwork.content_lang,
       content_html: htmlToXml(description, collected),
       primary,
