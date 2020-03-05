@@ -1,71 +1,51 @@
 const { safeMkdir, writeJSON } = require('../libs/helpers.js');
-const { isFileModified } = require('../libs/caching.js');
+const { isFileModified, force_reload } = require('../libs/caching.js');
 const { safeGetAttr, loadXMLDoc } = require('./xml.js');
 
-const museums = {
-  hirschsprungske: {
-    name: 'Den Hirschsprungske Samling',
-  },
-  skagen: {
-    name: 'Skagens Museum',
-  },
-  thorvaldsens: {
-    url: ids => `http://thorvaldsensmuseum.dk/samlingerne/vaerk/${ids.invNr}`,
-    name: 'Thorvaldsens Museum',
-  },
-  nivaagaard: {
-    url: ids => `http://www.nivaagaard.dk/samling-da/${ids.objId}`,
-    name: 'Nivaagaards Malerisamling',
-  },
-  kb: {
-    url: ids =>
-      `http://www.kb.dk/images/billed/2010/okt/billeder/object${ids.objId}/da/`,
-    name: 'Det kongelige Bibliotek',
-  },
-  smk: {
-    url: ids => `http://collection.smk.dk/#/detail/${ids.invNr}`,
-    name: 'Statens Museum for Kunst',
-  },
-  gleimhaus: {
-    url: ids =>
-      `https://www.museum-digital.de/nat/index.php?t=objekt&oges=${ids.objId}`,
-    name: 'Gleimhaus, Halberstadt',
-  },
-  ribe: {
-    url: ids => `https://ribekunstmuseum.dk/samling/${ids.invNr}`,
-    name: 'Ribe Kunstmuseum',
-  },
-  smb: {
-    url: ids => `http://www.smb-digital.de/eMuseumPlus?objectId=${ids.objId}`,
-    name: 'Staatliche Museen zu Berlin',
-  },
-  md: {
-    url: ids =>
-      `https://www.museum-digital.de/nat/index.php?t=objekt&oges=${ids.objId}`,
-  },
-  npg: {
-    url: ids =>
-      `https://www.npg.org.uk/collections/search/portrait/${ids.objId}`,
-    name: 'National Portrait Gallery, London',
-  },
-  'natmus.se': {
-    url: ids =>
-      `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${ids.objId}&viewType=detailView`,
-  },
-  'digitalmuseum.no': {
-    url: ids => `https://digitaltmuseum.no/${ids.objId}/maleri`,
-  },
-  'digitalmuseum.se': {
-    url: ids => `https://digitaltmuseum.se/${ids.objId}/maleri`,
-  },
-  fnm: {
-    name: 'Frederiksborg Nationalhistorisk Museum',
-    url: ids => {
-      // invNr må være 'a-841', 'A-841', 'A841', 'A 841'
-      const m = ids.invNr.match(/([a-z]+)[- ]*([0-9]+[a-z]*)/i);
-      return `https://dnm.dk/kunstvaerk/${m[1].toLowerCase()}-${m[2]}/`;
-    },
-  },
+const build_portraits_json = async (poet, collected) => {
+  let result = [];
+  if (!poet.has_portraits) {
+    return result;
+  }
+  const doc = loadXMLDoc(`fdirs/${poet.id}/portraits.xml`);
+  if (doc != null) {
+    onError = message => {
+      throw `fdirs/${poet.id}/portraits.xml: ${message}`;
+    };
+    result = await Promise.all(
+      getElementsByTagName(doc, 'picture').map(async picture => {
+        picture = await get_picture(
+          picture,
+          `/static/images/${poet.id}`,
+          collected,
+          onError
+        );
+        if (picture == null) {
+          onError('har et billede uden src- eller ref-attribut.');
+        }
+        return picture;
+      })
+    );
+    const primaries = result.filter(p => p.primary);
+    if (primaries.length > 1) {
+      onError('har flere primary');
+    }
+    if (primaries.length == 0) {
+      onError('mangler primary');
+    }
+  }
+  return result;
+};
+
+// Read /data/museums.xml and produce collected.museums to to used later.
+const build_museums_ = () => {
+  const xmlFile = `data/museums.xml`;
+  if (!isFileModified(xmlFile) && !force_reload) {
+    return;
+  }
+  const doc = loadXMLDoc(xmlDoc);
+  if (doc != null) {
+  }
 };
 
 const get_museum_json = museumId => {
@@ -100,7 +80,7 @@ const build_museum_link = picture => {
   return url == null ? null : ` <a href="${url}">⌘</a>`;
 };
 
-const build_museums = collected => {
+const build_museum_pages = collected => {
   safeMkdir('static/api/museums');
 
   let found_changes = false;
