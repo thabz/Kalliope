@@ -59,11 +59,6 @@ const build_museum_url = (picture, collected) => {
   return null;
 };
 
-const build_museum_link = (picture, collected) => {
-  const url = build_museum_url(picture, collected);
-  return url == null ? null : ` <a href="${url}">⌘</a>`;
-};
-
 const build_museum_pages = collected => {
   safeMkdir('static/api/museums');
 
@@ -133,7 +128,6 @@ const build_museum_pages = collected => {
 
 module.exports = {
   build_museum_url,
-  build_museum_link,
   build_museums,
   build_museum_pages,
 };

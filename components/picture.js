@@ -4,7 +4,11 @@ import type { PictureItem, Lang, TextLang } from '../common/types.js';
 import TextContent from './textcontent.js';
 import PictureOverlay from './pictureoverlay.js';
 import CommonData from '../common/commondata.js';
+import PoetName from './poetname.js';
+import * as Links from './links.js';
 import * as Strings from '../common/strings.js';
+import LangContext from '../common/LangContext.js';
+import { Link } from '../routes';
 
 type PictureProps = {
   pictures: Array<PictureItem>,
@@ -25,7 +29,7 @@ const Picture = ({
   startIndex = 0,
 }: PictureProps) => {
   const [overlayShown, showOverlay] = useState(false);
-
+  const lang = useContext(LangContext);
   const picture = pictures[startIndex];
   const src = picture.src;
   const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
@@ -80,6 +84,41 @@ const Picture = ({
       />
     );
   }
+
+  let artistRendered = null;
+  console.log(picture);
+  if (!hideArtist && picture.artist != null) {
+    artistRendered = (
+      <>
+        <Link route={Links.poetURL(lang, picture.artist.id)}>
+          <a>
+            <PoetName poet={picture.artist} />
+          </a>
+        </Link>
+        {': '}
+      </>
+    );
+  }
+
+  let remoteLink = null;
+  if (picture.remoteUrl != null) {
+    remoteLink = <a href={picture.remoteUrl}>⌘</a>;
+  }
+
+  let museumRendered = null;
+  if (picture.museum != null) {
+    const name = picture.museum.name;
+    if (name) {
+      museumRendered = (
+        <>
+          {' '}
+          <Link route={Links.museumURL(lang, picture.museum.id)}>{name}</Link>
+          {'. '}
+        </>
+      );
+    }
+  }
+
   return (
     <div className="sidebar-picture">
       <figure>
@@ -93,10 +132,14 @@ const Picture = ({
           />
         </picture>
         <figcaption>
+          {artistRendered}
           <TextContent
+            inline={true}
             contentHtml={picture.content_html}
             contentLang={picture.content_lang || 'da'}
           />
+          {museumRendered}
+          {remoteLink}
         </figcaption>
       </figure>
       {pictureOverlay}

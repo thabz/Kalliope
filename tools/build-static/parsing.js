@@ -57,7 +57,6 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
   const year = safeGetAttr(pictureNode, 'year');
   const museumId = safeGetAttr(pictureNode, 'museum');
   const remoteUrl = build_museum_url(pictureNode, collected);
-  const museumLink = build_museum_link(pictureNode, collected) || '';
   if (src != null) {
     const lang = safeGetAttr(pictureNode, 'lang') || 'da';
     if (src.charAt(0) !== '/') {
@@ -72,7 +71,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       museum: collected.museums.get(museumId),
       content_lang: 'da',
       content_html: htmlToXml(
-        safeTrim(safeGetInnerXML(pictureNode)) + museumLink,
+        safeTrim(safeGetInnerXML(pictureNode)),
         collected
       ),
       primary,
@@ -87,10 +86,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
     }
     const artist = collected.poets.get(artwork.artistId);
     const museumId = safeGetAttr(pictureNode, 'museum');
-    const remoteUrl = build_museum_url(pictureNode);
-    let description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
-      artwork.content_raw
-    }`;
+    let description = artwork.content_raw;
     const extraDescription = safeTrim(safeGetInnerXML(pictureNode));
     if (extraDescription.length > 0) {
       description = extraDescription + '\n\n' + description;
@@ -101,8 +97,8 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       src: artwork.src,
       year,
       size: await imageSizeSync(artwork.src.replace(/^\//, '')),
-      remoteUrl,
-      museum: collected.museums.get(museumId),
+      remoteUrl: artwork.remoteUrl,
+      museum: artwork.museum,
       content_lang: artwork.content_lang,
       content_html: htmlToXml(description, collected),
       primary,

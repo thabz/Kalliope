@@ -112,6 +112,10 @@ export const aboutURL = (lang: Lang = 'da', aboutText: string): URLString => {
   return `/${lang}/about/${aboutText}`;
 };
 
+export const museumURL = (lang: Lang = 'da', museumId: string): URLString => {
+  return `/${lang}/museum/${museumId}`;
+};
+
 export const searchURL = (
   lang: Lang,
   query: string,

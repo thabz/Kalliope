@@ -13,7 +13,7 @@ const {
   getElementsByTagName,
 } = require('./xml.js');
 const { get_picture } = require('./parsing.js');
-const { build_museum_link, build_museum_url } = require('./museums.js');
+const { build_museum_url } = require('./museums.js');
 
 const build_artwork = async collected => {
   let collected_artwork = new Map(loadCachedJSON('collected.artwork') || []);
@@ -58,11 +58,10 @@ const build_artwork = async collected => {
               const src = `/static/images/${personId}/${pictureId}.jpg`;
               const size = await imageSizeSync(src.replace(/^\//, ''));
               const remoteUrl = build_museum_url(picture, collected);
-              const museumLink = build_museum_link(picture, collected) || '';
               const museumId = safeGetAttr(picture, 'museum');
               const artworkId = `${personId}/${pictureId}`;
               const artist = collected.poets.get(personId);
-              const content_raw = safeGetInnerXML(picture).trim() + museumLink;
+              const content_raw = safeGetInnerXML(picture).trim();
               const artworkJson = {
                 id: `${personId}/${pictureId}`,
                 artistId: personId,
