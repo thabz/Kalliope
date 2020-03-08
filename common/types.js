@@ -146,8 +146,12 @@ export type NoteItem = {
 };
 
 export type PictureItem = {
+  artist?: Poet,
+  museum?: Museum,
+  remoteUrl?: string,
   content_lang?: TextLang,
   content_html?: TextContentType,
+  note_html?: TextContentType,
   primary?: boolean,
   size?: { width: number, height: number },
   year?: string,

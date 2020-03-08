@@ -107,6 +107,8 @@ export default class PicturesGrid extends React.Component<ArtworkListProps> {
             pictureRendered = (
               <Picture
                 key={'picture-' + picture.src}
+                hideArtist={hideArtist}
+                hideMuseum={hideMuseum}
                 pictures={[picture]}
                 contentLang={picture.content_lang || 'da'}
                 lang={lang}
