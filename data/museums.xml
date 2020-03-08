@@ -24,7 +24,7 @@
   </museum>
   <museum id="gleimhaus">
     <name>Gleimhaus, Halberstadt</name>
-    <deep-link>https://www.museum-digital.de/nat/index.php?t=objekt&oges=${objId}</deep-link>
+    <deep-link>https://www.museum-digital.de/nat/index.php?t=objekt&amp;oges=${objId}</deep-link>
   </museum>
   <museum id="ribe">
     <name>Ribe Kunstmuseum</name>
@@ -35,7 +35,7 @@
     <deep-link>http://www.smb-digital.de/eMuseumPlus?objectId=${objId}</deep-link>
   </museum>
   <museum id="md">
-    <deep-link>https://www.museum-digital.de/nat/index.php?t=objekt&oges=${objId}</deep-link>
+    <deep-link>https://www.museum-digital.de/nat/index.php?t=objekt&amp;oges=${objId}</deep-link>
   </museum>
   <museum id="npg">
     <name>National Portrait Gallery, London</name>
@@ -43,7 +43,7 @@
   </museum>
   <museum id="natmus.se">
     <name>Nationalmuseum, Stockholm</name>
-    <deep-link>http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${objId}&viewType=detailView</deep-link>
+    <deep-link>http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&amp;module=collection&amp;objectId=${objId}&amp;viewType=detailView</deep-link>
   </museum>
   <museum id="digitalmuseum.no">
     <deep-link>https://digitaltmuseum.no/${objId}/maleri</deep-link>
@@ -56,6 +56,8 @@
     <!-- invNr må være 'a-841' -->
     <deep-link>https://dnm.dk/kunstvaerk/${invNr}/</deep-link>
   </museum>
-  <!-- TODO: Tilføj Glyptoteket. -->
+  <museum id="glyptoteket">
+    <name>Ny Carlsberg Glyptotek</name>
+  </museum>
   <!-- TODO: Alte Nationalgallerie, Berlin -->
 </museums>

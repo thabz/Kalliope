@@ -57,6 +57,16 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
   const year = safeGetAttr(pictureNode, 'year');
   const museumId = safeGetAttr(pictureNode, 'museum');
   const remoteUrl = build_museum_url(pictureNode, collected);
+  let description = null;
+  let note = null;
+  if (getChildByTagName(pictureNode, 'description') != null) {
+    description = safeGetInnerXML(
+      getChildByTagName(pictureNode, 'description')
+    );
+    note = safeGetInnerXML(getChildByTagName(pictureNode, 'picture-note'));
+  } else {
+    description = safeTrim(safeGetInnerXML(pictureNode));
+  }
   if (src != null) {
     const lang = safeGetAttr(pictureNode, 'lang') || 'da';
     if (src.charAt(0) !== '/') {
@@ -70,10 +80,8 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       remoteUrl,
       museum: collected.museums.get(museumId),
       content_lang: 'da',
-      content_html: htmlToXml(
-        safeTrim(safeGetInnerXML(pictureNode)),
-        collected
-      ),
+      content_html: htmlToXml('xx' + description, collected),
+      note_html: htmlToXml(note, collected),
       primary,
     };
   } else if (ref != null) {
@@ -85,12 +93,6 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       onError(`fandt en ref "${ref}" som ikke matcher noget kendt billede.`);
     }
     const artist = collected.poets.get(artwork.artistId);
-    const museumId = safeGetAttr(pictureNode, 'museum');
-    let description = artwork.content_raw;
-    const extraDescription = safeTrim(safeGetInnerXML(pictureNode));
-    if (extraDescription.length > 0) {
-      description = extraDescription + '\n\n' + description;
-    }
     return {
       artist,
       lang: artwork.lang,
@@ -100,7 +102,8 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       remoteUrl: artwork.remoteUrl,
       museum: artwork.museum,
       content_lang: artwork.content_lang,
-      content_html: htmlToXml(description, collected),
+      content_html: htmlToXml(artwork.content_raw, collected),
+      note_html: htmlToXml(description, collected),
       primary,
     };
   }

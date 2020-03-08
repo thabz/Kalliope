@@ -6,9 +6,88 @@ import PictureOverlay from './pictureoverlay.js';
 import CommonData from '../common/commondata.js';
 import PoetName from './poetname.js';
 import * as Links from './links.js';
+import Stack from './stack.js';
 import * as Strings from '../common/strings.js';
 import LangContext from '../common/LangContext.js';
 import { Link } from '../routes';
+
+type FigCaptionProps = {
+  picture: PictureItem,
+  hideArtist?: boolean,
+  hideMuseum?: boolean,
+};
+const FigCaption = (props: FigCaptionProps) => {
+  const { picture, hideArtist = false, hideMuseum = false } = props;
+  const lang = useContext(LangContext);
+
+  let artistRendered = null;
+  if (!hideArtist && picture.artist != null) {
+    artistRendered = (
+      <>
+        <Link route={Links.poetURL(lang, picture.artist.id)}>
+          <a>
+            <PoetName poet={picture.artist} />
+          </a>
+        </Link>
+        {': '}
+      </>
+    );
+  }
+
+  let remoteLink = null;
+  if (picture.remoteUrl != null) {
+    remoteLink = <a href={picture.remoteUrl}>⌘</a>;
+  }
+
+  let museumRendered = null;
+  if (picture.museum != null) {
+    const name = picture.museum.name;
+    if (name) {
+      museumRendered = (
+        <>
+          {' '}
+          <Link route={Links.museumURL(lang, picture.museum.id)}>{name}</Link>
+          {'. '}
+        </>
+      );
+    }
+  }
+
+  let noteRendered = null;
+  if (picture.note_html != null) {
+    noteRendered = (
+      <TextContent
+        contentHtml={picture.note_html}
+        contentLang={picture.content_lang || 'da'}
+      />
+    );
+  }
+
+  return (
+    <figcaption>
+      <Stack>
+        <div>
+          {artistRendered}
+          <TextContent
+            inline={true}
+            contentHtml={picture.content_html}
+            contentLang={picture.content_lang || 'da'}
+          />
+          {museumRendered}
+          {remoteLink}
+        </div>
+        {noteRendered}
+      </Stack>
+      <style jsx>{`
+        figcaption {
+          margin-top: 8px;
+          font-size: 16px;
+          line-height: 1.4;
+        }
+      `}</style>
+    </figcaption>
+  );
+};
 
 type PictureProps = {
   pictures: Array<PictureItem>,
@@ -29,7 +108,6 @@ const Picture = ({
   startIndex = 0,
 }: PictureProps) => {
   const [overlayShown, showOverlay] = useState(false);
-  const lang = useContext(LangContext);
   const picture = pictures[startIndex];
   const src = picture.src;
   const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
@@ -85,40 +163,6 @@ const Picture = ({
     );
   }
 
-  let artistRendered = null;
-  console.log(picture);
-  if (!hideArtist && picture.artist != null) {
-    artistRendered = (
-      <>
-        <Link route={Links.poetURL(lang, picture.artist.id)}>
-          <a>
-            <PoetName poet={picture.artist} />
-          </a>
-        </Link>
-        {': '}
-      </>
-    );
-  }
-
-  let remoteLink = null;
-  if (picture.remoteUrl != null) {
-    remoteLink = <a href={picture.remoteUrl}>⌘</a>;
-  }
-
-  let museumRendered = null;
-  if (picture.museum != null) {
-    const name = picture.museum.name;
-    if (name) {
-      museumRendered = (
-        <>
-          {' '}
-          <Link route={Links.museumURL(lang, picture.museum.id)}>{name}</Link>
-          {'. '}
-        </>
-      );
-    }
-  }
-
   return (
     <div className="sidebar-picture">
       <figure>
@@ -131,16 +175,11 @@ const Picture = ({
             alt={alt}
           />
         </picture>
-        <figcaption>
-          {artistRendered}
-          <TextContent
-            inline={true}
-            contentHtml={picture.content_html}
-            contentLang={picture.content_lang || 'da'}
-          />
-          {museumRendered}
-          {remoteLink}
-        </figcaption>
+        <FigCaption
+          picture={picture}
+          hideArtist={hideArtist}
+          hideMuseum={hideMuseum}
+        />
       </figure>
       {pictureOverlay}
       <style jsx>{`
@@ -149,11 +188,6 @@ const Picture = ({
         }
         figure {
           margin: 0;
-        }
-        figcaption {
-          margin-top: 8px;
-          font-size: 16px;
-          line-height: 1.4;
         }
         .oval-mask {
           border-radius: 50%;

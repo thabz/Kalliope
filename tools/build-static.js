@@ -812,19 +812,9 @@ const build_poet_works_json = collected => {
 
     let artwork = [];
     if (poet.has_artwork) {
-      artwork = Array.from(collected.artwork.values())
-        .filter(a => a.artistId === poetId)
-        .map(picture => {
-          return {
-            lang: picture.lang,
-            src: picture.src,
-            size: picture.size,
-            content_lang: picture.content_lang,
-            content_html: picture.content_html,
-            subjects: picture.subjects,
-            year: picture.year,
-          };
-        });
+      artwork = Array.from(collected.artwork.values()).filter(
+        a => a.artistId === poetId
+      );
     }
 
     const objectToWrite = {
