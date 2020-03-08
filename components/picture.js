@@ -40,7 +40,7 @@ const FigCaption = (props: FigCaptionProps) => {
   }
 
   let museumRendered = null;
-  if (picture.museum != null) {
+  if (!hideMuseum && picture.museum != null) {
     const name = picture.museum.name;
     if (name) {
       museumRendered = (
