@@ -13,6 +13,7 @@ import { Link } from '../routes';
 
 type FigCaptionProps = {
   picture: PictureItem,
+  className?: string,
   hideArtist?: boolean,
   hideMuseum?: boolean,
 };
@@ -212,3 +213,4 @@ const Picture = ({
 };
 
 export default Picture;
+export { FigCaption };

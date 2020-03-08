@@ -4,6 +4,7 @@ import CommonData from '../common/commondata.js';
 import TextContent from './textcontent.js';
 import { CloseButton, LeftArrow, RightArrow } from './icons.js';
 import type { PictureItem } from '../common/types.js';
+import { FigCaption } from './picture.js';
 
 const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
   const src = picture.src;
@@ -36,16 +37,10 @@ const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
   return (
     <figure className="overlay-figure">
       <img src={fallbackSrc} className={imgClassName} alt={alt} />
-      <figcaption>
-        <TextContent contentHtml={picture.content_html} contentLang="da" />
-      </figcaption>
+      <FigCaption picture={picture} />
       <style jsx>{`
         figure {
           margin: 0;
-        }
-        figcaption {
-          margin-top: 16px;
-          line-height: 1.5;
         }
         .oval-mask {
           border-radius: 50%;
