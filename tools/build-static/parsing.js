@@ -80,7 +80,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       remoteUrl,
       museum: collected.museums.get(museumId),
       content_lang: 'da',
-      content_html: htmlToXml('xx' + description, collected),
+      content_html: htmlToXml(description, collected),
       note_html: htmlToXml(note, collected),
       primary,
     };

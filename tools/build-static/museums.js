@@ -97,22 +97,9 @@ const build_museum_pages = collected => {
       return;
     }
 
-    const artwork = allArtwork
-      .filter(a => a.museum != null && a.museum.id === museumId)
-      .map(picture => {
-        return {
-          artist: picture.artist,
-          lang: picture.lang,
-          src: picture.src,
-          size: picture.size,
-          remoteUrl: picture.remoteUrl,
-          content_lang: picture.content_lang,
-          content_html: picture.content_html,
-          subjects: picture.subjects,
-          year: picture.year,
-        };
-      });
-
+    const artwork = allArtwork.filter(
+      a => a.museum != null && a.museum.id === museumId
+    );
     const json = {
       museum: {
         id: museumId,
