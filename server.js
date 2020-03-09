@@ -14,6 +14,7 @@ const rootStaticFiles = [
   '/favicon.ico',
   '/robots.txt',
   '/sitemap.xml',
+  '/manifest.json',
   '/google88bff7f4fb67a7b5.html',
   '/apple-touch-icon-120x120.png',
   '/apple-touch-icon-152x152.png',
@@ -134,6 +135,7 @@ app.prepare().then(() => {
     if (rootStaticFiles.indexOf(pathname) > -1) {
       const path = join(__dirname, 'static', pathname);
       app.serveStatic(req, res, path);
+      return;
     } else if (
       pathname.indexOf('.cgi') > -1 ||
       pathname.indexOf('.pl') > -1 ||

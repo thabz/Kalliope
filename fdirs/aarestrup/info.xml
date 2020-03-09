@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="aarestrup" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Emil</firstname>
+    <lastname>Aarestrup</lastname>
+    <fullname>Carl Ludvig Emil Aarestrup</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1800-12-04</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1856-07-21</date>
+      <place>Odense</place>
+    </dead>
+  </period>
+  <works>1838,1863,1976,1976-1,1976-2,1976-3,1976-4,1976-5,1976-6</works>
+</person>

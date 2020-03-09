@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
+  <picture src="p3.jpg" year="1791">
+      Anton Graff: <i>Portrait Friedrich Schiller</i>, begyndt 1786, færdiggjort 1791, olie på lærred, 71x57cm. Städtische Galerie Dresden.
+  </picture>
+  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg" year="1793">
     Ludovike Simanowiz (1759-1827): <i>Friedrich Schiller</i>, mellem 1793 og 1794.
   </picture>
-  <picture src="p2.jpg">
-  </picture>
-  <picture src="p3.jpg">
-  </picture>
-  <picture src="p4.jpg">
+  <picture src="p4.jpg" year="1804">
     F.G. Weitsch: <i>Schiller</i>, 1804, tegning. Staatliche Museen, Berlin.
   </picture>
-  <picture src="p5.jpg">
+  <picture src="p7.jpg" year="1808">
+      Gerhard von Kügelgen (1772-1820): <i>Friedrich Schiller</i>, 1808-1809, olie på lærred, 73x61cm. Goethe-Haus, Frankfurt-am-Main.
   </picture>
-  <picture src="p6.jpg">
-  </picture>
+  <picture ref="thorvaldsen/1836-schiller"/>
 </pictures>

@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg">
-  </picture>
-  <picture src="p2.jpg">
-  </picture>
-  <picture src="p3.jpg" primary="true" square-src="p3-square.jpg">
-    Heinrich Christoph Kolbe: <i>Goethe</i>, 1822, olie på lærred. Goethe-Nationalmuseum, Weimar.
-  </picture>
-  <picture src="p4.jpg">
-  </picture>
-  <picture src="p5.jpg">
-  </picture>
-  <picture src="p6.jpg">
-    Gerhard von Kügelgen (1772-1820): <i>Johann Wolfgang von Goethe</i>, Dresden, 1810. Olie på lærred, 73,8x63,5cm. Deutsches Historisches Museum, Berlin.
-  </picture>
+    <picture src="p7.jpg" year="1787">
+        Johann Heinrich Wilhelm Tischbein: <i>Goethe in der Campagna</i>, Rom, 1787, olie på lærred, 164x206cm. Städel Museum, Frankfurt.
+    </picture>
+    <picture src="p6.jpg" year="1810">
+        Gerhard von Kügelgen (1772-1820): <i>Johann Wolfgang von Goethe</i>, Dresden, 1810, olie på lærred, 73,8x63,5cm. Deutsches Historisches Museum, Berlin.
+    </picture>
+    <picture src="p3.jpg" primary="true" square-src="p3-square.jpg" year="1822">
+        Heinrich Christoph Kolbe: <i>Goethe</i>, 1822, olie på lærred. Goethe-Nationalmuseum, Weimar.
+    </picture>
+    <picture src="p8.jpg" year="1828">
+        Joseph Karl Stieler (1781-1858): <i>Johann Wolfgang von Goethe</i>, 1828, olie på lærred, 78x63,8cm. Neue Pinakothek, München.
+    </picture>
 </pictures>

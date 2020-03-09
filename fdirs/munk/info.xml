@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="munk" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Kaj</firstname>
+    <lastname>Munk</lastname>
+    <fullname>Kaj Harald Leininger Munk</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1898-01-13</date>
+      <place>Maribo</place>
+    </born>
+    <dead>
+      <date>1944-01-04</date>
+      <place inon="on">Hørbylunde Bakke ved Silkeborg</place>
+    </dead>
+  </period>
+  <works>1934,1936,1941,1942,1944,andre</works>
+</person>

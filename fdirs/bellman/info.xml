@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bellman" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Carl Michael</firstname>
+    <lastname>Bellman</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1740-02-04</date>
+      <place>Stockholm</place>
+    </born>
+    <dead>
+      <date>1795-02-11</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <works>1760,1790,1791</works>
+</person>

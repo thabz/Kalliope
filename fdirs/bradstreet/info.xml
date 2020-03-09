@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bradstreet" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Anne</firstname>
+    <lastname>Bradstreet</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1612</date>
+      <place>Northampton, Northamptonshire?, England</place>
+    </born>
+    <dead>
+      <date>1672-09-16</date>
+      <place>Andover, Massachusetts Bay Colony (USA)</place>
+    </dead>
+  </period>
+  <works>1650,1678</works>
+</person>

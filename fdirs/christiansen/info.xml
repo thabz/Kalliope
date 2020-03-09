@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="christiansen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Einar</firstname>
+    <lastname>Christiansen</lastname>
+    <fullname>Arne Einar Christiansen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1861-07-20</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1939-09-25</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1896,1927</works>
+</person>

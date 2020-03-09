@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="columbus" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Samuel</firstname>
+    <lastname>Columbus</lastname>
+    <fullname>Samuel Jonae Columbus</fullname>
+  </name>
+  <period>
+    <born>
+	<date>1642</date>
+	<place>Husby, Dalarna</place>
+    </born>
+    <dead>
+      <date>1679-07-08</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <works>1674</works>
+</person>

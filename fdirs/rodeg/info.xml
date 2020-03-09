@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rodeg" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Gotfred</firstname>
+    <lastname>Rode</lastname>
+    <fullname>Gotfred Benjamin Rode</fullname>
+    <pseudonym>Carl Ghetto</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1830-03-09</date>
+      <place>Vallø</place>
+    </born>
+    <dead>
+      <date>1878-08-12</date>
+      <place>Ordrup</place>
+    </dead>
+  </period>
+  <works>1857,1858</works>
+</person>

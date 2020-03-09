@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="esmann" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Gustav</firstname>
+    <lastname>Esmann</lastname>
+    <fullname>Gustav Frederik Esmann</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1860-08-17</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1904-09-04</date>
+      <place>København</place>
+      <note>Skudt af elskerinde</note>
+    </dead>
+  </period>
+</person>

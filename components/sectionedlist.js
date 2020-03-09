@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link } from '../routes';
-import type { SectionForRendering } from '../pages/helpers/types.js';
+import type { SectionForRendering } from '../common/types.js';
 import TwoColumns from './twocolumns.js';
 
 type SectionedListProps = {
@@ -40,7 +40,7 @@ export default class SectionedList extends React.Component<SectionedListProps> {
           }
           :global(.list-section),
           :global(.list-section-line) {
-            line-height: 1.7;
+            line-height: 1.6;
           } /* Fix vertical aligment layout problem in Safari and Chrome */
           :global(.list-section:before) {
             content: '';
@@ -48,9 +48,10 @@ export default class SectionedList extends React.Component<SectionedListProps> {
             height: 1px;
           }
           :global(.list-section) :global(h3) {
-            font-weight: lighter;
-            font-size: 18px;
-            border-bottom: 1px solid black;
+            font-weight: 300;
+            font-size: 22px;
+            border-bottom: 1px solid #888;
+            margin-bottom: 12px;
           }
         `}</style>
       </TwoColumns>

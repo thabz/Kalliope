@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rosenberg" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Carl</firstname>
+    <lastname>Rosenberg</lastname>
+    <fullname>Carl Frederik Vilhelm Mathildus Rosenberg</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1829-01-02</date>
+      <place>Skanderborg</place>
+    </born>
+    <dead>
+      <date>1885-12-03</date>
+      <place inon="on">Frederiksberg</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

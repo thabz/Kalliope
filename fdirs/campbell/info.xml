@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="campbell" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Thomas</firstname>
+    <lastname>Campbell</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1777-07-27</date>
+      <place>Glasgow</place>
+    </born>
+    <dead>
+      <date>1844-06-15</date>
+      <place>Boulogne, Frankrig</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

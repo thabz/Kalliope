@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
-    Budtz Müller &amp; Co. (fotograf): <i>Vilhelm Bergsøe</i>, 1888. Det Kongelige Bibliotek.
+  <picture src="p2.jpg" museum="kb" objid="150857">
+      <i>Vilhelm Bergsøe</i>, ukendt år, fotografi.
   </picture>
+  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg" museum="kb" objid="448827">
+    Budtz Müller &amp; Co. (fotograf): <i>Vilhelm Bergsøe</i>, 1888.
+  </picture>
+      
 </pictures>

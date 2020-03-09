@@ -2,25 +2,28 @@
 
 import 'isomorphic-fetch';
 import React from 'react';
-import Head from '../components/head';
-import Main from '../components/main.js';
+import Page from '../components/page.js';
 import { Link } from '../routes';
 import * as Links from '../components/links';
-import Nav from '../components/nav';
+import {
+  kalliopeCrumbs,
+  poetCrumbsWithTitle,
+} from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect.js';
-import { KalliopeTabs, PoetTabs } from '../components/tabs.js';
-import Heading from '../components/heading.js';
-import PoetName, {
+import { kalliopeMenu, poetMenu } from '../components/menu.js';
+import {
   poetNameString,
   poetGenetiveLastName,
-} from '../components/poetname.js';
+} from '../components/poetname-helpers.js';
+import PoetName from '../components/poetname.js';
 import WorkName from '../components/workname.js';
 import TextName from '../components/textname.js';
-import * as Strings from './helpers/strings.js';
-import CommonData from '../pages/helpers/commondata.js';
+import * as Strings from '../common/strings.js';
+import CommonData from '../common/commondata.js';
 import ErrorPage from './error.js';
-import * as Client from './helpers/client.js';
-import type { Lang, Country, Poet, PoetId, Error } from './helpers/types.js';
+import * as Client from '../common/client.js';
+import type { Lang, Country, Poet, PoetId, Error } from '../common/types.js';
+import _ from '../common/translations.js';
 
 type SearchProps = {
   lang: Lang,
@@ -167,81 +170,79 @@ export default class extends React.Component<SearchProps> {
 
     let items = [];
     if (result.hits.total > 0) {
-      items = this.hits.filter(x => x._source.text != null).map((hit, i) => {
-        const { poet, work, text } = hit._source;
-        const { highlight } = hit;
-        let item = null;
-        if (text == null) {
-          const workURL = Links.textURL(lang, work.id);
-          item = (
-            <div>
+      items = this.hits
+        .filter(x => x._source.text != null)
+        .map((hit, i) => {
+          const { poet, work, text } = hit._source;
+          const { highlight } = hit;
+          let item = null;
+          if (text == null) {
+            const workURL = Links.textURL(lang, work.id);
+            item = (
               <div>
-                <Link route={workURL}>
-                  <a>
-                    <WorkName work={work} lang={lang} />
-                  </a>
-                </Link>
+                <div>
+                  <Link route={workURL}>
+                    <a>
+                      <WorkName work={work} lang={lang} />
+                    </a>
+                  </Link>
+                </div>
+                <div>
+                  <PoetName poet={poet} />:{' '}
+                </div>
               </div>
+            );
+          } else {
+            const textURL = Links.textURL(lang, text.id);
+            let renderedHighlight = null;
+            if (highlight && highlight['text.content_html']) {
+              // The query is highlighted in each line using <em> by Elasticsearch
+              const lines = highlight['text.content_html'];
+              renderedHighlight = lines.map((line, i) => {
+                let parts = line
+                  .replace(/\s+/g, ' ')
+                  .replace(/^[\s,.!:;?\d"“„]+/, '')
+                  .replace(/[\s,.!:;?\d"“„]+$/, '')
+                  .split(/<\/?em>/);
+                parts[1] = <em key={i}>{parts[1]}</em>;
+                return <div key={i}>{parts}</div>;
+              });
+            }
+            item = (
               <div>
-                <PoetName poet={poet} />:{' '}
+                <div className="title">
+                  <Link route={textURL}>
+                    <a>
+                      <TextName text={text} />
+                    </a>
+                  </Link>
+                </div>
+                <div className="hightlights">{renderedHighlight}</div>
+                <div className="poet-and-work">
+                  <PoetName poet={poet} />: <WorkName work={work} lang={lang} />
+                </div>
+                <style jsx>{`
+                  .title {
+                    font-size: 1.15em;
+                  }
+                  .hightlights {
+                    color: ${CommonData.lightTextColor};
+                  }
+                `}</style>
               </div>
-            </div>
-          );
-        } else {
-          const textURL = Links.textURL(lang, text.id);
-          let renderedHighlight = null;
-          if (highlight && highlight['text.content_html']) {
-            // The query is highlighted in each line using <em> by Elasticsearch
-            const lines = highlight['text.content_html'];
-            renderedHighlight = lines.map((line, i) => {
-              let parts = line
-                .replace(/\s+/g, ' ')
-                .replace(/^[\s,.!:;?\d"“„]+/, '')
-                .replace(/[\s,.!:;?\d"“„]+$/, '')
-                .split(/<\/?em>/);
-              parts[1] = <em key={i}>{parts[1]}</em>;
-              return <div key={i}>{parts}</div>;
-            });
+            );
           }
-          item = (
-            <div>
-              <div className="title">
-                <Link route={textURL}>
-                  <a>
-                    <TextName text={text} />
-                  </a>
-                </Link>
-              </div>
-              <div className="hightlights">{renderedHighlight}</div>
-              <div className="poet-and-work">
-                <PoetName poet={poet} />: <WorkName work={work} lang={lang} />
-              </div>
+          return (
+            <div key={hit._id} className="result-item">
+              {item}
               <style jsx>{`
-                .title {
-                  font-size: 1.15em;
-                }
-                .hightlights {
-                  color: #888;
-                  font-weight: lighter;
-                }
-                .poet-and-work {
-                  font-weight: lighter;
+                .result-item {
+                  margin-bottom: 20px;
                 }
               `}</style>
             </div>
           );
-        }
-        return (
-          <div key={hit._id} className="result-item">
-            {item}
-            <style jsx>{`
-              .result-item {
-                margin-bottom: 20px;
-              }
-            `}</style>
-          </div>
-        );
-      });
+        });
     }
     const antal = result.hits.total;
     let resultaterOrd = null;
@@ -297,39 +298,33 @@ export default class extends React.Component<SearchProps> {
     let headTitle = null;
     let pageTitle = null;
     let nav = null;
+    let crumbs = null;
+
     if (poet != null) {
-      tabs = (
-        <PoetTabs lang={lang} poet={poet} selected="search" query={query} />
-      );
+      tabs = poetMenu(poet);
       headTitle =
         'Søgning - ' + poetNameString(poet, false, false) + ' - Kalliope';
       pageTitle = <PoetName poet={poet} includePeriod />;
-      nav = <Nav lang={lang} poet={poet} title="Søgeresultat" />;
+      crumbs = poetCrumbsWithTitle(lang, poet, _('Søgeresultat', lang));
     } else {
-      tabs = (
-        <KalliopeTabs
-          selected="search"
-          lang={lang}
-          country={country}
-          query={query}
-        />
-      );
+      tabs = kalliopeMenu();
       headTitle = 'Søgning - Kalliope';
       pageTitle = 'Kalliope';
-      nav = <Nav lang={lang} title="Søgeresultat" />;
+      crumbs = [...kalliopeCrumbs(lang), { title: _('Søgeresultat', lang) }];
     }
+
     return (
-      <div>
-        <Head headTitle={headTitle} />
-        <Main>
-          {nav}
-          <Heading title={pageTitle} />
-          {tabs}
-          {renderedResult}
-          {henterFlere}
-          <LangSelect lang={lang} />
-        </Main>
-      </div>
+      <Page
+        headTitle={headTitle}
+        requestPath={`/${lang}/search/${country}?query=${query}`}
+        crumbs={crumbs}
+        pageTitle={pageTitle}
+        query={query}
+        menuItems={tabs}
+        selectedMenuItem="search">
+        {renderedResult}
+        {henterFlere}
+      </Page>
     );
   }
 }

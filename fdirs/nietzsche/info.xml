@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="nietzsche" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich</firstname>
+    <lastname>Nietzsche</lastname>
+    <fullname>Friedrich Vilhelm Nietzsche</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1844-10-15</date>
+      <place>Röcken ved Lützen</place>
+    </born>
+    <dead>
+      <date>1900-08-25</date>
+      <place>Weimar</place>
+    </dead>
+  </period>
+  <works>1888</works>
+</person>

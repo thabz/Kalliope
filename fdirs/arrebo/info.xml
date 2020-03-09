@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="arrebo" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Anders</firstname>
+    <lastname>Arrebo</lastname>
+    <fullname>Anders Christensen Arrebo</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1587-01-02</date>
+      <place inon="on">Ærø</place>
+    </born>
+    <dead>
+      <date>1637-03-12</date>
+    </dead>
+  </period>
+  <works>1623,1661</works>
+</person>

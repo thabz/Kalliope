@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="abschatz" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Hans Aßmann Freiherr von</firstname>
+    <lastname>Abschatz</lastname>
+    <christened>Johann Erasmus Freiherr von Abschatz</christened>
+    <pseudonym>Hans Erasmus Aßmann</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1646-02-04</date>
+      <place>Breslau</place>
+    </born>
+    <dead>
+      <date>1699-04-22</date>
+      <place>Liegnitz</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

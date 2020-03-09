@@ -1076,10 +1076,13 @@ Igjennem Dødens Nat til Livets Kilder!
 <head>
     <title>Et mystisk Digt</title>
     <toctitle>Et mystisk Digt (efter Novalis)</toctitle>
-    <subtitle>Efter Novalias</subtitle>
+    <subtitle>Efter Novalis</subtitle>
     <firstline>Naar Tal ikke meer og ei Figurer</firstline>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2019010901"/>.</note>
+    </notes>
     <source pages="49"/>
+    <keywords>novalis</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1104,7 +1107,9 @@ Det forvildede Væsen bort fra Jord.
     <toctitle>En lille Drengs Klage (efter Rückert)</toctitle>
     <subtitle>Efter Rückert</subtitle>
     <firstline>Svalen har bedraget</firstline>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note>Gendigtning af Rückert: <xref type="translation" poem="rueckert2018121110"/>.</note>
+    </notes>    
     <source pages="50"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1127,7 +1132,9 @@ Er jeg af Længsel død.
     <toctitle>Tillid til Gud (efter Paul Gerhard)</toctitle>
     <subtitle>Frit omarbejdet efter Paul Gerhard</subtitle>
     <firstline>Befal hvad Du mon eie</firstline>
-    <!-- TODO: Find originalen -->
+    <notes>
+        <note unknown-original-by="gerhardt" />
+    </notes>
     <source pages="51-54"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1502,7 +1509,7 @@ Naar Dødningskibet fører Dig til Hjemmets fjerne Kyst.
     <title>Undergang og Frelse</title>
     <subtitle>Et Phantasibillede fra Folkevandringernes Tid</subtitle>
     <firstline>Norden i stærke Strømme frem mod Syden brød</firstline>
-    <source pages="64-58"/>
+    <source pages="64-68"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4050,7 +4057,7 @@ Ham ingen Hofmand fulgte, han iilsomt fremskred,
 Indtil han naaede Pladsen, hvor Tovelille stod,
 Nysgjerrig Mængdens Blikke fulgte den Herre god.
 
-Den Lilievand sig neied, han traadte hende nær ,
+Den Lilievand sig neied, han traadte hende nær,
 Og sagde: ,,Følg mig efter, min Jomfru fiin og skjær
 Nei, frygt kun ingen Fjende, Du har en trofast Ven,
 Der vel Dig kan forsvare, hvor Du vender Dig hen.''
@@ -5886,7 +5893,7 @@ En Ganger han Jer sender, den hurtigste han eier;
 Vi maae nu nytte Tiden, for Vinden sig dreier.''
 
 Saa steg hun paa den Ganger, den stod paa vilden Sti,
-Men.da hun kom til Skoven, den Rosenlund forbi,
+Men da hun kom til Skoven, den Rosenlund forbi,
 Skued hun flere Ryttere, de slog om hende Kreds,
 De sagde, dem sendte Volmer, da blev hun vel tilfreds.
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lovelace" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Richard</firstname>
+    <lastname>Lovelace</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1617-12-09</date>
+    </born>
+    <dead>
+      <date>1657</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>1649,andre</works>
+</person>

@@ -1445,7 +1445,7 @@ dejlige Danmark, i Glæde og Sorg!
 </head>
 <body>
 Vort Land, vort Land, vort fagre Hjem,
-vort Fædreland!
+vort Fædreland!,<note>Cf. Carl Plougs <xref poem="plough2018031415"/>.</note>
 Med Skovens Bryn og Markens Bræm,
 med Taarn og Tind du stiger frem
 af blanke Bølgers Silkegem,
@@ -1944,7 +1944,9 @@ Vejen gaar let, naar du synger dertil.
     <title>En Sang om Kærlighed</title>
     <subtitle>(Emanuel Geibel)</subtitle>
     <firstline>Saa meget har paa Jord mig frydet</firstline>
-    <!-- TODO: Oversættelse af http://www.romantische-liebesgedichte.net/emanuel-geibel-minnelied.html-->
+    <notes>
+        <note>Gendigtning af Emanuel Geibel: <xref type="translation" poem="geibel2019051302"/>.</note>
+    </notes>
     <source pages="85-88"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3395,7 +3397,7 @@ og pege trygt i Havn.
 
 <poem id="gregersen2018020381">
 <head>
-    <title>Carl Plough</title>
+    <title>Carl Ploug</title>
     <firstline>Han var en Mand, hvis Aand var tidlig vaagen</firstline>
     <source pages="141"/>
     <keywords>plough</keywords>

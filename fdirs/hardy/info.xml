@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hardy" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Thomas</firstname>
+    <lastname>Hardy</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1840-06-02</date>
+      <place>Higher Bockhampton, Dorset, England</place>
+    </born>
+    <dead>
+      <date>1928-01-11</date>
+      <place>Dorchester, Dorset, England</place>
+    </dead>
+  </period>
+  <works>1898,1902,1903,1909,1914,1917,1922,1925,1928,andre</works>
+</person>

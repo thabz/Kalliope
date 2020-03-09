@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rein" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Jonas</firstname>
+    <lastname>Rein</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1760-01-30</date>
+      <place>Øksendal på Nordmøre</place>
+    </born>
+    <dead>
+      <date>1821-11-21</date>
+      <place>Bergen</place>
+    </dead>
+  </period>
+  <works>1802,1810,andre</works>
+</person>

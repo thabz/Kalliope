@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="churchill" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Charles</firstname>
+    <lastname>Churchill</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1732-02</date>
+      <place>Westminster, London</place>
+    </born>
+    <dead>
+      <date>1764-11-04</date>
+      <place>Boulogne-sur-Mer</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

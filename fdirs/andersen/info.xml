@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="andersen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>H.C.</firstname>
+    <lastname>Andersen</lastname>
+    <fullname>Hans Christian Andersen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1805-04-02</date>
+      <place>Odense</place>
+    </born>
+    <dead>
+      <date>1875-08-04</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1830,1831,1832,1833,1833S,1838,1847,1849,1851,1854,1863,1867,1879,eventyr,andre</works>
+</person>

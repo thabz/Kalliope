@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg">
-  </picture>
-  <picture src="p2.jpg">
-  </picture>
-  <picture src="p3.jpg">
-  </picture>
-  <picture src="p4.jpg" primary="true" square-src="p4-square.jpg">
-    Ukendt maler: <i>Thomas Kingo</i>, ca. 1670. Det Nationalhistoriske Museum på Frederiksborg.
-  </picture>
+    <picture src="p1.jpg"/>
+    <picture src="p4.jpg" primary="true" square-src="p4-square.jpg" museum="fnm" invbr="A 62">
+        Ukendt maler: <i>Thomas Kingo</i>, ca. 1670. Det Nationalhistoriske Museum på Frederiksborg.
+    </picture>
 </pictures>

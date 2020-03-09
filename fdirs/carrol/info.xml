@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="carrol" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Lewis</firstname>
+    <lastname>Carroll</lastname>
+    <realname>Charles Lutwidge Dodgson</realname>
+  </name>
+  <period>
+    <born>
+      <date>1832-01-27</date>
+      <place>Daresbury, Cheshire, England</place>
+    </born>
+    <dead>
+      <date>1898-01-14</date>
+      <place>Guildford, Surrey, England</place>
+    </dead>
+  </period>
+  <works>1869,1876,1889,1898,andre</works>
+</person>
