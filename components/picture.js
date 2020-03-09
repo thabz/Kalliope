@@ -144,6 +144,17 @@ const Picture = ({
     pictureClassName += ' clickable';
   }
 
+  let clipPathStyle = {};
+  let clipPathDropShadowStyle = {};
+  if (picture.clipPath != null) {
+    clipPathStyle = {
+      clipPath: picture.clipPath,
+    };
+    clipPathDropShadowStyle = {
+      filter: 'drop-shadow(4px 4px 12px #888)',
+    };
+  }
+
   const onClick = () => {
     if (clickToZoom == true) {
       showOverlay(true);
@@ -167,12 +178,16 @@ const Picture = ({
   return (
     <div className="sidebar-picture">
       <figure>
-        <picture className={pictureClassName} onClick={onClick}>
+        <picture
+          className={pictureClassName}
+          onClick={onClick}
+          style={clipPathDropShadowStyle}>
           {sources}
           <img
             className={pictureClassName}
             src={fallbackSrc}
             width="100%"
+            style={clipPathStyle}
             alt={alt}
           />
         </picture>
