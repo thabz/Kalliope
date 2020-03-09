@@ -56,6 +56,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
   const ref = safeGetAttr(pictureNode, 'ref');
   const year = safeGetAttr(pictureNode, 'year');
   const museumId = safeGetAttr(pictureNode, 'museum');
+  const clipPath = safeGetAttr(pictureNode, 'clip-path');
   const remoteUrl = build_museum_url(pictureNode, collected);
   let description = null;
   let note = null;
@@ -76,6 +77,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       lang,
       src,
       year,
+      clipPath,
       size: await imageSizeSync(src.replace(/^\//, '')),
       remoteUrl,
       museum: collected.museums.get(museumId),
@@ -98,6 +100,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       lang: artwork.lang,
       src: artwork.src,
       year,
+      clipPath,
       size: await imageSizeSync(artwork.src.replace(/^\//, '')),
       remoteUrl: artwork.remoteUrl,
       museum: artwork.museum,

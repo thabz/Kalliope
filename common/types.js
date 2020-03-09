@@ -149,6 +149,7 @@ export type PictureItem = {
   artist?: Poet,
   museum?: Museum,
   remoteUrl?: string,
+  clipPath?: string,
   content_lang?: TextLang,
   content_html?: TextContentType,
   note_html?: TextContentType,

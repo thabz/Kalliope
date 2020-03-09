@@ -34,9 +34,26 @@ const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
     pictureClassName += ' oval-mask';
     imgClassName += ' oval-mask';
   }
+
+  let clipPathStyle = {};
+  let clipPathDropShadowStyle = {};
+  if (picture.clipPath != null) {
+    clipPathStyle = {
+      clipPath: picture.clipPath,
+    };
+    clipPathDropShadowStyle = {
+      filter: 'drop-shadow(4px 4px 12px #888)',
+    };
+  }
+
   return (
-    <figure className="overlay-figure">
-      <img src={fallbackSrc} className={imgClassName} alt={alt} />
+    <figure className="overlay-figure" style={clipPathDropShadowStyle}>
+      <img
+        src={fallbackSrc}
+        className={imgClassName}
+        alt={alt}
+        style={clipPathStyle}
+      />
       <FigCaption picture={picture} />
       <style jsx>{`
         figure {

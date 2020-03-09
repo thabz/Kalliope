@@ -73,6 +73,7 @@ const build_artwork = async collected => {
               const size = await imageSizeSync(src.replace(/^\//, ''));
               const remoteUrl = build_museum_url(picture, collected);
               const museumId = safeGetAttr(picture, 'museum');
+              const clipPath = safeGetAttr(picture, 'clip-path');
               const artworkId = `${personId}/${pictureId}`;
               const artist = collected.poets.get(personId);
               const content_raw = safeGetInnerXML(picture).trim();
@@ -85,6 +86,7 @@ const build_artwork = async collected => {
                 lang: person.lang,
                 src,
                 size,
+                clipPath,
                 content_lang: 'da',
                 subjects,
                 year,
