@@ -75,7 +75,9 @@ export type Poet = {
 
 export type Museum = {
   id: MuseumId,
-  name: string,
+  name: ?string,
+  sortName: ?string,
+  deepLink: ?string,
 };
 
 export type Work = {
@@ -195,6 +197,7 @@ export type Text = {
 export type Keyword = {
   id: string,
   title: string,
+  redirectURL?: string,
   is_draft: boolean,
   author?: string,
   notes?: Array<NoteItem>,

@@ -7,6 +7,7 @@ const translations: { [string]: string } = {
   'en*Personer': 'Persons',
   'en*Kunstnere': 'Artists',
   'en*Nøgleord': 'Keywords',
+  'en*Museer': 'Museums',
   'en*Værker': 'Works',
   'en*Digttitler': 'Poem titles',
   'en*Titler': 'Titles',

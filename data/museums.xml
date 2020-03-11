@@ -2,6 +2,7 @@
 <museums>
   <museum id="hirschsprungske">
     <name>Den Hirschsprungske Samling</name>
+    <sort-name>Hirschsprungske Samling, Den</sort-name>
   </museum>
   <museum id="skagen">
     <name>Skagens Museum</name>
@@ -16,6 +17,7 @@
   </museum>
   <museum id="kb">
     <name>Det kongelige Bibliotek</name>
+    <sort-name>Kongelige Bibliotek</sort-name>
     <deep-link>http://www.kb.dk/images/billed/2010/okt/billeder/object${objId}/da/</deep-link>
   </museum>
   <museum id="smk">
