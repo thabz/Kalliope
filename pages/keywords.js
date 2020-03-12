@@ -48,9 +48,13 @@ const Keywords = (props: KeywordsProps) => {
 
   groups.forEach(group => {
     const items = group.items.map(keyword => {
+      const url =
+        keyword.redirectURL != null
+          ? keyword.redirectURL.replace('${lang}', lang)
+          : Links.keywordURL(lang, keyword.id);
       return {
         id: keyword.id,
-        url: Links.keywordURL(lang, keyword.id),
+        url,
         html: keyword.title,
       };
     });

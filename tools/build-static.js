@@ -76,6 +76,7 @@ const {
 } = require('./build-static/lines.js');
 const {
   build_museums,
+  build_museum_pages,
   build_museum_url,
 } = require('./build-static/museums.js');
 const {
@@ -811,19 +812,9 @@ const build_poet_works_json = collected => {
 
     let artwork = [];
     if (poet.has_artwork) {
-      artwork = Array.from(collected.artwork.values())
-        .filter(a => a.artistId === poetId)
-        .map(picture => {
-          return {
-            lang: picture.lang,
-            src: picture.src,
-            size: picture.size,
-            content_lang: picture.content_lang,
-            content_html: picture.content_html,
-            subjects: picture.subjects,
-            year: picture.year,
-          };
-        });
+      artwork = Array.from(collected.artwork.values()).filter(
+        a => a.artistId === poetId
+      );
     }
 
     const objectToWrite = {
@@ -886,6 +877,7 @@ const build_image_thumbnails = async () => {
 
 const main = async () => {
   safeMkdir(`static/api`);
+  collected.museums = await b('build_museums', build_museums, collected);
   collected.workids = await b('build_poet_workids', build_poet_workids);
   const { works, texts } = await b(
     'works_first_pass',
@@ -911,7 +903,7 @@ const main = async () => {
     collected
   );
   collected.artwork = await b('build_artwork', build_artwork, collected);
-  await b('build_museums', build_museums, collected);
+  await b('build_museum_pages', build_museum_pages, collected);
   collected.variants = await b('build_variants', build_variants, collected);
   await b('build_mentions_json', build_mentions_json, collected);
   collected.textrefs = await b('build_textrefs', build_textrefs, collected);

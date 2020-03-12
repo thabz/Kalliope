@@ -1,8 +1,8 @@
 // @flow
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import type { Element, Node } from 'react';
-import { Link } from '../routes';
+import { Link, Router } from '../routes';
 import Page from '../components/page.js';
 import Main from '../components/main.js';
 import { textCrumbs } from '../components/breadcrumbs.js';
@@ -32,6 +32,7 @@ import _ from '../common/translations.js';
 import ErrorPage from './error.js';
 import HelpKalliope from '../components/helpkalliope.js';
 import { pluralize } from '../common/strings.js';
+import LangContext from '../common/LangContext.js';
 import type {
   Lang,
   Poet,
@@ -43,6 +44,47 @@ import type {
   PrevNextText,
   Error,
 } from '../common/types.js';
+
+type BladrerProps = {
+  target: ?PrevNextText,
+  left?: boolean,
+  right?: boolean,
+};
+const Bladrer = (props: BladrerProps) => {
+  const { target, left, right } = props;
+  const lang = useContext(LangContext);
+
+  if (target == null) {
+    return null;
+  }
+  const onClick = e => {
+    const url = Links.textURL(lang, target.id);
+    Router.pushRoute(url);
+    window.scrollTo(0, 0);
+    e.preventDefault();
+  };
+  const style = left === true ? 'left: -20px;' : 'right: -20px;';
+  return (
+    <div onClick={onClick} title={'Gå til ' + target.title} className="bladrer">
+      <style jsx>{`
+        div.bladrer {
+          display: none;
+        }
+
+        @media (max-width: 480px) {
+          div.bladrer {
+            display: block;
+            position: absolute;
+            ${style}
+            width: 40px;
+            bottom: 0;
+            top: 0;
+          }
+        }
+      `}</style>
+    </div>
+  );
+};
 
 type KeywordLinkProps = { keyword: KeywordRef, lang: Lang };
 class KeywordLink extends React.Component<KeywordLinkProps> {
@@ -60,7 +102,7 @@ class KeywordLink extends React.Component<KeywordLinkProps> {
         return null;
     }
     return (
-      <>
+      <span>
         <Link route={url}>
           <a className="keyword-link" title={keyword.title}>
             {keyword.title}
@@ -75,7 +117,7 @@ class KeywordLink extends React.Component<KeywordLinkProps> {
             margin: 0 4px 2px 0;
           }
         `}</style>
-      </>
+      </span>
     );
   }
 }
@@ -468,7 +510,9 @@ const TextPage = (props: TextComponentProps) => {
       <FootnoteContainer key={text.id}>
         <SidebarSplit sidebar={sidebar}>
           <div>
-            <article>
+            <article style={{ position: 'relative' }}>
+              <Bladrer left target={prev} />
+              <Bladrer right target={next} />
               <div className="text-content">
                 <TextHeading text={text} lang={lang} isProse={text.is_prose} />
               </div>

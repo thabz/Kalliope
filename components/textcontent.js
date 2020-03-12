@@ -24,8 +24,9 @@ type TextContentPropsType = {
   contentHtml: ?TextContentType,
   contentLang: TextLang,
   options?: TextContentOptions,
+  inline?: boolean,
   style?: Object,
-  className?: ?string,
+  className?: string,
   keyPrefix?: string, // Ved bladring hopper linjenumrene hvis alle digtes linjer har samme key.
 };
 const TextContent = (props: TextContentPropsType) => {
@@ -316,8 +317,9 @@ const TextContent = (props: TextContentPropsType) => {
     contentLang,
     style,
     keyPrefix = 'linje-',
-    className,
+    className = '',
     options = {},
+    inline = false,
   } = props;
 
   if (contentHtml == null) {
@@ -353,7 +355,9 @@ const TextContent = (props: TextContentPropsType) => {
     const lineNum = lineOptions.num != null ? parseInt(lineOptions.num) : null;
     let className = '';
     let anchor = null;
-
+    if (inline) {
+      className += ' inline ';
+    }
     let rendered = null;
     if (options.highlight != null) {
       if (lineNum != null && lineNum === options.highlight.from) {
@@ -444,7 +448,7 @@ const TextContent = (props: TextContentPropsType) => {
   return (
     <div
       style={style}
-      className={className}
+      className={className + (inline ? ' inline' : '')}
       lang={contentLang}
       key={keyPrefix + 'outer'}>
       {/*
@@ -543,6 +547,10 @@ const TextContent = (props: TextContentPropsType) => {
         }
         :global(.text-two-columns) :global(div:last-child) {
           padding-left: 10px;
+        }
+
+        :global(.inline) {
+          display: inline;
         }
       `}</style>
     </div>

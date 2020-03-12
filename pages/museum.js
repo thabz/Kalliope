@@ -2,7 +2,7 @@
 
 import React from 'react';
 import 'isomorphic-fetch';
-import { Link, Router } from '../routes';
+import { Link } from '../routes';
 import Page from '../components/page.js';
 import Main from '../components/main.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
@@ -39,7 +39,7 @@ const MuseumPage = (props: MuseumProps) => {
   }
   const crumbs = [
     ...kalliopeCrumbs(lang),
-    { title: 'Museer' },
+    { url: Links.museumsURL(lang), title: _('Museer', lang) },
     { title: museum.name },
   ];
 

@@ -59,7 +59,7 @@ export const BurgerSVG = (props: SVGProps) => {
 
 export class LeftArrow extends React.Component<SVGProps> {
   render() {
-    const { onClick, inactive, color } = this.props;
+    const { onClick, inactive, color = 'black' } = this.props;
     const strokeColor = inactive == true ? '#888' : color;
     const className = inactive == true ? 'inactive' : 'active';
     return (
@@ -115,8 +115,8 @@ export class LeftArrow extends React.Component<SVGProps> {
 
 export class RightArrow extends React.Component<SVGProps> {
   render() {
-    const { onClick, inactive } = this.props;
-    const strokeColor = inactive == true ? '#888' : 'black';
+    const { onClick, inactive, color = 'black' } = this.props;
+    const strokeColor = inactive == true ? '#888' : color;
     const className = inactive == true ? 'inactive' : 'active';
     return (
       <svg width="30" height="30" onClick={onClick} className={className}>
