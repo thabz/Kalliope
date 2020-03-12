@@ -13,6 +13,7 @@
 'N /N',    
 'P /P',    
 'T hi/Thi',    
+'<r/æ',    
 'oeg/æg',
 'hoi/høi',
 'hoj/høj',
