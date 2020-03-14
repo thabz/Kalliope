@@ -1,7 +1,6 @@
 // @flow
 
-import 'isomorphic-fetch';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import Page from '../components/page.js';
 import { Link } from '../routes';
 import * as Links from '../components/links';
@@ -24,78 +23,13 @@ import ErrorPage from './error.js';
 import * as Client from '../common/client.js';
 import type { Lang, Country, Poet, PoetId, Error } from '../common/types.js';
 import _ from '../common/translations.js';
+import LangContext from '../common/LangContext.js';
 
-type SearchProps = {
-  lang: Lang,
-  poet: ?Poet,
-  country: Country,
-  query: string,
-  firstPageHits: [],
-  totalHits: number,
-  error: ?Error,
-};
-const SearchPage = (props: SearchProps) => {
-  const { lang, poet, country, query, totalHits, error } = props;
-  let resultPage = 0;
+const RenderedHits = (props: { hits: [] }) => {
+  const { hits } = props;
+  const lang = useContext(LangContext);
 
-  const [hits, setHits] = useState(props.firstPageHits);
-  const [isFetchingMore, setFetchingMore] = useState(false);
-
-  const fetchMoreItems = async () => {
-    if (hits.length === totalHits || isFetchingMore) {
-      return;
-    }
-    setFetchingMore(true);
-    const result = await Client.search(
-      poet != null ? poet.id : '',
-      country,
-      query,
-      resultPage + 1
-    );
-    resultPage += 1;
-    if (result.hits.total > 0 && result.hits.hits.length > 0) {
-      setHits(hits.concat(result.hits.hits));
-    }
-    setFetchingMore(false);
-  };
-
-  const scrollListener = () => {
-    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
-      const body = document.body || {};
-      const html = document.documentElement || {};
-
-      // See https://stackoverflow.com/a/1147768/1514022
-      const documentHeight = Math.max(
-        body.scrollHeight || 0,
-        body.offsetHeight || 0,
-        html.clientHeight || 0,
-        html.scrollHeight || 0,
-        html.offsetHeight || 0
-      );
-      if (window.pageYOffset + window.innerHeight > documentHeight - 600) {
-        fetchMoreItems();
-      }
-    }
-  };
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', scrollListener);
-      window.addEventListener('resize', scrollListener);
-    }
-    return () => {
-      if (typeof window !== 'undefined') {
-        window.removeEventListener('scroll', scrollListener);
-        window.removeEventListener('resize', scrollListener);
-      }
-    };
-  });
-
-  if (error != null) {
-    return <ErrorPage error={error} lang={lang} message="Søgning fejlede" />;
-  }
-
-  const items = hits
+  return hits
     .filter(x => x._source.text != null)
     .map((hit, i) => {
       const { poet, work, text } = hit._source;
@@ -168,6 +102,80 @@ const SearchPage = (props: SearchProps) => {
         </div>
       );
     });
+};
+
+type SearchProps = {
+  lang: Lang,
+  poet: ?Poet,
+  country: Country,
+  query: string,
+  initialResult: { error?: Error, hits: { hits: [], total: number } },
+};
+const SearchPage = (props: SearchProps) => {
+  const { lang, poet, country, query, initialResult } = props;
+  const totalHits = initialResult.hits.total;
+  let resultPage = 0;
+  const [error, setError] = useState(initialResult.error);
+  const [hits, setHits] = useState(initialResult.hits.hits);
+  const [isFetchingMore, setFetchingMore] = useState(false);
+
+  const fetchMoreItems = async () => {
+    if (hits.length === totalHits || isFetchingMore) {
+      return;
+    }
+    setFetchingMore(true);
+    const result = await Client.search(
+      poet != null ? poet.id : '',
+      country,
+      query,
+      resultPage + 1
+    );
+    setFetchingMore(false);
+    if (result.error != null) {
+      setError(result.error);
+    } else {
+      resultPage += 1;
+      if (result.hits.total > 0 && result.hits.hits.length > 0) {
+        setHits(hits.concat(result.hits.hits));
+      }
+    }
+  };
+
+  const scrollListener = () => {
+    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+      const body = document.body || {};
+      const html = document.documentElement || {};
+
+      // See https://stackoverflow.com/a/1147768/1514022
+      const documentHeight = Math.max(
+        body.scrollHeight || 0,
+        body.offsetHeight || 0,
+        html.clientHeight || 0,
+        html.scrollHeight || 0,
+        html.offsetHeight || 0
+      );
+      if (window.pageYOffset + window.innerHeight > documentHeight - 600) {
+        fetchMoreItems();
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', scrollListener);
+      window.addEventListener('resize', scrollListener);
+    }
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('scroll', scrollListener);
+        window.removeEventListener('resize', scrollListener);
+      }
+    };
+  });
+
+  if (error != null) {
+    return <ErrorPage error={error} lang={lang} message="Søgning fejlede" />;
+  }
 
   let resultaterOrd = null;
   let linkToFullSearch = null;
@@ -192,27 +200,9 @@ const SearchPage = (props: SearchProps) => {
     }
   }
 
-  const renderedResult = (
-    <div className="result-items">
-      <div className="result-count">
-        {resultaterBeskrivelse} {linkToFullSearch}
-      </div>
-      {items}
-      <style jsx>{`
-        .result-count {
-          margin-bottom: 30px;
-        }
-        .result-items {
-          line-height: 1.5;
-        }
-      `}</style>
-    </div>
-  );
-
-  let henterFlere = null;
-  if (isFetchingMore) {
-    henterFlere = <div style={{ marginBottom: '500px' }}>Henter flere...</div>;
-  }
+  const henterFlere = isFetchingMore ? (
+    <div style={{ marginBottom: '500px' }}>Henter flere...</div>
+  ) : null;
 
   let tabs = null;
   let headTitle = null;
@@ -243,7 +233,22 @@ const SearchPage = (props: SearchProps) => {
       country={country}
       menuItems={tabs}
       selectedMenuItem="search">
-      {renderedResult}
+      <p>{country}</p>
+      <div className="result-items">
+        <div className="result-count">
+          {resultaterBeskrivelse} {linkToFullSearch}
+        </div>
+        <RenderedHits hits={hits} />
+        <style jsx>{`
+          .result-count {
+            margin-bottom: 30px;
+          }
+          .result-items {
+            line-height: 1.5;
+          }
+        `}</style>
+      </div>
+
       {henterFlere}
     </Page>
   );
@@ -261,10 +266,8 @@ SearchPage.getInitialProps = async ({
     lang,
     country,
     query,
-    totalHits: result.hits.total,
-    firstPageHits: result.hits.hits,
+    initialResult: result,
     poet,
-    error: result.error,
   };
 };
 
