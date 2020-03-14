@@ -190,11 +190,11 @@ export const search = async (
   query: string,
   page: number = 0
 ): FetchSearchResult => {
-  let URL = `/search?country=${country}&query=${query}&page=${page}`;
+  let URL = `http://10.0.0.5:3000/search?country=${country}&query=${query}&page=${page}`;
   if (poetId != null) {
     URL += `&poetId=${poetId}`;
   }
-  const res = await fetch(createURL(URL));
+  const res = await fetch(URL);
   return (await res.json(): FetchSearchResult);
 };
 

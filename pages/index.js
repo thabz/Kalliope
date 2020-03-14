@@ -223,6 +223,7 @@ Index.getInitialProps = async ({
   if (lang == null) {
     lang = 'da';
   }
+  const country = lang === 'da' ? 'dk' : 'gb';
   let dayAndMonth = date;
   let pagingContext = null;
   if (dayAndMonth == null) {
@@ -254,7 +255,7 @@ Index.getInitialProps = async ({
   const todaysEvents: Array<TimelineItem> = await todayResponse.json();
   const news: Array<NewsItem> = await newsResponse.json();
 
-  return { lang, news, todaysEvents, pagingContext };
+  return { lang, country, news, todaysEvents, pagingContext };
 };
 
 export default Index;
