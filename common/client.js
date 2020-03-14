@@ -182,7 +182,8 @@ export const text = async (textId: string): FetchTextResult => {
 };
 
 type FetchSearchResult = Promise<{
-  hits: any,
+  hits: { hits: [], total: number },
+  error: ?Error,
 }>;
 export const search = async (
   poetId: string = '',
