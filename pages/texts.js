@@ -127,6 +127,7 @@ const TextsPage = (props: TextsProps) => {
       crumbs={poetCrumbsWithTitle(lang, poet, lastCrumbTitle)}
       pageTitle={<PoetName poet={poet} includePeriod />}
       menuItems={poetMenu(poet)}
+      poet={poet}
       selectedMenuItem={type}>
       {renderedGroups}
     </Page>

@@ -321,6 +321,7 @@ const BioPage = (props: BioProps) => {
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Biografi', lang)}
       menuItems={poetMenu(poet)}
+      poet={poet}
       selectedMenuItem="bio">
       <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
         <div style={{ lineHeight: '1.6' }}>

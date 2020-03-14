@@ -251,6 +251,7 @@ const SearchPage = (props: SearchProps) => {
       query={query}
       country={country}
       menuItems={tabs}
+      poet={poet}
       selectedMenuItem="search">
       <div className="result-items">
         <div className="result-count">
