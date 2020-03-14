@@ -190,7 +190,7 @@ const SearchPage = (props: SearchProps) => {
       }
     };
     asyncLoad();
-  }, [query]);
+  }, [query, poet]);
 
   if (error != null) {
     return <ErrorPage error={error} lang={lang} message="Søgning fejlede" />;
