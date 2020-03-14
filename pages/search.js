@@ -113,11 +113,11 @@ type SearchProps = {
 };
 const SearchPage = (props: SearchProps) => {
   const { lang, poet, country, query, initialResult } = props;
-  const totalHits = initialResult.hits.total;
   let resultPage = 0;
   const [error, setError] = useState(initialResult.error);
   const [hits, setHits] = useState(initialResult.hits.hits);
   const [isFetchingMore, setFetchingMore] = useState(false);
+  const [totalHits, setTotalHits] = useState(initialResult.hits.total);
 
   const fetchMoreItems = async () => {
     if (hits.length === totalHits || isFetchingMore) {
@@ -172,6 +172,25 @@ const SearchPage = (props: SearchProps) => {
       }
     };
   });
+
+  useEffect(() => {
+    const asyncLoad = async () => {
+      const result = await Client.search(
+        poet != null ? poet.id : '',
+        country,
+        query,
+        0
+      );
+      resultPage = 0;
+      if (result.error != null) {
+        setError(result.error);
+      } else {
+        setHits(result.hits.hits);
+        setTotalHits(result.hits.total);
+      }
+    };
+    asyncLoad();
+  }, [query]);
 
   if (error != null) {
     return <ErrorPage error={error} lang={lang} message="Søgning fejlede" />;
@@ -233,7 +252,6 @@ const SearchPage = (props: SearchProps) => {
       country={country}
       menuItems={tabs}
       selectedMenuItem="search">
-      <p>{country}</p>
       <div className="result-items">
         <div className="result-count">
           {resultaterBeskrivelse} {linkToFullSearch}
