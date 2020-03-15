@@ -747,7 +747,9 @@ Vil I mine Stjerner være,
     <toctitle>Schwab: Digter-Veer</toctitle>
     <firstline>Ikke veed jeg hvad jeg vil</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Schwab) -->
+    <notes>
+        <note unknown-original-by="schwab" />
+    </notes>
     <source pages="32"/>
 </head>
 <body>
