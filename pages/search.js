@@ -98,6 +98,9 @@ const RenderedHits = (props: { hits: [] }) => {
             .result-item {
               margin-bottom: 20px;
             }
+            .result-item::before {
+              content: "${i + 1}"
+            }
           `}</style>
         </div>
       );
@@ -109,18 +112,17 @@ type SearchProps = {
   poet: ?Poet,
   country: Country,
   query: string,
-  initialResult: { error?: Error, hits: { hits: [], total: number } },
 };
 const SearchPage = (props: SearchProps) => {
-  const { lang, poet, country, query, initialResult } = props;
-  let resultPage = 0;
-  const [error, setError] = useState(initialResult.error);
-  const [hits, setHits] = useState(initialResult.hits.hits);
+  const { lang, poet, country, query } = props;
+  const [error, setError] = useState(null);
+  const [hits, setHits] = useState([]);
   const [isFetchingMore, setFetchingMore] = useState(false);
-  const [totalHits, setTotalHits] = useState(initialResult.hits.total);
+  const [totalHits, setTotalHits] = useState(0);
+  const [resultPage, setResultPage] = useState(0);
 
   const fetchMoreItems = async () => {
-    if (hits.length === totalHits || isFetchingMore) {
+    if (isFetchingMore || hits.length >= totalHits) {
       return;
     }
     setFetchingMore(true);
@@ -134,7 +136,7 @@ const SearchPage = (props: SearchProps) => {
     if (result.error != null) {
       setError(result.error);
     } else {
-      resultPage += 1;
+      setResultPage(resultPage + 1);
       if (result.hits.total > 0 && result.hits.hits.length > 0) {
         setHits(hits.concat(result.hits.hits));
       }
@@ -181,10 +183,10 @@ const SearchPage = (props: SearchProps) => {
         query,
         0
       );
-      resultPage = 0;
       if (result.error != null) {
         setError(result.error);
       } else {
+        setResultPage(0);
         setHits(result.hits.hits);
         setTotalHits(result.hits.total);
       }
@@ -210,7 +212,11 @@ const SearchPage = (props: SearchProps) => {
     const genetive = poetGenetiveLastName(poet, lang);
     resultaterBeskrivelse += ` i ${genetive} værker.`;
     const fullSearchURL = Links.searchURL(lang, query, country);
-    linkToFullSearch = <Link route={fullSearchURL}>Søg i hele Kalliope.</Link>;
+    linkToFullSearch = (
+      <Link route={fullSearchURL}>
+        <a>Søg i hele Kalliope.</a>
+      </Link>
+    );
   } else if (country != 'dk') {
     const countryData = CommonData.countries.filter(x => x.code === country);
     if (countryData.length > 0) {
@@ -278,14 +284,11 @@ SearchPage.getInitialProps = async ({
 }: {
   query: { lang: Lang, country: Country, poetId?: PoetId, query: string },
 }) => {
-  const result = await Client.search(poetId, country, query, 0);
   const poet = await Client.poet(poetId);
-
   return {
     lang,
     country,
     query,
-    initialResult: result,
     poet,
   };
 };
