@@ -16,7 +16,8 @@ import WorkName from '../components/workname.js';
 import Picture from '../components/picture.js';
 import TextContent from '../components/textcontent.js';
 import SplitWhenSmall from '../components/split-when-small.js';
-import FormattedDate, {
+import {
+  formattedDate,
   parseDate,
   extractYear,
 } from '../components/formatteddate.js';
@@ -51,9 +52,7 @@ const dateAndPlace = (
   if (datePlace.date === '?') {
     result.push(_('Ukendt år', lang));
   } else {
-    result.push(
-      <FormattedDate key={datePlace.date} date={datePlace.date} lang={lang} />
-    );
+    result.push(formattedDate(datePlace.date));
   }
   if (datePlace.place != null) {
     result.push(<span key="place">{', ' + datePlace.place}</span>);
