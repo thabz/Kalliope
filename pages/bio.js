@@ -221,7 +221,12 @@ class Timeline extends React.Component<TimelineProps> {
     let prevYear = null;
     const items = timeline.map((item, i) => {
       const curYear = item.date.substring(0, 4);
-      const year = curYear !== prevYear ? <div>{curYear}</div> : null;
+      const year =
+        curYear !== prevYear ? (
+          <div>
+            <FormattedDate date={item.date} lang={lang} />
+          </div>
+        ) : null;
       prevYear = curYear;
 
       let html = null;
