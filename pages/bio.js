@@ -16,7 +16,10 @@ import WorkName from '../components/workname.js';
 import Picture from '../components/picture.js';
 import TextContent from '../components/textcontent.js';
 import SplitWhenSmall from '../components/split-when-small.js';
-import FormattedDate, { parseDate } from '../components/formatteddate.js';
+import FormattedDate, {
+  parseDate,
+  extractYear,
+} from '../components/formatteddate.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
@@ -218,16 +221,14 @@ class Timeline extends React.Component<TimelineProps> {
     if (timeline.length === 0) {
       return null;
     }
-    let prevYear = null;
+    let prevYearNumeric = null;
     const items = timeline.map((item, i) => {
-      const curYear = item.date.substring(0, 4);
-      const year =
-        curYear !== prevYear ? (
-          <div>
-            <FormattedDate date={item.date} lang={lang} />
-          </div>
-        ) : null;
-      prevYear = curYear;
+      const [curYearFormatted, curYearNumeric] = extractYear(item.date);
+      let year = null;
+      if (prevYearNumeric !== curYearNumeric) {
+        year = curYearFormatted;
+      }
+      prevYearNumeric = curYearNumeric;
 
       let html = null;
       if (item.type === 'image' && item.src != null) {

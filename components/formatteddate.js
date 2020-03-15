@@ -89,4 +89,57 @@ const FormattedDate = (props: FormattedDateProps) => {
   );
 };
 
+export const extractYear = (date: string) => {
+  let m = null,
+    numericYear = null,
+    prefix = '';
+  if (date == null || date === '?') {
+    return ['Ukendt år', null, true];
+  } else if ((m = date.match(/(\d\d\d\d)/))) {
+    numericYear = parseInt(m[1]);
+  }
+  if ((m = date.match(/ca/i))) {
+    prefix = 'c. ';
+  }
+  if (numericYear == null) {
+    return ['Ukendt år', null, true];
+  }
+  return [`${prefix}${numericYear}`, numericYear, prefix !== ''];
+};
+
+export const formattedYear = (date: string) => {
+  const [formatted] = extractYear(date);
+  return formatted;
+};
+
+export const formattedYearRange = (born: string, dead: string) => {
+  const [
+    bornYearFormatted,
+    bornYearNumeric,
+    bornYearApproximated,
+  ] = extractYear(born);
+  const [
+    deadYearFormatted,
+    deadYearNumeric,
+    deadYearApproximated,
+  ] = extractYear(dead);
+  if (bornYearNumeric == null && deadYearNumeric == null) {
+    return '(Ukendt levetid)';
+  } else {
+    let deadYearShortened = deadYearFormatted;
+    if (
+      !deadYearApproximated &&
+      !bornYearApproximated &&
+      bornYearNumeric != null &&
+      bornYearNumeric > 1000 &&
+      deadYearNumeric != null &&
+      deadYearNumeric > 1000 &&
+      deadYearFormatted.substring(0, 2) === bornYearFormatted.substring(0, 2)
+    ) {
+      deadYearShortened = deadYearFormatted.substring(2, 4);
+    }
+    return `(${bornYearFormatted}–${deadYearShortened.toLowerCase()})`;
+  }
+};
+
 export default FormattedDate;
