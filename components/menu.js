@@ -1,5 +1,5 @@
 // @flow
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { Link, Router } from '../routes';
 import * as Links from './links.js';
 import { poetGenetiveLastName } from './poetname-helpers.js';
@@ -19,56 +19,45 @@ type TabsProps = {
   query?: ?string,
   selected: string,
 };
-type TabsState = {
-  showSearchField: boolean,
-};
-export default class Tabs extends React.Component<TabsProps, TabsState> {
-  searchField: HTMLInputElement;
-  onLoupeClick: (e: Event) => void;
-  onCrossClick: (e: Event) => void;
-  onSubmit: (e: Event) => void;
-  onKeyDown: (e: KeyboardEvent) => void;
-  onFocus: () => void;
-  onBlur: () => void;
+const Tabs = (props: TabsProps) => {
+  let searchField: HTMLInputElement;
 
-  constructor(props: TabsProps) {
-    super(props);
-    const { query } = props;
-    this.state = { showSearchField: query != null && query.length > 0 };
-    this.onLoupeClick = this.onLoupeClick.bind(this);
-    this.onCrossClick = this.onCrossClick.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
-    this.onKeyDown = this.onKeyDown.bind(this);
-    this.onBlur = this.onBlur.bind(this);
-    this.onFocus = this.onFocus.bind(this);
+  const { items, selected, poet, lang, query } = props;
+  let country = props.country;
+  if (country == null) {
+    country = lang === 'da' ? 'dk' : 'gb';
   }
 
-  hideSearchField() {
-    this.searchField.value = '';
+  const [showSearchField, setShowSearchField] = useState(
+    query != null && query.length > 0
+  );
+
+  const hideSearchField = () => {
+    searchField.value = '';
     if (window) {
-      window.removeEventListener('keydown', this.onKeyDown, false);
+      window.removeEventListener('keydown', onKeyDown, false);
     }
-    this.setState({ showSearchField: false });
-  }
+    setShowSearchField(false);
+  };
 
-  componentDidUpdate() {
-    if (this.state.showSearchField) {
+  useEffect(() => {
+    if (showSearchField) {
       if (window) {
-        window.addEventListener('keydown', this.onKeyDown, false);
+        window.addEventListener('keydown', onKeyDown, false);
       }
-      if (document && document.activeElement !== this.searchField) {
-        this.searchField.focus();
+      if (document && document.activeElement !== searchField) {
+        searchField.focus();
       }
     }
-  }
+    return () => {
+      if (window) {
+        window.removeEventListener('keydown', onKeyDown, false);
+      }
+    };
+  }, [showSearchField]);
 
-  showSeachField() {
-    this.setState({ showSearchField: true });
-  }
-
-  onSubmit(e: Event) {
-    const q = this.searchField.value;
-    const { poet, country, lang } = this.props;
+  const onSubmit = (e: Event) => {
+    const q = searchField.value;
     let URL = null;
     if (poet != null && poet.has_texts) {
       URL = Links.searchURL(lang, q, poet.country, poet.id);
@@ -76,153 +65,146 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
       URL = Links.searchURL(lang, q, country);
     }
     if (document) {
-      this.searchField.blur();
+      searchField.blur();
     }
     Router.pushRoute(URL);
     e.preventDefault();
-  }
+  };
 
-  onLoupeClick(e: Event) {
-    if (this.state.showSearchField) {
-      const q = this.searchField.value;
+  const onLoupeClick = (e: Event) => {
+    if (showSearchField) {
+      const q = searchField.value;
       if (q.length === 0) {
         // When the text input is empty, the loupe
         // should simply toggle seach mode.
-        this.hideSearchField();
+        hideSearchField();
       } else {
-        this.onSubmit(e);
+        onSubmit(e);
       }
     } else {
-      this.showSeachField();
+      setShowSearchField(true);
     }
     e.preventDefault();
-  }
+  };
 
-  onCrossClick(e: MouseEvent) {
-    this.hideSearchField();
+  const onCrossClick = (e: MouseEvent) => {
+    hideSearchField();
     e.preventDefault();
-  }
+  };
 
-  onFocus() {
+  const onFocus = () => {
     window && (window.searchFieldHasFocus = true);
-  }
+  };
 
-  onBlur() {
+  const onBlur = () => {
     window && (window.searchFieldHasFocus = false);
-  }
+  };
 
-  onKeyDown(e: KeyboardEvent) {
+  const onKeyDown = (e: KeyboardEvent) => {
     if (e.keyCode === 27) {
-      this.hideSearchField();
-      this.onBlur();
+      setShowSearchField(false);
+      onBlur();
       e.preventDefault();
     }
-  }
+  };
 
-  render() {
-    const { items, selected, poet, country, lang, query } = this.props;
-    let placeholder = null;
-    if (poet != null && poet.has_texts) {
-      const genetiveLastName = poetGenetiveLastName(poet, lang);
-      placeholder = _('Søg i {genetiveLastName} værker', lang, {
-        genetiveLastName,
-      });
+  let placeholder = null;
+  if (poet != null && poet.has_texts) {
+    const genetiveLastName = poetGenetiveLastName(poet, lang);
+    placeholder = _('Søg i {genetiveLastName} værker', lang, {
+      genetiveLastName,
+    });
+  } else {
+    if (country === 'dk') {
+      placeholder = _('Søg i Kalliope', lang);
     } else {
-      if (country === 'dk') {
-        placeholder = _('Søg i Kalliope', lang);
+      const countryData = CommonData.countries.filter(x => x.code === country);
+      if (countryData.length > 0) {
+        const adjective = countryData[0].adjective[lang];
+        placeholder = _('Søg i Kalliopes {adjective} samling', lang, {
+          adjective,
+        });
       } else {
-        const countryData = CommonData.countries.filter(
-          x => x.code === country
-        );
-        if (countryData.length > 0) {
-          const adjective = countryData[0].adjective[lang];
-          placeholder = _('Søg i Kalliopes {adjective} samling', lang, {
-            adjective,
-          });
-        } else {
-          placeholder = _('Søg i Kalliope', lang);
-        }
+        placeholder = _('Søg i Kalliope', lang);
       }
     }
-    const searchField = (
-      <div style={{ display: 'flex' }}>
-        <div style={{ flexGrow: 1 }}>
-          <form onSubmit={this.onSubmit}>
-            <label htmlFor="search-field-id" style={{ display: 'none' }}>
-              Søg
-            </label>
-            <input
-              id="search-field-id"
-              ref={domElement => {
-                if (domElement != null) {
-                  this.searchField = domElement;
-                }
-              }}
-              onFocus={this.onFocus}
-              onBlur={this.onBlur}
-              title={placeholder}
-              defaultValue={query}
-              className="search-field"
-              placeholder={placeholder}
-            />
-          </form>
-        </div>
-        <div
-          className="svg-container"
-          onClick={this.onCrossClick}
-          style={{
-            cursor: 'pointer',
-          }}>
-          <CrossSVG color="black" />
-        </div>
+  }
+  const searchFieldRendered = (
+    <div style={{ display: 'flex' }}>
+      <div style={{ flexGrow: 1 }}>
+        <form onSubmit={onSubmit}>
+          <label htmlFor="search-field-id" style={{ display: 'none' }}>
+            Søg
+          </label>
+          <input
+            id="search-field-id"
+            ref={domElement => {
+              if (domElement != null) {
+                searchField = domElement;
+              }
+            }}
+            onFocus={onFocus}
+            onBlur={onBlur}
+            title={placeholder}
+            defaultValue={query}
+            className="search-field"
+            placeholder={placeholder}
+          />
+        </form>
       </div>
-    );
-
-    const itemsRendered = items
-      .filter(item => !item.hide)
-      .map((item, i) => {
-        const className = item.id === selected ? 'tab selected' : 'tab';
-        return (
-          <div className={className} key={item.url}>
-            <Link route={item.url}>
-              <a>
-                <h2>{item.title}</h2>
-              </a>
-            </Link>
-          </div>
-        );
-      });
-
-    const leftSide = (
-      <div className="leftside">
-        <nav
-          className="tabs"
-          style={{
-            display: this.state.showSearchField ? 'none' : 'flex',
-          }}>
-          {itemsRendered}
-        </nav>
-        <div
-          className="searchfield-container"
-          style={{
-            display: this.state.showSearchField ? 'block' : 'none',
-          }}>
-          {searchField}
-        </div>
+      <div
+        className="svg-container"
+        style={{
+          cursor: 'pointer',
+        }}>
+        <CrossSVG color="black" onClick={onCrossClick} />
       </div>
-    );
+    </div>
+  );
 
-    const loupeColor = this.state.showSearchField ? 'black' : '#707070';
-
-    return (
-      <div className="tabs-container">
-        {leftSide}
-        <div className="svg-container" style={{ alignSelf: 'flex-start' }}>
-          <span onClick={this.onLoupeClick} style={{ cursor: 'pointer' }}>
-            <LoupeSVG color={loupeColor} />
-          </span>
+  const itemsRendered = items
+    .filter(item => !item.hide)
+    .map((item, i) => {
+      const className = item.id === selected ? 'tab selected' : 'tab';
+      return (
+        <div className={className} key={item.url}>
+          <Link route={item.url}>
+            <a>
+              <h2>{item.title}</h2>
+            </a>
+          </Link>
         </div>
-        <style jsx>{`
+      );
+    });
+
+  const leftSide = (
+    <div className="leftside">
+      <nav
+        className="tabs"
+        style={{
+          display: showSearchField ? 'none' : 'flex',
+        }}>
+        {itemsRendered}
+      </nav>
+      <div
+        className="searchfield-container"
+        style={{
+          display: showSearchField ? 'block' : 'none',
+        }}>
+        {searchFieldRendered}
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="tabs-container">
+      {leftSide}
+      <div className="svg-container" style={{ alignSelf: 'flex-start' }}>
+        <span onClick={onLoupeClick} style={{ cursor: 'pointer' }}>
+          <LoupeSVG color={showSearchField ? 'black' : '#707070'} />
+        </span>
+      </div>
+      <style jsx>{`
           .tabs-container {
             display: flex;
             justify-content: space-between;
@@ -323,10 +305,11 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
             }
           }
         `}</style>
-      </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default Tabs;
 
 export const poetMenu = (poet: Poet) => {
   const lang = useContext(LangContext);

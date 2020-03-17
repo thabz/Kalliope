@@ -221,6 +221,7 @@ const WorksPage = (props: WorksProps) => {
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
+      poet={poet}
       selectedMenuItem="works">
       <div className="two-columns">
         <WorksList lang={lang} poet={poet} works={works} />

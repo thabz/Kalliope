@@ -1,4 +1,4 @@
-import { poetNameString } from './poetname-helpers.js';
+import { poetNameString } from '../components/poetname-helpers.js';
 
 describe('String method', () => {
   it('outputs correctly when having full name and period', () => {
