@@ -3,12 +3,16 @@ const {
   loadCachedJSON,
   writeCachedJSON,
   markFileDirty,
+  force_reload: globalForceReload,
 } = require('../libs/caching.js');
 const { fileExists } = require('../libs/helpers.js');
 const { loadXMLDoc, safeGetAttr, getElementsByTagNames } = require('./xml.js');
 
 const build_variants = collected => {
-  let variants_map = new Map(loadCachedJSON('collected.variants') || []);
+  let variants_map = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.variants') || []);
+  const force_reload = variants_map.size === 0;
 
   register_variant = (from, to) => {
     let array = variants_map.get(from) || [];
@@ -24,7 +28,7 @@ const build_variants = collected => {
       if (!fileExists(filename)) {
         return;
       }
-      if (!isFileModified(filename)) {
+      if (!force_reload && !isFileModified(filename)) {
         return;
       }
       let doc = loadXMLDoc(filename);

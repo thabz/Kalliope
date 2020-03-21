@@ -8,6 +8,7 @@ const {
   isFileModified,
   markFileDirty,
   refreshFilesModifiedCache,
+  force_reload: globalForceReload,
   loadCachedJSON,
   writeCachedJSON,
 } = require('./libs/caching.js');
@@ -154,14 +155,16 @@ const build_bio_json = async collected => {
 };
 
 const build_poet_workids = () => {
-  let collected_workids = new Map(loadCachedJSON('collected.workids') || []);
+  let collected_workids = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.workids') || []);
   let found_changes = false;
   all_poet_ids().forEach(poetId => {
     const infoFilename = `fdirs/${poetId}/info.xml`;
     if (!fs.existsSync(infoFilename)) {
       throw new Error(`Missing info.xml in fdirs/${poetId}.`);
     }
-    if (isFileModified(infoFilename)) {
+    if (globalForceReload || isFileModified(infoFilename)) {
       const doc = loadXMLDoc(infoFilename);
       const workIds = safeGetText(doc, 'works') || '';
       let items = workIds.split(',').filter(x => x.length > 0);
@@ -568,8 +571,12 @@ const handle_work = async work => {
 // Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
 const works_first_pass = collected => {
-  const texts = new Map(loadCachedJSON('collected.texts') || []);
-  const works = new Map(loadCachedJSON('collected.works') || []);
+  const texts = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.texts') || []);
+  const works = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.works') || []);
 
   let found_changes = false;
   const force_reload = texts.size === 0 || works.size === 0;

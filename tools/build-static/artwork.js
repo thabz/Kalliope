@@ -4,6 +4,7 @@ const {
   loadCachedJSON,
   writeCachedJSON,
   markFileDirty,
+  globalForceReload,
 } = require('../libs/caching.js');
 const { imageSizeSync } = require('./image.js');
 const {
@@ -18,7 +19,9 @@ const { get_picture } = require('./parsing.js');
 const { build_museum_url } = require('./museums.js');
 
 const build_artwork = async collected => {
-  let collected_artwork = new Map(loadCachedJSON('collected.artwork') || []);
+  let collected_artwork = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.artwork') || []);
   const force_reload = collected_artwork.size == 0;
 
   const promises = [];
