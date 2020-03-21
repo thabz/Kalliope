@@ -48,6 +48,9 @@ const update_elasticsearch = collected => {
           `${poetId}-${workId}`,
           data
         );
+	if (workBody == null) {
+            return;
+	}
         getChildrenByTagNames(workBody, ['poem', 'prose', 'section']).forEach(
           text => {
             const textId = safeGetAttr(text, 'id');
