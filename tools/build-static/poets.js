@@ -3,6 +3,7 @@ const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
+  force_reload: globalForceReload,
 } = require('../libs/caching.js');
 const {
   fileExists,
@@ -68,9 +69,11 @@ const build_poets_json = collected => {
     };
   };
 
-  let collected_poets = new Map(loadCachedJSON('collected.poets') || []);
+  let collected_poets = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.poets') || []);
+  const force_reload = collected_poets.size === 0;
   let found_changes = false;
-
   all_poet_ids().forEach(id => {
     const infoFilename = `fdirs/${id}/info.xml`;
     if (!fs.existsSync(infoFilename)) {
@@ -83,7 +86,7 @@ const build_poets_json = collected => {
       `fdirs/${id}/artwork.xml`,
       `fdirs/${id}/portraits.xml`,
     ];
-    if (!isFileModified(...relevantFiles)) {
+    if (!force_reload && !isFileModified(...relevantFiles)) {
       return;
     }
     found_changes = true;

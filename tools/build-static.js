@@ -8,6 +8,7 @@ const {
   isFileModified,
   markFileDirty,
   refreshFilesModifiedCache,
+  force_reload: globalForceReload,
   loadCachedJSON,
   writeCachedJSON,
 } = require('./libs/caching.js');
@@ -76,6 +77,7 @@ const {
 } = require('./build-static/lines.js');
 const {
   build_museums,
+  build_museum_pages,
   build_museum_url,
 } = require('./build-static/museums.js');
 const {
@@ -153,14 +155,16 @@ const build_bio_json = async collected => {
 };
 
 const build_poet_workids = () => {
-  let collected_workids = new Map(loadCachedJSON('collected.workids') || []);
+  let collected_workids = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.workids') || []);
   let found_changes = false;
   all_poet_ids().forEach(poetId => {
     const infoFilename = `fdirs/${poetId}/info.xml`;
     if (!fs.existsSync(infoFilename)) {
       throw new Error(`Missing info.xml in fdirs/${poetId}.`);
     }
-    if (isFileModified(infoFilename)) {
+    if (globalForceReload || isFileModified(infoFilename)) {
       const doc = loadXMLDoc(infoFilename);
       const workIds = safeGetText(doc, 'works') || '';
       let items = workIds.split(',').filter(x => x.length > 0);
@@ -567,8 +571,12 @@ const handle_work = async work => {
 // Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
 const works_first_pass = collected => {
-  const texts = new Map(loadCachedJSON('collected.texts') || []);
-  const works = new Map(loadCachedJSON('collected.works') || []);
+  const texts = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.texts') || []);
+  const works = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.works') || []);
 
   let found_changes = false;
   const force_reload = texts.size === 0 || works.size === 0;
@@ -811,19 +819,9 @@ const build_poet_works_json = collected => {
 
     let artwork = [];
     if (poet.has_artwork) {
-      artwork = Array.from(collected.artwork.values())
-        .filter(a => a.artistId === poetId)
-        .map(picture => {
-          return {
-            lang: picture.lang,
-            src: picture.src,
-            size: picture.size,
-            content_lang: picture.content_lang,
-            content_html: picture.content_html,
-            subjects: picture.subjects,
-            year: picture.year,
-          };
-        });
+      artwork = Array.from(collected.artwork.values()).filter(
+        a => a.artistId === poetId
+      );
     }
 
     const objectToWrite = {
@@ -886,6 +884,7 @@ const build_image_thumbnails = async () => {
 
 const main = async () => {
   safeMkdir(`static/api`);
+  collected.museums = await b('build_museums', build_museums, collected);
   collected.workids = await b('build_poet_workids', build_poet_workids);
   const { works, texts } = await b(
     'works_first_pass',
@@ -911,7 +910,7 @@ const main = async () => {
     collected
   );
   collected.artwork = await b('build_artwork', build_artwork, collected);
-  await b('build_museums', build_museums, collected);
+  await b('build_museum_pages', build_museum_pages, collected);
   collected.variants = await b('build_variants', build_variants, collected);
   await b('build_mentions_json', build_mentions_json, collected);
   collected.textrefs = await b('build_textrefs', build_textrefs, collected);

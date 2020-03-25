@@ -3,7 +3,7 @@ const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-  force_reload,
+  force_reload: globalForceReload,
   markFileDirty,
 } = require('../libs/caching.js');
 const {
@@ -14,8 +14,11 @@ const {
 } = require('./xml.js');
 
 const build_textrefs = collected => {
-  let textrefs = new Map(loadCachedJSON('collected.textrefs') || []);
+  let textrefs = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.textrefs') || []);
   const force_reload = textrefs.size == 0;
+
   let found_changes = false;
   const regexps = [
     /xref\s.*?poem="([^",]*)/g,
@@ -64,7 +67,7 @@ const build_textrefs = collected => {
 };
 
 const mark_ref_destinations_dirty = collected => {
-  if (force_reload) {
+  if (globalForceReload) {
     // All destination files are marked dirty already
     return;
   }

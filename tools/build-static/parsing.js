@@ -1,10 +1,6 @@
 const entities = require('entities');
 const { htmlToXml } = require('../libs/helpers.js');
-const {
-  build_museum_link,
-  build_museum_url,
-  get_museum_json,
-} = require('./museums.js');
+const { build_museum_link, build_museum_url } = require('./museums.js');
 const {
   getChildByTagName,
   getChildrenByTagName,
@@ -60,8 +56,18 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
   const ref = safeGetAttr(pictureNode, 'ref');
   const year = safeGetAttr(pictureNode, 'year');
   const museumId = safeGetAttr(pictureNode, 'museum');
-  const remoteUrl = build_museum_url(pictureNode);
-  const museumLink = build_museum_link(pictureNode) || '';
+  const clipPath = safeGetAttr(pictureNode, 'clip-path');
+  const remoteUrl = build_museum_url(pictureNode, collected);
+  let description = null;
+  let note = null;
+  if (getChildByTagName(pictureNode, 'description') != null) {
+    description = safeGetInnerXML(
+      getChildByTagName(pictureNode, 'description')
+    );
+    note = safeGetInnerXML(getChildByTagName(pictureNode, 'picture-note'));
+  } else {
+    description = safeTrim(safeGetInnerXML(pictureNode));
+  }
   if (src != null) {
     const lang = safeGetAttr(pictureNode, 'lang') || 'da';
     if (src.charAt(0) !== '/') {
@@ -71,14 +77,13 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       lang,
       src,
       year,
+      clipPath,
       size: await imageSizeSync(src.replace(/^\//, '')),
       remoteUrl,
-      museum: get_museum_json(museumId),
+      museum: collected.museums.get(museumId),
       content_lang: 'da',
-      content_html: htmlToXml(
-        safeTrim(safeGetInnerXML(pictureNode)) + museumLink,
-        collected
-      ),
+      content_html: htmlToXml(description, collected),
+      note_html: htmlToXml(note, collected),
       primary,
     };
   } else if (ref != null) {
@@ -90,25 +95,18 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       onError(`fandt en ref "${ref}" som ikke matcher noget kendt billede.`);
     }
     const artist = collected.poets.get(artwork.artistId);
-    const museumId = safeGetAttr(pictureNode, 'museum');
-    const remoteUrl = build_museum_url(pictureNode);
-    let description = `<a poet="${artist.id}">${poetName(artist)}</a>: ${
-      artwork.content_raw
-    }`;
-    const extraDescription = safeTrim(safeGetInnerXML(pictureNode));
-    if (extraDescription.length > 0) {
-      description = extraDescription + '\n\n' + description;
-    }
     return {
       artist,
       lang: artwork.lang,
       src: artwork.src,
       year,
+      clipPath,
       size: await imageSizeSync(artwork.src.replace(/^\//, '')),
-      remoteUrl,
-      museum: get_museum_json(museumId),
+      remoteUrl: artwork.remoteUrl,
+      museum: artwork.museum,
       content_lang: artwork.content_lang,
-      content_html: htmlToXml(description, collected),
+      content_html: htmlToXml(artwork.content_raw, collected),
+      note_html: htmlToXml(description, collected),
       primary,
     };
   }

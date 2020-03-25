@@ -90,6 +90,9 @@ const htmlToXml = (
   isBible = false,
   isFolkevise = false
 ) => {
+  if (html == null) {
+    return null;
+  }
   const regexp = /<xref.*?(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
   if (isPoetry && !isBible && !isFolkevise) {
     // Marker strofe numre

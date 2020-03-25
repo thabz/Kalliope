@@ -4,10 +4,96 @@ import type { PictureItem, Lang, TextLang } from '../common/types.js';
 import TextContent from './textcontent.js';
 import PictureOverlay from './pictureoverlay.js';
 import CommonData from '../common/commondata.js';
+import PoetName from './poetname.js';
+import * as Links from './links.js';
+import Stack from './stack.js';
 import * as Strings from '../common/strings.js';
+import LangContext from '../common/LangContext.js';
+import { Link } from '../routes';
+
+type FigCaptionProps = {
+  picture: PictureItem,
+  className?: string,
+  hideArtist?: boolean,
+  hideMuseum?: boolean,
+};
+const FigCaption = (props: FigCaptionProps) => {
+  const { picture, hideArtist = false, hideMuseum = false } = props;
+  const lang = useContext(LangContext);
+
+  let artistRendered = null;
+  if (!hideArtist && picture.artist != null) {
+    artistRendered = (
+      <>
+        <Link route={Links.poetURL(lang, picture.artist.id)}>
+          <a>
+            <PoetName poet={picture.artist} />
+          </a>
+        </Link>
+        {': '}
+      </>
+    );
+  }
+
+  let remoteLink = null;
+  if (picture.remoteUrl != null) {
+    remoteLink = <a href={picture.remoteUrl}>⌘</a>;
+  }
+
+  let museumRendered = null;
+  if (!hideMuseum && picture.museum != null) {
+    const name = picture.museum.name;
+    if (name) {
+      museumRendered = (
+        <>
+          {' '}
+          <Link route={Links.museumURL(lang, picture.museum.id)}>{name}</Link>
+          {'. '}
+        </>
+      );
+    }
+  }
+
+  let noteRendered = null;
+  if (picture.note_html != null) {
+    noteRendered = (
+      <TextContent
+        contentHtml={picture.note_html}
+        contentLang={picture.content_lang || 'da'}
+      />
+    );
+  }
+
+  return (
+    <figcaption>
+      <Stack>
+        <div>
+          {artistRendered}
+          <TextContent
+            inline={true}
+            contentHtml={picture.content_html}
+            contentLang={picture.content_lang || 'da'}
+          />
+          {museumRendered}
+          {remoteLink}
+        </div>
+        {noteRendered}
+      </Stack>
+      <style jsx>{`
+        figcaption {
+          margin-top: 8px;
+          font-size: 16px;
+          line-height: 1.4;
+        }
+      `}</style>
+    </figcaption>
+  );
+};
 
 type PictureProps = {
   pictures: Array<PictureItem>,
+  hideArtist?: boolean,
+  hideMuseum?: boolean,
   startIndex?: number,
   showDropShadow?: boolean,
   clickToZoom?: boolean,
@@ -16,12 +102,13 @@ type PictureProps = {
 const Picture = ({
   pictures,
   contentLang,
+  hideArtist = false,
+  hideMuseum = false,
   showDropShadow = true,
   clickToZoom = true,
   startIndex = 0,
 }: PictureProps) => {
   const [overlayShown, showOverlay] = useState(false);
-
   const picture = pictures[startIndex];
   const src = picture.src;
   const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
@@ -57,6 +144,18 @@ const Picture = ({
     pictureClassName += ' clickable';
   }
 
+  let clipPathStyle = {};
+  let clipPathDropShadowStyle = {};
+  if (picture.clipPath != null) {
+    clipPathStyle = {
+      clipPath: picture.clipPath,
+      WebkitClipPath: picture.clipPath,
+    };
+    clipPathDropShadowStyle = {
+      filter: 'drop-shadow(4px 4px 12px #888)',
+    };
+  }
+
   const onClick = () => {
     if (clickToZoom == true) {
       showOverlay(true);
@@ -76,24 +175,28 @@ const Picture = ({
       />
     );
   }
+
   return (
     <div className="sidebar-picture">
       <figure>
-        <picture className={pictureClassName} onClick={onClick}>
+        <picture
+          className={pictureClassName}
+          onClick={onClick}
+          style={clipPathDropShadowStyle}>
           {sources}
           <img
             className={pictureClassName}
             src={fallbackSrc}
             width="100%"
+            style={clipPathStyle}
             alt={alt}
           />
         </picture>
-        <figcaption>
-          <TextContent
-            contentHtml={picture.content_html}
-            contentLang={picture.content_lang || 'da'}
-          />
-        </figcaption>
+        <FigCaption
+          picture={picture}
+          hideArtist={hideArtist}
+          hideMuseum={hideMuseum}
+        />
       </figure>
       {pictureOverlay}
       <style jsx>{`
@@ -102,11 +205,6 @@ const Picture = ({
         }
         figure {
           margin: 0;
-        }
-        figcaption {
-          margin-top: 8px;
-          font-size: 16px;
-          line-height: 1.4;
         }
         .oval-mask {
           border-radius: 50%;
@@ -131,3 +229,4 @@ const Picture = ({
 };
 
 export default Picture;
+export { FigCaption };

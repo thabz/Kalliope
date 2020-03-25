@@ -11,7 +11,7 @@ import * as Links from '../components/links';
 import TextContent from '../components/textcontent.js';
 import SplitWhenSmall from '../components/split-when-small.js';
 import Picture from '../components/picture.js';
-import FormattedDate from '../components/formatteddate.js';
+import { formattedDate } from '../components/formatteddate.js';
 import type {
   Lang,
   NewsItem,
@@ -39,7 +39,7 @@ const TodaysEvents = ({ events }: TodaysEventsProps) => {
       const yearsAgo = nowYear - parseInt(item.date.substring(0, 4));
       const yearHtml = (
         <div className="today-date" title={yearsAgo + ' år siden i dag'}>
-          <FormattedDate date={item.date} lang={lang} />
+          {formattedDate(item.date)}
         </div>
       );
       const html = (
@@ -127,9 +127,7 @@ const News = ({ news }: NewsProps) => {
               lang={lang}
             />
           </div>
-          <div className="news-date">
-            <FormattedDate date={date} />
-          </div>
+          <div className="news-date">{formattedDate(date)}</div>
           <style jsx>{`
             div.news-item {
               margin-bottom: 20px;
@@ -223,6 +221,7 @@ Index.getInitialProps = async ({
   if (lang == null) {
     lang = 'da';
   }
+  const country = lang === 'da' ? 'dk' : 'gb';
   let dayAndMonth = date;
   let pagingContext = null;
   if (dayAndMonth == null) {
@@ -254,7 +253,7 @@ Index.getInitialProps = async ({
   const todaysEvents: Array<TimelineItem> = await todayResponse.json();
   const news: Array<NewsItem> = await newsResponse.json();
 
-  return { lang, news, todaysEvents, pagingContext };
+  return { lang, country, news, todaysEvents, pagingContext };
 };
 
 export default Index;
