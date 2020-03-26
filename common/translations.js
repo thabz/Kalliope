@@ -7,6 +7,7 @@ const translations: { [string]: string } = {
   'en*Personer': 'Persons',
   'en*Kunstnere': 'Artists',
   'en*Nøgleord': 'Keywords',
+  'en*Museer': 'Museums',
   'en*Værker': 'Works',
   'en*Digttitler': 'Poem titles',
   'en*Titler': 'Titles',
@@ -43,7 +44,7 @@ const translations: { [string]: string } = {
   'en*Død': 'Dead',
   'en*Tiltrådt': 'Accession',
   'en*(blev {ca}{yearDiff} år)': '(age {ca}{yearDiff} years)',
-  'en*ca.': 'en*c.',
+  'en*ca.': 'c.',
   'en*Søg i Kalliope': 'Search Kalliope',
   'en*Søg i {genetiveLastName} værker': 'Search {genetiveLastName} works',
   'en*{poetName}: »{poemTitle}« fra {workTitle}':

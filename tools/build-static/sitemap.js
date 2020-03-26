@@ -1,5 +1,14 @@
-const { safeMkdir, loadXMLDoc, writeText, fileExists } = require('../libs/helpers.js');
+const { safeMkdir, writeText, fileExists } = require('../libs/helpers.js');
 const { isFileModified } = require('../libs/caching.js');
+const {
+  loadXMLDoc,
+  safeGetInnerXML,
+  safeGetText,
+  safeGetAttr,
+  getElementsByTagNames,
+  getChildByTagName,
+} = require('./xml.js');
+
 const build_sitemap_xml = collected => {
   safeMkdir(`static/sitemaps`);
 
@@ -58,17 +67,23 @@ const build_sitemap_xml = collected => {
           );
           const filename = `fdirs/${poetId}/${workId}.xml`;
           if (!fileExists(filename)) {
-            return
+            return;
           }
 
           let doc = loadXMLDoc(filename);
           if (doc == null) {
             console.log("Couldn't load", filename);
           }
-          doc.find('//poem|//prose').forEach(part => {
-            const textId = part.attr('id').value();
-            poet_text_urls.push(`https://kalliope.org/${lang}/text/${textId}`);
-          });
+          getElementsByTagNames(doc, ['poem', 'prose', 'section']).forEach(
+            part => {
+              const textId = safeGetAttr(part, 'id');
+              if (textId != null) {
+                poet_text_urls.push(
+                  `https://kalliope.org/${lang}/text/${textId}`
+                );
+              }
+            }
+          );
         }
       });
     });

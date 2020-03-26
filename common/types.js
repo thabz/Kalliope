@@ -75,7 +75,9 @@ export type Poet = {
 
 export type Museum = {
   id: MuseumId,
-  name: string,
+  name: ?string,
+  sortName: ?string,
+  deepLink: ?string,
 };
 
 export type Work = {
@@ -146,8 +148,13 @@ export type NoteItem = {
 };
 
 export type PictureItem = {
+  artist?: Poet,
+  museum?: Museum,
+  remoteUrl?: string,
+  clipPath?: string,
   content_lang?: TextLang,
   content_html?: TextContentType,
+  note_html?: TextContentType,
   primary?: boolean,
   size?: { width: number, height: number },
   year?: string,
@@ -166,10 +173,11 @@ export type Text = {
   id: string,
   title: string,
   title_prefix?: string,
-  linktitle: string,
+  linkTitle: string,
   text_type: 'prose' | 'poem' | 'section',
   toc?: Array<TocItem>,
   subtitles?: Array<TextContentType>,
+  suptitles?: Array<TextContentType>,
   notes: Array<NoteItem>,
   refs: Array<TextContentType>,
   variants: Array<TextContentType>,
@@ -189,6 +197,7 @@ export type Text = {
 export type Keyword = {
   id: string,
   title: string,
+  redirectURL?: string,
   is_draft: boolean,
   author?: string,
   notes?: Array<NoteItem>,
