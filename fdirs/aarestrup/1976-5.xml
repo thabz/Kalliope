@@ -747,7 +747,9 @@ Vil I mine Stjerner være,
     <toctitle>Schwab: Digter-Veer</toctitle>
     <firstline>Ikke veed jeg hvad jeg vil</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Schwab) -->
+    <notes>
+        <note unknown-original-by="schwab" />
+    </notes>
     <source pages="32"/>
 </head>
 <body>
@@ -3529,6 +3531,7 @@ Just i dette Øieblik.
     <firstline>Lykkelige Brudgom, skynd dig!</firstline>
     <notes>
         <note>Gendigtning af »Tu jam purpurea sola cubans toro«.</note>
+        <!-- Den korrekte titel er Hugo Grotius: »Epithalamium Potteii« -->
     </notes>
     <quality>korrektur1,kilde,side</quality>
     <!-- TODO: Find originalen (Grotius) -->
@@ -5738,9 +5741,9 @@ Var mig ei Æren dyr.
     <firstline>Ingen i hele vor By gad røre din Kone, det veed du</firstline>
     <notes>
         <note>Oversættelse af Lib. 1. epig. 73.</note>
+        <note unknown-original-by="martial" />
     </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Martial) -->
     <source pages="195"/>
 </head>
 <body>
@@ -5760,9 +5763,9 @@ Krybskytter øve din Dont - Du er unægtelig snild!
     <firstline>Siger du: skynd dig! saa gjør jeg det, Hidyle, skjøndt at</firstline>
     <notes>
         <note>Oversættelse af Lib. 1. epig. 46.</note>
+        <note unknown-original-by="martial" />
     </notes>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Find originalen (Martial) -->
     <source pages="195"/>
 </head>
 <body>
@@ -10637,7 +10640,7 @@ Sundhed og Held, det Bedste man kan tænke
     <dates>
         <written>1842-04-21</written>
     </dates>
-    <keywords>winter</keywords>
+    <keywords>winther</keywords>
     <source pages="365-368"/>
 </head>
 <body>

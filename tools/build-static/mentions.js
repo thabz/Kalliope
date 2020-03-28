@@ -2,7 +2,7 @@ const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-  force_reload,
+  force_reload: globalForceReload,
 } = require('../libs/caching.js');
 const {
   safeMkdir,
@@ -27,13 +27,11 @@ const { primaryTextVariantId } = require('./variants.js');
 const person_mentions_dirty = new Set();
 
 const build_person_or_keyword_refs = collected => {
-  let person_or_keyword_refs = new Map([]);
-  if (!force_reload) {
-    person_or_keyword_refs = new Map(
-      loadCachedJSON('collected.person_or_keyword_refs') || []
-    );
-  }
+  let person_or_keyword_refs = globalForceReload
+    ? new Map([])
+    : new Map(loadCachedJSON('collected.person_or_keyword_refs') || []);
   const forced_reload = person_or_keyword_refs.size == 0;
+
   let found_changes = false;
   const regexps = [
     { regexp: /xref ()poem="([^"]*)"/g, type: 'text' },

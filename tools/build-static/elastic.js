@@ -1,5 +1,15 @@
-const { loadXMLDoc, htmlToXml, replaceDashes } = require('../libs/helpers.js');
-const { safeGetText } = require('./xml.js');
+const { htmlToXml, replaceDashes } = require('../libs/helpers.js');
+const {
+  loadXMLDoc,
+  safeGetText,
+  safeGetAttr,
+  getChildByTagName,
+  getChildrenByTagNames,
+  getChildrenByTagName,
+  getElementByTagName,
+  safeGetInnerXML,
+  tagName,
+} = require('./xml.js');
 const { isFileModified } = require('../libs/caching.js');
 const elasticSearchClient = require('../libs/elasticsearch-client.js');
 
@@ -12,7 +22,8 @@ const update_elasticsearch = collected => {
           return;
         }
         let doc = loadXMLDoc(filename);
-        const work = getChildByTagName(doc, 'kalliopework');
+        const work = getElementByTagName(doc, 'kalliopework');
+        const workBody = getElementByTagName(work, 'workbody');
         const status = safeGetAttr(work, 'status');
         const type = safeGetAttr(work, 'type');
         const head = getChildByTagName(work, 'workhead');
@@ -30,63 +41,72 @@ const update_elasticsearch = collected => {
           work: workData,
         };
 
+        console.log(`Updating work ${poetId}-${workId} in elasticsearch`);
         elasticSearchClient.create(
           'kalliope',
           'work',
           `${poetId}-${workId}`,
           data
         );
-        doc.find('//poem|//prose').forEach(text => {
-          const textId = safeGetAttr(text, 'id');
-          const head = getChildByTagName(text, 'head');
-          const body = getChildByTagName(text, 'body');
-          const title =
-            safeGetText(head, 'linktitle') ||
-            safeGetText(head, 'title') ||
-            safeGetText(head, 'firstline');
-          const keywords = safeGetText(head, 'keywords');
-          let subtitles = null;
-          const subtitle = getChildByTagName(head, 'subtitle');
-          if (subtitle && subtitle.find('line').length > 0) {
-            subtitles = subtitle
-              .find('line')
-              .map(s => replaceDashes(safeGetInnerXML(s)));
-          } else if (subtitle) {
-            const subtitleString = safeGetInnerXML(subtitle);
-            if (subtitleString.indexOf('<subtitle/>') === -1) {
-              subtitles = [replaceDashes(subtitleString)];
+	if (workBody == null) {
+            return;
+	}
+        getChildrenByTagNames(workBody, ['poem', 'prose', 'section']).forEach(
+          text => {
+            const textId = safeGetAttr(text, 'id');
+            if (tagName(text) === 'section' && textId == null) {
+              return;
             }
-          }
-          let keywordsArray = null;
-          if (keywords) {
-            keywordsArray = keywords.split(',');
-          }
+            const head = getChildByTagName(text, 'head');
+            const body = getChildByTagName(text, 'body');
+            const title =
+              safeGetText(head, 'linktitle') ||
+              safeGetText(head, 'title') ||
+              safeGetText(head, 'firstline');
+            const keywords = safeGetText(head, 'keywords');
+            let subtitles = null;
+            const subtitle = getChildByTagName(head, 'subtitle');
+            if (subtitle && getChildrenByTagName(subtitle, 'line').length > 0) {
+              subtitles = getChildrenByTagName(subtitle, 'line').map(s =>
+                replaceDashes(safeGetInnerXML(s))
+              );
+            } else if (subtitle) {
+              const subtitleString = safeGetInnerXML(subtitle);
+              if (subtitleString.indexOf('<subtitle/>') === -1) {
+                subtitles = [replaceDashes(subtitleString)];
+              }
+            }
+            let keywordsArray = null;
+            if (keywords) {
+              keywordsArray = keywords.split(',');
+            }
 
-          const textData = {
-            id: textId,
-            title: replaceDashes(title),
-            subtitles,
-            is_prose: tagName(text) === 'prose',
-            keywords: keywordsArray,
-            content_html: htmlToXml(
-              safeGetInnerXML(body)
-                .replace(/<note>.*?<\/note>/g, '')
-                .replace(/<footnote>.*?<\/footnote>/g, '')
+            const textData = {
+              id: textId,
+              title: replaceDashes(title),
+              subtitles,
+              is_prose: tagName(text) === 'prose',
+              keywords: keywordsArray,
+              content_html: htmlToXml(
+                (safeGetInnerXML(body) || '')
+                  .replace(/<note>.*?<\/note>/g, '')
+                  .replace(/<footnote>.*?<\/footnote>/g, '')
+                  .replace(/<.*?>/g, ' '),
+                collected,
+                tagName(text) === 'poem'
+              )
+                .map(line => line[0])
+                .join(' ')
                 .replace(/<.*?>/g, ' '),
-              collected,
-              tagName(text) === 'poem'
-            )
-              .map(line => line[0])
-              .join(' ')
-              .replace(/<.*?>/g, ' '),
-          };
-          const data = {
-            poet,
-            work: workData,
-            text: textData,
-          };
-          elasticSearchClient.create('kalliope', 'text', textId, data);
-        });
+            };
+            const data = {
+              poet,
+              work: workData,
+              text: textData,
+            };
+            elasticSearchClient.create('kalliope', 'text', textId, data);
+          }
+        );
       });
     });
   };
