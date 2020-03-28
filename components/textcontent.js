@@ -193,8 +193,8 @@ const TextContent = (props: TextContentPropsType) => {
             key={keySeq++}
             style={{
               display: 'inline',
-              fontSize: '0.85em',
-              lineHeight: '1.6em',
+              fontSize: '1.0rem',
+              lineHeight: '1.1rem', // Virker ikke i en inline block
             }}>
             {handle_nodes(node.childNodes)}
           </small>
