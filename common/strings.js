@@ -9,3 +9,11 @@ export function toTitleCase(str: string) {
 export function trimHtml(str: string) {
   return str.replace(/<[^>]*>/g, '');
 }
+
+export function pluralize(num: number, ental: string, flertal: string): string {
+  if (num === 1) {
+    return ental;
+  } else {
+    return flertal;
+  }
+}

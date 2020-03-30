@@ -40,15 +40,17 @@ elsif !File.file?(workfilename)
     abort("#{workfilename} findes ikke.")
 end
 
-contents = File.read(workfilename)
 
+allcontents = Dir["#{folder}/*.xml"].map{ |f|
+    File.read(f)
+}.join " "
 poemId = '';
 date = Time.now.strftime("%Y%m%d")
 num = 1
 done = false
 while (!done)
     poemId = "#{poetid}#{date}%02d" % [num]
-    if not contents.include? poemId
+    if not allcontents.include? poemId
         done = true
     else 
         num += 1
@@ -57,6 +59,7 @@ end
 
 puts "Poem id #{poemId}"
 
+contents = File.read(workfilename)
 prefix = ""
 if not contents.include?("<poem")
     prefix = "\n"

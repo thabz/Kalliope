@@ -1,16 +1,24 @@
-const { loadXMLDoc, fileExists } = require('../libs/helpers.js');
+const { fileExists } = require('../libs/helpers.js');
 const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-  force_reload,
+  force_reload: globalForceReload,
   markFileDirty,
 } = require('../libs/caching.js');
-const { safeGetAttr } = require('./xml.js');
+const {
+  loadXMLDoc,
+  getElementsByTagNames,
+  safeGetAttr,
+  safeGetOuterXML,
+} = require('./xml.js');
 
 const build_textrefs = collected => {
-  let textrefs = new Map(loadCachedJSON('collected.textrefs') || []);
+  let textrefs = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.textrefs') || []);
   const force_reload = textrefs.size == 0;
+
   let found_changes = false;
   const regexps = [
     /xref\s.*?poem="([^",]*)/g,
@@ -29,13 +37,17 @@ const build_textrefs = collected => {
         found_changes = true;
       }
       let doc = loadXMLDoc(filename);
-      const texts = doc.find('//poem|//prose|//section[@id]');
+      const texts = getElementsByTagNames(doc, [
+        'poem',
+        'prose',
+        'section',
+      ]).filter(e => safeGetAttr(e, 'id') != null);
       texts.forEach(text => {
-        const notes = text.find('head/notes/note|body//footnote|body//note');
+        const notes = getElementsByTagNames(text, ['note', 'footnote']);
         notes.forEach(note => {
           regexps.forEach(regexp => {
-            while ((match = regexp.exec(note.toString())) != null) {
-              const fromId = text.attr('id').value();
+            while ((match = regexp.exec(safeGetOuterXML(note))) != null) {
+              const fromId = safeGetAttr(text, 'id');
               const toId = match[1];
               const array = textrefs.get(toId) || [];
               if (array.indexOf(fromId) === -1) {
@@ -55,7 +67,7 @@ const build_textrefs = collected => {
 };
 
 const mark_ref_destinations_dirty = collected => {
-  if (force_reload) {
+  if (globalForceReload) {
     // All destination files are marked dirty already
     return;
   }
@@ -76,12 +88,16 @@ const mark_ref_destinations_dirty = collected => {
         return;
       }
       let doc = loadXMLDoc(filename);
-      const texts = doc.find('//poem|//prose|//section[@id]');
+      const texts = getElementsByTagNames(doc, [
+        'poem',
+        'prose',
+        'section',
+      ]).filter(e => safeGetAttr(e, 'id') != null);
       texts.forEach(text => {
-        const notes = text.find('head/notes/note|body//footnote|body//note');
+        const notes = getElementsByTagNames(text, ['note', 'footnote']);
         notes.forEach(note => {
           regexps.forEach(regexp => {
-            while ((match = regexp.exec(note.toString())) != null) {
+            while ((match = regexp.exec(safeGetOuterXML(note))) != null) {
               const toId = match[1];
               const t = collected.texts.get(toId);
               if (t != null) {

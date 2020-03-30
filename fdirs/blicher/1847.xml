@@ -1689,7 +1689,7 @@ Herlige Klippeland!
 </body>
 </poem>
 
-<poem id="blicher2003091522">
+<poem id="blicher2003091522" variant="blicker1999041501">
 <head>
     <title><num>VII.</num>Kjær est du Fødeland, sødt er dit Navn</title>
     <firstline>Kjær est du Fødeland, sødt er dit Navn</firstline>
@@ -2160,8 +2160,8 @@ Hvor mangen ubekjendt og navnløs Skjald
 Har i de dunkle Dale Harpen slaget,
 Før vældelig, som Klippeelvens Fald
 Homers Basune over Hellas Braged.
-Alt længe førend Stratfords Skjald opstod <note>* ,,Stratfords Skjald'': Shakespeare.</note>
-Har mangen Chaucer skjønt og lifligt sjungen;
+Alt længe førend Stratfords Skjald opstod <note>* ,,Stratfords Skjald'': <a poet="shakespeare">Shakespeare</a>.</note>
+Har mangen Chaucer<note><a poet="chaucer">Geoffrey Chaucer</a> (1342-1400), engelsk digter.</note> skjønt og lifligt sjungen;
 Og Johnson først sin Trone ydmyg veeg,
 Da han paa Scenen øjned Digterkongen.
 
@@ -2448,7 +2448,7 @@ Og ikkun paa de andre tage vare.
 Hvorfor ved ,,liden - mindre - mindst -'' ej dvæle?
 Ja! giv mig blot en Schema for min Dom!
 En Alen til at maale Digtersjele!
-Stor er den Skjald, som Vaarens Ynde sang; <note>* ,,Stor er den Skjald, som Vaarens Ynde sang;'' Thomson.</note>
+Stor er den Skjald, som Vaarens Ynde sang; <note>* ,,Stor er den Skjald, som Vaarens Ynde sang;'' <a poet="thomson">Thomson</a>.</note>
 Men mod sit store Æmne er han liden;
 ,,Hans Navn sig dog alt gjennem Sekler svang!''
 - Hvormeget er et Sekel vel af Tiden? -
@@ -6679,7 +6679,7 @@ Med Sværd i Haand, og Fod ved Fod,
 </body>
 </poem>
 
-<poem id="blicher2003091563">
+<poem id="blicher2003091563" variant="blicher2002050902">
 <head>
     <title><num>VII.</num>Morten Borup</title>
     <firstline>I Skanderborrig Enge</firstline>
@@ -12747,6 +12747,9 @@ Med Pilen udi sin Bag.
     <title>Haarlokken</title>
     <subtitle>et Episk Digt i fem Sange efter Pope</subtitle>
     <source in="bd2" pages="147-"/>
+    <notes>
+        <note>Oversættelse af Popes <a work="pope/1714"><i>The Rape of the Lock</i> (1714)</a>.</note>
+    </notes>
 </head>
 <content>
 

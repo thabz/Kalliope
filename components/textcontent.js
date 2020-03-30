@@ -24,8 +24,9 @@ type TextContentPropsType = {
   contentHtml: ?TextContentType,
   contentLang: TextLang,
   options?: TextContentOptions,
+  inline?: boolean,
   style?: Object,
-  className?: ?string,
+  className?: string,
   keyPrefix?: string, // Ved bladring hopper linjenumrene hvis alle digtes linjer har samme key.
 };
 const TextContent = (props: TextContentPropsType) => {
@@ -192,8 +193,8 @@ const TextContent = (props: TextContentPropsType) => {
             key={keySeq++}
             style={{
               display: 'inline',
-              fontSize: '0.85em',
-              lineHeight: '1.6em',
+              fontSize: '1.0rem',
+              lineHeight: '1.1rem', // Virker ikke i en inline block
             }}>
             {handle_nodes(node.childNodes)}
           </small>
@@ -278,6 +279,7 @@ const TextContent = (props: TextContentPropsType) => {
         }
         const style = {
           width: width,
+          pageBreakInside: 'avoid',
           maxWidth: '100%',
         };
         return <img key={keySeq++} src={src} style={style} alt={alt} />;
@@ -288,7 +290,7 @@ const TextContent = (props: TextContentPropsType) => {
         return <Footnote key={keySeq++} text={noteContent} />;
       case 'sc':
         return (
-          <span key={keySeq++} style={{ fontVariant: 'small-caps' }}>
+          <span key={keySeq++} className="small-caps">
             {handle_nodes(node.childNodes)}
           </span>
         );
@@ -315,8 +317,9 @@ const TextContent = (props: TextContentPropsType) => {
     contentLang,
     style,
     keyPrefix = 'linje-',
-    className,
+    className = '',
     options = {},
+    inline = false,
   } = props;
 
   if (contentHtml == null) {
@@ -352,7 +355,9 @@ const TextContent = (props: TextContentPropsType) => {
     const lineNum = lineOptions.num != null ? parseInt(lineOptions.num) : null;
     let className = '';
     let anchor = null;
-
+    if (inline) {
+      className += ' inline ';
+    }
     let rendered = null;
     if (options.highlight != null) {
       if (lineNum != null && lineNum === options.highlight.from) {
@@ -443,7 +448,7 @@ const TextContent = (props: TextContentPropsType) => {
   return (
     <div
       style={style}
-      className={className}
+      className={className + (inline ? ' inline' : '')}
       lang={contentLang}
       key={keyPrefix + 'outer'}>
       {/*
@@ -542,6 +547,10 @@ const TextContent = (props: TextContentPropsType) => {
         }
         :global(.text-two-columns) :global(div:last-child) {
           padding-left: 10px;
+        }
+
+        :global(.inline) {
+          display: inline;
         }
       `}</style>
     </div>

@@ -2,13 +2,11 @@
 
 import 'isomorphic-fetch';
 import React, { useContext } from 'react';
-import Head from '../components/head';
-import Main from '../components/main.js';
+import Page from '../components/page.js';
 import * as Links from '../components/links';
-import Nav, { kalliopeCrumbs } from '../components/nav';
+import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect.js';
-import { KalliopeTabs } from '../components/tabs.js';
-import Heading from '../components/heading.js';
+import { kalliopeMenu } from '../components/menu.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
 import * as Sorting from '../common/sorting.js';
@@ -50,9 +48,13 @@ const Keywords = (props: KeywordsProps) => {
 
   groups.forEach(group => {
     const items = group.items.map(keyword => {
+      const url =
+        keyword.redirectURL != null
+          ? keyword.redirectURL.replace('${lang}', lang)
+          : Links.keywordURL(lang, keyword.id);
       return {
         id: keyword.id,
-        url: Links.keywordURL(lang, keyword.id),
+        url,
         html: keyword.title,
       };
     });
@@ -62,22 +64,16 @@ const Keywords = (props: KeywordsProps) => {
   let renderedGroups = <SectionedList sections={sections} />;
 
   return (
-    <div>
-      <Head
-        headTitle={_('Nøgleord', lang) + ' - Kalliope'}
-        requestPath={requestPath}
-      />
-      <Main>
-        <Nav
-          lang={lang}
-          crumbs={[...kalliopeCrumbs(lang), { title: _('Nøgleord', lang) }]}
-        />
-        <Heading title={_('Nøgleord', lang)} />
-        <KalliopeTabs selected="keywords" />
-        {renderedGroups}
-        <LangSelect path={requestPath} />
-      </Main>
-    </div>
+    <Page
+      headTitle={_('Nøgleord', lang) + ' - Kalliope'}
+      requestPath={requestPath}
+      crumbs={[...kalliopeCrumbs(lang), { title: _('Nøgleord', lang) }]}
+      pageTitle={_('Nøgleord', lang)}
+      menuItems={kalliopeMenu()}
+      selectedMenuItem="keywords">
+      {renderedGroups}
+      <LangSelect path={requestPath} />
+    </Page>
   );
 };
 
