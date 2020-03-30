@@ -374,7 +374,7 @@ File.readlines(ARGV[0]).each do |line|
       print printStartSektion(sectionTitle, level)
       @state = 'NONE'
   end
-  if line.start_with?('SLUTSEKTION')
+  if line.start_with?('SLUTSEKTION') or line.start_with?('SEKTIONSLUT')
       if @state != 'NONE'
           printPoem();
       end
