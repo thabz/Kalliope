@@ -1,8 +1,12 @@
 // @flow
 
 import React from 'react';
+import type { Node } from 'react';
 
-export default class SplitWhenSmall extends React.Component<*> {
+type SplitWhenSmallProps = {
+  children: Node,
+};
+export default class SplitWhenSmall extends React.Component<SplitWhenSmallProps> {
   render() {
     return (
       <div className="horizontal-on-small">
@@ -12,7 +16,7 @@ export default class SplitWhenSmall extends React.Component<*> {
             display: flex;
             flex-direction: column;
           }
-          @media (max-width: 760px) {
+          @media (max-width: 767px) {
             .horizontal-on-small {
               flex-direction: row;
               justify-content: space-between;

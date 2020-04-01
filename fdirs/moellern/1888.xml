@@ -1669,8 +1669,10 @@ Så siger Nossis: Den kvinde, der kender ej kærlighed,
   <title>Geoffrey Chaucer</title>
   <toctitle>Geoffrey Chaucer: O, kvalfuld kvide!</toctitle>
   <firstline>O, kvalfuld kvide! Armods bitre plage!</firstline>
+   <notes>
+       <note unknown-original-by="chaucer" />
+   </notes>
   <source pages="84-85"/>
-  <!-- TODO: Find Chaucers original. -->
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1893,9 +1895,10 @@ Således ender hver en mands begær.
   <title>Sang</title>
   <toctitle>Algernon C. Swinburne: Sang</toctitle>
   <firstline>Hvis du var rosen røde</firstline>
-  <!-- TODO: Find original -->
+  <notes>
+    <note>Gendigtning af Swinburnes <xref type="translation" poem="swinburne2019090905"/>.</note>
+  </notes>
   <source pages="95-97"/>
-  <keywords>swinburne</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1992,10 +1995,12 @@ end du skal mindes mig med tunge tanker.
   <title>Dante Gabriel Rossetti</title>
   <toctitle>Dante Gabriel Rossetti: Sonet</toctitle>
   <firstline>Ej blot at jorden gråner, o min gud!</firstline>
+   <notes>
+       <note unknown-original-by="rossettid" />
+   </notes>
   <source pages="99"/>
   <quality>korrektur1,kilde,side</quality>
-  <keywords>sonnet,rossettid</keywords>
-  <!-- TODO: Hvilken sonnet er her oversat? -->
+  <keywords>sonnet</keywords>
 </head>
 <body>
 Ej blot at jorden gråner, o min gud!
@@ -2023,10 +2028,12 @@ at snart den visne jord du slår i kvag.
   <title>Joséphin Soulary</title>
   <toctitle>Joséphin Soulary: Sonet</toctitle>
   <firstline>Der træder et tog under højkirkens bue</firstline>
+  <notes>
+    <note>Gendigtning af Joséphin Soulary: <xref type="translation" poem="soulary2020031701"/>.</note>
+  </notes>
   <source pages="100"/>
   <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
-  <!-- TODO: Hvilken sonnet er her oversat? -->
 </head>
 <body>
 Der træder et tog under højkirkens bue;

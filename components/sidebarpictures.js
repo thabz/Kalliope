@@ -1,7 +1,14 @@
 // @flow
 import React from 'react';
+import type { Node } from 'react';
 
-export default class SidebarPictures extends React.Component<*> {
+type SidebarPicturesProps = {
+  children: Node,
+  showDropShadow: boolean,
+};
+export default class SidebarPictures extends React.Component<
+  SidebarPicturesProps
+> {
   static defaultProps = {
     showDropShadow: true,
   };

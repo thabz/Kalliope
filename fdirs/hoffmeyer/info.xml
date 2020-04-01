@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hoffmeyer" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Aage</firstname>
+    <lastname>Hoffmeyer</lastname>
+    <!-- tegner, cand. phil. -->
+  </name>
+  <period>
+    <born>
+      <date>1867</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1924</date>
+    </dead>
+  </period>
+  <works>1915,1918</works>
+</person>

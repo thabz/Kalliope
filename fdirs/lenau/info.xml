@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lenau" country="un" lang="de" type="poet">
+  <!-- Østrisk digter -->
+  <name>
+    <firstname>Nikolaus</firstname>
+    <lastname>Lenau</lastname>
+    <fullname>Nikolaus Franz Niembsch Edler von Strehlenau</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1802-08-13</date>
+      <place>Csatád, Ungarn (nu Lenauheim, Rumænien)</place>
+    </born>
+    <dead>
+      <date>1850-08-22</date>
+      <place>Oberdöbling nær Wien</place>
+    </dead>
+  </period>
+  <works>1822,1832,1835,1836,1837,1838,1840,1842,1843,blick,eitel,1844,andre</works>
+</person>

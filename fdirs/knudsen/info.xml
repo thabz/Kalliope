@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="knudsen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Jakob</firstname>
+    <lastname>Knudsen</lastname>
+    <fullname>Jakob Christian Lindberg Knudsen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1858-09-14</date>
+      <place>Rødding</place>
+    </born>
+    <dead>
+      <date>1917-01-21</date>
+      <place>Birkerød</place>
+    </dead>
+  </period>
+  <works>1908,1938,andre</works>
+</person>

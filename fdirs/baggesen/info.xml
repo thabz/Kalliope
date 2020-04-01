@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="baggesen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Jens</firstname>
+    <lastname>Baggesen</lastname>
+    <fullname>Jens Immanuel Baggesen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1764-02-15</date>
+      <place>Korsør</place>
+    </born>
+    <dead>
+      <date>1826-10-03</date>
+      <place>Hamburg</place>
+    </dead>
+  </period>
+  <works>1785,1791,1801,1803,1807,1807e,1807s,1808,1808h,1814,1816,1816d,1819,andre</works>
+</person>

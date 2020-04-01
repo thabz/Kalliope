@@ -2873,6 +2873,9 @@ Et Bæger for Dig med den klareste Viin!
     <dates>
         <performed>1845-03-04</performed>
     </dates>
+    <pictures>
+        <picture ref="eckersberg/nathanson-1819" />
+    </pictures>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3436,9 +3439,11 @@ Fremtids Haab naaderig betrygge
 </content>
 </section> <!-- Cantater -->
 
-<section level="2">
+<section level="2" id="hertz2018083104">
 <head>
-    <title>Aarstiderne. Et Digt i fire Afdelinger.</title>
+    <title>Aarstiderne</title>
+    <subtitle>Et Digt i fire Afdelinger</subtitle>
+    <source pages="141-157"/>
 </head>
 <content>
 
@@ -3802,9 +3807,17 @@ Et Haab om en evig, udødelig Vaar.
 </content>
 </section> <!-- Aarstiderne -->
 
-<section level="2">
+<section level="2" id="hertz2018083103">
 <head>
-    <title>Tyrfing, et nordisk Digt fra den mythiske Tid</title>
+    <title>Tyrfing,</title>
+    <linktitle>Tyrfing</linktitle>
+    <toctitle>Tyrfing</toctitle>
+    <indextitle>Tyrfing</indextitle>
+    <subtitle>
+        <line>et nordisk Digt fra den mythiske Tid,</line>
+        <line>i tre Afdelinger.</line>
+    </subtitle>
+    <source pages="159-268"/>
 </head>
 <content>
 

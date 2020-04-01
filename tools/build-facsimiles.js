@@ -12,35 +12,24 @@ const dirname = 'static/facsimiles';
 // containing jpg-files for each page in the pdf-file, named <workid>-<pagenumber>.jpg
 // where <pagenumber> is 000, 001, 002, etc.
 
-// Queue for converting image with concurrency 2.
-let convertImageQueue = async.queue((task, callback) => {
-  const destPath = task.srcPath
-    .replace(/.pbm/, '.jpg')
-    .replace(/.ppm/, '.jpg')
-    .replace(/.png/, '.jpg')
-    .replace(/.*?-(\d*)\.jpg/, task.imagesDir + '/$1.jpg');
-  console.log(destPath);
-  exec(`convert "${task.srcPath}" "${destPath}"`, () => {
-    fs.unlinkSync(task.srcPath);
-    callback();
-  });
-}, 2);
 
-// Convert all ppm- and pbm-files in a folder to jpg
-const folderToJpeg = imagesDir => {
-  console.log(`Converting ${imagesDir} to jpeg`);
+// I can't control the output format of 'pdftoppm', so I'll just rename
+// all files into the wanted filename-format: 000.jpg, 001.jpg, ...
+const renameImages = imagesDir => {
   fs
     .readdirSync(imagesDir)
-    .filter(f => f.endsWith('.pbm') || f.endsWith('.ppm') || f.endsWith('.png'))
-    .forEach(srcFilename => {
-      const srcPath = path.join(imagesDir, srcFilename);
-      convertImageQueue.push({ srcPath, imagesDir });
+    .filter(f => f.endsWith('.jpg'))
+    .sort()
+    .forEach((srcFilename, i) => {
+      const destFilename = i.toLocaleString('en-US',{minimumIntegerDigits:3, useGrouping:false}) + '.jpg';
+      fs.renameSync(path.join(imagesDir,srcFilename), path.join(imagesDir,destFilename));
     });
 };
 
+// Extract all pages from the pdf into separate jpeg files.
 let extractPdfImagesQueue = async.queue((task, callback) => {
   console.log(`Extracting from ${task.fullFilename}`);
-  exec(`pdfimages  ${task.fullFilename} ${task.imagesPrefix}`, () => {
+  exec(`pdftoppm -jpeg -r 300  ${task.fullFilename} ${task.imagesPrefix}`, () => {
     callback();
   });
 }, 2);
@@ -64,23 +53,18 @@ poetDirs.forEach(poetDir => {
       if (!fs.existsSync(imagesDir)) {
         safeMkdir(imagesDir);
         const imagesPrefix = path.join(imagesDir, workId);
-        // Extract ppm-files
+        // Extract pages
         extractPdfImagesQueue.push({ fullFilename, imagesPrefix }, () => {
-          folderToJpeg(imagesDir);
+          renameImages(imagesDir);
         });
       }
     });
 });
 
 extractPdfImagesQueue.drain = function() {
-  console.log('All PDF images are extracted.');
-};
-convertImageQueue.drain = function() {
-  console.log('All image files are converted to jpeg');
   buildThumbnails('static/facsimiles');
   exec(
     'rsync -rva static/facsimiles/* 10.0.0.5:Sites/kalliope/static/facsimiles'
   );
 };
 
-// rsync -rva static/facsimiles/* 10.0.0.5:Sites/kalliope/static/facsimiles

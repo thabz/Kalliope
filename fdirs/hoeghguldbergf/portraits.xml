@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
-      Udsnit af F.C. Gröger: <i>Frederik Høegh-Guldberg</i>, ca. 1815. Det Nationalhistoriske Museum på Frederiksborg.
+  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg" museum="fnm" year="1815">
+      Udsnit af Friedrich Carl Gröger: <i>Frederik Høegh-Guldberg</i>, ca. 1815.
+      <!-- TODO: Billedet optræder ikke i FNMs online katalog. -->
   </picture>
 </pictures>

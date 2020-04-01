@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="daugaard" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Christine</firstname>
+    <lastname>Daugaard</lastname>
+    <fullname>Christine Margaretha Daugaard </fullname>
+    <pseudonym>Erica</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1831-01-30</date>
+      <place>Thorstrup ved Varde</place>
+    </born>
+    <dead>
+      <date>1917-12-18</date>
+      <place>Ribe</place>
+    </dead>
+  </period>
+  <works>1856,1857,1861,1864,1866,1884</works>
+</person>

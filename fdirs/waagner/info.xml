@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="waagner" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>William</firstname>
+    <lastname>Waagner</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1900-04-13</date>
+      <place>Hodsager ved Holstebro</place>
+    </born>
+    <dead>
+      <date>1942-02-19</date>
+    </dead>
+  </period>
+  
+  <works>1919,1921,1923,1925,1926,1927,1927h,1928,1928t,1930,1933,1936,1938,1943</works>
+</person>

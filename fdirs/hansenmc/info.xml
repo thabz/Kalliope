@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hansenmc" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Maurits</firstname>
+    <lastname>Hansen</lastname>
+    <fullname>Maurits Christopher Hansen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1794-07-05</date>
+      <place>Modum</place>
+    </born>
+    <dead>
+      <date>1852-03-16</date>
+      <place>Kongsberg</place>
+    </dead>
+  </period>
+  <works>andre,1816</works>
+</person>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bryant" country="us" lang="en" type="poet">
+  <name>
+    <firstname>William Cullen</firstname>
+    <lastname>Bryant</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1794-11-03</date>
+      <place>Cummington, Massachusetts</place>
+    </born>
+    <dead>
+      <date>1878-06-12</date>
+      <place>New York City</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

@@ -353,6 +353,7 @@ Kan jeg keede mig smukt som en anden,
       <note type="credits">Bidrag fra Svend Olav Andersen.</note>
       <!--  <i>Lille Søndag-Aften</i>, Nr. 1, d. 5. marts 1814. -->
    </notes>
+   <keywords>ewald,oehlenschlaeger</keywords>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -496,9 +497,9 @@ Til skiulte Dyders Opholdssted
    <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
-                             Marly.
+<nonum><right>Marly.</right></nonum>
 
-   Hvo veed, hvor nær mig er min Ende?
+   Hvo veed, hvor nær mig er min Ende?<note>Salmen <xref poem="rostgaard2019022601"/>.</note>
 Hvad jeg har skrevet, alt forgaaer!
 Hvor let og snart kan altsaa hænde,
 Jeg selv herfra at vandre faaer!
@@ -1521,7 +1522,7 @@ Død i Karmen.
 
 Frøken Jord, nu Høstens Brud,
 Stirred vildt i Havet ud
-Med forvirrede, med stive Blikke - ,
+Med forvirrede, med stive Blikke -,
 Vilde græde - kunde længer ikke;
 Blodet selv i hendes Aarer frøs -
 Hver en Taare blev Krystal i Vinden,
@@ -4464,7 +4465,7 @@ Min Flamme sluktes der formodentlig
 (Jeg meener Elskovs Appetit), i Helved;
 Men - være Tantalus i Himmerig!!!
 Mit Hierte brister fast ved blotte Tanken -
-O! følte du dets medynksfulde Banken !
+O! følte du dets medynksfulde Banken!
 Jeg er et Menneske - mig rører alt,
 Hvad menneskeligt staaer, og stod - og faldt -
 Især naar med saa frygteligt Rabalder
@@ -5842,6 +5843,9 @@ At den er dansk, og sand, og elskelig!
    <toctitle>Til Herr Grosserer Nathanson</toctitle>
    <indextitle>Til Herr Grosserer Nathanson</indextitle>
    <firstline>Min Fanny, hvis for fine Sands</firstline>
+   <pictures>
+      <picture ref="eckersberg/nathanson-1819" />
+   </pictures>
    <quality>korrektur1</quality>
 </head>
 <body>
@@ -7238,7 +7242,7 @@ Dens første Lyd er A, dens anden O saa fage,
 
 Hvor <i>stolt</i> jeg heel og halv mig selv for alle nævner,
     Fornemmes tidt i <i>Rom</i>, i <i>Aars</i> og <i>Kjøbenhavn</i>,
-Og naar selv i <i>Madrid</i> en <i>Calderone</i> revner
+    Og naar selv i <i>Madrid</i> en <i>Calderone</i><note><a poet="calderon">Calderón de la Barca (1600-1681)</a>.</note> revner
     Af højpersonlig Vind, udtaler han mit Navn.
 
 Jeg og tilfælleds har med spanske Majestæter,

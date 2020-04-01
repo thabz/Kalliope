@@ -2,44 +2,26 @@
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1906" author="aakjaer" status="complete" type="poetry">
 <workhead>
-   <title>Rugens Sange</title>
-   <year>1906</year>
-   <notes>
-      <note>Efter <i>Rugens Sange</i>, 13. udgave, Gyldendalske Boghandel nordisk Forlag, 1954.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+    <title>Rugens Sange</title>
+    <year>1906</year>
+    <notes>
+        <note>Digtene følger førsteudgaven af <i>Rugens Sange</i>, Gyldendalske Boghandel, Nordisk Forlag, 1906. Forordet til niende udgave er dog medtaget.</note>
+        <note>Samlingen har mottoet ,,Jeg er ikke en Profet og ikke en Profets Søn, men jeg er en Hyrde og en Mand, som sanker vilde Morbær.'' <a bible="bibelamos07,14">Amos 7, 14</a>.</note>
+    </notes>
+    <pictures>
+       <picture type="titlepage" src="1906-p1.jpg">Titelbladet til <i>Rugens Sange</i> (1906) lyder ,,Jeppe Aakjær / Rugens Sange / og / Andre Digte // Gyldendalske Boghandel / Nordisk Forlag / København og Kristiania / 1906''.</picture>
+    </pictures>
+    <source facsimile="11530803731D_color" facsimile-pages-num="320" facsimile-pages-offset="6">Jeppe Aakjær: <i>Rugens Sange</i>, Gyldendalske Boghandel, Nordisk Forlag, 1906.</source>
 </workhead>
 <workbody>
 
-<poem id="aakjaer200009240">
-<head>
-   <title>Motto</title>
-   <toctitle>Motto</toctitle>
-   <indextitle>Motto</indextitle>
-   <firstline>Jeg er ikke en Profet og ikke en</firstline>
-   <notes>
-      <note><xref bibel="bibelamos07,14"/></note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-</head>
-<body>
-"Jeg er ikke en Profet og ikke en
-Profets Søn, men jeg er en Hyrde og
-en Mand, som sanker vilde Morbær."
-Amos 7, 14.
-</body>
-</poem>
-
 <prose id="aakjaer2001082002">
 <head>
-   <title>Forord til niende Udgave</title>
-   <toctitle>Forord til niende Udgave</toctitle>
-   <indextitle>Forord til niende Udgave</indextitle>
-   <notes>
-      <note>s. 9-10</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Forord til niende Udgave</title>
+    <dates>
+        <written>1926-10-12</written>
+    </dates>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 I Sommeren 1905 kom jeg hjem fra Kjøbenhavn med Planen til ,,Rugens Sange''. Jeg var saa glad ved Tanken; saa sikker paa min Evne. Jeg gik hver Solskinsdag ud over Agrene mod Jebjærg Mose og lyttede til Vippernes melodiske Ringlen i Storrugen paa Laust Østergaards Mark. Det gjærede i mit Indre indtil Sprængning, men det vilde ingen Form ta. Grædende af Skuffelse og Afmagt gik jeg hver Aften til min Seng.
@@ -61,20 +43,16 @@ Jenle, 12. Oktober 1926.
 
 <section level="1">
 <head>
-   <toctitle>Rugens Sange</toctitle>
+    <toctitle>Rugens Sange</toctitle>
 </head>
 <content>
 
 <poem id="aakjaer200009241">
 <head>
-   <title>Forspil</title>
-   <toctitle>Forspil</toctitle>
-   <indextitle>Forspil</indextitle>
-   <firstline>Jeg lægger mig i Læet her ved Storrugens Rod</firstline>
-   <notes>
-      <note>s. 11</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Forspil</title>
+    <firstline>Jeg lægger mig i Læet her ved Storrugens Rod</firstline>
+  <source pages="13"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg lægger mig i Læet her ved Storrugens Rod,
@@ -96,18 +74,14 @@ den møder Bølgesangen fra den vindrørte Fjord.
 
 <poem id="aakjaer200009242">
 <head>
-   <title>Rugen lægges</title>
-   <toctitle>Rugen lægges</toctitle>
-   <indextitle>Rugen lægges</indextitle>
-   <firstline>Stigen op og Lugen ud! og saa gaar Far paa Lofte</firstline>
-   <notes>
-      <note>s. 12-13</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Rugen lægges</title>
+    <firstline>Stigen op og Lugen ud! og saa gaar Far paa Lofte</firstline>
+    <source pages="14-15"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Stigen op og Lugen ud! og saa gaar Far paa Lofte,
-øser Rug i Skjæppemaal og stryger ømt dets Rand.
+øser Rug i Skjæppemaal og stryger ømt dets Rand;
 Skjæppen tømt og Sækken fyldt, saa bæres Rug paa Tofte,
 hvor i Drøm for Harven staar det røde Hestespand.
 Skyen gaar saa lav og tung, og Blæst med Løvet jager,
@@ -135,34 +109,28 @@ aldrig er hans Kald saa skjønt, som naar han saar sin Rug.
 </body>
 </poem>
 
-<!-- Sædemand, som er en tilføjelse fra 9. udg., er her fjernet, da digtet også findes i _Vejr og Vind og Folkesind_ (1916) -->
-
 <poem id="aakjaer200009243">
 <head>
-   <title>Vinterrugen</title>
-   <toctitle>Vinterrugen</toctitle>
-   <indextitle>Vinterrugen</indextitle>
-   <firstline>Tit op fra din Ager! Hvor gaar det, du Smaa?</firstline>
-   <notes>
-      <note>s. 17-19</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Vinterrugen</title>
+    <firstline>Tit op fra din Ager! Hvor gaar det, du Smaa?</firstline>
+    <source pages="16-18"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Tit op fra din Ager! Hvor gaar det, du Smaa?
 Staar du ej og ta'r Kuld om din krybende Taa?
 Kan du hytte din Haand? Kan du føle din Fod?
-   Er det ikke som Is ved din Rod?
+        Er det ikke som Is ved din Rod?
 
 Nu er Blæsten saa skrigende, skjærende kold,
 og den hviner som Sav, og den puster som Trold,
 og den hvister med Sandet og slænger med Grus
-   og holder det argeste Hus.
+        og holder det argeste Hus.
 
 Og din Ager sig løfter mod Frosthimlens Rund,
 og det knager af Kulde i Bakkernes Bund;
 og du ligger saa bar med dit grønnende Blad
-   og ser ud, som endda du var glad.
+        og ser ud, som endda du var glad.
 
 Jamen sig mig da, Spædeste, gyser du ej,
 naar det saadan om Natten ta'r rigtig paa Vej,
@@ -171,282 +139,269 @@ imens Haglskyen slænger mod Vindvet sin Hat,
 naar Haren hun søger i Kaalgaarden ind
 og gjør sig saa krum i sit fattige Skind,
 naar Straataget fyger som Gnister i Brand
-   fra Ladens forpiskede Rand?
+        fra Ladens forpiskede Rand?
 
 Da høres fra Hytterne Vuggerne gaa;
 dér lettes ved Puder, dér stoppes ved Straa,
 dér kysses og bysses om mørkrædde Smaa,
-   enhver med <i>sin</i> Stumpdyne paa.
+        enhver med <i>sin</i> Stumpdyne paa.
 
 Kun <i>du</i> ligger bar paa din vildene Skrænt
-   med Bladet <i>fra</i> Stormhjørnet vendt.
+        med Bladet <i>fra</i> Stormhjørnet vendt.
 
 <i>Din</i> Moder sig strækker saa stivnet og kold,
 og Brystet er gustent, og Barmen er gold;
 men Himlen i Vrede har rakt dig en Blé
-   af Midnattens skingrende Sne.
+        af Midnattens skingrende Sne.
 
 Du putter dig ned og du hygger dig hen;
 om Solen hun smiler, <i>du</i> smiler igjen.
-Den vildeste Vinter, den ondeste Storm
+Den vildeste Vinter, den ondeste Storm,
 besejrer dig ikke, du krybende Orm!
 Det er, som du vidste: I Lykke og Nød
-   du strider for Menneskets Brød.
+        du strider for Menneskets Brød.
 
-Dér staar du paa Toften bag Hus og bag Gaard
+- Dér staar du paa Toften bag Hus og bag Gaard
 med Saft i din Stængel og Grønt i dit Haar,
-   et groende Minde i smeltende Sne
-   om det, som <i>er</i> sket - og <i>skal</i> ske.
+et groende Minde i smeltende Sne
+        om det, som <i>er</i> sket - og <i>skal</i> ske.
 
 Om Lærken vil fjæle sin frysende Top,
 du hvisker frimodigt: ,,Stig op! Stig op!''
 Og nærmer sig Vaaren med sejrende Spil,
-   <i>din</i> Stængel slaar Takten dertil!
+        <i>din</i> Stængel slaar Takten dertil!
 </body>
 </poem>
 
 <poem id="aakjaer200009244">
 <head>
-   <title>Stensamlersken</title>
-   <toctitle>Stensamlersken</toctitle>
-   <indextitle>Stensamlersken</indextitle>
-   <firstline>Hvi vanker du gamle Kvinde dér</firstline>
-   <notes>
-      <note>s. 20-21</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Stensamlersken</title>
+    <firstline>Hvi vanker du gamle Kvinde dér</firstline>
+    <source pages="19-20"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hvi vanker du gamle Kvinde dér
-   paa Agren agter og frem?
+        paa Agren agter og frem?
 I Foraarsmorgenens første Skjær
-   forlod du hungrig dit Hjem.
+        forlod du hungrig dit Hjem.
 Hvad sanker du op af den Riges Rug,
-   fattige Ane Malén?
+        fattige Ane Malén?
 Finder du noget for Disk og Dug?
-   ,,<i>Jeg</i> finder kun Sten.''
+        ,,<i>Jeg</i> finder kun Sten.''
 
 Hun tripper afsted foruden Ro
-   som én, der jages i Drøm,
+        som én, der jages i Drøm,
 mens Duggen væder de hullede Sko
-   og Skjørtets flossede Søm;
+        og Skjørtets flossede Søm;
 jeg ved jo nok, hvad du tænker paa,
-   fattige Ane Malén:
+        fattige Ane Malén:
 Derhjemme græder for Brød de Smaa,
-   <i>her</i> sanker <i>du</i> Sten!
+        <i>her</i> sanker <i>du</i> Sten!
 
 Det knækker af Gigt i de gamle Knær,
-   forinden hun Skjørtet faar fyldt;
+        forinden hun Skjørtet faar fyldt;
 saa vandrer hun hen til Dyngen dér
-   og slipper sin trælse Bylt.
+        og slipper sin trælse Bylt.
 Tro ej, <i>hun</i> drømmer om Dugg og Sligt,
-   fattige Ane Malén -
-- hun tænker paa Davre og ej paa Digt,
-   <i>hun</i> sanker jo Sten.
+        fattige Ane Malén,
+hun tænker paa Davre og ej paa Digt,
+        <i>hun</i> sanker jo Sten.
 
 Mens Dagen fødes saa blank og ny,
-   og Solen runder sin Bug,
+        og Solen runder sin Bug,
 <i>din</i> fattige Skygge gaar som en Sky
-   henover den Riges Rug.
+        henover den Riges Rug.
 Det er mig saa sært at tænke paa,
-   fattige Ane Malén:
+        fattige Ane Malén:
 Hvor andre sanker sig Kjærv og Straa,
-   <i>der</i> sanker <i>du</i> Sten.
+        <i>der</i> sanker <i>du</i> Sten.
 </body>
 </poem>
 
-<!-- Hér -->
-
 <poem id="aakjaer2000042203">
 <head>
-   <title>Ved Rugskjellet</title>
-   <toctitle>Ved Rugskjellet</toctitle>
-   <indextitle>Ved Rugskjellet</indextitle>
-   <firstline>Anna var i Anders kjær, men knibsk alligevel</firstline>
-   <notes>
-      <note>Tak til Inger-Marie Ørner for at rette 'Bne' til 'Ben' i anden strofe.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>Ved Rugskjellet</title>
+    <firstline>Anna var i Anders kjær, men knibsk alligevel</firstline>
+    <source pages="21-22"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Anna var i Anders kjær, men knibsk alligevel,
 mødte dog sin Hjertenskjær paa Rugens gamle Skjel,
 satte sig i Græsset ned blandt Klokkeblomster bly,
 og tog saa op sit Fingerbøl og gav sig til at sy.
-   Dyre du og dig!
-   <i>Din</i>geli-og-lej,
-   <i>Dik</i>kedu-og-<i>dik</i>kedi,
-   og <i>din</i>gelu-og lej!
+                Dyre du og dig!
+                <i>Din</i>geli-og-lej,
+                <i>Dik</i>kedu-og-<i>dik</i>kedi,
+                og <i>din</i>gelu-og-lej!
 
 Solen glimted ellevild i Annas Fingerbøl,
 Snerrens sennepsgule Blomst hang fuld af brune Møl.
 Lærken sang, og Luften drev med Dræ og Duft af Pors;
 Annas ankelslanke Ben var lagt saa let i Kors.
-   Dyre du og dig!
-   Dingeli-og-lej - -
+                Dyre du og dig!
+                Dingeli-og-lej - -
 
-Anders sad og fingred tavs om Pibekandens Fals, <!-- Flere ønsker "Pibekantens", men skal se originalen -->
+Anders sad og fingred tavs om Pibekandens Fals,
 saa, hvor Rugens Vipper strøg om Annas brune Hals,
 hørte, hvor de sølverlo og lokked flere til;
 Vipperne, de Luxer smaa, de kysser, hvor de vil.
-   Dyre du og dig!
-   Dingeli-og-lej - -
+                Dyre du og dig!
+                Dingeli-og-lej - -
 
 Banked han saa Piben ud imod sin Støvletaa,
 lagde kritisk Øjet til og rensed med et Straa,
 smed saa brat det Hele hen og rykked farlig nær,
 hvisked om den brune Hals og alt det fine Vejr.
-   Dyre du og dig!
-   Dingeli-og-lej - -
+                Dyre du og dig!
+                Dingeli-og-lej - -
 
 Annas rappe, blanke Naal i Luften standsed lidt;
 Armens fine strakte Rund fortoned sig i Hvidt.
 Greb han da paa samme Tid om Hals og Vipper smaa,
 kyssed Annas Kind og Mund omkap med Rugens Straa:
-   Dyre du og dig!
-   Dingeli-og-lej,
-   Dikkedu-og-dikkedi,
-   og dingelu-og-lej!
+                Dyre du og dig!
+                Dingeli-og-lej,
+                Dikkedu-og-dikkedi,
+                og dingelu-og-lej!
 
 Naal og Traad ved første Kys i Snerren sank af Skræk;
-Annas nye Fingerbøl det trilled ogsaa væk.
+Annas nye Fingerbøl det trilled ogsaa væk;
 Klinten paa sin lange Hals sig rejste for at glo;
 bittesmaa Mariehøns løb over Annas Sko.
-   Dyre du og dig!
-   Dingeli-og-lej - -
+                Dyre du og dig!
+                Dingeli-og-lej - -
 
 Mens som Amoriner smaa opsteg de brune Møl,
 Gyldenring blev lovet hen for Tab af Fingerbøl.
 Rugen ringled vidt og bredt om Kys og Kjærlighed;
 hvad det mindste Ax har hørt, den hele Ager ved.
-   Dyre du og dig!
-   Dingeli-og-lej,
-   Dikkedu-og-dikkedi,
-   og dingelu-og-lej!
+                Dyre du og dig!
+                Dingeli-og-lej,
+                Dikkedu-og-dikkedi,
+                og dingelu-og-lej!
 </body>
 </poem>
 
 <poem id="aakjaer200009246">
 <head>
-   <title>Jens og hans Viv</title>
-   <toctitle>Jens og hans Viv</toctitle>
-   <indextitle>Jens og hans Viv</indextitle>
-   <firstline>De to kan ingen skille ad</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Jens og hans Viv</title>
+    <firstline>De to kan ingen skille ad</firstline>
+    <source pages="24-26"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 De to kan ingen skille ad,
-   Jens og hans Viv;
+    Jens og hans Viv;
 de delte sammen Seng og Fad,
-   Jens og hans Viv;
+    Jens og hans Viv;
 de delte sammen mer endnu:
 Fælleshaab i Fælleshu,
-   Jens og hans Viv.
+    Jens og hans Viv.
 
 Saa gaar de ud i Søndagsro,
-   Jens og hans Viv,
+    Jens og hans Viv,
 at se om Rugen snart er mo,
-   Jens og hans Viv.
+    Jens og hans Viv.
 Og Kistetøjet har de paa,
 blommet Shawl og Vadmel graa,
-   Jens og hans Viv.
+    Jens og hans Viv.
 
 De ser til alt paa deres Vej,
-   Jens og hans Viv;
+    Jens og hans Viv;
 selv mindste Kræ de glemmer ej,
-   Jens og hans Viv;
+    Jens og hans Viv;
 de nikker mod den grønne Byg,
 stryger Kalven ad dens Ryg,
-   Jens og hans Viv.
+    Jens og hans Viv.
 
 De løfter Lammet, Husets Trøst,
-   Jens og hans Viv;
+    Jens og hans Viv;
 de mener, den faar gaa til Høst,
-   Jens og hans Viv;
+    Jens og hans Viv;
 og Kløv'ren, som har Mergel faa't,
 nu tykkes de, den tegner godt,
-   Jens og hans Viv.
+    Jens og hans Viv.
 
 Da naar til Rugens gule Fald
-   Jens og hans Viv;
+    Jens og hans Viv;
 did lokked Duft og Fuglekald
-   Jens og hans Viv;
+    Jens og hans Viv;
 og Rugens Kjærne sød og sund
 rækker mod hinandens Mund
-   Jens og hans Viv.
+    Jens og hans Viv.
 
 Saa vandrer rundt om Rugens Tægt
-   Jens og hans Viv;
+    Jens og hans Viv;
 de tror, den bliver god til Vægt
-   Jens og hans Viv;
-og Straaet selv er godt iaar!
+    Jens og hans Viv;
+    og <i>Straaet</i> selv er godt iaar!
 Ja, en herlig Høst de faar,
-   Jens og hans Viv.
+    Jens og hans Viv.
 
 Men de har ogsaa trolig slidt,
-   Jens og hans Viv,
+    Jens og hans Viv,
 og Torn og Tidsler høsted tidt
-   Jens og hans Viv.
+    Jens og hans Viv.
 - Med Aftensol paa kroget Ryg
 gaar saa tryg om Rug og Byg
-   Jens og hans Viv.
+    Jens og hans Viv.
 </body>
 </poem>
 
 <poem id="aakjaer200009247">
 <head>
-   <title>Kornmod</title>
-   <toctitle>Kornmod</toctitle>
-   <indextitle>Kornmod</indextitle>
-   <firstline>Det er favnende Nat over øde Kjær</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Kornmod</title>
+    <firstline>Det er favnende Nat over øde Kjær</firstline>
+    <source pages="27-28"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Det er favnende Nat over øde Kjær;
 Lysene slukkes i ensomme Ruder.
 Det er Tiden mod Høst, det er Stjerneskjær;
-   Sivene luder,
-   mens det lyner.
+            Sivene luder,
+            mens det lyner.
 
 Der gaar Strimer af Hvidt over Himlen mod Nord,
 Engene aander, og Duggbadet frisker;
 Vinden gaar tyssende hen over Jord,
-   Flægene hvisker,
-   mens det lyner.
+            Flægene hvisker,
+            mens det lyner.
 
 Oxerne drejer de duggslagne Horn,
 standser i Drøvet med opspærret Øje;
 Bankerne skvulper paa Bølger af Korn,
-   synes saa høje,
-   naar det lyner.
+            synes saa høje,
+            naar det lyner.
 
 Himlen staar tavs over tiende Land;
 Øret kan høre, hvor Rødderne drikker;
 Dværg-Aspen bævrer ved flammedøbt Vand,
-   Tidslerne nikker,
-   mens det lyner.
+            Tidslerne nikker,
+            mens det lyner.
 
 Rugfaldet krydser de tyngede Straa,
 ta'r mod Velsignelsens lysende Naade;
 Vipperne sænker sig ydmyge, graa,
-   dryppende vaade,
-   imens det lyner.
+            dryppende vaade,
+            imens det lyner.
 
 Frøerne springer saa vildt om min Taa;
-Længslerne vil, jeg til hende skal vandre.
+Længslerne vil, jeg til <i>hende</i> skal vandre.
 Elskende Sjæle som duggede Straa
-   nærmes hverandre,
-   naar det lyner.
+            nærmes hverandre,
+            naar det lyner.
 </body>
 </poem>
 
 <poem id="aakjaer200009248">
 <head>
-   <title>Høst</title>
-   <toctitle>Høst</toctitle>
-   <indextitle>Høst</indextitle>
-   <firstline>Og aldrig stemmes en Sjæl saa glad</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Høst</title>
+    <firstline>Og aldrig stemmes en Sjæl saa glad</firstline>
+    <source pages="29"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Og aldrig stemmes en Sjæl saa glad,
@@ -468,11 +423,10 @@ som den, der gik ned mellem Traver.
 
 <poem id="aakjaer200009249">
 <head>
-   <title>Leen slibes</title>
-   <toctitle>Leen slibes</toctitle>
-   <indextitle>Leen slibes</indextitle>
-   <firstline>Hør hvor den hyler, den gamle Sten</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Leen slibes</title>
+    <firstline>Hør hvor den hyler, den gamle Sten</firstline>
+    <source pages="30-32"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hør hvor den hyler, den gamle Sten,
@@ -481,7 +435,7 @@ Ja saa minsandten, paa brune Ben
 staar jo den Sliber i Krogen!
 
 Saa er da Leernes Fred forbi;
-nu skal de luftes, de støvede "Pinde",
+nu skal de luftes, de støvede ,,Pinde'',
 Odden skal glimte i Solen fri,
 Dugg over Knagerne rinde.
 
@@ -514,78 +468,76 @@ Handuen danser og kurrer.
 
 <poem id="aakjaer2000092410">
 <head>
-   <title>Høstvise</title>
-   <toctitle>Høstvise</toctitle>
-   <indextitle>Høstvise</indextitle>
-   <firstline>Nu er Sæd en lang og gul</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Høstvise</title>
+    <firstline>Nu er Sæd en lang og gul</firstline>
+    <source pages="33-35"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-   Nu er Sæden lang og gul,
-   tung i Top og strunk i Straa,
+        Nu er Sæden lang og gul,
+        tung i Top og strunk i Straa,
 og den sidste Kukmand er forlængst rejst sønderpaa.
-   Og nu hvæsser vi vor Le,
-   og saa mejer vi vort Korn,
+        Og nu hvæsser vi vor Le,
+        og saa mejer vi vort Korn,
 og saa favner vi vor Kvinde under Maanens Horn.
 
-   Ja, nu letter vi vor Krop,
-   naar det dæmrer imod Dag,
+        Ja, nu letter vi vor Krop,
+        naar det dæmrer imod Dag,
 og saa spænder vi vor Næve om den krumme Knag;
-   og saa segner Sæden ned
-   over Mejeredets Arm,
+        og saa segner Sæden ned
+        over Mejeredets Arm,
 som en Kvinde langsomt synker mod sin Bejlers Barm.
 
-   Frøen mister nu sin Fred,
-   se, han springer for mit Blad,
+        Frøen mister nu sin Fred,
+        se, han springer for mit Blad,
 og det samme gjør nok Ræven hist, den røde Rad
-   Han, som la' sin Røverborg
-   frækt i Vangen mod min Gaard,
+        Han, som la' sin Røverborg
+        frækt i Vangen mod min Gaard,
 har nu sidste Gang smagt Kyllingsteg i dette Aar.
 
-   Saa du Haren Diget sprang,
-   bange for mit Mejeréd,
+        Saa du Haren Diget sprang,
+        bange for mit Mejeréd,
 mens den blinde Muldvarp borer sig lidt læng're ned.
-   Lange Skridt gi'r brede Skaar,
-   opad med din Hjøleknag!
+        Lange Skridt gi'r brede Skaar,
+        opad med din Hjøleknag!
 Solen vejrer; Mynten krydrer Marken for og bag.
 
-   Staalet synger, Suset gaar,
-   Klinten kildrer Pigens Knæ,
+        Staalet synger, Suset gaar,
+        Klinten kildrer Pigens Knæ,
 hvor i Vipper sødt hun tripper bag min Le i Læ;
-   Krattens Tand gjør Hop paa Hop,
-   Neget snøres med et Stød;
+        Krattens Tand gjør Hop paa Hop,
+        Neget snøres med et Stød;
 Pigens Kinder blusser som en Sky mod Aften rød.
 
-   Før vi atter ta'r et Tørn
-   faar den tørre Hals et Klunk,
+        Før vi atter ta'r et Tørn
+        faar den tørre Hals et Klunk,
 hist hvor Hunden Plads har funden mod den gule Dunk.
-   Melmadstejnen - frem med den!
-   Saa bli'r Hunden himmelglad,
+        Melmadstejnen - frem med den!
+        Saa bli'r Hunden himmelglad,
 faar for lang og trofast Vogten en Bid Pølsemad.
 
-   Saa i Gang med sidste Kvart
-   under Klang og stærke Skridt;
+        Saa i Gang med sidste Kvart
+        under Klang og stærke Skridt;
 nu mod Aften maa de sløve Leer stryges tidt.
-   Og saa dufter der saa tungt
-   rundenom af Høstens Skat,
+        Og saa dufter der saa tungt
+        rundenom af Høstens Skat,
 mens paa Himlen lange Skyer gaar med Bud om Nat.
 
-   Og saa runger Klokkens Malm
-   over slagne Enge ud,
+        Og saa runger Klokkens Malm
+        over slagne Enge ud,
 og saa trækker Hyrdepigen hjem med Ko og Stud.
-   Men vi hvæsser, og vi slaar,
-   indtil Maanen stiger bleg;
+        Men vi hvæsser, og vi slaar,
+        indtil Maanen stiger bleg;
 og saa kysser vi vor Pige paa det sidste Neg.
 </body>
 </poem>
 
 <poem id="aakjaer2000092411">
 <head>
-   <title>Hjøle-Thames</title>
-   <toctitle>Hjøle-Thames</toctitle>
-   <indextitle>Hjøle-Thames</indextitle>
-   <firstline>Han bor derude ved Bysens Skjel</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Hjøle-Thames</title>
+    <firstline>Han bor derude ved Bysens Skjel</firstline>
+    <source pages="36-39"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Han bor derude ved Bysens Skjel,
@@ -610,7 +562,7 @@ Saa bugner Bordet af Sul og Mad,
 det bedste som findes i Huset;
 Madmoderen topper Kartofler paa Fad,
 og nytappet Øl staar i Kruset
-og Gamlingen gumler og fylder sin Skrot.;
+og Gamlingen gumler og fylder sin Skrot;
 der prates og drikkes og drammes;
 og Husbonden tror, det skal svare sig godt:
 Hvor faar man en Høster som Thames. -
@@ -633,13 +585,13 @@ selv Skræppen hentes og rammes;
 thi Thameses Hjøle bider paa alt,
 men inte bider paa Thames.
 
-Ja, stram nu Remmen, du sejge Knøs,
+Ja, stram nu Remmen, du seje Knøs,
 og pas de buede Knage;
 vær virm med Kratten, du brune Tøs,
 og kik dig ikke tilbage!
-Thi Høstens Gjerning er ilde gjort,
+Thi Høstens Gjærning er ilde gjort,
 hvor ikke Senerne strammes,
-og dér med en Ryg som en Ladeport
+og dér - med en Ryg som en Ladeport
 i Bjørnestyrke gaar Thames.
 
 Sin Hue har han paa Neget lagt,
@@ -654,7 +606,7 @@ og heder Skallen paa Thames.
 - Har Maanen sig rejst bag Rugnegs Top,
 mens højere Kilderne risler,
 da vandrer Thames med ludende Krop
-dérud bag de strittende Tidsler.
+didud bag de strittende Tidsler.
 Han standser en Stund med sin Le paa Lænd.
 Af Fjerskyer Østhimlen skrammes:
 - Nu skrider tusinde trætte Mænd
@@ -664,14 +616,13 @@ mod mørke Hytter som Thames.
 
 <poem id="aakjaer2000092412">
 <head>
-   <title>Rugen kjøres hjem</title>
-   <toctitle>Rugen kjøres hjem</toctitle>
-   <indextitle>Rugen kjøres hjem</indextitle>
-   <firstline>Giv dem nu Tømmen, de pumrede Øg</firstline>
-   <notes>
-      <note> pumrede, laskede; Skrav, en firkantet Ramme af Træ udenom Høstvognens Fading (en Skravvogn); kraaner, knejser paa en selvsikker Maade, hvistes, kastes i Vejret; Skjælbasser, de store Løbebiller; Bindersken, den Kvinde som binder Negene sammen to og to til en Tvilling; Halder, Fordybninger i Hjulsporet; Vrej, brat Sving i en Vej; Lokes Havresæd kaldes det Lysfænomen, der paa varme Dage ses som en sitrende Dis mod fjern Horisont.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>Rugen kjøres hjem</title>
+    <firstline>Giv dem nu Tømmen, de pumrede Øg</firstline>
+    <notes>
+        <note><i>pumrede</i>, laskede; <i>Skrav</i>, en firkantet Ramme af Træ udenom Høstvognens Fading (en <i>Skrav</i>vogn); <i>kraaner</i>, knejser paa en selvsikker Maade, <i>hvistes</i>, kastes i Vejret; <i>Skjælbasser</i>, de store Løbebiller; <i>Bindersken</i>, den Kvinde som binder Negene sammen to og to til en Tvilling; <i>Halder</i>, Fordybninger i Hjulsporet; <i>Drej</i>, brat Sving i en Vej; <i>Lokes Havresæd</i> kaldes det Lysfænomen, der paa varme Dage ses som en sitrende Dis mod fjern Horisont.</note>
+    </notes>
+    <source pages="40-44"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Giv dem nu Tømmen, de pumrede Øg,
@@ -695,9 +646,9 @@ vugger i Hoften til Hestenes Trav,
 holder Balancen med Hælen.
 
 Der et Par Faar har i Sporet sig lagt:
-"Let dog paa Sulet, I pelsrede Taaber,
+,,Let dog paa Sulet, I pelsrede Taaber,
 tag eders gispende Flanker i Agt;
-hører I ikke, man raaber!"
+hører I ikke, man raaber!''
 
 Hjulene rasper i Grus og i Sand;
 Faarene styrter med Brægen i Grøften,
@@ -707,7 +658,7 @@ svaler paa Heden med Snøften.
 Aarerne svulmer paa Hestenes Bug,
 Kusken han letter sin svedige Hue,
 svinger saa op om den klyngede Rug,
-hej i en svimlende Bue.
+hej! i en svimlende Bue.
 
 Smidigt han springer fra Fadingens Rand,
 fritter om Øllet og linner ved Korken,
@@ -716,7 +667,7 @@ griber saa modigt om Forken.
 
 Bindersken ordner sin kridhvide Hat,
 strammer dens Baand om sin buttede Hage,
-hopper paa Vognen og raaber: "Tagfat!"
+hopper paa Vognen og raaber: ,,tagfat!''
 Knøsen maa Skoene tage.
 
 Negene aander den tungeste Duft,
@@ -737,7 +688,7 @@ bruger hans Skulder som Skamle.
 Sagte hun synker som Rughøstens Ny!
 Knøsen ærbødigt om Anklerne fatter,
 skyder sig ind under Solhattens Sky.
-... Glutten sig værger med Latter.
+. . . Glutten sig værger med Latter.
 
 Atter det ringler i Kobler og Stjært,
 Hjulene hugger, og Stubberne knaser,
@@ -746,7 +697,7 @@ spænder de duskede Haser.
 
 Kusken han skridter saa tæt og saa sejg,
 styrer saa snildt over Huller og Halder,
-vogter sit Læs, hvor hans Vej har et Vrej,
+vogter sit Læs, hvor hans Vej har et Drej,
 støtter dets Vægt, før det falder.
 
 Støvet det gjør ham som Burren saa graa,
@@ -758,18 +709,17 @@ Møllen slaar Kors paa sin Bakke.
 
 <poem id="aakjaer2000092413">
 <head>
-   <title>Naar Rugen skal ind</title>
-   <toctitle>Naar Rugen skal ind</toctitle>
-   <indextitle>Naar Rugen skal ind</indextitle>
-   <firstline>Nu er det længe siden</firstline>
-   <notes>
-      <note> Lime, Kost af Rævlingris; Tvilling, Dobbeltneg; hveger, en blødtflakkende Bevægelse.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>Naar Rugen skal ind</title>
+    <firstline>Nu er det længe siden</firstline>
+    <notes>
+        <note><i>Lime</i>, Kost af Rævlingris; <i>Tvilling</i>, Dobbeltneg; <i>hveger</i>, en blødtflakkende Bevægelse.</note>
+    </notes>
+    <source pages="45-49"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Nu er det længe siden,
-men end det gjemmes i mit Sind,
+men end det gjemmes i <i>mit</i> Sind,
 hvordan i Barndomstiden
 den kjære Rug kom ind,
 hvordan dens kjærnetunge Top
@@ -785,7 +735,7 @@ hvert snavset Straa tilside
 som for en Hædersgjæst.
 
 Den kjære Rug var Gjæsten,
-som gjorde hvert et Barn saa spændt;
+som gjorde hvert et Barn saa spændt,
 se, Far han lægger Vesten
 og sér saa indadvendt:
 En Skjælven i et ydmygt Sind,
@@ -809,7 +759,7 @@ af Moders milde Hænder
 faar Ax og Mule-Klap.
 
 Og alle Hænder jager,
-og alle Fødder er i Rend
+og alle Fødder er i Rend;
 i Støvet Læsset brager
 for brede Rygges Spænd.
 Højt svinger Hjulet som et Rat,
@@ -818,8 +768,8 @@ har Børnene sig sat.
 
 Mor ta'r paa Neget Sæde
 og linner lidt ved Baandet skjørt:
-"Det er endda en Glæde,
-naar Kornet er saa tørt!"
+,,Det er endda en Glæde,
+naar Kornet er <i>saa</i> tørt!''
 Og med sin matte, spinkle Arm
 hun løfter Rugens Tvilling
 ind ad den lave Karm.
@@ -857,25 +807,25 @@ Og Hjemmet gaar til Hvile
 med Høsten i sin Favn.
 </body>
 </poem>
+
 </content>
 </section>
 
 <section level="1">
 <head>
-   <toctitle>Andre Digte</toctitle>
+    <toctitle>Andre Digte</toctitle>
 </head>
 <content>
 
 <poem id="aakjaer2000092414">
 <head>
-   <title>Karlsvognen</title>
-   <toctitle>Karlsvognen</toctitle>
-   <indextitle>Karlsvognen</indextitle>
-   <firstline>I det vældige Rum, hvori Kloderne svæver</firstline>
-   <notes>
-      <note> Blaane, Sky.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>Karlsvognen</title>
+    <firstline>I det vældige Rum, hvori Kloderne svæver</firstline>
+    <notes>
+        <note><i>Blaane</i>, Sky.</note>
+    </notes>
+    <source pages="53-56"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 I det vældige Rum, hvori Kloderne svæver,
@@ -883,19 +833,19 @@ hvor de drager som Flager af Mulm og af Lys,
 hvori Stjernernes Tusinder flimrer og bæver
 under Almagtens Pust og det Eviges Gys -
 
-- I det Tavshedens Dyb er du sat til at vandre
+- i det Tavshedens Dyb er du sat til at vandre
 med din knækkede Stang omkring Nordboens Pol;
 og naar Jordbuens Skygger har taget de andre,
 staar du lige ukuet, syvstjernede Sol! -
 
 Jeg har talt dine Hjul, før jeg knap kunde stave,
-jeg har ridset dit Billed i Rudernes Rim;
+jeg har ridset <i>dit</i> Billed i Rudernes Rim;
 jeg har set dig saa stor over sneede Grave
 men saa bleg, naar det gjæred i Vaarnattens Kim.
 
 Laa jeg skræmmet i Drømme om Farer derude,
 og jeg løfted fra Puden min brændende Kind,
-stod du tindrende tavs i min øverste Rude
+stod <i>du</i> tindrende tavs i min øverste Rude
 og gød lysende Fred i mit barnlige Sind.
 
 Du har fulgt mine Fjed paa den drømmende Hede,
@@ -905,7 +855,7 @@ stod dit Billed og skjalv i den porskranste Dam.
 
 Naar det braged om Natten i Isgangens Panser,
 medens Nordlyset drev sin fortryllende Leg,
-og din Vogn blev beskudt med forsølvede Lanser,
+og <i>din</i> Vogn blev beskudt med forsølvede Lanser,
 stod hos Far jeg ved Gavlen og stirrede bleg.
 
 Du har lyst paa min Sti over rimslagne Enge,
@@ -920,7 +870,7 @@ med dit funklende Hjul og din Stjært imod Nord.
 
 Naar det lyste bag Krat af den segltynde Maane,
 og det suste saa sagte i Midnattens Siv,
-har jeg skimtet dit Hjul bag den vigende Blaane
+har jeg skimtet <i>dit</i> Hjul bag den vigende Blaane
 med min skjælvende Arm om den Elskedes Liv.
 
 Du har løftet min Sjæl mod det Eviges Vrimmel,
@@ -930,69 +880,64 @@ som et usseligt Møl under Stjernernes Loft.
 
 - Da den urfødte Mand havde hvælvet sin Hytte,
 stod du lysende højt for hans skinddækte Dør;
-og hans Slægt vil du se som Udslettelsens Bytte,
+og <i>hans</i> Slægt vil du se som Udslettelsens Bytte,
 thi for dig er Aartusind som Hug gjennem Rør.
 
 Se, du løfter din Lygte i Lidelsens Nætter,
 og de døende Slægter du lyser paa Vej;
-naar min Kvæld stunder til, og sig Skyggerne tætter,
+naar <i>min</i> Kvæld stunder til, og sig Skyggerne tætter,
 lad mig lukke mit Blik om en Straale fra dig!
 </body>
 </poem>
 
 <poem id="aakjaer2000092415">
 <head>
-   <title>Ved Vesterhavet</title>
-   <toctitle>Ved Vesterhavet</toctitle>
-   <indextitle>Ved Vesterhavet</indextitle>
-   <firstline>Havet gaar højt</firstline>
-   <notes>
-      <note> Blaanen, Skyen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>Ved Vesterhavet</title>
+    <firstline>Havet gaar højt</firstline>
+    <source pages="57-58"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-   Havet gaar højt,
-Stormen har Tag i dets Manke;
-   Fraade og Sprøjt
-hvidner den ludende Banke.
-   Halvt under Vand,
-truet af Braadd og af Brand
+               Havet gaar højt,
+        Stormen har Tag i dets Manke;
+               Fraade og Sprøjt
+        hvidner den ludende Banke.
+               Halvt under Vand,
+        truet af Braadd og af Brand
 Høfdernes Enhjørningshorn imod Brændingen stanger.
 
-   Natten gaar ind,
-Skummet fortoner i Graanen;
-   Fyret gi'r Skin,
-Stormen faar Væxt under Blaanen.
-   Klinten sit Bryst
-værger mod Voldsmandens Kryst.
+                Natten gaar ind,
+        Skummet fortoner i Graanen;
+                Fyret gi'r Skin,
+        Stormen faar Væxt under Blaanen.
+                Klinten sit Bryst
+        værger mod Voldsmandens Kryst.
 Brænding og Skrænt under Brøl over Havstokken brydes.
 
-   Bølgen gaar frem,
-buer sin vældige Pande,
-   breder sin Bræm,
-løfter de kogende Vande,
-   styrter mod Klint,
-knuses til Sprøjt paa dens Flint,
+                Bølgen gaar frem,
+        buer sin vældige Pande,
+                breder sin Bræm,
+        løfter de kogende Vande,
+                styrter mod Klint,
+        knuses til Sprøjt paa dens Flint,
 slænger sig over og spy'r mod den flygtende Maane.
 
-   Havnattens Bryn
-drukner i Dybet en Stjerne!
-   fjernt under Sky'n
-vipper en enlig Lanterne.
-   Taagen fra Vest
-sadler sin graalige Hest,
+                Havnattens Bryn
+        drukner i Dybet en Stjerne!
+                fjernt under Sky'n
+        vipper en enlig Lanterne.
+                Taagen fra Vest
+        sadler sin graalige Hest,
 sænker sin havsalte Gus over vindslidte Tage.
 </body>
 </poem>
 
 <poem id="aakjaer2000092416">
 <head>
-   <title>Paa Hedens høje</title>
-   <toctitle>Paa Hedens høje</toctitle>
-   <indextitle>Paa Hedens høje</indextitle>
-   <firstline>Snart er du slettet ud, mit Barndomsland</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Paa Hedens høje</title>
+    <firstline>Snart er du slettet ud, mit Barndomsland</firstline>
+    <source pages="59-65"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Snart er du slettet ud, mit Barndomsland,
@@ -1000,7 +945,7 @@ hvor Rylen pylred om sin simple Rede,
 hvor Porsen stod i Krans om stille Vand,
 mens Maanen svæved over Moser brede.
 Vemodigt gaar mit Blik blandt tavse Minder
-som før, naar Duggen døbte Barnets Kinder.
+som før, naar Duggen døbte <i>Barnets</i> Kinder.
 
 Jeg ved det vel: Min Sorg er i det Blaa
 Kulturens sko'de Spand sin Vildvej drager;
@@ -1023,7 +968,7 @@ og flytter stille Danmarks Gjærdestave;
 den kan ej agte, om en Orm i Furen
 blev sønderlemmet under Jærnets Skuren.
 
-Og dog- hver Gang jeg staar paa Hedens Høje
+Og dog - hver Gang jeg staar paa Hedens Høje
 og vender Blikket mod den vante Grund,
 da brister der en Taare i mit Øje
 og Klagesange vælder i min Mund:
@@ -1062,19 +1007,19 @@ Men I, som skrider nu med Maalesnor
 henover Jyllands fattig-brune Hede,
 som leder Slavekobler i jert Spor
 og skræmmer Hjejlen bort fra Æg og Rede,
-kan vel taale denne ene Stemme,
-der synger om en Fryd, jeg ej kan glemme.
+I kan vel taale denne ene Stemme,
+der synger om en Fryd, den ej kan glemme.
 
 Ja, I som stykker Lyngens Rester ud
 i husmandskarrige smaa Firkantsbidder,
-som bytter mod Plantagers Bjergfyrsklud
+som bytter mod Plantagers Bjærgfyrsklud
 hin høje Alvor i de vilde Vidder,
 I skal engang paa Eftermælet bøde
-for denne "Daad", naar den er stemplet: Brøde!
+for denne ,,Daad'', naar den er stemplet: ,,Brøde''!
 
 Mit Fædreland, hvor nært dit Syd og Nord,
 hvor snart man kan til dine Grænser kjøre!
-Dog rig, mangfoldig var mit Hjemlands Jord,
+Dog rig, <i>mangfoldig</i> var mit Hjemlands Jord,
 nu bli'r det ogsaa snævert indendøre;
 fra Sønder rykker ind Plantagers Stimmel
 og sætter Skodder op for Jyllands Himmel.
@@ -1088,55 +1033,57 @@ og givet det en tom og fremmed Maske.
 
 Lad Skoven spejle sig i Bæltets Vove,
 lad Bøgen samle Marv om Øresund,
-men fri den jydske Mand for Prøjserskove,
+men fri den <i>jydske</i> Mand for Prøjserskove,
 der gjør ham fremmed paa hans egen Grund;
-med Hedens Alvor er hans Sjæl fortrolig,
+med <i>Hedens</i> Alvor er hans Sjæl fortrolig,
 den lagde Højhed om hans lave Bolig.
 
 Spar denne Rest af hærdet Urtidsjord,
 den Solfaldsbro, den Blæstens brune Bane,
 hvor Oldtids Sti sig dulgt i Lyngen snor,
 og Luftens Syn slaar ud sin lyse Fane.
-Lad ikke haant om Hedens "golde" Gave;
-det Land er fattigt, som er idel Have.
+Lad ikke haant om Hedens ,,golde'' Gave;
+det Land er fattigt, som er ,,idel'' Have.
 
 Naar Rugen gynger paa sin grønne Skaft,
 og Hjejlen fløjter blødt mod Aftentide,
 da nyder Bonden ret sit Forspands Kraft
 og nynner ved at høre Ploven skride,
 da føler han hin Grund ved tusind Traade
-at være slynget i hans Livsdøgns Gaade.
+at være slynget i <i>hans</i> Livsdøgns Gaade.
 
 - Se den, som fik en Minderest i Klemme,
 som saa sin Barndoms Lykkeland forraadt,
 han synger mest med Skjælven i sin Stemme
 og gaar ad Stier, andre ej har traadt.
-Jeg har nu bedt for Jyllands brune Hede;
-der burde bydes, hvor jeg kun kan bede.
+<i>Jeg</i> har nu bedt for Jyllands brune Hede;
+der burde <i>bydes</i>, hvor jeg <i>kun</i> kan bede.
 
 Far varsomt, I, som skalter med en Jord,
 ej har traadt med Barnets myge Fødder;
 den ved kun slet, hvor Lyngens Lykke bor,
 der ej har leget ved dens brune Rødder.
 Men brænder I end Gyvlens sidste Ranke,
-brænder ej mit Digt og Digtets Tanke!
+I brænder ej <i>mit</i> Digt og Digtets Tanke!
 </body>
 </poem>
 
 <poem id="aakjaer2000092417">
 <head>
-   <title>Vi er Siv</title>
-   <toctitle>Vi er Siv</toctitle>
-   <indextitle>Vi er Siv</indextitle>
-   <firstline>Lille Bror, hvad var der fat</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Vi er Siv</title>
+    <firstline>Lille Bror, hvad var der fat</firstline>
+    <source pages="66-70"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Første Siv:
-Lille Bror, hvad var der fat,
-saadan som du peb i Nat?
+<nonum><center>Første Siv:</center></nonum>
 
-Andet Siv:
+Lille Bror, hvad var der fat,
+saadan som <i>du</i> peb i Nat?
+
+
+<nonum><center>Andet Siv:</center></nonum>
+
 Aa, jeg drømte noget Stygt,
 saa jeg skjælver end af Frygt:
 Tænk, der kom en fæle Mand,
@@ -1148,7 +1095,9 @@ Bare han er kommen bort!
 Vi er Siv, vi er Siv,
 vi maa vare paa vort Liv!
 
-Første Siv:
+
+<nonum><center>Første Siv:</center></nonum>
+
 Det var nok den fæle Plov,
 han som roder bag hin Skov;
 han er ond; men Gudskelov,
@@ -1162,23 +1111,29 @@ ad hans lange Ørebrusk;
 se, der sidder Haar endnu
 i min Top af Pelsens Lu.
 
-Andet Siv:
+
+<nonum><center>Andet Siv:</center></nonum>
+
 Han er vist en farlig én,
 saadan han kan bruge Ben;
 det er sært at tænke paa,
 naar en anden én maa staa.
 
-Første Siv:
+
+<nonum><center>Første Siv:</center></nonum>
+
 Bare han kom snart igjen
 til mit lune Leje hen.
 Man er næsten som et Træ,
 naar man saadan kan gi' Læ.
 
 Vi er Siv, vi er Siv,
-men vort Liv er ogsaa Liv.
+men <i>vort</i> Liv er ogsaa Liv.
 
-Andet Siv:
-I min Busk en Angemus
+
+<nonum><center>Andet Siv:</center></nonum>
+
+I <i>min</i> Busk en Angemus
 har sit lille tætte Hus;
 jeg kan føle, den har Smaa,
 fire, blinde, perlegraa;
@@ -1186,7 +1141,7 @@ naar den Gamle gaar sin Vej,
 piber de omtrent som jeg.
 For i Dugg med Maaneskin
 smutter Musen ud og ind.
-Har jeg Dugg i Dusken graa,
+Har <i>jeg</i> Dugg i Dusken graa,
 staar den paa sin Bagbens-Taa,
 og saa langt den Smaa kan naa,
 slikker den mit glatte Straa.
@@ -1194,40 +1149,56 @@ slikker den mit glatte Straa.
 Det er næsten som et Kys.
 Den er sød. Der er den! Tys!
 
-Første Siv:
+
+<nonum><center>Første Siv:</center></nonum>
+
 Hvad er det for tunge Stamp?
 Kuskeraab og Hestetramp!
 
-Andet Siv:
-Jorden gynger, hvor jeg staar.
 
-Første Siv:
-Skagler slider i mit Haar.
+<nonum><center>Andet Siv:</center></nonum>
+
+Jorden gynger, hvor <i>jeg</i> staar.
+
+
+<nonum><center>Første Siv:</center></nonum>
+
+Skagler slider i <i>mit</i> Haar.
 Harelejet trædes ned!
-Noget Koldt ved Roden gled ...
+Noget Koldt ved Roden gled . . .
 
-Andet Siv:
+
+<nonum><center>Andet Siv:</center></nonum>
+
 Aa, der er den sorte Mand
 med den lange, krumme Tand!
 
-Første Siv:
+
+<nonum><center>Første Siv:</center></nonum>
+
 Ja! Jeg ser ham: Ploven, Ploven,
 fra den anden Side Skoven!
 
 Skaan os, Plovmand, lad os staa!
 I min Busk en Hare laa!
 
-Andet Siv:
-Og min Mus har fire Smaa!
+
+<nonum><center>Andet Siv:</center></nonum>
+
+Og <i>min</i> Mus har fire Smaa!
 
 Vi er Siv, vi er Siv!
 Vi har kun det ene Liv!
 
-Første Siv:
+
+<nonum><center>Første Siv:</center></nonum>
+
 Av! nu kløved han min Rod!
 
-Andet Siv:
-Aa! nu sled han bort min Fod!
+
+<nonum><center>Andet Siv:</center></nonum>
+
+Aa! nu sled han bort <i>min</i> Fod!
 
 Vi er Siv, vi er Siv!
 Vi har intet Krav paa Liv!
@@ -1236,11 +1207,10 @@ Vi har intet Krav paa Liv!
 
 <poem id="aakjaer2000092418">
 <head>
-   <title>Barnet og den gamle Gaard</title>
-   <toctitle>Barnet og den gamle Gaard</toctitle>
-   <indextitle>Barnet og den gamle Gaard</indextitle>
-   <firstline>Der laa paa Toften en gammel Gaard</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Barnet og den gamle Gaard</title>
+    <firstline>Der laa paa Toften en gammel Gaard</firstline>
+    <source pages="71-74"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Der laa paa Toften en gammel Gaard
@@ -1255,7 +1225,7 @@ mens Stolpen frønned af Ælde.
 
 Og der staar Mor i sin Bryggersdør
 og rækker Far en Taar Urt af Øsen;
-han blæser, drikker og blæser, før
+han blæser, drikker og blæser før
 han rækker Resten til Tøsen.
 
 Og ind og ud ad den lave Port
@@ -1265,7 +1235,7 @@ og Hanen muntrer med Galen.
 
 - Hvor er nu henne den gamle Gaard,
 dens Svalereder bag møre Lægter?
-"Det gamle falder, det ny bestaar" -
+,,Det gamle falder, det ny bestaar'' -
 er Lov for skiftende Slægter.
 
 Hold op at flagre, du Svalelil,
@@ -1286,12 +1256,12 @@ og ej til Verden derude.
 Du er i Dagens den stride Blæst
 en muntert glidende Foraarssvale;
 vi andre kives om Lykkens Rest.
-du la'r Vorherre betale.
+<i>du</i> la'r Vorherre betale.
 
 Vi andre ræddes i Tvivlens Nat,
 naar Bølgens Vrede vort Lys vil slukke;
 du slumrer trygt uden Ror og Rat,
-endda din Baad er en Vugge.
+endda <i>din</i> Baad er en Vugge.
 
 Sov trygt, du lille, i Vuggen hist,
 mens Æblet rødnes i Hast bag Løvet,
@@ -1300,7 +1270,7 @@ og slænger Frugten i Støvet.
 
 Ja, du skal voxe dig sund og stor,
 og du skal altid i Sandhed vandre;
-en Dag saa tager du Viv og Jord
+en Dag saa tager <i>du</i> Viv og Jord
 og bliver Mand som vi andre.
 
 Saa staar du vel, som vi andre staar,
@@ -1312,21 +1282,20 @@ mens Solen synker bag Grene.
 
 <poem id="aakjaer2000092419">
 <head>
-   <title>Tre-Konger</title>
-   <toctitle>Tre-Konger</toctitle>
-   <indextitle>Tre-Konger</indextitle>
-   <firstline>Jeg vandrer her saa ensomt ud ad min Hedevej</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Tre-Konger</title>
+    <firstline>Jeg vandrer her saa ensomt ud ad min Hedevej</firstline>
+    <source pages="75-77"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg vandrer her saa ensomt ud ad min Hedevej,
 mens Gryet kæmper mellem mørke Banker,
-og Tøvejrstaagen tætter sig over Slugt og Slej,
+og Tøvejrstaagen tætter sig over Slugt og Slej
 og Vintermulmet tynger mine Tanker.
 Det er saa tungt at lytte til vaade Vindes Sus,
 naar Vinterregnen prikker i Landevejens Grus,
 og Juleøllet dovner i blommet Bondekrus
-   i Dagene omkring ved Tre-Konger.
+        i Dagene omkring ved Tre-Konger.
 
 Der lister hist foran mig en kroget, gammel Mand
 med Melmadstejnen over Øxebladet;
@@ -1335,7 +1304,7 @@ og standser ved en Gran i Snevand badet.
 Snart lyder Øxeslaget med dybe Ekko-Suk,
 mens rytmisk Træet slipper sit Styrt af Draabedugg;
 min Sjæl med Træet skjælver ved disse Dødsenshug
-   i Dagene omkring ved Tre-Konger.
+        i Dagene omkring ved Tre-Konger.
 
 Hist klumper sig i Taagen en Klynge Hytter graa
 med møre Døre og med skjæve Gavle;
@@ -1344,16 +1313,16 @@ af Kjedsomhed det ramper paa sin Tavle.
 Her sidder mangen Moder og ved ej Raad for Brød,
 der ligger mangen Stakkel og venter paa sin Død,
 mens Øjet ængstet følger den matte Tørveglød
-   i Dagene omkring ved Tre-Konger.
+        i Dagene omkring ved Tre-Konger.
 
 Ak, underverdens-trist er en Hedehyttes Vraa,
 dens Veje plørede, dens Stier slemme!
-Barmhjertighedens Engel har her saa langt at gaa,
+Barmhjærtighedens Engel har her saa langt at gaa,
 og derfor bliver han som oftest hjemme;
 men Vinteren er trofast med Flyvegigt og Kuld,
 af klare Snekrystaller den puster Kaalen fuld,
 og Maaren gnaver Huller i Hyttens Hattepuld
-   i Dagene omkring ved Tre-Konger.
+        i Dagene omkring ved Tre-Konger.
 
 - Da spaltes der en Flænge i Vinterdagens Graa,
 en munter Straalepil mit Hjerte rammer;
@@ -1362,21 +1331,20 @@ du høje Himmel over Jordens Jammer.
 Aa se, hvor Straalen spiller - paa Mossets grønne Plyds,
 paa Lyng, paa Rug, paa Rævling, paa Raadyrbukkens Kryds!
 Det er til Jordens Hytter et nedslængt Fingerkys
-   i Dagene omkring ved Tre-Konger.
+        i Dagene omkring ved Tre-Konger.
 </body>
 </poem>
 
 <poem id="aakjaer2000092420">
 <head>
-   <title>Den første Lærke</title>
-   <toctitle>Den første Lærke</toctitle>
-   <indextitle>Den første Lærke</indextitle>
-   <firstline>Den første Lærke, den første Lærke!</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Den første Lærke</title>
+    <firstline>Den første Lærke, den første Lærke!</firstline>
+    <source pages="78"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Den første Lærke, den første Lærke!
-vort Hjerte jubler i Dagens Sol.
+Den første Lærke, den første Lærke!''
+vort Hjærte jubler i Dagens Sol.
 Den første Lærke, den første Lærke!
 Den Syge drejer sig i sin Stol.
 
@@ -1389,14 +1357,13 @@ paa Vejen mod Rosens første Knop!
 
 <poem id="aakjaer2000092421">
 <head>
-   <title>Vaar-Rim</title>
-   <toctitle>Vaar-Rim</toctitle>
-   <indextitle>Vaar-Rim</indextitle>
-   <firstline>Moders Dyner er lagt paa Hæs</firstline>
-   <notes>
-      <note> dryner, et langtrukkent, undertrykt Brøl hos Koen; Tøflen, Bekkasinen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>Vaar-Rim</title>
+    <firstline>Moders Dyner er lagt paa Hæs</firstline>
+    <notes>
+        <note><i>dryner</i>, et langtrukkent, undertrykt Brøl hos Koen; <i>Toflen</i>, Bekkasinen.</note>
+    </notes>
+    <source pages="79-80"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Moders Dyner er lagt paa Hæs,
@@ -1423,70 +1390,68 @@ Tøflerne danser mod Gildesgaard.
 
 <poem id="aakjaer2000092422">
 <head>
-   <title>Morgendugg</title>
-   <toctitle>Morgendugg</toctitle>
-   <indextitle>Morgendugg</indextitle>
-   <firstline>Gâl nu, min Hane, Dagen er nær</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Morgendugg</title>
+    <firstline>Gâl nu, min Hane, Dagen er nær</firstline>
+    <source pages="81-83"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Gâl nu, min Hane, Dagen er nær,
-   kølige Kjær
-   drager sit Vejr,
+        kølige Kjær
+        drager sit Vejr,
 Solkuglen stiger til Gjøgenes Kuk
-   af Morgendugg.
+        af Morgendugg.
 
 Højene svømmer paa Dampe i Dans,
-   Kløver i Krans
-   spiller i Glans;
+        Kløver i Krans
+        spiller i Glans;
 Straalerne leger til Kildernes Kluk
-   i Morgendugg.
+        i Morgendugg.
 
 Klokkerne dangler med stigende Klang,
-   Rugen i Vang
-   svajer sin Svang.
+        Rugen i Vang
+        svajer sin Svang.
 Bonden paa Toften opsender et Suk
-   i Morgendugg.
+        i Morgendugg.
 
 Vinden begynder sin spøgende Dont,
-   Møllen faar tront,
-   Vingen gaar rundt;
+        Møllen faar tront,
+        Vingen gaar rundt;
 Løget paa Mønningen slipper med Buk
-   sin Morgendugg.
+        sin Morgendugg.
 
 Bien paa Brættet gi'r Lyd som i Graad
-   Vingen er vaad -
-   Blomsten er vaad;
+        Vingen er vaad -
+        Blomsten er vaad;
 tvætter saa Snuden for Gaardsdagens Fnug
-   i Morgendugg.
+        i Morgendugg.
 
 Lammet i Dalene strækker sin Rad,
-   patter saa glad,
-   napper et Blad.
+        patter saa glad,
+        napper et Blad.
 Pelsene damper paa Bede og Buk
-   af Morgendugg.
+        af Morgendugg.
 
-Dugg over Eng, saa er Sletten en Fest;
-   slæng nu din Vest,
-   saa gaar det bedst;
+Dugg over Eng, saa er <i>Sletten</i> en Fest;
+        slæng nu din Vest,
+        saa gaar det bedst;
 Stænglerne styrter for Leernes Hug
-   i Morgendugg.
+        i Morgendugg.
 
 Se hvor det ligger i Ædelstensskjær,
-   Tage og Trær,
-   Marker og Kjær!
+        Tage og Trær,
+        Marker og Kjær!
 Landet og Vandet - Alverden er smuk
-   i Morgendugg!
+        i Morgendugg!
 </body>
 </poem>
 
 <poem id="aakjaer2000092423">
 <head>
-   <title>Bonde Vise</title>
-   <toctitle>Bonde Vise</toctitle>
-   <indextitle>Bonde Vise</indextitle>
-   <firstline>Jeg lagde min Gaard i den rygende Blæst</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Bonde Vise</title>
+    <firstline>Jeg lagde min Gaard i den rygende Blæst</firstline>
+    <source pages="84-86"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg lagde min Gaard i den rygende Blæst,
@@ -1517,97 +1482,95 @@ Her har jeg min Lykke, her har jeg mit Hjem,
 her har jeg mit Kald og min Kvinde;
 har Ploven og Ageren trættet hvert Lem,
 tyst glimter et Skjær mellem Pilene frem;
-da tænder hun Lyset derinde.
+da tænder <i>hun</i> Lyset derinde.
 
 Der gaar som en varmende Strøm i mit Sind
 ved Arnelysenes Kalden;
 hjem nikker mit Spand i den krydrede Vind;
-hos hende jeg sætter til Skiven mig ind,
+hos <i>hende</i> jeg sætter til Skiven mig ind,
 mens Øgene gumler i Stalden.
 </body>
 </poem>
 
 <poem id="aakjaer2000092424">
 <head>
-   <title>Bondens Datter synger</title>
-   <toctitle>Bondens Datter synger</toctitle>
-   <indextitle>Bondens Datter synger</indextitle>
-   <firstline>Giftes vil hver Pigelil</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Bondens Datter synger</title>
+    <firstline>Giftes vil hver Pigelil</firstline>
+    <source pages="87-90"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Giftes vil hver Pigelil
-og nødig altfor silde;
-Lykken kommer, naar han vil,
-men smaat til Bryllupsgilde;
-én ta'r Maal af Arv og Aar,
-gylden Høst og gyldent Haar, -
-én gaar efter Gods og Gaard,
-men jeg vil ha' en glad Mand!
+  Giftes vil hver Pigelil
+  og nødig altfor silde;
+  Lykken kommer, naar han vil,
+  men smaat til Bryllupsgilde;
+  én ta'r Maal af Arv og Aar,
+  gylden Høst og gyldent Haar, -
+  én gaar efter Gods og Gaard,
+men <i>jeg</i> vil ha' en glad Mand!
 
-Den si'r Hyp, som Tømmen faar!
-Og han skal Buxen bære
-paa hans Toft som i hans Gaard,
-for Buxen gjør ham Ære.
-Linner han saa Klinken lidt,
-hører jeg min Husbonds Skridt,
-gaar mit Hjærte godt og blidt
+  Den si'r Hyp, som Tømmen faar!
+  Og <i>han</i> skal Buxen bære
+  paa hans Toft som i hans Gaard,
+  for Buxen gjør ham Ære.
+  Linner han saa Klinken lidt,
+  hører jeg min Husbonds Skridt,
+  gaar mit Hjærte godt og blidt
 ved Tanken om en glad Mand.
 
-Han vil Hjemmets Ærind' gaa
-ved Kjøben som ved Sælgen!
-ikke fuld i Kroen staa
-og tylle Øl i Bælgen.
-Ønsker han en liden Rus,
-ta'r han den i eget Hus,
-spytter ej i andres Krus, -
+  Han vil Hjemmets Ærind' gaa
+  ved Kjøben som ved Sælgen;
+  ikke fuld i Kroen staa
+  og tylle Øl i Bælgen.
+  Ønsker han en liden Rus,
+  ta'r han den i eget Hus,
+  spytter ej i andres Krus, -
 for det gjør ingen glad Mand.
 
-Gaar han i sin egen Dont,
-han nynner under Hjalde;
-halser ikke Huset rundt
-og øser ud sin Galde;
-han staar ikke vred af Seng,
-gamser glubsk af Folk i Flæng,
-snart ad Tøs og snart ad Dreng,
+  Gaar han i sin egen Dont,
+  han nynner under Hjalde;
+  halser ikke Huset rundt
+  og øser ud sin Galde;
+  <i>han</i> staar ikke vred af Seng,
+  gamser glubsk af Folk i Flæng,
+  snart ad Tøs og snart ad Dreng,
 for det gør aldrig glad Mand.
 
-Vælter Sne mod Tærsklen ind
-og spreder langt sit Lagen,
-aldrig ængstes dog mit Sind,
-hvor han har Styrestagen
-Barnet glad paa Gulvet gaar,
-Grisen trind i Stien staar,
-alting trives - Fæ og Faar,
+  Vælter Sne mod Tærsklen ind
+  og spreder langt sit Lagen,
+  aldrig ængstes dog mit Sind,
+  hvor <i>han</i> har Styrestagen
+  Barnet glad paa Gulvet gaar,
+  Grisen trind i Stien staar,
+  alting trives - Fæ og Faar,
 i Gaarden hos en glad Mand!
 
-Driver Regn for Søndenvind,
-mens han maa Agren pløje,
-kommer sent og tavs han ind
-med Dryp fra Skjæg og Trøje
-jeg skal gjør' ham Sengen lun,
-varme Dyne, klappe Dun,
-hæng' hans Frak, hans Sok til Gru'n
+  Driver Regn for Søndenvind,
+  mens <i>han</i> maa Agren pløje,
+  kommer sent og tavs han ind
+  med Dryp fra Skjæg og Trøje -
+  <i>jeg</i> skal gjør' ham Sengen lun,
+  varme Dyne, klappe Dun,
+  hæng' hans Frak, hans Sok til Gru'n
 og sove ved en glad Mand.
 
-Kvinder er som Blomster smaa,
-de gror kun godt i Glæde.
-Faar jeg den, jeg tænker paa,
-saa skal jeg aldrig græde;
-snildt jeg snurrer da min Rok,
-pusler om en Gutteflok.
-- Aah, der bliver Lykke nok,
+  Kvinder er som Blomster smaa,
+  de gror kun godt i Glæde.
+  Faar <i>jeg</i> den, jeg tænker paa,
+  saa skal jeg aldrig græde;
+  snildt jeg snurrer da min Rok,
+  pusler om en Gutteflok.
+  - Aah, der bliver Lykke nok,
 naar først man har en glad Mand!
 </body>
 </poem>
 
 <poem id="aakjaer2000092425">
 <head>
-   <title>Høgen</title>
-   <toctitle>Høgen</toctitle>
-   <indextitle>Høgen</indextitle>
-   <firstline>Vær hilset Høg over Granetop</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Høgen</title>
+    <firstline>Vær hilset Høg over Granetop</firstline>
+    <source pages="91-92"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Vær hilset Høg over Granetop,
@@ -1634,14 +1597,13 @@ og Solens Blink paa din Vinge.
 
 <poem id="aakjaer2000092426">
 <head>
-   <title>Sundt Blod</title>
-   <toctitle>Sundt Blod</toctitle>
-   <indextitle>Sundt Blod</indextitle>
-   <firstline>Jeg bærer med Smil min Byrde</firstline>
-   <notes>
-      <note> Arker, Fjerskyer; dynker, stænker.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>Sundt Blod</title>
+    <firstline>Jeg bærer med Smil min Byrde</firstline>
+    <notes>
+        <note><i>Arker</i>, Fjerskyer; <i>dynker</i>, stænker.</note>
+    </notes>
+    <source pages="93-94"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jeg bærer med Smil min Byrde,
@@ -1650,7 +1612,7 @@ jeg er som den vilde Hyrde,
 der gjenner sit Kvæg paa Græs.
 
 Se, Duggen driver fra Norden
-hen over det bøjedé Korn,
+hen over det bøjede Korn,
 mens Solen stiger af Jorden
 imellem Oxernes Horn!
 
@@ -1666,58 +1628,56 @@ og Bukkene bræger af Fryd!
 
 - Hvor kan I dog gruble og græde,
 saalænge Guds Himmel er blaa!
-Mit Hjærte skjælver af Glæde,
+<i>Mit</i> Hjærte skjælver af Glæde,
 blot Duggen dynker et Straa.
 </body>
 </poem>
 
 <poem id="aakjaer2000092427">
 <head>
-   <title>Maanen kysser Rugneget</title>
-   <toctitle>Maanen kysser Rugneget</toctitle>
-   <indextitle>Maanen kysser Rugneget</indextitle>
-   <firstline>Du Smaa, du Smaa</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Maanen kysser Rugneget</title>
+    <firstline>Du Smaa, du Smaa</firstline>
+    <source pages="95-96"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-   Du Smaa, du Smaa,
-   du søde Smaa,
+    Du Smaa, du Smaa,
+    du søde Smaa,
 jeg kysser dig fra Top til Taa!
 
-   "Fra Top til Taa?
-   Jasaa!
-   Lad gaa!
-   lad Kysset gaa
-   fra Top til Taa
+   ,,Fra Top til Taa?
+        Jasaa!
+        Lad gaa!
+    lad Kysset gaa
+    fra Top til Taa
 og om igjen og ned og op
 fra Negets Taa til Axets Top.
 
-Men stop, o stop!
-Dér sprang en Strop!"
+    Men stop, o stop!
+    Dér sprang en Strop!''
 
 Nej! nu gaar Rimet i Galop!
-   Taa og Top,
-   Kysgalop,
+    Taa og Top,
+    Kysgalop,
 Stropper ned og Bændler op!
 
 Hvad staar dér? En Barm i Knop!
 Og histnede: Knæ i Hop!
 
-   Knæ og Knop,
-   Rosers Hop,
+    Knæ og Knop,
+    Rosers Hop,
 hvide Liljer ned og op!
 
-"Elsk mig! Tag mig! Tavl og Top!"
+,,Elsk mig! Tag mig! Tavl og Top!''
 </body>
 </poem>
 
 <poem id="aakjaer2000092428">
 <head>
-   <title>Hummeren</title>
-   <toctitle>Hummeren</toctitle>
-   <indextitle>Hummeren</indextitle>
-   <firstline>De to' mæ paa tredve Favne Wand</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Hummeren</title>
+    <firstline>De to' mæ paa tredve Favne Wand</firstline>
+    <source pages="97"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 De to' mæ paa tredve Favne Wand,
@@ -1727,21 +1687,20 @@ de kund' saa nappele bund'e.
 
 Fâr gik a saa dawle og gro, aaja!
 No haar a en Kjowl saa rø'.
-Søen gôr æ gjan mæ det Gued, en ska' ha:
+Søen gôr æ gjan mæ det Gued, en ska' ha':
 Det kommer - nær en er dø'!
 </body>
 </poem>
 
 <poem id="aakjaer2000092429">
 <head>
-   <title>Øwer æ ævn'</title>
-   <toctitle>Øwer æ ævn'</toctitle>
-   <indextitle>Øwer æ ævn'</indextitle>
-   <firstline>Haar do hør', haar du hør', te Pe' Døw han er dø'</firstline>
-   <notes>
-      <note> sejjer, sidder; strag, glat i Huden; æ Kjar', Kjærene; Skru', Tørvestabel; tarr', tørre; sni, tværs over til; Pwot, Port; Sown, Sogn; saa', sagde; knøv og bown, kjøn og imponerende af Ydre; wot, været; og dæ Ky'r og sikke Køer; hejsen, ellers; Skrantings-Gord, en Smule Gaard; sgi, sandelig; Fu'e, Fure; lyd', høre efter; fejst', fæste; snøg, pyntelig; sej ett søen og log', sid ikke saadan og glo (at loge, kikke op paa en halv tvivlende halv forlegen Maade); Lejerlu', Læderhue; Saadl, Sadel; opo, paa; res, rejs; gelik, rap; Stywr, Stivere; hinne, Sind, hendes Vilje; no'tt, nu ikke; trørre, tredive; æ Skræjjer, Skræderpige; Kjærk', Kirke; Gaalt', Galte; ilyw', live; Raan', Pind til Hønsene; Yw', Øje, Drof', Draabe; drevler, savler; men', mens; hwistes, slænges; hed'le, skikkelig; Skej, ilde Snak; Knogl', Fodled; Kaal', Karl; koj', jumpe; Krumm', Smule; en Kon øg, en Smule Hest; o, paa; Taari, Taabenakke.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>Øwer æ ævn'</title>
+    <source pages="98-101"/>
+    <firstline>Haar do hør', haar du hør', te Pe' Døw han er dø'</firstline>
+    <notes>
+        <note><i>sejjer</i>, sidder; <i>strag</i>, glat i Huden; <i>æ Kjar'</i>, Kjærene; <i>Skru'</i>, Tørvestabel; <i>tarr</i>, tørre; <i>sni</i>, tværs over til; <i>Pwot</i>, Port; <i>Sown</i>, Sogn; <i>saa'</i>, sagde; <i>knøv og bown</i>, kjøn og imponerende af Ydre; <i>wot</i>, været; <i>og dæ Ky'r</i>, og sikke Køer; <i>hejsen</i>, ellers; <i>Skrantings-Gord</i>, en Smule Gaard; <i>sgi</i>, sandelig; <i>Fu'e</i>, Fure; <i>lyd'</i>, høre efter; <i>fejst'</i>, fæste; <i>snøg</i>, pyntelig; <i>sej ett søen og log'</i>, sid ikke saadan og glo (at <i>loge</i>, kikke op paa en halv tvivlende halv forlegen Maade); <i>Lejerlu'</i>, Læderhue; <i>Saadl</i>, Sadel; <i>opo</i>, paa; <i>res</i>, rejs; <i>gelik</i>, rap; <i>Stywr</i>, Stivere; <i>hinne Sind</i>, hendes Vilje; <i>no'tt</i>, nu ikke; <i>trørre</i>, tredive; <i>æ Skræjjer</i>, Skræderpige; <i>Kjærk'</i>, Kirke; <i>Gaalt'</i>, Galte; <i>ilyw'</i>, live; <i>Raan'</i>, Pind til Hønsene; <i>Yw'</i>, Øje; <i>Drof'</i>, Draabe; <i>drevler</i>, savler; <i>men'</i>, mens; <i>hwistes</i>, slænges; <i>hed'le</i>, skikkelig; <i>Skej</i>, ilde Snak; <i>Knogl'</i>, Fodled; <i>Kaal'</i>, Karl; <i>koj'</i>, jumpe; <i>Krumm'</i>, Smule; <i>en Kon øg</i>, en Smule Hest; <i>o</i>, paa; <i>Taari</i>, Taabenakke.</note>
+    </notes>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Haar do hør', haar du hør', te Pe' Døw han er dø',
@@ -1753,7 +1712,7 @@ a saatt' sni ad æ Pwot og kam vejstens æ Haw' -
 
 - Do haar aalle hat Maagen te Lykk' i di' Daw'!
 Der er ikki en Enki i hile wor Sown
-- ja saa' a i sejsten! - saa knøv og saa bown.
+- ja saa' a i sejsten! - <i>saa</i> knøv og saa bown.
 Hun er rig, hun haar Peng', hun haar Medler som Skidt,
 hun haar Kister som Hus'; - a haar wot der saa tidt -
 og dæ' Ky'r og dæ' Øg og den Avl, som der stôr!
@@ -1762,10 +1721,10 @@ Det er hejsen nø andt end di' egn' Skrantings-Gord.
 Fæk do hind' i di' Snaar' - war æ ind', var æ u'e,
 - ja hun sku' sgi' snaar løwt' di' Hywl i æ Fu'e!
 
-Men do sworer jo ett! Do ska' lyd' te mi' Taal'!
-A `el fandenmæ ett sejj' for døw' Folk og gaal'!
-Tho do ka' wal forstaa, te en vil dæ di' Bejst',
-nær en pæger paa den, som en tyt, do ku' fejst'!
+- Men do sworer jo ett! Do ska' lyd' te mi' Taal'!
+A 'el fandenmæ ett sejj' for døw' Folk og gaal'!
+Tho do ka' wal forstaa, te en vil dæ di' Bejst,
+nær en pæger paa den, som en tyt, do ku' fejst!
 
 Gjør dæ fin, gjør dæ snøg, sejj' ett søen og log'!
 Ta' di' Lejerlu' aa, smid' en hen i æ Krog!
@@ -1808,8 +1767,8 @@ nær di' Hejst gôr i Sto for Katrin' hinne Trapp',
 og vær lin i æ Knogl', men pas wal o æ Furd,
 nær do kaaste dæ nied fræ æ Saadl te æ Jurd!
 
-- Hwa' for nøj, hwa'for nøj! - Hwa' er do for en Kaal'
-Ska' do søen sto og koj' for aa now en Krumm' Saadl'!
+- - Hwa' for nøj, hwa' for nøj! - Hwa' er <i>do</i> for en Kaa'l!
+Ska' do søen sto og koj' for aa now en Krumm' Saadl!
 Og her haar en gjord' dæ saa fin og saa snøg,
 og saa ka' do ett kravl' opo en Kon Øg!
 
@@ -1820,14 +1779,13 @@ og sej do som en Taari og drewl øwer æ Skro!
 
 <poem id="aakjaer2000092430">
 <head>
-   <title>Jens Fisker</title>
-   <toctitle>Jens Fisker</toctitle>
-   <indextitle>Jens Fisker</indextitle>
-   <firstline>Jens Fisker han bo'de derude ved Aa</firstline>
-   <notes>
-      <note> Togger, Fiskegarn til Anvendelse i Aaløb; Hylsklæde, uldent Sengelagen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>Jens Fisker</title>
+    <firstline>Jens Fisker han bo'de derude ved Aa</firstline>
+    <notes>
+        <note><i>Togger</i>, Fiskegarn til Anvendelse i Aaløb; <i>Hylsklæde</i>, uldent Sengelagen.</note>
+    </notes>
+    <source pages="102-105"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jens Fisker han bo'de derude ved Aa,
@@ -1849,19 +1807,19 @@ Hans Kjælling, Marie, den gnistrende graa,
 hun garver ham Ryggen snart gul og snart blaa.
 
 Jens Fisker han tygger med Taarer sin Skraa:
-"Gud hjælpe hver Kristen, hvis Kjælling vil slaa!"
+,,Gud hjælpe hver Kristen, hvis Kjælling vil slaa!''
 
 - Jens Fisker han trækker hans Vandstøvler paa:
-"Nu gaar jeg og drukner mig, So, i min Aa!"
+,,Nu gaar jeg og drukner mig, So, i min Aa!''
 
 Men Kjællingen larmer med Kjæften paaskraa:
-"Aa, Stodder, lad du kuns saa Støvlerne staa!
+,,Aa, Stodder, lad du kuns saa Støvlerne staa!
 
 Jeg ved da, at Folk, der vil drukne i Aa,
-de trækker ej nye Vandstøvler paa!"
+de trækker ej nye Vandstøvler paa!''
 
-"Ja, ja," svarer Staklen, "men skal de nu staa,
-jeg henter dem, naar du mindst tænker derpaa!"
+,,Ja, ja,'' svarer Staklen, ,,men skal de nu staa,
+jeg henter dem, naar du mindst tænker derpaa!''
 
 - Jens Fisker han kyler sig ud i den Aa
 til Brasener brede og Skallere graa.
@@ -1869,7 +1827,7 @@ til Brasener brede og Skallere graa.
 Men det er da noget, enhver kan forstaa:
 her slutter ej Visen om Jens og hans Aa.
 
-- Naar Uglen er ude, og Natten er graa,
+- - Naar Uglen er ude, og Natten er graa,
 da kommer Jens Fisker til Huset ved Aa.
 
 Han lirker ved Pind, og han letter ved Slaa
@@ -1888,245 +1846,243 @@ Hun vaager med Lys, og hun stænger med Slaa;
 dog gjæster Jens Fisker med Bulder sin Vraa.
 
 Men Kjællingen klager med Kjæften paaskraa:
-"Aa, at jeg dog ej lod ham Støvlerne faa!"
+,,Aa, at jeg dog ej lod ham Støvlerne faa!''
 
 Saa sprang hun som Tudsen fra Brinken i Aa.
-Nu spøger de - hver med sin Vandstøvle paa.
+Nu spøger de - hver med <i>sin</i> Vandstøvle paa.
 </body>
 </poem>
 
 <poem id="aakjaer2000092431">
 <head>
-   <title>Æ gammel Smed</title>
-   <toctitle>Æ gammel Smed</toctitle>
-   <indextitle>Æ gammel Smed</indextitle>
-   <firstline>Og her kommer a med mi' Hywl og mi' Kjep</firstline>
-   <notes>
-      <note>Hywl, Hjul; Sep, Draabe (om Spiritus) i faromgoddaw', i gamle Dage; hwet, sleb; Saws', Saxe; Klaws', Garnfed; baar', bare, fattige; Kuller, Kugler; øj', ødte; nejen, nedenfor; bitte Plaad', d.v.s.:Medaljen; gan, gaaet; Gaad', Bygaden; hejsen, ellers; hytter, nærer; skulter, skutter; æ Tøw, Ulden; en Hywl ka' a sløv', et Hjul kan jeg forme; Ægstol, Ægstaal: Spaad', Spade; Laad', Lade.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>Æ gammel Smed</title>
+    <firstline>Og her kommer a med mi' Hywl og mi' Kjep</firstline>
+    <notes>
+        <note><i>Hywl</i>, Hjul; <i>Sep</i>, Draabe (om Spiritus); <i>i faromgoddaw'</i>, i gamle Dage; <i>hwet</i>, sleb; <i>Saws'</i>, Saxe; <i>Klaws'</i>, Garnfed; <i>baar'</i>, bare, fattige; <i>Kuller</i>, Kugler; <i>øj'</i>, ødte; <i>nejen</i>, nedenfor; <i>bitte Plaad'</i>, ↄ:Medaljen; <i>gan</i>, gaaet; <i>Gaad'</i>, Bygaden; <i>hejsen</i>, ellers; <i>hytter</i>, nærer; <i>skulter</i>, skutter; <i>æ Tøw</i>, Ulden; <i>en Hywl ka' a sløv'</i>, et Hjul kan jeg forme; <i>Ægstol</i>, Ægstaal; <i>Spaad'</i>, Spade; <i>Laad'</i>, Lade.</note>
+    </notes>
+    <source pages="106-109"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Og her kommer a med mi' Hywl og mi' Kjep
-   og mi' Hej-hej-ha og mi' Haah -
+    og mi' Hej-hej-ha og mi' Haah -
 og hwis I vil skink' mæ en jenle bitte Sep,
-   saa blywer mi' Øwen saa glaad'.
+     saa blywer mi' Øwen saa glaad'.
 
 Saa skal a fortæl' jer en Krumm' om mæ sjel
-   og mi' Hej-hej-ha og mi' Haah -
+     og mi' Hej-hej-ha og mi' Haah -
 hwordan a kam hen aa slaa Tysker' ihjæl
-og sjel kam saa skamle te Skaad'.
+     og sjel kam saa skamle te Skaad'.
 
 - I faromgoddaw' drøw a Verden omkring
-   med mi' Hej-hej-ha og mi' Haah -
+    med mi' Hej-hej-ha og mi' Haah -
 tho a ku' jo syssel ved hunder Slavs Ting
-- og æ Pigger - de war mæ saa raar'!
+    - og æ Pigger - de war mæ saa raar'!
 
 A klinked dje Grydder, a hwet dem dje Saws'
-   og dje Hej-hej-ha og dje Haah -
+    og dje Hej-hej-ha og dje Haah -
 hwor bløw de da mild'! A sku' hold' ved dje Klaws',
-   og de vidst' jo aalle nø' Maad'.
+    og de vidst' jo aalle nø' Maad'.
 
-A smej', og a sang, og a klaared mæ godt
-   med mi' Hej-hej-ha og mi' Haah,
+<i>A</i> smej', og <i>a</i> sang, og a klaared mæ godt
+    med mi' Hej-hej-ha og mi' Haah,
 og dér war skam jen, a ku' gjan' ha' faat,
-   og hun war nu ett med de baar'.
+    og <i>hun</i> war nu ett med de baar'.
 
-Men a sku' no ett vær' Mari' hinne Mand
-   med mi' Hej-hej-ha og mi' Haah,
-for a maatt' jo hen aa værg' for æ Land,
-   for den war sgi kommen i Faar'.
+Men <i>a</i> sku' no ett vær' Mari' hinne Mand
+    med mi' Hej-hej-ha og mi' Haah,
+for <i>a</i> maatt' jo hen aa værg' for æ Land,
+    for den war sgi kommen i Faar'.
 
-Det myldred med Tysker', ihwor en so hen,
-med dje Hej-hej-ha og dje Haah,
+<i>Det</i> myldred med Tysker', ihwor en so hen,
+    med dje Hej-hej-ha og dje Haah,
 og Tysker' war sjalden Menneskens Ven,
-saalaant da æ Kuller ska' raad'
+    saalaant da æ Kuller ska' raad'
 
 De dænged wos te med dje Bly og dje Stjen'
-   og dje Hej-hej-ha og dje Haah -
+    og dje Hej-hej-ha og dje Haah -
 og øj' mæ da rejn den jen' af mi' Bjen'
-   og ga' mæ mi' Skrup og mi' Skaad'.
+    og ga' mæ mi' Skrup og mi' Skaad'.
 
 De to'en da fræ mæ her nejen mi' Knæ
-   med dje Hej-hej-ha og dje Haah -
+    med dje Hej-hej-ha og dje Haah -
 og gav mæ saa jen, de haaj huggen af Træ
-- og saa denneher bitte Plaad'.
+    - og saa denneher bitte Plaad'.
 
 - Æ Daw' de gik ad, og æ Tysker' war gan'
-   med dje Hej-hej-ha og dje Haah -
-og saa kam a hjem og gywt' mæ med Ann'
-   og slo' mæ hernied po æ Gaad'.
+    med dje Hej-hej-ha og dje Haah -
+og saa kam <i>a</i> hjem og gywt' mæ med Ann'
+    og slo' mæ hernied po æ Gaad'.
 
 Der sejjer a hejsen og hytter mæ godt
-   med mi' Hej-hej-ha og mi' Haah -
+    med mi' Hej-hej-ha og mi' Haah -
 og skulter mæ javnle og kikker saa smaat,
-   nær æ Vind den flywer med æ Blaad'.
+    nær æ Vind den flywer med æ Blaad'.
 
 For no er a gammel og gro i æ Tow,
-   i mi' Hej-hej-ha og mi' Haah; -
+    i mi' Hej-hej-ha og mi' Haah; -
 men en Hywl ka' a sløv', og en Heist ka' a skow
-og legg' Ægstol ind i en Spaad'.
+    og legg' Ægstol ind i en Spaad'.
 
 Naa, no'el a res' mæ', og saa'el a go
-   med mi' Hej-hej-ha og mi' Haah -
+    med mi' Hej-hej-ha og mi' Haah -
 mi' Kjep haar a ved mæ, mi' Rasp - og mi' Skro,
-   mi' Hywl den vinter ved æ Laad'.
+    mi' Hywl den vinter ved æ Laad'.
 </body>
 </poem>
 
 <poem id="aakjaer2000092432">
 <head>
-   <title>Jens Hvøvtrup</title>
-   <toctitle>Jens Hvøvtrup</toctitle>
-   <indextitle>Jens Hvøvtrup</indextitle>
-   <firstline>Jens Hvøvtrup springer fra Sengens Stok</firstline>
-   <notes>
-      <note>Bløder, moradsige Væld!  Tudsespyt, Slimkager af øjede Tudseæg i sumpet Vand; Væld (og Vilder), enhver Vandudbulning i Kjærbund; Grob, bruges om baade Grøft og Dige; Gungen, Hængedynd; nigrer, rokker ustandselig; tombede, smaataabelige.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>Jens Hvøvtrup</title>
+    <firstline>Jens Hvøvtrup springer fra Sengens Stok</firstline>
+    <notes>
+        <note><i>Bløder</i>, moradsige Væld; <i>Tudsespyt</i>, Slimkager af øjede Tudseæg i sumpet Vand; <i>Vild</i> (og <i>Vilder</i>), enhver Vandudbulning i Kjærbund; <i>Grob</i>, bruges om baade Grøft og Dige; <i>Gungen</i>, Hængedynd; nigrer, rokker ustandselig; <i>tombede</i>, smaataabelige.</note>
+    </notes>
+    <source pages="110-116"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Jens Hvøvtrup springer fra Sengens Stok:
-   Aah - ja,
-   ta' mæ' mi' Bøss'!
+            Aah - ja,
+        ta' mæ' mi' Bøss'!
 En høstlig, skrigende Vildgjæsflok
 saa lydt under Nathimlen larmer.
 
 Jens Hvøvtrup ryster nu Hagl af Horn -
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 og maader gnistrende Krudekorn
 og klapper sin pludrende Kvinde.
 
 Jens Hvøvtrup snapper sin Hat fra Knag,
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 skjønt Uglen varsler ham ondt fra Tag,
 og Flagermusene piber.
 
 Jens Hvøvtrup agter sig øst om Aa,
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 hvor Gaasen svaler den brede Taa
 og gynger sin tyngende Fedme.
 
 Jens Hvøvtrup drages af Vildgjæsskrig,
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 Da spærres hans Vej af Troldkjærsig,
 hvor stygt om Natten det kogler.
 
 Her slynger Taagen sit lange Slæb,
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 mens Rørdrum spuler sit gule Næb
 i Sumpens svovlede Bløder.
 
 Hugormen skeler med Mus i Flab,
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 og Tudsen sidder med Hængegab
 og drejer sin natlige Skralde.
 
 Her sidder Aalen i Tørvepyt,
-   aah - ja,
-   ta' mæ' mi' Bøss !
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 og glor paa Maanen fra Tudsespyt,
 mens Padderokkerne knarker.
 
 Jens Hvøvtrup trækker saa tungt sit Vejr -
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 med Vildgjæs er han nu ligekjær,
 hvor nært end Skrigene frister.
 
 Thi den der synker paa Troldkjærsig,
-   aah - ja,
-   ta' mæ'mi' Bøss'!
+            aah - ja,
+        ta' mæ'mi' Bøss'!
 han griber ikkun i Taagens Flig,
 hvorved sig ingen har løftet.
 
 Jens Hvøvtrup vader i Væld tilknæs -
-   aah - ja,
-   ta' mæ' mi' Bøss'!
-han vil gaa lige men gaar i Kreds,
+            aah - ja,
+        ta' mæ' mi' Bøss'!
+han <i>vil</i> gaa lige men <i>gaar</i> i Kreds,
 hvordan end Sigtet han tager.
 
 Det perler ham koldt bag Hatterem -
-   aah - ja,
-   ta' mæ' mi' Bøss'!
-"Hvor er jeg selv, og hvor er mit Hjem,
-mit Hus og min ventende Kvinde?"
+            aah - ja,
+        ta' mæ' mi' Bøss'!
+,,Hvor er jeg selv, og hvor er mit Hjem,
+mit Hus og min ventende Kvinde?''
 
 Jens Hvøvtrup skrifter for Gud sin Synd,
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 mens Foden synker i dyben Dynd,
 og Bobler om Støvlerne brister.
 
 Da hvirvler Taagen sig rundt i Ring,
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 Snart tykkes den Noget, snart Ingenting,
 mens Kredsen om Jægeren snævres.
 
 Det fløjter i Flæg og Graadusk-Rør,
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 og Taagen flænger sit Vandpyt-Slør
 paa Nattens strittende Grene.
 
 Det dunser og punser om Grob og Grøft,
-   aah - ja,
-   ta' mæ' mi' Bøss'!
-som Helhest-Stamp og som Troldsvin-Snøft,
+            aah - ja,
+        ta' mæ' mi' Bøss'!
+som Helheststamp og som Troldsvinsnøft,
 mens Lygtemænd hopper paa Gungen.
 
 Selv Tørveskruen saa sort og stiv,
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 har snappet sin Naboskrue om Liv
 og danser, saa Top-Tørven flyver.
 
 Jens Hvøvtrup kaster sin Kolb' til Kind,
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 Saa skyder han ind i den Hvirvelvind,
 saa Synerne daaner i Skraldet.
 
 Han kravled iland ved sit tro Gevær,
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 mens Gryet frelsende steg bag Kjær
 og viste kun dryppende Vidjer.
 
 Men siden dued han aldrig stort;
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 de sa' om Skytten, han blev forgjort
 hin Nat derude paa Gungen.
 
-Hans Hoved rokker som Siv paa Kjær.
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+Hans Hoved rokker som Siv paa Kjær,
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 Den Lygtemands-Skyden har gjort ham sær
 og mærket Jens Hvøvtrup for Livet.
 
 Han ses ved Kirken i Sol og Sus -
-   aah - ja,
-   ta' mæ' mi' Bøss'l
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 den blegeste Mand i Herrens Hus,
 og altid med Ho'det han nigrer.
 
 Dog mest han kredser om Troldkjærsig,
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 og altid han fabler om Vildgjæsskrig
 og Sumpens tombede Syner.
 
 Saa maaler han op sit sidste Skud Krud:
-   aah - ja,
-   ta' mæ' mi' Bøss'!
+            aah - ja,
+        ta' mæ' mi' Bøss'!
 og sletter saa al sin Kvide ud,
 mens Ekko fra Bakkerne skogrer.
 </body>
@@ -2134,64 +2090,66 @@ mens Ekko fra Bakkerne skogrer.
 
 <poem id="aakjaer2000092433">
 <head>
-   <title>Gammel Kjærlighed</title>
-   <toctitle>Gammel Kjærlighed</toctitle>
-   <indextitle>Gammel Kjærlighed</indextitle>
-   <firstline>Vi er bløwen nøj aaldre, Kræn Nargaard</firstline>
-   <notes>
-      <note> nøj aaldre, hen paa Alderen; skimm', faa Øje paa; blo, blaa; æ Far', Fadene; stogend, foroverbøjede; æ Bjen', Benene; nær, naar; ta War', tage Vare; o æ Stjen', paa Stenene; alln, anderledes; æ Føsten, ens første Tid; da war vi en bitte Graan lin', da var vi skam smidige; klaa', klare; glaa', glade; Klejmon, Klæder; tyt øm dæ, holdt af dig; æ Kjar', Kjærene; how', huske; Sønde, Søndag; Kled', Tørklæde; aalle, aldrig; wøt, været; ino, endnu; hwerrer, vender, forandrer Retning; Blaan', Sky; Wand skjeller Hy, Vand bortfører Hø; enaan', en anden ; jenle, enligt; laangle, langelig, langtrukken; Torn, Tørn; Born, Byrde; Stumlen, Vaklen; æ Hyld, Hyldetræet; si' Fyld', Træernes Blomster eller Blade.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>Gammel Kjærlighed</title>
+    <firstline>Vi er bløwen nøj aaldre, Kræn Nargaard</firstline>
+    <notes>
+        <note><i>nøj aaldre</i>, hen paa Alderen; <i>skimm'</i>, faa Øje paa; <i>blo</i>, blaa; <i>æ Far'</i>, Fadene; <i>stogend</i>, foroverbøjede; <i>æ Bjen'</i>, Benene; <i>nær</i>, naar; <i>ta War'</i>, tage Vare; <i>o æ Stjen'</i>, paa Stenene; <i>alln</i>, anderledes; <i>æ Føsten</i>, ens første Tid; <i>da war vi en bitte Graan lin'</i>, da var vi skam smidige; <i>klaa'</i>, klare; <i>glaa'</i>, glade; <i>Klejmon</i>, Klæder; <i>tyt øm dæ</i>, holdt af dig; <i>æ Kjar'</i>, Kjærene; <i>how'</i>, huske; <i>Sønde</i>, Søndag; <i>Kled'</i>, Tørklæde; <i>aalle</i>, aldrig; <i>wøt</i>, været; <i>ino</i>, endnu; <i>hwerrer</i>, vender, forandrer Retning; <i>Blaan'</i>, Sky; <i>Wand skjeller Hy</i>, Vand bortfører Hø; <i>enaan'</i>, en anden; <i>jenle</i>, enligt; <i>laangle</i>, langelig, langtrukken; <i>Torn</i>, Tørn; <i>Born</i>, Byrde; <i>Stumlen</i>, Vaklen; <i>æ Hyld</i>, Hyldetræet; <i>si' Fyld'</i>, Træernes Blomster eller Blade.</note>
+    </notes>
+    <source pages="117-119"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-   Vi er bløwen nøj aaldre, Kræn Nargaard,
-   og wor Øwn ka' ett wal skimm' æ Dar',
+    Vi er bløwen nøj aaldre, Kræn Nargaard,
+    og wor Øwn ka' ett wal skimm' æ Dar',
 og wor Kinder er gro, og wor Hinder er blo,
-   og vi spilder æ Mad aa æ Far',
+    og vi spilder æ Mad aa æ Far',
 Vi er bløwen nøj stogend, Kræn Nargaard,
-   og æ Kjæp den maa værg' for æ Bjen',
+    og æ Kjæp den maa værg' for æ Bjen',
 og æ Vægg maa gi' Støtt', nær æ Træsko ska' flytt',
-   og æ Furd maa ta' Wor' o æ Stjen'.
+    og æ Furd maa ta' Wor' o æ Stjen'.
 
-   Det var alln i æ Føsten, Kræn Nargaard,
+    Det var alln i æ Føsten, Kræn Nargaard,
 da war vi en bitte Graan lin',
 og wor Øwn de war klaa', og wor Tanker war glaa',
-   og wor Klejmon war flunkend' og fin'.
+    og wor Klejmon war flunkend' og fin'.
 Aa, saamøj en tyt om dæ, Kræn Nargaard,
-   nær do mødt' mæ dernied' i æ Kjar',
+    nær do mødt' mæ dernied' i æ Kjar',
 og do løwt' mæ iland øwer Vilder og Wand -
-for æ Engi war sjalden ret tarr'.
+    for æ Engi war sjalden ret tarr'.
 
-   Ka' do how', te do kyst mæ, Kræn Nargaard,
+    Ka' do how', te do kyst mæ, Kræn Nargaard,
 en Sønde, a band' dæ di' Kled'?
 A ved aalle nø' Daa, a haar wot snaar saa glaa',
-   og ino kan a græd' ved mi' Gled'.
+    og ino kan a græd' ved mi' Gled'.
 Men si' Sindlav den hwerrer, Kræn Nargaard,
-   og wor Suel gik jo snaar for en Blaan';
+    og <i>wor</i> Suel gik jo snaar for en Blaan';
 for som Wand skjeller Hy - ja som Himmelens Sky,
-   saa skjelles jen Ven fræ enaan'.
+    saa skjelles jen Ven fræ enaan'.
 
    Aa, saa jenle en haar æ, Kræn Nargaard,
 og saa laangle æ Daw' læ' sæ slid'!
 Men en ta'r jo si' Torn, og en bærer si' Born,
-   saalæng' en maa her gaa og strid'.
+   saalæng' en maa hér gaa og strid'.
 - Læ' wos saa komm' te Stumlen, Kræn Nargaard,
    og forglemm', hwad der ett ka' vær' alln!
-- Ka' do skimm', om æ Hyld' ino stor med si' Fyld',
+- Ka' <i>do</i> skimm', om æ Hyld' <i>ino</i> stor med si' Fyld',
    for de sejer, æ Blaad' ska' vær' fald'n.
 </body>
 </poem>
 
 <poem id="aakjaer2000092434">
 <head>
-   <title>Jens Vejmand</title>
-   <toctitle>Jens Vejmand</toctitle>
-   <indextitle>Jens Vejmand</indextitle>
-   <firstline>Hvem sidder der bag Skjærmen</firstline>
-   <notes>
-      <note>Dateret Jebjerg, 19. juni 1905. Første gang trykt i Politiken, 26. juni 1905.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+    <title>Jens Vejmand</title>
+    <firstline>Hvem sidder der bag Skjærmen</firstline>
+    <notes>
+        <note>Dateret Jebjerg, 19. juni 1905. Første gang trykt i Politiken, 26. juni 1905.</note>
+    </notes>
+    <dates>
+        <written>1905-06-19</written>
+        <published>1905-06-26</published>
+    </dates>
+    <source pages="120-122"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 Hvem sidder der bag Skjærmen
@@ -2252,64 +2210,62 @@ man gav ham aldrig én.
 
 <poem id="aakjaer2000092435">
 <head>
-   <title>Store Jon</title>
-   <toctitle>Store Jon</toctitle>
-   <indextitle>Store Jon</indextitle>
-   <firstline>Store Jon han ønsked' sig kun to Tønder Land</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Store John</title>
+    <firstline>Store John han ønsked' sig kun to Tønder Land</firstline>
+    <source pages="123-125"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-Store Jon han ønsked' sig kun to Tønder Land,
-   to Tønder Land
-   og en Ko under Strand,
+Store John han ønsked' sig kun to Tønder Land,
+            to Tønder Land
+            og en Ko under Strand,
 eget Bo med Fred og Ro om Søndag som om Søgn:
 al hans Digt og dyre Drøm i tusind Arbejdsdøgn.
 
 Oppe paa den vilde Skrænt han saa sig Himlen næst.
-   Hej, for en Fest,
-   naar det kuled af Vest!
+            Hej, for en Fest,
+            naar det kuled af Vest!
 Sidde da ved egen Ovn bag egen Lo i Læ,
 lytte tryg til Stormens Sus i eget Hyldetræ.
 
-Fjorden der og Huset her saa godt som nogen Mands.
-   Bier i Dans
-   om Lavendler i Krans!
+Fjorden der og Huset her saa godt som <i>nogen</i> Mands.
+            Bier i Dans
+            om Lavendler i Krans!
 Gavlen gul og Væggen hvid, men Døren himmelblaa,
 Skrænten klædt i Trip og Trap med Lam og Geder graa.
 
 Rug og Byg om Brønden tæt med Vippers Ringlesang,
-   Bønner paa Stang
-   blandt Kartoflerne hang,
+            Bønner paa Stang
+            blandt Kartoflerne hang,
 Havren nikked hid og did og vinked med sin Top,
 Hørren stod saa pæn og blaa og saa troskyldig op.
 
 Helst hans Drøm tog Lød af Høst, naar Neg bli'r lagt paa Skrav
-   Sol gled i Hav
-   under Fløjt fra hans Nav,
+            Sol gled i Hav
+            under Fløjt fra hans Nav,
 Selen skar i Skuldren ind, mens Vej sit Læs han brød,
 strid paa Foden Kvinden gik æbag hans Vogn og skød.
 
-- Store Jon han bar sin Drøm igjennem tredve Aar;
-   hvidt blev hans Haar
-   under slidsomme Kaar;
+- Store John han bar sin Drøm igjennem tredve Aar;
+            hvidt blev hans Haar
+            under slidsomme Kaar;
 Tørvemosen gav ham Brød og Lejehuset Ly,
-ingen Gud har hørt hans Suk og ingen Mand hans Kny.
+ingen Gud har hørt <i>hans</i> Suk og ingen Mand <i>hans</i> Kny.
 
 Mellem Lyng og Moser graa han lister altid om,
-   stærk som en Bom
-   om end Ryggen blev krum;
+            stærk som en Bom
+            om end Ryggen blev krum;
 gaar hans Blik saa brat paa Flugt, hans Lyngle rent istaa,
-ved jeg længst, hvad Store Jon nu atter grubler paa.
+ved jeg længst, hvad Store John nu atter grubler paa.
 </body>
 </poem>
 
 <poem id="aakjaer2000092436">
 <head>
-   <title>Jakob og hans Sønner</title>
-   <toctitle>Jakob og hans Sønner</toctitle>
-   <indextitle>Jakob og hans Sønner</indextitle>
-   <firstline>I Sommersolglans glimted Jakobs Gaard</firstline>
-   <quality>korrektur1,kilde</quality>
+    <title>Jakob og hans Sønner</title>
+    <firstline>I Sommersolglans glimted Jakobs Gaard</firstline>
+    <source pages="126-142"/>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 I Sommersolglans glimted Jakobs Gaard
@@ -2324,15 +2280,15 @@ En Søndag var det, fuld af Lærkelyd,
 Blaaklokken hang og skjalv paa hvert et Dige,
 Valmuen kasted sine Bægerflige
 og svang nu nøgen i sin røde Pryd;
-Hugormen trilled sig med skjællet Fryd
+Hugormen trilled sig med skællet Fryd
 i Vejens Sand og glemte under Badet,
 hvor den er edderspændt, forfulgt og hadet.
 
 I Grupper delt gaar Folk fra Kirken hjem
 endnu med Salmens runde Klang i Øret,
 mens Troens Trylleverden taagesløret
-sig tegner bagom Rugens Bølgebræm.
-Tungt skrider Mand og Viv i Sandet frem
+sig tegner bagom Rugens Bølgebræm!
+tungt skrider Mand og Viv i Sandet frem
 mens langsomt byttes Biblens Billedriger
 for Risengrøden, der hvor Røgen stiger.
 
@@ -2354,7 +2310,7 @@ og ler, saa deres brede Tænder skinner.
 
 Ja, det er Jakobs kjærnesunde Sønner,
 der aarligt samles paa hans Fødselsdag,
-og dér ved Gammens-Øl og Latter lønner
+og dér ved Gammensøl og Latter lønner
 den Gamle for, hvad Tiden slog i Kvag.
 Nu ta'r de Føden under andres Tag,
 men Hjemmet i dets gule Rugfalds-Ramme
@@ -2380,7 +2336,7 @@ Der ligger Høns ved Muren, bred' i Ryggen,
 og gnider Kraasen mod det lunkne Sand;
 igjennem Porten inde bagom Skyggen
 Brøndvippen kraaner med sin tunge Spand;
-den drypper Draaber ned i Brøndens Vand;
+<i>den</i> drypper Draaber ned i Brøndens Vand;
 Stenbroen nys er luget, Sand er strentet,
 saa det er let at se, hvem der er ventet.
 
@@ -2395,7 +2351,7 @@ i Traad med hans om Skraa i Oles Alder.
 De andre svinder gjennem Forstudøren,
 mens Sinken dundrer hult mod Flint og Kamp;
 men allerforrest gaar den stærke Søren,
-ombølget af sin egen Vadmelsdamp,
+ombølget af sin egen Vadmelsdamp;
 saa smælder Klinken gjennem Støvletramp,
 og ind ad Karmens stedse større Flænge
 man ser først én, saa flere Omhængssenge.
@@ -2422,7 +2378,7 @@ og som han vilde Slægtens Kræfter grade,
 den gamle Jakob trykker dybt og fast;
 hans Haand er stærk og sej som Bjælkens Knast!
 At Sønnerne sig ej for Trykket ømmer,
-det siger ham: de er af ormfrit Tømmer!
+det siger ham: De er af ormfrit Tømmer!
 
 Den Gamle er nu lutter Liv og Røre;
 hvert Øjeblik han skifter Smil og Plads;
@@ -2433,41 +2389,41 @@ og langer Snapsen rundt til alle Stole
 fra store Søren til den lille Ole.
 
 Og da de hede Strubers Tørst er slukket,
-og hver især med sit Lykønskningsnik
+og hver især med <i>sit</i> Lykønskningsnik
 har Velkomstskaalen under Vesten stukket
 med ordfaa Ønsker efter Landsens Skik,
 da slaar en liden Stund al Tale Klik,
 til Jakob henter Skuffen med Tobakken,
-saa man faar Fyr, da gaar der Hul paa Snakken!
+saa man faar Fyr, <i>da</i> gaar der Hul paa Snakken!
 
 Thi faar de Piben tændt, de danske Bønder,
 og Snakken rejst om Hest og Ko og Stud,
 vær glad, ifald du véd, hvor det begynder,
-thi hvor det ender véd endikke Gud!
-&thorn;n Æmte ude, straks et Overbud!
+thi hvor det ender - nej, det véd kun Gud!<!-- Senere udgaver har ,,endikke Gud'' -->
+Én Æmte ude, straks et Overbud!
 Og Solen kan gaa ned, og Dagen slukkes,
-før deres Videtørst i Dvale vugges.
+før <i>deres</i> Videtørst i Dvale vugges.
 
 Og Svar og Spørgsmaal som en Haglen falder
 om andre Sognes Avling, Sæd og Skik;
 helst hører Jakob dog om Hestes Alder
 - han kender sine egnes paa en Prik -
 om hvad i Mandags man for Smørret fik,
-og hvad en stads Ko hist i Spanden lægger,
+og hvad en ,,stads Ko'' hist i Spanden lægger,
 og om den nye Hingst nu smukt bedækker.
 
-- Da løftes Faldet let fra Frammesdøren,
+Da løftes Faldet let fra Frammesdøren,
 saa mod Komfuret ses et Forklæd' hvidt;
 det gi'r et ubehersket Kip i Søren,
-da Kirslen træder ind med raske Skridt;
+da <i>Kirsten</i> træder ind med raske Skridt;
 jeg tror saamænd, de begge rødmed' lidt,
 en gammel Udvej for det unge Hjerte,
 før det Forstillelsernes Kunstgreb lærte.
 
-Hun kom tilgaards som Tøs i fordums Dage,
+<i>Hun</i> kom tilgaards som Tøs i fordums Dage,
 før Jakobs Hustru standsed brat sin Rok
 og la' det gamle Hoved tungt tilbage
-med "Kappens" Strimler om sin Sølverlok;
+med ,,Kappens'' Strimler om sin Sølverlok;
 da hængte Kirsten bort sin Barneklok,
 tog voksen Kjole paa og brygged, bagte
 og gjorde syvfold mer, end Tøs kan magte.
@@ -2478,7 +2434,7 @@ i Ovnens Malm, i Bænkens hvide Flager,
 at hun er Hjemmets altid vaagne Fé;
 hun præger Stuen til dens mindste Ske,
 og sagte svinder Døgnets Rids og Rifter.
-hvor stille hendes hvide Forklæd' vifter.
+hvor stille <i>hendes</i> hvide Forklæd' vifter.
 
 Snart dufter Huset da af friske Klejner,
 og Kaffen damper paa den hvide Dug,
@@ -2492,31 +2448,31 @@ Og da nu Kaffen og den gode Kage
 forlængst har fundet et retfærdigt Sted,
 gaar Jakobs Tanker til de kjære Plage,
 som gaar paa Græs i Engen tæt derved;
-han maa derud; kanskesig de gaar med?
-"Ih, ja!" - Enhver nu efter Huen famler,
+<i>han</i> maa derud; kanskesig <i>de</i> gaar med?
+Javist! - Enhver nu efter Huen famler,
 snart staar tilbage kun forladte Skamler.
 
 De raske Knøse kan ej roligt fare,
-men alting endevendes, højt og lavt;
+men alting endevendes højt og lavt;
 de springer som den morgenglade Hare
 og rutter sorgløst med den unge Kraft;
-i "stiv Arm" løftes Skovlen ved sin Skaft,
+i ,,stiv Arm'' løftes Skovlen ved sin Skaft,
 og alt maa prøves fra den nye Spade
 til Hakkelsemaskinens vilde Blade.
 
 Hej, der var to, der rev de gamle Plejle
 fra deres spindelvævsbetrukne Ro
 og lod dem susende i Luften stejle
-med Bump og Bulder paa den mugne Lo!
+med Bump og Bulder paa den mugne Lo;
 Jo det er flinke Gutter begge to!
 Se hvor de smidigt sig i Midjen rækker,
 mens Slaglens Vaand hvert Straa til Jorden strækker!
 
 Skjønt Jakob længst er over Ungdomsalder,
 han ler dog lunt ad deres Brydetag;
-han maner helst til Fred, før nogen falder,
+han maner helst til Fred, <i>før</i> nogen falder,
 og høger ad de altfor voldske Slag.
-Han frydes.som et Barn paa denne Dag;
+Han frydes som et Barn paa denne Dag;
 han nyder Tumlen, skjønt af gammel Vane
 han nu og da maa tysse og formane.
 
@@ -2524,7 +2480,7 @@ En dyndet Svaling staar om Gaardens Gavle
 og glider ad dens aabne Luger ind
 fra Sig og sumpet Kjær, hvor Igler kravle,
 og Padden sitrer i sit klamme Skind.
-Hver Væxt staar rankt; thi der er ingen Vind;
+Hver Væxt staar rankt; thi der er ingen Vind,
 kun Trævlekronen rokker som bedrøvet,
 fordi en Humle tynger den i Støvet.
 
@@ -2582,7 +2538,7 @@ og atter kan man sig til Legen vende
 med Løben, Bryden, Kast og Grøftespring;
 de slaas og dratter om for Ingenting,
 og Jakob følger dem med Faderblikke:
-"Aa, Drenge, Drenge, stød jer end'lig ikke?"
+,,Aa, Drenge, Drenge, stød jer end'lig ikke!''
 
 Men hvem var det, der fik den løbske Grille,
 at Jakob skulde med at springe Buk!
@@ -2641,7 +2597,7 @@ mens Lynet vildt bortøsled sine Straaler,
 og Regnen tømte alle Vredesskaaler.
 
 - Det vilde Vejr er alt af Marken slaget,
-iden høje Himmel atter fejet ren;
+den høje Himmel atter fejet ren;
 nu hænger Regnen kun som Dryp i Taget
 og staar som Dam paa hule Flintesten;
 nu kukker Gjøgen fra sin Hyldegren,
@@ -2649,9 +2605,9 @@ og Millioner Kim langs Solbrands-Stier
 har aabnet deres tørre Mund og dier.
 
 Og atter prates der i Hjemmets Stuer
-om Kjærest'folk, om Bryllup, Præst og Degn;
+om Kjærestfolk, om Bryllup, Præst og Degn;
 men gamle Jakob gjennem Ruden skuer
-mod sine Ro'r, "der trængt' saa haardt til Regn".
+mod sine Ro'r, ,,der trængt' saa haardt til Regn''.
 Nu staar hver Stilk paa ny i Haabets Tegn;
 dog dvæler noget i hans Øjenkrige,
 han vil ha' frem, men ikke ret kan sige.
@@ -2660,9 +2616,9 @@ han vil ha' frem, men ikke ret kan sige.
 og Afskedstimen for de Unge slaar;
 da drager Jakob Søren lidt tilside
 og siger lavmælt, mens de andre gaar:
-"Ja Søren, du faar hjem til Efteraar!
-Jeg føler Ald'ren; Gaarden vil ej rente;
-du har jo Kirsten; hvi skal I da vente!"
+,,Ja Søren, du faar hjem til Efteraar!
+<i>Jeg</i> føler Ald'ren; Gaarden vil ej rente;
+du <i>har</i> jo Kirsten; hvi skal I da vente!''
 
 Ærbødigt hilser de den gamle Fader
 og gaar saa bort henover Bôl og Brak
@@ -2676,7 +2632,7 @@ Kartoffelblomstens blide Bloster slipper
 sin Duft mod Skyen fra sin Bakketind;
 og Rugen rokker paa de svulne Vipper
 og gynger dem i Slummer Kind mod Kind;
-Boghvedens Aande vælder bi-sød ind;
+Boghvedens Aande vælder bisød ind;
 den lyse Nat i Tavshed lægger Kaaben
 om Jordens Skulder efter Tordendaaben.
 
@@ -2689,7 +2645,9 @@ hans Hjerte rinder fuldt af Dagens Minder,
 mens Sønneskaren tyst i Natten svinder.
 </body>
 </poem>
+
 </content>
 </section>
+
 </workbody>
 </kalliopework>

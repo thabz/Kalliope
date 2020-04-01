@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="karstensen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Kristen</firstname>
+    <lastname>Karstensen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1809-04-25</date>
+      <place>Kær, Ulkebøl</place>
+    </born>
+    <dead>
+        <date>1882-11-01</date>
+        <place>Gelsted</place>
+    </dead>
+  </period>
+  <works>1849,andre</works>
+</person>

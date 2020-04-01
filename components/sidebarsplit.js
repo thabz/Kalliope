@@ -1,15 +1,17 @@
 // @flow
 
 import React from 'react';
+import type { Node } from 'react';
 
 type SidebarSplitProps = {
-  sidebar: React$Element<*> | string | Array<React$Element<*>> | null,
-  children?: *,
+  sidebar: Node | Array<Node> | null,
+  children?: Node,
   sidebarOnTopWhenSplit?: boolean,
+  style?: {},
 };
 export default class SidebarSplit extends React.Component<SidebarSplitProps> {
   render() {
-    const { sidebar, sidebarOnTopWhenSplit } = this.props;
+    const { sidebar, sidebarOnTopWhenSplit, style = {} } = this.props;
     let className =
       sidebar == null || sidebar.length == 0
         ? 'sidebar-spl empty'
@@ -17,7 +19,7 @@ export default class SidebarSplit extends React.Component<SidebarSplitProps> {
     className += sidebarOnTopWhenSplit != null ? ' reverse-split' : '';
     const renderedSidebar = <aside>{sidebar}</aside>;
     return (
-      <div className={className}>
+      <div className={className} style={style}>
         {this.props.children}
         {renderedSidebar}
         <style jsx>{`
@@ -33,10 +35,11 @@ export default class SidebarSplit extends React.Component<SidebarSplitProps> {
             flex-shrink: 0;
             width: 250px;
             padding: 0 0 0 40px;
-            font-weight: lighter;
             line-height: 1.5;
             border-left: 1px solid #666;
             color: #666;
+            font-size: 16px;
+            line-height: 1.4;
           }
           div.sidebar-spl.empty > :global(div:first-child) {
             padding-right: 0;
@@ -45,12 +48,12 @@ export default class SidebarSplit extends React.Component<SidebarSplitProps> {
             border-left: none;
           }
 
-          @media (max-width: 800px) {
+          @media (max-width: 767px) {
             div.sidebar-spl > :global(aside:last-child) {
               width: 200px;
             }
           }
-          @media (max-width: 760px), print {
+          @media (max-width: 767px), print {
             div.sidebar-spl {
               flex-direction: column;
             }

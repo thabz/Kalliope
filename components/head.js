@@ -39,7 +39,7 @@ export default class Head extends React.Component<HeadProps> {
         />
       );
     });
-    let ogImageAbsolute = ogImage || defaultOGImage;
+    let ogImageAbsolute = ogImage != null ? ogImage : defaultOGImage;
     if (!ogImageAbsolute.startsWith('http')) {
       ogImageAbsolute = `${urlPrefix}${ogImageAbsolute}`;
     }
@@ -75,8 +75,8 @@ export default class Head extends React.Component<HeadProps> {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         {appleTouchIcons}
         <link rel="mask-icon" href="/static/favicon-mask.svg" color="black" />
-        <link rel="icon" href="/static/favicon.ico" />
-        <link rel="manifest" href="/static/manifest.json" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
         {canonical}
         {hreflangs}
         <meta name="theme-color" content="rgb(139, 56, 65)" />

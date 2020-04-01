@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="kaarsberg" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hans</firstname>
+    <lastname>Kaarsberg</lastname>
+    <fullname>Hans Sophus Kaarsberg</fullname>
+    <pseudonym>Hans Juul</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1854-01-26</date>
+      <place>Græse ved Frederikssund</place>
+    </born>
+    <dead>
+      <date>1929-03-16</date>
+    </dead>
+  </period>
+  <works>1907,1928</works>
+</person>

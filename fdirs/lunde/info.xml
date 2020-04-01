@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lunde" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hans P.</firstname>
+    <lastname>Lunde</lastname>
+    <fullname>Hans Peder Christian Lunde</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1859-09-12</date>
+      <place>Christiansholm, Lunde mark ved Odense</place>
+    </born>
+    <dead>
+      <date>1949-10-02</date>
+      <place>Nyborg</place>
+    </dead>
+  </period>
+  <works>1903,1905,1908,1920,1920v,1923,1926,1928,1936,1941</works>
+</person>

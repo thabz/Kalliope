@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="byron" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>George Gordon</firstname>
+    <lastname>Byron</lastname>
+    <fullname>George Gordon Byron, 6th Baron</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1788-01-22</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1824-04-19</date>
+      <place>Missolonghi, Grækenland</place>
+    </dead>
+  </period>
+  <works>1812,1812c,1813,1813a,1814,1814a,1814b,1815,1816,1816a,1817,1817a,1818,1819,1821,1821a,1821b,andre</works>
+</person>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="harboe" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Rolf</firstname>
+    <lastname>Harboe</lastname>
+    <fullname>Rolf Gunnersen Harboe</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1860-10-23</date>
+      <place>Nyborg</place>
+    </born>
+    <dead>
+      <date>1938-12-13</date>
+      <place inon="on">Frederiksberg</place>
+    </dead>
+  </period>
+  <works>1891,1898,1902,1906,1910,1915,1916</works>
+</person>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="swain" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Charles</firstname>
+    <lastname>Swain</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1801-01-04</date>
+      <place>Manchester</place>
+    </born>
+    <dead>
+      <date>1874-09-22</date>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

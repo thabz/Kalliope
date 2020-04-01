@@ -567,7 +567,7 @@ Gjennem Havets Bølgehvælv;
 Thi det bærer i sit Indre,
 Vel forvaret, Lyset selv.
 Og i Mørket dybt paa Bunden
-Under Klippens sorte Kant,.
+Under Klippens sorte Kant,
 Kan det næres, trives, voxe
 Af det Lys, det selv sig vandt.
 
@@ -2205,7 +2205,7 @@ Han nævnes som en Hæder for sin Stand.
 Og paa hans Bryst diverse Ordner hænge.
 
 Med Sympathi man nævner denne Mand
-Trindt om i Danmarks dejligst Vang og Vænge,
+Trindt om i Danmarks dejligst Vang og Vænge<note>Cf. Laurids Koks <xref poem="kok1999030201"/>.</note>,
 Og gæster han en By langs salten Strand,
 Slaar Byens Skjalde strax de gyldne Strenge.
 
@@ -5324,9 +5324,10 @@ Derved, at du mig evig, evig kysser!
     <title>Mit Hjem</title>
     <toctitle>Mit Hjem (efter Wordsworth)</toctitle>
     <firstline>Mit Barndoms-Hjem, som sent, i Kvæld</firstline>
-    <!-- TODO: Find kilden -->
     <source pages="260"/>
-    <keywords>wordsworth</keywords>
+    <notes>
+        <note unknown-original-by="wordsworth" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5362,7 +5363,6 @@ Som fik dens første Smil ved Gry.
         <note>Gendigtning af George Eliot: <xref type="translation" poem="eliot2018021001"/>.</note>
     </notes>
     <source pages="261"/>
-    <keywords>eliot</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5400,7 +5400,6 @@ Vor Lod mod deres ej.
         <note>Gendigtning af William Cowper: <xref type="translation" poem="cowper2018021001"/>.</note>
     </notes>
     <source pages="262-268"/>
-    <keywords>cowper</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5553,8 +5552,7 @@ brød Mig altid nær, som var du aldrig død.
     <notes>
         <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2018021101"/>.</note>
     </notes>
-    <source pages="269-27"/>
-    <keywords>burns</keywords>
+    <source pages="269-270"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5589,7 +5587,6 @@ Med Taalsomhed og Mod!
         <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2018021102"/>.</note>
     </notes>
     <source pages="270-271"/>
-    <keywords>burns</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5635,6 +5632,7 @@ Er Naaden aldrig fjern.
         <note>Eusebio Blasco Soler (1844–1903), spansk journalist, digter og dramatiker.</note>
     </notes>
     <source pages="272-273"/>
+    <!-- TODO: Find originalen. Eusebio Blasco Soler. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5682,6 +5680,7 @@ Mens Depeschen hen han lagde:
         <note>Ramón de Campoamor y Campoosorio (1817-1901), spansk digter.</note>
     </notes>
     <source pages="274-275"/>
+    <!-- TODO: Find originalen. Ramón de Campoamor y Campoosorio. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5730,6 +5729,7 @@ Intet mer, min lille Elskte!
         <note>Eusebio Blasco Soler (1844–1903), spansk journalist, digter og dramatiker.</note>
     </notes>
     <source pages="276-286"/>
+    <!-- TODO: Find originalen. Eusebio Blasco Soler. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5876,7 +5876,7 @@ Den største af Slægternes Sejre, den straalende <i>Verdensfred!</i>
     <subtitle>(Efter Antonio Fogazzaro.)</subtitle>
     <firstline>Den tomme Stue vides ud og voxer</firstline>
     <notes>
-        <note>Antonio Fogazzaro (1842-1911), italiensk forfatter.</note>
+        <note unknown-original-by="fogazzaro" />
     </notes>
     <source pages="287"/>
     <quality>korrektur1,kilde,side</quality>
@@ -5908,7 +5908,7 @@ Mens uden Ord vi stirred paa hinanden.
     <subtitle>(Efter Antonio Fogazzaro)</subtitle>
     <firstline>Fastbunden ved et ensomt Figentræ</firstline>
     <notes>
-        <note>Antonio Fogazzaro (1842-1911), italiensk forfatter.</note>
+        <note unknown-original-by="fogazzaro" />
     </notes>
     <source pages="288"/>
     <quality>korrektur1,kilde,side</quality>
@@ -5942,7 +5942,7 @@ Der glider bort og brister — langt, langt ude.
     <subtitle>(Efter Antonio Fogazzaro)</subtitle>
     <firstline>Lystig i Solen og glade</firstline>
     <notes>
-        <note>Antonio Fogazzaro (1842-1911), italiensk forfatter.</note>
+        <note unknown-original-by="fogazzaro" />
     </notes>
     <source pages="289"/>
     <quality>korrektur1,kilde,side</quality>
@@ -5980,7 +5980,7 @@ Derfor de elsker hinanden.
     <subtitle>(Efter Antonio Fogazzaro)</subtitle>
     <firstline>Blændlygtens Skær langs Gulvets Mosaiker falder</firstline>
     <notes>
-        <note>Antonio Fogazzaro (1842-1911), italiensk forfatter.</note>
+        <note unknown-original-by="fogazzaro" />
     </notes>
     <source pages="290-291"/>
     <quality>korrektur1,kilde,side</quality>
@@ -6015,7 +6015,7 @@ Og Paven spejder efter Træk af Satan nøje.
     <subtitle>(Efter Antonio Fogazzaro)</subtitle>
     <firstline>Aftnen sænker sig. Frejdig</firstline>
     <notes>
-        <note>Antonio Fogazzaro (1842-1911), italiensk forfatter.</note>
+        <note unknown-original-by="fogazzaro" />
     </notes>
     <source pages="292-293"/>
     <quality>korrektur1,kilde,side</quality>
@@ -6067,6 +6067,7 @@ Hilser jeg Gryet og Dagen.
     <subtitle>(Efter Jacques Perk)</subtitle>
     <firstline>Gud, sagde Duen, Gud er rund og fager</firstline>
     <source pages="294-295"/>
+    <!-- TODO: Find originalen. Jacques Perk. -->
     <keywords>sonnet</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6099,6 +6100,9 @@ Naar blot I tænker ham med Vinger Alle!''
     <toctitle>Rig og fattig (efter Hermann von Gilm)</toctitle>
     <subtitle>(Efter Hermann von Gilm)</subtitle>
     <firstline>Saa talte Folket: I har varme Klæder</firstline>
+    <notes>
+        <note unknown-original-by="gilm" />
+    </notes>
     <source pages="296"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6128,6 +6132,9 @@ Vi presser ud af Eders hule Øjne!''
     <toctitle>Ingen ved - (efter Hermann von Gilm)</toctitle>
     <subtitle>(Efter Hermann von Gilm)</subtitle>
     <firstline>Ingen véd, hvordan jeg hader</firstline>
+    <notes>
+        <note unknown-original-by="gilm" />
+    </notes>
     <source pages="297"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6157,6 +6164,9 @@ End min Pegasus beslaa.
     <toctitle>Hvem har gjort det? (efter Hermann von Gilm)</toctitle>
     <subtitle>(Efter Hermann von Gilm)</subtitle>
     <firstline>I Nattekulden stod min Sang</firstline>
+    <notes>
+        <note unknown-original-by="gilm" />
+    </notes>
     <source pages="298"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6186,6 +6196,9 @@ Som klæder Markens Liljer.
     <toctitle>Tre Kranse (efter Hermann von Gilm)</toctitle>
     <subtitle>(Efter Hermann von Gilm)</subtitle>
     <firstline>Tre Kranse har jeg bundet</firstline>
+    <notes>
+        <note unknown-original-by="gilm" />
+    </notes>
     <source pages="299"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6220,6 +6233,9 @@ I mit lyksaligste Aar!
     <toctitle>Den grusomme (efter Hermann von Gilm)</toctitle>
     <subtitle>(Efter Hermann von Gilm)</subtitle>
     <firstline>Det var en Sommeraften</firstline>
+    <notes>
+        <note unknown-original-by="gilm" />
+    </notes>
     <source pages="300-301"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6260,10 +6276,13 @@ Som ingen Ting var hændt.
 
 <poem id="rosenbergpa20180225115">
 <head>
-    <title>La renommé</title>
-    <toctitle>La renommé (efter Hermann von Gilm)</toctitle>
+    <title>La renommée</title>
+    <toctitle>La renommée (efter Hermann von Gilm)</toctitle>
     <subtitle>(Efter Hermann von Gilm)</subtitle>
     <firstline>Du er huslig og stilfærdig</firstline>
+    <notes>
+        <note>Gendigtning af Hermann von Gilm: <xref type="translation" poem="gilm2019112401"/>.</note>
+    </notes>
     <source pages="302"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6293,6 +6312,9 @@ Og du har en ganske særlig
     <toctitle>Poesien (efter Adolf Pichler)</toctitle>
     <subtitle>(Efter Adolf Pichler)</subtitle>
     <firstline>Poesi, min Ven, er Æther</firstline>
+    <notes>
+        <note unknown-original-by="pichler" />
+    </notes>
     <source pages="303"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6317,6 +6339,9 @@ Som Aabenbaring drager.
     <toctitle>Zillerthalernes Fordrivelse (efter Adolf Pichler)</toctitle>
     <subtitle>(Efter Adolf Pichler)</subtitle>
     <firstline>Tyrol, Tyrol! mit Fædreland, mit Hjem</firstline>
+    <notes>
+        <note unknown-original-by="pichler" />
+    </notes>
     <source pages="304-308"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6430,6 +6455,9 @@ Tyrolerørn! din Dag gaar op paany!
     <toctitle>Dødedansen (efter Adolf Pichler)</toctitle>
     <subtitle>(Efter Adolf Pichler)</subtitle>
     <firstline>Naar Selskabet er slet — slet kan det være</firstline>
+    <notes>
+        <note unknown-original-by="pichler" />
+    </notes>
     <source pages="309-321"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6703,6 +6731,9 @@ Saa godt jeg kunde det, den gamles Ord.
     <subtitle>(Efter Lenau)</subtitle>
     <firstline>Om glad du tømte Bægret med Skarntyder</firstline>
     <source pages="322-323"/>
+    <notes>
+        <note>Gendigtning af Nikolaus Lenau: <xref type="translation" poem="lenau2019082901"/>.</note>
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6736,6 +6767,9 @@ Med Sving i venstre eller højre Spand.
     <toctitle>Schillers Begravelse (efter C. F. Meyer)</toctitle>
     <subtitle>(Efter C. F. Meyer)</subtitle>
     <firstline>Et Fakkelpar, som brænder dystert, truet tit</firstline>
+    <notes>
+        <note>Gendigtning af Conrad Ferdinand Meyer: <xref type="translation" poem="meyer2019082902"/>.</note>
+    </notes>
     <source pages="324"/>
     <keywords>schiller</keywords>
     <quality>korrektur1,kilde,side</quality>
@@ -6759,6 +6793,9 @@ Gaar efter Baaren — Menneskehedens Genius.
     <toctitle>Tal nu Du! (efter C. F. Meyer)</toctitle>
     <subtitle>(Efter C. F. Meyer)</subtitle>
     <firstline>Hvor søgte tit jeg til din dybe Ro</firstline>
+    <notes>
+        <note>Gendigtning af Conrad Ferdinand Meyer: <xref type="translation" poem="meyer2019082903"/>.</note>
+    </notes>
     <source pages="325"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6783,6 +6820,9 @@ Hendøet er Sang og Klage. Jeg vil lytte.
     <toctitle>Gletscherlys (efter C. F. Meyer)</toctitle>
     <subtitle>(Efter C. F. Meyer)</subtitle>
     <firstline>Hvor banker Hjærtet i mit Bryst</firstline>
+    <notes>
+        <note>Gendigtning af Conrad Ferdinand Meyer: <xref type="translation" poem="meyer2019082906"/>.</note>
+    </notes>
     <source pages="326-327"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6821,6 +6861,9 @@ Maaske et Ord, maaske en Sang, -
     <toctitle>Den døde Kjærlighed (efter C. F. Meyer)</toctitle>
     <subtitle>(Efter C. F. Meyer)</subtitle>
     <firstline>Vi gik mod Byen op</firstline>
+    <notes>
+        <note>Gendigtning af Conrad Ferdinand Meyer: <xref type="translation" poem="meyer2019082905"/>.</note>
+    </notes>
     <source pages="328-329"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6869,6 +6912,9 @@ Sjælen i Barm.
     <toctitle>Camoëns (efter C. F. Meyer)</toctitle>
     <subtitle>(Efter C. F. Meyer)</subtitle>
     <firstline>Camoëns, den store Digter</firstline>
+    <notes>
+        <note>Gendigtning af Conrad Ferdinand Meyer: <xref type="translation" poem="meyer2019082904"/>.</note>
+    </notes>
     <source pages="330-331"/>
     <quality>korrektur1,kilde,side</quality>
 </head>

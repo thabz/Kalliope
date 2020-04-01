@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="gubitz" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich Wilhelm</firstname>
+    <lastname>Gubitz</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1786-02-27</date>
+      <place>Leipzig</place>
+    </born>
+    <dead>
+      <date>1870-06-05</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
+</person>

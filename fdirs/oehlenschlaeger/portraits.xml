@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p6.jpg">
-      <i>Adam Oehlenschläger</i>. Bakkehusmuseet.
+  <picture src="p7.jpg" museum="fnm" invnr="a-551">
+    Peder Faxøe (1761-1840): <i>Adam Oehlenschläger som 6-årig</i>, 1785.
   </picture>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
-    Johann Ludewig Gebhard Lund: <i>Adam Oehlenschläger</i>, 1809, olie på lærred. Det Nationalhistoriske Museum, Frederiksborg Slot.
+  <picture src="p6.jpg">Brdr. Riepenhausen: Portræt af Adam Oehlenschläger, 1809, [Udsnit]. Bakkehusmuseet.</picture>
+  <picture ref="lund/1809-oehlenschlaeger" primary="true" square-src="p1-square.jpg" />
+  <picture src="p8.jpg" museum="fnm" invnr="a-2620" year="1815">
+    F.C. Gröger: <i>Adam Oehlenschläger</i>, 1815.
   </picture>
   <picture ref="jensenca/oehlenschlaeger-1832" />
   <picture ref="jensenca/oehlenschlaeger-1834" />
-  <picture src="p3.jpg">
-  </picture>
+  <picture ref="jensenca/oehlenschlaeger-1842" />
   <picture src="p5.jpg">
     Friedrich von Amerling: <i>Adam Oehlenschläger</i>, 1844. Wien.
   </picture>
+  <picture ref="gertner/1847-oehlenschlaeger" />
+  <picture ref="gertner/1850-oehlenschlaeger" />
 </pictures>

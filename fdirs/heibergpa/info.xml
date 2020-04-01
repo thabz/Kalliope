@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="heibergpa" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>P.A.</firstname>
+    <lastname>Heiberg</lastname>
+    <fullname>Peter Andreas Heiberg</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1758-11-16</date>
+      <place>Vordingborg</place>
+    </born>
+    <dead>
+      <date>1841-04-30</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

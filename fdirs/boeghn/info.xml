@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="boeghn" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Nicolai</firstname>
+    <lastname>Bøgh</lastname>
+    <fullname>Nicolai Seidelin Bøgh</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1843-05-12</date>
+      <place>Skamstrup</place>
+    </born>
+    <dead>
+      <date>1905-10-13</date>
+      <place>Frederiksberg</place>
+    </dead>
+  </period>
+  <works>1875,1880,1890,andre</works>
+</person>
