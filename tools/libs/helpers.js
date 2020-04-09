@@ -83,18 +83,12 @@ const replaceDashes = (html) => {
   );
 };
 
-const htmlToXml = (
-  html,
-  collected,
-  isPoetry = false,
-  isBible = false,
-  isFolkevise = false
-) => {
+const htmlToXml = (html, collected, isPoetry = false) => {
   if (html == null) {
     return null;
   }
   const regexp = /<xref.*?(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
-  if (isPoetry && !isBible && !isFolkevise) {
+  if (isPoetry) {
     // Marker strofe numre
     html = html
       .replace(/^(\d+\.?)\s*$/gm, '<versenum>$1</versenum>')
@@ -187,30 +181,8 @@ const htmlToXml = (
     });
   }
 
-  if (isFolkevise) {
-    // Flyt strofe-nummer fra egen linje ind i starten af strofens første linje.
-    let foundNum = null;
-    const collectedLines = [];
-    decoded.split(/\n/).forEach((line) => {
-      const match = line.match(/^\s*(\d+)\.?\s*/);
-      if (match) {
-        // Linjen er et strofe-nummer, så gem det.
-        foundNum = match[1];
-        return;
-      } else {
-        if (foundNum != null) {
-          collectedLines.push(`<num>${foundNum}.</num>${line}`);
-        } else {
-          collectedLines.push(line);
-        }
-        foundNum = null;
-      }
-    });
-    decoded = collectedLines.join('\n');
-  }
-
-  // Hvis teksten har sine egne linjenummeringer (f.eks. til Aarestrups strofenumre eller margin-tekster)
-  // skal automatisk linjenummerering skippes.
+  // Hvis teksten har sine egne linjenummeringer (f.eks. til Aarestrups strofenumre,
+  // folkeviser, biblen eller margin-tekster) skal automatisk linjenummerering skippes.
   const hasOwnDisplayNums =
     decoded.indexOf('<num>') > -1 || decoded.indexOf('<margin>') > -1;
 
