@@ -27,6 +27,7 @@ type TextContentPropsType = {
   inline?: boolean,
   style?: Object,
   className?: string,
+  blockType?: 'prose' | 'poetry' | 'quote',
   keyPrefix?: string, // Ved bladring hopper linjenumrene hvis alle digtes linjer har samme key.
 };
 const TextContent = (props: TextContentPropsType) => {
@@ -336,6 +337,7 @@ const TextContent = (props: TextContentPropsType) => {
     className = '',
     options = {},
     inline = false,
+    blocktype = 'prose',
   } = props;
 
   if (contentHtml == null) {
@@ -348,6 +350,12 @@ const TextContent = (props: TextContentPropsType) => {
       </div>
     );
   }
+
+  const showNums =
+    contentHtml.find((l) => {
+      const lineOptions = l.length > 1 ? l[1] : {};
+      return lineOptions.displayNum != null || lineOptions.margin != null;
+    }) != null;
 
   if (options.highlight != null) {
     const lastLineNum = contentHtml
@@ -406,7 +414,7 @@ const TextContent = (props: TextContentPropsType) => {
         rendered = <br />;
       }
     }
-    let lineInnerClass = 'inner-line';
+    let lineInnerClass = '';
     if (lineOptions.center) {
       lineInnerClass += ' centered-text';
     }
@@ -417,10 +425,12 @@ const TextContent = (props: TextContentPropsType) => {
     if (lineOptions.margin) {
       className += ' with-margin-text';
     }
-    if (lineOptions.blockquote) {
-      className += ' blockquote';
-      return <div className={className}>{rendered}</div>;
-    } else if (options.isPoetry && !lineOptions.wrap && !lineOptions.hr) {
+    if (showNums) {
+      className += ' line-with-num';
+    }
+
+    if (options.isPoetry && !lineOptions.wrap && !lineOptions.hr) {
+      lineInnerClass += ' inner-poem-line';
       className += ' poem-line';
       return (
         <div
@@ -429,14 +439,6 @@ const TextContent = (props: TextContentPropsType) => {
           key={keyPrefix + i}>
           {anchor}
           <div className={lineInnerClass}>{rendered}</div>
-        </div>
-      );
-    } else if (options.isBible) {
-      className += ' bible-line';
-      return (
-        <div className={className} data-num={lineNum} key={keyPrefix + i}>
-          {anchor}
-          {rendered}
         </div>
       );
     } else if (lineOptions.hr) {
@@ -449,6 +451,7 @@ const TextContent = (props: TextContentPropsType) => {
     } else {
       // Prose
       className += ' prose-paragraph';
+      lineInnerClass += ' inner-prose-line';
       if (lineOptions.right) {
         className += ' right-aligned-prose-text';
       }
@@ -456,8 +459,12 @@ const TextContent = (props: TextContentPropsType) => {
         className += ' centered-prose-text';
       }
       return (
-        <div className={className} key={i + keyPrefix}>
-          {rendered}
+        <div
+          className={className}
+          key={i + keyPrefix}
+          data-num={lineOptions.displayNum}>
+          {anchor}
+          <div className={lineInnerClass}>{rendered}</div>
         </div>
       );
     }
@@ -476,8 +483,7 @@ const TextContent = (props: TextContentPropsType) => {
         */}
       {lines}
       <style jsx>{`
-        :global(.poem-line::before),
-        :global(.bible-line::before) {
+        :global(.line-with-num::before) {
           content: attr(data-num);
           color: ${CommonData.lightTextColor};
           margin-right: 1em;
@@ -501,8 +507,7 @@ const TextContent = (props: TextContentPropsType) => {
           vertical-align: top;
           margin-top: 0;
         }
-        :global(.bible-line),
-        :global(.poem-line) {
+        :global(.line-with-num) {
           margin-left: 1.5em;
         }
         :global(.prose-paragraph) {
@@ -532,11 +537,15 @@ const TextContent = (props: TextContentPropsType) => {
         :global(.last-highlighted-line) {
           border-bottom: 1px solid rgb(238, 232, 213);
         }
-        :global(.inner-line) {
+        :global(.inner-poem-line) {
           display: inline-block;
           width: calc(100%-7em);
           margin-left: 7em;
           text-indent: -7em;
+        }
+        :global(.inner-prose-line) {
+          display: inline-block;
+          width: calc(100%);
         }
         :global(.right-aligned-text) {
           text-align: right;
