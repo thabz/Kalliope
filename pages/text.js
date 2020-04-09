@@ -57,7 +57,7 @@ const Bladrer = (props: BladrerProps) => {
   if (target == null) {
     return null;
   }
-  const onClick = e => {
+  const onClick = (e) => {
     const url = Links.textURL(lang, target.id);
     Router.pushRoute(url);
     window.scrollTo(0, 0);
@@ -238,7 +238,7 @@ const TextPage = (props: TextComponentProps) => {
   }
 
   const notes: Array<Node> = text.notes
-    .filter(note => note.type !== 'unknown-original')
+    .filter((note) => note.type !== 'unknown-original')
     .map((note, i) => {
       return (
         <Note key={'note' + i} type={note.type}>
@@ -252,7 +252,8 @@ const TextPage = (props: TextComponentProps) => {
 
   text.notes
     .filter(
-      note => note.type === 'unknown-original' && note.unknownOriginalBy != null
+      (note) =>
+        note.type === 'unknown-original' && note.unknownOriginalBy != null
     )
     .map((note, i) => {
       const poet = note.unknownOriginalBy;
@@ -371,7 +372,7 @@ const TextPage = (props: TextComponentProps) => {
 
   let renderedKeywords = null;
   if (text.keywords.length > 0) {
-    const list = text.keywords.map(k => {
+    const list = text.keywords.map((k) => {
       return <KeywordLink keyword={k} lang={lang} key={k.id} />;
     });
     renderedKeywords = <div style={{ marginTop: '30px' }}>{list}</div>;
@@ -466,8 +467,7 @@ const TextPage = (props: TextComponentProps) => {
       highlightInterval = { from, to };
     }
     const options = {
-      isBible: poet.id === 'bibel',
-      isPoetry: poet.id !== 'bibel' && !text.is_prose,
+      isPoetry: !text.is_prose,
       highlight: highlightInterval,
     };
     body = (

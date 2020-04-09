@@ -202,9 +202,6 @@ const handle_text = async (
   let linktitle = extractTitle(head, 'linktitle') || indextitle || title;
 
   const keywords = safeGetText(head, 'keywords');
-  const isBible = poetId === 'bibel';
-  const isFolkevise =
-    poetId === 'folkeviser' || (poetId === 'tasso' && workId === '1581');
 
   let subtitles = extractSubtitles(head, 'subtitle', collected);
   let suptitles = extractSubtitles(head, 'suptitle', collected);
