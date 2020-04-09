@@ -7,7 +7,7 @@ const plimit = require('p-limit');
 const jimp = require('jimp');
 const CommonData = require('../../common/commondata.js');
 
-const safeMkdir = dirname => {
+const safeMkdir = (dirname) => {
   try {
     fs.mkdirSync(dirname);
   } catch (err) {
@@ -15,11 +15,11 @@ const safeMkdir = dirname => {
   }
 };
 
-const fileExists = filename => {
+const fileExists = (filename) => {
   return fs.existsSync(filename);
 };
 
-const fileModifiedTime = filename => {
+const fileModifiedTime = (filename) => {
   if (fileExists(filename)) {
     // Older node.js has no mtimeMs so we use mtime.getTime()
     return (
@@ -30,21 +30,21 @@ const fileModifiedTime = filename => {
   }
 };
 
-const loadText = filename => {
+const loadText = (filename) => {
   if (!fileExists(filename)) {
     return null;
   }
   return fs.readFileSync(filename, { encoding: 'UTF-8' });
 };
 
-const loadFile = filename => {
+const loadFile = (filename) => {
   if (!fileExists(filename)) {
     return null;
   }
   return fs.readFileSync(filename);
 };
 
-const loadJSON = filename => {
+const loadJSON = (filename) => {
   const data = loadFile(filename);
   return data ? JSON.parse(data) : null;
 };
@@ -58,7 +58,7 @@ const writeText = (filename, text) => {
   fs.writeFileSync(filename, text);
 };
 
-const replaceDashes = html => {
+const replaceDashes = (html) => {
   if (html == null) {
     return null;
   }
@@ -83,18 +83,12 @@ const replaceDashes = html => {
   );
 };
 
-const htmlToXml = (
-  html,
-  collected,
-  isPoetry = false,
-  isBible = false,
-  isFolkevise = false
-) => {
+const htmlToXml = (html, collected, isPoetry = false) => {
   if (html == null) {
     return null;
   }
   const regexp = /<xref.*?(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
-  if (isPoetry && !isBible && !isFolkevise) {
+  if (isPoetry) {
     // Marker strofe numre
     html = html
       .replace(/^(\d+\.?)\s*$/gm, '<versenum>$1</versenum>')
@@ -187,99 +181,34 @@ const htmlToXml = (
     });
   }
 
-  if (isBible) {
-    // Saml linjer som hører til samme vers.
-    const collectedLines = [];
-    let curLine = '';
-    decoded.split(/\n/).forEach(line => {
-      if (line.match(/^\s*$/)) {
-        if (curLine !== '') {
-          collectedLines.push(curLine);
-          curLine = '';
-        }
-        collectedLines.push(line);
-      } else if (line.match(/^\s*\d+,?\d*\.\s*/)) {
-        if (curLine !== '') {
-          collectedLines.push(curLine);
-        }
-        curLine = line;
-      } else {
-        curLine += line.replace(/\s+/, ' ');
-      }
-    });
-    collectedLines.push(curLine);
-    decoded = collectedLines.join('\n');
-  } else if (isFolkevise) {
-    // Flyt strofe-nummer fra egen linje ind i starten af strofens første linje.
-    let foundNum = null;
-    const collectedLines = [];
-    decoded.split(/\n/).forEach(line => {
-      const match = line.match(/^\s*(\d+)\.?\s*/);
-      if (match) {
-        // Linjen er et strofe-nummer, så gem det.
-        foundNum = match[1];
-        return;
-      } else {
-        if (foundNum != null) {
-          collectedLines.push(`<num>${foundNum}.</num>${line}`);
-        } else {
-          collectedLines.push(line);
-        }
-        foundNum = null;
-      }
-    });
-    decoded = collectedLines.join('\n');
-  }
-
-  // Hvis teksten har sine egne linjenummeringer (f.eks. til Aarestrups strofenumre eller margin-tekster)
-  // skal automatisk linjenummerering skippes.
-  const hasOwnNums =
+  // Hvis teksten har sine egne linjenummeringer (f.eks. til Aarestrups strofenumre,
+  // folkeviser, biblen eller margin-tekster) skal automatisk linjenummerering skippes.
+  const hasOwnDisplayNums =
     decoded.indexOf('<num>') > -1 || decoded.indexOf('<margin>') > -1;
 
   let lineNum = 1;
-  lines = decoded.split('\n').map(l => {
+  lines = decoded.split('\n').map((l) => {
     let options = {};
     if (l.indexOf('<resetnum/>') > -1) {
       lineNum = 1;
       l = l.replace('<resetnum/>', '');
     }
-    const hasNonum =
+    const skipNumForLine =
       l.indexOf('<versenum>') > -1 ||
       l.indexOf('<nonum>') > -1 ||
       l.indexOf('<asterism') > -1 ||
       l.indexOf('<wrap>') > -1 ||
       l.match(/^\s*$/) ||
       l.match(/^\s*<hr[^>]*>\s*$/);
-    if (!hasNonum) {
-      if (isPoetry && !isFolkevise) {
-        options.num = lineNum;
-      }
-      if (lineNum % 5 == 0 && !hasOwnNums) {
+    if (!skipNumForLine) {
+      options.num = lineNum;
+      if (isPoetry && lineNum % 5 == 0 && !hasOwnDisplayNums) {
         options.displayNum = lineNum;
       }
       lineNum += 1;
-    } else {
-      l = l.replace(/<nonum>/g, '').replace(/<\/nonum>/g, '');
     }
+    l = l.replace(/<nonum>/g, '').replace(/<\/nonum>/g, '');
 
-    if (isBible) {
-      const match = l.match(/^\s*(\d+,?\d*)\.\s*/);
-      if (match) {
-        options.num = match[1];
-        options.displayNum = match[1];
-        options.bible = true;
-        l = l.replace(/^\s*\d+,?\d*\.\s*/, '');
-      }
-    }
-    // if (isFolkevise) {
-    //   const match = l.match(/^\s*(\d+)\.?\s*/);
-    //   if (match) {
-    //     options.displayNum = match[1] + '.';
-    //     options.num = match[1];
-    //     options.folkevise = true;
-    //     l = l.replace(/^\s*\d+\.?\s*/, '');
-    //   }
-    // }
     if (l.indexOf('<num>') > -1) {
       options.displayNum = l.match(/<num>(.*)<\/num>/)[1];
       l = l.replace(/<num>(.*)<\/num>/, '');
@@ -321,7 +250,7 @@ const resizeImage = async (inputfile, outputfile, maxWidth) => {
     const task = { inputfile, outputfile, maxWidth };
     jimp
       .read(task.inputfile)
-      .then(image => {
+      .then((image) => {
         if (image.bitmap.width < maxWidth) {
           image.writeAsync(task.outputfile).then(() => {
             console.log(outputfile);
@@ -337,7 +266,7 @@ const resizeImage = async (inputfile, outputfile, maxWidth) => {
             });
         }
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         console.log(task.outputfile);
         reject(err);
@@ -352,7 +281,7 @@ const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
 
-  const handleDirRecursive = dirname => {
+  const handleDirRecursive = (dirname) => {
     if (!fs.existsSync(dirname)) {
       console.log(`${dirname} mangler, så genererer ingen thumbs deri.`);
       return;
@@ -360,7 +289,7 @@ const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
     if (dirname.match(/\/social$/)) {
       return;
     }
-    fs.readdirSync(dirname).forEach(filename => {
+    fs.readdirSync(dirname).forEach((filename) => {
       if (filename === 't') {
         return;
       }
@@ -380,7 +309,7 @@ const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
           return;
         }
         CommonData.availableImageFormats.forEach((ext, i) => {
-          CommonData.availableImageWidths.forEach(width => {
+          CommonData.availableImageWidths.forEach((width) => {
             const outputfile = fullFilename
               .replace(/\.jpg$/, `-w${width}.${ext}`)
               .replace(/\/([^\/]+)$/, '/t/$1');
