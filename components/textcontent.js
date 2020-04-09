@@ -140,8 +140,6 @@ const TextContent = (props: TextContentPropsType) => {
         return <u key={keySeq++}>{handle_nodes(node.childNodes)}</u>;
       case 'p':
         return <p>{handle_nodes(node.childNodes)}</p>;
-      case 'blockquote':
-        return <blockquote>{handle_nodes(node.childNodes)}</blockquote>;
       case 'sup':
         return <sup key={keySeq++}>{handle_nodes(node.childNodes)}</sup>;
       case 'sub':
@@ -178,6 +176,24 @@ const TextContent = (props: TextContentPropsType) => {
             style={{ display: 'inline-block', width: '100%' }}>
             {handle_nodes(node.childNodes)}
           </center>
+        );
+      case 'blockquote':
+        const left = node.hasAttribute('left')
+          ? node.getAttribute('left')
+          : '50%';
+        const right = node.hasAttribute('right')
+          ? node.getAttribute('right')
+          : '0';
+        return (
+          <blockquote
+            key={keySeq++}
+            style={{
+              display: 'block',
+              position: 'absolute',
+              margin: `0 ${right} 0 ${left}`,
+            }}>
+            {handle_nodes(node.childNodes)}
+          </blockquote>
         );
       case 'colored':
         const color = node.getAttribute('color') || 'solid';
@@ -335,7 +351,7 @@ const TextContent = (props: TextContentPropsType) => {
 
   if (options.highlight != null) {
     const lastLineNum = contentHtml
-      .map(l => {
+      .map((l) => {
         const lineOptions = l.length > 1 ? l[1] : {};
         const lineNum =
           lineOptions.num != null ? parseInt(lineOptions.num) : null;
@@ -401,8 +417,10 @@ const TextContent = (props: TextContentPropsType) => {
     if (lineOptions.margin) {
       className += ' with-margin-text';
     }
-
-    if (options.isPoetry && !lineOptions.wrap && !lineOptions.hr) {
+    if (lineOptions.blockquote) {
+      className += ' blockquote';
+      return <div className={className}>{rendered}</div>;
+    } else if (options.isPoetry && !lineOptions.wrap && !lineOptions.hr) {
       className += ' poem-line';
       return (
         <div
@@ -537,6 +555,13 @@ const TextContent = (props: TextContentPropsType) => {
         }
         :global(.centered-prose-text) {
           text-align: center;
+        }
+        :global(.blockquote) {
+          width: 100%;
+          color: red;
+          position: absolute;
+          left: 0;
+          right: 0;
         }
         :global(.half-height-blank) {
           line-height: 0.8;

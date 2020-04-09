@@ -7,7 +7,7 @@ const plimit = require('p-limit');
 const jimp = require('jimp');
 const CommonData = require('../../common/commondata.js');
 
-const safeMkdir = dirname => {
+const safeMkdir = (dirname) => {
   try {
     fs.mkdirSync(dirname);
   } catch (err) {
@@ -15,11 +15,11 @@ const safeMkdir = dirname => {
   }
 };
 
-const fileExists = filename => {
+const fileExists = (filename) => {
   return fs.existsSync(filename);
 };
 
-const fileModifiedTime = filename => {
+const fileModifiedTime = (filename) => {
   if (fileExists(filename)) {
     // Older node.js has no mtimeMs so we use mtime.getTime()
     return (
@@ -30,21 +30,21 @@ const fileModifiedTime = filename => {
   }
 };
 
-const loadText = filename => {
+const loadText = (filename) => {
   if (!fileExists(filename)) {
     return null;
   }
   return fs.readFileSync(filename, { encoding: 'UTF-8' });
 };
 
-const loadFile = filename => {
+const loadFile = (filename) => {
   if (!fileExists(filename)) {
     return null;
   }
   return fs.readFileSync(filename);
 };
 
-const loadJSON = filename => {
+const loadJSON = (filename) => {
   const data = loadFile(filename);
   return data ? JSON.parse(data) : null;
 };
@@ -58,7 +58,7 @@ const writeText = (filename, text) => {
   fs.writeFileSync(filename, text);
 };
 
-const replaceDashes = html => {
+const replaceDashes = (html) => {
   if (html == null) {
     return null;
   }
@@ -83,6 +83,13 @@ const replaceDashes = html => {
   );
 };
 
+/* Returnerer [{
+  l: string (xml),
+  o: {
+    num?: string
+  }
+}]
+*/
 const htmlToXml = (
   html,
   collected,
@@ -191,7 +198,7 @@ const htmlToXml = (
     // Saml linjer som hører til samme vers.
     const collectedLines = [];
     let curLine = '';
-    decoded.split(/\n/).forEach(line => {
+    decoded.split(/\n/).forEach((line) => {
       if (line.match(/^\s*$/)) {
         if (curLine !== '') {
           collectedLines.push(curLine);
@@ -213,7 +220,7 @@ const htmlToXml = (
     // Flyt strofe-nummer fra egen linje ind i starten af strofens første linje.
     let foundNum = null;
     const collectedLines = [];
-    decoded.split(/\n/).forEach(line => {
+    decoded.split(/\n/).forEach((line) => {
       const match = line.match(/^\s*(\d+)\.?\s*/);
       if (match) {
         // Linjen er et strofe-nummer, så gem det.
@@ -237,7 +244,7 @@ const htmlToXml = (
     decoded.indexOf('<num>') > -1 || decoded.indexOf('<margin>') > -1;
 
   let lineNum = 1;
-  lines = decoded.split('\n').map(l => {
+  lines = decoded.split('\n').map((l) => {
     let options = {};
     if (l.indexOf('<resetnum/>') > -1) {
       lineNum = 1;
@@ -303,6 +310,9 @@ const htmlToXml = (
     if (l.indexOf('<hr ') > -1) {
       options.hr = true;
     }
+    if (l.indexOf('<blockquote') > -1) {
+      options.blockquote = true;
+    }
     // Marker linjer som skal igennem XML parseren client-side.
     if (l.match(/<.*>/)) {
       options.html = true;
@@ -313,6 +323,7 @@ const htmlToXml = (
       return [l];
     }
   });
+
   return lines;
 };
 
@@ -321,7 +332,7 @@ const resizeImage = async (inputfile, outputfile, maxWidth) => {
     const task = { inputfile, outputfile, maxWidth };
     jimp
       .read(task.inputfile)
-      .then(image => {
+      .then((image) => {
         if (image.bitmap.width < maxWidth) {
           image.writeAsync(task.outputfile).then(() => {
             console.log(outputfile);
@@ -337,7 +348,7 @@ const resizeImage = async (inputfile, outputfile, maxWidth) => {
             });
         }
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         console.log(task.outputfile);
         reject(err);
@@ -352,7 +363,7 @@ const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
 
-  const handleDirRecursive = dirname => {
+  const handleDirRecursive = (dirname) => {
     if (!fs.existsSync(dirname)) {
       console.log(`${dirname} mangler, så genererer ingen thumbs deri.`);
       return;
@@ -360,7 +371,7 @@ const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
     if (dirname.match(/\/social$/)) {
       return;
     }
-    fs.readdirSync(dirname).forEach(filename => {
+    fs.readdirSync(dirname).forEach((filename) => {
       if (filename === 't') {
         return;
       }
@@ -380,7 +391,7 @@ const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
           return;
         }
         CommonData.availableImageFormats.forEach((ext, i) => {
-          CommonData.availableImageWidths.forEach(width => {
+          CommonData.availableImageWidths.forEach((width) => {
             const outputfile = fullFilename
               .replace(/\.jpg$/, `-w${width}.${ext}`)
               .replace(/\/([^\/]+)$/, '/t/$1');
