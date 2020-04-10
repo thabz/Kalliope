@@ -459,21 +459,24 @@ const TextPage = (props: TextComponentProps) => {
       }
       highlightInterval = { from, to };
     }
-    const renderedBlocks = text.blocks.map((block) => {
+    const renderedBlocks = text.blocks.map((block, i) => {
       const { type, lines, options } = block;
       const blockOptions = {
         isPoetry: type === 'poetry',
         highlight: highlightInterval,
         ...options,
       };
-      <TextContent
-        contentHtml={lines}
-        contentLang={text.content_lang}
-        lang={lang}
-        options={blockOptions}
-        type={type}
-        keyPrefix={text.id}
-      />;
+      return (
+        <TextContent
+          key={type + i}
+          contentHtml={lines}
+          contentLang={text.content_lang}
+          lang={lang}
+          options={blockOptions}
+          type={type}
+          keyPrefix={text.id}
+        />
+      );
     });
     body = <div className="text-content">{renderedBlocks}</div>;
   }

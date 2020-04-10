@@ -349,26 +349,24 @@ const handle_text = async (
   } else {
     // prose or poem
     const body = getChildByTagName(text, 'body');
-    const blocks = getChildrenByTagNames(body, [
-      'poetry',
-      'prose',
-      'quote',
-    ]).map((block) => {
-      const type = tagName(block);
-      const rawBlock = safeGetInnerXML(block);
-      has_footnotes |=
-        rawBlock.indexOf('<footnote') !== -1 ||
-        rawBlock.indexOf('<note') !== -1;
-      const fontSize = safeGetAttr(block, 'font-size');
-      const marginLeft = safeGetAttr(block, 'margin-left');
-      const marginRight = safeGetAttr(block, 'margin-right');
-      const options = { fontSize, marginLeft, marginRight };
-      return {
-        type,
-        lines: htmlToXml(rawBlock, collected, type === 'poetry'),
-        options,
-      };
-    });
+    blocks = getChildrenByTagNames(body, ['poetry', 'prose', 'quote']).map(
+      (block) => {
+        const type = tagName(block);
+        const rawBlock = safeGetInnerXML(block);
+        has_footnotes |=
+          rawBlock.indexOf('<footnote') !== -1 ||
+          rawBlock.indexOf('<note') !== -1;
+        const fontSize = safeGetAttr(block, 'font-size');
+        const marginLeft = safeGetAttr(block, 'margin-left');
+        const marginRight = safeGetAttr(block, 'margin-right');
+        const options = { fontSize, marginLeft, marginRight };
+        return {
+          type,
+          lines: htmlToXml(rawBlock, collected, type === 'poetry'),
+          options,
+        };
+      }
+    );
   }
   mkdirp.sync(foldername);
   const text_data = {

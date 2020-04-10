@@ -341,7 +341,7 @@ const TextContent = (props: TextContentPropsType) => {
     contentLang,
     style,
     keyPrefix = 'linje-',
-    className = '',
+    className = 'block',
     options = {},
     inline = false,
     type = 'prose',
@@ -482,12 +482,22 @@ const TextContent = (props: TextContentPropsType) => {
     quoteClassName = 'blockquote';
   }
 
+  let smallClassName = '';
+  if (options.fontSize === 'small') {
+    smallClassName = ' small';
+  }
+
   return (
     <div
       style={style}
-      className={
-        className + ' ' + quoteClassName + ' ' + (inline ? 'inline' : '')
-      }
+      className={[
+        className,
+        smallClassName,
+        quoteClassName,
+        inline ? 'inline' : '',
+      ]
+        .filter((a) => a != null)
+        .join(' ')}
       lang={contentLang}
       key={keyPrefix + 'outer'}>
       {/*
@@ -527,6 +537,15 @@ const TextContent = (props: TextContentPropsType) => {
         :global(.prose-paragraph) {
           hyphens: auto;
         }
+        :global(.block.small) {
+          font-size: 1rem;
+          line-height: 1.45rem;
+        }
+        :global(.block.small .line-with-num::before) {
+          margin-top: 0;
+          font-size: 0.8rem;
+        }
+
         :global(.highlighted-line) {
           background-color: rgb(253, 246, 227);
           margin-left: 1em;
