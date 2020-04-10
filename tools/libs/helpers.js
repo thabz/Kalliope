@@ -83,7 +83,7 @@ const replaceDashes = (html) => {
   );
 };
 
-const htmlToXml = (html, collected, isPoetry = false) => {
+const htmlToXml = (html, collected, isPoetry) => {
   if (html == null) {
     return null;
   }
@@ -231,9 +231,6 @@ const htmlToXml = (html, collected, isPoetry = false) => {
     }
     if (l.indexOf('<hr ') > -1) {
       options.hr = true;
-    }
-    if (l.indexOf('<blockquote') > -1) {
-      options.blockquote = true;
     }
     // Marker linjer som skal igennem XML parseren client-side.
     if (l.match(/<.*>/)) {

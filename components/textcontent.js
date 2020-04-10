@@ -27,7 +27,7 @@ type TextContentPropsType = {
   inline?: boolean,
   style?: Object,
   className?: string,
-  blockType?: 'prose' | 'poetry' | 'quote',
+  type?: 'prose' | 'poetry' | 'quote',
   keyPrefix?: string, // Ved bladring hopper linjenumrene hvis alle digtes linjer har samme key.
 };
 const TextContent = (props: TextContentPropsType) => {
@@ -76,6 +76,13 @@ const TextContent = (props: TextContentPropsType) => {
       );
     } else if (node.hasAttribute('poem')) {
       const textId = node.getAttribute('poem');
+      return (
+        <Link key={keySeq++} route={Links.textURL(lang, textId)}>
+          <a>{handle_nodes(node.childNodes)}</a>
+        </Link>
+      );
+    } else if (node.hasAttribute('text')) {
+      const textId = node.getAttribute('text');
       return (
         <Link key={keySeq++} route={Links.textURL(lang, textId)}>
           <a>{handle_nodes(node.childNodes)}</a>
@@ -337,7 +344,7 @@ const TextContent = (props: TextContentPropsType) => {
     className = '',
     options = {},
     inline = false,
-    blocktype = 'prose',
+    type = 'prose',
   } = props;
 
   if (contentHtml == null) {
@@ -429,7 +436,7 @@ const TextContent = (props: TextContentPropsType) => {
       className += ' line-with-num';
     }
 
-    if (options.isPoetry && !lineOptions.wrap && !lineOptions.hr) {
+    if (type !== 'prose' && !lineOptions.wrap && !lineOptions.hr) {
       lineInnerClass += ' inner-poem-line';
       className += ' poem-line';
       return (
@@ -448,7 +455,7 @@ const TextContent = (props: TextContentPropsType) => {
           {rendered}
         </div>
       );
-    } else {
+    } else if (type === 'prose') {
       // Prose
       className += ' prose-paragraph';
       lineInnerClass += ' inner-prose-line';
@@ -470,10 +477,17 @@ const TextContent = (props: TextContentPropsType) => {
     }
   });
 
+  let quoteClassName = '';
+  if (type === 'quote') {
+    quoteClassName = 'blockquote';
+  }
+
   return (
     <div
       style={style}
-      className={className + (inline ? ' inline' : '')}
+      className={
+        className + ' ' + quoteClassName + ' ' + (inline ? 'inline' : '')
+      }
       lang={contentLang}
       key={keyPrefix + 'outer'}>
       {/*
@@ -582,7 +596,11 @@ const TextContent = (props: TextContentPropsType) => {
         :global(.text-two-columns) :global(div:last-child) {
           padding-left: 10px;
         }
-
+        :global(.blockquote) {
+          margin-left: ${options.marginLeft};
+          margin-right: ${options.marginRight};
+          font-size: ${options.fontSize};
+        }
         :global(.inline) {
           display: inline;
         }
