@@ -15,7 +15,7 @@
 </workhead>
 <workbody>
 
-<prose id="aakjaer2001082002">
+<text id="aakjaer2001082002">
 <head>
     <title>Forord til niende Udgave</title>
     <dates>
@@ -24,6 +24,7 @@
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<prose>
 I Sommeren 1905 kom jeg hjem fra Kjøbenhavn med Planen til ,,Rugens Sange''. Jeg var saa glad ved Tanken; saa sikker paa min Evne. Jeg gik hver Solskinsdag ud over Agrene mod Jebjærg Mose og lyttede til Vippernes melodiske Ringlen i Storrugen paa Laust Østergaards Mark. Det gjærede i mit Indre indtil Sprængning, men det vilde ingen Form ta. Grædende af Skuffelse og Afmagt gik jeg hver Aften til min Seng.
 - Jeg forsøgte at skifte Opholdssted og drog til Vesterhavet. Her under Bovbjærgs vilde og forrevne Strand skabtes <xref poem="aakjaer2000092410"/>: ,,Nu er Sæden lang og gul''. Mere orkede jeg ikke denne Gang.
    Jeg kom tilbage til mit Pensionat i Hovedstaden som en fattig, slagen Mand. - Men Ideen blev ved at bore i mig. Kort efter Nytaar 1906 tog jeg atter til Jylland og slog mig ned hos mine herlige Venner Læge Sigurd Rambusch og Hustru i Sjørup. Og nu digtede hele Serien sig som af sig selv. Der var Dage, hvor jeg skrev indtil tre Digte i Døgnet. Det er de lykkeligste Timer jeg har levet. Skjønt jeg til Tider plagedes meget af et nærgaaende Maveonde, der har skaaret altfor mange lyse Dage ud af mit Liv, kunde jeg dog - under Indtrykket af min Skaberglæde - med Sandhed synge:
@@ -38,8 +39,9 @@ I Sommeren 1905 kom jeg hjem fra Kjøbenhavn med Planen til ,,Rugens Sange''. Je
                                  <sc>Jeppe Aajkær</sc>
 
 Jenle, 12. Oktober 1926.
-</body>
 </prose>
+</body>
+</text>
 
 <section level="1">
 <head>
@@ -47,7 +49,7 @@ Jenle, 12. Oktober 1926.
 </head>
 <content>
 
-<poem id="aakjaer200009241">
+<text id="aakjaer200009241">
 <head>
     <title>Forspil</title>
     <firstline>Jeg lægger mig i Læet her ved Storrugens Rod</firstline>
@@ -55,6 +57,7 @@ Jenle, 12. Oktober 1926.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg lægger mig i Læet her ved Storrugens Rod,
 jeg lytter, og jeg lytter, til det synger i mit Blod;
 den hvide Rug, den blide Rug, som mod min Tinding slaar
@@ -69,10 +72,11 @@ Den driver som en Hymne over Lyngtages Egn,
 den toner som af Fløjter om de levende Hegn;
 og bag om Bæk og Brombærhæk og Kjær og dyrket Jord
 den møder Bølgesangen fra den vindrørte Fjord.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer200009242">
+<text id="aakjaer200009242">
 <head>
     <title>Rugen lægges</title>
     <firstline>Stigen op og Lugen ud! og saa gaar Far paa Lofte</firstline>
@@ -80,6 +84,7 @@ den møder Bølgesangen fra den vindrørte Fjord.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Stigen op og Lugen ud! og saa gaar Far paa Lofte,
 øser Rug i Skjæppemaal og stryger ømt dets Rand;
 Skjæppen tømt og Sækken fyldt, saa bæres Rug paa Tofte,
@@ -106,10 +111,11 @@ Efteraarets vilde Sus i Øgets stride Manke,
 Haglens Hop i Sædekurv og Maagens hvide Bug,
 Stort som Smaat - det væves ind i Bondens Alvorstanke;
 aldrig er hans Kald saa skjønt, som naar han saar sin Rug.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer200009243">
+<text id="aakjaer200009243">
 <head>
     <title>Vinterrugen</title>
     <firstline>Tit op fra din Ager! Hvor gaar det, du Smaa?</firstline>
@@ -117,6 +123,7 @@ aldrig er hans Kald saa skjønt, som naar han saar sin Rug.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tit op fra din Ager! Hvor gaar det, du Smaa?
 Staar du ej og ta'r Kuld om din krybende Taa?
 Kan du hytte din Haand? Kan du føle din Fod?
@@ -170,10 +177,11 @@ Om Lærken vil fjæle sin frysende Top,
 du hvisker frimodigt: ,,Stig op! Stig op!''
 Og nærmer sig Vaaren med sejrende Spil,
         <i>din</i> Stængel slaar Takten dertil!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer200009244">
+<text id="aakjaer200009244">
 <head>
     <title>Stensamlersken</title>
     <firstline>Hvi vanker du gamle Kvinde dér</firstline>
@@ -181,6 +189,7 @@ Og nærmer sig Vaaren med sejrende Spil,
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvi vanker du gamle Kvinde dér
         paa Agren agter og frem?
 I Foraarsmorgenens første Skjær
@@ -216,10 +225,11 @@ Det er mig saa sært at tænke paa,
         fattige Ane Malén:
 Hvor andre sanker sig Kjærv og Straa,
         <i>der</i> sanker <i>du</i> Sten.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000042203">
+<text id="aakjaer2000042203">
 <head>
     <title>Ved Rugskjellet</title>
     <firstline>Anna var i Anders kjær, men knibsk alligevel</firstline>
@@ -227,6 +237,7 @@ Hvor andre sanker sig Kjærv og Straa,
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Anna var i Anders kjær, men knibsk alligevel,
 mødte dog sin Hjertenskjær paa Rugens gamle Skjel,
 satte sig i Græsset ned blandt Klokkeblomster bly,
@@ -281,10 +292,11 @@ hvad det mindste Ax har hørt, den hele Ager ved.
                 Dingeli-og-lej,
                 Dikkedu-og-dikkedi,
                 og dingelu-og-lej!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer200009246">
+<text id="aakjaer200009246">
 <head>
     <title>Jens og hans Viv</title>
     <firstline>De to kan ingen skille ad</firstline>
@@ -292,6 +304,7 @@ hvad det mindste Ax har hørt, den hele Ager ved.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De to kan ingen skille ad,
     Jens og hans Viv;
 de delte sammen Seng og Fad,
@@ -347,10 +360,11 @@ og Torn og Tidsler høsted tidt
 - Med Aftensol paa kroget Ryg
 gaar saa tryg om Rug og Byg
     Jens og hans Viv.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer200009247">
+<text id="aakjaer200009247">
 <head>
     <title>Kornmod</title>
     <firstline>Det er favnende Nat over øde Kjær</firstline>
@@ -358,6 +372,7 @@ gaar saa tryg om Rug og Byg
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det er favnende Nat over øde Kjær;
 Lysene slukkes i ensomme Ruder.
 Det er Tiden mod Høst, det er Stjerneskjær;
@@ -393,10 +408,11 @@ Længslerne vil, jeg til <i>hende</i> skal vandre.
 Elskende Sjæle som duggede Straa
             nærmes hverandre,
             naar det lyner.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer200009248">
+<text id="aakjaer200009248">
 <head>
     <title>Høst</title>
     <firstline>Og aldrig stemmes en Sjæl saa glad</firstline>
@@ -404,6 +420,7 @@ Elskende Sjæle som duggede Straa
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Og aldrig stemmes en Sjæl saa glad,
 det være sig Mands eller Kvindes,
 som naar det dufter af Myntens Blad,
@@ -418,10 +435,11 @@ Og aldrig jeg mindes en Mark saa grøn
 som den om mit Hjemlands Haver;
 og ingen Sol har jeg set saa skjøn
 som den, der gik ned mellem Traver.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer200009249">
+<text id="aakjaer200009249">
 <head>
     <title>Leen slibes</title>
     <firstline>Hør hvor den hyler, den gamle Sten</firstline>
@@ -429,6 +447,7 @@ som den, der gik ned mellem Traver.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hør hvor den hyler, den gamle Sten,
 rørtes dens jamrende Drav vel af nogen?
 Ja saa minsandten, paa brune Ben
@@ -463,10 +482,11 @@ Stenen stritter paa Væggens Tavl,
 Tudsen glor frem fra de vædede Burrer;
 Rugen ringler saa gul om Gavl,
 Handuen danser og kurrer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092410">
+<text id="aakjaer2000092410">
 <head>
     <title>Høstvise</title>
     <firstline>Nu er Sæd en lang og gul</firstline>
@@ -474,6 +494,7 @@ Handuen danser og kurrer.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
         Nu er Sæden lang og gul,
         tung i Top og strunk i Straa,
 og den sidste Kukmand er forlængst rejst sønderpaa.
@@ -529,10 +550,11 @@ og saa trækker Hyrdepigen hjem med Ko og Stud.
         Men vi hvæsser, og vi slaar,
         indtil Maanen stiger bleg;
 og saa kysser vi vor Pige paa det sidste Neg.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092411">
+<text id="aakjaer2000092411">
 <head>
     <title>Hjøle-Thames</title>
     <firstline>Han bor derude ved Bysens Skjel</firstline>
@@ -540,6 +562,7 @@ og saa kysser vi vor Pige paa det sidste Neg.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Han bor derude ved Bysens Skjel,
 hvor Tidslerne voxer saa høje,
 hvor Følfod skygger alt Græs ihjel
@@ -611,10 +634,11 @@ Han standser en Stund med sin Le paa Lænd.
 Af Fjerskyer Østhimlen skrammes:
 - Nu skrider tusinde trætte Mænd
 mod mørke Hytter som Thames.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092412">
+<text id="aakjaer2000092412">
 <head>
     <title>Rugen kjøres hjem</title>
     <firstline>Giv dem nu Tømmen, de pumrede Øg</firstline>
@@ -625,6 +649,7 @@ mod mørke Hytter som Thames.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Giv dem nu Tømmen, de pumrede Øg,
 lad dem Galop over Tofterne tage,
 mens som et Kjølspor af sejlende Røg
@@ -704,10 +729,11 @@ Støvet det gjør ham som Burren saa graa,
 Skarnbassen bumser med Smæld mod hans Nakke.
 Loke saar Havre, og Himlen er blaa;
 Møllen slaar Kors paa sin Bakke.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092413">
+<text id="aakjaer2000092413">
 <head>
     <title>Naar Rugen skal ind</title>
     <firstline>Nu er det længe siden</firstline>
@@ -718,6 +744,7 @@ Møllen slaar Kors paa sin Bakke.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu er det længe siden,
 men end det gjemmes i <i>mit</i> Sind,
 hvordan i Barndomstiden
@@ -805,8 +832,9 @@ mens Barnet slumrer ind.
 Saa slutter Far i Jesu Navn.
 Og Hjemmet gaar til Hvile
 med Høsten i sin Favn.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -817,7 +845,7 @@ med Høsten i sin Favn.
 </head>
 <content>
 
-<poem id="aakjaer2000092414">
+<text id="aakjaer2000092414">
 <head>
     <title>Karlsvognen</title>
     <firstline>I det vældige Rum, hvori Kloderne svæver</firstline>
@@ -828,6 +856,7 @@ med Høsten i sin Favn.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I det vældige Rum, hvori Kloderne svæver,
 hvor de drager som Flager af Mulm og af Lys,
 hvori Stjernernes Tusinder flimrer og bæver
@@ -887,10 +916,11 @@ Se, du løfter din Lygte i Lidelsens Nætter,
 og de døende Slægter du lyser paa Vej;
 naar <i>min</i> Kvæld stunder til, og sig Skyggerne tætter,
 lad mig lukke mit Blik om en Straale fra dig!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092415">
+<text id="aakjaer2000092415">
 <head>
     <title>Ved Vesterhavet</title>
     <firstline>Havet gaar højt</firstline>
@@ -898,6 +928,7 @@ lad mig lukke mit Blik om en Straale fra dig!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
                Havet gaar højt,
         Stormen har Tag i dets Manke;
                Fraade og Sprøjt
@@ -929,10 +960,11 @@ slænger sig over og spy'r mod den flygtende Maane.
                 Taagen fra Vest
         sadler sin graalige Hest,
 sænker sin havsalte Gus over vindslidte Tage.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092416">
+<text id="aakjaer2000092416">
 <head>
     <title>Paa Hedens høje</title>
     <firstline>Snart er du slettet ud, mit Barndomsland</firstline>
@@ -940,6 +972,7 @@ sænker sin havsalte Gus over vindslidte Tage.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Snart er du slettet ud, mit Barndomsland,
 hvor Rylen pylred om sin simple Rede,
 hvor Porsen stod i Krans om stille Vand,
@@ -1065,10 +1098,11 @@ den ved kun slet, hvor Lyngens Lykke bor,
 der ej har leget ved dens brune Rødder.
 Men brænder I end Gyvlens sidste Ranke,
 I brænder ej <i>mit</i> Digt og Digtets Tanke!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092417">
+<text id="aakjaer2000092417">
 <head>
     <title>Vi er Siv</title>
     <firstline>Lille Bror, hvad var der fat</firstline>
@@ -1076,6 +1110,7 @@ I brænder ej <i>mit</i> Digt og Digtets Tanke!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>Første Siv:</center></nonum>
 
 Lille Bror, hvad var der fat,
@@ -1202,10 +1237,11 @@ Aa! nu sled han bort <i>min</i> Fod!
 
 Vi er Siv, vi er Siv!
 Vi har intet Krav paa Liv!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092418">
+<text id="aakjaer2000092418">
 <head>
     <title>Barnet og den gamle Gaard</title>
     <firstline>Der laa paa Toften en gammel Gaard</firstline>
@@ -1213,6 +1249,7 @@ Vi har intet Krav paa Liv!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der laa paa Toften en gammel Gaard
 med vinde Vægge og side Tage
 Dens Syld er sunken, men Mindet slaar
@@ -1277,10 +1314,11 @@ Saa staar du vel, som vi andre staar,
 og tryller Ranker om sunkne Stene
 og stirrer ud mod en falden Gaard,
 mens Solen synker bag Grene.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092419">
+<text id="aakjaer2000092419">
 <head>
     <title>Tre-Konger</title>
     <firstline>Jeg vandrer her saa ensomt ud ad min Hedevej</firstline>
@@ -1288,6 +1326,7 @@ mens Solen synker bag Grene.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg vandrer her saa ensomt ud ad min Hedevej,
 mens Gryet kæmper mellem mørke Banker,
 og Tøvejrstaagen tætter sig over Slugt og Slej
@@ -1332,10 +1371,11 @@ Aa se, hvor Straalen spiller - paa Mossets grønne Plyds,
 paa Lyng, paa Rug, paa Rævling, paa Raadyrbukkens Kryds!
 Det er til Jordens Hytter et nedslængt Fingerkys
         i Dagene omkring ved Tre-Konger.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092420">
+<text id="aakjaer2000092420">
 <head>
     <title>Den første Lærke</title>
     <firstline>Den første Lærke, den første Lærke!</firstline>
@@ -1343,6 +1383,7 @@ Det er til Jordens Hytter et nedslængt Fingerkys
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den første Lærke, den første Lærke!''
 vort Hjærte jubler i Dagens Sol.
 Den første Lærke, den første Lærke!
@@ -1352,10 +1393,11 @@ Den første Lærke, den første Lærke,
 skønt Sneen skeler fra Grøften op;
 den første Lærke - det første Mærke
 paa Vejen mod Rosens første Knop!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092421">
+<text id="aakjaer2000092421">
 <head>
     <title>Vaar-Rim</title>
     <firstline>Moders Dyner er lagt paa Hæs</firstline>
@@ -1366,6 +1408,7 @@ paa Vejen mod Rosens første Knop!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Moders Dyner er lagt paa Hæs,
 Koen dryner hun vil paa Græs,
 Bien brummer om Kubens Mund,
@@ -1385,10 +1428,11 @@ Nu ta'r Pigerne Pynten paa,
 Forklæ'r hvide og Tøfler smaa,
 Perlekransen om nysat Haar -
 Tøflerne danser mod Gildesgaard.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092422">
+<text id="aakjaer2000092422">
 <head>
     <title>Morgendugg</title>
     <firstline>Gâl nu, min Hane, Dagen er nær</firstline>
@@ -1396,6 +1440,7 @@ Tøflerne danser mod Gildesgaard.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Gâl nu, min Hane, Dagen er nær,
         kølige Kjær
         drager sit Vejr,
@@ -1443,10 +1488,11 @@ Se hvor det ligger i Ædelstensskjær,
         Marker og Kjær!
 Landet og Vandet - Alverden er smuk
         i Morgendugg!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092423">
+<text id="aakjaer2000092423">
 <head>
     <title>Bonde Vise</title>
     <firstline>Jeg lagde min Gaard i den rygende Blæst</firstline>
@@ -1454,6 +1500,7 @@ Landet og Vandet - Alverden er smuk
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg lagde min Gaard i den rygende Blæst,
 hvor Bakken hun skraaner mod Sønder,
 hvor Græsset gror højt om min skæggede Hest,
@@ -1489,10 +1536,11 @@ ved Arnelysenes Kalden;
 hjem nikker mit Spand i den krydrede Vind;
 hos <i>hende</i> jeg sætter til Skiven mig ind,
 mens Øgene gumler i Stalden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092424">
+<text id="aakjaer2000092424">
 <head>
     <title>Bondens Datter synger</title>
     <firstline>Giftes vil hver Pigelil</firstline>
@@ -1500,6 +1548,7 @@ mens Øgene gumler i Stalden.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
   Giftes vil hver Pigelil
   og nødig altfor silde;
   Lykken kommer, naar han vil,
@@ -1562,10 +1611,11 @@ og sove ved en glad Mand.
   pusler om en Gutteflok.
   - Aah, der bliver Lykke nok,
 naar først man har en glad Mand!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092425">
+<text id="aakjaer2000092425">
 <head>
     <title>Høgen</title>
     <firstline>Vær hilset Høg over Granetop</firstline>
@@ -1573,6 +1623,7 @@ naar først man har en glad Mand!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vær hilset Høg over Granetop,
 du stolteste Fugl i Skoven!
 Du stirrer trodsigt mod Himlen op,
@@ -1592,10 +1643,11 @@ Jeg elsker vel ej din blodige Klo,
 men Flugtens Sus om din Bringe,
 dit vilde Blik fra dit stolte Bo
 og Solens Blink paa din Vinge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092426">
+<text id="aakjaer2000092426">
 <head>
     <title>Sundt Blod</title>
     <firstline>Jeg bærer med Smil min Byrde</firstline>
@@ -1606,6 +1658,7 @@ og Solens Blink paa din Vinge.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg bærer med Smil min Byrde,
 jeg drager med Sang mit Læs;
 jeg er som den vilde Hyrde,
@@ -1630,10 +1683,11 @@ og Bukkene bræger af Fryd!
 saalænge Guds Himmel er blaa!
 <i>Mit</i> Hjærte skjælver af Glæde,
 blot Duggen dynker et Straa.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092427">
+<text id="aakjaer2000092427">
 <head>
     <title>Maanen kysser Rugneget</title>
     <firstline>Du Smaa, du Smaa</firstline>
@@ -1641,6 +1695,7 @@ blot Duggen dynker et Straa.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Du Smaa, du Smaa,
     du søde Smaa,
 jeg kysser dig fra Top til Taa!
@@ -1669,10 +1724,11 @@ Og histnede: Knæ i Hop!
 hvide Liljer ned og op!
 
 ,,Elsk mig! Tag mig! Tavl og Top!''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092428">
+<text id="aakjaer2000092428">
 <head>
     <title>Hummeren</title>
     <firstline>De to' mæ paa tredve Favne Wand</firstline>
@@ -1680,6 +1736,7 @@ hvide Liljer ned og op!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De to' mæ paa tredve Favne Wand,
 ja nue vil sej': en halvhunde;
 de største Fisk're paa Ferring Strand
@@ -1689,10 +1746,11 @@ Fâr gik a saa dawle og gro, aaja!
 No haar a en Kjowl saa rø'.
 Søen gôr æ gjan mæ det Gued, en ska' ha':
 Det kommer - nær en er dø'!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092429">
+<text id="aakjaer2000092429">
 <head>
     <title>Øwer æ ævn'</title>
     <source pages="98-101"/>
@@ -1703,6 +1761,7 @@ Det kommer - nær en er dø'!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Haar do hør', haar du hør', te Pe' Døw han er dø',
 og hans Kuen sejjer Enk' li'saa strag som en Mø!
 
@@ -1774,10 +1833,11 @@ og saa ka' do ett kravl' opo en Kon Øg!
 
 - Ta' æ Saadl aa æ Krikk'! Sæt di Lejerlu' o,
 og sej do som en Taari og drewl øwer æ Skro!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092430">
+<text id="aakjaer2000092430">
 <head>
     <title>Jens Fisker</title>
     <firstline>Jens Fisker han bo'de derude ved Aa</firstline>
@@ -1788,6 +1848,7 @@ og sej do som en Taari og drewl øwer æ Skro!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jens Fisker han bo'de derude ved Aa,
 hvor Græsset er grønt, og hvor Himlen er blaa.
 
@@ -1850,10 +1911,11 @@ Men Kjællingen klager med Kjæften paaskraa:
 
 Saa sprang hun som Tudsen fra Brinken i Aa.
 Nu spøger de - hver med <i>sin</i> Vandstøvle paa.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092431">
+<text id="aakjaer2000092431">
 <head>
     <title>Æ gammel Smed</title>
     <firstline>Og her kommer a med mi' Hywl og mi' Kjep</firstline>
@@ -1864,6 +1926,7 @@ Nu spøger de - hver med <i>sin</i> Vandstøvle paa.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Og her kommer a med mi' Hywl og mi' Kjep
     og mi' Hej-hej-ha og mi' Haah -
 og hwis I vil skink' mæ en jenle bitte Sep,
@@ -1928,10 +1991,11 @@ Naa, no'el a res' mæ', og saa'el a go
     med mi' Hej-hej-ha og mi' Haah -
 mi' Kjep haar a ved mæ, mi' Rasp - og mi' Skro,
     mi' Hywl den vinter ved æ Laad'.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092432">
+<text id="aakjaer2000092432">
 <head>
     <title>Jens Hvøvtrup</title>
     <firstline>Jens Hvøvtrup springer fra Sengens Stok</firstline>
@@ -1942,6 +2006,7 @@ mi' Kjep haar a ved mæ, mi' Rasp - og mi' Skro,
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jens Hvøvtrup springer fra Sengens Stok:
             Aah - ja,
         ta' mæ' mi' Bøss'!
@@ -2085,10 +2150,11 @@ Saa maaler han op sit sidste Skud Krud:
         ta' mæ' mi' Bøss'!
 og sletter saa al sin Kvide ud,
 mens Ekko fra Bakkerne skogrer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092433">
+<text id="aakjaer2000092433">
 <head>
     <title>Gammel Kjærlighed</title>
     <firstline>Vi er bløwen nøj aaldre, Kræn Nargaard</firstline>
@@ -2099,6 +2165,7 @@ mens Ekko fra Bakkerne skogrer.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Vi er bløwen nøj aaldre, Kræn Nargaard,
     og wor Øwn ka' ett wal skimm' æ Dar',
 og wor Kinder er gro, og wor Hinder er blo,
@@ -2134,10 +2201,11 @@ Men en ta'r jo si' Torn, og en bærer si' Born,
    og forglemm', hwad der ett ka' vær' alln!
 - Ka' <i>do</i> skimm', om æ Hyld' <i>ino</i> stor med si' Fyld',
    for de sejer, æ Blaad' ska' vær' fald'n.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092434">
+<text id="aakjaer2000092434">
 <head>
     <title>Jens Vejmand</title>
     <firstline>Hvem sidder der bag Skjærmen</firstline>
@@ -2152,6 +2220,7 @@ Men en ta'r jo si' Torn, og en bærer si' Born,
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvem sidder der bag Skjærmen
 med Klude om sin Haand,
 med Læderlap for Øjet
@@ -2205,10 +2274,11 @@ Det er saamænd Jens Vejmands.
 Hans Liv var fuldt af Sten,
 men paa hans Grav - i Døden,
 man gav ham aldrig én.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092435">
+<text id="aakjaer2000092435">
 <head>
     <title>Store John</title>
     <firstline>Store John han ønsked' sig kun to Tønder Land</firstline>
@@ -2216,6 +2286,7 @@ man gav ham aldrig én.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Store John han ønsked' sig kun to Tønder Land,
             to Tønder Land
             og en Ko under Strand,
@@ -2257,10 +2328,11 @@ Mellem Lyng og Moser graa han lister altid om,
             om end Ryggen blev krum;
 gaar hans Blik saa brat paa Flugt, hans Lyngle rent istaa,
 ved jeg længst, hvad Store John nu atter grubler paa.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="aakjaer2000092436">
+<text id="aakjaer2000092436">
 <head>
     <title>Jakob og hans Sønner</title>
     <firstline>I Sommersolglans glimted Jakobs Gaard</firstline>
@@ -2268,6 +2340,7 @@ ved jeg længst, hvad Store John nu atter grubler paa.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Sommersolglans glimted Jakobs Gaard
 henover disblaa Kjær og Bavnehøje;
 Rugfaldets gule Vover bar éns Øje
@@ -2643,8 +2716,9 @@ Horsgummen gjepper mellem Mosens Flæg;
 en Taare triller ned i Jakobs Skjæg;
 hans Hjerte rinder fuldt af Dagens Minder,
 mens Sønneskaren tyst i Natten svinder.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>

@@ -14,7 +14,7 @@
 </workhead>
 <workbody>
 
-<prose id="wieland2001102406">
+<text id="wieland2001102406">
 <head>
    <title>Widmungsvorrede an Chr. F. Weisse(von 1769)</title>
    <subtitle>An Herrn Creyßsteuereinnehmer Weisse in Leipzig</subtitle>
@@ -22,6 +22,7 @@
    <indextitle>Widmungsvorrede an Chr. F. Weisse(von 1769)</indextitle>
 </head>
 <body>
+<prose>
     Unser schätzbarer Freund, Herr Reich, schreibt mir, daß er der Versuchung nicht widerstehen könne, etliche Ballen holländisches Papier, die ihm neulich angekommen, zu einer neuen Ausgabe unsrer Musarion anzuwenden. Er sieht sich gewissermaßen als den Pflegevater dieser Schülerinn der Grazien an, und ist parteyisch genug für seine angenommene Tochter, sie so niedlich geputzt sehen zu wollen, als nur immer möglich ist.
 
     Ob ihre Liebenswürdigkeit diese kleine Schwärmerey rechtfertige, würde, wenn ich Ihren Beyfall, mein vortrefflicher Freund, für eben so gerecht, als gütig halten dürfte, keine Frage mehr seyn. Und warum sollte ich aus lauter Bescheidenheit gegen das Urtheil eines <i>Weisse</i> so unbillig seyn, ein Mißtrauen in den Werth desjenigen zu setzen, was ihm gefallen, und, wenn ich auch die Hälfte der Energie seiner Ausdrücke auf Rechnung der Freundschaft setze, so vorzüglich gefallen hat? - Nein, es würde nicht Bescheidenheit, Gleißnerey würde es seyn; und von dieser Sünde wenigstens wird mich, wie ich hoffe, Herr Ziegra selbst freysprechen.
@@ -88,10 +89,11 @@
         <i>Wieland</i>
 
 <center>Warthausen, den 15. März 1769.</center>
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="wieland2001102407">
+<text id="wieland2001102407">
 <head>
    <title>In einem Hain, der einer Wildniß glich</title>
    <toctitle>Erster Buch</toctitle>
@@ -99,6 +101,7 @@
    <firstline>In einem Hain, der einer Wildniß glich</firstline>
 </head>
 <body>
+<poetry>
 In einem Hain, der einer Wildniß glich
 Und nah' am Meer ein kleines Gut begrenzte,
 Ging Phanias mit seinem Gram und sich
@@ -754,10 +757,11 @@ Bey seinem Landgut an, wo sie das weise Paar,
 Von Linden die im Vorhof standen
 Umduftet, unverhofft in einer Stellung fanden,
 Die der Philosophie nicht allzu rühmlich war.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="wieland2001102408">
+<text id="wieland2001102408">
 <head>
    <title>Was, beym Anubis! konnte das</title>
    <toctitle>Zweyter Buch</toctitle>
@@ -765,6 +769,7 @@ Die der Philosophie nicht allzu rühmlich war.
    <firstline>Was, beym Anubis! konnte das</firstline>
 </head>
 <body>
+<poetry>
 Was, beym Anubis! konnte das
 Für eine Stellung seyn, in welcher Phanias
 Die beiden Weisen angetroffen?
@@ -1226,10 +1231,11 @@ So sehr ihn Chloe zwickt, so laut man um ihn lacht)
 Wird standsgemäß, umtanzt von beiden Schönen,
 Mit Bacchischem Triumph in - einen Stall gebracht,
 Und lachend wünschet man einander gute Nacht.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="wieland2001102409">
+<text id="wieland2001102409">
 <head>
    <title>Die Schöne lag auf ihrem Ruhebette</title>
    <toctitle>Dritter Buch</toctitle>
@@ -1237,6 +1243,7 @@ Und lachend wünschet man einander gute Nacht.
    <firstline>Die Schöne lag auf ihrem Ruhebette</firstline>
 </head>
 <body>
+<poetry>
 Die Schöne lag auf ihrem Ruhebette,
 Und hatte (fern, vermuthlich, vom Verdacht
 Daß sie bey Phanias sich vorzusehen hätte,)
@@ -1626,7 +1633,8 @@ Er fand er sey nicht klug, und lernte Bohnen essen.
 Ihn aufgeweckt, ganz leise auf den Zehn
 Aus seinem Stall - vielleicht in eine Tonne;
 Kurz, er verschwand, und ward nicht mehr gesehn.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

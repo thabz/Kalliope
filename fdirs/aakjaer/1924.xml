@@ -10,7 +10,7 @@
 </workhead>
 <workbody>
 
-<prose id="aakjaer2001072201">
+<text id="aakjaer2001072201">
 <head>
    <title>Forord</title>
    <toctitle>Forord</toctitle>
@@ -18,16 +18,18 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<prose>
 Dette Digt blev planlagt for en halv Snes Aar siden, men da fik jeg kun skrevet de første to Vers; saa tog jeg atter fat i Efteraaret 1920 og skrev Halvparten. Resten er skrevet ind imod Jul 1923.
    Emnet har jeg fundet i Edda, i Fortællingen om, hvorledes Rig eller Heimdal blev Far til Stænderne. I mit Digt er han nu atter paa Vandring for at se, hvorledes det i den lange Mellemtid er gaaet hans Sønner.
 
 Kjøbenhavn 19. Februar 1924.
 
 Jeppe Aakjær.
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="aakjaer2001072202">
+<text id="aakjaer2001072202">
 <head>
    <title>Hejmdals Vandringer</title>
    <toctitle>Hejmdals Vandringer</toctitle>
@@ -36,6 +38,7 @@ Jeppe Aakjær.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
    Han kommer fra Norden,
    fra Landet bag Fjorden,
 hvor Vindene vysser de vuggende Flæg;
@@ -899,7 +902,8 @@ den Høje med den ad sin himmelske Bro.
 laa funklende Regnbuerester og lo.
 Men Tonen fra Vandrerens varslende Horn,
 den summer hver Høst i vort ringlende Korn.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

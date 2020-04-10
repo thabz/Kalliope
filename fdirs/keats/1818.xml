@@ -13,7 +13,7 @@
 </workhead>
 <workbody>
 
-<prose id="keats2001071112">
+<text id="keats2001071112">
 <head>
    <title>Preface by Keats</title>
    <toctitle>Preface by Keats</toctitle>
@@ -21,6 +21,7 @@
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<prose>
    Knowing within myself the manner in which this Poem has been produced, it is not without a feeling of regret that I make it public.
    What manner I mean, will be quite clear to the reader, who must soon perceive great inexperience, immaturity, and every error denoting a feverish attempt, rather than a deed accomplished. The two first books, and indeed the two last, I feel sensible are not of such completion as to warrant their passing the press; nor should they if I thought a year's castigation would do them any good; - it will not: the foundations are too sandy. It is just that this youngster should die away: a sad thought for me, if I had not some hope that while it is dwindling I may be plotting, and fitting myself for verses fit to live.
    This may be speaking too presumptuously, and may deserve a punishment: but no feeling man will be forward to inflict it: he will leave me alone, with the conviction that there is not a fiercer hell than the failure in a great object. This is not written with the least atom of purpose to forestall criticisms of course, but from the desire I have to conciliate men who are competent to look, and who do look with a zealous eye, to the honour of English literature.
@@ -28,10 +29,11 @@
    I hope I have not in too late a day touched the beautiful mythology of Greece, and dulled its brightness: for I wish to try once more, before I bid it farewell.
 
 (Teignmouth, April 10, 1818.)
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="keats2001071113">
+<text id="keats2001071113">
 <head>
    <title>Book I</title>
    <toctitle>Book I</toctitle>
@@ -40,6 +42,7 @@
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 A thing of beauty is a joy for ever:
 Its loveliness increases; it will never
 Pass into nothingness; but still will keep
@@ -1059,10 +1062,11 @@ Meet some of our near-dwellers with my car.”
   This said, he rose, faint-smiling like a star
 Through autumn mists, and took Peona’s hand:
 They stept into the boat, and launch’d from land.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="keats2001071114">
+<text id="keats2001071114">
 <head>
    <title>Book II</title>
    <toctitle>Book II</toctitle>
@@ -1071,6 +1075,7 @@ They stept into the boat, and launch’d from land.
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 O sovereign power of love! O grief! O balm!
 All records, saving thine, come cool, and calm,
 And shadowy, through the mist of passed years:
@@ -2118,10 +2123,11 @@ Towards it by a sandy path, and lo!
 More suddenly than doth a moment go,
 The visions of the earth were gone and fled—
 He saw the giant sea above his head.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="keats2001071115">
+<text id="keats2001071115">
 <head>
    <title>Book III</title>
    <toctitle>Book III</toctitle>
@@ -2130,6 +2136,7 @@ He saw the giant sea above his head.
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 There are who lord it o’er their fellow-men
 With most prevailing tinsel: who unpen
 Their baaing vanities, to browse away
@@ -3214,10 +3221,11 @@ Came quiet to his eyes; and forest green,
 Cooler than all the wonders he had seen,
 Lull’d with its simple song his fluttering breast.
 How happy once again in grassy nest!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="keats2001071116">
+<text id="keats2001071116">
 <head>
    <title>Book IV</title>
    <toctitle>Book IV</toctitle>
@@ -3226,6 +3234,7 @@ How happy once again in grassy nest!
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 Muse of my native land! loftiest Muse!
 O first-born on the mountains! by the hues
 Of heaven on the spiritual air begot:
@@ -4279,7 +4288,8 @@ She gave her fair hands to him, and behold,
 Before three swiftest kisses he had told,
 They vanish’d far away!—Peona went
 Home through the gloomy wood in wonderment.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

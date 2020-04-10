@@ -16,7 +16,7 @@
 </workhead>
 <workbody>
 
-<prose id="shakespeare2001060201">
+<text id="shakespeare2001060201">
 <head>
    <title>[Dedication]</title>
    <toctitle>[Dedication]</toctitle>
@@ -30,6 +30,7 @@
    <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
 </head>
 <body>
+<prose>
 <center>TO.THE.ONLIE.BEGETTER.OF.
 THESE.INSVING.SONNETS.
 Mr. W.H. ALL.HAPINESSE.
@@ -43,10 +44,11 @@ ADVENTVRER.IN.
 SETTING.
 FORTH.</center>
                                                         T.T.
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="shakespeare0001">
+<text id="shakespeare0001">
 <head>
    <title>1</title>
    <toctitle><num>1</num>From fairest creatures we desire increase</toctitle>
@@ -63,6 +65,7 @@ FORTH.</center>
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 From fairest creatures we desire increase,
 That thereby beauties <i>Rose</i> might neuer die,
 But as the riper should by time decease,
@@ -94,10 +97,11 @@ Within thine own bud buriest thy content,
 And, tender churl, mak'st waste in niggarding:
     Pity the world, or else this glutton be,
     To eat the world's due, by the grave and thee.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0002">
+<text id="shakespeare0002">
 <head>
    <title>2</title>
    <toctitle><num>2</num>When fortie Winters shall beseige thy brow</toctitle>
@@ -116,6 +120,7 @@ And, tender churl, mak'st waste in niggarding:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 When fortie Winters shall beseige thy brow,
 And digge deep trenches in thy beauties field,
 Thy youthes proud liuery, so gaz'd on now,
@@ -166,10 +171,11 @@ Saues my account &amp; makes my old excuse
 Making his bewty by succession thine
     This were to bee new borne when thou art old
     And see thy bloud warme when thou feelst it cold
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0003">
+<text id="shakespeare0003">
 <head>
    <title>3</title>
    <toctitle><num>3</num>Looke in thy glasse and tell the face thou vewest</toctitle>
@@ -183,6 +189,7 @@ Making his bewty by succession thine
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Looke in thy glasse and tell the face thou vewest,
 Now is the time that face should forme an other,
 Whose fresh repaire if now thou not renewest,
@@ -214,10 +221,11 @@ So thou through windows of thine age shalt see,
 Despite of wrinkles, this thy golden time.
     But if thou live remembered not to be,
     Die single and thine image dies with thee.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0004">
+<text id="shakespeare0004">
 <head>
    <title>4</title>
    <toctitle><num>4</num>Vnthrifty louelinesse, why dost thou spend</toctitle>
@@ -231,6 +239,7 @@ Despite of wrinkles, this thy golden time.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Vnthrifty louelinesse, why dost thou spend
 Vpon thy selfe thy beauties legacy?
 Natures bequest giues nothing but doth lend,
@@ -262,10 +271,11 @@ Then how when nature calls thee to be gone,
 What acceptable audit canst thou leave?
     Thy unused beauty must be tombed with thee,
     Which used lives th'executor to be.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0005">
+<text id="shakespeare0005">
 <head>
    <title>5</title>
    <toctitle><num>5</num>Those howers that with gentle worke did frame</toctitle>
@@ -280,6 +290,7 @@ What acceptable audit canst thou leave?
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Those howers that with gentle worke did frame
 The louely gaze where euery eye doth dwell
 Will play the tirants to the very same,
@@ -311,10 +322,11 @@ Beauty's effect with beauty were bereft,
 Nor it nor no remembrance what it was.
     But flowers distilled, though they with winter meet,
     Leese but their show, their substance still lives sweet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0006">
+<text id="shakespeare0006">
 <head>
    <title>6</title>
    <toctitle><num>6</num>Then let not winters wragged hand deface</toctitle>
@@ -328,6 +340,7 @@ Nor it nor no remembrance what it was.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Then let not winters wragged hand deface<note>wragged] <biblio>Q</biblio>; rugged <biblio>Capell</biblio></note>
 In thee thy summer ere thou be distil'd:
 Make sweet some viall; treasure thou some place
@@ -359,10 +372,11 @@ Then what could death do if thou shouldst depart,
 Leaving thee living in posterity?
     Be not self-willed, for thou art much too fair
     To be death's conquest and make worms thine heir.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0007">
+<text id="shakespeare0007">
 <head>
    <title>7</title>
    <toctitle><num>7</num>Loe in the Orient when the gracious light</toctitle>
@@ -377,6 +391,7 @@ Leaving thee living in posterity?
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Loe in the Orient when the gracious light
 Lifts vp his burning head, each vnder eye
 Doth homage to his new appearing sight,
@@ -408,10 +423,11 @@ The eyes, fore duteous, now converted are
 From his low tract and look another way:
     So thou, thyself out-going in thy noon,
     Unlooked on diest unless thou get a son.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0008">
+<text id="shakespeare0008">
 <head>
    <title>8</title>
    <toctitle><num>8</num>Musick to heare, why hear'st thou musick sadly?</toctitle>
@@ -428,6 +444,7 @@ From his low tract and look another way:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Musick to heare, why hear'st thou musick sadly?
 Sweets with sweets warre not, ioy delights in ioy:
 Why lou'st thou that which thou receaust not gladly,
@@ -486,10 +503,11 @@ Resemblinge Childe, &amp; Syer, and happy Mother
 Which all in one, this single note dothe singe
     whose speechlesse songe beeinge many seeming one
     Singes this to thee, Thou single, shalt proue none
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0009">
+<text id="shakespeare0009">
 <head>
    <title>9</title>
    <toctitle><num>9</num>Is it for feare to wet a widdowes eye</toctitle>
@@ -503,6 +521,7 @@ Which all in one, this single note dothe singe
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Is it for feare to wet a widdowes eye<note>Is it] <biblio>Q</biblio>; It is <biblio>Benson</biblio></note>
 That thou consum'st thy selfe in single life?
 Ah, if thou issulesse shalt hap to die,
@@ -534,10 +553,11 @@ But beauty's waste hath in the world an end,
 And kept unused the user so destroys it:
     No love toward others in that bosom sits
     That on himself such murd'rous shame commits.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0010">
+<text id="shakespeare0010">
 <head>
    <title>10</title>
    <toctitle><num>10</num>For shame deny that thou bear'st loue to any</toctitle>
@@ -551,6 +571,7 @@ And kept unused the user so destroys it:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 For shame deny that thou bear'st loue to any,
 Who for thy selfe art so vnprouident.
 Graunt if thou wilt, thou art belou'd of many,
@@ -582,10 +603,11 @@ Be as thy presence is, gracious and kind,
 Or to thyself at least kind-hearted prove,
     Make thee another self for love of me,
     That beauty still may live in thine or thee.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0011">
+<text id="shakespeare0011">
 <head>
    <title>11</title>
    <toctitle><num>11</num>As fast as thou shalt wane, so fast thou grow'st</toctitle>
@@ -599,6 +621,7 @@ Or to thyself at least kind-hearted prove,
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 As fast as thou shalt wane so fast thou grow'st
 In one of thine, from that which thou departest,
 And that fresh bloud which yongly thou bestow'st
@@ -630,10 +653,11 @@ Look whom she best endowed, she gave the more;
 Which bounteous gift thou shouldst in bounty cherish.
     She carved thee for her seal, and meant thereby,
     Thou shouldst print more, not let that copy die.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0012">
+<text id="shakespeare0012">
 <head>
    <title>12</title>
    <toctitle><num>12</num>When I doe count the clock that tels the time</toctitle>
@@ -648,6 +672,7 @@ Which bounteous gift thou shouldst in bounty cherish.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 When I doe count the clock that tels the time,
 And see the braue day sunck in hidious night;
 When I behold the violet past prime,
@@ -679,10 +704,11 @@ Since sweets and beauties do themselves forsake,
 And die as fast as they see others grow,
     And nothing 'gainst time's scythe can make defence
     Save breed to brave him, when he takes thee hence.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0013">
+<text id="shakespeare0013">
 <head>
    <title>13</title>
    <toctitle><num>13</num>O that you were your selfe, but, loue, you are</toctitle>
@@ -696,6 +722,7 @@ And die as fast as they see others grow,
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 O that you were your selfe, but, loue, you are
 No longer yours then you your selfe here liue;
 Against this cumming end you should prepare,
@@ -727,10 +754,11 @@ Against the stormy gusts of winter's day
 And barren rage of death's eternal cold?
     O none but unthrifts, dear my love you know,
     You had a father, let your son say so.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0014">
+<text id="shakespeare0014">
 <head>
    <title>14</title>
    <toctitle><num>14</num>Not from the stars do I my iudgement plucke</toctitle>
@@ -745,6 +773,7 @@ And barren rage of death's eternal cold?
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Not from the stars do I my iudgement plucke,
 And yet me thinkes I haue Astronomy,
 But not to tell of good, or euil lucke,
@@ -776,10 +805,11 @@ As truth and beauty shall together thrive
 If from thyself to store thou wouldst convert:
     Or else of thee this I prognosticate,
     Thy end is truth's and beauty's doom and date.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0015">
+<text id="shakespeare0015">
 <head>
    <title>15</title>
    <toctitle><num>15</num>When I consider euery thing that growes</toctitle>
@@ -793,6 +823,7 @@ If from thyself to store thou wouldst convert:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 When I consider euery thing that growes
 Holds in perfection but a little moment,
 That this huge stage presenteth nought but showes
@@ -824,10 +855,11 @@ Where wasteful time debateth with decay
 To change your day of youth to sullied night;
     And all in war with time for love of you,
     As he takes from you, I engraft you new.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0016">
+<text id="shakespeare0016">
 <head>
    <title>16</title>
    <toctitle><num>16</num>But wherefore do not you a mightier waie</toctitle>
@@ -841,6 +873,7 @@ To change your day of youth to sullied night;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 But wherefore do not you a mightier waie
 Make warre vppon this bloudie tirant time?
 And fortifie your selfe in your decay
@@ -872,10 +905,11 @@ Neither in inward worth nor outward fair
 Can make you live yourself in eyes of men:
     To give away yourself keeps yourself still,
     And you must live drawn by your own sweet skill.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0017">
+<text id="shakespeare0017">
 <head>
    <title>17</title>
    <toctitle><num>17</num>Who will beleeue my verse in time to come</toctitle>
@@ -890,6 +924,7 @@ Can make you live yourself in eyes of men:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Who will beleeue my verse in time to come
 If it were fild with your most high deserts?
 Though yet heauen knowes it is but as a tombe
@@ -921,10 +956,11 @@ And your true rights be termed a poet's rage,
 And stretched metre of an antique song:
     But were some child of yours alive that time,
     You should live twice, in it and in my rhyme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0018">
+<text id="shakespeare0018">
 <head>
    <title>18</title>
    <toctitle><num>18</num>Shall I compare thee to a Summers day?</toctitle>
@@ -938,6 +974,7 @@ And stretched metre of an antique song:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Shall I compare thee to a Summers day?
 Thou art more louely and more temperate:
 Rough windes do shake the darling buds of Maie,
@@ -969,10 +1006,11 @@ Nor shall death brag thou wand'rest in his shade,
 When in eternal lines to time thou grow'st:
     So long as men can breathe or eyes can see,
     So long lives this, and this gives life to thee.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0019">
+<text id="shakespeare0019">
 <head>
    <title>19</title>
    <toctitle><num>19</num>Deuouring time, blunt thou the Lyons pawes</toctitle>
@@ -987,6 +1025,7 @@ When in eternal lines to time thou grow'st:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Deuouring time, blunt thou the Lyons pawes,
 And make the earth deuoure her owne sweet brood;
 Plucke the keene teeth from the fierce Tygers yawes,
@@ -1018,10 +1057,11 @@ Him in thy course untainted do allow
 For beauty's pattern to succeeding men.
     Yet do thy worst old Time, despite thy wrong,
     My love shall in my verse ever live young.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0020">
+<text id="shakespeare0020">
 <head>
    <title>20</title>
    <toctitle><num>20</num>A womans face with natures owne hande painted</toctitle>
@@ -1035,6 +1075,7 @@ For beauty's pattern to succeeding men.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 A womans face with natures owne hande painted
 Haste thou, the Master Mistris of my passion;
 A womans gentle hart, but not acquainted
@@ -1066,10 +1107,11 @@ And by addition me of thee defeated,
 By adding one thing to my purpose nothing.
     But since she pricked thee out for women's pleasure,
     Mine be thy love and thy love's use their treasure.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0021">
+<text id="shakespeare0021">
 <head>
    <title>21</title>
    <toctitle><num>21</num>So is it not with me as with that Muse</toctitle>
@@ -1083,6 +1125,7 @@ By adding one thing to my purpose nothing.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 So is it not with me as with that Muse,
 Stird by a painted beauty to his verse,
 Who heauen it selfe for ornament doth vse,
@@ -1114,10 +1157,11 @@ As any mother's child, though not so bright
 As those gold candles fixed in heaven's air:
     Let them say more that like of hearsay well,
     I will not praise that purpose not to sell.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0022">
+<text id="shakespeare0022">
 <head>
    <title>22</title>
    <toctitle><num>22</num>My glasse shall not perswade me I am ould</toctitle>
@@ -1131,6 +1175,7 @@ As those gold candles fixed in heaven's air:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 My glasse shall not perswade me I am ould,
 So long as youth and thou are of one date,
 But when in thee times forrwes I behould,
@@ -1162,10 +1207,11 @@ Bearing thy heart, which I will keep so chary
 As tender nurse her babe from faring ill:
     Presume not on thy heart when mine is slain,
     Thou gav'st me thine not to give back again.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0023">
+<text id="shakespeare0023">
 <head>
    <title>23</title>
    <toctitle><num>23</num>As an vnperfect actor on the stage</toctitle>
@@ -1179,6 +1225,7 @@ As tender nurse her babe from faring ill:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 As an vnperfect actor on the stage,
 Who with his feare is put besides his part,
 Or some fierce thing repleat with too much rage,
@@ -1210,10 +1257,11 @@ Who plead for love, and look for recompense,
 More than that tongue that more hath more expressed.
     O learn to read what silent love hath writ,
     To hear with eyes belongs to love's fine wit.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0024">
+<text id="shakespeare0024">
 <head>
    <title>24</title>
    <toctitle><num>24</num>Mine eye hath play'd the painter and hath stelld</toctitle>
@@ -1228,6 +1276,7 @@ More than that tongue that more hath more expressed.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Mine eye hath play'd the painter and hath steeld<note>steeld] <biblio>Q</biblio>; stell'd <biblio>Capell</biblio></note>
 Thy beauties forme in table of my heart;
 My body is the frame wherein ti's held,
@@ -1259,10 +1308,11 @@ Are windows to my breast, wherethrough the sun
 Delights to peep, to gaze therein on thee;
     Yet eyes this cunning want to grace their art,
     They draw but what they see, know not the heart.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0025">
+<text id="shakespeare0025">
 <head>
    <title>25</title>
    <toctitle><num>25</num>Let those who are in fauor with their stars</toctitle>
@@ -1276,6 +1326,7 @@ Delights to peep, to gaze therein on thee;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Let those who are in fauor with their stars,
 Of publike honour and proud titles bost,
 Whilst I whome fortune of such tryumph bars,
@@ -1307,10 +1358,11 @@ Is from the book of honour razed quite,
 And all the rest forgot for which he toiled:
     Then happy I that love and am beloved
     Where I may not remove, nor be removed.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0026">
+<text id="shakespeare0026">
 <head>
    <title>26</title>
    <toctitle><num>26</num>Lord of my loue, to whome in vassalage</toctitle>
@@ -1325,6 +1377,7 @@ And all the rest forgot for which he toiled:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Lord of my loue, to whome in vassalage
 Thy merrit hath my dutie strongly knit,
 To thee I send this written ambassage
@@ -1356,10 +1409,11 @@ And puts apparel on my tottered loving,
 To show me worthy of thy sweet respect;
     Then may I dare to boast how I do love thee,
     Till then, not show my head where thou mayst prove me.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0027">
+<text id="shakespeare0027">
 <head>
    <title>27</title>
    <toctitle><num>27</num>Weary with toyle, I hast me to my bed</toctitle>
@@ -1373,6 +1427,7 @@ To show me worthy of thy sweet respect;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Weary with toyle, I hast me to my bed,
 The deare repose for lims with trauaill tired,
 But then begins a iourny in my head
@@ -1404,10 +1459,11 @@ Which like a jewel, hung in ghastly night,
 Makes black night beauteous, and her old face new.
     Lo thus by day my limbs, by night my mind,
     For thee, and for myself, no quiet find.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0028">
+<text id="shakespeare0028">
 <head>
    <title>28</title>
    <toctitle><num>28</num>How can I then returne in happy plight</toctitle>
@@ -1421,6 +1477,7 @@ Makes black night beauteous, and her old face new.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 How can I then returne in happy plight
 That am debard the benefit of rest?
 When daies oppression is not eazd by night,
@@ -1452,10 +1509,11 @@ So flatter I the swart-complexioned night,
 When sparkling stars twire not thou gild'st the even.
     But day doth daily draw my sorrows longer,
     And night doth nightly make grief's length seem stronger.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0029">
+<text id="shakespeare0029">
 <head>
    <title>29</title>
    <toctitle><num>29</num>When in disgrace with Fortune and mens eyes</toctitle>
@@ -1470,6 +1528,7 @@ When sparkling stars twire not thou gild'st the even.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 When in disgrace with Fortune and mens eyes
 I all alone beweepe my out-cast state,
 And trouble deafe heauen with my bootlesse cries,
@@ -1501,10 +1560,11 @@ Like to the lark at break of day arising
 From sullen earth, sings hymns at heaven's gate,
     For thy sweet love remembered such wealth brings
     That then I scorn to change my state with kings.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0030">
+<text id="shakespeare0030">
 <head>
    <title>30</title>
    <toctitle><num>30</num>When to the Sessions of sweet silent thought</toctitle>
@@ -1518,6 +1578,7 @@ From sullen earth, sings hymns at heaven's gate,
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 When to the Sessions of sweet silent thought
 I summon vp remembrance of things past,
 I sigh the lacke of many a thing I sought,
@@ -1549,10 +1610,11 @@ The sad account of fore-bemoaned moan,
 Which I new pay as if not paid before.
     But if the while I think on thee, dear friend,
     All losses are restored, and sorrows end.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0031">
+<text id="shakespeare0031">
 <head>
    <title>31</title>
    <toctitle><num>31</num>Thy bosome is indeared with all hearts</toctitle>
@@ -1567,6 +1629,7 @@ Which I new pay as if not paid before.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Thy bosome is indeared with all hearts
 Which I by lacking haue supposed dead,
 And there raignes Loue and all Loues louing parts,
@@ -1598,10 +1661,11 @@ Who all their parts of me to thee did give;
 That due of many, now is thine alone.
     Their images I loved, I view in thee,
     And thou, all they, hast all the all of me.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0032">
+<text id="shakespeare0032">
 <head>
    <title>32</title>
    <toctitle><num>32</num>If thou suruiue my well contented daie</toctitle>
@@ -1615,6 +1679,7 @@ That due of many, now is thine alone.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 If thou suruiue my well contented daie,
 When that churle death my bones with dust shall couer,
 And shalt by fortune once more re-suruay
@@ -1646,10 +1711,11 @@ A dearer birth than this his love had brought
 To march in ranks of better equipage:
     But since he died and poets better prove,
     Theirs for their style I'll read, his for his love.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0033">
+<text id="shakespeare0033">
 <head>
    <title>33</title>
    <toctitle><num>33</num>Full many a glorious morning haue I seene</toctitle>
@@ -1663,6 +1729,7 @@ To march in ranks of better equipage:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Full many a glorious morning haue I seene
 Flatter the mountaine tops with soueraine eie,
 Kissing with golden face the meddowes greene,
@@ -1694,10 +1761,11 @@ But out alack, he was but one hour mine,
 The region cloud hath masked him from me now.
     Yet him for this, my love no whit disdaineth:
     Suns of the world may stain, when heaven's sun staineth.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0034">
+<text id="shakespeare0034">
 <head>
    <title>34</title>
    <toctitle><num>34</num>Why didst thou promise such a beautious day</toctitle>
@@ -1711,6 +1779,7 @@ The region cloud hath masked him from me now.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Why didst thou promise such a beautious day,
 And make me trauaile forth without my cloake,
 To let bace cloudes ore-take me in my way,
@@ -1742,12 +1811,13 @@ Th'offender's sorrow lends but weak relief
 To him that bears the strong offence's cross.
     Ah, but those tears are pearl which thy love sheds,
     And they are rich, and ransom all ill deeds.
+</poetry>
 </body>
-</poem>
+</text>
 
 <!-- # her -->
 
-<poem id="shakespeare0035">
+<text id="shakespeare0035">
 <head>
    <title>35</title>
    <toctitle><num>35</num>No more bee greeu'd at that which thou hast done</toctitle>
@@ -1764,6 +1834,7 @@ To him that bears the strong offence's cross.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 No more bee greeu'd at that which thou hast done,
 Roses haue thornes, and siluer fountaines mud,
 Cloudes and eclipses staine both Moone and Sunne,
@@ -1795,10 +1866,11 @@ And 'gainst myself a lawful plea commence:
 Such civil war is in my love and hate
     That I an accessory needs must be
     To that sweet thief which sourly robs from me.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0036">
+<text id="shakespeare0036">
 <head>
    <title>36</title>
    <toctitle><num>36</num>Let me confesse that we two must be twaine</toctitle>
@@ -1812,6 +1884,7 @@ Such civil war is in my love and hate
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Let me confesse that we two must be twaine,
 Although our vndeuided loues are one;
 So shall those blots that do with me remaine,
@@ -1843,10 +1916,11 @@ Nor thou with public kindness honour me,
 Unless thou take that honour from thy name:
     But do not so, I love thee in such sort,
     As thou being mine, mine is thy good report.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0037">
+<text id="shakespeare0037">
 <head>
    <title>37</title>
    <toctitle><num>37</num>As a decrepit father takes delight</toctitle>
@@ -1860,6 +1934,7 @@ Unless thou take that honour from thy name:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 As a decrepit father takes delight
 To see his actiue childe do deeds of youth,
 So I, made lame by Fortunes dearest spight,
@@ -1891,10 +1966,11 @@ That I in thy abundance am sufficed,
 And by a part of all thy glory live:
     Look what is best, that best I wish in thee,
     This wish I have, then ten times happy me.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0038">
+<text id="shakespeare0038">
 <head>
    <title>38</title>
    <toctitle><num>38</num>How can my Muse want subiect to inuent</toctitle>
@@ -1905,6 +1981,7 @@ And by a part of all thy glory live:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 How can my Muse want subiect to inuent
 While thou dost breath that poor'st into my verse
 Thine owne sweet argument, to excellent
@@ -1936,10 +2013,11 @@ And he that calls on thee, let him bring forth
 Eternal numbers to outlive long date.
     If my slight muse do please these curious days,
     The pain be mine, but thine shall be the praise.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0039">
+<text id="shakespeare0039">
 <head>
    <title>39</title>
    <toctitle><num>39</num>Oh how thy worth with manners may I singe</toctitle>
@@ -1953,6 +2031,7 @@ Eternal numbers to outlive long date.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Oh how thy worth with manners may I singe,
 When thou art all the better part of me?
 What can mine owne praise to mine owne selfe bring;
@@ -1984,10 +2063,11 @@ To entertain the time with thoughts of love,
 Which time and thoughts so sweetly dost deceive,
     And that thou teachest how to make one twain
     By praising him here who doth hence remain.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0040">
+<text id="shakespeare0040">
 <head>
    <title>40</title>
    <toctitle><num>40</num>Take all my loues, my loue, yea take them all</toctitle>
@@ -2001,6 +2081,7 @@ Which time and thoughts so sweetly dost deceive,
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Take all my loues, my loue, yea take them all;
 What hast thou then more then thou hadst before?
 No loue, my loue, that thou maist true loue call,
@@ -2032,10 +2113,11 @@ And yet love knows it is a greater grief
 To bear love's wrong than hate's known injury.
     Lascivious grace, in whom all ill well shows,
     Kill me with spites, yet we must not be foes.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0041">
+<text id="shakespeare0041">
 <head>
    <title>41</title>
    <toctitle><num>41</num>Those pretty wrongs that liberty commits</toctitle>
@@ -2046,6 +2128,7 @@ To bear love's wrong than hate's known injury.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Those pretty wrongs that liberty commits
 When I am some-time absent from thy heart,
 Thy beautie, and thy yeares full well befits,
@@ -2077,10 +2160,11 @@ Who lead thee in their riot even there
 Where thou art forced to break a twofold truth:
     Hers by thy beauty tempting her to thee,
     Thine by thy beauty being false to me.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0042">
+<text id="shakespeare0042">
 <head>
    <title>42</title>
    <toctitle><num>42</num>That thou hast her it is not all my griefe</toctitle>
@@ -2091,6 +2175,7 @@ Where thou art forced to break a twofold truth:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 That thou hast her it is not all my griefe,
 And yet it may be said I lou'd her deerely;
 That she hath thee is of my wayling cheefe,
@@ -2122,10 +2207,11 @@ Both find each other, and I lose both twain,
 And both for my sake lay on me this cross.
     But here's the joy, my friend and I are one;
     Sweet flattery, then she loves but me alone.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0043">
+<text id="shakespeare0043">
 <head>
    <title>43</title>
    <toctitle><num>43</num>When most I winke, then doe mine eyes best see</toctitle>
@@ -2139,6 +2225,7 @@ And both for my sake lay on me this cross.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 When most I winke, then doe mine eyes best see,
 For all the day they view things vnrespected,
 But when I sleepe, in dreames they looke on thee,
@@ -2170,10 +2257,11 @@ When in dead night thy fair imperfect shade
 Through heavy sleep on sightless eyes doth stay?
     All days are nights to see till I see thee,
     And nights bright days when dreams do show thee me.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0044">
+<text id="shakespeare0044">
 <head>
    <title>44</title>
    <toctitle><num>44</num>If the dull substance of my flesh were thought</toctitle>
@@ -2184,6 +2272,7 @@ Through heavy sleep on sightless eyes doth stay?
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 If the dull substance of my flesh were thought,
 Iniurious distance should not stop my way,
 For then, dispight of space, I would be brought
@@ -2215,10 +2304,11 @@ But that so much of earth and water wrought,
 I must attend time's leisure with my moan.
     Receiving naughts by elements so slow
     But heavy tears, badges of either's woe.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0045">
+<text id="shakespeare0045">
 <head>
    <title>45</title>
    <toctitle><num>45</num>The other two, slight ayre, and purging fire</toctitle>
@@ -2232,6 +2322,7 @@ I must attend time's leisure with my moan.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 The other two, slight ayre, and purging fire,
 Are both with thee, where euer I abide:
 The first my thought, the other my desire,
@@ -2263,10 +2354,11 @@ Who even but now come back again assured
 Of thy fair health, recounting it to me.
     This told, I joy, but then no longer glad,
     I send them back again and straight grow sad.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0046">
+<text id="shakespeare0046">
 <head>
    <title>46</title>
    <toctitle><num>46</num>Mine eye and heart are at a mortall warre</toctitle>
@@ -2280,6 +2372,7 @@ Of thy fair health, recounting it to me.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Mine eye and heart are at a mortall warre
 How to deuide the conquest of thy sight;
 Mine eye, my heart thy pictures sight would barre,
@@ -2311,10 +2404,11 @@ And by their verdict is determined
 The clear eye's moiety, and the dear heart's part.
     As thus, mine eye's due is thy outward part,
     And my heart's right, thy inward love of heart.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0047">
+<text id="shakespeare0047">
 <head>
    <title>47</title>
    <toctitle><num>47</num>Betwixt mine eye and heart a league is tooke</toctitle>
@@ -2328,6 +2422,7 @@ The clear eye's moiety, and the dear heart's part.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Betwixt mine eye and heart a league is tooke,
 And each doth good turnes now vnto the other;
 When that mine eye is famisht for a looke,
@@ -2359,10 +2454,11 @@ For thou no further than my thoughts canst move,
 And I am still with them and they with thee;
     Or if they sleep, thy picture in my sight
     Awakes my heart to heart's and eye's delight.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0048">
+<text id="shakespeare0048">
 <head>
    <title>48</title>
    <toctitle><num>48</num>How carefull was I when I tooke my way</toctitle>
@@ -2373,6 +2469,7 @@ And I am still with them and they with thee;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 How carefull was I when I tooke my way,
 Each trifle vnder truest barres to thrust,
 That to my vse it might vn-vsed stay
@@ -2404,10 +2501,11 @@ Within the gentle closure of my breast,
 From whence at pleasure thou mayst come and part;
     And even thence thou wilt be stol'n, I fear,
     For truth proves thievish for a prize so dear.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0049">
+<text id="shakespeare0049">
 <head>
    <title>49</title>
    <toctitle><num>49</num>Against that time (if euer that time come)</toctitle>
@@ -2418,6 +2516,7 @@ From whence at pleasure thou mayst come and part;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Against that time (if euer that time come)
 When I shall see thee frowne on my defects,
 When as thy loue hath cast his vtmost summe,
@@ -2449,10 +2548,11 @@ And this my hand against myself uprear,
 To guard the lawful reasons on thy part;
     To leave poor me, thou hast the strength of laws,
     Since why to love, I can allege no cause.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0050">
+<text id="shakespeare0050">
 <head>
    <title>50</title>
    <toctitle><num>50</num>How heauie doe I iourney on the way</toctitle>
@@ -2466,6 +2566,7 @@ To guard the lawful reasons on thy part;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 How heauie doe I iourney on the way,
 When what I seeke (my wearie trauels end)
 Doth teach that ease and that repose to say,
@@ -2497,10 +2598,11 @@ Which heavily he answers with a groan,
 More sharp to me than spurring to his side,
     For that same groan doth put this in my mind,
     My grief lies onward and my joy behind.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0051">
+<text id="shakespeare0051">
 <head>
    <title>51</title>
    <toctitle><num>51</num>Thus can my loue excuse the slow offence</toctitle>
@@ -2514,6 +2616,7 @@ More sharp to me than spurring to his side,
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Thus can my loue excuse the slow offence
 Of my dull bearer, when from thee I speed;
 From where thou art, why should I hast me thence?
@@ -2545,10 +2648,11 @@ Shall neigh no dull flesh in his fiery race,
 But love, for love, thus shall excuse my jade:
     Since from thee going he went wilful slow,
     Towards thee I'll run, and give him leave to go.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0052">
+<text id="shakespeare0052">
 <head>
    <title>52</title>
    <toctitle><num>52</num>So am I as the rich whose blessed key</toctitle>
@@ -2559,6 +2663,7 @@ But love, for love, thus shall excuse my jade:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 So am I as the rich whose blessed key
 Can bring him to his sweet vp-locked treasure,
 The which he will not eu'ry hower suruay,
@@ -2590,10 +2695,11 @@ To make some special instant special blessed,
 By new unfolding his imprisoned pride.
     Blessed are you whose worthiness gives scope,
     Being had to triumph, being lacked to hope.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0053">
+<text id="shakespeare0053">
 <head>
    <title>53</title>
    <toctitle><num>53</num>What is your substance, whereof are you made</toctitle>
@@ -2604,6 +2710,7 @@ By new unfolding his imprisoned pride.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 What is your substance, whereof are you made,
 That millions of strange shaddowes on you tend?
 Since euery one hath euery one one shade,
@@ -2635,10 +2742,11 @@ The other as your bounty doth appear,
 And you in every blessed shape we know.
     In all external grace you have some part,
     But you like none, none you, for constant heart.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0054">
+<text id="shakespeare0054">
 <head>
    <title>54</title>
    <toctitle><num>54</num>Oh how much more doth beautie beautious seeme</toctitle>
@@ -2649,6 +2757,7 @@ And you in every blessed shape we know.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Oh how much more doth beautie beautious seeme
 By that sweet ornament which truth doth giue;
 The Rose lookes faire, but fairer we it deeme
@@ -2680,10 +2789,11 @@ Die to themselves. Sweet roses do not so,
 Of their sweet deaths are sweetest odours made;
     And so of you, beauteous and lovely youth,
     When that shall vade, by verse distils your truth.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0055">
+<text id="shakespeare0055">
 <head>
    <title>55</title>
    <toctitle><num>55</num>Not marble, nor the guilded monuments</toctitle>
@@ -2697,6 +2807,7 @@ Of their sweet deaths are sweetest odours made;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Not marble, nor the guilded monuments
 Of Princes shall out-liue this powrefull rime,
 But you shall shine more bright in these contents
@@ -2728,10 +2839,11 @@ Even in the eyes of all posterity
 That wear this world out to the ending doom.
     So till the judgment that yourself arise,
     You live in this, and dwell in lovers' eyes.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0056">
+<text id="shakespeare0056">
 <head>
    <title>56</title>
    <toctitle><num>56</num>Sweet loue renew thy force, be it not said</toctitle>
@@ -2745,6 +2857,7 @@ That wear this world out to the ending doom.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Sweet loue renew thy force, be it not said
 Thy edge should blunter be then apetite,
 Which but too daie by feeding is alaied,
@@ -2776,10 +2889,11 @@ Come daily to the banks, that when they see
 Return of love, more blessed may be the view;
     Or call it winter, which being full of care,
     Makes summer's welcome thrice more wished, more rare.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0057">
+<text id="shakespeare0057">
 <head>
    <title>57</title>
    <toctitle><num>57</num>Being your slaue what should I doe but tend</toctitle>
@@ -2790,6 +2904,7 @@ Return of love, more blessed may be the view;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Being your slaue what should I doe but tend,
 Vpon the houres, and times of your desire?
 I haue no precious time at al to spend,
@@ -2821,10 +2936,11 @@ But like a sad slave stay and think of naught,
 Save, where you are, how happy you make those.
     So true a fool is love, that in your will,
     Though you do anything, he thinks no ill.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0058">
+<text id="shakespeare0058">
 <head>
    <title>58</title>
    <toctitle><num>58</num>That God forbid, that made me first your slaue</toctitle>
@@ -2835,6 +2951,7 @@ Save, where you are, how happy you make those.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 That God forbid, that made me first your slaue,
 I should in thought controule your times of pleasure,
 Or at your hand th' account of houres to craue,
@@ -2866,10 +2983,11 @@ To what you will, to you it doth belong
 Yourself to pardon of self-doing crime.
     I am to wait, though waiting so be hell,
     Not blame your pleasure be it ill or well.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0059">
+<text id="shakespeare0059">
 <head>
    <title>59</title>
    <toctitle><num>59</num>If there bee nothing new, but that which is</toctitle>
@@ -2883,6 +3001,7 @@ Yourself to pardon of self-doing crime.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 If there bee nothing new, but that which is,
 Hath beene before, how are our braines beguild,
 Which laboring for inuention beare amisse
@@ -2914,10 +3033,11 @@ Whether we are mended, or where better they,
 Or whether revolution be the same.
     O sure I am the wits of former days
     To subjects worse have given admiring praise.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0060">
+<text id="shakespeare0060">
 <head>
    <title>60</title>
    <toctitle><num>60</num>Like as the waues make towards the pibled shore</toctitle>
@@ -2928,6 +3048,7 @@ Or whether revolution be the same.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Like as the waues make towards the pibled shore,
 So do our minuites hasten to their end,
 Each changing place with that which goes before,
@@ -2959,10 +3080,11 @@ Feeds on the rarities of nature's truth,
 And nothing stands but for his scythe to mow.
     And yet to times in hope my verse shall stand,
     Praising thy worth, despite his cruel hand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0061">
+<text id="shakespeare0061">
 <head>
    <title>61</title>
    <toctitle><num>61</num>Is it thy wil, thy Image should keepe open</toctitle>
@@ -2973,6 +3095,7 @@ And nothing stands but for his scythe to mow.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Is it thy wil, thy Image should keepe open
 My heauy eielids to the weary night?
 Dost thou desire my slumbers should be broken,
@@ -3004,10 +3127,11 @@ Mine own true love that doth my rest defeat,
 To play the watchman ever for thy sake.
     For thee watch I, whilst thou dost wake elsewhere,
     From me far off, with others all too near.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0062">
+<text id="shakespeare0062">
 <head>
    <title>62</title>
    <toctitle><num>62</num>Sinne of selfe-loue possesseth al mine eie</toctitle>
@@ -3021,6 +3145,7 @@ To play the watchman ever for thy sake.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Sinne of selfe-loue possesseth al mine eie,
 And all my soule, and al my euery part;
 And for this sinne there is no remedie,
@@ -3052,10 +3177,11 @@ Mine own self-love quite contrary I read;
 Self, so self-loving, were iniquity;
     'Tis thee, myself, that for myself I praise,
     Painting my age with beauty of thy days.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0063">
+<text id="shakespeare0063">
 <head>
    <title>63</title>
    <toctitle><num>63</num>Against my loue shall be as I am now</toctitle>
@@ -3066,6 +3192,7 @@ Self, so self-loving, were iniquity;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Against my loue shall be as I am now
 With times iniurious hand chrusht and ore-worne,
 When houres haue dreind his blood and fild his brow
@@ -3097,10 +3224,11 @@ That he shall never cut from memory
 My sweet love's beauty, though my lover's life.
     His beauty shall in these black lines be seen,
     And they shall live, and he in them still green.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0064">
+<text id="shakespeare0064">
 <head>
    <title>64</title>
    <toctitle><num>64</num>When I haue seene by times fell hand defaced</toctitle>
@@ -3111,6 +3239,7 @@ My sweet love's beauty, though my lover's life.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 When I haue seene by times fell hand defaced
 The rich proud cost of outworne buried age;
 When sometime loftie towers I see downe rased,
@@ -3142,10 +3271,11 @@ Ruin hath taught me thus to ruminate,
 That time will come and take my love away.
     This thought is as a death, which cannot choose
     But weep to have that which it fears to lose.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0065">
+<text id="shakespeare0065">
 <head>
    <title>65</title>
    <toctitle><num>65</num>Since brasse, nor stone, nor earth, nor boundlesse sea</toctitle>
@@ -3159,6 +3289,7 @@ That time will come and take my love away.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Since brasse, nor stone, nor earth, nor boundlesse sea,
 But sad mortallity ore-swaies their power,
 How with this rage shall beautie hold a plea,
@@ -3190,10 +3321,11 @@ Or what strong hand can hold his swift foot back,
 Or who his spoil o'er beauty can forbid?
     O none, unless this miracle have might,
     That in black ink my love may still shine bright.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0066">
+<text id="shakespeare0066">
 <head>
    <title>66</title>
    <toctitle><num>66</num>Tyr'd with all these for restfull death I cry</toctitle>
@@ -3204,6 +3336,7 @@ Or who his spoil o'er beauty can forbid?
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Tyr'd with all these for restfull death I cry,
 As to behold desert a begger borne,
 And needie Nothing trimd in iollitie,
@@ -3235,10 +3368,11 @@ And simple truth miscalled simplicity,
 And captive good attending captain ill.
     Tired with all these, from these would I be gone,
     Save that to die, I leave my love alone.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0067">
+<text id="shakespeare0067">
 <head>
    <title>67</title>
    <toctitle><num>67</num>Ah, wherefore with infection should he liue</toctitle>
@@ -3252,6 +3386,7 @@ And captive good attending captain ill.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Ah, wherefore with infection should he liue,
 And with his presence grace impietie,
 That sinne by him aduantage should atchiue,
@@ -3283,10 +3418,11 @@ For she hath no exchequer now but his,
 And proud of many, lives upon his gains.
     O him she stores, to show what wealth she had,
     In days long since, before these last so bad.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0068">
+<text id="shakespeare0068">
 <head>
    <title>68</title>
    <toctitle><num>68</num>Thus is his cheeke the map of daies out-worne</toctitle>
@@ -3300,6 +3436,7 @@ And proud of many, lives upon his gains.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Thus is his cheeke the map of daies out-worne,
 When beauty liu'd and dy'd as flowers do now,
 Before these bastard signes of faire were borne,
@@ -3331,10 +3468,11 @@ Making no summer of another's green,
 Robbing no old to dress his beauty new;
     And him as for a map doth nature store,
     To show false art what beauty was of yore.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0069">
+<text id="shakespeare0069">
 <head>
    <title>69</title>
    <toctitle><num>69</num>Those parts of thee that the worlds eye doth view</toctitle>
@@ -3348,6 +3486,7 @@ Robbing no old to dress his beauty new;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Those parts of thee that the worlds eye doth view
 Want nothing that the thought of hearts can mend;
 All toungs (the voice of soules) giue thee that due,
@@ -3379,10 +3518,11 @@ Then churls their thoughts - although their eyes were kind -
 To thy fair flower add the rank smell of weeds.
     But why thy odour matcheth not thy show,
     The soil is this, that thou dost common grow.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0070">
+<text id="shakespeare0070">
 <head>
    <title>70</title>
    <toctitle><num>70</num>That thou are blam'd shall not be thy defect</toctitle>
@@ -3396,6 +3536,7 @@ To thy fair flower add the rank smell of weeds.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 That thou are blam'd shall not be thy defect,
 For slanders marke was euer yet the faire;
 The ornament of beauty is suspect,
@@ -3427,10 +3568,11 @@ Yet this thy praise cannot be so thy praise,
 To tie up envy, evermore enlarged.
     If some suspect of ill masked not thy show,
     Then thou alone kingdoms of hearts shouldst owe.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0071">
+<text id="shakespeare0071">
 <head>
    <title>71</title>
    <toctitle><num>71</num>Noe Longer mourne for me when I am dead</toctitle>
@@ -3441,6 +3583,7 @@ To tie up envy, evermore enlarged.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Noe Longer mourne for me when I am dead
 Then you shall heare the surly sullen bell
 Giue warning to the world that I am fled
@@ -3472,10 +3615,11 @@ Do not so much as my poor name rehearse,
 But let your love even with my life decay;
     Lest the wise world should look into your moan,
     And mock you with me after I am gone.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0072">
+<text id="shakespeare0072">
 <head>
    <title>72</title>
    <toctitle><num>72</num>O Least the world should taske you to recite</toctitle>
@@ -3489,6 +3633,7 @@ But let your love even with my life decay;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 O Least the world should taske you to recite
 What merit liu'd in me that you should loue
 After my death (deare loue) forget me quite,
@@ -3520,10 +3665,11 @@ My name be buried where my body is,
 And live no more to shame nor me, nor you.
     For I am shamed by that which I bring forth,
     And so should you, to love things nothing worth.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0073">
+<text id="shakespeare0073">
 <head>
    <title>73</title>
    <toctitle><num>73</num>That time of yeeare thou maist in me behold</toctitle>
@@ -3537,6 +3683,7 @@ And live no more to shame nor me, nor you.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 That time of yeeare thou maist in me behold,
 When yellow leaues, or none, or few doe hange
 Vpon those boughes which shake against the could,
@@ -3568,10 +3715,11 @@ As the deathbed, whereon it must expire,
 Consumed with that which it was nourished by.
     This thou perceiv'st, which makes thy love more strong,
     To love that well, which thou must leave ere long.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0074">
+<text id="shakespeare0074">
 <head>
    <title>74</title>
    <toctitle><num>74</num>But be contented when that fell arest</toctitle>
@@ -3588,6 +3736,7 @@ Consumed with that which it was nourished by.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 But be contented when that fell arest
 With out all bayle shall carry me away,
 My life hath in this line some interest,
@@ -3619,10 +3768,11 @@ The coward conquest of a wretch's knife,
 Too base of thee to be remembered.
     The worth of that, is that which it contains,
     And that is this, and this with thee remains.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0075">
+<text id="shakespeare0075">
 <head>
    <title>75</title>
    <toctitle><num>75</num>So are you to my thoughts as food to life</toctitle>
@@ -3633,6 +3783,7 @@ Too base of thee to be remembered.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 So are you to my thoughts as food to life,
 Or as sweet season'd shewers are to the ground;
 And for the peace of you I hold such strife,
@@ -3664,10 +3815,11 @@ Possessing or pursuing no delight
 Save what is had, or must from you be took.
     Thus do I pine and surfeit day by day,
     Or gluttoning on all, or all away.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0076">
+<text id="shakespeare0076">
 <head>
    <title>76</title>
    <toctitle><num>76</num>Why is my verse so barren of new pride</toctitle>
@@ -3678,6 +3830,7 @@ Save what is had, or must from you be took.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Why is my verse so barren of new pride,
 So far from variation or quicke change?
 Why with the time do I not glance aside
@@ -3709,10 +3862,11 @@ So all my best is dressing old words new,
 Spending again what is already spent:
     For as the sun is daily new and old,
     So is my love still telling what is told.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0077">
+<text id="shakespeare0077">
 <head>
    <title>77</title>
    <toctitle><num>77</num>Thy glasse will shew thee how thy beauties were</toctitle>
@@ -3723,6 +3877,7 @@ Spending again what is already spent:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Thy glasse will shew thee how thy beauties were,
 Thy dyall how thy pretious mynuits waste,
 The vacant leaues thy mindes imprint will beare,<note>The] <biblio>Q</biblio>; These <biblio>Capell</biblio></note>
@@ -3754,10 +3909,11 @@ Those children nursed, delivered from thy brain,
 To take a new acquaintance of thy mind.
     These offices, so oft as thou wilt look,
     Shall profit thee, and much enrich thy book.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0078">
+<text id="shakespeare0078">
 <head>
    <title>78</title>
    <toctitle><num>78</num>So oft haue I inuok'd thee for my Muse</toctitle>
@@ -3773,6 +3929,7 @@ To take a new acquaintance of thy mind.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 So oft haue I inuok'd thee for my Muse,
 And found such faire assistance in my verse,
 As euery <i>Alien</i> pen hath got my vse,
@@ -3804,10 +3961,11 @@ In others' works thou dost but mend the style,
 And arts with thy sweet graces graced be.
     But thou art all my art, and dost advance,
     As high as learning, my rude ignorance.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0079">
+<text id="shakespeare0079">
 <head>
    <title>79</title>
    <toctitle><num>79</num>Whilst I alone did call vpon thy ayde</toctitle>
@@ -3818,6 +3976,7 @@ And arts with thy sweet graces graced be.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Whilst I alone did call vpon thy ayde,
 My verse alone had all thy gentle grace,
 But now my gracious numbers are decayde,
@@ -3849,10 +4008,11 @@ And found it in thy cheek; he can afford
 No praise to thee, but what in thee doth live.
     Then thank him not for that which he doth say,
     Since what he owes thee, thou thyself dost pay.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0080">
+<text id="shakespeare0080">
 <head>
    <title>80</title>
    <toctitle><num>80</num>O how I faint when I of you do write</toctitle>
@@ -3863,6 +4023,7 @@ No praise to thee, but what in thee doth live.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 O how I faint when I of you do write,
 Knowing a better spirit doth vse your name,
 And in the praise thereof spends all his might,
@@ -3894,10 +4055,11 @@ Or, being wracked, I am a worthless boat,
 He of tall building, and of goodly pride.
     Then if he thrive and I be cast away,
     The worst was this, my love was my decay.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0081">
+<text id="shakespeare0081">
 <head>
    <title>81</title>
    <toctitle><num>81</num>Or I shall live, your epitaph to make</toctitle>
@@ -3908,6 +4070,7 @@ He of tall building, and of goodly pride.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Or I shall live, your epitaph to make;
@@ -3924,10 +4087,11 @@ And tongues to be your being shall rehearse,
 When all the breathers of this world are dead.
     You still shall live, such virtue hath my pen,
     Where breath most breathes, even in the mouths of men.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0082">
+<text id="shakespeare0082">
 <head>
    <title>82</title>
    <toctitle><num>82</num>I grant thou wert not married to my Muse</toctitle>
@@ -3938,6 +4102,7 @@ When all the breathers of this world are dead.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>I grant thou wert not married to my Muse,
@@ -3954,10 +4119,11 @@ Thou, truly fair, wert truly sympathized
 In true plain words, by thy true-telling friend;
     And their gross painting might be better used
     Where cheeks need blood; in thee it is abused.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0083">
+<text id="shakespeare0083">
 <head>
    <title>83</title>
    <toctitle><num>83</num>I never saw that you did painting need</toctitle>
@@ -3968,6 +4134,7 @@ In true plain words, by thy true-telling friend;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>I never saw that you did painting need,
@@ -3984,10 +4151,11 @@ For I impair not beauty, being mute,
 When others would give life, and bring a tomb.
     There lives more life in one of your fair eyes
     Than both your poets can in praise devise.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0084">
+<text id="shakespeare0084">
 <head>
    <title>84</title>
    <toctitle><num>84</num>Who is it that says most? Which can say more</toctitle>
@@ -3998,6 +4166,7 @@ When others would give life, and bring a tomb.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Who is it that says most? Which can say more,
@@ -4014,10 +4183,11 @@ And such a counterpart shall fame his wit,
 Making his style admired everywhere.
     You to your beauteous blessings add a curse,
     Being fond on praise, which makes your praises worse.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0085">
+<text id="shakespeare0085">
 <head>
    <title>85</title>
    <toctitle><num>85</num>My tongue-tied Muse in manners holds her still</toctitle>
@@ -4028,6 +4198,7 @@ Making his style admired everywhere.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>My tongue-tied Muse in manners holds her still,
@@ -4044,10 +4215,11 @@ But that is in my thought, whose love to you
 (Though words come hindmost) holds his rank before;
     Then others for the breath of words respect,
     Me for my dumb thoughts, speaking in effect.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0086">
+<text id="shakespeare0086">
 <head>
    <title>86</title>
    <toctitle><num>86</num>Was it the proud full sail of his great verse</toctitle>
@@ -4058,6 +4230,7 @@ But that is in my thought, whose love to you
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Was it the proud full sail of his great verse,
@@ -4074,10 +4247,11 @@ As victors of my silence cannot boast;
 I was not sick of any fear from thence.
     But when your countenance filled up his line,
     Then lacked I matter, that enfeebled mine.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0087">
+<text id="shakespeare0087">
 <head>
    <title>87</title>
    <toctitle><num>87</num>Farewell, thou art too dear for my possessing</toctitle>
@@ -4088,6 +4262,7 @@ I was not sick of any fear from thence.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Farewell, thou art too dear for my possessing,
@@ -4104,10 +4279,11 @@ So thy great gift upon misprision growing
 Comes home again, on better judgement making.
     Thus have I had thee as a dream doth flatter,
     In sleep a king, but waking no such matter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0088">
+<text id="shakespeare0088">
 <head>
    <title>88</title>
    <toctitle><num>88</num>When thou shalt be disposed to set me light</toctitle>
@@ -4118,6 +4294,7 @@ Comes home again, on better judgement making.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>When thou shalt be disposed to set me light
@@ -4134,10 +4311,11 @@ The injuries that to myself I do,
 Doing thee vantage, double vantage me:
     Such is my love, to thee I so belong,
     That for thy right myself will bear all wrong.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0089">
+<text id="shakespeare0089">
 <head>
    <title>89</title>
    <toctitle><num>89</num>Say that thou didst forsake me for some fault</toctitle>
@@ -4148,6 +4326,7 @@ Doing thee vantage, double vantage me:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Say that thou didst forsake me for some fault,
@@ -4164,10 +4343,11 @@ Lest I, too much profane, should do it wrong,
 And haply of our old acquaintance tell.
     For thee, against myself I'll vow debate;
     For I must ne'er love him whom thou dost hate.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0090">
+<text id="shakespeare0090">
 <head>
    <title>90</title>
    <toctitle><num>90</num>Then hate me when thou wilt, if ever, now</toctitle>
@@ -4178,6 +4358,7 @@ And haply of our old acquaintance tell.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Then hate me when thou wilt, if ever, now,
@@ -4194,10 +4375,11 @@ But in the onset come, so shall I taste
 At first the very worst of fortune's might;
     And other strains of woe, which now seem woe,
     Compared with loss of thee, will not seem so.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0091">
+<text id="shakespeare0091">
 <head>
    <title>91</title>
    <toctitle><num>91</num>Some glory in their birth, some in their skill</toctitle>
@@ -4208,6 +4390,7 @@ At first the very worst of fortune's might;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Some glory in their birth, some in their skill,
@@ -4224,10 +4407,11 @@ Of more delight than hawks or horses be;
 And having thee, of all men's pride I boast -
     Wretched in this alone, that thou mayst take
     All this away, and me most wretched make.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0092">
+<text id="shakespeare0092">
 <head>
    <title>92</title>
    <toctitle><num>92</num>But do thy worst to steal thyself away</toctitle>
@@ -4238,6 +4422,7 @@ And having thee, of all men's pride I boast -
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>But do thy worst to steal thyself away;
@@ -4254,10 +4439,11 @@ O what a happy title do I find,
 Happy to have thy love, happy to die!
     But what's so blessed fair that fears no blot?
     Thou mayst be false, and yet I know it not.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0093">
+<text id="shakespeare0093">
 <head>
    <title>93</title>
    <toctitle><num>93</num>So shall I live, supposing thou art true</toctitle>
@@ -4268,6 +4454,7 @@ Happy to have thy love, happy to die!
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>So shall I live, supposing thou art true,
@@ -4284,10 +4471,11 @@ Whate'er thy thoughts or thy heart's workings be,
 Thy looks should nothing thence but sweetness tell.
     How like Eve's apple doth thy beauty grow,
     if thy sweet virtue answer not thy show.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0094">
+<text id="shakespeare0094">
 <head>
    <title>94</title>
    <toctitle><num>94</num>They that have power to hurt, and will do none</toctitle>
@@ -4298,6 +4486,7 @@ Thy looks should nothing thence but sweetness tell.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>They that have power to hurt, and will do none,
@@ -4314,10 +4503,11 @@ But if that flower with base infection meet,
 The basest weed outbraves his dignity:
     For sweetest things turn sourest by their deeds;
     Lilies that fester smell far worse than weeds.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0095">
+<text id="shakespeare0095">
 <head>
    <title>95</title>
    <toctitle><num>95</num>How sweet and lovely dost thou make the shame</toctitle>
@@ -4328,6 +4518,7 @@ The basest weed outbraves his dignity:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>How sweet and lovely dost thou make the shame
@@ -4344,10 +4535,11 @@ Where beauty's veil doth cover every blot,
 And all things turn to fair that eyes can see!
     Take heed, dear heart, of this large privilege;
     The hardest knife ill used doth lose his edge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0096">
+<text id="shakespeare0096">
 <head>
    <title>96</title>
    <toctitle><num>96</num>Some say thy fault is youth, some wantonness</toctitle>
@@ -4358,6 +4550,7 @@ And all things turn to fair that eyes can see!
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Some say thy fault is youth, some wantonness;
@@ -4374,10 +4567,11 @@ How many gazers mightst thou lead away
 If thou wouldst use the strength of all thy state?
     But do not so; I love thee in such sort,
     As thou being mine, mine is thy good report.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0097">
+<text id="shakespeare0097">
 <head>
    <title>97</title>
    <toctitle><num>97</num>How like a winter hath my absence been</toctitle>
@@ -4388,6 +4582,7 @@ If thou wouldst use the strength of all thy state?
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>How like a winter hath my absence been
@@ -4404,10 +4599,11 @@ For summer and his pleasures wait on thee,
 And thou away, the very birds are mute;
     Or if they sing, 'tis with so dull a cheer
     That leaves look pale, dreading the winter's near.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0098">
+<text id="shakespeare0098">
 <head>
    <title>98</title>
    <toctitle><num>98</num>From you have I been absent in the spring</toctitle>
@@ -4418,6 +4614,7 @@ And thou away, the very birds are mute;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>From you have I been absent in the spring,
@@ -4434,10 +4631,11 @@ They were but sweet, but figures of delight,
 Drawn after you, you pattern of all those.
     Yet seemed it winter still, and, you away,
     As with your shadow I with these did play.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0099">
+<text id="shakespeare0099">
 <head>
    <title>99</title>
    <toctitle><num>99</num>The forward violet thus did I chide</toctitle>
@@ -4448,6 +4646,7 @@ Drawn after you, you pattern of all those.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>The forward violet thus did I chide:
@@ -4465,10 +4664,11 @@ But for his theft, in pride of all his growth,
 A vengeful canker ate him up to death.
     More flowers I noted, yet I none could see,
     But sweet, or colour, it had stol'n from thee.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0100">
+<text id="shakespeare0100">
 <head>
    <title>100</title>
    <toctitle><num>100</num>Where art thou, Muse, that thou forget'st so long</toctitle>
@@ -4479,6 +4679,7 @@ A vengeful canker ate him up to death.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Where art thou, Muse, that thou forget'st so long
@@ -4495,10 +4696,11 @@ If any, be a satire to decay,
 And make Time's spoils despised everywhere:
     Give my love fame faster than Time wastes life,
     So thou prevent'st his scythe and crooked knife.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0101">
+<text id="shakespeare0101">
 <head>
    <title>101</title>
    <toctitle><num>101</num>O truant Muse, what shall be thy amends</toctitle>
@@ -4509,6 +4711,7 @@ And make Time's spoils despised everywhere:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>O truant Muse, what shall be thy amends
@@ -4525,10 +4728,11 @@ To make him much outlive a gilded tomb,
 And to be praised of ages yet to be.
     Then do thy office, Muse: I teach thee how
     To make him seem long hence as he shows now.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0102">
+<text id="shakespeare0102">
 <head>
    <title>102</title>
    <toctitle><num>102</num>My love is strength'ned, though more weak in seeming</toctitle>
@@ -4539,6 +4743,7 @@ And to be praised of ages yet to be.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>My love is strength'ned, though more weak in seeming;
@@ -4555,10 +4760,11 @@ But that wild music burdens every bough,
 And sweets grown common lose their dear delight:
     Therefore, like her, I sometime hold my tongue,
     Because I would not dull you with my song.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0103">
+<text id="shakespeare0103">
 <head>
    <title>103</title>
    <toctitle><num>103</num>Alack, what poverty my Muse brings forth</toctitle>
@@ -4569,6 +4775,7 @@ And sweets grown common lose their dear delight:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Alack, what poverty my Muse brings forth,
@@ -4585,10 +4792,11 @@ For to no other pass my verses tend
 Than of your graces and your gifts to tell;
     And more, much more, than in my verse can sit
     Your own glass shows you, when you look in it.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0104">
+<text id="shakespeare0104">
 <head>
    <title>104</title>
    <toctitle><num>104</num>To me, fair friend, you never can be old</toctitle>
@@ -4599,6 +4807,7 @@ Than of your graces and your gifts to tell;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>To me, fair friend, you never can be old;
@@ -4615,10 +4824,11 @@ So your sweet hue, which methinks still doth stand,
 Hath motion, and mine eye may be deceived;
     For fear of which, hear this, thou age unbred,
     Ere you were born was beauty's summer dead.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0105">
+<text id="shakespeare0105">
 <head>
    <title>105</title>
    <toctitle><num>105</num>Let not my love be called idolatry</toctitle>
@@ -4629,6 +4839,7 @@ Hath motion, and mine eye may be deceived;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Let not my love be called idolatry,
@@ -4645,10 +4856,11 @@ And in this change is my invention spent,
 Three themes in one, which wondrous scope affords.
     Fair, kind, and true have often lived alone,
     Which three, till now never kept seat in one.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0106">
+<text id="shakespeare0106">
 <head>
    <title>106</title>
    <toctitle><num>106</num>When in the chronicle of wasted time</toctitle>
@@ -4659,6 +4871,7 @@ Three themes in one, which wondrous scope affords.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>When in the chronicle of wasted time
@@ -4675,10 +4888,11 @@ And for they looked but with divining eyes
 They had not skill enough your worth to sing;
     For we which now behold these present days
     Had eyes to wonder, but lack tongues to praise.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0107">
+<text id="shakespeare0107">
 <head>
    <title>107</title>
    <toctitle><num>107</num>Not mine own fears, nor the prophetic soul</toctitle>
@@ -4689,6 +4903,7 @@ They had not skill enough your worth to sing;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Not mine own fears, nor the prophetic soul
@@ -4705,10 +4920,11 @@ Since 'spite of him I'll live in this poor rhyme,
 While he insults o'er dull and speechless tribes;
     And thou in this shalt find thy monument,
     When tyrants' crests and tombs of brass are spent.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0108">
+<text id="shakespeare0108">
 <head>
    <title>108</title>
    <toctitle><num>108</num>What's in the brain that ink may character</toctitle>
@@ -4719,6 +4935,7 @@ While he insults o'er dull and speechless tribes;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>What's in the brain that ink may character
@@ -4735,10 +4952,11 @@ Nor gives to necessary wrinkles place
 But makes antiquity for aye his page,
     Finding the first conceit of love there bred,
     Where time and outward form would show it dead.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0109">
+<text id="shakespeare0109">
 <head>
    <title>109</title>
    <toctitle><num>109</num>O never say that I was false of heart</toctitle>
@@ -4749,6 +4967,7 @@ But makes antiquity for aye his page,
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>O never say that I was false of heart,
@@ -4765,10 +4984,11 @@ That it could so preposterously be stained,
 To leave for nothing all thy sum of good:
     For nothing this wide universe I call,
     Save thou, my rose; in it thou art my all.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0110">
+<text id="shakespeare0110">
 <head>
    <title>110</title>
    <toctitle><num>110</num>Alas, 'tis true, I have gone here and there</toctitle>
@@ -4779,6 +4999,7 @@ To leave for nothing all thy sum of good:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Alas, 'tis true, I have gone here and there,
@@ -4795,10 +5016,11 @@ On newer proof, to try an older friend,
 A god in love, to whom I am confined:
     Then give me welcome, next my heaven the best,
     Even to thy pure and most most loving breast.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0111">
+<text id="shakespeare0111">
 <head>
    <title>111</title>
    <toctitle><num>111</num>O, for my sake do you with Fortune chide</toctitle>
@@ -4809,6 +5031,7 @@ A god in love, to whom I am confined:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>O, for my sake do you with Fortune chide,
@@ -4825,10 +5048,11 @@ No bitterness that I will bitter think,
 Nor double penance to correct correction.
     Pity me then, dear friend, and I assure ye,
     Even that your pity is enough to cure me.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0112">
+<text id="shakespeare0112">
 <head>
    <title>112</title>
    <toctitle><num>112</num>Your love and pity doth th'impression fill</toctitle>
@@ -4839,6 +5063,7 @@ Nor double penance to correct correction.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Your love and pity doth th'impression fill
@@ -4855,10 +5080,11 @@ To critic and to flatterer stopped are.
 Mark how with my neglect I do dispense:
     You are so strongly in my purpose bred
     That all the world besides me thinks you're dead.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0113">
+<text id="shakespeare0113">
 <head>
    <title>113</title>
    <toctitle><num>113</num>Since I left you, mine eye is in my mind</toctitle>
@@ -4869,6 +5095,7 @@ Mark how with my neglect I do dispense:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Since I left you, mine eye is in my mind,
@@ -4885,10 +5112,11 @@ The mountain, or the sea, the day, or night,
 The crow, or dove, it shapes them to your feature.
     Incapable of more, replete with you,
     My most true mind thus maketh mine untrue.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0114">
+<text id="shakespeare0114">
 <head>
    <title>114</title>
    <toctitle><num>114</num>Or whether doth my mind, being crowned with you</toctitle>
@@ -4899,6 +5127,7 @@ The crow, or dove, it shapes them to your feature.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Or whether doth my mind, being crowned with you,
@@ -4915,10 +5144,11 @@ Mine eye well knows what with his gust is greeing,
 And to his palate doth prepare the cup.
     If it be poisoned, 'tis the lesser sin,
     That mine eye loves it and doth first begin.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0115">
+<text id="shakespeare0115">
 <head>
    <title>115</title>
    <toctitle><num>115</num>Those lines that I before have writ do lie</toctitle>
@@ -4929,6 +5159,7 @@ And to his palate doth prepare the cup.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Those lines that I before have writ do lie,
@@ -4945,10 +5176,11 @@ When I was certain o'er uncertainty,
 Crowning the present, doubting of the rest?
     Love is a babe; then might I not say so,
     To give full growth to that which still doth grow?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0116">
+<text id="shakespeare0116">
 <head>
    <title>116</title>
    <toctitle><num>116</num>Let me not to the marriage of true minds</toctitle>
@@ -4959,6 +5191,7 @@ Crowning the present, doubting of the rest?
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Let me not to the marriage of true minds
@@ -4975,10 +5208,11 @@ Love alters not with his brief hours and weeks,
 But bears it out even to the edge of doom.
     If this be error and upon me proved,
     I never writ, nor no man ever loved.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0117">
+<text id="shakespeare0117">
 <head>
    <title>117</title>
    <toctitle><num>117</num>Accuse me thus: that I have scanted all</toctitle>
@@ -4989,6 +5223,7 @@ But bears it out even to the edge of doom.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Accuse me thus: that I have scanted all
@@ -5005,10 +5240,11 @@ Bring me within the level of your frown,
 But shoot not at me in your wakened hate:
     Since my appeal says I did strive to prove
     The constancy and virtue of your love.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0118">
+<text id="shakespeare0118">
 <head>
    <title>118</title>
    <toctitle><num>118</num>Like as, to make our appetites more keen</toctitle>
@@ -5019,6 +5255,7 @@ But shoot not at me in your wakened hate:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Like as, to make our appetites more keen,
@@ -5035,10 +5272,11 @@ And brought to medicine a healthful state
 Which, rank of goodness, would by ill be cured;
     But thence I learn, and find the lesson true,
     Drugs poison him that so fell sick of you.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0119">
+<text id="shakespeare0119">
 <head>
    <title>119</title>
    <toctitle><num>119</num>What potions have I drunk of Siren tears</toctitle>
@@ -5049,6 +5287,7 @@ Which, rank of goodness, would by ill be cured;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>What potions have I drunk of Siren tears
@@ -5065,10 +5304,11 @@ And ruined love when it is built anew
 Grows fairer than at first, more strong, far greater:
     So I return rebuked to my content,
     And gain by ill thrice more than I have spent.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0120">
+<text id="shakespeare0120">
 <head>
    <title>120</title>
    <toctitle><num>120</num>That you were once unkind befriends me now</toctitle>
@@ -5079,6 +5319,7 @@ Grows fairer than at first, more strong, far greater:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>That you were once unkind befriends me now,
@@ -5095,10 +5336,11 @@ And soon to you, as you to me then, tend'red
 The humble salve which wounded bosoms fits!
     But that your trespass now becomes a fee;
     Mine ransoms yours, and yours must ransom me.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0121">
+<text id="shakespeare0121">
 <head>
    <title>121</title>
    <toctitle><num>121</num>Tis better to be vile than vile esteemed</toctitle>
@@ -5109,6 +5351,7 @@ The humble salve which wounded bosoms fits!
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>'Tis better to be vile than vile esteemed,
@@ -5125,10 +5368,11 @@ I may be straight, though they themselves be bevel.
 By their rank thoughts my deeds must not be shown,
     Unless this general evil they maintain:
     All men are bad, and in their badness reign.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0122">
+<text id="shakespeare0122">
 <head>
    <title>122</title>
    <toctitle><num>122</num>Thy gift, thy tables, are within my brain</toctitle>
@@ -5139,6 +5383,7 @@ By their rank thoughts my deeds must not be shown,
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Thy gift, thy tables, are within my brain
@@ -5155,10 +5400,11 @@ Therefore to give them from me was I bold,
 To trust those tables that receive thee more;
     To keep an adjunct to remember thee
     Were to import forgetfulness in me.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0123">
+<text id="shakespeare0123">
 <head>
    <title>123</title>
    <toctitle><num>123</num>No! Time, thou shalt not boast that I do change</toctitle>
@@ -5169,6 +5415,7 @@ To trust those tables that receive thee more;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>No! Time, thou shalt not boast that I do change;
@@ -5185,10 +5432,11 @@ For thy records, and what we see doth lie,
 Made more or less by thy continual haste:
     This I do vow, and this shall ever be,
     I will be true despite thy scythe and thee.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0124">
+<text id="shakespeare0124">
 <head>
    <title>124</title>
    <toctitle><num>124</num>If my dear love were but the child of state</toctitle>
@@ -5199,6 +5447,7 @@ Made more or less by thy continual haste:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>If my dear love were but the child of state,
@@ -5215,10 +5464,11 @@ But all alone stands hugely politic,
 That it nor grows with heat, nor drowns with showers.
     To this I witness call the fools of Time,
     Which die for goodness, who have lived for crime.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0125">
+<text id="shakespeare0125">
 <head>
    <title>125</title>
    <toctitle><num>125</num>Were't aught to me I bore the canopy</toctitle>
@@ -5229,6 +5479,7 @@ That it nor grows with heat, nor drowns with showers.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Were't aught to me I bore the canopy,
@@ -5245,10 +5496,11 @@ Which is not mixed with seconds, knows no art,
 But mutual render, only me for thee.
     Hence, thou suborned informer, a true soul
     When most impeached, stands least in thy control.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0126">
+<text id="shakespeare0126">
 <head>
    <title>126</title>
    <toctitle><num>126</num>O thou my lovely Boy, who in thy power</toctitle>
@@ -5259,6 +5511,7 @@ But mutual render, only me for thee.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>O thou my lovely Boy, who in thy power
@@ -5275,10 +5528,11 @@ Her audit, though delayed, answered must be,
 And her quietus is to render thee.
    (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)
    (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0127">
+<text id="shakespeare0127">
 <head>
    <title>127</title>
    <toctitle><num>127</num>In the old age black was not counted fair</toctitle>
@@ -5289,6 +5543,7 @@ And her quietus is to render thee.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>In the old age black was not counted fair,
@@ -5305,10 +5560,11 @@ At such who, not born fair, no beauty lack,
 Sland'ring creation with a false esteem;
     Yet so they mourn, becoming of their woe,
     That every tongue says beauty should look so.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0128">
+<text id="shakespeare0128">
 <head>
    <title>128</title>
    <toctitle><num>128</num>How oft when thou, my music, music play'st</toctitle>
@@ -5319,6 +5575,7 @@ Sland'ring creation with a false esteem;
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>How oft when thou, my music, music play'st
@@ -5335,10 +5592,11 @@ O'er whom thy fingers walk with gentle gait,
 Making dead wood more blessed than living lips.
     Since saucy jacks so happy are in this,
     Give them thy fingers, me thy lips to kiss.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0129">
+<text id="shakespeare0129">
 <head>
    <title>129</title>
    <toctitle><num>129</num>Th'expense of spirit in a waste of shame</toctitle>
@@ -5349,6 +5607,7 @@ Making dead wood more blessed than living lips.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Th'expense of spirit in a waste of shame
@@ -5365,10 +5624,11 @@ A bliss in proof, and proved, a very woe;
 Before, a joy proposed; behind, a dream.
     All this the world well knows, yet none knows well
     To shun the heaven that leads men to this hell.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0130">
+<text id="shakespeare0130">
 <head>
    <title>130</title>
    <toctitle><num>130</num>My mistress' eyes are nothing like the sun</toctitle>
@@ -5379,6 +5639,7 @@ Before, a joy proposed; behind, a dream.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>My mistress' eyes are nothing like the sun;
@@ -5395,10 +5656,11 @@ I grant I never saw a goddess go;
 My mistress, when she walks treads on the ground.
     And yet, by heaven, I think my love as rare
     As any she belied with false compare.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0131">
+<text id="shakespeare0131">
 <head>
    <title>131</title>
    <toctitle><num>131</num>Thou art as tyrannous, so as thou art</toctitle>
@@ -5409,6 +5671,7 @@ My mistress, when she walks treads on the ground.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Thou art as tyrannous, so as thou art,
@@ -5425,10 +5688,11 @@ One on another's neck do witness bear
 Thy black is fairest in my judgement's place.
     In nothing art thou black save in thy deeds,
     And thence this slander, as I think, proceeds.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0132">
+<text id="shakespeare0132">
 <head>
    <title>132</title>
    <toctitle><num>132</num>Thine eyes I love, and they, as pitying me</toctitle>
@@ -5439,6 +5703,7 @@ Thy black is fairest in my judgement's place.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Thine eyes I love, and they, as pitying me,
@@ -5455,10 +5720,11 @@ To mourn for me, since mourning doth thee grace,
 And suit thy pity like in every part:
     Then will I swear beauty herself is black,
     And all they foul that thy complexion lack.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0133">
+<text id="shakespeare0133">
 <head>
    <title>133</title>
    <toctitle><num>133</num>Beshrew that heart that makes my heart to groan</toctitle>
@@ -5469,6 +5735,7 @@ And suit thy pity like in every part:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Beshrew that heart that makes my heart to groan
@@ -5485,10 +5752,11 @@ Whoe'er keeps me, let my heart be his guard;
 Thou canst not then use rigour in my jail.
     And yet thou wilt, for I being pent in thee,
     Perforce am thine, and all that is in me.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0134">
+<text id="shakespeare0134">
 <head>
    <title>134</title>
    <toctitle><num>134</num>So now I have confessed that he is thine</toctitle>
@@ -5499,6 +5767,7 @@ Thou canst not then use rigour in my jail.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>So now I have confessed that he is thine,
@@ -5515,10 +5784,11 @@ And sue a friend, came debtor for my sake:
 So him I lose through my unkind abuse.
     Him have I lost; thou hast both him and me;
     He pays the whole, and yet am I not free.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0135">
+<text id="shakespeare0135">
 <head>
    <title>135</title>
    <toctitle><num>135</num>Whoever hath her wish, thou hast thy Will</toctitle>
@@ -5529,6 +5799,7 @@ So him I lose through my unkind abuse.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Whoever hath her wish, thou hast thy Will,
@@ -5545,10 +5816,11 @@ So thou, being rich in Will, add to thy Will
 One will of mine, to make thy large Will more:
     Let no unkind, no fair beseechers kill;
     Think all but one, and me in that one Will.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0136">
+<text id="shakespeare0136">
 <head>
    <title>136</title>
    <toctitle><num>136</num>If thy soul check thee that I come so near</toctitle>
@@ -5559,6 +5831,7 @@ One will of mine, to make thy large Will more:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>If thy soul check thee that I come so near,
@@ -5575,10 +5848,11 @@ For nothing hold me, so it please thee hold
 That nothing, me a something sweet to thee.
     Make but my name thy love, and love that still;
     And then thou lov'st me, for my name is Will.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0137">
+<text id="shakespeare0137">
 <head>
    <title>137</title>
    <toctitle><num>137</num>Thou blind fool Love, what dost thou to mine eyes</toctitle>
@@ -5589,6 +5863,7 @@ That nothing, me a something sweet to thee.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Thou blind fool Love, what dost thou to mine eyes,
@@ -5605,10 +5880,11 @@ Or mine eyes, seeing this, say this is not,
 To put fair truth upon so foul a face?
     In things right true my heart and eyes have erred,
     And to this false plague are they now transferred.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0138">
+<text id="shakespeare0138">
 <head>
    <title>138</title>
    <toctitle><num>138</num>When my loue sweares that she is made of truth</toctitle>
@@ -5622,6 +5898,7 @@ To put fair truth upon so foul a face?
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 When my loue sweares that she is made of truth,
 I do beleeue her though I know she lyes,
 That she might thinke me some vntuterd youth,
@@ -5672,10 +5949,11 @@ O, Loues best habit's in a soothing toung,
 And Age in Loue, loues not to haue yeares told.
     Therfore I'le lye with Loue, and loue with me,
     Since that our faultes in loue thus smother'd be.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0139">
+<text id="shakespeare0139">
 <head>
    <title>139</title>
    <toctitle><num>139</num>O call not me to justify the wrong</toctitle>
@@ -5686,6 +5964,7 @@ And Age in Loue, loues not to haue yeares told.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>O call not me to justify the wrong
@@ -5702,10 +5981,11 @@ And therefore from my face she turns my foes
 That they elsewhere might dart their injuries.
     Yet do not so, but since I am near slain,
     Kill me outright with looks, and rid my pain.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0140">
+<text id="shakespeare0140">
 <head>
    <title>140</title>
    <toctitle><num>140</num>Be wise as thou art cruel, do not press</toctitle>
@@ -5716,6 +5996,7 @@ That they elsewhere might dart their injuries.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Be wise as thou art cruel, do not press
@@ -5732,10 +6013,11 @@ Now this ill-wresting world is grown so bad,
 Mad slanderers by mad ears believed be.
     That I may not be so, nor thou belied,
     Bear thine eyes straight, though thy proud heart go wide.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0141">
+<text id="shakespeare0141">
 <head>
    <title>141</title>
    <toctitle><num>141</num>In faith, I do not love thee with mine eyes</toctitle>
@@ -5746,6 +6028,7 @@ Mad slanderers by mad ears believed be.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>In faith, I do not love thee with mine eyes,
@@ -5762,10 +6045,11 @@ Who leaves unswayed the likeness of a man,
 Thy proud heart's slave and vassal wretch to be:
     Only my plague thus far I count my gain,
     That she that makes me sin, awards me pain.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0142">
+<text id="shakespeare0142">
 <head>
    <title>142</title>
    <toctitle><num>142</num>Love is my sin, and thy dear virtue hate</toctitle>
@@ -5776,6 +6060,7 @@ Thy proud heart's slave and vassal wretch to be:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Love is my sin, and thy dear virtue hate,
@@ -5792,10 +6077,11 @@ Root pity in thy heart, that when it grows,
 Thy pity may deserve to pitied be.
     If thou dost seek to have what thou dost hide,
     By self-example mayst thou be denied.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0143">
+<text id="shakespeare0143">
 <head>
    <title>143</title>
    <toctitle><num>143</num>Lo, as a careful housewife runs to catch</toctitle>
@@ -5806,6 +6092,7 @@ Thy pity may deserve to pitied be.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Lo, as a careful housewife runs to catch
@@ -5822,10 +6109,11 @@ But if thou catch thy hope, turn back to me,
 And play the mother's part, kiss me, be kind:
     So will I pray that thou mayst have thy Will,
     If thou turn back and my loud crying still.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0144">
+<text id="shakespeare0144">
 <head>
    <title>144</title>
    <toctitle><num>144</num>Two loves I have, of comfort and despair</toctitle>
@@ -5836,6 +6124,7 @@ And play the mother's part, kiss me, be kind:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Two loues I haue of comfort and dispaire,
 Which like two spirits do sugiest me still,
 The better angell is a man right faire:
@@ -5886,10 +6175,11 @@ For being both to me: both, to each friend,
 I ghesse one Angell in anothers hell:
     The truth I shall not know, but liue in dout,
     Till my bad Angell fire my good one out.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0145">
+<text id="shakespeare0145">
 <head>
    <title>145</title>
    <toctitle><num>145</num>Those lips that Love's own hand did make</toctitle>
@@ -5900,6 +6190,7 @@ I ghesse one Angell in anothers hell:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Those lips that Love's own hand did make
@@ -5916,10 +6207,11 @@ Doth follow night, who like a fiend
 From heaven to hell is flown away.
     "I hate" from "hate" away she threw,
     And saved my life, saying "not you."
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0146">
+<text id="shakespeare0146">
 <head>
    <title>146</title>
    <toctitle><num>146</num>Poor soul, the centre of my sinful earth</toctitle>
@@ -5930,6 +6222,7 @@ From heaven to hell is flown away.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Poor soul, the centre of my sinful earth,
@@ -5946,10 +6239,11 @@ Buy terms divine in selling hours of dross,
 Within be fed, without be rich no more:
     So shalt thou feed on Death, that feeds on men,
     And Death once dead, there's no more dying then.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0147">
+<text id="shakespeare0147">
 <head>
    <title>147</title>
    <toctitle><num>147</num>My love is as a fever, longing still</toctitle>
@@ -5960,6 +6254,7 @@ Within be fed, without be rich no more:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>My love is as a fever, longing still
@@ -5976,10 +6271,11 @@ My thoughts and my discourse as madmen's are,
 At random from the truth vainly expressed:
     For I have sworn thee fair, and thought thee bright,
     Who art as black as hell, as dark as night.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0148">
+<text id="shakespeare0148">
 <head>
    <title>148</title>
    <toctitle><num>148</num>O me! What eyes hath Love put in my head</toctitle>
@@ -5990,6 +6286,7 @@ At random from the truth vainly expressed:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>O me! What eyes hath Love put in my head,
@@ -6006,10 +6303,11 @@ No marvel then though I mistake my view:
 The sun itself sees not, till heaven clears.
     O cunning Love, with tears thou keep'st me blind,
     Lest eyes well seeing thy foul faults should find.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0149">
+<text id="shakespeare0149">
 <head>
    <title>149</title>
    <toctitle><num>149</num>Canst thou, O cruel, say I love thee not</toctitle>
@@ -6020,6 +6318,7 @@ The sun itself sees not, till heaven clears.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Canst thou, O cruel, say I love thee not,
@@ -6036,10 +6335,11 @@ When all my best doth worship thy defect,
 Commanded by the motion of thine eyes?
     But, love, hate on; for now I know thy mind:
     Those that can see thou lov'st, and I am blind.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0150">
+<text id="shakespeare0150">
 <head>
    <title>150</title>
    <toctitle><num>150</num>O from what power hast thou this powerful might</toctitle>
@@ -6050,6 +6350,7 @@ Commanded by the motion of thine eyes?
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>O from what power hast thou this powerful might,
@@ -6066,10 +6367,11 @@ O, though I love what others do abhor,
 With others thou shouldst not abhor my state:
     If thy unworthiness raised love in me,
     More worthy I to be beloved of thee.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0151">
+<text id="shakespeare0151">
 <head>
    <title>151</title>
    <toctitle><num>151</num>Love is too young to know what conscience is</toctitle>
@@ -6080,6 +6382,7 @@ With others thou shouldst not abhor my state:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Love is too young to know what conscience is:
@@ -6096,10 +6399,11 @@ He is contented thy poor drudge to be,
 To stand in thy affairs, fall by thy side.
     No want of conscience hold it that I call
     Her "love" for whose dear love I rise and fall.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0152">
+<text id="shakespeare0152">
 <head>
    <title>152</title>
    <toctitle><num>152</num>In loving thee thou knowst I am forsworn</toctitle>
@@ -6110,6 +6414,7 @@ To stand in thy affairs, fall by thy side.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>In loving thee thou knowst I am forsworn;
@@ -6126,10 +6431,11 @@ And to enlighten thee gave eyes to blindness,
 Or made them swear against the thing they see:
     For I have sworn thee fair: more perjured eye,
     To swear against the truth so foul a lie.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0153">
+<text id="shakespeare0153">
 <head>
    <title>153</title>
    <toctitle><num>153</num>Cupid laid by his brand, and fell asleep</toctitle>
@@ -6140,6 +6446,7 @@ Or made them swear against the thing they see:
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>Cupid laid by his brand, and fell asleep;
@@ -6156,10 +6463,11 @@ I, sick withal, the help of bath desired,
 And thither hied, a sad distempered guest,
     But found no cure; the bath for my help lies
     Where Cupid got new fire: my mistress' eyes.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare0154">
+<text id="shakespeare0154">
 <head>
    <title>154</title>
    <toctitle><num>154</num>The little Love-god lying once asleep</toctitle>
@@ -6170,6 +6478,7 @@ And thither hied, a sad distempered guest,
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 ---
 
 <resetnum/>The little Love-god lying once asleep,
@@ -6186,7 +6495,8 @@ Growing a bath and healthful remedy
 For men diseased; but I, my mistress' thrall,
     Came there for cure, and this by that I prove:
     Love's fire heats water, water cools not love.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

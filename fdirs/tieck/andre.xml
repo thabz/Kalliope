@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="tieck2002010601">
+<text id="tieck2002010601">
 <head>
    <title>Aus 'Genoveva'</title>
    <toctitle>Aus 'Genoveva'</toctitle>
@@ -18,6 +18,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Dicht von Felsen eingeschlossen
 Wo die stillen Bächlein gehn,
 Wo die dunkeln Weiden sprossen
@@ -38,10 +39,11 @@ Dicht von Felsen eingeschlossen
 Wo die stillen Bächlein gehn,
 Hier im stillen einsam grünen Tal
 Such zum Troste dir ein Grab zumahl.
+</poetry>
 </body>
-</poem>
+</text>
 
-<prose id="tieck2002011001">
+<text id="tieck2002011001">
 <head>
    <title>An H. C. Andersen</title>
    <subtitle>Dresden den 10ten Junius 1831</subtitle>
@@ -56,20 +58,23 @@ Such zum Troste dir ein Grab zumahl.
    <keywords>stambog</keywords>
 </head>
 <body>
+<prose>
 Gedenken Sie auch in der Ferne meiner, wandeln Sie wohl gemuth und heiter auf dem Wege der Poesie fort, den Sie so schön und muthig betreten haben. Verliehren Sie nich den Muth, wenn nüchterne Kritik Sie ärgern will. Grüßen Sie den theuren Ingemann und alle Befreundeten und kehren Sie uns bald einmahl frisch, gesund und reichbegabt von den Musen nach Deutschland zurück.
 
               Ihr wahrer Freund
                  Ludwig Tieck
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="tieck2018042801">
+<text id="tieck2018042801">
 <head>
    <title>Der Wald</title>
    <firstline>Wandl' im Grünen</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Wandl' im Grünen,
 Willst du die Blumen verstehn,
 Mußt du erst den Wald durchgehn.
@@ -90,10 +95,11 @@ Grün sind alle Blumenknospen
 Und die Blätter um die Blumen,
 Dann entspringt der Farbenglanz
 Aus dem mütterlichen Grün.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="tieck2019042701">
+<text id="tieck2019042701">
 <head>
    <title>Die Zeichen im Walde</title>
    <subtitle>Romanze</subtitle>
@@ -104,6 +110,7 @@ Aus dem mütterlichen Grün.
    </notes>
 </head>
 <body>
+<poetry>
 O mein Sohn, wie gräßlich heulend
 Klagt herauf vom Moor die Unke!
 Hörst du wohl die Raben krächzen?
@@ -676,8 +683,9 @@ Durch das Thal sieht man ihn schleichen,
 Gram verzehrt die frische Jugend.
 Bauern fanden seinen Leichnam,
 Legten ihn in's Grab zur Ruhe.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<prose id="larsen2001030400">
+<text id="larsen2001030400">
 <head>
    <title>Forord</title>
    <toctitle>Forord</toctitle>
@@ -17,6 +17,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<prose>
 Skønt det ikke mere er almindeligt at skrive Forord i Digtsamlinger, vil jeg dog ledsage denne lille Samling med et Par Ord. Det har nemlig sine særegne Grunde, at jeg vælger nuværende Tidspunkt til at udsende disse Digte, som paa et Par enkelte Undtagelser nær er blevne til i Tidsrummet mellem Verdenkrigens Begyndelse og nu.
 
 Den første Aarsag er, at det i dette Efteraar er 25 Aar siden jeg udgav min umodne første Digtsamling "Vilde Roser" (af Thøger Underbjerg). Skønt min egentlige Debutbog er "Jord" (1904), mener jeg dog at burde regne min Skribentvirksomhed fra Fremkomsten af mit første literære Arbejde i Bogform, saameget mere, som jeg senere har i tildels omarbejdet Form udgivet en Del Digte fra denne Periode, ogsaa et enkelt fra nævnte Bog (i "Slægternes Træ").
@@ -24,10 +25,11 @@ Den første Aarsag er, at det i dette Efteraar er 25 Aar siden jeg udgav min umo
 Den anden Aarsag er, at nærværende Samling indeholder nogle Digte, skrevne i Anledning af Genforeningen med det danske Sønderjylland. Jeg finder det derfor rigtigt, at Samlingen fremkommer i det Aar, Genforeningen fandt Sted.
 
 Lemvig, August 1920. Thøger Larsen.
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="larsent200103041">
+<text id="larsent200103041">
 <head>
    <title>Til min Hustru</title>
    <toctitle>Til min Hustru</toctitle>
@@ -36,6 +38,7 @@ Lemvig, August 1920. Thøger Larsen.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Du fulgte mig tro gennem trange Aar,
 fik graanet Haar;
 vor Ungdoms Længsler, vor Ungdoms Krav,
@@ -60,8 +63,9 @@ Thi Drømmen er Virkelighedens Sjæl
 og Guddomsskær,
 og Smudset paa Virkelighedens Hæl
 det smuldrer der.
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="1">
 <head>
@@ -69,7 +73,7 @@ det smuldrer der.
 </head>
 <content>
 
-<poem id="larsent200103042">
+<text id="larsent200103042">
 <head>
    <title>Danmark</title>
    <toctitle>Danmark</toctitle>
@@ -78,6 +82,7 @@ det smuldrer der.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Danmark fødte svimmel
 tusind Somres Flor.
 Her en naadig Himmel
@@ -140,10 +145,11 @@ Tak for Roser, Tak for Tjørn!
 Danmark, Moder kære!
 Vi vil tro dig være,
 alle dine Børn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent200103043">
+<text id="larsent200103043">
 <head>
    <title>Vintersolhverv</title>
    <toctitle>Vintersolhverv</toctitle>
@@ -152,6 +158,7 @@ alle dine Børn.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
    Nu mørkner Vindens Stemme,
    og Sol er ikke hjemme,
    og Dag bli'r stadig mindre,
@@ -199,10 +206,11 @@ atter kommer Vaar og Eden.
 Mands og Kvindes Hjerter gynge,
 hører fra den glade Klynge
 sene Somres Fugle synge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent200103044">
+<text id="larsent200103044">
 <head>
    <title>Foraarsmorgen</title>
    <toctitle>Foraarsmorgen</toctitle>
@@ -211,6 +219,7 @@ sene Somres Fugle synge.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Nu skinner Sol over Mark og Eng,
 den store Morgen staar op af Seng,
 de svale Bølger mod Bredden gaar
@@ -225,10 +234,11 @@ Mens Toner daler mod Dug og Duft,
 forsvinder Lærker i Lys og Luft,
 saa den, der pløjer, og den, der saar,
 som hilst af syngende Aander gaar.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent200103045">
+<text id="larsent200103045">
 <head>
    <title>Høstnat</title>
    <toctitle>Høstnat</toctitle>
@@ -237,6 +247,7 @@ som hilst af syngende Aander gaar.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Dagens Travlhed døde
 over Mark og Vang.
 Sindene blev øde,
@@ -263,10 +274,11 @@ som en Ø, der tænder
 Lyset paa sin Strand
 for at vinke Nattens
 Gudebaad i Land.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent200103046">
+<text id="larsent200103046">
 <head>
    <title>Julenat</title>
    <toctitle>Julenat</toctitle>
@@ -275,6 +287,7 @@ Gudebaad i Land.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Mørket, som ud over Sø og Sletter
 isner og truer med Tryllestaven,
 røber et Rum, et Dyb af Nætter
@@ -310,10 +323,11 @@ Maanen, det gamle Barn i Himlen,
 gaar under Løvet og Stjernevrimlen,
 smiler til Børn og Mænd og Kvinder
 evig og salig med gyldne Kinder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent200103047">
+<text id="larsent200103047">
 <head>
    <title>Fiskersang</title>
    <toctitle>Fiskersang</toctitle>
@@ -322,6 +336,7 @@ evig og salig med gyldne Kinder.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Rundt om Folkets Hjem og Færden,
 rundt om Mark og Eng
 ligger Havets vide Verden
@@ -357,10 +372,11 @@ Hjemad bærer vore Baade,
 hvad de fik af Havets Naade,
 men om Had og Hævn dernede
 mumler Havets Vrede.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent200103048">
+<text id="larsent200103048">
 <head>
    <title>Stjernernes Kamp, før Verdens Ende</title>
    <subtitle>Slutningen af de sibyllinske Oraklers 5. Bog. Oversættelse fra Græsk.</subtitle>
@@ -373,6 +389,7 @@ mumler Havets Vrede.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Sibyllen:
 
 Hisset i Stjernerne saa' jeg den klare &thorn;álios' Trusel
@@ -395,8 +412,9 @@ Uranós selv kom i Oprør, til han fik de kæmpende splittet,
 harmfuldt han slynged dem hovedkulds ned imod Jorden tilhobe,
 brat blev de kastet i Bad hos Okeanòs, hvor de stak hele
 Jorden i Brand, og der blev kun en stjerneløs Æter tilbage.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -406,7 +424,7 @@ Jorden i Brand, og der blev kun en stjerneløs Æter tilbage.
 </head>
 <content>
 
-<poem id="larsent200103049">
+<text id="larsent200103049">
 <head>
    <title>Sønderjylland</title>
    <toctitle>Sønderjylland</toctitle>
@@ -415,6 +433,7 @@ Jorden i Brand, og der blev kun en stjerneløs Æter tilbage.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Bort fra Danmark flængtes
 fordum eders Jord,
 og I stred og længtes,
@@ -441,10 +460,11 @@ Se, vor gamle Moder
 gennem Taarer ler!
 
 Efteraar 1919.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030410">
+<text id="larsent2001030410">
 <head>
    <title>Alle danskes Dag</title>
    <toctitle>Alle danskes Dag</toctitle>
@@ -453,6 +473,7 @@ Efteraar 1919.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Nu vaje i Vinden hvert Danebrogsflag
    over Danmark.
 Nu rinder af Natten den dejligste Dag
@@ -471,10 +492,11 @@ Velkommen - med Ar efter Korset og Blodet!
    Jert Flag kan I bære
    med Ære!
 1920.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030411">
+<text id="larsent2001030411">
 <head>
    <title>Den store Vaar</title>
    <toctitle>Den store Vaar</toctitle>
@@ -483,6 +505,7 @@ Velkommen - med Ar efter Korset og Blodet!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Alt ofte vandt den grønne Vaar
 sin Krans om Danmarks Hjertesaar,
    og Søer blaa
@@ -512,8 +535,9 @@ fra Bakker og fra Dale,
 i Toner og i Tale!
 
 1920.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -523,7 +547,7 @@ i Toner og i Tale!
 </head>
 <content>
 
-<poem id="larsent2001030412">
+<text id="larsent2001030412">
 <head>
    <title>Til Piben</title>
    <toctitle>Til Piben</toctitle>
@@ -532,6 +556,7 @@ i Toner og i Tale!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 En Pibe er Sjælens Arnested,
 hvor Tankerne samles i taaget Fred
 og føler det saligt blaane
@@ -559,10 +584,11 @@ der end kan trylle og blænde,
 naar al Tobak er til Ende.
 Saa bittert mødes Pande og Mur,
 naar Aanden er syg og Piben sur.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030413">
+<text id="larsent2001030413">
 <head>
    <title>Efter Syndfloden</title>
    <toctitle>Efter Syndfloden</toctitle>
@@ -571,6 +597,7 @@ naar Aanden er syg og Piben sur.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
    I Helved-Slammet
    efter Blodtørst-Rusen
 fik vel Freden plantet Eden for Livets Rest.
@@ -578,8 +605,9 @@ Aa ja!
    Løven leger med Lammet
    og Katten med Musen,
 men Løven og Katten morer sig bedst.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -589,7 +617,7 @@ men Løven og Katten morer sig bedst.
 </head>
 <content>
 
-<poem id="larsent2001030414">
+<text id="larsent2001030414">
 <head>
    <title>H. Sønderup</title>
    <subtitle>
@@ -602,6 +630,7 @@ men Løven og Katten morer sig bedst.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Har han fanget Griller
 en Skærsommernat?
 Har hans Myg og Biller
@@ -619,10 +648,11 @@ Hil ham her paa Springet
 mod sin Fremtids Bred.
 Se, en brogetvinget
 Mindesværm vil med.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030415">
+<text id="larsent2001030415">
 <head>
    <title>Sophus Claussen 1</title>
    <subtitle>1865 - 12. September - 1915.</subtitle>
@@ -633,6 +663,7 @@ Mindesværm vil med.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 I Septembers vemodige Sol
 kom til Jorden et sommerligt Sind,
 i hvis Kroge det glimted og gol
@@ -657,10 +688,11 @@ Fugl Fønix! Faa Danmarks Eng
 galer nu Leernes Staal!
 Der redte du Hjertet en Seng
 paa Sangens fortærende Baal.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030416">
+<text id="larsent2001030416">
 <head>
    <title>Sophus Claussen 2</title>
    <toctitle>Sophus Claussen 2</toctitle>
@@ -670,6 +702,7 @@ paa Sangens fortærende Baal.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Halvhundred Gange rundt om Solens Kerte -
 aldrig dog nok af Solskin faar vort Hjerte,
 aldrig fandt Sjælen Hvile i sin Bolig,
@@ -704,10 +737,11 @@ Tak for den Sang, du lagde os paa Tungen,
 tavse vi venter den, du ej har sungen,
 rækker dig Kransen her en Dag i Høsten,
    vendt imod Østen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030417">
+<text id="larsent2001030417">
 <head>
    <title>Jeppe Aakjær 1</title>
    <subtitle>1866 - 10. September - 1916.</subtitle>
@@ -718,6 +752,7 @@ rækker dig Kransen her en Dag i Høsten,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Du gik som Pan under Maanens Horn
    blandt Kvæg og Korn,
 du spilled en Fløjte af Hyldegren,
@@ -742,10 +777,11 @@ Hav Tak da for alle de Sangens Aar,
    for Høst og Vaar,
 fordi du sang af den grønne Tro,
 hvorved i Evighed alt skal gro.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030418">
+<text id="larsent2001030418">
 <head>
    <title>Jeppe Aakjær 2</title>
    <toctitle>Jeppe Aakjær 2</toctitle>
@@ -755,6 +791,7 @@ hvorved i Evighed alt skal gro.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Danmark laa bølgende rigt i dit Sind
 med sine Bakker og Fjorde,
 Aaer sig skar gennem Engene ind,
@@ -775,10 +812,11 @@ Sang under Hylden i blomstrende Vaar,
 Sange ved Rugen og Høsten,
 Sang, hvori Mulde og blaanende Aar
 giver Kræfter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030419">
+<text id="larsent2001030419">
 <head>
    <title>L. Mylius Eriksen</title>
    <subtitle>Ved Afsløringen af hans Statue i Ringkøbing 15. Oktober 1916.</subtitle>
@@ -791,6 +829,7 @@ giver Kræfter.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Ild fra dit Øje, Ordet fra din Tunge
 i tændte saa tit i dine Dages unge,
 var som en Stjerne i en Morgenrøde
@@ -825,10 +864,11 @@ Slægter skal se dig, medens Tiden ruller,
 Solen skal evigt skinne dig paa Skulder,
 Regnen skal rinde nedad dine Sider
    evige Tider.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030420">
+<text id="larsent2001030420">
 <head>
    <title>Jakob Knudsens Død</title>
    <toctitle>Jakob Knudsens Død</toctitle>
@@ -840,6 +880,7 @@ Regnen skal rinde nedad dine Sider
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Dødens Gerning i hans Kammer
 hørtes overalt,
 som blandt Skovens Egestammer
@@ -854,10 +895,11 @@ Løvets skjulte Fugle leder
 nu om deres Hus,
 om den faldne Krone breder
 sig et hjemløst Sus.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030421">
+<text id="larsent2001030421">
 <head>
    <title>Indenrigsminister Ove Rode</title>
    <subtitle>1867 - 31. August - 1917.</subtitle>
@@ -867,6 +909,7 @@ sig et hjemløst Sus.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Den unge Digter øjned
 fra Aandens hvide Sky
 sit Land i Bølgen grønnes
@@ -906,10 +949,11 @@ Den unge Digters Manddom
 staar nu paa Mulde Vagt
 om alt, som Vaarens Drømme
 fik frem af Jorden bragt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030422">
+<text id="larsent2001030422">
 <head>
    <title>En Mindedag</title>
    <subtitle>Fhv. Højskoleforstander N. C. Nielsens 75-Aars Fødselsdag.</subtitle>
@@ -919,6 +963,7 @@ fik frem af Jorden bragt.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Aand med unge Vinger
 vendte du mod Øst,
 Tankerne sig svinger
@@ -953,10 +998,11 @@ kommer for at bringe
 dig i Dag en Tak
 for den stærke Vinge
 og den Tro, som trak.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030423">
+<text id="larsent2001030423">
 <head>
    <title>Konfirmationssange 1</title>
    <subtitle>
@@ -969,6 +1015,7 @@ og den Tro, som trak.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Barndommens Rigdom
 er som en Kilde,
 hvoraf vi øser
@@ -995,10 +1042,11 @@ Tag af de voksne
 hermed en Velkomst
 ind til en Fremtid
 ved deres Bord.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030424">
+<text id="larsent2001030424">
 <head>
    <title>Konfirmationssange 2</title>
    <subtitle>
@@ -1011,6 +1059,7 @@ ved deres Bord.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Din Barndom sejler i Drømme glad
    over Floden,
 som Alfen, der behøver kun et Blad
@@ -1042,10 +1091,11 @@ og Farver skifte vil i hver en Drøm
 O - tag dem med til din Ungdoms Strand,
 og gid din Lykke i Sommerland
    du da finder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030425">
+<text id="larsent2001030425">
 <head>
    <title>Herredsdommer T. Balthazar-Christensen</title>
    <subtitle>Ved Afskedsfesten i Lemvig 26. Maj 1920 i Anledning af Forflyttelse til Haderslev</subtitle>
@@ -1055,6 +1105,7 @@ og gid din Lykke i Sommerland
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
    Hist fra en venlig Strand
    kom De til Jyders Land
 med dets Blæst og Barskhed, med dets Tjørne.
@@ -1082,10 +1133,11 @@ det, som blev af vilde Veer stunget,
    drager De nu af Sted -
    tag da vor Hilsen med,
 jydske Brødres Hilsen tusindtunget.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030426">
+<text id="larsent2001030426">
 <head>
    <title>Til Komponisten Grethe Sawyer</title>
    <subtitle>Ved hendes Bryllup i Paris med Maleren Kurt Jungstedt 15. Juni 1920.</subtitle>
@@ -1095,6 +1147,7 @@ jydske Brødres Hilsen tusindtunget.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Fra Toners Højder
 din Længsel ledte
 som Noahs Due
@@ -1129,10 +1182,11 @@ Plant Livets Foraar
 og pluk dets Sommer,
 før Mørket falder
 og Floden kommer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2001030427">
+<text id="larsent2001030427">
 <head>
    <title>H. C. Ørsted</title>
    <subtitle>Ved 100-Aars Festen for Opdagelsen af Elektromagnetismen</subtitle>
@@ -1143,6 +1197,7 @@ og Floden kommer.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Hundred Aar slaar Mennesket i Støvet,
 bringer Navn i Glemsel, Værk til Fald,
 men det Værk, som hundred Aar har prøvet
@@ -1160,8 +1215,9 @@ bragte Tid og Afstand til at vige,
 bragte Danmark Ære, Verden Gavn -
 derfor vendt imod de dødes Rige
 priser vi Hans Christian Ørsteds Navn.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 </workbody>

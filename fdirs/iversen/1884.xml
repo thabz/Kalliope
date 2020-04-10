@@ -15,13 +15,14 @@
 </workhead>
 <workbody>
 
-<prose id="iversen201907270101">
+<text id="iversen201907270101">
 <head>
     <title>Stjærneskud</title>
     <source pages="7-18"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 Det var en sludfuld Aften senhøstes med Snesjap og Blæst. Himlen var bredt med tunge, blygraa Skyer; Lygternes flimrende, tvære Gasblus mægtede kun pletvis at lyse op ude paa den store Plads, hvor Teatret laa med enkelte spæde Lysstrømme sivende ud af den sorte Facade.
     Under den søjlede Overbygning, der forbandt Teatret med sine Kontorer og Garderobelokaler, holdt en Karet med to smukke Skimler for, som ludede Hovederne mod den ruskende Blæst. Kusken havde smøget Kraven højt op om Ørerne og sad sammenfoldet som en Pennekniv og ventede.
     Indenfor var der lunt og lyst.
@@ -100,16 +101,18 @@ Det var en sludfuld Aften senhøstes med Snesjap og Blæst. Himlen var bredt med
     - - -
     Da Kareten endelig holdt udenfor Landstedet paa Strandvejen, og Pigen kom trippende under en Paraply for at lukke Vogndøren op, fandt hun sin unge Frøken liggende stille med Ansigtet skjult i Roser.
     Hun var død. Buketternes Virakduft havde dræbt hende.
-</body>
 </prose>
+</body>
+</text>
 
-<prose id="iversen201907270102">
+<text id="iversen201907270102">
 <head>
     <title>Flyvende Sommer</title>
     <source pages="21-35"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 <nonum><center>I.</center></nonum>
 
 En gammel Havemur, sprød og forvitret af Ælde, med Teglstens Rygkam, ud over hvilken en yppig Manke af Vedbend og Vinløv hang, rækkende sig ned over Vejkanten, om den ikke kunde naa lidt Tusendfryd eller en Snerleblomst, ja blot en Døvnælde at flette ind i det evindelige grønt; . . . en gammel Havemur laa ved Landevejen og strakte sig i Julisolen.
@@ -232,8 +235,9 @@ op til Hotellet. - Efter at have lagt Rejsetøjet fra sig, gik han ned paa Hotel
     »Uf! det var en væmmelig Edderkoptraad, som fór mig over Ansigtet.«
     »Er det ikke det, man kalder flyvende Sommer?« læspede Fætteren med de kælne Ben.
     »Jo! raabte de to i Kor og lo, saa det klang.
-</body>
 </prose>
+</body>
+</text>
 
 <section level="2">
 <head>
@@ -241,7 +245,7 @@ op til Hotellet. - Efter at have lagt Rejsetøjet fra sig, gik han ned paa Hotel
 </head>
 <content>
 
-<poem id="iversen201907270103">
+<text id="iversen201907270103">
 <head>
     <title>Den græske Vase</title>
     <firstline>Vi kom fra Blomsterrazzia en Morgenstund</firstline>
@@ -249,6 +253,7 @@ op til Hotellet. - Efter at have lagt Rejsetøjet fra sig, gik han ned paa Hotel
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vi kom fra Blomsterrazzia en Morgenstund
 med broget Bytte fra en Ellemose.
 - Hun tog det rige Valmuflor ved Gjærdet,
@@ -297,10 +302,11 @@ hvor blødt den fine Hofte dog var rundet!
 Og salig jeg begyndte at forstaa,
 hvorfor en klassisk Vase fængsler Øjet:
 hos Kvinden er dens Bølgelinie fundet!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="iversen201907270104">
+<text id="iversen201907270104">
 <head>
     <title>Efter Middagen</title>
     <firstline>Man holdt Siesta. - Døsede drømmende</firstline>
@@ -308,6 +314,7 @@ hos Kvinden er dens Bølgelinie fundet!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Man holdt Siesta. - Døsede drømmende.
 - Nippende nød man den sorte Kaffe. -
 Jasminens narkotiske Aande, svømmende
@@ -339,10 +346,11 @@ med jordbær paa Vinblade, - Straahatten svingende,
 forstyrred de Modereform-Radikale,
 dem Alle til talende Tavshed tvingende.
 - Men, Himmel! Hvor Silken sad støbt om Barmen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="iversen201907270105">
+<text id="iversen201907270105">
 <head>
     <title>Moderne Hedenskab</title>
     <firstline>Skjult bag Gyldenregn-Busketter</firstline>
@@ -350,6 +358,7 @@ dem Alle til talende Tavshed tvingende.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Skjult bag Gyldenregn-Busketter,
 overskygget af Plataner,
 laa jeg nærved Parkfontænens
@@ -419,10 +428,11 @@ tankefuld hun Foden flytter
 sødt af Længselsdrømme tryllet
 fra de hvide Gudestøtter
 og forsvandt i Lindeskyggen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="iversen201907270106">
+<text id="iversen201907270106">
 <head>
     <title>Hvide Slyngroser</title>
     <firstline>Der var Roser i myldrende Mængde</firstline>
@@ -430,6 +440,7 @@ og forsvandt i Lindeskyggen.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Der var Roser i myldrende Mængde
     i fyldige Ranker om Vindverne slyngede;
     hen ad Verandaens Tag laa de slængte,
@@ -459,19 +470,21 @@ og Duften, saa fin og saa sart, mig berusede.
     Krands om min Elskedes Nakke jeg lægger,
     dejlige, kølende Roser os dækker; -
     de skjalv, naar vi hvidskede, stak, naar jeg kyssede.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Parlando -->
 
-<prose id="iversen201907270107">
+<text id="iversen201907270107">
 <head>
     <title>Arvesynd</title>
     <source pages="53-159"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 <nonum><center>I.</center></nonum>
 
 Langt nede i den næsten uddøde, kedsommeligt lange Gade, - dobbelt kedsommelig paa en klar Soldag som denne, - kunde man se en rund rød Plet, der bevægede sig langsomt fremad og i Tidens Løb blev større og mere oval.
@@ -1095,8 +1108,9 @@ paa ham. .
     Borch stod sanseløs, uden Tanker, skælvende, bedøvet.
     Saa faldt han magtesløs sammen og styrtede vildt hulkende om paa Bænken.
     Næste Morgen tidlig rejste han uden at se Anette.
-</body>
 </prose>
+</body>
+</text>
 
 </workbody>
 </kalliopework>

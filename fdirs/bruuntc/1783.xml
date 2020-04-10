@@ -17,18 +17,20 @@
 </workhead>
 <workbody>
 
-<prose id="bruuntc2017110901">
+<text id="bruuntc2017110901">
 <head>
     <title>Forerindring</title>
     <source pages="3-4"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 Trættet ved kiedsommelige Forretninger, sögte jeg undertiden i ledige Öieblikke, at opmuntre Sindet ved noget, der ikke udfordrede Forsken eller Eftertanke, og saaledes bleve nærværende Fortællinger til i den Skikkelse, de nu have. Sluttelig vil den strænge Moralist tænke, at jeg burde have anvendt min Tid til noget nyttigere; men til at afhandle Materier af det Slags, udfordres blandt andet, en Beqvemmelighed i Forfatningen og en Roelighed, som ulykkeligviis ikke ere faldne i mit Lod. - Jeg har altid troet at Vers ikke bör oversættes, men efterlignes; man vil altsaa finde omtrænt samme Mening, men ganske anden Vending end i Originalerne. I övrigt medförer Fortællingers Natur at de maae have Frihed og Liv for at behage. Udtrykkene allene stode; men der skal heller ikke i dem alle findes et Ord, som jo i Skiemt kunde anföres i ethvert anstændigt Selskab. Desuden gliderstedse den flygtige Munterhed, som slige Fortællinger indgive hurtig hen over Sielen, naar derimod en Werthersk og Rousseauisk Tungsindighed, nedsynker den i Henrykkelser, der ofte have saare betydelige Fölger. Overalt har jeg allene sögt at moere mig selv og andre; opnaaer jeg endnu denne sidste Hensigt, saa kan Læseren ikke ville en Forfatter ilde, der skaffer ham en i sig selv ganske uskyldig Fornöielse; men i al Fald appellerer jeg til Sandheden af mit Motto, og den maae tale min Sag.
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="bruuntc2017110902">
+<text id="bruuntc2017110902">
 <head>
     <title>Hans Carvels Ring</title>
     <firstline>Jeg synger kuns om Elskovs Spög og Löier</firstline>
@@ -36,6 +38,7 @@ Trættet ved kiedsommelige Forretninger, sögte jeg undertiden i ledige Öieblik
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg synger kuns om Elskovs Spög og Löier,
 Om hvad os bedst i Ungdoms Aar fornöier;
 Man intet faaer om Mord og Kriig at see,
@@ -224,10 +227,11 @@ Men mueligt du Historien ei kiender,
 Det Skade er min Vei saa langt ei gaaer,
 Dog naar til <sc>Ariost</sc> du dig henvender,
 Du fuld Oplysning strax om hele Sagen faaer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bruuntc2017110903">
+<text id="bruuntc2017110903">
 <head>
     <title>Bonden, som sögte sin Kalv</title>
     <firstline>Man siger Skoven mange Öine har</firstline>
@@ -235,6 +239,7 @@ Du fuld Oplysning strax om hele Sagen faaer.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Man siger Skoven mange Öine har:
 Thi Kiere, tag dig grummeligen Vare,
 Da ellers kunde heslig löbe Fare,
@@ -269,10 +274,11 @@ Kan han da ikke see min Kippes ved en Kandt?
 Man spilder kuns derved den ædle Tid;
 Langt sikrere din Sag du understötter
 Ved Pröver paa utrættet Lyst og Flid.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bruuntc2017110904">
+<text id="bruuntc2017110904">
 <head>
     <title>Feiltagelsen</title>
     <firstline>Lyksalig du mit Födeland</firstline>
@@ -280,6 +286,7 @@ Ved Pröver paa utrættet Lyst og Flid.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Lyksalig du mit Födeland!
 Hvis mindste Bye fremvise kan,
 De allernydeligste Piger.
@@ -832,10 +839,11 @@ De glædelige Livets Timer.
 Snup Lejligheden da, vær snar, 
 Du ellers ligger som en Nar,
 Naar Frue Klokker for dig kimer.<note>kimer.]kimer,</note>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bruuntc2017110905">
+<text id="bruuntc2017110905">
 <head>
     <title>Hvordan Pigerne blive vittige</title>
     <firstline>Jeg veed en Leeg, og den er ikke slem</firstline>
@@ -843,6 +851,7 @@ Naar Frue Klokker for dig kimer.<note>kimer.]kimer,</note>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg veed en Leeg, og den er ikke slem; 
 En Leeg, hvis Lyst sig dagligdags fornyer, 
 Som man at lære, næsten lige nem
@@ -1071,10 +1080,11 @@ Det hesligt var, om Author tvivle torde,
 Hver Landsmand ei det samme ogsaa giorde;
 Hvo kiender ei den ædle Videlyst,
 Der stedse flammer höit i Nordens Sönners Bryst?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bruuntc2017110906">
+<text id="bruuntc2017110906">
 <head>
     <title>Brændehuggeren</title>
     <firstline>I fine Folk, I Lykkens Kieledægger</firstline>
@@ -1082,6 +1092,7 @@ Der stedse flammer höit i Nordens Sönners Bryst?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I fine Folk, I Lykkens Kieledægger,
 Som matte Lemmer halv vansmægtig strækker. 
 Paa Mageligheds blöde Canape;
@@ -1230,10 +1241,11 @@ Men har man alt for skammelig jer giekket.
 Da knap jeg nogen Forbön vove tör.
 Naar Pakten blîr saa aabenbare brækket,
 Naturligviis Spilop I gode Koner giör.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bruuntc2017110907">
+<text id="bruuntc2017110907">
 <head>
     <title>Det gyselige Syn</title>
     <firstline>Der er et Land, saa har jeg hört for sandt</firstline>
@@ -1241,6 +1253,7 @@ Naturligviis Spilop I gode Koner giör.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der er et Land, saa har jeg hört for sandt, 
 Jeg veed min Mand, han farer ei med Tant;
 Et herligt Land, hvor paa min Ære,
@@ -1593,10 +1606,11 @@ For Eftertiden da frafalder,
 En Paastand, det ugrundet billig kalder;
 Bekiender I har hidtil taget Feil,
 Og seer med Anger jer paa <sc>Mikkel</sc> smukt i Speil.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bruuntc2017110908">
+<text id="bruuntc2017110908">
 <head>
     <title>Den umuelige Ting</title>
     <firstline>Det ikke er os Dödelige givet</firstline>
@@ -1604,6 +1618,7 @@ Og seer med Anger jer paa <sc>Mikkel</sc> smukt i Speil.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Det ikke er os Dödelige givet, 
 Et Öieblik at kunde stille staae
 Paa Önskets Trappe. Giennem hele Livet,
@@ -1871,10 +1886,11 @@ Naar derimod en venlig Huldgudinde,
 Hvert Hierte kan ulöseligen binde;
 Man elsker selv saa södt et Slaverie,
 Og störste Uhæld da er just at giöres frie.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bruuntc2017110909">
+<text id="bruuntc2017110909">
 <head>
     <title>Peer Godtroes Hoppe</title>
     <firstline>Man virkelig med Rette dog bör hædre</firstline>
@@ -1882,6 +1898,7 @@ Og störste Uhæld da er just at giöres frie.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Man virkelig med Rette dog bör hædre,
 De længst hensovne kiere salig Fædre;
 Blandt mange andre skiönne Ting,
@@ -2192,10 +2209,11 @@ Men maae du uomgienge igen titte;
 Nu vel, saa see en tienlig Glut at hitte,
 Naar Sagen da du târ paa rette Fod,
 Saa har jeg ei min Ven et Bogstav derimod,
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bruuntc2017110910">
+<text id="bruuntc2017110910">
 <head>
     <title>De gamle Mænds Almanak</title>
     <firstline>Blandt Millioner Daarligheder</firstline>
@@ -2203,6 +2221,7 @@ Saa har jeg ei min Ven et Bogstav derimod,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Blandt Millioner Daarligheder,
 Som sværme paa vor löierlige Jord;
 Jeg faae den Skam ei kiender en saa stor,
@@ -2544,10 +2563,11 @@ Saa hytter jer for alle Ting for Skiend.
 Da skal I selv i kolde Alders Dage, 
 Ungdommelige Glæder om jer drage,
 Og haabefulde Skud see spire fra jer Lænd.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bruuntc2017110911">
+<text id="bruuntc2017110911">
 <head>
     <title>Falken</title>
     <firstline>Anine! deiligste blandt Nordens Piger</firstline>
@@ -2555,6 +2575,7 @@ Og haabefulde Skud see spire fra jer Lænd.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     <sc>Anine</sc>! deiligste blandt Nordens Piger,
 Som Huldgudinder selv ei Prisen viger,
 Hvis Mine aander Yndighed;
@@ -3045,10 +3066,11 @@ I disse underlige Hytter?
 I giör et Valbye til Paris,
 Men pigelöse Paradiis,
 Med fæle Grönland selv jeg bytter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bruuntc2017110912">
+<text id="bruuntc2017110912">
 <head>
     <title>Karret</title>
     <firstline>Man elske kuns, og flux man sindriig er</firstline>
@@ -3056,6 +3078,7 @@ Med fæle Grönland selv jeg bytter.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Man elske kuns, og flux man sindriig er;
 Den Kierlighed har rare Egenskaber.
 Sandt mangen Mund og Næse derved taber,
@@ -3258,10 +3281,11 @@ At give et Raad, som er ei at forkaste?
 Saa smaa Ting I aldrig maae lægge paa Hierte,
 Forglemmer hos <sc>Bacchus</sc> jer indbildte Smerte,
     Men henter hos <sc>Venus</sc> en virkelig Tröft.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bruuntc2017110913">
+<text id="bruuntc2017110913">
 <head>
     <title>Fristelsen</title>
     <firstline>Hvad er vi Adams Börn dog ikke svage</firstline>
@@ -3269,6 +3293,7 @@ Forglemmer hos <sc>Bacchus</sc> jer indbildte Smerte,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Hvad er vi <sc>Adams</sc> Börn dog ikke svage,
 Vi planer giör og mange skiönne Ting 
 Os sette for! nu vil vi reent forsage
@@ -3667,10 +3692,11 @@ Beskriver eders Döttre vel, hvordan
 De stakkels Börn han let bag Lyset kan.
 I kiende ham og veed hvad Kneb i Knegten stikker, 
 At aldrig Kiönnet for hans Lumskerie er sikker.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bruuntc2017110914">
+<text id="bruuntc2017110914">
 <head>
     <title>Nattergalen</title>
     <firstline>Der gives onde Mennesker, som tale</firstline>
@@ -3678,6 +3704,7 @@ At aldrig Kiönnet for hans Lumskerie er sikker.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Der gives onde Mennesker, som tale
 Forbistret slemt om Ægteskab.
 De aabenbare denne Stand afmale,
@@ -4145,10 +4172,11 @@ Ja hvis I end jer Skind forkrattet faaer;
 Saa halve Skyld paa egen Regning skriver, 
 Jeg stedse ved min förste Mening bliver: 
 At begge Kiön i lige Nummer staaer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bruuntc2017110915">
+<text id="bruuntc2017110915">
 <head>
     <title>Vuggen</title>
     <firstline>Hör, veed du hvad, min Ven, ifald din Lykke</firstline>
@@ -4156,6 +4184,7 @@ At begge Kiön i lige Nummer staaer.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Hör, veed du hvad, min Ven, ifald din Lykke 
 Dig spiller op et meer end Hverdags lystigt Stykke, 
 Saa vogt dig vel, dans ikke alt for frisk,
@@ -4553,8 +4582,9 @@ Den arme Fyhr udaf Critikens Klöer.
 Tryg under eders Skyts, han da udbrede
 Skal Kiönnets Roes og Trods for Skiebnens Vrede
 Det elske, tiene, dyrke til han döer.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

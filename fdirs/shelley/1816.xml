@@ -13,7 +13,7 @@
 </workhead>
 <workbody>
 
-<prose id="shelley2001080502">
+<text id="shelley2001080502">
 <head>
    <title>Preface</title>
    <toctitle>Preface</toctitle>
@@ -24,6 +24,7 @@
    <quality>kilde,side</quality>
 </head>
 <body>
+<prose>
 The poem entitled <i>Alastor</i> may be considered as allegorical of one of the most interesting situations of the human mind. It represents a youth of uncorrupted feelings and adventurous genius led forth by an imagination inflamed and purified through familiarity with all that is excellent and majestic, to the contemplation of the universe. He drinks deep of the fountains of knowledge, and is still insatiate. The magnificence and beauty of the external world sinks profoundly into the frame of his conceptions, and affords to their modifications a variety not to be exhausted. So long as it is possible for his desires to point towards objects thus infinite and unmeasured, he is joyous, and tranquil, and self-possessed. But the period arrives when these objects cease to suffice. His mind is at length suddenly awakened and thirsts for intercourse with an intelligence similar to itself. He images to himself the Being whom he loves. Conversant with speculations of the sublimest and most perfect natures, the vision in which he embodies his own imaginations unites all of wonderful, or wise, or beautiful, which the poet, the philosopher, or the lover could depicture. The intellectual faculties, the imagination, the functions of sense, have their respective requisitions on the sympathy of corresponding powers in other human beings. The Poet is represented as uniting these requisitions, and attaching them to a single image. He seeks in vain for a prototype of his conception. Blasted by his dissapointment, he descends to an untimely grave.
    The picture is not barren of instruction to actual men. The Poet's self-centred seclusion was avenged by the furies of an irresistible passion pursuing him to speedy ruin. But that Power which strikes the luminaries of the world with sudden darkness and extinction, by awakening them to too exquisite a perception of its influences, dooms to a slow and poisonous decay those meaner spirits that dare to abjure its dominion. Their destiny is more abject and inglorious as their delinquency is more contemptible and pernicious. They who, deluded by no generous error, instigated by no sacred thirst of doubtful knowledge, duped by no illustrious superstition, loving nothing on this earth, and cherishing no hopes beyond, yet keep aloof from sympathies with their kind, rejoicing neither in human joy nor mourning with human grief; these, and such as they, have their apportioned curse. They languish, because none feel with them their common nature. They are morally dead. They are neither friends, nor lovers, nor fathers, nor citizens of the world, nor benefactors of their country. Among those who attempt to exist without human sympathy, the pure and tender-hearted perish through the intensity and passion of their search after its communities, when the vacancy of their spirit suddenly makes itself felt. All else, selfish, blind, and torpid, are those unforseeing multitudes who constitute, together with their own, the lasting misery and loneliness of the world. Those who love not their fellow-beings live unfruitful lives, and prepare for their old age a miserable grave.
 
@@ -31,10 +32,11 @@ The poem entitled <i>Alastor</i> may be considered as allegorical of one of the 
            And those whose hearts are dry as summer dust,
            Burn to the socket!'
 <i>December</i> 14, <year>1815</year>.
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="shelley2001080501">
+<text id="shelley2001080501">
 <head>
    <title>Alastor; Or, The Spirit of Solitude</title>
    <toctitle>Alastor; Or, The Spirit of Solitude</toctitle>
@@ -47,6 +49,7 @@ The poem entitled <i>Alastor</i> may be considered as allegorical of one of the 
    <keywords>blankvers</keywords>
 </head>
 <body>
+<poetry>
     <i>Nondum amabam, et amare amabam, quaerebam quid</i>
               <i>amarem, amans amare. - Confess. St. August.</i>
 
@@ -799,7 +802,8 @@ The passionate tumult of a clinging hope;
 But pale despair and cold tranquillity,
 Nature's vast frame, the web of human things,
 Birth and the grave, that are not as they were.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

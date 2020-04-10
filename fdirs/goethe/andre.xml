@@ -7,7 +7,7 @@
 </workhead>
 <workbody>
 
-<poem id="goethe2019011801">
+<text id="goethe2019011801">
 <head>
    <title>Wandrers Nachtlied I</title>
    <firstline>Der du von dem Himmel bist</firstline>
@@ -20,6 +20,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Der du von dem Himmel bist,
 Alles Leid und Schmerzen stillest,
 Den, der doppelt elend ist,
@@ -28,11 +29,12 @@ Ach, ich bin des Treibens müde!
 Was soll all der Schmerz und Lust?
 Süsser Friede,
 Komm, ach, komm in meine Brust!
+</poetry>
 </body>
-</poem>
+</text>
 
 
-<poem id="goethe2002103001">
+<text id="goethe2002103001">
 <head>
    <title>Wandrers Nachtlied II</title>
    <firstline>Über allen Gipfeln</firstline>
@@ -46,6 +48,7 @@ Komm, ach, komm in meine Brust!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Über allen Gipfeln
 Ist Ruh,
 In allen Wipfeln
@@ -54,10 +57,11 @@ Kaum einen Hauch;
 Die Vögelein schweigen im Walde.
 Warte nur, balde
 Ruhest du auch.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2000010801">
+<text id="goethe2000010801">
 <head>
    <title>Der Fischer</title>
    <toctitle>Der Fischer</toctitle>
@@ -69,6 +73,7 @@ Ruhest du auch.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Das Wasser rauscht', das Wasser schwoll,
 ein Fischer saß daran,
 sah nach dem Angel ruhevoll,
@@ -104,10 +109,11 @@ Sie sprach zu ihm, sie sang zu ihm;
 da war's um ihn geschehn:
 Halb zog sie ihn, halb sank er hin
 und ward nicht mehr gesehn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2000010802">
+<text id="goethe2000010802">
 <head>
    <title>Osterspaziergang</title>
    <toctitle>Osterspaziergang</toctitle>
@@ -116,6 +122,7 @@ und ward nicht mehr gesehn.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Vom Eise befreit sind Strom und Bäche
 Durch des Frühlings holden, belebenden Blick,
 Im Tale grünet Hoffnungsglück;
@@ -154,10 +161,11 @@ Ich höre schon des Dorfs Getümmel,
 Hier ist des Volkes wahrer Himmel,
 Zufrieden jauchzet groß und klein:
 Hier bin ich Mensch, hier darf ich's sein."
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2000010803">
+<text id="goethe2000010803">
 <head>
    <title>April 1814</title>
    <toctitle>April 1814</toctitle>
@@ -166,6 +174,7 @@ Hier bin ich Mensch, hier darf ich's sein."
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Wir hören's oft und glauben's wohl am Ende:
 Das Menschenherz sei ewig unergründlich,
 Und wie man auch sich hin und wider wende,
@@ -381,10 +390,11 @@ Wir stolpern wohl auf unsrer Lebensreise,
 Und doch vermögen in der Welt, der tollen,
 Zwei Hebel viel aufs irdische Getriebe:
 Sehr viel die Pflicht, unendlich mehr die Liebe!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2000010804">
+<text id="goethe2000010804">
 <head>
    <title>Der Zauberlehrling</title>
    <toctitle>Der Zauberlehrling</toctitle>
@@ -393,6 +403,7 @@ Sehr viel die Pflicht, unendlich mehr die Liebe!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Hat der alte Hexenmeister
 Sich doch einmal wegbegeben!
 Und nun sollen seine Geister
@@ -504,10 +515,11 @@ Werd ich nun nicht los.
       Denn als Geister
       Ruft euch nur, zu diesem Zwecke,<note>Andre udgaver af digtet har <i>seinem] diesem</i>.</note>
       Erst hervor, der alte Meister."
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2000010805">
+<text id="goethe2000010805">
 <head>
    <title>Erlkönig</title>
    <toctitle>Erlkönig</toctitle>
@@ -516,6 +528,7 @@ Werd ich nun nicht los.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Wer reitet so spät durch Nacht und Wind?
 Es ist der Vater mit seinem Kind;
 er hat den Knaben wohl in dem Arm,
@@ -555,10 +568,11 @@ Dem Vater grauset's, er reitet geschwind,
 er hält in den Armen das ächzende Kind,
 erreicht den Hof mit Mühe und Not;
 in seinen Armen das Kind war tot.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2000010806">
+<text id="goethe2000010806">
 <head>
    <title>Vermächtnis</title>
    <toctitle>Vermächtnis</toctitle>
@@ -568,6 +582,7 @@ in seinen Armen das Kind war tot.
    <!-- (eingesandt von Konrad Wolfram, K.Wolfram@t-online.de) -->
 </head>
 <body>
+<poetry>
 Kein Wesen kann zu Nichts zerfallen!
 Das Ewige regt sich fort in allen,
 Am Sein erhalte dich beglückt!
@@ -616,10 +631,11 @@ Der Philosoph, der Dichter schuf,
 So wirst du schönste Gunst erzielen:
 Denn edlen Seelen vorzufühlen
 Ist wünschenswertester Beruf.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2000010807">
+<text id="goethe2000010807">
 <head>
    <title>Lebensregel</title>
    <firstline>Willst du dir ein hübsch Leben zimmern</firstline>
@@ -627,16 +643,18 @@ Ist wünschenswertester Beruf.
    <!-- (eingesandt von Peter Tuchscherer; PTuchscherer@databecker.de) -->
 </head>
 <body>
+<poetry>
 Willst du dir ein hübsch Leben zimmern,
 Mußt dich ums Vergangne nicht bekümmern,
 Das Wenigste muß dich verdrießen;
 Mußt stets die Gegenwart genießen,
 Besonders keinen Menschen hassen
 Und die Zukunft Gott überlassen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2000010808">
+<text id="goethe2000010808">
 <head>
    <title>Prometheus</title>
    <toctitle>Prometheus</toctitle>
@@ -646,6 +664,7 @@ Und die Zukunft Gott überlassen.
    <!-- (eingesandt von Martin Schuhmann, mschuhmann@hotmail.com) -->
 </head>
 <body>
+<poetry>
 Bedecke deinen Himmel, Zeus,
 Mit Wolkendunst
 Und übe, dem Knaben gleich,
@@ -702,10 +721,11 @@ Zu leiden, zu weinen,
 Zu genießen und zu freuen sich
 Und dein nicht zu achten,
 Wie ich!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2000010809">
+<text id="goethe2000010809">
 <head>
    <title>Lied des Lynkeus</title>
    <toctitle>Lied des Lynkeus</toctitle>
@@ -718,6 +738,7 @@ Wie ich!
    <!-- (eingesandt von Martin Schuhmann, mschuhmann@hotmail.com) -->
 </head>
 <body>
+<poetry>
 Zum Sehen geboren,
 Zum Schauen bestellt,
 Dem Turme geschworen,
@@ -734,10 +755,11 @@ Ihr glücklichen Augen,
 Was je ihr gesehn,
 Es sei, wie es wolle,
 Es war doch so schön!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2000082801">
+<text id="goethe2000082801">
 <head>
    <title>Nähe des Geliebten</title>
    <toctitle>Nähe des Geliebten</toctitle>
@@ -749,6 +771,7 @@ Es war doch so schön!
    <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
+<poetry>
 Ich denke dein, wenn mir der Sonne Schimmer
 vom Meere strahlt;
 Ich denke dein, wenn sich des Mondes Flimmer
@@ -768,10 +791,11 @@ Ich bin bei dir; du seist auch noch so ferne,
 Du bist mir nah!
 Die Sonne sinkt, bald leuchten mir die Sterne.
 O, wärst du da!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2000082802">
+<text id="goethe2000082802">
 <head>
    <title>Lebendiges Andenken</title>
    <toctitle>Lebendiges Andenken</toctitle>
@@ -781,6 +805,7 @@ O, wärst du da!
    <!-- (eingesandt von Karin Nachtigal: karin.nachtigal@sap-ag.de) -->
 </head>
 <body>
+<poetry>
 Der Liebsten Band und Schleife rauben,
 Halb mag sie zürnen, halb erlauben,
 Euch ist es viel, ich will es glauben
@@ -812,10 +837,11 @@ Wir gleiteten zur vollern Brust.
 O Nebenbuhler, frei von Neide,
 Du süß Geschenk, du schöne Beute,
 Erinnre mich an Glück und Lust!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2000082803">
+<text id="goethe2000082803">
 <head>
    <title>An die Entfernte</title>
    <toctitle>An die Entfernte</toctitle>
@@ -825,6 +851,7 @@ Erinnre mich an Glück und Lust!
    <!-- eingesandt von Michael Sorger: sorger@rmc.de -->
 </head>
 <body>
+<poetry>
 So hab ich wirklich dich verloren?
 Bist du, o Schöne, mir entflohn?
 Noch klingt in den gewohnten Ohren
@@ -839,10 +866,11 @@ So dringet ängstlich hin und wieder
 Durch Feld und Busch und Wald mein Blick;
 Dich rufen alle meine Lieder:
 O komm, Geliebte, mir zurück!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2000082804">
+<text id="goethe2000082804">
 <head>
    <title>Der Müllerin Verrat</title>
    <toctitle>Der Müllerin Verrat</toctitle>
@@ -852,6 +880,7 @@ O komm, Geliebte, mir zurück!
    <!-- (eingesandt von Hans-Hermann Bartz: Kranz-Bartz@t-online.de ) -->
 </head>
 <body>
+<poetry>
    Woher der Freund so früh und schnelle,
    Da kaum der Tag im Osten graut?
    Hat er sich in der Waldkapelle,
@@ -941,10 +970,11 @@ O komm, Geliebte, mir zurück!
    Sein edles Liebchen frech betrügt
    Und nachts, mit allzukühner Wage,
    Zu Amors falscher Mühle kriecht.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2000082805">
+<text id="goethe2000082805">
 <head>
    <title>Trost in Tränen</title>
    <toctitle>Trost in Tränen</toctitle>
@@ -954,6 +984,7 @@ O komm, Geliebte, mir zurück!
    <!-- (eingesandt von : Nico Baumgartner, nico.baumgartner@datacomm.ch) -->
 </head>
 <body>
+<poetry>
 Wie kommts, daß du so traurig bist,
 Da alles froh erscheint?
 Man sieht dirs an den Augen an,
@@ -993,10 +1024,11 @@ In jeder heitern Nacht.
 So manchen lieben Tag;
 Verweinen laßt die Nächte mich,
 Solang ich weinen mag.«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2001032801">
+<text id="goethe2001032801">
 <head>
    <title>An die Günstigen</title>
    <toctitle>An die Günstigen</toctitle>
@@ -1005,6 +1037,7 @@ Solang ich weinen mag.«
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Dichter lieben nicht zu schweigen,
 Wollen sich der Menge zeigen.
 Lob und Tadel muß ja sein!
@@ -1018,10 +1051,11 @@ Sind hier Blumen nur im Strauß;
 Und das Alter wie die Jugend,
 Und der Fehler wie die Tugend
 Nimmt sich gut in Liedern aus.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2002073101">
+<text id="goethe2002073101">
 <head>
    <title>An den Mond</title>
    <toctitle>An den Mond</toctitle>
@@ -1030,6 +1064,7 @@ Nimmt sich gut in Liedern aus.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Füllest wieder Busch und Tal
 Still mit Nebelglanz,
 Lösest endlich auch einmal
@@ -1074,10 +1109,11 @@ Was, von Menschen nicht gewußt
 Oder nicht bedacht,
 Durch das Labyrinth der Brust
 Wandelt in der Nacht.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2002073102">
+<text id="goethe2002073102">
 <head>
    <title>Mailied</title>
    <toctitle>Mailied</toctitle>
@@ -1086,6 +1122,7 @@ Wandelt in der Nacht.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Wie herrlich leuchtet
 Mir die Natur!
 Wie glänzt die Sonne!
@@ -1130,10 +1167,11 @@ Zu neuen Liedern
 Und Tänzen gibst.
 Sei ewig glücklich,
 Wie du mich liebst!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2003060101">
+<text id="goethe2003060101">
 <head>
    <title>Hoch auf dem alten Turme steht</title>
    <toctitle>Hoch auf dem alten Turme steht</toctitle>
@@ -1145,6 +1183,7 @@ Wie du mich liebst!
    </notes>
 </head>
 <body>
+<poetry>
 Hoch auf dem alten Turme steht
 Des Helden edler Geist.
 Der wie das Schiff vorübergeht,
@@ -1159,10 +1198,11 @@ Mein halbes Leben stürmt' sich fort,
 Verdehnt' die Hälft' in Ruh' -
 Und du, du Menschenschifflein dort,
 Fahr immer, immer zu!''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2005060501">
+<text id="goethe2005060501">
 <head>
    <title>Das Blümlein Wunderschön</title>
    <subtitle>Lied des gefangenen Grafen</subtitle>
@@ -1170,6 +1210,7 @@ Fahr immer, immer zu!''
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Graf</sc></nonum></center>
 Ich kenne ein Blümlein Wunderschön
 Und trage danach Verlangen;
@@ -1274,16 +1315,18 @@ Auch noch lebendig blieben.
 Und wenn mir fast das Herzt bricht,
 So ruf ich nur: Vergiß mein nicht!
 Da komm ich wieder ins Leben.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2005060502">
+<text id="goethe2005060502">
 <head>
    <title>Die erste Walpurgisnacht</title>
    <firstline>Es lacht der Mai!</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Ein Druide</sc></nonum></center>
 Es lacht der Mai!
 Der Wald ist frei
@@ -1398,16 +1441,18 @@ Die Flamme reinigt sich vom Rauch:
 So reinig' unsern Glauben!
 Und raubt man uns den alten Brauch;
 Dein Licht, wer kann es rauben!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2017082101">
+<text id="goethe2017082101">
 <head>
    <title>Landschaft</title>
    <firstline>Das alles sieht so lustig aus</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Das alles sieht so lustig aus,
 So wohl gewaschen das Bauerhaus,
 So morgentaulich Gras und Baum,
@@ -1429,16 +1474,18 @@ Was sonst ein garstig Ungefähr,
 Tagtäglich, ein Gemeines wär.
 Fehlt's dir an Geist und Kunstgebühr,
 Die Liebe weiß schon Rat dafür.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2017122801">
+<text id="goethe2017122801">
 <head>
    <title>Liebebedürfnis</title>
    <firstline>Wer vernimmt mich? ach, wem soll ich's klagen?</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Wer vernimmt mich? ach, wem soll ich's klagen?
 Wer's vernähme, würd' er mich bedauern?
 Ach, die Lippe, die so manche Freude
@@ -1457,16 +1504,18 @@ Mit dem Saft der Bienen bei dem Feuer
 Meines Herds vereinigt, Lind'rung schaffen.
 Ach, was will das helfen, mischt die Liebe
 Nicht ein Tröpfchen ihres Balsams drunter?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2017123101">
+<text id="goethe2017123101">
 <head>
    <title>Beherzigung</title>
    <firstline>Ach, was soll der Mensch verlangen?</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Ach, was soll der Mensch verlangen?
 Ist es besser, ruhig bleiben,
 Klammernd fest sich anzuhangen?
@@ -1481,10 +1530,11 @@ Eines schickt sich nicht für alle!
 Sehe jeder, wie er's treibe,
 Sehe jeder, wo er bleibe,
 Und wer steht, daß er nicht falle!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2018011001">
+<text id="goethe2018011001">
 <head>
    <title>Die Nacht</title>
    <firstline>Gern verlass ich diese Hütte</firstline>
@@ -1494,6 +1544,7 @@ Und wer steht, daß er nicht falle!
    </notes>
 </head>
 <body>
+<poetry>
 Gern verlass ich diese Hütte,
 Meiner Liebsten Aufenthalt,
 Wandle mit verhülltem Tritte
@@ -1511,10 +1562,11 @@ Freude! Wollust! kaum zu fassen!
 Und doch wollt ich, Himmel, dir
 Tausend solcher Nächte lassen,
 Gäb mein Mädchen <i>eine</i> mir.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2018012901">
+<text id="goethe2018012901">
 <head>
    <title>Der Ewige Jude</title>
    <subtitle>
@@ -1526,6 +1578,7 @@ Gäb mein Mädchen <i>eine</i> mir.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Um Mitternacht wohl fang ich an,
 Spring aus dem Bette wie ein Toller;
 Nie war mein Busen seelevoller,
@@ -1857,10 +1910,11 @@ Wie ihrs bald weiter werdet sehn.
 
 Es waren, die den Vater auch gekannt;
 Wo sind denn die? – Eh, man hat sie verbrannt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2018012902">
+<text id="goethe2018012902">
 <head>
    <title>Vor Gericht</title>
    <firstline>Von wem ich es habe, das sag' ich euch nicht</firstline>
@@ -1868,6 +1922,7 @@ Wo sind denn die? – Eh, man hat sie verbrannt.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Von wem ich es habe, das sag' ich euch nicht,
 Das Kind in meinem Leib. –
 Pfui! speit ihr aus: die Hure da! –
@@ -1887,10 +1942,11 @@ Herr Pfarrer und Herr Amtmann ihr,
 Ich bitte, laßt mich in Ruh!
 Es ist mein Kind, es bleibt mein Kind,
 Ihr gebt mir ja nichts dazu.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2018050901">
+<text id="goethe2018050901">
 <head>
    <title>Der Wanderer</title>
    <subtitle>Wetzlar 1772</subtitle>
@@ -1898,6 +1954,7 @@ Ihr gebt mir ja nichts dazu.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>Wandrer.</center></nonum>
 Gott segne dich, junge Frau,
 Und den säugenden Knaben
@@ -2133,16 +2190,18 @@ Zur Hütte,
 Vergoldet vom letzten Sonnenstrahl,
 Lass mich empfangen solch ein Weib,
 Den Knaben auf dem Arm!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2018101101">
+<text id="goethe2018101101">
 <head>
    <title>Meine Göttin</title>
    <firstline>Welcher Unsterblichen</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Welcher Unsterblichen
 Soll der höchste Preis sein?
 Mit niemand streit ich,
@@ -2230,16 +2289,18 @@ Mit dem Lichte des Lebens
 Sich von mir wende,
 Die edle Treiberin,
 Trösterin Hoffnung!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2018121101">
+<text id="goethe2018121101">
 <head>
    <title>Der Junggesell und der Mühlbach</title>
    <firstline>Wo willst du klares Bächlein hin</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><i>Gesell</i></center></nonum>
 Wo willst du klares Bächlein hin,
 So munter?
@@ -2311,16 +2372,18 @@ Du murmelst mir vielleicht einmal
 Zur Freude.
 Geh', sag' ihr gleich, und sag ihr oft,
 Was still der Knabe wünscht und hofft.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2019010801">
+<text id="goethe2019010801">
 <head>
    <title>Vanitas! Vanitatum vanitas!</title>
    <firstline>Ich hab' mein Sach' auf Nichts gestellt</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Ich hab' mein Sach' auf Nichts gestellt,
     Juchhe!
 Drum ist's so wohl mir in der Welt.
@@ -2376,10 +2439,11 @@ Und mein gehört die ganze Welt.
 Zu Ende geht nun Sang und Schmaus.
 Nur trinkt mir alle Neigen aus;
 Die letzte muß heraus!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2019013101">
+<text id="goethe2019013101">
 <head>
    <title><num>XIII</num>Warnung</title>
    <firstline>Am Jüngsten Tag, wenn die Posaunen schallen</firstline>
@@ -2388,6 +2452,7 @@ Die letzte muß heraus!
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Am Jüngsten Tag, wenn die Posaunen schallen
 Und alles aus ist mit dem Erdeleben,
 Sind wir verpflichtet, Rechenschaft zu geben
@@ -2405,10 +2470,11 @@ Daß nicht der Welt solch Leiden widerfahre.
 Werd' ich berechnen und entschuld'gen müssen,
 Was alles unnütz ich vor dir geplaudert;
 So wird der Jüngste Tag zum vollen Jahre.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2019013102">
+<text id="goethe2019013102">
 <head>
    <title>Das Sonett</title>
    <firstline>Sich in erneutem Kunstgebrauch zu üben</firstline>
@@ -2416,6 +2482,7 @@ So wird der Jüngste Tag zum vollen Jahre.
    <!-- https://lyrikwiki.de/mediawiki/index.php/Sonett_(Goethe) -->
 </head>
 <body>
+<poetry>
 Sich in erneutem Kunstgebrauch zu üben,
 Ist heil'ge Pflicht, die wir dir auferlegen:
 Du kannst dich auch, wie wir, bestimmt bewegen
@@ -2433,16 +2500,18 @@ Das Beste, was Gefühl mir gäbe, reimen;
 Nur weiß ich hier mich nicht bequem zu betten,
 Ich schneide sonst so gern aus ganzem Holze,
 Und müßte nun doch auch mitunter leimen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2019020301">
+<text id="goethe2019020301">
 <head>
    <title>Blindekuh</title>
    <firstline>O liebliche Therese!</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 O liebliche Therese!
 Wie wandelt gleich ins Böse
 Dein offnes Auge sich!
@@ -2463,16 +2532,18 @@ Und alle foppten ihn.
 Und willst du mich nicht lieben,
 So geh ich stets im Trüben
 Wie mit verbundnen Augen hin.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2019021201">
+<text id="goethe2019021201">
 <head>
    <title>Jägers Abendlied</title>
    <firstline>Im Felde schleich ich still und wild</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Im Felde schleich ich still und wild,
 Gespannt mein Feuerrohr.
 Da schwebt so licht dein liebes Bild,
@@ -2492,10 +2563,11 @@ Mir ist es, denk ich nur an dich,
 Als in den Mond zu sehn;
 Ein stiller Friede kommt auf mich,
 Weiß nicht, wie mir geschehn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2019021501">
+<text id="goethe2019021501">
 <head>
    <title>Mit einem goldnen Halskettchen</title>
    <firstline>Dir darf dies Blatt ein Kettchen bringen</firstline>
@@ -2506,6 +2578,7 @@ Weiß nicht, wie mir geschehn.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Dir darf dies Blatt ein Kettchen bringen,
 Das, ganz zur Biegsamkeit gewöhnt,
 Sich mit viel hundert kleinen Schlingen
@@ -2520,10 +2593,11 @@ Doch bringt dir einer jene Kette,
 Die schwerer drückt und ernster faßt,
 Verdenk ich dir es nicht, Lisette,
 Wenn du ein klein Bedenken hast.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2019022001">
+<text id="goethe2019022001">
 <head>
    <title>Willkommen und Abschied</title>
    <firstline>Es schlug mein Herz. Geschwind, zu Pferde!</firstline>
@@ -2533,6 +2607,7 @@ Wenn du ein klein Bedenken hast.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Es schlug mein Herz. Geschwind, zu Pferde!
 Und fort, wild wie ein Held zur Schlacht.
 Der Abend wiegte schon die Erde,
@@ -2568,16 +2643,18 @@ Du gingst, ich stund und sah zur Erden
 Und sah dir nach mit nassem Blick.
 Und doch, welch Glück, geliebt zu werden,
 Und lieben, Götter, welch ein Glück!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2019022102">
+<text id="goethe2019022102">
 <head>
    <title>Heidenröslein</title>
    <firstline>Sah ein Knab' ein Röslein stehn</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Sah ein Knab' ein Röslein stehn,
 Röslein auf der Heiden,
 War so jung und morgenschön,
@@ -2601,16 +2678,18 @@ Half ihr doch kein Weh und Ach,
 Musste es eben leiden.
 Röslein, Röslein, Röslein rot,
 Röslein auf der Heiden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2019022103">
+<text id="goethe2019022103">
 <head>
    <title>Der Sänger</title>
    <firstline>Was hör' ich draußen vor dem Tor</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 "Was hör' ich draußen vor dem Tor,
 Was auf der Brücke schallen?
 Laß den Gesang vor unserm Ohr
@@ -2658,16 +2737,18 @@ Wo das ist kleine Gabe!
 Ergeht's euch wohl, so denkt an mich,
 Und danket Gott so warm, als ich
 Für diesen Trunk euch danke."
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2019051301">
+<text id="goethe2019051301">
 <head>
    <title>Diese Gondel vergleich ich</title>
    <firstline>Diese Gondel vergleich ich der Wiege</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Diese Gondel vergleich ich der Wiege,
     sie schaukelt gefällig
 Und das Kästchen darauf
@@ -2676,15 +2757,17 @@ Recht so! Zwischen der Wieg und dem Sarg
     wir schwanken und schweben
 Auf dem großen Kanal
     sorglos durchs Leben dahin.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2019091401">
+<text id="goethe2019091401">
 <head>
     <title>An Lina</title>
     <firstline>Liebchen, kommen diese Lieder</firstline>
 </head>
 <body>
+<poetry>
 Liebchen, kommen diese Lieder
 Jemals wieder dir zur Hand,
 Sitze beim Klaviere nieder,
@@ -2699,10 +2782,11 @@ Ach, wie traurig sieht in Lettern,
 Schwarz auf weiß, das Lied mich an,
 Das aus deinem Mund vergöttern,
 Das ein Herz zerreißen kann!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2019091801">
+<text id="goethe2019091801">
 <head>
     <title>Heidenröslein</title>
     <firstline>Sah ein Knab' ein Röslein stehn</firstline>
@@ -2711,6 +2795,7 @@ Das ein Herz zerreißen kann!
     </notes>
 </head>
 <body>
+<poetry>
 Sah ein Knab' ein Röslein stehn,
 Röslein auf der Heiden,
 War so jung und morgenschön,
@@ -2734,10 +2819,11 @@ Half ihr doch kein Weh und Ach,
 Musste es eben leiden.
 Röslein, Röslein, Röslein rot,
 Röslein auf der Heiden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2019091802">
+<text id="goethe2019091802">
 <head>
     <title>Das Veilchen</title>
     <firstline>Ein Veilchen auf der Wiese stand</firstline>
@@ -2746,6 +2832,7 @@ Röslein auf der Heiden.
     </notes>
 </head>
 <body>
+<poetry>
 Ein Veilchen auf der Wiese stand,
 gebückt in sich und unbekannt;
 es war ein herzigs Veilchen.
@@ -2769,10 +2856,11 @@ Es sank und starb, und freut' sich noch:
 und sterb' ich denn, so sterb' ich doch
 durch sie, durch sie,
 zu ihren Füßen doch!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="goethe2020032201">
+<text id="goethe2020032201">
 <head>
     <title>Der fünfte Mai</title>
     <subtitle>Ode von Alexander Manzoni</subtitle>
@@ -2782,6 +2870,7 @@ zu ihren Füßen doch!
     </notes>
 </head>
 <body>
+<poetry>
 Er war – und wie bewegungslos
 Nach letztem Hauche-Seufzer
 Die Hülle lag, uneingedenk,
@@ -2907,8 +2996,9 @@ Der Gott, der niederdrückt und hebt,
 Der Leiden fügt und Tröstung auch,
 Auf der verlaßnen Lagerstatt
 Ihm ja zur Seite sich fügte.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

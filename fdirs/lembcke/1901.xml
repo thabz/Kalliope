@@ -15,13 +15,14 @@
 </workhead>
 <workbody>
 
-<prose id="lembcke2019062901">
+<text id="lembcke2019062901">
 <head>
     <title>Indledning</title>
     <source pages="9-25"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 I en bekendt Sang af Edv. Lembcke, <a poem="lembcke2019062927"><w>For Sønderjylland</w></a>, sammenlignes de to Folkestammers Kamp om dette Land med to Bejleres Kappestrid om den samme Brud. Den ene, hedder det, kom i Rigdommens og Magiens Glans; »den anden rakte Haanden jævnt og stille og havde ikke mange Ord at spilde«. Saaledes som Digteren her har skildret det Folk, han tilhørte, var han selv.  Og hvis ikke blot den kønne <a poem="lembcke2019062921"><w>Sang om Vort Modersmaal</w></a>, men ogsaa dens Forfatter vil huskes endnu lang Tid i Danmark, er det saaledes: som en jævn Mand, der har givet en dyb Følelse et stille Udtryk, og som en sparsom Forfatter, der »ikke havde mange Ord at spilde«. Hans digteriske Livsgerning er foruden det store Oversættelsesarbejde (især af Shakespeare og Byron) et lille Bind Digte og Sange, hvoraf der i nærværende Udgave optages det meste.
 
 ---
@@ -66,8 +67,9 @@ Thi -
         <small>men hun er saa ung, og saa yndig ser hun ud.</small>
 
 <right>VILH. ANDERSEN</right>
-</body>
 </prose>
+</body>
+</text>
 
 <section>
 <head>
@@ -75,7 +77,7 @@ Thi -
 </head>
 <content>
 
-<poem id="lembcke2019062902" variant="lembcke2017121203">
+<text id="lembcke2019062902" variant="lembcke2017121203">
 <head>
     <title>Ungdomsmod</title>
     <subtitle>(til en ven paa hans fødselsdag nytaarsaften)</subtitle>
@@ -87,6 +89,7 @@ Thi -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hil dig, Ven, i det fjerne!
 jeg synger for dig en Nytaarssang,
 mens de svundne Tiders blegnende Stjerne
@@ -143,10 +146,11 @@ did vi bjerge vor bedste Skat;
 lad saa kun Vraget paa Bølgerne gynge! -
 Men en Havfru tit i maanelys Nat
 vor dristige Fart skal besynge!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062903" variant="lembcke2017121202">
+<text id="lembcke2019062903" variant="lembcke2017121202">
 <head>
     <title>Vagabundus</title>
     <firstline>Jorden alt sover</firstline>
@@ -157,6 +161,7 @@ vor dristige Fart skal besynge!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jorden alt sover;
 Stjerners tavse Vrimmel
 skynder sig over
@@ -220,10 +225,11 @@ dulme skal en Morgen.
 Da, medens Nattens
 Gøglesyner svinde,
 Hjemmet vi tinde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062904" variant="lembcke2017121205">
+<text id="lembcke2019062904" variant="lembcke2017121205">
 <head>
     <title>Sværmeren</title>
     <firstline>Kommer Brødre! se, Natten blinker</firstline>
@@ -234,6 +240,7 @@ Hjemmet vi tinde.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kommer Brødre! se, Natten blinker;
 Dagens tunge Bekymring dør;
 se, vor Dronning til Festen vinker
@@ -298,10 +305,11 @@ Brødre, jubler og Skrækken dølger!
 min Valkyrie! kom, jeg følger;
 styr min Baad paa de dunkle Bølger!
 Se, jeg skælver ej!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062905" variant="lembcke2017121206">
+<text id="lembcke2019062905" variant="lembcke2017121206">
 <head>
     <title>Klintedronningen</title>
     <firstline>Dronningen staar paa den høje Tind</firstline>
@@ -312,6 +320,7 @@ Se, jeg skælver ej!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Læsemaader. »Kronen paa Ferieglæderne (i Troels Smiths Hjem
 i Stege) var Udflugterne til Klinten. Jeg har set Klinten til forskellige
 Tider, men en klar Sommerdag er dog det, der bedst
@@ -413,10 +422,11 @@ Du rejse din Bølge med Larm og Gny;
 jeg bliver dog slet ikke bange:
 i Morgen stemmer du Harpen paa ny
 til Elskovs sødeste Sange!«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062906" variant="lembcke2017121209">
+<text id="lembcke2019062906" variant="lembcke2017121209">
 <head>
     <title>Latona</title>
     <firstline>Og hun sad paa Strandens Stene</firstline>
@@ -427,6 +437,7 @@ til Elskovs sødeste Sange!«
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Og hun sad paa Strandens Stene;
 Natten var saa lys og varm;
 Bølgen steg og sank med Sukke
@@ -489,10 +500,11 @@ gennem Ætren til dig svømme
 som en Blomsterduft i Vang,
 eller strømme
 i din Sjæl som Fuglens Sang!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062907" variant="lembcke2017121207">
+<text id="lembcke2019062907" variant="lembcke2017121207">
 <head>
     <title>Caspar Hauser</title>
     <firstline>Gaspar Hauser stod under Nathimlens Blaa</firstline>
@@ -503,6 +515,7 @@ i din Sjæl som Fuglens Sang!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Gaspar Hauser stod under Nathimlens Blaa;
 hel sælsomt var han til Sinde;
 det var første Gang, han Guds Himmel saa
@@ -582,10 +595,11 @@ Det tramper i Jord; det plasker i Siv;
 det skingrer fra Løv og Grene!
 O, skjul mig! jeg gruer for alt det Liv!
 jeg troede, jeg leved alene!«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062908" variant="lembcke2017121208">
+<text id="lembcke2019062908" variant="lembcke2017121208">
 <head>
     <title>Samson</title>
     <firstline>Hvad er det for Raab og Trængsel</firstline>
@@ -596,6 +610,7 @@ jeg troede, jeg leved alene!«
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvad er det for Raab og Trængsel,
 hvad Larm i Filisternes Lejr?
 det skingrer ned i mit Fængsel;
@@ -680,10 +695,11 @@ Mig tykkes, at Mulmet brister;
 det lysner af Nattens Skød!
 Nu er det forbi, Filister!
 Jeg knuser jer i min Død!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062909" variant="lembcke2017121201">
+<text id="lembcke2019062909" variant="lembcke2017121201">
 <head>
     <title>Koncert for alle Instrumenter</title>
     <firstline>Stille, stille!</firstline>
@@ -694,6 +710,7 @@ Jeg knuser jer i min Død!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><sc>Symfoni</sc></center></nonum>
     Stille, stille!
 Ti, du forvirrede, vilde,
@@ -1291,10 +1308,11 @@ Ræk mig Haand, min Ven, og tag mig med!
 Der var Sandhed i vort Hjertes Drømme;
 derfor skal vi over Dødens Strømme
 gaa med Sejr til Frihed og til Fred.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062910" variant="lembcke2017121214">
+<text id="lembcke2019062910" variant="lembcke2017121214">
 <head>
     <title>Ved et Studenterjubilæum</title>
     <firstline>O, hvilke Dage staa frem for min Tanke!</firstline>
@@ -1305,6 +1323,7 @@ gaa med Sejr til Frihed og til Fred.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O, hvilke Dage staa frem for min Tanke!
 fem og tyve Aar deres Glans ej har slukt;
 Haabet oplod sine Skyslotte blanke;
@@ -1358,8 +1377,9 @@ Livet er Alvor og Striden er haard:
 Blendværkets glimrende Boble maa briste;
 men, hvad vi elsked i Ungdommens Aar,
 blive vi tro til det sidste!
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Ungdomsdigte -->
@@ -1370,7 +1390,7 @@ blive vi tro til det sidste!
 </head>
 <content>
 
-<poem id="lembcke2019062911">
+<text id="lembcke2019062911">
 <head>
     <title>Drømmen</title>
     <firstline>Natten gik over Himlen</firstline>
@@ -1381,6 +1401,7 @@ blive vi tro til det sidste!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Natten gik over Himlen;
 min Taare randt saa tyst:
 Drømmen kom til mit Leje
@@ -1430,10 +1451,11 @@ Natten var forsvunden
 og Stjernen slukket ud -
 men alle gode Drømme
 de komme vist fra Gud.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062912">
+<text id="lembcke2019062912">
 <head>
     <title>Tilstaelsen</title>
     <firstline>Vi sad paa Vognen sammen</firstline>
@@ -1444,6 +1466,7 @@ de komme vist fra Gud.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vi sad paa Vognen sammen
 og veksled Ord og Blikke -
 med Huen over Øret
@@ -1503,10 +1526,11 @@ Da smilede den elskte
 og sænked sine Blikke,
 mens rødmende hun hvisked:
 »Min Ven! jeg - slumred ikke!«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062913" variant="lembcke2017121210">
+<text id="lembcke2019062913" variant="lembcke2017121210">
 <head>
     <title>I Baaden</title>
     <firstline>Natten ruger stum og mørk</firstline>
@@ -1517,6 +1541,7 @@ mens rødmende hun hvisked:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Natten ruger stum og mørk;
 sorgfuldt Bølgen sukker;
 paa de skumle Vandes Ørk
@@ -1561,10 +1586,11 @@ Skønne Liv, du var saa kort!
 svandt du alt bag Taagen ? -
 Bort, I vilde Drømme bort! -
 Ak, naar blir jeg vaagen?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062914" variant="lembcke2017121211">
+<text id="lembcke2019062914" variant="lembcke2017121211">
 <head>
     <title>Sommerhaab</title>
     <firstline>Til Sommer, til Sommer!</firstline>
@@ -1575,6 +1601,7 @@ Ak, naar blir jeg vaagen?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Til Sommer, til Sommer!
 naar Trækfuglen kommer
 og søger sin Rede og kender sit Træ,
@@ -1654,10 +1681,11 @@ Min Rose, jeg kommer,
 jeg flyver i din aabne Favn;
 der er mit Hjertes Sommer!
 Der er min Længsels Havn!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062915">
+<text id="lembcke2019062915">
 <head>
     <title>Til min Kone 1848</title>
     <subtitle>(Med en Dannebrogsrose)</subtitle>
@@ -1672,6 +1700,7 @@ Der er min Længsels Havn!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vældige Tegn nu ses under Sky;
 Guds Kræfter sig aabenbare;
 det er, som Tiden vil fødes paa ny
@@ -1706,10 +1735,11 @@ Stands din Taare og tving din Skræk,
 min frygtende Veninde!
 Herren skrev jo med Flammetræk:
 »Ved dette Tegn skal du vinde!«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062916" variant="lembcke2017121231">
+<text id="lembcke2019062916" variant="lembcke2017121231">
 <head>
     <title>For Kvinden</title>
     <firstline>Medens al vor Glans fra fordums Dage</firstline>
@@ -1723,6 +1753,7 @@ Herren skrev jo med Flammetræk:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Medens al vor Glans fra fordums Dage
 ligger skjult af Sorg og Skam og Nød,
 mens det sidste Haab, vi har tilbage,
@@ -1758,10 +1789,11 @@ Og naar atter Danmarks Stjerne blinker,
 og naar Dansken atter løfter Sværd,
 bliver hun Valkyrien, der vinker
 Danmarks Mænd igen til Heltefærd.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062917">
+<text id="lembcke2019062917">
 <head>
     <title>Til min Hustru</title>
     <toctitle>Til min Hustru paa Sølvbryllupsdagen</toctitle>
@@ -1777,6 +1809,7 @@ Danmarks Mænd igen til Heltefærd.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg ser dig for Øje, som om det var i Gaar,
 med Hosen ved dit Bryst og med Myrten i dit Haar,
 i Slørets Folder hyllet, en rødmende Brud,
@@ -1811,10 +1844,11 @@ Og kommer der en Vinter og hvidner vort Haar,
 skal Hjertet dog gemme sin lyse, friske Vaar,
 og altid skal du være min søde lille Brud,
 for du er saa ung, og du ser saa yndig ud.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062918">
+<text id="lembcke2019062918">
 <head>
     <title>Hvile i Skoven</title>
     <firstline>Læg du kun dit Hoved ned</firstline>
@@ -1825,6 +1859,7 @@ for du er saa ung, og du ser saa yndig ud.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Læg du kun dit Hoved ned,
 luk de trætte Øjenlaage!
 her er Ly og her er Fred,
@@ -1854,10 +1889,11 @@ Milde Drømme i dit Blund
 skal med Trøst forbi dig drage,
 lokke om din blege Mund
 Smilet frem fra gamle Dage.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062919">
+<text id="lembcke2019062919">
 <head>
     <title>Mit Hjem</title>
     <firstline>Huset var lavt, og Taget var Straa</firstline>
@@ -1868,6 +1904,7 @@ Smilet frem fra gamle Dage.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Huset var lavt, og Taget var Straa;
 men Roser groede derved,
 og Storken bygged sin Rede der paa,
@@ -1892,10 +1929,11 @@ Men Storken er fløjet, og Hunden er skudt,
 og Huset i Fjendevold;
 og Livets fejreste Blomst er brudt;
 thi Hun ligger bleg og kold.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062920">
+<text id="lembcke2019062920">
 <head>
     <title>I Ørkenen</title>
     <firstline>Ørkenen breder sig nøgen og graa</firstline>
@@ -1906,6 +1944,7 @@ thi Hun ligger bleg og kold.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ørkenen breder sig nøgen og graa;
 der spirer ej Blomst, der grønnes ej Straa,
 
@@ -1941,8 +1980,9 @@ mildt skinne med Haabets Stjernelys,
 
 og lede mig gennem Gravens Nat
 og vise mig Vej til min tabte Skat.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Kærlighedsdigte -->
@@ -1953,7 +1993,7 @@ og vise mig Vej til min tabte Skat.
 </head>
 <content>
 
-<poem id="lembcke2019062921" variant="lembcke2001122801">
+<text id="lembcke2019062921" variant="lembcke2001122801">
 <head>
     <title>Vort Modersmaal</title>
     <firstline>Vort Modersmaal er dejligt; det har saa mild en Klang</firstline>
@@ -1964,6 +2004,7 @@ og vise mig Vej til min tabte Skat.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vort Modersmaal er dejligt; det har saa mild en Klang;
 hvormed skal jeg ligne det og prise det i Sang?
 En højbaaren Jomfru, en ædel Kongebrud,
@@ -1998,10 +2039,11 @@ Og Aarene rulle og skiftes om paa Jord,
 og vore Navne glemmes som Sne, der faldt i Fjor,
 og Slægt efter Slægt segner hen paa Nornens Bud;
 men hun er saa ung, og saa yndig ser hun ud!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062922" variant="lembcke1999100501">
+<text id="lembcke2019062922" variant="lembcke1999100501">
 <head>
     <title>For Sønderjylland</title>
     <firstline>Du skønne Land med Dal og Bakker fagre</firstline>
@@ -2012,6 +2054,7 @@ men hun er saa ung, og saa yndig ser hun ud!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du skønne Land med Dal og Bakker fagre,
 med grønne Enge og med gyldne Agre,
 med Kløfterne, hvor Bækken
@@ -2061,10 +2104,11 @@ er Plads til Tredjemand.
 Før hun skal rives fra hans Side,
 end en Dyst tør vel Dansken ride,
 end en Dyst!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062923" variant="lembcke2017121218">
+<text id="lembcke2019062923" variant="lembcke2017121218">
 <head>
     <title>Nis Lorentzen</title>
     <firstline>Lad ham hvile! han er træt</firstline>
@@ -2075,6 +2119,7 @@ end en Dyst!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lad ham hvile! han er træt;
 lad den gamle Stridsmand blunde!
 Han kan hvile sig med Ret;
@@ -2121,10 +2166,11 @@ Han var din, mens Hjertet slog,
 han har værget for din Ære.
 Derfor i din Mindebog
 skriv ham ind blandt dine kære!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062924" variant="lembcke2017121219">
+<text id="lembcke2019062924" variant="lembcke2017121219">
 <head>
     <title>Danmarks Krone</title>
     <firstline>Kongen raader for Danmarks Rige; han bærer Kronen af Guld</firstline>
@@ -2135,6 +2181,7 @@ skriv ham ind blandt dine kære!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kongen raader for Danmarks Rige; han bærer Kronen af Guld;
 hver ærlig Mand i Danmark er Kongen tro og huld.
 Den holdt i tusind Aar; saa stolt og fri er Dannemarks Krone.
@@ -2162,10 +2209,11 @@ Den holdt i tusind Aar; saa stolt og fri er Dannemarks Krone.
 Gud sende Kongen mange Dage og Held til al hans Færd!
 Gud lægge sit Raad i Kongens Raad og Sejer i Kongens Sværd!
 Den holdt i tusind Aar; saa stolt og fri er Dannemarks Krone.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062925" variant="lembcke2017121222">
+<text id="lembcke2019062925" variant="lembcke2017121222">
 <head>
     <title>Danmarks Sorg</title>
     <firstline>Der ruger en Sorg paa Folket; det lytter ej paa Trøst</firstline>
@@ -2177,6 +2225,7 @@ Den holdt i tusind Aar; saa stolt og fri er Dannemarks Krone.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der ruger en Sorg paa Folket; det lytter ej paa Trøst;
 Det er, ret som Hjertet var revet af Danmarks Bryst.
 Rygtet fløj i Mørket: Kong Frederik er død!
@@ -2211,10 +2260,11 @@ Staa fast, staa fast, I danske Mænd; thi viger I et Fjed,
 da faar den døde Konge i Graven ikke Fred;
 da kommer han paa sin hvide Hest, da klinger hans stærke Røst;
 da kalder han Ryes Brigade fra Gravene til Dyst!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062926" variant="lembcke2017121223">
+<text id="lembcke2019062926" variant="lembcke2017121223">
 <head>
     <title>Kongens Hjemfart</title>
     <firstline>Mens den sidste Hilsen drøner tungt fra Ø til Ø</firstline>
@@ -2225,6 +2275,7 @@ da kalder han Ryes Brigade fra Gravene til Dyst!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 i Stil og Versemaal inspireret af Hauchs <a poem="hauch2019010408"><w>Polsk Fædrelandssang</w></a>.
 
 Mens den sidste Hilsen drøner tungt fra Ø til Ø,
@@ -2251,10 +2302,11 @@ Bær ham sagte, bær ham varligt; lad fra Kyst til Kyst
 dine Bølger dæmpet klage som en Havfrurøst!
 syng om Danmarks gamle Dage, Mindets Herlighed!
 syng om ham, der tog i Graven Folkets Hjerter med!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062927" variant="lembcke2017121240">
+<text id="lembcke2019062927" variant="lembcke2017121240">
 <head>
     <title>Fra Sønderjylland</title>
     <firstline>Vinteren ruger saa mørk og lang</firstline>
@@ -2265,6 +2317,7 @@ syng om ham, der tog i Graven Folkets Hjerter med!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vinteren ruger saa mørk og lang,
 saa stum som et Lig;
 jeg hører ej anden Fuglesang
@@ -2334,10 +2387,11 @@ Maaske, naar Bøgen i Løvspring staar
 i Majsols Glans,
 er glemt din Vinter og grøn din Vaar
 med Sejrens Krans!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062928" variant="lembcke2017121227">
+<text id="lembcke2019062928" variant="lembcke2017121227">
 <head>
     <title>Den 6te Oktober 1864</title>
     <firstline>Et Aar er det siden! et eneste Aar</firstline>
@@ -2352,6 +2406,7 @@ med Sejrens Krans!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Et Aar er det siden! et eneste Aar,
 forsvundet som Bølgeskummet!
 men ingen fatter og ingen forstaar,
@@ -2441,10 +2496,11 @@ jeg ser dig med Haand paa Sværd til Strid,
 
 indtil du faar vadsket den Plet af dit Skjold
 og frelst dine Børn af Fjendevold!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062929" variant="lembcke2002032201">
+<text id="lembcke2019062929" variant="lembcke2002032201">
 <head>
     <title>For Danmark</title>
     <firstline>Blev nu til Spot dine tusindaars Minder?</firstline>
@@ -2455,6 +2511,7 @@ og frelst dine Børn af Fjendevold!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Blev nu til Spot dine tusindaars Minder?
 er dit Sværd nu brustent og plettet dit Skjold?
 blev dine Mænd nu til klagende Kvinder?
@@ -2499,10 +2556,11 @@ Da skal dit ældgamle Banner paa ny
 vinke til Sejer de faa mod de mange,
 og da skal atter blandt Sværdenes Gny
 runge de frejdige Sange.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062930" variant="lembcke2017121229">
+<text id="lembcke2019062930" variant="lembcke2017121229">
 <head>
     <title>Aarskiftet 1865</title>
     <firstline>Tiden ruller sit knusende Hjul</firstline>
@@ -2513,6 +2571,7 @@ runge de frejdige Sange.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tiden ruller sit knusende Hjul;
 Aaret vil ty til Nattens Skjul.
 
@@ -2578,10 +2637,11 @@ og sætter alt paa det sidste Kast:
 
 da slaa kun trøstig din Lid dertil:
 Det gaar dog til sidst, som Gud Herren vil!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062931" variant="lembcke2017121230">
+<text id="lembcke2019062931" variant="lembcke2017121230">
 <head>
     <title>Nordisk Højtid 1865</title>
     <firstline>Natten skrider, hyllet i Taage</firstline>
@@ -2592,6 +2652,7 @@ Det gaar dog til sidst, som Gud Herren vil!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Natten skrider, hyllet i Taage;
 tro paa Skansen Vagterne vaage;
 Nordens Stjerne dølges i Mulmet,
@@ -2636,10 +2697,11 @@ er der da fra Fædrenes Dage
 Mod og Marv i Folket tilbage,
 da skal Nordens funklende Stjerne
 varsle klart Forjættelsens Stund.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062932" variant="lembcke2017121235">
+<text id="lembcke2019062932" variant="lembcke2017121235">
 <head>
     <title>I Skoven</title>
     <firstline>Solens Straale kom ind med Bud</firstline>
@@ -2653,6 +2715,7 @@ varsle klart Forjættelsens Stund.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Solens Straale kom ind med Bud,
 hvisked med lokkende Stemme:
 »Sid ej hjemme,
@@ -2682,10 +2745,11 @@ o, gid din Lykke med Vaaren maa gro!
 i de svale
 Bøgesale
 Sang og Glæde bo!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062933" variant="lembcke2017121236">
+<text id="lembcke2019062933" variant="lembcke2017121236">
 <head>
     <title>Til Sønderjylland</title>
     <firstline>Vor Længsels Land, vor Smertes Land</firstline>
@@ -2699,6 +2763,7 @@ Sang og Glæde bo!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vor Længsels Land, vor Smertes Land,
 du, stolte Minders Bo!
 her kun ved Beltets smalle Rand
@@ -2740,10 +2805,11 @@ med Lynets Glimt, Orkanens Stød,
 med Sejer eller Hædersdød!
 og lad blandt stolte Tordners Brag
 os hilse Danmarks Flag!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lembcke2019062934" variant="lembcke2017121238">
+<text id="lembcke2019062934" variant="lembcke2017121238">
 <head>
     <title>Fredløs</title>
     <firstline>Du grønklædte Dal midt i Ørkenens Sand</firstline>
@@ -2754,6 +2820,7 @@ os hilse Danmarks Flag!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du grønklædte Dal midt i Ørkenens Sand
 med kølige Kildevæld!
 du Fristed, der hused den fredløse Mand,
@@ -2768,8 +2835,9 @@ Han vender sin Ganger; saa rider han ud
 ad Ørkenens vildsomme Sti.
 Der farer paa Himlen et Stjerneskud.
 Forbi, forbi, forbil
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Fædrelandsdigte -->

@@ -435,14 +435,12 @@ Naar Du blot er ene.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote left="3rem" layout="small">
-<poetry>
+<quote margin-left="3rem" font-size="small">
 Kan Musens stille Harmonie
 Dig, Elskte! haabe mildt at røre?
 Vil Du dens kjælne Sværmerie
 Med sympathetisk Vellyst høre?
 <right><w>Baggesen</w></right>
-</poetry>
 </quote>
 
 <poetry>
@@ -1445,11 +1443,9 @@ Christus selv i Favnen slutter.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote left="30%" small>
-<poetry>
+<quote margin-left="30%" font-size="small">
 Unschuld! deine schneeschimmernde Seide,
 Siehe! die bleibet, wann trümmert das All.
-<poetry>
 </quote>
 <poetry>
 Farvel, Du lykkelige Aand!
@@ -1486,7 +1482,6 @@ Af Christi store Juletræ
 Fik Du den bedste Gave,
 Christ give, vi maae finde Læ
 Engang i samme Have!
-</poetry>
 </poetry>
 </body>
 </text>
@@ -3088,7 +3083,7 @@ Her Hjertet maa betale.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote small left="4rem">
+<quote margin-left="4rem" font-size="small">
 Der Geist strebt himmelan, am Arm der Kunst,
 Das Herz will anfern auf der Mutter Erde.
 <right><w>Ernst von Houwald.</w></right>
@@ -4194,13 +4189,13 @@ Iblandt de høie Chor:
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
-<quote left="3rem" layout="small">
-<right>Multis ille bonis flebilis occidit,
-<right>Nulli flebilior, quam mihi.
+<quote margin-left="3rem" font-size="small">
+Multis ille bonis flebilis occidit,
+Nulli flebilior, quam mihi.
 <right><i>Hor.</i></right>
 </quote>
 
+<poetry>
 Kjender Du, Dana! dit Tab? Ak, veed Du, Hvem Du har eiet?
 Nei! Du begriber det ei, Hvad Du mistede nys.
 Naar Erobreren gaaer med Laurbærkrandsen om Isse,

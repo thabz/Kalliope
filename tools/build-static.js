@@ -38,6 +38,7 @@ const {
   getChildren,
   getChildByTagName,
   getChildrenByTagName,
+  getChildrenByTagNames,
   getElementByTagName,
   getElementsByTagNames,
   safeGetInnerXML,
@@ -347,11 +348,6 @@ const handle_text = async (
     toc = build_section_toc(content);
   } else {
     // prose or poem
-    const rawBody = safeGetInnerXML(body);
-    // TODO: Split blocks from body and parse each separate.
-    // Return blocks: [{type: ..., lines: ...}]
-    const has_footnotes =
-      rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
     const body = getChildByTagName(text, 'body');
     const blocks = getChildrenByTagNames(body, [
       'poetry',
@@ -360,6 +356,9 @@ const handle_text = async (
     ]).map((block) => {
       const type = tagName(block);
       const rawBlock = safeGetInnerXML(block);
+      has_footnotes |=
+        rawBlock.indexOf('<footnote') !== -1 ||
+        rawBlock.indexOf('<note') !== -1;
       const fontSize = safeGetAttr(block, 'font-size');
       const marginLeft = safeGetAttr(block, 'margin-left');
       const marginRight = safeGetAttr(block, 'margin-right');
