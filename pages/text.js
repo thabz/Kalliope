@@ -497,6 +497,15 @@ const TextPage = (props: TextComponentProps) => {
       }, [])
   );
 
+  // Titlen skal indentes hvis første ikke-quote block indeholder numre.
+  const firstNoneQuoteBlock = text.blocks.find((b) => b.type !== 'quote');
+  const shouldIndentTitle =
+    firstNoneQuoteBlock != null &&
+    firstNoneQuoteBlock.lines.find((l) => {
+      const lineOptions = l.length > 1 ? l[1] : {};
+      return lineOptions.displayNum != null || lineOptions.margin != null;
+    }) != null;
+
   return (
     <Page
       headTitle={ogTitle}
@@ -516,7 +525,11 @@ const TextPage = (props: TextComponentProps) => {
             <article style={{ position: 'relative' }}>
               <Bladrer left target={prev} />
               <Bladrer right target={next} />
-              <div className="text-content">
+              <div
+                className="text-content"
+                style={{
+                  marginLeft: shouldIndentTitle ? '1.5em' : 0,
+                }}>
                 <TextHeading text={text} />
               </div>
               <div>{body}</div>
