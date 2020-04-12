@@ -33,14 +33,12 @@ const create_poet_square_thumb = (poetId, square_path) => {
 let _all_poet_ids = null;
 const all_poet_ids = () => {
   if (!_all_poet_ids) {
-    _all_poet_ids = fs
-      .readdirSync('fdirs')
-      .filter((p) => p.indexOf('.') === -1);
+    _all_poet_ids = fs.readdirSync('fdirs').filter(p => p.indexOf('.') === -1);
   }
   return _all_poet_ids;
 };
 
-const build_poets_json = (collected) => {
+const build_poets_first_pass = collected => {
   // Returns {has_poems: bool, has_prose: bool,
   //  has_texts: bool, has_works: bool}
   const hasTexts = (poetId, workIds) => {
@@ -76,7 +74,7 @@ const build_poets_json = (collected) => {
     : new Map(loadCachedJSON('collected.poets') || []);
   const force_reload = collected_poets.size === 0;
   let found_changes = false;
-  all_poet_ids().forEach((id) => {
+  all_poet_ids().forEach(id => {
     const infoFilename = `fdirs/${id}/info.xml`;
     if (!fs.existsSync(infoFilename)) {
       throw new Error(`Missing info.xml in fdirs/${poetId}.`);
@@ -112,8 +110,8 @@ const build_poets_json = (collected) => {
     if (has_portraits) {
       const portraitsDoc = loadXMLDoc(`fdirs/${id}/portraits.xml`);
       const squares = getElementsByTagName(portraitsDoc, 'picture')
-        .map((p) => safeGetAttr(p, 'square-src'))
-        .filter((s) => s != null);
+        .map(p => safeGetAttr(p, 'square-src'))
+        .filter(s => s != null);
       if (squares.length > 0) {
         square_portrait = create_poet_square_thumb(id, squares[0]);
       }
@@ -122,13 +120,6 @@ const build_poets_json = (collected) => {
     if (has_portraits && !has_square_portrait) {
       throw `${id} har portræt men ikke square-portrait`;
     }
-
-    const mentions = collected.person_or_keyword_refs.get(id);
-    const has_mentions =
-      (mentions != null &&
-        (mentions.mention.length > 0 || mentions.translation.length > 0)) ||
-      fileExists(`fdirs/${id}/bibliography-primary.xml`) ||
-      fileExists(`fdirs/${id}/bibliography-secondary.xml`);
 
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');
@@ -191,7 +182,6 @@ const build_poets_json = (collected) => {
       period,
       has_portraits,
       has_square_portrait,
-      has_mentions,
       has_works: has.has_works,
       has_poems: has.has_poems,
       has_prose: has.has_prose,
@@ -206,7 +196,6 @@ const build_poets_json = (collected) => {
           period.born.date !== '?' &&
           period.dead.date !== '?'),
     };
-    writeJSON(`static/api/${poet.id}.json`, poet);
     collected_poets.set(id, poet);
   });
   if (found_changes) {
@@ -215,10 +204,32 @@ const build_poets_json = (collected) => {
   return collected_poets;
 };
 
-const build_poets_by_country_json = (collected) => {
+const build_poets_json = collected => {
+  let found_changes = false;
+  all_poet_ids().forEach(id => {
+    const poet = collected.poets.get(id);
+
+    const mentions = collected.person_or_keyword_refs.get(id);
+    const has_mentions =
+      (mentions != null &&
+        (mentions.mention.length > 0 || mentions.translation.length > 0)) ||
+      fileExists(`fdirs/${id}/bibliography-primary.xml`) ||
+      fileExists(`fdirs/${id}/bibliography-secondary.xml`);
+    if (has_mentions !== poet.has_mentions) {
+      poet.has_mentions = has_mentions;
+      writeJSON(`static/api/${poet.id}.json`, poet);
+      collected.poets.set(id, poet);
+    }
+  });
+  if (found_changes) {
+    writeCachedJSON('collected.poets', Array.from(collected.poets));
+  }
+};
+
+const build_poets_by_country_json = collected => {
   let poetsByCountry = new Map();
   let hasChangesByCountry = new Map();
-  collected.poets.forEach((poet) => {
+  collected.poets.forEach(poet => {
     let list = poetsByCountry.get(poet.country) || [];
     list.push(poet);
     poetsByCountry.set(poet.country, list);
@@ -237,5 +248,6 @@ const build_poets_by_country_json = (collected) => {
 module.exports = {
   all_poet_ids,
   build_poets_json,
+  build_poets_first_pass,
   build_poets_by_country_json,
 };
