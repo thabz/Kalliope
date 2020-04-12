@@ -13,10 +13,10 @@ const {
 const { isFileModified } = require('../libs/caching.js');
 const elasticSearchClient = require('../libs/elasticsearch-client.js');
 
-const update_elasticsearch = (collected) => {
+const update_elasticsearch = collected => {
   const inner_update_elasticsearch = () => {
     collected.poets.forEach((poet, poetId) => {
-      collected.workids.get(poetId).forEach((workId) => {
+      collected.workids.get(poetId).forEach(workId => {
         const filename = `fdirs/${poetId}/${workId}.xml`;
         if (!isFileModified(filename)) {
           return;
@@ -51,7 +51,7 @@ const update_elasticsearch = (collected) => {
         if (workBody == null) {
           return;
         }
-        getChildrenByTagNames(workBody, ['text', 'section']).forEach((text) => {
+        getChildrenByTagNames(workBody, ['text', 'section']).forEach(text => {
           const textId = safeGetAttr(text, 'id');
           if (tagName(text) === 'section' && textId == null) {
             return;
@@ -66,7 +66,7 @@ const update_elasticsearch = (collected) => {
           let subtitles = null;
           const subtitle = getChildByTagName(head, 'subtitle');
           if (subtitle && getChildrenByTagName(subtitle, 'line').length > 0) {
-            subtitles = getChildrenByTagName(subtitle, 'line').map((s) =>
+            subtitles = getChildrenByTagName(subtitle, 'line').map(s =>
               replaceDashes(safeGetInnerXML(s))
             );
           } else if (subtitle) {
@@ -91,9 +91,9 @@ const update_elasticsearch = (collected) => {
                 .replace(/<footnote>.*?<\/footnote>/g, '')
                 .replace(/<.*?>/g, ' '),
               collected,
-              getChildrenByTagName(body, 'poetry').length > 0
+              false
             )
-              .map((line) => line[0])
+              .map(line => line[0])
               .join(' ')
               .replace(/<.*?>/g, ' '),
           };
@@ -117,7 +117,7 @@ const update_elasticsearch = (collected) => {
         console.log(error);
       }
     })
-    .catch((error) => {
+    .catch(error => {
       console.log('Elasticsearch server not found on localhost:9200.');
       //console.log(error);
     });
