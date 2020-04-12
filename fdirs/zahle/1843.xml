@@ -435,13 +435,16 @@ Naar Du blot er ene.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
-<nonum><small><right>Kan Musens stille Harmonie</right></small></nonum>
-<nonum><small><right>Dig, Elskte! haabe mildt at røre?</right></small></nonum>
-<nonum><small><right>Vil Du dens kjælne Sværmerie</right></small></nonum>
-<nonum><small><right>Med sympathetisk Vellyst høre?</right></small></nonum>
-<nonum><small><right><w>Baggesen</w></right></small></nonum>
+<quote margin-left="4rem" font-size="small">
+Kan Musens stille Harmonie
+Dig, Elskte! haabe mildt at røre?
+Vil Du dens kjælne Sværmerie
+Med sympathetisk Vellyst høre?
+<right><w>Baggesen</w></right>
+---
+</quote>
 
+<poetry>
 Den er forhaanden, din Fødselsdag;
 Den jeg indvier til Glæde,
 Den jeg erindrer med Harpeslag
@@ -1441,10 +1444,14 @@ Christus selv i Favnen slutter.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
-<nonum><small><right>Unschuld! deine schneeschimmernde Seide,</right></small></nonum>
-<nonum><small><right>Siehe! die bleibet, wann trümmert das All.</right></small></nonum>
+<quote margin-left="30%" font-size="small">
+Unschuld! deine schneeschimmernde Seide,
+Siehe! die bleibet, wann trümmert das All.
 
+---
+
+</quote>
+<poetry>
 Farvel, Du lykkelige Aand!
 Du har din Seier vundet —
 I Himlens Hal, i Christi Haand
@@ -3080,11 +3087,12 @@ Her Hjertet maa betale.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<quote margin-left="4rem" font-size="small">
+Der Geist strebt himmelan, am Arm der Kunst,
+Das Herz will anfern auf der Mutter Erde.
+<right><w>Ernst von Houwald.</w></right>
+</quote>
 <poetry>
-<nonum><small><right>Der Geist strebt himmelan, am Arm der Kunst,</right></small></nonum>
-<nonum><small><right>Das Herz will anfern auf der Mutter Erde.</right></small></nonum>
-<nonum><small><right><w>Ernst von Houwald.</w></right></small></nonum>
-
 Som Sangen sig med Digtet huldt forbinder,
 Du trofast knytter Dig til mig;
 Hos mig din Musa Søstermusen finder;
@@ -3890,7 +3898,7 @@ Store Belønner! o, Du signe den ædleste Sjæl!
 </body>
 </text>
 
-<text id="zahle2019052475" skip-index="true">
+<text id="zahle2019052475">
 <head>
     <title>Herlufsholms Skole</title>
     <toctitle>Herlufsholms Skole. En Fortælling</toctitle>
@@ -3948,20 +3956,14 @@ Da Gjæsterne stode i Begreb med at tage Afsked, fortalte Trolle dem i Forbigaae
 
     Herlufs og Birgittes skjønne Forsæt døde ikke som en Rose i sin Knop. Mere og mere nærmede det sig sin Udvikling til fuldendt Virkelighed. Men Fromhed og Klogskab boede tilsammen hos det ædle Ægtepar.  De gik ikke overilet tilværks. At lavere Hensigter kunde søge at nedrive, Hvad de vilde opbygge, det havde de forudseet; og derfor stræbte de at lægge deres Stiftelses Grundstene saa faste, at en fjendtlig Storm ikke letteligen skulde rokke dem. Dette lod sig ikke gjøre i faa Dage eller Maaneder. Først 1565, den 23de Mai, var Alting saaledes beordret og begrundet, at Fundatsen til Skolen kunde underskrives; og nu spildtes ingen Tid; den underskreves strax. Med Glædens lyse Udtryk i sit Øie reiste Herlufs Hustru sig, da hun havde skrevet sit Birgitte Gøye ved Siden af sin Ægtefalles Navn. ,,Det er er saligt Øieblik!'' sagde hun, fast omslyngende Herluf: ,,Nu er jeg Moder, nu er Du Fader!'' Og Glædestaarer trillede over hendes skjønne Kinder. ,,Guds Naade beskjærme denne Borg, hvor vore Sønner skulle boe og bygge!'' bad den ædle Herluf. —
     Endnu stode de i hinandens Arme og sankede deres Blik paa Papiret, hvis Bogstaver, som et unedbrydeligt Gitter, fra nu af skulde indhegne deres Gods til helligt Brug, da i det Samme en Rytter i kongeligt Livree red op i Borggaarden. Strax efter traadte Lakaien ind og leverede Admiralen, idet han ærbødigt bøiede sig for ham og hans Frue, et Brev med Kongens Segl. Herluf Trolle læste:
-
-    ,,Skjøndt I er flyttet noget længere bort fra Vor Trone, end forhen, da I boede paa Hillerødsholm, er I dog slet ikke længere fra Vore Tanker.  — Kong Erik kan endnu ikke være rolig og holde Nabovenskab, ihvorvel I forgangen Aar tog hans Admiraler, og sprængte hans mageløse Orlogsmand i Luften. Vi maae da møde ham paany. Thi er det Vort Bud til Eder, at I, saasnart I har fornummet denne Vor Villie, begiver Eder til Os selv, for at Vi atter kunne levere Eder Vor Flaade at føre til Kamp og Seir — Os og Eder til end yderligere Berømmelse.<!-- TODO: Indryk ovenstående som et citat -->
+</prose>
+<quote margin-left="2rem">
+<wrap>,,Skjøndt I er flyttet noget længere bort fra Vor Trone, end forhen, da I boede paa Hillerødsholm, er I dog slet ikke længere fra Vore Tanker.  — Kong Erik kan endnu ikke være rolig og holde Nabovenskab, ihvorvel I forgangen Aar tog hans Admiraler, og sprængte hans mageløse Orlogsmand i Luften. Vi maae da møde ham paany. Thi er det Vort Bud til Eder, at I, saasnart I har fornummet denne Vor Villie, begiver Eder til Os selv, for at Vi atter kunne levere Eder Vor Flaade at føre til Kamp og Seir — Os og Eder til end yderligere Berømmelse.</wrap>
 <center>Vor Gunst og Bevaagenhed!</center>
 <center>Frederik.''</center>
-
-    ,,Nys førte min Haand Pennen til Guds Ære,''
-sagde Herluf: ,,nu skal den vise, at den ogsaa kan føre
-Sværdet til Kongens og Rigets Værn. Saaledes bør
-det altid være: ,,Først Gud, saa Kongen!'' Men Birgitte
-blegnede ved den nye og pludselige Skilsmisse og sagde
-med sin blide Stemme: ,,Jeg holder ellers saa meget af
-vor gode Konge; men det er dog ikke ret, at han bestandigt
-kalder Eder fra min Side. Af Eder selv forlader
-I mig aldrig.''
+</quote>
+<prose>
+    ,,Nys førte min Haand Pennen til Guds Ære,'' sagde Herluf: ,,nu skal den vise, at den ogsaa kan føre Sværdet til Kongens og Rigets Værn. Saaledes bør det altid være: ,,Først Gud, saa Kongen!'' Men Birgitte blegnede ved den nye og pludselige Skilsmisse og sagde med sin blide Stemme: ,,Jeg holder ellers saa meget af vor gode Konge; men det er dog ikke ret, at han bestandigt kalder Eder fra min Side. Af Eder selv forlader I mig aldrig.''
 
 ---
 
@@ -3974,21 +3976,23 @@ I mig aldrig.''
     Men snart aabnedes hendes Øie for de listige Ranker. Hun modtog et Brev fra Gøye, fuldt af de helligste Forsikkringer om, at han brændte af en Kjærlighed for hende, som han ikke længere kunde fordølge. Selv havde hendes Fromhed og Skjønhed tændt den mægtige Lue; han bad derfor indstændigt om, at hendes Gjenkjærlighed ogsaa maatte give den Næring. Efter en blussende Kjærligheds kraftige Yttringer fremkom nogle temmelig kolde Beregninger over, hvor fordeelagtigt det vilde være, at Herlufsholm og Gunderslevholm rakte hinanden en ægteskabelig Troskabshaand. Gud havde tydeligt nok tilkendegivet sine vise Raad i denne Anledning ved at gjøre Fru Birgitte til Enke og ham til Enkemand. Himlens Vink bør man ikke modstaae!
     Birgitte mærkede nu, hvad det var for en Aand, der talede af Frændebryst. Hendes Svar var hende værdigt, og altsaa af den Beskaffenhed, at den bragte Forbitrrelse og Hævn i fuld Gjæring hos Gøye.
     Nu gik det da, som det hedder i Digterens Sang:
-
-        Nu Marsviin kom og Gjøge
-        I Herlufs Sø og Skov.
+</prose>
+<poetry>
+Nu Marsviin kom og Gjøge
+I Herlufs Sø og Skov.
 
 ---
 
-        Et Rygte gik, at Brevet,
-        Som Godset Skolen gav,
-        Var længst alt borte blevet,
-        Saa den var uden Krav;
-        Da reiste snelt sig Ætten
-        Og fordrev Arven streng,
-        Og skjendte vredt i Retten
-        Paa den latinske Dreng.
-
+Et Rygte gik, at Brevet,
+Som Godset Skolen gav,
+Var længst alt borte blevet,
+Saa den var uden Krav;
+Da reiste snelt sig Ætten
+Og fordrev Arven streng,
+Og skjendte vredt i Retten
+Paa den latinske Dreng.
+</poetry>
+<prose>
     Ja! man begyndte nu aabenbart at ville nedbryde dette fromme Værk, da de lønlige Bestræbelser alle vare strandede. Ole Mauritzen var Stiftelsens Forstander.  For at sikkre Stiftelsen mod de fjendtlige Angreb var det nu, at han fordrede kongelig Laas, det vil sige: den sidste uomstødelige Bekræftelse paa Fundatsen. Men Christopher Gøye og Jørgen Marsvin fremtraadte nu og nedlagde i Retten den Paastand, at Fundatsen, hvad Fru Gøyes Andeel deri angik, skulde erklæres ugyldig.
     En Proces var uundgaaelig. Tinget i Ringsted frifandt Skolen aldeles for Gøyes Tiltale. Men J.  Marsvin havde senere anlagt Sag; og mod ham optraadte Skolens Rector, Magister Hans Mikkelsen. Retten i Nestved frakjendte ogsaa Marsvin Arven, og dømte derhos, at han ingenlunde kunde forhindre den forlangte Laas paa Fundatsen. Nu appelleredes Sagen til Skaane-Landsting.  Her faldt Dommen anderledes ud. Paa Grund af en høist ubetydelig Formalitetsfeil kjendtes for Ret, at Fundatsen, hvad Fru B. Gøyes Andeel angik, var gjort imod Loven, hvorfor Skolens Forstander altsaa ingen Laas kunde erholde paa Mere, end den Deel af Godset, som ifølge Skjødet var Herluf Trolles eget.  Rigsraadet stadfæstede dette, og tildømte samtlige Herluf Trolles Arvinger, at stande J. Marsvin tilrette, hvis han kunde bevise at have lidt nogen Skade ved det Skjøde, Herluf Trolle havde udstedt paa sin Hustrues Gods. Den afgjørende Dag kom. Det var den 20de October 1573, Dommen faldt. Skolen mistede sin halve Eiendom. Redning syntes at være umulig.
     Men, var Herlufsholms Lykkessol gaaet ned i mørke Skyer den 20de October, da steg den atter herlig frem med sejrende Glands allerede den følgende Dag. H.  Mikkelsen mødte i Retten den 21de October og fremlagde foruden de forrige Documenter Birgittes Overdragelsesbrev.  Alt forandrer sig til Stiftelsens Fordeel.  De i Ringsted og Nestved afsagte Domme stadfæstes.  Skolens Forstander faaer kongelig Laas paa Fundatsen, og baade hine ivrige Modstandere, hvis Navne tidt nok her have staaet til velfortjent Skam, og Fru Trolles øvrige Arvinger fradømmes al Ret til nogensomhelst Fordring paa Skolens Gods.
@@ -4001,7 +4005,8 @@ I mig aldrig.''
     Saaledes fødtes Herlufsholms Skole, den eneste Stiftelse i sit Slags, som Danmarks Sletter kan opvise, gjennem en haard Kamp, som alt det Skjønneste og Største i Verden. End staaer dette Fromhedens herlige Mindesmærke, selv blomstrende paa den blomsterrige Slette i en af Sjællands nydeligste Egne. En klar Strøm bølger sig omkring den. Kommer Du didhen, min venlige Læser! og seer Du dette ubeskriveligt deilige Sted mellem Bøgenes og Lindenes Kroner, da vil Du sande med nsig: der staaer et ægte Musernes Tempel. —
     De ædle Stiftere sove nu i Fred i den lyse Kirke bag Herrens Altar. Udhugne i Marmor ligge de selv paa deres Sarkophager. Ved Herlufs Fod ligger en Løve. Let skal forkynde Efterslægten, at i hans Aand forbandt sig det Ædle med det Store. Ved Birgittes Fod ligger en Hund; thi den er Sindbilledet paa Troskab i Liv og Død.
     Til dette korte Omrids af en herlig Stiftelses Fødsel maae endnu knytte sig disse Stropher, som for længe siden bleve til paa Skolebænken:
-
+</prose>
+<poetry>
     Ved Suusaaens Bølge en Kampe staaer
     Med steenbepansret Bryst.
     Der har han staaet femhundred Aar
@@ -4056,7 +4061,7 @@ I mig aldrig.''
     Slettes af Sagas Skrift.
     Imens man kjender hans Fødestavn,
     Mindes skal hans Bedrift.
-</prose>
+</poetry>
 </body>
 </text>
 
@@ -4190,11 +4195,16 @@ Iblandt de høie Chor:
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
-<nonum><small><right>Multis ille bonis flebilis occidit,</right></small></nonum>
-<nonum><small><right>Nulli flebilior, quam mihi.</right></small></nonum>
-<nonum><small><right><i>Hor.</i></right></small></nonum>
+<quote margin-left="3rem" font-size="small">
+Multis ille bonis flebilis occidit,
+Nulli flebilior, quam mihi.
+<right><i>Hor.</i></right>
 
+---
+
+</quote>
+
+<poetry>
 Kjender Du, Dana! dit Tab? Ak, veed Du, Hvem Du har eiet?
 Nei! Du begriber det ei, Hvad Du mistede nys.
 Naar Erobreren gaaer med Laurbærkrandsen om Isse,
