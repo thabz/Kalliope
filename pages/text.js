@@ -57,7 +57,7 @@ const Bladrer = (props: BladrerProps) => {
   if (target == null) {
     return null;
   }
-  const onClick = (e) => {
+  const onClick = e => {
     const url = Links.textURL(lang, target.id);
     Router.pushRoute(url);
     window.scrollTo(0, 0);
@@ -233,7 +233,7 @@ const TextPage = (props: TextComponentProps) => {
   }
 
   const notes: Array<Node> = text.notes
-    .filter((note) => note.type !== 'unknown-original')
+    .filter(note => note.type !== 'unknown-original')
     .map((note, i) => {
       return (
         <Note key={'note' + i} type={note.type}>
@@ -247,8 +247,7 @@ const TextPage = (props: TextComponentProps) => {
 
   text.notes
     .filter(
-      (note) =>
-        note.type === 'unknown-original' && note.unknownOriginalBy != null
+      note => note.type === 'unknown-original' && note.unknownOriginalBy != null
     )
     .map((note, i) => {
       const poet = note.unknownOriginalBy;
@@ -367,7 +366,7 @@ const TextPage = (props: TextComponentProps) => {
 
   let renderedKeywords = null;
   if (text.keywords.length > 0) {
-    const list = text.keywords.map((k) => {
+    const list = text.keywords.map(k => {
       return <KeywordLink keyword={k} lang={lang} key={k.id} />;
     });
     renderedKeywords = <div style={{ marginTop: '30px' }}>{list}</div>;
@@ -489,19 +488,22 @@ const TextPage = (props: TextComponentProps) => {
 
   const ogDescription = OpenGraph.trimmedDescription(
     // Merge blocks
-    text.blocks
-      .filter((b) => b.type !== 'quote')
-      .map((b) => b.lines)
-      .reduce((result, lines) => {
-        return result.concat(lines);
-      }, [])
+    text.blocks == null
+      ? [['']]
+      : text.blocks
+          .filter(b => b.type !== 'quote')
+          .map(b => b.lines)
+          .reduce((result, lines) => {
+            return result.concat(lines);
+          }, [])
   );
 
   // Titlen skal indentes hvis første ikke-quote block indeholder numre.
-  const firstNoneQuoteBlock = text.blocks.find((b) => b.type !== 'quote');
+  const firstNoneQuoteBlock =
+    text.blocks == null ? null : text.blocks.find(b => b.type !== 'quote');
   const shouldIndentTitle =
     firstNoneQuoteBlock != null &&
-    firstNoneQuoteBlock.lines.find((l) => {
+    firstNoneQuoteBlock.lines.find(l => {
       const lineOptions = l.length > 1 ? l[1] : {};
       return lineOptions.displayNum != null || lineOptions.margin != null;
     }) != null;
