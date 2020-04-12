@@ -16,12 +16,12 @@ const {
   tagName,
 } = require('./xml.js');
 
-const build_global_lines_json = (collected) => {
+const build_global_lines_json = collected => {
   safeMkdir('static/api/alltexts');
   let changed_langs = {};
   let found_changes = false;
   collected.workids.forEach((workIds, poetId) => {
-    workIds.forEach((workId) => {
+    workIds.forEach(workId => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(workFilename)) {
         return;
@@ -49,7 +49,7 @@ const build_global_lines_json = (collected) => {
       if (changed_langs[poet.country]) {
         let per_country = collected_lines.get(poet.country) || new Map();
         collected_lines.set(poet.country, per_country);
-        ['titles', 'first'].forEach((linetype) => {
+        ['titles', 'first'].forEach(linetype => {
           let per_linetype = per_country.get(linetype) || new Map();
           per_country.set(linetype, per_linetype);
           let line =
@@ -144,11 +144,11 @@ const build_global_lines_json = (collected) => {
   }
 };
 
-const build_poet_lines_json = (collected) => {
+const build_poet_lines_json = collected => {
   collected.poets.forEach((poet, poetId) => {
     const filenames = collected.workids
       .get(poetId)
-      .map((workId) => `fdirs/${poetId}/${workId}.xml`);
+      .map(workId => `fdirs/${poetId}/${workId}.xml`);
     if (!isFileModified(`fdirs/${poetId}/info.xml`, ...filenames)) {
       return;
     }
@@ -156,7 +156,7 @@ const build_poet_lines_json = (collected) => {
     safeMkdir(`static/api/${poetId}`);
 
     let collectedLines = [];
-    collected.workids.get(poetId).forEach((workId) => {
+    collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(filename)) {
         return;
@@ -166,11 +166,16 @@ const build_poet_lines_json = (collected) => {
         console.log("Couldn't load", filename);
       }
       getElementsByTagNames(doc, ['text', 'section'])
-        .filter((part) => safeGetAttr(part, 'id') != null)
-        .forEach((part) => {
+        .filter(part => safeGetAttr(part, 'id') != null)
+        .forEach(part => {
           const textId = safeGetAttr(part, 'id');
           // Skip digte som ikke er ældste variant
           if (primaryTextVariantId(textId, collected) !== textId) {
+            return;
+          }
+          // Skip tekster markeret med skip-index
+          const skipIndex = safeGetAttr(part, 'skip-index');
+          if (skipIndex != null) {
             return;
           }
 
@@ -214,12 +219,12 @@ const build_poet_lines_json = (collected) => {
       firstlines: {},
       titles: {},
     };
-    collectedLines.forEach((pair) => {
+    collectedLines.forEach(pair => {
       counts.titles[pair.title] = (counts.titles[pair.title] || 0) + 1;
       counts.firstlines[pair.firstline] =
         (counts.firstlines[pair.firstline] || 0) + 1;
     });
-    collectedLines = collectedLines.map((pair) => {
+    collectedLines = collectedLines.map(pair => {
       if (pair.title != null && counts.titles[pair.title] > 1) {
         pair.non_unique_indextitle = true;
       }
