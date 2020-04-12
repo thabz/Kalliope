@@ -437,6 +437,15 @@ const TextPage = (props: TextComponentProps) => {
       </div>
     );
   }
+
+  const ogTitle = _(`{poetName}: »{poemTitle}« fra {workTitle}`, lang, {
+    poetName: poetNameString(poet, false, false),
+    poemTitle: textLinkTitleString(text),
+    workTitle: workTitleString(work),
+  });
+  let ogDescription = '';
+  let shouldIndentTitle = false;
+
   let body = null;
   if (text.text_type === 'section' && text.toc != null) {
     body = <TOC toc={text.toc} lang={lang} indent={1} />;
@@ -478,35 +487,26 @@ const TextPage = (props: TextComponentProps) => {
       );
     });
     body = <div className="text-content">{renderedBlocks}</div>;
+
+    ogDescription = OpenGraph.trimmedDescription(
+      // Merge blocks
+      text.blocks
+        .filter(b => b.type !== 'quote')
+        .map(b => b.lines)
+        .reduce((result, lines) => {
+          return result.concat(lines);
+        }, [])
+    );
+
+    // Titlen skal indentes hvis første ikke-quote block indeholder numre.
+    const firstNoneQuoteBlock = text.blocks.find(b => b.type !== 'quote');
+    shouldIndentTitle =
+      firstNoneQuoteBlock != null &&
+      firstNoneQuoteBlock.lines.find(l => {
+        const lineOptions = l.length > 1 ? l[1] : {};
+        return lineOptions.displayNum != null || lineOptions.margin != null;
+      }) != null;
   }
-
-  const ogTitle = _(`{poetName}: »{poemTitle}« fra {workTitle}`, lang, {
-    poetName: poetNameString(poet, false, false),
-    poemTitle: textLinkTitleString(text),
-    workTitle: workTitleString(work),
-  });
-
-  const ogDescription = OpenGraph.trimmedDescription(
-    // Merge blocks
-    text.blocks == null
-      ? [['']]
-      : text.blocks
-          .filter(b => b.type !== 'quote')
-          .map(b => b.lines)
-          .reduce((result, lines) => {
-            return result.concat(lines);
-          }, [])
-  );
-
-  // Titlen skal indentes hvis første ikke-quote block indeholder numre.
-  const firstNoneQuoteBlock =
-    text.blocks == null ? null : text.blocks.find(b => b.type !== 'quote');
-  const shouldIndentTitle =
-    firstNoneQuoteBlock != null &&
-    firstNoneQuoteBlock.lines.find(l => {
-      const lineOptions = l.length > 1 ? l[1] : {};
-      return lineOptions.displayNum != null || lineOptions.margin != null;
-    }) != null;
 
   return (
     <Page
