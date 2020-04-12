@@ -438,11 +438,19 @@ const TextPage = (props: TextComponentProps) => {
     );
   }
 
-  const ogTitle = _(`{poetName}: »{poemTitle}« fra {workTitle}`, lang, {
-    poetName: poetNameString(poet, false, false),
-    poemTitle: textLinkTitleString(text),
-    workTitle: workTitleString(work),
-  });
+  let ogTitle = null;
+  if (work.id !== 'andre') {
+    ogTitle = _(`{poetName}: »{poemTitle}« fra {workTitle}`, lang, {
+      poetName: poetNameString(poet, false, false),
+      poemTitle: textLinkTitleString(text),
+      workTitle: workTitleString(work),
+    });
+  } else {
+    ogTitle = _(`{poetName}: »{poemTitle}«`, lang, {
+      poetName: poetNameString(poet, false, false),
+      poemTitle: textLinkTitleString(text),
+    });
+  }
   let ogDescription = '';
   let shouldIndentTitle = false;
 
