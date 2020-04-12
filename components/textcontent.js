@@ -430,7 +430,7 @@ const TextContent = (props: TextContentPropsType) => {
     } else {
       rendered = replaceHyphens(l[0]);
       if (rendered.trim().length === 0) {
-        if (options == null || !options.isPoetry) {
+        if (type === 'prose') {
           className += ' half-height-blank';
         }
         rendered = <br />;
@@ -555,7 +555,9 @@ const TextContent = (props: TextContentPropsType) => {
           margin-top: 0;
           font-size: 0.8rem;
         }
-
+        :global(.block) {
+          display: inline-block;
+        }
         :global(.highlighted-line) {
           background-color: rgb(253, 246, 227);
           margin-left: 1em;
